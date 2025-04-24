@@ -148534,6 +148534,114 @@ $)
   $}
 
   ${
+    $d p q u v w x B $.  $d p v N $.  $d a b p q u v w x y z ph $.  $d p q R $.
+    $d a b p q u v w x y z F $.  $d p q x y .+ $.  $d a b p q u v w x y z U $.
+    $d a b p q x y z V $.  $d p q u v w x .0. $.
+    imasgrp.u $e |- ( ph -> U = ( F "s R ) ) $.
+    imasgrp.v $e |- ( ph -> V = ( Base ` R ) ) $.
+    imasgrp.p $e |- ( ph -> .+ = ( +g ` R ) ) $.
+    imasgrp.f $e |- ( ph -> F : V -onto-> B ) $.
+    imasgrp.e $e |- ( ( ph /\ ( a e. V /\ b e. V ) /\ ( p e. V /\ q e. V ) )
+      -> ( ( ( F ` a ) = ( F ` p ) /\ ( F ` b ) = ( F ` q ) )
+        -> ( F ` ( a .+ b ) ) = ( F ` ( p .+ q ) ) ) ) $.
+    ${
+      imasgrp2.r $e |- ( ph -> R e. W ) $.
+      imasgrp2.1 $e |- ( ( ph /\ x e. V /\ y e. V ) -> ( x .+ y ) e. V ) $.
+      imasgrp2.2 $e |- ( ( ph /\ ( x e. V /\ y e. V /\ z e. V ) ) ->
+        ( F ` ( ( x .+ y ) .+ z ) ) = ( F ` ( x .+ ( y .+ z ) ) ) ) $.
+      imasgrp2.3 $e |- ( ph -> .0. e. V ) $.
+      imasgrp2.4 $e |- ( ( ph /\ x e. V ) ->
+        ( F ` ( .0. .+ x ) ) = ( F ` x ) ) $.
+      imasgrp2.5 $e |- ( ( ph /\ x e. V ) -> N e. V ) $.
+      imasgrp2.6 $e |- ( ( ph /\ x e. V ) ->
+        ( F ` ( N .+ x ) ) = ( F ` .0. ) ) $.
+      $( The image structure of a group is a group.  (Contributed by Mario
+         Carneiro, 24-Feb-2015.)  (Revised by Mario Carneiro, 5-Sep-2015.) $)
+      imasgrp2 $p |- ( ph -> ( U e. Grp /\ ( F ` .0. ) = ( 0g ` U ) ) ) $=
+        ( vu vv vw cgrp wcel cfv c0g wceq cplusg imasbas eqidd cxp wf cv co w3a
+        wa wb oveqd fveq2d eqeq12d 3ad2ant1 sylibd eqid adantr caovclg eqeltrrd
+        imasaddf fovcdm syl3an1 wrex crn wfo forn syl eleq2d 3anbi123d wfn fofn
+        3expb fvelrnb bitr3d 3reeanv bitr4di 3eqtr3d simpl 3adant3r3 imasaddval
+        wi simpr3 syl3anc simpr1 3adantr1 3eqtr4d eqtr4d oveq1d 3adant3r1 simp1
+        oveq2d simp2 simp3 syl5ibcom 3exp2 imp32 rexlimdv rexlimdvva sylbid imp
+        oveq12d fof ffvelcdmd simpr 3eqtr2d oveq2 rexlimdva oveq1 eqeq1d rspcev
+        id syl2anc rexbidv isgrpde grpidd2 jca ) AHUMUNMIUOZHUPUOUQAUJUKULEHURU
+        OZHYNAEGHIKLRSUAUCUSZAYOUTZAEEVAEYOVBUJVCZEUNZUKVCZEUNZYRYTYOVDZEUNAEGY
+        OGURUOZHIKLNOPQUAAPVCZKUNQVCZKUNVFZOVCZKUNNVCZKUNVFZVEUUDIUOUUGIUOUQUUE
+        IUOUUHIUOUQVFUUDUUEFVDZIUOZUUGUUHFVDZIUOZUQZUUDUUEUUCVDZIUOZUUGUUHUUCVD
+        ZIUOZUQZUBAUUFUUNUUSVGUUIAUUKUUPUUMUURAUUJUUOIAFUUCUUDUUETVHVIAUULUUQIA
+        FUUCUUGUUHTVHZVIVJVKVLZRSUCUUCVMZYOVMZAUUIVFUULUUQKAUULUUQUQUUIUUTVNABC
+        UUGUUHKKKFABVCZKUNZCVCZKUNZUVDUVFFVDZKUNZUDWIVOZVPVQYRYTEEEYOVRVSAYSUUA
+        ULVCZEUNZVEZUUBUVKYOVDZYRYTUVKYOVDZYOVDZUQZAUVMUVDIUOZYRUQZUVFIUOZYTUQZ
+        DVCZIUOZUVKUQZVEZDKVTZCKVTBKVTZUVQAUVMUVSBKVTZUWACKVTZUWDDKVTZVEZUWGAYR
+        IWAZUNZYTUWLUNZUVKUWLUNZVEZUVMUWKAUWMYSUWNUUAUWOUVLAUWLEYRAKEIWBZUWLEUQ
+        UAKEIWCWDZWEZAUWLEYTUWRWEAUWLEUVKUWRWEWFAIKWGZUWPUWKVGAUWQUWTUAKEIWHWDZ
+        UWTUWMUWHUWNUWIUWOUWJBKYRIWJZCKYTIWJDKUVKIWJWFWDWKUVSUWAUWDBCDKKKWLWMAU
+        WFUVQBCKKAUVEUVGVFVFUWEUVQDKAUVEUVGUWBKUNZUWEUVQWRZWRAUVEUVGUXCUXDAUVEU
+        VGUXCVEZVFZUVRUVTYOVDZUWCYOVDZUVRUVTUWCYOVDZYOVDZUQUWEUVQUXFUVHIUOZUWCY
+        OVDZUVRUVFUWBFVDZIUOZYOVDZUXHUXJUXFUVHUWBUUCVDZIUOZUVDUXMUUCVDZIUOZUXLU
+        XOUXFUVHUWBFVDZIUOUVDUXMFVDZIUOUXQUXSUEUXFUXTUXPIUXFFUUCUVHUWBAFUUCUQZU
+        XETVNZVHVIUXFUYAUXRIUXFFUUCUVDUXMUYCVHVIWNUXFAUVIUXCUXLUXQUQAUXEWOZAUVE
+        UVGUVIUXCUDWPAUVEUVGUXCWSAEGYOUUCHIKUVHUWBLNOPQUAUVARSUCUVBUVCWQWTUXFAU
+        VEUXMKUNZUXOUXSUQUYDAUVEUVGUXCXAAUVGUXCUYEUVEAONUVFUWBKKKFUVJVOXBAEGYOU
+        UCHIKUVDUXMLNOPQUAUVARSUCUVBUVCWQWTXCUXFUXGUXKUWCYOUXFUXGUVDUVFUUCVDZIU
+        OZUXKAUVEUVGUXGUYGUQUXCAEGYOUUCHIKUVDUVFLNOPQUAUVARSUCUVBUVCWQWPUXFUVHU
+        YFIUXFFUUCUVDUVFUYCVHVIXDXEUXFUXIUXNUVRYOUXFUXIUVFUWBUUCVDZIUOZUXNAUVGU
+        XCUXIUYIUQUVEAEGYOUUCHIKUVFUWBLNOPQUAUVARSUCUVBUVCWQXFUXFUXMUYHIUXFFUUC
+        UVFUWBUYCVHVIXDXHXCUWEUXHUVNUXJUVPUWEUXGUUBUWCUVKYOUWEUVRYRUVTYTYOUVSUW
+        AUWDXGZUVSUWAUWDXIZXRUVSUWAUWDXJZXRUWEUVRYRUXIUVOYOUYJUWEUVTYTUWCUVKYOU
+        YKUYLXRXRVJXKXLXMXNXOXPXQAKEMIAUWQKEIVBZUAKEIXSWDZUFXTZAYSYNYRYOVDZYRUQ
+        ZAYSUWHUYQAUWMYSUWHUWSAUWTUWMUWHVGUXAUXBWDWKZAUVSUYQBKAUVEVFZYNUVRYOVDZ
+        UVRUQUVSUYQUYSUYTMUVDUUCVDZIUOZMUVDFVDZIUOUVRUYSAMKUNZUVEUYTVUBUQAUVEWO
+        ZAVUDUVEUFVNAUVEYAZAEGYOUUCHIKMUVDLNOPQUAUVARSUCUVBUVCWQWTUYSVUCVUAIUYS
+        FUUCMUVDAUYBUVETVNZVHVIUGYBUVSUYTUYPUVRYRUVRYRYNYOYCUVSYHVJXKYDXPXQZAYS
+        YTYRYOVDZYNUQZUKEVTZAYSUWHVUKUYRAUVSVUKBKUYSYTUVRYOVDZYNUQZUKEVTZUVSVUK
+        UYSJIUOZEUNVUOUVRYOVDZYNUQZVUNUYSKEJIAUYMUVEUYNVNUHXTUYSVUPJUVDUUCVDZIU
+        OZJUVDFVDZIUOYNUYSAJKUNUVEVUPVUSUQVUEUHVUFAEGYOUUCHIKJUVDLNOPQUAUVARSUC
+        UVBUVCWQWTUYSVUTVURIUYSFUUCJUVDVUGVHVIUIYBVUMVUQUKVUOEYTVUOUQVULVUPYNYT
+        VUOUVRYOYEYFYGYIUVSVUMVUJUKEUVSVULVUIYNUVRYRYTYOYCYFYJXKYDXPXQYKZAUJEYO
+        HYNYPYQUYOVUHVVAYLYM $.
+    $}
+  $}
+
+  ${
+    $d a b p q u x y z .~ $.  $d a b p q u x .0. $.  $d p u N $.  $d p q u R $.
+    $d a b p q u x y .+ $.  $d a b p q u x y z ph $.  $d a b p q u x y z V $.
+    $d a b p q x y z U $.
+    qusgrp2.u $e |- ( ph -> U = ( R /s .~ ) ) $.
+    qusgrp2.v $e |- ( ph -> V = ( Base ` R ) ) $.
+    qusgrp2.p $e |- ( ph -> .+ = ( +g ` R ) ) $.
+    qusgrp2.r $e |- ( ph -> .~ Er V ) $.
+    qusgrp2.x $e |- ( ph -> R e. X ) $.
+    qusgrp2.e $e |- ( ph ->
+      ( ( a .~ p /\ b .~ q ) -> ( a .+ b ) .~ ( p .+ q ) ) ) $.
+    qusgrp2.1 $e |- ( ( ph /\ x e. V /\ y e. V ) -> ( x .+ y ) e. V ) $.
+    qusgrp2.2 $e |- ( ( ph /\ ( x e. V /\ y e. V /\ z e. V ) ) ->
+      ( ( x .+ y ) .+ z ) .~ ( x .+ ( y .+ z ) ) ) $.
+    qusgrp2.3 $e |- ( ph -> .0. e. V ) $.
+    qusgrp2.4 $e |- ( ( ph /\ x e. V ) -> ( .0. .+ x ) .~ x ) $.
+    qusgrp2.5 $e |- ( ( ph /\ x e. V ) -> N e. V ) $.
+    qusgrp2.6 $e |- ( ( ph /\ x e. V ) -> ( N .+ x ) .~ .0. ) $.
+    $( Prove that a quotient structure is a group.  (Contributed by Mario
+       Carneiro, 14-Jun-2015.)  (Revised by Mario Carneiro, 12-Aug-2015.) $)
+    qusgrp2 $p |- ( ph -> ( U e. Grp /\ [ .0. ] .~ = ( 0g ` U ) ) ) $=
+      ( vu cgrp wcel cec c0g cfv wceq wa cv cmpt cqs cvv eqid wer cbs wfn basfn
+      elexd funfvex funfni sylancr eqeltrd erex sylc qusval quslem 3expb ercpbl
+      co w3a adantr erthi divsfvalg ercl2 3eqtr4d simpr ersym 3eqtr4rd imasgrp2
+      ercl eqcomd eqeq1d anbi2d mpbird ) AHUJUKZLFULZHUMUNZUOZUPWMLUIJUIUQFULUR
+      ZUNZWOUOZUPABCDJFUSEGHWQIJKLMNOPAUIFGHWQJUTKQRWQVAZAJFVBZJUTUKZFUTUKTAJGV
+      CUNZUTRAVCUTVDGUTUKXCUTUKZVEAGKUAVFXDUTGVCGVCVGVHVIVJZJFUTVKVLZUAVMRSAUIF
+      GHWQJUTKQRWTXFUAVNAUIOUQPUQNUQMUQEFWQJUTBCTXEWTABUQZJUKZCUQZJUKZXGXIEVQZJ
+      UKUCVOUBVPUAUCAXHXJDUQZJUKVRZUPZXKXLEVQZFULXGXIXLEVQEVQZFULXOWQUNXPWQUNXN
+      XOXPFJAXAXMTVSZUDVTXNUIXOFWQJUTXQAXBXMXEVSZWTXNXOXPFJXQUDWHWAXNUIXPFWQJUT
+      XQXRWTXNXOXPFJXQUDWBWAWCUEAXHUPZLXGEVQZFULXGFULXTWQUNXGWQUNXSXTXGFJAXAXHT
+      VSZUFVTXSUIXTFWQJUTYAAXBXHXEVSZWTXSXTXGFJYAUFWHWAXSUIXGFWQJUTYAYBWTAXHWDW
+      AWCUGXSWNIXGEVQZFULWRYCWQUNXSLYCFJYAXSYCLFJYAUHWEVTXSUILFWQJUTYAYBWTALJUK
+      XHUEVSWAXSUIYCFWQJUTYAYBWTXSYCLFJYAUHWHWAWFWGAWPWSWMAWNWRWOAWRWNAUILFWQJU
+      TTXEWTUEWAWIWJWKWL $.
+  $}
+
+  ${
     $d F a d f i j k x y $.  $d G a d f i j k x y $.  $d .+ i j k x y $.
     $d H a b c d f i x y $.  $d X i j k x y $.  $d Y a b c d f i j k x y $.
     $d .+^ a b c d f i j k x y $.  $d a b c i j k x y ph $.
