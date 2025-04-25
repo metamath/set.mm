@@ -88,6 +88,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+25-Apr-25 fermltlchr   [same]   Moved from TA's mathbox to main set.mm
 25-Apr-25 ressmulgnn0  [same]   Moved from TA's mathbox to main set.mm
 25-Apr-25 ressmulgnn   [same]   Moved from TA's mathbox to main set.mm
 18-Apr-25 mulnzcnopr mulnzcnf   Align with modern suffix conventions.
