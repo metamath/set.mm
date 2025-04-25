@@ -145102,6 +145102,20 @@ $)
   $}
 
   ${
+    $d .~ e r x $.  $d R e r x $.
+    $( Existence of a quotient structure.  (Contributed by Jim Kingdon,
+       25-Apr-2025.) $)
+    qusex $p |- ( ( R e. V /\ .~ e. W ) -> ( R /s .~ ) e. _V ) $=
+      ( vx vr ve wcel wa cqus co cbs cfv cv cec cmpt cimas cvv wceq elex adantr
+      adantl wfn basfn funfvex funfni sylancr mptexd simpl imasex syl2anc fveq2
+      mpteq1d id oveq12d eceq2 mpteq2dv oveq1d df-qus ovmpog syl3anc eqeltrd )
+      BCHZADHZIZBAJKZEBLMZENZAOZPZBQKZRVEBRHZARHZVKRHZVFVKSVCVLVDBCTUAZVDVMVCAD
+      TUBVEVJRHVCVNVEEVGVIRVELRUCVLVGRHZUDVOVPRBLBLUEUFUGUHVCVDUIBVJRCUJUKZFGBA
+      RREFNZLMZVHGNZOZPZVRQKVKJEVGWAPZBQKRVRBSZWBWCVRBQWDEVSVGWAVRBLULUMWDUNUOV
+      TASZWCVJBQWEEVGWAVIVTAVHUPUQUREGFUSUTVAVQVB $.
+  $}
+
+  ${
     $d x .~ $.  $d x ph $.  $d x R $.  $d x V $.
     qusin.u $e |- ( ph -> U = ( R /s .~ ) ) $.
     qusin.v $e |- ( ph -> V = ( Base ` R ) ) $.
