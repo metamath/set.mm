@@ -178678,6 +178678,18 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
+  ${
+    $d A f $.  $d B f $.  $d C f $.
+    $( If a set is dominated by one, then any two of its elements are equal.
+       (Contributed by Jim Kingdon, 23-Apr-2025.) $)
+    1dom1el $p |- ( ( A ~<_ 1o /\ B e. A /\ C e. A ) -> B = C ) $=
+      ( vf c1o cdom wbr wcel w3a cv wf1 wceq wex brdomi 3ad2ant1 ffvelcdmd el1o
+      cfv c0 sylib wa wf adantl simpl2 simpl3 eqtr4d wi simpr f1veqaeq syl12anc
+      f1f mpd exlimddv ) AEFGZBAHZCAHZIZAEDJZKZBCLZDUNUOUSDMUPAEDNOUQUSUAZBURRZ
+      CURRZLZUTVAVBSVCVAVBEHVBSLVAAEBURUSAEURUBUQAEURUKUCZUNUOUPUSUDZPVBQTVAVCE
+      HVCSLVAAECURVEUNUOUPUSUEZPVCQTUFVAUSUOUPVDUTUGUQUSUHVFVGAEBCURUIUJULUM $.
+  $}
+
   $( Any subset of ordinal one being an element of ordinal two is equivalent to
      excluded middle.  A variation of ~ exmid01 which more directly illustrates
      the contrast with ~ el2oss1o .  (Contributed by Jim Kingdon,
