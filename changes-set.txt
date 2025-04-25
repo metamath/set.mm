@@ -88,6 +88,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+25-Apr-25 mon1pid   [same]      Moved from SO's mathbox to main set.mm
 25-Apr-25 ply1chr   [same]      Moved from TA's mathbox to main set.mm
 25-Apr-25 ply1fermltlchr [same] Moved from TA's mathbox to main set.mm
 25-Apr-25 asclmulg  [same]      Moved from TA's mathbox to main set.mm
