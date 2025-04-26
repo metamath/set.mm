@@ -150398,6 +150398,24 @@ $)
   $}
 
   ${
+    $d G i r x y $.  $d S i r x y $.
+    $( The left coset equivalence relation exists.  (Contributed by Jim
+       Kingdon, 25-Apr-2025.) $)
+    eqgex $p |- ( ( G e. V /\ S e. W ) -> ( G ~QG S ) e. _V ) $=
+      ( vx vy vr vi wcel wa co cv cbs cfv wss cminusg cplusg copab cvv wceq cqg
+      cpr elex adantr adantl vex prss anbi1i opabbii cxp funfvex funfni sylancr
+      basfn xpexg syl2anc opabssxp ssexd eqeltrrid fveq2 sseq2d fveq1d oveq123d
+      wfn a1i eqidd eleq1d anbi12d opabbidv eleq2 anbi2d df-eqg syl3anc eqeltrd
+      ovmpog ) BCIZADIZJZBAUAKZELZFLZUBZBMNZOZVTBPNZNZWABQNZKZAIZJZEFRZSVRBSIZA
+      SIZWKSIVSWKTVPWLVQBCUCUDZVQWMVPADUCUEVRWKVTWCIWAWCIJZWIJZEFRZSWPWJEFWOWDW
+      IVTWAWCEUFFUFUGUHUIVRWQWCWCUJZSVRWCSIZWSWRSIVRMSVDWLWSUNWNWSSBMBMUKULUMZW
+      TWCWCSSUOUPWQWROVRWIEFWCWCUQVEURUSZGHBASSWBGLZMNZOZVTXBPNZNZWAXBQNZKZHLZI
+      ZJZEFRWKUAWDWHXIIZJZEFRSXBBTZXKXMEFXNXDWDXJXLXNXCWCWBXBBMUTVAXNXHWHXIXNXF
+      WFWAWAXGWGXBBQUTXNVTXEWEXBBPUTVBXNWAVFVCVGVHVIXIATZXMWJEFXOXLWIWDXIAWHVJV
+      KVIEFHGVLVOVMXAVN $.
+  $}
+
+  ${
     $d x y A $.  $d x y B $.  $d g s x y G $.  $d g s x y N $.  $d g s x y S $.
     $d g s x y .+ $.  $d g s x y X $.
     eqgval.x $e |- X = ( Base ` G ) $.
