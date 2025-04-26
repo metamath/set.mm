@@ -151210,6 +151210,38 @@ $)
             /\ ( ( x p y ) t z ) = ( ( x t z ) p ( y t z ) ) ) ) } $.
   $}
 
+  ${
+    $d B b r t x y z $.  $d B p $.  $d G r $.  $d R b r t x y z $.  $d R p $.
+    $d .x. b r t x y z $.  $d .x. p $.  $d .+ p b r t x y z $.  $d .+ p $.
+    isrng.b $e |- B = ( Base ` R ) $.
+    isrng.g $e |- G = ( mulGrp ` R ) $.
+    isrng.p $e |- .+ = ( +g ` R ) $.
+    isrng.t $e |- .x. = ( .r ` R ) $.
+    $( The predicate "is a non-unital ring."  (Contributed by AV,
+       6-Jan-2020.) $)
+    isrng $p |- ( R e. Rng <-> ( R e. Abel /\ G e. Smgrp
+                                  /\ A. x e. B A. y e. B A. z e. B
+                 ( ( x .x. ( y .+ z ) ) = ( ( x .x. y ) .+ ( x .x. z ) )
+              /\ ( ( x .+ y ) .x. z ) = ( ( x .x. z ) .+ ( y .x. z ) ) ) ) ) $=
+      ( vr wcel cv co wceq wa cfv cvv vp vt crng cabl csgrp wral w3a cmgp cmulr
+      vb cplusg cbs fveq2 eqtr4di eleq1d wfn basfn vex funfvex funfni mp2an a1i
+      wsbc plusgslid slotex elv adantr mulrslid simpllr simpr ad2antlr oveq123d
+      oveq adantl eqeq12d anbi12d raleqbidv sbcied2 df-rng elrab2 3anass bitr4i
+      eqidd ) FUCNFUDNZHUENZAOZBOZCOZEPZGPZWFWGGPZWFWHGPZEPZQZWFWGEPZWHGPZWLWGW
+      HGPZEPZQZRZCDUFZBDUFZADUFZRZRWDWEXCUGMOZUHSZUENZWFWGWHUAOZPZUBOZPZWFWGXJP
+      ZWFWHXJPZXHPZQZWFWGXHPZWHXJPZXMWGWHXJPZXHPZQZRZCUJOZUFZBYBUFZAYBUFZUBXEUI
+      SZVCZUAXEUKSZVCZUJXEULSZVCZRXDMFUDUCXEFQZXGWEYKXCYLXFHUEYLXFFUHSHXEFUHUMJ
+      UNUOYLYIXCUJYJDTYJTNZYLULTUPXETNYMUQMURYMTXEULXEULUSUTVAVBYLYJFULSDXEFULU
+      MIUNYLYBDQZRZYGXCUAYHETYHTNZYOYPMXEUKTVDVEVFVBYOYHFUKSZEYLYHYQQYNXEFUKUMV
+      GKUNYOXHEQZRZYEXCUBYFGTYFTNZYSYTMXEUITVHVEVFVBYSYFFUISZGYOYFUUAQZYRYLUUBY
+      NXEFUIUMVGVGLUNYSXJGQZRZYDXBAYBDYLYNYRUUCVIZUUDYCXABYBDUUEUUDYAWTCYBDUUEU
+      UDXOWNXTWSUUDXKWJXNWMUUDWFWFXIWIXJGYSUUCVJZUUDWFWCYRXIWIQYOUUCWGWHXHEVMVK
+      VLUUDXLWKXMWLXHEYSYRUUCYOYRVJVGZUUCXLWKQYSWFWGXJGVMVNUUCXMWLQYSWFWHXJGVMV
+      NZVLVOUUDXQWPXSWRUUDXPWOWHWHXJGUUFYRXPWOQYOUUCWFWGXHEVMVKUUDWHWCVLUUDXMWL
+      XRWQXHEUUGUUHUUCXRWQQYSWGWHXJGVMVNVLVOVPVQVQVQVRVRVRVPABCUBMUAUJVSVTWDWEX
+      CWAWB $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
