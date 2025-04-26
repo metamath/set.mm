@@ -157330,6 +157330,12 @@ $)
       elex sylancr eqtrid ) BACZBDEBFGHZEZBGEFEZBDTIJSGKLBKCUAUBMNBAPKFGBOQR $.
   $}
 
+  $( Existence of the ring span.  (Contributed by Jim Kingdon, 25-Apr-2025.) $)
+  rspex $p |- ( W e. V -> ( RSpan ` W ) e. _V ) $=
+    ( wcel crsp cfv crglmod clspn cvv rspvalg rlmfn elex funfvex funfni sylancr
+    wfn lspex syl eqeltrd ) BACZBDEBFEZGEZHABISTHCZUAHCSFHOBHCUBJBAKUBHBFBFLMNT
+    HPQR $.
+
   ${
     $d a b j s w x $.
     lidlmex.i $e |- I = ( LIdeal ` W ) $.
