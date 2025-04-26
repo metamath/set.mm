@@ -151328,6 +151328,16 @@ $)
       ZUNSXPXIVEXKVHVOGVDDTXPWRVFXJVGBXQVOGFDTUKSUMUSWNVIUOUPUQUTVA $.
   $}
 
+  ${
+    rngacl.b $e |- B = ( Base ` R ) $.
+    rngacl.p $e |- .+ = ( +g ` R ) $.
+    $( Closure of the addition operation of a non-unital ring.  (Contributed by
+       AV, 16-Feb-2025.) $)
+    rngacl $p |- ( ( R e. Rng /\ X e. B /\ Y e. B ) -> ( X .+ Y ) e. B ) $=
+      ( crng wcel cgrp co rnggrp grpcl syl3an1 ) CHICJIDAIEAIDEBKAICLABCDEFGMN
+      $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
