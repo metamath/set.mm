@@ -146032,7 +146032,7 @@ $)
     ${
       grprinvlem.x $e |- ( ( ph /\ ps ) -> X e. B ) $.
       grprinvlem.e $e |- ( ( ph /\ ps ) -> ( X .+ X ) = X ) $.
-      $( Lemma for ~ grprinvd .  (Contributed by NM, 9-Aug-2013.) $)
+      $( Lemma for ~ grpinva .  (Contributed by NM, 9-Aug-2013.) $)
       grprinvlem $p |- ( ( ph /\ ps ) -> X = O ) $=
         ( cv co wceq wcel vu vv vw wa wrex wral ralrimiva oveq2 eqeq1d cbvralvw
         rexbidv sylib rspccva syl2an2r oveq2d adantr simprr oveq1d w3a caovassg
@@ -146047,13 +146047,13 @@ $)
     $}
 
     ${
-      grprinvd.x $e |- ( ( ph /\ ps ) -> X e. B ) $.
-      grprinvd.n $e |- ( ( ph /\ ps ) -> N e. B ) $.
-      grprinvd.e $e |- ( ( ph /\ ps ) -> ( N .+ X ) = O ) $.
+      grpinva.x $e |- ( ( ph /\ ps ) -> X e. B ) $.
+      grpinva.n $e |- ( ( ph /\ ps ) -> N e. B ) $.
+      grpinva.e $e |- ( ( ph /\ ps ) -> ( N .+ X ) = O ) $.
       $( Deduce right inverse from left inverse and left identity in an
          associative structure (such as a group).  (Contributed by NM,
          10-Aug-2013.)  (Proof shortened by Mario Carneiro, 6-Jan-2015.) $)
-      grprinvd $p |- ( ( ph /\ ps ) -> ( X .+ N ) = O ) $=
+      grpinva $p |- ( ( ph /\ ps ) -> ( X .+ N ) = O ) $=
         ( co wcel vu vv vw wa cv caovclg adantlr caovcld wceq caovassg caovassd
         3expb w3a oveq1d oveq2 id eqeq12d wral ralrimiva cbvralvw sylib rspcdva
         adantr 3eqtr3d oveq2d eqtrd grprinvlem ) ABCDEFGIJHGSZKLMNOABUDZUAUBJHF
@@ -146070,12 +146070,12 @@ $)
        10-Aug-2013.)  (Proof shortened by Mario Carneiro, 6-Jan-2015.) $)
     grpridd $p |- ( ( ph /\ x e. B ) -> ( x .+ O ) = x ) $=
       ( vn vu vv cv wcel wa co wceq vw oveq1 eqeq1d cbvrexvw sylib w3a caovassg
-      adantlr simprl simprrl caovassd simprrr grprinvd oveq1d 3eqtr3d rexlimddv
-      wrex oveq2d anassrs eqtr3d ) ABPZEQZRZGVAFSZVAGFSZVAVCMPZVAFSZGTZVDVETZME
-      VCCPZVAFSZGTZCEUQVHMEUQLVLVHCMEVJVFTVKVGGVJVFVAFUBUCUDUEAVBVFEQZVHRZVIAVB
-      VNRZRZVAVFFSZVAFSVAVGFSVDVEVPNOUAVAVFVAEFANPZEQOPZEQUAPZEQUFVRVSFSVTFSVRV
-      SVTFSFSTVOABCDVRVSVTEFKUGUHAVBVNUIZAVBVMVHUJZWAUKVPVQGVAFAVOBCDEFVFGVAHIJ
-      KLWAWBAVBVMVHULZUMUNVPVGGVAFWCURUOUSUPJUT $.
+      wrex adantlr simprl simprrl simprrr grpinva oveq1d oveq2d 3eqtr3d anassrs
+      caovassd rexlimddv eqtr3d ) ABPZEQZRZGVAFSZVAGFSZVAVCMPZVAFSZGTZVDVETZMEV
+      CCPZVAFSZGTZCEUHVHMEUHLVLVHCMEVJVFTVKVGGVJVFVAFUBUCUDUEAVBVFEQZVHRZVIAVBV
+      NRZRZVAVFFSZVAFSVAVGFSVDVEVPNOUAVAVFVAEFANPZEQOPZEQUAPZEQUFVRVSFSVTFSVRVS
+      VTFSFSTVOABCDVRVSVTEFKUGUIAVBVNUJZAVBVMVHUKZWAURVPVQGVAFAVOBCDEFVFGVAHIJK
+      LWAWBAVBVMVHULZUMUNVPVGGVAFWCUOUPUQUSJUT $.
   $}
 
 
@@ -147586,17 +147586,17 @@ $)
                   ( ( X .+ Z ) = ( Y .+ Z ) <-> X = Y ) ) $=
       ( vy vu vv vw wcel w3a wa co wceq cv sylan 3eqtr3d cgrp c0g cfv wrex eqid
       wi grpinvex 3ad2antr3 simprr oveq1d simpll grpass simplr1 simplr3 simprll
-      caovassd simplr2 grpcl syl3an1 grpidcl syl grplid adantr simprlr grprinvd
-      simpr mpdan oveq2d grprid syl2anc expr rexlimddv oveq1 impbid1 ) CUAMZDAM
-      ZEAMZFAMZNZOZDFBPZEFBPZQZDEQZVTIRZFBPCUBUCZQZWCWDUFIAVOVPVRWGIAUDVQIABCFW
-      FGHWFUEZUGUHVTWEAMZWGOZWCWDVTWJWCOZOZDWFBPZEWFBPZDEWLDFWEBPZBPZEWOBPZWMWN
-      WLWAWEBPWBWEBPWPWQWLWAWBWEBVTWJWCUIUJWLJKLDFWEABWLVOJRZAMZKRZAMZLRZAMNWRW
-      TBPZXBBPWRWTXBBPBPQVOVSWKUKZABCWRWTXBGHULSZVPVQVRVOWKUMZVPVQVRVOWKUNZVTWI
-      WGWCUOZUPWLJKLEFWEABXEVPVQVRVOWKUQZXGXHUPTWLWOWFDBWLVRWOWFQXGWLVRJKLABWEW
-      FFWLVOWSXAXCAMXDABCWRWTGHURUSWLVOWFAMXDACWFGWHUTVAWLVOWSWFWRBPWRQXDABCWRW
-      FGHWHVBSXEWLVOWSWTWRBPWFQKAUDXDKABCWRWFGHWHUGSWLVRVFWLWIVRXHVCWLWGVRVTWIW
-      GWCVDVCVEVGZVHWLWOWFEBXJVHTWLVOVPWMDQXDXFABCDWFGHWHVIVJWLVOVQWNEQXDXIABCE
-      WFGHWHVIVJTVKVLDEFBVMVN $.
+      caovassd simplr2 grpcl syl3an1 grpidcl grplid simpr simprlr grpinva mpdan
+      syl adantr oveq2d grprid syl2anc expr rexlimddv oveq1 impbid1 ) CUAMZDAMZ
+      EAMZFAMZNZOZDFBPZEFBPZQZDEQZVTIRZFBPCUBUCZQZWCWDUFIAVOVPVRWGIAUDVQIABCFWF
+      GHWFUEZUGUHVTWEAMZWGOZWCWDVTWJWCOZOZDWFBPZEWFBPZDEWLDFWEBPZBPZEWOBPZWMWNW
+      LWAWEBPWBWEBPWPWQWLWAWBWEBVTWJWCUIUJWLJKLDFWEABWLVOJRZAMZKRZAMZLRZAMNWRWT
+      BPZXBBPWRWTXBBPBPQVOVSWKUKZABCWRWTXBGHULSZVPVQVRVOWKUMZVPVQVRVOWKUNZVTWIW
+      GWCUOZUPWLJKLEFWEABXEVPVQVRVOWKUQZXGXHUPTWLWOWFDBWLVRWOWFQXGWLVRJKLABWEWF
+      FWLVOWSXAXCAMXDABCWRWTGHURUSWLVOWFAMXDACWFGWHUTVFWLVOWSWFWRBPWRQXDABCWRWF
+      GHWHVASXEWLVOWSWTWRBPWFQKAUDXDKABCWRWFGHWHUGSWLVRVBWLWIVRXHVGWLWGVRVTWIWG
+      WCVCVGVDVEZVHWLWOWFEBXJVHTWLVOVPWMDQXDXFABCDWFGHWHVIVJWLVOVQWNEQXDXIABCEW
+      FGHWHVIVJTVKVLDEFBVMVN $.
   $}
 
   ${
@@ -147783,8 +147783,8 @@ $)
        (Revised by Mario Carneiro, 6-Jan-2015.) $)
     grprinv $p |- ( ( G e. Grp /\ X e. B ) -> ( X .+ ( N ` X ) ) = .0. ) $=
       ( vx vy vz cgrp wcel cfv cv grpcl grpidcl grplid grpass grpinvex grpinvcl
-      simpr grplinv grprinvd ) CNOZEAOZKLMABEDPFEABCKQZLQZGHRACFGISABCUIFGHITAB
-      CUIUJMQGHUALABCUIFGHIUBUGUHUDACDEGJUCABCDEFGHIJUEUF $.
+      simpr grplinv grpinva ) CNOZEAOZKLMABEDPFEABCKQZLQZGHRACFGISABCUIFGHITABC
+      UIUJMQGHUALABCUIFGHIUBUGUHUDACDEGJUCABCDEFGHIJUEUF $.
 
     $( The inverse of a group element expressed in terms of the identity
        element.  (Contributed by NM, 24-Aug-2011.) $)
