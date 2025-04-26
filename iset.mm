@@ -151347,6 +151347,19 @@ $)
       ( crng wcel cgrp rnggrp grpidcl syl ) BFGBHGCAGBIABCDEJK $.
   $}
 
+  ${
+    rngcl.b $e |- B = ( Base ` R ) $.
+    rngcl.t $e |- .x. = ( .r ` R ) $.
+    $( Closure of the multiplication operation of a non-unital ring.
+       (Contributed by AV, 17-Apr-2020.) $)
+    rngcl $p |- ( ( R e. Rng /\ X e. B /\ Y e. B ) -> ( X .x. Y ) e. B ) $=
+      ( crng wcel w3a cmgp cfv cplusg co cbs cmgm eqid 3ad2ant1 wceq eleqtrd
+      csgrp rngmgp sgrpmgm simp2 mgpbasg simp3 mgmcl syl3anc mgpplusgg 3eltr4d
+      syl oveqd ) BHIZDAIZEAIZJZDEBKLZMLZNZUQOLZDECNZAUPUQPIZDUTIEUTIUSUTIUMUNV
+      BUOUMUQUAIVBBUQUQQZUBUQUCUKRUPDAUTUMUNUOUDUMUNAUTSUOABUQHVCFUERZTUPEAUTUM
+      UNUOUFVDTUTUQDEURUTQURQUGUHUMUNVAUSSUOUMCURDEBCUQHVCGUIULRVDUJ $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
