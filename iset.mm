@@ -156396,6 +156396,17 @@ $)
   $}
 
   ${
+    $d W s t $.
+    $( Existence of the span of a set of vectors.  (Contributed by Jim Kingdon,
+       25-Apr-2025.) $)
+    lspex $p |- ( W e. X -> ( LSpan ` W ) e. _V ) $=
+      ( vs vt wcel clspn cfv cbs cpw cv wss clss crab cint cmpt cvv lspfval wfn
+      eqid basfn elex funfvex funfni sylancr pwexd mptexd eqeltrd ) ABEZAFGZCAH
+      GZIZCJDJKDALGZMNZOPDULUIUJABCUJSULSUISQUHCUKUMPUHUJPUHHPRAPEUJPEZTABUAUNP
+      AHAHUBUCUDUEUFUG $.
+  $}
+
+  ${
     lspsnsubg.v $e |- V = ( Base ` W ) $.
     lspsnsubg.n $e |- N = ( LSpan ` W ) $.
     $( The span of a singleton is an additive subgroup (frequently used special
