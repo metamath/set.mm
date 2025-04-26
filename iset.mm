@@ -151289,6 +151289,29 @@ $)
       $.
   $}
 
+  ${
+    $d B a b c $.  $d R a b c $.  $d X a b c $.  $d Y b c $.  $d Z c $.
+    $d .x. a b c $.  $d .+ a b c $.
+    rngdi.b $e |- B = ( Base ` R ) $.
+    rngdi.p $e |- .+ = ( +g ` R ) $.
+    rngdi.t $e |- .x. = ( .r ` R ) $.
+    $( Distributive law for the multiplication operation of a non-unital ring
+       (left-distributivity).  (Contributed by AV, 14-Feb-2025.) $)
+    rngdi $p |- ( ( R e. Rng /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+                     ( X .x. ( Y .+ Z ) ) = ( ( X .x. Y ) .+ ( X .x. Z ) ) ) $=
+      ( va vb vc wcel co wceq wa oveq1 eqeq12d oveq2 crng w3a cabl cfv csgrp cv
+      cmgp wral eqid isrng oveq12d oveq1d anbi12d oveq2d simpl syl6com 3ad2ant3
+      wi rspc3v sylbi imp ) CUANZEANFANGANUBZEFGBOZDOZEFDOZEGDOZBOZPZVBCUCNZCUG
+      UDZUENZKUFZLUFZMUFZBOZDOZVMVNDOZVMVODOZBOZPZVMVNBOZVODOZVSVNVODOZBOZPZQZM
+      AUHLAUHKAUHZUBVCVIURZKLMABCDVKHVKUIIJUJWHVJWIVLVCWHVIEFBOZGDOZVGFGDOZBOZP
+      ZQZVIWGWOEVPDOZEVNDOZEVODOZBOZPZEVNBOZVODOZWRWDBOZPZQEFVOBOZDOZVFWRBOZPZW
+      JVODOZWRFVODOZBOZPZQKLMEFGAAAVMEPZWAWTWFXDXMVQWPVTWSVMEVPDRXMVRWQVSWRBVME
+      VNDRVMEVODRZUKSXMWCXBWEXCXMWBXAVODVMEVNBRULXMVSWRWDBXNULSUMVNFPZWTXHXDXLX
+      OWPXFWSXGXOVPXEEDVNFVOBRUNXOWQVFWRBVNFEDTULSXOXBXIXCXKXOXAWJVODVNFEBTULXO
+      WDXJWRBVNFVODRUNSUMVOGPZXHVIXLWNXPXFVEXGVHXPXEVDEDVOGFBTUNXPWRVGVFBVOGEDT
+      ZUNSXPXIWKXKWMVOGWJDTXPWRVGXJWLBXQVOGFDTUKSUMUSVIWNUOUPUQUTVA $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
