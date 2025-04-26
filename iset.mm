@@ -151417,6 +151417,26 @@ $)
       AVKVPVLVPVFVGUOVQVRVOVRAVCBVBEVBFVNUPUQUR $.
   $}
 
+  ${
+    rngneglmul.b $e |- B = ( Base ` R ) $.
+    rngneglmul.t $e |- .x. = ( .r ` R ) $.
+    rngneglmul.n $e |- N = ( invg ` R ) $.
+    rngneglmul.r $e |- ( ph -> R e. Rng ) $.
+    rngneglmul.x $e |- ( ph -> X e. B ) $.
+    rngneglmul.y $e |- ( ph -> Y e. B ) $.
+    $( Negation of a product in a non-unital ring ( ~ mulneg1 analog).  In
+       contrast to ~ ringmneg1 , the proof does not (and cannot) make use of
+       the existence of a ring unity.  (Contributed by AV, 17-Feb-2025.) $)
+    rngmneg1 $p |- ( ph -> ( ( N ` X ) .x. Y ) = ( N ` ( X .x. Y ) ) ) $=
+      ( co cfv wceq eqid wcel rngcl syl3anc cplusg c0g crng rnggrp syl grprinvd
+      cgrp oveq1d rnglz syl2anc eqtrd wb grpinvcld grpinvid1 wa rngdir syl13anc
+      w3a eqcomd eqeq1d bitrd mpbird ) AFGDNZEOZFEOZGDNZAVDVFPZFVECUAOZNZGDNZCU
+      BOZPZAVJVKGDNZVKAVIVKGDABVHCEFVKHVHQZVKQZJACUCRZCUGRZKCUDUEZLUFUHAVPGBRZV
+      MVKPKMBCDGVKHIVOUIUJUKAVGVCVFVHNZVKPZVLAVQVCBRZVFBRZVGWAULVRAVPFBRZVSWBKL
+      MBCDFGHISTAVPVEBRZVSWCKABCEFHJVRLUMZMBCDVEGHISTBVHCEVCVFVKHVNVOJUNTAVTVJV
+      KAVPWDWEVSVTVJPKLWFMVPWDWEVSURUOVJVTBVHCDFVEGHVNIUPUSUQUTVAVBUS $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
