@@ -151170,6 +151170,49 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Non-unital rings ("rngs")
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  According to Wikipedia, "... in abstract algebra, a _rng_ (or _non-unital
+  ring_ or _pseudo-ring_) is an algebraic structure satisfying the same
+  properties as a [[unital] ring, without assuming the existence of a
+  multiplicative identity.  The term "rng" (pronounced rung) is meant to
+  suggest that it is a "ring" without "i", i.e. without the requirement for an
+  "identity element"." (see ~ https://en.wikipedia.org/wiki/Rng_(algebra) ,
+  28-Mar-2025).
+
+$)
+
+  $c Rng $.
+
+  $( Extend class notation with class of all non-unital rings. $)
+  crng $a class Rng $.
+
+  ${
+    $d b f p t x y z $.
+    $( Define the class of all non-unital rings.  A _non-unital ring_ (or rng,
+       or pseudoring) is a set equipped with two everywhere-defined internal
+       operations, whose first one is an additive abelian group operation and
+       the second one is a multiplicative semigroup operation, and where the
+       addition is left- and right-distributive for the multiplication.
+       Definition of a pseudo-ring in section I.8.1 of [BourbakiAlg1] p. 93 or
+       the definition of a ring in part Preliminaries of [Roman] p. 18.  As
+       almost always in mathematics, "non-unital" means "not necessarily
+       unital".  Therefore, by talking about a ring (in general) or a
+       non-unital ring the "unital" case is always included.  In contrast to a
+       unital ring, the commutativity of addition must be postulated and cannot
+       be proven from the other conditions.  (Contributed by AV,
+       6-Jan-2020.) $)
+    df-rng $a |- Rng = { f e. Abel | ( ( mulGrp ` f ) e. Smgrp /\
+        [. ( Base ` f ) / b ]. [. ( +g ` f ) / p ]. [. ( .r ` f ) / t ].
+        A. x e. b A. y e. b A. z e. b
+           ( ( x t ( y p z ) ) = ( ( x t y ) p ( x t z ) )
+            /\ ( ( x p y ) t z ) = ( ( x t z ) p ( y t z ) ) ) ) } $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Ring unity (multiplicative identity)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
@@ -175645,6 +175688,9 @@ htmldef "mulGrp" as "mulGrp";
 htmldef "SRing" as "SRing";
   althtmldef "SRing" as "SRing";
   latexdef "SRing" as "\mathrm{SRing}";
+htmldef "Rng" as 'Rng';
+ althtmldef "Rng" as 'Rng';
+ latexdef "Rng" as "\mathrm{Rng}";
 htmldef "Ring" as
     "<IMG SRC='_ring.gif' WIDTH=30 HEIGHT=19 ALT=' Ring' TITLE='Ring'>";
   althtmldef "Ring" as "Ring";
