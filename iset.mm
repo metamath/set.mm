@@ -147831,6 +147831,26 @@ $)
   $}
 
   ${
+    grplinvd.b $e |- B = ( Base ` G ) $.
+    grplinvd.p $e |- .+ = ( +g ` G ) $.
+    grplinvd.u $e |- .0. = ( 0g ` G ) $.
+    grplinvd.n $e |- N = ( invg ` G ) $.
+    grplinvd.g $e |- ( ph -> G e. Grp ) $.
+    grplinvd.1 $e |- ( ph -> X e. B ) $.
+    $( The left inverse of a group element.  Deduction associated with
+       ~ grplinv .  (Contributed by SN, 29-Jan-2025.) $)
+    grplinvd $p |- ( ph -> ( ( N ` X ) .+ X ) = .0. ) $=
+      ( cgrp wcel cfv co wceq grplinv syl2anc ) ADNOFBOFEPFCQGRLMBCDEFGHIJKST
+      $.
+
+    $( The right inverse of a group element.  Deduction associated with
+       ~ grprinv .  (Contributed by SN, 29-Jan-2025.) $)
+    grprinvd $p |- ( ph -> ( X .+ ( N ` X ) ) = .0. ) $=
+      ( cgrp wcel cfv co wceq grprinv syl2anc ) ADNOFBOFFEPCQGRLMBCDEFGHIJKST
+      $.
+  $}
+
+  ${
     $d B y $.  $d G x y $.  $d .+ y $.  $d .0. y $.
     grplrinv.b $e |- B = ( Base ` G ) $.
     grplrinv.p $e |- .+ = ( +g ` G ) $.
