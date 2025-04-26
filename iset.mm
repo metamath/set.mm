@@ -151242,6 +151242,24 @@ $)
       CWAWB $.
   $}
 
+  ${
+    $d R x y z $.
+    $( A non-unital ring is an (additive) abelian group.  (Contributed by AV,
+       17-Feb-2020.) $)
+    rngabl $p |- ( R e. Rng -> R e. Abel ) $=
+      ( vx vy vz crng wcel cabl cmgp cfv csgrp cv cplusg co cmulr wceq cbs wral
+      wa eqid isrng simp1bi ) AEFAGFAHIZJFBKZCKZDKZALIZMANIZMUCUDUGMUCUEUGMZUFM
+      OUCUDUFMUEUGMUHUDUEUGMUFMORDAPIZQCUIQBUIQBCDUIUFAUGUBUISUBSUFSUGSTUA $.
+
+    rngmgp.g $e |- G = ( mulGrp ` R ) $.
+    $( A non-unital ring is a semigroup under multiplication.  (Contributed by
+       AV, 17-Feb-2020.) $)
+    rngmgp $p |- ( R e. Rng -> G e. Smgrp ) $=
+      ( vx vy vz crng wcel cabl csgrp cv cplusg cfv co cmulr wceq cbs wral eqid
+      wa isrng simp2bi ) AGHAIHBJHDKZEKZFKZALMZNAOMZNUCUDUGNUCUEUGNZUFNPUCUDUFN
+      UEUGNUHUDUEUGNUFNPTFAQMZREUIRDUIRDEFUIUFAUGBUISCUFSUGSUAUB $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
