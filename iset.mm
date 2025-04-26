@@ -151267,6 +151267,11 @@ $)
     mp2an fvres eqid rngmgp eqeltrd rgen ffnfv mpbir2an ) BCDBEZFUEBGZAHZUEIZCJ
     ZABKDLGBLMUFNBOLBDPQUIABUGBJUHUGDIZCUGBDRUGUJUJSTUAUBABCUEUCUD $.
 
+  $( A non-unital ring is a (additive) group.  (Contributed by AV,
+     16-Feb-2025.) $)
+  rnggrp $p |- ( R e. Rng -> R e. Grp ) $=
+    ( crng wcel rngabl ablgrpd ) ABCAADE $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
