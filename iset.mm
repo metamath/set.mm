@@ -145102,6 +145102,20 @@ $)
   $}
 
   ${
+    $d .~ e r x $.  $d R e r x $.
+    $( Existence of a quotient structure.  (Contributed by Jim Kingdon,
+       25-Apr-2025.) $)
+    qusex $p |- ( ( R e. V /\ .~ e. W ) -> ( R /s .~ ) e. _V ) $=
+      ( vx vr ve wcel wa cqus co cbs cfv cv cec cmpt cimas cvv wceq elex adantr
+      adantl wfn basfn funfvex funfni sylancr mptexd simpl imasex syl2anc fveq2
+      mpteq1d id oveq12d eceq2 mpteq2dv oveq1d df-qus ovmpog syl3anc eqeltrd )
+      BCHZADHZIZBAJKZEBLMZENZAOZPZBQKZRVEBRHZARHZVKRHZVFVKSVCVLVDBCTUAZVDVMVCAD
+      TUBVEVJRHVCVNVEEVGVIRVELRUCVLVGRHZUDVOVPRBLBLUEUFUGUHVCVDUIBVJRCUJUKZFGBA
+      RREFNZLMZVHGNZOZPZVRQKVKJEVGWAPZBQKRVRBSZWBWCVRBQWDEVSVGWAVRBLULUMWDUNUOV
+      TASZWCVJBQWEEVGWAVIVTAVHUPUQUREGFUSUTVAVQVB $.
+  $}
+
+  ${
     $d x .~ $.  $d x ph $.  $d x R $.  $d x V $.
     qusin.u $e |- ( ph -> U = ( R /s .~ ) ) $.
     qusin.v $e |- ( ph -> V = ( Base ` R ) ) $.
@@ -148534,6 +148548,114 @@ $)
   $}
 
   ${
+    $d p q u v w x B $.  $d p v N $.  $d a b p q u v w x y z ph $.  $d p q R $.
+    $d a b p q u v w x y z F $.  $d p q x y .+ $.  $d a b p q u v w x y z U $.
+    $d a b p q x y z V $.  $d p q u v w x .0. $.
+    imasgrp.u $e |- ( ph -> U = ( F "s R ) ) $.
+    imasgrp.v $e |- ( ph -> V = ( Base ` R ) ) $.
+    imasgrp.p $e |- ( ph -> .+ = ( +g ` R ) ) $.
+    imasgrp.f $e |- ( ph -> F : V -onto-> B ) $.
+    imasgrp.e $e |- ( ( ph /\ ( a e. V /\ b e. V ) /\ ( p e. V /\ q e. V ) )
+      -> ( ( ( F ` a ) = ( F ` p ) /\ ( F ` b ) = ( F ` q ) )
+        -> ( F ` ( a .+ b ) ) = ( F ` ( p .+ q ) ) ) ) $.
+    ${
+      imasgrp2.r $e |- ( ph -> R e. W ) $.
+      imasgrp2.1 $e |- ( ( ph /\ x e. V /\ y e. V ) -> ( x .+ y ) e. V ) $.
+      imasgrp2.2 $e |- ( ( ph /\ ( x e. V /\ y e. V /\ z e. V ) ) ->
+        ( F ` ( ( x .+ y ) .+ z ) ) = ( F ` ( x .+ ( y .+ z ) ) ) ) $.
+      imasgrp2.3 $e |- ( ph -> .0. e. V ) $.
+      imasgrp2.4 $e |- ( ( ph /\ x e. V ) ->
+        ( F ` ( .0. .+ x ) ) = ( F ` x ) ) $.
+      imasgrp2.5 $e |- ( ( ph /\ x e. V ) -> N e. V ) $.
+      imasgrp2.6 $e |- ( ( ph /\ x e. V ) ->
+        ( F ` ( N .+ x ) ) = ( F ` .0. ) ) $.
+      $( The image structure of a group is a group.  (Contributed by Mario
+         Carneiro, 24-Feb-2015.)  (Revised by Mario Carneiro, 5-Sep-2015.) $)
+      imasgrp2 $p |- ( ph -> ( U e. Grp /\ ( F ` .0. ) = ( 0g ` U ) ) ) $=
+        ( vu vv vw cgrp wcel cfv c0g wceq cplusg imasbas eqidd cxp wf cv co w3a
+        wa wb oveqd fveq2d eqeq12d 3ad2ant1 sylibd eqid adantr caovclg eqeltrrd
+        imasaddf fovcdm syl3an1 wrex crn wfo forn syl eleq2d 3anbi123d wfn fofn
+        3expb fvelrnb bitr3d 3reeanv bitr4di 3eqtr3d simpl 3adant3r3 imasaddval
+        wi simpr3 syl3anc simpr1 3adantr1 3eqtr4d eqtr4d oveq1d 3adant3r1 simp1
+        oveq2d simp2 simp3 syl5ibcom 3exp2 imp32 rexlimdv rexlimdvva sylbid imp
+        oveq12d fof ffvelcdmd simpr 3eqtr2d oveq2 rexlimdva oveq1 eqeq1d rspcev
+        id syl2anc rexbidv isgrpde grpidd2 jca ) AHUMUNMIUOZHUPUOUQAUJUKULEHURU
+        OZHYNAEGHIKLRSUAUCUSZAYOUTZAEEVAEYOVBUJVCZEUNZUKVCZEUNZYRYTYOVDZEUNAEGY
+        OGURUOZHIKLNOPQUAAPVCZKUNQVCZKUNVFZOVCZKUNNVCZKUNVFZVEUUDIUOUUGIUOUQUUE
+        IUOUUHIUOUQVFUUDUUEFVDZIUOZUUGUUHFVDZIUOZUQZUUDUUEUUCVDZIUOZUUGUUHUUCVD
+        ZIUOZUQZUBAUUFUUNUUSVGUUIAUUKUUPUUMUURAUUJUUOIAFUUCUUDUUETVHVIAUULUUQIA
+        FUUCUUGUUHTVHZVIVJVKVLZRSUCUUCVMZYOVMZAUUIVFUULUUQKAUULUUQUQUUIUUTVNABC
+        UUGUUHKKKFABVCZKUNZCVCZKUNZUVDUVFFVDZKUNZUDWIVOZVPVQYRYTEEEYOVRVSAYSUUA
+        ULVCZEUNZVEZUUBUVKYOVDZYRYTUVKYOVDZYOVDZUQZAUVMUVDIUOZYRUQZUVFIUOZYTUQZ
+        DVCZIUOZUVKUQZVEZDKVTZCKVTBKVTZUVQAUVMUVSBKVTZUWACKVTZUWDDKVTZVEZUWGAYR
+        IWAZUNZYTUWLUNZUVKUWLUNZVEZUVMUWKAUWMYSUWNUUAUWOUVLAUWLEYRAKEIWBZUWLEUQ
+        UAKEIWCWDZWEZAUWLEYTUWRWEAUWLEUVKUWRWEWFAIKWGZUWPUWKVGAUWQUWTUAKEIWHWDZ
+        UWTUWMUWHUWNUWIUWOUWJBKYRIWJZCKYTIWJDKUVKIWJWFWDWKUVSUWAUWDBCDKKKWLWMAU
+        WFUVQBCKKAUVEUVGVFVFUWEUVQDKAUVEUVGUWBKUNZUWEUVQWRZWRAUVEUVGUXCUXDAUVEU
+        VGUXCVEZVFZUVRUVTYOVDZUWCYOVDZUVRUVTUWCYOVDZYOVDZUQUWEUVQUXFUVHIUOZUWCY
+        OVDZUVRUVFUWBFVDZIUOZYOVDZUXHUXJUXFUVHUWBUUCVDZIUOZUVDUXMUUCVDZIUOZUXLU
+        XOUXFUVHUWBFVDZIUOUVDUXMFVDZIUOUXQUXSUEUXFUXTUXPIUXFFUUCUVHUWBAFUUCUQZU
+        XETVNZVHVIUXFUYAUXRIUXFFUUCUVDUXMUYCVHVIWNUXFAUVIUXCUXLUXQUQAUXEWOZAUVE
+        UVGUVIUXCUDWPAUVEUVGUXCWSAEGYOUUCHIKUVHUWBLNOPQUAUVARSUCUVBUVCWQWTUXFAU
+        VEUXMKUNZUXOUXSUQUYDAUVEUVGUXCXAAUVGUXCUYEUVEAONUVFUWBKKKFUVJVOXBAEGYOU
+        UCHIKUVDUXMLNOPQUAUVARSUCUVBUVCWQWTXCUXFUXGUXKUWCYOUXFUXGUVDUVFUUCVDZIU
+        OZUXKAUVEUVGUXGUYGUQUXCAEGYOUUCHIKUVDUVFLNOPQUAUVARSUCUVBUVCWQWPUXFUVHU
+        YFIUXFFUUCUVDUVFUYCVHVIXDXEUXFUXIUXNUVRYOUXFUXIUVFUWBUUCVDZIUOZUXNAUVGU
+        XCUXIUYIUQUVEAEGYOUUCHIKUVFUWBLNOPQUAUVARSUCUVBUVCWQXFUXFUXMUYHIUXFFUUC
+        UVFUWBUYCVHVIXDXHXCUWEUXHUVNUXJUVPUWEUXGUUBUWCUVKYOUWEUVRYRUVTYTYOUVSUW
+        AUWDXGZUVSUWAUWDXIZXRUVSUWAUWDXJZXRUWEUVRYRUXIUVOYOUYJUWEUVTYTUWCUVKYOU
+        YKUYLXRXRVJXKXLXMXNXOXPXQAKEMIAUWQKEIVBZUAKEIXSWDZUFXTZAYSYNYRYOVDZYRUQ
+        ZAYSUWHUYQAUWMYSUWHUWSAUWTUWMUWHVGUXAUXBWDWKZAUVSUYQBKAUVEVFZYNUVRYOVDZ
+        UVRUQUVSUYQUYSUYTMUVDUUCVDZIUOZMUVDFVDZIUOUVRUYSAMKUNZUVEUYTVUBUQAUVEWO
+        ZAVUDUVEUFVNAUVEYAZAEGYOUUCHIKMUVDLNOPQUAUVARSUCUVBUVCWQWTUYSVUCVUAIUYS
+        FUUCMUVDAUYBUVETVNZVHVIUGYBUVSUYTUYPUVRYRUVRYRYNYOYCUVSYHVJXKYDXPXQZAYS
+        YTYRYOVDZYNUQZUKEVTZAYSUWHVUKUYRAUVSVUKBKUYSYTUVRYOVDZYNUQZUKEVTZUVSVUK
+        UYSJIUOZEUNVUOUVRYOVDZYNUQZVUNUYSKEJIAUYMUVEUYNVNUHXTUYSVUPJUVDUUCVDZIU
+        OZJUVDFVDZIUOYNUYSAJKUNUVEVUPVUSUQVUEUHVUFAEGYOUUCHIKJUVDLNOPQUAUVARSUC
+        UVBUVCWQWTUYSVUTVURIUYSFUUCJUVDVUGVHVIUIYBVUMVUQUKVUOEYTVUOUQVULVUPYNYT
+        VUOUVRYOYEYFYGYIUVSVUMVUJUKEUVSVULVUIYNUVRYRYTYOYCYFYJXKYDXPXQYKZAUJEYO
+        HYNYPYQUYOVUHVVAYLYM $.
+    $}
+  $}
+
+  ${
+    $d a b p q u x y z .~ $.  $d a b p q u x .0. $.  $d p u N $.  $d p q u R $.
+    $d a b p q u x y .+ $.  $d a b p q u x y z ph $.  $d a b p q u x y z V $.
+    $d a b p q x y z U $.
+    qusgrp2.u $e |- ( ph -> U = ( R /s .~ ) ) $.
+    qusgrp2.v $e |- ( ph -> V = ( Base ` R ) ) $.
+    qusgrp2.p $e |- ( ph -> .+ = ( +g ` R ) ) $.
+    qusgrp2.r $e |- ( ph -> .~ Er V ) $.
+    qusgrp2.x $e |- ( ph -> R e. X ) $.
+    qusgrp2.e $e |- ( ph ->
+      ( ( a .~ p /\ b .~ q ) -> ( a .+ b ) .~ ( p .+ q ) ) ) $.
+    qusgrp2.1 $e |- ( ( ph /\ x e. V /\ y e. V ) -> ( x .+ y ) e. V ) $.
+    qusgrp2.2 $e |- ( ( ph /\ ( x e. V /\ y e. V /\ z e. V ) ) ->
+      ( ( x .+ y ) .+ z ) .~ ( x .+ ( y .+ z ) ) ) $.
+    qusgrp2.3 $e |- ( ph -> .0. e. V ) $.
+    qusgrp2.4 $e |- ( ( ph /\ x e. V ) -> ( .0. .+ x ) .~ x ) $.
+    qusgrp2.5 $e |- ( ( ph /\ x e. V ) -> N e. V ) $.
+    qusgrp2.6 $e |- ( ( ph /\ x e. V ) -> ( N .+ x ) .~ .0. ) $.
+    $( Prove that a quotient structure is a group.  (Contributed by Mario
+       Carneiro, 14-Jun-2015.)  (Revised by Mario Carneiro, 12-Aug-2015.) $)
+    qusgrp2 $p |- ( ph -> ( U e. Grp /\ [ .0. ] .~ = ( 0g ` U ) ) ) $=
+      ( vu cgrp wcel cec c0g cfv wceq wa cv cmpt cqs cvv eqid wer cbs wfn basfn
+      elexd funfvex funfni sylancr eqeltrd erex sylc qusval quslem 3expb ercpbl
+      co w3a adantr erthi divsfvalg ercl2 3eqtr4d simpr ersym 3eqtr4rd imasgrp2
+      ercl eqcomd eqeq1d anbi2d mpbird ) AHUJUKZLFULZHUMUNZUOZUPWMLUIJUIUQFULUR
+      ZUNZWOUOZUPABCDJFUSEGHWQIJKLMNOPAUIFGHWQJUTKQRWQVAZAJFVBZJUTUKZFUTUKTAJGV
+      CUNZUTRAVCUTVDGUTUKXCUTUKZVEAGKUAVFXDUTGVCGVCVGVHVIVJZJFUTVKVLZUAVMRSAUIF
+      GHWQJUTKQRWTXFUAVNAUIOUQPUQNUQMUQEFWQJUTBCTXEWTABUQZJUKZCUQZJUKZXGXIEVQZJ
+      UKUCVOUBVPUAUCAXHXJDUQZJUKVRZUPZXKXLEVQZFULXGXIXLEVQEVQZFULXOWQUNXPWQUNXN
+      XOXPFJAXAXMTVSZUDVTXNUIXOFWQJUTXQAXBXMXEVSZWTXNXOXPFJXQUDWHWAXNUIXPFWQJUT
+      XQXRWTXNXOXPFJXQUDWBWAWCUEAXHUPZLXGEVQZFULXGFULXTWQUNXGWQUNXSXTXGFJAXAXHT
+      VSZUFVTXSUIXTFWQJUTYAAXBXHXEVSZWTXSXTXGFJYAUFWHWAXSUIXGFWQJUTYAYBWTAXHWDW
+      AWCUGXSWNIXGEVQZFULWRYCWQUNXSLYCFJYAXSYCLFJYAUHWEVTXSUILFWQJUTYAYBWTALJUK
+      XHUEVSWAXSUIYCFWQJUTYAYBWTXSYCLFJYAUHWHWAWFWGAWPWSWMAWNWRWOAWRWNAUILFWQJU
+      TTXEWTUEWAWIWJWKWL $.
+  $}
+
+  ${
     $d F a d f i j k x y $.  $d G a d f i j k x y $.  $d .+ i j k x y $.
     $d H a b c d f i x y $.  $d X i j k x y $.  $d Y a b c d f i j k x y $.
     $d .+^ a b c d f i j k x y $.  $d a b c i j k x y ph $.
@@ -148747,6 +148869,18 @@ $)
         VIUWDGXQXOXRUWEGYLGYIPYMYOUVIUWDGXSXOXTYAYSXHXDXEYTFRRYBXLUVJSUEPZYLYQY
         CUVJYDYLYMYOUVIYESGYFXLYGUUDYLUWLYPYCUVFUUDYDGSYJXLYGYHYK $.
     $}
+  $}
+
+  ${
+    $d G n x $.
+    $( Existence of the group multiple operation.  (Contributed by Jim Kingdon,
+       22-Apr-2025.) $)
+    mulgex $p |- ( G e. V -> ( .g ` G ) e. _V ) $=
+      ( vn vx wcel cmg cfv cbs cc0 wceq c0g clt wbr cplusg cif cvv eqid sylancr
+      cz cv cn csn cxp c1 cseq cneg cminusg cmpo mulgfvalg zex wfn elex funfvex
+      basfn funfni mpoexga eqeltrd ) ABEZAFGZCDSAHGZCTZIJAKGZIVALMVAANGZUADTUBU
+      CUDUEZGVAUFVDGAUGGZGOOZUHZPDUTVCUSCAVEBVBUTQVCQVBQVEQUSQUIURSPEUTPEZVGPEU
+      JURHPUKAPEVHUNABULVHPAHAHUMUORCDSUTVFPPUPRUQ $.
   $}
 
   ${
@@ -150261,6 +150395,24 @@ $)
       TXGCUFZXPXRGHXSXIWIXOXQXSXHWHWGXGCNVHVEXSXMWMXNXSXKWKWFWFXLWLXGCRVHXSWEXJ
       WJXGCQVHVFXSWFVQVIVJVKVLXNBUFZXRWOGHXTXQWNWIXNBWMVRVMVLGHJIVNVOVPVSVTWA
       $.
+  $}
+
+  ${
+    $d G i r x y $.  $d S i r x y $.
+    $( The left coset equivalence relation exists.  (Contributed by Jim
+       Kingdon, 25-Apr-2025.) $)
+    eqgex $p |- ( ( G e. V /\ S e. W ) -> ( G ~QG S ) e. _V ) $=
+      ( vx vy vr vi wcel wa co cv cbs cfv wss cminusg cplusg copab cvv wceq cqg
+      cpr elex adantr adantl vex prss anbi1i opabbii cxp funfvex funfni sylancr
+      basfn xpexg syl2anc opabssxp ssexd eqeltrrid fveq2 sseq2d fveq1d oveq123d
+      wfn a1i eqidd eleq1d anbi12d opabbidv eleq2 anbi2d df-eqg syl3anc eqeltrd
+      ovmpog ) BCIZADIZJZBAUAKZELZFLZUBZBMNZOZVTBPNZNZWABQNZKZAIZJZEFRZSVRBSIZA
+      SIZWKSIVSWKTVPWLVQBCUCUDZVQWMVPADUCUEVRWKVTWCIWAWCIJZWIJZEFRZSWPWJEFWOWDW
+      IVTWAWCEUFFUFUGUHUIVRWQWCWCUJZSVRWCSIZWSWRSIVRMSVDWLWSUNWNWSSBMBMUKULUMZW
+      TWCWCSSUOUPWQWROVRWIEFWCWCUQVEURUSZGHBASSWBGLZMNZOZVTXBPNZNZWAXBQNZKZHLZI
+      ZJZEFRWKUAWDWHXIIZJZEFRSXBBTZXKXMEFXNXDWDXJXLXNXCWCWBXBBMUTVAXNXHWHXIXNXF
+      WFWAWAXGWGXBBQUTXNVTXEWEXBBPUTVBXNWAVFVCVGVHVIXIATZXMWJEFXOXLWIWDXIAWHVJV
+      KVIEFHGVLVOVMXAVN $.
   $}
 
   ${
@@ -156244,6 +156396,17 @@ $)
   $}
 
   ${
+    $d W s t $.
+    $( Existence of the span of a set of vectors.  (Contributed by Jim Kingdon,
+       25-Apr-2025.) $)
+    lspex $p |- ( W e. X -> ( LSpan ` W ) e. _V ) $=
+      ( vs vt wcel clspn cfv cbs cpw cv wss clss crab cint cmpt cvv lspfval wfn
+      eqid basfn elex funfvex funfni sylancr pwexd mptexd eqeltrd ) ABEZAFGZCAH
+      GZIZCJDJKDALGZMNZOPDULUIUJABCUJSULSUISQUHCUKUMPUHUJPUHHPRAPEUJPEZTABUAUNP
+      AHAHUBUCUDUEUFUG $.
+  $}
+
+  ${
     lspsnsubg.v $e |- V = ( Base ` W ) $.
     lspsnsubg.n $e |- N = ( LSpan ` W ) $.
     $( The span of a singleton is an additive subgroup (frequently used special
@@ -157167,6 +157330,12 @@ $)
       elex sylancr eqtrid ) BACZBDEBFGHZEZBGEFEZBDTIJSGKLBKCUAUBMNBAPKFGBOQR $.
   $}
 
+  $( Existence of the ring span.  (Contributed by Jim Kingdon, 25-Apr-2025.) $)
+  rspex $p |- ( W e. V -> ( RSpan ` W ) e. _V ) $=
+    ( wcel crsp cfv crglmod clspn cvv rspvalg rlmfn elex funfvex funfni sylancr
+    wfn lspex syl eqeltrd ) BACZBDEBFEZGEZHABISTHCZUAHCSFHOBHCUBJBAKUBHBFBFLMNT
+    HPQR $.
+
   ${
     $d a b j s w x $.
     lidlmex.i $e |- I = ( LIdeal ` W ) $.
@@ -157848,6 +158017,152 @@ $)
   zringmpg $p |- ( ( mulGrp ` CCfld ) |`s ZZ ) = ( mulGrp ` ZZring ) $=
     ( ccnfld crg wcel cz cvv cmgp cfv cress co czring wceq cnring df-zring eqid
     zex mgpress mp2an ) ABCDECAFGZDHIJFGKLODAJRBEMRNPQ $.
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Algebraic constructions based on the complex numbers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c ZRHom $. $( Map the integers into a field $)
+  $c ZMod $. $( Turn an abelian group into a ZZ-module $)
+  $c Z/nZ $. $( Integers mod n $)
+
+  $( Map the rationals into a field, or the integers into a ring. $)
+  czrh $a class ZRHom $.
+
+  $( Augment an abelian group with vector space operations to turn it into a
+     ` ZZ ` -module. $)
+  czlm $a class ZMod $.
+
+  $( The ring of integers modulo ` n ` . $)
+  czn $a class Z/nZ $.
+
+  ${
+    $d n z s f r $.
+    $( Define the unique homomorphism from the integers into a ring.  This
+       encodes the usual notation of ` n = 1r + 1r + ... + 1r ` for integers
+       (see also ~ df-mulg ).  (Contributed by Mario Carneiro, 13-Jun-2015.)
+       (Revised by AV, 12-Jun-2019.) $)
+    df-zrh $a |- ZRHom = ( r e. _V |-> U. ( ZZring RingHom r ) ) $.
+
+    $( Augment an abelian group with vector space operations to turn it into a
+       ` ZZ ` -module.  (Contributed by Mario Carneiro, 2-Oct-2015.)  (Revised
+       by AV, 12-Jun-2019.) $)
+    df-zlm $a |- ZMod = ( g e. _V |-> ( ( g
+      sSet <. ( Scalar ` ndx ) , ZZring >. )
+      sSet <. ( .s ` ndx ) , ( .g ` g ) >. ) ) $.
+
+    $( Define the ring of integers ` mod n ` .  This is literally the quotient
+       ring of ` ZZ ` by the ideal ` n ZZ ` , but we augment it with a total
+       order.  (Contributed by Mario Carneiro, 14-Jun-2015.)  (Revised by AV,
+       12-Jun-2019.) $)
+    df-zn $a |- Z/nZ = ( n e. NN0 |-> [_ ZZring / z ]_
+      [_ ( z /s ( z ~QG ( ( RSpan ` z ) ` { n } ) ) ) / s ]_
+      ( s sSet <. ( le ` ndx ) , [_ ( ( ZRHom ` s ) |`
+      if ( n = 0 , ZZ , ( 0 ..^ n ) ) ) / f ]_
+        ( ( f o. <_ ) o. `' f ) >. ) ) $.
+  $}
+
+  ${
+    $d g G $.  $d g .x. $.
+    zlmval.w $e |- W = ( ZMod ` G ) $.
+    zlmval.m $e |- .x. = ( .g ` G ) $.
+    $( Augment an abelian group with vector space operations to turn it into a
+       ` ZZ ` -module.  (Contributed by Mario Carneiro, 2-Oct-2015.)  (Revised
+       by AV, 12-Jun-2019.) $)
+    zlmval $p |- ( G e. V -> W = ( ( G sSet <. ( Scalar ` ndx ) , ZZring >. )
+                                       sSet <. ( .s ` ndx ) , .x. >. ) ) $=
+      ( vg wcel czlm cfv cnx csca czring cop csts co cmg cvv wceq cn cv eqtr4di
+      cvsca df-zlm oveq1 fveq2 opeq2d oveq12d elex crg scaslid simpri zringring
+      cslot setsex mp3an23 vscaslid a1i mulgex eqeltrid syl3anc fvmptd3 eqtrid
+      ) BCHZDBIJBKLJZMNZOPZKUCJZANZOPZEVDGBGUAZVFOPZVHVKQJZNZOPVJRIRGUDVKBSZVLV
+      GVNVIOVKBVFOUEVOVMAVHVOVMBQJZAVKBQUFFUBUGUHBCUIVDVGRHZVHTHZARHVJRHVDVETHZ
+      MUJHVQLVEUNSVSUKULUMVEMBCUJTUOUPVRVDUCVHUNSVRUQULURVDAVPRFBCUSUTVHAVGRRTU
+      OVAVBVC $.
+  $}
+
+  ${
+    zlmbas.w $e |- W = ( ZMod ` G ) $.
+    ${
+      zlmlem.2 $e |- E = Slot ( E ` ndx ) $.
+      zlmlem.nn $e |- ( E ` ndx ) e. NN $.
+      zlmlem.3 $e |- ( E ` ndx ) =/= ( Scalar ` ndx ) $.
+      zlmlem.4 $e |- ( E ` ndx ) =/= ( .s ` ndx ) $.
+      $( Lemma for ~ zlmbasg and ~ zlmplusgg .  (Contributed by Mario Carneiro,
+         2-Oct-2015.)  (Revised by AV, 3-Nov-2024.) $)
+      zlmlemg $p |- ( G e. V -> ( E ` G ) = ( E ` W ) ) $=
+        ( wcel cnx csca cfv czring cop csts cvv wceq cn crg cvsca cslot scaslid
+        co cmg simpri zringring setsex mp3an23 mulgex ndxslid setsslnid syl2anc
+        vscaslid mpan2 eqid zlmval fveq2d 3eqtr4d ) BCJZBKLMZNOPUDZAMZVBKUAMZBU
+        EMZOPUDZAMZBAMZDAMUTVBQJZVEQJVCVGRUTVASJZNTJZVILVAUBRVJUCUFZUGVANBCTSUH
+        UIBCUJQVEVDAQVBAKAMFGUKZIUAVDUBRVDSJUNUFULUMUTVKVHVCRUGCNVAATBVMHVLULUO
+        UTDVFAVEBCDEVEUPUQURUS $.
+    $}
+
+    ${
+      zlmbas.2 $e |- B = ( Base ` G ) $.
+      $( Base set of a ` ZZ ` -module.  (Contributed by Mario Carneiro,
+         2-Oct-2015.)  (Revised by AV, 3-Nov-2024.) $)
+      zlmbasg $p |- ( G e. V -> B = ( Base ` W ) ) $=
+        ( wcel cbs cfv baseid basendxnn cnx csca scandxnbasendx vscandxnbasendx
+        necomi cvsca zlmlemg eqtrid ) BCGABHIDHIFHBCDEJKLMILHIZNPLQITOPRS $.
+    $}
+
+    ${
+      zlmplusg.2 $e |- .+ = ( +g ` G ) $.
+      $( Group operation of a ` ZZ ` -module.  (Contributed by Mario Carneiro,
+         2-Oct-2015.)  (Revised by AV, 3-Nov-2024.) $)
+      zlmplusgg $p |- ( G e. V -> .+ = ( +g ` W ) ) $=
+        ( wcel cfv plusgid plusgndxnn cnx csca scandxnplusgndx vscandxnplusgndx
+        cplusg necomi cvsca zlmlemg eqtrid ) BCGABOHDOHFOBCDEIJKLHKOHZMPKQHTNPR
+        S $.
+    $}
+
+    ${
+      zlmmulr.2 $e |- .x. = ( .r ` G ) $.
+      $( Ring operation of a ` ZZ ` -module (if present).  (Contributed by
+         Mario Carneiro, 2-Oct-2015.)  (Revised by AV, 3-Nov-2024.) $)
+      zlmmulrg $p |- ( G e. V -> .x. = ( .r ` W ) ) $=
+        ( wcel cmulr cfv mulridx cnx cslot wceq cn mulrslid csca scandxnmulrndx
+        simpri necomi cvsca vscandxnmulrndx zlmlemg eqtrid ) BCGABHIDHIFHBCDEJH
+        KHIZLMUDNGORKPIUDQSKTIUDUASUBUC $.
+    $}
+
+    $( Scalar ring of a ` ZZ ` -module.  (Contributed by Mario Carneiro,
+       2-Oct-2015.)  (Revised by AV, 12-Jun-2019.)  (Proof shortened by AV,
+       2-Nov-2024.) $)
+    zlmsca $p |- ( G e. V -> ZZring = ( Scalar ` W ) ) $=
+      ( wcel cnx csca cfv czring cop csts co cvsca cvv wceq cn crg cslot simpri
+      scaslid zringring setsex mp3an23 mulgex vscandxnscandx vscaslid setsslnid
+      cmg necomi syl2anc setsslid mpan2 eqid zlmval fveq2d 3eqtr4d ) ABEZAFGHZI
+      JKLZGHZUSFMHZAUHHZJKLZGHZICGHUQUSNEZVBNEUTVDOUQURPEZIQEZVEGURROVFTSUAURIA
+      BQPUBUCABUDNVBVAGNUSTVAURUEUIMVAROVAPEUFSUGUJUQVGIUTOUABIGQATUKULUQCVCGVB
+      ABCDVBUMUNUOUP $.
+
+    ${
+      zlmvsca.2 $e |- .x. = ( .g ` G ) $.
+      $( Scalar multiplication operation of a ` ZZ ` -module.  (Contributed by
+         Mario Carneiro, 2-Oct-2015.) $)
+      zlmvscag $p |- ( G e. V -> .x. = ( .s ` W ) ) $=
+        ( wcel cnx csca cfv czring cop csts co cvsca cvv wceq cn crg cslot cmg
+        scaslid simpri setsex mp3an23 mulgex eqeltrid vscaslid setsslid syl2anc
+        zringring zlmval fveq2d eqtr4d ) BCGZABHIJZKLMNZHOJALMNZOJZDOJUOUQPGZAP
+        GAUSQUOUPRGZKSGUTIUPTQVAUBUCUKUPKBCSRUDUEUOABUAJPFBCUFUGPAOPUQUHUIUJUOD
+        UROABCDEFULUMUN $.
+    $}
+  $}
+
+  ${
+    $d f n s z .<_ $.  $d f n s z N $.  $d n s z U $.
+    znval.s $e |- S = ( RSpan ` ZZring ) $.
+    $( The set ` n ZZ ` is an ideal in ` ZZ ` .  (Contributed by Mario
+       Carneiro, 14-Jun-2015.)  (Revised by AV, 13-Jun-2019.) $)
+    znlidl $p |- ( N e. ZZ -> ( S ` { N } ) e. ( LIdeal ` ZZring ) ) $=
+      ( wcel czring crg csn wss cfv clidl zringring snssi zringbas eqid sylancr
+      cz rspcl ) BPDEFDBGZPHRAIEJIZDKBPLPESRACMSNQO $.
+  $}
 
 
 $(
@@ -175452,6 +175767,21 @@ htmldef "CCfld" as "&#8450;<SUB>fld</SUB>";
 htmldef "ZZring" as "&#8484;<SUB>ring</SUB>";
   althtmldef "ZZring" as "&#8484;<SUB>ring</SUB>";
   latexdef "ZZring" as "\mathrm{ZZring}";
+htmldef "ZRHom" as
+    "<IMG SRC='bbz.gif' WIDTH=13 HEIGHT=19 ALT=' Z' TITLE='Z'>RHom";
+  althtmldef "ZRHom" as "&#8484;RHom";
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "ZRHom" as "\mathrm{ZRHom}";
+htmldef "ZMod" as
+    "<IMG SRC='bbz.gif' WIDTH=13 HEIGHT=19 ALT=' Z' TITLE='Z'>Mod";
+  althtmldef "ZMod" as "&#8484;Mod";
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "ZMod" as "\mathrm{ZMod}";
+htmldef "Z/nZ" as "&#8484;/<i>n</i>&#8484;";
+    /* 2-Jan-2016 reverted sans-serif */
+  althtmldef "Z/nZ" as "&#8484;/<i>n</i>&#8484;";
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "Z/nZ" as "\mathrm{Z/nZ}";
 htmldef "fBas" as
     "<IMG SRC='_fbas.gif' WIDTH=29 HEIGHT=19 ALT=' fBas' TITLE='fBas'>";
   althtmldef "fBas" as "fBas";
