@@ -151338,6 +151338,15 @@ $)
       $.
   $}
 
+  ${
+    rng0cl.b $e |- B = ( Base ` R ) $.
+    rng0cl.z $e |- .0. = ( 0g ` R ) $.
+    $( The zero element of a non-unital ring belongs to its base set.
+       (Contributed by AV, 16-Feb-2025.) $)
+    rng0cl $p |- ( R e. Rng -> .0. e. B ) $=
+      ( crng wcel cgrp rnggrp grpidcl syl ) BFGBHGCAGBIABCDEJK $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
