@@ -151260,6 +151260,13 @@ $)
       UEUGNUHUDUEUGNUFNPTFAQMZREUIRDUIRDEFUIUFAUGBUISCUFSUGSUAUB $.
   $}
 
+  $( Restricted functionality of the multiplicative group on non-unital rings
+     ( ~ mgpf analog).  (Contributed by AV, 22-Feb-2025.) $)
+  rngmgpf $p |- ( mulGrp |` Rng ) : Rng --> Smgrp $=
+    ( va crng csgrp cmgp cres wf wfn cv cfv wcel wral cvv wss fnmgp ssv fnssres
+    mp2an fvres eqid rngmgp eqeltrd rgen ffnfv mpbir2an ) BCDBEZFUEBGZAHZUEIZCJ
+    ZABKDLGBLMUFNBOLBDPQUIABUGBJUHUGDIZCUGBDRUGUJUJSTUAUBABCUEUCUD $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
