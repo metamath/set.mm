@@ -151272,6 +151272,23 @@ $)
   rnggrp $p |- ( R e. Rng -> R e. Grp ) $=
     ( crng wcel rngabl ablgrpd ) ABCAADE $.
 
+  ${
+    rngass.b $e |- B = ( Base ` R ) $.
+    rngass.t $e |- .x. = ( .r ` R ) $.
+    $( Associative law for the multiplication operation of a non-unital ring.
+       (Contributed by NM, 27-Aug-2011.)  (Revised by AV, 13-Feb-2025.) $)
+    rngass $p |- ( ( R e. Rng /\ ( X e. B /\ Y e. B /\ Z e. B ) ) ->
+                      ( ( X .x. Y ) .x. Z ) = ( X .x. ( Y .x. Z ) ) ) $=
+      ( crng wcel w3a wa co wceq cfv eqid adantr eleqtrd oveqd eqtrd cmgp csgrp
+      cplusg cbs rngmgp simpr1 mgpbasg simpr2 simpr3 sgrpass syl13anc mgpplusgg
+      wb oveq1d oveq2d eqeq12d mpbird ) BIJZDAJZEAJZFAJZKZLZDECMZFCMZDEFCMZCMZN
+      ZDEBUAOZUCOZMZFVJMZDEFVJMZVJMZNZVCVIUBJZDVIUDOZJEVQJFVQJVOURVPVBBVIVIPZUE
+      QVCDAVQURUSUTVAUFURAVQNVBABVIIVRGUGQZRVCEAVQURUSUTVAUHVSRVCFAVQURUSUTVAUI
+      VSRVQVIDEVJFVQPVJPUJUKURVHVOUMVBURVEVLVGVNURVEVDFVJMVLURCVJVDFBCVIIVRHULZ
+      SURVDVKFVJURCVJDEVTSUNTURVGDVFVJMVNURCVJDVFVTSURVFVMDVJURCVJEFVTSUOTUPQUQ
+      $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
