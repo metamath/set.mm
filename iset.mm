@@ -147754,6 +147754,17 @@ $)
   $}
 
   ${
+    grpinvcld.b $e |- B = ( Base ` G ) $.
+    grpinvcld.n $e |- N = ( invg ` G ) $.
+    grpinvcld.g $e |- ( ph -> G e. Grp ) $.
+    grpinvcld.1 $e |- ( ph -> X e. B ) $.
+    $( A group element's inverse is a group element.  (Contributed by SN,
+       29-Jan-2025.) $)
+    grpinvcld $p |- ( ph -> ( N ` X ) e. B ) $=
+      ( cgrp wcel cfv grpinvcl syl2anc ) ACJKEBKEDLBKHIBCDEFGMN $.
+  $}
+
+  ${
     $d e x y z B $.  $d e x y z G $.  $d e x y z .0. $.  $d e x y z .+ $.
     $d e x M $.  $d x y z N $.  $d y z X $.
     grpinv.b $e |- B = ( Base ` G ) $.
