@@ -151447,6 +151447,15 @@ $)
       VKPKLBCDFVKHIVOUIUJUKAVGVFVCVHNZVKPZVLAVQVCBRZVFBRZVGWAULVRAVPVSGBRZWBKLM
       BCDFGHISTAVPVSVEBRZWCKLABCEGHJVRMUMZBCDFVEHISTBVHCEVCVFVKHVNVOJUNTAVTVJVK
       AVPVSWEWDVTVJPKLWFMVPVSWEWDUOURVJVTBVHCDFVEGHVNIUPUSUQUTVAVBUS $.
+
+    $( Double negation of a product in a non-unital ring ( ~ mul2neg analog).
+       (Contributed by Mario Carneiro, 4-Dec-2014.)  Generalization of
+       ~ ringm2neg .  (Revised by AV, 17-Feb-2025.) $)
+    rngm2neg $p |- ( ph -> ( ( N ` X ) .x. ( N ` Y ) ) = ( X .x. Y ) ) $=
+      ( cfv co crng wcel cgrp rnggrp syl grpinvcld rngmneg1 rngmneg2 wceq rngcl
+      fveq2d syl3anc grpinvinv syl2anc 3eqtrd ) AFENGENZDOFUKDOZENFGDOZENZENZUM
+      ABCDEFUKHIJKLABCEGHJACPQZCRQZKCSTZMUAUBAULUNEABCDEFGHIJKLMUCUFAUQUMBQZUOU
+      MUDURAUPFBQGBQUSKLMBCDFGHIUEUGBCEUMHJUHUIUJ $.
   $}
 
 
