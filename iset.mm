@@ -151534,6 +151534,36 @@ $)
       EVDVEIVPVOKUMUNUQ $.
   $}
 
+  ${
+    $d x y z B $.  $d x y z ph $.  $d x y z R $.
+    isrngd.b $e |- ( ph -> B = ( Base ` R ) ) $.
+    isrngd.p $e |- ( ph -> .+ = ( +g ` R ) ) $.
+    isrngd.t $e |- ( ph -> .x. = ( .r ` R ) ) $.
+    isrngd.g $e |- ( ph -> R e. Abel ) $.
+    isrngd.c $e |- ( ( ph /\ x e. B /\ y e. B ) -> ( x .x. y ) e. B ) $.
+    isrngd.a $e |- ( ( ph /\ ( x e. B /\ y e. B /\ z e. B ) ) ->
+                  ( ( x .x. y ) .x. z ) = ( x .x. ( y .x. z ) ) ) $.
+    isrngd.d $e |- ( ( ph /\ ( x e. B /\ y e. B /\ z e. B ) ) ->
+                  ( x .x. ( y .+ z ) ) = ( ( x .x. y ) .+ ( x .x. z ) ) ) $.
+    isrngd.e $e |- ( ( ph /\ ( x e. B /\ y e. B /\ z e. B ) ) ->
+                  ( ( x .+ y ) .x. z ) = ( ( x .x. z ) .+ ( y .x. z ) ) ) $.
+    $( Properties that determine a non-unital ring.  (Contributed by AV,
+       14-Feb-2025.) $)
+    isrngd $p |- ( ph -> R e. Rng ) $=
+      ( wcel cfv co wceq cabl cmgp csgrp cv cplusg cmulr cbs wral crng cvv eqid
+      wa mgpbasg syl eqtrd mgpplusgg mgpex issgrpd w3a eleq2d 3anbi123d biimpar
+      adantr eqidd oveqdr oveq123d 3eqtr3d syldan ralrimivvva isrng syl3anbrc
+      jca ) AGUAQZGUBRZUCQBUDZCUDZDUDZGUERZSZGUFRZSZVOVPVTSZVOVQVTSZVRSZTZVOVPV
+      RSZVQVTSZWCVPVQVTSZVRSZTZULZDGUGRZUHCWLUHBWLUHGUIQLABCDEHVNUJAEWLVNUGRZIA
+      VMWLWMTLWLGVNUAVNUKZWLUKZUMUNUOAHVTVNUERZKAVMVTWPTLGVTVNUAWNVTUKZUPUNUOMN
+      AVMVNUJQLGVNUAWNUQUNURAWKBCDWLWLWLAVOWLQZVPWLQZVQWLQZUSZVOEQZVPEQZVQEQZUS
+      ZWKAXEXAAXBWRXCWSXDWTAEWLVOIUTAEWLVPIUTAEWLVQIUTVAVBAXEULZWEWJXFVOVPVQFSZ
+      HSVOVPHSZVOVQHSZFSWAWDOXFVOVOXGVSHVTAHVTTXEKVCZXFVOVDAXECDFVRJVEVFXFXHWBX
+      IWCFVRAFVRTXEJVCZAXEBCHVTKVEAXEBDHVTKVEZVFVGXFVOVPFSZVQHSXIVPVQHSZFSWGWIP
+      XFXMWFVQVQHVTXJAXEBCFVRJVEXFVQVDVFXFXIWCXNWHFVRXKXLAXECDHVTKVEVFVGVLVHVIB
+      CDWLVRGVTVNWOWNVRUKWQVJVK $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
