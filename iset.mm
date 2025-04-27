@@ -151475,6 +151475,29 @@ $)
     ( crng wcel cabl cnsg cfv csubg wceq rngabl ablnsg syl ) ABCADCAEFAGFHAIAJK
     $.
 
+  ${
+    rngsubdi.b $e |- B = ( Base ` R ) $.
+    rngsubdi.t $e |- .x. = ( .r ` R ) $.
+    rngsubdi.m $e |- .- = ( -g ` R ) $.
+    rngsubdi.r $e |- ( ph -> R e. Rng ) $.
+    rngsubdi.x $e |- ( ph -> X e. B ) $.
+    rngsubdi.y $e |- ( ph -> Y e. B ) $.
+    rngsubdi.z $e |- ( ph -> Z e. B ) $.
+    $( Ring multiplication distributes over subtraction.  ( ~ subdi analog.)
+       (Contributed by Jeff Madsen, 19-Jun-2010.)  (Revised by Mario Carneiro,
+       2-Jul-2014.)  Generalization of ~ ringsubdi .  (Revised by AV,
+       23-Feb-2025.) $)
+    rngsubdi $p |- ( ph -> ( X .x. ( Y .- Z ) )
+                           = ( ( X .x. Y ) .- ( X .x. Z ) ) ) $=
+      ( cfv co wcel wceq eqid cminusg cplusg crng rnggrp syl grpinvcld syl13anc
+      cgrp rngdi rngmneg2 oveq2d eqtrd grpsubval syl2anc rngcl syl3anc 3eqtr4d
+      ) AFGHCUAPZPZCUBPZQZDQZFGDQZFHDQZURPZUTQZFGHEQZDQVCVDEQZAVBVCFUSDQZUTQZVF
+      ACUCRZFBRZGBRZUSBRVBVJSLMNABCURHIURTZAVKCUHRLCUDUEOUFBUTCDFGUSIUTTZJUIUGA
+      VIVEVCUTABCDURFHIJVNLMOUJUKULAVGVAFDAVMHBRZVGVASNOBUTCUREGHIVOVNKUMUNUKAV
+      CBRZVDBRZVHVFSAVKVLVMVQLMNBCDFGIJUOUPAVKVLVPVRLMOBCDFHIJUOUPBUTCUREVCVDIV
+      OVNKUMUNUQ $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
