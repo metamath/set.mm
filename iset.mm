@@ -153150,6 +153150,38 @@ $)
       FTUTVGVHVIVJVDDEVBVFTURUSUNUOUP $.
   $}
 
+  ${
+    $d p q u x y .+ $.  $d p q u .1. $.  $d a b p q U $.  $d a b p q u x y V $.
+    $d a b p q u .~ $.  $d a b p q u x y ph $.  $d p q u x y .x. $.
+    $d p q u R $.
+    qusring2.u $e |- ( ph -> U = ( R /s .~ ) ) $.
+    qusring2.v $e |- ( ph -> V = ( Base ` R ) ) $.
+    qusring2.p $e |- .+ = ( +g ` R ) $.
+    qusring2.t $e |- .x. = ( .r ` R ) $.
+    qusring2.o $e |- .1. = ( 1r ` R ) $.
+    qusring2.r $e |- ( ph -> .~ Er V ) $.
+    qusring2.e1 $e |- ( ph ->
+      ( ( a .~ p /\ b .~ q ) -> ( a .+ b ) .~ ( p .+ q ) ) ) $.
+    qusring2.e2 $e |- ( ph ->
+      ( ( a .~ p /\ b .~ q ) -> ( a .x. b ) .~ ( p .x. q ) ) ) $.
+    qusring2.x $e |- ( ph -> R e. Ring ) $.
+    $( The quotient structure of a ring is a ring.  (Contributed by Mario
+       Carneiro, 14-Jun-2015.) $)
+    qusring2 $p |- ( ph -> ( U e. Ring /\ [ .1. ] .~ = ( 1r ` U ) ) ) $=
+      ( vu vx vy crg wcel cec cur cfv wceq wa cv cmpt cqs cvv wer cbs wfn basfn
+      eqid funfvex funfni sylancr eqeltrd erex sylc qusval quslem adantr simprl
+      elexd eleqtrd simprr ringacl syl3anc eleqtrrd ercpbl ringcl imasring csrg
+      co ringsrg srgidcl 3syl divsfvalg eqcomd eqeq1d anbi2d mpbird ) AFUEUFZGC
+      UGZFUHUIZUJZUKWJGUBHUBULCUGUMZUIZWLUJZUKAHCUNBDEFGWNHIJKLAUBCDFWNHUOUEMNW
+      NUTZAHCUPHUOUFCUOUFRAHDUQUIZUONAUQUOURDUOUFWRUOUFZUSADUEUAVKWSUODUQDUQVAV
+      BVCVDZHCUOVEVFZUAVGNOPQAUBCDFWNHUOUEMNWQXAUAVHAUBKULZLULZJULZIULZBCWNHUOU
+      CUDRWTWQAUCULZHUFZUDULZHUFZUKZUKZXFXHBWAZWRHXKDUEUFZXFWRUFZXHWRUFZXLWRUFA
+      XMXJUAVIZXKXFHWRAXGXIVJAHWRUJXJNVIZVLZXKXHHWRAXGXIVMXQVLZWRBDXFXHWRUTZOVN
+      VOXQVPSVQAUBXBXCXDXEECWNHUOUCUDRWTWQXKXFXHEWAZWRHXKXMXNXOYAWRUFXPXRXSWRDE
+      XFXHXTPVRVOXQVPTVQUAVSAWMWPWJAWKWOWLAWOWKAUBGCWNHUORWTWQAGWRHAXMDVTUFGWRU
+      FUADWBWRDGXTQWCWDNVPWEWFWGWHWI $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
