@@ -153135,6 +153135,21 @@ $)
       HFUURUUPUUOVYHVCUVGUUPVCUUJVBUUKUULUUM $.
   $}
 
+  ${
+    $d B a b p q $.  $d F a b p q $.  $d R a b p q $.  $d U a b p q $.
+    $d V a b p q $.
+    imasringf1.u $e |- U = ( F "s R ) $.
+    imasringf1.v $e |- V = ( Base ` R ) $.
+    $( The image of a ring under an injection is a ring.  (Contributed by AV,
+       27-Feb-2025.) $)
+    imasringf1 $p |- ( ( F : V -1-1-> B /\ R e. Ring ) -> U e. Ring ) $=
+      ( vq vp va vb crg wcel cur cfv wceq a1i eqid cv f1ocpbl wf1 wa crn cplusg
+      cmulr cimas cbs wf1o wfo f1f1orn adantr f1ofo syl simpr imasring simpld
+      co ) EADUAZBLMZUBZCLMBNOZDOCNOPUTDUCZBUDOZBBUEOZCVADEHIJKCDBUFUQPUTFQEBUG
+      OPUTGQVCRVDRVARUTEVBDUHZEVBDUIURVEUSEADUJUKZEVBDULUMUTJSZKSZISZHSZVCDEVBV
+      FTUTVGVHVIVJVDDEVBVFTURUSUNUOUP $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
