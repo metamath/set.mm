@@ -151469,6 +151469,12 @@ $)
       MUDURAUPFBQGBQUSKLMBCDFGHIUEUGBCEUMHJUHUIUJ $.
   $}
 
+  $( Every additive subgroup of a non-unital ring is normal.  (Contributed by
+     AV, 25-Feb-2025.) $)
+  rngansg $p |- ( R e. Rng -> ( NrmSGrp ` R ) = ( SubGrp ` R ) ) $=
+    ( crng wcel cabl cnsg cfv csubg wceq rngabl ablnsg syl ) ABCADCAEFAGFHAIAJK
+    $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
