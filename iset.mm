@@ -151051,6 +151051,17 @@ $)
       NUPUSTUMTUIUJUK $.
   $}
 
+  ${
+    $d x y z G $.
+    $( Every subgroup of an abelian group is normal.  (Contributed by Mario
+       Carneiro, 14-Jun-2015.) $)
+    ablnsg $p |- ( G e. Abel -> ( NrmSGrp ` G ) = ( SubGrp ` G ) ) $=
+      ( vx vy vz cabl wcel cnsg cfv csubg cv cplusg co wb cbs wral wa wceq eqid
+      ablcom 3expb eleq1d ralrimivva isnsg rbaib syl eqrdv ) AEFZBAGHZAIHZUGCJZ
+      DJZAKHZLZBJZFUKUJULLZUNFMZDANHZOCUQOZUNUHFZUNUIFZMUGUPCDUQUQUGUJUQFZUKUQF
+      ZPPUMUOUNUGVAVBUMUOQUQULAUJUKUQRZULRZSTUAUBUSUTURCDULUNAUQVCVDUCUDUEUF $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
