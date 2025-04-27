@@ -151496,6 +151496,20 @@ $)
       VIVEVCUTABCDURFHIJVNLMOUJUKULAVGVAFDAVMHBRZVGVASNOBUTCUREGHIVOVNKUMUNUKAV
       CBRZVDBRZVHVFSAVKVLVMVQLMNBCDFGIJUOUPAVKVLVPVRLMOBCDFHIJUOUPBUTCUREVCVDIV
       OVNKUMUNUQ $.
+
+    $( Ring multiplication distributes over subtraction.  ( ~ subdir analog.)
+       (Contributed by Jeff Madsen, 19-Jun-2010.)  (Revised by Mario Carneiro,
+       2-Jul-2014.)  Generalization of ~ ringsubdir .  (Revised by AV,
+       23-Feb-2025.) $)
+    rngsubdir $p |- ( ph -> ( ( X .- Y ) .x. Z )
+                              = ( ( X .x. Z ) .- ( Y .x. Z ) ) ) $=
+      ( cfv co wcel wceq eqid cminusg cplusg crng rnggrp syl grpinvcld syl13anc
+      cgrp rngdir rngmneg1 oveq2d eqtrd grpsubval syl2anc rngcl syl3anc 3eqtr4d
+      oveq1d ) AFGCUAPZPZCUBPZQZHDQZFHDQZGHDQZUSPZVAQZFGEQZHDQVDVEEQZAVCVDUTHDQ
+      ZVAQZVGACUCRZFBRZUTBRHBRZVCVKSLMABCUSGIUSTZAVLCUHRLCUDUENUFOBVACDFUTHIVAT
+      ZJUIUGAVJVFVDVAABCDUSGHIJVOLNOUJUKULAVHVBHDAVMGBRZVHVBSMNBVACUSEFGIVPVOKU
+      MUNURAVDBRZVEBRZVIVGSAVLVMVNVRLMOBCDFHIJUOUPAVLVQVNVSLNOBCDGHIJUOUPBVACUS
+      EVDVEIVPVOKUMUNUQ $.
   $}
 
 
