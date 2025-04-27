@@ -148695,6 +148695,21 @@ $)
   $}
 
   ${
+    $d a b p q B $.  $d a b p q F $.  $d a b p q R $.  $d a b p q U $.
+    $d a b p q V $.
+    imasgrpf1.u $e |- U = ( F "s R ) $.
+    imasgrpf1.v $e |- V = ( Base ` R ) $.
+    $( The image of a group under an injection is a group.  (Contributed by
+       Mario Carneiro, 20-Aug-2015.) $)
+    imasgrpf1 $p |- ( ( F : V -1-1-> B /\ R e. Grp ) -> U e. Grp ) $=
+      ( vq vp va vb wf1 cgrp wcel wa c0g cfv wceq a1i cv crn cplusg cimas eqidd
+      cbs wf1o wfo f1f1orn adantr f1ofo syl f1ocpbl simpr eqid imasgrp simpld
+      co ) EADLZBMNZOZCMNBPQZDQCPQRUTDUAZBUBQZBCDEVAHIJKCDBUCUQRUTFSEBUEQRUTGSU
+      TVCUDUTEVBDUFZEVBDUGURVDUSEADUHUIZEVBDUJUKUTJTKTITHTVCDEVBVEULURUSUMVAUNU
+      OUP $.
+  $}
+
+  ${
     $d a b p q u x y z .~ $.  $d a b p q u x .0. $.  $d p u N $.  $d p q u R $.
     $d a b p q u x y .+ $.  $d a b p q u x y z ph $.  $d a b p q u x y z V $.
     $d a b p q x y z U $.
