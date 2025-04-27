@@ -146232,6 +146232,28 @@ $)
       WCVJVPVJVKVL $.
   $}
 
+  ${
+    $d x y z B $.  $d u x y z G $.  $d x y z ph $.  $d u x .0. $.
+    issgrpd.b $e |- ( ph -> B = ( Base ` G ) ) $.
+    issgrpd.p $e |- ( ph -> .+ = ( +g ` G ) ) $.
+    issgrpd.c $e |- ( ( ph /\ x e. B /\ y e. B ) -> ( x .+ y ) e. B ) $.
+    issgrpd.a $e |- ( ( ph /\ ( x e. B /\ y e. B /\ z e. B ) ) ->
+                   ( ( x .+ y ) .+ z ) = ( x .+ ( y .+ z ) ) ) $.
+    issgrpd.v $e |- ( ph -> G e. V ) $.
+    $( Deduce a semigroup from its properties.  (Contributed by AV,
+       13-Feb-2025.) $)
+    issgrpd $p |- ( ph -> G e. Smgrp ) $=
+      ( wcel cv cfv co wral wa eleq2d csgrp cplusg 3expib anbi12d oveqd eleq12d
+      cbs wceq 3imtr3d imp w3a df-3an sylan2br eqidd oveq123d eqeq12d ralrimiva
+      ex impl jca ralrimivva wb eqid issgrpv syl mpbird ) AGUANZBOZCOZGUBPZQZGU
+      GPZNZVKDOZVJQZVHVIVNVJQZVJQZUHZDVLRZSZCVLRBVLRZAVTBCVLVLAVHVLNZVIVLNZSZSZ
+      VMVSAWDVMAVHENZVIENZSZVHVIFQZENZWDVMAWFWGWJKUCAWFWBWGWCAEVLVHITAEVLVIITUD
+      ZAWIVKEVLAFVJVHVIJUEZIUFUIUJWEVRDVLAWDVNVLNZVRAWHVNENZSZWIVNFQZVHVIVNFQZF
+      QZUHZWDWMSVRAWOWSWOAWFWGWNUKWSWFWGWNULLUMURAWHWDWNWMWKAEVLVNITUDAWPVOWRVQ
+      AWIVKVNVNFVJJWLAVNUNUOAVHVHWQVPFVJJAVHUNAFVJVIVNJUEUOUPUIUSUQUTVAAGHNVGWA
+      VBMBCDVLGHVJVLVCVJVCVDVEVF $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
