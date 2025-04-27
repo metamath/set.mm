@@ -158090,6 +158090,24 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Two-sided ideals and quotient rings
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c 2Ideal $.
+
+  $( Ring two-sided ideal function. $)
+  c2idl $a class 2Ideal $.
+
+  $( Define the class of two-sided ideals of a ring.  A two-sided ideal is a
+     left ideal which is also a right ideal (or a left ideal over the opposite
+     ring).  (Contributed by Mario Carneiro, 14-Jun-2015.) $)
+  df-2idl $a |- 2Ideal = ( r e. _V |->
+    ( ( LIdeal ` r ) i^i ( LIdeal ` ( oppR ` r ) ) ) ) $.
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -176301,6 +176319,9 @@ htmldef "RSpan" as "RSpan";
 htmldef "LIdeal" as "LIdeal";
   althtmldef "LIdeal" as "LIdeal";
   latexdef "LIdeal" as "\mathrm{LIdeal}";
+htmldef "2Ideal" as "2Ideal";
+  althtmldef "2Ideal" as "2Ideal";
+  latexdef "2Ideal" as "\mathrm{2Ideal}";
 htmldef "numer" as "numer";
   althtmldef "numer" as "numer";
   latexdef "numer" as "\mathrm{numer}";
