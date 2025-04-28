@@ -156399,6 +156399,18 @@ $)
   $}
 
   ${
+    $d V w $.  $d W w $.  $d a b j s w x $.
+    $( Existence of a linear subspace.  (Contributed by Jim Kingdon,
+       27-Apr-2025.) $)
+    lssex $p |- ( W e. V -> ( LSubSp ` W ) e. _V ) $=
+      ( vj vs vx va vw vb cv wcel wex cvsca cfv cplusg wral csca cbs cvv clss
+      co cpw crab wal wfn basfn vex a1i funfvex funfni sylancr pwexd rabexg syl
+      wa alrimiv df-lssm mptfvex mpancom ) CIDIZJCKEIFIGIZLMTHIUTNMTUSJHUSOFUSO
+      EUTPMQMOUNZDUTQMZUAZUBZRJZGUCBAJZBSMRJVFVEGVFVCRJVEVFVBRVFQRUDUTRJZVBRJZU
+      EVGVFGUFUGVHRUTQUTQUHUIUJUKVADVCRULUMUOGRVDBSRAEGCDFHUPUQUR $.
+  $}
+
+  ${
     $d s w .+ $.  $d s w x B $.  $d s w V $.  $d a b s w x W $.  $d s w .x. $.
     $d a b s x U $.  $d a b j s w x $.
     lssset.f $e |- F = ( Scalar ` W ) $.
