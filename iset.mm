@@ -157914,6 +157914,13 @@ $)
       elex sylancr eqtrid ) BACZBDEBFGHZEZBGEFEZBDTIJSGKLBKCUAUBMNBAPKFGBOQR $.
   $}
 
+  $( Existence of the set of left ideals.  (Contributed by Jim Kingdon,
+     27-Apr-2025.) $)
+  lidlex $p |- ( W e. V -> ( LIdeal ` W ) e. _V ) $=
+    ( wcel clidl cfv crglmod clss cvv lidlvalg wfn rlmfn funfvex funfni sylancr
+    elex lssex syl eqeltrd ) BACZBDEBFEZGEZHABISTHCZUAHCSFHJBHCUBKBAOUBHBFBFLMN
+    HTPQR $.
+
   $( Existence of the ring span.  (Contributed by Jim Kingdon, 25-Apr-2025.) $)
   rspex $p |- ( W e. V -> ( RSpan ` W ) e. _V ) $=
     ( wcel crsp cfv crglmod clspn cvv rspvalg rlmfn elex funfvex funfni sylancr
