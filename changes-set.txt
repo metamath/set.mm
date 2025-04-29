@@ -84,6 +84,9 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+30-Apr-25 sotrd     [same]      Moved from SF's mathbox to main set.mm
+30-Apr-25 ax6er     [same]      Moved from BJ's mathbox to main set.mm
+30-Apr-25 iscnrm3lem3 4aneqpull12 Moved from ZW's mathbox to main set.mm
 25-Apr-25 logi      [same]      Moved from SF's mathbox to main set.mm
 25-Apr-25 rspceb2dv [same]      Moved from ZW's mathbox to main set.mm
 25-Apr-25 efcld     [same]      Moved from TA's mathbox to main set.mm
