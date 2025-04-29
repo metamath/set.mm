@@ -156411,6 +156411,19 @@ $)
   $}
 
   ${
+    $d a b j s w x $.
+    lssmex.s $e |- S = ( LSubSp ` W ) $.
+    $( If a linear subspace is inhabited, the class it is built from is a set.
+       (Contributed by Jim Kingdon, 28-Apr-2025.) $)
+    lssmex $p |- ( U e. S -> W e. _V ) $=
+      ( vw vj vs vx va vb wcel clss cdm wrel cfv cvv cv co wral cbs cplusg csca
+      wex cvsca wa cpw crab mptrel df-lssm releqi mpbir eleq2i biimpi relelfvdm
+      cmpt sylancr elexd ) BAKZCLMZURLNZBCLOZKZCUSKUTEPFQGQZKFUCHQIQEQZUDORJQVD
+      UAORVCKJVCSIVCSHVDUBOTOSUEGVDTOUFUGZUOZNEPVEUHLVFHEFGIJUIUJUKURVBAVABDULU
+      MBCLUNUPUQ $.
+  $}
+
+  ${
     $d s w .+ $.  $d s w x B $.  $d s w V $.  $d a b s w x W $.  $d s w .x. $.
     $d a b s x U $.  $d a b j s w x $.
     lssset.f $e |- F = ( Scalar ` W ) $.
