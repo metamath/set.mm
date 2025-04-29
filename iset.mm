@@ -142999,6 +142999,16 @@ $)
   $}
 
   ${
+    ressbasid.b $e |- B = ( Base ` W ) $.
+    $( The trivial structure restriction leaves the base set unchanged.
+       (Contributed by Jim Kingdon, 29-Apr-2025.) $)
+    ressbasid $p |- ( W e. V -> ( Base ` ( W |`s B ) ) = B ) $=
+      ( wcel cin cress co cbs cfv cvv eqidd wceq a1i id wfn elex funfvex funfni
+      basfn sylancr eqeltrid ressbasd inidm eqtr3di ) CBEZAAFCAGHZIJAUFAAUGKCBU
+      FUGLACIJZMUFDNUFOUFAUHKDUFIKPCKEUHKEZTCBQUIKCICIRSUAUBUCAUDUE $.
+  $}
+
+  ${
     strressid.b $e |- ( ph -> B = ( Base ` W ) ) $.
     strressid.s $e |- ( ph -> W Struct <. M , N >. ) $.
     strressid.f $e |- ( ph -> Fun W ) $.
