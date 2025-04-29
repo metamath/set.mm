@@ -158414,6 +158414,28 @@ $)
       GFUHEKELZMJUKNJMJOZSZIEKULPGUMEQRTUFUJAUIBDUAUBBCGUCUDUE $.
   $}
 
+  ${
+    $d B x y $.  $d I x y $.  $d R x y $.  $d U x y $.
+    isridl.u $e |- U = ( LIdeal ` ( oppR ` R ) ) $.
+    isridl.b $e |- B = ( Base ` R ) $.
+    isridl.t $e |- .x. = ( .r ` R ) $.
+    $( A right ideal is a left ideal of the opposite ring.  This theorem shows
+       that this definition corresponds to the usual textbook definition of a
+       right ideal of a ring to be a subgroup of the additive group of the ring
+       which is closed under right-multiplication by elements of the full ring.
+       (Contributed by AV, 13-Feb-2025.) $)
+    isridl $p |- ( R e. Ring -> ( I e. U <-> ( I e. ( SubGrp ` R )
+                               /\ A. x e. B A. y e. I ( y .x. x ) e. I ) ) ) $=
+      ( crg wcel cfv csubg cv wral wa wb eqid cvv coppr co cbs opprring dflidl2
+      syl opprsubgg eqcomd eleq2d opprbasg pm5.32i wceq opprmulg mp3an23 eleq1d
+      cmulr vex ad2antrr ralbidva sylbir raleqbidva anbi12d bitrd ) DKLZGFLZGDU
+      AMZNMZLZAOZBOZVFUPMZUBZGLZBGPZAVFUCMZPZQZGDNMZLZVJVIEUBZGLZBGPZACPZQVDVFK
+      LVEVQRDVFVFSZUDABVOVFVKFGHVOSVKSZUEUFVDVHVSVPWCVDVGVRGVDVRVGDVFKWDUGUHUIV
+      DVNWBAVOCVDCVOCDVFKWDIUJZUHVDVIVOLZQVDVICLZQZVNWBRVDWHWGVDCVOVIWFUIUKWIVM
+      WABGVDVMWARWHVJGLVDVLVTGVDVITLVJTLVLVTULAUQBUQCDVKETVFKTVIVJIJWDWEUMUNUOU
+      RUSUTVAVBVC $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
