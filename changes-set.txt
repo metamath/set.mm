@@ -16,10 +16,6 @@ PROPOSED:
 Date      Old       New         Notes
 proposed  df-rgmod  df-rlm
 proposed  crglmod   crlm
-proposed  df-rngiso df-rim
-proposed  df-rnghom df-rhm
-proposed  crs       crim
-proposed  crh       crhm
 proposed  nfiundg   nfiund
 proposed  bnj1441g  bnj1441
 proposed  cbviinvg  cbviinv
@@ -88,6 +84,9 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+25-Apr-25 logi      [same]      Moved from SF's mathbox to main set.mm
+25-Apr-25 rspceb2dv [same]      Moved from ZW's mathbox to main set.mm
+25-Apr-25 efcld     [same]      Moved from TA's mathbox to main set.mm
 25-Apr-25 ply1chr   [same]      Moved from TA's mathbox to main set.mm
 25-Apr-25 ply1fermltlchr [same] Moved from TA's mathbox to main set.mm
 25-Apr-25 asclmulg  [same]      Moved from TA's mathbox to main set.mm
