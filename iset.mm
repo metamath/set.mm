@@ -147589,6 +147589,18 @@ $)
     grprid $p |- ( ( G e. Grp /\ X e. B ) -> ( X .+ .0. ) = X ) $=
       ( cgrp wcel cmnd co wceq grpmnd mndrid sylan ) CIJCKJDAJDEBLDMCNABCDEFGHO
       P $.
+
+    grplidd.g $e |- ( ph -> G e. Grp ) $.
+    grplidd.1 $e |- ( ph -> X e. B ) $.
+    $( The identity element of a group is a left identity.  Deduction
+       associated with ~ grplid .  (Contributed by SN, 29-Jan-2025.) $)
+    grplidd $p |- ( ph -> ( .0. .+ X ) = X ) $=
+      ( cgrp wcel co wceq grplid syl2anc ) ADLMEBMFECNEOJKBCDEFGHIPQ $.
+
+    $( The identity element of a group is a right identity.  Deduction
+       associated with ~ grprid .  (Contributed by SN, 29-Jan-2025.) $)
+    grpridd $p |- ( ph -> ( X .+ .0. ) = X ) $=
+      ( cgrp wcel co wceq grprid syl2anc ) ADLMEBMEFCNEOJKBCDEFGHIPQ $.
   $}
 
   $( A group is not empty.  (Contributed by Szymon Jaroszewicz, 3-Apr-2007.)
