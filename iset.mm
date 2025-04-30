@@ -5235,6 +5235,16 @@ $)
       ( wb wi wa biadani mpbi ) BACFGABCHFEABCDIJ $.
   $}
 
+  ${
+    biadanid.1 $e |- ( ( ph /\ ps ) -> ch ) $.
+    biadanid.2 $e |- ( ( ph /\ ch ) -> ( ps <-> th ) ) $.
+    $( Deduction associated with ~ biadani .  Add a conjunction to an
+       equivalence.  (Contributed by Thierry Arnoux, 16-Jun-2024.) $)
+    biadanid $p |- ( ph -> ( ps <-> ( ch /\ th ) ) ) $=
+      ( wa biimpa an32s mpdan jca biimpar anasss impbida ) ABCDGABGZCDEOCDEACBD
+      ACGZBDFHIJKACDBPBDFLMN $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
