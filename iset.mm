@@ -158068,8 +158068,8 @@ $)
       $( A (left) ideal containing the zero element is closed under
          left-multiplication by elements of the full non-unital ring.  If the
          ring is not a unital ring, and the ideal does not contain the zero
-         element of the ring, then the closure cannot be proven as in
-         ~ lidlmcl .  (Contributed by AV, 18-Feb-2025.) $)
+         element of the ring, then the closure cannot be proven.  (Contributed
+         by AV, 18-Feb-2025.) $)
       rnglidlmcl $p |- ( ( ( R e. Rng /\ I e. U /\ .0. e. I )
                            /\ ( X e. B /\ Y e. I ) ) -> ( X .x. Y ) e. I ) $=
         ( vx va vb wcel co cv wral wi vj crng wa wss wex cplusg cfv w3a islidlm
