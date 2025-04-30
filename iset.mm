@@ -157861,6 +157861,13 @@ $)
     ( wcel crglmod cfv cbs rlmvalg ssidd id sramulrg ) ABCZADEAFEZABBAGKLHKIJ
     $.
 
+  $( Scalars in the ring module have the same base set.  (Contributed by Jim
+     Kingdon, 29-Apr-2025.) $)
+  rlmscabas $p |- ( R e. X
+      -> ( Base ` R ) = ( Base ` ( Scalar ` ( ringLMod ` R ) ) ) ) $=
+    ( wcel cbs cfv cress co crglmod csca eqid ressbasid rlmvalg ssidd id fveq2d
+    srascag eqtr3d ) ABCZAADEZFGZDESAHEZIEZDESBASJKRTUBDRUASABBALRSMRNPOQ $.
+
   $( Scalar multiplication in the ring module.  (Contributed by Stefan O'Rear,
      31-Mar-2015.) $)
   rlmvscag $p |- ( R e. V -> ( .r ` R ) = ( .s ` ( ringLMod ` R ) ) ) $=
