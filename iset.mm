@@ -153499,6 +153499,23 @@ $)
         UOUPUQACDEUQSZUCUDACDUSEUSSZUEUJUFUGGHUNUQABDUSVJVLVMFTUMCUHIVIVHPACDEU
         IGHVBVCCVIUHVEVBSVCSVESVISTUKUL $.
     $}
+
+    ${
+      $d x y z w R $.  $d x y z w O $.  $d x y z w V $.
+      $( Being a subgroup is a symmetric property.  (Contributed by Mario
+         Carneiro, 6-Dec-2014.) $)
+      opprsubgg $p |- ( R e. V -> ( SubGrp ` R ) = ( SubGrp ` O ) ) $=
+        ( vx vy vz vw wcel csubg cfv cgrp cv cbs wss w3a eqidd eqid cplusg cvv
+        cress co opprbasg wa oppraddg oveqdr grppropd cin vex a1i opprex eqtr3d
+        id ressbasd ressplusgd 3anbi13d wb issubg 3anbi2d bitr4id 3bitr4d eqrdv
+        sseq2d ) ACIZEAJKZBJKZVDALIZEMZANKZOZAVHUAUBZLIZPZBLIZVJBVHUAUBZLIZPZVH
+        VEIZVHVFIZVDVGVNVLVPVJVDEFVIABVDVIQZVIABCDVIRZUCZVDVHVIIFMVIIUDEFASKZBS
+        KWCABCDWCRUEZUFUGVDGHVKNKZVKVOVDWEQVDVHVIUHWEVONKVDVHVIVKTACVDVKQZVTVDU
+        MZVHTIVDEUIUJZUNVDVHVIVOTBTVDVOQZWBABCDUKZWHUNULVDGMWEIHMWEIUDGHVKSKZVO
+        SKZVDWCWKWLVDVHWCAVKTCWFVDWCQWHWGUOVDVHWCBVOTTWIWDWHWJUOULUFUGUPVRVMUQV
+        DVIVHAWAURUJVDVSVNVHBNKZOZVPPVQWMVHBWMRURVDVJWNVNVPVDVIWMVHWBVCUSUTVAVB
+        $.
+    $}
   $}
 
   ${
