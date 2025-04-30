@@ -84,6 +84,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+30-Apr-25 ply1ascl0 [same]      Moved from TA's mathbox to main set.mm
+30-Apr-25 hashf1dmcdm [same]    Moved from BT's mathbox to main set.mm
 25-Apr-25 mon1pid   [same]      Moved from SO's mathbox to main set.mm
 27-Apr-25 df-cnfld  [same]      Use maps-to notation
 25-Apr-25 logi      [same]      Moved from SF's mathbox to main set.mm
