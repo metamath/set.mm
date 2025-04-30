@@ -9265,6 +9265,54 @@ $)
   $}
 
   ${
+    ad5ant.1 $e |- ( ( ph /\ ps /\ ch ) -> th ) $.
+    $( Deduction adding conjuncts to antecedent.  (Contributed by Alan Sare,
+       17-Oct-2017.)  (Proof shortened by Wolf Lammen, 14-Apr-2022.) $)
+    ad5ant245 $p |- ( ( ( ( ( ta /\ ph ) /\ et ) /\ ps ) /\ ch ) -> th ) $=
+      ( wa 3adant1l ad4ant134 ) EAHBCDFABCDEGIJ $.
+
+    $( Deduction adding conjuncts to antecedent.  (Contributed by Alan Sare,
+       17-Oct-2017.)  (Proof shortened by Wolf Lammen, 14-Apr-2022.) $)
+    ad5ant234 $p |- ( ( ( ( ( ta /\ ph ) /\ ps ) /\ ch ) /\ et ) -> th ) $=
+      ( wa ad4ant234 adantr ) EAHBHCHDFABCDEGIJ $.
+
+    $( Deduction adding conjuncts to antecedent.  (Contributed by Alan Sare,
+       17-Oct-2017.)  (Proof shortened by Wolf Lammen, 14-Apr-2022.) $)
+    ad5ant235 $p |- ( ( ( ( ( ta /\ ph ) /\ ps ) /\ et ) /\ ch ) -> th ) $=
+      ( wa ad4ant234 adantlr ) EAHBHCDFABCDEGIJ $.
+
+    $( Deduction adding conjuncts to antecedent.  (Contributed by Alan Sare,
+       17-Oct-2017.)  (Proof shortened by Wolf Lammen, 23-Jun-2022.) $)
+    ad5ant123 $p |- ( ( ( ( ( ph /\ ps ) /\ ch ) /\ ta ) /\ et ) -> th ) $=
+      ( wa 3expa ad2antrr ) ABHCHDEFABCDGIJ $.
+
+    $( Deduction adding conjuncts to antecedent.  (Contributed by Alan Sare,
+       17-Oct-2017.)  (Proof shortened by Wolf Lammen, 23-Jun-2022.) $)
+    ad5ant124 $p |- ( ( ( ( ( ph /\ ps ) /\ ta ) /\ ch ) /\ et ) -> th ) $=
+      ( wa ad4ant124 adantr ) ABHEHCHDFABCDEGIJ $.
+
+    $( Deduction adding conjuncts to antecedent.  (Contributed by Alan Sare,
+       17-Oct-2017.)  (Proof shortened by Wolf Lammen, 23-Jun-2022.) $)
+    ad5ant125 $p |- ( ( ( ( ( ph /\ ps ) /\ ta ) /\ et ) /\ ch ) -> th ) $=
+      ( wa wi 3expia 2a1d imp41 ) ABHZEFCDMCDIEFABCDGJKL $.
+
+    $( Deduction adding conjuncts to antecedent.  (Contributed by Alan Sare,
+       17-Oct-2017.)  (Proof shortened by Wolf Lammen, 23-Jun-2022.) $)
+    ad5ant134 $p |- ( ( ( ( ( ph /\ ta ) /\ ps ) /\ ch ) /\ et ) -> th ) $=
+      ( wa ad4ant134 adantr ) AEHBHCHDFABCDEGIJ $.
+
+    $( Deduction adding conjuncts to antecedent.  (Contributed by Alan Sare,
+       17-Oct-2017.)  (Proof shortened by Wolf Lammen, 23-Jun-2022.) $)
+    ad5ant135 $p |- ( ( ( ( ( ph /\ ta ) /\ ps ) /\ et ) /\ ch ) -> th ) $=
+      ( wa ad4ant134 adantlr ) AEHBHCDFABCDEGIJ $.
+
+    $( Deduction adding conjuncts to antecedent.  (Contributed by Alan Sare,
+       17-Oct-2017.)  (Proof shortened by Wolf Lammen, 23-Jun-2022.) $)
+    ad5ant145 $p |- ( ( ( ( ( ph /\ ta ) /\ et ) /\ ps ) /\ ch ) -> th ) $=
+      ( wa ad4ant134 adantllr ) AEHBCDFABCDEGIJ $.
+  $}
+
+  ${
     sylXanc.1 $e |- ( ph -> ps ) $.
     sylXanc.2 $e |- ( ph -> ch ) $.
     sylXanc.3 $e |- ( ph -> th ) $.
