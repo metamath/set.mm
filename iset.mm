@@ -158136,6 +158136,27 @@ $)
   $}
 
   ${
+    $d B x y z $.  $d I j x y z $.  $d R j x y z $.  $d U x y $.  $d .x. z $.
+    dflidl2rng.u $e |- U = ( LIdeal ` R ) $.
+    dflidl2rng.b $e |- B = ( Base ` R ) $.
+    dflidl2rng.t $e |- .x. = ( .r ` R ) $.
+    $( Alternate (the usual textbook) definition of a (left) ideal of a
+       non-unital ring to be a subgroup of the additive group of the ring which
+       is closed under left-multiplication by elements of the full ring.
+       (Contributed by AV, 21-Mar-2025.) $)
+    dflidl2rng $p |- ( ( R e. Rng /\ I e. ( SubGrp ` R ) )
+                    -> ( I e. U <-> A. x e. B A. y e. I ( x .x. y ) e. I ) ) $=
+      ( vj vz wcel cfv wa cv co wral eqid ad2antlr csubg c0g w3a simpll subg0cl
+      crng simpr rnglidlmcl sylan ralrimivva wss wex cplusg subgss elex2 subgcl
+      3jca syl ad5ant245 ralrimiva ex ralimdvva imp islidlm syl3anbrc impbida )
+      DUFMZGDUANMZOZGFMZAPZBPZEQZGMZBGRACRZVIVJOZVNABCGVPVGVJDUBNZGMZUCVKCMVLGM
+      OZVNVPVGVJVRVGVHVJUDVIVJUGVHVRVGVJGDVQVQSZUEZTUQCDEFGVKVLVQVTIJHUHUIUJVIV
+      OOGCUKZKPGMKULZVMLPZDUMNZQGMZLGRZBGRACRZVJVHWBVGVOCGDIUNTVHWCVGVOVHVRWCWA
+      KVQGUOURTVIVOWHVIVNWGABCGVIVSOZVNWGWIVNOWFLGVHVNWDGMWFVGVSWEGDVMWDWESZUPU
+      SUTVAVBVCACWEDEFKGBLHIWJJVDVEVF $.
+  $}
+
+  ${
     lidlcl.u $e |- U = ( LIdeal ` R ) $.
     ${
       lidl0cl.z $e |- .0. = ( 0g ` R ) $.
