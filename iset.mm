@@ -158265,6 +158265,22 @@ $)
   $}
 
   ${
+    $d B x y $.  $d I x y $.  $d R x y $.  $d U x y $.
+    dflidl2.u $e |- U = ( LIdeal ` R ) $.
+    dflidl2.b $e |- B = ( Base ` R ) $.
+    dflidl2.t $e |- .x. = ( .r ` R ) $.
+    $( Alternate (the usual textbook) definition of a (left) ideal of a ring to
+       be a subgroup of the additive group of the ring which is closed under
+       left-multiplication by elements of the full ring.  (Contributed by AV,
+       13-Feb-2025.)  (Proof shortened by AV, 18-Apr-2025.) $)
+    dflidl2 $p |- ( R e. Ring -> ( I e. U <-> ( I e. ( SubGrp ` R )
+                               /\ A. x e. B A. y e. I ( x .x. y ) e. I ) ) ) $=
+      ( crg wcel csubg cfv cv co wral lidlsubg crng wb ringrng dflidl2rng sylan
+      biadanid ) DKLZGFLZGDMNLZAOBOEPGLBGQACQZDFGHRUEDSLUGUFUHTDUAABCDEFGHIJUBU
+      CUD $.
+  $}
+
+  ${
     lidl0.u $e |- U = ( LIdeal ` R ) $.
     ${
       lidl0.z $e |- .0. = ( 0g ` R ) $.
