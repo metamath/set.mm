@@ -158023,6 +158023,29 @@ $)
   $}
 
   ${
+    $d B k x $.  $d I a b j k x $.  $d R a b k x $.
+    islidl.s $e |- U = ( LIdeal ` R ) $.
+    islidl.b $e |- B = ( Base ` R ) $.
+    islidl.p $e |- .+ = ( +g ` R ) $.
+    islidl.t $e |- .x. = ( .r ` R ) $.
+    $( Predicate of being a (left) ideal.  (Contributed by Stefan O'Rear,
+       1-Apr-2015.) $)
+    islidlm $p |- ( I e. U <-> ( I C_ B /\ E. j j e. I /\
+          A. x e. B A. a e. I A. b e. I ( ( x .x. a ) .+ b ) e. I ) ) $=
+      ( vk wcel cvv wral cfv eqid wss wex w3a lidlmex eleq1w cbvexv ssel basmex
+      cv co syl6 exlimdv biimtrid imp 3adant3 wb crglmod clss cvsca cplusg csca
+      cbs islssm clidl lidlvalg eqtrid eleq2d rlmbasg rlmscabas rlmplusgg cmulr
+      sseq2d rlmvscag oveqd oveq123d eleq1d 2ralbidv raleqbidv 3anbi13d bibi12d
+      eqidd mpbiri pm5.21nii ) HFPZDQPZHBUAZGUIHPZGUBZAUIZIUIZEUJZJUIZCUJZHPZJH
+      RIHRZABRZUCZHFDKUDWFWHWEWPWFWHWEWHOUIZHPZOUBWFWEWGWSGOGOHUEUFWFWSWEOWFWSW
+      RBPWEHBWRUGWRBDLUHUKULUMUNUOWEWDWQUPHDUQSZURSZPZHWTVBSZUAZWHWIWJWTUSSZUJZ
+      WLWTUTSZUJZHPZJHRIHRZAWTVASZVBSZRZUCZUPAXLXGXAXEHGXKXCWTIJXKTXLTXCTXGTXET
+      XATVCWEWDXBWQXNWEFXAHWEFDVDSXAKQDVEVFVGWEWFXDWPXMWHWEBXCHWEBDVBSZXCLDQVHV
+      FVLWEWOXJABXLWEBXOXLLDQVIVFWEWNXIIJHHWEWMXHHWEWKXFWLWLCXGWECDUTSXGMDQVJVF
+      WEEXEWIWJWEEDVKSXENDQVMVFVNWEWLWAVOVPVQVRVSVTWBWC $.
+  $}
+
+  ${
     lidlcl.u $e |- U = ( LIdeal ` R ) $.
     ${
       lidl0cl.z $e |- .0. = ( 0g ` R ) $.
