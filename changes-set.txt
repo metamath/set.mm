@@ -84,6 +84,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+25-Apr-25 mon1pid   [same]      Moved from SO's mathbox to main set.mm
 27-Apr-25 df-cnfld  [same]      Use maps-to notation
 25-Apr-25 logi      [same]      Moved from SF's mathbox to main set.mm
 25-Apr-25 rspceb2dv [same]      Moved from ZW's mathbox to main set.mm
