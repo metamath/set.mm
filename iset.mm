@@ -158436,6 +158436,19 @@ $)
       RUSUTVAVBVC $.
   $}
 
+  ${
+    2idlel.i $e |- I = ( LIdeal ` R ) $.
+    2idlel.o $e |- O = ( oppR ` R ) $.
+    2idlel.j $e |- J = ( LIdeal ` O ) $.
+    2idlel.t $e |- T = ( 2Ideal ` R ) $.
+    $( Membership in a two-sided ideal.  (Contributed by Mario Carneiro,
+       14-Jun-2015.)  (Revised by AV, 20-Feb-2025.) $)
+    2idlelb $p |- ( U e. T <-> ( U e. I /\ U e. J ) ) $=
+      ( wcel cvv wa 2idlmex lidlmex adantr cin 2idlvalg eleq2d elin pm5.21nii
+      bitrdi ) CBKZALKZCDKZCEKZMZBCAJNUEUDUFCDAGOPUDUCCDEQZKUGUDBUHCABDEFLGHIJR
+      SCDETUBUA $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
