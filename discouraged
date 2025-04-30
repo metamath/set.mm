@@ -1448,7 +1448,6 @@
 "ax-mulf" is used by "mulex".
 "ax-mulf" is used by "mulnzcnf".
 "ax-mulf" is used by "rlimmulOLD".
-"ax-mulf" is used by "xrge0pluscn".
 "ax-mulrcl" is used by "remulcl".
 "ax-pre-ltadd" is used by "axltadd".
 "ax-pre-lttri" is used by "axlttri".
@@ -4761,6 +4760,7 @@
 "df-div" is used by "1div0".
 "df-div" is used by "1div0apr".
 "df-div" is used by "cnflddiv".
+"df-div" is used by "cnflddivOLD".
 "df-div" is used by "divcn".
 "df-div" is used by "divcnOLD".
 "df-div" is used by "divval".
@@ -10071,7 +10071,7 @@
 "mulcn" is used by "plycnOLD".
 "mulcn" is used by "psercn2OLD".
 "mulcn" is used by "reparphtiOLD".
-"mulcn" is used by "taylthlem2".
+"mulcn" is used by "taylthlem2OLD".
 "mulcnsr" is used by "axcnre".
 "mulcnsr" is used by "axi2m1".
 "mulcnsr" is used by "axmulf".
@@ -14690,7 +14690,7 @@ New usage of "ax-luk3" is discouraged (6 uses).
 New usage of "ax-mulass" is discouraged (1 uses).
 New usage of "ax-mulcl" is discouraged (1 uses).
 New usage of "ax-mulcom" is discouraged (1 uses).
-New usage of "ax-mulf" is discouraged (11 uses).
+New usage of "ax-mulf" is discouraged (10 uses).
 New usage of "ax-mulrcl" is discouraged (1 uses).
 New usage of "ax-pre-ltadd" is discouraged (1 uses).
 New usage of "ax-pre-lttri" is discouraged (1 uses).
@@ -15795,11 +15795,15 @@ New usage of "cnaddinv" is discouraged (0 uses).
 New usage of "cnbn" is discouraged (2 uses).
 New usage of "cnchl" is discouraged (1 uses).
 New usage of "cncph" is discouraged (2 uses).
+New usage of "cncrngOLD" is discouraged (0 uses).
 New usage of "cncvcOLD" is discouraged (1 uses).
+New usage of "cndrngOLD" is discouraged (0 uses).
 New usage of "cnexALT" is discouraged (0 uses).
+New usage of "cnfld1OLD" is discouraged (0 uses).
 New usage of "cnfldaddOLD" is discouraged (0 uses).
 New usage of "cnfldbasOLD" is discouraged (0 uses).
 New usage of "cnfldcjOLD" is discouraged (0 uses).
+New usage of "cnflddivOLD" is discouraged (0 uses).
 New usage of "cnflddsOLD" is discouraged (0 uses).
 New usage of "cnfldexOLD" is discouraged (0 uses).
 New usage of "cnfldfunALT" is discouraged (0 uses).
@@ -15836,6 +15840,7 @@ New usage of "cnnvnm" is discouraged (3 uses).
 New usage of "cnnvs" is discouraged (2 uses).
 New usage of "cnopc" is discouraged (1 uses).
 New usage of "cnrehmeoOLD" is discouraged (0 uses).
+New usage of "cnsubrglemOLD" is discouraged (0 uses).
 New usage of "cnvadj" is discouraged (3 uses).
 New usage of "cnvbrabra" is discouraged (2 uses).
 New usage of "cnvbracl" is discouraged (2 uses).
@@ -15970,7 +15975,7 @@ New usage of "df-cnop" is discouraged (2 uses).
 New usage of "df-com2" is discouraged (1 uses).
 New usage of "df-cv" is discouraged (1 uses).
 New usage of "df-dip" is discouraged (1 uses).
-New usage of "df-div" is discouraged (7 uses).
+New usage of "df-div" is discouraged (8 uses).
 New usage of "df-dmd" is discouraged (1 uses).
 New usage of "df-drngo" is discouraged (3 uses).
 New usage of "df-ds" is discouraged (7 uses).
@@ -16364,6 +16369,7 @@ New usage of "dvhopclN" is discouraged (0 uses).
 New usage of "dvhopspN" is discouraged (1 uses).
 New usage of "dvhvaddcomN" is discouraged (0 uses).
 New usage of "dvmulbrOLD" is discouraged (0 uses).
+New usage of "dvply2gOLD" is discouraged (0 uses).
 New usage of "dvrunz" is discouraged (3 uses).
 New usage of "e00" is discouraged (2 uses).
 New usage of "e000" is discouraged (1 uses).
@@ -19465,6 +19471,8 @@ New usage of "symgbasexOLD" is discouraged (0 uses).
 New usage of "symgsubmefmndALT" is discouraged (0 uses).
 New usage of "symgvalstructOLD" is discouraged (0 uses).
 New usage of "tarski-bernays-ax2" is discouraged (0 uses).
+New usage of "taylply2OLD" is discouraged (0 uses).
+New usage of "taylthlem2OLD" is discouraged (0 uses).
 New usage of "tb-ax1" is discouraged (3 uses).
 New usage of "tb-ax2" is discouraged (1 uses).
 New usage of "tb-ax3" is discouraged (2 uses).
@@ -20256,11 +20264,15 @@ Proof modification of "clmgmOLD" is discouraged (50 steps).
 Proof modification of "cmvthOLD" is discouraged (1136 steps).
 Proof modification of "cnaddabloOLD" is discouraged (65 steps).
 Proof modification of "cnaddcom" is discouraged (71 steps).
+Proof modification of "cncrngOLD" is discouraged (214 steps).
 Proof modification of "cncvcOLD" is discouraged (38 steps).
+Proof modification of "cndrngOLD" is discouraged (107 steps).
 Proof modification of "cnexALT" is discouraged (52 steps).
+Proof modification of "cnfld1OLD" is discouraged (67 steps).
 Proof modification of "cnfldaddOLD" is discouraged (98 steps).
 Proof modification of "cnfldbasOLD" is discouraged (98 steps).
 Proof modification of "cnfldcjOLD" is discouraged (107 steps).
+Proof modification of "cnflddivOLD" is discouraged (211 steps).
 Proof modification of "cnflddsOLD" is discouraged (141 steps).
 Proof modification of "cnfldexOLD" is discouraged (16 steps).
 Proof modification of "cnfldfunALT" is discouraged (792 steps).
@@ -20277,6 +20289,7 @@ Proof modification of "cnncvsabsnegdemo" is discouraged (74 steps).
 Proof modification of "cnncvsaddassdemo" is discouraged (46 steps).
 Proof modification of "cnncvsmulassdemo" is discouraged (95 steps).
 Proof modification of "cnrehmeoOLD" is discouraged (351 steps).
+Proof modification of "cnsubrglemOLD" is discouraged (67 steps).
 Proof modification of "cnvfiALT" is discouraged (46 steps).
 Proof modification of "cnvoprabOLD" is discouraged (262 steps).
 Proof modification of "cnvsymOLD" is discouraged (69 steps).
@@ -20393,6 +20406,7 @@ Proof modification of "dvelimf-o" is discouraged (129 steps).
 Proof modification of "dvfsumleOLD" is discouraged (1224 steps).
 Proof modification of "dvfsumlem2OLD" is discouraged (2595 steps).
 Proof modification of "dvmulbrOLD" is discouraged (2036 steps).
+Proof modification of "dvply2gOLD" is discouraged (425 steps).
 Proof modification of "e00" is discouraged (7 steps).
 Proof modification of "e000" is discouraged (13 steps).
 Proof modification of "e001" is discouraged (16 steps).
@@ -21594,6 +21608,8 @@ Proof modification of "symgsubmefmndALT" is discouraged (129 steps).
 Proof modification of "symgvalstructOLD" is discouraged (651 steps).
 Proof modification of "symrefref3" is discouraged (75 steps).
 Proof modification of "tarski-bernays-ax2" is discouraged (557 steps).
+Proof modification of "taylply2OLD" is discouraged (657 steps).
+Proof modification of "taylthlem2OLD" is discouraged (2711 steps).
 Proof modification of "tb-ax1" is discouraged (4 steps).
 Proof modification of "tb-ax2" is discouraged (3 steps).
 Proof modification of "tb-ax3" is discouraged (3 steps).
@@ -21815,7 +21831,7 @@ Proof modification of "wunnatOLD" is discouraged (341 steps).
 Proof modification of "wunressOLD" is discouraged (145 steps).
 Proof modification of "xpexgALT" is discouraged (84 steps).
 Proof modification of "xpfiOLD" is discouraged (373 steps).
-Proof modification of "xrge0tmdALT" is discouraged (166 steps).
+Proof modification of "xrge0tmdALT" is discouraged (113 steps).
 Proof modification of "zexALT" is discouraged (34 steps).
 Proof modification of "zfcndac" is discouraged (256 steps).
 Proof modification of "zfcndext" is discouraged (19 steps).
