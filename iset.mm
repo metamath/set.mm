@@ -150779,6 +150779,14 @@ $)
     ( cabl wcel cgrp ccmn isabl simprbi ) ABCADCAECAFG $.
 
   ${
+    ablcmnd.1 $e |- ( ph -> G e. Abel ) $.
+    $( An Abelian group is a commutative monoid.  (Contributed by SN,
+       1-Jun-2024.) $)
+    ablcmnd $p |- ( ph -> G e. CMnd ) $=
+      ( cabl wcel ccmn ablcmn syl ) ABDEBFECBGH $.
+  $}
+
+  ${
     $d g x y B $.  $d g x y G $.  $d g .+ $.
     iscmn.b $e |- B = ( Base ` G ) $.
     iscmn.p $e |- .+ = ( +g ` G ) $.
@@ -152691,6 +152699,34 @@ $)
      7-Jan-2015.) $)
   ringcmn $p |- ( R e. Ring -> R e. CMnd ) $=
     ( crg wcel cabl ccmn ringabl ablcmn syl ) ABCADCAECAFAGH $.
+
+  ${
+    ringabld.1 $e |- ( ph -> R e. Ring ) $.
+    $( A ring is an Abelian group.  (Contributed by SN, 1-Jun-2024.) $)
+    ringabld $p |- ( ph -> R e. Abel ) $=
+      ( crg wcel cabl ringabl syl ) ABDEBFECBGH $.
+
+    $( A ring is a commutative monoid.  (Contributed by SN, 1-Jun-2024.) $)
+    ringcmnd $p |- ( ph -> R e. CMnd ) $=
+      ( ringabld ablcmnd ) ABABCDE $.
+  $}
+
+  ${
+    $d R x y z $.
+    $( A unital ring is a non-unital ring.  (Contributed by AV, 6-Jan-2020.) $)
+    ringrng $p |- ( R e. Ring -> R e. Rng ) $=
+      ( vx vy vz cabl wcel crg crng ringabl cgrp cmgp cmnd cv cplusg co wceq wa
+      cfv wral eqid cmulr cbs isring csgrp simpl mndsgrp 3ad2ant2 adantl simpr3
+      w3a isrng syl3anbrc ex biimtrid mpcom ) AEFZAGFZAHFZAIUQAJFZAKRZLFZBMZCMZ
+      DMZANRZOAUARZOVBVCVFOVBVDVFOZVEOPVBVCVEOVDVFOVGVCVDVFOVEOPQDAUBRZSCVHSBVH
+      SZUJZUPURBCDVHVEAVFUTVHTZUTTZVETZVFTZUCUPVJURUPVJQUPUTUDFZVIURUPVJUEVJVOU
+      PVAUSVOVIUTUFUGUHUPUSVAVIUIBCDVHVEAVFUTVKVLVMVNUKULUMUNUO $.
+
+    $( The unital rings are non-unital rings.  (Contributed by AV,
+       20-Mar-2020.) $)
+    ringssrng $p |- Ring C_ Rng $=
+      ( vx crg crng cv ringrng ssriv ) ABCADEF $.
+  $}
 
   ${
     $d u v w x y B $.  $d u v w x y K $.  $d u v w x y ph $.  $d u v w x y L $.
