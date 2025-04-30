@@ -158058,6 +158058,36 @@ $)
   $}
 
   ${
+    rnglidlmcl.z $e |- .0. = ( 0g ` R ) $.
+    rnglidlmcl.b $e |- B = ( Base ` R ) $.
+    rnglidlmcl.t $e |- .x. = ( .r ` R ) $.
+    ${
+      $d B x y z $.  $d I a b j x $.  $d R a b $.  $d R x y z $.  $d X a b x $.
+      $d Y a b $.  $d .0. b $.  $d .0. x y z $.  $d .x. a b x $.
+      rnglidlmcl.u $e |- U = ( LIdeal ` R ) $.
+      $( A (left) ideal containing the zero element is closed under
+         left-multiplication by elements of the full non-unital ring.  If the
+         ring is not a unital ring, and the ideal does not contain the zero
+         element of the ring, then the closure cannot be proven as in
+         ~ lidlmcl .  (Contributed by AV, 18-Feb-2025.) $)
+      rnglidlmcl $p |- ( ( ( R e. Rng /\ I e. U /\ .0. e. I )
+                           /\ ( X e. B /\ Y e. I ) ) -> ( X .x. Y ) e. I ) $=
+        ( vx va vb wcel co cv wral wi vj crng wa wss wex cplusg cfv w3a islidlm
+        eqid wceq oveq1 oveq1d eleq1d ralbidv oveq2 rspc2v adantl cgrp 3ad2ant1
+        rspcv rnggrp simpll1 simprl simpll2 simprr sseldd rngcl syl3anc grpridd
+        ad2antrr biimpd ex syl5d imp syld com23 3exp 3impd biimtrid 3imp1 ) BUB
+        PZEDPZHEPZFAPZGEPZUCZFGCQZEPZWCEAUDZUAREPUAUEZMRZNRZCQZORZBUFUGZQZEPZOE
+        SZNESMASZUHWBWDWGWITZTZMAWPBCDUAENOLJWPUJZKUIWBWJWKWTXBWBWJWKWTXBTWBWJW
+        KUHZWDWTXAXDWDWTXATXDWDUCZWGWTWIXEWGWTWITXEWGUCZWTWHWOWPQZEPZOESZWIWGWT
+        XITXEWSXIFWMCQZWOWPQZEPZOESMNFGAEWLFUKZWRXLOEXMWQXKEXMWNXJWOWPWLFWMCULU
+        MUNUOWMGUKZXLXHOEXNXKXGEXNXJWHWOWPWMGFCUPUMUNUOUQURXEWGXIWITXEXIWHHWPQZ
+        EPZWGWIWDXIXPTXDXHXPOHEWOHUKXGXOEWOHWHWPUPUNVAURXEWGXPWITXFXPWIXFXOWHEX
+        FAWPBWHHJXCIXDBUSPZWDWGWBWJXQWKBVBUTVKXFWBWEGAPWHAPWBWJWKWDWGVCXEWEWFVD
+        XFEAGWBWJWKWDWGVEXEWEWFVFVGABCFGJKVHVIVJUNVLVMVNVOVPVMVQVMVQVRVSVTWA $.
+    $}
+  $}
+
+  ${
     lidlcl.u $e |- U = ( LIdeal ` R ) $.
     ${
       lidl0cl.z $e |- .0. = ( 0g ` R ) $.
