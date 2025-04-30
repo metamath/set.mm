@@ -146078,7 +146078,7 @@ $)
     $( Deduce right identity from left inverse and left identity in an
        associative structure (such as a group).  (Contributed by NM,
        10-Aug-2013.)  (Proof shortened by Mario Carneiro, 6-Jan-2015.) $)
-    grpridd $p |- ( ( ph /\ x e. B ) -> ( x .+ O ) = x ) $=
+    grprida $p |- ( ( ph /\ x e. B ) -> ( x .+ O ) = x ) $=
       ( vn vu vv cv wcel wa co wceq vw oveq1 eqeq1d cbvrexvw sylib w3a caovassg
       wrex adantlr simprl simprrl simprrr grpinva oveq1d oveq2d 3eqtr3d anassrs
       caovassd rexlimddv eqtr3d ) ABPZEQZRZGVAFSZVAGFSZVAVCMPZVAFSZGTZVDVETZMEV
@@ -147477,7 +147477,7 @@ $)
          don't assume there is an expression for the inverse of ` x ` .
          (Contributed by NM, 6-Jan-2015.) $)
       isgrpde $p |- ( ph -> G e. Grp ) $=
-        ( grpridd grpidd ismndd isgrpd2e ) ABCEFGHIJABEFGHIJMNABCDEFHKMNLOPZQAB
+        ( grprida grpidd ismndd isgrpd2e ) ABCEFGHIJABEFGHIJMNABCDEFHKMNLOPZQAB
         CDEFGHIJKLMNTROS $.
     $}
 
