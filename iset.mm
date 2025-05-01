@@ -158448,6 +158448,16 @@ $)
       SCDETUBUA $.
   $}
 
+  ${
+    2idllidld.1 $e |- ( ph -> I e. ( 2Ideal ` R ) ) $.
+    $( A two-sided ideal is a left ideal.  (Contributed by Thierry Arnoux,
+       9-Mar-2025.) $)
+    2idllidld $p |- ( ph -> I e. ( LIdeal ` R ) ) $=
+      ( clidl cfv coppr c2idl cin wcel cvv wceq 2idlmex 2idlvalg eleqtrd elin1d
+      eqid 3syl ) ABEFZBGFZEFZCACBHFZSUAIZDACUBJBKJUBUCLDUBCBUBQZMBUBSUATKSQTQU
+      AQUDNROP $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
