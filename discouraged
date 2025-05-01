@@ -1448,6 +1448,7 @@
 "ax-mulf" is used by "mulex".
 "ax-mulf" is used by "mulnzcnf".
 "ax-mulf" is used by "rlimmulOLD".
+"ax-mulf" is used by "xrge0pluscn".
 "ax-mulrcl" is used by "remulcl".
 "ax-pre-ltadd" is used by "axltadd".
 "ax-pre-lttri" is used by "axlttri".
@@ -14690,7 +14691,7 @@ New usage of "ax-luk3" is discouraged (6 uses).
 New usage of "ax-mulass" is discouraged (1 uses).
 New usage of "ax-mulcl" is discouraged (1 uses).
 New usage of "ax-mulcom" is discouraged (1 uses).
-New usage of "ax-mulf" is discouraged (10 uses).
+New usage of "ax-mulf" is discouraged (11 uses).
 New usage of "ax-mulrcl" is discouraged (1 uses).
 New usage of "ax-pre-ltadd" is discouraged (1 uses).
 New usage of "ax-pre-lttri" is discouraged (1 uses).
@@ -21831,7 +21832,7 @@ Proof modification of "wunnatOLD" is discouraged (341 steps).
 Proof modification of "wunressOLD" is discouraged (145 steps).
 Proof modification of "xpexgALT" is discouraged (84 steps).
 Proof modification of "xpfiOLD" is discouraged (373 steps).
-Proof modification of "xrge0tmdALT" is discouraged (113 steps).
+Proof modification of "xrge0tmdALT" is discouraged (166 steps).
 Proof modification of "zexALT" is discouraged (34 steps).
 Proof modification of "zfcndac" is discouraged (256 steps).
 Proof modification of "zfcndext" is discouraged (19 steps).
