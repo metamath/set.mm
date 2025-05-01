@@ -146018,22 +146018,21 @@ $)
       IUGUJUKULUMUNAHUOTUPUSVEACVGUQTUR $.
   $}
 
-
   ${
     $d n u v w x y z B $.  $d n u v w x y z O $.  $d n u v w x y z ph $.
     $d u v w y z N $.  $d n u v w x y z .+ $.  $d u v w y z X $.
     $d u v w y ps $.
-    grprinvlem.c $e |- ( ( ph /\ x e. B /\ y e. B ) -> ( x .+ y ) e. B ) $.
-    grprinvlem.o $e |- ( ph -> O e. B ) $.
-    grprinvlem.i $e |- ( ( ph /\ x e. B ) -> ( O .+ x ) = x ) $.
-    grprinvlem.a $e |- ( ( ph /\ ( x e. B /\ y e. B /\ z e. B ) )
+    grpinva.c $e |- ( ( ph /\ x e. B /\ y e. B ) -> ( x .+ y ) e. B ) $.
+    grpinva.o $e |- ( ph -> O e. B ) $.
+    grpinva.i $e |- ( ( ph /\ x e. B ) -> ( O .+ x ) = x ) $.
+    grpinva.a $e |- ( ( ph /\ ( x e. B /\ y e. B /\ z e. B ) )
           -> ( ( x .+ y ) .+ z ) = ( x .+ ( y .+ z ) ) ) $.
-    grprinvlem.n $e |- ( ( ph /\ x e. B ) -> E. y e. B ( y .+ x ) = O ) $.
+    grpinva.r $e |- ( ( ph /\ x e. B ) -> E. y e. B ( y .+ x ) = O ) $.
     ${
-      grprinvlem.x $e |- ( ( ph /\ ps ) -> X e. B ) $.
-      grprinvlem.e $e |- ( ( ph /\ ps ) -> ( X .+ X ) = X ) $.
+      grpinvalem.x $e |- ( ( ph /\ ps ) -> X e. B ) $.
+      grpinvalem.e $e |- ( ( ph /\ ps ) -> ( X .+ X ) = X ) $.
       $( Lemma for ~ grpinva .  (Contributed by NM, 9-Aug-2013.) $)
-      grprinvlem $p |- ( ( ph /\ ps ) -> X = O ) $=
+      grpinvalem $p |- ( ( ph /\ ps ) -> X = O ) $=
         ( cv co wceq wcel vu vv vw wa wrex wral ralrimiva oveq2 eqeq1d cbvralvw
         rexbidv sylib rspccva syl2an2r oveq2d adantr simprr oveq1d w3a caovassg
         ad4ant14 simprl caovassd id eqeq12d rspcdva 3eqtr3d rexlimddv ) ABUDZDQ
@@ -146056,7 +146055,7 @@ $)
       grpinva $p |- ( ( ph /\ ps ) -> ( X .+ N ) = O ) $=
         ( co wcel vu vv vw wa cv caovclg adantlr caovcld wceq caovassg caovassd
         3expb w3a oveq1d oveq2 id eqeq12d wral ralrimiva cbvralvw sylib rspcdva
-        adantr 3eqtr3d oveq2d eqtrd grprinvlem ) ABCDEFGIJHGSZKLMNOABUDZUAUBJHF
+        adantr 3eqtr3d oveq2d eqtrd grpinvalem ) ABCDEFGIJHGSZKLMNOABUDZUAUBJHF
         FFGAUAUEZFTZUBUEZFTZUDVJVLGSZFTBACDVJVLFFFGACUEZFTDUEZFTVOVPGSFTKULUFUG
         PQUHZVIVHVHGSJHVHGSZGSVHVIUAUBUCJHVHFGAVKVMUCUEZFTUMVNVSGSVJVLVSGSGSUIB
         ACDEVJVLVSFGNUJUGZPQVQUKVIVRHJGVIHJGSZHGSIHGSZVRHVIWAIHGRUNVIUAUBUCHJHF
