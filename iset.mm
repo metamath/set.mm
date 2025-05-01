@@ -158456,6 +158456,14 @@ $)
       ( clidl cfv coppr c2idl cin wcel cvv wceq 2idlmex 2idlvalg eleqtrd elin1d
       eqid 3syl ) ABEFZBGFZEFZCACBHFZSUAIZDACUBJBKJUBUCLDUBCBUBQZMBUBSUATKSQTQU
       AQUDNROP $.
+
+    2idlridld.o $e |- O = ( oppR ` R ) $.
+    $( A two-sided ideal is a right ideal.  (Contributed by Thierry Arnoux,
+       9-Mar-2025.) $)
+    2idlridld $p |- ( ph -> I e. ( LIdeal ` O ) ) $=
+      ( clidl cfv c2idl cin wcel wceq eqid 2idlmex 2idlvalg 3syl eleqtrd elin2d
+      cvv ) ABGHZDGHZCACBIHZTUAJZEACUBKBSKUBUCLEUBCBUBMZNBUBTUADSTMFUAMUDOPQR
+      $.
   $}
 
 
