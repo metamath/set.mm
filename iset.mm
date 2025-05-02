@@ -158241,6 +158241,27 @@ $)
   $}
 
   ${
+    $d B x y $.  $d I x y $.  $d R x y $.  $d U x y $.
+    isridlrng.u $e |- U = ( LIdeal ` ( oppR ` R ) ) $.
+    isridlrng.b $e |- B = ( Base ` R ) $.
+    isridlrng.t $e |- .x. = ( .r ` R ) $.
+    $( A right ideal is a left ideal of the opposite non-unital ring.  This
+       theorem shows that this definition corresponds to the usual textbook
+       definition of a right ideal of a ring to be a subgroup of the additive
+       group of the ring which is closed under right-multiplication by elements
+       of the full ring.  (Contributed by AV, 21-Mar-2025.) $)
+    isridlrng $p |- ( ( R e. Rng /\ I e. ( SubGrp ` R ) )
+                    -> ( I e. U <-> A. x e. B A. y e. I ( y .x. x ) e. I ) ) $=
+      ( crng wcel csubg cfv wa cv co wral eqid wceq coppr cbs opprrng opprsubgg
+      cmulr eleq2d biimpa dflidl2rng syl2an2r opprbasg adantr raleqdv ad4ant134
+      wb opprmulg eleq1d ralbidva 3bitr2d ) DKLZGDMNZLZOZGFLZAPZBPZDUANZUENZQZG
+      LZBGRZAVFUBNZRZVJACRVEVDEQZGLZBGRZACRUSVFKLVAGVFMNZLZVCVLUNDVFVFSZUCUSVAV
+      QUSUTVPGDVFKVRUDUFUGABVKVFVGFGHVKSVGSZUHUIVBVJACVKUSCVKTVACDVFKVRIUJUKULV
+      BVJVOACVBVDCLZOZVIVNBGWAVEGLZOVHVMGUSVTWBVHVMTVACDVGEGVFKCVDVEIJVRVSUOUMU
+      PUQUQUR $.
+  $}
+
+  ${
     lidlcl.u $e |- U = ( LIdeal ` R ) $.
     ${
       lidl0cl.z $e |- .0. = ( 0g ` R ) $.
