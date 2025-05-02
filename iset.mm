@@ -158509,6 +158509,24 @@ $)
       $.
   $}
 
+  ${
+    $d B x y $.  $d I x y $.  $d R x y $.
+    df2idl2rng.u $e |- U = ( 2Ideal ` R ) $.
+    df2idl2rng.b $e |- B = ( Base ` R ) $.
+    df2idl2rng.t $e |- .x. = ( .r ` R ) $.
+    $( Alternate (the usual textbook) definition of a two-sided ideal of a
+       non-unital ring to be a subgroup of the additive group of the ring which
+       is closed under left- and right-multiplication by elements of the full
+       ring.  (Contributed by AV, 21-Mar-2025.) $)
+    df2idl2rng $p |- ( ( R e. Rng /\ I e. ( SubGrp ` R ) )
+                -> ( I e. U <-> A. x e. B A. y e. I
+                                ( ( x .x. y ) e. I /\ ( y .x. x ) e. I ) ) ) $=
+      ( crng wcel csubg cfv wa clidl cv co wral eqid coppr dflidl2rng isridlrng
+      anbi12d 2idlelb r19.26-2 3bitr4g ) DKLGDMNLOZGDPNZLZGDUANZPNZLZOAQZBQZERG
+      LZBGSACSZUOUNERGLZBGSACSZOGFLUPUROBGSACSUHUJUQUMUSABCDEUIGUITZIJUBABCDEUL
+      GULTZIJUCUDDFGUIULUKUTUKTVAHUEUPURABCGUFUG $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
