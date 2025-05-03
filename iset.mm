@@ -158549,6 +158549,13 @@ $)
         ( crg wcel csn coppr cfv c0g eqid oppr0g sneqd opprring lidl0 eqeltrd
         syl ) AFGZCHAIJZKJZHZBSCUAATFCTLZEMNSTFGUBBGATUCOTBUADUALPRQ $.
     $}
+
+    ridl1.b $e |- B = ( Base ` R ) $.
+    $( Every ring contains a unit right ideal.  (Contributed by AV,
+       13-Feb-2025.) $)
+    ridl1 $p |- ( R e. Ring -> B e. U ) $=
+      ( crg wcel coppr cfv cbs eqid opprbasg opprring lidl1 syl eqeltrd ) BFGZA
+      BHIZJIZCABRFRKZELQRFGSCGBRTMSRCDSKNOP $.
   $}
 
 
