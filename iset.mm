@@ -158525,6 +158525,18 @@ $)
       anbi12d 2idlelb r19.26-2 3bitr4g ) DKLGDMNLOZGDPNZLZGDUANZPNZLZOAQZBQZERG
       LZBGSACSZUOUNERGLZBGSACSZOGFLUPUROBGSACSUHUJUQUMUSABCDEUIGUITZIJUBABCDEUL
       GULTZIJUCUDDFGUIULUKUTUKTVAHUEUPURABCGUFUG $.
+
+    $( Alternate (the usual textbook) definition of a two-sided ideal of a ring
+       to be a subgroup of the additive group of the ring which is closed under
+       left- and right-multiplication by elements of the full ring.
+       (Contributed by AV, 13-Feb-2025.)  (Proof shortened by AV,
+       18-Apr-2025.) $)
+    df2idl2 $p |- ( R e. Ring -> ( I e. U <-> ( I e. ( SubGrp ` R )
+       /\ A. x e. B A. y e. I ( ( x .x. y ) e. I /\ ( y .x. x ) e. I ) ) ) ) $=
+      ( crg wcel csubg cfv cv co wa wral clidl c2idl eleq2i 2idllidld eqid crng
+      biimpi lidlsubg sylan2 wb ringrng df2idl2rng sylan biadanid ) DKLZGFLZGDM
+      NLZAOZBOZEPGLUQUPEPGLQBGRACRZUNUMGDSNZLUOUNDGUNGDTNZLFUTGHUAUEUBDUSGUSUCU
+      FUGUMDUDLUOUNURUHDUIABCDEFGHIJUJUKUL $.
   $}
 
 
