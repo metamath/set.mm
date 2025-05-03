@@ -158589,6 +158589,18 @@ $)
       BDHIZGBAJRDBRBDKIZGCTBFLMNABSDESOPQ $.
   $}
 
+  ${
+    2idlbas.i $e |- ( ph -> I e. ( 2Ideal ` R ) ) $.
+    2idlbas.j $e |- J = ( R |`s I ) $.
+    2idlbas.b $e |- B = ( Base ` J ) $.
+    $( The base set of a two-sided ideal as structure.  (Contributed by AV,
+       20-Feb-2025.) $)
+    2idlbas $p |- ( ph -> B = I ) $=
+      ( cbs cfv cvv cress co wceq a1i eqid c2idl wcel 2idlmex syl wss ressbas2d
+      2idlss eqtr4id ) ABEIJDHADCIJZECKECDLMNAGOUEUENAUEPZOADCQJZRZCKRFUGDCUGPZ
+      STAUHDUEUAFUEDUGCUFUIUCTUBUD $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
