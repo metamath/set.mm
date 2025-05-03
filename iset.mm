@@ -158539,6 +158539,18 @@ $)
       FUGUMDUDLUOUNURUHDUIABCDEFGHIJUJUKUL $.
   $}
 
+  ${
+    ridl0.u $e |- U = ( LIdeal ` ( oppR ` R ) ) $.
+    ${
+      ridl0.z $e |- .0. = ( 0g ` R ) $.
+      $( Every ring contains a zero right ideal.  (Contributed by AV,
+         13-Feb-2025.) $)
+      ridl0 $p |- ( R e. Ring -> { .0. } e. U ) $=
+        ( crg wcel csn coppr cfv c0g eqid oppr0g sneqd opprring lidl0 eqeltrd
+        syl ) AFGZCHAIJZKJZHZBSCUAATFCTLZEMNSTFGUBBGATUCOTBUADUALPRQ $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
