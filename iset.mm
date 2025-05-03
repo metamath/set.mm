@@ -158569,6 +158569,13 @@ $)
         cin ) AFGZCHZAIJZAKJZIJZRBSUAUCTAUACUALZEMAUCCUCLZENOABUAUCUBFUDUBLUEDP
         Q $.
     $}
+
+    2idl1.b $e |- B = ( Base ` R ) $.
+    $( Every ring contains a unit two-sided ideal.  (Contributed by AV,
+       13-Feb-2025.) $)
+    2idl1 $p |- ( R e. Ring -> B e. I ) $=
+      ( crg wcel clidl cfv coppr cin eqid lidl1 ridl1 elind 2idlvalg eleqtrrd )
+      BFGZABHIZBJIZHIZKCRSUAAABSSLZEMABUAUALZENOBCSUATFUBTLUCDPQ $.
   $}
 
 
