@@ -158558,6 +158558,19 @@ $)
       BHIZJIZCABRFRKZELQRFGSCGBRTMSRCDSKNOP $.
   $}
 
+  ${
+    2idl0.u $e |- I = ( 2Ideal ` R ) $.
+    ${
+      2idl0.z $e |- .0. = ( 0g ` R ) $.
+      $( Every ring contains a zero two-sided ideal.  (Contributed by AV,
+         13-Feb-2025.) $)
+      2idl0 $p |- ( R e. Ring -> { .0. } e. I ) $=
+        ( crg wcel csn clidl cfv coppr eqid lidl0 ridl0 elind 2idlvalg eleqtrrd
+        cin ) AFGZCHZAIJZAKJZIJZRBSUAUCTAUACUALZEMAUCCUCLZENOABUAUCUBFUDUBLUEDP
+        Q $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
