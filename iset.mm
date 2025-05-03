@@ -158581,9 +158581,9 @@ $)
   ${
     2idlss.b $e |- B = ( Base ` W ) $.
     2idlss.i $e |- I = ( 2Ideal ` W ) $.
-    $( A two-sided ideal is a subset of the base set.  Formerly part of proof
-       for ~ 2idlcpbl .  (Contributed by Mario Carneiro, 14-Jun-2015.)
-       (Revised by AV, 20-Feb-2025.)  (Proof shortened by AV, 13-Mar-2025.) $)
+    $( A two-sided ideal is a subset of the base set.  (Contributed by Mario
+       Carneiro, 14-Jun-2015.)  (Revised by AV, 20-Feb-2025.)  (Proof shortened
+       by AV, 13-Mar-2025.) $)
     2idlss $p |- ( U e. I -> U C_ B ) $=
       ( wcel clidl cfv wss c2idl eleq2i biimpi 2idllidld eqid lidlss syl ) BCGZ
       BDHIZGBAJRDBRBDKIZGCTBFLMNABSDESOPQ $.
