@@ -158599,6 +158599,14 @@ $)
       ( cbs cfv cvv cress co wceq a1i eqid c2idl wcel 2idlmex syl wss ressbas2d
       2idlss eqtr4id ) ABEIJDHADCIJZECKECDLMNAGOUEUENAUEPZOADCQJZRZCKRFUGDCUGPZ
       STAUHDUEUAFUEDUGCUFUIUCTUBUD $.
+
+    $( The base set of a two-sided ideal as structure is a left and right
+       ideal.  (Contributed by AV, 20-Feb-2025.) $)
+    2idlelbas $p |- ( ph -> ( B e. ( LIdeal ` R )
+                           /\ B e. ( LIdeal ` ( oppR ` R ) ) ) ) $=
+      ( clidl cfv wcel coppr 2idlbas c2idl eqid 2idlelb simplbi eqeltrd simprbi
+      syl jca ) ABCIJZKBCLJZIJZKABDUBABCDEFGHMZADCNJZKZDUBKZFUGUHDUDKZCUFDUBUDU
+      CUBOUCOUDOUFOPZQTRABDUDUEAUGUIFUGUHUIUJSTRUA $.
   $}
 
 
