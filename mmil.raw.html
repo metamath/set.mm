@@ -10124,7 +10124,14 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>ressid</td>
-  <td>~ strressid , ~ ressbasid , ~ grpressid , ~ ringressid</td>
+  <td>~ strressid , ~ ressbasid , ~ grpressid ,
+  ~ ablressid , ~ rngressid , ~ ringressid</td>
+  <td>set.mm relies on decidable equality for the keys
+  of an extensible structure.  Therefore, we need either
+  to ensure they are integers (as in ~ strressid ), or
+  only look at certain slots ( ~ ressbasid looks at the
+  base slot, ~ grpressid looks at the base and ` +g `
+  slots, etc).</td>
 </tr>
 
 <TR>

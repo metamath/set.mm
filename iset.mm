@@ -151209,6 +151209,20 @@ $)
       ZPPUMUOUNUGVAVBUMUOQUQULAUJUKUQRZULRZSTUAUBUSUTURCDULUNAUQVCVDUCUDUEUF $.
   $}
 
+  ${
+    $d B x y $.  $d G x y $.
+    ablressid.b $e |- B = ( Base ` G ) $.
+    $( A commutative group restricted to its base set is a commutative group.
+       It will usually be the original group exactly, of course, but to show
+       that needs additional conditions such as those in ~ strressid .
+       (Contributed by Jim Kingdon, 5-May-2025.) $)
+    ablressid $p |- ( G e. Abel -> ( G |`s B ) e. Abel ) $=
+      ( vx vy cabl wcel cplusg cfv cress co eqidd cbs wceq a1i id ssidd cgrp cv
+      cvv ressbas2d wfn basfn funfvex funfni sylancr eqeltrid ressplusgd ablgrp
+      elex grpressid syl eqid ablcom isabld ) BFGZDEABHIZBAJKZUPAAURBFUPURLZABM
+      IZNUPCOUPPUPAQUAUPAUQBURTTUSUPUQLUPAUTTCUPMTUBBTGUTTGZUCBFUJZVATBMBMUDUEU
+      FUGVBUHUPBRGURRGBUIABCUKULAUQBDSESCUQUMUNUO $.
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -151687,6 +151701,23 @@ $)
       IWCFVRAFVRTXEJVCZAXEBCHVTKVEAXEBDHVTKVEZVFVGXFVOVPFSZVQHSXIVPVQHSZFSWGWIP
       XFXMWFVQVQHVTXJAXEBCFVRJVEXFVQVDVFXFXIWCXNWHFVRXKXLAXECDHVTKVEVFVGVLVHVIB
       CDWLVRGVTVNWOWNVRUKWQVJVK $.
+  $}
+
+  ${
+    $d B x y z $.  $d G x y z $.
+    rngressid.b $e |- B = ( Base ` G ) $.
+    $( A non-unital ring restricted to its base set is a non-unital ring.  It
+       will usually be the original non-unital ring exactly, of course, but to
+       show that needs additional conditions such as those in ~ strressid .
+       (Contributed by Jim Kingdon, 5-May-2025.) $)
+    rngressid $p |- ( G e. Rng -> ( G |`s B ) e. Rng ) $=
+      ( vx vy vz crng wcel cplusg cfv cress co cmulr eqidd cbs wceq cvv eqid cv
+      cabl a1i ssidd ressbas2d wfn basfn elex funfvex funfni sylancr ressplusgd
+      eqeltrid ressmulrg mpancom rngabl ablressid syl rngcl rngass rngdi rngdir
+      id isrngd ) BGHZDEFABIJZBAKLZBMJZVCAAVEBGVCVENZABOJZPVCCUAVCVAVCAUBUCVCAV
+      DBVEQQVGVCVDNVCAVHQCVCOQUDBQHVHQHZUEBGUFZVIQBOBOUGUHUIUKZVJUJAQHVCVFVEMJP
+      VKABVEVFQGVERVFRZULUMVCBTHVETHBUNABCUOUPABVFDSZESZCVLUQABVFVMVNFSZCVLURAV
+      DBVFVMVNVOCVDRZVLUSAVDBVFVMVNVOCVPVLUTVB $.
   $}
 
 
