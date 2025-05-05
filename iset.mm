@@ -154737,6 +154737,24 @@ $)
        ambiguity with ` SubRing ` .  (Contributed by AV, 14-Feb-2025.) $)
     df-subrng $a |- SubRng = ( w e. Rng |-> { s e. ~P ( Base ` w ) |
                                               ( w |`s s ) e. Rng } ) $.
+
+    $d A s $.  $d B r s $.  $d R r s $.
+    issubrng.b $e |- B = ( Base ` R ) $.
+    $( The subring of non-unital ring predicate.  (Contributed by AV,
+       14-Feb-2025.) $)
+    issubrng $p |- ( A e. ( SubRng ` R )
+                     <-> ( R e. Rng /\ ( R |`s A ) e. Rng /\ A C_ B ) ) $=
+      ( vw vs vr csubrng cfv wcel crng cress co cv cbs cpw crab cvv wa bitrid
+      wss w3a df-subrng mptrcl simp1 wceq fveq2 pweqd oveq1 eleq1d rabeqbidv id
+      wfn basfn elex funfvex funfni sylancr pwexd rabexg syl eleq2d oveq2 elrab
+      fvmptd3 eqcomi sseq2i anbi2i ibar ancom wb elpw2g anbi2d 3anass a1i bitrd
+      3bitr4d pm5.21nii ) ACHIZJZCKJZWACALMZKJZABUAZUBZEKENZFNZLMKJFWFOIPQHACEF
+      UCUDWAWCWDUEWAVTACWGLMZKJZFCOIZPZQZJZWEWAVSWLAWAGCGNZWGLMZKJZFWNOIZPZQWLK
+      HRGFUCWNCUFZWPWIFWRWKWSWQWJWNCOUGUHWSWOWHKWNCWGLUIUJUKWAULWAWKRJWLRJWAWJR
+      WAORUMCRJWJRJZUNCKUOWTRCOCOUPUQURZUSWIFWKRUTVAVEVBWMAWKJZWCSZWAWEWIWCFAWK
+      WGAUFWHWBKWGACLVCUJVDWAWCAWJUAZSZWAWCWDSZSZXCWEXEXFWAXGXDWDWCWJBABWJDVFVG
+      VHWAXFVITXCWCXBSWAXEXBWCVJWAXBXDWCWAWTXBXDVKXAAWJRVLVAVMTWEXGVKWAWAWCWDVN
+      VOVQTVPVR $.
   $}
 
 
