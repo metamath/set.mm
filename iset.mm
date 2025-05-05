@@ -154713,8 +154713,37 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-  Subrings of a ring
+  Subrings
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Subrings of non-unital rings
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $( Introduce new constant symbols. $)
+  $c SubRng $.
+
+  $( Extend class notation with all subrings of a non-unital ring. $)
+  csubrng $a class SubRng $.
+
+  ${
+    $d w s $.
+    $( Define a subring of a non-unital ring as a set of elements that is a
+       non-unital ring in its own right.  In this section, a subring of a
+       non-unital ring is simply called "subring", unless it causes any
+       ambiguity with ` SubRing ` .  (Contributed by AV, 14-Feb-2025.) $)
+    df-subrng $a |- SubRng = ( w e. Rng |-> { s e. ~P ( Base ` w ) |
+                                              ( w |`s s ) e. Rng } ) $.
+  $}
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Subrings of unital rings
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
   $( Introduce new constant symbols. $)
@@ -176784,6 +176813,9 @@ htmldef "RingIso" as " RingIso ";
 htmldef "NzRing" as "NzRing";
   althtmldef "NzRing" as "NzRing";
   latexdef "NzRing" as "\mathrm{NzRing}";
+htmldef "SubRng" as "SubRng";
+  althtmldef "SubRng" as "SubRng";
+  latexdef "SubRng" as "\mathrm{SubRng}";
 htmldef "SubRing" as "SubRing";
   althtmldef "SubRing" as "SubRing";
   latexdef "SubRing" as "\mathrm{SubRing}";
