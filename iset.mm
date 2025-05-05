@@ -154757,6 +154757,14 @@ $)
       VOVQTVPVR $.
   $}
 
+  ${
+    subrngss.1 $e |- B = ( Base ` R ) $.
+    $( A subring is a subset.  (Contributed by AV, 14-Feb-2025.) $)
+    subrngss $p |- ( A e. ( SubRng ` R ) -> A C_ B ) $=
+      ( csubrng cfv wcel crng cress co wss issubrng simp3bi ) ACEFGCHGCAIJHGABK
+      ABCDLM $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
