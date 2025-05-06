@@ -154849,6 +154849,16 @@ $)
       BMABCDEFNO $.
   $}
 
+  ${
+    subrngacl.p $e |- .+ = ( +g ` R ) $.
+    $( A subring is closed under addition.  (Contributed by AV,
+       14-Feb-2025.) $)
+    subrngacl $p |- ( ( A e. ( SubRng ` R ) /\ X e. A /\ Y e. A ) ->
+      ( X .+ Y ) e. A ) $=
+      ( csubrng cfv wcel csubg co subrngsubg subgcl syl3an1 ) ACGHIACJHIDAIEAID
+      EBKAIACLBACDEFMN $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
