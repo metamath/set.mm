@@ -10124,7 +10124,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>ressid</td>
-  <td>~ strressid , ~ grpressid , ~ ringressid</td>
+  <td>~ strressid , ~ ressbasid , ~ grpressid , ~ ringressid</td>
 </tr>
 
 <TR>
@@ -10885,12 +10885,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>imasgrp , imasgrpf1</td>
-  <td><i>none</i></td>
-  <td>presumably provable</td>
-</tr>
-
-<tr>
   <td>xpsgrp</td>
   <td><i>none</i></td>
   <td>the set.mm proof depends on prdsgrpd</td>
@@ -11228,8 +11222,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>opprsubg</td>
-  <td><i>none</i></td>
-  <td>may be possible once SubGrp is defined</td>
+  <td>~ opprsubgg</td>
+  <td>adds set existence condition</td>
 </tr>
 
 <tr>
@@ -11515,8 +11509,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>islss</td>
   <td>~ islssm</td>
-  <td>adds set existence condition and changes not empty
-  to inhabited</td>
+  <td>changes not empty to inhabited</td>
 </tr>
 
 <tr>
@@ -11759,7 +11752,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>rlmsca</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses ressid</td>
+  <td>The set.mm proof uses ressid .  There is a
+  partial result at ~ rlmscabas</td>
 </tr>
 
 <tr>
@@ -11813,22 +11807,21 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>islidl</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses rlmsca2</td>
+  <td>~ islidlm</td>
+  <td>changes nonempty to inhabited</td>
 </tr>
 
 <tr>
-  <td>rnglidlmcl , rngridlmcl</td>
+  <td>rngridlmcl</td>
   <td><i>none</i></td>
-  <td>presumably feasible once we add the Rng syntax
-  and theorems</td>
+  <td>should be feasible once we add opprrng</td>
 </tr>
 
 <tr>
   <td>lidlmcl</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses rnglidlmcl and, indirectly,
-  islidl</td>
+  <td>should be feasible now that we have ~ rnglidlmcl and
+  ~ islidlm</td>
 </tr>
 
 <tr>
@@ -11887,6 +11880,105 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>Would seem to require at least small changes.
   The set.mm proof uses rlmsca2 .</td>
+</tr>
+
+<tr>
+  <td>2idlval</td>
+  <td>~ 2idlvalg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>rng2idlsubrng</td>
+  <td><i>none</i></td>
+  <td>should be feasible once SubRng is present</td>
+</tr>
+
+<tr>
+  <td>rng2idlnsg</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof depends on rng2idlsubrng
+  and subrngringnsg</td>
+</tr>
+
+<tr>
+  <td>rng2idl0</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses rng2idlsubrng and subrngsubg</td>
+</tr>
+
+<tr>
+  <td>rng2idlsubgsubrng , rng2idlsubgnsg , rng2idlsubg0</td>
+  <td><i>none</i></td>
+  <td>should be feasible once SubRng is present</td>
+</tr>
+
+<tr>
+  <td>2idlcpblrng</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses eqgabl</td>
+</tr>
+
+<tr>
+  <td>2idlcpbl</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses 2idlcpblrng</td>
+</tr>
+
+<tr>
+  <td>qus2idrng</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses 2idlcpblrng and qusrng</td>
+</tr>
+
+<tr>
+  <td>qus1</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses 2idlcpbl</td>
+</tr>
+
+<tr>
+  <td>qusring</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses qus1</td>
+</tr>
+
+<tr>
+  <td>qusrhm</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses qusring , qus1 ,
+  2idlcpbl , qusghm , and isrhm2d</td>
+</tr>
+
+<tr>
+  <td>qusmul2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses 2idlcpbl</td>
+</tr>
+
+<tr>
+  <td>crngridl</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses lidlrsppropd</td>
+</tr>
+
+<tr>
+  <td>crng2idl</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses crngridl</td>
+</tr>
+
+<tr>
+  <td>qusmulrng</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses 2idlcpblrng</td>
+</tr>
+
+<tr>
+  <td>quscrng</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses crng2idl , qusring , and
+  qusmulrng</td>
 </tr>
 
 <tr>
