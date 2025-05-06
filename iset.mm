@@ -154810,6 +154810,12 @@ $)
       simp2 ) BEFZBAGHZEFZABIJZKZLUAABMJFCEFSUAUCRAUBBUBNOCTEDPQ $.
   $}
 
+  $( Reverse closure for a subring predicate.  (Contributed by AV,
+     14-Feb-2025.) $)
+  subrngrcl $p |- ( A e. ( SubRng ` R ) -> R e. Rng ) $=
+    ( csubrng cfv wcel crng cress co cbs wss eqid issubrng simp1bi ) ABCDEBFEBA
+    GHFEABIDZJANBNKLM $.
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
