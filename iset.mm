@@ -154840,6 +154840,13 @@ $)
     subrngbas $p |- ( A e. ( SubRng ` R ) -> A = ( Base ` S ) ) $=
       ( csubrng cfv wcel csubg cbs wceq subrngsubg subgbas syl ) ABEFGABHFGACIF
       JABKABCDLM $.
+
+    subrng0.2 $e |- .0. = ( 0g ` R ) $.
+    $( A subring always has the same additive identity.  (Contributed by AV,
+       14-Feb-2025.) $)
+    subrng0 $p |- ( A e. ( SubRng ` R ) -> .0. = ( 0g ` S ) ) $=
+      ( csubrng cfv wcel csubg c0g wceq subrngsubg subg0 syl ) ABGHIABJHIDCKHLA
+      BMABCDEFNO $.
   $}
 
 
