@@ -151223,6 +151223,23 @@ $)
   $}
 
   ${
+    eqgabl.x $e |- X = ( Base ` G ) $.
+    eqgabl.n $e |- .- = ( -g ` G ) $.
+    eqgabl.r $e |- .~ = ( G ~QG S ) $.
+    $( Value of the subgroup coset equivalence relation on an abelian group.
+       (Contributed by Mario Carneiro, 14-Jun-2015.) $)
+    eqgabl $p |- ( ( G e. Abel /\ S C_ X ) -> ( A .~ B <->
+      ( A e. X /\ B e. X /\ ( B .- A ) e. S ) ) ) $=
+      ( cabl wcel wa cfv co w3a eqid wceq syl2anc df-3an wss wbr cminusg cplusg
+      eqgval simpll cgrp ablgrp ad2antrr simprl simprr ablcom syl3anc grpsubval
+      grpinvcl eqtr4d eleq1d pm5.32da 3bitr4g bitrd ) EKLZDGUAZMZABCUBAGLZBGLZA
+      EUCNZNZBEUDNZOZDLZPZVDVEBAFOZDLZPZABVHCDEVFKGHVFQZVHQZJUEVCVDVEMZVJMVQVMM
+      VKVNVCVQVJVMVCVQMZVIVLDVRVIBVGVHOZVLVRVAVGGLZVEVIVSRVAVBVQUFVREUGLZVDVTVA
+      WAVBVQEUHUIVCVDVEUJZGEVFAHVOUOSVCVDVEUKZGVHEVGBHVPULUMVRVEVDVLVSRWCWBGVHE
+      VFFBAHVPVOIUNSUPUQURVDVEVJTVDVEVMTUSUT $.
+  $}
+
+  ${
     $d x y G $.  $d x y H $.  $d x y S $.  $d ph x y $.
     subcmnd.h $e |- ( ph -> H = ( G |`s S ) ) $.
     subcmnd.g $e |- ( ph -> G e. CMnd ) $.
