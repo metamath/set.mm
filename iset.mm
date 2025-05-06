@@ -154802,6 +154802,14 @@ $)
       id ) BDEZPBAFGDEAAHABIJEPOABCKPALAABCMN $.
   $}
 
+  ${
+    subrngrng.1 $e |- S = ( R |`s A ) $.
+    $( A subring is a non-unital ring.  (Contributed by AV, 14-Feb-2025.) $)
+    subrngrng $p |- ( A e. ( SubRng ` R ) -> S e. Rng ) $=
+      ( crng wcel cress co cbs cfv wss w3a csubrng eqid issubrng eleq1i 3imtr4i
+      simp2 ) BEFZBAGHZEFZABIJZKZLUAABMJFCEFSUAUCRAUBBUBNOCTEDPQ $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
