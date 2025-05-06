@@ -146327,6 +146327,44 @@ $)
       VBMBCDVLGHVJVLVCVJVCVDVEVF $.
   $}
 
+  ${
+    $d s u v w x y B $.  $d s u v w x y K $.  $d s u v w x y ph $.
+    $d s u v w x y L $.
+    sgrppropd.k $e |- ( ph -> K e. V ) $.
+    sgrppropd.l $e |- ( ph -> L e. W ) $.
+    sgrppropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    sgrppropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    sgrppropd.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    $( If two structures are sets, have the same base set, and the values of
+       their group (addition) operations are equal for all pairs of elements of
+       the base set, one is a semigroup iff the other one is.  (Contributed by
+       AV, 15-Feb-2025.) $)
+    sgrppropd $p |- ( ph -> ( K e. Smgrp <-> L e. Smgrp ) ) $=
+      ( vu vv vw co wcel wral wa cv cplusg cfv csgrp cbs simplr simprl ad2antrr
+      wceq eleqtrd simprr sgrpcl syl3anc eleqtrrd ralrimivva ex adantlr 3eltr4d
+      eqid issgrpv syl adantr oveqrspc2v eleq1d simplll simplrl simplrr simpllr
+      wb ovrspc2v syl21anc simpr syl12anc oveq1d eqtrd eqeq12d ralbidva anbi12d
+      oveq2d 2ralbidva eleq2d raleqdv raleqbidv 3bitr3d bicomd 3bitrd pm5.21ndd
+      ) ABUAZCUAZEUBUCZQZDRZCDSBDSZEUDRZFUDRZAWNWMAWNTZWLBCDDWPWHDRZWIDRZTZTZWK
+      EUEUCZDWTWNWHXARWIXARWKXARAWNWSUFWTWHDXAWPWQWRUGADXAUIZWNWSKUHZUJWTWIDXAW
+      PWQWRUKXCUJXAEWHWIWJXAUSZWJUSZULUMXCUNUOUPAWOWMAWOTZWLBCDDXFWSTZWHWIFUBUC
+      ZQZFUEUCZWKDXGWOWHXJRWIXJRXIXJRAWOWSUFXGWHDXJXFWQWRUGADXJUIZWOWSLUHZUJXGW
+      IDXJXFWQWRUKXLUJXJFWHWIXHXJUSZXHUSZULUMAWSWKXIUIWOMUQXLURUOUPAWMWNWOVIAWM
+      TZWNNUAZOUAZWJQZXARZXRPUAZWJQZXPXQXTWJQZWJQZUIZPXASZTZOXASZNXASZXPXQXHQZX
+      JRZYIXTXHQZXPXQXTXHQZXHQZUIZPXJSZTZOXJSZNXJSZWOAWNYHVIZWMAEGRYSINOPXAEGWJ
+      XDXEUTVAVBXOXRDRZYDPDSZTZODSZNDSYIDRZYNPDSZTZODSZNDSYHYRXOUUBUUFNODDXOXPD
+      RZXQDRZTZTZYTUUDUUAUUEUUKXRYIDAUUJXRYIUIZWMABCDDWJXHXPXQMVCZUQVDUUKYDYNPD
+      UUKXTDRZTZYAYKYCYMUUOYAXRXTXHQZYKUUOAYTUUNYAUUPUIAWMUUJUUNVEZUUOUUHUUIWMY
+      TXOUUHUUIUUNVFZXOUUHUUIUUNVGZAWMUUJUUNVHZBCDDDWJXPXQVJVKUUKUUNVLZABCDDWJX
+      HXRXTMVCVMUUOXRYIXTXHUUOAUUHUUIUULUUQUURUUSUUMVMVNVOUUOYCXPYBXHQZYMUUOAUU
+      HYBDRZYCUVBUIUUQUURUUOUUIUUNWMUVCUUSUVAUUTBCDDDWJXQXTVJVKABCDDWJXHXPYBMVC
+      VMUUOYBYLXPXHUUOAUUIUUNYBYLUIUUQUUSUVAABCDDWJXHXQXTMVCVMVSVOVPVQVRVTXOUUC
+      YGNDXAAXBWMKVBZXOUUBYFODXAUVDXOYTXSUUAYEXODXAXRUVDWAXOYDPDXAUVDWBVRWCWCXO
+      UUGYQNDXJAXKWMLVBZXOUUFYPODXJUVEXOUUDYJUUEYOXODXJYIUVEWAXOYNPDXJUVEWBVRWC
+      WCWDAYRWOVIWMAWOYRAFHRWOYRVIJNOPXJFHXHXMXNUTVAWEVBWFUPWG $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
