@@ -151183,6 +151183,37 @@ $)
   $}
 
   ${
+    $d .+ x y $.  $d .+^ a b x y $.  $d F a b x y $.  $d G x y $.
+    $d H i j x y $.  $d X a b x y $.  $d Y a b i j x y $.  $d a b i j x y ph $.
+    ghmabl.x $e |- X = ( Base ` G ) $.
+    ghmabl.y $e |- Y = ( Base ` H ) $.
+    ghmabl.p $e |- .+ = ( +g ` G ) $.
+    ghmabl.q $e |- .+^ = ( +g ` H ) $.
+    ghmabl.f $e |- ( ( ph /\ x e. X /\ y e. X )
+      -> ( F ` ( x .+ y ) ) = ( ( F ` x ) .+^ ( F ` y ) ) ) $.
+    ghmabl.1 $e |- ( ph -> F : X -onto-> Y ) $.
+
+    ${
+      ghmcmn.3 $e |- ( ph -> G e. CMnd ) $.
+      $( The image of a commutative monoid ` G ` under a group homomorphism
+         ` F ` is a commutative monoid.  (Contributed by Thierry Arnoux,
+         26-Jan-2020.) $)
+      ghmcmn $p |- ( ph -> H e. CMnd ) $=
+        ( wcel co cfv vi vj va vb cmnd wceq wral ccmn cmnmnd syl mhmmnd simp-6l
+        cv wa simp-4r simplr cmncom syl3anc fveq2d syl3an1 mhmlem 3eqtr3d simpr
+        simpllr oveq12d wrex foelcdmi ad5ant13 r19.29a adantr anasss ralrimivva
+        wfo sylan iscmn sylanbrc ) AHUERUAUMZUBUMZESZVRVQESZUFZUBJUGUAJUGHUHRAB
+        CDEFGHIJOKLMNPAGUHRZGUERQGUIUJUKAWAUAUBJJAVQJRZVRJRZWAAWCUNZWDUNZUCUMZF
+        TZVQUFZWAUCIWFWGIRZUNZWIUNZUDUMZFTZVRUFZWAUDIWLWMIRZUNZWOUNZWHWNESZWNWH
+        ESZVSVTWRWGWMDSZFTWMWGDSZFTWSWTWRXAXBFWRWBWJWPXAXBUFWRAWBAWCWDWJWIWPWOU
+        LZQUJWFWJWIWPWOUOZWLWPWOUPZIDGWGWMKMUQURUSWRBCWGWMDEFIWRABUMZIRCUMZIRXF
+        XGDSFTXFFTXGFTESUFXCOUTZXDXEVAWRBCWMWGDEFIXHXEXDVAVBWRWHVQWNVREWKWIWPWO
+        VDZWQWOVCZVEWRWNVRWHVQEXJXIVEVBAWDWOUDIVFZWCWJWIAIJFVMZWDXKPUDIJFVRVGVN
+        VHVIWEWIUCIVFZWDAXLWCXMPUCIJFVQVGVNVJVIVKVLUAUBJEHLNVOVP $.
+    $}
+  $}
+
+  ${
     $d x y G $.  $d x y H $.  $d x y S $.  $d ph x y $.
     subcmnd.h $e |- ( ph -> H = ( G |`s S ) ) $.
     subcmnd.g $e |- ( ph -> G e. CMnd ) $.
