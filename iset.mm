@@ -151240,6 +151240,23 @@ $)
   $}
 
   ${
+    qusecsub.x $e |- B = ( Base ` G ) $.
+    qusecsub.n $e |- .- = ( -g ` G ) $.
+    qusecsub.r $e |- .~ = ( G ~QG S ) $.
+    $( Two subgroup cosets are equal if and only if the difference of their
+       representatives is a member of the subgroup.  (Contributed by AV,
+       7-Mar-2025.) $)
+    qusecsub $p |- ( ( ( G e. Abel /\ S e. ( SubGrp ` G ) )
+                       /\ ( X e. B /\ Y e. B ) )
+                     -> ( [ X ] .~ = [ Y ] .~ <-> ( Y .- X ) e. S ) ) $=
+      ( cabl wcel csubg cfv wa wbr co w3a cec wb wceq wss subgss anim2i syl wer
+      adantr eqgabl eqger ad2antlr simprl erth df-3an adantl bitr4id 3bitr3d
+      ibar ) DKLZCDMNLZOZFALZGALZOZOZFGBPZVAVBGFEQCLZRZFBSGBSUAVFVDURCAUBZOZVEV
+      GTUTVIVCUSVHURACDHUCUDUGFGBCDEAHIJUHUEVDFGBAUSABUFURVCBDACHJUIUJUTVAVBUKU
+      LVDVGVCVFOZVFVAVBVFUMVCVFVJTUTVCVFUQUNUOUP $.
+  $}
+
+  ${
     $d x y G $.  $d x y H $.  $d x y S $.  $d ph x y $.
     subcmnd.h $e |- ( ph -> H = ( G |`s S ) ) $.
     subcmnd.g $e |- ( ph -> G e. CMnd ) $.
