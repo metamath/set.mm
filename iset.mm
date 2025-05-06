@@ -154822,6 +154822,18 @@ $)
     csubg eqid subrngrng issubg syl3anbrc ) ABCDEZBFEZABGDZHBAIJZFEZABPDEUABKEU
     BABLBMNAUCBUCQZOUAUDKEUEABUDUDQRUDMNUCABUFST $.
 
+  ${
+    $d A x y $.  $d R x y $.
+    $( A subring is a normal subgroup.  (Contributed by AV, 25-Feb-2025.) $)
+    subrngringnsg $p |- ( A e. ( SubRng ` R ) -> A e. ( NrmSGrp ` R ) ) $=
+      ( vx vy csubrng cfv wcel csubg cv cplusg co cbs wral cnsg subrngsubg cabl
+      wi wa syl eqid w3a wceq crng subrngrcl rngabl 3anim1i 3expb ablcom eleq1d
+      biimpd ralrimivva isnsg2 sylanbrc ) ABEFGZABHFGCIZDIZBJFZKZAGZUPUOUQKZAGZ
+      QZDBLFZMCVCMABNFGABOUNVBCDVCVCUNUOVCGZUPVCGZRRZUSVAVFURUTAVFBPGZVDVEUAZUR
+      UTUBUNVDVEVHUNVGVDVEUNBUCGVGABUDBUESUFUGVCUQBUOUPVCTZUQTZUHSUIUJUKCDUQABV
+      CVIVJULUM $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
