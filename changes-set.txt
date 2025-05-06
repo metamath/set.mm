@@ -84,7 +84,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
-05-May-25 idomd     [same]      Moved from TA's mathbox to main set.mm
+05-May-25 idomdomd  [same]      Moved from TA's mathbox to main set.mm
 05-May-25 idomringd [same]      Moved from TA's mathbox to main set.mm
 02-May-25 bj-sbnf   sbnf        Moved from BJ's mathbox to main set.mm
 01-May-25 rnexd     [same]      Moved from TA's mathbox to main set.mm
