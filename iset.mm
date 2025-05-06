@@ -154961,6 +154961,31 @@ $)
       PUQDEUSSUQSUDUEUOCUQDEULUMCUQTZUNULBOIVCABUFABUPCUKOVAFUGUIQUJVBUH $.
   $}
 
+  ${
+    $d u v w x y A $.  $d u v w x y R $.  $d u v w x y .x. $.
+    issubrng2.b $e |- B = ( Base ` R ) $.
+    issubrng2.t $e |- .x. = ( .r ` R ) $.
+    $( Characterize the subrings of a ring by closure properties.  (Contributed
+       by AV, 15-Feb-2025.) $)
+    issubrng2 $p |- ( R e. Rng -> ( A e. ( SubRng ` R ) <->
+         ( A e. ( SubGrp ` R ) /\ A. x e. A A. y e. A ( x .x. y ) e. A ) ) ) $=
+      ( vu wcel cfv cv co wa wceq syl cgrp sseld adantlr syldan vv crng csubrng
+      vw csubg subrngsubg subrngmcl 3expb ralrimivva jca cress wss simpl cplusg
+      wral cbs simprl eqid subgbas eqidd id ressplusgd cmulr ressmulrg syl2anc2
+      subgrcl rngabl subgabl syl2an2r simprr oveq1 eleq1d rspc2v syl5com 3impib
+      cabl oveq2 subgss 3anim123d rngass rngdi rngdir isrngd issubrng syl3anbrc
+      w3a imp ex impbid2 ) EUBJZCEUCKJZCEUEKZJZALZBLZFMZCJZBCUOACUOZNZWKWMWRCEU
+      FWKWQABCCWKWNCJWOCJWQCEFWNWOHUGUHUIUJWJWSWKWJWSNZWJECUKMZUBJCDULZWKWJWSUM
+      WTIUAUDCEUNKZXAFWTWMCXAUPKOWJWMWRUQZCEXAXAURZUSPWTWMXCXAUNKOXDWMCXCEXAWLQ
+      WMXAUTWMXCUTWMVACEVFZVBPWTWMEQJFXAVCKOXDXFCEXAFWLQXEHVDVEWJEVPJWSWMXAVPJE
+      VGXDCEXAXEVHVIWTILZCJZUALZCJZXGXIFMZCJZWTWRXHXJNXLWJWMWRVJWQXLXGWOFMZCJAB
+      XGXICCWNXGOWPXMCWNXGWOFVKVLWOXIOXMXKCWOXIXGFVQVLVMVNVOWTXHXJUDLZCJZWFZXGD
+      JZXIDJZXNDJZWFZXKXNFMXGXIXNFMZFMOZWTXPXTWTXHXQXJXRXOXSWTCDXGWTWMXBXDDCEGV
+      RPZRWTCDXIYCRWTCDXNYCRVSWGZWJXTYBWSDEFXGXIXNGHVTSTWTXPXTXGXIXNXCMFMXKXGXN
+      FMZXCMOZYDWJXTYFWSDXCEFXGXIXNGXCURZHWASTWTXPXTXGXIXCMXNFMYEYAXCMOZYDWJXTY
+      HWSDXCEFXGXIXNGYGHWBSTWCYCCDEGWDWEWHWI $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
