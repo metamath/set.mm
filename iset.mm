@@ -151257,6 +151257,20 @@ $)
   $}
 
   ${
+    $d x y G $.  $d x y H $.  $d x y S $.
+    subgabl.h $e |- H = ( G |`s S ) $.
+    $( A subgroup of an abelian group is also abelian.  (Contributed by Mario
+       Carneiro, 3-Dec-2014.) $)
+    subgabl $p |- ( ( G e. Abel /\ S e. ( SubGrp ` G ) ) -> H e. Abel ) $=
+      ( vx vy cabl wcel csubg cfv wa cplusg cbs wceq adantl co a1i eqid sseldd
+      cv subgbas cress simpr simpl ressplusgd cgrp subggrp simp1l simp1r subgss
+      w3a wss syl simp2 simp3 ablcom syl3anc isabld ) BGHZABIJZHZKZEFABLJZCVAAC
+      MJNUSABCDUAOVBAVCBCUTGCBAUBPNVBDQVCVCNVBVCRZQUSVAUCUSVAUDUEVACUFHUSABCDUG
+      OVBETZAHZFTZAHZUKZUSVEBMJZHVGVJHVEVGVCPVGVEVCPNUSVAVFVHUHVIAVJVEVIVAAVJUL
+      USVAVFVHUIVJABVJRZUJUMZVBVFVHUNSVIAVJVGVLVBVFVHUOSVJVCBVEVGVKVDUPUQUR $.
+  $}
+
+  ${
     $d x y G $.  $d x y H $.  $d x y S $.  $d ph x y $.
     subcmnd.h $e |- ( ph -> H = ( G |`s S ) ) $.
     subcmnd.g $e |- ( ph -> G e. CMnd ) $.
