@@ -151211,6 +151211,15 @@ $)
         VDZWQWOVCZVEWRWNVRWHVQEXJXIVEVBAWDWOUDIVFZWCWJWIAIJFVMZWDXKPUDIJFVRVGVN
         VHVIWEWIUCIVFZWDAXLWCXMPUCIJFVQVGVNVJVIVKVLUAUBJEHLNVOVP $.
     $}
+
+    ghmabl.3 $e |- ( ph -> G e. Abel ) $.
+    $( The image of an abelian group ` G ` under a group homomorphism ` F ` is
+       an abelian group.  (Contributed by Mario Carneiro, 12-May-2014.)
+       (Revised by Thierry Arnoux, 26-Jan-2020.) $)
+    ghmabl $p |- ( ph -> H e. Abel ) $=
+      ( cgrp wcel ccmn cabl ablgrp syl ghmgrp ablcmn ghmcmn isabl sylanbrc ) AH
+      RSHTSHUASABCDEFGHIJOKLMNPAGUASZGRSQGUBUCUDABCDEFGHIJKLMNOPAUIGTSQGUEUCUFH
+      UGUH $.
   $}
 
   ${
