@@ -153403,6 +153403,28 @@ $)
         CHIFBHCDEJKLM $.
     $}
 
+    $( An opposite non-unital ring is a non-unital ring.  (Contributed by AV,
+       15-Feb-2025.) $)
+    opprrng $p |- ( R e. Rng -> O e. Rng ) $=
+      ( vx vy vz crng wcel cfv cplusg cmulr eqid eqidd cabl cv co opprmulg wceq
+      syl13anc syl3anc cbs opprbasg oppraddg rngabl oveqdr ablpropd mpbid rngcl
+      w3a 3com23 eqeltrd simpr3 simpr2 simpr1 rngass 3adant3r1 oveq2d 3adant3r3
+      wa simpl eqtrd oveq1d 3eqtr4rd rngdir rngacl oveq12d 3eqtr4d rngdi isrngd
+      ) AGHZDEFAUAIZAJIZBBKIZVKABGCVKLZUBZVLABGCVLLZUCZVJVMMVJANHBNHAUDVJDEVKAB
+      VJVKMVOVJDOZVKHZEOZVKHZUSDEVLBJIVQUEUFUGVJVSWAUIVRVTVMPZVTVRAKIZPZVKVKAVM
+      WCVKBGVKVRVTVNWCLZCVMLZQZVJWAVSWDVKHZVKAWCVTVRVNWEUHZUJUKVJVSWAFOZVKHZUIZ
+      USZWJVTWCPZVRWCPZWJWDWCPZVRVTWJVMPZVMPZWBWJVMPZWMVJWKWAVSWOWPRVJWLUTZVJVS
+      WAWKULZVJVSWAWKUMZVJVSWAWKUNZVKAWCWJVTVRVNWEUOSWMWRVRWNVMPZWOWMWQWNVRVMVJ
+      WAWKWQWNRVSVKAVMWCVKBGVKVTWJVNWECWFQUPZUQWMVJVSWNVKHZXDWORWTXCWMVJWKWAXFW
+      TXAXBVKAWCWJVTVNWEUHTVKAVMWCVKBGVKVRWNVNWECWFQTVAWMWSWDWJVMPZWPWMWBWDWJVM
+      VJVSWAWBWDRWKWGURZVBWMVJWHWKXGWPRWTWMVJWAVSWHWTXBXCWITXAVKAVMWCVKBGVKWDWJ
+      VNWECWFQTVAVCWMVTWJVLPZVRWCPZWDWJVRWCPZVLPZVRXIVMPZWBVRWJVMPZVLPWMVJWAWKV
+      SXJXLRWTXBXAXCVKVLAWCVTWJVRVNVPWEVDSWMVJVSXIVKHZXMXJRWTXCVJWAWKXOVSVKVLAV
+      TWJVNVPVEUPVKAVMWCVKBGVKVRXIVNWECWFQTWMWBWDXNXKVLXHWMVJVSWKXNXKRWTXCXAVKA
+      VMWCVKBGVKVRWJVNWECWFQTZVFVGWMWJVRVTVLPZWCPZXKWNVLPZXQWJVMPZXNWQVLPWMVJWK
+      VSWAXRXSRWTXAXCXBVKVLAWCWJVRVTVNVPWEVHSWMVJXQVKHZWKXTXRRWTVJVSWAYAWKVKVLA
+      VRVTVNVPVEURXAVKAVMWCVKBGVKXQWJVNWECWFQTWMXNXKWQWNVLXPXEVFVGVI $.
+
     $( An opposite ring is a ring.  (Contributed by Mario Carneiro,
        1-Dec-2014.)  (Revised by Mario Carneiro, 30-Aug-2015.) $)
     opprring $p |- ( R e. Ring -> O e. Ring ) $=
@@ -158219,6 +158241,27 @@ $)
   $}
 
   ${
+    $d B x y $.  $d I x y $.  $d R x y $.  $d U x y $.
+    isridlrng.u $e |- U = ( LIdeal ` ( oppR ` R ) ) $.
+    isridlrng.b $e |- B = ( Base ` R ) $.
+    isridlrng.t $e |- .x. = ( .r ` R ) $.
+    $( A right ideal is a left ideal of the opposite non-unital ring.  This
+       theorem shows that this definition corresponds to the usual textbook
+       definition of a right ideal of a ring to be a subgroup of the additive
+       group of the ring which is closed under right-multiplication by elements
+       of the full ring.  (Contributed by AV, 21-Mar-2025.) $)
+    isridlrng $p |- ( ( R e. Rng /\ I e. ( SubGrp ` R ) )
+                    -> ( I e. U <-> A. x e. B A. y e. I ( y .x. x ) e. I ) ) $=
+      ( crng wcel csubg cfv wa cv co wral eqid wceq coppr cbs opprrng opprsubgg
+      cmulr eleq2d biimpa dflidl2rng syl2an2r opprbasg adantr raleqdv ad4ant134
+      wb opprmulg eleq1d ralbidva 3bitr2d ) DKLZGDMNZLZOZGFLZAPZBPZDUANZUENZQZG
+      LZBGRZAVFUBNZRZVJACRVEVDEQZGLZBGRZACRUSVFKLVAGVFMNZLZVCVLUNDVFVFSZUCUSVAV
+      QUSUTVPGDVFKVRUDUFUGABVKVFVGFGHVKSVGSZUHUIVBVJACVKUSCVKTVACDVFKVRIUJUKULV
+      BVJVOACVBVDCLZOZVIVNBGWAVEGLZOVHVMGUSVTWBVHVMTVACDVGEGVFKCVDVEIJVRVSUOUMU
+      PUQUQUR $.
+  $}
+
+  ${
     lidlcl.u $e |- U = ( LIdeal ` R ) $.
     ${
       lidl0cl.z $e |- .0. = ( 0g ` R ) $.
@@ -158446,6 +158489,124 @@ $)
       ( wcel cvv wa 2idlmex lidlmex adantr cin 2idlvalg eleq2d elin pm5.21nii
       bitrdi ) CBKZALKZCDKZCEKZMZBCAJNUEUDUFCDAGOPUDUCCDEQZKUGUDBUHCABDEFLGHIJR
       SCDETUBUA $.
+  $}
+
+  ${
+    2idllidld.1 $e |- ( ph -> I e. ( 2Ideal ` R ) ) $.
+    $( A two-sided ideal is a left ideal.  (Contributed by Thierry Arnoux,
+       9-Mar-2025.) $)
+    2idllidld $p |- ( ph -> I e. ( LIdeal ` R ) ) $=
+      ( clidl cfv coppr c2idl cin wcel cvv wceq 2idlmex 2idlvalg eleqtrd elin1d
+      eqid 3syl ) ABEFZBGFZEFZCACBHFZSUAIZDACUBJBKJUBUCLDUBCBUBQZMBUBSUATKSQTQU
+      AQUDNROP $.
+
+    2idlridld.o $e |- O = ( oppR ` R ) $.
+    $( A two-sided ideal is a right ideal.  (Contributed by Thierry Arnoux,
+       9-Mar-2025.) $)
+    2idlridld $p |- ( ph -> I e. ( LIdeal ` O ) ) $=
+      ( clidl cfv c2idl cin wcel wceq eqid 2idlmex 2idlvalg 3syl eleqtrd elin2d
+      cvv ) ABGHZDGHZCACBIHZTUAJZEACUBKBSKUBUCLEUBCBUBMZNBUBTUADSTMFUAMUDOPQR
+      $.
+  $}
+
+  ${
+    $d B x y $.  $d I x y $.  $d R x y $.
+    df2idl2rng.u $e |- U = ( 2Ideal ` R ) $.
+    df2idl2rng.b $e |- B = ( Base ` R ) $.
+    df2idl2rng.t $e |- .x. = ( .r ` R ) $.
+    $( Alternate (the usual textbook) definition of a two-sided ideal of a
+       non-unital ring to be a subgroup of the additive group of the ring which
+       is closed under left- and right-multiplication by elements of the full
+       ring.  (Contributed by AV, 21-Mar-2025.) $)
+    df2idl2rng $p |- ( ( R e. Rng /\ I e. ( SubGrp ` R ) )
+                -> ( I e. U <-> A. x e. B A. y e. I
+                                ( ( x .x. y ) e. I /\ ( y .x. x ) e. I ) ) ) $=
+      ( crng wcel csubg cfv wa clidl cv co wral eqid coppr dflidl2rng isridlrng
+      anbi12d 2idlelb r19.26-2 3bitr4g ) DKLGDMNLOZGDPNZLZGDUANZPNZLZOAQZBQZERG
+      LZBGSACSZUOUNERGLZBGSACSZOGFLUPUROBGSACSUHUJUQUMUSABCDEUIGUITZIJUBABCDEUL
+      GULTZIJUCUDDFGUIULUKUTUKTVAHUEUPURABCGUFUG $.
+
+    $( Alternate (the usual textbook) definition of a two-sided ideal of a ring
+       to be a subgroup of the additive group of the ring which is closed under
+       left- and right-multiplication by elements of the full ring.
+       (Contributed by AV, 13-Feb-2025.)  (Proof shortened by AV,
+       18-Apr-2025.) $)
+    df2idl2 $p |- ( R e. Ring -> ( I e. U <-> ( I e. ( SubGrp ` R )
+       /\ A. x e. B A. y e. I ( ( x .x. y ) e. I /\ ( y .x. x ) e. I ) ) ) ) $=
+      ( crg wcel csubg cfv cv co wa wral clidl c2idl eleq2i 2idllidld eqid crng
+      biimpi lidlsubg sylan2 wb ringrng df2idl2rng sylan biadanid ) DKLZGFLZGDM
+      NLZAOZBOZEPGLUQUPEPGLQBGRACRZUNUMGDSNZLUOUNDGUNGDTNZLFUTGHUAUEUBDUSGUSUCU
+      FUGUMDUDLUOUNURUHDUIABCDEFGHIJUJUKUL $.
+  $}
+
+  ${
+    ridl0.u $e |- U = ( LIdeal ` ( oppR ` R ) ) $.
+    ${
+      ridl0.z $e |- .0. = ( 0g ` R ) $.
+      $( Every ring contains a zero right ideal.  (Contributed by AV,
+         13-Feb-2025.) $)
+      ridl0 $p |- ( R e. Ring -> { .0. } e. U ) $=
+        ( crg wcel csn coppr cfv c0g eqid oppr0g sneqd opprring lidl0 eqeltrd
+        syl ) AFGZCHAIJZKJZHZBSCUAATFCTLZEMNSTFGUBBGATUCOTBUADUALPRQ $.
+    $}
+
+    ridl1.b $e |- B = ( Base ` R ) $.
+    $( Every ring contains a unit right ideal.  (Contributed by AV,
+       13-Feb-2025.) $)
+    ridl1 $p |- ( R e. Ring -> B e. U ) $=
+      ( crg wcel coppr cfv cbs eqid opprbasg opprring lidl1 syl eqeltrd ) BFGZA
+      BHIZJIZCABRFRKZELQRFGSCGBRTMSRCDSKNOP $.
+  $}
+
+  ${
+    2idl0.u $e |- I = ( 2Ideal ` R ) $.
+    ${
+      2idl0.z $e |- .0. = ( 0g ` R ) $.
+      $( Every ring contains a zero two-sided ideal.  (Contributed by AV,
+         13-Feb-2025.) $)
+      2idl0 $p |- ( R e. Ring -> { .0. } e. I ) $=
+        ( crg wcel csn clidl cfv coppr eqid lidl0 ridl0 elind 2idlvalg eleqtrrd
+        cin ) AFGZCHZAIJZAKJZIJZRBSUAUCTAUACUALZEMAUCCUCLZENOABUAUCUBFUDUBLUEDP
+        Q $.
+    $}
+
+    2idl1.b $e |- B = ( Base ` R ) $.
+    $( Every ring contains a unit two-sided ideal.  (Contributed by AV,
+       13-Feb-2025.) $)
+    2idl1 $p |- ( R e. Ring -> B e. I ) $=
+      ( crg wcel clidl cfv coppr cin eqid lidl1 ridl1 elind 2idlvalg eleqtrrd )
+      BFGZABHIZBJIZHIZKCRSUAAABSSLZEMABUAUALZENOBCSUATFUBTLUCDPQ $.
+  $}
+
+  ${
+    2idlss.b $e |- B = ( Base ` W ) $.
+    2idlss.i $e |- I = ( 2Ideal ` W ) $.
+    $( A two-sided ideal is a subset of the base set.  (Contributed by Mario
+       Carneiro, 14-Jun-2015.)  (Revised by AV, 20-Feb-2025.)  (Proof shortened
+       by AV, 13-Mar-2025.) $)
+    2idlss $p |- ( U e. I -> U C_ B ) $=
+      ( wcel clidl cfv wss c2idl eleq2i biimpi 2idllidld eqid lidlss syl ) BCGZ
+      BDHIZGBAJRDBRBDKIZGCTBFLMNABSDESOPQ $.
+  $}
+
+  ${
+    2idlbas.i $e |- ( ph -> I e. ( 2Ideal ` R ) ) $.
+    2idlbas.j $e |- J = ( R |`s I ) $.
+    2idlbas.b $e |- B = ( Base ` J ) $.
+    $( The base set of a two-sided ideal as structure.  (Contributed by AV,
+       20-Feb-2025.) $)
+    2idlbas $p |- ( ph -> B = I ) $=
+      ( cbs cfv cvv cress co wceq a1i eqid c2idl wcel 2idlmex syl wss ressbas2d
+      2idlss eqtr4id ) ABEIJDHADCIJZECKECDLMNAGOUEUENAUEPZOADCQJZRZCKRFUGDCUGPZ
+      STAUHDUEUAFUEDUGCUFUIUCTUBUD $.
+
+    $( The base set of a two-sided ideal as structure is a left and right
+       ideal.  (Contributed by AV, 20-Feb-2025.) $)
+    2idlelbas $p |- ( ph -> ( B e. ( LIdeal ` R )
+                           /\ B e. ( LIdeal ` ( oppR ` R ) ) ) ) $=
+      ( clidl cfv wcel coppr 2idlbas c2idl eqid 2idlelb simplbi eqeltrd simprbi
+      syl jca ) ABCIJZKBCLJZIJZKABDUBABCDEFGHMZADCNJZKZDUBKZFUGUHDUDKZCUFDUBUDU
+      CUBOUCOUDOUFOPZQTRABDUDUEAUGUIFUGUHUIUJSTRUA $.
   $}
 
 
