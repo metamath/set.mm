@@ -84,7 +84,11 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
- 2-May-25 bj-sbnf   sbnf        Moved from BJ's mathbox to main set.mm
+05-May-25 idomdomd  [same]      Moved from TA's mathbox to main set.mm
+05-May-25 idomringd [same]      Moved from TA's mathbox to main set.mm
+02-May-25 bj-sbnf   sbnf        Moved from BJ's mathbox to main set.mm
+01-May-25 rnexd     [same]      Moved from TA's mathbox to main set.mm
+01-May-25 imaexd    [same]      Moved from TA's mathbox to main set.mm
 30-Apr-25 idomrootle [same]     Moved from SO's mathbox to main set.mm
 30-Apr-25 ply1ascl0 [same]      Moved from TA's mathbox to main set.mm
 30-Apr-25 hashf1dmcdm [same]    Moved from BT's mathbox to main set.mm
