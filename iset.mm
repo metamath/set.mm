@@ -154834,6 +154834,14 @@ $)
       CVIVJULUM $.
   $}
 
+  ${
+    subrng0.1 $e |- S = ( R |`s A ) $.
+    $( Base set of a subring structure.  (Contributed by AV, 14-Feb-2025.) $)
+    subrngbas $p |- ( A e. ( SubRng ` R ) -> A = ( Base ` S ) ) $=
+      ( csubrng cfv wcel csubg cbs wceq subrngsubg subgbas syl ) ABEFGABHFGACIF
+      JABKABCDLM $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
