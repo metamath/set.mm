@@ -154859,6 +154859,20 @@ $)
       EBKAIACLBACDEFMN $.
   $}
 
+  ${
+    subrngmcl.p $e |- .x. = ( .r ` R ) $.
+    $( A subgroup is closed under multiplication.  (Contributed by Mario
+       Carneiro, 2-Dec-2014.)  Generalization of ~ subrgmcl .  (Revised by AV,
+       14-Feb-2025.) $)
+    subrngmcl $p |- ( ( A e. ( SubRng ` R ) /\ X e. A /\ Y e. A )
+                      -> ( X .x. Y ) e. A ) $=
+      ( csubrng cfv wcel w3a cress co cmulr cbs crng subrngrng 3ad2ant1 eleqtrd
+      eqid wceq simp2 subrngbas simp3 rngcl syl3anc subrngrcl ressmulrg 3eltr4d
+      mpdan oveqd ) ABGHZIZDAIZEAIZJZDEBAKLZMHZLZUPNHZDECLAUOUPOIZDUSIEUSIURUSI
+      ULUMUTUNABUPUPSZPQUODAUSULUMUNUAULUMAUSTUNABUPVAUBQZRUOEAUSULUMUNUCVBRUSU
+      PUQDEUSSUQSUDUEUOCUQDEULUMCUQTZUNULBOIVCABUFABUPCUKOVAFUGUIQUJVBUH $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
