@@ -146263,6 +146263,12 @@ $)
       VFUQVEUQCUSEMZVAEMZCVCEMZNUMVAEMZCDVAEMZEMZNIJKCDFAAAURCNZVBVHVDVIVMUTVGV
       AEURCUSEQRURCVCEQSUSDNZVHVJVIVLVNVGUMVAEUSDCETRVNVCVKCEUSDVAEQUFSVAFNZVJU
       NVLUPVAFUMETVOVKUOCEVAFDETUFSUGUHUIUJ $.
+
+    $( Closure of the operation of a semigroup.  (Contributed by AV,
+       15-Feb-2025.) $)
+    sgrpcl $p |- ( ( G e. Smgrp /\ X e. B /\ Y e. B ) -> ( X .o. Y ) e. B ) $=
+      ( csgrp wcel cmgm co sgrpmgm mgmcl syl3an1 ) BHIBJICAIDAICDEKAIBLABCDEFGM
+      N $.
   $}
 
   ${
