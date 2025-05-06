@@ -154794,6 +154794,12 @@ $)
     subrngss $p |- ( A e. ( SubRng ` R ) -> A C_ B ) $=
       ( csubrng cfv wcel crng cress co wss issubrng simp3bi ) ACEFGCHGCAIJHGABK
       ABCDLM $.
+
+    $( Every non-unital ring is a subring of itself.  (Contributed by AV,
+       14-Feb-2025.) $)
+    subrngid $p |- ( R e. Rng -> B e. ( SubRng ` R ) ) $=
+      ( crng wcel cress co wss csubrng cfv rngressid ssidd issubrng syl3anbrc
+      id ) BDEZPBAFGDEAAHABIJEPOABCKPALAABCMN $.
   $}
 
 
