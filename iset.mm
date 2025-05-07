@@ -155121,6 +155121,25 @@ $)
       OVBVC $.
   $}
 
+  ${
+    $d R j r x y $.  $d S j r x y $.
+    $( The intersection of a nonempty collection of subrings is a subring.
+       (Contributed by AV, 15-Feb-2025.) $)
+    subrngintm $p |- ( ( S C_ ( SubRng ` R ) /\ E. j j e. S )
+                      -> |^| S e. ( SubRng ` R ) ) $=
+      ( vx vy vr cfv wss cv wcel wa cmulr wral sylan elinti imp eqid syl3anc wb
+      cvv csubrng wex cint csubg subrngsubg ssriv mpan2 subgintm ssel2 ad4ant14
+      co sstr simprl simprr subrngmcl ralrimiva crng ssel subrngrcl exlimdv vex
+      syl6 mulrslid slotex ovexg elintg 3syl adantr mpbird ralrimivva issubrng2
+      a1i cbs syl mpbir2and ) BAUAGZHZCIZBJZCUBZKZBUCZVPJZWBAUDGZJZDIZEIZALGZUK
+      ZWBJZEWBMDWBMZVQBWDHZVTWEVQVPWDHWLFVPWDFIZAUEUFBVPWDULUGCBAUHNWAWJDEWBWBW
+      AWFWBJZWGWBJZKZKZWJWIWMJZFBMZWQWRFBWQWMBJZKWMVPJZWFWMJZWGWMJZWRVQWTXAVTWP
+      BVPWMUIUJWQWNWTXBWAWNWOUMWNWTXBWFBWMOPNWQWOWTXCWAWNWOUNWOWTXCWGBWMOPNWMAW
+      HWFWGWHQZUORUPWAWJWSSZWPWAAUQJZWITJZXEVQVTXFVQVSXFCVQVSVRVPJXFBVPVRURVRAU
+      SVBUTPZXFWFTJZWHTJWGTJZXGXIXFDVAVLALUQVCVDXJXFEVAVLWFWGWHTTTVERFWIBTVFVGV
+      HVIVJWAXFWCWEWKKSXHDEWBAVMGZAWHXKQXDVKVNVO $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
