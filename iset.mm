@@ -153645,6 +153645,23 @@ $)
       VSWAXRXSRWTXAXCXBVKVLAWCWJVRVTVNVPWEVHSWMVJXQVKHZWKXTXRRWTVJVSWAYAWKVKVLA
       VRVTVNVPVEURXAVKAVMWCVKBGVKXQWJVNWECWFQTWMXNXKWQWNVLXPXEVFVGVI $.
 
+    ${
+      $d V x y $.
+      $( A set is a non-unital ring if and only if its opposite is a non-unital
+         ring.  Bidirectional form of ~ opprrng .  (Contributed by AV,
+         15-Feb-2025.) $)
+      opprrngbg $p |- ( R e. V -> ( R e. Rng <-> O e. Rng ) ) $=
+        ( vx vy wcel crng opprrng cfv eqid cbs wceq a1i opprbasg cvv syl cplusg
+        cmulr co coppr opprex eqtrd oppraddg oveqdr vex opprmulg syl3anc adantr
+        cv wa simpl simprr simprl eqtr2d rngpropd imbitrrid impbid2 ) ACGZAHGZB
+        HGZABDIVAUTUSBUAJZHGBVBVBKZIUSEFALJZAVBVDVDMUSVDKZNUSVDBLJZVBLJZVDABCDV
+        EOUSBPGZVFVGMABCDUBZVFBVBPVCVFKZOQUCUSEUJZVDGZFUJZVDGZUKZEFARJZVBRJZUSV
+        PBRJZVQVPABCDVPKUDUSVHVRVQMVIVRBVBPVCVRKUDQUCUEUSVOUKZVKVMVBSJZTZVMVKBS
+        JZTZVKVMASJZTZUSWAWCMZVOUSVHVKPGZVMPGZWFVIWGUSEUFNWHUSFUFNVFBVTWBPVBPPV
+        KVMVJWBKZVCVTKUGUHUIVSUSVNVLWCWEMUSVOULUSVLVNUMUSVLVNUNVDAWBWDVDBCVDVMV
+        KVEWDKDWIUGUHUOUPUQUR $.
+    $}
+
     $( An opposite ring is a ring.  (Contributed by Mario Carneiro,
        1-Dec-2014.)  (Revised by Mario Carneiro, 30-Aug-2015.) $)
     opprring $p |- ( R e. Ring -> O e. Ring ) $=
