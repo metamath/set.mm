@@ -155104,6 +155104,23 @@ $)
       HWSDXCEFXGXIXNGYGHWBSTWCYCCDEGWDWEWHWI $.
   $}
 
+  ${
+    $d x y z O $.  $d x y z R $.  $d x V $.
+    opprsubrng.o $e |- O = ( oppR ` R ) $.
+    $( Being a subring is a symmetric property.  (Contributed by AV,
+       15-Feb-2025.) $)
+    opprsubrngg $p |- ( R e. V -> ( SubRng ` R ) = ( SubRng ` O ) ) $=
+      ( vx vz vy wcel csubrng cfv crng cv wi subrngrcl a1i csubg wral cvv eqid
+      wb opprrngbg imbitrrid cmulr co opprsubgg eleq2d ralcom wceq vex opprmulg
+      cbs mp3an23 eleq1d 2ralbidv bitr4id anbi12d issubrng2 opprrng syl 3bitr4d
+      wa pm5.21ndd eqrdv ) ACHZEAIJZBIJZVDAKHZELZVEHZVHVFHZVIVGMVDVHANOVJVGVDBK
+      HZVHBNABCDUAUBVGVIVJTMVDVGVHAPJZHZFLZGLZAUCJZUDZVHHZGVHQFVHQZVAVHBPJZHZVO
+      VNBUCJZUDZVHHZFVHQGVHQZVAZVIVJVGVMWAVSWEVGVLVTVHABKDUEUFVGVSVRFVHQGVHQWEV
+      RFGVHVHUGVGWDVRGFVHVHVGWCVQVHVGVORHVNRHWCVQUHGUIFUIAUKJZAWBVPRBKRVOVNWGSZ
+      VPSZDWBSZUJULUMUNUOUPFGVHWGAVPWHWIUQVGVKVJWFTABDURGFVHBUKJZBWBWKSWJUQUSUT
+      OVBVC $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
