@@ -155140,6 +155140,17 @@ $)
       HVIVJWAXFWCWEWKKSXHDEWBAVMGZAWHXKQXDVKVNVO $.
   $}
 
+  ${
+    $d A j $.  $d B j $.  $d R j $.
+    $( The intersection of two subrings is a subring.  (Contributed by AV,
+       15-Feb-2025.) $)
+    subrngin $p |- ( ( A e. ( SubRng ` R ) /\ B e. ( SubRng ` R ) )
+                   -> ( A i^i B ) e. ( SubRng ` R ) ) $=
+      ( vj csubrng cfv wcel wa cpr cint cin intprg wss cv wex prssi prmg adantr
+      subrngintm syl2anc eqeltrrd ) ACEFZGZBUBGZHZABIZJZABKUBABUBUBLUEUFUBMDNUF
+      GDOZUGUBGABUBPUCUHUDDABUBQRCUFDSTUA $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
