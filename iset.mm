@@ -155177,6 +155177,34 @@ $)
       UFUDHZRUIUFUAUDSUKUHUGEANOPQT $.
   $}
 
+  ${
+    $d s x y B $.  $d s x y K $.  $d s x y ph $.  $d s x y L $.
+    subrngpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    subrngpropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    subrngpropd.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    subrngpropd.4 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( .r ` K ) y ) = ( x ( .r ` L ) y ) ) $.
+    $( If two structures have the same ring components (properties), they have
+       the same set of subrings.  (Contributed by AV, 17-Feb-2025.) $)
+    subrngpropd $p |- ( ph -> ( SubRng ` K ) = ( SubRng ` L ) ) $=
+      ( cfv crng wcel co cbs wa wceq cvv eqidd eqid vs csubrng cv cress wss w3a
+      wi simp1 a1i rngpropd imbitrrid wb adantr cin ineq2d simpr ressbasd eqtrd
+      vex biimpa cplusg elinel2 anim12i adantlr ressplusgd oveqdr 3eqtr3d cmulr
+      sylan2 ressmulrg syl2anc eqtr3d sseq2d 3anbi123d pm5.21ndd issubrng eqrdv
+      ex 3bitr4g ) AUAEUBKZFUBKZAELMZEUAUCZUDNZLMZWCEOKZUEZUFZFLMZFWCUDNZLMZWCF
+      OKZUEZUFZWCVTMWCWAMAWBWHWNWHWBUGAWBWEWGUHUIWNWBAWIWIWKWMUHABCDEFGHIJUJZUK
+      AWBWHWNULAWBPZWBWIWEWKWGWMAWBWIULWBWOUMWPBCWCDUNZWDWJWPWQWCWFUNZWDOKAWQWR
+      QWBADWFWCGUOUMWPWCWFWDRELWPWDSZWPWFSAWBUPZWCRMZWPUAUSUIZUQURWPWQWCWLUNZWJ
+      OKAWQXCQWBADWLWCHUOUMWPWCWLWJRFLWPWJSZWPWLSAWBWIWOUTZXBUQURBUCZWQMZCUCZWQ
+      MZPZWPXFDMZXHDMZPZXFXHWDVAKZNZXFXHWJVAKZNZQXGXKXIXLXFWCDVBXHWCDVBVCZWPXMP
+      ZXFXHEVAKZNZXFXHFVAKZNZXOXQAXMYAYCQWBIVDWPXMBCXTXNWPWCXTEWDRLWSWPXTSXBWTV
+      EVFWPXMBCYBXPWPWCYBFWJRLXDWPYBSXBXEVEVFVGVIXJWPXMXFXHWDVHKZNZXFXHWJVHKZNZ
+      QXRXSXFXHEVHKZNZXFXHFVHKZNZYEYGAXMYIYKQWBJVDWPXMBCYHYDWPXAWBYHYDQXBWTWCEW
+      DYHRLWDTYHTVJVKVFWPXMBCYJYFWPXAWIYJYFQXBXEWCFWJYJRLWJTYJTVJVKVFVGVIUJAWGW
+      MULWBAWFWLWCADWFWLGHVLVMUMVNVRVOWCWFEWFTVPWCWLFWLTVPVSVQ $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
