@@ -155151,6 +155151,24 @@ $)
       GDOZUGUBGABUBPUCUHUDDABUBQRCUFDSTUA $.
   $}
 
+  ${
+    $d A a $.  $d R a $.  $d S a $.
+    subsubrng.s $e |- S = ( R |`s A ) $.
+    $( A subring of a subring is a subring.  (Contributed by AV,
+       15-Feb-2025.) $)
+    subsubrng $p |- ( A e. ( SubRng ` R )
+          -> ( B e. ( SubRng ` S ) <-> ( B e. ( SubRng ` R ) /\ B C_ A ) ) ) $=
+      ( csubrng cfv wcel wss wa crng cress cbs adantr wceq eqid subrngss adantl
+      co subrngrng subrngrcl subrngbas sseqtrrd oveq1i ressabsg mpidan eqeltrrd
+      3expa eqtrid syldan sstrd issubrng syl3anbrc jca adantrl ad2antrl eqeltrd
+      simprr sseqtrd impbida ) ACFGZHZBDFGHZBVAHZBAIZJZVBVCJZVDVEVGCKHZCBLSZKHZ
+      BCMGZIVDVBVHVCACUAZNVGDBLSZVIKVBVCVEVMVIOZVGBDMGZAVCBVOIZVBBVODVOPZQRVBAV
+      OOZVCACDEUBZNUCZVBVEJVMCALSZBLSZVIDWABLEUDVBVEVHWBVIOZVLVBVEVHWCABCVAKUEU
+      HUFUIZUJVCVMKHZVBBDVMVMPTRUGVGBAVKVTVBAVKIVCAVKCVKPZQNUKBVKCWFULUMVTUNVBV
+      FJZDKHZWEVPVCVBWHVFACDETNWGVMVIKVBVEVNVDWDUOVDVJVBVEBCVIVIPTUPUQWGBAVOVBV
+      DVEURVBVRVFVSNUSBVODVQULUMUT $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
