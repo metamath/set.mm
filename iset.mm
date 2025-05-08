@@ -155167,6 +155167,14 @@ $)
       HUFUIZUJVCVMKHZVBBDVMVMPTRUGVGBAVKVTVBAVKIVCAVKCVKPZQNUKBVKCWFULUMVTUNVBV
       FJZDKHZWEVPVCVBWHVFACDETNWGVMVIKVBVEVNVDWDUOVDVJVBVEBCVIVIPTUPUQWGBAVOVBV
       DVEURVBVRVFVSNUSBVODVQULUMUT $.
+
+    $( The set of subrings of a subring are the smaller subrings.  (Contributed
+       by AV, 15-Feb-2025.) $)
+    subsubrng2 $p |- ( A e. ( SubRng ` R )
+                       -> ( SubRng ` S ) = ( ( SubRng ` R ) i^i ~P A ) ) $=
+      ( va csubrng cfv wcel cpw cin cv wss subsubrng velpw anbi2i bitr2i bitrdi
+      wa elin eqrdv ) ABFGZHZECFGZUAAIZJZUBEKZUCHUFUAHZUFALZRZUFUEHZAUFBCDMUJUG
+      UFUDHZRUIUFUAUDSUKUHUGEANOPQT $.
   $}
 
 
