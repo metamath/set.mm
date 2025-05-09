@@ -190,6 +190,16 @@ jobs:
       - run: pdflatex -halt-on-error list-set.tex 2>&1 | tee ,latex-output
       # Complain if the pdflatex output says something is invalid
       - run: "! grep 'no output PDF file produced!' ,latex-output"
+      # Check generated LaTeX, to ensure the TeX definitions are okay. iset.mm:
+      - run: python3 scripts/latex_collector.py iset.mm list-iset.tex
+      - run: pdflatex -halt-on-error list-iset.tex 2>&1 | tee ,latex-output
+      # Complain if the pdflatex output says something is invalid
+      - run: "! grep 'no output PDF file produced!' ,latex-output"
+      # Check generated LaTeX, to ensure the TeX definitions are okay. nf.mm:
+      - run: python3 scripts/latex_collector.py nf.mm list-nf.tex
+      - run: pdflatex -halt-on-error list-nf.tex 2>&1 | tee ,latex-output
+      # Complain if the pdflatex output says something is invalid
+      - run: "! grep 'no output PDF file produced!' ,latex-output"
 
   ###########################################################
   smetamath-rs:
