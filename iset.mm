@@ -159104,6 +159104,18 @@ $)
       CUBOUCOUDOUFOPZQTRABDUDUEAUGUIFUGUHUIUJSTRUA $.
   $}
 
+  ${
+    rng2idlsubrng.r $e |- ( ph -> R e. Rng ) $.
+    rng2idlsubrng.i $e |- ( ph -> I e. ( 2Ideal ` R ) ) $.
+    rng2idlsubrng.u $e |- ( ph -> ( R |`s I ) e. Rng ) $.
+    $( A two-sided ideal of a non-unital ring which is a non-unital ring is a
+       subring of the ring.  (Contributed by AV, 20-Feb-2025.)  (Revised by AV,
+       11-Mar-2025.) $)
+    rng2idlsubrng $p |- ( ph -> I e. ( SubRng ` R ) ) $=
+      ( crng wcel cress co cbs cfv csubrng c2idl eqid 2idlss issubrng syl3anbrc
+      wss syl ) ABGHBCIJGHCBKLZSZCBMLHDFACBNLZHUBEUACUCBUAOZUCOPTCUABUDQR $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
