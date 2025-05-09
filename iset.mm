@@ -159120,6 +159120,13 @@ $)
     rng2idlnsg $p |- ( ph -> I e. ( NrmSGrp ` R ) ) $=
       ( csubrng cfv wcel cnsg rng2idlsubrng subrngringnsg syl ) ACBGHICBJHIABCD
       EFKCBLM $.
+
+    $( The zero (additive identity) of a non-unital ring is an element of each
+       two-sided ideal of the ring which is a non-unital ring.  (Contributed by
+       AV, 20-Feb-2025.) $)
+    rng2idl0 $p |- ( ph -> ( 0g ` R ) e. I ) $=
+      ( csubrng cfv wcel csubg c0g rng2idlsubrng subrngsubg eqid subg0cl 3syl )
+      ACBGHICBJHIBKHZCIABCDEFLCBMCBQQNOP $.
   $}
 
 
