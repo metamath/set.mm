@@ -150,8 +150,7 @@ jobs:
       # Install LaTeX so we can test generated LaTeX. We use extended packages:
       # texlive-extra-utils provides pdflatex
       # texlive-fonts-extra provides phonetic.sty
-      # texlive-science provides accents.sty
-      - run: sudo apt-get install texlive-latex-extra texlive-extra-utils texlive-fonts-extra texlive-science
+      - run: sudo apt-get install texlive-latex-extra texlive-extra-utils texlive-fonts-extra
       # Here's an eXample of how to install "extra" LaTeX packages. See:
       # https://tex.stackexchange.com/questions/38978/how-can-i-manually-install-a-latex-package-debian-ubuntu-linux/39259#39259
       # - run: mkdir -p "$HOME/texmf"
