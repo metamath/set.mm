@@ -35,7 +35,6 @@ def collect(database, output):
         output.write("\\usepackage{phonetic} % for \\riota\n")
         output.write("\\usepackage{mathrsfs} % for \\mathscr\n")
         output.write("\\usepackage{mathtools} % loads package amsmath\n")
-        output.write("\\usepackage{accents} % load after mathtools\n")
         output.write("\\usepackage[tmargin=1cm,bmargin=5mm,includefoot,footskip=5mm]{geometry}\n")
         output.write("\\newsavebox\ltmcbox\n")
         output.write("\\begin{document}\n\n")
