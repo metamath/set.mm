@@ -159114,6 +159114,12 @@ $)
     rng2idlsubrng $p |- ( ph -> I e. ( SubRng ` R ) ) $=
       ( crng wcel cress co cbs cfv csubrng c2idl eqid 2idlss issubrng syl3anbrc
       wss syl ) ABGHBCIJGHCBKLZSZCBMLHDFACBNLZHUBEUACUCBUAOZUCOPTCUABUDQR $.
+
+    $( A two-sided ideal of a non-unital ring which is a non-unital ring is a
+       normal subgroup of the ring.  (Contributed by AV, 20-Feb-2025.) $)
+    rng2idlnsg $p |- ( ph -> I e. ( NrmSGrp ` R ) ) $=
+      ( csubrng cfv wcel cnsg rng2idlsubrng subrngringnsg syl ) ACBGHICBJHIABCD
+      EFKCBLM $.
   $}
 
 
