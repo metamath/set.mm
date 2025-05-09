@@ -175590,14 +175590,13 @@ htmldef "[." as
   /* althtmldef "[." as '&#x298F;'; */   /* corner tick */
   /* althtmldef "[." as '[&#803;'; */  /* combining dot below */
   althtmldef "[." as '<B>[</B>'; /* 6-Aug-2018 nm */
-  /* \underaccent is in accents package */
-  latexdef "[." as "\underaccent{\dot}{[}";
+  latexdef "[." as "\d{[}";
 htmldef "]." as
     "<IMG SRC='_drbrack.gif' WIDTH=6 HEIGHT=19 ALT=' ].' TITLE='].'>";
   /* althtmldef "]." as '&#x298E;'; */   /* corner tick */
   /* althtmldef "]." as ']&#803;'; */  /* combining dot below */
   althtmldef "]." as '<B>]</B>'; /* 6-Aug-2018 nm */
-  latexdef "]." as "\underaccent{\dot}{]}";
+  latexdef "]." as "\d{]}";
 htmldef "[_" as
     "<IMG SRC='_ulbrack.gif' WIDTH=7 HEIGHT=19 ALT=' [_' TITLE='[_'>";
   althtmldef "[_" as '<B>&#x298B;</B>'; /* left sq brack w underbar */
