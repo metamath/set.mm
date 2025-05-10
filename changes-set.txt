@@ -84,6 +84,13 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+05-May-25 ghmquskerlem1 [same]  Moved from TA's mathbox to main set.mm
+05-May-25 ghmquskerlem2 [same]  Moved from TA's mathbox to main set.mm
+05-May-25 ghmquskerlem3 [same]  Moved from TA's mathbox to main set.mm
+05-May-25 gicqusker  [same]     Moved from TA's mathbox to main set.mm
+05-May-25 ghmquskerco  [same]   Moved from TA's mathbox to main set.mm
+05-May-25 ecref      [same]     Moved from TA's mathbox to main set.mm
+05-May-25 eqg0el    [same]      Moved from TA's mathbox to main set.mmc
 05-May-25 idomdomd  [same]      Moved from TA's mathbox to main set.mm
 05-May-25 idomringd [same]      Moved from TA's mathbox to main set.mm
 02-May-25 bj-sbnf   sbnf        Moved from BJ's mathbox to main set.mm
