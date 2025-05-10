@@ -159275,6 +159275,16 @@ $)
       VAWMUJUVBWCXIBJUVJUUFXIWSJUVJVMXQJEYIOYMKWNUJWOXIXRXOXTYSWAUVJYIUVCYJFBXS
       UVIUVISUVJSUVGYNWKWBWCFEXLUULUUMYRWPTWCXBYDXEYEXHXJXKXNUBVAYFYQXFXGHFEXLJ
       KYRLVEVFWQWR $.
+
+    $( The coset equivalence relation for a two-sided ideal is compatible with
+       ring multiplication.  (Contributed by Mario Carneiro, 14-Jun-2015.)
+       (Proof shortened by AV, 31-Mar-2025.) $)
+    2idlcpbl $p |- ( ( R e. Ring /\ S e. I ) ->
+        ( ( A E C /\ B E D ) -> ( A .x. B ) E ( C .x. D ) ) ) $=
+      ( wcel wa cfv wbr co eqid crg crng csubg ringrng adantr simpr clidl coppr
+      wi 2idlelb simplbi lidlsubg sylan2 2idlcpblrng syl3anc ) EUAOZFIOZPEUBOZU
+      QFEUCQOZACHRBDHRPABGSCDGSHRUIUPURUQEUDUEUPUQUFUQUPFEUGQZOZUSUQVAFEUHQZUGQ
+      ZOEIFUTVCVBUTTZVBTVCTMUJUKEUTFVDULUMABCDEFGHIJKLMNUNUO $.
   $}
 
 
