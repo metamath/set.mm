@@ -14,6 +14,8 @@ The ones WITH "Notes" may have to be processed manually.
 
 PROPOSED:
 Date      Old       New         Notes
+proposed  fidmfisupp fdmfifsupp merge duplicate theorems
+proposed  grplmulf1o grpladdf1o
 proposed  df-rgmod  df-rlm
 proposed  crglmod   crlm
 proposed  nfiundg   nfiund
@@ -84,16 +86,20 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
-05-May-25 idomdomd  [same]      Moved from TA's mathbox to main set.mm
-05-May-25 idomringd [same]      Moved from TA's mathbox to main set.mm
-02-May-25 bj-sbnf   sbnf        Moved from BJ's mathbox to main set.mm
-01-May-25 rnexd     [same]      Moved from TA's mathbox to main set.mm
-01-May-25 imaexd    [same]      Moved from TA's mathbox to main set.mm
+ 6-May-25 brif1     [same]      Moved from SN's mathbox to main set.mm
+ 5-May-25 idomdomd  [same]      Moved from TA's mathbox to main set.mm
+ 5-May-25 idomringd [same]      Moved from TA's mathbox to main set.mm
+ 2-May-25 bj-sbnf   sbnf        Moved from BJ's mathbox to main set.mm
+ 1-May-25 rnexd     [same]      Moved from TA's mathbox to main set.mm
+ 1-May-25 imaexd    [same]      Moved from TA's mathbox to main set.mm
 30-Apr-25 idomrootle [same]     Moved from SO's mathbox to main set.mm
 30-Apr-25 ply1ascl0 [same]      Moved from TA's mathbox to main set.mm
 30-Apr-25 hashf1dmcdm [same]    Moved from BT's mathbox to main set.mm
 25-Apr-25 mon1pid   [same]      Moved from SO's mathbox to main set.mm
 27-Apr-25 df-cnfld  [same]      Use maps-to notation
+26-Apr-25 fsuppfund [same]      Moved from SN's mathbox to main set.mm
+26-Apr-25 fsuppss   [same]      Moved from SN's mathbox to main set.mm
+26-Apr-25 fsuppsssuppgd [same]  Moved from SN's mathbox to main set.mm
 25-Apr-25 logi      [same]      Moved from SF's mathbox to main set.mm
 25-Apr-25 rspceb2dv [same]      Moved from ZW's mathbox to main set.mm
 25-Apr-25 efcld     [same]      Moved from TA's mathbox to main set.mm
