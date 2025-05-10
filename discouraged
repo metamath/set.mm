@@ -17456,6 +17456,7 @@ New usage of "intidOLD" is discouraged (0 uses).
 New usage of "intnatN" is discouraged (0 uses).
 New usage of "intprOLD" is discouraged (0 uses).
 New usage of "intprgOLD" is discouraged (0 uses).
+New usage of "inxpOLD" is discouraged (0 uses).
 New usage of "iorlid" is discouraged (2 uses).
 New usage of "iotaeq" is discouraged (0 uses).
 New usage of "iotaexOLD" is discouraged (0 uses).
@@ -21004,6 +21005,7 @@ Proof modification of "int3" is discouraged (17 steps).
 Proof modification of "intidOLD" is discouraged (57 steps).
 Proof modification of "intprOLD" is discouraged (112 steps).
 Proof modification of "intprgOLD" is discouraged (80 steps).
+Proof modification of "inxpOLD" is discouraged (115 steps).
 Proof modification of "iotaexOLD" is discouraged (57 steps).
 Proof modification of "iotassuniOLD" is discouraged (35 steps).
 Proof modification of "iotavalOLD" is discouraged (101 steps).
