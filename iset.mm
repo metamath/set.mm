@@ -159240,6 +159240,43 @@ $)
       c0g ) ACBGHICBJHIBPHZCIABCDEFKCBLCBQQMNO $.
   $}
 
+  ${
+    2idlcpblrng.x $e |- X = ( Base ` R ) $.
+    2idlcpblrng.r $e |- E = ( R ~QG S ) $.
+    2idlcpblrng.i $e |- I = ( 2Ideal ` R ) $.
+    2idlcpblrng.t $e |- .x. = ( .r ` R ) $.
+    $( The coset equivalence relation for a two-sided ideal is compatible with
+       ring multiplication.  (Contributed by Mario Carneiro, 14-Jun-2015.)
+       Generalization for non-unital rings and two-sided ideals which are
+       subgroups of the additive group of the non-unital ring.  (Revised by AV,
+       23-Feb-2025.) $)
+    2idlcpblrng $p |- ( ( R e. Rng /\ S e. I /\ S e. ( SubGrp ` R ) )
+                    -> ( ( A E C /\ B E D ) -> ( A .x. B ) E ( C .x. D ) ) ) $=
+      ( crng wcel cfv co eqid syl3anc csubg w3a wbr csg simpl1 wer simpl3 eqger
+      wa syl simprl ersym cabl wss rngabl 3ad2ant1 clidl coppr 2idlelb 3ad2ant2
+      wb simplbi adantr lidlss eqgabl syl2an2r mpbid simp2d simprr simp1d rngcl
+      cgrp wceq rnggrp grpnnncan2 syl13anc rngsubdi c0g subg0cl 3ad2ant3 simp3d
+      syl32anc eqeltrrd cmulr grpsubcl opprmulg rngsubdir eqtrd opprrng simprbi
+      rnglidlmcl cbs oppr0g opprbasg eleqtrd subgsubcl mpbir3and ex ) EOPZFIPZF
+      EUAQPZUBZACHUCZBDHUCZUIZABGRZCDGRZHUCZXBXEUIZXHXFJPZXGJPZXGXFEUDQZRZFPZXI
+      WSAJPZBJPZXJWSWTXAXEUEZXICJPZXOACXLRZFPZXICAHUCZXRXOXTUBZXIACHJXIXAJHUFWS
+      WTXAXEUGZHEJFKLUHUJXBXCXDUKULXBEUMPZXEFJUNZYAYBVAWSWTYDXAEUOUPZXIFEUQQZPZ
+      YEXBYHXEWTWSYHXAWTYHFEURQZUQQZPZEIFYGYJYIYGSZYISZYJSZMUSZVBUTVCZJFYGEKYLV
+      DUJZCAHFEXLJKXLSZLVEVFVGZVHZXIXPDJPZDBXLRZFPZXIXDXPUUAUUCUBZXBXCXDVIXBYDX
+      EYEXDUUDVAYFYQBDHFEXLJKYRLVEVFVGZVJZJEGABKNVKTZXIWSXRUUAXKXQXIXRXOXTYSVJZ
+      XIXPUUAUUCUUEVHZJEGCDKNVKTZXIXGCBGRZXLRZXFUUKXLRZXLRZXMFXIEVLPZXKXJUUKJPZ
+      UUNXMVMXBUUOXEWSWTUUOXAEVNUPVCZUUJUUGXIWSXRXPUUPXQUUHUUFJEGCBKNVKTJEXLXGX
+      FUUKKYRVOVPXIXAUULFPUUMFPUUNFPYCXICUUBGRZUULFXIJEGXLCDBKNYRXQUUHUUIUUFVQX
+      IWSYHEVRQZFPZXRUUCUURFPXQYPXBUUTXEXAWSUUTWTFEUUSUUSSZVSVTVCZUUHXIXPUUAUUC
+      UUEWAJEGYGFCUUBUUSUVAKNYLWKWBWCXIBXSYIWDQZRZUUMFXIUVDXSBGRZUUMXIWSXPXSJPZ
+      UVDUVEVMXQUUFXIUUOXOXRUVFUUQYTUUHJEXLACKYRWETJEUVCGJYIOJBXSKNYMUVCSZWFTXI
+      JEGXLACBKNYRXQYTUUHUUFWGWHXIYIOPZYKYIVRQZFPBYIWLQZPXTUVDFPXBUVHXEWSWTUVHX
+      AEYIYMWIUPVCXBYKXEWTWSYKXAWTYHYKYOWJUTVCXIUUSUVIFXIWSUUSUVIVMXQEYIOUUSYMU
+      VAWMUJUVBWCXIBJUVJUUFXIWSJUVJVMXQJEYIOYMKWNUJWOXIXRXOXTYSWAUVJYIUVCYJFBXS
+      UVIUVISUVJSUVGYNWKWBWCFEXLUULUUMYRWPTWCXBYDXEYEXHXJXKXNUBVAYFYQXFXGHFEXLJ
+      KYRLVEVFWQWR $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
