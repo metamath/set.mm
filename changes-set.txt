@@ -84,6 +84,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 5-May-25 0qs       [same]      Moved from PM's mathbox to main set.mm
+ 5-May-25 qseq1d    [same]      Moved from PM's mathbox to main set.mm
  5-May-25 idomdomd  [same]      Moved from TA's mathbox to main set.mm
  5-May-25 idomringd [same]      Moved from TA's mathbox to main set.mm
  4-May-25 crngcomd  [same]      Moved from SN's mathbox to main set.mm
