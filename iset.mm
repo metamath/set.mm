@@ -158907,6 +158907,37 @@ $)
     $}
   $}
 
+  ${
+    $d I a b c $.  $d L a b c $.  $d R a b c $.  $d U a b c $.
+    rnglidlabl.l $e |- L = ( LIdeal ` R ) $.
+    rnglidlabl.i $e |- I = ( R |`s U ) $.
+    ${
+      $d .0. a b $.
+      rnglidlabl.z $e |- .0. = ( 0g ` R ) $.
+      $( The multiplicative group of a (left) ideal of a non-unital ring is a
+         magma.  (Contributed by AV, 17-Feb-2020.)  Generalization for
+         non-unital rings.  The assumption ` .0. e. U ` is required because a
+         left ideal of a non-unital ring does not have to be a subgroup.
+         (Revised by AV, 11-Mar-2025.) $)
+      rnglidlmmgm $p |- ( ( R e. Rng /\ U e. L /\ .0. e. U )
+                          -> ( mulGrp ` I ) e. Mgm ) $=
+        ( va vb crng wcel cfv co cbs wral wa wceq eqid cvv w3a cmgp cmulr simp1
+        cmgm lidlbas eleq1a mpd 3ad2ant2 eqcomd eleq2d biimpa 3adant1 lidlssbas
+        cv 3jca wi sseld anim1d imp rnglidlmcl syl2an2r simp2 ressmulrg syl2anc
+        oveqd eleq1d adantr mpbird ralrimivva cplusg cress eqeltrid mgpex ismgm
+        wb ressex 3syl mgpbasg syl mgpplusgg eleq12d raleqbidv bitr4d ) AKLZBDL
+        ZEBLZUAZCUBMZUELZIUOZJUOZCUCMZNZCOMZLZJWOPZIWOPZWHWPIJWOWOWHWKWOLZWLWOL
+        ZQZQWPWKWLAUCMZNZWOLZWHWEWODLZEWOLZUAXAWKAOMZLZWTQZXDWHWEXEXFWEWFWGUDZW
+        FWEXEWGWFWOBRXEABCDFGUFZBDWOUGUHUIWFWGXFWEWFWGXFWFBWOEWFWOBXKUJUKULUMUP
+        WHXAXIWHWSXHWTWFWEWSXHUQWGWFWOXGWKABCDFGUNURUIUSUTXGAXBDWOWKWLEHXGSXBSZ
+        FVAVBWHWPXDVPXAWHWNXCWOWHWMXBWKWLWHXBWMWHWFWEXBWMRWEWFWGVCZXJBACXBDKGXL
+        VDVEUJVFVGVHVIVJWHWJWKWLWIVKMZNZWIOMZLZJXPPZIXPPZWRWHCTLZWITLWJXSVPWHWE
+        WFXTXJXMWEWFQCABVLNTGBAKDVQVMVEZCWITWISZVNIJXPWITXNXPSXNSVOVRWHWQXRIWOX
+        PWHXTWOXPRYAWOCWITYBWOSVSVTZWHWPXQJWOXPYCWHWNXOWOXPWHWMXNWKWLWHXTWMXNRY
+        ACWMWITYBWMSWAVTVFYCWBWCWCWDVI $.
+    $}
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
