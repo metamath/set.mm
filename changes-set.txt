@@ -87,6 +87,13 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
  6-May-25 brif1     [same]      Moved from SN's mathbox to main set.mm
+ 6-May-25 bianbi    [same]      Moved from PM's mathbox to main set.mm
+ 6-May-25 andiff    anbiim      Moved from MKU's mathbox to main set.mm
+ 6-May-25 elrnmpt1d [same]      Moved from GS's mathbox to main set.mm
+ 6-May-25 imadisjlnd [same]     Moved from SP's mathbox to main set.mm
+ 6-May-25 fimassd   [same]      Moved from GS's mathbox to main set.mm
+ 6-May-25 fvmptd4   [same]      Moved from SN's mathbox to main set.mm
+ 6-May-25 imaexd    [same]      Moved from TA's mathbox to main set.mm
  5-May-25 idomdomd  [same]      Moved from TA's mathbox to main set.mm
  5-May-25 idomringd [same]      Moved from TA's mathbox to main set.mm
  2-May-25 bj-sbnf   sbnf        Moved from BJ's mathbox to main set.mm
