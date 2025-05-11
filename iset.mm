@@ -159073,6 +159073,40 @@ $)
   $}
 
   ${
+    $d x y B $.  $d x y K $.  $d x y L $.  $d x y ph $.  $d x y W $.
+    lidlpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    lidlpropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    lidlpropd.3 $e |- ( ph -> B C_ W ) $.
+    lidlpropd.4 $e |- ( ( ph /\ ( x e. W /\ y e. W ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    lidlpropd.5 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( .r ` K ) y ) e. W ) $.
+    lidlpropd.6 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( .r ` K ) y ) = ( x ( .r ` L ) y ) ) $.
+    lidlpropdg.k $e |- ( ph -> K e. X ) $.
+    lidlpropdg.l $e |- ( ph -> L e. Y ) $.
+    $( The left ideals and ring span of a ring depend only on the ring
+       components.  Here ` W ` is expected to be either ` B ` (when closure is
+       available) or ` _V ` (when strong equality is available).  (Contributed
+       by Mario Carneiro, 14-Jun-2015.) $)
+    lidlrsppropdg $p |- ( ph ->
+      ( ( LIdeal ` K ) = ( LIdeal ` L ) /\ ( RSpan ` K ) = ( RSpan ` L ) ) ) $=
+      ( cfv wceq syl clidl crsp crglmod clss cvv cbs rlmbasg eqtrd cv wa cplusg
+      wcel rlmplusgg oveqdr 3eqtr3d cmulr cvsca rlmvscag eqeltrrd rlmscabas wfn
+      co rlmfn elexd funfvex funfni sylancr lsspropdg lidlvalg 3eqtr4d lsppropd
+      csca clspn rspvalg jca ) AEUARZFUARZSEUBRZFUBRZSAEUCRZUDRZFUCRZUDRZVPVQAB
+      CDDVTWBGUEUEADEUFRZVTUFRZJAEHULZWDWESPEHUGTUHZADFUFRZWBUFRZKAFIULZWHWISQF
+      IUGTUHZLABUIZGULCUIZGULUJZUJWLWMEUKRZVBWLWMFUKRZVBWLWMVTUKRZVBWLWMWBUKRZV
+      BMAWNBCWOWQAWFWOWQSPEHUMTUNAWNBCWPWRAWJWPWRSQFIUMTUNUOZAWLDULWMDULUJZUJZW
+      LWMEUPRZVBZWLWMVTUQRZVBZGAWTBCXBXDAWFXBXDSPEHURTUNZNUSZXAXCWLWMFUPRZVBXEW
+      LWMWBUQRZVBOXFAWTBCXHXIAWJXHXISQFIURTUNUOZADWDVTVLRUFRZJAWFWDXKSPEHUTTUHZ
+      ADWHWBVLRUFRZKAWJWHXMSQFIUTTUHZAUCUEVAZEUEULVTUEULZVCAEHPVDXPUEEUCEUCVEVF
+      VGZAXOFUEULWBUEULZVCAFIQVDXRUEFUCFUCVEVFVGZVHAWFVPWASPHEVITAWJVQWCSQIFVIT
+      VJAVTVMRZWBVMRZVRVSABCDDVTWBGUEUEWGWKLWSXGXJXLXNXQXSVKAWFVRXTSPHEVNTAWJVS
+      YASQIFVNTVJVO $.
+  $}
+
+  ${
     $d I a b c $.  $d L a b c $.  $d R a b c $.  $d U a b c $.
     rnglidlabl.l $e |- L = ( LIdeal ` R ) $.
     rnglidlabl.i $e |- I = ( R |`s U ) $.
