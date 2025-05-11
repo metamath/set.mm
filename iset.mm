@@ -159500,6 +159500,31 @@ $)
       LMNCJKOABCSDEFSPQR $.
   $}
 
+  ${
+    $d .X. t x y z $.  $d .x. p q $.  $d .x. q t y $.  $d B p q $.
+    $d B t x y z $.  $d I t x y z $.  $d R t x y z $.  $d X t y $.  $d Y t y $.
+    $d p ph q y $.  $d ph t x y z $.
+    qusmul2.h $e |- Q = ( R /s ( R ~QG I ) ) $.
+    qusmul2.v $e |- B = ( Base ` R ) $.
+    qusmul2.p $e |- .x. = ( .r ` R ) $.
+    qusmul2.a $e |- .X. = ( .r ` Q ) $.
+    qusmul2.1 $e |- ( ph -> R e. Ring ) $.
+    qusmul2.2 $e |- ( ph -> I e. ( 2Ideal ` R ) ) $.
+    qusmul2.3 $e |- ( ph -> X e. B ) $.
+    qusmul2.4 $e |- ( ph -> Y e. B ) $.
+    $( Value of the ring operation in a quotient ring.  (Contributed by Thierry
+       Arnoux, 1-Sep-2024.) $)
+    qusmul2 $p |- ( ph -> ( [ X ] ( R ~QG I ) .X. [ Y ] ( R ~QG I ) )
+                           = [ ( X .x. Y ) ] ( R ~QG I ) ) $=
+      ( wcel co cv vt vy vx vz vp cqg cec wceq crg cqus a1i cbs cfv csubg clidl
+      vq wer 2idllidld eqid lidlsubg syl2anc eqger syl c2idl wbr wa wi 2idlcpbl
+      ringcl 3expb sylan caovclg qusmulval mpd3an23 ) AHBRIBRHDGUFSZUGIVOUGFSHI
+      ESVOUGUHPQAVODFECBHIUIUAUBUCUDCDVOUJSUHAJUKBDULUMUHAKUKAGDUNUMRZBVOUQADUI
+      RZGDUOUMZRVPNADGOURDVRGVRUSUTVAVODBGKVOUSZVBVCNAVQGDVDUMZRUCTZUBTZVOVEUDT
+      ZUATZVOVEVFWAWCESWBWDESVOVEVGNOWAWCWBWDDGEVOVTBKVSVTUSLVHVAAUEUPWBWDBBBEA
+      VQUETZBRZUPTZBRZVFWEWGESBRZNVQWFWHWIBDEWEWGKLVIVJVKVLLMVMVN $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
