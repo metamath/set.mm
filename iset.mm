@@ -159559,6 +159559,24 @@ $)
       VQUETZBRZUPTZBRZVFWEWGESBRZNVQWFWHWIBDEWEWGKLVIVJVKVLLMVMVN $.
   $}
 
+  ${
+    $d x y O $.  $d x y R $.
+    crng2idl.i $e |- I = ( LIdeal ` R ) $.
+    ${
+      crngridl.o $e |- O = ( oppR ` R ) $.
+      $( In a commutative ring, the left and right ideals coincide.
+         (Contributed by Mario Carneiro, 14-Jun-2015.) $)
+      crngridl $p |- ( R e. CRing -> I = ( LIdeal ` O ) ) $=
+        ( vx vy ccrg wcel clidl cfv wceq crsp cvv eqid cv wa cplusg cmulr co id
+        cbs eqidd opprbasg oppraddg oveqdr simprl mulrslid slotex adantr simprr
+        wss ssv ovexg syl3anc crngoppr 3expb opprex lidlrsppropdg simpld eqtrid
+        a1i ) AHIZBAJKZCJKZDVCVDVELAMKCMKLVCFGAUBKZACNHNVCVFUCVFACHEVFOZUDVFNUL
+        VCVFUMVBVCFPZNIGPZNIQFGARKZCRKVJACHEVJOUEUFVCVHVFIZVIVFIZQZQVKASKZNIZVL
+        VHVIVNTZNIVCVKVLUGVCVOVMASHUHUIUJVCVKVLUKVHVIVNVFNVFUNUOVCVKVLVPVHVICSK
+        ZTLVFAVQVNCVHVIVGVNOEVQOUPUQVCUAACHEURUSUTVA $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
