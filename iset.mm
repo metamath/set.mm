@@ -159470,6 +159470,29 @@ $)
       VNVAVDVEVGVBVC $.
   $}
 
+  ${
+    $d y z F $.  $d a b c d x y z I $.  $d c d .1. $.  $d a b c d x y z R $.
+    $d a b c d x y z S $.  $d a b c d x y z U $.  $d a b c d x y z X $.
+    qusring.u $e |- U = ( R /s ( R ~QG S ) ) $.
+    qusring.i $e |- I = ( 2Ideal ` R ) $.
+    ${
+      qus1.o $e |- .1. = ( 1r ` R ) $.
+      $( The multiplicative identity of the quotient ring.  (Contributed by
+         Mario Carneiro, 14-Jun-2015.) $)
+      qus1 $p |- ( ( R e. Ring /\ S e. I ) ->
+          ( U e. Ring /\ [ .1. ] ( R ~QG S ) = ( 1r ` U ) ) ) $=
+        ( vd vc va vb wcel cfv co wceq eqid syl cv wbr crg cplusg cqg cmulr cbs
+        cqus a1i csubg wer clidl coppr cin simpr 2idlvalg adantr eleqtrd elin1d
+        wa lidlsubg syldan eqger cnsg wi cabl ringabl eleqtrrd eqgcpbl 2idlcpbl
+        ablnsg simpl qusring2 ) AUAMZBEMZURZAUBNZABUCOZAAUDNZCDAUENZIJKLCAVPUFO
+        PVNFUGVRVRPVNVRQZUGVOQZVQQZHVNBAUHNZMZVRVPUIVLVMBAUJNZMWCVNWDAUKNZUJNZB
+        VNBEWDWFULZVLVMUMVLEWGPVMAEWDWFWEUAWDQZWEQWFQGUNUOUPUQAWDBWHUSUTZVPAVRB
+        VSVPQZVARVNBAVBNZMKSZJSZVPTLSZISZVPTURWLWNVOOWMWOVOOVPTVCVNBWBWKWIVNAVD
+        MZWKWBPVLWPVMAVEUOAVIRVFWLWNWMWOVOVPAVRBVSWJVTVGRWLWNWMWOABVQVPEVRVSWJG
+        WAVHVLVMVJVK $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
