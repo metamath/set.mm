@@ -159452,6 +159452,24 @@ $)
       ZOEIFUTVCVBUTTZVBTVCTMUJUKEUTFVDULUMABCDEFGHIJKLMNUNUO $.
   $}
 
+  ${
+    $d I a b c d $.  $d R a b c d $.  $d S a b c d $.  $d U a b c d $.
+    qus2idrng.u $e |- U = ( R /s ( R ~QG S ) ) $.
+    qus2idrng.i $e |- I = ( 2Ideal ` R ) $.
+    $( The quotient of a non-unital ring modulo a two-sided ideal, which is a
+       subgroup of the additive group of the non-unital ring, is a non-unital
+       ring ( ~ qusring analog).  (Contributed by AV, 23-Feb-2025.) $)
+    qus2idrng $p |- ( ( R e. Rng /\ S e. I /\ S e. ( SubGrp ` R ) )
+                      -> U e. Rng ) $=
+      ( vd vc va vb crng wcel csubg cfv co wceq eqid syl cv wbr w3a cplusg cqus
+      cqg cmulr cbs a1i eqidd wer simp3 eqger cnsg wa wi rngabl 3ad2ant1 ablnsg
+      cabl eleqtrrd eqgcpbl 2idlcpblrng simp1 qusrng ) AKLZBDLZBAMNZLZUAZAUBNZA
+      BUDOZAAUENZCAUFNZGHIJCAVJUCOPVHEUGVHVLUHVIQZVKQZVHVGVLVJUIVDVEVGUJZVJAVLB
+      VLQZVJQZUKRVHBAULNZLISZHSZVJTJSZGSZVJTUMVSWAVIOVTWBVIOVJTUNVHBVFVRVOVHAUR
+      LZVRVFPVDVEWCVGAUOUPAUQRUSVSWAVTWBVIVJAVLBVPVQVMUTRVSWAVTWBABVKVJDVLVPVQF
+      VNVAVDVEVGVBVC $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
