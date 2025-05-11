@@ -152045,6 +152045,35 @@ $)
       BUQEADUJUKZEUSDULUMURJSZKSZISZHSZUTDEUSVCTURVDVEVFVGVADEUSVCTUPUQUNUO $.
   $}
 
+  ${
+    $d R a b p q u $.  $d U a b p q $.  $d V a b p q u x y $.
+    $d .~ a b p q u $.  $d .+ p q u x y $.  $d .x. p q u x y $.
+    $d ph a b p q u x y $.
+    qusrng.u $e |- ( ph -> U = ( R /s .~ ) ) $.
+    qusrng.v $e |- ( ph -> V = ( Base ` R ) ) $.
+    qusrng.p $e |- .+ = ( +g ` R ) $.
+    qusrng.t $e |- .x. = ( .r ` R ) $.
+    qusrng.r $e |- ( ph -> .~ Er V ) $.
+    qusrng.e1 $e |- ( ph ->
+      ( ( a .~ p /\ b .~ q ) -> ( a .+ b ) .~ ( p .+ q ) ) ) $.
+    qusrng.e2 $e |- ( ph ->
+      ( ( a .~ p /\ b .~ q ) -> ( a .x. b ) .~ ( p .x. q ) ) ) $.
+    qusrng.x $e |- ( ph -> R e. Rng ) $.
+    $( The quotient structure of a non-unital ring is a non-unital ring
+       ( ~ qusring2 analog).  (Contributed by AV, 23-Feb-2025.) $)
+    qusrng $p |- ( ph -> U e. Rng ) $=
+      ( wcel vu vx vy cqs cv cec cmpt cvv crng eqid wer cbs cfv wfn basfn elexd
+      funfvex funfni sylancr eqeltrd erex qusval quslem wa adantr simprl eleq2d
+      sylc co wb mpbid simprr rngacl syl3anc mpbird ercpbl rngcl imasrng ) AGCU
+      DBDEFUAGUAUECUFUGZGHIJKAUACDFVSGUHUILMVSUJZAGCUKGUHTCUHTPAGDULUMZUHMAULUH
+      UNDUHTWAUHTZUOADUISUPWBUHDULDULUQURUSUTZGCUHVAVHZSVBMNOAUACDFVSGUHUILMVTW
+      DSVCAUAJUEZKUEZIUEZHUEZBCVSGUHUBUCPWCVTAUBUEZGTZUCUEZGTZVDZVDZWIWKBVIZGTZ
+      WOWATZWNDUITZWIWATZWKWATZWQAWRWMSVEZWNWJWSAWJWLVFAWJWSVJWMAGWAWIMVGVEVKZW
+      NWLWTAWJWLVLAWLWTVJWMAGWAWKMVGVEVKZWABDWIWKWAUJZNVMVNAWPWQVJWMAGWAWOMVGVE
+      VOQVPAUAWEWFWGWHECVSGUHUBUCPWCVTWNWIWKEVIZGTZXEWATZWNWRWSWTXGXAXBXCWADEWI
+      WKXDOVQVNAXFXGVJWMAGWAXEMVGVEVORVPSVR $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
