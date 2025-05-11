@@ -151356,6 +151356,46 @@ $)
       FUGVBUHUPBRGURRGBUIABCUKULAUQBDSESCUQUMUNUO $.
   $}
 
+  ${
+    $d B a b p q $.  $d F a b p q x y $.  $d R p q $.  $d U a b p q x y $.
+    $d V a b p q $.  $d .+ p q $.  $d .0. a b p q x y $.  $d ph a b p q x y $.
+    imasabl.u $e |- ( ph -> U = ( F "s R ) ) $.
+    imasabl.v $e |- ( ph -> V = ( Base ` R ) ) $.
+    imasabl.p $e |- ( ph -> .+ = ( +g ` R ) ) $.
+    imasabl.f $e |- ( ph -> F : V -onto-> B ) $.
+    imasabl.e $e |- ( ( ph /\ ( a e. V /\ b e. V ) /\ ( p e. V /\ q e. V ) )
+      -> ( ( ( F ` a ) = ( F ` p ) /\ ( F ` b ) = ( F ` q ) )
+        -> ( F ` ( a .+ b ) ) = ( F ` ( p .+ q ) ) ) ) $.
+    imasabl.r $e |- ( ph -> R e. Abel ) $.
+    imasabl.z $e |- .0. = ( 0g ` R ) $.
+    $( The image structure of an abelian group is an abelian group ( ~ imasgrp
+       analog).  (Contributed by AV, 22-Feb-2025.) $)
+    imasabl $p |- ( ph -> ( U e. Abel /\ ( F ` .0. ) = ( 0g ` U ) ) ) $=
+      ( wa vx vy cv cplusg cfv wceq cbs wral cgrp wcel c0g cabl ablgrpd imasgrp
+      co wb imasbas eqcomd eleq2d anbi12d adantr wi wfo foelcdmi ex anim12d syl
+      wrex ad3antrrr biimpd imp ablcom syl3anc fveq2d simplll simpr w3a eqeq12d
+      eqid oveqd 3ad2ant1 sylibrd imasaddval 3eqtr4d oveq12 ancoms adantl mpbid
+      exp32 rexlimdva com23 impd syld sylbid ralrimivva jca mpdan isabl2 anbi1i
+      an21 bitri sylibr ) AUAUCZUBUCZEUDUEZUOZXDXCXEUOZUFZUBEUGUEZUHUAXIUHZEUIU
+      JZHFUEEUKUEUFZTZTZEULUJZXLTZAXMXNABCDEFGHIJKLMNOPQADRUMSUNAXMTZXJXMXQXHUA
+      UBXIXIXQXCXIUJZXDXIUJZTZXHXQXTXCBUJZXDBUJZTZXHAXTYCUPXMAXRYAXSYBAXIBXCABX
+      IABDEFGULMNPRUQURZUSAXIBXDYDUSUTVAXQYCKUCZFUEZXCUFZKGVHZLUCZFUEZXDUFZLGVH
+      ZTZXHAYCYMVBZXMAGBFVCZYNPYOYAYHYBYLYOYAYHKGBFXCVDVEYOYBYLLGBFXDVDVEVFVGVA
+      XQYHYLXHXQYGYLXHVBKGXQYEGUJZTZYLYGXHYQYKYGXHVBLGYQYIGUJZTZYKYGXHYSYKYGTZT
+      YFYJXEUOZYJYFXEUOZUFZXHYSUUCYTYSYEYIDUDUEZUOZFUEZYIYEUUDUOZFUEZUUAUUBYSUU
+      EUUGFYSDULUJZYEDUGUEZUJZYIUUJUJZUUEUUGUFAUUIXMYPYRRVIYQUUKYRXQYPUUKAYPUUK
+      VBXMAYPUUKAGUUJYENUSVJVAVKVAYQYRUULXQYRUULVBZYPAUUMXMAYRUULAGUUJYINUSVJVA
+      VAVKUUJUUDDYEYIUUJVSUUDVSZVLVMVNYSAYPYRUUAUUFUFAXMYPYRVOZYQYPYRXQYPVPVAZY
+      QYRVPZABDXEUUDEFGYEYIULIJKLPAYPYRTZJUCZGUJIUCZGUJTZVQYFUUSFUEUFYJUUTFUEUF
+      TYEYICUOZFUEZUUSUUTCUOZFUEZUFZUUFUUSUUTUUDUOZFUEZUFZQAUURUVIUVFUPUVAAUUFU
+      VCUVHUVEAUUEUVBFAUUDCYEYIACUUDOURZVTVNAUVGUVDFAUUDCUUSUUTUVJVTVNVRWAWBZMN
+      RUUNXEVSZWCVMYSAYRYPUUBUUHUFUUOUUQUUPABDXEUUDEFGYIYEULIJKLPUVKMNRUUNUVLWC
+      VMWDVAYTUUCXHUPYSYTUUAXFUUBXGYGYKUUAXFUFYFXCYJXDXEWEWFYJXDYFXCXEWEVRWGWHW
+      IWJWKWJWLWMWNVKWOAXMVPWPWQXPXKXJTZXLTXNXOUVMXLUAUBXIXEEXIVSUVLWRWSXKXJXLW
+      TXAXB $.
+  $}
+
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Rings
