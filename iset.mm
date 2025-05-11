@@ -159491,6 +159491,13 @@ $)
         MZWKWBPVLWPVMAVEUOAVIRVFWLWNWMWOVOVPAVRBVSWJVTVGRWLWNWMWOABVQVPEVRVSWJG
         WAVHVLVMVJVK $.
     $}
+
+    $( If ` S ` is a two-sided ideal in ` R ` , then ` U = R / S ` is a ring,
+       called the quotient ring of ` R ` by ` S ` .  (Contributed by Mario
+       Carneiro, 14-Jun-2015.) $)
+    qusring $p |- ( ( R e. Ring /\ S e. I ) -> U e. Ring ) $=
+      ( crg wcel wa cur cfv cqg co cec wceq eqid qus1 simpld ) AGHBDHICGHAJKZAB
+      LMNCJKOABCSDEFSPQR $.
   $}
 
 
