@@ -36,7 +36,7 @@ def collect(database, output):
         output.write("\\usepackage{mathrsfs} % for \\mathscr\n")
         output.write("\\usepackage{mathtools} % loads package amsmath\n")
         output.write("\\usepackage[tmargin=1cm,bmargin=5mm,includefoot,footskip=5mm]{geometry}\n")
-        output.write("\\newsavebox\ltmcbox\n")
+        output.write("\\newsavebox\\ltmcbox\n")
         output.write("\\begin{document}\n\n")
         output.write("\\begin{multicols}{2}\n")
         output.write("\\setbox\\ltmcbox\\vbox{\\makeatletter\\col@number\\@ne\n")
