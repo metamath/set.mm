@@ -55045,12 +55045,22 @@ $)
 
   ${
     $d x y A $.  $d y B $.  $d x y C $.  $d x y F $.  $d x y R $.  $d x y S $.
+    fovcld.1 $e |- ( ph -> F : ( R X. S ) --> C ) $.
+    $( Closure law for an operation.  (Contributed by NM, 19-Apr-2007.)
+       (Revised by Thierry Arnoux, 17-Feb-2017.) $)
+    fovcld $p |- ( ( ph /\ A e. R /\ B e. S ) -> ( A F B ) e. C ) $=
+      ( vx vy wcel w3a wa cv co wral 3simpc cxp wceq eleq1d wf simprbi 3ad2ant1
+      wfn ffnov syl oveq1 oveq2 rspc2v sylc ) ABEKZCFKZLUKULMINZJNZGOZDKZJFPIEP
+      ZBCGOZDKZAUKULQAUKUQULAEFRZDGUAZUQHVAGUTUDUQIJEFDGUEUBUFUCUPUSBUNGOZDKIJB
+      CEFUMBSUOVBDUMBUNGUGTUNCSVBURDUNCBGUHTUIUJ $.
+  $}
+
+  ${
     fovcl.1 $e |- F : ( R X. S ) --> C $.
-    $( Closure law for an operation.  (Contributed by NM, 19-Apr-2007.) $)
+    $( Closure law for an operation.  (Contributed by NM, 19-Apr-2007.)  (Proof
+       shortened by AV, 9-Mar-2025.) $)
     fovcl $p |- ( ( A e. R /\ B e. S ) -> ( A F B ) e. C ) $=
-      ( vx vy wcel wa cv co wral cxp wf wfn ffnov wceq eleq1d ax-mp oveq1 oveq2
-      simprbi rspc2v mpi ) ADJBEJKHLZILZFMZCJZIENHDNZABFMZCJZDEOZCFPZUKGUOFUNQU
-      KHIDECFRUDUAUJUMAUHFMZCJHIABDEUGASUIUPCUGAUHFUBTUHBSUPULCUHBAFUCTUEUF $.
+      ( wcel co cxp wf a1i fovcld 3anidm12 ) ADHZBEHABFICHOABCDEFDEJCFKOGLMN $.
   $}
 
   ${
