@@ -152031,6 +152031,20 @@ $)
       XIUVHUYPUYJUWMUUPYGVUOUYGXIXJXKXNXOXPXQYBXRYF $.
   $}
 
+  ${
+    $d B a b p q $.  $d F a b p q $.  $d R a b p q $.  $d U a b p q $.
+    $d V a b p q $.
+    imasrngf1.u $e |- U = ( F "s R ) $.
+    imasrngf1.v $e |- V = ( Base ` R ) $.
+    $( The image of a non-unital ring under an injection is a non-unital ring.
+       (Contributed by AV, 22-Feb-2025.) $)
+    imasrngf1 $p |- ( ( F : V -1-1-> B /\ R e. Rng ) -> U e. Rng ) $=
+      ( vq vp va vb wf1 crng wcel cfv wceq a1i eqid cv f1ocpbl crn cplusg cmulr
+      wa cimas co cbs wf1o wfo f1f1orn adantr f1ofo syl simpr imasrng ) EADLZBM
+      NZUDZDUAZBUBOZBBUCOZCDEHIJKCDBUEUFPURFQEBUGOPURGQUTRVARUREUSDUHZEUSDUIUPV
+      BUQEADUJUKZEUSDULUMURJSZKSZISZHSZUTDEUSVCTURVDVEVFVGVADEUSVCTUPUQUNUO $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
