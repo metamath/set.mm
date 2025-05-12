@@ -159607,6 +159607,32 @@ $)
       VFVNVOUTVAACFVLVMLMVBVCMNVDVE $.
   $}
 
+  ${
+    $d I u v x y $.  $d R u v x y $.  $d S u v x y $.  $d U u v x y $.
+    quscrng.u $e |- U = ( R /s ( R ~QG S ) ) $.
+    quscrng.i $e |- I = ( LIdeal ` R ) $.
+    $( The quotient of a commutative ring by an ideal is a commutative ring.
+       (Contributed by Mario Carneiro, 15-Jun-2015.)  (Proof shortened by AV,
+       3-Apr-2025.) $)
+    quscrng $p |- ( ( R e. CRing /\ S e. I ) -> U e. CRing ) $=
+      ( vx vy ccrg wcel wa crg cv cfv co wceq adantr eqid syl2an2r cec vu cmulr
+      vv cbs wral c2idl crngring simpr crng2idl eleqtrd qusring cqg cqs cvv a1i
+      cqus eqidd eqgex qusbas eleq2d anbi12d oveq2 oveq1 eqeq12d crngcom eceq1d
+      ad4ant134 crng csubg w3a ringrng syl lidlsubg sylan 3jca anim1i qusmulrng
+      ancomd 3eqtr4rd ectocld an32s expl sylbird ralrimivv iscrng2 sylanbrc ) A
+      IJZBDJZKZCLJZGMZHMZCUBNZOZWLWKWMOZPZHCUDNZUEGWQUECIJWGALJZWHBAUFNZJZWJAUG
+      ZWIBDWSWGWHUHWGDWSPWHADFUIQUJZABCWSEWSRUKSWIWPGHWQWQWIWKWQJZWLWQJZKWKAUDN
+      ZABULOZUMZJZWLXGJZKWPWIXHXCXIXDWIXGWQWKWIXFACXEUNLCAXFUPOPWIEUOWIXEUQBAID
+      URWGWRWHXAQUSZUTWIXGWQWLXJUTVAWIXHXIWPWKUAMZXFTZWMOZXLWKWMOZPZWPWIXHKUAWL
+      XEXFXGXGRZXLWLPXMWNXNWOXLWLWKWMVBXLWLWKWMVCVDWIXKXEJZXHXOUCMZXFTZXLWMOZXL
+      XSWMOZPXOWIXQKZUCWKXEXFXGXPXSWKPXTXMYAXNXSWKXLWMVCXSWKXLWMVBVDYBXRXEJZKZX
+      KXRAUBNZOZXFTZXRXKYEOZXFTZYAXTYDYFYHXFWGXQYCYFYHPWHXEAYEXKXRXERZYERZVEVGV
+      FYBAVHJZWTBAVINJZVJZYCXQYCKYAYGPWIYNXQWIYLWTYMWGYLWHWGWRYLXAAVKVLQXBWGWRW
+      HYMXAADBFVMVNVOQZYBXQYCWIXQUHVPZXEXFABWMYECXKXRXFRZEYJYKWMRZVQSYBYNYCYCXQ
+      KXTYIPYOYDXQYCYPVRXEXFABWMYECXRXKYQEYJYKYRVQSVSVTWAVTWBWCWDGHWQCWMWQRYRWE
+      WF $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
