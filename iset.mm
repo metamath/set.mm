@@ -150848,6 +150848,14 @@ $)
       UUIYAWMXJXKUVMXTXJXKUVMXJXKUGHITGXJXKWNXJUUKXKUUPURWOWQWPUUGYANGTYEGQZUUB
       XKUUFXTHIYEGWRUVNUUEXSBAHHUVNUUCXOUUDXRXNYEGWSUVNYJXPYKXQDXLYEGWSXMYEGWSW
       TXAWHVPXBXCXDXE $.
+
+    $( Property of a group homomorphism, similar to ~ ismhm .  (Contributed by
+       Mario Carneiro, 7-Mar-2015.) $)
+    isghm3 $p |- ( ( S e. Grp /\ T e. Grp ) -> ( F e. ( S GrpHom T ) <->
+          ( F : X --> Y /\ A. u e. X A. v e. X
+              ( F ` ( u .+ v ) ) = ( ( F ` u ) .+^ ( F ` v ) ) ) ) ) $=
+      ( co wcel cgrp wa cv cfv wral cghm wf wceq isghm baib ) GEFUANOEPOFPOQHIG
+      UBBRZARZCNGSUFGSUGGSDNUCAHTBHTQABCDEFGHIJKLMUDUE $.
   $}
 
 
