@@ -150815,6 +150815,41 @@ $)
       BOPCUGIJQDSTEFCBDARUA $.
   $}
 
+  ${
+    $d s t w u v f S $.  $d s t w u v f T $.  $d u v f t s X $.
+    $d u v f s t .+ $.  $d u v f s t Y $.  $d u v f s t .+^ $.  $d F f u v $.
+    isghm.w $e |- X = ( Base ` S ) $.
+    isghm.x $e |- Y = ( Base ` T ) $.
+    isghm.a $e |- .+ = ( +g ` S ) $.
+    isghm.b $e |- .+^ = ( +g ` T ) $.
+    $( Property of being a homomorphism of groups.  (Contributed by Stefan
+       O'Rear, 31-Dec-2014.) $)
+    isghm $p |- ( F e. ( S GrpHom T ) <->
+        ( ( S e. Grp /\ T e. Grp ) /\ ( F : X --> Y /\ A. u e. X A. v e. X
+              ( F ` ( u .+ v ) ) = ( ( F ` u ) .+^ ( F ` v ) ) ) ) ) $=
+      ( vf wcel cfv wceq wral cbs cvv vs vt vw cghm co cgrp wa wf cv cplusg cab
+      wsbc df-ghm elmpocl wfn basfn elex adantr funfvex funfni sylancr eqeltrid
+      adantl mapex syl2anc wss simpl ss2abi a1i ssexd vex mp2an feq2 raleqbi1dv
+      raleq anbi12d sbcie fveq2 eqtr4di fveqeq2d raleqbidv bitrid abbidv eqeq2d
+      feq2d oveqd feq3d 2ralbidv ovmpog mpd3an3 eleq2d wi wb simpr fexd adantrd
+      ex feq1 fveq1 oveq12d eqeq12d elab3g syl bitrd biadanii ) GEFUDUEZOZEUFOZ
+      FUFOZUGZHIGUHZBUIZAUIZCUEZGPZXLGPZXMGPZDUEZQZAHRBHRZUGZUAUBUFUFUCUIZUBUIZ
+      SPZNUIZUHZXLXMUAUIZUJPZUEZYEPXLYEPZXMYEPZYCUJPZUEZQZAYBRZBYBRZUGZUCYGSPZU
+      LZNUKZEFUDGBAUCUBNUAUMZUNXJXGGHIYEUHZXNYEPZYJYKDUEZQZAHRBHRZUGZNUKZOZYAXJ
+      XFUUHGXHXIUUHTOXFUUHQXJUUHUUBNUKZTXJHTOZITOUUJTOXJHESPZTJXJSTUOZETOZUULTO
+      ZUPXHUUNXIEUFUQURUUOTESESUSUTVAVBZXJIFSPZTKXJUUMFTOZUUQTOZUPXIUURXHFUFUQV
+      CUUSTFSFSUSUTVAVBHITTNVDVEUUHUUJVFXJUUGUUBNUUBUUFVGVHVIVJUAUBEFUFUFYTUUHU
+      DHYDYEUHZUUCYMQZAHRZBHRZUGZNUKTYGEQZYSUVDNYSYRYDYEUHZYNAYRRZBYRRZUGZUVEUV
+      DYQUVIUCYRUUMYGTOYRTOZUPUAVKUVJTYGSYGSUSUTVLYBYRQYFUVFYPUVHYBYRYDYEVMYOUV
+      GBYBYRYNAYBYRVOVNVPVQUVEUVFUUTUVHUVCUVEYRHYDYEUVEYRUULHYGESVRJVSZWEUVEUVG
+      UVBBYRHUVKUVEYNUVAAYRHUVKUVEYIXNYMYEUVEYHCXLXMUVEYHEUJPCYGEUJVRLVSWFVTWAW
+      AVPWBWCYCFQZUVDUUGNUVLUUTUUBUVCUUFUVLYDIYEHUVLYDUUQIYCFSVRKVSWGUVLUVAUUEB
+      AHHUVLYMUUDUUCUVLYLDYJYKUVLYLFUJPDYCFUJVRMVSWFWDWHVPWCUUAWIWJWKXJYAGTOZWL
+      UUIYAWMXJXKUVMXTXJXKUVMXJXKUGHITGXJXKWNXJUUKXKUUPURWOWQWPUUGYANGTYEGQZUUB
+      XKUUFXTHIYEGWRUVNUUEXSBAHHUVNUUCXOUUDXRXNYEGWSUVNYJXPYKXQDXLYEGWSXMYEGWSW
+      TXAWHVPXBXCXDXE $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
