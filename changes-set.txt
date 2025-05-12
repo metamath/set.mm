@@ -14,6 +14,8 @@ The ones WITH "Notes" may have to be processed manually.
 
 PROPOSED:
 Date      Old       New         Notes
+proposed  fidmfisupp fdmfifsupp merge duplicate theorems
+proposed  grplmulf1o grpladdf1o
 proposed  df-rgmod  df-rlm
 proposed  crglmod   crlm
 proposed  nfiundg   nfiund
@@ -90,7 +92,8 @@ Date      Old       New         Notes
 10-May-25 gicqusker  [same]     Moved from TA's mathbox to main set.mm
 10-May-25 ghmquskerco  [same]   Moved from TA's mathbox to main set.mm
 10-May-25 ecref      [same]     Moved from TA's mathbox to main set.mm
-10-May-25 eqg0el    [same]      Moved from TA's mathbox to main set.mmc
+10-May-25 eqg0el    [same]      Moved from TA's mathbox to main set.mm
+ 6-May-25 brif1     [same]      Moved from SN's mathbox to main set.mm
  6-May-25 bianbi    [same]      Moved from PM's mathbox to main set.mm
  6-May-25 andiff    anbiim      Moved from MKU's mathbox to main set.mm
  6-May-25 elrnmpt1d [same]      Moved from GS's mathbox to main set.mm
@@ -108,6 +111,9 @@ Date      Old       New         Notes
 30-Apr-25 hashf1dmcdm [same]    Moved from BT's mathbox to main set.mm
 25-Apr-25 mon1pid   [same]      Moved from SO's mathbox to main set.mm
 27-Apr-25 df-cnfld  [same]      Use maps-to notation
+26-Apr-25 fsuppfund [same]      Moved from SN's mathbox to main set.mm
+26-Apr-25 fsuppss   [same]      Moved from SN's mathbox to main set.mm
+26-Apr-25 fsuppsssuppgd [same]  Moved from SN's mathbox to main set.mm
 25-Apr-25 logi      [same]      Moved from SF's mathbox to main set.mm
 25-Apr-25 rspceb2dv [same]      Moved from ZW's mathbox to main set.mm
 25-Apr-25 efcld     [same]      Moved from TA's mathbox to main set.mm
