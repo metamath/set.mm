@@ -150787,6 +150787,30 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Elementary theory of group homomorphisms
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c GrpHom $.
+
+  $( Extend class notation with the generator of group hom-sets. $)
+  cghm $a class GrpHom $.
+
+  ${
+    $d g s t w x y $.
+    $( A homomorphism of groups is a map between two structures which preserves
+       the group operation.  Requiring both sides to be groups simplifies most
+       theorems at the cost of complicating the theorem which pushes forward a
+       group structure.  (Contributed by Stefan O'Rear, 31-Dec-2014.) $)
+    df-ghm $a |- GrpHom = ( s e. Grp , t e. Grp |-> { g |
+        [. ( Base ` s ) / w ]. ( g : w --> ( Base ` t ) /\
+            A. x e. w A. y e. w ( g ` ( x ( +g ` s ) y ) ) =
+                ( ( g ` x ) ( +g ` t ) ( g ` y ) ) ) } ) $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Abelian groups
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -177748,6 +177772,10 @@ htmldef "SubGrp" as "SubGrp";
 htmldef "NrmSGrp" as "NrmSGrp";
   althtmldef "NrmSGrp" as "NrmSGrp";
   latexdef "NrmSGrp" as "\mathrm{NrmSGrp}";
+htmldef "GrpHom" as
+   " <IMG SRC='_grphom.gif' WIDTH=54 HEIGHT=19 ALT=' GrpHom' TITLE='GrpHom'> ";
+  althtmldef "GrpHom" as " GrpHom ";
+  latexdef "GrpHom" as "\mathrm{GrpHom}";
 htmldef "CMnd" as "CMnd";
   althtmldef "CMnd" as "CMnd";
   latexdef "CMnd" as "\mathrm{CMnd}";
