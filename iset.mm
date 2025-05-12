@@ -150806,6 +150806,13 @@ $)
         [. ( Base ` s ) / w ]. ( g : w --> ( Base ` t ) /\
             A. x e. w A. y e. w ( g ` ( x ( +g ` s ) y ) ) =
                 ( ( g ` x ) ( +g ` t ) ( g ` y ) ) ) } ) $.
+
+    $( Lemma for group homomorphisms.  (Contributed by Stefan O'Rear,
+       31-Dec-2014.) $)
+    reldmghm $p |- Rel dom GrpHom $=
+      ( vs vt vw vg vx vy cgrp cv cbs cfv wf cplusg co wceq wral wa wsbc df-ghm
+      cab cghm reldmmpo ) ABGGCHZBHZIJDHZKEHZFHZAHZLJMUDJUEUDJUFUDJUCLJMNFUBOEU
+      BOPCUGIJQDSTEFCBDARUA $.
   $}
 
 
