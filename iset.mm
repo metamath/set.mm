@@ -159575,6 +159575,13 @@ $)
         VHVIVNTZNIVCVKVLUGVCVOVMASHUHUIUJVCVKVLUKVHVIVNVFNVFUNUOVCVKVLVPVHVICSK
         ZTLVFAVQVNCVHVIVGVNOEVQOUPUQVCUAACHEURUSUTVA $.
     $}
+
+    $( In a commutative ring, a two-sided ideal is the same as a left ideal.
+       (Contributed by Mario Carneiro, 14-Jun-2015.) $)
+    crng2idl $p |- ( R e. CRing -> I = ( 2Ideal ` R ) ) $=
+      ( ccrg wcel coppr cfv clidl cin c2idl inidm eqid crngridl ineq2d 2idlvalg
+      eqtr3id eqtr4d ) ADEZBBAFGZHGZIZAJGZRBBBIUABKRBTBABSCSLZMNPAUBBTSDCUCTLUB
+      LOQ $.
   $}
 
 
