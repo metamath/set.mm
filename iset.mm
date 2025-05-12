@@ -150866,6 +150866,13 @@ $)
       ( vy vx cghm co wcel cgrp wa cbs cfv wf cv cplusg wceq wral isghm simplbi
       eqid simpld ) CABFGHZAIHZBIHZUBUCUDJAKLZBKLZCMDNZENZAOLZGCLUGCLUHCLBOLZGP
       EUEQDUEQJEDUIUJABCUEUFUETUFTUITUJTRSUA $.
+
+    $( A group homomorphism is only defined when the codomain is a group.
+       (Contributed by Stefan O'Rear, 31-Dec-2014.) $)
+    ghmgrp2 $p |- ( F e. ( S GrpHom T ) -> T e. Grp ) $=
+      ( vy vx cghm co wcel cgrp wa cbs cfv wf cv cplusg wceq wral isghm simplbi
+      eqid simprd ) CABFGHZAIHZBIHZUBUCUDJAKLZBKLZCMDNZENZAOLZGCLUGCLUHCLBOLZGP
+      EUEQDUEQJEDUIUJABCUEUFUETUFTUITUJTRSUA $.
   $}
 
 
