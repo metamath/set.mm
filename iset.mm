@@ -150858,6 +150858,16 @@ $)
       UBBRZARZCNGSUFGSUGGSDNUCAHTBHTQABCDEFGHIJKLMUDUE $.
   $}
 
+  ${
+    $d x y F $.  $d x y S $.  $d x y T $.  $d x y X $.  $d x y Y $.
+    $( A group homomorphism is only defined when the domain is a group.
+       (Contributed by Stefan O'Rear, 31-Dec-2014.) $)
+    ghmgrp1 $p |- ( F e. ( S GrpHom T ) -> S e. Grp ) $=
+      ( vy vx cghm co wcel cgrp wa cbs cfv wf cv cplusg wceq wral isghm simplbi
+      eqid simpld ) CABFGHZAIHZBIHZUBUCUDJAKLZBKLZCMDNZENZAOLZGCLUGCLUHCLBOLZGP
+      EUEQDUEQJEDUIUJABCUEUFUETUFTUITUJTRSUA $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
