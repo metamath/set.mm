@@ -159584,6 +159584,29 @@ $)
       LOQ $.
   $}
 
+  ${
+    $d B a b c d $.  $d R a b c d $.  $d S a b c d $.  $d X b d $.  $d Y b d $.
+    $d .~ a b c d $.  $d .xb a b c d $.  $d .x. b d $.
+    qusmulrng.e $e |- .~ = ( R ~QG S ) $.
+    qusmulrng.h $e |- H = ( R /s .~ ) $.
+    qusmulrng.b $e |- B = ( Base ` R ) $.
+    qusmulrng.p $e |- .x. = ( .r ` R ) $.
+    qusmulrng.a $e |- .xb = ( .r ` H ) $.
+    $( Value of the multiplication operation in a quotient ring of a non-unital
+       ring.  Formerly part of proof for ~ quscrng .  Similar to ~ qusmul2 .
+       (Contributed by Mario Carneiro, 15-Jun-2015.)  (Revised by AV,
+       28-Feb-2025.) $)
+    qusmulrng $p |- ( ( ( R e. Rng /\ S e. ( 2Ideal ` R )
+                        /\ S e. ( SubGrp ` R ) ) /\ ( X e. B /\ Y e. B ) )
+                   -> ( [ X ] .~ .xb [ Y ] .~ ) = [ ( X .x. Y ) ] .~ ) $=
+      ( wcel cfv cec co wceq cv vd vb va vc crng c2idl csubg w3a cqus a1i eqger
+      cbs wer 3ad2ant3 simp1 eqid 2idlcpblrng wa anim1i 3anass sylibr rngcl syl
+      qusmulval 3expb ) CUEOZDCUFPZOZDCUGPOZUHZHAOIAOHBQIBQERHIFRBQSVJBCEFGAHIU
+      EUAUBUCUDGCBUIRSVJKUJACULPSVJLUJVIVFABUMVHBCADLJUKUNVFVHVIUOZUCTUDTUBTZUA
+      TZCDFBVGALJVGUPMUQVJVLAOZVMAOZURZURZVFVNVOUHZVLVMFRAOVQVFVPURVRVJVFVPVKUS
+      VFVNVOUTVAACFVLVMLMVBVCMNVDVE $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
