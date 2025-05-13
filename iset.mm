@@ -151208,6 +151208,17 @@ $)
       ( cghm co wcel csubg cfv cmhm csubmnd ghmmhm subgsubm resmhm2 syl2an cgrp
       wa wceq ghmgrp1 subgrcl ghmmhmb eleqtrrd ) DACGHIZEBJKIZSDABLHZABGHZUEDAC
       LHIEBMKIDUGIUFACDNEBOABCDEFPQUEARIBRIUHUGTUFACDUAEBUBABUCQUD $.
+
+    $( Restriction of the codomain of a homomorphism.  (Contributed by Mario
+       Carneiro, 13-Jan-2015.)  (Revised by Mario Carneiro, 18-Jun-2015.) $)
+    resghm2b $p |- ( ( X e. ( SubGrp ` T ) /\ ran F C_ X ) ->
+      ( F e. ( S GrpHom T ) <-> F e. ( S GrpHom U ) ) ) $=
+      ( cfv wcel wa cgrp cghm co wi ghmgrp1 a1i wb cmhm wceq adantr ghmmhmb crn
+      csubg wss csubmnd subgsubm resmhm2b adantl subgrcl sylan2 subggrp 3bitr4d
+      sylan eleq2d expcom pm5.21ndd ) EBUBGHZDUAEUCZIZAJHZDABKLZHZDACKLZHZVAUSM
+      URABDNOVCUSMURACDNOUSURVAVCPUSURIZDABQLZHZDACQLZHZVAVCURVFVHPZUSUPEBUDGHU
+      QVIEBUEABCDEFUFULUGVDUTVEDURUSBJHZUTVERUPVJUQEBUHSABTUIUMVDVBVGDURUSCJHZV
+      BVGRUPVKUQEBCFUJSACTUIUMUKUNUO $.
   $}
 
 
