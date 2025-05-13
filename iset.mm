@@ -151221,6 +151221,16 @@ $)
       BVGRUPVKUQEBCFUJSACTUIUMUKUNUO $.
   $}
 
+  ${
+    ghmghmrn.u $e |- U = ( T |`s ran F ) $.
+    $( A group homomorphism from ` G ` to ` H ` is also a group homomorphism
+       from ` G ` to its image in ` H ` .  (Contributed by Paul Chapman,
+       3-Mar-2008.)  (Revised by AV, 26-Aug-2021.) $)
+    ghmghmrn $p |- ( F e. ( S GrpHom T ) -> F e. ( S GrpHom U ) ) $=
+      ( crn csubg cfv wcel cghm co ghmrn wss ssid resghm2b mpan2 biimpd mpcom
+      wb ) DFZBGHIZDABJKIZDACJKIZABDLUAUBUCUATTMUBUCSTNABCDTEOPQR $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
