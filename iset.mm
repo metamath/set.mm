@@ -147212,6 +147212,12 @@ $)
     submmnd $p |- ( S e. ( SubMnd ` M ) -> H e. Mnd ) $=
       ( csubmnd cfv wcel cbs wss c0g cmnd w3a wb submrcl issubm2 syl ibi simp3d
       eqid ) ACEFGZACHFZIZCJFZAGZBKGZTUBUDUELZTCKGTUFMACNUAABCUCUASUCSDOPQR $.
+
+    $( The base set of a submonoid.  (Contributed by Stefan O'Rear,
+       15-Jun-2015.) $)
+    submbas $p |- ( S e. ( SubMnd ` M ) -> S = ( Base ` H ) ) $=
+      ( csubmnd cfv wcel cbs cmnd cress wceq a1i eqid submrcl submss ressbas2d
+      co ) ACEFGZACHFZBCIBCAJQKRDLSSKRSMZLACNSACTOP $.
   $}
 
   ${
