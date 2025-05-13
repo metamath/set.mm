@@ -151199,6 +151199,17 @@ $)
       ESWHXJXKXOYCXPYDWJXEEDVTXGEDVTWAQWBWCWD $.
   $}
 
+  ${
+    resghm2.u $e |- U = ( T |`s X ) $.
+    $( One direction of ~ resghm2b .  (Contributed by Mario Carneiro,
+       13-Jan-2015.)  (Revised by Mario Carneiro, 18-Jun-2015.) $)
+    resghm2 $p |- ( ( F e. ( S GrpHom U ) /\ X e. ( SubGrp ` T ) ) ->
+      F e. ( S GrpHom T ) ) $=
+      ( cghm co wcel csubg cfv cmhm csubmnd ghmmhm subgsubm resmhm2 syl2an cgrp
+      wa wceq ghmgrp1 subgrcl ghmmhmb eleqtrrd ) DACGHIZEBJKIZSDABLHZABGHZUEDAC
+      LHIEBMKIDUGIUFACDNEBOABCDEFPQUEARIBRIUHUGTUFACDUAEBUBABUCQUD $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
