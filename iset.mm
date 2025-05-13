@@ -150873,6 +150873,15 @@ $)
       ( vy vx cghm co wcel cgrp wa cbs cfv wf cv cplusg wceq wral isghm simplbi
       eqid simprd ) CABFGHZAIHZBIHZUBUCUDJAKLZBKLZCMDNZENZAOLZGCLUGCLUHCLBOLZGP
       EUEQDUEQJEDUIUJABCUEUFUETUFTUITUJTRSUA $.
+
+    ghmf.x $e |- X = ( Base ` S ) $.
+    ghmf.y $e |- Y = ( Base ` T ) $.
+    $( A group homomorphism is a function.  (Contributed by Stefan O'Rear,
+       31-Dec-2014.) $)
+    ghmf $p |- ( F e. ( S GrpHom T ) -> F : X --> Y ) $=
+      ( vy vx cghm co wcel wf cv cplusg cfv wral cgrp wa eqid wceq isghm simpld
+      simprbi ) CABJKLZDECMZHNZINZAOPZKCPUGCPUHCPBOPZKUAIDQHDQZUEARLBRLSUFUKSIH
+      UIUJABCDEFGUITUJTUBUDUC $.
   $}
 
 
