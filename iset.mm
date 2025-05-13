@@ -151352,6 +151352,27 @@ $)
       0nsg ) CABFGHZDIZBJKHZCLUAMAJKHTBNHUBABCOBDESPABCUAQR $.
   $}
 
+  ${
+    ghmeqker.b $e |- B = ( Base ` S ) $.
+    ghmeqker.z $e |- .0. = ( 0g ` T ) $.
+    ghmeqker.k $e |- K = ( `' F " { .0. } ) $.
+    ghmeqker.m $e |- .- = ( -g ` S ) $.
+    $( Two source points map to the same destination point under a group
+       homomorphism iff their difference belongs to the kernel.  (Contributed
+       by Stefan O'Rear, 31-Dec-2014.) $)
+    ghmeqker $p |- ( ( F e. ( S GrpHom T ) /\ U e. B /\ V e. B ) ->
+      ( ( F ` U ) = ( F ` V ) <-> ( U .- V ) e. K ) ) $=
+      ( co wcel cfv wceq csn eqid 3ad2ant1 cghm w3a c0g ccnv cima sneqi imaeq2i
+      wa csg eqtri eleq2i wfn wb cbs ghmf ffnd fniniseg syl bitrid cgrp ghmgrp1
+      grpsubcl syl3an1 biantrurd ghmsub eqeq1d ghmgrp2 wf simp2 ffvelcdmd simp3
+      bitr3d grpsubeq0 syl3anc 3bitrrd ) EBCUANOZDAOZHAOZUBZDHGNZFOZVTAOZVTEPZC
+      UCPZQZUHZDEPZHEPZCUIPZNZWDQZWGWHQZWAVTEUDZWDRZUEZOZVSWFFWOVTFWMIRZUEWOLWQ
+      WNWMIWDKUFUGUJUKVSEAULZWPWFUMVPVQWRVRVPACUNPZEBCEAWSJWSSZUOZUPTAWDVTEUQUR
+      USVSWEWFWKVSWBWEVPBUTOVQVRWBBCEVAABGDHJMVBVCVDVSWCWJWDABCDEGWIHJMWISZVEVF
+      VLVSCUTOZWGWSOWHWSOWKWLUMVPVQXCVRBCEVGTVSAWSDEVPVQAWSEVHVRXATZVPVQVRVIVJV
+      SAWSHEXDVPVQVRVKVJWSCWIWGWHWDWTWDSXBVMVNVO $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
