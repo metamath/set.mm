@@ -150999,6 +150999,29 @@ $)
       $.
   $}
 
+  ${
+    ghmmulg.b $e |- B = ( Base ` G ) $.
+    ghmmulg.s $e |- .x. = ( .g ` G ) $.
+    ghmmulg.t $e |- .X. = ( .g ` H ) $.
+    $( A group homomorphism preserves group multiples.  (Contributed by Mario
+       Carneiro, 14-Jun-2015.) $)
+    ghmmulg $p |- ( ( F e. ( G GrpHom H ) /\ N e. ZZ /\ X e. B ) ->
+        ( F ` ( N .x. X ) ) = ( N .X. ( F ` X ) ) ) $=
+      ( co wcel cz cfv wceq syl syl3anc eqid eqtr3d cghm w3a cr cneg cn wa cmhm
+      ghmmhm mhmmulg syl3an1 3expa an32s 3adantl2 cminusg simpl1 nnnn0 ad2antll
+      cn0 simpl3 fveq2d cgrp ghmgrp1 nnz mulgcl ghminv syl2anc cbs ghmgrp2 ghmf
+      wf ffvelcdmd mulgneg 3eqtr4d simprl recnd negnegd wo simp2 elznn0nn sylib
+      oveq1d mpjaodan ) DEFUALMZGNMZHAMZUBZGURMZGHBLZDOZGHDOZCLZPZGUCMZGUDZUEMZ
+      UFZWCWEWGWLWDWCWGWEWLWCWGWEWLWCDEFUGLMZWGWEWLEFDUHZABCDEFGHIJKUIUJUKULUMW
+      FWPUFZWNUDZWJCLZWIWKWSWNHBLZEUNOZOZDOZXAWIWSXBDOZFUNOZOZWNWJCLZXGOZXEXAWS
+      XFXIXGWSWQWNURMZWEXFXIPWSWCWQWCWDWEWPUOZWRQWOXKWFWMWNUPUQWCWDWEWPUSZABCDE
+      FWNHIJKUIRUTWSWCXBAMZXEXHPXLWSEVAMZWNNMZWEXNWSWCXOXLEFDVBQZWOXPWFWMWNVCUQ
+      ZXMABEWNHIJVDRAEFDXCXGXBIXCSZXGSZVEVFWSFVAMZXPWJFVGOZMXAXJPWSWCYAXLEFDVHQ
+      XRWSAYBHDWSWCAYBDVJXLEFDAYBIYBSZVIQXMVKYBCFXGWNWJYCKXTVLRVMWSXDWHDWSWTHBL
+      ZXDWHWSXOXPWEYDXDPXQXRXMABEXCWNHIJXSVLRWSWTGHBWSGWSGWFWMWOVNVOVPZWATUTTWS
+      WTGWJCYEWATWFWDWGWPVQWCWDWEVRGVSVTWB $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
