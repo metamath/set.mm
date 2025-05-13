@@ -150973,6 +150973,19 @@ $)
       QAUPBCIIRUHUICBDEFGHIJKLMNUJUK $.
   $}
 
+  ${
+    $d F x y $.  $d S f x y $.  $d T f x y $.
+    $( A group homomorphism is a monoid homomorphism.  (Contributed by Stefan
+       O'Rear, 7-Mar-2015.) $)
+    ghmmhm $p |- ( F e. ( S GrpHom T ) -> F e. ( S MndHom T ) ) $=
+      ( vx vy cghm co wcel cmnd cbs cfv wf cv cplusg wceq wral c0g grpmndd eqid
+      w3a cmhm ghmgrp1 ghmf ghmlin 3expb ralrimivva ghmid 3jca ismhm syl21anbrc
+      ghmgrp2 ) CABFGHZAIHBIHAJKZBJKZCLZDMZEMZANKZGCKUPCKUQCKBNKZGOZEUMPDUMPZAQ
+      KZCKBQKZOZTCABUAGHULAABCUBRULBABCUKRULUOVAVDABCUMUNUMSZUNSZUCULUTDEUMUMUL
+      UPUMHUQUMHUTURUSABUPCUQUMVEURSZUSSZUDUEUFABCVBVCVBSZVCSZUGUHDEUMUNURUSABC
+      VCVBVEVFVGVHVIVJUIUJ $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
