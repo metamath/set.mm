@@ -151070,6 +151070,29 @@ $)
       UHAAUQUIURAUJAAUQUKULUMEDVAVABBUQAACCVOVOUNUO $.
   $}
 
+  ${
+    $d S a b $.  $d X a b $.  $d F a b $.  $d T a b $.  $d U a b $.
+    resghm.u $e |- U = ( S |`s X ) $.
+    $( Restriction of a homomorphism to a subgroup.  (Contributed by Stefan
+       O'Rear, 31-Dec-2014.) $)
+    resghm $p |- ( ( F e. ( S GrpHom T ) /\ X e. ( SubGrp ` S ) ) ->
+        ( F |` X ) e. ( U GrpHom T ) ) $=
+      ( va vb co wcel cfv wa cplusg cbs eqid cgrp adantl wf wceq a1i cghm csubg
+      cres subggrp ghmgrp2 adantr ghmf subgss fssres syl2an cress eqidd subgrcl
+      wss ressbas2d feq2d mpbid cv wb anbi12d syl biimpar simpll sselda adantrr
+      eleq2 adantrl ghmlin syl3anc id ressplusgd ad2antlr fveq2d subgcl adantll
+      oveqd 3expb fvresd eqtr3d fvres oveqan12d 3eqtr4d syldan isghmd ) DABUAIJ
+      ZEAUBKZJZLZGHCMKZBMKZCBDEUCZCNKZBNKZWLOWMOZWIOWJOZWGCPJWEEACFUDQWEBPJWGAB
+      DUEUFWHEWMWKRZWLWMWKRWEANKZWMDREWQUNZWPWGABDWQWMWQOZWNUGWQEAWSUHZWQWMEDUI
+      UJWHEWLWMWKWHEWQCAPCAEUKISZWHFTWHWQULWGAPJWEEAUMZQWGWRWEWTQZUOZUPUQWHGURZ
+      WLJZHURZWLJZLZXEEJZXGEJZLZXEXGWIIZWKKZXEWKKZXGWKKZWJIZSWHXLXIWHEWLSZXLXIU
+      SXDXRXJXFXKXHEWLXEVFEWLXGVFUTVAVBWHXLLZXEXGAMKZIZDKZXEDKZXGDKZWJIZXNXQXSW
+      EXEWQJZXGWQJZYBYESWEWGXLVCWHXJYFXKWHEWQXEXCVDVEWHXKYGXJWHEWQXGXCVDVGXTWJA
+      BXEDXGWQWSXTOZWOVHVIXSYAWKKXNYBXSYAXMWKXSXTWIXEXGWGXTWISWEXLWGEXTACWFPXAW
+      GFTWGXTULWGVJXBVKVLVPVMXSYAEDWGXLYAEJZWEWGXJXKYIXTEAXEXGYHVNVQVOVRVSXLXQY
+      ESWHXJXKXOYCXPYDWJXEEDVTXGEDVTWAQWBWCWD $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
