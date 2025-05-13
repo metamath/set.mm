@@ -150953,6 +150953,26 @@ $)
       WJWKKTVDVE $.
   $}
 
+  ${
+    $d ph x y $.  $d F x y $.  $d S x y $.  $d T x y $.  $d .+ x y $.
+    $d .+^ x y $.  $d X x y $.  $d Y x y $.
+    isghmd.x $e |- X = ( Base ` S ) $.
+    isghmd.y $e |- Y = ( Base ` T ) $.
+    isghmd.a $e |- .+ = ( +g ` S ) $.
+    isghmd.b $e |- .+^ = ( +g ` T ) $.
+    isghmd.s $e |- ( ph -> S e. Grp ) $.
+    isghmd.t $e |- ( ph -> T e. Grp ) $.
+    isghmd.f $e |- ( ph -> F : X --> Y ) $.
+    isghmd.l $e |- ( ( ph /\ ( x e. X /\ y e. X ) ) -> ( F ` ( x .+ y ) ) =
+          ( ( F ` x ) .+^ ( F ` y ) ) ) $.
+    $( Deduction for a group homomorphism.  (Contributed by Stefan O'Rear,
+       4-Feb-2015.) $)
+    isghmd $p |- ( ph -> F e. ( S GrpHom T ) ) $=
+      ( wcel co cgrp wf cv cfv wceq wral cghm ralrimivva jca isghm syl21anbrc
+      wa ) AFUASGUASIJHUBZBUCZCUCZDTHUDUNHUDUOHUDETUEZCIUFBIUFZULHFGUGTSOPAUMUQ
+      QAUPBCIIRUHUICBDEFGHIJKLMNUJUK $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
