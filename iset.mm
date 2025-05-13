@@ -151231,6 +151231,14 @@ $)
       wb ) DFZBGHIZDABJKIZDACJKIZABDLUAUBUCUATTMUBUCSTNABCDTEOPQR $.
   $}
 
+  $( The composition of group homomorphisms is a homomorphism.  (Contributed by
+     Mario Carneiro, 12-Jun-2015.) $)
+  ghmco $p |- ( ( F e. ( T GrpHom U ) /\ G e. ( S GrpHom T ) ) ->
+      ( F o. G ) e. ( S GrpHom U ) ) $=
+    ( cghm co wcel wa ccom cmhm ghmmhm syl2an cgrp wceq ghmgrp1 ghmgrp2 ghmmhmb
+    mhmco syl2anr eleqtrrd ) DBCFGHZEABFGHZIDEJZACKGZACFGZUBDBCKGHEABKGHUDUEHUC
+    BCDLABELABCDESMUCANHCNHUFUEOUBABEPBCDQACRTUA $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
