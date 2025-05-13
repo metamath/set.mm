@@ -150902,6 +150902,20 @@ $)
       VBFVIGEAUMUNWBVLVEVDBVIGFUJUOULUPUQUR $.
   $}
 
+  ${
+    ghmid.y $e |- Y = ( 0g ` S ) $.
+    ghmid.z $e |- .0. = ( 0g ` T ) $.
+    $( A homomorphism of groups preserves the identity.  (Contributed by Stefan
+       O'Rear, 31-Dec-2014.) $)
+    ghmid $p |- ( F e. ( S GrpHom T ) -> ( F ` Y ) = .0. ) $=
+      ( cghm co wcel cfv cplusg wceq cbs cgrp ghmgrp1 eqid grpidcl syl syl2anc
+      ghmlin mpd3an23 grplid fveq2d eqtr3d ghmgrp2 ffvelcdmd grpid mpbid eqcomd
+      wb ghmf ) CABHIJZEDCKZUMUNUNBLKZIZUNMZEUNMZUMDDALKZIZCKZUPUNUMDANKZJZVCVA
+      UPMUMAOJZVCABCPZVBADVBQZFRSZVGUSUOABDCDVBVFUSQZUOQZUAUBUMUTDCUMVDVCUTDMVE
+      VGVBUSADDVFVHFUCTUDUEUMBOJUNBNKZJUQURUKABCUFUMVBVJDCABCVBVJVFVJQZULVGUGVJ
+      UOBUNEVKVIGUHTUIUJ $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
