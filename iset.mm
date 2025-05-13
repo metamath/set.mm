@@ -151045,6 +151045,17 @@ $)
       ABCWDEFDWJWPWHBWTXGYOUUDWERWF $.
   $}
 
+  ${
+    0ghm.z $e |- .0. = ( 0g ` N ) $.
+    0ghm.b $e |- B = ( Base ` M ) $.
+    $( The constant zero linear function between two groups.  (Contributed by
+       Stefan O'Rear, 5-Sep-2015.) $)
+    0ghm $p |- ( ( M e. Grp /\ N e. Grp ) ->
+        ( B X. { .0. } ) e. ( M GrpHom N ) ) $=
+      ( cgrp wcel wa csn cxp cmhm cghm cmnd grpmnd 0mhm syl2an ghmmhmb eleqtrrd
+      co ) BGHZCGHZIADJKZBCLTZBCMTUABNHCNHUCUDHUBBOCOABCDEFPQBCRS $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
