@@ -150916,6 +150916,24 @@ $)
       UOBUNEVKVIGUHTUIUJ $.
   $}
 
+  ${
+    ghminv.b $e |- B = ( Base ` S ) $.
+    ghminv.y $e |- M = ( invg ` S ) $.
+    ghminv.z $e |- N = ( invg ` T ) $.
+    $( A homomorphism of groups preserves inverses.  (Contributed by Stefan
+       O'Rear, 31-Dec-2014.) $)
+    ghminv $p |- ( ( F e. ( S GrpHom T ) /\ X e. B ) ->
+        ( F ` ( M ` X ) ) = ( N ` ( F ` X ) ) ) $=
+      ( co wcel cfv wceq cplusg c0g cgrp eqid sylan adantr cghm ghmgrp1 grprinv
+      wa fveq2d grpinvcl ghmlin mpd3an3 ghmid 3eqtr3d cbs wb ghmgrp2 ffvelcdmda
+      ghmf wf ffvelcdmd grpinvid1 syl3anc mpbird eqcomd ) DBCUAKLZGALZUDZGDMZFM
+      ZGEMZDMZVDVFVHNZVEVHCOMZKZCPMZNZVDGVGBOMZKZDMZBPMZDMZVKVLVDVOVQDVBBQLZVCV
+      OVQNBCDUBZAVNBEGVQHVNRZVQRZIUCSUEVBVCVGALZVPVKNVBVSVCWCVTABEGHIUFSZVNVJBC
+      GDVGAHWAVJRZUGUHVBVRVLNVCBCDVQVLWBVLRZUITUJVDCQLZVECUKMZLVHWHLVIVMULVBWGV
+      CBCDUMTVBAWHGDBCDAWHHWHRZUOZUNVDAWHVGDVBAWHDUPVCWJTWDUQWHVJCFVEVHVLWIWEWF
+      JURUSUTVA $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
