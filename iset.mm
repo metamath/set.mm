@@ -151321,6 +151321,27 @@ $)
       PUUQUUJXMXKXBWSXLXKWTWJVDVTWDUKWAWEWFGHWTWPBXBEFUUDUUCWGWH $.
   $}
 
+  ${
+    $d x y F $.  $d x y S $.  $d x y T $.  $d x y V $.
+    $( The inverse image of a normal subgroup under a homomorphism is normal.
+       (Contributed by Mario Carneiro, 4-Feb-2015.) $)
+    ghmnsgpreima $p |- ( ( F e. ( S GrpHom T ) /\ V e. ( NrmSGrp ` T ) ) ->
+        ( `' F " V ) e. ( NrmSGrp ` S ) ) $=
+      ( vx vy co wcel cnsg cfv wa csubg cv cplusg csg wral cbs eqid syl syl3anc
+      cghm ccnv cima nsgsubg ghmpreima sylan2 ghmgrp1 ad2antrr simprl simprr wb
+      cgrp wf simpll ghmf ffnd elpreima mpbid simpld grpcl grpsubcl wceq ghmsub
+      wfn ghmlin oveq1d eqtrd simplr ffvelcdmd simprd nsgconj eqeltrd mpbir2and
+      ralrimivva isnsg3 sylanbrc ) CABUAGHZDBIJHZKZCUBDUCZALJHZEMZFMZANJZGZWBAO
+      JZGZVTHZFVTPEAQJZPVTAIJHVRVQDBLJHWADBUDABCDUEUFVSWHEFWIVTVSWBWIHZWCVTHZKZ
+      KZWHWGWIHZWGCJZDHZWMAULHZWEWIHZWJWNVQWQVRWLABCUGUHZWMWQWJWCWIHZWRWSVSWJWK
+      UIZWMWTWCCJZDHZWMWKWTXCKZVSWJWKUJWMCWIVDZWKXDUKWMWIBQJZCWMVQWIXFCUMVQVRWL
+      UNZABCWIXFWIRZXFRZUOSZUPZWIWCDCUQSURZUSZWIWDAWBWCXHWDRZUTTZXAWIAWFWEWBXHW
+      FRZVATWMWOWBCJZXBBNJZGZXQBOJZGZDWMWOWECJZXQXTGZYAWMVQWRWJWOYCVBXGXOXAWIAB
+      WECWFXTWBXHXPXTRZVCTWMYBXSXQXTWMVQWJWTYBXSVBXGXAXMWDXRABWBCWCWIXHXNXRRZVE
+      TVFVGWMVRXQXFHXCYADHVQVRWLVHWMWIXFWBCXJXAVIWMWTXCXLVJXQXBXRDBXTXFXIYEYDVK
+      TVLWMXEWHWNWPKUKXKWIWGDCUQSVMVNEFWDVTAWFWIXHXNXPVOVP $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
