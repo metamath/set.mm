@@ -147306,6 +147306,32 @@ $)
   $}
 
   ${
+    $d F x y $.  $d S x y $.  $d T x y $.  $d U x y $.  $d X x y $.
+    resmhm.u $e |- U = ( S |`s X ) $.
+    $( Restriction of a monoid homomorphism to a submonoid is a homomorphism.
+       (Contributed by Mario Carneiro, 12-Mar-2015.) $)
+    resmhm $p |- ( ( F e. ( S MndHom T ) /\ X e. ( SubMnd ` S ) ) ->
+        ( F |` X ) e. ( U MndHom T ) ) $=
+      ( vx vy co wcel cfv wa cmnd cbs wf cplusg wceq wral eqid adantl cmhm cres
+      csubmnd cv c0g w3a mhmrcl2 submmnd anim12ci wss mhmf submss fssres syl2an
+      cress a1i eqidd submrcl ressbas2d feq2d mpbid simpll simprl sseldd simprr
+      ad2antlr mhmlin syl3anc submcl 3expb adantll oveqan12d 3eqtr4d ralrimivva
+      fvresd fvres id ressplusgd oveqd fveqeq2d raleqbidv subm0cl fveq2d adantr
+      subm0 mhm0 3eqtr3d 3jca ismhm sylanbrc ) DABUAIJZEAUCKZJZLZCMJZBMJZLCNKZB
+      NKZDEUBZOZGUDZHUDZCPKZIZWSKXAWSKZXBWSKZBPKZIZQZHWQRZGWQRZCUEKZWSKZBUEKZQZ
+      UFWSCBUAIJWKWPWMWOABDUGECAFUHUIWNWTXKXOWNEWRWSOZWTWKANKZWRDOEXQUJZXPWMXQW
+      RABDXQSZWRSZUKXQEAXSULZXQWREDUMUNWNEWQWRWSWNEXQCAMCAEUOIQZWNFUPWNXQUQWMAM
+      JWKEAURZTWMXRWKYATUSZUTVAWNXAXBAPKZIZWSKZXHQZHERZGERXKWNYHGHEEWNXAEJZXBEJ
+      ZLZLZYFDKZXADKZXBDKZXGIZYGXHYMWKXAXQJXBXQJYNYQQWKWMYLVBYMEXQXAWMXRWKYLYAV
+      FZWNYJYKVCVDYMEXQXBYRWNYJYKVEVDXQYEXGABDXAXBXSYESZXGSZVGVHYMYFEDWMYLYFEJZ
+      WKWMYJYKUUAYEEAXAXBYSVIVJVKVOYLXHYQQWNYJYKXEYOXFYPXGXAEDVPXBEDVPVLTVMVNWN
+      YIXJGEWQYDWNYHXIHEWQYDWNYFXDXHWSWNYEXCXAXBWMYEXCQWKWMEYEACWLMYBWMFUPWMYEU
+      QWMVQYCVRTVSVTWAWAVAWNAUEKZWSKUUBDKZXMXNWNUUBEDWMUUBEJWKEAUUBUUBSZWBTVOWN
+      UUBXLWSWMUUBXLQWKECAUUBFUUDWETWCWKUUCXNQWMABDXNUUBUUDXNSZWFWDWGWHGHWQWRXC
+      XGCBWSXNXLWQSXTXCSYTXLSUUEWIWJ $.
+  $}
+
+  ${
     $d x y F $.  $d x y G $.  $d x y S $.  $d x y T $.  $d x y U $.
     $( The composition of monoid homomorphisms is a homomorphism.  (Contributed
        by Mario Carneiro, 12-Jun-2015.) $)
