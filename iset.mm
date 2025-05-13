@@ -147218,6 +147218,14 @@ $)
     submbas $p |- ( S e. ( SubMnd ` M ) -> S = ( Base ` H ) ) $=
       ( csubmnd cfv wcel cbs cmnd cress wceq a1i eqid submrcl submss ressbas2d
       co ) ACEFGZACHFZBCIBCAJQKRDLSSKRSMZLACNSACTOP $.
+
+    subm0.z $e |- .0. = ( 0g ` M ) $.
+    $( Submonoids have the same identity.  (Contributed by Mario Carneiro,
+       7-Mar-2015.) $)
+    subm0 $p |- ( S e. ( SubMnd ` M ) -> .0. = ( 0g ` H ) ) $=
+      ( csubmnd cfv wcel cmnd cbs wss wceq submrcl submmnd eqid subm0cl submnd0
+      c0g submss syl22anc ) ACGHICJIBJIACKHZLDAIDBSHMACNABCEOUBACUBPZTACDFQUBAC
+      BDUCFERUA $.
   $}
 
   ${
