@@ -151056,6 +151056,20 @@ $)
       co ) BGHZCGHZIADJKZBCLTZBCMTUABNHCNHUCUDHUBBOCOABCDEFPQBCRS $.
   $}
 
+  ${
+    $d B a b $.  $d G a b $.
+    idghm.b $e |- B = ( Base ` G ) $.
+    $( The identity homomorphism on a group.  (Contributed by Stefan O'Rear,
+       31-Dec-2014.) $)
+    idghm $p |- ( G e. Grp -> ( _I |` B ) e. ( G GrpHom G ) ) $=
+      ( va vb cgrp wcel cid cres wf cv cplusg cfv co wceq wral wa cghm fvresi
+      id eqid grpcl 3expb syl oveqan12d adantl eqtr4d ralrimivva wf1o f1oi f1of
+      ax-mp jctil isghm syl21anbrc ) BFGZUPUPAAHAIZJZDKZEKZBLMZNZUQMZUSUQMZUTUQ
+      MZVANZOZEAPDAPZQUQBBRNGUPTZVIUPVHURUPVGDEAAUPUSAGZUTAGZQZQZVCVBVFVMVBAGZV
+      CVBOUPVJVKVNAVABUSUTCVAUAZUBUCAVBSUDVLVFVBOUPVJVKVDUSVEUTVAAUSSAUTSUEUFUG
+      UHAAUQUIURAUJAAUQUKULUMEDVAVABBUQAACCVOVOUNUO $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
