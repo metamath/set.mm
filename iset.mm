@@ -151342,6 +151342,16 @@ $)
       TVLWMXEWHWNWPKUKXKWIWGDCUQSVMVNEFWDVTAWFWIXHXNXPVOVP $.
   $}
 
+  ${
+    ghmker.1 $e |- .0. = ( 0g ` T ) $.
+    $( The kernel of a homomorphism is a normal subgroup.  (Contributed by
+       Mario Carneiro, 4-Feb-2015.) $)
+    ghmker $p |- ( F e. ( S GrpHom T ) ->
+        ( `' F " { .0. } ) e. ( NrmSGrp ` S ) ) $=
+      ( cghm co wcel csn cnsg cfv ccnv cima cgrp ghmgrp2 syl ghmnsgpreima mpdan
+      0nsg ) CABFGHZDIZBJKHZCLUAMAJKHTBNHUBABCOBDESPABCUAQR $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
