@@ -147206,6 +147206,15 @@ $)
   $}
 
   ${
+    submmnd.h $e |- H = ( M |`s S ) $.
+    $( Submonoids are themselves monoids under the given operation.
+       (Contributed by Mario Carneiro, 7-Mar-2015.) $)
+    submmnd $p |- ( S e. ( SubMnd ` M ) -> H e. Mnd ) $=
+      ( csubmnd cfv wcel cbs wss c0g cmnd w3a wb submrcl issubm2 syl ibi simp3d
+      eqid ) ACEFGZACHFZIZCJFZAGZBKGZTUBUDUELZTCKGTUFMACNUAABCUCUASUCSDOPQR $.
+  $}
+
+  ${
     $d G a b $.  $d .0. a b $.
     0subm.z $e |- .0. = ( 0g ` G ) $.
     $( The zero submonoid of an arbitrary monoid.  (Contributed by AV,
