@@ -151239,6 +151239,14 @@ $)
     mhmco syl2anr eleqtrrd ) DBCFGHZEABFGHZIDEJZACKGZACFGZUBDBCKGHEABKGHUDUEHUC
     BCDLABELABCDESMUCANHCNHUFUEOUBABEPBCDQACRTUA $.
 
+  $( The image of a subgroup under a homomorphism.  (Contributed by Stefan
+     O'Rear, 31-Dec-2014.) $)
+  ghmima $p |- ( ( F e. ( S GrpHom T ) /\ U e. ( SubGrp ` S ) ) ->
+      ( F " U ) e. ( SubGrp ` T ) ) $=
+    ( cghm co wcel csubg cfv wa cima cres crn df-ima cress eqid resghm eqeltrid
+    ghmrn syl ) DABEFGCAHIGJZDCKDCLZMZBHIZDCNUAUBACOFZBEFGUCUDGABUEDCUEPQUEBUBS
+    TR $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
