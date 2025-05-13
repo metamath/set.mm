@@ -147229,6 +147229,25 @@ $)
   $}
 
   ${
+    subsubm.h $e |- H = ( G |`s S ) $.
+    $( A submonoid of a submonoid is a submonoid.  (Contributed by Mario
+       Carneiro, 21-Jun-2015.) $)
+    subsubm $p |- ( S e. ( SubMnd ` G ) -> ( A e. ( SubMnd ` H ) <->
+      ( A e. ( SubMnd ` G ) /\ A C_ S ) ) ) $=
+      ( csubmnd cfv wcel wss cbs c0g cress cmnd eqid adantl wceq adantr submmnd
+      wa co submss submbas sseqtrrd sstrd subm0 subm0cl eqeltrd oveq1i ressabsg
+      submrcl mpd3an3 eqtrid syldan w3a wb issubm2 syl mpbir3and simprr sseqtrd
+      eqeltrrd jca ad2antrl adantrl impbida ) BCFGZHZADFGHZAVFHZABIZSZVGVHSZVIV
+      JVLVIACJGZIZCKGZAHZCALTZMHZVLABVMVLADJGZBVHAVSIZVGVSADVSNZUAOVGBVSPZVHBDC
+      EUBZQUCZVGBVMIVHVMBCVMNZUAQUDVLVODKGZAVGVOWFPZVHBDCVOEVONZUEZQVHWFAHZVGAD
+      WFWFNZUFOUGVLDALTZVQMVGVHVJWLVQPZWDVGVJSWLCBLTZALTZVQDWNALEUHVGVJCMHZWOVQ
+      PVGWPVJBCUJZQBACVFMUIUKULZUMVHWLMHZVGAWLDWLNZROVAVLWPVIVNVPVRUNUOVGWPVHWQ
+      QVMAVQCVOWEWHVQNZUPUQURWDVBVGVKSZVHVTWJWSXBABVSVGVIVJUSVGWBVKWCQUTXBVOWFA
+      VGWGVKWIQVIVPVGVJACVOWHUFVCVAXBWLVQMVGVJWMVIWRVDVIVRVGVJAVQCXARVCUGXBDMHZ
+      VHVTWJWSUNUOVGXCVKBDCERQVSAWLDWFWAWKWTUPUQURVE $.
+  $}
+
+  ${
     $d G a b $.  $d .0. a b $.
     0subm.z $e |- .0. = ( 0g ` G ) $.
     $( The zero submonoid of an arbitrary monoid.  (Contributed by AV,
