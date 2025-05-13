@@ -147332,6 +147332,26 @@ $)
   $}
 
   ${
+    $d x y F $.  $d x y S $.  $d x y T $.  $d x y U $.  $d x y X $.
+    resmhm2.u $e |- U = ( T |`s X ) $.
+    $( One direction of ~ resmhm2b .  (Contributed by Mario Carneiro,
+       18-Jun-2015.) $)
+    resmhm2 $p |- ( ( F e. ( S MndHom U ) /\ X e. ( SubMnd ` T ) ) ->
+      F e. ( S MndHom T ) ) $=
+      ( vx vy cmhm co wcel cfv wa cmnd cbs wf cplusg wceq c0g eqid csubmnd wral
+      cv w3a mhmrcl1 submrcl anim12i mhmf submbas submss eqsstrrd syl2an mhmlin
+      wss fss 3expb adantlr cress a1i eqidd id ressplusgd ad2antlr oveqd eqtr4d
+      ralrimivva mhm0 adantr subm0 adantl 3jca ismhm sylanbrc ) DACIJKZEBUALZKZ
+      MZANKZBNKZMAOLZBOLZDPZGUCZHUCZAQLZJDLZWCDLZWDDLZBQLZJZRZHVTUBGVTUBZASLZDL
+      ZBSLZRZUDDABIJKVNVRVPVSACDUEEBUFZUGVQWBWLWPVNVTCOLZDPWRWAUNWBVPVTWRACDVTT
+      ZWRTUHVPWREWAECBFUIWAEBWATZUJUKVTWRWADUOULVQWKGHVTVTVQWCVTKZWDVTKZMZMZWFW
+      GWHCQLZJZWJVNXCWFXFRZVPVNXAXBXGVTWEXEACDWCWDWSWETZXETUMUPUQXDWIXEWGWHVPWI
+      XERVNXCVPEWIBCVONCBEURJRVPFUSVPWIUTVPVAWQVBVCVDVEVFVQWNCSLZWOVNWNXIRVPACD
+      XIWMWMTZXITVGVHVPWOXIRVNECBWOFWOTZVIVJVEVKGHVTWAWEWIABDWOWMWSWTXHWITXJXKV
+      LVM $.
+  $}
+
+  ${
     $d x y F $.  $d x y G $.  $d x y S $.  $d x y T $.  $d x y U $.
     $( The composition of monoid homomorphisms is a homomorphism.  (Contributed
        by Mario Carneiro, 12-Jun-2015.) $)
