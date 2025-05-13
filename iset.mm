@@ -151388,6 +151388,26 @@ $)
       ECDMNOZABEPZGAOZQZGERZHSZGFSZUTVBVAFERZSZVCUTVDHVAUQURVDHSUSCDEFHKLUATZUB
       UTURUSFAOZVEVCUCUQURUSUDUQURUSUEUQURVGUSUQCUFOVGCDEUGACFIKUHUITABGFEUJUKU
       LUTVCVBVCUTVAVDHGFEUMVFUNUOUP $.
+
+    $d .0. x y z $.  $d A x y z $.  $d B x $.  $d F x y z $.  $d N x y z $.
+    $d R x y z $.  $d S x y z $.
+    $( Two ways of saying a group homomorphism is 1-1 into its codomain.
+       (Contributed by Paul Chapman, 3-Mar-2008.)  (Revised by Mario Carneiro,
+       13-Jan-2015.)  (Proof shortened by AV, 4-Apr-2025.) $)
+    ghmf1 $p |- ( F e. ( R GrpHom S ) -> ( F : A -1-1-> B <->
+          A. x e. A ( ( F ` x ) = .0. -> x = N ) ) ) $=
+      ( vy vz co wcel cv cfv wceq wa cghm wf1 wi wral wb f1ghm0to0 3expa biimpd
+      ralrimiva wf ghmf adantr eqid ghmsub 3expb adantlr eqeq1d fveqeq2 imbi12d
+      eqeq1 simplr cgrp ghmgrp1 grpsubcl sylan rspcdva sylbird ghmgrp2 ad2antrr
+      csg simprl ffvelcdmd simprr grpsubeq0 syl3anc 3imtr3d ralrimivva sylanbrc
+      dff13 impbida ) FDEUAOPZBCFUBZAQZFRHSZWCGSZUCZABUDZWAWBTZWFABWHWCBPZTWDWE
+      WAWBWIWDWEUEBCDEFGWCHIJKLUFUGUHUIWAWGTZBCFUJZMQZFRZNQZFRZSZWLWNSZUCZNBUDM
+      BUDWBWAWKWGDEFBCIJUKZULWJWRMNBBWJWLBPZWNBPZTZTZWMWOEVJRZOZHSZWLWNDVJRZOZG
+      SZWPWQXCXFXHFRZHSZXIXCXJXEHWAXBXJXESZWGWAWTXAXLBDEWLFXGXDWNIXGUMZXDUMZUNU
+      OUPUQXCWFXKXIUCABXHWCXHSWDXKWEXIWCXHHFURWCXHGUTUSWAWGXBVAWJDVBPZXBXHBPZWA
+      XOWGDEFVCZULXOWTXAXPBDXGWLWNIXMVDUOVEVFVGXCEVBPZWMCPWOCPXFWPUEWAXRWGXBDEF
+      VHVIXCBCWLFWAWKWGXBWSVIZWJWTXAVKZVLXCBCWNFXSWJWTXAVMZVLCEXDWMWOHJLXNVNVOX
+      CXOWTXAXIWQUEWAXOWGXBXQVIXTYABDXGWLWNGIKXMVNVOVPVQMNBCFVSVRVT $.
   $}
 
 
