@@ -150934,6 +150934,25 @@ $)
       JURUSUTVA $.
   $}
 
+  ${
+    ghmsub.b $e |- B = ( Base ` S ) $.
+    ghmsub.m $e |- .- = ( -g ` S ) $.
+    ghmsub.n $e |- N = ( -g ` T ) $.
+    $( Linearity of subtraction through a group homomorphism.  (Contributed by
+       Stefan O'Rear, 31-Dec-2014.) $)
+    ghmsub $p |- ( ( F e. ( S GrpHom T ) /\ U e. B /\ V e. B ) ->
+      ( F ` ( U .- V ) ) = ( ( F ` U ) N ( F ` V ) ) ) $=
+      ( co wcel cminusg cfv cplusg wceq eqid wa grpsubval cghm w3a cgrp ghmgrp1
+      3ad2ant1 simp3 grpinvcl syl2anc ghmlin ghminv 3adant2 oveq2d eqtrd fveq2d
+      syld3an3 3adant1 cbs wf ghmf ffvelcdm anim12dan sylan 3impb syl 3eqtr4d )
+      EBCUALMZDAMZHAMZUBZDHBNOZOZBPOZLZEOZDEOZHEOZCNOZOZCPOZLZDHFLZEOZVOVPGLZVI
+      VNVOVKEOZVSLZVTVFVGVHVKAMZVNWEQVIBUCMZVHWFVFVGWGVHBCEUDUEVFVGVHUFABVJHIVJ
+      RZUGUHVLVSBCDEVKAIVLRZVSRZUIUOVIWDVRVOVSVFVHWDVRQVGABCEVJVQHIWHVQRZUJUKUL
+      UMVGVHWBVNQVFVGVHSZWAVMEAVLBVJFDHIWIWHJTUNUPVIVOCUQOZMZVPWMMZSZWCVTQVFVGV
+      HWPVFAWMEURZWLWPBCEAWMIWMRZUSWQVGWNVHWOAWMDEUTAWMHEUTVAVBVCWMVSCVQGVOVPWR
+      WJWKKTVDVE $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
