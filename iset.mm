@@ -151373,6 +151373,23 @@ $)
       SAWSHEXDVPVQVRVKVJWSCWIWGWHWDWTWDSXBVMVNVO $.
   $}
 
+  ${
+    f1ghm0to0.a $e |- A = ( Base ` R ) $.
+    f1ghm0to0.b $e |- B = ( Base ` S ) $.
+    f1ghm0to0.n $e |- N = ( 0g ` R ) $.
+    f1ghm0to0.0 $e |- .0. = ( 0g ` S ) $.
+    $( If a group homomorphism ` F ` is injective, it maps the zero of one
+       group (and only the zero) to the zero of the other group.  (Contributed
+       by AV, 24-Oct-2019.)  (Revised by Thierry Arnoux, 13-May-2023.) $)
+    f1ghm0to0 $p |- ( ( F e. ( R GrpHom S ) /\ F : A -1-1-> B /\ X e. A )
+                      -> ( ( F ` X ) = .0. <-> X = N ) ) $=
+      ( cghm co wcel wf1 w3a cfv wceq 3ad2ant1 ghmid eqeq2d wi simp2 simp3 cgrp
+      ghmgrp1 grpidcl syl f1veqaeq syl12anc sylbird fveq2 sylan9eqr ex impbid )
+      ECDMNOZABEPZGAOZQZGERZHSZGFSZUTVBVAFERZSZVCUTVDHVAUQURVDHSUSCDEFHKLUATZUB
+      UTURUSFAOZVEVCUCUQURUSUDUQURUSUEUQURVGUSUQCUFOVGCDEUGACFIKUHUITABGFEUJUKU
+      LUTVCVBVCUTVAVDHGFEUMVFUNUOUP $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
