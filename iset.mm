@@ -151274,6 +151274,27 @@ $)
       KUUCUUMWINWJ $.
   $}
 
+  ${
+    $d F x y $.  $d G x y $.  $d S x y $.  $d T x $.
+    $( The equalizer of two group homomorphisms is a subgroup.  (Contributed by
+       Stefan O'Rear, 7-Mar-2015.)  (Revised by Mario Carneiro, 6-May-2015.) $)
+    ghmeql $p |- ( ( F e. ( S GrpHom T ) /\ G e. ( S GrpHom T ) ) ->
+        dom ( F i^i G ) e. ( SubGrp ` S ) ) $=
+      ( vx vy co wcel wa cfv cv cminusg wral ghmmhm wceq cbs fveq2 eqeq12d eqid
+      adantr cghm cin cdm csubg csubmnd cmhm mhmeql syl2an crab wi cgrp ghmgrp1
+      simprl grpinvcl syl2anc simprr fveq2d ghminv ad2ant2r 3eqtr4d elrabd expr
+      ad2ant2lr ralrimiva ralrab sylibr wb wfn wf ghmf ffnd adantl fndmin eleq2
+      raleqbi1dv syl mpbird issubg3 mpbir2and ) CABUAGZHZDVTHZIZCDUBUCZAUDJHZWD
+      AUEJHZEKZALJZJZWDHZEWDMZWACABUFGZHDWLHWFWBABCNABDNABCDUGUHWCWKWIFKZCJZWMD
+      JZOZFAPJZUIZHZEWRMZWCWGCJZWGDJZOZWSUJZEWQMWTWCXDEWQWCWGWQHZXCWSWCXEXCIZIZ
+      WPWICJZWIDJZOFWIWQWMWIOWNXHWOXIWMWICQWMWIDQRXGAUKHZXEWIWQHWCXJXFWAXJWBABC
+      ULTZTWCXEXCUMWQAWHWGWQSZWHSZUNUOXGXABLJZJZXBXNJZXHXIXGXAXBXNWCXEXCUPUQWAX
+      EXHXOOWBXCWQABCWHXNWGXLXMXNSZURUSWBXEXIXPOWAXCWQABDWHXNWGXLXMXQURVCUTVAVB
+      VDWPXCWSEFWQWMWGOWNXAWOXBWMWGCQWMWGDQRVEVFWCWDWROZWKWTVGWCCWQVHDWQVHXRWCW
+      QBPJZCWAWQXSCVIWBABCWQXSXLXSSZVJTVKWCWQXSDWBWQXSDVIWAABDWQXSXLXTVJVLVKFWQ
+      CDVMUOWJWSEWDWRWDWRWIVNVOVPVQWCXJWEWFWKIVGXKEWDAWHXMVRVPVS $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
