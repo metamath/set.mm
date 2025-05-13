@@ -150984,6 +150984,19 @@ $)
       KZCKBQKZOZTCABUAGHULAABCUBRULBABCUKRULUOVAVDABCUMUNUMSZUNSZUCULUTDEUMUMUL
       UPUMHUQUMHUTURUSABUPCUQUMVEURSZUSSZUDUEUFABCVBVCVBSZVCSZUGUHDEUMUNURUSABC
       VCVBVEVFVGVHVIVJUIUJ $.
+
+    $( Group homomorphisms and monoid homomorphisms coincide.  (Thus,
+       ` GrpHom ` is somewhat redundant, although its stronger reverse closure
+       properties are sometimes useful.)  (Contributed by Stefan O'Rear,
+       7-Mar-2015.) $)
+    ghmmhmb $p |- ( ( S e. Grp /\ T e. Grp ) ->
+        ( S GrpHom T ) = ( S MndHom T ) ) $=
+      ( vf vx vy cgrp wcel wa cghm co cmhm cv ghmmhm cplusg cfv cbs eqid simpll
+      simplr wf mhmf adantl wceq mhmlin 3expb adantll isghmd ex impbid2 eqrdv )
+      AFGZBFGZHZCABIJZABKJZUMCLZUNGZUPUOGZABUPMUMURUQUMURHDEANOZBNOZABUPAPOZBPO
+      ZVAQZVBQZUSQZUTQZUKULURRUKULURSURVAVBUPTUMVAVBABUPVCVDUAUBURDLZVAGZELZVAG
+      ZHVGVIUSJUPOVGUPOVIUPOUTJUCZUMURVHVJVKVAUSUTABUPVGVIVCVEVFUDUEUFUGUHUIUJ
+      $.
   $}
 
 
