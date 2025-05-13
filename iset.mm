@@ -150884,6 +150884,24 @@ $)
       UIUJABCDEFGUITUJTUBUDUC $.
   $}
 
+  ${
+    $d U a b $.  $d V a b $.  $d F a b $.  $d S a b $.  $d T a b $.
+    $d .+ a b $.  $d .+^ a b $.  $d X a b $.
+    ghmlin.x $e |- X = ( Base ` S ) $.
+    ghmlin.a $e |- .+ = ( +g ` S ) $.
+    ghmlin.b $e |- .+^ = ( +g ` T ) $.
+    $( A homomorphism of groups is linear.  (Contributed by Stefan O'Rear,
+       31-Dec-2014.) $)
+    ghmlin $p |- ( ( F e. ( S GrpHom T ) /\ U e. X /\ V e. X ) ->
+      ( F ` ( U .+ V ) ) = ( ( F ` U ) .+^ ( F ` V ) ) ) $=
+      ( va vb co wcel cfv wceq cv wral wa cghm cbs wf cgrp isghm simprbi simprd
+      eqid fvoveq1 fveq2 oveq1d eqeq12d oveq2 fveq2d oveq2d rspc2v mpan9 3impb
+      ) FCDUANOZEHOZGHOZEGANZFPZEFPZGFPZBNZQZUSLRZMRZANFPZVHFPZVIFPZBNZQZMHSLHS
+      ZUTVATVGUSHDUBPZFUCZVOUSCUDODUDOTVQVOTMLABCDFHVPIVPUHJKUEUFUGVNVGEVIANZFP
+      ZVDVLBNZQLMEGHHVHEQZVJVSVMVTVHEVIFAUIWAVKVDVLBVHEFUJUKULVIGQZVSVCVTVFWBVR
+      VBFVIGEAUMUNWBVLVEVDBVIGFUJUOULUPUQUR $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
