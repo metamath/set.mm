@@ -151295,6 +151295,32 @@ $)
       CDVMUOWJWSEWDWRWDWRWIVNVOVPVQWCXJWEWFWKIVGXKEWDAWHXMVRVPVS $.
   $}
 
+  ${
+    $d x y z F $.  $d x y z S $.  $d x y z T $.  $d x y z U $.  $d x y z Y $.
+    ghmnsgima.1 $e |- Y = ( Base ` T ) $.
+    $( The image of a normal subgroup under a surjective homomorphism is
+       normal.  (Contributed by Mario Carneiro, 4-Feb-2015.) $)
+    ghmnsgima $p |- ( ( F e. ( S GrpHom T ) /\ U e. ( NrmSGrp ` S ) /\
+      ran F = Y ) -> ( F " U ) e. ( NrmSGrp ` T ) ) $=
+      ( vx vy vz co wcel cnsg cfv wceq cv wral adantr syl eqid syl3anc cghm crn
+      w3a csubg cplusg csg simp1 nsgsubg 3ad2ant2 ghmima syl2anc cbs wa ghmgrp1
+      cima simprl wss subgss simprr sseldd grpcl ghmsub ghmlin oveq1d eqtrd wfn
+      cgrp wf ghmf ffnd nsgconj fnfvima eqeltrrd ralrimivva wb oveq1 id oveq12d
+      simpl2 eleq1d ralbidv ralrn raleqdv ralima 3bitr3d mpbird isnsg3 sylanbrc
+      simp3 oveq2 ) DABUAJKZCALMKZDUBZENZUCZDCUOZBUDMKZGOZHOZBUEMZJZWRBUFMZJZWP
+      KZHWPPZGEPZWPBLMKWOWKCAUDMKZWQWKWLWNUGZWLWKXGWNCAUHUIZABCDUJUKWOXFIOZDMZW
+      RDMZWTJZXKXBJZWPKZGCPZIAULMZPZWOXOIGXQCWOXJXQKZWRCKZUMZUMZXJWRAUEMZJZXJAU
+      FMZJZDMZXNWPYBYGYDDMZXKXBJZXNYBWKYDXQKZXSYGYINWOWKYAXHQZYBAVGKZXSWRXQKZYJ
+      YBWKYLYKABDUNRWOXSXTUPZYBCXQWRWOCXQUQZYAWOXGYOXIXQCAXQSZURRZQZWOXSXTUSZUT
+      ZXQYCAXJWRYPYCSZVATYNXQABYDDYEXBXJYPYESZXBSZVBTYBYHXMXKXBYBWKXSYMYHXMNYKY
+      NYTYCWTABXJDWRXQYPUUAWTSZVCTVDVEYBDXQVFZYOYFCKZYGWPKYBXQEDWOXQEDVHZYAWOWK
+      UUGXHABDXQEYPFVIRZQVJYRYBWLXSXTUUFWKWLWNYAVSYNYSXJWRYCCAYEXQYPUUAUUBVKTXQ
+      CDYFVLTVMVNWOXEGWMPZXKWSWTJZXKXBJZWPKZHWPPZIXQPZXFXRWOUUEUUIUUNVOWOXQEDUU
+      HVJZXEUUMGIXQDWRXKNZXDUULHWPUUPXCUUKWPUUPXAUUJWRXKXBWRXKWSWTVPUUPVQVRVTWA
+      WBRWOXEGWMEWKWLWNWIWCWOUUMXPIXQWOUUEYOUUMXPVOUUOYQUULXOHGXQCDWSXLNZUUKXNW
+      PUUQUUJXMXKXBWSXLXKWTWJVDVTWDUKWAWEWFGHWTWPBXBEFUUDUUCWGWH $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
