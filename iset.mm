@@ -151581,6 +151581,14 @@ $)
         LMWJYEWOXFYGVAWJWLWNXFVRWSXFULVSAFXJXAGKOVTWAXDXNUFXGAXCFWBWCWDWEWFBCUA
         DEFJKPWGWHWI $.
     $}
+
+    $( A normal subgroup is unchanged under conjugation.  (Contributed by Mario
+       Carneiro, 18-Jan-2015.) $)
+    conjnsg $p |- ( ( S e. ( NrmSGrp ` G ) /\ A e. X ) -> S = ran F ) $=
+      ( vy vz cnsg cfv wcel cv co wceq csubg wral crab crn nsgsubg eqid simprbi
+      wb isnsg4 eleq2d biimpar conjnmz syl2an2r ) DFOPQZDFUAPQZBHQZBMRZNRZCSDQU
+      RUQCSDQUHNHUBMHUCZQZDEUDTDFUEUNUTUPUNUSHBUNUOUSHTMNCDFUSHUSUFZIJUIUGUJUKA
+      MNBCDEFGUSHIJKLVAULUM $.
   $}
 
 
