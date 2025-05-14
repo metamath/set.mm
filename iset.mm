@@ -151494,6 +151494,18 @@ $)
         AUIZWHWMWRULGCEYLBWJHIUNTWFWMUUOWJRWGWRGCEWJUUNHIUUPVNVPVQVRUUBWFWNWGWR
         UUDUUGWEUUIUUJUUQWHWMWRUMGCEFWKBWQHIJVSTVTWJYNWAWQWLWAWBWCWD $.
     $}
+
+    conjsubg.f $e |- F = ( x e. S |-> ( ( A .+ x ) .- A ) ) $.
+    $( A conjugated subgroup is also a subgroup.  (Contributed by Mario
+       Carneiro, 13-Jan-2015.) $)
+    conjsubg $p |- ( ( S e. ( SubGrp ` G ) /\ A e. X ) ->
+      ran F e. ( SubGrp ` G ) ) $=
+      ( csubg cfv wcel wa cv co cmpt crn cima wceq subgss adantr df-ima eqtr4di
+      wss cres resmpt rneqd eqtrid syl cghm wf1o cgrp subgrcl eqid sylan simpld
+      conjghm simpl ghmima syl2anc eqeltrrd ) DFMNZOZBHOZPZAHBAQCRBGRZSZDUAZETZ
+      VEVHDHUGZVKVLUBVFVMVGHDFIUCUDVMVKVJDUHZTVLVJDUEVMVNEVMVNADVISEAHDVIUILUFU
+      JUKULVHVJFFUMROZVFVKVEOVHVOHHVJUNZVFFUOOVGVOVPPDFUPABCVJFGHIJKVJUQUTURUSV
+      FVGVAFFDVJVBVCVD $.
   $}
 
 
