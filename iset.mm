@@ -150903,6 +150903,20 @@ $)
       JLUSTXTXNXFEIGHJLVJTSVLWBWIWTWAWCWDWHUJQWNXAVSVTEFIGWEPHJXBLKUNRVMVN $.
   $}
 
+  ${
+    eqg0el.1 $e |- .~ = ( G ~QG H ) $.
+    $( Equivalence class of a quotient group for a subgroup.  (Contributed by
+       Thierry Arnoux, 15-Jan-2024.) $)
+    eqg0el $p |- ( ( G e. Grp /\ H e. ( SubGrp ` G ) )
+                -> ( [ X ] .~ = H <-> X e. H ) ) $=
+      ( cgrp wcel csubg cfv wa cec wceq c0g wbr cbs wer eqid eqger adantl wb
+      grpidcl adantr erth eqgid eqeq1d eqcom a1i 3bitrrd wrel errel 3syl eleq2d
+      relelec 3bitr2d ) BFGZCBHIGZJZDAKZCLZBMIZDANZDUTAKZGZDCGUQVAVBURLCURLZUSU
+      QUTDABOIZUPVEAPZUOABVECVEQZERZSUOUTVEGUPVEBUTVGUTQZUAUBUCUQVBCURUPVBCLUOA
+      BVECUTVGEVIUDSZUEVDUSTUQCURUFUGUHUPVCVATZUOUPVFAUIVKVHVEAUJDUTAUMUKSUQVBC
+      DVJULUN $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
