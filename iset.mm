@@ -150982,6 +150982,18 @@ $)
           syl simpl eqid quseccl0g syl3anc ) BCJKZLZFELZMCNLZUJUIFCBOPZQALUIUKU
           JUIBCRKLUKBCSBCTUCUAUIUJUBUIUJUDAEULBCDNFUHULUEGHIUFUG $.
       $}
+
+      qusadd.p $e |- .+ = ( +g ` G ) $.
+      qusadd.a $e |- .+b = ( +g ` H ) $.
+      $( Value of the group operation in a quotient group.  (Contributed by
+         Mario Carneiro, 18-Sep-2015.) $)
+      qusadd $p |- ( ( S e. ( NrmSGrp ` G ) /\ X e. V /\ Y e. V ) ->
+  ( [ X ] ( G ~QG S ) .+b [ Y ] ( G ~QG S ) ) = [ ( X .+ Y ) ] ( G ~QG S ) ) $=
+        ( vq vp va vb cfv wcel co cv cnsg cqg cgrp cqus wceq a1i cbs csubg eqid
+        wer nsgsubg eqger syl subgrcl eqgcpbl wa grpcl 3expb sylan qusaddval )
+        CDUAQRZDCUBSZDBAEFGHUCMNOPEDVBUDSUEVAIUFFDUGQUEVAJUFVACDUHQRZFVBUJCDUKZ
+        VBDFCJVBUIZULUMVAVCDUCRZVDCDUNUMZOTPTNTZMTZAVBDFCJVEKUOVAVFVHFRZVIFRZUP
+        VHVIASFRZVGVFVJVKVLFADVHVIJKUQURUSKLUT $.
     $}
   $}
 
