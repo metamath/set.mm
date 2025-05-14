@@ -151706,6 +151706,27 @@ $)
       VPWEWJEKZVQVPWBWDWPEVJCWAWCGVNVDUOVEWFWNWKQKWOWJQVSSMTVFVG $.
   $}
 
+  ${
+    $d f x y J $.  $d f x y K $.  $d f x y L $.  $d f x y M $.  $d f x y ph $.
+    $d x y B $.  $d x y C $.
+    ghmpropd.a $e |- ( ph -> B = ( Base ` J ) ) $.
+    ghmpropd.b $e |- ( ph -> C = ( Base ` K ) ) $.
+    ghmpropd.c $e |- ( ph -> B = ( Base ` L ) ) $.
+    ghmpropd.d $e |- ( ph -> C = ( Base ` M ) ) $.
+    ghmpropd.e $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+        ( x ( +g ` J ) y ) = ( x ( +g ` L ) y ) ) $.
+    ghmpropd.f $e |- ( ( ph /\ ( x e. C /\ y e. C ) ) ->
+        ( x ( +g ` K ) y ) = ( x ( +g ` M ) y ) ) $.
+    $( Group homomorphism depends only on the group attributes of structures.
+       (Contributed by Mario Carneiro, 12-Jun-2015.) $)
+    ghmpropd $p |- ( ph -> ( J GrpHom K ) = ( L GrpHom M ) ) $=
+      ( co cgrp wcel wa eleq2d vf cghm cv cmhm grppropd anbi12d ghmgrp1 ghmgrp2
+      mhmpropd jca ghmmhmb biadanii 3bitr4g eqrdv ) AUAFGUBPZHIUBPZAFQRZGQRZSZU
+      AUCZFGUDPZRZSHQRZIQRZSZUTHIUDPZRZSUTUORZUTUPRZAUSVEVBVGAUQVCURVDABCDFHJLN
+      UEABCEGIKMOUEUFAVAVFUTABCDEFGHIJKLMNOUITUFVHUSVBVHUQURFGUTUGFGUTUHUJUSUOV
+      AUTFGUKTULVIVEVGVIVCVDHIUTUGHIUTUHUJVEUPVFUTHIUKTULUMUN $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
