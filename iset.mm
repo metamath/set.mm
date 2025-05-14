@@ -150968,6 +150968,21 @@ $)
       VRWAVTMZWAWAVSVQWKWNXKWANWLWDVTBWAVRWHWMXHVJTXJWAVSWDVQWFWNWJRZVQWNVKSVLV
       QWKWNWCWDKWLWDBWBWAWHWBPZVMTXJWCWAVTMZVRVRVSVQWKWNXNVRNWLWDVTBWBWAVRWHWMX
       HXMVNTXJVRVSWDXLVQXGWNXIRSVLVOVP $.
+
+    ${
+      qusadd.v $e |- V = ( Base ` G ) $.
+      ${
+        quseccl.b $e |- B = ( Base ` H ) $.
+        $( Closure of the quotient map for a quotient group.  (Contributed by
+           Mario Carneiro, 18-Sep-2015.)  (Proof shortened by AV,
+           9-Mar-2025.) $)
+        quseccl $p |- ( ( S e. ( NrmSGrp ` G ) /\ X e. V ) ->
+          [ X ] ( G ~QG S ) e. B ) $=
+          ( cnsg cfv wcel wa cgrp cqg co cec csubg nsgsubg subgrcl adantr simpr
+          syl simpl eqid quseccl0g syl3anc ) BCJKZLZFELZMCNLZUJUIFCBOPZQALUIUKU
+          JUIBCRKLUKBCSBCTUCUAUIUJUBUIUJUDAEULBCDNFUHULUEGHIUFUG $.
+      $}
+    $}
   $}
 
 
