@@ -151506,6 +151506,18 @@ $)
       VEVHDHUGZVKVLUBVFVMVGHDFIUCUDVMVKVJDUHZTVLVJDUEVMVNEVMVNADVISEAHDVIUILUFU
       JUKULVHVJFFUMROZVFVKVEOVHVOHHVJUNZVFFUOOVGVOVPPDFUPABCVJFGHIJKVJUQUTURUSV
       FVGVAFFDVJVBVCVD $.
+
+    $( A conjugated subgroup is equinumerous to the original subgroup.
+       (Contributed by Mario Carneiro, 18-Jan-2015.) $)
+    conjsubgen $p |- ( ( S e. ( SubGrp ` G ) /\ A e. X ) ->
+      S ~~ ran F ) $=
+      ( csubg wcel wf1o wa wf1 co cmpt syl cfv crn cen wbr cv cres cghm subgrcl
+      cgrp eqid conjghm sylan f1of1 simpl2im subgss adantr f1ssres syl2anc wceq
+      wss wb resmptd eqtr4di f1eq1 mpbid f1f1orn f1oeng syldan ) DFMUAZNZBHNZDE
+      UBZEOZDVLUCUDVJVKPZDHEQZVMVNDHAHBAUECRBGRZSZDUFZQZVOVNHHVQQZDHUTZVSVNVQFF
+      UGRNZHHVQOZVTVJFUINVKWBWCPDFUHABCVQFGHIJKVQUJUKULHHVQUMUNVJWAVKHDFIUOUPZH
+      HDVQUQURVNVREUSVSVOVAVNVRADVPSEVNAHDVPWDVBLVCDHVREVDTVEDHEVFTDVLVIEVGVH
+      $.
   $}
 
 
