@@ -150932,6 +150932,21 @@ $)
       BCFDUGSZRKUSVAVGRNUTDFGJUHUIUJUSUTVAUKULUMUNUTUSVEVFUOVAABICHUPUQUR $.
   $}
 
+  ${
+    quseccl0.e $e |- .~ = ( G ~QG S ) $.
+    quseccl0.h $e |- H = ( G /s .~ ) $.
+    quseccl0.c $e |- C = ( Base ` G ) $.
+    quseccl0.b $e |- B = ( Base ` H ) $.
+    $( Closure of the quotient map for a quotient group.  (Contributed by Mario
+       Carneiro, 18-Sep-2015.)  Generalization of ~ quseccl for arbitrary sets
+       ` G ` .  (Revised by AV, 24-Feb-2025.) $)
+    quseccl0g $p |- ( ( G e. V /\ X e. C /\ S e. Z ) -> [ X ] .~ e. B ) $=
+      ( wcel cvv co cbs cfv wceq a1i w3a cec cqs eqgex 3adant2 eqeltrid ecelqsg
+      cqg simp2 syl2anc cqus simp1 qusbas eqtr4di eleqtrd ) EGNZHBNZDINZUAZHCUB
+      ZBCUCZAUSCONUQUTVANUSCEDUHPZOJUPURVBONUQDEGIUDUEUFZUPUQURUIBHCOUGUJUSVAFQ
+      RAUSCEFBOGFECUKPSUSKTBEQRSUSLTVCUPUQURULUMMUNUO $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
