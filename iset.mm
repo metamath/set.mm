@@ -150947,6 +150947,29 @@ $)
       RAUSCEFBOGFECUKPSUSKTBEQRSUSLTVCUPUQURULUMMUNUO $.
   $}
 
+  ${
+    $d a b c d p q u v w G $.  $d a b c d u v w H $.  $d a b c d p q u v w S $.
+    $d a b p q .+b $.  $d p q .+ $.  $d a b p q V $.  $d p q X $.  $d p q Y $.
+    qusgrp.h $e |- H = ( G /s ( G ~QG S ) ) $.
+    $( If ` Y ` is a normal subgroup of ` G ` , then ` H = G / Y ` is a group,
+       called the quotient of ` G ` by ` Y ` .  (Contributed by Mario Carneiro,
+       14-Jun-2015.)  (Revised by Mario Carneiro, 12-Aug-2015.) $)
+    qusgrp $p |- ( S e. ( NrmSGrp ` G ) -> H e. Grp ) $=
+      ( vu vv vw vd vc cfv wcel cgrp co wceq cv eqid syl adantr erref sylan c0g
+      va cnsg cqg cec cplusg cminusg cbs cqus a1i eqidd csubg wer nsgsubg eqger
+      vb subgrcl eqgcpbl grpcl syl3an1 w3a simpr1 simpr2 syl3anc simpr3 breqtrd
+      wa grpass grpidcl grplid simpr eqbrtrd grpinvcl grplinv qusgrp2 simpld )
+      ABUCJKZCLKBUAJZBAUDMZUECUAJNVQEFGBUFJZVSBCEOZBUGJZJZBUHJZLVRHIUBUPCBVSUIM
+      NVQDUJVQWDUKVQVTUKVQABULJKZWDVSUMZABUNZVSBWDAWDPZVSPZUOQZVQWEBLKZWGABUQQZ
+      UBOUPOIOHOVTVSBWDAWHWIVTPZURVQWKWAWDKZFOZWDKZWAWOVTMZWDKZWLWDVTBWAWOWHWMU
+      SZUTVQWNWPGOZWDKZVAZVGZWQWTVTMZXDWAWOWTVTMVTMZVSXCXDVSWDVQWFXBWJRXCWKWRXA
+      XDWDKVQWKXBWLRZXCWKWNWPWRXFVQWNWPXAVBVQWNWPXAVCWSVDVQWNWPXAVEWDVTBWQWTWHW
+      MUSVDSVQWKXBXDXENWLWDVTBWAWOWTWHWMVHTVFVQWKVRWDKZWLWDBVRWHVRPZVIQZVQWNVGZ
+      VRWAVTMZWAWAVSVQWKWNXKWANWLWDVTBWAVRWHWMXHVJTXJWAVSWDVQWFWNWJRZVQWNVKSVLV
+      QWKWNWCWDKWLWDBWBWAWHWBPZVMTXJWCWAVTMZVRVRVSVQWKWNXNVRNWLWDVTBWBWAVRWHWMX
+      HXMVNTXJVRVSWDXLVQXGWNXIRSVLVOVP $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
