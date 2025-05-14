@@ -147559,6 +147559,19 @@ $)
   $}
 
   ${
+    grpassd.b $e |- B = ( Base ` G ) $.
+    grpassd.p $e |- .+ = ( +g ` G ) $.
+    grpassd.g $e |- ( ph -> G e. Grp ) $.
+    grpassd.1 $e |- ( ph -> X e. B ) $.
+    grpassd.2 $e |- ( ph -> Y e. B ) $.
+    grpassd.3 $e |- ( ph -> Z e. B ) $.
+    $( A group operation is associative.  (Contributed by SN, 29-Jan-2025.) $)
+    grpassd $p |- ( ph -> ( ( X .+ Y ) .+ Z ) = ( X .+ ( Y .+ Z ) ) ) $=
+      ( cgrp wcel co wceq grpass syl13anc ) ADNOEBOFBOGBOEFCPGCPEFGCPCPQJKLMBCD
+      EFGHIRS $.
+  $}
+
+  ${
     grpmndd.1 $e |- ( ph -> G e. Grp ) $.
     $( A group is a monoid.  (Contributed by SN, 1-Jun-2024.) $)
     grpmndd $p |- ( ph -> G e. Mnd ) $=
