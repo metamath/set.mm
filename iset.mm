@@ -150917,6 +150917,21 @@ $)
       DVJULUN $.
   $}
 
+  ${
+    $d B x $.  $d X x $.  $d .~ x $.
+    quselbas.e $e |- .~ = ( G ~QG S ) $.
+    quselbas.u $e |- U = ( G /s .~ ) $.
+    quselbas.b $e |- B = ( Base ` G ) $.
+    $( Membership in the base set of a quotient group.  (Contributed by AV,
+       1-Mar-2025.) $)
+    quselbasg $p |- ( ( G e. V /\ X e. W /\ S e. Z )
+                     -> ( X e. ( Base ` U ) <-> E. x e. B X = [ x ] .~ ) ) $=
+      ( wcel cbs cfv wceq cvv co a1i w3a cqs cv cec wrex cqus cqg eqgex 3adant2
+      eqeltrid simp1 qusbas eqcomd eleq2d wb elqsg 3ad2ant2 bitrd ) FGNZIHNZDJN
+      ZUAZIEOPZNIBCUBZNZIAUCCUDQABUEZVBVCVDIVBVDVCVBCFEBRGEFCUFSQVBLTBFOPQVBMTV
+      BCFDUGSZRKUSVAVGRNUTDFGJUHUIUJUSUTVAUKULUMUNUTUSVEVFUOVAABICHUPUQUR $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
