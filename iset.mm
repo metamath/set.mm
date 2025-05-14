@@ -151685,6 +151685,27 @@ $)
       MNBCDEFGUSHIJKLVAULUM $.
   $}
 
+  ${
+    $d y z F $.  $d x y z G $.  $d x y z H $.  $d x y z X $.  $d x y z Y $.
+    qusghm.x $e |- X = ( Base ` G ) $.
+    qusghm.h $e |- H = ( G /s ( G ~QG Y ) ) $.
+    qusghm.f $e |- F = ( x e. X |-> [ x ] ( G ~QG Y ) ) $.
+    $( If ` Y ` is a normal subgroup of ` G ` , then the "natural map" from
+       elements to their cosets is a group homomorphism from ` G ` to
+       ` G / Y ` .  (Contributed by Mario Carneiro, 14-Jun-2015.)  (Revised by
+       Mario Carneiro, 18-Sep-2015.) $)
+    qusghm $p |- ( Y e. ( NrmSGrp ` G ) -> F e. ( G GrpHom H ) ) $=
+      ( cfv wcel eqid syl cv co cec cvv eceq1 ecexg fvmptd3 vy cplusg cbs csubg
+      vz cnsg cgrp nsgsubg subgrcl qusgrp cqg quseccl fmptd qusadd 3expb simprl
+      wa wceq eqgex mpancom adantr simprr oveq12d grpcl sylan 3eqtr4rd isghmd )
+      FCUFJZKZUAUECUBJZDUBJZCDBEDUCJZGVLLZVJLZVKLZVIFCUDJKCUGKZFCUHFCUIMZFCDHUJ
+      VIAEANZCFUKOZPZVLBVLFCDEVRHGVMULIUMVIUANZEKZUENZEKZUQZUQZWAVSPZWCVSPZVKOZ
+      WAWCVJOZVSPZWABJZWCBJZVKOWJBJVIWBWDWIWKURVJVKFCDEWAWCHGVNVOUNUOWFWLWGWMWH
+      VKWFAWAVTWGEBQIVRWAVSRVIWBWDUPWFVSQKZWGQKVIWNWEVPVIWNVQFCUGVHUSUTVAZWAQVS
+      SMTWFAWCVTWHEBQIVRWCVSRVIWBWDVBWFWNWHQKWOWCQVSSMTVCWFAWJVTWKEBQIVRWJVSRVI
+      VPWEWJEKZVQVPWBWDWPEVJCWAWCGVNVDUOVEWFWNWKQKWOWJQVSSMTVFVG $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
