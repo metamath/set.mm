@@ -151435,6 +151435,28 @@ $)
       WRUPWSVLWTLMABEXCXAXB $.
   $}
 
+  ${
+    $d x y F $.  $d x y S $.  $d x y T $.  $d x y X $.  $d x y Y $.
+    ghmf1o.x $e |- X = ( Base ` S ) $.
+    ghmf1o.y $e |- Y = ( Base ` T ) $.
+    $( A bijective group homomorphism is an isomorphism.  (Contributed by Mario
+       Carneiro, 13-Jan-2015.) $)
+    ghmf1o $p |- ( F e. ( S GrpHom T ) ->
+      ( F : X -1-1-onto-> Y <-> `' F e. ( T GrpHom S ) ) ) $=
+      ( vx vy cghm co wcel wf1o wa cgrp wf cfv wceq adantr syl2anc ccnv cv wral
+      cplusg ghmgrp2 ghmgrp1 jca f1ocnv adantl f1of syl simpll simprl ffvelcdmd
+      simprr eqid ghmlin syl3anc simplr f1ocnvfv2 oveq12d eqtrd wi f1ocnvfv mpd
+      grpcl ralrimivva isghm sylanbrc wfn ghmf ffnd dff1o4 impbida ) CABJKLZDEC
+      MZCUAZBAJKLZVOVPNZBOLZAOLZNZEDVQPZHUBZIUBZBUDQZKZVQQWDVQQZWEVQQZAUDQZKZRZ
+      IEUCHEUCZNVRVOWBVPVOVTWAABCUEABCUFZUGSVSWCWMVSEDVQMZWCVPWOVODECUHUIEDVQUJ
+      UKZVSWLHIEEVSWDELZWEELZNZNZWKCQZWGRZWLWTXAWHCQZWICQZWFKZWGWTVOWHDLZWIDLZX
+      AXERVOVPWSULZWTEDWDVQVSWCWSWPSZVSWQWRUMZUNZWTEDWEVQXIVSWQWRUOZUNZWJWFABWH
+      CWIDFWJUPZWFUPZUQURWTXCWDXDWEWFWTVPWQXCWDRVOVPWSUSZXJDEWDCUTTWTVPWRXDWERX
+      PXLDEWECUTTVAVBWTVPWKDLZXBWLVCXPWTWAXFXGXQWTVOWAXHWNUKXKXMDWJAWHWIFXNVFUR
+      DEWKWGCVDTVEVGUGIHWFWJBAVQEDGFXOXNVHVIVOVRNZCDVJVQEVJVPXRDECVODECPVRABCDE
+      FGVKSVLXREDVQVRWCVOBAVQEDGFVKUIVLDECVMVIVN $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
