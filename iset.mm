@@ -19995,6 +19995,23 @@ $)
 
 
 $(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Elementary properties of class abstractions
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  ${
+    $d x y A $.  $d ph x y $.  $d ps y $.
+    eqabdv.1 $e |- ( ph -> ( x e. A <-> ps ) ) $.
+    $( Deduction from a wff to a class abstraction.  (Contributed by NM,
+       9-Jul-1994.)  (Revised by Wolf Lammen, 6-May-2023.) $)
+    eqabdv $p |- ( ph -> A = { x | ps } ) $=
+      ( vy cab cv wcel wsb sbbidv clelsb1 bicomi df-clab 3bitr4g eqrdv ) AFDBCG
+      ZACHDIZCFJZBCFJFHZDIZTQIARBCFEKSUACFDLMBFCNOP $.
+  $}
+
+
+$(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Class form not-free predicate
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
