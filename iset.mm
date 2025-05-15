@@ -15189,6 +15189,16 @@ $)
   $}
 
   ${
+    $d x ph $.
+    sbbidv.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Deduction substituting both sides of a biconditional, with ` ph ` and
+       ` x ` disjoint.  See also ~ sbbid .  (Contributed by Wolf Lammen,
+       6-May-2023.)  (Proof shortened by Steven Nguyen, 6-Jul-2023.) $)
+    sbbidv $p |- ( ph -> ( [ t / x ] ps <-> [ t / x ] ch ) ) $=
+      ( wb wal wsb alrimiv spsbbi syl ) ABCGZDHBDEICDEIGAMDFJBCDEKL $.
+  $}
+
+  ${
     $d x y $.
     $( Two equivalent ways of expressing the proper substitution of ` y ` for
        ` x ` in ` ph ` , when ` x ` and ` y ` are distinct.  Theorem 6.2 of
