@@ -155865,7 +155865,7 @@ $)
     $d r s v w f x y $.
     $( Define the set of ring homomorphisms from ` r ` to ` s ` .  (Contributed
        by Stefan O'Rear, 7-Mar-2015.) $)
-    df-rnghom $a |- RingHom = ( r e. Ring , s e. Ring |->
+    df-rhm $a |- RingHom = ( r e. Ring , s e. Ring |->
       [_ ( Base ` r ) / v ]_ [_ ( Base ` s ) / w ]_
    { f e. ( w ^m v ) | ( ( f ` ( 1r ` r ) ) = ( 1r ` s ) /\ A. x e. v A. y e. v
    ( ( f ` ( x ( +g ` r ) y ) ) = ( ( f ` x ) ( +g ` s ) ( f ` y ) ) /\
@@ -155873,7 +155873,7 @@ $)
 
     $( Define the set of ring isomorphisms from ` r ` to ` s ` .  (Contributed
        by Stefan O'Rear, 7-Mar-2015.) $)
-    df-rngiso $a |- RingIso = ( r e. _V , s e. _V |->
+    df-rim $a |- RingIso = ( r e. _V , s e. _V |->
       { f e. ( r RingHom s ) | `' f e. ( s RingHom r ) } ) $.
   $}
 
