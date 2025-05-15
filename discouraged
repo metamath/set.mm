@@ -16992,6 +16992,7 @@ New usage of "hbsb2a" is discouraged (2 uses).
 New usage of "hbsb2e" is discouraged (0 uses).
 New usage of "hbsb3" is discouraged (2 uses).
 New usage of "hbsbwOLD" is discouraged (0 uses).
+New usage of "hbsbwOLDOLD" is discouraged (0 uses).
 New usage of "hcau" is discouraged (4 uses).
 New usage of "hcaucvg" is discouraged (1 uses).
 New usage of "hcauseq" is discouraged (0 uses).
@@ -20937,7 +20938,8 @@ Proof modification of "hbimpgVD" is discouraged (165 steps).
 Proof modification of "hbnae-o" is discouraged (11 steps).
 Proof modification of "hbntal" is discouraged (48 steps).
 Proof modification of "hbra2VD" is discouraged (26 steps).
-Proof modification of "hbsbwOLD" is discouraged (15 steps).
+Proof modification of "hbsbwOLD" is discouraged (85 steps).
+Proof modification of "hbsbwOLDOLD" is discouraged (15 steps).
 Proof modification of "helloworld" is discouraged (29 steps).
 Proof modification of "hhssbnOLD" is discouraged (39 steps).
 Proof modification of "hirstL-ax3" is discouraged (34 steps).
