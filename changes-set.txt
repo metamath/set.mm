@@ -84,6 +84,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+15-May-25 rabbieq   [same]      Moved from PM's mathbox to main set.mm
+15-May-25 dmresss   [same]      Moved from GS's mathbox to main set.mm
 11-May-25 rabdif    [same]      Moved from SN's mathbox to main set.mm
  6-May-25 bianbi    [same]      Moved from PM's mathbox to main set.mm
  6-May-25 andiff    anbiim      Moved from MKU's mathbox to main set.mm
