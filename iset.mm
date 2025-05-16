@@ -155989,6 +155989,12 @@ $)
       BUOLWJVIAUEBUEABUFUGVKWFSUHUIHIABMMWBWGJSVPATZVQBTZNVRVKWAWFVPAVQBOUJWKWL
       VSWDVTWEPVPAQUKVQBQUKULUMWCUNUPUQWHVLCWFLZNVOCVKWFVEWMVNVLWFVMCVMWFDWDEWE
       PFGURUSUTVAVBVCVD $.
+
+    $( A ring homomorphism is a homomorphism of multiplicative monoids.
+       (Contributed by Stefan O'Rear, 7-Mar-2015.) $)
+    rhmmhm $p |- ( F e. ( R RingHom S ) -> F e. ( M MndHom N ) ) $=
+      ( crh co wcel cghm cmhm crg wa isrhm simprbi simprd ) CABHIJZCABKIJZCDELI
+      JZRAMJBMJNSTNABCDEFGOPQ $.
   $}
 
 
