@@ -155973,6 +155973,24 @@ $)
       HIQJKRJKLIMABNCEDOP $.
   $}
 
+  ${
+    $d R r s $.  $d S r s $.
+    isrhm.m $e |- M = ( mulGrp ` R ) $.
+    isrhm.n $e |- N = ( mulGrp ` S ) $.
+    $( A function is a ring homomorphism iff it preserves both addition and
+       multiplication.  (Contributed by Stefan O'Rear, 7-Mar-2015.) $)
+    isrhm $p |- ( F e. ( R RingHom S ) <-> ( ( R e. Ring /\ S e. Ring ) /\
+          ( F e. ( R GrpHom S ) /\ F e. ( M MndHom N ) ) ) ) $=
+      ( vr vs crh co wcel crg wa cghm cmhm cmgp cfv cvv wceq cin dfrhm2 elmpocl
+      cv ringgrp ghmex syl2an inex1g syl oveq12 fveq2 oveqan12d ineq12d ovmpoga
+      cgrp mpd3an3 eleq2d oveq12i eqcomi eleq2i anbi2i bitri bitrdi biadanii
+      elin ) CABJKZLZAMLZBMLZNZCABOKZLZCDEPKZLZNZHIMMHUDZIUDZOKZVPQRZVQQRZPKZUA
+      ZABJCIHUBZUCVJVGCVKAQRZBQRZPKZUAZLZVOVJVFWGCVHVIWGSLZVFWGTVJVKSLZWIVHAUOL
+      BUOLWJVIAUEBUEABUFUGVKWFSUHUIHIABMMWBWGJSVPATZVQBTZNVRVKWAWFVPAVQBOUJWKWL
+      VSWDVTWEPVPAQUKVQBQUKULUMWCUNUPUQWHVLCWFLZNVOCVKWFVEWMVNVLWFVMCVMWFDWDEWE
+      PFGURUSUTVAVBVCVD $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
