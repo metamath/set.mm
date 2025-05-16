@@ -147206,6 +147206,48 @@ $)
   $}
 
   ${
+    submmnd.h $e |- H = ( M |`s S ) $.
+    $( Submonoids are themselves monoids under the given operation.
+       (Contributed by Mario Carneiro, 7-Mar-2015.) $)
+    submmnd $p |- ( S e. ( SubMnd ` M ) -> H e. Mnd ) $=
+      ( csubmnd cfv wcel cbs wss c0g cmnd w3a wb submrcl issubm2 syl ibi simp3d
+      eqid ) ACEFGZACHFZIZCJFZAGZBKGZTUBUDUELZTCKGTUFMACNUAABCUCUASUCSDOPQR $.
+
+    $( The base set of a submonoid.  (Contributed by Stefan O'Rear,
+       15-Jun-2015.) $)
+    submbas $p |- ( S e. ( SubMnd ` M ) -> S = ( Base ` H ) ) $=
+      ( csubmnd cfv wcel cbs cmnd cress wceq a1i eqid submrcl submss ressbas2d
+      co ) ACEFGZACHFZBCIBCAJQKRDLSSKRSMZLACNSACTOP $.
+
+    subm0.z $e |- .0. = ( 0g ` M ) $.
+    $( Submonoids have the same identity.  (Contributed by Mario Carneiro,
+       7-Mar-2015.) $)
+    subm0 $p |- ( S e. ( SubMnd ` M ) -> .0. = ( 0g ` H ) ) $=
+      ( csubmnd cfv wcel cmnd cbs wss wceq submrcl submmnd eqid subm0cl submnd0
+      c0g submss syl22anc ) ACGHICJIBJIACKHZLDAIDBSHMACNABCEOUBACUBPZTACDFQUBAC
+      BDUCFERUA $.
+  $}
+
+  ${
+    subsubm.h $e |- H = ( G |`s S ) $.
+    $( A submonoid of a submonoid is a submonoid.  (Contributed by Mario
+       Carneiro, 21-Jun-2015.) $)
+    subsubm $p |- ( S e. ( SubMnd ` G ) -> ( A e. ( SubMnd ` H ) <->
+      ( A e. ( SubMnd ` G ) /\ A C_ S ) ) ) $=
+      ( csubmnd cfv wcel wss cbs c0g cress cmnd eqid adantl wceq adantr submmnd
+      wa co submss submbas sseqtrrd sstrd subm0 subm0cl eqeltrd oveq1i ressabsg
+      submrcl mpd3an3 eqtrid syldan w3a wb issubm2 syl mpbir3and simprr sseqtrd
+      eqeltrrd jca ad2antrl adantrl impbida ) BCFGZHZADFGHZAVFHZABIZSZVGVHSZVIV
+      JVLVIACJGZIZCKGZAHZCALTZMHZVLABVMVLADJGZBVHAVSIZVGVSADVSNZUAOVGBVSPZVHBDC
+      EUBZQUCZVGBVMIVHVMBCVMNZUAQUDVLVODKGZAVGVOWFPZVHBDCVOEVONZUEZQVHWFAHZVGAD
+      WFWFNZUFOUGVLDALTZVQMVGVHVJWLVQPZWDVGVJSWLCBLTZALTZVQDWNALEUHVGVJCMHZWOVQ
+      PVGWPVJBCUJZQBACVFMUIUKULZUMVHWLMHZVGAWLDWLNZROVAVLWPVIVNVPVRUNUOVGWPVHWQ
+      QVMAVQCVOWEWHVQNZUPUQURWDVBVGVKSZVHVTWJWSXBABVSVGVIVJUSVGWBVKWCQUTXBVOWFA
+      VGWGVKWIQVIVPVGVJACVOWHUFVCVAXBWLVQMVGVJWMVIWRVDVIVRVGVJAVQCXARVCUGXBDMHZ
+      VHVTWJWSUNUOVGXCVKBDCERQVSAWLDWFWAWKWTUPUQURVE $.
+  $}
+
+  ${
     $d G a b $.  $d .0. a b $.
     0subm.z $e |- .0. = ( 0g ` G ) $.
     $( The zero submonoid of an arbitrary monoid.  (Contributed by AV,
@@ -147261,6 +147303,70 @@ $)
       IXEVAXJRCOCOVBVGVCVDZQZVQXAXHVRVQWSWTXHAWEBWCWDFWEPZVEVFVHADWFRSTXBWHDWID
       WJXBXGWSWHDNXLVSWSWTVIADWCRSTXBXGWTWIDNXLVSWSWTVJADWDRSTVKVLVMVSXGWNAJZWO
       XKVQXNVRABWNFWNPZUKQADWNRSTVPGHAVTWEWJBCWADWNFWQXMXFXOEVNVO $.
+  $}
+
+  ${
+    $d F x y $.  $d S x y $.  $d T x y $.  $d U x y $.  $d X x y $.
+    resmhm.u $e |- U = ( S |`s X ) $.
+    $( Restriction of a monoid homomorphism to a submonoid is a homomorphism.
+       (Contributed by Mario Carneiro, 12-Mar-2015.) $)
+    resmhm $p |- ( ( F e. ( S MndHom T ) /\ X e. ( SubMnd ` S ) ) ->
+        ( F |` X ) e. ( U MndHom T ) ) $=
+      ( vx vy co wcel cfv wa cmnd cbs wf cplusg wceq wral eqid adantl cmhm cres
+      csubmnd cv c0g w3a mhmrcl2 submmnd anim12ci wss mhmf submss fssres syl2an
+      cress a1i eqidd submrcl ressbas2d feq2d mpbid simpll simprl sseldd simprr
+      ad2antlr mhmlin syl3anc submcl 3expb adantll oveqan12d 3eqtr4d ralrimivva
+      fvresd fvres id ressplusgd oveqd fveqeq2d raleqbidv subm0cl fveq2d adantr
+      subm0 mhm0 3eqtr3d 3jca ismhm sylanbrc ) DABUAIJZEAUCKZJZLZCMJZBMJZLCNKZB
+      NKZDEUBZOZGUDZHUDZCPKZIZWSKXAWSKZXBWSKZBPKZIZQZHWQRZGWQRZCUEKZWSKZBUEKZQZ
+      UFWSCBUAIJWKWPWMWOABDUGECAFUHUIWNWTXKXOWNEWRWSOZWTWKANKZWRDOEXQUJZXPWMXQW
+      RABDXQSZWRSZUKXQEAXSULZXQWREDUMUNWNEWQWRWSWNEXQCAMCAEUOIQZWNFUPWNXQUQWMAM
+      JWKEAURZTWMXRWKYATUSZUTVAWNXAXBAPKZIZWSKZXHQZHERZGERXKWNYHGHEEWNXAEJZXBEJ
+      ZLZLZYFDKZXADKZXBDKZXGIZYGXHYMWKXAXQJXBXQJYNYQQWKWMYLVBYMEXQXAWMXRWKYLYAV
+      FZWNYJYKVCVDYMEXQXBYRWNYJYKVEVDXQYEXGABDXAXBXSYESZXGSZVGVHYMYFEDWMYLYFEJZ
+      WKWMYJYKUUAYEEAXAXBYSVIVJVKVOYLXHYQQWNYJYKXEYOXFYPXGXAEDVPXBEDVPVLTVMVNWN
+      YIXJGEWQYDWNYHXIHEWQYDWNYFXDXHWSWNYEXCXAXBWMYEXCQWKWMEYEACWLMYBWMFUPWMYEU
+      QWMVQYCVRTVSVTWAWAVAWNAUEKZWSKUUBDKZXMXNWNUUBEDWMUUBEJWKEAUUBUUBSZWBTVOWN
+      UUBXLWSWMUUBXLQWKECAUUBFUUDWETWCWKUUCXNQWMABDXNUUBUUDXNSZWFWDWGWHGHWQWRXC
+      XGCBWSXNXLWQSXTXCSYTXLSUUEWIWJ $.
+  $}
+
+  ${
+    $d x y F $.  $d x y S $.  $d x y T $.  $d x y U $.  $d x y X $.
+    resmhm2.u $e |- U = ( T |`s X ) $.
+    $( One direction of ~ resmhm2b .  (Contributed by Mario Carneiro,
+       18-Jun-2015.) $)
+    resmhm2 $p |- ( ( F e. ( S MndHom U ) /\ X e. ( SubMnd ` T ) ) ->
+      F e. ( S MndHom T ) ) $=
+      ( vx vy cmhm co wcel cfv wa cmnd cbs wf cplusg wceq c0g eqid csubmnd wral
+      cv w3a mhmrcl1 submrcl anim12i mhmf submbas submss eqsstrrd syl2an mhmlin
+      wss fss 3expb adantlr cress a1i eqidd id ressplusgd ad2antlr oveqd eqtr4d
+      ralrimivva mhm0 adantr subm0 adantl 3jca ismhm sylanbrc ) DACIJKZEBUALZKZ
+      MZANKZBNKZMAOLZBOLZDPZGUCZHUCZAQLZJDLZWCDLZWDDLZBQLZJZRZHVTUBGVTUBZASLZDL
+      ZBSLZRZUDDABIJKVNVRVPVSACDUEEBUFZUGVQWBWLWPVNVTCOLZDPWRWAUNWBVPVTWRACDVTT
+      ZWRTUHVPWREWAECBFUIWAEBWATZUJUKVTWRWADUOULVQWKGHVTVTVQWCVTKZWDVTKZMZMZWFW
+      GWHCQLZJZWJVNXCWFXFRZVPVNXAXBXGVTWEXEACDWCWDWSWETZXETUMUPUQXDWIXEWGWHVPWI
+      XERVNXCVPEWIBCVONCBEURJRVPFUSVPWIUTVPVAWQVBVCVDVEVFVQWNCSLZWOVNWNXIRVPACD
+      XIWMWMTZXITVGVHVPWOXIRVNECBWOFWOTZVIVJVEVKGHVTWAWEWIABDWOWMWSWTXHWITXJXKV
+      LVM $.
+
+    $( Restriction of the codomain of a homomorphism.  (Contributed by Mario
+       Carneiro, 18-Jun-2015.) $)
+    resmhm2b $p |- ( ( X e. ( SubMnd ` T ) /\ ran F C_ X ) ->
+      ( F e. ( S MndHom T ) <-> F e. ( S MndHom U ) ) ) $=
+      ( vx vy cfv wcel wa co cmnd cbs wf cplusg wceq c0g adantl eqid csubmnd cv
+      crn wss cmhm wral mhmrcl1 submmnd ad2antrr mhmf ffnd simplr df-f sylanbrc
+      w3a wfn submbas feq3d mpbid mhmlin 3expb adantll cress submrcl ressplusgd
+      a1i eqidd id ad3antrrr oveqd eqtrd ralrimivva mhm0 subm0 ismhm syl21anbrc
+      3jca resmhm2 ancoms adantlr impbida ) EBUAIZJZDUCEUDZKZDABUELJZDACUELJZWE
+      WFKZAMJZCMJZANIZCNIZDOZGUBZHUBZAPIZLDIZWNDIZWODIZCPIZLZQZHWKUFGWKUFZARIZD
+      IZCRIZQZUOWGWFWIWEABDUGSWCWJWDWFECBFUHUIWHWMXCXGWHWKEDOZWMWHDWKUPWDXHWHWK
+      BNIZDWFWKXIDOWEWKXIABDWKTZXITUJSUKWCWDWFULWKEDUMUNWHEWLDWKWCEWLQWDWFECBFU
+      QUIURUSWHXBGHWKWKWHWNWKJZWOWKJZKZKZWQWRWSBPIZLZXAWFXMWQXPQZWEWFXKXLXQWKWP
+      XOABDWNWOXJWPTZXOTUTVAVBXNXOWTWRWSWCXOWTQWDWFXMWCEXOBCWBMCBEVCLQWCFVFWCXO
+      VGWCVHEBVDVEVIVJVKVLWHXEBRIZXFWFXEXSQWEABDXSXDXDTZXSTZVMSWCXSXFQWDWFECBXS
+      FYAVNUIVKVQGHWKWLWPWTACDXFXDXJWLTXRWTTXTXFTVOVPWCWGWFWDWGWCWFABCDEFVRVSVT
+      WA $.
   $}
 
   ${
@@ -147450,6 +147556,19 @@ $)
       E! u e. B A. x e. B ( ( u .+ x ) = x /\ ( x .+ u ) = x ) ) $=
       ( cgrp wcel cmnd cv co wceq wa wral wreu grpmnd mndideu syl ) EJKELKBMZAM
       ZDNUCOUCUBDNUCOPACQBCRESABCDEGHTUA $.
+  $}
+
+  ${
+    grpassd.b $e |- B = ( Base ` G ) $.
+    grpassd.p $e |- .+ = ( +g ` G ) $.
+    grpassd.g $e |- ( ph -> G e. Grp ) $.
+    grpassd.1 $e |- ( ph -> X e. B ) $.
+    grpassd.2 $e |- ( ph -> Y e. B ) $.
+    grpassd.3 $e |- ( ph -> Z e. B ) $.
+    $( A group operation is associative.  (Contributed by SN, 29-Jan-2025.) $)
+    grpassd $p |- ( ph -> ( ( X .+ Y ) .+ Z ) = ( X .+ ( Y .+ Z ) ) ) $=
+      ( cgrp wcel co wceq grpass syl13anc ) ADNOEBOFBOGBOEFCPGCPEFGCPCPQJKLMBCD
+      EFGHIRS $.
   $}
 
   ${
@@ -150782,6 +150901,830 @@ $)
       JLVDVIVFWBWLWRYEINZYFINWMWBWJWOWRXCVGWBXGYJWBWKXEXGXIVGWBVOXRXEXGYJQVOVRV
       HZXTXLXFDEIGHJLVJTSEIGWQYELVKTVLWBVOXNHNZXRYCYDQYKWBWIXSWDYLWNYAXMHEGWPVT
       JLUSTXTXNXFEIGHJLVJTSVLWBWIWTWAWCWDWHUJQWNXAVSVTEFIGWEPHJXBLKUNRVMVN $.
+  $}
+
+  ${
+    eqg0el.1 $e |- .~ = ( G ~QG H ) $.
+    $( Equivalence class of a quotient group for a subgroup.  (Contributed by
+       Thierry Arnoux, 15-Jan-2024.) $)
+    eqg0el $p |- ( ( G e. Grp /\ H e. ( SubGrp ` G ) )
+                -> ( [ X ] .~ = H <-> X e. H ) ) $=
+      ( cgrp wcel csubg cfv wa cec wceq c0g wbr cbs wer eqid eqger adantl wb
+      grpidcl adantr erth eqgid eqeq1d eqcom a1i 3bitrrd wrel errel 3syl eleq2d
+      relelec 3bitr2d ) BFGZCBHIGZJZDAKZCLZBMIZDANZDUTAKZGZDCGUQVAVBURLCURLZUSU
+      QUTDABOIZUPVEAPZUOABVECVEQZERZSUOUTVEGUPVEBUTVGUTQZUAUBUCUQVBCURUPVBCLUOA
+      BVECUTVGEVIUDSZUEVDUSTUQCURUFUGUHUPVCVATZUOUPVFAUIVKVHVEAUJDUTAUMUKSUQVBC
+      DVJULUN $.
+  $}
+
+  ${
+    $d B x $.  $d X x $.  $d .~ x $.
+    quselbas.e $e |- .~ = ( G ~QG S ) $.
+    quselbas.u $e |- U = ( G /s .~ ) $.
+    quselbas.b $e |- B = ( Base ` G ) $.
+    $( Membership in the base set of a quotient group.  (Contributed by AV,
+       1-Mar-2025.) $)
+    quselbasg $p |- ( ( G e. V /\ X e. W /\ S e. Z )
+                     -> ( X e. ( Base ` U ) <-> E. x e. B X = [ x ] .~ ) ) $=
+      ( wcel cbs cfv wceq cvv co a1i w3a cqs cv cec wrex cqus cqg eqgex 3adant2
+      eqeltrid simp1 qusbas eqcomd eleq2d wb elqsg 3ad2ant2 bitrd ) FGNZIHNZDJN
+      ZUAZIEOPZNIBCUBZNZIAUCCUDQABUEZVBVCVDIVBVDVCVBCFEBRGEFCUFSQVBLTBFOPQVBMTV
+      BCFDUGSZRKUSVAVGRNUTDFGJUHUIUJUSUTVAUKULUMUNUTUSVEVFUOVAABICHUPUQUR $.
+  $}
+
+  ${
+    quseccl0.e $e |- .~ = ( G ~QG S ) $.
+    quseccl0.h $e |- H = ( G /s .~ ) $.
+    quseccl0.c $e |- C = ( Base ` G ) $.
+    quseccl0.b $e |- B = ( Base ` H ) $.
+    $( Closure of the quotient map for a quotient group.  (Contributed by Mario
+       Carneiro, 18-Sep-2015.)  Generalization of ~ quseccl for arbitrary sets
+       ` G ` .  (Revised by AV, 24-Feb-2025.) $)
+    quseccl0g $p |- ( ( G e. V /\ X e. C /\ S e. Z ) -> [ X ] .~ e. B ) $=
+      ( wcel cvv co cbs cfv wceq a1i w3a cec cqs eqgex 3adant2 eqeltrid ecelqsg
+      cqg simp2 syl2anc cqus simp1 qusbas eqtr4di eleqtrd ) EGNZHBNZDINZUAZHCUB
+      ZBCUCZAUSCONUQUTVANUSCEDUHPZOJUPURVBONUQDEGIUDUEUFZUPUQURUIBHCOUGUJUSVAFQ
+      RAUSCEFBOGFECUKPSUSKTBEQRSUSLTVCUPUQURULUMMUNUO $.
+  $}
+
+  ${
+    $d a b c d p q u v w G $.  $d a b c d u v w H $.  $d a b c d p q u v w S $.
+    $d a b p q .+b $.  $d p q .+ $.  $d a b p q V $.  $d p q X $.  $d p q Y $.
+    qusgrp.h $e |- H = ( G /s ( G ~QG S ) ) $.
+    $( If ` Y ` is a normal subgroup of ` G ` , then ` H = G / Y ` is a group,
+       called the quotient of ` G ` by ` Y ` .  (Contributed by Mario Carneiro,
+       14-Jun-2015.)  (Revised by Mario Carneiro, 12-Aug-2015.) $)
+    qusgrp $p |- ( S e. ( NrmSGrp ` G ) -> H e. Grp ) $=
+      ( vu vv vw vd vc cfv wcel cgrp co wceq cv eqid syl adantr erref sylan c0g
+      va cnsg cqg cec cplusg cminusg cbs cqus a1i eqidd csubg wer nsgsubg eqger
+      vb subgrcl eqgcpbl grpcl syl3an1 w3a simpr1 simpr2 syl3anc simpr3 breqtrd
+      wa grpass grpidcl grplid simpr eqbrtrd grpinvcl grplinv qusgrp2 simpld )
+      ABUCJKZCLKBUAJZBAUDMZUECUAJNVQEFGBUFJZVSBCEOZBUGJZJZBUHJZLVRHIUBUPCBVSUIM
+      NVQDUJVQWDUKVQVTUKVQABULJKZWDVSUMZABUNZVSBWDAWDPZVSPZUOQZVQWEBLKZWGABUQQZ
+      UBOUPOIOHOVTVSBWDAWHWIVTPZURVQWKWAWDKZFOZWDKZWAWOVTMZWDKZWLWDVTBWAWOWHWMU
+      SZUTVQWNWPGOZWDKZVAZVGZWQWTVTMZXDWAWOWTVTMVTMZVSXCXDVSWDVQWFXBWJRXCWKWRXA
+      XDWDKVQWKXBWLRZXCWKWNWPWRXFVQWNWPXAVBVQWNWPXAVCWSVDVQWNWPXAVEWDVTBWQWTWHW
+      MUSVDSVQWKXBXDXENWLWDVTBWAWOWTWHWMVHTVFVQWKVRWDKZWLWDBVRWHVRPZVIQZVQWNVGZ
+      VRWAVTMZWAWAVSVQWKWNXKWANWLWDVTBWAVRWHWMXHVJTXJWAVSWDVQWFWNWJRZVQWNVKSVLV
+      QWKWNWCWDKWLWDBWBWAWHWBPZVMTXJWCWAVTMZVRVRVSVQWKWNXNVRNWLWDVTBWBWAVRWHWMX
+      HXMVNTXJVRVSWDXLVQXGWNXIRSVLVOVP $.
+
+    ${
+      qusadd.v $e |- V = ( Base ` G ) $.
+      ${
+        quseccl.b $e |- B = ( Base ` H ) $.
+        $( Closure of the quotient map for a quotient group.  (Contributed by
+           Mario Carneiro, 18-Sep-2015.)  (Proof shortened by AV,
+           9-Mar-2025.) $)
+        quseccl $p |- ( ( S e. ( NrmSGrp ` G ) /\ X e. V ) ->
+          [ X ] ( G ~QG S ) e. B ) $=
+          ( cnsg cfv wcel wa cgrp cqg co cec csubg nsgsubg subgrcl adantr simpr
+          syl simpl eqid quseccl0g syl3anc ) BCJKZLZFELZMCNLZUJUIFCBOPZQALUIUKU
+          JUIBCRKLUKBCSBCTUCUAUIUJUBUIUJUDAEULBCDNFUHULUEGHIUFUG $.
+      $}
+
+      qusadd.p $e |- .+ = ( +g ` G ) $.
+      qusadd.a $e |- .+b = ( +g ` H ) $.
+      $( Value of the group operation in a quotient group.  (Contributed by
+         Mario Carneiro, 18-Sep-2015.) $)
+      qusadd $p |- ( ( S e. ( NrmSGrp ` G ) /\ X e. V /\ Y e. V ) ->
+  ( [ X ] ( G ~QG S ) .+b [ Y ] ( G ~QG S ) ) = [ ( X .+ Y ) ] ( G ~QG S ) ) $=
+        ( vq vp va vb cfv wcel co cv cnsg cqg cgrp cqus wceq a1i cbs csubg eqid
+        wer nsgsubg eqger syl subgrcl eqgcpbl wa grpcl 3expb sylan qusaddval )
+        CDUAQRZDCUBSZDBAEFGHUCMNOPEDVBUDSUEVAIUFFDUGQUEVAJUFVACDUHQRZFVBUJCDUKZ
+        VBDFCJVBUIZULUMVAVCDUCRZVDCDUNUMZOTPTNTZMTZAVBDFCJVEKUOVAVFVHFRZVIFRZUP
+        VHVIASFRZVGVFVJVKVLFADVHVIJKUQURUSKLUT $.
+    $}
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Elementary theory of group homomorphisms
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c GrpHom $.
+
+  $( Extend class notation with the generator of group hom-sets. $)
+  cghm $a class GrpHom $.
+
+  ${
+    $d g s t w x y $.
+    $( A homomorphism of groups is a map between two structures which preserves
+       the group operation.  Requiring both sides to be groups simplifies most
+       theorems at the cost of complicating the theorem which pushes forward a
+       group structure.  (Contributed by Stefan O'Rear, 31-Dec-2014.) $)
+    df-ghm $a |- GrpHom = ( s e. Grp , t e. Grp |-> { g |
+        [. ( Base ` s ) / w ]. ( g : w --> ( Base ` t ) /\
+            A. x e. w A. y e. w ( g ` ( x ( +g ` s ) y ) ) =
+                ( ( g ` x ) ( +g ` t ) ( g ` y ) ) ) } ) $.
+
+    $( Lemma for group homomorphisms.  (Contributed by Stefan O'Rear,
+       31-Dec-2014.) $)
+    reldmghm $p |- Rel dom GrpHom $=
+      ( vs vt vw vg vx vy cgrp cv cbs cfv wf cplusg co wceq wral wa wsbc df-ghm
+      cab cghm reldmmpo ) ABGGCHZBHZIJDHZKEHZFHZAHZLJMUDJUEUDJUFUDJUCLJMNFUBOEU
+      BOPCUGIJQDSTEFCBDARUA $.
+  $}
+
+  ${
+    $d s t w u v f S $.  $d s t w u v f T $.  $d u v f t s X $.
+    $d u v f s t .+ $.  $d u v f s t Y $.  $d u v f s t .+^ $.  $d F f u v $.
+    isghm.w $e |- X = ( Base ` S ) $.
+    isghm.x $e |- Y = ( Base ` T ) $.
+    isghm.a $e |- .+ = ( +g ` S ) $.
+    isghm.b $e |- .+^ = ( +g ` T ) $.
+    $( Property of being a homomorphism of groups.  (Contributed by Stefan
+       O'Rear, 31-Dec-2014.) $)
+    isghm $p |- ( F e. ( S GrpHom T ) <->
+        ( ( S e. Grp /\ T e. Grp ) /\ ( F : X --> Y /\ A. u e. X A. v e. X
+              ( F ` ( u .+ v ) ) = ( ( F ` u ) .+^ ( F ` v ) ) ) ) ) $=
+      ( vf wcel cfv wceq wral cbs cvv vs vt vw cghm co cgrp wa wf cv cplusg cab
+      wsbc df-ghm elmpocl wfn basfn elex adantr funfvex funfni sylancr eqeltrid
+      adantl mapex syl2anc wss simpl ss2abi a1i ssexd vex mp2an feq2 raleqbi1dv
+      raleq anbi12d sbcie fveq2 eqtr4di fveqeq2d raleqbidv bitrid abbidv eqeq2d
+      feq2d oveqd feq3d 2ralbidv ovmpog mpd3an3 eleq2d wi wb simpr fexd adantrd
+      ex feq1 fveq1 oveq12d eqeq12d elab3g syl bitrd biadanii ) GEFUDUEZOZEUFOZ
+      FUFOZUGZHIGUHZBUIZAUIZCUEZGPZXLGPZXMGPZDUEZQZAHRBHRZUGZUAUBUFUFUCUIZUBUIZ
+      SPZNUIZUHZXLXMUAUIZUJPZUEZYEPXLYEPZXMYEPZYCUJPZUEZQZAYBRZBYBRZUGZUCYGSPZU
+      LZNUKZEFUDGBAUCUBNUAUMZUNXJXGGHIYEUHZXNYEPZYJYKDUEZQZAHRBHRZUGZNUKZOZYAXJ
+      XFUUHGXHXIUUHTOXFUUHQXJUUHUUBNUKZTXJHTOZITOUUJTOXJHESPZTJXJSTUOZETOZUULTO
+      ZUPXHUUNXIEUFUQURUUOTESESUSUTVAVBZXJIFSPZTKXJUUMFTOZUUQTOZUPXIUURXHFUFUQV
+      CUUSTFSFSUSUTVAVBHITTNVDVEUUHUUJVFXJUUGUUBNUUBUUFVGVHVIVJUAUBEFUFUFYTUUHU
+      DHYDYEUHZUUCYMQZAHRZBHRZUGZNUKTYGEQZYSUVDNYSYRYDYEUHZYNAYRRZBYRRZUGZUVEUV
+      DYQUVIUCYRUUMYGTOYRTOZUPUAVKUVJTYGSYGSUSUTVLYBYRQYFUVFYPUVHYBYRYDYEVMYOUV
+      GBYBYRYNAYBYRVOVNVPVQUVEUVFUUTUVHUVCUVEYRHYDYEUVEYRUULHYGESVRJVSZWEUVEUVG
+      UVBBYRHUVKUVEYNUVAAYRHUVKUVEYIXNYMYEUVEYHCXLXMUVEYHEUJPCYGEUJVRLVSWFVTWAW
+      AVPWBWCYCFQZUVDUUGNUVLUUTUUBUVCUUFUVLYDIYEHUVLYDUUQIYCFSVRKVSWGUVLUVAUUEB
+      AHHUVLYMUUDUUCUVLYLDYJYKUVLYLFUJPDYCFUJVRMVSWFWDWHVPWCUUAWIWJWKXJYAGTOZWL
+      UUIYAWMXJXKUVMXTXJXKUVMXJXKUGHITGXJXKWNXJUUKXKUUPURWOWQWPUUGYANGTYEGQZUUB
+      XKUUFXTHIYEGWRUVNUUEXSBAHHUVNUUCXOUUDXRXNYEGWSUVNYJXPYKXQDXLYEGWSXMYEGWSW
+      TXAWHVPXBXCXDXE $.
+
+    $( Property of a group homomorphism, similar to ~ ismhm .  (Contributed by
+       Mario Carneiro, 7-Mar-2015.) $)
+    isghm3 $p |- ( ( S e. Grp /\ T e. Grp ) -> ( F e. ( S GrpHom T ) <->
+          ( F : X --> Y /\ A. u e. X A. v e. X
+              ( F ` ( u .+ v ) ) = ( ( F ` u ) .+^ ( F ` v ) ) ) ) ) $=
+      ( co wcel cgrp wa cv cfv wral cghm wf wceq isghm baib ) GEFUANOEPOFPOQHIG
+      UBBRZARZCNGSUFGSUGGSDNUCAHTBHTQABCDEFGHIJKLMUDUE $.
+  $}
+
+  ${
+    $d x y F $.  $d x y S $.  $d x y T $.  $d x y X $.  $d x y Y $.
+    $( A group homomorphism is only defined when the domain is a group.
+       (Contributed by Stefan O'Rear, 31-Dec-2014.) $)
+    ghmgrp1 $p |- ( F e. ( S GrpHom T ) -> S e. Grp ) $=
+      ( vy vx cghm co wcel cgrp wa cbs cfv wf cv cplusg wceq wral isghm simplbi
+      eqid simpld ) CABFGHZAIHZBIHZUBUCUDJAKLZBKLZCMDNZENZAOLZGCLUGCLUHCLBOLZGP
+      EUEQDUEQJEDUIUJABCUEUFUETUFTUITUJTRSUA $.
+
+    $( A group homomorphism is only defined when the codomain is a group.
+       (Contributed by Stefan O'Rear, 31-Dec-2014.) $)
+    ghmgrp2 $p |- ( F e. ( S GrpHom T ) -> T e. Grp ) $=
+      ( vy vx cghm co wcel cgrp wa cbs cfv wf cv cplusg wceq wral isghm simplbi
+      eqid simprd ) CABFGHZAIHZBIHZUBUCUDJAKLZBKLZCMDNZENZAOLZGCLUGCLUHCLBOLZGP
+      EUEQDUEQJEDUIUJABCUEUFUETUFTUITUJTRSUA $.
+
+    ghmf.x $e |- X = ( Base ` S ) $.
+    ghmf.y $e |- Y = ( Base ` T ) $.
+    $( A group homomorphism is a function.  (Contributed by Stefan O'Rear,
+       31-Dec-2014.) $)
+    ghmf $p |- ( F e. ( S GrpHom T ) -> F : X --> Y ) $=
+      ( vy vx cghm co wcel wf cv cplusg cfv wral cgrp wa eqid wceq isghm simpld
+      simprbi ) CABJKLZDECMZHNZINZAOPZKCPUGCPUHCPBOPZKUAIDQHDQZUEARLBRLSUFUKSIH
+      UIUJABCDEFGUITUJTUBUDUC $.
+  $}
+
+  ${
+    $d U a b $.  $d V a b $.  $d F a b $.  $d S a b $.  $d T a b $.
+    $d .+ a b $.  $d .+^ a b $.  $d X a b $.
+    ghmlin.x $e |- X = ( Base ` S ) $.
+    ghmlin.a $e |- .+ = ( +g ` S ) $.
+    ghmlin.b $e |- .+^ = ( +g ` T ) $.
+    $( A homomorphism of groups is linear.  (Contributed by Stefan O'Rear,
+       31-Dec-2014.) $)
+    ghmlin $p |- ( ( F e. ( S GrpHom T ) /\ U e. X /\ V e. X ) ->
+      ( F ` ( U .+ V ) ) = ( ( F ` U ) .+^ ( F ` V ) ) ) $=
+      ( va vb co wcel cfv wceq cv wral wa cghm cbs wf cgrp isghm simprbi simprd
+      eqid fvoveq1 fveq2 oveq1d eqeq12d oveq2 fveq2d oveq2d rspc2v mpan9 3impb
+      ) FCDUANOZEHOZGHOZEGANZFPZEFPZGFPZBNZQZUSLRZMRZANFPZVHFPZVIFPZBNZQZMHSLHS
+      ZUTVATVGUSHDUBPZFUCZVOUSCUDODUDOTVQVOTMLABCDFHVPIVPUHJKUEUFUGVNVGEVIANZFP
+      ZVDVLBNZQLMEGHHVHEQZVJVSVMVTVHEVIFAUIWAVKVDVLBVHEFUJUKULVIGQZVSVCVTVFWBVR
+      VBFVIGEAUMUNWBVLVEVDBVIGFUJUOULUPUQUR $.
+  $}
+
+  ${
+    ghmid.y $e |- Y = ( 0g ` S ) $.
+    ghmid.z $e |- .0. = ( 0g ` T ) $.
+    $( A homomorphism of groups preserves the identity.  (Contributed by Stefan
+       O'Rear, 31-Dec-2014.) $)
+    ghmid $p |- ( F e. ( S GrpHom T ) -> ( F ` Y ) = .0. ) $=
+      ( cghm co wcel cfv cplusg wceq cbs cgrp ghmgrp1 eqid grpidcl syl syl2anc
+      ghmlin mpd3an23 grplid fveq2d eqtr3d ghmgrp2 ffvelcdmd grpid mpbid eqcomd
+      wb ghmf ) CABHIJZEDCKZUMUNUNBLKZIZUNMZEUNMZUMDDALKZIZCKZUPUNUMDANKZJZVCVA
+      UPMUMAOJZVCABCPZVBADVBQZFRSZVGUSUOABDCDVBVFUSQZUOQZUAUBUMUTDCUMVDVCUTDMVE
+      VGVBUSADDVFVHFUCTUDUEUMBOJUNBNKZJUQURUKABCUFUMVBVJDCABCVBVJVFVJQZULVGUGVJ
+      UOBUNEVKVIGUHTUIUJ $.
+  $}
+
+  ${
+    ghminv.b $e |- B = ( Base ` S ) $.
+    ghminv.y $e |- M = ( invg ` S ) $.
+    ghminv.z $e |- N = ( invg ` T ) $.
+    $( A homomorphism of groups preserves inverses.  (Contributed by Stefan
+       O'Rear, 31-Dec-2014.) $)
+    ghminv $p |- ( ( F e. ( S GrpHom T ) /\ X e. B ) ->
+        ( F ` ( M ` X ) ) = ( N ` ( F ` X ) ) ) $=
+      ( co wcel cfv wceq cplusg c0g cgrp eqid sylan adantr cghm ghmgrp1 grprinv
+      wa fveq2d grpinvcl ghmlin mpd3an3 ghmid 3eqtr3d cbs wb ghmgrp2 ffvelcdmda
+      ghmf wf ffvelcdmd grpinvid1 syl3anc mpbird eqcomd ) DBCUAKLZGALZUDZGDMZFM
+      ZGEMZDMZVDVFVHNZVEVHCOMZKZCPMZNZVDGVGBOMZKZDMZBPMZDMZVKVLVDVOVQDVBBQLZVCV
+      OVQNBCDUBZAVNBEGVQHVNRZVQRZIUCSUEVBVCVGALZVPVKNVBVSVCWCVTABEGHIUFSZVNVJBC
+      GDVGAHWAVJRZUGUHVBVRVLNVCBCDVQVLWBVLRZUITUJVDCQLZVECUKMZLVHWHLVIVMULVBWGV
+      CBCDUMTVBAWHGDBCDAWHHWHRZUOZUNVDAWHVGDVBAWHDUPVCWJTWDUQWHVJCFVEVHVLWIWEWF
+      JURUSUTVA $.
+  $}
+
+  ${
+    ghmsub.b $e |- B = ( Base ` S ) $.
+    ghmsub.m $e |- .- = ( -g ` S ) $.
+    ghmsub.n $e |- N = ( -g ` T ) $.
+    $( Linearity of subtraction through a group homomorphism.  (Contributed by
+       Stefan O'Rear, 31-Dec-2014.) $)
+    ghmsub $p |- ( ( F e. ( S GrpHom T ) /\ U e. B /\ V e. B ) ->
+      ( F ` ( U .- V ) ) = ( ( F ` U ) N ( F ` V ) ) ) $=
+      ( co wcel cminusg cfv cplusg wceq eqid wa grpsubval cghm w3a cgrp ghmgrp1
+      3ad2ant1 simp3 grpinvcl syl2anc ghmlin ghminv 3adant2 oveq2d eqtrd fveq2d
+      syld3an3 3adant1 cbs wf ghmf ffvelcdm anim12dan sylan 3impb syl 3eqtr4d )
+      EBCUALMZDAMZHAMZUBZDHBNOZOZBPOZLZEOZDEOZHEOZCNOZOZCPOZLZDHFLZEOZVOVPGLZVI
+      VNVOVKEOZVSLZVTVFVGVHVKAMZVNWEQVIBUCMZVHWFVFVGWGVHBCEUDUEVFVGVHUFABVJHIVJ
+      RZUGUHVLVSBCDEVKAIVLRZVSRZUIUOVIWDVRVOVSVFVHWDVRQVGABCEVJVQHIWHVQRZUJUKUL
+      UMVGVHWBVNQVFVGVHSZWAVMEAVLBVJFDHIWIWHJTUNUPVIVOCUQOZMZVPWMMZSZWCVTQVFVGV
+      HWPVFAWMEURZWLWPBCEAWMIWMRZUSWQVGWNVHWOAWMDEUTAWMHEUTVAVBVCWMVSCVQGVOVPWR
+      WJWKKTVDVE $.
+  $}
+
+  ${
+    $d ph x y $.  $d F x y $.  $d S x y $.  $d T x y $.  $d .+ x y $.
+    $d .+^ x y $.  $d X x y $.  $d Y x y $.
+    isghmd.x $e |- X = ( Base ` S ) $.
+    isghmd.y $e |- Y = ( Base ` T ) $.
+    isghmd.a $e |- .+ = ( +g ` S ) $.
+    isghmd.b $e |- .+^ = ( +g ` T ) $.
+    isghmd.s $e |- ( ph -> S e. Grp ) $.
+    isghmd.t $e |- ( ph -> T e. Grp ) $.
+    isghmd.f $e |- ( ph -> F : X --> Y ) $.
+    isghmd.l $e |- ( ( ph /\ ( x e. X /\ y e. X ) ) -> ( F ` ( x .+ y ) ) =
+          ( ( F ` x ) .+^ ( F ` y ) ) ) $.
+    $( Deduction for a group homomorphism.  (Contributed by Stefan O'Rear,
+       4-Feb-2015.) $)
+    isghmd $p |- ( ph -> F e. ( S GrpHom T ) ) $=
+      ( wcel co cgrp wf cv cfv wceq wral cghm ralrimivva jca isghm syl21anbrc
+      wa ) AFUASGUASIJHUBZBUCZCUCZDTHUDUNHUDUOHUDETUEZCIUFBIUFZULHFGUGTSOPAUMUQ
+      QAUPBCIIRUHUICBDEFGHIJKLMNUJUK $.
+  $}
+
+  ${
+    $d F x y $.  $d S f x y $.  $d T f x y $.
+    $( A group homomorphism is a monoid homomorphism.  (Contributed by Stefan
+       O'Rear, 7-Mar-2015.) $)
+    ghmmhm $p |- ( F e. ( S GrpHom T ) -> F e. ( S MndHom T ) ) $=
+      ( vx vy cghm co wcel cmnd cbs cfv wf cv cplusg wceq wral c0g grpmndd eqid
+      w3a cmhm ghmgrp1 ghmf ghmlin 3expb ralrimivva ghmid 3jca ismhm syl21anbrc
+      ghmgrp2 ) CABFGHZAIHBIHAJKZBJKZCLZDMZEMZANKZGCKUPCKUQCKBNKZGOZEUMPDUMPZAQ
+      KZCKBQKZOZTCABUAGHULAABCUBRULBABCUKRULUOVAVDABCUMUNUMSZUNSZUCULUTDEUMUMUL
+      UPUMHUQUMHUTURUSABUPCUQUMVEURSZUSSZUDUEUFABCVBVCVBSZVCSZUGUHDEUMUNURUSABC
+      VCVBVEVFVGVHVIVJUIUJ $.
+
+    $( Group homomorphisms and monoid homomorphisms coincide.  (Thus,
+       ` GrpHom ` is somewhat redundant, although its stronger reverse closure
+       properties are sometimes useful.)  (Contributed by Stefan O'Rear,
+       7-Mar-2015.) $)
+    ghmmhmb $p |- ( ( S e. Grp /\ T e. Grp ) ->
+        ( S GrpHom T ) = ( S MndHom T ) ) $=
+      ( vf vx vy cgrp wcel wa cghm co cmhm cv ghmmhm cplusg cfv cbs eqid simpll
+      simplr wf mhmf adantl wceq mhmlin 3expb adantll isghmd ex impbid2 eqrdv )
+      AFGZBFGZHZCABIJZABKJZUMCLZUNGZUPUOGZABUPMUMURUQUMURHDEANOZBNOZABUPAPOZBPO
+      ZVAQZVBQZUSQZUTQZUKULURRUKULURSURVAVBUPTUMVAVBABUPVCVDUAUBURDLZVAGZELZVAG
+      ZHVGVIUSJUPOVGUPOVIUPOUTJUCZUMURVHVJVKVAUSUTABUPVGVIVCVEVFUDUEUFUGUHUIUJ
+      $.
+  $}
+
+  ${
+    ghmmulg.b $e |- B = ( Base ` G ) $.
+    ghmmulg.s $e |- .x. = ( .g ` G ) $.
+    ghmmulg.t $e |- .X. = ( .g ` H ) $.
+    $( A group homomorphism preserves group multiples.  (Contributed by Mario
+       Carneiro, 14-Jun-2015.) $)
+    ghmmulg $p |- ( ( F e. ( G GrpHom H ) /\ N e. ZZ /\ X e. B ) ->
+        ( F ` ( N .x. X ) ) = ( N .X. ( F ` X ) ) ) $=
+      ( co wcel cz cfv wceq syl syl3anc eqid eqtr3d cghm w3a cr cneg cn wa cmhm
+      ghmmhm mhmmulg syl3an1 3expa an32s 3adantl2 cminusg simpl1 nnnn0 ad2antll
+      cn0 simpl3 fveq2d cgrp ghmgrp1 nnz mulgcl ghminv syl2anc cbs ghmgrp2 ghmf
+      wf ffvelcdmd mulgneg 3eqtr4d simprl recnd negnegd wo simp2 elznn0nn sylib
+      oveq1d mpjaodan ) DEFUALMZGNMZHAMZUBZGURMZGHBLZDOZGHDOZCLZPZGUCMZGUDZUEMZ
+      UFZWCWEWGWLWDWCWGWEWLWCWGWEWLWCDEFUGLMZWGWEWLEFDUHZABCDEFGHIJKUIUJUKULUMW
+      FWPUFZWNUDZWJCLZWIWKWSWNHBLZEUNOZOZDOZXAWIWSXBDOZFUNOZOZWNWJCLZXGOZXEXAWS
+      XFXIXGWSWQWNURMZWEXFXIPWSWCWQWCWDWEWPUOZWRQWOXKWFWMWNUPUQWCWDWEWPUSZABCDE
+      FWNHIJKUIRUTWSWCXBAMZXEXHPXLWSEVAMZWNNMZWEXNWSWCXOXLEFDVBQZWOXPWFWMWNVCUQ
+      ZXMABEWNHIJVDRAEFDXCXGXBIXCSZXGSZVEVFWSFVAMZXPWJFVGOZMXAXJPWSWCYAXLEFDVHQ
+      XRWSAYBHDWSWCAYBDVJXLEFDAYBIYBSZVIQXMVKYBCFXGWNWJYCKXTVLRVMWSXDWHDWSWTHBL
+      ZXDWHWSXOXPWEYDXDPXQXRXMABEXCWNHIJXSVLRWSWTGHBWSGWSGWFWMWOVNVOVPZWATUTTWS
+      WTGWJCYEWATWFWDWGWPVQWCWDWEVRGVSVTWB $.
+  $}
+
+  ${
+    $d F a b c j $.  $d S a b c j $.  $d T a b c j $.
+    $( The range of a homomorphism is a subgroup.  (Contributed by Stefan
+       O'Rear, 31-Dec-2014.) $)
+    ghmrn $p |- ( F e. ( S GrpHom T ) -> ran F e. ( SubGrp ` T ) ) $=
+      ( vj va vb vc co wcel cfv cbs cv wex cplusg wral wa eqid syl wb eleq1d
+      cghm crn wss cminusg ghmf frnd cdm c0g cgrp ghmgrp1 grpidcl fdmd eleqtrrd
+      csubg elex2 dmmrnm sylib w3a ghmlin wfn 3ad2ant1 syl3an1 fnfvelrn syl2anc
+      ffnd grpcl eqeltrrd 3expia ralrimiv wceq oveq2 ralrn adantr mpbird ghminv
+      grpinvcl sylan jca ralrimiva oveq1 ralbidv fveq2 anbi12d ghmgrp2 issubg2m
+      mpbir3and ) CABUAHIZCUBZBUNJIZWHBKJZUCZDLZWHIDMZELZFLZBNJZHZWHIZFWHOZWNBU
+      DJZJZWHIZPZEWHOZWGAKJZWJCABCXEWJXEQZWJQZUEZUFWGWLCUGZIDMZWMWGAUHJZXIIXJWG
+      XKXEXIWGAUIIZXKXEIABCUJZXEAXKXFXKQUKRWGXEWJCXHULUMDXKXIUORDDCUPUQWGXDGLZC
+      JZWOWPHZWHIZFWHOZXOWTJZWHIZPZGXEOZWGYAGXEWGXNXEIZPZXRXTYDXRXOWNCJZWPHZWHI
+      ZEXEOZYDYGEXEWGYCWNXEIZYGWGYCYIURZXNWNANJZHZCJZYFWHYKWPABXNCWNXEXFYKQZWPQ
+      ZUSYJCXEUTZYLXEIZYMWHIWGYCYPYIWGXEWJCXHVEZVAWGXLYCYIYQXMXEYKAXNWNXFYNVFVB
+      XEYLCVCVDVGVHVIWGXRYHSZYCWGYPYSYRXQYGFEXECWOYEVJXPYFWHWOYEXOWPVKTVLRVMVNY
+      DXNAUDJZJZCJZXSWHXEABCYTWTXNXFYTQZWTQZVOYDYPUUAXEIZUUBWHIWGYPYCYRVMWGXLYC
+      UUEXMXEAYTXNXFUUCVPVQXEUUACVCVDVGVRVSWGYPXDYBSYRXCYAEGXECWNXOVJZWSXRXBXTU
+      UFWRXQFWHUUFWQXPWHWNXOWOWPVTTWAUUFXAXSWHWNXOWTWBTWCVLRVNWGBUIIWIWKWMXDURS
+      ABCWDEFDWJWPWHBWTXGYOUUDWERWF $.
+  $}
+
+  ${
+    0ghm.z $e |- .0. = ( 0g ` N ) $.
+    0ghm.b $e |- B = ( Base ` M ) $.
+    $( The constant zero linear function between two groups.  (Contributed by
+       Stefan O'Rear, 5-Sep-2015.) $)
+    0ghm $p |- ( ( M e. Grp /\ N e. Grp ) ->
+        ( B X. { .0. } ) e. ( M GrpHom N ) ) $=
+      ( cgrp wcel wa csn cxp cmhm cghm cmnd grpmnd 0mhm syl2an ghmmhmb eleqtrrd
+      co ) BGHZCGHZIADJKZBCLTZBCMTUABNHCNHUCUDHUBBOCOABCDEFPQBCRS $.
+  $}
+
+  ${
+    $d B a b $.  $d G a b $.
+    idghm.b $e |- B = ( Base ` G ) $.
+    $( The identity homomorphism on a group.  (Contributed by Stefan O'Rear,
+       31-Dec-2014.) $)
+    idghm $p |- ( G e. Grp -> ( _I |` B ) e. ( G GrpHom G ) ) $=
+      ( va vb cgrp wcel cid cres wf cv cplusg cfv co wceq wral wa cghm fvresi
+      id eqid grpcl 3expb syl oveqan12d adantl eqtr4d ralrimivva wf1o f1oi f1of
+      ax-mp jctil isghm syl21anbrc ) BFGZUPUPAAHAIZJZDKZEKZBLMZNZUQMZUSUQMZUTUQ
+      MZVANZOZEAPDAPZQUQBBRNGUPTZVIUPVHURUPVGDEAAUPUSAGZUTAGZQZQZVCVBVFVMVBAGZV
+      CVBOUPVJVKVNAVABUSUTCVAUAZUBUCAVBSUDVLVFVBOUPVJVKVDUSVEUTVAAUSSAUTSUEUFUG
+      UHAAUQUIURAUJAAUQUKULUMEDVAVABBUQAACCVOVOUNUO $.
+  $}
+
+  ${
+    $d S a b $.  $d X a b $.  $d F a b $.  $d T a b $.  $d U a b $.
+    resghm.u $e |- U = ( S |`s X ) $.
+    $( Restriction of a homomorphism to a subgroup.  (Contributed by Stefan
+       O'Rear, 31-Dec-2014.) $)
+    resghm $p |- ( ( F e. ( S GrpHom T ) /\ X e. ( SubGrp ` S ) ) ->
+        ( F |` X ) e. ( U GrpHom T ) ) $=
+      ( va vb co wcel cfv wa cplusg cbs eqid cgrp adantl wf wceq a1i cghm csubg
+      cres subggrp ghmgrp2 adantr ghmf subgss fssres syl2an cress eqidd subgrcl
+      wss ressbas2d feq2d mpbid cv wb anbi12d syl biimpar simpll sselda adantrr
+      eleq2 adantrl ghmlin syl3anc id ressplusgd ad2antlr fveq2d subgcl adantll
+      oveqd 3expb fvresd eqtr3d fvres oveqan12d 3eqtr4d syldan isghmd ) DABUAIJ
+      ZEAUBKZJZLZGHCMKZBMKZCBDEUCZCNKZBNKZWLOWMOZWIOWJOZWGCPJWEEACFUDQWEBPJWGAB
+      DUEUFWHEWMWKRZWLWMWKRWEANKZWMDREWQUNZWPWGABDWQWMWQOZWNUGWQEAWSUHZWQWMEDUI
+      UJWHEWLWMWKWHEWQCAPCAEUKISZWHFTWHWQULWGAPJWEEAUMZQWGWRWEWTQZUOZUPUQWHGURZ
+      WLJZHURZWLJZLZXEEJZXGEJZLZXEXGWIIZWKKZXEWKKZXGWKKZWJIZSWHXLXIWHEWLSZXLXIU
+      SXDXRXJXFXKXHEWLXEVFEWLXGVFUTVAVBWHXLLZXEXGAMKZIZDKZXEDKZXGDKZWJIZXNXQXSW
+      EXEWQJZXGWQJZYBYESWEWGXLVCWHXJYFXKWHEWQXEXCVDVEWHXKYGXJWHEWQXGXCVDVGXTWJA
+      BXEDXGWQWSXTOZWOVHVIXSYAWKKXNYBXSYAXMWKXSXTWIXEXGWGXTWISWEXLWGEXTACWFPXAW
+      GFTWGXTULWGVJXBVKVLVPVMXSYAEDWGXLYAEJZWEWGXJXKYIXTEAXEXGYHVNVQVOVRVSXLXQY
+      ESWHXJXKXOYCXPYDWJXEEDVTXGEDVTWAQWBWCWD $.
+  $}
+
+  ${
+    resghm2.u $e |- U = ( T |`s X ) $.
+    $( One direction of ~ resghm2b .  (Contributed by Mario Carneiro,
+       13-Jan-2015.)  (Revised by Mario Carneiro, 18-Jun-2015.) $)
+    resghm2 $p |- ( ( F e. ( S GrpHom U ) /\ X e. ( SubGrp ` T ) ) ->
+      F e. ( S GrpHom T ) ) $=
+      ( cghm co wcel csubg cfv cmhm csubmnd ghmmhm subgsubm resmhm2 syl2an cgrp
+      wa wceq ghmgrp1 subgrcl ghmmhmb eleqtrrd ) DACGHIZEBJKIZSDABLHZABGHZUEDAC
+      LHIEBMKIDUGIUFACDNEBOABCDEFPQUEARIBRIUHUGTUFACDUAEBUBABUCQUD $.
+
+    $( Restriction of the codomain of a homomorphism.  (Contributed by Mario
+       Carneiro, 13-Jan-2015.)  (Revised by Mario Carneiro, 18-Jun-2015.) $)
+    resghm2b $p |- ( ( X e. ( SubGrp ` T ) /\ ran F C_ X ) ->
+      ( F e. ( S GrpHom T ) <-> F e. ( S GrpHom U ) ) ) $=
+      ( cfv wcel wa cgrp cghm co wi ghmgrp1 a1i wb cmhm wceq adantr ghmmhmb crn
+      csubg wss csubmnd subgsubm resmhm2b adantl subgrcl sylan2 subggrp 3bitr4d
+      sylan eleq2d expcom pm5.21ndd ) EBUBGHZDUAEUCZIZAJHZDABKLZHZDACKLZHZVAUSM
+      URABDNOVCUSMURACDNOUSURVAVCPUSURIZDABQLZHZDACQLZHZVAVCURVFVHPZUSUPEBUDGHU
+      QVIEBUEABCDEFUFULUGVDUTVEDURUSBJHZUTVERUPVJUQEBUHSABTUIUMVDVBVGDURUSCJHZV
+      BVGRUPVKUQEBCFUJSACTUIUMUKUNUO $.
+  $}
+
+  ${
+    ghmghmrn.u $e |- U = ( T |`s ran F ) $.
+    $( A group homomorphism from ` G ` to ` H ` is also a group homomorphism
+       from ` G ` to its image in ` H ` .  (Contributed by Paul Chapman,
+       3-Mar-2008.)  (Revised by AV, 26-Aug-2021.) $)
+    ghmghmrn $p |- ( F e. ( S GrpHom T ) -> F e. ( S GrpHom U ) ) $=
+      ( crn csubg cfv wcel cghm co ghmrn wss ssid resghm2b mpan2 biimpd mpcom
+      wb ) DFZBGHIZDABJKIZDACJKIZABDLUAUBUCUATTMUBUCSTNABCDTEOPQR $.
+  $}
+
+  $( The composition of group homomorphisms is a homomorphism.  (Contributed by
+     Mario Carneiro, 12-Jun-2015.) $)
+  ghmco $p |- ( ( F e. ( T GrpHom U ) /\ G e. ( S GrpHom T ) ) ->
+      ( F o. G ) e. ( S GrpHom U ) ) $=
+    ( cghm co wcel wa ccom cmhm ghmmhm syl2an cgrp wceq ghmgrp1 ghmgrp2 ghmmhmb
+    mhmco syl2anr eleqtrrd ) DBCFGHZEABFGHZIDEJZACKGZACFGZUBDBCKGHEABKGHUDUEHUC
+    BCDLABELABCDESMUCANHCNHUFUEOUBABEPBCDQACRTUA $.
+
+  $( The image of a subgroup under a homomorphism.  (Contributed by Stefan
+     O'Rear, 31-Dec-2014.) $)
+  ghmima $p |- ( ( F e. ( S GrpHom T ) /\ U e. ( SubGrp ` S ) ) ->
+      ( F " U ) e. ( SubGrp ` T ) ) $=
+    ( cghm co wcel csubg cfv wa cima cres crn df-ima cress eqid resghm eqeltrid
+    ghmrn syl ) DABEFGCAHIGJZDCKDCLZMZBHIZDCNUAUBACOFZBEFGUCUDGABUEDCUEPQUEBUBS
+    TR $.
+
+  ${
+    $d F a b j $.  $d V a b j $.  $d T a b $.  $d S a b j $.
+    $( The inverse image of a subgroup under a homomorphism.  (Contributed by
+       Stefan O'Rear, 31-Dec-2014.) $)
+    ghmpreima $p |- ( ( F e. ( S GrpHom T ) /\ V e. ( SubGrp ` T ) ) ->
+        ( `' F " V ) e. ( SubGrp ` S ) ) $=
+      ( vj va vb co wcel cfv wa eqid adantr syl wceq eqeltrd elpreima mpbir2and
+      cv wb cghm csubg ccnv cima cbs wss wex cplusg wral cminusg cnvimass fssdm
+      wf ghmf c0g cgrp ghmgrp1 grpidcl ghmid subg0cl adantl ffnd elex2 ad2antrr
+      simprll simprrl grpcld simpll ghmlin syl3anc simplr simprlr subgcl sylbid
+      wfn simprrr ralrimiv simprl grpinvcl syl2an2r ad2ant2r subginvcl ad2ant2l
+      expr ghminv jca ex w3a issubg2m mpbir3and ) CABUAHIZDBUBJIZKZCUCDUDZAUBJI
+      ZWNAUEJZUFZESWNIEUGZFSZGSZAUHJZHZWNIZGWNUIZWSAUJJZJZWNIZKZFWNUIZWMWPBUEJZ
+      WNCCDUKWKWPXJCUMWLABCWPXJWPLZXJLUNMZULWMAUOJZWNIZWRWMXNXMWPIZXMCJZDIZWMAU
+      PIZXOWKXRWLABCUQZMZWPAXMXKXMLZURNWMXPBUOJZDWKXPYBOWLABCXMYBYAYBLZUSMWLYBD
+      IWKDBYBYCUTVAPWMCWPVOZXNXOXQKTWMWPXJCXLVBZWPXMDCQNREXMWNVCNWMXHFWNWMWSWNI
+      ZWSWPIZWSCJZDIZKZXHWMYDYFYJTYEWPWSDCQNWMYJXHWMYJKZXDXGYKXCGWNYKWTWNIZWTWP
+      IZWTCJZDIZKZXCWMYLYPTZYJWMYDYQYEWPWTDCQNMWMYJYPXCWMYJYPKZKZXCXBWPIZXBCJZD
+      IZYSWPXAAWSWTXKXALZWKXRWLYRXSVDWMYGYIYPVEZWMYJYMYOVFZVGYSUUAYHYNBUHJZHZDY
+      SWKYGYMUUAUUGOWKWLYRVHUUDUUEXAUUFABWSCWTWPXKUUCUUFLZVIVJYSWLYIYOUUGDIWKWL
+      YRVKWMYGYIYPVLWMYJYMYOVPUUFDBYHYNUUHVMVJPWMXCYTUUBKTZYRWMYDUUIYEWPXBDCQNM
+      RWDVNVQYKXGXFWPIZXFCJZDIZWMXRYJYGUUJXTWMYGYIVRWPAXEWSXKXELZVSVTYKUUKYHBUJ
+      JZJZDWKYGUUKUUOOWLYIWPABCXEUUNWSXKUUMUUNLZWEWAWLYIUUODIWKYGDBUUNYHUUPWBWC
+      PWMXGUUJUULKTZYJWMYDUUQYEWPXFDCQNMRWFWGVNVQWMXRWOWQWRXIWHTXTFGEWPXAWNAXEX
+      KUUCUUMWINWJ $.
+  $}
+
+  ${
+    $d F x y $.  $d G x y $.  $d S x y $.  $d T x $.
+    $( The equalizer of two group homomorphisms is a subgroup.  (Contributed by
+       Stefan O'Rear, 7-Mar-2015.)  (Revised by Mario Carneiro, 6-May-2015.) $)
+    ghmeql $p |- ( ( F e. ( S GrpHom T ) /\ G e. ( S GrpHom T ) ) ->
+        dom ( F i^i G ) e. ( SubGrp ` S ) ) $=
+      ( vx vy co wcel wa cfv cv cminusg wral ghmmhm wceq cbs fveq2 eqeq12d eqid
+      adantr cghm cin cdm csubg csubmnd cmhm mhmeql syl2an crab wi cgrp ghmgrp1
+      simprl grpinvcl syl2anc simprr fveq2d ghminv ad2ant2r 3eqtr4d elrabd expr
+      ad2ant2lr ralrimiva ralrab sylibr wb wfn wf ghmf ffnd adantl fndmin eleq2
+      raleqbi1dv syl mpbird issubg3 mpbir2and ) CABUAGZHZDVTHZIZCDUBUCZAUDJHZWD
+      AUEJHZEKZALJZJZWDHZEWDMZWACABUFGZHDWLHWFWBABCNABDNABCDUGUHWCWKWIFKZCJZWMD
+      JZOZFAPJZUIZHZEWRMZWCWGCJZWGDJZOZWSUJZEWQMWTWCXDEWQWCWGWQHZXCWSWCXEXCIZIZ
+      WPWICJZWIDJZOFWIWQWMWIOWNXHWOXIWMWICQWMWIDQRXGAUKHZXEWIWQHWCXJXFWAXJWBABC
+      ULTZTWCXEXCUMWQAWHWGWQSZWHSZUNUOXGXABLJZJZXBXNJZXHXIXGXAXBXNWCXEXCUPUQWAX
+      EXHXOOWBXCWQABCWHXNWGXLXMXNSZURUSWBXEXIXPOWAXCWQABDWHXNWGXLXMXQURVCUTVAVB
+      VDWPXCWSEFWQWMWGOWNXAWOXBWMWGCQWMWGDQRVEVFWCWDWROZWKWTVGWCCWQVHDWQVHXRWCW
+      QBPJZCWAWQXSCVIWBABCWQXSXLXSSZVJTVKWCWQXSDWBWQXSDVIWAABDWQXSXLXTVJVLVKFWQ
+      CDVMUOWJWSEWDWRWDWRWIVNVOVPVQWCXJWEWFWKIVGXKEWDAWHXMVRVPVS $.
+  $}
+
+  ${
+    $d x y z F $.  $d x y z S $.  $d x y z T $.  $d x y z U $.  $d x y z Y $.
+    ghmnsgima.1 $e |- Y = ( Base ` T ) $.
+    $( The image of a normal subgroup under a surjective homomorphism is
+       normal.  (Contributed by Mario Carneiro, 4-Feb-2015.) $)
+    ghmnsgima $p |- ( ( F e. ( S GrpHom T ) /\ U e. ( NrmSGrp ` S ) /\
+      ran F = Y ) -> ( F " U ) e. ( NrmSGrp ` T ) ) $=
+      ( vx vy vz co wcel cnsg cfv wceq cv wral adantr syl eqid syl3anc cghm crn
+      w3a csubg cplusg csg simp1 nsgsubg 3ad2ant2 ghmima syl2anc cbs wa ghmgrp1
+      cima simprl wss subgss simprr sseldd grpcl ghmsub ghmlin oveq1d eqtrd wfn
+      cgrp wf ghmf ffnd nsgconj fnfvima eqeltrrd ralrimivva wb oveq1 id oveq12d
+      simpl2 eleq1d ralbidv ralrn raleqdv ralima 3bitr3d mpbird isnsg3 sylanbrc
+      simp3 oveq2 ) DABUAJKZCALMKZDUBZENZUCZDCUOZBUDMKZGOZHOZBUEMZJZWRBUFMZJZWP
+      KZHWPPZGEPZWPBLMKWOWKCAUDMKZWQWKWLWNUGZWLWKXGWNCAUHUIZABCDUJUKWOXFIOZDMZW
+      RDMZWTJZXKXBJZWPKZGCPZIAULMZPZWOXOIGXQCWOXJXQKZWRCKZUMZUMZXJWRAUEMZJZXJAU
+      FMZJZDMZXNWPYBYGYDDMZXKXBJZXNYBWKYDXQKZXSYGYINWOWKYAXHQZYBAVGKZXSWRXQKZYJ
+      YBWKYLYKABDUNRWOXSXTUPZYBCXQWRWOCXQUQZYAWOXGYOXIXQCAXQSZURRZQZWOXSXTUSZUT
+      ZXQYCAXJWRYPYCSZVATYNXQABYDDYEXBXJYPYESZXBSZVBTYBYHXMXKXBYBWKXSYMYHXMNYKY
+      NYTYCWTABXJDWRXQYPUUAWTSZVCTVDVEYBDXQVFZYOYFCKZYGWPKYBXQEDWOXQEDVHZYAWOWK
+      UUGXHABDXQEYPFVIRZQVJYRYBWLXSXTUUFWKWLWNYAVSYNYSXJWRYCCAYEXQYPUUAUUBVKTXQ
+      CDYFVLTVMVNWOXEGWMPZXKWSWTJZXKXBJZWPKZHWPPZIXQPZXFXRWOUUEUUIUUNVOWOXQEDUU
+      HVJZXEUUMGIXQDWRXKNZXDUULHWPUUPXCUUKWPUUPXAUUJWRXKXBWRXKWSWTVPUUPVQVRVTWA
+      WBRWOXEGWMEWKWLWNWIWCWOUUMXPIXQWOUUEYOUUMXPVOUUOYQUULXOHGXQCDWSXLNZUUKXNW
+      PUUQUUJXMXKXBWSXLXKWTWJVDVTWDUKWAWEWFGHWTWPBXBEFUUDUUCWGWH $.
+  $}
+
+  ${
+    $d x y F $.  $d x y S $.  $d x y T $.  $d x y V $.
+    $( The inverse image of a normal subgroup under a homomorphism is normal.
+       (Contributed by Mario Carneiro, 4-Feb-2015.) $)
+    ghmnsgpreima $p |- ( ( F e. ( S GrpHom T ) /\ V e. ( NrmSGrp ` T ) ) ->
+        ( `' F " V ) e. ( NrmSGrp ` S ) ) $=
+      ( vx vy co wcel cnsg cfv wa csubg cv cplusg csg wral cbs eqid syl syl3anc
+      cghm ccnv cima nsgsubg ghmpreima sylan2 ghmgrp1 ad2antrr simprl simprr wb
+      cgrp wf simpll ghmf ffnd elpreima mpbid simpld grpcl grpsubcl wceq ghmsub
+      wfn ghmlin oveq1d eqtrd simplr ffvelcdmd simprd nsgconj eqeltrd mpbir2and
+      ralrimivva isnsg3 sylanbrc ) CABUAGHZDBIJHZKZCUBDUCZALJHZEMZFMZANJZGZWBAO
+      JZGZVTHZFVTPEAQJZPVTAIJHVRVQDBLJHWADBUDABCDUEUFVSWHEFWIVTVSWBWIHZWCVTHZKZ
+      KZWHWGWIHZWGCJZDHZWMAULHZWEWIHZWJWNVQWQVRWLABCUGUHZWMWQWJWCWIHZWRWSVSWJWK
+      UIZWMWTWCCJZDHZWMWKWTXCKZVSWJWKUJWMCWIVDZWKXDUKWMWIBQJZCWMVQWIXFCUMVQVRWL
+      UNZABCWIXFWIRZXFRZUOSZUPZWIWCDCUQSURZUSZWIWDAWBWCXHWDRZUTTZXAWIAWFWEWBXHW
+      FRZVATWMWOWBCJZXBBNJZGZXQBOJZGZDWMWOWECJZXQXTGZYAWMVQWRWJWOYCVBXGXOXAWIAB
+      WECWFXTWBXHXPXTRZVCTWMYBXSXQXTWMVQWJWTYBXSVBXGXAXMWDXRABWBCWCWIXHXNXRRZVE
+      TVFVGWMVRXQXFHXCYADHVQVRWLVHWMWIXFWBCXJXAVIWMWTXCXLVJXQXBXRDBXTXFXIYEYDVK
+      TVLWMXEWHWNWPKUKXKWIWGDCUQSVMVNEFWDVTAWFWIXHXNXPVOVP $.
+  $}
+
+  ${
+    ghmker.1 $e |- .0. = ( 0g ` T ) $.
+    $( The kernel of a homomorphism is a normal subgroup.  (Contributed by
+       Mario Carneiro, 4-Feb-2015.) $)
+    ghmker $p |- ( F e. ( S GrpHom T ) ->
+        ( `' F " { .0. } ) e. ( NrmSGrp ` S ) ) $=
+      ( cghm co wcel csn cnsg cfv ccnv cima cgrp ghmgrp2 syl ghmnsgpreima mpdan
+      0nsg ) CABFGHZDIZBJKHZCLUAMAJKHTBNHUBABCOBDESPABCUAQR $.
+  $}
+
+  ${
+    ghmeqker.b $e |- B = ( Base ` S ) $.
+    ghmeqker.z $e |- .0. = ( 0g ` T ) $.
+    ghmeqker.k $e |- K = ( `' F " { .0. } ) $.
+    ghmeqker.m $e |- .- = ( -g ` S ) $.
+    $( Two source points map to the same destination point under a group
+       homomorphism iff their difference belongs to the kernel.  (Contributed
+       by Stefan O'Rear, 31-Dec-2014.) $)
+    ghmeqker $p |- ( ( F e. ( S GrpHom T ) /\ U e. B /\ V e. B ) ->
+      ( ( F ` U ) = ( F ` V ) <-> ( U .- V ) e. K ) ) $=
+      ( co wcel cfv wceq csn eqid 3ad2ant1 cghm w3a c0g ccnv cima sneqi imaeq2i
+      wa csg eqtri eleq2i wfn wb cbs ghmf ffnd fniniseg syl bitrid cgrp ghmgrp1
+      grpsubcl syl3an1 biantrurd ghmsub eqeq1d ghmgrp2 wf simp2 ffvelcdmd simp3
+      bitr3d grpsubeq0 syl3anc 3bitrrd ) EBCUANOZDAOZHAOZUBZDHGNZFOZVTAOZVTEPZC
+      UCPZQZUHZDEPZHEPZCUIPZNZWDQZWGWHQZWAVTEUDZWDRZUEZOZVSWFFWOVTFWMIRZUEWOLWQ
+      WNWMIWDKUFUGUJUKVSEAULZWPWFUMVPVQWRVRVPACUNPZEBCEAWSJWSSZUOZUPTAWDVTEUQUR
+      USVSWEWFWKVSWBWEVPBUTOVQVRWBBCEVAABGDHJMVBVCVDVSWCWJWDABCDEGWIHJMWISZVEVF
+      VLVSCUTOZWGWSOWHWSOWKWLUMVPVQXCVRBCEVGTVSAWSDEVPVQAWSEVHVRXATZVPVQVRVIVJV
+      SAWSHEXDVPVQVRVKVJWSCWIWGWHWDWTWDSXBVMVNVO $.
+  $}
+
+  ${
+    f1ghm0to0.a $e |- A = ( Base ` R ) $.
+    f1ghm0to0.b $e |- B = ( Base ` S ) $.
+    f1ghm0to0.n $e |- N = ( 0g ` R ) $.
+    f1ghm0to0.0 $e |- .0. = ( 0g ` S ) $.
+    $( If a group homomorphism ` F ` is injective, it maps the zero of one
+       group (and only the zero) to the zero of the other group.  (Contributed
+       by AV, 24-Oct-2019.)  (Revised by Thierry Arnoux, 13-May-2023.) $)
+    f1ghm0to0 $p |- ( ( F e. ( R GrpHom S ) /\ F : A -1-1-> B /\ X e. A )
+                      -> ( ( F ` X ) = .0. <-> X = N ) ) $=
+      ( cghm co wcel wf1 w3a cfv wceq 3ad2ant1 ghmid eqeq2d wi simp2 simp3 cgrp
+      ghmgrp1 grpidcl syl f1veqaeq syl12anc sylbird fveq2 sylan9eqr ex impbid )
+      ECDMNOZABEPZGAOZQZGERZHSZGFSZUTVBVAFERZSZVCUTVDHVAUQURVDHSUSCDEFHKLUATZUB
+      UTURUSFAOZVEVCUCUQURUSUDUQURUSUEUQURVGUSUQCUFOVGCDEUGACFIKUHUITABGFEUJUKU
+      LUTVCVBVCUTVAVDHGFEUMVFUNUOUP $.
+
+    $d .0. x y z $.  $d A x y z $.  $d B x $.  $d F x y z $.  $d N x y z $.
+    $d R x y z $.  $d S x y z $.
+    $( Two ways of saying a group homomorphism is 1-1 into its codomain.
+       (Contributed by Paul Chapman, 3-Mar-2008.)  (Revised by Mario Carneiro,
+       13-Jan-2015.)  (Proof shortened by AV, 4-Apr-2025.) $)
+    ghmf1 $p |- ( F e. ( R GrpHom S ) -> ( F : A -1-1-> B <->
+          A. x e. A ( ( F ` x ) = .0. -> x = N ) ) ) $=
+      ( vy vz co wcel cv cfv wceq wa cghm wf1 wi wral wb f1ghm0to0 3expa biimpd
+      ralrimiva wf ghmf adantr eqid ghmsub 3expb adantlr eqeq1d fveqeq2 imbi12d
+      eqeq1 simplr cgrp ghmgrp1 grpsubcl sylan rspcdva sylbird ghmgrp2 ad2antrr
+      csg simprl ffvelcdmd simprr grpsubeq0 syl3anc 3imtr3d ralrimivva sylanbrc
+      dff13 impbida ) FDEUAOPZBCFUBZAQZFRHSZWCGSZUCZABUDZWAWBTZWFABWHWCBPZTWDWE
+      WAWBWIWDWEUEBCDEFGWCHIJKLUFUGUHUIWAWGTZBCFUJZMQZFRZNQZFRZSZWLWNSZUCZNBUDM
+      BUDWBWAWKWGDEFBCIJUKZULWJWRMNBBWJWLBPZWNBPZTZTZWMWOEVJRZOZHSZWLWNDVJRZOZG
+      SZWPWQXCXFXHFRZHSZXIXCXJXEHWAXBXJXESZWGWAWTXAXLBDEWLFXGXDWNIXGUMZXDUMZUNU
+      OUPUQXCWFXKXIUCABXHWCXHSWDXKWEXIWCXHHFURWCXHGUTUSWAWGXBVAWJDVBPZXBXHBPZWA
+      XOWGDEFVCZULXOWTXAXPBDXGWLWNIXMVDUOVEVFVGXCEVBPZWMCPWOCPXFWPUEWAXRWGXBDEF
+      VHVIXCBCWLFWAWKWGXBWSVIZWJWTXAVKZVLXCBCWNFXSWJWTXAVMZVLCEXDWMWOHJLXNVNVOX
+      CXOWTXAXIWQUEWAXOWGXBXQVIXTYABDXGWLWNGIKXMVNVOVPVQMNBCFVSVRVT $.
+
+    $( A group homomorphism ` F ` is injective if and only if its kernel is the
+       singleton ` { N } ` .  (Contributed by Thierry Arnoux, 27-Oct-2017.)
+       (Proof shortened by AV, 24-Oct-2019.)  (Revised by Thierry Arnoux,
+       13-May-2023.) $)
+    kerf1ghm $p |- ( F e. ( R GrpHom S )
+                     -> ( F : A -1-1-> B <-> ( `' F " { .0. } ) = { N } ) ) $=
+      ( vx vy wcel wceq wa cfv wb syl elsng cghm co wf1 ccnv csn cima simpl wfn
+      cv f1fn adantl elpreima biimpa simpld simprd mpbid wi w3a f1ghm0to0 3expa
+      biimpd imp syl21anc velsn imbitrrdi ssrdv cgrp ghmgrp1 grpidcl ghmid ghmf
+      ex wss ffvelcdmd mpbird wf ffn 3syl mpbir2and snssd adantr eqssd wral csg
+      simpr2l simpr2r simpr3 eqid ghmeqker syl31anc simpr1 simp2 grpsubcl 3expb
+      eleqtrd syl2an grpsubeq0 syl3anc 3anassrs ralrimivva sylanbrc impbida
+      dff13 ) ECDUAUBNZABEUCZEUDGUEZUFZFUEZOZXDXEPZXGXHXJLXGXHXJLUIZXGNZXKFOZXK
+      XHNXJXLXMXJXLPZXJXKANZXKEQZGOZXMXJXLUGXNXOXPXFNZXJXLXOXRPZXJEAUHZXLXSRXEX
+      TXDABEUJUKAXKXFEULSUMZUNXNXRXQXNXOXRYAUOZXNXRXRXQRYBXPGXFTSUPXJXOPXQXMXDX
+      EXOXQXMUQXDXEXOURXQXMABCDEFXKGHIJKUSVAUTVBVCVLLFVDVEVFXDXHXGVMXEXDFXGXDFX
+      GNZFANZFEQZXFNZXDCVGNZYDCDEVHZACFHJVISZXDYFYEGOZCDEFGJKVJXDYEBNYFYJRXDABF
+      ECDEABHIVKZYIVNYEGBTSVOXDABEVPZXTYCYDYFPRYKABEVQAFXFEULVRVSVTWAWBXDXIPZYL
+      XPMUIZEQOZXKYNOZUQZMAWCLAWCXEXDYLXIYKWAYMYQLMAAYMXOYNANZPZPYOYPXDXIYSYOYP
+      XDXIYSYOURZPZXKYNCWDQZUBZFOZYPUUAUUCXHNZUUDUUAUUCXGXHUUAXDXOYRYOUUCXGNZXD
+      YTUGXOYRXIYOXDWEZXOYRXIYOXDWFZXDXIYSYOWGXDXOYRURYOUUFACDXKEXGUUBYNGHKXGWH
+      UUBWHZWIUMWJXDXIYSYOWKWOUUAUUCANZUUEUUDRXDYGYSUUJYTYHXIYSYOWLYGXOYRUUJACU
+      UBXKYNHUUIWMWNWPUUCFATSUPUUAYGXOYRUUDYPRXDYGYTYHWAUUGUUHACUUBXKYNFHJUUIWQ
+      WRUPWSVLWTLMABEXCXAXB $.
+  $}
+
+  ${
+    $d x y F $.  $d x y S $.  $d x y T $.  $d x y X $.  $d x y Y $.
+    ghmf1o.x $e |- X = ( Base ` S ) $.
+    ghmf1o.y $e |- Y = ( Base ` T ) $.
+    $( A bijective group homomorphism is an isomorphism.  (Contributed by Mario
+       Carneiro, 13-Jan-2015.) $)
+    ghmf1o $p |- ( F e. ( S GrpHom T ) ->
+      ( F : X -1-1-onto-> Y <-> `' F e. ( T GrpHom S ) ) ) $=
+      ( vx vy cghm co wcel wf1o wa cgrp wf cfv wceq adantr syl2anc ccnv cv wral
+      cplusg ghmgrp2 ghmgrp1 jca f1ocnv adantl f1of syl simpll simprl ffvelcdmd
+      simprr eqid ghmlin syl3anc simplr f1ocnvfv2 oveq12d eqtrd wi f1ocnvfv mpd
+      grpcl ralrimivva isghm sylanbrc wfn ghmf ffnd dff1o4 impbida ) CABJKLZDEC
+      MZCUAZBAJKLZVOVPNZBOLZAOLZNZEDVQPZHUBZIUBZBUDQZKZVQQWDVQQZWEVQQZAUDQZKZRZ
+      IEUCHEUCZNVRVOWBVPVOVTWAABCUEABCUFZUGSVSWCWMVSEDVQMZWCVPWOVODECUHUIEDVQUJ
+      UKZVSWLHIEEVSWDELZWEELZNZNZWKCQZWGRZWLWTXAWHCQZWICQZWFKZWGWTVOWHDLZWIDLZX
+      AXERVOVPWSULZWTEDWDVQVSWCWSWPSZVSWQWRUMZUNZWTEDWEVQXIVSWQWRUOZUNZWJWFABWH
+      CWIDFWJUPZWFUPZUQURWTXCWDXDWEWFWTVPWQXCWDRVOVPWSUSZXJDEWDCUTTWTVPWRXDWERX
+      PXLDEWECUTTVAVBWTVPWKDLZXBWLVCXPWTWAXFXGXQWTVOWAXHWNUKXKXMDWJAWHWIFXNVFUR
+      DEWKWGCVDTVEVGUGIHWFWJBAVQEDGFXOXNVHVIVOVRNZCDVJVQEVJVPXRDECVODECPVRABCDE
+      FGVKSVLXREDVQVRWCVOBAVQEDGFVKUIVLDECVMVIVN $.
+  $}
+
+  ${
+    $d x y .- $.  $d w x y z .+ $.  $d w x y z A $.  $d w y z F $.  $d w x N $.
+    $d w x y z G $.  $d w x y z S $.  $d w x y z X $.
+    conjghm.x $e |- X = ( Base ` G ) $.
+    conjghm.p $e |- .+ = ( +g ` G ) $.
+    conjghm.m $e |- .- = ( -g ` G ) $.
+    ${
+      conjghm.f $e |- F = ( x e. X |-> ( ( A .+ x ) .- A ) ) $.
+      $( Conjugation is an automorphism of the group.  (Contributed by Mario
+         Carneiro, 13-Jan-2015.) $)
+      conjghm $p |- ( ( G e. Grp /\ A e. X ) ->
+        ( F e. ( G GrpHom G ) /\ F : X -1-1-onto-> X ) ) $=
+        ( wcel wa co adantr syl3anc cfv wceq grpcld syl13anc vy cgrp cghm simpl
+        vz wf1o grpcl 3expa simplr grpsubcl fmptd simprl simprr grpass grpnpcan
+        oveq1d grpaddsubass oveq2d 3eqtr4d oveq2 fvmptd3 oveq12d isghmd cminusg
+        3eqtr2rd eqid grpinvcl simpr adantrl adantrr grplcan c0g grplinv grplid
+        cv ad2ant2r 3eqtr3rd eqeq2d grpsubadd 3bitr4d eqcom 3bitr4g f1o2d jca
+        wb ) EUBLZBGLZMZDEEUCNLGGDUFWHUAUECCEEDGGHHIIWFWGUDZWIWHAGBAVOZCNZBFNZG
+        DWHWJGLZMWFWKGLZWGWLGLWHWFWMWIOWFWGWMWNGCEBWJHIUGUHZWFWGWMUIGEFWKBHJUJP
+        ZKUKWHUAVOZGLZUEVOZGLZMZMZBWQWSCNZCNZBFNZBWQCNZBFNZBWSCNZBFNZCNZXCDQWQD
+        QZWSDQZCNXBXGBCNZWSBFNZCNZXGBXNCNZCNZXEXJXBWFXGGLZWGXNGLZXOXQRWHWFXAWIO
+        ZXBWFXFGLZWGXRXTXBGCEBWQHIXTWFWGXAUIZWHWRWTULZSZYBGEFXFBHJUJPZYBXBWFWTW
+        GXSXTWHWRWTUMZYBGEFWSBHJUJPGCEXGBXNHIUNTXBXOXFXNCNZXFWSCNZBFNZXEXBXMXFX
+        NCXBWFYAWGXMXFRXTYDYBGCEFXFBHIJUOPUPXBWFYAWTWGYIYGRXTYDYFYBGCEFXFWSBHIJ
+        UQTXBYHXDBFXBWFWGWRWTYHXDRXTYBYCYFGCEBWQWSHIUNTUPVEXBXIXPXGCXBWFWGWTWGX
+        IXPRXTYBYFYBGCEFBWSBHIJUQTURUSXBAXCWLXEGDGKWJXCRWKXDBFWJXCBCUTUPXBGCEWQ
+        WSHIXTYCYFSZXBWFXDGLWGXEGLXTXBGCEBXCHIXTYBYJSYBGEFXDBHJUJPVAXBXKXGXLXIC
+        XBAWQWLXGGDGKWJWQRWKXFBFWJWQBCUTUPYCYEVAXBAWSWLXIGDGKWJWSRWKXHBFWJWSBCU
+        TUPYFXBWFXHGLWGXIGLXTXBGCEBWSHIXTYBYFSYBGEFXHBHJUJPVAVBUSVCWHAUAGGWLBEV
+        DQZQZWQBCNZCNZDKWPWHWRMZGCEYLYMHIWHWFWRWIOZWHYLGLZWRGEYKBHYKVFZVGZOYOGC
+        EWQBHIYPWHWRVHWFWGWRUISZSWHWMWRMZMZYNWJRZWLWQRZWJYNRWQWLRUUBYNYLWKCNZRZ
+        YMWKRZUUCUUDUUBWFYMGLZWNYQUUFUUGWEWHWFUUAWIOZWHWRUUHWMYTVIWHWMWNWRWOVJZ
+        WHYQUUAYSOZGCEYMWKYLHIVKTUUBWJUUEYNUUBYLBCNZWJCNZEVLQZWJCNZUUEWJUUBUULU
+        UNWJCWHUULUUNRUUAGCEYKBUUNHIUUNVFZYRVMOUPUUBWFYQWGWMUUMUUERUUIUUKWFWGUU
+        AUIZWHWMWRULGCEYLBWJHIUNTWFWMUUOWJRWGWRGCEWJUUNHIUUPVNVPVQVRUUBWFWNWGWR
+        UUDUUGWEUUIUUJUUQWHWMWRUMGCEFWKBWQHIJVSTVTWJYNWAWQWLWAWBWCWD $.
+    $}
+
+    conjsubg.f $e |- F = ( x e. S |-> ( ( A .+ x ) .- A ) ) $.
+    $( A conjugated subgroup is also a subgroup.  (Contributed by Mario
+       Carneiro, 13-Jan-2015.) $)
+    conjsubg $p |- ( ( S e. ( SubGrp ` G ) /\ A e. X ) ->
+      ran F e. ( SubGrp ` G ) ) $=
+      ( csubg cfv wcel wa cv co cmpt crn cima wceq subgss adantr df-ima eqtr4di
+      wss cres resmpt rneqd eqtrid syl cghm wf1o cgrp subgrcl eqid sylan simpld
+      conjghm simpl ghmima syl2anc eqeltrrd ) DFMNZOZBHOZPZAHBAQCRBGRZSZDUAZETZ
+      VEVHDHUGZVKVLUBVFVMVGHDFIUCUDVMVKVJDUHZTVLVJDUEVMVNEVMVNADVISEAHDVIUILUFU
+      JUKULVHVJFFUMROZVFVKVEOVHVOHHVJUNZVFFUOOVGVOVPPDFUPABCVJFGHIJKVJUQUTURUSV
+      FVGVAFFDVJVBVCVD $.
+
+    $( A conjugated subgroup is equinumerous to the original subgroup.
+       (Contributed by Mario Carneiro, 18-Jan-2015.) $)
+    conjsubgen $p |- ( ( S e. ( SubGrp ` G ) /\ A e. X ) ->
+      S ~~ ran F ) $=
+      ( csubg wcel wf1o wa wf1 co cmpt syl cfv crn cen wbr cv cres cghm subgrcl
+      cgrp eqid conjghm sylan f1of1 simpl2im subgss adantr f1ssres syl2anc wceq
+      wss wb resmptd eqtr4di f1eq1 mpbid f1f1orn f1oeng syldan ) DFMUAZNZBHNZDE
+      UBZEOZDVLUCUDVJVKPZDHEQZVMVNDHAHBAUECRBGRZSZDUFZQZVOVNHHVQQZDHUTZVSVNVQFF
+      UGRNZHHVQOZVTVJFUINVKWBWCPDFUHABCVQFGHIJKVQUJUKULHHVQUMUNVJWAVKHDFIUOUPZH
+      HDVQUQURVNVREUSVSVOVAVNVRADVPSEVNAHDVPWDVBLVCDHVREVDTVEDHEVFTDVLVIEVGVH
+      $.
+
+    ${
+      conjnmz.1 $e |- N = { y e. X |
+        A. z e. X ( ( y .+ z ) e. S <-> ( z .+ y ) e. S ) } $.
+      $( A subgroup is unchanged under conjugation by an element of its
+         normalizer.  (Contributed by Mario Carneiro, 18-Jan-2015.) $)
+      conjnmz $p |- ( ( S e. ( SubGrp ` G ) /\ A e. N ) -> S = ran F ) $=
+        ( cfv wcel co wceq vw csubg wa crn cv cminusg oveq2 oveq1d cgrp subgrcl
+        eqid wb wral ssrab3 simplr sselid grpinvcld subgss adantr sselda grpass
+        ad2antrr wss syl13anc c0g grprinvd grplidd 3eqtr3d simpr eqeltrd grpcld
+        nmzbi syl2anc mpbid eqeltrrd grpsubcl syl3anc grppncan 3eqtrd ralrimiva
+        fvmptd3 wfn fnmpt syl fnfvelrn ssrdv grpaddsubass grpnpcan mpbird fmptd
+        ex frnd eqssd ) FHUBQRZDJRZUCZFGUDZWPUAFWQWPUAUEZFRZWRWQRWPWSUCZDHUFQZQ
+        ZWRDESZESZGQZWRWQWTXEDXDESZDISZXCDISZWRWTAXDDAUEZESZDISZXGFGKOXIXDTXJXF
+        DIXIXDDEUGUHWTXBWRESZDESZXDFWTHUIRZXBKRZWRKRZDKRZXMXDTWNXNWOWSFHUJZVBZW
+        TKHXADLXAUKZXSWTJKDBUEZCUEZESFRYBYAESFRULCKUMBKJPUNZWNWOWSUOZUPZUQZWPFK
+        WRWNFKVCZWOKFHLURUSZUTZYEKEHXBWRDLMVAVDWTDXLESZFRZXMFRZWTYJWRFWTDXBESZW
+        RESZHVEQZWRESYJWRWTYMYOWREWTKEHXADYOLMYOUKZXTXSYEVFZUHWTXNXQXOXPYNYJTXS
+        YEYFYIKEHDXBWRLMVAVDWTKEHWRYOLMYPXSYIVGVHWPWSVIVJWTWOXLKRYKYLULYDWTKEHX
+        BWRLMXSYFYIVKBCDXLEFJKPVLVMVNVOZWTXNXFKRXQXGKRXSWTKEHDXDLMXSYEWTKEHXBXC
+        LMXSYFWTKEHWRDLMXSYIYEVKZVKVKYEKHIXFDLNVPVQWAWTXFXCDIWTYMXCESZYOXCESXFX
+        CWTYMYOXCEYQUHWTXNXQXOXCKRYTXFTXSYEYFYSKEHDXBXCLMVAVDWTKEHXCYOLMYPXSYSV
+        GVHUHWTXNXPXQXHWRTXSYIYEKEHIWRDLMNVRVQVSWTGFWBZXDFRXEWQRWTXKKRZAFUMUUAW
+        TUUBAFWTXIFRZUCZXNXJKRXQUUBWTXNUUCXSUSZUUDKEHDXILMUUEWTXQUUCYEUSZWTFKXI
+        WPYGWSYHUSUTVKUUFKHIXJDLNVPVQVTAFXKGKOWCWDYRFXDGWEVMVOWKWFWPFFGWPAFXKFG
+        WPUUCUCZXKDXIDISZESZFUUGXNXQXIKRZXQXKUUITWNXNWOUUCXRVBZUUGJKDYCWNWOUUCU
+        OZUPZWPFKXIYHUTZUUMKEHIDXIDLMNWGVDUUGUUIFRZUUHDESZFRZUUGUUPXIFUUGXNUUJX
+        QUUPXITUUKUUNUUMKEHIXIDLMNWHVQWPUUCVIVJUUGWOUUHKRZUUOUUQULUULUUGXNUUJXQ
+        UURUUKUUNUUMKHIXIDLNVPVQBCDUUHEFJKPVLVMWIVJOWJWLWM $.
+
+      $( Alternative condition for elementhood in the normalizer.  (Contributed
+         by Mario Carneiro, 18-Jan-2015.) $)
+      conjnmzb $p |- ( S e. ( SubGrp ` G ) ->
+        ( A e. N <-> ( A e. X /\ S = ran F ) ) ) $=
+        ( wcel wceq wa co vw csubg cfv crn cv wb wral ssrab3 sselid conjnmz jca
+        simpr simprl simplrr eleq2d wrex subgrcl ad3antrrr simpllr wss ad2antrr
+        cgrp subgss sselda grpaddsubass syl13anc eqeq1d grpsubcl syl3anc simplr
+        grplcan grpsubadd 3bitrd eqcom 3bitr4g rexbidva adantlrr simplrl grpcld
+        elrnmpt syl risset a1i 3bitr4d bitrd ralrimiva elnmz sylanbrc impbida )
+        FHUBUCQZDJQZDKQZFGUDZRZSZWJWKSZWLWNWPJKDBUEZCUEZETFQWRWQETFQUFCKUGBKJPU
+        HWJWKULUIABCDEFGHIJKLMNOPUJUKWJWOSZWLDUAUEZETZFQZWTDETZFQZUFZUAKUGWKWJW
+        LWNUMWSXEUAKWSWTKQZSZXBXAWMQZXDXGFWMXAWJWLWNXFUNUOXGXADAUEZETDITZRZAFUP
+        ZXIXCRZAFUPZXHXDWJWLXFXLXNUFWNWJWLSZXFSZXKXMAFXPXIFQZSZXJXARZXCXIRZXKXM
+        XRXSDXIDITZETZXARZYAWTRZXTXRXJYBXAXRHVBQZWLXIKQZWLXJYBRWJYEWLXFXQFHUQZU
+        RZWJWLXFXQUSZXPFKXIWJFKUTWLXFKFHLVCVAVDZYIKEHIDXIDLMNVEVFVGXRYEYAKQZXFW
+        LYCYDUFYHXRYEYFWLYKYHYJYIKHIXIDLNVHVIXOXFXQVJZYIKEHYAWTDLMVKVFXRYEYFWLX
+        FYDXTUFYHYJYIYLKEHIXIDWTLMNVLVFVMXAXJVNXIXCVNVOVPVQXGXAKQXHXLUFXGKEHDWT
+        LMWJYEWOXFYGVAWJWLWNXFVRWSXFULVSAFXJXAGKOVTWAXDXNUFXGAXCFWBWCWDWEWFBCUA
+        DEFJKPWGWHWI $.
+    $}
+
+    $( A normal subgroup is unchanged under conjugation.  (Contributed by Mario
+       Carneiro, 18-Jan-2015.) $)
+    conjnsg $p |- ( ( S e. ( NrmSGrp ` G ) /\ A e. X ) -> S = ran F ) $=
+      ( vy vz cnsg cfv wcel cv co wceq csubg wral crab crn nsgsubg eqid simprbi
+      wb isnsg4 eleq2d biimpar conjnmz syl2an2r ) DFOPQZDFUAPQZBHQZBMRZNRZCSDQU
+      RUQCSDQUHNHUBMHUCZQZDEUDTDFUEUNUTUPUNUSHBUNUOUSHTMNCDFUSHUSUFZIJUIUGUJUKA
+      MNBCDEFGUSHIJKLVAULUM $.
+  $}
+
+  ${
+    $d y z F $.  $d x y z G $.  $d x y z H $.  $d x y z X $.  $d x y z Y $.
+    qusghm.x $e |- X = ( Base ` G ) $.
+    qusghm.h $e |- H = ( G /s ( G ~QG Y ) ) $.
+    qusghm.f $e |- F = ( x e. X |-> [ x ] ( G ~QG Y ) ) $.
+    $( If ` Y ` is a normal subgroup of ` G ` , then the "natural map" from
+       elements to their cosets is a group homomorphism from ` G ` to
+       ` G / Y ` .  (Contributed by Mario Carneiro, 14-Jun-2015.)  (Revised by
+       Mario Carneiro, 18-Sep-2015.) $)
+    qusghm $p |- ( Y e. ( NrmSGrp ` G ) -> F e. ( G GrpHom H ) ) $=
+      ( cfv wcel eqid syl cv co cec cvv eceq1 ecexg fvmptd3 vy cplusg cbs csubg
+      vz cnsg cgrp nsgsubg subgrcl qusgrp cqg quseccl fmptd qusadd 3expb simprl
+      wa wceq eqgex mpancom adantr simprr oveq12d grpcl sylan 3eqtr4rd isghmd )
+      FCUFJZKZUAUECUBJZDUBJZCDBEDUCJZGVLLZVJLZVKLZVIFCUDJKCUGKZFCUHFCUIMZFCDHUJ
+      VIAEANZCFUKOZPZVLBVLFCDEVRHGVMULIUMVIUANZEKZUENZEKZUQZUQZWAVSPZWCVSPZVKOZ
+      WAWCVJOZVSPZWABJZWCBJZVKOWJBJVIWBWDWIWKURVJVKFCDEWAWCHGVNVOUNUOWFWLWGWMWH
+      VKWFAWAVTWGEBQIVRWAVSRVIWBWDUPWFVSQKZWGQKVIWNWEVPVIWNVQFCUGVHUSUTVAZWAQVS
+      SMTWFAWCVTWHEBQIVRWCVSRVIWBWDVBWFWNWHQKWOWCQVSSMTVCWFAWJVTWKEBQIVRWJVSRVI
+      VPWEWJEKZVQVPWBWDWPEVJCWAWCGVNVDUOVEWFWNWKQKWOWJQVSSMTVFVG $.
+  $}
+
+  ${
+    $d f x y J $.  $d f x y K $.  $d f x y L $.  $d f x y M $.  $d f x y ph $.
+    $d x y B $.  $d x y C $.
+    ghmpropd.a $e |- ( ph -> B = ( Base ` J ) ) $.
+    ghmpropd.b $e |- ( ph -> C = ( Base ` K ) ) $.
+    ghmpropd.c $e |- ( ph -> B = ( Base ` L ) ) $.
+    ghmpropd.d $e |- ( ph -> C = ( Base ` M ) ) $.
+    ghmpropd.e $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+        ( x ( +g ` J ) y ) = ( x ( +g ` L ) y ) ) $.
+    ghmpropd.f $e |- ( ( ph /\ ( x e. C /\ y e. C ) ) ->
+        ( x ( +g ` K ) y ) = ( x ( +g ` M ) y ) ) $.
+    $( Group homomorphism depends only on the group attributes of structures.
+       (Contributed by Mario Carneiro, 12-Jun-2015.) $)
+    ghmpropd $p |- ( ph -> ( J GrpHom K ) = ( L GrpHom M ) ) $=
+      ( co cgrp wcel wa eleq2d vf cghm cv cmhm grppropd anbi12d ghmgrp1 ghmgrp2
+      mhmpropd jca ghmmhmb biadanii 3bitr4g eqrdv ) AUAFGUBPZHIUBPZAFQRZGQRZSZU
+      AUCZFGUDPZRZSHQRZIQRZSZUTHIUDPZRZSUTUORZUTUPRZAUSVEVBVGAUQVCURVDABCDFHJLN
+      UEABCEGIKMOUEUFAVAVFUTABCDEFGHIJKLMNOUITUFVHUSVBVHUQURFGUTUGFGUTUHUJUSUOV
+      AUTFGUKTULVIVEVGVIVCVDHIUTUGHIUTUHUJVEUPVFUTHIUKTULUMUN $.
   $}
 
 
@@ -177748,6 +178691,10 @@ htmldef "SubGrp" as "SubGrp";
 htmldef "NrmSGrp" as "NrmSGrp";
   althtmldef "NrmSGrp" as "NrmSGrp";
   latexdef "NrmSGrp" as "\mathrm{NrmSGrp}";
+htmldef "GrpHom" as
+   " <IMG SRC='_grphom.gif' WIDTH=54 HEIGHT=19 ALT=' GrpHom' TITLE='GrpHom'> ";
+  althtmldef "GrpHom" as " GrpHom ";
+  latexdef "GrpHom" as "\mathrm{GrpHom}";
 htmldef "CMnd" as "CMnd";
   althtmldef "CMnd" as "CMnd";
   latexdef "CMnd" as "\mathrm{CMnd}";
