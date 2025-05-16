@@ -55045,12 +55045,22 @@ $)
 
   ${
     $d x y A $.  $d y B $.  $d x y C $.  $d x y F $.  $d x y R $.  $d x y S $.
+    fovcld.1 $e |- ( ph -> F : ( R X. S ) --> C ) $.
+    $( Closure law for an operation.  (Contributed by NM, 19-Apr-2007.)
+       (Revised by Thierry Arnoux, 17-Feb-2017.) $)
+    fovcld $p |- ( ( ph /\ A e. R /\ B e. S ) -> ( A F B ) e. C ) $=
+      ( vx vy wcel w3a wa cv co wral 3simpc cxp wceq eleq1d wf simprbi 3ad2ant1
+      wfn ffnov syl oveq1 oveq2 rspc2v sylc ) ABEKZCFKZLUKULMINZJNZGOZDKZJFPIEP
+      ZBCGOZDKZAUKULQAUKUQULAEFRZDGUAZUQHVAGUTUDUQIJEFDGUEUBUFUCUPUSBUNGOZDKIJB
+      CEFUMBSUOVBDUMBUNGUGTUNCSVBURDUNCBGUHTUIUJ $.
+  $}
+
+  ${
     fovcl.1 $e |- F : ( R X. S ) --> C $.
-    $( Closure law for an operation.  (Contributed by NM, 19-Apr-2007.) $)
+    $( Closure law for an operation.  (Contributed by NM, 19-Apr-2007.)  (Proof
+       shortened by AV, 9-Mar-2025.) $)
     fovcl $p |- ( ( A e. R /\ B e. S ) -> ( A F B ) e. C ) $=
-      ( vx vy wcel wa cv co wral cxp wf wfn ffnov wceq eleq1d ax-mp oveq1 oveq2
-      simprbi rspc2v mpi ) ADJBEJKHLZILZFMZCJZIENHDNZABFMZCJZDEOZCFPZUKGUOFUNQU
-      KHIDECFRUDUAUJUMAUHFMZCJHIABDEUGASUIUPCUGAUHFUBTUHBSUPULCUHBAFUCTUEUF $.
+      ( wcel co cxp wf a1i fovcld 3anidm12 ) ADHZBEHABFICHOABCDEFDEJCFKOGLMN $.
   $}
 
   ${
@@ -146263,6 +146273,12 @@ $)
       VFUQVEUQCUSEMZVAEMZCVCEMZNUMVAEMZCDVAEMZEMZNIJKCDFAAAURCNZVBVHVDVIVMUTVGV
       AEURCUSEQRURCVCEQSUSDNZVHVJVIVLVNVGUMVAEUSDCETRVNVCVKCEUSDVAEQUFSVAFNZVJU
       NVLUPVAFUMETVOVKUOCEVAFDETUFSUGUHUIUJ $.
+
+    $( Closure of the operation of a semigroup.  (Contributed by AV,
+       15-Feb-2025.) $)
+    sgrpcl $p |- ( ( G e. Smgrp /\ X e. B /\ Y e. B ) -> ( X .o. Y ) e. B ) $=
+      ( csgrp wcel cmgm co sgrpmgm mgmcl syl3an1 ) BHIBJICAIDAICDEKAIBLABCDEFGM
+      N $.
   $}
 
   ${
@@ -146319,6 +146335,44 @@ $)
       QZUHZWDWMSVRAWOWSWOAWFWGWNUKWSWFWGWNULLUMURAWHWDWNWMWKAEVLVNITUDAWPVOWRVQ
       AWIVKVNVNFVJJWLAVNUNUOAVHVHWQVPFVJJAVHUNAFVJVIVNJUEUOUPUIUSUQUTVAAGHNVGWA
       VBMBCDVLGHVJVLVCVJVCVDVEVF $.
+  $}
+
+  ${
+    $d s u v w x y B $.  $d s u v w x y K $.  $d s u v w x y ph $.
+    $d s u v w x y L $.
+    sgrppropd.k $e |- ( ph -> K e. V ) $.
+    sgrppropd.l $e |- ( ph -> L e. W ) $.
+    sgrppropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    sgrppropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    sgrppropd.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    $( If two structures are sets, have the same base set, and the values of
+       their group (addition) operations are equal for all pairs of elements of
+       the base set, one is a semigroup iff the other one is.  (Contributed by
+       AV, 15-Feb-2025.) $)
+    sgrppropd $p |- ( ph -> ( K e. Smgrp <-> L e. Smgrp ) ) $=
+      ( vu vv vw co wcel wral wa cv cplusg cfv csgrp cbs simplr simprl ad2antrr
+      wceq eleqtrd simprr sgrpcl syl3anc eleqtrrd ralrimivva ex adantlr 3eltr4d
+      eqid issgrpv syl adantr oveqrspc2v eleq1d simplll simplrl simplrr simpllr
+      wb ovrspc2v syl21anc simpr syl12anc oveq1d eqtrd eqeq12d ralbidva anbi12d
+      oveq2d 2ralbidva eleq2d raleqdv raleqbidv 3bitr3d bicomd 3bitrd pm5.21ndd
+      ) ABUAZCUAZEUBUCZQZDRZCDSBDSZEUDRZFUDRZAWNWMAWNTZWLBCDDWPWHDRZWIDRZTZTZWK
+      EUEUCZDWTWNWHXARWIXARWKXARAWNWSUFWTWHDXAWPWQWRUGADXAUIZWNWSKUHZUJWTWIDXAW
+      PWQWRUKXCUJXAEWHWIWJXAUSZWJUSZULUMXCUNUOUPAWOWMAWOTZWLBCDDXFWSTZWHWIFUBUC
+      ZQZFUEUCZWKDXGWOWHXJRWIXJRXIXJRAWOWSUFXGWHDXJXFWQWRUGADXJUIZWOWSLUHZUJXGW
+      IDXJXFWQWRUKXLUJXJFWHWIXHXJUSZXHUSZULUMAWSWKXIUIWOMUQXLURUOUPAWMWNWOVIAWM
+      TZWNNUAZOUAZWJQZXARZXRPUAZWJQZXPXQXTWJQZWJQZUIZPXASZTZOXASZNXASZXPXQXHQZX
+      JRZYIXTXHQZXPXQXTXHQZXHQZUIZPXJSZTZOXJSZNXJSZWOAWNYHVIZWMAEGRYSINOPXAEGWJ
+      XDXEUTVAVBXOXRDRZYDPDSZTZODSZNDSYIDRZYNPDSZTZODSZNDSYHYRXOUUBUUFNODDXOXPD
+      RZXQDRZTZTZYTUUDUUAUUEUUKXRYIDAUUJXRYIUIZWMABCDDWJXHXPXQMVCZUQVDUUKYDYNPD
+      UUKXTDRZTZYAYKYCYMUUOYAXRXTXHQZYKUUOAYTUUNYAUUPUIAWMUUJUUNVEZUUOUUHUUIWMY
+      TXOUUHUUIUUNVFZXOUUHUUIUUNVGZAWMUUJUUNVHZBCDDDWJXPXQVJVKUUKUUNVLZABCDDWJX
+      HXRXTMVCVMUUOXRYIXTXHUUOAUUHUUIUULUUQUURUUSUUMVMVNVOUUOYCXPYBXHQZYMUUOAUU
+      HYBDRZYCUVBUIUUQUURUUOUUIUUNWMUVCUUSUVAUUTBCDDDWJXQXTVJVKABCDDWJXHXPYBMVC
+      VMUUOYBYLXPXHUUOAUUIUUNYBYLUIUUQUUSUVAABCDDWJXHXQXTMVCVMVSVOVPVQVRVTXOUUC
+      YGNDXAAXBWMKVBZXOUUBYFODXAUVDXOYTXSUUAYEXODXAXRUVDWAXOYDPDXAUVDWBVRWCWCXO
+      UUGYQNDXJAXKWMLVBZXOUUFYPODXJUVEXOUUDYJUUEYOXODXJYIUVEWAXOYNPDXJUVEWBVRWC
+      WCWDAYRWOVIWMAWOYRAFHRWOYRVIJNOPXJFHXHXMXNUTVAWEVBWFUPWG $.
   $}
 
 
@@ -151183,6 +151237,94 @@ $)
   $}
 
   ${
+    $d .+ x y $.  $d .+^ a b x y $.  $d F a b x y $.  $d G x y $.
+    $d H i j x y $.  $d X a b x y $.  $d Y a b i j x y $.  $d a b i j x y ph $.
+    ghmabl.x $e |- X = ( Base ` G ) $.
+    ghmabl.y $e |- Y = ( Base ` H ) $.
+    ghmabl.p $e |- .+ = ( +g ` G ) $.
+    ghmabl.q $e |- .+^ = ( +g ` H ) $.
+    ghmabl.f $e |- ( ( ph /\ x e. X /\ y e. X )
+      -> ( F ` ( x .+ y ) ) = ( ( F ` x ) .+^ ( F ` y ) ) ) $.
+    ghmabl.1 $e |- ( ph -> F : X -onto-> Y ) $.
+
+    ${
+      ghmcmn.3 $e |- ( ph -> G e. CMnd ) $.
+      $( The image of a commutative monoid ` G ` under a group homomorphism
+         ` F ` is a commutative monoid.  (Contributed by Thierry Arnoux,
+         26-Jan-2020.) $)
+      ghmcmn $p |- ( ph -> H e. CMnd ) $=
+        ( wcel co cfv vi vj va vb cmnd wceq wral ccmn cmnmnd syl mhmmnd simp-6l
+        cv wa simp-4r simplr cmncom syl3anc fveq2d syl3an1 mhmlem 3eqtr3d simpr
+        simpllr oveq12d wrex foelcdmi ad5ant13 r19.29a adantr anasss ralrimivva
+        wfo sylan iscmn sylanbrc ) AHUERUAUMZUBUMZESZVRVQESZUFZUBJUGUAJUGHUHRAB
+        CDEFGHIJOKLMNPAGUHRZGUERQGUIUJUKAWAUAUBJJAVQJRZVRJRZWAAWCUNZWDUNZUCUMZF
+        TZVQUFZWAUCIWFWGIRZUNZWIUNZUDUMZFTZVRUFZWAUDIWLWMIRZUNZWOUNZWHWNESZWNWH
+        ESZVSVTWRWGWMDSZFTWMWGDSZFTWSWTWRXAXBFWRWBWJWPXAXBUFWRAWBAWCWDWJWIWPWOU
+        LZQUJWFWJWIWPWOUOZWLWPWOUPZIDGWGWMKMUQURUSWRBCWGWMDEFIWRABUMZIRCUMZIRXF
+        XGDSFTXFFTXGFTESUFXCOUTZXDXEVAWRBCWMWGDEFIXHXEXDVAVBWRWHVQWNVREWKWIWPWO
+        VDZWQWOVCZVEWRWNVRWHVQEXJXIVEVBAWDWOUDIVFZWCWJWIAIJFVMZWDXKPUDIJFVRVGVN
+        VHVIWEWIUCIVFZWDAXLWCXMPUCIJFVQVGVNVJVIVKVLUAUBJEHLNVOVP $.
+    $}
+
+    ghmabl.3 $e |- ( ph -> G e. Abel ) $.
+    $( The image of an abelian group ` G ` under a group homomorphism ` F ` is
+       an abelian group.  (Contributed by Mario Carneiro, 12-May-2014.)
+       (Revised by Thierry Arnoux, 26-Jan-2020.) $)
+    ghmabl $p |- ( ph -> H e. Abel ) $=
+      ( cgrp wcel ccmn cabl ablgrp syl ghmgrp ablcmn ghmcmn isabl sylanbrc ) AH
+      RSHTSHUASABCDEFGHIJOKLMNPAGUASZGRSQGUBUCUDABCDEFGHIJKLMNOPAUIGTSQGUEUCUFH
+      UGUH $.
+  $}
+
+  ${
+    eqgabl.x $e |- X = ( Base ` G ) $.
+    eqgabl.n $e |- .- = ( -g ` G ) $.
+    eqgabl.r $e |- .~ = ( G ~QG S ) $.
+    $( Value of the subgroup coset equivalence relation on an abelian group.
+       (Contributed by Mario Carneiro, 14-Jun-2015.) $)
+    eqgabl $p |- ( ( G e. Abel /\ S C_ X ) -> ( A .~ B <->
+      ( A e. X /\ B e. X /\ ( B .- A ) e. S ) ) ) $=
+      ( cabl wcel wa cfv co w3a eqid wceq syl2anc df-3an wss wbr cminusg cplusg
+      eqgval simpll cgrp ablgrp ad2antrr simprl simprr ablcom syl3anc grpsubval
+      grpinvcl eqtr4d eleq1d pm5.32da 3bitr4g bitrd ) EKLZDGUAZMZABCUBAGLZBGLZA
+      EUCNZNZBEUDNZOZDLZPZVDVEBAFOZDLZPZABVHCDEVFKGHVFQZVHQZJUEVCVDVEMZVJMVQVMM
+      VKVNVCVQVJVMVCVQMZVIVLDVRVIBVGVHOZVLVRVAVGGLZVEVIVSRVAVBVQUFVREUGLZVDVTVA
+      WAVBVQEUHUIVCVDVEUJZGEVFAHVOUOSVCVDVEUKZGVHEVGBHVPULUMVRVEVDVLVSRWCWBGVHE
+      VFFBAHVPVOIUNSUPUQURVDVEVJTVDVEVMTUSUT $.
+  $}
+
+  ${
+    qusecsub.x $e |- B = ( Base ` G ) $.
+    qusecsub.n $e |- .- = ( -g ` G ) $.
+    qusecsub.r $e |- .~ = ( G ~QG S ) $.
+    $( Two subgroup cosets are equal if and only if the difference of their
+       representatives is a member of the subgroup.  (Contributed by AV,
+       7-Mar-2025.) $)
+    qusecsub $p |- ( ( ( G e. Abel /\ S e. ( SubGrp ` G ) )
+                       /\ ( X e. B /\ Y e. B ) )
+                     -> ( [ X ] .~ = [ Y ] .~ <-> ( Y .- X ) e. S ) ) $=
+      ( cabl wcel csubg cfv wa wbr co w3a cec wb wceq wss subgss anim2i syl wer
+      adantr eqgabl eqger ad2antlr simprl erth df-3an adantl bitr4id 3bitr3d
+      ibar ) DKLZCDMNLZOZFALZGALZOZOZFGBPZVAVBGFEQCLZRZFBSGBSUAVFVDURCAUBZOZVEV
+      GTUTVIVCUSVHURACDHUCUDUGFGBCDEAHIJUHUEVDFGBAUSABUFURVCBDACHJUIUJUTVAVBUKU
+      LVDVGVCVFOZVFVAVBVFUMVCVFVJTUTVCVFUQUNUOUP $.
+  $}
+
+  ${
+    $d x y G $.  $d x y H $.  $d x y S $.
+    subgabl.h $e |- H = ( G |`s S ) $.
+    $( A subgroup of an abelian group is also abelian.  (Contributed by Mario
+       Carneiro, 3-Dec-2014.) $)
+    subgabl $p |- ( ( G e. Abel /\ S e. ( SubGrp ` G ) ) -> H e. Abel ) $=
+      ( vx vy cabl wcel csubg cfv wa cplusg cbs wceq adantl co a1i eqid sseldd
+      cv subgbas cress simpr simpl ressplusgd cgrp subggrp simp1l simp1r subgss
+      w3a wss syl simp2 simp3 ablcom syl3anc isabld ) BGHZABIJZHZKZEFABLJZCVAAC
+      MJNUSABCDUAOVBAVCBCUTGCBAUBPNVBDQVCVCNVBVCRZQUSVAUCUSVAUDUEVACUFHUSABCDUG
+      OVBETZAHZFTZAHZUKZUSVEBMJZHVGVJHVEVGVCPVGVEVCPNUSVAVFVHUHVIAVJVEVIVAAVJUL
+      USVAVFVHUIVJABVJRZUJUMZVBVFVHUNSVIAVJVGVLVBVFVHUOSVJVCBVEVGVKVDUPUQUR $.
+  $}
+
+  ${
     $d x y G $.  $d x y H $.  $d x y S $.  $d ph x y $.
     subcmnd.h $e |- ( ph -> H = ( G |`s S ) ) $.
     subcmnd.g $e |- ( ph -> G e. CMnd ) $.
@@ -151207,6 +151349,60 @@ $)
       ablcom 3expb eleq1d ralrimivva isnsg rbaib syl eqrdv ) AEFZBAGHZAIHZUGCJZ
       DJZAKHZLZBJZFUKUJULLZUNFMZDANHZOCUQOZUNUHFZUNUIFZMUGUPCDUQUQUGUJUQFZUKUQF
       ZPPUMUOUNUGVAVBUMUOQUQULAUJUKUQRZULRZSTUAUBUSUTURCDULUNAUQVCVDUCUDUEUF $.
+  $}
+
+  ${
+    $d B x y $.  $d G x y $.
+    ablressid.b $e |- B = ( Base ` G ) $.
+    $( A commutative group restricted to its base set is a commutative group.
+       It will usually be the original group exactly, of course, but to show
+       that needs additional conditions such as those in ~ strressid .
+       (Contributed by Jim Kingdon, 5-May-2025.) $)
+    ablressid $p |- ( G e. Abel -> ( G |`s B ) e. Abel ) $=
+      ( vx vy cabl wcel cplusg cfv cress co eqidd cbs wceq a1i id ssidd cgrp cv
+      cvv ressbas2d wfn basfn funfvex funfni sylancr eqeltrid ressplusgd ablgrp
+      elex grpressid syl eqid ablcom isabld ) BFGZDEABHIZBAJKZUPAAURBFUPURLZABM
+      IZNUPCOUPPUPAQUAUPAUQBURTTUSUPUQLUPAUTTCUPMTUBBTGUTTGZUCBFUJZVATBMBMUDUEU
+      FUGVBUHUPBRGURRGBUIABCUKULAUQBDSESCUQUMUNUO $.
+  $}
+
+  ${
+    $d B a b p q $.  $d F a b p q x y $.  $d R p q $.  $d U a b p q x y $.
+    $d V a b p q $.  $d .+ p q $.  $d .0. a b p q x y $.  $d ph a b p q x y $.
+    imasabl.u $e |- ( ph -> U = ( F "s R ) ) $.
+    imasabl.v $e |- ( ph -> V = ( Base ` R ) ) $.
+    imasabl.p $e |- ( ph -> .+ = ( +g ` R ) ) $.
+    imasabl.f $e |- ( ph -> F : V -onto-> B ) $.
+    imasabl.e $e |- ( ( ph /\ ( a e. V /\ b e. V ) /\ ( p e. V /\ q e. V ) )
+      -> ( ( ( F ` a ) = ( F ` p ) /\ ( F ` b ) = ( F ` q ) )
+        -> ( F ` ( a .+ b ) ) = ( F ` ( p .+ q ) ) ) ) $.
+    imasabl.r $e |- ( ph -> R e. Abel ) $.
+    imasabl.z $e |- .0. = ( 0g ` R ) $.
+    $( The image structure of an abelian group is an abelian group ( ~ imasgrp
+       analog).  (Contributed by AV, 22-Feb-2025.) $)
+    imasabl $p |- ( ph -> ( U e. Abel /\ ( F ` .0. ) = ( 0g ` U ) ) ) $=
+      ( wa vx vy cv cplusg cfv wceq cbs wral cgrp wcel c0g cabl ablgrpd imasgrp
+      co wb imasbas eqcomd eleq2d anbi12d adantr wi wfo foelcdmi ex anim12d syl
+      wrex ad3antrrr biimpd imp ablcom syl3anc fveq2d simplll simpr w3a eqeq12d
+      eqid oveqd 3ad2ant1 sylibrd imasaddval 3eqtr4d oveq12 ancoms adantl mpbid
+      exp32 rexlimdva com23 impd syld sylbid ralrimivva jca mpdan isabl2 anbi1i
+      an21 bitri sylibr ) AUAUCZUBUCZEUDUEZUOZXDXCXEUOZUFZUBEUGUEZUHUAXIUHZEUIU
+      JZHFUEEUKUEUFZTZTZEULUJZXLTZAXMXNABCDEFGHIJKLMNOPQADRUMSUNAXMTZXJXMXQXHUA
+      UBXIXIXQXCXIUJZXDXIUJZTZXHXQXTXCBUJZXDBUJZTZXHAXTYCUPXMAXRYAXSYBAXIBXCABX
+      IABDEFGULMNPRUQURZUSAXIBXDYDUSUTVAXQYCKUCZFUEZXCUFZKGVHZLUCZFUEZXDUFZLGVH
+      ZTZXHAYCYMVBZXMAGBFVCZYNPYOYAYHYBYLYOYAYHKGBFXCVDVEYOYBYLLGBFXDVDVEVFVGVA
+      XQYHYLXHXQYGYLXHVBKGXQYEGUJZTZYLYGXHYQYKYGXHVBLGYQYIGUJZTZYKYGXHYSYKYGTZT
+      YFYJXEUOZYJYFXEUOZUFZXHYSUUCYTYSYEYIDUDUEZUOZFUEZYIYEUUDUOZFUEZUUAUUBYSUU
+      EUUGFYSDULUJZYEDUGUEZUJZYIUUJUJZUUEUUGUFAUUIXMYPYRRVIYQUUKYRXQYPUUKAYPUUK
+      VBXMAYPUUKAGUUJYENUSVJVAVKVAYQYRUULXQYRUULVBZYPAUUMXMAYRUULAGUUJYINUSVJVA
+      VAVKUUJUUDDYEYIUUJVSUUDVSZVLVMVNYSAYPYRUUAUUFUFAXMYPYRVOZYQYPYRXQYPVPVAZY
+      QYRVPZABDXEUUDEFGYEYIULIJKLPAYPYRTZJUCZGUJIUCZGUJTZVQYFUUSFUEUFYJUUTFUEUF
+      TYEYICUOZFUEZUUSUUTCUOZFUEZUFZUUFUUSUUTUUDUOZFUEZUFZQAUURUVIUVFUPUVAAUUFU
+      VCUVHUVEAUUEUVBFAUUDCYEYIACUUDOURZVTVNAUVGUVDFAUUDCUUSUUTUVJVTVNVRWAWBZMN
+      RUUNXEVSZWCVMYSAYRYPUUBUUHUFUUOUUQUUPABDXEUUDEFGYIYEULIJKLPUVKMNRUUNUVLWC
+      VMWDVAYTUUCXHUPYSYTUUAXFUUBXGYGYKUUAXFUFYFXCYJXDXEWEWFYJXDYFXCXEWEVRWGWHW
+      IWJWKWJWLWMWNVKWOAXMVPWPWQXPXKXJTZXLTXNXOUVMXLUAUBXIXEEXIVSUVLWRWSXKXJXLW
+      TXAXB $.
   $}
 
 
@@ -151687,6 +151883,195 @@ $)
       IWCFVRAFVRTXEJVCZAXEBCHVTKVEAXEBDHVTKVEZVFVGXFVOVPFSZVQHSXIVPVQHSZFSWGWIP
       XFXMWFVQVQHVTXJAXEBCFVRJVEXFVQVDVFXFXIWCXNWHFVRXKXLAXECDHVTKVEVFVGVLVHVIB
       CDWLVRGVTVNWOWNVRUKWQVJVK $.
+  $}
+
+  ${
+    $d B x y z $.  $d G x y z $.
+    rngressid.b $e |- B = ( Base ` G ) $.
+    $( A non-unital ring restricted to its base set is a non-unital ring.  It
+       will usually be the original non-unital ring exactly, of course, but to
+       show that needs additional conditions such as those in ~ strressid .
+       (Contributed by Jim Kingdon, 5-May-2025.) $)
+    rngressid $p |- ( G e. Rng -> ( G |`s B ) e. Rng ) $=
+      ( vx vy vz crng wcel cplusg cfv cress co cmulr eqidd cbs wceq cvv eqid cv
+      cabl a1i ssidd ressbas2d wfn basfn elex funfvex funfni sylancr ressplusgd
+      eqeltrid ressmulrg mpancom rngabl ablressid syl rngcl rngass rngdi rngdir
+      id isrngd ) BGHZDEFABIJZBAKLZBMJZVCAAVEBGVCVENZABOJZPVCCUAVCVAVCAUBUCVCAV
+      DBVEQQVGVCVDNVCAVHQCVCOQUDBQHVHQHZUEBGUFZVIQBOBOUGUHUIUKZVJUJAQHVCVFVEMJP
+      VKABVEVFQGVERVFRZULUMVCBTHVETHBUNABCUOUPABVFDSZESZCVLUQABVFVMVNFSZCVLURAV
+      DBVFVMVNVOCVDRZVLUSAVDBVFVMVNVOCVPVLUTVB $.
+  $}
+
+  ${
+    $d u v w x y B $.  $d u v w x y K $.  $d u v w x y ph $.  $d u v w x y L $.
+    rngpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    rngpropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    rngpropd.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    rngpropd.4 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( .r ` K ) y ) = ( x ( .r ` L ) y ) ) $.
+    $( If two structures have the same base set, and the values of their group
+       (addition) and ring (multiplication) operations are equal for all pairs
+       of elements of the base set, one is a non-unital ring iff the other one
+       is.  (Contributed by AV, 15-Feb-2025.) $)
+    rngpropd $p |- ( ph -> ( K e. Rng <-> L e. Rng ) ) $=
+      ( vu vv vw wcel cfv co wceq wa wral eqid cabl cmgp csgrp cplusg cmulr cbs
+      cv w3a crng simpll simprll simplrl simprlr ad2antrr eleqtrd simprr ablgrp
+      wb cgrp grpcl syl3an1 syl3anc eleqtrrd oveqrspc2v syl12anc oveq2d simplrr
+      eqtrd cvv elexd mgpbasg sgrpcl mgpplusgg 3eltr4d ad2ant2r oveq12d eqeq12d
+      oveqd oveq1d anbi12d anassrs ralbidva 2ralbidva raleqdv raleqbidv 3bitr3d
+      syl adantr pm5.32da df-3an 3bitr4g wi simp1 a1i ablpropd imbitrrid adantl
+      mgpex biimpa elex eqcomd ex eleq2d bicomd 3imtr4d imp sgrppropd pm5.21ndd
+      3anbi12d bitrd isrng ) AEUANZEUBOZUCNZKUGZLUGZMUGZEUDOZPZEUEOZPZXOXPXTPZX
+      OXQXTPZXRPZQZXOXPXRPZXQXTPZYCXPXQXTPZXRPZQZRZMEUFOZSZLYLSZKYLSZUHZFUANZFU
+      BOZUCNZXOXPXQFUDOZPZFUEOZPZXOXPUUBPZXOXQUUBPZYTPZQZXOXPYTPZXQUUBPZUUEXPXQ
+      UUBPZYTPZQZRZMFUFOZSZLUUNSZKUUNSZUHZEUINFUINAYPXLXNUUQUHZUURAXLXNRZYORUUT
+      UUQRYPUUSAUUTYOUUQAUUTRZYKMDSZLDSZKDSUUMMDSZLDSZKDSYOUUQUVAUVBUVDKLDDUVAX
+      ODNZXPDNZRZRYKUUMMDUVAUVHXQDNZYKUUMURUVAUVHUVIRZRZYEUUGYJUULUVKYAUUCYDUUF
+      UVKYAXOXSUUBPZUUCUVKAUVFXSDNYAUVLQAUUTUVJUJZUVAUVFUVGUVIUKZUVKXSYLDUVKXLX
+      PYLNZXQYLNZXSYLNZAXLXNUVJULZUVKXPDYLUVAUVFUVGUVIUMZADYLQZUUTUVJGUNZUOZUVK
+      XQDYLUVAUVHUVIUPZUWAUOZXLEUSNZUVOUVPUVQEUQZYLXREXPXQYLTZXRTZUTVAVBUWAVCAB
+      CDDXTUUBXOXSJVDVEUVKXSUUAXOUUBUVKAUVGUVIXSUUAQUVMUVSUWCABCDDXRYTXPXQIVDVE
+      VFVHUVKYDYBYCYTPZUUFUVKAYBDNYCDNZYDUWIQUVMUVKYBYLDUVKXOXPXMUDOZPZXMUFOZYB
+      YLUVKXNXOUWMNZXPUWMNZUWLUWMNAXLXNUVJVGZUVKXOYLUWMUVKXODYLUVNUWAUOZUVKEVIN
+      ZYLUWMQZUVKEUAUVRVJZYLEXMVIXMTZUWGVKZWGZUOZUVKXPYLUWMUWBUXCUOZUWMXMXOXPUW
+      KUWMTZUWKTZVLVBUVKXTUWKXOXPUVKUWRXTUWKQZUWTEXTXMVIUXAXTTZVMZWGZVRUXCVNUWA
+      VCUVKYCYLDUVKXOXQUWKPZUWMYCYLUVKXNUWNXQUWMNZUXLUWMNUWPUXDUVKXQYLUWMUWDUXC
+      UOZUWMXMXOXQUWKUXFUXGVLVBUVKXTUWKXOXQUXKVRUXCVNUWAVCZABCDDXRYTYBYCIVDVEUV
+      KYBUUDYCUUEYTAUVHYBUUDQUUTUVIABCDDXTUUBXOXPJVDVOUVKAUVFUVIYCUUEQUVMUVNUWC
+      ABCDDXTUUBXOXQJVDVEZVPVHVQUVKYGUUIYIUUKUVKYGYFXQUUBPZUUIUVKAYFDNUVIYGUXQQ
+      UVMUVKYFYLDUVKXLXOYLNZUVOYFYLNZUVRUWQUWBXLUWEUXRUVOUXSUWFYLXREXOXPUWGUWHU
+      TVAVBUWAVCUWCABCDDXTUUBYFXQJVDVEUVKYFUUHXQUUBAUVHYFUUHQUUTUVIABCDDXRYTXOX
+      PIVDVOVSVHUVKYIYCYHYTPZUUKUVKAUWJYHDNYIUXTQUVMUXOUVKYHYLDUVKXPXQUWKPZUWMY
+      HYLUVKXNUWOUXMUYAUWMNUWPUXEUXNUWMXMXPXQUWKUXFUXGVLVBUVKXTUWKXPXQUXKVRUXCV
+      NUWAVCABCDDXRYTYCYHIVDVEUVKYCUUEYHUUJYTUXPUVKAUVGUVIYHUUJQUVMUVSUWCABCDDX
+      TUUBXPXQJVDVEVPVHVQVTWAWBWCUVAUVCYNKDYLAUVTUUTGWHZUVAUVBYMLDYLUYBUVAYKMDY
+      LUYBWDWEWEUVAUVEUUPKDUUNADUUNQZUUTHWHZUVAUVDUUOLDUUNUYDUVAUUMMDUUNUYDWDWE
+      WEWFWIXLXNYOWJXLXNUUQWJWKAXLUUSUURUUSXLWLAXLXNUUQWMWNUURXLAYQYQYSUUQWMABC
+      DEFGHIWOZWPAXLUUSUURURAXLRZXLYQXNYSUUQAXLYQURXLUYEWHUYFBCYLXMYRVIVIXLXMVI
+      NAEXMUAUXAWRWQUYFYQYRVINAXLYQUYEWSZFYRUAYRTZWRWGUYFUWRUWSXLUWRAEUAWTWQZUX
+      BWGUYFYLDYRUFOZAYLDQXLADYLGXAWHUYFDUUNUYJAUYCXLHWHUYFYQUUNUYJQUYGUUNFYRUA
+      UYHUUNTZVKWGVHVHUYFBUGZYLNZCUGZYLNZRZUYLUYNUWKPZUYLUYNYRUDOZPZQZUYFUYLDNZ
+      UYNDNZRZUYLUYNXTPZUYLUYNUUBPZQZUYPUYTAVUCVUFWLXLAVUCVUFJXBWHAUYPVUCURXLAV
+      UCUYPAVUAUYMVUBUYOADYLUYLGXCADYLUYNGXCVTXDWHUYFUYQVUDUYSVUEUYFUWKXTUYLUYN
+      UYFXTUWKUYFUWRUXHUYIUXJWGXAVRUYFUYRUUBUYLUYNUYFUUBUYRUYFYQUUBUYRQUYGFUUBY
+      RUAUYHUUBTZVMWGXAVRVQXEXFXGXIXBXHXJKLMYLXREXTXMUWGUXAUWHUXIXKKLMUUNYTFUUB
+      YRUYKUYHYTTVUGXKWK $.
+  $}
+
+  ${
+    $d .+ p q u v $.  $d ph a b p q u v w x y z $.  $d U a b p q u v w x y z $.
+    $d .1. p q u x $.  $d B a b p q u v w $.  $d F a b p q u x y z $.
+    $d R a b p q $.  $d V a b p q u v x y z $.  $d .x. p q u v $.
+    imasrng.u $e |- ( ph -> U = ( F "s R ) ) $.
+    imasrng.v $e |- ( ph -> V = ( Base ` R ) ) $.
+    imasrng.p $e |- .+ = ( +g ` R ) $.
+    imasrng.t $e |- .x. = ( .r ` R ) $.
+    imasrng.f $e |- ( ph -> F : V -onto-> B ) $.
+    imasrng.e1 $e |- ( ( ph /\ ( a e. V /\ b e. V ) /\ ( p e. V /\ q e. V ) )
+      -> ( ( ( F ` a ) = ( F ` p ) /\ ( F ` b ) = ( F ` q ) )
+        -> ( F ` ( a .+ b ) ) = ( F ` ( p .+ q ) ) ) ) $.
+    imasrng.e2 $e |- ( ( ph /\ ( a e. V /\ b e. V ) /\ ( p e. V /\ q e. V ) )
+      -> ( ( ( F ` a ) = ( F ` p ) /\ ( F ` b ) = ( F ` q ) )
+        -> ( F ` ( a .x. b ) ) = ( F ` ( p .x. q ) ) ) ) $.
+    imasrng.r $e |- ( ph -> R e. Rng ) $.
+    $( The image structure of a non-unital ring is a non-unital ring
+       ( ~ imasring analog).  (Contributed by AV, 22-Feb-2025.) $)
+    imasrng $p |- ( ph -> U e. Rng ) $=
+      ( vu vv vw vx vy vz cplusg cfv cmulr crng imasbas eqidd cabl wcel c0g a1i
+      wceq rngabl syl eqid imasabl simpld cv wa co adantr simprl eleqtrd simprr
+      cbs syl3anc eleqtrrd caovclg imasmulf fovcld w3a wrex crn wfo forn eleq2d
+      rngcl 3anbi123d wfn wb fofn fvelrnb bitr3d 3reeanv bitr4di simp2 3ad2ant1
+      3syl wi 3adant3r3 simp3 simpr3 rngass syl13anc fveq2d 3adantr3 imasmulval
+      simpr1 3adantr1 3eqtr4d oveq1d 3adant3r1 oveq2d oveq12d eqeq12d syl5ibcom
+      simpl simp1 3exp2 imp32 rexlimdv rexlimdvva imp rngdi 3adantr2 imasaddval
+      sylbid rngacl 3adant3r2 rngdir isrngd ) AUAUBUCBFUGUHZFFUIUHZABDFGHUJMNQT
+      UKAYGULAYHULAFUMUNDUOUHZGUHFUOUHUQABCDFGHYIIJKLMNCDUGUHUQAOUPQRADUJUNZDUM
+      UNTDURUSYIUTVAVBAUAVCZUBVCZBBBYHABDYHEFGHUJIJKLQSMNTPYHUTZAUAUBJVCIVCHHHE
+      AYKHUNZYLHUNZVDZVDZYKYLEVEZDVJUHZHYQYJYKYSUNZYLYSUNZYRYSUNAYJYPTVFZYQYKHY
+      SAYNYOVGAHYSUQZYPNVFZVHZYQYLHYSAYNYOVIUUDVHZYSDEYKYLYSUTZPWBVKUUDVLZVMVNV
+      OAYKBUNZYLBUNZUCVCZBUNZVPZYKYLYHVEZUUKYHVEZYKYLUUKYHVEZYHVEZUQZAUUMUDVCZG
+      UHZYKUQZUEVCZGUHZYLUQZUFVCZGUHZUUKUQZVPZUFHVQZUEHVQUDHVQZUURAUUMUVAUDHVQZ
+      UVDUEHVQZUVGUFHVQZVPZUVJAYKGVRZUNZYLUVOUNZUUKUVOUNZVPZUUMUVNAUVPUUIUVQUUJ
+      UVRUULAUVOBYKAHBGVSZUVOBUQQHBGVTUSZWAAUVOBYLUWAWAAUVOBUUKUWAWAWCAUVTGHWDZ
+      UVSUVNWEQHBGWFUWBUVPUVKUVQUVLUVRUVMUDHYKGWGUEHYLGWGUFHUUKGWGWCWMWHUVAUVDU
+      VGUDUEUFHHHWIWJZAUVIUURUDUEHHAUUSHUNZUVBHUNZVDVDZUVHUURUFHAUWDUWEUVEHUNZU
+      VHUURWNZWNAUWDUWEUWGUWHAUWDUWEUWGVPZVDZUUTUVCYHVEZUVFYHVEZUUTUVCUVFYHVEZY
+      HVEZUQUVHUURUWJUUSUVBEVEZGUHZUVFYHVEZUUTUVBUVEEVEZGUHZYHVEZUWLUWNUWJUWOUV
+      EEVEZGUHZUUSUWREVEZGUHZUWQUWTUWJUXAUXCGUWJYJUUSYSUNZUVBYSUNZUVEYSUNZUXAUX
+      CUQAYJUWITVFZAUWDUWEUXEUWGAUWDUWEVPZUUSHYSAUWDUWEWKAUWDUUCUWENWLZVHWOZAUW
+      DUWEUXFUWGUXIUVBHYSAUWDUWEWPUXJVHWOZUWJUVEHYSAUWDUWEUWGWQZAUUCUWINVFVHZYS
+      DEUUSUVBUVEUUGPWRWSWTUWJAUWOHUNZUWGUWQUXBUQAUWIXLZAUWDUWEUXOUWGAUAUBUUSUV
+      BHHHEUUHVMXAZUXMABDYHEFGHUWOUVEUJIJKLQSMNTPYMXBVKUWJAUWDUWRHUNZUWTUXDUQUX
+      PAUWDUWEUWGXCZAUWEUWGUXRUWDAUAUBUVBUVEHHHEUUHVMXDZABDYHEFGHUUSUWRUJIJKLQS
+      MNTPYMXBVKXEUWJUWKUWPUVFYHAUWDUWEUWKUWPUQUWGABDYHEFGHUUSUVBUJIJKLQSMNTPYM
+      XBWOZXFUWJUWMUWSUUTYHAUWEUWGUWMUWSUQUWDABDYHEFGHUVBUVEUJIJKLQSMNTPYMXBXGZ
+      XHXEUVHUWLUUOUWNUUQUVHUWKUUNUVFUUKYHUVHUUTYKUVCYLYHUVAUVDUVGXMZUVAUVDUVGW
+      KZXIZUVAUVDUVGWPZXIUVHUUTYKUWMUUPYHUYCUVHUVCYLUVFUUKYHUYDUYFXIZXIXJXKXNXO
+      XPXQYBXRAUUMYKYLUUKYGVEZYHVEZUUNYKUUKYHVEZYGVEZUQZAUUMUVJUYLUWCAUVIUYLUDU
+      EHHUWFUVHUYLUFHAUWDUWEUWGUVHUYLWNZWNAUWDUWEUWGUYMUWJUUTUVCUVFYGVEZYHVEZUW
+      KUUTUVFYHVEZYGVEZUQUVHUYLUWJUUTUVBUVECVEZGUHZYHVEZUWPUUSUVEEVEZGUHZYGVEZU
+      YOUYQUWJUUSUYREVEZGUHZUWOVUACVEZGUHZUYTVUCUWJVUDVUFGUWJYJUXEUXFUXGVUDVUFU
+      QUXHUXKUXLUXNYSCDEUUSUVBUVEUUGOPXSWSWTUWJAUWDUYRHUNZUYTVUEUQUXPUXSAUWEUWG
+      VUHUWDAUAUBUVBUVEHHHCYQYKYLCVEZYSHYQYJYTUUAVUIYSUNUUBUUEUUFYSCDYKYLUUGOYC
+      VKUUDVLZVMXDABDYHEFGHUUSUYRUJIJKLQSMNTPYMXBVKUWJAUXOVUAHUNZVUCVUGUQUXPUXQ
+      AUWDUWGVUKUWEAUAUBUUSUVEHHHEUUHVMXTZABDYGCFGHUWOVUAUJIJKLQRMNTOYGUTZYAVKX
+      EUWJUYNUYSUUTYHAUWEUWGUYNUYSUQUWDABDYGCFGHUVBUVEUJIJKLQRMNTOVUMYAXGXHUWJU
+      WKUWPUYPVUBYGUYAAUWDUWGUYPVUBUQUWEABDYHEFGHUUSUVEUJIJKLQSMNTPYMXBYDZXIXEU
+      VHUYOUYIUYQUYKUVHUUTYKUYNUYHYHUYCUVHUVCYLUVFUUKYGUYDUYFXIXIUVHUWKUUNUYPUY
+      JYGUYEUVHUUTYKUVFUUKYHUYCUYFXIZXIXJXKXNXOXPXQYBXRAUUMYKYLYGVEZUUKYHVEZUYJ
+      UUPYGVEZUQZAUUMUVJVUSUWCAUVIVUSUDUEHHUWFUVHVUSUFHAUWDUWEUWGUVHVUSWNZWNAUW
+      DUWEUWGVUTUWJUUTUVCYGVEZUVFYHVEZUYPUWMYGVEZUQUVHVUSUWJUUSUVBCVEZGUHZUVFYH
+      VEZVUBUWSYGVEZVVBVVCUWJVVDUVEEVEZGUHZVUAUWRCVEZGUHZVVFVVGUWJVVHVVJGUWJYJU
+      XEUXFUXGVVHVVJUQUXHUXKUXLUXNYSCDEUUSUVBUVEUUGOPYEWSWTUWJAVVDHUNZUWGVVFVVI
+      UQUXPAUWDUWEVVLUWGAUAUBUUSUVBHHHCVUJVMXAUXMABDYHEFGHVVDUVEUJIJKLQSMNTPYMX
+      BVKUWJAVUKUXRVVGVVKUQUXPVULUXTABDYGCFGHVUAUWRUJIJKLQRMNTOVUMYAVKXEUWJVVAV
+      VEUVFYHAUWDUWEVVAVVEUQUWGABDYGCFGHUUSUVBUJIJKLQRMNTOVUMYAWOXFUWJUYPVUBUWM
+      UWSYGVUNUYBXIXEUVHVVBVUQVVCVURUVHVVAVUPUVFUUKYHUVHUUTYKUVCYLYGUYCUYDXIUYF
+      XIUVHUYPUYJUWMUUPYGVUOUYGXIXJXKXNXOXPXQYBXRYF $.
+  $}
+
+  ${
+    $d B a b p q $.  $d F a b p q $.  $d R a b p q $.  $d U a b p q $.
+    $d V a b p q $.
+    imasrngf1.u $e |- U = ( F "s R ) $.
+    imasrngf1.v $e |- V = ( Base ` R ) $.
+    $( The image of a non-unital ring under an injection is a non-unital ring.
+       (Contributed by AV, 22-Feb-2025.) $)
+    imasrngf1 $p |- ( ( F : V -1-1-> B /\ R e. Rng ) -> U e. Rng ) $=
+      ( vq vp va vb wf1 crng wcel cfv wceq a1i eqid cv f1ocpbl crn cplusg cmulr
+      wa cimas co cbs wf1o wfo f1f1orn adantr f1ofo syl simpr imasrng ) EADLZBM
+      NZUDZDUAZBUBOZBBUCOZCDEHIJKCDBUEUFPURFQEBUGOPURGQUTRVARUREUSDUHZEUSDUIUPV
+      BUQEADUJUKZEUSDULUMURJSZKSZISZHSZUTDEUSVCTURVDVEVFVGVADEUSVCTUPUQUNUO $.
+  $}
+
+  ${
+    $d R a b p q u $.  $d U a b p q $.  $d V a b p q u x y $.
+    $d .~ a b p q u $.  $d .+ p q u x y $.  $d .x. p q u x y $.
+    $d ph a b p q u x y $.
+    qusrng.u $e |- ( ph -> U = ( R /s .~ ) ) $.
+    qusrng.v $e |- ( ph -> V = ( Base ` R ) ) $.
+    qusrng.p $e |- .+ = ( +g ` R ) $.
+    qusrng.t $e |- .x. = ( .r ` R ) $.
+    qusrng.r $e |- ( ph -> .~ Er V ) $.
+    qusrng.e1 $e |- ( ph ->
+      ( ( a .~ p /\ b .~ q ) -> ( a .+ b ) .~ ( p .+ q ) ) ) $.
+    qusrng.e2 $e |- ( ph ->
+      ( ( a .~ p /\ b .~ q ) -> ( a .x. b ) .~ ( p .x. q ) ) ) $.
+    qusrng.x $e |- ( ph -> R e. Rng ) $.
+    $( The quotient structure of a non-unital ring is a non-unital ring
+       ( ~ qusring2 analog).  (Contributed by AV, 23-Feb-2025.) $)
+    qusrng $p |- ( ph -> U e. Rng ) $=
+      ( wcel vu vx vy cqs cv cec cmpt cvv crng eqid wer cbs cfv wfn basfn elexd
+      funfvex funfni sylancr eqeltrd erex qusval quslem wa adantr simprl eleq2d
+      sylc co wb mpbid simprr rngacl syl3anc mpbird ercpbl rngcl imasrng ) AGCU
+      DBDEFUAGUAUECUFUGZGHIJKAUACDFVSGUHUILMVSUJZAGCUKGUHTCUHTPAGDULUMZUHMAULUH
+      UNDUHTWAUHTZUOADUISUPWBUHDULDULUQURUSUTZGCUHVAVHZSVBMNOAUACDFVSGUHUILMVTW
+      DSVCAUAJUEZKUEZIUEZHUEZBCVSGUHUBUCPWCVTAUBUEZGTZUCUEZGTZVDZVDZWIWKBVIZGTZ
+      WOWATZWNDUITZWIWATZWKWATZWQAWRWMSVEZWNWJWSAWJWLVFAWJWSVJWMAGWAWIMVGVEVKZW
+      NWLWTAWJWLVLAWLWTVJWMAGWAWKMVGVEVKZWABDWIWKWAUJZNVMVNAWPWQVJWMAGWAWOMVGVE
+      VOQVPAUAWEWFWGWHECVSGUHUBUCPWCVTWNWIWKEVIZGTZXEWATZWNWRWSWTXGXAXBXCWADEWI
+      WKXDOVQVNAXFXGVJWMAGWAXEMVGVEVORVPSVR $.
   $}
 
 
@@ -153425,6 +153810,23 @@ $)
       VSWAXRXSRWTXAXCXBVKVLAWCWJVRVTVNVPWEVHSWMVJXQVKHZWKXTXRRWTVJVSWAYAWKVKVLA
       VRVTVNVPVEURXAVKAVMWCVKBGVKXQWJVNWECWFQTWMXNXKWQWNVLXPXEVFVGVI $.
 
+    ${
+      $d V x y $.
+      $( A set is a non-unital ring if and only if its opposite is a non-unital
+         ring.  Bidirectional form of ~ opprrng .  (Contributed by AV,
+         15-Feb-2025.) $)
+      opprrngbg $p |- ( R e. V -> ( R e. Rng <-> O e. Rng ) ) $=
+        ( vx vy wcel crng opprrng cfv eqid cbs wceq a1i opprbasg cvv syl cplusg
+        cmulr co coppr opprex eqtrd oppraddg oveqdr vex opprmulg syl3anc adantr
+        cv wa simpl simprr simprl eqtr2d rngpropd imbitrrid impbid2 ) ACGZAHGZB
+        HGZABDIVAUTUSBUAJZHGBVBVBKZIUSEFALJZAVBVDVDMUSVDKZNUSVDBLJZVBLJZVDABCDV
+        EOUSBPGZVFVGMABCDUBZVFBVBPVCVFKZOQUCUSEUJZVDGZFUJZVDGZUKZEFARJZVBRJZUSV
+        PBRJZVQVPABCDVPKUDUSVHVRVQMVIVRBVBPVCVRKUDQUCUEUSVOUKZVKVMVBSJZTZVMVKBS
+        JZTZVKVMASJZTZUSWAWCMZVOUSVHVKPGZVMPGZWFVIWGUSEUFNWHUSFUFNVFBVTWBPVBPPV
+        KVMVJWBKZVCVTKUGUHUIVSUSVNVLWCWEMUSVOULUSVLVNUMUSVLVNUNVDAWBWDVDBCVDVMV
+        KVEWDKDWIUGUHUOUPUQUR $.
+    $}
+
     $( An opposite ring is a ring.  (Contributed by Mario Carneiro,
        1-Dec-2014.)  (Revised by Mario Carneiro, 30-Aug-2015.) $)
     opprring $p |- ( R e. Ring -> O e. Ring ) $=
@@ -154713,8 +155115,266 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-  Subrings of a ring
+  Subrings
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Subrings of non-unital rings
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $( Introduce new constant symbols. $)
+  $c SubRng $.
+
+  $( Extend class notation with all subrings of a non-unital ring. $)
+  csubrng $a class SubRng $.
+
+  ${
+    $d w s $.
+    $( Define a subring of a non-unital ring as a set of elements that is a
+       non-unital ring in its own right.  In this section, a subring of a
+       non-unital ring is simply called "subring", unless it causes any
+       ambiguity with ` SubRing ` .  (Contributed by AV, 14-Feb-2025.) $)
+    df-subrng $a |- SubRng = ( w e. Rng |-> { s e. ~P ( Base ` w ) |
+                                              ( w |`s s ) e. Rng } ) $.
+
+    $d A s $.  $d B r s $.  $d R r s $.
+    issubrng.b $e |- B = ( Base ` R ) $.
+    $( The subring of non-unital ring predicate.  (Contributed by AV,
+       14-Feb-2025.) $)
+    issubrng $p |- ( A e. ( SubRng ` R )
+                     <-> ( R e. Rng /\ ( R |`s A ) e. Rng /\ A C_ B ) ) $=
+      ( vw vs vr csubrng cfv wcel crng cress co cv cbs cpw crab cvv wa bitrid
+      wss w3a df-subrng mptrcl simp1 wceq fveq2 pweqd oveq1 eleq1d rabeqbidv id
+      wfn basfn elex funfvex funfni sylancr pwexd rabexg syl eleq2d oveq2 elrab
+      fvmptd3 eqcomi sseq2i anbi2i ibar ancom wb elpw2g anbi2d 3anass a1i bitrd
+      3bitr4d pm5.21nii ) ACHIZJZCKJZWACALMZKJZABUAZUBZEKENZFNZLMKJFWFOIPQHACEF
+      UCUDWAWCWDUEWAVTACWGLMZKJZFCOIZPZQZJZWEWAVSWLAWAGCGNZWGLMZKJZFWNOIZPZQWLK
+      HRGFUCWNCUFZWPWIFWRWKWSWQWJWNCOUGUHWSWOWHKWNCWGLUIUJUKWAULWAWKRJWLRJWAWJR
+      WAORUMCRJWJRJZUNCKUOWTRCOCOUPUQURZUSWIFWKRUTVAVEVBWMAWKJZWCSZWAWEWIWCFAWK
+      WGAUFWHWBKWGACLVCUJVDWAWCAWJUAZSZWAWCWDSZSZXCWEXEXFWAXGXDWDWCWJBABWJDVFVG
+      VHWAXFVITXCWCXBSWAXEXBWCVJWAXBXDWCWAWTXBXDVKXAAWJRVLVAVMTWEXGVKWAWAWCWDVN
+      VOVQTVPVR $.
+  $}
+
+  ${
+    subrngss.1 $e |- B = ( Base ` R ) $.
+    $( A subring is a subset.  (Contributed by AV, 14-Feb-2025.) $)
+    subrngss $p |- ( A e. ( SubRng ` R ) -> A C_ B ) $=
+      ( csubrng cfv wcel crng cress co wss issubrng simp3bi ) ACEFGCHGCAIJHGABK
+      ABCDLM $.
+
+    $( Every non-unital ring is a subring of itself.  (Contributed by AV,
+       14-Feb-2025.) $)
+    subrngid $p |- ( R e. Rng -> B e. ( SubRng ` R ) ) $=
+      ( crng wcel cress co wss csubrng cfv rngressid ssidd issubrng syl3anbrc
+      id ) BDEZPBAFGDEAAHABIJEPOABCKPALAABCMN $.
+  $}
+
+  ${
+    subrngrng.1 $e |- S = ( R |`s A ) $.
+    $( A subring is a non-unital ring.  (Contributed by AV, 14-Feb-2025.) $)
+    subrngrng $p |- ( A e. ( SubRng ` R ) -> S e. Rng ) $=
+      ( crng wcel cress co cbs cfv wss w3a csubrng eqid issubrng eleq1i 3imtr4i
+      simp2 ) BEFZBAGHZEFZABIJZKZLUAABMJFCEFSUAUCRAUBBUBNOCTEDPQ $.
+  $}
+
+  $( Reverse closure for a subring predicate.  (Contributed by AV,
+     14-Feb-2025.) $)
+  subrngrcl $p |- ( A e. ( SubRng ` R ) -> R e. Rng ) $=
+    ( csubrng cfv wcel crng cress co cbs wss eqid issubrng simp1bi ) ABCDEBFEBA
+    GHFEABIDZJANBNKLM $.
+
+  $( A subring is a subgroup.  (Contributed by AV, 14-Feb-2025.) $)
+  subrngsubg $p |- ( A e. ( SubRng ` R ) -> A e. ( SubGrp ` R ) ) $=
+    ( csubrng cfv wcel cgrp cbs wss cress co crng subrngrcl rnggrp syl subrngss
+    csubg eqid subrngrng issubg syl3anbrc ) ABCDEZBFEZABGDZHBAIJZFEZABPDEUABKEU
+    BABLBMNAUCBUCQZOUAUDKEUEABUDUDQRUDMNUCABUFST $.
+
+  ${
+    $d A x y $.  $d R x y $.
+    $( A subring is a normal subgroup.  (Contributed by AV, 25-Feb-2025.) $)
+    subrngringnsg $p |- ( A e. ( SubRng ` R ) -> A e. ( NrmSGrp ` R ) ) $=
+      ( vx vy csubrng cfv wcel csubg cv cplusg co cbs wral cnsg subrngsubg cabl
+      wi wa syl eqid w3a wceq crng subrngrcl rngabl 3anim1i 3expb ablcom eleq1d
+      biimpd ralrimivva isnsg2 sylanbrc ) ABEFGZABHFGCIZDIZBJFZKZAGZUPUOUQKZAGZ
+      QZDBLFZMCVCMABNFGABOUNVBCDVCVCUNUOVCGZUPVCGZRRZUSVAVFURUTAVFBPGZVDVEUAZUR
+      UTUBUNVDVEVHUNVGVDVEUNBUCGVGABUDBUESUFUGVCUQBUOUPVCTZUQTZUHSUIUJUKCDUQABV
+      CVIVJULUM $.
+  $}
+
+  ${
+    subrng0.1 $e |- S = ( R |`s A ) $.
+    $( Base set of a subring structure.  (Contributed by AV, 14-Feb-2025.) $)
+    subrngbas $p |- ( A e. ( SubRng ` R ) -> A = ( Base ` S ) ) $=
+      ( csubrng cfv wcel csubg cbs wceq subrngsubg subgbas syl ) ABEFGABHFGACIF
+      JABKABCDLM $.
+
+    subrng0.2 $e |- .0. = ( 0g ` R ) $.
+    $( A subring always has the same additive identity.  (Contributed by AV,
+       14-Feb-2025.) $)
+    subrng0 $p |- ( A e. ( SubRng ` R ) -> .0. = ( 0g ` S ) ) $=
+      ( csubrng cfv wcel csubg c0g wceq subrngsubg subg0 syl ) ABGHIABJHIDCKHLA
+      BMABCDEFNO $.
+  $}
+
+  ${
+    subrngacl.p $e |- .+ = ( +g ` R ) $.
+    $( A subring is closed under addition.  (Contributed by AV,
+       14-Feb-2025.) $)
+    subrngacl $p |- ( ( A e. ( SubRng ` R ) /\ X e. A /\ Y e. A ) ->
+      ( X .+ Y ) e. A ) $=
+      ( csubrng cfv wcel csubg co subrngsubg subgcl syl3an1 ) ACGHIACJHIDAIEAID
+      EBKAIACLBACDEFMN $.
+  $}
+
+  ${
+    subrngmcl.p $e |- .x. = ( .r ` R ) $.
+    $( A subgroup is closed under multiplication.  (Contributed by Mario
+       Carneiro, 2-Dec-2014.)  Generalization of ~ subrgmcl .  (Revised by AV,
+       14-Feb-2025.) $)
+    subrngmcl $p |- ( ( A e. ( SubRng ` R ) /\ X e. A /\ Y e. A )
+                      -> ( X .x. Y ) e. A ) $=
+      ( csubrng cfv wcel w3a cress co cmulr cbs crng subrngrng 3ad2ant1 eleqtrd
+      eqid wceq simp2 subrngbas simp3 rngcl syl3anc subrngrcl ressmulrg 3eltr4d
+      mpdan oveqd ) ABGHZIZDAIZEAIZJZDEBAKLZMHZLZUPNHZDECLAUOUPOIZDUSIEUSIURUSI
+      ULUMUTUNABUPUPSZPQUODAUSULUMUNUAULUMAUSTUNABUPVAUBQZRUOEAUSULUMUNUCVBRUSU
+      PUQDEUSSUQSUDUEUOCUQDEULUMCUQTZUNULBOIVCABUFABUPCUKOVAFUGUIQUJVBUH $.
+  $}
+
+  ${
+    $d u v w x y A $.  $d u v w x y R $.  $d u v w x y .x. $.
+    issubrng2.b $e |- B = ( Base ` R ) $.
+    issubrng2.t $e |- .x. = ( .r ` R ) $.
+    $( Characterize the subrings of a ring by closure properties.  (Contributed
+       by AV, 15-Feb-2025.) $)
+    issubrng2 $p |- ( R e. Rng -> ( A e. ( SubRng ` R ) <->
+         ( A e. ( SubGrp ` R ) /\ A. x e. A A. y e. A ( x .x. y ) e. A ) ) ) $=
+      ( vu wcel cfv cv co wa wceq syl cgrp sseld adantlr syldan vv crng csubrng
+      vw csubg subrngsubg subrngmcl 3expb ralrimivva jca cress wss simpl cplusg
+      wral cbs simprl eqid subgbas eqidd id ressplusgd cmulr ressmulrg syl2anc2
+      subgrcl rngabl subgabl syl2an2r simprr oveq1 eleq1d rspc2v syl5com 3impib
+      cabl oveq2 subgss 3anim123d rngass rngdi rngdir isrngd issubrng syl3anbrc
+      w3a imp ex impbid2 ) EUBJZCEUCKJZCEUEKZJZALZBLZFMZCJZBCUOACUOZNZWKWMWRCEU
+      FWKWQABCCWKWNCJWOCJWQCEFWNWOHUGUHUIUJWJWSWKWJWSNZWJECUKMZUBJCDULZWKWJWSUM
+      WTIUAUDCEUNKZXAFWTWMCXAUPKOWJWMWRUQZCEXAXAURZUSPWTWMXCXAUNKOXDWMCXCEXAWLQ
+      WMXAUTWMXCUTWMVACEVFZVBPWTWMEQJFXAVCKOXDXFCEXAFWLQXEHVDVEWJEVPJWSWMXAVPJE
+      VGXDCEXAXEVHVIWTILZCJZUALZCJZXGXIFMZCJZWTWRXHXJNXLWJWMWRVJWQXLXGWOFMZCJAB
+      XGXICCWNXGOWPXMCWNXGWOFVKVLWOXIOXMXKCWOXIXGFVQVLVMVNVOWTXHXJUDLZCJZWFZXGD
+      JZXIDJZXNDJZWFZXKXNFMXGXIXNFMZFMOZWTXPXTWTXHXQXJXRXOXSWTCDXGWTWMXBXDDCEGV
+      RPZRWTCDXIYCRWTCDXNYCRVSWGZWJXTYBWSDEFXGXIXNGHVTSTWTXPXTXGXIXNXCMFMXKXGXN
+      FMZXCMOZYDWJXTYFWSDXCEFXGXIXNGXCURZHWASTWTXPXTXGXIXCMXNFMYEYAXCMOZYDWJXTY
+      HWSDXCEFXGXIXNGYGHWBSTWCYCCDEGWDWEWHWI $.
+  $}
+
+  ${
+    $d x y z O $.  $d x y z R $.  $d x V $.
+    opprsubrng.o $e |- O = ( oppR ` R ) $.
+    $( Being a subring is a symmetric property.  (Contributed by AV,
+       15-Feb-2025.) $)
+    opprsubrngg $p |- ( R e. V -> ( SubRng ` R ) = ( SubRng ` O ) ) $=
+      ( vx vz vy wcel csubrng cfv crng cv wi subrngrcl a1i csubg wral cvv eqid
+      wb opprrngbg imbitrrid cmulr co opprsubgg eleq2d ralcom wceq vex opprmulg
+      cbs mp3an23 eleq1d 2ralbidv bitr4id anbi12d issubrng2 opprrng syl 3bitr4d
+      wa pm5.21ndd eqrdv ) ACHZEAIJZBIJZVDAKHZELZVEHZVHVFHZVIVGMVDVHANOVJVGVDBK
+      HZVHBNABCDUAUBVGVIVJTMVDVGVHAPJZHZFLZGLZAUCJZUDZVHHZGVHQFVHQZVAVHBPJZHZVO
+      VNBUCJZUDZVHHZFVHQGVHQZVAZVIVJVGVMWAVSWEVGVLVTVHABKDUEUFVGVSVRFVHQGVHQWEV
+      RFGVHVHUGVGWDVRGFVHVHVGWCVQVHVGVORHVNRHWCVQUHGUIFUIAUKJZAWBVPRBKRVOVNWGSZ
+      VPSZDWBSZUJULUMUNUOUPFGVHWGAVPWHWIUQVGVKVJWFTABDURGFVHBUKJZBWBWKSWJUQUSUT
+      OVBVC $.
+  $}
+
+  ${
+    $d R j r x y $.  $d S j r x y $.
+    $( The intersection of a nonempty collection of subrings is a subring.
+       (Contributed by AV, 15-Feb-2025.) $)
+    subrngintm $p |- ( ( S C_ ( SubRng ` R ) /\ E. j j e. S )
+                      -> |^| S e. ( SubRng ` R ) ) $=
+      ( vx vy vr cfv wss cv wcel wa cmulr wral sylan elinti imp eqid syl3anc wb
+      cvv csubrng wex cint csubg subrngsubg ssriv mpan2 subgintm ssel2 ad4ant14
+      co sstr simprl simprr subrngmcl ralrimiva crng ssel subrngrcl exlimdv vex
+      syl6 mulrslid slotex ovexg elintg 3syl adantr mpbird ralrimivva issubrng2
+      a1i cbs syl mpbir2and ) BAUAGZHZCIZBJZCUBZKZBUCZVPJZWBAUDGZJZDIZEIZALGZUK
+      ZWBJZEWBMDWBMZVQBWDHZVTWEVQVPWDHWLFVPWDFIZAUEUFBVPWDULUGCBAUHNWAWJDEWBWBW
+      AWFWBJZWGWBJZKZKZWJWIWMJZFBMZWQWRFBWQWMBJZKWMVPJZWFWMJZWGWMJZWRVQWTXAVTWP
+      BVPWMUIUJWQWNWTXBWAWNWOUMWNWTXBWFBWMOPNWQWOWTXCWAWNWOUNWOWTXCWGBWMOPNWMAW
+      HWFWGWHQZUORUPWAWJWSSZWPWAAUQJZWITJZXEVQVTXFVQVSXFCVQVSVRVPJXFBVPVRURVRAU
+      SVBUTPZXFWFTJZWHTJWGTJZXGXIXFDVAVLALUQVCVDXJXFEVAVLWFWGWHTTTVERFWIBTVFVGV
+      HVIVJWAXFWCWEWKKSXHDEWBAVMGZAWHXKQXDVKVNVO $.
+  $}
+
+  ${
+    $d A j $.  $d B j $.  $d R j $.
+    $( The intersection of two subrings is a subring.  (Contributed by AV,
+       15-Feb-2025.) $)
+    subrngin $p |- ( ( A e. ( SubRng ` R ) /\ B e. ( SubRng ` R ) )
+                   -> ( A i^i B ) e. ( SubRng ` R ) ) $=
+      ( vj csubrng cfv wcel wa cpr cint cin intprg wss cv wex prssi prmg adantr
+      subrngintm syl2anc eqeltrrd ) ACEFZGZBUBGZHZABIZJZABKUBABUBUBLUEUFUBMDNUF
+      GDOZUGUBGABUBPUCUHUDDABUBQRCUFDSTUA $.
+  $}
+
+  ${
+    $d A a $.  $d R a $.  $d S a $.
+    subsubrng.s $e |- S = ( R |`s A ) $.
+    $( A subring of a subring is a subring.  (Contributed by AV,
+       15-Feb-2025.) $)
+    subsubrng $p |- ( A e. ( SubRng ` R )
+          -> ( B e. ( SubRng ` S ) <-> ( B e. ( SubRng ` R ) /\ B C_ A ) ) ) $=
+      ( csubrng cfv wcel wss wa crng cress cbs adantr wceq eqid subrngss adantl
+      co subrngrng subrngrcl subrngbas sseqtrrd oveq1i ressabsg mpidan eqeltrrd
+      3expa eqtrid syldan sstrd issubrng syl3anbrc jca adantrl ad2antrl eqeltrd
+      simprr sseqtrd impbida ) ACFGZHZBDFGHZBVAHZBAIZJZVBVCJZVDVEVGCKHZCBLSZKHZ
+      BCMGZIVDVBVHVCACUAZNVGDBLSZVIKVBVCVEVMVIOZVGBDMGZAVCBVOIZVBBVODVOPZQRVBAV
+      OOZVCACDEUBZNUCZVBVEJVMCALSZBLSZVIDWABLEUDVBVEVHWBVIOZVLVBVEVHWCABCVAKUEU
+      HUFUIZUJVCVMKHZVBBDVMVMPTRUGVGBAVKVTVBAVKIVCAVKCVKPZQNUKBVKCWFULUMVTUNVBV
+      FJZDKHZWEVPVCVBWHVFACDETNWGVMVIKVBVEVNVDWDUOVDVJVBVEBCVIVIPTUPUQWGBAVOVBV
+      DVEURVBVRVFVSNUSBVODVQULUMUT $.
+
+    $( The set of subrings of a subring are the smaller subrings.  (Contributed
+       by AV, 15-Feb-2025.) $)
+    subsubrng2 $p |- ( A e. ( SubRng ` R )
+                       -> ( SubRng ` S ) = ( ( SubRng ` R ) i^i ~P A ) ) $=
+      ( va csubrng cfv wcel cpw cin cv wss subsubrng velpw anbi2i bitr2i bitrdi
+      wa elin eqrdv ) ABFGZHZECFGZUAAIZJZUBEKZUCHUFUAHZUFALZRZUFUEHZAUFBCDMUJUG
+      UFUDHZRUIUFUAUDSUKUHUGEANOPQT $.
+  $}
+
+  ${
+    $d s x y B $.  $d s x y K $.  $d s x y ph $.  $d s x y L $.
+    subrngpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    subrngpropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    subrngpropd.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    subrngpropd.4 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( .r ` K ) y ) = ( x ( .r ` L ) y ) ) $.
+    $( If two structures have the same ring components (properties), they have
+       the same set of subrings.  (Contributed by AV, 17-Feb-2025.) $)
+    subrngpropd $p |- ( ph -> ( SubRng ` K ) = ( SubRng ` L ) ) $=
+      ( cfv crng wcel co cbs wa wceq cvv eqidd eqid vs csubrng cv cress wss w3a
+      wi simp1 a1i rngpropd imbitrrid wb adantr cin ineq2d simpr ressbasd eqtrd
+      vex biimpa cplusg elinel2 anim12i adantlr ressplusgd oveqdr 3eqtr3d cmulr
+      sylan2 ressmulrg syl2anc eqtr3d sseq2d 3anbi123d pm5.21ndd issubrng eqrdv
+      ex 3bitr4g ) AUAEUBKZFUBKZAELMZEUAUCZUDNZLMZWCEOKZUEZUFZFLMZFWCUDNZLMZWCF
+      OKZUEZUFZWCVTMWCWAMAWBWHWNWHWBUGAWBWEWGUHUIWNWBAWIWIWKWMUHABCDEFGHIJUJZUK
+      AWBWHWNULAWBPZWBWIWEWKWGWMAWBWIULWBWOUMWPBCWCDUNZWDWJWPWQWCWFUNZWDOKAWQWR
+      QWBADWFWCGUOUMWPWCWFWDRELWPWDSZWPWFSAWBUPZWCRMZWPUAUSUIZUQURWPWQWCWLUNZWJ
+      OKAWQXCQWBADWLWCHUOUMWPWCWLWJRFLWPWJSZWPWLSAWBWIWOUTZXBUQURBUCZWQMZCUCZWQ
+      MZPZWPXFDMZXHDMZPZXFXHWDVAKZNZXFXHWJVAKZNZQXGXKXIXLXFWCDVBXHWCDVBVCZWPXMP
+      ZXFXHEVAKZNZXFXHFVAKZNZXOXQAXMYAYCQWBIVDWPXMBCXTXNWPWCXTEWDRLWSWPXTSXBWTV
+      EVFWPXMBCYBXPWPWCYBFWJRLXDWPYBSXBXEVEVFVGVIXJWPXMXFXHWDVHKZNZXFXHWJVHKZNZ
+      QXRXSXFXHEVHKZNZXFXHFVHKZNZYEYGAXMYIYKQWBJVDWPXMBCYHYDWPXAWBYHYDQXBWTWCEW
+      DYHRLWDTYHTVJVKVFWPXMBCYJYFWPXAWIYJYFQXBXEWCFWJYJRLWJTYJTVJVKVFVGVIUJAWGW
+      MULWBAWFWLWCADWFWLGHVLVMUMVNVRVOWCWFEWFTVPWCWLFWLTVPVSVQ $.
+  $}
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Subrings of unital rings
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
   $( Introduce new constant symbols. $)
@@ -158412,6 +159072,126 @@ $)
     $}
   $}
 
+  ${
+    $d x y B $.  $d x y K $.  $d x y L $.  $d x y ph $.  $d x y W $.
+    lidlpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    lidlpropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    lidlpropd.3 $e |- ( ph -> B C_ W ) $.
+    lidlpropd.4 $e |- ( ( ph /\ ( x e. W /\ y e. W ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    lidlpropd.5 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( .r ` K ) y ) e. W ) $.
+    lidlpropd.6 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( .r ` K ) y ) = ( x ( .r ` L ) y ) ) $.
+    lidlpropdg.k $e |- ( ph -> K e. X ) $.
+    lidlpropdg.l $e |- ( ph -> L e. Y ) $.
+    $( The left ideals and ring span of a ring depend only on the ring
+       components.  Here ` W ` is expected to be either ` B ` (when closure is
+       available) or ` _V ` (when strong equality is available).  (Contributed
+       by Mario Carneiro, 14-Jun-2015.) $)
+    lidlrsppropdg $p |- ( ph ->
+      ( ( LIdeal ` K ) = ( LIdeal ` L ) /\ ( RSpan ` K ) = ( RSpan ` L ) ) ) $=
+      ( cfv wceq syl clidl crsp crglmod clss cvv cbs rlmbasg eqtrd cv wa cplusg
+      wcel rlmplusgg oveqdr 3eqtr3d cmulr cvsca rlmvscag eqeltrrd rlmscabas wfn
+      co rlmfn elexd funfvex funfni sylancr lsspropdg lidlvalg 3eqtr4d lsppropd
+      csca clspn rspvalg jca ) AEUARZFUARZSEUBRZFUBRZSAEUCRZUDRZFUCRZUDRZVPVQAB
+      CDDVTWBGUEUEADEUFRZVTUFRZJAEHULZWDWESPEHUGTUHZADFUFRZWBUFRZKAFIULZWHWISQF
+      IUGTUHZLABUIZGULCUIZGULUJZUJWLWMEUKRZVBWLWMFUKRZVBWLWMVTUKRZVBWLWMWBUKRZV
+      BMAWNBCWOWQAWFWOWQSPEHUMTUNAWNBCWPWRAWJWPWRSQFIUMTUNUOZAWLDULWMDULUJZUJZW
+      LWMEUPRZVBZWLWMVTUQRZVBZGAWTBCXBXDAWFXBXDSPEHURTUNZNUSZXAXCWLWMFUPRZVBXEW
+      LWMWBUQRZVBOXFAWTBCXHXIAWJXHXISQFIURTUNUOZADWDVTVLRUFRZJAWFWDXKSPEHUTTUHZ
+      ADWHWBVLRUFRZKAWJWHXMSQFIUTTUHZAUCUEVAZEUEULVTUEULZVCAEHPVDXPUEEUCEUCVEVF
+      VGZAXOFUEULWBUEULZVCAFIQVDXRUEFUCFUCVEVFVGZVHAWFVPWASPHEVITAWJVQWCSQIFVIT
+      VJAVTVMRZWBVMRZVRVSABCDDVTWBGUEUEWGWKLWSXGXJXLXNXQXSVKAWFVRXTSPHEVNTAWJVS
+      YASQIFVNTVJVO $.
+  $}
+
+  ${
+    $d I a b c $.  $d L a b c $.  $d R a b c $.  $d U a b c $.
+    rnglidlabl.l $e |- L = ( LIdeal ` R ) $.
+    rnglidlabl.i $e |- I = ( R |`s U ) $.
+    ${
+      $d .0. a b $.
+      rnglidlabl.z $e |- .0. = ( 0g ` R ) $.
+      $( The multiplicative group of a (left) ideal of a non-unital ring is a
+         magma.  (Contributed by AV, 17-Feb-2020.)  Generalization for
+         non-unital rings.  The assumption ` .0. e. U ` is required because a
+         left ideal of a non-unital ring does not have to be a subgroup.
+         (Revised by AV, 11-Mar-2025.) $)
+      rnglidlmmgm $p |- ( ( R e. Rng /\ U e. L /\ .0. e. U )
+                          -> ( mulGrp ` I ) e. Mgm ) $=
+        ( va vb crng wcel cfv co cbs wral wa wceq eqid cvv w3a cmgp cmulr simp1
+        cmgm lidlbas eleq1a mpd 3ad2ant2 eqcomd eleq2d biimpa 3adant1 lidlssbas
+        cv 3jca wi sseld anim1d imp rnglidlmcl syl2an2r simp2 ressmulrg syl2anc
+        oveqd eleq1d adantr mpbird ralrimivva cplusg cress eqeltrid mgpex ismgm
+        wb ressex 3syl mgpbasg syl mgpplusgg eleq12d raleqbidv bitr4d ) AKLZBDL
+        ZEBLZUAZCUBMZUELZIUOZJUOZCUCMZNZCOMZLZJWOPZIWOPZWHWPIJWOWOWHWKWOLZWLWOL
+        ZQZQWPWKWLAUCMZNZWOLZWHWEWODLZEWOLZUAXAWKAOMZLZWTQZXDWHWEXEXFWEWFWGUDZW
+        FWEXEWGWFWOBRXEABCDFGUFZBDWOUGUHUIWFWGXFWEWFWGXFWFBWOEWFWOBXKUJUKULUMUP
+        WHXAXIWHWSXHWTWFWEWSXHUQWGWFWOXGWKABCDFGUNURUIUSUTXGAXBDWOWKWLEHXGSXBSZ
+        FVAVBWHWPXDVPXAWHWNXCWOWHWMXBWKWLWHXBWMWHWFWEXBWMRWEWFWGVCZXJBACXBDKGXL
+        VDVEUJVFVGVHVIVJWHWJWKWLWIVKMZNZWIOMZLZJXPPZIXPPZWRWHCTLZWITLWJXSVPWHWE
+        WFXTXJXMWEWFQCABVLNTGBAKDVQVMVEZCWITWISZVNIJXPWITXNXPSXNSVOVRWHWQXRIWOX
+        PWHXTWOXPRYAWOCWITYBWOSVSVTZWHWPXQJWOXPYCWHWNXOWOXPWHWMXNWKWLWHXTWMXNRY
+        ACWMWITYBWMSWAVTVFYCWBWCWCWDVI $.
+
+      $d .0. c $.
+      $( The multiplicative group of a (left) ideal of a non-unital ring is a
+         semigroup.  (Contributed by AV, 17-Feb-2020.)  Generalization for
+         non-unital rings.  The assumption ` .0. e. U ` is required because a
+         left ideal of a non-unital ring does not have to be a subgroup.
+         (Revised by AV, 11-Mar-2025.) $)
+      rnglidlmsgrp $p |- ( ( R e. Rng /\ U e. L /\ .0. e. U )
+                           -> ( mulGrp ` I ) e. Smgrp ) $=
+        ( va vb vc wcel cfv co wceq wral eqid oveqd eqidd oveq123d crng cmgp cv
+        w3a cplusg cbs csgrp rnglidlmmgm cmulr rngmgp 3ad2ant1 adantr lidlssbas
+        wa wi sseld 3anim123d 3ad2ant2 imp simp1d mgpbasg eleqtrd simp2d simp3d
+        cmgm sgrpass syl13anc mgpplusgg 3eqtr4d wb simp2 simp1 ressmulrg eqcomd
+        eqeq12d syl2anc mpbird ralrimivvva cvv cress ressex syl raleqbidv mpbid
+        eqeltrid issgrp sylanbrc ) AUALZBDLZEBLZUDZCUBMZVELIUCZJUCZWLUEMZNZKUCZ
+        WONZWMWNWQWONZWONZOZKWLUFMZPZJXBPZIXBPZWLUGLABCDEFGHUHWKWMWNCUIMZNZWQXF
+        NZWMWNWQXFNZXFNZOZKCUFMZPZJXLPZIXLPXEWKXKIJKXLXLXLWKWMXLLZWNXLLZWQXLLZU
+        DZUNZXKWMWNAUIMZNZWQXTNZWMWNWQXTNZXTNZOZXSWMWNAUBMZUEMZNZWQYGNZWMWNWQYG
+        NZYGNZYBYDXSYFUGLZWMYFUFMZLWNYMLWQYMLYIYKOWKYLXRWHWIYLWJAYFYFQZUJUKULXS
+        WMAUFMZYMXSWMYOLZWNYOLZWQYOLZWKXRYPYQYRUDZWIWHXRYSUOWJWIXOYPXPYQXQYRWIX
+        LYOWMABCDFGUMZUPWIXLYOWNYTUPWIXLYOWQYTUPUQURUSZUTWKYOYMOZXRWHWIUUBWJYOA
+        YFUAYNYOQVAUKULZVBXSWNYOYMXSYPYQYRUUAVCUUCVBXSWQYOYMXSYPYQYRUUAVDUUCVBY
+        MYFWMWNYGWQYMQYGQVFVGXSYAYHWQWQXTYGWKXTYGOZXRWHWIUUDWJAXTYFUAYNXTQZVHUK
+        ULZXSXTYGWMWNUUFRXSWQSTXSWMWMYCYJXTYGUUFXSWMSXSXTYGWNWQUUFRTVIWKXKYEVJZ
+        XRWKWIWHUUGWHWIWJVKZWHWIWJVLZWIWHUNZXHYBXJYDUUJXGYAWQWQXFXTUUJXTXFBACXT
+        DUAGUUEVMVNZUUJXFXTWMWNUUKRUUJWQSTUUJWMWMXIYCXFXTUUKUUJWMSUUJXFXTWNWQUU
+        KRTVOVPULVQVRWKXNXDIXLXBWKCVSLZXLXBOWKCABVTNZVSGWKWHWIUUMVSLUUIUUHBAUAD
+        WAVPWEZXLCWLVSWLQZXLQVAWBZWKXMXCJXLXBUUPWKXKXAKXLXBUUPWKXHWRXJWTWKXGWPW
+        QWQXFWOWKUULXFWOOUUNCXFWLVSUUOXFQVHWBZWKXFWOWMWNUUQRWKWQSTWKWMWMXIWSXFW
+        OUUQWKWMSWKXFWOWNWQUUQRTVOWCWCWCWDIJKXBWLWOXBQWOQWFWG $.
+    $}
+
+    $( A (left) ideal of a non-unital ring is a non-unital ring.  (Contributed
+       by AV, 17-Feb-2020.)  Generalization for non-unital rings.  The
+       assumption ` U e. ( SubGrp `` R ) ` is required because a left ideal of
+       a non-unital ring does not have to be a subgroup.  (Revised by AV,
+       11-Mar-2025.) $)
+    rnglidlrng $p |- ( ( R e. Rng /\ U e. L /\ U e. ( SubGrp ` R ) )
+                       -> I e. Rng ) $=
+      ( va vb vc crng wcel cfv w3a cv co wceq syl2anc eqid oveqd oveq123d csubg
+      cabl cmgp csgrp cplusg cmulr wa cbs rngabl 3ad2ant1 simp3 subgabl subg0cl
+      c0g rnglidlmsgrp syl3an3 simpl1 wi lidlssbas sseld 3anim123d 3ad2ant2 imp
+      wral rngdi rngdir simp2 simp1 ressmulrg eqcomd eqidd cress a1i ressplusgd
+      wb eqeq12d anbi12d adantr mpbir2and ralrimivvva isrng syl3anbrc ) AJKZBDK
+      ZBAUALKZMZCUBKZCUCLZUDKZGNZHNZINZCUELZOZCUFLZOZWJWKWOOZWJWLWOOZWMOZPZWJWK
+      WMOZWLWOOZWRWKWLWOOZWMOZPZUGZICUHLZVDHXGVDGXGVDCJKWFAUBKZWEWGWCWDXHWEAUIU
+      JWCWDWEUKBACFULQWEWCWDAUNLZBKWIBAXIXIRZUMABCDXIEFXJUOUPWFXFGHIXGXGXGWFWJX
+      GKZWKXGKZWLXGKZMZUGZXFWJWKWLAUELZOZAUFLZOZWJWKXROZWJWLXROZXPOZPZWJWKXPOZW
+      LXROZYAWKWLXROZXPOZPZXOWCWJAUHLZKZWKYIKZWLYIKZMZYCWCWDWEXNUQZWFXNYMWDWCXN
+      YMURWEWDXKYJXLYKXMYLWDXGYIWJABCDEFUSZUTWDXGYIWKYOUTWDXGYIWLYOUTVAVBVCZYIX
+      PAXRWJWKWLYIRZXPRZXRRZVEQXOWCYMYHYNYPYIXPAXRWJWKWLYQYRYSVFQWFXFYCYHUGVOXN
+      WFWTYCXEYHWFWPXSWSYBWFWJWJWNXQWOXRWFXRWOWFWDWCXRWOPWCWDWEVGZWCWDWEVHZBACX
+      RDJFYSVIQVJZWFWJVKWFWMXPWKWLWFXPWMWFBXPACDJCABVLOPWFFVMWFXPVKYTUUAVNVJZST
+      WFWQXTWRYAWMXPUUCWFWOXRWJWKUUBSWFWOXRWJWLUUBSZTVPWFXBYEXDYGWFXAYDWLWLWOXR
+      UUBWFWMXPWJWKUUCSWFWLVKTWFWRYAXCYFWMXPUUCUUDWFWOXRWKWLUUBSTVPVQVRVSVTGHIX
+      GWMCWOWHXGRWHRWMRWORWAWB $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -158607,6 +159387,250 @@ $)
       ( clidl cfv wcel coppr 2idlbas c2idl eqid 2idlelb simplbi eqeltrd simprbi
       syl jca ) ABCIJZKBCLJZIJZKABDUBABCDEFGHMZADCNJZKZDUBKZFUGUHDUDKZCUFDUBUDU
       CUBOUCOUDOUFOPZQTRABDUDUEAUGUIFUGUHUIUJSTRUA $.
+  $}
+
+  ${
+    rng2idlsubrng.r $e |- ( ph -> R e. Rng ) $.
+    rng2idlsubrng.i $e |- ( ph -> I e. ( 2Ideal ` R ) ) $.
+    rng2idlsubrng.u $e |- ( ph -> ( R |`s I ) e. Rng ) $.
+    $( A two-sided ideal of a non-unital ring which is a non-unital ring is a
+       subring of the ring.  (Contributed by AV, 20-Feb-2025.)  (Revised by AV,
+       11-Mar-2025.) $)
+    rng2idlsubrng $p |- ( ph -> I e. ( SubRng ` R ) ) $=
+      ( crng wcel cress co cbs cfv csubrng c2idl eqid 2idlss issubrng syl3anbrc
+      wss syl ) ABGHBCIJGHCBKLZSZCBMLHDFACBNLZHUBEUACUCBUAOZUCOPTCUABUDQR $.
+
+    $( A two-sided ideal of a non-unital ring which is a non-unital ring is a
+       normal subgroup of the ring.  (Contributed by AV, 20-Feb-2025.) $)
+    rng2idlnsg $p |- ( ph -> I e. ( NrmSGrp ` R ) ) $=
+      ( csubrng cfv wcel cnsg rng2idlsubrng subrngringnsg syl ) ACBGHICBJHIABCD
+      EFKCBLM $.
+
+    $( The zero (additive identity) of a non-unital ring is an element of each
+       two-sided ideal of the ring which is a non-unital ring.  (Contributed by
+       AV, 20-Feb-2025.) $)
+    rng2idl0 $p |- ( ph -> ( 0g ` R ) e. I ) $=
+      ( csubrng cfv wcel csubg c0g rng2idlsubrng subrngsubg eqid subg0cl 3syl )
+      ACBGHICBJHIBKHZCIABCDEFLCBMCBQQNOP $.
+  $}
+
+  ${
+    rng2idlsubgsubrng.r $e |- ( ph -> R e. Rng ) $.
+    rng2idlsubgsubrng.i $e |- ( ph -> I e. ( 2Ideal ` R ) ) $.
+    rng2idlsubgsubrng.u $e |- ( ph -> I e. ( SubGrp ` R ) ) $.
+    $( A two-sided ideal of a non-unital ring which is a subgroup of the ring
+       is a subring of the ring.  (Contributed by AV, 11-Mar-2025.) $)
+    rng2idlsubgsubrng $p |- ( ph -> I e. ( SubRng ` R ) ) $=
+      ( crng wcel clidl cfv csubg cress co c2idl coppr eqid 2idlelb simplbi syl
+      rnglidlrng syl3anc rng2idlsubrng ) ABCDEABGHCBIJZHZCBKJHBCLMZGHDACBNJZHZU
+      DEUGUDCBOJZIJZHBUFCUCUIUHUCPZUHPUIPUFPQRSFBCUEUCUJUEPTUAUB $.
+
+    $( A two-sided ideal of a non-unital ring which is a subgroup of the ring
+       is a normal subgroup of the ring.  (Contributed by AV, 20-Feb-2025.) $)
+    rng2idlsubgnsg $p |- ( ph -> I e. ( NrmSGrp ` R ) ) $=
+      ( csubrng cfv wcel cnsg rng2idlsubgsubrng subrngringnsg syl ) ACBGHICBJHI
+      ABCDEFKCBLM $.
+
+    $( The zero (additive identity) of a non-unital ring is an element of each
+       two-sided ideal of the ring which is a subgroup of the ring.
+       (Contributed by AV, 20-Feb-2025.) $)
+    rng2idlsubg0 $p |- ( ph -> ( 0g ` R ) e. I ) $=
+      ( csubrng cfv wcel csubg rng2idlsubgsubrng subrngsubg eqid subg0cl 3syl
+      c0g ) ACBGHICBJHIBPHZCIABCDEFKCBLCBQQMNO $.
+  $}
+
+  ${
+    2idlcpblrng.x $e |- X = ( Base ` R ) $.
+    2idlcpblrng.r $e |- E = ( R ~QG S ) $.
+    2idlcpblrng.i $e |- I = ( 2Ideal ` R ) $.
+    2idlcpblrng.t $e |- .x. = ( .r ` R ) $.
+    $( The coset equivalence relation for a two-sided ideal is compatible with
+       ring multiplication.  (Contributed by Mario Carneiro, 14-Jun-2015.)
+       Generalization for non-unital rings and two-sided ideals which are
+       subgroups of the additive group of the non-unital ring.  (Revised by AV,
+       23-Feb-2025.) $)
+    2idlcpblrng $p |- ( ( R e. Rng /\ S e. I /\ S e. ( SubGrp ` R ) )
+                    -> ( ( A E C /\ B E D ) -> ( A .x. B ) E ( C .x. D ) ) ) $=
+      ( crng wcel cfv co eqid syl3anc csubg w3a wbr csg simpl1 wer simpl3 eqger
+      wa syl simprl ersym cabl wss rngabl 3ad2ant1 clidl coppr 2idlelb 3ad2ant2
+      wb simplbi adantr lidlss eqgabl syl2an2r mpbid simp2d simprr simp1d rngcl
+      cgrp wceq rnggrp grpnnncan2 syl13anc rngsubdi c0g subg0cl 3ad2ant3 simp3d
+      syl32anc eqeltrrd cmulr grpsubcl opprmulg rngsubdir eqtrd opprrng simprbi
+      rnglidlmcl cbs oppr0g opprbasg eleqtrd subgsubcl mpbir3and ex ) EOPZFIPZF
+      EUAQPZUBZACHUCZBDHUCZUIZABGRZCDGRZHUCZXBXEUIZXHXFJPZXGJPZXGXFEUDQZRZFPZXI
+      WSAJPZBJPZXJWSWTXAXEUEZXICJPZXOACXLRZFPZXICAHUCZXRXOXTUBZXIACHJXIXAJHUFWS
+      WTXAXEUGZHEJFKLUHUJXBXCXDUKULXBEUMPZXEFJUNZYAYBVAWSWTYDXAEUOUPZXIFEUQQZPZ
+      YEXBYHXEWTWSYHXAWTYHFEURQZUQQZPZEIFYGYJYIYGSZYISZYJSZMUSZVBUTVCZJFYGEKYLV
+      DUJZCAHFEXLJKXLSZLVEVFVGZVHZXIXPDJPZDBXLRZFPZXIXDXPUUAUUCUBZXBXCXDVIXBYDX
+      EYEXDUUDVAYFYQBDHFEXLJKYRLVEVFVGZVJZJEGABKNVKTZXIWSXRUUAXKXQXIXRXOXTYSVJZ
+      XIXPUUAUUCUUEVHZJEGCDKNVKTZXIXGCBGRZXLRZXFUUKXLRZXLRZXMFXIEVLPZXKXJUUKJPZ
+      UUNXMVMXBUUOXEWSWTUUOXAEVNUPVCZUUJUUGXIWSXRXPUUPXQUUHUUFJEGCBKNVKTJEXLXGX
+      FUUKKYRVOVPXIXAUULFPUUMFPUUNFPYCXICUUBGRZUULFXIJEGXLCDBKNYRXQUUHUUIUUFVQX
+      IWSYHEVRQZFPZXRUUCUURFPXQYPXBUUTXEXAWSUUTWTFEUUSUUSSZVSVTVCZUUHXIXPUUAUUC
+      UUEWAJEGYGFCUUBUUSUVAKNYLWKWBWCXIBXSYIWDQZRZUUMFXIUVDXSBGRZUUMXIWSXPXSJPZ
+      UVDUVEVMXQUUFXIUUOXOXRUVFUUQYTUUHJEXLACKYRWETJEUVCGJYIOJBXSKNYMUVCSZWFTXI
+      JEGXLACBKNYRXQYTUUHUUFWGWHXIYIOPZYKYIVRQZFPBYIWLQZPXTUVDFPXBUVHXEWSWTUVHX
+      AEYIYMWIUPVCXBYKXEWTWSYKXAWTYHYKYOWJUTVCXIUUSUVIFXIWSUUSUVIVMXQEYIOUUSYMU
+      VAWMUJUVBWCXIBJUVJUUFXIWSJUVJVMXQJEYIOYMKWNUJWOXIXRXOXTYSWAUVJYIUVCYJFBXS
+      UVIUVISUVJSUVGYNWKWBWCFEXLUULUUMYRWPTWCXBYDXEYEXHXJXKXNUBVAYFYQXFXGHFEXLJ
+      KYRLVEVFWQWR $.
+
+    $( The coset equivalence relation for a two-sided ideal is compatible with
+       ring multiplication.  (Contributed by Mario Carneiro, 14-Jun-2015.)
+       (Proof shortened by AV, 31-Mar-2025.) $)
+    2idlcpbl $p |- ( ( R e. Ring /\ S e. I ) ->
+        ( ( A E C /\ B E D ) -> ( A .x. B ) E ( C .x. D ) ) ) $=
+      ( wcel wa cfv wbr co eqid crg crng csubg ringrng adantr simpr clidl coppr
+      wi 2idlelb simplbi lidlsubg sylan2 2idlcpblrng syl3anc ) EUAOZFIOZPEUBOZU
+      QFEUCQOZACHRBDHRPABGSCDGSHRUIUPURUQEUDUEUPUQUFUQUPFEUGQZOZUSUQVAFEUHQZUGQ
+      ZOEIFUTVCVBUTTZVBTVCTMUJUKEUTFVDULUMABCDEFGHIJKLMNUNUO $.
+  $}
+
+  ${
+    $d I a b c d $.  $d R a b c d $.  $d S a b c d $.  $d U a b c d $.
+    qus2idrng.u $e |- U = ( R /s ( R ~QG S ) ) $.
+    qus2idrng.i $e |- I = ( 2Ideal ` R ) $.
+    $( The quotient of a non-unital ring modulo a two-sided ideal, which is a
+       subgroup of the additive group of the non-unital ring, is a non-unital
+       ring ( ~ qusring analog).  (Contributed by AV, 23-Feb-2025.) $)
+    qus2idrng $p |- ( ( R e. Rng /\ S e. I /\ S e. ( SubGrp ` R ) )
+                      -> U e. Rng ) $=
+      ( vd vc va vb crng wcel csubg cfv co wceq eqid syl cv wbr w3a cplusg cqus
+      cqg cmulr cbs a1i eqidd wer simp3 eqger cnsg wa wi rngabl 3ad2ant1 ablnsg
+      cabl eleqtrrd eqgcpbl 2idlcpblrng simp1 qusrng ) AKLZBDLZBAMNZLZUAZAUBNZA
+      BUDOZAAUENZCAUFNZGHIJCAVJUCOPVHEUGVHVLUHVIQZVKQZVHVGVLVJUIVDVEVGUJZVJAVLB
+      VLQZVJQZUKRVHBAULNZLISZHSZVJTJSZGSZVJTUMVSWAVIOVTWBVIOVJTUNVHBVFVRVOVHAUR
+      LZVRVFPVDVEWCVGAUOUPAUQRUSVSWAVTWBVIVJAVLBVPVQVMUTRVSWAVTWBABVKVJDVLVPVQF
+      VNVAVDVEVGVBVC $.
+  $}
+
+  ${
+    $d y z F $.  $d a b c d x y z I $.  $d c d .1. $.  $d a b c d x y z R $.
+    $d a b c d x y z S $.  $d a b c d x y z U $.  $d a b c d x y z X $.
+    qusring.u $e |- U = ( R /s ( R ~QG S ) ) $.
+    qusring.i $e |- I = ( 2Ideal ` R ) $.
+    ${
+      qus1.o $e |- .1. = ( 1r ` R ) $.
+      $( The multiplicative identity of the quotient ring.  (Contributed by
+         Mario Carneiro, 14-Jun-2015.) $)
+      qus1 $p |- ( ( R e. Ring /\ S e. I ) ->
+          ( U e. Ring /\ [ .1. ] ( R ~QG S ) = ( 1r ` U ) ) ) $=
+        ( vd vc va vb wcel cfv co wceq eqid syl cv wbr crg cplusg cqg cmulr cbs
+        cqus a1i csubg wer clidl coppr cin simpr 2idlvalg adantr eleqtrd elin1d
+        wa lidlsubg syldan eqger cnsg wi cabl ringabl eleqtrrd eqgcpbl 2idlcpbl
+        ablnsg simpl qusring2 ) AUAMZBEMZURZAUBNZABUCOZAAUDNZCDAUENZIJKLCAVPUFO
+        PVNFUGVRVRPVNVRQZUGVOQZVQQZHVNBAUHNZMZVRVPUIVLVMBAUJNZMWCVNWDAUKNZUJNZB
+        VNBEWDWFULZVLVMUMVLEWGPVMAEWDWFWEUAWDQZWEQWFQGUNUOUPUQAWDBWHUSUTZVPAVRB
+        VSVPQZVARVNBAVBNZMKSZJSZVPTLSZISZVPTURWLWNVOOWMWOVOOVPTVCVNBWBWKWIVNAVD
+        MZWKWBPVLWPVMAVEUOAVIRVFWLWNWMWOVOVPAVRBVSWJVTVGRWLWNWMWOABVQVPEVRVSWJG
+        WAVHVLVMVJVK $.
+    $}
+
+    $( If ` S ` is a two-sided ideal in ` R ` , then ` U = R / S ` is a ring,
+       called the quotient ring of ` R ` by ` S ` .  (Contributed by Mario
+       Carneiro, 14-Jun-2015.) $)
+    qusring $p |- ( ( R e. Ring /\ S e. I ) -> U e. Ring ) $=
+      ( crg wcel wa cur cfv cqg co cec wceq eqid qus1 simpld ) AGHBDHICGHAJKZAB
+      LMNCJKOABCSDEFSPQR $.
+  $}
+
+  ${
+    $d .X. t x y z $.  $d .x. p q $.  $d .x. q t y $.  $d B p q $.
+    $d B t x y z $.  $d I t x y z $.  $d R t x y z $.  $d X t y $.  $d Y t y $.
+    $d p ph q y $.  $d ph t x y z $.
+    qusmul2.h $e |- Q = ( R /s ( R ~QG I ) ) $.
+    qusmul2.v $e |- B = ( Base ` R ) $.
+    qusmul2.p $e |- .x. = ( .r ` R ) $.
+    qusmul2.a $e |- .X. = ( .r ` Q ) $.
+    qusmul2.1 $e |- ( ph -> R e. Ring ) $.
+    qusmul2.2 $e |- ( ph -> I e. ( 2Ideal ` R ) ) $.
+    qusmul2.3 $e |- ( ph -> X e. B ) $.
+    qusmul2.4 $e |- ( ph -> Y e. B ) $.
+    $( Value of the ring operation in a quotient ring.  (Contributed by Thierry
+       Arnoux, 1-Sep-2024.) $)
+    qusmul2 $p |- ( ph -> ( [ X ] ( R ~QG I ) .X. [ Y ] ( R ~QG I ) )
+                           = [ ( X .x. Y ) ] ( R ~QG I ) ) $=
+      ( wcel co cv vt vy vx vz vp cqg cec wceq crg cqus a1i cbs cfv csubg clidl
+      vq wer 2idllidld eqid lidlsubg syl2anc eqger syl c2idl wbr wa wi 2idlcpbl
+      ringcl 3expb sylan caovclg qusmulval mpd3an23 ) AHBRIBRHDGUFSZUGIVOUGFSHI
+      ESVOUGUHPQAVODFECBHIUIUAUBUCUDCDVOUJSUHAJUKBDULUMUHAKUKAGDUNUMRZBVOUQADUI
+      RZGDUOUMZRVPNADGOURDVRGVRUSUTVAVODBGKVOUSZVBVCNAVQGDVDUMZRUCTZUBTZVOVEUDT
+      ZUATZVOVEVFWAWCESWBWDESVOVEVGNOWAWCWBWDDGEVOVTBKVSVTUSLVHVAAUEUPWBWDBBBEA
+      VQUETZBRZUPTZBRZVFWEWGESBRZNVQWFWHWIBDEWEWGKLVIVJVKVLLMVMVN $.
+  $}
+
+  ${
+    $d x y O $.  $d x y R $.
+    crng2idl.i $e |- I = ( LIdeal ` R ) $.
+    ${
+      crngridl.o $e |- O = ( oppR ` R ) $.
+      $( In a commutative ring, the left and right ideals coincide.
+         (Contributed by Mario Carneiro, 14-Jun-2015.) $)
+      crngridl $p |- ( R e. CRing -> I = ( LIdeal ` O ) ) $=
+        ( vx vy ccrg wcel clidl cfv wceq crsp cvv eqid cv wa cplusg cmulr co id
+        cbs eqidd opprbasg oppraddg oveqdr simprl mulrslid slotex adantr simprr
+        wss ssv ovexg syl3anc crngoppr 3expb opprex lidlrsppropdg simpld eqtrid
+        a1i ) AHIZBAJKZCJKZDVCVDVELAMKCMKLVCFGAUBKZACNHNVCVFUCVFACHEVFOZUDVFNUL
+        VCVFUMVBVCFPZNIGPZNIQFGARKZCRKVJACHEVJOUEUFVCVHVFIZVIVFIZQZQVKASKZNIZVL
+        VHVIVNTZNIVCVKVLUGVCVOVMASHUHUIUJVCVKVLUKVHVIVNVFNVFUNUOVCVKVLVPVHVICSK
+        ZTLVFAVQVNCVHVIVGVNOEVQOUPUQVCUAACHEURUSUTVA $.
+    $}
+
+    $( In a commutative ring, a two-sided ideal is the same as a left ideal.
+       (Contributed by Mario Carneiro, 14-Jun-2015.) $)
+    crng2idl $p |- ( R e. CRing -> I = ( 2Ideal ` R ) ) $=
+      ( ccrg wcel coppr cfv clidl cin c2idl inidm eqid crngridl ineq2d 2idlvalg
+      eqtr3id eqtr4d ) ADEZBBAFGZHGZIZAJGZRBBBIUABKRBTBABSCSLZMNPAUBBTSDCUCTLUB
+      LOQ $.
+  $}
+
+  ${
+    $d B a b c d $.  $d R a b c d $.  $d S a b c d $.  $d X b d $.  $d Y b d $.
+    $d .~ a b c d $.  $d .xb a b c d $.  $d .x. b d $.
+    qusmulrng.e $e |- .~ = ( R ~QG S ) $.
+    qusmulrng.h $e |- H = ( R /s .~ ) $.
+    qusmulrng.b $e |- B = ( Base ` R ) $.
+    qusmulrng.p $e |- .x. = ( .r ` R ) $.
+    qusmulrng.a $e |- .xb = ( .r ` H ) $.
+    $( Value of the multiplication operation in a quotient ring of a non-unital
+       ring.  Formerly part of proof for ~ quscrng .  Similar to ~ qusmul2 .
+       (Contributed by Mario Carneiro, 15-Jun-2015.)  (Revised by AV,
+       28-Feb-2025.) $)
+    qusmulrng $p |- ( ( ( R e. Rng /\ S e. ( 2Ideal ` R )
+                        /\ S e. ( SubGrp ` R ) ) /\ ( X e. B /\ Y e. B ) )
+                   -> ( [ X ] .~ .xb [ Y ] .~ ) = [ ( X .x. Y ) ] .~ ) $=
+      ( wcel cfv cec co wceq cv vd vb va vc crng c2idl csubg w3a cqus a1i eqger
+      cbs wer 3ad2ant3 simp1 eqid 2idlcpblrng wa anim1i 3anass sylibr rngcl syl
+      qusmulval 3expb ) CUEOZDCUFPZOZDCUGPOZUHZHAOIAOHBQIBQERHIFRBQSVJBCEFGAHIU
+      EUAUBUCUDGCBUIRSVJKUJACULPSVJLUJVIVFABUMVHBCADLJUKUNVFVHVIUOZUCTUDTUBTZUA
+      TZCDFBVGALJVGUPMUQVJVLAOZVMAOZURZURZVFVNVOUHZVLVMFRAOVQVFVPURVRVJVFVPVKUS
+      VFVNVOUTVAACFVLVMLMVBVCMNVDVE $.
+  $}
+
+  ${
+    $d I u v x y $.  $d R u v x y $.  $d S u v x y $.  $d U u v x y $.
+    quscrng.u $e |- U = ( R /s ( R ~QG S ) ) $.
+    quscrng.i $e |- I = ( LIdeal ` R ) $.
+    $( The quotient of a commutative ring by an ideal is a commutative ring.
+       (Contributed by Mario Carneiro, 15-Jun-2015.)  (Proof shortened by AV,
+       3-Apr-2025.) $)
+    quscrng $p |- ( ( R e. CRing /\ S e. I ) -> U e. CRing ) $=
+      ( vx vy ccrg wcel wa crg cv cfv co wceq adantr eqid syl2an2r cec vu cmulr
+      vv cbs wral c2idl crngring simpr crng2idl eleqtrd qusring cqg cqs cvv a1i
+      cqus eqidd eqgex qusbas eleq2d anbi12d oveq2 oveq1 eqeq12d crngcom eceq1d
+      ad4ant134 crng csubg w3a ringrng syl lidlsubg sylan 3jca anim1i qusmulrng
+      ancomd 3eqtr4rd ectocld an32s expl sylbird ralrimivv iscrng2 sylanbrc ) A
+      IJZBDJZKZCLJZGMZHMZCUBNZOZWLWKWMOZPZHCUDNZUEGWQUECIJWGALJZWHBAUFNZJZWJAUG
+      ZWIBDWSWGWHUHWGDWSPWHADFUIQUJZABCWSEWSRUKSWIWPGHWQWQWIWKWQJZWLWQJZKWKAUDN
+      ZABULOZUMZJZWLXGJZKWPWIXHXCXIXDWIXGWQWKWIXFACXEUNLCAXFUPOPWIEUOWIXEUQBAID
+      URWGWRWHXAQUSZUTWIXGWQWLXJUTVAWIXHXIWPWKUAMZXFTZWMOZXLWKWMOZPZWPWIXHKUAWL
+      XEXFXGXGRZXLWLPXMWNXNWOXLWLWKWMVBXLWLWKWMVCVDWIXKXEJZXHXOUCMZXFTZXLWMOZXL
+      XSWMOZPXOWIXQKZUCWKXEXFXGXPXSWKPXTXMYAXNXSWKXLWMVCXSWKXLWMVBVDYBXRXEJZKZX
+      KXRAUBNZOZXFTZXRXKYEOZXFTZYAXTYDYFYHXFWGXQYCYFYHPWHXEAYEXKXRXERZYERZVEVGV
+      FYBAVHJZWTBAVINJZVJZYCXQYCKYAYGPWIYNXQWIYLWTYMWGYLWHWGWRYLXAAVKVLQXBWGWRW
+      HYMXAADBFVMVNVOQZYBXQYCWIXQUHVPZXEXFABWMYECXKXRXFRZEYJYKWMRZVQSYBYNYCYCXQ
+      KXTYIPYOYDXQYCYPVRXEXFABWMYECXRXKYQEYJYKYRVQSVSVTWAVTWBWCWDGHWQCWMWQRYRWE
+      WF $.
   $}
 
 
@@ -175751,14 +176775,13 @@ htmldef "[." as
   /* althtmldef "[." as '&#x298F;'; */   /* corner tick */
   /* althtmldef "[." as '[&#803;'; */  /* combining dot below */
   althtmldef "[." as '<B>[</B>'; /* 6-Aug-2018 nm */
-  /* \underaccent is in accents package */
-  latexdef "[." as "\underaccent{\dot}{[}";
+  latexdef "[." as "\text{\d{[}}";
 htmldef "]." as
     "<IMG SRC='_drbrack.gif' WIDTH=6 HEIGHT=19 ALT=' ].' TITLE='].'>";
   /* althtmldef "]." as '&#x298E;'; */   /* corner tick */
   /* althtmldef "]." as ']&#803;'; */  /* combining dot below */
   althtmldef "]." as '<B>]</B>'; /* 6-Aug-2018 nm */
-  latexdef "]." as "\underaccent{\dot}{]}";
+  latexdef "]." as "\text{\d{]}}";
 htmldef "[_" as
     "<IMG SRC='_ulbrack.gif' WIDTH=7 HEIGHT=19 ALT=' [_' TITLE='[_'>";
   althtmldef "[_" as '<B>&#x298B;</B>'; /* left sq brack w underbar */
@@ -176784,6 +177807,9 @@ htmldef "RingIso" as " RingIso ";
 htmldef "NzRing" as "NzRing";
   althtmldef "NzRing" as "NzRing";
   latexdef "NzRing" as "\mathrm{NzRing}";
+htmldef "SubRng" as "SubRng";
+  althtmldef "SubRng" as "SubRng";
+  latexdef "SubRng" as "\mathrm{SubRng}";
 htmldef "SubRing" as "SubRing";
   althtmldef "SubRing" as "SubRing";
   latexdef "SubRing" as "\mathrm{SubRing}";
