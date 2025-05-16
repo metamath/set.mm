@@ -155931,6 +155931,15 @@ $)
       VGUUAEYRWCUVMUVFEUVMUURUUANUVFUVCUURUUAUVEUOUURYTXIWOWPWEWFWGWQWRXAWF $.
   $}
 
+  ${
+    $d r s $.
+    $( Reverse closure of a ring homomorphism.  (Contributed by Stefan O'Rear,
+       7-Mar-2015.) $)
+    rhmrcl1 $p |- ( F e. ( R RingHom S ) -> R e. Ring ) $=
+      ( vr vs crg cv cghm co cmgp cfv cmhm cin crh dfrhm2 elmpocl1 ) DEFFDGZEGZ
+      HIQJKRJKLIMABNCEDOP $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
