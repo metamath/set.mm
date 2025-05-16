@@ -56246,6 +56246,21 @@ $)
   $}
 
   ${
+    $d D a b $.  $d X a b $.  $d Y a b $.  $d ph a b $.
+    elovmpod.o $e |- O = ( a e. A , b e. B |-> C ) $.
+    elovmpod.x $e |- ( ph -> X e. A ) $.
+    elovmpod.y $e |- ( ph -> Y e. B ) $.
+    elovmpod.d $e |- ( ph -> D e. V ) $.
+    elovmpod.c $e |- ( ( a = X /\ b = Y ) -> C = D ) $.
+    $( Utility lemma for two-parameter classes.  (Contributed by Stefan O'Rear,
+       21-Jan-2015.)  Variant of ~ elovmpo in deduction form.  (Revised by AV,
+       20-Apr-2025.) $)
+    elovmpod $p |- ( ph -> ( E e. ( X O Y ) <-> E e. D ) ) $=
+      ( co wceq cv cmpo a1i wa adantl ovmpod eleq2d ) AIJGREFAKLIJBCDEGHGKLBCDU
+      ASAMUBKTISLTJSUCDESAQUDNOPUEUF $.
+  $}
+
+  ${
     $d A a b $.  $d B a b $.  $d E a b $.  $d F a b $.  $d X a b $.
     $d Y a b $.
     elovmpo.d $e |- D = ( a e. A , b e. B |-> C ) $.
