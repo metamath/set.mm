@@ -115,6 +115,9 @@ Date      Old       New         Notes
 30-Apr-25 idomrootle [same]     Moved from SO's mathbox to main set.mm
 30-Apr-25 ply1ascl0 [same]      Moved from TA's mathbox to main set.mm
 30-Apr-25 hashf1dmcdm [same]    Moved from BT's mathbox to main set.mm
+30-Apr-25 sotrd     [same]      Moved from SF's mathbox to main set.mm
+30-Apr-25 ax6er     [same]      Moved from BJ's mathbox to main set.mm
+30-Apr-25 iscnrm3lem3 4aneqpull12 Moved from ZW's mathbox to main set.mm
 25-Apr-25 mon1pid   [same]      Moved from SO's mathbox to main set.mm
 27-Apr-25 df-cnfld  [same]      Use maps-to notation
 26-Apr-25 fsuppfund [same]      Moved from SN's mathbox to main set.mm
