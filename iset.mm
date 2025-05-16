@@ -146958,6 +146958,25 @@ $)
   $}
 
   ${
+    $d S f s t x y $.  $d T f s t x y $.
+    $( The set of monoid homomorphisms exists.  (Contributed by Jim Kingdon,
+       15-May-2025.) $)
+    mhmex $p |- ( ( S e. Mnd /\ T e. Mnd ) -> ( S MndHom T ) e. _V ) $=
+      ( vx vy vf vs cmnd wcel wa co cplusg cfv wceq cbs wral c0g cmap cvv fveq2
+      cv cmhm crab cxp wfn fnmap basfn simpr elexd funfvex funfni sylancr simpl
+      vt fnovex mp3an2i rabexg oveq2d oveqd fveqeq2d raleqbidv rabeqbidv oveq1d
+      syl anbi12d eqeq2d 2ralbidv df-mhm ovmpog mpd3an3 eqeltrd ) AGHZBGHZIZABU
+      AJZCTZDTZAKLZJZETZLZVOVSLZVPVSLZBKLZJZMZDANLZOCWFOZAPLZVSLZBPLZMZIZEBNLZW
+      FQJZUBZRVKVLWORHZVNWOMVMWNRHZWPQRRUCUDVMWMRHZWFRHZWQUEVMNRUDZBRHWRUFVMBGV
+      KVLUGUHWRRBNBNUIUJUKVMWTARHWSUFVMAGVKVLULUHWSRANANUIUJUKWMWFRRQUNUOWLEWNR
+      UPVCZFUMABGGVOVPFTZKLZJZVSLWAWBUMTZKLZJZMZDXBNLZOZCXIOZXBPLZVSLXEPLZMZIZE
+      XENLZXIQJZUBWOUAVTXGMZDWFOZCWFOZWIXMMZIZEXPWFQJZUBRXBAMZXOYBEXQYCYDXIWFXP
+      QXBANSZUQYDXKXTXNYAYDXJXSCXIWFYEYDXHXRDXIWFYEYDXDVRXGVSYDXCVQVOVPXBAKSURU
+      SUTUTYDXLWHXMVSXBAPSUSVDVAXEBMZYBWLEYCWNYFXPWMWFQXEBNSVBYFXTWGYAWKYFXRWEC
+      DWFWFYFXGWDVTYFXFWCWAWBXEBKSURVEVFYFXMWJWIXEBPSVEVDVACDUMEFVGVHVIXAVJ $.
+  $}
+
+  ${
     $d f s t x y B $.  $d x y F $.  $d x y S $.  $d x y T $.
     $( Reverse closure of a monoid homomorphism.  (Contributed by Mario
        Carneiro, 7-Mar-2015.) $)
