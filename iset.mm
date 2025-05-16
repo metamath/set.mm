@@ -155997,6 +155997,15 @@ $)
       JZRAMJBMJNSTNABCDEFGOPQ $.
   $}
 
+  ${
+    $d F f $.  $d R f r s $.  $d S f r s $.  $d V f r s $.  $d W f r s $.
+    $( Reverse closure for an isomorphism of rings.  (Contributed by AV,
+       22-Oct-2019.) $)
+    rimrcl $p |- ( F e. ( R RingIso S ) -> ( R e. _V /\ S e. _V ) ) $=
+      ( vr vs vf cvv cv ccnv crh co wcel crab crs df-rim elmpocl ) DEGGFHIEHZDH
+      ZJKLFRQJKMABNCFEDOP $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
