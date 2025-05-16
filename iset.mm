@@ -151259,6 +151259,14 @@ $)
   $}
 
   ${
+    $( The set of group homomorphisms exists.  (Contributed by Jim Kingdon,
+       15-May-2025.) $)
+    ghmex $p |- ( ( S e. Grp /\ T e. Grp ) -> ( S GrpHom T ) e. _V ) $=
+      ( cgrp wcel wa cghm co cmhm cvv ghmmhmb cmnd grpmnd mhmex syl2an eqeltrd
+      ) ACDZBCDZEABFGABHGZIABJPAKDBKDRIDQALBLABMNO $.
+  $}
+
+  ${
     ghmmulg.b $e |- B = ( Base ` G ) $.
     ghmmulg.s $e |- .x. = ( .g ` G ) $.
     ghmmulg.t $e |- .X. = ( .g ` H ) $.
