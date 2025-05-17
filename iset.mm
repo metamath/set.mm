@@ -156156,6 +156156,14 @@ $)
       VRMVRTZFUOSVHVMBWDUMVTBDVQMVQTZGUOSUNUPVLEVRVQQIJZVSWEUFVHWHVICDEVRVQWFWG
       UQRWHWEVSWCWDVRVQEWCTWDTURUISUJUDDCVJVQVRWGWFUSUTVHVKLZEAVFVJBVFVIWIABEVH
       ABEVAVKABCDEFGVBRVGWIBAVJVKBAVJVAVHBADCVJGFVBVCVGABEVDUTVE $.
+
+    $( An isomorphism of rings is a bijective homomorphism.  (Contributed by
+       AV, 22-Oct-2019.)  Remove sethood antecedent.  (Revised by SN,
+       12-Jan-2025.) $)
+    isrim $p |- ( F e. ( R RingIso S )
+            <-> ( F e. ( R RingHom S ) /\ F : B -1-1-onto-> C ) ) $=
+      ( crs co wcel crh ccnv wa wf1o isrim0 rhmf1o bicomd pm5.32i bitri ) ECDHI
+      JECDKIJZELDCKIJZMTABENZMCDEOTUAUBTUBUAABCDEFGPQRS $.
   $}
 
 
