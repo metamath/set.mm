@@ -155989,6 +155989,21 @@ $)
   $}
 
   ${
+    $d R r s $.  $d S r s $.  $d V r s $.  $d W r s $.  $d f r s v w x y $.
+    $( Set existence for ring homomorphism.  (Contributed by Jim Kingdon,
+       16-May-2025.) $)
+    rhmex $p |- ( ( R e. V /\ S e. W ) -> ( R RingHom S ) e. _V ) $=
+      ( vv vr vw vs vf vx vy wcel wa cv cbs cfv wceq co cvv vex cur cplusg wral
+      cmulr cmap crab csb wal crh basfn funfvex funfni mp2an fnmap fnovex mp3an
+      wfn cxp rabex csbexa a1i alrimivv simpl simpr crg df-rhm mpofvex syl3anc
+      ) ACLZBDLZMZEFNZOPZGHNZOPZVLUAPINZPVNUAPQJNZKNZVLUBPRVPPVQVPPZVRVPPZVNUBP
+      RQVQVRVLUDPRVPPVSVTVNUDPRQMKENZUCJWAUCMZIGNZWAUERZUFZUGZUGZSLZHUHFUHVIVJA
+      BUIRSLVKWHFHWHVKEVMWFOSUQZVLSLVMSLZUJFTWJSVLOVLOUKULUMGVOWEWIVNSLVOSLZUJH
+      TWKSVNOVNOUKULUMWBIWDUESSURUQWCSLWASLWDSLUNGTETWCWASSUEUOUPUSUTUTVAVBVIVJ
+      VCVIVJVDFHVEVEWGABUISCDJKGEIHFVFVGVH $.
+  $}
+
+  ${
     $d R r s $.  $d S r s $.
     isrhm.m $e |- M = ( mulGrp ` R ) $.
     isrhm.n $e |- N = ( mulGrp ` S ) $.
