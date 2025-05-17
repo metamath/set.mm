@@ -156065,6 +156065,24 @@ $)
       ( crh co wcel cghm wf rhmghm ghmf syl ) ECDHIJECDKIJABELCDEMCDEABFGNO $.
   $}
 
+  ${
+    rhmmul.x $e |- X = ( Base ` R ) $.
+    rhmmul.m $e |- .x. = ( .r ` R ) $.
+    rhmmul.n $e |- .X. = ( .r ` S ) $.
+    $( A homomorphism of rings preserves multiplication.  (Contributed by Mario
+       Carneiro, 12-Jun-2015.) $)
+    rhmmul $p |- ( ( F e. ( R RingHom S ) /\ A e. X /\ B e. X ) ->
+      ( F ` ( A .x. B ) ) = ( ( F ` A ) .X. ( F ` B ) ) ) $=
+      ( co wcel cfv wceq eqid 3ad2ant1 wb crg syl crh w3a cmgp cplusg cbs simp2
+      rhmmhm rhmrcl1 mgpbasg eleq2d mpbid simp3 mhmlin syl3anc mgpplusgg fveq2d
+      cmhm oveqd rhmrcl2 eqeq12d mpbird ) GCDUALMZAHMZBHMZUBZABELZGNZAGNZBGNZFL
+      ZOZABCUCNZUDNZLZGNZVHVIDUCNZUDNZLZOZVEGVLVPUQLMZAVLUENZMZBWAMZVSVBVCVTVDC
+      DGVLVPVLPZVPPZUGQVEVCWBVBVCVDUFVBVCVCWBRVDVBHWAAVBCSMZHWAOCDGUHZHCVLSWDIU
+      ITZUJQUKVEVDWCVBVCVDULVBVCVDWCRVDVBHWABWHUJQUKWAVMVQVLVPGABWAPVMPVQPUMUNV
+      BVCVKVSRVDVBVGVOVJVRVBVFVNGVBEVMABVBWFEVMOWGCEVLSWDJUOTURUPVBFVQVHVIVBDSM
+      FVQOCDGUSDFVPSWEKUOTURUTQVA $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
