@@ -156128,6 +156128,18 @@ $)
       HIMDEOUDUEUFAHUIUJHUKUJTHULUMAIUIUJIUKUJUAIULUMUGUHUNUO $.
   $}
 
+  ${
+    rhm1.o $e |- .1. = ( 1r ` R ) $.
+    rhm1.n $e |- N = ( 1r ` S ) $.
+    $( Ring homomorphisms are required to fix 1.  (Contributed by Stefan
+       O'Rear, 8-Mar-2015.) $)
+    rhm1 $p |- ( F e. ( R RingHom S ) -> ( F ` .1. ) = N ) $=
+      ( crh co wcel cmgp cfv c0g cmhm wceq eqid rhmmhm syl crg ringidvalg mhm0
+      rhmrcl1 fveq2d rhmrcl2 3eqtr4d ) DABHIJZAKLZMLZDLZBKLZMLZCDLZEUFDUGUJNIJU
+      IUKOABDUGUJUGPZUJPZQUGUJDUKUHUHPUKPUARUFASJZULUIOABDUBUOCUHDACUGSUMFTUCRU
+      FBSJEUKOABDUDBEUJSUNGTRUE $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
