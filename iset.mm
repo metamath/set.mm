@@ -156050,6 +156050,12 @@ $)
       ABJJUMUNVQDVIJUOVCUPUHVQVMDCVIVOCQVPVKVLVOCUQURUSUTVA $.
   $}
 
+  $( A ring homomorphism is an additive group homomorphism.  (Contributed by
+     Stefan O'Rear, 7-Mar-2015.) $)
+  rhmghm $p |- ( F e. ( R RingHom S ) -> F e. ( R GrpHom S ) ) $=
+    ( crh co wcel cghm cmgp cfv cmhm crg wa eqid isrhm simprbi simpld ) CABDEFZ
+    CABGEFZCAHIZBHIZJEFZQAKFBKFLRUALABCSTSMTMNOP $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
