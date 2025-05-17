@@ -156034,6 +156034,20 @@ $)
     rimrcl $p |- ( F e. ( R RingIso S ) -> ( R e. _V /\ S e. _V ) ) $=
       ( vr vs vf cvv cv ccnv crh co wcel crab crs df-rim elmpocl ) DEGGFHIEHZDH
       ZJKLFRQJKMABNCFEDOP $.
+
+    $( A ring isomorphism is a homomorphism whose converse is also a
+       homomorphism.  (Contributed by AV, 22-Oct-2019.)  Remove sethood
+       antecedent.  (Revised by SN, 10-Jan-2025.) $)
+    isrim0 $p |- ( F e. ( R RingIso S ) <->
+                 ( F e. ( R RingHom S ) /\ `' F e. ( S RingHom R ) ) ) $=
+      ( vf vr vs crs co wcel cvv wa crh ccnv crg elexd crab wceq oveq12 adantl
+      cv rimrcl rhmrcl1 rhmrcl2 jca adantr df-rim ancoms eleq2d rabeqbidv simpl
+      a1i simpr rhmex syl2anc rabexg ovmpod cnveq eleq1d elrab bitrdi pm5.21nii
+      cmpo syl ) CABGHZIZAJIZBJIZKZCABLHZIZCMZBALHZIZKZABCUAVJVHVMVJVFVGVJANABC
+      UBOVJBNABCUCOUDUEVHVECDTZMZVLIZDVIPZIVNVHVDVRCVHEFABJJVPFTZETZLHZIZDVTVSL
+      HZPZVRGJGEFJJWDVBQVHDFEUFUKVHVTAQZVSBQZKZKZWBVQDWCVIWGWCVIQVHVTAVSBLRSWHW
+      AVLVPWGWAVLQZVHWFWEWIVSBVTALRUGSUHUIVFVGUJZVFVGULZVHVIJIZVRJIVHVFVGWLWJWK
+      ABJJUMUNVQDVIJUOVCUPUHVQVMDCVIVOCQVPVKVLVOCUQURUSUTVA $.
   $}
 
 
