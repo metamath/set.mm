@@ -156083,6 +156083,39 @@ $)
       FVQOCDGUSDFVPSWEKUOTURUTQVA $.
   $}
 
+  ${
+    $d ph x y $.  $d B x y $.  $d C x y $.  $d F x y $.  $d .+ x y $.
+    $d .+^ x y $.  $d R x y $.  $d S x y $.
+    isrhmd.b $e |- B = ( Base ` R ) $.
+    isrhmd.o $e |- .1. = ( 1r ` R ) $.
+    isrhmd.n $e |- N = ( 1r ` S ) $.
+    isrhmd.t $e |- .x. = ( .r ` R ) $.
+    isrhmd.u $e |- .X. = ( .r ` S ) $.
+    isrhmd.r $e |- ( ph -> R e. Ring ) $.
+    isrhmd.s $e |- ( ph -> S e. Ring ) $.
+    isrhmd.ho $e |- ( ph -> ( F ` .1. ) = N ) $.
+    isrhmd.ht $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+        ( F ` ( x .x. y ) ) = ( ( F ` x ) .X. ( F ` y ) ) ) $.
+    ${
+      isrhm2d.f $e |- ( ph -> F e. ( R GrpHom S ) ) $.
+      $( Demonstration of ring homomorphism.  (Contributed by Mario Carneiro,
+         13-Jun-2015.) $)
+      isrhm2d $p |- ( ph -> F e. ( R RingHom S ) ) $=
+        ( crg wcel cghm co cmgp cfv cmhm wa crh cmnd cbs wf cv cplusg wceq wral
+        c0g w3a eqid ringmgp syl ghmf mgpbasg feq23d mpbid ralrimivva mgpplusgg
+        oveqd fveq2d eqeq12d raleqbidv ringidvalg 3eqtr3d 3jca ismhm syl21anbrc
+        jca isrhm ) AEUBUCZFUBUCZJEFUDUEUCZJEUFUGZFUFUGZUHUEUCZUIJEFUJUEUCQRAWB
+        WEUAAWCUKUCZWDUKUCZWCULUGZWDULUGZJUMZBUNZCUNZWCUOUGZUEZJUGZWKJUGZWLJUGZ
+        WDUOUGZUEZUPZCWHUQZBWHUQZWCURUGZJUGZWDURUGZUPZUSWEAVTWFQEWCWCUTZVAVBAWA
+        WGRFWDWDUTZVAVBAWJXBXFADFULUGZJUMZWJAWBXJUAEFJDXILXIUTZVCVBADXIWHWIJAVT
+        DWHUPQDEWCUBXGLVDVBZAWAXIWIUPRXIFWDUBXHXKVDVBVEVFAWKWLGUEZJUGZWPWQHUEZU
+        PZCDUQZBDUQXBAXPBCDDTVGAXQXABDWHXLAXPWTCDWHXLAXNWOXOWSAXMWNJAGWMWKWLAVT
+        GWMUPQEGWCUBXGOVHVBVIVJAHWRWPWQAWAHWRUPRFHWDUBXHPVHVBVIVKVLVLVFAIJUGKXD
+        XESAIXCJAVTIXCUPQEIWCUBXGMVMVBVJAWAKXEUPRFKWDUBXHNVMVBVNVOBCWHWIWMWRWCW
+        DJXEXCWHUTWIUTWMUTWRUTXCUTXEUTVPVQVREFJWCWDXGXHVSVQ $.
+    $}
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
