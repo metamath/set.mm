@@ -156056,6 +156056,15 @@ $)
     ( crh co wcel cghm cmgp cfv cmhm crg wa eqid isrhm simprbi simpld ) CABDEFZ
     CABGEFZCAHIZBHIZJEFZQAKFBKFLRUALABCSTSMTMNOP $.
 
+  ${
+    rhmf.b $e |- B = ( Base ` R ) $.
+    rhmf.c $e |- C = ( Base ` S ) $.
+    $( A ring homomorphism is a function.  (Contributed by Stefan O'Rear,
+       8-Mar-2015.) $)
+    rhmf $p |- ( F e. ( R RingHom S ) -> F : B --> C ) $=
+      ( crh co wcel cghm wf rhmghm ghmf syl ) ECDHIJECDKIJABELCDEMCDEABFGNO $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
