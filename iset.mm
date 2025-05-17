@@ -156114,6 +156114,18 @@ $)
         XESAIXCJAVTIXCUPQEIWCUBXGMVMVBVJAWAKXEUPRFKWDUBXHNVMVBVNVOBCWHWIWMWRWCW
         DJXEXCWHUTWIUTWMUTWRUTXCUTXEUTVPVQVREFJWCWDXGXHVSVQ $.
     $}
+
+    isrhmd.c $e |- C = ( Base ` S ) $.
+    isrhmd.p $e |- .+ = ( +g ` R ) $.
+    isrhmd.q $e |- .+^ = ( +g ` S ) $.
+    isrhmd.f $e |- ( ph -> F : B --> C ) $.
+    isrhmd.hp $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+        ( F ` ( x .+ y ) ) = ( ( F ` x ) .+^ ( F ` y ) ) ) $.
+    $( Demonstration of ring homomorphism.  (Contributed by Stefan O'Rear,
+       8-Mar-2015.) $)
+    isrhmd $p |- ( ph -> F e. ( R RingHom S ) ) $=
+      ( crg wcel cgrp ringgrp syl isghmd isrhm2d ) ABCDHIJKLMNOPQRSTUAUBUCABCFG
+      HIMDEOUDUEUFAHUIUJHUKUJTHULUMAIUIUJIUKUJUAIULUMUGUHUNUO $.
   $}
 
 
