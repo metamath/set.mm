@@ -156140,6 +156140,24 @@ $)
       FBSJEUKOABDUDBEUJSUNGTRUE $.
   $}
 
+  ${
+    rhmf1o.b $e |- B = ( Base ` R ) $.
+    rhmf1o.c $e |- C = ( Base ` S ) $.
+    $( A ring homomorphism is bijective iff its converse is also a ring
+       homomorphism.  (Contributed by AV, 22-Oct-2019.) $)
+    rhmf1o $p |- ( F e. ( R RingHom S )
+                   -> ( F : B -1-1-onto-> C <-> `' F e. ( S RingHom R ) ) ) $=
+      ( crh co wcel wf1o wa crg cghm cmgp cfv cmhm adantr syl eqid ccnv rhmrcl2
+      rhmrcl1 jca simpr wb rhmghm ghmf1o bicomd mpbird cbs eqidd wceq f1oeq123d
+      mgpbasg biimpa rhmmhm mhmf1o isrhm sylanbrc wf rhmf adantl dff1o4 impbida
+      wfn ffnd ) ECDHIJZABEKZEUAZDCHIJZVHVILZDMJZCMJZLZVJDCNIJZVJDOPZCOPZQIJZLV
+      KVHVOVIVHVMVNCDEUBZCDEUCZUDRVLVPVSVLVPVIVHVIUEVLECDNIJZVPVIUFVHWBVICDEUGR
+      WBVIVPCDEABFGUHUISUJVLVSVRUKPZVQUKPZEKZVHVIWEVHAWCBWDEEVHEULVHVNAWCUMWAAC
+      VRMVRTZFUOSVHVMBWDUMVTBDVQMVQTZGUOSUNUPVLEVRVQQIJZVSWEUFVHWHVICDEVRVQWFWG
+      UQRWHWEVSWCWDVRVQEWCTWDTURUISUJUDDCVJVQVRWGWFUSUTVHVKLZEAVFVJBVFVIWIABEVH
+      ABEVAVKABCDEFGVBRVGWIBAVJVKBAVJVAVHBADCVJGFVBVCVGABEVDUTVE $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
