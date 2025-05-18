@@ -10769,20 +10769,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>submmnd , submbas , subm0 , subsubm</td>
-  <td><i>none</i></td>
-  <td>the set.mm proofs use structure restriction theorems
-  not present in iset.mm</td>
-</tr>
-
-<tr>
-  <td>resmhm , resmhm2 , resmhm2b</td>
-  <td><i>none</i></td>
-  <td>the set.mm proofs use structure restriction theorems
-  not present in iset.mm</td>
-</tr>
-
-<tr>
   <td>submacs</td>
   <td><i>none</i></td>
   <td>this is in terms of the ACS syntax</td>
@@ -10972,9 +10958,21 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>qusgrp , quseccl , qusadd , qus0 , qusinv , qussub</td>
+  <td>quselbas</td>
+  <td>~ quselbasg</td>
+  <td>adds a set existence condition</td>
+</tr>
+
+<tr>
+  <td>quseccl0</td>
+  <td>~ quseccl0g</td>
+  <td>adds a set existence condition</td>
+</tr>
+
+<tr>
+  <td>qus0 , qusinv , qussub</td>
   <td><i>none</i></td>
-  <td>presumably provable once we have defined the /s syntax</td>
+  <td>presumably provable</td>
 </tr>
 
 <tr>
@@ -10990,11 +10988,9 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>df-ghm , isghm , isghm3 , ghmgrp1 , ghmgrp2 , ghmf , ghmlin ,
-  ghmid , ghminv , ghmsub , isghmd , ghmmhm</td>
+  <td>pwsdiagghm</td>
   <td><i>none</i></td>
-  <td>should be feasible in a way similar to what we did for
-  ~ df-mhm and related theorems</td>
+  <td>the set.mm proof uses pwsdiagmhm</td>
 </tr>
 
 <tr>
@@ -11095,27 +11091,9 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>imasrng</td>
-  <td><i>none</i></td>
-  <td>presumably provable</td>
-</tr>
-
-<tr>
-  <td>imasrngf1</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses imasrng</td>
-</tr>
-
-<tr>
   <td>xpsrngd</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses prdsrngd and imasrngf1</td>
-</tr>
-
-<tr>
-  <td>qusrng</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses imasrng</td>
+  <td>the set.mm proof uses prdsrngd</td>
 </tr>
 
 <tr>
@@ -11943,9 +11921,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>lidlrsppropd</td>
-  <td><i>none</i></td>
-  <td>Would seem to require at least small changes.
-  The set.mm proof uses rlmsca2 .</td>
+  <td>~ lidlrsppropdg</td>
+  <td>adds set existence hypotheses</td>
 </tr>
 
 <tr>
@@ -11955,96 +11932,9 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>rng2idlsubrng</td>
-  <td><i>none</i></td>
-  <td>should be feasible once SubRng is present</td>
-</tr>
-
-<tr>
-  <td>rng2idlnsg</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof depends on rng2idlsubrng
-  and subrngringnsg</td>
-</tr>
-
-<tr>
-  <td>rng2idl0</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses rng2idlsubrng and subrngsubg</td>
-</tr>
-
-<tr>
-  <td>rng2idlsubgsubrng , rng2idlsubgnsg , rng2idlsubg0</td>
-  <td><i>none</i></td>
-  <td>should be feasible once SubRng is present</td>
-</tr>
-
-<tr>
-  <td>2idlcpblrng</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses eqgabl</td>
-</tr>
-
-<tr>
-  <td>2idlcpbl</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses 2idlcpblrng</td>
-</tr>
-
-<tr>
-  <td>qus2idrng</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses 2idlcpblrng and qusrng</td>
-</tr>
-
-<tr>
-  <td>qus1</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses 2idlcpbl</td>
-</tr>
-
-<tr>
-  <td>qusring</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses qus1</td>
-</tr>
-
-<tr>
   <td>qusrhm</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses qusring , qus1 ,
-  2idlcpbl , qusghm , and isrhm2d</td>
-</tr>
-
-<tr>
-  <td>qusmul2</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses 2idlcpbl</td>
-</tr>
-
-<tr>
-  <td>crngridl</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses lidlrsppropd</td>
-</tr>
-
-<tr>
-  <td>crng2idl</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses crngridl</td>
-</tr>
-
-<tr>
-  <td>qusmulrng</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses 2idlcpblrng</td>
-</tr>
-
-<tr>
-  <td>quscrng</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses crng2idl , qusring , and
-  qusmulrng</td>
+  <td>the set.mm proof uses isrhm2d</td>
 </tr>
 
 <tr>
