@@ -156164,6 +156164,11 @@ $)
             <-> ( F e. ( R RingHom S ) /\ F : B -1-1-onto-> C ) ) $=
       ( crs co wcel crh ccnv wa wf1o isrim0 rhmf1o bicomd pm5.32i bitri ) ECDHI
       JECDKIJZELDCKIJZMTABENZMCDEOTUAUBTUBUAABCDEFGPQRS $.
+
+    $( An isomorphism of rings is a bijection.  (Contributed by AV,
+       22-Oct-2019.) $)
+    rimf1o $p |- ( F e. ( R RingIso S ) -> F : B -1-1-onto-> C ) $=
+      ( crs co wcel crh wf1o isrim simprbi ) ECDHIJECDKIJABELABCDEFGMN $.
   $}
 
 
