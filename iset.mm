@@ -156209,6 +156209,31 @@ $)
     NUIBCDPABEPABCDEUCQUHDBLMZUPNGHEUOURNGHUQUIBCDURUPURRZUPRZSABEUOURUORZUSSUO
     URUPDEUDQUEACUMUOUPVAUTUFUG $.
 
+  ${
+    $d c y A $.  $d c y B $.  $d c y F $.  $d c y R $.  $d c y S $.
+    $d c y X $.  $d c y .|| $.
+    rhmdvdsr.x $e |- X = ( Base ` R ) $.
+    rhmdvdsr.m $e |- .|| = ( ||r ` R ) $.
+    rhmdvdsr.n $e |- ./ = ( ||r ` S ) $.
+    $( A ring homomorphism preserves the divisibility relation.  (Contributed
+       by Thierry Arnoux, 22-Oct-2017.) $)
+    rhmdvdsr $p |- ( ( ( F e. ( R RingHom S ) /\ A e. X /\ B e. X )
+      /\ A .|| B ) -> ( F ` A ) ./ ( F ` B ) ) $=
+      ( vy vc co wcel wa cfv wceq wrex syl2anc crh w3a wbr cbs cv simpl1 simpl2
+      cmulr eqid rhmf ffvelcdmda wral simpll1 simpr ralrimiva adantr rhmmul a1i
+      syl3anc cdsr crg csrg rhmrcl1 3ad2ant1 ringsrg eqidd dvdsr2d mpbid r19.29
+      simpl fveq2d eqtr3d reximi oveq1 eqeq1d rspcev rexlimivw dvdsrd mpbir2and
+      syl rhmrcl2 ) GEFUANOZAHOZBHOZUBZABCUCZPZAGQZBGQZDUCWHFUDQZOZLUEZWHFUHQZN
+      ZWIRZLWJSZWGWBWCWKWBWCWDWFUFWBWCWDWFUGZWBHWJAGHWJEFGIWJUIUJZUKTWGMUEZGQZW
+      JOZWTWHWMNZWIRZPZMHSZWPWGXAMHULXCMHSZXEWGXAMHWGWSHOZPZWBXGXAWBWCWDWFXGUMZ
+      WGXGUNZWBHWJWSGWRUKTUOWGWSAEUHQZNZGQZXBRZMHULZXLBRZMHSZXFWGXNMHXHWBXGWCXN
+      XIXJWGWCXGWQUPWSAEFXKWMGHIXKUIWMUIUQUSUOWGWFXQWEWFUNWGMHCEXKABHEUDQRWGIUR
+      CEUTQRWGJURWGEVAOZEVBOWEXRWFWBWCXRWDEFGVCVDUPEVEVTWGXKVFWQVGVHXOXQPXNXPPZ
+      MHSXFXNXPMHVIXSXCMHXSXMXBWIXNXPVJXSXLBGXNXPUNVKVLVMVTTXAXCMHVITXDWPMHWOXC
+      LWTWJWLWTRWNXBWIWLWTWHWMVNVOVPVQVTWGLWJDFWMWHWIWGWJVFDFUTQRWGKURWGFVAOZFV
+      BOWEXTWFWBWCXTWDEFGWAVDUPFVEVTWGWMVFVRVS $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
