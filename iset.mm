@@ -156171,6 +156171,11 @@ $)
       ( crs co wcel crh wf1o isrim simprbi ) ECDHIJECDKIJABELABCDEFGMN $.
   $}
 
+  $( A ring isomorphism is a homomorphism.  (Contributed by AV, 22-Oct-2019.)
+     Remove hypotheses.  (Revised by SN, 10-Jan-2025.) $)
+  rimrhm $p |- ( F e. ( R RingIso S ) -> F e. ( R RingHom S ) ) $=
+    ( crs co wcel crh ccnv isrim0 simplbi ) CABDEFCABGEFCHBAGEFABCIJ $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
