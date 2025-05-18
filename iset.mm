@@ -156176,6 +156176,17 @@ $)
   rimrhm $p |- ( F e. ( R RingIso S ) -> F e. ( R RingHom S ) ) $=
     ( crs co wcel crh ccnv isrim0 simplbi ) CABDEFCABGEFCHBAGEFABCIJ $.
 
+  ${
+    $d r s $.
+    $( The mapping of two rings to the ring homomorphisms between them is a
+       function.  (Contributed by AV, 1-Mar-2020.) $)
+    rhmfn $p |- RingHom Fn ( Ring X. Ring ) $=
+      ( vr vs cv cghm co cmgp cfv cmhm cin cvv wcel crg wral crh cxp wa ringgrp
+      wfn cgrp ghmex syl2an inex1g syl rgen2 dfrhm2 fnmpo ax-mp ) ACZBCZDEZUHFG
+      UIFGHEZIZJKZBLMALMNLLORUMABLLUHLKZUILKZPUJJKZUMUNUHSKUISKUPUOUHQUIQUHUITU
+      AUJUKJUBUCUDABLLULNJBAUEUFUG $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
