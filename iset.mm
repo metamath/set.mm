@@ -156185,6 +156185,18 @@ $)
       wfn cgrp ghmex syl2an inex1g syl rgen2 dfrhm2 fnmpo ax-mp ) ACZBCZDEZUHFG
       UIFGHEZIZJKZBLMALMNLLORUMABLLUHLKZUILKZPUJJKZUMUNUHSKUISKUPUOUHQUIQUHUITU
       AUJUKJUBUCUDABLLULNJBAUEUFUG $.
+
+    $d R r s $.  $d S r s $.
+    $( The ring homomorphisms between two rings.  (Contributed by AV,
+       1-Mar-2020.) $)
+    rhmval $p |- ( ( R e. Ring /\ S e. Ring ) -> ( R RingHom S )
+         = ( ( R GrpHom S ) i^i ( ( mulGrp ` R ) MndHom ( mulGrp ` S ) ) ) ) $=
+      ( vr vs crg wcel wa cv cghm cmgp cfv cmhm cin crh wceq fveq2 cgrp ringgrp
+      co cvv cmpo dfrhm2 a1i oveq12 oveqan12d ineq12d adantl simpl simpr syl2an
+      ghmex inex1g syl ovmpod ) AEFZBEFZGZCDABEECHZDHZISZURJKZUSJKZLSZMZABISZAJ
+      KZBJKZLSZMZNTNCDEEVDUAOUQDCUBUCURAOZUSBOZGZVDVIOUQVLUTVEVCVHURAUSBIUDVJVK
+      VAVFVBVGLURAJPUSBJPUEUFUGUOUPUHUOUPUIUQVETFZVITFUOAQFBQFVMUPARBRABUKUJVEV
+      HTULUMUN $.
   $}
 
 
