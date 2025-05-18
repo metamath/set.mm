@@ -86,6 +86,20 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+18-May-25 asclply1subcl [same]  Moved from TA's mathbox to main set.mm
+18-May-25 evls1maprhm [same]    Moved from TA's mathbox to main set.mm
+18-May-25 evls1fvcl [same]      Moved from TA's mathbox to main set.mm
+18-May-25 evls1maplmhm [same]   Moved from TA's mathbox to main set.mm
+18-May-25 evls1maprnss [same]   Moved from TA's mathbox to main set.mm
+18-May-25 fvdifsupp [same]      Moved from TA's mathbox to main set.mm
+18-May-25 evls1fpws [same]      Moved from TA's mathbox to main set.mm
+18-May-25 ressply1evl [same]    Moved from TA's mathbox to main set.mm
+18-May-25 evls1addd [same]      Moved from TA's mathbox to main set.mm
+18-May-25 evls1muld [same]      Moved from TA's mathbox to main set.mm
+18-May-25 evls1vsca [same]      Moved from TA's mathbox to main set.mm
+18-May-25 evls1scafv [same]     Moved from TA's mathbox to main set.mm
+18-May-25 evls1expd [same]      Moved from TA's mathbox to main set.mm
+18-May-25 evls1varpwval [same]  Moved from TA's mathbox to main set.mm
 10-May-25 ghmquskerlem1 [same]  Moved from TA's mathbox to main set.mm
 10-May-25 ghmquskerlem2 [same]  Moved from TA's mathbox to main set.mm
 10-May-25 ghmquskerlem3 [same]  Moved from TA's mathbox to main set.mm
