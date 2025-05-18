@@ -15189,6 +15189,16 @@ $)
   $}
 
   ${
+    $d x ph $.
+    sbbidv.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Deduction substituting both sides of a biconditional, with ` ph ` and
+       ` x ` disjoint.  See also ~ sbbid .  (Contributed by Wolf Lammen,
+       6-May-2023.)  (Proof shortened by Steven Nguyen, 6-Jul-2023.) $)
+    sbbidv $p |- ( ph -> ( [ t / x ] ps <-> [ t / x ] ch ) ) $=
+      ( wb wal wsb alrimiv spsbbi syl ) ABCGZDHBDEICDEIGAMDFJBCDEKL $.
+  $}
+
+  ${
     $d x y $.
     $( Two equivalent ways of expressing the proper substitution of ` y ` for
        ` x ` in ` ph ` , when ` x ` and ` y ` are distinct.  Theorem 6.2 of
@@ -19981,6 +19991,23 @@ $)
        (Contributed by NM, 14-Sep-2003.) $)
     sbab $p |- ( x = y -> A = { z | [ y / x ] z e. A } ) $=
       ( weq cv wcel wsb sbequ12 abbi2dv ) ABECFDGZABHCDKABIJ $.
+  $}
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Elementary properties of class abstractions
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  ${
+    $d x y A $.  $d ph x y $.  $d ps y $.
+    eqabdv.1 $e |- ( ph -> ( x e. A <-> ps ) ) $.
+    $( Deduction from a wff to a class abstraction.  (Contributed by NM,
+       9-Jul-1994.)  (Revised by Wolf Lammen, 6-May-2023.) $)
+    eqabdv $p |- ( ph -> A = { x | ps } ) $=
+      ( vy cab cv wcel wsb sbbidv clelsb1 bicomi df-clab 3bitr4g eqrdv ) AFDBCG
+      ZACHDIZCFJZBCFJFHZDIZTQIARBCFEKSUACFDLMBFCNOP $.
   $}
 
 
@@ -56216,6 +56243,21 @@ $)
        O'Rear, 7-Mar-2015.) $)
     elmpocl2 $p |- ( X e. ( S F T ) -> T e. B ) $=
       ( co wcel elmpocl simprd ) IFGHKLFCLGDLABCDEFGHIJMN $.
+  $}
+
+  ${
+    $d D a b $.  $d X a b $.  $d Y a b $.  $d ph a b $.
+    elovmpod.o $e |- O = ( a e. A , b e. B |-> C ) $.
+    elovmpod.x $e |- ( ph -> X e. A ) $.
+    elovmpod.y $e |- ( ph -> Y e. B ) $.
+    elovmpod.d $e |- ( ph -> D e. V ) $.
+    elovmpod.c $e |- ( ( a = X /\ b = Y ) -> C = D ) $.
+    $( Utility lemma for two-parameter classes.  (Contributed by Stefan O'Rear,
+       21-Jan-2015.)  Variant of ~ elovmpo in deduction form.  (Revised by AV,
+       20-Apr-2025.) $)
+    elovmpod $p |- ( ph -> ( E e. ( X O Y ) <-> E e. D ) ) $=
+      ( co wceq cv cmpo a1i wa adantl ovmpod eleq2d ) AIJGREFAKLIJBCDEGHGKLBCDU
+      ASAMUBKTISLTJSUCDESAQUDNOPUEUF $.
   $}
 
   ${
@@ -146931,6 +146973,25 @@ $)
   $}
 
   ${
+    $d S f s t x y $.  $d T f s t x y $.
+    $( The set of monoid homomorphisms exists.  (Contributed by Jim Kingdon,
+       15-May-2025.) $)
+    mhmex $p |- ( ( S e. Mnd /\ T e. Mnd ) -> ( S MndHom T ) e. _V ) $=
+      ( vx vy vf vs cmnd wcel wa co cplusg cfv wceq cbs wral c0g cmap cvv fveq2
+      cv cmhm crab cxp wfn fnmap basfn simpr elexd funfvex funfni sylancr simpl
+      vt fnovex mp3an2i rabexg oveq2d oveqd fveqeq2d raleqbidv rabeqbidv oveq1d
+      syl anbi12d eqeq2d 2ralbidv df-mhm ovmpog mpd3an3 eqeltrd ) AGHZBGHZIZABU
+      AJZCTZDTZAKLZJZETZLZVOVSLZVPVSLZBKLZJZMZDANLZOCWFOZAPLZVSLZBPLZMZIZEBNLZW
+      FQJZUBZRVKVLWORHZVNWOMVMWNRHZWPQRRUCUDVMWMRHZWFRHZWQUEVMNRUDZBRHWRUFVMBGV
+      KVLUGUHWRRBNBNUIUJUKVMWTARHWSUFVMAGVKVLULUHWSRANANUIUJUKWMWFRRQUNUOWLEWNR
+      UPVCZFUMABGGVOVPFTZKLZJZVSLWAWBUMTZKLZJZMZDXBNLZOZCXIOZXBPLZVSLXEPLZMZIZE
+      XENLZXIQJZUBWOUAVTXGMZDWFOZCWFOZWIXMMZIZEXPWFQJZUBRXBAMZXOYBEXQYCYDXIWFXP
+      QXBANSZUQYDXKXTXNYAYDXJXSCXIWFYEYDXHXRDXIWFYEYDXDVRXGVSYDXCVQVOVPXBAKSURU
+      SUTUTYDXLWHXMVSXBAPSUSVDVAXEBMZYBWLEYCWNYFXPWMWFQXEBNSVBYFXTWGYAWKYFXRWEC
+      DWFWFYFXGWDVTYFXFWCWAWBXEBKSURVEVFYFXMWJWIXEBPSVEVDVACDUMEFVGVHVIXAVJ $.
+  $}
+
+  ${
     $d f s t x y B $.  $d x y F $.  $d x y S $.  $d x y T $.
     $( Reverse closure of a monoid homomorphism.  (Contributed by Mario
        Carneiro, 7-Mar-2015.) $)
@@ -151210,6 +151271,14 @@ $)
       ZVAQZVBQZUSQZUTQZUKULURRUKULURSURVAVBUPTUMVAVBABUPVCVDUAUBURDLZVAGZELZVAG
       ZHVGVIUSJUPOVGUPOVIUPOUTJUCZUMURVHVJVKVAUSUTABUPVGVIVCVEVFUDUEUFUGUHUIUJ
       $.
+  $}
+
+  ${
+    $( The set of group homomorphisms exists.  (Contributed by Jim Kingdon,
+       15-May-2025.) $)
+    ghmex $p |- ( ( S e. Grp /\ T e. Grp ) -> ( S GrpHom T ) e. _V ) $=
+      ( cgrp wcel wa cghm co cmhm cvv ghmmhmb cmnd grpmnd mhmex syl2an eqeltrd
+      ) ACDZBCDZEABFGABHGZIABJPAKDBKDRIDQALBLABMNO $.
   $}
 
   ${
@@ -155865,7 +155934,7 @@ $)
     $d r s v w f x y $.
     $( Define the set of ring homomorphisms from ` r ` to ` s ` .  (Contributed
        by Stefan O'Rear, 7-Mar-2015.) $)
-    df-rnghom $a |- RingHom = ( r e. Ring , s e. Ring |->
+    df-rhm $a |- RingHom = ( r e. Ring , s e. Ring |->
       [_ ( Base ` r ) / v ]_ [_ ( Base ` s ) / w ]_
    { f e. ( w ^m v ) | ( ( f ` ( 1r ` r ) ) = ( 1r ` s ) /\ A. x e. v A. y e. v
    ( ( f ` ( x ( +g ` r ) y ) ) = ( ( f ` x ) ( +g ` s ) ( f ` y ) ) /\
@@ -155873,9 +155942,365 @@ $)
 
     $( Define the set of ring isomorphisms from ` r ` to ` s ` .  (Contributed
        by Stefan O'Rear, 7-Mar-2015.) $)
-    df-rngiso $a |- RingIso = ( r e. _V , s e. _V |->
+    df-rim $a |- RingIso = ( r e. _V , s e. _V |->
       { f e. ( r RingHom s ) | `' f e. ( s RingHom r ) } ) $.
+
+    $( The property of a ring homomorphism can be decomposed into separate
+       homomorphic conditions for addition and multiplication.  (Contributed by
+       Stefan O'Rear, 7-Mar-2015.) $)
+    dfrhm2 $p |- RingHom = ( r e. Ring , s e. Ring |->
+          ( ( r GrpHom s ) i^i ( ( mulGrp ` r ) MndHom ( mulGrp ` s ) ) ) ) $=
+      ( vv vw vf vx vy crg cv cbs cfv wceq co wa wral crab wcel cvv eqid elv wb
+      crh cur cplusg cmulr cmap csb cmpo cghm cmgp cmhm cin df-rhm ancom anbi1i
+      r19.26-2 anass 3bitri rabbii wfn basfn funfvex funfni mp2an oveq12 ancoms
+      vex raleq raleqbi1dv adantr anbi2d rabeqbidv csbie2 inrab 3eqtr4i wf cgrp
+      cab ringgrp isghm3 syl2an eqabdv df-rab elmap abbii eqtri eqtr4di ringmgp
+      w3a cmnd mgpbasg mgpplusgg ringidvalg ismhm 3anass bitr4i ineq12d eqtr4id
+      c0g baib mpoeq3ia ) UBBAHHCBIZJKZDAIZJKZXBUCKZEIZKXDUCKZLZFIZGIZXBUDKZMXG
+      KXJXGKZXKXGKZXDUDKZMLZXJXKXBUEKZMXGKXMXNXDUEKZMLZNZGCIZOZFYAOZNZEDIZYAUFM
+      ZPZUGUGZUHBAHHXBXDUIMZXBUJKZXDUJKZUKMZULZUHFGDCEABUMBAHHYHYMXBHQZXDHQZNZY
+      HXPGXCOFXCOZEXEXCUFMZPZXSGXCOFXCOZXINZEYRPZULZYMXIXTGXCOZFXCOZNZEYRPZYQUU
+      ANZEYRPYHUUCUUFUUHEYRUUFUUEXINYQYTNZXINUUHXIUUEUNUUEUUIXIXPXSFGXCXCUPUOYQ
+      YTXIUQURUSCDXCXEYGUUGJRUTZXBRQXCRQZVABVGUUKRXBJXBJVBVCVDZUUJXDRQXERQZVAAV
+      GUUMRXDJXDJVBVCVDZYAXCLZYEXELZNZYDUUFEYFYRUUPUUOYFYRLYEXEYAXCUFVEVFUUQYCU
+      UEXIUUOYCUUEUAUUPYBUUDFYAXCXTGYAXCVHVIVJVKVLVMYQUUAEYRVNVOYPYIYSYLUUBYPYI
+      XCXEXGVPZYQNZEVRZYSYPUUSEYIYNXBVQQXDVQQXGYIQUUSUAYOXBVSXDVSGFXLXOXBXDXGXC
+      XEXCSZXESZXLSXOSVTWAWBYSXGYRQZYQNZEVRUUTYQEYRWCUVDUUSEUVCUURYQXEXCXGUUNUU
+      LWDZUOWEWFWGYPYLUURYTXIWIZEVRZUUBYPUVFEYLYNYJWJQZYKWJQZXGYLQZUVFUAYOXBYJY
+      JSZWHXDYKYKSZWHUVJUVHUVINUVFFGXCXEXQXRYJYKXGXHXFXCYJJKLBXCXBYJRUVKUVAWKTX
+      EYKJKLAXEXDYKRUVLUVBWKTXQYJUDKLBXBXQYJRUVKXQSWLTXRYKUDKLAXDXRYKRUVLXRSWLT
+      XFYJWSKLBXBXFYJRUVKXFSWMTXHYKWSKLAXDXHYKRUVLXHSWMTWNWTWAWBUUBUVCUUANZEVRU
+      VGUUAEYRWCUVMUVFEUVMUURUUANUVFUVCUURUUAUVEUOUURYTXIWOWPWEWFWGWQWRXAWF $.
   $}
+
+  ${
+    $d r s $.
+    $( Reverse closure of a ring homomorphism.  (Contributed by Stefan O'Rear,
+       7-Mar-2015.) $)
+    rhmrcl1 $p |- ( F e. ( R RingHom S ) -> R e. Ring ) $=
+      ( vr vs crg cv cghm co cmgp cfv cmhm cin crh dfrhm2 elmpocl1 ) DEFFDGZEGZ
+      HIQJKRJKLIMABNCEDOP $.
+
+    $( Reverse closure of a ring homomorphism.  (Contributed by Stefan O'Rear,
+       7-Mar-2015.) $)
+    rhmrcl2 $p |- ( F e. ( R RingHom S ) -> S e. Ring ) $=
+      ( vr vs crg cv cghm co cmgp cfv cmhm cin crh dfrhm2 elmpocl2 ) DEFFDGZEGZ
+      HIQJKRJKLIMABNCEDOP $.
+  $}
+
+  ${
+    $d R r s $.  $d S r s $.  $d V r s $.  $d W r s $.  $d f r s v w x y $.
+    $( Set existence for ring homomorphism.  (Contributed by Jim Kingdon,
+       16-May-2025.) $)
+    rhmex $p |- ( ( R e. V /\ S e. W ) -> ( R RingHom S ) e. _V ) $=
+      ( vv vr vw vs vf vx vy wcel wa cv cbs cfv wceq co cvv vex cur cplusg wral
+      cmulr cmap crab csb wal crh basfn funfvex funfni mp2an fnmap fnovex mp3an
+      wfn cxp rabex csbexa a1i alrimivv simpl simpr crg df-rhm mpofvex syl3anc
+      ) ACLZBDLZMZEFNZOPZGHNZOPZVLUAPINZPVNUAPQJNZKNZVLUBPRVPPVQVPPZVRVPPZVNUBP
+      RQVQVRVLUDPRVPPVSVTVNUDPRQMKENZUCJWAUCMZIGNZWAUERZUFZUGZUGZSLZHUHFUHVIVJA
+      BUIRSLVKWHFHWHVKEVMWFOSUQZVLSLVMSLZUJFTWJSVLOVLOUKULUMGVOWEWIVNSLVOSLZUJH
+      TWKSVNOVNOUKULUMWBIWDUESSURUQWCSLWASLWDSLUNGTETWCWASSUEUOUPUSUTUTVAVBVIVJ
+      VCVIVJVDFHVEVEWGABUISCDJKGEIHFVFVGVH $.
+  $}
+
+  ${
+    $d R r s $.  $d S r s $.
+    isrhm.m $e |- M = ( mulGrp ` R ) $.
+    isrhm.n $e |- N = ( mulGrp ` S ) $.
+    $( A function is a ring homomorphism iff it preserves both addition and
+       multiplication.  (Contributed by Stefan O'Rear, 7-Mar-2015.) $)
+    isrhm $p |- ( F e. ( R RingHom S ) <-> ( ( R e. Ring /\ S e. Ring ) /\
+          ( F e. ( R GrpHom S ) /\ F e. ( M MndHom N ) ) ) ) $=
+      ( vr vs crh co wcel crg wa cghm cmhm cmgp cfv cvv wceq cin dfrhm2 elmpocl
+      cv ringgrp ghmex syl2an inex1g syl oveq12 fveq2 oveqan12d ineq12d ovmpoga
+      cgrp mpd3an3 eleq2d oveq12i eqcomi eleq2i anbi2i bitri bitrdi biadanii
+      elin ) CABJKZLZAMLZBMLZNZCABOKZLZCDEPKZLZNZHIMMHUDZIUDZOKZVPQRZVQQRZPKZUA
+      ZABJCIHUBZUCVJVGCVKAQRZBQRZPKZUAZLZVOVJVFWGCVHVIWGSLZVFWGTVJVKSLZWIVHAUOL
+      BUOLWJVIAUEBUEABUFUGVKWFSUHUIHIABMMWBWGJSVPATZVQBTZNVRVKWAWFVPAVQBOUJWKWL
+      VSWDVTWEPVPAQUKVQBQUKULUMWCUNUPUQWHVLCWFLZNVOCVKWFVEWMVNVLWFVMCVMWFDWDEWE
+      PFGURUSUTVAVBVCVD $.
+
+    $( A ring homomorphism is a homomorphism of multiplicative monoids.
+       (Contributed by Stefan O'Rear, 7-Mar-2015.) $)
+    rhmmhm $p |- ( F e. ( R RingHom S ) -> F e. ( M MndHom N ) ) $=
+      ( crh co wcel cghm cmhm crg wa isrhm simprbi simprd ) CABHIJZCABKIJZCDELI
+      JZRAMJBMJNSTNABCDEFGOPQ $.
+  $}
+
+  ${
+    $d F f $.  $d R f r s $.  $d S f r s $.  $d V f r s $.  $d W f r s $.
+    $( Reverse closure for an isomorphism of rings.  (Contributed by AV,
+       22-Oct-2019.) $)
+    rimrcl $p |- ( F e. ( R RingIso S ) -> ( R e. _V /\ S e. _V ) ) $=
+      ( vr vs vf cvv cv ccnv crh co wcel crab crs df-rim elmpocl ) DEGGFHIEHZDH
+      ZJKLFRQJKMABNCFEDOP $.
+
+    $( A ring isomorphism is a homomorphism whose converse is also a
+       homomorphism.  (Contributed by AV, 22-Oct-2019.)  Remove sethood
+       antecedent.  (Revised by SN, 10-Jan-2025.) $)
+    isrim0 $p |- ( F e. ( R RingIso S ) <->
+                 ( F e. ( R RingHom S ) /\ `' F e. ( S RingHom R ) ) ) $=
+      ( vf vr vs crs co wcel cvv wa crh ccnv crg elexd crab wceq oveq12 adantl
+      cv rimrcl rhmrcl1 rhmrcl2 jca adantr df-rim ancoms eleq2d rabeqbidv simpl
+      a1i simpr rhmex syl2anc rabexg ovmpod cnveq eleq1d elrab bitrdi pm5.21nii
+      cmpo syl ) CABGHZIZAJIZBJIZKZCABLHZIZCMZBALHZIZKZABCUAVJVHVMVJVFVGVJANABC
+      UBOVJBNABCUCOUDUEVHVECDTZMZVLIZDVIPZIVNVHVDVRCVHEFABJJVPFTZETZLHZIZDVTVSL
+      HZPZVRGJGEFJJWDVBQVHDFEUFUKVHVTAQZVSBQZKZKZWBVQDWCVIWGWCVIQVHVTAVSBLRSWHW
+      AVLVPWGWAVLQZVHWFWEWIVSBVTALRUGSUHUIVFVGUJZVFVGULZVHVIJIZVRJIVHVFVGWLWJWK
+      ABJJUMUNVQDVIJUOVCUPUHVQVMDCVIVOCQVPVKVLVOCUQURUSUTVA $.
+  $}
+
+  $( A ring homomorphism is an additive group homomorphism.  (Contributed by
+     Stefan O'Rear, 7-Mar-2015.) $)
+  rhmghm $p |- ( F e. ( R RingHom S ) -> F e. ( R GrpHom S ) ) $=
+    ( crh co wcel cghm cmgp cfv cmhm crg wa eqid isrhm simprbi simpld ) CABDEFZ
+    CABGEFZCAHIZBHIZJEFZQAKFBKFLRUALABCSTSMTMNOP $.
+
+  ${
+    rhmf.b $e |- B = ( Base ` R ) $.
+    rhmf.c $e |- C = ( Base ` S ) $.
+    $( A ring homomorphism is a function.  (Contributed by Stefan O'Rear,
+       8-Mar-2015.) $)
+    rhmf $p |- ( F e. ( R RingHom S ) -> F : B --> C ) $=
+      ( crh co wcel cghm wf rhmghm ghmf syl ) ECDHIJECDKIJABELCDEMCDEABFGNO $.
+  $}
+
+  ${
+    rhmmul.x $e |- X = ( Base ` R ) $.
+    rhmmul.m $e |- .x. = ( .r ` R ) $.
+    rhmmul.n $e |- .X. = ( .r ` S ) $.
+    $( A homomorphism of rings preserves multiplication.  (Contributed by Mario
+       Carneiro, 12-Jun-2015.) $)
+    rhmmul $p |- ( ( F e. ( R RingHom S ) /\ A e. X /\ B e. X ) ->
+      ( F ` ( A .x. B ) ) = ( ( F ` A ) .X. ( F ` B ) ) ) $=
+      ( co wcel cfv wceq eqid 3ad2ant1 wb crg syl crh w3a cmgp cplusg cbs simp2
+      rhmmhm rhmrcl1 mgpbasg eleq2d mpbid simp3 mhmlin syl3anc mgpplusgg fveq2d
+      cmhm oveqd rhmrcl2 eqeq12d mpbird ) GCDUALMZAHMZBHMZUBZABELZGNZAGNZBGNZFL
+      ZOZABCUCNZUDNZLZGNZVHVIDUCNZUDNZLZOZVEGVLVPUQLMZAVLUENZMZBWAMZVSVBVCVTVDC
+      DGVLVPVLPZVPPZUGQVEVCWBVBVCVDUFVBVCVCWBRVDVBHWAAVBCSMZHWAOCDGUHZHCVLSWDIU
+      ITZUJQUKVEVDWCVBVCVDULVBVCVDWCRVDVBHWABWHUJQUKWAVMVQVLVPGABWAPVMPVQPUMUNV
+      BVCVKVSRVDVBVGVOVJVRVBVFVNGVBEVMABVBWFEVMOWGCEVLSWDJUOTURUPVBFVQVHVIVBDSM
+      FVQOCDGUSDFVPSWEKUOTURUTQVA $.
+  $}
+
+  ${
+    $d ph x y $.  $d B x y $.  $d C x y $.  $d F x y $.  $d .+ x y $.
+    $d .+^ x y $.  $d R x y $.  $d S x y $.
+    isrhmd.b $e |- B = ( Base ` R ) $.
+    isrhmd.o $e |- .1. = ( 1r ` R ) $.
+    isrhmd.n $e |- N = ( 1r ` S ) $.
+    isrhmd.t $e |- .x. = ( .r ` R ) $.
+    isrhmd.u $e |- .X. = ( .r ` S ) $.
+    isrhmd.r $e |- ( ph -> R e. Ring ) $.
+    isrhmd.s $e |- ( ph -> S e. Ring ) $.
+    isrhmd.ho $e |- ( ph -> ( F ` .1. ) = N ) $.
+    isrhmd.ht $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+        ( F ` ( x .x. y ) ) = ( ( F ` x ) .X. ( F ` y ) ) ) $.
+    ${
+      isrhm2d.f $e |- ( ph -> F e. ( R GrpHom S ) ) $.
+      $( Demonstration of ring homomorphism.  (Contributed by Mario Carneiro,
+         13-Jun-2015.) $)
+      isrhm2d $p |- ( ph -> F e. ( R RingHom S ) ) $=
+        ( crg wcel cghm co cmgp cfv cmhm wa crh cmnd cbs wf cv cplusg wceq wral
+        c0g w3a eqid ringmgp syl ghmf mgpbasg feq23d mpbid ralrimivva mgpplusgg
+        oveqd fveq2d eqeq12d raleqbidv ringidvalg 3eqtr3d 3jca ismhm syl21anbrc
+        jca isrhm ) AEUBUCZFUBUCZJEFUDUEUCZJEUFUGZFUFUGZUHUEUCZUIJEFUJUEUCQRAWB
+        WEUAAWCUKUCZWDUKUCZWCULUGZWDULUGZJUMZBUNZCUNZWCUOUGZUEZJUGZWKJUGZWLJUGZ
+        WDUOUGZUEZUPZCWHUQZBWHUQZWCURUGZJUGZWDURUGZUPZUSWEAVTWFQEWCWCUTZVAVBAWA
+        WGRFWDWDUTZVAVBAWJXBXFADFULUGZJUMZWJAWBXJUAEFJDXILXIUTZVCVBADXIWHWIJAVT
+        DWHUPQDEWCUBXGLVDVBZAWAXIWIUPRXIFWDUBXHXKVDVBVEVFAWKWLGUEZJUGZWPWQHUEZU
+        PZCDUQZBDUQXBAXPBCDDTVGAXQXABDWHXLAXPWTCDWHXLAXNWOXOWSAXMWNJAGWMWKWLAVT
+        GWMUPQEGWCUBXGOVHVBVIVJAHWRWPWQAWAHWRUPRFHWDUBXHPVHVBVIVKVLVLVFAIJUGKXD
+        XESAIXCJAVTIXCUPQEIWCUBXGMVMVBVJAWAKXEUPRFKWDUBXHNVMVBVNVOBCWHWIWMWRWCW
+        DJXEXCWHUTWIUTWMUTWRUTXCUTXEUTVPVQVREFJWCWDXGXHVSVQ $.
+    $}
+
+    isrhmd.c $e |- C = ( Base ` S ) $.
+    isrhmd.p $e |- .+ = ( +g ` R ) $.
+    isrhmd.q $e |- .+^ = ( +g ` S ) $.
+    isrhmd.f $e |- ( ph -> F : B --> C ) $.
+    isrhmd.hp $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+        ( F ` ( x .+ y ) ) = ( ( F ` x ) .+^ ( F ` y ) ) ) $.
+    $( Demonstration of ring homomorphism.  (Contributed by Stefan O'Rear,
+       8-Mar-2015.) $)
+    isrhmd $p |- ( ph -> F e. ( R RingHom S ) ) $=
+      ( crg wcel cgrp ringgrp syl isghmd isrhm2d ) ABCDHIJKLMNOPQRSTUAUBUCABCFG
+      HIMDEOUDUEUFAHUIUJHUKUJTHULUMAIUIUJIUKUJUAIULUMUGUHUNUO $.
+  $}
+
+  ${
+    rhm1.o $e |- .1. = ( 1r ` R ) $.
+    rhm1.n $e |- N = ( 1r ` S ) $.
+    $( Ring homomorphisms are required to fix 1.  (Contributed by Stefan
+       O'Rear, 8-Mar-2015.) $)
+    rhm1 $p |- ( F e. ( R RingHom S ) -> ( F ` .1. ) = N ) $=
+      ( crh co wcel cmgp cfv c0g cmhm wceq eqid rhmmhm syl crg ringidvalg mhm0
+      rhmrcl1 fveq2d rhmrcl2 3eqtr4d ) DABHIJZAKLZMLZDLZBKLZMLZCDLZEUFDUGUJNIJU
+      IUKOABDUGUJUGPZUJPZQUGUJDUKUHUHPUKPUARUFASJZULUIOABDUBUOCUHDACUGSUMFTUCRU
+      FBSJEUKOABDUDBEUJSUNGTRUE $.
+  $}
+
+  ${
+    rhmf1o.b $e |- B = ( Base ` R ) $.
+    rhmf1o.c $e |- C = ( Base ` S ) $.
+    $( A ring homomorphism is bijective iff its converse is also a ring
+       homomorphism.  (Contributed by AV, 22-Oct-2019.) $)
+    rhmf1o $p |- ( F e. ( R RingHom S )
+                   -> ( F : B -1-1-onto-> C <-> `' F e. ( S RingHom R ) ) ) $=
+      ( crh co wcel wf1o wa crg cghm cmgp cfv cmhm adantr syl eqid ccnv rhmrcl2
+      rhmrcl1 jca simpr wb rhmghm ghmf1o bicomd mpbird cbs eqidd wceq f1oeq123d
+      mgpbasg biimpa rhmmhm mhmf1o isrhm sylanbrc wf rhmf adantl dff1o4 impbida
+      wfn ffnd ) ECDHIJZABEKZEUAZDCHIJZVHVILZDMJZCMJZLZVJDCNIJZVJDOPZCOPZQIJZLV
+      KVHVOVIVHVMVNCDEUBZCDEUCZUDRVLVPVSVLVPVIVHVIUEVLECDNIJZVPVIUFVHWBVICDEUGR
+      WBVIVPCDEABFGUHUISUJVLVSVRUKPZVQUKPZEKZVHVIWEVHAWCBWDEEVHEULVHVNAWCUMWAAC
+      VRMVRTZFUOSVHVMBWDUMVTBDVQMVQTZGUOSUNUPVLEVRVQQIJZVSWEUFVHWHVICDEVRVQWFWG
+      UQRWHWEVSWCWDVRVQEWCTWDTURUISUJUDDCVJVQVRWGWFUSUTVHVKLZEAVFVJBVFVIWIABEVH
+      ABEVAVKABCDEFGVBRVGWIBAVJVKBAVJVAVHBADCVJGFVBVCVGABEVDUTVE $.
+
+    $( An isomorphism of rings is a bijective homomorphism.  (Contributed by
+       AV, 22-Oct-2019.)  Remove sethood antecedent.  (Revised by SN,
+       12-Jan-2025.) $)
+    isrim $p |- ( F e. ( R RingIso S )
+            <-> ( F e. ( R RingHom S ) /\ F : B -1-1-onto-> C ) ) $=
+      ( crs co wcel crh ccnv wa wf1o isrim0 rhmf1o bicomd pm5.32i bitri ) ECDHI
+      JECDKIJZELDCKIJZMTABENZMCDEOTUAUBTUBUAABCDEFGPQRS $.
+
+    $( An isomorphism of rings is a bijection.  (Contributed by AV,
+       22-Oct-2019.) $)
+    rimf1o $p |- ( F e. ( R RingIso S ) -> F : B -1-1-onto-> C ) $=
+      ( crs co wcel crh wf1o isrim simprbi ) ECDHIJECDKIJABELABCDEFGMN $.
+  $}
+
+  $( A ring isomorphism is a homomorphism.  (Contributed by AV, 22-Oct-2019.)
+     Remove hypotheses.  (Revised by SN, 10-Jan-2025.) $)
+  rimrhm $p |- ( F e. ( R RingIso S ) -> F e. ( R RingHom S ) ) $=
+    ( crs co wcel crh ccnv isrim0 simplbi ) CABDEFCABGEFCHBAGEFABCIJ $.
+
+  ${
+    $d r s $.
+    $( The mapping of two rings to the ring homomorphisms between them is a
+       function.  (Contributed by AV, 1-Mar-2020.) $)
+    rhmfn $p |- RingHom Fn ( Ring X. Ring ) $=
+      ( vr vs cv cghm co cmgp cfv cmhm cin cvv wcel crg wral crh cxp wa ringgrp
+      wfn cgrp ghmex syl2an inex1g syl rgen2 dfrhm2 fnmpo ax-mp ) ACZBCZDEZUHFG
+      UIFGHEZIZJKZBLMALMNLLORUMABLLUHLKZUILKZPUJJKZUMUNUHSKUISKUPUOUHQUIQUHUITU
+      AUJUKJUBUCUDABLLULNJBAUEUFUG $.
+
+    $d R r s $.  $d S r s $.
+    $( The ring homomorphisms between two rings.  (Contributed by AV,
+       1-Mar-2020.) $)
+    rhmval $p |- ( ( R e. Ring /\ S e. Ring ) -> ( R RingHom S )
+         = ( ( R GrpHom S ) i^i ( ( mulGrp ` R ) MndHom ( mulGrp ` S ) ) ) ) $=
+      ( vr vs crg wcel wa cv cghm cmgp cfv cmhm cin crh wceq fveq2 cgrp ringgrp
+      co cvv cmpo dfrhm2 a1i oveq12 oveqan12d ineq12d adantl simpl simpr syl2an
+      ghmex inex1g syl ovmpod ) AEFZBEFZGZCDABEECHZDHZISZURJKZUSJKZLSZMZABISZAJ
+      KZBJKZLSZMZNTNCDEEVDUAOUQDCUBUCURAOZUSBOZGZVDVIOUQVLUTVEVCVHURAUSBIUDVJVK
+      VAVFVBVGLURAJPUSBJPUEUFUGUOUPUHUOUPUIUQVETFZVITFUOAQFBQFVMUPARBRABUKUJVEV
+      HTULUMUN $.
+  $}
+
+  $( The composition of ring homomorphisms is a homomorphism.  (Contributed by
+     Mario Carneiro, 12-Jun-2015.) $)
+  rhmco $p |- ( ( F e. ( T RingHom U ) /\ G e. ( S RingHom T ) ) ->
+      ( F o. G ) e. ( S RingHom U ) ) $=
+    ( crh co wcel crg ccom cghm cmgp cfv cmhm rhmrcl2 rhmghm syl2an eqid rhmmhm
+    wa rhmrcl1 anim12ci ghmco mhmco jca isrhm sylanbrc ) DBCFGHZEABFGHZTZAIHZCI
+    HZTDEJZACKGHZUMALMZCLMZNGHZTUMACFGHUHULUIUKBCDOABEUAUBUJUNUQUHDBCKGHEABKGHU
+    NUIBCDPABEPABCDEUCQUHDBLMZUPNGHEUOURNGHUQUIBCDURUPURRZUPRZSABEUOURUORZUSSUO
+    URUPDEUDQUEACUMUOUPVAUTUFUG $.
+
+  ${
+    $d c y A $.  $d c y B $.  $d c y F $.  $d c y R $.  $d c y S $.
+    $d c y X $.  $d c y .|| $.
+    rhmdvdsr.x $e |- X = ( Base ` R ) $.
+    rhmdvdsr.m $e |- .|| = ( ||r ` R ) $.
+    rhmdvdsr.n $e |- ./ = ( ||r ` S ) $.
+    $( A ring homomorphism preserves the divisibility relation.  (Contributed
+       by Thierry Arnoux, 22-Oct-2017.) $)
+    rhmdvdsr $p |- ( ( ( F e. ( R RingHom S ) /\ A e. X /\ B e. X )
+      /\ A .|| B ) -> ( F ` A ) ./ ( F ` B ) ) $=
+      ( vy vc co wcel wa cfv wceq wrex syl2anc crh w3a wbr cbs cv simpl1 simpl2
+      cmulr eqid rhmf ffvelcdmda wral simpll1 simpr ralrimiva adantr rhmmul a1i
+      syl3anc cdsr crg csrg rhmrcl1 3ad2ant1 ringsrg eqidd dvdsr2d mpbid r19.29
+      simpl fveq2d eqtr3d reximi oveq1 eqeq1d rspcev rexlimivw dvdsrd mpbir2and
+      syl rhmrcl2 ) GEFUANOZAHOZBHOZUBZABCUCZPZAGQZBGQZDUCWHFUDQZOZLUEZWHFUHQZN
+      ZWIRZLWJSZWGWBWCWKWBWCWDWFUFWBWCWDWFUGZWBHWJAGHWJEFGIWJUIUJZUKTWGMUEZGQZW
+      JOZWTWHWMNZWIRZPZMHSZWPWGXAMHULXCMHSZXEWGXAMHWGWSHOZPZWBXGXAWBWCWDWFXGUMZ
+      WGXGUNZWBHWJWSGWRUKTUOWGWSAEUHQZNZGQZXBRZMHULZXLBRZMHSZXFWGXNMHXHWBXGWCXN
+      XIXJWGWCXGWQUPWSAEFXKWMGHIXKUIWMUIUQUSUOWGWFXQWEWFUNWGMHCEXKABHEUDQRWGIUR
+      CEUTQRWGJURWGEVAOZEVBOWEXRWFWBWCXRWDEFGVCVDUPEVEVTWGXKVFWQVGVHXOXQPXNXPPZ
+      MHSXFXNXPMHVIXSXCMHXSXMXBWIXNXPVJXSXLBGXNXPUNVKVLVMVTTXAXCMHVITXDWPMHWOXC
+      LWTWJWLWTRWNXBWIWLWTWHWMVNVOVPVQVTWGLWJDFWMWHWIWGWJVFDFUTQRWGKURWGFVAOZFV
+      BOWEXTWFWBWCXTWDEFGWAVDUPFVEVTWGWMVFVRVS $.
+  $}
+
+  ${
+    $d x y F $.  $d x y R $.  $d x y S $.
+    $( A ring homomorphism is also a ring homomorphism for the opposite rings.
+       (Contributed by Thierry Arnoux, 27-Oct-2017.) $)
+    rhmopp $p |- ( F e. ( R RingHom S )
+       -> F e. ( ( oppR ` R ) RingHom ( oppR ` S ) ) ) $=
+      ( vx vy co wcel cfv cbs cmulr cur eqid crg syl mpbid wceq wa syl3anc wral
+      cplusg crh coppr rhmrcl1 wb opprringbg rhmrcl2 rhm1 oppr1g eqcomd 3eqtr4d
+      fveq2d cv simpl simprr opprbasg eleqtrrd simprl rhmmul opprmulg ffvelcdmd
+      rhmf cgrp cghm ringgrpd rhmghm ad2antrr simplr simpr ghmlin ralrimiva jca
+      jca31 feq23d oppraddg oveqd eqeq12d raleqbidv anbi12d anbi2d isghm sylibr
+      wf isrhm2d ) CABUAFGZDEAUBHZIHZWEBUBHZWEJHZWGJHZWEKHZCWGKHZWFLZWJLWKLWHLZ
+      WILZWDAMGZWEMGZABCUCZWDWOWOWPUDWQAWEMWELZUENOZWDBMGZWGMGZABCUFZWDWTWTXAUD
+      XBBWGMWGLZUENOZWDAKHZCHBKHZWJCHWKABXECXFXELZXFLZUGWDWJXECWDXEWJWDWOXEWJPW
+      QAXEWEMWRXGUHNUIUKWDXFWKWDWTXFWKPXBBXFWGMXCXHUHNUIUJWDDULZWFGZEULZWFGZQZQ
+      ZXKXIAJHZFZCHZXKCHZXICHZBJHZFZXIXKWHFZCHXSXRWIFZXNWDXKAIHZGZXIYDGZXQYAPWD
+      XMUMZXNXKWFYDWDXJXLUNZXNWDYDWFPZYGWDWOYIWQYDAWEMWRYDLZUONZNZUPZXNXIWFYDWD
+      XJXLUQZYLUPZXKXIABXOXTCYDYJXOLZXTLZURRXNYBXPCXNWOXJXLYBXPPXNWDWOYGWQNYNYH
+      YDAWHXOWFWEMWFXIXKYJYPWRWMUSRUKXNWTXSBIHZGXRYRGYCYAPXNWDWTYGXBNXNYDYRXICX
+      NWDYDYRCWBZYGYDYRABCYJYRLZVAZNZYOUTXNYDYRXKCUUBYMUTYRBWIXTYRWGMYRXSXRYTYQ
+      XCWNUSRUJWDWEVBGZWGVBGZQZWFWGIHZCWBZXIXKWETHZFZCHZXSXRWGTHZFZPZEWFSZDWFSZ
+      QZQZCWEWGVCFGWDUUEYSXIXKATHZFZCHZXSXRBTHZFZPZEYDSZDYDSZQZQUUQWDUUCUUDUVFW
+      DWEWSVDWDWGXDVDWDYSUVEUUAWDUVDDYDWDYFQZUVCEYDUVGYEQCABVCFGZYFYEUVCWDUVHYF
+      YEABCVEVFWDYFYEVGUVGYEVHUURUVAABXICXKYDYJUURLZUVALZVIRVJVJVKVLWDUVFUUPUUE
+      WDYSUUGUVEUUOWDYDYRWFUUFCYKWDWTYRUUFPXBYRBWGMXCYTUONVMWDUVDUUNDYDWFYKWDUV
+      CUUMEYDWFYKWDUUTUUJUVBUULWDUUSUUICWDUURUUHXIXKWDWOUURUUHPWQUURAWEMWRUVIVN
+      NVOUKWDUVAUUKXSXRWDWTUVAUUKPXBUVABWGMXCUVJVNNVOVPVQVQVRVSOEDUUHUUKWEWGCWF
+      UUFWLUUFLUUHLUUKLVTWAWC $.
+  $}
+
+  $( Ring homomorphisms preserve unit elements.  (Contributed by Thierry
+     Arnoux, 23-Oct-2017.) $)
+  elrhmunit $p |- ( ( F e. ( R RingHom S ) /\ A e. ( Unit ` R ) )
+    -> ( F ` A ) e. ( Unit ` S ) ) $=
+    ( crh co wcel cui cfv wa cur cdsr wbr coppr eqidd crg adantr syl eqid mpbid
+    cbs simpl csrg rhmrcl1 ringsrg simpr unitcld ringidcl 3syl isunitd rhmdvdsr
+    simpld syl31anc wb rhm1 breq2d rhmopp wceq eleqtrd simprd rhmrcl2 mpbir2and
+    opprbasg ) DBCEFGZABHIZGZJZADIZCHIZGVHCKIZCLIZMZVHVJCNIZLIZMZVGVHBKIZDIZVKM
+    ZVLVGVDABUAIZGVPVSGZAVPBLIZMZVRVDVFUBZVGVSBVEAVGVSOVGVEOZVGBPGZBUCGVDWEVFBC
+    DUDZQZBUERZVDVFUFZUGZVGVDWEVTWCWFVSBVPVSSZVPSZUHUIZVGWBAVPBNIZLIZMZVGVFWBWP
+    JWIVGWABWNVEVPWOAWDVGVPOVGWAOVGWNOVGWOOWHUJTZULAVPWAVKBCDVSWKWASVKSUKUMVDVR
+    VLUNVFVDVQVJVHVKBCVPDVJWLVJSUOZUPQTVGVHVQVNMZVOVGDWNVMEFGZAWNUAIZGVPXAGWPWS
+    VDWTVFBCDUQQVGAVSXAWJVGWEVSXAURWGVSBWNPWNSWKVCRZUSVGVPVSXAWMXBUSVGWBWPWQUTA
+    VPWOVNWNVMDXAXASWOSVNSUKUMVDWSVOUNVFVDVQVJVHVNWRUPQTVGVKCVMVIVJVNVHVGVIOVGV
+    JOVGVKOVGVMOVGVNOVGCPGZCUCGVDXCVFBCDVAQCUERUJVB $.
+
+  $( Ring homomorphisms preserve the inverse of unit elements.  (Contributed by
+     Thierry Arnoux, 23-Oct-2017.) $)
+  rhmunitinv $p |- ( ( F e. ( R RingHom S ) /\ A e. ( Unit ` R ) )
+    -> ( F ` ( ( invr ` R ) ` A ) ) = ( ( invr ` S ) ` ( F ` A ) ) ) $=
+    ( co wcel cui cfv cinvr cmulr wceq cur crg cbs eqidd adantr syl cvv eleqtrd
+    eqid crh rhmrcl1 unitlinv sylan fveq2d simpl csrg ringsrg unitssd unitinvcl
+    wa sseldd rhmmul syl3anc rhm1 3eqtr3d rhmrcl2 elrhmunit syl2anc eqtr4d cmgp
+    simpr cress cplusg mgpplusgg basfn elexd funfvex funfni sylancr ssexd mgpex
+    wfn ressplusgd oveqd eqeq12d wb unitgrp syldan unitgrpbasd grprcan syl13anc
+    cgrp bitrd mpbid ) DBCUAEFZABGHZFZUKZABIHZHZDHZADHZCJHZEZWMCIHZHZWMWNEZKZWL
+    WQKZWIWOCLHZWRWIWKABJHZEZDHZBLHZDHZWOXAWIXCXEDWFBMFZWHXCXEKBCDUBZBXBWGXEWJA
+    WGTZWJTZXBTZXETZUCUDUEWIWFWKBNHZFAXMFXDWOKWFWHUFWIWGXMWKWIXMBWGWIXMOWIWGOWI
+    XGBUGFWFXGWHXHPBUHQUIZWFXGWHWKWGFZXHBWGWJAXIXJUJUDZULWIWGXMAXNWFWHVBULWKABC
+    XBWNDXMXMTXKWNTZUMUNWFXFXAKWHBCXEDXAXLXATZUOPUPWICMFZWMCGHZFZWRXAKWFXSWHBCD
+    UQZPZABCDURZCWNXTXAWPWMXTTZWPTZXQXRUCUSUTWIWSWLWMCVAHZXTVCEZVDHZEZWQWMYIEZK
+    ZWTWIWOYJWRYKWIWNYIWLWMWIXTWNYGYHRRWIYHOZWIXSWNYGVDHKYCCWNYGMYGTZXQVEQWIXTC
+    NHZRWINRVMCRFYORFZVFWICMYCVGYPRCNCNVHVIVJWIYOCXTWIYOOWIXTOZWIXSCUGFYCCUHQZU
+    IVKWIXSYGRFYCCYGMYNVLQVNZVOWIWNYIWQWMYSVOVPWIYHWCFZWLYHNHZFWQUUAFWMUUAFYLWT
+    VQWFYTWHWFXSYTYBCXTYHYEYHTVRQPWIWLXTUUAWFWHXOWLXTFXPWKBCDURVSWICXTYHYQYMYRV
+    TZSWIWQXTUUAWIXSYAWQXTFYCYDCXTWPWMYEYFUJUSUUBSWIWMXTUUAYDUUBSUUAYIYHWLWQWMU
+    UATYITWAWBWDWE $.
 
 
 $(
