@@ -112,6 +112,8 @@ Date      Old       New         Notes
  4-May-25 isdomn3   [same]      Moved from SO's mathbox to main set.mm
  2-May-25 bj-sbnf   sbnf        Moved from BJ's mathbox to main set.mm
  1-May-25 rnexd     [same]      Moved from TA's mathbox to main set.mm
+ 1-May-25 imaexd    [same]      Moved from TA's mathbox to main set.mm
+30-Apr-25 idomrootle [same]     Moved from SO's mathbox to main set.mm
 30-Apr-25 ply1ascl0 [same]      Moved from TA's mathbox to main set.mm
 30-Apr-25 hashf1dmcdm [same]    Moved from BT's mathbox to main set.mm
 25-Apr-25 mon1pid   [same]      Moved from SO's mathbox to main set.mm
