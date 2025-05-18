@@ -156199,6 +156199,16 @@ $)
       HTULUMUN $.
   $}
 
+  $( The composition of ring homomorphisms is a homomorphism.  (Contributed by
+     Mario Carneiro, 12-Jun-2015.) $)
+  rhmco $p |- ( ( F e. ( T RingHom U ) /\ G e. ( S RingHom T ) ) ->
+      ( F o. G ) e. ( S RingHom U ) ) $=
+    ( crh co wcel crg ccom cghm cmgp cfv cmhm rhmrcl2 rhmghm syl2an eqid rhmmhm
+    wa rhmrcl1 anim12ci ghmco mhmco jca isrhm sylanbrc ) DBCFGHZEABFGHZTZAIHZCI
+    HZTDEJZACKGHZUMALMZCLMZNGHZTUMACFGHUHULUIUKBCDOABEUAUBUJUNUQUHDBCKGHEABKGHU
+    NUIBCDPABEPABCDEUCQUHDBLMZUPNGHEUOURNGHUQUIBCDURUPURRZUPRZSABEUOURUORZUSSUO
+    URUPDEUDQUEACUMUOUPVAUTUFUG $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
