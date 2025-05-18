@@ -10769,20 +10769,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>submmnd , submbas , subm0 , subsubm</td>
-  <td><i>none</i></td>
-  <td>the set.mm proofs use structure restriction theorems
-  not present in iset.mm</td>
-</tr>
-
-<tr>
-  <td>resmhm , resmhm2 , resmhm2b</td>
-  <td><i>none</i></td>
-  <td>the set.mm proofs use structure restriction theorems
-  not present in iset.mm</td>
-</tr>
-
-<tr>
   <td>submacs</td>
   <td><i>none</i></td>
   <td>this is in terms of the ACS syntax</td>
@@ -10972,9 +10958,21 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>qusgrp , quseccl , qusadd , qus0 , qusinv , qussub</td>
+  <td>quselbas</td>
+  <td>~ quselbasg</td>
+  <td>adds a set existence condition</td>
+</tr>
+
+<tr>
+  <td>quseccl0</td>
+  <td>~ quseccl0g</td>
+  <td>adds a set existence condition</td>
+</tr>
+
+<tr>
+  <td>qus0 , qusinv , qussub</td>
   <td><i>none</i></td>
-  <td>presumably provable once we have defined the /s syntax</td>
+  <td>presumably provable</td>
 </tr>
 
 <tr>
@@ -10990,11 +10988,9 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>df-ghm , isghm , isghm3 , ghmgrp1 , ghmgrp2 , ghmf , ghmlin ,
-  ghmid , ghminv , ghmsub , isghmd , ghmmhm</td>
+  <td>pwsdiagghm</td>
   <td><i>none</i></td>
-  <td>should be feasible in a way similar to what we did for
-  ~ df-mhm and related theorems</td>
+  <td>the set.mm proof uses pwsdiagmhm</td>
 </tr>
 
 <tr>
@@ -11286,6 +11282,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>unitss</td>
   <td>~ unitssd</td>
+  <td>adds ` R e. SRing ` condition</td>
 </tr>
 
 <tr>
@@ -11361,18 +11358,57 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>dfrhm2</td>
-  <td><i>none</i></td>
-  <td>presumably not hard once isghm3 is available</td>
-</tr>
-
-<tr>
-  <td>df-ric and all ring isomorphism relation theorems</td>
+  <td id="missing-df-ric">df-ric and all ring isomorphism
+  relation theorems</td>
   <td><i>none</i></td>
   <td>This should be definable in some way but
   it isn't clear whether the set.mm definition would work
   or whether the definition needs to be more like brric2 or
   the ` E. f f e. ( R RingIso S ) ` portion thereof.</td>
+</tr>
+
+<tr>
+  <td>rhmisrnghm</td>
+  <td><i>none</i></td>
+  <td>should be provable once we have RngHom</td>
+</tr>
+
+<tr>
+  <td>idrhm</td>
+  <td><i>none</i></td>
+  <td>presumably provable</td>
+</tr>
+
+<tr>
+  <td>rimgim</td>
+  <td><i>none</i></td>
+  <td>presumably provable once we have GrpIso</td>
+</tr>
+
+<tr>
+  <td>rimisrngim</td>
+  <td><i>none</i></td>
+  <td>presumably provable once we have RngIso</td>
+</tr>
+
+<tr>
+  <td>pwsco1rhm</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof depends on pwsring , pwsco1mhm ,
+  pwsbas , and pwsmgp</td>
+</tr>
+
+<tr>
+  <td>pwsco2rhm</td>
+  <td><i>none</i></td>
+  <td>may be possible once we have more structure
+  power theorems</td>
+</tr>
+
+<tr>
+  <td>brric , brrici , brric2 , ricgic</td>
+  <td><i>none</i></td>
+  <td>see <a href="#missing-df-ric" >df-ric entry</a></td>
 </tr>
 
 <tr>
@@ -11938,7 +11974,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>qusrhm</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses qusghm and isrhm2d</td>
+  <td>the set.mm proof uses isrhm2d</td>
 </tr>
 
 <tr>
@@ -12070,7 +12106,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>mulgrhm , mulgrhm2</td>
   <td><i>none</i></td>
-  <td>seem provable once more ~ df-rnghom related theorems are proved</td>
+  <td>seem provable once more ~ df-rhm related theorems are proved</td>
 </tr>
 
 <tr>
