@@ -86,7 +86,6 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
-17-May-25 fimassd   [same]      Moved from GS's mathbox to main set.mm
 17-May-25 reximddv3 [same]      Moved from GS's mathbox to main set.mm
 10-May-25 ghmquskerlem1 [same]  Moved from TA's mathbox to main set.mm
 10-May-25 ghmquskerlem2 [same]  Moved from TA's mathbox to main set.mm
