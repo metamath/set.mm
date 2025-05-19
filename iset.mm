@@ -161664,6 +161664,16 @@ $)
   $}
 
   ${
+    zrh1.l $e |- L = ( ZRHom ` R ) $.
+    zrh1.o $e |- .1. = ( 1r ` R ) $.
+    $( Interpretation of 1 in a ring.  (Contributed by Stefan O'Rear,
+       6-Sep-2015.) $)
+    zrh1 $p |- ( R e. Ring -> ( L ` 1 ) = .1. ) $=
+      ( crg wcel czring crh co c1 cfv wceq zrhrhm zring1 rhm1 syl ) AFGCHAIJGKC
+      LBMACDNHAKCBOEPQ $.
+  $}
+
+  ${
     $d g G $.  $d g .x. $.
     zlmval.w $e |- W = ( ZMod ` G ) $.
     zlmval.m $e |- .x. = ( .g ` G ) $.
