@@ -86,6 +86,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+18-May-25 rhmmpllem2 rhmpsrlem2 Moved from SN's mathbox to main set.mm
+18-May-25 rhmmpllem1 rhmpsrlem1 Moved from SN's mathbox to main set.mm
 18-May-25 asclply1subcl [same]  Moved from TA's mathbox to main set.mm
 18-May-25 evls1maprhm [same]    Moved from TA's mathbox to main set.mm
 18-May-25 evls1fvcl [same]      Moved from TA's mathbox to main set.mm
