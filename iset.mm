@@ -161655,6 +161655,12 @@ $)
       mulgrhm2 zrhval2 sneqd eqtr4d eleq2d wb zrhex elsn2g bitrd ) AFGZBHAIJZGB
       CKZGZBCLZUKULUMBUKULEMENAOPZAQPZJRZKUMAUQUPEURUQSZURSUPSZUBUKCURAUQUPECDU
       SUTUCUDUEUFUKCTGUNUOUGACFDUHBCTUIUAUJ $.
+
+    $( The ` ZRHom ` homomorphism is a homomorphism.  (Contributed by Mario
+       Carneiro, 12-Jun-2015.)  (Revised by AV, 12-Jun-2019.) $)
+    zrhrhm $p |- ( R e. Ring -> L e. ( ZZring RingHom R ) ) $=
+      ( crg wcel czring crh co wceq eqid zrhrhmb mpbiri ) ADEBFAGHEBBIBJABBCKL
+      $.
   $}
 
   ${
