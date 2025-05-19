@@ -161780,6 +161780,17 @@ $)
     znlidl $p |- ( N e. ZZ -> ( S ` { N } ) e. ( LIdeal ` ZZring ) ) $=
       ( wcel czring crg csn wss cfv clidl zringring snssi zringbas eqid sylancr
       cz rspcl ) BPDEFDBGZPHRAIEJIZDKBPLPESRACMSNQO $.
+
+    znval.u $e |- U = ( ZZring /s ( ZZring ~QG ( S ` { N } ) ) ) $.
+    $( The value of the ` Z/nZ ` structure.  It is defined as the quotient ring
+       ` ZZ / n ZZ ` , with an "artificial" ordering added.  (In other words,
+       ` Z/nZ ` is a _ring_ with an _order_ , but it is not an _ordered ring_ ,
+       which as a term implies that the order is compatible with the ring
+       operations in some way.)  (Contributed by Mario Carneiro, 12-Jun-2015.)
+       (Revised by AV, 13-Jun-2019.) $)
+    zncrng2 $p |- ( N e. ZZ -> U e. CRing ) $=
+      ( cz wcel czring ccrg csn cfv clidl zringcrng znlidl eqid quscrng sylancr
+      ) CFGHIGCJAKZHLKZGBIGMACDNHRBSESOPQ $.
   $}
 
 
