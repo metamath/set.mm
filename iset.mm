@@ -161674,6 +161674,16 @@ $)
   $}
 
   ${
+    zrh0.l $e |- L = ( ZRHom ` R ) $.
+    zrh0.z $e |- .0. = ( 0g ` R ) $.
+    $( Interpretation of 0 in a ring.  (Contributed by Stefan O'Rear,
+       6-Sep-2015.) $)
+    zrh0 $p |- ( R e. Ring -> ( L ` 0 ) = .0. ) $=
+      ( crg wcel czring crh cghm cc0 cfv wceq zrhrhm rhmghm zring0 ghmid 3syl
+      co ) AFGBHAISGBHAJSGKBLCMABDNHABOHABKCPEQR $.
+  $}
+
+  ${
     $d g G $.  $d g .x. $.
     zlmval.w $e |- W = ( ZMod ` G ) $.
     zlmval.m $e |- .x. = ( .g ` G ) $.
