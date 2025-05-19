@@ -92,6 +92,8 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
 19-May-25 dfss2f    dfssf
+19-May-25 dfss2     [same]      Use df-ss statement
+19-May-25 df-ss     [same]      Use dfss2 statement
 18-May-25 asclply1subcl [same]  Moved from TA's mathbox to main set.mm
 18-May-25 evls1maprhm [same]    Moved from TA's mathbox to main set.mm
 18-May-25 evls1fvcl [same]      Moved from TA's mathbox to main set.mm
