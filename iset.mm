@@ -161611,6 +161611,18 @@ $)
   $}
 
   ${
+    $d r s $.  $d n N $.  $d n .1. $.  $d n r R $.  $d n .x. $.
+    zrhval.l $e |- L = ( ZRHom ` R ) $.
+    $( Define the unique homomorphism from the integers to a ring or field.
+       (Contributed by Mario Carneiro, 13-Jun-2015.)  (Revised by AV,
+       12-Jun-2019.) $)
+    zrhvalg $p |- ( R e. V -> L = U. ( ZZring RingHom R ) ) $=
+      ( vr wcel czrh cfv czring crh co cuni cv cvv df-zrh wceq oveq2 unieqd crg
+      elex zringring rhmex mpan uniexd fvmptd3 eqtrid ) ACFZBAGHIAJKZLZDUGEAIEM
+      ZJKZLUINGNEOUJAPUKUHUJAIJQRACTUGUHNISFUGUHNFUAIASCUBUCUDUEUF $.
+  $}
+
+  ${
     $d g G $.  $d g .x. $.
     zlmval.w $e |- W = ( ZMod ` G ) $.
     zlmval.m $e |- .x. = ( .g ` G ) $.
