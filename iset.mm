@@ -161510,8 +161510,9 @@ $)
     ${
       mulgghm2.b $e |- B = ( Base ` R ) $.
       $( The powers of a group element give a homomorphism from ` ZZ ` to a
-         group.  (Contributed by Mario Carneiro, 13-Jun-2015.)  (Revised by AV,
-         12-Jun-2019.) $)
+         group.  The name ` .1. ` should not be taken as a constraint as it may
+         be any group element.  (Contributed by Mario Carneiro, 13-Jun-2015.)
+         (Revised by AV, 12-Jun-2019.) $)
       mulgghm2 $p |- ( ( R e. Grp /\ .1. e. B )
                        -> F e. ( ZZring GrpHom R ) ) $=
         ( vx vy wcel wa czring cz cv co cfv oveq1 mulgcld cgrp cplusg wceq wral
@@ -161647,7 +161648,7 @@ $)
       ( wcel czring crh co cuni cvv zrhvalg zringring rhmex mpan uniexd eqeltrd
       crg ) ACEZBFAGHZIJABCDKRSJFQERSJELFAQCMNOP $.
 
-    $( The ` ZRHom ` homomorphism is the unique ring homomorphism from ` Z ` .
+    $( The ` ZRHom ` homomorphism is the unique ring homomorphism from ` ZZ ` .
        (Contributed by Mario Carneiro, 15-Jun-2015.)  (Revised by AV,
        12-Jun-2019.) $)
     zrhrhmb $p |- ( R e. Ring -> ( F e. ( ZZring RingHom R ) <-> F = L ) ) $=
@@ -161782,12 +161783,9 @@ $)
       cz rspcl ) BPDEFDBGZPHRAIEJIZDKBPLPESRACMSNQO $.
 
     znval.u $e |- U = ( ZZring /s ( ZZring ~QG ( S ` { N } ) ) ) $.
-    $( The value of the ` Z/nZ ` structure.  It is defined as the quotient ring
-       ` ZZ / n ZZ ` , with an "artificial" ordering added.  (In other words,
-       ` Z/nZ ` is a _ring_ with an _order_ , but it is not an _ordered ring_ ,
-       which as a term implies that the order is compatible with the ring
-       operations in some way.)  (Contributed by Mario Carneiro, 12-Jun-2015.)
-       (Revised by AV, 13-Jun-2019.) $)
+    $( Making a commutative ring as a quotient of ` ZZ ` and ` n ZZ ` .
+       (Contributed by Mario Carneiro, 12-Jun-2015.)  (Revised by AV,
+       13-Jun-2019.) $)
     zncrng2 $p |- ( N e. ZZ -> U e. CRing ) $=
       ( cz wcel czring ccrg csn cfv clidl zringcrng znlidl eqid quscrng sylancr
       ) CFGHIGCJAKZHLKZGBIGMACDNHRBSESOPQ $.
