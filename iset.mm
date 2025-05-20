@@ -7621,8 +7621,8 @@ $)
   $( An equivalence of two decidable propositions is decidable.  (Contributed
      by Jim Kingdon, 12-Apr-2018.) $)
   dcbi $p |- ( DECID ph -> ( DECID ps -> DECID ( ph <-> ps ) ) ) $=
-    ( wdc wi wa wb dcim com12 dcan ex syl6c dfbi2 dcbii imbitrrdi ) ACZBCZABDZBAD
-    ZEZCZABFZCOPQCZRCZTABGPOUCBAGHUBUCTQRIJKUASABLMN $.
+    ( wdc wi wa wb dcim com12 dcan ex syl6c dfbi2 dcbii imbitrrdi ) ACZBCZABDZB
+    ADZEZCZABFZCOPQCZRCZTABGPOUCBAGHUBUCTQRIJKUASABLMN $.
 
   $( Express conjunction in terms of implication.  The forward direction,
      ~ annimim , is valid for all propositions, but as an equivalence, it
