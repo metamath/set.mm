@@ -79,13 +79,13 @@ proposed  syl5ibrcom imbitrridcom
 proposed  syl6      imtrdi      alternate proposal: syldi
 proposed  syl6com   imtrdicom
 proposed  syl6d     imtrdid
-underway  syl6bi    biimtrdi
 proposed  syl6bir   biimtrrdi
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+20-May-25 syl6bi    biimtrdi
 18-May-25 asclply1subcl [same]  Moved from TA's mathbox to main set.mm
 18-May-25 evls1maprhm [same]    Moved from TA's mathbox to main set.mm
 18-May-25 evls1fvcl [same]      Moved from TA's mathbox to main set.mm
