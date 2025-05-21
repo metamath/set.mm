@@ -161864,6 +161864,29 @@ $)
         DPUEZUFZUGQUQUHQZRZSPBUOCRZSPABUQURDUPEFGHUQTZUPTZURTUIUNUTUSBSUNCURUOA
         BUQCDUPEFGHVAVBIUJUKULUM $.
     $}
+
+    ${
+      znbaslem.e $e |- E = Slot ( E ` ndx ) $.
+      znbaslemnn.nn $e |- ( E ` ndx ) e. NN $.
+      znbaslem.n $e |- ( E ` ndx ) =/= ( le ` ndx ) $.
+      $( Lemma for ~ znbas .  (Contributed by Mario Carneiro, 14-Jun-2015.)
+         (Revised by Mario Carneiro, 14-Aug-2015.)  (Revised by AV,
+         13-Jun-2019.)  (Revised by AV, 9-Sep-2021.)  (Revised by AV,
+         3-Nov-2024.) $)
+      znbaslemnn $p |- ( N e. NN0 -> ( E ` U ) = ( E ` Y ) ) $=
+        ( wcel cfv co cvv czring crg cle eqid syl cn0 cnx cple cop csts csn cqg
+        wceq cqus zringring rspex ax-mp eqeltri snexg fvexg sylancr eqgex qusex
+        crsp eqeltrid czrh cc0 cz cfzo cif cres ccom ccnv znval cn plendxnn a1i
+        zrhex resexg cxr xrex lerelxr ssexi coexg sylancl cnvexg syl2anc setsex
+        cxp xpex syl3anc eqeltrd pleslid slotex ndxslid setsslnid znval2 fveq2d
+        eqtr4d ) DUALZBCMZBUBUCMZEUCMZUDUENZCMZECMWOBOLZWROLZWPWTUHWOBPPDUFZAMZ
+        UGNZUINZOGWOPQLZXEOLZXFOLUJWOXGXDOLZXHUJWOAOLXCOLXIAPUSMZOFXGXJOLUJQPUK
+        ULUMDUAUNXCAOOUOUPXDPQOUQUPXEPQOURUPUTZWOEOLXBWOEBWQBVAMZDVBUHVCVBDVDNV
+        EZVFZRVGZXNVHZVGZUDUENZOABXNXQDXMEFGHXNSXMSXQSVIWOXAWQVJLZXQOLZXROLXKXS
+        WOVKVLWOXOOLZXPOLZXTWOXNOLZROLYAWOXLOLZYCWOXAYDXKBXLOXLSVMTXLXMOVNTZRVO
+        VOWDVOVOVPVPWEVQVRXNROOVSVTWOYCYBYEXNOWATXOXPOOVSWBWQXQBOOVJWCWFWGEUCOW
+        HWITOWRWQCOBCUBCMIJWJKVKWKWBWOEWSCABWRDEFGHWRSWLWMWN $.
+    $}
   $}
 
 
