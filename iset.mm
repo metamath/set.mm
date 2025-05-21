@@ -161849,6 +161849,23 @@ $)
       $.
   $}
 
+  ${
+    $d x E $.  $d x K $.  $d x y N $.  $d x y U $.  $d x y Y $.
+    znval2.s $e |- S = ( RSpan ` ZZring ) $.
+    znval2.u $e |- U = ( ZZring /s ( ZZring ~QG ( S ` { N } ) ) ) $.
+    znval2.y $e |- Y = ( Z/nZ ` N ) $.
+    ${
+      znval2.l $e |- .<_ = ( le ` Y ) $.
+      $( Self-referential expression for the ` Z/nZ ` structure.  (Contributed
+         by Mario Carneiro, 14-Jun-2015.)  (Revised by AV, 13-Jun-2019.) $)
+      znval2 $p |- ( N e. NN0 -> Y = ( U sSet <. ( le ` ndx ) , .<_ >. ) ) $=
+        ( cn0 wcel cnx cple cfv cc0 co ccom cop csts eqid czrh wceq cz cfzo cif
+        cres cle ccnv znval znle opeq2d oveq2d eqtr4d ) DJKZEBLMNZBUANDOUBUCODU
+        DPUEZUFZUGQUQUHQZRZSPBUOCRZSPABUQURDUPEFGHUQTZUPTZURTUIUNUTUSBSUNCURUOA
+        BUQCDUPEFGHVAVBIUJUKULUM $.
+    $}
+  $}
+
 
 $(
 ###############################################################################
