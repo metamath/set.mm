@@ -161887,6 +161887,13 @@ $)
         VOWDVOVOVPVPWEVQVRXNROOVSVTWOYCYBYEXNOWATXOXPOOVSWBWQXQBOOVJWCWFWGEUCOW
         HWITOWRWQCOBCUBCMIJWJKVKWKWBWOEWSCABWRDEFGHWRSWLWMWN $.
     $}
+
+    $( The base set of ` Z/nZ ` is the same as the quotient ring it is based
+       on.  (Contributed by Mario Carneiro, 15-Jun-2015.)  (Revised by AV,
+       13-Jun-2019.)  (Revised by AV, 3-Nov-2024.) $)
+    znbas2 $p |- ( N e. NN0 -> ( Base ` U ) = ( Base ` Y ) ) $=
+      ( cbs baseid basendxnn cnx cple cfv plendxnbasendx necomi znbaslemnn ) AB
+      HCDEFGIJKLMKHMNOP $.
   $}
 
 
