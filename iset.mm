@@ -161504,6 +161504,67 @@ $)
     ( ccnfld crg wcel cz cvv cmgp cfv cress co czring wceq cnring df-zring eqid
     zex mgpress mp2an ) ABCDECAFGZDHIJFGKLODAJRBEMRNPQ $.
 
+  ${
+    $d n x y B $.  $d f x y F $.  $d f n x y R $.  $d n .x. $.  $d n x y .1. $.
+    mulgghm2.m $e |- .x. = ( .g ` R ) $.
+    mulgghm2.f $e |- F = ( n e. ZZ |-> ( n .x. .1. ) ) $.
+    ${
+      mulgghm2.b $e |- B = ( Base ` R ) $.
+      $( The powers of a group element give a homomorphism from ` ZZ ` to a
+         group.  The name ` .1. ` should not be taken as a constraint as it may
+         be any group element.  (Contributed by Mario Carneiro, 13-Jun-2015.)
+         (Revised by AV, 12-Jun-2019.) $)
+      mulgghm2 $p |- ( ( R e. Grp /\ .1. e. B )
+                       -> F e. ( ZZring GrpHom R ) ) $=
+        ( vx vy wcel wa czring cz cv co cfv oveq1 mulgcld cgrp cplusg wceq wral
+        wf caddc cghm simpl zringgrp jctil 3expa an32s fmptd eqid mulgdir 3exp2
+        mulgcl imp42 zaddcl adantl simpll simplr fvmptd3 simprl oveq12d 3eqtr4d
+        simprr ralrimivva jca zringbas zringplusg isghm sylanbrc ) BUALZDALZMZN
+        UALZVNMOAFUEZJPZKPZUFQZFRZVSFRZVTFRZBUBRZQZUCZKOUDJOUDZMFNBUGQLVPVNVQVN
+        VOUHUIUJVPVRWHVPEOEPZDCQZAFVNWIOLZVOWJALZVNWKVOWLACBWIDIGUQUKULHUMVPWGJ
+        KOOVPVSOLZVTOLZMZMZWADCQZVSDCQZVTDCQZWEQZWBWFVNWOVOWQWTUCZVNWMWNVOXAVNW
+        MWNVOXAAWECBVSVTDIGWEUNZUOUPURULWPEWAWJWQOFAHWIWADCSWOWAOLVPVSVTUSUTZWP
+        ACBWADIGVNVOWOVAZXCVNVOWOVBZTVCWPWCWRWDWSWEWPEVSWJWROFAHWIVSDCSVPWMWNVD
+        ZWPACBVSDIGXDXFXETVCWPEVTWJWSOFAHWIVTDCSVPWMWNVGZWPACBVTDIGXDXGXETVCVEV
+        FVHVIKJUFWENBFOAVJIVKXBVLVM $.
+    $}
+
+    mulgrhm.1 $e |- .1. = ( 1r ` R ) $.
+    $( The powers of the element ` 1 ` give a ring homomorphism from ` ZZ ` to
+       a ring.  (Contributed by Mario Carneiro, 14-Jun-2015.)  (Revised by AV,
+       12-Jun-2019.) $)
+    mulgrhm $p |- ( R e. Ring -> F e. ( ZZring RingHom R ) ) $=
+      ( vx wcel cz czring cfv c1 co cv oveq1 wceq fvmptd3 mulgcld vy cmul cmulr
+      crg zringbas zring1 zringmulr eqid zringring a1i id cbs 1zzd ringidcl syl
+      mulg1 eqeltrd eqtrd wa ringgrp adantr simprr ringlidm syldan oveq2d simpl
+      cgrp simprl mulgass2 syl13anc mulgass 3eqtr4rd zmulcl adantl oveq12d cghm
+      3eqtr4d mulgghm2 syl2anc isrhm2d ) AUDJZIUAKLAUBAUCMZNECUEUFHUGWBUHZLUDJW
+      AUIUJWAUKWANEMNCBOZCWADNDPZCBOZWDKEAULMZGWENCBQWAUMWAWDCWGWACWGJZWDCRWGAC
+      WGUHZHUNZWGBACWIFUPUOZWJUQSWKURWAIPZKJZUAPZKJZUSZUSZWLWNUBOZCBOZWLCBOZWNC
+      BOZWBOZWREMWLEMZWNEMZWBOWQWLCXAWBOZBOZWLXABOZXBWSWQXEXAWLBWAWPXAWGJZXEXAR
+      WQWGBAWNCWIFWAAVGJZWPAUTZVAZWAWMWOVBZWAWHWPWJVAZTZWGAWBCXAWIWCHVCVDVEWQWA
+      WMWHXHXBXFRWAWPVFWAWMWOVHZXMXNWGABWBWLCXAWIFWCVIVJWQXIWMWOWHWSXGRXKXOXLXM
+      WGBAWLWNCWIFVKVJVLWQDWRWFWSKEWGGWEWRCBQWPWRKJWAWLWNVMVNZWQWGBAWRCWIFXKXPX
+      MTSWQXCWTXDXAWBWQDWLWFWTKEWGGWEWLCBQXOWQWGBAWLCWIFXKXOXMTSWQDWNWFXAKEWGGW
+      EWNCBQXLXNSVOVQWAXIWHELAVPOJXJWJWGABCDEFGWIVRVSVT $.
+
+    $( The powers of the element ` 1 ` give the unique ring homomorphism from
+       ` ZZ ` to a ring.  (Contributed by Mario Carneiro, 14-Jun-2015.)
+       (Revised by AV, 12-Jun-2019.) $)
+    mulgrhm2 $p |- ( R e. Ring -> ( ZZring RingHom R ) = { F } ) $=
+      ( vf wcel czring co cv wa wceq cz cmpt cfv zringbas c1 crg crh csn cbs wf
+      eqid rhmf adantl feqmptd cmg rhmghm ad2antlr simpr ghmmulg syl3anc ccnfld
+      cghm 1zzd cmul ax-1cn cnfldmulg mpan2 adantr zringmulg eqtr4d zcn mulridd
+      cc 3eqtr3d fveq2d zring1 rhm1 oveq2d mpteq2dva eqtrd eqtr4di velsn sylibr
+      1z ex ssrdv mulgrhm snssd eqssd ) AUAJZKAUBLZEUCZWEIWFWGWEIMZWFJZWHWGJZWE
+      WINZWHEOWJWKWHDPDMZCBLZQZEWKWHDPWLWHRZQWNWKDPAUDRZWHWIPWPWHUEWEPWPKAWHSWP
+      UFUGUHUIWKDPWOWMWKWLPJZNZWLTKUJRZLZWHRZWLTWHRZBLZWOWMWRWHKAUQLJZWQTPJZXAX
+      COWIXDWEWQKAWHUKULWKWQUMWRURPWSBWHKAWLTSWSUFFUNUOWRWTWLWHWQWTWLOWKWQWLTUP
+      UJRLZWLTUSLZWTWLWQTVHJXFXGOZUTWLTVAVBZWQXEXFWTOVSWQXENXFXGWTWQXHXEXIVCWLT
+      VDVEVBWQWLWLVFVGVIUHVJWRXBCWLBWIXBCOWEWQKATWHCVKHVLULVMVIVNVOGVPIEVQVRVTW
+      AWEEWFABCDEFGHWBWCWD $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -161549,6 +161610,79 @@ $)
       ( s sSet <. ( le ` ndx ) , [_ ( ( ZRHom ` s ) |`
       if ( n = 0 , ZZ , ( 0 ..^ n ) ) ) / f ]_
         ( ( f o. <_ ) o. `' f ) >. ) ) $.
+  $}
+
+  ${
+    $d r s $.  $d n N $.  $d n .1. $.  $d n r R $.  $d n .x. $.
+    zrhval.l $e |- L = ( ZRHom ` R ) $.
+    $( Define the unique homomorphism from the integers to a ring or field.
+       (Contributed by Mario Carneiro, 13-Jun-2015.)  (Revised by AV,
+       12-Jun-2019.) $)
+    zrhvalg $p |- ( R e. V -> L = U. ( ZZring RingHom R ) ) $=
+      ( vr wcel czrh cfv czring crh co cuni cv cvv df-zrh wceq oveq2 unieqd crg
+      elex zringring rhmex mpan uniexd fvmptd3 eqtrid ) ACFZBAGHIAJKZLZDUGEAIEM
+      ZJKZLUINGNEOUJAPUKUHUJAIJQRACTUGUHNISFUGUHNFUAIASCUBUCUDUEUF $.
+
+    ${
+      zrhval2.m $e |- .x. = ( .g ` R ) $.
+      zrhval2.1 $e |- .1. = ( 1r ` R ) $.
+      $( Alternate value of the ` ZRHom ` homomorphism.  (Contributed by Mario
+         Carneiro, 12-Jun-2015.) $)
+      zrhval2 $p |- ( R e. Ring -> L = ( n e. ZZ |-> ( n .x. .1. ) ) ) $=
+        ( crg wcel czring crh co cuni cz cv cmpt zrhvalg csn eqid unieqd eqtrdi
+        mulgrhm2 zex mptex unisn eqtrd ) AIJZEKALMZNZDODPCBMZQZAEIFRUHUJULSZNUL
+        UHUIUMABCDULGULTHUCUAULDOUKUDUEUFUBUG $.
+
+      $( Value of the ` ZRHom ` homomorphism.  (Contributed by Mario Carneiro,
+         14-Jun-2015.) $)
+      zrhmulg $p |- ( ( R e. Ring /\ N e. ZZ ) ->
+        ( L ` N ) = ( N .x. .1. ) ) $=
+        ( vn crg wcel cz wa cfv cv co cmpt wceq adantr eqid zrhval2 oveq1 simpr
+        fveq1d cbs cgrp ringgrp ringidcl mulgcld fvmptd3 eqtrd ) AJKZELKZMZEDNZ
+        EILIOZCBPZQZNZECBPZULUOUSRUMULEDURABCIDFGHUAUDSUNIEUQUTLURAUENZURTUPECB
+        UBULUMUCZUNVABAECVATZGULAUFKUMAUGSVBULCVAKUMVAACVCHUHSUIUJUK $.
+    $}
+
+    $( Set existence for ` ZRHom ` .  (Contributed by Jim Kingdon,
+       19-May-2025.) $)
+    zrhex $p |- ( R e. V -> L e. _V ) $=
+      ( wcel czring crh co cuni cvv zrhvalg zringring rhmex mpan uniexd eqeltrd
+      crg ) ACEZBFAGHZIJABCDKRSJFQERSJELFAQCMNOP $.
+
+    $( The ` ZRHom ` homomorphism is the unique ring homomorphism from ` ZZ ` .
+       (Contributed by Mario Carneiro, 15-Jun-2015.)  (Revised by AV,
+       12-Jun-2019.) $)
+    zrhrhmb $p |- ( R e. Ring -> ( F e. ( ZZring RingHom R ) <-> F = L ) ) $=
+      ( vn crg wcel czring crh co csn wceq cz cv cur cfv cmg cmpt eqid cvv syl
+      mulgrhm2 zrhval2 sneqd eqtr4d eleq2d wb zrhex elsn2g bitrd ) AFGZBHAIJZGB
+      CKZGZBCLZUKULUMBUKULEMENAOPZAQPZJRZKUMAUQUPEURUQSZURSUPSZUBUKCURAUQUPECDU
+      SUTUCUDUEUFUKCTGUNUOUGACFDUHBCTUIUAUJ $.
+
+    $( The ` ZRHom ` homomorphism is a homomorphism.  (Contributed by Mario
+       Carneiro, 12-Jun-2015.)  (Revised by AV, 12-Jun-2019.) $)
+    zrhrhm $p |- ( R e. Ring -> L e. ( ZZring RingHom R ) ) $=
+      ( crg wcel czring crh co wceq eqid zrhrhmb mpbiri ) ADEBFAGHEBBIBJABBCKL
+      $.
+  $}
+
+  ${
+    zrh1.l $e |- L = ( ZRHom ` R ) $.
+    zrh1.o $e |- .1. = ( 1r ` R ) $.
+    $( Interpretation of 1 in a ring.  (Contributed by Stefan O'Rear,
+       6-Sep-2015.) $)
+    zrh1 $p |- ( R e. Ring -> ( L ` 1 ) = .1. ) $=
+      ( crg wcel czring crh co c1 cfv wceq zrhrhm zring1 rhm1 syl ) AFGCHAIJGKC
+      LBMACDNHAKCBOEPQ $.
+  $}
+
+  ${
+    zrh0.l $e |- L = ( ZRHom ` R ) $.
+    zrh0.z $e |- .0. = ( 0g ` R ) $.
+    $( Interpretation of 0 in a ring.  (Contributed by Stefan O'Rear,
+       6-Sep-2015.) $)
+    zrh0 $p |- ( R e. Ring -> ( L ` 0 ) = .0. ) $=
+      ( crg wcel czring crh cghm cc0 cfv wceq zrhrhm rhmghm zring0 ghmid 3syl
+      co ) AFGBHAISGBHAJSGKBLCMABDNHABOHABKCPEQR $.
   $}
 
   ${
@@ -161648,6 +161782,52 @@ $)
     znlidl $p |- ( N e. ZZ -> ( S ` { N } ) e. ( LIdeal ` ZZring ) ) $=
       ( wcel czring crg csn wss cfv clidl zringring snssi zringbas eqid sylancr
       cz rspcl ) BPDEFDBGZPHRAIEJIZDKBPLPESRACMSNQO $.
+
+    znval.u $e |- U = ( ZZring /s ( ZZring ~QG ( S ` { N } ) ) ) $.
+    $( Making a commutative ring as a quotient of ` ZZ ` and ` n ZZ ` .
+       (Contributed by Mario Carneiro, 12-Jun-2015.)  (Revised by AV,
+       13-Jun-2019.) $)
+    zncrng2 $p |- ( N e. ZZ -> U e. CRing ) $=
+      ( cz wcel czring ccrg csn cfv clidl zringcrng znlidl eqid quscrng sylancr
+      ) CFGHIGCJAKZHLKZGBIGMACDNHRBSESOPQ $.
+
+    znval.y $e |- Y = ( Z/nZ ` N ) $.
+    znval.f $e |- F = ( ( ZRHom ` U ) |` W ) $.
+    znval.w $e |- W = if ( N = 0 , ZZ , ( 0 ..^ N ) ) $.
+    ${
+      znval.l $e |- .<_ = ( ( F o. <_ ) o. `' F ) $.
+      $( The value of the ` Z/nZ ` structure.  It is defined as the quotient
+         ring ` ZZ / n ZZ ` , with an "artificial" ordering added.  (In other
+         words, ` Z/nZ ` is a _ring_ with an _order_ , but it is not an
+         _ordered ring_ , which as a term implies that the order is compatible
+         with the ring operations in some way.)  (Contributed by Mario
+         Carneiro, 14-Jun-2015.)  (Revised by Mario Carneiro, 2-May-2016.)
+         (Revised by AV, 13-Jun-2019.) $)
+      znval $p |- ( N e. NN0 -> Y = ( U sSet <. ( le ` ndx ) , .<_ >. ) ) $=
+        ( vz wcel cfv co czring cc0 cvv vn vs vf cn0 czn cnx cple cop csts crsp
+        cv csn cqg cqus czrh wceq cz cfzo cif cres cle ccom csb df-zn zringring
+        ccnv crg a1i wa vex rspex elv snex fvex eqgex mp2an qusex simpr eqtr4di
+        id fveq2d simpl sneqd fveq12d oveq12d sylan9eqr eqid zrhex resex simpll
+        eqeq1d oveq2d ifbieq2d reseq12d coeq1d cnveqd coeq12d csbied cn eqeltri
+        opeq2d ax-mp snexg fvexg sylancr eqeltrid plendxnn syl resexg xrex xpex
+        cxr lerelxr ssexi sylancl cnvexg syl2anc setsex syl3anc fvmptd3 eqtrid
+        cxp coexg ) EUDOZGEUEPBUFUGPZDUHZUIQZJYDUAENRUBNUKZYHUAUKZULZYHUJPZPZUM
+        QZUNQZUBUKZYEUCYOUOPZYISUPZUQSYIURQZUSZUTZUCUKZVAVBZUUAVFZVBZVCZUHZUIQZ
+        VCZVCYGUDUETNUCUAUBVDYIEUPZNRUUHYGVGRVGOZUUIVEVHUUIYHRUPZVIZUBYNUUGYGTY
+        NTOZUULYHTOZYMTOZUUMNVJZUUNYLTOUUOUUPYJYKTTYKTONTYHVKVLYIUAVJVMVNYLYHTT
+        VOVPYMYHTTVQVPVHUULYOYNUPZVIZYOBUUFYFUIUUQUULYOYNBUUQVTUULYNRREULZAPZUM
+        QZUNQZBUULYHRYMUVAUNUUIUUKVRZUULYHRYLUUTUMUVCUULYJUUSYKAUULYKRUJPZAUULY
+        HRUJUVCWAHVSUULYIEUUIUUKWBWCWDWEWEIVSWFZUURUUEDYEUURUCYTUUDDTYTTOUURYPY
+        SYPTOUBYOYPTYPWGWHVLWIVHUURUUAYTUPZVIZUUDCVAVBZCVFZVBZDUVGUUBUVHUUCUVIU
+        VGUUACVAUVFUURUUAYTCUVFVTUURYTBUOPZFUTZCUURYPUVKYSFUURYOBUOUVEWAUURYSES
+        UPZUQSEURQZUSFUURYQUVMYRUVNUQUURYIESUUIUUKUUQWJZWKUURYIESURUVOWLWMLVSWN
+        KVSWFZWOUVGUUACUVPWPWQMVSWRXAWEWRWRYDVTYDBTOZYEWSOZDTOYGTOYDBUVBTIYDUUJ
+        UVATOZUVBTOVEYDUUJUUTTOZUVSVEYDATOUUSTOUVTAUVDTHUUJUVDTOVEVGRVKXBWTEUDX
+        CUUSATTXDXEUUTRVGTVOXEUVARVGTVQXEXFZUVRYDXGVHYDDUVJTMYDUVHTOZUVITOZUVJT
+        OYDCTOZVATOUWBYDCUVLTKYDUVKTOZUVLTOYDUVQUWEUWABUVKTUVKWGWHXHUVKFTXIXHXF
+        ZVAXLXLYBXLXLXJXJXKXMXNCVATTYCXOYDUWDUWCUWFCTXPXHUVHUVITTYCXQXFYEDBTTWS
+        XRXSXTYA $.
+    $}
   $}
 
 
