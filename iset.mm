@@ -161828,6 +161828,25 @@ $)
         ZVAXLXLYBXLXLXJXJXKXMXNCVATTYCXOYDUWDUWCUWFCTXPXHUVHUVITTYCXQXFYEDBTTWS
         XRXSXTYA $.
     $}
+
+    znle.l $e |- .<_ = ( le ` Y ) $.
+    $( The value of the ` Z/nZ ` structure.  It is defined as the quotient ring
+       ` ZZ / n ZZ ` , with an "artificial" ordering added.  (In other words,
+       ` Z/nZ ` is a _ring_ with an _order_ , but it is not an _ordered ring_ ,
+       which as a term implies that the order is compatible with the ring
+       operations in some way.)  (Contributed by Mario Carneiro, 14-Jun-2015.)
+       (Revised by AV, 13-Jun-2019.) $)
+    znle $p |- ( N e. NN0 -> .<_ = ( ( F o. <_ ) o. `' F ) ) $=
+      ( wcel cple cfv cle cvv czring crg cn0 cnx ccom ccnv cop csts eqid fveq2d
+      co znval wceq a1i csn cqus zringring crsp rspex ax-mp eqeltri snexg fvexg
+      cqg sylancr eqgex qusex eqeltrid czrh cres zrhex resexg 3syl cxr cxp xrex
+      xpex lerelxr ssexi coexg sylancl cnvexg syl2anc pleslid setsslid 3eqtr4d
+      syl ) EUANZGOPZBUBOPCQUCZCUDZUCZUEUFUIZOPZDWJWFGWKOABCWJEFGHIJKLWJUGUJUHD
+      WGUKWFMULWFBRNZWJRNZWJWLUKWFBSSEUMZAPZVBUIZUNUIZRIWFSTNZWQRNZWRRNUOWFWSWP
+      RNZWTUOWFARNWORNXAASUPPZRHWSXBRNUOTSUQURUSEUAUTWOARRVAVCWPSTRVDVCWQSTRVEV
+      CVFZWFWHRNZWIRNZWNWFCRNZQRNXDWFCBVGPZFVHZRKWFWMXGRNXHRNXCBXGRXGUGVIXGFRVJ
+      VKVFZQVLVLVMVLVLVNVNVOVPVQCQRRVRVSWFXFXEXICRVTWEWHWIRRVRWARWJORBWBWCWAWD
+      $.
   $}
 
 
