@@ -161910,6 +161910,20 @@ $)
       cple necomi znbaslemnn ) ABHCDEFGIHJHKZLMUBNOPQJSKUBRTUA $.
   $}
 
+  ${
+    znbas.s $e |- S = ( RSpan ` ZZring ) $.
+    znbas.y $e |- Y = ( Z/nZ ` N ) $.
+    znbas.r $e |- R = ( ZZring ~QG ( S ` { N } ) ) $.
+    $( The base set of ` Z/nZ ` structure.  (Contributed by Mario Carneiro,
+       15-Jun-2015.)  (Revised by AV, 13-Jun-2019.) $)
+    znbas $p |- ( N e. NN0 -> ( ZZ /. R ) = ( Base ` Y ) ) $=
+      ( cn0 wcel cz czring cqus co cbs cfv cvv crg a1i zringring sylancr qusbas
+      cqs eqidd wceq zringbas csn crsp rspex ax-mp eqeltri snexg fvexg eqeltrid
+      cqg eqgex oveq2i znbas2 eqtrd ) CHIZJAUBKALMZNODNOUSAKUTJPQUSUTUCJKNOUDUS
+      UERUSAKCUFZBOZUNMZPGUSKQIZVBPIZVCPISUSBPIVAPIVEBKUGOZPEVDVFPISQKUHUIUJCHU
+      KVABPPULTVBKQPUOTUMVDUSSRUABUTCDEAVCKLGUPFUQUR $.
+  $}
+
 
 $(
 ###############################################################################
