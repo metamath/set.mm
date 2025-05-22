@@ -161924,6 +161924,19 @@ $)
       KVABPPULTVBKQPUOTUMVDUSSRUABUTCDEAVCKLGUPFUQUR $.
   $}
 
+  ${
+    $d x y N $.  $d x y Y $.
+    zncrng.y $e |- Y = ( Z/nZ ` N ) $.
+    $( ` Z/nZ ` is a commutative ring.  (Contributed by Mario Carneiro,
+       15-Jun-2015.) $)
+    zncrng $p |- ( N e. NN0 -> Y e. CRing ) $=
+      ( vx vy cn0 wcel czring csn crsp cfv cqg co cqus ccrg cplusg oveqdr cmulr
+      eqid cv cz nn0z zncrng2 syl cbs eqidd znbas2 znadd znmul crngpropd mpbid
+      wa ) AFGZHHAIHJKZKLMNMZOGZBOGUMAUAGUPAUBUNUOAUNSZUOSZUCUDUMDEUOUEKZUOBUMU
+      SUFUNUOABUQURCUGUMDTUSGETUSGULZDEUOPKBPKUNUOABUQURCUHQUMUTDEUORKBRKUNUOAB
+      UQURCUIQUJUK $.
+  $}
+
 
 $(
 ###############################################################################
