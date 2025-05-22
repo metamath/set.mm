@@ -161894,6 +161894,13 @@ $)
     znbas2 $p |- ( N e. NN0 -> ( Base ` U ) = ( Base ` Y ) ) $=
       ( cbs baseid basendxnn cnx cple cfv plendxnbasendx necomi znbaslemnn ) AB
       HCDEFGIJKLMKHMNOP $.
+
+    $( The additive structure of ` Z/nZ ` is the same as the quotient ring it
+       is based on.  (Contributed by Mario Carneiro, 15-Jun-2015.)  (Revised by
+       AV, 13-Jun-2019.)  (Revised by AV, 3-Nov-2024.) $)
+    znadd $p |- ( N e. NN0 -> ( +g ` U ) = ( +g ` Y ) ) $=
+      ( cplusg plusgid plusgndxnn cnx cple plendxnplusgndx necomi znbaslemnn
+      cfv ) ABHCDEFGIJKLPKHPMNO $.
   $}
 
 
