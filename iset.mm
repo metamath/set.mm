@@ -161901,6 +161901,13 @@ $)
     znadd $p |- ( N e. NN0 -> ( +g ` U ) = ( +g ` Y ) ) $=
       ( cplusg plusgid plusgndxnn cnx cple plendxnplusgndx necomi znbaslemnn
       cfv ) ABHCDEFGIJKLPKHPMNO $.
+
+    $( The multiplicative structure of ` Z/nZ ` is the same as the quotient
+       ring it is based on.  (Contributed by Mario Carneiro, 15-Jun-2015.)
+       (Revised by AV, 13-Jun-2019.)  (Revised by AV, 3-Nov-2024.) $)
+    znmul $p |- ( N e. NN0 -> ( .r ` U ) = ( .r ` Y ) ) $=
+      ( cmulr mulridx cnx cfv cslot wceq cn wcel mulrslid simpri plendxnmulrndx
+      cple necomi znbaslemnn ) ABHCDEFGIHJHKZLMUBNOPQJSKUBRTUA $.
   $}
 
 
