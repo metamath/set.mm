@@ -140609,6 +140609,28 @@ $)
       EWMVHVLZYBVJTURYDVKXIXKWGULXPXOVKVMVTXBWSXJGEWGFWOUGVNWAVOVPVQVRWBVS $.
   $}
 
+  ${
+    $d N m u x $.  $d P m u x $.  $d m ph u x $.
+    4sqlemafi.n $e |- ( ph -> N e. NN ) $.
+    4sqlemafi.p $e |- ( ph -> P e. NN ) $.
+    4sqlemafi.a $e |- A =
+      { u | E. m e. ( 0 ... N ) u = ( ( m ^ 2 ) mod P ) } $.
+    $( Lemma for 4sq . ` A ` is finite.  (Contributed by Jim Kingdon,
+       24-May-2025.) $)
+    4sqlemafi $p |- ( ph -> A e. Fin ) $=
+      ( vx cv co wceq cc0 cfn wcel wdc cz syl2anc wa cexp cmo cfz wrex cab cfzo
+      c2 wss wral 0zd nnzd fzofig df-rex abbii simprr cn elfzelz ad2antrl zsqcl
+      wex syl adantr zmodfzo eqeltrd ex exlimdv abssdv eqsstrid elfzoelz adantl
+      ad2antlr ad2antrr zmodcld nn0zd zdceq exfzdc vex eqeq1 rexbidv elab dcbii
+      sylibr ralrimiva ssfidc syl3anc eqeltrid ) ACBKZEKZUGUALZDUBLZMZENFUCLZUD
+      ZBUEZOIANDUFLZOPZWNWOUHJKZWNPZQZJWOUIWNOPANRPDRPWPAUJADHUKNDULSAWNWHWLPZW
+      KTZEUTZBUEWOWMXBBWKEWLUMUNAXBBWOAXAWGWOPZEAXAXCAXATZWGWJWOAWTWKUOXDWIRPZD
+      UPPZWJWOPXDWHRPZXEWTXGAWKWHNFUQZURWHUSZVAAXFXAHVBWIDVCSVDVEVFVGVHAWSJWOAW
+      QWOPZTZWQWJMZEWLUDZQWSXKXLENFXKUJAFRPXJAFGUKVBXKWTTZWQRPZWJRPXLQXJXOAWTWQ
+      NDVIVKXNWJXNWIDXNXGXEWTXGXKXHVJXIVAAXFXJWTHVLVMVNWQWJVOSVPWRXMWMXMBWQJVQW
+      GWQMWKXLEWLWGWQWJVRVSVTWAWBWCJWOWNWDWEWF $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
