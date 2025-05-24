@@ -4548,7 +4548,7 @@ this implies excluded middle</TD>
 <TR>
   <TD>pwfi</TD>
   <TD><I>none</I></TD>
-  <TD>The set.mm proof uses domfi and other theorems we don't have</TD>
+  <TD>Implies excluded middle per ~ pw1fin</TD>
 </TR>
 
 <TR>
@@ -12098,18 +12098,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>mulgghm2</td>
-  <td><i>none</i></td>
-  <td>seems provable once GrpHom is defined</td>
-</tr>
-
-<tr>
-  <td>mulgrhm , mulgrhm2</td>
-  <td><i>none</i></td>
-  <td>seem provable once more ~ df-rhm related theorems are proved</td>
-</tr>
-
-<tr>
   <td>df-chr</td>
   <td><i>none</i></td>
   <td>presumably possible once we have defined od (order of an
@@ -12118,27 +12106,15 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>zrhval</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses dfrhm2 and excluded middle</td>
+  <td>~ zrhvalg</td>
+  <td>adds set existence condition</td>
 </tr>
 
 <tr>
-  <td>zrhval2</td>
+  <td>zrhpropd</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses zrhval and mulgrhm2</td>
-</tr>
-
-<tr>
-  <td>zrhmulg</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses zrhval2</td>
-</tr>
-
-<tr>
-  <td>zrhrhmb , zrhrhm , zrh1 , zrh0 , zrhpropd</td>
-  <td><i>none</i></td>
-  <td>the set.mm proofs depend on various theorems
-  we do not have</td>
+  <td>the set.mm proof uses rhmpropd and also will require
+  attention to set existence for ` K ` and ` L `</td>
 </tr>
 
 <tr>
@@ -12177,21 +12153,6 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>although this should be provable (perhaps with
   a set existence condition on ` G ` ), it is lightly
   used in set.mm</td>
-</tr>
-
-<tr>
-  <td>zncrng2</td>
-  <td><i>none</i></td>
-  <td>provable if we have quscrng</td>
-</tr>
-
-<tr>
-  <td>znval</td>
-  <td><i>none</i></td>
-  <td>Probably provable. Theorems such as ~ eqgex ,
-  ~ lspex , ~ rspex , and ~ lerelxr may be useful in
-  intuitionizing the set.mm proof but others like
-  qusring and zrhrhm are likely to be needed as well.</td>
 </tr>
 
 <tr>
