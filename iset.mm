@@ -140629,6 +140629,30 @@ $)
       QWOPZTZWQWJMZEWLUDZQWSXKXLENFXKUJAFRPXJAFGUKVBXKWTTZWQRPZWJRPXLQXJXOAWTWQ
       NDVIVKXNWJXNWIDXNXGXEWTXGXKXHVJXIVAAXFXJWTHVLVMVNWQWJVOSVPWRXMWMXMBWQJVQW
       GWQMWKXLEWLWGWQWJVRVSVTWAWBWCJWOWNWDWEWF $.
+
+    4sqlemffi.f $e |- F = ( v e. A |-> ( ( P - 1 ) - v ) ) $.
+
+    ${
+      $d A v x $.  $d F x $.  $d N m u x $.  $d P m u x $.  $d P v x $.
+      $d m ph u x $.  $d ph v x $.
+      $( Lemma for 4sq . ` ran F ` is finite.  (Contributed by Jim Kingdon,
+         24-May-2025.) $)
+      4sqlemffi $p |- ( ph -> ran F e. Fin ) $=
+        ( vx cfn wcel cmin co cz wa adantr wrel ccnv wfun crn c1 funmpt2 funrel
+        cv ax-mp wf wf1 wral wceq wi nnzd peano2zm syl c2 cexp cmo cc0 cfz wrex
+        simpr elfzelz adantl zsqcl cn zmodcld nn0zd eqeltrd rexlimdva2 eqsstrid
+        cab abssdv sselda zsubcld ralrimiva cc zcnd ad2antrr adantrr wss simprr
+        sseldd ex ralrimivva oveq2 f1mpt sylanbrc df-f1 sylib simprd cdm dmmptd
+        subcand 4sqlemafi wb fundmfibi sylibr funrnfi mp3an2i ) GUAZAGUBUCZGNOZ
+        GUDNOGUCZXCBDEUEPQZBUHZPQZGLUFZGUGUIADRGUJZXDADRGUKZXKXDSAXIROZBDULXIXG
+        MUHZPQZUMZXHXNUMZUNZMDULBDULXLAXMBDAXHDOZSXGXHAXGROZXSAEROXTAEJUOEUPUQZ
+        TADRXHADCUHZFUHZURUSQZEUTQZUMZFVAHVBQZVCZCVNRKAYHCRAYFYBROFYGAYCYGOZSZY
+        FSYBYERYJYFVDYJYEROYFYJYEYJYDEYJYCROZYDROYIYKAYCVAHVEVFYCVGUQAEVHOYIJTV
+        IVJTVKVLVOVMZVPZVQZVRAXRBMDDAXSXNDOZSZSZXPXQYQXPSZXGXHXNAXGVSOYPXPAXGYA
+        VTWAYRXHYQXHROZXPAXSYSYOYMWBTVTYQXNVSOXPYQXNYQDRXNADRWCYPYLTAXSYOWDWEVT
+        TYQXPVDWPWFWGBMDRXIXOGLXHXNXGPWHWIWJDRGWKWLWMAGWNZNOZXEAYTDNABGDXIRLYNW
+        OACDEFHIJKWQVKXFXEUUAWRXJGWSUIWTGXAXB $.
+    $}
   $}
 
 
