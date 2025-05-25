@@ -140665,6 +140665,24 @@ $)
         TYQXPVDWPWFWGBMDRXIXOGLXHXNXGPWHWIWJDRGWKWLWMAGWNZNOZXEAYTDNABGDXIRLYNW
         OACDEFHIJKWQVKXFXEUUAWRXJGWSUIWTGXAXB $.
     $}
+
+    ${
+      $d A v x $.  $d F x $.  $d N m u x $.  $d P m u x $.  $d m ph u x $.
+      $d ph v x $.
+      $( Lemma for 4sq . ` A i^i ran F ` is finite.  (Contributed by Jim
+         Kingdon, 24-May-2025.) $)
+      4sqleminfi $p |- ( ph -> ( A i^i ran F ) e. Fin ) $=
+        ( vx cfn wcel cv wdc wa co cz crn wral 4sqlemafi c1 cmin wceq wrex cexp
+        cin c2 cmo cc0 cfz cab simpr elfzelz ad2antlr zsqcl cn ad2antrr zmodcld
+        eqeltrd rexlimdva2 abssdv eqsstrid sselda nnzd peano2zm adantlr zsubcld
+        syl nn0zd zdceq syl2an2r ralrimiva finexdc cvv elrnmpt elv dcbii sylibr
+        wb infidc syl2anc ) ADNOZMPZGUAZOZQZMDUBDWGUINOACDEFHIJKUCZAWIMDAWFDOZR
+        ZWFEUDUESZBPZUESZUFZBDUGZQZWIAWEWKWPQZBDUBWRWJWLWSBDWLWFTOWNDOZWOTOWSAD
+        TWFADCPZFPZUJUHSZEUKSZUFZFULHUMSZUGZCUNTKAXGCTAXEXATOFXFAXBXFOZRZXERZXA
+        XDTXIXEUOXJXDXJXCEXJXBTOZXCTOXHXKAXEXBULHUPUQXBURVKAEUSOZXHXEJUTVAVLVBV
+        CVDVEZVFWLWTRZWMWNXNETOWMTOXNEAXLWKWTJUTVGEVHVKAWTWNTOWKADTWNXMVFVIVJWF
+        WOVMVNVOWPBDVPVNWHWQWHWQWBMBDWOWFGVQLVRVSVTWAVOMDWGWCWD $.
+    $}
   $}
 
 
