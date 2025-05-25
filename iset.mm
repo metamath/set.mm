@@ -67915,6 +67915,18 @@ $)
   $}
 
   ${
+    $d A x $.  $d B x $.
+    $( The intersection of two sets is finite if one of them is and the other
+       is decidable.  (Contributed by Jim Kingdon, 24-May-2025.) $)
+    infidc $p |- ( ( A e. Fin /\ A. x e. A DECID x e. B )
+        -> ( A i^i B ) e. Fin ) $=
+      ( cfn wcel cv wdc wral wa cin wss simpl inss1 a1i elin baibr dcbid biimpd
+      wi adantl ralimdva imp ssfidc syl3anc ) BDEZAFZCEZGZABHZIZUEBCJZBKZUFUKEZ
+      GZABHZUKDEUEUILULUJBCMNUEUIUOUEUHUNABUFBEZUHUNSUEUPUHUNUPUGUMUMUPUGUFBCOP
+      QRTUAUBABUKUCUD $.
+  $}
+
+  ${
     $d A x $.  $d V x $.
     $( An ordinal which is a singleton is ` { (/) } ` .  (Contributed by Jim
        Kingdon, 19-Oct-2021.) $)
