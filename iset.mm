@@ -84719,7 +84719,7 @@ $)
   $( ` 0 ` is an identity element for real addition.  Axiom for real and
      complex numbers, justified by Theorem ~ ax0id .
 
-     Proofs should normally use ~ addid1 instead.  (New usage is discouraged.)
+     Proofs should normally use ~ addrid instead.  (New usage is discouraged.)
      (Contributed by Jim Kingdon, 16-Jan-2020.) $)
   ax-0id $a |- ( A e. CC -> ( A + 0 ) = A ) $.
   $( $j restatement 'ax-0id' of 'ax0id'; $)
@@ -86023,13 +86023,13 @@ $)
 
   $( ` 0 ` is an additive identity.  (Contributed by Jim Kingdon,
      16-Jan-2020.) $)
-  addid1 $p |- ( A e. CC -> ( A + 0 ) = A ) $=
+  addrid $p |- ( A e. CC -> ( A + 0 ) = A ) $=
     ( ax-0id ) AB $.
 
   $( ` 0 ` is a left identity for addition.  (Contributed by Scott Fenton,
      3-Jan-2013.) $)
   addlid $p |- ( A e. CC -> ( 0 + A ) = A ) $=
-    ( cc wcel cc0 caddc co wceq 0cn addcom mpan2 addid1 eqtr3d ) ABCZADEFZDAEFZ
+    ( cc wcel cc0 caddc co wceq 0cn addcom mpan2 addrid eqtr3d ) ABCZADEFZDAEFZ
     AMDBCNOGHADIJAKL $.
 
   ${
@@ -86052,14 +86052,14 @@ $)
   $( ` 0 ` is its own additive identity.  (Contributed by Scott Fenton,
      3-Jan-2013.) $)
   00id $p |- ( 0 + 0 ) = 0 $=
-    ( cc0 cc wcel caddc co wceq 0cn addid1 ax-mp ) ABCAADEAFGAHI $.
+    ( cc0 cc wcel caddc co wceq 0cn addrid ax-mp ) ABCAADEAFGAHI $.
 
   ${
     mul.1 $e |- A e. CC $.
     $( ` 0 ` is an additive identity.  (Contributed by NM, 23-Nov-1994.)
        (Revised by Scott Fenton, 3-Jan-2013.) $)
     addid1i $p |- ( A + 0 ) = A $=
-      ( cc wcel cc0 caddc co wceq addid1 ax-mp ) ACDAEFGAHBAIJ $.
+      ( cc wcel cc0 caddc co wceq addrid ax-mp ) ACDAEFGAHBAIJ $.
 
     $( ` 0 ` is a left identity for addition.  (Contributed by NM,
        3-Jan-2013.) $)
@@ -86104,7 +86104,7 @@ $)
     $( ` 0 ` is an additive identity.  (Contributed by Mario Carneiro,
        27-May-2016.) $)
     addid1d $p |- ( ph -> ( A + 0 ) = A ) $=
-      ( cc wcel cc0 caddc co wceq addid1 syl ) ABDEBFGHBICBJK $.
+      ( cc wcel cc0 caddc co wceq addrid syl ) ABDEBFGHBICBJK $.
 
     $( ` 0 ` is a left identity for addition.  (Contributed by Mario Carneiro,
        27-May-2016.) $)
@@ -86418,7 +86418,7 @@ $)
        (Revised by Scott Fenton, 3-Jan-2013.) $)
     addcan2 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
                     ( ( A + C ) = ( B + C ) <-> A = B ) ) $=
-      ( vx cc wcel w3a cv caddc co cc0 wb wa oveq1 addassd oveq2d addid1 3eqtrd
+      ( vx cc wcel w3a cv caddc co cc0 wb wa oveq1 addassd oveq2d addrid 3eqtrd
       wceq syl wrex cnegex 3ad2ant3 simpl1 simpl3 simprl simprr simpl2 imbitrid
       eqeq12d impbid1 rexlimddv ) AEFZBEFZCEFZGZCDHZIJZKSZACIJZBCIJZSZABSZLDEUO
       UMUSDEUAUNDCUBUCUPUQEFZUSMZMZVBVCVBUTUQIJZVAUQIJZSVFVCUTVAUQINVFVGAVHBVFV
@@ -86750,13 +86750,13 @@ $)
   $( Subtraction of a number from itself.  (Contributed by NM, 8-Oct-1999.)
      (Revised by Mario Carneiro, 27-May-2016.) $)
   subid $p |- ( A e. CC -> ( A - A ) = 0 ) $=
-    ( cc wcel cc0 caddc co cmin addid1 oveq1d wceq 0cn pncan2 mpan2 eqtr3d ) AB
+    ( cc wcel cc0 caddc co cmin addrid oveq1d wceq 0cn pncan2 mpan2 eqtr3d ) AB
     CZADEFZAGFZAAGFDOPAAGAHIODBCQDJKADLMN $.
 
   $( Identity law for subtraction.  (Contributed by NM, 9-May-2004.)  (Revised
      by Mario Carneiro, 27-May-2016.) $)
   subid1 $p |- ( A e. CC -> ( A - 0 ) = A ) $=
-    ( cc wcel cc0 caddc co cmin addid1 oveq1d wceq 0cn pncan mpan2 eqtr3d ) ABC
+    ( cc wcel cc0 caddc co cmin addrid oveq1d wceq 0cn pncan mpan2 eqtr3d ) ABC
     ZADEFZDGFZADGFAOPADGAHIODBCQAJKADLMN $.
 
   $( Cancellation law for subtraction.  (Contributed by NM, 8-Feb-2005.) $)
@@ -87802,7 +87802,7 @@ $)
      identity of the complex numbers.  (Contributed by AV, 17-Jan-2021.) $)
   addid0 $p |- ( ( X e. CC /\ Y e. CC ) -> ( ( X + Y ) = X <-> Y = 0 ) ) $=
     ( cc wcel wa caddc co wceq cc0 simpl simpr subaddd eqcom subid adantr eqtrd
-    cmin wi ex biimtrid sylbird oveq2 addid1 sylan9eqr impbid ) ACDZBCDZEZABFGZ
+    cmin wi ex biimtrid sylbird oveq2 addrid sylan9eqr impbid ) ACDZBCDZEZABFGZ
     AHZBIHZUHUJAAQGZBHZUKUHAABUFUGJZUNUFUGKLUFUMUKRUGUMBULHZUFUKULBMUFUOUKUFUOE
     BULIUFUOKUFULIHUOANOPSTOUAUFUKUJRUGUFUKUJUKUFUIAIFGABIAFUBAUCUDSOUE $.
 
@@ -100774,7 +100774,7 @@ $)
     VEWDXRKXOHXPBUPBUOPWDWIWIVFZTZWIXRTWDWIVGYBBVQWIVIVKXRYAWIBFVJVLVMVNVOXNAHB
     QWCWDVPZSXNAHBQYCRLVRVS $.
 
-  $( Extended real version of ~ addid1 .  (Contributed by Mario Carneiro,
+  $( Extended real version of ~ addrid .  (Contributed by Mario Carneiro,
      20-Aug-2015.) $)
   xaddid1 $p |- ( A e. RR* -> ( A +e 0 ) = A ) $=
     ( cxr wcel cr cpnf wceq cmnf w3o cc0 cxad co elxr 0re wne ax-mp mp2an oveq1
@@ -113892,7 +113892,7 @@ $)
        20-Jul-2005.) $)
     shftval3 $p |- ( ( A e. CC /\ B e. CC ) ->
                     ( ( F shift ( A - B ) ) ` A ) = ( F ` B ) ) $=
-      ( cc wcel wa cc0 caddc co cmin cshi cfv 0cn shftval2 mp3an3 addid1 adantr
+      ( cc wcel wa cc0 caddc co cmin cshi cfv 0cn shftval2 mp3an3 addrid adantr
       wceq fveq2d adantl 3eqtr3d ) AEFZBEFZGZAHIJZCABKJLJZMZBHIJZCMZAUGMBCMUCUD
       HEFUHUJSNABHCDOPUEUFAUGUCUFASUDAQRTUEUIBCUDUIBSUCBQUATUB $.
 
@@ -114235,7 +114235,7 @@ $)
   $( The imaginary part of a real number is 0.  (Contributed by NM,
      18-Mar-2005.)  (Revised by Mario Carneiro, 7-Nov-2013.) $)
   reim0 $p |- ( A e. RR -> ( Im ` A ) = 0 ) $=
-    ( cr wcel ci cc0 cmul co caddc cim cfv wceq recn it0e0 oveq2i addid1 eqtrid
+    ( cr wcel ci cc0 cmul co caddc cim cfv wceq recn it0e0 oveq2i addrid eqtrid
     cc syl fveq2d 0re crim mpan2 eqtr3d ) ABCZADEFGZHGZIJZAIJEUDUFAIUDAQCZUFAKA
     LUHUFAEHGAUEEAHMNAOPRSUDEBCUGEKTAEUAUBUC $.
 
@@ -120879,7 +120879,7 @@ $)
           ~~> ( seq M ( + , F ) ` N ) ) $=
         ( caddc cfv wcel cz cc wa cc0 wceq vn vm vz cseq cvv eqid eluzelz seqex
         cuz syl a1i eluzel2 cv cif adantl wn wi iftrue eqeltrd iffalse eqeltrdi
-        ex adantr 0cn wo exmiddc mpjaod fvmpt2 syl2anc serf ffvelcdmd co addid1
+        ex adantr 0cn wo exmiddc mpjaod fvmpt2 syl2anc serf ffvelcdmd co addrid
         wdc simpr c1 cfz elfzuz cdif sseld fznuz syl6 imp eldifd fveqeq2 eldifi
         con2d eldifn eqtrd vtoclga sylan2 adantlr fveq2 wral ralrimiva ad2antrr
         eleq1d rspcdva addcl seq3id2 eqcomd climconst ) AGMEFUDZNZUAXCGUEGUINZX
@@ -121005,7 +121005,7 @@ $)
         ad2antlr jca iftrued nfv nfcsb1v nfcv nfif nfel1 eleq1 csbeq1a ifbieq1d
         eleq1d eqeltrrd weq breq1 fveq2 csbeq1d fvmptg eqtrd wi cmpt sselda a1i
         eleqtrdi eluzfz2 ccnv f1ocnvfv2 f1ocnv leisorel syl122anc eqbrtrrd eluz
-        fzssuz elfzuzb ssrdv fsum3cvg addlid addid1 addcl iftrue iffalse simpll
+        fzssuz elfzuzb ssrdv fsum3cvg addlid addrid addcl iftrue iffalse simpll
         ex eleqtrrd ssneld eluzdc fmptd ffvelcdm syl2an elnnuz biimpri w3a 3jca
         eluzle elfz2 wral eleq2d sselid ralrimiva zdcle ifcldadc fveqeq2 eldifi
         rspc elfzelz eldifn fvmpt2 vtoclga simpl anbi2d imbi12d vtoclg1f csbeq1
