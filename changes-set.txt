@@ -85,6 +85,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+26-May-25 eqabbw    eqabw
+26-May-25 eqabb     eqab
 26-May-25 eqab      eqabim
 20-May-25 syl6bi    biimtrdi
 20-May-25 ply1bas   [same]      Removed unneeded hypothesis
