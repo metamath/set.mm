@@ -21376,7 +21376,7 @@ $)
     $d x A $.
     $( Equality of a class variable and a class abstraction.  (Contributed by
        NM, 20-Aug-1993.) $)
-    eqabcb $p |- ( { x | ph } = A <-> A. x ( ph <-> x e. A ) ) $=
+    eqabc $p |- ( { x | ph } = A <-> A. x ( ph <-> x e. A ) ) $=
       ( cab wceq cv wcel wb wal eqab eqcom bicom albii 3bitr4i ) CABDZEBFCGZAH
       ZBIOCEAPHZBIABCJOCKRQBAPLMN $.
   $}
@@ -21471,7 +21471,7 @@ $)
     $( Deduction from a wff to a class abstraction.  (Contributed by NM,
        9-Jul-1994.) $)
     eqabcdv $p |- ( ph -> { x | ps } = A ) $=
-      ( cv wcel wb wal cab wceq alrimiv eqabcb sylibr ) ABCFDGHZCIBCJDKAOCELBCD
+      ( cv wcel wb wal cab wceq alrimiv eqabc sylibr ) ABCFDGHZCIBCJDKAOCELBCD
       MN $.
   $}
 
@@ -33128,7 +33128,7 @@ $)
        abstraction is a singleton.  (Contributed by Mario Carneiro,
        14-Nov-2016.) $)
     euabsn2 $p |- ( E! x ph <-> E. y { x | ph } = { y } ) $=
-      ( weu cv wceq wb wal wex cab csn df-eu wcel eqabcb elsn albii bitri exbii
+      ( weu cv wceq wb wal wex cab csn df-eu wcel eqabc elsn albii bitri exbii
       bibi2i bitr4i ) ABDABEZCEZFZGZBHZCIABJUBKZFZCIABCLUGUECUGAUAUFMZGZBHUEABU
       FNUIUDBUHUCABUBOSPQRT $.
 
@@ -42961,7 +42961,7 @@ $)
     phidisjnn $p |- ( ( A i^i Nn ) = (/) -> Phi A = A ) $=
       ( vx vy cnnc cin c0 wceq cv wcel c1c cplc cif wrex wb wal cphi wa syl6bbr
       weq wn wral disj biimpi r19.21bi iffalse syl eqeq2d equcom risset alrimiv
-      rexbidva cab df-phi eqeq1i eqabcb bitri sylibr ) ADEFGZBHZCHZDIZUTJKZUTLZ
+      rexbidva cab df-phi eqeq1i eqabc bitri sylibr ) ADEFGZBHZCHZDIZUTJKZUTLZ
       GZCAMZUSAIZNZBOZAPZAGZURVGBURVECBSZCAMVFURVDVKCAURUTAIQZVDBCSVKVLVCUTUSVL
       VATZVCUTGURVMCAURVMCAUACADUBUCUDVAVBUTUEUFUGCBUHRUKCUSAUIRUJVJVEBULZAGVHV
       IVNACBAUMUNVEBAUOUPUQ $.
@@ -46449,7 +46449,7 @@ $)
     $( An empty domain implies an empty range.  (Contributed by set.mm
        contributors, 21-May-1998.) $)
     dm0rn0 $p |- ( dom A = (/) <-> ran A = (/) ) $=
-      ( vx vy cv wbr wex cab c0 wceq wcel wb wal wn alnex noel nbn albii eqabcb
+      ( vx vy cv wbr wex cab c0 wceq wcel wb wal wn alnex noel nbn albii eqabc
       3bitr4i eqeq1i cdm crn excom xchbinx bitr4i 3bitr3i dfdm2 dfrn2 ) BDZCDZA
       EZCFZBGZHIZUKBFZCGZHIZAUAZHIAUBZHIULUIHJZKZBLZUOUJHJZKZCLZUNUQULMZBLZUOMZ
       CLZVBVEVGUOCFZMVIVGULBFVJULBNUKBCUCUDUOCNUEVFVABUTULUIOPQVHVDCVCUOUJOPQUF
@@ -50889,7 +50889,7 @@ $)
                   A. y e. B E. x e. A y = ( F ` x ) ) ) $=
       ( wfo wf crn wceq wa cv cfv wrex wral dffo2 cab wb wcel wal wi wfn fnrnfv
       ffn eqeq1d simpr ffvelrn adantr eqeltrd exp31 rexlimdv biantrurd syl6rbbr
-      syl dfbi2 albidv eqabcb df-ral 3bitr4g bitrd pm5.32i bitri ) CDEFCDEGZEHZ
+      syl dfbi2 albidv eqabc df-ral 3bitr4g bitrd pm5.32i bitri ) CDEFCDEGZEHZ
       DIZJVBBKZAKZELZIZACMZBDNZJCDEOVBVDVJVBVDVIBPZDIZVJVBECUAZVDVLQCDEUCVMVCVK
       DABCEUBUDUMVBVIVEDRZQZBSVNVITZBSVLVJVBVOVPBVBVPVIVNTZVPJVOVBVQVPVBVHVNACV
       BVFCRZVHVNVBVRJZVHJVEVGDVSVHUEVSVGDRVHCDVFEUFUGUHUIUJUKVIVNUNULUOVIBDUPVI
