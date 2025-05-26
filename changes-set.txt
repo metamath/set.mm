@@ -79,13 +79,39 @@ proposed  syl5ibrcom imbitrridcom
 proposed  syl6      imtrdi      alternate proposal: syldi
 proposed  syl6com   imtrdicom
 proposed  syl6d     imtrdid
-underway  syl6bi    biimtrdi
 proposed  syl6bir   biimtrrdi
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+20-May-25 syl6bi    biimtrdi
+20-May-25 ply1bas   [same]      Removed unneeded hypothesis
+20-May-25 mhpmulcl  [same]      Removed unneeded hypothesis
+20-May-25 mhppwdeg  [same]      Removed unneeded hypothesis
+20-May-25 mhpaddcl  [same]      Removed unneeded hypothesis
+20-May-25 mhpinvcl  [same]      Removed unneeded hypothesis
+20-May-25 mhpvscacl  [same]     Removed unneeded hypothesis
+18-May-25 rhmmpllem2 rhmpsrlem2 Moved from SN's mathbox to main set.mm
+18-May-25 rhmmpllem1 rhmpsrlem1 Moved from SN's mathbox to main set.mm
+18-May-25 asclply1subcl [same]  Moved from TA's mathbox to main set.mm
+18-May-25 evls1maprhm [same]    Moved from TA's mathbox to main set.mm
+18-May-25 evls1fvcl [same]      Moved from TA's mathbox to main set.mm
+18-May-25 evls1maplmhm [same]   Moved from TA's mathbox to main set.mm
+18-May-25 evls1maprnss [same]   Moved from TA's mathbox to main set.mm
+18-May-25 fvdifsupp [same]      Moved from TA's mathbox to main set.mm
+18-May-25 evls1fpws [same]      Moved from TA's mathbox to main set.mm
+18-May-25 ressply1evl [same]    Moved from TA's mathbox to main set.mm
+18-May-25 evls1addd [same]      Moved from TA's mathbox to main set.mm
+18-May-25 evls1muld [same]      Moved from TA's mathbox to main set.mm
+18-May-25 evls1vsca [same]      Moved from TA's mathbox to main set.mm
+18-May-25 evls1scafv [same]     Moved from TA's mathbox to main set.mm
+18-May-25 evls1expd [same]      Moved from TA's mathbox to main set.mm
+18-May-25 evls1varpwval [same]  Moved from TA's mathbox to main set.mm
+17-May-25 reximddv3 [same]      Moved from GS's mathbox to main set.mm
+15-May-25 rabbieq   [same]      Moved from PM's mathbox to main set.mm
+15-May-25 dmresss   [same]      Moved from GS's mathbox to main set.mm
+11-May-25 rabdif    [same]      Moved from SN's mathbox to main set.mm
 10-May-25 ghmquskerlem1 [same]  Moved from TA's mathbox to main set.mm
 10-May-25 ghmquskerlem2 [same]  Moved from TA's mathbox to main set.mm
 10-May-25 ghmquskerlem3 [same]  Moved from TA's mathbox to main set.mm

@@ -7586,17 +7586,27 @@ $)
       ( wa simpl nsyl ) ABBCEDBCFG $.
   $}
 
+  ${
+    dcand.1 $e |- ( ph -> DECID ps ) $.
+    dcand.2 $e |- ( ph -> DECID ch ) $.
+    $( A conjunction of two decidable propositions is decidable.  (Contributed
+       by Jim Kingdon, 12-Apr-2018.)  (Revised by BJ, 14-Nov-2024.) $)
+    dcand $p |- ( ph -> DECID ( ps /\ ch ) ) $=
+      ( wa wn wo wdc df-dc id intnanrd orim2i sylbi syl intnand sylanbrc sylibr
+      ordir ) ABCFZTGZHZTIABUAHZCUAHZUBABIZUCDUEBBGZHUCBJUFUABUFBCUFKLMNOACIZUD
+      EUGCCGZHUDCJUHUACUHCBUHKPMNOBCUASQTJR $.
+  $}
+
   $( A conjunction of two decidable propositions is decidable.  (Contributed by
      Jim Kingdon, 12-Apr-2018.) $)
   dcan $p |- ( ( DECID ph /\ DECID ps ) -> DECID ( ph /\ ps ) ) $=
-    ( wa wn wo simpl intnanrd orim2i simpr intnand olcd jaoi df-dc anbi12i andi
-    wdc andir orbi1i 3bitri 3imtr4i ) ABCZADZBCZEZAUBEZBDZCZEZUAUADZEZAPZBPZCZU
-    APUDUJUGUCUIUAUCABUBBFGHUGUIUAUGBAUEUFIJKLUMUEBUFEZCUEBCZUGEUHUKUEULUNAMBMN
-    UEBUFOUOUDUGAUBBQRSUAMT $.
+    ( wdc wa simpl simpr dcand ) ACZBCZDABHIEHIFG $.
 
   $( A conjunction of two decidable propositions is decidable, expressed in a
-     curried form as compared to ~ dcan .  (Contributed by Jim Kingdon,
-     12-Apr-2018.) $)
+     curried form as compared to ~ dcan .  This is deprecated; it's trivial to
+     recreate with ~ ex , but it's here in case someone is using this older
+     form.  (Contributed by Jim Kingdon, 12-Apr-2018.)
+     (New usage is discouraged.) $)
   dcan2 $p |- ( DECID ph -> ( DECID ps -> DECID ( ph /\ ps ) ) ) $=
     ( wdc wa dcan ex ) ACBCABDCABEF $.
 
@@ -7611,8 +7621,8 @@ $)
   $( An equivalence of two decidable propositions is decidable.  (Contributed
      by Jim Kingdon, 12-Apr-2018.) $)
   dcbi $p |- ( DECID ph -> ( DECID ps -> DECID ( ph <-> ps ) ) ) $=
-    ( wdc wi wa wb dcim com12 dcan2 syl6c dfbi2 dcbii imbitrrdi ) ACZBCZABDZBAD
-    ZEZCZABFZCNOPCQCZSABGONUABAGHPQIJTRABKLM $.
+    ( wdc wi wa wb dcim com12 dcan ex syl6c dfbi2 dcbii imbitrrdi ) ACZBCZABDZB
+    ADZEZCZABFZCOPQCZRCZTABGPOUCBAGHUBUCTQRIJKUASABLMN $.
 
   $( Express conjunction in terms of implication.  The forward direction,
      ~ annimim , is valid for all propositions, but as an equivalence, it
@@ -7620,27 +7630,26 @@ $)
      25-Apr-2018.) $)
   annimdc $p |- ( DECID ph -> ( DECID ps ->
       ( ( ph /\ -. ps ) <-> -. ( ph -> ps ) ) ) ) $=
-    ( wdc wn wa wi wb imandc adantl dcim imp dcn dcan2 syl5 con2bidc sylc mpbid
-    ex ) ACZBCZABDZEZABFZDGZSTEZUCUBDGZUDTUFSABHIUEUCCZUBCZUFUDGSTUGABJKSTUHTUA
-    CSUHBLAUAMNKUCUBOPQR $.
+    ( wdc wn wa wi wb imandc adantl dcim imp dcan sylan2 con2bidc sylc mpbid ex
+    dcn ) ACZBCZABDZEZABFZDGZSTEZUCUBDGZUDTUFSABHIUEUCCZUBCZUFUDGSTUGABJKTSUACU
+    HBRAUALMUCUBNOPQ $.
 
   $( Theorem *4.55 of [WhiteheadRussell] p. 120, for decidable propositions.
      (Contributed by Jim Kingdon, 2-May-2018.) $)
   pm4.55dc $p |- ( DECID ph -> ( DECID ps ->
       ( -. ( -. ph /\ ps ) <-> ( ph \/ -. ps ) ) ) ) $=
-    ( wdc wn wa wo wb pm4.54dc imp dcn anim2i syl wi dcan2 jca con2bidc biimprd
-    dcor mpd bicomd ex ) ACZBCZADZBEZDZABDZFZGUBUCEZUHUFUIUEUHDGZUHUFGZUBUCUJAB
-    HIUIUKUJUIUHCZUECZEUKUJGZUIULUMUIUBUGCZEULUCUOUBBJKUBUOULAUGRILUBUCUMUBUDCU
-    CUMMAJUDBNLIOULUMUNUHUEPILQSTUA $.
+    ( wdc wn wa wo wb pm4.54dc imp dcor impel dcan sylan con2bidc sylc 3bitr2rd
+    dcn mpbird ex ) ACZBCZADZBEZDZABDZFZGTUAEZUFUDUFUDUGUFUDGZUCUFDGZTUAUIABHIU
+    GUFCZUCCZUHUIGTUECUJUAAUEJBQKTUBCUAUKAQUBBLMUFUCNORZULULPS $.
 
   $( Disjunction in terms of conjunction (De Morgan's law), for decidable
      propositions.  Compare Theorem *4.57 of [WhiteheadRussell] p. 120.
      (Contributed by Jim Kingdon, 13-Dec-2021.) $)
   orandc $p |- ( ( DECID ph /\ DECID ps ) ->
       ( ( ph \/ ps ) <-> -. ( -. ph /\ -. ps ) ) ) $=
-    ( wdc wa wn wo pm4.56 dcn adantr adantl dcan2 sylc dcor imp con2bidc mpbii
-    wb ) ACZBCZDZAEZBEZDZABFZEQZUDUCEQZABGTUCCZUDCZUEUFQTUACZUBCZUGRUISAHISUJRB
-    HJUAUBKLRSUHABMNUCUDOLP $.
+    ( wdc wa wn wo wb pm4.56 dcn dcan syl2an dcor imp con2bidc sylc mpbii ) ACZ
+    BCZDZAEZBEZDZABFZEGZUCUBEGZABHSUBCZUCCZUDUEGQTCUACUFRAIBITUAJKQRUGABLMUBUCN
+    OP $.
 
   ${
     mpbiran.1 $e |- ps $.
@@ -7776,8 +7785,8 @@ $)
      21-Apr-2018.) $)
   anordc $p |- ( DECID ph -> ( DECID ps ->
       ( ( ph /\ ps ) <-> -. ( -. ph \/ -. ps ) ) ) ) $=
-    ( wdc wa wn wo wb dcan2 ianordc bicomd a1d con2biddc syld ) ACZBCABDZCZOAEB
-    EFZEGABHNQONQOEZGPNRQABIJKLM $.
+    ( wdc wa wn wo wb dcan ex ianordc 3bitr2rd a1d con2biddc syld ) ACZBCZABDZC
+    ZQAEBEFZEGOPRABHIOSQOSQEZGROTSTSABJZUAUAKLMN $.
 
   $( Theorem *3.11 of [WhiteheadRussell] p. 111, but for decidable
      propositions.  The converse, ~ pm3.1 , holds for all propositions, not
@@ -10807,10 +10816,10 @@ $)
     ( ( ph /\ ( ps \/_ ch ) ) <->
       ( ( ph /\ ps ) \/_ ( ph /\ ch ) ) ) ) ) ) $=
     ( wdc wxo wa wb wn dcbi imp wi annimdc pm5.32 notbii bitrdi sylan2 xornbidc
-    adantl anbi2d dcan2 adantrr adantrl sylc 3bitr4d exp32 ) ADZBDZCDZABCEZFZAB
-    FZACFZEZGUFUGUHFZFZABCGZHZFZUKULGZHZUJUMUNUFUPDZURUTGUGUHVABCIJUFVAFURAUPKZ
-    HZUTUFVAURVCGAUPLJVBUSABCMNOPUOUIUQAUNUIUQGZUFUGUHVDBCQJRSUOUKDZULDZUMUTGUF
-    UGVEUHUFUGVEABTJUAUFUHVFUGUFUHVFACTJUBUKULQUCUDUE $.
+    adantl anbi2d dcan adantrr adantrl sylc 3bitr4d exp32 ) ADZBDZCDZABCEZFZABF
+    ZACFZEZGUFUGUHFZFZABCGZHZFZUKULGZHZUJUMUNUFUPDZURUTGUGUHVABCIJUFVAFURAUPKZH
+    ZUTUFVAURVCGAUPLJVBUSABCMNOPUOUIUQAUNUIUQGZUFUGUHVDBCQJRSUOUKDZULDZUMUTGUFU
+    GVEUHABTUAUFUHVFUGACTUBUKULQUCUDUE $.
 
   $( Conjunction distributes over exclusive-or.  (Contributed by Mario Carneiro
      and Jim Kingdon, 7-Oct-2018.) $)
@@ -15186,6 +15195,16 @@ $)
        (Contributed by NM, 10-Aug-2004.) $)
     19.23vv $p |- ( A. x A. y ( ph -> ps ) <-> ( E. x E. y ph -> ps ) ) $=
       ( wi wal wex 19.23v albii bitri ) ABEDFZCFADGZBEZCFLCGBEKMCABDHILBCHJ $.
+  $}
+
+  ${
+    $d x ph $.
+    sbbidv.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Deduction substituting both sides of a biconditional, with ` ph ` and
+       ` x ` disjoint.  See also ~ sbbid .  (Contributed by Wolf Lammen,
+       6-May-2023.)  (Proof shortened by Steven Nguyen, 6-Jul-2023.) $)
+    sbbidv $p |- ( ph -> ( [ t / x ] ps <-> [ t / x ] ch ) ) $=
+      ( wb wal wsb alrimiv spsbbi syl ) ABCGZDHBDEICDEIGAMDFJBCDEKL $.
   $}
 
   ${
@@ -19981,6 +20000,23 @@ $)
        (Contributed by NM, 14-Sep-2003.) $)
     sbab $p |- ( x = y -> A = { z | [ y / x ] z e. A } ) $=
       ( weq cv wcel wsb sbequ12 abbi2dv ) ABECFDGZABHCDKABIJ $.
+  $}
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Elementary properties of class abstractions
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  ${
+    $d x y A $.  $d ph x y $.  $d ps y $.
+    eqabdv.1 $e |- ( ph -> ( x e. A <-> ps ) ) $.
+    $( Deduction from a wff to a class abstraction.  (Contributed by NM,
+       9-Jul-1994.)  (Revised by Wolf Lammen, 6-May-2023.) $)
+    eqabdv $p |- ( ph -> A = { x | ps } ) $=
+      ( vy cab cv wcel wsb sbbidv clelsb1 bicomi df-clab 3bitr4g eqrdv ) AFDBCG
+      ZACHDIZCFJZBCFJFHZDIZTQIARBCFEKSUACFDLMBFCNOP $.
   $}
 
 
@@ -56219,6 +56255,21 @@ $)
   $}
 
   ${
+    $d D a b $.  $d X a b $.  $d Y a b $.  $d ph a b $.
+    elovmpod.o $e |- O = ( a e. A , b e. B |-> C ) $.
+    elovmpod.x $e |- ( ph -> X e. A ) $.
+    elovmpod.y $e |- ( ph -> Y e. B ) $.
+    elovmpod.d $e |- ( ph -> D e. V ) $.
+    elovmpod.c $e |- ( ( a = X /\ b = Y ) -> C = D ) $.
+    $( Utility lemma for two-parameter classes.  (Contributed by Stefan O'Rear,
+       21-Jan-2015.)  Variant of ~ elovmpo in deduction form.  (Revised by AV,
+       20-Apr-2025.) $)
+    elovmpod $p |- ( ph -> ( E e. ( X O Y ) <-> E e. D ) ) $=
+      ( co wceq cv cmpo a1i wa adantl ovmpod eleq2d ) AIJGREFAKLIJBCDEGHGKLBCDU
+      ASAMUBKTISLTJSUCDESAQUDNOPUEUF $.
+  $}
+
+  ${
     $d A a b $.  $d B a b $.  $d E a b $.  $d F a b $.  $d X a b $.
     $d Y a b $.
     elovmpo.d $e |- D = ( a e. A , b e. B |-> C ) $.
@@ -68463,15 +68514,15 @@ $)
     $( Decidability of a family of propositions indexed by a finite set.
        (Contributed by Jim Kingdon, 30-Sep-2024.) $)
     dcfi $p |- ( ( A e. Fin /\ A. x e. A DECID ph ) -> DECID A. x e. A ph ) $=
-      ( vw vy vz cfn wcel wdc wral wa cv csn wceq raleq dcbid sylc dcbii sylibr
-      c0 cun wn wo ral0 orci df-dc mpbir a1i cdif simpr simplrr eldifad simp-4r
-      wss wsbc nfsbc1v nfdc sbceq1a wb cvv ralsnsg elv dcan2 ralunb findcard2sd
-      rspc ex simpl ) CGHZAIZBCJZKZABDLZJZIABTJZIZABELZJZIZABVQFLZMZUAZJZIZABCJ
-      ZIDEFCVMTNVNVOABVMTOPVMVQNVNVRABVMVQOPVMWBNVNWCABVMWBOPVMCNVNWEABVMCOPVPV
-      LVPVOVOUBZUCVOWFABUDUEVOUFUGUHVLVQGHZKZVQCUNZVTCVQUIHZKZKZVSWDWLVSKZVRABW
-      AJZKZIZWDWMVSWNIZWPWLVSUJWMABVTUOZIZWQWMVTCHVKWSWMVTCVQWHWIWJVSUKULVIVKWG
-      WKVSUMVJWSBVTCWRBABVTUPUQBLVTNAWRABVTURPVFQWNWRWNWRUSFABVTUTVAVBRSVRWNVCQ
-      WCWOABVQWAVDRSVGVIVKVHVE $.
+      ( vw vy vz cfn wcel wdc wral wa cv csn cun wceq raleq dcbid dcbii sylibr
+      c0 wn wo ral0 orci df-dc mpbir a1i wss cdif simpr simplrr eldifad simp-4r
+      wsbc nfsbc1v nfdc sbceq1a rspc wb cvv ralsns elv dcand ralunb findcard2sd
+      sylc ex simpl ) CGHZAIZBCJZKZABDLZJZIABTJZIZABELZJZIZABVQFLZMZNZJZIZABCJZ
+      IDEFCVMTOVNVOABVMTPQVMVQOVNVRABVMVQPQVMWBOVNWCABVMWBPQVMCOVNWEABVMCPQVPVL
+      VPVOVOUAZUBVOWFABUCUDVOUEUFUGVLVQGHZKZVQCUHZVTCVQUIHZKZKZVSWDWLVSKZVRABWA
+      JZKZIWDWMVRWNWLVSUJWMABVTUNZIZWNIWMVTCHVKWQWMVTCVQWHWIWJVSUKULVIVKWGWKVSU
+      MVJWQBVTCWPBABVTUOUPBLVTOAWPABVTUQQURVFWNWPWNWPUSFABVTUTVAVBRSVCWCWOABVQW
+      AVDRSVGVIVKVHVE $.
   $}
 
 
@@ -95869,15 +95920,14 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
   $( A nonnegative integer is neither 0 nor 1 if and only if it is greater than
      or equal to 2.  (Contributed by Alexander van der Vekens, 17-Jan-2018.) $)
   nn0n0n1ge2b $p |- ( N e. NN0 -> ( ( N =/= 0 /\ N =/= 1 ) <-> 2 <_ N ) ) $=
-    ( wcel cc0 wne c1 wa c2 wbr wdc wn wi wceq zdceq sylancl dcned sylc syl clt
-    cz wb cn0 nn0n0n1ge2 3expib nn0z 0z 1z dcan2 wo ianordc nnedc orbi12d bitrd
-    cle 2pos breq1 mpbiri a1d 1lt2 jaoi impcom 2z zltnle adantr mpbid ex sylbid
-    condc impbid ) AUABZACDZAEDZFZGAUMHZVIVJVKVMAUBUCVIVLIZVLJZVMJZKVMVLKVIVJIZ
-    VKIVNVIACVIASBZCSBACLZIZAUDZUEACMNZOZVIAEVIVRESBAELZIZWAUFAEMNZOVJVKUGPVIVO
-    VSWDUHZVPVIVOVJJZVKJZUHZWGVIVQVOWJTWCVJVKUIQVIWHVSWIWDVIVTWHVSTWBACUJQVIWEW
-    IWDTWFAEUJQUKULVIWGVPVIWGFAGRHZVPWGVIWKVSVIWKKWDVSWKVIVSWKCGRHUNACGRUOUPUQW
-    DWKVIWDWKEGRHURAEGRUOUPUQUSUTVIWKVPTZWGVIVRGSBWLWAVAAGVBNVCVDVEVFVLVMVGPVH
-    $.
+    ( wcel cc0 wne c1 wa c2 wbr wdc wn wi cz wceq zdceq sylancl dcned wo wb syl
+    clt cn0 nn0n0n1ge2 3expib nn0z 0z 1z dcand ianordc nnedc orbi12d bitrd 2pos
+    cle breq1 mpbiri a1d 1lt2 jaoi impcom 2z zltnle adantr mpbid ex sylbid sylc
+    condc impbid ) AUABZACDZAEDZFZGAUMHZVIVJVKVMAUBUCVIVLIVLJZVMJZKVMVLKVIVJVKV
+    IACVIALBZCLBACMZIZAUDZUEACNOZPZVIAEVIVPELBAEMZIZVSUFAENOZPUGVIVNVQWBQZVOVIV
+    NVJJZVKJZQZWEVIVJIVNWHRWAVJVKUHSVIWFVQWGWBVIVRWFVQRVTACUISVIWCWGWBRWDAEUISU
+    JUKVIWEVOVIWEFAGTHZVOWEVIWIVQVIWIKWBVQWIVIVQWICGTHULACGTUNUOUPWBWIVIWBWIEGT
+    HUQAEGTUNUOUPURUSVIWIVORZWEVIVPGLBWJVSUTAGVAOVBVCVDVEVLVMVGVFVH $.
 
   $( A nonnegative integer less than ` 1 ` is ` 0 ` .  (Contributed by Paul
      Chapman, 22-Jun-2011.) $)
@@ -131706,8 +131756,8 @@ $)
   $( Decidablity lemma used in various proofs related to ` gcd ` .
      (Contributed by Jim Kingdon, 12-Dec-2021.) $)
   gcdmndc $p |- ( ( M e. ZZ /\ N e. ZZ ) -> DECID ( M = 0 /\ N = 0 ) ) $=
-    ( cz wcel wa cc0 wceq wdc 0z zdceq mpan2 adantr adantl dcan2 sylc ) ACDZBCD
-    ZEAFGZHZBFGZHZRTEHPSQPFCDZSIAFJKLQUAPQUBUAIBFJKMRTNO $.
+    ( cz wcel cc0 wceq wdc wa 0z zdceq mpan2 dcan syl2an ) ACDZAEFZGZBEFZGZOQHG
+    BCDZNECDZPIAEJKSTRIBEJKOQLM $.
 
   ${
     $d K n x y z $.  $d M n y $.  $d n ph y $.  $d ps x y z $.
@@ -132046,18 +132096,17 @@ $)
         A. y e. RR ( y < x -> E. z e. { n e. ZZ | ( n || X /\ n || Y ) }
           y < z ) ) ) $=
       ( vj cz wcel wa cc0 wceq wn cdvds wbr c1 wdc cn wral wrex cv 1zzd anbi12d
-      breq1 1dvds anim12i adantr cuz elnnuz biimpri simpll dvdsdc syl2an2 dcan2
-      cfv simplr sylc adantlr wne simplll dvdsbnd nnuz rexeqi sylib id intnanrd
-      ralimi reximi syl sylancom simpllr intnand wo simpr wb 0z sylancl ianordc
-      zdceq mpbid df-ne orbi12i sylibr mpjaodan zsupcllemex ) EHIZFHIZJZEKLZFKL
-      ZJMZJZDUAZENOZWMFNOZJZPENOZPFNOZJZABCGDPWLUBWMPLWNWQWOWRWMPENUDWMPFNUDUCW
-      HWSWKWFWQWGWREUEFUEUFUGWHWMPUHUOZIZWPQZWKWHXAJWNQZWOQZXBXAWMRIZWHWFXCXEXA
-      WMUIUJZWFWGXAUKWMEULUMXAXEWHWGXDXFWFWGXAUPWMFULUMWNWOUNUQURWLEKUSZWPMZDGU
-      AUHUOZSZGWTTZFKUSZWLXGWFXKWFWGWKXGUTWFXGJZWNMZDXISZGWTTZXKXMXOGRTXPEDGVAX
-      OGRWTVBVCVDXOXJGWTXNXHDXIXNWNWOXNVEVFVGVHVIVJWLXLWGXKWFWGWKXLVKWGXLJZWOMZ
-      DXISZGWTTZXKXQXSGRTXTFDGVAXSGRWTVBVCVDXSXJGWTXRXHDXIXRWOWNXRVEVLVGVHVIVJW
-      LWIMZWJMZVMZXGXLVMWLWKYCWHWKVNWLWIQZWKYCVOWLWFKHIYDWFWGWKUKVPEKVSVQWIWJVR
-      VIVTXGYAXLYBEKWAFKWAWBWCWDWE $.
+      breq1 1dvds anim12i adantr cuz elnnuz biimpri simpll dvdsdc syl2an2 dcand
+      cfv simplr adantlr wne dvdsbnd rexeqi sylib id intnanrd ralimi reximi syl
+      nnuz ad4ant14 intnand ad4ant24 wo simpr wb 0z zdceq sylancl ianordc mpbid
+      df-ne orbi12i sylibr mpjaodan zsupcllemex ) EHIZFHIZJZEKLZFKLZJMZJZDUAZEN
+      OZWKFNOZJZPENOZPFNOZJZABCGDPWJUBWKPLWLWOWMWPWKPENUDWKPFNUDUCWFWQWIWDWOWEW
+      PEUEFUEUFUGWFWKPUHUOZIZWNQWIWFWSJWLWMWSWKRIZWFWDWLQWTWSWKUIUJZWDWEWSUKWKE
+      ULUMWSWTWFWEWMQXAWDWEWSUPWKFULUMUNUQWJEKURZWNMZDGUAUHUOZSZGWRTZFKURZWDXBX
+      FWEWIWDXBJZWLMZDXDSZGWRTZXFXHXJGRTXKEDGUSXJGRWRVGUTVAXJXEGWRXIXCDXDXIWLWM
+      XIVBVCVDVEVFVHWEXGXFWDWIWEXGJZWMMZDXDSZGWRTZXFXLXNGRTXOFDGUSXNGRWRVGUTVAX
+      NXEGWRXMXCDXDXMWMWLXMVBVIVDVEVFVJWJWGMZWHMZVKZXBXGVKWJWIXRWFWIVLWJWGQZWIX
+      RVMWJWDKHIXSWDWEWIUKVNEKVOVPWGWHVQVFVRXBXPXGXQEKVSFKVSVTWAWBWC $.
   $}
 
   ${
@@ -132068,17 +132117,17 @@ $)
         sup ( { n e. ZZ | ( n || X /\ n || Y ) } , RR , < ) e. NN ) $=
       ( vj cz wcel wa cc0 wceq wn cv cdvds wbr c1 cn wdc wral wrex nnuz syl clt
       crab csup cuz cfv 1zzd breq1 anbi12d anim12i adantr elnnuz biimpri simpll
-      1dvds dvdsdc syl2an2 simplr dcan2 sylc adantlr wne simplll dvdsbnd rexeqi
-      cr sylib id intnanrd ralimi sylancom simpllr intnand wo simpr wb 0z zdceq
-      reximi sylancl ianordc mpbid orbi12i sylibr mpjaodan zsupcl eleqtrrdi
-      df-ne ) BEFZCEFZGZBHIZCHIZGJZGZAKZBLMZWOCLMZGZAEUBVEUAUCNUDUEZOWNWRNBLMZN
-      CLMZGZDANWNUFWONIWPWTWQXAWONBLUGWONCLUGUHWJXBWMWHWTWIXABUNCUNUIUJWJWOWSFZ
-      WRPZWMWJXCGWPPZWQPZXDXCWOOFZWJWHXEXGXCWOUKULZWHWIXCUMWOBUOUPXCXGWJWIXFXHW
-      HWIXCUQWOCUOUPWPWQURUSUTWNBHVAZWRJZADKUDUEZQZDWSRZCHVAZWNXIWHXMWHWIWMXIVB
-      WHXIGZWPJZAXKQZDWSRZXMXOXQDORXRBADVCXQDOWSSVDVFXQXLDWSXPXJAXKXPWPWQXPVGVH
-      VIVRTVJWNXNWIXMWHWIWMXNVKWIXNGZWQJZAXKQZDWSRZXMXSYADORYBCADVCYADOWSSVDVFY
-      AXLDWSXTXJAXKXTWQWPXTVGVLVIVRTVJWNWKJZWLJZVMZXIXNVMWNWMYEWJWMVNWNWKPZWMYE
-      VOWNWHHEFYFWHWIWMUMVPBHVQVSWKWLVTTWAXIYCXNYDBHWGCHWGWBWCWDWESWF $.
+      cr 1dvds dvdsdc syl2an2 simplr dcand adantlr wne rexeqi sylib id intnanrd
+      dvdsbnd ralimi reximi ad4ant14 intnand ad4ant24 wo simpr wb zdceq sylancl
+      0z ianordc mpbid df-ne orbi12i sylibr mpjaodan zsupcl eleqtrrdi ) BEFZCEF
+      ZGZBHIZCHIZGJZGZAKZBLMZWMCLMZGZAEUBUNUAUCNUDUEZOWLWPNBLMZNCLMZGZDANWLUFWM
+      NIWNWRWOWSWMNBLUGWMNCLUGUHWHWTWKWFWRWGWSBUOCUOUIUJWHWMWQFZWPPWKWHXAGWNWOX
+      AWMOFZWHWFWNPXBXAWMUKULZWFWGXAUMWMBUPUQXAXBWHWGWOPXCWFWGXAURWMCUPUQUSUTWL
+      BHVAZWPJZADKUDUEZQZDWQRZCHVAZWFXDXHWGWKWFXDGZWNJZAXFQZDWQRZXHXJXLDORXMBAD
+      VFXLDOWQSVBVCXLXGDWQXKXEAXFXKWNWOXKVDVEVGVHTVIWGXIXHWFWKWGXIGZWOJZAXFQZDW
+      QRZXHXNXPDORXQCADVFXPDOWQSVBVCXPXGDWQXOXEAXFXOWOWNXOVDVJVGVHTVKWLWIJZWJJZ
+      VLZXDXIVLWLWKXTWHWKVMWLWIPZWKXTVNWLWFHEFYAWFWGWKUMVQBHVOVPWIWJVRTVSXDXRXI
+      XSBHVTCHVTWAWBWCWDSWE $.
   $}
 
   ${
@@ -132354,27 +132403,26 @@ $)
     wdc w3a cle gcddvds 3adant1 simpld simp1 1zzd cn0 gcdcl nn0zd simp2 dvds2ln
     simp3 syl23anc mpd mulid2d oveq2d breqtrd zmulcld zaddcld dvdslegcd syl3anc
     wn jca ex mpid znegcld gcdcld mulneg1d oveq12d mulcld negcld addcomd negidd
-    eqtr3d oveq1d addassd addid2d 3eqtr3d anim12d nn0red letri3d sylibrd wo 0zd
-    cneg wb zdceq dcan2 sylc orandc mul01d adantr eqeq1d pm5.32da oveq12 adantl
-    simpr syl6bir imp eqtr4d sylbid jaod sylbird dcn syl exmiddc mpjaod ) ADEZB
-    DEZCDEZUAZBCFGZBABHGZCIGZFGZBCXNIGZFGXLBJKZXOJKZLZVCZXRCJKZLZVCZLZXMXPKZYEV
-    CZXLYEXMXPUBMZXPXMUBMZLYFXLYAYHYDYIXLYAXMBNMZXMXONMZLZYHXLYJYKXLYJXMCNMZXJX
-    KYJYMLZXIBCUCUDZUEXLXMXNOCHGZIGZXONXLYNXMYQNMZYOXLXIODEZXMDEZXJXKYNYRPXIXJX
-    KUFZXLUGZXLXMXJXKXMUHEXIBCUIUDZUJZXIXJXKUKZXIXJXKUMZAOXMBCULUNUOXLYPCXNIXLC
-    XLCUUFQZUPUQURVDXLYTXJXODEZYAYLYHPZPUUDUUEXLXNCXLABUUAUUEUSUUFUTZYTXJUUHUAY
-    AUUIXMBXOVAVEVBVFXLYDXPBNMZXPCNMZLZYIXLUUKUULXLUUKXPXONMZXLXJUUHUUKUUNLZUUE
-    UUJBXOUCRZUEXLXPAWFZBHGZOXOHGZIGZCNXLUUOXPUUTNMZUUPXLUUQDEYSXPDEZXJUUHUUOUV
-    APXLAUUAVGUUBXLXPXLBXOUUEUUJVHZUJZUUEUUJUUQOXPBXOULUNUOXLUUTXNWFZXOIGZCXLUU
-    RUVEUUSXOIXLABXLAUUAQZXLBUUEQZVIXLXOXLXOUUJQUPVJXLUVEXNIGZCIGJCIGZUVFCXLUVI
-    JCIXLXNUVEIGUVIJXLXNUVEXLABUVGUVHVKZXLXNUVKVLZVMXLXNUVKVNVOVPXLUVEXNCUVLUVK
-    UUGVQXLCUUGVRZVSSURVDXLUVBXJXKYDUUMYIPZPUVDUUEUUFUVBXJXKUAYDUVNXPBCVAVEVBVF
-    VTXLXMXPXLXMUUCWAXLXPUVCWAWBWCXLYGXTYCWDZYFXLXTTZYCTZUVOYGWGXLXRTZXSTZUVPXL
-    XJJDEZUVRUUEXLWEZBJWHRZXLUUHUVTUVSUUJUWAXOJWHRXRXSWIWJZXLUVRYBTZUVQUWBXLXKU
-    VTUWDUUFUWACJWHRXRYBWIWJZXTYCWKRXLXTYFYCXLXTYCYFXLXRXSYBXLXRLZXOCJUWFXOUVJC
-    UWFXNJCIUWFXNAJHGZJUWFBJAHXLXRWRUQXLUWGJKXRXLAUVGWLWMSVPXLUVJCKXRUVMWMSWNWO
-    ZXLYCYFXLYCLXMJJFGZXPYCXMUWIKXLBJCJFWPWQXLYCXPUWIKZXLYCXTUWJUWHBJXOJFWPWSWT
-    XAVEZXBUWKXCXDXLYETZYEYGWDXLYATZYDTZUWLXLUVPUWMUWCXTXEXFXLUVQUWNUWEYCXEXFYA
-    YDWIWJYEXGXFXHXLXOXQBFXLXNCUVKUUGVMUQS $.
+    cneg eqtr3d oveq1d addassd addid2d 3eqtr3d syld3an1 anim12d letri3d sylibrd
+    nn0red wo 0zd zdceq dcand orandc simpr mul01d adantr eqeq1d pm5.32da oveq12
+    wb adantl syl6bir imp eqtr4d sylbid jaod sylbird dcn syl exmiddc mpjaod ) A
+    DEZBDEZCDEZUAZBCFGZBABHGZCIGZFGZBCXNIGZFGXLBJKZXOJKZLZVCZXRCJKZLZVCZLZXMXPK
+    ZYEVCZXLYEXMXPUBMZXPXMUBMZLYFXLYAYHYDYIXLYAXMBNMZXMXONMZLZYHXLYJYKXLYJXMCNM
+    ZXJXKYJYMLZXIBCUCUDZUEXLXMXNOCHGZIGZXONXLYNXMYQNMZYOXLXIODEZXMDEZXJXKYNYRPX
+    IXJXKUFZXLUGZXLXMXJXKXMUHEXIBCUIUDZUJZXIXJXKUKZXIXJXKUMZAOXMBCULUNUOXLYPCXN
+    IXLCXLCUUFQZUPUQURVDXLYTXJXODEZYAYLYHPZPUUDUUEXLXNCXLABUUAUUEUSUUFUTZYTXJUU
+    HUAYAUUIXMBXOVAVEVBVFXLYDXPBNMZXPCNMZLZYIXLUUKUULXLUUKXPXONMZXLXJUUHUUKUUNL
+    ZUUEUUJBXOUCRZUEXLXPAVOZBHGZOXOHGZIGZCNXLUUOXPUUTNMZUUPXLUUQDEYSXPDEZXJUUHU
+    UOUVAPXLAUUAVGUUBXLXPXLBXOUUEUUJVHZUJZUUEUUJUUQOXPBXOULUNUOXLUUTXNVOZXOIGZC
+    XLUURUVEUUSXOIXLABXLAUUAQZXLBUUEQZVIXLXOXLXOUUJQUPVJXLUVEXNIGZCIGJCIGZUVFCX
+    LUVIJCIXLXNUVEIGUVIJXLXNUVEXLABUVGUVHVKZXLXNUVKVLZVMXLXNUVKVNVPVQXLUVEXNCUV
+    LUVKUUGVRXLCUUGVSZVTSURVDUVBXJXIXKYDUUMYIPZPUVDUVBXJXKUAYDUVNXPBCVAVEWAVFWB
+    XLXMXPXLXMUUCWEXLXPUVCWEWCWDXLYGXTYCWFZYFXLXTTZYCTZUVOYGWQXLXRXSXLXJJDEZXRT
+    UUEXLWGZBJWHRZXLUUHUVRXSTUUJUVSXOJWHRWIZXLXRYBUVTXLXKUVRYBTUUFUVSCJWHRWIZXT
+    YCWJRXLXTYFYCXLXTYCYFXLXRXSYBXLXRLZXOCJUWCXOUVJCUWCXNJCIUWCXNAJHGZJUWCBJAHX
+    LXRWKUQXLUWDJKXRXLAUVGWLWMSVQXLUVJCKXRUVMWMSWNWOZXLYCYFXLYCLXMJJFGZXPYCXMUW
+    FKXLBJCJFWPWRXLYCXPUWFKZXLYCXTUWGUWEBJXOJFWPWSWTXAVEZXBUWHXCXDXLYETYEYGWFXL
+    YAYDXLUVPYATUWAXTXEXFXLUVQYDTUWBYCXEXFWIYEXGXFXHXLXOXQBFXLXNCUVKUUGVMUQS $.
 
   $( The GCD of two numbers is the same as the GCD of the left and their sum.
      (Contributed by Scott Fenton, 20-Apr-2014.) $)
@@ -133481,18 +133529,18 @@ $)
        17-Aug-2001.)  (Revised by Jim Kingdon, 25-Oct-2024.) $)
     nnwosdc $p |- ( ( E. x e. NN ph /\ A. x e. NN DECID ph ) ->
                   E. x e. NN ( ph /\ A. y e. NN ( ps -> x <_ y ) ) ) $=
-      ( vw vj cn wrex wdc wral wa cv wcel wex wi sylibr nfcv wal df-rex wss w3a
-      crab cle wbr rabn0m ssrab2 biantrur sylbb1 wsb wn wo animorrl df-dc nfs1v
-      nfdc weq sbequ12 dcbid rspc impcom dcan2 sylc elrabf dcbii anim12i df-3an
-      nfrab1 nnwofdc rabid df-ral elrab imbi1i impexp bitri albii anbi12i exbii
-      ralrimiva anbi2i anass bitr3i bitr4i 3bitri sylib syl ) ACHIZAJZCHKZLZACH
-      UCZHUAZFMWKNFOZGMZWKNZJZGHKZUBZABCMZDMZUDUEZPZDHKZLZCHIZWJWLWMLZWQLWRWGXF
-      WIWQWMWGXFACFHUFWLWMACHUGUHUIWIWPGHWIWNHNZLZXGACGUJZLZJZWPXHXGJZXIJZXKXHX
-      GXGUKZULXLWIXGXNUMXGUNQXGWIXMWHXMCWNHXICACGUOZUPCGUQAXIACGURZUSUTVAXGXIVB
-      VCWOXJAXICWNHCWNRCHRXOXPVDVEQVSVFWLWMWQVGQWRXADWKKZCWKIZXECDFWKGACHVHDWKR
-      VIXRWSWKNZXQLZCOWSHNZALZWTHNZXBPZDSZLZCOZXEXQCWKTXTYFCXSYBXQYEACHVJXQWTWK
-      NZXAPZDSYEXADWKVKYIYDDYIYCBLZXAPYDYHYJXAABCWTHEVLVMYCBXAVNVOVPVOVQVRYGYAX
-      DLZCOXEYFYKCYFYBXCLYKXCYEYBXBDHVKVTYAAXCWAWBVRXDCHTWCWDWEWF $.
+      ( vw vj cn wrex wdc wral wa cv wcel wex wi sylibr weq nfcv wal wss rabn0m
+      w3a cle wbr ssrab2 biantrur sylbb1 wsb wn wo animorrl df-dc nfs1v sbequ12
+      crab nfdc dcbid impcom dcand elrabf dcbii ralrimiva anim12i df-3an nfrab1
+      rspc nnwofdc df-rex rabid df-ral 3bitr2d elrab imbi1i bitri albii anbi12i
+      impexp exbii anbi2i anass bitr3i bitr4i 3bitri sylib syl ) ACHIZAJZCHKZLZ
+      ACHUPZHUAZFMWKNFOZGMZWKNZJZGHKZUCZABCMZDMZUDUEZPZDHKZLZCHIZWJWLWMLZWQLWRW
+      GXFWIWQWMWGXFACFHUBWLWMACHUFUGUHWIWPGHWIWNHNZLZXGACGUIZLZJWPXHXGXIXHXGXGU
+      JZUKXGJWIXGXKULXGUMQXGWIXIJZWHXLCWNHXICACGUNZUQCGRAXIACGUOZURVGUSUTWOXJAX
+      ICWNHCWNSCHSXMXNVAVBQVCVDWLWMWQVEQWRXADWKKZCWKIZXECDFWKGACHVFDWKSVHXPWSWK
+      NZXOLZCOWSHNZALZWTHNZXBPZDTZLZCOZXEXOCWKVIXRYDCXQXTXOYCACHVJXOWTWKNZXAPZD
+      TYCXADWKVKYGYBDYGYABLZXAPYBYFYHXAABCWTHCDRABABEEEVLVMVNYABXAVRVOVPVOVQVSY
+      EXSXDLZCOXEYDYICYDXTXCLYIXCYCXTXBDHVKVTXSAXCWAWBVSXDCHVIWCWDWEWF $.
   $}
 
 
@@ -133942,26 +133990,25 @@ $)
     lcmval $p |- ( ( M e. ZZ /\ N e. ZZ ) -> ( M lcm N ) =
         if ( ( M = 0 \/ N = 0 ) , 0 , inf ( { n e. NN | ( M || n /\ N || n ) }
         , RR , < ) ) ) $=
-      ( vx vy cz wcel wa cv cc0 wceq cdvds wbr cn crab cr clt cfv c1 syl2anc wo
+      ( vx vy cz wcel wa cv cc0 wceq wo cdvds wbr cn cr clt cfv c1 syl2anc crab
       cinf cif clcm cvv cmpo df-lcm eqeq1 orbi1d breq1 rabbidv infeq1d ifbieq2d
       a1i anbi1d orbi2d anbi2d sylan9eq adantl simpl simpr c0ex wn cmul co cabs
-      1zzd cuz nnuz rabeq ax-mp dvdsmul1 adantr wb simpll simplr dvdsabsb mpbid
-      zmulcld dvdsmul2 zcnd absmuld ioran simpld neqned nnabscl simprd nnmulcld
-      wne sylib eqeltrd anbi12d elrab3 syl mpbir2and cfz elfzelz zdvdsdc syl2an
-      breq2 wdc dcan2 sylc infssuzcldc elexd lcmmndc ifcldadc ovmpod ) BFGZCFGZ
-      HZDEBCFFDIZJKZEIZJKZUAZJXLAIZLMZXNXQLMZHZANOZPQUBZUCZBJKZCJKZUAZJBXQLMZCX
-      QLMZHZANOZPQUBZUCZUDUEUDDEFFYCUFKXKDEAUGUNXLBKZXNCKZHYCYLKXKYMYNYCYDXOUAZ
-      JYGXSHZANOZPQUBZUCYLYMXPYOYBYRJYMXMYDXOXLBJUHUIYMPYAYQQYMXTYPANYMXRYGXSXL
-      BXQLUJUOUKULUMYNYOYFYRYKJYNXOYEYDXNCJUHUPYNPYQYJQYNYPYIANYNXSYHYGXNCXQLUJ
-      UQUKULUMURUSXIXJUTXIXJVAXKYFJYKUEJUEGXKYFHVBUNXKYFVCZHZYKYJYTYIBCVDVEZVFR
-      ZYJASYTVGNSVHRZKYJYIAUUCOKVIYIANUUCVJVKYTUUBYJGZBUUBLMZCUUBLMZYTBUUALMZUU
-      EXKUUGYSBCVLVMYTXIUUAFGZUUGUUEVNXIXJYSVOZYTBCUUIXIXJYSVPZVSZBUUAVQTVRYTCU
-      UALMZUUFXKUULYSBCVTVMYTXJUUHUULUUFVNUUJUUKCUUAVQTVRYTUUBNGUUDUUEUUFHZVNYT
-      UUBBVFRZCVFRZVDVENYTBCYTBUUIWAYTCUUJWAWBYTUUNUUOYTXIBJWIUUNNGUUIYTBJYTYDV
-      CZYEVCZYTYSUUPUUQHXKYSVAYDYEWCWJZWDWEBWFTYTXJCJWIUUONGUUJYTCJYTUUPUUQUURW
-      GWECWFTWHWKYIUUMAUUBNXQUUBKYGUUEYHUUFXQUUBBLWTXQUUBCLWTWLWMWNWOYTXQSUUBWP
-      VEGZHYGXAZYHXAZYIXAYTXIXQFGZUUTUUSUUIXQSUUBWQZBXQWRWSYTXJUVBUVAUUSUUJUVCC
-      XQWRWSYGYHXBXCXDXEBCXFXGXH $.
+      1zzd cuz nnuz rabeqi dvdsmul1 adantr simpll simplr zmulcld dvdsabsb mpbid
+      wb dvdsmul2 zcnd absmuld wne ioran simpld neneqad nnabscl simprd nnmulcld
+      sylib eqeltrd anbi12d elrab3 syl mpbir2and cfz wdc elfzelz zdvdsdc syl2an
+      breq2 dcand infssuzcldc elexd lcmmndc ifcldadc ovmpod ) BFGZCFGZHZDEBCFFD
+      IZJKZEIZJKZLZJXJAIZMNZXLXOMNZHZAOUAZPQUBZUCZBJKZCJKZLZJBXOMNZCXOMNZHZAOUA
+      ZPQUBZUCZUDUEUDDEFFYAUFKXIDEAUGUNXJBKZXLCKZHYAYJKXIYKYLYAYBXMLZJYEXQHZAOU
+      AZPQUBZUCYJYKXNYMXTYPJYKXKYBXMXJBJUHUIYKPXSYOQYKXRYNAOYKXPYEXQXJBXOMUJUOU
+      KULUMYLYMYDYPYIJYLXMYCYBXLCJUHUPYLPYOYHQYLYNYGAOYLXQYFYEXLCXOMUJUQUKULUMU
+      RUSXGXHUTXGXHVAXIYDJYIUEJUEGXIYDHVBUNXIYDVCZHZYIYHYRYGBCVDVEZVFRZYHASYRVG
+      YGAOSVHRVIVJYRYTYHGZBYTMNZCYTMNZYRBYSMNZUUBXIUUDYQBCVKVLYRXGYSFGZUUDUUBVR
+      XGXHYQVMZYRBCUUFXGXHYQVNZVOZBYSVPTVQYRCYSMNZUUCXIUUIYQBCVSVLYRXHUUEUUIUUC
+      VRUUGUUHCYSVPTVQYRYTOGUUAUUBUUCHZVRYRYTBVFRZCVFRZVDVEOYRBCYRBUUFVTYRCUUGV
+      TWAYRUUKUULYRXGBJWBUUKOGUUFYRBJYRYBVCZYCVCZYRYQUUMUUNHXIYQVAYBYCWCWIZWDWE
+      BWFTYRXHCJWBUULOGUUGYRCJYRUUMUUNUUOWGWECWFTWHWJYGUUJAYTOXOYTKYEUUBYFUUCXO
+      YTBMWTXOYTCMWTWKWLWMWNYRXOSYTWOVEGZHYEYFYRXGXOFGZYEWPUUPUUFXOSYTWQZBXOWRW
+      SYRXHUUQYFWPUUPUUGUURCXOWRWSXAXBXCBCXDXEXF $.
   $}
 
   ${
@@ -133996,20 +134043,19 @@ $)
     lcmcllem $p |- ( ( ( M e. ZZ /\ N e. ZZ ) /\ -. ( M = 0 \/ N = 0 ) ) ->
         ( M lcm N ) e. { n e. NN | ( M || n /\ N || n ) } ) $=
       ( cz wcel wa cc0 wceq wn co cdvds wbr cn c1 wne cap zapne syl2anc mpbid
-      wb wo clcm cv crab cr clt cinf lcmn0val cmul cabs cfv 1zzd cuz nnuz rabeq
-      ax-mp simpll simplr zmulcld zcnd ioran biimpi adantl simpld neqned mpbird
-      0zd simprd mulap0d nnabscl dvdsmul1 zmulcl dvdsabsb syldan sylan2 anabss7
-      dvdsmul2 jca breq2 anbi12d elrab sylanbrc cfz wdc simplll elfzelz zdvdsdc
-      adantr simpllr dcan2 sylc infssuzcldc eqeltrd ) BDEZCDEZFZBGHZCGHZUAIZFZB
-      CUBJBAUCZKLZCXAKLZFZAMUDZUEUFUGXEABCUHWTXDBCUIJZUJUKZXEANWTULMNUMUKZHXEXD
-      AXHUDHUNXDAMXHUOUPWTXGMEZBXGKLZCXGKLZFZXGXEEWTXFDEZXFGOZXIWTBCWNWOWSUQZWN
-      WOWSURZUSZWTXFGPLZXNWTBCWTBXOUTWTCXPUTWTBGPLZBGOZWTBGWTWQIZWRIZWSYAYBFZWP
-      WSYCWQWRVAVBVCZVDVEWTWNGDEZXSXTTXOWTVGZBGQRVFWTCGPLZCGOZWTCGWTYAYBYDVHVEW
-      TWOYEYGYHTXPYFCGQRVFVIWTXMYEXRXNTXQYFXFGQRSXFVJRWPXLWSWPXJXKWPBXFKLZXJBCV
-      KWNWOXMYIXJTBCVLZBXFVMVNSWPCXFKLZXKBCVQWNWOYKXKTZWPWOXMYLYJCXFVMVOVPSVRWH
-      XDXLAXGMXAXGHXBXJXCXKXAXGBKVSXAXGCKVSVTWAWBWTXANXGWCJEZFZXBWDZXCWDZXDWDYN
-      WNXADEZYOWNWOWSYMWEYMYQWTXANXGWFVCZBXAWGRYNWOYQYPWNWOWSYMWIYRCXAWGRXBXCWJ
-      WKWLWM $.
+      wb wo clcm cv crab cr clt cinf lcmn0val cmul cabs cfv 1zzd cuz nnuz breq2
+      rabeqi anbi12d simpll simplr zmulcld zcnd ioran biimpi adantl neneqad 0zd
+      simpld mpbird simprd mulap0d dvdsmul1 zmulcl dvdsabsb syldan dvdsmul2 jca
+      nnabscl sylan2 anabss7 adantr cfz wdc simplll elfzelz zdvdsdc infssuzcldc
+      elrabd simpllr dcand eqeltrd ) BDEZCDEZFZBGHZCGHZUAIZFZBCUBJBAUCZKLZCWRKL
+      ZFZAMUDZUEUFUGXBABCUHWQXABCUIJZUJUKZXBANWQULXAAMNUMUKUNUPWQXABXDKLZCXDKLZ
+      FZAXDMWRXDHWSXEWTXFWRXDBKUOWRXDCKUOUQWQXCDEZXCGOZXDMEWQBCWKWLWPURZWKWLWPU
+      SZUTZWQXCGPLZXIWQBCWQBXJVAWQCXKVAWQBGPLZBGOZWQBGWQWNIZWOIZWPXPXQFZWMWPXRW
+      NWOVBVCVDZVGVEWQWKGDEZXNXOTXJWQVFZBGQRVHWQCGPLZCGOZWQCGWQXPXQXSVIVEWQWLXT
+      YBYCTXKYACGQRVHVJWQXHXTXMXITXLYAXCGQRSXCVQRWMXGWPWMXEXFWMBXCKLZXEBCVKWKWL
+      XHYDXETBCVLZBXCVMVNSWMCXCKLZXFBCVOWKWLYFXFTZWMWLXHYGYECXCVMVRVSSVPVTWGWQW
+      RNXDWAJEZFZWSWTYIWKWRDEZWSWBWKWLWPYHWCYHYJWQWRNXDWDVDZBWRWERYIWLYJWTWBWKW
+      LWPYHWHYKCWRWERWIWFWJ $.
 
     $( Closure of the ` lcm ` operator.  (Contributed by Steve Rodriguez,
        20-Jan-2020.) $)
@@ -134037,15 +134083,14 @@ $)
     lcmledvds $p |- ( ( ( K e. NN /\ M e. ZZ /\ N e. ZZ )
                          /\ -. ( M = 0 \/ N = 0 ) )
                       -> ( ( M || K /\ N || K ) -> ( M lcm N ) <_ K ) ) $=
-      ( vn cn wcel cz cc0 wceq wa cdvds wbr co cle c1 breq2 wdc zdvdsdc syl2anc
-      crab w3a wo wn clcm cv cr clt cinf lcmn0val 3adantl1 adantr 1zzd cuz nnuz
-      cfv rabeq ax-mp simpll1 simpr anbi12d sylanbrc cfz simpll2 elfzelz adantl
-      elrab simpll3 dcan2 sylc adantlr infssuzledc eqbrtrd ex ) AEFZBGFZCGFZUAB
-      HICHIUBUCZJZBAKLZCAKLZJZBCUDMZANLVRWAJZWBBDUEZKLZCWDKLZJZDETZUFUGUHZANVRW
-      BWIIZWAVOVPVQWJVNDBCUIUJUKWCWGAWHDOWCULEOUMUOZIWHWGDWKTIUNWGDEWKUPUQWCVNW
-      AAWHFVNVOVPVQWAURVRWAUSWGWADAEWDAIWEVSWFVTWDABKPWDACKPUTVFVAVRWDOAVBMFZWG
-      QZWAVRWLJZWEQZWFQZWMWNVOWDGFZWOVNVOVPVQWLVCWLWQVRWDOAVDVEZBWDRSWNVPWQWPVN
-      VOVPVQWLVGWRCWDRSWEWFVHVIVJVKVLVM $.
+      ( vn cn wcel cz w3a cc0 wceq wa cdvds wbr co cle c1 breq2 zdvdsdc syl2anc
+      wdc wo wn clcm cv crab cr clt cinf lcmn0val 3adantl1 adantr 1zzd cuz nnuz
+      cfv rabeqi anbi12d simpll1 simpr elrabd cfz simpll2 elfzelz simpll3 dcand
+      adantl adantlr infssuzledc eqbrtrd ex ) AEFZBGFZCGFZHBIJCIJUAUBZKZBALMZCA
+      LMZKZBCUCNZAOMVOVRKZVSBDUDZLMZCWALMZKZDEUEZUFUGUHZAOVOVSWFJZVRVLVMVNWGVKD
+      BCUIUJUKVTWDAWEDPVTULWDDEPUMUOUNUPVTWDVRDAEWAAJWBVPWCVQWAABLQWAACLQUQVKVL
+      VMVNVRURVOVRUSUTVOWAPAVANFZWDTVRVOWHKZWBWCWIVLWAGFZWBTVKVLVMVNWHVBWHWJVOW
+      APAVCVFZBWARSWIVMWJWCTVKVLVMVNWHVDWKCWARSVEVGVHVIVJ $.
   $}
 
   $( The lcm of two integers is zero iff either is zero.  (Contributed by Steve
@@ -135239,13 +135284,12 @@ $)
       ( vx cn wcel c2 cuz wbr wn c1 co wral wa wdc wo cz a1i syl adantl syl2anc
       cle cfv cv cdvds cmin cfz cprime wceq 1nuz2 mtbiri orim1i orcomd elnn1uz2
       eleq1 df-dc 3imtr4i cfn 2z nnz peano2zm fzfigd elfzelz 1red 2re zred 1le2
-      elfzle1 letrd elnnz1 sylanbrc adantr dvdsdc dcn ralrimiva dcfi dcan2 sylc
-      cr isprm3 dcbii sylibr ) ACDZAEFUAZDZBUBZAUCGZHZBEAIUDJZUEJZKZLZMZAUFDZMW
-      AWCMZWIMZWKAIUGZWCNZWCWCHZNWAWMWPWQWCWOWQWCWOWCIWBDUHAIWBUMUIUJUKAULWCUNU
-      OWAWHUPDWFMZBWHKWNWAEWGEODWAUQPWAAODZWGODAURZAUSQUTWAWRBWHWAWDWHDZLZWEMZW
-      RXBWDCDZWSXCXBWDODZIWDTGXDXAXEWAWDEWGVARZXBIEWDXBVBEVQDXBVCPXBWDXFVDIETGX
-      BVEPXAEWDTGWAWDEWGVFRVGWDVHVIWAWSXAWTVJWDAVKSWEVLQVMWFBWHVNSWCWIVOVPWLWJB
-      AVRVSVT $.
+      cr elfzle1 letrd elnnz1 sylanbrc adantr dvdsdc dcn ralrimiva dcand isprm3
+      dcfi dcbii sylibr ) ACDZAEFUAZDZBUBZAUCGZHZBEAIUDJZUEJZKZLZMAUFDZMVTWBWHA
+      IUGZWBNZWBWBHZNVTWBMWLWMWBWKWMWBWKWBIWADUHAIWAUMUIUJUKAULWBUNUOVTWGUPDWEM
+      ZBWGKWHMVTEWFEODVTUQPVTAODZWFODAURZAUSQUTVTWNBWGVTWCWGDZLZWDMZWNWRWCCDZWO
+      WSWRWCODZIWCTGWTWQXAVTWCEWFVARZWRIEWCWRVBEVFDWRVCPWRWCXBVDIETGWRVEPWQEWCT
+      GVTWCEWFVGRVHWCVIVJVTWOWQWPVKWCAVLSWDVMQVNWEBWGVQSVOWJWIBAVPVRVS $.
   $}
 
   ${
@@ -138250,15 +138294,14 @@ $)
          Jim Kingdon, 8-Oct-2024.) $)
       pclemdc $p |- ( ( P e. ( ZZ>= ` 2 ) /\ ( N e. ZZ /\ N =/= 0 ) ) ->
           A. x e. ZZ DECID x e. A ) $=
-        ( c2 wcel cz wa cv wdc cn0 wn cexp co cdvds wbr simpr sylibr cuz zexpcl
-        cfv cc0 wne elnn0dc ad2antlr eluzelz ad3antrrr syl2anc ad2antrr zdvdsdc
-        simprl dcan2 sylc oveq2 breq1d elrab2 dcbii intnanrd olcd df-dc exmiddc
-        weq wo syl adantl mpjaodan ralrimiva ) CGUAUCHZEIHZEUDUEZJZJZAKZBHZLZAI
-        VNVOIHZJZVOMHZVQVTNZVSVTJZVTCVOOPZEQRZJZLZVQWBVTLZWDLZWFVRWGVNVTVOUFZUG
-        WBWCIHZVKWHWBCIHZVTWJVJWKVMVRVTGCUHUIVSVTSCVOUBUJVNVKVRVTVJVKVLUMUKWCEU
-        LUJVTWDUNUOVPWECDKZOPZEQRWDDVOMBDAVDWMWCEQWLVOCOUPUQFURUSZTVSWAJZWFVQWO
-        WEWENZVEWFWOWPWEWOVTWDVSWASUTVAWEVBTWNTVRVTWAVEZVNVRWGWQWIVTVCVFVGVHVI
-        $.
+        ( c2 wcel cz wa cv wdc cn0 wn cexp co cdvds wbr sylibr wo cuz ad3antrrr
+        cfv cc0 elnn0dc ad2antlr eluzelz zexpcl sylancom simprl zdvdsdc syl2anc
+        wne ad2antrr dcand weq oveq2 breq1d elrab2 dcbii simpr intnanrd exmiddc
+        olcd df-dc syl adantl mpjaodan ralrimiva ) CGUAUCHZEIHZEUDUMZJZJZAKZBHZ
+        LZAIVNVOIHZJZVOMHZVQVTNZVSVTJZVTCVOOPZEQRZJZLZVQWBVTWDVRVTLZVNVTVOUEZUF
+        WBWCIHZVKWDLVSVTCIHZWIVJWJVMVRVTGCUGUBCVOUHUIVNVKVRVTVJVKVLUJUNWCEUKULU
+        OVPWECDKZOPZEQRWDDVOMBDAUPWLWCEQWKVOCOUQURFUSUTZSVSWAJZWFVQWNWEWENZTWFW
+        NWOWEWNVTWDVSWAVAVBVDWEVESWMSVRVTWATZVNVRWGWPWHVTVCVFVGVHVI $.
     $}
 
     pclem.2 $e |- S = sup ( A , RR , < ) $.
@@ -139990,15 +140033,15 @@ $)
       cle wo cfa cfv nnnn0 faccld peano2nnd eqeltrid nnge1d wb nnleltp1 sylancr
       1nn mpbid breqtrrdi cc cc0 cap nncn nnap0 jca dividap 3syl eqeltrdi breq2
       oveq2 eleq1d anbi12d rspcev syl12anc 1zzd adantl zdclt cdvds simpr adantr
-      nnzd dvdsdc nndivdvds dcbid sylan dcan2 sylc ralrimiva infpnlem1 reximdva
-      nnz nnwosdc mpd ) DFGZHAIZJKZCWMLMZFGZNZHBIZJKZCWRLMZFGZNZWMWRUCKUABFONZA
-      FPZDWMJKWMWRLMFGWRHQWRWMQUDUABFONZAFPWLWQAFPZWQRZAFOXDWLCFGZHCJKZCCLMZFGZ
-      XFWLCDUEUFZHUBMZFEWLXLWLDDUGUHZUIUJZWLHXMCJWLHXLUCKZHXMJKZWLXLXNUKWLHFGXL
-      FGXPXQULUOXNHXLUMUNUPEUQWLXJHFWLXHCURGZCUSUTKZNXJHQXOXHXRXSCVACVBVCCVDVEU
-      OVFWQXIXKNACFWMCQZWNXIWPXKWMCHJVGXTWOXJFWMCCLVHVIVJVKVLWLXGAFWLWMFGZNZWNR
-      ZWPRZXGYBHSGWMSGZYCYBVMYAYEWLWMWIVNHWMVOTYBWMCVPKZRZYDYBYACSGYGWLYAVQYBCW
-      LXHYAXOVRVSWMCVTTWLXHYAYGYDULXOXHYANYFWPCWMWAWBWCUPWNWPWDWEWFWQXBABWMWRQZ
-      WNWSWPXAWMWRHJVGYHWOWTFWMWRCLVHVIVJWJTWLXCXEAFBCWMDEWGWHWK $.
+      nnz nnzd nndivdvds dcbid sylan dcand ralrimiva nnwosdc infpnlem1 reximdva
+      dvdsdc mpd ) DFGZHAIZJKZCWLLMZFGZNZHBIZJKZCWQLMZFGZNZWLWQUCKUABFONZAFPZDW
+      LJKWLWQLMFGWQHQWQWLQUDUABFONZAFPWKWPAFPZWPRZAFOXCWKCFGZHCJKZCCLMZFGZXEWKC
+      DUEUFZHUBMZFEWKXKWKDDUGUHZUIUJZWKHXLCJWKHXKUCKZHXLJKZWKXKXMUKWKHFGXKFGXOX
+      PULUOXMHXKUMUNUPEUQWKXIHFWKXGCURGZCUSUTKZNXIHQXNXGXQXRCVACVBVCCVDVEUOVFWP
+      XHXJNACFWLCQZWMXHWOXJWLCHJVGXSWNXIFWLCCLVHVIVJVKVLWKXFAFWKWLFGZNZWMWOYAHS
+      GWLSGZWMRYAVMXTYBWKWLVSVNHWLVOTYAWLCVPKZRZWORZYAXTCSGYDWKXTVQYACWKXGXTXNV
+      RVTWLCWITWKXGXTYDYEULXNXGXTNYCWOCWLWAWBWCUPWDWEWPXAABWLWQQZWMWRWOWTWLWQHJ
+      VGYFWNWSFWLWQCLVHVIVJWFTWKXBXDAFBCWLDEWGWHWJ $.
   $}
 
   ${
@@ -141941,23 +141984,23 @@ $)
       $( Lemma for ~ nninfdc .  (Contributed by Jim Kingdon, 25-Sep-2024.) $)
       nninfdclemcl $p |- ( ph -> ( P ( y e. NN , z e. NN |-> inf (
           ( A i^i ( ZZ>= ` ( y + 1 ) ) ) , RR , < ) ) Q ) e. A ) $=
-        ( vs cn cv clt wcel wceq vr vt c1 caddc co cuz cfv cin cinf cmpo sseldd
-        cr wss wdc wral wex inss1 sstrid eleq1w dcbid adantr simpr rspcdva nnzd
-        wa cz peano2zd eluzdc syl2anc dcan2 sylc dcbii sylibr ralrimiva cbvralv
-        elin sylib wbr wrex breq1 rexbidv cbvrexv simprl cle simprr wb nnltp1le
-        breq2 mpbid eluz2 syl3anbrc elind syl rexlimddv nnmindc syl3anc fvoveq1
-        elex2 elin1d ineq2d infeq1d eqidd eqid ovmpog eqeltrd ) AFGCDPPECQZUCUD
-        UEUFUGZUHZULRUIZUJZUEZEFUCUDUEZUFUGZUHZULRUIZEAFPSZGPSXOESXKXOTAEPFJMUK
-        ZAEPGJNUKAEXMXOAXNPUMBQZXNSZUNZBPUOZUAQXNSUAUPZXOXNSAXNEPEXMUQJURAOQZXN
-        SZUNZOPUOYAAYEOPAYCPSZVEZYCESZYCXMSZVEZUNZYEYGYHUNZYIUNZYKYGXRESZUNZYLB
-        PYCXRYCTYNYHBOEUSUTAYOBPUOYFKVAAYFVBZVCYGXLVFSZYCVFSYMYGFYGFAXPYFXQVAVD
-        VGYGYCYPVDXLYCVHVIYHYIVJVKYDYJYCEXMVPVLVMVNYEXTOBPYCXRTYDXSOBXNUSUTVOVQ
-        AFUBQZRVRZYBUBEAFIQZRVRZIEVSZYSUBEVSAHQZYTRVRZIEVSUUBHPFUUCFTUUDUUAIEUU
-        CFYTRVTWALXQVCUUAYSIUBEYTYRFRWHWBVQAYRESZYSVEZVEZYRXNSYBUUGEXMYRAUUEYSW
-        CZUUGYQYRVFSXLYRWDVRZYRXMSAYQUUFAFAFXQVDVGVAUUGYRUUGEPYRAEPUMUUFJVAUUHU
-        KZVDUUGYSUUIAUUEYSWEUUGXPYRPSYSUUIWFAXPUUFXQVAUUJFYRWGVIWIXLYRWJWKWLUAY
-        RXNWRWMWNBUAXNWOWPWSZCDFGPPXIXOXJXOEXFFTZULXHXNRUULXGXMEXFFUCUFUDWQWTXA
-        DQGTXOXBXJXCXDWPUUKXE $.
+        ( cn cv clt wcel wceq wdc vr vs vt c1 caddc co cuz cfv cin cr cinf cmpo
+        sseldd wss wral wex inss1 sstrid wa eleq1 dcbid adantr simpr rspcdva cz
+        nnzd peano2zd eluzdc syl2anc dcand elin dcbii sylibr ralrimiva cbvralvw
+        sylib wrex breq1 rexbidv breq2 cbvrexvw simprl simprr nnltp1le syl2an2r
+        wbr cle mpbid eluz2 syl3anbrc elind elex2 syl rexlimddv nnmindc syl3anc
+        wb elin1d fvoveq1 ineq2d infeq1d eqidd eqid ovmpog eqeltrd ) AFGCDOOECP
+        ZUDUEUFUGUHZUIZUJQUKZULZUFZEFUDUEUFZUGUHZUIZUJQUKZEAFORZGORXOERXKXOSAEO
+        FJMUMZAEOGJNUMAEXMXOAXNOUNBPZXNRZTZBOUOZUAPXNRUAUPZXOXNRAXNEOEXMUQJURAU
+        BPZXNRZTZUBOUOYAAYEUBOAYCORZUSZYCERZYCXMRZUSZTYEYGYHYIYGXRERZTZYHTBOYCX
+        RYCSYKYHXRYCEUTVAAYLBOUOYFKVBAYFVCZVDYGXLVERZYCVERYITYGFYGFAXPYFXQVBVFV
+        GYGYCYMVFXLYCVHVIVJYDYJYCEXMVKVLVMVNYEXTUBBOYCXRSYDXSYCXRXNUTVAVOVPAFUC
+        PZQWFZYBUCEAFIPZQWFZIEVQZYPUCEVQAHPZYQQWFZIEVQYSHOFYTFSUUAYRIEYTFYQQVRV
+        SLXQVDYRYPIUCEYQYOFQVTWAVPAYOERZYPUSZUSZYOXNRYBUUDEXMYOAUUBYPWBZUUDYNYO
+        VERXLYOWGWFZYOXMRAYNUUCAFAFXQVFVGVBUUDYOUUDEOYOAEOUNUUCJVBUUEUMZVFUUDYP
+        UUFAUUBYPWCAXPUUCYOORYPUUFWQXQUUGFYOWDWEWHXLYOWIWJWKUAYOXNWLWMWNBUAXNWO
+        WPWRZCDFGOOXIXOXJXOEXFFSZUJXHXNQUUIXGXMEXFFUDUGUEWSWTXADPGSXOXBXJXCXDWP
+        UUHXE $.
     $}
 
     nninfdclemf.j $e |- ( ph -> ( J e. A /\ 1 < J ) ) $.
@@ -146931,6 +146974,25 @@ $)
   $}
 
   ${
+    $d S f s t x y $.  $d T f s t x y $.
+    $( The set of monoid homomorphisms exists.  (Contributed by Jim Kingdon,
+       15-May-2025.) $)
+    mhmex $p |- ( ( S e. Mnd /\ T e. Mnd ) -> ( S MndHom T ) e. _V ) $=
+      ( vx vy vf vs cmnd wcel wa co cplusg cfv wceq cbs wral c0g cmap cvv fveq2
+      cv cmhm crab cxp wfn fnmap basfn simpr elexd funfvex funfni sylancr simpl
+      vt fnovex mp3an2i rabexg oveq2d oveqd fveqeq2d raleqbidv rabeqbidv oveq1d
+      syl anbi12d eqeq2d 2ralbidv df-mhm ovmpog mpd3an3 eqeltrd ) AGHZBGHZIZABU
+      AJZCTZDTZAKLZJZETZLZVOVSLZVPVSLZBKLZJZMZDANLZOCWFOZAPLZVSLZBPLZMZIZEBNLZW
+      FQJZUBZRVKVLWORHZVNWOMVMWNRHZWPQRRUCUDVMWMRHZWFRHZWQUEVMNRUDZBRHWRUFVMBGV
+      KVLUGUHWRRBNBNUIUJUKVMWTARHWSUFVMAGVKVLULUHWSRANANUIUJUKWMWFRRQUNUOWLEWNR
+      UPVCZFUMABGGVOVPFTZKLZJZVSLWAWBUMTZKLZJZMZDXBNLZOZCXIOZXBPLZVSLXEPLZMZIZE
+      XENLZXIQJZUBWOUAVTXGMZDWFOZCWFOZWIXMMZIZEXPWFQJZUBRXBAMZXOYBEXQYCYDXIWFXP
+      QXBANSZUQYDXKXTXNYAYDXJXSCXIWFYEYDXHXRDXIWFYEYDXDVRXGVSYDXCVQVOVPXBAKSURU
+      SUTUTYDXLWHXMVSXBAPSUSVDVAXEBMZYBWLEYCWNYFXPWMWFQXEBNSVBYFXTWGYAWKYFXRWEC
+      DWFWFYFXGWDVTYFXFWCWAWBXEBKSURVEVFYFXMWJWIXEBPSVEVDVACDUMEFVGVHVIXAVJ $.
+  $}
+
+  ${
     $d f s t x y B $.  $d x y F $.  $d x y S $.  $d x y T $.
     $( Reverse closure of a monoid homomorphism.  (Contributed by Mario
        Carneiro, 7-Mar-2015.) $)
@@ -151210,6 +151272,14 @@ $)
       ZVAQZVBQZUSQZUTQZUKULURRUKULURSURVAVBUPTUMVAVBABUPVCVDUAUBURDLZVAGZELZVAG
       ZHVGVIUSJUPOVGUPOVIUPOUTJUCZUMURVHVJVKVAUSUTABUPVGVIVCVEVFUDUEUFUGUHUIUJ
       $.
+  $}
+
+  ${
+    $( The set of group homomorphisms exists.  (Contributed by Jim Kingdon,
+       15-May-2025.) $)
+    ghmex $p |- ( ( S e. Grp /\ T e. Grp ) -> ( S GrpHom T ) e. _V ) $=
+      ( cgrp wcel wa cghm co cmhm cvv ghmmhmb cmnd grpmnd mhmex syl2an eqeltrd
+      ) ACDZBCDZEABFGABHGZIABJPAKDBKDRIDQALBLABMNO $.
   $}
 
   ${
@@ -155865,7 +155935,7 @@ $)
     $d r s v w f x y $.
     $( Define the set of ring homomorphisms from ` r ` to ` s ` .  (Contributed
        by Stefan O'Rear, 7-Mar-2015.) $)
-    df-rnghom $a |- RingHom = ( r e. Ring , s e. Ring |->
+    df-rhm $a |- RingHom = ( r e. Ring , s e. Ring |->
       [_ ( Base ` r ) / v ]_ [_ ( Base ` s ) / w ]_
    { f e. ( w ^m v ) | ( ( f ` ( 1r ` r ) ) = ( 1r ` s ) /\ A. x e. v A. y e. v
    ( ( f ` ( x ( +g ` r ) y ) ) = ( ( f ` x ) ( +g ` s ) ( f ` y ) ) /\
@@ -155873,9 +155943,365 @@ $)
 
     $( Define the set of ring isomorphisms from ` r ` to ` s ` .  (Contributed
        by Stefan O'Rear, 7-Mar-2015.) $)
-    df-rngiso $a |- RingIso = ( r e. _V , s e. _V |->
+    df-rim $a |- RingIso = ( r e. _V , s e. _V |->
       { f e. ( r RingHom s ) | `' f e. ( s RingHom r ) } ) $.
+
+    $( The property of a ring homomorphism can be decomposed into separate
+       homomorphic conditions for addition and multiplication.  (Contributed by
+       Stefan O'Rear, 7-Mar-2015.) $)
+    dfrhm2 $p |- RingHom = ( r e. Ring , s e. Ring |->
+          ( ( r GrpHom s ) i^i ( ( mulGrp ` r ) MndHom ( mulGrp ` s ) ) ) ) $=
+      ( vv vw vf vx vy crg cv cbs cfv wceq co wa wral crab wcel cvv eqid elv wb
+      crh cur cplusg cmulr cmap csb cmpo cghm cmgp cmhm cin df-rhm ancom anbi1i
+      r19.26-2 anass 3bitri rabbii wfn basfn funfvex funfni mp2an oveq12 ancoms
+      vex raleq raleqbi1dv adantr anbi2d rabeqbidv csbie2 inrab 3eqtr4i wf cgrp
+      cab ringgrp isghm3 syl2an eqabdv df-rab elmap abbii eqtri eqtr4di ringmgp
+      w3a cmnd mgpbasg mgpplusgg ringidvalg ismhm 3anass bitr4i ineq12d eqtr4id
+      c0g baib mpoeq3ia ) UBBAHHCBIZJKZDAIZJKZXBUCKZEIZKXDUCKZLZFIZGIZXBUDKZMXG
+      KXJXGKZXKXGKZXDUDKZMLZXJXKXBUEKZMXGKXMXNXDUEKZMLZNZGCIZOZFYAOZNZEDIZYAUFM
+      ZPZUGUGZUHBAHHXBXDUIMZXBUJKZXDUJKZUKMZULZUHFGDCEABUMBAHHYHYMXBHQZXDHQZNZY
+      HXPGXCOFXCOZEXEXCUFMZPZXSGXCOFXCOZXINZEYRPZULZYMXIXTGXCOZFXCOZNZEYRPZYQUU
+      ANZEYRPYHUUCUUFUUHEYRUUFUUEXINYQYTNZXINUUHXIUUEUNUUEUUIXIXPXSFGXCXCUPUOYQ
+      YTXIUQURUSCDXCXEYGUUGJRUTZXBRQXCRQZVABVGUUKRXBJXBJVBVCVDZUUJXDRQXERQZVAAV
+      GUUMRXDJXDJVBVCVDZYAXCLZYEXELZNZYDUUFEYFYRUUPUUOYFYRLYEXEYAXCUFVEVFUUQYCU
+      UEXIUUOYCUUEUAUUPYBUUDFYAXCXTGYAXCVHVIVJVKVLVMYQUUAEYRVNVOYPYIYSYLUUBYPYI
+      XCXEXGVPZYQNZEVRZYSYPUUSEYIYNXBVQQXDVQQXGYIQUUSUAYOXBVSXDVSGFXLXOXBXDXGXC
+      XEXCSZXESZXLSXOSVTWAWBYSXGYRQZYQNZEVRUUTYQEYRWCUVDUUSEUVCUURYQXEXCXGUUNUU
+      LWDZUOWEWFWGYPYLUURYTXIWIZEVRZUUBYPUVFEYLYNYJWJQZYKWJQZXGYLQZUVFUAYOXBYJY
+      JSZWHXDYKYKSZWHUVJUVHUVINUVFFGXCXEXQXRYJYKXGXHXFXCYJJKLBXCXBYJRUVKUVAWKTX
+      EYKJKLAXEXDYKRUVLUVBWKTXQYJUDKLBXBXQYJRUVKXQSWLTXRYKUDKLAXDXRYKRUVLXRSWLT
+      XFYJWSKLBXBXFYJRUVKXFSWMTXHYKWSKLAXDXHYKRUVLXHSWMTWNWTWAWBUUBUVCUUANZEVRU
+      VGUUAEYRWCUVMUVFEUVMUURUUANUVFUVCUURUUAUVEUOUURYTXIWOWPWEWFWGWQWRXAWF $.
   $}
+
+  ${
+    $d r s $.
+    $( Reverse closure of a ring homomorphism.  (Contributed by Stefan O'Rear,
+       7-Mar-2015.) $)
+    rhmrcl1 $p |- ( F e. ( R RingHom S ) -> R e. Ring ) $=
+      ( vr vs crg cv cghm co cmgp cfv cmhm cin crh dfrhm2 elmpocl1 ) DEFFDGZEGZ
+      HIQJKRJKLIMABNCEDOP $.
+
+    $( Reverse closure of a ring homomorphism.  (Contributed by Stefan O'Rear,
+       7-Mar-2015.) $)
+    rhmrcl2 $p |- ( F e. ( R RingHom S ) -> S e. Ring ) $=
+      ( vr vs crg cv cghm co cmgp cfv cmhm cin crh dfrhm2 elmpocl2 ) DEFFDGZEGZ
+      HIQJKRJKLIMABNCEDOP $.
+  $}
+
+  ${
+    $d R r s $.  $d S r s $.  $d V r s $.  $d W r s $.  $d f r s v w x y $.
+    $( Set existence for ring homomorphism.  (Contributed by Jim Kingdon,
+       16-May-2025.) $)
+    rhmex $p |- ( ( R e. V /\ S e. W ) -> ( R RingHom S ) e. _V ) $=
+      ( vv vr vw vs vf vx vy wcel wa cv cbs cfv wceq co cvv vex cur cplusg wral
+      cmulr cmap crab csb wal crh basfn funfvex funfni mp2an fnmap fnovex mp3an
+      wfn cxp rabex csbexa a1i alrimivv simpl simpr crg df-rhm mpofvex syl3anc
+      ) ACLZBDLZMZEFNZOPZGHNZOPZVLUAPINZPVNUAPQJNZKNZVLUBPRVPPVQVPPZVRVPPZVNUBP
+      RQVQVRVLUDPRVPPVSVTVNUDPRQMKENZUCJWAUCMZIGNZWAUERZUFZUGZUGZSLZHUHFUHVIVJA
+      BUIRSLVKWHFHWHVKEVMWFOSUQZVLSLVMSLZUJFTWJSVLOVLOUKULUMGVOWEWIVNSLVOSLZUJH
+      TWKSVNOVNOUKULUMWBIWDUESSURUQWCSLWASLWDSLUNGTETWCWASSUEUOUPUSUTUTVAVBVIVJ
+      VCVIVJVDFHVEVEWGABUISCDJKGEIHFVFVGVH $.
+  $}
+
+  ${
+    $d R r s $.  $d S r s $.
+    isrhm.m $e |- M = ( mulGrp ` R ) $.
+    isrhm.n $e |- N = ( mulGrp ` S ) $.
+    $( A function is a ring homomorphism iff it preserves both addition and
+       multiplication.  (Contributed by Stefan O'Rear, 7-Mar-2015.) $)
+    isrhm $p |- ( F e. ( R RingHom S ) <-> ( ( R e. Ring /\ S e. Ring ) /\
+          ( F e. ( R GrpHom S ) /\ F e. ( M MndHom N ) ) ) ) $=
+      ( vr vs crh co wcel crg wa cghm cmhm cmgp cfv cvv wceq cin dfrhm2 elmpocl
+      cv ringgrp ghmex syl2an inex1g syl oveq12 fveq2 oveqan12d ineq12d ovmpoga
+      cgrp mpd3an3 eleq2d oveq12i eqcomi eleq2i anbi2i bitri bitrdi biadanii
+      elin ) CABJKZLZAMLZBMLZNZCABOKZLZCDEPKZLZNZHIMMHUDZIUDZOKZVPQRZVQQRZPKZUA
+      ZABJCIHUBZUCVJVGCVKAQRZBQRZPKZUAZLZVOVJVFWGCVHVIWGSLZVFWGTVJVKSLZWIVHAUOL
+      BUOLWJVIAUEBUEABUFUGVKWFSUHUIHIABMMWBWGJSVPATZVQBTZNVRVKWAWFVPAVQBOUJWKWL
+      VSWDVTWEPVPAQUKVQBQUKULUMWCUNUPUQWHVLCWFLZNVOCVKWFVEWMVNVLWFVMCVMWFDWDEWE
+      PFGURUSUTVAVBVCVD $.
+
+    $( A ring homomorphism is a homomorphism of multiplicative monoids.
+       (Contributed by Stefan O'Rear, 7-Mar-2015.) $)
+    rhmmhm $p |- ( F e. ( R RingHom S ) -> F e. ( M MndHom N ) ) $=
+      ( crh co wcel cghm cmhm crg wa isrhm simprbi simprd ) CABHIJZCABKIJZCDELI
+      JZRAMJBMJNSTNABCDEFGOPQ $.
+  $}
+
+  ${
+    $d F f $.  $d R f r s $.  $d S f r s $.  $d V f r s $.  $d W f r s $.
+    $( Reverse closure for an isomorphism of rings.  (Contributed by AV,
+       22-Oct-2019.) $)
+    rimrcl $p |- ( F e. ( R RingIso S ) -> ( R e. _V /\ S e. _V ) ) $=
+      ( vr vs vf cvv cv ccnv crh co wcel crab crs df-rim elmpocl ) DEGGFHIEHZDH
+      ZJKLFRQJKMABNCFEDOP $.
+
+    $( A ring isomorphism is a homomorphism whose converse is also a
+       homomorphism.  (Contributed by AV, 22-Oct-2019.)  Remove sethood
+       antecedent.  (Revised by SN, 10-Jan-2025.) $)
+    isrim0 $p |- ( F e. ( R RingIso S ) <->
+                 ( F e. ( R RingHom S ) /\ `' F e. ( S RingHom R ) ) ) $=
+      ( vf vr vs crs co wcel cvv wa crh ccnv crg elexd crab wceq oveq12 adantl
+      cv rimrcl rhmrcl1 rhmrcl2 jca adantr df-rim ancoms eleq2d rabeqbidv simpl
+      a1i simpr rhmex syl2anc rabexg ovmpod cnveq eleq1d elrab bitrdi pm5.21nii
+      cmpo syl ) CABGHZIZAJIZBJIZKZCABLHZIZCMZBALHZIZKZABCUAVJVHVMVJVFVGVJANABC
+      UBOVJBNABCUCOUDUEVHVECDTZMZVLIZDVIPZIVNVHVDVRCVHEFABJJVPFTZETZLHZIZDVTVSL
+      HZPZVRGJGEFJJWDVBQVHDFEUFUKVHVTAQZVSBQZKZKZWBVQDWCVIWGWCVIQVHVTAVSBLRSWHW
+      AVLVPWGWAVLQZVHWFWEWIVSBVTALRUGSUHUIVFVGUJZVFVGULZVHVIJIZVRJIVHVFVGWLWJWK
+      ABJJUMUNVQDVIJUOVCUPUHVQVMDCVIVOCQVPVKVLVOCUQURUSUTVA $.
+  $}
+
+  $( A ring homomorphism is an additive group homomorphism.  (Contributed by
+     Stefan O'Rear, 7-Mar-2015.) $)
+  rhmghm $p |- ( F e. ( R RingHom S ) -> F e. ( R GrpHom S ) ) $=
+    ( crh co wcel cghm cmgp cfv cmhm crg wa eqid isrhm simprbi simpld ) CABDEFZ
+    CABGEFZCAHIZBHIZJEFZQAKFBKFLRUALABCSTSMTMNOP $.
+
+  ${
+    rhmf.b $e |- B = ( Base ` R ) $.
+    rhmf.c $e |- C = ( Base ` S ) $.
+    $( A ring homomorphism is a function.  (Contributed by Stefan O'Rear,
+       8-Mar-2015.) $)
+    rhmf $p |- ( F e. ( R RingHom S ) -> F : B --> C ) $=
+      ( crh co wcel cghm wf rhmghm ghmf syl ) ECDHIJECDKIJABELCDEMCDEABFGNO $.
+  $}
+
+  ${
+    rhmmul.x $e |- X = ( Base ` R ) $.
+    rhmmul.m $e |- .x. = ( .r ` R ) $.
+    rhmmul.n $e |- .X. = ( .r ` S ) $.
+    $( A homomorphism of rings preserves multiplication.  (Contributed by Mario
+       Carneiro, 12-Jun-2015.) $)
+    rhmmul $p |- ( ( F e. ( R RingHom S ) /\ A e. X /\ B e. X ) ->
+      ( F ` ( A .x. B ) ) = ( ( F ` A ) .X. ( F ` B ) ) ) $=
+      ( co wcel cfv wceq eqid 3ad2ant1 wb crg syl crh w3a cmgp cplusg cbs simp2
+      rhmmhm rhmrcl1 mgpbasg eleq2d mpbid simp3 mhmlin syl3anc mgpplusgg fveq2d
+      cmhm oveqd rhmrcl2 eqeq12d mpbird ) GCDUALMZAHMZBHMZUBZABELZGNZAGNZBGNZFL
+      ZOZABCUCNZUDNZLZGNZVHVIDUCNZUDNZLZOZVEGVLVPUQLMZAVLUENZMZBWAMZVSVBVCVTVDC
+      DGVLVPVLPZVPPZUGQVEVCWBVBVCVDUFVBVCVCWBRVDVBHWAAVBCSMZHWAOCDGUHZHCVLSWDIU
+      ITZUJQUKVEVDWCVBVCVDULVBVCVDWCRVDVBHWABWHUJQUKWAVMVQVLVPGABWAPVMPVQPUMUNV
+      BVCVKVSRVDVBVGVOVJVRVBVFVNGVBEVMABVBWFEVMOWGCEVLSWDJUOTURUPVBFVQVHVIVBDSM
+      FVQOCDGUSDFVPSWEKUOTURUTQVA $.
+  $}
+
+  ${
+    $d ph x y $.  $d B x y $.  $d C x y $.  $d F x y $.  $d .+ x y $.
+    $d .+^ x y $.  $d R x y $.  $d S x y $.
+    isrhmd.b $e |- B = ( Base ` R ) $.
+    isrhmd.o $e |- .1. = ( 1r ` R ) $.
+    isrhmd.n $e |- N = ( 1r ` S ) $.
+    isrhmd.t $e |- .x. = ( .r ` R ) $.
+    isrhmd.u $e |- .X. = ( .r ` S ) $.
+    isrhmd.r $e |- ( ph -> R e. Ring ) $.
+    isrhmd.s $e |- ( ph -> S e. Ring ) $.
+    isrhmd.ho $e |- ( ph -> ( F ` .1. ) = N ) $.
+    isrhmd.ht $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+        ( F ` ( x .x. y ) ) = ( ( F ` x ) .X. ( F ` y ) ) ) $.
+    ${
+      isrhm2d.f $e |- ( ph -> F e. ( R GrpHom S ) ) $.
+      $( Demonstration of ring homomorphism.  (Contributed by Mario Carneiro,
+         13-Jun-2015.) $)
+      isrhm2d $p |- ( ph -> F e. ( R RingHom S ) ) $=
+        ( crg wcel cghm co cmgp cfv cmhm wa crh cmnd cbs wf cv cplusg wceq wral
+        c0g w3a eqid ringmgp syl ghmf mgpbasg feq23d mpbid ralrimivva mgpplusgg
+        oveqd fveq2d eqeq12d raleqbidv ringidvalg 3eqtr3d 3jca ismhm syl21anbrc
+        jca isrhm ) AEUBUCZFUBUCZJEFUDUEUCZJEUFUGZFUFUGZUHUEUCZUIJEFUJUEUCQRAWB
+        WEUAAWCUKUCZWDUKUCZWCULUGZWDULUGZJUMZBUNZCUNZWCUOUGZUEZJUGZWKJUGZWLJUGZ
+        WDUOUGZUEZUPZCWHUQZBWHUQZWCURUGZJUGZWDURUGZUPZUSWEAVTWFQEWCWCUTZVAVBAWA
+        WGRFWDWDUTZVAVBAWJXBXFADFULUGZJUMZWJAWBXJUAEFJDXILXIUTZVCVBADXIWHWIJAVT
+        DWHUPQDEWCUBXGLVDVBZAWAXIWIUPRXIFWDUBXHXKVDVBVEVFAWKWLGUEZJUGZWPWQHUEZU
+        PZCDUQZBDUQXBAXPBCDDTVGAXQXABDWHXLAXPWTCDWHXLAXNWOXOWSAXMWNJAGWMWKWLAVT
+        GWMUPQEGWCUBXGOVHVBVIVJAHWRWPWQAWAHWRUPRFHWDUBXHPVHVBVIVKVLVLVFAIJUGKXD
+        XESAIXCJAVTIXCUPQEIWCUBXGMVMVBVJAWAKXEUPRFKWDUBXHNVMVBVNVOBCWHWIWMWRWCW
+        DJXEXCWHUTWIUTWMUTWRUTXCUTXEUTVPVQVREFJWCWDXGXHVSVQ $.
+    $}
+
+    isrhmd.c $e |- C = ( Base ` S ) $.
+    isrhmd.p $e |- .+ = ( +g ` R ) $.
+    isrhmd.q $e |- .+^ = ( +g ` S ) $.
+    isrhmd.f $e |- ( ph -> F : B --> C ) $.
+    isrhmd.hp $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+        ( F ` ( x .+ y ) ) = ( ( F ` x ) .+^ ( F ` y ) ) ) $.
+    $( Demonstration of ring homomorphism.  (Contributed by Stefan O'Rear,
+       8-Mar-2015.) $)
+    isrhmd $p |- ( ph -> F e. ( R RingHom S ) ) $=
+      ( crg wcel cgrp ringgrp syl isghmd isrhm2d ) ABCDHIJKLMNOPQRSTUAUBUCABCFG
+      HIMDEOUDUEUFAHUIUJHUKUJTHULUMAIUIUJIUKUJUAIULUMUGUHUNUO $.
+  $}
+
+  ${
+    rhm1.o $e |- .1. = ( 1r ` R ) $.
+    rhm1.n $e |- N = ( 1r ` S ) $.
+    $( Ring homomorphisms are required to fix 1.  (Contributed by Stefan
+       O'Rear, 8-Mar-2015.) $)
+    rhm1 $p |- ( F e. ( R RingHom S ) -> ( F ` .1. ) = N ) $=
+      ( crh co wcel cmgp cfv c0g cmhm wceq eqid rhmmhm syl crg ringidvalg mhm0
+      rhmrcl1 fveq2d rhmrcl2 3eqtr4d ) DABHIJZAKLZMLZDLZBKLZMLZCDLZEUFDUGUJNIJU
+      IUKOABDUGUJUGPZUJPZQUGUJDUKUHUHPUKPUARUFASJZULUIOABDUBUOCUHDACUGSUMFTUCRU
+      FBSJEUKOABDUDBEUJSUNGTRUE $.
+  $}
+
+  ${
+    rhmf1o.b $e |- B = ( Base ` R ) $.
+    rhmf1o.c $e |- C = ( Base ` S ) $.
+    $( A ring homomorphism is bijective iff its converse is also a ring
+       homomorphism.  (Contributed by AV, 22-Oct-2019.) $)
+    rhmf1o $p |- ( F e. ( R RingHom S )
+                   -> ( F : B -1-1-onto-> C <-> `' F e. ( S RingHom R ) ) ) $=
+      ( crh co wcel wf1o wa crg cghm cmgp cfv cmhm adantr syl eqid ccnv rhmrcl2
+      rhmrcl1 jca simpr wb rhmghm ghmf1o bicomd mpbird cbs eqidd wceq f1oeq123d
+      mgpbasg biimpa rhmmhm mhmf1o isrhm sylanbrc wf rhmf adantl dff1o4 impbida
+      wfn ffnd ) ECDHIJZABEKZEUAZDCHIJZVHVILZDMJZCMJZLZVJDCNIJZVJDOPZCOPZQIJZLV
+      KVHVOVIVHVMVNCDEUBZCDEUCZUDRVLVPVSVLVPVIVHVIUEVLECDNIJZVPVIUFVHWBVICDEUGR
+      WBVIVPCDEABFGUHUISUJVLVSVRUKPZVQUKPZEKZVHVIWEVHAWCBWDEEVHEULVHVNAWCUMWAAC
+      VRMVRTZFUOSVHVMBWDUMVTBDVQMVQTZGUOSUNUPVLEVRVQQIJZVSWEUFVHWHVICDEVRVQWFWG
+      UQRWHWEVSWCWDVRVQEWCTWDTURUISUJUDDCVJVQVRWGWFUSUTVHVKLZEAVFVJBVFVIWIABEVH
+      ABEVAVKABCDEFGVBRVGWIBAVJVKBAVJVAVHBADCVJGFVBVCVGABEVDUTVE $.
+
+    $( An isomorphism of rings is a bijective homomorphism.  (Contributed by
+       AV, 22-Oct-2019.)  Remove sethood antecedent.  (Revised by SN,
+       12-Jan-2025.) $)
+    isrim $p |- ( F e. ( R RingIso S )
+            <-> ( F e. ( R RingHom S ) /\ F : B -1-1-onto-> C ) ) $=
+      ( crs co wcel crh ccnv wa wf1o isrim0 rhmf1o bicomd pm5.32i bitri ) ECDHI
+      JECDKIJZELDCKIJZMTABENZMCDEOTUAUBTUBUAABCDEFGPQRS $.
+
+    $( An isomorphism of rings is a bijection.  (Contributed by AV,
+       22-Oct-2019.) $)
+    rimf1o $p |- ( F e. ( R RingIso S ) -> F : B -1-1-onto-> C ) $=
+      ( crs co wcel crh wf1o isrim simprbi ) ECDHIJECDKIJABELABCDEFGMN $.
+  $}
+
+  $( A ring isomorphism is a homomorphism.  (Contributed by AV, 22-Oct-2019.)
+     Remove hypotheses.  (Revised by SN, 10-Jan-2025.) $)
+  rimrhm $p |- ( F e. ( R RingIso S ) -> F e. ( R RingHom S ) ) $=
+    ( crs co wcel crh ccnv isrim0 simplbi ) CABDEFCABGEFCHBAGEFABCIJ $.
+
+  ${
+    $d r s $.
+    $( The mapping of two rings to the ring homomorphisms between them is a
+       function.  (Contributed by AV, 1-Mar-2020.) $)
+    rhmfn $p |- RingHom Fn ( Ring X. Ring ) $=
+      ( vr vs cv cghm co cmgp cfv cmhm cin cvv wcel crg wral crh cxp wa ringgrp
+      wfn cgrp ghmex syl2an inex1g syl rgen2 dfrhm2 fnmpo ax-mp ) ACZBCZDEZUHFG
+      UIFGHEZIZJKZBLMALMNLLORUMABLLUHLKZUILKZPUJJKZUMUNUHSKUISKUPUOUHQUIQUHUITU
+      AUJUKJUBUCUDABLLULNJBAUEUFUG $.
+
+    $d R r s $.  $d S r s $.
+    $( The ring homomorphisms between two rings.  (Contributed by AV,
+       1-Mar-2020.) $)
+    rhmval $p |- ( ( R e. Ring /\ S e. Ring ) -> ( R RingHom S )
+         = ( ( R GrpHom S ) i^i ( ( mulGrp ` R ) MndHom ( mulGrp ` S ) ) ) ) $=
+      ( vr vs crg wcel wa cv cghm cmgp cfv cmhm cin crh wceq fveq2 cgrp ringgrp
+      co cvv cmpo dfrhm2 a1i oveq12 oveqan12d ineq12d adantl simpl simpr syl2an
+      ghmex inex1g syl ovmpod ) AEFZBEFZGZCDABEECHZDHZISZURJKZUSJKZLSZMZABISZAJ
+      KZBJKZLSZMZNTNCDEEVDUAOUQDCUBUCURAOZUSBOZGZVDVIOUQVLUTVEVCVHURAUSBIUDVJVK
+      VAVFVBVGLURAJPUSBJPUEUFUGUOUPUHUOUPUIUQVETFZVITFUOAQFBQFVMUPARBRABUKUJVEV
+      HTULUMUN $.
+  $}
+
+  $( The composition of ring homomorphisms is a homomorphism.  (Contributed by
+     Mario Carneiro, 12-Jun-2015.) $)
+  rhmco $p |- ( ( F e. ( T RingHom U ) /\ G e. ( S RingHom T ) ) ->
+      ( F o. G ) e. ( S RingHom U ) ) $=
+    ( crh co wcel crg ccom cghm cmgp cfv cmhm rhmrcl2 rhmghm syl2an eqid rhmmhm
+    wa rhmrcl1 anim12ci ghmco mhmco jca isrhm sylanbrc ) DBCFGHZEABFGHZTZAIHZCI
+    HZTDEJZACKGHZUMALMZCLMZNGHZTUMACFGHUHULUIUKBCDOABEUAUBUJUNUQUHDBCKGHEABKGHU
+    NUIBCDPABEPABCDEUCQUHDBLMZUPNGHEUOURNGHUQUIBCDURUPURRZUPRZSABEUOURUORZUSSUO
+    URUPDEUDQUEACUMUOUPVAUTUFUG $.
+
+  ${
+    $d c y A $.  $d c y B $.  $d c y F $.  $d c y R $.  $d c y S $.
+    $d c y X $.  $d c y .|| $.
+    rhmdvdsr.x $e |- X = ( Base ` R ) $.
+    rhmdvdsr.m $e |- .|| = ( ||r ` R ) $.
+    rhmdvdsr.n $e |- ./ = ( ||r ` S ) $.
+    $( A ring homomorphism preserves the divisibility relation.  (Contributed
+       by Thierry Arnoux, 22-Oct-2017.) $)
+    rhmdvdsr $p |- ( ( ( F e. ( R RingHom S ) /\ A e. X /\ B e. X )
+      /\ A .|| B ) -> ( F ` A ) ./ ( F ` B ) ) $=
+      ( vy vc co wcel wa cfv wceq wrex syl2anc crh w3a wbr cbs cv simpl1 simpl2
+      cmulr eqid rhmf ffvelcdmda wral simpll1 simpr ralrimiva adantr rhmmul a1i
+      syl3anc cdsr crg csrg rhmrcl1 3ad2ant1 ringsrg eqidd dvdsr2d mpbid r19.29
+      simpl fveq2d eqtr3d reximi oveq1 eqeq1d rspcev rexlimivw dvdsrd mpbir2and
+      syl rhmrcl2 ) GEFUANOZAHOZBHOZUBZABCUCZPZAGQZBGQZDUCWHFUDQZOZLUEZWHFUHQZN
+      ZWIRZLWJSZWGWBWCWKWBWCWDWFUFWBWCWDWFUGZWBHWJAGHWJEFGIWJUIUJZUKTWGMUEZGQZW
+      JOZWTWHWMNZWIRZPZMHSZWPWGXAMHULXCMHSZXEWGXAMHWGWSHOZPZWBXGXAWBWCWDWFXGUMZ
+      WGXGUNZWBHWJWSGWRUKTUOWGWSAEUHQZNZGQZXBRZMHULZXLBRZMHSZXFWGXNMHXHWBXGWCXN
+      XIXJWGWCXGWQUPWSAEFXKWMGHIXKUIWMUIUQUSUOWGWFXQWEWFUNWGMHCEXKABHEUDQRWGIUR
+      CEUTQRWGJURWGEVAOZEVBOWEXRWFWBWCXRWDEFGVCVDUPEVEVTWGXKVFWQVGVHXOXQPXNXPPZ
+      MHSXFXNXPMHVIXSXCMHXSXMXBWIXNXPVJXSXLBGXNXPUNVKVLVMVTTXAXCMHVITXDWPMHWOXC
+      LWTWJWLWTRWNXBWIWLWTWHWMVNVOVPVQVTWGLWJDFWMWHWIWGWJVFDFUTQRWGKURWGFVAOZFV
+      BOWEXTWFWBWCXTWDEFGWAVDUPFVEVTWGWMVFVRVS $.
+  $}
+
+  ${
+    $d x y F $.  $d x y R $.  $d x y S $.
+    $( A ring homomorphism is also a ring homomorphism for the opposite rings.
+       (Contributed by Thierry Arnoux, 27-Oct-2017.) $)
+    rhmopp $p |- ( F e. ( R RingHom S )
+       -> F e. ( ( oppR ` R ) RingHom ( oppR ` S ) ) ) $=
+      ( vx vy co wcel cfv cbs cmulr cur eqid crg syl mpbid wceq wa syl3anc wral
+      cplusg crh coppr rhmrcl1 wb opprringbg rhmrcl2 rhm1 oppr1g eqcomd 3eqtr4d
+      fveq2d cv simpl simprr opprbasg eleqtrrd simprl rhmmul opprmulg ffvelcdmd
+      rhmf cgrp cghm ringgrpd rhmghm ad2antrr simplr simpr ghmlin ralrimiva jca
+      jca31 feq23d oppraddg oveqd eqeq12d raleqbidv anbi12d anbi2d isghm sylibr
+      wf isrhm2d ) CABUAFGZDEAUBHZIHZWEBUBHZWEJHZWGJHZWEKHZCWGKHZWFLZWJLWKLWHLZ
+      WILZWDAMGZWEMGZABCUCZWDWOWOWPUDWQAWEMWELZUENOZWDBMGZWGMGZABCUFZWDWTWTXAUD
+      XBBWGMWGLZUENOZWDAKHZCHBKHZWJCHWKABXECXFXELZXFLZUGWDWJXECWDXEWJWDWOXEWJPW
+      QAXEWEMWRXGUHNUIUKWDXFWKWDWTXFWKPXBBXFWGMXCXHUHNUIUJWDDULZWFGZEULZWFGZQZQ
+      ZXKXIAJHZFZCHZXKCHZXICHZBJHZFZXIXKWHFZCHXSXRWIFZXNWDXKAIHZGZXIYDGZXQYAPWD
+      XMUMZXNXKWFYDWDXJXLUNZXNWDYDWFPZYGWDWOYIWQYDAWEMWRYDLZUONZNZUPZXNXIWFYDWD
+      XJXLUQZYLUPZXKXIABXOXTCYDYJXOLZXTLZURRXNYBXPCXNWOXJXLYBXPPXNWDWOYGWQNYNYH
+      YDAWHXOWFWEMWFXIXKYJYPWRWMUSRUKXNWTXSBIHZGXRYRGYCYAPXNWDWTYGXBNXNYDYRXICX
+      NWDYDYRCWBZYGYDYRABCYJYRLZVAZNZYOUTXNYDYRXKCUUBYMUTYRBWIXTYRWGMYRXSXRYTYQ
+      XCWNUSRUJWDWEVBGZWGVBGZQZWFWGIHZCWBZXIXKWETHZFZCHZXSXRWGTHZFZPZEWFSZDWFSZ
+      QZQZCWEWGVCFGWDUUEYSXIXKATHZFZCHZXSXRBTHZFZPZEYDSZDYDSZQZQUUQWDUUCUUDUVFW
+      DWEWSVDWDWGXDVDWDYSUVEUUAWDUVDDYDWDYFQZUVCEYDUVGYEQCABVCFGZYFYEUVCWDUVHYF
+      YEABCVEVFWDYFYEVGUVGYEVHUURUVAABXICXKYDYJUURLZUVALZVIRVJVJVKVLWDUVFUUPUUE
+      WDYSUUGUVEUUOWDYDYRWFUUFCYKWDWTYRUUFPXBYRBWGMXCYTUONVMWDUVDUUNDYDWFYKWDUV
+      CUUMEYDWFYKWDUUTUUJUVBUULWDUUSUUICWDUURUUHXIXKWDWOUURUUHPWQUURAWEMWRUVIVN
+      NVOUKWDUVAUUKXSXRWDWTUVAUUKPXBUVABWGMXCUVJVNNVOVPVQVQVRVSOEDUUHUUKWEWGCWF
+      UUFWLUUFLUUHLUUKLVTWAWC $.
+  $}
+
+  $( Ring homomorphisms preserve unit elements.  (Contributed by Thierry
+     Arnoux, 23-Oct-2017.) $)
+  elrhmunit $p |- ( ( F e. ( R RingHom S ) /\ A e. ( Unit ` R ) )
+    -> ( F ` A ) e. ( Unit ` S ) ) $=
+    ( crh co wcel cui cfv wa cur cdsr wbr coppr eqidd crg adantr syl eqid mpbid
+    cbs simpl csrg rhmrcl1 ringsrg simpr unitcld ringidcl 3syl isunitd rhmdvdsr
+    simpld syl31anc wb rhm1 breq2d rhmopp wceq eleqtrd simprd rhmrcl2 mpbir2and
+    opprbasg ) DBCEFGZABHIZGZJZADIZCHIZGVHCKIZCLIZMZVHVJCNIZLIZMZVGVHBKIZDIZVKM
+    ZVLVGVDABUAIZGVPVSGZAVPBLIZMZVRVDVFUBZVGVSBVEAVGVSOVGVEOZVGBPGZBUCGVDWEVFBC
+    DUDZQZBUERZVDVFUFZUGZVGVDWEVTWCWFVSBVPVSSZVPSZUHUIZVGWBAVPBNIZLIZMZVGVFWBWP
+    JWIVGWABWNVEVPWOAWDVGVPOVGWAOVGWNOVGWOOWHUJTZULAVPWAVKBCDVSWKWASVKSUKUMVDVR
+    VLUNVFVDVQVJVHVKBCVPDVJWLVJSUOZUPQTVGVHVQVNMZVOVGDWNVMEFGZAWNUAIZGVPXAGWPWS
+    VDWTVFBCDUQQVGAVSXAWJVGWEVSXAURWGVSBWNPWNSWKVCRZUSVGVPVSXAWMXBUSVGWBWPWQUTA
+    VPWOVNWNVMDXAXASWOSVNSUKUMVDWSVOUNVFVDVQVJVHVNWRUPQTVGVKCVMVIVJVNVHVGVIOVGV
+    JOVGVKOVGVMOVGVNOVGCPGZCUCGVDXCVFBCDVAQCUERUJVB $.
+
+  $( Ring homomorphisms preserve the inverse of unit elements.  (Contributed by
+     Thierry Arnoux, 23-Oct-2017.) $)
+  rhmunitinv $p |- ( ( F e. ( R RingHom S ) /\ A e. ( Unit ` R ) )
+    -> ( F ` ( ( invr ` R ) ` A ) ) = ( ( invr ` S ) ` ( F ` A ) ) ) $=
+    ( co wcel cui cfv cinvr cmulr wceq cur crg cbs eqidd adantr syl cvv eleqtrd
+    eqid crh rhmrcl1 unitlinv sylan fveq2d simpl csrg ringsrg unitssd unitinvcl
+    wa sseldd rhmmul syl3anc rhm1 3eqtr3d rhmrcl2 elrhmunit syl2anc eqtr4d cmgp
+    simpr cress cplusg mgpplusgg basfn elexd funfvex funfni sylancr ssexd mgpex
+    wfn ressplusgd oveqd eqeq12d wb unitgrp syldan unitgrpbasd grprcan syl13anc
+    cgrp bitrd mpbid ) DBCUAEFZABGHZFZUKZABIHZHZDHZADHZCJHZEZWMCIHZHZWMWNEZKZWL
+    WQKZWIWOCLHZWRWIWKABJHZEZDHZBLHZDHZWOXAWIXCXEDWFBMFZWHXCXEKBCDUBZBXBWGXEWJA
+    WGTZWJTZXBTZXETZUCUDUEWIWFWKBNHZFAXMFXDWOKWFWHUFWIWGXMWKWIXMBWGWIXMOWIWGOWI
+    XGBUGFWFXGWHXHPBUHQUIZWFXGWHWKWGFZXHBWGWJAXIXJUJUDZULWIWGXMAXNWFWHVBULWKABC
+    XBWNDXMXMTXKWNTZUMUNWFXFXAKWHBCXEDXAXLXATZUOPUPWICMFZWMCGHZFZWRXAKWFXSWHBCD
+    UQZPZABCDURZCWNXTXAWPWMXTTZWPTZXQXRUCUSUTWIWSWLWMCVAHZXTVCEZVDHZEZWQWMYIEZK
+    ZWTWIWOYJWRYKWIWNYIWLWMWIXTWNYGYHRRWIYHOZWIXSWNYGVDHKYCCWNYGMYGTZXQVEQWIXTC
+    NHZRWINRVMCRFYORFZVFWICMYCVGYPRCNCNVHVIVJWIYOCXTWIYOOWIXTOZWIXSCUGFYCCUHQZU
+    IVKWIXSYGRFYCCYGMYNVLQVNZVOWIWNYIWQWMYSVOVPWIYHWCFZWLYHNHZFWQUUAFWMUUAFYLWT
+    VQWFYTWHWFXSYTYBCXTYHYEYHTVRQPWIWLXTUUAWFWHXOWLXTFXPWKBCDURVSWICXTYHYQYMYRV
+    TZSWIWQXTUUAWIXSYAWQXTFYCYDCXTWPWMYEYFUJUSUUBSWIWMXTUUAYDUUBSUUAYIYHWLWQWMU
+    UATYITWAWBWDWE $.
 
 
 $(
@@ -161078,6 +161504,67 @@ $)
     ( ccnfld crg wcel cz cvv cmgp cfv cress co czring wceq cnring df-zring eqid
     zex mgpress mp2an ) ABCDECAFGZDHIJFGKLODAJRBEMRNPQ $.
 
+  ${
+    $d n x y B $.  $d f x y F $.  $d f n x y R $.  $d n .x. $.  $d n x y .1. $.
+    mulgghm2.m $e |- .x. = ( .g ` R ) $.
+    mulgghm2.f $e |- F = ( n e. ZZ |-> ( n .x. .1. ) ) $.
+    ${
+      mulgghm2.b $e |- B = ( Base ` R ) $.
+      $( The powers of a group element give a homomorphism from ` ZZ ` to a
+         group.  The name ` .1. ` should not be taken as a constraint as it may
+         be any group element.  (Contributed by Mario Carneiro, 13-Jun-2015.)
+         (Revised by AV, 12-Jun-2019.) $)
+      mulgghm2 $p |- ( ( R e. Grp /\ .1. e. B )
+                       -> F e. ( ZZring GrpHom R ) ) $=
+        ( vx vy wcel wa czring cz cv co cfv oveq1 mulgcld cgrp cplusg wceq wral
+        wf caddc cghm simpl zringgrp jctil 3expa an32s fmptd eqid mulgdir 3exp2
+        mulgcl imp42 zaddcl adantl simpll simplr fvmptd3 simprl oveq12d 3eqtr4d
+        simprr ralrimivva jca zringbas zringplusg isghm sylanbrc ) BUALZDALZMZN
+        UALZVNMOAFUEZJPZKPZUFQZFRZVSFRZVTFRZBUBRZQZUCZKOUDJOUDZMFNBUGQLVPVNVQVN
+        VOUHUIUJVPVRWHVPEOEPZDCQZAFVNWIOLZVOWJALZVNWKVOWLACBWIDIGUQUKULHUMVPWGJ
+        KOOVPVSOLZVTOLZMZMZWADCQZVSDCQZVTDCQZWEQZWBWFVNWOVOWQWTUCZVNWMWNVOXAVNW
+        MWNVOXAAWECBVSVTDIGWEUNZUOUPURULWPEWAWJWQOFAHWIWADCSWOWAOLVPVSVTUSUTZWP
+        ACBWADIGVNVOWOVAZXCVNVOWOVBZTVCWPWCWRWDWSWEWPEVSWJWROFAHWIVSDCSVPWMWNVD
+        ZWPACBVSDIGXDXFXETVCWPEVTWJWSOFAHWIVTDCSVPWMWNVGZWPACBVTDIGXDXGXETVCVEV
+        FVHVIKJUFWENBFOAVJIVKXBVLVM $.
+    $}
+
+    mulgrhm.1 $e |- .1. = ( 1r ` R ) $.
+    $( The powers of the element ` 1 ` give a ring homomorphism from ` ZZ ` to
+       a ring.  (Contributed by Mario Carneiro, 14-Jun-2015.)  (Revised by AV,
+       12-Jun-2019.) $)
+    mulgrhm $p |- ( R e. Ring -> F e. ( ZZring RingHom R ) ) $=
+      ( vx wcel cz czring cfv c1 co cv oveq1 wceq fvmptd3 mulgcld vy cmul cmulr
+      crg zringbas zring1 zringmulr eqid zringring a1i id cbs 1zzd ringidcl syl
+      mulg1 eqeltrd eqtrd wa ringgrp adantr simprr ringlidm syldan oveq2d simpl
+      cgrp simprl mulgass2 syl13anc mulgass 3eqtr4rd zmulcl adantl oveq12d cghm
+      3eqtr4d mulgghm2 syl2anc isrhm2d ) AUDJZIUAKLAUBAUCMZNECUEUFHUGWBUHZLUDJW
+      AUIUJWAUKWANEMNCBOZCWADNDPZCBOZWDKEAULMZGWENCBQWAUMWAWDCWGWACWGJZWDCRWGAC
+      WGUHZHUNZWGBACWIFUPUOZWJUQSWKURWAIPZKJZUAPZKJZUSZUSZWLWNUBOZCBOZWLCBOZWNC
+      BOZWBOZWREMWLEMZWNEMZWBOWQWLCXAWBOZBOZWLXABOZXBWSWQXEXAWLBWAWPXAWGJZXEXAR
+      WQWGBAWNCWIFWAAVGJZWPAUTZVAZWAWMWOVBZWAWHWPWJVAZTZWGAWBCXAWIWCHVCVDVEWQWA
+      WMWHXHXBXFRWAWPVFWAWMWOVHZXMXNWGABWBWLCXAWIFWCVIVJWQXIWMWOWHWSXGRXKXOXLXM
+      WGBAWLWNCWIFVKVJVLWQDWRWFWSKEWGGWEWRCBQWPWRKJWAWLWNVMVNZWQWGBAWRCWIFXKXPX
+      MTSWQXCWTXDXAWBWQDWLWFWTKEWGGWEWLCBQXOWQWGBAWLCWIFXKXOXMTSWQDWNWFXAKEWGGW
+      EWNCBQXLXNSVOVQWAXIWHELAVPOJXJWJWGABCDEFGWIVRVSVT $.
+
+    $( The powers of the element ` 1 ` give the unique ring homomorphism from
+       ` ZZ ` to a ring.  (Contributed by Mario Carneiro, 14-Jun-2015.)
+       (Revised by AV, 12-Jun-2019.) $)
+    mulgrhm2 $p |- ( R e. Ring -> ( ZZring RingHom R ) = { F } ) $=
+      ( vf wcel czring co cv wa wceq cz cmpt cfv zringbas c1 crg crh csn cbs wf
+      eqid rhmf adantl feqmptd cmg rhmghm ad2antlr simpr ghmmulg syl3anc ccnfld
+      cghm 1zzd cmul ax-1cn cnfldmulg mpan2 adantr zringmulg eqtr4d zcn mulridd
+      cc 3eqtr3d fveq2d zring1 rhm1 oveq2d mpteq2dva eqtrd eqtr4di velsn sylibr
+      1z ex ssrdv mulgrhm snssd eqssd ) AUAJZKAUBLZEUCZWEIWFWGWEIMZWFJZWHWGJZWE
+      WINZWHEOWJWKWHDPDMZCBLZQZEWKWHDPWLWHRZQWNWKDPAUDRZWHWIPWPWHUEWEPWPKAWHSWP
+      UFUGUHUIWKDPWOWMWKWLPJZNZWLTKUJRZLZWHRZWLTWHRZBLZWOWMWRWHKAUQLJZWQTPJZXAX
+      COWIXDWEWQKAWHUKULWKWQUMWRURPWSBWHKAWLTSWSUFFUNUOWRWTWLWHWQWTWLOWKWQWLTUP
+      UJRLZWLTUSLZWTWLWQTVHJXFXGOZUTWLTVAVBZWQXEXFWTOVSWQXENXFXGWTWQXHXEXIVCWLT
+      VDVEVBWQWLWLVFVGVIUHVJWRXBCWLBWIXBCOWEWQKATWHCVKHVLULVMVIVNVOGVPIEVQVRVTW
+      AWEEWFABCDEFGHWBWCWD $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -161123,6 +161610,79 @@ $)
       ( s sSet <. ( le ` ndx ) , [_ ( ( ZRHom ` s ) |`
       if ( n = 0 , ZZ , ( 0 ..^ n ) ) ) / f ]_
         ( ( f o. <_ ) o. `' f ) >. ) ) $.
+  $}
+
+  ${
+    $d r s $.  $d n N $.  $d n .1. $.  $d n r R $.  $d n .x. $.
+    zrhval.l $e |- L = ( ZRHom ` R ) $.
+    $( Define the unique homomorphism from the integers to a ring or field.
+       (Contributed by Mario Carneiro, 13-Jun-2015.)  (Revised by AV,
+       12-Jun-2019.) $)
+    zrhvalg $p |- ( R e. V -> L = U. ( ZZring RingHom R ) ) $=
+      ( vr wcel czrh cfv czring crh co cuni cv cvv df-zrh wceq oveq2 unieqd crg
+      elex zringring rhmex mpan uniexd fvmptd3 eqtrid ) ACFZBAGHIAJKZLZDUGEAIEM
+      ZJKZLUINGNEOUJAPUKUHUJAIJQRACTUGUHNISFUGUHNFUAIASCUBUCUDUEUF $.
+
+    ${
+      zrhval2.m $e |- .x. = ( .g ` R ) $.
+      zrhval2.1 $e |- .1. = ( 1r ` R ) $.
+      $( Alternate value of the ` ZRHom ` homomorphism.  (Contributed by Mario
+         Carneiro, 12-Jun-2015.) $)
+      zrhval2 $p |- ( R e. Ring -> L = ( n e. ZZ |-> ( n .x. .1. ) ) ) $=
+        ( crg wcel czring crh co cuni cz cv cmpt zrhvalg csn eqid unieqd eqtrdi
+        mulgrhm2 zex mptex unisn eqtrd ) AIJZEKALMZNZDODPCBMZQZAEIFRUHUJULSZNUL
+        UHUIUMABCDULGULTHUCUAULDOUKUDUEUFUBUG $.
+
+      $( Value of the ` ZRHom ` homomorphism.  (Contributed by Mario Carneiro,
+         14-Jun-2015.) $)
+      zrhmulg $p |- ( ( R e. Ring /\ N e. ZZ ) ->
+        ( L ` N ) = ( N .x. .1. ) ) $=
+        ( vn crg wcel cz wa cfv cv co cmpt wceq adantr eqid zrhval2 oveq1 simpr
+        fveq1d cbs cgrp ringgrp ringidcl mulgcld fvmptd3 eqtrd ) AJKZELKZMZEDNZ
+        EILIOZCBPZQZNZECBPZULUOUSRUMULEDURABCIDFGHUAUDSUNIEUQUTLURAUENZURTUPECB
+        UBULUMUCZUNVABAECVATZGULAUFKUMAUGSVBULCVAKUMVAACVCHUHSUIUJUK $.
+    $}
+
+    $( Set existence for ` ZRHom ` .  (Contributed by Jim Kingdon,
+       19-May-2025.) $)
+    zrhex $p |- ( R e. V -> L e. _V ) $=
+      ( wcel czring crh co cuni cvv zrhvalg zringring rhmex mpan uniexd eqeltrd
+      crg ) ACEZBFAGHZIJABCDKRSJFQERSJELFAQCMNOP $.
+
+    $( The ` ZRHom ` homomorphism is the unique ring homomorphism from ` ZZ ` .
+       (Contributed by Mario Carneiro, 15-Jun-2015.)  (Revised by AV,
+       12-Jun-2019.) $)
+    zrhrhmb $p |- ( R e. Ring -> ( F e. ( ZZring RingHom R ) <-> F = L ) ) $=
+      ( vn crg wcel czring crh co csn wceq cz cv cur cfv cmg cmpt eqid cvv syl
+      mulgrhm2 zrhval2 sneqd eqtr4d eleq2d wb zrhex elsn2g bitrd ) AFGZBHAIJZGB
+      CKZGZBCLZUKULUMBUKULEMENAOPZAQPZJRZKUMAUQUPEURUQSZURSUPSZUBUKCURAUQUPECDU
+      SUTUCUDUEUFUKCTGUNUOUGACFDUHBCTUIUAUJ $.
+
+    $( The ` ZRHom ` homomorphism is a homomorphism.  (Contributed by Mario
+       Carneiro, 12-Jun-2015.)  (Revised by AV, 12-Jun-2019.) $)
+    zrhrhm $p |- ( R e. Ring -> L e. ( ZZring RingHom R ) ) $=
+      ( crg wcel czring crh co wceq eqid zrhrhmb mpbiri ) ADEBFAGHEBBIBJABBCKL
+      $.
+  $}
+
+  ${
+    zrh1.l $e |- L = ( ZRHom ` R ) $.
+    zrh1.o $e |- .1. = ( 1r ` R ) $.
+    $( Interpretation of 1 in a ring.  (Contributed by Stefan O'Rear,
+       6-Sep-2015.) $)
+    zrh1 $p |- ( R e. Ring -> ( L ` 1 ) = .1. ) $=
+      ( crg wcel czring crh co c1 cfv wceq zrhrhm zring1 rhm1 syl ) AFGCHAIJGKC
+      LBMACDNHAKCBOEPQ $.
+  $}
+
+  ${
+    zrh0.l $e |- L = ( ZRHom ` R ) $.
+    zrh0.z $e |- .0. = ( 0g ` R ) $.
+    $( Interpretation of 0 in a ring.  (Contributed by Stefan O'Rear,
+       6-Sep-2015.) $)
+    zrh0 $p |- ( R e. Ring -> ( L ` 0 ) = .0. ) $=
+      ( crg wcel czring crh cghm cc0 cfv wceq zrhrhm rhmghm zring0 ghmid 3syl
+      co ) AFGBHAISGBHAJSGKBLCMABDNHABOHABKCPEQR $.
   $}
 
   ${
@@ -161222,6 +161782,52 @@ $)
     znlidl $p |- ( N e. ZZ -> ( S ` { N } ) e. ( LIdeal ` ZZring ) ) $=
       ( wcel czring crg csn wss cfv clidl zringring snssi zringbas eqid sylancr
       cz rspcl ) BPDEFDBGZPHRAIEJIZDKBPLPESRACMSNQO $.
+
+    znval.u $e |- U = ( ZZring /s ( ZZring ~QG ( S ` { N } ) ) ) $.
+    $( Making a commutative ring as a quotient of ` ZZ ` and ` n ZZ ` .
+       (Contributed by Mario Carneiro, 12-Jun-2015.)  (Revised by AV,
+       13-Jun-2019.) $)
+    zncrng2 $p |- ( N e. ZZ -> U e. CRing ) $=
+      ( cz wcel czring ccrg csn cfv clidl zringcrng znlidl eqid quscrng sylancr
+      ) CFGHIGCJAKZHLKZGBIGMACDNHRBSESOPQ $.
+
+    znval.y $e |- Y = ( Z/nZ ` N ) $.
+    znval.f $e |- F = ( ( ZRHom ` U ) |` W ) $.
+    znval.w $e |- W = if ( N = 0 , ZZ , ( 0 ..^ N ) ) $.
+    ${
+      znval.l $e |- .<_ = ( ( F o. <_ ) o. `' F ) $.
+      $( The value of the ` Z/nZ ` structure.  It is defined as the quotient
+         ring ` ZZ / n ZZ ` , with an "artificial" ordering added.  (In other
+         words, ` Z/nZ ` is a _ring_ with an _order_ , but it is not an
+         _ordered ring_ , which as a term implies that the order is compatible
+         with the ring operations in some way.)  (Contributed by Mario
+         Carneiro, 14-Jun-2015.)  (Revised by Mario Carneiro, 2-May-2016.)
+         (Revised by AV, 13-Jun-2019.) $)
+      znval $p |- ( N e. NN0 -> Y = ( U sSet <. ( le ` ndx ) , .<_ >. ) ) $=
+        ( vz wcel cfv co czring cc0 cvv vn vs vf cn0 czn cnx cple cop csts crsp
+        cv csn cqg cqus czrh wceq cz cfzo cif cres cle ccom csb df-zn zringring
+        ccnv crg a1i wa vex rspex elv snex fvex eqgex mp2an qusex simpr eqtr4di
+        id fveq2d simpl sneqd fveq12d oveq12d sylan9eqr eqid zrhex resex simpll
+        eqeq1d oveq2d ifbieq2d reseq12d coeq1d cnveqd coeq12d csbied cn eqeltri
+        opeq2d ax-mp snexg fvexg sylancr eqeltrid plendxnn syl resexg xrex xpex
+        cxr lerelxr ssexi sylancl cnvexg syl2anc setsex syl3anc fvmptd3 eqtrid
+        cxp coexg ) EUDOZGEUEPBUFUGPZDUHZUIQZJYDUAENRUBNUKZYHUAUKZULZYHUJPZPZUM
+        QZUNQZUBUKZYEUCYOUOPZYISUPZUQSYIURQZUSZUTZUCUKZVAVBZUUAVFZVBZVCZUHZUIQZ
+        VCZVCYGUDUETNUCUAUBVDYIEUPZNRUUHYGVGRVGOZUUIVEVHUUIYHRUPZVIZUBYNUUGYGTY
+        NTOZUULYHTOZYMTOZUUMNVJZUUNYLTOUUOUUPYJYKTTYKTONTYHVKVLYIUAVJVMVNYLYHTT
+        VOVPYMYHTTVQVPVHUULYOYNUPZVIZYOBUUFYFUIUUQUULYOYNBUUQVTUULYNRREULZAPZUM
+        QZUNQZBUULYHRYMUVAUNUUIUUKVRZUULYHRYLUUTUMUVCUULYJUUSYKAUULYKRUJPZAUULY
+        HRUJUVCWAHVSUULYIEUUIUUKWBWCWDWEWEIVSWFZUURUUEDYEUURUCYTUUDDTYTTOUURYPY
+        SYPTOUBYOYPTYPWGWHVLWIVHUURUUAYTUPZVIZUUDCVAVBZCVFZVBZDUVGUUBUVHUUCUVIU
+        VGUUACVAUVFUURUUAYTCUVFVTUURYTBUOPZFUTZCUURYPUVKYSFUURYOBUOUVEWAUURYSES
+        UPZUQSEURQZUSFUURYQUVMYRUVNUQUURYIESUUIUUKUUQWJZWKUURYIESURUVOWLWMLVSWN
+        KVSWFZWOUVGUUACUVPWPWQMVSWRXAWEWRWRYDVTYDBTOZYEWSOZDTOYGTOYDBUVBTIYDUUJ
+        UVATOZUVBTOVEYDUUJUUTTOZUVSVEYDATOUUSTOUVTAUVDTHUUJUVDTOVEVGRVKXBWTEUDX
+        CUUSATTXDXEUUTRVGTVOXEUVARVGTVQXEXFZUVRYDXGVHYDDUVJTMYDUVHTOZUVITOZUVJT
+        OYDCTOZVATOUWBYDCUVLTKYDUVKTOZUVLTOYDUVQUWEUWABUVKTUVKWGWHXHUVKFTXIXHXF
+        ZVAXLXLYBXLXLXJXJXKXMXNCVATTYCXOYDUWDUWCUWFCTXPXHUVHUVITTYCXQXFYEDBTTWS
+        XRXSXTYA $.
+    $}
   $}
 
 
