@@ -20343,7 +20343,7 @@ $)
        definition.  This also makes some proofs shorter and probably easier to
        read, without the constant switching between two kinds of equality.
 
-       See also comments under ~ df-clab , ~ df-clel , and ~ eqabb .
+       See also comments under ~ df-clab , ~ df-clel , and ~ eqab .
 
        In the form of ~ dfcleq , this is called the "axiom of extensionality"
        by [Levy] p. 338, who treats the theory of classes as an extralogical
