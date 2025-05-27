@@ -4342,7 +4342,7 @@ set.mm proof also uses domfi</TD>
 
 <TR>
 <TD id="missing-infi">infi</TD>
-<TD><I>none</I></TD>
+<TD>~ infidc</TD>
 <TD>Implies excluded middle as shown at ~ infiexmid . It
 is conjectured that we could prove the special case
 ` ( A e. Fin /\ B e. Fin /\ ( A u. B ) e. Fin ) -> ( A i^i B ) e. Fin `</TD>
@@ -9846,21 +9846,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>4sqlem11</td>
-  <td><i>none</i></td>
-  <td>The set.mm proof uses ssfi to show that ` A ` ,
-  ` ran F ` , and ` ( A u. ran F ) ` are finite.</td>
-</tr>
-
-<tr>
-  <td>4sqlem12</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof would apparently work if 4sqlem11
-  can be proved (probably with nonempty changed to
-  inhabited).</td>
-</tr>
-
-<tr>
   <td>4sqlem13</td>
   <td><i>none</i></td>
   <td>adapting the set.mm proof would require showing
@@ -14380,8 +14365,7 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>lgseisenlem3 , lgseisenlem4 , lgseisen</td>
   <td><i>none</i></td>
   <td>presumably the set.mm proofs can be adapted once we
-  have added Z/nZ and ZRHom and have added more theorems
-  concerning ` gsum ` .</td>
+  have added more theorems concerning ` gsum ` .</td>
 </tr>
 
 <tr>
@@ -14425,7 +14409,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>2sq</td>
+  <td id="missing-2sq">2sq</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses 2sqlem11</td>
 </tr>
@@ -14529,8 +14513,9 @@ of Transcendental Numbers</td>
 
   <tr>
     <td>20.  All Primes (1 mod 4) Equal the Sum of Two Squares</td>
-    <td>At first glance it would appear this would intuitionize
-    without much trouble.</td>
+    <td>There is some more work to do with quadradic residue
+    theorems but this seems feasible.  See more detailed
+    notes under <a href="#missing-2sq">2sq</a></td>
   </tr>
 
   <tr>
