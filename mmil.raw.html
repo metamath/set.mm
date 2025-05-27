@@ -4342,7 +4342,7 @@ set.mm proof also uses domfi</TD>
 
 <TR>
 <TD id="missing-infi">infi</TD>
-<TD><I>none</I></TD>
+<TD>~ infidc</TD>
 <TD>Implies excluded middle as shown at ~ infiexmid . It
 is conjectured that we could prove the special case
 ` ( A e. Fin /\ B e. Fin /\ ( A u. B ) e. Fin ) -> ( A i^i B ) e. Fin `</TD>
@@ -4548,7 +4548,7 @@ this implies excluded middle</TD>
 <TR>
   <TD>pwfi</TD>
   <TD><I>none</I></TD>
-  <TD>The set.mm proof uses domfi and other theorems we don't have</TD>
+  <TD>Implies excluded middle per ~ pw1fin</TD>
 </TR>
 
 <TR>
@@ -9846,21 +9846,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>4sqlem11</td>
-  <td><i>none</i></td>
-  <td>The set.mm proof uses ssfi to show that ` A ` ,
-  ` ran F ` , and ` ( A u. ran F ) ` are finite.</td>
-</tr>
-
-<tr>
-  <td>4sqlem12</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof would apparently work if 4sqlem11
-  can be proved (probably with nonempty changed to
-  inhabited).</td>
-</tr>
-
-<tr>
   <td>4sqlem13</td>
   <td><i>none</i></td>
   <td>adapting the set.mm proof would require showing
@@ -10124,7 +10109,14 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>ressid</td>
-  <td>~ strressid , ~ grpressid , ~ ringressid</td>
+  <td>~ strressid , ~ ressbasid , ~ grpressid ,
+  ~ ablressid , ~ rngressid , ~ ringressid</td>
+  <td>set.mm relies on decidable equality for the keys
+  of an extensible structure.  Therefore, we need either
+  to ensure they are integers (as in ~ strressid ), or
+  only look at certain slots ( ~ ressbasid looks at the
+  base slot, ~ grpressid looks at the base and ` +g `
+  slots, etc).</td>
 </tr>
 
 <TR>
@@ -10762,20 +10754,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>submmnd , submbas , subm0 , subsubm</td>
-  <td><i>none</i></td>
-  <td>the set.mm proofs use structure restriction theorems
-  not present in iset.mm</td>
-</tr>
-
-<tr>
-  <td>resmhm , resmhm2 , resmhm2b</td>
-  <td><i>none</i></td>
-  <td>the set.mm proofs use structure restriction theorems
-  not present in iset.mm</td>
-</tr>
-
-<tr>
   <td>submacs</td>
   <td><i>none</i></td>
   <td>this is in terms of the ACS syntax</td>
@@ -10885,18 +10863,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>imasgrp2 , imasgrp , imasgrpf1</td>
-  <td><i>none</i></td>
-  <td>depend on structure image</td>
-</tr>
-
-<tr>
-  <td>qusgrp2</td>
-  <td><i>none</i></td>
-  <td>depends on quotient structure</td>
-</tr>
-
-<tr>
   <td>xpsgrp</td>
   <td><i>none</i></td>
   <td>the set.mm proof depends on prdsgrpd</td>
@@ -10977,9 +10943,21 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>qusgrp , quseccl , qusadd , qus0 , qusinv , qussub</td>
+  <td>quselbas</td>
+  <td>~ quselbasg</td>
+  <td>adds a set existence condition</td>
+</tr>
+
+<tr>
+  <td>quseccl0</td>
+  <td>~ quseccl0g</td>
+  <td>adds a set existence condition</td>
+</tr>
+
+<tr>
+  <td>qus0 , qusinv , qussub</td>
   <td><i>none</i></td>
-  <td>presumably provable once we have defined the /s syntax</td>
+  <td>presumably provable</td>
 </tr>
 
 <tr>
@@ -10995,11 +10973,9 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>df-ghm , isghm , isghm3 , ghmgrp1 , ghmgrp2 , ghmf , ghmlin ,
-  ghmid , ghminv , ghmsub , isghmd , ghmmhm</td>
+  <td>pwsdiagghm</td>
   <td><i>none</i></td>
-  <td>should be feasible in a way similar to what we did for
-  ~ df-mhm and related theorems</td>
+  <td>the set.mm proof uses pwsdiagmhm</td>
 </tr>
 
 <tr>
@@ -11019,6 +10995,36 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>the set.mm proof would seem to work once we
   have mulgnn0di</td>
+</tr>
+
+<tr>
+  <td>mulgmhm</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses mulgnn0di</td>
+</tr>
+
+<tr>
+  <td>mulgghm</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses mulgdi and isghmd</td>
+</tr>
+
+<tr>
+  <td>mulgsubdi</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses mulgdi</td>
+</tr>
+
+<tr>
+  <td>ghmfghm</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses isghmd</td>
+</tr>
+
+<tr>
+  <td>invghm</td>
+  <td><i>none</i></td>
+  <td>presumably feasible once we have GrpHom</td>
 </tr>
 
 <tr>
@@ -11060,6 +11066,19 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>mgpds</td>
   <td>~ mgpdsg</td>
+</tr>
+
+<tr>
+  <td>prdsmulrngcl , prdsrngd</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof depends on structure product
+  theorems we don't have</td>
+</tr>
+
+<tr>
+  <td>xpsrngd</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses prdsrngd</td>
 </tr>
 
 <tr>
@@ -11175,6 +11194,11 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>opprrngb</td>
+  <td>~ opprrngbg</td>
+</tr>
+
+<tr>
   <td>opprringb</td>
   <td>~ opprringbg</td>
 </tr>
@@ -11196,8 +11220,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>opprsubg</td>
-  <td><i>none</i></td>
-  <td>may be possible once SubGrp is defined</td>
+  <td>~ opprsubgg</td>
+  <td>adds set existence condition</td>
 </tr>
 
 <tr>
@@ -11243,6 +11267,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>unitss</td>
   <td>~ unitssd</td>
+  <td>adds ` R e. SRing ` condition</td>
 </tr>
 
 <tr>
@@ -11318,13 +11343,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>dfrhm2</td>
-  <td><i>none</i></td>
-  <td>presumably not hard once isghm3 is available</td>
-</tr>
-
-<tr>
-  <td>df-ric and all ring isomorphism relation theorems</td>
+  <td id="missing-df-ric">df-ric and all ring isomorphism
+  relation theorems</td>
   <td><i>none</i></td>
   <td>This should be definable in some way but
   it isn't clear whether the set.mm definition would work
@@ -11333,19 +11353,78 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>df-drng</td>
+  <td>rhmisrnghm</td>
   <td><i>none</i></td>
-  <td>The set.mm definition is in terms of having an inverse
-  if not equal to zero.  We may want a new slot for apartness
-  (the approach taken in [Guevers]), or it should be possible to
-  define a division ring as a local ring for which the apartness
-  generated by ~ df-apr is tight.</td>
+  <td>should be provable once we have RngHom</td>
 </tr>
 
 <tr>
-  <td>df-field</td>
+  <td>idrhm</td>
   <td><i>none</i></td>
-  <td>once we define division rings this should follow</td>
+  <td>presumably provable</td>
+</tr>
+
+<tr>
+  <td>rimgim</td>
+  <td><i>none</i></td>
+  <td>presumably provable once we have GrpIso</td>
+</tr>
+
+<tr>
+  <td>rimisrngim</td>
+  <td><i>none</i></td>
+  <td>presumably provable once we have RngIso</td>
+</tr>
+
+<tr>
+  <td>pwsco1rhm</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof depends on pwsring , pwsco1mhm ,
+  pwsbas , and pwsmgp</td>
+</tr>
+
+<tr>
+  <td>pwsco2rhm</td>
+  <td><i>none</i></td>
+  <td>may be possible once we have more structure
+  power theorems</td>
+</tr>
+
+<tr>
+  <td>brric , brrici , brric2 , ricgic</td>
+  <td><i>none</i></td>
+  <td>see <a href="#missing-df-ric" >df-ric entry</a></td>
+</tr>
+
+<tr>
+  <td>opprsubrng</td>
+  <td>~ opprsubrngg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>subrngint</td>
+  <td>~ subrngintm</td>
+  <td>changes not empty to inhabited</td>
+</tr>
+
+<tr>
+  <td>subrngmre</td>
+  <td><i>none</i></td>
+  <td>may be possible if we have the Moore syntax</td>
+</tr>
+
+<tr>
+  <td>rhmimasubrnglem , rhmimasubrng</td>
+  <td><i>none</i></td>
+  <td>presumably provable, once homomorphisms are better
+  developed</td>
+</tr>
+
+<tr>
+  <td>cntzsubrng</td>
+  <td><i>none</i></td>
+  <td>may be possible if we have Cntz</td>
 </tr>
 
 <tr>
@@ -11365,6 +11444,22 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>may be possible if we define notation and theorems related
   to Moore systems</td>
+</tr>
+
+<tr>
+  <td>df-drng</td>
+  <td><i>none</i></td>
+  <td>The set.mm definition is in terms of having an inverse
+  if not equal to zero.  We may want a new slot for apartness
+  (the approach taken in [Guevers]), or it should be possible to
+  define a division ring as a local ring for which the apartness
+  generated by ~ df-apr is tight.</td>
+</tr>
+
+<tr>
+  <td>df-field</td>
+  <td><i>none</i></td>
+  <td>once we define division rings this should follow</td>
 </tr>
 
 <tr>
@@ -11483,8 +11578,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>islss</td>
   <td>~ islssm</td>
-  <td>adds set existence condition and changes not empty
-  to inhabited</td>
+  <td>changes not empty to inhabited</td>
 </tr>
 
 <tr>
@@ -11727,7 +11821,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>rlmsca</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses ressid</td>
+  <td>The set.mm proof uses ressid .  There is a
+  partial result at ~ rlmscabas</td>
 </tr>
 
 <tr>
@@ -11781,22 +11876,21 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>islidl</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses rlmsca2</td>
+  <td>~ islidlm</td>
+  <td>changes nonempty to inhabited</td>
 </tr>
 
 <tr>
-  <td>rnglidlmcl , rngridlmcl</td>
+  <td>rngridlmcl</td>
   <td><i>none</i></td>
-  <td>presumably feasible once we add the Rng syntax
-  and theorems</td>
+  <td>should be feasible now that we have ~ opprrng</td>
 </tr>
 
 <tr>
   <td>lidlmcl</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses rnglidlmcl and, indirectly,
-  islidl</td>
+  <td>should be feasible now that we have ~ rnglidlmcl and
+  ~ islidlm</td>
 </tr>
 
 <tr>
@@ -11852,9 +11946,20 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>lidlrsppropd</td>
+  <td>~ lidlrsppropdg</td>
+  <td>adds set existence hypotheses</td>
+</tr>
+
+<tr>
+  <td>2idlval</td>
+  <td>~ 2idlvalg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>qusrhm</td>
   <td><i>none</i></td>
-  <td>Would seem to require at least small changes.
-  The set.mm proof uses rlmsca2 .</td>
+  <td>the set.mm proof uses isrhm2d</td>
 </tr>
 
 <tr>
@@ -11978,15 +12083,61 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>mulgghm2</td>
+  <td>df-chr</td>
   <td><i>none</i></td>
-  <td>seems provable once GrpHom is defined</td>
+  <td>presumably possible once we have defined od (order of an
+  element)</td>
 </tr>
 
 <tr>
-  <td>mulgrhm , mulgrhm2</td>
+  <td>zrhval</td>
+  <td>~ zrhvalg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>zrhpropd</td>
   <td><i>none</i></td>
-  <td>seem provable once more ~ df-rnghom related theorems are proved</td>
+  <td>the set.mm proof uses rhmpropd and also will require
+  attention to set existence for ` K ` and ` L `</td>
+</tr>
+
+<tr>
+  <td>zlmlem</td>
+  <td>~ zlmlemg</td>
+  <td>adds ` ( E `` ndx ) e. NN ` and ` G e. V ` conditions</td>
+</tr>
+
+<tr>
+  <td>zlmbas</td>
+  <td>~ zlmbasg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>zlmplusg</td>
+  <td>~ zlmplusgg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>zlmmulr</td>
+  <td>~ zlmmulrg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>zlmvsca</td>
+  <td>~ zlmvscag</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>zlmlmod</td>
+  <td><i>none</i></td>
+  <td>although this should be provable (perhaps with
+  a set existence condition on ` G ` ), it is lightly
+  used in set.mm</td>
 </tr>
 
 <tr>
@@ -14214,8 +14365,7 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>lgseisenlem3 , lgseisenlem4 , lgseisen</td>
   <td><i>none</i></td>
   <td>presumably the set.mm proofs can be adapted once we
-  have added Z/nZ and ZRHom and have added more theorems
-  concerning ` gsum ` .</td>
+  have added more theorems concerning ` gsum ` .</td>
 </tr>
 
 <tr>
@@ -14259,7 +14409,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>2sq</td>
+  <td id="missing-2sq">2sq</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses 2sqlem11</td>
 </tr>
@@ -14363,8 +14513,9 @@ of Transcendental Numbers</td>
 
   <tr>
     <td>20.  All Primes (1 mod 4) Equal the Sum of Two Squares</td>
-    <td>At first glance it would appear this would intuitionize
-    without much trouble.</td>
+    <td>There is some more work to do with quadradic residue
+    theorems but this seems feasible.  See more detailed
+    notes under <a href="#missing-2sq">2sq</a></td>
   </tr>
 
   <tr>
