@@ -14,11 +14,11 @@ The ones WITH "Notes" may have to be processed manually.
 
 PROPOSED:
 Date      Old       New         Notes
-proposed  dfss      sseqinr
-proposed  dfss2     sseqin
-proposed  dfss3f    dfss2f
-proposed  dfss6     dfss3
-proposed  dfss3     dfss2
+proposed  dfss      sseqinr     provisional, disputed
+proposed  dfss2     sseqin      provisional, disputed
+proposed  dfss3f    dfss2f      provisional, disputed
+proposed  dfss6     dfss3       provisional, disputed
+proposed  dfss3     dfss2       provisional, disputed
 proposed  fidmfisupp fdmfifsupp merge duplicate theorems
 proposed  grplmulf1o grpladdf1o
 proposed  df-rgmod  df-rlm
