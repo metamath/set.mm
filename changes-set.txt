@@ -14,6 +14,11 @@ The ones WITH "Notes" may have to be processed manually.
 
 PROPOSED:
 Date      Old       New         Notes
+proposed  dfss      sseqinr     provisional, disputed
+proposed  dfss2     sseqin      provisional, disputed
+proposed  dfss3f    dfss2f      provisional, disputed
+proposed  dfss6     dfss3       provisional, disputed
+proposed  dfss3     dfss2       provisional, disputed
 proposed  fidmfisupp fdmfifsupp merge duplicate theorems
 proposed  grplmulf1o grpladdf1o
 proposed  df-rgmod  df-rlm
@@ -92,6 +97,9 @@ Date      Old       New         Notes
 20-May-25 mhpaddcl  [same]      Removed unneeded hypothesis
 20-May-25 mhpinvcl  [same]      Removed unneeded hypothesis
 20-May-25 mhpvscacl  [same]     Removed unneeded hypothesis
+19-May-25 dfss2f    dfssf
+19-May-25 dfss2     [same]      Use df-ss statement
+19-May-25 df-ss     [same]      Use dfss2 statement
 18-May-25 rhmmpllem2 rhmpsrlem2 Moved from SN's mathbox to main set.mm
 18-May-25 rhmmpllem1 rhmpsrlem1 Moved from SN's mathbox to main set.mm
 18-May-25 asclply1subcl [same]  Moved from TA's mathbox to main set.mm
