@@ -46922,6 +46922,18 @@ $)
 
   ${
     $d ph z $.  $d x z $.
+    $( Existence of the ` iota ` class when all the possible values are
+       contained in a set.  (Contributed by Jim Kingdon, 27-May-2025.) $)
+    iotaexab $p |- ( { x | ph } e. V -> ( iota x ph ) e. _V ) $=
+      ( vz cab wcel cio cuni cvv uniexg wss wal abid elssuni sylbir ax-gen wceq
+      cv wi sseq2 nfab1 nfuni nfeq2 imbi2d albid imbi12d iotass vtoclg mpisyl
+      ssexd ) ABEZCFZABGZUKHZIUKCJZULUNIFABRZUNKZSZBLZUMUNKZUOURBAUPUKFUQABMUPU
+      KNOPAUPDRZKZSZBLZUMVAKZSUSUTSDUNIVAUNQZVDUSVEUTVFVCURBBVAUNBUKABUAUBUCVFV
+      BUQAVAUNUPTUDUEVAUNUMTUFABVAUGUHUIUJ $.
+  $}
+
+  ${
+    $d ph z $.  $d x z $.
     $( Theorem *14.22 in [WhiteheadRussell] p. 190.  (Contributed by Andrew
        Salmon, 12-Jul-2011.) $)
     iota4 $p |- ( E! x ph -> [. ( iota x ph ) / x ]. ph ) $=
