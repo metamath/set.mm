@@ -110929,8 +110929,9 @@ $)
     ZABEDZUIFDZAGEDHAIJBKJZUKUHUJLMQQABBNOUGGAEPRUJHUAZULFDHHFDHUIULUIULFSSUBHH
     TTUCUDUEUF $.
 
-  $( A positive integer is less than or equal to its square.  (Contributed by
-     NM, 15-Sep-1999.)  (Revised by Mario Carneiro, 12-Sep-2015.) $)
+  $( A positive integer is less than or equal to its square.  For general
+     integers, see ~ zzlesq .  (Contributed by NM, 15-Sep-1999.)  (Revised by
+     Mario Carneiro, 12-Sep-2015.) $)
   nnlesq $p |- ( N e. NN -> N <_ ( N ^ 2 ) ) $=
     ( cn wcel cmul co c2 cexp cle c1 nncn mulridd wbr nnge1 cr cc0 wb 1red nnre
     clt nngt0 lemul2 syl112anc mpbid eqbrtrrd cc wceq sqval syl breqtrrd ) ABCZ
@@ -111619,6 +111620,15 @@ $)
     resqcld orbi12d ad2ant2r syl2an 3bitr4rd ) ACDZEAFGZHZBCDZEBFGZHZHZABIGZBAI
     GZJZAKLMZBKLMZIGZUPUOIGZJZABNGZUOUPNGZUKULUQUMURABOUJUGUMURPBAOQUAUEUHUTUNP
     UFUIABRUBUGUOCDUPCDVAUSPUJUGAUEUFSTUJBUHUISTUOUPRUCUD $.
+
+  $( An integer is less than or equal to its square.  (Contributed by BJ,
+     6-Feb-2025.) $)
+  zzlesq $p |- ( N e. ZZ -> N <_ ( N ^ 2 ) ) $=
+    ( cz wcel cn cr cneg cn0 wa wo c2 cexp co cle wbr elznn animorrl olc jaodan
+    sylbi cc0 nnlesq simpl 0red resqcld nn0ge0 le0neg1 sylan2 sqge0d letrd jaoi
+    biimpar syl ) ABCZADCZAECZAFZGCZHZIZAAJKLZMNZUMUOUNUQIHUSAOUOUNUSUQUOUNURPU
+    RUNQRSUNVAURAUAURATUTUOUQUBZURUCURAVBUDUQUOTUPMNZATMNZUPUEUOVDVCAUFUKUGURAV
+    BUHUIUJUL $.
 
   ${
     $d A k m p $.  $d A k m w $.  $d M m $.  $d N m w $.
