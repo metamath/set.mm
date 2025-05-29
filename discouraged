@@ -15582,8 +15582,8 @@ New usage of "ceqsalALT" is discouraged (0 uses).
 New usage of "ceqsalgALT" is discouraged (0 uses).
 New usage of "ceqsalvOLD" is discouraged (0 uses).
 New usage of "ceqsexOLD" is discouraged (0 uses).
-New usage of "ceqsexvOLD" is discouraged (0 uses).
 New usage of "ceqsexvOLDOLD" is discouraged (0 uses).
+New usage of "ceqsexvOLDOLDOLD" is discouraged (0 uses).
 New usage of "ceqsralvOLD" is discouraged (0 uses).
 New usage of "cffldtocusgrOLD" is discouraged (0 uses).
 New usage of "cgcdOLD" is discouraged (1 uses).
@@ -16289,7 +16289,6 @@ New usage of "dmdsl3" is discouraged (4 uses).
 New usage of "dmdsym" is discouraged (1 uses).
 New usage of "dmfexALT" is discouraged (0 uses).
 New usage of "dmmp" is discouraged (3 uses).
-New usage of "dmmpogaOLD" is discouraged (0 uses).
 New usage of "dmmulpi" is discouraged (6 uses).
 New usage of "dmmulsr" is discouraged (3 uses).
 New usage of "dmplp" is discouraged (9 uses).
@@ -16763,15 +16762,12 @@ New usage of "expcnOLD" is discouraged (0 uses).
 New usage of "expcomdg" is discouraged (0 uses).
 New usage of "f1coOLD" is discouraged (0 uses).
 New usage of "f1cofveqaeqALT" is discouraged (0 uses).
-New usage of "f1dmOLD" is discouraged (0 uses).
 New usage of "f1dom2gOLD" is discouraged (0 uses).
-New usage of "f1eqcocnvOLD" is discouraged (0 uses).
 New usage of "f1finf1oOLD" is discouraged (0 uses).
 New usage of "f1omoALT" is discouraged (0 uses).
 New usage of "f1oweALT" is discouraged (0 uses).
 New usage of "fco3OLD" is discouraged (0 uses).
 New usage of "fcoOLD" is discouraged (0 uses).
-New usage of "fdmOLD" is discouraged (0 uses).
 New usage of "festinoALT" is discouraged (0 uses).
 New usage of "fh1" is discouraged (3 uses).
 New usage of "fh1i" is discouraged (2 uses).
@@ -20242,8 +20238,8 @@ Proof modification of "ceqsalALT" is discouraged (23 steps).
 Proof modification of "ceqsalgALT" is discouraged (58 steps).
 Proof modification of "ceqsalvOLD" is discouraged (10 steps).
 Proof modification of "ceqsexOLD" is discouraged (49 steps).
-Proof modification of "ceqsexvOLD" is discouraged (47 steps).
-Proof modification of "ceqsexvOLDOLD" is discouraged (10 steps).
+Proof modification of "ceqsexvOLDOLD" is discouraged (47 steps).
+Proof modification of "ceqsexvOLDOLDOLD" is discouraged (10 steps).
 Proof modification of "ceqsralvOLD" is discouraged (38 steps).
 Proof modification of "cffldtocusgrOLD" is discouraged (165 steps).
 Proof modification of "cgsex4gOLD" is discouraged (318 steps).
@@ -20375,7 +20371,6 @@ Proof modification of "dju1p1e2" is discouraged (72 steps).
 Proof modification of "dju1p1e2ALT" is discouraged (34 steps).
 Proof modification of "djuexALT" is discouraged (51 steps).
 Proof modification of "dmfexALT" is discouraged (25 steps).
-Proof modification of "dmmpogaOLD" is discouraged (31 steps).
 Proof modification of "dmtrclfvRP" is discouraged (46 steps).
 Proof modification of "dom0OLD" is discouraged (40 steps).
 Proof modification of "dral1ALT" is discouraged (34 steps).
@@ -20681,9 +20676,7 @@ Proof modification of "exlimexi" is discouraged (15 steps).
 Proof modification of "expcnOLD" is discouraged (294 steps).
 Proof modification of "f1coOLD" is discouraged (99 steps).
 Proof modification of "f1cofveqaeqALT" is discouraged (124 steps).
-Proof modification of "f1dmOLD" is discouraged (19 steps).
 Proof modification of "f1dom2gOLD" is discouraged (77 steps).
-Proof modification of "f1eqcocnvOLD" is discouraged (361 steps).
 Proof modification of "f1finf1oOLD" is discouraged (211 steps).
 Proof modification of "f1omoALT" is discouraged (39 steps).
 Proof modification of "f1oweALT" is discouraged (805 steps).
@@ -20691,7 +20684,6 @@ Proof modification of "falimfal" is discouraged (6 steps).
 Proof modification of "falimtru" is discouraged (6 steps).
 Proof modification of "fco3OLD" is discouraged (60 steps).
 Proof modification of "fcoOLD" is discouraged (98 steps).
-Proof modification of "fdmOLD" is discouraged (19 steps).
 Proof modification of "festinoALT" is discouraged (24 steps).
 Proof modification of "ficardun2OLD" is discouraged (137 steps).
 Proof modification of "ficardunOLD" is discouraged (127 steps).
