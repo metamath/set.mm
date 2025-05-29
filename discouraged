@@ -15582,6 +15582,7 @@ New usage of "ceqsalALT" is discouraged (0 uses).
 New usage of "ceqsalgALT" is discouraged (0 uses).
 New usage of "ceqsalvOLD" is discouraged (0 uses).
 New usage of "ceqsexOLD" is discouraged (0 uses).
+New usage of "ceqsexvOLD" is discouraged (0 uses).
 New usage of "ceqsexvOLDOLD" is discouraged (0 uses).
 New usage of "ceqsexvOLDOLDOLD" is discouraged (0 uses).
 New usage of "ceqsralvOLD" is discouraged (0 uses).
@@ -20238,6 +20239,7 @@ Proof modification of "ceqsalALT" is discouraged (23 steps).
 Proof modification of "ceqsalgALT" is discouraged (58 steps).
 Proof modification of "ceqsalvOLD" is discouraged (10 steps).
 Proof modification of "ceqsexOLD" is discouraged (49 steps).
+Proof modification of "ceqsexvOLD" is discouraged (36 steps).
 Proof modification of "ceqsexvOLDOLD" is discouraged (47 steps).
 Proof modification of "ceqsexvOLDOLDOLD" is discouraged (10 steps).
 Proof modification of "ceqsralvOLD" is discouraged (38 steps).
