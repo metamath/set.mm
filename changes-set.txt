@@ -14,11 +14,11 @@ The ones WITH "Notes" may have to be processed manually.
 
 PROPOSED:
 Date      Old       New         Notes
-proposed  dfss      sseqinr     provisional, disputed
-proposed  dfss2     sseqin      provisional, disputed
-proposed  dfss3f    dfss2f      provisional, disputed
-proposed  dfss6     dfss3       provisional, disputed
-proposed  dfss3     dfss2       provisional, disputed
+proposed  dfss      sseqinr
+proposed  dfss2     sseqin
+proposed  dfss3f    dfss2f
+proposed  dfss6     dfss3
+proposed  dfss3     dfss2
 proposed  fidmfisupp fdmfifsupp merge duplicate theorems
 proposed  grplmulf1o grpladdf1o
 proposed  df-rgmod  df-rlm
@@ -84,7 +84,6 @@ proposed  syl5ibrcom imbitrridcom
 proposed  syl6      imtrdi      alternate proposal: syldi
 proposed  syl6com   imtrdicom
 proposed  syl6d     imtrdid
-proposed  syl6bir   biimtrrdi
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
@@ -103,6 +102,7 @@ Date      Old       New         Notes
 30-May-25 mpllmodd   [same]     Moved from SN's mathbox to main set.mm
 30-May-25 mplringd   [same]     Moved from SN's mathbox to main set.mm
 30-May-25 coexd      [same]     Moved from SN's mathbox to main set.mm
+30-May-25 syl6bir   biimtrrdi
 20-May-25 syl6bi    biimtrdi
 20-May-25 ply1bas   [same]      Removed unneeded hypothesis
 20-May-25 mhpmulcl  [same]      Removed unneeded hypothesis
