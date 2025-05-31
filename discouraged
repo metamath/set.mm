@@ -19636,6 +19636,7 @@ New usage of "vscandx" is discouraged (22 uses).
 New usage of "vsfval" is discouraged (4 uses).
 New usage of "vtocl2gafOLD" is discouraged (0 uses).
 New usage of "vtocl3gaOLD" is discouraged (0 uses).
+New usage of "vtocl3gaOLDOLD" is discouraged (0 uses).
 New usage of "vtocl3gafOLD" is discouraged (0 uses).
 New usage of "vtoclALT" is discouraged (0 uses).
 New usage of "vtocldOLD" is discouraged (0 uses).
@@ -21730,7 +21731,10 @@ Proof modification of "vfermltlALT" is discouraged (279 steps).
 Proof modification of "vk15.4j" is discouraged (217 steps).
 Proof modification of "vk15.4jVD" is discouraged (268 steps).
 Proof modification of "vn0ALT" is discouraged (6 steps).
-Proof modification of "vtocl3gaOLD" is discouraged (45 steps).
+Proof modification of "vtocl2gafOLD" is discouraged (111 steps).
+Proof modification of "vtocl3gaOLD" is discouraged (110 steps).
+Proof modification of "vtocl3gaOLDOLD" is discouraged (45 steps).
+Proof modification of "vtocl3gafOLD" is discouraged (185 steps).
 Proof modification of "vtoclALT" is discouraged (11 steps).
 Proof modification of "vtocldOLD" is discouraged (21 steps).
 Proof modification of "vtocleOLD" is discouraged (12 steps).
