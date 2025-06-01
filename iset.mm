@@ -162098,6 +162098,113 @@ $)
         ZVAXLXLYBXLXLXJXJXKXMXNCVATTYCXOYDUWDUWCUWFCTXPXHUVHUVITTYCXQXFYEDBTTWS
         XRXSXTYA $.
     $}
+
+    znle.l $e |- .<_ = ( le ` Y ) $.
+    $( The value of the ` Z/nZ ` structure.  It is defined as the quotient ring
+       ` ZZ / n ZZ ` , with an "artificial" ordering added.  (In other words,
+       ` Z/nZ ` is a _ring_ with an _order_ , but it is not an _ordered ring_ ,
+       which as a term implies that the order is compatible with the ring
+       operations in some way.)  (Contributed by Mario Carneiro, 14-Jun-2015.)
+       (Revised by AV, 13-Jun-2019.) $)
+    znle $p |- ( N e. NN0 -> .<_ = ( ( F o. <_ ) o. `' F ) ) $=
+      ( wcel cple cfv cle cvv czring crg cn0 cnx ccom ccnv cop csts eqid fveq2d
+      co znval wceq a1i csn cqus zringring crsp rspex ax-mp eqeltri snexg fvexg
+      cqg sylancr eqgex qusex eqeltrid czrh cres zrhex resexg 3syl cxr cxp xrex
+      xpex lerelxr ssexi coexg sylancl cnvexg syl2anc pleslid setsslid 3eqtr4d
+      syl ) EUANZGOPZBUBOPCQUCZCUDZUCZUEUFUIZOPZDWJWFGWKOABCWJEFGHIJKLWJUGUJUHD
+      WGUKWFMULWFBRNZWJRNZWJWLUKWFBSSEUMZAPZVBUIZUNUIZRIWFSTNZWQRNZWRRNUOWFWSWP
+      RNZWTUOWFARNWORNXAASUPPZRHWSXBRNUOTSUQURUSEUAUTWOARRVAVCWPSTRVDVCWQSTRVEV
+      CVFZWFWHRNZWIRNZWNWFCRNZQRNXDWFCBVGPZFVHZRKWFWMXGRNXHRNXCBXGRXGUGVIXGFRVJ
+      VKVFZQVLVLVMVLVLVNVNVOVPVQCQRRVRVSWFXFXEXICRVTWEWHWIRRVRWARWJORBWBWCWAWD
+      $.
+  $}
+
+  ${
+    $d x E $.  $d x K $.  $d x y N $.  $d x y U $.  $d x y Y $.
+    znval2.s $e |- S = ( RSpan ` ZZring ) $.
+    znval2.u $e |- U = ( ZZring /s ( ZZring ~QG ( S ` { N } ) ) ) $.
+    znval2.y $e |- Y = ( Z/nZ ` N ) $.
+    ${
+      znval2.l $e |- .<_ = ( le ` Y ) $.
+      $( Self-referential expression for the ` Z/nZ ` structure.  (Contributed
+         by Mario Carneiro, 14-Jun-2015.)  (Revised by AV, 13-Jun-2019.) $)
+      znval2 $p |- ( N e. NN0 -> Y = ( U sSet <. ( le ` ndx ) , .<_ >. ) ) $=
+        ( cn0 wcel cnx cple cfv cc0 co ccom cop csts eqid czrh wceq cz cfzo cif
+        cres cle ccnv znval znle opeq2d oveq2d eqtr4d ) DJKZEBLMNZBUANDOUBUCODU
+        DPUEZUFZUGQUQUHQZRZSPBUOCRZSPABUQURDUPEFGHUQTZUPTZURTUIUNUTUSBSUNCURUOA
+        BUQCDUPEFGHVAVBIUJUKULUM $.
+    $}
+
+    ${
+      znbaslem.e $e |- E = Slot ( E ` ndx ) $.
+      znbaslemnn.nn $e |- ( E ` ndx ) e. NN $.
+      znbaslem.n $e |- ( E ` ndx ) =/= ( le ` ndx ) $.
+      $( Lemma for ~ znbas .  (Contributed by Mario Carneiro, 14-Jun-2015.)
+         (Revised by Mario Carneiro, 14-Aug-2015.)  (Revised by AV,
+         13-Jun-2019.)  (Revised by AV, 9-Sep-2021.)  (Revised by AV,
+         3-Nov-2024.) $)
+      znbaslemnn $p |- ( N e. NN0 -> ( E ` U ) = ( E ` Y ) ) $=
+        ( wcel cfv co cvv czring crg cle eqid syl cn0 cnx cple cop csts csn cqg
+        wceq cqus zringring rspex ax-mp eqeltri snexg fvexg sylancr eqgex qusex
+        crsp eqeltrid czrh cc0 cz cfzo cif cres ccom ccnv znval cn plendxnn a1i
+        zrhex resexg cxr xrex lerelxr ssexi coexg sylancl cnvexg syl2anc setsex
+        cxp xpex syl3anc eqeltrd pleslid slotex ndxslid setsslnid znval2 fveq2d
+        eqtr4d ) DUALZBCMZBUBUCMZEUCMZUDUENZCMZECMWOBOLZWROLZWPWTUHWOBPPDUFZAMZ
+        UGNZUINZOGWOPQLZXEOLZXFOLUJWOXGXDOLZXHUJWOAOLXCOLXIAPUSMZOFXGXJOLUJQPUK
+        ULUMDUAUNXCAOOUOUPXDPQOUQUPXEPQOURUPUTZWOEOLXBWOEBWQBVAMZDVBUHVCVBDVDNV
+        EZVFZRVGZXNVHZVGZUDUENZOABXNXQDXMEFGHXNSXMSXQSVIWOXAWQVJLZXQOLZXROLXKXS
+        WOVKVLWOXOOLZXPOLZXTWOXNOLZROLYAWOXLOLZYCWOXAYDXKBXLOXLSVMTXLXMOVNTZRVO
+        VOWDVOVOVPVPWEVQVRXNROOVSVTWOYCYBYEXNOWATXOXPOOVSWBWQXQBOOVJWCWFWGEUCOW
+        HWITOWRWQCOBCUBCMIJWJKVKWKWBWOEWSCABWRDEFGHWRSWLWMWN $.
+    $}
+
+    $( The base set of ` Z/nZ ` is the same as the quotient ring it is based
+       on.  (Contributed by Mario Carneiro, 15-Jun-2015.)  (Revised by AV,
+       13-Jun-2019.)  (Revised by AV, 3-Nov-2024.) $)
+    znbas2 $p |- ( N e. NN0 -> ( Base ` U ) = ( Base ` Y ) ) $=
+      ( cbs baseid basendxnn cnx cple cfv plendxnbasendx necomi znbaslemnn ) AB
+      HCDEFGIJKLMKHMNOP $.
+
+    $( The additive structure of ` Z/nZ ` is the same as the quotient ring it
+       is based on.  (Contributed by Mario Carneiro, 15-Jun-2015.)  (Revised by
+       AV, 13-Jun-2019.)  (Revised by AV, 3-Nov-2024.) $)
+    znadd $p |- ( N e. NN0 -> ( +g ` U ) = ( +g ` Y ) ) $=
+      ( cplusg plusgid plusgndxnn cnx cple plendxnplusgndx necomi znbaslemnn
+      cfv ) ABHCDEFGIJKLPKHPMNO $.
+
+    $( The multiplicative structure of ` Z/nZ ` is the same as the quotient
+       ring it is based on.  (Contributed by Mario Carneiro, 15-Jun-2015.)
+       (Revised by AV, 13-Jun-2019.)  (Revised by AV, 3-Nov-2024.) $)
+    znmul $p |- ( N e. NN0 -> ( .r ` U ) = ( .r ` Y ) ) $=
+      ( cmulr mulridx cnx cfv cslot wceq cn wcel mulrslid simpri plendxnmulrndx
+      cple necomi znbaslemnn ) ABHCDEFGIHJHKZLMUBNOPQJSKUBRTUA $.
+  $}
+
+  ${
+    znbas.s $e |- S = ( RSpan ` ZZring ) $.
+    znbas.y $e |- Y = ( Z/nZ ` N ) $.
+    znbas.r $e |- R = ( ZZring ~QG ( S ` { N } ) ) $.
+    $( The base set of ` Z/nZ ` structure.  (Contributed by Mario Carneiro,
+       15-Jun-2015.)  (Revised by AV, 13-Jun-2019.) $)
+    znbas $p |- ( N e. NN0 -> ( ZZ /. R ) = ( Base ` Y ) ) $=
+      ( cn0 wcel cz czring cqus co cbs cfv cvv crg a1i zringring sylancr qusbas
+      cqs eqidd wceq zringbas csn crsp rspex ax-mp eqeltri snexg fvexg eqeltrid
+      cqg eqgex oveq2i znbas2 eqtrd ) CHIZJAUBKALMZNODNOUSAKUTJPQUSUTUCJKNOUDUS
+      UERUSAKCUFZBOZUNMZPGUSKQIZVBPIZVCPISUSBPIVAPIVEBKUGOZPEVDVFPISQKUHUIUJCHU
+      KVABPPULTVBKQPUOTUMVDUSSRUABUTCDEAVCKLGUPFUQUR $.
+  $}
+
+  ${
+    $d x y N $.  $d x y Y $.
+    zncrng.y $e |- Y = ( Z/nZ ` N ) $.
+    $( ` Z/nZ ` is a commutative ring.  (Contributed by Mario Carneiro,
+       15-Jun-2015.) $)
+    zncrng $p |- ( N e. NN0 -> Y e. CRing ) $=
+      ( vx vy cn0 wcel czring csn crsp cfv cqg co cqus ccrg cplusg oveqdr cmulr
+      eqid cv cz nn0z zncrng2 syl cbs eqidd znbas2 znadd znmul crngpropd mpbid
+      wa ) AFGZHHAIHJKZKLMNMZOGZBOGUMAUAGUPAUBUNUOAUNSZUOSZUCUDUMDEUOUEKZUOBUMU
+      SUFUNUOABUQURCUGUMDTUSGETUSGULZDEUOPKBPKUNUOABUQURCUHQUMUTDEUORKBRKUNUOAB
+      UQURCUIQUJUK $.
   $}
 
 
