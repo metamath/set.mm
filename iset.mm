@@ -140998,6 +140998,40 @@ $)
           YRVWPUOUYSVXCUYQUYRVWPIUNWEWFUYNVWRUOZUYQVXBVXCWWSUYPVXAURUMWWSUYOVWT
           UJUKUYNVWRUHUXTWDWDUYAUYBXQUYCUYDUYEUYFUYGUYH $.
       $}
+
+      4sq.5 $e |- ( ph -> ( 0 ... ( 2 x. N ) ) C_ S ) $.
+      4sq.6 $e |- T = { i e. NN | ( i x. P ) e. S } $.
+      4sq.7 $e |- M = inf ( T , RR , < ) $.
+
+      ${
+        $d M k u $.  $d N k m n u v $.  $d P i k n u $.  $d P k m n u v $.
+        $d P i n w x y z $.  $d S i n $.  $d T j k u $.  $d i k n ph u $.
+        $d m n ph u v $.
+        $( Lemma for 4sq .  (Contributed by Mario Carneiro, 16-Jul-2014.)
+           (Revised by AV, 14-Sep-2020.) $)
+        4sqlem13m $p |- ( ph -> ( E. j j e. T /\ M < P ) ) $=
+          ( vu vk vv vm cv cabs cfv c2 cexp co c1 caddc cmul wceq cgz wrex cmin
+          cfz wcel wex clt wbr wa cmo cc0 cab cmpt eqid 4sqlem12 simplrl elfznn
+          cn syl simpr oveq1i sq1 eqtri oveq2i simplrr cz 1z zgz ax-mp 4sqlem4a
+          abs1 sylancl eqeltrrid eqeltrrd oveq1 eleq1d elrab2 sylanbrc elex2 cr
+          ssrab3 cinf 1zzd crab cuz nnuz rabeqi cn0 wdc adantl cprime ad3antrrr
+          prmnn nnmulcld nnnn0d 4sqlemsdc infssuzcldc eqeltrid sselid nnred cle
+          ad2antrr infssuzledc eqbrtrid w3a prmz elfzm11 sylancr simp3d lelttrd
+          wb mpbid jca ex rexlimdvva mpd ) AUAUEZUFUGUHUIUJZUKULUJZUBUEZFUMUJZU
+          NZUAUOUPUBUKFUKUQUJZURUJZUPJUEHUSJUTZLFVAVBZVCZABCDEUCUAYKUDUEUHUIUJF
+          VDUJUNUDVEMURUJUPUAVFZFGUBUDKUCUUBYQUCUEUQUJVGZMNOPQUUBVHUUCVHVIAYPUU
+          AUBUAYRUOAYNYRUSZYKUOUSZVCZVCZYPUUAUUGYPVCZYSYTUUHYNHUSZYSUUHYNVLUSZY
+          OGUSZUUIUUHUUDUUJAUUDUUEYPVJZYNYQVKVMZUUHYMYOGUUGYPVNUUHYMYLUKUFUGZUH
+          UIUJZULUJZGUUOUKYLULUUOUKUHUIUJUKUUNUKUHUIWEVOVPVQVRUUHUUEUKUOUSZUUPG
+          USAUUDUUEYPVSUKVTUSZUUQWAUKWBWCBCDEYKUKGKNWDWFWGWHIUEZFUMUJZGUSZUUKIY
+          NVLHUUSYNUNUUTYOGUUSYNFUMWIWJSWKWLZJYNHWMVMUUHLYNFUUHLUUHHVLLUVAIVLHS
+          WOUUHLHWNVAWPZHTUUHUVAYNHIUKUUHWQZHUVAIVLWRUVAIUKWSUGZWRSUVAIVLUVEWTX
+          AVQZUVBUUHUUSUKYNURUJUSZVCZUUTXBUSUVAXCUVHUUTUVHUUSFUVGUUSVLUSUUHUUSY
+          NVKXDAFVLUSZUUFYPUVGAFXEUSZUVIQFXGVMZXFXHXIBCDEUUTGKNXJVMZXKXLXMXNUUH
+          YNUUMXNAFWNUSUUFYPAFUVKXNXPUUHLUVCYNXOTUUHUVAYNHIUKUVDUVFUVBUVLXQXRUU
+          HYNVTUSZUKYNXOVBZYNFVAVBZUUHUUDUVMUVNUVOXSZUULUUHUURFVTUSZUUDUVPYEWAA
+          UVQUUFYPAUVJUVQQFXTVMXPYNUKFYAYBYFYCYDYGYHYIYJ $.
+      $}
     $}
   $}
 
