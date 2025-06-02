@@ -141273,6 +141273,45 @@ $)
         UUDUUCUUPVKKYAWLYBUUOYCYIUFUJUIYJUUKYJIUFUJHUUIUFUOUUJYEGUUIUFFUGWJWKRW
         NYDULYC $.
     $}
+
+    $d S i j k n $.  $d S i j m n $.  $d i j n w x y z $.
+    $( Lemma for 4sq .  The proof is by strong induction - we show that if all
+       the integers less than ` k ` are in ` S ` , then ` k ` is as well.  In
+       this part of the proof we do the induction argument and dispense with
+       all the cases except the odd prime case, which is sent to ~ 4sqlem18 .
+       If ` k ` is ` 0 , 1 , 2 ` , we show ` k e. S ` directly; otherwise if
+       ` k ` is composite, ` k ` is the product of two numbers less than it
+       (and hence in ` S ` by assumption), so by ~ mul4sq ` k e. S ` .
+       (Contributed by Mario Carneiro, 14-Jul-2014.)  (Revised by Mario
+       Carneiro, 20-Jun-2015.) $)
+    4sqlem19 $p |- NN0 = S $=
+      ( wcel cn cc0 wceq c1 cmul co eleq1 c2 cexp caddc cfz wa vk vj vm vi cabs
+      cn0 cv wo elnn0 cfv abs1 oveq1i sq1 eqtri sq0 oveq12i 1p0e1 cgz cz 1z zgz
+      abs0 ax-mp 0z 4sqlem4a mp2an eqeltrri cprime cmin wral wne df-2 eqtr4i wb
+      adantl mpbiri csn cdif eldifsn crab cr clt cinf cdiv oddprm adantr eldifi
+      cc prmnn nncn 3syl ax-1cn sylancl 2cnd cap wbr 2ap0 a1i divcanap2d oveq1d
+      subcl npcan eqtr2d cun oveq2d nnm1nn0 elnn0uz sylib eluzfz1 fzsplit eqtrd
+      cuz wss fz0sn 00id snssi eqsstri 0p1e1 simpr dfss3 eqsstrid unssd eqsstrd
+      sylibr oveq1 eleq1d cbvrabv eqid 4sqlem18 sylanbr an32s wdc prmz 2z zdceq
+      dcne mpjaodan wi mul4sq prmind2 eqeltrdi jaoi sylbi ssriv 4sqlem1 eqssi
+      id ) UFEUAUFEUAUGZUFHUUHIHZUUHJKZUHUUHEHZUUHUIUUIUUKUUJUBUGZEHZLEHUCUGZEH
+      ZUDUGZEHZUUNUUPMNZEHZUUKUBUCUDUUHUULLEOUULUUNEOUULUUPEOUULUUREOUULUUHEOLU
+      EUJZPQNZJUEUJZPQNZRNZLEUVDLJRNLUVALUVCJRUVALPQNLUUTLPQUKULUMUNZUVCJPQNJUV
+      BJPQVBULUOUNZUPUQUNLURHZJURHZUVDEHLUSHUVGUTLVAVCZJUSHUVHVDJVAVCZABCDLJEFG
+      VEVFVGUULVHHZUUOUCLUULLVINZSNZVJZTZUULPKZUUMUULPVKZUVOUVPTUUMPEHZUVAUVARN
+      ZPEUVSLLRNPUVALUVALRUVEUVEUPVLVMUVGUVGUVSEHUVIUVIABCDLLEFGVEVFVGUVPUUMUVR
+      VNUVOUULPEOVOVPUVKUVQUVNUUMUVKUVQTUULVHPVQZVRHZUVNUUMUULVHPVSUWAUVNTZABCD
+      UULEUUHUULMNZEHZUAIVTZUDFUWEWAWBWCZUVLPWDNZGUWAUWGIHUVNUULWEWFUWBPUWGMNZL
+      RNUVLLRNZUULUWBUWHUVLLRUWBUVLPUWBUULWHHZLWHHZUVLWHHUWBUVKUULIHZUWJUWAUVKU
+      VNUULVHUVTWGWFZUULWIZUULWJWKZWLUULLXAWMUWBWNPJWOWPUWBWQWRWSZWTUWBUWJUWKUW
+      IUULKUWOWLUULLXBWMXCUWMUWBJUWHSNZJJSNZJLRNZUVLSNZXDZEUWBUWQJUVLSNZUXAUWBU
+      WHUVLJSUWPXEUWBUVLJXLUJHZJUXBHUXBUXAKUWBUVLUFHZUXCUWBUVKUWLUXDUWMUWNUULXF
+      WKUVLXGXHJUVLXIJJUVLXJWKXKUWBUWRUWTEUWREXMUWBUWRJVQZEXNJEHUXEEXMUVCUVCRNZ
+      JEUXFJJRNJUVCJUVCJRUVFUVFUPXOUNUVHUVHUXFEHUVJUVJABCDJJEFGVEVFVGZJEXPVCXQW
+      RUWBUWTUVMEUWSLUVLSXRULUWBUVNUVMEXMUWAUVNXSUCUVMEXTYDYAYBYCUWDUUPUULMNZEH
+      UAUDIUUHUUPKUWCUXHEUUHUUPUULMYEYFYGUWFYHYIYJYKUVOUVPYLZUVPUVQUHUVOUULUSHZ
+      PUSHUXIUVKUXJUVNUULYMWFYNUULPYOWMUULPYPXHYQUUOUUQTUUSYRUUNPXLUJZHUUPUXKHT
+      ABCDUUNUUPEFGYSWRYTUUJUUHJEUUJUUGUXGUUAUUBUUCUUDABCDEFGUUEUUF $.
   $}
 
 
