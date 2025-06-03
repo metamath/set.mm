@@ -110929,8 +110929,9 @@ $)
     ZABEDZUIFDZAGEDHAIJBKJZUKUHUJLMQQABBNOUGGAEPRUJHUAZULFDHHFDHUIULUIULFSSUBHH
     TTUCUDUEUF $.
 
-  $( A positive integer is less than or equal to its square.  (Contributed by
-     NM, 15-Sep-1999.)  (Revised by Mario Carneiro, 12-Sep-2015.) $)
+  $( A positive integer is less than or equal to its square.  For general
+     integers, see ~ zzlesq .  (Contributed by NM, 15-Sep-1999.)  (Revised by
+     Mario Carneiro, 12-Sep-2015.) $)
   nnlesq $p |- ( N e. NN -> N <_ ( N ^ 2 ) ) $=
     ( cn wcel cmul co c2 cexp cle c1 nncn mulridd wbr nnge1 cr cc0 wb 1red nnre
     clt nngt0 lemul2 syl112anc mpbid eqbrtrrd cc wceq sqval syl breqtrrd ) ABCZ
@@ -111619,6 +111620,15 @@ $)
     resqcld orbi12d ad2ant2r syl2an 3bitr4rd ) ACDZEAFGZHZBCDZEBFGZHZHZABIGZBAI
     GZJZAKLMZBKLMZIGZUPUOIGZJZABNGZUOUPNGZUKULUQUMURABOUJUGUMURPBAOQUAUEUHUTUNP
     UFUIABRUBUGUOCDUPCDVAUSPUJUGAUEUFSTUJBUHUISTUOUPRUCUD $.
+
+  $( An integer is less than or equal to its square.  (Contributed by BJ,
+     6-Feb-2025.) $)
+  zzlesq $p |- ( N e. ZZ -> N <_ ( N ^ 2 ) ) $=
+    ( cz wcel cn cr cneg cn0 wa wo c2 cexp co cle wbr elznn animorrl olc jaodan
+    sylbi cc0 nnlesq simpl 0red resqcld nn0ge0 le0neg1 sylan2 sqge0d letrd jaoi
+    biimpar syl ) ABCZADCZAECZAFZGCZHZIZAAJKLZMNZUMUOUNUQIHUSAOUOUNUSUQUOUNURPU
+    RUNQRSUNVAURAUAURATUTUOUQUBZURUCURAVBUDUQUOTUPMNZATMNZUPUEUOVDVCAUFUKUGURAV
+    BUHUIUJUL $.
 
   ${
     $d A k m p $.  $d A k m w $.  $d M m $.  $d N m w $.
@@ -140700,8 +140710,119 @@ $)
   $}
 
   ${
+    $d A n x $.
+    4sqexercise1.s $e |- S = { n | E. x e. ZZ n = ( x ^ 2 ) } $.
+    $( Exercise which may help in understanding the proof of ~ 4sqlemsdc .
+       (Contributed by Jim Kingdon, 25-May-2025.) $)
+    4sqexercise1 $p |- ( A e. NN0 -> DECID A e. S ) $=
+      ( cn0 wcel wdc cv c2 cexp co wceq cz wrex cneg wa syl adantr cle cfz nn0z
+      nn0negz elfzelz adantl zsqcl zdceq syl2an2r exfzdc zsqcl2 eqeltrd znegcld
+      simpr nn0zd simpl cr zre nn0red wbr znegcl zzlesq cc zcn breqtrd breqtrrd
+      sqneg lenegcon1d elfzd jca anim1i impbii rexbii2 dcbii sylibr eqeq1 dcbid
+      rexbidv elab2g mpbird ) BFGZBCGZHBAIZJKLZMZANOZHZVTWDABPZBUALZOZHWFVTWDAW
+      GBBUCBUBZVTBNGWBWHGZWCNGZWDHWJVTWKQWBNGZWLWKWMVTWBWGBUDZUEWBUFRBWCUGUHUIW
+      EWIWDWDANWHWMWDQZWKWDQWOWKWDWOWBWGBWOBWOBWOBWCFWMWDUMZWMWCFGWDWBUJSUKZUNZ
+      ULWRWMWDUOWOWBBWMWBUPGWDWBUQSWOBWQURWOWBPZWCBTWOWSWSJKLZWCTWMWSWTTUSZWDWM
+      WSNGXAWBUTWSVARSWMWTWCMZWDWMWBVBGXBWBVCWBVFRSVDWPVEVGWOWBWCBTWMWBWCTUSWDW
+      BVASWPVEVHWPVIWKWMWDWNVJVKVLVMVNVTWAWEDIZWCMZANOWEDBCFXCBMXDWDANXCBWCVOVQ
+      EVRVPVS $.
+  $}
+
+  ${
+    $d A n x y $.
+    4sqexercise2.s $e |- S = { n | E. x e. ZZ E. y e. ZZ
+      n = ( ( x ^ 2 ) + ( y ^ 2 ) ) } $.
+    $( Exercise which may help in understanding the proof of ~ 4sqlemsdc .
+       (Contributed by Jim Kingdon, 30-May-2025.) $)
+    4sqexercise2 $p |- ( A e. NN0 -> DECID A e. S ) $=
+      ( cn0 wcel wdc c2 cexp co wceq cz wrex wa adantr syl cle wbr cv caddc cfz
+      nn0negz elfzelz ad2antlr zsqcl adantl zaddcld zdceq syl2anc exfzdc simprl
+      cneg nn0z zred renegcld zsqcl2 nn0red znegcl zzlesq zcn breqtrd nn0addge2
+      cc sqneg cr simprr breqtrrd letrd lenegcon1d elfzd jca ex anim1i rexbidv2
+      impbid1 dcbid mpbird wb ad3antrrr resqcld znegcld zcnd ad3antlr nn0addge1
+      simpr simplr rexlimdva2 pm5.32rd eqeq1 2rexbidv elab2g ) CGHZCDHZICAUAZJK
+      LZBUAZJKLZUBLZMZBNOZANOZIZWNXDXBACUNZCUCLZOZIWNXBAXECCUDZCUOZWNWPXFHZPZXB
+      IXABXFOZIXKXABXECWNXENHZXJXHQZWNCNHZXJXIQZXKWRXFHZPZXOWTNHXAIXKXOXQXPQXRW
+      QWSXRWPNHZWQNHXJXSWNXQWPXECUEZUFWPUGRXRWRNHZWSNHXQYAXKWRXECUEZUHWRUGRUICW
+      TUJUKULXKXBXLXKXAXABNXFXKYAXAPZXQXAPZXKYCYDXKYCPZXQXAYEWRXECXKXMYCXNQXKXO
+      YCXPQZXKYAXAUMZYEWRCYEWRYGUPZYECYFUPZYEWRUNZWSCYEWRYHUQYEWSYEYAWSGHZYGWRU
+      RZRUSZYIYEYAYJWSSTYGYAYJYJJKLZWSSYAYJNHYJYNSTWRUTYJVARYAWRVEHYNWSMWRVBWRV
+      FRVCRYEWSWTCSYEWSVGHWQGHZWSWTSTYMYEXSYOXJXSWNYCXTUFWPURRWSWQVDUKXKYAXAVHZ
+      VIZVJVKYEWRWSCYHYMYIYEYAWRWSSTYGWRVARYQVJVLYPVMVNXQYAXAYBVOVQVPVRVSULWNXC
+      XGWNXBXBANXFWNXBXSXJWNXAXSXJVTBNWNYAPZXAPZXSXJYSXSXJYSXSPZWPXECWNXMYAXAXS
+      XHWAWNXOYAXAXSXIWAZYSXSWGZYTWPCYTWPUUBUPZYTCUUAUPZYTWPUNZWQCYTWPUUCUQYTWP
+      UUCWBZUUDYTUUEUUEJKLZWQSYTUUENHUUEUUGSTYTWPUUBWCUUEVARYTWPVEHUUGWQMYTWPUU
+      BWDWPVFRVCYTWQWTCSYTWQVGHYKWQWTSTUUFYAYKWNXAXSYLWEWQWSWFUKYRXAXSWHVIZVJVK
+      YTWPWQCUUCUUFUUDXSWPWQSTYSWPVAUHUUHVJVLVNXTVQWIWJVPVRVSWNWOXCEUAZWTMZBNOA
+      NOXCECDGUUICMUUJXAABNNUUICWTWKWLFWMVRVS $.
+  $}
+
+  ${
     4sqlem11.1 $e |- S = { n | E. x e. ZZ E. y e. ZZ E. z e. ZZ E. w e. ZZ
       n = ( ( ( x ^ 2 ) + ( y ^ 2 ) ) + ( ( z ^ 2 ) + ( w ^ 2 ) ) ) } $.
+
+    ${
+      $d A n w x y z $.
+      $( Lemma for 4sq .  The property of being the sum of four squares is
+         decidable.
+
+         The proof involves showing that (for a particular ` A ` ) there are
+         only a finite number of possible ways that it could be the sum of four
+         squares, so checking each of those possibilities in turn decides
+         whether the number is the sum of four squares.  If this proof is hard
+         to follow, especially because of its length, the simplified versions
+         at ~ 4sqexercise1 and ~ 4sqexercise2 may help clarify, as they are
+         using very much the same techniques on simplified versions of this
+         lemma.  (Contributed by Jim Kingdon, 25-May-2025.) $)
+      4sqlemsdc $p |- ( A e. NN0 -> DECID A e. S ) $=
+        ( wcel wdc co cz wrex wa syl nn0addcld adantl cle wbr letrd cn0 cv cexp
+        c2 caddc wceq cneg nn0negz nn0z adantr elfzelz ad4antlr zsqcl2 ad3antlr
+        ad2antlr nn0zd zdceq syl2anc exfzdc ad5antr simpr zred renegcld resqcld
+        cfz wb znegcld zzlesq cc sqneg breqtrd nn0red ad5antlr nn0addge2 simplr
+        zcnd cr breqtrrd lenegcon1d elfzd ex pm5.32rd rexbidv2 mpbird nn0addge1
+        impbid1 dcbid rexlimdva2 r19.29an eqeq1 2rexbidv elab2g ) EUAIZEFIZJEAU
+        BZUDUCKZBUBZUDUCKZUEKZCUBZUDUCKZDUBZUDUCKZUEKZUEKZUFZDLMZCLMZBLMZALMZJZ
+        WMXKXIAEUGZEVEKZMZJWMXIAXLEEUHZEUIZWMWOXMIZNZXIJXHBXMMZJXRXHBXLEWMXLLIZ
+        XQXOUJZWMELIZXQXPUJZXRWQXMIZNZXHJXGCXMMZJYEXGCXLEXRXTYDYAUJZXRYBYDYCUJZ
+        YEWTXMIZNZXGJXFDXMMZJYJXFDXLEYEXTYIYGUJYEYBYIYHUJZYJXBXMIZNZYBXELIXFJYJ
+        YBYMYLUJYNXEYNWSXDYNWPWRYNWOLIZWPUAIZXQYOWMYDYIYMWOXLEUKZULWOUMZOYNWQLI
+        ZWRUAIZYDYSXRYIYMWQXLEUKZUNWQUMZOPYNXAXCYNWTLIZXAUAIZYIUUCYEYMWTXLEUKZU
+        OWTUMZOYNXBLIZXCUAIZYMUUGYJXBXLEUKZQXBUMZOPPUPEXEUQURUSYJXGYKYJXFXFDLXM
+        YJXFUUGYMYJXFUUGYMVFYJXFNZUUGYMUUKUUGYMUUKUUGNZXBXLEWMXTXQYDYIXFUUGXOUT
+        WMYBXQYDYIXFUUGXPUTZUUKUUGVAZUULXBEUULXBUUNVBZUULEUUMVBZUULXBUGZXCEUULX
+        BUUOVCUULXBUUOVDZUUPUULUUQUUQUDUCKZXCRUULUUQLIUUQUUSRSUULXBUUNVGUUQVHOU
+        ULXBVIIUUSXCUFUULXBUUNVPXBVJOVKUULXCXEERUULXCXDXEUURUULXDUULXAXCUULUUCU
+        UDYIUUCYEXFUUGUUEUNUUFOZUUGUUHUUKUUJQPZVLZUULXEUULWSXDUULWPWRUULYOYPXQY
+        OWMYDYIXFUUGYQVMYROUULYSYTYDYSXRYIXFUUGUUAULUUBOPZUVAPVLUULXCVQIUUDXCXD
+        RSUURUUTXCXAVNURUULXDVQIZWSUAIZXDXERSZUVBUVCXDWSVNZURTYJXFUUGVOVRZTVSUU
+        LXBXCEUUOUURUUPUUGXBXCRSUUKXBVHQUVHTVTWAUUIWFWAWBWCWGWDUSYEXHYFYEXGXGCL
+        XMYEXGUUCYIYEXFUUCYIVFDLYEUUGNZXFNZUUCYIUVJUUCYIUVJUUCNZWTXLEWMXTXQYDUU
+        GXFUUCXOUTWMYBXQYDUUGXFUUCXPUTZUVJUUCVAZUVKWTEUVKWTUVMVBZUVKEUVLVBZUVKW
+        TUGZXAEUVKWTUVNVCUVKWTUVNVDZUVOUVKUVPUVPUDUCKZXARUVKUVPLIUVPUVRRSUVKWTU
+        VMVGUVPVHOUVKWTVIIUVRXAUFUVKWTUVMVPWTVJOVKUVKXAXEERUVKXAXDXEUVQUVKXDUVK
+        XAXCUUCUUDUVJUUFQUUGUUHYEXFUUCUUJUNZPZVLZUVKXEUVKWSXDUVKWPWRUVKYOYPXQYO
+        WMYDUUGXFUUCYQVMYROUVKYSYTYDYSXRUUGXFUUCUUAULUUBOPZUVTPVLUVKXAVQIUUHXAX
+        DRSUVQUVSXAXCWEURUVKUVDUVEUVFUWAUWBUVGURTUVIXFUUCVOVRZTVSUVKWTXAEUVNUVQ
+        UVOUUCWTXARSUVJWTVHQUWCTVTWAUUEWFWHWBWCWGWDUSXRXIXSXRXHXHBLXMXRXHYSYDXR
+        XGYSYDVFZCLXRUUCNZXFUWDDLUWEUUGNZXFNZYSYDUWGYSYDUWGYSNZWQXLEWMXTXQUUCUU
+        GXFYSXOUTWMYBXQUUCUUGXFYSXPUTZUWGYSVAZUWHWQEUWHWQUWJVBZUWHEUWIVBZUWHWQU
+        GZWREUWHWQUWKVCUWHWQUWKVDZUWLUWHUWMUWMUDUCKZWRRUWHUWMLIUWMUWORSUWHWQUWJ
+        VGUWMVHOUWHWQVIIUWOWRUFUWHWQUWJVPWQVJOVKUWHWRXEERUWHWRWSXEUWNUWHWSUWHWP
+        WRUWHYOYPXQYOWMUUCUUGXFYSYQVMYROZYSYTUWGUUBQPZVLZUWHXEUWHWSXDUWQUWHXAXC
+        UUCUUDXRUUGXFYSUUFULUUGUUHUWEXFYSUUJUNPZPVLUWHWRVQIYPWRWSRSUWNUWPWRWPVN
+        URUWHWSVQIZXDUAIZWSXERSZUWRUWSWSXDWEZURTUWFXFYSVOVRZTVSUWHWQWREUWKUWNUW
+        LYSWQWRRSUWGWQVHQUXDTVTWAUUAWFWIWHWBWCWGWDUSWMXJXNWMXIXIALXMWMXIYOXQWMX
+        HYOXQVFZBLWMYSNZXGUXECLUXFUUCNZXFUXEDLUXGUUGNZXFNZYOXQUXIYOXQUXIYONZWOX
+        LEWMXTYSUUCUUGXFYOXOUTWMYBYSUUCUUGXFYOXPUTZUXIYOVAZUXJWOEUXJWOUXLVBZUXJ
+        EUXKVBZUXJWOUGZWPEUXJWOUXMVCUXJWOUXMVDZUXNUXJUXOUXOUDUCKZWPRUXJUXOLIUXO
+        UXQRSUXJWOUXLVGUXOVHOUXJWOVIIUXQWPUFUXJWOUXLVPWOVJOVKUXJWPXEERUXJWPWSXE
+        UXPUXJWSUXJWPWRYOYPUXIYRQYSYTWMUUCUUGXFYOUUBVMZPZVLZUXJXEUXJWSXDUXSUXJX
+        AXCUUCUUDUXFUUGXFYOUUFULUUGUUHUXGXFYOUUJUNPZPVLUXJWPVQIYTWPWSRSUXPUXRWP
+        WRWEURUXJUWTUXAUXBUXTUYAUXCURTUXHXFYOVOVRZTVSUXJWOWPEUXMUXPUXNYOWOWPRSU
+        XIWOVHQUYBTVTWAYQWFWIWIWHWBWCWGWDWMWNXJGUBZXEUFZDLMCLMZBLMALMXJGEFUAUYC
+        EUFZUYEXHABLLUYFUYDXFCDLLUYCEXEWJWKWKHWLWGWD $.
+    $}
+
     ${
       4sq.2 $e |- ( ph -> N e. NN ) $.
       4sq.3 $e |- ( ph -> P = ( ( 2 x. N ) + 1 ) ) $.
@@ -140877,8 +140998,43 @@ $)
           YRVWPUOUYSVXCUYQUYRVWPIUNWEWFUYNVWRUOZUYQVXBVXCWWSUYPVXAURUMWWSUYOVWT
           UJUKUYNVWRUHUXTWDWDUYAUYBXQUYCUYDUYEUYFUYGUYH $.
       $}
+
+      4sq.5 $e |- ( ph -> ( 0 ... ( 2 x. N ) ) C_ S ) $.
+      4sq.6 $e |- T = { i e. NN | ( i x. P ) e. S } $.
+      4sq.7 $e |- M = inf ( T , RR , < ) $.
+
+      ${
+        $d M k u $.  $d N k m n u v $.  $d P i k n u $.  $d P k m n u v $.
+        $d P i n w x y z $.  $d S i n $.  $d T j k u $.  $d i k n ph u $.
+        $d m n ph u v $.
+        $( Lemma for 4sq .  (Contributed by Mario Carneiro, 16-Jul-2014.)
+           (Revised by AV, 14-Sep-2020.) $)
+        4sqlem13m $p |- ( ph -> ( E. j j e. T /\ M < P ) ) $=
+          ( vu vk vv vm cv cabs cfv c2 cexp co c1 caddc cmul wceq cgz wrex cmin
+          cfz wcel wex clt wbr wa cmo cc0 cab cmpt eqid 4sqlem12 simplrl elfznn
+          cn syl simpr oveq1i sq1 eqtri oveq2i simplrr cz 1z zgz ax-mp 4sqlem4a
+          abs1 sylancl eqeltrrid eqeltrrd oveq1 eleq1d elrab2 sylanbrc elex2 cr
+          ssrab3 cinf 1zzd crab cuz nnuz rabeqi cn0 wdc adantl cprime ad3antrrr
+          prmnn nnmulcld nnnn0d 4sqlemsdc infssuzcldc eqeltrid sselid nnred cle
+          ad2antrr infssuzledc eqbrtrid w3a prmz elfzm11 sylancr simp3d lelttrd
+          wb mpbid jca ex rexlimdvva mpd ) AUAUEZUFUGUHUIUJZUKULUJZUBUEZFUMUJZU
+          NZUAUOUPUBUKFUKUQUJZURUJZUPJUEHUSJUTZLFVAVBZVCZABCDEUCUAYKUDUEUHUIUJF
+          VDUJUNUDVEMURUJUPUAVFZFGUBUDKUCUUBYQUCUEUQUJVGZMNOPQUUBVHUUCVHVIAYPUU
+          AUBUAYRUOAYNYRUSZYKUOUSZVCZVCZYPUUAUUGYPVCZYSYTUUHYNHUSZYSUUHYNVLUSZY
+          OGUSZUUIUUHUUDUUJAUUDUUEYPVJZYNYQVKVMZUUHYMYOGUUGYPVNUUHYMYLUKUFUGZUH
+          UIUJZULUJZGUUOUKYLULUUOUKUHUIUJUKUUNUKUHUIWEVOVPVQVRUUHUUEUKUOUSZUUPG
+          USAUUDUUEYPVSUKVTUSZUUQWAUKWBWCBCDEYKUKGKNWDWFWGWHIUEZFUMUJZGUSZUUKIY
+          NVLHUUSYNUNUUTYOGUUSYNFUMWIWJSWKWLZJYNHWMVMUUHLYNFUUHLUUHHVLLUVAIVLHS
+          WOUUHLHWNVAWPZHTUUHUVAYNHIUKUUHWQZHUVAIVLWRUVAIUKWSUGZWRSUVAIVLUVEWTX
+          AVQZUVBUUHUUSUKYNURUJUSZVCZUUTXBUSUVAXCUVHUUTUVHUUSFUVGUUSVLUSUUHUUSY
+          NVKXDAFVLUSZUUFYPUVGAFXEUSZUVIQFXGVMZXFXHXIBCDEUUTGKNXJVMZXKXLXMXNUUH
+          YNUUMXNAFWNUSUUFYPAFUVKXNXPUUHLUVCYNXOTUUHUVAYNHIUKUVDUVFUVBUVLXQXRUU
+          HYNVTUSZUKYNXOVBZYNFVAVBZUUHUUDUVMUVNUVOXSZUULUUHUURFVTUSZUUDUVPYEWAA
+          UVQUUFYPAUVJUVQQFXTVMXPYNUKFYAYBYFYCYDYGYHYIYJ $.
+      $}
     $}
   $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -162098,6 +162254,113 @@ $)
         ZVAXLXLYBXLXLXJXJXKXMXNCVATTYCXOYDUWDUWCUWFCTXPXHUVHUVITTYCXQXFYEDBTTWS
         XRXSXTYA $.
     $}
+
+    znle.l $e |- .<_ = ( le ` Y ) $.
+    $( The value of the ` Z/nZ ` structure.  It is defined as the quotient ring
+       ` ZZ / n ZZ ` , with an "artificial" ordering added.  (In other words,
+       ` Z/nZ ` is a _ring_ with an _order_ , but it is not an _ordered ring_ ,
+       which as a term implies that the order is compatible with the ring
+       operations in some way.)  (Contributed by Mario Carneiro, 14-Jun-2015.)
+       (Revised by AV, 13-Jun-2019.) $)
+    znle $p |- ( N e. NN0 -> .<_ = ( ( F o. <_ ) o. `' F ) ) $=
+      ( wcel cple cfv cle cvv czring crg cn0 cnx ccom ccnv cop csts eqid fveq2d
+      co znval wceq a1i csn cqus zringring crsp rspex ax-mp eqeltri snexg fvexg
+      cqg sylancr eqgex qusex eqeltrid czrh cres zrhex resexg 3syl cxr cxp xrex
+      xpex lerelxr ssexi coexg sylancl cnvexg syl2anc pleslid setsslid 3eqtr4d
+      syl ) EUANZGOPZBUBOPCQUCZCUDZUCZUEUFUIZOPZDWJWFGWKOABCWJEFGHIJKLWJUGUJUHD
+      WGUKWFMULWFBRNZWJRNZWJWLUKWFBSSEUMZAPZVBUIZUNUIZRIWFSTNZWQRNZWRRNUOWFWSWP
+      RNZWTUOWFARNWORNXAASUPPZRHWSXBRNUOTSUQURUSEUAUTWOARRVAVCWPSTRVDVCWQSTRVEV
+      CVFZWFWHRNZWIRNZWNWFCRNZQRNXDWFCBVGPZFVHZRKWFWMXGRNXHRNXCBXGRXGUGVIXGFRVJ
+      VKVFZQVLVLVMVLVLVNVNVOVPVQCQRRVRVSWFXFXEXICRVTWEWHWIRRVRWARWJORBWBWCWAWD
+      $.
+  $}
+
+  ${
+    $d x E $.  $d x K $.  $d x y N $.  $d x y U $.  $d x y Y $.
+    znval2.s $e |- S = ( RSpan ` ZZring ) $.
+    znval2.u $e |- U = ( ZZring /s ( ZZring ~QG ( S ` { N } ) ) ) $.
+    znval2.y $e |- Y = ( Z/nZ ` N ) $.
+    ${
+      znval2.l $e |- .<_ = ( le ` Y ) $.
+      $( Self-referential expression for the ` Z/nZ ` structure.  (Contributed
+         by Mario Carneiro, 14-Jun-2015.)  (Revised by AV, 13-Jun-2019.) $)
+      znval2 $p |- ( N e. NN0 -> Y = ( U sSet <. ( le ` ndx ) , .<_ >. ) ) $=
+        ( cn0 wcel cnx cple cfv cc0 co ccom cop csts eqid czrh wceq cz cfzo cif
+        cres cle ccnv znval znle opeq2d oveq2d eqtr4d ) DJKZEBLMNZBUANDOUBUCODU
+        DPUEZUFZUGQUQUHQZRZSPBUOCRZSPABUQURDUPEFGHUQTZUPTZURTUIUNUTUSBSUNCURUOA
+        BUQCDUPEFGHVAVBIUJUKULUM $.
+    $}
+
+    ${
+      znbaslem.e $e |- E = Slot ( E ` ndx ) $.
+      znbaslemnn.nn $e |- ( E ` ndx ) e. NN $.
+      znbaslem.n $e |- ( E ` ndx ) =/= ( le ` ndx ) $.
+      $( Lemma for ~ znbas .  (Contributed by Mario Carneiro, 14-Jun-2015.)
+         (Revised by Mario Carneiro, 14-Aug-2015.)  (Revised by AV,
+         13-Jun-2019.)  (Revised by AV, 9-Sep-2021.)  (Revised by AV,
+         3-Nov-2024.) $)
+      znbaslemnn $p |- ( N e. NN0 -> ( E ` U ) = ( E ` Y ) ) $=
+        ( wcel cfv co cvv czring crg cle eqid syl cn0 cnx cple cop csts csn cqg
+        wceq cqus zringring rspex ax-mp eqeltri snexg fvexg sylancr eqgex qusex
+        crsp eqeltrid czrh cc0 cz cfzo cif cres ccom ccnv znval cn plendxnn a1i
+        zrhex resexg cxr xrex lerelxr ssexi coexg sylancl cnvexg syl2anc setsex
+        cxp xpex syl3anc eqeltrd pleslid slotex ndxslid setsslnid znval2 fveq2d
+        eqtr4d ) DUALZBCMZBUBUCMZEUCMZUDUENZCMZECMWOBOLZWROLZWPWTUHWOBPPDUFZAMZ
+        UGNZUINZOGWOPQLZXEOLZXFOLUJWOXGXDOLZXHUJWOAOLXCOLXIAPUSMZOFXGXJOLUJQPUK
+        ULUMDUAUNXCAOOUOUPXDPQOUQUPXEPQOURUPUTZWOEOLXBWOEBWQBVAMZDVBUHVCVBDVDNV
+        EZVFZRVGZXNVHZVGZUDUENZOABXNXQDXMEFGHXNSXMSXQSVIWOXAWQVJLZXQOLZXROLXKXS
+        WOVKVLWOXOOLZXPOLZXTWOXNOLZROLYAWOXLOLZYCWOXAYDXKBXLOXLSVMTXLXMOVNTZRVO
+        VOWDVOVOVPVPWEVQVRXNROOVSVTWOYCYBYEXNOWATXOXPOOVSWBWQXQBOOVJWCWFWGEUCOW
+        HWITOWRWQCOBCUBCMIJWJKVKWKWBWOEWSCABWRDEFGHWRSWLWMWN $.
+    $}
+
+    $( The base set of ` Z/nZ ` is the same as the quotient ring it is based
+       on.  (Contributed by Mario Carneiro, 15-Jun-2015.)  (Revised by AV,
+       13-Jun-2019.)  (Revised by AV, 3-Nov-2024.) $)
+    znbas2 $p |- ( N e. NN0 -> ( Base ` U ) = ( Base ` Y ) ) $=
+      ( cbs baseid basendxnn cnx cple cfv plendxnbasendx necomi znbaslemnn ) AB
+      HCDEFGIJKLMKHMNOP $.
+
+    $( The additive structure of ` Z/nZ ` is the same as the quotient ring it
+       is based on.  (Contributed by Mario Carneiro, 15-Jun-2015.)  (Revised by
+       AV, 13-Jun-2019.)  (Revised by AV, 3-Nov-2024.) $)
+    znadd $p |- ( N e. NN0 -> ( +g ` U ) = ( +g ` Y ) ) $=
+      ( cplusg plusgid plusgndxnn cnx cple plendxnplusgndx necomi znbaslemnn
+      cfv ) ABHCDEFGIJKLPKHPMNO $.
+
+    $( The multiplicative structure of ` Z/nZ ` is the same as the quotient
+       ring it is based on.  (Contributed by Mario Carneiro, 15-Jun-2015.)
+       (Revised by AV, 13-Jun-2019.)  (Revised by AV, 3-Nov-2024.) $)
+    znmul $p |- ( N e. NN0 -> ( .r ` U ) = ( .r ` Y ) ) $=
+      ( cmulr mulridx cnx cfv cslot wceq cn wcel mulrslid simpri plendxnmulrndx
+      cple necomi znbaslemnn ) ABHCDEFGIHJHKZLMUBNOPQJSKUBRTUA $.
+  $}
+
+  ${
+    znbas.s $e |- S = ( RSpan ` ZZring ) $.
+    znbas.y $e |- Y = ( Z/nZ ` N ) $.
+    znbas.r $e |- R = ( ZZring ~QG ( S ` { N } ) ) $.
+    $( The base set of ` Z/nZ ` structure.  (Contributed by Mario Carneiro,
+       15-Jun-2015.)  (Revised by AV, 13-Jun-2019.) $)
+    znbas $p |- ( N e. NN0 -> ( ZZ /. R ) = ( Base ` Y ) ) $=
+      ( cn0 wcel cz czring cqus co cbs cfv cvv crg a1i zringring sylancr qusbas
+      cqs eqidd wceq zringbas csn crsp rspex ax-mp eqeltri snexg fvexg eqeltrid
+      cqg eqgex oveq2i znbas2 eqtrd ) CHIZJAUBKALMZNODNOUSAKUTJPQUSUTUCJKNOUDUS
+      UERUSAKCUFZBOZUNMZPGUSKQIZVBPIZVCPISUSBPIVAPIVEBKUGOZPEVDVFPISQKUHUIUJCHU
+      KVABPPULTVBKQPUOTUMVDUSSRUABUTCDEAVCKLGUPFUQUR $.
+  $}
+
+  ${
+    $d x y N $.  $d x y Y $.
+    zncrng.y $e |- Y = ( Z/nZ ` N ) $.
+    $( ` Z/nZ ` is a commutative ring.  (Contributed by Mario Carneiro,
+       15-Jun-2015.) $)
+    zncrng $p |- ( N e. NN0 -> Y e. CRing ) $=
+      ( vx vy cn0 wcel czring csn crsp cfv cqg co cqus ccrg cplusg oveqdr cmulr
+      eqid cv cz nn0z zncrng2 syl cbs eqidd znbas2 znadd znmul crngpropd mpbid
+      wa ) AFGZHHAIHJKZKLMNMZOGZBOGUMAUAGUPAUBUNUOAUNSZUOSZUCUDUMDEUOUEKZUOBUMU
+      SUFUNUOABUQURCUGUMDTUSGETUSGULZDEUOPKBPKUNUOABUQURCUHQUMUTDEUORKBRKUNUOAB
+      UQURCUIQUJUK $.
   $}
 
 
