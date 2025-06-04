@@ -140338,8 +140338,7 @@ $)
     4sqlem5.2 $e |- ( ph -> A e. ZZ ) $.
     4sqlem5.3 $e |- ( ph -> M e. NN ) $.
     4sqlem5.4 $e |- B = ( ( ( A + ( M / 2 ) ) mod M ) - ( M / 2 ) ) $.
-    $( Lemma for 4sq (not yet proved here).  (Contributed by Mario Carneiro,
-       15-Jul-2014.) $)
+    $( Lemma for ~ 4sq .  (Contributed by Mario Carneiro, 15-Jul-2014.) $)
     4sqlem5 $p |- ( ph -> ( B e. ZZ /\ ( ( A - B ) / M ) e. ZZ ) ) $=
       ( cz wcel cmin co cdiv c2 cc cq syl cn recnd subcld eqeltrrd caddc cmo zq
       zcnd nnzd 2nn znq sylancl qaddcl syl2anc nnq nngt0d modqcld qcn rehalfcld
@@ -140351,8 +140350,7 @@ $)
       ZDLKZHAVOWNDLAVOBWAJKWNCWABJGVAABVTVRVQWJWLVBVCVDAWDWGVEDVGVHWOHIWFWHWIVS
       DVIVJVKZWEVLTVMTWPVN $.
 
-    $( Lemma for 4sq (not yet proved here) .  (Contributed by Mario Carneiro,
-       15-Jul-2014.) $)
+    $( Lemma for ~ 4sq .  (Contributed by Mario Carneiro, 15-Jul-2014.) $)
     4sqlem6 $p |- ( ph -> ( -u ( M / 2 ) <_ B /\ B < ( M / 2 ) ) ) $=
       ( c2 co cle wbr clt cc0 cmin caddc cq wcel cz syl cn cdiv cneg 0red cr zq
       cmo 2nn znq sylancl qaddcl syl2anc nnq nngt0d modqcld qre nnred rehalfcld
@@ -140363,8 +140361,7 @@ $)
       URUSUTVLVAGVBACVPVLLGAVPVLLKVOVLVLOIZLKAVODWGLAVSWAWFVODLKVTWBWCVNDVHUSAD
       ADFVCVDVEAVOVLVLWDWEWEVFVIVJVK $.
 
-    $( Lemma for 4sq (not yet proved here) .  (Contributed by Mario Carneiro,
-       15-Jul-2014.) $)
+    $( Lemma for ~ 4sq .  (Contributed by Mario Carneiro, 15-Jul-2014.) $)
     4sqlem7 $p |- ( ph -> ( B ^ 2 ) <_ ( ( ( M ^ 2 ) / 2 ) / 2 ) ) $=
       ( c2 cexp co cdiv cle wbr cneg cz wcel cmin simpld cr cc0 nnrpd rphalfcld
       4sqlem5 zred rpred clt 4sqlem6 simprd ltled lenegcon1d wa lenegsq syl3anc
@@ -140375,8 +140372,7 @@ $)
       AVMHHIJZKJVMHHUPJZKJVLVNAWDWEVMKAHAUQZURUSADHADFUTZWFHTVAMAVBVCZVDAVMHHAD
       WGVEWFWFWHWHVGVHVI $.
 
-    $( Lemma for 4sq (not yet proved here) .  (Contributed by Mario Carneiro,
-       15-Jul-2014.) $)
+    $( Lemma for ~ 4sq .  (Contributed by Mario Carneiro, 15-Jul-2014.) $)
     4sqlem8 $p |- ( ph -> M || ( ( A ^ 2 ) - ( B ^ 2 ) ) ) $=
       ( cmin co c2 cexp cz wcel zsubcld zsqcl syl cdvds wbr syl2anc cc nnzd cc0
       4sqlem5 simpld simprd wne wb nnne0d dvdsval2 syl3anc mpbird caddc zaddcld
@@ -140387,8 +140383,7 @@ $)
 
     ${
       4sqlem9.5 $e |- ( ( ph /\ ps ) -> ( B ^ 2 ) = 0 ) $.
-      $( Lemma for 4sq (not yet proved here) .  (Contributed by Mario Carneiro,
-         15-Jul-2014.) $)
+      $( Lemma for ~ 4sq .  (Contributed by Mario Carneiro, 15-Jul-2014.) $)
       4sqlem9 $p |- ( ( ph /\ ps ) -> ( M ^ 2 ) || ( A ^ 2 ) ) $=
         ( cdvds c2 cexp co cdiv cz wcel cmin cc0 wb adantr wa cc 4sqlem5 simpld
         wbr wceq zcnd sqeq0 biimpa syldan oveq2d subid1d oveq1d simprd eqeltrrd
@@ -140401,8 +140396,7 @@ $)
 
     4sqlem10.5 $e |- ( ( ph /\ ps ) ->
       ( ( ( ( M ^ 2 ) / 2 ) / 2 ) - ( B ^ 2 ) ) = 0 ) $.
-    $( Lemma for 4sq (not yet proved here) .  (Contributed by Mario Carneiro,
-       16-Jul-2014.) $)
+    $( Lemma for ~ 4sq .  (Contributed by Mario Carneiro, 16-Jul-2014.) $)
     4sqlem10 $p |- ( ( ph /\ ps ) ->
       ( M ^ 2 ) || ( ( A ^ 2 ) - ( ( ( M ^ 2 ) / 2 ) / 2 ) ) ) $=
       ( c2 cexp co cdiv cmul cmin cz wcel syl wbr cq wa caddc cdvds adantr nnzd
@@ -140438,10 +140432,10 @@ $)
     $d i R $.
     4sq.1 $e |- S = { n | E. x e. ZZ E. y e. ZZ E. z e. ZZ E. w e. ZZ
       n = ( ( ( x ^ 2 ) + ( y ^ 2 ) ) + ( ( z ^ 2 ) + ( w ^ 2 ) ) ) } $.
-    $( Lemma for 4sq (not yet proved here) .  The set ` S ` is the set of all
-       numbers that are expressible as a sum of four squares.  Our goal is to
-       show that ` S = NN0 ` ; here we show one subset direction.  (Contributed
-       by Mario Carneiro, 14-Jul-2014.) $)
+    $( Lemma for ~ 4sq .  The set ` S ` is the set of all numbers that are
+       expressible as a sum of four squares.  Our goal is to show that
+       ` S = NN0 ` ; here we show one subset direction.  (Contributed by Mario
+       Carneiro, 14-Jul-2014.) $)
     4sqlem1 $p |- S C_ NN0 $=
       ( cv c2 cexp co caddc cz wrex cn0 wcel wa zsqcl2 nn0addcl syl2an wceq cab
       wi eleq1a syl rexlimdvva rexlimivv abssi eqsstri ) EFHZAHZIJKZBHZIJKZLKZC
@@ -140449,8 +140443,8 @@ $)
       DMMVHUPMPZURMPZQZQVAOPZVBVEUCVHUOOPZUTOPZVLVKVFULOPUNOPVMVGUKRUMRULUNSTVI
       UQOPUSOPVNVJUPRURRUQUSSTUOUTSTVAOUJUDUEUFUGUHUI $.
 
-    $( Lemma for 4sq (not yet proved here) .  Change bound variables in ` S ` .
-       (Contributed by Mario Carneiro, 14-Jul-2014.) $)
+    $( Lemma for ~ 4sq .  Change bound variables in ` S ` .  (Contributed by
+       Mario Carneiro, 14-Jul-2014.) $)
     4sqlem2 $p |- ( A e. S <-> E. a e. ZZ E. b e. ZZ E. c e. ZZ E. d e. ZZ
       A = ( ( ( a ^ 2 ) + ( b ^ 2 ) ) + ( ( c ^ 2 ) + ( d ^ 2 ) ) ) ) $=
       ( wcel cv c2 cexp co caddc cz wrex wceq cab eleq2i cvv wa zsqcl2 ad2antrr
@@ -140467,8 +140461,8 @@ $)
       XSWJRYAVQWLVSRVPWKOPUSUTVCVADKVGZXTWPVJYBXSWOWJRYBVSWNWLRVRWMOPUSVCVCVAVD
       XLXRWQJKSSVJEWPVEVBVFVBVFVHVI $.
 
-    $( Lemma for 4sq (not yet proved here) .  Sufficient condition to be in
-       ` S ` .  (Contributed by Mario Carneiro, 14-Jul-2014.) $)
+    $( Lemma for ~ 4sq .  Sufficient condition to be in ` S ` .  (Contributed
+       by Mario Carneiro, 14-Jul-2014.) $)
     4sqlem3 $p |- ( ( ( A e. ZZ /\ B e. ZZ ) /\ ( C e. ZZ /\ D e. ZZ ) ) ->
       ( ( ( A ^ 2 ) + ( B ^ 2 ) ) + ( ( C ^ 2 ) + ( D ^ 2 ) ) ) e. S ) $=
       ( vc vd cz c2 cexp co caddc wceq wrex va vb wcel wa cv eqid oveq1d oveq2d
@@ -140492,10 +140486,10 @@ $)
 
     ${
       $d u A $.
-      $( Lemma for 4sq (not yet proved here) .  We can express the four-square
-         property more compactly in terms of gaussian integers, because the
-         norms of gaussian integers are exactly sums of two squares.
-         (Contributed by Mario Carneiro, 14-Jul-2014.) $)
+      $( Lemma for ~ 4sq .  We can express the four-square property more
+         compactly in terms of gaussian integers, because the norms of gaussian
+         integers are exactly sums of two squares.  (Contributed by Mario
+         Carneiro, 14-Jul-2014.) $)
       4sqlem4 $p |- ( A e. S <-> E. u e. Z[i] E. v e. Z[i]
         A = ( ( ( abs ` u ) ^ 2 ) + ( ( abs ` v ) ^ 2 ) ) ) $=
         ( wcel cfv c2 cexp co caddc wceq cgz wrex cz va vb vc cabs 4sqlem2 cmul
@@ -140651,7 +140645,7 @@ $)
     4sqlemafi.p $e |- ( ph -> P e. NN ) $.
     4sqlemafi.a $e |- A =
       { u | E. m e. ( 0 ... N ) u = ( ( m ^ 2 ) mod P ) } $.
-    $( Lemma for 4sq . ` A ` is finite.  (Contributed by Jim Kingdon,
+    $( Lemma for ~ 4sq . ` A ` is finite.  (Contributed by Jim Kingdon,
        24-May-2025.) $)
     4sqlemafi $p |- ( ph -> A e. Fin ) $=
       ( vx cv co wceq cc0 cfn wcel wdc cz syl2anc wa cexp cmo cfz wrex cab cfzo
@@ -140671,7 +140665,7 @@ $)
     ${
       $d A v x $.  $d F x $.  $d N m u x $.  $d P m u x $.  $d P v x $.
       $d m ph u x $.  $d ph v x $.
-      $( Lemma for 4sq . ` ran F ` is finite.  (Contributed by Jim Kingdon,
+      $( Lemma for ~ 4sq . ` ran F ` is finite.  (Contributed by Jim Kingdon,
          24-May-2025.) $)
       4sqlemffi $p |- ( ph -> ran F e. Fin ) $=
         ( vx cfn wcel cmin co cz wa adantr wrel ccnv wfun crn c1 funmpt2 funrel
@@ -140693,7 +140687,7 @@ $)
     ${
       $d A v x $.  $d F x $.  $d N m u x $.  $d P m u x $.  $d m ph u x $.
       $d ph v x $.
-      $( Lemma for 4sq . ` A i^i ran F ` is finite.  (Contributed by Jim
+      $( Lemma for ~ 4sq . ` A i^i ran F ` is finite.  (Contributed by Jim
          Kingdon, 24-May-2025.) $)
       4sqleminfi $p |- ( ph -> ( A i^i ran F ) e. Fin ) $=
         ( vx cfn wcel cv wdc wa co cz crn wral 4sqlemafi c1 cmin wceq wrex cexp
@@ -140763,7 +140757,7 @@ $)
 
     ${
       $d A n w x y z $.
-      $( Lemma for 4sq .  The property of being the sum of four squares is
+      $( Lemma for ~ 4sq .  The property of being the sum of four squares is
          decidable.
 
          The proof involves showing that (for a particular ` A ` ) there are
@@ -140833,8 +140827,8 @@ $)
         4sqlem11.5 $e |- A =
           { u | E. m e. ( 0 ... N ) u = ( ( m ^ 2 ) mod P ) } $.
         4sqlem11.6 $e |- F = ( v e. A |-> ( ( P - 1 ) - v ) ) $.
-        $( Lemma for 4sq .  Use the pigeonhole principle to show that the sets
-           ` { m ^ 2 | m e. ( 0 ... N ) } ` and
+        $( Lemma for ~ 4sq .  Use the pigeonhole principle to show that the
+           sets ` { m ^ 2 | m e. ( 0 ... N ) } ` and
            ` { -u 1 - n ^ 2 | n e. ( 0 ... N ) } ` have a common element,
            ` mod P ` .  Note that although the conclusion is stated in terms of
            ` A i^i ran F ` being nonempty, it is also inhabited by ~ 4sqleminfi
@@ -140919,9 +140913,9 @@ $)
 
         $d A j k v $.  $d F j $.  $d N m n u v $.  $d P j k m n u v $.
         $d j k m n ph u v $.
-        $( Lemma for 4sq .  For any odd prime ` P ` , there is a ` k < P ` such
-           that ` k P - 1 ` is a sum of two squares.  (Contributed by Mario
-           Carneiro, 15-Jul-2014.) $)
+        $( Lemma for ~ 4sq .  For any odd prime ` P ` , there is a ` k < P `
+           such that ` k P - 1 ` is a sum of two squares.  (Contributed by
+           Mario Carneiro, 15-Jul-2014.) $)
         4sqlem12 $p |- ( ph -> E. k e. ( 1 ... ( P - 1 ) ) E. u e. Z[i]
           ( ( ( abs ` u ) ^ 2 ) + 1 ) = ( k x. P ) ) $=
           ( vj cv crn cin wcel wex cabs cfv c2 cexp co caddc cmul wceq cgz wrex
@@ -141007,7 +141001,7 @@ $)
         $d M k u $.  $d N k m n u v $.  $d P i k n u $.  $d P k m n u v $.
         $d P i n w x y z $.  $d S i n $.  $d T j k u $.  $d i k n ph u $.
         $d m n ph u v $.
-        $( Lemma for 4sq .  (Contributed by Mario Carneiro, 16-Jul-2014.)
+        $( Lemma for ~ 4sq .  (Contributed by Mario Carneiro, 16-Jul-2014.)
            (Revised by AV, 14-Sep-2020.) $)
         4sqlem13m $p |- ( ph -> ( E. j j e. T /\ M < P ) ) $=
           ( vu vk vv vm cv cabs cfv c2 cexp co c1 caddc cmul wceq cgz wrex cmin
@@ -141032,7 +141026,300 @@ $)
           HYNVTUSZUKYNXOVBZYNFVAVBZUUHUUDUVMUVNUVOXSZUULUUHUURFVTUSZUUDUVPYEWAA
           UVQUUFYPAUVJUVQQFXTVMXPYNUKFYAYBYFYCYDYGYHYIYJ $.
       $}
+
+      ${
+        $d N n $.  $d P i n w x y z $.  $d S i n $.  $d T i j $.  $d i j ph $.
+        $d n ph $.
+        4sq.m $e |- ( ph -> M e. ( ZZ>= ` 2 ) ) $.
+        4sq.a $e |- ( ph -> A e. ZZ ) $.
+        4sq.b $e |- ( ph -> B e. ZZ ) $.
+        4sq.c $e |- ( ph -> C e. ZZ ) $.
+        4sq.d $e |- ( ph -> D e. ZZ ) $.
+        4sq.e $e |- E = ( ( ( A + ( M / 2 ) ) mod M ) - ( M / 2 ) ) $.
+        4sq.f $e |- F = ( ( ( B + ( M / 2 ) ) mod M ) - ( M / 2 ) ) $.
+        4sq.g $e |- G = ( ( ( C + ( M / 2 ) ) mod M ) - ( M / 2 ) ) $.
+        4sq.h $e |- H = ( ( ( D + ( M / 2 ) ) mod M ) - ( M / 2 ) ) $.
+        4sq.r $e |- R =
+          ( ( ( ( E ^ 2 ) + ( F ^ 2 ) ) + ( ( G ^ 2 ) + ( H ^ 2 ) ) ) / M ) $.
+        4sq.p $e |- ( ph -> ( M x. P ) =
+          ( ( ( A ^ 2 ) + ( B ^ 2 ) ) + ( ( C ^ 2 ) + ( D ^ 2 ) ) ) ) $.
+        $( Lemma for ~ 4sq .  (Contributed by Mario Carneiro, 16-Jul-2014.)
+           (Revised by AV, 14-Sep-2020.) $)
+        4sqlem14 $p |- ( ph -> R e. NN0 ) $=
+          ( vj c2 cexp co caddc cdiv cn0 cz wcel cc0 cle wbr cdvds cmul cmin cn
+          cv ssrab3 cr clt cinf wex 4sqlem13m simpld wa c1 1zzd crab cuz rabeqi
+          cfv nnuz eqtri simpr cfz elfznn adantl cprime prmnn ad2antrr nnmulcld
+          wdc syl nnnn0d 4sqlemsdc infssuzcldc exlimddv eqeltrid sselid zmulcld
+          nnzd prmz 4sqlem5 zsqcl2 nn0zd zaddcld zsubcld dvdsmul1 syl2anc zsqcl
+          nn0addcld 4sqlem8 dvds2addd zcnd sqcld addsub4d breqtrrd oveq1d eqtrd
+          addcld dvds2subd mulcld nncand breqtrd wne wb nnne0d dvdsval2 syl3anc
+          nncnd mpbid nn0red nn0ge0d nngt0d divge0 syl22anc elnn0z sylanbrc
+          nnred ) AKPVAVBVCZQVAVBVCZVDVCZRVAVBVCZSVAVBVCZVDVCZVDVCZTVEVCZVFURAU
+          UPVGVHZVIUUPVJVKZUUPVFVHATUUOVLVKZUUQATTJVMVCZUUTUUOVNVCZVNVCUUOVLATU
+          UTUVAATAMVOTNVPZJVMVCZLVHZNVOMUGVQATMVRVSVTZMUHAUTVPZMVHZUVEMVHUTAUVG
+          UTWATJVSVKABCDEJLMNUTOTUAUBUCUDUEUFUGUHWBWCAUVGWDZUVDUVFMNWEUVHWFMUVD
+          NVOWGUVDNWEWHWJZWGUGUVDNVOUVIWKWIWLAUVGWMUVHUVBWEUVFWNVCVHZWDZUVCVFVH
+          UVDXAUVKUVCUVKUVBJUVJUVBVOVHUVHUVBUVFWOWPAJVOVHZUVGUVJAJWQVHZUVLUEJWR
+          XBZWSWTXCBCDEUVCLOUBXDXBXEXFXGXHZXJZATJUVPAUVMJVGVHZUEJXKXBZXIZAUUTUU
+          OUVSAUUKUUNAUUKAUUIUUJAPVGVHZUUIVFVHAUVTFPVNVCTVEVCVGVHAFPTUJUVOUNXLW
+          CZPXMXBZAQVGVHZUUJVFVHAUWCGQVNVCTVEVCVGVHAGQTUKUVOUOXLWCZQXMXBZXTZXNZ
+          AUUNAUULUUMARVGVHZUULVFVHAUWHHRVNVCTVEVCVGVHAHRTULUVOUPXLWCZRXMXBZASV
+          GVHZUUMVFVHAUWKISVNVCTVEVCVGVHAISTUMUVOUQXLWCZSXMXBZXTZXNZXOXPATVGVHZ
+          UVQTUUTVLVKUVPUVRTJXQXRATFVAVBVCZGVAVBVCZVDVCZUUKVNVCZHVAVBVCZIVAVBVC
+          ZVDVCZUUNVNVCZVDVCZUVAVLATUWTUXDUVPAUWSUUKAUWQUWRAFVGVHUWQVGVHUJFXSXB
+          ZAGVGVHUWRVGVHUKGXSXBZXOUWGXPAUXCUUNAUXAUXBAHVGVHUXAVGVHULHXSXBZAIVGV
+          HUXBVGVHUMIXSXBZXOUWOXPATUWQUUIVNVCZUWRUUJVNVCZVDVCUWTVLATUXJUXKUVPAU
+          WQUUIUXFAUUIUWBXNXPAUWRUUJUXGAUUJUWEXNXPAFPTUJUVOUNYAAGQTUKUVOUOYAYBA
+          UWQUWRUUIUUJAFAFUJYCYDZAGAGUKYCYDZAPAPUWAYCYDZAQAQUWDYCYDZYEYFATUXAUU
+          LVNVCZUXBUUMVNVCZVDVCUXDVLATUXPUXQUVPAUXAUULUXHAUULUWJXNXPAUXBUUMUXIA
+          UUMUWMXNXPAHRTULUVOUPYAAISTUMUVOUQYAYBAUXAUXBUULUUMAHAHULYCYDZAIAIUMY
+          CYDZARARUWIYCYDZASASUWLYCYDZYEYFYBAUVAUWSUXCVDVCZUUOVNVCUXEAUUTUYBUUO
+          VNUSYGAUWSUXCUUKUUNAUWQUWRUXLUXMYIAUXAUXBUXRUXSYIAUUIUUJUXNUXOYIZAUUL
+          UUMUXTUYAYIZYEYHYFYJAUUTUUOATJATUVOYSAJUVNYSYKAUUKUUNUYCUYDYIYLYMAUWP
+          TVIYNUUOVGVHUUSUUQYOUVPATUVOYPAUUOAUUKUUNUWFUWNXTZXNTUUOYQYRYTAUUOVRV
+          HVIUUOVJVKTVRVHVITVSVKUURAUUOUYEUUAAUUOUYEUUBATUVOUUHATUVOUUCUUOTUUDU
+          UEUUPUUFUUGXG $.
+
+        $( Lemma for ~ 4sq .  (Contributed by Mario Carneiro, 16-Jul-2014.)
+           (Revised by AV, 14-Sep-2020.) $)
+        4sqlem15 $p |- ( ( ph /\ R = M ) ->
+          ( ( ( ( ( ( M ^ 2 ) / 2 ) / 2 ) - ( E ^ 2 ) ) = 0 /\
+              ( ( ( ( M ^ 2 ) / 2 ) / 2 ) - ( F ^ 2 ) ) = 0 ) /\
+            ( ( ( ( ( M ^ 2 ) / 2 ) / 2 ) - ( G ^ 2 ) ) = 0 /\
+              ( ( ( ( M ^ 2 ) / 2 ) / 2 ) - ( H ^ 2 ) ) = 0 ) ) ) $=
+          ( wceq wa c2 cexp co cdiv cmin cc0 caddc cuz cfv cn eluz2nn syl nnred
+          wcel resqcld rehalfcld recnd cz 4sqlem5 simpld zred addsub4d 2halvesd
+          zsqcl oveq1d eqtr3d adantr cmul sqvald simpr readdcld nnap0d 3eqtr2rd
+          eqtr3id divcanap1d oveq12d subidd 3eqtr3d cr cle wbr resubcld 4sqlem7
+          wb le2addd breqtrd subge0d mpbird add20 syl22anc biimpa syldan simprd
+          eqtrd jca ) AKTUTZVAZTVBVCVDZVBVEVDZVBVEVDZPVBVCVDZVFVDZVGUTYAQVBVCVD
+          ZVFVDZVGUTVAZYARVBVCVDZVFVDZVGUTYASVBVCVDZVFVDZVGUTVAZAXQYCYEVHVDZVGU
+          TZYFXRYLXTYBYDVHVDZVFVDZVGAYLYOUTXQAYAYAVHVDZYNVFVDYLYOAYAYAYBYDAYAAX
+          TAXSATATATVBVIVJVOTVKVOUITVLVMZVNZVPZVQZVQZVRZUUBAYBAYBAPVSVOZYBVSVOA
+          UUCFPVFVDTVEVDVSVOAFPTUJYQUNVTWAPWEVMWBZVRAYDAYDAQVSVOZYDVSVOAUUEGQVF
+          VDTVEVDVSVOAGQTUKYQUOVTWAQWEVMWBZVRWCAYPXTYNVFAXTAXTYTVRZWDZWFWGWHXRY
+          OVGUTZXTYGYIVHVDZVFVDZVGUTZAXQYOUUKVHVDZVGUTZUUIUULVAZXRXTXTVHVDZYNUU
+          JVHVDZVFVDZXSXSVFVDZUUMVGXRUUPXSUUQXSVFAUUPXSUTXQAXSAXSYSVRZWDWHXRXST
+          TWIVDZUUQTVEVDZTWIVDZUUQAXSUVAUTXQATATYRVRZWJWHXRUVBTTWIXRUVBKTURAXQW
+          KWOWFAUVCUUQUTXQAUUQTAUUQAYNUUJAYBYDUUDUUFWLZAYGYIAYGARVSVOZYGVSVOAUV
+          FHRVFVDTVEVDVSVOAHRTULYQUPVTWARWEVMWBZAYIASVSVOZYIVSVOAUVHISVFVDTVEVD
+          VSVOAISTUMYQUQVTWASWEVMWBZWLZWLVRUVDATYQWMWPWHWNWQAUURUUMUTXQAXTXTYNU
+          UJUUGUUGAYNUVEVRAUUJUVJVRWCWHAUUSVGUTXQAXSUUTWRWHWSAUUNUUOAYOWTVOVGYO
+          XAXBZUUKWTVOVGUUKXAXBZUUNUUOXEAXTYNYTUVEXCAUVKYNXTXAXBAYNYPXTXAAYBYDY
+          AYAUUDUUFUUAUUAAFPTUJYQUNXDZAGQTUKYQUOXDZXFUUHXGAXTYNYTUVEXHXIAXTUUJY
+          TUVJXCAUVLUUJXTXAXBAUUJYPXTXAAYGYIYAYAUVGUVIUUAUUAAHRTULYQUPXDZAISTUM
+          YQUQXDZXFUUHXGAXTUUJYTUVJXHXIYOUUKXJXKXLXMZWAXOAYMYFAYCWTVOVGYCXAXBZY
+          EWTVOVGYEXAXBZYMYFXEAYAYBUUAUUDXCAUVRYBYAXAXBUVMAYAYBUUAUUDXHXIAYAYDU
+          UAUUFXCAUVSYDYAXAXBUVNAYAYDUUAUUFXHXIYCYEXJXKXLXMAXQYHYJVHVDZVGUTZYKX
+          RUVTUUKVGAUVTUUKUTXQAYPUUJVFVDUVTUUKAYAYAYGYIUUBUUBAYGUVGVRAYIUVIVRWC
+          AYPXTUUJVFUUHWFWGWHXRUUIUULUVQXNXOAUWAYKAYHWTVOVGYHXAXBZYJWTVOVGYJXAX
+          BZUWAYKXEAYAYGUUAUVGXCAUWBYGYAXAXBUVOAYAYGUUAUVGXHXIAYAYIUUAUVIXCAUWC
+          YIYAXAXBUVPAYAYIUUAUVIXHXIYHYJXJXKXLXMXP $.
+
+        $( Lemma for ~ 4sq .  (Contributed by Mario Carneiro, 16-Jul-2014.)
+           (Revised by AV, 14-Sep-2020.) $)
+        4sqlem16 $p |- ( ph -> ( R <_ M /\
+          ( ( R = 0 \/ R = M ) -> ( M ^ 2 ) || ( M x. P ) ) ) ) $=
+          ( cle wbr cc0 wceq wo c2 cexp co cmul cdvds wi caddc cdiv cz wcel cuz
+          cmin cfv eluz2nn syl 4sqlem5 simpld zsqcl zred readdcld nnred resqcld
+          cn rehalfcld 4sqlem7 le2addd recnd 2halvesd breqtrd sqvald clt nngt0d
+          cr wb ledivmul syl112anc mpbird eqbrtrid wa eqtr3id nnap0d diveqap0ad
+          simpr cn0 zsqcl2 nn0addcld nn0ge0d add20 syl22anc bitrd biimpa syldan
+          4sqlem9 simprd nnsqcld nnzd dvds2add syl3anc adantr 4sqlem15 subeq0ad
+          mp2and zaddcld zcnd mpbid eqeltrd eqeltrrd zsubcld 4sqlem10 dvds2addd
+          addsub4d oveq2d eqtr3d dvdssubr syl2anc jaodan breqtrrd ex jca ) AKTU
+          TVAKVBVCZKTVCZVDZTVEVFVGZTJVHVGZVIVAZVJAKPVEVFVGZQVEVFVGZVKVGZRVEVFVG
+          ZSVEVFVGZVKVGZVKVGZTVLVGZTUTURAUUQTUTVAZUUPTTVHVGZUTVAZAUUPUUGUUSUTAU
+          UPUUGVEVLVGZUVAVKVGZUUGUTAUULUUOUVAUVAAUUJUUKAUUJAPVMVNZUUJVMVNZAUVCF
+          PVPVGTVLVGVMVNAFPTUJATVEVOVQVNTWGVNUITVRVSZUNVTWAZPWBVSZWCZAUUKAQVMVN
+          ZUUKVMVNAUVIGQVPVGTVLVGVMVNAGQTUKUVEUOVTWAZQWBVSWCZWDZAUUMUUNAUUMARVM
+          VNZUUMVMVNAUVMHRVPVGTVLVGVMVNAHRTULUVEUPVTWAZRWBVSWCZAUUNASVMVNZUUNVM
+          VNAUVPISVPVGTVLVGVMVNAISTUMUVEUQVTWAZSWBVSWCZWDZAUUGATATUVEWEZWFZWHZU
+          WBAUULUVAVEVLVGZUWCVKVGZUVAUTAUUJUUKUWCUWCUVHUVKAUVAUWBWHZUWEAFPTUJUV
+          EUNWIAGQTUKUVEUOWIWJAUVAAUVAUWBWKZWLZWMAUUOUWDUVAUTAUUMUUNUWCUWCUVOUV
+          RUWEUWEAHRTULUVEUPWIAISTUMUVEUQWIWJUWGWMWJAUUGAUUGUWAWKWLZWMATATUVTWK
+          ZWNWMAUUPWQVNTWQVNZUWJVBTWOVAUURUUTWRAUULUUOUVLUVSWDZUVTUVTATUVEWPUUP
+          TTWSWTXAXBAUUFUUIAUUFXCUUGFVEVFVGZGVEVFVGZVKVGZHVEVFVGZIVEVFVGZVKVGZV
+          KVGZUUHVIAUUDUUGUWRVIVAZUUEAUUDXCZUUGUWNVIVAZUUGUWQVIVAZUWSUWTUUGUWLV
+          IVAZUUGUWMVIVAZUXAAUUDFPTUJUVEUNUWTUUJVBVCZUUKVBVCZAUUDUULVBVCZUXEUXF
+          XCZUWTUXGUUOVBVCZAUUDUUQVBVCZUXGUXIXCZUWTUUQKVBURAUUDXGXDAUXJUXKAUXJU
+          UPVBVCZUXKAUUPTAUUPUWKWKUWIATUVEXEXFAUULWQVNVBUULUTVAUUOWQVNVBUUOUTVA
+          UXLUXKWRUVLAUULAUUJUUKAUVCUUJXHVNUVFPXIVSZAUVIUUKXHVNUVJQXIVSZXJXKUVS
+          AUUOAUUMUUNAUVMUUMXHVNUVNRXIVSZAUVPUUNXHVNUVQSXIVSZXJXKUULUUOXLXMXNXO
+          XPZWAAUXGUXHAUUJWQVNVBUUJUTVAUUKWQVNVBUUKUTVAUXGUXHWRUVHAUUJUXMXKUVKA
+          UUKUXNXKUUJUUKXLXMXOXPZWAXQAUUDGQTUKUVEUOUWTUXEUXFUXRXRXQAUXCUXDXCUXA
+          VJZUUDAUUGVMVNZUWLVMVNZUWMVMVNZUXSAUUGATUVEXSXTZAFVMVNUYAUJFWBVSZAGVM
+          VNUYBUKGWBVSZUUGUWLUWMYAYBYCYFUWTUUGUWOVIVAZUUGUWPVIVAZUXBAUUDHRTULUV
+          EUPUWTUUMVBVCZUUNVBVCZAUUDUXIUYHUYIXCZUWTUXGUXIUXQXRAUXIUYJAUUMWQVNVB
+          UUMUTVAUUNWQVNVBUUNUTVAUXIUYJWRUVOAUUMUXOXKUVRAUUNUXPXKUUMUUNXLXMXOXP
+          ZWAXQAUUDISTUMUVEUQUWTUYHUYIUYKXRXQAUYFUYGXCUXBVJZUUDAUXTUWOVMVNZUWPV
+          MVNZUYLUYCAHVMVNUYMULHWBVSZAIVMVNUYNUMIWBVSZUUGUWOUWPYAYBYCYFAUXAUXBX
+          CUWSVJZUUDAUXTUWNVMVNZUWQVMVNZUYQUYCAUWLUWMUYDUYEYGZAUWOUWPUYOUYPYGZU
+          UGUWNUWQYAYBYCYFAUUEXCZUWSUUGUWRUUGVPVGZVIVAZVUBUUGUWNUVAVPVGZUWQUVAV
+          PVGZVKVGZVUCVIVUBUUGVUEVUFAUXTUUEUYCYCZVUBUWNUVAAUYRUUEUYTYCVUBUWDUVA
+          VMAUWDUVAVCUUEUWGYCVUBUWCUWCVUBUWCUUJVMVUBUWCUUJVPVGVBVCZUWCUUJVCZVUB
+          VUIUWCUUKVPVGVBVCZVUBVUIVUKXCZUWCUUMVPVGVBVCZUWCUUNVPVGVBVCZXCZABCDEF
+          GHIJKLMNOPQRSTUAUBUCUDUEUFUGUHUIUJUKULUMUNUOUPUQURUSYDZWAZWAZAVUIVUJW
+          RUUEAUWCUUJAUWCUWEWKZAUUJUVGYHYEYCYIAUVDUUEUVGYCYJZVUTYGYKZYLVUBUWQUV
+          AAUYSUUEVUAYCVVAYLVUBUUGUWLUWCVPVGZUWMUWCVPVGZVKVGZVUEVIVUBUUGVVBVVCV
+          UHVUBUWLUWCAUYAUUEUYDYCVUTYLVUBUWMUWCAUYBUUEUYEYCVUTYLAUUEFPTUJUVEUNV
+          URYMAUUEGQTUKUVEUOVUBVUIVUKVUQXRYMYNAVVDVUEVCUUEAUWNUWDVPVGVVDVUEAUWL
+          UWMUWCUWCAUWLUYDYHAUWMUYEYHVUSVUSYOAUWDUVAUWNVPUWGYPYQYCWMVUBUUGUWOUW
+          CVPVGZUWPUWCVPVGZVKVGZVUFVIVUBUUGVVEVVFVUHVUBUWOUWCAUYMUUEUYOYCVUTYLV
+          UBUWPUWCAUYNUUEUYPYCVUTYLAUUEHRTULUVEUPVUBVUMVUNVUBVULVUOVUPXRZWAYMAU
+          UEISTUMUVEUQVUBVUMVUNVVHXRYMYNAVVGVUFVCUUEAUWQUWDVPVGVVGVUFAUWOUWPUWC
+          UWCAUWOUYOYHAUWPUYPYHVUSVUSYOAUWDUVAUWQVPUWGYPYQYCWMYNAVUGVUCVCUUEAUW
+          RUVBVPVGVUGVUCAUWNUWQUVAUVAAUWNUYTYHAUWQVUAYHUWFUWFYOAUVBUUGUWRVPUWHY
+          PYQYCWMVUBUXTUWRVMVNZUWSVUDWRVUHAVVIUUEAUWNUWQUYTVUAYGYCUUGUWRYRYSXAY
+          TAUUHUWRVCUUFUSYCUUAUUBUUC $.
+
+        $d R j $.  $d R i $.  $d C n $.  $d D n $.  $d A n $.  $d B n $.
+        $d E n $.  $d F n $.  $d G n $.  $d H n $.  $d M n $.
+        $( Lemma for ~ 4sq .  (Contributed by Mario Carneiro, 16-Jul-2014.)
+           (Revised by AV, 14-Sep-2020.) $)
+        4sqlem17 $p |- -. ph $=
+          ( vj c2 cexp co cmul cdvds wbr cc0 wceq wo cle wi 4sqlem16 simpld clt
+          cr cinf cv wcel wex 4sqlem13m wa c1 1zzd cn crab cuz cfv rabeqi eqtri
+          nnuz wn wne cfz elfznn adantl ad2antrr nnmulcld nnnn0d exlimddv nnred
+          cn0 syl simprd nncnd cz wb syl2anc caddc cabs cdiv cre cim cgz gzreim
+          ci cc gzcn absvalsq2d crred oveq1d crimd oveq12d eqtrd eqtr4d 4sqlem5
+          zred cmin eqid ax-icn sylancr addsub4d subdid oveq2d subcld divdirapd
+          zcnd mulcl divassapd 3eqtrd eqeltrd ssrab3 simpr wdc cprime 4sqlemsdc
+          prmnn infssuzcldc eqeltrid sselid sqvald breq1d nnzd nnne0d dvdscmulr
+          ltned prmz syl112anc dvdsprm 3bitrd necon3bbid orc syl5 mtod 4sqlem14
+          mpbird elnn0 sylib ecased nnap0d divcanap3d eqtr4di mulcomd mul4sqlem
+          eqtr3d a1i eqeltrrd oveq1 eleq1d elrab2 sylanbrc infssuzledc eqbrtrid
+          adantr letri3d mpbir2and olcd mpd pm2.65i ) ATVAVBVCZTJVDVCZVEVFZAKVG
+          VHZKTVHZVIZUWKAUWMUWLAUWMKTVJVFZTKVJVFAUWOUWNUWKVKZABCDEFGHIJKLMNOPQR
+          STUAUBUCUDUEUFUGUHUIUJUKULUMUNUOUPUQURUSVLZVMATMVOVNVPZKVJUHAUTVQZMVR
+          ZUWRKVJVFUTAUWTUTVSZTJVNVFZABCDEJLMNUTOTUAUBUCUDUEUFUGUHVTZVMZAUWTWAZ
+          NVQZJVDVCZLVRZKMNWBUXEWCZMUXHNWDWEUXHNWBWFWGZWEUGUXHNWDUXJWJWHWIZAKMV
+          RZUWTAKWDVRZKJVDVCZLVRZUXLAUXMUWLAUWLUWKAUWKWKTJWLATJATAMWDTUXHNWDMUG
+          UUAATUWRMUHAUWTUWRMVRUTUXDUXEUXHUWSMNWBUXIUXKAUWTUUBUXEUXFWBUWSWMVCVR
+          ZWAZUXGXAVRZUXHUUCZUXQUXGUXQUXFJUXPUXFWDVRZUXEUXFUWSWNWOAJWDVRZUWTUXP
+          AJUUDVRZUYAUEJUUFXBZWPWQWRBCDEUXGLOUBUUEZXBUUGWSUUHUUIZWTZAUXAUXBUXCX
+          CUUOAUWKTJAUWKTTVDVCZUWJVEVFZTJVEVFZTJVHZAUWIUYGUWJVEATATUYEXDZUUJUUK
+          ATXEVRZJXEVRZUYLTVGWLUYHUYIXFATUYEUULZAUYBUYMUEJUUPXBUYNATUYEUUMTTJUU
+          NUUQATVAWFWGVRUYBUYIUYJXFUIUEJTUURXGUUSUUTUVEZUWLUWNAUWKUWLUWMUVAAUWO
+          UWPUWQXCZUVBUVCAKXAVRUXMUWLVIABCDEFGHIJKLMNOPQRSTUAUBUCUDUEUFUGUHUIUJ
+          UKULUMUNUOUPUQURUSUVDKUVFUVGUVHZAFXOGVDVCZXHVCZXIWGVAVBVCZHXOIVDVCZXH
+          VCZXIWGVAVBVCZXHVCZTXJVCZPXOQVDVCZXHVCZXIWGVAVBVCZRXOSVDVCZXHVCZXIWGV
+          AVBVCZXHVCZTXJVCZVDVCZUXNLAVUNJKVDVCUXNAVUEJVUMKVDAUWJTXJVCVUEJAUWJVU
+          DTXJAUWJFVAVBVCZGVAVBVCZXHVCZHVAVBVCZIVAVBVCZXHVCZXHVCVUDUSAUYTVUQVUC
+          VUTXHAUYTUYSXKWGZVAVBVCZUYSXLWGZVAVBVCZXHVCVUQAUYSAUYSXMVRZUYSXPVRAFX
+          EVRGXEVRVVEUJUKFGXNXGZUYSXQXBXRAVVBVUOVVDVUPXHAVVAFVAVBAFGAFUJYFZAGUK
+          YFZXSXTAVVCGVAVBAFGVVGVVHYAXTYBYCAVUCVUBXKWGZVAVBVCZVUBXLWGZVAVBVCZXH
+          VCVUTAVUBAVUBXMVRZVUBXPVRAHXEVRIXEVRVVMULUMHIXNXGZVUBXQXBXRAVVJVURVVL
+          VUSXHAVVIHVAVBAHIAHULYFZAIUMYFZXSXTAVVKIVAVBAHIVVOVVPYAXTYBYCYBYDXTAJ
+          TAJUYCXDZUYKATUYEUVIZUVJUVNZAVUMPVAVBVCZQVAVBVCZXHVCZRVAVBVCZSVAVBVCZ
+          XHVCZXHVCZTXJVCKAVULVWFTXJAVUHVWBVUKVWEXHAVUHVUGXKWGZVAVBVCZVUGXLWGZV
+          AVBVCZXHVCVWBAVUGAVUGXMVRZVUGXPVRAPXEVRZQXEVRZVWKAVWLFPYGVCZTXJVCZXEV
+          RZAFPTUJUYEUNYEZVMZAVWMGQYGVCZTXJVCZXEVRZAGQTUKUYEUOYEZVMZPQXNXGZVUGX
+          QXBXRAVWHVVTVWJVWAXHAVWGPVAVBAPQAPVWRYFZAQVXCYFZXSXTAVWIQVAVBAPQVXEVX
+          FYAXTYBYCAVUKVUJXKWGZVAVBVCZVUJXLWGZVAVBVCZXHVCVWEAVUJAVUJXMVRZVUJXPV
+          RARXEVRZSXEVRZVXKAVXLHRYGVCZTXJVCZXEVRZAHRTULUYEUPYEZVMZAVXMISYGVCZTX
+          JVCZXEVRZAISTUMUYEUQYEZVMZRSXNXGZVUJXQXBXRAVXHVWCVXJVWDXHAVXGRVAVBARS
+          ARVXRYFZASVYCYFZXSXTAVXISVAVBARSVYEVYFYAXTYBYCYBXTURUVKYBAJKVVQAKUYQX
+          DUVLYCABCDEUYSVUBVUGVUJLOTVUDVULUBVVFVVNVXDVYDVUDYHVULYHUYEAUYSVUGYGV
+          CZTXJVCZVWOXOVWTVDVCZXHVCZXMAVYHVWNXOVWSVDVCZXHVCZTXJVCVWOVYKTXJVCZXH
+          VCVYJAVYGVYLTXJAVYGVWNUYRVUFYGVCZXHVCVYLAFUYRPVUFAFUJYPZAXOXPVRZGXPVR
+          UYRXPVRYIAGUKYPZXOGYQYJAPVWRYPZAVYPQXPVRVUFXPVRYIAQVXCYPZXOQYQYJYKAVY
+          KVYNVWNXHAXOGQVYPAYIUVOZVYQVYSYLYMYDXTAVWNVYKTAFPVYOVYRYNAVYPVWSXPVRV
+          YKXPVRYIAGQVYQVYSYNZXOVWSYQYJUYKVVRYOAVYMVYIVWOXHAXOVWSTVYTWUAUYKVVRY
+          RYMYSAVWPVXAVYJXMVRAVWLVWPVWQXCAVWMVXAVXBXCVWOVWTXNXGYTAVUBVUJYGVCZTX
+          JVCZVXOXOVXTVDVCZXHVCZXMAWUCVXNXOVXSVDVCZXHVCZTXJVCVXOWUFTXJVCZXHVCWU
+          EAWUBWUGTXJAWUBVXNVUAVUIYGVCZXHVCWUGAHVUARVUIAHULYPZAVYPIXPVRVUAXPVRY
+          IAIUMYPZXOIYQYJARVXRYPZAVYPSXPVRVUIXPVRYIASVYCYPZXOSYQYJYKAWUFWUIVXNX
+          HAXOISVYTWUKWUMYLYMYDXTAVXNWUFTAHRWUJWULYNAVYPVXSXPVRWUFXPVRYIAISWUKW
+          UMYNZXOVXSYQYJUYKVVRYOAWUHWUDVXOXHAXOVXSTVYTWUNUYKVVRYRYMYSAVXPVYAWUE
+          XMVRAVXLVXPVXQXCAVXMVYAVYBXCVXOVXTXNXGYTAVUEJXAVVSAJUYCWRYTUVMUVPUXHU
+          XONKWDMUXFKVHUXGUXNLUXFKJVDUVQUVRUGUVSUVTUWCUXEUXFWBKWMVCVRZWAZUXRUXS
+          WUPUXGWUPUXFJWUOUXTUXEUXFKWNWOAUYAUWTWUOUYCWPWQWRUYDXBUWAWSUWBAKTAKUY
+          QWTUYFUWDUWEUWFUYPUWGUYOUWH $.
+      $}
+
+      $d M a b c d i n $.  $d N n $.  $d P a b c d i n w x y z $.
+      $d S a b c d i n $.  $d T i j $.  $d a b c d i n ph $.  $d j ph $.
+      $( Lemma for ~ 4sq .  Inductive step, odd prime case.  (Contributed by
+         Mario Carneiro, 16-Jul-2014.)  (Revised by AV, 14-Sep-2020.) $)
+      4sqlem18 $p |- ( ph -> P e. S ) $=
+        ( co va vb vc vd vj c1 cmul cprime wcel cn prmnn syl nncnd mullidd wceq
+        c2 cuz cfv wa cv cexp caddc cz wrex wn cr clt cinf wex 4sqlem13m simpld
+        wbr 1zzd crab nnuz rabeqi eqtri cfz cn0 elfznn adantl ad2antrr nnmulcld
+        simpr nnnn0d 4sqlemsdc infssuzcldc exlimddv eqeltrid oveq1 eleq1d sylib
+        wdc elrab2 simprd 4sqlem2 adantr wi w3a cdiv cmo cmin simp1l cc0 simp1r
+        wss simp2ll simp2lr simp2rl simp2rr eqid simp3 4sqlem17 pm2.21i anassrs
+        3expia rexlimdvva mpd pm2.01da wo elnn1uz2 ecased eqeltrrd simprbi ) AU
+        FFUGTZFGAFAFAFUHUIZFUJUIZPFUKULZUMUNAUFHUIZYEGUIZAKUFHAKUFUOZKUPUQURUIZ
+        AYLAYLUSZKFUGTZUAUTZUPVATUBUTZUPVATVBTUCUTZUPVATUDUTZUPVATVBTVBTUOZUDVC
+        VDUCVCVDZUBVCVDUAVCVDZYLVEZAUUAYLAYNGUIZUUAAKUJUIZUUCAKHUIUUDUUCUSAKHVF
+        VGVHZHSAUEUTZHUIZUUEHUIUEAUUGUEVIKFVGVLABCDEFGHIUEJKLMNOPQRSVJVKAUUGUSZ
+        IUTZFUGTZGUIZUUFHIUFUUHVMHUUKIUJVNUUKIUFUQURZVNRUUKIUJUULVOVPVQAUUGWDUU
+        HUUIUFUUFVRTUIZUSZUUJVSUIUUKWMUUNUUJUUNUUIFUUMUUIUJUIUUHUUIUUFVTWAAYGUU
+        GUUMYHWBWCWEBCDEUUJGJMWFULWGWHWIZUUKUUCIKUJHUUIKUOUUJYNGUUIKFUGWJWKRWNW
+        LZWOBCDEYNGJUAUBUCUDMWPWLWQYMYTUUBUAUBVCVCYMYOVCUIZYPVCUIZUSZUSYSUUBUCU
+        DVCVCYMUUSYQVCUIZYRVCUIZUSZYSUUBWRYMUUSUVBUSZYSUUBYMUVCYSWSZUUBUVDBCDEY
+        OYPYQYRFYOKUPWTTZVBTKXATUVEXBTZUPVATYPUVEVBTKXATUVEXBTZUPVATVBTYQUVEVBT
+        KXATUVEXBTZUPVATYRUVEVBTKXATUVEXBTZUPVATVBTVBTKWTTZGHIJUVFUVGUVHUVIKLMU
+        VDALUJUIAYLUVCYSXCZNULUVDAFUPLUGTZUFVBTUOUVKOULUVDAYFUVKPULUVDAXDUVLVRT
+        GXFUVKQULRSAYLUVCYSXEUUQUURUVBYMYSXGUUQUURUVBYMYSXHUUTUVAUUSYMYSXIUUTUV
+        AUUSYMYSXJUVFXKUVGXKUVHXKUVIXKUVJXKYMUVCYSXLXMXNXPXOXQXQXRXSAUUDYKYLXTA
+        UUDUUCUUPVKKYAWLYBUUOYCYIUFUJUIYJUUKYJIUFUJHUUIUFUOUUJYEGUUIUFFUGWJWKRW
+        NYDULYC $.
     $}
+
+    $d S i j k n $.  $d S i j m n $.  $d i j n w x y z $.
+    $( Lemma for ~ 4sq .  The proof is by strong induction - we show that if
+       all the integers less than ` k ` are in ` S ` , then ` k ` is as well.
+       In this part of the proof we do the induction argument and dispense with
+       all the cases except the odd prime case, which is sent to ~ 4sqlem18 .
+       If ` k ` is ` 0 , 1 , 2 ` , we show ` k e. S ` directly; otherwise if
+       ` k ` is composite, ` k ` is the product of two numbers less than it
+       (and hence in ` S ` by assumption), so by ~ mul4sq ` k e. S ` .
+       (Contributed by Mario Carneiro, 14-Jul-2014.)  (Revised by Mario
+       Carneiro, 20-Jun-2015.) $)
+    4sqlem19 $p |- NN0 = S $=
+      ( wcel cn cc0 wceq c1 cmul co eleq1 c2 cexp caddc cfz wa vk vj vm vi cabs
+      cn0 cv wo elnn0 cfv abs1 oveq1i sq1 eqtri sq0 oveq12i 1p0e1 cgz cz 1z zgz
+      abs0 ax-mp 0z 4sqlem4a mp2an eqeltrri cprime cmin wral wne df-2 eqtr4i wb
+      adantl mpbiri csn cdif eldifsn crab cr clt cinf cdiv oddprm adantr eldifi
+      cc prmnn nncn 3syl ax-1cn sylancl 2cnd cap wbr 2ap0 a1i divcanap2d oveq1d
+      subcl npcan eqtr2d cun oveq2d nnm1nn0 elnn0uz sylib eluzfz1 fzsplit eqtrd
+      cuz wss fz0sn 00id snssi eqsstri 0p1e1 simpr dfss3 eqsstrid unssd eqsstrd
+      sylibr oveq1 eleq1d cbvrabv eqid 4sqlem18 sylanbr an32s wdc prmz 2z zdceq
+      dcne mpjaodan wi mul4sq prmind2 eqeltrdi jaoi sylbi ssriv 4sqlem1 eqssi
+      id ) UFEUAUFEUAUGZUFHUUHIHZUUHJKZUHUUHEHZUUHUIUUIUUKUUJUBUGZEHZLEHUCUGZEH
+      ZUDUGZEHZUUNUUPMNZEHZUUKUBUCUDUUHUULLEOUULUUNEOUULUUPEOUULUUREOUULUUHEOLU
+      EUJZPQNZJUEUJZPQNZRNZLEUVDLJRNLUVALUVCJRUVALPQNLUUTLPQUKULUMUNZUVCJPQNJUV
+      BJPQVBULUOUNZUPUQUNLURHZJURHZUVDEHLUSHUVGUTLVAVCZJUSHUVHVDJVAVCZABCDLJEFG
+      VEVFVGUULVHHZUUOUCLUULLVINZSNZVJZTZUULPKZUUMUULPVKZUVOUVPTUUMPEHZUVAUVARN
+      ZPEUVSLLRNPUVALUVALRUVEUVEUPVLVMUVGUVGUVSEHUVIUVIABCDLLEFGVEVFVGUVPUUMUVR
+      VNUVOUULPEOVOVPUVKUVQUVNUUMUVKUVQTUULVHPVQZVRHZUVNUUMUULVHPVSUWAUVNTZABCD
+      UULEUUHUULMNZEHZUAIVTZUDFUWEWAWBWCZUVLPWDNZGUWAUWGIHUVNUULWEWFUWBPUWGMNZL
+      RNUVLLRNZUULUWBUWHUVLLRUWBUVLPUWBUULWHHZLWHHZUVLWHHUWBUVKUULIHZUWJUWAUVKU
+      VNUULVHUVTWGWFZUULWIZUULWJWKZWLUULLXAWMUWBWNPJWOWPUWBWQWRWSZWTUWBUWJUWKUW
+      IUULKUWOWLUULLXBWMXCUWMUWBJUWHSNZJJSNZJLRNZUVLSNZXDZEUWBUWQJUVLSNZUXAUWBU
+      WHUVLJSUWPXEUWBUVLJXLUJHZJUXBHUXBUXAKUWBUVLUFHZUXCUWBUVKUWLUXDUWMUWNUULXF
+      WKUVLXGXHJUVLXIJJUVLXJWKXKUWBUWRUWTEUWREXMUWBUWRJVQZEXNJEHUXEEXMUVCUVCRNZ
+      JEUXFJJRNJUVCJUVCJRUVFUVFUPXOUNUVHUVHUXFEHUVJUVJABCDJJEFGVEVFVGZJEXPVCXQW
+      RUWBUWTUVMEUWSLUVLSXRULUWBUVNUVMEXMUWAUVNXSUCUVMEXTYDYAYBYCUWDUUPUULMNZEH
+      UAUDIUUHUUPKUWCUXHEUUHUUPUULMYEYFYGUWFYHYIYJYKUVOUVPYLZUVPUVQUHUVOUULUSHZ
+      PUSHUXIUVKUXJUVNUULYMWFYNUULPYOWMUULPYPXHYQUUOUUQTUUSYRUUNPXLUJZHUUPUXKHT
+      ABCDUUNUUPEFGYSWRYTUUJUUHJEUUJUUGUXGUUAUUBUUCUUDABCDEFGUUEUUF $.
+  $}
+
+  ${
+    $d a b c d m n w x y z A $.
+    $( Lagrange's four-square theorem, or Bachet's conjecture: every
+       nonnegative integer is expressible as a sum of four squares.  This is
+       Metamath 100 proof #19.  (Contributed by Mario Carneiro,
+       16-Jul-2014.) $)
+    4sq $p |- ( A e. NN0 <-> E. a e. ZZ E. b e. ZZ E. c e. ZZ E. d e. ZZ
+        A = ( ( ( a ^ 2 ) + ( b ^ 2 ) ) + ( ( c ^ 2 ) + ( d ^ 2 ) ) ) ) $=
+      ( vx vy vz vw vm vn cv c2 cexp co caddc wceq cz wrex 2rexbidv cn0 4sqlem2
+      cab eqeq1 cbvabv 4sqlem19 ) FGHIAUAJBCDEFGHIJLZFLMNOGLMNOPOHLMNOILMNOPOPO
+      ZQZIRSHRSZGRSFRSZJUCKUKKLZUHQZIRSHRSZGRSFRSJKUGULQZUJUNFGRRUOUIUMHIRRUGUL
+      UHUDTTUEUFUB $.
   $}
 
 
