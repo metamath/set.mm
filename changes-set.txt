@@ -89,6 +89,13 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 3-Jun-25 qusmul2    qusmul2idl 
+ 1-Jun-25 rhmqusnsg  [same]     Moved from TA's mathbox to main set.mm
+ 1-Jun-25 lidlnsg    [same]     Moved from TA's mathbox to main set.mm
+ 1-Jun-25 qusmul     qusmulcrng Moved from TA's mathbox to main set.mm
+ 1-Jun-25 ghmqusnsglem2 [same]  Moved from TA's mathbox to main set.mm
+ 1-Jun-25 ghmqusnsglem1 [same]  Moved from TA's mathbox to main set.mm
+ 1-Jun-25 ghmqusnsg  [same]     Moved from TA's mathbox to main set.mm
 30-May-25 rhmply1mon [same]     Moved from SN's mathbox to main set.mm
 30-May-25 rhmply1vsca [same]    Moved from SN's mathbox to main set.mm
 30-May-25 rhmply1vr1 [same]     Moved from SN's mathbox to main set.mm
