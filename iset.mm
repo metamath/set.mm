@@ -66181,6 +66181,18 @@ $)
       YHYIUYBUUHDSUYAUUGEDWCYBYDUYAUVRUUGUYBYMAUUQUUEUVHUVRUXQUWKYJUUGYKUOYLYNX
       AXJYOAUUSUUEUVCUUJAUWIUWHLFCHYPUOAUVBUUIGUVBUUISABQCUVAUUHBQVCUUTUUGEDBQF
       WOWPYQYRYSYTAUVDUUMUUPAUULCGVIHAUVNUVKUULVIRMNDEIIUUCUUALUUBUUDXH $.
+
+    pw2f1o.5 $e |- F = ( x e. ~P A |->
+      ( z e. A |-> if ( z e. x , C , B ) ) ) $.
+    $( The power set of a set is equinumerous to set exponentiation with an
+       unordered pair base of ordinal 2.  Generalized from Proposition 10.44 of
+       [TakeutiZaring] p. 96.  (Contributed by Mario Carneiro, 6-Oct-2014.) $)
+    pw2f1odc $p |- ( ph -> F : ~P A -1-1-onto-> ( { B , C } ^m A ) ) $=
+      ( vy wcel wa cpw cpr cmap co cif cmpt ccnv csn cima wceq eqid pw2f1odclem
+      cv cvv biimpa mpanr2 simpld vex cnvex imaex a1i f1od ) ABRDUAZEFUBDUCUDZC
+      DCUMBUMZSFEUEUFZRUMZUGZFUHZUIZGVDUNQAVEVCSZTVFVDSZVEVFUGVIUIUJZAVKVFVFUJZ
+      VLVMTZVFUKAVKVNTVOACDEFVEVFHIJKLMNOPULUOUPUQVJUNSAVGVDSTVHVIVGRURUSUTVAAC
+      DEFVEVGHIJKLMNOPULVB $.
   $}
 
   ${
