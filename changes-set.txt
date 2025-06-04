@@ -89,6 +89,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 4-Jun-25 rhmpreimaidl  [same]  Moved from TA's mathbox to main set.mm
+ 4-Jun-25 kerlidl    [same]     Moved from TA's mathbox to main set.mm
  3-Jun-25 qusmul2    qusmul2idl 
  1-Jun-25 rhmqusnsg  [same]     Moved from TA's mathbox to main set.mm
  1-Jun-25 lidlnsg    [same]     Moved from TA's mathbox to main set.mm
