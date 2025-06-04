@@ -89,18 +89,20 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 3-Jun-25 inn0f     [same]      Moved from GS's mathbox to main set.mm
+ 3-Jun-25 inn0      [same]      Moved from GS's mathbox to main set.mm
 30-May-25 rhmply1mon [same]     Moved from SN's mathbox to main set.mm
 30-May-25 rhmply1vsca [same]    Moved from SN's mathbox to main set.mm
 30-May-25 rhmply1vr1 [same]     Moved from SN's mathbox to main set.mm
-30-May-25 rhmply1    [same]     Moved from SN's mathbox to main set.mm
-30-May-25 mhmcoply1  [same]     Moved from SN's mathbox to main set.mm
-30-May-25 ply1vscl   [same]     Moved from SN's mathbox to main set.mm
-30-May-25 rhmmpl     [same]     Moved from SN's mathbox to main set.mm
+30-May-25 rhmply1   [same]      Moved from SN's mathbox to main set.mm
+30-May-25 mhmcoply1 [same]      Moved from SN's mathbox to main set.mm
+30-May-25 ply1vscl  [same]      Moved from SN's mathbox to main set.mm
+30-May-25 rhmmpl    [same]      Moved from SN's mathbox to main set.mm
 30-May-25 rhmcomulmpl [same]    Moved from SN's mathbox to main set.mm
 30-May-25 mhmcoaddmpl [same]    Moved from SN's mathbox to main set.mm
-30-May-25 mhmcompl   [same]     Moved from SN's mathbox to main set.mm
-30-May-25 mpllmodd   [same]     Moved from SN's mathbox to main set.mm
-30-May-25 mplringd   [same]     Moved from SN's mathbox to main set.mm
+30-May-25 mhmcompl  [same]      Moved from SN's mathbox to main set.mm
+30-May-25 mpllmodd  [same]      Moved from SN's mathbox to main set.mm
+30-May-25 mplringd  [same]      Moved from SN's mathbox to main set.mm
 30-May-25 syl6bir   biimtrrdi
 27-May-25 coexd     [same]      Moved from SN's mathbox to main set.mm
 27-May-25 fzoopth   [same]      Moved from AV's mathbox to main set.mm
