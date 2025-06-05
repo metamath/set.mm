@@ -151853,6 +151853,16 @@ $)
       FOZDFOZEPQZRZBDGPQZRZFOZUSBGHUARZOZDVGOZVBRZVEVGOZVCVFUSHGUBQMZUPUQUCZVJV
       KUGUSVLURNVMAVLURIUDVLUPUQUEUFVDVBHGECBDEGFSRGVGSRLFVGGSKUHUIJVDUJVBUJUKU
       LUTVHVAVIVBFVGBKTFVGDKTUMFVGVEKTUNUO $.
+
+    $( Closure of the addition in a quotient group.  (Contributed by AV,
+       24-Feb-2025.) $)
+    ecqusaddcl $p |- ( ( ph /\ ( A e. B /\ C e. B ) )
+                       -> ( [ A ] .~ ( +g ` Q ) [ C ] .~ ) e. ( Base ` Q ) ) $=
+      ( wcel wa cplusg cfv co cec cgrp adantr ecqusaddd cnsg csubg nsgsubg 3syl
+      cbs subgrcl w3a anim1i 3anass sylibr grpcl syl quseccl0g syl3anc eqeltrrd
+      eqid ) ABCMZDCMZNZNZBDGOPZQZFRZBFRDFREOPQEUFPZABCDEFGHIJKLUAVAGSMZVCCMZHG
+      UBPZMZVDVEMAVFUTAVIHGUCPMVFIHGUDHGUGUEZTVAVFURUSUHZVGVAVFUTNVKAVFUTVJUIVF
+      URUSUJUKCVBGBDJVBUQULUMAVIUTITVECFHGESVCVHKLJVEUQUNUOUP $.
   $}
 
 
