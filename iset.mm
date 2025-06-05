@@ -151770,6 +151770,21 @@ $)
         VBDFCJVBUIZULUMVAVCDUCRZVDCDUNUMZOTPTNTZMTZAVBDFCJVEKUOVAVFVHFRZVIFRZUP
         VHVIASFRZVGVFVJVKVLFADVHVIJKUQURUSKLUT $.
     $}
+
+    ${
+      qus0.p $e |- .0. = ( 0g ` G ) $.
+      $( Value of the group identity operation in a quotient group.
+         (Contributed by Mario Carneiro, 18-Sep-2015.) $)
+      qus0 $p |- ( S e. ( NrmSGrp ` G ) ->
+        [ .0. ] ( G ~QG S ) = ( 0g ` H ) ) $=
+        ( cnsg cfv wcel c0g cqg co cec cplusg wceq cbs cgrp syl eqid syl2anc wb
+        csubg nsgsubg subgrcl grpidcl qusadd grplid eceq1d eqtrd qusgrp quseccl
+        mpd3an23 mpdan grpid mpbid eqcomd ) ABGHIZCJHZDBAKLZMZUQUTUTCNHZLZUTOZU
+        RUTOZUQVBDDBNHZLZUSMZUTUQDBPHZIZVIVBVGOUQBQIZVIUQABUBHIVJABUCABUDRZVHBD
+        VHSZFUERZVMVEVAABCVHDDEVLVESZVASZUFULUQVFDUSUQVJVIVFDOVKVMVHVEBDDVLVNFU
+        GTUHUIUQCQIUTCPHZIZVCVDUAABCEUJUQVIVQVMVPABCVHDEVLVPSZUKUMVPVACUTURVRVO
+        URSUNTUOUP $.
+    $}
   $}
 
 
