@@ -62953,6 +62953,22 @@ $)
   eceq2 $p |- ( A = B -> [ C ] A = [ C ] B ) $=
     ( wceq csn cima cec imaeq1 df-ec 3eqtr4g ) ABDACEZFBKFCAGCBGABKHCAICBIJ $.
 
+  ${
+    eceq2i.1 $e |- A = B $.
+    $( Equality theorem for the ` A ` -coset and ` B ` -coset of ` C ` ,
+       inference version.  (Contributed by Peter Mazsa, 11-May-2021.) $)
+    eceq2i $p |- [ C ] A = [ C ] B $=
+      ( wceq cec eceq2 ax-mp ) ABECAFCBFEDABCGH $.
+  $}
+
+  ${
+    eceq2d.1 $e |- ( ph -> A = B ) $.
+    $( Equality theorem for the ` A ` -coset and ` B ` -coset of ` C ` ,
+       deduction version.  (Contributed by Peter Mazsa, 23-Apr-2021.) $)
+    eceq2d $p |- ( ph -> [ C ] A = [ C ] B ) $=
+      ( wceq cec eceq2 syl ) ABCFDBGDCGFEBCDHI $.
+  $}
+
   $( Membership in an equivalence class.  Theorem 72 of [Suppes] p. 82.
      (Contributed by Mario Carneiro, 9-Jul-2014.) $)
   elecg $p |- ( ( A e. V /\ B e. W ) -> ( A e. [ B ] R <-> B R A ) ) $=
