@@ -67563,6 +67563,31 @@ $)
     ILUGAUIMUHUKAUFUJUGUFUDJEUJUEJUDJUENOPAJRQSTAUAUGAUIUBUC $.
 
   ${
+    $d f p q x y z $.
+    $( The power set of a set being equinumerous to set exponentiation with a
+       base of ordinal ` 2o ` is equivalent to excluded middle.  This is
+       Metamath 100 proof #52.  The forward direction uses excluded middle
+       expressed as ` EXMID ` to show this equinumerosity.
+
+       The reverse direction is the one which establishes that power set being
+       equinumerous to set exponentiation implies excluded middle.  This
+       resolves the question of whether we will be able to prove this
+       equinumerosity theorem in the negative.  (Contributed by Jim Kingdon,
+       13-Aug-2022.) $)
+    exmidpw2en $p |- ( EXMID <-> A. x ~P x ~~ ( 2o ^m x ) ) $=
+      ( vy vz vf vq vp wem cv cpw c2o cmap co cen wbr c0 cvv wcel pp0ex a1i c1o
+      wal csn cpr cif cmpt wf1o vpwex wf cab vex mapval mapex mp2an eqeltri 0ex
+      p0ex wne 0nep0 wdc wral exmidexmid ralrimivw eqid pw2f1odc mp3an12i df2o2
+      f1oen2g oveq1i breqtrrdi alrimiv 1oex wceq pweq oveq2 breq12d spcv oveq2i
+      df1o2 mapsnen eqbrtri entr sylancl exmidpw sylibr impbii ) GAHZIZJWFKLZMN
+      ZAUAZGWIAGWGOOUBZUCZWFKLZWHMWGPQWMPQGWGWMBWGCWFCHBHQWKOUDUEUEZUFWGWMMNAUG
+      WMWFWLDHUHDUIZPWLWFDRAUJZUKWFPQZWLPQWOPQWPRWFWLPPDULUMUNGBCWFOWKWNPPEFWQG
+      WPSOPQGUOSWKPQGUPSOWKUQGURSGFHEHQZUSZEWGUTFWFGWSEWGWRVAVBVBWNVCVDWGWMWNPP
+      VGVEJWLWFKVFVHVIVJWJTIZJMNZGWJWTJTKLZMNZXBJMNXAWIXCATVKWFTVLWGWTWHXBMWFTV
+      MWFTJKVNVOVPXBJWKKLJMTWKJKVRVQJOJWLPVFRUNUOVSVTWTXBJWAWBWCWDWE $.
+  $}
+
+  ${
     $d A x $.
     $( Reformulation of ~ ss1o0el1 using ` 1o ` instead of ` { (/) } ` .
        (Contributed by BJ, 9-Aug-2024.) $)
