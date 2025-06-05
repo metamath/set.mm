@@ -151785,6 +151785,24 @@ $)
         GTUHUIUQCQIUTCPHZIZVCVDUAABCEUJUQVIVQVMVPABCVHDEVLVPSZUKUMVPVACUTURVRVO
         URSUNTUOUP $.
     $}
+
+    qusinv.v $e |- V = ( Base ` G ) $.
+    ${
+      qusinv.i $e |- I = ( invg ` G ) $.
+      qusinv.n $e |- N = ( invg ` H ) $.
+      $( Value of the group inverse operation in a quotient group.
+         (Contributed by Mario Carneiro, 18-Sep-2015.) $)
+      qusinv $p |- ( ( S e. ( NrmSGrp ` G ) /\ X e. V ) ->
+        ( N ` [ X ] ( G ~QG S ) ) = [ ( I ` X ) ] ( G ~QG S ) ) $=
+        ( cfv wcel co cec wceq cplusg c0g cgrp eqid cnsg wa cqg nsgsubg subgrcl
+        csubg syl grpinvcl qusadd mpd3an3 grprinv eceq1d qus0 adantr 3eqtrd cbs
+        sylan wb qusgrp quseccl syldan grpinvid1 syl3anc mpbird ) ABUALMZGFMZUB
+        ZGBAUCNZOZELGDLZVHOZPZVIVKCQLZNZCRLZPZVGVNGVJBQLZNZVHOZBRLZVHOZVOVEVFVJ
+        FMZVNVSPVEBSMZVFWBVEABUFLMWCABUDABUEUGZFBDGIJUHUQZVQVMABCFGVJHIVQTZVMTZ
+        UIUJVGVRVTVHVEWCVFVRVTPWDFVQBDGVTIWFVTTZJUKUQULVEWAVOPVFABCVTHWHUMUNUOV
+        GCSMZVICUPLZMVKWJMZVLVPURVEWIVFABCHUSUNWJABCFGHIWJTZUTVEVFWBWKWEWJABCFV
+        JHIWLUTVAWJVMCEVIVKVOWLWGVOTKVBVCVD $.
+    $}
   $}
 
 
