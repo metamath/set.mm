@@ -151803,6 +151803,24 @@ $)
         GCSMZVICUPLZMVKWJMZVLVPURVEWIVFABCHUSUNWJABCFGHIWJTZUTVEVFWBWKWEWJABCFV
         JHIWLUTVAWJVMCEVIVKVOWLWGVOTKVBVCVD $.
     $}
+
+    ${
+      qussub.p $e |- .- = ( -g ` G ) $.
+      qussub.a $e |- N = ( -g ` H ) $.
+      $( Value of the group subtraction operation in a quotient group.
+         (Contributed by Mario Carneiro, 18-Sep-2015.) $)
+      qussub $p |- ( ( S e. ( NrmSGrp ` G ) /\ X e. V /\ Y e. V ) ->
+    ( [ X ] ( G ~QG S ) N [ Y ] ( G ~QG S ) ) = [ ( X .- Y ) ] ( G ~QG S ) ) $=
+        ( cfv wcel co cec cminusg cplusg wceq eqid cnsg w3a cqg quseccl 3adant3
+        cbs grpsubval 3imp3i2an qusinv 3adant2 oveq2d csubg nsgsubg subgrcl syl
+        cgrp grpinvcl sylan qusadd syld3an3 3adant1 eceq1d eqtr4d 3eqtrd ) ABUA
+        MNZGFNZHFNZUBZGBAUCOZPZHVIPZEOZVJVKCQMZMZCRMZOZVJHBQMZMZVIPZVOOZGHDOZVI
+        PZVEVFVGVJCUFMZNZVKWCNVLVPSVEVFWDVGWCABCFGIJWCTZUDUEWCABCFHIJWEUDWCVOCV
+        MEVJVKWEVOTZVMTZLUGUHVHVNVSVJVOVEVGVNVSSVFABCVQVMFHIJVQTZWGUIUJUKVHVTGV
+        RBRMZOZVIPZWBVEVFVGVRFNZVTWKSVEVGWLVFVEBUPNZVGWLVEABULMNWMABUMABUNUOFBV
+        QHJWHUQURUJWIVOABCFGVRIJWITZWFUSUTVHWAWJVIVFVGWAWJSVEFWIBVQDGHJWNWHKUGV
+        AVBVCVD $.
+    $}
   $}
 
 
