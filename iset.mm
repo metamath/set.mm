@@ -151839,6 +151839,22 @@ $)
     $}
   $}
 
+  ${
+    ecqusaddd.i $e |- ( ph -> I e. ( NrmSGrp ` R ) ) $.
+    ecqusaddd.b $e |- B = ( Base ` R ) $.
+    ecqusaddd.g $e |- .~ = ( R ~QG I ) $.
+    ecqusaddd.q $e |- Q = ( R /s .~ ) $.
+    $( Addition of equivalence classes in a quotient group.  (Contributed by
+       AV, 25-Feb-2025.) $)
+    ecqusaddd $p |- ( ( ph /\ ( A e. B /\ C e. B ) )
+           -> [ ( A ( +g ` R ) C ) ] .~ = ( [ A ] .~ ( +g ` Q ) [ C ] .~ ) ) $=
+      ( wcel wa cec cplusg cfv co cqus eceq2i cqg cnsg w3a anim1i 3anass sylibr
+      wceq oveq2i eqtri eqid qusadd syl oveq12i 3eqtr4g eqcomd ) ABCMZDCMZNZNZB
+      FOZDFOZEPQZRZBDGPQZRZFOZUSBGHUARZOZDVGOZVBRZVEVGOZVCVFUSHGUBQMZUPUQUCZVJV
+      KUGUSVLURNVMAVLURIUDVLUPUQUEUFVDVBHGECBDEGFSRGVGSRLFVGGSKUHUIJVDUJVBUJUKU
+      LUTVHVAVIVBFVGBKTFVGDKTUMFVGVEKTUNUO $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
