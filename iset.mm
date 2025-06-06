@@ -139506,6 +139506,32 @@ $)
   $}
 
   ${
+    pcadd2.1 $e |- ( ph -> P e. Prime ) $.
+    pcadd2.2 $e |- ( ph -> A e. QQ ) $.
+    pcadd2.3 $e |- ( ph -> B e. QQ ) $.
+    pcadd2.4 $e |- ( ph -> ( P pCnt A ) < ( P pCnt B ) ) $.
+    $( The inequality of ~ pcadd becomes an equality when one of the factors
+       has prime count strictly less than the other.  (Contributed by Mario
+       Carneiro, 16-Jan-2015.)  (Revised by Mario Carneiro, 26-Jun-2015.) $)
+    pcadd2 $p |- ( ph -> ( P pCnt A ) = ( P pCnt ( A + B ) ) ) $=
+      ( cpc co caddc wcel cq syl2anc cle syl wbr wceq wo wa cprime pcxcl qaddcl
+      cxr xrltled pcadd cneg qnegcl clt wn wb cz pcxqcl zq orim1i xqltnle mpbid
+      cpnf adantr pcneg breq1d biimpar ex cc0 cc qcn negcld add12d negidd eqtrd
+      addcomd oveq2d addridd 3eqtrd breq12d sylibd mtod mpbird breqtrrd addassd
+      breqtrd xrletrid ) ADBIJZDBCKJZIJZADUALZBMLZWCUDLEFDBUBNZAWFWDMLZWEUDLEAW
+      GCMLZWIFGBCUCNZDWDUBNZABCDEFGAWCDCIJZWHAWFWJWMUDLEGDCUBNZHUEUFAWEDWDCUGZK
+      JZIJWCOAWDWODEWKAWJWOMLZGCUHPZAWEWMDWOIJZOAWEWMWLWNAWEWMUIQZWMWEOQZUJZAXA
+      WMWCOQZAWCWMUIQZXCUJZHAWCMLZWCURRZSZWMMLZWMURRZSZXDXEUKAWFWGXHEFWFWGTWCUL
+      LZXGSXHDBUMXLXFXGWCUNUOPNAWFWJXKEGWFWJTWMULLZXJSXKDCUMXMXIXJWMUNUOPNZWCWM
+      UPNUQAXAWSDWOWDKJZIJZOQZXCAXAXQAXATWOWDDAWFXAEUSAWQXAWRUSAWIXAWKUSAWSWEOQ
+      XAAWSWMWEOAWFWJWSWMREGCDUTNZVAVBUFVCAWSWMXPWCOXRAXOBDIAXOBWOCKJZKJBVDKJZB
+      AWOBCACAWJCVELGCVFPZVGZAWGBVELFBVFPZYAVHAXSVDBKAXSCWOKJZVDAWOCYBYAVKACYAV
+      IZVJVLABYCVMZVNVLVOVPVQAWEMLZWEURRZSZXKWTXBUKAWFWIYIEWKWFWITWEULLZYHSYIDW
+      DUMYJYGYHWEUNUOPNXNWEWMUPNVRUEXRVSUFAWPBDIAWPBYDKJXTBABCWOYCYAYBVTAYDVDBK
+      YEVLYFVNVLWAWB $.
+  $}
+
+  ${
     $d k m p A $.  $d k n p B $.  $d k p F $.  $d p M $.  $d p N $.
     $d k n m p P $.  $d k p ph $.
     pcmpt.1 $e |- F = ( n e. NN |-> if ( n e. Prime , ( n ^ A ) , 1 ) ) $.
