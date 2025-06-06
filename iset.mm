@@ -66137,6 +66137,65 @@ $)
   $}
 
   ${
+    $d A p q x y $.  $d A x y z $.  $d B x y z $.  $d C x y z $.  $d G x y $.
+    $d S q x y $.  $d S x y z $.  $d ph x y $.
+    pw2f1o.1 $e |- ( ph -> A e. V ) $.
+    pw2f1o.2 $e |- ( ph -> B e. W ) $.
+    pw2f1o.3 $e |- ( ph -> C e. W ) $.
+    pw2f1o.4 $e |- ( ph -> B =/= C ) $.
+    pw2f1odc.4 $e |- ( ph -> A. p e. A A. q e. ~P A DECID p e. q ) $.
+    $( Lemma for ~ pw2f1odc .  (Contributed by Mario Carneiro, 6-Oct-2014.) $)
+    pw2f1odclem $p |- ( ph ->
+      ( ( S e. ~P A /\ G = ( z e. A |-> if ( z e. S , C , B ) ) ) <->
+        ( G e. ( { B , C } ^m A ) /\ S = ( `' G " { C } ) ) ) ) $=
+      ( vy wcel wceq wa vx wss cv cif cmpt cpr wf ccnv csn cima cpw cmap prid2g
+      co syl ad2antrr prid1g wel wdc eleq2 dcbid wral weq ralbidv simpr rspcdva
+      elequ1 simplr cvv wb ssexd elpwg mpbird ifcldcd fmpttd adantrr simprr cfv
+      feq1d iftrue simplrl wne iffalse neeq1d syl5ibrcom a1d necon4bddc impbid2
+      wi wn mpd simplrr fveq1d eqid eleq1w ifbid fvmptd3 eqeq1d bitr4d pm5.32da
+      eqtrd sseld pm4.71rd wfn ffn fniniseg 3syl 3bitr4d eqrdv jca cdm cnvimass
+      simprl ad2antrl sseqtrid eqsstrd dffn5im eleq2d baibd bitrd biimpa adantl
+      fdm eqtr4d notbid ffvelcdmda elpri adantr ecased syldanl exmiddc mpjaodan
+      wo mpteq2dva impbida elpw2g cbvmptv a1i eqeq2d anbi12d syl2anc elmapd
+      prexg anbi1d ) AFCUBZGQCQUCZFRZEDUDZUEZSZTZCDEUFZGUGZFGUHEUIZUJZSZTZFCUKZ
+      RZGBCBUCFRZEDUDZUEZSZTGUULCULUNRZUUPTAUUKUUQAUUKTZUUMUUPUVEUUMCUULUUIUGZA
+      UUEUVFUUJAUUETZQCUUHUULUVGUUFCRZTZUUGEDUULAEUULRZUUEUVHAEIRZUVJNDEIUMUOZU
+      PADUULRZUUEUVHADIRZUVMMDEIUQUOZUPUVIQJURZUSZUUGUSZJUURFJUCZFSZUVPUUGUVSFU
+      UFUTVAUVIKJURZUSZJUURVBZUVQJUURVBKCUUFKQVCZUWBUVQJUURUWDUWAUVPKQJVGVAVDAU
+      WCKCVBZUUEUVHPUPUVGUVHVEVFUVIUUSUUEAUUEUVHVHZUVIFVIRZUUSUUEVJZUVIFCHACHRZ
+      UUEUVHLUPUWFVKFCVIVLZUOVMVFZVNVOVPUVECUULGUUIAUUEUUJVQVSVMZUVEUAFUUOUVEUA
+      UCZCRZUWMFRZTUWNUWMGVRZESZTZUWOUWMUUORZUVEUWNUWOUWQUVEUWNTZUWOUWOEDUDZESZ
+      UWQUWTUWOUXBUWOEDVTUWTUWOUSZUXBUWOWIUWTUAJURZUSZUXCJUURFUVTUXDUWOUVSFUWMU
+      TVAUWTUWCUXEJUURVBKCUWMKUAVCZUWBUXEJUURUXFUWAUXDKUAJVGVAVDAUWEUUKUWNPUPUV
+      EUWNVEZVFUWTUUSUUEAUUEUUJUWNWAZUWTUWGUWHUWTFCHAUWIUUKUWNLUPUXHVKUWJUOVMVF
+      ZUWTUWOUXAEUWTUWOWJZUXAEWBZWIUXCUWTUXKUXJDEWBZAUXLUUKUWNOUPUXJUXADEUWOEDW
+      CWDWEWFWGWKWHUWTUWPUXAEUWTUWPUWMUUIVRUXAUWTUWMGUUIAUUEUUJUWNWLWMUWTQUWMUU
+      HUXACUUIUULUUIWNQUAVCUUGUWOEDQUAFWOWPUXGUWTUWOEDUULAUVJUUKUWNUVLUPAUVMUUK
+      UWNUVOUPUXIVNWQXAWRWSWTUVEUWOUWNUVEFCUWMAUUEUUJXMXBXCUVEUUMGCXDZUWSUWRVJU
+      WLCUULGXEZCEUWMGXFXGXHXIXJAUUQTZUUEUUJUXOFUUOCAUUMUUPVQUXOGXKZUUOCGUUNXLU
+      UMUXPCSAUUPCUULGYCXNXOXPZUXOGQCUUFGVRZUEZUUIUXOUXMGUXSSUUMUXMAUUPUXNXNZQC
+      GXQUOUXOQCUXRUUHUXOUVHTZUUGUXRUUHSUUGWJZUYAUUGTUXREUUHUYAUUGUXRESZUYAUUGU
+      UFUUORZUYCUYAFUUOUUFAUUMUUPUVHWLXRUXOUYDUVHUYCUXOUXMUYDUVHUYCTVJUXTCEUUFG
+      XFUOXSXTZYAUUGUUHESUYAUUGEDVTYBYDUYAUYBTZUXRDUUHUYFUXRDSZUYCUYAUYBUYCWJUY
+      AUUGUYCUYEYEYAUYAUYGUYCYMZUYBUYAUXRUULRUYHUXOCUULUUFGAUUMUUPXMYFUXRDEYGUO
+      YHYIUYBUUHDSUYAUUGEDWCYBYDUYAUVRUUGUYBYMAUUQUUEUVHUVRUXQUWKYJUUGYKUOYLYNX
+      AXJYOAUUSUUEUVCUUJAUWIUWHLFCHYPUOAUVBUUIGUVBUUISABQCUVAUUHBQVCUUTUUGEDBQF
+      WOWPYQYRYSYTAUVDUUMUUPAUULCGVIHAUVNUVKUULVIRMNDEIIUUCUUALUUBUUDXH $.
+
+    pw2f1o.5 $e |- F = ( x e. ~P A |->
+      ( z e. A |-> if ( z e. x , C , B ) ) ) $.
+    $( The power set of a set is equinumerous to set exponentiation with an
+       unordered pair base of ordinal 2.  Generalized from Proposition 10.44 of
+       [TakeutiZaring] p. 96.  (Contributed by Mario Carneiro, 6-Oct-2014.) $)
+    pw2f1odc $p |- ( ph -> F : ~P A -1-1-onto-> ( { B , C } ^m A ) ) $=
+      ( vy wcel wa cpw cpr cmap co cif cmpt ccnv csn cima wceq eqid pw2f1odclem
+      cv cvv biimpa mpanr2 simpld vex cnvex imaex a1i f1od ) ABRDUAZEFUBDUCUDZC
+      DCUMBUMZSFEUEUFZRUMZUGZFUHZUIZGVDUNQAVEVCSZTVFVDSZVEVFUGVIUIUJZAVKVFVFUJZ
+      VLVMTZVFUKAVKVNTVOACDEFVEVFHIJKLMNOPULUOUPUQVJUNSAVGVDSTVHVIVGRURUSUTVAAC
+      DEFVEVGHIJKLMNOPULVB $.
+  $}
+
+  ${
     $d A a b $.  $d B a b $.  $d F a b $.
     $( Covering implies injection on power sets.  (Contributed by Stefan
        O'Rear, 6-Nov-2014.)  (Revised by Mario Carneiro, 24-Jun-2015.) $)
@@ -67502,6 +67561,31 @@ $)
     ( cv c0 csn wss wcel wdc wi wal c1o cpw wem wral df1o2 eqcomi sseq2i bitr4i
     velpw imbi1i albii df-exmid df-ral 3bitr4i ) ABZCDZEZCUDFGZHZAIUDJKZFZUGHZA
     ILUGAUIMUHUKAUFUJUGUFUDJEUJUEJUDJUENOPAJRQSTAUAUGAUIUBUC $.
+
+  ${
+    $d f p q x y z $.
+    $( The power set of a set being equinumerous to set exponentiation with a
+       base of ordinal ` 2o ` is equivalent to excluded middle.  This is
+       Metamath 100 proof #52.  The forward direction uses excluded middle
+       expressed as ` EXMID ` to show this equinumerosity.
+
+       The reverse direction is the one which establishes that power set being
+       equinumerous to set exponentiation implies excluded middle.  This
+       resolves the question of whether we will be able to prove this
+       equinumerosity theorem in the negative.  (Contributed by Jim Kingdon,
+       13-Aug-2022.) $)
+    exmidpw2en $p |- ( EXMID <-> A. x ~P x ~~ ( 2o ^m x ) ) $=
+      ( vy vz vf vq vp wem cv cpw c2o cmap co cen wbr c0 cvv wcel pp0ex a1i c1o
+      wal csn cpr cif cmpt wf1o vpwex wf cab vex mapval mapex mp2an eqeltri 0ex
+      p0ex wne 0nep0 wdc wral exmidexmid ralrimivw eqid pw2f1odc mp3an12i df2o2
+      f1oen2g oveq1i breqtrrdi alrimiv 1oex wceq pweq oveq2 breq12d spcv oveq2i
+      df1o2 mapsnen eqbrtri entr sylancl exmidpw sylibr impbii ) GAHZIZJWFKLZMN
+      ZAUAZGWIAGWGOOUBZUCZWFKLZWHMWGPQWMPQGWGWMBWGCWFCHBHQWKOUDUEUEZUFWGWMMNAUG
+      WMWFWLDHUHDUIZPWLWFDRAUJZUKWFPQZWLPQWOPQWPRWFWLPPDULUMUNGBCWFOWKWNPPEFWQG
+      WPSOPQGUOSWKPQGUPSOWKUQGURSGFHEHQZUSZEWGUTFWFGWSEWGWRVAVBVBWNVCVDWGWMWNPP
+      VGVEJWLWFKVFVHVIVJWJTIZJMNZGWJWTJTKLZMNZXBJMNXAWIXCATVKWFTVLWGWTWHXBMWFTV
+      MWFTJKVNVOVPXBJWKKLJMTWKJKVRVQJOJWLPVFRUNUOVSVTWTXBJWAWBWCWDWE $.
+  $}
 
   ${
     $d A x $.
