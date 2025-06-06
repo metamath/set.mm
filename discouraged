@@ -15582,6 +15582,7 @@ New usage of "ceqsalALT" is discouraged (0 uses).
 New usage of "ceqsalgALT" is discouraged (0 uses).
 New usage of "ceqsalvOLD" is discouraged (0 uses).
 New usage of "ceqsexOLD" is discouraged (0 uses).
+New usage of "ceqsexv2dOLD" is discouraged (0 uses).
 New usage of "ceqsexvOLD" is discouraged (0 uses).
 New usage of "ceqsexvOLDOLD" is discouraged (0 uses).
 New usage of "ceqsralvOLD" is discouraged (0 uses).
@@ -18048,7 +18049,6 @@ New usage of "nfccdeq" is discouraged (0 uses).
 New usage of "nfcdeq" is discouraged (1 uses).
 New usage of "nfceqdfOLD" is discouraged (0 uses).
 New usage of "nfcrALT" is discouraged (0 uses).
-New usage of "nfcriOLD" is discouraged (0 uses).
 New usage of "nfcsb" is discouraged (5 uses).
 New usage of "nfcsbd" is discouraged (1 uses).
 New usage of "nfcvb" is discouraged (0 uses).
@@ -18851,7 +18851,6 @@ New usage of "r1pwALT" is discouraged (0 uses).
 New usage of "rabbidaOLD" is discouraged (0 uses).
 New usage of "rabbiiaOLD" is discouraged (0 uses).
 New usage of "rabeqcOLD" is discouraged (0 uses).
-New usage of "rabeqiOLD" is discouraged (0 uses).
 New usage of "rabid2OLD" is discouraged (0 uses).
 New usage of "rabrabiOLD" is discouraged (0 uses).
 New usage of "ral0OLD" is discouraged (0 uses).
@@ -20241,6 +20240,7 @@ Proof modification of "ceqsalALT" is discouraged (23 steps).
 Proof modification of "ceqsalgALT" is discouraged (58 steps).
 Proof modification of "ceqsalvOLD" is discouraged (10 steps).
 Proof modification of "ceqsexOLD" is discouraged (49 steps).
+Proof modification of "ceqsexv2dOLD" is discouraged (28 steps).
 Proof modification of "ceqsexvOLD" is discouraged (47 steps).
 Proof modification of "ceqsexvOLDOLD" is discouraged (10 steps).
 Proof modification of "ceqsralvOLD" is discouraged (38 steps).
@@ -21144,7 +21144,6 @@ Proof modification of "nfaba1OLD" is discouraged (9 steps).
 Proof modification of "nfabdwOLD" is discouraged (152 steps).
 Proof modification of "nfceqdfOLD" is discouraged (48 steps).
 Proof modification of "nfcrALT" is discouraged (20 steps).
-Proof modification of "nfcriOLD" is discouraged (101 steps).
 Proof modification of "nfdifOLD" is discouraged (31 steps).
 Proof modification of "nfequid-o" is discouraged (8 steps).
 Proof modification of "nfeu1ALT" is discouraged (25 steps).
@@ -21342,7 +21341,6 @@ Proof modification of "r1pwALT" is discouraged (151 steps).
 Proof modification of "rabbidaOLD" is discouraged (36 steps).
 Proof modification of "rabbiiaOLD" is discouraged (39 steps).
 Proof modification of "rabeqcOLD" is discouraged (37 steps).
-Proof modification of "rabeqiOLD" is discouraged (59 steps).
 Proof modification of "rabid2OLD" is discouraged (57 steps).
 Proof modification of "rabrabiOLD" is discouraged (38 steps).
 Proof modification of "ral0OLD" is discouraged (12 steps).
