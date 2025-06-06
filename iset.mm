@@ -105376,6 +105376,22 @@ $)
       HUIRUJCAUKUM $.
   $}
 
+  $( "Less than" expressed in terms of "less than or equal to", for extended
+     numbers which are rational or ` +oo ` .  We have not yet had enough usage
+     of such numbers to warrant fully developing the concept, as in ` NN0* ` or
+     ` RR* ` , so for now we just have a handful of theorems for what we need.
+     (Contributed by Jim Kingdon, 5-Jun-2025.) $)
+  xqltnle $p |- ( ( ( A e. QQ \/ A = +oo ) /\ ( B e. QQ \/ B = +oo ) )
+      -> ( A < B <-> -. B <_ A ) ) $=
+    ( cq wcel cpnf wceq wo wa clt wbr cle wn wb simplr qre simpr breqtrrd rexrd
+    syl cxr qltnle adantll ltpnfd renepnfd neneqd xgepnf eqnbrtrd 2thd mpjaodan
+    cr mtbird pnfxr eleq1 mpbiri jaoi adantl pnfnlt pnfge notnotd 2falsed simpl
+    adantr ) ACDZAEFZGZBCDZBEFZGZHZVCABIJZBAKJZLZMZVDVIVCHZVFVMVGVCVFVMVIABUAUB
+    VNVGHZVJVLVOAEBIVOAVOVCAUJDVIVCVGNAOSZUCVNVGPZQVOBEAKVQVOEAKJZVDVOAEVOAVPUD
+    UEVOATDVRVDMVOAVPRAUFSUKUGUHVEVHVCNUIVIVDHZVJVLVSAEBIVIVDPZVIEBIJLZVDVIBTDZ
+    WAVHWBVEVFWBVGVFBBORVGWBETDULBETUMUNUOUPZBUQSVBUGVSVKVSBEAKVIBEKJZVDVIWBWDW
+    CBURSVBVTQUSUTVEVHVAUI $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
