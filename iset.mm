@@ -176466,6 +176466,45 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Wilson's theorem
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( The only elements that are equal to their own inverses in the
+     multiplicative group of nonzero elements in ` ZZ / P ZZ ` are ` 1 ` and
+     ` -u 1 == P - 1 ` .  (Note that from ~ prmdiveq ,
+     ` ( N ^ ( P - 2 ) ) mod P ` is the modular inverse of ` N ` in
+     ` ZZ / P ZZ ` .  (Contributed by Mario Carneiro, 24-Jan-2015.) $)
+  wilthlem1 $p |- ( ( P e. Prime /\ N e. ( 1 ... ( P - 1 ) ) ) ->
+    ( N = ( ( N ^ ( P - 2 ) ) mod P ) <-> ( N = 1 \/ N = ( P - 1 ) ) ) ) $=
+    ( wcel c1 cmin co c2 cmo wceq cdvds wbr caddc cmul cc0 cz adantl cc syl3anc
+    syl wb cprime cfz wa cexp wo elfzelz peano2zm peano2zd mulcomd ax-1cn subsq
+    zcnd sylancl sqvald sq1 a1i oveq12d 3eqtr2d breq2d fz1ssfz0 simpr biantrurd
+    sselid bitrd simpl euclemma wn prmnn fzm1ndvds sylan eqid prmdiveq 3bitr3rd
+    cn adantr 1zzd moddvds cq cle zq prmz elfznn nnnn0d nn0ge0d elfzle2 zltlem1
+    clt syl2anr mpbird modqid syl22anc cuz prmuz2 eluz2gt1 q1mod syl2anc bitr3d
+    cfv eqeq12d cneg znegcld mullidd oveq2d neg1cn addcom sylancr negsub 3eqtrd
+    nncnd oveq1d neg1z mp1i nngt0d modqcyc cn0 nnm1nn0 nn0zd nnred ltm1d subneg
+    3eqtr3d orbi12d ) AUACZBDADEFZUBFZCZUCZBBAGEFUDFAHFZIZABDEFZJKZABDLFZJKZUEZ
+    BDIZBYDIZUEYGAYJYLMFZJKZBNYDUBFZCZABBMFZDEFZJKZUCZYNYIYGYRUUCUUDYGYQUUBAJYG
+    YQYLYJMFZBGUDFZDGUDFZEFZUUBYGYJYLYGYJYGBOCZYJOCZYFUUIYCBDYDUFZPZBUGSZULYGYL
+    YGBUULUHZULUIYGBQCZDQCZUUHUUEIYGBUULULZUJBDUKUMYGUUFUUAUUGDEYGBUUQUNUUGDIYG
+    UOUPUQURUSYGYTUUCYGYEYSBYDUTYCYFVAVCVBVDYGYCUUJYLOCYRYNTYCYFVEZUUMUUNAYJYLV
+    FRYGYCUUIABJKVGZUUDYITUURUULYCAVNCZYFUUSAVHZABVIVJBAYHBYHVKVLRVMYGYKYOYMYPY
+    GBAHFZDAHFZIZYKYOYGUUTUUIDOCZUVDYKTYCUUTYFUVAVOZUULYGVPZBDAVQRYGUVBBUVCDYGB
+    VRCZAVRCZNBVSKBAWGKZUVBBIYFUVHYCYFUUIUVHUUKBVTSPYCUVIYFYCAOCZUVIAWAZAVTSVOZ
+    YGBYGBYFBVNCYCBYDWBPWCWDYGUVJBYDVSKZYFUVNYCBDYDWEPYFUUIUVKUVJUVNTYCUUKUVLBA
+    WFWHWIBAWJWKZYGUVIDAWGKZUVCDIUVMYGAGWLWRCZUVPYCUVQYFAWMVOAWNSAWOWPWSWQYGUVB
+    DWTZAHFZIZABUVREFZJKZYPYMYGUUTUUIUVROCZUVTUWBTUVFUULYGDUVGXABUVRAVQRYGUVBBU
+    VSYDUVOYGUVRDAMFZLFZAHFZYDAHFZUVSYDYGUWEYDAHYGUWEUVRALFZAUVRLFZYDYGUWDAUVRL
+    YGAYGAUVFXIZXBXCYGUVRQCAQCZUWHUWIIXDUWJUVRAXEXFYGUWKUUPUWIYDIUWJUJADXGUMXHX
+    JYGUVRVRCZUVEUVINAWGKUWFUVSIUWCUWLYGXKUVRVTXLUVGUVMYGAUVFXMUVRADXNWKYGYDVRC
+    ZUVINYDVSKYDAWGKUWGYDIYGYDOCUWMYGYDYGUUTYDXOCUVFAXPSZXQYDVTSUVMYGYDUWNWDYGA
+    YGAUVFXRXSYDAWJWKYAWSYGUWAYLAJYGUUOUUPUWAYLIUUQUJBDXTUMUSVMYBVD $.
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Quadratic residues and the Legendre symbol
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
