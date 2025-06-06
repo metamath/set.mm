@@ -138919,6 +138919,16 @@ $)
       IVEUTVAVIFFZVDVJVDABUBUCUDUEUFVBVAGEDZVCVFUGZUTVAUHGUIDVKUKGULUMVAVKFVCUN
       VLBGUOVCUPUQURUS $.
 
+    $( The general prime count function is an integer or infinite.
+       (Contributed by Jim Kingdon, 6-Jun-2025.) $)
+    pcxqcl $p |- ( ( P e. Prime /\ N e. QQ ) ->
+        ( ( P pCnt N ) e. ZZ \/ ( P pCnt N ) = +oo ) ) $=
+      ( cprime wcel cq wa cc0 wceq cpc co cz cpnf wne simpr oveq2d pc0 ad2antrr
+      wo eqtrd olcd pcqcl anassrs orcd wdc 0z zq ax-mp qdceq mpan2 sylib adantl
+      dcne mpjaodan ) ACDZBEDZFZBGHZABIJZKDZURLHZRBGMZUPUQFZUTUSVBURAGIJZLVBBGA
+      IUPUQNOUNVCLHUOUQAPQSTUPVAFUSUTUNUOVAUSABUAUBUCUOUQVARZUNUOUQUDZVDUOGEDZV
+      EGKDVFUEGUFUGBGUHUIBGULUJUKUM $.
+
     $( The prime count of an integer is greater than or equal to zero.
        (Contributed by Mario Carneiro, 3-Oct-2014.) $)
     pcge0 $p |- ( ( P e. Prime /\ N e. ZZ ) -> 0 <_ ( P pCnt N ) ) $=
