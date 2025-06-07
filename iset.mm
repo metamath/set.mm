@@ -62953,6 +62953,22 @@ $)
   eceq2 $p |- ( A = B -> [ C ] A = [ C ] B ) $=
     ( wceq csn cima cec imaeq1 df-ec 3eqtr4g ) ABDACEZFBKFCAGCBGABKHCAICBIJ $.
 
+  ${
+    eceq2i.1 $e |- A = B $.
+    $( Equality theorem for the ` A ` -coset and ` B ` -coset of ` C ` ,
+       inference version.  (Contributed by Peter Mazsa, 11-May-2021.) $)
+    eceq2i $p |- [ C ] A = [ C ] B $=
+      ( wceq cec eceq2 ax-mp ) ABECAFCBFEDABCGH $.
+  $}
+
+  ${
+    eceq2d.1 $e |- ( ph -> A = B ) $.
+    $( Equality theorem for the ` A ` -coset and ` B ` -coset of ` C ` ,
+       deduction version.  (Contributed by Peter Mazsa, 23-Apr-2021.) $)
+    eceq2d $p |- ( ph -> [ C ] A = [ C ] B ) $=
+      ( wceq cec eceq2 syl ) ABCFDBGDCGFEBCDHI $.
+  $}
+
   $( Membership in an equivalence class.  Theorem 72 of [Suppes] p. 82.
      (Contributed by Mario Carneiro, 9-Jul-2014.) $)
   elecg $p |- ( ( A e. V /\ B e. W ) -> ( A e. [ B ] R <-> B R A ) ) $=
@@ -151854,6 +151870,83 @@ $)
         VBDFCJVBUIZULUMVAVCDUCRZVDCDUNUMZOTPTNTZMTZAVBDFCJVEKUOVAVFVHFRZVIFRZUP
         VHVIASFRZVGVFVJVKVLFADVHVIJKUQURUSKLUT $.
     $}
+
+    ${
+      qus0.p $e |- .0. = ( 0g ` G ) $.
+      $( Value of the group identity operation in a quotient group.
+         (Contributed by Mario Carneiro, 18-Sep-2015.) $)
+      qus0 $p |- ( S e. ( NrmSGrp ` G ) ->
+        [ .0. ] ( G ~QG S ) = ( 0g ` H ) ) $=
+        ( cnsg cfv wcel c0g cqg co cec cplusg wceq cbs cgrp syl eqid syl2anc wb
+        csubg nsgsubg subgrcl grpidcl qusadd grplid eceq1d eqtrd qusgrp quseccl
+        mpd3an23 mpdan grpid mpbid eqcomd ) ABGHIZCJHZDBAKLZMZUQUTUTCNHZLZUTOZU
+        RUTOZUQVBDDBNHZLZUSMZUTUQDBPHZIZVIVBVGOUQBQIZVIUQABUBHIVJABUCABUDRZVHBD
+        VHSZFUERZVMVEVAABCVHDDEVLVESZVASZUFULUQVFDUSUQVJVIVFDOVKVMVHVEBDDVLVNFU
+        GTUHUIUQCQIUTCPHZIZVCVDUAABCEUJUQVIVQVMVPABCVHDEVLVPSZUKUMVPVACUTURVRVO
+        URSUNTUOUP $.
+    $}
+
+    qusinv.v $e |- V = ( Base ` G ) $.
+    ${
+      qusinv.i $e |- I = ( invg ` G ) $.
+      qusinv.n $e |- N = ( invg ` H ) $.
+      $( Value of the group inverse operation in a quotient group.
+         (Contributed by Mario Carneiro, 18-Sep-2015.) $)
+      qusinv $p |- ( ( S e. ( NrmSGrp ` G ) /\ X e. V ) ->
+        ( N ` [ X ] ( G ~QG S ) ) = [ ( I ` X ) ] ( G ~QG S ) ) $=
+        ( cfv wcel co cec wceq cplusg c0g cgrp eqid cnsg wa cqg nsgsubg subgrcl
+        csubg syl grpinvcl qusadd mpd3an3 grprinv eceq1d qus0 adantr 3eqtrd cbs
+        sylan wb qusgrp quseccl syldan grpinvid1 syl3anc mpbird ) ABUALMZGFMZUB
+        ZGBAUCNZOZELGDLZVHOZPZVIVKCQLZNZCRLZPZVGVNGVJBQLZNZVHOZBRLZVHOZVOVEVFVJ
+        FMZVNVSPVEBSMZVFWBVEABUFLMWCABUDABUEUGZFBDGIJUHUQZVQVMABCFGVJHIVQTZVMTZ
+        UIUJVGVRVTVHVEWCVFVRVTPWDFVQBDGVTIWFVTTZJUKUQULVEWAVOPVFABCVTHWHUMUNUOV
+        GCSMZVICUPLZMVKWJMZVLVPURVEWIVFABCHUSUNWJABCFGHIWJTZUTVEVFWBWKWEWJABCFV
+        JHIWLUTVAWJVMCEVIVKVOWLWGVOTKVBVCVD $.
+    $}
+
+    ${
+      qussub.p $e |- .- = ( -g ` G ) $.
+      qussub.a $e |- N = ( -g ` H ) $.
+      $( Value of the group subtraction operation in a quotient group.
+         (Contributed by Mario Carneiro, 18-Sep-2015.) $)
+      qussub $p |- ( ( S e. ( NrmSGrp ` G ) /\ X e. V /\ Y e. V ) ->
+    ( [ X ] ( G ~QG S ) N [ Y ] ( G ~QG S ) ) = [ ( X .- Y ) ] ( G ~QG S ) ) $=
+        ( cfv wcel co cec cminusg cplusg wceq eqid cnsg w3a cqg quseccl 3adant3
+        cbs grpsubval 3imp3i2an qusinv 3adant2 oveq2d csubg nsgsubg subgrcl syl
+        cgrp grpinvcl sylan qusadd syld3an3 3adant1 eceq1d eqtr4d 3eqtrd ) ABUA
+        MNZGFNZHFNZUBZGBAUCOZPZHVIPZEOZVJVKCQMZMZCRMZOZVJHBQMZMZVIPZVOOZGHDOZVI
+        PZVEVFVGVJCUFMZNZVKWCNVLVPSVEVFWDVGWCABCFGIJWCTZUDUEWCABCFHIJWEUDWCVOCV
+        MEVJVKWEVOTZVMTZLUGUHVHVNVSVJVOVEVGVNVSSVFABCVQVMFHIJVQTZWGUIUJUKVHVTGV
+        RBRMZOZVIPZWBVEVFVGVRFNZVTWKSVEVGWLVFVEBUPNZVGWLVEABULMNWMABUMABUNUOFBV
+        QHJWHUQURUJWIVOABCFGVRIJWITZWFUSUTVHWAWJVIVFVGWAWJSVEFWIBVQDGHJWNWHKUGV
+        AVBVCVD $.
+    $}
+  $}
+
+  ${
+    ecqusaddd.i $e |- ( ph -> I e. ( NrmSGrp ` R ) ) $.
+    ecqusaddd.b $e |- B = ( Base ` R ) $.
+    ecqusaddd.g $e |- .~ = ( R ~QG I ) $.
+    ecqusaddd.q $e |- Q = ( R /s .~ ) $.
+    $( Addition of equivalence classes in a quotient group.  (Contributed by
+       AV, 25-Feb-2025.) $)
+    ecqusaddd $p |- ( ( ph /\ ( A e. B /\ C e. B ) )
+           -> [ ( A ( +g ` R ) C ) ] .~ = ( [ A ] .~ ( +g ` Q ) [ C ] .~ ) ) $=
+      ( wcel wa cec cplusg cfv co cqus eceq2i cqg cnsg w3a anim1i 3anass sylibr
+      wceq oveq2i eqtri eqid qusadd syl oveq12i 3eqtr4g eqcomd ) ABCMZDCMZNZNZB
+      FOZDFOZEPQZRZBDGPQZRZFOZUSBGHUARZOZDVGOZVBRZVEVGOZVCVFUSHGUBQMZUPUQUCZVJV
+      KUGUSVLURNVMAVLURIUDVLUPUQUEUFVDVBHGECBDEGFSRGVGSRLFVGGSKUHUIJVDUJVBUJUKU
+      LUTVHVAVIVBFVGBKTFVGDKTUMFVGVEKTUNUO $.
+
+    $( Closure of the addition in a quotient group.  (Contributed by AV,
+       24-Feb-2025.) $)
+    ecqusaddcl $p |- ( ( ph /\ ( A e. B /\ C e. B ) )
+                       -> ( [ A ] .~ ( +g ` Q ) [ C ] .~ ) e. ( Base ` Q ) ) $=
+      ( wcel wa cplusg cfv co cec cgrp adantr ecqusaddd cnsg csubg nsgsubg 3syl
+      cbs subgrcl w3a anim1i 3anass sylibr grpcl syl quseccl0g syl3anc eqeltrrd
+      eqid ) ABCMZDCMZNZNZBDGOPZQZFRZBFRDFREOPQEUFPZABCDEFGHIJKLUAVAGSMZVCCMZHG
+      UBPZMZVDVEMAVFUTAVIHGUCPMVFIHGUDHGUGUEZTVAVFURUSUHZVGVAVFUTNVKAVFUTVJUIVF
+      URUSUJUKCVBGBDJVBUQULUMAVIUTITVECFHGESVCVHKLJVEUQUNUOUP $.
   $}
 
 
