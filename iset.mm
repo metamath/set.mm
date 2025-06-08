@@ -162954,6 +162954,21 @@ $)
              ( Xt_ ` ( d X. { ( TopOpen ` r ) } ) ) >. } ) ) $.
   $}
 
+  ${
+    $d h i r y $.  $d b d i r .+b $.  $d b d i r J $.  $d b d f g i k r x ph $.
+    $d b d f g i k r x B $.  $d b d f g h i k r x I $.  $d b d f g i k r x R $.
+    $d b d f g k x y D $.  $d b d i r .X. $.  $d b d i r .xb $.
+    $( The multivariate power series constructor is a proper binary operator.
+       (Contributed by Mario Carneiro, 21-Mar-2015.) $)
+    reldmpsr $p |- Rel dom mPwSer $=
+      ( vi vr vd vh vb vf vg vk vx vy cvv cv cmap co crab cfv cnx cop cof cxp
+      ccnv cima cfn wcel cn0 cbs cplusg cres cmulr cle cofr cmin cmpt cgsu cmpo
+      cn wbr ctp csca cvsca csn cts ctopn cpt cun csb cmps df-psr reldmmpo ) AB
+      KKCDLUAUPUBUCUDDUEALMNOEBLZUFPZCLZMNQUFPELZRQUGPVJUGPSVMVMTUHRQUIPFGVMVMH
+      VLVJIJLHLZUJUKUQJVLOILZFLZPVNVOULSNGLPVJUIPZNUMUNNUMUORURQUSPVJRQUTPIFVKV
+      MVLVOVATVPVQSNUORQVBPVLVJVCPVATVDPRURVEVFVFVGIJFGDAHBECVHVI $.
+  $}
+
 
 $(
 ###############################################################################
