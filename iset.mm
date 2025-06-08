@@ -162882,6 +162882,81 @@ $)
 
 $(
 ###############################################################################
+  BASIC LINEAR ALGEBRA
+###############################################################################
+
+  According to Wikipedia ("Linear algebra", 03-Mar-2019,
+  ~ https://en.wikipedia.org/wiki/Linear_algebra ) "Linear algebra is the
+  branch of mathematics concerning linear equations [[...], linear functions
+  [[...] and their representations through matrices and vector spaces."  Or
+  according to the Merriam-Webster dictionary ("linear algebra", 12-Mar-2019,
+  ~ https://www.merriam-webster.com/dictionary/linear%20algebra ) "Definition
+  of linear algebra: a branch of mathematics that is concerned with
+  mathematical structures closed under the operations of addition and scalar
+  multiplication and that includes the theory of systems of linear equations,
+  matrices, determinants, vector spaces, and linear transformations."  Dealing
+  with modules (over rings) instead of vector spaces (over fields) allows for a
+  more unified approach.  Therefore, linear equations, matrices, determinants,
+  are usually regarded as "over a ring" in this part.
+
+  Unless otherwise stated, the rings of scalars need not be commutative
+  (see ~ df-cring ), but the existence of a unity element is always assumed
+  (our rings are unital, see ~ df-ring ).
+
+  For readers knowing vector spaces but unfamiliar with modules: the elements
+  of a module are still called "vectors" and they still form a group under
+  addition, with a zero vector as neutral element, like in a vector space.
+  Like in a vector space, vectors can be multiplied by scalars, with the usual
+  rules, the only difference being that the scalars are only required to form a
+  ring, and not necessarily a field or a division ring.  Note that any vector
+  space is a (special kind of) module, so any theorem proved below for modules
+  applies to any vector space.
+
+$)
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Abstract multivariate polynomials
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Definition and basic properties
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c mPwSer $. $( Multivariate power series $)
+
+  $( Multivariate power series. $)
+  cmps $a class mPwSer $.
+
+  ${
+    $d b d f g h i k p r s w x y z $.
+    $( Define the algebra of power series over the index set ` i ` and with
+       coefficients from the ring ` r ` .  (Contributed by Mario Carneiro,
+       21-Mar-2015.) $)
+    df-psr $a |- mPwSer = ( i e. _V , r e. _V |->
+    [_ { h e. ( NN0 ^m i ) | ( `' h " NN ) e. Fin } / d ]_
+    [_ ( ( Base ` r ) ^m d ) / b ]_
+    ( { <. ( Base ` ndx ) , b >. ,
+        <. ( +g ` ndx ) , ( oF ( +g ` r ) |` ( b X. b ) ) >. ,
+        <. ( .r ` ndx ) ,
+          ( f e. b , g e. b |-> ( k e. d |->
+            ( r gsum ( x e. { y e. d | y oR <_ k } |->
+            ( ( f ` x ) ( .r ` r ) ( g ` ( k oF - x ) ) ) ) ) ) ) >. } u.
+      { <. ( Scalar ` ndx ) , r >. ,
+        <. ( .s ` ndx ) , ( x e. ( Base ` r ) , f e. b |->
+             ( ( d X. { x } ) oF ( .r ` r ) f ) ) >. ,
+        <. ( TopSet ` ndx ) ,
+             ( Xt_ ` ( d X. { ( TopOpen ` r ) } ) ) >. } ) ) $.
+  $}
+
+
+$(
+###############################################################################
   BASIC TOPOLOGY
 ###############################################################################
 $)
@@ -180509,14 +180584,10 @@ htmldef "Z/nZ" as "&#8484;/<i>n</i>&#8484;";
   althtmldef "Z/nZ" as "&#8484;/<i>n</i>&#8484;";
     /* 2-Jan-2016 reverted sans-serif */
   latexdef "Z/nZ" as "\mathrm{Z/nZ}";
-htmldef "fBas" as
-    "<IMG SRC='_fbas.gif' WIDTH=29 HEIGHT=19 ALT=' fBas' TITLE='fBas'>";
-  althtmldef "fBas" as "fBas";
-  latexdef "fBas" as "\mathrm{fBas}";
-htmldef "filGen" as
-    "<IMG SRC='_filgen.gif' WIDTH=40 HEIGHT=19 ALT=' filGen' TITLE='filGen'>";
-  althtmldef "filGen" as "filGen";
-  latexdef "filGen" as "\mathrm{filGen}";
+htmldef "mPwSer" as " mPwSer ";
+  althtmldef "mPwSer" as " mPwSer ";
+  latexdef "mPwSer" as "\mathrm{mPwSer}";
+
 htmldef "metUnif" as "metUnif";
   althtmldef "metUnif" as "metUnif";
   latexdef "metUnif" as "\mathrm{metUnif}";
@@ -180577,6 +180648,14 @@ htmldef "Homeo" as
     "<IMG SRC='_homeo.gif' WIDTH=43 HEIGHT=19 ALT=' Homeo' TITLE='Homeo'>";
   althtmldef "Homeo" as "Homeo";
   latexdef "Homeo" as "\mathrm{Homeo}";
+htmldef "fBas" as
+    "<IMG SRC='_fbas.gif' WIDTH=29 HEIGHT=19 ALT=' fBas' TITLE='fBas'>";
+  althtmldef "fBas" as "fBas";
+  latexdef "fBas" as "\mathrm{fBas}";
+htmldef "filGen" as
+    "<IMG SRC='_filgen.gif' WIDTH=40 HEIGHT=19 ALT=' filGen' TITLE='filGen'>";
+  althtmldef "filGen" as "filGen";
+  latexdef "filGen" as "\mathrm{filGen}";
 htmldef "*MetSp" as
     "<IMG SRC='infty.gif' WIDTH=17 HEIGHT=19 ALT=' *' TITLE='*'>" +
     "<IMG SRC='_metsp.gif' WIDTH=41 HEIGHT=19 ALT='MetSp' TITLE='MetSp'>";
