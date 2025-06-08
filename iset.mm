@@ -56449,6 +56449,17 @@ $)
   $}
 
   ${
+    $d ph f g x $.  $d R f g x $.  $d S f g x $.
+    ofeqd.1 $e |- ( ph -> R = S ) $.
+    $( Equality theorem for function operation, deduction form.  (Contributed
+       by SN, 11-Nov-2024.) $)
+    ofeqd $p |- ( ph -> oF R = oF S ) $=
+      ( vf vg vx cvv cv cdm cin cfv cmpt cmpo cof oveqd mpteq2dv mpoeq3dv df-of
+      co 3eqtr4g ) AEFHHGEIZJFIZJKZGIZUBLZUEUCLZBTZMZNEFHHGUDUFUGCTZMZNBOCOAEFH
+      HUIUKAGUDUHUJABCUFUGDPQRGBEFSGCEFSUA $.
+  $}
+
+  ${
     $d f g x R $.  $d f g x S $.
     $( Equality theorem for function operation.  (Contributed by Mario
        Carneiro, 20-Jul-2014.) $)
