@@ -163092,6 +163092,18 @@ $)
     psrbagf $p |- ( F e. D -> F : I --> NN0 ) $=
       ( wcel cv ccnv cn cima cfn cn0 cmap co crab wf eleq2i elrabi elmapi syl
       sylbi ) CAFCBGHIJKFZBLDMNZOZFZDLCPZAUDCEQUECUCFUFUBBCUCRCLDSTUA $.
+
+    ${
+      $d n f x $.  $d I x $.  $d V x $.
+      $( The constant function equal to zero is a finite bag.  (Contributed by
+         AV, 8-Jul-2019.) $)
+      fczpsrbag $p |- ( I e. V -> ( x e. I |-> 0 ) e. D ) $=
+        ( wcel cc0 cmpt cn0 wf ccnv cn cima cfn cv wa 0nn0 a1i c0 crab wn rgenw
+        fmpttd eqid mptpreima wceq wral 0nnn mpbir eqtri 0fin eqeltri mpbir2and
+        rabeq0 psrbag ) DEGZADHIZBGDJURKURLMNZOGZUQADHJHJGUQAPDGQRSUDUTUQUSTOUS
+        HMGZADUAZTADHMURURUEUFVBTUGVAUBZADUHVCADUIUCVAADUOUJUKULUMSBCURDEFUPUN
+        $.
+    $}
   $}
 
 
