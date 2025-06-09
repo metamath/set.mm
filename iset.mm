@@ -163085,6 +163085,13 @@ $)
       imaeq1d wb nn0ex elmapg mpan anbi1d bitrid ) CAGCHDIJZGZCKZLMZNGZODEGZDHC
       PZUNOBQZKZLMZNGUNBCUJAUQCRZUSUMNUTURULLUQCSUCUAFUBUOUKUPUNHTGUOUKUPUDUEHD
       CTEUFUGUHUI $.
+
+    $( A finite bag is a function.  (Contributed by Mario Carneiro,
+       29-Dec-2014.)  Remove a sethood antecedent.  (Revised by SN,
+       30-Jul-2024.) $)
+    psrbagf $p |- ( F e. D -> F : I --> NN0 ) $=
+      ( wcel cv ccnv cn cima cfn cn0 cmap co crab wf eleq2i elrabi elmapi syl
+      sylbi ) CAFCBGHIJKFZBLDMNZOZFZDLCPZAUDCEQUECUCFUFUBBCUCRCLDSTUA $.
   $}
 
 
