@@ -89,7 +89,6 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
- 8-Jun-25 laddrotrd [same]      Moved from SN's mathbox to main set.mm
  8-Jun-25 deg1mul   [same]      Moved from MKU's mathbox to main set.mm
  4-Jun-25 rhmpreimaidl [same]   Moved from TA's mathbox to main set.mm
  4-Jun-25 kerlidl   [same]      Moved from TA's mathbox to main set.mm
