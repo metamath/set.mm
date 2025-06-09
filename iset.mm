@@ -163074,6 +163074,19 @@ $)
       $.
   $}
 
+  ${
+    $d F f $.  $d I f $.
+    psrbag.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+    $( Elementhood in the set of finite bags.  (Contributed by Mario Carneiro,
+       29-Dec-2014.) $)
+    psrbag $p |- ( I e. V -> ( F e. D <->
+      ( F : I --> NN0 /\ ( `' F " NN ) e. Fin ) ) ) $=
+      ( wcel cn0 cmap co ccnv cn cima cfn wa wf cv wceq cnveq cvv eleq1d elrab2
+      imaeq1d wb nn0ex elmapg mpan anbi1d bitrid ) CAGCHDIJZGZCKZLMZNGZODEGZDHC
+      PZUNOBQZKZLMZNGUNBCUJAUQCRZUSUMNUTURULLUQCSUCUAFUBUOUKUPUNHTGUOUKUPUDUEHD
+      CTEUFUGUHUI $.
+  $}
+
 
 $(
 ###############################################################################
