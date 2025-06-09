@@ -163053,6 +163053,27 @@ $)
       MUVJUVK $.
   $}
 
+  ${
+    psrvalstrd.b $e |- ( ph -> B e. X ) $.
+    psrvalstrd.plusg $e |- ( ph -> .+ e. Y ) $.
+    psrvalstrd.ips $e |- ( ph -> .X. e. Z ) $.
+    psrvalstrd.r $e |- ( ph -> R e. W ) $.
+    psrvalstrd.mulr $e |- ( ph -> .x. e. P ) $.
+    psrvalstrd.j $e |- ( ph -> J e. Q ) $.
+    $( The multivariate power series structure is a function.  (Contributed by
+       Mario Carneiro, 8-Feb-2015.) $)
+    psrvalstrd $p |- ( ph -> ( { <. ( Base ` ndx ) , B >. ,
+        <. ( +g ` ndx ) , .+ >. , <. ( .r ` ndx ) , .X. >. } u.
+      { <. ( Scalar ` ndx ) , R >. , <. ( .s ` ndx ) , .x. >. ,
+         <. ( TopSet ` ndx ) , J >. } ) Struct <. 1 , 9 >. ) $=
+      ( cop c1 c3 c5 cnx cbs cfv cplusg cmulr ctp csca cvsca cts wcel cstr eqid
+      c9 wbr rngstrg syl3anc c6 5nn scandx 5lt6 6nn vscandx 9nn tsetndx strle3g
+      6lt9 clt 3lt5 a1i strleund ) AUAUBUCUPUDUEUFBTUDUGUFDTUDUHUFHTUIZUDUJUFZF
+      TUDUKUFZGTUDULUFZITUIZABKUMDLUMHMUMVNUAUBTUNUQNOPBDVNHKLMVNUOURUSAFJUMGCU
+      MIEUMVRUCUPTUNUQQRSVOVPVQEUCUTUPJCFGIVAVBVCVDVEVIVFVGVHUSUBUCVJUQAVKVLVM
+      $.
+  $}
+
 
 $(
 ###############################################################################
