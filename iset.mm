@@ -163104,6 +163104,27 @@ $)
         HMGZADUAZTADHMURURUEUFVBTUGVAUBZADUHVCADUIUCVAADUOUJUKULUMSBCURDEFUPUN
         $.
     $}
+
+    ${
+      $d I x $.  $d G x $.  $d F x $.  $d F f $.  $d D x $.  $d I f $.
+      $d V x $.
+      $( The support of a dominated bag is smaller than the dominating bag.
+         (Contributed by Mario Carneiro, 29-Dec-2014.) $)
+      psrbaglesuppg $p |- ( ( I e. V /\ ( F e. D /\
+        G : I --> NN0 /\ G oR <_ F ) ) -> ( `' G " NN ) C_ ( `' F " NN ) ) $=
+        ( vx wcel cn0 wf cle wbr wa ccnv cn cima cfv wb mpbid cofr w3a cv cz c1
+        cfn simplr1 simpll psrbag syl simpr wfn simplr2 ffnd elpreima ffvelcdmd
+        simpld nn0zd 1red wfun 3ad2ant2 ad2antlr fvimacnvi syl2anc nnred nn0red
+        ffun nnge1d inidm eqidd ofrval mpd3an23 letrd elnnz1 sylanbrc cdm ffund
+        simplr3 fdmd eleqtrrd fvimacnv ex ssrdv ) EFIZCAIZEJDKZDCLUAMZUBZNZHDOP
+        QZCOPQZWIHUCZWJIZWLWKIZWIWMNZWLCRZPIZWNWOWPUDIUEWPLMWQWOWPWOEJWLCWOEJCK
+        ZWKUFIZWOWEWRWSNZWEWFWGWDWMUGWOWDWEWTSWDWHWMUHZABCEFGUIUJTUQZWOWLEIZWLD
+        RZPIZWOWMXCXENZWIWMUKZWODEULWMXFSWOEJDWEWFWGWDWMUMUNZEWLPDUOUJTUQZUPZUR
+        WOUEXDWPWOUSWOXDWODUTZWMXEWHXKWDWMWFWEXKWGEJDVGVAVBXGWLPDVCVDZVEWOWPXJV
+        FWOXDXLVHWOWGXCXDWPLMWEWFWGWDWMVRXIWOEEXDWPLEDCFFWLXHWOEJCXBUNXAXAEVIWO
+        XCNZXDVJXMWPVJVKVLVMWPVNVOWOCUTWLCVPZIWQWNSWOEJCXBVQWOWLEXNXIWOEJCXBVSV
+        TWLPCWAVDTWBWC $.
+    $}
   $}
 
 
