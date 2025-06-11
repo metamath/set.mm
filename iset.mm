@@ -163185,6 +163185,41 @@ $)
     $}
   $}
 
+  ${
+    $d g h k p x y D $.  $d f g h k p x y I $.  $d g h k p x K $.
+    $d g h k p x ph $.  $d g h k p x R $.  $d x p V $.
+    psrbas.s $e |- S = ( I mPwSer R ) $.
+    psrbas.k $e |- K = ( Base ` R ) $.
+    psrbas.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+    psrbas.b $e |- B = ( Base ` S ) $.
+    ${
+      psrbas.i $e |- ( ph -> I e. V ) $.
+      psrbasg.r $e |- ( ph -> R e. W ) $.
+      $( The base set of the multivariate power series structure.  (Contributed
+         by Mario Carneiro, 28-Dec-2014.)  (Revised by Mario Carneiro,
+         2-Oct-2015.)  (Proof shortened by AV, 8-Jul-2019.) $)
+      psrbasg $p |- ( ph -> B = ( K ^m D ) ) $=
+        ( cbs cfv cvv wcel vg vh vk vx vy vp cnx cmap cop cplusg cof cres cmulr
+        co cxp cv cle cofr wbr crab cmin cmpt cgsu cmpo ctp cvsca csn cts ctopn
+        csca cpt cun eqid eqidd psrval fveq2d wceq a1i c1 c9 wf cab basfn elexd
+        wfn funfvex funfni sylancr eqeltrid ccnv cn cfn cn0 nn0ex mapvalg mapex
+        cima syl2anc eqeltrd rabexd ofmresex mpoexga snexg syl xpexg psrvalstrd
+        topnfn ptex basendxnn opexg tpid1g elun1 3syl opelstrbas 3eqtr4d ) AEQR
+        ZUGQRZHCUHUNZUIZUGUJRDUJRZUKXRXRUOULZUIZUGUMRUAUBXRXRUCCDUDUEUPUCUPZUQU
+        RUSUECUTUDUPZUAUPZRYCYDVAUKUNUBUPRDUMRZUNVBVCUNVBZVDZUIZVEZUGVJRDUIUGVF
+        RUDUAHXRCYDVGUOYEYFUKUNZVDZUIUGVHRCDVIRZVGZUOZVKRZUIVEZVLZQRBXRAEYRQAUD
+        UEXRCXTYADEYLYFYHUAUBFUCGYPHYMIJKLXTVMYFVMYMVMMAXRVNYAVMYHVMYLVMAYPVNOP
+        VOVPBXPVQANVRAYRXRVSVTUISAXRSYASDYLYHYPJSSSAXRCHUFUPZWAUFWBZSAHSTZCSTZX
+        RYTVQAHDQRZSLAQSWEDSTZUUCSTZWCADJPWDZUUESDQDQWFWGWHWIZAFUPWJWKWQWLTFWMG
+        UHUNZCSMAUUHGWMYSWAUFWBZSAWMSTZGITZUUHUUIVQWNOWMGSIUFWOWHAUUKUUJUUISTOU
+        UJAWNVRGWMISUFWPWRWSWTZHCSSUFWOWRAUUBUUAYTSTUULUUGCHSSUFWPWRWSZAXRXRXTS
+        SUUMUUMXAAXRSTZUUNYHSTUUMUUMUAUBXRXRYGSSXBWRPAUUAUUNYLSTUUGUUMUDUAHXRYK
+        SSXBWRAYOSTZYPSTAUUBYNSTZUUOUULAYMSTZUUPAVISWEUUDUUQXGUUFUUQSDVIDVIWFWG
+        WHYMSXCXDCYNSSXEWRYOSXHXDXFUUMAXSSTZXSYJTXSYRTAXQWKTUUNUURXIUUMXQXRWKSX
+        JWHXSSYBYIXKXSYJYQXLXMXNXO $.
+    $}
+  $}
+
 
 $(
 ###############################################################################
