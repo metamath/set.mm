@@ -36702,6 +36702,26 @@ $)
   $}
 
   ${
+    $d x A $.
+    rabexd.1 $e |- B = { x e. A | ps } $.
+    rabexd.2 $e |- ( ph -> A e. V ) $.
+    $( Separation Scheme in terms of a restricted class abstraction, deduction
+       form of ~ rabex2 .  (Contributed by AV, 16-Jul-2019.) $)
+    rabexd $p |- ( ph -> B e. _V ) $=
+      ( crab cvv wcel rabexg syl eqeltrid ) AEBCDIZJGADFKOJKHBCDFLMN $.
+  $}
+
+  ${
+    $d x A $.
+    rabex2.1 $e |- B = { x e. A | ps } $.
+    rabex2.2 $e |- A e. _V $.
+    $( Separation Scheme in terms of a restricted class abstraction.
+       (Contributed by AV, 16-Jul-2019.)  (Revised by AV, 26-Mar-2021.) $)
+    rabex2 $p |- B e. _V $=
+      ( cvv wcel id rabexd ax-mp ) CGHZDGHFLABCDGELIJK $.
+  $}
+
+  ${
     $d x A $.  $d x B $.  $d x ps $.
     elssabg.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
     $( Membership in a class abstraction involving a subset.  Unlike ~ elabg ,
