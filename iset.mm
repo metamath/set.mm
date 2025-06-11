@@ -36722,6 +36722,17 @@ $)
   $}
 
   ${
+    $d x B $.  $d y A $.
+    rab2ex.1 $e |- B = { y e. A | ps } $.
+    rab2ex.2 $e |- A e. _V $.
+    $( A class abstraction based on a class abstraction based on a set is a
+       set.  (Contributed by AV, 16-Jul-2019.)  (Revised by AV,
+       26-Mar-2021.) $)
+    rab2ex $p |- { x e. B | ph } e. _V $=
+      ( rabex2 rabex ) ACFBDEFGHIJ $.
+  $}
+
+  ${
     $d x A $.  $d x B $.  $d x ps $.
     elssabg.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
     $( Membership in a class abstraction involving a subset.  Unlike ~ elabg ,
