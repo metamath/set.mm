@@ -295,6 +295,7 @@
 "4syl" is used by "acndom".
 "4syl" is used by "acunirnmpt2".
 "4syl" is used by "acunirnmpt2f".
+"4syl" is used by "adh-minim".
 "4syl" is used by "aevlem".
 "4syl" is used by "afv0nbfvbi".
 "4syl" is used by "aomclem6".
@@ -303,6 +304,7 @@
 "4syl" is used by "axdc3lem2".
 "4syl" is used by "baerlem5blem2".
 "4syl" is used by "bcm1k".
+"4syl" is used by "bgoldbtbndlem2".
 "4syl" is used by "binomfallfaclem2".
 "4syl" is used by "bnj1098".
 "4syl" is used by "canthp1lem2".
@@ -310,6 +312,7 @@
 "4syl" is used by "cantnflt2".
 "4syl" is used by "catcone0".
 "4syl" is used by "cdlemk45".
+"4syl" is used by "choicefi".
 "4syl" is used by "chtnprm".
 "4syl" is used by "climcndslem1".
 "4syl" is used by "climcndslem2".
@@ -326,6 +329,7 @@
 "4syl" is used by "cvmseu".
 "4syl" is used by "cycpmconjslem2".
 "4syl" is used by "cygznlem3".
+"4syl" is used by "cznabel".
 "4syl" is used by "dchr1".
 "4syl" is used by "dchr1re".
 "4syl" is used by "dchrhash".
@@ -366,7 +370,12 @@
 "4syl" is used by "fin23lem22".
 "4syl" is used by "fldiv4lem1div2uz2".
 "4syl" is used by "fmfnfmlem3".
+"4syl" is used by "fmtnoprmfac2lem1".
 "4syl" is used by "fnwelem".
+"4syl" is used by "fourierdlem12".
+"4syl" is used by "fourierdlem48".
+"4syl" is used by "fourierdlem51".
+"4syl" is used by "fourierdlem80".
 "4syl" is used by "fpwwe2lem8".
 "4syl" is used by "fsumparts".
 "4syl" is used by "fsuppmapnn0fiub".
@@ -390,7 +399,9 @@
 "4syl" is used by "heiborlem10".
 "4syl" is used by "hmeores".
 "4syl" is used by "i1fd".
+"4syl" is used by "iccelpart".
 "4syl" is used by "imasdsval2".
+"4syl" is used by "infleinflem1".
 "4syl" is used by "infxpenlem".
 "4syl" is used by "ip2di".
 "4syl" is used by "iscmet3".
@@ -398,6 +409,7 @@
 "4syl" is used by "isercoll".
 "4syl" is used by "isercolllem2".
 "4syl" is used by "ismbf3d".
+"4syl" is used by "ismnushort".
 "4syl" is used by "ismtyhmeolem".
 "4syl" is used by "isnumbasgrplem3".
 "4syl" is used by "isose".
@@ -417,13 +429,16 @@
 "4syl" is used by "meran1".
 "4syl" is used by "metuel2".
 "4syl" is used by "metustfbas".
+"4syl" is used by "mgpsumz".
 "4syl" is used by "minveclem3".
 "4syl" is used by "minvecolem3".
 "4syl" is used by "mpfpf1".
 "4syl" is used by "mpfsubrg".
 "4syl" is used by "mpofrlmd".
 "4syl" is used by "mudivsum".
+"4syl" is used by "natglobalincr".
 "4syl" is used by "nbusgrvtxm1".
+"4syl" is used by "neicvgel1".
 "4syl" is used by "nmhmcn".
 "4syl" is used by "nneob".
 "4syl" is used by "noetainflem2".
@@ -434,6 +449,7 @@
 "4syl" is used by "nosupbnd2".
 "4syl" is used by "nosupbnd2lem1".
 "4syl" is used by "nrginvrcn".
+"4syl" is used by "ntrclsk3".
 "4syl" is used by "odcl2".
 "4syl" is used by "oddprm".
 "4syl" is used by "oemapso".
@@ -443,6 +459,7 @@
 "4syl" is used by "ordtypelem10".
 "4syl" is used by "orngmullt".
 "4syl" is used by "ovoliunlem2".
+"4syl" is used by "perfectALTVlem1".
 "4syl" is used by "pf1mpf".
 "4syl" is used by "pf1subrg".
 "4syl" is used by "pfxccatpfx2".
@@ -488,13 +505,17 @@
 "4syl" is used by "sdomsdomcard".
 "4syl" is used by "serf0".
 "4syl" is used by "signstres".
+"4syl" is used by "simpcntrab".
+"4syl" is used by "smfresal".
 "4syl" is used by "smoiso".
 "4syl" is used by "srng0".
 "4syl" is used by "ssc2".
 "4syl" is used by "sscpwex".
+"4syl" is used by "sssmf".
 "4syl" is used by "stoweidlem11".
 "4syl" is used by "stoweidlem14".
 "4syl" is used by "subfacp1lem5".
+"4syl" is used by "supcnvlimsup".
 "4syl" is used by "symgtrinv".
 "4syl" is used by "tgldimor".
 "4syl" is used by "tmsxms".
@@ -14502,7 +14523,7 @@ New usage of "4atex2-0aOLDN" is discouraged (1 uses).
 New usage of "4atex2-0bOLDN" is discouraged (0 uses).
 New usage of "4atex2-0cOLDN" is discouraged (0 uses).
 New usage of "4ipval2" is discouraged (2 uses).
-New usage of "4syl" is discouraged (241 uses).
+New usage of "4syl" is discouraged (262 uses).
 New usage of "5oai" is discouraged (0 uses).
 New usage of "5oalem1" is discouraged (1 uses).
 New usage of "5oalem2" is discouraged (2 uses).
