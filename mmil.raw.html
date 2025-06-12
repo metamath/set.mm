@@ -4417,7 +4417,12 @@ this implies excluded middle</TD>
 <TR>
   <TD>findcard3</TD>
   <TD><I>none</I></TD>
-  <TD>The set.mm proof is in terms of strict dominance.</TD>
+  <TD>Compare with ~ findcard2sd in which ` y ` is finite and is
+  a proper subset of A (in the sense that ` A \ y ` is inhabited).
+  Some version of this style of proper subset will presumably be
+  required rather than the set.mm-style proper subset.  Also,
+  may require a bit of attention to which sets are specified
+  to be finite (to deal with the absence of ssfi).</TD>
 </TR>
 
 <TR>
@@ -14668,7 +14673,16 @@ of Transcendental Numbers</td>
 
   <tr>
     <td>51.  Wilson's Theorem</td>
-    <td>Seems like this would not be hard to intuitionize.</td>
+    <td>The basic argument here is the
+    <a href="https://en.wikipedia.org/wiki/Wilson's_theorem#Elementary_proof"
+    >Elementary proof</a> from Wikipedia and should be feasible, although
+    there are a variety of details to handle.  Handling the arrangement
+    of the product into pairs will involve some kind of (moderately tricky)
+    induction and if we adopt the solution from set.mm we need findcard3
+    or something similar.  Replacing ` gsum ` with ` prod_ ` should be
+    feasible and may be easier than trying to adapt the set.mm use of
+    finSupp and ` gsum ` . ~ fprodfac may be able to replace a
+    portion of the wilthlem3 proof.</td>
   </tr>
 
   <tr>
@@ -14751,8 +14765,10 @@ of Transcendental Numbers</td>
 
   <tr>
     <td>72.  Sylow's Theorem</td>
-    <td>Worth a closer look now that we have some
-    group theory and pcadd2</td>
+    <td>The set.mm proof uses df-od , df-gex , df-pgp , df-slw ,
+    gaorb , gaorber , gagrp , isga , gasubg , pgpfi ,  lagsubg2 ,
+    lagsubg , and perhaps others.  The set.mm proof also uses taboos
+    like pwfi , ssfi , diffi , and inundif</td>
   </tr>
 
   <tr>
