@@ -36702,6 +36702,37 @@ $)
   $}
 
   ${
+    $d x A $.
+    rabexd.1 $e |- B = { x e. A | ps } $.
+    rabexd.2 $e |- ( ph -> A e. V ) $.
+    $( Separation Scheme in terms of a restricted class abstraction, deduction
+       form of ~ rabex2 .  (Contributed by AV, 16-Jul-2019.) $)
+    rabexd $p |- ( ph -> B e. _V ) $=
+      ( crab cvv wcel rabexg syl eqeltrid ) AEBCDIZJGADFKOJKHBCDFLMN $.
+  $}
+
+  ${
+    $d x A $.
+    rabex2.1 $e |- B = { x e. A | ps } $.
+    rabex2.2 $e |- A e. _V $.
+    $( Separation Scheme in terms of a restricted class abstraction.
+       (Contributed by AV, 16-Jul-2019.)  (Revised by AV, 26-Mar-2021.) $)
+    rabex2 $p |- B e. _V $=
+      ( cvv wcel id rabexd ax-mp ) CGHZDGHFLABCDGELIJK $.
+  $}
+
+  ${
+    $d x B $.  $d y A $.
+    rab2ex.1 $e |- B = { y e. A | ps } $.
+    rab2ex.2 $e |- A e. _V $.
+    $( A class abstraction based on a class abstraction based on a set is a
+       set.  (Contributed by AV, 16-Jul-2019.)  (Revised by AV,
+       26-Mar-2021.) $)
+    rab2ex $p |- { x e. B | ph } e. _V $=
+      ( rabex2 rabex ) ACFBDEFGHIJ $.
+  $}
+
+  ${
     $d x A $.  $d x B $.  $d x ps $.
     elssabg.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
     $( Membership in a class abstraction involving a subset.  Unlike ~ elabg ,
@@ -56446,6 +56477,17 @@ $)
        Mario Carneiro, 28-Jul-2014.) $)
     df-ofr $a |- oR R = { <. f , g >. |
       A. x e. ( dom f i^i dom g ) ( f ` x ) R ( g ` x ) } $.
+  $}
+
+  ${
+    $d ph f g x $.  $d R f g x $.  $d S f g x $.
+    ofeqd.1 $e |- ( ph -> R = S ) $.
+    $( Equality theorem for function operation, deduction form.  (Contributed
+       by SN, 11-Nov-2024.) $)
+    ofeqd $p |- ( ph -> oF R = oF S ) $=
+      ( vf vg vx cvv cv cdm cin cfv cmpt cmpo cof oveqd mpteq2dv mpoeq3dv df-of
+      co 3eqtr4g ) AEFHHGEIZJFIZJKZGIZUBLZUEUCLZBTZMZNEFHHGUDUFUGCTZMZNBOCOAEFH
+      HUIUKAGUDUHUJABCUFUGDPQRGBEFSGCEFSUA $.
   $}
 
   ${
@@ -162882,6 +162924,305 @@ $)
 
 $(
 ###############################################################################
+  BASIC LINEAR ALGEBRA
+###############################################################################
+
+  According to Wikipedia ("Linear algebra", 03-Mar-2019,
+  ~ https://en.wikipedia.org/wiki/Linear_algebra ) "Linear algebra is the
+  branch of mathematics concerning linear equations [[...], linear functions
+  [[...] and their representations through matrices and vector spaces."  Or
+  according to the Merriam-Webster dictionary ("linear algebra", 12-Mar-2019,
+  ~ https://www.merriam-webster.com/dictionary/linear%20algebra ) "Definition
+  of linear algebra: a branch of mathematics that is concerned with
+  mathematical structures closed under the operations of addition and scalar
+  multiplication and that includes the theory of systems of linear equations,
+  matrices, determinants, vector spaces, and linear transformations."  Dealing
+  with modules (over rings) instead of vector spaces (over fields) allows for a
+  more unified approach.  Therefore, linear equations, matrices, determinants,
+  are usually regarded as "over a ring" in this part.
+
+  Unless otherwise stated, the rings of scalars need not be commutative
+  (see ~ df-cring ), but the existence of a unity element is always assumed
+  (our rings are unital, see ~ df-ring ).
+
+  For readers knowing vector spaces but unfamiliar with modules: the elements
+  of a module are still called "vectors" and they still form a group under
+  addition, with a zero vector as neutral element, like in a vector space.
+  Like in a vector space, vectors can be multiplied by scalars, with the usual
+  rules, the only difference being that the scalars are only required to form a
+  ring, and not necessarily a field or a division ring.  Note that any vector
+  space is a (special kind of) module, so any theorem proved below for modules
+  applies to any vector space.
+
+$)
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Abstract multivariate polynomials
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Definition and basic properties
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c mPwSer $. $( Multivariate power series $)
+
+  $( Multivariate power series. $)
+  cmps $a class mPwSer $.
+
+  ${
+    $d b d f g h i k p r s w x y z $.
+    $( Define the algebra of power series over the index set ` i ` and with
+       coefficients from the ring ` r ` .  (Contributed by Mario Carneiro,
+       21-Mar-2015.) $)
+    df-psr $a |- mPwSer = ( i e. _V , r e. _V |->
+    [_ { h e. ( NN0 ^m i ) | ( `' h " NN ) e. Fin } / d ]_
+    [_ ( ( Base ` r ) ^m d ) / b ]_
+    ( { <. ( Base ` ndx ) , b >. ,
+        <. ( +g ` ndx ) , ( oF ( +g ` r ) |` ( b X. b ) ) >. ,
+        <. ( .r ` ndx ) ,
+          ( f e. b , g e. b |-> ( k e. d |->
+            ( r gsum ( x e. { y e. d | y oR <_ k } |->
+            ( ( f ` x ) ( .r ` r ) ( g ` ( k oF - x ) ) ) ) ) ) ) >. } u.
+      { <. ( Scalar ` ndx ) , r >. ,
+        <. ( .s ` ndx ) , ( x e. ( Base ` r ) , f e. b |->
+             ( ( d X. { x } ) oF ( .r ` r ) f ) ) >. ,
+        <. ( TopSet ` ndx ) ,
+             ( Xt_ ` ( d X. { ( TopOpen ` r ) } ) ) >. } ) ) $.
+  $}
+
+  ${
+    $d h i r y $.  $d b d i r .+b $.  $d b d i r J $.  $d b d f g i k r x ph $.
+    $d b d f g i k r x B $.  $d b d f g h i k r x I $.  $d b d f g i k r x R $.
+    $d b d f g k x y D $.  $d b d i r .X. $.  $d b d i r .xb $.
+    $( The multivariate power series constructor is a proper binary operator.
+       (Contributed by Mario Carneiro, 21-Mar-2015.) $)
+    reldmpsr $p |- Rel dom mPwSer $=
+      ( vi vr vd vh vb vf vg vk vx vy cvv cv cmap co crab cfv cnx cop cof cxp
+      ccnv cima cfn wcel cn0 cbs cplusg cres cmulr cle cofr cmin cmpt cgsu cmpo
+      cn wbr ctp csca cvsca csn cts ctopn cpt cun csb cmps df-psr reldmmpo ) AB
+      KKCDLUAUPUBUCUDDUEALMNOEBLZUFPZCLZMNQUFPELZRQUGPVJUGPSVMVMTUHRQUIPFGVMVMH
+      VLVJIJLHLZUJUKUQJVLOILZFLZPVNVOULSNGLPVJUIPZNUMUNNUMUORURQUSPVJRQUTPIFVKV
+      MVLVOVATVPVQSNUORQVBPVLVJVCPVATVDPRURVEVFVFVGIJFGDAHBECVHVI $.
+
+    $d .+b b d i r $.  $d .X. b d i r $.  $d .xb b d i r $.
+    $d B b d f g i k r x $.  $d D b d f g k x y $.  $d I b d f g h i k r x $.
+    $d J b d i r $.  $d K f x $.  $d R b d f g i k r x $.
+    $d b d f g i k ph r x $.  $d h i k r x y $.
+    psrval.s $e |- S = ( I mPwSer R ) $.
+    psrval.k $e |- K = ( Base ` R ) $.
+    psrval.a $e |- .+ = ( +g ` R ) $.
+    psrval.m $e |- .x. = ( .r ` R ) $.
+    psrval.o $e |- O = ( TopOpen ` R ) $.
+    psrval.d $e |- D = { h e. ( NN0 ^m I ) | ( `' h " NN ) e. Fin } $.
+    psrval.b $e |- ( ph -> B = ( K ^m D ) ) $.
+    psrval.p $e |- .+b = ( oF .+ |` ( B X. B ) ) $.
+    psrval.t $e |- .X. = ( f e. B , g e. B |-> ( k e. D |->
+            ( R gsum ( x e. { y e. D | y oR <_ k } |->
+            ( ( f ` x ) .x. ( g ` ( k oF - x ) ) ) ) ) ) ) $.
+    psrval.v $e |- .xb =
+      ( x e. K , f e. B |-> ( ( D X. { x } ) oF .x. f ) ) $.
+    psrval.j $e |- ( ph -> J = ( Xt_ ` ( D X. { O } ) ) ) $.
+    psrval.i $e |- ( ph -> I e. W ) $.
+    psrval.r $e |- ( ph -> R e. X ) $.
+    $( Value of the multivariate power series structure.  (Contributed by Mario
+       Carneiro, 29-Dec-2014.) $)
+    psrval $p |- ( ph -> S = ( { <. ( Base ` ndx ) , B >. ,
+        <. ( +g ` ndx ) , .+b >. , <. ( .r ` ndx ) , .X. >. } u.
+      { <. ( Scalar ` ndx ) , R >. , <. ( .s ` ndx ) , .xb >. ,
+         <. ( TopSet ` ndx ) , J >. } ) ) $=
+      ( vi vr vd vb cmps co cnx cbs cfv cop cplusg cmulr ctp csca cvsca cts cun
+      cvv cv ccnv cn cima cfn wcel cn0 cmap crab cof cxp cres cle cofr wbr cmin
+      cmpt cgsu cmpo csn ctopn cpt csb wceq wa rabeqdv eqtr4di csbeq1d wf nn0ex
+      cab vex mapval mapex mp2an eqeltri eqeltrrdi fveq2d simpr oveq12d funfvex
+      eqtr4d wfn basfn funfni opeq2d adantr ofeqd mpteq12dv mpoeq123dv tpeq123d
+      xpeq12d csbied eqtrd elexd sylancr eqeltrid mapvalg eqeltrd syl2anc opexg
+      syl cslot simpri mpoexg tpexg syl3anc df-psr simprl oveq2d rabex ad2antrr
+      a1i simplrr reseq12d oveqd xpeq1d eqidd sneqd ad3antrrr uneq12d basendxnn
+      oveq123d sylancl rabexg plusgndxnn ofmresex mulrslid scaslid topnfn snexg
+      vscaslid tsetndxnn xpexg ptex unexg ovmpod eqtrid ) AIQHUTVAVBVCVDZDVEZVB
+      VFVDZGVEZVBVGVDZLVEZVHZVBVIVDZHVEZVBVJVDZJVEZVBVKVDZRVEZVHZVLZUCAUPUQQHVM
+      VMUROVNVOVPVQVRVSZOVTUPVNZWAVAZWBZUSUQVNZVCVDZURVNZWAVAZUVLUSVNZVEZUVNUWK
+      VFVDZWCZUWOUWOWDZWEZVEZUVPMNUWOUWOPUWMUWKBCVNPVNZWFWGWHZCUWMWBZBVNZMVNZVD
+      ZUXBUXEWIWCVANVNVDZUWKVGVDZVAZWJZWKVAZWJZWLZVEZVHZUVSUWKVEZUWABMUWLUWOUWM
+      UXEWMZWDZUXFUXIWCZVAZWLZVEZUWCUWMUWKWNVDZWMZWDZWOVDZVEZVHZVLZWPZWPZUWFUTV
+      MUTUPUQVMVMUYLWLWQABCMNOUPPUQUSURUUAUUFAUWHQWQZUWKHWQZWRZWRZUYLUREUYKWPUW
+      FUYPURUWJEUYKUYPUWJUWGOVTQWAVAZWBZEUYPUWGOUWIUYQUYPUWHQVTWAAUYMUYNUUBUUCW
+      SUHWTZXAUYPUREUYKUWFVMUYPEUWJVMUYSUWGOUWIUWIUWHVTUXFXBMXDZVMVTUWHMXCUPXEZ
+      XFUWHVMVSVTVMVSZUYTVMVSVUAXCUWHVTVMVMMXGXHXIUUDXJUYPUWMEWQZWRZUYKUSDUYJWP
+      UWFVUDUSUWNDUYJVUDUWNSEWAVAZDVUDUWLSUWMEWAVUDUWLHVCVDZSVUDUWKHVCAUYMUYNVU
+      CUUGZXKUDWTZUYPVUCXLZXMADVUEWQUYOVUCUIUUEXOZXAVUDUSDUYJUWFVMVUDDUWNVMVUJU
+      WNUWMUWLUXFXBMXDZVMUWLUWMMVCVMXPZUWKVMVSUWLVMVSZXQUQXEVUMVMUWKVCUWKVCXNXR
+      XHZURXEZXFUWMVMVSVUMVUKVMVSVUOVUNUWMUWLVMVMMXGXHXIXJVUDUWODWQZWRZUXPUVRUY
+      IUWEVUQUWPUVMUXAUVOUXOUVQVUQUWODUVLVUDVUPXLZXSVUQUWTGUVNVUQUWTFWCZDDWDZWE
+      ZGVUQUWRVUSUWSVUTVUQUWQFVUQUWQHVFVDFVUQUWKHVFVUDUYNVUPVUGXTZXKUEWTYAVUQUW
+      ODUWODVURVURYEUUHUJWTXSVUQUXNLUVPVUQUXNMNDDPEHBUXCCEWBZUXGUXHKVAZWJZWKVAZ
+      WJZWLLVUQMNUWOUWOUXMDDVVGVURVURVUQPUWMUXLEVVFVUDVUCVUPVUIXTZVUQUWKHUXKVVE
+      WKVVBVUQBUXDUXJVVCVVDVUQUXCCUWMEVVHWSVUQUXIKUXGUXHVUQUXIHVGVDKVUQUWKHVGVV
+      BXKUFWTZUUIYBXMYBYCUKWTXSYDVUQUXQUVTUYCUWBUYHUWDVUQUWKHUVSVVBXSVUQUYBJUWA
+      VUQUYBBMSDEUXRWDZUXFKWCZVAZWLJVUQBMUWLUWOUYASDVVLVUDUWLSWQVUPVUHXTVURVUQU
+      XSVVJUXFUXFUXTVVKVUQUXIKVVIYAVUQUWMEUXRVVHUUJVUQUXFUUKUUPYCULWTXSVUQUYGRU
+      WCVUQUYGETWMZWDZWOVDZRVUQUYFVVNWOVUQUWMEUYEVVMVVHVUQUYDTVUQUYDHWNVDZTVUQU
+      WKHWNVVBXKUGWTUULYEXKARVVOWQUYOVUCVUPUMUUMXOXSYDUUNYFYGYFYGAQUAUNYHAHUBUO
+      YHZAUVRVMVSZUWEVMVSZUWFVMVSAUVMVMVSZUVOVMVSZUVQVMVSZVVRAUVLVPVSDVMVSZVVTU
+      UOADVUEVMUIAVUEESUXFXBMXDZVMASVMVSZEVMVSZVUEVWDWQASVUFVMUDAVULHVMVSZVUFVM
+      VSZXQVVQVWHVMHVCHVCXNXRYIYJZAEUYRVMUHAUYQVMVSUYRVMVSAUYQQVTUXFXBMXDZVMAVU
+      BQUAVSZUYQVWJWQXCUNVTQVMUAMYKYIAVWKVUBVWJVMVSUNXCQVTUAVMMXGUUQYLUWGOUYQVM
+      UURYOYJZSEVMVMMYKYMAVWFVWEVWDVMVSVWLVWIESVMVMMXGYMYLYLZUVLDVPVMYNYIAUVNVP
+      VSGVMVSVWAUUSAGVVAVMUJADDFVMVMVWMVWMUUTYJUVNGVPVMYNYIAUVPVPVSZLVMVSZVWBVG
+      UVPYPWQVWNUVAYQAVWCVWCVWOVWMVWMMNDDVVGVMVMLUKYRYMUVPLVPVMYNYIUVMUVOUVQVMV
+      MVMYSYTAUVTVMVSZUWBVMVSZUWDVMVSZVVSAUVSVPVSZHUBVSVWPVIUVSYPWQVWSUVBYQUOUV
+      SHVPUBYNYIAUWAVPVSZJVMVSZVWQVJUWAYPWQVWTUVEYQAVWEVWCVXAVWIVWMBMSDVVLVMVMJ
+      ULYRYMUWAJVPVMYNYIAUWCVPVSRVMVSVWRUVFARVVOVMUMAVVNVMVSZVVOVMVSAVWFVVMVMVS
+      ZVXBVWLATVMVSVXCATVVPVMUGAWNVMXPVWGVVPVMVSZUVCVVQVXDVMHWNHWNXNXRYIYJTVMUV
+      DYOEVVMVMVMUVGYMVVNVMUVHYOYLUWCRVPVMYNYIUVTUWBUWDVMVMVMYSYTUVRUWEVMVMUVIY
+      MUVJUVK $.
+  $}
+
+  ${
+    $d I f g h k x y $.  $d R f g k x $.  $d W f g k x $.  $d X f g k x $.
+    $( The multivariate power series structure is a set.  (Contributed by Jim
+       Kingdon, 10-Jun-2025.) $)
+    psrex $p |- ( ( I e. W /\ R e. X ) -> ( I mPwSer R ) e. _V ) $=
+      ( vf vx wcel co cnx cbs cfv cv cn cn0 cop cvv eqid sylancr syl2anc opexg
+      vh vg vk vy wa cmps ccnv cima cfn cmap crab cplusg cof cxp cres cmulr cle
+      cofr wbr cmin cmpt cgsu cmpo ctp csca cvsca csn cts ctopn cpt eqidd simpl
+      cun simpr psrval basendxnn wf cab wceq basfn elexd funfvex funfni mapvalg
+      wfn nn0ex mapex sylancl eqeltrd rabexg plusgndxnn ofmresex cslot mulrslid
+      simpri mpoexga tpexg syl3anc scaslid vscaslid tsetndxnn topnfn snexg ptex
+      syl xpexg unexg ) BCGZADGZUEZBAUFHZIJKZAJKZUALUGMUHUIGZUANBUJHZUKZUJHZOZI
+      ULKZAULKZUMXQXQUNUOZOZIUPKZEUBXQXQUCXPAFUDLUCLZUQURUSUDXPUKFLZELZKYDYEUTU
+      MHUBLKAUPKZHVAVBHVAZVCZOZVDZIVEKZAOZIVFKZFEXMXQXPYEVGUNYFYGUMHZVCZOZIVHKZ
+      XPAVIKZVGZUNZVJKZOZVDZVMZPXJFUDXQXPXTYAAXKYPYGYIEUBUAUCBUUBXMYSCDXKQXMQXT
+      QYGQYSQXPQXJXQVKYAQYIQYPQXJUUBVKXHXIVLZXHXIVNZVOXJYKPGZUUDPGZUUEPGXJXRPGZ
+      YBPGZYJPGZUUHXJXLMGXQPGZUUJVPXJXQXPXMYFVQEVRZPXJXMPGZXPPGZXQUUNVSXJJPWEAP
+      GZUUOVTXJADUUGWAZUUOPAJAJWBWCRZXJXOPGUUPXJXOBNYFVQEVRZPXJNPGZXHXOUUTVSWFU
+      UFNBPCEWDRXJXHUVAUUTPGUUFWFBNCPEWGWHWIXNUAXOPWJXEZXMXPPPEWDSXJUUPUUOUUNPG
+      UVBUUSXPXMPPEWGSWIZXLXQMPTRXJXSMGYAPGUUKWKXJXQXQXTPPUVCUVCWLXSYAMPTRXJYCM
+      GZYIPGZUULUPYCWMVSUVDWNWOXJUUMUUMUVEUVCUVCEUBXQXQYHPPWPSYCYIMPTRXRYBYJPPP
+      WQWRXJYMPGZYQPGZUUCPGZUUIXJYLMGZXIUVFVEYLWMVSUVIWSWOUUGYLAMDTRXJYNMGZYPPG
+      ZUVGVFYNWMVSUVJWTWOXJUUOUUMUVKUUSUVCFEXMXQYOPPWPSYNYPMPTRXJYRMGUUBPGZUVHX
+      AXJUUAPGZUVLXJUUPYTPGZUVMUVBXJYSPGZUVNXJVIPWEUUQUVOXBUURUVOPAVIAVIWBWCRYS
+      PXCXEXPYTPPXFSUUAPXDXEYRUUBMPTRYMYQUUCPPPWQWRYKUUDPPXGSWI $.
+  $}
+
+  ${
+    psrvalstrd.b $e |- ( ph -> B e. X ) $.
+    psrvalstrd.plusg $e |- ( ph -> .+ e. Y ) $.
+    psrvalstrd.ips $e |- ( ph -> .X. e. Z ) $.
+    psrvalstrd.r $e |- ( ph -> R e. W ) $.
+    psrvalstrd.mulr $e |- ( ph -> .x. e. P ) $.
+    psrvalstrd.j $e |- ( ph -> J e. Q ) $.
+    $( The multivariate power series structure is a function.  (Contributed by
+       Mario Carneiro, 8-Feb-2015.) $)
+    psrvalstrd $p |- ( ph -> ( { <. ( Base ` ndx ) , B >. ,
+        <. ( +g ` ndx ) , .+ >. , <. ( .r ` ndx ) , .X. >. } u.
+      { <. ( Scalar ` ndx ) , R >. , <. ( .s ` ndx ) , .x. >. ,
+         <. ( TopSet ` ndx ) , J >. } ) Struct <. 1 , 9 >. ) $=
+      ( cop c1 c3 c5 cnx cbs cfv cplusg cmulr ctp csca cvsca cts wcel cstr eqid
+      c9 wbr rngstrg syl3anc c6 5nn scandx 5lt6 6nn vscandx 9nn tsetndx strle3g
+      6lt9 clt 3lt5 a1i strleund ) AUAUBUCUPUDUEUFBTUDUGUFDTUDUHUFHTUIZUDUJUFZF
+      TUDUKUFZGTUDULUFZITUIZABKUMDLUMHMUMVNUAUBTUNUQNOPBDVNHKLMVNUOURUSAFJUMGCU
+      MIEUMVRUCUPTUNUQQRSVOVPVQEUCUTUPJCFGIVAVBVCVDVEVIVFVGVHUSUBUCVJUQAVKVLVM
+      $.
+  $}
+
+  ${
+    $d F f $.  $d I f $.
+    psrbag.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+    $( Elementhood in the set of finite bags.  (Contributed by Mario Carneiro,
+       29-Dec-2014.) $)
+    psrbag $p |- ( I e. V -> ( F e. D <->
+      ( F : I --> NN0 /\ ( `' F " NN ) e. Fin ) ) ) $=
+      ( wcel cn0 cmap co ccnv cn cima cfn wa wf cv wceq cnveq cvv eleq1d elrab2
+      imaeq1d wb nn0ex elmapg mpan anbi1d bitrid ) CAGCHDIJZGZCKZLMZNGZODEGZDHC
+      PZUNOBQZKZLMZNGUNBCUJAUQCRZUSUMNUTURULLUQCSUCUAFUBUOUKUPUNHTGUOUKUPUDUEHD
+      CTEUFUGUHUI $.
+
+    $( A finite bag is a function.  (Contributed by Mario Carneiro,
+       29-Dec-2014.)  Remove a sethood antecedent.  (Revised by SN,
+       30-Jul-2024.) $)
+    psrbagf $p |- ( F e. D -> F : I --> NN0 ) $=
+      ( wcel cv ccnv cn cima cfn cn0 cmap co crab wf eleq2i elrabi elmapi syl
+      sylbi ) CAFCBGHIJKFZBLDMNZOZFZDLCPZAUDCEQUECUCFUFUBBCUCRCLDSTUA $.
+
+    ${
+      $d n f x $.  $d I x $.  $d V x $.
+      $( The constant function equal to zero is a finite bag.  (Contributed by
+         AV, 8-Jul-2019.) $)
+      fczpsrbag $p |- ( I e. V -> ( x e. I |-> 0 ) e. D ) $=
+        ( wcel cc0 cmpt cn0 wf ccnv cn cima cfn cv wa 0nn0 a1i c0 crab wn rgenw
+        fmpttd eqid mptpreima wceq wral 0nnn mpbir eqtri 0fin eqeltri mpbir2and
+        rabeq0 psrbag ) DEGZADHIZBGDJURKURLMNZOGZUQADHJHJGUQAPDGQRSUDUTUQUSTOUS
+        HMGZADUAZTADHMURURUEUFVBTUGVAUBZADUHVCADUIUCVAADUOUJUKULUMSBCURDEFUPUN
+        $.
+    $}
+
+    ${
+      $d I x $.  $d G x $.  $d F x $.  $d F f $.  $d D x $.  $d I f $.
+      $d V x $.
+      $( The support of a dominated bag is smaller than the dominating bag.
+         (Contributed by Mario Carneiro, 29-Dec-2014.) $)
+      psrbaglesuppg $p |- ( ( I e. V /\ ( F e. D /\
+        G : I --> NN0 /\ G oR <_ F ) ) -> ( `' G " NN ) C_ ( `' F " NN ) ) $=
+        ( vx wcel cn0 wf cle wbr wa ccnv cn cima cfv wb mpbid cofr w3a cv cz c1
+        cfn simplr1 simpll psrbag syl simpr wfn simplr2 ffnd elpreima ffvelcdmd
+        simpld nn0zd 1red wfun 3ad2ant2 ad2antlr fvimacnvi syl2anc nnred nn0red
+        ffun nnge1d inidm eqidd ofrval mpd3an23 letrd elnnz1 sylanbrc cdm ffund
+        simplr3 fdmd eleqtrrd fvimacnv ex ssrdv ) EFIZCAIZEJDKZDCLUAMZUBZNZHDOP
+        QZCOPQZWIHUCZWJIZWLWKIZWIWMNZWLCRZPIZWNWOWPUDIUEWPLMWQWOWPWOEJWLCWOEJCK
+        ZWKUFIZWOWEWRWSNZWEWFWGWDWMUGWOWDWEWTSWDWHWMUHZABCEFGUIUJTUQZWOWLEIZWLD
+        RZPIZWOWMXCXENZWIWMUKZWODEULWMXFSWOEJDWEWFWGWDWMUMUNZEWLPDUOUJTUQZUPZUR
+        WOUEXDWPWOUSWOXDWODUTZWMXEWHXKWDWMWFWEXKWGEJDVGVAVBXGWLPDVCVDZVEWOWPXJV
+        FWOXDXLVHWOWGXCXDWPLMWEWFWGWDWMVRXIWOEEXDWPLEDCFFWLXHWOEJCXBUNXAXAEVIWO
+        XCNZXDVJXMWPVJVKVLVMWPVNVOWOCUTWLCVPZIWQWNSWOEJCXBVQWOWLEXNXIWOEJCXBVSV
+        TWLPCWAVDTWBWC $.
+    $}
+  $}
+
+  ${
+    $d g h k p x y D $.  $d f g h k p x y I $.  $d g h k p x K $.
+    $d g h k p x ph $.  $d g h k p x R $.  $d x p V $.
+    psrbas.s $e |- S = ( I mPwSer R ) $.
+    psrbas.k $e |- K = ( Base ` R ) $.
+    psrbas.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+    psrbas.b $e |- B = ( Base ` S ) $.
+    ${
+      psrbas.i $e |- ( ph -> I e. V ) $.
+      psrbasg.r $e |- ( ph -> R e. W ) $.
+      $( The base set of the multivariate power series structure.  (Contributed
+         by Mario Carneiro, 28-Dec-2014.)  (Revised by Mario Carneiro,
+         2-Oct-2015.)  (Proof shortened by AV, 8-Jul-2019.) $)
+      psrbasg $p |- ( ph -> B = ( K ^m D ) ) $=
+        ( cbs cfv cvv wcel vg vh vk vx vy vp cnx cmap cop cplusg cof cres cmulr
+        co cxp cv cle cofr wbr crab cmin cmpt cgsu cmpo ctp cvsca csn cts ctopn
+        csca cpt cun eqid eqidd psrval fveq2d wceq a1i c1 c9 wf cab basfn elexd
+        wfn funfvex funfni sylancr eqeltrid ccnv cn cfn cn0 nn0ex mapvalg mapex
+        cima syl2anc eqeltrd rabexd ofmresex mpoexga snexg syl xpexg psrvalstrd
+        topnfn ptex basendxnn opexg tpid1g elun1 3syl opelstrbas 3eqtr4d ) AEQR
+        ZUGQRZHCUHUNZUIZUGUJRDUJRZUKXRXRUOULZUIZUGUMRUAUBXRXRUCCDUDUEUPUCUPZUQU
+        RUSUECUTUDUPZUAUPZRYCYDVAUKUNUBUPRDUMRZUNVBVCUNVBZVDZUIZVEZUGVJRDUIUGVF
+        RUDUAHXRCYDVGUOYEYFUKUNZVDZUIUGVHRCDVIRZVGZUOZVKRZUIVEZVLZQRBXRAEYRQAUD
+        UEXRCXTYADEYLYFYHUAUBFUCGYPHYMIJKLXTVMYFVMYMVMMAXRVNYAVMYHVMYLVMAYPVNOP
+        VOVPBXPVQANVRAYRXRVSVTUISAXRSYASDYLYHYPJSSSAXRCHUFUPZWAUFWBZSAHSTZCSTZX
+        RYTVQAHDQRZSLAQSWEDSTZUUCSTZWCADJPWDZUUESDQDQWFWGWHWIZAFUPWJWKWQWLTFWMG
+        UHUNZCSMAUUHGWMYSWAUFWBZSAWMSTZGITZUUHUUIVQWNOWMGSIUFWOWHAUUKUUJUUISTOU
+        UJAWNVRGWMISUFWPWRWSWTZHCSSUFWOWRAUUBUUAYTSTUULUUGCHSSUFWPWRWSZAXRXRXTS
+        SUUMUUMXAAXRSTZUUNYHSTUUMUUMUAUBXRXRYGSSXBWRPAUUAUUNYLSTUUGUUMUDUAHXRYK
+        SSXBWRAYOSTZYPSTAUUBYNSTZUUOUULAYMSTZUUPAVISWEUUDUUQXGUUFUUQSDVIDVIWFWG
+        WHYMSXCXDCYNSSXEWRYOSXHXDXFUUMAXSSTZXSYJTXSYRTAXQWKTUUNUURXIUUMXQXRWKSX
+        JWHXSSYBYIXKXSYJYQXLXMXNXO $.
+    $}
+  $}
+
+
+$(
+###############################################################################
   BASIC TOPOLOGY
 ###############################################################################
 $)
@@ -176466,6 +176807,45 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Wilson's theorem
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( The only elements that are equal to their own inverses in the
+     multiplicative group of nonzero elements in ` ZZ / P ZZ ` are ` 1 ` and
+     ` -u 1 == P - 1 ` .  (Note that from ~ prmdiveq ,
+     ` ( N ^ ( P - 2 ) ) mod P ` is the modular inverse of ` N ` in
+     ` ZZ / P ZZ ` .  (Contributed by Mario Carneiro, 24-Jan-2015.) $)
+  wilthlem1 $p |- ( ( P e. Prime /\ N e. ( 1 ... ( P - 1 ) ) ) ->
+    ( N = ( ( N ^ ( P - 2 ) ) mod P ) <-> ( N = 1 \/ N = ( P - 1 ) ) ) ) $=
+    ( wcel c1 cmin co c2 cmo wceq cdvds wbr caddc cmul cc0 cz adantl cc syl3anc
+    syl wb cprime cfz wa cexp wo elfzelz peano2zm peano2zd mulcomd ax-1cn subsq
+    zcnd sylancl sqvald sq1 a1i oveq12d 3eqtr2d breq2d fz1ssfz0 simpr biantrurd
+    sselid bitrd simpl euclemma wn prmnn fzm1ndvds sylan eqid prmdiveq 3bitr3rd
+    cn adantr 1zzd moddvds cq cle zq prmz elfznn nnnn0d nn0ge0d elfzle2 zltlem1
+    clt syl2anr mpbird modqid syl22anc cuz prmuz2 eluz2gt1 q1mod syl2anc bitr3d
+    cfv eqeq12d cneg znegcld mullidd oveq2d neg1cn addcom sylancr negsub 3eqtrd
+    nncnd oveq1d neg1z mp1i nngt0d modqcyc cn0 nnm1nn0 nn0zd nnred ltm1d subneg
+    3eqtr3d orbi12d ) AUACZBDADEFZUBFZCZUCZBBAGEFUDFAHFZIZABDEFZJKZABDLFZJKZUEZ
+    BDIZBYDIZUEYGAYJYLMFZJKZBNYDUBFZCZABBMFZDEFZJKZUCZYNYIYGYRUUCUUDYGYQUUBAJYG
+    YQYLYJMFZBGUDFZDGUDFZEFZUUBYGYJYLYGYJYGBOCZYJOCZYFUUIYCBDYDUFZPZBUGSZULYGYL
+    YGBUULUHZULUIYGBQCZDQCZUUHUUEIYGBUULULZUJBDUKUMYGUUFUUAUUGDEYGBUUQUNUUGDIYG
+    UOUPUQURUSYGYTUUCYGYEYSBYDUTYCYFVAVCVBVDYGYCUUJYLOCYRYNTYCYFVEZUUMUUNAYJYLV
+    FRYGYCUUIABJKVGZUUDYITUURUULYCAVNCZYFUUSAVHZABVIVJBAYHBYHVKVLRVMYGYKYOYMYPY
+    GBAHFZDAHFZIZYKYOYGUUTUUIDOCZUVDYKTYCUUTYFUVAVOZUULYGVPZBDAVQRYGUVBBUVCDYGB
+    VRCZAVRCZNBVSKBAWGKZUVBBIYFUVHYCYFUUIUVHUUKBVTSPYCUVIYFYCAOCZUVIAWAZAVTSVOZ
+    YGBYGBYFBVNCYCBYDWBPWCWDYGUVJBYDVSKZYFUVNYCBDYDWEPYFUUIUVKUVJUVNTYCUUKUVLBA
+    WFWHWIBAWJWKZYGUVIDAWGKZUVCDIUVMYGAGWLWRCZUVPYCUVQYFAWMVOAWNSAWOWPWSWQYGUVB
+    DWTZAHFZIZABUVREFZJKZYPYMYGUUTUUIUVROCZUVTUWBTUVFUULYGDUVGXABUVRAVQRYGUVBBU
+    VSYDUVOYGUVRDAMFZLFZAHFZYDAHFZUVSYDYGUWEYDAHYGUWEUVRALFZAUVRLFZYDYGUWDAUVRL
+    YGAYGAUVFXIZXBXCYGUVRQCAQCZUWHUWIIXDUWJUVRAXEXFYGUWKUUPUWIYDIUWJUJADXGUMXHX
+    JYGUVRVRCZUVEUVINAWGKUWFUVSIUWCUWLYGXKUVRVTXLUVGUVMYGAUVFXMUVRADXNWKYGYDVRC
+    ZUVINYDVSKYDAWGKUWGYDIYGYDOCUWMYGYDYGUUTYDXOCUVFAXPSZXQYDVTSUVMYGYDUWNWDYGA
+    YGAUVFXRXSYDAWJWKYAWSYGUWAYLAJYGUUOUUPUWAYLIUUQUJBDXTUMUSVMYBVD $.
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Quadratic residues and the Legendre symbol
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
@@ -180509,14 +180889,10 @@ htmldef "Z/nZ" as "&#8484;/<i>n</i>&#8484;";
   althtmldef "Z/nZ" as "&#8484;/<i>n</i>&#8484;";
     /* 2-Jan-2016 reverted sans-serif */
   latexdef "Z/nZ" as "\mathrm{Z/nZ}";
-htmldef "fBas" as
-    "<IMG SRC='_fbas.gif' WIDTH=29 HEIGHT=19 ALT=' fBas' TITLE='fBas'>";
-  althtmldef "fBas" as "fBas";
-  latexdef "fBas" as "\mathrm{fBas}";
-htmldef "filGen" as
-    "<IMG SRC='_filgen.gif' WIDTH=40 HEIGHT=19 ALT=' filGen' TITLE='filGen'>";
-  althtmldef "filGen" as "filGen";
-  latexdef "filGen" as "\mathrm{filGen}";
+htmldef "mPwSer" as " mPwSer ";
+  althtmldef "mPwSer" as " mPwSer ";
+  latexdef "mPwSer" as "\mathrm{mPwSer}";
+
 htmldef "metUnif" as "metUnif";
   althtmldef "metUnif" as "metUnif";
   latexdef "metUnif" as "\mathrm{metUnif}";
@@ -180577,6 +180953,14 @@ htmldef "Homeo" as
     "<IMG SRC='_homeo.gif' WIDTH=43 HEIGHT=19 ALT=' Homeo' TITLE='Homeo'>";
   althtmldef "Homeo" as "Homeo";
   latexdef "Homeo" as "\mathrm{Homeo}";
+htmldef "fBas" as
+    "<IMG SRC='_fbas.gif' WIDTH=29 HEIGHT=19 ALT=' fBas' TITLE='fBas'>";
+  althtmldef "fBas" as "fBas";
+  latexdef "fBas" as "\mathrm{fBas}";
+htmldef "filGen" as
+    "<IMG SRC='_filgen.gif' WIDTH=40 HEIGHT=19 ALT=' filGen' TITLE='filGen'>";
+  althtmldef "filGen" as "filGen";
+  latexdef "filGen" as "\mathrm{filGen}";
 htmldef "*MetSp" as
     "<IMG SRC='infty.gif' WIDTH=17 HEIGHT=19 ALT=' *' TITLE='*'>" +
     "<IMG SRC='_metsp.gif' WIDTH=41 HEIGHT=19 ALT='MetSp' TITLE='MetSp'>";

@@ -90,6 +90,8 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
 14-Jun-25 el3v3     [same]      Moved from PM's mathbox to main set.mm
+ 8-Jun-25 deg1mul   [same]      Moved from MKU's mathbox to main set.mm
+ 7-Jun-25 ply1ascl1 [same]      Moved from TA's mathbox to main set
  4-Jun-25 rhmpreimaidl [same]   Moved from TA's mathbox to main set.mm
  4-Jun-25 kerlidl   [same]      Moved from TA's mathbox to main set.mm
  3-Jun-25 inn0f     [same]      Moved from GS's mathbox to main set.mm
