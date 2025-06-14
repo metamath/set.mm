@@ -2263,6 +2263,11 @@ favor of theorems in deduction form.</TD>
 <TD>set.mm uses case elimination to remove the ` A e. _V ` condition.</TD>
 </TR>
 
+<tr>
+  <td>unisn2</td>
+  <td>~ unisng</td>
+</tr>
+
 <TR>
   <TD>intex</TD>
   <TD>~ inteximm , ~ intexr</TD>
@@ -3389,6 +3394,11 @@ that we are evaluating functions within their domains.
 are functions being evaluated within their domains, there would be a
 fair bit of intuitionizing.</TD>
 </TR>
+
+<tr>
+  <td>tpex</td>
+  <td>~ tpexg</td>
+</tr>
 
 <TR>
 <TD>ordeleqon</TD>
@@ -10024,10 +10034,23 @@ intuitionistic and it is lightly used in set.mm</TD>
   and ` C ` are sets.</TD>
 </TR>
 
+<tr>
+  <td>elbasfv</td>
+  <td><i>none</i></td>
+  <td>may be possible with a condition
+  such as ` Rel F ` (see ~ relelfvdm )</td>
+</tr>
+
+<tr>
+  <td>elbasov</td>
+  <td><i>none</i></td>
+  <td>may be provable, as-is or with added conditions</td>
+</tr>
+
 <TR>
-  <TD>elbasfv , elbasov , strov2rcl</TD>
+  <TD>strov2rcl</TD>
   <TD><I>none</I></TD>
-  <TD>The set.mm proofs rely on excluded middle.</TD>
+  <TD>set.mm proves this as a consequence of elbasov</TD>
 </TR>
 
 <TR>
@@ -12205,6 +12228,75 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>We'll need a slot for lt as the set.mm mechanism of
   defining lt in terms of ` le ` will not work (per ~ ltlenmkv ).</td>
+</tr>
+
+<tr>
+  <td>psrvalstr</td>
+  <td>~ psrvalstrd</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>psrbagfsupp</td>
+  <td><i>none</i></td>
+  <td>we do not currently have finSupp and the whole finitely
+  supported concept is more limited without excluded middle</td>
+</tr>
+
+<tr>
+  <td>snifpsrbag</td>
+  <td><i>none</i></td>
+  <td>we do not have some of the theorems used in this proof
+  and it appears that if anything like this is possible, it
+  would need some decidable equality conditions added</td>
+</tr>
+
+<tr>
+  <td>psrbaglesupp</td>
+  <td>~ psrbaglesuppg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>psrbaglecl</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof uses ssfi . We might have enough
+  decidability (via ~ elnndc ) to overcome this.</td>
+</tr>
+
+<tr>
+  <td>psrbagaddcl</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof uses ssfi and various theorems involving
+  the support of a function. The question is whether we have
+  enough decidability (for example via ~ elnndc ) to overcome
+  this.</td>
+</tr>
+
+<tr>
+  <td>psrbagcon</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof uses ssfi . We might have enough
+  decidability (for example via ~ elnndc ) to overcome this.</td>
+</tr>
+
+<tr>
+  <td>psrbaglefi</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof uses psrbaglecl and theorems involving
+  the support of a function which we don't have</td>
+</tr>
+
+<tr>
+  <td>psrbagconcl</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses psrbagcon</td>
+</tr>
+
+<tr>
+  <td>psrbas</td>
+  <td>~ psrbasg</td>
+  <td>adds set existence condition</td>
 </tr>
 
 <TR>
