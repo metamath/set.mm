@@ -143943,6 +143943,17 @@ $)
   $}
 
   ${
+    $d G j $.
+    basm.b $e |- B = ( Base ` G ) $.
+    $( A structure whose base is inhabited is inhabited.  (Contributed by Jim
+       Kingdon, 14-Jun-2025.) $)
+    basm $p |- ( A e. B -> E. j j e. G ) $=
+      ( wcel cnx cbs cfv cv wex cvv baseid basmex basendxnn a1i strnfvnd eqtrid
+      id cn eleqtrd elfvm syl ) ABFZAGHIZDIZFCJDFCKUDABUFUDSUDBDHIUFEUDDHUELMAB
+      DENUETFUDOPQRUAAUECDUBUC $.
+  $}
+
+  ${
     $d x y $.
     $( The structure restriction is a proper operator, so it can be used with
        ~ ovprc1 .  (Contributed by Stefan O'Rear, 29-Nov-2014.) $)
