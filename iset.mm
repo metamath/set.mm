@@ -47,6 +47,7 @@ PC  Paul Chapman
 DF  Drahflow
 GD  Georgy Dunaev
 SF  Scott Fenton
+GG  Gino Giotto
 JGH Jeff Hankins
 AH  Anthony Hart
 DH  David Harvey
@@ -12439,7 +12440,7 @@ $)
     nfal.1 $e |- F/ x ph $.
     $( If ` x ` is not free in ` ph ` , it is not free in ` A. y ph ` .
        (Contributed by Mario Carneiro, 11-Aug-2016.)  Remove dependency on
-       ~ ax-4 .  (Revised by Gino Giotto, 25-Aug-2024.) $)
+       ~ ax-4 .  (Revised by GG, 25-Aug-2024.) $)
     nfal $p |- F/ x A. y ph $=
       ( wnf wal wi df-nf biimpi alimi ax-7 ax-5 syl6 3syl sylibr mpg ) ABEZACFZ
       BEZCQCFZRRBFZGZBFZSTAABFZGZBFZCFUECFZBFUCQUFCQUFABHIJUECBKUGUBBUGRUDCFUAA
@@ -13897,7 +13898,7 @@ $)
     cbv2w.5 $e |- ( ph -> ( x = y -> ( ps <-> ch ) ) ) $.
     $( Rule used to change bound variables, using implicit substitution.
        Version of ~ cbv2 with a disjoint variable condition.  (Contributed by
-       NM, 5-Aug-1993.)  (Revised by Gino Giotto, 10-Jan-2024.) $)
+       NM, 5-Aug-1993.)  (Revised by GG, 10-Jan-2024.) $)
     cbv2w $p |- ( ph -> ( A. x ps <-> A. y ch ) ) $=
       ( wal weq wb wi biimp syl6 cbv1v equcomi biimpr syl56 impbid ) ABDKCEKABC
       DEFGHIADELZBCMZBCNJBCOPQACBEDGFIHEDLUBAUCCBNEDRJBCSTQUA $.
@@ -15501,7 +15502,7 @@ $)
     cbvalvw.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
     $( Change bound variable.  See ~ cbvalv for a version with fewer disjoint
        variable conditions.  (Contributed by NM, 9-Apr-2017.)  Avoid ~ ax-7 .
-       (Revised by Gino Giotto, 25-Aug-2024.) $)
+       (Revised by GG, 25-Aug-2024.) $)
     cbvalvw $p |- ( A. x ph <-> A. y ps ) $=
       ( wal spv alrimiv weq wb equcoms biimprd spimv impbii ) ACFZBDFZOBDABCDEG
       HPACBADCDCIABABJCDEKLMHN $.
@@ -15509,7 +15510,7 @@ $)
 
     $( Change bound variable.  See ~ cbvexv for a version with fewer disjoint
        variable conditions.  (Contributed by NM, 19-Apr-2017.)  Avoid ~ ax-7 .
-       (Revised by Gino Giotto, 25-Aug-2024.) $)
+       (Revised by GG, 25-Aug-2024.) $)
     cbvexvw $p |- ( E. x ph <-> E. y ps ) $=
       ( wex wi weq biimpd equcoms spimev exlimiv biimprd impbii ) ACFZBDFZAPCAB
       DCABGCDCDHZABEIJKLBODBACDQABEMKLN $.
@@ -15810,7 +15811,7 @@ $( The theorems in this section make use of the $d statement. $)
        ` z ` is distinct from ` x ` and ` y ` .  Version of ~ nfsb requiring
        more disjoint variables.  (Contributed by Wolf Lammen, 7-Feb-2023.)
        Remove disjoint variable condition on ` x , y ` .  (Revised by Steven
-       Nguyen, 13-Aug-2023.)  Reduce axiom usage.  (Revised by Gino Giotto,
+       Nguyen, 13-Aug-2023.)  Reduce axiom usage.  (Revised by GG,
        25-Aug-2024.) $)
     nfsbv $p |- F/ z [ y / x ] ph $=
       ( wsb weq wi wa wex df-sb nfv nfim nfan nfex nfxfr ) ABCFBCGZAHZQAIZBJZID
@@ -19940,8 +19941,7 @@ $)
     cbvabw.2 $e |- F/ x ps $.
     cbvabw.3 $e |- ( x = y -> ( ph <-> ps ) ) $.
     $( Version of ~ cbvab with a disjoint variable condition.  (Contributed by
-       Gino Giotto, 10-Jan-2024.)  Reduce axiom usage.  (Revised by Gino
-       Giotto, 25-Aug-2024.) $)
+       GG, 10-Jan-2024.)  Reduce axiom usage.  (Revised by GG, 25-Aug-2024.) $)
     cbvabw $p |- { x | ph } = { y | ps } $=
       ( vz cab wsb cv wcel nfsbv weq wi wal equequ2 sb6 sbiev df-clab 3bitr4g
       imbi1d albidv sbbii bitr3i 3bitr4i eqriv ) HACIZBDIZACHJZBDHJZHKZUHLULUIL
@@ -20284,7 +20284,7 @@ $)
     nfabdw.2 $e |- ( ph -> F/ x ps ) $.
     $( Bound-variable hypothesis builder for a class abstraction.  Version of
        ~ nfabd with a disjoint variable condition.  (Contributed by Mario
-       Carneiro, 8-Oct-2016.)  (Revised by Gino Giotto, 10-Jan-2024.) $)
+       Carneiro, 8-Oct-2016.)  (Revised by GG, 10-Jan-2024.) $)
     nfabdw $p |- ( ph -> F/_ x { y | ps } ) $=
       ( vz cab nfv cv wcel wsb df-clab wnf wal alrimi wi weq nfim1 nfal nfa1 wb
       sb6 a1i biimpri axc4i biimtrdi nf5d sbequ12 imbi2d equsalv bicomi sp nfim
@@ -21611,8 +21611,8 @@ $)
     nfraldw.3 $e |- ( ph -> F/ x ps ) $.
     $( Not-free for restricted universal quantification where ` x ` and ` y `
        are distinct.  See ~ nfraldya for a version with ` y ` and ` A `
-       distinct instead.  (Contributed by NM, 15-Feb-2013.)  (Revised by Gino
-       Giotto, 10-Jan-2024.) $)
+       distinct instead.  (Contributed by NM, 15-Feb-2013.)  (Revised by GG,
+       10-Jan-2024.) $)
     nfraldw $p |- ( ph -> F/ x A. y e. A ps ) $=
       ( wral cv wcel wi wal df-ral nfcvd nfeld nfimd nfald nfxfrd ) BDEIDJZEKZB
       LZDMACBDENAUBCDFAUABCACTEACTOGPHQRS $.
@@ -21667,7 +21667,7 @@ $)
     nfralw.2 $e |- F/ x ph $.
     $( Bound-variable hypothesis builder for restricted quantification.  See
        ~ nfralya for a version with ` y ` and ` A ` distinct instead of ` x `
-       and ` y ` .  (Contributed by NM, 1-Sep-1999.)  (Revised by Gino Giotto,
+       and ` y ` .  (Contributed by NM, 1-Sep-1999.)  (Revised by GG,
        10-Jan-2024.) $)
     nfralw $p |- F/ x A. y e. A ph $=
       ( wral wnf wtru nftru wnfc a1i nfraldw mptru ) ACDGBHIABCDCJBDKIELABHIFLM
@@ -23222,8 +23222,7 @@ $)
        Version of ~ cbvralf with a disjoint variable condition.  Although we
        don't do so yet, we expect this disjoint variable condition will allow
        us to remove reliance on ~ ax-i12 and ~ ax-bndl in the proof.
-       (Contributed by NM, 7-Mar-2004.)  (Revised by Gino Giotto,
-       23-May-2024.) $)
+       (Contributed by NM, 7-Mar-2004.)  (Revised by GG, 23-May-2024.) $)
     cbvralfw $p |- ( A. x e. A ph <-> A. y e. A ps ) $=
       ( cv wcel wi wal wral nfcri nfim weq eleq1w df-ral imbi12d cbvalv1
       3bitr4i ) CKELZAMZCNDKELZBMZDNACEOBDEOUEUGCDUDADDCEGPHQUFBCCDEFPIQCDRUDUF
@@ -23241,8 +23240,7 @@ $)
        Version of ~ cbvrexf with a disjoint variable condition.  Although we
        don't do so yet, we expect this disjoint variable condition will allow
        us to remove reliance on ~ ax-i12 and ~ ax-bndl in the proof.
-       (Contributed by FL, 27-Apr-2008.)  (Revised by Gino Giotto,
-       10-Jan-2024.) $)
+       (Contributed by FL, 27-Apr-2008.)  (Revised by GG, 10-Jan-2024.) $)
     cbvrexfw $p |- ( E. x e. A ph <-> E. y e. A ps ) $=
       ( cv wcel wa wex wrex nfcri nfan weq eleq1w df-rex anbi12d cbvexv1
       3bitr4i ) CKELZAMZCNDKELZBMZDNACEOBDEOUEUGCDUDADDCEGPHQUFBCCDEFPIQCDRUDUF
@@ -23286,8 +23284,7 @@ $)
        Version of ~ cbvral with a disjoint variable condition.  Although we
        don't do so yet, we expect this disjoint variable condition will allow
        us to remove reliance on ~ ax-i12 and ~ ax-bndl in the proof.
-       (Contributed by NM, 31-Jul-2003.)  (Revised by Gino Giotto,
-       10-Jan-2024.) $)
+       (Contributed by NM, 31-Jul-2003.)  (Revised by GG, 10-Jan-2024.) $)
     cbvralw $p |- ( A. x e. A ph <-> A. y e. A ps ) $=
       ( nfcv cbvralfw ) ABCDECEIDEIFGHJ $.
 
@@ -23295,8 +23292,7 @@ $)
        Version of ~ cbvrexfw with more disjoint variable conditions.  Although
        we don't do so yet, we expect the disjoint variable conditions will
        allow us to remove reliance on ~ ax-i12 and ~ ax-bndl in the proof.
-       (Contributed by NM, 31-Jul-2003.)  (Revised by Gino Giotto,
-       10-Jan-2024.) $)
+       (Contributed by NM, 31-Jul-2003.)  (Revised by GG, 10-Jan-2024.) $)
     cbvrexw $p |- ( E. x e. A ph <-> E. y e. A ps ) $=
       ( nfcv cbvrexfw ) ABCDECEIDEIFGHJ $.
   $}
@@ -23364,8 +23360,8 @@ $)
     $d x y A $.  $d y ph $.  $d x ps $.
     cbvralvw.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
     $( Version of ~ cbvralv with a disjoint variable condition.  (Contributed
-       by Gino Giotto, 10-Jan-2024.)  Reduce axiom usage.  (Revised by Gino
-       Giotto, 25-Aug-2024.) $)
+       by GG, 10-Jan-2024.)  Reduce axiom usage.  (Revised by GG,
+       25-Aug-2024.) $)
     cbvralvw $p |- ( A. x e. A ph <-> A. y e. A ps ) $=
       ( cv wcel wi wal wral weq eleq1w imbi12d cbvalvw df-ral 3bitr4i ) CGEHZAI
       ZCJDGEHZBIZDJACEKBDEKSUACDCDLRTABCDEMFNOACEPBDEPQ $.
@@ -23373,8 +23369,8 @@ $)
        'ax-bndl' 'ax-i5r' 'ax-ext'; $)
 
     $( Version of ~ cbvrexv with a disjoint variable condition.  (Contributed
-       by Gino Giotto, 10-Jan-2024.)  Reduce axiom usage.  (Revised by Gino
-       Giotto, 25-Aug-2024.) $)
+       by GG, 10-Jan-2024.)  Reduce axiom usage.  (Revised by GG,
+       25-Aug-2024.) $)
     cbvrexvw $p |- ( E. x e. A ph <-> E. y e. A ps ) $=
       ( cv wcel wa wex wrex weq eleq1w anbi12d cbvexvw df-rex 3bitr4i ) CGEHZAI
       ZCJDGEHZBIZDJACEKBDEKSUACDCDLRTABCDEMFNOACEPBDEPQ $.
@@ -23383,8 +23379,8 @@ $)
 
     $d x y z A $.  $d ph z $.  $d ps z $.
     $( Version of ~ cbvreuv with a disjoint variable condition.  (Contributed
-       by Gino Giotto, 10-Jan-2024.)  Reduce axiom usage.  (Revised by Gino
-       Giotto, 25-Aug-2024.) $)
+       by GG, 10-Jan-2024.)  Reduce axiom usage.  (Revised by GG,
+       25-Aug-2024.) $)
     cbvreuvw $p |- ( E! x e. A ph <-> E! y e. A ps ) $=
       ( vz cv wcel wa weu wreu weq wb wal wex eleq1w df-eu 3bitr4ri df-reu
       anbi12d equequ1 bibi12d cbvalvw exbii ) DHEIZBJZDKZCHEIZAJZCKZBDELACELUJC
@@ -23439,7 +23435,7 @@ $)
     $( Change bound variables of double restricted universal quantification,
        using implicit substitution.  Version of ~ cbvral2v with a disjoint
        variable condition, which does not require ~ ax-13 .  (Contributed by
-       NM, 10-Aug-2004.)  (Revised by Gino Giotto, 10-Jan-2024.) $)
+       NM, 10-Aug-2004.)  (Revised by GG, 10-Jan-2024.) $)
     cbvral2vw $p |- ( A. x e. A A. y e. B ph <-> A. z e. A A. w e. B ps ) $=
       ( wral weq ralbidv cbvralvw ralbii bitri ) AEILZDHLCEILZFHLBGILZFHLRSDFHD
       FMACEIJNOSTFHCBEGIKOPQ $.
@@ -23455,7 +23451,7 @@ $)
     $( Change bound variables of double restricted universal quantification,
        using implicit substitution.  Version of ~ cbvrex2v with a disjoint
        variable condition, which does not require ~ ax-13 .  (Contributed by
-       FL, 2-Jul-2012.)  (Revised by Gino Giotto, 10-Jan-2024.) $)
+       FL, 2-Jul-2012.)  (Revised by GG, 10-Jan-2024.) $)
     cbvrex2vw $p |- ( E. x e. A E. y e. B ph <-> E. z e. A E. w e. B ps ) $=
       ( wrex weq rexbidv cbvrexvw rexbii bitri ) AEILZDHLCEILZFHLBGILZFHLRSDFHD
       FMACEIJNOSTFHCBEGIKOPQ $.
@@ -26524,7 +26520,7 @@ $)
     cbvsbcw.2 $e |- F/ x ps $.
     cbvsbcw.3 $e |- ( x = y -> ( ph <-> ps ) ) $.
     $( Version of ~ cbvsbc with a disjoint variable condition.  (Contributed by
-       Gino Giotto, 10-Jan-2024.) $)
+       GG, 10-Jan-2024.) $)
     cbvsbcw $p |- ( [. A / x ]. ph <-> [. A / y ]. ps ) $=
       ( cab wcel wsbc cbvabw eleq2i df-sbc 3bitr4i ) EACIZJEBDIZJACEKBDEKPQEABC
       DFGHLMACENBDENO $.
@@ -27216,7 +27212,7 @@ $)
     cbvcsbw.2 $e |- F/_ x D $.
     cbvcsbw.3 $e |- ( x = y -> C = D ) $.
     $( Version of ~ cbvcsb with a disjoint variable condition.  (Contributed by
-       Gino Giotto, 10-Jan-2024.) $)
+       GG, 10-Jan-2024.) $)
     cbvcsbw $p |- [_ A / x ]_ C = [_ A / y ]_ D $=
       ( vz cv wcel wsbc cab csb nfcri weq eleq2d cbvsbcw abbii df-csb 3eqtr4i )
       IJZDKZACLZIMUBEKZBCLZIMACDNBCENUDUFIUCUEABCBIDFOAIEGOABPDEUBHQRSAICDTBICE
@@ -27286,8 +27282,7 @@ $)
     $d z A $.  $d x y z w $.  $d y z w B $.
     $( Composition law for chained substitutions into a class.  Version of
        ~ csbco with a disjoint variable condition, which requires fewer axioms.
-       (Contributed by NM, 10-Nov-2005.)  (Revised by Gino Giotto,
-       25-Aug-2024.) $)
+       (Contributed by NM, 10-Nov-2005.)  (Revised by GG, 25-Aug-2024.) $)
     csbcow $p |- [_ A / y ]_ [_ y / x ]_ B = [_ A / x ]_ B $=
       ( vz vw cv csb wcel wsbc cab df-csb weq wal wsb sb6 df-clab df-sbc bitri
       wi abeq2i sbcbii equequ2 imbi1d albidv sbiev bitr4i 3bitr4i eqriv 3eqtr4i
@@ -27515,7 +27510,7 @@ $)
     nfsbcdw.2 $e |- ( ph -> F/_ x A ) $.
     nfsbcdw.3 $e |- ( ph -> F/ x ps ) $.
     $( Version of ~ nfsbcd with a disjoint variable condition.  (Contributed by
-       NM, 23-Nov-2005.)  (Revised by Gino Giotto, 10-Jan-2024.) $)
+       NM, 23-Nov-2005.)  (Revised by GG, 10-Jan-2024.) $)
     nfsbcdw $p |- ( ph -> F/ x [. A / y ]. ps ) $=
       ( wsbc cab wcel df-sbc nfabdw nfeld nfxfrd ) BDEIEBDJZKACBDELACEPGABCDFHM
       NO $.
@@ -27539,7 +27534,7 @@ $)
     nfcsbw.2 $e |- F/_ x B $.
     $( Bound-variable hypothesis builder for substitution into a class.
        Version of ~ nfcsb with a disjoint variable condition.  (Contributed by
-       Mario Carneiro, 12-Oct-2016.)  (Revised by Gino Giotto, 10-Jan-2024.) $)
+       Mario Carneiro, 12-Oct-2016.)  (Revised by GG, 10-Jan-2024.) $)
     nfcsbw $p |- F/_ x [_ A / y ]_ B $=
       ( vz csb wnfc wtru cv wcel wsbc cab df-csb nftru a1i nfcrd nfsbcdw nfabdw
       nfcxfrd mptru ) ABCDHZIJAUCGKDLZBCMZGNBGCDOJUEAGGPJUDABCBPACIJEQJAGDADIJF
