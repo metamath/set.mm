@@ -143954,6 +143954,21 @@ $)
   $}
 
   ${
+    $d A j $.  $d B j $.  $d S j $.  $d X j $.  $d Y j $.
+    elbasov.o $e |- Rel dom O $.
+    relelbasov.r $e |- Rel O $.
+    elbasov.s $e |- S = ( X O Y ) $.
+    elbasov.b $e |- B = ( Base ` S ) $.
+    $( Utility theorem: reverse closure for any structure defined as a
+       two-argument function.  (Contributed by Mario Carneiro, 3-Oct-2015.) $)
+    relelbasov $p |- ( A e. B -> ( X e. _V /\ Y e. _V ) ) $=
+      ( vj wcel cv cvv wa basm cop cxp wrel eleqtrdi cdm wss df-rel mpbi cfv co
+      simpr df-ov relelfvdm sylancr sselid opelxp sylib exlimddv ) ABLZKMZCLZEN
+      LFNLOZKABKCJPUOUQOZEFQZNNRZLURUSDUAZVAUTVBSVBVAUBGVBUCUDUSDSUPUTDUEZLUTVB
+      LHUSUPEFDUFZVCUSUPCVDUOUQUGITEFDUHTUPUTDUIUJUKEFNNULUMUN $.
+  $}
+
+  ${
     $d x y $.
     $( The structure restriction is a proper operator, so it can be used with
        ~ ovprc1 .  (Contributed by Stefan O'Rear, 29-Nov-2014.) $)
