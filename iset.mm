@@ -163245,6 +163245,18 @@ $)
         WHYMSXCXDCYNSSXEWRYOSXHXDXFUUMAXSSTZXSYJTXSYRTAXQWKTUUNUURXIUUMXQXRWKSX
         JWHXSSYBYIXKXSYJYQXLXMXNXO $.
     $}
+
+    psrelbas.x $e |- ( ph -> X e. B ) $.
+    $( An element of the set of power series is a function on the coefficients.
+       (Contributed by Mario Carneiro, 28-Dec-2014.) $)
+    psrelbas $p |- ( ph -> X : D --> K ) $=
+      ( cmap wcel cvv cmps wfn cbs co wf wa reldmpsr cxp wrel fnpsr fnrel ax-mp
+      relelbasov syl simpld simprd psrbasg eleqtrd basfn funfvex funfni sylancr
+      cfv eqeltrid cv ccnv cn cfn cn0 fnmap nn0ex fnovex mp3an12i rabexd elmapd
+      cima mpbid ) AIHCOUAZPCHIUBAIBVONABCDEFGHQQJKLMAGQPZDQPZAIBPVPVQUCNIBERGD
+      UDRQQUEZSRUFUGVRRUHUIJMUJUKZULZAVPVQVSUMZUNUOAHCIQQAHDTUTZQKATQSVQWBQPZUP
+      WAWCQDTDTUQURUSVAAFVBVCVDVMVEPFVFGOUAZCQLOVRSVFQPAVPWDQPVGVHVTVFGQQOVIVJV
+      KVLVN $.
   $}
 
 
