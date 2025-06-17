@@ -163259,6 +163259,17 @@ $)
       KVLVN $.
   $}
 
+  ${
+    $d f I $.
+    psrelbasfun.s $e |- S = ( I mPwSer R ) $.
+    psrelbasfun.b $e |- B = ( Base ` S ) $.
+    $( An element of the set of power series is a function.  (Contributed by
+       AV, 17-Jul-2019.) $)
+    psrelbasfun $p |- ( X e. B -> Fun X ) $=
+      ( vf wcel cv ccnv cn cima cfn cn0 cmap co crab cbs eqid id psrelbas ffund
+      cfv ) EAIZHJKLMNIHODPQRZBSUDZEUEAUFBCHDUGEFUGTUFTGUEUAUBUC $.
+  $}
+
 
 $(
 ###############################################################################
