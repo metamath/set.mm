@@ -60,7 +60,7 @@ proposed  cbvopab1  cbvopab1v
 proposed  syl       imtri       (analogous to *bitr*, sstri, etc.)
                                 there is less agreement on renaming syl
                                 than others here
-proposed  syld      imtrd
+underway  syld      imtrd
 proposed  syldc     imtrdcom
 proposed  syldd     imtrdd
 proposed  sylbi     biimtri
