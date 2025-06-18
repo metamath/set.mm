@@ -129,6 +129,10 @@ jobs:
       - run: cp iset.mm iset-wrapped.mm
       - run: scripts/rewrap iset-wrapped.mm
       - run: echo 'Checking for iset.mm rewrapping:' && diff -U 0 iset.mm iset-wrapped.mm
+      - run: echo 'Checking for set.mm theorem list'
+      - run: scripts/check-theorem-list set.mm
+      - run: echo 'Checking for iset.mm theorem list'
+      - run: scripts/check-theorem-list iset.mm
       # The following checks are arbitrarily included in the metamath job.
       - run: echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" set.mm
       - run: echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" iset.mm
@@ -146,8 +150,7 @@ jobs:
       # Install LaTeX so we can test generated LaTeX. We use extended packages:
       # texlive-extra-utils provides pdflatex
       # texlive-fonts-extra provides phonetic.sty
-      # texlive-science provides accents.sty
-      - run: sudo apt-get install texlive-latex-extra texlive-extra-utils texlive-fonts-extra texlive-science
+      - run: sudo apt-get install texlive-latex-extra texlive-extra-utils texlive-fonts-extra
       # Here's an eXample of how to install "extra" LaTeX packages. See:
       # https://tex.stackexchange.com/questions/38978/how-can-i-manually-install-a-latex-package-debian-ubuntu-linux/39259#39259
       # - run: mkdir -p "$HOME/texmf"
@@ -186,7 +189,17 @@ jobs:
       - run: python3 scripts/latex_collector.py set.mm list-set.tex
       - run: pdflatex -halt-on-error list-set.tex 2>&1 | tee ,latex-output
       # Complain if the pdflatex output says something is invalid
-      - run: "! grep ' invalid ' ,latex-output"
+      - run: "! grep -e 'no output PDF file produced!' -e 'invalid' -e 'error' -e 'Error' -e 'Undefined' ,latex-output"
+      # Check generated LaTeX, to ensure the TeX definitions are okay. iset.mm:
+      - run: python3 scripts/latex_collector.py iset.mm list-iset.tex
+      - run: pdflatex -halt-on-error list-iset.tex 2>&1 | tee ,latex-output
+      # Complain if the pdflatex output says something is invalid
+      - run: "! grep -e 'no output PDF file produced!' -e 'invalid' -e 'error' -e 'Error' -e 'Undefined' ,latex-output"
+      # Check generated LaTeX, to ensure the TeX definitions are okay. nf.mm:
+      - run: python3 scripts/latex_collector.py nf.mm list-nf.tex
+      - run: pdflatex -halt-on-error list-nf.tex 2>&1 | tee ,latex-output
+      # Complain if the pdflatex output says something is invalid
+      - run: "! grep -e 'no output PDF file produced!' -e 'invalid' -e 'error' -e 'Error' -e 'Undefined' ,latex-output"
 
   ###########################################################
   smetamath-rs:

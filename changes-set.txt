@@ -14,6 +14,15 @@ The ones WITH "Notes" may have to be processed manually.
 
 PROPOSED:
 Date      Old       New         Notes
+proposed  dfss      sseqinr
+proposed  dfss2     sseqin
+proposed  dfss3f    dfss2f
+proposed  dfss6     dfss3
+proposed  dfss3     dfss2
+proposed  fidmfisupp fdmfifsupp merge duplicate theorems
+proposed  grplmulf1o grpladdf1o
+proposed  df-rgmod  df-rlm
+proposed  crglmod   crlm
 proposed  nfiundg   nfiund
 proposed  bnj1441g  bnj1441
 proposed  cbviinvg  cbviinv
@@ -70,24 +79,395 @@ proposed  syl5com   imtridcom
 proposed  syl5      imtrid      alternate proposal: sylid
 proposed  syl56     imtridi
 proposed  syl5d     imtridd
-proposed  syl5bir   biimtrrid
-proposed  syl5ib    imbitrid
 proposed  syl5ibcom imbitridcom
-proposed  syl5ibr   imbitrrid
 proposed  syl5ibrcom imbitrridcom
 proposed  syl6      imtrdi      alternate proposal: syldi
 proposed  syl6com   imtrdicom
 proposed  syl6d     imtrdid
-proposed  syl6ib    imbitrdi
-proposed  syl6ibr   imbitrrdi
-proposed  syl6bi    biimtrdi
-proposed  syl6bir   biimtrrdi
 (Please send any comments on these proposals to the mailing list or
 make a github issue.)
 
 DONE:
 Date      Old       New         Notes
-13-Jan-25 0fin      0fi         Moved to before snfi
+18-Jun-25 0fin      0fi         Moved to before snfi
+ 8-Jun-25 deg1mul   [same]      Moved from MKU's mathbox to main set.mm
+ 7-Jun-25 ply1ascl1 [same]      Moved from TA's mathbox to main set
+ 4-Jun-25 rhmpreimaidl [same]   Moved from TA's mathbox to main set.mm
+ 4-Jun-25 kerlidl   [same]      Moved from TA's mathbox to main set.mm
+ 3-Jun-25 inn0f     [same]      Moved from GS's mathbox to main set.mm
+ 3-Jun-25 inn0      [same]      Moved from GS's mathbox to main set.mm
+ 3-Jun-25 qusmul2   qusmul2idl  Moved from TA's mathbox to main set.mm
+ 1-Jun-25 rhmqusnsg [same]      Moved from TA's mathbox to main set.mm
+ 1-Jun-25 lidlnsg   [same]      Moved from TA's mathbox to main set.mm
+ 1-Jun-25 qusmul    qusmulcrng  Moved from TA's mathbox to main set.mm
+ 1-Jun-25 ghmqusnsglem2 [same]  Moved from TA's mathbox to main set.mm
+ 1-Jun-25 ghmqusnsglem1 [same]  Moved from TA's mathbox to main set.mm
+ 1-Jun-25 ghmqusnsg [same]      Moved from TA's mathbox to main set.mm
+30-May-25 rhmply1mon [same]     Moved from SN's mathbox to main set.mm
+30-May-25 rhmply1vsca [same]    Moved from SN's mathbox to main set.mm
+30-May-25 rhmply1vr1 [same]     Moved from SN's mathbox to main set.mm
+30-May-25 rhmply1   [same]      Moved from SN's mathbox to main set.mm
+30-May-25 mhmcoply1 [same]      Moved from SN's mathbox to main set.mm
+30-May-25 ply1vscl  [same]      Moved from SN's mathbox to main set.mm
+30-May-25 rhmmpl    [same]      Moved from SN's mathbox to main set.mm
+30-May-25 rhmcomulmpl [same]    Moved from SN's mathbox to main set.mm
+30-May-25 mhmcoaddmpl [same]    Moved from SN's mathbox to main set.mm
+30-May-25 mhmcompl  [same]      Moved from SN's mathbox to main set.mm
+30-May-25 mpllmodd  [same]      Moved from SN's mathbox to main set.mm
+30-May-25 mplringd  [same]      Moved from SN's mathbox to main set.mm
+30-May-25 syl6bir   biimtrrdi
+27-May-25 coexd     [same]      Moved from SN's mathbox to main set.mm
+27-May-25 fzoopth   [same]      Moved from AV's mathbox to main set.mm
+20-May-25 syl6bi    biimtrdi
+20-May-25 ply1bas   [same]      Removed unneeded hypothesis
+20-May-25 mhpmulcl  [same]      Removed unneeded hypothesis
+20-May-25 mhppwdeg  [same]      Removed unneeded hypothesis
+20-May-25 mhpaddcl  [same]      Removed unneeded hypothesis
+20-May-25 mhpinvcl  [same]      Removed unneeded hypothesis
+20-May-25 mhpvscacl [same]      Removed unneeded hypothesis
+19-May-25 dfss2f    dfssf
+19-May-25 dfss2     [same]      Use df-ss statement
+19-May-25 df-ss     [same]      Use dfss2 statement
+18-May-25 rhmmpllem2 rhmpsrlem2 Moved from SN's mathbox to main set.mm
+18-May-25 rhmmpllem1 rhmpsrlem1 Moved from SN's mathbox to main set.mm
+18-May-25 asclply1subcl [same]  Moved from TA's mathbox to main set.mm
+18-May-25 evls1maprhm [same]    Moved from TA's mathbox to main set.mm
+18-May-25 evls1fvcl [same]      Moved from TA's mathbox to main set.mm
+18-May-25 evls1maplmhm [same]   Moved from TA's mathbox to main set.mm
+18-May-25 evls1maprnss [same]   Moved from TA's mathbox to main set.mm
+18-May-25 fvdifsupp [same]      Moved from TA's mathbox to main set.mm
+18-May-25 evls1fpws [same]      Moved from TA's mathbox to main set.mm
+18-May-25 ressply1evl [same]    Moved from TA's mathbox to main set.mm
+18-May-25 evls1addd [same]      Moved from TA's mathbox to main set.mm
+18-May-25 evls1muld [same]      Moved from TA's mathbox to main set.mm
+18-May-25 evls1vsca [same]      Moved from TA's mathbox to main set.mm
+18-May-25 evls1scafv [same]     Moved from TA's mathbox to main set.mm
+18-May-25 evls1expd [same]      Moved from TA's mathbox to main set.mm
+18-May-25 evls1varpwval [same]  Moved from TA's mathbox to main set.mm
+17-May-25 reximddv3 [same]      Moved from GS's mathbox to main set.mm
+15-May-25 rabbieq   [same]      Moved from PM's mathbox to main set.mm
+15-May-25 dmresss   [same]      Moved from GS's mathbox to main set.mm
+11-May-25 rabdif    [same]      Moved from SN's mathbox to main set.mm
+10-May-25 ghmquskerlem1 [same]  Moved from TA's mathbox to main set.mm
+10-May-25 ghmquskerlem2 [same]  Moved from TA's mathbox to main set.mm
+10-May-25 ghmquskerlem3 [same]  Moved from TA's mathbox to main set.mm
+10-May-25 gicqusker  [same]     Moved from TA's mathbox to main set.mm
+10-May-25 ghmquskerco  [same]   Moved from TA's mathbox to main set.mm
+10-May-25 ecref      [same]     Moved from TA's mathbox to main set.mm
+10-May-25 eqg0el    [same]      Moved from TA's mathbox to main set.mm
+ 6-May-25 brif1     [same]      Moved from SN's mathbox to main set.mm
+ 6-May-25 bianbi    [same]      Moved from PM's mathbox to main set.mm
+ 6-May-25 andiff    anbiim      Moved from MKU's mathbox to main set.mm
+ 6-May-25 elrnmpt1d [same]      Moved from GS's mathbox to main set.mm
+ 6-May-25 imadisjlnd [same]     Moved from SP's mathbox to main set.mm
+ 6-May-25 fimassd   [same]      Moved from GS's mathbox to main set.mm
+ 6-May-25 fvmptd4   [same]      Moved from SN's mathbox to main set.mm
+ 6-May-25 imaexd    [same]      Moved from TA's mathbox to main set.mm
+ 5-May-25 0qs       [same]      Moved from PM's mathbox to main set.mm
+ 5-May-25 qseq1d    [same]      Moved from PM's mathbox to main set.mm
+ 5-May-25 idomdomd  [same]      Moved from TA's mathbox to main set.mm
+ 5-May-25 idomringd [same]      Moved from TA's mathbox to main set.mm
+ 4-May-25 crngcomd  [same]      Moved from SN's mathbox to main set.mm
+ 4-May-25 crng12d   [same]      Moved from SN's mathbox to main set.mm
+ 4-May-25 isdomn3   [same]      Moved from SO's mathbox to main set.mm
+ 2-May-25 bj-sbnf   sbnf        Moved from BJ's mathbox to main set.mm
+ 1-May-25 rnexd     [same]      Moved from TA's mathbox to main set.mm
+ 1-May-25 imaexd    [same]      Moved from TA's mathbox to main set.mm
+30-Apr-25 idomrootle [same]     Moved from SO's mathbox to main set.mm
+30-Apr-25 ply1ascl0 [same]      Moved from TA's mathbox to main set.mm
+30-Apr-25 hashf1dmcdm [same]    Moved from BT's mathbox to main set.mm
+25-Apr-25 mon1pid   [same]      Moved from SO's mathbox to main set.mm
+27-Apr-25 df-cnfld  [same]      Use maps-to notation
+26-Apr-25 fsuppfund [same]      Moved from SN's mathbox to main set.mm
+26-Apr-25 fsuppss   [same]      Moved from SN's mathbox to main set.mm
+26-Apr-25 fsuppsssuppgd [same]  Moved from SN's mathbox to main set.mm
+25-Apr-25 logi      [same]      Moved from SF's mathbox to main set.mm
+25-Apr-25 rspceb2dv [same]      Moved from ZW's mathbox to main set.mm
+25-Apr-25 efcld     [same]      Moved from TA's mathbox to main set.mm
+25-Apr-25 ply1chr   [same]      Moved from TA's mathbox to main set.mm
+25-Apr-25 ply1fermltlchr [same] Moved from TA's mathbox to main set.mm
+25-Apr-25 asclmulg  [same]      Moved from TA's mathbox to main set.mm
+25-Apr-25 ply1scleq [same]      Moved from TA's mathbox to main set.mm
+25-Apr-25 freshmansdream [same] Moved from TA's mathbox to main set.mm
+25-Apr-25 dvdschrmulg [same]    Moved from TA's mathbox to main set.mm
+25-Apr-25 prmdvdsbc [same]      Moved from TA's mathbox to main set.mm
+25-Apr-25 dvdszzq   [same]      Moved from TA's mathbox to main set.mm
+25-Apr-25 fermltlchr   [same]   Moved from TA's mathbox to main set.mm
+25-Apr-25 ressmulgnn0  [same]   Moved from TA's mathbox to main set.mm
+25-Apr-25 ressmulgnn   [same]   Moved from TA's mathbox to main set.mm
+18-Apr-25 mulnzcnopr mulnzcnf   Align with modern suffix conventions.
+13-Apr-25 ovmul     ovmpot      Generalized for all operations
+12-Apr-25 ---       ---         Moved categories of rings theorems 
+                                from AV's mathbox to main set.mm
+12-Apr-25 nrhmzr    [same]      Moved from AV's mathbox to main set.mm
+12-Apr-25 inclfusubc [same]     Moved from AV's mathbox to main set.mm
+12-Apr-25 idfusubc  [same]      Moved from AV's mathbox to main set.mm 
+12-Apr-25 idfusubc0 [same]      Moved from AV's mathbox to main set.mm
+11-Apr-25 elabrexg  [same]      Moved from GS's mathbox to main set.mm
+10-Apr-25 dvcobr    [same]      revised - remove unneeded hypotheses
+10-Apr-25 dvmulbr   [same]      revised - remove unneeded hypotheses
+10-Apr-25 dvaddbr   [same]      revised - remove unneeded hypotheses
+ 6-Apr-25 mpomulcn  [same]      Moved from GG's mathbox to main set.mm
+ 6-Apr-25 ovmul     [same]      Moved from GG's mathbox to main set.mm
+ 6-Apr-25 mpomulf   [same]      Moved from GG's mathbox to main set.mm
+ 5-Apr-25 syl6ibr   imbitrrdi
+ 2-Apr-25 dffo3     [same]      Moved from GS's mathbox to main set.mm
+ 2-Apr-25 foelrnf   [same]      Moved from GS's mathbox to main set.mm
+ 2-Apr-25 fompt     [same]      Moved from GS's mathbox to main set.mm
+ 2-Apr-25 ringlzd   [same]      Moved from SN's mathbox to main set.mm
+ 2-Apr-25 ringrzd   [same]      Moved from SN's mathbox to main set.mm
+ 2-Apr-25 lmodvscld [same]      Moved from SN's mathbox to main set.mm
+ 2-Apr-25 lvecgrpd  [same]      Moved from SN's mathbox to main set.mm
+ 2-Apr-25 ply1ass23l [same]     Moved from AV's mathbox to main set.mm
+ 1-Apr-25 cxpgt0d   [same]      Moved from SN's mathbox to main set.mm
+30-Mar-25 df-rnghom df-rhm
+30-Mar-25 df-rngiso df-rim
+30-Mar-25 isrngisom isrngim
+30-Mar-25 isrngim   isrngim2
+30-Mar-25 df-rngisom df-rngim
+30-Mar-25 crngs     crngim
+30-Mar-25 df-rnghomo df-rnghm
+30-Mar-25 crngh     crnghm
+30-Mar-25 crngiso   crngoiso    in JM's mathbox
+30-Mar-25 crnghom   crngohom    in JM's mathbox
+28-Mar-25 ---       ---         Moved ideals of non-unital subring theorems 
+                                from AV's mathbox to main set.mm
+28-Mar-25 ---       ---         Moved non-unital subring def. and theorems 
+                                from AV's mathbox to main set.mm
+28-Mar-25 mgmpropd  [same]      Moved from AV's mathbox to main set.mm
+28-Mar-25 ismgmd    [same]      Moved from AV's mathbox to main set.mm
+28-Mar-25 ismhm0    [same]      Moved from AV's mathbox to main set.mm 
+28-Mar-25 mhmismgmhm [same]     Moved from AV's mathbox to main set.mm
+28-Mar-25 rhmisrnghm [same]     Moved from AV's mathbox to main set.mm
+28-Mar-25 rhmfn     [same]      Moved from AV's mathbox to main set.mm 
+28-Mar-25 rhmval    [same]      Moved from AV's mathbox to main set.mm
+28-Mar-25 0ringdif  [same]      Moved from AV's mathbox to main set.mm 
+28-Mar-25 0ringbas  [same]      Moved from AV's mathbox to main set.mm 
+28-Mar-25 0ring1eq0 [same]      Moved from AV's mathbox to main set.mm 
+28-Mar-25 c0rhm     [same]      Moved from AV's mathbox to main set.mm 
+28-Mar-25 c0rnghm   [same]      Moved from AV's mathbox to main set.mm
+28-Mar-25 zrrnghm   [same]      Moved from AV's mathbox to main set.mm
+28-Mar-25 ---       ---         Moved non-unital ring hom def. and theorems 
+                                from AV's mathbox to main set.mm
+28-Mar-25 ---       ---         Moved non-unital ring def. and theorems 
+                                from AV's mathbox to main set.mm
+28-Mar-25 ---       ---         Moved magma hom def. and theorems 
+                                from AV's mathbox to main set.mm
+28-Mar-25 prdsmgp   [same]      Moved from AV's mathbox to main set.mm
+28-Mar-25 ringrng   [same]      Moved from AV's mathbox to main set.mm
+28-Mar-25 ringssrng [same]      Moved from AV's mathbox to main set.mm
+28-Mar-25 isringrng [same]      Moved from AV's mathbox to main set.mm 
+28-Mar-25 opprrng   [same]      Moved from AV's mathbox to main set.mm
+28-Mar-25 opprrngb  [same]      Moved from AV's mathbox to main set.mm 
+28-Mar-25 zringrng  [same]      Moved from AV's mathbox to main set.mm
+25-Mar-25 syl6ib    imbitrdi
+24-Mar-25 rngurd    ringurd     Moved from TA's mathbox to main set.mm
+24-Mar-25 mptima2   mptimass    Moved from GS's mathbox to main set.mm
+24-Mar-25 rspcedvdw [same]      Moved from SN's mathbox to main set.mm
+24-Mar-25 opelxpii  [same]      Moved from SN's mathbox to main set.mm
+22-Mar-25 funimassd [same]      Moved from GS's mathbox to main set.mm
+22-Mar-25 flddrngd  [same]      Moved from SN's mathbox to main set.mm
+22-Mar-25 isdomn5   [same]      Moved from SN's mathbox to main set.mm
+22-Mar-25 isdomn4   [same]      Moved from SN's mathbox to main set.mm
+22-Mar-25 rgmoddim  rlmdim
+21-Mar-25 sraring   [same]      Moved from TA's mathbox to main set.mm
+17-Mar-25 fmptssfisupp [same]   Moved from TA's mathbox to main set.mm
+16-Mar-25 eqfnun    [same]      Moved from JM's mathbox to main set.mm
+16-Mar-25 fnunres2  [same]      Moved from TA's mathbox to main set.mm
+16-Mar-25 fnunres1  [same]      Moved from TA's mathbox to main set.mm
+16-Mar-25 funresdm1 relresdm1   Moved from TA's mathbox to main set.mm
+16-Mar-25 reldisjun [same]      Moved from TA's mathbox to main set.mm
+16-Mar-25 undifr    [same]      Moved from TA's mathbox to main set.mm
+13-Mar-25 drnginvrld [same]     Moved from SN's mathbox to main set.mm
+13-Mar-25 drnginvrrd [same]     Moved from SN's mathbox to main set.mm
+12-Mar-25 rabeqsnd  [same]      Moved from TA's mathbox to main set.mm
+12-Mar-25 sbievg    cbvsbvf
+10-Mar-25 brrici    [same]      Moved from SN's mathbox to main set.mm
+ 9-Mar-25 fovcld    [same]      Moved from TA's mathbox to main set.mm
+ 9-Mar-25 sn-grprinvd grprinvd  Moved from SN's mathbox to main set.mm
+ 9-Mar-25 grprinvd  grpinva
+ 9-Mar-25 2rspcedvdw [same]     Moved from SN's mathbox to main set.mm
+ 9-Mar-25 elmapdd   [same]      Moved from SN's mathbox to main set.mm
+ 9-Mar-25 grpassd   [same]      Moved from SN's mathbox to main set.mm
+ 9-Mar-25 grplidd   [same]      Moved from SN's mathbox to main set.mm
+ 9-Mar-25 sn-grpridd grpridd    Moved from SN's mathbox to main set.mm
+ 9-Mar-25 grpridd   grprida
+ 9-Mar-25 grplinvd  [same]      Moved from SN's mathbox to main set.mm
+ 9-Mar-25 ringassd  [same]      Moved from SN's mathbox to main set.mm
+ 9-Mar-25 ringlidmd [same]      Moved from SN's mathbox to main set.mm
+ 9-Mar-25 ringridmd [same]      Moved from SN's mathbox to main set.mm
+ 7-Mar-25 gsummulc2 [same]      revised - unused hypothesis
+ 7-Mar-25 gsummulc1 [same]      revised - unused hypothesis
+ 5-Mar-25 nabbi     nabbib
+ 2-Mar-25 isassad   [same]      revised - scalars may be noncommutative
+ 2-Mar-25 assasca   [same]      revised - scalars may be noncommutative
+ 2-Mar-25 isassa    [same]      revised - scalars may be noncommutative
+ 2-Mar-25 df-assa   [same]      revised - scalars may be noncommutative
+ 2-Mar-25 sbcie2s   [same]      revised - fix substitution hypothesis
+ 1-Mar-25 syl5ibr   imbitrrid
+28-Feb-25 abbi1dv   eqabcdv
+28-Feb-25 abbi2dv   eqabdv
+28-Feb-25 abbi2i    eqabi
+27-Feb-25 elnelall  pm2.24nel
+25-Feb-25 eqimssd   [same]      Moved from SN's mathbox to main set.mm
+25-Feb-25 eqimss2d  eqimsscd    Moved from SN's mathbox to main set.mm
+25-Feb-25 hashfundm [same]      Moved from BT's mathbox to main set.mm
+25-Feb-25 hashf1dmrn [same]     Moved from BT's mathbox to main set.mm
+25-Feb-25 ressbasssg [same]     Moved from SN's mathbox to main set.mm
+25-Feb-25 ressbasss2 [same]     Moved from SN's mathbox to main set.mm
+25-Feb-25 resrhm2b  [same]      Moved from SN's mathbox to main set.mm
+25-Feb-25 sdrgrcl   [same]      Moved from SN's mathbox to main set.mm
+25-Feb-25 sdrgdrng  [same]      Moved from SN's mathbox to main set.mm
+25-Feb-25 sdrgsubrg [same]      Moved from SN's mathbox to main set.mm
+25-Feb-25 sdrgbas   [same]      Moved from SN's mathbox to main set.mm
+25-Feb-25 sdrgunit  [same]      Moved from SN's mathbox to main set.mm
+25-Feb-25 imadrhmcl [same]      Moved from SN's mathbox to main set.mm
+25-Feb-25 lmhmlvec  [same]      Moved from SN's mathbox to main set.mm
+24-Feb-25 naddid1   naddrid
+24-Feb-25 naddid2   naddlid
+24-Feb-25 mulid1    mulrid
+24-Feb-25 mulid2    mullid
+24-Feb-25 mulid1i   mulridi
+24-Feb-25 mulid2i   mullidi
+24-Feb-25 mulid1d   mulridd
+24-Feb-25 mulid2d   mullidd
+24-Feb-25 addid1    addrid
+24-Feb-25 addid2    addlid
+24-Feb-25 addid1i   addridi
+24-Feb-25 addid2i   addlidi
+24-Feb-25 addid1d   addridd
+24-Feb-25 addid2d   addlidd
+24-Feb-25 xaddid1   xaddrid
+24-Feb-25 xaddid2   xaddlid
+24-Feb-25 xaddid1d  xaddridd
+24-Feb-25 xmulid1   xmulrid
+24-Feb-25 xmulid2   xmullid
+24-Feb-25 mulrid    mulridx
+24-Feb-25 dchrmulid2 dchrmullid
+24-Feb-25 hvaddid2  hvaddlid
+24-Feb-25 hvaddid2i hvaddlidi
+24-Feb-25 hoaddid1i hoaddridi
+24-Feb-25 hoaddid1  hoaddrid
+24-Feb-25 homulid2  homullid
+24-Feb-25 readdid1addid2d readdridaddlidd
+24-Feb-25 reneg0addid2 reneg0addlid
+24-Feb-25 resubidaddid1lem resubidaddlidlem
+24-Feb-25 resubidaddid1 resubidaddlid
+24-Feb-25 readdid2  readdlid
+24-Feb-25 sn-addid2 sn-addlid
+24-Feb-25 readdid1  readdrid
+24-Feb-25 sn-addid1 sn-addrid
+24-Feb-25 remulid2  remullid
+24-Feb-25 sn-mulid2 sn-mullid
+24-Feb-25 xaddid2d  xaddlidd
+24-Feb-25 abbi1     abbi        reverse direction of abbib
+23-Feb-25 abbi      abbib       flip sides of bi-conditional
+23-Feb-25 addsid1   addsrid
+23-Feb-25 addsid2   addslid
+23-Feb-25 bj-rabbida2 rabbida4  moved from BJ's mathbox to main set.mm
+23-Feb-25 bj-rabeqd rabeqd      moved from BJ's mathbox to main set.mm
+23-Feb-25 bj-rabeqbida rabeqbida moved from BJ's mathbox to main set.mm
+22-Feb-25 rdivmuldivd [same]    Moved from TA's mathbox to main set.mm
+22-Feb-25 dvrdir    [same]      Moved from TA's mathbox to main set.mm
+20-Feb-25 lmodgrpd  ---         Moved from SN's mathbox to main set.mm
+20-Feb-25 lveclmodd ---         Moved from SN's mathbox to main set.mm
+20-Feb-25 isfsuppd  ---         Moved from SN's mathbox to main set.mm
+20-Feb-25 mnfled    ---         Moved from GS's mathbox to main set.mm
+20-Feb-25 fidmfisupp ---        Moved from GS's mathbox to main set.mm
+19-Feb-25 isdrngrd  [same]      removed extra hypothesis
+19-Feb-25 isdrngd   [same]      removed extra hypothesis
+15-Feb-25 abeq2f    eqabf
+15-Feb-25 rabeq2i   reqabi
+15-Feb-25 abeq1i    eqabrci
+15-Feb-25 abeq2i    eqabri
+15-Feb-25 abeq2d    eqabrd
+15-Feb-25 abeq2w    eqabbw
+15-Feb-25 abeq1     eqabbc      Commuted form of eqabb
+15-Feb-25 abeq2     eqabb       Basic closed form
+14-Feb-25 ---       ---         Moved surreal negation theorems
+                                from SF's mathbox to main set.mm
+14-Feb-25 grpinvcld ---         Moved from SN's mathbox to main set.mm
+14-Feb-25 fnfvelrnd ---         Moved from GS's mathbox to main set.mm
+12-Feb-25 rngo2times ringo2times
+12-Feb-25 rngnegr   ringnegr
+12-Feb-25 rngsubdir ringsubdir
+12-Feb-25 df-rng0   df-rng
+10-Feb-25 ---       ---         Moved surreal addition theorems
+                                from SF's mathbox to main set.mm
+10-Feb-25 onunel    ---         Moved from SF's mathbox to main set.mm
+ 9-Feb-25 ---       ---         Moved natural ordinal addition theorems
+                                from SF's mathbox to main set.mm
+ 9-Feb-25 imaeqexov ---         Moved from SF's mathbox to main set.mm
+ 9-Feb-25 imaeqalov ---         Moved from SF's mathbox to main set.mm
+ 9-Feb-25 imaeqsexv ---         Moved from SF's mathbox to main set.mm
+ 9-Feb-25 imaeqsalv ---         Moved from SF's mathbox to main set.mm
+ 7-Feb-25 eluzaddi  [same]      removed extra hypothesis
+ 7-Feb-25 ---       ---         Moved surreal induction/recursion theorems
+                                from SF's mathbox to main set.mm
+ 7-Feb-25 syl5ib    imbitrid
+ 3-Feb-25 ---       ---         Moved cross product induction theorems
+                                from SF's mathbox to main set.mm
+ 3-Feb-25 el2xpss   ---         Moved from SF's mathbox to main set.mm
+ 3-Feb-25 otthne    ---         Moved from SF's mathbox to main set.mm
+ 3-Feb-25 otelxp    ---         Moved from SF's mathbox to main set.mm
+ 3-Feb-25 ralxp3es  ---         Moved from SF's mathbox to main set.mm
+ 3-Feb-25 ralxp3f   ---         Moved from SF's mathbox to main set.mm
+ 3-Feb-25 ralxp3    ---         Moved from SF's mathbox to main set.mm
+ 3-Feb-25 sbcoteq1a ---         Moved from SF's mathbox to main set.mm
+ 3-Feb-25 ralxpes   ---         Moved from SF's mathbox to main set.mm
+ 1-Feb-25 sucelon   onsucb      biconditional form of onsuc
+ 1-Feb-25 suceloni  onsuc       closed form of onsuci
+ 1-Feb-25 sn-0subg  0subgALT    Moved from SN's mathbox to main set.mm
+ 1-Feb-25 finodsubmsubg [same]  Moved from SN's mathbox to main set.mm
+ 1-Feb-25 odm1inv   [same]      Moved from SN's mathbox to main set.mm
+ 1-Feb-25 sucelon   onsucb      biconditional form of onsuc
+ 1-Feb-25 suceloni  onsuc       closed form of onsuci
+31-Jan-25 ---       ---         Moved surreal cofinality theorems
+                                from SF's mathbox to main set.mm
+30-Jan-25 syl5bir   biimtrrid
+26-Jan-25 an2anr    [same]      Moved from PM's mathbox to main set.mm
+26-Jan-25 ismhmd    [same]      Moved from SN's mathbox to main set.mm
+26-Jan-25 ringcld   [same]      Moved from SN's mathbox to main set.mm
+26-Jan-25 ablcmnd   [same]      Moved from SN's mathbox to main set.mm
+26-Jan-25 ringabld  [same]      Moved from SN's mathbox to main set.mm
+26-Jan-25 ringcmnd  [same]      Moved from SN's mathbox to main set.mm
+26-Jan-25 pwsexpg   [same]      Moved from SN's mathbox to main set.mm
+26-Jan-25 drnginvrcld [same]    Moved from SN's mathbox to main set.mm
+26-Jan-25 pwspjmhmmgpd [same]   Moved from SN's mathbox to main set.mm
+24-Jan-25 rextru    [same]      Moved from ZW's mathbox to main set.mm
+19-Jan-25 ---       ---         Moved surreal cut and option theorems
+                                from SF's mathbox to main set.mm
+19-Jan-25 imaindm   [same]      Moved from SF's mathbox to main set.mm
+19-Jan-25 onsselex  [same]      Moved from SF's mathbox to main set.mm
+19-Jan-25 ---       ---         Moved surreal zero and one theorems
+                                from SF's mathbox to main set.mm
+19-Jan-25 fnssintima [same]     Moved from SF's mathbox to main set.mm
+18-Jan-25 elintabg  [same]      Moved from RP's mathbox to main set.mm
+17-Jan-25 ---       ---         Moved Conway cut theorems
+                                from SF's mathbox to main set.mm
+17-Jan-25 rexrab    [same]      Moved from SF's mathbox to main set.mm
+17-Jan-25 riotarab  [same]      Moved from SF's mathbox to main set.mm
+16-Jan-25 ---       ---         Moved surreal ordering and birthday theorems
+                                from SF's mathbox to main set.mm
+16-Jan-25 ---       ---         Moved surreal full-eta theorems
+                                from SF's mathbox to main set.mm
+16-Jan-25 snres0    [same]      Moved from SF's mathbox to main set.mm
+15-Jan-25 eqfunressuc [same]    Moved from SF's mathbox to main set.mm
+15-Jan-25 eqfunresadj [same]    Moved from SF's mathbox to main set.mm
+15-Jan-25 sotr3     [same]      Moved from SF's mathbox to main set.mm
+15-Jan-25 dford5    [same]      Moved from SF's mathbox to main set.mm
+13-Jan-25 elunnel2  [same]      moved from GS's mathbox to main set.mm
+12-Jan-25 rimrhm    [same]      revised - eliminated unnecessary hypotheses
+12-Jan-25 isrim     [same]      revised - eliminated unnecessary antecedent
+12-Jan-25 isrim0    [same]      revised - eliminated unnecessary antecedent
+12-Jan-25 elrnust   ---         obsolete - use elfvunirn instead
+12-Jan-25 elunirn2  ---         obsolete - use elfvunirn instead
+12-Jan-25 ---       ---         Moved surreal birthday and density theorems
+                                from SF's mathbox to main set.mm
+12-Jan-25 sotrine   [same]      Moved from SF's mathbox to main set.mm
+12-Jan-25 funeldmb  [same]      Moved from SF's mathbox to main set.mm
+11-Jan-25 fldcrng   fldcrngo
+11-Jan-25 recrng    resrng
 11-Jan-25 ---       ---         Moved surreal ordering theorems from
                                 SF's mathbox to main set.mm
 11-Jan-25 ---       ---         Moved ordinal sequence theorems from
@@ -96,6 +476,9 @@ Date      Old       New         Notes
 11-Jan-25 3orel13   [same]      Moved from SF's mathbox to main set.mm
 11-Jan-25 3pm3.2ni  [same]      Moved from SF's mathbox to main set.mm
 10-Jan-25 syl5bi    biimtrid
+10-Jan-25 fldcrngd  [same]      Moved from SN's mathbox to main set.mm
+10-Jan-25 drngringd [same]      Moved from SN's mathbox to main set.mm
+10-Jan-25 drnggrpd  [same]      Moved from SN's mathbox to main set.mm
  9-Jan-25 fvresval  [same]      Moved from SF's mathbox to main set.mm
  9-Jan-25 brtp      [same]      Moved from SF's mathbox to main set.mm
  9-Jan-25 ---       ---         Moved initial surreal definitions from
@@ -109,6 +492,7 @@ Date      Old       New         Notes
  7-Jan-25 ringi     ringdilem
  5-Jan-25 nfrexd    nfrexdw     consistent with nfraldw
  5-Jan-25 nfrex     nfrexw      consistent with nfralw
+ 5-Jan-25 rabss3d   [same]      moved from TA's mathbox to main set.mm
  4-Jan-25 smorndom  smocdmdom
  4-Jan-25 ralimda   ---         obsolete - use ralimdaa instead
  3-Jan-25 srgi      srgdilem
@@ -149,7 +533,7 @@ Date      Old       New         Notes
 13-Dec-24 wksonproplem [same]   revised - eliminated hypothesis
 13-Dec-24 mptmpoopabovd [same]  revised - eliminated hypotheses
 13-Dec-24 mptmpoopabbrd [same]  revised - eliminated hypotheses
-13-Dec-24 wlkRes     ---        obsolete - use obapresex2 instead
+13-Dec-24 wlkRes     ---        obsolete - use opabresex2 instead
 13-Dec-24 opabresex2d ---       obsolete - use opabresex2 instead
 27-Nov-24 eldifsucnn [same]     moved from SF's mathbox to main set.mm
 27-Nov-24 nnasmo    [same]      moved from SF's mathbox to main set.mm
@@ -295,7 +679,7 @@ Date      Old       New         Notes
 26-Jun-24 rp-imass  resssxp     moved from RP's mathbox to main set.mm
 26-Jun-24 sscon34b  [same]      moved from RP's mathbox to main set.mm
 26-Jun-24 rcompleq  [same]      moved from RP's mathbox to main set.mm
-26-Jun-24 funresd   [same]      moved from GS's mathbox to main set.mmisCyclic_of_subgroup_isDomain
+26-Jun-24 funresd   [same]      moved from GS's mathbox to main set.mm
 26-Jun-24 cmnmndd   [same]      moved from SN's mathbox to main set.mm
 26-Jun-24 syl6req   eqtr2di     compare to eqtr2i or eqtr2d
 16-Jun-24 syl6eqr   eqtr4di     compare to eqtr4i or eqtr4d
