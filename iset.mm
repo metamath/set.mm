@@ -50046,6 +50046,16 @@ $)
   $}
 
   ${
+    $d B k x $.  $d F j k x $.
+    $( If a function value has a member, the function is inhabited.
+       (Contributed by Jim Kingdon, 14-Jun-2025.) $)
+    elfvm $p |- ( A e. ( F ` B ) -> E. j j e. F ) $=
+      ( vk vx cfv wcel cv wex wbr weu cio eliotaeu eleq2s euex brm exlimiv 3syl
+      df-fv eleq1w cbvexv sylib ) ABDGZHZEIDHZEJZCIDHZCJUEBFIZDKZFLZUJFJUGUKAUJ
+      FMUDUJFANFBDTOUJFPUJUGFEBUIDQRSUFUHECECDUAUBUC $.
+  $}
+
+  ${
     $d x y z w A $.  $d x y z w B $.  $d x y z w F $.
     $( The value of a non-member of a restriction is the empty set.
        (Contributed by NM, 13-Nov-1995.) $)
@@ -143933,6 +143943,32 @@ $)
   $}
 
   ${
+    $d G j $.
+    basm.b $e |- B = ( Base ` G ) $.
+    $( A structure whose base is inhabited is inhabited.  (Contributed by Jim
+       Kingdon, 14-Jun-2025.) $)
+    basm $p |- ( A e. B -> E. j j e. G ) $=
+      ( wcel cnx cbs cfv cv wex cvv baseid basmex basendxnn a1i strnfvnd eqtrid
+      id cn eleqtrd elfvm syl ) ABFZAGHIZDIZFCJDFCKUDABUFUDSUDBDHIUFEUDDHUELMAB
+      DENUETFUDOPQRUAAUECDUBUC $.
+  $}
+
+  ${
+    $d A j $.  $d B j $.  $d S j $.  $d X j $.  $d Y j $.
+    elbasov.o $e |- Rel dom O $.
+    relelbasov.r $e |- Rel O $.
+    elbasov.s $e |- S = ( X O Y ) $.
+    elbasov.b $e |- B = ( Base ` S ) $.
+    $( Utility theorem: reverse closure for any structure defined as a
+       two-argument function.  (Contributed by Mario Carneiro, 3-Oct-2015.) $)
+    relelbasov $p |- ( A e. B -> ( X e. _V /\ Y e. _V ) ) $=
+      ( vj wcel cv cvv wa basm cop cxp wrel eleqtrdi cdm wss df-rel mpbi cfv co
+      simpr df-ov relelfvdm sylancr sselid opelxp sylib exlimddv ) ABLZKMZCLZEN
+      LFNLOZKABKCJPUOUQOZEFQZNNRZLURUSDUAZVAUTVBSVBVAUBGVBUCUDUSDSUPUTDUEZLUTVB
+      LHUSUPEFDUFZVCUSUPCVDUOUQUGITEFDUHTUPUTDUIUJUKEFNNULUMUN $.
+  $}
+
+  ${
     $d x y $.
     $( The structure restriction is a proper operator, so it can be used with
        ~ ovprc1 .  (Contributed by Stefan O'Rear, 29-Nov-2014.) $)
@@ -163080,30 +163116,26 @@ $)
   $}
 
   ${
-    $d I f g h k x y $.  $d R f g k x $.  $d W f g k x $.  $d X f g k x $.
-    $( The multivariate power series structure is a set.  (Contributed by Jim
-       Kingdon, 10-Jun-2025.) $)
-    psrex $p |- ( ( I e. W /\ R e. X ) -> ( I mPwSer R ) e. _V ) $=
-      ( vf vx wcel co cnx cbs cfv cv cn cn0 cop cvv eqid sylancr syl2anc opexg
-      vh vg vk vy wa cmps ccnv cima cfn cmap crab cplusg cof cxp cres cmulr cle
-      cofr wbr cmin cmpt cgsu cmpo ctp csca cvsca csn cts ctopn cpt eqidd simpl
-      cun simpr psrval basendxnn wf cab wceq basfn elexd funfvex funfni mapvalg
-      wfn nn0ex mapex sylancl eqeltrd rabexg plusgndxnn ofmresex cslot mulrslid
-      simpri mpoexga tpexg syl3anc scaslid vscaslid tsetndxnn topnfn snexg ptex
-      syl xpexg unexg ) BCGZADGZUEZBAUFHZIJKZAJKZUALUGMUHUIGZUANBUJHZUKZUJHZOZI
-      ULKZAULKZUMXQXQUNUOZOZIUPKZEUBXQXQUCXPAFUDLUCLZUQURUSUDXPUKFLZELZKYDYEUTU
-      MHUBLKAUPKZHVAVBHVAZVCZOZVDZIVEKZAOZIVFKZFEXMXQXPYEVGUNYFYGUMHZVCZOZIVHKZ
-      XPAVIKZVGZUNZVJKZOZVDZVMZPXJFUDXQXPXTYAAXKYPYGYIEUBUAUCBUUBXMYSCDXKQXMQXT
-      QYGQYSQXPQXJXQVKYAQYIQYPQXJUUBVKXHXIVLZXHXIVNZVOXJYKPGZUUDPGZUUEPGXJXRPGZ
-      YBPGZYJPGZUUHXJXLMGXQPGZUUJVPXJXQXPXMYFVQEVRZPXJXMPGZXPPGZXQUUNVSXJJPWEAP
-      GZUUOVTXJADUUGWAZUUOPAJAJWBWCRZXJXOPGUUPXJXOBNYFVQEVRZPXJNPGZXHXOUUTVSWFU
-      UFNBPCEWDRXJXHUVAUUTPGUUFWFBNCPEWGWHWIXNUAXOPWJXEZXMXPPPEWDSXJUUPUUOUUNPG
-      UVBUUSXPXMPPEWGSWIZXLXQMPTRXJXSMGYAPGUUKWKXJXQXQXTPPUVCUVCWLXSYAMPTRXJYCM
-      GZYIPGZUULUPYCWMVSUVDWNWOXJUUMUUMUVEUVCUVCEUBXQXQYHPPWPSYCYIMPTRXRYBYJPPP
-      WQWRXJYMPGZYQPGZUUCPGZUUIXJYLMGZXIUVFVEYLWMVSUVIWSWOUUGYLAMDTRXJYNMGZYPPG
-      ZUVGVFYNWMVSUVJWTWOXJUUOUUMUVKUUSUVCFEXMXQYOPPWPSYNYPMPTRXJYRMGUUBPGZUVHX
-      AXJUUAPGZUVLXJUUPYTPGZUVMUVBXJYSPGZUVNXJVIPWEUUQUVOXBUURUVOPAVIAVIWBWCRYS
-      PXCXEXPYTPPXFSUUAPXDXEYRUUBMPTRYMYQUUCPPPWQWRYKUUDPPXGSWI $.
+    $d b d f g h i k r x y $.
+    $( The multivariate power series constructor has a universal domain.
+       (Contributed by Jim Kingdon, 16-Jun-2025.) $)
+    fnpsr $p |- mPwSer Fn ( _V X. _V ) $=
+      ( vi vr vd vh vb vf vg vx cvv cv cn wcel cmap cbs cfv cnx cop cxp ctopn
+      co vk ccnv cima cfn cn0 crab cplusg cof cres cmulr cle cofr wbr cmin cmpt
+      vy cgsu cmpo ctp csca cvsca csn cts cpt cun csb cmps df-psr wfn fnmap vex
+      nn0ex fnovex mp3an rabex basfn funfvex funfni mp2an opexg plusgndxnn wtru
+      basendxnn a1i ofmresex mptru cslot wceq mulrslid simpri elexi mpoex tpexg
+      opex scaslid vscaslid tsetndxnn topnfn snex xpex ptex ax-mp csbexa fnmpoi
+      unex ) ABIICDJUBKUCUDLZDUEAJZMTZUFZEBJZNOZCJZMTZPNOZEJZQZPUGOZXJUGOZUHXOX
+      ORUIZQZPUJOZFGXOXOUAXLXJHUPJUAJZUKULUMUPXLUFHJZFJZOYBYCUNUHTGJOXJUJOZTUOU
+      QTUOZURZQZUSZPUTOZXJQZPVAOZHFXKXOXLYCVBRYDYEUHTZURZQZPVCOZXLXJSOZVBZRZVDO
+      ZQZUSZVEZVFZVFVGHUPFGDAUABECVHCXIUUDXFDXHMIIRVIZUEILXGILXHILVJVLAVKUEXGII
+      MVMVNVOEXMUUCUUEXKILZXLILXMILVJNIVIXJILZUUFVPBVKZUUFIXJNXJNVQVRVSZCVKZXKX
+      LIIMVMVNYIUUBXPILZXTILZYHILYIILXNKLXOILZUUKWCEVKZXNXOKIVTVSXQKLXSILZUULWA
+      UUOWBXOXOXRIIUUMWBUUNWDZUUPWEWFXQXSKIVTVSYAYGYAKUJYAWGWHYAKLWIWJWKFGXOXOY
+      FUUNUUNWLWNXPXTYHIIIWMVNYKILYOILUUAILUUBILYJXJYJKUTYJWGWHYJKLWOWJWKUUHWNY
+      LYNYLKVAYLWGWHYLKLWPWJWKHFXKXOYMUUIUUNWLWNYPYTYPKWQWKYSILYTILXLYRUUJYQSIV
+      IUUGYQILZWRUUHUUQIXJSXJSVQVRVSWSWTYSIXAXBWNYKYOUUAIIIWMVNXEXCXCXD $.
   $}
 
   ${
@@ -163213,6 +163245,29 @@ $)
         WHYMSXCXDCYNSSXEWRYOSXHXDXFUUMAXSSTZXSYJTXSYRTAXQWKTUUNUURXIUUMXQXRWKSX
         JWHXSSYBYIXKXSYJYQXLXMXNXO $.
     $}
+
+    psrelbas.x $e |- ( ph -> X e. B ) $.
+    $( An element of the set of power series is a function on the coefficients.
+       (Contributed by Mario Carneiro, 28-Dec-2014.) $)
+    psrelbas $p |- ( ph -> X : D --> K ) $=
+      ( cmap wcel cvv cmps wfn cbs co wf wa reldmpsr cxp wrel fnpsr fnrel ax-mp
+      relelbasov syl simpld simprd psrbasg eleqtrd basfn funfvex funfni sylancr
+      cfv eqeltrid cv ccnv cn cfn cn0 fnmap nn0ex fnovex mp3an12i rabexd elmapd
+      cima mpbid ) AIHCOUAZPCHIUBAIBVONABCDEFGHQQJKLMAGQPZDQPZAIBPVPVQUCNIBERGD
+      UDRQQUEZSRUFUGVRRUHUIJMUJUKZULZAVPVQVSUMZUNUOAHCIQQAHDTUTZQKATQSVQWBQPZUP
+      WAWCQDTDTUQURUSVAAFVBVCVDVMVEPFVFGOUAZCQLOVRSVFQPAVPWDQPVGVHVTVFGQQOVIVJV
+      KVLVN $.
+  $}
+
+  ${
+    $d f I $.
+    psrelbasfun.s $e |- S = ( I mPwSer R ) $.
+    psrelbasfun.b $e |- B = ( Base ` S ) $.
+    $( An element of the set of power series is a function.  (Contributed by
+       AV, 17-Jul-2019.) $)
+    psrelbasfun $p |- ( X e. B -> Fun X ) $=
+      ( vf wcel cv ccnv cn cima cfn cn0 cmap co crab cbs eqid id psrelbas ffund
+      cfv ) EAIZHJKLMNIHODPQRZBSUDZEUEAUFBCHDUGEFUGTUFTGUEUAUBUC $.
   $}
 
 

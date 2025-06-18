@@ -2965,12 +2965,25 @@ and is evaluated at a set</TD>
 <TR>
 <TD>elfvdm</TD>
 <TD>~ relelfvdm </TD>
+<TD>It would seem elfvdm may be provable, but the set.mm
+proof does not work.  A straightforward combination of
+~ eliotaeu and ~ eldmg would require adding a ` B e. _V `
+condition but perhaps there is a way to remove that
+need</TD>
 </TR>
 
 <TR>
 <TD>elfvex , elfvexd</TD>
 <TD>~ relelfvdm , ~ mptrcl</TD>
 </TR>
+
+<tr>
+  <td>elfv2ex</td>
+  <td><i>none</i></td>
+  <td>although ~ elfvm and ~ relelfvdm provide some of
+  this, we'd likely need elfvex to remove the ` Rel F `
+  condition</td>
+</tr>
 
 <TR>
   <TD>dffn5</TD>
@@ -10043,8 +10056,10 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>elbasov</td>
-  <td><i>none</i></td>
-  <td>may be provable, as-is or with added conditions</td>
+  <td>~ relelbasov</td>
+  <td>Adds ` Rel O ` condition. Whether this is needed
+  would appear to be much the same question as whether
+  elfvdm is provable.</td>
 </tr>
 
 <TR>
