@@ -163301,6 +163301,16 @@ $)
       XDWCUUSUQFTTURWKWLYHUCYITXBXEYBUUBTNZUVGYBVMTWGUURUVJXCUUTUVJTDVMDVMWOWPW
       QUUBTXFXEYJUUCTTXGWTUUDTXOXEXHUVBYBYGTNZYGUUGNZYBYEUNNYFTNUVKXIUVBYEYFUNT
       XJWQUVKUVLYGVKZUUGXKUVMYRUUGYDYGYQXLYRUUFXMXNYGUUGTXPXQXEXRXS $.
+
+    psradd.x $e |- ( ph -> X e. B ) $.
+    psradd.y $e |- ( ph -> Y e. B ) $.
+    $( The addition operation of the multivariate power series structure.
+       (Contributed by Mario Carneiro, 28-Dec-2014.) $)
+    psradd $p |- ( ph -> ( X .+b Y ) = ( X oF .+ Y ) ) $=
+      ( co cxp wcel cvv cmps cof cres wceq reldmpsr wrel fnpsr fnrel relelbasov
+      wa wfn ax-mp psrplusgg 3syl oveqd ofmresval eqtrd ) AHIDPHICUAZBBQUBZPHIU
+      QPADURHIAHBRGSRESRUIDURUCNHBFTGEUDTSSQZUJTUEUFUSTUGUKJKUHBCDEFGSSJKLMULUM
+      UNABBCHINOUOUP $.
   $}
 
 
