@@ -163313,6 +163313,30 @@ $)
       UNABBCHINOUOUP $.
   $}
 
+  ${
+    $d f I $.  $d x y ph $.  $d x y R $.  $d x y X $.  $d y Y $.
+    psraddcl.s $e |- S = ( I mPwSer R ) $.
+    psraddcl.b $e |- B = ( Base ` S ) $.
+    psraddcl.p $e |- .+ = ( +g ` S ) $.
+    psraddcl.r $e |- ( ph -> R e. Mgm ) $.
+    psraddcl.x $e |- ( ph -> X e. B ) $.
+    psraddcl.y $e |- ( ph -> Y e. B ) $.
+    $( Closure of the power series addition operation.  (Contributed by Mario
+       Carneiro, 28-Dec-2014.)  Generalize to magmas.  (Revised by SN,
+       12-Apr-2025.) $)
+    psraddcl $p |- ( ph -> ( X .+ Y ) e. B ) $=
+      ( vf co cbs wcel cmap cvv vx vy cplusg cfv cof cv ccnv cn cima cfn cn0 wf
+      crab cmgm wa eqid mgmcl 3expb sylan psrelbas cxp wfn fnmap nn0ex reldmpsr
+      cmps fnpsr fnrel ax-mp relelbasov syl simpld fnovex mp3an12i rabexg inidm
+      wrel off basfn elexd funfvex funfni sylancr elmapd mpbird psrbasg 3eltr4d
+      psradd ) AGHDUCUDZUEPZDQUDZOUFUGUHUIUJRZOUKFSPZUMZSPZGHCPBAWJWORWNWKWJULA
+      UAUBWNWNWNWIWKWKWKGHTTADUNRZUAUFZWKRZUBUFZWKRZUOWQWSWIPWKRZLWPWRWTXAWKDWQ
+      WSWIWKUPZWIUPZUQURUSABWNDEOFWKGIXBWNUPZJMUTABWNDEOFWKHIXBXDJNUTAWMTRZWNTR
+      STTVAZVBUKTRAFTRZXEVCVDAXGDTRZAGBRXGXHUOMGBEVFFDVEVFXFVBVFVQVGXFVFVHVIIJV
+      JVKVLZUKFTTSVMVNWLOWMTVOVKZXJWNVPVRAWKWNWJTTAQTVBXHWKTRZVSADUNLVTXKTDQDQW
+      AWBWCXJWDWEABWICDEFGHIJXCKMNWHABWNDEOFWKTUNIXBXDJXILWFWG $.
+  $}
+
 
 $(
 ###############################################################################
