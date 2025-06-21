@@ -102,6 +102,9 @@ Date      Old       New         Notes
 20-Jun-25 lspsnel4  ellspsn4
 20-Jun-25 lspsnel3  ellspsn3
 20-Jun-25 lspsnel   ellspsn
+19-Jun-25 elimampt  [same]      Moved from TA's mathbox to main set.mm
+18-Jun-25 r1pid2    [same]      Moved from TA's mathbox to main set.mm and
+                                generalized to domains
 18-Jun-25 0fin      0fi         Moved to before snfi
  8-Jun-25 deg1mul   [same]      Moved from MKU's mathbox to main set.mm
  7-Jun-25 ply1ascl1 [same]      Moved from TA's mathbox to main set.mm
