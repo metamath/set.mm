@@ -89,9 +89,17 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+20-Jun-25 rspsnel   elrspsn     Moved from TA's mathbox to main set.mm
+20-Jun-25 lspsneli  ellspsni
+20-Jun-25 lspsnel6  ellspsn6
+20-Jun-25 lspsnel5a ellspsn5a
+20-Jun-25 lspsnel5  ellspsn5
+20-Jun-25 lspsnel4  ellspsn4
+20-Jun-25 lspsnel3  ellspsn3
+20-Jun-25 lspsnel   ellspsn
 18-Jun-25 0fin      0fi         Moved to before snfi
  8-Jun-25 deg1mul   [same]      Moved from MKU's mathbox to main set.mm
- 7-Jun-25 ply1ascl1 [same]      Moved from TA's mathbox to main set
+ 7-Jun-25 ply1ascl1 [same]      Moved from TA's mathbox to main set.mm
  4-Jun-25 rhmpreimaidl [same]   Moved from TA's mathbox to main set.mm
  4-Jun-25 kerlidl   [same]      Moved from TA's mathbox to main set.mm
  3-Jun-25 inn0f     [same]      Moved from GS's mathbox to main set.mm
