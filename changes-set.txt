@@ -97,8 +97,8 @@ Date      Old       New         Notes
 20-Jun-25 rspsnel   elrspsn     Moved from TA's mathbox to main set.mm
 20-Jun-25 lspsneli  ellspsni
 20-Jun-25 lspsnel6  ellspsn6
-20-Jun-25 lspsnel5a ellspsn5a
-20-Jun-25 lspsnel5  ellspsn5
+20-Jun-25 lspsnel5a ellspsn5
+20-Jun-25 lspsnel5  ellspsn5b
 20-Jun-25 lspsnel4  ellspsn4
 20-Jun-25 lspsnel3  ellspsn3
 20-Jun-25 lspsnel   ellspsn
