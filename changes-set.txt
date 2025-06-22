@@ -90,6 +90,21 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
 18-Jun-25 0fin      0fi         Moved to before snfi
+14-Jun-25 ltexp1d   [same]      Moved from SN's mathbox to main set.mm
+14-Jun-25 ltexp1dd  [same]      Moved from SN's mathbox to main set.mm
+14-Jun-25 exp11nnd  [same]      Moved from SN's mathbox to main set.mm
+14-Jun-25 dvdsexpim [same]      Moved from SN's mathbox to main set.mm
+14-Jun-25 nn0rppwr  [same]      Moved from SN's mathbox to main set.mm
+14-Jun-25 expgcd    [same]      Moved from SN's mathbox to main set.mm
+14-Jun-25 nn0expgcd [same]      Moved from SN's mathbox to main set.mm
+14-Jun-25 zexpgcd   [same]      Moved from SN's mathbox to main set.mm
+14-Jun-25 numdenexp [same]      Moved from SN's mathbox to main set.mm
+14-Jun-25 numexp    [same]      Moved from SN's mathbox to main set.mm
+14-Jun-25 denexp    [same]      Moved from SN's mathbox to main set.mm
+14-Jun-25 ressmulgnnd [same]    Moved from MKU's mathbox to main set.mm
+14-Jun-25 zrtelqelz [same]      Moved from SN's mathbox to main set.mm
+14-Jun-25 zrtdvds   [same]      Moved from SN's mathbox to main set.mm
+14-Jun-25 rtprmirr  [same]      Moved from SN's mathbox to main set.mm
  8-Jun-25 deg1mul   [same]      Moved from MKU's mathbox to main set.mm
  7-Jun-25 ply1ascl1 [same]      Moved from TA's mathbox to main set
  4-Jun-25 rhmpreimaidl [same]   Moved from TA's mathbox to main set.mm
