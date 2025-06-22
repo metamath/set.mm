@@ -89,6 +89,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+18-Jun-25 0fin      0fi         Moved to before snfi
  8-Jun-25 deg1mul   [same]      Moved from MKU's mathbox to main set.mm
  7-Jun-25 ply1ascl1 [same]      Moved from TA's mathbox to main set
  4-Jun-25 rhmpreimaidl [same]   Moved from TA's mathbox to main set.mm
