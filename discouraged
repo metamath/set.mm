@@ -18968,6 +18968,7 @@ New usage of "r19.29vvaOLD" is discouraged (0 uses).
 New usage of "r19.30OLD" is discouraged (0 uses).
 New usage of "r19.35OLD" is discouraged (0 uses).
 New usage of "r1omALT" is discouraged (0 uses).
+New usage of "r1pid2OLD" is discouraged (0 uses).
 New usage of "r1pwALT" is discouraged (0 uses).
 New usage of "rabbidaOLD" is discouraged (0 uses).
 New usage of "rabbiiaOLD" is discouraged (0 uses).
@@ -21473,6 +21474,7 @@ Proof modification of "r19.29vvaOLD" is discouraged (42 steps).
 Proof modification of "r19.30OLD" is discouraged (66 steps).
 Proof modification of "r19.35OLD" is discouraged (72 steps).
 Proof modification of "r1omALT" is discouraged (13 steps).
+Proof modification of "r1pid2OLD" is discouraged (496 steps).
 Proof modification of "r1pwALT" is discouraged (151 steps).
 Proof modification of "rabbidaOLD" is discouraged (36 steps).
 Proof modification of "rabbiiaOLD" is discouraged (39 steps).
