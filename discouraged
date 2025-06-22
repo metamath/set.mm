@@ -14414,6 +14414,7 @@ New usage of "0cnALT3" is discouraged (0 uses).
 New usage of "0cnfn" is discouraged (4 uses).
 New usage of "0cnop" is discouraged (1 uses).
 New usage of "0domgOLD" is discouraged (0 uses).
+New usage of "0finOLD" is discouraged (0 uses).
 New usage of "0heALT" is discouraged (0 uses).
 New usage of "0hmop" is discouraged (9 uses).
 New usage of "0idsr" is discouraged (8 uses).
@@ -16891,6 +16892,7 @@ New usage of "fh3i" is discouraged (1 uses).
 New usage of "fh4i" is discouraged (0 uses).
 New usage of "ficardun2OLD" is discouraged (0 uses).
 New usage of "ficardunOLD" is discouraged (0 uses).
+New usage of "fiintOLD" is discouraged (0 uses).
 New usage of "fimacnvOLD" is discouraged (0 uses).
 New usage of "fimadmfoALT" is discouraged (0 uses).
 New usage of "findcard2OLD" is discouraged (0 uses).
@@ -18889,6 +18891,7 @@ New usage of "prclisacycgr" is discouraged (0 uses).
 New usage of "predasetexOLD" is discouraged (0 uses).
 New usage of "predonOLD" is discouraged (0 uses).
 New usage of "preleqALT" is discouraged (0 uses).
+New usage of "prfiALT" is discouraged (0 uses).
 New usage of "prlem934" is discouraged (3 uses).
 New usage of "prlem936" is discouraged (1 uses).
 New usage of "prmdvdssqOLD" is discouraged (0 uses).
@@ -19386,6 +19389,7 @@ New usage of "snatpsubN" is discouraged (3 uses).
 New usage of "snelpwiOLD" is discouraged (0 uses).
 New usage of "snelpwrVD" is discouraged (0 uses).
 New usage of "snexALT" is discouraged (1 uses).
+New usage of "snfiOLD" is discouraged (0 uses).
 New usage of "snnen2oOLD" is discouraged (0 uses).
 New usage of "snssgOLD" is discouraged (0 uses).
 New usage of "snssiALT" is discouraged (0 uses).
@@ -19752,7 +19756,7 @@ New usage of "vtocl3gaOLD" is discouraged (0 uses).
 New usage of "vtocl3gaOLDOLD" is discouraged (0 uses).
 New usage of "vtocl3gafOLD" is discouraged (0 uses).
 New usage of "vtocl4gaOLD" is discouraged (0 uses).
-New usage of "vtoclALT" is discouraged (0 uses).
+New usage of "vtoclOLD" is discouraged (0 uses).
 New usage of "vtocldOLD" is discouraged (0 uses).
 New usage of "vtocleOLD" is discouraged (0 uses).
 New usage of "vtoclegftOLD" is discouraged (0 uses).
@@ -19881,6 +19885,7 @@ Proof modification of "0cnALT" is discouraged (82 steps).
 Proof modification of "0cnALT2" is discouraged (49 steps).
 Proof modification of "0cnALT3" is discouraged (3 steps).
 Proof modification of "0domgOLD" is discouraged (17 steps).
+Proof modification of "0finOLD" is discouraged (16 steps).
 Proof modification of "0heALT" is discouraged (25 steps).
 Proof modification of "0nelopabOLD" is discouraged (91 steps).
 Proof modification of "0nnnALT" is discouraged (11 steps).
@@ -20808,6 +20813,7 @@ Proof modification of "fcoOLD" is discouraged (98 steps).
 Proof modification of "festinoALT" is discouraged (24 steps).
 Proof modification of "ficardun2OLD" is discouraged (137 steps).
 Proof modification of "ficardunOLD" is discouraged (127 steps).
+Proof modification of "fiintOLD" is discouraged (986 steps).
 Proof modification of "fimacnvOLD" is discouraged (78 steps).
 Proof modification of "fimadmfoALT" is discouraged (108 steps).
 Proof modification of "findcard2OLD" is discouraged (535 steps).
@@ -21410,6 +21416,7 @@ Proof modification of "pr2nelemOLD" is discouraged (82 steps).
 Proof modification of "predasetexOLD" is discouraged (16 steps).
 Proof modification of "predonOLD" is discouraged (29 steps).
 Proof modification of "preleqALT" is discouraged (115 steps).
+Proof modification of "prfiALT" is discouraged (30 steps).
 Proof modification of "prmdvdssqOLD" is discouraged (62 steps).
 Proof modification of "prmgaplcm" is discouraged (247 steps).
 Proof modification of "prmgapprmo" is discouraged (387 steps).
@@ -21647,6 +21654,7 @@ Proof modification of "sn-isghm" is discouraged (432 steps).
 Proof modification of "snelpwiOLD" is discouraged (20 steps).
 Proof modification of "snelpwrVD" is discouraged (37 steps).
 Proof modification of "snexALT" is discouraged (48 steps).
+Proof modification of "snfiOLD" is discouraged (82 steps).
 Proof modification of "snnen2oOLD" is discouraged (116 steps).
 Proof modification of "snssgOLD" is discouraged (58 steps).
 Proof modification of "snssiALT" is discouraged (40 steps).
@@ -21854,7 +21862,7 @@ Proof modification of "vtocl3gaOLD" is discouraged (110 steps).
 Proof modification of "vtocl3gaOLDOLD" is discouraged (45 steps).
 Proof modification of "vtocl3gafOLD" is discouraged (185 steps).
 Proof modification of "vtocl4gaOLD" is discouraged (166 steps).
-Proof modification of "vtoclALT" is discouraged (11 steps).
+Proof modification of "vtoclOLD" is discouraged (17 steps).
 Proof modification of "vtocldOLD" is discouraged (21 steps).
 Proof modification of "vtocleOLD" is discouraged (12 steps).
 Proof modification of "vtoclegftOLD" is discouraged (50 steps).

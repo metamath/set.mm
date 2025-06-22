@@ -89,6 +89,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+18-Jun-25 0fin      0fi         Moved to before snfi
 14-Jun-25 ltexp1d   [same]      Moved from SN's mathbox to main set.mm
 14-Jun-25 ltexp1dd  [same]      Moved from SN's mathbox to main set.mm
 14-Jun-25 exp11nnd  [same]      Moved from SN's mathbox to main set.mm
