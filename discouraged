@@ -5233,6 +5233,7 @@
 "df0op2" is used by "hh0oi".
 "df0op2" is used by "ho01i".
 "df0op2" is used by "nmop0h".
+"dfac5lem4OLD" is used by "dfac5lem5".
 "dfadj2" is used by "adj1".
 "dfadj2" is used by "adjeu".
 "dfadj2" is used by "adjval".
@@ -16214,6 +16215,7 @@ New usage of "df-vhc3" is discouraged (1 uses).
 New usage of "df-vs" is discouraged (1 uses).
 New usage of "df-vsca" is discouraged (7 uses).
 New usage of "df0op2" is discouraged (3 uses).
+New usage of "dfac5lem4OLD" is discouraged (1 uses).
 New usage of "dfadj2" is discouraged (7 uses).
 New usage of "dfbi1ALT" is discouraged (0 uses).
 New usage of "dfch2" is discouraged (0 uses).
@@ -20475,6 +20477,7 @@ Proof modification of "cxpcnOLD" is discouraged (298 steps).
 Proof modification of "daraptiALT" is discouraged (23 steps).
 Proof modification of "dariiALT" is discouraged (19 steps).
 Proof modification of "demoivreALT" is discouraged (1087 steps).
+Proof modification of "dfac5lem4OLD" is discouraged (689 steps).
 Proof modification of "dfbi1ALT" is discouraged (100 steps).
 Proof modification of "dfcnfldOLD" is discouraged (195 steps).
 Proof modification of "dfeu" is discouraged (35 steps).
