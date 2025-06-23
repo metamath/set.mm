@@ -16911,6 +16911,7 @@ New usage of "fncoOLD" is discouraged (0 uses).
 New usage of "fnexALT" is discouraged (0 uses).
 New usage of "fnsnfvOLD" is discouraged (0 uses).
 New usage of "fodomfiOLD" is discouraged (0 uses).
+New usage of "fodomfibOLD" is discouraged (0 uses).
 New usage of "footexALT" is discouraged (0 uses).
 New usage of "frgrwopreglem5ALT" is discouraged (0 uses).
 New usage of "friOLD" is discouraged (0 uses).
@@ -20839,6 +20840,7 @@ Proof modification of "fncoOLD" is discouraged (95 steps).
 Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "fnsnfvOLD" is discouraged (74 steps).
 Proof modification of "fodomfiOLD" is discouraged (388 steps).
+Proof modification of "fodomfibOLD" is discouraged (183 steps).
 Proof modification of "footexALT" is discouraged (2161 steps).
 Proof modification of "frege10" is discouraged (27 steps).
 Proof modification of "frege100" is discouraged (31 steps).
