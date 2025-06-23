@@ -16879,8 +16879,10 @@ New usage of "f1coOLD" is discouraged (0 uses).
 New usage of "f1cofveqaeqALT" is discouraged (0 uses).
 New usage of "f1dom2gOLD" is discouraged (0 uses).
 New usage of "f1finf1oOLD" is discouraged (0 uses).
+New usage of "f1oabexgOLD" is discouraged (0 uses).
 New usage of "f1omoALT" is discouraged (0 uses).
 New usage of "f1oweALT" is discouraged (0 uses).
+New usage of "fabexgOLD" is discouraged (0 uses).
 New usage of "fco3OLD" is discouraged (0 uses).
 New usage of "fcoOLD" is discouraged (0 uses).
 New usage of "festinoALT" is discouraged (0 uses).
@@ -17952,6 +17954,7 @@ New usage of "mapdval2N" is discouraged (2 uses).
 New usage of "mapdval3N" is discouraged (0 uses).
 New usage of "mapdval4N" is discouraged (2 uses).
 New usage of "mapdval5N" is discouraged (0 uses).
+New usage of "mapexOLD" is discouraged (0 uses).
 New usage of "mappsrpr" is discouraged (2 uses).
 New usage of "mathbox" is discouraged (0 uses).
 New usage of "matscaOLD" is discouraged (0 uses).
@@ -20804,8 +20807,10 @@ Proof modification of "f1coOLD" is discouraged (99 steps).
 Proof modification of "f1cofveqaeqALT" is discouraged (124 steps).
 Proof modification of "f1dom2gOLD" is discouraged (77 steps).
 Proof modification of "f1finf1oOLD" is discouraged (211 steps).
+Proof modification of "f1oabexgOLD" is discouraged (64 steps).
 Proof modification of "f1omoALT" is discouraged (39 steps).
 Proof modification of "f1oweALT" is discouraged (805 steps).
+Proof modification of "fabexgOLD" is discouraged (86 steps).
 Proof modification of "falimfal" is discouraged (6 steps).
 Proof modification of "falimtru" is discouraged (6 steps).
 Proof modification of "fco3OLD" is discouraged (60 steps).
@@ -21167,6 +21172,7 @@ Proof modification of "luklem8" is discouraged (25 steps).
 Proof modification of "lukshef-ax1" is discouraged (6 steps).
 Proof modification of "lukshefth1" is discouraged (88 steps).
 Proof modification of "lukshefth2" is discouraged (129 steps).
+Proof modification of "mapexOLD" is discouraged (58 steps).
 Proof modification of "mathbox" is discouraged (1 steps).
 Proof modification of "matscaOLD" is discouraged (73 steps).
 Proof modification of "matvscaOLD" is discouraged (69 steps).
