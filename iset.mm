@@ -163270,6 +163270,73 @@ $)
       cfv ) EAIZHJKLMNIHODPQRZBSUDZEUEAUFBCHDUGEFUGTUFTGUEUAUBUC $.
   $}
 
+  ${
+    $d V f g k x $.  $d W f g k x $.  $d f g k x B $.  $d f g h k x y I $.
+    $d f g k x ph $.  $d f g k x R $.
+    psrplusg.s $e |- S = ( I mPwSer R ) $.
+    psrplusg.b $e |- B = ( Base ` S ) $.
+    psrplusg.a $e |- .+ = ( +g ` R ) $.
+    psrplusg.p $e |- .+b = ( +g ` S ) $.
+    $( The addition operation of the multivariate power series structure.
+       (Contributed by Mario Carneiro, 28-Dec-2014.)  (Revised by Mario
+       Carneiro, 2-Oct-2015.) $)
+    psrplusgg $p |- ( ( I e. V /\ R e. W ) ->
+        .+b = ( oF .+ |` ( B X. B ) ) ) $=
+      ( vf wcel cfv cnx cbs cop eqid cvv vg vk vh vx vy wa cplusg cof cxp cmulr
+      cres cv ccnv cn cima cfn cn0 cmap co crab cle cofr wbr cmin cmpt cgsu ctp
+      cmpo csca cvsca csn cts ctopn cpt simpl simpr psrbasg eqidd psrval fveq2d
+      cun wceq a1i c1 c9 plusgslid wfn basfn cmps fnpsr fnovex mp3an2i eqeltrid
+      elexd funfvex funfni sylancr ofmresex mpoexga syl2anc fnmap rabexg topnfn
+      nn0ex syl snexg xpexg psrvalstrd plusgndxnn opexg wss snsstp2 ssun1 sstri
+      ptex snssg mpbiri opelstrsl 3eqtr4d ) FGNZDHNZUFZEUGOZPQOARZPUGOZBUHAAUIU
+      KZRZPUJOMUAAAUBUCULUMUNUOUPNZUCUQFURUSZUTZDUDUEULUBULZVAVBVCUEYJUTUDULZMU
+      LZOYKYLVDUHUSUAULODUJOZUSVEVFUSVEZVHZRZVGZPVIODRPVJOUDMDQOZAYJYLVKUIYMYNU
+      HUSZVHZRPVLOYJDVMOZVKZUIZVNOZRVGZWAZUGOCYFYBEUUGUGYBUDUEAYJBYFDEUUAYNYPMU
+      AUCUBFUUEYSUUBGHIYSSZKYNSUUBSYJSZYBAYJDEUCFYSGHIUUHUUIJXTYAVOZXTYAVPZVQYF
+      SYPSUUASYBUUEVRUUJUUKVSVTCYCWBYBLWCYBUUGUGYFWDWERTWFYBATYFTDUUAYPUUEHTTTY
+      BAEQOZTJYBQTWGZETNUULTNZWHYBEFDWIUSZTIWITTUIZWGYBFTNZDTNZUUOTNWJYBFGUUJWN
+      ZYBDHUUKWNZFDTTWIWKWLWMUUNTEQEQWOWPWQWMZYBAABTTUVAUVAWRZYBATNZUVCYPTNUVAU
+      VAMUAAAYOTTWSWTUUKYBYSTNZUVCUUATNYBUUMUURUVDWHUUTUVDTDQDQWOWPWQUVAUDMYSAY
+      TTTWSWTYBUUDTNZUUETNYBYJTNZUUCTNZUVEYBYITNZUVFURUUPWGYBUQTNZUUQUVHXAUVIYB
+      XDWCUUSUQFTTURWKWLYHUCYITXBXEYBUUBTNZUVGYBVMTWGUURUVJXCUUTUVJTDVMDVMWOWPW
+      QUUBTXFXEYJUUCTTXGWTUUDTXOXEXHUVBYBYGTNZYGUUGNZYBYEUNNYFTNUVKXIUVBYEYFUNT
+      XJWQUVKUVLYGVKZUUGXKUVMYRUUGYDYGYQXLYRUUFXMXNYGUUGTXPXQXEXRXS $.
+
+    psradd.x $e |- ( ph -> X e. B ) $.
+    psradd.y $e |- ( ph -> Y e. B ) $.
+    $( The addition operation of the multivariate power series structure.
+       (Contributed by Mario Carneiro, 28-Dec-2014.) $)
+    psradd $p |- ( ph -> ( X .+b Y ) = ( X oF .+ Y ) ) $=
+      ( co cxp wcel cvv cmps cof cres wceq reldmpsr wrel fnpsr fnrel relelbasov
+      wa wfn ax-mp psrplusgg 3syl oveqd ofmresval eqtrd ) AHIDPHICUAZBBQUBZPHIU
+      QPADURHIAHBRGSRESRUIDURUCNHBFTGEUDTSSQZUJTUEUFUSTUGUKJKUHBCDEFGSSJKLMULUM
+      UNABBCHINOUOUP $.
+  $}
+
+  ${
+    $d f I $.  $d x y ph $.  $d x y R $.  $d x y X $.  $d y Y $.
+    psraddcl.s $e |- S = ( I mPwSer R ) $.
+    psraddcl.b $e |- B = ( Base ` S ) $.
+    psraddcl.p $e |- .+ = ( +g ` S ) $.
+    psraddcl.r $e |- ( ph -> R e. Mgm ) $.
+    psraddcl.x $e |- ( ph -> X e. B ) $.
+    psraddcl.y $e |- ( ph -> Y e. B ) $.
+    $( Closure of the power series addition operation.  (Contributed by Mario
+       Carneiro, 28-Dec-2014.)  Generalize to magmas.  (Revised by SN,
+       12-Apr-2025.) $)
+    psraddcl $p |- ( ph -> ( X .+ Y ) e. B ) $=
+      ( vf co cbs wcel cmap cvv vx vy cplusg cfv cof cv ccnv cn cima cfn cn0 wf
+      crab cmgm wa eqid mgmcl 3expb sylan psrelbas cxp wfn fnmap nn0ex reldmpsr
+      cmps fnpsr fnrel ax-mp relelbasov syl simpld fnovex mp3an12i rabexg inidm
+      wrel off basfn elexd funfvex funfni sylancr elmapd mpbird psrbasg 3eltr4d
+      psradd ) AGHDUCUDZUEPZDQUDZOUFUGUHUIUJRZOUKFSPZUMZSPZGHCPBAWJWORWNWKWJULA
+      UAUBWNWNWNWIWKWKWKGHTTADUNRZUAUFZWKRZUBUFZWKRZUOWQWSWIPWKRZLWPWRWTXAWKDWQ
+      WSWIWKUPZWIUPZUQURUSABWNDEOFWKGIXBWNUPZJMUTABWNDEOFWKHIXBXDJNUTAWMTRZWNTR
+      STTVAZVBUKTRAFTRZXEVCVDAXGDTRZAGBRXGXHUOMGBEVFFDVEVFXFVBVFVQVGXFVFVHVIIJV
+      JVKVLZUKFTTSVMVNWLOWMTVOVKZXJWNVPVRAWKWNWJTTAQTVBXHWKTRZVSADUNLVTXKTDQDQW
+      AWBWCXJWDWEABWICDEFGHIJXCKMNWHABWNDEOFWKTUNIXBXDJXILWFWG $.
+  $}
+
 
 $(
 ###############################################################################
