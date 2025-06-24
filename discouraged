@@ -19179,6 +19179,7 @@ New usage of "rspn0OLD" is discouraged (0 uses).
 New usage of "rspsbc2" is discouraged (2 uses).
 New usage of "rspsbc2VD" is discouraged (0 uses).
 New usage of "ruALT" is discouraged (0 uses).
+New usage of "ruOLD" is discouraged (0 uses).
 New usage of "rucALT" is discouraged (0 uses).
 New usage of "rusbcALT" is discouraged (0 uses).
 New usage of "ruvALT" is discouraged (0 uses).
@@ -21590,8 +21591,9 @@ Proof modification of "rpnnen1lem6" is discouraged (128 steps).
 Proof modification of "rspn0OLD" is discouraged (42 steps).
 Proof modification of "rspsbc2" is discouraged (65 steps).
 Proof modification of "rspsbc2VD" is discouraged (90 steps).
-Proof modification of "ru" is discouraged (88 steps).
+Proof modification of "ru" is discouraged (104 steps).
 Proof modification of "ruALT" is discouraged (29 steps).
+Proof modification of "ruOLD" is discouraged (88 steps).
 Proof modification of "rucALT" is discouraged (25 steps).
 Proof modification of "rusbcALT" is discouraged (77 steps).
 Proof modification of "ruvALT" is discouraged (24 steps).
