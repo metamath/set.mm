@@ -27,20 +27,6 @@ $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
-  $c Constr $.
-
-  $( Extend class notation with the set of geometrically constructible points. $)
-  cconstr $a class Constr $.
-
-  $( Define the set of geometrically constructible points, by recursively adding
-     the line-line, line-circle and circle-circle intersections constructions
-     using points in a previous iteration. $)
-  df-constr $a |- Constr = ( rec ( ( s e. _V |-> { x e. CC |
-    ( E. a e. s E. b e. s E. c e. s E. d e. s E. t e. RR E. r e. RR ( x = ( a + ( t x. ( b - a ) ) ) /\ x = ( c + ( r x. ( d - c ) ) ) /\ -. ( Im ` ( ( * ` ( b - a ) ) x. ( d - c ) ) ) = 0 )
-     \/ E. a e. s E. b e. s E. c e. s E. e e. s E. f e. s E. t e. RR ( x = ( a + ( t x. ( b - a ) ) ) /\ ( abs ` ( x - c ) ) = ( abs ` ( e - f ) ) )
-     \/ E. a e. s E. b e. s E. c e. s E. d e. s E. e e. s E. f e. s E. t e. RR ( -. a = d /\ ( abs ` ( x - a ) ) = ( abs ` ( b - c ) ) /\ ( abs ` ( x - d ) ) = ( abs ` ( e - f ) ) ) )
-      } ) , { 0 , 1 } ) " _om ) $.
-
   ${
     $d e f $.
     isfldext2.1 $e |- .< = { <. e , f >. | ( e /FldExt f /\ ( e [:] f ) = 2 ) } $.
