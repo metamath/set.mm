@@ -145460,30 +145460,34 @@ $)
                   A. x e. ( Base ` g )
                   ( ( e ( +g ` g ) x ) = x /\ ( x ( +g ` g ) e ) = x ) ) ) ) $.
 
-    $( Define the group sum for the structure ` G ` of a finite sequence of
-       elements whose values are defined by the expression ` B ` and whose set
-       of indices is ` A ` .  It may be viewed as a product (if ` G ` is a
-       multiplication), a sum (if ` G ` is an addition) or any other operation.
-       The variable ` k ` is normally a free variable in ` B ` (i.e., ` B ` can
-       be thought of as ` B ( k ) ` ).  The definition is meaningful in
-       different contexts, depending on the size of the index set ` A ` and
-       each demanding different properties of ` G ` .
+    $( Define a finite group sum (also called "iterated sum") of a structure.
+
+       The definition as given here would require decidability of various
+       propositions and that would significantly impact its usefulness, so this
+       definition will likely be revised.  However, the comment here describes
+       how the definition is currently written.
+
+       Given ` G gsum F ` where ` F : A --> ( Base `` G ) ` , the set of
+       indices is ` A ` and the values are given by ` F ` at each index.  A
+       group sum over a multiplicative group may be viewed as a product.  The
+       definition is meaningful in different contexts, depending on the size of
+       the index set ` A ` and each demanding different properties of ` G ` .
 
        1.  If ` A = (/) ` and ` G ` has an identity element, then the sum
        equals this identity.
 
        2.  If ` A = ( M ... N ) ` and ` G ` is any magma, then the sum is the
        sum of the elements, evaluated left-to-right, i.e.,
-       ` ( B ( 1 ) + B ( 2 ) ) + B ( 3 ) ` , etc.
+       ` ( ( F `` 1 ) + ( F `` 2 ) ) + ( F `` 3 ) ` , etc.
 
        3.  If ` A ` is a finite set (or is nonzero for finitely many indices)
        and ` G ` is a commutative monoid, then the sum adds up these elements
        in some order, which is then uniquely defined.
 
        4.  If ` A ` is an infinite set and ` G ` is a Hausdorff topological
-       group, then there is a meaningful sum, but ` gsum ` cannot handle this
-       case.  (Contributed by FL, 5-Sep-2010.)  (Revised by FL, 17-Oct-2011.)
-       (Revised by Mario Carneiro, 7-Dec-2014.) $)
+       group, ` gsum ` cannot handle this case.  (Contributed by FL,
+       5-Sep-2010.)  (Revised by FL, 17-Oct-2011.)  (Revised by Mario Carneiro,
+       7-Dec-2014.) $)
     df-gsum $a |- gsum = ( w e. _V , f e. _V |-> [_ { x e. ( Base ` w ) |
             A. y e. ( Base ` w )
             ( ( x ( +g ` w ) y ) = y /\ ( y ( +g ` w ) x ) = y ) } / o ]_
