@@ -145454,7 +145454,7 @@ $)
   ${
     $d e f g m n o w x y $.
     $( Define group identity element.  Remark: this definition is required here
-       because the symbol ` 0g ` is already used in ~ df-gsum .  The related
+       because the symbol ` 0g ` is already used in ~ df-igsum .  The related
        theorems will be provided later.  (Contributed by NM, 20-Aug-2011.) $)
     df-0g $a |- 0g = ( g e. _V |-> ( iota e ( e e. ( Base ` g ) /\
                   A. x e. ( Base ` g )
@@ -145480,22 +145480,14 @@ $)
        sum of the elements, evaluated left-to-right, i.e.,
        ` ( ( F `` 1 ) + ( F `` 2 ) ) + ( F `` 3 ) ` , etc.
 
-       3.  If ` A ` is a finite set (or is nonzero for finitely many indices)
-       and ` G ` is a commutative monoid, then the sum adds up these elements
-       in some order, which is then uniquely defined.
+       3.  This definition does not handle other cases.
 
-       4.  If ` A ` is an infinite set and ` G ` is a Hausdorff topological
-       group, ` gsum ` cannot handle this case.  (Contributed by FL,
-       5-Sep-2010.)  (Revised by FL, 17-Oct-2011.)  (Revised by Mario Carneiro,
-       7-Dec-2014.) $)
-    df-gsum $a |- gsum = ( w e. _V , f e. _V |-> [_ { x e. ( Base ` w ) |
-            A. y e. ( Base ` w )
-            ( ( x ( +g ` w ) y ) = y /\ ( y ( +g ` w ) x ) = y ) } / o ]_
-            if ( ran f C_ o , ( 0g ` w ) , if ( dom f e. ran ... ,
+       (Contributed by FL, 5-Sep-2010.)  (Revised by Mario Carneiro,
+       7-Dec-2014.)  (Revised by Jim Kingdon, 27-Jun-2025.) $)
+    df-igsum $a |- gsum = ( w e. _V , f e. _V |->
+            if ( dom f = (/) , ( 0g ` w ) ,
                ( iota x E. m E. n e. ( ZZ>= ` m ) ( dom f = ( m ... n ) /\
-                 x = ( seq m ( ( +g ` w ) , f ) ` n ) ) ) , ( iota x E. g
-     [. ( `' f " ( _V \ o ) ) / y ]. ( g : ( 1 ... ( # ` y ) ) -1-1-onto-> y /\
-             x = ( seq 1 ( ( +g ` w ) , ( f o. g ) ) ` ( # ` y ) ) ) ) ) ) ) $.
+                 x = ( seq m ( ( +g ` w ) , f ) ` n ) ) ) ) ) $.
   $}
 
   ${
