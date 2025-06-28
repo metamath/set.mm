@@ -145462,11 +145462,6 @@ $)
 
     $( Define a finite group sum (also called "iterated sum") of a structure.
 
-       The definition as given here would require decidability of various
-       propositions and that would significantly impact its usefulness, so this
-       definition will likely be revised.  However, the comment here describes
-       how the definition is currently written.
-
        Given ` G gsum F ` where ` F : A --> ( Base `` G ) ` , the set of
        indices is ` A ` and the values are given by ` F ` at each index.  A
        group sum over a multiplicative group may be viewed as a product.  The
