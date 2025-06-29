@@ -145480,9 +145480,9 @@ $)
        (Contributed by FL, 5-Sep-2010.)  (Revised by Mario Carneiro,
        7-Dec-2014.)  (Revised by Jim Kingdon, 27-Jun-2025.) $)
     df-igsum $a |- gsum = ( w e. _V , f e. _V |->
-            if ( dom f = (/) , ( 0g ` w ) ,
-               ( iota x E. m E. n e. ( ZZ>= ` m ) ( dom f = ( m ... n ) /\
-                 x = ( seq m ( ( +g ` w ) , f ) ` n ) ) ) ) ) $.
+       ( iota x ( ( dom f = (/) /\ x = ( 0g ` w ) )
+         \/ E. m E. n e. ( ZZ>= ` m ) ( dom f = ( m ... n ) /\
+         x = ( seq m ( ( +g ` w ) , f ) ` n ) ) ) ) ) $.
   $}
 
   ${
