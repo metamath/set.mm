@@ -53492,6 +53492,18 @@ $)
       UDUHMZSUIBUFBUHNUEUJAUDCOPQTUAUB $.
   $}
 
+  ${
+    $d A x $.
+    $( Set existence of an iota expression in which all values are contained
+       within a set.  (Contributed by Jim Kingdon, 28-Jun-2025.) $)
+    iotaexel $p |- ( ( A e. V /\ A. x ( ph -> x e. A ) )
+        -> ( iota x ph ) e. _V ) $=
+      ( wcel cv wi wal wa crio cio cvv df-riota wceq pm4.71r albii iotabi sylbi
+      wb adantl eqtr4id riotaexg adantr eqeltrrd ) CDEZABFCEZGZBHZIZABCJZABKZLU
+      IUJUFAIZBKZUKABCMUHUKUMNZUEUHAULSZBHUNUGUOBAUFOPAULBQRTUAUEUJLEUHABCDUBUC
+      UD $.
+  $}
+
   $( An iota restricted to the universe is unrestricted.  (Contributed by NM,
      18-Sep-2011.) $)
   riotav $p |- ( iota_ x e. _V ph ) = ( iota x ph ) $=
