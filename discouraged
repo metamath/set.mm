@@ -16438,6 +16438,8 @@ New usage of "drnfc1OLD" is discouraged (0 uses).
 New usage of "drnfc2" is discouraged (0 uses).
 New usage of "drnfc2OLD" is discouraged (0 uses).
 New usage of "drngcatALTV" is discouraged (0 uses).
+New usage of "drngmclOLD" is discouraged (0 uses).
+New usage of "drngmul0orOLD" is discouraged (0 uses).
 New usage of "drngoi" is discouraged (2 uses).
 New usage of "drsb1" is discouraged (3 uses).
 New usage of "dsndx" is discouraged (21 uses).
@@ -20518,6 +20520,8 @@ Proof modification of "drnf1vOLD" is discouraged (50 steps).
 Proof modification of "drnfc1OLD" is discouraged (51 steps).
 Proof modification of "drnfc2" is discouraged (59 steps).
 Proof modification of "drnfc2OLD" is discouraged (52 steps).
+Proof modification of "drngmclOLD" is discouraged (101 steps).
+Proof modification of "drngmul0orOLD" is discouraged (331 steps).
 Proof modification of "dtruALT" is discouraged (79 steps).
 Proof modification of "dtruALT2" is discouraged (161 steps).
 Proof modification of "dtruOLD" is discouraged (157 steps).
