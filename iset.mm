@@ -147142,6 +147142,40 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Iterated sums in a magma
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  The symbol ` gsum ` is mostly used in the context of abelian groups.
+  Therefore, it is usually called "group sum".  It can be defined, however, in
+  arbitrary magmas (then it should be called "iterated sum").  If the magma is
+  not required to be commutative or associative, then the order of the summands
+  and the order in which summations are done become important.  If the magma is
+  not unital, then one cannot define a meaningful empty sum.  See the comment
+  for ~ df-igsum .
+
+$)
+
+  ${
+    $d f m n w x $.
+    $( Iterated sum has a universal domain.  (Contributed by Jim Kingdon,
+       28-Jun-2025.) $)
+    fngsum $p |- gsum Fn ( _V X. _V ) $=
+      ( vw vf vx vm vn cvv cv wceq c0g cfv wa wrex wex cab wcel eqeltrri ss2abi
+      simpr cz df-rex cdm c0 cfz cplusg cseq cuz cio cgsu df-igsum cun unab csn
+      co wo df-sn wfn fn0g vex funfvex funfni mp2an snex ssexi ab2rexex eluzel2
+      zex eluzelz jca anim12i anass sylib eximi sylbi 19.42v anbi2i sylibr unex
+      iotaexab ax-mp fnmpoi ) ABFFBGZUAZUBHZCGZAGZIJZHZKZWBDGZEGZUCUMHZWDWJWEUD
+      JWAWIUEJZHZKZEWIUFJZLZDMZUNZCUGZUHCABDEUIWRCNZFOWSFOWHCNZWQCNZUJWTFWHWQCU
+      KXAXBXAWGCNZWFULXCFCWFUOWFIFUPWEFOWFFOZUQAURXDFWEIWEIUSUTVAVBPWHWGCWCWGRQ
+      VCXBWMESLZDSLZCNDECSSWLVFVFVDWQXFCWQWISOZXEKZDMXFWPXHDWPXGWJSOZWMKZEMZKZX
+      HWPXGXJKZEMZXLWPWJWOOZWNKZEMXNWNEWOTXPXMEXPXGXIKZWMKXMXOXQWNWMXOXGXIWIWJV
+      EWIWJVGVHWKWMRVIXGXIWMVJVKVLVMXGXJEVNVKXEXKXGWMESTVOVPVLXEDSTVPQVCVQPWRCF
+      VRVSVT $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Semigroups
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
