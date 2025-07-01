@@ -147173,6 +147173,46 @@ $)
       VRVSVT $.
   $}
 
+  ${
+    gsumval.b $e |- B = ( Base ` G ) $.
+    gsumval.z $e |- .0. = ( 0g ` G ) $.
+    gsumval.p $e |- .+ = ( +g ` G ) $.
+    gsumval.g $e |- ( ph -> G e. V ) $.
+    ${
+      $d .+ g w x $.  $d .0. g w x $.  $d A g w $.  $d F g m n w x $.
+      $d G g m n w x $.  $d g m n ph w x $.
+      gsumvalx.f $e |- ( ph -> F e. X ) $.
+      gsumvalx.a $e |- ( ph -> dom F = A ) $.
+      $( Expand out the substitutions in ~ df-igsum .  (Contributed by Mario
+         Carneiro, 18-Sep-2015.) $)
+      igsumvalx $p |- ( ph -> ( G gsum F ) =
+         ( iota x ( ( A = (/) /\ x = .0. )
+         \/ E. m E. n e. ( ZZ>= ` m )
+            ( A = ( m ... n ) /\ x = ( seq m ( .+ , F ) ` n ) ) ) ) ) $=
+        ( cvv wa vw vg cv cdm c0 wceq c0g cfv cfz co cplusg cseq cuz wex wo cio
+        wrex cgsu cmpo df-igsum simprr dmeqd adantr eqtrd eqeq1d simprl eqtr4di
+        a1i fveq2d eqeq2d anbi12d eqidd seqeq123d fveq1d rexbidv exbidv orbi12d
+        iotabidv elexd cab wcel cun unab csn df-sn fn0g funfvex funfni eqeltrid
+        wfn sylancr snexg syl eqeltrrid wss simpr ss2abi cz zex ab2rexex df-rex
+        ssexd eluzel2 eluzelz jca anim12i anass sylib eximi sylbi 19.42v anbi2i
+        sylibr ssexi unexg sylancl iotaexab ovmpod ) AUAUBIHSSUBUCZUDZUEUFZBUCZ
+        UAUCZUGUHZUFZTZXTFUCZGUCZUIUJZUFZYBYHYCUKUHZXSYGULZUHZUFZTZGYGUMUHZUQZF
+        UNZUOZBUPZCUEUFZYBLUFZTZCYIUFZYBYHEHYGULZUHZUFZTZGYPUQZFUNZUOZBUPZURSUR
+        UAUBSSYTUSUFABUAUBFGUTVHAYCIUFZXSHUFZTZTZYSUUKBUUPYFUUCYRUUJUUPYAUUAYEU
+        UBUUPXTCUEUUPXTHUDZCUUPXSHAUUMUUNVAZVBAUUQCUFUUORVCVDZVEUUPYDLYBUUPYDIU
+        GUHZLUUPYCIUGAUUMUUNVFZVINVGVJVKUUPYQUUIFUUPYOUUHGYPUUPYJUUDYNUUGUUPXTC
+        YIUUSVEUUPYMUUFYBUUPYHYLUUEUUPYKEXSHYGYGUUPYGVLUUPYKIUKUHEUUPYCIUKUVAVI
+        OVGUURVMVNVJVKVOVPVQVRAIJPVSZAHKQVSAUUKBVTZSWAUULSWAAUVCUUCBVTZUUJBVTZW
+        BZSUUCUUJBWCAUVDSWAUVESWAUVFSWAAUVDUUBBVTZSAUVGLWDZSBLWEALSWAUVHSWAALUU
+        TSNAUGSWJISWAUUTSWAZWFUVBUVISIUGIUGWGWHWKWILSWLWMWNUVDUVGWOAUUCUUBBUUAU
+        UBWPWQVHXBUVEUUGGWRUQZFWRUQZBVTFGBWRWRUUFWSWSWTUUJUVKBUUJYGWRWAZUVJTZFU
+        NUVKUUIUVMFUUIUVLYHWRWAZUUGTZGUNZTZUVMUUIUVLUVOTZGUNZUVQUUIYHYPWAZUUHTZ
+        GUNUVSUUHGYPXAUWAUVRGUWAUVLUVNTZUUGTUVRUVTUWBUUHUUGUVTUVLUVNYGYHXCYGYHX
+        DXEUUDUUGWPXFUVLUVNUUGXGXHXIXJUVLUVOGXKXHUVJUVPUVLUUGGWRXAXLXMXIUVJFWRX
+        AXMWQXNUVDUVESSXOXPWNUUKBSXQWMXR $.
+    $}
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
