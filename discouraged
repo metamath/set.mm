@@ -14531,6 +14531,7 @@ New usage of "2strbas" is discouraged (6 uses).
 New usage of "2strop" is discouraged (6 uses).
 New usage of "2strstr" is discouraged (4 uses).
 New usage of "2strstr1OLD" is discouraged (0 uses).
+New usage of "2thALT" is discouraged (0 uses).
 New usage of "2uasban" is discouraged (0 uses).
 New usage of "2uasbanh" is discouraged (1 uses).
 New usage of "2uasbanhVD" is discouraged (0 uses).
@@ -14544,6 +14545,8 @@ New usage of "3impdirp1" is discouraged (0 uses).
 New usage of "3impexpVD" is discouraged (0 uses).
 New usage of "3impexpbicomVD" is discouraged (0 uses).
 New usage of "3impexpbicomiVD" is discouraged (0 uses).
+New usage of "3jaobOLD" is discouraged (0 uses).
+New usage of "3jcadALT" is discouraged (0 uses).
 New usage of "3lcm2e6woprm" is discouraged (1 uses).
 New usage of "3noncolr1N" is discouraged (1 uses).
 New usage of "3oai" is discouraged (0 uses).
@@ -15013,6 +15016,7 @@ New usage of "bdophsi" is discouraged (3 uses).
 New usage of "bdopln" is discouraged (9 uses).
 New usage of "bdopssadj" is discouraged (4 uses).
 New usage of "biadaniALT" is discouraged (0 uses).
+New usage of "bian1dOLD" is discouraged (0 uses).
 New usage of "bicomdALT" is discouraged (0 uses).
 New usage of "bitr3VD" is discouraged (0 uses).
 New usage of "bj-0" is discouraged (1 uses).
@@ -18596,6 +18600,7 @@ New usage of "opsrscaOLD" is discouraged (0 uses).
 New usage of "opsrvscaOLD" is discouraged (0 uses).
 New usage of "orbi1r" is discouraged (0 uses).
 New usage of "orbi1rVD" is discouraged (0 uses).
+New usage of "orbi2iALT" is discouraged (0 uses).
 New usage of "orcomdd" is discouraged (0 uses).
 New usage of "ordelordALT" is discouraged (0 uses).
 New usage of "ordelordALTVD" is discouraged (0 uses).
@@ -18857,6 +18862,7 @@ New usage of "pm13.181OLD" is discouraged (0 uses).
 New usage of "pm2.21ddALT" is discouraged (0 uses).
 New usage of "pm2.43bgbi" is discouraged (0 uses).
 New usage of "pm2.43cbi" is discouraged (2 uses).
+New usage of "pm3.48ALT" is discouraged (0 uses).
 New usage of "pmap1N" is discouraged (2 uses).
 New usage of "pmapglb2N" is discouraged (0 uses).
 New usage of "pmapglb2xN" is discouraged (1 uses).
@@ -19945,6 +19951,7 @@ Proof modification of "2sb5ndVD" is discouraged (230 steps).
 Proof modification of "2sbcrexOLD" is discouraged (63 steps).
 Proof modification of "2stdpc5" is discouraged (34 steps).
 Proof modification of "2strstr1OLD" is discouraged (66 steps).
+Proof modification of "2thALT" is discouraged (11 steps).
 Proof modification of "2uasban" is discouraged (34 steps).
 Proof modification of "2uasbanh" is discouraged (214 steps).
 Proof modification of "2uasbanhVD" is discouraged (313 steps).
@@ -19958,6 +19965,8 @@ Proof modification of "3impdirp1" is discouraged (21 steps).
 Proof modification of "3impexpVD" is discouraged (104 steps).
 Proof modification of "3impexpbicomVD" is discouraged (89 steps).
 Proof modification of "3impexpbicomiVD" is discouraged (28 steps).
+Proof modification of "3jaobOLD" is discouraged (51 steps).
+Proof modification of "3jcadALT" is discouraged (29 steps).
 Proof modification of "3lcm2e6woprm" is discouraged (285 steps).
 Proof modification of "3orbi123" is discouraged (29 steps).
 Proof modification of "3orbi123VD" is discouraged (134 steps).
@@ -20102,6 +20111,7 @@ Proof modification of "basendxnplusgndxOLD" is discouraged (19 steps).
 Proof modification of "bcsiALT" is discouraged (444 steps).
 Proof modification of "bhmafibid1" is discouraged (429 steps).
 Proof modification of "biadaniALT" is discouraged (28 steps).
+Proof modification of "bian1dOLD" is discouraged (36 steps).
 Proof modification of "bicomdALT" is discouraged (12 steps).
 Proof modification of "bitr3VD" is discouraged (36 steps).
 Proof modification of "bj-0" is discouraged (5 steps).
@@ -21408,6 +21418,7 @@ Proof modification of "opsrscaOLD" is discouraged (34 steps).
 Proof modification of "opsrvscaOLD" is discouraged (15 steps).
 Proof modification of "orbi1r" is discouraged (9 steps).
 Proof modification of "orbi1rVD" is discouraged (101 steps).
+Proof modification of "orbi2iALT" is discouraged (30 steps).
 Proof modification of "orcomdd" is discouraged (13 steps).
 Proof modification of "ordelordALT" is discouraged (128 steps).
 Proof modification of "ordelordALTVD" is discouraged (202 steps).
@@ -21436,6 +21447,7 @@ Proof modification of "pm13.181OLD" is discouraged (20 steps).
 Proof modification of "pm2.21ddALT" is discouraged (10 steps).
 Proof modification of "pm2.43bgbi" is discouraged (16 steps).
 Proof modification of "pm2.43cbi" is discouraged (34 steps).
+Proof modification of "pm3.48ALT" is discouraged (18 steps).
 Proof modification of "poclOLD" is discouraged (270 steps).
 Proof modification of "postcposALT" is discouraged (163 steps).
 Proof modification of "pr2neOLD" is discouraged (169 steps).
