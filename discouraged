@@ -18137,6 +18137,7 @@ New usage of "mulerpq" is discouraged (3 uses).
 New usage of "mulerpqlem" is discouraged (1 uses).
 New usage of "mulgfvalALT" is discouraged (0 uses).
 New usage of "mulgt0sr" is discouraged (2 uses).
+New usage of "mulgt1OLD" is discouraged (0 uses).
 New usage of "mulidnq" is discouraged (11 uses).
 New usage of "mulidpi" is discouraged (5 uses).
 New usage of "mulnqf" is discouraged (9 uses).
@@ -21280,6 +21281,7 @@ Proof modification of "mrelatglbALT" is discouraged (66 steps).
 Proof modification of "mrelatlubALT" is discouraged (76 steps).
 Proof modification of "mulcncfOLD" is discouraged (28 steps).
 Proof modification of "mulgfvalALT" is discouraged (317 steps).
+Proof modification of "mulgt1OLD" is discouraged (173 steps).
 Proof modification of "mxidlprmALT" is discouraged (95 steps).
 Proof modification of "n0OLD" is discouraged (6 steps).
 Proof modification of "n0lpligALT" is discouraged (74 steps).
