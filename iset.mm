@@ -147224,6 +147224,28 @@ $)
       ( cvv fexd fdmd igsumvalx ) ABCDEFGHIJSLMNOPACDKHRQTACDHRUAUB $.
   $}
 
+  ${
+    $d a b f m n s t x G $.  $d a b f m n s t x H $.  $d a b f m n s t x ph $.
+    $d f m n x F $.
+    gsumpropd.f $e |- ( ph -> F e. V ) $.
+    gsumpropd.g $e |- ( ph -> G e. W ) $.
+    gsumpropd.h $e |- ( ph -> H e. X ) $.
+    gsumpropd.b $e |- ( ph -> ( Base ` G ) = ( Base ` H ) ) $.
+    gsumpropd.p $e |- ( ph -> ( +g ` G ) = ( +g ` H ) ) $.
+    $( The group sum depends only on the base set and additive operation.
+       (Contributed by Stefan O'Rear, 1-Feb-2015.)  (Proof shortened by Mario
+       Carneiro, 18-Sep-2015.) $)
+    gsumpropd $p |- ( ph -> ( G gsum F ) = ( H gsum F ) ) $=
+      ( vx vm vn wceq cv cfv wa eqid va vb cdm c0g cfz cplusg cseq cuz wrex wex
+      c0 co wo cio cgsu cbs eqidd wcel oveqdr grpidpropdg eqeq2d anbi2d seqeq2d
+      fveq1d rexbidv exbidv orbi12d iotabidv igsumvalx 3eqtr4d ) ABUCZUKPZMQZCU
+      DRZPZSZVKNQZOQZUEULPZVMVRCUFRZBVQUGZRZPZSZOVQUHRZUIZNUJZUMZMUNVLVMDUDRZPZ
+      SZVSVMVRDUFRZBVQUGZRZPZSZOWEUIZNUJZUMZMUNCBUOULDBUOULAWHWSMAVPWKWGWRAVOWJ
+      VLAVNWIVMAUAUBCUPRZCDFGAWTUQKIJAUAQWTURUBQWTURSUAUBVTWLLUSUTVAVBAWFWQNAWD
+      WPOWEAWCWOVSAWBWNVMAVRWAWMAVTWLBVQLVCVDVAVBVEVFVGVHAMVKWTVTNOBCFEVNWTTVNT
+      VTTIHAVKUQZVIAMVKDUPRZWLNOBDGEWIXBTWITWLTJHXAVIVJ $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
