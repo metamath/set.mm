@@ -109899,6 +109899,51 @@ $)
   $}
 
   ${
+    $d x y k w .+ $.  $d x y k w F $.  $d x y k w M $.  $d x y k w N $.
+    $d x y k w ph $.  $d x y k w Q $.  $d x y k w S $.
+    seqfeq4.m $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
+    seqfeq4.f $e |- ( ( ph /\ x e. ( M ... N ) ) -> ( F ` x ) e. S ) $.
+    seqfeq4g.f $e |- ( ph -> F e. V ) $.
+    seqfeq4g.p $e |- ( ph -> .+ e. W ) $.
+    seqfeq4g.q $e |- ( ph -> Q e. X ) $.
+    seqfeq4.cl $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x .+ y ) e. S ) $.
+    seqfeq4.id $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
+        ( x .+ y ) = ( x Q y ) ) $.
+    $( Equality of series under different addition operations which agree on an
+       additively closed subset.  (Contributed by Mario Carneiro,
+       25-Apr-2016.) $)
+    seqfeq4g $p |- ( ph ->
+      ( seq M ( .+ , F ) ` N ) = ( seq M ( Q , F ) ` N ) ) $=
+      ( wcel vw vk cfz co cseq cfv cuz eluzfz2 syl cv wi c1 caddc fveq2 eqeq12d
+      wceq imbi2d cvv cz eluzel2 wa adantr fvexg sylancl simprr ovexg mp3an2ani
+      vex seq3-1 eqtr4d cfzo simpr oveq1d oveq2 wral ralbidv ralrimivva elfzouz
+      a1i oveq1 adantl adantlr simpll ad2antrr elfzelzd elfzelz cle wbr elfzle1
+      elfzoelz ad2antlr elfzle2 elfzofz letrd syl2anc eqeltrrd wss ssv seq3clss
+      zred elfzd rspcdva eleq1d ralrimiva fzofzp1 eqtrd ad4ant14 seq3p1 3eqtr4d
+      ex expcom a2d fzind2 mpcom ) IHIUCUDZTZAIDGHUEZUFZIEGHUEZUFZUPZAIHUGUFZTZ
+      XPMHIUHUIZAUAUJZXQUFZYEXSUFZUPZUKAHXQUFZHXSUFZUPZUKZAUBUJZXQUFZYMXSUFZUPZ
+      UKAYMULUMUDZXQUFZYQXSUFZUPZUKAYAUKUAUBIHIYEHUPZYHYKAUUAYFYIYGYJYEHXQUNYEH
+      XSUNUOUQYEYMUPZYHYPAUUBYFYNYGYOYEYMXQUNYEYMXSUNUOUQYEYQUPZYHYTAUUCYFYRYGY
+      SYEYQXQUNYEYQXSUNUOUQYEIUPZYHYAAUUDYFXRYGXTYEIXQUNYEIXSUNUOUQYLYCAYIHGUFY
+      JABCDURGHAYCHUSTZMHIUTUIZABUJZYBTZVAGJTZUUGURTZUUGGUFZURTZAUUIUUHOVBBVHZU
+      UGGJURVCVDZUUJADKTUUJCUJZURTZVAZUUPUUGUUODUDZURTZUUMPAUUJUUPVEZUUGUUODURK
+      URVFVGZVIABCEURGHUUFUUNUUJAELTUUQUUPUUGUUOEUDZURTZUUMQUUTUUGUUOEURLURVFVG
+      ZVIVJVSYMHIVKUDTZAYPYTAUVEYPYTUKAUVEVAZYPYTUVFYPVAZYNYQGUFZDUDZYOUVHEUDZY
+      RYSUVGUVIYOUVHDUDZUVJUVGYNYOUVHDUVFYPVLVMUVFUVKUVJUPZYPUVFYOUUODUDZYOUUOE
+      UDZUPZUVLCFUVHUUOUVHUPUVMUVKUVNUVJUUOUVHYODVNUUOUVHYOEVNUOUVFUURUVBUPZCFV
+      OZUVOCFVOBFYOUUGYOUPZUVPUVOCFUVRUURUVMUVBUVNUUGYOUUODVTUUGYOUUOEVTUOVPAUV
+      QBFVOUVEAUVPBCFFSVQVBUVFBCEFURGHYMUVEYMYBTZAYMHIVRZWAAUUHUULUVEUUNWBUVFUU
+      GHYMUCUDTZVAZAUUGXOTUUKFTZAUVEUWAWCUWBUUGHIAUUEUVEUWAUUFWDAIUSTUVEUWAAIHI
+      YDWEWDZUWAUUGUSTUVFUUGHYMWFWAZUWAHUUGWGWHUVFUUGHYMWIWAUWBUUGYMIUWBUUGUWEW
+      TUWBYMUVEYMUSTAUWAYMHIWJWKWTUWBIUWDWTUWAUUGYMWGWHUVFUUGHYMWLWAUVEYMIWGWHZ
+      AUWAUVEYMXOTUWFYMHIWMYMHIWLUIWKWNXANWOAUUGFTUUOFTVAZUVBFTUVEAUWGVAUURUVBF
+      SRWPWBFURWQUVFFWRVSAUUQUVCUVEUVDWBWSXBUVFUWCUVHFTBXOYQUUGYQUPUUKUVHFUUGYQ
+      GUNXCAUWCBXOVOUVEAUWCBXONXDVBUVEYQXOTAHIYMXEWAXBXBVBXFUVGBCDURGHYMUVEUVSA
+      YPUVTWKZAUUHUULUVEYPUUNXGZAUUQUUSUVEYPUVAXGXHUVGBCEURGHYMUWHUWIAUUQUVCUVE
+      YPUVDXGXHXIXJXKXLXMXN $.
+  $}
+
+  ${
     $d .+ b x y z $.  $d C a b x y z $.  $d F x y $.  $d G b x y z $.
     $d M x y z $.  $d N x y z $.  $d S a b x y z $.  $d T a b x y z $.
     $d ph x y $.
