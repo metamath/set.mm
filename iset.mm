@@ -98068,6 +98068,14 @@ $)
     HNONAAIJKAALM $.
 
   ${
+    uzidd.1 $e |- ( ph -> M e. ZZ ) $.
+    $( Membership of the least member in an upper set of integers.
+       (Contributed by Glauco Siliprandi, 23-Oct-2021.) $)
+    uzidd $p |- ( ph -> M e. ( ZZ>= ` M ) ) $=
+      ( cz wcel cuz cfv uzid syl ) ABDEBBFGECBHI $.
+  $}
+
+  ${
     $d k M $.
     $( The upper integers are all nonempty.  (Contributed by Mario Carneiro,
        16-Jan-2014.) $)
