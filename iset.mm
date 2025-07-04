@@ -147444,6 +147444,33 @@ $)
       NCDFXBLGYJVPYNXCXDZAUUNUUOUUPNYKXEXFYLUULNYKVPXNYKYKXGXHXJXIXK $.
   $}
 
+  ${
+    $d .+ k x y $.  $d F k x y $.  $d M k x y $.  $d N k x y $.  $d k ph x y $.
+    gsumsplit1r.b $e |- B = ( Base ` G ) $.
+    gsumsplit1r.p $e |- .+ = ( +g ` G ) $.
+    gsumsplit1r.g $e |- ( ph -> G e. V ) $.
+    gsumsplit1r.m $e |- ( ph -> M e. ZZ ) $.
+    gsumsplit1r.n $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
+    gsumsplit1r.f $e |- ( ph -> F : ( M ... ( N + 1 ) ) --> B ) $.
+    $( Splitting off the rightmost summand of a group sum.  This corresponds to
+       the (inductive) definition of a (finite) product in [Lang] p. 4, first
+       formula.  (Contributed by AV, 26-Dec-2023.) $)
+    gsumsplit1r $p |- ( ph -> ( G gsum F ) = ( ( G gsum ( F |` ( M ... N ) ) )
+                                             .+ ( F ` ( N + 1 ) ) ) ) $=
+      ( vx co cfv wcel syl cvv vy vk cgsu caddc cseq cfz cres peano2uz gsumval2
+      c1 cuz cv cfn cz eluzelz peano2zd fzfigd fexd vex fvexg sylancl adantr wa
+      cplusg plusgslid slotex a1i ovexg mp3an2i seq3p1 wss fzssp1 fssresd uzidd
+      eqeltrid resexg seq3-1 fvresd eqtrd fzp1ss sselda seq3fveq2 eqtr2d oveq1d
+      eluzfz1 3eqtrd ) AEDUCPGUJUDPZCDFUEZQGWHQZWGDQZCPEDFGUFPZUGZUCPZWJCPABCDE
+      FWGHIJKAGFUKQZRZWGWNRMFGUHSNUIAOUACTDFGMAOULZDQTRZWPWNRZADTRZWPTRZWQAFWGU
+      FPZBUMDNAFWGLAGAWOGUNRMFGUOSUPUQURZOUSZWPDTTUTVAVBZAWPUAULZCPTRZWTXETRZVC
+      WTACTRXGXFXCACEVDQZTJAEHRXHTRKEVDHVEVFSVOXGAUAUSVGWPXECTTTVHVIVBZVJAWIWMW
+      JCAWMGCWLFUEZQWIABCWLEFGHIJKMAXABWKDNWKXAVKAFGVLVGVMUIAOUACTUBWLDFFGAFLVN
+      AFXJQFWLQFDQAOUACTWLFLAWPWLQTRZWRAWLTRZWTXKAWSXLXBDWKTVPSXCWPWLTTUTVAVBZX
+      IVQAFWKDAWOFWKRMFGWESVRVSXMXDXIMAUBULZFUJUDPGUFPZRVCXNWKDAXOWKXNAFUNRXOWK
+      VKLFGVTSWAVRWBWCWDWF $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
