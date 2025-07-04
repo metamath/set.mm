@@ -147406,6 +147406,36 @@ $)
       XCXLFWLXAXKGXBWLWTXJWQWKCWSVSVTWAWBWDWEWFWGWH $.
   $}
 
+  ${
+    $d .+ m n x $.  $d .+ x y $.  $d B x y $.  $d F m n x $.  $d G m n x $.
+    $d G x y $.  $d M m n x $.  $d N m n x $.  $d V x $.  $d m n ph x $.
+    gsumval2.b $e |- B = ( Base ` G ) $.
+    gsumval2.p $e |- .+ = ( +g ` G ) $.
+    gsumval2.g $e |- ( ph -> G e. V ) $.
+    gsumval2.n $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
+    gsumval2.f $e |- ( ph -> F : ( M ... N ) --> B ) $.
+    $( Value of the group sum operation over a finite set of sequential
+       integers.  (Contributed by Mario Carneiro, 7-Dec-2014.) $)
+    gsumval2 $p |- ( ph -> ( G gsum F ) = ( seq M ( .+ , F ) ` N ) ) $=
+      ( vx vm vn wceq cfv wa wcel cgsu co cfz c0 cv c0g cseq cuz wex wo cio cfn
+      wrex cz eluzel2 syl eluzelz fzfigd igsumval simprr simprl wb eqcom fzopth
+      eqid bitr3id adantr mpbid simpld seqeq1d simprd fveq12d rexlimiva exlimiv
+      eqtrd cvv elexd oveq2 eqeq2d fveq2 anbi12d eqidd simpr jca rspcedvd oveq1
+      adantl seqeq1 fveq1d rexeqbidv spcedv impbid2 eluzfz2 n0i intnanrd bitr3d
+      ex wn biorf iotabidv weu seqex fvexg sylancr eueq sylib eqeq1 iota2 mpbii
+      syl2anc 3eqtr2d ) AEDUAUBFGUCUBZUDQZNUEZEUFRZQZSZXLOUEZPUEZUCUBZQZXNXSCDX
+      RUGZRZQZSZPXRUHRZUMZOUIZUJZNUKXNGCDFUGZRZQZNUKZYKANXLBCOPDEHULXOIXOVEJKAF
+      GAGFUHRZTZFUNTLFGUOUPZAYOGUNTLFGUQUPURMUSAYLYINAYHYLYIAYHYLYGYLOYEYLPYFXS
+      YFTZYESZXNYCYKYQYAYDUTYRXSGYBYJYRXRFCDYRXRFQZXSGQZYRYAYSYTSZYQYAYDVAYQYAU
+      UAVBYEYAXTXLQYQUUAXTXLVCFGXRXSVDVFVGVHZVIVJYRYSYTUUBVKVLVOVMVNAYLYHAYLSZY
+      GXLFXSUCUBZQZXNXSYJRZQZSZPYNUMOFAFVPTYLAFUNYPVQVGUUCUUHXLXLQZYLSZPGYNAYOY
+      LLVGYTUUHUUJVBUUCYTUUEUUIUUGYLYTUUDXLXLXSGFUCVRVSYTUUFYKXNXSGYJVTVSWAWGUU
+      CUUIYLUUCXLWBAYLWCWDWEYSYEUUHPYFYNXRFUHVTYSYAUUEYDUUGYSXTUUDXLXRFXSUCWFVS
+      YSYCUUFXNYSXSYBYJCDXRFWHWIVSWAWJWKWQWLAXQWRYHYIVBAXMXPAGXLTZXMWRAYOUUKLFG
+      WMUPXLGWNUPWOXQYHWSUPWPWTAYKYKQZYMYKQZYKVEAYKVPTZYLNXAZUULUUMVBAYJVPTYOUU
+      NCDFXBLGYJVPYNXCXDZAUUNUUOUUPNYKXEXFYLUULNYKVPXNYKYKXGXHXJXIXK $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
