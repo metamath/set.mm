@@ -147387,6 +147387,25 @@ $)
       XIXJXGXK $.
   $}
 
+  ${
+    $d .0. m n x $.  $d G m n x $.  $d V m n x $.
+    gsum0.z $e |- .0. = ( 0g ` G ) $.
+    $( Value of the empty group sum.  (Contributed by Mario Carneiro,
+       7-Dec-2014.) $)
+    gsum0g $p |- ( G e. V -> ( G gsum (/) ) = .0. ) $=
+      ( vx vm vn wcel c0 co wceq cv wa cfv wrex wex wo cvv eqid c0g cgsu cplusg
+      cfz cseq cuz cio cbs id 0ex a1i wf f0 igsumval eqidd jca orcd weu wb fn0g
+      wfn elex funfvex funfni sylancr eqeltrid eueq biantrur wn eluzfz1 n0i syl
+      neqcomd intnanrd nex biorfi bitri eubii sylib eqeq1 anbi2d rexbidv exbidv
+      nrex orbi12d iota2 syl2anc mpbid eqtrd ) ABHZAIUAJIIKZELZCKZMZIFLZGLZUCJZ
+      KZWKWOAUBNZIWNUDNZKZMZGWNUENZOZFPZQZEUFZCWIEIAUGNZWRFGIABRCXGSDWRSWIUHIRH
+      WIUIUJIXGIUKWIXGULUJUMWIWJCCKZMZWQCWSKZMZGXBOZFPZQZXFCKZWIXIXMWIWJXHWIIUN
+      WICUNUOUPWICRHZXEEUQZXNXOURWICATNZRDWITRUTARHXRRHZUSABVAXSRATATVBVCVDVEZW
+      IXPXQXTXPWLEUQXQECVFWLXEEWLWMXEWJWLISVGXDWMXCFXAGXBWOXBHZWQWTYAWPIYAWNWPH
+      WPIKVHWNWOVIWPWNVJVKVLVMWCVNVOVPVQVPVRXEXNECRWLWMXIXDXMWLWLXHWJWKCCVSVTWL
+      XCXLFWLXAXKGXBWLWTXJWQWKCWSVSVTWAWBWDWEWFWGWH $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
