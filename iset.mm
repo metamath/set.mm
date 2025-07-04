@@ -147494,6 +147494,18 @@ $)
       DWPWAWBWC $.
   $}
 
+  ${
+    gsumpr12val.b $e |- B = ( Base ` G ) $.
+    gsumpr12val.p $e |- .+ = ( +g ` G ) $.
+    gsumpr12val.g $e |- ( ph -> G e. V ) $.
+    gsumpr12val.f $e |- ( ph -> F : { 1 , 2 } --> B ) $.
+    $( Value of the group sum operation over the pair ` { 1 , 2 } ` .
+       (Contributed by AV, 14-Dec-2018.) $)
+    gsumpr12val $p |- ( ph -> ( G gsum F ) = ( ( F ` 1 ) .+ ( F ` 2 ) ) ) $=
+      ( c1 c2 1zzd caddc co wceq df-2 a1i gsumprval ) ABCDEKLFGHIAMLKKNOPAQRJS
+      $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
