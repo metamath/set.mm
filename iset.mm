@@ -150653,6 +150653,29 @@ $)
   $}
 
   ${
+    $d B a b x i $.  $d F a b i $.  $d G a b i $.  $d N a b x i $.
+    $d X a b x i $.
+    mulgnngsum.b $e |- B = ( Base ` G ) $.
+    mulgnngsum.t $e |- .x. = ( .g ` G ) $.
+    mulgnngsum.f $e |- F = ( x e. ( 1 ... N ) |-> X ) $.
+    $( Group multiple (exponentiation) operation at a positive integer
+       expressed by a group sum.  (Contributed by AV, 28-Dec-2023.) $)
+    mulgnngsum $p |- ( ( N e. NN /\ X e. B ) -> ( N .x. X ) = ( G gsum F ) ) $=
+      ( va cn wcel wa cfv c1 co cvv adantr cv vb vi cplusg cseq csn cgsu elnnuz
+      cxp cuz biimpi cfz cmpt eqidd simpr fvmptd elfznn fvconst2g syl2an eqtr4d
+      wceq a1i cfn 1zzd nnz fzfigd mptexg eqeltrid syl fvexg sylancl nnex snexg
+      cz vex xpexg sylancr basmex adantl plusgslid slotex simprr ovexg seq3fveq
+      mp3an2ani eqid fmptd gsumval2 mulgnn 3eqtr4rd ) FLMZGBMZNZFEUCOZDPUDOFWML
+      GUEZUHZPUDZOEDUFQFGCQWLKUAWMRUBDWOPFWJFPUIOZMZWKWJWRFUGUJSZWLUBTZPFUKQZMZ
+      NZWTDOGWTWOOZXCAWTGGXADBDAXAGULZUTXCJVAXCATZWTUTNGUMWLXBUNWLWKXBWJWKUNZSU
+      OWLWKWTLMXDGUTXBXGWTFUPLGWTBUQURUSWLKTZWQMZNZDRMZXHRMZXHDORMWLXKXIWLXAVBM
+      ZXKWLPFWLVCWJFVMMWKFVDSVEXMDXERJAXAGVBVFVGVHSKVNZXHDRRVIVJXJWORMZXLXHWOOR
+      MXJLRMWNRMZXOVKXJWKXPWLWKXIXGSGBVLVHLWNRRVOVPXNXHWORRVIVJXLWLWMRMZXLUATZR
+      MZNXSXHXRWMQRMXNWLERMZXQWKXTWJGBEHVQVRZEUCRVSVTVHWLXLXSWAXHXRWMRRRWBWDWCW
+      LBWMDEPFRHWMWEZYAWSWLAXAGBDWLWKXFXAMXGSJWFWGBWMWPCEFGHYBIWPWEWHWI $.
+  $}
+
+  ${
     mulg1.b $e |- B = ( Base ` G ) $.
     mulg1.m $e |- .x. = ( .g ` G ) $.
     ${
