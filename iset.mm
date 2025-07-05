@@ -150673,6 +150673,19 @@ $)
       MXJLRMWNRMZXOVKXJWKXPWLWKXIXGSGBVLVHLWNRRVOVPXNXHWORRVIVJXLWLWMRMZXLUATZR
       MZNXSXHXRWMQRMXNWLERMZXQWKXTWJGBEHVQVRZEUCRVSVTVHWLXLXSWAXHXRWMRRRWBWDWCW
       LBWMDEPFRHWMWEZYAWSWLAXAGBDWLWKXFXAMXGSJWFWGBWMWPCEFGHYBIWPWEWHWI $.
+
+    $( Group multiple (exponentiation) operation at a nonnegative integer
+       expressed by a group sum.  This corresponds to the definition in [Lang]
+       p. 6, second formula.  (Contributed by AV, 28-Dec-2023.) $)
+    mulgnn0gsum $p |- ( ( N e. NN0 /\ X e. B )
+                        -> ( N .x. X ) = ( G gsum F ) ) $=
+      ( wcel co cgsu wceq cc0 ex c0 cvv c1 cfz cn0 cn wo wi elnn0 mulgnngsum wa
+      c0g cfv basmex adantl eqid gsum0g syl cmpt oveq2 fz10 eqtrdi mpteq1d mpt0
+      eqtrid adantr oveq2d oveq1 mulg0 sylan9eq 3eqtr4rd jaoi sylbi imp ) FUAKZ
+      GBKZFGCLZEDMLZNZVKFUBKZFONZUCVLVOUDZFUEVPVRVQVPVLVOABCDEFGHIJUFPVQVLVOVQV
+      LUGZEQMLZEUHUIZVNVMVSERKZVTWANVLWBVQGBEHUJUKERWAWAULZUMUNVSDQEMVQDQNVLVQD
+      ASFTLZGUOZQJVQWEAQGUOQVQAWDQGVQWDSOTLQFOSTUPUQURUSAGUTURVAVBVCVQVLVMOGCLW
+      AFOGCVDBCEGWAHWCIVEVFVGPVHVIVJ $.
   $}
 
   ${
