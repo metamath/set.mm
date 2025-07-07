@@ -173227,6 +173227,64 @@ $)
     $}
   $}
 
+  ${
+    $d A a b r x $.  $d A c x $.  $d B b r x $.  $d B c x $.  $d F a b f r x $.
+    $d F c x $.  $d U a b f r x $.  $d U c x $.  $d ph r x $.
+    ivthreinc.1 $e |- ( ph -> A e. RR ) $.
+    ivthreinc.2 $e |- ( ph -> B e. RR ) $.
+    ivthreinc.3 $e |- ( ph -> U e. RR ) $.
+    ivthreinc.4 $e |- ( ph -> A < B ) $.
+    ivthreinc.7 $e |- ( ph -> F e. ( RR -cn-> RR ) ) $.
+    ivthreinc.9 $e |- ( ph -> ( ( F ` A ) < U /\ U < ( F ` B ) ) ) $.
+    ivthreinc.i $e |- ( ph -> A. f ( f e. ( RR -cn-> RR ) ->
+      A. a e. RR A. b e. RR ( ( a < b /\ ( f ` a ) < 0 /\ 0 < ( f ` b ) )
+        -> E. x e. RR ( a < x /\ x < b /\ ( f ` x ) = 0 ) ) ) ) $.
+    $( Restating the intermediate value theorem.  Given a hypothesis stating
+       the intermediate value theorem (in a strong form which is not provable
+       given our axioms alone), provide a conclusion similar to the theorem as
+       stated in the Metamath Proof Explorer (which is also similar to how we
+       state the theorem for a strictly monotonic function at ~ ivthinc ).
+       Being able to have a hypothesis stating the intermediate value theorem
+       will be helpful when it comes time to show that it implies a
+       constructive taboo.  This version of the theorem requires that the
+       function ` F ` is continuous on the entire real line, not just
+       ` ( A [,] B ) ` which may be an unnecessary condition but which is
+       sufficient for the way we want to use it.  (Contributed by Jim Kingdon,
+       7-Jul-2025.) $)
+    ivthreinc $p |- ( ph -> E. c e. ( A (,) B ) ( F ` c ) = U ) $=
+      ( clt cr cc0 vr cv wbr cfv cmin cmpt wceq w3a cioo wrex eqid fveq2 oveq1d
+      co ccncf wcel cncff syl ffvelcdmd resubcld fvmptd3 simpld sublt0d eqbrtrd
+      wf mpbird simprd posdifd mpbid breqtrrd 3jca breq2 breq2d 3anbi2d rexbidv
+      wi 3anbi13d imbi12d wral breq1 breq1d 3anbi12d 3anbi1d ralbidv ffvelcdmda
+      wa adantr fmpttd cc wss wb ax-resscn a1i feqmptd ssid cncfss mp2an sselid
+      eqeltrrd recnd cncfmptc syl3anc subcncf cncfcdm syl2anc mptex eleq1 fveq1
+      wal reex 3anbi23d eqeq1d 3anbi3d mpd rspcdva rexrd simprl simprr1 simprr2
+      spcv cxr elioo4g sylanbrc simprr3 eqtr3d subeq0d fveqeq2 rspcev rexlimddv
+      jca ) ACBUBZRUCZYKDRUCZYKUASUAUBZGUDZEUEUNZUFZUDZTUGZUHZJUBZGUDEUGZJCDUIU
+      NZUJZBSACDRUCZCYQUDZTRUCZTDYQUDZRUCZUHZYTBSUJZAUUEUUGUUINAUUFCGUDZEUEUNZT
+      RAUACYPUUMSYQSYQUKZYNCUGYOUULEUEYNCGULUMKAUULEASSCGAGSSUOUNZUPSSGVEZOSSGU
+      QURZKUSZMUTVAAUUMTRUCUULERUCZAUUSEDGUDZRUCZPVBAUULEUURMVCVFVDATUUTEUEUNZU
+      UHRAUVATUVBRUCAUUSUVAPVGAEUUTMASSDGUUQLUSZVHVIAUADYPUVBSYQSUUNYNDUGYOUUTE
+      UEYNDGULUMLAUUTEUVCMUTVAVJVKACIUBZRUCZUUGTUVDYQUDZRUCZUHZYLYKUVDRUCZYSUHZ
+      BSUJZVPZUUJUUKVPISDUVDDUGZUVHUUJUVKUUKUVMUVEUUEUVGUUIUUGUVDDCRVLUVMUVFUUH
+      TRUVDDYQULVMVQUVMUVJYTBSUVMUVIYMYLYSUVDDYKRVLVNVOVRAHUBZUVDRUCZUVNYQUDZTR
+      UCZUVGUHZUVNYKRUCZUVIYSUHZBSUJZVPZISVSZUVLISVSHSCUVNCUGZUWBUVLISUWDUVRUVH
+      UWAUVKUWDUVOUVEUVQUUGUVGUVNCUVDRVTUWDUVPUUFTRUVNCYQULWAWBUWDUVTUVJBSUWDUV
+      SYLUVIYSUVNCYKRVTWCVOVRWDAYQUUOUPZUWCHSVSZAUWESSYQVEZAUASYPSAYNSUPZWFYOEA
+      SSYNGUUQWEAESUPZUWHMWGUTWHASWIWJZYQSWIUOUNZUPUWEUWGWKUWJAWLWMZAUAYOESAGUA
+      SYOUFUWKAUASSGUUQWNAUUOUWKGUWJWIWIWJZUUOUWKWJWLWIWOZSSWIWPWQOWRWSAEWIUPZU
+      WJUWMUASEUFUWKUPAEMWTZUWLUWMAUWNWMUAESWIXAXBXCSWISYQXDXEVFAFUBZUUOUPZUVOU
+      VNUWQUDZTRUCZTUVDUWQUDZRUCZUHZUVSUVIYKUWQUDZTUGZUHZBSUJZVPZISVSZHSVSZVPZF
+      XIUWEUWFVPZQUXKUXLFYQUASYPXJXFUWQYQUGZUWRUWEUXJUWFUWQYQUUOXGUXMUXIUWCHSUX
+      MUXHUWBISUXMUXCUVRUXGUWAUXMUWTUVQUXBUVGUVOUXMUWSUVPTRUVNUWQYQXHWAUXMUXAUV
+      FTRUVDUWQYQXHVMXKUXMUXFUVTBSUXMUXEYSUVSUVIUXMUXDYRTYKUWQYQXHXLXMVOVRWDWDV
+      RXTURXNKXOLXOXNAYKSUPZYTWFZWFZYKUUCUPZYKGUDZEUGZUUDUXPCYAUPZDYAUPZUXNUHYL
+      YMWFUXQUXPUXTUYAUXNUXPCACSUPUXOKWGXPUXPDADSUPUXOLWGXPAUXNYTXQZVKUXPYLYMYL
+      YMYSUXNAXRYLYMYSUXNAXSYJCDYKYBYCUXPUXREUXPUXRUXPSSYKGAUUPUXOUUQWGUYBUSZWT
+      AUWOUXOUWPWGUXPYRUXREUEUNZTUXPUAYKYPUYDSYQSUUNYNYKUGYOUXREUEYNYKGULUMUYBU
+      XPUXREUYCAUWIUXOMWGUTVAYLYMYSUXNAYDYEYFUUBUXSJYKUUCUUAYKEGYGYHXEYI $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
