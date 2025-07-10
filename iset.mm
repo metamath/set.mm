@@ -31582,6 +31582,31 @@ $)
       SUAUBUCAUDUE $.
   $}
 
+  $( Deduce truth from a conditional operator value.  (Contributed by Thierry
+     Arnoux, 20-Feb-2025.) $)
+  ifnetruedc $p |- ( ( DECID ph /\ A =/= B /\ if ( ph , A , B ) = A )
+      -> ph ) $=
+    ( wdc wne cif wceq w3a simp1 wn iffalse adantl simpl3 simpl2 eqnetrd neneqd
+    wa condandc mpcom ) ADZTBCEZABCFZBGZHZATUAUCIUDAUBCGZAJZUEUDABCKLUDUFQZUBCU
+    GUBBCTUAUCUFMTUAUCUFNOPRS $.
+
+  $( Deduce falsehood from a conditional operator value.  (Contributed by
+     Thierry Arnoux, 20-Feb-2025.) $)
+  ifnefals $p |- ( ( A =/= B /\ if ( ph , A , B ) = B ) -> -. ph ) $=
+    ( wne cif wceq iftrue adantl simplr simpll necomd eqnetrd neneqd pm2.65da
+    wa ) BCDZABCEZCFZOZAQBFZATSABCGHSAOZQBUAQCBPRAIUABCPRAJKLMN $.
+
+  $( The converse of ~ ifbi holds if the two values are not equal.
+     (Contributed by Thierry Arnoux, 20-Feb-2025.) $)
+  ifnebibdc $p |- ( ( DECID ph /\ DECID ps /\ A =/= B ) ->
+               ( if ( ph , A , B ) = if ( ps , A , B ) <-> ( ph <-> ps ) ) ) $=
+    ( wdc wne w3a cif wceq wb wa wn wo eqifdc 3ad2ant2 adantld simpl jca2 syl6
+    wi ifnetruedc 3expia 3adant2 pm5.1 ifnefals ex 3ad2ant3 pm5.21 jaod impbid1
+    sylbid ifbi ) AEZBEZCDFZGZACDHZBCDHIZABJZUPURBUQCIZKZBLZUQDIZKZMZUSUNUMURVE
+    JUOBUQCDNOUPVAUSVDUPVAABKUSUPVAABUPUTABUMUOUTATUNUMUOUTAACDUAUBUCPBUTQRABUD
+    SUPVDALZVBKUSUPVDVFVBUPVCVFVBUOUMVCVFTUNUOVCVFACDUEUFUGPVBVCQRABUHSUIUKABCD
+    ULUJ $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
