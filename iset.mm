@@ -185481,6 +185481,20 @@ $)
       YBXGWRWSWTXA $.
   $}
 
+  ${
+    $d i j x y z $.
+    $( Equinumerosity of the natural numbers and ` NN+oo ` is equivalent to the
+       Limited Principle of Omniscience (LPO).  Remark in Section 1.1 of
+       [Pradic2025], p. 2.  (Contributed by Jim Kingdon, 8-Jul-2025.) $)
+    nnnninfen $p |- ( _om ~~ NN+oo <-> _om e. Omni ) $=
+      ( vx vy vz vi vj com xnninf cen wbr comni wcel nninfomni enomni mpbiri cn
+      wral cv wfo wex c1o weq cdom cwomni lpowlpo nninfwlpo sylibr cdju nninfct
+      wdc cmpt wb infnninf elex2 ctm mp2b sylib nninfinf ctinf syl3anbrc nnenom
+      a1i entr sylancl ensymd impbii ) FGHIZFJKZVFVGGJKLFGMNVGGFVGGOHIZOFHIGFHI
+      VGABUAUIBGPAGPZFGCQZRCSZFGUBIZVHVGFUCKVIUDABUEUFVGFGTUGVJRCSZVKCUHDFTUJZG
+      KEQGKESVMVKUKDULEVNGUMEGCUNUOUPVLVGUQVAABGCURUSUTGOFVBVCVDVE $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
