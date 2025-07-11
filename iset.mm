@@ -107922,6 +107922,24 @@ $)
     $)
   $}
 
+  ${
+    $d i m n $.
+    $( ` NN+oo ` is infinte.  (Contributed by Jim Kingdon, 8-Jul-2025.) $)
+    nninfinf $p |- _om ~<_ NN+oo $=
+      ( vn vm vi com xnninf wtru cv wcel c1o c0 cif cvv wi a1i wa wceq wral c2o
+      wb syl2anc cdom wbr nnnninf 1lt2o 0lt2o wdc simpr simpll nndcel ralrimiva
+      cmpt ifcldcd mpteqb syl wal nfv nfan elnn expcom ad2antrr ad2antlr simplr
+      nfra1 wne ifnebibdc mp3an3 ralbidva biimpa pm5.21ndd alrimi axext4 sylibr
+      1n0 rsp ex elequ2 ifbid ralrimivw impbid1 bitrd omex nninfex dom3d mptru
+      ) DEUAUBFABDECDCGZAGZHZIJKZUKZCDWEBGZHZIJKZUKZLLWFDHZWIEHMFCWFUCNWNWJDHZO
+      ZWIWMPZWFWJPZSMFWPWQWHWLPZCDQZWRWPWHRHZCDQWQWTSWPXACDWPWEDHZOZWGIJRIRHXCU
+      DNJRHXCUENXCXBWNWGUFZWPXBUGZWNWOXBUHWEWFUITZULUJCDWHWLRUMUNWPWTWRWPWTWRWP
+      WTOZWGWKSZCUOWRXGXHCWPWTCWPCUPWSCDVCUQXGXBWGWKWNWGXBMWOWTWGWNXBWEWFURUSUT
+      WOWKXBMWNWTWKWOXBWEWJURUSVAXGXHCDQZXBXHMWPWTXIWPWSXHCDXCXDWKUFZWSXHSZXFXC
+      XBWOXJXEWNWOXBVBWEWJUITXDXJIJVDXKVMWGWKIJVEVFTVGVHXHCDVNUNVIVJABCVKVLVOWR
+      WSCDWRWGWKIJABCVPVQVRVSVTNDLHFWANELHFWBNWCWD $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
