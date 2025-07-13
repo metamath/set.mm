@@ -16370,8 +16370,11 @@ New usage of "distrnq" is discouraged (7 uses).
 New usage of "distrpi" is discouraged (5 uses).
 New usage of "distrpr" is discouraged (7 uses).
 New usage of "distrsr" is discouraged (3 uses).
+New usage of "div0OLD" is discouraged (0 uses).
+New usage of "div11OLD" is discouraged (0 uses).
 New usage of "divccnOLD" is discouraged (0 uses).
 New usage of "divcnOLD" is discouraged (0 uses).
+New usage of "dividOLD" is discouraged (0 uses).
 New usage of "djaclN" is discouraged (0 uses).
 New usage of "djaffvalN" is discouraged (1 uses).
 New usage of "djafvalN" is discouraged (1 uses).
@@ -17000,6 +17003,7 @@ New usage of "grothpw" is discouraged (0 uses).
 New usage of "grothpwex" is discouraged (0 uses).
 New usage of "grpbaseOLD" is discouraged (0 uses).
 New usage of "grpbasex" is discouraged (3 uses).
+New usage of "grpinv11OLD" is discouraged (0 uses).
 New usage of "grpinvfvalALT" is discouraged (0 uses).
 New usage of "grpo2inv" is discouraged (4 uses).
 New usage of "grpoass" is discouraged (16 uses).
@@ -20516,8 +20520,11 @@ Proof modification of "difidALT" is discouraged (14 steps).
 Proof modification of "difopabOLD" is discouraged (171 steps).
 Proof modification of "dih2dimbALTN" is discouraged (450 steps).
 Proof modification of "disjOLD" is discouraged (71 steps).
+Proof modification of "div0OLD" is discouraged (41 steps).
+Proof modification of "div11OLD" is discouraged (119 steps).
 Proof modification of "divccnOLD" is discouraged (105 steps).
 Proof modification of "divcnOLD" is discouraged (642 steps).
+Proof modification of "dividOLD" is discouraged (31 steps).
 Proof modification of "dju1p1e2" is discouraged (72 steps).
 Proof modification of "dju1p1e2ALT" is discouraged (34 steps).
 Proof modification of "djuexALT" is discouraged (51 steps).
@@ -21056,6 +21063,7 @@ Proof modification of "ghomidOLD" is discouraged (178 steps).
 Proof modification of "ghomlinOLD" is discouraged (161 steps).
 Proof modification of "glbconNOLD" is discouraged (904 steps).
 Proof modification of "grpbaseOLD" is discouraged (11 steps).
+Proof modification of "grpinv11OLD" is discouraged (88 steps).
 Proof modification of "grpinvfvalALT" is discouraged (161 steps).
 Proof modification of "grposnOLD" is discouraged (291 steps).
 Proof modification of "grpplusgOLD" is discouraged (11 steps).
