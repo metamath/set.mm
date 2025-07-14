@@ -70788,6 +70788,37 @@ $)
   $}
 
   ${
+    $d A f i n k w $.  $d X k n w $.  $d Y n $.  $d ph n k w $.
+    nninfninc.a $e |- ( ph -> A e. NN+oo ) $.
+    nninfninc.x $e |- ( ph -> X e. _om ) $.
+    nninfninc.y $e |- ( ph -> Y e. _om ) $.
+    nninfninc.le $e |- ( ph -> X C_ Y ) $.
+    nninfninc.z $e |- ( ph -> ( A ` X ) = (/) ) $.
+    $( All values beyond a zero in an ` NN+oo ` sequence are zero.  This is
+       another way of stating that elements of ` NN+oo ` are nonincreasing.
+       (Contributed by Jim Kingdon, 12-Jul-2025.) $)
+    nninfninc $p |- ( ph -> ( A ` Y ) = (/) ) $=
+      ( vi wss cfv c0 wceq cv wi com sseq2 wcel wa vn vw fveqeq2 imbi12d anbi2d
+      vk vf csuc ss0 adantl fveq2d adantr eqtr3d suceq sseq12d wral simplrl c2o
+      fveq2 co xnninf fveq1 ralbidv df-nninf elrab2 sylib simprd simpll rspcdva
+      cmap syl wb ad2antrl nnsssuc syl2anc mpbird simpllr mp2and sseqtrd simprr
+      simpr wo peano2 mpbid elsuci mpjaodan exp31 finds impancom ralrimiva mpd
+      com12 ) ACDKZDBLMNZHACUAOZKZWOBLMNZPZWMWNPUAQDWODNWPWMWQWNWODCRWODMBUCUDA
+      WRUAQAWPWOQSZWQWSAWPTZWQACUBOZKZTZXABLMNZPACMKZTZMBLZMNZPACUFOZKZTZXIBLZM
+      NZPZACXIUHZKZTZXOBLZMNZPWTWQPUBUFWOXAMNZXCXFXDXHXTXBXEAXAMCRUEXAMMBUCUDXA
+      XINZXCXKXDXMYAXBXJAXAXICRUEXAXIMBUCUDXAXONZXCXQXDXSYBXBXPAXAXOCRUEXAXOMBU
+      CUDXAWONZXCWTXDWQYCXBWPAXAWOCRUEXAWOMBUCUDXFCBLZXGMXFCMBXECMNACUIUJUKAYDM
+      NZXEIULUMXIQSZXNXQXSYFXNTZXQTZCXOSZXSCXONZYHYITZXRMKXSYKXRXLMYKJOZUHZBLZY
+      LBLZKZXRXLKJQXIYLXINZYNXRYOXLYQYMXOBYLXIUNUKYLXIBUSUOYKAYPJQUPZYGAXPYIUQZ
+      ABURQVJUTZSZYRABVASUUAYRTEYMUGOZLZYLUUBLZKZJQUPYRUGBYTVAUUBBNZUUEYPJQUUFU
+      UCYNUUDYOYMUUBBVBYLUUBBVBUOVCUGJVDVEVFVGVKYHYFYIYFXNXQVHZULZVIYKAXJXMYSYK
+      XJYIYHYIWAYKCQSZYFXJYIVLYHUUIYIAUUIYGXPFVMZULUUHCXIVNVOVPYFXNXQYIVQVRVSXR
+      UIVKYHYJTZYDXRMUUKCXOBYHYJWAUKUUKAYEYGAXPYJUQIVKUMYHCXOUHSZYIYJWBYHXPUULY
+      GAXPVTYHUUIXOQSZXPUULVLUUJYHYFUUMUUGXIWCVKCXOVNVOWDCXOWEVKWFWGWHWLWIWJGVI
+      WK $.
+  $}
+
+  ${
     $d f i j $.
     $( The point at infinity in ` NN+oo ` is the constant sequence equal to
        ` 1o ` .  Note that with our encoding of functions, that constant
