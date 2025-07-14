@@ -2818,7 +2818,7 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
 </tr>
 
 <tr>
-  <td rowspan="4">iotaex</td>
+  <td rowspan="5">iotaex</td>
   <td>~ iotacl , ~ euiotaex</td>
   <td>when there is exactly one value for which the
   expression holds</td>
@@ -2841,6 +2841,12 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
   <td>when all of the possible values for the expression
   are subsets of a set (that is, use a set for ` A ` if
   you are looking for an iotaex-like effect)</td>
+</tr>
+
+<tr>
+  <td>~ iotaexel</td>
+  <td>when all of the possible values for the expression
+  are elements of a set</td>
 </tr>
 
 <tr>
@@ -7991,9 +7997,9 @@ or ~ ssfiexmid </TD>
 
 <TR>
   <TD>seqfeq4</TD>
-  <TD>~ seqfeq3</TD>
-  <TD>The sequence has to be defined on ` ( ZZ>= `` M ) ` not just
-  ` ( M ... N ) `</TD>
+  <TD>~ seqfeq4g</TD>
+  <TD>If the sequence's values are elements of ` S ` on all of
+  ` ( ZZ>= `` M ) ` see ~ seqfeq3</TD>
 </TR>
 
 <TR>
@@ -10434,6 +10440,13 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>~ topnpropgd</TD>
 </TR>
 
+<tr>
+  <td>df-gsum</td>
+  <td>~ df-igsum</td>
+  <td>the set.mm definition would require more decidability than
+  we want to require in many cases</td>
+</tr>
+
 <TR>
   <TD>prdsbasex</TD>
   <TD><I>none</I></TD>
@@ -10631,87 +10644,40 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>gsumvalx</td>
-  <td><i>none</i></td>
-  <td>Would seem to need ` DECID ran F C_ O ` and
-  ` DECID A e. ran ... ` conditions.  Also, probably
-  a closer look at how to express the finite sums
-  here and in ~ df-gsum (most likely would need to
-  define the tail end of the sequence to consist of
-  occurences of the identity, as we do in ~ df-sumdc
-  and ~ df-proddc ).
-  </td>
+  <td>~ igsumvalx</td>
+  <td>reflects differences between df-gsum and ~ df-igsum</td>
 </tr>
 
 <tr>
   <td>gsumval</td>
-  <td><i>none</i></td>
-  <td>likely the same caveats as gsumvalx would apply</td>
+  <td>~ igsumval</td>
+  <td>reflects differences between df-gsum and ~ df-igsum</td>
 </tr>
 
 <tr>
-  <td>gsumpropd</td>
+  <td>gsumpropd2lem</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses gsumvalx</td>
-</tr>
-
-<tr>
-  <td>gsumpropd2lem , gsumpropd2</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses gsumvalx</td>
-</tr>
-
-<tr>
-  <td>gsummgmpropd</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses gsumpropd2</td>
-</tr>
-
-<tr>
-  <td>gsumress</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses gsumval</td>
+  <td>not needed; ~ gsumpropd2 is proved another way</td>
 </tr>
 
 <tr>
   <td>gsumval1</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses gsumval</td>
+  <td>would require different conditions but possibly not
+  relevant given ~ df-igsum</td>
 </tr>
 
 <tr>
   <td>gsum0</td>
-  <td><i>none</i></td>
-  <td>would seem to need a ` G e. _V ` condition</td>
+  <td>~ gsum0g</td>
+  <td>adds set existence condition</td>
 </tr>
 
 <tr>
   <td>gsumval2a</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses gsumval</td>
-</tr>
-
-<tr>
-  <td>gsumval2</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses several theorems we do not have</td>
-</tr>
-
-<tr>
-  <td>gsumsplit1r</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses several theorems we do not have</td>
-</tr>
-
-<tr>
-  <td>gsumprval</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses several theorems we do not have</td>
-</tr>
-
-<tr>
-  <td>gsumpr12val</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses gsumprval</td>
+  <td>~ gsumval2</td>
+  <td>this is just ~ gsumval2 with additional hypotheses, so is
+  not needed</td>
 </tr>
 
 <tr>
@@ -10900,18 +10866,6 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>mulgfvi</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses case elimination on ` G e. _V `</td>
-</tr>
-
-<tr>
-  <td>mulgnngsum</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses gsumval2</td>
-</tr>
-
-<tr>
-  <td>mulgnn0gsum</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses mulgnngsum and gsum0</td>
 </tr>
 
 <tr>
