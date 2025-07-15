@@ -107835,6 +107835,27 @@ $)
       XOXJXNXKWKWHVRWIWJVRVSVTWAQWBWCWGGJWDWE $.
   $}
 
+  $( The set of extended nonnegative integers is equinumerous to the set of
+     natural numbers.  (Contributed by Jim Kingdon, 14-Jul-2025.) $)
+  xnn0nnen $p |- NN0* ~~ NN $=
+    ( vx cxnn0 c1 cpnf csn cn0 cun wbr wfn ccnv wa wceq pnfex cz neg1z wcel cc0
+    co ax-mp ax-1cn cneg cuz cfv cn cop cid cres wf1o cen cin fnresi elexi fnsn
+    c0 pm3.2i cv wn disj wne nn0nepnf nelsn mprgbir fnun mp2an wb uncom df-xnn0
+    syl eqcomi fneq12 mpbi cfzo neg1lt0 nn0nlt0 elsni eleq1d mtbiri cnvun cnvsn
+    clt cnvresid uneq12i eqtri fneq1i mpbir caddc fzosn cmin negsubdii 1m1e0 cc
+    mt2 subcli negeq0 eqtr3i oveq2i nn0uz fneq2i cle 0z neg1rr 0re ltleii eluz2
+    mpbir3an fzouzsplit dff1o4 cvv nn0ex snex unex eqeltri f1oen uzennn entri )
+    BCUAZUBUCZUDBXQDXPUEEZUFFUGZGZUHZBXQUIHYAXTBIZXTJZXQIZKYBYDXSXRGZFDEZGZIZYB
+    XSFIZXRYFIZKFYFUJUNLZYHYIYJFUKZDXPMXPNOULZUMUOYKAUPZYFPUQZAFAFYFURYNFPZYNDU
+    SYOYNUTYNDVAVHVBFYFXSXRVCVDYEXTLYGBLYHYBVEXSXRVFBYGVGVIYGBYEXTVJVDVKYDYCXPQ
+    VLRZQUBUCZGZIZYCXPEZFGZIZYTUUCXPDUEEZXSGZUUBIZUUDUUAIZYIKUUAFUJUNLZUUFUUGYI
+    XPDYMMUMYLUOUUHYPUQAUUAAUUAFURYNUUAPZYPXPFPZUUJXPQVTHVMXPVNWLUUIYNXPFYNXPVO
+    VPVQVBUUAFUUDXSVCVDUUBYCUUEYCXRJZXSJZGUUEXRXSVRUUKUUDUULXSDXPMYMVSFWAWBWCWD
+    WEUUBYSYCUUAYQFYRXPXPCWFRZVLRZUUAYQXPNPZUUNUUALOXPWGSUUMQXPVLCCWHRZUAZUUMQC
+    CTTWIUUPQLZUUQQLZWJUUPWKPUURUUSVECCTTWMUUPWNSVKWOWPWOWQWBWRVKXQYSYCQXQPZXQY
+    SLUUTUUOQNPXPQWSHOWTXPQXAXBVMXCXPQXDXEXPQXFSWRWEUOBXQXTXGWEBXQXTBYGXHVGFYFX
+    IDMXJXKXLXMSUUOXQUDUIHOXPXNSXO $.
+
   ${
     $d i n $.
     fxnn0nninf.g $e |- G = frec ( ( x e. ZZ |-> ( x + 1 ) ) , 0 ) $.
