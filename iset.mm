@@ -31582,6 +31582,31 @@ $)
       SUAUBUCAUDUE $.
   $}
 
+  $( Deduce truth from a conditional operator value.  (Contributed by Thierry
+     Arnoux, 20-Feb-2025.) $)
+  ifnetruedc $p |- ( ( DECID ph /\ A =/= B /\ if ( ph , A , B ) = A )
+      -> ph ) $=
+    ( wdc wne cif wceq w3a simp1 wn iffalse adantl simpl3 simpl2 eqnetrd neneqd
+    wa condandc mpcom ) ADZTBCEZABCFZBGZHZATUAUCIUDAUBCGZAJZUEUDABCKLUDUFQZUBCU
+    GUBBCTUAUCUFMTUAUCUFNOPRS $.
+
+  $( Deduce falsehood from a conditional operator value.  (Contributed by
+     Thierry Arnoux, 20-Feb-2025.) $)
+  ifnefals $p |- ( ( A =/= B /\ if ( ph , A , B ) = B ) -> -. ph ) $=
+    ( wne cif wceq iftrue adantl simplr simpll necomd eqnetrd neneqd pm2.65da
+    wa ) BCDZABCEZCFZOZAQBFZATSABCGHSAOZQBUAQCBPRAIUABCPRAJKLMN $.
+
+  $( The converse of ~ ifbi holds if the two values are not equal.
+     (Contributed by Thierry Arnoux, 20-Feb-2025.) $)
+  ifnebibdc $p |- ( ( DECID ph /\ DECID ps /\ A =/= B ) ->
+               ( if ( ph , A , B ) = if ( ps , A , B ) <-> ( ph <-> ps ) ) ) $=
+    ( wdc wne w3a cif wceq wb wa wn wo eqifdc 3ad2ant2 adantld simpl jca2 syl6
+    wi ifnetruedc 3expia 3adant2 pm5.1 ifnefals ex 3ad2ant3 pm5.21 jaod impbid1
+    sylbid ifbi ) AEZBEZCDFZGZACDHZBCDHIZABJZUPURBUQCIZKZBLZUQDIZKZMZUSUNUMURVE
+    JUOBUQCDNOUPVAUSVDUPVAABKUSUPVAABUPUTABUMUOUTATUNUMUOUTAACDUAUBUCPBUTQRABUD
+    SUPVDALZVBKUSUPVDVFVBUPVCVFVBUOUMVCVFTUNUOVCVFACDUEUFUGPVBVCQRABUHSUIUKABCD
+    ULUJ $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -70763,6 +70788,37 @@ $)
   $}
 
   ${
+    $d A f i n k w $.  $d X k n w $.  $d Y n $.  $d ph n k w $.
+    nninfninc.a $e |- ( ph -> A e. NN+oo ) $.
+    nninfninc.x $e |- ( ph -> X e. _om ) $.
+    nninfninc.y $e |- ( ph -> Y e. _om ) $.
+    nninfninc.le $e |- ( ph -> X C_ Y ) $.
+    nninfninc.z $e |- ( ph -> ( A ` X ) = (/) ) $.
+    $( All values beyond a zero in an ` NN+oo ` sequence are zero.  This is
+       another way of stating that elements of ` NN+oo ` are nonincreasing.
+       (Contributed by Jim Kingdon, 12-Jul-2025.) $)
+    nninfninc $p |- ( ph -> ( A ` Y ) = (/) ) $=
+      ( vi wss cfv c0 wceq cv wi com sseq2 wcel wa vn vw fveqeq2 imbi12d anbi2d
+      vk vf csuc ss0 adantl fveq2d adantr eqtr3d suceq sseq12d wral simplrl c2o
+      fveq2 co xnninf fveq1 ralbidv df-nninf elrab2 sylib simprd simpll rspcdva
+      cmap syl wb ad2antrl nnsssuc syl2anc mpbird simpllr mp2and sseqtrd simprr
+      simpr wo peano2 mpbid elsuci mpjaodan exp31 finds impancom ralrimiva mpd
+      com12 ) ACDKZDBLMNZHACUAOZKZWOBLMNZPZWMWNPUAQDWODNWPWMWQWNWODCRWODMBUCUDA
+      WRUAQAWPWOQSZWQWSAWPTZWQACUBOZKZTZXABLMNZPACMKZTZMBLZMNZPACUFOZKZTZXIBLZM
+      NZPZACXIUHZKZTZXOBLZMNZPWTWQPUBUFWOXAMNZXCXFXDXHXTXBXEAXAMCRUEXAMMBUCUDXA
+      XINZXCXKXDXMYAXBXJAXAXICRUEXAXIMBUCUDXAXONZXCXQXDXSYBXBXPAXAXOCRUEXAXOMBU
+      CUDXAWONZXCWTXDWQYCXBWPAXAWOCRUEXAWOMBUCUDXFCBLZXGMXFCMBXECMNACUIUJUKAYDM
+      NZXEIULUMXIQSZXNXQXSYFXNTZXQTZCXOSZXSCXONZYHYITZXRMKXSYKXRXLMYKJOZUHZBLZY
+      LBLZKZXRXLKJQXIYLXINZYNXRYOXLYQYMXOBYLXIUNUKYLXIBUSUOYKAYPJQUPZYGAXPYIUQZ
+      ABURQVJUTZSZYRABVASUUAYRTEYMUGOZLZYLUUBLZKZJQUPYRUGBYTVAUUBBNZUUEYPJQUUFU
+      UCYNUUDYOYMUUBBVBYLUUBBVBUOVCUGJVDVEVFVGVKYHYFYIYFXNXQVHZULZVIYKAXJXMYSYK
+      XJYIYHYIWAYKCQSZYFXJYIVLYHUUIYIAUUIYGXPFVMZULUUHCXIVNVOVPYFXNXQYIVQVRVSXR
+      UIVKYHYJTZYDXRMUUKCXOBYHYJWAUKUUKAYEYGAXPYJUQIVKUMYHCXOUHSZYIYJWBYHXPUULY
+      GAXPVTYHUUIXOQSZXPUULVLUUJYHYFUUMUUGXIWCVKCXOVNVOWDCXOWEVKWFWGWHWLWIWJGVI
+      WK $.
+  $}
+
+  ${
     $d f i j $.
     $( The point at infinity in ` NN+oo ` is the constant sequence equal to
        ` 1o ` .  Note that with our encoding of functions, that constant
@@ -107810,6 +107866,27 @@ $)
       XOXJXNXKWKWHVRWIWJVRVSVTWAQWBWCWGGJWDWE $.
   $}
 
+  $( The set of extended nonnegative integers is equinumerous to the set of
+     natural numbers.  (Contributed by Jim Kingdon, 14-Jul-2025.) $)
+  xnn0nnen $p |- NN0* ~~ NN $=
+    ( vx cxnn0 c1 cpnf csn cn0 cun wbr wfn ccnv wa wceq pnfex cz neg1z wcel cc0
+    co ax-mp ax-1cn cneg cuz cfv cn cop cid cres wf1o cen cin fnresi elexi fnsn
+    c0 pm3.2i cv wn disj wne nn0nepnf nelsn mprgbir fnun mp2an wb uncom df-xnn0
+    syl eqcomi fneq12 mpbi cfzo neg1lt0 nn0nlt0 elsni eleq1d mtbiri cnvun cnvsn
+    clt cnvresid uneq12i eqtri fneq1i mpbir caddc fzosn cmin negsubdii 1m1e0 cc
+    mt2 subcli negeq0 eqtr3i oveq2i nn0uz fneq2i cle 0z neg1rr 0re ltleii eluz2
+    mpbir3an fzouzsplit dff1o4 cvv nn0ex snex unex eqeltri f1oen uzennn entri )
+    BCUAZUBUCZUDBXQDXPUEEZUFFUGZGZUHZBXQUIHYAXTBIZXTJZXQIZKYBYDXSXRGZFDEZGZIZYB
+    XSFIZXRYFIZKFYFUJUNLZYHYIYJFUKZDXPMXPNOULZUMUOYKAUPZYFPUQZAFAFYFURYNFPZYNDU
+    SYOYNUTYNDVAVHVBFYFXSXRVCVDYEXTLYGBLYHYBVEXSXRVFBYGVGVIYGBYEXTVJVDVKYDYCXPQ
+    VLRZQUBUCZGZIZYCXPEZFGZIZYTUUCXPDUEEZXSGZUUBIZUUDUUAIZYIKUUAFUJUNLZUUFUUGYI
+    XPDYMMUMYLUOUUHYPUQAUUAAUUAFURYNUUAPZYPXPFPZUUJXPQVTHVMXPVNWLUUIYNXPFYNXPVO
+    VPVQVBUUAFUUDXSVCVDUUBYCUUEYCXRJZXSJZGUUEXRXSVRUUKUUDUULXSDXPMYMVSFWAWBWCWD
+    WEUUBYSYCUUAYQFYRXPXPCWFRZVLRZUUAYQXPNPZUUNUUALOXPWGSUUMQXPVLCCWHRZUAZUUMQC
+    CTTWIUUPQLZUUQQLZWJUUPWKPUURUUSVECCTTWMUUPWNSVKWOWPWOWQWBWRVKXQYSYCQXQPZXQY
+    SLUUTUUOQNPXPQWSHOWTXPQXAXBVMXCXPQXDXEXPQXFSWRWEUOBXQXTXGWEBXQXTBYGXHVGFYFX
+    IDMXJXKXLXMSUUOXQUDUIHOXPXNSXO $.
+
   ${
     $d i n $.
     fxnn0nninf.g $e |- G = frec ( ( x e. ZZ |-> ( x + 1 ) ) , 0 ) $.
@@ -107895,6 +107972,24 @@ $)
       ( N e. NN0* -> ( I ` N ) = ( n e. _om |-> if ( n e. N , 1o , (/) ) ) ) $=
         ? $.
     $)
+  $}
+
+  ${
+    $d i m n $.
+    $( ` NN+oo ` is infinte.  (Contributed by Jim Kingdon, 8-Jul-2025.) $)
+    nninfinf $p |- _om ~<_ NN+oo $=
+      ( vn vm vi com xnninf wtru cv wcel c1o c0 cif cvv wi a1i wa wceq wral c2o
+      wb syl2anc cdom wbr nnnninf 1lt2o 0lt2o wdc simpr simpll nndcel ralrimiva
+      cmpt ifcldcd mpteqb syl wal nfv nfan elnn expcom ad2antrr ad2antlr simplr
+      nfra1 wne ifnebibdc mp3an3 ralbidva biimpa pm5.21ndd alrimi axext4 sylibr
+      1n0 rsp ex elequ2 ifbid ralrimivw impbid1 bitrd omex nninfex dom3d mptru
+      ) DEUAUBFABDECDCGZAGZHZIJKZUKZCDWEBGZHZIJKZUKZLLWFDHZWIEHMFCWFUCNWNWJDHZO
+      ZWIWMPZWFWJPZSMFWPWQWHWLPZCDQZWRWPWHRHZCDQWQWTSWPXACDWPWEDHZOZWGIJRIRHXCU
+      DNJRHXCUENXCXBWNWGUFZWPXBUGZWNWOXBUHWEWFUITZULUJCDWHWLRUMUNWPWTWRWPWTWRWP
+      WTOZWGWKSZCUOWRXGXHCWPWTCWPCUPWSCDVCUQXGXBWGWKWNWGXBMWOWTWGWNXBWEWFURUSUT
+      WOWKXBMWNWTWKWOXBWEWJURUSVAXGXHCDQZXBXHMWPWTXIWPWSXHCDXCXDWKUFZWSXHSZXFXC
+      XBWOXJXEWNWOXBVBWEWJUITXDXJIJVDXKVMWGWKIJVEVFTVGVHXHCDVNUNVIVJABCVKVLVOWR
+      WSCDWRWGWKIJABCVPVQVRVSVTNDLHFWANELHFWBNWCWD $.
   $}
 
 
@@ -133805,6 +133900,99 @@ $)
       NZXOLZCOWSHNZALZWTHNZXBPZDTZLZCOZXEXOCWKVIXRYDCXQXTXOYCACHVJXOWTWKNZXAPZD
       TYCXADWKVKYGYBDYGYABLZXAPYBYFYHXAABCWTHCDRABABEEEVLVMVNYABXAVRVOVPVOVQVSY
       EXSXDLZCOXEYDYICYDXTXCLYIXCYCXTXBDHVKVTXSAXCWAWBVSXDCHVIWCWDWEWF $.
+  $}
+
+  ${
+    $d G i k m n $.  $d G m z $.  $d I j k y $.  $d I j y z $.  $d i k m n y $.
+    $d j k m y $.  $d j k x y $.
+    nninfct.g $e |- G = frec ( ( x e. ZZ |-> ( x + 1 ) ) , 0 ) $.
+    nninfct.f $e |- F = ( n e. _om |-> ( i e. _om
+      |-> if ( i e. n , 1o , (/) ) ) ) $.
+    nninfct.i $e |- I = ( ( F o. `' G )
+      u. { <. +oo , ( _om X. { 1o } ) >. } ) $.
+    $( Lemma for ~ nninfct .  (Contributed by Jim Kingdon, 10-Jul-2025.) $)
+    nninfctlemfo $p |- ( _om e. Omni -> I : NN0* -onto-> NN+oo ) $=
+      ( com wcel cxnn0 cfv wceq wa c0 c1o cc0 syl2anc c2o vy vz vj vm vk xnninf
+      comni wf cv wrex wral wfo fxnn0nninf a1i ccnv cuz crab cr clt cinf ssrab2
+      nn0uz nn0ssxnn0 eqsstrri sstri eqid fveq2 fveqeq2d simprl frec2uzuzd wf1o
+      cn0 0zd frec2uzf1od f1ocnvfv1 fveq2d simprr eqtrd elrabd cfz co wdc 2ssom
+      nninff wss fssd ad3antlr elfzuz f1ocnvdm syl2an peano1 nndceq infssuzcldc
+      ffvelcdmd sylancl sselid adantl adantr ffnd syl weq 2fveq3 eqeq1d cbvrabv
+      infeq1i fveq2i eleq2i cif simpr sylib iftrued cmpt ccom csn eleqtrrdi wfn
+      cpnf simprd cvv ifbid omex fvmptd3 wn wbr simplr eqeltrid ad2antrr nn0red
+      mpbid ad4antr wb elrab ffvelcdmda 3eqtr4rd mpjaodan eqfnfvd rspceeqv 1oex
+      wo wi cxp cop cun fveq1i wne nn0nepnfd necomd fvunsng eqtrid dff1o4 fvco2
+      eleq2 mpteq2dv mptex 3eqtrd fveq1d eleq1w 1lt2o 0lt2o ifcldcd frec2uzlt2d
+      nndcel f1ocnvfv2 breqtrd ad3antrrr elrabi infssuzledc mt2d f1of biantrurd
+      lensymd bitr4id notbid sylan mtbid cpr df2o3 eleqtrdi elpri orcomd ecased
+      ex sylan2br ssnel iffalsed simp-4r nninfninc nntri3or 3orass eqimss2 con0
+      w3o nnon onelss jaod orim2d mpd rexlimdvaa imp pnf0xnn0 inftonninf fnmpti
+      ad2antlr fveqeq2 rspcdva eqidd fvmpt eqtr4d sylancr isomni biimpi 19.21bi
+      wal ax-mp impel ralrimiva dffo3 sylanbrc ) JUGKZLUFFUHZUAUIZUBUIZFMZNUBLU
+      JZUAUFUKLUFFULUXTUXSABCDEFGHIUMZUNUXSUYDUAUFUXSUYAUFKZOZUCUIZUYAMZPNZUCJU
+      JZUYDUYIQNZUCJUKZUYGUYKUYDUYGUYJUYDUCJUYGUYHJKZUYJOZOZUDUIZEUOZMZUYAMZPNZ
+      UDRUPMZUQZURUSUTZLKUYAVUDFMZNUYDUYPVUCLVUDVUCVUBLVUAUDVUBVAZVUBVLLVBVCVDV
+      EUYPVUAUYHEMZVUCUDRUYPVMZVUCVFUYPVUAVUGUYRMZUYAMZPNUDVUGVUBUYQVUGNUYSVUIP
+      UYAUYQVUGUYRVGVHUYPAUYHREVUHGUYGUYNUYJVIZVJUYPVUJUYIPUYPVUIUYHUYAUYPJVUBE
+      VKZUYNVUIUYHNUYPAREVUHGVNZVUKJVUBUYHEVOSVPUYGUYNUYJVQVRVSUYPUYQRVUGVTWAKZ
+      OZUYTJKZPJKZVUAWBZVUOJJUYSUYAUYFJJUYAUHUXSUYOVUNUYFJTJUYAUYAWDZTJWEUYFWCU
+      NWFWGUYPVULUYQVUBKZUYSJKZVUNVUMUYQRVUGWHJVUBUYQEWIZWJWNWKUYTPWLZWOWMZWPZU
+      YPUEJUYAVUEUYPJTUYAUYGJTUYAUHZUYOUYFVVFUXSVUSWQWRZWSUYPJTVUEUYPVUEUFKJTVU
+      EUHUYPLUFVUDFUXTUYPUYEUNVVEWNVUEWDWTWSUYPUEUIZJKZOZVVHVUDUYRMZKZVVHUYAMZV
+      VHVUEMZNZVVKVVHWEZVVLVVJVVHCUIZUYRMUYAMZPNZCVUBUQZURUSUTZUYRMZKZVVOVWBVVK
+      VVHVWAVUDUYRURVVTVUCUSVVSVUACUDVUBCUDXAVVRUYTPVVQUYQUYAUYRXBXCXDZXEZXFZXG
+      ZVVJVWCOZVVLQPXHZQVVNVVMVWHVVLQPVWHVWCVVLVVJVWCXIZVWGXJXKVVJVVNVWINZVWCVV
+      JVVNVVHBJBUIZVVKKZQPXHZXLZMZVWIUYPVVNVWPNVVIUYPVVHVUEVWOUYPVUEVUDDUYRXMZM
+      ZVVKDMZVWOUYPVUEVUDVWQXQJQXNUUAZUUBXNUUCZMZVWRVUDFVXAIUUDUYPVUDVLKXQVUDUU
+      EVXBVWRNUYPVUDVUBVLUYPVUCVUBVUDVUFVVDWPZVBXOZUYPVUDXQUYPVUDVXDUUFUUGVWQXQ
+      VWTVUDVLUUHSUUIUYPUYRVUBXPZVUDVUBKZVWRVWSNUYPEJXPZVXEUYPVULVXGVXEOVUMJVUB
+      EUUJXJXRVXCVUBDUYRVUDUUKSUYPCVVKBJVWLVVQKZQPXHZXLVWOJDXSHVVQVVKNZBJVXIVWN
+      VXJVXHVWMQPVVQVVKVWLUULXTUUMUYPVULVXFVVKJKZVUMVXCJVUBVUDEWISZVWOXSKUYPBJV
+      WNYAUUNUNYBUUOUUPWRVVJBVVHVWNVWIJVWOTVWOVFBUEXAVWMVVLQPBUEVVKUUQXTUYPVVIX
+      IZVVJVVLQPTQTKVVJUURUNPTKVVJUUSUNVVJVVIVXKVVLWBVXMUYPVXKVVIVXLWRZVVHVVKUV
+      BSUUTYBVRZWRVWHVVMQNZVVMPNZVWHVVHEMZUYRMZUYAMZPNZVXQVWHVXRVVTKZYCZVYAYCZV
+      WHVYBVXRVWAUSYDZVWHVXRVWBEMZVWAUSVWHVWCVXRVYFUSYDVWJVWHAVVHVWBREVWHVMGUYP
+      VVIVWCYEVVJVWBJKVWCVVJVWBVVKJVWFVXNYFWRUVAYIVWHVULVWAVUBKZVYFVWANUYPVULVV
+      IVWCVUMYGUYPVYGVVIVWCUYPVWAVUDVUBVWEVXCYFYGJVUBVWAEUVCSUVDVWHVYBVYEYCVWHV
+      YBOZVWAVXRVYHVWAUYPVWAVLKVVIVWCVYBUYPVWAVUDVLVWEVXDYFUVEYHVYHVXRVYBVXRVLK
+      VWHVYBVXRVUBVLVVSCVXRVUBUVFVBXOWQYHVYHVUAVXRVVTUDRVYHVMVWDVWHVYBXIVYHUYQR
+      VXRVTWAKZOZVUPVUQVURVYJTJUYTWCVYJJTUYSUYAUYPVVFVVIVWCVYBVYIVVGYJVYJVULVUT
+      VVAUYPVULVVIVWCVYBVYIVUMYJVYIVUTVYHUYQRVXRWHWQVVBSWNWPWKVVCWOUVGUVKUWBUVH
+      VVJVYCVYDYKVWCVVJVYBVYAVVJVYBVXRVUBKZVYAOVYAVVSVYACVXRVUBVVQVXRNVVRVXTPVV
+      QVXRUYAUYRXBXCYLVVJVYKVYAUYPJVUBVVHEUYPVULJVUBEUHVUMJVUBEUVIWTYMUVJUVLUVM
+      WRYIVWHVXTVVMPVVJVXTVVMNVWCVVJVXSVVHUYAUYPVULVVIVXSVVHNVUMJVUBVVHEVOUVNVP
+      WRXCUVOVVJVXPVXQYSVWCVVJVXQVXPVVJVVMPQUVPZKVXQVXPYSVVJVVMTVYLUYPJTVVHUYAV
+      VGYMUVQUVRVVMPQUVSWTUVTWRUWAYNUWCVVJVVPOZVWIPVVNVVMVYMVVLQPVVPVVLYCVVJVVK
+      VVHUWDWQUWEVVJVWKVVPVXOWRVYMUYAVVKVVHUXSUYFUYOVVIVVPUWFUYPVXKVVIVVPVXLYGU
+      YPVVIVVPYEVVJVVPXIUYPVVKUYAMZPNZVVIVVPUYPVXFVYOUYPVUDVVTKVXFVYOOUYPVUDVUC
+      VVTVVDVWDXOVVSVYOCVUDVUBVVQVUDNVVRVYNPVVQVUDUYAUYRXBXCYLXJXRYGUWGYNVVJVVL
+      VVHVVKNZVVKVVHKZYSZYSZVVLVVPYSVVJVVLVYPVYQUWLZVYSVVJVVIVXKVYTVXMVXNVVHVVK
+      UWHSVVLVYPVYQUWIXJVVJVYRVVPVVLVVIVYRVVPYTUYPVVIVYPVVPVYQVYPVVPYTVVIVVKVVH
+      UWJUNVVIVVHUWKKVYQVVPYTVVHUWMVVHVVKUWNWTUWOWQUWPUWQYOYPUBVUDLUYCVUEUYAUYB
+      VUDFVGYQSUWRUWSUYGUYMOZXQLKUYAXQFMZNUYDUWTWUAUEJUYAWUBUYFUYAJXPUXSUYMUYFJ
+      TUYAVUSWSUXCWUBJXPWUAAJQWUBYRABCDEFGHIUXAZUXBUNWUAVVIOZVVMQVVHWUBMZWUDUYL
+      VXPUCJVVHUYHVVHQUYAUXDUYGUYMVVIYEWUAVVIXIUXEVVIWUEQNWUAAVVHQQJWUBAUEXAQUX
+      FWUCYRUXGWQUXHYPUBXQLUYCWUBUYAUYBXQFVGYQUXIUXSVVFUYKUYMYSZUYFUXSVVFWUFYTZ
+      UAUXSWUGUAUXMZJXSKUXSWUHYKYAUCJUAXSUXJUXNUXKUXLVUSUXOYOUXPUBUALUFFUXQUXR
+      $.
+  $}
+
+  ${
+    $d f g h i j k n x $.
+    $( The limited principle of omniscience (LPO) implies that ` NN+oo ` is
+       countable.  (Contributed by Jim Kingdon, 8-Jul-2025.) $)
+    nninfct $p |- ( _om e. Omni -> E. f f : _om -onto-> ( NN+oo |_| 1o ) ) $=
+      ( vh vn vk vx vg vj vi com wcel xnninf wfo wex c1o cxnn0 cmpt foeq1 ax-mp
+      cv eqid comni cdju c0 cif cz c1 caddc co cc0 cfrec ccnv ccom cpnf csn cxp
+      cop cun nninfctlemfo omex mptex cnvex coex pnfex 1oex snex xpex opex unex
+      frecex spcev wi wf1o cen cn xnn0nnen nnenom entr2i bren mpbi f1ofo eximii
+      wbr wa foco vex expcom exlimiv 3syl cbvexv sylib wb infnninf elex2 sylibr
+      syl ctm ) IUAJZIKASZLZAMZIKNUBWRLAMZWQIKBSZLZBMZWTWQOKCIDIDSCSJNUCUDPZPZE
+      UEESUFUGUHPZUIUJZUKZULZUMINUNZUOZUPZUNZUQZLZOKWRLZAMXDEDCXFXHXOXHTXFTXOTU
+      RXQXPAXOXJXNXFXICIXEUSUTXHUIXGVIVAVBXMUMXLVCIXKUSNVDVEVFVGVEVHOKWRXOQVJXQ
+      XDAIOFSZLZFMXQXDVKZIOXRVLZXSFIOVMWBYAFMOVNIVOVPVQIOFVRVSIOXRVTWAXSXTFXQXS
+      XDXQXSWCIKWRXRULZLZXDIOKWRXRWDXCYCBYBWRXRAWEFWEVBIKXBYBQVJWOWFWGRWGWHXCWS
+      BAIKXBWRQWIWJGSKJGMZXAWTWKHINPZKJYDHWLGYEKWMRGKAWPRWN $.
   $}
 
 
@@ -185291,6 +185479,20 @@ $)
       LYNOZXOYQPQUUDXMYOXNYPXLYNESXLYNFSUJUKYTYNKMAYQCYMWBWEUUBUUCPRUUBYQPQUUAY
       QULVSZUMVTVCUUEWAWFWGWMWHWIWJWKXJXGPQXDXHULWLWJXIUHXJPQWNWOUNWPXDYAXGXHWQ
       YBXGWRWSWTXA $.
+  $}
+
+  ${
+    $d i j x y z $.
+    $( Equinumerosity of the natural numbers and ` NN+oo ` is equivalent to the
+       Limited Principle of Omniscience (LPO).  Remark in Section 1.1 of
+       [Pradic2025], p. 2.  (Contributed by Jim Kingdon, 8-Jul-2025.) $)
+    nnnninfen $p |- ( _om ~~ NN+oo <-> _om e. Omni ) $=
+      ( vx vy vz vi vj com xnninf cen wbr comni wcel nninfomni enomni mpbiri cn
+      wral cv wfo wex c1o weq cdom cwomni lpowlpo nninfwlpo sylibr cdju nninfct
+      wdc cmpt wb infnninf elex2 ctm mp2b sylib nninfinf ctinf syl3anbrc nnenom
+      a1i entr sylancl ensymd impbii ) FGHIZFJKZVFVGGJKLFGMNVGGFVGGOHIZOFHIGFHI
+      VGABUAUIBGPAGPZFGCQZRCSZFGUBIZVHVGFUCKVIUDABUEUFVGFGTUGVJRCSZVKCUHDFTUJZG
+      KEQGKESVMVKUKDULEVNGUMEGCUNUOUPVLVGUQVAABGCURUSUTGOFVBVCVDVE $.
   $}
 
 
