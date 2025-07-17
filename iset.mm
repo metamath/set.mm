@@ -172380,6 +172380,24 @@ $)
 
 
 $(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Continuity
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+  ${
+    $d X x $.  $d ph x $.
+    addcncf.a $e |- ( ph -> ( x e. X |-> A ) e. ( X -cn-> CC ) ) $.
+    addcncf.b $e |- ( ph -> ( x e. X |-> B ) e. ( X -cn-> CC ) ) $.
+    $( The addition of two continuous complex functions is continuous.
+       (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
+    addcncf $p |- ( ph -> ( x e. X |-> ( A + B ) ) e. ( X -cn-> CC ) ) $=
+      ( caddc cabs cmin ccom cmopn cfv eqid ctx co ccn wcel addcncntop a1i
+      cncfmpt2fcntop ) ABCDHIJKLMZEUBNZHUBUBOPUBQPRAUBUCSTFGUA $.
+  $}
+
+
+$(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Dedekind cuts
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
