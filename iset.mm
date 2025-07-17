@@ -172396,6 +172396,17 @@ $)
       cncfmpt2fcntop ) ABCDHIJKLMZEUBNZHUBUBOPUBQPRAUBUCSTFGUA $.
   $}
 
+  ${
+    $d X x $.  $d ph x $.
+    subcncf.a $e |- ( ph -> ( x e. X |-> A ) e. ( X -cn-> CC ) ) $.
+    subcncf.b $e |- ( ph -> ( x e. X |-> B ) e. ( X -cn-> CC ) ) $.
+    $( The addition of two continuous complex functions is continuous.
+       (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
+    subcncf $p |- ( ph -> ( x e. X |-> ( A - B ) ) e. ( X -cn-> CC ) ) $=
+      ( cmin cabs ccom cmopn cfv eqid ctx co ccn wcel subcncntop cncfmpt2fcntop
+      a1i ) ABCDHIHJKLZEUAMZHUAUANOUAPOQAUAUBRTFGS $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
