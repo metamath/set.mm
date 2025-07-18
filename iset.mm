@@ -172441,6 +172441,28 @@ $)
       SWOEUTWHIENVBRVCVDUNVGAFWCNWEWLHMNQWLWCNOKQAVHICMWLWLVEVFVIVJVKVLVK $.
   $}
 
+  ${
+    $d X x $.  $d ph x $.  $d x y $.
+    maxcncf.a $e |- ( ph -> ( x e. X |-> A ) e. ( X -cn-> RR ) ) $.
+    maxcncf.b $e |- ( ph -> ( x e. X |-> B ) e. ( X -cn-> RR ) ) $.
+    $( The maximum of two continuous real functions is continuous.
+       (Contributed by Jim Kingdon, 18-Jul-2025.) $)
+    maxcncf $p |- ( ph ->
+        ( x e. X |-> sup ( { A , B } , RR , < ) ) e. ( X -cn-> RR ) ) $=
+      ( vy cr cmpt co cabs c2 ccncf wcel wf syl cc wss cc0 csup caddc cmin cdiv
+      cpr clt cfv cv wa wceq cncff fvmptelcdm maxabs syl2anc mpteq2dva readdcld
+      resubcld recnd abscld rehalfcld fmpttd ax-resscn ssid cncfss mp2an sselid
+      wb addcncf abscncf a1i subcncf cncfmpt1f cap wbr crab 2ap0 breq1 mpbir2an
+      2cn elrab cncfrss apsscn mp3an2i divcncfap cncfcdm sylancr mpbird eqeltrd
+      cncfmptc ) ABECDUEIUFUAZJBECDUBKZCDUCKZLUGZUBKZMUDKZJZEINKZABEWJWOABUHEOU
+      IZCIODIOWJWOUJABECIABECJZWQOZEIWSPFEIWSUKQULZABEDIABEDJZWQOEIXBPGEIXBUKQU
+      LZCDUMUNUOAWPWQOZEIWPPZABEWOIWRWNWRWKWMWRCDXAXCUPWRWLWRWLWRCDXAXCUQURUSUP
+      UTVAAIRSZWPERNKZOXDXEVGVBABHWNMEABWKWMEABCDEAWQXGWSXFRRSZWQXGSVBRVCZEIRVD
+      VEZFVFZAWQXGXBXJGVFZVHABWLLEARINKZRRNKZLXFXHXMXNSVBXIRIRVDVELXMOAVIVJVFAB
+      CDEXKXLVKVLVHMHUHZTVMVNZHRVOZOZAERSZXQRSZBEMJEXQNKOXRMROMTVMVNZVSVPXPYAHM
+      RXOMTVMVQVTVRAWTXSFEIWSWAQXTAHRTWBVJBMEXQWIWCWDERIWPWEWFWGWH $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
