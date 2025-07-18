@@ -85211,6 +85211,21 @@ $)
   cnelprrecn $p |- CC e. { RR , CC } $=
     ( cr cc cnex prid2 ) ABCD $.
 
+  ${
+    $d x y z $.
+    $( Multiplication is an operation on complex numbers.  Version of ~ ax-mulf
+       using maps-to notation, proved from the axioms of set theory and
+       ~ ax-mulcl .  (Contributed by GG, 16-Mar-2025.) $)
+    mpomulf $p |- ( x e. CC , y e. CC |-> ( x x. y ) ) : ( CC X. CC ) --> CC $=
+      ( vz cc cxp cv cmul co cmpo wf wfn wss wcel wral mulcl rgen2 fnmpo coprab
+      eqid wa ax-mp wceq w3a simpll simplr eleq1a syl imp 3jca ssoprab2i df-mpo
+      wi dfxp3 3sstr4i dff2 mpbir2an ) DDEZDABDDAFZBFZGHZIZJVAUQKZVAUQDEZLUTDMZ
+      BDNADNVBVDABDDURUSOZPABDDUTVADVASQUAURDMZUSDMZTZCFZUTUBZTZABCRVFVGVIDMZUC
+      ZABCRVAVCVKVMABCVKVFVGVLVFVGVJUDVFVGVJUEVHVJVLVHVDVJVLULVEUTDVIUFUGUHUIUJ
+      ABCDDUTUKABCDDDUMUNUQDVAUOUP $.
+    $( $j usage 'mpomulf' avoids 'ax-mulf'; $)
+  $}
+
   $( Distributive law for complex numbers (right-distributivity).  (Contributed
      by NM, 10-Oct-2004.) $)
   adddir $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
