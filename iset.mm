@@ -172422,6 +172422,25 @@ $)
       a1i ) ABCDHIHJKLZEUAMZHUAUANOUAPOQAUAUBRTFGS $.
   $}
 
+  ${
+    $d B y z $.  $d X x $.  $d ph x $.  $d x y z $.
+    divcncf.1 $e |- ( ph -> ( x e. X |-> A ) e. ( X -cn-> CC ) ) $.
+    divcncfap.2 $e |- ( ph ->
+      ( x e. X |-> B ) e. ( X -cn-> { y e. CC | y =//= 0 } ) ) $.
+    $( The quotient of two continuous complex functions is continuous.
+       (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
+    divcncfap $p |- ( ph -> ( x e. X |-> ( A / B ) ) e. ( X -cn-> CC ) ) $=
+      ( vz cdiv co cmpt c1 cc ccncf cv wcel syl cc0 cap wa cncff fvmptelcdm wbr
+      cmul wf crab breq1 elrab sylib simpld simprd divrecapd mpteq2dva ccom csb
+      ralrimiva eqidd fmptcos wceq csbov2g csbvarg oveq2d eqtrd eqid cdivcncfap
+      eqtr2d ax-1cn mp1i cncfco eqeltrd mulcncf ) ABFDEJKZLBFDMEJKZUEKZLFNOKZAB
+      FVMVOABPFQUAZDEABFDNABFDLZVPQFNVRUFGFNVRUBRUCVQENQZESTUDZVQECPZSTUDZCNUGZ
+      QZVSVTUAABFEWCABFELZFWCOKQFWCWEUFHFWCWEUBRUCZWBVTCENWAESTUHUIUJZUKZVQVSVT
+      WGULUMUNABDVNFGABFVNLZIWCMIPZJKZLZWEUOZVPAWMBFIEWKUPZLWIABIFWCEWKWEWLAWDB
+      FWFUQAWEURAWLURUSABFWNVNVQWNMIEWJUPZJKZVNVQVSWNWPUTWHIEMWJJNVARVQWOEMJVQV
+      SWOEUTWHIENVBRVCVDUNVGAFWCNWEWLHMNQWLWCNOKQAVHICMWLWLVEVFVIVJVKVLVK $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
