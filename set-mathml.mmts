@@ -987,14 +987,6 @@ $( M L $)
 $s class ( A ^^ B ) $: <mrow> #A# <mo href="df-finxp.html">&uarr;&uarr;</mo> #B# </mrow> $.
 
 
-$( Wolf Lammen
-$s wff A. ( x wl-in A ) ph $: <mrow> <mo href="wl-ral.html">&forall;</mo> #x# <mo href="df-ral.html">:</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
-$s wff E. ( x wl-in A ) ph $: <mrow> <mo href="wl-rex.html">&exist;</mo> #x# <mo href="df-rex.html">:</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
-$s wff E! ( x wl-in A ) ph $: <mrow> <mo href="wl-reu.html">&exist;!</mo> #x# <mo href="df-reu.html">:</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
-$s wff E* ( x wl-in A ) ph $: <mrow> <msup href="wl-rmo.html"><mo>&exist;</mo><mo>*</mo></msup> #x# <mo href="df-rmo.html">:</mo> #A# #ph# </mrow> $.
-$s class { x wl-in A | ph } $: <mfenced open="{" close="}"> <mrow>#x# <mo href="wl-crab.html">:</mo> #A# <mo lspace=.3em rspace=.3em>|</mo> #ph# </mrow></mfenced> $.
-$)
-
 $( Removed as part of FL'mathbox
 
 $s class <> $: <mi>&#9671;</mi> $.
