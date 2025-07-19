@@ -15528,6 +15528,7 @@ New usage of "cbvopabvOLD" is discouraged (0 uses).
 New usage of "cbvrab" is discouraged (0 uses).
 New usage of "cbvrabcsf" is discouraged (1 uses).
 New usage of "cbvrabv2" is discouraged (0 uses).
+New usage of "cbvrabwOLD" is discouraged (0 uses).
 New usage of "cbvral" is discouraged (4 uses).
 New usage of "cbvral2v" is discouraged (1 uses).
 New usage of "cbvral3v" is discouraged (0 uses).
@@ -20369,6 +20370,7 @@ Proof modification of "cbviotavwOLD" is discouraged (12 steps).
 Proof modification of "cbvmptvOLD" is discouraged (13 steps).
 Proof modification of "cbvopab1vOLD" is discouraged (13 steps).
 Proof modification of "cbvopabvOLD" is discouraged (20 steps).
+Proof modification of "cbvrabwOLD" is discouraged (139 steps).
 Proof modification of "cbvraldvaOLD" is discouraged (16 steps).
 Proof modification of "cbvralsvwOLD" is discouraged (53 steps).
 Proof modification of "cbvreuvwOLD" is discouraged (13 steps).
