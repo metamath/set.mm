@@ -172151,6 +172151,17 @@ $)
   $}
 
   ${
+    idcncf.1 $e |- F = ( x e. CC |-> x ) $.
+    $( The identity function is a continuous function on ` CC ` .  (Contributed
+       by Jeff Madsen, 11-Jun-2010.)  (Moved into main set.mm as ~ cncfmptid
+       and may be deleted by mathbox owner, JM. --MC 12-Sep-2015.)  (Revised by
+       Mario Carneiro, 12-Sep-2015.) $)
+    idcncf $p |- F e. ( CC -cn-> CC ) $=
+      ( cc cv cmpt ccncf co wss wcel ssid cncfmptid mp2an eqeltri ) BADAEFZDDGH
+      ZCDDIZQOPJDKZRADDLMN $.
+  $}
+
+  ${
     $d A w x y z $.  $d a b d e w y $.
     cdivcncf.1 $e |- F = ( x e. { y e. CC | y =//= 0 } |-> ( A / x ) ) $.
     $( Division with a constant numerator is continuous.  (Contributed by Mario
