@@ -172162,6 +172162,19 @@ $)
   $}
 
   ${
+    $d A x $.
+    sub1cncf.1 $e |- F = ( x e. CC |-> ( x - A ) ) $.
+    $( Subtracting a constant is a continuous function.  (Contributed by Jeff
+       Madsen, 2-Sep-2009.)  (Proof shortened by Mario Carneiro,
+       12-Sep-2015.) $)
+    sub1cncf $p |- ( A e. CC -> F e. ( CC -cn-> CC ) ) $=
+      ( cc wcel cv cmin co cmpt ccncf cabs ccom cfv eqid ctx ccn subcncntop a1i
+      cmopn idcncf wss ssid cncfmptc mp3an23 cncfmpt2fcntop eqeltrid ) BEFZCAEA
+      GZBHIJEEKIZDUHAUIBHLHMTNZEUKOZHUKUKPIUKQIFUHUKULRSAEUIJZUJFUHAUMUMOUASUHE
+      EUBZUNAEBJUJFEUCZUOABEEUDUEUFUG $.
+  $}
+
+  ${
     $d A w x y z $.  $d a b d e w y $.
     cdivcncf.1 $e |- F = ( x e. { y e. CC | y =//= 0 } |-> ( A / x ) ) $.
     $( Division with a constant numerator is continuous.  (Contributed by Mario
