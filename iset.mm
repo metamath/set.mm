@@ -172463,6 +172463,28 @@ $)
       RXOMTVMVQVTVRAWTXSFEIWSWAQXTAHRTWBVJBMEXQWIWCWDERIWPWEWFWGWH $.
   $}
 
+  ${
+    $d X x $.  $d ph x $.  $d x y $.
+    mincncf.a $e |- ( ph -> ( x e. X |-> A ) e. ( X -cn-> RR ) ) $.
+    mincncf.b $e |- ( ph -> ( x e. X |-> B ) e. ( X -cn-> RR ) ) $.
+    $( The minimum of two continuous real functions is continuous.
+       (Contributed by Jim Kingdon, 19-Jul-2025.) $)
+    mincncf $p |- ( ph ->
+        ( x e. X |-> inf ( { A , B } , RR , < ) ) e. ( X -cn-> RR ) ) $=
+      ( vy cr cmpt co cabs c2 ccncf wcel wf syl cc wss cc0 cinf caddc cmin cdiv
+      cpr clt cfv cv wa wceq cncff fvmptelcdm minabs syl2anc mpteq2dva readdcld
+      resubcld recnd abscld rehalfcld fmpttd ax-resscn ssid cncfss mp2an sselid
+      addcncf abscncf sselii a1i subcncf cncfmpt1f cap wbr crab 2cn breq1 elrab
+      wb 2ap0 mpbir2an cncfrss apsscn cncfmptc mp3an2i divcncfap cncfcdm mpbird
+      sylancr eqeltrd ) ABECDUEIUFUAZJBECDUBKZCDUCKZLUGZUCKZMUDKZJZEINKZABEWKWP
+      ABUHEOUIZCIODIOWKWPUJABECIABECJZWROZEIWTPFEIWTUKQULZABEDIABEDJZWROEIXCPGE
+      IXCUKQULZCDUMUNUOAWQWROZEIWQPZABEWPIWSWOWSWLWNWSCDXBXDUPWSWMWSWMWSCDXBXDU
+      QURUSUQUTVAAIRSZWQERNKZOXEXFVSVBABHWOMEABWLWNEABCDEAWRXHWTXGRRSZWRXHSVBRV
+      CZEIRVDVEZFVFZAWRXHXCXKGVFZVGABWMLELRRNKZOARINKZXNLXGXIXOXNSVBXJRIRVDVEVH
+      VIVJABCDEXLXMVKVLVKMHUHZTVMVNZHRVOZOZAERSZXRRSZBEMJEXRNKOXSMROMTVMVNZVPVT
+      XQYBHMRXPMTVMVQVRWAAXAXTFEIWTWBQYAAHRTWCVJBMEXRWDWEWFERIWQWGWIWHWJ $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
