@@ -173385,6 +173385,24 @@ $)
       XPUXREUYCAUWIUXOMWGUTVAYLYMYSUXNAYDYEYFUUBUXSJYKUUCUUAYKEGYGYHXEYI $.
   $}
 
+  ${
+    hover.f $e |- F = ( x e. RR |->
+      sup ( { inf ( { x , 0 } , RR , < ) , ( x - 1 ) } , RR , < ) ) $.
+    $( The hover function is continuous.  By hover function, we mean a a
+       function which starts out as a line of slope one, is constant at zero
+       from zero to one, and then resumes as a slope of one.  (Contributed by
+       Jim Kingdon, 20-Jul-2025.) $)
+    hovercncf $p |- F e. ( RR -cn-> RR ) $=
+      ( cr cv cc0 cpr clt c1 co cmpt ccncf wcel wtru wss cc ax-resscn mp2an a1i
+      ax-mp cinf cmin csup ssid cncfmptid cncfmptc syl3anc mincncf wf peano2rem
+      0red adantl fmpttd cres wceq resmpt ax-1cn eqid sub1cncf rescncf eqeltrri
+      wb mp2 cncfcdm sylibr maxcncf mptru eqeltri ) BADAEZFGDHUAZVIIUBJZGDHUCKZ
+      DDLJZCVLVMMNAVJVKDNAVIFDADVIKVMMZNDDODPOZVNDUDQADDUERSNFDMVOVOADFKVMMNUKV
+      ONQSZVPAFDDUFUGUHNDDADVKKZUIZVQVMMZNADVKDVIDMVKDMNVIUJULUMVOVQDPLJZMVSVRV
+      BQAPVKKZDUNZVQVTVOWBVQUOQAPDVKUPTVOWAPPLJMZWBVTMQIPMWCUQAIWAWAURUSTPPDWAU
+      TVCVADPDVQVDRVEVFVGVH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
