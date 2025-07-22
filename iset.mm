@@ -173401,6 +173401,21 @@ $)
       ONQSZVPAFDDUFUGUHNDDADVKKZUIZVQVMMZNADVKDVIDMVKDMNVIUJULUMVOVQDPLJZMVSVRV
       BQAPVKKZDUNZVQVTVOWBVQUOQAPDVKUPTVOWAPPLJMZWBVTMQIPMWCUQAIWAWAURUSTPPDWAU
       TVCVADPDVQVDRVEVFVGVH $.
+
+    ${
+      $d Z x $.
+      $( A point at which the hover function is less than a given value.
+         (Contributed by Jim Kingdon, 21-Jul-2025.) $)
+      hovera $p |- ( Z e. RR -> ( F ` ( Z - 1 ) ) < Z ) $=
+        ( cr wcel c1 cmin co cfv cc0 cpr clt cinf csup cv peano2rem syl2anc wbr
+        wceq preq1 infeq1d oveq1 preq12d supeq1d mincl syl maxcl fvmptd3 id cle
+        0red 0re min1inf sylancl ltm1 lelttrd ltm1d lttrd wa maxltsup mpbir2and
+        wb syl3anc eqbrtrd ) CEFZCGHIZBJVGKLZEMNZVGGHIZLZEMOZCMVFAVGAPZKLZEMNZV
+        MGHIZLZEMOVLEBEDVMVGTZEVQVKMVRVOVIVPVJVREVNVHMVMVGKUAUBVMVGGHUCUDUECQZV
+        FVIEFZVJEFZVLEFVFVGEFZKEFZVTVSVFULVGKUFRZVFWBWAVSVGQUGZVIVJUHRUIVFVLCMS
+        ZVICMSZVJCMSZVFVIVGCWDVSVFUJZVFWBWCVIVGUKSVSUMVGKUNUOCUPZUQVFVJVGCWEVSW
+        IVFVGVSURWJUSVFVTWAVFWFWGWHUTVCWDWEWIVIVJCVAVDVBVE $.
+    $}
   $}
 
 
