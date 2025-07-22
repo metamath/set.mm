@@ -173416,6 +173416,22 @@ $)
         ZVICMSZVJCMSZVFVIVGCWDVSVFUJZVFWBWCVIVGUKSVSUMVGKUNUOCUPZUQVFVJVGCWEVSW
         IVFVGVSURWJUSVFVTWAVFWFWGWHUTVCWDWEWIVIVJCVAVDVBVE $.
     $}
+
+    ${
+      $d Z x $.
+      $( A point at which the hover function is greater than a given value.
+         (Contributed by Jim Kingdon, 21-Jul-2025.) $)
+      hoverb $p |- ( Z e. RR -> Z < ( F ` ( Z + 2 ) ) ) $=
+        ( cr wcel c1 caddc co c2 cfv id cc0 cpr clt cinf cmin csup syl2anc cle
+        peano2re wceq preq1 infeq1d oveq1 preq12d supeq1d 2re a1i readdcld 0red
+        cv mincl peano2rem maxcl fvmptd3 eqeltrd ltp1 recn 2cnd 1cnd addsubassd
+        syl 2m1e1 oveq2i eqtrdi wbr maxle2 breqtrrd eqbrtrrd ltletrd ) CEFZCCGH
+        IZCJHIZBKZVLLZCUAVLVOVNMNZEOPZVNGQIZNZEORZEVLAVNAULZMNZEOPZWBGQIZNZEORW
+        AEBEDWBVNUBZEWFVTOWGWDVRWEVSWGEWCVQOWBVNMUCUDWBVNGQUEUFUGVLCJVPJEFVLUHU
+        IUJZVLVREFZVSEFZWAEFVLVNEFZMEFWIWHVLUKVNMUMSZVLWKWJWHVNUNVCZVRVSUOSZUPZ
+        WNUQCURVLVSVMVOTVLVSCJGQIZHIVMVLCJGCUSVLUTVLVAVBWPGCHVDVEVFVLVSWAVOTVLW
+        IWJVSWATVGWLWMVRVSVHSWOVIVJVK $.
+    $}
   $}
 
 
