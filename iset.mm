@@ -173432,6 +173432,107 @@ $)
         WNUQCURVLVSVMVOTVLVSCJGQIZHIVMVLCJGCUSVLUTVLVAVBWPGCHVDVEVFVLVSWAVOTVLW
         IWJVSWATVGWLWMVRVSVHSWOVIVJVK $.
     $}
+
+    ${
+      $d C x $.
+      $( The hover function evaluated at a point less than one.  (Contributed
+         by Jim Kingdon, 22-Jul-2025.) $)
+      hoverlt1 $p |- ( ( C e. RR /\ C < 1 ) -> ( F ` C ) <_ 0 ) $=
+        ( cr wcel c1 clt wbr wa cfv cc0 cpr cinf cmin co csup cle cv syl2anc wb
+        wceq preq1 infeq1d oveq1 preq12d supeq1d simpl 0red mincl peano2rem syl
+        maxcl fvmptd3 min2inf 1red simpr ltled suble0d mpbird maxleastb syl3anc
+        mpbir2and eqbrtrd ) BEFZBGHIZJZBCKBLMZEHNZBGOPZMZEHQZLRVGABASZLMZEHNZVM
+        GOPZMZEHQVLECEDVMBUBZEVQVKHVRVOVIVPVJVREVNVHHVMBLUCUDVMBGOUEUFUGVEVFUHZ
+        VGVIEFZVJEFZVLEFVGVELEFZVTVSVGUIZBLUJTZVGVEWAVSBUKULZVIVJUMTUNVGVLLRIZV
+        ILRIZVJLRIZVGVEWBWGVSWCBLUOTVGWHBGRIVGBGVSVGUPZVEVFUQURVGBGVSWIUSUTVGVT
+        WAWBWFWGWHJUAWDWEWCVIVJLVAVBVCVD $.
+    $}
+
+    ${
+      $d C x $.
+      $( The hover function evaluated at a point greater than zero.
+         (Contributed by Jim Kingdon, 22-Jul-2025.) $)
+      hovergt0 $p |- ( ( C e. RR /\ 0 < C ) -> 0 <_ ( F ` C ) ) $=
+        ( cr wcel cc0 clt wbr cpr cinf c1 cmin co csup cle syl2anc wceq supeq1d
+        breqtrrd wa cfv simpl peano2rem syl maxle1 mincom simpr ltled wb mingeb
+        0red 0re sylancr mpbid eqtrid preq1d cv preq1 infeq1d oveq1 mincl maxcl
+        preq12d fvmptd3 ) BEFZGBHIZUAZGBGJZEHKZBLMNZJZEHOZBCUBPVHGGVKJZEHOZVMPV
+        HGEFZVKEFZGVOPIVHULZVHVFVQVFVGUCZBUDUEZGVKUFQVHEVLVNHVHVJGVKVHVJGBJEHKZ
+        GBGUGVHGBPIZWAGRZVHGBVRVSVFVGUHUIVHVPVFWBWCUJUMVSGBUKUNUOUPUQSTVHABAURZ
+        GJZEHKZWDLMNZJZEHOVMECEDWDBRZEWHVLHWIWFVJWGVKWIEWEVIHWDBGUSUTWDBLMVAVDS
+        VSVHVJEFZVQVMEFVHVFVPWJVSVRBGVBQVTVJVKVCQVET $.
+    $}
+
+    ${
+      $d F a b f x $.  $d F c x $.  $d Z a b f x $.  $d Z c x $.  $d c ph x $.
+      ivthdichlem.z $e |- ( ph -> Z e. RR ) $.
+      ivthdichlem.i $e |- ( ph -> A. f ( f e. ( RR -cn-> RR ) ->
+        A. a e. RR A. b e. RR ( ( a < b /\ ( f ` a ) < 0 /\ 0 < ( f ` b ) )
+          -> E. x e. RR ( a < x /\ x < b /\ ( f ` x ) = 0 ) ) ) ) $.
+      $( Lemma for ~ ivthdich .  The result, with a few notational
+         conveniences.  (Contributed by Jim Kingdon, 22-Jul-2025.) $)
+      ivthdichlem $p |- ( ph -> ( Z <_ 0 \/ 0 <_ Z ) ) $=
+        ( cc0 cle wbr c1 co c2 cr wcel clt wa vc cv cfv wceq wo cmin caddc cioo
+        peano2rem syl 2re a1i readdcld ltm1d crp ltaddrpd lttrd ccncf hovercncf
+        2rp hovera hoverb jca ivthreinc 0red 1red elioore ad2antrl w3a axltwlin
+        0lt1 syl3anc orcomd simplrr hoverlt1 sylan eqbrtrrd ex hovergt0 breqtrd
+        mpi orim12d mpd rexlimddv ) AUAUBZDUCZEUDZEKLMZKELMZUEZUAENUFOZEPUGOZUH
+        OZABWKWLECDFGUAAEQRZWKQRIEUIUJZAEPIPQRAUKULUMZIAWKEWLWOIWPAEIUNAEPIPUOR
+        AUTULUPUQDQQURORABDHUSULAWKDUCESMZEWLDUCSMZAWNWQIBDEHVAUJAWNWRIBDEHVBUJ
+        VCJVDAWEWMRZWGTTZWENSMZKWESMZUEWJWTXBXAWTKQRZNQRZWEQRZXBXAUEZWTVEWTVFWS
+        XEAWGWEWKWLVGVHZXCXDXEVIKNSMXFVKKNWEVJWAVLVMWTXAWHXBWIWTXAWHWTXATWFEKLA
+        WSWGXAVNWTXEXAWFKLMXGBWEDHVOVPVQVRWTXBWIWTXBTKWFELWTXEXBKWFLMXGBWEDHVSV
+        PAWSWGXBVNVTVRWBWCWD $.
+    $}
+  $}
+
+  ${
+    $d x y z $.
+    $( Real number dichotomy stated in terms of two real numbers or a real
+       number and zero.  (Contributed by Jim Kingdon, 22-Jul-2025.) $)
+    dich0 $p |- ( A. z e. RR ( z <_ 0 \/ 0 <_ z ) <->
+        A. x e. RR A. y e. RR ( x <_ y \/ y <_ x ) ) $=
+      ( cv cc0 cle wbr wo cr wral wcel wa cmin wceq breq1 breq2 orbi12d rspcdva
+      co simpl resubcl adantl simprl suble0d subge0d ralrimivva ralbidv rspccva
+      simprr mpbid 0red ralrimiva impbii ) CDZEFGZEUNFGZHZCIJZADZBDZFGZUTUSFGZH
+      ZBIJZAIJZURVCABIIURUSIKZUTIKZLZLZUSUTMSZEFGZEVJFGZHZVCVIUQVMCIVJUNVJNUOVK
+      UPVLUNVJEFOUNVJEFPQURVHTVHVJIKURUSUTUAUBRVIVKVAVLVBVIUSUTURVFVGUCZURVFVGU
+      IZUDVIUSUTVNVOUEQUJUFVEUQCIVEUNIKLZUNUTFGZUTUNFGZHZUQBIEUTENVQUOVRUPUTEUN
+      FPUTEUNFOQVDVSBIJAUNIUSUNNZVCVSBIVTVAVQVBVRUSUNUTFOUSUNUTFPQUGUHVPUKRULUM
+      $.
+  $}
+
+  ${
+    $d a b f q x $.  $d a b f t x $.  $d a b f x z $.  $d r s z $.
+    $( The intermediate value theorem implies real number dichotomy.  Because
+       real number dichotomy (also known as analytic LLPO) is a constructive
+       taboo, this means we will be unable to prove the intermediate value
+       theorem as stated here (although versions with additional conditions,
+       such as ~ ivthinc for strictly monotonic functions, can be proved).
+
+       The proof is by via a function which we call the hover function and
+       which is also described in Section 5.1 of [Bauer], p. 493.  Consider any
+       real number ` z ` .  We want to show that ` z <_ 0 \/ 0 <_ z ` .
+       Because of ~ hovercncf , ~ hovera , and ~ hoverb , we are able to apply
+       the intermediate value theorem to get a value ` c ` such that the hover
+       function at ` c ` equals ` z ` .  By ~ axltwlin , ` c < 1 ` or
+       ` 0 < c ` , and that leads to ` z <_ 0 ` by ~ hoverlt1 or ` 0 <_ z ` by
+       ~ hovergt0 .  (Contributed by Jim Kingdon and Mario Carneiro,
+       22-Jul-2025.) $)
+    ivthdich $p |- ( A. f ( f e. ( RR -cn-> RR ) ->
+          A. a e. RR A. b e. RR ( ( a < b /\ ( f ` a ) < 0 /\ 0 < ( f ` b ) )
+            -> E. x e. RR ( a < x /\ x < b /\ ( f ` x ) = 0 ) ) )
+        -> A. r e. RR A. s e. RR ( r <_ s \/ s <_ r ) ) $=
+      ( vz vq vt cv cr clt wbr cfv cc0 wceq wi wral cle cpr ccncf wcel w3a wrex
+      co wal wo breq2 breq1 fveqeq2 3anbi123d cbvrexv imbi2i 2ralbii albii cinf
+      wa c1 cmin csup preq1 infeq1d oveq1 preq12d supeq1d cbvmptv simpr biimpri
+      cmpt adantr ivthdichlem sylanb ralrimiva dich0 sylib ) BJZKKUAUEUBZEJZFJZ
+      LMVRVPNOLMOVSVPNLMUCZVRAJZLMZWAVSLMZWAVPNOPZUCZAKUDZQZFKREKRZQZBUFZGJZOSM
+      OWKSMUGZGKRDJZCJZSMWNWMSMUGCKRDKRWJWLGKWJVQVTVRHJZLMZWOVSLMZWOVPNOPZUCZHK
+      UDZQZFKREKRZQZBUFZWKKUBZWLWIXCBWHXBVQWGXAEFKKWFWTVTWEWSAHKWAWOPWBWPWCWQWD
+      WRWAWOVRLUHWAWOVSLUIWAWOOVPUJUKULUMUNUMUOZXDXEUQABIKIJZOTZKLUPZXGURUSUEZT
+      ZKLUTZVIWKEFIAKXLWAOTZKLUPZWAURUSUEZTZKLUTXGWAPZKXKXPLXQXIXNXJXOXQKXHXMLX
+      GWAOVAVBXGWAURUSVCVDVEVFXDXEVGXDWJXEWJXDXFVHVJVKVLVMDCGVNVO $.
   $}
 
 
