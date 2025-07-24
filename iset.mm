@@ -173510,11 +173510,11 @@ $)
        theorem as stated here (although versions with additional conditions,
        such as ~ ivthinc for strictly monotonic functions, can be proved).
 
-       The proof is by via a function which we call the hover function and
-       which is also described in Section 5.1 of [Bauer], p. 493.  Consider any
-       real number ` z ` .  We want to show that ` z <_ 0 \/ 0 <_ z ` .
-       Because of ~ hovercncf , ~ hovera , and ~ hoverb , we are able to apply
-       the intermediate value theorem to get a value ` c ` such that the hover
+       The proof is via a function which we call the hover function and which
+       is also described in Section 5.1 of [Bauer], p. 493.  Consider any real
+       number ` z ` .  We want to show that ` z <_ 0 \/ 0 <_ z ` .  Because of
+       ~ hovercncf , ~ hovera , and ~ hoverb , we are able to apply the
+       intermediate value theorem to get a value ` c ` such that the hover
        function at ` c ` equals ` z ` .  By ~ axltwlin , ` c < 1 ` or
        ` 0 < c ` , and that leads to ` z <_ 0 ` by ~ hoverlt1 or ` 0 <_ z ` by
        ~ hovergt0 .  (Contributed by Jim Kingdon and Mario Carneiro,
