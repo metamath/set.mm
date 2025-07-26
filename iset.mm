@@ -163965,6 +163965,30 @@ $)
     reldmmpl $p |- Rel dom mPoly $=
       ( vi vr vs vf cvv cv cmps co cdm cfn wcel cbs cfv crab cress csb df-mplfi
       cmpl reldmmpo ) ABEECAFBFGHCFZDFIJKDTLMNOHPRCDABQS $.
+
+    mplval.p $e |- P = ( I mPoly R ) $.
+    mplval.s $e |- S = ( I mPwSer R ) $.
+    mplval.b $e |- B = ( Base ` S ) $.
+    mplval.z $e |- .0. = ( 0g ` R ) $.
+    ${
+      $d V s $.  $d W s $.
+      mplfival.u $e |- U = { f e. B | dom f e. Fin } $.
+      $( Value of the set of multivariate polynomials.  (Contributed by Mario
+         Carneiro, 7-Jan-2015.)  (Revised by Mario Carneiro, 2-Oct-2015.)
+         (Revised by AV, 25-Jun-2019.) $)
+      mplfival $p |- ( ( I e. V /\ R e. W ) -> P = ( S |`s U ) ) $=
+        ( vs wcel co cbs cvv vi vr wa cmpl cress cmps cdm cfn cfv crab csb wceq
+        cv elex adantr adantl wal cxp wfn fnpsr fnovex mp3an2i vex basfn funfni
+        funfvex mp2an rabex ressex ax-gen csbexga sylancl oveq12 df-mplfi simpr
+        csbeq1d ovmpoga syl3anc eqtr4di fveq2d rabeqdv oveq12d csbied eqtrid
+        eqtrd ) GHQZCIQZUCZBGCUDRZDEUERZKWHWIPGCUFRZPUMZFUMUGUHQZFWLSUIZUJZUERZ
+        UKZWJWHGTQZCTQZWQTQZWIWQULWFWRWGGHUNUOZWGWSWFCIUNUPZWHWKTQZWPTQZPUQWTUF
+        TTURUSWHWRWSXCUTXAXBGCTTUFVAVBZXDPWLTQZWOTQXDPVCZWMFWNSTUSXFWNTQZVDXGXH
+        TWLSWLSVFVEVGVHWOWLTTVIVGVJPWKWPTTVKVLUAUBGCTTPUAUMZUBUMZUFRZWPUKWQUDTX
+        IGULXJCULUCPXKWKWPXIGXJCUFVMVPPFUAUBVNVQVRWHPWKWPWJTXEWHWLWKULZUCZWLDWO
+        EUEXMWLWKDWHXLVOLVSZXMWOWMFAUJEXMWMFWNAXMWNDSUIAXMWLDSXNVTMVSWAOVSWBWCW
+        EWD $.
+    $}
   $}
 
 
