@@ -164028,6 +164028,16 @@ $)
       VMGABCDENFPPHIJKLMUOUPVLVGNGAVJGUQVKVFRVJGURUTUSVAVB $.
   $}
 
+  ${
+    mplrcl.p $e |- P = ( I mPoly R ) $.
+    mplrcl.b $e |- B = ( Base ` P ) $.
+    $( Reverse closure for the polynomial index set.  (Contributed by Stefan
+       O'Rear, 19-Mar-2015.)  (Revised by Mario Carneiro, 30-Aug-2015.) $)
+    mplrcl $p |- ( X e. B -> I e. _V ) $=
+      ( wcel cvv cmpl reldmmpl cxp wfn wrel fnmpl fnrel ax-mp relelbasov simpld
+      ) EAHDIHCIHEABJDCKJIILZMJNOTJPQFGRS $.
+  $}
+
 
 $(
 ###############################################################################
