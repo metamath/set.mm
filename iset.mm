@@ -164016,6 +164016,16 @@ $)
         DDGCTUIZSLTSSUJUKVBGSPVCCSPVGSPUMGHUNCIUNGCSSTUOUPUQVFAURVDVEFAUSUHUTVA
         $.
     $}
+
+    $( Property of being a polynomial.  (Contributed by Mario Carneiro,
+       7-Jan-2015.)  (Revised by Mario Carneiro, 2-Oct-2015.)  (Revised by AV,
+       25-Jun-2019.) $)
+    mplfielbas $p |- ( X e. U <-> ( X e. B /\ dom X e. Fin ) ) $=
+      ( vf wcel cvv wa cfn cmpl cmps cdm reldmmpl cxp wfn wrel fnmpl relelbasov
+      fnrel ax-mp reldmpsr fnpsr adantr cv crab mplfibas eleq2d wceq dmeq elrab
+      eleq1d bitrdi pm5.21nii ) GEOZFPOCPOQZGAOZGUAZROZQZGEBSFCUBSPPUCZUDSUEUFV
+      ISUHUIIMUGVEVDVGGADTFCUJTVIUDTUEUKVITUHUIJKUGULVDVCGNUMZUAZROZNAUNZOVHVDE
+      VMGABCDENFPPHIJKLMUOUPVLVGNGAVJGUQVKVFRVJGURUTUSVAVB $.
   $}
 
 
