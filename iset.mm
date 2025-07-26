@@ -163958,6 +163958,18 @@ $)
   $}
 
   ${
+    $d f i r s $.
+    $( The multivariate polynomial constructor has universal domain.
+       (Contributed by Jim Kingdon, 26-Jul-2025.) $)
+    fnmpl $p |- mPoly Fn ( _V X. _V ) $=
+      ( vi vr vs vf cvv cv cmps co cdm cfn wcel cbs cfv crab cress csb cmpl wfn
+      vex mp2an cxp fnpsr fnovex mp3an basfn funfvex funfni rabex ressex csbexa
+      df-mplfi fnmpoi ) ABEECAFZBFZGHZCFZDFIJKZDUPLMZNZOHZPQCDABUKCUOUTGEEUARUM
+      EKUNEKUOEKUBASBSUMUNEEGUCUDUPEKZUSEKUTEKCSZUQDURLERVAUREKZUEVBVCEUPLUPLUF
+      UGTUHUSUPEEUITUJUL $.
+  $}
+
+  ${
     $d f B $.  $d f i r s I $.  $d f i r s R $.  $d i r s S $.  $d i r s U $.
     $d f X $.  $d f .0. $.
     $( The multivariate polynomial constructor is a proper binary operator.
