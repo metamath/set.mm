@@ -163989,6 +163989,21 @@ $)
         EUEXMWLWKDWHXLVOLVSZXMWOWMFAUJEXMWMFWNAXMWNDSUIAXMWLDSXNVTMVSWAOVSWBWCW
         EWD $.
     $}
+
+    mplbas.u $e |- U = ( Base ` P ) $.
+    ${
+      $d V s $.  $d W s $.
+      $( Base set of the set of multivariate polynomials.  (Contributed by
+         Mario Carneiro, 7-Jan-2015.)  (Revised by Mario Carneiro, 2-Oct-2015.)
+         (Revised by AV, 25-Jun-2019.) $)
+      mplfibas $p |- ( ( I e. V /\ R e. W )
+          -> U = { f e. B | dom f e. Fin } ) $=
+        ( wcel cbs cfv cvv cmps wa cv cdm cfn crab eqid mplfival a1i co cxp wfn
+        wceq fnpsr elex fnovex mp3an3an eqeltrid wss ssrab2 ressbas2d eqtr4id )
+        GHPZCIPZUAZEBQRFUBUCUDPZFAUEZOVDVFABDSABCDVFFGHIJKLMNVFUFUGADQRULVDMUHV
+        DDGCTUIZSLTSSUJUKVBGSPVCCSPVGSPUMGHUNCIUNGCSSTUOUPUQVFAURVDVEFAUSUHUTVA
+        $.
+    $}
   $}
 
 
