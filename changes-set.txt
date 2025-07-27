@@ -14,6 +14,9 @@ The ones WITH "Notes" may have to be processed manually.
 
 PROPOSED:
 Date      Old       New         Notes
+proposed  odcl2     odfi
+proposed  finodsubmsubg fiodsubmsubg
+proposed  finsubmsubg fisubmsubg
 proposed  dfss      sseqinr
 proposed  dfss2     sseqin
 proposed  dfss3f    dfss2f
@@ -90,6 +93,10 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
 27-Jul-25 fnimatp   fnimatpd    Moved from TA's mathbox to main set.mm
+17-Jul-25 predbrg   elpredimg   Consistent with elpredim, elpredg
+ 6-Jul-25 binom2d   [same]      Moved from II's mathbox to main set.mm
+ 6-Jul-25 unfid     [same]      Moved from GS's mathbox to main set.mm
+ 3-Jul-25 eqsnd     [same]      Moved from TA's mathbox to main set.mm
 21-Jun-25 eldifsnd  [same]      Moved from TA's mathbox to main set.mm
 21-Jun-25 domnlcanb [same]      Moved from TA's mathbox to main set.mm
 21-Jun-25 domnlcan  [same]      Moved from TA's mathbox to main set.mm
