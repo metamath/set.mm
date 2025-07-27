@@ -164073,6 +164073,21 @@ $)
       CZUDTUEUFVDTUGUHGIUIABCDELFRRCUJUKZGHJVEURIULUMVBLAUNUOUPUQUS $.
   $}
 
+  ${
+    $d f I $.
+    mplelf.p $e |- P = ( I mPoly R ) $.
+    mplelf.k $e |- K = ( Base ` R ) $.
+    mplelf.b $e |- B = ( Base ` P ) $.
+    mplelf.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+    mplelf.x $e |- ( ph -> X e. B ) $.
+    $( A polynomial is defined as a function on the coefficients.  (Contributed
+       by Mario Carneiro, 7-Jan-2015.)  (Revised by Mario Carneiro,
+       2-Oct-2015.) $)
+    mplelf $p |- ( ph -> X : D --> K ) $=
+      ( cmps co cbs cfv eqid mplbasss sselid psrelbas ) AGEOPZQRZCEUCFGHIUCSZKM
+      UDSZABUDIUDDEUCBGJUELUFTNUAUB $.
+  $}
+
 
 $(
 ###############################################################################
