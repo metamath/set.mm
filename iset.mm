@@ -164060,6 +164060,17 @@ $)
       ( vf wcel wa cv cdm cfn cfv cress co eqid cbs crab mplfival oveq2d eqtr4d
       c0g mplfibas ) EFLBGLMZACKNOPLKCUAQZUBZRSCDRSUIABCUJKEFGBUFQZHIUITZUKTZUJ
       TUCUHDUJCRUIABCDKEFGUKHIULUMJUGUDUE $.
+
+    $d B x $.  $d U x $.
+    mplbasss.b $e |- B = ( Base ` S ) $.
+    $( The set of polynomials is a subset of the set of power series.
+       (Contributed by Mario Carneiro, 7-Jan-2015.)  (Revised by Mario
+       Carneiro, 2-Oct-2015.) $)
+    mplbasss $p |- U C_ B $=
+      ( vx vf cv wcel cdm cfn crab cvv wa cmpl wceq reldmmpl cxp wfn wrel fnmpl
+      fnrel ax-mp relelbasov c0g cfv mplfibas syl ssrab2 eqsstrdi sseld pm2.43i
+      eqid ssriv ) KEAKMZENZUTANVAEAUTVAELMOPNZLAQZAVAFRNCRNSEVCUAUTEBTFCUBTRRU
+      CZUDTUEUFVDTUGUHGIUIABCDELFRRCUJUKZGHJVEURIULUMVBLAUNUOUPUQUS $.
   $}
 
 
