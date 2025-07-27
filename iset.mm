@@ -164036,6 +164036,16 @@ $)
     mplrcl $p |- ( X e. B -> I e. _V ) $=
       ( wcel cvv cmpl reldmmpl cxp wfn wrel fnmpl fnrel ax-mp relelbasov simpld
       ) EAHDIHCIHEABJDCKJIILZMJNOTJPQFGRS $.
+
+    mplelsfi.z $e |- .0. = ( 0g ` R ) $.
+    mplelsfi.f $e |- ( ph -> F e. B ) $.
+    mplelsfi.r $e |- ( ph -> R e. V ) $.
+    $( A polynomial treated as a coefficient function has finitely many terms.
+       (Contributed by Stefan O'Rear, 22-Mar-2015.)  (Revised by AV,
+       25-Jun-2019.) $)
+    mplfielsfi $p |- ( ph -> dom F e. Fin ) $=
+      ( wcel cdm cfn cmps co cbs eqid cfv mplfielbas simprbi syl ) AEBNZEOPNZLU
+      EEFDQRZSUAZNUFUHCDUGBFEHIUGTUHTKJUBUCUD $.
   $}
 
 
