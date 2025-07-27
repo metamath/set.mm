@@ -164048,6 +164048,20 @@ $)
       EEFDQRZSUAZNUFUHCDUGBFEHIUGTUHTKJUBUCUD $.
   $}
 
+  ${
+    $d f B $.  $d f I $.  $d f R $.  $d f S $.
+    mplval2.p $e |- P = ( I mPoly R ) $.
+    mplval2.s $e |- S = ( I mPwSer R ) $.
+    mplval2.u $e |- U = ( Base ` P ) $.
+    $( Self-referential expression for the set of multivariate polynomials.
+       (Contributed by Mario Carneiro, 7-Jan-2015.)  (Revised by Mario
+       Carneiro, 2-Oct-2015.) $)
+    mplval2g $p |- ( ( I e. V /\ R e. W ) -> P = ( S |`s U ) ) $=
+      ( vf wcel wa cv cdm cfn cfv cress co eqid cbs crab mplfival oveq2d eqtr4d
+      c0g mplfibas ) EFLBGLMZACKNOPLKCUAQZUBZRSCDRSUIABCUJKEFGBUFQZHIUITZUKTZUJ
+      TUCUHDUJCRUIABCDKEFGUKHIULUMJUGUDUE $.
+  $}
+
 
 $(
 ###############################################################################
