@@ -68171,6 +68171,13 @@ $)
     ( wfn cfn wcel wss w3a cres fnssres 3adant2 simp2 fnfi syl2anc ) CADZBEFZBA
     GZHCBIZBDZPREFOQSPABCJKOPQLBRMN $.
 
+  $( A restricted identity function is finite iff the restricting class is
+     finite.  (Contributed by AV, 10-Jan-2020.) $)
+  residfi $p |- ( ( _I |` A ) e. Fin <-> A e. Fin ) $=
+    ( cid cres cfn wcel cdm dmresi wfun funi funres ax-mp fundmfi eqeltrrid cvv
+    mpan2 wfn wss wf1o f1ovi f1ofn ssv resfnfinfinss mp3an13 impbii ) BACZDEZAD
+    EZUFAUEFZDAGUFUEHZUHDEBHUIIABJKUELOMBNPZUGANQUFNNBRUJSNNBTKAUANABUBUCUD $.
+
   $( If a relation is finite, its converse is as well.  (Contributed by Jim
      Kingdon, 5-Feb-2022.) $)
   relcnvfi $p |- ( ( Rel A /\ A e. Fin ) -> `' A e. Fin ) $=
