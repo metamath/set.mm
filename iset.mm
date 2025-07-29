@@ -149330,6 +149330,14 @@ $)
     ( cgrp wcel cmnd csgrp grpmnd mndsgrp syl ) ABCADCAECAFAGH $.
 
   ${
+    grpmgmd.g $e |- ( ph -> G e. Grp ) $.
+    $( A group is a magma, deduction form.  (Contributed by SN,
+       14-Apr-2025.) $)
+    grpmgmd $p |- ( ph -> G e. Mgm ) $=
+      ( cmnd wcel cmgm grpmndd mndmgm syl ) ABDEBFEABCGBHI $.
+  $}
+
+  ${
     $d B a b c i n x $.  $d G a b c i n x $.  $d .+ a b c i n x $.
     dfgrp2.b $e |- B = ( Base ` G ) $.
     dfgrp2.p $e |- .+ = ( +g ` G ) $.
