@@ -158937,6 +158937,16 @@ $)
       CABDVMVNVMRZWIVAACDVMWAWLWARVAVD $.
   $}
 
+  $( The equalizer of two ring homomorphisms is a subring.  (Contributed by
+     Stefan O'Rear, 7-Mar-2015.)  (Revised by Mario Carneiro, 6-May-2015.) $)
+  rhmeql $p |- ( ( F e. ( S RingHom T ) /\ G e. ( S RingHom T ) ) ->
+    dom ( F i^i G ) e. ( SubRing ` S ) ) $=
+    ( crh co wcel cin cdm csubrg cfv csubg cmgp csubmnd cghm rhmghm syl2an eqid
+    wa rhmmhm ghmeql cmhm mhmeql crg wb rhmrcl1 adantr issubrg3 syl mpbir2and )
+    CABEFZGZDUKGZSZCDHIZAJKGZUOALKGZUOAMKZNKGZULCABOFZGDUTGUQUMABCPABDPABCDUAQU
+    LCURBMKZUBFZGDVBGUSUMABCURVAURRZVARZTABDURVAVCVDTURVACDUCQUNAUDGZUPUQUSSUEU
+    LVEUMABCUFUGAUOURVCUHUIUJ $.
+
   ${
     $d s x y B $.  $d s x y K $.  $d s x y ph $.  $d s x y L $.
     subrgpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
