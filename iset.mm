@@ -153900,6 +153900,16 @@ $)
     ghmabl.1 $e |- ( ph -> F : X -onto-> Y ) $.
 
     ${
+      ghmfghm.3 $e |- ( ph -> G e. Grp ) $.
+      $( The function fulfilling the conditions of ~ ghmgrp is a group
+         homomorphism.  (Contributed by Thierry Arnoux, 26-Jan-2020.) $)
+      ghmfghm $p |- ( ph -> F e. ( G GrpHom H ) ) $=
+        ( cv wcel cfv ghmgrp wfo wf fof syl co wceq 3expb isghmd ) ABCDEGHFIJKL
+        MNQABCDEFGHIJOKLMNPQUAAIJFUBIJFUCPIJFUDUEABRZISCRZISUJUKDUFFTUJFTUKFTEU
+        FUGOUHUI $.
+    $}
+
+    ${
       ghmcmn.3 $e |- ( ph -> G e. CMnd ) $.
       $( The image of a commutative monoid ` G ` under a group homomorphism
          ` F ` is a commutative monoid.  (Contributed by Thierry Arnoux,
