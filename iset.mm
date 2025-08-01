@@ -158906,6 +158906,21 @@ $)
   $}
 
   ${
+    resrhm.u $e |- U = ( S |`s X ) $.
+    $( Restriction of a ring homomorphism to a subring is a homomorphism.
+       (Contributed by Mario Carneiro, 12-Mar-2015.) $)
+    resrhm $p |- ( ( F e. ( S RingHom T ) /\ X e. ( SubRing ` S ) ) ->
+        ( F |` X ) e. ( U RingHom T ) ) $=
+      ( crh co wcel csubrg cfv wa crg cres cghm cmgp cmhm rhmrcl2 syl2an eqid
+      subrgring anim12ci csubg rhmghm subrgsubg resghm csubmnd rhmmhm subrgsubm
+      cress resmhm wceq rhmrcl1 mgpress sylan oveq1d eleqtrd jca isrhm sylanbrc
+      ) DABGHIZEAJKZIZLZCMIZBMIZLDENZCBOHIZVGCPKZBPKZQHZIZLVGCBGHIVAVFVCVEABDRE
+      ACFUAUBVDVHVLVADABOHIEAUCKIVHVCABDUDEAUEABCDEFUFSVDVGAPKZEUJHZVJQHZVKVADV
+      MVJQHIEVMUGKIVGVOIVCABDVMVJVMTZVJTZUHEAVMVPUIVMVJVNDEVNTUKSVDVNVIVJQVAAMI
+      VCVNVIULABDUMEACVMMVBFVPUNUOUPUQURCBVGVIVJVITVQUSUT $.
+  $}
+
+  ${
     $d s x y B $.  $d s x y K $.  $d s x y ph $.  $d s x y L $.
     subrgpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
     subrgpropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
