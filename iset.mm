@@ -158947,6 +158947,16 @@ $)
     LCURBMKZUBFZGDVBGUSUMABCURVAURRZVARZTABDURVAVCVDTURVACDUCQUNAUDGZUPUQUSSUEU
     LVEUMABCUFUGAUOURVCUHUIUJ $.
 
+  $( The homomorphic image of a subring is a subring.  (Contributed by Stefan
+     O'Rear, 10-Mar-2015.)  (Revised by Mario Carneiro, 6-May-2015.) $)
+  rhmima $p |- ( ( F e. ( M RingHom N ) /\ X e. ( SubRing ` M ) ) ->
+      ( F " X ) e. ( SubRing ` N ) ) $=
+    ( crh co wcel csubrg cfv wa cima csubg cmgp csubmnd rhmghm subrgsubg ghmima
+    cghm syl2an eqid rhmmhm subrgsubm mhmima crg wb rhmrcl2 adantr issubrg3 syl
+    cmhm mpbir2and ) ABCEFGZDBHIGZJZADKZCHIGZUOCLIGZUOCMIZNIGZULABCRFGDBLIGUQUM
+    BCAODBPBCDAQSULABMIZURUJFGDUTNIGUSUMBCAUTURUTTZURTZUADBUTVAUBAUTURDUCSUNCUD
+    GZUPUQUSJUEULVCUMBCAUFUGCUOURVBUHUIUK $.
+
   ${
     $d s x y B $.  $d s x y K $.  $d s x y ph $.  $d s x y L $.
     subrgpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
