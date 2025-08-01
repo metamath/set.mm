@@ -153929,6 +153929,28 @@ $)
   $}
 
   ${
+    $d x y B $.  $d x y G $.  $d x y I $.
+    invghm.b $e |- B = ( Base ` G ) $.
+    invghm.m $e |- I = ( invg ` G ) $.
+    $( The inversion map is a group automorphism if and only if the group is
+       abelian.  (In general it is only a group homomorphism into the opposite
+       group, but in an abelian group the opposite group coincides with the
+       group itself.)  (Contributed by Mario Carneiro, 4-May-2015.) $)
+    invghm $p |- ( G e. Abel <-> I e. ( G GrpHom G ) ) $=
+      ( vx vy cabl wcel cghm co cv wceq wral syl3anc grpinvcl syl2anc grpinvinv
+      cfv wa cplusg eqid ablgrp cgrp grpinvf syl ablinvadd 3expb isghmd ghmgrp1
+      wf adantr simprr simprl grpinvadd fveq2d simpl ghmlin 3eqtrd grpcl eqtr3d
+      oveq12d ralrimivva isabl2 sylanbrc impbii ) BHIZCBBJKIZVGFGBUASZVIBBCAADD
+      VIUBZVJBUCZVKVGBUDIZAACUKVKABCDEUEUFVGFLZAIZGLZAIZVMVOVIKZCSVMCSZVOCSZVIK
+      ZMAVIBCVMVODVJEUGUHUIVHVLVQVOVMVIKZMZGANFANVGBBCUJZVHWBFGAAVHVNVPTZTZWACS
+      ZCSZVQWAWEWGVTCSZVRCSZVSCSZVIKZVQWEWFVTCWEVLVPVNWFVTMVHVLWDWCULZVHVNVPUMZ
+      VHVNVPUNZAVIBCVOVMDVJEUOOUPWEVHVRAIZVSAIZWHWKMVHWDUQWEVLVNWOWLWNABCVMDEPQ
+      WEVLVPWPWLWMABCVODEPQVIVIBBVRCVSADVJVJUROWEWIVMWJVOVIWEVLVNWIVMMWLWNABCVM
+      DERQWEVLVPWJVOMWLWMABCVODERQVBUSWEVLWAAIZWGWAMWLWEVLVPVNWQWLWMWNAVIBVOVMD
+      VJUTOABCWADERQVAVCFGAVIBDVJVDVEVF $.
+  $}
+
+  ${
     eqgabl.x $e |- X = ( Base ` G ) $.
     eqgabl.n $e |- .- = ( -g ` G ) $.
     eqgabl.r $e |- .~ = ( G ~QG S ) $.
