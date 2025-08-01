@@ -158957,6 +158957,14 @@ $)
     BCAODBPBCDAQSULABMIZURUJFGDUTNIGUSUMBCAUTURUTTZURTZUADBUTVAUBAUTURDUCSUNCUD
     GZUPUQUSJUEULVCUMBCAUFUGCUOURVBUHUIUK $.
 
+  $( The range of a ring homomorphism is a subring.  (Contributed by SN,
+     18-Nov-2023.) $)
+  rnrhmsubrg $p |- ( F e. ( M RingHom N ) -> ran F e. ( SubRing ` N ) ) $=
+    ( crh co wcel crn cbs cfv cima csubrg cres df-ima wfn wceq eqid fnresdm syl
+    rhmf ffnd rneqd eqtr2id crg rhmrcl1 subrgid rhmima mpdan eqeltrd ) ABCDEFZA
+    GZABHIZJZCKIZUIULAUKLZGUJAUKMUIUNAUIAUKNUNAOUIUKCHIZAUKUOBCAUKPZUOPSTUKAQRU
+    AUBUIUKBKIFZULUMFUIBUCFUQBCAUDUKBUPUERABCUKUFUGUH $.
+
   ${
     $d s x y B $.  $d s x y K $.  $d s x y ph $.  $d s x y L $.
     subrgpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
