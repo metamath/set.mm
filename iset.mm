@@ -156202,6 +156202,27 @@ $)
     vex ne0i mp2b ) ABZCDEFGUAHIEJGUAUAIUAIHZIEKGUBILZMDMNOARUCCUAUCPQMUCST $.
 
   ${
+    $d x y z B $.  $d x y z R $.  $d x y z .x. $.  $d x y z X $.
+    ringlghm.b $e |- B = ( Base ` R ) $.
+    ringlghm.t $e |- .x. = ( .r ` R ) $.
+    $( Left-multiplication in a ring by a fixed element of the ring is a group
+       homomorphism.  (It is not usually a ring homomorphism.)  (Contributed by
+       Mario Carneiro, 4-May-2015.) $)
+    ringlghm $p |- ( ( R e. Ring /\ X e. B ) ->
+      ( x e. B |-> ( X .x. x ) ) e. ( R GrpHom R ) ) $=
+      ( vy vz crg wcel wa cfv cv co eqid ringcl oveq2 syl3anc fvmptd3 cmpt cgrp
+      cplusg ringgrp adantr 3expa fmpttd wceq w3a 3anass ringdi anassrs ringacl
+      sylan2br 3expb adantlr simpll simplr simprl simprr oveq12d 3eqtr4d isghmd
+      ) CJKZEBKZLZHICUCMZVGCCABEANZDOZUAZBBFFVGPZVKVDCUBKVECUDUEZVLVFABVIBVDVEV
+      HBKVIBKBCDEVHFGQUFUGVFHNZBKZINZBKZLZLZEVMVOVGOZDOZEVMDOZEVODOZVGOZVSVJMVM
+      VJMZVOVJMZVGOVDVEVQVTWCUHZVEVQLVDVEVNVPUIWFVEVNVPUJBVGCDEVMVOFVKGUKUNULVR
+      AVSVIVTBVJBVJPZVHVSEDRVDVQVSBKZVEVDVNVPWHBVGCVMVOFVKUMUOUPZVRVDVEWHVTBKVD
+      VEVQUQZVDVEVQURZWIBCDEVSFGQSTVRWDWAWEWBVGVRAVMVIWABVJBWGVHVMEDRVFVNVPUSZV
+      RVDVEVNWABKWJWKWLBCDEVMFGQSTVRAVOVIWBBVJBWGVHVOEDRVFVNVPUTZVRVDVEVPWBBKWJ
+      WKWMBCDEVOFGQSTVAVBVC $.
+  $}
+
+  ${
     $d B x y z $.  $d G x y z $.
     ringressid.b $e |- B = ( Base ` G ) $.
     $( A ring restricted to its base set is a ring.  It will usually be the
