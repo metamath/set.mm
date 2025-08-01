@@ -158921,6 +158921,23 @@ $)
   $}
 
   ${
+    resrhm2b.u $e |- U = ( T |`s X ) $.
+    $( Restriction of the codomain of a (ring) homomorphism. ~ resghm2b analog.
+       (Contributed by SN, 7-Feb-2025.) $)
+    resrhm2b $p |- ( ( X e. ( SubRing ` T ) /\ ran F C_ X ) ->
+                     ( F e. ( S RingHom T ) <-> F e. ( S RingHom U ) ) ) $=
+      ( cfv wcel wa crg cghm co cmgp cmhm crh wb sylan eqid adantr biantrud crn
+      csubrg wss csubg subrgsubg resghm2b cress csubmnd subrgsubm resmhm2b wceq
+      mgpress mpancom oveq2d eleq2d bitrd anbi12d anbi2d anbi1d subrgring isrhm
+      subrgrcl 3bitr3d 3bitr4g ) EBUBGZHZDUAEUCZIZAJHZBJHZIZDABKLHZDAMGZBMGZNLH
+      ZIZIZVICJHZIZDACKLHZDVMCMGZNLZHZIZIZDABOLHDACOLHVHVIVPIVIWDIVQWEVHVPWDVIV
+      HVLVTVOWCVFEBUDGHVGVLVTPEBUEABCDEFUFQVHVODVMVNEUGLZNLZHZWCVFEVNUHGHVGVOWH
+      PEBVNVNRZUIVMVNWFDEWFRUJQVHWGWBDVHWFWAVMNVFWFWAUKZVGVJVFWJEBVBZEBCVNJVEFW
+      IULUMSUNUOUPUQURVHVIVKVPVHVJVIVFVJVGWKSTUSVHVIVSWDVHVRVIVFVRVGEBCFUTSTUSV
+      CABDVMVNVMRZWIVAACDVMWAWLWARVAVD $.
+  $}
+
+  ${
     $d s x y B $.  $d s x y K $.  $d s x y ph $.  $d s x y L $.
     subrgpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
     subrgpropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
