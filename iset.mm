@@ -163845,6 +163845,17 @@ $)
       CRKZVQVSSZVMPTKEUDCMZPUFMZKZVTUEVMENKZWDEUGZCEGUHUIAPWBVRVQWCNBPWBUJRZPQH
       UKZPULKWCPUMMSUNPWCWCUOUPUQUSANVPVOWGOZBWGSVPWISHBWGVOUTUQVAVBVCVMWEVRULK
       VRTKVTWAVDWFCVREGWHVEVRVFVRVQVSVSUOVGVHVICVREFGWHIVJVKVL $.
+
+    $( The ` ZZ ` ring homomorphism maps elements to their equivalence classes.
+       (Contributed by Mario Carneiro, 15-Jun-2015.)  (Revised by AV,
+       13-Jun-2019.) $)
+    znzrhval $p |- ( ( N e. NN0 /\ A e. ZZ ) -> ( L ` A ) = [ A ] .~ ) $=
+      ( vx cn0 wcel cz cfv cec adantr cvv czring crg wa cmpt wceq znzrh2 fveq1d
+      cv eqid eceq1 simpr csn co zringring crsp rspex ax-mp eqeltri snexg fvexg
+      cqg sylancr eqgex eqeltrid ecexg syl fvmptd3 eqtrd ) ELMZANMZUAZADOZAKNKU
+      FZBPZUBZOZABPZVGVJVNUCVHVGADVMKBCDEFGHIJUDUEQVIKAVLVONVMRVMUGVKABUHVGVHUI
+      VIBRMVORMVIBSEUJZCOZUSUKZRHVISTMZVQRMZVRRMULVICRMVPRMZVTCSUMOZRGVSWBRMULT
+      SUNUOUPVGWAVHELUQQVPCRRURUTVQSTRVAUTVBARBVCVDVEVF $.
   $}
 
 
