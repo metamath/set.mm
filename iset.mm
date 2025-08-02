@@ -163508,6 +163508,22 @@ $)
   $}
 
   ${
+    $d x y B $.  $d x y K $.  $d x y L $.  $d x y ph $.
+    zrhpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    zrhpropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    zrhpropd.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+        ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    zrhpropd.4 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+        ( x ( .r ` K ) y ) = ( x ( .r ` L ) y ) ) $.
+    $( The ` ZZ ` ring homomorphism depends only on the ring attributes of a
+       structure.  (Contributed by Mario Carneiro, 15-Jun-2015.) $)
+    zrhpropd $p |- ( ph -> ( ZRHom ` K ) = ( ZRHom ` L ) ) $=
+      ( czring crh co cuni czrh cfv eqidd cv wcel wa cbs cplusg rhmpropd unieqd
+      cmulr eqid zrhval 3eqtr4g ) AKELMZNKFLMZNEOPZFOPZAUIUJABCKUAPZDKEKFAUMQZG
+      UNHABRZUMSCRZUMSTTZUOUPKUBPMQIUQUOUPKUEPMQJUCUDEUKUKUFUGFULULUFUGUH $.
+  $}
+
+  ${
     $d g G $.  $d g .x. $.
     zlmval.w $e |- W = ( ZMod ` G ) $.
     zlmval.m $e |- .x. = ( .g ` G ) $.
