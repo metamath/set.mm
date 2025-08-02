@@ -158997,6 +158997,44 @@ $)
       HHQUUJAWHUPYBVQVTVOVOWIWREWTWRTWTTWAWIXFFXHXFTXHTWAWBWCWDWE $.
   $}
 
+  ${
+    $d f x y J $.  $d f x y K $.  $d f x y L $.  $d f x y M $.  $d f x y ph $.
+    $d x y B $.  $d x y C $.
+    rhmpropd.a $e |- ( ph -> B = ( Base ` J ) ) $.
+    rhmpropd.b $e |- ( ph -> C = ( Base ` K ) ) $.
+    rhmpropd.c $e |- ( ph -> B = ( Base ` L ) ) $.
+    rhmpropd.d $e |- ( ph -> C = ( Base ` M ) ) $.
+    rhmpropd.e $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+        ( x ( +g ` J ) y ) = ( x ( +g ` L ) y ) ) $.
+    rhmpropd.f $e |- ( ( ph /\ ( x e. C /\ y e. C ) ) ->
+        ( x ( +g ` K ) y ) = ( x ( +g ` M ) y ) ) $.
+    rhmpropd.g $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+        ( x ( .r ` J ) y ) = ( x ( .r ` L ) y ) ) $.
+    rhmpropd.h $e |- ( ( ph /\ ( x e. C /\ y e. C ) ) ->
+        ( x ( .r ` K ) y ) = ( x ( .r ` M ) y ) ) $.
+    $( Ring homomorphism depends only on the ring attributes of structures.
+       (Contributed by Mario Carneiro, 12-Jun-2015.) $)
+    rhmpropd $p |- ( ph -> ( J RingHom K ) = ( L RingHom M ) ) $=
+      ( co wcel cfv vf crh wa cv wi cghm cmgp cmhm eqid isrhm simplbi ringpropd
+      crg a1i anbi12d imbitrrid wb adantr ghmpropd eleq2d cbs wceq simprl eqtrd
+      mgpbasg syl simprr simprbda simplbda cmulr cplusg adantlr mgpplusgg oveqd
+      3eqtr3d mhmpropd 3bitr4g ex pm5.21ndd eqrdv ) AUAFGUBRZHIUBRZAFUMSZGUMSZU
+      CZUAUDZWASZWFWBSZWGWEUEAWGWEWFFGUFRZSZWFFUGTZGUGTZUHRZSZUCZFGWFWKWLWKUIZW
+      LUIZUJZUKUNWHWEAHUMSZIUMSZUCZWHXAWFHIUFRZSZWFHUGTZIUGTZUHRZSZUCZHIWFXDXEX
+      DUIZXEUIZUJZUKAWCWSWDWTABCDFHJLNPULABCEGIKMOQULUOZUPAWEWGWHUQAWEUCZWEWOUC
+      XAXHUCWGWHXMWEXAWOXHAWEXAUQWEXLURXMWJXCWNXGAWJXCUQWEAWIXBWFABCDEFGHIJKLMN
+      OUSUTURXMWMXFWFXMBCDEWKWLXDXEXMDFVATZWKVATZADXNVBWEJURXMWCXNXOVBAWCWDVCZX
+      NFWKUMWPXNUIVEVFVDXMEGVATZWLVATZAEXQVBWEKURXMWDXQXRVBAWCWDVGZXQGWLUMWQXQU
+      IVEVFVDXMDHVATZXDVATZADXTVBWELURXMWSXTYAVBAWEWSWTXLVHZXTHXDUMXIXTUIVEVFVD
+      XMEIVATZXEVATZAEYCVBWEMURXMWTYCYDVBAWEWSWTXLVIZYCIXEUMXJYCUIVEVFVDXMBUDZD
+      SCUDZDSUCZUCZYFYGFVJTZRZYFYGHVJTZRZYFYGWKVKTZRZYFYGXDVKTZRZAYHYKYMVBWEPVL
+      YIWCYKYOVBXMWCYHXPURWCYJYNYFYGFYJWKUMWPYJUIVMVNVFYIWSYMYQVBXMWSYHYBURWSYL
+      YPYFYGHYLXDUMXIYLUIVMVNVFVOXMYFESYGESUCZUCZYFYGGVJTZRZYFYGIVJTZRZYFYGWLVK
+      TZRZYFYGXEVKTZRZAYRUUAUUCVBWEQVLYSWDUUAUUEVBXMWDYRXSURWDYTUUDYFYGGYTWLUMW
+      QYTUIVMVNVFYSWTUUCUUGVBXMWTYRYEURWTUUBUUFYFYGIUUBXEUMXJUUBUIVMVNVFVOVPUTU
+      OUOWRXKVQVRVSVT $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
