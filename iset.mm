@@ -163828,6 +163828,25 @@ $)
       UQURCUIQUJUK $.
   $}
 
+  ${
+    $d x A $.  $d x N $.  $d x .~ $.  $d x S $.
+    znzrh2.s $e |- S = ( RSpan ` ZZring ) $.
+    znzrh2.r $e |- .~ = ( ZZring ~QG ( S ` { N } ) ) $.
+    znzrh2.y $e |- Y = ( Z/nZ ` N ) $.
+    znzrh2.2 $e |- L = ( ZRHom ` Y ) $.
+    $( The ` ZZ ` ring homomorphism maps elements to their equivalence classes.
+       (Contributed by Mario Carneiro, 15-Jun-2015.)  (Revised by AV,
+       13-Jun-2019.) $)
+    znzrh2 $p |- ( N e. NN0 -> L = ( x e. ZZ |-> [ x ] .~ ) ) $=
+      ( wcel czrh cfv cz cec czring cqus co wceq crg cn0 cmpt crh csn zringring
+      clidl nn0z znlidl syl cqg oveq2i ccrg c2idl zringcrng eqid crng2idl ax-mp
+      cv zringbas eceq2 mpteq2i qusrhm sylancr wb zncrng2 crngring zrhrhmb 4syl
+      mpbid znzrh eqtr2d eqtrid ) EUAKZDFLMZANAURZBOZUBZJVMVQPBQRZLMZVNVMVQPVRU
+      CRKZVQVSSZVMPTKEUDCMZPUFMZKZVTUEVMENKZWDEUGZCEGUHUIAPWBVRVQWCNBPWBUJRZPQH
+      UKZPULKWCPUMMSUNPWCWCUOUPUQUSANVPVOWGOZBWGSVPWISHBWGVOUTUQVAVBVCVMWEVRULK
+      VRTKVTWAVDWFCVREGWHVEVRVFVRVQVSVSUOVGVHVICVREFGWHIVJVKVL $.
+  $}
+
 
 $(
 ###############################################################################
