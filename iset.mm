@@ -163858,6 +163858,23 @@ $)
       SUNUOUPVGWAVHELUQQVPCRRURUTVQSTRVAUTVBARBVCVDVEVF $.
   $}
 
+  ${
+    $d x N $.
+    znzrhfo.y $e |- Y = ( Z/nZ ` N ) $.
+    znzrhfo.b $e |- B = ( Base ` Y ) $.
+    znzrhfo.2 $e |- L = ( ZRHom ` Y ) $.
+    $( The ` ZZ ` ring homomorphism is a surjection onto ` ZZ / n ZZ ` .
+       (Contributed by Mario Carneiro, 15-Jun-2015.) $)
+    znzrhfo $p |- ( N e. NN0 -> L : ZZ -onto-> B ) $=
+      ( vx cn0 wcel cz wfo czring cfv co cvv crg wceq eqid zringring cv csn cqg
+      crsp cec cmpt cqs cqus eqidd cbs zringbas rspex ax-mp snexg fvexg sylancr
+      a1i eqgex quslem wb znbas eqtr4di foeq3 syl mpbid znzrh2 foeq1 mpbird ) C
+      IJZKABLZKAHKHUAMCUBZMUDNZNZUCOZUEUFZLZVIKKVNUGZVOLZVPVIHVNMMVNUHOZVOKPQVI
+      VSUIKMUJNRVIUKUQVOSVIMQJZVMPJZVNPJTVIVLPJZVKPJWAVTWBTQMULUMCIUNVKVLPPUOUP
+      VMMQPURUPVTVITUQUSVIVQARVRVPUTVIVQDUJNAVNVLCDVLSZEVNSZVAFVBVQAKVOVCVDVEVI
+      BVORVJVPUTHVNVLBCDWCWDEGVFKABVOVGVDVH $.
+  $}
+
 
 $(
 ###############################################################################
