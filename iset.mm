@@ -162731,6 +162731,27 @@ $)
     qusring $p |- ( ( R e. Ring /\ S e. I ) -> U e. Ring ) $=
       ( crg wcel wa cur cfv cqg co cec wceq eqid qus1 simpld ) AGHBDHICGHAJKZAB
       LMNCJKOABCSDEFSPQR $.
+
+    qusrhm.x $e |- X = ( Base ` R ) $.
+    qusrhm.f $e |- F = ( x e. X |-> [ x ] ( R ~QG S ) ) $.
+    $( If ` S ` is a two-sided ideal in ` R ` , then the "natural map" from
+       elements to their cosets is a ring homomorphism from ` R ` to
+       ` R / S ` .  (Contributed by Mario Carneiro, 15-Jun-2015.) $)
+    qusrhm $p |- ( ( R e. Ring /\ S e. I ) -> F e. ( R RingHom U ) ) $=
+      ( crg wcel cfv eqid co cec cvv wceq cv vy vz vd vc va vb wa cmulr qusring
+      cur simpl cqg csubg wer clidl coppr 2idlelb simplbi lidlsubg sylan2 eqger
+      syl cbs basfn elexd funfvex funfni sylancr eqeltrid divsfval simprd eqtrd
+      wfn qus1 cqus a1i 2idlcpbl ringcl 3expb adantlr caovclg qusmulval oveq12d
+      adantr 3eqtr4rd cnsg cghm cabl ringabl ablnsg eleqtrrd qusghm isrhm2d ) B
+      LMZCFMZUGZUAUBGBDBUHNZDUHNZBUJNZEDUJNZJWSOZWTOWQOZWROZWNWOUKZBCDFHIUIWPWS
+      ENWSBCULPZQZWTWPAWSXEEGRWPCBUMNZMZGXEUNZWOWNCBUONZMZXHWOXKCBUPNZUONZMBFCX
+      JXMXLXJOZXLOXMOIUQURBXJCXNUSUTZXEBGCJXEOZVAVBZWPGBVCNZRJWPVCRVMBRMXRRMZVD
+      WPBLXDVEXSRBVCBVCVFVGVHVIZKVJWPDLMXFWTSBCDWSFHIXAVNVKVLWPUATZGMZUBTZGMZUG
+      ZUGZYAXEQZYCXEQZWRPZYAYCWQPZXEQZYAENZYCENZWRPYJENWPYBYDYIYKSWPXEBWRWQDGYA
+      YCLUCUDUEUFDBXEVOPSWPHVPGXRSWPJVPXQXDUETUFTUDTZUCTZBCWQXEFGJXPIXBVQWPUAUB
+      YNYOGGGWQWNYEYJGMZWOWNYBYDYPGBWQYAYCJXBVRVSVTWAXBXCWBVSYFYLYGYMYHWRYFAYAX
+      EEGRWPXIYEXQWDZWPGRMYEXTWDZKVJYFAYCXEEGRYQYRKVJWCYFAYJXEEGRYQYRKVJWEWPCBW
+      FNZMEBDWGPMWPCXGYSXOWPBWHMZYSXGSWNYTWOBWIWDBWJVBWKAEBDGCJHKWLVBWM $.
   $}
 
   ${
