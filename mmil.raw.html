@@ -960,6 +960,14 @@ prove the biconditional with that condition as an antecedent, and then use
 ~ elxp4 ).
 </LI>
 
+<li>
+  If you are proving an equality, and you need a condition
+  implied by each side of the equality being inhabited,
+  use ~ eqriv so that you need a biconditional rather than
+  an equality, and then use the ~ pm5.21nii trick above
+  (or similar logic). Examples: ~ 2idlval , ~ zrhval .
+</li>
+
 <LI>
 If your proof relies on dveeq2 try ~ dveeq2or and likewise for the other things
 downstream of ~ ax-i12 or ~ ax-bndl .
@@ -11906,12 +11914,6 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>lidlrsppropd</td>
   <td>~ lidlrsppropdg</td>
   <td>adds set existence hypotheses</td>
-</tr>
-
-<tr>
-  <td>2idlval</td>
-  <td>~ 2idlvalg</td>
-  <td>adds set existence condition</td>
 </tr>
 
 <tr>

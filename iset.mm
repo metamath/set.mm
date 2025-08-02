@@ -162386,21 +162386,6 @@ $)
     ( ( LIdeal ` r ) i^i ( LIdeal ` ( oppR ` r ) ) ) ) $.
 
   ${
-    $d r I $.  $d r J $.  $d r R $.
-    2idlval.i $e |- I = ( LIdeal ` R ) $.
-    2idlval.o $e |- O = ( oppR ` R ) $.
-    2idlval.j $e |- J = ( LIdeal ` O ) $.
-    2idlval.t $e |- T = ( 2Ideal ` R ) $.
-    $( Definition of a two-sided ideal.  (Contributed by Mario Carneiro,
-       14-Jun-2015.) $)
-    2idlvalg $p |- ( R e. V -> T = ( I i^i J ) ) $=
-      ( vr wcel c2idl cfv cin clidl coppr cvv fveq2 eqtr4di df-2idl wceq fveq2d
-      cv ineq12d elex lidlex eqeltrid inex1g syl fvmptd3 eqtrid ) AFLZBAMNCDOZJ
-      UMKAKUDZPNZUOQNZPNZOUNRMRKUAUOAUBZUPCURDUSUPAPNZCUOAPSGTUSUREPNDUSUQEPUSU
-      QAQNEUOAQSHTUCITUEAFUFUMCRLUNRLUMCUTRGFAUGUHCDRUIUJUKUL $.
-  $}
-
-  ${
     $d a b j s w x $.
     2idlmex.i $e |- T = ( 2Ideal ` W ) $.
     $( Existence of the set a two-sided ideal is built from (when the ideal is
@@ -162409,6 +162394,31 @@ $)
       ( vr wcel c2idl cdm wrel cfv cvv cv clidl coppr cin mptrel df-2idl releqi
       cmpt mpbir eleq2i biimpi relelfvdm sylancr elexd ) BAFZCGHZUFGIZBCGJZFZCU
       GFUHEKELZMJUKNJMJOZSZIEKULPGUMEQRTUFUJAUIBDUAUBBCGUCUDUE $.
+  $}
+
+  ${
+    $d r x I $.  $d r x J $.  $d r x R $.  $d x T $.
+    2idlval.i $e |- I = ( LIdeal ` R ) $.
+    2idlval.o $e |- O = ( oppR ` R ) $.
+    2idlval.j $e |- J = ( LIdeal ` O ) $.
+    2idlval.t $e |- T = ( 2Ideal ` R ) $.
+    $( Definition of a two-sided ideal.  (Contributed by Mario Carneiro,
+       14-Jun-2015.) $)
+    2idlval $p |- T = ( I i^i J ) $=
+      ( vx vr cin cv wcel cvv syl cfv clidl coppr eqtr4di 2idlmex elinel1 c2idl
+      lidlmex lidlex eqeltrid inex1g fveq2 fveq2d ineq12d df-2idl fvmptg eqtrid
+      wceq mpdan eleq2d pm5.21nii eqriv ) JBCDLZJMZBNAONZUTUSNZBUTAIUAVBUTCNVAU
+      TCDUBUTCAFUDPVABUSUTVABAUCQZUSIVAUSONZVCUSUNVACONVDVACARQZOFOAUEUFCDOUGPK
+      AKMZRQZVFSQZRQZLUSOOUCVFAUNZVGCVIDVJVGVECVFARUHFTVJVIERQDVJVHERVJVHASQEVF
+      ASUHGTUIHTUJKUKULUOUMUPUQUR $.
+
+    $( Definition of a two-sided ideal.  (Contributed by Mario Carneiro,
+       14-Jun-2015.) $)
+    2idlvalg $p |- ( R e. V -> T = ( I i^i J ) ) $=
+      ( vr wcel c2idl cfv cin clidl coppr cvv fveq2 eqtr4di df-2idl wceq fveq2d
+      cv ineq12d elex lidlex eqeltrid inex1g syl fvmptd3 eqtrid ) AFLZBAMNCDOZJ
+      UMKAKUDZPNZUOQNZPNZOUNRMRKUAUOAUBZUPCURDUSUPAPNZCUOAPSGTUSUREPNDUSUQEPUSU
+      QAQNEUOAQSHTUCITUEAFUFUMCRLUNRLUMCUTRGFAUGUHCDRUIUJUKUL $.
   $}
 
   ${
