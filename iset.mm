@@ -163746,6 +163746,14 @@ $)
     znmul $p |- ( N e. NN0 -> ( .r ` U ) = ( .r ` Y ) ) $=
       ( cmulr mulridx cnx cfv cslot wceq cn wcel mulrslid simpri plendxnmulrndx
       cple necomi znbaslemnn ) ABHCDEFGIHJHKZLMUBNOPQJSKUBRTUA $.
+
+    $( The ` ZZ ` ring homomorphism of ` Z/nZ ` is inherited from the quotient
+       ring it is based on.  (Contributed by Mario Carneiro, 14-Jun-2015.)
+       (Revised by AV, 13-Jun-2019.) $)
+    znzrh $p |- ( N e. NN0 -> ( ZRHom ` U ) = ( ZRHom ` Y ) ) $=
+      ( vx vy cn0 wcel cbs cfv eqidd znbas2 cv wa cplusg oveqdr cmulr zrhpropd
+      znadd znmul ) CJKZHIBLMZBDUDUENABCDEFGOUDHPUEKIPUEKQZHIBRMDRMABCDEFGUBSUD
+      UFHIBTMDTMABCDEFGUCSUA $.
   $}
 
   ${
