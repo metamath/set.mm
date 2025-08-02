@@ -146477,6 +146477,20 @@ $)
     ercpbl.f $e |- F = ( x e. V |-> [ x ] .~ ) $.
 
     ${
+      $d y .~ $.  $d y A $.  $d y F $.  $d y ph $.
+      $( Value of the function in ~ qusval .  (Contributed by Mario Carneiro,
+         24-Feb-2015.)  (Revised by Mario Carneiro, 12-Aug-2015.)  (Revised by
+         AV, 12-Jul-2024.) $)
+      divsfval $p |- ( ph -> ( F ` A ) = [ A ] .~ ) $=
+        ( vy cfv cec wcel cv wi mptrcl a1i eleq2d cvv wex 19.8a ecdmn0m biimpri
+        cdm wer wceq erdm syl imbitrid syl5 wb wa eceq1 simpr ecss ssexd adantr
+        fvmptd3 ex pm5.21ndd eqrdv ) AKCELZCDMZACFNZKOZVCNZVFVDNZVGVEPABFBOZDMZ
+        EVFCJQRVHVHKUAZAVEVHKUBVKCDUEZNZAVEVMVKKCDUCUDAVLFCAFDUFVLFUGHFDUHUISUJ
+        UKAVEVGVHULAVEUMZVCVDVFVNBCVJVDFETJVICDUNAVEUOAVDTNVEAVDFGIACDFHUPUQURU
+        SSUTVAVB $.
+    $}
+
+    ${
       ercpbl.a $e |- ( ph -> A e. V ) $.
       $( Value of the function in ~ qusval .  (Contributed by Mario Carneiro,
          24-Feb-2015.)  (Revised by Mario Carneiro, 12-Aug-2015.)  (Revised by
