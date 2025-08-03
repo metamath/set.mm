@@ -162855,6 +162855,35 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Principal ideal rings.  Divisibility in the integers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d a x R $.  $d G a x $.  $d B a x $.  $d K a x $.  $d .|| a x $.
+    rspsn.b $e |- B = ( Base ` R ) $.
+    rspsn.k $e |- K = ( RSpan ` R ) $.
+    rspsn.d $e |- .|| = ( ||r ` R ) $.
+    $( Membership in principal ideals is closely related to divisibility.
+       (Contributed by Stefan O'Rear, 3-Jan-2015.)  (Revised by Mario Carneiro,
+       6-May-2015.) $)
+    rspsn $p |- ( ( R e. Ring /\ G e. B ) ->
+        ( K ` { G } ) = { x | G .|| x } ) $=
+      ( va crg wcel cfv wceq wrex a1i cbs eqtrid adantr eqid wa cv wbr cmulr co
+      csn wb eqcom rexbidv crglmod clspn cvsca csca clmod rlmlmod simpr rlmbasg
+      eleqtrd ellspsn syl2an2r crsp rspvalg fveq1d eleq2d rlmvscag oveqd eqeq2d
+      rlmscabas rexeqbidv 3bitr4d cdsr csrg ringsrg dvdsr2d eqabdv ) DKLZEBLZUA
+      ZEAUBZCUCZAEUFZFMZVRVSJUBZEDUDMZUEZNZJBOZWEVSNZJBOVSWBLZVTVRWFWHJBWFWHUGV
+      RVSWEUHPUIVRVSWADUJMZUKMZMZLZVSWCEWJULMZUEZNZJWJUMMZQMZOZWIWGVPWJUNLVQEWJ
+      QMZLWMWSUGDUOVREBWTVPVQUPZVPBWTNVQVPBDQMZWTGDKUQRSURWNVSJWQWRWKWTWJEWQTWR
+      TWTTWNTWKTUSUTVRWBWLVSVRWAFWKVPFWKNVQVPFDVAMWKHKDVBRSVCVDVRWFWPJBWRVPBWRN
+      VQVPBXBWRGDKVHRSVRWEWOVSVRWDWNWCEVPWDWNNVQDKVESVFVGVIVJVRJBCDWDEVSBXBNVRG
+      PCDVKMNVRIPVPDVLLVQDVMSWDWDNVRWDTPXAVNVJVO $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   The complex numbers as an algebraic extensible structure
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
