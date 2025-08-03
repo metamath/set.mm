@@ -163904,6 +163904,31 @@ $)
       BVORVJVPUTHVNVLBCDWCWDEGVFKABVOVGVDVH $.
   $}
 
+  ${
+    $d x A $.  $d x B $.  $d x N $.  $d n x Y $.
+    zncyg.y $e |- Y = ( Z/nZ ` N ) $.
+    zndvds.2 $e |- L = ( ZRHom ` Y ) $.
+    $( Express equality of equivalence classes in ` ZZ / n ZZ ` in terms of
+       divisibility.  (Contributed by Mario Carneiro, 15-Jun-2015.) $)
+    zndvds $p |- ( ( N e. NN0 /\ A e. ZZ /\ B e. ZZ ) ->
+      ( ( L ` A ) = ( L ` B ) <-> N || ( A - B ) ) ) $=
+      ( vx cfv wceq wcel cz co cdvds wbr czring eqid zringbas sylancr ccnfld wb
+      cn0 w3a cmin eqcom csn cqg cec znzrhval 3adant2 3adant3 eqeq12d csubg wer
+      crsp crg clidl zringring wss nn0z 3ad2ant1 snssd rspcl lidlsubg eqger syl
+      simp3 erth csg cabl zringabl lidlss eqgabl wa simp2 jca biantrurd bitr4di
+      df-3an cv csubrg zsubrg subrgsubg mp1i cnfldsub df-zring subgsub syld3an1
+      eqcomd dvdsrzring rspsn eleq12d zsubcld breq2 elabg bitrd 3bitr2d bitrid
+      cab ) ACIZBCIZJXAWTJZDUBKZALKZBLKZUCZDABUDMZNOZWTXAUEXFXBBPDUFZPUOIZIZUGM
+      ZUHZAXLUHZJBAXLOZXHXFXAXMWTXNXCXEXAXMJXDBXLXJCDEXJQZXLQZFGUIUJXCXDWTXNJXE
+      AXLXJCDEXPXQFGUIUKULXFBAXLLXFXKPUMIKZLXLUNXFPUPKZXKPUQIZKZXRURXFXSXILUSYA
+      URXFDLXCXDDLKZXEDUTVAZVBLPXTXIXJXPRXTQZVCSZPXTXKYDVDSXLPLXKRXQVEVFXCXDXEV
+      GZVHXFXOXEXDABPVIIZMZXKKZUCZYIXHXFPVJKXKLUSZXOYJUAVKXFYAYKYELXKXTPRYDVLVF
+      BAXLXKPYGLRYGQZXQVMSXFYIXEXDVNZYIVNYJXFYMYIXFXEXDYFXCXDXEVOZVPVQXEXDYIVSV
+      RXFYIXGDHVTZNOZHWSZKZXHXFYHXGXKYQXFXGYHLTUMIKZXDXCXEXGYHJLTWAIKYSXFWBLTWC
+      WDLTPUDYGABWEWFYLWGWHWIXFXSYBXKYQJURYCHLNPDXJRXPWJWKSWLXFXGLKYRXHUAXFABYN
+      YFWMYPXHHXGLYOXGDNWNWOVFWPWQWQWR $.
+  $}
+
 
 $(
 ###############################################################################
