@@ -23126,6 +23126,46 @@ $)
   $}
 
   ${
+    $d A x $.  $d B x $.
+    raleqtrdv.1 $e |- ( ph -> A. x e. A ps ) $.
+    raleqtrdv.2 $e |- ( ph -> A = B ) $.
+    $( Substitution of equal classes into a restricted universal quantifier.
+       (Contributed by Matthew House, 21-Jul-2025.) $)
+    raleqtrdv $p |- ( ph -> A. x e. B ps ) $=
+      ( wral raleqdv mpbid ) ABCDHBCEHFABCDEGIJ $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    rexeqtrdv.1 $e |- ( ph -> E. x e. A ps ) $.
+    rexeqtrdv.2 $e |- ( ph -> A = B ) $.
+    $( Substitution of equal classes into a restricted existential quantifier.
+       (Contributed by Matthew House, 21-Jul-2025.) $)
+    rexeqtrdv $p |- ( ph -> E. x e. B ps ) $=
+      ( wrex rexeqdv mpbid ) ABCDHBCEHFABCDEGIJ $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    raleqtrrdv.1 $e |- ( ph -> A. x e. A ps ) $.
+    raleqtrrdv.2 $e |- ( ph -> B = A ) $.
+    $( Substitution of equal classes into a restricted universal quantifier.
+       (Contributed by Matthew House, 21-Jul-2025.) $)
+    raleqtrrdv $p |- ( ph -> A. x e. B ps ) $=
+      ( wral raleqdv mpbird ) ABCEHBCDHFABCEDGIJ $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    rexeqtrrdv.1 $e |- ( ph -> E. x e. A ps ) $.
+    rexeqtrrdv.2 $e |- ( ph -> B = A ) $.
+    $( Substitution of equal classes into a restricted existential quantifier.
+       (Contributed by Matthew House, 21-Jul-2025.) $)
+    rexeqtrrdv $p |- ( ph -> E. x e. B ps ) $=
+      ( wrex rexeqdv mpbird ) ABCEHBCDHFABCEDGIJ $.
+  $}
+
+  ${
     $d x A $.  $d x B $.
     raleqd.1 $e |- ( A = B -> ( ph <-> ps ) ) $.
     $( Equality deduction for restricted universal quantifier.  (Contributed by
