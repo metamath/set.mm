@@ -10410,6 +10410,7 @@
 "nfcvf" is used by "axregndlem2".
 "nfcvf" is used by "axrepnd".
 "nfcvf" is used by "axrepndlem2".
+"nfcvf" is used by "axsepg2".
 "nfcvf" is used by "axunnd".
 "nfcvf" is used by "axunndlem1".
 "nfcvf" is used by "bj-nfcsym".
@@ -14990,6 +14991,7 @@ New usage of "axresscn" is discouraged (2 uses).
 New usage of "axrnegex" is discouraged (0 uses).
 New usage of "axrrecex" is discouraged (0 uses).
 New usage of "axsep" is discouraged (0 uses).
+New usage of "axsepg2" is discouraged (0 uses).
 New usage of "axsepgfromrep" is discouraged (1 uses).
 New usage of "axtglowdim2ALTV" is discouraged (0 uses).
 New usage of "axtgupdim2ALTV" is discouraged (0 uses).
@@ -18191,7 +18193,7 @@ New usage of "nfcrALT" is discouraged (0 uses).
 New usage of "nfcsb" is discouraged (5 uses).
 New usage of "nfcsbd" is discouraged (1 uses).
 New usage of "nfcvb" is discouraged (0 uses).
-New usage of "nfcvf" is discouraged (27 uses).
+New usage of "nfcvf" is discouraged (28 uses).
 New usage of "nfcvf2" is discouraged (16 uses).
 New usage of "nfdifOLD" is discouraged (0 uses).
 New usage of "nfdisj" is discouraged (0 uses).
