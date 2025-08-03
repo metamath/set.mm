@@ -163927,6 +163927,17 @@ $)
       RXFYIXGDHVTZNOZHWSZKZXHXFYHXGXKYQXFXGYHLTUMIKZXDXCXEXGYHJLTWAIKYSXFWBLTWC
       WDLTPUDYGABWEWFYLWGWHWIXFXSYBXKYQJURYCHLNPDXJRXPWJWKSWLXFXGLKYRXHUAXFABYN
       YFWMYPXHHXGLYOXGDNWNWOVFWPWQWQWR $.
+
+    zndvds0.3 $e |- .0. = ( 0g ` Y ) $.
+    $( Special case of ~ zndvds when one argument is zero.  (Contributed by
+       Mario Carneiro, 15-Jun-2015.) $)
+    zndvds0 $p |- ( ( N e. NN0 /\ A e. ZZ ) ->
+        ( ( L ` A ) = .0. <-> N || A ) ) $=
+      ( cn0 wcel cz wa cfv cc0 wceq co cdvds wbr czring 3syl cmin zndvds mp3an3
+      wb 0z crh cghm ccrg crg zncrng adantr crngring zrhrhm rhmghm zring0 ghmid
+      eqeq2d simpr zcnd subid1d breq2d 3bitr3d ) CIJZAKJZLZABMZNBMZOZCANUAPZQRZ
+      VFEOCAQRVCVDNKJVHVJUDUEANBCDFGUBUCVEVGEVFVEBSDUFPJZBSDUGPJVGEOVEDUHJZDUIJ
+      VKVCVLVDCDFUJUKDULDBGUMTSDBUNSDBNEUOHUPTUQVEVIACQVEAVEAVCVDURUSUTVAVB $.
   $}
 
 
