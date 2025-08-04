@@ -164038,6 +164038,22 @@ $)
       VPOAUWBUVGSUVHKJDABUVIYODABUVJYO $.
   $}
 
+  ${
+    $d x y .<_ $.  $d x A $.  $d x y z N $.  $d x y z X $.  $d x y z Y $.
+    $d x B $.  $d x F $.
+    znle2.y $e |- Y = ( Z/nZ ` N ) $.
+    znle2.f $e |- F = ( ( ZRHom ` Y ) |` W ) $.
+    znle2.w $e |- W = if ( N = 0 , ZZ , ( 0 ..^ N ) ) $.
+    znle2.l $e |- .<_ = ( le ` Y ) $.
+    $( The ordering of the ` Z/nZ ` structure.  (Contributed by Mario Carneiro,
+       15-Jun-2015.)  (Revised by AV, 13-Jun-2019.) $)
+    znle2 $p |- ( N e. NN0 -> .<_ = ( ( F o. <_ ) o. `' F ) ) $=
+      ( cn0 wcel czring cfv co czrh cres cle ccom ccnv eqid csn crsp cqus znzrh
+      cqg znle reseq1d eqtr4di coeq1d cnveqd coeq12d eqtrd ) CJKZBLLCUALUBMZMUE
+      NUCNZOMZDPZQRZUQSZRAQRZASZRUNUOUQBCDEUNTZUOTZFUQTHIUFUMURUTUSVAUMUQAQUMUQ
+      EOMZDPAUMUPVDDUNUOCEVBVCFUDUGGUHZUIUMUQAVEUJUKUL $.
+  $}
+
 
 $(
 ###############################################################################
