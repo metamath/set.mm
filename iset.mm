@@ -164089,6 +164089,25 @@ $)
       LABCDEFGHIJKLMUBUCUMUPUKULTZUPTUQUMURUPUJUKULUDUHUKULUPUEUFUI $.
   $}
 
+  ${
+    $d w x y z N $.  $d w x y z Y $.
+    zntos.y $e |- Y = ( Z/nZ ` N ) $.
+
+    ${
+      znhash.1 $e |- B = ( Base ` Y ) $.
+      $( The ` Z/nZ ` structure has ` n ` elements.  (Contributed by Mario
+         Carneiro, 15-Jun-2015.) $)
+      znhash $p |- ( N e. NN -> ( # ` B ) = N ) $=
+        ( cn wcel chash cfv cc0 wceq cen wbr cfn cz wf1o eqid syl wb syl2anc co
+        cfzo czrh cif 0z nnz fzofig sylancr cn0 nnnn0 znf1o wne nnne0 ifnefalse
+        cres f1oeq2 3syl mpbid f1oeng ensymd enfii hashen mpbird hashfzo0 eqtrd
+        ) BFGZAHIZJBUBUAZHIZBVFVGVIKZAVHLMZVFVHAVFVHNGZVHACUCIBJKOVHUDZUOZPZVHA
+        LMVFJOGBOGVLUEBUFJBUGUHZVFVMAVNPZVOVFBUIGZVQBUJZAVNBVMCDEVNQVMQUKRVFBJU
+        LVMVHKVQVOSBUMBJOVHUNVMVHAVNUPUQURVHANVNUSTUTZVFANGZVLVJVKSVFVLVKWAVPVT
+        AVHVATVPAVHVBTVCVFVRVIBKVSBVDRVE $.
+    $}
+  $}
+
 
 $(
 ###############################################################################
