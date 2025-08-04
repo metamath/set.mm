@@ -164079,6 +164079,14 @@ $)
       BUVAYTUVEBUUBYBPZUVBUVEYDUUBUSZYTUVIUUBYDWAYTUUKXSUVJUVISUULUVHGBUUBYBWEV
       IXEYTXSUUBTOUVIUVBSUVHNXFBUUBGTCXGXHWJWHXIWIYTYDTOZUVGYESYTUUPXSUVKUUSUVH
       BYBTGXAVIUVAYENYDTUUBYDYCRXJXCWTXKWJXLXMXRXSYEXNXOWJ $.
+
+    $( The ordering of the ` Z/nZ ` structure.  (Contributed by Mario Carneiro,
+       15-Jun-2015.)  (Revised by AV, 13-Jun-2019.) $)
+    znleval2 $p |- ( ( N e. NN0 /\ A e. X /\ B e. X ) ->
+                              ( A .<_ B <-> ( `' F ` A ) <_ ( `' F ` B ) ) ) $=
+      ( cn0 wcel w3a wbr ccnv cfv wa cle znleval 3ad2ant1 3simpc df-3an bitr4di
+      wb biantrurd bitr4d ) ENOZAGOZBGOZPZABDQZUKULACRZSBUOSUAQZPZUPUJUKUNUQUGU
+      LABCDEFGHIJKLMUBUCUMUPUKULTZUPTUQUMURUPUJUKULUDUHUKULUPUEUFUI $.
   $}
 
 
