@@ -164095,16 +164095,26 @@ $)
 
     ${
       znhash.1 $e |- B = ( Base ` Y ) $.
+      $( The ` Z/nZ ` structure is a finite ring.  (Contributed by Mario
+         Carneiro, 2-May-2016.) $)
+      znfi $p |- ( N e. NN -> B e. Fin ) $=
+        ( cn wcel cc0 cfzo co cfn cen wbr cz 0z nnz wceq wf1o eqid syl2anc czrh
+        fzofig sylancr cfv cif cres cn0 nnnn0 znf1o syl wne wb ifnefalse f1oeq2
+        nnne0 3syl mpbid f1oeng ensymd enfii ) BFGZHBIJZKGZAVBLMAKGVAHNGBNGVCOB
+        PHBUBUCZVAVBAVAVCVBACUAUDBHQNVBUEZUFZRZVBALMVDVAVEAVFRZVGVABUGGVHBUHAVF
+        BVECDEVFSVESUIUJVABHUKVEVBQVHVGULBUOBHNVBUMVEVBAVFUNUPUQVBAKVFURTUSAVBU
+        TT $.
+
       $( The ` Z/nZ ` structure has ` n ` elements.  (Contributed by Mario
          Carneiro, 15-Jun-2015.) $)
       znhash $p |- ( N e. NN -> ( # ` B ) = N ) $=
         ( cn wcel chash cfv cc0 wceq cen wbr cfn cz wf1o eqid syl wb syl2anc co
         cfzo czrh cif 0z nnz fzofig sylancr cn0 nnnn0 znf1o wne nnne0 ifnefalse
-        cres f1oeq2 3syl mpbid f1oeng ensymd enfii hashen mpbird hashfzo0 eqtrd
+        cres f1oeq2 3syl mpbid f1oeng ensymd znfi hashen mpbird hashfzo0 eqtrd
         ) BFGZAHIZJBUBUAZHIZBVFVGVIKZAVHLMZVFVHAVFVHNGZVHACUCIBJKOVHUDZUOZPZVHA
         LMVFJOGBOGVLUEBUFJBUGUHZVFVMAVNPZVOVFBUIGZVQBUJZAVNBVMCDEVNQVMQUKRVFBJU
-        LVMVHKVQVOSBUMBJOVHUNVMVHAVNUPUQURVHANVNUSTUTZVFANGZVLVJVKSVFVLVKWAVPVT
-        AVHVATVPAVHVBTVCVFVRVIBKVSBVDRVE $.
+        LVMVHKVQVOSBUMBJOVHUNVMVHAVNUPUQURVHANVNUSTUTVFANGVLVJVKSABCDEVAVPAVHVB
+        TVCVFVRVIBKVSBVDRVE $.
     $}
   $}
 
