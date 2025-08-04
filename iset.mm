@@ -85211,6 +85211,21 @@ $)
   cnelprrecn $p |- CC e. { RR , CC } $=
     ( cr cc cnex prid2 ) ABCD $.
 
+  ${
+    $d x y z $.
+    $( Multiplication is an operation on complex numbers.  Version of ~ ax-mulf
+       using maps-to notation, proved from the axioms of set theory and
+       ~ ax-mulcl .  (Contributed by GG, 16-Mar-2025.) $)
+    mpomulf $p |- ( x e. CC , y e. CC |-> ( x x. y ) ) : ( CC X. CC ) --> CC $=
+      ( vz cc cxp cv cmul co cmpo wf wfn wss wcel wral mulcl rgen2 fnmpo coprab
+      eqid wa ax-mp wceq w3a simpll simplr eleq1a syl imp 3jca ssoprab2i df-mpo
+      wi dfxp3 3sstr4i dff2 mpbir2an ) DDEZDABDDAFZBFZGHZIZJVAUQKZVAUQDEZLUTDMZ
+      BDNADNVBVDABDDURUSOZPABDDUTVADVASQUAURDMZUSDMZTZCFZUTUBZTZABCRVFVGVIDMZUC
+      ZABCRVAVCVKVMABCVKVFVGVLVFVGVJUDVFVGVJUEVHVJVLVHVDVJVLULVEUTDVIUFUGUHUIUJ
+      ABCDDUTUKABCDDDUMUNUQDVAUOUP $.
+    $( $j usage 'mpomulf' avoids 'ax-mulf'; $)
+  $}
+
   $( Distributive law for complex numbers (right-distributivity).  (Contributed
      by NM, 10-Oct-2004.) $)
   adddir $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
@@ -172136,6 +172151,43 @@ $)
   $}
 
   ${
+    idcncf.1 $e |- F = ( x e. CC |-> x ) $.
+    $( The identity function is a continuous function on ` CC ` .  (Contributed
+       by Jeff Madsen, 11-Jun-2010.)  (Moved into main set.mm as ~ cncfmptid
+       and may be deleted by mathbox owner, JM. --MC 12-Sep-2015.)  (Revised by
+       Mario Carneiro, 12-Sep-2015.) $)
+    idcncf $p |- F e. ( CC -cn-> CC ) $=
+      ( cc cv cmpt ccncf co wss wcel ssid cncfmptid mp2an eqeltri ) BADAEFZDDGH
+      ZCDDIZQOPJDKZRADDLMN $.
+  $}
+
+  ${
+    $d A x $.
+    sub1cncf.1 $e |- F = ( x e. CC |-> ( x - A ) ) $.
+    $( Subtracting a constant is a continuous function.  (Contributed by Jeff
+       Madsen, 2-Sep-2009.)  (Proof shortened by Mario Carneiro,
+       12-Sep-2015.) $)
+    sub1cncf $p |- ( A e. CC -> F e. ( CC -cn-> CC ) ) $=
+      ( cc wcel cv cmin co cmpt ccncf cabs ccom cfv eqid ctx ccn subcncntop a1i
+      cmopn idcncf wss ssid cncfmptc mp3an23 cncfmpt2fcntop eqeltrid ) BEFZCAEA
+      GZBHIJEEKIZDUHAUIBHLHMTNZEUKOZHUKUKPIUKQIFUHUKULRSAEUIJZUJFUHAUMUMOUASUHE
+      EUBZUNAEBJUJFEUCZUOABEEUDUEUFUG $.
+  $}
+
+  ${
+    $d A x $.
+    sub2cncf.1 $e |- F = ( x e. CC |-> ( A - x ) ) $.
+    $( Subtraction from a constant is a continuous function.  (Contributed by
+       Jeff Madsen, 2-Sep-2009.)  (Proof shortened by Mario Carneiro,
+       12-Sep-2015.) $)
+    sub2cncf $p |- ( A e. CC -> F e. ( CC -cn-> CC ) ) $=
+      ( cc wcel cv cmin co cmpt ccncf cabs ccom cfv eqid ctx ccn subcncntop a1i
+      cmopn wss ssid cncfmptc mp3an23 idcncf cncfmpt2fcntop eqeltrid ) BEFZCAEB
+      AGZHIJEEKIZDUHABUIHLHMTNZEUKOZHUKUKPIUKQIFUHUKULRSUHEEUAZUMAEBJUJFEUBZUNA
+      BEEUCUDAEUIJZUJFUHAUOUOOUESUFUG $.
+  $}
+
+  ${
     $d A w x y z $.  $d a b d e w y $.
     cdivcncf.1 $e |- F = ( x e. { y e. CC | y =//= 0 } |-> ( A / x ) ) $.
     $( Division with a constant numerator is continuous.  (Contributed by Mario
@@ -172377,6 +172429,98 @@ $(
   BASIC REAL AND COMPLEX ANALYSIS
 ###############################################################################
 $)
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Continuity
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+  ${
+    $d X x $.  $d ph x $.
+    addcncf.a $e |- ( ph -> ( x e. X |-> A ) e. ( X -cn-> CC ) ) $.
+    addcncf.b $e |- ( ph -> ( x e. X |-> B ) e. ( X -cn-> CC ) ) $.
+    $( The addition of two continuous complex functions is continuous.
+       (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
+    addcncf $p |- ( ph -> ( x e. X |-> ( A + B ) ) e. ( X -cn-> CC ) ) $=
+      ( caddc cabs cmin ccom cmopn cfv eqid ctx co ccn wcel addcncntop a1i
+      cncfmpt2fcntop ) ABCDHIJKLMZEUBNZHUBUBOPUBQPRAUBUCSTFGUA $.
+  $}
+
+  ${
+    $d X x $.  $d ph x $.
+    subcncf.a $e |- ( ph -> ( x e. X |-> A ) e. ( X -cn-> CC ) ) $.
+    subcncf.b $e |- ( ph -> ( x e. X |-> B ) e. ( X -cn-> CC ) ) $.
+    $( The subtraction of two continuous complex functions is continuous.
+       (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
+    subcncf $p |- ( ph -> ( x e. X |-> ( A - B ) ) e. ( X -cn-> CC ) ) $=
+      ( cmin cabs ccom cmopn cfv eqid ctx co ccn wcel subcncntop cncfmpt2fcntop
+      a1i ) ABCDHIHJKLZEUAMZHUAUANOUAPOQAUAUBRTFGS $.
+  $}
+
+  ${
+    $d B y z $.  $d X x $.  $d ph x $.  $d x y z $.
+    divcncf.1 $e |- ( ph -> ( x e. X |-> A ) e. ( X -cn-> CC ) ) $.
+    divcncfap.2 $e |- ( ph ->
+      ( x e. X |-> B ) e. ( X -cn-> { y e. CC | y =//= 0 } ) ) $.
+    $( The quotient of two continuous complex functions is continuous.
+       (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
+    divcncfap $p |- ( ph -> ( x e. X |-> ( A / B ) ) e. ( X -cn-> CC ) ) $=
+      ( vz cdiv co cmpt c1 cc ccncf cv wcel syl cc0 cap wa cncff fvmptelcdm wbr
+      cmul wf crab breq1 elrab sylib simpld simprd divrecapd mpteq2dva ccom csb
+      ralrimiva eqidd fmptcos wceq csbov2g csbvarg oveq2d eqtrd eqid cdivcncfap
+      eqtr2d ax-1cn mp1i cncfco eqeltrd mulcncf ) ABFDEJKZLBFDMEJKZUEKZLFNOKZAB
+      FVMVOABPFQUAZDEABFDNABFDLZVPQFNVRUFGFNVRUBRUCVQENQZESTUDZVQECPZSTUDZCNUGZ
+      QZVSVTUAABFEWCABFELZFWCOKQFWCWEUFHFWCWEUBRUCZWBVTCENWAESTUHUIUJZUKZVQVSVT
+      WGULUMUNABDVNFGABFVNLZIWCMIPZJKZLZWEUOZVPAWMBFIEWKUPZLWIABIFWCEWKWEWLAWDB
+      FWFUQAWEURAWLURUSABFWNVNVQWNMIEWJUPZJKZVNVQVSWNWPUTWHIEMWJJNVARVQWOEMJVQV
+      SWOEUTWHIENVBRVCVDUNVGAFWCNWEWLHMNQWLWCNOKQAVHICMWLWLVEVFVIVJVKVLVK $.
+  $}
+
+  ${
+    $d X x $.  $d ph x $.  $d x y $.
+    maxcncf.a $e |- ( ph -> ( x e. X |-> A ) e. ( X -cn-> RR ) ) $.
+    maxcncf.b $e |- ( ph -> ( x e. X |-> B ) e. ( X -cn-> RR ) ) $.
+    $( The maximum of two continuous real functions is continuous.
+       (Contributed by Jim Kingdon, 18-Jul-2025.) $)
+    maxcncf $p |- ( ph ->
+        ( x e. X |-> sup ( { A , B } , RR , < ) ) e. ( X -cn-> RR ) ) $=
+      ( vy cr cmpt co cabs c2 ccncf wcel wf syl cc wss cc0 csup caddc cmin cdiv
+      cpr clt cfv cv wa wceq cncff fvmptelcdm maxabs syl2anc mpteq2dva readdcld
+      resubcld recnd abscld rehalfcld fmpttd ax-resscn ssid cncfss mp2an sselid
+      wb addcncf abscncf a1i subcncf cncfmpt1f cap wbr crab 2ap0 breq1 mpbir2an
+      2cn elrab cncfrss apsscn mp3an2i divcncfap cncfcdm sylancr mpbird eqeltrd
+      cncfmptc ) ABECDUEIUFUAZJBECDUBKZCDUCKZLUGZUBKZMUDKZJZEINKZABEWJWOABUHEOU
+      IZCIODIOWJWOUJABECIABECJZWQOZEIWSPFEIWSUKQULZABEDIABEDJZWQOEIXBPGEIXBUKQU
+      LZCDUMUNUOAWPWQOZEIWPPZABEWOIWRWNWRWKWMWRCDXAXCUPWRWLWRWLWRCDXAXCUQURUSUP
+      UTVAAIRSZWPERNKZOXDXEVGVBABHWNMEABWKWMEABCDEAWQXGWSXFRRSZWQXGSVBRVCZEIRVD
+      VEZFVFZAWQXGXBXJGVFZVHABWLLEARINKZRRNKZLXFXHXMXNSVBXIRIRVDVELXMOAVIVJVFAB
+      CDEXKXLVKVLVHMHUHZTVMVNZHRVOZOZAERSZXQRSZBEMJEXQNKOXRMROMTVMVNZVSVPXPYAHM
+      RXOMTVMVQVTVRAWTXSFEIWSWAQXTAHRTWBVJBMEXQWIWCWDERIWPWEWFWGWH $.
+  $}
+
+  ${
+    $d X x $.  $d ph x $.  $d x y $.
+    mincncf.a $e |- ( ph -> ( x e. X |-> A ) e. ( X -cn-> RR ) ) $.
+    mincncf.b $e |- ( ph -> ( x e. X |-> B ) e. ( X -cn-> RR ) ) $.
+    $( The minimum of two continuous real functions is continuous.
+       (Contributed by Jim Kingdon, 19-Jul-2025.) $)
+    mincncf $p |- ( ph ->
+        ( x e. X |-> inf ( { A , B } , RR , < ) ) e. ( X -cn-> RR ) ) $=
+      ( vy cr cmpt co cabs c2 ccncf wcel wf syl cc wss cc0 cinf caddc cmin cdiv
+      cpr clt cfv cv wa wceq cncff fvmptelcdm minabs syl2anc mpteq2dva readdcld
+      resubcld recnd abscld rehalfcld fmpttd ax-resscn ssid cncfss mp2an sselid
+      addcncf abscncf sselii a1i subcncf cncfmpt1f cap wbr crab 2cn breq1 elrab
+      wb 2ap0 mpbir2an cncfrss apsscn cncfmptc mp3an2i divcncfap cncfcdm mpbird
+      sylancr eqeltrd ) ABECDUEIUFUAZJBECDUBKZCDUCKZLUGZUCKZMUDKZJZEINKZABEWKWP
+      ABUHEOUIZCIODIOWKWPUJABECIABECJZWROZEIWTPFEIWTUKQULZABEDIABEDJZWROEIXCPGE
+      IXCUKQULZCDUMUNUOAWQWROZEIWQPZABEWPIWSWOWSWLWNWSCDXBXDUPWSWMWSWMWSCDXBXDU
+      QURUSUQUTVAAIRSZWQERNKZOXEXFVSVBABHWOMEABWLWNEABCDEAWRXHWTXGRRSZWRXHSVBRV
+      CZEIRVDVEZFVFZAWRXHXCXKGVFZVGABWMLELRRNKZOARINKZXNLXGXIXOXNSVBXJRIRVDVEVH
+      VIVJABCDEXLXMVKVLVKMHUHZTVMVNZHRVOZOZAERSZXRRSZBEMJEXRNKOXSMROMTVMVNZVPVT
+      XQYBHMRXPMTVMVQVRWAAXAXTFEIWTWBQYAAHRTWCVJBMEXRWDWEWFERIWQWGWIWHWJ $.
+  $}
 
 
 $(
@@ -173181,6 +173325,214 @@ $)
         NGAUUTXEFSXNUMSUVDAFUMXEHAXQFUMHWQOFUMHWRUOWSWTAGUMSUUTAGLXAWGXBXCXDVP
         $.
     $}
+  $}
+
+  ${
+    $d A a b r x $.  $d A c x $.  $d B b r x $.  $d B c x $.  $d F a b f r x $.
+    $d F c x $.  $d U a b f r x $.  $d U c x $.  $d ph r x $.
+    ivthreinc.1 $e |- ( ph -> A e. RR ) $.
+    ivthreinc.2 $e |- ( ph -> B e. RR ) $.
+    ivthreinc.3 $e |- ( ph -> U e. RR ) $.
+    ivthreinc.4 $e |- ( ph -> A < B ) $.
+    ivthreinc.7 $e |- ( ph -> F e. ( RR -cn-> RR ) ) $.
+    ivthreinc.9 $e |- ( ph -> ( ( F ` A ) < U /\ U < ( F ` B ) ) ) $.
+    ivthreinc.i $e |- ( ph -> A. f ( f e. ( RR -cn-> RR ) ->
+      A. a e. RR A. b e. RR ( ( a < b /\ ( f ` a ) < 0 /\ 0 < ( f ` b ) )
+        -> E. x e. RR ( a < x /\ x < b /\ ( f ` x ) = 0 ) ) ) ) $.
+    $( Restating the intermediate value theorem.  Given a hypothesis stating
+       the intermediate value theorem (in a strong form which is not provable
+       given our axioms alone), provide a conclusion similar to the theorem as
+       stated in the Metamath Proof Explorer (which is also similar to how we
+       state the theorem for a strictly monotonic function at ~ ivthinc ).
+       Being able to have a hypothesis stating the intermediate value theorem
+       will be helpful when it comes time to show that it implies a
+       constructive taboo.  This version of the theorem requires that the
+       function ` F ` is continuous on the entire real line, not just
+       ` ( A [,] B ) ` which may be an unnecessary condition but which is
+       sufficient for the way we want to use it.  (Contributed by Jim Kingdon,
+       7-Jul-2025.) $)
+    ivthreinc $p |- ( ph -> E. c e. ( A (,) B ) ( F ` c ) = U ) $=
+      ( clt cr cc0 vr cv wbr cfv cmin cmpt wceq w3a cioo wrex eqid fveq2 oveq1d
+      co ccncf wcel cncff syl ffvelcdmd resubcld fvmptd3 simpld sublt0d eqbrtrd
+      wf mpbird simprd posdifd mpbid breqtrrd 3jca breq2 breq2d 3anbi2d rexbidv
+      wi 3anbi13d imbi12d wral breq1 breq1d 3anbi12d 3anbi1d ralbidv ffvelcdmda
+      wa adantr fmpttd cc wss wb ax-resscn a1i feqmptd ssid cncfss mp2an sselid
+      eqeltrrd recnd cncfmptc syl3anc subcncf cncfcdm syl2anc mptex eleq1 fveq1
+      wal reex 3anbi23d eqeq1d 3anbi3d mpd rspcdva rexrd simprl simprr1 simprr2
+      spcv cxr elioo4g sylanbrc simprr3 eqtr3d subeq0d fveqeq2 rspcev rexlimddv
+      jca ) ACBUBZRUCZYKDRUCZYKUASUAUBZGUDZEUEUNZUFZUDZTUGZUHZJUBZGUDEUGZJCDUIU
+      NZUJZBSACDRUCZCYQUDZTRUCZTDYQUDZRUCZUHZYTBSUJZAUUEUUGUUINAUUFCGUDZEUEUNZT
+      RAUACYPUUMSYQSYQUKZYNCUGYOUULEUEYNCGULUMKAUULEASSCGAGSSUOUNZUPSSGVEZOSSGU
+      QURZKUSZMUTVAAUUMTRUCUULERUCZAUUSEDGUDZRUCZPVBAUULEUURMVCVFVDATUUTEUEUNZU
+      UHRAUVATUVBRUCAUUSUVAPVGAEUUTMASSDGUUQLUSZVHVIAUADYPUVBSYQSUUNYNDUGYOUUTE
+      UEYNDGULUMLAUUTEUVCMUTVAVJVKACIUBZRUCZUUGTUVDYQUDZRUCZUHZYLYKUVDRUCZYSUHZ
+      BSUJZVPZUUJUUKVPISDUVDDUGZUVHUUJUVKUUKUVMUVEUUEUVGUUIUUGUVDDCRVLUVMUVFUUH
+      TRUVDDYQULVMVQUVMUVJYTBSUVMUVIYMYLYSUVDDYKRVLVNVOVRAHUBZUVDRUCZUVNYQUDZTR
+      UCZUVGUHZUVNYKRUCZUVIYSUHZBSUJZVPZISVSZUVLISVSHSCUVNCUGZUWBUVLISUWDUVRUVH
+      UWAUVKUWDUVOUVEUVQUUGUVGUVNCUVDRVTUWDUVPUUFTRUVNCYQULWAWBUWDUVTUVJBSUWDUV
+      SYLUVIYSUVNCYKRVTWCVOVRWDAYQUUOUPZUWCHSVSZAUWESSYQVEZAUASYPSAYNSUPZWFYOEA
+      SSYNGUUQWEAESUPZUWHMWGUTWHASWIWJZYQSWIUOUNZUPUWEUWGWKUWJAWLWMZAUAYOESAGUA
+      SYOUFUWKAUASSGUUQWNAUUOUWKGUWJWIWIWJZUUOUWKWJWLWIWOZSSWIWPWQOWRWSAEWIUPZU
+      WJUWMUASEUFUWKUPAEMWTZUWLUWMAUWNWMUAESWIXAXBXCSWISYQXDXEVFAFUBZUUOUPZUVOU
+      VNUWQUDZTRUCZTUVDUWQUDZRUCZUHZUVSUVIYKUWQUDZTUGZUHZBSUJZVPZISVSZHSVSZVPZF
+      XIUWEUWFVPZQUXKUXLFYQUASYPXJXFUWQYQUGZUWRUWEUXJUWFUWQYQUUOXGUXMUXIUWCHSUX
+      MUXHUWBISUXMUXCUVRUXGUWAUXMUWTUVQUXBUVGUVOUXMUWSUVPTRUVNUWQYQXHWAUXMUXAUV
+      FTRUVDUWQYQXHVMXKUXMUXFUVTBSUXMUXEYSUVSUVIUXMUXDYRTYKUWQYQXHXLXMVOVRWDWDV
+      RXTURXNKXOLXOXNAYKSUPZYTWFZWFZYKUUCUPZYKGUDZEUGZUUDUXPCYAUPZDYAUPZUXNUHYL
+      YMWFUXQUXPUXTUYAUXNUXPCACSUPUXOKWGXPUXPDADSUPUXOLWGXPAUXNYTXQZVKUXPYLYMYL
+      YMYSUXNAXRYLYMYSUXNAXSYJCDYKYBYCUXPUXREUXPUXRUXPSSYKGAUUPUXOUUQWGUYBUSZWT
+      AUWOUXOUWPWGUXPYRUXREUEUNZTUXPUAYKYPUYDSYQSUUNYNYKUGYOUXREUEYNYKGULUMUYBU
+      XPUXREUYCAUWIUXOMWGUTVAYLYMYSUXNAYDYEYFUUBUXSJYKUUCUUAYKEGYGYHXEYI $.
+  $}
+
+  ${
+    hover.f $e |- F = ( x e. RR |->
+      sup ( { inf ( { x , 0 } , RR , < ) , ( x - 1 ) } , RR , < ) ) $.
+    $( The hover function is continuous.  By hover function, we mean a a
+       function which starts out as a line of slope one, is constant at zero
+       from zero to one, and then resumes as a slope of one.  (Contributed by
+       Jim Kingdon, 20-Jul-2025.) $)
+    hovercncf $p |- F e. ( RR -cn-> RR ) $=
+      ( cr cv cc0 cpr clt c1 co cmpt ccncf wcel wtru wss cc ax-resscn mp2an a1i
+      ax-mp cinf cmin csup ssid cncfmptid cncfmptc syl3anc mincncf wf peano2rem
+      0red adantl fmpttd cres wceq resmpt ax-1cn eqid sub1cncf rescncf eqeltrri
+      wb mp2 cncfcdm sylibr maxcncf mptru eqeltri ) BADAEZFGDHUAZVIIUBJZGDHUCKZ
+      DDLJZCVLVMMNAVJVKDNAVIFDADVIKVMMZNDDODPOZVNDUDQADDUERSNFDMVOVOADFKVMMNUKV
+      ONQSZVPAFDDUFUGUHNDDADVKKZUIZVQVMMZNADVKDVIDMVKDMNVIUJULUMVOVQDPLJZMVSVRV
+      BQAPVKKZDUNZVQVTVOWBVQUOQAPDVKUPTVOWAPPLJMZWBVTMQIPMWCUQAIWAWAURUSTPPDWAU
+      TVCVADPDVQVDRVEVFVGVH $.
+
+    ${
+      $d Z x $.
+      $( A point at which the hover function is less than a given value.
+         (Contributed by Jim Kingdon, 21-Jul-2025.) $)
+      hovera $p |- ( Z e. RR -> ( F ` ( Z - 1 ) ) < Z ) $=
+        ( cr wcel c1 cmin co cfv cc0 cpr clt cinf csup cv peano2rem syl2anc wbr
+        wceq preq1 infeq1d oveq1 preq12d supeq1d mincl syl maxcl fvmptd3 id cle
+        0red 0re min1inf sylancl ltm1 lelttrd ltm1d lttrd wa maxltsup mpbir2and
+        wb syl3anc eqbrtrd ) CEFZCGHIZBJVGKLZEMNZVGGHIZLZEMOZCMVFAVGAPZKLZEMNZV
+        MGHIZLZEMOVLEBEDVMVGTZEVQVKMVRVOVIVPVJVREVNVHMVMVGKUAUBVMVGGHUCUDUECQZV
+        FVIEFZVJEFZVLEFVFVGEFZKEFZVTVSVFULVGKUFRZVFWBWAVSVGQUGZVIVJUHRUIVFVLCMS
+        ZVICMSZVJCMSZVFVIVGCWDVSVFUJZVFWBWCVIVGUKSVSUMVGKUNUOCUPZUQVFVJVGCWEVSW
+        IVFVGVSURWJUSVFVTWAVFWFWGWHUTVCWDWEWIVIVJCVAVDVBVE $.
+    $}
+
+    ${
+      $d Z x $.
+      $( A point at which the hover function is greater than a given value.
+         (Contributed by Jim Kingdon, 21-Jul-2025.) $)
+      hoverb $p |- ( Z e. RR -> Z < ( F ` ( Z + 2 ) ) ) $=
+        ( cr wcel c1 caddc co c2 cfv id cc0 cpr clt cinf cmin csup syl2anc cle
+        peano2re wceq preq1 infeq1d oveq1 preq12d supeq1d 2re a1i readdcld 0red
+        cv mincl peano2rem maxcl fvmptd3 eqeltrd ltp1 recn 2cnd 1cnd addsubassd
+        syl 2m1e1 oveq2i eqtrdi wbr maxle2 breqtrrd eqbrtrrd ltletrd ) CEFZCCGH
+        IZCJHIZBKZVLLZCUAVLVOVNMNZEOPZVNGQIZNZEORZEVLAVNAULZMNZEOPZWBGQIZNZEORW
+        AEBEDWBVNUBZEWFVTOWGWDVRWEVSWGEWCVQOWBVNMUCUDWBVNGQUEUFUGVLCJVPJEFVLUHU
+        IUJZVLVREFZVSEFZWAEFVLVNEFZMEFWIWHVLUKVNMUMSZVLWKWJWHVNUNVCZVRVSUOSZUPZ
+        WNUQCURVLVSVMVOTVLVSCJGQIZHIVMVLCJGCUSVLUTVLVAVBWPGCHVDVEVFVLVSWAVOTVLW
+        IWJVSWATVGWLWMVRVSVHSWOVIVJVK $.
+    $}
+
+    ${
+      $d C x $.
+      $( The hover function evaluated at a point less than one.  (Contributed
+         by Jim Kingdon, 22-Jul-2025.) $)
+      hoverlt1 $p |- ( ( C e. RR /\ C < 1 ) -> ( F ` C ) <_ 0 ) $=
+        ( cr wcel c1 clt wbr wa cfv cc0 cpr cinf cmin co csup cle cv syl2anc wb
+        wceq preq1 infeq1d oveq1 preq12d supeq1d simpl 0red mincl peano2rem syl
+        maxcl fvmptd3 min2inf 1red simpr ltled suble0d mpbird maxleastb syl3anc
+        mpbir2and eqbrtrd ) BEFZBGHIZJZBCKBLMZEHNZBGOPZMZEHQZLRVGABASZLMZEHNZVM
+        GOPZMZEHQVLECEDVMBUBZEVQVKHVRVOVIVPVJVREVNVHHVMBLUCUDVMBGOUEUFUGVEVFUHZ
+        VGVIEFZVJEFZVLEFVGVELEFZVTVSVGUIZBLUJTZVGVEWAVSBUKULZVIVJUMTUNVGVLLRIZV
+        ILRIZVJLRIZVGVEWBWGVSWCBLUOTVGWHBGRIVGBGVSVGUPZVEVFUQURVGBGVSWIUSUTVGVT
+        WAWBWFWGWHJUAWDWEWCVIVJLVAVBVCVD $.
+    $}
+
+    ${
+      $d C x $.
+      $( The hover function evaluated at a point greater than zero.
+         (Contributed by Jim Kingdon, 22-Jul-2025.) $)
+      hovergt0 $p |- ( ( C e. RR /\ 0 < C ) -> 0 <_ ( F ` C ) ) $=
+        ( cr wcel cc0 clt wbr cpr cinf c1 cmin co csup cle syl2anc wceq supeq1d
+        breqtrrd wa cfv simpl peano2rem syl maxle1 mincom simpr ltled wb mingeb
+        0red 0re sylancr mpbid eqtrid preq1d cv preq1 infeq1d oveq1 mincl maxcl
+        preq12d fvmptd3 ) BEFZGBHIZUAZGBGJZEHKZBLMNZJZEHOZBCUBPVHGGVKJZEHOZVMPV
+        HGEFZVKEFZGVOPIVHULZVHVFVQVFVGUCZBUDUEZGVKUFQVHEVLVNHVHVJGVKVHVJGBJEHKZ
+        GBGUGVHGBPIZWAGRZVHGBVRVSVFVGUHUIVHVPVFWBWCUJUMVSGBUKUNUOUPUQSTVHABAURZ
+        GJZEHKZWDLMNZJZEHOVMECEDWDBRZEWHVLHWIWFVJWGVKWIEWEVIHWDBGUSUTWDBLMVAVDS
+        VSVHVJEFZVQVMEFVHVFVPWJVSVRBGVBQVTVJVKVCQVET $.
+    $}
+
+    ${
+      $d F a b f x $.  $d F c x $.  $d Z a b f x $.  $d Z c x $.  $d c ph x $.
+      ivthdichlem.z $e |- ( ph -> Z e. RR ) $.
+      ivthdichlem.i $e |- ( ph -> A. f ( f e. ( RR -cn-> RR ) ->
+        A. a e. RR A. b e. RR ( ( a < b /\ ( f ` a ) < 0 /\ 0 < ( f ` b ) )
+          -> E. x e. RR ( a < x /\ x < b /\ ( f ` x ) = 0 ) ) ) ) $.
+      $( Lemma for ~ ivthdich .  The result, with a few notational
+         conveniences.  (Contributed by Jim Kingdon, 22-Jul-2025.) $)
+      ivthdichlem $p |- ( ph -> ( Z <_ 0 \/ 0 <_ Z ) ) $=
+        ( cc0 cle wbr c1 co c2 cr wcel clt wa vc cv cfv wceq wo cmin caddc cioo
+        peano2rem syl 2re a1i readdcld ltm1d crp ltaddrpd lttrd ccncf hovercncf
+        2rp hovera hoverb jca ivthreinc 0red 1red elioore ad2antrl w3a axltwlin
+        0lt1 syl3anc orcomd simplrr hoverlt1 sylan eqbrtrrd ex hovergt0 breqtrd
+        mpi orim12d mpd rexlimddv ) AUAUBZDUCZEUDZEKLMZKELMZUEZUAENUFOZEPUGOZUH
+        OZABWKWLECDFGUAAEQRZWKQRIEUIUJZAEPIPQRAUKULUMZIAWKEWLWOIWPAEIUNAEPIPUOR
+        AUTULUPUQDQQURORABDHUSULAWKDUCESMZEWLDUCSMZAWNWQIBDEHVAUJAWNWRIBDEHVBUJ
+        VCJVDAWEWMRZWGTTZWENSMZKWESMZUEWJWTXBXAWTKQRZNQRZWEQRZXBXAUEZWTVEWTVFWS
+        XEAWGWEWKWLVGVHZXCXDXEVIKNSMXFVKKNWEVJWAVLVMWTXAWHXBWIWTXAWHWTXATWFEKLA
+        WSWGXAVNWTXEXAWFKLMXGBWEDHVOVPVQVRWTXBWIWTXBTKWFELWTXEXBKWFLMXGBWEDHVSV
+        PAWSWGXBVNVTVRWBWCWD $.
+    $}
+  $}
+
+  ${
+    $d x y z $.
+    $( Real number dichotomy stated in terms of two real numbers or a real
+       number and zero.  (Contributed by Jim Kingdon, 22-Jul-2025.) $)
+    dich0 $p |- ( A. z e. RR ( z <_ 0 \/ 0 <_ z ) <->
+        A. x e. RR A. y e. RR ( x <_ y \/ y <_ x ) ) $=
+      ( cv cc0 cle wbr wo cr wral wcel wa cmin wceq breq1 breq2 orbi12d rspcdva
+      co simpl resubcl adantl simprl suble0d subge0d ralrimivva ralbidv rspccva
+      simprr mpbid 0red ralrimiva impbii ) CDZEFGZEUNFGZHZCIJZADZBDZFGZUTUSFGZH
+      ZBIJZAIJZURVCABIIURUSIKZUTIKZLZLZUSUTMSZEFGZEVJFGZHZVCVIUQVMCIVJUNVJNUOVK
+      UPVLUNVJEFOUNVJEFPQURVHTVHVJIKURUSUTUAUBRVIVKVAVLVBVIUSUTURVFVGUCZURVFVGU
+      IZUDVIUSUTVNVOUEQUJUFVEUQCIVEUNIKLZUNUTFGZUTUNFGZHZUQBIEUTENVQUOVRUPUTEUN
+      FPUTEUNFOQVDVSBIJAUNIUSUNNZVCVSBIVTVAVQVBVRUSUNUTFOUSUNUTFPQUGUHVPUKRULUM
+      $.
+  $}
+
+  ${
+    $d a b f q x $.  $d a b f t x $.  $d a b f x z $.  $d r s z $.
+    $( The intermediate value theorem implies real number dichotomy.  Because
+       real number dichotomy (also known as analytic LLPO) is a constructive
+       taboo, this means we will be unable to prove the intermediate value
+       theorem as stated here (although versions with additional conditions,
+       such as ~ ivthinc for strictly monotonic functions, can be proved).
+
+       The proof is via a function which we call the hover function and which
+       is also described in Section 5.1 of [Bauer], p. 493.  Consider any real
+       number ` z ` .  We want to show that ` z <_ 0 \/ 0 <_ z ` .  Because of
+       ~ hovercncf , ~ hovera , and ~ hoverb , we are able to apply the
+       intermediate value theorem to get a value ` c ` such that the hover
+       function at ` c ` equals ` z ` .  By ~ axltwlin , ` c < 1 ` or
+       ` 0 < c ` , and that leads to ` z <_ 0 ` by ~ hoverlt1 or ` 0 <_ z ` by
+       ~ hovergt0 .  (Contributed by Jim Kingdon and Mario Carneiro,
+       22-Jul-2025.) $)
+    ivthdich $p |- ( A. f ( f e. ( RR -cn-> RR ) ->
+          A. a e. RR A. b e. RR ( ( a < b /\ ( f ` a ) < 0 /\ 0 < ( f ` b ) )
+            -> E. x e. RR ( a < x /\ x < b /\ ( f ` x ) = 0 ) ) )
+        -> A. r e. RR A. s e. RR ( r <_ s \/ s <_ r ) ) $=
+      ( vz vq vt cv cr clt wbr cfv cc0 wceq wi wral cle cpr ccncf wcel w3a wrex
+      co wal wo breq2 breq1 fveqeq2 3anbi123d cbvrexv imbi2i 2ralbii albii cinf
+      wa c1 cmin csup preq1 infeq1d oveq1 preq12d supeq1d cbvmptv simpr biimpri
+      cmpt adantr ivthdichlem sylanb ralrimiva dich0 sylib ) BJZKKUAUEUBZEJZFJZ
+      LMVRVPNOLMOVSVPNLMUCZVRAJZLMZWAVSLMZWAVPNOPZUCZAKUDZQZFKREKRZQZBUFZGJZOSM
+      OWKSMUGZGKRDJZCJZSMWNWMSMUGCKRDKRWJWLGKWJVQVTVRHJZLMZWOVSLMZWOVPNOPZUCZHK
+      UDZQZFKREKRZQZBUFZWKKUBZWLWIXCBWHXBVQWGXAEFKKWFWTVTWEWSAHKWAWOPWBWPWCWQWD
+      WRWAWOVRLUHWAWOVSLUIWAWOOVPUJUKULUMUNUMUOZXDXEUQABIKIJZOTZKLUPZXGURUSUEZT
+      ZKLUTZVIWKEFIAKXLWAOTZKLUPZWAURUSUEZTZKLUTXGWAPZKXKXPLXQXIXNXJXOXQKXHXMLX
+      GWAOVAVBXGWAURUSVCVDVEVFXDXEVGXDWJXEWJXDXFVHVJVKVLVMDCGVNVO $.
   $}
 
 
