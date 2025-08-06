@@ -92,6 +92,9 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+28-Jul-25 spcimgft  spcimgfi1   Is a kind of inference form
+27-Jul-25 fnimatp   fnimatpd    Moved from TA's mathbox to main set.mm
+25-Jul-25 alcomiw   alcomimw    Consistent with excomimw, excomim
 17-Jul-25 predbrg   elpredimg   Consistent with elpredim, elpredg
  6-Jul-25 binom2d   [same]      Moved from II's mathbox to main set.mm
  6-Jul-25 unfid     [same]      Moved from GS's mathbox to main set.mm
