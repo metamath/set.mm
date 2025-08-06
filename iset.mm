@@ -179809,6 +179809,20 @@ $)
       eldifi prmuz2 cdvds nnoddn2prm nnoddm1d2 biimpa nnnn0d jca nno eqeltrid
       wn ) ACBFGHIJHZKEABILMNZBFOHIJHZPNZQZUNKNABRISZUANZURDUTUOUQUTBRNUOBRUSUC
       BUDTUTBKNZIBUEUBUMZQZUQBUFVCUPVAVBUPKNBUGUHUITUJTBUKTUL $.
+
+    $( Auxiliary lemma 3 for ~ gausslemma2d .  (Contributed by AV,
+       13-Jul-2021.) $)
+    gausslemma2dlem0c $p |- ( ph -> ( ( ! ` H ) gcd P ) = 1 ) $=
+      ( cgcd co c1 wceq wbr cprime wcel wa clt c2 syl cr 2re a1i wb cfa cfv cn0
+      cdvds wn csn cdif eldifi gausslemma2dlem0b nnnn0d cmin cdiv cn prmnn cmul
+      jca nnre peano2rem remulcld ltm1d nn0ge0d cle 1le2 lemulge12d ltletrd cc0
+      nnnn0 2pos pm3.2i ltdivmul mpbird 4syl eqbrtrid prmndvdsfaclt sylc faccld
+      syl3anc nnzd cz nnz gcdcomd eqeq1d coprm syl2anc bitr4d ) ACUAUBZBFGZHIZB
+      WFUDJUEZABKLZCUCLZMCBNJWIAWJWKABKOUFZUGLZWJDBKWLUHZPZACABCDEUIUJZUPACBHUK
+      GZOULGZBNEAWMWJBUMLZWRBNJZDWNBUNZWSWTWQOBUOGZNJZWSWQBXBWSBQLZWQQLZBUQZBUR
+      PZXFWSOBOQLZWSRSZXFUSWSBXFUTWSBOXFXIWSBBVGVAHOVBJWSVCSVDVEWSXEXDXHVFONJZM
+      ZWTXCTXGXFXKWSXHXJRVHVISWQBOVJVQVKVLVMBCVNVOAWHBWFFGZHIZWIAWGXLHAWFBAWFAC
+      WPVPVRZAWMWJWSBVSLDWNXABVTVLWAWBAWJWFVSLWIXMTWOXNBWFWCWDWEVK $.
   $}
 
 
