@@ -179844,6 +179844,17 @@ $)
       cn wn cz nnoddn2prm nnz anim1i flodddiv4t2lthalf 4syl eqbrtrid ) ACFGHBIJ
       HKLZFGHZBFJHZMCUKFGENABOFPQRBUBRZFBUASUCZTBUDRZUOTULUMMSDBUEUNUPUOBUFUGBU
       HUIUJ $.
+
+    gausslemma2dlem0.h $e |- H = ( ( P - 1 ) / 2 ) $.
+    $( Auxiliary lemma 6 for ~ gausslemma2d .  (Contributed by AV,
+       9-Jul-2021.) $)
+    gausslemma2dlem0f $p |- ( ph -> ( M + 1 ) <_ H ) $=
+      ( c4 cdiv co cfl cfv c1 caddc c2 cle cprime wcel wceq a1d cmin cdif c3 c5
+      csn cuz wo wbr wne wa eldifsn w3o prm23ge5 eqneqall orc olc 3jaoi syl imp
+      wi sylbi fldiv4p1lem1div2 3syl oveq1i 3brtr4g ) ABHIJKLZMNJZBMUAJOIJZDMNJ
+      CPABQOUEUBRZBUCSZBUDUFLRZUGZVGVHPUHEVIBQRZBOUIZUJVLBQOUKVMVNVLVMBOSZVJVKU
+      LVNVLUTZBUMVOVPVJVKVLBOUNVJVLVNVJVKUOTVKVLVNVKVJUPTUQURUSVABVBVCDVFMNFVDG
+      VE $.
   $}
 
 
