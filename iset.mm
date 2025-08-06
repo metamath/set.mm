@@ -94847,6 +94847,14 @@ $)
     VFBUTWBWDRGUTWBBBFQZWDURUSWBWFIABBUMUNUSWDWFIURBKUOMNUTVLVMWCVFIZVOVPVLVMVS
     WGVTVAVCRUPSTUSWEBIZURUSVQVRWHOPBRUHUKUOULUQ $.
 
+  $( Subtracting the half of a number from the number yields the half of the
+     number.  (Contributed by AV, 28-Jun-2021.) $)
+  subhalfhalf $p |- ( A e. CC -> ( A - ( A / 2 ) ) = ( A / 2 ) ) $=
+    ( cc wcel c2 cdiv co cmin cmul id 2cnd cc0 cap wbr divcanap1d eqcomd oveq1d
+    2ap0 a1i c1 3eqtrd halfcl mulcomd mulsubfacd wceq 2m1e1 mullidd ) ABCZAADEF
+    ZGFUHDHFZUHGFDUHHFZUHGFZUHUGAUIUHGUGUIAUGADUGIUGJZDKLMUGQRNOPUGUIUJUHGUGUHD
+    AUAZULUBPUGUKDSGFZUHHFSUHHFUHUGDUHULUMUCUGUNSUHHUNSUDUGUERPUGUHUMUFTT $.
+
   $( TODO - use this to reduce:
   Statement "lt2add" is directly referenced in the proofs of 9 statements:
     2climnn 2climnn0 climaddlem3 climmullem5 climcaui ser1f0i
