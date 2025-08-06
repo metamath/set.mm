@@ -179800,6 +179800,15 @@ $)
     gausslemma2dlem0a $p |- ( ph -> P e. NN ) $=
       ( cprime c2 csn cdif wcel cn cdvds wbr wn wa nnoddn2prm simpl 3syl ) ABDE
       FGHBIHZEBJKLZMQCBNQROP $.
+
+    gausslemma2dlem0b.h $e |- H = ( ( P - 1 ) / 2 ) $.
+    $( Auxiliary lemma 2 for ~ gausslemma2d .  (Contributed by AV,
+       9-Jul-2021.) $)
+    gausslemma2dlem0b $p |- ( ph -> H e. NN ) $=
+      ( c1 cmin co c2 cdiv cn cuz cfv wcel caddc cn0 wa cprime csn syl cdif wbr
+      eldifi prmuz2 cdvds nnoddn2prm nnoddm1d2 biimpa nnnn0d jca nno eqeltrid
+      wn ) ACBFGHIJHZKEABILMNZBFOHIJHZPNZQZUNKNABRISZUANZURDUTUOUQUTBRNUOBRUSUC
+      BUDTUTBKNZIBUEUBUMZQZUQBUFVCUPVAVBUPKNBUGUHUITUJTBUKTUL $.
   $}
 
 
