@@ -179836,6 +179836,14 @@ $)
       syl21anc syl flqge0nn0 syl2anc eqeltrid ) ACBFGHZIJZKEAUTLMZNUTOPZVAKMABQ
       MFRMVBABABDSZUAUBBFUCUDABRMZVCVDVEBTMNBOPFTMZNFUEPZUFZVCBUGVEBBUHUIVHVEVF
       VGUJUKULUMBFUNUOUPUTUQURUS $.
+
+    $( Auxiliary lemma 5 for ~ gausslemma2d .  (Contributed by AV,
+       9-Jul-2021.) $)
+    gausslemma2dlem0e $p |- ( ph -> ( M x. 2 ) < ( P / 2 ) ) $=
+      ( c2 cmul co c4 cdiv cfl cfv clt oveq1i cprime csn cdif wcel wbr wa cdvds
+      cn wn cz nnoddn2prm nnz anim1i flodddiv4t2lthalf 4syl eqbrtrid ) ACFGHBIJ
+      HKLZFGHZBFJHZMCUKFGENABOFPQRBUBRZFBUASUCZTBUDRZUOTULUMMSDBUEUNUPUOBUFUGBU
+      HUIUJ $.
   $}
 
 
