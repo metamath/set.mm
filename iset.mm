@@ -179784,6 +179784,27 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Gauss' Lemma
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  Gauss' Lemma is valid for any integer not dividing the given prime number.
+  In the following, only the special case for 2 (not dividing any odd prime) is
+  proven, see ~ gausslemma2d .  The general case is still to prove.
+
+$)
+
+  ${
+    gausslemma2dlem0a.p $e |- ( ph -> P e. ( Prime \ { 2 } ) ) $.
+    $( Auxiliary lemma 1 for ~ gausslemma2d .  (Contributed by AV,
+       9-Jul-2021.) $)
+    gausslemma2dlem0a $p |- ( ph -> P e. NN ) $=
+      ( cprime c2 csn cdif wcel cn cdvds wbr wn wa nnoddn2prm simpl 3syl ) ABDE
+      FGHBIHZEBJKLZMQCBNQROP $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Quadratic reciprocity
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
