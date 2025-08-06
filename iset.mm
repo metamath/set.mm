@@ -179825,6 +179825,19 @@ $)
       WPVPVRZAWMWJWSBVSLDWNXABVTVLWAWBAWJWFVSLWIXMTWOXNBWFWCWDWEVK $.
   $}
 
+  ${
+    gausslemma2dlem0.p $e |- ( ph -> P e. ( Prime \ { 2 } ) ) $.
+    gausslemma2dlem0.m $e |- M = ( |_ ` ( P / 4 ) ) $.
+    $( Auxiliary lemma 4 for ~ gausslemma2d .  (Contributed by AV,
+       9-Jul-2021.) $)
+    gausslemma2dlem0d $p |- ( ph -> M e. NN0 ) $=
+      ( c4 cdiv co cfl cfv cn0 cq wcel cc0 cle wbr cz cn gausslemma2dlem0a cr
+      nnzd 4nn znq sylancl clt wa nnre nnnn0 nn0ge0d 4re 4pos pm3.2i a1i divge0
+      syl21anc syl flqge0nn0 syl2anc eqeltrid ) ACBFGHZIJZKEAUTLMZNUTOPZVAKMABQ
+      MFRMVBABABDSZUAUBBFUCUDABRMZVCVDVEBTMNBOPFTMZNFUEPZUFZVCBUGVEBBUHUIVHVEVF
+      VGUJUKULUMBFUNUOUPUTUQURUS $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
