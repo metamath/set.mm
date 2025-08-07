@@ -960,6 +960,14 @@ prove the biconditional with that condition as an antecedent, and then use
 ~ elxp4 ).
 </LI>
 
+<li>
+  If you are proving an equality, and you need a condition
+  implied by each side of the equality being inhabited,
+  use ~ eqriv so that you need a biconditional rather than
+  an equality, and then use the ~ pm5.21nii trick above
+  (or similar logic). Examples: ~ 2idlval , ~ zrhval .
+</li>
+
 <LI>
 If your proof relies on dveeq2 try ~ dveeq2or and likewise for the other things
 downstream of ~ ax-i12 or ~ ax-bndl .
@@ -4613,12 +4621,6 @@ this implies excluded middle</TD>
 <TR>
   <TD>resfnfinfin</TD>
   <TD>~ resfnfinfinss</TD>
-</TR>
-
-<TR>
-  <TD>residfi</TD>
-  <TD><I>none</I></TD>
-  <TD>Presumably provable, but lightly used in set.mm</TD>
 </TR>
 
 <TR>
@@ -10594,12 +10596,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>divsfval</td>
-  <td>~ divsfvalg</td>
-  <td>adds an ` A e. V ` condition</td>
-</tr>
-
-<tr>
   <td>ercpbllem</td>
   <td>~ ercpbllemg</td>
   <td>adds a ` B e. V ` condition</td>
@@ -11029,18 +11025,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>ghmfghm</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses isghmd</td>
-</tr>
-
-<tr>
-  <td>invghm</td>
-  <td><i>none</i></td>
-  <td>presumably feasible once we have GrpHom</td>
-</tr>
-
-<tr>
   <td>subcmn</td>
   <td>~ subcmnd</td>
   <td>adds set existence condition for ` S `</td>
@@ -11120,12 +11104,6 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>ring1ne0</td>
   <td><i>none</i></td>
   <td>probably provable but the set.mm proof uses hashgt12el</td>
-</tr>
-
-<tr>
-  <td>ringlghm , ringrghm</td>
-  <td><i>none</i></td>
-  <td>depend on GrpHom ( df-ghm )</td>
 </tr>
 
 <tr>
@@ -11485,31 +11463,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>resrhm</td>
-  <td><i>none</i></td>
-  <td>should be feasible once we have df-ghm , rhmmhm , rhmghm ,
-  and resghm</td>
-</tr>
-
-<tr>
-  <td>resrhm2b , rhmeql</td>
-  <td><i>none</i></td>
-  <td>should be feasible once we have df-ghm and other prerequisites</td>
-</tr>
-
-<tr>
-  <td>rhmghm</td>
-  <td><i>none</i></td>
-  <td>should be feasible once we have rhmghm and other prerequisites</td>
-</tr>
-
-<tr>
-  <td>rnrhmsubrg</td>
-  <td><i>none</i></td>
-  <td>should be feasible once we have rhmf and other prerequisites</td>
-</tr>
-
-<tr>
   <td>cntzsubr</td>
   <td><i>none</i></td>
   <td>should be feasible once we have defined centralizers</td>
@@ -11519,12 +11472,6 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>pwsdiagrhm</td>
   <td><i>none</i></td>
   <td>should be feasible once we have defined structure power</td>
-</tr>
-
-<tr>
-  <td>rhmpropd</td>
-  <td><i>none</i></td>
-  <td>should be feasible once we have df-ghm and other prerequisites</td>
 </tr>
 
 <tr>
@@ -11841,7 +11788,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>rlmsca2</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses excluded middle</td>
+  <td>There is a partial result at ~ rlmscabas</td>
 </tr>
 
 <tr>
@@ -11961,18 +11908,6 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>lidlrsppropd</td>
   <td>~ lidlrsppropdg</td>
   <td>adds set existence hypotheses</td>
-</tr>
-
-<tr>
-  <td>2idlval</td>
-  <td>~ 2idlvalg</td>
-  <td>adds set existence condition</td>
-</tr>
-
-<tr>
-  <td>qusrhm</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses isrhm2d</td>
 </tr>
 
 <tr>
@@ -12103,19 +12038,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>zrhval</td>
-  <td>~ zrhvalg</td>
-  <td>adds set existence condition</td>
-</tr>
-
-<tr>
-  <td>zrhpropd</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses rhmpropd and also will require
-  attention to set existence for ` K ` and ` L `</td>
-</tr>
-
-<tr>
   <td>zlmlem</td>
   <td>~ zlmlemg</td>
   <td>adds ` ( E `` ndx ) e. NN ` and ` G e. V ` conditions</td>
@@ -12160,83 +12082,25 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>znzrh</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses zrhpropd</td>
-</tr>
-
-<tr>
-  <td>znzrh2</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses znzrh</td>
-</tr>
-
-<tr>
-  <td>znzrhval</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses znzrh2</td>
-</tr>
-
-<tr>
-  <td>znzrhfo</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses znzrh2</td>
-</tr>
-
-<tr>
   <td>zncyg</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses CycGrp , iscyg , and znzrhfo</td>
-</tr>
-
-<tr>
-  <td>zndvds</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses znzrhval</td>
-</tr>
-
-<tr>
-  <td>zndvds0</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses zndvds</td>
-</tr>
-
-<tr>
-  <td>znf1o</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses keephyp and znzrhfo</td>
+  <td>the set.mm proof uses CycGrp and iscyg</td>
 </tr>
 
 <tr>
   <td>zzngim</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses znzrhfo , znf1o , and
+  <td>the theorem uses GrpIso and the set.mm proof uses
   isgim</td>
-</tr>
-
-<tr>
-  <td>znle2</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses znzrh</td>
-</tr>
-
-<tr>
-  <td>znleval , znleval2</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses znle2</td>
 </tr>
 
 <tr>
   <td>zntoslem , zntos</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses keephyp , znleval2 , istos ,
-  and isposd</td>
-</tr>
-
-<tr>
-  <td>znhash</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses znf1o</td>
+  <td>The use of keephyp in set.mm can be removed as done
+  in the use of iftrued and iffalsed in the proof of
+  ~ znf1o .  More fundamentally, the theorem is in
+  terms of Toset and the proof uses istos and isposd</td>
 </tr>
 
 <tr>
@@ -14591,6 +14455,14 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>lgsfval</td>
   <td>~ lgsfvalg</td>
   <td>adds ` A e. ZZ ` and ` N e. NN ` conditions</td>
+</tr>
+
+<tr>
+  <td>lgsqrlem4</td>
+  <td><i>none</i></td>
+  <td>The use of sbth can apparently be replaced
+  by ~ fisbth as this proof already shows that both
+  sets are finite.</td>
 </tr>
 
 <tr>
