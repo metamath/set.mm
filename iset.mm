@@ -163932,7 +163932,7 @@ $)
     znzrhfo.y $e |- Y = ( Z/nZ ` N ) $.
     znzrhfo.b $e |- B = ( Base ` Y ) $.
     znzrhfo.2 $e |- L = ( ZRHom ` Y ) $.
-    $( The ` ZZ ` ring homomorphism is a surjection onto ` ZZ / n ZZ ` .
+    $( The ` ZZ ` ring homomorphism is a surjection onto ` Z/nZ ` .
        (Contributed by Mario Carneiro, 15-Jun-2015.) $)
     znzrhfo $p |- ( N e. NN0 -> L : ZZ -onto-> B ) $=
       ( vx cn0 wcel cz wfo czring cfv co cvv crg wceq eqid zringring cv csn cqg
