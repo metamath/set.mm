@@ -106020,6 +106020,18 @@ $)
     WCQVSVTABBVFHZGHWSVSFWTAGFWTTVSWTFVGVHNVIVSABBWRVSVNZXAVSBWQVSSNZVJZXCVKVLV
     MVSWMWBBWOWKXBVOVPVQVR $.
 
+  $( The floor of a positive integer divided by 4 is less than or equal to the
+     half of the integer minus 1.  (Contributed by AV, 9-Jul-2021.) $)
+  fldiv4lem1div2 $p |- ( N e. NN
+                         -> ( |_ ` ( N / 4 ) ) <_ ( ( N - 1 ) / 2 ) ) $=
+    ( cn wcel c1 wceq c2 cuz cfv c4 cdiv co cfl cle wbr cc0 4nn mp2an cz eqtrdi
+    cmin wo elnn1uz2 clt 1lt4 cn0 wb 1nn0 divfl0 mpbi cq flqcl ax-mp zrei eqlei
+    1z znq mp1i fvoveq1 oveq1 oveq1d 2cn 2ap0 div0api 3brtr4d fldiv4lem1div2uz2
+    1m1e0 jaoi sylbi ) ABCADEZAFGHCZUAAIJKLHZADTKZFJKZMNZAUBVIVNVJVIDIJKZLHZOVK
+    VMMVPOEZVPOMNVIDIUCNZVQUDDUECIBCZVRVQUFUGPDIUHQUIVPOVPVOUJCZVPRCDRCVSVTUOPD
+    IUPQVOUKULUMUNUQADILJURVIVMOFJKOVIVLOFJVIVLDDTKOADDTUSVFSUTFVAVBVCSVDAVEVGV
+    H $.
+
   ${
     $d x A $.
     $( The value of the ceiling function.  (Contributed by Jim Kingdon,
