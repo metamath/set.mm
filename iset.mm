@@ -179897,6 +179897,15 @@ $)
     gausslemma2dlem0g $p |- ( ph -> M <_ H ) $=
       ( c4 cdiv co cfl cfv c1 cmin c2 cle cn wcel wbr gausslemma2dlem0a 3brtr4g
       fldiv4lem1div2 syl ) ABHIJKLZBMNJOIJZDCPABQRUDUEPSABETBUBUCFGUA $.
+
+    gausslemma2dlem0.n $e |- N = ( H - M ) $.
+    $( Auxiliary lemma 8 for ~ gausslemma2d .  (Contributed by AV,
+       9-Jul-2021.) $)
+    gausslemma2dlem0h $p |- ( ph -> N e. NN0 ) $=
+      ( cmin co cn0 wcel cc0 cle wbr gausslemma2dlem0b nnzd gausslemma2dlem0d
+      cz nn0zd zsubcld gausslemma2dlem0g nnred nn0red subge0d sylanbrc eqeltrid
+      mpbird elnn0z ) AECDJKZLIAUKTMNUKOPZUKLMACDACABCFHQZRADABDFGSZUAUBAULDCOP
+      ABCDFGHUCACDACUMUDADUNUEUFUIUKUJUGUH $.
   $}
 
 
