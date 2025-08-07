@@ -105222,6 +105222,15 @@ $)
     UOVAUAZUQVAUOUBABUCZQZRTUDUEUOUQSUMUOVBUQUOVAUFVCQUGULUPUQSZUKULBLDZVEBMVFU
     PUQVFUPEVAUQBAOVDRTRUHUIUJ $.
 
+  $( Rational ` < ` is decidable.  (Contributed by Jim Kingdon, 7-Aug-2025.) $)
+  qdclt $p |- ( ( A e. QQ /\ B e. QQ ) -> DECID A < B ) $=
+    ( cq wcel wa clt wbr wceq w3o wdc qtri3or cr wi qre wn wo orc sylibr adantr
+    df-dc a1i ltnr wb breq2 adantl mtbid olc ex ltnsym ancoms syl6 3jaod syl2an
+    syl mpd ) ACDZBCDZEABFGZABHZBAFGZIZURJZABKUPALDZBLDZVAVBMUQANBNVCVDEZURVBUS
+    UTURVBMVEURURUROZPZVBURVFQURTZRUAVCUSVBMVDVCUSVBVCUSEZVFVBVIAAFGZURVCVJOUSA
+    UBSUSVJURUCVCABAFUDUEUFVFVGVBVFURUGVHRZUNUHSVEUTVFVBVDVCUTVFMBAUIUJVKUKULUM
+    UO $.
+
   ${
     $d A j m $.  $d A m n $.  $d K j m $.  $d K m n $.  $d m n ph $.
     exbtwnzlemstep.k $e |- ( ph -> K e. NN ) $.
