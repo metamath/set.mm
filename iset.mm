@@ -106004,6 +106004,22 @@ $)
     OZYETOZWMZUUTUVAWDYFXIUUPUVOUUQUUPUVLUVMUVNUUPUVEUVLUVHYBXJSUUPUVFUVMUVKYAX
     JSUUPUVIUVNUVJUVIYDAXKXLSXCWQYCUUSYEXRSXMXNXOYNWLUBXPVMXQXSSXS $.
 
+  $( The floor of an integer greater than 1, divided by 4 is less than or equal
+     to the half of the integer minus 1.  (Contributed by AV, 5-Jul-2021.)
+     (Proof shortened by AV, 9-Jul-2022.) $)
+  fldiv4lem1div2uz2 $p |- ( N e. ( ZZ>= ` 2 )
+                         -> ( |_ ` ( N / 4 ) ) <_ ( ( N - 1 ) / 2 ) ) $=
+    ( c2 cuz cfv wcel c4 cdiv co cfl c1 cmin cz 4nn a1i cr syl cle wbr 2rp wceq
+    cn cq eluzelz znq sylancl flqcld zred eluzelre nndivred peano2rem rehalfcld
+    flqle 1red zre rehalfcl 3syl crp eluzle divge1 mp3an2i eluzelcn subhalfhalf
+    cc breqtrrd lesubd cmul 2t2e4 eqcomi oveq2d rpap0d divdivap1d eqtr4d breq1d
+    2cnd lediv1d bitr4d mpbird letrd ) ABCDEZAFGHZIDZVTAJKHZBGHZVSWAVSVTVSALEZF
+    UAEZVTUBEZBAUCZMAFUDUEZUFUGVSAFBAUHZWEVSMNUIVSWBVSAOEZWBOEWIAUJPZUKVSWFWAVT
+    QRWHVTULPVSVTWCQRZABGHZWBQRZVSJAWMVSUMWIVSWDWJWMOEWGAUNAUOUPZVSJWMAWMKHZQBU
+    QEZVSWJBAQRJWMQRSWIBAURBAUSUTVSAVCEWPWMTBAVAZAVBPVDVEVSWLWMBGHZWCQRWNVSVTWS
+    WCQVSVTABBVFHZGHWSVSFWTAGFWTTVSWTFVGVHNVIVSABBWRVSVNZXAVSBWQVSSNZVJZXCVKVLV
+    MVSWMWBBWOWKXBVOVPVQVR $.
+
   ${
     $d x A $.
     $( The value of the ceiling function.  (Contributed by Jim Kingdon,
