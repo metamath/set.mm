@@ -179891,6 +179891,12 @@ $)
       CPABQOUEUBRZBUCSZBUDUFLRZUGZVGVHPUHEVIBQRZBOUIZUJVLBQOUKVMVNVLVMBOSZVJVKU
       LVNVLUTZBUMVOVPVJVKVLBOUNVJVLVNVJVKUOTVKVLVNVKVJUPTUQURUSVABVBVCDVFMNFVDG
       VE $.
+
+    $( Auxiliary lemma 7 for ~ gausslemma2d .  (Contributed by AV,
+       9-Jul-2021.) $)
+    gausslemma2dlem0g $p |- ( ph -> M <_ H ) $=
+      ( c4 cdiv co cfl cfv c1 cmin c2 cle cn wcel wbr gausslemma2dlem0a 3brtr4g
+      fldiv4lem1div2 syl ) ABHIJKLZBMNJOIJZDCPABQRUDUEPSABETBUBUCFGUA $.
   $}
 
 
