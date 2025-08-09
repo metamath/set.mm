@@ -164095,16 +164095,75 @@ $)
 
     ${
       znhash.1 $e |- B = ( Base ` Y ) $.
+      $( The ` Z/nZ ` structure is a finite ring.  (Contributed by Mario
+         Carneiro, 2-May-2016.) $)
+      znfi $p |- ( N e. NN -> B e. Fin ) $=
+        ( cn wcel cc0 cfzo co cfn cen wbr cz 0z nnz wceq wf1o eqid syl2anc czrh
+        fzofig sylancr cfv cif cres cn0 nnnn0 znf1o syl wne wb ifnefalse f1oeq2
+        nnne0 3syl mpbid f1oeng ensymd enfii ) BFGZHBIJZKGZAVBLMAKGVAHNGBNGVCOB
+        PHBUBUCZVAVBAVAVCVBACUAUDBHQNVBUEZUFZRZVBALMVDVAVEAVFRZVGVABUGGVHBUHAVF
+        BVECDEVFSVESUIUJVABHUKVEVBQVHVGULBUOBHNVBUMVEVBAVFUNUPUQVBAKVFURTUSAVBU
+        TT $.
+
       $( The ` Z/nZ ` structure has ` n ` elements.  (Contributed by Mario
          Carneiro, 15-Jun-2015.) $)
       znhash $p |- ( N e. NN -> ( # ` B ) = N ) $=
         ( cn wcel chash cfv cc0 wceq cen wbr cfn cz wf1o eqid syl wb syl2anc co
         cfzo czrh cif 0z nnz fzofig sylancr cn0 nnnn0 znf1o wne nnne0 ifnefalse
-        cres f1oeq2 3syl mpbid f1oeng ensymd enfii hashen mpbird hashfzo0 eqtrd
+        cres f1oeq2 3syl mpbid f1oeng ensymd znfi hashen mpbird hashfzo0 eqtrd
         ) BFGZAHIZJBUBUAZHIZBVFVGVIKZAVHLMZVFVHAVFVHNGZVHACUCIBJKOVHUDZUOZPZVHA
         LMVFJOGBOGVLUEBUFJBUGUHZVFVMAVNPZVOVFBUIGZVQBUJZAVNBVMCDEVNQVMQUKRVFBJU
-        LVMVHKVQVOSBUMBJOVHUNVMVHAVNUPUQURVHANVNUSTUTZVFANGZVLVJVKSVFVLVKWAVPVT
-        AVHVATVPAVHVBTVCVFVRVIBKVSBVDRVE $.
+        LVMVHKVQVOSBUMBJOVHUNVMVHAVNUPUQURVHANVNUSTUTVFANGVLVJVKSABCDEVAVPAVHVB
+        TVCVFVRVIBKVSBVDRVE $.
+    $}
+  $}
+
+  ${
+    $d m n x A $.  $d n x E $.  $d n x L $.  $d m n x N $.  $d n x U $.
+    $d n x Y $.
+    znchr.y $e |- Y = ( Z/nZ ` N ) $.
+    znunit.u $e |- U = ( Unit ` Y ) $.
+    ${
+      znunit.l $e |- L = ( ZRHom ` Y ) $.
+      $( The units of ` Z/nZ ` are the integers coprime to the base.
+         (Contributed by Mario Carneiro, 18-Apr-2016.) $)
+      znunit $p |- ( ( N e. NN0 /\ A e. ZZ ) ->
+        ( ( L ` A ) e. U <-> ( A gcd N ) = 1 ) ) $=
+        ( vx vn wcel cz cfv wbr co wceq wrex c1 syl cdvds vm cn0 wa cur cdsr cv
+        cmulr cbs cgcd ccrg zncrng adantr eqid crngunit eqidd crg csrg crngring
+        wb ringsrg 3syl wfo znzrhfo fof ffvelcdm sylancom dvdsr2d cmul cmin crn
+        forn rexeqdv wfn ffn oveq1 eqeq1d rexrn bitr3d czring crh zrhrhm simplr
+        wf zringbas zringmulr rhmmul syl3anc zrh1 eqeq12d simpll zmulcld zndvds
+        simpr 1zzd rexbidva nn0z ad2antrr gcddvds syl2anc simpld gcdcld adantrr
+        wi nn0zd dvdsmultr2 mpd peano2zm simprd dvdstrd dvdssub2 syl31anc mpbid
+        simprr dvds1 rexlimdvaa caddc bezout eqeq1 2rexbidv syl5ibcom ad3antrrr
+        cneg dvdsmul1 zmulcl dvdsnegb zcnd cc zcn mulcomd oveq1d mulcld subnegd
+        ad2antlr eqtr4d oveq2d negcld nncand eqtrd breqtrrd 3bitrd oveq2 breq2d
+        syl5ibrcom rexlimdva reximdva syld impbid ) DUBKZALKZUCZACMZBKZUUKEUDMZ
+        EUEMZNZIUFZUUKEUGMZOZUUMPZIEUHMZQZADUIOZRPZUUJEUJKZUULUUOUSUUHUVDUUIDEF
+        UKULZUUNEBUUMUUKGUUMUMZUUNUMUNSUUJIUUTUUNEUUQUUKUUMUUJUUTUOUUJUUNUOUUJU
+        VDEUPKZEUQKUVEEURZEUTVAUUJUUQUOUUHUUILUUTCWCZUUKUUTKUUJLUUTCVBZUVIUUHUV
+        JUUIUUTCDEFUUTUMHVCULZLUUTCVDSZLUUTACVEVFVGUUJUVAJUFZCMZUUKUUQOZUUMPZJL
+        QZDUVMAVHOZRVIOZTNZJLQZUVCUUJUUSICVJZQZUVAUVQUUJUUSIUWBUUTUUJUVJUWBUUTP
+        UVKLUUTCVKSVLUUJUVICLVMUWCUVQUSUVLLUUTCVNUUSUVPIJLCUUPUVNPUURUVOUUMUUPU
+        VNUUKUUQVOVPVQVAVRUUJUVPUVTJLUUJUVMLKZUCZUVRCMZRCMZPZUVPUVTUWEUWFUVOUWG
+        UUMUWECVSEVTOKZUWDUUIUWFUVOPUUJUWIUWDUUJUVDUVGUWIUVEUVHECHWAVAULUUJUWDW
+        MZUUHUUIUWDWBZUVMAVSEVHUUQCLWDWEUUQUMWFWGUWEUVGUWGUUMPUUJUVGUWDUUJUVDUV
+        GUVEUVHSULEUUMCHUVFWHSWIUWEUUHUVRLKZRLKZUWHUVTUSUUHUUIUWDWJUWEUVMAUWJUW
+        KWKZUWEWNUVRRCDEFHWLWGVRWOUUJUWAUVCUUJUVTUVCJLUUJUWDUVTUCZUCZUVBRTNZUVC
+        UWPUVBUVRTNZUWQUWPUVBATNZUWRUWPUWSUVBDTNZUWPUUIDLKZUWSUWTUCUUHUUIUWOWBZ
+        UUHUXAUUIUWODWPZWQZADWRWSZWTUWPUVBLKZUWDUUIUWSUWRXCUWPUVBUWPADUXBUXDXAZ
+        XDZUUJUWDUWDUVTUWJXBUXBUVBUVMAXEWGXFUWPUXFUWLUWMUVBUVSTNUWRUWQUSUXHUUJU
+        WDUWLUVTUWNXBZUWPWNUWPUVBDUVSUXHUXDUWPUWLUVSLKUXIUVRXGSUWPUWSUWTUXEXHUU
+        JUWDUVTXMXIUVBUVRRXJXKXLUWPUVBUBKUWQUVCUSUXGUVBXNSXLXOUUJUVCRAUVMVHOZDU
+        AUFZVHOZXPOZPZUALQZJLQZUWAUUJUVBUXMPZUALQJLQZUVCUXPUUJUUIUXAUXRUUHUUIWM
+        UUHUXAUUIUXCULJUAADXQWSUVCUXQUXNJUALLUVBRUXMXRXSXTUUJUXOUVTJLUWEUXNUVTU
+        ALUWEUXKLKZUCZUVTUXNDUVRUXMVIOZTNUXTDUXLYBZUYATUXTDUXLTNZDUYBTNZUWEUXSU
+        XAUYCUUHUXAUUIUWDUXSUXCYAZDUXKYCVFUXTUXAUXLLKZUYCUYDUSUYEUWEUXSUXAUYFUY
+        EDUXKYDVFZDUXLYEWSXLUXTUYAUVRUVRUYBVIOZVIOUYBUXTUXMUYHUVRVIUXTUXMUVRUXL
+        XPOUYHUXTUXJUVRUXLXPUXTAUVMUXTAUWEUUIUXSUWKULYFZUWDUVMYGKUUJUXSUVMYHYMZ
+        YIYJUXTUVRUXLUXTUVMAUYJUYIYKZUXTUXLUYGYFZYLYNYOUXTUVRUYBUYKUXTUXLUYLYPY
+        QYRYSUXNUVSUYADTRUXMUVRVIUUAUUBUUCUUDUUEUUFUUGYTYT $.
     $}
   $}
 
