@@ -92,8 +92,9 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
-10-Aug-25 bj-biorfi [same]      Moved from BJ's mathbox to main set.mm
-10-Aug-25 bj-pm2.01i [same]     Moved from BJ's mathbox to main set.mm
+10-Aug-25 bj-biorfi biorfi      Moved from BJ's mathbox to main set.mm
+10-Aug-25 biorfi    biorfri
+10-Aug-25 bj-pm2.01i pm2.01i    Moved from BJ's mathbox to main set.mm
 10-Aug-25 eqrrabd   [same]      Moved from TA's mathbox to main set.mm
 10-Aug-25 el3v      [same]      Moved from PM's mathbox to main set.mm
  7-Aug-25 s3rn      [same]      Moved from TA's mathbox to main set.mm
