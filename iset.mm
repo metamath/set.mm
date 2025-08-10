@@ -23126,6 +23126,46 @@ $)
   $}
 
   ${
+    $d A x $.  $d B x $.
+    raleqtrdv.1 $e |- ( ph -> A. x e. A ps ) $.
+    raleqtrdv.2 $e |- ( ph -> A = B ) $.
+    $( Substitution of equal classes into a restricted universal quantifier.
+       (Contributed by Matthew House, 21-Jul-2025.) $)
+    raleqtrdv $p |- ( ph -> A. x e. B ps ) $=
+      ( wral raleqdv mpbid ) ABCDHBCEHFABCDEGIJ $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    rexeqtrdv.1 $e |- ( ph -> E. x e. A ps ) $.
+    rexeqtrdv.2 $e |- ( ph -> A = B ) $.
+    $( Substitution of equal classes into a restricted existential quantifier.
+       (Contributed by Matthew House, 21-Jul-2025.) $)
+    rexeqtrdv $p |- ( ph -> E. x e. B ps ) $=
+      ( wrex rexeqdv mpbid ) ABCDHBCEHFABCDEGIJ $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    raleqtrrdv.1 $e |- ( ph -> A. x e. A ps ) $.
+    raleqtrrdv.2 $e |- ( ph -> B = A ) $.
+    $( Substitution of equal classes into a restricted universal quantifier.
+       (Contributed by Matthew House, 21-Jul-2025.) $)
+    raleqtrrdv $p |- ( ph -> A. x e. B ps ) $=
+      ( wral raleqdv mpbird ) ABCEHBCDHFABCEDGIJ $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    rexeqtrrdv.1 $e |- ( ph -> E. x e. A ps ) $.
+    rexeqtrrdv.2 $e |- ( ph -> B = A ) $.
+    $( Substitution of equal classes into a restricted existential quantifier.
+       (Contributed by Matthew House, 21-Jul-2025.) $)
+    rexeqtrrdv $p |- ( ph -> E. x e. B ps ) $=
+      ( wrex rexeqdv mpbird ) ABCEHBCDHFABCEDGIJ $.
+  $}
+
+  ${
     $d x A $.  $d x B $.
     raleqd.1 $e |- ( A = B -> ( ph <-> ps ) ) $.
     $( Equality deduction for restricted universal quantifier.  (Contributed by
@@ -68170,6 +68210,13 @@ $)
       -> ( F |` B ) e. Fin ) $=
     ( wfn cfn wcel wss w3a cres fnssres 3adant2 simp2 fnfi syl2anc ) CADZBEFZBA
     GZHCBIZBDZPREFOQSPABCJKOPQLBRMN $.
+
+  $( A restricted identity function is finite iff the restricting class is
+     finite.  (Contributed by AV, 10-Jan-2020.) $)
+  residfi $p |- ( ( _I |` A ) e. Fin <-> A e. Fin ) $=
+    ( cid cres cfn wcel cdm dmresi wfun funi funres ax-mp fundmfi eqeltrrid cvv
+    mpan2 wfn wss wf1o f1ovi f1ofn ssv resfnfinfinss mp3an13 impbii ) BACZDEZAD
+    EZUFAUEFZDAGUFUEHZUHDEBHUIIABJKUELOMBNPZUGANQUFNNBRUJSNNBTKAUANABUBUCUD $.
 
   $( If a relation is finite, its converse is as well.  (Contributed by Jim
      Kingdon, 5-Feb-2022.) $)
@@ -146470,6 +146517,20 @@ $)
     ercpbl.f $e |- F = ( x e. V |-> [ x ] .~ ) $.
 
     ${
+      $d y .~ $.  $d y A $.  $d y F $.  $d y ph $.
+      $( Value of the function in ~ qusval .  (Contributed by Mario Carneiro,
+         24-Feb-2015.)  (Revised by Mario Carneiro, 12-Aug-2015.)  (Revised by
+         AV, 12-Jul-2024.) $)
+      divsfval $p |- ( ph -> ( F ` A ) = [ A ] .~ ) $=
+        ( vy cfv cec wcel cv wi mptrcl a1i eleq2d cvv wex 19.8a ecdmn0m biimpri
+        cdm wer wceq erdm syl imbitrid syl5 wb wa eceq1 simpr ecss ssexd adantr
+        fvmptd3 ex pm5.21ndd eqrdv ) AKCELZCDMZACFNZKOZVCNZVFVDNZVGVEPABFBOZDMZ
+        EVFCJQRVHVHKUAZAVEVHKUBVKCDUEZNZAVEVMVKKCDUCUDAVLFCAFDUFVLFUGHFDUHUISUJ
+        UKAVEVGVHULAVEUMZVCVDVFVNBCVJVDFETJVICDUNAVEUOAVDTNVEAVDFGIACDFHUPUQURU
+        SSUTVAVB $.
+    $}
+
+    ${
       ercpbl.a $e |- ( ph -> A e. V ) $.
       $( Value of the function in ~ qusval .  (Contributed by Mario Carneiro,
          24-Feb-2015.)  (Revised by Mario Carneiro, 12-Aug-2015.)  (Revised by
@@ -149321,6 +149382,14 @@ $)
   $( A group is a semigroup.  (Contributed by AV, 28-Aug-2021.) $)
   grpsgrp $p |- ( G e. Grp -> G e. Smgrp ) $=
     ( cgrp wcel cmnd csgrp grpmnd mndsgrp syl ) ABCADCAECAFAGH $.
+
+  ${
+    grpmgmd.g $e |- ( ph -> G e. Grp ) $.
+    $( A group is a magma, deduction form.  (Contributed by SN,
+       14-Apr-2025.) $)
+    grpmgmd $p |- ( ph -> G e. Mgm ) $=
+      ( cmnd wcel cmgm grpmndd mndmgm syl ) ABDEBFEABCGBHI $.
+  $}
 
   ${
     $d B a b c i n x $.  $d G a b c i n x $.  $d .+ a b c i n x $.
@@ -153885,6 +153954,16 @@ $)
     ghmabl.1 $e |- ( ph -> F : X -onto-> Y ) $.
 
     ${
+      ghmfghm.3 $e |- ( ph -> G e. Grp ) $.
+      $( The function fulfilling the conditions of ~ ghmgrp is a group
+         homomorphism.  (Contributed by Thierry Arnoux, 26-Jan-2020.) $)
+      ghmfghm $p |- ( ph -> F e. ( G GrpHom H ) ) $=
+        ( cv wcel cfv ghmgrp wfo wf fof syl co wceq 3expb isghmd ) ABCDEGHFIJKL
+        MNQABCDEFGHIJOKLMNPQUAAIJFUBIJFUCPIJFUDUEABRZISCRZISUJUKDUFFTUJFTUKFTEU
+        FUGOUHUI $.
+    $}
+
+    ${
       ghmcmn.3 $e |- ( ph -> G e. CMnd ) $.
       $( The image of a commutative monoid ` G ` under a group homomorphism
          ` F ` is a commutative monoid.  (Contributed by Thierry Arnoux,
@@ -153911,6 +153990,28 @@ $)
       ( cgrp wcel ccmn cabl ablgrp syl ghmgrp ablcmn ghmcmn isabl sylanbrc ) AH
       RSHTSHUASABCDEFGHIJOKLMNPAGUASZGRSQGUBUCUDABCDEFGHIJKLMNOPAUIGTSQGUEUCUFH
       UGUH $.
+  $}
+
+  ${
+    $d x y B $.  $d x y G $.  $d x y I $.
+    invghm.b $e |- B = ( Base ` G ) $.
+    invghm.m $e |- I = ( invg ` G ) $.
+    $( The inversion map is a group automorphism if and only if the group is
+       abelian.  (In general it is only a group homomorphism into the opposite
+       group, but in an abelian group the opposite group coincides with the
+       group itself.)  (Contributed by Mario Carneiro, 4-May-2015.) $)
+    invghm $p |- ( G e. Abel <-> I e. ( G GrpHom G ) ) $=
+      ( vx vy cabl wcel cghm co cv wceq wral syl3anc grpinvcl syl2anc grpinvinv
+      cfv wa cplusg eqid ablgrp cgrp grpinvf syl ablinvadd 3expb isghmd ghmgrp1
+      wf adantr simprr simprl grpinvadd fveq2d simpl ghmlin 3eqtrd grpcl eqtr3d
+      oveq12d ralrimivva isabl2 sylanbrc impbii ) BHIZCBBJKIZVGFGBUASZVIBBCAADD
+      VIUBZVJBUCZVKVGBUDIZAACUKVKABCDEUEUFVGFLZAIZGLZAIZVMVOVIKZCSVMCSZVOCSZVIK
+      ZMAVIBCVMVODVJEUGUHUIVHVLVQVOVMVIKZMZGANFANVGBBCUJZVHWBFGAAVHVNVPTZTZWACS
+      ZCSZVQWAWEWGVTCSZVRCSZVSCSZVIKZVQWEWFVTCWEVLVPVNWFVTMVHVLWDWCULZVHVNVPUMZ
+      VHVNVPUNZAVIBCVOVMDVJEUOOUPWEVHVRAIZVSAIZWHWKMVHWDUQWEVLVNWOWLWNABCVMDEPQ
+      WEVLVPWPWLWMABCVODEPQVIVIBBVRCVSADVJVJUROWEWIVMWJVOVIWEVLVNWIVMMWLWNABCVM
+      DERQWEVLVPWJVOMWLWMABCVODERQVBUSWEVLWAAIZWGWAMWLWEVLVPVNWQWLWMWNAVIBVOVMD
+      VJUTOABCWADERQVAVCFGAVIBDVJVDVEVF $.
   $}
 
   ${
@@ -156163,6 +156264,43 @@ $)
   ringn0 $p |- Ring =/= (/) $=
     ( vz cv cvv wcel cnx cbs cfv csn cop cplusg cmulr ctp crg c0 wne eqid ring1
     vex ne0i mp2b ) ABZCDEFGUAHIEJGUAUAIUAIHZIEKGUBILZMDMNOARUCCUAUCPQMUCST $.
+
+  ${
+    $d x y z B $.  $d x y z R $.  $d x y z .x. $.  $d x y z X $.
+    ringlghm.b $e |- B = ( Base ` R ) $.
+    ringlghm.t $e |- .x. = ( .r ` R ) $.
+    $( Left-multiplication in a ring by a fixed element of the ring is a group
+       homomorphism.  (It is not usually a ring homomorphism.)  (Contributed by
+       Mario Carneiro, 4-May-2015.) $)
+    ringlghm $p |- ( ( R e. Ring /\ X e. B ) ->
+      ( x e. B |-> ( X .x. x ) ) e. ( R GrpHom R ) ) $=
+      ( vy vz crg wcel wa cfv cv co eqid ringcl oveq2 syl3anc fvmptd3 cmpt cgrp
+      cplusg ringgrp adantr 3expa fmpttd wceq w3a 3anass ringdi anassrs ringacl
+      sylan2br 3expb adantlr simpll simplr simprl simprr oveq12d 3eqtr4d isghmd
+      ) CJKZEBKZLZHICUCMZVGCCABEANZDOZUAZBBFFVGPZVKVDCUBKVECUDUEZVLVFABVIBVDVEV
+      HBKVIBKBCDEVHFGQUFUGVFHNZBKZINZBKZLZLZEVMVOVGOZDOZEVMDOZEVODOZVGOZVSVJMVM
+      VJMZVOVJMZVGOVDVEVQVTWCUHZVEVQLVDVEVNVPUIWFVEVNVPUJBVGCDEVMVOFVKGUKUNULVR
+      AVSVIVTBVJBVJPZVHVSEDRVDVQVSBKZVEVDVNVPWHBVGCVMVOFVKUMUOUPZVRVDVEWHVTBKVD
+      VEVQUQZVDVEVQURZWIBCDEVSFGQSTVRWDWAWEWBVGVRAVMVIWABVJBWGVHVMEDRVFVNVPUSZV
+      RVDVEVNWABKWJWKWLBCDEVMFGQSTVRAVOVIWBBVJBWGVHVOEDRVFVNVPUTZVRVDVEVPWBBKWJ
+      WKWMBCDEVOFGQSTVAVBVC $.
+
+    $( Right-multiplication in a ring by a fixed element of the ring is a group
+       homomorphism.  (It is not usually a ring homomorphism.)  (Contributed by
+       Mario Carneiro, 4-May-2015.) $)
+    ringrghm $p |- ( ( R e. Ring /\ X e. B ) ->
+      ( x e. B |-> ( x .x. X ) ) e. ( R GrpHom R ) ) $=
+      ( vy vz crg wcel wa cfv cv co eqid ringcl oveq1 syl3anc fvmptd3 cmpt cgrp
+      cplusg ringgrp adantr 3expa an32s fmpttd wceq w3a df-3an ringdir sylan2br
+      anass1rs ringacl 3expb adantlr simpll simplr simprl simprr oveq12d isghmd
+      3eqtr4d ) CJKZEBKZLZHICUCMZVHCCABANZEDOZUAZBBFFVHPZVLVECUBKVFCUDUEZVMVGAB
+      VJBVEVIBKZVFVJBKZVEVNVFVOBCDVIEFGQUFUGUHVGHNZBKZINZBKZLZLZVPVRVHOZEDOZVPE
+      DOZVREDOZVHOZWBVKMVPVKMZVRVKMZVHOVEVTVFWCWFUIZVTVFLVEVQVSVFUJWIVQVSVFUKBV
+      HCDVPVREFVLGULUMUNWAAWBVJWCBVKBVKPZVIWBEDRVEVTWBBKZVFVEVQVSWKBVHCVPVRFVLU
+      OUPUQZWAVEWKVFWCBKVEVFVTURZWLVEVFVTUSZBCDWBEFGQSTWAWGWDWHWEVHWAAVPVJWDBVK
+      BWJVIVPEDRVGVQVSUTZWAVEVQVFWDBKWMWOWNBCDVPEFGQSTWAAVRVJWEBVKBWJVIVREDRVGV
+      QVSVAZWAVEVSVFWEBKWMWPWNBCDVREFGQSTVBVDVC $.
+  $}
 
   ${
     $d B x y z $.  $d G x y z $.
@@ -158822,6 +158960,66 @@ $)
   $}
 
   ${
+    resrhm.u $e |- U = ( S |`s X ) $.
+    $( Restriction of a ring homomorphism to a subring is a homomorphism.
+       (Contributed by Mario Carneiro, 12-Mar-2015.) $)
+    resrhm $p |- ( ( F e. ( S RingHom T ) /\ X e. ( SubRing ` S ) ) ->
+        ( F |` X ) e. ( U RingHom T ) ) $=
+      ( crh co wcel csubrg cfv wa crg cres cghm cmgp cmhm rhmrcl2 syl2an eqid
+      subrgring anim12ci csubg rhmghm subrgsubg resghm csubmnd rhmmhm subrgsubm
+      cress resmhm wceq rhmrcl1 mgpress sylan oveq1d eleqtrd jca isrhm sylanbrc
+      ) DABGHIZEAJKZIZLZCMIZBMIZLDENZCBOHIZVGCPKZBPKZQHZIZLVGCBGHIVAVFVCVEABDRE
+      ACFUAUBVDVHVLVADABOHIEAUCKIVHVCABDUDEAUEABCDEFUFSVDVGAPKZEUJHZVJQHZVKVADV
+      MVJQHIEVMUGKIVGVOIVCABDVMVJVMTZVJTZUHEAVMVPUIVMVJVNDEVNTUKSVDVNVIVJQVAAMI
+      VCVNVIULABDUMEACVMMVBFVPUNUOUPUQURCBVGVIVJVITVQUSUT $.
+  $}
+
+  ${
+    resrhm2b.u $e |- U = ( T |`s X ) $.
+    $( Restriction of the codomain of a (ring) homomorphism. ~ resghm2b analog.
+       (Contributed by SN, 7-Feb-2025.) $)
+    resrhm2b $p |- ( ( X e. ( SubRing ` T ) /\ ran F C_ X ) ->
+                     ( F e. ( S RingHom T ) <-> F e. ( S RingHom U ) ) ) $=
+      ( cfv wcel wa crg cghm co cmgp cmhm crh wb sylan eqid adantr biantrud crn
+      csubrg wss csubg subrgsubg resghm2b cress csubmnd subrgsubm resmhm2b wceq
+      mgpress mpancom oveq2d eleq2d bitrd anbi12d anbi2d anbi1d subrgring isrhm
+      subrgrcl 3bitr3d 3bitr4g ) EBUBGZHZDUAEUCZIZAJHZBJHZIZDABKLHZDAMGZBMGZNLH
+      ZIZIZVICJHZIZDACKLHZDVMCMGZNLZHZIZIZDABOLHDACOLHVHVIVPIVIWDIVQWEVHVPWDVIV
+      HVLVTVOWCVFEBUDGHVGVLVTPEBUEABCDEFUFQVHVODVMVNEUGLZNLZHZWCVFEVNUHGHVGVOWH
+      PEBVNVNRZUIVMVNWFDEWFRUJQVHWGWBDVHWFWAVMNVFWFWAUKZVGVJVFWJEBVBZEBCVNJVEFW
+      IULUMSUNUOUPUQURVHVIVKVPVHVJVIVFVJVGWKSTUSVHVIVSWDVHVRVIVFVRVGEBCFUTSTUSV
+      CABDVMVNVMRZWIVAACDVMWAWLWARVAVD $.
+  $}
+
+  $( The equalizer of two ring homomorphisms is a subring.  (Contributed by
+     Stefan O'Rear, 7-Mar-2015.)  (Revised by Mario Carneiro, 6-May-2015.) $)
+  rhmeql $p |- ( ( F e. ( S RingHom T ) /\ G e. ( S RingHom T ) ) ->
+    dom ( F i^i G ) e. ( SubRing ` S ) ) $=
+    ( crh co wcel cin cdm csubrg cfv csubg cmgp csubmnd cghm rhmghm syl2an eqid
+    wa rhmmhm ghmeql cmhm mhmeql crg wb rhmrcl1 adantr issubrg3 syl mpbir2and )
+    CABEFZGZDUKGZSZCDHIZAJKGZUOALKGZUOAMKZNKGZULCABOFZGDUTGUQUMABCPABDPABCDUAQU
+    LCURBMKZUBFZGDVBGUSUMABCURVAURRZVARZTABDURVAVCVDTURVACDUCQUNAUDGZUPUQUSSUEU
+    LVEUMABCUFUGAUOURVCUHUIUJ $.
+
+  $( The homomorphic image of a subring is a subring.  (Contributed by Stefan
+     O'Rear, 10-Mar-2015.)  (Revised by Mario Carneiro, 6-May-2015.) $)
+  rhmima $p |- ( ( F e. ( M RingHom N ) /\ X e. ( SubRing ` M ) ) ->
+      ( F " X ) e. ( SubRing ` N ) ) $=
+    ( crh co wcel csubrg cfv wa cima csubg cmgp csubmnd rhmghm subrgsubg ghmima
+    cghm syl2an eqid rhmmhm subrgsubm mhmima crg wb rhmrcl2 adantr issubrg3 syl
+    cmhm mpbir2and ) ABCEFGZDBHIGZJZADKZCHIGZUOCLIGZUOCMIZNIGZULABCRFGDBLIGUQUM
+    BCAODBPBCDAQSULABMIZURUJFGDUTNIGUSUMBCAUTURUTTZURTZUADBUTVAUBAUTURDUCSUNCUD
+    GZUPUQUSJUEULVCUMBCAUFUGCUOURVBUHUIUK $.
+
+  $( The range of a ring homomorphism is a subring.  (Contributed by SN,
+     18-Nov-2023.) $)
+  rnrhmsubrg $p |- ( F e. ( M RingHom N ) -> ran F e. ( SubRing ` N ) ) $=
+    ( crh co wcel crn cbs cfv cima csubrg cres df-ima wfn wceq eqid fnresdm syl
+    rhmf ffnd rneqd eqtr2id crg rhmrcl1 subrgid rhmima mpdan eqeltrd ) ABCDEFZA
+    GZABHIZJZCKIZUIULAUKLZGUJAUKMUIUNAUIAUKNUNAOUIUKCHIZAUKUOBCAUKPZUOPSTUKAQRU
+    AUBUIUKBKIFZULUMFUIBUCFUQBCAUDUKBUPUERABCUKUFUGUH $.
+
+  ${
     $d s x y B $.  $d s x y K $.  $d s x y ph $.  $d s x y L $.
     subrgpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
     subrgpropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
@@ -158851,6 +159049,44 @@ $)
       OTUUFTVKVLVMVFWNYKBCUUHUUDWNXNWLUUHUUDRUULYBWIFXCUUHSMXCTUUHTVKVNVFVIVGUD
       VOWNWSXGXAXIAWSXGVHWHAWRXFWIADWRXFGHVPVSQWNWTXHWIWNBCDEFMMADWRRWHGQADXFRW
       HHQUUJAWHUPYBVQVTVOVOWIWREWTWRTWTTWAWIXFFXHXFTXHTWAWBWCWDWE $.
+  $}
+
+  ${
+    $d f x y J $.  $d f x y K $.  $d f x y L $.  $d f x y M $.  $d f x y ph $.
+    $d x y B $.  $d x y C $.
+    rhmpropd.a $e |- ( ph -> B = ( Base ` J ) ) $.
+    rhmpropd.b $e |- ( ph -> C = ( Base ` K ) ) $.
+    rhmpropd.c $e |- ( ph -> B = ( Base ` L ) ) $.
+    rhmpropd.d $e |- ( ph -> C = ( Base ` M ) ) $.
+    rhmpropd.e $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+        ( x ( +g ` J ) y ) = ( x ( +g ` L ) y ) ) $.
+    rhmpropd.f $e |- ( ( ph /\ ( x e. C /\ y e. C ) ) ->
+        ( x ( +g ` K ) y ) = ( x ( +g ` M ) y ) ) $.
+    rhmpropd.g $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+        ( x ( .r ` J ) y ) = ( x ( .r ` L ) y ) ) $.
+    rhmpropd.h $e |- ( ( ph /\ ( x e. C /\ y e. C ) ) ->
+        ( x ( .r ` K ) y ) = ( x ( .r ` M ) y ) ) $.
+    $( Ring homomorphism depends only on the ring attributes of structures.
+       (Contributed by Mario Carneiro, 12-Jun-2015.) $)
+    rhmpropd $p |- ( ph -> ( J RingHom K ) = ( L RingHom M ) ) $=
+      ( co wcel cfv vf crh wa cv wi cghm cmgp cmhm eqid isrhm simplbi ringpropd
+      crg a1i anbi12d imbitrrid wb adantr ghmpropd eleq2d cbs wceq simprl eqtrd
+      mgpbasg syl simprr simprbda simplbda cmulr cplusg adantlr mgpplusgg oveqd
+      3eqtr3d mhmpropd 3bitr4g ex pm5.21ndd eqrdv ) AUAFGUBRZHIUBRZAFUMSZGUMSZU
+      CZUAUDZWASZWFWBSZWGWEUEAWGWEWFFGUFRZSZWFFUGTZGUGTZUHRZSZUCZFGWFWKWLWKUIZW
+      LUIZUJZUKUNWHWEAHUMSZIUMSZUCZWHXAWFHIUFRZSZWFHUGTZIUGTZUHRZSZUCZHIWFXDXEX
+      DUIZXEUIZUJZUKAWCWSWDWTABCDFHJLNPULABCEGIKMOQULUOZUPAWEWGWHUQAWEUCZWEWOUC
+      XAXHUCWGWHXMWEXAWOXHAWEXAUQWEXLURXMWJXCWNXGAWJXCUQWEAWIXBWFABCDEFGHIJKLMN
+      OUSUTURXMWMXFWFXMBCDEWKWLXDXEXMDFVATZWKVATZADXNVBWEJURXMWCXNXOVBAWCWDVCZX
+      NFWKUMWPXNUIVEVFVDXMEGVATZWLVATZAEXQVBWEKURXMWDXQXRVBAWCWDVGZXQGWLUMWQXQU
+      IVEVFVDXMDHVATZXDVATZADXTVBWELURXMWSXTYAVBAWEWSWTXLVHZXTHXDUMXIXTUIVEVFVD
+      XMEIVATZXEVATZAEYCVBWEMURXMWTYCYDVBAWEWSWTXLVIZYCIXEUMXJYCUIVEVFVDXMBUDZD
+      SCUDZDSUCZUCZYFYGFVJTZRZYFYGHVJTZRZYFYGWKVKTZRZYFYGXDVKTZRZAYHYKYMVBWEPVL
+      YIWCYKYOVBXMWCYHXPURWCYJYNYFYGFYJWKUMWPYJUIVMVNVFYIWSYMYQVBXMWSYHYBURWSYL
+      YPYFYGHYLXDUMXIYLUIVMVNVFVOXMYFESYGESUCZUCZYFYGGVJTZRZYFYGIVJTZRZYFYGWLVK
+      TZRZYFYGXEVKTZRZAYRUUAUUCVBWEQVLYSWDUUAUUEVBXMWDYRXSURWDYTUUDYFYGGYTWLUMW
+      QYTUIVMVNVFYSWTUUCUUGVBXMWTYRYEURWTUUBUUFYFYGIUUBXEUMXJUUBUIVMVNVFVOVPUTU
+      OUOWRXKVQVRVSVT $.
   $}
 
 
@@ -161086,7 +161322,7 @@ $)
 
     $( Member of span of the singleton of a vector.  (Contributed by NM,
        22-Feb-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
-    lspsnel $p |- ( ( W e. LMod /\ X e. V )
+    ellspsn $p |- ( ( W e. LMod /\ X e. V )
        -> ( U e. ( N ` { X } ) <-> E. k e. K U = ( k .x. X ) ) ) $=
       ( vv clmod wcel wa wceq cvv csn cfv cv co wrex cab lspsn eleq2d wi wb vex
       simpr cvsca vscaslid slotex eqeltrid ovexg mp3an2ani eqeltrd ex rexlimdvw
@@ -161121,7 +161357,7 @@ $)
     lspsnss2 $p |- ( ph ->
  ( ( N ` { X } ) C_ ( N ` { Y } ) <-> E. k e. K X = ( k .x. Y ) ) ) $=
       ( cfv wcel csn wss cv co wceq wrex clss clmod lspsncl syl2anc lspsnel5 wb
-      eqid lspsnel bitr3d ) AIJUAFSZTZIUAFSUPUBIDUCJCUDUEDEUFZAHUGSZUPFGHIKUSUM
+      eqid ellspsn bitr3d ) AIJUAFSZTZIUAFSUPUBIDUCJCUDUEDEUFZAHUGSZUPFGHIKUSUM
       ZOPAHUHTZJGTZUPUSTPRUSFGHJKUTOUIUJQUKAVAVBUQURULPRCIDBEFGHJLMKNOUNUJUO $.
   $}
 
@@ -162204,21 +162440,6 @@ $)
     ( ( LIdeal ` r ) i^i ( LIdeal ` ( oppR ` r ) ) ) ) $.
 
   ${
-    $d r I $.  $d r J $.  $d r R $.
-    2idlval.i $e |- I = ( LIdeal ` R ) $.
-    2idlval.o $e |- O = ( oppR ` R ) $.
-    2idlval.j $e |- J = ( LIdeal ` O ) $.
-    2idlval.t $e |- T = ( 2Ideal ` R ) $.
-    $( Definition of a two-sided ideal.  (Contributed by Mario Carneiro,
-       14-Jun-2015.) $)
-    2idlvalg $p |- ( R e. V -> T = ( I i^i J ) ) $=
-      ( vr wcel c2idl cfv cin clidl coppr cvv fveq2 eqtr4di df-2idl wceq fveq2d
-      cv ineq12d elex lidlex eqeltrid inex1g syl fvmptd3 eqtrid ) AFLZBAMNCDOZJ
-      UMKAKUDZPNZUOQNZPNZOUNRMRKUAUOAUBZUPCURDUSUPAPNZCUOAPSGTUSUREPNDUSUQEPUSU
-      QAQNEUOAQSHTUCITUEAFUFUMCRLUNRLUMCUTRGFAUGUHCDRUIUJUKUL $.
-  $}
-
-  ${
     $d a b j s w x $.
     2idlmex.i $e |- T = ( 2Ideal ` W ) $.
     $( Existence of the set a two-sided ideal is built from (when the ideal is
@@ -162227,6 +162448,31 @@ $)
       ( vr wcel c2idl cdm wrel cfv cvv cv clidl coppr cin mptrel df-2idl releqi
       cmpt mpbir eleq2i biimpi relelfvdm sylancr elexd ) BAFZCGHZUFGIZBCGJZFZCU
       GFUHEKELZMJUKNJMJOZSZIEKULPGUMEQRTUFUJAUIBDUAUBBCGUCUDUE $.
+  $}
+
+  ${
+    $d r x I $.  $d r x J $.  $d r x R $.  $d x T $.
+    2idlval.i $e |- I = ( LIdeal ` R ) $.
+    2idlval.o $e |- O = ( oppR ` R ) $.
+    2idlval.j $e |- J = ( LIdeal ` O ) $.
+    2idlval.t $e |- T = ( 2Ideal ` R ) $.
+    $( Definition of a two-sided ideal.  (Contributed by Mario Carneiro,
+       14-Jun-2015.) $)
+    2idlval $p |- T = ( I i^i J ) $=
+      ( vx vr cin cv wcel cvv syl cfv clidl coppr eqtr4di 2idlmex elinel1 c2idl
+      lidlmex lidlex eqeltrid inex1g fveq2 fveq2d ineq12d df-2idl fvmptg eqtrid
+      wceq mpdan eleq2d pm5.21nii eqriv ) JBCDLZJMZBNAONZUTUSNZBUTAIUAVBUTCNVAU
+      TCDUBUTCAFUDPVABUSUTVABAUCQZUSIVAUSONZVCUSUNVACONVDVACARQZOFOAUEUFCDOUGPK
+      AKMZRQZVFSQZRQZLUSOOUCVFAUNZVGCVIDVJVGVECVFARUHFTVJVIERQDVJVHERVJVHASQEVF
+      ASUHGTUIHTUJKUKULUOUMUPUQUR $.
+
+    $( Definition of a two-sided ideal.  (Contributed by Mario Carneiro,
+       14-Jun-2015.) $)
+    2idlvalg $p |- ( R e. V -> T = ( I i^i J ) ) $=
+      ( vr wcel c2idl cfv cin clidl coppr cvv fveq2 eqtr4di df-2idl wceq fveq2d
+      cv ineq12d elex lidlex eqeltrid inex1g syl fvmptd3 eqtrid ) AFLZBAMNCDOZJ
+      UMKAKUDZPNZUOQNZPNZOUNRMRKUAUOAUBZUPCURDUSUPAPNZCUOAPSGTUSUREPNDUSUQEPUSU
+      QAQNEUOAQSHTUCITUEAFUFUMCRLUNRLUMCUTRGFAUGUHCDRUIUJUKUL $.
   $}
 
   ${
@@ -162525,6 +162771,27 @@ $)
     qusring $p |- ( ( R e. Ring /\ S e. I ) -> U e. Ring ) $=
       ( crg wcel wa cur cfv cqg co cec wceq eqid qus1 simpld ) AGHBDHICGHAJKZAB
       LMNCJKOABCSDEFSPQR $.
+
+    qusrhm.x $e |- X = ( Base ` R ) $.
+    qusrhm.f $e |- F = ( x e. X |-> [ x ] ( R ~QG S ) ) $.
+    $( If ` S ` is a two-sided ideal in ` R ` , then the "natural map" from
+       elements to their cosets is a ring homomorphism from ` R ` to
+       ` R / S ` .  (Contributed by Mario Carneiro, 15-Jun-2015.) $)
+    qusrhm $p |- ( ( R e. Ring /\ S e. I ) -> F e. ( R RingHom U ) ) $=
+      ( crg wcel cfv eqid co cec cvv wceq cv vy vz vd vc va vb wa cmulr qusring
+      cur simpl cqg csubg wer clidl coppr 2idlelb simplbi lidlsubg sylan2 eqger
+      syl cbs basfn elexd funfvex funfni sylancr eqeltrid divsfval simprd eqtrd
+      wfn qus1 cqus a1i 2idlcpbl ringcl 3expb adantlr caovclg qusmulval oveq12d
+      adantr 3eqtr4rd cnsg cghm cabl ringabl ablnsg eleqtrrd qusghm isrhm2d ) B
+      LMZCFMZUGZUAUBGBDBUHNZDUHNZBUJNZEDUJNZJWSOZWTOWQOZWROZWNWOUKZBCDFHIUIWPWS
+      ENWSBCULPZQZWTWPAWSXEEGRWPCBUMNZMZGXEUNZWOWNCBUONZMZXHWOXKCBUPNZUONZMBFCX
+      JXMXLXJOZXLOXMOIUQURBXJCXNUSUTZXEBGCJXEOZVAVBZWPGBVCNZRJWPVCRVMBRMXRRMZVD
+      WPBLXDVEXSRBVCBVCVFVGVHVIZKVJWPDLMXFWTSBCDWSFHIXAVNVKVLWPUATZGMZUBTZGMZUG
+      ZUGZYAXEQZYCXEQZWRPZYAYCWQPZXEQZYAENZYCENZWRPYJENWPYBYDYIYKSWPXEBWRWQDGYA
+      YCLUCUDUEUFDBXEVOPSWPHVPGXRSWPJVPXQXDUETUFTUDTZUCTZBCWQXEFGJXPIXBVQWPUAUB
+      YNYOGGGWQWNYEYJGMZWOWNYBYDYPGBWQYAYCJXBVRVSVTWAXBXCWBVSYFYLYGYMYHWRYFAYAX
+      EEGRWPXIYEXQWDZWPGRMYEXTWDZKVJYFAYCXEEGRYQYRKVJWCYFAYJXEEGRYQYRKVJWEWPCBW
+      FNZMEBDWGPMWPCXGYSXOWPBWHMZYSXGSWNYTWOBWIWDBWJVBWKAEBDGCJHKWLVBWM $.
   $}
 
   ${
@@ -162624,6 +162891,35 @@ $)
       HYMXAADBFVMVNVOQZYBXQYCWIXQUHVPZXEXFABWMYECXKXRXFRZEYJYKWMRZVQSYBYNYCYCXQ
       KXTYIPYOYDXQYCYPVRXEXFABWMYECXRXKYQEYJYKYRVQSVSVTWAVTWBWCWDGHWQCWMWQRYRWE
       WF $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Principal ideal rings.  Divisibility in the integers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d a x R $.  $d G a x $.  $d B a x $.  $d K a x $.  $d .|| a x $.
+    rspsn.b $e |- B = ( Base ` R ) $.
+    rspsn.k $e |- K = ( RSpan ` R ) $.
+    rspsn.d $e |- .|| = ( ||r ` R ) $.
+    $( Membership in principal ideals is closely related to divisibility.
+       (Contributed by Stefan O'Rear, 3-Jan-2015.)  (Revised by Mario Carneiro,
+       6-May-2015.) $)
+    rspsn $p |- ( ( R e. Ring /\ G e. B ) ->
+        ( K ` { G } ) = { x | G .|| x } ) $=
+      ( va crg wcel cfv wceq wrex a1i cbs eqtrid adantr eqid wa cv wbr cmulr co
+      csn wb eqcom rexbidv crglmod clspn cvsca csca clmod rlmlmod simpr rlmbasg
+      eleqtrd ellspsn syl2an2r crsp rspvalg fveq1d eleq2d rlmvscag oveqd eqeq2d
+      rlmscabas rexeqbidv 3bitr4d cdsr csrg ringsrg dvdsr2d eqabdv ) DKLZEBLZUA
+      ZEAUBZCUCZAEUFZFMZVRVSJUBZEDUDMZUEZNZJBOZWEVSNZJBOVSWBLZVTVRWFWHJBWFWHUGV
+      RVSWEUHPUIVRVSWADUJMZUKMZMZLZVSWCEWJULMZUEZNZJWJUMMZQMZOZWIWGVPWJUNLVQEWJ
+      QMZLWMWSUGDUOVREBWTVPVQUPZVPBWTNVQVPBDQMZWTGDKUQRSURWNVSJWQWRWKWTWJEWQTWR
+      TWTTWNTWKTUSUTVRWBWLVSVRWAFWKVPFWKNVQVPFDVAMWKHKDVBRSVCVDVRWFWPJBWRVPBWRN
+      VQVPBXBWRGDKVHRSVRWEWOVSVRWDWNWCEVPWDWNNVQDKVESVFVGVIVJVRJBCDWDEVSBXBNVRG
+      PCDVKMNVRIPVPDVLLVQDVMSWDWDNVRWDTPXAVNVJVO $.
   $}
 
 
@@ -163239,6 +163535,22 @@ $)
   ${
     $d r s $.  $d n N $.  $d n .1. $.  $d n r R $.  $d n .x. $.
     zrhval.l $e |- L = ( ZRHom ` R ) $.
+
+    ${
+      $d L x $.  $d R x y $.
+      $( Define the unique homomorphism from the integers to a ring or field.
+         (Contributed by Mario Carneiro, 13-Jun-2015.)  (Revised by AV,
+         12-Jun-2019.) $)
+      zrhval $p |- L = U. ( ZZring RingHom R ) $=
+        ( vx vr vy czring crh cuni wcel czrh cfv cvv wceq crg syl eqtrid eleq2d
+        co cv df-zrh mptrcl eleq2s zringring rhmex mpan uniexd oveq2 unieqd ibi
+        fvmptg mpdan wex wrex eluni2 rexm sylbi rhmrcl2 elexd ibir impbii eqriv
+        exlimiv ) DBGAHSZIZDTZBJZVFVEJZVGVHVGBVEVFVGBAKLZVECVGAMJZVIVENZVJVFVIB
+        EMGETZHSZIZKVFAEUAZUBCUCVJVEMJVKVJVDMGOJVJVDMJUDGAOMUEUFUGEAVNVEMMKVLAN
+        VMVDVLAGHUHUIVOUKULZPQRUJVHVGVHBVEVFVHBVIVECVHVJVKVHAOVHFTZVDJZFUMZAOJZ
+        VHVFVQJZFVDUNVSFVFVDUOWAFVDUPUQVRVTFGAVQURVCPUSVPPQRUTVAVB $.
+    $}
+
     $( Define the unique homomorphism from the integers to a ring or field.
        (Contributed by Mario Carneiro, 13-Jun-2015.)  (Revised by AV,
        12-Jun-2019.) $)
@@ -163307,6 +163619,22 @@ $)
     zrh0 $p |- ( R e. Ring -> ( L ` 0 ) = .0. ) $=
       ( crg wcel czring crh cghm cc0 cfv wceq zrhrhm rhmghm zring0 ghmid 3syl
       co ) AFGBHAISGBHAJSGKBLCMABDNHABOHABKCPEQR $.
+  $}
+
+  ${
+    $d x y B $.  $d x y K $.  $d x y L $.  $d x y ph $.
+    zrhpropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    zrhpropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    zrhpropd.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+        ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    zrhpropd.4 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+        ( x ( .r ` K ) y ) = ( x ( .r ` L ) y ) ) $.
+    $( The ` ZZ ` ring homomorphism depends only on the ring attributes of a
+       structure.  (Contributed by Mario Carneiro, 15-Jun-2015.) $)
+    zrhpropd $p |- ( ph -> ( ZRHom ` K ) = ( ZRHom ` L ) ) $=
+      ( czring crh co cuni czrh cfv eqidd cv wcel wa cbs cplusg rhmpropd unieqd
+      cmulr eqid zrhval 3eqtr4g ) AKELMZNKFLMZNEOPZFOPZAUIUJABCKUAPZDKEKFAUMQZG
+      UNHABRZUMSCRZUMSTTZUOUPKUBPMQIUQUOUPKUEPMQJUCUDEUKUKUFUGFULULUFUGUH $.
   $}
 
   ${
@@ -163532,6 +163860,14 @@ $)
     znmul $p |- ( N e. NN0 -> ( .r ` U ) = ( .r ` Y ) ) $=
       ( cmulr mulridx cnx cfv cslot wceq cn wcel mulrslid simpri plendxnmulrndx
       cple necomi znbaslemnn ) ABHCDEFGIHJHKZLMUBNOPQJSKUBRTUA $.
+
+    $( The ` ZZ ` ring homomorphism of ` Z/nZ ` is inherited from the quotient
+       ring it is based on.  (Contributed by Mario Carneiro, 14-Jun-2015.)
+       (Revised by AV, 13-Jun-2019.) $)
+    znzrh $p |- ( N e. NN0 -> ( ZRHom ` U ) = ( ZRHom ` Y ) ) $=
+      ( vx vy cn0 wcel cbs cfv eqidd znbas2 cv wa cplusg oveqdr cmulr zrhpropd
+      znadd znmul ) CJKZHIBLMZBDUDUENABCDEFGOUDHPUEKIPUEKQZHIBRMDRMABCDEFGUBSUD
+      UFHIBTMDTMABCDEFGUCSUA $.
   $}
 
   ${
@@ -163559,6 +163895,276 @@ $)
       wa ) AFGZHHAIHJKZKLMNMZOGZBOGUMAUAGUPAUBUNUOAUNSZUOSZUCUDUMDEUOUEKZUOBUMU
       SUFUNUOABUQURCUGUMDTUSGETUSGULZDEUOPKBPKUNUOABUQURCUHQUMUTDEUORKBRKUNUOAB
       UQURCUIQUJUK $.
+  $}
+
+  ${
+    $d x A $.  $d x N $.  $d x .~ $.  $d x S $.
+    znzrh2.s $e |- S = ( RSpan ` ZZring ) $.
+    znzrh2.r $e |- .~ = ( ZZring ~QG ( S ` { N } ) ) $.
+    znzrh2.y $e |- Y = ( Z/nZ ` N ) $.
+    znzrh2.2 $e |- L = ( ZRHom ` Y ) $.
+    $( The ` ZZ ` ring homomorphism maps elements to their equivalence classes.
+       (Contributed by Mario Carneiro, 15-Jun-2015.)  (Revised by AV,
+       13-Jun-2019.) $)
+    znzrh2 $p |- ( N e. NN0 -> L = ( x e. ZZ |-> [ x ] .~ ) ) $=
+      ( wcel czrh cfv cz cec czring cqus co wceq crg cn0 cmpt crh csn zringring
+      clidl nn0z znlidl syl cqg oveq2i ccrg c2idl zringcrng eqid crng2idl ax-mp
+      cv zringbas eceq2 mpteq2i qusrhm sylancr wb zncrng2 crngring zrhrhmb 4syl
+      mpbid znzrh eqtr2d eqtrid ) EUAKZDFLMZANAURZBOZUBZJVMVQPBQRZLMZVNVMVQPVRU
+      CRKZVQVSSZVMPTKEUDCMZPUFMZKZVTUEVMENKZWDEUGZCEGUHUIAPWBVRVQWCNBPWBUJRZPQH
+      UKZPULKWCPUMMSUNPWCWCUOUPUQUSANVPVOWGOZBWGSVPWISHBWGVOUTUQVAVBVCVMWEVRULK
+      VRTKVTWAVDWFCVREGWHVEVRVFVRVQVSVSUOVGVHVICVREFGWHIVJVKVL $.
+
+    $( The ` ZZ ` ring homomorphism maps elements to their equivalence classes.
+       (Contributed by Mario Carneiro, 15-Jun-2015.)  (Revised by AV,
+       13-Jun-2019.) $)
+    znzrhval $p |- ( ( N e. NN0 /\ A e. ZZ ) -> ( L ` A ) = [ A ] .~ ) $=
+      ( vx cn0 wcel cz cfv cec adantr cvv czring crg wa cmpt wceq znzrh2 fveq1d
+      cv eqid eceq1 simpr csn co zringring crsp rspex ax-mp eqeltri snexg fvexg
+      cqg sylancr eqgex eqeltrid ecexg syl fvmptd3 eqtrd ) ELMZANMZUAZADOZAKNKU
+      FZBPZUBZOZABPZVGVJVNUCVHVGADVMKBCDEFGHIJUDUEQVIKAVLVONVMRVMUGVKABUHVGVHUI
+      VIBRMVORMVIBSEUJZCOZUSUKZRHVISTMZVQRMZVRRMULVICRMVPRMZVTCSUMOZRGVSWBRMULT
+      SUNUOUPVGWAVHELUQQVPCRRURUTVQSTRVAUTVBARBVCVDVEVF $.
+  $}
+
+  ${
+    $d x N $.
+    znzrhfo.y $e |- Y = ( Z/nZ ` N ) $.
+    znzrhfo.b $e |- B = ( Base ` Y ) $.
+    znzrhfo.2 $e |- L = ( ZRHom ` Y ) $.
+    $( The ` ZZ ` ring homomorphism is a surjection onto ` Z/nZ ` .
+       (Contributed by Mario Carneiro, 15-Jun-2015.) $)
+    znzrhfo $p |- ( N e. NN0 -> L : ZZ -onto-> B ) $=
+      ( vx cn0 wcel cz wfo czring cfv co cvv crg wceq eqid zringring cv csn cqg
+      crsp cec cmpt cqs cqus eqidd cbs zringbas rspex ax-mp snexg fvexg sylancr
+      a1i eqgex quslem wb znbas eqtr4di foeq3 syl mpbid znzrh2 foeq1 mpbird ) C
+      IJZKABLZKAHKHUAMCUBZMUDNZNZUCOZUEUFZLZVIKKVNUGZVOLZVPVIHVNMMVNUHOZVOKPQVI
+      VSUIKMUJNRVIUKUQVOSVIMQJZVMPJZVNPJTVIVLPJZVKPJWAVTWBTQMULUMCIUNVKVLPPUOUP
+      VMMQPURUPVTVITUQUSVIVQARVRVPUTVIVQDUJNAVNVLCDVLSZEVNSZVAFVBVQAKVOVCVDVEVI
+      BVORVJVPUTHVNVLBCDWCWDEGVFKABVOVGVDVH $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x N $.  $d n x Y $.
+    zncyg.y $e |- Y = ( Z/nZ ` N ) $.
+    zndvds.2 $e |- L = ( ZRHom ` Y ) $.
+    $( Express equality of equivalence classes in ` ZZ / n ZZ ` in terms of
+       divisibility.  (Contributed by Mario Carneiro, 15-Jun-2015.) $)
+    zndvds $p |- ( ( N e. NN0 /\ A e. ZZ /\ B e. ZZ ) ->
+      ( ( L ` A ) = ( L ` B ) <-> N || ( A - B ) ) ) $=
+      ( vx cfv wceq wcel cz co cdvds wbr czring eqid zringbas sylancr ccnfld wb
+      cn0 w3a cmin eqcom csn cqg cec znzrhval 3adant2 3adant3 eqeq12d csubg wer
+      crsp crg clidl zringring wss nn0z 3ad2ant1 snssd rspcl lidlsubg eqger syl
+      simp3 erth csg cabl zringabl lidlss eqgabl wa simp2 jca biantrurd bitr4di
+      df-3an cv csubrg zsubrg subrgsubg mp1i cnfldsub df-zring subgsub syld3an1
+      eqcomd dvdsrzring rspsn eleq12d zsubcld breq2 elabg bitrd 3bitr2d bitrid
+      cab ) ACIZBCIZJXAWTJZDUBKZALKZBLKZUCZDABUDMZNOZWTXAUEXFXBBPDUFZPUOIZIZUGM
+      ZUHZAXLUHZJBAXLOZXHXFXAXMWTXNXCXEXAXMJXDBXLXJCDEXJQZXLQZFGUIUJXCXDWTXNJXE
+      AXLXJCDEXPXQFGUIUKULXFBAXLLXFXKPUMIKZLXLUNXFPUPKZXKPUQIZKZXRURXFXSXILUSYA
+      URXFDLXCXDDLKZXEDUTVAZVBLPXTXIXJXPRXTQZVCSZPXTXKYDVDSXLPLXKRXQVEVFXCXDXEV
+      GZVHXFXOXEXDABPVIIZMZXKKZUCZYIXHXFPVJKXKLUSZXOYJUAVKXFYAYKYELXKXTPRYDVLVF
+      BAXLXKPYGLRYGQZXQVMSXFYIXEXDVNZYIVNYJXFYMYIXFXEXDYFXCXDXEVOZVPVQXEXDYIVSV
+      RXFYIXGDHVTZNOZHWSZKZXHXFYHXGXKYQXFXGYHLTUMIKZXDXCXEXGYHJLTWAIKYSXFWBLTWC
+      WDLTPUDYGABWEWFYLWGWHWIXFXSYBXKYQJURYCHLNPDXJRXPWJWKSWLXFXGLKYRXHUAXFABYN
+      YFWMYPXHHXGLYOXGDNWNWOVFWPWQWQWR $.
+
+    zndvds0.3 $e |- .0. = ( 0g ` Y ) $.
+    $( Special case of ~ zndvds when one argument is zero.  (Contributed by
+       Mario Carneiro, 15-Jun-2015.) $)
+    zndvds0 $p |- ( ( N e. NN0 /\ A e. ZZ ) ->
+        ( ( L ` A ) = .0. <-> N || A ) ) $=
+      ( cn0 wcel cz wa cfv cc0 wceq co cdvds wbr czring 3syl cmin zndvds mp3an3
+      wb 0z crh cghm ccrg crg zncrng adantr crngring zrhrhm rhmghm zring0 ghmid
+      eqeq2d simpr zcnd subid1d breq2d 3bitr3d ) CIJZAKJZLZABMZNBMZOZCANUAPZQRZ
+      VFEOCAQRVCVDNKJVHVJUDUEANBCDFGUBUCVEVGEVFVEBSDUFPJZBSDUGPJVGEOVEDUHJZDUIJ
+      VKVCVLVDCDFUJUKDULDBGUMTSDBUNSDBNEUOHUPTUQVEVIACQVEAVEAVCVDURUSUTVAVB $.
+  $}
+
+  ${
+    $d x y B $.  $d x y z F $.  $d x y z N $.  $d x y z W $.  $d x y z Y $.
+    znf1o.y $e |- Y = ( Z/nZ ` N ) $.
+    znf1o.b $e |- B = ( Base ` Y ) $.
+    znf1o.f $e |- F = ( ( ZRHom ` Y ) |` W ) $.
+    znf1o.w $e |- W = if ( N = 0 , ZZ , ( 0 ..^ N ) ) $.
+    $( The function ` F ` enumerates all equivalence classes in ` Z/nZ ` for
+       each ` n ` .  When ` n = 0 ` , ` ZZ / 0 ZZ = ZZ / { 0 } ~~ ZZ ` so we
+       let ` W = ZZ ` ; otherwise ` W = { 0 , ... , n - 1 } ` enumerates all
+       the equivalence classes.  (Contributed by Mario Carneiro, 15-Jun-2015.)
+       (Revised by Mario Carneiro, 2-May-2016.)  (Revised by AV,
+       13-Jun-2019.) $)
+    znf1o $p |- ( N e. NN0 -> F : W -1-1-onto-> B ) $=
+      ( vx vy wcel cfv wceq cz co cc0 wa syl wbr vz cn0 wf1 wfo wf1o wf cv wral
+      wi czrh cres ccrg crg czring crh zncrng crngring eqid zrhrhm zringbas wss
+      rhmf 4syl wn cfzo cif simpr iftrued ssid eqsstrdi iffalsed elfzoelz ssriv
+      eqtrid wdc wo nn0z 0z zdceq sylancl exmiddc mpjaodan fssresd feq1i sylibr
+      cmin cdvds fveq1i fvres ad2antrl ad2antll eqeq12d wb adantr simprl sseldd
+      simpl simprr zndvds syl3anc cn elnn0 cmo nnnn0d moddvds cq cle clt zq nnq
+      wne nnne0 ifnefalse eleqtrd elfzole1 elfzolt2 modqid syl22anc bitr3d 0nn0
+      breq1d id eqeltrdi sylan zsubcld 0dvds zcnd subeq0ad 3bitrd jaoian sylanb
+      biimpd ralrimivva dff13 sylanbrc wrex mpbird fveq2 rspceeqv syl2anc nngt0
+      zmodfzo ancoms eleqtrrd adantl modqabs2 sselid mpbid eqcomd iftrue eleq2d
+      crn nnnn0 biimpar eleqtrrdi eqidd eqeq2d rexbiia ralrimiva wfn fofn eqeq1
+      znzrhfo rexbidv ralrn 3syl forn raleqtrdv dffo3 df-f1o ) CUBLZDABUCZDABUD
+      ZDABUEUVKDABUFZJUGZBMZKUGZBMZNZUVOUVQNZUIZKDUHJDUHUVLUVKDAEUJMZDUKZUFUVNU
+      VKOADUWBUVKEULLEUMLUWBUNEUOPLOAUWBUFCEFUPEUQEUWBUWBURZUSOAUNEUWBUTGVBVCUV
+      KCQNZDOVAZUWEVDZUVKUWERZDOOUWHDUWEOQCVEPZVFZOIUWHUWEOUWIUVKUWEVGVHVNOVIVJ
+      UVKUWGRZDUWIOUWKDUWJUWIIUWKUWEOUWIUVKUWGVGVKVNJUWIOUVOQCVLVMZVJUVKUWEVOZU
+      WEUWGVPUVKCOLQOLUWMCVQVRCQVSVTUWEWASWBZWCDABUWCHWDWEZUVKUWAJKDDUVKUVODLZU
+      VQDLZRZRZUVSUVTUWSUVSUVOUWBMZUVQUWBMZNZCUVOUVQWFPZWGTZUVTUWSUVPUWTUVRUXAU
+      WSUVPUVOUWCMZUWTUVOBUWCHWHUWPUXEUWTNUVKUWQUVODUWBWIWJVNUWSUVRUVQUWCMZUXAU
+      VQBUWCHWHZUWQUXFUXANUVKUWPUVQDUWBWIZWKVNWLUWSUVKUVOOLZUVQOLZUXBUXDWMUVKUW
+      RWQUWSDOUVOUVKUWFUWRUWNWNZUVKUWPUWQWOWPZUWSDOUVQUXKUVKUWPUWQWRWPZUVOUVQUW
+      BCEFUWDWSWTUVKCXALZUWEVPZUWRUXDUVTWMZCXBZUXNUWRUXPUWEUXNUWRRZUVOCXCPZUVQC
+      XCPZNZUXDUVTUXRUXNUXIUXJUYAUXDWMUXNUWRWQZUXRDOUVOUXRUVKUWFUXRCUYBXDUWNSZU
+      XNUWPUWQWOZWPZUXRDOUVQUYCUXNUWPUWQWRZWPZUVOUVQCXEWTUXRUXSUVOUXTUVQUXRUVOX
+      FLZCXFLZQUVOXGTZUVOCXHTZUXSUVONUXRUXIUYHUYEUVOXISUXNUYIUWRCXJZWNZUXRUVOUW
+      ILZUYJUXRUVODUWIUYDUXNDUWINZUWRUXNDUWJUWIIUXNCQXKUWJUWINCXLCQOUWIXMSVNZWN
+      ZXNZUVOQCXOSUXRUYNUYKUYRUVOQCXPSUVOCXQXRUXRUVQXFLZUYIQUVQXGTZUVQCXHTZUXTU
+      VQNUXRUXJUYSUYGUVQXISUYMUXRUVQUWILZUYTUXRUVQDUWIUYFUYQXNZUVQQCXOSUXRVUBVU
+      AVUCUVQQCXPSUVQCXQXRWLXSUWEUWRRZUXDQUXCWGTZUXCQNZUVTVUDCQUXCWGUWEUWRWQYAV
+      UDUXCOLVUEVUFWMVUDUVOUVQUWEUVKUWRUXIUWECQUBUWEYBXTYCZUXLYDZUWEUVKUWRUXJVU
+      GUXMYDZYEUXCYFSVUDUVOUVQVUDUVOVUHYGVUDUVQVUIYGYHYIYJYKYIYLYMJKDABYNYOUVKU
+      VNUVOUVRNZKDYPZJAUHUVMUWOUVKVUKJUWBUULZAUVKVUKJVULUHZUAUGZUWBMZUVRNZKDYPZ
+      UAOUHZUVKVUQUAOUVKVUNOLZRVUOUXANZKDYPZVUQUVKUXOVUSVVAUXQUXNVUSVVAUWEUXNVU
+      SRZVUNCXCPZDLVUOVVCUWBMZNVVAVVBVVCUWIDVUSUXNVVCUWILVUNCUUBUUCZUXNUYOVUSUY
+      PWNUUDVVBVVDVUOVVBVVDVUONZCVVCVUNWFPWGTZVVBVVCCXCPVVCNZVVGVVBVUNXFLZUYIQC
+      XHTZVVHVUSVVIUXNVUNXIUUEUXNUYIVUSUYLWNUXNVVJVUSCUUAWNVUNCUUFWTVVBUXNVVCOL
+      ZVUSVVHVVGWMUXNVUSWQVVBUWIOVVCUWLVVEUUGZUXNVUSVGZVVCVUNCXEWTUUHVVBUVKVVKV
+      USVVFVVGWMUXNUVKVUSCUUMWNVVLVVMVVCVUNUWBCEFUWDWSWTYQUUIKVVCDUXAVVDVUOUVQV
+      VCUWBYRYSYTUWEVUSRZVUNDLVUOVUONVVAVVNVUNUWJDUWEVUNUWJLVUSUWEUWJOVUNUWEOUW
+      IUUJUUKUUNIUUOVVNVUOUUPKVUNDUXAVUOVUOUVQVUNUWBYRYSYTYJYKVUPVUTKDUWQUVRUXA
+      VUOUWQUVRUXFUXAUXGUXHVNUUQUURWEUUSUVKOAUWBUDZUWBOUUTVUMVURWMAUWBCEFGUWDUV
+      CZOAUWBUVAVUKVUQJUAOUWBUVOVUONVUJVUPKDUVOVUOUVRUVBUVDUVEUVFYQUVKVVOVULANV
+      VPOAUWBUVGSUVHKJDABUVIYODABUVJYO $.
+  $}
+
+  ${
+    $d x y .<_ $.  $d x A $.  $d x y z N $.  $d x y z X $.  $d x y z Y $.
+    $d x B $.  $d x F $.
+    znle2.y $e |- Y = ( Z/nZ ` N ) $.
+    znle2.f $e |- F = ( ( ZRHom ` Y ) |` W ) $.
+    znle2.w $e |- W = if ( N = 0 , ZZ , ( 0 ..^ N ) ) $.
+    znle2.l $e |- .<_ = ( le ` Y ) $.
+    $( The ordering of the ` Z/nZ ` structure.  (Contributed by Mario Carneiro,
+       15-Jun-2015.)  (Revised by AV, 13-Jun-2019.) $)
+    znle2 $p |- ( N e. NN0 -> .<_ = ( ( F o. <_ ) o. `' F ) ) $=
+      ( cn0 wcel czring cfv co czrh cres cle ccom ccnv eqid csn crsp cqus znzrh
+      cqg znle reseq1d eqtr4di coeq1d cnveqd coeq12d eqtrd ) CJKZBLLCUALUBMZMUE
+      NUCNZOMZDPZQRZUQSZRAQRZASZRUNUOUQBCDEUNTZUOTZFUQTHIUFUMURUTUSVAUMUQAQUMUQ
+      EOMZDPAUMUPVDDUNUOCEVBVCFUDUGGUHZUIUMUQAVEUJUKUL $.
+
+    znleval.x $e |- X = ( Base ` Y ) $.
+    $( The ordering of the ` Z/nZ ` structure.  (Contributed by Mario Carneiro,
+       15-Jun-2015.)  (Revised by AV, 13-Jun-2019.) $)
+    znleval $p |- ( N e. NN0 -> ( A .<_ B <-> ( A e. X /\ B e. X /\
+        ( `' F ` A ) <_ ( `' F ` B ) ) ) ) $=
+      ( vx wcel wbr wa cle wb cvv cn0 ccnv cfv w3a cxp ccom znle2 cdm crn relco
+      wrel wss relssdmrn ax-mp dmcoss df-rn wf1o wfo wceq znf1o f1ofo forn 3syl
+      eqtr3id sseqtrid rncoss sstrid xpss12 syl2anc eqsstrd ssbrd brxp imbitrdi
+      pm4.71rd cv wex adantr breqd brcog adantl eqcom wfn f1ocnv simprl fnbrfvb
+      f1ofn bitr2id anbi1d exbidv bitrd czrh cres ccrg zncrng eqid zrhex resexg
+      eqeltrid cnvexg syl fvexg breq1 ceqsexgv simprr bitrid vex brcnvg sylancl
+      biancomd breq2 3bitr2d 3bitrd pm5.32da df-3an bitr4di ) EUAOZABDPZAGOZBGO
+      ZQZXQQZXRXSACUBZUCZBYBUCZRPZUDZXPXQXTXPXQABGGUEZPXTXPDYGABXPDCRUFZYBUFZYG
+      CDEFHIJKLUGZXPYIYIUHZYIUIZUEZYGYIUKYIYMULYHYBUJYIUMUNXPYKGULYLGULYMYGULXP
+      YBUHZYKGYHYBUOXPYNCUIZGCUPXPFGCUQZFGCURYOGUSGCEFHIMJKUTZFGCVAFGCVBVCZVDVE
+      XPYLYHUIZGYHYBVFXPYOYSGCRVFYRVEVGYKGYLGVHVIVGVJVKABGGVLVMVNXPYAXTYEQYFXPX
+      TXQYEXPXTQZXQABYIPZNVOZYCUSZUUBBYHPZQZNVPZYEYTDYIABXPDYIUSXTYJVQVRYTUUAAU
+      UBYBPZUUDQZNVPZUUFXTUUAUUISXPNABYHYBGGVSVTYTUUHUUENYTUUGUUCUUDUUCYCUUBUSZ
+      YTUUGUUBYCWAYTYBGWBZXRUUJUUGSYTYPGFYBUQUUKXPYPXTYQVQFGCWCGFYBWFVCZXPXRXSW
+      DZGAUUBYBWEVIWGWHWIWJYTUUFYCBYHPZYEYTYCTOZUUFUUNSYTYBTOZXRUUOXPUUPXTXPCTO
+      UUPXPCHWKUCZFWLZTJXPHWMOUUQTOUURTOEHIWNHUUQWMUUQWOWPUUQFTWQVCWRCTWSWTVQZU
+      UMAYBTGXAVIZUUDUUNNYCTUUBYCBYHXBXCWTYTUUNYCUUBRPZUUBBCPZQZNVPZUUBYDUSZUVA
+      QZNVPZYEYTUUOXSUUNUVDSUUTXPXRXSXDZNYCBCRTGVSVIYTUVFUVCNYTUVFUVAUVBYTUVEUV
+      BUVAYTUVEBUUBYBPZUVBUVEYDUUBUSZYTUVIUUBYDWAYTUUKXSUVJUVISUULUVHGBUUBYBWEV
+      IXEYTXSUUBTOUVIUVBSUVHNXFBUUBGTCXGXHWJWHXIWIYTYDTOZUVGYESYTUUPXSUVKUUSUVH
+      BYBTGXAVIUVAYENYDTUUBYDYCRXJXCWTXKWJXLXMXRXSYEXNXOWJ $.
+
+    $( The ordering of the ` Z/nZ ` structure.  (Contributed by Mario Carneiro,
+       15-Jun-2015.)  (Revised by AV, 13-Jun-2019.) $)
+    znleval2 $p |- ( ( N e. NN0 /\ A e. X /\ B e. X ) ->
+                              ( A .<_ B <-> ( `' F ` A ) <_ ( `' F ` B ) ) ) $=
+      ( cn0 wcel w3a wbr ccnv cfv wa cle znleval 3ad2ant1 3simpc df-3an bitr4di
+      wb biantrurd bitr4d ) ENOZAGOZBGOZPZABDQZUKULACRZSBUOSUAQZPZUPUJUKUNUQUGU
+      LABCDEFGHIJKLMUBUCUMUPUKULTZUPTUQUMURUPUJUKULUDUHUKULUPUEUFUI $.
+  $}
+
+  ${
+    $d w x y z N $.  $d w x y z Y $.
+    zntos.y $e |- Y = ( Z/nZ ` N ) $.
+
+    ${
+      znhash.1 $e |- B = ( Base ` Y ) $.
+      $( The ` Z/nZ ` structure is a finite ring.  (Contributed by Mario
+         Carneiro, 2-May-2016.) $)
+      znfi $p |- ( N e. NN -> B e. Fin ) $=
+        ( cn wcel cc0 cfzo co cfn cen wbr cz 0z nnz wceq wf1o eqid syl2anc czrh
+        fzofig sylancr cfv cif cres cn0 nnnn0 znf1o syl wne wb ifnefalse f1oeq2
+        nnne0 3syl mpbid f1oeng ensymd enfii ) BFGZHBIJZKGZAVBLMAKGVAHNGBNGVCOB
+        PHBUBUCZVAVBAVAVCVBACUAUDBHQNVBUEZUFZRZVBALMVDVAVEAVFRZVGVABUGGVHBUHAVF
+        BVECDEVFSVESUIUJVABHUKVEVBQVHVGULBUOBHNVBUMVEVBAVFUNUPUQVBAKVFURTUSAVBU
+        TT $.
+
+      $( The ` Z/nZ ` structure has ` n ` elements.  (Contributed by Mario
+         Carneiro, 15-Jun-2015.) $)
+      znhash $p |- ( N e. NN -> ( # ` B ) = N ) $=
+        ( cn wcel chash cfv cc0 wceq cen wbr cfn cz wf1o eqid syl wb syl2anc co
+        cfzo czrh cif 0z nnz fzofig sylancr cn0 nnnn0 znf1o wne nnne0 ifnefalse
+        cres f1oeq2 3syl mpbid f1oeng ensymd znfi hashen mpbird hashfzo0 eqtrd
+        ) BFGZAHIZJBUBUAZHIZBVFVGVIKZAVHLMZVFVHAVFVHNGZVHACUCIBJKOVHUDZUOZPZVHA
+        LMVFJOGBOGVLUEBUFJBUGUHZVFVMAVNPZVOVFBUIGZVQBUJZAVNBVMCDEVNQVMQUKRVFBJU
+        LVMVHKVQVOSBUMBJOVHUNVMVHAVNUPUQURVHANVNUSTUTVFANGVLVJVKSABCDEVAVPAVHVB
+        TVCVFVRVIBKVSBVDRVE $.
+    $}
+  $}
+
+  ${
+    $d m n x A $.  $d n x E $.  $d n x L $.  $d m n x N $.  $d n x U $.
+    $d n x Y $.
+    znchr.y $e |- Y = ( Z/nZ ` N ) $.
+    znunit.u $e |- U = ( Unit ` Y ) $.
+    ${
+      znunit.l $e |- L = ( ZRHom ` Y ) $.
+      $( The units of ` Z/nZ ` are the integers coprime to the base.
+         (Contributed by Mario Carneiro, 18-Apr-2016.) $)
+      znunit $p |- ( ( N e. NN0 /\ A e. ZZ ) ->
+        ( ( L ` A ) e. U <-> ( A gcd N ) = 1 ) ) $=
+        ( vx vn wcel cz cfv wbr co wceq wrex c1 syl cdvds vm cn0 wa cur cdsr cv
+        cmulr cbs cgcd ccrg zncrng adantr eqid crngunit eqidd crg csrg crngring
+        wb ringsrg 3syl wfo znzrhfo fof ffvelcdm sylancom dvdsr2d cmul cmin crn
+        forn rexeqdv wfn ffn oveq1 eqeq1d rexrn bitr3d czring crh zrhrhm simplr
+        wf zringbas zringmulr rhmmul syl3anc zrh1 eqeq12d simpll zmulcld zndvds
+        simpr 1zzd rexbidva nn0z ad2antrr gcddvds syl2anc simpld gcdcld adantrr
+        wi nn0zd dvdsmultr2 mpd peano2zm simprd dvdstrd dvdssub2 syl31anc mpbid
+        simprr dvds1 rexlimdvaa caddc bezout eqeq1 2rexbidv syl5ibcom ad3antrrr
+        cneg dvdsmul1 zmulcl dvdsnegb zcnd cc zcn mulcomd oveq1d mulcld subnegd
+        ad2antlr eqtr4d oveq2d negcld nncand eqtrd breqtrrd 3bitrd oveq2 breq2d
+        syl5ibrcom rexlimdva reximdva syld impbid ) DUBKZALKZUCZACMZBKZUUKEUDMZ
+        EUEMZNZIUFZUUKEUGMZOZUUMPZIEUHMZQZADUIOZRPZUUJEUJKZUULUUOUSUUHUVDUUIDEF
+        UKULZUUNEBUUMUUKGUUMUMZUUNUMUNSUUJIUUTUUNEUUQUUKUUMUUJUUTUOUUJUUNUOUUJU
+        VDEUPKZEUQKUVEEURZEUTVAUUJUUQUOUUHUUILUUTCWCZUUKUUTKUUJLUUTCVBZUVIUUHUV
+        JUUIUUTCDEFUUTUMHVCULZLUUTCVDSZLUUTACVEVFVGUUJUVAJUFZCMZUUKUUQOZUUMPZJL
+        QZDUVMAVHOZRVIOZTNZJLQZUVCUUJUUSICVJZQZUVAUVQUUJUUSIUWBUUTUUJUVJUWBUUTP
+        UVKLUUTCVKSVLUUJUVICLVMUWCUVQUSUVLLUUTCVNUUSUVPIJLCUUPUVNPUURUVOUUMUUPU
+        VNUUKUUQVOVPVQVAVRUUJUVPUVTJLUUJUVMLKZUCZUVRCMZRCMZPZUVPUVTUWEUWFUVOUWG
+        UUMUWECVSEVTOKZUWDUUIUWFUVOPUUJUWIUWDUUJUVDUVGUWIUVEUVHECHWAVAULUUJUWDW
+        MZUUHUUIUWDWBZUVMAVSEVHUUQCLWDWEUUQUMWFWGUWEUVGUWGUUMPUUJUVGUWDUUJUVDUV
+        GUVEUVHSULEUUMCHUVFWHSWIUWEUUHUVRLKZRLKZUWHUVTUSUUHUUIUWDWJUWEUVMAUWJUW
+        KWKZUWEWNUVRRCDEFHWLWGVRWOUUJUWAUVCUUJUVTUVCJLUUJUWDUVTUCZUCZUVBRTNZUVC
+        UWPUVBUVRTNZUWQUWPUVBATNZUWRUWPUWSUVBDTNZUWPUUIDLKZUWSUWTUCUUHUUIUWOWBZ
+        UUHUXAUUIUWODWPZWQZADWRWSZWTUWPUVBLKZUWDUUIUWSUWRXCUWPUVBUWPADUXBUXDXAZ
+        XDZUUJUWDUWDUVTUWJXBUXBUVBUVMAXEWGXFUWPUXFUWLUWMUVBUVSTNUWRUWQUSUXHUUJU
+        WDUWLUVTUWNXBZUWPWNUWPUVBDUVSUXHUXDUWPUWLUVSLKUXIUVRXGSUWPUWSUWTUXEXHUU
+        JUWDUVTXMXIUVBUVRRXJXKXLUWPUVBUBKUWQUVCUSUXGUVBXNSXLXOUUJUVCRAUVMVHOZDU
+        AUFZVHOZXPOZPZUALQZJLQZUWAUUJUVBUXMPZUALQJLQZUVCUXPUUJUUIUXAUXRUUHUUIWM
+        UUHUXAUUIUXCULJUAADXQWSUVCUXQUXNJUALLUVBRUXMXRXSXTUUJUXOUVTJLUWEUXNUVTU
+        ALUWEUXKLKZUCZUVTUXNDUVRUXMVIOZTNUXTDUXLYBZUYATUXTDUXLTNZDUYBTNZUWEUXSU
+        XAUYCUUHUXAUUIUWDUXSUXCYAZDUXKYCVFUXTUXAUXLLKZUYCUYDUSUYEUWEUXSUXAUYFUY
+        EDUXKYDVFZDUXLYEWSXLUXTUYAUVRUVRUYBVIOZVIOUYBUXTUXMUYHUVRVIUXTUXMUVRUXL
+        XPOUYHUXTUXJUVRUXLXPUXTAUVMUXTAUWEUUIUXSUWKULYFZUWDUVMYGKUUJUXSUVMYHYMZ
+        YIYJUXTUVRUXLUXTUVMAUYJUYIYKZUXTUXLUYGYFZYLYNYOUXTUVRUYBUYKUXTUXLUYLYPY
+        QYRYSUXNUVSUYADTRUXMUVRVIUUAUUBUUCUUDUUEUUFUUGYTYT $.
+    $}
   $}
 
 
