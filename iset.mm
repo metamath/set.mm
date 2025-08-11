@@ -50670,6 +50670,19 @@ $)
   $}
 
   ${
+    $d A x $.  $d C x $.  $d D x $.  $d ph x $.
+    fvmptd2.1 $e |- F = ( x e. D |-> B ) $.
+    fvmptd2.2 $e |- ( ( ph /\ x = A ) -> B = C ) $.
+    fvmptd2.3 $e |- ( ph -> A e. D ) $.
+    fvmptd2.4 $e |- ( ph -> C e. V ) $.
+    $( Deduction version of ~ fvmpt (where the definition of the mapping does
+       not depend on the common antecedent ` ph ` ).  (Contributed by Glauco
+       Siliprandi, 23-Oct-2021.) $)
+    fvmptd2 $p |- ( ph -> ( F ` A ) = C ) $=
+      ( cmpt wceq a1i fvmptd ) ABCDEFGHGBFDMNAIOJKLP $.
+  $}
+
+  ${
     $d x A $.
     fvmpt2.1 $e |- F = ( x e. A |-> B ) $.
     $( Reverse closure for a mapping:  If the function value of a mapping has a
