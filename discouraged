@@ -20215,8 +20215,6 @@ Proof modification of "bj-consensusALT" is discouraged (30 steps).
 Proof modification of "bj-csbprc" is discouraged (47 steps).
 Proof modification of "bj-currypara" is discouraged (16 steps).
 Proof modification of "bj-currypeirce" is discouraged (16 steps).
-Proof modification of "bj-denotes" is discouraged (26 steps).
-Proof modification of "bj-denoteslem" is discouraged (33 steps).
 Proof modification of "bj-df-ifc" is discouraged (60 steps).
 Proof modification of "bj-dfid2ALT" is discouraged (157 steps).
 Proof modification of "bj-dfif" is discouraged (39 steps).
@@ -20382,6 +20380,10 @@ Proof modification of "catcoppcclOLD" is discouraged (402 steps).
 Proof modification of "catcxpcclOLD" is discouraged (864 steps).
 Proof modification of "cayleyhamiltonALT" is discouraged (657 steps).
 Proof modification of "cbveuALT" is discouraged (48 steps).
+Proof modification of "cbvexeqsetv" is discouraged (27 steps).
+Proof modification of "cbvexeqsetv-ab" is discouraged (26 steps).
+Proof modification of "cbvexeqsetvablem" is discouraged (33 steps).
+Proof modification of "cbvexeqsetvlem" is discouraged (15 steps).
 Proof modification of "cbvexsv" is discouraged (29 steps).
 Proof modification of "cbviotavwOLD" is discouraged (12 steps).
 Proof modification of "cbvmptvOLD" is discouraged (13 steps).
