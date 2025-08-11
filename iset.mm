@@ -180146,6 +180146,28 @@ $)
         UAZUDFJUEUFAUSUTUSVCJEDVCUTVCTUBAMFAUCAFVDUGUHABCDFGHIUIAVBUSSUJVCUKUTU
         SSZUTULSAVEUTUTMFUMUNUOUPUQ $.
     $}
+
+    $d H x y $.  $d P x $.  $d R y $.  $d ph x y $.  $d H k l $.  $d R k l $.
+    $d ph k l $.  $d M x $.  $d ph k $.  $d k x $.
+    gausslemma2d.m $e |- M = ( |_ ` ( P / 4 ) ) $.
+    $( Lemma 2 for ~ gausslemma2d .  (Contributed by AV, 4-Jul-2021.) $)
+    gausslemma2dlem2 $p |- ( ph
+        -> A. k e. ( 1 ... M ) ( R ` k ) = ( k x. 2 ) ) $=
+      ( c2 cmul co c1 wcel wa clt wbr cr cv cfv wceq cfz cdiv cmin cif cz oveq1
+      breq1d oveq2d ifbieq12d adantl cn cle w3a elfz1b cc0 nnre adantr 2re 2pos
+      wi pm3.2i a1i lemul1 syl3anc gausslemma2dlem0e remulcld gausslemma2dlem0a
+      wb nnred rehalfcld lelttr syl2an3an mpan2d ex com23 sylbid 3impia iftrued
+      sylbi impcom eqtrd cuz wss gausslemma2dlem0d nn0zd gausslemma2dlem0b nnzd
+      gausslemma2dlem0g eluz2 syl3anbrc fzss2 sselda elfzelzd zmulcld ralrimiva
+      syl 2z fvmptd2 ) AEUAZDUBXBLMNZUCEOGUDNZAXBXDPZQZBXBBUAZLMNZCLUENZRSZXHCX
+      HUFNZUGZXCOFUDNZDUHJXFXGXBUCZQZXLXCXIRSZXCCXCUFNZUGZXCXNXLXRUCXFXNXJXPXHX
+      KXCXQXNXHXCXIRXGXBLMUIZUJXSXNXHXCCUFXSUKULUMXOXPXCXQXFXPXNXEAXPXEXBUNPZGU
+      NPZXBGUOSZUPAXPVCZGXBUQXTYAYBYCXTYAQZYBXCGLMNZUOSZYCYDXBTPZGTPZLTPZURLRSZ
+      QZYBYFVKXTYGYAXBUSZUTYAYHXTGUSZUMYKYDYIYJVAVBVDVEXBGLVFVGYDAYFXPYDAYFXPVC
+      YDAQYFYEXIRSZXPAYNYDACGHKVHUMYDXCTPZYETPZAXITPYFYNQXPVCXTYOYAXTXBLYLYIXTV
+      AVEVIUTYAYPXTYAGLYMYIYAVAVEVIUMACACACHVJVLVMXCYEXIVNVOVPVQVRVSVTWBWCUTWAW
+      DAXDXMXBAFGWEUBPZXDXMWFAGUHPFUHPGFUOSYQAGACGHKWGWHAFACFHIWIWJACFGHKIWKGFW
+      LWMGOFWNWSWOZXFXBLXFXBOFYRWPLUHPXFWTVEWQXAWR $.
   $}
 
 
