@@ -180319,6 +180319,21 @@ $)
       UIAUYSUYQEUOVUEEUUEWLXAXAAUVBUVQAUVBAEVUEUUFUUGZARXJTZUYSUVQXFTUUHVUEVUGU
       YSVHUVQREUUIUUMXDZUUJYTUUKUUNXAAUVFUVPUXLAUVFUWSXGAUVPAUVOGUVOUUOTAUUPVSU
       XTUUQUURZAUXLUYAXGUUSAUVPUVQUVBVUIVUHVUFUUTUVAUJYTYT $.
+
+    $( Lemma 7 for ~ gausslemma2d .  (Contributed by AV, 13-Jul-2021.) $)
+    gausslemma2dlem7 $p |- ( ph
+                            -> ( ( ( -u 1 ^ N ) x. ( 2 ^ H ) ) mod P ) = 1 ) $=
+      ( cmo co c1 c2 cmul wceq cz wcel cneg cexp gausslemma2dlem6 nnnn0d faccld
+      cfa cfv gausslemma2dlem0b nncnd mullidd eqcomd oveq1d eqeq1d cn cgcd 1zzd
+      cn0 neg1z gausslemma2dlem0h zexpcl sylancr zmulcld nnzd gausslemma2dlem0a
+      wb 2z gausslemma2dlem0c cncongrcoprm syl32anc bitrd simpr clt wbr nnq syl
+      wa cq cprime csn eldifad prmgt1 q1mod syl2anc adantr eqtr3d ex sylbid mpd
+      ) AEUFUGZCMNZOUAZGUBNZPEUBNZQNZWIQNCMNZRZWNCMNZORZABCDEFGHIJKLUCAWPOCMNZW
+      QRZWRAWPOWIQNZCMNZWORZWTAWJXBWOAWIXACMAXAWIAWIAWIAEAEACEHIUHUDZUEZUIUJUKU
+      LUMAOSTWNSTWISTCUNTZWICUONORXCWTVEAUPAWLWMAWKSTGUQTWLSTURACEFGHKILUSWKGUT
+      VAAPSTEUQTWMSTVFXDPEUTVAVBAWIXEVCACHVDZACEHIVGOWNWICVHVIVJAWTWRAWTVPWSWQO
+      AWTVKAWSORZWTACVQTZOCVLVMZXHAXFXIXGCVNVOACVRTXJACVRPVSHVTCWAVOCWBWCWDWEWF
+      WGWH $.
   $}
 
 
