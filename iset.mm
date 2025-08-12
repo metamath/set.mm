@@ -159091,6 +159091,47 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Left regular elements and domains
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c RLReg $. $( Left regular elements $)
+  $c Domn $. $( Class of domains $)
+  $c IDomn $. $( Class of integral domains $)
+
+  $( Set of left-regular elements in a ring. $)
+  crlreg $a class RLReg $.
+
+  $( Class of (ring theoretic) domains. $)
+  cdomn $a class Domn $.
+
+  $( Class of integral domains. $)
+  cidom $a class IDomn $.
+
+  ${
+    $d b r x y z $.
+    $( Define the set of _left-regular elements_ in a ring as those elements
+       which are not left zero divisors, meaning that multiplying a nonzero
+       element on the left by a left-regular element gives a nonzero product.
+       (Contributed by Stefan O'Rear, 22-Mar-2015.) $)
+    df-rlreg $a |- RLReg = ( r e. _V |-> { x e. ( Base ` r ) |
+            A. y e. ( Base ` r ) ( ( x ( .r ` r ) y ) = ( 0g ` r ) ->
+                y = ( 0g ` r ) ) } ) $.
+
+    $( A _domain_ is a nonzero ring in which there are no nontrivial zero
+       divisors.  (Contributed by Mario Carneiro, 28-Mar-2015.) $)
+    df-domn $a |- Domn = { r e. NzRing | [. ( Base ` r ) / b ].
+    [. ( 0g ` r ) / z ]. A. x e. b A. y e. b ( ( x ( .r ` r ) y ) = z ->
+                    ( x = z \/ y = z ) ) } $.
+  $}
+
+  $( An _integral domain_ is a commutative domain.  (Contributed by Mario
+     Carneiro, 17-Jun-2015.) $)
+  df-idom $a |- IDomn = ( CRing i^i Domn ) $.
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Division rings and fields
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -182514,6 +182555,15 @@ htmldef "STAB" as "<SMALL>STAB</SMALL> ";
 htmldef "DECID" as "<SMALL>DECID</SMALL> ";
   althtmldef "DECID" as "<SMALL>DECID</SMALL> ";
   latexdef "DECID" as "\mathrm{DECID}";
+htmldef "RLReg" as "RLReg";
+  althtmldef "RLReg" as "RLReg";
+  latexdef "RLReg" as "\mathrm{RLReg}";
+htmldef "Domn" as "Domn";
+  althtmldef "Domn" as "Domn";
+  latexdef "Domn" as "\mathrm{Domn}";
+htmldef "IDomn" as "IDomn";
+  althtmldef "IDomn" as "IDomn";
+  latexdef "IDomn" as "\mathrm{IDomn}";
 
 htmldef "PsMet" as "PsMet";
   althtmldef "PsMet" as "PsMet";
