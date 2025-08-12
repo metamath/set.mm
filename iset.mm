@@ -180334,6 +180334,31 @@ $)
       VAAPSTEUQTWMSTVFXDPEUTVAVBAWIXEVCACHVDZACEHIVGOWNWICVHVIVJAWTWRAWTVPWSWQO
       AWTVKAWSORZWTACVQTZOCVLVMZXHAXFXIXGCVNVOACVRTXJACVRPVSHVTCWAVOCWBWCWDWEWF
       WGWH $.
+
+    $( Gauss' Lemma (see also theorem 9.6 in [ApostolNT] p. 182) for integer
+       ` 2 ` :  Let p be an odd prime.  Let S = {2, 4, 6, ..., p - 1}.  Let n
+       denote the number of elements of S whose least positive residue modulo p
+       is greater than p/2.  Then ( 2 | p ) = (-1)^n.  (Contributed by AV,
+       14-Jul-2021.) $)
+    gausslemma2d $p |- ( ph -> ( 2 /L P ) = ( -u 1 ^ N ) ) $=
+      ( c1 cexp co c2 cmul cmo wceq wcel gausslemma2dlem7 clt gausslemma2dlem0a
+      cneg clgs cq wbr nnq syl cprime csn cdif eldifi prmgt1 3syl q1mod syl2anc
+      cn eqcomd eqeq2d wa cz cn0 neg1z gausslemma2dlem0h zexpcl sylancr 2nn a1i
+      gausslemma2dlem0b nnnn0d nnexpcld nnzd zmulcld zq adantr cc0 nngt0d simpr
+      1z mp1i modqmul1 ex zcnd nncnd mul32d caddc nn0cnd 2timesd oveq2d expaddd
+      cc neg1cn nn0zd m1expeven 3eqtr3d oveq1d mullidd 3eqtrd eqeq12d cmin cdiv
+      oveq2i oveq1i eqeq1i lgsvalmod eqeq1d gausslemma2dlem0i biimtrid syld mpd
+      2z sylbid ) AMUDZGNOZPENOZQOZCROZMSZPCUEOZXOSZABCDEFGHIJKLUAAXSXRMCROZSZY
+      AAMYBXRAYBMACUFTZMCUBUGZYBMSACURTYDACHUCZCUHUIZACUJPUKZULTZCUJTYEHCUJYHUM
+      CUNUOCUPUQUSUTAYCXQXOQOZCROZMXOQOZCROZSZYAAYCYNAYCVAZXQMXOCAXQUFTZYCAXQVB
+      TYPAXOXPAXNVBTGVCTXOVBTZVDACEFGHKILVEZXNGVFVGZAXPAPEPURTAVHVIAEACEHIVJVKV
+      LZVMVNXQVOUIVPMVBTMUFTYOVTMVOWAAYQYCYSVPAYDYCYGVPAVQCUBUGYCACYFVRVPAYCVSW
+      BWCAYNXPCROZXOCROZSZYAAYKUUAYMUUBAYJXPCRAYJXOXOQOZXPQOMXPQOXPAXOXPXOAXOYS
+      WDZAXPYTWEZUUEWFAUUDMXPQAXNGGWGOZNOXNPGQOZNOZUUDMAUUGUUHXNNAUUHUUGAGAGYRW
+      HWIUSWJAXNGGXNWLTAWMVIYRYRWKAGVBTUUIMSAGYRWNGWOUIWPWQAXPUUFWRWSWQAYLXOCRA
+      XOUUEWRWQWTUUCPCMXAOPXBOZNOZCROZUUBSZAYAUUAUULUUBXPUUKCREUUJPNIXCXDXEAUUM
+      XTCROZUUBSYAAUULUUNUUBAUUNUULAPVBTYIUUNUULSXLHPCXFVGUSXGACEFGHKILXHXMXIXM
+      XJXMXK $.
   $}
 
 
