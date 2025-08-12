@@ -180257,6 +180257,26 @@ $)
       CWSXCSTXKVSVNXOVOVPAXHCUOTXICWCZQAXHXKWTCNLZXDCNLZPXIXLXSWSUGZCNLZXRXLXDX
       TCNXKXDXTPXHXKWSXKWSXOVTWAVPULXLWSUPTZCUPTZWBCWDWEZYAXRPXLXNYBXPWSWFQXLXG
       YCXMCWFQXHYDXKXHCXQWGVIWSCWHWIWJVRWKWL $.
+
+    gausslemma2d.n $e |- N = ( H - M ) $.
+    $( Lemma 5 for ~ gausslemma2d .  (Contributed by AV, 9-Jul-2021.) $)
+    gausslemma2dlem5 $p |- ( ph
+            -> ( prod_ k e. ( ( M + 1 ) ... H ) ( R ` k ) mod P )
+               = ( ( ( -u 1 ^ N )
+                   x. prod_ k e. ( ( M + 1 ) ... H ) ( k x. 2 ) ) mod P ) ) $=
+      ( c1 co cfv c2 cmul cz wcel caddc cfz cv cprod cmo cneg gausslemma2dlem5a
+      cexp c4 cdiv cfl cn cq gausslemma2dlem0a nnzd 4nn sylancl flqcld eqeltrid
+      znq peano2zd gausslemma2dlem0b fzfigd cc wa neg1cn a1i elfzelz 2z zmulcld
+      zcnd adantl fprodmul cfn wceq fprodconst cmin cuz cle wbr cprime csn cdif
+      chash cdvds wn nnoddn2prm wb nnz oddm1d2 syl 3syl gausslemma2dlem0f eluz2
+      biimpa syl3anbrc hashfz 1cnd nppcan2d eqtr4di eqtrd oveq2d oveq1d ) AGNUA
+      OZFUBOZEUCZDPEUDCUEOXENUFZXFQROZROEUDZCUEOXGHUHOZXEXHEUDZROZCUEOABCDEFGIJ
+      KLUGAXIXLCUEAXIXEXGEUDZXKROXLAXEXGXHEAXDFAGAGCUIUJOZUKPSLAXNACSTZUIULTXNU
+      MTACACIUNUOUPCUIUTUQURUSZVAZAFACFIJVBUOVCZXGVDTZAXFXETZVEVFVGXTXHVDTAXTXH
+      XTXFQXFXDFVHQSTXTVIVGVJVKVLVMAXMXJXKRAXMXGXEWDPZUHOZXJAXEVNTXSXMYBVOXRVFX
+      EXGEVPUQAYAHXGUHAYAFXDVQONUAOZHAFXDVRPTZYAYCVOAXDSTFSTXDFVSVTYDXQAFCNVQOQ
+      UJOZSJACWAQWBWCTCULTZQCWEVTWFZVEYESTZICWGYFYGYHYFXOYGYHWHCWICWJWKWOWLUSZA
+      CFGILJWMXDFWNWPXDFWQWKAYCFGVQOHAFGNAFYIVKAGXPVKAWRWSMWTXAXBXAXCXAXCXA $.
   $}
 
 
