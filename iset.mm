@@ -159130,6 +159130,18 @@ $)
      Carneiro, 17-Jun-2015.) $)
   df-idom $a |- IDomn = ( CRing i^i Domn ) $.
 
+  ${
+    $d r x y $.
+    rrgmex.e $e |- E = ( RLReg ` R ) $.
+    $( A structure whose set of left-regular elements is inhabited is a set.
+       (Contributed by Jim Kingdon, 12-Aug-2025.) $)
+    rrgmex $p |- ( A e. E -> R e. _V ) $=
+      ( vr vx vy wcel crlreg cdm wrel cfv cvv cv cmulr co c0g wceq wi cbs mpbir
+      wral crab mptrel df-rlreg releqi eleq2i biimpi relelfvdm sylancr elexd
+      cmpt ) ACHZBIJZUMIKZABILZHZBUNHUOEMFNGNZENZOLPUSQLZRURUTRSGUSTLZUBFVAUCZU
+      LZKEMVBUDIVCFGEUEUFUAUMUQCUPADUGUHABIUIUJUK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
