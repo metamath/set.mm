@@ -159142,6 +159142,26 @@ $)
       LZKEMVBUDIVCFGEUEUFUAUMUQCUPADUGUHABIUIUJUK $.
   $}
 
+  ${
+    $d B r x y z $.  $d R r x y $.  $d .x. r z $.  $d .0. r z $.  $d E z $.
+    rrgval.e $e |- E = ( RLReg ` R ) $.
+    rrgval.b $e |- B = ( Base ` R ) $.
+    rrgval.t $e |- .x. = ( .r ` R ) $.
+    rrgval.z $e |- .0. = ( 0g ` R ) $.
+    $( Value of the set or left-regular elements in a ring.  (Contributed by
+       Stefan O'Rear, 22-Mar-2015.) $)
+    rrgval $p |- E = { x e. B | A. y e. B ( ( x .x. y ) = .0. -> y = .0. ) } $=
+      ( vr cv wceq wcel cvv cfv cmulr c0g cbs vz wral crab rrgmex elrabi basmex
+      co wi syl crlreg df-rlreg fveq2 eqtr4di oveqd eqeq12d raleqbidv rabeqbidv
+      eqeq2d imbi12d id wfn basfn funfvex funfni eqeltrid rabexg fvmptd3 eqtrid
+      mpan eleq2d pm5.21nii eqriv ) UAFAMZBMZEUGZGNZVNGNZUHZBCUBZACUCZUAMZFODPO
+      ZWAVTOZWADFHUDWCWACOWBVSAWACUEWACDIUFUIWBFVTWAWBFDUJQVTHWBLDVMVNLMZRQZUGZ
+      WDSQZNZVNWGNZUHZBWDTQZUBZAWKUCVTPUJPABLUKWDDNZWLVSAWKCWMWKDTQZCWDDTULIUMZ
+      WMWJVRBWKCWOWMWHVPWIVQWMWFVOWGGWMWEEVMVNWMWEDRQEWDDRULJUMUNWMWGDSQGWDDSUL
+      KUMZUOWMWGGVNWPURUSUPUQWBUTWBCPOVTPOWBCWNPITPVAWBWNPOZVBWQPDTDTVCVDVIVEVS
+      ACPVFUIVGVHVJVKVL $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
