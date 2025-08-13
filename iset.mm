@@ -159178,6 +159178,16 @@ $)
       ( vy wcel cv co wceq wi wral isrrg simprbi oveq2 eqeq1d eqeq1 rspcv mpan9
       imbi12d ) EDMZELNZCOZGPZUHGPZQZLARZFAMEFCOZGPZFGPZQZUGEAMUMLABCDEGHIJKSTU
       LUQLFAUHFPZUJUOUKUPURUIUNGUHFECUAUBUHFGUCUFUDUE $.
+
+    $( Left-multiplication by a left regular element does not change zeroness.
+       (Contributed by Stefan O'Rear, 28-Mar-2015.) $)
+    rrgeq0 $p |- ( ( R e. Ring /\ X e. E /\ Y e. B ) ->
+        ( ( X .x. Y ) = .0. <-> Y = .0. ) ) $=
+      ( vx vy crg wcel w3a co wceq wi cv rrgeq0i simp1 wral rrgval ssrab3 simp2
+      3adant1 sselid ringrz syl2anc oveq2 eqeq1d syl5ibrcom impbid ) BNOZEDOZFA
+      OZPZEFCQZGRZFGRZUPUQUTVASUOABCDEFGHIJKUAUGURUTVAEGCQZGRZURUOEAOVCUOUPUQUB
+      URDAELTMTZCQGRVDGRSMAUCLADLMABCDGHIJKUDUEUOUPUQUFUHABCEGIJKUIUJVAUSVBGFGE
+      CUKULUMUN $.
   $}
 
 
