@@ -158141,6 +158141,21 @@ $)
   $}
 
   ${
+    opprnzr.1 $e |- O = ( oppR ` R ) $.
+    $( The opposite of a nonzero ring is nonzero, bidirectional form of
+       ~ opprnzr .  (Contributed by SN, 20-Jun-2025.) $)
+    opprnzrbg $p |- ( R e. V -> ( R e. NzRing <-> O e. NzRing ) ) $=
+      ( wcel crg cur cfv c0g wne wa cnzr opprringbg eqid oppr1g neeq12d anbi12d
+      oppr0g isnzr 3bitr4g ) ACEZAFEZAGHZAIHZJZKBFEZBGHZBIHZJZKALEBLEUAUBUFUEUI
+      ABCDMUAUCUGUDUHAUCBCDUCNZOABCUDDUDNZRPQAUCUDUJUKSBUGUHUGNUHNST $.
+
+    $( The opposite of a nonzero ring is nonzero.  (Contributed by Mario
+       Carneiro, 17-Jun-2015.) $)
+    opprnzr $p |- ( R e. NzRing -> O e. NzRing ) $=
+      ( cnzr wcel opprnzrbg ibi ) ADEBDEABDCFG $.
+  $}
+
+  ${
     ringelnzr.z $e |- .0. = ( 0g ` R ) $.
     ringelnzr.b $e |- B = ( Base ` R ) $.
     $( A ring is nonzero if it has a nonzero element.  (Contributed by Stefan
