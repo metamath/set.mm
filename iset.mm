@@ -156007,6 +156007,18 @@ $)
       SUCTUDUSUTUTVLVLUEVIVDOVAUTVLVLUSUTUAUSVLUTUSVKVLVMVNUMTZVPUFAVCBCDEEFVOG
       UGUHVAVKVBAJZVBVEOUSVKUTVMTZUSUTVLVQVPABCDEFGUIUJZVKVQKVEVBAVCBVBEFVOHSUK
       ULUNVAVKVQVLVQVFVGUOVRVSVPVSAVCBVBEVBFVOUPUQUR $.
+
+    ringlzd.r $e |- ( ph -> R e. Ring ) $.
+    ringlzd.x $e |- ( ph -> X e. B ) $.
+    $( The zero of a unital ring is a left-absorbing element.  (Contributed by
+       SN, 7-Mar-2025.) $)
+    ringlzd $p |- ( ph -> ( .0. .x. X ) = .0. ) $=
+      ( crg wcel co wceq ringlz syl2anc ) ACLMEBMFEDNFOJKBCDEFGHIPQ $.
+
+    $( The zero of a unital ring is a right-absorbing element.  (Contributed by
+       SN, 7-Mar-2025.) $)
+    ringrzd $p |- ( ph -> ( X .x. .0. ) = .0. ) $=
+      ( crg wcel co wceq ringrz syl2anc ) ACLMEBMEFDNFOJKBCDEFGHIPQ $.
   $}
 
   ${
