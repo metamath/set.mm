@@ -159169,6 +159169,15 @@ $)
       ( vx cv co wceq wi wral oveq1 eqeq1d imbi1d ralbidv rrgval elrab2 ) LMZAM
       ZDNZGOZUEGOZPZABQFUEDNZGOZUHPZABQLFBEUDFOZUIULABUMUGUKUHUMUFUJGUDFUEDRSTU
       ALABCDEGHIJKUBUC $.
+
+    $d .x. y $.  $d Y y $.  $d .0. y $.
+    $( Property of a left-regular element.  (Contributed by Stefan O'Rear,
+       22-Mar-2015.) $)
+    rrgeq0i $p |- ( ( X e. E /\ Y e. B ) ->
+      ( ( X .x. Y ) = .0. -> Y = .0. ) ) $=
+      ( vy wcel cv co wceq wi wral isrrg simprbi oveq2 eqeq1d eqeq1 rspcv mpan9
+      imbi12d ) EDMZELNZCOZGPZUHGPZQZLARZFAMEFCOZGPZFGPZQZUGEAMUMLABCDEGHIJKSTU
+      LUQLFAUHFPZUJUOUKUPURUIUNGUHFECUAUBUHFGUCUFUDUE $.
   $}
 
 
