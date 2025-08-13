@@ -159245,6 +159245,26 @@ $)
       DEUFUGUHUI $.
   $}
 
+  ${
+    $d B b r x y z $.  $d R b r x y z $.  $d .x. b r z $.  $d .0. b r x y z $.
+    isdomn.b $e |- B = ( Base ` R ) $.
+    isdomn.t $e |- .x. = ( .r ` R ) $.
+    isdomn.z $e |- .0. = ( 0g ` R ) $.
+    $( Expand definition of a domain.  (Contributed by Mario Carneiro,
+       28-Mar-2015.) $)
+    isdomn $p |- ( R e. Domn <-> ( R e. NzRing /\
+     A. x e. B A. y e. B ( ( x .x. y ) = .0. -> ( x = .0. \/ y = .0. ) ) ) ) $=
+      ( vr vz vb cv cmulr cfv wceq wral c0g cbs cvv co wo wi wsbc cnzr wcel wfn
+      cdomn basfn vex funfvex funfni mp2an a1i fveq2 eqtr4di fn0g adantr simplr
+      wa oveqdr id eqeqan12d wb eqeq2 orbi12d imbi12d raleqbidv sbcied2 df-domn
+      adantl elrab2 ) AMZBMZJMZNOZUAZKMZPZVMVRPZVNVRPZUBZUCZBLMZQZAWDQZKVOROZUD
+      ZLVOSOZUDVMVNEUAZFPZVMFPZVNFPZUBZUCZBCQZACQZJDUEUHVODPZWHWQLWICTWITUFZWRS
+      TUGVOTUFZWSUIJUJZWSTVOSVOSUKULUMUNWRWIDSOCVODSUOGUPWRWDCPZUTZWFWQKWGFTWGT
+      UFZXCRTUGWTXDUQXAXDTVORVORUKULUMUNXCWGDROZFWRWGXEPXBVODRUOURIUPXCVRFPZUTZ
+      WEWPAWDCWRXBXFUSZXGWCWOBWDCXHXGVSWKWBWNXCXFVQWJVRFWRXBABVPEWRVPDNOEVODNUO
+      HUPVAXFVBVCXFWBWNVDXCXFVTWLWAWMVRFVMVEVRFVNVEVFVKVGVHVHVIVIABKJLVJVL $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
