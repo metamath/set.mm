@@ -158120,6 +158120,27 @@ $)
   $}
 
   ${
+    $d B x y $.  $d R x y $.
+    isnzr2.b $e |- B = ( Base ` R ) $.
+    $( Equivalent characterization of nonzero rings: they have at least two
+       elements.  (Contributed by Stefan O'Rear, 24-Feb-2015.) $)
+    isnzr2 $p |- ( R e. NzRing <-> ( R e. Ring /\ 2o ~<_ B ) ) $=
+      ( vx vy wcel crg cfv wne wa c2o cdom wbr eqid cv wceq wrex adantr cvv cbs
+      cur c0g isnzr wn ringidcl ring0cl simpr df-ne neeq1 bitr3id neeq2 rspc2ev
+      cnzr syl3anc ex wi ring1eq0 3expb necon3bd rexlimdvva impbid simpl simprl
+      cpr cen simprr enpr2d adantl ensymd wss basfn elex funfvex funfni sylancr
+      wfn eqeltrid syl prssd impel endomtr syl2anc anassrs rexlimdvaa rexlimdva
+      ssdomg 2dom impbid1 bitrd pm5.32i bitri ) BUMFBGFZBUAHZBUBHZIZJZWLKALMZJB
+      WMWNWMNZWNNZUCWLWOWQWLWODOZEOZPZUDZEAQZDAQZWQWLWOXEWLWOXEWPWMAFZWNAFZWOXE
+      WLXFWOABWMCWRUERWLXGWOABWNCWSUFRWLWOUGXCWOWMXAIZDEWMWNAAXCWTXAIWTWMPXHWTX
+      AUHWTWMXAUIUJXAWNWMUKULUNUOWLXCWODEAAWLWTAFZXAAFZJJXBWMWNWLXIXJWMWNPXBUPA
+      BWMWTXAWNCWRWSUQURUSUTVAWLXEWQWLXDWQDAWLXIJXCWQEAWLXIXJXCJZWQWLXIXKJZJZKW
+      TXAVDZVEMXNALMZWQXMXNKXLXNKVEMWLXLWTXAAAXIXKVBZXIXJXCVCZXIXJXCVFVGVHVIWLX
+      NAVJZXOXLWLASFXRXOUPWLABTHZSCWLTSVPBSFXSSFZVKBGVLXTSBTBTVMVNVOVQXNASWFVRX
+      LWTXAAXPXQVSVTKXNAWAWBWCWDWEDEAWGWHWIWJWK $.
+  $}
+
+  ${
     ringelnzr.z $e |- .0. = ( 0g ` R ) $.
     ringelnzr.b $e |- B = ( Base ` R ) $.
     $( A ring is nonzero if it has a nonzero element.  (Contributed by Stefan
