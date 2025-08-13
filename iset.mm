@@ -159278,6 +159278,23 @@ $)
     $( A domain is a ring.  (Contributed by Mario Carneiro, 28-Mar-2015.) $)
     domnring $p |- ( R e. Domn -> R e. Ring ) $=
       ( cdomn wcel cnzr crg domnnzr nzrring syl ) ABCADCAECAFAGH $.
+
+    domneq0.b $e |- B = ( Base ` R ) $.
+    domneq0.t $e |- .x. = ( .r ` R ) $.
+    domneq0.z $e |- .0. = ( 0g ` R ) $.
+    $( In a domain, a product is zero iff it has a zero factor.  (Contributed
+       by Mario Carneiro, 28-Mar-2015.) $)
+    domneq0 $p |- ( ( R e. Domn /\ X e. B /\ Y e. B ) ->
+        ( ( X .x. Y ) = .0. <-> ( X = .0. \/ Y = .0. ) ) ) $=
+      ( vx vy wcel co wceq wo cv wi wral eqeq1d syl2anc cdomn w3a 3simpc isdomn
+      cnzr simprbi 3ad2ant1 oveq1 eqeq1 orbi1d imbi12d oveq2 orbi2d rspc2va crg
+      wa domnring simp3 ringlz syl5ibrcom simp2 ringrz jaod impbid ) BUALZDALZE
+      ALZUBZDECMZFNZDFNZEFNZOZVHVFVGUPJPZKPZCMZFNZVNFNZVOFNZOZQZKARJARZVJVMQZVE
+      VFVGUCVEVFWBVGVEBUELWBJKABCFGHIUDUFUGWAWCDVOCMZFNZVKVSOZQJKDEAAVNDNZVQWEV
+      TWFWGVPWDFVNDVOCUHSWGVRVKVSVNDFUIUJUKVOENZWEVJWFVMWHWDVIFVOEDCULSWHVSVLVK
+      VOEFUIUMUKUNTVHVKVJVLVHVJVKFECMZFNZVHBUOLZVGWJVEVFWKVGBUQUGZVEVFVGURABCEF
+      GHIUSTVKVIWIFDFECUHSUTVHVJVLDFCMZFNZVHWKVFWNWLVEVFVGVAABCDFGHIVBTVLVIWMFE
+      FDCULSUTVCVD $.
   $}
 
 
