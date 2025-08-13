@@ -159274,6 +159274,10 @@ $)
       ( vx vy cdomn wcel cnzr cv cmulr cfv co c0g wceq wo cbs wral eqid simplbi
       wi isdomn ) ADEAFEBGZCGZAHIZJAKIZLTUCLUAUCLMRCANIZOBUDOBCUDAUBUCUDPUBPUCP
       SQ $.
+
+    $( A domain is a ring.  (Contributed by Mario Carneiro, 28-Mar-2015.) $)
+    domnring $p |- ( R e. Domn -> R e. Ring ) $=
+      ( cdomn wcel cnzr crg domnnzr nzrring syl ) ABCADCAECAFAGH $.
   $}
 
 
