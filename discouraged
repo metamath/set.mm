@@ -20157,6 +20157,7 @@ Proof modification of "bj-consensusALT" is discouraged (30 steps).
 Proof modification of "bj-csbprc" is discouraged (47 steps).
 Proof modification of "bj-currypara" is discouraged (16 steps).
 Proof modification of "bj-currypeirce" is discouraged (16 steps).
+Proof modification of "bj-denotesOLD" is discouraged (26 steps).
 Proof modification of "bj-df-ifc" is discouraged (60 steps).
 Proof modification of "bj-dfid2ALT" is discouraged (157 steps).
 Proof modification of "bj-dfif" is discouraged (39 steps).
@@ -20214,7 +20215,7 @@ Proof modification of "bj-imn3ani" is discouraged (18 steps).
 Proof modification of "bj-inrab2" is discouraged (48 steps).
 Proof modification of "bj-isseti" is discouraged (15 steps).
 Proof modification of "bj-issetiv" is discouraged (15 steps).
-Proof modification of "bj-issettru" is discouraged (26 steps).
+Proof modification of "bj-issettruOLD" is discouraged (26 steps).
 Proof modification of "bj-issetw" is discouraged (21 steps).
 Proof modification of "bj-issetwt" is discouraged (63 steps).
 Proof modification of "bj-jarrii" is discouraged (10 steps).
@@ -20322,10 +20323,6 @@ Proof modification of "catcoppcclOLD" is discouraged (402 steps).
 Proof modification of "catcxpcclOLD" is discouraged (864 steps).
 Proof modification of "cayleyhamiltonALT" is discouraged (657 steps).
 Proof modification of "cbveuALT" is discouraged (48 steps).
-Proof modification of "cbvexeqsetv" is discouraged (27 steps).
-Proof modification of "cbvexeqsetv-ab" is discouraged (26 steps).
-Proof modification of "cbvexeqsetvablem" is discouraged (33 steps).
-Proof modification of "cbvexeqsetvlem" is discouraged (15 steps).
 Proof modification of "cbvexsv" is discouraged (29 steps).
 Proof modification of "cbviotavwOLD" is discouraged (12 steps).
 Proof modification of "cbvmptvOLD" is discouraged (13 steps).
@@ -21115,6 +21112,9 @@ Proof modification of "iscsgrpALT" is discouraged (57 steps).
 Proof modification of "isdomn2OLD" is discouraged (222 steps).
 Proof modification of "isdrngdOLD" is discouraged (603 steps).
 Proof modification of "isdrngrdOLD" is discouraged (334 steps).
+Proof modification of "iseqsetv" is discouraged (27 steps).
+Proof modification of "iseqsetvALT" is discouraged (26 steps).
+Proof modification of "iseqsetvlem" is discouraged (15 steps).
 Proof modification of "iseriALT" is discouraged (54 steps).
 Proof modification of "isghmOLD" is discouraged (447 steps).
 Proof modification of "isinfOLD" is discouraged (588 steps).
