@@ -159190,6 +159190,17 @@ $)
       CUKULUMUN $.
   $}
 
+  ${
+    $d B x y $.  $d R x y $.
+    rrgss.e $e |- E = ( RLReg ` R ) $.
+    rrgss.b $e |- B = ( Base ` R ) $.
+    $( Left-regular elements are a subset of the base set.  (Contributed by
+       Stefan O'Rear, 22-Mar-2015.) $)
+    rrgss $p |- E C_ B $=
+      ( vx vy cv cmulr cfv co c0g wceq wi wral eqid rrgval ssrab3 ) FHGHZBIJZKB
+      LJZMSUAMNGAOFACFGABTCUADETPUAPQR $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
