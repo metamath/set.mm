@@ -159201,6 +159201,25 @@ $)
       LJZMSUAMNGAOFACFGABTCUADETPUAPQR $.
   $}
 
+  ${
+    $d E x $.  $d R x y $.  $d U x y $.
+    unitrrg.e $e |- E = ( RLReg ` R ) $.
+    unitrrg.u $e |- U = ( Unit ` R ) $.
+    $( Units are regular elements.  (Contributed by Stefan O'Rear,
+       22-Mar-2015.) $)
+    unitrrg $p |- ( R e. Ring -> U C_ E ) $=
+      ( vx vy crg wcel cv wa cbs cfv cmulr co wceq eqid a1i adantr simpr c0g wi
+      wral cui ringsrg unitcld cinvr oveq2 cur unitlinv oveq1d simpll ringinvcl
+      ringass syl13anc ringlidm adantlr 3eqtr3d ringrz syl2anc eqeq12d imbitrid
+      csrg ralrimiva isrrg sylanbrc ex ssrdv ) AHIZFBCVIFJZBIZVJCIZVIVKKZVJALMZ
+      IZVJGJZANMZOZAUAMZPZVPVSPZUBZGVNUCVLVMVNABVJVNVNPVMVNQZRBAUDMPVMERVIAVCIV
+      KAUESVIVKTUFZVMWBGVNVTVJAUGMZMZVRVQOZWFVSVQOZPVMVPVNIZKZWAVRVSWFVQUHWJWGV
+      PWHVSWJWFVJVQOZVPVQOZAUIMZVPVQOZWGVPWJWKWMVPVQVMWKWMPWIAVQBWMWEVJEWEQZVQQ
+      ZWMQZUJSUKWJVIWFVNIZVOWIWLWGPVIVKWIULZVMWRWIVNABWEVJEWOWCUMSZVMVOWIWDSVMW
+      ITVNAVQWFVJVPWCWPUNUOVIWIWNVPPVKVNAVQWMVPWCWPWQUPUQURWJVIWRWHVSPWSWTVNAVQ
+      WFVSWCWPVSQZUSUTVAVBVDGVNAVQCVJVSDWCWPXAVEVFVGVH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
