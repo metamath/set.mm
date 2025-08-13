@@ -159265,6 +159265,17 @@ $)
       HUPVAXFVBVCXFWBWNVDXCXFVTWLWAWMVRFVMVEVRFVNVEVFVKVGVHVHVIVIABKJLVJVL $.
   $}
 
+  ${
+    $d x y .0. $.  $d x y B $.  $d x y R $.  $d x y .x. $.  $d x y X $.
+    $d y Y $.
+    $( A domain is a nonzero ring.  (Contributed by Mario Carneiro,
+       28-Mar-2015.) $)
+    domnnzr $p |- ( R e. Domn -> R e. NzRing ) $=
+      ( vx vy cdomn wcel cnzr cv cmulr cfv co c0g wceq wo cbs wral eqid simplbi
+      wi isdomn ) ADEAFEBGZCGZAHIZJAKIZLTUCLUAUCLMRCANIZOBUDOBCUDAUBUCUDPUBPUCP
+      SQ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
