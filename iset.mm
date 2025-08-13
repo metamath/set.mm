@@ -159160,6 +159160,15 @@ $)
       WMWJVRBWKCWOWMWHVPWIVQWMWFVOWGGWMWEEVMVNWMWEDRQEWDDRULJUMUNWMWGDSQGWDDSUL
       KUMZUOWMWGGVNWPURUSUPUQWBUTWBCPOVTPOWBCWNPITPVAWBWNPOZVBWQPDTDTVCVDVIVEVS
       ACPVFUIVGVHVJVKVL $.
+
+    $d .x. x $.  $d X x $.  $d X y $.  $d .0. x $.
+    $( Membership in the set of left-regular elements.  (Contributed by Stefan
+       O'Rear, 22-Mar-2015.) $)
+    isrrg $p |- ( X e. E <-> ( X e. B /\
+          A. y e. B ( ( X .x. y ) = .0. -> y = .0. ) ) ) $=
+      ( vx cv co wceq wi wral oveq1 eqeq1d imbi1d ralbidv rrgval elrab2 ) LMZAM
+      ZDNZGOZUEGOZPZABQFUEDNZGOZUHPZABQLFBEUDFOZUIULABUMUGUKUHUMUFUJGUDFUEDRSTU
+      ALABCDEGHIJKUBUC $.
   $}
 
 
