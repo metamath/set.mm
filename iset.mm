@@ -159232,6 +159232,19 @@ $)
       WFVSWCWPVSQZUSUTVAVBVDGVNAVQCVJVSDWCWPXAVEVFVGVH $.
   $}
 
+  ${
+    rrgnz.t $e |- E = ( RLReg ` R ) $.
+    rrgnz.z $e |- .0. = ( 0g ` R ) $.
+    $( In a nonzero ring, the zero is a left zero divisor (that is, not a
+       left-regular element).  (Contributed by Thierry Arnoux, 6-May-2025.) $)
+    rrgnz $p |- ( R e. NzRing -> -. .0. e. E ) $=
+      ( cnzr wcel cur cfv wceq eqid nzrnz neneqd wa crg cmulr co nzrring adantr
+      cbs simpr ringidcl syl ringlzd w3a rrgeq0 biimpa syl31anc mtand ) AFGZCBG
+      ZAHIZCJZUJULCAULCULKZELMUJUKNZAOGZUKULATIZGZCULAPIZQCJZUMUJUPUKARSZUJUKUA
+      UOUPURVAUQAULUQKZUNUBUCZUOUQAUSULCVBUSKZEVAVCUDUPUKURUEUTUMUQAUSBCULCDVBV
+      DEUFUGUHUI $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
