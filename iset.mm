@@ -159369,6 +159369,14 @@ $)
   isidom $p |- ( R e. IDomn <-> ( R e. CRing /\ R e. Domn ) ) $=
     ( ccrg cdomn cidom df-idom elin2 ) ABCDEF $.
 
+  ${
+    idomringd.1 $e |- ( ph -> R e. IDomn ) $.
+    $( An integral domain is a domain.  (Contributed by Thierry Arnoux,
+       22-Mar-2025.) $)
+    idomdomd $p |- ( ph -> R e. Domn ) $=
+      ( ccrg cdomn cidom cin df-idom eleqtrdi elin2d ) ADEBABFDEGCHIJ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
