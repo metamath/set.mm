@@ -149135,6 +149135,35 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Iterated sums in a monoid
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  One important use of words is as formal composites in cases where order is
+  significant, using the general sum operator ~ df-igsum .  If order is not
+  significant, it is simpler to use families instead.
+
+$)
+
+  ${
+    $d x y B $.  $d x y G $.  $d x y .+ $.  $d x y .0. $.
+    gsumvallem2.b $e |- B = ( Base ` G ) $.
+    gsumvallem2.z $e |- .0. = ( 0g ` G ) $.
+    gsumvallem2.p $e |- .+ = ( +g ` G ) $.
+    gsumvallem2.o $e |- O = { x e. B |
+      A. y e. B ( ( x .+ y ) = y /\ ( y .+ x ) = y ) } $.
+    $( Lemma for properties of the set of identities of ` G ` .  The set of
+       identities of a monoid is exactly the unique identity element.
+       (Contributed by Mario Carneiro, 7-Dec-2014.) $)
+    gsumvallem2 $p |- ( G e. Mnd -> O = { .0. } ) $=
+      ( cmnd wcel csn mgmidsssn0 cv co wceq wa wral ralrimiva eqeq1d ovanraleqv
+      mndidcl mndlrid oveq1 elrab2 sylanbrc snssd eqssd ) ELMZFGNABCDEFLGHIJKOU
+      KGFUKGCMGBPZDQZULRZULGDQULRSZBCTZGFMCEGHIUDUKUOBCCDEULGHJIUEUAAPZULDQZULR
+      ZULUQDQULRSBCTUPAGCFUSUNBULUQULDCGUQGRURUMULUQGULDUFUBUCKUGUHUIUJ $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Groups
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
