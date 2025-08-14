@@ -159357,6 +159357,11 @@ $)
       FUBEUBVMAVQVETBCTVDVCWHVESZDVQSZUEUFUGABCVGDVGSZUHZUIVAVKWBWAOWCVAVIWBVJW
       AVAVGVSVCWMUJVAVGVSVDWMUJUNWBWAUKULUOUPUPWDEFWEWEUQULUREFVMAVEVGWHWJWLUSF
       EWEBVQVSWESWKVSSUSUT $.
+
+    $( The opposite of a domain is also a domain.  (Contributed by Mario
+       Carneiro, 15-Jun-2015.) $)
+    opprdomn $p |- ( R e. Domn -> O e. Domn ) $=
+      ( cdomn wcel opprdomnbg ibi ) ADEBDEABDCFG $.
   $}
 
 
