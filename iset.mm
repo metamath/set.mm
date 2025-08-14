@@ -159380,6 +159380,11 @@ $)
        Thierry Arnoux, 4-May-2025.)  (Proof shortened by SN, 14-May-2025.) $)
     idomcringd $p |- ( ph -> R e. CRing ) $=
       ( ccrg cdomn cidom cin df-idom eleqtrdi elin1d ) ADEBABFDEGCHIJ $.
+
+    $( An integral domain is a ring.  (Contributed by Thierry Arnoux,
+       22-Mar-2025.) $)
+    idomringd $p |- ( ph -> R e. Ring ) $=
+      ( idomcringd crngringd ) ABABCDE $.
   $}
 
 
