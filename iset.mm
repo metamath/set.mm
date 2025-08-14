@@ -149162,6 +149162,21 @@ $)
       ZULUQDQULRSBCTUPAGCFUSUNBULUQULDCGUQGRURUMULUQGULDUFUBUCKUGUHUIUJ $.
   $}
 
+  ${
+    $d x G $.  $d x H $.  $d x ph $.  $d x S $.
+    gsumsubm.a $e |- ( ph -> A e. V ) $.
+    gsumsubm.s $e |- ( ph -> S e. ( SubMnd ` G ) ) $.
+    gsumsubm.f $e |- ( ph -> F : A --> S ) $.
+    gsumsubm.h $e |- H = ( G |`s S ) $.
+    $( Evaluate a group sum in a submonoid.  (Contributed by Mario Carneiro,
+       19-Dec-2014.) $)
+    gsumsubm $p |- ( ph -> ( G gsum F ) = ( H gsum F ) ) $=
+      ( vx cbs cfv cmnd eqid wcel syl co wceq cplusg c0g csubmnd submrcl submss
+      wss subm0cl cv wa mndlrid sylan gsumress ) ALBEMNZEUANZCDEFOGEUBNZUMPZUNP
+      ZKACEUCNQZEOQZICEUDRZHAURCUMUFIUMCEUPUERJAURUOCQICEUOUOPZUGRAUSLUHZUMQUOV
+      BUNSVBTVBUOUNSVBTUIUTUMUNEVBUOUPUQVAUJUKUL $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
