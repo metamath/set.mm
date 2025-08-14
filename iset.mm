@@ -159342,6 +159342,23 @@ $)
       UPFUIUJUMUPFPVATABCDEFGHIUAUBUCUDUEUFUGUH $.
   $}
 
+  ${
+    $d x y O $.  $d x y R $.  $d x y V $.
+    opprdomn.1 $e |- O = ( oppR ` R ) $.
+    $( A class is a domain if and only if its opposite is a domain,
+       biconditional form of ~ opprdomn .  (Contributed by SN, 15-Jun-2015.) $)
+    opprdomnbg $p |- ( R e. V -> ( R e. Domn <-> O e. Domn ) ) $=
+      ( vx vy wcel cnzr cv cmulr cfv co c0g wceq wo wi cbs wral eqid cvv wa vex
+      cdomn opprbasg opprmulg mp3an23 eqcomd oppr0g eqeq12d eqeq2d orcom bitrdi
+      opprnzrbg orbi12d imbi12d raleqbidv ralcom anbi12d isdomn 3bitr4g ) ACGZA
+      HGZEIZFIZAJKZLZAMKZNZVCVGNZVDVGNZOZPZFAQKZRZEVMRZUABHGZVDVCBJKZLZBMKZNZVD
+      VSNZVCVSNZOZPZEBQKZRFWERZUAAUCGBUCGVAVBVPVOWFABCDUMVAVOWDFWERZEWERWFVAVNW
+      GEVMWEVMABCDVMSZUDZVAVLWDFVMWEWIVAVHVTVKWCVAVFVRVGVSVAVRVFVAVDTGVCTGVRVFN
+      FUBEUBVMAVQVETBCTVDVCWHVESZDVQSZUEUFUGABCVGDVGSZUHZUIVAVKWBWAOWCVAVIWBVJW
+      AVAVGVSVCWMUJVAVGVSVDWMUJUNWBWAUKULUOUPUPWDEFWEWEUQULUREFVMAVEVGWHWJWLUSF
+      EWEBVQVSWESWKVSSUSUT $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
