@@ -159364,6 +159364,11 @@ $)
       ( cdomn wcel opprdomnbg ibi ) ADEBDEABDCFG $.
   $}
 
+  $( An integral domain is a commutative domain.  (Contributed by Mario
+     Carneiro, 17-Jun-2015.) $)
+  isidom $p |- ( R e. IDomn <-> ( R e. CRing /\ R e. Domn ) ) $=
+    ( ccrg cdomn cidom df-idom elin2 ) ABCDEF $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
