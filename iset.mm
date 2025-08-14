@@ -159375,6 +159375,11 @@ $)
        22-Mar-2025.) $)
     idomdomd $p |- ( ph -> R e. Domn ) $=
       ( ccrg cdomn cidom cin df-idom eleqtrdi elin2d ) ADEBABFDEGCHIJ $.
+
+    $( An integral domain is a commutative ring with unity.  (Contributed by
+       Thierry Arnoux, 4-May-2025.)  (Proof shortened by SN, 14-May-2025.) $)
+    idomcringd $p |- ( ph -> R e. CRing ) $=
+      ( ccrg cdomn cidom cin df-idom eleqtrdi elin1d ) ADEBABFDEGCHIJ $.
   $}
 
 
