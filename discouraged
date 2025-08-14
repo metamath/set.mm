@@ -16696,6 +16696,7 @@ New usage of "elimnvu" is discouraged (5 uses).
 New usage of "elimph" is discouraged (3 uses).
 New usage of "elimphu" is discouraged (3 uses).
 New usage of "elintabOLD" is discouraged (0 uses).
+New usage of "elissetALT" is discouraged (0 uses).
 New usage of "ellnfn" is discouraged (5 uses).
 New usage of "ellnop" is discouraged (9 uses).
 New usage of "elnanel" is discouraged (1 uses).
@@ -20705,6 +20706,7 @@ Proof modification of "eliminable2c" is discouraged (8 steps).
 Proof modification of "eliminable3a" is discouraged (7 steps).
 Proof modification of "eliminable3b" is discouraged (8 steps).
 Proof modification of "elintabOLD" is discouraged (75 steps).
+Proof modification of "elissetALT" is discouraged (9 steps).
 Proof modification of "elnoOLD" is discouraged (66 steps).
 Proof modification of "elopabrOLD" is discouraged (58 steps).
 Proof modification of "elopaelxpOLD" is discouraged (47 steps).
