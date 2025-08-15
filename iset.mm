@@ -147587,16 +147587,54 @@ $)
         AXMWQXNUVDUVESSXOXPWNUUKBSXQWMXR $.
     $}
 
-    $d .+ x $.  $d .0. x $.  $d F m n x $.  $d G m n x $.  $d m n ph x $.
-    gsumval.a $e |- ( ph -> A e. X ) $.
-    gsumval.f $e |- ( ph -> F : A --> B ) $.
-    $( Expand out the substitutions in ~ df-igsum .  (Contributed by Mario
-       Carneiro, 7-Dec-2014.) $)
-    igsumval $p |- ( ph -> ( G gsum F ) =
-         ( iota x ( ( A = (/) /\ x = .0. )
-         \/ E. m E. n e. ( ZZ>= ` m )
-            ( A = ( m ... n ) /\ x = ( seq m ( .+ , F ) ` n ) ) ) ) ) $=
-      ( cvv fexd fdmd igsumvalx ) ABCDEFGHIJSLMNOPACDKHRQTACDHRUAUB $.
+    ${
+      $d .+ x $.  $d .0. x $.  $d F m n x $.  $d G m n x $.  $d m n ph x $.
+      gsumval.a $e |- ( ph -> A e. X ) $.
+      gsumval.f $e |- ( ph -> F : A --> B ) $.
+      $( Expand out the substitutions in ~ df-igsum .  (Contributed by Mario
+         Carneiro, 7-Dec-2014.) $)
+      igsumval $p |- ( ph -> ( G gsum F ) =
+           ( iota x ( ( A = (/) /\ x = .0. )
+           \/ E. m E. n e. ( ZZ>= ` m )
+              ( A = ( m ... n ) /\ x = ( seq m ( .+ , F ) ` n ) ) ) ) ) $=
+        ( cvv fexd fdmd igsumvalx ) ABCDEFGHIJSLMNOPACDKHRQTACDHRUAUB $.
+    $}
+
+    ${
+      $d .+ m n x $.  $d .0. x $.  $d F m n x $.  $d G m n x $.  $d M m n x $.
+      $d N m n x $.  $d m n ph x $.
+      gsumfzval.m $e |- ( ph -> M e. ZZ ) $.
+      gsumfzval.n $e |- ( ph -> N e. ZZ ) $.
+      gsumfzval.f $e |- ( ph -> F : ( M ... N ) --> B ) $.
+      $( An expression for ` gsum ` when summing over a finite set of
+         sequential integers.  (Contributed by Jim Kingdon, 14-Aug-2025.) $)
+      gsumfzval $p |- ( ph -> ( G gsum F ) =
+          if ( N < M , .0. , ( seq M ( .+ , F ) ` N ) ) ) $=
+        ( wceq wa cvv wcel vx vm vn cgsu co cfz c0 cv cseq cfv cuz wrex wex cio
+        wo clt wbr cif cfn fzfigd igsumval c0g wfn elexd funfvex funfni sylancr
+        eqeltrid cz seqex fvexg ifexd wb wn wdc zdclt syl2anc eqifdc syl anbi1d
+        fn0g fzn adantr cle zred simprl nltled eluz mpbird oveq2 eqeq2d anbi12d
+        fveq2 adantl eqidd simprr rspcedvd oveq1 seqeq1 fveq1d rexeqbidv spcegv
+        sylc ex eluzel2 ad2antlr cr eluzelre eluzle lensymd eqcomd fzopth mpbid
+        jca simprd simpld breq12d mtbid seqeq1d fveq12d eqtrd rexlimdva2 impbid
+        exlimdv orbi12d bitr2d iota5 mpdan ) AEDUDUEFGUFUEZUGQZUAUHZIQZRZYIUBUH
+        ZUCUHZUFUEZQZYKYOCDYNUIZUJZQZRZUCYNUKUJZULZUBUMZUOZUAUNZGFUPUQZIGCDFUIZ
+        UJZURZAUAYIBCUBUCDEHUSIJKLMAFGNOUTPVAAUUJSTZUUFUUJQAUUGIUUISSAIEVBUJZSK
+        AVBSVCESTUULSTZWAAEHMVDUUMSEVBEVBVEVFVGVHAUUHSTGVITZUUISTCDFVJOGUUHSVIV
+        KVGVLAUUEUAUUJSAUUEYKUUJQZVMUUKAUUOUUGYLRZUUGVNZYKUUIQZRZUOZUUEAUUGVOZU
+        UOUUTVMAUUNFVITZUVAONGFVPVQUUGYKIUUIVRVSAUUPYMUUSUUDAUUGYJYLAUVBUUNUUGY
+        JVMNOFGWBVQVTAUUSUUDAUUSUUDAUUSRZUVBYIFYOUFUEZQZYKYOUUHUJZQZRZUCFUKUJZU
+        LZUUDAUVBUUSNWCZUVCUVHYIYIQZUURRZUCGUVIUVCGUVITZFGWDUQZUVCFGUVCFUVKWEUV
+        CGAUUNUUSOWCZWEAUUQUURWFWGUVCUVBUUNUVNUVOVMUVKUVPFGWHVQWIYOGQZUVHUVMVMU
+        VCUVQUVEUVLUVGUURUVQUVDYIYIYOGFUFWJWKUVQUVFUUIYKYOGUUHWMWKWLWNUVCUVLUUR
+        UVCYIWOAUUQUURWPXNWQUUCUVJUBFVIYNFQZUUAUVHUCUUBUVIYNFUKWMUVRYQUVEYTUVGU
+        VRYPUVDYIYNFYOUFWRWKUVRYSUVFYKUVRYOYRUUHCDYNFWSWTWKWLXAXBXCXDAUUCUUSUBA
+        UUAUUSUCUUBAYOUUBTZRZUUARZUUQUURUWAYOYNUPUQUUGUWAYNYOUWAYNUVSYNVITAUUAY
+        NYOXEXFWEUVSYOXGTAUUAYNYOXHXFUVSYNYOWDUQAUUAYNYOXIXFXJUWAYOGYNFUPUWAUVR
+        UVQUWAYPYIQZUVRUVQRZUWAYIYPUVTYQYTWFXKUVSUWBUWCVMAUUAFGYNYOXLXFXMZXOZUW
+        AUVRUVQUWDXPZXQXRUWAYKYSUUIUVTYQYTWPUWAYOGYRUUHUWAYNFCDUWFXSUWEXTYAXNYB
+        YDYCYEYFWCYGYHYA $.
+    $}
   $}
 
   ${
