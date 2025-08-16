@@ -114311,6 +114311,15 @@ $)
       wceq feq1 ) BAEZFBGCHZIJZADHZKZCLMZDNZFUPABKZCLMZUNUTBDACOPUSVBDBVABQFCLU
       OLFZVARZUPASBVCVAUAVDGTFUOTFZUPSFUBVCVEVAUOUCUDGUOUEUFUGUHUQBULURVACLUPAU
       QBUMUIUJUK $.
+
+    $( Value of the set of words over a set.  (Contributed by Stefan O'Rear,
+       10-Aug-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.) $)
+    wrdval $p |- ( S e. V -> Word S = U_ l e. NN0 ( S ^m ( 0 ..^ l ) ) ) $=
+      ( vw wcel cword cc0 cv cfzo co wf cn0 wrex cab cmap ciun df-word eliun cz
+      cfn wa simpl 0zd nn0z adantl fzofig syl2anc elmapd rexbidva bitrid eqabdv
+      eqtr4id ) ABEZAFGCHZIJZADHZKZCLMZDNCLAUOOJZPZDACQUMURDUTUPUTEUPUSEZCLMUMU
+      RCUPLUSRUMVAUQCLUMUNLEZUAZAUOUPBTUMVBUBVCGSEUNSEZUOTEVCUCVBVDUMUNUDUEGUNU
+      FUGUHUIUJUKUL $.
   $}
 
 
