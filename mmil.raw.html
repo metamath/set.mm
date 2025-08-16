@@ -11388,6 +11388,29 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>isnzr2hash</td>
+  <td>~ isnzr2</td>
+  <td>should be provable if the ring's base is either
+  finite or infinite, but probably not provable as
+  stated in set.mm</td>
+</tr>
+
+<tr>
+  <td>nzrpropd</td>
+  <td><i>none</i></td>
+  <td>Should be provable. If we are able to prove theorems
+  such as rngidpropd and mgpbas first, that may reduce
+  divergence from set.mm.
+  </td>
+</tr>
+
+<tr>
+  <td>opprnzrb</td>
+  <td>~ opprnzrbg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
   <td>opprsubrng</td>
   <td>~ opprsubrngg</td>
   <td>adds set existence condition</td>
@@ -11435,6 +11458,92 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>may be possible if we define notation and theorems related
   to Moore systems</td>
+</tr>
+
+<tr>
+  <td>rrgsupp</td>
+  <td><i>none</i></td>
+  <td>even if we have notation(s) for support, support theorems
+  will not necessarily behave as in set.mm</td>
+</tr>
+
+<tr>
+  <td>isdomn5</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses excluded middle and it seems unlikely
+  the theorem as stated would be provable</td>
+</tr>
+
+<tr>
+  <td>isdomn2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses isdomn5</td>
+</tr>
+
+<tr>
+  <td>domnrrg</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses isdomn2</td>
+</tr>
+
+<tr>
+  <td>isdomn6</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses isdomn2</td>
+</tr>
+
+<tr>
+  <td>isdomn3</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses con34b</td>
+</tr>
+
+<tr>
+  <td>isdomn4</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses isdomn5</td>
+</tr>
+
+<tr>
+  <td>opprdomnb</td>
+  <td>~ opprdomnbg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>isdomn4r</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses isdomn4</td>
+</tr>
+
+<tr>
+  <td>domnlcanb</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses isdomn4</td>
+</tr>
+
+<tr>
+  <td>domnlcan</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses domnlcanb</td>
+</tr>
+
+<tr>
+  <td>domnrcanb</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses isdomn4r</td>
+</tr>
+
+<tr>
+  <td>domnrcan</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses domnrcanb</td>
+</tr>
+
+<tr>
+  <td>domneq0r</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses domnrcanb</td>
 </tr>
 
 <tr>

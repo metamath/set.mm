@@ -156065,6 +156065,18 @@ $)
       SUCTUDUSUTUTVLVLUEVIVDOVAUTVLVLUSUTUAUSVLUTUSVKVLVMVNUMTZVPUFAVCBCDEEFVOG
       UGUHVAVKVBAJZVBVEOUSVKUTVMTZUSUTVLVQVPABCDEFGUIUJZVKVQKVEVBAVCBVBEFVOHSUK
       ULUNVAVKVQVLVQVFVGUOVRVSVPVSAVCBVBEVBFVOUPUQUR $.
+
+    ringlzd.r $e |- ( ph -> R e. Ring ) $.
+    ringlzd.x $e |- ( ph -> X e. B ) $.
+    $( The zero of a unital ring is a left-absorbing element.  (Contributed by
+       SN, 7-Mar-2025.) $)
+    ringlzd $p |- ( ph -> ( .0. .x. X ) = .0. ) $=
+      ( crg wcel co wceq ringlz syl2anc ) ACLMEBMFEDNFOJKBCDEFGHIPQ $.
+
+    $( The zero of a unital ring is a right-absorbing element.  (Contributed by
+       SN, 7-Mar-2025.) $)
+    ringrzd $p |- ( ph -> ( X .x. .0. ) = .0. ) $=
+      ( crg wcel co wceq ringrz syl2anc ) ACLMEBMEFDNFOJKBCDEFGHIPQ $.
   $}
 
   ${
@@ -158166,6 +158178,42 @@ $)
   $}
 
   ${
+    $d B x y $.  $d R x y $.
+    isnzr2.b $e |- B = ( Base ` R ) $.
+    $( Equivalent characterization of nonzero rings: they have at least two
+       elements.  (Contributed by Stefan O'Rear, 24-Feb-2015.) $)
+    isnzr2 $p |- ( R e. NzRing <-> ( R e. Ring /\ 2o ~<_ B ) ) $=
+      ( vx vy wcel crg cfv wne wa c2o cdom wbr eqid cv wceq wrex adantr cvv cbs
+      cur c0g isnzr wn ringidcl ring0cl simpr df-ne neeq1 bitr3id neeq2 rspc2ev
+      cnzr syl3anc ex wi ring1eq0 3expb necon3bd rexlimdvva impbid simpl simprl
+      cpr cen simprr enpr2d adantl ensymd wss basfn elex funfvex funfni sylancr
+      wfn eqeltrid syl prssd impel endomtr syl2anc anassrs rexlimdvaa rexlimdva
+      ssdomg 2dom impbid1 bitrd pm5.32i bitri ) BUMFBGFZBUAHZBUBHZIZJZWLKALMZJB
+      WMWNWMNZWNNZUCWLWOWQWLWODOZEOZPZUDZEAQZDAQZWQWLWOXEWLWOXEWPWMAFZWNAFZWOXE
+      WLXFWOABWMCWRUERWLXGWOABWNCWSUFRWLWOUGXCWOWMXAIZDEWMWNAAXCWTXAIWTWMPXHWTX
+      AUHWTWMXAUIUJXAWNWMUKULUNUOWLXCWODEAAWLWTAFZXAAFZJJXBWMWNWLXIXJWMWNPXBUPA
+      BWMWTXAWNCWRWSUQURUSUTVAWLXEWQWLXDWQDAWLXIJXCWQEAWLXIXJXCJZWQWLXIXKJZJZKW
+      TXAVDZVEMXNALMZWQXMXNKXLXNKVEMWLXLWTXAAAXIXKVBZXIXJXCVCZXIXJXCVFVGVHVIWLX
+      NAVJZXOXLWLASFXRXOUPWLABTHZSCWLTSVPBSFXSSFZVKBGVLXTSBTBTVMVNVOVQXNASWFVRX
+      LWTXAAXPXQVSVTKXNAWAWBWCWDWEDEAWGWHWIWJWK $.
+  $}
+
+  ${
+    opprnzr.1 $e |- O = ( oppR ` R ) $.
+    $( The opposite of a nonzero ring is nonzero, bidirectional form of
+       ~ opprnzr .  (Contributed by SN, 20-Jun-2025.) $)
+    opprnzrbg $p |- ( R e. V -> ( R e. NzRing <-> O e. NzRing ) ) $=
+      ( wcel crg cur cfv c0g wne wa cnzr opprringbg eqid oppr1g neeq12d anbi12d
+      oppr0g isnzr 3bitr4g ) ACEZAFEZAGHZAIHZJZKBFEZBGHZBIHZJZKALEBLEUAUBUFUEUI
+      ABCDMUAUCUGUDUHAUCBCDUCNZOABCUDDUDNZRPQAUCUDUJUKSBUGUHUGNUHNST $.
+
+    $( The opposite of a nonzero ring is nonzero.  (Contributed by Mario
+       Carneiro, 17-Jun-2015.) $)
+    opprnzr $p |- ( R e. NzRing -> O e. NzRing ) $=
+      ( cnzr wcel opprnzrbg ibi ) ADEBDEABDCFG $.
+  $}
+
+  ${
     ringelnzr.z $e |- .0. = ( 0g ` R ) $.
     ringelnzr.b $e |- B = ( Base ` R ) $.
     $( A ring is nonzero if it has a nonzero element.  (Contributed by Stefan
@@ -159145,6 +159193,256 @@ $)
       TZRZYFYGXEVKTZRZAYRUUAUUCVBWEQVLYSWDUUAUUEVBXMWDYRXSURWDYTUUDYFYGGYTWLUMW
       QYTUIVMVNVFYSWTUUCUUGVBXMWTYRYEURWTUUBUUFYFYGIUUBXEUMXJUUBUIVMVNVFVOVPUTU
       OUOWRXKVQVRVSVT $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Left regular elements and domains
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c RLReg $. $( Left regular elements $)
+  $c Domn $. $( Class of domains $)
+  $c IDomn $. $( Class of integral domains $)
+
+  $( Set of left-regular elements in a ring. $)
+  crlreg $a class RLReg $.
+
+  $( Class of (ring theoretic) domains. $)
+  cdomn $a class Domn $.
+
+  $( Class of integral domains. $)
+  cidom $a class IDomn $.
+
+  ${
+    $d b r x y z $.
+    $( Define the set of _left-regular elements_ in a ring as those elements
+       which are not left zero divisors, meaning that multiplying a nonzero
+       element on the left by a left-regular element gives a nonzero product.
+       (Contributed by Stefan O'Rear, 22-Mar-2015.) $)
+    df-rlreg $a |- RLReg = ( r e. _V |-> { x e. ( Base ` r ) |
+            A. y e. ( Base ` r ) ( ( x ( .r ` r ) y ) = ( 0g ` r ) ->
+                y = ( 0g ` r ) ) } ) $.
+
+    $( A _domain_ is a nonzero ring in which there are no nontrivial zero
+       divisors.  (Contributed by Mario Carneiro, 28-Mar-2015.) $)
+    df-domn $a |- Domn = { r e. NzRing | [. ( Base ` r ) / b ].
+    [. ( 0g ` r ) / z ]. A. x e. b A. y e. b ( ( x ( .r ` r ) y ) = z ->
+                    ( x = z \/ y = z ) ) } $.
+  $}
+
+  $( An _integral domain_ is a commutative domain.  (Contributed by Mario
+     Carneiro, 17-Jun-2015.) $)
+  df-idom $a |- IDomn = ( CRing i^i Domn ) $.
+
+  ${
+    $d r x y $.
+    rrgmex.e $e |- E = ( RLReg ` R ) $.
+    $( A structure whose set of left-regular elements is inhabited is a set.
+       (Contributed by Jim Kingdon, 12-Aug-2025.) $)
+    rrgmex $p |- ( A e. E -> R e. _V ) $=
+      ( vr vx vy wcel crlreg cdm wrel cfv cvv cv cmulr co c0g wceq wi cbs mpbir
+      wral crab mptrel df-rlreg releqi eleq2i biimpi relelfvdm sylancr elexd
+      cmpt ) ACHZBIJZUMIKZABILZHZBUNHUOEMFNGNZENZOLPUSQLZRURUTRSGUSTLZUBFVAUCZU
+      LZKEMVBUDIVCFGEUEUFUAUMUQCUPADUGUHABIUIUJUK $.
+  $}
+
+  ${
+    $d B r x y z $.  $d R r x y $.  $d .x. r z $.  $d .0. r z $.  $d E z $.
+    rrgval.e $e |- E = ( RLReg ` R ) $.
+    rrgval.b $e |- B = ( Base ` R ) $.
+    rrgval.t $e |- .x. = ( .r ` R ) $.
+    rrgval.z $e |- .0. = ( 0g ` R ) $.
+    $( Value of the set or left-regular elements in a ring.  (Contributed by
+       Stefan O'Rear, 22-Mar-2015.) $)
+    rrgval $p |- E = { x e. B | A. y e. B ( ( x .x. y ) = .0. -> y = .0. ) } $=
+      ( vr cv wceq wcel cvv cfv cmulr c0g cbs vz wral crab rrgmex elrabi basmex
+      co wi syl crlreg df-rlreg fveq2 eqtr4di oveqd eqeq12d raleqbidv rabeqbidv
+      eqeq2d imbi12d id wfn basfn funfvex funfni eqeltrid rabexg fvmptd3 eqtrid
+      mpan eleq2d pm5.21nii eqriv ) UAFAMZBMZEUGZGNZVNGNZUHZBCUBZACUCZUAMZFODPO
+      ZWAVTOZWADFHUDWCWACOWBVSAWACUEWACDIUFUIWBFVTWAWBFDUJQVTHWBLDVMVNLMZRQZUGZ
+      WDSQZNZVNWGNZUHZBWDTQZUBZAWKUCVTPUJPABLUKWDDNZWLVSAWKCWMWKDTQZCWDDTULIUMZ
+      WMWJVRBWKCWOWMWHVPWIVQWMWFVOWGGWMWEEVMVNWMWEDRQEWDDRULJUMUNWMWGDSQGWDDSUL
+      KUMZUOWMWGGVNWPURUSUPUQWBUTWBCPOVTPOWBCWNPITPVAWBWNPOZVBWQPDTDTVCVDVIVEVS
+      ACPVFUIVGVHVJVKVL $.
+
+    $d .x. x $.  $d X x $.  $d X y $.  $d .0. x $.
+    $( Membership in the set of left-regular elements.  (Contributed by Stefan
+       O'Rear, 22-Mar-2015.) $)
+    isrrg $p |- ( X e. E <-> ( X e. B /\
+          A. y e. B ( ( X .x. y ) = .0. -> y = .0. ) ) ) $=
+      ( vx cv co wceq wi wral oveq1 eqeq1d imbi1d ralbidv rrgval elrab2 ) LMZAM
+      ZDNZGOZUEGOZPZABQFUEDNZGOZUHPZABQLFBEUDFOZUIULABUMUGUKUHUMUFUJGUDFUEDRSTU
+      ALABCDEGHIJKUBUC $.
+
+    $d .x. y $.  $d Y y $.  $d .0. y $.
+    $( Property of a left-regular element.  (Contributed by Stefan O'Rear,
+       22-Mar-2015.) $)
+    rrgeq0i $p |- ( ( X e. E /\ Y e. B ) ->
+      ( ( X .x. Y ) = .0. -> Y = .0. ) ) $=
+      ( vy wcel cv co wceq wi wral isrrg simprbi oveq2 eqeq1d eqeq1 rspcv mpan9
+      imbi12d ) EDMZELNZCOZGPZUHGPZQZLARZFAMEFCOZGPZFGPZQZUGEAMUMLABCDEGHIJKSTU
+      LUQLFAUHFPZUJUOUKUPURUIUNGUHFECUAUBUHFGUCUFUDUE $.
+
+    $( Left-multiplication by a left regular element does not change zeroness.
+       (Contributed by Stefan O'Rear, 28-Mar-2015.) $)
+    rrgeq0 $p |- ( ( R e. Ring /\ X e. E /\ Y e. B ) ->
+        ( ( X .x. Y ) = .0. <-> Y = .0. ) ) $=
+      ( vx vy crg wcel w3a co wceq wi cv rrgeq0i simp1 wral rrgval ssrab3 simp2
+      3adant1 sselid ringrz syl2anc oveq2 eqeq1d syl5ibrcom impbid ) BNOZEDOZFA
+      OZPZEFCQZGRZFGRZUPUQUTVASUOABCDEFGHIJKUAUGURUTVAEGCQZGRZURUOEAOVCUOUPUQUB
+      URDAELTMTZCQGRVDGRSMAUCLADLMABCDGHIJKUDUEUOUPUQUFUHABCEGIJKUIUJVAUSVBGFGE
+      CUKULUMUN $.
+  $}
+
+  ${
+    $d B x y $.  $d R x y $.
+    rrgss.e $e |- E = ( RLReg ` R ) $.
+    rrgss.b $e |- B = ( Base ` R ) $.
+    $( Left-regular elements are a subset of the base set.  (Contributed by
+       Stefan O'Rear, 22-Mar-2015.) $)
+    rrgss $p |- E C_ B $=
+      ( vx vy cv cmulr cfv co c0g wceq wi wral eqid rrgval ssrab3 ) FHGHZBIJZKB
+      LJZMSUAMNGAOFACFGABTCUADETPUAPQR $.
+  $}
+
+  ${
+    $d E x $.  $d R x y $.  $d U x y $.
+    unitrrg.e $e |- E = ( RLReg ` R ) $.
+    unitrrg.u $e |- U = ( Unit ` R ) $.
+    $( Units are regular elements.  (Contributed by Stefan O'Rear,
+       22-Mar-2015.) $)
+    unitrrg $p |- ( R e. Ring -> U C_ E ) $=
+      ( vx vy crg wcel cv wa cbs cfv cmulr co wceq eqid a1i adantr simpr c0g wi
+      wral cui ringsrg unitcld cinvr oveq2 cur unitlinv oveq1d simpll ringinvcl
+      ringass syl13anc ringlidm adantlr 3eqtr3d ringrz syl2anc eqeq12d imbitrid
+      csrg ralrimiva isrrg sylanbrc ex ssrdv ) AHIZFBCVIFJZBIZVJCIZVIVKKZVJALMZ
+      IZVJGJZANMZOZAUAMZPZVPVSPZUBZGVNUCVLVMVNABVJVNVNPVMVNQZRBAUDMPVMERVIAVCIV
+      KAUESVIVKTUFZVMWBGVNVTVJAUGMZMZVRVQOZWFVSVQOZPVMVPVNIZKZWAVRVSWFVQUHWJWGV
+      PWHVSWJWFVJVQOZVPVQOZAUIMZVPVQOZWGVPWJWKWMVPVQVMWKWMPWIAVQBWMWEVJEWEQZVQQ
+      ZWMQZUJSUKWJVIWFVNIZVOWIWLWGPVIVKWIULZVMWRWIVNABWEVJEWOWCUMSZVMVOWIWDSVMW
+      ITVNAVQWFVJVPWCWPUNUOVIWIWNVPPVKVNAVQWMVPWCWPWQUPUQURWJVIWRWHVSPWSWTVNAVQ
+      WFVSWCWPVSQZUSUTVAVBVDGVNAVQCVJVSDWCWPXAVEVFVGVH $.
+  $}
+
+  ${
+    rrgnz.t $e |- E = ( RLReg ` R ) $.
+    rrgnz.z $e |- .0. = ( 0g ` R ) $.
+    $( In a nonzero ring, the zero is a left zero divisor (that is, not a
+       left-regular element).  (Contributed by Thierry Arnoux, 6-May-2025.) $)
+    rrgnz $p |- ( R e. NzRing -> -. .0. e. E ) $=
+      ( cnzr wcel cur cfv wceq eqid nzrnz neneqd wa crg cmulr co nzrring adantr
+      cbs simpr ringidcl syl ringlzd w3a rrgeq0 biimpa syl31anc mtand ) AFGZCBG
+      ZAHIZCJZUJULCAULCULKZELMUJUKNZAOGZUKULATIZGZCULAPIZQCJZUMUJUPUKARSZUJUKUA
+      UOUPURVAUQAULUQKZUNUBUCZUOUQAUSULCVBUSKZEVAVCUDUPUKURUEUTUMUQAUSBCULCDVBV
+      DEUFUGUHUI $.
+  $}
+
+  ${
+    $d B b r x y z $.  $d R b r x y z $.  $d .x. b r z $.  $d .0. b r x y z $.
+    isdomn.b $e |- B = ( Base ` R ) $.
+    isdomn.t $e |- .x. = ( .r ` R ) $.
+    isdomn.z $e |- .0. = ( 0g ` R ) $.
+    $( Expand definition of a domain.  (Contributed by Mario Carneiro,
+       28-Mar-2015.) $)
+    isdomn $p |- ( R e. Domn <-> ( R e. NzRing /\
+     A. x e. B A. y e. B ( ( x .x. y ) = .0. -> ( x = .0. \/ y = .0. ) ) ) ) $=
+      ( vr vz vb cv cmulr cfv wceq wral c0g cbs cvv co wo wi wsbc cnzr wcel wfn
+      cdomn basfn vex funfvex funfni mp2an a1i fveq2 eqtr4di fn0g adantr simplr
+      wa oveqdr id eqeqan12d wb eqeq2 orbi12d imbi12d raleqbidv sbcied2 df-domn
+      adantl elrab2 ) AMZBMZJMZNOZUAZKMZPZVMVRPZVNVRPZUBZUCZBLMZQZAWDQZKVOROZUD
+      ZLVOSOZUDVMVNEUAZFPZVMFPZVNFPZUBZUCZBCQZACQZJDUEUHVODPZWHWQLWICTWITUFZWRS
+      TUGVOTUFZWSUIJUJZWSTVOSVOSUKULUMUNWRWIDSOCVODSUOGUPWRWDCPZUTZWFWQKWGFTWGT
+      UFZXCRTUGWTXDUQXAXDTVORVORUKULUMUNXCWGDROZFWRWGXEPXBVODRUOURIUPXCVRFPZUTZ
+      WEWPAWDCWRXBXFUSZXGWCWOBWDCXHXGVSWKWBWNXCXFVQWJVRFWRXBABVPEWRVPDNOEVODNUO
+      HUPVAXFVBVCXFWBWNVDXCXFVTWLWAWMVRFVMVEVRFVNVEVFVKVGVHVHVIVIABKJLVJVL $.
+  $}
+
+  ${
+    $d x y .0. $.  $d x y B $.  $d x y R $.  $d x y .x. $.  $d x y X $.
+    $d y Y $.
+    $( A domain is a nonzero ring.  (Contributed by Mario Carneiro,
+       28-Mar-2015.) $)
+    domnnzr $p |- ( R e. Domn -> R e. NzRing ) $=
+      ( vx vy cdomn wcel cnzr cv cmulr cfv co c0g wceq wo cbs wral eqid simplbi
+      wi isdomn ) ADEAFEBGZCGZAHIZJAKIZLTUCLUAUCLMRCANIZOBUDOBCUDAUBUCUDPUBPUCP
+      SQ $.
+
+    $( A domain is a ring.  (Contributed by Mario Carneiro, 28-Mar-2015.) $)
+    domnring $p |- ( R e. Domn -> R e. Ring ) $=
+      ( cdomn wcel cnzr crg domnnzr nzrring syl ) ABCADCAECAFAGH $.
+
+    domneq0.b $e |- B = ( Base ` R ) $.
+    domneq0.t $e |- .x. = ( .r ` R ) $.
+    domneq0.z $e |- .0. = ( 0g ` R ) $.
+    $( In a domain, a product is zero iff it has a zero factor.  (Contributed
+       by Mario Carneiro, 28-Mar-2015.) $)
+    domneq0 $p |- ( ( R e. Domn /\ X e. B /\ Y e. B ) ->
+        ( ( X .x. Y ) = .0. <-> ( X = .0. \/ Y = .0. ) ) ) $=
+      ( vx vy wcel co wceq wo cv wi wral eqeq1d syl2anc cdomn w3a 3simpc isdomn
+      cnzr simprbi 3ad2ant1 oveq1 eqeq1 orbi1d imbi12d oveq2 orbi2d rspc2va crg
+      wa domnring simp3 ringlz syl5ibrcom simp2 ringrz jaod impbid ) BUALZDALZE
+      ALZUBZDECMZFNZDFNZEFNZOZVHVFVGUPJPZKPZCMZFNZVNFNZVOFNZOZQZKARJARZVJVMQZVE
+      VFVGUCVEVFWBVGVEBUELWBJKABCFGHIUDUFUGWAWCDVOCMZFNZVKVSOZQJKDEAAVNDNZVQWEV
+      TWFWGVPWDFVNDVOCUHSWGVRVKVSVNDFUIUJUKVOENZWEVJWFVMWHWDVIFVOEDCULSWHVSVLVK
+      VOEFUIUMUKUNTVHVKVJVLVHVJVKFECMZFNZVHBUOLZVGWJVEVFWKVGBUQUGZVEVFVGURABCEF
+      GHIUSTVKVIWIFDFECUHSUTVHVJVLDFCMZFNZVHWKVFWNWLVEVFVGVAABCDFGHIVBTVLVIWMFE
+      FDCULSUTVCVD $.
+
+    $( In a domain, a product of nonzero elements is nonzero.  (Contributed by
+       Mario Carneiro, 6-May-2015.) $)
+    domnmuln0 $p |- ( ( R e. Domn /\ ( X e. B /\ X =/= .0. ) /\
+      ( Y e. B /\ Y =/= .0. ) ) -> ( X .x. Y ) =/= .0. ) $=
+      ( cdomn wcel wne wa co an4 wceq wo wn neanior wb domneq0 3expb necon3abid
+      bitr4id biimpd expimpd biimtrid 3impib ) BJKZDAKZDFLZMZEAKZEFLZMZDECNZFLZ
+      ULUOMUJUMMZUKUNMZMUIUQUJUKUMUNOUIURUSUQUIURMZUSUQUTUSDFPEFPQZRUQDFEFSUTVA
+      UPFUIUJUMUPFPVATABCDEFGHIUAUBUCUDUEUFUGUH $.
+  $}
+
+  ${
+    $d x y O $.  $d x y R $.  $d x y V $.
+    opprdomn.1 $e |- O = ( oppR ` R ) $.
+    $( A class is a domain if and only if its opposite is a domain,
+       biconditional form of ~ opprdomn .  (Contributed by SN, 15-Jun-2015.) $)
+    opprdomnbg $p |- ( R e. V -> ( R e. Domn <-> O e. Domn ) ) $=
+      ( vx vy wcel cnzr cv cmulr cfv co c0g wceq wo wi cbs wral eqid cvv wa vex
+      cdomn opprbasg opprmulg mp3an23 eqcomd oppr0g eqeq12d eqeq2d orcom bitrdi
+      opprnzrbg orbi12d imbi12d raleqbidv ralcom anbi12d isdomn 3bitr4g ) ACGZA
+      HGZEIZFIZAJKZLZAMKZNZVCVGNZVDVGNZOZPZFAQKZRZEVMRZUABHGZVDVCBJKZLZBMKZNZVD
+      VSNZVCVSNZOZPZEBQKZRFWERZUAAUCGBUCGVAVBVPVOWFABCDUMVAVOWDFWERZEWERWFVAVNW
+      GEVMWEVMABCDVMSZUDZVAVLWDFVMWEWIVAVHVTVKWCVAVFVRVGVSVAVRVFVAVDTGVCTGVRVFN
+      FUBEUBVMAVQVETBCTVDVCWHVESZDVQSZUEUFUGABCVGDVGSZUHZUIVAVKWBWAOWCVAVIWBVJW
+      AVAVGVSVCWMUJVAVGVSVDWMUJUNWBWAUKULUOUPUPWDEFWEWEUQULUREFVMAVEVGWHWJWLUSF
+      EWEBVQVSWESWKVSSUSUT $.
+
+    $( The opposite of a domain is also a domain.  (Contributed by Mario
+       Carneiro, 15-Jun-2015.) $)
+    opprdomn $p |- ( R e. Domn -> O e. Domn ) $=
+      ( cdomn wcel opprdomnbg ibi ) ADEBDEABDCFG $.
+  $}
+
+  $( An integral domain is a commutative domain.  (Contributed by Mario
+     Carneiro, 17-Jun-2015.) $)
+  isidom $p |- ( R e. IDomn <-> ( R e. CRing /\ R e. Domn ) ) $=
+    ( ccrg cdomn cidom df-idom elin2 ) ABCDEF $.
+
+  ${
+    idomringd.1 $e |- ( ph -> R e. IDomn ) $.
+    $( An integral domain is a domain.  (Contributed by Thierry Arnoux,
+       22-Mar-2025.) $)
+    idomdomd $p |- ( ph -> R e. Domn ) $=
+      ( ccrg cdomn cidom cin df-idom eleqtrdi elin2d ) ADEBABFDEGCHIJ $.
+
+    $( An integral domain is a commutative ring with unity.  (Contributed by
+       Thierry Arnoux, 4-May-2025.)  (Proof shortened by SN, 14-May-2025.) $)
+    idomcringd $p |- ( ph -> R e. CRing ) $=
+      ( ccrg cdomn cidom cin df-idom eleqtrdi elin1d ) ADEBABFDEGCHIJ $.
+
+    $( An integral domain is a ring.  (Contributed by Thierry Arnoux,
+       22-Mar-2025.) $)
+    idomringd $p |- ( ph -> R e. Ring ) $=
+      ( idomcringd crngringd ) ABABCDE $.
   $}
 
 
@@ -183094,6 +183392,15 @@ htmldef "STAB" as "<SMALL>STAB</SMALL> ";
 htmldef "DECID" as "<SMALL>DECID</SMALL> ";
   althtmldef "DECID" as "<SMALL>DECID</SMALL> ";
   latexdef "DECID" as "\mathrm{DECID}";
+htmldef "RLReg" as "RLReg";
+  althtmldef "RLReg" as "RLReg";
+  latexdef "RLReg" as "\mathrm{RLReg}";
+htmldef "Domn" as "Domn";
+  althtmldef "Domn" as "Domn";
+  latexdef "Domn" as "\mathrm{Domn}";
+htmldef "IDomn" as "IDomn";
+  althtmldef "IDomn" as "IDomn";
+  latexdef "IDomn" as "\mathrm{IDomn}";
 
 htmldef "PsMet" as "PsMet";
   althtmldef "PsMet" as "PsMet";
