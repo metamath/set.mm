@@ -114299,6 +114299,20 @@ $)
     df-word $a |- Word S = { w | E. l e. NN0 w : ( 0 ..^ l ) --> S } $.
   $}
 
+  ${
+    $d l w S $.  $d l w V $.  $d l w W $.
+    $( Property of being a word over a set with an existential quantifier over
+       the length.  (Contributed by Stefan O'Rear, 15-Aug-2015.)  (Revised by
+       Mario Carneiro, 26-Feb-2016.)  (Proof shortened by AV, 13-May-2020.) $)
+    iswrd $p |- ( W e. Word S <->
+          E. l e. NN0 W : ( 0 ..^ l ) --> S ) $=
+      ( vw cword wcel cc0 cv cfzo co wf cn0 wrex cab df-word eleq2i cvv wa cfn
+      cz simpr 0z nn0z adantr fzofig sylancr fexd rexlimiva rexbidv elab3 bitri
+      wceq feq1 ) BAEZFBGCHZIJZADHZKZCLMZDNZFUPABKZCLMZUNUTBDACOPUSVBDBVABQFCLU
+      OLFZVARZUPASBVCVAUAVDGTFUOTFZUPSFUBVCVEVAUOUCUDGUOUEUFUGUHUQBULURVACLUPAU
+      QBUMUIUJUK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
