@@ -31148,17 +31148,6 @@ $)
 
   ${
     $d x A $.
-    rgenm.1 $e |- ( ( E. x x e. A /\ x e. A ) -> ph ) $.
-    $( Generalization rule that eliminates an inhabited class requirement.
-       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
-    rgenm $p |- A. x e. A ph $=
-      ( wral cv wcel wi wal wex nfe1 alrimi 19.38 ax-mp pm5.4 albii mpbi df-ral
-      ex mpbir ) ABCEBFCGZAHZBIZUAUBHZBIZUCUABJZUCHUEUFUBBUABKUFUAADSLUAUBBMNUD
-      UBBUAAOPQABCRT $.
-  $}
-
-  ${
-    $d x A $.
     ralf0.1 $e |- -. ph $.
     $( The quantification of a falsehood is vacuous when true.  (Contributed by
        NM, 26-Nov-2005.) $)
