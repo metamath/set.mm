@@ -19549,6 +19549,7 @@ New usage of "sumdmdi" is discouraged (2 uses).
 New usage of "sumdmdii" is discouraged (2 uses).
 New usage of "sumdmdlem" is discouraged (1 uses).
 New usage of "sumdmdlem2" is discouraged (3 uses).
+New usage of "sumeq2sdvOLD" is discouraged (0 uses).
 New usage of "sumspansn" is discouraged (1 uses).
 New usage of "superpos" is discouraged (1 uses).
 New usage of "supexpr" is discouraged (1 uses).
@@ -21696,6 +21697,7 @@ Proof modification of "suctrALT2VD" is discouraged (173 steps).
 Proof modification of "suctrALT3" is discouraged (137 steps).
 Proof modification of "suctrALTcf" is discouraged (164 steps).
 Proof modification of "suctrALTcfVD" is discouraged (164 steps).
+Proof modification of "sumeq2sdvOLD" is discouraged (14 steps).
 Proof modification of "syl5imp" is discouraged (23 steps).
 Proof modification of "syl5impVD" is discouraged (57 steps).
 Proof modification of "symgsubmefmndALT" is discouraged (129 steps).
