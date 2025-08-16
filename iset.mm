@@ -181253,6 +181253,10 @@ $)
        <tr><td>g</td><td>with "is a set" condition</td><td> </td><td> </td>
        <td>No</td><td> ~ 1stvalg , ~ brtposg , ~ setsmsbasg </td></tr>
 
+       <tr><td>m</td><td>inhabited (from "member")</td><td> </td>
+       <td> ` E. x x e. A ` </td>
+       <td>No</td><td> ~ r19.2m , ~ negm , ~ ctm , ~ basmex </td></tr>
+
        <tr><td>seq3, sum3</td><td>recursive sequence</td>
        <td> ~ df-seqfrec </td>
        <td> </td><td>Yes</td><td> ~ seq3-1 , ~ fsum3 </td></tr>
