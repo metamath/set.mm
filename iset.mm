@@ -149249,6 +149249,34 @@ $)
       BEEYOYPFXFXGWGXHXIXJXKXLXHYBYCXNZYCYGXOYBYAXTUWFYSYRDCXPWSYCXQUTXR $.
   $}
 
+  ${
+    $d B x y $.  $d F x y $.  $d G x y $.  $d M x y $.  $d N x y $.
+    $d ph x y $.
+    gsumcl.b $e |- B = ( Base ` G ) $.
+    gsumcl.z $e |- .0. = ( 0g ` G ) $.
+    gsumfzcl.g $e |- ( ph -> G e. Mnd ) $.
+    gsumfzcl.m $e |- ( ph -> M e. ZZ ) $.
+    gsumfzcl.n $e |- ( ph -> N e. ZZ ) $.
+    gsumfzcl.f $e |- ( ph -> F : ( M ... N ) --> B ) $.
+    $( Closure of a finite group sum.  (Contributed by Mario Carneiro,
+       15-Dec-2014.)  (Revised by AV, 3-Jun-2019.)  (Revised by Jim Kingdon,
+       16-Aug-2025.) $)
+    gsumfzcl $p |- ( ph -> ( G gsum F ) e. B ) $=
+      ( vx wcel wa cfv adantr cvv ad2antrr vy clt wbr cgsu cplusg cseq cif wceq
+      co wn cmnd eqid gsumfzval simpr iftrued eqtrd mndidcl eqeltrd iffalsed cz
+      syl cle cuz zred nltled eluz2 syl3anbrc cfz cfn fzfigd fexd fvexg sylancl
+      cv vex ffvelcdmd simprl simprr mndcl syl3anc wss ssv a1i plusgslid slotex
+      wf ovexg seq3clss wdc wo zdclt syl2anc exmiddc mpjaodan ) AFEUBUCZDCUDUIZ
+      BOWOUJZAWOPZWPGBWRWPWOGFDUEQZCEUFQZUGZGAWPXAUHZWOABWSCDEFUKGHIWSULZJKLMUM
+      ZRWRWOGWTAWOUNUOUPAGBOZWOADUKOZXEJBDGHIUQVARURAWQPZWPWTBXGWPXAWTAXBWQXDRX
+      GWOGWTAWQUNZUSUPXGNUAWSBSCEFXGEUTOZFUTOZEFVBUCFEVCQZOAXIWQKRZAXJWQLRZXGEF
+      XGEXLVDXGFXMVDXHVEEFVFVGXGNVNZXKOZPCSOZXNSOZXNCQSOAXPWQXOAEFVHUIZBVICMAEF
+      KLVJVKTNVOXNCSSVLVMXGXNXROZPXRBXNCAXRBCWFWQXSMTXGXSUNVPXGXNBOZUAVNZBOZPZP
+      XFXTYBXNYAWSUIZBOAXFWQYCJTXGXTYBVQXGXTYBVRBWSDXNYAHXCVSVTBSWAXGBWBWCXGXQY
+      ASOZPZPXQWSSOZYEYDSOXGXQYEVQAYGWQYFAXFYGJDUEUKWDWEVATXGXQYEVRXNYAWSSSSWGV
+      TWHURAWOWIZWOWQWJAXJXIYHLKFEWKWLWOWMVAWN $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
