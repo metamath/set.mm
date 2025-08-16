@@ -114156,6 +114156,152 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Words over a set
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+
+  This section is about _words_ (or _strings_) over a set (_alphabet_) defined
+  as finite sequences of _symbols_ (or _characters_) being elements of the
+  alphabet.  Although it is often required that the underlying set/alphabet be
+  nonempty, finite and not a proper class, these restrictions are not made in
+  the current definition ~ df-word , see, for example, ~ s1cli :
+  ` <" A "> e. Word _V `.  Note that the empty word ` (/) ` (i.e., the empty
+  set) is the only word over an empty alphabet, see ~ 0wrd0 .
+
+  The set ` Word S ` of words over ` S ` is the free monoid over ` S ` , where
+  the monoid law is concatenation and the monoid unit is the empty word.
+
+  Besides the definition of words themselves, several operations on words are
+  defined in this section:
+  <HTML>
+  <table border="1" id="word-operations">
+  <tr>
+    <th>Name</th><th>Reference</th><th>Explanation</th><th>Example</th>
+    <th>Remarks</th></tr>
+  <tr>
+    <td>Length (or size) of a word </td><td> ~ df-hash : ` ( # ``  W ) ` </td>
+    <td>Operation which determines the number of the symbols
+        within the word.</td>
+    <td> ` W : ( 0 ..^ N ) --> S -> ( W e. Word S /\ ( # ``  W ) = N ` </td>
+    <td> This is not a special definition for words,
+         but for arbitrary sets.</td></tr>
+  <tr>
+    <td>First symbol of a word </td><td> ~ df-fv : ` ( W `` 0 ) ` </td>
+    <td>Operation which extracts the first symbol of a word. The result is the
+        symbol at the first place in the sequence representing the word.</td>
+    <td> ` W : ( 0 ..^ 1 ) --> S -> ( W e. Word S /\ ( W `` 0 ) e. S ` </td>
+    <td> This is not a special definition for words,
+         but for arbitrary functions with a half-open range of nonnegative
+         integers as domain.</td></tr>
+  <tr>
+    <td>Last symbol of a word </td><td> ~ df-lsw : ` ( lastS ``  W ) ` </td>
+    <td>Operation which extracts the last symbol of a word. The result is the
+        symbol at the last place in the sequence representing the word.</td>
+    <td> ` W : ( 0 ..^ 3 ) --> S
+           -> ( W e. Word S /\ ( lastS `` W ) = ( W `` 2 ) ` </td>
+    <td> Note that the index of the last symbol is less by 1 than the length of
+         the word.</td></tr>
+  <tr>
+    <td>Subword (or substring) of a word </td>
+    <td> ~ df-substr : ` ( W substr <. I , J >. ) ` </td>
+    <td>Operation which extracts a portion of a word. The result is a
+        consecutive, reindexed part of the sequence representing the word.</td>
+    <td> ` W : ( 0 ..^ 3 ) --> S -> ( W e. Word S
+    /\ ( W substr <. 1 , 2 >. ) e. Word S
+    /\ ( # `` ( W substr <. 1 , 2 >. )  ) = 1 ` </td>
+    <td> Note that the last index of the range defining the subword is greater
+         by 1 than the index of the last symbol of the subword in the sequence
+         of the original word.</td></tr>
+  <tr>
+    <td>Concatenation of two words </td>
+    <td> ~ df-concat : ` ( W ++ U ) ` </td>
+    <td>Operation combining two words to one new word. The result is a
+        combined, reindexed sequence build from the sequences representing
+        the two words.</td>
+    <td> ` ( W e. Word S /\ U e. Word S )
+           -> ( # `` ( W ++ U ) ) = ( ( # `` W ) + ( # `` U ) ) ` </td>
+    <td> Note that the index of the first symbol of the second concatenated
+         word is the length of the first word in the concatenation.</td></tr>
+  <tr>
+    <td>Reversal of a word </td>
+    <td> ~ df-reverse : ` ( reverse `` W ) ` </td>
+    <td>Operation which reverses the order of symbols in a word.</td>
+    <td> ` ( W e. Word V -> ( # `` ( reverse `` W ) ) = ( # `` W ) ) ` </td>
+    <td> </td></tr>
+  <tr>
+    <td>Cyclical shift of a word </td>
+    <td> ~ df-csh : ` ( W cyclShift N ) ` </td>
+    <td>Operation cyclically shifting the symbols by a number
+        of positions.</td>
+    <td> `  ( W e. Word V -> ( W cyclShift ( # `` W ) ) = W ) ` </td>
+    <td> </td></tr>
+  <tr>
+    <td>Splicing of a word </td>
+    <td> ~ df-splice : ` ( S splice <. F , T , R >. ) ` </td>
+    <td>Operation which replaces portions of words.</td>
+    <td> ` ( ( S e. Word A /\ R e. Word A ) ->
+        ( S splice <. F , T , R >. ) e. Word A ) ` </td>
+    <td> </td></tr>
+  <tr>
+    <td>Singleton word </td>
+    <td> ~ df-s1 : ` <" S "> ` </td>
+    <td>Constructor building a word of length 1 from a symbol.</td>
+    <td> ` ( # `` <" S "> ) = 1 ` </td>
+    <td> </td></tr>
+  </table>
+
+  Conventions:
+  <ul>
+  <li>Words are usually represented by class variable ` W `, or if two words
+  are involved, by ` W ` and ` U ` or by ` A ` and ` B `.</li>
+  <li>The alphabets are usually represented by class variable ` V ` (because
+  any arbitrary set can be an alphabet), sometimes also by ` S ` (especially
+  as codomain of the function representing a word, because the alphabet is the
+  set of symbols).</li>
+  <li>The symbols are usually represented by class variables ` S ` or ` A ` ,
+  or if two symbols are involved, by ` S ` and ` T ` or by ` A ` and ` B `.
+  </li>
+  <li>The indices of the sequence representing a word are usually represented
+  by class variable ` I `, if two indices are involved (especially for
+  subwords) by ` I ` and ` J `, or by ` M ` and ` N `.</li>
+  <li>The length of a word is usually represented by class variables ` N `
+  or ` L `.</li>
+  <li>The number of positions by which to cyclically shift a word is usually
+  represented by class variables ` N ` or ` L `.</li></ul>
+  </HTML>
+
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Definitions and basic theorems
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c Word $.
+
+  $( Syntax for the Word operator. $)
+  cword $a class Word S $.
+
+  ${
+    $d l w S $.
+    $( Define the class of _words over a set_.  A word (sometimes also called a
+       _string_) is a finite sequence of symbols from a set (alphabet) ` S ` .
+       Definition in Section 9.1 of [AhoHopUll] p. 318.  The domain is forced
+       to be an initial segment of ` NN0 ` so that two words with the same
+       symbols in the same order be equal.  The set ` Word S ` is sometimes
+       denoted by S*, using the Kleene star, although the Kleene star, or
+       Kleene closure, is sometimes reserved to denote an operation on
+       languages.  The set ` Word S ` equipped with concatenation is the free
+       monoid over ` S ` , and the monoid unit is the empty word (see
+       ~ frmdval ).  (Contributed by FL, 14-Jan-2014.)  (Revised by Stefan
+       O'Rear, 14-Aug-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.) $)
+    df-word $a |- Word S = { w | E. l e. NN0 w : ( 0 ..^ l ) --> S } $.
+  $}
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Elementary real and complex functions
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
@@ -183356,6 +183502,9 @@ htmldef "MndHom" as " MndHom ";
 htmldef "SubMnd" as "SubMnd";
   althtmldef "SubMnd" as "SubMnd";
   latexdef "SubMnd" as "\mathrm{SubMnd}";
+htmldef "Word" as "Word ";
+  althtmldef "Word" as "Word ";
+  latexdef "Word" as "\mathrm{Word}";
 htmldef "~QG" as " ~<sub><i>QG</i></sub> ";
   althtmldef "~QG" as " ~<sub><i>QG</i></sub> ";
   latexdef "~QG" as " \sim_{QG} ";
