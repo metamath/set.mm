@@ -114413,6 +114413,14 @@ $)
     ( wss wa cword wceq sswrd anim12i eqss 3imtr4i ) ABCZBACZDAEZBEZCZNMCZDABFM
     NFKOLPABGBAGHABIMNIJ $.
 
+  ${
+    wrdeqi.1 $e |- S = T $.
+    $( Equality theorem for the set of words, inference form.  (Contributed by
+       AV, 23-May-2021.) $)
+    wrdeqi $p |- Word S = Word T $=
+      ( wceq cword wrdeq ax-mp ) ABDAEBEDCABFG $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
