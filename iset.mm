@@ -114449,6 +114449,13 @@ $)
     wf eleq1 impbii ) ABCZDZABEZUAFAGHIJZBAQZUBBAKUDUBUCBEUCALMNUBUABTDBOABTRPS
     $.
 
+  $( A word is a word over the symbols it consists of.  (Contributed by AV,
+     1-Dec-2022.) $)
+  wrdsymb $p |- ( S e. Word A -> S e. Word ( S " ( 0 ..^ ( # ` S ) ) ) ) $=
+    ( cword wcel cc0 chash cfv cfzo co cima wf cn0 wfo wrdf fimadmfo 3syl lencl
+    fof iswrdinn0 syl2anc ) BACDZEBFGZHIZBUCJZBKZUBLDBUDCDUAUCABKUCUDBMUEABNUCA
+    BOUCUDBRPABQUDUBBST $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
