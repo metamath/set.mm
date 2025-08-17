@@ -114400,6 +114400,13 @@ $)
     ( cword wcel chash cfv cn c0 wne cfn wb wrdfin hashnncl syl biimpar ) BACDZ
     BEFGDZBHIZPBJDQRKABLBMNO $.
 
+  $( A word is a function from a finite interval of integers.  (Contributed by
+     AV, 10-Feb-2021.) $)
+  wrdffz $p |- ( W e. Word S -> W : ( 0 ... ( ( # ` W ) - 1 ) ) --> S ) $=
+    ( cword wcel cc0 chash cfv cfzo co wf c1 cmin cfz wrdf cz wceq lencl fzoval
+    nn0zd syl feq2d mpbid ) BACDZEBFGZHIZABJEUDKLIMIZABJABNUCUEUFABUCUDODUEUFPU
+    CUDABQSEUDRTUAUB $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
