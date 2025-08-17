@@ -114402,6 +114402,11 @@ $)
                   -> ( W ` I ) e. V ) $=
     ( cword wcel cc0 chash cfv cfzo co wrdf ffvelcdmda ) CBDEFCGHIJBACBCKL $.
 
+  $( A word is a function with a zero-based sequence of integers as domain.
+     (Contributed by Alexander van der Vekens, 13-Apr-2018.) $)
+  wrdfn $p |- ( W e. Word S -> W Fn ( 0 ..^ ( # ` W ) ) ) $=
+    ( cword wcel cc0 chash cfv cfzo co wrdf ffnd ) BACDEBFGHIABABJK $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
