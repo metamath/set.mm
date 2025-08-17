@@ -114443,6 +114443,13 @@ $)
       COZUGPFZCBEFUJCUHQZUINUKUFUMUIDCRSAUHBCTUAUFULUIDCUBUCBUGCUDUE $.
   $}
 
+  $( A word is a finite set.  (Contributed by Stefan O'Rear, 2-Nov-2015.)
+     (Proof shortened by AV, 18-Nov-2018.) $)
+  wrdfin $p |- ( W e. Word S -> W e. Fin ) $=
+    ( cword wcel cc0 chash cfv cfzo co wfn cfn wrdfn cz 0z lencl fzofig sylancr
+    nn0zd fnfi syl2anc ) BACDZBEBFGZHIZJUCKDZBKDABLUAEMDUBMDUDNUAUBABOREUBPQUCB
+    ST $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
