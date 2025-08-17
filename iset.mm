@@ -114434,6 +114434,13 @@ $)
   wrd0 $p |- (/) e. Word S $=
     ( c0 wf cword wcel f0 iswrddm0 ax-mp ) BABCBADEAFABGH $.
 
+  $( The empty word is the only word over an empty alphabet.  (Contributed by
+     AV, 25-Oct-2018.) $)
+  0wrd0 $p |- ( W e. Word (/) <-> W = (/) ) $=
+    ( c0 cword wcel wceq cc0 chash cfv cfzo co wrdf f00 simplbi syl wrd0 mpbiri
+    wf eleq1 impbii ) ABCZDZABEZUAFAGHIJZBAQZUBBAKUDUBUCBEUCALMNUBUABTDBOABTRPS
+    $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
