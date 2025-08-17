@@ -114358,6 +114358,14 @@ $)
       UPBUKMUSUMVAUPABUKUNUSUQRUHULUTTUAUNUSUQUBBUOUKUCUDUEUFUG $.
   $}
 
+  $( A singleton of an ordered pair (with 0 as first component) is a word.
+     (Contributed by AV, 23-Nov-2018.)  (Proof shortened by AV,
+     18-Apr-2021.) $)
+  snopiswrd $p |- ( S e. V -> { <. 0 , S >. } e. Word V ) $=
+    ( wcel cc0 c1 cfzo co cop csn wf cn0 cword cz 0zd id fsnd fzo01 sylibr 1nn0
+    feq2i iswrdinn0 sylancl ) ABCZDEFGZBDAHIZJZEKCUEBLCUCDIZBUEJUFUCDAMBUCNUCOP
+    UDUGBUEQTRSBEUEUAUB $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
