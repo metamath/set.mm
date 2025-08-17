@@ -114412,6 +114412,13 @@ $)
   wrdv $p |- ( W e. Word V -> W e. Word _V ) $=
     ( cword cvv wss ssv sswrd ax-mp sseli ) ACZDCZBADEJKEAFADGHI $.
 
+  $( The length of a word is not in the domain of the word (regarded as a
+     function).  (Contributed by AV, 3-Mar-2021.)  (Proof shortened by JJ,
+     18-Nov-2022.) $)
+  wrdlndm $p |- ( W e. Word V -> ( # ` W ) e/ dom W ) $=
+    ( cword wcel chash cfv cdm wn wnel cc0 co fzonel a1i wrddm neleqtrrd df-nel
+    cfzo sylibr ) BACDZBEFZBGZDHTUAISUAJTQKZTTUBDHSJTLMABNOTUAPR $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
