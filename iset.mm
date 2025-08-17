@@ -114396,6 +114396,12 @@ $)
       ( cvv wcel cword wrdexg ax-mp ) ACDAECDBACFG $.
   $}
 
+  $( A symbol within a word over an alphabet belongs to the alphabet.
+     (Contributed by Alexander van der Vekens, 28-Jun-2018.) $)
+  wrdsymbcl $p |- ( ( W e. Word V /\ I e. ( 0 ..^ ( # ` W ) ) )
+                  -> ( W ` I ) e. V ) $=
+    ( cword wcel cc0 chash cfv cfzo co wrdf ffvelcdmda ) CBDEFCGHIJBACBCKL $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
