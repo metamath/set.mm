@@ -114394,6 +114394,12 @@ $)
     nn0zd fnfi syl2anc ) BACDZBEBFGZHIZJUCKDZBKDABLUAEMDUBMDUDNUAUBABOREUBPQUCB
     ST $.
 
+  $( The length of a nonempty word is a positive integer.  (Contributed by
+     Mario Carneiro, 1-Oct-2015.) $)
+  lennncl $p |- ( ( W e. Word S /\ W =/= (/) ) -> ( # ` W ) e. NN ) $=
+    ( cword wcel chash cfv cn c0 wne cfn wb wrdfin hashnncl syl biimpar ) BACDZ
+    BEFGDZBHIZPBJDQRKABLBMNO $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
