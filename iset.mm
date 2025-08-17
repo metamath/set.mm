@@ -114323,6 +114323,18 @@ $)
   $}
 
   ${
+    $d S l $.  $d W l $.
+
+    $( The length of a word is a nonnegative integer.  This corresponds to the
+       definition in Section 9.1 of [AhoHopUll] p. 318.  (Contributed by Stefan
+       O'Rear, 27-Aug-2015.) $)
+    lencl $p |- ( W e. Word S -> ( # ` W ) e. NN0 ) $=
+      ( vl cword wcel cc0 cv cfzo co wf chash cfv cn0 wrex iswrd biimpi wa wceq
+      fnfzo0hash adantl simprl eqeltrd rexlimddv ) BADEZFCGZHIABJZBKLZMECMUDUFC
+      MNABCOPUDUEMEZUFQZQUGUEMUIUGUERUDABUESTUDUHUFUAUBUC $.
+  $}
+
+  ${
     $d l S $.  $d l W $.  $d l L $.  $d x L $.
     $( A zero-based sequence is a word.  (Contributed by Stefan O'Rear,
        15-Aug-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.)  (Revised by
