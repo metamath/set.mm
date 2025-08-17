@@ -114388,6 +114388,14 @@ $)
       TUMCTUFAUNCUGSUH $.
   $}
 
+  ${
+    wrdexi.1 $e |- S e. _V $.
+    $( The set of words over a set is a set, inference form.  (Contributed by
+       AV, 23-May-2021.) $)
+    wrdexi $p |- Word S e. _V $=
+      ( cvv wcel cword wrdexg ax-mp ) ACDAECDBACFG $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
