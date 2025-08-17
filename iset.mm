@@ -114346,6 +114346,18 @@ $)
   wrddm $p |- ( W e. Word S -> dom W = ( 0 ..^ ( # ` W ) ) ) $=
     ( cword wcel cc0 chash cfv cfzo co wrdf fdmd ) BACDEBFGHIABABJK $.
 
+  ${
+    $d w l S $.  $d w l T $.
+    $( The set of words respects ordering on the base set.  (Contributed by
+       Stefan O'Rear, 15-Aug-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.)
+       (Proof shortened by AV, 13-May-2020.) $)
+    sswrd $p |- ( S C_ T -> Word S C_ Word T ) $=
+      ( vw vl wss cword cv wcel wa cc0 cfzo co wf cn0 wrex biimpi adantl simprr
+      iswrd simpll fssd simprl iswrdinn0 syl2anc rexlimddv ex ssrdv ) ABEZCAFZB
+      FZUHCGZUIHZUKUJHZUHULIZJDGZKLZAUKMZUMDNULUQDNOZUHULURAUKDSPQUNUONHZUQIZIZ
+      UPBUKMUSUMVAUPABUKUNUSUQRUHULUTTUAUNUSUQUBBUOUKUCUDUEUFUG $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
