@@ -114427,6 +114427,13 @@ $)
     ( c0 wf cc0 cfzo co cword wcel fzo0 feq2i cn0 0nn0 iswrdinn0 mpan2 sylbir )
     CABDEEFGZABDZBAHIZQCABEJKRELISMAEBNOP $.
 
+  $( The empty set is a word (the _empty word_, frequently denoted &#949; in
+     this context).  This corresponds to the definition in Section 9.1 of
+     [AhoHopUll] p. 318.  (Contributed by Stefan O'Rear, 15-Aug-2015.)  (Proof
+     shortened by AV, 13-May-2020.) $)
+  wrd0 $p |- (/) e. Word S $=
+    ( c0 wf cword wcel f0 iswrddm0 ax-mp ) BABCBADEAFABGH $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
