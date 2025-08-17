@@ -114407,6 +114407,11 @@ $)
   wrdfn $p |- ( W e. Word S -> W Fn ( 0 ..^ ( # ` W ) ) ) $=
     ( cword wcel cc0 chash cfv cfzo co wrdf ffnd ) BACDEBFGHIABABJK $.
 
+  $( A word over an alphabet is a word over the universal class.  (Contributed
+     by AV, 8-Feb-2021.)  (Proof shortened by JJ, 18-Nov-2022.) $)
+  wrdv $p |- ( W e. Word V -> W e. Word _V ) $=
+    ( cword cvv wss ssv sswrd ax-mp sseli ) ACZDCZBADEJKEAFADGHI $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
