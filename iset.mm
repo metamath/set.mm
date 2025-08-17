@@ -114322,6 +114322,17 @@ $)
       FUGUHUIUJUKUL $.
   $}
 
+  ${
+    $d l S $.  $d l W $.  $d l L $.  $d x L $.
+    $( A zero-based sequence is a word.  (Contributed by Stefan O'Rear,
+       15-Aug-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.)  (Revised by
+       Jim Kingdon, 16-Aug-2025.) $)
+    iswrdinn0 $p |- ( ( W : ( 0 ..^ L ) --> S /\ L e. NN0 ) -> W e. Word S ) $=
+      ( vl cn0 wcel cc0 cfzo co wf cword wa wrex wceq oveq2 feq2d rspcev sylibr
+      cv iswrd ancoms ) BEFZGBHIZACJZCAKFZUBUDLGDSZHIZACJZDEMUEUHUDDBEUFBNUGUCA
+      CUFBGHOPQACDTRUA $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
