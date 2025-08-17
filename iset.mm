@@ -114340,6 +114340,12 @@ $)
       ABCNUFUICKUDKEZUFOZUIUFUJUFPUKUHUEABUKUGUDFHABUDQSTUAUBUC $.
   $}
 
+  $( The indices of a word (i.e. its domain regarded as function) are elements
+     of an open range of nonnegative integers (of length equal to the length of
+     the word).  (Contributed by AV, 2-May-2020.) $)
+  wrddm $p |- ( W e. Word S -> dom W = ( 0 ..^ ( # ` W ) ) ) $=
+    ( cword wcel cc0 chash cfv cfzo co wrdf fdmd ) BACDEBFGHIABABJK $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
