@@ -114466,6 +114466,19 @@ $)
       nfcxfr ) ABFGDHIJZBEHZKZDLMZENEBDOUDAEUCADLALPAUABUBAUBPAUAPCQRST $.
   $}
 
+  ${
+    $d S l w x $.  $d V l w x $.
+    $( Class substitution for the symbols of a word.  (Contributed by Alexander
+       van der Vekens, 15-Jul-2018.) $)
+    csbwrdg $p |- ( S e. V -> [_ S / x ]_ Word x = Word S ) $=
+      ( vl vw wcel cv cword csb cc0 cfzo cn0 wrex cab df-word csbeq2i csbconstg
+      co wf wsbc sbcrex sbcfg csbvarg feq123d rexbidv bitrid abbidv csbabg wceq
+      bitrd a1i 3eqtr4d eqtrid ) BCFZABAGZHZIABJDGKRZUOEGZSZDLMZENZIZBHZABUPVAE
+      UODOPUNUTABTZENUQBURSZDLMZENZVBVCUNVDVFEVDUSABTZDLMUNVFUSADBLUAUNVHVEDLUN
+      VHABUQIZABUOIZABURIZSVEAUQUOURCBUBUNVIUQVJBVKURABURCQABUQCQABCUCUDUJUEUFU
+      GUTAEBCUHVCVGUIUNEBDOUKULUM $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
