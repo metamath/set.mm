@@ -114431,6 +114431,18 @@ $)
     ( cword wcel chash cfv cdm wn wnel cc0 co fzonel a1i wrddm neleqtrrd df-nel
     cfzo sylibr ) BACDZBEFZBGZDHTUAISUAJTQKZTTUBDHSJTLMABNOTUAPR $.
 
+  ${
+    $d V i $.  $d W i $.
+    $( An arbitrary word is a word over an alphabet if all of its symbols
+       belong to the alphabet.  (Contributed by AV, 23-Jan-2021.) $)
+    iswrdsymb $p |- ( ( W e. Word _V /\ A. i e. ( 0 ..^ ( # ` W ) )
+                                        ( W ` i ) e. V )
+                      -> W e. Word V ) $=
+      ( cvv cword wcel cv cfv cc0 chash cfzo co wral wa wf cn0 wfn wrdfn anim1i
+      ffnfv sylibr lencl adantr iswrdinn0 syl2anc ) CDEFZAGCHBFAICJHZKLZMZNZUHB
+      COZUGPFZCBEFUJCUHQZUINUKUFUMUIDCRSAUHBCTUAUFULUIDCUBUCBUGCUDUE $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
