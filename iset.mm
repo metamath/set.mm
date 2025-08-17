@@ -114421,6 +114421,12 @@ $)
       ( wceq cword wrdeq ax-mp ) ABDAEBEDCABFG $.
   $}
 
+  $( A function with empty domain is a word.  (Contributed by AV,
+     13-Oct-2018.) $)
+  iswrddm0 $p |- ( W : (/) --> S -> W e. Word S ) $=
+    ( c0 wf cc0 cfzo co cword wcel fzo0 feq2i cn0 0nn0 iswrdinn0 mpan2 sylbir )
+    CABDEEFGZABDZBAHIZQCABEJKRELISMAEBNOP $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
