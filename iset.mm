@@ -114331,6 +114331,13 @@ $)
       ( vl cn0 wcel cc0 cfzo co wf cword wa wrex wceq oveq2 feq2d rspcev sylibr
       cv iswrd ancoms ) BEFZGBHIZACJZCAKFZUBUDLGDSZHIZACJZDEMUEUHUDDBEUFBNUGUCA
       CUFBGHOPQACDTRUA $.
+
+    $( A word is a zero-based sequence with a recoverable upper limit.
+       (Contributed by Stefan O'Rear, 15-Aug-2015.) $)
+    wrdf $p |- ( W e. Word S -> W : ( 0 ..^ ( # ` W ) ) --> S ) $=
+      ( vl cword wcel cc0 cv cfzo co wf cn0 chash cfv iswrd wa simpr fnfzo0hash
+      wrex oveq2d feq2d mpbird rexlimiva sylbi ) BADEFCGZHIZABJZCKRFBLMZHIZABJZ
+      ABCNUFUICKUDKEZUFOZUIUFUJUFPUKUHUEABUKUGUDFHABUDQSTUAUBUC $.
   $}
 
 
