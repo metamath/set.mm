@@ -114366,6 +114366,18 @@ $)
     feq2i iswrdinn0 sylancl ) ABCZDEFGZBDAHIZJZEKCUEBLCUCDIZBUEJUFUCDAMBUCNUCOP
     UDUGBUEQTRSBEUEUAUB $.
 
+  ${
+    $d s l S $.  $d s l V $.
+    $( The set of words over a set is a set.  (Contributed by Mario Carneiro,
+       26-Feb-2016.)  (Proof shortened by JJ, 18-Nov-2022.) $)
+    wrdexg $p |- ( S e. V -> Word S e. _V ) $=
+      ( vl wcel cword cn0 cc0 cv cfzo co cmap ciun cvv wrdval wral nn0ex cxp cz
+      cfn sylancr fnmap elex wa 0z nn0z adantl fzofig elexd mp3an2ani ralrimiva
+      wfn fnovex iunexg eqeltrd ) ABDZAECFAGCHZIJZKJZLZMABCNUOFMDURMDZCFOUSMDPU
+      OUTCFKMMQUKUOAMDUPFDZUQMDUTUAABUBUOVAUCZUQSVBGRDUPRDZUQSDUDVAVCUOUPUEUFGU
+      PUGTUHAUQMMKULUIUJCFURMMUMTUN $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
