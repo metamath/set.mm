@@ -114456,6 +114456,16 @@ $)
     fof iswrdinn0 syl2anc ) BACDZEBFGZHIZBUCJZBKZUBLDBUDCDUAUCABKUCUDBMUEABNUCA
     BOUCUDBRPABQUDUBBST $.
 
+  ${
+    $d l w x $.  $d l w S $.
+    nfwrd.1 $e |- F/_ x S $.
+    $( Hypothesis builder for ` Word S ` .  (Contributed by Mario Carneiro,
+       26-Feb-2016.) $)
+    nfwrd $p |- F/_ x Word S $=
+      ( vl vw cword cc0 cv cfzo co wf cn0 wrex cab df-word nfcv nff nfrexw nfab
+      nfcxfr ) ABFGDHIJZBEHZKZDLMZENEBDOUDAEUCADLALPAUABUBAUBPAUAPCQRST $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
