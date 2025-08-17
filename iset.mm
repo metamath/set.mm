@@ -114407,6 +114407,12 @@ $)
     nn0zd syl feq2d mpbid ) BACDZEBFGZHIZABJEUDKLIMIZABJABNUCUEUFABUCUDODUEUFPU
     CUDABQSEUDRTUAUB $.
 
+  $( Equality theorem for the set of words.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  wrdeq $p |- ( S = T -> Word S = Word T ) $=
+    ( wss wa cword wceq sswrd anim12i eqss 3imtr4i ) ABCZBACZDAEZBEZCZNMCZDABFM
+    NFKOLPABGBAGHABIMNIJ $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
