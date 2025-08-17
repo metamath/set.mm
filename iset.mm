@@ -114376,6 +114376,16 @@ $)
       wfn fnovex iunexg eqeltrd ) ABDZAECFAGCHZIJZKJZLZMABCNUOFMDURMDZCFOUSMDPU
       OUTCFKMMQUKUOAMDUPFDZUQMDUTUAABUBUOVAUCZUQSVBGRDUPRDZUQSDUDVAVCUOUPUEUFGU
       PUGTUHAUQMMKULUIUJCFURMMUMTUN $.
+
+    $( The set of words over a set is a set, bidirectional version.
+       (Contributed by Mario Carneiro, 26-Feb-2016.)  (Proof shortened by AV,
+       23-Nov-2018.) $)
+    wrdexb $p |- ( S e. _V <-> Word S e. _V ) $=
+      ( vs cvv wcel cword wrdexg cuni wss cv cc0 cop wa csn c0ex opex snopiswrd
+      vex snid sylancr uniexg elunii opeluu syl simprd ssriv 3syl ssexg impbii
+      ) ACDZAEZCDZACFUKAUJGZGZGZHUNCDZUIBAUNBIZADZJUNDZUPUNDZUQJUPKZULDZURUSLUQ
+      UTUTMZDVBUJDVAUTJUPNBQZORUPAPUTVBUJUASJUPULNVCUBUCUDUEUKULCDUMCDUOUJCTULC
+      TUMCTUFAUNCUGSUH $.
   $}
 
 
