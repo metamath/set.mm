@@ -49218,6 +49218,14 @@ $)
     ( wfo wa wceq wfn fofn fndmu syl2an crn forn sylan9req jca ) ABEFZCDEFZGACH
     ZBDHQEAIECISRABEJCDEJACEKLQRBEMDABENCDENOP $.
 
+  $( A function is a function onto the image of its domain.  (Contributed by
+     AV, 1-Dec-2022.) $)
+  fimadmfo $p |- ( F : A --> B -> F : A -onto-> ( F " A ) ) $=
+    ( wf cdm wceq cima wfo fdm wa crn wfn ffn adantr dffn4 sylib imaeq2 imadmrn
+    wb eqtrdi eqcoms adantl foeq3 syl mpbird mpdan ) ABCDZCEZAFZACAGZCHZABCIUGU
+    IJZUKACKZCHZULCALZUNUGUOUIABCMNACOPULUJUMFZUKUNSUIUPUGUPAUHAUHFUJCUHGUMAUHC
+    QCRTUAUBUJUMACUCUDUEUF $.
+
   $( Restriction of a function.  (Contributed by NM, 4-Mar-1997.) $)
   fores $p |- ( ( Fun F /\ A C_ dom F ) ->
               ( F |` A ) : A -onto-> ( F " A ) ) $=
