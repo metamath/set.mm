@@ -114552,6 +114552,17 @@ $)
     cn sylan lbfzo0 sylibr wrdsymbcl syldan ) BACDZEBFGZHIZJJUEKLDZJBGADUDUFMUE
     RDZUGUDUENDZUFUHABOUHUIUFMUEPQSUETUAJABUBUC $.
 
+  ${
+    $d V v $.  $d W v $.
+    $( A word of length 1 starts with a symbol.  (Contributed by AV,
+       20-Jul-2018.)  (Proof shortened by AV, 19-Oct-2018.) $)
+    wrdlen1 $p |- ( ( W e. Word V /\ ( # ` W ) = 1 )
+                    -> E. v e. V ( W ` 0 ) = v ) $=
+      ( cword wcel chash cfv c1 wceq wa cc0 cv wrex cle wbr 1le1 breq2 wrdsymb1
+      mpbiri sylan2 clel5 sylib ) CBDEZCFGZHIZJKCGZBEZUFALIABMUEUCHUDNOZUGUEUHH
+      HNOPUDHHNQSBCRTABUFUAUB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
