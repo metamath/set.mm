@@ -114513,6 +114513,17 @@ $)
       UGUEECUDUFCAHRSUIUHUJCEABDUAUBUC $.
   $}
 
+  $( A symbol at a position "outside" of a word.  (Contributed by Alexander van
+     der Vekens, 26-May-2018.)  (Proof shortened by AV, 2-May-2020.) $)
+  wrdsymb0 $p |- ( ( W e. Word V /\ I e. ZZ )
+                   -> ( ( I < 0 \/ ( # ` W ) <_ I ) -> ( W ` I ) = (/) ) ) $=
+    ( cword wcel cz wa cvv cc0 clt wbr chash cfv cle wo cdm wn c0 wceq wi wrddm
+    elex adantl cfzo co lencl nn0zd wnel simpr 0zd simpl nelfzo syl3anc biimpar
+    wb df-nel sylib eleq2 notbid imbitrrid exp4c sylc imp ndmfvg syl6an ) CBDEZ
+    AFEZGAHEZAIJKCLMZANKOZACPZEZQZACMRSVGVHVFAFUBUCVFVGVJVMTZVFVKIVIUDUEZSZVIFE
+    ZVGVNTBCUAVFVIBCUFUGVPVQVGVJVMVQVGGZVJGZVMVPAVOEZQZVSAVOUHZWAVRWBVJVRVGIFEV
+    QWBVJUOVQVGUIVRUJVQVGUKAIVIULUMUNAVOUPUQVPVLVTVKVOAURUSUTVAVBVCACVDVE $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
