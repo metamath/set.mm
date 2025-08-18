@@ -56458,7 +56458,6 @@ $)
     $( Implications for the value of an operation, defined by the maps-to
        notation with a class abstraction as a result, having an element.  Here,
        the base set of the class abstraction depends on the first operand.
-       Version of ~ elovmporab1 with a disjoint variable condition.
        (Contributed by Alexander van der Vekens, 15-Jul-2018.)  (Revised by GG,
        26-Jan-2024.) $)
     elovmporab1w $p |- ( Z e. ( X O Y )
