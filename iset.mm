@@ -114570,6 +114570,15 @@ $)
     ( cword wcel c0 wne cc0 cfv c1 chash cle wbr wrdlenge1n0 wrdsymb1 ex sylbid
     imp ) BACDZBEFZGBHADZRSIBJHKLZTABMRUATABNOPQ $.
 
+  $( The first symbol of a nonempty word is element of the alphabet for the
+     word.  (Contributed by AV, 29-Sep-2018.)  (Proof shortened by AV,
+     14-Oct-2018.) $)
+  fstwrdne0 $p |- ( ( N e. NN /\ ( W e. Word V /\ ( # ` W ) = N ) )
+                    -> ( W ` 0 ) e. V ) $=
+    ( cn wcel cword chash cfv wa c1 cle wbr cc0 simprl nnge1 adantr wb ad2antll
+    wceq breq2 mpbird wrdsymb1 syl2anc ) ADEZCBFEZCGHZASZIZIZUEJUFKLZMCHBEUDUEU
+    GNUIUJJAKLZUDUKUHAOPUGUJUKQUDUEUFAJKTRUABCUBUC $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
