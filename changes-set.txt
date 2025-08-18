@@ -92,6 +92,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+18-Aug-25 cbvsumi   ---         deleted - redundant with cbvsum
+18-Aug-25 cbvsum    [same]      Removed unneeded hypotheses
  9-Aug-25 frobrhm   [same]      Moved from TA's mathbox to main set.mm
 28-Jul-25 spcimgft  spcimgfi1   Is a kind of inference form
 27-Jul-25 fnimatp   fnimatpd    Moved from TA's mathbox to main set.mm
