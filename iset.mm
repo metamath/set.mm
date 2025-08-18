@@ -114679,6 +114679,15 @@ $)
       CHVMUKTURUSVDVEVEUPULUMUNUQ $.
   $}
 
+  $( A word truncated by a symbol is a word.  (Contributed by AV,
+     29-Jan-2021.) $)
+  wrdred1 $p |- ( F e. Word S
+                  -> ( F |` ( 0 ..^ ( ( # ` F ) - 1 ) ) ) e. Word S ) $=
+    ( cword wcel cc0 chash cfv cfzo co wf cn0 c1 cmin cres wrdf lencl wa cz syl
+    syl2anc wss nn0z fzossrbm1 fssres sylan2 adantl peano2zm iswrdiz ) BACZDEBF
+    GZHIZABJZUJKDZBEUJLMIZHIZNZUIDZABOABPULUMQZUOAUPJZUNRDZUQUMULUOUKUAZUSUMUJR
+    DZVAUJUBZUJUCSUKAUOBUDUEURVBUTUMVBULVCUFUJUGSAUNUPUHTT $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
