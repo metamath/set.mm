@@ -114579,6 +114579,21 @@ $)
     wceq breq2 mpbird wrdsymb1 syl2anc ) ADEZCBFEZCGHZASZIZIZUEJUFKLZMCHBEUDUEU
     GNUIUJJAKLZUDUKUHAOPUGUJUKQUDUEUFAJKTRUABCUBUC $.
 
+  ${
+    $d U i $.  $d W i $.
+    $( Two words are equal iff they have the same length and the same symbol at
+       each position.  (Contributed by AV, 13-Apr-2018.)  (Revised by JJ,
+       30-Dec-2023.) $)
+    eqwrd $p |- ( ( U e. Word S /\ W e. Word T )
+          -> ( U = W <-> ( ( # ` U ) = ( # ` W ) /\ A. i e. ( 0 ..^ ( # ` U ) )
+                                                 ( U ` i ) = ( W ` i ) ) ) ) $=
+      ( cword wcel wa wceq cc0 chash cfv cfzo wfn wrdfn cn0 lencl hashfzo0 syl
+      co cv wral wb eqfnfv2 syl2an fveq2 eqeqan12d imbitrid oveq2 impbid1 bitrd
+      anbi1d ) CAFGZEBFGZHZCEIZJCKLZMTZJEKLZMTZIZDUAZCLVBELIDURUBZHZUQUSIZVCHUM
+      CURNEUTNUPVDUCUNACOBEODURUTCEUDUEUOVAVEVCUOVAVEVAURKLZUTKLZIUOVEURUTKUFUM
+      UNVFUQVGUSUMUQPGVFUQIACQUQRSUNUSPGVGUSIBEQUSRSUGUHUQUSJMUIUJULUK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
