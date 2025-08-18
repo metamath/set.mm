@@ -56433,6 +56433,24 @@ $)
   $}
 
   ${
+    $d M x y z $.  $d X x y z $.  $d Y x y z $.  $d Z z $.
+    elovmporab.o $e |- O = ( x e. _V , y e. _V |-> { z e. M | ph } ) $.
+    elovmporab.v $e |- ( ( X e. _V /\ Y e. _V ) -> M e. _V ) $.
+    $( Implications for the value of an operation, defined by the maps-to
+       notation with a class abstraction as a result, having an element.
+       (Contributed by Alexander van der Vekens, 15-Jul-2018.) $)
+    elovmporab $p |- ( Z e. ( X O Y ) -> ( X e. _V /\ Y e. _V /\ Z e. M ) ) $=
+      ( cvv wcel wa crab wsbc wceq cv nfcv nfel1 co w3a elmpocl cmpo wb sbceq1a
+      a1i sylan9bbr adantl rabbidv eqidd simpl simpr rabexg nfan nfsbc1v nfrabw
+      syl nfsbcw ovmpodxf eleq2d df-3an simplbi2com elrabi syl11 sylbid mpcom )
+      GLMZHLMZNZIGHFUAZMZVHVIIEMZUBZBCLLADEOZGHFIJUCVJVLIACHPZBGPZDEOZMZVNVJVKV
+      RIVJBCGHLLVOVRFLLFBCLLVOUDQVJJUGVJBRGQZCRHQZNZNAVQDEWBAVQUEVJWAAVPVTVQACH
+      UFVPBGUFUHUIUJVJVTNLUKVHVIULVHVIUMVJELMVRLMKVQDELUNURVHVIBBGLBGSTBHLBHSZT
+      UOVHVICCGLCGSZTCHLCHSTUOWDWCVQBDEVPBGUPBESUQVQCDEVPCBGWDACHUPUSCESUQUTVAV
+      MVJVNVSVNVJVMVHVIVMVBVCVQDIEVDVEVFVG $.
+  $}
+
+  ${
     $d x y A $.  $d x y B $.  $d y C $.  $d x D $.  $d x y ph $.
     f1od.1 $e |- F = ( x e. A |-> C ) $.
     ${
