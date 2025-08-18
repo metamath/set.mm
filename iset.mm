@@ -114479,6 +114479,22 @@ $)
       GUTAEBCUHVCVGUIUNEBDOUKULUM $.
   $}
 
+  ${
+    $d N w $.  $d V w $.  $d W w $.  $d X w $.
+    $( Words of a fixed length are mappings from a fixed half-open integer
+       interval.  (Contributed by Alexander van der Vekens, 25-Mar-2018.)
+       (Proof shortened by AV, 13-May-2020.) $)
+    wrdnval $p |- ( ( V e. X /\ N e. NN0 )
+                 -> { w e. Word V | ( # ` w ) = N } = ( V ^m ( 0 ..^ N ) ) ) $=
+      ( wcel cn0 wa cv chash cfv wceq cword crab cab cc0 cfzo co wf cfn cz cmap
+      df-rab wb nn0z adantl fzofig sylancr elmapg syldan simpr simplr iswrdinn0
+      0z syl2anc fnfzo0hash adantll jca ex wrdf oveq2 feq2d syl5ibcom imp bitrd
+      impbid1 eqabdv eqtr4id ) CDEZBFEZGZAHZIJZBKZACLZMVKVNEZVMGZANCOBPQZUAQZVM
+      AVNUBVJVPAVRVJVKVREZVQCVKRZVPVHVIVQSEZVSVTUCVJOTEBTEZWAUMVIWBVHBUDUEOBUFU
+      GCVQVKDSUHUIVJVTVPVJVTVPVJVTGZVOVMWCVTVIVOVJVTUJVHVIVTUKCBVKULUNVIVTVMVHC
+      VKBUOUPUQURVOVMVTVOOVLPQZCVKRVMVTCVKUSVMWDVQCVKVLBOPUTVAVBVCVEVDVFVG $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
