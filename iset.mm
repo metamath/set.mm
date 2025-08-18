@@ -114545,6 +114545,13 @@ $)
     BACDZEBFGZHIZJZBKLZMUMHIZUOMTDZETDZUMTDZNZMEOIZUNJUQULVAUNULURUSUTULPUSULQR
     ULUMABUAUBUCSUOUNVBULUNUDUEUFMEUMUGUHULUPUQUIUNABUJSUK $.
 
+  $( The first symbol of a nonempty word over an alphabet belongs to the
+     alphabet.  (Contributed by Alexander van der Vekens, 28-Jun-2018.) $)
+  wrdsymb1 $p |- ( ( W e. Word V /\ 1 <_ ( # ` W ) ) -> ( W ` 0 ) e. V ) $=
+    ( cword wcel c1 chash cfv cle wbr cc0 cfzo co wa cn0 lencl elnnnn0c biimpri
+    cn sylan lbfzo0 sylibr wrdsymbcl syldan ) BACDZEBFGZHIZJJUEKLDZJBGADUDUFMUE
+    RDZUGUDUENDZUFUHABOUHUIUFMUEPQSUETUAJABUBUC $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
