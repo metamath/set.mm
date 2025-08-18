@@ -114369,6 +114369,20 @@ $)
       ABCNUFUICKUDKEZUFOZUIUFUJUFPUKUHUEABUKUGUDFHABUDQSTUAUBUC $.
   $}
 
+  $( A zero-based sequence is a word.  In ~ iswrdinn0 we can specify a length
+     as an nonnegative integer.  However, it will occasionally be helpful to
+     allow a negative length, as well as zero, to specify an empty sequence.
+     (Contributed by Jim Kingdon, 18-Aug-2025.) $)
+  iswrdiz $p |- ( ( W : ( 0 ..^ L ) --> S /\ L e. ZZ ) -> W e. Word S ) $=
+    ( cc0 cfzo co wf cz wcel clt wbr wceq cn0 simpll cle simplr 0red zred simpr
+    wa cword ltled elnn0z sylanbrc iswrdinn0 syl2anc 0nn0 eleq1 mpbii adantl c0
+    wb fzon sylancr mpbid fzo0 eqtr4di feq2d sylancl w3o ztri3or mpan mpjao3dan
+    0z ) DBEFZACGZBHIZTZDBJKZCAUAIZDBLZBDJKZVHVITZVFBMIZVJVFVGVINVMVGDBOKVNVFVG
+    VIPZVMDBVMQVMBVORVHVISUBBUCUDABCUEZUFVHVKTVFVNVJVFVGVKNVKVNVHVKDMIZVNUGDBMU
+    HUIUJVPUFVHVLTZDDEFZACGZVQVJVRVFVTVFVGVLNVRVEVSACVRVEUKVSVRBDOKZVEUKLZVRBDV
+    RBVFVGVLPZRVRQVHVLSUBVRDHIZVGWAWBULVDWCDBUMUNUODUPUQURUOUGADCUEUSVGVIVKVLUT
+    ZVFWDVGWEVDDBVAVBUJVC $.
+
   $( The indices of a word (i.e. its domain regarded as function) are elements
      of an open range of nonnegative integers (of length equal to the length of
      the word).  (Contributed by AV, 2-May-2020.) $)
