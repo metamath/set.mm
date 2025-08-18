@@ -114648,6 +114648,23 @@ $)
       UNVFUQVGUSUMUQPGVFUQIACQUQRSUNUSPGVGUSIBEQUSRSUGUHUQUSJMUIUJULUK $.
   $}
 
+  ${
+    $d V v x y z $.  $d Y v y z $.  $d Z z $.
+    elovmpowrd.o $e |- O = ( v e. _V , y e. _V |-> { z e. Word v | ph } ) $.
+    $( Implications for the value of an operation defined by the maps-to
+       notation with a class abstraction of words as a result having an
+       element.  Note that ` ph ` may depend on ` z ` as well as on ` v ` and
+       ` y ` .  (Contributed by Alexander van der Vekens, 15-Jul-2018.) $)
+    elovmpowrd $p |- ( Z e. ( V O Y )
+                        -> ( V e. _V /\ Y e. _V /\ Z e. Word V ) ) $=
+      ( vx wcel cvv cv cword csb w3a crab cmpo wa adantr co wceq csbwrdg eqcomd
+      rabeqdv mpoeq3ia eqtri wrdexg elovmporab1w wb eleq2d 3expia sylbid 3impia
+      eqeltrd id syl ) HFGEUAKFLKZGLKZHJFJMNZOZKZPURUSHFNZKZPZADBCJUTEFGHEDBLLA
+      CDMZNZQZRDBLLACJVFUTOZQZRIDBLLVHVJVFLKZBMLKZSACVGVIVKVGVIUBVLVKVIVGJVFLUC
+      UDTUEUFUGURVALKUSURVAVCLJFLUCZFLUHUOTUIURUSVBVEURUSSVBVDVEURVBVDUJUSURVAV
+      CHVMUKTURUSVDVEVEUPULUMUNUQ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
