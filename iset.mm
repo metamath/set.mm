@@ -114493,6 +114493,13 @@ $)
       AVNUBVJVPAVRVJVKVREZVQCVKRZVPVHVIVQSEZVSVTUCVJOTEBTEZWAUMVIWBVHBUDUEOBUFU
       GCVQVKDSUHUIVJVTVPVJVTVPVJVTGZVOVMWCVTVIVOVJVTUJVHVIVTUKCBVKULUNVIVTVMVHC
       VKBUOUPUQURVOVMVTVOOVLPQZCVKRVMVTCVKUSVMWDVQCVKVLBOPUTVAVBVCVEVDVFVG $.
+
+    $( Words as a mapping.  (Contributed by Thierry Arnoux, 4-Mar-2020.) $)
+    wrdmap $p |- ( ( V e. X /\ N e. NN0 )
+     -> ( ( W e. Word V /\ ( # ` W ) = N ) <-> W e. ( V ^m ( 0 ..^ N ) ) ) ) $=
+      ( vw cword wcel chash cfv wceq wa cv crab cn0 cc0 cfzo cmap fveqeq2 elrab
+      co wrdnval eleq2d bitr3id ) CBFZGCHIAJZKCELZHIAJZEUDMZGBDGANGKZCBOAPTQTZG
+      UGUEECUDUFCAHRSUIUHUJCEABDUAUBUC $.
   $}
 
 
