@@ -104240,6 +104240,17 @@ $)
     ( cfzo co wcel cuz cfv cz clt wbr elfzo2 simp1bi ) ABCDEFABGHFCIFACJKABCLM
     $.
 
+  $( An integer not being a member of a half-open finite set of integers.
+     (Contributed by AV, 29-Apr-2020.) $)
+  nelfzo $p |- ( ( K e. ZZ /\ M e. ZZ /\ N e. ZZ )
+                 -> ( K e/ ( M ..^ N ) <-> ( K < M \/ N <_ K ) ) ) $=
+    ( cfzo co wnel wcel wn cz w3a clt wbr cle wo wa wb syl2anc syl cr zre simp2
+    df-nel wdc simp1 zdcle ianordc elfzo notbid zltnle anim12ci 3adant2 orbi12d
+    lenlt 3bitr4d bitrid ) ABCDEZFAUPGZHZAIGZBIGZCIGZJZABKLZCAMLZNZAUPUBVBBAMLZ
+    ACKLZOZHZVFHZVGHZNZURVEVBVFUCZVIVLPVBUTUSVMUSUTVAUAZUSUTVAUDZBAUEQVFVGUFRVB
+    UQVHABCUGUHVBVCVJVDVKVBUSUTVCVJPVOVNABUIQVBCSGZASGZOZVDVKPUSVAVRUTUSVQVAVPA
+    TCTUJUKCAUMRULUNUO $.
+
   $( Decidability of membership in a half-open integer interval.  (Contributed
      by Jim Kingdon, 25-Aug-2022.) $)
   fzodcel $p |- ( ( K e. ZZ /\ M e. ZZ /\ N e. ZZ ) ->
