@@ -114688,6 +114688,20 @@ $)
     GZHIZABJZUJKDZBEUJLMIZHIZNZUIDZABOABPULUMQZUOAUPJZUNRDZUQUMULUOUKUAZUSUMUJR
     DZVAUJUBZUJUCSUKAUOBUDUEURVBUTUMVBULVCUFUJUGSAUNUPUHTT $.
 
+  $( The length of a word truncated by a symbol.  (Contributed by Alexander van
+     der Vekens, 1-Nov-2017.)  (Revised by AV, 29-Jan-2021.) $)
+  wrdred1hash $p |- ( ( F e. Word S /\ 1 <_ ( # ` F ) )
+                      -> ( # ` ( F |` ( 0 ..^ ( ( # ` F ) - 1 ) ) ) )
+                         = ( ( # ` F ) - 1 ) ) $=
+    ( cword wcel c1 chash cfv cle wbr cc0 cmin co cfzo wceq cn0 wfn wa ad2antrl
+    cz syl cres lencl wf wrdf ffn cfn wss nn0z fzossrbm1 fnssresb adantr mpbird
+    wi wb peano2zm fzofig sylancr fihashfn syl2anc 1nn0 nn0sub2 mp3an1 hashfzo0
+    0z adantl eqtrd ex 3syl mpand imp ) BACDZEBFGZHIZBJVLEKLZMLZUAZFGZVNNZVKVLO
+    DZVMVRABUBVKJVLMLZABUCBVTPZVSVMQZVRUMABUDVTABUEWAWBVRWAWBQZVQVOFGZVNWCVPVOP
+    ZVOUFDZVQWDNWCWEVOVTUGZVSWGWAVMVSVLSDZWGVLUHZVLUITRWAWEWGUNWBVTVOBUJUKULWCJ
+    SDVNSDZWFVDWCWHWJVSWHWAVMWIRVLUOTJVNUPUQVOVPURUSWBWDVNNZWAWBVNODZWKEODVSVMW
+    LUTEVLVAVBVNVCTVEVFVGVHVIVJ $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
