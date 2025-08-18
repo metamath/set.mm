@@ -149812,6 +149812,16 @@ $)
   $}
 
   ${
+    $d x y z B $.  $d x y z G $.  $d x y z .+ $.  $d x y z W $.  $d x y z X $.
+    gsumwcl.b $e |- B = ( Base ` G ) $.
+    $( Closure of the composite of a word in a structure ` G ` .  (Contributed
+       by Stefan O'Rear, 15-Aug-2015.) $)
+    gsumwcl $p |- ( ( G e. Mnd /\ W e. Word B ) -> ( G gsum W ) e. B ) $=
+      ( cmnd wcel csubmnd cfv cword cgsu co submid gsumwsubmcl sylan ) BEFABGHF
+      CAIFBCJKAFABDLABCMN $.
+  $}
+
+  ${
     $d B x y $.  $d F x y $.  $d G x y $.  $d M x y $.  $d N x y $.
     $d ph x y $.
     gsumcl.b $e |- B = ( Base ` G ) $.
