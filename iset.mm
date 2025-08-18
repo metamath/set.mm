@@ -114537,6 +114537,14 @@ $)
     ( cword wcel c0 wne chash cfv cn lennncl ex cle nnge1 wrdlenge1n0 imbitrrid
     c1 wbr impbid ) BACDZBEFZBGHZIDZSTUBABJKUBTSPUALQUAMABNOR $.
 
+  $( A word with length at least 2 is not empty.  (Contributed by AV,
+     18-Jun-2018.)  (Proof shortened by AV, 14-Oct-2018.) $)
+  wrdlenge2n0 $p |- ( ( W e. Word V /\ 2 <_ ( # ` W ) ) -> W =/= (/) ) $=
+    ( cword wcel c2 chash cfv cle wbr wa c0 wne c1 w3a clt 1red 2re a1i adantr
+    cr lencl nn0red 3jca simpr 1lt2 jctil ltleletr sylc wb wrdlenge1n0 mpbird )
+    BACDZEBFGZHIZJZBKLZMUMHIZUOMTDZETDZUMTDZNZMEOIZUNJUQULVAUNULURUSUTULPUSULQR
+    ULUMABUAUBUCSUOUNVBULUNUDUEUFMEUMUGUHULUPUQUIUNABUJSUK $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
