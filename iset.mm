@@ -114524,6 +114524,13 @@ $)
     ZVGVNTBCUAVFVIBCUFUGVPVQVGVJVMVQVGGZVJGZVMVPAVOEZQZVSAVOUHZWAVRWBVJVRVGIFEV
     QWBVJUOVQVGUIVRUJVQVGUKAIVIULUMUNAVOUPUQVPVLVTVKVOAURUSUTVAVBVCACVDVE $.
 
+  $( A word with length at least 1 is not empty.  (Contributed by AV,
+     14-Oct-2018.) $)
+  wrdlenge1n0 $p |- ( W e. Word V -> ( W =/= (/) <-> 1 <_ ( # ` W ) ) ) $=
+    ( cword cc0 chash cfv clt wbr c0 wne c1 cle cfn wb wrdfin fihashneq0 syl cz
+    wcel lencl nn0zd zgt0ge1 bitr3d ) BACSZDBEFZGHZBIJZKUELHZUDBMSUFUGNABOBPQUD
+    UERSUFUHNUDUEABTUAUEUBQUC $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
