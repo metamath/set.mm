@@ -56451,6 +56451,30 @@ $)
   $}
 
   ${
+    $d M x y z $.  $d X x y z $.  $d Y x y z $.  $d Z z $.  $d m x y z $.
+    elovmporab1w.o $e |- O = ( x e. _V , y e. _V
+                              |-> { z e. [_ x / m ]_ M | ph } ) $.
+    elovmporab1w.v $e |- ( ( X e. _V /\ Y e. _V ) -> [_ X / m ]_ M e. _V ) $.
+    $( Implications for the value of an operation, defined by the maps-to
+       notation with a class abstraction as a result, having an element.  Here,
+       the base set of the class abstraction depends on the first operand.
+       Version of ~ elovmporab1 with a disjoint variable condition.
+       (Contributed by Alexander van der Vekens, 15-Jul-2018.)  (Revised by GG,
+       26-Jan-2024.) $)
+    elovmporab1w $p |- ( Z e. ( X O Y )
+                         -> ( X e. _V /\ Y e. _V /\ Z e. [_ X / m ]_ M ) ) $=
+      ( cvv wcel wa csb cv wceq nfcv nfel1 co w3a crab elmpocl wsbc cmpo csbeq1
+      a1i ad2antrl wb sbceq1a sylan9bbr adantl rabeqbidv eqidd simpl rabexg syl
+      simpr nfan nfcsbw nfrabw nfsbcw ovmpodxf eleq2d df-3an simplbi2com elrabi
+      nfsbc1v syl11 sylbid mpcom ) HMNZIMNZOZJHIGUAZNZVMVNJEHFPZNZUBZBCMMADEBQZ
+      FPZUCZHIGJKUDVOVQJACIUEZBHUEZDVRUCZNZVTVOVPWFJVOBCHIMMWCWFGMMGBCMMWCUFRVO
+      KUHVOWAHRZCQIRZOZOAWEDWBVRWHWBVRRVOWIEWAHFUGUIWJAWEUJVOWIAWDWHWEACIUKWDBH
+      UKULUMUNVOWHOMUOVMVNUPVMVNUSVOVRMNWFMNLWEDVRMUQURVMVNBBHMBHSZTBIMBISZTUTV
+      MVNCCHMCHSZTCIMCISTUTWMWLWEBDVRWDBHVIBEHFWKBFSVAVBWECDVRWDCBHWMACIVIVCCEH
+      FWMCFSVAVBVDVEVSVOVTWGVTVOVSVMVNVSVFVGWEDJVRVHVJVKVL $.
+  $}
+
+  ${
     $d x y A $.  $d x y B $.  $d y C $.  $d x D $.  $d x y ph $.
     f1od.1 $e |- F = ( x e. A |-> C ) $.
     ${
