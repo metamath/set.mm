@@ -114531,6 +114531,12 @@ $)
     wcel lencl nn0zd zgt0ge1 bitr3d ) BACSZDBEFZGHZBIJZKUELHZUDBMSUFUGNABOBPQUD
     UERSUFUHNUDUEABTUAUEUBQUC $.
 
+  $( The length of a word is a positive integer iff the word is not empty.
+     (Contributed by AV, 22-Mar-2022.) $)
+  len0nnbi $p |- ( W e. Word S -> ( W =/= (/) <-> ( # ` W ) e. NN ) ) $=
+    ( cword wcel c0 wne chash cfv cn lennncl ex cle nnge1 wrdlenge1n0 imbitrrid
+    c1 wbr impbid ) BACDZBEFZBGHZIDZSTUBABJKUBTSPUALQUAMABNOR $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
