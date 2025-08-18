@@ -27557,6 +27557,19 @@ $)
   $}
 
   ${
+    $d x y $.
+    nfsbcw.1 $e |- F/_ x A $.
+    nfsbcw.2 $e |- F/ x ph $.
+    $( Bound-variable hypothesis builder for class substitution.  Version of
+       ~ nfsbc with a disjoint variable condition, which in the future may make
+       it possible to reduce axiom usage.  (Contributed by NM, 7-Sep-2014.)
+       (Revised by GG, 10-Jan-2024.) $)
+    nfsbcw $p |- F/ x [. A / y ]. ph $=
+      ( wsbc wnf wtru nftru wnfc a1i nfsbcdw mptru ) ACDGBHIABCDCJBDKIELABHIFLM
+      N $.
+  $}
+
+  ${
     $d x z $.  $d y z $.  $d z A $.  $d z B $.  $d z ph $.
     nfcsbd.1 $e |- F/ y ph $.
     nfcsbd.2 $e |- ( ph -> F/_ x A ) $.
