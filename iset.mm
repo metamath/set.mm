@@ -114563,6 +114563,13 @@ $)
       HNOPUDHHNQSBCRTABUFUAUB $.
   $}
 
+  $( The first symbol of a nonempty word is element of the alphabet for the
+     word.  (Contributed by AV, 28-Sep-2018.)  (Proof shortened by AV,
+     14-Oct-2018.) $)
+  fstwrdne $p |- ( ( W e. Word V /\ W =/= (/) ) -> ( W ` 0 ) e. V ) $=
+    ( cword wcel c0 wne cc0 cfv c1 chash cle wbr wrdlenge1n0 wrdsymb1 ex sylbid
+    imp ) BACDZBEFZGBHADZRSIBJHKLZTABMRUATABNOPQ $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
