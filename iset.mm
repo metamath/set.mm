@@ -31148,17 +31148,6 @@ $)
 
   ${
     $d x A $.
-    rgenm.1 $e |- ( ( E. x x e. A /\ x e. A ) -> ph ) $.
-    $( Generalization rule that eliminates an inhabited class requirement.
-       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
-    rgenm $p |- A. x e. A ph $=
-      ( wral cv wcel wi wal wex nfe1 alrimi 19.38 ax-mp pm5.4 albii mpbi df-ral
-      ex mpbir ) ABCEBFCGZAHZBIZUAUBHZBIZUCUABJZUCHUEUFUBBUABKUFUAADSLUAUBBMNUD
-      UBBUAAOPQABCRT $.
-  $}
-
-  ${
-    $d x A $.
     ralf0.1 $e |- -. ph $.
     $( The quantification of a falsehood is vacuous when true.  (Contributed by
        NM, 26-Nov-2005.) $)
@@ -50667,6 +50656,19 @@ $)
       ( cfv cmpt csb fveq1d wcel wceq csbied eqeltrd eqid fvmpts syl2anc 3eqtrd
       ) ACGMCBFDNZMZBCDOZEACGUEIPACFQUGHQUFUGRKAUGEHABCDEFKJSZLTBCDFUEHUEUAUBUC
       UHUD $.
+  $}
+
+  ${
+    $d A x $.  $d C x $.  $d D x $.  $d ph x $.
+    fvmptd2.1 $e |- F = ( x e. D |-> B ) $.
+    fvmptd2.2 $e |- ( ( ph /\ x = A ) -> B = C ) $.
+    fvmptd2.3 $e |- ( ph -> A e. D ) $.
+    fvmptd2.4 $e |- ( ph -> C e. V ) $.
+    $( Deduction version of ~ fvmpt (where the definition of the mapping does
+       not depend on the common antecedent ` ph ` ).  (Contributed by Glauco
+       Siliprandi, 23-Oct-2021.) $)
+    fvmptd2 $p |- ( ph -> ( F ` A ) = C ) $=
+      ( cmpt wceq a1i fvmptd ) ABCDEFGHGBFDMNAIOJKLP $.
   $}
 
   ${
@@ -94847,6 +94849,14 @@ $)
     VFBUTWBWDRGUTWBBBFQZWDURUSWBWFIABBUMUNUSWDWFIURBKUOMNUTVLVMWCVFIZVOVPVLVMVS
     WGVTVAVCRUPSTUSWEBIZURUSVQVRWHOPBRUHUKUOULUQ $.
 
+  $( Subtracting the half of a number from the number yields the half of the
+     number.  (Contributed by AV, 28-Jun-2021.) $)
+  subhalfhalf $p |- ( A e. CC -> ( A - ( A / 2 ) ) = ( A / 2 ) ) $=
+    ( cc wcel c2 cdiv co cmin cmul id 2cnd cc0 cap wbr divcanap1d eqcomd oveq1d
+    2ap0 a1i c1 3eqtrd halfcl mulcomd mulsubfacd wceq 2m1e1 mullidd ) ABCZAADEF
+    ZGFUHDHFZUHGFDUHHFZUHGFZUHUGAUIUHGUGUIAUGADUGIUGJZDKLMUGQRNOPUGUIUJUHGUGUHD
+    AUAZULUBPUGUKDSGFZUHHFSUHHFUHUGDUHULUMUCUGUNSUHHUNSUDUGUERPUGUHUMUFTT $.
+
   $( TODO - use this to reduce:
   Statement "lt2add" is directly referenced in the proofs of 9 statements:
     2climnn 2climnn0 climaddlem3 climmullem5 climcaui ser1f0i
@@ -105214,6 +105224,15 @@ $)
     UOVAUAZUQVAUOUBABUCZQZRTUDUEUOUQSUMUOVBUQUOVAUFVCQUGULUPUQSZUKULBLDZVEBMVFU
     PUQVFUPEVAUQBAOVDRTRUHUIUJ $.
 
+  $( Rational ` < ` is decidable.  (Contributed by Jim Kingdon, 7-Aug-2025.) $)
+  qdclt $p |- ( ( A e. QQ /\ B e. QQ ) -> DECID A < B ) $=
+    ( cq wcel wa clt wbr wceq w3o wdc qtri3or cr wi qre wn wo orc sylibr adantr
+    df-dc a1i ltnr wb breq2 adantl mtbid olc ex ltnsym ancoms syl6 3jaod syl2an
+    syl mpd ) ACDZBCDZEABFGZABHZBAFGZIZURJZABKUPALDZBLDZVAVBMUQANBNVCVDEZURVBUS
+    UTURVBMVEURURUROZPZVBURVFQURTZRUAVCUSVBMVDVCUSVBVCUSEZVFVBVIAAFGZURVCVJOUSA
+    UBSUSVJURUCVCABAFUDUEUFVFVGVBVFURUGVHRZUNUHSVEUTVFVBVDVCUTVFMBAUIUJVKUKULUM
+    UO $.
+
   ${
     $d A j m $.  $d A m n $.  $d K j m $.  $d K m n $.  $d m n ph $.
     exbtwnzlemstep.k $e |- ( ph -> K e. NN ) $.
@@ -105995,6 +106014,34 @@ $)
     VIWAPCQXGMUVIVIPXBSZUUHUUPVNPXCWQYBYAHXDSXEUUPUVIUUQUVAUVJAXFXHUURYCTOZUUST
     OZYETOZWMZUUTUVAWDYFXIUUPUVOUUQUUPUVLUVMUVNUUPUVEUVLUVHYBXJSUUPUVFUVMUVKYAX
     JSUUPUVIUVNUVJUVIYDAXKXLSXCWQYCUUSYEXRSXMXNXOYNWLUBXPVMXQXSSXS $.
+
+  $( The floor of an integer greater than 1, divided by 4 is less than or equal
+     to the half of the integer minus 1.  (Contributed by AV, 5-Jul-2021.)
+     (Proof shortened by AV, 9-Jul-2022.) $)
+  fldiv4lem1div2uz2 $p |- ( N e. ( ZZ>= ` 2 )
+                         -> ( |_ ` ( N / 4 ) ) <_ ( ( N - 1 ) / 2 ) ) $=
+    ( c2 cuz cfv wcel c4 cdiv co cfl c1 cmin cz 4nn a1i cr syl cle wbr 2rp wceq
+    cn cq eluzelz znq sylancl flqcld zred eluzelre nndivred peano2rem rehalfcld
+    flqle 1red zre rehalfcl 3syl crp eluzle divge1 mp3an2i eluzelcn subhalfhalf
+    cc breqtrrd lesubd cmul 2t2e4 eqcomi oveq2d rpap0d divdivap1d eqtr4d breq1d
+    2cnd lediv1d bitr4d mpbird letrd ) ABCDEZAFGHZIDZVTAJKHZBGHZVSWAVSVTVSALEZF
+    UAEZVTUBEZBAUCZMAFUDUEZUFUGVSAFBAUHZWEVSMNUIVSWBVSAOEZWBOEWIAUJPZUKVSWFWAVT
+    QRWHVTULPVSVTWCQRZABGHZWBQRZVSJAWMVSUMWIVSWDWJWMOEWGAUNAUOUPZVSJWMAWMKHZQBU
+    QEZVSWJBAQRJWMQRSWIBAURBAUSUTVSAVCEWPWMTBAVAZAVBPVDVEVSWLWMBGHZWCQRWNVSVTWS
+    WCQVSVTABBVFHZGHWSVSFWTAGFWTTVSWTFVGVHNVIVSABBWRVSVNZXAVSBWQVSSNZVJZXCVKVLV
+    MVSWMWBBWOWKXBVOVPVQVR $.
+
+  $( The floor of a positive integer divided by 4 is less than or equal to the
+     half of the integer minus 1.  (Contributed by AV, 9-Jul-2021.) $)
+  fldiv4lem1div2 $p |- ( N e. NN
+                         -> ( |_ ` ( N / 4 ) ) <_ ( ( N - 1 ) / 2 ) ) $=
+    ( cn wcel c1 wceq c2 cuz cfv c4 cdiv co cfl cle wbr cc0 4nn mp2an cz eqtrdi
+    cmin wo elnn1uz2 clt 1lt4 cn0 wb 1nn0 divfl0 mpbi cq flqcl ax-mp zrei eqlei
+    1z znq mp1i fvoveq1 oveq1 oveq1d 2cn 2ap0 div0api 3brtr4d fldiv4lem1div2uz2
+    1m1e0 jaoi sylbi ) ABCADEZAFGHCZUAAIJKLHZADTKZFJKZMNZAUBVIVNVJVIDIJKZLHZOVK
+    VMMVPOEZVPOMNVIDIUCNZVQUDDUECIBCZVRVQUFUGPDIUHQUIVPOVPVOUJCZVPRCDRCVSVTUOPD
+    IUPQVOUKULUMUNUQADILJURVIVMOFJKOVIVLOFJVIVLDDTKOADDTUSVFSUTFVAVBVCSVDAVEVGV
+    H $.
 
   ${
     $d x A $.
@@ -156007,6 +156054,18 @@ $)
       SUCTUDUSUTUTVLVLUEVIVDOVAUTVLVLUSUTUAUSVLUTUSVKVLVMVNUMTZVPUFAVCBCDEEFVOG
       UGUHVAVKVBAJZVBVEOUSVKUTVMTZUSUTVLVQVPABCDEFGUIUJZVKVQKVEVBAVCBVBEFVOHSUK
       ULUNVAVKVQVLVQVFVGUOVRVSVPVSAVCBVBEVBFVOUPUQUR $.
+
+    ringlzd.r $e |- ( ph -> R e. Ring ) $.
+    ringlzd.x $e |- ( ph -> X e. B ) $.
+    $( The zero of a unital ring is a left-absorbing element.  (Contributed by
+       SN, 7-Mar-2025.) $)
+    ringlzd $p |- ( ph -> ( .0. .x. X ) = .0. ) $=
+      ( crg wcel co wceq ringlz syl2anc ) ACLMEBMFEDNFOJKBCDEFGHIPQ $.
+
+    $( The zero of a unital ring is a right-absorbing element.  (Contributed by
+       SN, 7-Mar-2025.) $)
+    ringrzd $p |- ( ph -> ( X .x. .0. ) = .0. ) $=
+      ( crg wcel co wceq ringrz syl2anc ) ACLMEBMEFDNFOJKBCDEFGHIPQ $.
   $}
 
   ${
@@ -158108,6 +158167,42 @@ $)
   $}
 
   ${
+    $d B x y $.  $d R x y $.
+    isnzr2.b $e |- B = ( Base ` R ) $.
+    $( Equivalent characterization of nonzero rings: they have at least two
+       elements.  (Contributed by Stefan O'Rear, 24-Feb-2015.) $)
+    isnzr2 $p |- ( R e. NzRing <-> ( R e. Ring /\ 2o ~<_ B ) ) $=
+      ( vx vy wcel crg cfv wne wa c2o cdom wbr eqid cv wceq wrex adantr cvv cbs
+      cur c0g isnzr wn ringidcl ring0cl simpr df-ne neeq1 bitr3id neeq2 rspc2ev
+      cnzr syl3anc ex wi ring1eq0 3expb necon3bd rexlimdvva impbid simpl simprl
+      cpr cen simprr enpr2d adantl ensymd wss basfn elex funfvex funfni sylancr
+      wfn eqeltrid syl prssd impel endomtr syl2anc anassrs rexlimdvaa rexlimdva
+      ssdomg 2dom impbid1 bitrd pm5.32i bitri ) BUMFBGFZBUAHZBUBHZIZJZWLKALMZJB
+      WMWNWMNZWNNZUCWLWOWQWLWODOZEOZPZUDZEAQZDAQZWQWLWOXEWLWOXEWPWMAFZWNAFZWOXE
+      WLXFWOABWMCWRUERWLXGWOABWNCWSUFRWLWOUGXCWOWMXAIZDEWMWNAAXCWTXAIWTWMPXHWTX
+      AUHWTWMXAUIUJXAWNWMUKULUNUOWLXCWODEAAWLWTAFZXAAFZJJXBWMWNWLXIXJWMWNPXBUPA
+      BWMWTXAWNCWRWSUQURUSUTVAWLXEWQWLXDWQDAWLXIJXCWQEAWLXIXJXCJZWQWLXIXKJZJZKW
+      TXAVDZVEMXNALMZWQXMXNKXLXNKVEMWLXLWTXAAAXIXKVBZXIXJXCVCZXIXJXCVFVGVHVIWLX
+      NAVJZXOXLWLASFXRXOUPWLABTHZSCWLTSVPBSFXSSFZVKBGVLXTSBTBTVMVNVOVQXNASWFVRX
+      LWTXAAXPXQVSVTKXNAWAWBWCWDWEDEAWGWHWIWJWK $.
+  $}
+
+  ${
+    opprnzr.1 $e |- O = ( oppR ` R ) $.
+    $( The opposite of a nonzero ring is nonzero, bidirectional form of
+       ~ opprnzr .  (Contributed by SN, 20-Jun-2025.) $)
+    opprnzrbg $p |- ( R e. V -> ( R e. NzRing <-> O e. NzRing ) ) $=
+      ( wcel crg cur cfv c0g wne wa cnzr opprringbg eqid oppr1g neeq12d anbi12d
+      oppr0g isnzr 3bitr4g ) ACEZAFEZAGHZAIHZJZKBFEZBGHZBIHZJZKALEBLEUAUBUFUEUI
+      ABCDMUAUCUGUDUHAUCBCDUCNZOABCUDDUDNZRPQAUCUDUJUKSBUGUHUGNUHNST $.
+
+    $( The opposite of a nonzero ring is nonzero.  (Contributed by Mario
+       Carneiro, 17-Jun-2015.) $)
+    opprnzr $p |- ( R e. NzRing -> O e. NzRing ) $=
+      ( cnzr wcel opprnzrbg ibi ) ADEBDEABDCFG $.
+  $}
+
+  ${
     ringelnzr.z $e |- .0. = ( 0g ` R ) $.
     ringelnzr.b $e |- B = ( Base ` R ) $.
     $( A ring is nonzero if it has a nonzero element.  (Contributed by Stefan
@@ -159087,6 +159182,256 @@ $)
       TZRZYFYGXEVKTZRZAYRUUAUUCVBWEQVLYSWDUUAUUEVBXMWDYRXSURWDYTUUDYFYGGYTWLUMW
       QYTUIVMVNVFYSWTUUCUUGVBXMWTYRYEURWTUUBUUFYFYGIUUBXEUMXJUUBUIVMVNVFVOVPUTU
       OUOWRXKVQVRVSVT $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Left regular elements and domains
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c RLReg $. $( Left regular elements $)
+  $c Domn $. $( Class of domains $)
+  $c IDomn $. $( Class of integral domains $)
+
+  $( Set of left-regular elements in a ring. $)
+  crlreg $a class RLReg $.
+
+  $( Class of (ring theoretic) domains. $)
+  cdomn $a class Domn $.
+
+  $( Class of integral domains. $)
+  cidom $a class IDomn $.
+
+  ${
+    $d b r x y z $.
+    $( Define the set of _left-regular elements_ in a ring as those elements
+       which are not left zero divisors, meaning that multiplying a nonzero
+       element on the left by a left-regular element gives a nonzero product.
+       (Contributed by Stefan O'Rear, 22-Mar-2015.) $)
+    df-rlreg $a |- RLReg = ( r e. _V |-> { x e. ( Base ` r ) |
+            A. y e. ( Base ` r ) ( ( x ( .r ` r ) y ) = ( 0g ` r ) ->
+                y = ( 0g ` r ) ) } ) $.
+
+    $( A _domain_ is a nonzero ring in which there are no nontrivial zero
+       divisors.  (Contributed by Mario Carneiro, 28-Mar-2015.) $)
+    df-domn $a |- Domn = { r e. NzRing | [. ( Base ` r ) / b ].
+    [. ( 0g ` r ) / z ]. A. x e. b A. y e. b ( ( x ( .r ` r ) y ) = z ->
+                    ( x = z \/ y = z ) ) } $.
+  $}
+
+  $( An _integral domain_ is a commutative domain.  (Contributed by Mario
+     Carneiro, 17-Jun-2015.) $)
+  df-idom $a |- IDomn = ( CRing i^i Domn ) $.
+
+  ${
+    $d r x y $.
+    rrgmex.e $e |- E = ( RLReg ` R ) $.
+    $( A structure whose set of left-regular elements is inhabited is a set.
+       (Contributed by Jim Kingdon, 12-Aug-2025.) $)
+    rrgmex $p |- ( A e. E -> R e. _V ) $=
+      ( vr vx vy wcel crlreg cdm wrel cfv cvv cv cmulr co c0g wceq wi cbs mpbir
+      wral crab mptrel df-rlreg releqi eleq2i biimpi relelfvdm sylancr elexd
+      cmpt ) ACHZBIJZUMIKZABILZHZBUNHUOEMFNGNZENZOLPUSQLZRURUTRSGUSTLZUBFVAUCZU
+      LZKEMVBUDIVCFGEUEUFUAUMUQCUPADUGUHABIUIUJUK $.
+  $}
+
+  ${
+    $d B r x y z $.  $d R r x y $.  $d .x. r z $.  $d .0. r z $.  $d E z $.
+    rrgval.e $e |- E = ( RLReg ` R ) $.
+    rrgval.b $e |- B = ( Base ` R ) $.
+    rrgval.t $e |- .x. = ( .r ` R ) $.
+    rrgval.z $e |- .0. = ( 0g ` R ) $.
+    $( Value of the set or left-regular elements in a ring.  (Contributed by
+       Stefan O'Rear, 22-Mar-2015.) $)
+    rrgval $p |- E = { x e. B | A. y e. B ( ( x .x. y ) = .0. -> y = .0. ) } $=
+      ( vr cv wceq wcel cvv cfv cmulr c0g cbs vz wral crab rrgmex elrabi basmex
+      co wi syl crlreg df-rlreg fveq2 eqtr4di oveqd eqeq12d raleqbidv rabeqbidv
+      eqeq2d imbi12d id wfn basfn funfvex funfni eqeltrid rabexg fvmptd3 eqtrid
+      mpan eleq2d pm5.21nii eqriv ) UAFAMZBMZEUGZGNZVNGNZUHZBCUBZACUCZUAMZFODPO
+      ZWAVTOZWADFHUDWCWACOWBVSAWACUEWACDIUFUIWBFVTWAWBFDUJQVTHWBLDVMVNLMZRQZUGZ
+      WDSQZNZVNWGNZUHZBWDTQZUBZAWKUCVTPUJPABLUKWDDNZWLVSAWKCWMWKDTQZCWDDTULIUMZ
+      WMWJVRBWKCWOWMWHVPWIVQWMWFVOWGGWMWEEVMVNWMWEDRQEWDDRULJUMUNWMWGDSQGWDDSUL
+      KUMZUOWMWGGVNWPURUSUPUQWBUTWBCPOVTPOWBCWNPITPVAWBWNPOZVBWQPDTDTVCVDVIVEVS
+      ACPVFUIVGVHVJVKVL $.
+
+    $d .x. x $.  $d X x $.  $d X y $.  $d .0. x $.
+    $( Membership in the set of left-regular elements.  (Contributed by Stefan
+       O'Rear, 22-Mar-2015.) $)
+    isrrg $p |- ( X e. E <-> ( X e. B /\
+          A. y e. B ( ( X .x. y ) = .0. -> y = .0. ) ) ) $=
+      ( vx cv co wceq wi wral oveq1 eqeq1d imbi1d ralbidv rrgval elrab2 ) LMZAM
+      ZDNZGOZUEGOZPZABQFUEDNZGOZUHPZABQLFBEUDFOZUIULABUMUGUKUHUMUFUJGUDFUEDRSTU
+      ALABCDEGHIJKUBUC $.
+
+    $d .x. y $.  $d Y y $.  $d .0. y $.
+    $( Property of a left-regular element.  (Contributed by Stefan O'Rear,
+       22-Mar-2015.) $)
+    rrgeq0i $p |- ( ( X e. E /\ Y e. B ) ->
+      ( ( X .x. Y ) = .0. -> Y = .0. ) ) $=
+      ( vy wcel cv co wceq wi wral isrrg simprbi oveq2 eqeq1d eqeq1 rspcv mpan9
+      imbi12d ) EDMZELNZCOZGPZUHGPZQZLARZFAMEFCOZGPZFGPZQZUGEAMUMLABCDEGHIJKSTU
+      LUQLFAUHFPZUJUOUKUPURUIUNGUHFECUAUBUHFGUCUFUDUE $.
+
+    $( Left-multiplication by a left regular element does not change zeroness.
+       (Contributed by Stefan O'Rear, 28-Mar-2015.) $)
+    rrgeq0 $p |- ( ( R e. Ring /\ X e. E /\ Y e. B ) ->
+        ( ( X .x. Y ) = .0. <-> Y = .0. ) ) $=
+      ( vx vy crg wcel w3a co wceq wi cv rrgeq0i simp1 wral rrgval ssrab3 simp2
+      3adant1 sselid ringrz syl2anc oveq2 eqeq1d syl5ibrcom impbid ) BNOZEDOZFA
+      OZPZEFCQZGRZFGRZUPUQUTVASUOABCDEFGHIJKUAUGURUTVAEGCQZGRZURUOEAOVCUOUPUQUB
+      URDAELTMTZCQGRVDGRSMAUCLADLMABCDGHIJKUDUEUOUPUQUFUHABCEGIJKUIUJVAUSVBGFGE
+      CUKULUMUN $.
+  $}
+
+  ${
+    $d B x y $.  $d R x y $.
+    rrgss.e $e |- E = ( RLReg ` R ) $.
+    rrgss.b $e |- B = ( Base ` R ) $.
+    $( Left-regular elements are a subset of the base set.  (Contributed by
+       Stefan O'Rear, 22-Mar-2015.) $)
+    rrgss $p |- E C_ B $=
+      ( vx vy cv cmulr cfv co c0g wceq wi wral eqid rrgval ssrab3 ) FHGHZBIJZKB
+      LJZMSUAMNGAOFACFGABTCUADETPUAPQR $.
+  $}
+
+  ${
+    $d E x $.  $d R x y $.  $d U x y $.
+    unitrrg.e $e |- E = ( RLReg ` R ) $.
+    unitrrg.u $e |- U = ( Unit ` R ) $.
+    $( Units are regular elements.  (Contributed by Stefan O'Rear,
+       22-Mar-2015.) $)
+    unitrrg $p |- ( R e. Ring -> U C_ E ) $=
+      ( vx vy crg wcel cv wa cbs cfv cmulr co wceq eqid a1i adantr simpr c0g wi
+      wral cui ringsrg unitcld cinvr oveq2 cur unitlinv oveq1d simpll ringinvcl
+      ringass syl13anc ringlidm adantlr 3eqtr3d ringrz syl2anc eqeq12d imbitrid
+      csrg ralrimiva isrrg sylanbrc ex ssrdv ) AHIZFBCVIFJZBIZVJCIZVIVKKZVJALMZ
+      IZVJGJZANMZOZAUAMZPZVPVSPZUBZGVNUCVLVMVNABVJVNVNPVMVNQZRBAUDMPVMERVIAVCIV
+      KAUESVIVKTUFZVMWBGVNVTVJAUGMZMZVRVQOZWFVSVQOZPVMVPVNIZKZWAVRVSWFVQUHWJWGV
+      PWHVSWJWFVJVQOZVPVQOZAUIMZVPVQOZWGVPWJWKWMVPVQVMWKWMPWIAVQBWMWEVJEWEQZVQQ
+      ZWMQZUJSUKWJVIWFVNIZVOWIWLWGPVIVKWIULZVMWRWIVNABWEVJEWOWCUMSZVMVOWIWDSVMW
+      ITVNAVQWFVJVPWCWPUNUOVIWIWNVPPVKVNAVQWMVPWCWPWQUPUQURWJVIWRWHVSPWSWTVNAVQ
+      WFVSWCWPVSQZUSUTVAVBVDGVNAVQCVJVSDWCWPXAVEVFVGVH $.
+  $}
+
+  ${
+    rrgnz.t $e |- E = ( RLReg ` R ) $.
+    rrgnz.z $e |- .0. = ( 0g ` R ) $.
+    $( In a nonzero ring, the zero is a left zero divisor (that is, not a
+       left-regular element).  (Contributed by Thierry Arnoux, 6-May-2025.) $)
+    rrgnz $p |- ( R e. NzRing -> -. .0. e. E ) $=
+      ( cnzr wcel cur cfv wceq eqid nzrnz neneqd wa crg cmulr co nzrring adantr
+      cbs simpr ringidcl syl ringlzd w3a rrgeq0 biimpa syl31anc mtand ) AFGZCBG
+      ZAHIZCJZUJULCAULCULKZELMUJUKNZAOGZUKULATIZGZCULAPIZQCJZUMUJUPUKARSZUJUKUA
+      UOUPURVAUQAULUQKZUNUBUCZUOUQAUSULCVBUSKZEVAVCUDUPUKURUEUTUMUQAUSBCULCDVBV
+      DEUFUGUHUI $.
+  $}
+
+  ${
+    $d B b r x y z $.  $d R b r x y z $.  $d .x. b r z $.  $d .0. b r x y z $.
+    isdomn.b $e |- B = ( Base ` R ) $.
+    isdomn.t $e |- .x. = ( .r ` R ) $.
+    isdomn.z $e |- .0. = ( 0g ` R ) $.
+    $( Expand definition of a domain.  (Contributed by Mario Carneiro,
+       28-Mar-2015.) $)
+    isdomn $p |- ( R e. Domn <-> ( R e. NzRing /\
+     A. x e. B A. y e. B ( ( x .x. y ) = .0. -> ( x = .0. \/ y = .0. ) ) ) ) $=
+      ( vr vz vb cv cmulr cfv wceq wral c0g cbs cvv co wo wi wsbc cnzr wcel wfn
+      cdomn basfn vex funfvex funfni mp2an a1i fveq2 eqtr4di fn0g adantr simplr
+      wa oveqdr id eqeqan12d wb eqeq2 orbi12d imbi12d raleqbidv sbcied2 df-domn
+      adantl elrab2 ) AMZBMZJMZNOZUAZKMZPZVMVRPZVNVRPZUBZUCZBLMZQZAWDQZKVOROZUD
+      ZLVOSOZUDVMVNEUAZFPZVMFPZVNFPZUBZUCZBCQZACQZJDUEUHVODPZWHWQLWICTWITUFZWRS
+      TUGVOTUFZWSUIJUJZWSTVOSVOSUKULUMUNWRWIDSOCVODSUOGUPWRWDCPZUTZWFWQKWGFTWGT
+      UFZXCRTUGWTXDUQXAXDTVORVORUKULUMUNXCWGDROZFWRWGXEPXBVODRUOURIUPXCVRFPZUTZ
+      WEWPAWDCWRXBXFUSZXGWCWOBWDCXHXGVSWKWBWNXCXFVQWJVRFWRXBABVPEWRVPDNOEVODNUO
+      HUPVAXFVBVCXFWBWNVDXCXFVTWLWAWMVRFVMVEVRFVNVEVFVKVGVHVHVIVIABKJLVJVL $.
+  $}
+
+  ${
+    $d x y .0. $.  $d x y B $.  $d x y R $.  $d x y .x. $.  $d x y X $.
+    $d y Y $.
+    $( A domain is a nonzero ring.  (Contributed by Mario Carneiro,
+       28-Mar-2015.) $)
+    domnnzr $p |- ( R e. Domn -> R e. NzRing ) $=
+      ( vx vy cdomn wcel cnzr cv cmulr cfv co c0g wceq wo cbs wral eqid simplbi
+      wi isdomn ) ADEAFEBGZCGZAHIZJAKIZLTUCLUAUCLMRCANIZOBUDOBCUDAUBUCUDPUBPUCP
+      SQ $.
+
+    $( A domain is a ring.  (Contributed by Mario Carneiro, 28-Mar-2015.) $)
+    domnring $p |- ( R e. Domn -> R e. Ring ) $=
+      ( cdomn wcel cnzr crg domnnzr nzrring syl ) ABCADCAECAFAGH $.
+
+    domneq0.b $e |- B = ( Base ` R ) $.
+    domneq0.t $e |- .x. = ( .r ` R ) $.
+    domneq0.z $e |- .0. = ( 0g ` R ) $.
+    $( In a domain, a product is zero iff it has a zero factor.  (Contributed
+       by Mario Carneiro, 28-Mar-2015.) $)
+    domneq0 $p |- ( ( R e. Domn /\ X e. B /\ Y e. B ) ->
+        ( ( X .x. Y ) = .0. <-> ( X = .0. \/ Y = .0. ) ) ) $=
+      ( vx vy wcel co wceq wo cv wi wral eqeq1d syl2anc cdomn w3a 3simpc isdomn
+      cnzr simprbi 3ad2ant1 oveq1 eqeq1 orbi1d imbi12d oveq2 orbi2d rspc2va crg
+      wa domnring simp3 ringlz syl5ibrcom simp2 ringrz jaod impbid ) BUALZDALZE
+      ALZUBZDECMZFNZDFNZEFNZOZVHVFVGUPJPZKPZCMZFNZVNFNZVOFNZOZQZKARJARZVJVMQZVE
+      VFVGUCVEVFWBVGVEBUELWBJKABCFGHIUDUFUGWAWCDVOCMZFNZVKVSOZQJKDEAAVNDNZVQWEV
+      TWFWGVPWDFVNDVOCUHSWGVRVKVSVNDFUIUJUKVOENZWEVJWFVMWHWDVIFVOEDCULSWHVSVLVK
+      VOEFUIUMUKUNTVHVKVJVLVHVJVKFECMZFNZVHBUOLZVGWJVEVFWKVGBUQUGZVEVFVGURABCEF
+      GHIUSTVKVIWIFDFECUHSUTVHVJVLDFCMZFNZVHWKVFWNWLVEVFVGVAABCDFGHIVBTVLVIWMFE
+      FDCULSUTVCVD $.
+
+    $( In a domain, a product of nonzero elements is nonzero.  (Contributed by
+       Mario Carneiro, 6-May-2015.) $)
+    domnmuln0 $p |- ( ( R e. Domn /\ ( X e. B /\ X =/= .0. ) /\
+      ( Y e. B /\ Y =/= .0. ) ) -> ( X .x. Y ) =/= .0. ) $=
+      ( cdomn wcel wne wa co an4 wceq wo wn neanior wb domneq0 3expb necon3abid
+      bitr4id biimpd expimpd biimtrid 3impib ) BJKZDAKZDFLZMZEAKZEFLZMZDECNZFLZ
+      ULUOMUJUMMZUKUNMZMUIUQUJUKUMUNOUIURUSUQUIURMZUSUQUTUSDFPEFPQZRUQDFEFSUTVA
+      UPFUIUJUMUPFPVATABCDEFGHIUAUBUCUDUEUFUGUH $.
+  $}
+
+  ${
+    $d x y O $.  $d x y R $.  $d x y V $.
+    opprdomn.1 $e |- O = ( oppR ` R ) $.
+    $( A class is a domain if and only if its opposite is a domain,
+       biconditional form of ~ opprdomn .  (Contributed by SN, 15-Jun-2015.) $)
+    opprdomnbg $p |- ( R e. V -> ( R e. Domn <-> O e. Domn ) ) $=
+      ( vx vy wcel cnzr cv cmulr cfv co c0g wceq wo wi cbs wral eqid cvv wa vex
+      cdomn opprbasg opprmulg mp3an23 eqcomd oppr0g eqeq12d eqeq2d orcom bitrdi
+      opprnzrbg orbi12d imbi12d raleqbidv ralcom anbi12d isdomn 3bitr4g ) ACGZA
+      HGZEIZFIZAJKZLZAMKZNZVCVGNZVDVGNZOZPZFAQKZRZEVMRZUABHGZVDVCBJKZLZBMKZNZVD
+      VSNZVCVSNZOZPZEBQKZRFWERZUAAUCGBUCGVAVBVPVOWFABCDUMVAVOWDFWERZEWERWFVAVNW
+      GEVMWEVMABCDVMSZUDZVAVLWDFVMWEWIVAVHVTVKWCVAVFVRVGVSVAVRVFVAVDTGVCTGVRVFN
+      FUBEUBVMAVQVETBCTVDVCWHVESZDVQSZUEUFUGABCVGDVGSZUHZUIVAVKWBWAOWCVAVIWBVJW
+      AVAVGVSVCWMUJVAVGVSVDWMUJUNWBWAUKULUOUPUPWDEFWEWEUQULUREFVMAVEVGWHWJWLUSF
+      EWEBVQVSWESWKVSSUSUT $.
+
+    $( The opposite of a domain is also a domain.  (Contributed by Mario
+       Carneiro, 15-Jun-2015.) $)
+    opprdomn $p |- ( R e. Domn -> O e. Domn ) $=
+      ( cdomn wcel opprdomnbg ibi ) ADEBDEABDCFG $.
+  $}
+
+  $( An integral domain is a commutative domain.  (Contributed by Mario
+     Carneiro, 17-Jun-2015.) $)
+  isidom $p |- ( R e. IDomn <-> ( R e. CRing /\ R e. Domn ) ) $=
+    ( ccrg cdomn cidom df-idom elin2 ) ABCDEF $.
+
+  ${
+    idomringd.1 $e |- ( ph -> R e. IDomn ) $.
+    $( An integral domain is a domain.  (Contributed by Thierry Arnoux,
+       22-Mar-2025.) $)
+    idomdomd $p |- ( ph -> R e. Domn ) $=
+      ( ccrg cdomn cidom cin df-idom eleqtrdi elin2d ) ADEBABFDEGCHIJ $.
+
+    $( An integral domain is a commutative ring with unity.  (Contributed by
+       Thierry Arnoux, 4-May-2025.)  (Proof shortened by SN, 14-May-2025.) $)
+    idomcringd $p |- ( ph -> R e. CRing ) $=
+      ( ccrg cdomn cidom cin df-idom eleqtrdi elin1d ) ADEBABFDEGCHIJ $.
+
+    $( An integral domain is a ring.  (Contributed by Thierry Arnoux,
+       22-Mar-2025.) $)
+    idomringd $p |- ( ph -> R e. Ring ) $=
+      ( idomcringd crngringd ) ABABCDE $.
   $}
 
 
@@ -164116,6 +164461,72 @@ $)
         LVMVHKVQVOSBUMBJOVHUNVMVHAVNUPUQURVHANVNUSTUTVFANGVLVJVKSABCDEVAVPAVHVB
         TVCVFVRVIBKVSBVDRVE $.
     $}
+
+    $( The ` Z/nZ ` structure is an integral domain when ` n ` is prime.
+       (Contributed by Mario Carneiro, 15-Jun-2015.)  (Revised by Jim Kingdon,
+       13-Aug-2025.) $)
+    znidom $p |- ( N e. Prime -> Y e. IDomn ) $=
+      ( vx vy vz vw wcel syl cv cfv co wceq wo c2o wbr c2 wb wa cz cprime cdomn
+      ccrg cidom cn0 cn prmnn nnnn0 zncrng cnzr cmulr c0g cbs wral crg crngring
+      cdom 4syl chash cle hash2 cuz prmuz2 eluzle eqid znhash breqtrrd eqbrtrid
+      cfn com 2onn nnfi ax-mp znfi fihashdom sylancr mpbid isnzr2 sylanbrc czrh
+      wrex wfo znzrhfo foelrn anim12dan sylan reeanv cmul cdvds euclemma czring
+      wi 3expb crh adantr zrhrhm simprl simprr zringbas zringmulr rhmmul eqeq1d
+      syl3anc zmulcl zndvds0 syl2an bitr3d syl2an2r orbi12d biimpd oveq12 eqeq1
+      3bitr4d orbi1d orbi2d sylan9bb syl5ibrcom rexlimdvva biimtrrid imp syldan
+      imbi12d ralrimivva isdomn isidom ) AUAHZBUCHZBUBHZBUDHYFAUEHZYGYFAUFHZYIA
+      UGZAUHZIZABCUIZIYFBUJHZDJZEJZBUKKZLZBULKZMZYPYTMZYQYTMZNZWLZEBUMKZUNDUUFU
+      NYHYFBUOHZOUUFUQPZYOYFYJYIYGUUGYKYLYNBUPURZYFOUSKZUUFUSKZUTPZUUHYFUUJQUUK
+      UTVAYFQAUUKUTYFAQVBKHQAUTPAVCQAVDIYFYJUUKAMYKUUFABCUUFVEZVFIVGVHYFYJUULUU
+      HRZYKYJOVIHZUUFVIHUUNOVJHUUOVKOVLVMUUFABCUUMVNOUUFVOVPIVQUUFBUUMVRVSYFUUE
+      DEUUFUUFYFYPUUFHZYQUUFHZSZYPFJZBVTKZKZMZFTWAZYQGJZUUTKZMZGTWAZSZUUEYFTUUF
+      UUTWBZUURUVHYFYIUVIYMUUFUUTABCUUMUUTVEZWCIUVIUUPUVCUUQUVGFTUUFYPUUTWDGTUU
+      FYQUUTWDWEWFYFUVHUUEUVHUVBUVFSZGTWAFTWAYFUUEUVBUVFFGTTWGYFUVKUUEFGTTYFUUS
+      THZUVDTHZSZSZUUEUVKUVAUVEYRLZYTMZUVAYTMZUVEYTMZNZWLUVOUVQUVTUVOAUUSUVDWHL
+      ZWIPZAUUSWIPZAUVDWIPZNZUVQUVTYFUVLUVMUWBUWERAUUSUVDWJWMUVOUWAUUTKZYTMZUVQ
+      UWBUVOUWFUVPYTUVOUUTWKBWNLHZUVLUVMUWFUVPMUVOUUGUWHYFUUGUVNUUIWOBUUTUVJWPI
+      YFUVLUVMWQZYFUVLUVMWRZUUSUVDWKBWHYRUUTTWSWTYRVEZXAXCXBYFYIUWATHUWGUWBRUVN
+      YMUUSUVDXDUWAUUTABYTCUVJYTVEZXEXFXGUVOUVRUWCUVSUWDYFYIUVNUVLUVRUWCRYMUWIU
+      USUUTABYTCUVJUWLXEXHYFYIUVNUVMUVSUWDRYMUWJUVDUUTABYTCUVJUWLXEXHXIXMXJUVKU
+      UAUVQUUDUVTUVKYSUVPYTYPUVAYQUVEYRXKXBUVBUUDUVRUUCNUVFUVTUVBUUBUVRUUCYPUVA
+      YTXLXNUVFUUCUVSUVRYQUVEYTXLXOXPYBXQXRXSXTYAYCDEUUFBYRYTUUMUWKUWLYDVSBYEVS
+      $.
+
+    $( The ` Z/nZ ` structure is a domain precisely when ` n ` is prime.
+       (Contributed by Mario Carneiro, 15-Jun-2015.) $)
+    znidomb $p |- ( N e. NN -> ( Y e. IDomn <-> N e. Prime ) ) $=
+      ( vx cn wcel c2 cfv wbr c1 wceq cz cle c2o syl wb ad2antrr ad2antrl cc0
+      co cidom cprime wa cuz cv cdvds wo wi wral a1i nnz adantr cbs chash hash2
+      2z cdom cnzr cdomn ccrg isidom simprbi domnnzr crg eqid isnzr2 adantl cfn
+      com 2onn nnfi ax-mp znfi fihashdom sylancr mpbird eqbrtrrid breqtrd eluz2
+      znhash syl3anbrc cdiv czrh c0g cmulr cmul cc nncn nnap0 divcanap1d fveq2d
+      cap czring crh ad2antlr domnring zrhrhm simprr wne nnne0 dvdsval2 syl3anc
+      mpbid zringbas zringmulr rhmmul iddvds nnnn0 zndvds0 syl2anc 3eqtr3d rhmf
+      cn0 wf ffvelcdmd domneq0 cr nnre nngt0 divgt0d elnnz sylanbrc dvdsle 1red
+      0lt1 lediv2 syl222anc nnle1eq1 div1d breq1d 3bitr3rd sylibd sylbid dvdseq
+      clt expr syl21anc orim12d mpd ralrimiva isprm2 ex znidom impbid1 ) AEFZBU
+      AFZAUBFZUUEUUFUUGUUEUUFUCZAGUDHFZDUEZAUFIZUUJJKZUUJAKZUGZUHZDEUIUUGUUHGLF
+      ZALFZGAMIUUIUUPUUHUPUJUUEUUQUUFAUKZULUUHGBUMHZUNHZAMUUHGNUNHZUUTMUOUUHUVA
+      UUTMIZNUUSUQIZUUFUVCUUEUUFBURFZUVCUUFBUSFZUVDUUFBUTFUVEBVAVBZBVCOUVDBVDFZ
+      UVCUUSBUUSVEZVFVBOVGUUHNVHFZUUSVHFZUVBUVCPNVIFUVIVJNVKVLUUEUVJUUFUUSABCUV
+      HVMULNUUSVNVOVPVQUUEUUTAKUUFUUSABCUVHVTULVRGAVSWAUUHUUODEUUHUUJEFZUUKUUNU
+      UHUVKUUKUCZUCZAUUJWBTZBWCHZHZBWDHZKZUUJUVOHZUVQKZUGZUUNUVMUVPUVSBWEHZTZUV
+      QKZUWAUVMUVNUUJWFTZUVOHZAUVOHZUWCUVQUVMUWEAUVOUVMAUUJUUEAWGFUUFUVLAWHQZUV
+      KUUJWGFUUHUUKUUJWHRUVKUUJSWLIUUHUUKUUJWIRWJWKUVMUVOWMBWNTFZUVNLFZUUJLFZUW
+      FUWCKUVMUVGUWIUVMUVEUVGUUFUVEUUEUVLUVFWOZBWPOBUVOUVOVEZWQOZUVMUUKUWJUUHUV
+      KUUKWRZUVMUWKUUJSWSZUUQUUKUWJPUVKUWKUUHUUKUUJUKRZUVKUWPUUHUUKUUJWTRUUEUUQ
+      UUFUVLUURQZUUJAXAXBXCZUWQUVNUUJWMBWFUWBUVOLXDXEUWBVEZXFXBUVMUWGUVQKZAAUFI
+      ZUVMUUQUXBUWRAXGOUVMAXMFZUUQUXAUXBPUUEUXCUUFUVLAXHQZUWRAUVOABUVQCUWMUVQVE
+      ZXIXJVPXKUVMUVEUVPUUSFUVSUUSFUWDUWAPUWLUVMLUUSUVNUVOUVMUWILUUSUVOXNUWNLUU
+      SWMBUVOXDUVHXLOZUWSXOUVMLUUSUUJUVOUXFUWQXOUUSBUWBUVPUVSUVQUVHUWTUXEXPXBXC
+      UVMUVRUULUVTUUMUVMUVRAUVNUFIZUULUVMUXCUWJUVRUXGPUXDUWSUVNUVOABUVQCUWMUXEX
+      IXJUVMUXGAUVNMIZUULUVMUUQUVNEFZUXGUXHUHUWRUVMUWJSUVNYOIUXIUWSUVMAUUJUUEAX
+      QFZUUFUVLAXRQZUVKUUJXQFZUUHUUKUUJXRRZUUESAYOIZUUFUVLAXSQZUVKSUUJYOIZUUHUU
+      KUUJXSRZXTUVNYAYBAUVNYCXJUVMUUJJMIZAJWBTZUVNMIZUULUXHUVMUXLUXPJXQFSJYOIZU
+      XJUXNUXRUXTPUXMUXQUVMYDUYAUVMYEUJUXKUXOUUJJAYFYGUVKUXRUULPUUHUUKUUJYHRUVM
+      UXSAUVNMUVMAUWHYIYJYKYLYMUVMUVTAUUJUFIZUUMUVMUXCUWKUVTUYBPUXDUWQUUJUVOABU
+      VQCUWMUXEXIXJUVMUUJXMFZUXCUUKUYBUUMUHUVKUYCUUHUUKUUJXHRUXDUWOUYCUXCUCUUKU
+      YBUUMUUJAYNYPYQYMYRYSYPYTDAUUAYBUUBABCUUCUUD $.
   $}
 
   ${
@@ -164165,6 +164576,39 @@ $)
         YIYJUXTUVRUXLUXTUVMAUYJUYIYKZUXTUXLUYGYFZYLYNYOUXTUVRUYBUYKUXTUXLUYLYPY
         QYRYSUXNUVSUYADTRUXMUVRVIUUAUUBUUCUUDUUEUUFUUGYTYT $.
     $}
+
+    znrrg.e $e |- E = ( RLReg ` Y ) $.
+    $( The regular elements of ` Z/nZ ` are exactly the units.  (This theorem
+       fails for ` N = 0 ` , where all nonzero integers are regular, but only
+       ` +- 1 ` are units.)  (Contributed by Mario Carneiro, 18-Apr-2016.) $)
+    znrrg $p |- ( N e. NN -> E = U ) $=
+      ( wcel cfv wceq cz syl co c1 cdvds wbr cmul ad2antrr syl2anc wb czrh wrex
+      vx vn cn cv cbs wfo nnnn0 eqid znzrhfo rrgss sseli foelrn syl2an ex wi wa
+      cn0 cgcd cdiv cc nncn cc0 wn simplr nnz wne nnne0 simpr necon3ai syl21anc
+      gcdn0cl nncnd nnap0d divcanap2d simpld nnzd simprd simpll nndivdvds mpbid
+      gcddvds dvdsmulc syl3anc mpd eqbrtrrd c0g wf fof ffvelcdmd rrgeq0i czring
+      cmulr crh crg ccrg zncrng crngringd zrhrhm zringbas rhmmul eqeq1d zmulcld
+      zringmulr zndvds0 bitr3d 3imtr3d divcanap1d mulridd 1zzd nnne0d dvdscmulr
+      3brtr4d syl112anc gcdcld dvds1 znunit mpbird imbi12d syl5ibrcom rexlimdva
+      eleq1 com23 mpdd ssrdv wss unitrrg eqssd ) CUEHZBAYJUCBAYJUCUFZBHZYKUDUFZ
+      DUAIZIZJZUDKUBZYKAHZYJYLYQYJKDUGIZYNUHZYKYSHYQYLYJCUSHZYTCUIZYSYNCDEYSUJZ
+      YNUJZUKZLBYSYKYSDBGUUCULUMUDKYSYKYNUNUOUPYJYQYLYRYJYPYLYRUQZUDKYJYMKHZURZ
+      UUFYPYOBHZYOAHZUQUUHUUIUUJUUHUUIURZUUJYMCUTMZNJZUUKUULNOPZUUMUUKCUULVAMZU
+      ULQMZUUONQMZOPZUUNUUKCUUOUUPUUQOUUKCYMUUOQMZOPZCUUOOPZUUKUULUUOQMZCUUSOUU
+      KCUULYJCVBHUUGUUICVCRZUUKUULUUKUUGCKHZYMVDJZCVDJZURZVEZUULUEHZYJUUGUUIVFZ
+      YJUVDUUGUUICVGRZUUKCVDVHZUVHYJUVLUUGUUICVIRUVGCVDUVEUVFVJVKLYMCVMVLZVNZUU
+      KUULUVMVOZVPUUKUULYMOPZUVBUUSOPZUUKUVPUULCOPZUUKUUGUVDUVPUVRURUVJUVKYMCWC
+      SZVQUUKUULKHZUUGUUOKHZUVPUVQUQUUKUULUVMVRZUVJUUKUUOUUKUVRUUOUEHZUUKUVPUVR
+      UVSVSUUKYJUVIUVRUWCTYJUUGUUIVTUVMCUULWASWBZVRZUUOUULYMWDWEWFWGUUKYOUUOYNI
+      ZDWNIZMZDWHIZJZUWFUWIJZUUTUVAUUKUUIUWFYSHUWJUWKUQUUHUUIVJUUKKYSUUOYNUUKYT
+      KYSYNWIUUKUUAYTYJUUAUUGUUIUUBRZUUELKYSYNWJLUWEWKYSDUWGBYOUWFUWIGUUCUWGUJZ
+      UWIUJZWLSUUKUUSYNIZUWIJZUWJUUTUUKUWOUWHUWIUUKYNWMDWOMHZUUGUWAUWOUWHJUUKDW
+      PHZUWQYJUWRUUGUUIYJDYJUUADWQHUUBCDEWRLWSZRDYNUUDWTLUVJUWEYMUUOWMDQUWGYNKX
+      AXEUWMXBWEXCUUKUUAUUSKHUWPUUTTUWLUUKYMUUOUVJUWEXDUUSYNCDUWIEUUDUWNXFSXGUU
+      KUUAUWAUWKUVATUWLUWEUUOYNCDUWIEUUDUWNXFSXHWFUUKCUULUVCUVNUVOXIUUKUUOUUKUU
+      OUWDVNXJXNUUKUVTNKHUWAUUOVDVHUURUUNTUWBUUKXKUWEUUKUUOUWDXLUUOUULNXMXOWBUU
+      KUULUSHUUNUUMTUUKYMCUVJUVKXPUULXQLWBUUKUUAUUGUUJUUMTUWLUVJYMAYNCDEFUUDXRS
+      XSUPYPYLUUIYRUUJYKYOBYCYKYOAYCXTYAYBYDYEYFYJUWRABYGUWSDABGFYHLYI $.
   $}
 
 
@@ -179784,6 +180228,528 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Gauss' Lemma
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  Gauss' Lemma is valid for any integer not dividing the given prime number.
+  In the following, only the special case for 2 (not dividing any odd prime) is
+  proven, see ~ gausslemma2d .  The general case is still to prove.
+
+$)
+
+  ${
+    gausslemma2dlem0a.p $e |- ( ph -> P e. ( Prime \ { 2 } ) ) $.
+    $( Auxiliary lemma 1 for ~ gausslemma2d .  (Contributed by AV,
+       9-Jul-2021.) $)
+    gausslemma2dlem0a $p |- ( ph -> P e. NN ) $=
+      ( cprime c2 csn cdif wcel cn cdvds wbr wn wa nnoddn2prm simpl 3syl ) ABDE
+      FGHBIHZEBJKLZMQCBNQROP $.
+
+    gausslemma2dlem0b.h $e |- H = ( ( P - 1 ) / 2 ) $.
+    $( Auxiliary lemma 2 for ~ gausslemma2d .  (Contributed by AV,
+       9-Jul-2021.) $)
+    gausslemma2dlem0b $p |- ( ph -> H e. NN ) $=
+      ( c1 cmin co c2 cdiv cn cuz cfv wcel caddc cn0 wa cprime csn syl cdif wbr
+      eldifi prmuz2 cdvds nnoddn2prm nnoddm1d2 biimpa nnnn0d jca nno eqeltrid
+      wn ) ACBFGHIJHZKEABILMNZBFOHIJHZPNZQZUNKNABRISZUANZURDUTUOUQUTBRNUOBRUSUC
+      BUDTUTBKNZIBUEUBUMZQZUQBUFVCUPVAVBUPKNBUGUHUITUJTBUKTUL $.
+
+    $( Auxiliary lemma 3 for ~ gausslemma2d .  (Contributed by AV,
+       13-Jul-2021.) $)
+    gausslemma2dlem0c $p |- ( ph -> ( ( ! ` H ) gcd P ) = 1 ) $=
+      ( cgcd co c1 wceq wbr cprime wcel wa clt c2 syl cr 2re a1i wb cfa cfv cn0
+      cdvds wn csn cdif eldifi gausslemma2dlem0b nnnn0d cmin cdiv cn prmnn cmul
+      jca nnre peano2rem remulcld ltm1d nn0ge0d cle 1le2 lemulge12d ltletrd cc0
+      nnnn0 2pos pm3.2i ltdivmul mpbird 4syl eqbrtrid prmndvdsfaclt sylc faccld
+      syl3anc nnzd cz nnz gcdcomd eqeq1d coprm syl2anc bitr4d ) ACUAUBZBFGZHIZB
+      WFUDJUEZABKLZCUCLZMCBNJWIAWJWKABKOUFZUGLZWJDBKWLUHZPZACABCDEUIUJZUPACBHUK
+      GZOULGZBNEAWMWJBUMLZWRBNJZDWNBUNZWSWTWQOBUOGZNJZWSWQBXBWSBQLZWQQLZBUQZBUR
+      PZXFWSOBOQLZWSRSZXFUSWSBXFUTWSBOXFXIWSBBVGVAHOVBJWSVCSVDVEWSXEXDXHVFONJZM
+      ZWTXCTXGXFXKWSXHXJRVHVISWQBOVJVQVKVLVMBCVNVOAWHBWFFGZHIZWIAWGXLHAWFBAWFAC
+      WPVPVRZAWMWJWSBVSLDWNXABVTVLWAWBAWJWFVSLWIXMTWOXNBWFWCWDWEVK $.
+  $}
+
+  ${
+    gausslemma2dlem0.p $e |- ( ph -> P e. ( Prime \ { 2 } ) ) $.
+    gausslemma2dlem0.m $e |- M = ( |_ ` ( P / 4 ) ) $.
+    $( Auxiliary lemma 4 for ~ gausslemma2d .  (Contributed by AV,
+       9-Jul-2021.) $)
+    gausslemma2dlem0d $p |- ( ph -> M e. NN0 ) $=
+      ( c4 cdiv co cfl cfv cn0 cq wcel cc0 cle wbr cz cn gausslemma2dlem0a cr
+      nnzd 4nn znq sylancl clt wa nnre nnnn0 nn0ge0d 4re 4pos pm3.2i a1i divge0
+      syl21anc syl flqge0nn0 syl2anc eqeltrid ) ACBFGHZIJZKEAUTLMZNUTOPZVAKMABQ
+      MFRMVBABABDSZUAUBBFUCUDABRMZVCVDVEBTMNBOPFTMZNFUEPZUFZVCBUGVEBBUHUIVHVEVF
+      VGUJUKULUMBFUNUOUPUTUQURUS $.
+
+    $( Auxiliary lemma 5 for ~ gausslemma2d .  (Contributed by AV,
+       9-Jul-2021.) $)
+    gausslemma2dlem0e $p |- ( ph -> ( M x. 2 ) < ( P / 2 ) ) $=
+      ( c2 cmul co c4 cdiv cfl cfv clt oveq1i cprime csn cdif wcel wbr wa cdvds
+      cn wn cz nnoddn2prm nnz anim1i flodddiv4t2lthalf 4syl eqbrtrid ) ACFGHBIJ
+      HKLZFGHZBFJHZMCUKFGENABOFPQRBUBRZFBUASUCZTBUDRZUOTULUMMSDBUEUNUPUOBUFUGBU
+      HUIUJ $.
+
+    gausslemma2dlem0.h $e |- H = ( ( P - 1 ) / 2 ) $.
+    $( Auxiliary lemma 6 for ~ gausslemma2d .  (Contributed by AV,
+       9-Jul-2021.) $)
+    gausslemma2dlem0f $p |- ( ph -> ( M + 1 ) <_ H ) $=
+      ( c4 cdiv co cfl cfv c1 caddc c2 cle cprime wcel wceq a1d cmin cdif c3 c5
+      csn cuz wo wbr wne wa eldifsn w3o prm23ge5 eqneqall orc olc 3jaoi syl imp
+      wi sylbi fldiv4p1lem1div2 3syl oveq1i 3brtr4g ) ABHIJKLZMNJZBMUAJOIJZDMNJ
+      CPABQOUEUBRZBUCSZBUDUFLRZUGZVGVHPUHEVIBQRZBOUIZUJVLBQOUKVMVNVLVMBOSZVJVKU
+      LVNVLUTZBUMVOVPVJVKVLBOUNVJVLVNVJVKUOTVKVLVNVKVJUPTUQURUSVABVBVCDVFMNFVDG
+      VE $.
+
+    $( Auxiliary lemma 7 for ~ gausslemma2d .  (Contributed by AV,
+       9-Jul-2021.) $)
+    gausslemma2dlem0g $p |- ( ph -> M <_ H ) $=
+      ( c4 cdiv co cfl cfv c1 cmin c2 cle cn wcel wbr gausslemma2dlem0a 3brtr4g
+      fldiv4lem1div2 syl ) ABHIJKLZBMNJOIJZDCPABQRUDUEPSABETBUBUCFGUA $.
+
+    gausslemma2dlem0.n $e |- N = ( H - M ) $.
+    $( Auxiliary lemma 8 for ~ gausslemma2d .  (Contributed by AV,
+       9-Jul-2021.) $)
+    gausslemma2dlem0h $p |- ( ph -> N e. NN0 ) $=
+      ( cmin co cn0 wcel cc0 cle wbr gausslemma2dlem0b nnzd gausslemma2dlem0d
+      cz nn0zd zsubcld gausslemma2dlem0g nnred nn0red subge0d sylanbrc eqeltrid
+      mpbird elnn0z ) AECDJKZLIAUKTMNUKOPZUKLMACDACABCFHQZRADABDFGSZUAUBAULDCOP
+      ABCDFGHUCACDACUMUDADUNUEUFUIUKUJUGUH $.
+
+    $( Auxiliary lemma 9 for ~ gausslemma2d .  (Contributed by AV,
+       14-Jul-2021.) $)
+    gausslemma2dlem0i $p |- ( ph
+                           -> ( ( ( 2 /L P ) mod P ) = ( ( -u 1 ^ N ) mod P )
+                                -> ( 2 /L P ) = ( -u 1 ^ N ) ) ) $=
+      ( co c1 wceq cc0 cmo wi wcel syl wb eqcom eqeq1d c2 clgs cneg w3o cexp cz
+      ctp 2z cprime csn cdif id gausslemma2dlem0a lgscl1 sylancr eltpg mpbid wo
+      nnzd cpr gausslemma2dlem0h nn0zd m1expcl2 elprg biimpi 2a1d cq clt wbr cn
+      nnq eldifad prmgt1 q1mod syl2anc eqeq2d cuz cfv oddprmge3 m1modge3gt1 1re
+      c3 breq2 ltnri pm2.21i biimtrdi syl5com 3syl sylbid oveq1 eqeq2 imbitrrid
+      imbi12d jaoi mpcom eqeq1 nngt0d q0mod wa adantr 1z ax-mp negqmod0 mp3an2i
+      zq bitrdi wne 1ne0 eqneqall mpi sylbird adantl ex bitrid 3imtr4g 3jaoi )
+      UABUBJZKUCZLZXQMLZXQKLZUDZAXQBNJZXREUEJZBNJZLZXQYDLZOZAXQXRMKUGZPZYBAUAUF
+      PBUFPZYJUHABUIUAUJZUKPZYKFYMBYMBYMULUMUSQUABUNUOZAYJYJYBRYNXQXRMKYIUPQUQX
+      SAYHOXTYAAYHXSXRBNJZYELZXRYDLZOZYDXRLZYDKLZURZAYRAYDXRKUTZPZUUAAEUFPUUCAE
+      ABCDEFGHIVAVBEVCQZAUUCUUCUUARUUDYDXRKUUBVDQUQZYSAYROYTYSYQAYPYSYQYDXRSVEV
+      FAYRYTYOKBNJZLZXRKLZOAUUGYOKLZUUHAUUFKYOABVGPZKBVHVIZUUFKLABVJPUUJABFUMZB
+      VKQZABUIPUUKABUIYLFVLBVMQBVNVOZVPAYMBWBVQVRPZUUIUUHOFBVSUUOKYOVHVIZUUIUUH
+      BVTUUIUUPKKVHVIZUUHYOKKVHWCUUQUUHKWAWDWEWFWGWHZWIYTYPUUGYQUUHYTYEUUFYOYDK
+      BNWJZVPYDKXRWKWMWLWNWOXSYFYPYGYQXSYCYOYEXQXRBNWJTXQXRYDWPWMWLAYHXTMBNJZYE
+      LZMYDLZOAUVAMYELZUVBAUUTMYEAUUJMBVHVIZUUTMLUUMABUULWQZBWRVOTUUAAUVCUVBOZU
+      UEYSAUVFOYTYSAUVFYSAWSUVCMYOLZUVBYSUVCUVGRAYSYEYOMYDXRBNWJZVPWTAUVGUVBOYS
+      AUVGUUFMLZUVBAUVIYOMLZUVGKVGPZAUUJUVDUVIUVJRKUFPUVKXAKXEXBUUMUVEKBXCXDYOM
+      SXFAUVIKMLZUVBAUUFKMUUNTZUVLKMXGUVBXHUVBKMXIXJZWFXKXLWIXMYTAUVFYTAWSUVCMU
+      UFLZUVBYTUVCUVORAYTYEUUFMUUSVPWTAUVOUVBOYTAUVOUVLUVBUVOUVIAUVLMUUFSUVMXNU
+      VNWFXLWIXMWNWOWIXTYFUVAYGUVBXTYCUUTYEXQMBNWJTXQMYDWPWMWLAYHYAUUFYELZKYDLZ
+      OAUVPKYELZUVQAUUFKYEUUNTUUAAUVRUVQOZUUEYSAUVSOYTAUVSYSKYOLZKXRLZOAUUIUUHU
+      VTUWAUURKYOSKXRSXOYSUVRUVTUVQUWAYSYEYOKUVHVPYDXRKWKWMWLYTUVQAUVRYTUVQYDKS
+      VEVFWNWOWIYAYFUVPYGUVQYAYCUUFYEXQKBNWJTXQKYDWPWMWLXPWO $.
+  $}
+
+  ${
+    gausslemma2d.p $e |- ( ph -> P e. ( Prime \ { 2 } ) ) $.
+    gausslemma2d.h $e |- H = ( ( P - 1 ) / 2 ) $.
+    gausslemma2d.r $e |- R = ( x e. ( 1 ... H )
+                               |-> if ( ( x x. 2 ) < ( P / 2 ) ,
+                                        ( x x. 2 ) , ( P - ( x x. 2 ) ) ) ) $.
+    ${
+      $d H x y $.  $d P x $.  $d R y $.  $d ph x y $.
+      $( Lemma for ~ gausslemma2dlem1 .  (Contributed by AV, 1-Jul-2021.) $)
+      gausslemma2dlem1a $p |- ( ph -> ran R = ( 1 ... H ) ) $=
+        ( c1 co wcel c2 clt wbr cmin wa wi cle syl adantl crn cfz cmul cdiv cif
+        vy cv wceq wrex wb cvv elrnmpt elv wn iftrue eqeq2d adantr cn elfz1b id
+        w3a 2nn a1i nnmulcld 3ad2ant1 eleq1i 3ad2ant2 cz cprime zmulcld anim12i
+        cdvds nnz 2z df-3an sylibr ex impcom ltoddhalfle sylbi eleq1 syl5ibrcom
+        3jca sylbid ancoms 3syl ad2antrl elfzelz ad2antll zsubcld cr breq2i cc0
+        zred nnre pm3.2i syl3anc simpr 1cnd breq1d com12 imp sylanbrc rehalfcld
+        4syl cc ad2antrr mpbid wdc wo cq syl2anc exmiddc mpjaodan simpl nnehalf
+        simpr2 crp com23 3impia biimtrid oveq1 oveq2d ifbieq12d zcnd divcanap1d
+        3ad2ant3 2cnd 2ap0 anim12ci a1d 3imp rspcedvd 3expb caddc oveq1d 3eqtrd
+        halfre resubcld breq2d biimpi csn cdif nnoddn2prm anim1i biimp3a oveq2i
+        3exp eleq2i bitri iffalse eldifi prmz peano2rem 2re 2pos lemuldiv nnred
+        bitr4id lesub2d recn nncand biimpd impancom 3adant2 elnnz1 lenlt syl2an
+        simp2bi halfleoddlt biimpa nncn subhalfhalf ad3antrrr ltsub23 imbitrrdi
+        mpbird simplr sylbird syl3anbrc zq sylancl qdclt rexlimdva syl2anr nnrp
+        znq simp1 2rp ledivge1le cap exbiri eqbrtrd iftrued eqtr2d divsubdirapd
+        1le2 lesub2 halfcl halfcn subsubd prmnn divgt0 syl21anc halfgt0 addgt0d
+        nngt0 0red readdcld resubcl ltletr mpand elnnz omoe syl2an2r 1red nnge1
+        lesub2dd lediv1 3imtr4g 3imp21 zre halfge0 rehalfcl subge02d mpbii letr
+        subcld mpan2d lesub lenltd eqcomd recnd mulcomd mullidd 3bitr3d 3imtr4d
+        2m1e1 com3l com13 eqnbrtrd iffalsed 3adant1 nncan 3eqtrrd dvdsdc impbid
+        mulsubfacd bitrid eqrdv ) AUFDUAZIEUBJZUFUGZVUKKZVUMBUGZLUCJZCLUDJZMNZV
+        UPCVUPOJZUEZUHZBVULUIZAVUMVULKZVUNVVBUJUFBVULVUTVUMDUKHULUMAVVBVVCAVVAV
+        VCBVULAVUOVULKZPZVURVVAVVCQZVURUNZVURVVEVVFVURVVEPZVVAVUMVUPUHZVVCVURVV
+        AVVIUJVVEVURVUTVUPVUMVURVUPVUSUOUPUQVVHVVCVVIVUPVULKZVVHVUPURKZCIOJZLUD
+        JZURKZVUPVVMRNZVAZVVJVVEVURVVPVVDAVURVVPQZVVDVUOURKZEURKZVUOERNZVAZAVVQ
+        QEVUOUSZVWAAVURVVPVWAAVURVAVVKVVNVVOVWAAVVKVURVVRVVSVVKVVTVVRVUOLVVRUTL
+        URKZVVRVBVCVDZVEVEVWAAVVNVURVVSVVRVVNVVTVVSVVNEVVMURGVFUUAVGVEVWAAVURVV
+        OVWAAPCVHKZLCVLNUNZVUPVHKZVAZVURVVOUJAVWAVWHACVILUUBZUUCKZVWAVWHQFVWJVW
+        AVWHVWJVWAPVWEVWFPZVWGPZVWHVWJVWKVWAVWGVWJCURKZVWFPZVWKCUUDZVWMVWEVWFCV
+        MZUUEZSZVVRVVSVWGVVTVVRVUOLVUOVMLVHKZVVRVNVCVJVEVKVWEVWFVWGVOZVPVQSVRVU
+        PCVSSUUFWCUUHVTVRVRVVJVUPIVVMUBJZKVVPVULVXAVUPEVVMIUBGUUGUUIVVMVUPUSUUJ
+        VPVUMVUPVULWAWBWDWEVVGVVEVVFVVGVVEPZVVAVUMVUSUHZVVCVVGVVAVXCUJVVEVVGVUT
+        VUSVUMVURVUPVUSUUKUPUQVXBVVCVXCVUSVULKZVXBVUSURKZVVSVUSERNZVXDVXBVUSVHK
+        ZIVUSRNZVXEVXBCVUPAVWEVVGVVDAVWJCVIKZVWEFCVIVWIUULZCUUMZWFZWGVVDVWGVVGA
+        VVDVUOLVUOIEWHVWSVVDVNVCVJZWIWJVVEVXHVVGAVVDVXHAVWJVXICWKKZVVDVXHQFVXJV
+        XICVXKWNZVVDVXNVXHVVDVWAVXNVXHQZVWBVVRVVTVXPVVSVVRVXNVVTVXHVVRVXNPZVVTV
+        UPVVLRNZVXHVXQVVTVUOVVMRNZVXREVVMVUORGWLVXQVUOWKKZVVLWKKZLWKKZWMLMNZPZV
+        XRVXSUJVVRVXTVXNVUOWOUQVXNVYAVVRCUUNZTZVYDVXQVYBVYCUUOUUPWPZVCVUOVVLLUU
+        QWQUUSVXQVXRCVVLOJZVUSRNZVXHVXQVUPVVLCVVRVUPWKKZVXNVVRVUPVWDUURUQVYFVVR
+        VXNWRUUTVXQVYIVXHVXQVYHIVUSRVXNVYHIUHVVRVXNCICUVAZVXNWSUVBTWTUVCWDWDUVD
+        UVEVTXAXEXBTVUSUVFXCVVDVVSVVGAVVDVVRVVSVVTVWBUVIWIVVEVVGVXFAVVDVVGVXFQZ
+        AVWJVWNVVDVYLQFVWOVWNVVDVYLVWNVVDPZVVGVUQVUPRNZVXFVWNVUQWKKZVYJVYNVVGUJ
+        VVDVWMVYOVWFVWMCCWOZXDZUQVVDVUPVXMWNZVUQVUPUVGUVHVYMVYNVUSVVMRNZVXFVYMV
+        YNVYSVYMVYNPZVUSVUQMNZVYSVYTCVUQOJZVUPMNZWUAVYTWUCVUQVUPMNZVYMVYNWUDVYM
+        VWHVYNWUDUJVYMVWLVWHVWNVWKVVDVWGVWQVXMVKVWTVPVUPCUVJSUVKVWMWUCWUDUJVWFV
+        VDVYNVWMWUBVUQVUPMVWMCXFKZWUBVUQUHZCUVLCUVMZSWTUVNUVQVYTVXNVYOVYJVAZWUC
+        WUAUJVYMWUHVYNVYMVXNVYOVYJVWMVXNVWFVVDVYPXGVWMVYOVWFVVDVYQXGVVDVYJVWNVY
+        RTWCUQCVUQVUPUVOSXHVYTVWEVWFVXGVAZWUAVYSUJVYMWUIVYNVYMVWEVWFVXGVWMVWEVW
+        FVVDVWPXGZVWMVWFVVDUVRVYMCVUPWUJVVDVWGVWNVXMTWJWCUQVUSCVSSXHVQEVVMVUSRG
+        WLUVPUVSVQWFXBVREVUSUSUVTVUMVUSVULWAWBWDWEVVEVURXIZVURVVGXJVVEVUPXKKZVU
+        QXKKZWUKVVEVWGWULVVDVWGAVXMTVUPUWASVVEVWEVWCWUMAVWEVVDVXLUQVBCLUWGUWBVU
+        PVUQUWCXLVURXMSXNUWDAVVCVVBAVVCPZLVUMVLNZVVBWUOUNZWUOWUNVVBWUOAVVCVVBWU
+        OAVVCVAZVVAVUMVUMLUDJZLUCJZVUQMNZWUSCWUSOJZUEZUHZBWURVULWUQWURURKZVVSWU
+        RERNZVAZWURVULKWUOAVVCWVFVVCVUMURKZVVSVUMERNZVAZWUOAPZWVFEVUMUSZWVJWVIW
+        VFWVJWVIPWVDVVSWVEWVIWVGWUOWVDWVJWVGVVSWVHUWHWUOAXOVUMXPUWEWVJWVGVVSWVH
+        XQWVIWVJWVEWVGVVSWVHWVJWVEQWVGVVSPZWVJWVHWVEWVLWVJWVHWVEQZWVLWVJPZVUMWK
+        KZEXRKZLXRKZILRNZPZWVMWVGWVOVVSWVJVUMWOZXGWVLWVPWVJVVSWVPWVGEUWFTUQWVSW
+        VNWVQWVRUWIUWQWPVCVUMELUWJWQVQXSXTVRWCVQYAXTEWURUSVPVUOWURUHZVVAWVCUJWU
+        QWWAVUTWVBVUMWWAVURWUTVUPVUSWUSWVAWWAVUPWUSVUQMVUOWURLUCYBZWTWWBWWAVUPW
+        USCOWWBYCYDUPTWUQWVBWUSVUMWUQWUTWUSWVAWUQWUSVUMVUQMWUQVUMLVVCWUOVUMXFKZ
+        AVVCVUMVUMIEWHZYEZYGWUQYHLWMUWKNZWUQYIVCYFZWUOAVVCVUMVUQMNZVVCWVJWWHVVC
+        WVIWVJWWHQZWVKWVGVVSWVHWWIWVGWVHWWIQVVSWVHVUMVVMRNZWVGWWIEVVMVUMRGWLZWV
+        GWVJWWJWWHWVGWVJWWHWWJWVGWVJPZVWEVWFVUMVHKZVAZWWHWWJUJWWLVWKWWMPWWNWVGW
+        WMWVJVWKVUMVMZAVWKWUOAVWJVWNVWKFVWOVWQWFTYJVWEVWFWWMVOVPVUMCVSSUWLXSYAY
+        KYLVTXAXTUWMUWNWWGUWOYMYNWEWUPWUNVVBWUPAVVCVVBWUPAVVCVAZVVAVUMCVUMOJZLU
+        DJZLUCJZVUQMNZWWSCWWSOJZUEZUHZBWWRVULAWUPVVCWWRVULKZAVWJWUPVVCWXDQZQFVW
+        JWUPWXEVWJWUPPZWVIWWRURKZVVSWWRERNZVAZVVCWXDWXFWVIWXIWXFWVIPZWXGVVSWXHW
+        XJWWQURKZLWWQVLNZWXGWXJWWQVHKWMWWQMNZWXKWXJCVUMVWJVWEWUPWVIVWJVXIVWEVXJ
+        VXKSXGWVIWWMWXFWVGVVSWWMWVHWWOVEZTWJWVIWXFWXMWVGVVSWVHWXFWXMQZWVHWWJWVL
+        WXOWWKWVLWXFWWJWXMWVLWXFWWJWXMQWVLWXFPZWWJCVVMOJZWWQRNZWXMWXPWVOVVMWKKZ
+        VXNVAZWWJWXRUJWXFWVLWXTVWJWVLWXTQZWUPVWJVXIVXNWYAVXJVXOVXNWVLWXTVXNWVLP
+        WVOWXSVXNWVGWVOVXNVVSWVTWGVXNWXSWVLVXNVVLVYEXDUQVXNWVLXOWCVQWFUQVRVUMVV
+        MCUWRSWXPWXRVUQILUDJZYOJZWWQRNZWXMWXPWXQWYCWWQRVWJWXQWYCUHZWVLWUPVWJVXI
+        WUEWYEVXJVXICVXKYEZWUEWXQCVUQWYBOJZOJWUBWYBYOJWYCWUEVVMWYGCOWUECILWUEUT
+        ZWUEWSWUEYHWWFWUEYIVCUWPZYCWUECVUQWYBWYHCUWSWYBXFKWUEUWTVCUXAWUEWUBVUQW
+        YBYOWUGYPYQWFWGWTWXPWMWYCMNZWYDWXMVWJWYJWVLWUPVWJVXIVWMWYJVXJCUXBVWMVUQ
+        WYBVYQWYBWKKZVWMYRVCVWMVXNWMCMNVYDWMVUQMNVYPCUXGVYDVWMVYGVCCLUXCUXDWMWY
+        BMNVWMUXEVCUXFWFWGWXPWMWKKZWYCWKKZWWQWKKZVAZWYJWYDPWXMQWXFWVLWYOVWJWVLW
+        YOQZWUPVWJVXIVXNWYPVXJVXOWVLVXNWYOWVGVXNWYOQZVVSWVGWVOWYQWVTWVOVXNWYOWV
+        OVXNPZWYLWYMWYNWYRUXHWYRVUQWYBWYRCWVOVXNWRZXDZWYKWYRYRVCZUXIVXNWVOWYNCV
+        UMUXJWEZWCVQSUQXAWFUQVRWMWYCWWQUXKSUXLWDWDVQXSYAXTVRWWQUXMXCWXFVWKWVIWW
+        MWUPPWXLVWJVWKWUPVWRUQWXFWUPWVIWWMVWJWUPWRWXNYJCVUMUXNUXOWWQXPXLWXFWVGV
+        VSWVHXQWXJWWRVVMRNZWXHWXJWWQVVLRNZXUCWXJIVUMCWXJUXPWVIWVOWXFWVGVVSWVOWV
+        HWVTVETZVWJVXNWUPWVIVWJVXIVXNVXJVXOSXGZWVIIVUMRNZWXFWVGVVSXUGWVHVUMUXQV
+        ETUXRWXJWYNVYAVYDXUDXUCUJWXJCVUMXUFXUEYSVWJVYAWUPWVIVWJVXIVXNVYAVXJVXOV
+        YEWFXGVYDWXJVYGVCWWQVVLLUXSWQXHEVVMWWRRGWLVPWCVQWVKEWWRUSUXTVQSUYAVUOWW
+        RUHZVVAWXCUJWWPXUHVUTWXBVUMXUHVURWWTVUPVUSWWSWXAXUHVUPWWSVUQMVUOWWRLUCY
+        BZWTXUIXUHVUPWWSCOXUIYCYDUPTWWPWXBWXACWWQOJZVUMWWPWWTWWSWXAWWPWWSWWQVUQ
+        MWWPWWQLWWPCVUMAWUPWUEVVCAVWJVXIWUEFVXJWYFWFZVGVVCWUPWWCAWWEYGUYHWWPYHW
+        WFWWPYIVCYFZWUPAVVCWWQVUQMNUNZVVCWVIWUPAPZXUMWVKWVIXUNXUMWVGVVSWVHXUNXU
+        MQZWVGWVHXUOQVVSWVHWWJWVGXUOWWKXUNWWJWVGXUMAWWJWVGXUMQQZWUPAVWJVXIVWEXU
+        PFVXJVXKVWEVXNXUPCUYBWVGVXNWWJXUMWVGWVOVXNWWJXUMQZQWVTWVOVXNXUQWYRVUMWY
+        GRNZVUMVUQRNZWWJXUMWYRXURWYGVUQRNZXUSWYRWMWYBRNXUTUYCWYRVUQWYBVXNVYOWVO
+        CUYDZTZXUAUYEUYFWYRWVOWYGWKKZVYOXURXUTPXUSQWVOVXNXOZVXNXVCWVOVXNVUQWYBX
+        VAWYKVXNYRVCYSTXVBVUMWYGVUQUYGWQUYIWYRVVMWYGVUMRWYRWUEVVMWYGUHVXNWUEWVO
+        VYKTWYISYTWYRVUQWWQRNZVUMWUBRNZXUMXUSWYRVYOVXNWVOXVEXVFUJXVBWYSXVDVUQCV
+        UMUYJWQWYRVUQWWQWYTXUBUYKWYRWUBVUQVUMRVXNWUFWVOVXNWUBVUQLUCJZVUQOJLVUQU
+        CJZVUQOJZVUQVXNCXVGVUQOVXNXVGCVXNCLVYKVXNYHZWWFVXNYIVCYFUYLYPVXNXVGXVHV
+        UQOVXNVUQLVXNVUQXVAUYMZXVJUYNYPVXNXVILIOJZVUQUCJIVUQUCJVUQVXNLVUQXVJXVK
+        VUHVXNXVLIVUQUCXVLIUHVXNUYRVCYPVXNVUQXVKUYOYQYQTYTUYPUYQVQSUYSSXETUYTYA
+        YKYLXAYAXTVUAVUBWWPWWSWWQCOXULYCWWPWUEWWCPZXUJVUMUHAVVCXVMWUPAWUEVVCWWC
+        XUKWWEVKVUCCVUMVUDSVUEYMYNWEWUNWUOXIZWUOWUPXJWUNVWCWWMXVNVWCWUNVBVCVVCW
+        WMAWWDTLVUMVUFXLWUOXMSXNVQVUGVUIVUJ $.
+    $}
+
+    ${
+      gausslemma2dlem1cl.a $e |- ( ph -> A e. ( 1 ... H ) ) $.
+      $( Lemma for ~ gausslemma2dlem1 .  Closure of the body of the definition
+         of ` R ` .  (Contributed by Jim Kingdon, 10-Aug-2025.) $)
+      gausslemma2dlem1cl $p |- ( ph -> if ( ( A x. 2 ) < ( P / 2 )
+          , ( A x. 2 ) , ( P - ( A x. 2 ) ) ) e. ZZ ) $=
+        ( c2 cmul co cdiv cz wcel a1i cprime cq syl2anc clt cmin c1 elfzelzd 2z
+        wbr zmulcld csn cdif eldifi prmz 3syl zsubcld wdc zq syl cn 2nn ifcldcd
+        znq qdclt ) ACKLMZDKNMZUAUFZVBDVBUBMOACKACUCFJUDKOPAUEQUGZADVBADRKUHZUI
+        PDRPDOPZGDRVFUJDUKULZVEUMAVBSPZVCSPZVDUNAVBOPVIVEVBUOUPAVGKUQPZVJVHVKAU
+        RQDKUTTVBVCVATUS $.
+    $}
+
+    ${
+      $d H x y z $.  $d P x $.  $d R y z $.  $d ph x y z $.
+      $( Lemma for ~ gausslemma2dlem1 .  (Contributed by Jim Kingdon,
+         9-Aug-2025.) $)
+      gausslemma2dlem1f1o $p |- ( ph
+          -> R : ( 1 ... H ) -1-1-onto-> ( 1 ... H ) ) $=
+        ( co wceq c2 wbr cz wcel wa adantr syl zcnd ad2antrr cdvds vy vz c1 cfz
+        wf1 wfo wf1o wf cfv wral crn wfn cmul cdiv clt cmin cif cprime csn cdif
+        cv simpr gausslemma2dlem1cl ralrimiva fnmpt dffn4 gausslemma2dlem1a fof
+        wi sylib wb foeq3 mpbid wn simprl elfzelzd simprr 2cnd cc0 cap 2ap0 a1i
+        simplr oveq1 breq1d ifbieq12d fvmptd3 iftrued eqtrd 2z dvdsmul2 sylancl
+        oveq2d breqtrrd eldifi oddn2prm zmulcld syl22anc iffalsed breq2d mtbird
+        prmz omeo ad4ant14 pm2.65da wo wdc cq zq 2nn znq syl2anc exmiddc ecased
+        cn qdclt 3eqtr3d mulcanap2ad cc ad3antrrr mpbird mpjaodan ex ralrimivva
+        subcand dff13 sylanbrc df-f1o ) AUCEUDIZYIDUEZYIYIDUFZYIYIDUGAYIYIDUHZU
+        AVAZDUIZUBVAZDUIZJZYMYOJZVIZUBYIUJUAYIUJYJAYKYLAYIDUKZDUFZYKADYIULZUUAA
+        BVAZKUMIZCKUNIZUOLZUUDCUUDUPIZUQZMNZBYIUJUUBAUUIBYIAUUCYINZOBUUCCDEACUR
+        KUSZUTNZUUJFPGHAUUJVBVCVDBYIUUHDMHVEQYIDVFVJAYTYIJUUAYKVKABCDEFGHVGYTYI
+        YIDVLQVMZYIYIDVHQAYSUAUBYIYIAYMYINZYOYINZOZOZYQYRUUQYQOZYMKUMIZUUEUOLZY
+        RUUTVNZUURUUTOZYMYOKUVBYMUURYMMNZUUTUUQUVCYQUUQYMUCEAUUNUUOVOZVPZPZPRUV
+        BYOUUQYOMNZYQUUTUUQYOUCEAUUNUUOVQZVPZSRUVBVRKVSVTLZUVBWAWBUVBYNYPUUSYOK
+        UMIZUUQYQUUTWCUVBYNUUTUUSCUUSUPIZUQZUUSUUQYNUVMJZYQUUTUUQBYMUUHUVMYIDMH
+        UUCYMJZUUFUUTUUDUUGUUSUVLUVOUUDUUSUUEUOUUCYMKUMWDZWEUVPUVOUUDUUSCUPUVPW
+        MWFUVDUUQBYMCDEAUULUUPFPZGHUVDVCWGZSUVBUUTUUSUVLUURUUTVBWHWIZUVBYPUVKUU
+        EUOLZUVKCUVKUPIZUQZUVKUUQYPUWBJZYQUUTUUQBYOUUHUWBYIDMHUUCYOJZUUFUVTUUDU
+        UGUVKUWAUWDUUDUVKUUEUOUUCYOKUMWDZWEUWEUWDUUDUVKCUPUWEWMWFUVHUUQBYOCDEUV
+        QGHUVHVCWGZSUVBUVTUVKUWAUVBUVTUVTVNZUVBUWGKYNTLZUVBUWHUWGUVBKUUSYNTUUQK
+        UUSTLZYQUUTUUQUVCKMNZUWIUVEWJYMKWKWLZSUVSWNPUVBUWGOUWHKYPTLZUUQUWGUWLVN
+        YQUUTUUQUWGOZUWLKUWATLZUUQUWNVNZUWGUUQCMNZKCTLVNZUVKMNZKUVKTLZUWOUUQUUL
+        UWPUVQUULCURNUWPCURUUKWOCXBQZQZAUWQUUPAUULUWQFCWPQPZUUQYOKUVIUWJUUQWJWB
+        ZWQZUUQUVGUWJUWSUVIWJYOKWKWLZCUVKXCWRPUWMYPUWAKTUWMYPUWBUWAUUQUWCUWGUWF
+        PUWMUVTUVKUWAUUQUWGVBWSWIWTXAXDUURUWHUWLVKZUUTUWGUURYNYPKTUUQYQVBWTZSXA
+        XEUUQUVTUWGXFZYQUUTUUQUVTXGZUXHUUQUVKXHNZUUEXHNZUXIUUQUWRUXJUXDUVKXIQAU
+        XKUUPAUWPKXONUXKAUULUWPFUWTQZXJCKXKWLZPUVKUUEXPXLUVTXMQSXNWHWIXQXRUURUV
+        AOZYMYOKUUQYMXSNYQUVAUUQYMUVERSUUQYOXSNYQUVAUUQYOUVIRSUXNVRUVJUXNWAWBUX
+        NCUUSUVKACXSNUUPYQUVAACUXLRXTUUQUUSXSNYQUVAUUQUUSUUQYMKUVEUXCWQZRSUUQUV
+        KXSNYQUVAUUQUVKUXDRSUXNYNYPUVLUWAUUQYQUVAWCUXNYNUVMUVLUUQUVNYQUVAUVRSUX
+        NUUTUUSUVLUURUVAVBWSWIUXNYPUWBUWAUUQUWCYQUVAUWFSUXNUVTUVKUWAUXNUVTUWHUX
+        NUVTOZUWHUWLUXPKUVKYPTUUQUWSYQUVAUVTUXEXTUXPYPUWBUVKUUQUWCYQUVAUVTUWFXT
+        UXPUVTUVKUWAUXNUVTVBWHWIWNUURUXFUVAUVTUXGSYAUXPUWHKUVLTLZUUQUXQVNZYQUVA
+        UVTUUQUWPUWQUUSMNZUWIUXRUXAUXBUXOUWKCUUSXCWRXTUXPYNUVLKTUXPYNUVMUVLUUQU
+        VNYQUVAUVTUVRXTUXPUUTUUSUVLUURUVAUVTWCWSWIWTXAXEWSWIXQYEXRUURUUTXGZUUTU
+        VAXFUURUUSXHNZUXKUXTUURUXSUYAUURYMKUVFUWJUURWJWBWQUUSXIQAUXKUUPYQUXMSUU
+        SUUEXPXLUUTXMQYBYCYDUAUBYIYIDYFYGUUMYIYIDYHYG $.
+    $}
+
+    ${
+      $d H x y $.  $d P x $.  $d R y $.  $d ph x y $.  $d H k l $.  $d R k l $.
+      $d ph k l $.
+      $( Lemma 1 for ~ gausslemma2d .  (Contributed by AV, 5-Jul-2021.) $)
+      gausslemma2dlem1 $p |- ( ph -> ( ! ` H )
+                                     = prod_ k e. ( 1 ... H ) ( R ` k ) ) $=
+        ( vl cfa cfv c1 cfz co cv cprod cn0 wcel wceq gausslemma2dlem0b id 1zzd
+        nnnn0d fprodfac syl nnzd fzfigd gausslemma2dlem1f1o wa eqidd cc elfzelz
+        zcnd adantl fprodf1o eqtrd ) AFKLZMFNOZJPZJQZUSEPZDLZEQAFRSURVATAFACFGH
+        UAZUDFJUEUFAUSUTUSVCJEDVCUTVCTUBAMFAUCAFVDUGUHABCDFGHIUIAVBUSSUJVCUKUTU
+        SSZUTULSAVEUTUTMFUMUNUOUPUQ $.
+    $}
+
+    $d H x y $.  $d P x $.  $d R y $.  $d ph x y $.  $d H k l $.  $d R k l $.
+    $d ph k l $.  $d M x $.  $d ph k $.  $d k x $.
+    gausslemma2d.m $e |- M = ( |_ ` ( P / 4 ) ) $.
+    $( Lemma 2 for ~ gausslemma2d .  (Contributed by AV, 4-Jul-2021.) $)
+    gausslemma2dlem2 $p |- ( ph
+        -> A. k e. ( 1 ... M ) ( R ` k ) = ( k x. 2 ) ) $=
+      ( c2 cmul co c1 wcel wa clt wbr cr cv cfv wceq cfz cdiv cmin cif cz oveq1
+      breq1d oveq2d ifbieq12d adantl cn cle w3a elfz1b cc0 nnre adantr 2re 2pos
+      wi pm3.2i a1i lemul1 syl3anc gausslemma2dlem0e remulcld gausslemma2dlem0a
+      wb nnred rehalfcld lelttr syl2an3an mpan2d ex com23 sylbid 3impia iftrued
+      sylbi impcom eqtrd cuz wss gausslemma2dlem0d nn0zd gausslemma2dlem0b nnzd
+      gausslemma2dlem0g eluz2 syl3anbrc fzss2 sselda elfzelzd zmulcld ralrimiva
+      syl 2z fvmptd2 ) AEUAZDUBXBLMNZUCEOGUDNZAXBXDPZQZBXBBUAZLMNZCLUENZRSZXHCX
+      HUFNZUGZXCOFUDNZDUHJXFXGXBUCZQZXLXCXIRSZXCCXCUFNZUGZXCXNXLXRUCXFXNXJXPXHX
+      KXCXQXNXHXCXIRXGXBLMUIZUJXSXNXHXCCUFXSUKULUMXOXPXCXQXFXPXNXEAXPXEXBUNPZGU
+      NPZXBGUOSZUPAXPVCZGXBUQXTYAYBYCXTYAQZYBXCGLMNZUOSZYCYDXBTPZGTPZLTPZURLRSZ
+      QZYBYFVKXTYGYAXBUSZUTYAYHXTGUSZUMYKYDYIYJVAVBVDVEXBGLVFVGYDAYFXPYDAYFXPVC
+      YDAQYFYEXIRSZXPAYNYDACGHKVHUMYDXCTPZYETPZAXITPYFYNQXPVCXTYOYAXTXBLYLYIXTV
+      AVEVIUTYAYPXTYAGLYMYIYAVAVEVIUMACACACHVJVLVMXCYEXIVNVOVPVQVRVSVTWBWCUTWAW
+      DAXDXMXBAFGWEUBPZXDXMWFAGUHPFUHPGFUOSYQAGACGHKWGWHAFACFHIWIWJACFGHKIWKGFW
+      LWMGOFWNWSWOZXFXBLXFXBOFYRWPLUHPXFWTVEWQXAWR $.
+
+    $( Lemma 3 for ~ gausslemma2d .  (Contributed by AV, 4-Jul-2021.) $)
+    gausslemma2dlem3 $p |- ( ph -> A. k e. ( ( M + 1 ) ... H )
+                                    ( R ` k ) = ( P - ( k x. 2 ) ) ) $=
+      ( c2 co wcel wa wbr cle c4 cr a1i cv cfv cmul cmin wceq c1 caddc cfz cdiv
+      clt cz oveq1 breq1d oveq2d ifbieq12d adantl wn cn gausslemma2dlem0a elfz2
+      cif w3a wi cfl oveq1i breq1i nnz 4nn znq sylancl flqlelt syl nnre 4re cc0
+      cap 4ap0 redivclapd flqcld zred peano2re zre adantr ltleletr syl3anc expd
+      cq adantld mpd imp wb rehalfcld 2re remulcld 2pos pm3.2i lediv1 nncn 2cnd
+      2ap0 divdivap1d 2t2e4 oveq2i eqtrdi zcn divcanap4d breqan12rd bitrd exp31
+      mpbird com23 biimtrid com12 impcom sylbi elfzelz lenlt syl2an mpbid sylan
+      3ad2ant3 iffalsed eqtrd cuz wss cn0 gausslemma2dlem0d nnuz eleqtrdi fzss1
+      nn0p1nn sselda nnzd 2z zmulcld zsubcld fvmptd2 ralrimiva ) AEUAZDUBCYSLUC
+      MZUDMZUEEGUFUGMZFUHMZAYSUUCNZOZBYSBUAZLUCMZCLUIMZUJPZUUGCUUGUDMZVAZUUAUFF
+      UHMZDUKJUUEUUFYSUEZOZUUKYTUUHUJPZYTUUAVAZUUAUUMUUKUUPUEUUEUUMUUIUUOUUGUUJ
+      YTUUAUUMUUGYTUUHUJUUFYSLUCULZUMUUQUUMUUGYTCUDUUQUNUOUPUUNUUOYTUUAUUEUUOUQ
+      ZUUMACURNZUUDUURACHUSZUUSUUDOUUHYTQPZUURUUDUUSUVAUUDUUBUKNZFUKNZYSUKNZVBZ
+      UUBYSQPZYSFQPZOZOUUSUVAVCZYSUUBFUTUVHUVEUVIUVFUVEUVIVCUVGUVEUVFUVIUVDUVBU
+      VFUVIVCUVCUVFCRUIMZVDUBZUFUGMZYSQPZUVDUVIUUBUVLYSQGUVKUFUGKVEVFUVDUUSUVMU
+      VAUVDUUSUVMUVAUVDUUSOZUVMOUVAUVJYSQPZUVNUVMUVOUVNUVKUVJQPZUVJUVLUJPZOZUVM
+      UVOVCZUVNUVJWGNZUVRUUSUVTUVDUUSCUKNZRURNUVTCVGVHCRVIVJZUPUVJVKVLUVNUVQUVS
+      UVPUVNUVQUVMUVOUVNUVJSNZUVLSNZYSSNZUVQUVMOUVOVCUUSUWCUVDUUSCRCVMZRSNUUSVN
+      TRVOVPPUUSVQTVRUPUUSUWDUVDUUSUVKSNUWDUUSUVKUUSUVJUWBVSVTUVKWAVLUPUVDUWEUU
+      SYSWBZWCUVJUVLYSWDWEWFWHWIWJUVNUVAUVOWKUVMUVNUVAUUHLUIMZYTLUIMZQPZUVOUVNU
+      UHSNZYTSNZLSNZVOLUJPZOZUVAUWJWKUUSUWKUVDUUSCUWFWLZUPUVDUWLUUSUVDYSLUWGUWM
+      UVDWMTWNWCUWOUVNUWMUWNWMWOWPTUUHYTLWQWEUUSUVDUWHUVJUWIYSQUUSUWHCLLUCMZUIM
+      UVJUUSCLLCWRUUSWSZUWRLVOVPPZUUSWTTZUWTXAUWQRCUIXBXCXDUVDYSLYSXEUVDWSUWSUV
+      DWTTXFXGXHWCXJXIXKXLYAXMWCXNXOXNUUSUWKUWLUVAUURWKUUDUWPUUDYSLUUDYSYSUUBFX
+      PZVTUWMUUDWMTWNUUHYTXQXRXSXTWCYBYCAUUCUULYSAUUBUFYDUBZNZUUCUULYEAGYFNZUXC
+      ACGHKYGUXDUUBURUXBGYKYHYIVLUUBUFFYJVLYLUUECYTAUWAUUDACUUTYMWCUUEYSLUUDUVD
+      AUXAUPLUKNUUEYNTYOYPYQYR $.
+
+    $d H k $.  $d M k $.  $d P k $.
+    $( Lemma 4 for ~ gausslemma2d .  (Contributed by AV, 16-Jun-2021.) $)
+    gausslemma2dlem4 $p |- ( ph
+               -> ( ! ` H ) = ( prod_ k e. ( 1 ... M ) ( R ` k ) x.
+                                prod_ k e. ( ( M + 1 ) ... H ) ( R ` k ) ) ) $=
+      ( c1 co wceq c5 wcel c4 wbr c2 syl cfa cfv cv cprod cmul gausslemma2dlem1
+      cfz caddc c3 cuz cc0 wi cdiv cfl clt 3lt4 breq1 mpbiri cn0 cn wb 3nn0 4nn
+      eleq1 divfl0 sylancl mpbid eqtrid wa c0 oveq2 adantr fz10 eqtrdi prodeq1d
+      prod0 oveq1 0p1e1 oveq1d oveq12d cfn 1zzd gausslemma2dlem0b fzfigd adantl
+      nnzd cc cmin cif cz breq1d oveq2d ifbieq12d simpr elfzelzd 2z a1i zmulcld
+      cprime csn eldifad prmz zsubcld cq wdc zq 2nn znq syl2anc ifcldcd fvmptd3
+      qdclt eqeltrd adantll fprodcl mullidd eqtr2d impcom cin gausslemma2dlem0d
+      zcnd ex nn0red ltp1d fzdisj cun cle w3a cdif eluzelz flqcld cr nnrp ax-mp
+      crp eluzelre eluz2 4lt5 mp3an2i wo 4re ltleletr mpani 3impia sylbi divge1
+      5re zre flqge elnnz1 sylanbrc oddprm eldifi prmuz2 fldiv4lem1div2uz2 3jca
+      oveq2i eleq12i elfz1b bitri sylibr fzsplit fprodsplit ancoms wn oddprmgt2
+      2re gtned neneqd w3o prm23ge5 3orass sylib ord mpd mpjaodan eqtrd ) AFUAU
+      BLFUGMZEUCZDUBZEUDZLGUGMZUVTEUDZGLUHMZFUGMZUVTEUDZUEMZABCDEFHIJUFACUINZUW
+      AUWGNZCOUJUBPZUWHAUWIUWHGUKNZAUWIULUWHGCQUMMZUNUBZUKKUWHCQUORZUWMUKNZUWHU
+      WNUIQUORUPCUIQUOUQURUWHCUSPZQUTPZUWNUWOVAUWHUWPUIUSPVBCUIUSVDURVCCQVEVFVG
+      VHUWKAUWIUWKAVIZUWGLUWAUEMUWAUWRUWCLUWFUWAUEUWRUWCVJUVTEUDLUWRUWBVJUVTEUW
+      RUWBLUKUGMZVJUWKUWBUWSNAGUKLUGVKVLVMVNVOUVTEVPVNUWRUWEUVRUVTEUWRUWDLFUGUW
+      RUWDUKLUHMZLUWKUWDUWTNAGUKLUHVQVLVRVNVSVOVTUWRUWAUWRUVRUVTEAUVRWAPZUWKALF
+      AWBAFACFHIWCWFWDZWEAUVSUVRPZUVTWGPZUWKAUXCVIZUVTUXEUVTUVSSUEMZCSUMMZUORZU
+      XFCUXFWHMZWIZWJUXEBUVSBUCZSUEMZUXGUORZUXLCUXLWHMZWIUXJUVRDWJJUXKUVSNZUXMU
+      XHUXLUXNUXFUXIUXOUXLUXFUXGUOUXKUVSSUEVQZWKUXPUXOUXLUXFCWHUXPWLWMAUXCWNZUX
+      EUXHUXFUXIWJUXEUVSSUXEUVSLFUXQWOSWJPUXEWPWQWRZUXECUXFACWJPZUXCACWSPZUXSAC
+      WSSWTZHXAZCXBTZVLUXRXCUXEUXFXDPZUXGXDPZUXHXEUXEUXFWJPUYDUXRUXFXFTAUYEUXCA
+      UXSSUTPUYEUYCXGCSXHVFVLUXFUXGXLXIXJZXKUYFXMYAZXNXOXPXQYBTXRUWJAUWIUWJAVIZ
+      UWBUWEUVTUVREAUWBUWEXSVJNZUWJAGUWDUORUYIAGAGACGHKXTYCYDLGUWDFYETWEUYHGUVR
+      PZUVRUWBUWEYFNUYHUWMUTPZCLWHMSUMMZUTPZUWMUYLYGRZYHZUYJAUWJUYOACWSUYAYIPZU
+      WJUYOULHUYPUWJUYOUYPUWJVIZUYKUYMUYNUWJUYKUYPUWJUWMWJPLUWMYGRZUYKUWJUWLUWJ
+      UXSUWQUWLXDPZOCYJVCCQXHVFZYKUWJLUWLYGRZUYRQYOPZUWJCYLPZQCYGRZVUAUWQVUBVCQ
+      YMYNOCYPUWJOWJPZUXSOCYGRZYHVUDOCYQVUEUXSVUFVUDVUEUXSVIZQOUORZVUFVUDYRQYLP
+      VUGOYLPZVUCVUHVUFVIVUDULUUAVUIVUGUUGWQUXSVUCVUECUUHWEQOCUUBYSUUCUUDUUEQCU
+      UFYSUWJUYSLWJPVUAUYRVAUYTUWJWBUWLLUUIXIVGUWMUUJUUKWEUYPUYMUWJCUULVLUYQCSU
+      JUBPZUYNUYPVUJUWJUYPUXTVUJCWSUYAUUMCUUNTVLCUUOTUUPYBTXRUYJUWMLUYLUGMZPUYO
+      GUWMUVRVUKKFUYLLUGIUUQUURUYLUWMUUSUUTUVAGLFUVBTAUXAUWJUXBWEAUXCUXDUWJUYGX
+      NUVCUVDACSNZUVEUWHUWJYTZACSASCSYLPAUVGWQAUYPSCUORHCUVFTUVHUVIAVULVUMAVULU
+      WHUWJUVJZVULVUMYTAUXTVUNUYBCUVKTVULUWHUWJUVLUVMUVNUVOUVPUVQ $.
+
+    $( Lemma for ~ gausslemma2dlem5 .  (Contributed by AV, 8-Jul-2021.) $)
+    gausslemma2dlem5a $p |- ( ph
+        -> ( prod_ k e. ( ( M + 1 ) ... H ) ( R ` k ) mod P )
+         = ( prod_ k e. ( ( M + 1 ) ... H ) ( -u 1 x. ( k x. 2 ) ) mod P ) ) $=
+      ( co cprod cmo c2 wceq syl c4 cz wcel c1 caddc cfz cv cmul cmin cneg wral
+      cfv gausslemma2dlem3 prodeq2 oveq1d cdiv cfl cn cq cprime csn eldifad 4nn
+      prmz znq sylancl flqcld eqeltrid peano2zd gausslemma2dlem0b fzfigd adantr
+      nnzd wa elfzelz 2z a1i zmulcld adantl zsubcld sylan neg1z zcnd mulm1d cc0
+      prmnn clt wbr zq nngt0d qnegmod syl3anc eqtr2d fprodmodd eqtrd ) AGUAUBLZ
+      FUCLZEUDZDUIZEMZCNLZWNCWOOUELZUFLZEMZCNLZWNUAUGZWSUELZEMCNLAWPWTPEWNUHZWR
+      XBPABCDEFGHIJKUJXEWQXACNWNWPWTEUKULQAWNWTXDECAWMFAGAGCRUMLZUNUISKAXFACSTZ
+      RUOTXFUPTACUQTZXGACUQOURHUSZCVAZQUTCRVBVCVDVEVFAFACFHIVGVJVHAXHWOWNTZWTST
+      XIXHXKVKZCWSXHXGXKXJVIZXKWSSTZXHXKWOOWOWMFVLOSTXKVMVNVOZVPZVQVRXKXDSTAXKX
+      CWSXCSTXKVSVNXOVOVPAXHCUOTXICWCZQAXHXKWTCNLZXDCNLZPXIXLXSWSUGZCNLZXRXLXDX
+      TCNXKXDXTPXHXKWSXKWSXOVTWAVPULXLWSUPTZCUPTZWBCWDWEZYAXRPXLXNYBXPWSWFQXLXG
+      YCXMCWFQXHYDXKXHCXQWGVIWSCWHWIWJVRWKWL $.
+
+    gausslemma2d.n $e |- N = ( H - M ) $.
+    $( Lemma 5 for ~ gausslemma2d .  (Contributed by AV, 9-Jul-2021.) $)
+    gausslemma2dlem5 $p |- ( ph
+            -> ( prod_ k e. ( ( M + 1 ) ... H ) ( R ` k ) mod P )
+               = ( ( ( -u 1 ^ N )
+                   x. prod_ k e. ( ( M + 1 ) ... H ) ( k x. 2 ) ) mod P ) ) $=
+      ( c1 co cfv c2 cmul cz wcel caddc cfz cv cprod cmo cneg gausslemma2dlem5a
+      cexp c4 cdiv cfl cn cq gausslemma2dlem0a nnzd 4nn sylancl flqcld eqeltrid
+      znq peano2zd gausslemma2dlem0b fzfigd cc wa neg1cn a1i elfzelz 2z zmulcld
+      zcnd adantl fprodmul cfn wceq fprodconst cmin cuz cle wbr cprime csn cdif
+      chash cdvds wn nnoddn2prm wb nnz oddm1d2 syl 3syl gausslemma2dlem0f eluz2
+      biimpa syl3anbrc hashfz 1cnd nppcan2d eqtr4di eqtrd oveq2d oveq1d ) AGNUA
+      OZFUBOZEUCZDPEUDCUEOXENUFZXFQROZROEUDZCUEOXGHUHOZXEXHEUDZROZCUEOABCDEFGIJ
+      KLUGAXIXLCUEAXIXEXGEUDZXKROXLAXEXGXHEAXDFAGAGCUIUJOZUKPSLAXNACSTZUIULTXNU
+      MTACACIUNUOUPCUIUTUQURUSZVAZAFACFIJVBUOVCZXGVDTZAXFXETZVEVFVGXTXHVDTAXTXH
+      XTXFQXFXDFVHQSTXTVIVGVJVKVLVMAXMXJXKRAXMXGXEWDPZUHOZXJAXEVNTXSXMYBVOXRVFX
+      EXGEVPUQAYAHXGUHAYAFXDVQONUAOZHAFXDVRPTZYAYCVOAXDSTFSTXDFVSVTYDXQAFCNVQOQ
+      UJOZSJACWAQWBWCTCULTZQCWEVTWFZVEYESTZICWGYFYGYHYFXOYGYHWHCWICWJWKWOWLUSZA
+      CFGILJWMXDFWNWPXDFWQWKAYCFGVQOHAFGNAFYIVKAGXPVKAWRWSMWTXAXBXAXCXAXCXA $.
+
+    $( Lemma 6 for ~ gausslemma2d .  (Contributed by AV, 16-Jun-2021.) $)
+    gausslemma2dlem6 $p |- ( ph -> ( ( ! ` H ) mod P )
+                                   = ( ( ( ( -u 1 ^ N ) x. ( 2 ^ H ) )
+                                         x. ( ! ` H ) ) mod P ) ) $=
+      ( vk cmo co c1 cmul c2 cz wcel cfa cfv cfz cv cprod cneg gausslemma2dlem4
+      caddc cexp oveq1d cq cc0 clt wbr wceq 1zzd c4 cdiv gausslemma2dlem0a nnzd
+      cfl cn 4nn sylancl flqcld eqeltrid fzfigd wa wral gausslemma2dlem2 adantr
+      znq wi rspa expcom adantl elfzelz 2z a1i zmulcld syl5ibrcom syld fprodzcl
+      mpd peano2zd gausslemma2dlem0b cmin gausslemma2dlem3 zsubcl syl2an zq syl
+      nnq nngt0d modqmulmodr eqcomd syl22anc gausslemma2dlem5 gausslemma2dlem0h
+      eleq1 oveq2d neg1z zexpcl sylancr prodeq2d cc zcnd 2cnd gausslemma2dlem0d
+      cn0 fprodmul cin c0 nn0red ltp1d fzdisj cuz cun nn0pzuz syl2anc cle nn0zd
+      gausslemma2dlem0g eluz2 syl3anbrc fzsplit2 fprodsplit chash cprime csn wn
+      cdif cdvds nnoddn2prm nnnn0 anim1i nn0oddm1d2 biimpa 3syl 3eqtrd fprodfac
+      cfn fprodconst oveq12d hashfz1 faccld nncnd 2nn0 nn0expcl mulcomd 3eqtr3d
+      2cn nn0cnd eqtrd cr neg1rr reexpcld recnd mul12d mulassd 3eqtr4d ) AEUAUB
+      ZCNOPFUCOZMUDZDUBZMUEZFPUHOZEUCOZUVEMUEZQOZCNOZUVFUVICNOZQOZCNOZPUFZGUIOZ
+      REUIOZQOUVBQOZCNOZAUVBUVJCNABCDMEFHIJKUGUJAUVFSTZUVIUKTZCUKTZULCUMUNZUVKU
+      VNUOAUVCUVEMAPFAUPZAFCUQUROZVAUBSKAUWEACSTZUQVBTUWEUKTACACHUSZUTZVCCUQVLV
+      DVEVFZVGAUVDUVCTZVHZUVEUVDRQOZUOZMUVCVIZUVESTZAUWNUWJABCDMEFHIJKVJZVKUWKU
+      WNUWMUWOUWJUWNUWMVMAUWNUWJUWMUWMMUVCVNVOVPUWKUWOUWMUWLSTZUWJUWQAUWJUVDRUV
+      DPFVQRSTZUWJVRVSVTVPUVEUWLSWTWAWBWDWCZAUVISTUWAAUVHUVEMAUVGEAFUWIWEAEACEH
+      IWFUTZVGZAUVDUVHTZVHZUVECUWLWGOZUOZMUVHVIZUWOAUXFUXBABCDMEFHIJKWHVKUXCUXF
+      UXEUWOUXBUXFUXEVMAUXFUXBUXEUXEMUVHVNVOVPUXCUWOUXEUXDSTZAUWFUWQUXGUXBUWHUX
+      BUVDRUVDUVGEVQZUWRUXBVRVSVTCUWLWIWJUVEUXDSWTWAWBWDWCUVIWKWLACVBTZUWBUWGCW
+      MWLZACUWGWNZUVTUWAVHUWBUWCVHVHUVNUVKUVFUVICWOWPWQAUVNUVFUVPUVHUWLMUEZQOZC
+      NOZQOZCNOZUVFUXMQOZCNOZUVSAUVMUXOCNAUVLUXNUVFQABCDMEFGHIJKLWRXAUJAUVTUXMU
+      KTZUWBUWCUXPUXRUOUWSAUXMSTUXSAUVPUXLAUVOSTGXJTUVPSTXBACEFGHKILWSZUVOGXCXD
+      AUVHUWLMUXAUXCUVDRUXBUVDSTAUXHVPUWRUXCVRVSVTWCZVTUXMWKWLUXJUXKUVFUXMCWOWQ
+      AUXQUVRCNAUVPUVFUXLQOZQOUVPUVQUVBQOZQOUXQUVRAUYBUYCUVPQAUYBUVCUWLMUEZUXLQ
+      OZUYCAUVFUYDUXLQAUVCUVEUWLMUWPXEUJAPEUCOZUWLMUEUYFUVDMUEZUYFRMUEZQOZUYEUY
+      CAUYFUVDRMAPEUWDUWTVGZUVDUYFTZUVDXFTAUYKUVDUVDPEVQZXGVPAUYKVHZXHXKAUVCUVH
+      UWLUYFMAFUVGUMUNUVCUVHXLXMUOAFAFACFHKXIZXNXOPFUVGEXPWLAUVGPXQUBTZEFXQUBTZ
+      UYFUVCUVHXRUOAFXJTPSTUYOUYNUWDFPXSXTAFSTESTFEYAUNUYPAFUYNYBUWTACEFHKIYCFE
+      YDYEFPEYFXTUYJUYMUWLUYKUWQAUYKUVDRUYLUWRUYKVRVSVTVPXGYGAUYIUVBRUYFYHUBZUI
+      OZQOUVBUVQQOUYCAUYGUVBUYHUYRQAUVBUYGAEXJTZUVBUYGUOACYIRYJYLTZCXJTZRCYMUNY
+      KZVHZUYSHUYTUXIVUBVHVUCCYNUXIVUAVUBCYOYPWLVUCECPWGORUROZXJIVUAVUBVUDXJTCY
+      QYRVFYSZEMUUAWLWPAUYFUUBTRXFTUYHUYRUOUYJUULUYFRMUUCVDUUDAUYRUVQUVBQAUYQER
+      UIAUYSUYQEUOVUEEUUEWLXAXAAUVBUVQAUVBAEVUEUUFUUGZARXJTZUYSUVQXFTUUHVUEVUGU
+      YSVHUVQREUUIUUMXDZUUJYTUUKUUNXAAUVFUVPUXLAUVFUWSXGAUVPAUVOGUVOUUOTAUUPVSU
+      XTUUQUURZAUXLUYAXGUUSAUVPUVQUVBVUIVUHVUFUUTUVAUJYTYT $.
+
+    $( Lemma 7 for ~ gausslemma2d .  (Contributed by AV, 13-Jul-2021.) $)
+    gausslemma2dlem7 $p |- ( ph
+                            -> ( ( ( -u 1 ^ N ) x. ( 2 ^ H ) ) mod P ) = 1 ) $=
+      ( cmo co c1 c2 cmul wceq cz wcel cneg cexp gausslemma2dlem6 nnnn0d faccld
+      cfa cfv gausslemma2dlem0b nncnd mullidd eqcomd oveq1d eqeq1d cn cgcd 1zzd
+      cn0 neg1z gausslemma2dlem0h zexpcl sylancr zmulcld nnzd gausslemma2dlem0a
+      wb 2z gausslemma2dlem0c cncongrcoprm syl32anc bitrd simpr clt wbr nnq syl
+      wa cq cprime csn eldifad prmgt1 q1mod syl2anc adantr eqtr3d ex sylbid mpd
+      ) AEUFUGZCMNZOUAZGUBNZPEUBNZQNZWIQNCMNZRZWNCMNZORZABCDEFGHIJKLUCAWPOCMNZW
+      QRZWRAWPOWIQNZCMNZWORZWTAWJXBWOAWIXACMAXAWIAWIAWIAEAEACEHIUHUDZUEZUIUJUKU
+      LUMAOSTWNSTWISTCUNTZWICUONORXCWTVEAUPAWLWMAWKSTGUQTWLSTURACEFGHKILUSWKGUT
+      VAAPSTEUQTWMSTVFXDPEUTVAVBAWIXEVCACHVDZACEHIVGOWNWICVHVIVJAWTWRAWTVPWSWQO
+      AWTVKAWSORZWTACVQTZOCVLVMZXHAXFXIXGCVNVOACVRTXJACVRPVSHVTCWAVOCWBWCWDWEWF
+      WGWH $.
+
+    $( Gauss' Lemma (see also theorem 9.6 in [ApostolNT] p. 182) for integer
+       ` 2 ` :  Let p be an odd prime.  Let S = {2, 4, 6, ..., p - 1}.  Let n
+       denote the number of elements of S whose least positive residue modulo p
+       is greater than p/2.  Then ( 2 | p ) = (-1)^n.  (Contributed by AV,
+       14-Jul-2021.) $)
+    gausslemma2d $p |- ( ph -> ( 2 /L P ) = ( -u 1 ^ N ) ) $=
+      ( c1 cexp co c2 cmul cmo wceq wcel gausslemma2dlem7 clt gausslemma2dlem0a
+      cneg clgs cq wbr nnq syl cprime csn cdif eldifi prmgt1 3syl q1mod syl2anc
+      cn eqcomd eqeq2d wa cz cn0 neg1z gausslemma2dlem0h zexpcl sylancr 2nn a1i
+      gausslemma2dlem0b nnnn0d nnexpcld nnzd zmulcld zq adantr cc0 nngt0d simpr
+      1z mp1i modqmul1 ex zcnd nncnd mul32d caddc nn0cnd 2timesd oveq2d expaddd
+      cc neg1cn nn0zd m1expeven 3eqtr3d oveq1d mullidd 3eqtrd eqeq12d cmin cdiv
+      oveq2i oveq1i eqeq1i lgsvalmod eqeq1d gausslemma2dlem0i biimtrid syld mpd
+      2z sylbid ) AMUDZGNOZPENOZQOZCROZMSZPCUEOZXOSZABCDEFGHIJKLUAAXSXRMCROZSZY
+      AAMYBXRAYBMACUFTZMCUBUGZYBMSACURTYDACHUCZCUHUIZACUJPUKZULTZCUJTYEHCUJYHUM
+      CUNUOCUPUQUSUTAYCXQXOQOZCROZMXOQOZCROZSZYAAYCYNAYCVAZXQMXOCAXQUFTZYCAXQVB
+      TYPAXOXPAXNVBTGVCTXOVBTZVDACEFGHKILVEZXNGVFVGZAXPAPEPURTAVHVIAEACEHIVJVKV
+      LZVMVNXQVOUIVPMVBTMUFTYOVTMVOWAAYQYCYSVPAYDYCYGVPAVQCUBUGYCACYFVRVPAYCVSW
+      BWCAYNXPCROZXOCROZSZYAAYKUUAYMUUBAYJXPCRAYJXOXOQOZXPQOMXPQOXPAXOXPXOAXOYS
+      WDZAXPYTWEZUUEWFAUUDMXPQAXNGGWGOZNOXNPGQOZNOZUUDMAUUGUUHXNNAUUHUUGAGAGYRW
+      HWIUSWJAXNGGXNWLTAWMVIYRYRWKAGVBTUUIMSAGYRWNGWOUIWPWQAXPUUFWRWSWQAYLXOCRA
+      XOUUEWRWQWTUUCPCMXAOPXBOZNOZCROZUUBSZAYAUUAUULUUBXPUUKCREUUJPNIXCXDXEAUUM
+      XTCROZUUBSYAAUULUUNUUBAUUNUULAPVBTYIUUNUULSXLHPCXFVGUSXGACEFGHKILXHXMXIXM
+      XJXMXK $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Quadratic reciprocity
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -180672,6 +181638,10 @@ $)
 
        <tr><td>g</td><td>with "is a set" condition</td><td> </td><td> </td>
        <td>No</td><td> ~ 1stvalg , ~ brtposg , ~ setsmsbasg </td></tr>
+
+       <tr><td>m</td><td>inhabited (from "member")</td><td> </td>
+       <td> ` E. x x e. A ` </td>
+       <td>No</td><td> ~ r19.2m , ~ negm , ~ ctm , ~ basmex </td></tr>
 
        <tr><td>seq3, sum3</td><td>recursive sequence</td>
        <td> ~ df-seqfrec </td>
@@ -182514,6 +183484,15 @@ htmldef "STAB" as "<SMALL>STAB</SMALL> ";
 htmldef "DECID" as "<SMALL>DECID</SMALL> ";
   althtmldef "DECID" as "<SMALL>DECID</SMALL> ";
   latexdef "DECID" as "\mathrm{DECID}";
+htmldef "RLReg" as "RLReg";
+  althtmldef "RLReg" as "RLReg";
+  latexdef "RLReg" as "\mathrm{RLReg}";
+htmldef "Domn" as "Domn";
+  althtmldef "Domn" as "Domn";
+  latexdef "Domn" as "\mathrm{Domn}";
+htmldef "IDomn" as "IDomn";
+  althtmldef "IDomn" as "IDomn";
+  latexdef "IDomn" as "\mathrm{IDomn}";
 
 htmldef "PsMet" as "PsMet";
   althtmldef "PsMet" as "PsMet";
