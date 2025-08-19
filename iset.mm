@@ -108593,6 +108593,19 @@ $)
   $}
 
   ${
+    $d .+ x y $.  $d F x y $.  $d M x y $.  $d V x y $.  $d W x y $.
+    $( Value of the sequence builder function at its initial value.
+       (Contributed by Mario Carneiro, 24-Jun-2013.)  (Revised by Jim Kingdon,
+       19-Aug-2025.) $)
+    seq1g $p |- ( ( M e. ZZ /\ F e. V /\ .+ e. W ) ->
+        ( seq M ( .+ , F ) ` M ) = ( F ` M ) ) $=
+      ( vx vy cz wcel w3a cvv simp1 cv cuz cfv fvexg 3ad2antl2 wa co simprl
+      simpl3 simprr ovexg syl3anc seq3-1 ) CHIZBDIZAEIZJZFGAKBCUFUGUHLUGUFFMZCN
+      OZIUJBOKIUHUJBDUKPQUIUJKIZGMZKIZRZRULUHUNUJUMASKIUIULUNTUFUGUHUOUAUIULUNU
+      BUJUMAKEKUCUDUE $.
+  $}
+
+  ${
     $d .+ a b x y $.  $d .+ s t w x y z $.  $d .+ u v w x y z $.  $d F b x y $.
     $d F c x $.  $d F s t w x y z $.  $d F u v w x y z $.  $d M a b x y $.
     $d M s t w x y z $.  $d M u v w x y z $.  $d S a b x y $.  $d S c x $.
