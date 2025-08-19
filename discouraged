@@ -16201,6 +16201,7 @@ New usage of "dfbi1ALT" is discouraged (0 uses).
 New usage of "dfch2" is discouraged (0 uses).
 New usage of "dfcnfldOLD" is discouraged (13 uses).
 New usage of "dfcnqs" is discouraged (4 uses).
+New usage of "dfdif3OLD" is discouraged (0 uses).
 New usage of "dfeu" is discouraged (0 uses).
 New usage of "dffr2ALT" is discouraged (0 uses).
 New usage of "dffun2OLD" is discouraged (0 uses).
@@ -19202,6 +19203,7 @@ New usage of "sb9i" is discouraged (0 uses).
 New usage of "sbabelOLD" is discouraged (0 uses).
 New usage of "sbal1" is discouraged (0 uses).
 New usage of "sbal2" is discouraged (2 uses).
+New usage of "sbalexOLD" is discouraged (0 uses).
 New usage of "sbc2ieOLD" is discouraged (0 uses).
 New usage of "sbc2rexgOLD" is discouraged (1 uses).
 New usage of "sbc3or" is discouraged (1 uses).
@@ -20440,6 +20442,7 @@ Proof modification of "demoivreALT" is discouraged (1087 steps).
 Proof modification of "dfac5lem4OLD" is discouraged (689 steps).
 Proof modification of "dfbi1ALT" is discouraged (100 steps).
 Proof modification of "dfcnfldOLD" is discouraged (195 steps).
+Proof modification of "dfdif3OLD" is discouraged (137 steps).
 Proof modification of "dfeu" is discouraged (35 steps).
 Proof modification of "dffr2ALT" is discouraged (64 steps).
 Proof modification of "dffun2OLD" is discouraged (109 steps).
@@ -21594,6 +21597,7 @@ Proof modification of "sb5OLD" is discouraged (25 steps).
 Proof modification of "sb8fOLD" is discouraged (17 steps).
 Proof modification of "sbabelOLD" is discouraged (126 steps).
 Proof modification of "sbal1" is discouraged (149 steps).
+Proof modification of "sbalexOLD" is discouraged (32 steps).
 Proof modification of "sbc2ieOLD" is discouraged (38 steps).
 Proof modification of "sbc2or" is discouraged (134 steps).
 Proof modification of "sbc2rexgOLD" is discouraged (62 steps).
