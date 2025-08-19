@@ -92,6 +92,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+17-Aug-25 bj-denotes iseqsetv-clel Moved from BJ's mathbox to main
+17-Aug-25 bj-issettru issettru  Moved from BJ's mathbox to main set.mm
  9-Aug-25 frobrhm   [same]      Moved from TA's mathbox to main set.mm
 28-Jul-25 spcimgft  spcimgfi1   Is a kind of inference form
 27-Jul-25 fnimatp   fnimatpd    Moved from TA's mathbox to main set.mm
