@@ -108658,6 +108658,20 @@ $)
   $}
 
   ${
+    $d .+ x y $.  $d F x y $.  $d M x y $.  $d N x y $.  $d V x y $.
+    $d W x y $.
+    $( Value of the sequence builder function at a successor.  (Contributed by
+       Mario Carneiro, 24-Jun-2013.)  (Revised by Jim Kingdon, 19-Aug-2025.) $)
+    seqp1g $p |- ( ( N e. ( ZZ>= ` M ) /\ F e. V /\ .+ e. W ) ->
+        ( seq M ( .+ , F ) ` ( N + 1 ) ) =
+          ( ( seq M ( .+ , F ) ` N ) .+ ( F ` ( N + 1 ) ) ) ) $=
+      ( vx vy cuz cfv wcel w3a cvv simp1 cv wa simpl2 vex fvexg sylancl mp3an2i
+      co simpl3 a1i ovexg seq3p1 ) DCIJZKZBEKZAFKZLZGHAMBCDUHUIUJNUKGOZUGKZPUIU
+      LMKZULBJMKUHUIUJUMQGRZULBEMSTUNUKUNHOZMKZPZPZUJUQULUPAUBMKUOUHUIUJURUCUQU
+      SHRUDULUPAMFMUEUAUF $.
+  $}
+
+  ${
     $d .+ a b x y $.  $d .+ w x y z $.  $d C a b x y $.  $d C w x y z $.
     $d D a b x y $.  $d F a b x $.  $d F w x z $.  $d M a x $.  $d M w x z $.
     $d ph x y $.
