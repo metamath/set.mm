@@ -1957,10 +1957,20 @@ is double negation elimination.</TD>
   <TD>~ r19.28m</TD>
 </TR>
 
+<tr>
+  <td>r19.3rzv</td>
+  <td>~ r19.3rmv</td>
+</tr>
+
 <TR>
   <TD>r19.9rzv</TD>
   <TD>~ r19.9rmv</TD>
 </TR>
+
+<tr>
+  <td>r19.28zv</td>
+  <td>~ r19.28mv</td>
+</tr>
 
 <TR>
   <TD>r19.37zv</TD>
@@ -4612,6 +4622,12 @@ this implies excluded middle</TD>
   <TD><I>none</I></TD>
   <TD>The set.mm proof uses excluded middle in several places.</TD>
 </TR>
+
+<tr>
+  <td>rneqdmfinf1o</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses fofinf1o</td>
+</tr>
 
 <TR>
   <TD>dmfi</TD>
@@ -7321,12 +7337,6 @@ proof is not intuitionistic and it is lightly used in set.mm.</TD>
   <TD>ltdifltdiv</TD>
   <TD><I>none</I></TD>
   <TD>Unused in set.mm.</TD>
-</TR>
-
-<TR>
-  <TD>fldiv4lem1div2uz2 , fldiv4lem1div2</TD>
-  <TD><I>none</I></TD>
-  <TD>Presumably provable, but lightly used in set.mm.</TD>
 </TR>
 
 <TR>
@@ -11388,6 +11398,29 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>isnzr2hash</td>
+  <td>~ isnzr2</td>
+  <td>should be provable if the ring's base is either
+  finite or infinite, but probably not provable as
+  stated in set.mm</td>
+</tr>
+
+<tr>
+  <td>nzrpropd</td>
+  <td><i>none</i></td>
+  <td>Should be provable. If we are able to prove theorems
+  such as rngidpropd and mgpbas first, that may reduce
+  divergence from set.mm.
+  </td>
+</tr>
+
+<tr>
+  <td>opprnzrb</td>
+  <td>~ opprnzrbg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
   <td>opprsubrng</td>
   <td>~ opprsubrngg</td>
   <td>adds set existence condition</td>
@@ -11435,6 +11468,92 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>may be possible if we define notation and theorems related
   to Moore systems</td>
+</tr>
+
+<tr>
+  <td>rrgsupp</td>
+  <td><i>none</i></td>
+  <td>even if we have notation(s) for support, support theorems
+  will not necessarily behave as in set.mm</td>
+</tr>
+
+<tr>
+  <td>isdomn5</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses excluded middle and it seems unlikely
+  the theorem as stated would be provable</td>
+</tr>
+
+<tr>
+  <td>isdomn2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses isdomn5</td>
+</tr>
+
+<tr>
+  <td>domnrrg</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses isdomn2</td>
+</tr>
+
+<tr>
+  <td>isdomn6</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses isdomn2</td>
+</tr>
+
+<tr>
+  <td>isdomn3</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses con34b</td>
+</tr>
+
+<tr>
+  <td>isdomn4</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses isdomn5</td>
+</tr>
+
+<tr>
+  <td>opprdomnb</td>
+  <td>~ opprdomnbg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>isdomn4r</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses isdomn4</td>
+</tr>
+
+<tr>
+  <td>domnlcanb</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses isdomn4</td>
+</tr>
+
+<tr>
+  <td>domnlcan</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses domnlcanb</td>
+</tr>
+
+<tr>
+  <td>domnrcanb</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses isdomn4r</td>
+</tr>
+
+<tr>
+  <td>domnrcan</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses domnrcanb</td>
+</tr>
+
+<tr>
+  <td>domneq0r</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses domnrcanb</td>
 </tr>
 
 <tr>
@@ -12105,16 +12224,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>znfld</td>
-  <td><i>none</i></td>
-  <td>Should be feasible once Field is defined.
-  The set.mm proof also uses Domn and IDomn and related
-  theorems.</td>
-</tr>
-
-<tr>
-  <td>znidomb</td>
-  <td><i>none</i></td>
-  <td>Should be feasible once IDomn is defined.</td>
+  <td>~ znidom</td>
+  <td>should be feasible once Field is defined</td>
 </tr>
 
 <tr>
@@ -12131,12 +12242,6 @@ intuitionistic and it is lightly used in set.mm</TD>
   is to use ~ hashen in place of hasheni which requires
   finiteness conditions which would be somewhat involved
   to prove</td>
-</tr>
-
-<tr>
-  <td>znrrg</td>
-  <td><i>none</i></td>
-  <td>may be possible if we have RLReg</td>
 </tr>
 
 <tr>
@@ -14523,8 +14628,27 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>lgsqr</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses df-zn , df-ply1 , df-zrh , df-deg1 ,
+  <td>the set.mm proof uses df-ply1 , df-deg1 ,
   and possibly other things not yet defined in iset.mm</td>
+</tr>
+
+<tr>
+  <td>lgsqrmod</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses lgsqr</td>
+</tr>
+
+<tr>
+  <td>lgsqrmodndvds</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses lgsqrmod</td>
+</tr>
+
+<tr>
+  <td>lgsdchrval , lgsdchr</td>
+  <td><i>none</i></td>
+  <td>may be feasible if we defined Dirichlet characters
+  ( DChr syntax)</td>
 </tr>
 
 <tr>
