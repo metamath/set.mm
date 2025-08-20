@@ -108794,6 +108794,24 @@ $)
   $}
 
   ${
+    $d F x y $.  $d .+ x y $.  $d M x y $.  $d N x y $.  $d S x y $.
+    $d ph x y $.
+    seqcl.1 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
+    seqcl.2 $e |- ( ( ph /\ x e. ( M ... N ) ) -> ( F ` x ) e. S ) $.
+    seqcl.3 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x .+ y ) e. S ) $.
+    seqclg.f $e |- ( ph -> F e. V ) $.
+    seqclg.p $e |- ( ph -> .+ e. W ) $.
+    $( Closure properties of the recursive sequence builder.  (Contributed by
+       Mario Carneiro, 2-Jul-2013.)  (Revised by Mario Carneiro,
+       27-May-2014.) $)
+    seqclg $p |- ( ph -> ( seq M ( .+ , F ) ` N ) e. S ) $=
+      ( cvv cv cfv wcel wa cuz adantr vex fvexg sylancl wss ssv co simprr ovexg
+      a1i mp3an2ani seq3clss ) ABCDEPFGHKABQZGUARSZTFISZUNPSZUNFRPSAUPUONUBBUCZ
+      UNFIPUDUELMEPUFAEUGUKUQADJSUQCQZPSZTUTUNUSDUHPSUROAUQUTUIUNUSDPJPUJULUM
+      $.
+  $}
+
+  ${
     $d .+ x y $.  $d F x y $.  $d M x y $.  $d N x y $.  $d S x y $.
     $d ph x y $.
     seq3m1.m $e |- ( ph -> M e. ZZ ) $.
