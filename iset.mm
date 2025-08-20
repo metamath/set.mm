@@ -110229,6 +110229,57 @@ $)
   $}
 
   ${
+    $d n x y F $.  $d n x y H $.  $d n x y M $.  $d n x y N $.  $d n x y ph $.
+    $d n x G $.  $d x y K $.  $d n x y .+ $.  $d n x y Q $.  $d x y S $.
+    $d x y Z $.
+    seqhomo.1 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x .+ y ) e. S ) $.
+    seqhomo.2 $e |- ( ( ph /\ x e. ( M ... N ) ) -> ( F ` x ) e. S ) $.
+    ${
+      seqhomo.3 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
+      seqhomo.4 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
+                        ( H ` ( x .+ y ) ) = ( ( H ` x ) Q ( H ` y ) ) ) $.
+      seqhomo.5 $e |- ( ( ph /\ x e. ( M ... N ) ) ->
+                        ( H ` ( F ` x ) ) = ( G ` x ) ) $.
+      seqhomog.f $e |- ( ph -> F e. V ) $.
+      seqhomog.g $e |- ( ph -> G e. W ) $.
+      seqhomog.p $e |- ( ph -> .+ e. X ) $.
+      seqhomog.q $e |- ( ph -> Q e. Y ) $.
+      $( Apply a homomorphism to a sequence.  (Contributed by Mario Carneiro,
+         28-Jul-2013.)  (Revised by Mario Carneiro, 27-May-2014.) $)
+      seqhomog $p |- ( ph -> ( H ` ( seq M ( .+ , F ) ` N ) ) =
+                                  ( seq M ( Q , G ) ` N ) ) $=
+        ( vn cfz co wcel cseq cfv wceq cuz eluzfz2 syl wi cv caddc eleq1 2fveq3
+        c1 fveq2 eqeq12d imbi12d imbi2d ralrimiva eluzfz1 rspcdva eluzel2 seq1g
+        cz syl3anc fveq2d 3eqtr4d a1d peano2fzr adantl expr imim1d oveq1 simprl
+        wa adantr seqp1g wral ralrimivva wss elfzuz3 3syl sselda adantlr syldan
+        fzss2 seqclg eleq1d simprr fvoveq1 oveq1d oveq2 oveq2d rspc2v imbitrrid
+        syl2anc mpd 3eqtrd animpimp2impd uzind4i mpcom ) AKJKUFUGZUHZKDGJUIZUJI
+        UJZKEHJUIZUJZUKZAKJULUJZUHZXIRJKUMUNXPAXIXNUOZRABUPZXHUHZXRXJUJIUJZXRXL
+        UJZUKZUOZUOAJXHUHZJXJUJZIUJZJXLUJZUKZUOZUOAUEUPZXHUHZYJXJUJZIUJZYJXLUJZ
+        UKZUOZUOAYJUTUQUGZXHUHZYQXJUJZIUJZYQXLUJZUKZUOZUOAXQUOBUEJKXRJUKZYCYIAU
+        UDXSYDYBYHXRJXHURUUDXTYFYAYGXRJIXJUSXRJXLVAVBVCVDXRYJUKZYCYPAUUEXSYKYBY
+        OXRYJXHURUUEXTYMYAYNXRYJIXJUSXRYJXLVAVBVCVDXRYQUKZYCUUCAUUFXSYRYBUUBXRY
+        QXHURUUFXTYTYAUUAXRYQIXJUSXRYQXLVAVBVCVDXRKUKZYCXQAUUGXSXIYBXNXRKXHURUU
+        GXTXKYAXMXRKIXJUSXRKXLVAVBVCVDAYHYDAJGUJZIUJZJHUJZYFYGAXRGUJZIUJZXRHUJZ
+        UKZUUIUUJUKBXHJUUDUULUUIUUMUUJXRJIGUSXRJHVAVBAUUNBXHTVEZAXPYDRJKVFUNVGA
+        YEUUHIAJVJUHZGLUHZDNUHZYEUUHUKAXPUUPRJKVHUNZUAUCDGJLNVIVKVLAUUPHMUHZEOU
+        HZYGUUJUKUUSUBUDEHJMOVIVKVMVNYJXOUHZAYPYRUUBYOAUVBWAYRYKYOAUVBYRYKUVBYR
+        WAZYKAYJJKVOVPZVQVRYOUUBAUVCWAZYMYQHUJZEUGZYNUVFEUGZUKYMYNUVFEVSUVEYTUV
+        GUUAUVHUVEYTYLYQGUJZDUGZIUJZYMUVIIUJZEUGZUVGUVEYSUVJIUVEUVBUUQUURYSUVJU
+        KAUVBYRVTZAUUQUVCUAWBZAUURUVCUCWBZDGJYJLNWCVKVLUVEXRCUPZDUGZIUJZXRIUJZU
+        VQIUJZEUGZUKZCFWDBFWDZUVKUVMUKZAUWDUVCAUWCBCFFSWEWBUVEYLFUHUVIFUHZUWDUW
+        EUOUVEBCDFGJYJLNUVNUVEXRJYJUFUGZUHXSUUKFUHZUVEUWGXHXRUVEYKKYJULUJUHUWGX
+        HWFUVDYJJKWGYJJKWLWHWIAXSUWHUVCQWJWKAXRFUHUVQFUHWAUVRFUHUVCPWJUVOUVPWMU
+        VEUWHUWFBXHYQUUFUUKUVIFXRYQGVAWNAUWHBXHWDUVCAUWHBXHQVEWBAUVBYRWOZVGUWCU
+        WEYLUVQDUGZIUJZYMUWAEUGZUKBCYLUVIFFXRYLUKZUVSUWKUWBUWLXRYLUVQIDWPUWMUVT
+        YMUWAEXRYLIVAWQVBUVQUVIUKZUWKUVKUWLUVMUWNUWJUVJIUVQUVIYLDWRVLUWNUWAUVLY
+        MEUVQUVIIVAWSVBWTXBXCUVEUVLUVFYMEUVEUUNUVLUVFUKBXHYQUUFUULUVLUUMUVFXRYQ
+        IGUSXRYQHVAVBAUUNBXHWDUVCUUOWBUWIVGWSXDUVEUVBUUTUVAUUAUVHUKUVNAUUTUVCUB
+        WBAUVAUVCUDWBEHJYJMOWCVKVBXAXEXFXGXC $.
+    $}
+  $}
+
+  ${
     $d x y k w .+ $.  $d x y k w F $.  $d x y k w M $.  $d x y k w N $.
     $d x y k w ph $.  $d x y k w Q $.  $d x y k w S $.
     seqfeq4.m $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
