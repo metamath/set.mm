@@ -14999,6 +14999,7 @@ New usage of "bdopssadj" is discouraged (4 uses).
 New usage of "biadaniALT" is discouraged (0 uses).
 New usage of "bian1dOLD" is discouraged (0 uses).
 New usage of "bicomdALT" is discouraged (0 uses).
+New usage of "biorfriOLD" is discouraged (0 uses).
 New usage of "bitr3VD" is discouraged (0 uses).
 New usage of "bj-0" is discouraged (1 uses).
 New usage of "bj-1" is discouraged (0 uses).
@@ -19172,6 +19173,8 @@ New usage of "ruvALT" is discouraged (0 uses).
 New usage of "rzalALT" is discouraged (0 uses).
 New usage of "s1dmALT" is discouraged (0 uses).
 New usage of "s2dmALT" is discouraged (0 uses).
+New usage of "s2rnOLD" is discouraged (0 uses).
+New usage of "s3rnOLD" is discouraged (0 uses).
 New usage of "sb1" is discouraged (2 uses).
 New usage of "sb10f" is discouraged (0 uses).
 New usage of "sb2" is discouraged (8 uses).
@@ -20080,6 +20083,7 @@ Proof modification of "bhmafibid1" is discouraged (429 steps).
 Proof modification of "biadaniALT" is discouraged (28 steps).
 Proof modification of "bian1dOLD" is discouraged (36 steps).
 Proof modification of "bicomdALT" is discouraged (12 steps).
+Proof modification of "biorfriOLD" is discouraged (16 steps).
 Proof modification of "bitr3VD" is discouraged (36 steps).
 Proof modification of "bj-0" is discouraged (5 steps).
 Proof modification of "bj-1" is discouraged (5 steps).
@@ -20125,7 +20129,6 @@ Proof modification of "bj-axsn" is discouraged (12 steps).
 Proof modification of "bj-axtd" is discouraged (26 steps).
 Proof modification of "bj-bibibi" is discouraged (34 steps).
 Proof modification of "bj-bijust0ALT" is discouraged (6 steps).
-Proof modification of "bj-biorfi" is discouraged (12 steps).
 Proof modification of "bj-brrelex12ALT" is discouraged (66 steps).
 Proof modification of "bj-cbv1hv" is discouraged (62 steps).
 Proof modification of "bj-cbv2hv" is discouraged (67 steps).
@@ -21590,6 +21593,8 @@ Proof modification of "ruvALT" is discouraged (24 steps).
 Proof modification of "rzalALT" is discouraged (21 steps).
 Proof modification of "s1dmALT" is discouraged (25 steps).
 Proof modification of "s2dmALT" is discouraged (38 steps).
+Proof modification of "s2rnOLD" is discouraged (154 steps).
+Proof modification of "s3rnOLD" is discouraged (187 steps).
 Proof modification of "sb56OLD" is discouraged (25 steps).
 Proof modification of "sb5ALT" is discouraged (80 steps).
 Proof modification of "sb5ALTVD" is discouraged (110 steps).
