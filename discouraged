@@ -15518,6 +15518,7 @@ New usage of "cbvraldvaOLD" is discouraged (0 uses).
 New usage of "cbvralf" is discouraged (2 uses).
 New usage of "cbvralsv" is discouraged (0 uses).
 New usage of "cbvralsvwOLD" is discouraged (0 uses).
+New usage of "cbvralsvwOLDOLD" is discouraged (0 uses).
 New usage of "cbvralv" is discouraged (2 uses).
 New usage of "cbvralv2" is discouraged (1 uses).
 New usage of "cbvreu" is discouraged (2 uses).
@@ -19218,6 +19219,7 @@ New usage of "sbcbi" is discouraged (2 uses).
 New usage of "sbcbiVD" is discouraged (0 uses).
 New usage of "sbcco" is discouraged (1 uses).
 New usage of "sbcco3g" is discouraged (0 uses).
+New usage of "sbccomlemOLD" is discouraged (0 uses).
 New usage of "sbceqalOLD" is discouraged (0 uses).
 New usage of "sbcgOLD" is discouraged (0 uses).
 New usage of "sbciedOLD" is discouraged (0 uses).
@@ -20342,7 +20344,8 @@ Proof modification of "cbvopab1vOLD" is discouraged (13 steps).
 Proof modification of "cbvopabvOLD" is discouraged (20 steps).
 Proof modification of "cbvrabwOLD" is discouraged (139 steps).
 Proof modification of "cbvraldvaOLD" is discouraged (16 steps).
-Proof modification of "cbvralsvwOLD" is discouraged (53 steps).
+Proof modification of "cbvralsvwOLD" is discouraged (20 steps).
+Proof modification of "cbvralsvwOLDOLD" is discouraged (53 steps).
 Proof modification of "cbvreuvwOLD" is discouraged (13 steps).
 Proof modification of "cbvreuwOLD" is discouraged (145 steps).
 Proof modification of "cbvrexdva2OLD" is discouraged (109 steps).
@@ -21614,6 +21617,7 @@ Proof modification of "sbc6gOLD" is discouraged (30 steps).
 Proof modification of "sbc8g" is discouraged (55 steps).
 Proof modification of "sbcbi" is discouraged (33 steps).
 Proof modification of "sbcbiVD" is discouraged (59 steps).
+Proof modification of "sbccomlemOLD" is discouraged (124 steps).
 Proof modification of "sbceqalOLD" is discouraged (73 steps).
 Proof modification of "sbcgOLD" is discouraged (8 steps).
 Proof modification of "sbciedOLD" is discouraged (16 steps).
