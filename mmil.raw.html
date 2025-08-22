@@ -10703,7 +10703,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>gsumval</td>
-  <td>~ igsumval</td>
+  <td>~ igsumval , ~ gsumfzval</td>
   <td>reflects differences between df-gsum and ~ df-igsum</td>
 </tr>
 
@@ -10814,6 +10814,21 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>the set.mm proof uses structure product theorems
   not present in iset.mm</td>
+</tr>
+
+<tr>
+  <td>gsumz</td>
+  <td>~ gsumfzz</td>
+  <td>the group sum needs to be indexed by
+  consecutive integers</td>
+</tr>
+
+<tr>
+  <td>gsumwsubmcl , gsumws1 , gsumwcl , gsumsgrpccat ,
+  gsumccat , gsumws2 , gsumccatsn , gsumspl , gsumwmhm ,
+  gsumwspan</td>
+  <td><i>none</i></td>
+  <td>should be feasible once Word is defined</td>
 </tr>
 
 <tr>
@@ -11038,6 +11053,33 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>subcmn</td>
   <td>~ subcmnd</td>
   <td>adds set existence condition for ` S `</td>
+</tr>
+
+<tr>
+  <td>gsumval3a , gsumval3eu , gsumval3lem1 , gsumval3lem2 ,
+  gsumval3 , gsumcllem , gsumzres , gsumzcl2 , gsumzcl ,
+  gsumzf1o , gsumres , gsumcl2</td>
+  <td>~ gsumval2 , ~ gsumfzval</td>
+  <td>these are all in terms of support which we could
+  define but which would require additional conditions
+  for example decidable equality of group elements</td>
+</tr>
+
+<tr>
+  <td>gsumcl</td>
+  <td>~ gsumfzcl</td>
+  <td>The group sum needs to be indexed by
+  consecutive integers. Also, we don't need
+  commutativity since the order is specified.</td>
+</tr>
+
+<tr>
+  <td>gsumf1o</td>
+  <td><i>none</i></td>
+  <td>since this theorem sums a set indexed by
+  an arbitrary finite set rather than consecutive
+  integers, it won't work as-is as long as ` gsum `
+  is defined with ~ df-igsum</td>
 </tr>
 
 <tr>
