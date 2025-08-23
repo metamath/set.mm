@@ -21687,7 +21687,7 @@ $)
     $( Not-free for restricted existential quantification where ` x ` and ` y `
        are distinct.  See ~ nfrexya for a version with ` y ` and ` A ` distinct
        instead.  (Contributed by Jim Kingdon, 30-May-2018.) $)
-    nfrexxy $p |- F/ x E. y e. A ph $=
+    nfrexw $p |- F/ x E. y e. A ph $=
       ( wrex wnf wtru nftru wnfc a1i nfrexdxy mptru ) ACDGBHIABCDCJBDKIELABHIFL
       MN $.
   $}
@@ -21704,7 +21704,7 @@ $)
       MN $.
 
     $( Not-free for restricted existential quantification where ` y ` and ` A `
-       are distinct.  See ~ nfrexxy for a version with ` x ` and ` y ` distinct
+       are distinct.  See ~ nfrexw for a version with ` x ` and ` y ` distinct
        instead.  (Contributed by Jim Kingdon, 3-Jun-2018.) $)
     nfrexya $p |- F/ x E. y e. A ph $=
       ( wrex wnf wtru nftru wnfc a1i nfrexdya mptru ) ACDGBHIABCDCJBDKIELABHIFL
@@ -22268,9 +22268,9 @@ $)
        (Contributed by NM, 15-Oct-2003.)  (Proof shortened by Andrew Salmon,
        30-May-2011.) $)
     r19.12 $p |- ( E. x e. A A. y e. B ph -> A. y e. B E. x e. A ph ) $=
-      ( wral wrex nfcv nfra1 nfrexxy cv wcel ax-1 ralrimi com12 reximdv ralimia
-      rsp syl ) ACEFZBDGZUACEFABDGZCEFUAUACETCBDCDHACEIJUACKELZMNUAUBCEUCTABDTU
-      CAACEROPQS $.
+      ( wral wrex nfcv nfra1 nfrexw wcel ax-1 ralrimi rsp com12 reximdv ralimia
+      cv syl ) ACEFZBDGZUACEFABDGZCEFUAUACETCBDCDHACEIJUACREKZLMUAUBCEUCTABDTUC
+      AACENOPQS $.
   $}
 
   $( Closed theorem form of ~ r19.23 .  (Contributed by NM, 4-Mar-2013.)
@@ -22940,11 +22940,11 @@ $)
 
   ${
     $d x y $.
-    nfrabxy.1 $e |- F/ x ph $.
-    nfrabxy.2 $e |- F/_ x A $.
+    nfrabw.1 $e |- F/ x ph $.
+    nfrabw.2 $e |- F/_ x A $.
     $( A variable not free in a wff remains so in a restricted class
        abstraction.  (Contributed by Jim Kingdon, 19-Jul-2018.) $)
-    nfrabxy $p |- F/_ x { y e. A | ph } $=
+    nfrabw $p |- F/_ x { y e. A | ph } $=
       ( crab cv wcel wa cab df-rab nfcri nfan nfab nfcxfr ) BACDGCHDIZAJZCKACDL
       RBCQABBCDFMENOP $.
   $}
@@ -27047,13 +27047,13 @@ $)
     sbcrext $p |- ( F/_ y A ->
         ( [. A / x ]. E. y e. B ph <-> E. y e. B [. A / x ]. ph ) ) $=
       ( vz wnfc cvv wcel wrex wsbc wi sbcex a1i nfcvd cv wb wa wsb wceq id 2a1i
-      nfnfc1 nfeld rexlimd2 sbcco simpl sbsbc nfcv nfrexxy sbequ12 rexbidv sbie
-      nfs1v bitr3i nfeqd dfsbcq2 adantl rexbid adantll bitrid bitr3id pm5.21ndd
-      nfan1 sbcied expcom ) CDGZDHIZACEJZBDKZABDKZCEJZVJVHLVGVIBDMNVGVKVHCECDUC
-      ZVGCDHVGUAZVGCHOUDVGCPEIVKVHLABDMUBUEVHVGVJVLQVJVIBFPZKZFDKVHVGRZVLVIBFDU
-      FVQVPVLFDHVHVGUGVPABFSZCEJZVQVODTZRVLVPVIBFSVSVIBFUHVIVSBFVRBCEBEUIABFUNU
-      JBPVOTAVRCEABFUKULUMUOVGVTVSVLQVHVGVTRVRVKCEVGVTCVMVGCVODVGCVOOVNUPVDVTVR
-      VKQVGABFDUQURUSUTVAVEVBVFVC $.
+      nfnfc1 nfeld rexlimd2 sbcco simpl sbsbc nfcv nfs1v nfrexw sbequ12 rexbidv
+      bitr3i nfeqd nfan1 dfsbcq2 adantl rexbid adantll bitrid bitr3id pm5.21ndd
+      sbie sbcied expcom ) CDGZDHIZACEJZBDKZABDKZCEJZVJVHLVGVIBDMNVGVKVHCECDUCZ
+      VGCDHVGUAZVGCHOUDVGCPEIVKVHLABDMUBUEVHVGVJVLQVJVIBFPZKZFDKVHVGRZVLVIBFDUF
+      VQVPVLFDHVHVGUGVPABFSZCEJZVQVODTZRVLVPVIBFSVSVIBFUHVIVSBFVRBCEBEUIABFUJUK
+      BPVOTAVRCEABFULUMVDUNVGVTVSVLQVHVGVTRVRVKCEVGVTCVMVGCVODVGCVOOVNUOUPVTVRV
+      KQVGABFDUQURUSUTVAVEVBVFVC $.
   $}
 
   ${
@@ -27554,6 +27554,19 @@ $)
     nfsbcdw $p |- ( ph -> F/ x [. A / y ]. ps ) $=
       ( wsbc cab wcel df-sbc nfabdw nfeld nfxfrd ) BDEIEBDJZKACBDELACEPGABCDFHM
       NO $.
+  $}
+
+  ${
+    $d x y $.
+    nfsbcw.1 $e |- F/_ x A $.
+    nfsbcw.2 $e |- F/ x ph $.
+    $( Bound-variable hypothesis builder for class substitution.  Version of
+       ~ nfsbc with a disjoint variable condition, which in the future may make
+       it possible to reduce axiom usage.  (Contributed by NM, 7-Sep-2014.)
+       (Revised by GG, 10-Jan-2024.) $)
+    nfsbcw $p |- F/ x [. A / y ]. ph $=
+      ( wsbc wnf wtru nftru wnfc a1i nfsbcdw mptru ) ACDGBHIABCDCJBDKIELABHIFLM
+      N $.
   $}
 
   ${
@@ -29074,8 +29087,8 @@ $)
     $( Bound-variable hypothesis builder for class difference.  (Contributed by
        NM, 3-Dec-2003.)  (Revised by Mario Carneiro, 13-Oct-2016.) $)
     nfdif $p |- F/_ x ( A \ B ) $=
-      ( vy cdif cv wcel wn crab dfdif2 nfcri nfn nfrabxy nfcxfr ) ABCGFHCIZJZFB
-      KFBCLRAFBQAAFCEMNDOP $.
+      ( vy cdif cv wcel wn crab dfdif2 nfcri nfn nfrabw nfcxfr ) ABCGFHCIZJZFBK
+      FBCLRAFBQAAFCEMNDOP $.
   $}
 
   $( Implication of membership in a class difference.  (Contributed by NM,
@@ -29697,8 +29710,8 @@ $)
        (Contributed by NM, 15-Sep-2003.)  (Revised by Mario Carneiro,
        14-Oct-2016.) $)
     nfin $p |- F/_ x ( A i^i B ) $=
-      ( vy cin cv wcel crab dfin5 nfcri nfrabxy nfcxfr ) ABCGFHCIZFBJFBCKOAFBAF
-      CELDMN $.
+      ( vy cin cv wcel crab dfin5 nfcri nfrabw nfcxfr ) ABCGFHCIZFBJFBCKOAFBAFC
+      ELDMN $.
   $}
 
   ${
@@ -33577,8 +33590,8 @@ $)
     $( Bound-variable hypothesis builder for union.  (Contributed by NM,
        30-Dec-1996.)  (Proof shortened by Andrew Salmon, 27-Aug-2011.) $)
     nfuni $p |- F/_ x U. A $=
-      ( vy vz cuni wel wrex cab dfuni2 nfv nfrexxy nfab nfcxfr ) ABFDEGZEBHZDID
-      EBJPADOAEBCOAKLMN $.
+      ( vy vz cuni wel wrex cab dfuni2 nfv nfrexw nfab nfcxfr ) ABFDEGZEBHZDIDE
+      BJPADOAEBCOAKLMN $.
   $}
 
   ${
@@ -34474,8 +34487,8 @@ $)
     $( Bound-variable hypothesis builder for indexed union.  (Contributed by
        Mario Carneiro, 25-Jan-2014.) $)
     nfiunxy $p |- F/_ y U_ x e. A B $=
-      ( vz ciun cv wcel wrex cab df-iun nfcri nfrexxy nfab nfcxfr ) BACDHGIDJZA
-      CKZGLAGCDMSBGRBACEBGDFNOPQ $.
+      ( vz ciun cv wcel wrex cab df-iun nfcri nfrexw nfab nfcxfr ) BACDHGIDJZAC
+      KZGLAGCDMSBGRBACEBGDFNOPQ $.
 
     $( Bound-variable hypothesis builder for indexed intersection.
        (Contributed by Mario Carneiro, 25-Jan-2014.) $)
@@ -38918,7 +38931,7 @@ $)
        by Mario Carneiro, 24-Jun-2015.)  (Revised by Mario Carneiro,
        14-Oct-2016.) $)
     nfse $p |- F/ x R Se A $=
-      ( va vb wse wbr crab cvv wcel wral df-se nfcv nfbr nfrabxy nfel1 nfralxy
+      ( va vb wse wbr crab cvv wcel wral df-se nfcv nfbr nfrabw nfel1 nfralxy
       cv nfxfr ) BCHFTZGTZCIZFBJZKLZGBMAGFBCNUFAGBEAUEKUDAFBAUBUCCAUBODAUCOPEQR
       SUA $.
   $}
@@ -43356,14 +43369,14 @@ $)
     $( Version of ~ rexxp with bound-variable hypotheses.  (Contributed by NM,
        19-Dec-2008.)  (Revised by Mario Carneiro, 15-Oct-2016.) $)
     rexxpf $p |- ( E. x e. ( A X. B ) ph <-> E. y e. A E. z e. B ps ) $=
-      ( vv vw vu wrex wsb cv wceq vex nfsb cxp cbvrexsv rexbii nfv nfcv nfrexxy
-      nfs1v sbequ12 rexbidv cbvrex cop wa wex eqvinop nfbi sbhypf opth sylan9bb
-      wb sylbi exlimi rexxp 3bitr4ri bitri ) ACFGUAZOACLPZLVEOZBEGOZDFOZACLVEUB
-      BDMPZEGOZMFOVJENPZNGOZMFOVIVGVKVMMFVJENGUBUCVHVKDMFVHMUDVJDEGDGUEBDMUGZUF
-      DQZMQZRZBVJEGBDMUHZUIUJVFVLLMNFGLQZVPNQZUKZRVSVOEQZUKZRZWCWARZULZEUMZDUMV
-      FVLUSZDEVSVPVTMSNSUNWGWHDVFVLDACLDHTVJENDVNTUOWFWHEVFVLEACLEITVJENUGUOWDV
-      FBWEVLABCLWCJKUPWEVQWBVTRZULBVLUSVOWBVPVTDSESUQVQBVJWIVLVRVJENUHURUTURVAV
-      AUTVBVCVD $.
+      ( vv vw vu wrex wsb cv wceq vex nfsb cxp cbvrexsv rexbii nfv nfs1v nfrexw
+      nfcv sbequ12 rexbidv cbvrex cop wa wex eqvinop nfbi sbhypf sylan9bb sylbi
+      wb opth exlimi rexxp 3bitr4ri bitri ) ACFGUAZOACLPZLVEOZBEGOZDFOZACLVEUBB
+      DMPZEGOZMFOVJENPZNGOZMFOVIVGVKVMMFVJENGUBUCVHVKDMFVHMUDVJDEGDGUGBDMUEZUFD
+      QZMQZRZBVJEGBDMUHZUIUJVFVLLMNFGLQZVPNQZUKZRVSVOEQZUKZRZWCWARZULZEUMZDUMVF
+      VLUSZDEVSVPVTMSNSUNWGWHDVFVLDACLDHTVJENDVNTUOWFWHEVFVLEACLEITVJENUEUOWDVF
+      BWEVLABCLWCJKUPWEVQWBVTRZULBVLUSVOWBVPVTDSESUTVQBVJWIVLVRVJENUHUQURUQVAVA
+      URVBVCVD $.
   $}
 
   ${
@@ -49218,6 +49231,14 @@ $)
     ( wfo wa wceq wfn fofn fndmu syl2an crn forn sylan9req jca ) ABEFZCDEFZGACH
     ZBDHQEAIECISRABEJCDEJACEKLQRBEMDABENCDENOP $.
 
+  $( A function is a function onto the image of its domain.  (Contributed by
+     AV, 1-Dec-2022.) $)
+  fimadmfo $p |- ( F : A --> B -> F : A -onto-> ( F " A ) ) $=
+    ( wf cdm wceq cima wfo fdm wa crn wfn ffn adantr dffn4 sylib imaeq2 imadmrn
+    wb eqtrdi eqcoms adantl foeq3 syl mpbird mpdan ) ABCDZCEZAFZACAGZCHZABCIUGU
+    IJZUKACKZCHZULCALZUNUGUOUIABCMNACOPULUJUMFZUKUNSUIUPUGUPAUHAUHFUJCUHGUMAUHC
+    QCRTUAUBUJUMACUCUDUEUF $.
+
   $( Restriction of a function.  (Contributed by NM, 4-Mar-1997.) $)
   fores $p |- ( ( Fun F /\ A C_ dom F ) ->
               ( F |` A ) : A -onto-> ( F " A ) ) $=
@@ -50842,12 +50863,12 @@ $)
     elfvmptrab1 $p |- ( Y e. ( F ` X )
                         -> ( X e. V /\ Y e. [_ X / m ]_ M ) ) $=
       ( cdm wcel cfv csb wa crab cvv wceq nfcv wrel cv funmpt2 funrel relelfvdm
-      wfun ax-mp mpan dmmptss sseli rabexg nfsbc1v nfcsb nfrabxy csbeq1 sbceq1a
-      wsbc 3syl rabeqbidv fvmptf syl2anc eleq2d elrabi anim12i ex sylbid mpcom
-      ) HELZMZIHENZMZHGMZIDHFOZMZPZEUAZVKVIEUFVPBGACDBUBZFOZQZEJUCEUDUGIHEUEUHV
-      IVKIABHUQZCVMQZMZVOVIVJWAIVIVLWARMZVJWASVHGHBGVSEJUIUJZVIVLVMRMWCWDKVTCVM
-      RUKURBHVSWAGERBHTZVTBCVMABHULBDHFWEBFTUMUNVQHSAVTCVRVMDVQHFUOABHUPUSJUTVA
-      VBVIWBVOVIVLWBVNWDVTCIVMVCVDVEVFVG $.
+      wfun ax-mp mpan wsbc dmmptss sseli rabexg nfsbc1v nfrabw csbeq1 rabeqbidv
+      3syl nfcsb sbceq1a fvmptf syl2anc eleq2d elrabi anim12i ex sylbid mpcom )
+      HELZMZIHENZMZHGMZIDHFOZMZPZEUAZVKVIEUFVPBGACDBUBZFOZQZEJUCEUDUGIHEUEUHVIV
+      KIABHUIZCVMQZMZVOVIVJWAIVIVLWARMZVJWASVHGHBGVSEJUJUKZVIVLVMRMWCWDKVTCVMRU
+      LUQBHVSWAGERBHTZVTBCVMABHUMBDHFWEBFTURUNVQHSAVTCVRVMDVQHFUOABHUSUPJUTVAVB
+      VIWBVOVIVLWBVNWDVTCIVMVCVDVEVFVG $.
   $}
 
   ${
@@ -56412,6 +56433,47 @@ $)
   $}
 
   ${
+    $d M x y z $.  $d X x y z $.  $d Y x y z $.  $d Z z $.
+    elovmporab.o $e |- O = ( x e. _V , y e. _V |-> { z e. M | ph } ) $.
+    elovmporab.v $e |- ( ( X e. _V /\ Y e. _V ) -> M e. _V ) $.
+    $( Implications for the value of an operation, defined by the maps-to
+       notation with a class abstraction as a result, having an element.
+       (Contributed by Alexander van der Vekens, 15-Jul-2018.) $)
+    elovmporab $p |- ( Z e. ( X O Y ) -> ( X e. _V /\ Y e. _V /\ Z e. M ) ) $=
+      ( cvv wcel wa crab wsbc wceq cv nfcv nfel1 co w3a elmpocl cmpo wb sbceq1a
+      a1i sylan9bbr adantl rabbidv eqidd simpl simpr rabexg nfan nfsbc1v nfrabw
+      syl nfsbcw ovmpodxf eleq2d df-3an simplbi2com elrabi syl11 sylbid mpcom )
+      GLMZHLMZNZIGHFUAZMZVHVIIEMZUBZBCLLADEOZGHFIJUCVJVLIACHPZBGPZDEOZMZVNVJVKV
+      RIVJBCGHLLVOVRFLLFBCLLVOUDQVJJUGVJBRGQZCRHQZNZNAVQDEWBAVQUEVJWAAVPVTVQACH
+      UFVPBGUFUHUIUJVJVTNLUKVHVIULVHVIUMVJELMVRLMKVQDELUNURVHVIBBGLBGSTBHLBHSZT
+      UOVHVICCGLCGSZTCHLCHSTUOWDWCVQBDEVPBGUPBESUQVQCDEVPCBGWDACHUPUSCESUQUTVAV
+      MVJVNVSVNVJVMVHVIVMVBVCVQDIEVDVEVFVG $.
+  $}
+
+  ${
+    $d M x y z $.  $d X x y z $.  $d Y x y z $.  $d Z z $.  $d m x y z $.
+    elovmporab1w.o $e |- O = ( x e. _V , y e. _V
+                              |-> { z e. [_ x / m ]_ M | ph } ) $.
+    elovmporab1w.v $e |- ( ( X e. _V /\ Y e. _V ) -> [_ X / m ]_ M e. _V ) $.
+    $( Implications for the value of an operation, defined by the maps-to
+       notation with a class abstraction as a result, having an element.  Here,
+       the base set of the class abstraction depends on the first operand.
+       (Contributed by Alexander van der Vekens, 15-Jul-2018.)  (Revised by GG,
+       26-Jan-2024.) $)
+    elovmporab1w $p |- ( Z e. ( X O Y )
+                         -> ( X e. _V /\ Y e. _V /\ Z e. [_ X / m ]_ M ) ) $=
+      ( cvv wcel wa csb cv wceq nfcv nfel1 co w3a crab elmpocl wsbc cmpo csbeq1
+      a1i ad2antrl wb sbceq1a sylan9bbr adantl rabeqbidv eqidd simpl rabexg syl
+      simpr nfan nfcsbw nfrabw nfsbcw ovmpodxf eleq2d df-3an simplbi2com elrabi
+      nfsbc1v syl11 sylbid mpcom ) HMNZIMNZOZJHIGUAZNZVMVNJEHFPZNZUBZBCMMADEBQZ
+      FPZUCZHIGJKUDVOVQJACIUEZBHUEZDVRUCZNZVTVOVPWFJVOBCHIMMWCWFGMMGBCMMWCUFRVO
+      KUHVOWAHRZCQIRZOZOAWEDWBVRWHWBVRRVOWIEWAHFUGUIWJAWEUJVOWIAWDWHWEACIUKWDBH
+      UKULUMUNVOWHOMUOVMVNUPVMVNUSVOVRMNWFMNLWEDVRMUQURVMVNBBHMBHSZTBIMBISZTUTV
+      MVNCCHMCHSZTCIMCISTUTWMWLWEBDVRWDBHVIBEHFWKBFSVAVBWECDVRWDCBHWMACIVIVCCEH
+      FWMCFSVAVBVDVEVSVOVTWGVTVOVSVMVNVSVFVGWEDJVRVHVJVKVL $.
+  $}
+
+  ${
     $d x y A $.  $d x y B $.  $d y C $.  $d x D $.  $d x y ph $.
     f1od.1 $e |- F = ( x e. A |-> C ) $.
     ${
@@ -57102,11 +57164,11 @@ $)
        (Contributed by Jeff Madsen, 2-Sep-2009.) $)
     abrexex2g $p |- ( ( A e. V /\ A. x e. A { y | ph } e. W )
                                   -> { y | E. x e. A ph } e. _V ) $=
-      ( vz wcel cab wral wa wrex cv cvv wsb nfv nfcv nfs1v nfrexxy wceq sbequ12
-      rexbidv cbvab df-clab rexbii eqtr4i ciun df-iun iunexg eqeltrrid eqeltrid
-      abbii ) DEHACIZFHBDJKZABDLZCIZGMZUMHZBDLZGIZNUPACGOZBDLZGIUTUOVBCGUOGPVAC
-      BDCDQACGRSCMUQTAVABDACGUAUBUCUSVBGURVABDAGCUDUEULUFUNUTBDUMUGNBGDUMUHBDUM
-      EFUIUJUK $.
+      ( vz wcel cab wral wa wrex cv cvv wsb nfv nfcv nfs1v nfrexw wceq eqeltrid
+      sbequ12 rexbidv cbvab df-clab rexbii abbii eqtr4i df-iun iunexg eqeltrrid
+      ciun ) DEHACIZFHBDJKZABDLZCIZGMZUMHZBDLZGIZNUPACGOZBDLZGIUTUOVBCGUOGPVACB
+      DCDQACGRSCMUQTAVABDACGUBUCUDUSVBGURVABDAGCUEUFUGUHUNUTBDUMULNBGDUMUIBDUME
+      FUJUKUA $.
   $}
 
   ${
@@ -57172,7 +57234,7 @@ $)
        normally has free-variable parameters ` x ` and ` y ` .  See also
        ~ abrexex .  (Contributed by NM, 12-Sep-2004.) $)
     abrexex2 $p |- { y | E. x e. A ph } e. _V $=
-      ( vz wrex cab cv wcel cvv wsb nfv nfcv nfs1v nfrexxy weq sbequ12 rexbidv
+      ( vz wrex cab cv wcel cvv wsb nfv nfcv nfs1v nfrexw weq sbequ12 rexbidv
       cbvab df-clab rexbii abbii eqtr4i ciun df-iun iunex eqeltrri eqeltri ) AB
       DHZCIZGJACIZKZBDHZGIZLULACGMZBDHZGIUPUKURCGUKGNUQCBDCDOACGPQCGRAUQBDACGST
       UAUOURGUNUQBDAGCUBUCUDUEBDUMUFUPLBGDUMUGBDUMEFUHUIUJ $.
@@ -58662,12 +58724,12 @@ $)
                       = { n e. V | [. <. V , W >. / x ]. [. K / y ]. ph } ) $=
       ( wcel wa cvv cv c1st wceq adantr adantl nfcv vz cop crab wsbc cmpo fveq2
       cfv op1stg sylan9eqr adantrr sbceq1a bitrd rabeqbidv opexg simpr ad2antrr
-      a1i wb rabexg wnf equid nfvd ax-mp nfsbc1v nfrabxy nfsbc ovmpodxf ) GILZH
-      JLZMZFGLZMZBCGHUBZFNBOZPUGZADVOUCZACFUDZBVMUDZDGUCZEGNEBCNVOVPUEQVLKUQVLV
-      NVMQZCOFQZMZMZAVRDVOGVLVTVOGQWAVTVLVOVMPUGZGVNVMPUFVJWDGQVKGHIJUHRUIZUJWC
-      AVQVRWBAVQURZVLWAWFVTACFUKSSWBVQVRURZVLVTWGWAVQBVMUKRSULUMWEVJVMNLVKGHIJU
-      NRVJVKUOVHVSNLVIVKVRDGIUSUPUAOZWHQZVLBUTUAVAZWIVLBVBVCWIVLCUTWJWIVLCVBVCC
-      VMTZBFTVRBDGVQBVMVDBGTVEVRCDGVQCBVMWKACFVDVFCGTVEVG $.
+      a1i wb rabexg wnf equid nfvd ax-mp nfsbc1v nfrabw nfsbc ovmpodxf ) GILZHJ
+      LZMZFGLZMZBCGHUBZFNBOZPUGZADVOUCZACFUDZBVMUDZDGUCZEGNEBCNVOVPUEQVLKUQVLVN
+      VMQZCOFQZMZMZAVRDVOGVLVTVOGQWAVTVLVOVMPUGZGVNVMPUFVJWDGQVKGHIJUHRUIZUJWCA
+      VQVRWBAVQURZVLWAWFVTACFUKSSWBVQVRURZVLVTWGWAVQBVMUKRSULUMWEVJVMNLVKGHIJUN
+      RVJVKUOVHVSNLVIVKVRDGIUSUPUAOZWHQZVLBUTUAVAZWIVLBVBVCWIVLCUTWJWIVLCVBVCCV
+      MTZBFTVRBDGVQBVMVDBGTVEVRCDGVQCBVMWKACFVDVFCGTVEVG $.
 
     $d N x y $.
     $( Element of the value of an operation given by a maps-to rule, where the
@@ -59402,9 +59464,9 @@ $)
        O'Rear, 18-Jan-2015.) $)
     nfrecs $p |- F/_ x recs ( F ) $=
       ( va vb vc crecs cv wfn cfv cres wceq wral wa con0 wrex cuni df-recs nfcv
-      cab nfv nffv nfeq2 nfralxy nfan nfrexxy nfab nfuni nfcxfr ) ABGDHZEHZIZFH
-      ZUJJZUJUMKZBJZLZFUKMZNZEOPZDTZQEFDBRAVAUTADUSAEOAOSULURAULAUAUQAFUKAUKSAU
-      NUPAUOBCAUOSUBUCUDUEUFUGUHUI $.
+      cab nfv nffv nfeq2 nfralxy nfan nfrexw nfab nfuni nfcxfr ) ABGDHZEHZIZFHZ
+      UJJZUJUMKZBJZLZFUKMZNZEOPZDTZQEFDBRAVAUTADUSAEOAOSULURAULAUAUQAFUKAUKSAUN
+      UPAUOBCAUOSUBUCUDUEUFUGUHUI $.
   $}
 
   ${
@@ -68898,9 +68960,9 @@ $)
        20-Mar-2014.) $)
     nfsup $p |- F/_ x sup ( A , B , R ) $=
       ( vu vv vw csup cv wbr wn wral wrex wi nfcv nfbr nfralya crab cuni df-sup
-      wa nfn nfrexya nfim nfan nfrabxy nfuni nfcxfr ) ABCDKHLZILZDMZNZIBOZUMULD
-      MZUMJLZDMZJBPZQZICOZUDZHCUAZUBHIJBCDUCAVDVCAHCUPVBAUOAIBEUNAAULUMDAULRZGA
-      UMRZSUETVAAICFUQUTAAUMULDVFGVESUSAJBEAUMURDVFGAURRSUFUGTUHFUIUJUK $.
+      wa nfn nfrexya nfim nfan nfrabw nfuni nfcxfr ) ABCDKHLZILZDMZNZIBOZUMULDM
+      ZUMJLZDMZJBPZQZICOZUDZHCUAZUBHIJBCDUCAVDVCAHCUPVBAUOAIBEUNAAULUMDAULRZGAU
+      MRZSUETVAAICFUQUTAAUMULDVFGVESUSAJBEAUMURDVFGAURRSUFUGTUHFUIUJUK $.
   $}
 
   ${
@@ -81122,40 +81184,40 @@ $)
            limit.  (Contributed by Jim Kingdon, 5-Jun-2021.) $)
         caucvgprprlemaddq $p |- ( ph -> X <P ( L +P. Q ) ) $=
           ( vb vf vg vh c1o cop ceq cec crq cfv cltq wbr cab cpp cltp cnpi wrex
-          cv co nfv nfcv cplq cnq crab nfre1 nfrabxy nfop nfcxfr nfov nfbr wcel
-          wa cnp wf ad2antrr clti wral simpr simplrl caucvgprprlemnbj ffvelcdmd
-          wi recnnpr adantl addclpr syl2anc syl addassprg syl3anc breq1d w3a wb
+          cv nfv nfcv cplq cnq crab nfre1 nfrabw nfop nfcxfr nfov nfbr wcel cnp
+          co wa wf ad2antrr clti wi wral simpr simplrl caucvgprprlemnbj recnnpr
+          wceq ffvelcdmd adantl addclpr syl2anc syl addassprg syl3anc breq1d wb
           ltaprg addcomprg caovord2d oveq2d 3bitr4rd mtbird nrexdv breq1 cbvabv
-          wceq breq2 opeq12i oveq2i oveq12i breq1i rexbii sylnibr adantr simprl
-          caucvgprprlemexb mtod wo simprr caucvgprprlemcl wor ltsopr sowlin mpd
-          mpan ecased mpbird exp32 rexlimd ) AJMUSZKUSZUFUGUHUIUJUKZULUMZMUNZYI
-          LUSZULUMZLUNZUGZUOUTZYHHUKZDUOUTZUPUMZKUQURJIDUOUTZUPUMZUAAYSUUAKUQAK
-          VAKJYTUPKJVBKUPVBKIDUOKIYGNUSZYIVCUTZULUMMUNUUCYLULUMLUNUGYQUPUMZKUQU
-          RZNVDVEZYQYOUOUTYGBUSZULUMMUNUUGYLULUMLUNUGUPUMZKUQURZBVDVEZUGRKUUFUU
-          JUUEKNVDUUDKUQVFKVDVBZVGUUIKBVDUUHKUQVFUUKVGVHVIKUOVBKDVBVJVKAYHUQVLZ
-          YSUUAAUULYSVMZVMZUUAYPYTYOUOUTZUPUMZUUNUUPUUOYRUPUMZUUNUUQUBUSZHUKZYG
-          UURUFUGUHUIUJUKZULUMZMUNZUUTYLULUMZLUNZUGZUOUTZDYOUOUTZUOUTZYRUPUMZUB
-          UQURZUUNUUSUUBUUTULUMZNUNZUUTUUGULUMZBUNZUGZUOUTZDUUBYIULUMZNUNZYIUUG
-          ULUMZBUNZUGZUOUTZUOUTZYRUPUMZUBUQURUVJUUNUWDUBUQUUNUURUQVLZVMZUWDUVPU
-          WAUOUTZYQUPUMZUWFBUUREGHYHNAUQVNHVOZUUMUWEOVPZAGUSZEUSZVQUMUWKHUKZUWL
-          HUKZUUBUWKUFUGUHUIUJUKZULUMNUNUWOUUGULUMBUNUGZUOUTUPUMUWNUWMUWPUOUTUP
-          UMVMWCEUQVRGUQVRZUUMUWEPVPUUNUWEVSZAUULYSUWEVTZWAUWFUWGDUOUTZYRUPUMUV
-          PUWADUOUTZUOUTZYRUPUMUWHUWDUWFUWTUXBYRUPUWFUVPVNVLZUWAVNVLZDVNVLZUWTU
-          XBXCUWFUUSVNVLUVOVNVLZUXCUWFUQVNUURHUWJUWRWBUWEUXFUUNBUURNWDWEUUSUVOW
-          FWGZUWFUULUXDUWSBYHNWDWHZAUXEUUMUWETVPZUVPUWADWIWJWKUWFUCUDUEUWGYQDUP
-          VNUOUCUSZVNVLZUDUSZVNVLZUEUSZVNVLWLZUXJUXLUPUMUXNUXJUOUTUXNUXLUOUTUPU
-          MWMZUWFUXJUXLUXNWNZWEUWFUXCUXDUWGVNVLUXGUXHUVPUWAWFWGUWFUQVNYHHUWJUWS
-          WBUXIUXKUXMVMZUXJUXLUOUTUXLUXJUOUTXCZUWFUXJUXLWOZWEWPUWFUWCUXBYRUPUWF
-          UWBUXAUVPUOUWFUXEUXDUWBUXAXCUXIUXHDUWAWOWGWQWKWRWSWTUVIUWDUBUQUVHUWCY
-          RUPUVFUVPUVGUWBUOUVEUVOUUSUOUVBUVLUVDUVNUVAUVKMNYGUUBUUTULXAXBUVCUVML
-          BYLUUGUUTULXDXBXEXFYOUWADUOYKUVRYNUVTYJUVQMNYGUUBYIULXAXBYMUVSLBYLUUG
-          YIULXDXBXEXFXGXHXIXJUUNBCDYHEFGHIKLMUBNAUWIUUMOXKZAUWQUUMPXKACFUSHUKU
-          PUMFUQVRUUMQXKRAUXEUUMTXKZAUULYSXLZXMXNUUNYSUUPUUQXOZAUULYSXPUUNYPVNV
-          LZYRVNVLZUUOVNVLZYSUYDWCZUUNJVNVLZYOVNVLZUYEAUYIUUMSXKZUUNUULUYJUYCLY
-          HMWDWHZJYOWFWGUUNYQVNVLUXEUYFUUNUQVNYHHUYAUYCWBUYBYQDWFWGUUNYTVNVLZUY
-          JUYGUUNIVNVLZUXEUYMAUYNUUMABCEFGHIKLMNOPQRXQXKUYBIDWFWGZUYLYTYOWFWGVN
-          UPXRUYEUYFUYGWLUYHXSVNYPYRUUOUPXTYBWJYAYCUUNUCUDUEJYTYOUPVNUOUXOUXPUU
-          NUXQWEUYKUYOUYLUXRUXSUUNUXTWEWPYDYEYFYA $.
+          w3a breq2 opeq12i oveq2i breq1i rexbii adantr simprl caucvgprprlemexb
+          oveq12i sylnibr mtod wo simprr caucvgprprlemcl wor ltsopr sowlin mpan
+          mpd ecased mpbird exp32 rexlimd ) AJMUSZKUSZUFUGUHUIUJUKZULUMZMUNZYIL
+          USZULUMZLUNZUGZUOVMZYHHUKZDUOVMZUPUMZKUQURJIDUOVMZUPUMZUAAYSUUAKUQAKU
+          TKJYTUPKJVAKUPVAKIDUOKIYGNUSZYIVBVMZULUMMUNUUCYLULUMLUNUGYQUPUMZKUQUR
+          ZNVCVDZYQYOUOVMYGBUSZULUMMUNUUGYLULUMLUNUGUPUMZKUQURZBVCVDZUGRKUUFUUJ
+          UUEKNVCUUDKUQVEKVCVAZVFUUIKBVCUUHKUQVEUUKVFVGVHKUOVAKDVAVIVJAYHUQVKZY
+          SUUAAUULYSVNZVNZUUAYPYTYOUOVMZUPUMZUUNUUPUUOYRUPUMZUUNUUQUBUSZHUKZYGU
+          URUFUGUHUIUJUKZULUMZMUNZUUTYLULUMZLUNZUGZUOVMZDYOUOVMZUOVMZYRUPUMZUBU
+          QURZUUNUUSUUBUUTULUMZNUNZUUTUUGULUMZBUNZUGZUOVMZDUUBYIULUMZNUNZYIUUGU
+          LUMZBUNZUGZUOVMZUOVMZYRUPUMZUBUQURUVJUUNUWDUBUQUUNUURUQVKZVNZUWDUVPUW
+          AUOVMZYQUPUMZUWFBUUREGHYHNAUQVLHVOZUUMUWEOVPZAGUSZEUSZVQUMUWKHUKZUWLH
+          UKZUUBUWKUFUGUHUIUJUKZULUMNUNUWOUUGULUMBUNUGZUOVMUPUMUWNUWMUWPUOVMUPU
+          MVNVREUQVSGUQVSZUUMUWEPVPUUNUWEVTZAUULYSUWEWAZWBUWFUWGDUOVMZYRUPUMUVP
+          UWADUOVMZUOVMZYRUPUMUWHUWDUWFUWTUXBYRUPUWFUVPVLVKZUWAVLVKZDVLVKZUWTUX
+          BWDUWFUUSVLVKUVOVLVKZUXCUWFUQVLUURHUWJUWRWEUWEUXFUUNBUURNWCWFUUSUVOWG
+          WHZUWFUULUXDUWSBYHNWCWIZAUXEUUMUWETVPZUVPUWADWJWKWLUWFUCUDUEUWGYQDUPV
+          LUOUCUSZVLVKZUDUSZVLVKZUEUSZVLVKXCZUXJUXLUPUMUXNUXJUOVMUXNUXLUOVMUPUM
+          WMZUWFUXJUXLUXNWNZWFUWFUXCUXDUWGVLVKUXGUXHUVPUWAWGWHUWFUQVLYHHUWJUWSW
+          EUXIUXKUXMVNZUXJUXLUOVMUXLUXJUOVMWDZUWFUXJUXLWOZWFWPUWFUWCUXBYRUPUWFU
+          WBUXAUVPUOUWFUXEUXDUWBUXAWDUXIUXHDUWAWOWHWQWLWRWSWTUVIUWDUBUQUVHUWCYR
+          UPUVFUVPUVGUWBUOUVEUVOUUSUOUVBUVLUVDUVNUVAUVKMNYGUUBUUTULXAXBUVCUVMLB
+          YLUUGUUTULXDXBXEXFYOUWADUOYKUVRYNUVTYJUVQMNYGUUBYIULXAXBYMUVSLBYLUUGY
+          IULXDXBXEXFXLXGXHXMUUNBCDYHEFGHIKLMUBNAUWIUUMOXIZAUWQUUMPXIACFUSHUKUP
+          UMFUQVSUUMQXIRAUXEUUMTXIZAUULYSXJZXKXNUUNYSUUPUUQXOZAUULYSXPUUNYPVLVK
+          ZYRVLVKZUUOVLVKZYSUYDVRZUUNJVLVKZYOVLVKZUYEAUYIUUMSXIZUUNUULUYJUYCLYH
+          MWCWIZJYOWGWHUUNYQVLVKUXEUYFUUNUQVLYHHUYAUYCWEUYBYQDWGWHUUNYTVLVKZUYJ
+          UYGUUNIVLVKZUXEUYMAUYNUUMABCEFGHIKLMNOPQRXQXIUYBIDWGWHZUYLYTYOWGWHVLU
+          PXRUYEUYFUYGXCUYHXSVLYPYRUUOUPXTYAWKYBYCUUNUCUDUEJYTYOUPVLUOUXOUXPUUN
+          UXQWFUYKUYOUYLUXRUXSUUNUXTWFWPYDYEYFYB $.
       $}
 
       ${
@@ -104232,6 +104294,17 @@ $)
     ( cfzo co wcel cuz cfv cz clt wbr elfzo2 simp1bi ) ABCDEFABGHFCIFACJKABCLM
     $.
 
+  $( An integer not being a member of a half-open finite set of integers.
+     (Contributed by AV, 29-Apr-2020.) $)
+  nelfzo $p |- ( ( K e. ZZ /\ M e. ZZ /\ N e. ZZ )
+                 -> ( K e/ ( M ..^ N ) <-> ( K < M \/ N <_ K ) ) ) $=
+    ( cfzo co wnel wcel wn cz w3a clt wbr cle wo wa wb syl2anc syl cr zre simp2
+    df-nel wdc simp1 zdcle ianordc elfzo notbid zltnle anim12ci 3adant2 orbi12d
+    lenlt 3bitr4d bitrid ) ABCDEZFAUPGZHZAIGZBIGZCIGZJZABKLZCAMLZNZAUPUBVBBAMLZ
+    ACKLZOZHZVFHZVGHZNZURVEVBVFUCZVIVLPVBUTUSVMUSUTVAUAZUSUTVAUDZBAUEQVFVGUFRVB
+    UQVHABCUGUHVBVCVJVDVKVBUSUTVCVJPVOVNABUIQVBCSGZASGZOZVDVKPUSVAVRUTUSVQVAVPA
+    TCTUJUKCAUMRULUNUO $.
+
   $( Decidability of membership in a half-open integer interval.  (Contributed
      by Jim Kingdon, 25-Aug-2022.) $)
   fzodcel $p |- ( ( K e. ZZ /\ M e. ZZ /\ N e. ZZ ) ->
@@ -114156,6 +114229,482 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Words over a set
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+
+  This section is about _words_ (or _strings_) over a set (_alphabet_) defined
+  as finite sequences of _symbols_ (or _characters_) being elements of the
+  alphabet.  Although it is often required that the underlying set/alphabet be
+  nonempty, finite and not a proper class, these restrictions are not made in
+  the current definition ~ df-word .  Note that the empty word ` (/) ` (i.e.,
+  the empty set) is the only word over an empty alphabet, see ~ 0wrd0 .
+
+  The set ` Word S ` of words over ` S ` is the free monoid over ` S ` , where
+  the monoid law is concatenation and the monoid unit is the empty word.
+
+  Besides the definition of words themselves, several operations on words are
+  defined in this section:
+  <HTML>
+  <table border="1" id="word-operations">
+  <tr>
+    <th>Name</th><th>Reference</th><th>Explanation</th><th>Example</th>
+    <th>Remarks</th></tr>
+  <tr>
+    <td>Length (or size) of a word </td><td> ~ df-ihash : ` ( # ``  W ) ` </td>
+    <td>Operation which determines the number of the symbols
+        within the word.</td>
+    <td> ` W : ( 0 ..^ N ) --> S -> ( W e. Word S /\ ( # ``  W ) = N ` </td>
+    <td> This is not a special definition for words,
+         but for arbitrary sets.</td></tr>
+  <tr>
+    <td>First symbol of a word </td><td> ~ df-fv : ` ( W `` 0 ) ` </td>
+    <td>Operation which extracts the first symbol of a word. The result is the
+        symbol at the first place in the sequence representing the word.</td>
+    <td> ` W : ( 0 ..^ 1 ) --> S -> ( W e. Word S /\ ( W `` 0 ) e. S ` </td>
+    <td> This is not a special definition for words,
+         but for arbitrary functions with a half-open range of nonnegative
+         integers as domain.</td></tr>
+  </table>
+
+  Conventions:
+  <ul>
+  <li>Words are usually represented by class variable ` W `, or if two words
+  are involved, by ` W ` and ` U ` or by ` A ` and ` B `.</li>
+  <li>The alphabets are usually represented by class variable ` V ` (because
+  any arbitrary set can be an alphabet), sometimes also by ` S ` (especially
+  as codomain of the function representing a word, because the alphabet is the
+  set of symbols).</li>
+  <li>The symbols are usually represented by class variables ` S ` or ` A ` ,
+  or if two symbols are involved, by ` S ` and ` T ` or by ` A ` and ` B `.
+  </li>
+  <li>The indices of the sequence representing a word are usually represented
+  by class variable ` I `, if two indices are involved (especially for
+  subwords) by ` I ` and ` J `, or by ` M ` and ` N `.</li>
+  <li>The length of a word is usually represented by class variables ` N `
+  or ` L `.</li>
+  <li>The number of positions by which to cyclically shift a word is usually
+  represented by class variables ` N ` or ` L `.</li></ul>
+  </HTML>
+
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Definitions and basic theorems
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c Word $.
+
+  $( Syntax for the Word operator. $)
+  cword $a class Word S $.
+
+  ${
+    $d l w S $.
+    $( Define the class of _words over a set_.  A word (sometimes also called a
+       _string_) is a finite sequence of symbols from a set (alphabet) ` S ` .
+       Definition in Section 9.1 of [AhoHopUll] p. 318.  The domain is forced
+       to be an initial segment of ` NN0 ` so that two words with the same
+       symbols in the same order be equal.  The set ` Word S ` is sometimes
+       denoted by S*, using the Kleene star, although the Kleene star, or
+       Kleene closure, is sometimes reserved to denote an operation on
+       languages.  The set ` Word S ` equipped with concatenation is the free
+       monoid over ` S ` , and the monoid unit is the empty word.  (Contributed
+       by FL, 14-Jan-2014.)  (Revised by Stefan O'Rear, 14-Aug-2015.)  (Revised
+       by Mario Carneiro, 26-Feb-2016.) $)
+    df-word $a |- Word S = { w | E. l e. NN0 w : ( 0 ..^ l ) --> S } $.
+  $}
+
+  ${
+    $d l w S $.  $d l w V $.  $d l w W $.
+    $( Property of being a word over a set with an existential quantifier over
+       the length.  (Contributed by Stefan O'Rear, 15-Aug-2015.)  (Revised by
+       Mario Carneiro, 26-Feb-2016.)  (Proof shortened by AV, 13-May-2020.) $)
+    iswrd $p |- ( W e. Word S <->
+          E. l e. NN0 W : ( 0 ..^ l ) --> S ) $=
+      ( vw cword wcel cc0 cv cfzo co wf cn0 wrex cab df-word eleq2i cvv wa cfn
+      cz simpr 0z nn0z adantr fzofig sylancr fexd rexlimiva rexbidv elab3 bitri
+      wceq feq1 ) BAEZFBGCHZIJZADHZKZCLMZDNZFUPABKZCLMZUNUTBDACOPUSVBDBVABQFCLU
+      OLFZVARZUPASBVCVAUAVDGTFUOTFZUPSFUBVCVEVAUOUCUDGUOUEUFUGUHUQBULURVACLUPAU
+      QBUMUIUJUK $.
+
+    $( Value of the set of words over a set.  (Contributed by Stefan O'Rear,
+       10-Aug-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.) $)
+    wrdval $p |- ( S e. V -> Word S = U_ l e. NN0 ( S ^m ( 0 ..^ l ) ) ) $=
+      ( vw wcel cword cc0 cv cfzo co wf cn0 wrex cab cmap ciun df-word eliun cz
+      cfn wa simpl 0zd nn0z adantl fzofig syl2anc elmapd rexbidva bitrid eqabdv
+      eqtr4id ) ABEZAFGCHZIJZADHZKZCLMZDNCLAUOOJZPZDACQUMURDUTUPUTEUPUSEZCLMUMU
+      RCUPLUSRUMVAUQCLUMUNLEZUAZAUOUPBTUMVBUBVCGSEUNSEZUOTEVCUCVBVDUMUNUDUEGUNU
+      FUGUHUIUJUKUL $.
+  $}
+
+  ${
+    $d S l $.  $d W l $.
+
+    $( The length of a word is a nonnegative integer.  This corresponds to the
+       definition in Section 9.1 of [AhoHopUll] p. 318.  (Contributed by Stefan
+       O'Rear, 27-Aug-2015.) $)
+    lencl $p |- ( W e. Word S -> ( # ` W ) e. NN0 ) $=
+      ( vl cword wcel cc0 cv cfzo co wf chash cfv cn0 wrex iswrd biimpi wa wceq
+      fnfzo0hash adantl simprl eqeltrd rexlimddv ) BADEZFCGZHIABJZBKLZMECMUDUFC
+      MNABCOPUDUEMEZUFQZQUGUEMUIUGUERUDABUESTUDUHUFUAUBUC $.
+  $}
+
+  ${
+    $d l S $.  $d l W $.  $d l L $.  $d x L $.
+    $( A zero-based sequence is a word.  (Contributed by Stefan O'Rear,
+       15-Aug-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.)  (Revised by
+       Jim Kingdon, 16-Aug-2025.) $)
+    iswrdinn0 $p |- ( ( W : ( 0 ..^ L ) --> S /\ L e. NN0 ) -> W e. Word S ) $=
+      ( vl cn0 wcel cc0 cfzo co wf cword wa wrex wceq oveq2 feq2d rspcev sylibr
+      cv iswrd ancoms ) BEFZGBHIZACJZCAKFZUBUDLGDSZHIZACJZDEMUEUHUDDBEUFBNUGUCA
+      CUFBGHOPQACDTRUA $.
+
+    $( A word is a zero-based sequence with a recoverable upper limit.
+       (Contributed by Stefan O'Rear, 15-Aug-2015.) $)
+    wrdf $p |- ( W e. Word S -> W : ( 0 ..^ ( # ` W ) ) --> S ) $=
+      ( vl cword wcel cc0 cv cfzo co wf cn0 chash cfv iswrd wa simpr fnfzo0hash
+      wrex oveq2d feq2d mpbird rexlimiva sylbi ) BADEFCGZHIZABJZCKRFBLMZHIZABJZ
+      ABCNUFUICKUDKEZUFOZUIUFUJUFPUKUHUEABUKUGUDFHABUDQSTUAUBUC $.
+  $}
+
+  $( A zero-based sequence is a word.  In ~ iswrdinn0 we can specify a length
+     as an nonnegative integer.  However, it will occasionally be helpful to
+     allow a negative length, as well as zero, to specify an empty sequence.
+     (Contributed by Jim Kingdon, 18-Aug-2025.) $)
+  iswrdiz $p |- ( ( W : ( 0 ..^ L ) --> S /\ L e. ZZ ) -> W e. Word S ) $=
+    ( cc0 cfzo co wf cz wcel clt wbr wceq cn0 simpll cle simplr 0red zred simpr
+    wa cword ltled elnn0z sylanbrc iswrdinn0 syl2anc 0nn0 eleq1 mpbii adantl c0
+    wb fzon sylancr mpbid fzo0 eqtr4di feq2d sylancl w3o ztri3or mpan mpjao3dan
+    0z ) DBEFZACGZBHIZTZDBJKZCAUAIZDBLZBDJKZVHVITZVFBMIZVJVFVGVINVMVGDBOKVNVFVG
+    VIPZVMDBVMQVMBVORVHVISUBBUCUDABCUEZUFVHVKTVFVNVJVFVGVKNVKVNVHVKDMIZVNUGDBMU
+    HUIUJVPUFVHVLTZDDEFZACGZVQVJVRVFVTVFVGVLNVRVEVSACVRVEUKVSVRBDOKZVEUKLZVRBDV
+    RBVFVGVLPZRVRQVHVLSUBVRDHIZVGWAWBULVDWCDBUMUNUODUPUQURUOUGADCUEUSVGVIVKVLUT
+    ZVFWDVGWEVDDBVAVBUJVC $.
+
+  $( The indices of a word (i.e. its domain regarded as function) are elements
+     of an open range of nonnegative integers (of length equal to the length of
+     the word).  (Contributed by AV, 2-May-2020.) $)
+  wrddm $p |- ( W e. Word S -> dom W = ( 0 ..^ ( # ` W ) ) ) $=
+    ( cword wcel cc0 chash cfv cfzo co wrdf fdmd ) BACDEBFGHIABABJK $.
+
+  ${
+    $d w l S $.  $d w l T $.
+    $( The set of words respects ordering on the base set.  (Contributed by
+       Stefan O'Rear, 15-Aug-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.)
+       (Proof shortened by AV, 13-May-2020.) $)
+    sswrd $p |- ( S C_ T -> Word S C_ Word T ) $=
+      ( vw vl wss cword cv wcel wa cc0 cfzo co wf cn0 wrex biimpi adantl simprr
+      iswrd simpll fssd simprl iswrdinn0 syl2anc rexlimddv ex ssrdv ) ABEZCAFZB
+      FZUHCGZUIHZUKUJHZUHULIZJDGZKLZAUKMZUMDNULUQDNOZUHULURAUKDSPQUNUONHZUQIZIZ
+      UPBUKMUSUMVAUPABUKUNUSUQRUHULUTTUAUNUSUQUBBUOUKUCUDUEUFUG $.
+  $}
+
+  $( A singleton of an ordered pair (with 0 as first component) is a word.
+     (Contributed by AV, 23-Nov-2018.)  (Proof shortened by AV,
+     18-Apr-2021.) $)
+  snopiswrd $p |- ( S e. V -> { <. 0 , S >. } e. Word V ) $=
+    ( wcel cc0 c1 cfzo co cop csn wf cn0 cword cz 0zd id fsnd fzo01 sylibr 1nn0
+    feq2i iswrdinn0 sylancl ) ABCZDEFGZBDAHIZJZEKCUEBLCUCDIZBUEJUFUCDAMBUCNUCOP
+    UDUGBUEQTRSBEUEUAUB $.
+
+  ${
+    $d s l S $.  $d s l V $.
+    $( The set of words over a set is a set.  (Contributed by Mario Carneiro,
+       26-Feb-2016.)  (Proof shortened by JJ, 18-Nov-2022.) $)
+    wrdexg $p |- ( S e. V -> Word S e. _V ) $=
+      ( vl wcel cword cn0 cc0 cv cfzo co cmap ciun cvv wrdval wral nn0ex cxp cz
+      cfn sylancr fnmap elex wa 0z nn0z adantl fzofig elexd mp3an2ani ralrimiva
+      wfn fnovex iunexg eqeltrd ) ABDZAECFAGCHZIJZKJZLZMABCNUOFMDURMDZCFOUSMDPU
+      OUTCFKMMQUKUOAMDUPFDZUQMDUTUAABUBUOVAUCZUQSVBGRDUPRDZUQSDUDVAVCUOUPUEUFGU
+      PUGTUHAUQMMKULUIUJCFURMMUMTUN $.
+
+    $( The set of words over a set is a set, bidirectional version.
+       (Contributed by Mario Carneiro, 26-Feb-2016.)  (Proof shortened by AV,
+       23-Nov-2018.) $)
+    wrdexb $p |- ( S e. _V <-> Word S e. _V ) $=
+      ( vs cvv wcel cword wrdexg cuni wss cv cc0 cop wa csn c0ex opex snopiswrd
+      vex snid sylancr uniexg elunii opeluu syl simprd ssriv 3syl ssexg impbii
+      ) ACDZAEZCDZACFUKAUJGZGZGZHUNCDZUIBAUNBIZADZJUNDZUPUNDZUQJUPKZULDZURUSLUQ
+      UTUTMZDVBUJDVAUTJUPNBQZORUPAPUTVBUJUASJUPULNVCUBUCUDUEUKULCDUMCDUOUJCTULC
+      TUMCTUFAUNCUGSUH $.
+  $}
+
+  ${
+    wrdexi.1 $e |- S e. _V $.
+    $( The set of words over a set is a set, inference form.  (Contributed by
+       AV, 23-May-2021.) $)
+    wrdexi $p |- Word S e. _V $=
+      ( cvv wcel cword wrdexg ax-mp ) ACDAECDBACFG $.
+  $}
+
+  $( A symbol within a word over an alphabet belongs to the alphabet.
+     (Contributed by Alexander van der Vekens, 28-Jun-2018.) $)
+  wrdsymbcl $p |- ( ( W e. Word V /\ I e. ( 0 ..^ ( # ` W ) ) )
+                  -> ( W ` I ) e. V ) $=
+    ( cword wcel cc0 chash cfv cfzo co wrdf ffvelcdmda ) CBDEFCGHIJBACBCKL $.
+
+  $( A word is a function with a zero-based sequence of integers as domain.
+     (Contributed by Alexander van der Vekens, 13-Apr-2018.) $)
+  wrdfn $p |- ( W e. Word S -> W Fn ( 0 ..^ ( # ` W ) ) ) $=
+    ( cword wcel cc0 chash cfv cfzo co wrdf ffnd ) BACDEBFGHIABABJK $.
+
+  $( A word over an alphabet is a word over the universal class.  (Contributed
+     by AV, 8-Feb-2021.)  (Proof shortened by JJ, 18-Nov-2022.) $)
+  wrdv $p |- ( W e. Word V -> W e. Word _V ) $=
+    ( cword cvv wss ssv sswrd ax-mp sseli ) ACZDCZBADEJKEAFADGHI $.
+
+  $( The length of a word is not in the domain of the word (regarded as a
+     function).  (Contributed by AV, 3-Mar-2021.)  (Proof shortened by JJ,
+     18-Nov-2022.) $)
+  wrdlndm $p |- ( W e. Word V -> ( # ` W ) e/ dom W ) $=
+    ( cword wcel chash cfv cdm wn wnel cc0 co fzonel a1i wrddm neleqtrrd df-nel
+    cfzo sylibr ) BACDZBEFZBGZDHTUAISUAJTQKZTTUBDHSJTLMABNOTUAPR $.
+
+  ${
+    $d V i $.  $d W i $.
+    $( An arbitrary word is a word over an alphabet if all of its symbols
+       belong to the alphabet.  (Contributed by AV, 23-Jan-2021.) $)
+    iswrdsymb $p |- ( ( W e. Word _V /\ A. i e. ( 0 ..^ ( # ` W ) )
+                                        ( W ` i ) e. V )
+                      -> W e. Word V ) $=
+      ( cvv cword wcel cv cfv cc0 chash cfzo co wral wa wf cn0 wfn wrdfn anim1i
+      ffnfv sylibr lencl adantr iswrdinn0 syl2anc ) CDEFZAGCHBFAICJHZKLZMZNZUHB
+      COZUGPFZCBEFUJCUHQZUINUKUFUMUIDCRSAUHBCTUAUFULUIDCUBUCBUGCUDUE $.
+  $}
+
+  $( A word is a finite set.  (Contributed by Stefan O'Rear, 2-Nov-2015.)
+     (Proof shortened by AV, 18-Nov-2018.) $)
+  wrdfin $p |- ( W e. Word S -> W e. Fin ) $=
+    ( cword wcel cc0 chash cfv cfzo co wfn cfn wrdfn cz 0z lencl fzofig sylancr
+    nn0zd fnfi syl2anc ) BACDZBEBFGZHIZJUCKDZBKDABLUAEMDUBMDUDNUAUBABOREUBPQUCB
+    ST $.
+
+  $( The length of a nonempty word is a positive integer.  (Contributed by
+     Mario Carneiro, 1-Oct-2015.) $)
+  lennncl $p |- ( ( W e. Word S /\ W =/= (/) ) -> ( # ` W ) e. NN ) $=
+    ( cword wcel chash cfv cn c0 wne cfn wb wrdfin hashnncl syl biimpar ) BACDZ
+    BEFGDZBHIZPBJDQRKABLBMNO $.
+
+  $( A word is a function from a finite interval of integers.  (Contributed by
+     AV, 10-Feb-2021.) $)
+  wrdffz $p |- ( W e. Word S -> W : ( 0 ... ( ( # ` W ) - 1 ) ) --> S ) $=
+    ( cword wcel cc0 chash cfv cfzo co wf c1 cmin cfz wrdf cz wceq lencl fzoval
+    nn0zd syl feq2d mpbid ) BACDZEBFGZHIZABJEUDKLIMIZABJABNUCUEUFABUCUDODUEUFPU
+    CUDABQSEUDRTUAUB $.
+
+  $( Equality theorem for the set of words.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  wrdeq $p |- ( S = T -> Word S = Word T ) $=
+    ( wss wa cword wceq sswrd anim12i eqss 3imtr4i ) ABCZBACZDAEZBEZCZNMCZDABFM
+    NFKOLPABGBAGHABIMNIJ $.
+
+  ${
+    wrdeqi.1 $e |- S = T $.
+    $( Equality theorem for the set of words, inference form.  (Contributed by
+       AV, 23-May-2021.) $)
+    wrdeqi $p |- Word S = Word T $=
+      ( wceq cword wrdeq ax-mp ) ABDAEBEDCABFG $.
+  $}
+
+  $( A function with empty domain is a word.  (Contributed by AV,
+     13-Oct-2018.) $)
+  iswrddm0 $p |- ( W : (/) --> S -> W e. Word S ) $=
+    ( c0 wf cc0 cfzo co cword wcel fzo0 feq2i cn0 0nn0 iswrdinn0 mpan2 sylbir )
+    CABDEEFGZABDZBAHIZQCABEJKRELISMAEBNOP $.
+
+  $( The empty set is a word (the _empty word_, frequently denoted &#949; in
+     this context).  This corresponds to the definition in Section 9.1 of
+     [AhoHopUll] p. 318.  (Contributed by Stefan O'Rear, 15-Aug-2015.)  (Proof
+     shortened by AV, 13-May-2020.) $)
+  wrd0 $p |- (/) e. Word S $=
+    ( c0 wf cword wcel f0 iswrddm0 ax-mp ) BABCBADEAFABGH $.
+
+  $( The empty word is the only word over an empty alphabet.  (Contributed by
+     AV, 25-Oct-2018.) $)
+  0wrd0 $p |- ( W e. Word (/) <-> W = (/) ) $=
+    ( c0 cword wcel wceq cc0 chash cfv cfzo co wrdf f00 simplbi syl wrd0 mpbiri
+    wf eleq1 impbii ) ABCZDZABEZUAFAGHIJZBAQZUBBAKUDUBUCBEUCALMNUBUABTDBOABTRPS
+    $.
+
+  $( A word is a word over the symbols it consists of.  (Contributed by AV,
+     1-Dec-2022.) $)
+  wrdsymb $p |- ( S e. Word A -> S e. Word ( S " ( 0 ..^ ( # ` S ) ) ) ) $=
+    ( cword wcel cc0 chash cfv cfzo co cima wf cn0 wfo wrdf fimadmfo 3syl lencl
+    fof iswrdinn0 syl2anc ) BACDZEBFGZHIZBUCJZBKZUBLDBUDCDUAUCABKUCUDBMUEABNUCA
+    BOUCUDBRPABQUDUBBST $.
+
+  ${
+    $d l w x $.  $d l w S $.
+    nfwrd.1 $e |- F/_ x S $.
+    $( Hypothesis builder for ` Word S ` .  (Contributed by Mario Carneiro,
+       26-Feb-2016.) $)
+    nfwrd $p |- F/_ x Word S $=
+      ( vl vw cword cc0 cv cfzo co wf cn0 wrex cab df-word nfcv nff nfrexw nfab
+      nfcxfr ) ABFGDHIJZBEHZKZDLMZENEBDOUDAEUCADLALPAUABUBAUBPAUAPCQRST $.
+  $}
+
+  ${
+    $d S l w x $.  $d V l w x $.
+    $( Class substitution for the symbols of a word.  (Contributed by Alexander
+       van der Vekens, 15-Jul-2018.) $)
+    csbwrdg $p |- ( S e. V -> [_ S / x ]_ Word x = Word S ) $=
+      ( vl vw wcel cv cword csb cc0 cfzo cn0 wrex cab df-word csbeq2i csbconstg
+      co wf wsbc sbcrex sbcfg csbvarg feq123d rexbidv bitrid abbidv csbabg wceq
+      bitrd a1i 3eqtr4d eqtrid ) BCFZABAGZHZIABJDGKRZUOEGZSZDLMZENZIZBHZABUPVAE
+      UODOPUNUTABTZENUQBURSZDLMZENZVBVCUNVDVFEVDUSABTZDLMUNVFUSADBLUAUNVHVEDLUN
+      VHABUQIZABUOIZABURIZSVEAUQUOURCBUBUNVIUQVJBVKURABURCQABUQCQABCUCUDUJUEUFU
+      GUTAEBCUHVCVGUIUNEBDOUKULUM $.
+  $}
+
+  ${
+    $d N w $.  $d V w $.  $d W w $.  $d X w $.
+    $( Words of a fixed length are mappings from a fixed half-open integer
+       interval.  (Contributed by Alexander van der Vekens, 25-Mar-2018.)
+       (Proof shortened by AV, 13-May-2020.) $)
+    wrdnval $p |- ( ( V e. X /\ N e. NN0 )
+                 -> { w e. Word V | ( # ` w ) = N } = ( V ^m ( 0 ..^ N ) ) ) $=
+      ( wcel cn0 wa cv chash cfv wceq cword crab cab cc0 cfzo co wf cfn cz cmap
+      df-rab wb nn0z adantl fzofig sylancr elmapg syldan simpr simplr iswrdinn0
+      0z syl2anc fnfzo0hash adantll jca ex wrdf oveq2 feq2d syl5ibcom imp bitrd
+      impbid1 eqabdv eqtr4id ) CDEZBFEZGZAHZIJZBKZACLZMVKVNEZVMGZANCOBPQZUAQZVM
+      AVNUBVJVPAVRVJVKVREZVQCVKRZVPVHVIVQSEZVSVTUCVJOTEBTEZWAUMVIWBVHBUDUEOBUFU
+      GCVQVKDSUHUIVJVTVPVJVTVPVJVTGZVOVMWCVTVIVOVJVTUJVHVIVTUKCBVKULUNVIVTVMVHC
+      VKBUOUPUQURVOVMVTVOOVLPQZCVKRVMVTCVKUSVMWDVQCVKVLBOPUTVAVBVCVEVDVFVG $.
+
+    $( Words as a mapping.  (Contributed by Thierry Arnoux, 4-Mar-2020.) $)
+    wrdmap $p |- ( ( V e. X /\ N e. NN0 )
+     -> ( ( W e. Word V /\ ( # ` W ) = N ) <-> W e. ( V ^m ( 0 ..^ N ) ) ) ) $=
+      ( vw cword wcel chash cfv wceq wa cv crab cn0 cc0 cfzo cmap fveqeq2 elrab
+      co wrdnval eleq2d bitr3id ) CBFZGCHIAJZKCELZHIAJZEUDMZGBDGANGKZCBOAPTQTZG
+      UGUEECUDUFCAHRSUIUHUJCEABDUAUBUC $.
+  $}
+
+  $( A symbol at a position "outside" of a word.  (Contributed by Alexander van
+     der Vekens, 26-May-2018.)  (Proof shortened by AV, 2-May-2020.) $)
+  wrdsymb0 $p |- ( ( W e. Word V /\ I e. ZZ )
+                   -> ( ( I < 0 \/ ( # ` W ) <_ I ) -> ( W ` I ) = (/) ) ) $=
+    ( cword wcel cz wa cvv cc0 clt wbr chash cfv cle wo cdm wn c0 wceq wi wrddm
+    elex adantl cfzo co lencl nn0zd wnel simpr 0zd simpl nelfzo syl3anc biimpar
+    wb df-nel sylib eleq2 notbid imbitrrid exp4c sylc imp ndmfvg syl6an ) CBDEZ
+    AFEZGAHEZAIJKCLMZANKOZACPZEZQZACMRSVGVHVFAFUBUCVFVGVJVMTZVFVKIVIUDUEZSZVIFE
+    ZVGVNTBCUAVFVIBCUFUGVPVQVGVJVMVQVGGZVJGZVMVPAVOEZQZVSAVOUHZWAVRWBVJVRVGIFEV
+    QWBVJUOVQVGUIVRUJVQVGUKAIVIULUMUNAVOUPUQVPVLVTVKVOAURUSUTVAVBVCACVDVE $.
+
+  $( A word with length at least 1 is not empty.  (Contributed by AV,
+     14-Oct-2018.) $)
+  wrdlenge1n0 $p |- ( W e. Word V -> ( W =/= (/) <-> 1 <_ ( # ` W ) ) ) $=
+    ( cword cc0 chash cfv clt wbr c0 wne c1 cle cfn wb wrdfin fihashneq0 syl cz
+    wcel lencl nn0zd zgt0ge1 bitr3d ) BACSZDBEFZGHZBIJZKUELHZUDBMSUFUGNABOBPQUD
+    UERSUFUHNUDUEABTUAUEUBQUC $.
+
+  $( The length of a word is a positive integer iff the word is not empty.
+     (Contributed by AV, 22-Mar-2022.) $)
+  len0nnbi $p |- ( W e. Word S -> ( W =/= (/) <-> ( # ` W ) e. NN ) ) $=
+    ( cword wcel c0 wne chash cfv cn lennncl ex cle nnge1 wrdlenge1n0 imbitrrid
+    c1 wbr impbid ) BACDZBEFZBGHZIDZSTUBABJKUBTSPUALQUAMABNOR $.
+
+  $( A word with length at least 2 is not empty.  (Contributed by AV,
+     18-Jun-2018.)  (Proof shortened by AV, 14-Oct-2018.) $)
+  wrdlenge2n0 $p |- ( ( W e. Word V /\ 2 <_ ( # ` W ) ) -> W =/= (/) ) $=
+    ( cword wcel c2 chash cfv cle wbr wa c0 wne c1 w3a clt 1red 2re a1i adantr
+    cr lencl nn0red 3jca simpr 1lt2 jctil ltleletr sylc wb wrdlenge1n0 mpbird )
+    BACDZEBFGZHIZJZBKLZMUMHIZUOMTDZETDZUMTDZNZMEOIZUNJUQULVAUNULURUSUTULPUSULQR
+    ULUMABUAUBUCSUOUNVBULUNUDUEUFMEUMUGUHULUPUQUIUNABUJSUK $.
+
+  $( The first symbol of a nonempty word over an alphabet belongs to the
+     alphabet.  (Contributed by Alexander van der Vekens, 28-Jun-2018.) $)
+  wrdsymb1 $p |- ( ( W e. Word V /\ 1 <_ ( # ` W ) ) -> ( W ` 0 ) e. V ) $=
+    ( cword wcel c1 chash cfv cle wbr cc0 cfzo co wa cn0 lencl elnnnn0c biimpri
+    cn sylan lbfzo0 sylibr wrdsymbcl syldan ) BACDZEBFGZHIZJJUEKLDZJBGADUDUFMUE
+    RDZUGUDUENDZUFUHABOUHUIUFMUEPQSUETUAJABUBUC $.
+
+  ${
+    $d V v $.  $d W v $.
+    $( A word of length 1 starts with a symbol.  (Contributed by AV,
+       20-Jul-2018.)  (Proof shortened by AV, 19-Oct-2018.) $)
+    wrdlen1 $p |- ( ( W e. Word V /\ ( # ` W ) = 1 )
+                    -> E. v e. V ( W ` 0 ) = v ) $=
+      ( cword wcel chash cfv c1 wceq wa cc0 cv wrex cle wbr 1le1 breq2 wrdsymb1
+      mpbiri sylan2 clel5 sylib ) CBDEZCFGZHIZJKCGZBEZUFALIABMUEUCHUDNOZUGUEUHH
+      HNOPUDHHNQSBCRTABUFUAUB $.
+  $}
+
+  $( The first symbol of a nonempty word is element of the alphabet for the
+     word.  (Contributed by AV, 28-Sep-2018.)  (Proof shortened by AV,
+     14-Oct-2018.) $)
+  fstwrdne $p |- ( ( W e. Word V /\ W =/= (/) ) -> ( W ` 0 ) e. V ) $=
+    ( cword wcel c0 wne cc0 cfv c1 chash cle wbr wrdlenge1n0 wrdsymb1 ex sylbid
+    imp ) BACDZBEFZGBHADZRSIBJHKLZTABMRUATABNOPQ $.
+
+  $( The first symbol of a nonempty word is element of the alphabet for the
+     word.  (Contributed by AV, 29-Sep-2018.)  (Proof shortened by AV,
+     14-Oct-2018.) $)
+  fstwrdne0 $p |- ( ( N e. NN /\ ( W e. Word V /\ ( # ` W ) = N ) )
+                    -> ( W ` 0 ) e. V ) $=
+    ( cn wcel cword chash cfv wa c1 cle wbr cc0 simprl nnge1 adantr wb ad2antll
+    wceq breq2 mpbird wrdsymb1 syl2anc ) ADEZCBFEZCGHZASZIZIZUEJUFKLZMCHBEUDUEU
+    GNUIUJJAKLZUDUKUHAOPUGUJUKQUDUEUFAJKTRUABCUBUC $.
+
+  ${
+    $d U i $.  $d W i $.
+    $( Two words are equal iff they have the same length and the same symbol at
+       each position.  (Contributed by AV, 13-Apr-2018.)  (Revised by JJ,
+       30-Dec-2023.) $)
+    eqwrd $p |- ( ( U e. Word S /\ W e. Word T )
+          -> ( U = W <-> ( ( # ` U ) = ( # ` W ) /\ A. i e. ( 0 ..^ ( # ` U ) )
+                                                 ( U ` i ) = ( W ` i ) ) ) ) $=
+      ( cword wcel wa wceq cc0 chash cfv cfzo wfn wrdfn cn0 lencl hashfzo0 syl
+      co cv wral wb eqfnfv2 syl2an fveq2 eqeqan12d imbitrid oveq2 impbid1 bitrd
+      anbi1d ) CAFGZEBFGZHZCEIZJCKLZMTZJEKLZMTZIZDUAZCLVBELIDURUBZHZUQUSIZVCHUM
+      CURNEUTNUPVDUCUNACOBEODURUTCEUDUEUOVAVEVCUOVAVEVAURKLZUTKLZIUOVEURUTKUFUM
+      UNVFUQVGUSUMUQPGVFUQIACQUQRSUNUSPGVGUSIBEQUSRSUGUHUQUSJMUIUJULUK $.
+  $}
+
+  ${
+    $d V v x y z $.  $d Y v y z $.  $d Z z $.
+    elovmpowrd.o $e |- O = ( v e. _V , y e. _V |-> { z e. Word v | ph } ) $.
+    $( Implications for the value of an operation defined by the maps-to
+       notation with a class abstraction of words as a result having an
+       element.  Note that ` ph ` may depend on ` z ` as well as on ` v ` and
+       ` y ` .  (Contributed by Alexander van der Vekens, 15-Jul-2018.) $)
+    elovmpowrd $p |- ( Z e. ( V O Y )
+                        -> ( V e. _V /\ Y e. _V /\ Z e. Word V ) ) $=
+      ( vx wcel cvv cv cword csb w3a crab cmpo wa adantr co wceq csbwrdg eqcomd
+      rabeqdv mpoeq3ia eqtri wrdexg elovmporab1w wb eleq2d 3expia sylbid 3impia
+      eqeltrd id syl ) HFGEUAKFLKZGLKZHJFJMNZOZKZPURUSHFNZKZPZADBCJUTEFGHEDBLLA
+      CDMZNZQZRDBLLACJVFUTOZQZRIDBLLVHVJVFLKZBMLKZSACVGVIVKVGVIUBVLVKVIVGJVFLUC
+      UDTUEUFUGURVALKUSURVAVCLJFLUCZFLUHUOTUIURUSVBVEURUSSVBVDVEURVBVDUJUSURVAV
+      CHVMUKTURUSVDVEVEUPULUMUNUQ $.
+  $}
+
+  $( A word truncated by a symbol is a word.  (Contributed by AV,
+     29-Jan-2021.) $)
+  wrdred1 $p |- ( F e. Word S
+                  -> ( F |` ( 0 ..^ ( ( # ` F ) - 1 ) ) ) e. Word S ) $=
+    ( cword wcel cc0 chash cfv cfzo co wf cn0 c1 cmin cres wrdf lencl wa cz syl
+    syl2anc wss nn0z fzossrbm1 fssres sylan2 adantl peano2zm iswrdiz ) BACZDEBF
+    GZHIZABJZUJKDZBEUJLMIZHIZNZUIDZABOABPULUMQZUOAUPJZUNRDZUQUMULUOUKUAZUSUMUJR
+    DZVAUJUBZUJUCSUKAUOBUDUEURVBUTUMVBULVCUFUJUGSAUNUPUHTT $.
+
+  $( The length of a word truncated by a symbol.  (Contributed by Alexander van
+     der Vekens, 1-Nov-2017.)  (Revised by AV, 29-Jan-2021.) $)
+  wrdred1hash $p |- ( ( F e. Word S /\ 1 <_ ( # ` F ) )
+                      -> ( # ` ( F |` ( 0 ..^ ( ( # ` F ) - 1 ) ) ) )
+                         = ( ( # ` F ) - 1 ) ) $=
+    ( cword wcel c1 chash cfv cle wbr cc0 cmin co cfzo wceq cn0 wfn wa ad2antrl
+    cz syl cres lencl wf wrdf ffn cfn wss nn0z fzossrbm1 fnssresb adantr mpbird
+    wi wb peano2zm fzofig sylancr fihashfn syl2anc 1nn0 nn0sub2 mp3an1 hashfzo0
+    0z adantl eqtrd ex 3syl mpand imp ) BACDZEBFGZHIZBJVLEKLZMLZUAZFGZVNNZVKVLO
+    DZVMVRABUBVKJVLMLZABUCBVTPZVSVMQZVRUMABUDVTABUEWAWBVRWAWBQZVQVOFGZVNWCVPVOP
+    ZVOUFDZVQWDNWCWEVOVTUGZVSWGWAVMVSVLSDZWGVLUHZVLUITRWAWEWGUNWBVTVOBUJUKULWCJ
+    SDVNSDZWFVDWCWHWJVSWHWAVMWIRVLUOTJVNUPUQVOVPURUSWBWDVNNZWAWBVNODZWKEODVSVMW
+    LUTEVLVAVBVNVCTVEVFVGVHVIVJ $.
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Elementary real and complex functions
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
@@ -118658,24 +119207,24 @@ $)
       ( vs wcel cr wss cv cle wbr wral wrex wi c0 wceq sseq1 raleq cc0 syl2anc
       wa vw vu vv cfn csn cun rexbidv imbi12d 0re ral0 breq2 ralbidv rspcev a1i
       mp2an unss biimpri simpld adantl simplr mpd cbvrexv sylib cpr csup simprl
-      clt simprd vex snss sylibr ad2antlr maxcl nfv nfcv nfra1 nfim nfan simprr
-      nfrexxy maxle1 r19.27av r19.21bi simpr sseldd adantr letr syl3anc ralrimi
-      ad2antrr ex maxle2 wb breq1 ralsng mpbird ralun rexlimddv exp31 findcard2
-      syl impcom ) CUDECFGZBHZAHZIJZBCKZAFLZUAHZFGZXFBXIKZAFLZMNFGZXFBNKZAFLZMU
-      BHZFGZXFBXPKZAFLZMZXPUCHZUEZUFZFGZXFBYCKZAFLZMXCXHMUAUBUCCXINOZXJXMXLXOXI
-      NFPYGXKXNAFXFBXINQUGUHXIXPOZXJXQXLXSXIXPFPYHXKXRAFXFBXIXPQUGUHXIYCOZXJYDX
-      LYFXIYCFPYIXKYEAFXFBXIYCQUGUHXICOZXJXCXLXHXICFPYJXKXGAFXFBXICQUGUHXOXMRFE
-      XDRIJZBNKZXOUIYKBUJXNYLARFXEROXFYKBNXERXDIUKULUMUOUNXPUDEZXTYDYFYMXTTZYDT
-      ZXDDHZIJZBXPKZYFDFYOXSYRDFLYOXQXSYDXQYNYDXQYBFGZXQYSTYDXPYBFUPUQZURUSZYMX
-      TYDUTVAXRYRADFXEYPOXFYQBXPXEYPXDIUKULVBVCYOYPFEZYRTZTZYPYAVDFVGVEZFEZXDUU
-      EIJZBYCKZYFUUDUUBYAFEZUUFYOUUBYRVFZYDUUIYNUUCYDYSUUIYDXQYSYTVHYAFUCVIVJVK
-      VLZYPYAVMSZUUDUUGBXPKUUGBYBKZUUHUUDUUGBXPYOUUCBYNYDBYMXTBYMBVNXQXSBXQBVNX
-      RBAFBFVOXFBXPVPVTVQVRYDBVNVRUUBYRBUUBBVNYQBXPVPVRVRUUDXDXPEZUUGUUDUUNTZYQ
-      YPUUEIJZTZUUGUUDUUQBXPUUDYRUUPUUQBXPKYOUUBYRVSUUDUUBUUIUUPUUJUUKYPYAWASYQ
-      UUPBXPWBSWCUUOXDFEUUBUUFUUQUUGMUUOXPFXDYOXQUUCUUNUUAWJUUDUUNWDWEUUDUUBUUN
-      UUJWFUUDUUFUUNUULWFXDYPUUEWGWHVAWKWIUUDUUMYAUUEIJZUUDUUBUUIUURUUJUUKYPYAW
-      LSUUDUUIUUMUURWMUUKUUGUURBYAFXDYAUUEIWNWOXAWPUUGBXPYBWQSYEUUHAUUEFXEUUEOX
-      FUUGBYCXEUUEXDIUKULUMSWRWSWTXB $.
+      clt simprd vex snss sylibr ad2antlr maxcl nfv nfcv nfra1 nfrexw nfim nfan
+      simprr maxle1 r19.27av r19.21bi ad2antrr simpr sseldd adantr letr syl3anc
+      ex ralrimi maxle2 breq1 ralsng syl mpbird ralun rexlimddv exp31 findcard2
+      wb impcom ) CUDECFGZBHZAHZIJZBCKZAFLZUAHZFGZXFBXIKZAFLZMNFGZXFBNKZAFLZMUB
+      HZFGZXFBXPKZAFLZMZXPUCHZUEZUFZFGZXFBYCKZAFLZMXCXHMUAUBUCCXINOZXJXMXLXOXIN
+      FPYGXKXNAFXFBXINQUGUHXIXPOZXJXQXLXSXIXPFPYHXKXRAFXFBXIXPQUGUHXIYCOZXJYDXL
+      YFXIYCFPYIXKYEAFXFBXIYCQUGUHXICOZXJXCXLXHXICFPYJXKXGAFXFBXICQUGUHXOXMRFEX
+      DRIJZBNKZXOUIYKBUJXNYLARFXEROXFYKBNXERXDIUKULUMUOUNXPUDEZXTYDYFYMXTTZYDTZ
+      XDDHZIJZBXPKZYFDFYOXSYRDFLYOXQXSYDXQYNYDXQYBFGZXQYSTYDXPYBFUPUQZURUSZYMXT
+      YDUTVAXRYRADFXEYPOXFYQBXPXEYPXDIUKULVBVCYOYPFEZYRTZTZYPYAVDFVGVEZFEZXDUUE
+      IJZBYCKZYFUUDUUBYAFEZUUFYOUUBYRVFZYDUUIYNUUCYDYSUUIYDXQYSYTVHYAFUCVIVJVKV
+      LZYPYAVMSZUUDUUGBXPKUUGBYBKZUUHUUDUUGBXPYOUUCBYNYDBYMXTBYMBVNXQXSBXQBVNXR
+      BAFBFVOXFBXPVPVQVRVSYDBVNVSUUBYRBUUBBVNYQBXPVPVSVSUUDXDXPEZUUGUUDUUNTZYQY
+      PUUEIJZTZUUGUUDUUQBXPUUDYRUUPUUQBXPKYOUUBYRVTUUDUUBUUIUUPUUJUUKYPYAWASYQU
+      UPBXPWBSWCUUOXDFEUUBUUFUUQUUGMUUOXPFXDYOXQUUCUUNUUAWDUUDUUNWEWFUUDUUBUUNU
+      UJWGUUDUUFUUNUULWGXDYPUUEWHWIVAWJWKUUDUUMYAUUEIJZUUDUUBUUIUURUUJUUKYPYAWL
+      SUUDUUIUUMUURXAUUKUUGUURBYAFXDYAUUEIWMWNWOWPUUGBXPYBWQSYEUUHAUUEFXEUUEOXF
+      UUGBYCXEUUEXDIUKULUMSWRWSWTXB $.
   $}
 
   ${
@@ -121066,14 +121615,14 @@ $)
     nfsum $p |- F/_ x sum_ k e. A B $=
       ( vm vj vn vz vf cv cfv caddc cz cc0 cli c1 cn nfcv csu cuz wss wcel wral
       wdc csb cif cmpt cseq wbr w3a wrex cfz co wf1o cle wa wex wo cio df-sumdc
-      wceq nfss nfcri nfdc nfralxy nfcsb nfif nfmpt nfseq nfbr nf3an nff1o nffv
-      nfrexxy nfv nfeq2 nfan nfex nfor nfiotaw nfcxfr ) ABCDUABGLZUBMZUCZHLBUDZ
-      UFZHWEUEZNIOILZBUDZDWJCUGZPUHZUIZWDUJZJLZQUKZULZGOUMZRWDUNUOZBKLZUPZWPWDN
-      ISWJWDUQUKZDWJXAMZCUGZPUHZUIZRUJZMZVCZURZKUSZGSUMZUTZJVAJBCKHDGIVBXNAJWSX
-      MAWRAGOAOTZWFWIWQAABWEEAWETZVDWHAHWEXPWGAAHBEVEVFVGAWOWPQANWNWDAWDTZANTZA
-      IOWMXOWKAWLPAIBEVEADWJCAWJTFVHAPTZVIVJVKAQTAWPTVLVMVPXLAGSASTZXKAKXBXJAAW
-      TBXAAXATAWTTEVNAWPXIAWDXHANXGRARTXRAISXFXTXCAXEPXCAVQADXDCAXDTFVHXSVIVJVK
-      XQVOVRVSVTVPWAWBWC $.
+      wceq nfss nfcri nfdc nfralxy nfcsb nfif nfmpt nfseq nfbr nf3an nfrexw nfv
+      nff1o nffv nfeq2 nfan nfex nfor nfiotaw nfcxfr ) ABCDUABGLZUBMZUCZHLBUDZU
+      FZHWEUEZNIOILZBUDZDWJCUGZPUHZUIZWDUJZJLZQUKZULZGOUMZRWDUNUOZBKLZUPZWPWDNI
+      SWJWDUQUKZDWJXAMZCUGZPUHZUIZRUJZMZVCZURZKUSZGSUMZUTZJVAJBCKHDGIVBXNAJWSXM
+      AWRAGOAOTZWFWIWQAABWEEAWETZVDWHAHWEXPWGAAHBEVEVFVGAWOWPQANWNWDAWDTZANTZAI
+      OWMXOWKAWLPAIBEVEADWJCAWJTFVHAPTZVIVJVKAQTAWPTVLVMVNXLAGSASTZXKAKXBXJAAWT
+      BXAAXATAWTTEVPAWPXIAWDXHANXGRARTXRAISXFXTXCAXEPXCAVOADXDCAXDTFVHXSVIVJVKX
+      QVQVRVSVTVNWAWBWC $.
   $}
 
   ${
@@ -126009,15 +126558,15 @@ $)
     nfcprod1 $p |- F/_ k prod_ k e. A B $=
       ( vm vj vy vn vx vf cv wa wbr cmul cz c1 cli cn nfcv nfan cuz cfv wss wdc
       cprod wcel wral cc0 cap cif cmpt cseq wex wrex cfz co wf1o cle csb wo cio
-      wceq df-proddc nfss nfcri nfdc nfralxy nfv nfmpt1 nfseq nfbr nfex nfrexxy
-      nff1o nfcsb1v nfif nfmpt nffv nfeq2 nfor nfiotaw nfcxfr ) CABCUEAEKZUAUBZ
-      UCZFKAUFZUDZFWDUGZLZGKZUHUIMZNCOCKAUFBPUJZUKZHKZULZWJQMZLZGUMZHWDUNZNWMWC
-      ULZIKZQMZLZLZEOUNZPWCUOUPZAJKZUQZXAWCNHRWNWCURMZCWNXGUBZBUSZPUJZUKZPULZUB
-      ZVBZLZJUMZERUNZUTZIVAIGABJFCEHVCXTCIXEXSCXDCEOCOSWIXCCWEWHCCAWDDCWDSZVDWG
-      CFWDYAWFCCFADVEVFVGTWSXBCWRCHWDYAWQCGWKWPCWKCVHCWOWJQCNWMWNCWNSCNSZCOWLVI
-      ZVJCQSZCWJSVKTVLVMCWTXAQCNWMWCCWCSZYBYCVJYDCXASVKTTVMXRCERCRSZXQCJXHXPCCX
-      FAXGCXGSCXFSDVNCXAXOCWCXNCNXMPCPSZYBCHRXLYFXICXKPXICVHCXJBVOYGVPVQVJYEVRV
-      STVLVMVTWAWB $.
+      wceq df-proddc nfss nfcri nfdc nfralxy nfv nfmpt1 nfseq nfbr nfrexw nff1o
+      nfex nfcsb1v nfif nfmpt nffv nfeq2 nfor nfiotaw nfcxfr ) CABCUEAEKZUAUBZU
+      CZFKAUFZUDZFWDUGZLZGKZUHUIMZNCOCKAUFBPUJZUKZHKZULZWJQMZLZGUMZHWDUNZNWMWCU
+      LZIKZQMZLZLZEOUNZPWCUOUPZAJKZUQZXAWCNHRWNWCURMZCWNXGUBZBUSZPUJZUKZPULZUBZ
+      VBZLZJUMZERUNZUTZIVAIGABJFCEHVCXTCIXEXSCXDCEOCOSWIXCCWEWHCCAWDDCWDSZVDWGC
+      FWDYAWFCCFADVEVFVGTWSXBCWRCHWDYAWQCGWKWPCWKCVHCWOWJQCNWMWNCWNSCNSZCOWLVIZ
+      VJCQSZCWJSVKTVNVLCWTXAQCNWMWCCWCSZYBYCVJYDCXASVKTTVLXRCERCRSZXQCJXHXPCCXF
+      AXGCXGSCXFSDVMCXAXOCWCXNCNXMPCPSZYBCHRXLYFXICXKPXICVHCXJBVOYGVPVQVJYEVRVS
+      TVNVLVTWAWB $.
   $}
 
   ${
@@ -126030,15 +126579,15 @@ $)
     nfcprod $p |- F/_ x prod_ k e. A B $=
       ( vm vj vz vn vy cv wa cmul cz c1 cli cn nfcv nfan cprod cuz cfv wss wcel
       vf wdc wral cc0 cap wbr cif cmpt cseq wex wrex cfz co wf1o cle csb wo cio
-      wceq df-proddc nfss nfcri nfdc nfralxy nfif nfmpt nfseq nfbr nfex nfrexxy
-      nfv nff1o nfcsb nffv nfeq2 nfor nfiotaw nfcxfr ) ABCDUABGLZUBUCZUDZHLBUEZ
-      UGZHWEUHZMZILZUIUJUKZNDODLBUEZCPULZUMZJLZUNZWKQUKZMZIUOZJWEUPZNWOWDUNZKLZ
-      QUKZMZMZGOUPZPWDUQURZBUFLZUSZXCWDNJRWPWDUTUKZDWPXIUCZCVAZPULZUMZPUNZUCZVD
-      ZMZUFUOZGRUPZVBZKVCKIBCUFHDGJVEYBAKXGYAAXFAGOAOSZWJXEAWFWIAABWEEAWESZVFWH
-      AHWEYDWGAAHBEVGVHVITXAXDAWTAJWEYDWSAIWLWRAWLAVPAWQWKQANWOWPAWPSANSZADOWNY
-      CWMACPADBEVGFAPSZVJVKZVLAQSZAWKSVMTVNVOAXBXCQANWOWDAWDSZYEYGVLYHAXCSVMTTV
-      OXTAGRARSZXSAUFXJXRAAXHBXIAXISAXHSEVQAXCXQAWDXPANXOPYFYEAJRXNYJXKAXMPXKAV
-      PADXLCAXLSFVRYFVJVKVLYIVSVTTVNVOWAWBWC $.
+      wceq df-proddc nfss nfcri nfdc nfralxy nfif nfmpt nfseq nfbr nfrexw nff1o
+      nfv nfex nfcsb nffv nfeq2 nfor nfiotaw nfcxfr ) ABCDUABGLZUBUCZUDZHLBUEZU
+      GZHWEUHZMZILZUIUJUKZNDODLBUEZCPULZUMZJLZUNZWKQUKZMZIUOZJWEUPZNWOWDUNZKLZQ
+      UKZMZMZGOUPZPWDUQURZBUFLZUSZXCWDNJRWPWDUTUKZDWPXIUCZCVAZPULZUMZPUNZUCZVDZ
+      MZUFUOZGRUPZVBZKVCKIBCUFHDGJVEYBAKXGYAAXFAGOAOSZWJXEAWFWIAABWEEAWESZVFWHA
+      HWEYDWGAAHBEVGVHVITXAXDAWTAJWEYDWSAIWLWRAWLAVPAWQWKQANWOWPAWPSANSZADOWNYC
+      WMACPADBEVGFAPSZVJVKZVLAQSZAWKSVMTVQVNAXBXCQANWOWDAWDSZYEYGVLYHAXCSVMTTVN
+      XTAGRARSZXSAUFXJXRAAXHBXIAXISAXHSEVOAXCXQAWDXPANXOPYFYEAJRXNYJXKAXMPXKAVP
+      ADXLCAXLSFVRYFVJVKVLYIVSVTTVQVNWAWBWC $.
   $}
 
   ${
@@ -133126,9 +133675,9 @@ $)
       dvds0 biimpd mprgbir wsbc dfsbcq2 sbcbii c0ex sbcie bitri bitrdi ad3antlr
       sbbid simpr nfs1v sbequ12 anbi12d rspce syl12anc ralrimi simplrl ad2antrr
       mpbiri exp31 cn simplll elnnnn0b sylanbrc simplrr sbsbc sylib cbvralv cmo
-      breq1 ad3antrrr anbi1i dfsbcq bitrid simpll nfsbxy nfrexxy imim2d ralimdv
-      jca rspc ad4antr sylan simpllr nn0zd zmodfz syl2anc rspcdva bezoutlemstep
-      mpd mp2d nfre1 rexbii imbi2i ralbii sylibr wo nn0nlt0 w3o ztri3or0 3orass
+      breq1 ad3antrrr jca anbi1i dfsbcq bitrid simpll nfsbxy nfrexw rspc imim2d
+      ralimdv ad4antr mpd sylan simpllr nn0zd zmodfz syl2anc rspcdva mp2d nfre1
+      bezoutlemstep rexbii imbi2i ralbii sylibr wo nn0nlt0 w3o ztri3or0 3orass
       orcomd ecased mpjaodan nn0sinds expd impcom ralrimiva ) CAKDUBZAKEUBZBAQZ
       KRUCZUDZERUEZUDZDRDUFZRUGZCUUOUUQCUUIUUNCAKPUBZQZUUJBDPUBZAQZKRUCZUDZERUE
       ZUDCAKFUBZQZUUJBDFUBZAQZKRUCZUDZERUEZUDZCUUIQZUUNUDPFUUPPFUHZUUSUVFUVDUVK
@@ -133150,20 +133699,20 @@ $)
       WGUUJUXJUURUYBUVTCUURUWCXEZAKPXFXGWRBUXGUAUFZUWKVJVCZUYDUUPVJVCZUYDUWFVJV
       CZQZUDZUARUEMUXFUYIFUARFUAUHZUWLUYEUXEUYHUWJUYDUWKVJXJUYJUXDUYFUWNUYGUWJU
       YDUUPVJXJUWJUYDUWFVJXJWMUOXHWFUXPAKUWFUVPXIVEZWAZQZCUYLQZUURBEUVPWAZDUYKW
-      AZAQZKRUCZUYMCUYLUXJCUWGUUJUYLUXRXKUXPUYLWJXTUXJUURUWGUUJUYLUYCXKUYMUVFUU
+      AZAQZKRUCZUYMCUYLUXJCUWGUUJUYLUXRXKUXPUYLWJXLUXJUURUWGUUJUYLUYCXKUYMUVFUU
       RBEPUBZDFUBZAQZKRUCZUDZUDZUYNUURUYRUDZUDFUVRUYKUWJUYKVAZUVFUYNVUCVUEVUFUV
       EUYLCAKFUYKWBUJVUFVUBUYRUURVUFVUAUYQKRVUAUYODUWJWAZAQVUFUYQUYTVUGAUYTUYSD
-      UWJWAVUGUYSDFXFUYSUYODUWJBEPXFWCWFXLVUFVUGUYPAUYODUWJUYKXMULXNUKUMUOUXPUX
-      JUYLVUDFUVRUEZUXJUWGUUJXOUXJUYLQUVSVUHUVTUVSUUSUWCUYLUVQUVSWJXKUVQUVSVUHU
+      UWJWAVUGUYSDFXFUYSUYODUWJBEPXFWCWFXMVUFVUGUYPAUYODUWJUYKXNULXOUKUMUOUXPUX
+      JUYLVUDFUVRUEZUXJUWGUUJXPUXJUYLQUVSVUHUVTUVSUUSUWCUYLUVQUVSWJXKUVQUVSVUHU
       DUVSUUSUWCUYLUVQUVLVUDFUVRUVQUVKVUCUVFUVJVUCEUVPRUURVUBEUURESVUAEKRERVFUY
-      TAEUYSDFEBEPWKXPAESTXQVGEPUHZUUJUURUVIVUBAEPKUIVUIUVHVUAKRVUIUVGUYTAVUIBU
-      YSDFVUIDSBEPWLWIULUKUOYAXRXSYBYJYCUYMUWFVNUGUXTUYKUVRUGUYMUWFUXJUWGUUJUYL
-      YDYEUXJUXTUWGUUJUYLUYAXKUWFUVPYFYGYHYKUXOUUJDUXJUWGDUWAUWCDUVTUUSDUVQUVSD
-      UVQDSUVLDFUVRDUVRVFUVFUVKDUVFDSUVJDERDRVFZUUJUVIDAKEDADSZXPZUVHDKRVUJUVGA
-      DBDFWKVUKTXQVGVHVGVHTUUSDSTUWCDSTUWGDSTVULTUXOUUJKUXJUWGKUWAUWCKUVTUUSKUV
-      QUVSKUVQKSUVLKFUVRKUVRVFUVFUVKKCUVEKCKSZAKFWKTUVJKERKRVFUUJUVIKUXIUVHKRYL
-      VGVHVGVHTCUURKVUMAKPWKTTUWCKSTUWGKSTUXITYIWTWPUVCUXNERUVBUXMUUJUVAUXLKRUU
-      TUXKABDPXFXLYMYNYOYPUVQUWBUWCYQZUVSUUSUVQVUNUVPUQVBVCZUVPYRUVQVUOVUNUVQVU
+      TAEUYSDFEBEPWKXQAESTXRVGEPUHZUUJUURUVIVUBAEPKUIVUIUVHVUAKRVUIUVGUYTAVUIBU
+      YSDFVUIDSBEPWLWIULUKUOXSXTYAYBYCYDUYMUWFVNUGUXTUYKUVRUGUYMUWFUXJUWGUUJUYL
+      YEYFUXJUXTUWGUUJUYLUYAXKUWFUVPYGYHYIYJUXOUUJDUXJUWGDUWAUWCDUVTUUSDUVQUVSD
+      UVQDSUVLDFUVRDUVRVFUVFUVKDUVFDSUVJDERDRVFZUUJUVIDAKEDADSZXQZUVHDKRVUJUVGA
+      DBDFWKVUKTXRVGVHVGVHTUUSDSTUWCDSTUWGDSTVULTUXOUUJKUXJUWGKUWAUWCKUVTUUSKUV
+      QUVSKUVQKSUVLKFUVRKUVRVFUVFUVKKCUVEKCKSZAKFWKTUVJKERKRVFUUJUVIKUXIUVHKRYK
+      VGVHVGVHTCUURKVUMAKPWKTTUWCKSTUWGKSTUXITYLWTWPUVCUXNERUVBUXMUUJUVAUXLKRUU
+      TUXKABDPXFXMYMYNYOYPUVQUWBUWCYQZUVSUUSUVQVUNUVPUQVBVCZUVPYRUVQVUOVUNUVQVU
       OUWBUWCYSZVUOVUNYQUVQUVPVNUGVUPUVPVOUVPYTVPVUOUWBUWCUUAXGUUBUUCWRUUDWTUUE
       UUFUUGUUH $.
   $}
@@ -143038,33 +143587,33 @@ $)
       $( Lemma for ~ ctiunct .  (Contributed by Jim Kingdon, 28-Oct-2023.) $)
       ctiunctlemfo $p |- ( ph -> H : U -onto-> U_ x e. A B ) $=
         ( vu vv vw vr ciun wf cv cfv wceq wrex wral wfo ctiunctlemf wcel wa nfv
-        nfiu1 nfcri nfan nfcv nffv nfeq2 nfrexxy simplll simplr foelrn sylancom
-        syl2anc ad4antr simpllr cop ccnv com c1st c2nd csb cxp wf1o f1ocnv f1of
-        syl ad5antr wss simprl sseldd simp-5l adantr ffvelcdmd f1ocnvfv2 fveq2d
-        simplrl opelxpd op1st eqtrdi eqeltrd op2nd simprr csbeq1d csbid 3eltr4d
-        vex eqtr4d jca 2fveq3 eleq12d anbi12d sylanbrc fveq12d simplrr eqeltrrd
-        eleq1d elrab2 fvmptd3 3eqtr4rd fveq2 rspceeqv rexlimddv eliun r19.29af2
-        biimpi adantl ralrimiva dffo3 ) AHBDEUIZLUJUEUKZUFUKZLULZUMZUFHUNZUEYHU
-        OHYHLUPABCDEFGHIJKLMNOPQRSTUAUBUQAYMUEYHAYIYHURZUSZYIEURZYMBDAYNBABUTBU
-        EYHBDEVAVBVCYLBUFHUDBYIYKBYJLUCBYJVDVEVFVGYOBUKZDURZUSZYPUSZYIUGUKZKULZ
-        UMZYMUGGYSYPGEKUPZUUCUGGUNYTAYRUUDAYNYRYPVHYOYRYPVISVLUGGEYIKVJVKYTUUAG
-        URZUUCUSZUSZYQUHUKZJULZUMZYMUHFUUGFDJUPZYRUUJUHFUNAUUKYNYRYPUUFPVMYOYRY
-        PUUFVNZUHFDYQJVJVLUUGUUHFURZUUJUSZUSZUUHUUAVOZMVPZULZHURZYIUURLULZUMYMU
-        UOUURVQURUURMULZVRULZFURZUVAVSULZBUVBJULZGVTZURZUSZUUSUUOVQVQWAZVQUUPUU
-        QAUVIVQUUQUJZYNYRYPUUFUUNAUVIVQUUQWBZUVJAVQUVIMWBZUVKTVQUVIMWCWEUVIVQUU
-        QWDWEWFUUOUUHUUAVQVQUUOFVQUUHAFVQWGYNYRYPUUFUUNNWFUUGUUMUUJWHZWIUUOGVQU
-        UAUUOAYRGVQWGAYNYRYPUUFUUNWJZUUGYRUUNUULWKQVLYTUUEUUCUUNWOZWIWPZWLUUOUV
-        CUVGUUOUVBUUHFUUOUVBUUPVRULUUHUUOUVAUUPVRUUOUVLUUPUVIURUVAUUPUMUUOAUVLU
-        VNTWEUVPVQUVIUUPMWMVLZWNUUHUUAUHXEZUGXEZWQWRZUVMWSUUOUUAGUVDUVFUVOUUOUV
-        DUUPVSULUUAUUOUVAUUPVSUVQWNUUHUUAUVRUVSWTWRZUUOUVFBYQGVTGUUOBUVEYQGUUOU
-        VEUUIYQUUOUVBUUHJUVTWNUUGUUMUUJXAXFZXBBGXCWRXDXGCUKZMULZVRULZFURZUWDVSU
-        LZBUWEJULZGVTZURZUSUVHCUURVQHUWCUURUMZUWFUVCUWJUVGUWKUWEUVBFUWCUURVRMXH
-        ZXOUWKUWGUVDUWIUVFUWCUURVSMXHUWKBUWHUVEGUWKUWEUVBJUWLWNXBXIXJUAXPXKZUUO
-        UVDBUVEKVTZULZUUBUUTYIUUOUVDUUAUWNKUUOUWNBYQKVTKUUOBUVEYQKUWBXBBKXCWRUW
-        AXLZUUOIUURIUKZMULZVSULZBUWRVRULZJULZKVTZULUWOHLEUBUWQUURUMZUWSUVDUXBUW
-        NUXCBUXAUVEKUXCUWTUVBJUWQUURVRMXHWNXBUWQUURVSMXHXLUWMUUOYIUWOEUUOYIUUBU
-        WOYTUUEUUCUUNXMZUWPXFYSYPUUFUUNVNXNXQUXDXRUFUURHYKUUTYIYJUURLXSXTVLYAYA
-        YNYPBDUNZAYNUXEBYIDEYBYDYEYCYFUFUEHYHLYGXK $.
+        nfiu1 nfcri nfan nfcv nffv nfeq2 nfrexw simplll simplr syl2anc sylancom
+        foelrn ad4antr simpllr cop ccnv com c1st c2nd csb cxp wf1o f1of ad5antr
+        f1ocnv syl wss simprl sseldd simp-5l adantr simplrl ffvelcdmd f1ocnvfv2
+        opelxpd fveq2d op1st eqtrdi eqeltrd op2nd simprr eqtr4d csbeq1d 3eltr4d
+        vex csbid 2fveq3 eleq1d eleq12d anbi12d elrab2 sylanbrc fveq12d simplrr
+        jca eqeltrrd fvmptd3 3eqtr4rd fveq2 rspceeqv rexlimddv biimpi r19.29af2
+        eliun adantl ralrimiva dffo3 ) AHBDEUIZLUJUEUKZUFUKZLULZUMZUFHUNZUEYHUO
+        HYHLUPABCDEFGHIJKLMNOPQRSTUAUBUQAYMUEYHAYIYHURZUSZYIEURZYMBDAYNBABUTBUE
+        YHBDEVAVBVCYLBUFHUDBYIYKBYJLUCBYJVDVEVFVGYOBUKZDURZUSZYPUSZYIUGUKZKULZU
+        MZYMUGGYSYPGEKUPZUUCUGGUNYTAYRUUDAYNYRYPVHYOYRYPVISVJUGGEYIKVLVKYTUUAGU
+        RZUUCUSZUSZYQUHUKZJULZUMZYMUHFUUGFDJUPZYRUUJUHFUNAUUKYNYRYPUUFPVMYOYRYP
+        UUFVNZUHFDYQJVLVJUUGUUHFURZUUJUSZUSZUUHUUAVOZMVPZULZHURZYIUURLULZUMYMUU
+        OUURVQURUURMULZVRULZFURZUVAVSULZBUVBJULZGVTZURZUSZUUSUUOVQVQWAZVQUUPUUQ
+        AUVIVQUUQUJZYNYRYPUUFUUNAUVIVQUUQWBZUVJAVQUVIMWBZUVKTVQUVIMWEWFUVIVQUUQ
+        WCWFWDUUOUUHUUAVQVQUUOFVQUUHAFVQWGYNYRYPUUFUUNNWDUUGUUMUUJWHZWIUUOGVQUU
+        AUUOAYRGVQWGAYNYRYPUUFUUNWJZUUGYRUUNUULWKQVJYTUUEUUCUUNWLZWIWOZWMUUOUVC
+        UVGUUOUVBUUHFUUOUVBUUPVRULUUHUUOUVAUUPVRUUOUVLUUPUVIURUVAUUPUMUUOAUVLUV
+        NTWFUVPVQUVIUUPMWNVJZWPUUHUUAUHXEZUGXEZWQWRZUVMWSUUOUUAGUVDUVFUVOUUOUVD
+        UUPVSULUUAUUOUVAUUPVSUVQWPUUHUUAUVRUVSWTWRZUUOUVFBYQGVTGUUOBUVEYQGUUOUV
+        EUUIYQUUOUVBUUHJUVTWPUUGUUMUUJXAXBZXCBGXFWRXDXOCUKZMULZVRULZFURZUWDVSUL
+        ZBUWEJULZGVTZURZUSUVHCUURVQHUWCUURUMZUWFUVCUWJUVGUWKUWEUVBFUWCUURVRMXGZ
+        XHUWKUWGUVDUWIUVFUWCUURVSMXGUWKBUWHUVEGUWKUWEUVBJUWLWPXCXIXJUAXKXLZUUOU
+        VDBUVEKVTZULZUUBUUTYIUUOUVDUUAUWNKUUOUWNBYQKVTKUUOBUVEYQKUWBXCBKXFWRUWA
+        XMZUUOIUURIUKZMULZVSULZBUWRVRULZJULZKVTZULUWOHLEUBUWQUURUMZUWSUVDUXBUWN
+        UXCBUXAUVEKUXCUWTUVBJUWQUURVRMXGWPXCUWQUURVSMXGXMUWMUUOYIUWOEUUOYIUUBUW
+        OYTUUEUUCUUNXNZUWPXBYSYPUUFUUNVNXPXQUXDXRUFUURHYKUUTYIYJUURLXSXTVJYAYAY
+        NYPBDUNZAYNUXEBYIDEYDYBYEYCYFUFUEHYHLYGXL $.
     $}
   $}
 
@@ -143102,22 +143651,22 @@ $)
       ( vk vn vz vw com cv wfo wex wcel cfv eqid cxp wf1o ciun c1o cdju cen wbr
       vj vu xpomen ensymi bren mpbi a1i wa wss wdc wral w3a c1st cinl cima crab
       c2nd ccnv ccom ctssdccl simp1d adantr simp3d simp2d adantlr ctiunctlemuom
-      csb simpr cmpt nfv nfcsb1v nfel2 nfan nfcv nfrabxy nffv ctiunctlemfo omex
-      nfmpt rabex mptex foeq1 spcev ctiunctlemudc wceq sseq1 foeq2 exbidv eleq2
-      syl dcbid ralbidv 3anbi123d syl3anc ctssdc cbvexv bitri sylib exlimddv )
-      ANNNUAZUHOZUBZNBCDUCZUDUEZEOZPZEQZUHXIUHQZANXGUFUGXOXGNUJUKNXGUHULUMUNAXI
-      UOZUIOZNUPZXQXJJOZPZJQZKOZXQRZUQZKNURZUSZUIQZXNXPLOXHSZUTSZMOZFSVACVBRMNV
-      CZRZYHVDSZBYIVAVEZFVFZSZYJGSVADVBRMNVCZVNZRZUOZLNVCZNUPZUUAXJXSPZJQZYBUUA
-      RZUQZKNURZYGXPBLCDYKYQUUAKYOYNGVFZXHAYKNUPZXIAUUIYKCYOPZYBYKRUQKNURZAMCYK
-      KFYOHYKTYOTVGZVHVIZAUUKXIAUUIUUJUUKUULVJVIZAUUJXIAUUIUUJUUKUULVKVIZABOCRZ
-      YQNUPZXIAUUPUOZUUQYQDUUHPZYBYQRUQKNURZUURMDYQKGUUHIYQTUUHTVGZVHVLZAUUPUUT
-      XIUURUUQUUSUUTUVAVJVLZAUUPUUSXIUURUUQUUSUUTUVAVKVLZAXIVOZUUATZVMXPUUAXJKU
-      UAYBXHSZVDSZBUVGUTSYOSZUUHVNZSZVPZPZUUDXPBLCDYKYQUUAKYOUUHUVLXHUUMUUNUUOU
-      VBUVCUVDUVEUVFUVLTBKUUAUVKYTBLNYLYSBYLBVQBYMYRBYPYQVRVSVTBNWAWBZBUVHUVJBU
-      VIUUHVRBUVHWAWCWFUVNWDUUCUVMJUVLKUUAUVKYTLNWEWGZWHUUAXJXSUVLWIWJWQXPBLCDY
-      KYQUUAKYOUUHXHUUMUUNUUOUVBUVCUVDUVEUVFWKYFUUBUUDUUGUSUIUUAUVOXQUUAWLZXRUU
-      BYAUUDYEUUGXQUUANWMUVPXTUUCJXQUUAXJXSWNWOUVPYDUUFKNUVPYCUUEXQUUAYBWPWRWSW
-      TWJXAYGNXKXSPZJQXNXJJKUIXBUVQXMJENXKXSXLWIXCXDXEXF $.
+      csb simpr cmpt nfv nfcsb1v nfel2 nfan nfcv nfrabw nffv nfmpt ctiunctlemfo
+      omex rabex mptex foeq1 spcev ctiunctlemudc sseq1 foeq2 exbidv eleq2 dcbid
+      syl wceq ralbidv 3anbi123d syl3anc ctssdc cbvexv bitri sylib exlimddv ) A
+      NNNUAZUHOZUBZNBCDUCZUDUEZEOZPZEQZUHXIUHQZANXGUFUGXOXGNUJUKNXGUHULUMUNAXIU
+      OZUIOZNUPZXQXJJOZPZJQZKOZXQRZUQZKNURZUSZUIQZXNXPLOXHSZUTSZMOZFSVACVBRMNVC
+      ZRZYHVDSZBYIVAVEZFVFZSZYJGSVADVBRMNVCZVNZRZUOZLNVCZNUPZUUAXJXSPZJQZYBUUAR
+      ZUQZKNURZYGXPBLCDYKYQUUAKYOYNGVFZXHAYKNUPZXIAUUIYKCYOPZYBYKRUQKNURZAMCYKK
+      FYOHYKTYOTVGZVHVIZAUUKXIAUUIUUJUUKUULVJVIZAUUJXIAUUIUUJUUKUULVKVIZABOCRZY
+      QNUPZXIAUUPUOZUUQYQDUUHPZYBYQRUQKNURZUURMDYQKGUUHIYQTUUHTVGZVHVLZAUUPUUTX
+      IUURUUQUUSUUTUVAVJVLZAUUPUUSXIUURUUQUUSUUTUVAVKVLZAXIVOZUUATZVMXPUUAXJKUU
+      AYBXHSZVDSZBUVGUTSYOSZUUHVNZSZVPZPZUUDXPBLCDYKYQUUAKYOUUHUVLXHUUMUUNUUOUV
+      BUVCUVDUVEUVFUVLTBKUUAUVKYTBLNYLYSBYLBVQBYMYRBYPYQVRVSVTBNWAWBZBUVHUVJBUV
+      IUUHVRBUVHWAWCWDUVNWEUUCUVMJUVLKUUAUVKYTLNWFWGZWHUUAXJXSUVLWIWJWQXPBLCDYK
+      YQUUAKYOUUHXHUUMUUNUUOUVBUVCUVDUVEUVFWKYFUUBUUDUUGUSUIUUAUVOXQUUAWRZXRUUB
+      YAUUDYEUUGXQUUANWLUVPXTUUCJXQUUAXJXSWMWNUVPYDUUFKNUVPYCUUEXQUUAYBWOWPWSWT
+      WJXAYGNXKXSPZJQXNXJJKUIXBUVQXMJENXKXSXLWIXCXDXEXF $.
   $}
 
   ${
@@ -183500,6 +184049,9 @@ htmldef "MndHom" as " MndHom ";
 htmldef "SubMnd" as "SubMnd";
   althtmldef "SubMnd" as "SubMnd";
   latexdef "SubMnd" as "\mathrm{SubMnd}";
+htmldef "Word" as "Word ";
+  althtmldef "Word" as "Word ";
+  latexdef "Word" as "\mathrm{Word}";
 htmldef "~QG" as " ~<sub><i>QG</i></sub> ";
   althtmldef "~QG" as " ~<sub><i>QG</i></sub> ";
   latexdef "~QG" as " \sim_{QG} ";
@@ -186680,16 +187232,16 @@ $)
       ( vz wi com wral wa wcel wceq nfv cv wal c0 csuc wrex wo bj-nn0suc pm3.21
       ad2antrr pm2.04 ralimi2 imim2 ral2imi imp sylan2 r19.29 sucid mpbiri ax-1
       vex eleq2 pm2.27 anim12ii mpdan impcom reximi syl adantll orim12d alrimiv
-      ex syl7bi nfim nfan nfcv nfrexxy nfor biimprd imim12d biimpd eqtr expimpd
-      eleq1 rexlimdvw jaod setindis df-ral sylibr ) BCDNZFOPZQZEUAZORZANZEUBZAE
-      OPWKFUAZORZCNZFMUAZPZWSORZWSUCSZBQZWSWPUDZSZDQZFOUEZUFZNZNZMUBWOWKXJMXAXB
-      XEFOUEZUFZWKWTXHFWSUGWKWTXLXHNWKWTQXBXCXKXGBXBXCNWJWTBXBUHUIWJWTXKXGNZBWJ
-      WTQWPWSRZDNZFOPZXMWTWJXNCNZFOPZXPWRXQFWSOXNWQCUJUKWJXRXPWIXQXOFOCDXNULUMU
-      NUOXPXKXGXPXKQXOXEQZFOUEXGXOXEFOUPXSXFFOXEXOXFXEXNXOXFNXEXNWPXDRWPFUTUQWS
-      XDWPVAURXEXOXEXNDXEXOUSXNDVBVCVDVEVFVGVKVGVHVIVKVLVJWNWRXIEMFWQCEWQETHVMX
-      AXHEXAETXCXGEXBBEXBETGVNXFEFOEOVOXEDEXEETIVNVPVQVMWNMTWRMTWLWPSZWQWMACXTW
-      MWQWLWPOWCVRKVSWLWSSZWMXAXHAYAWMXAWLWSOWCVTYAXCAXGYAXBBAYAXBQWLUCSBANWLWS
-      UCWAJVGWBYAXFAFOYAXEDAYAXEQWLXDSDANWLWSXDWALVGWBWDWEVSWFVGAEOWGWH $.
+      ex syl7bi nfim nfan nfcv nfrexw nfor eleq1 biimprd imim12d biimpd expimpd
+      eqtr rexlimdvw jaod setindis df-ral sylibr ) BCDNZFOPZQZEUAZORZANZEUBZAEO
+      PWKFUAZORZCNZFMUAZPZWSORZWSUCSZBQZWSWPUDZSZDQZFOUEZUFZNZNZMUBWOWKXJMXAXBX
+      EFOUEZUFZWKWTXHFWSUGWKWTXLXHNWKWTQXBXCXKXGBXBXCNWJWTBXBUHUIWJWTXKXGNZBWJW
+      TQWPWSRZDNZFOPZXMWTWJXNCNZFOPZXPWRXQFWSOXNWQCUJUKWJXRXPWIXQXOFOCDXNULUMUN
+      UOXPXKXGXPXKQXOXEQZFOUEXGXOXEFOUPXSXFFOXEXOXFXEXNXOXFNXEXNWPXDRWPFUTUQWSX
+      DWPVAURXEXOXEXNDXEXOUSXNDVBVCVDVEVFVGVKVGVHVIVKVLVJWNWRXIEMFWQCEWQETHVMXA
+      XHEXAETXCXGEXBBEXBETGVNXFEFOEOVOXEDEXEETIVNVPVQVMWNMTWRMTWLWPSZWQWMACXTWM
+      WQWLWPOVRVSKVTWLWSSZWMXAXHAYAWMXAWLWSOVRWAYAXCAXGYAXBBAYAXBQWLUCSBANWLWSU
+      CWCJVGWBYAXFAFOYAXEDAYAXEQWLXDSDANWLWSXDWCLVGWBWDWEVTWFVGAEOWGWH $.
 
     bj-findisg.nfa $e |- F/_ x A $.
     bj-findisg.nfterm $e |- F/ x ta $.
@@ -186796,7 +187348,7 @@ $)
        (New usage is discouraged.) $)
     strcollnfALT $p |- ( A. x e. a E. y ph ->
                  E. b ( A. x e. a E. y e. b ph /\ A. y e. b E. x e. a ph ) ) $=
-      ( vz wex cv wral wrex wa strcoll2 nfcv nfrexxy nfralxy nfan nfv weq rexeq
+      ( vz wex cv wral wrex wa strcoll2 nfcv nfrexw nfralxy nfan nfv weq rexeq
       ralbidv raleq anbi12d cbvex sylib ) ACHBDIZJACGIZKZBUFJZABUFKZCUGJZLZGHAC
       EIZKZBUFJZUJCUMJZLZEHABCDGMULUQGEUIUKEUHEBUFEUFNZAECUGEUGNZFOPUJECUGUSAEB
       UFURFOPQUOUPGUOGRUPGRQGESZUIUOUKUPUTUHUNBUFACUGUMTUAUJCUGUMUBUCUDUE $.
