@@ -57056,6 +57056,38 @@ $)
     $}
   $}
 
+  ${
+    $d w x y z A $.  $d w x y z F $.  $d w x y z G $.  $d w x y z ph $.
+    $d w x y z H $.  $d w x y z K $.  $d w x y z O $.  $d w x y z R $.
+    $d w x y z S $.  $d w x y z T $.  $d V x y $.  $d W x y $.
+    caofdi.1 $e |- ( ph -> A e. V ) $.
+    caofdi.2 $e |- ( ph -> F : A --> K ) $.
+    caofdi.3 $e |- ( ph -> G : A --> S ) $.
+    caofdi.4 $e |- ( ph -> H : A --> S ) $.
+    caofdig.r $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x R y ) e. V ) $.
+    ${
+      caofdig.t $e |- ( ( ph /\ ( x e. K /\ y e. S ) ) -> ( x T y ) e. W ) $.
+      caofdi.5 $e |- ( ( ph /\ ( x e. K /\ y e. S /\ z e. S ) ) ->
+                          ( x T ( y R z ) ) = ( ( x T y ) O ( x T z ) ) ) $.
+      $( Transfer a distributive law to the function operation.  (Contributed
+         by Mario Carneiro, 26-Jul-2014.) $)
+      caofdig $p |- ( ph ->
+        ( F oF T ( G oF R H ) ) = ( ( F oF T G ) oF O ( F oF T H ) ) ) $=
+        ( vw cv cfv cmpt cof wcel w3a wceq adantlr ffvelcdmda caovdid mpteq2dva
+        co wa oveq2 eleq1d wral oveq1 ralbidv ralrimivva adantr rspcdva feqmptd
+        offval2 3eqtr4d ) AUCEUCUDZIUEZVHJUEZVHKUEZFUOZHUOZUFUCEVIVJHUOZVIVKHUO
+        ZMUOZUFIJKFUGUOZHUGZUOIJVRUOZIKVRUOZMUGUOAUCEVMVPAVHEUHZUPZBCDVIVJVKGFH
+        MLABUDZLUHCUDZGUHDUDZGUHUIWCWDWEFUOHUOWCWDHUOZWCWEHUOMUOUJWAUBUKAELVHIQ
+        ULZAEGVHJRULZAEGVHKSULZUMUNAUCEVIVLHIVQNLNPWGWBVJWDFUOZNUHZVLNUHCGVKWDV
+        KUJZWJVLNWDVKVJFUQURWBWCWDFUOZNUHZCGUSZWKCGUSBGVJWCVJUJZWNWKCGWPWMWJNWC
+        VJWDFUTURVAAWOBGUSWAAWNBCGGTVBVCWHVDWIVDAUCELIQVEZAUCEVJVKFJKNGGPWHWIAU
+        CEGJRVEZAUCEGKSVEZVFVFAUCEVNVOMVSVTNOOPWBVIWDHUOZOUHZVNOUHCGVJWDVJUJWTV
+        NOWDVJVIHUQURWBWFOUHZCGUSZXACGUSBLVIWCVIUJZXBXACGXDWFWTOWCVIWDHUTURVAAX
+        CBLUSWAAXBBCLGUAVBVCWGVDZWHVDWBXAVOOUHCGVKWLWTVOOWDVKVIHUQURXEWIVDAUCEV
+        IVJHIJNLGPWGWHWQWRVFAUCEVIVKHIKNLGPWGWIWQWSVFVFVG $.
+    $}
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
