@@ -128,6 +128,8 @@ then extended without justification to statements about infinite collections.
   <LI> <A HREF="#overview">Overview of intuitionistic logic</A></LI>
   <LI> <A HREF="#overview2">Overview of this work</A></LI>
   <LI> <A HREF="#axioms">The axioms</A></LI>
+  <li><a href="#flavors">Different flavors of constructive mathematics</a></li>
+  <li><a href="#existence">A note on existence</a></li>
   <LI> <A HREF="#theorems">Some theorems</A></LI>
   <LI> <A HREF="#intuitionize">How to intuitionize classical proofs</A></LI>
   <LI> <A HREF="#setmm">Metamath Proof Explorer cross reference</A></LI>
@@ -801,6 +803,39 @@ following table ` RR ` is the real numbers and ` DECID ph ` is
 </tr>
 
 </table>
+
+<P></P><HR NOSHADE SIZE=1><A NAME="existence"></A><B><FONT COLOR="#006633">A
+note on existence</FONT></B>
+
+<p>When we mathematically say something exists, there are at least three
+things that might mean:</p>
+
+<ul>
+
+<li><b>explicit existence</b>: we can demonstrate what the thing is.
+Example: in ~ ctssdccl we show a mapping ` G ` and specify explicitly,
+via a hypothesis used as a local definition, what it is (contrast
+with ~ ctssdc which is using truncated existence). Our notation
+for explicit existence is giving a class variable as in this example.</li>
+
+<li><b>truncated existence</b>: we can demonstrate there is such a thing,
+but we do not expose what it is. We represent this by ` E. ` .
+Example: because the existence for ` g ` in ~ omiunct is truncated,
+we need countable choice to get explicit existence and thus apply
+~ ctiunct which requires explicit existence. Two equivalent notations
+for "class ` A ` (truncatedly) exists" can be seen at ~ isset .</li>
+
+<li><b>classical existence</b>: there is no way that such a thing can fail
+to exist.  The wording in the previous sentence may look like a double
+negation, and indeed ` -. -. E.` is our notation for classical
+existence. Example: ~ ismkvnex concerns the statement
+that classical existence implies truncated existence in a particular
+context.</li>
+
+</ul>
+
+<p>For more on these topics, see for example [HoTT] especially
+section 3.10.</p>
 
 <P></P><HR NOSHADE SIZE=1><A NAME="theorems"></A><B><FONT COLOR="#006633">A
 Theorem Sampler</FONT></B>&nbsp;&nbsp;&nbsp;
