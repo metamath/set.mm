@@ -130566,6 +130566,24 @@ $)
     AIEZBCDZTBKDZBCDZUWDUVIYLYMYAUWFNVDOYNIBUIPUWGUWEBCBTKDZEUWGUWEBTOXNUNUWIIB
     TIOXNVDXOXPUSQUTTUDLYLYQUWHUWDNXNOYRTBBUKPVCQXGXQUJ $.
 
+  ${
+    $d A q $.
+    $( The sine of a positive irrational number is less than its argument.
+       Here irrational means apart from any rational number.  (Contributed by
+       Mario Carneiro, 29-Jul-2014.) $)
+    sinltxirr $p |- ( ( A e. RR+ /\ A. q e. QQ A =//= q )
+        -> ( sin ` A ) < A ) $=
+      ( wcel cap wbr cq wa c1 clt cc0 co cr cle adantr 1red simpr wb 1re simprd
+      c3 crp cv wral csin cfv cioc rpre rpgt0 ad2antrr ltled cxr w3a 0xr elioc2
+      mp2an syl3anbrc cexp cdiv cmin sin01bnd syl resincld sinbnd lelttrd breq2
+      cneg wo cz 1z zq mp1i rspcdva reaplt sylancl mpbid mpjaodan ) AUACZABUBZD
+      EZBFUCZGZAHIEZAUDUEZAIEZHAIEZWAWBGZAJHUFKCZWDWFALCZJAIEZAHMEZWGWAWHWBVQWH
+      VTAUGNZNZVQWIVTWBAUHUIWFAHWLWFOWAWBPUJJUKCHLCZWGWHWIWJULQUMRJHAUNUOUPWGAA
+      TUQKTURKUSKWCIEWDAUTSVAWAWEGZWCHAWNAWAWHWEWKNZVBWNOWOWNWHWCHMEZWOWHHVFWCM
+      EWPAVCSVAWAWEPVDWAAHDEZWBWEVGZWAVSWQBFHVRHADVEVQVTPHVHCHFCWAVIHVJVKVLWAWH
+      WMWQWRQWKRAHVMVNVOVP $.
+  $}
+
   $( The sine of a positive real number less than or equal to 1 is positive.
      (Contributed by Paul Chapman, 19-Jan-2008.)  (Revised by Wolf Lammen,
      25-Sep-2020.) $)

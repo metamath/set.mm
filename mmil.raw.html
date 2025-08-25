@@ -9986,13 +9986,28 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>~ tanaddap</TD>
 </TR>
 
-<TR>
-  <TD>sinltx</TD>
-  <TD>~ sin01bnd , ~ sinbnd</TD>
-  <TD>Although we can prove the ` A <_ 1 ` case (see ~ sin01bnd )
-  or the ` 1 < A ` case (from ~ sinbnd ), set.mm uses real number
-  trichotomy to combine those cases.</TD>
-</TR>
+<tr>
+  <td rowspan="4">sinltx</td>
+  <td>~ sin01bnd</td>
+  <td>if you know that ` A <_ 1 `</td>
+</tr>
+
+<tr>
+  <td>~ sinbnd</td>
+  <td>if you know that ` 1 < A `</td>
+</tr>
+
+<tr>
+  <td>~ sinltxirr</td>
+  <td>if ` A ` is irrational</td>
+</tr>
+
+<tr>
+  <td><i>in general</i></td>
+  <td>it seems likely there would be a way to prove
+  sinltx (for example, if we had proofs for overlapping
+  intervals), but we don't have a proof yet</td>
+</tr>
 
 <TR>
   <TD id="missing-ruc">ruc</TD>
