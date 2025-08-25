@@ -99479,7 +99479,8 @@ $)
      rational.  Note that by "not rational" we mean the negation of "is
      rational" (whereas "irrational" is often defined to mean apart from any
      rational number - given excluded middle these two definitions would be
-     equivalent).  (Contributed by NM, 7-Nov-2008.) $)
+     equivalent).  For a similar theorem with irrational in place of not
+     rational, see ~ irrmulap .  (Contributed by NM, 7-Nov-2008.) $)
   irrmul $p |- ( ( A e. ( RR \ QQ ) /\ B e. QQ /\ B =/= 0 )
                 -> ( A x. B ) e. ( RR \ QQ ) ) $=
     ( cr cq cdif wcel cc0 wne w3a cmul co wn wa eldif remulcl wi 3expb 3ad2ant2
@@ -99491,6 +99492,26 @@ $)
     OVPWIVQBUDQUEUFWGWHADWBVOVPWHAUGWBVOVPIZABWBVOATFVPAUHUIVOWBBTFVPBUJRWJBGUK
     VFZVPWBVOVPULVOWBWKVPUMZVPVOGDFZWLGUNFWMUOGUPUQBGURUSRUTVAQVBVGVCVDVEVHVIVJ
     VKVQCDNVL $.
+
+  ${
+    $d A q $.  $d B q $.  $d Q q $.
+    irrmulap.a $e |- ( ph -> A e. RR ) $.
+    irrmulap.aq $e |- ( ph -> A. q e. QQ A =//= q ) $.
+    irrmulap.b $e |- ( ph -> B e. QQ ) $.
+    irrmulap.b0 $e |- ( ph -> B =/= 0 ) $.
+    irrmulap.q $e |- ( ph -> Q e. QQ ) $.
+    $( The product of an irrational with a nonzero rational is irrational.  By
+       irrational we mean apart from any rational number.  For a similar
+       theorem with not rational in place of irrational, see ~ irrmul .
+       (Contributed by Jim Kingdon, 25-Aug-2025.) $)
+    irrmulap $p |- ( ph -> ( A x. B ) =//= Q ) $=
+      ( co cap wbr cmul cq wcel cc0 cc qcn syl cdiv cv breq2 wne qdivcl syl3anc
+      rspcdva wb recnd apsym syl2anc mpbird cz 0z ax-mp qapne sylancl apdivmuld
+      zq mulcomd breq1d bitrd mpbid ) ADCUAKZBLMZBCNKZDLMZAVEBVDLMZABEUBZLMVHEO
+      VDVIVDBLUCGADOPZCOPZCQUDZVDOPZJHIDCUEUFZUGAVDRPZBRPVEVHUHAVMVOVNVDSTABFUI
+      ZVDBUJUKULAVECBNKZDLMVGADCBAVJDRPJDSTAVKCRPHCSTZVPACQLMZVLIAVKQOPZVSVLUHH
+      QUMPVTUNQUSUOCQUPUQULURAVQVFDLACBVRVPUTVAVBVC $.
+  $}
 
   ${
     $d A x y z $.
