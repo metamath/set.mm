@@ -93558,6 +93558,31 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Function operation analogue theorems
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d A x y $.  $d F x y $.  $d G x y $.  $d V x y $.
+    $( Function analogue of ~ negsub .  (Contributed by Mario Carneiro,
+       24-Jul-2014.) $)
+    ofnegsub $p |- ( ( A e. V /\ F : A --> CC /\ G : A --> CC ) ->
+      ( F oF + ( ( A X. { -u 1 } ) oF x. G ) ) = ( F oF - G ) ) $=
+      ( vx vy wcel cc wf cv cfv caddc cneg c1 cmul cof co cmin adantl a1i addcl
+      w3a csn cxp simp2 mulcl ax-1cn negcli fconst6 simp3 simp1 inidm off subcl
+      wa eqidd ffnd ffvelcdmda mulcld ofc1g mulm1d negsubd subcld ofvalg eqtr4d
+      eqtrd offeq ) ADGZAHBIZAHCIZUBZEFAAAEJZBKZLHHHVLCKZMZBANMZUCUDZCOPQZBCRPQ
+      ZDDVLHGFJZHGUOZVLVTLQHGVKVLVTUASVHVIVJUEZVKEFAAAOHHHVQCDDWAVLVTOQHGVKVLVT
+      UFSAHVQIVKAVPHNUGUHZUITVHVIVJUJZVHVIVJUKZWEAULZUMWEWEWFVKEFAAARHHHBCDDWAV
+      LVTRQHGVKVLVTUNSWBWDWEWEWFUMVKVLAGUOZVMUPZWGVLVRKVPVNOQVOVKAVPVNOHCDHVLWE
+      VPHGZVKWCTVKAHCWDUQZWGVNUPZWGVPVNWIWGWCTVKAHVLCWDURZUSUTWGVNWLVAVFWGVMVOL
+      QVMVNRQVLVSKWGVMVNVKAHVLBWBURZWLVBVKAAVMVNRAHBCDDVLVKAHBWBUQWJWEWEWFWHWKW
+      GVMVNWMWLVCVDVEVG $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Integer sets
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
