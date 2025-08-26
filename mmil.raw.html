@@ -14886,6 +14886,79 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>basellem1</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof should work with small changes</td>
+</tr>
+
+<tr>
+  <td>basellem2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof would apparently need changes related to the
+  support of a function (and it would depend how we handle the degree
+  of a polynomial)</td>
+</tr>
+
+<tr>
+  <td>basellem3</td>
+  <td><i>none</i></td>
+  <td>it would seem like the set.mm proof can be used with only
+  small changes</td>
+</tr>
+
+<tr>
+  <td>basellem4</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof uses Poly and fta1 . It may be possible to
+  replace the usage of sbth with ~ fisbth but only if both sets
+  being compared can be shown to be finite.</td>
+</tr>
+
+<tr>
+  <td>basellem5</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses vieta1</td>
+</tr>
+
+<tr>
+  <td>basellem6</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof would seem to work with only small changes</td>
+</tr>
+
+<tr>
+  <td>basellem7</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof apparently can be adapted. The use of ofval
+  should be replaceable by ~ ofvalg .</td>
+</tr>
+
+<tr>
+  <td>basellem8</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof apparently can be adapted. It should be
+  possible to replace the use of fsumser with ~ fsum3ser .
+  As for sinltx , the obvious solution would be to prove that ` _pi ` is irrational
+  (which oddly enough we don't appear to have in either set.mm or iset.mm), then show
+  that ` ( ( ( k x. _pi ) / N ) ` is irrational using ~ irrmulap , then apply
+  ~ sinltxirr .</td>
+</tr>
+
+<tr>
+  <td>basellem9</td>
+  <td><i>none</i></td>
+  <td>We should be able to use the set.mm proof with ~ ofvalg in
+  place of ofval , ~ off in place of offn ,
+  ~ caofdig in place of caofdi and - ofc1g in place of ofc1</td>
+</tr>
+
+<tr>
+  <td id="missing-basel">basel</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof would seem to work once basellem9 is proved</td>
+</tr>
+
+<tr>
   <td>lgsfval</td>
   <td>~ lgsfvalg</td>
   <td>adds ` A e. ZZ ` and ` N e. NN ` conditions</td>
@@ -15058,8 +15131,8 @@ proved in set.mm but not iset.mm:</p>
 
   <tr>
     <td>14.  Summation of ` sum_ k e. NN ( k ^ -u 2 ) `</td>
-    <td>Needs a closer look at the set.mm proof but we
-    do have ~ climsqz for whatever that is worth</td>
+    <td>Seems doable; see detailed notes in the <a href="#missing-basel"
+    >basel entry above</a></td>
   </tr>
 
   <tr>
