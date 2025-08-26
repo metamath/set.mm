@@ -108593,6 +108593,19 @@ $)
   $}
 
   ${
+    $d .+ x y $.  $d F x y $.  $d M x y $.  $d V x y $.  $d W x y $.
+    $( Value of the sequence builder function at its initial value.
+       (Contributed by Mario Carneiro, 24-Jun-2013.)  (Revised by Jim Kingdon,
+       19-Aug-2025.) $)
+    seq1g $p |- ( ( M e. ZZ /\ F e. V /\ .+ e. W ) ->
+        ( seq M ( .+ , F ) ` M ) = ( F ` M ) ) $=
+      ( vx vy cz wcel w3a cvv simp1 cv cuz cfv fvexg 3ad2antl2 wa co simprl
+      simpl3 simprr ovexg syl3anc seq3-1 ) CHIZBDIZAEIZJZFGAKBCUFUGUHLUGUFFMZCN
+      OZIUJBOKIUHUJBDUKPQUIUJKIZGMZKIZRZRULUHUNUJUMASKIUIULUNTUFUGUHUOUAUIULUNU
+      BUJUMAKEKUCUDUE $.
+  $}
+
+  ${
     $d .+ a b x y $.  $d .+ s t w x y z $.  $d .+ u v w x y z $.  $d F b x y $.
     $d F c x $.  $d F s t w x y z $.  $d F u v w x y z $.  $d M a b x y $.
     $d M s t w x y z $.  $d M u v w x y z $.  $d S a b x y $.  $d S c x $.
@@ -108642,6 +108655,20 @@ $)
       BUCUJDEUGFGBCLMVAZABCLMDWNEFGWPXAJKVCVDVEAWKWAESWJESWHWJTIAWBEHVSABCDEFGW
       BWBVFWPJKVGIVHZABCWAWIEEEDKXBAWSWIESBWBVRWQVRTWRWIEWQVRFUMUNWTAWKVRWBSIGH
       VIULUQVJLMHWAWBEWFWJWGWCWIDPEWDHTWEWIWCDWDHNFOVLVMWCWAWIDVNWGVFVOVPVQ $.
+  $}
+
+  ${
+    $d .+ x y $.  $d F x y $.  $d M x y $.  $d N x y $.  $d V x y $.
+    $d W x y $.
+    $( Value of the sequence builder function at a successor.  (Contributed by
+       Mario Carneiro, 24-Jun-2013.)  (Revised by Jim Kingdon, 19-Aug-2025.) $)
+    seqp1g $p |- ( ( N e. ( ZZ>= ` M ) /\ F e. V /\ .+ e. W ) ->
+        ( seq M ( .+ , F ) ` ( N + 1 ) ) =
+          ( ( seq M ( .+ , F ) ` N ) .+ ( F ` ( N + 1 ) ) ) ) $=
+      ( vx vy cuz cfv wcel w3a cvv simp1 cv wa simpl2 vex fvexg sylancl mp3an2i
+      co simpl3 a1i ovexg seq3p1 ) DCIJZKZBEKZAFKZLZGHAMBCDUHUIUJNUKGOZUGKZPUIU
+      LMKZULBJMKUHUIUJUMQGRZULBEMSTUNUKUNHOZMKZPZPZUJUQULUPAUBMKUOUHUIUJURUCUQU
+      SHRUDULUPAMFMUEUAUF $.
   $}
 
   ${
@@ -108764,6 +108791,24 @@ $)
       FPZWMAXJXKXFKVFVFXGXBFPCUHZFPVAZXBXLDUDZFPZWMAXMXOXFOVFVFVGXHBCWLXIEEEDXG
       XBEPXLEPVAZXNEPZWMAXPXQXFMVFVFXGWMVHXHXDXIEPBVRWNXBWNSXCXIEXBWNGTUKAXDBVR
       VNXFWMXEVIXFWNVRPAWMHIWKVJVEUSVKUTVLVMVOVPVQ $.
+  $}
+
+  ${
+    $d F x y $.  $d .+ x y $.  $d M x y $.  $d N x y $.  $d S x y $.
+    $d ph x y $.
+    seqcl.1 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
+    seqcl.2 $e |- ( ( ph /\ x e. ( M ... N ) ) -> ( F ` x ) e. S ) $.
+    seqcl.3 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x .+ y ) e. S ) $.
+    seqclg.f $e |- ( ph -> F e. V ) $.
+    seqclg.p $e |- ( ph -> .+ e. W ) $.
+    $( Closure properties of the recursive sequence builder.  (Contributed by
+       Mario Carneiro, 2-Jul-2013.)  (Revised by Mario Carneiro,
+       27-May-2014.) $)
+    seqclg $p |- ( ph -> ( seq M ( .+ , F ) ` N ) e. S ) $=
+      ( cvv cv cfv wcel wa cuz adantr vex fvexg sylancl wss ssv co simprr ovexg
+      a1i mp3an2ani seq3clss ) ABCDEPFGHKABQZGUARSZTFISZUNPSZUNFRPSAUPUONUBBUCZ
+      UNFIPUDUELMEPUFAEUGUKUQADJSUQCQZPSZTUTUNUSDUHPSUROAUQUTUIUNUSDPJPUJULUM
+      $.
   $}
 
   ${
@@ -110181,6 +110226,57 @@ $)
       TZAVMUKVNVHPZVIVJVIQMZVDQMZVFQMZEUHAVHVIVJRVMLTWCVQWDVIRVRVIFSUJWCWEVDWFV
       FEVEWEVDRVNVGVDFSULVGWFVFRVNVEVFFSUMUNUOVNVSPWAVTQMVTRWBVTFSUJWBAVHVJFOVM
       VKTUPUQUR $.
+  $}
+
+  ${
+    $d n x y F $.  $d n x y H $.  $d n x y M $.  $d n x y N $.  $d n x y ph $.
+    $d n x G $.  $d x y K $.  $d n x y .+ $.  $d n x y Q $.  $d x y S $.
+    $d x y Z $.
+    seqhomo.1 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x .+ y ) e. S ) $.
+    seqhomo.2 $e |- ( ( ph /\ x e. ( M ... N ) ) -> ( F ` x ) e. S ) $.
+    ${
+      seqhomo.3 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
+      seqhomo.4 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
+                        ( H ` ( x .+ y ) ) = ( ( H ` x ) Q ( H ` y ) ) ) $.
+      seqhomo.5 $e |- ( ( ph /\ x e. ( M ... N ) ) ->
+                        ( H ` ( F ` x ) ) = ( G ` x ) ) $.
+      seqhomog.f $e |- ( ph -> F e. V ) $.
+      seqhomog.g $e |- ( ph -> G e. W ) $.
+      seqhomog.p $e |- ( ph -> .+ e. X ) $.
+      seqhomog.q $e |- ( ph -> Q e. Y ) $.
+      $( Apply a homomorphism to a sequence.  (Contributed by Mario Carneiro,
+         28-Jul-2013.)  (Revised by Mario Carneiro, 27-May-2014.) $)
+      seqhomog $p |- ( ph -> ( H ` ( seq M ( .+ , F ) ` N ) ) =
+                                  ( seq M ( Q , G ) ` N ) ) $=
+        ( vn cfz co wcel cseq cfv wceq cuz eluzfz2 syl wi cv caddc eleq1 2fveq3
+        c1 fveq2 eqeq12d imbi12d imbi2d ralrimiva eluzfz1 rspcdva eluzel2 seq1g
+        cz syl3anc fveq2d 3eqtr4d a1d peano2fzr adantl expr imim1d oveq1 simprl
+        wa adantr seqp1g wral ralrimivva wss elfzuz3 3syl sselda adantlr syldan
+        fzss2 seqclg eleq1d simprr fvoveq1 oveq1d oveq2 oveq2d rspc2v imbitrrid
+        syl2anc mpd 3eqtrd animpimp2impd uzind4i mpcom ) AKJKUFUGZUHZKDGJUIZUJI
+        UJZKEHJUIZUJZUKZAKJULUJZUHZXIRJKUMUNXPAXIXNUOZRABUPZXHUHZXRXJUJIUJZXRXL
+        UJZUKZUOZUOAJXHUHZJXJUJZIUJZJXLUJZUKZUOZUOAUEUPZXHUHZYJXJUJZIUJZYJXLUJZ
+        UKZUOZUOAYJUTUQUGZXHUHZYQXJUJZIUJZYQXLUJZUKZUOZUOAXQUOBUEJKXRJUKZYCYIAU
+        UDXSYDYBYHXRJXHURUUDXTYFYAYGXRJIXJUSXRJXLVAVBVCVDXRYJUKZYCYPAUUEXSYKYBY
+        OXRYJXHURUUEXTYMYAYNXRYJIXJUSXRYJXLVAVBVCVDXRYQUKZYCUUCAUUFXSYRYBUUBXRY
+        QXHURUUFXTYTYAUUAXRYQIXJUSXRYQXLVAVBVCVDXRKUKZYCXQAUUGXSXIYBXNXRKXHURUU
+        GXTXKYAXMXRKIXJUSXRKXLVAVBVCVDAYHYDAJGUJZIUJZJHUJZYFYGAXRGUJZIUJZXRHUJZ
+        UKZUUIUUJUKBXHJUUDUULUUIUUMUUJXRJIGUSXRJHVAVBAUUNBXHTVEZAXPYDRJKVFUNVGA
+        YEUUHIAJVJUHZGLUHZDNUHZYEUUHUKAXPUUPRJKVHUNZUAUCDGJLNVIVKVLAUUPHMUHZEOU
+        HZYGUUJUKUUSUBUDEHJMOVIVKVMVNYJXOUHZAYPYRUUBYOAUVBWAYRYKYOAUVBYRYKUVBYR
+        WAZYKAYJJKVOVPZVQVRYOUUBAUVCWAZYMYQHUJZEUGZYNUVFEUGZUKYMYNUVFEVSUVEYTUV
+        GUUAUVHUVEYTYLYQGUJZDUGZIUJZYMUVIIUJZEUGZUVGUVEYSUVJIUVEUVBUUQUURYSUVJU
+        KAUVBYRVTZAUUQUVCUAWBZAUURUVCUCWBZDGJYJLNWCVKVLUVEXRCUPZDUGZIUJZXRIUJZU
+        VQIUJZEUGZUKZCFWDBFWDZUVKUVMUKZAUWDUVCAUWCBCFFSWEWBUVEYLFUHUVIFUHZUWDUW
+        EUOUVEBCDFGJYJLNUVNUVEXRJYJUFUGZUHXSUUKFUHZUVEUWGXHXRUVEYKKYJULUJUHUWGX
+        HWFUVDYJJKWGYJJKWLWHWIAXSUWHUVCQWJWKAXRFUHUVQFUHWAUVRFUHUVCPWJUVOUVPWMU
+        VEUWHUWFBXHYQUUFUUKUVIFXRYQGVAWNAUWHBXHWDUVCAUWHBXHQVEWBAUVBYRWOZVGUWCU
+        WEYLUVQDUGZIUJZYMUWAEUGZUKBCYLUVIFFXRYLUKZUVSUWKUWBUWLXRYLUVQIDWPUWMUVT
+        YMUWAEXRYLIVAWQVBUVQUVIUKZUWKUVKUWLUVMUWNUWJUVJIUVQUVIYLDWRVLUWNUWAUVLY
+        MEUVQUVIIVAWSVBWTXBXCUVEUVLUVFYMEUVEUUNUVLUVFUKBXHYQUUFUULUVLUUMUVFXRYQ
+        IGUSXRYQHVAVBAUUNBXHWDUVCUUOWBUWIVGWSXDUVEUVBUUTUVAUUAUVHUKUVNAUUTUVCUB
+        WBAUVAUVCUDWBEHJYJMOWCVKVBXAXEXFXGXC $.
+    $}
   $}
 
   ${
@@ -149785,6 +149881,70 @@ $)
       UUHXSUVKUVMUWDUVNWTXCPUVRUUOEUVSEYIUVQUUPVCUVQUVSELUUPUVQAUUQEEYDYEYNUVOU
       UAUUQLEWLUVPUUQYDJXSCDUUNXDPXSYTUVPUUBWNWOPXEXSUWAELZUVPUUPXSYTUWEUUBYNYI
       BEEYOYPFXFXGWGXHXIXJXKXLXHYBYCXNZYCYGXOYBYAXTUWFYSYRDCXPWSYCXQUTXR $.
+  $}
+
+  ${
+    $d x y S $.  $d x y G $.  $d x y j W $.
+    $( Closure of the composite in any submonoid.  (Contributed by Stefan
+       O'Rear, 15-Aug-2015.)  (Revised by Mario Carneiro, 1-Oct-2015.) $)
+    gsumwsubmcl $p |- ( ( S e. ( SubMnd ` G ) /\ W e. Word S ) ->
+        ( G gsum W ) e. S ) $=
+      ( vx vy vj cfv wcel wa c0 wceq cgsu co cmnd eqid syl ad2antrr cc0 cvv cv
+      csubmnd cword wne oveq2 adantl submrcl gsum0g eqtrd subm0cl eqeltrd chash
+      c0g c1 cmin cplusg cseq cbs cn0 cn lennncl adantll nnm1nn0 nn0uz eleqtrdi
+      cuz cfz cfzo wf wrdf ad2antlr nnzd fzoval feq2d mpbid wss submss gsumval2
+      cz fssd fvexg ad4ant24 ffvelcdmda submcl 3expb ad4ant14 ssv simprl adantr
+      a1i plusgslid slotex simprr syl3anc seq3clss wo wex cfn wrdfin fin0or n0r
+      ovexg orim2i mpjaodan ) ABUAGHZCAUBZHZIZCJKZBCLMZAHCJUCZXGXHIZXIBULGZAXKX
+      IBJLMZXLXHXIXMKXGCJBLUDUEXDXMXLKZXFXHXDBNHZXNABUFZBNXLXLOZUGPQUHXDXLAHXFX
+      HABXLXQUIQUJXGXJIZXICUKGZUMUNMZBUOGZCRUPGAXRBUQGZYACBRXTNYBOZYAOZXDXOXFXJ
+      XPQZXRXTURRVEGZXRXSUSHZXTURHXFXJYGXDACUTVAZXSVBPVCVDZXRRXTVFMZAYBCXRRXSVG
+      MZACVHZYJACVHXFYLXDXJACVIVJXRYKYJACXRXSVRHYKYJKXRXSYHVKRXSVLPVMVNZXDAYBVO
+      XFXJYBABYCVPQVSVQXRDEYAASCRXTYIXFDTZYFHYNCGSHXDXJYNCXEYFVTWAXRYJAYNCYMWBX
+      DYNAHZETZAHZIYNYPYAMZAHZXFXJXDYOYQYSYAABYNYPYDWCWDWEASVOXRAWFWIXRYNSHZYPS
+      HZIZIZYTYASHZUUAYRSHXRYTUUAWGUUCXOUUDXRXOUUBYEWHBUONWJWKPXRYTUUAWLYNYPYAS
+      SSXAWMWNUJXFXHXJWOZXDXFXHFTCHFWPZWOZUUEXFCWQHUUGACWRFCWSPUUFXJXHFCWTXBPUE
+      XC $.
+  $}
+
+  ${
+    $d x y z B $.  $d x y z G $.  $d x y z .+ $.  $d x y z W $.  $d x y z X $.
+    gsumwcl.b $e |- B = ( Base ` G ) $.
+    $( Closure of the composite of a word in a structure ` G ` .  (Contributed
+       by Stefan O'Rear, 15-Aug-2015.) $)
+    gsumwcl $p |- ( ( G e. Mnd /\ W e. Word B ) -> ( G gsum W ) e. B ) $=
+      ( cmnd wcel csubmnd cfv cword cgsu co submid gsumwsubmcl sylan ) BEFABGHF
+      CAIFBCJKAFABDLABCMN $.
+  $}
+
+  ${
+    $d x y B $.  $d x y H $.  $d x y M $.  $d x y N $.  $d x y j W $.
+    gsumwmhm.b $e |- B = ( Base ` M ) $.
+    $( Behavior of homomorphisms on finite monoidal sums.  (Contributed by
+       Stefan O'Rear, 27-Aug-2015.) $)
+    gsumwmhm $p |- ( ( H e. ( M MndHom N ) /\ W e. Word B ) ->
+        ( H ` ( M gsum W ) ) = ( N gsum ( H o. W ) ) ) $=
+      ( vj co wcel wa c0 wceq cgsu cfv eqid ad2antrr cmnd syl cc0 cvv cmhm ccom
+      vx cword wne c0g mhm0 oveq2 adantl mhmrcl1 gsum0g eqtrd fveq2d coeq2 co02
+      vy eqtrdi oveq2d mhmrcl2 3eqtr4d chash c1 cmin cplusg cseq cv mndcl 3expb
+      sylan cfz cfzo wf wrdf ad2antlr cz cn cfn wb wrdfin hashnncl biimpar nnzd
+      fzoval feq2d mpbid ffvelcdmda cn0 cuz nnm1nn0 nn0uz eleqtrdi ad4ant14 wfn
+      mhmlin ffnd fvco2 eqcomd simplr adantr plusgslid slotex seqhomog gsumval2
+      coexg cbs mhmf fco syl2anc wo wex fin0or n0r orim2i mpjaodan ) BCDUAHZIZE
+      AUDZIZJZEKLZCEMHZBNZDBEUBZMHZLEKUEZXSXTJZCUFNZBNZDUFNZYBYDXPYHYILXRXTCDBY
+      IYGYGOZYIOZUGPYFYAYGBYFYACKMHZYGXTYAYLLXSEKCMUHUIYFCQIZYLYGLXPYMXRXTCDBUJ
+      ZPCQYGYJUKRULUMYFYDDKMHZYIXTYDYOLXSXTYCKDMXTYCBKUBKEKBUNBUOUQURUIYFDQIZYO
+      YILXPYPXRXTCDBUSZPDQYIYKUKRULUTXSYEJZEVANZVBVCHZCVDNZESVENZBNYTDVDNZYCSVE
+      NYBYDYRUCUPUUAUUCAEYCBSYTXQTTTYRYMUCVFZAIZUPVFZAIZJZUUDUUFUUAHZAIZXPYMXRY
+      EYNPZYMUUEUUGUUJAUUACUUDUUFFUUAOZVGVHVIYRSYTVJHZAUUDEYRSYSVKHZAEVLZUUMAEV
+      LZXRUUOXPYEAEVMVNYRUUNUUMAEYRYSVOIUUNUUMLYRYSXSYSVPIZYEXSEVQIZUUQYEVRXRUU
+      RXPAEVSUIZEVTRWAZWBSYSWCRWDWEZWFYRYTWGSWHNYRUUQYTWGIUUTYSWIRWJWKZXPUUHUUI
+      BNUUDBNUUFBNUUCHLZXRYEXPUUEUUGUVCAUUAUUCCDBUUDUUFFUULUUCOZWNVHWLYRUUDUUMI
+      ZJUUDYCNZUUDENBNZYREUUMWMUVEUVFUVGLYRUUMAEUVAWOUUMBEUUDWPVIWQXPXRYEWRXSYC
+      TIYEBEXOXQXDWSXPUUATIZXRYEXPYMUVHYNCVDQWTXARPXPUUCTIZXRYEXPYPUVIYQDVDQWTX
+      ARPXBYRYAUUBBYRAUUAECSYTQFUULUUKUVBUVAXCUMYRDXENZUUCYCDSYTQUVJOZUVDXPYPXR
+      YEYQPUVBYRAUVJBVLZUUPUUMUVJYCVLXPUVLXRYEAUVJCDBFUVKXFPUVAUUMAUVJBEXGXHXCU
+      TXSUURXTYEXIZUUSUURXTGVFEIGXJZXIUVMGEXKUVNYEXTGEXLXMRRXN $.
   $}
 
   ${
