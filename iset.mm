@@ -56919,6 +56919,33 @@ $)
   $}
 
   ${
+    ofc1.1 $e |- ( ph -> A e. V ) $.
+    ofc1.2 $e |- ( ph -> B e. W ) $.
+    ofc1.3 $e |- ( ph -> F Fn A ) $.
+    ofc1.4 $e |- ( ( ph /\ X e. A ) -> ( F ` X ) = C ) $.
+    ofc1g.ex $e |- ( ( ph /\ X e. A ) -> ( B R C ) e. U ) $.
+    $( Left operation by a constant.  (Contributed by Mario Carneiro,
+       24-Jul-2014.) $)
+    ofc1g $p |- ( ( ph /\ X e. A ) ->
+      ( ( ( A X. { B } ) oF R F ) ` X ) = ( B R C ) ) $=
+      ( csn cxp wcel wfn fnconstg syl inidm cfv wceq fvconst2g sylan ofvalg ) A
+      BBCDEBFBCPQZGHHJACIRZUHBSLBCITUAMKKBUBAUIJBRJUHUCCUDLBCJIUEUFNOUG $.
+  $}
+
+  ${
+    ofc2.1 $e |- ( ph -> A e. V ) $.
+    ofc2.2 $e |- ( ph -> B e. W ) $.
+    ofc2.3 $e |- ( ph -> F Fn A ) $.
+    ofc2.4 $e |- ( ( ph /\ X e. A ) -> ( F ` X ) = C ) $.
+    ofc2g.ex $e |- ( ( ph /\ X e. A ) -> ( C R B ) e. U ) $.
+    $( Right operation by a constant.  (Contributed by NM, 7-Oct-2014.) $)
+    ofc2g $p |- ( ( ph /\ X e. A ) ->
+      ( ( F oF R ( A X. { B } ) ) ` X ) = ( C R B ) ) $=
+      ( csn cxp wcel wfn fnconstg syl inidm cfv wceq fvconst2g sylan ofvalg ) A
+      BBDCEBFGBCPQZHHJMACIRZUHBSLBCITUAKKBUBNAUIJBRJUHUCCUDLBCJIUEUFOUG $.
+  $}
+
+  ${
     $d x A $.  $d x B $.  $d x C $.  $d x ph $.  $d x R $.  $d x W $.
     $d x X $.
     ofc12.1 $e |- ( ph -> A e. V ) $.
@@ -57026,6 +57053,38 @@ $)
         WCXFASEEVNVOFEJKMMAEGJVBJEVDOEGJVEVFZAEGKVBKEVDPEGKVEVFZNNEVGZWFVNVHZWF
         VOVHZVIASEEVOVQHEKLMMXHAEGLVBLEVDQEGLVEVFZNNXIXKWFVQVHZVIUPVPVRSEVJVKAS
         EEVNVQIEJLMMXGXLNNXIXJXMVIVL $.
+    $}
+  $}
+
+  ${
+    $d w x y z A $.  $d w x y z F $.  $d w x y z G $.  $d w x y z ph $.
+    $d w x y z H $.  $d w x y z K $.  $d w x y z O $.  $d w x y z R $.
+    $d w x y z S $.  $d w x y z T $.  $d V x y $.  $d W x y $.
+    caofdi.1 $e |- ( ph -> A e. V ) $.
+    caofdi.2 $e |- ( ph -> F : A --> K ) $.
+    caofdi.3 $e |- ( ph -> G : A --> S ) $.
+    caofdi.4 $e |- ( ph -> H : A --> S ) $.
+    caofdig.r $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x R y ) e. V ) $.
+    ${
+      caofdig.t $e |- ( ( ph /\ ( x e. K /\ y e. S ) ) -> ( x T y ) e. W ) $.
+      caofdi.5 $e |- ( ( ph /\ ( x e. K /\ y e. S /\ z e. S ) ) ->
+                          ( x T ( y R z ) ) = ( ( x T y ) O ( x T z ) ) ) $.
+      $( Transfer a distributive law to the function operation.  (Contributed
+         by Mario Carneiro, 26-Jul-2014.) $)
+      caofdig $p |- ( ph ->
+        ( F oF T ( G oF R H ) ) = ( ( F oF T G ) oF O ( F oF T H ) ) ) $=
+        ( vw cv cfv cmpt cof wcel w3a wceq adantlr ffvelcdmda caovdid mpteq2dva
+        co wa oveq2 eleq1d wral oveq1 ralbidv ralrimivva adantr rspcdva feqmptd
+        offval2 3eqtr4d ) AUCEUCUDZIUEZVHJUEZVHKUEZFUOZHUOZUFUCEVIVJHUOZVIVKHUO
+        ZMUOZUFIJKFUGUOZHUGZUOIJVRUOZIKVRUOZMUGUOAUCEVMVPAVHEUHZUPZBCDVIVJVKGFH
+        MLABUDZLUHCUDZGUHDUDZGUHUIWCWDWEFUOHUOWCWDHUOZWCWEHUOMUOUJWAUBUKAELVHIQ
+        ULZAEGVHJRULZAEGVHKSULZUMUNAUCEVIVLHIVQNLNPWGWBVJWDFUOZNUHZVLNUHCGVKWDV
+        KUJZWJVLNWDVKVJFUQURWBWCWDFUOZNUHZCGUSZWKCGUSBGVJWCVJUJZWNWKCGWPWMWJNWC
+        VJWDFUTURVAAWOBGUSWAAWNBCGGTVBVCWHVDWIVDAUCELIQVEZAUCEVJVKFJKNGGPWHWIAU
+        CEGJRVEZAUCEGKSVEZVFVFAUCEVNVOMVSVTNOOPWBVIWDHUOZOUHZVNOUHCGVJWDVJUJWTV
+        NOWDVJVIHUQURWBWFOUHZCGUSZXACGUSBLVIWCVIUJZXBXACGXDWFWTOWCVIWDHUTURVAAX
+        CBLUSWAAXBBCLGUAVBVCWGVDZWHVDWBXAVOOUHCGVKWLWTVOOWDVKVIHUQURXEWIVDAUCEV
+        IVJHIJNLGPWGWHWQWRVFAUCEVIVKHIKNLGPWGWIWQWSVFVFVG $.
     $}
   $}
 
@@ -93499,6 +93558,31 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Function operation analogue theorems
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d A x y $.  $d F x y $.  $d G x y $.  $d V x y $.
+    $( Function analogue of ~ negsub .  (Contributed by Mario Carneiro,
+       24-Jul-2014.) $)
+    ofnegsub $p |- ( ( A e. V /\ F : A --> CC /\ G : A --> CC ) ->
+      ( F oF + ( ( A X. { -u 1 } ) oF x. G ) ) = ( F oF - G ) ) $=
+      ( vx vy wcel cc wf cv cfv caddc cneg c1 cmul cof co cmin adantl a1i addcl
+      w3a csn cxp simp2 mulcl ax-1cn negcli fconst6 simp3 simp1 inidm off subcl
+      wa eqidd ffnd ffvelcdmda mulcld ofc1g mulm1d negsubd subcld ofvalg eqtr4d
+      eqtrd offeq ) ADGZAHBIZAHCIZUBZEFAAAEJZBKZLHHHVLCKZMZBANMZUCUDZCOPQZBCRPQ
+      ZDDVLHGFJZHGUOZVLVTLQHGVKVLVTUASVHVIVJUEZVKEFAAAOHHHVQCDDWAVLVTOQHGVKVLVT
+      UFSAHVQIVKAVPHNUGUHZUITVHVIVJUJZVHVIVJUKZWEAULZUMWEWEWFVKEFAAARHHHBCDDWAV
+      LVTRQHGVKVLVTUNSWBWDWEWEWFUMVKVLAGUOZVMUPZWGVLVRKVPVNOQVOVKAVPVNOHCDHVLWE
+      VPHGZVKWCTVKAHCWDUQZWGVNUPZWGVPVNWIWGWCTVKAHVLCWDURZUSUTWGVNWLVAVFWGVMVOL
+      QVMVNRQVLVSKWGVMVNVKAHVLBWBURZWLVBVKAAVMVNRAHBCDDVLVKAHBWBUQWJWEWEWFWHWKW
+      GVMVNWMWLVCVDVEVG $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Integer sets
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -99395,7 +99479,8 @@ $)
      rational.  Note that by "not rational" we mean the negation of "is
      rational" (whereas "irrational" is often defined to mean apart from any
      rational number - given excluded middle these two definitions would be
-     equivalent).  (Contributed by NM, 7-Nov-2008.) $)
+     equivalent).  For a similar theorem with irrational in place of not
+     rational, see ~ irrmulap .  (Contributed by NM, 7-Nov-2008.) $)
   irrmul $p |- ( ( A e. ( RR \ QQ ) /\ B e. QQ /\ B =/= 0 )
                 -> ( A x. B ) e. ( RR \ QQ ) ) $=
     ( cr cq cdif wcel cc0 wne w3a cmul co wn wa eldif remulcl wi 3expb 3ad2ant2
@@ -99407,6 +99492,26 @@ $)
     OVPWIVQBUDQUEUFWGWHADWBVOVPWHAUGWBVOVPIZABWBVOATFVPAUHUIVOWBBTFVPBUJRWJBGUK
     VFZVPWBVOVPULVOWBWKVPUMZVPVOGDFZWLGUNFWMUOGUPUQBGURUSRUTVAQVBVGVCVDVEVHVIVJ
     VKVQCDNVL $.
+
+  ${
+    $d A q $.  $d B q $.  $d Q q $.
+    irrmulap.a $e |- ( ph -> A e. RR ) $.
+    irrmulap.aq $e |- ( ph -> A. q e. QQ A =//= q ) $.
+    irrmulap.b $e |- ( ph -> B e. QQ ) $.
+    irrmulap.b0 $e |- ( ph -> B =/= 0 ) $.
+    irrmulap.q $e |- ( ph -> Q e. QQ ) $.
+    $( The product of an irrational with a nonzero rational is irrational.  By
+       irrational we mean apart from any rational number.  For a similar
+       theorem with not rational in place of irrational, see ~ irrmul .
+       (Contributed by Jim Kingdon, 25-Aug-2025.) $)
+    irrmulap $p |- ( ph -> ( A x. B ) =//= Q ) $=
+      ( co cap wbr cmul cq wcel cc0 cc qcn syl cdiv cv breq2 wne qdivcl syl3anc
+      rspcdva wb recnd apsym syl2anc mpbird cz 0z ax-mp qapne sylancl apdivmuld
+      zq mulcomd breq1d bitrd mpbid ) ADCUAKZBLMZBCNKZDLMZAVEBVDLMZABEUBZLMVHEO
+      VDVIVDBLUCGADOPZCOPZCQUDZVDOPZJHIDCUEUFZUGAVDRPZBRPVEVHUHAVMVOVNVDSTABFUI
+      ZVDBUJUKULAVECBNKZDLMVGADCBAVJDRPJDSTAVKCRPHCSTZVPACQLMZVLIAVKQOPZVSVLUHH
+      QUMPVTUNQUSUOCQUPUQULURAVQVFDLACBVRVPUTVAVBVC $.
+  $}
 
   ${
     $d A x y z $.
@@ -130460,6 +130565,24 @@ $)
     TQXGUVFUVKWELUUTUVMUVNVQUVGTBXMUGYNWSVTYDUVKIWTPWLUVKYJKDZUVLYAYJIUVKKYTVBY
     AIEZBCDZTBKDZBCDZUWDUVIYLYMYAUWFNVDOYNIBUIPUWGUWEBCBTKDZEUWGUWEBTOXNUNUWIIB
     TIOXNVDXOXPUSQUTTUDLYLYQUWHUWDNXNOYRTBBUKPVCQXGXQUJ $.
+
+  ${
+    $d A q $.
+    $( The sine of a positive irrational number is less than its argument.
+       Here irrational means apart from any rational number.  (Contributed by
+       Mario Carneiro, 29-Jul-2014.) $)
+    sinltxirr $p |- ( ( A e. RR+ /\ A. q e. QQ A =//= q )
+        -> ( sin ` A ) < A ) $=
+      ( wcel cap wbr cq wa c1 clt cc0 co cr cle adantr 1red simpr wb 1re simprd
+      c3 crp cv wral csin cfv cioc rpre rpgt0 ad2antrr ltled cxr w3a 0xr elioc2
+      mp2an syl3anbrc cexp cdiv cmin sin01bnd syl resincld sinbnd lelttrd breq2
+      cneg wo cz 1z zq mp1i rspcdva reaplt sylancl mpbid mpjaodan ) AUACZABUBZD
+      EZBFUCZGZAHIEZAUDUEZAIEZHAIEZWAWBGZAJHUFKCZWDWFALCZJAIEZAHMEZWGWAWHWBVQWH
+      VTAUGNZNZVQWIVTWBAUHUIWFAHWLWFOWAWBPUJJUKCHLCZWGWHWIWJULQUMRJHAUNUOUPWGAA
+      TUQKTURKUSKWCIEWDAUTSVAWAWEGZWCHAWNAWAWHWEWKNZVBWNOWOWNWHWCHMEZWOWHHVFWCM
+      EWPAVCSVAWAWEPVDWAAHDEZWBWEVGZWAVSWQBFHVRHADVEVQVTPHVHCHFCWAVIHVJVKVLWAWH
+      WMWQWRQWKRAHVMVNVOVP $.
+  $}
 
   $( The sine of a positive real number less than or equal to 1 is positive.
      (Contributed by Paul Chapman, 19-Jan-2008.)  (Revised by Wolf Lammen,
