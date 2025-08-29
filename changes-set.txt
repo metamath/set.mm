@@ -92,6 +92,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+20-Aug-25 naddsuc2  [same]      Moved from RP's mathbox to main set.mm
 18-Aug-25 cbvsumi   ---         deleted - redundant with cbvsum
 18-Aug-25 cbvsum    [same]      Removed unneeded hypotheses
 17-Aug-25 bj-denotes iseqsetv-clel Moved from BJ's mathbox to main
