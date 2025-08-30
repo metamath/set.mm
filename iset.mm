@@ -155669,6 +155669,50 @@ $)
 
 
 $(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Group sum operation
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  ${
+    $d B k x y z $.  $d F k x y z $.  $d G k x y z $.  $d H k x y z $.
+    $d M k x y z $.  $d N k x y z $.  $d k ph x y z $.
+    gsumreidx.b $e |- B = ( Base ` G ) $.
+    gsumreidx.z $e |- .0. = ( 0g ` G ) $.
+    gsumreidx.g $e |- ( ph -> G e. CMnd ) $.
+    gsumfzreidx.m $e |- ( ph -> M e. ZZ ) $.
+    gsumfzreidx.n $e |- ( ph -> N e. ZZ ) $.
+    gsumreidx.f $e |- ( ph -> F : ( M ... N ) --> B ) $.
+    gsumreidx.h $e |- ( ph -> H : ( M ... N ) -1-1-onto-> ( M ... N ) ) $.
+    $( Re-index a finite group sum using a bijection.  Corresponds to the first
+       equation in [Lang] p. 5 with ` M = 1 ` .  (Contributed by AV,
+       26-Dec-2023.) $)
+    gsumfzreidx $p |- ( ph -> ( G gsum F ) = ( G gsum ( F o. H ) ) ) $=
+      ( co cfv adantr cvv wcel vx vy vz vk clt cgsu ccom wceq wn wa cplusg cseq
+      wbr cif simpr iftrued ccmn eqid gsumfzval cfz wf1o f1of syl syl2anc eqtrd
+      wf fco 3eqtr4d ccnv cv cmnd cmnmndd ad2antrr simprl simprr syl3anc cmncom
+      mndcl w3a mndass sylancom cz cle cuz zred eluz2 syl3anbrc ssidd plusgslid
+      nltled slotex f1ocnv ffvelcdmda fvco3 f1ocnvfv2 fveq2d eqtr2d fzfigd fexd
+      sylan cfn coexg seqf1og iffalsed wdc wo zdclt exmiddc mpjaodan ) AGFUEUMZ
+      DCUFPZDCEUGZUFPZUHXJUIZAXJUJZXJHGDUKQZCFULQZUNZHXKXMXOXJHXQAXJUOZUPAXKXRU
+      HZXJABXPCDFGUQHIJXPURZKLMNUSZRXOXMXJHGXPXLFULQZUNZHAXMYDUHZXJABXPXLDFGUQH
+      IJYAKLMAFGUTPZBCVFZYFYFEVFZYFBXLVFZNAYFYFEVAZYHOYFYFEVBVCZYFYFBCEVGVDZUSZ
+      RXOXJHYCXSUPVEVHAXNUJZXQYCXKXMYNUAUBUCBXPBUDEVIZXLCFGSSSYNUAVJZBTZUBVJZBT
+      ZUJZUJZDVKTZYQYSYPYRXPPZBTAUUBXNYTADKVLZVMYNYQYSVNZYNYQYSVOZBXPDYPYRIYAVR
+      VPUUADUQTZYQYSUUCYRYPXPPUHAUUGXNYTKVMUUEUUFBXPDYPYRIYAVQVPYNYQYSUCVJZBTVS
+      ZUUBUUCUUHXPPYPYRUUHXPPXPPUHAUUBXNUUIUUDVMBXPDYPYRUUHIYAVTWAYNFWBTZGWBTZF
+      GWCUMGFWDQTAUUJXNLRZAUUKXNMRZYNFGYNFUULWEYNGUUMWEAXNUOZWJFGWFWGYNBWHAXPST
+      ZXNAUUGUUOKDUKUQWIWKVCRYNYJYFYFYOVAZAYJXNORZYFYFEWLZVCYNYFBYPXLAYIXNYLRWM
+      YNUDVJZYFTZUJZUUSYOQZXLQZUVBEQZCQZUUSCQUVAYHUVBYFTUVCUVEUHAYHXNUUTYKVMYNY
+      FYFUUSYOAYFYFYOVFZXNAUUPUVFAYJUUPOUURVCYFYFYOVBVCRWMYFYFUVBCEWNVDUVAUVDUU
+      SCYNYJUUTUVDUUSUHUUQYFYFUUSEWOWTWPWQAXLSTZXNACSTESTUVGAYFBXACNAFGLMWRZWSA
+      YFYFXAEYKUVHWSCESSXBVDRYNYFBXACAYGXNNRAYFXATXNUVHRWSXCYNXKXRXQAXTXNYBRYNX
+      JHXQUUNXDVEYNXMYDYCAYEXNYMRYNXJHYCUUNXDVEVHAXJXEZXJXNXFAUUKUUJUVIMLGFXGVD
+      XJXHVCXI $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Rings
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
