@@ -108967,6 +108967,22 @@ $)
   $}
 
   ${
+    $d .+ x y $.  $d F x y $.  $d M x y $.  $d N x y $.  $d S x y $.
+    $d ph x y $.
+    seqm1g.m $e |- ( ph -> M e. ZZ ) $.
+    seqm1g.n $e |- ( ph -> N e. ( ZZ>= ` ( M + 1 ) ) ) $.
+    seqm1g.p $e |- ( ph -> .+ e. V ) $.
+    seqm1g.f $e |- ( ph -> F e. W ) $.
+    $( Value of the sequence builder function at a successor.  (Contributed by
+       Mario Carneiro, 24-Jun-2013.)  (Revised by Jim Kingdon, 30-Aug-2025.) $)
+    seqm1g $p |- ( ph -> ( seq M ( .+ , F ) ` N ) =
+          ( ( seq M ( .+ , F ) ` ( N - 1 ) ) .+ ( F ` N ) ) ) $=
+      ( vx vy cvv wcel cv cuz cfv fvexg wa sylan co simprl adantr ovexg syl3anc
+      simprr seq3m1 ) ALMBNCDEHIACGOLPZDQRZOUICRNOKUICGUJSUAAUINOZMPZNOZTZTUKBF
+      OZUMUIULBUBNOAUKUMUCAUOUNJUDAUKUMUGUIULBNFNUEUFUH $.
+  $}
+
+  ${
     $d k x y z w F $.  $d k x y z w G $.  $d k x y z w K $.  $d k x y z w N $.
     $d k x y z w ph $.  $d k x y z w M $.  $d k x y z w .+ $.
     $d k x y z w S $.
