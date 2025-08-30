@@ -109122,6 +109122,44 @@ $)
   $}
 
   ${
+    $d k n x F $.  $d k n x G $.  $d k n x K $.  $d k n x M $.  $d k n x ph $.
+    $d k n x N $.  $d n x .+ $.
+    seqshft2.1 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
+    seqshft2.2 $e |- ( ph -> K e. ZZ ) $.
+    seqshft2.3 $e |- ( ( ph /\ k e. ( M ... N ) ) ->
+                       ( F ` k ) = ( G ` ( k + K ) ) ) $.
+    seqshft2g.p $e |- ( ph -> .+ e. V ) $.
+    seqshft2g.f $e |- ( ph -> F e. W ) $.
+    seqshft2g.g $e |- ( ph -> G e. X ) $.
+    $( Shifting the index set of a sequence.  (Contributed by Mario Carneiro,
+       27-Feb-2014.)  (Revised by Mario Carneiro, 27-May-2014.) $)
+    seqshft2g $p |- ( ph -> ( seq M ( .+ , F ) ` N ) =
+                           ( seq ( M + K ) ( .+ , G ) ` ( N + K ) ) ) $=
+      ( wcel cfv wceq vx vn cfz co cseq caddc cuz eluzfz2 syl wi cv eleq1 fveq2
+      c1 fvoveq1 eqeq12d imbi12d imbi2d ralrimiva eluzfz1 rspcdva eluzel2 seq1g
+      cz syl3anc zaddcld 3eqtr4d a1i13 wa peano2fzr adantl imim1d simprl adantr
+      expr oveq1 seqp1g eluzadd syl2anc eluzelz zcn ax-1cn mp3an2 syl2an fveq2d
+      add32 wral simprr eqtrd oveq2d imbitrrid animpimp2impd uzind4 mpcom mpd
+      cc ) AHGHUCUDZRZHBDGUEZSZHFUFUDBEGFUFUDZUEZSZTZAHGUGSZRZWRLGHUHUIXFAWRXDU
+      JZLAUAUKZWQRZXHWSSZXHFUFUDXBSZTZUJZUJAGWQRZGWSSZXAXBSZTZUJZUJAUBUKZWQRZXS
+      WSSZXSFUFUDZXBSZTZUJZUJAXSUNUFUDZWQRZYFWSSZYFFUFUDZXBSZTZUJZUJAXGUJUAUBGH
+      XHGTZXMXRAYMXIXNXLXQXHGWQULYMXJXOXKXPXHGWSUMXHGFXBUFUOUPUQURXHXSTZXMYEAYN
+      XIXTXLYDXHXSWQULYNXJYAXKYCXHXSWSUMXHXSFXBUFUOUPUQURXHYFTZXMYLAYOXIYGXLYKX
+      HYFWQULYOXJYHXKYJXHYFWSUMXHYFFXBUFUOUPUQURXHHTZXMXGAYPXIWRXLXDXHHWQULYPXJ
+      WTXKXCXHHWSUMXHHFXBUFUOUPUQURGVDRZAXNXQAGDSZXAESZXOXPACUKZDSZYTFUFUDESZTZ
+      YRYSTCWQGYTGTUUAYRUUBYSYTGDUMYTGFEUFUOUPAUUCCWQNUSZAXFXNLGHUTUIVAAYQDJRZB
+      IRZXOYRTAXFYQLGHVBUIZPOBDGJIVCVEAXAVDREKRZUUFXPYSTAGFUUGMVFQOBEXAKIVCVEVG
+      VHXSXERZAYEYGYKYDAUUIVIYGXTYDAUUIYGXTUUIYGVIZXTAXSGHVJVKVOVLYDYKAUUJVIZYA
+      YFDSZBUDZYCUULBUDZTYAYCUULBVPUUKYHUUMYJUUNUUKUUIUUEUUFYHUUMTAUUIYGVMZAUUE
+      UUJPVNAUUFUUJOVNZBDGXSJIVQVEUUKYBUNUFUDZXBSZYCUUQESZBUDZYJUUNUUKYBXAUGSRZ
+      UUHUUFUURUUTTUUKUUIFVDRZUVAUUOAUVBUUJMVNZFGXSVRVSAUUHUUJQVNUUPBEXAYBKIVQV
+      EUUKYIUUQXBUUKXSVDRZUVBYIUUQTZUUKUUIUVDUUOGXSVTUIUVCUVDXSWPRZFWPRZUVEUVBX
+      SWAFWAUVFUNWPRUVGUVEWBXSUNFWFWCWDVSZWEUUKUULUUSYCBUUKUULYIESZUUSUUKUUCUUL
+      UVITCWQYFYTYFTUUAUULUUBUVIYTYFDUMYTYFFEUFUOUPAUUCCWQWGUUJUUDVNAUUIYGWHVAU
+      UKYIUUQEUVHWEWIWJVGUPWKWLWMWNWO $.
+  $}
+
+  ${
     $d k x F $.  $d k x M $.  $d k x ph $.  $d k Z $.
     serf.1 $e |- Z = ( ZZ>= ` M ) $.
     serf.2 $e |- ( ph -> M e. ZZ ) $.
