@@ -109023,6 +109023,25 @@ $)
   $}
 
   ${
+    $d k F $.  $d k G $.  $d k M $.  $d k N $.  $d k ph $.
+    seqfveq.1 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
+    seqfveq.2 $e |- ( ( ph /\ k e. ( M ... N ) ) -> ( F ` k ) = ( G ` k ) ) $.
+    seqfveqg.p $e |- ( ph -> .+ e. V ) $.
+    seqfveqg.f $e |- ( ph -> F e. W ) $.
+    seqfveqg.g $e |- ( ph -> G e. X ) $.
+    $( Equality of sequences.  (Contributed by NM, 17-Mar-2005.)  (Revised by
+       Mario Carneiro, 27-May-2014.) $)
+    seqfveqg $p |- ( ph ->
+                    ( seq M ( .+ , F ) ` N ) = ( seq M ( .+ , G ) ` N ) ) $=
+      ( cfv wcel syl wceq co cuz cz eluzel2 uzidd cseq seq1g syl3anc cv eqeq12d
+      cfz fveq2 ralrimiva eluzfz1 eqtrd c1 caddc fzp1ss sselda syldan seqfveq2g
+      rspcdva wss ) ABCDEFFGHIJAFAGFUAPQZFUBQZKFGUCRZUDAFBDFUEPZFDPZFEPZAVDDIQB
+      HQVFVGSVENMBDFIHUFUGACUHZDPZVIEPZSZVGVHSCFGUJTZFVIFSVJVGVKVHVIFDUKVIFEUKU
+      IAVLCVMLULAVCFVMQKFGUMRVAUNMNOKAVIFUOUPTGUJTZQVIVMQVLAVNVMVIAVDVNVMVBVEFG
+      UQRURLUSUT $.
+  $}
+
+  ${
     $d k x y F $.  $d k x y G $.  $d k x y M $.  $d k x y N $.  $d k x y ph $.
     $d k x y .+ $.  $d k x y S $.
     iseqfveq.1 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
