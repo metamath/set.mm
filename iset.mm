@@ -108986,6 +108986,43 @@ $)
   $}
 
   ${
+    $d k n x F $.  $d k n x G $.  $d k n x K $.  $d k n x N $.  $d k n x ph $.
+    $d n x M $.  $d n x .+ $.
+    seqfveq2.1 $e |- ( ph -> K e. ( ZZ>= ` M ) ) $.
+    seqfveq2.2 $e |- ( ph -> ( seq M ( .+ , F ) ` K ) = ( G ` K ) ) $.
+    seqfveq2g.p $e |- ( ph -> .+ e. V ) $.
+    seqfveq2g.f $e |- ( ph -> F e. W ) $.
+    seqfveq2g.g $e |- ( ph -> G e. X ) $.
+    ${
+      seqfveq2.3 $e |- ( ph -> N e. ( ZZ>= ` K ) ) $.
+      seqfveq2.4 $e |- ( ( ph /\ k e. ( ( K + 1 ) ... N ) ) ->
+                         ( F ` k ) = ( G ` k ) ) $.
+      $( Equality of sequences.  (Contributed by NM, 17-Mar-2005.)  (Revised by
+         Mario Carneiro, 27-May-2014.) $)
+      seqfveq2g $p |- ( ph ->
+                       ( seq M ( .+ , F ) ` N ) = ( seq K ( .+ , G ) ` N ) ) $=
+        ( wcel cfv vx vn cfz co cseq cuz eluzfz2 syl wi cv c1 caddc eleq1 fveq2
+        eqeq12d imbi12d imbi2d cz eluzelz seq1g syl3anc eqtr4d a1d wa peano2fzr
+        wceq adantl expr imim1d oveq1 simpl uztrn syl2anr adantr wral ralrimiva
+        seqp1g eluzp1p1 ad2antrl elfzuz3 ad2antll elfzuzb rspcdva animpimp2impd
+        sylanbrc oveq2d imbitrrid uzind4i mpcom mpd ) AHFHUCUDZSZHBDGUEZTZHBEFU
+        EZTZVFZAHFUFTZSZWLQFHUGUHWSAWLWQUIZQAUAUJZWKSZXAWMTZXAWOTZVFZUIZUIAFWKS
+        ZFWMTZFWOTZVFZUIZUIAUBUJZWKSZXLWMTZXLWOTZVFZUIZUIAXLUKULUDZWKSZXRWMTZXR
+        WOTZVFZUIZUIAWTUIUAUBFHXAFVFZXFXKAYDXBXGXEXJXAFWKUMYDXCXHXDXIXAFWMUNXAF
+        WOUNUOUPUQXAXLVFZXFXQAYEXBXMXEXPXAXLWKUMYEXCXNXDXOXAXLWMUNXAXLWOUNUOUPU
+        QXAXRVFZXFYCAYFXBXSXEYBXAXRWKUMYFXCXTXDYAXAXRWMUNXAXRWOUNUOUPUQXAHVFZXF
+        WTAYGXBWLXEWQXAHWKUMYGXCWNXDWPXAHWMUNXAHWOUNUOUPUQAXJXGAXHFETZXIMAFURSZ
+        EKSZBISZXIYHVFAFGUFTZSZYILGFUSUHPNBEFKIUTVAVBVCXLWRSZAXQXSYBXPAYNVDXSXM
+        XPAYNXSXMYNXSVDZXMAXLFHVEVGVHVIXPYBAYOVDZXNXRDTZBUDZXOYQBUDZVFXNXOYQBVJ
+        YPXTYRYAYSYPXLYLSZDJSZYKXTYRVFYOYNYMYTAYNXSVKZLFXLGVLVMAUUAYOOVNAYKYONV
+        NZBDGXLJIVQVAYPYAXOXRETZBUDZYSYPYNYJYKYAUUEVFYOYNAUUBVGAYJYOPVNUUCBEFXL
+        KIVQVAYPYQUUDXOBYPCUJZDTZUUFETZVFZYQUUDVFCFUKULUDZHUCUDZXRUUFXRVFUUGYQU
+        UHUUDUUFXRDUNUUFXREUNUOAUUICUUKVOYOAUUICUUKRVPVNYPXRUUJUFTSZHXRUFTSZXRU
+        UKSYNUULAXSFXLVRVSXSUUMAYNXRFHVTWAXRUUJHWBWEWCWFVBUOWGWDWHWIWJ $.
+    $}
+  $}
+
+  ${
     $d k x y F $.  $d k x y G $.  $d k x y M $.  $d k x y N $.  $d k x y ph $.
     $d k x y .+ $.  $d k x y S $.
     iseqfveq.1 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
