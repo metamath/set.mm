@@ -109280,6 +109280,52 @@ $)
   ${
     $d n x y z F $.  $d n x y z K $.  $d n x y z M $.  $d n x y z ph $.
     $d n x y z N $.  $d n x y z .+ $.  $d x y z S $.
+    seqsplit.1 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x .+ y ) e. S ) $.
+    seqsplit.2 $e |- ( ( ph /\ ( x e. S /\ y e. S /\ z e. S ) ) ->
+                       ( ( x .+ y ) .+ z ) = ( x .+ ( y .+ z ) ) ) $.
+    seqsplit.3 $e |- ( ph -> N e. ( ZZ>= ` ( M + 1 ) ) ) $.
+    seqsplitg.p $e |- ( ph -> .+ e. V ) $.
+    seqsplitg.f $e |- ( ph -> F e. W ) $.
+    ${
+      seqsplit.4 $e |- ( ph -> M e. ( ZZ>= ` K ) ) $.
+      seqsplit.5 $e |- ( ( ph /\ x e. ( K ... N ) ) -> ( F ` x ) e. S ) $.
+      $( Split a sequence into two sequences.  (Contributed by NM,
+         17-Mar-2005.)  (Revised by Mario Carneiro, 27-May-2014.) $)
+      seqsplitg $p |- ( ph -> ( seq K ( .+ , F ) ` N ) =
+          ( ( seq K ( .+ , F ) ` M ) .+ ( seq ( M + 1 ) ( .+ , F ) ` N ) ) ) $=
+        ( wcel vn c1 caddc co cfz cseq cfv wceq cuz eluzfz2 syl wi eleq1 oveq2d
+        cv fveq2 eqeq12d imbi12d imbi2d cz seqp1g syl3anc seq1g eqtr4d a1i13 wa
+        eluzel2 peano2fzr adantl expr imim1d oveq1 simprl peano2uz adantr uztrn
+        syl2anc simpl eluzelz peano2uzr fzss2 sselda syldan seqclg elfzuz3 3syl
+        fzss1 sstrd adantlr eleq1d wral ralrimiva simpr syl2an rspcdva caovassg
+        wss ssel2 syl13anc imbitrrid animpimp2impd uzind4 mpcom mpd ) AJIUBUCUD
+        ZJUEUDZTZJEGHUFZUGZIXHUGZJEGXEUFZUGZEUDZUHZAJXEUIUGZTZXGOXEJUJUKXPAXGXN
+        ULZOABUOZXFTZXRXHUGZXJXRXKUGZEUDZUHZULZULAXEXFTZXEXHUGZXJXEXKUGZEUDZUHZ
+        ULZULAUAUOZXFTZYKXHUGZXJYKXKUGZEUDZUHZULZULAYKUBUCUDZXFTZYRXHUGZXJYRXKU
+        GZEUDZUHZULZULAXQULBUAXEJXRXEUHZYDYJAUUEXSYEYCYIXRXEXFUMUUEXTYFYBYHXRXE
+        XHUPUUEYAYGXJEXRXEXKUPUNUQURUSXRYKUHZYDYQAUUFXSYLYCYPXRYKXFUMUUFXTYMYBY
+        OXRYKXHUPUUFYAYNXJEXRYKXKUPUNUQURUSXRYRUHZYDUUDAUUGXSYSYCUUCXRYRXFUMUUG
+        XTYTYBUUBXRYRXHUPUUGYAUUAXJEXRYRXKUPUNUQURUSXRJUHZYDXQAUUHXSXGYCXNXRJXF
+        UMUUHXTXIYBXMXRJXHUPUUHYAXLXJEXRJXKUPUNUQURUSXEUTTZAYEYIAYFXJXEGUGZEUDZ
+        YHAIHUIUGZTZGLTZEKTZYFUUKUHRQPEGHILKVAVBAYGUUJXJEAUUIUUNUUOYGUUJUHAXPUU
+        IOXEJVGUKQPEGXELKVCVBUNVDVEYKXOTZAYQYSUUCYPAUUPVFYSYLYPAUUPYSYLUUPYSVFZ
+        YLAYKXEJVHVIZVJVKYPUUCAUUQVFZYMYRGUGZEUDZYOUUTEUDZUHYMYOUUTEVLUUSYTUVAU
+        UBUVBUUSYKUULTZUUNUUOYTUVAUHUUSUUPXEUULTZUVCAUUPYSVMZAUVDUUQAUUMUVDRHIV
+        NZUKVOXEYKHVPVQAUUNUUQQVOZAUUOUUQPVOZEGHYKLKVAVBUUSUUBXJYNUUTEUDZEUDZUV
+        BUUSUUAUVIXJEUUSUUPUUNUUOUUAUVIUHUVEUVGUVHEGXEYKLKVAVBUNUUSAXJFTZYNFTUU
+        TFTZUVBUVJUHAUUQVRAUVKUUQABCEFGHILKRAXRHIUEUDZTXRHJUEUDZTZXRGUGZFTZAUVM
+        UVNXRAJIUIUGTZUVMUVNWQAIUTTZXPUVRAUUMUVSRHIVSUKOIJVTVQIHJWAUKWBSWCMQPWD
+        VOUUSBCEFGXEYKLKUVEUUSXRXEYKUEUDZTUVOUVQUUSUVTUVNXRUUSUVTXFUVNUUSYLJYKU
+        IUGTUVTXFWQUURYKXEJWEYKXEJWAWFAXFUVNWQZUUQAUUMUVDUWARUVFXEHJWGWFZVOWHWB
+        AUVOUVQUUQSWIWCAXRFTCUOZFTVFXRUWCEUDFTUUQMWIUVGUVHWDUUSUVQUVLBUVNYRUUGU
+        VPUUTFXRYRGUPWJAUVQBUVNWKUUQAUVQBUVNSWLVOAUWAYSYRUVNTUUQUWBUUPYSWMXFUVN
+        YRWRWNWOABCDXJYNUUTFENWPWSVDUQWTXAXBXCXD $.
+    $}
+  $}
+
+  ${
+    $d n x y z F $.  $d n x y z K $.  $d n x y z M $.  $d n x y z ph $.
+    $d n x y z N $.  $d n x y z .+ $.  $d x y z S $.
     iseqsplit.1 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x .+ y ) e. S ) $.
     iseqsplit.2 $e |- ( ( ph /\ ( x e. S /\ y e. S /\ z e. S ) ) ->
                        ( ( x .+ y ) .+ z ) = ( x .+ ( y .+ z ) ) ) $.

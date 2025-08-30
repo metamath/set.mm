@@ -8107,13 +8107,21 @@ or ~ ssfiexmid </TD>
 </TR>
 
 <TR>
-  <TD>seqsplit</TD>
+  <TD rowspan="3">seqsplit</TD>
   <TD>~ seq3split</TD>
-  <TD>seq3split requires that ` F ` be defined on ` ( ZZ>= `` K ) `
-  not merely ` ( K ... N ) ` as in seqsplit . This is not a problem
-  when used on infinite sequences; finite sums may find it easier to
-  use ~ fsumsplit instead.</TD>
+  <TD>when ` F ` is defined on ` ( ZZ>= `` K ) `</TD>
 </TR>
+
+<tr>
+  <td>~ seqsplitg</td>
+  <td>when ` .+ ` and ` F ` are sets</td>
+</tr>
+
+<tr>
+  <td>~ fsumsplit</td>
+  <td>finite sums of complex numbers may find it easier to use
+  ` sum_ ` notation rather than ` seq ` directly</td>
+</tr>
 
 <TR>
   <TD>seq1p</TD>
