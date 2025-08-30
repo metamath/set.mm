@@ -97,6 +97,7 @@ Date      Old       New         Notes
 24-Aug-25 elabgw    [same]      Moved from SN's mathbox to main set.mm
 24-Aug-25 3rspcedvdw [same]     Moved from SN's mathbox to main set.mm
 24-Aug-25 fimarab   [same]      Moved from TA's mathbox to main set.mm
+20-Aug-25 naddsuc2  [same]      Moved from RP's mathbox to main set.mm
 18-Aug-25 cbvsumi   ---         deleted - redundant with cbvsum
 18-Aug-25 cbvsum    [same]      Removed unneeded hypotheses
 17-Aug-25 bj-denotes iseqsetv-clel Moved from BJ's mathbox to main

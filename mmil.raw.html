@@ -128,6 +128,8 @@ then extended without justification to statements about infinite collections.
   <LI> <A HREF="#overview">Overview of intuitionistic logic</A></LI>
   <LI> <A HREF="#overview2">Overview of this work</A></LI>
   <LI> <A HREF="#axioms">The axioms</A></LI>
+  <li><a href="#flavors">Different flavors of constructive mathematics</a></li>
+  <li><a href="#existence">A note on existence</a></li>
   <LI> <A HREF="#theorems">Some theorems</A></LI>
   <LI> <A HREF="#intuitionize">How to intuitionize classical proofs</A></LI>
   <LI> <A HREF="#setmm">Metamath Proof Explorer cross reference</A></LI>
@@ -801,6 +803,39 @@ following table ` RR ` is the real numbers and ` DECID ph ` is
 </tr>
 
 </table>
+
+<P></P><HR NOSHADE SIZE=1><A NAME="existence"></A><B><FONT COLOR="#006633">A
+note on existence</FONT></B>
+
+<p>When we mathematically say something exists, there are at least three
+things that might mean:</p>
+
+<ul>
+
+<li><b>explicit existence</b>: we can demonstrate what the thing is.
+Example: in ~ ctssdccl we show a mapping ` G ` and specify explicitly,
+via a hypothesis used as a local definition, what it is (contrast
+with ~ ctssdc which is using truncated existence). Our notation
+for explicit existence is giving a class variable as in this example.</li>
+
+<li><b>truncated existence</b>: we can demonstrate there is such a thing,
+but we do not expose what it is. We represent this by ` E. ` .
+Example: because the existence for ` g ` in ~ omiunct is truncated,
+we need countable choice to get explicit existence and thus apply
+~ ctiunct which requires explicit existence. Two equivalent notations
+for "class ` A ` (truncatedly) exists" can be seen at ~ isset .</li>
+
+<li><b>classical existence</b>: there is no way that such a thing can fail
+to exist.  The wording in the previous sentence may look like a double
+negation, and indeed ` -. -. E.` is our notation for classical
+existence. Example: ~ ismkvnex concerns the statement
+that classical existence implies truncated existence in a particular
+context.</li>
+
+</ul>
+
+<p>For more on these topics, see for example [HoTT] especially
+section 3.10.</p>
 
 <P></P><HR NOSHADE SIZE=1><A NAME="theorems"></A><B><FONT COLOR="#006633">A
 Theorem Sampler</FONT></B>&nbsp;&nbsp;&nbsp;
@@ -3481,10 +3516,29 @@ that we are evaluating functions within their domains.
 </TR>
 
 <tr>
+  <td>fnfvof</td>
+  <td><i>none</i></td>
+  <td>looking at ~ ofvalg it seems that this would likely need
+  an additional condition but likely could be proved</td>
+</tr>
+
+<tr>
   <td>offn</td>
   <td>~ off</td>
   <td>the set.mm proof of offn uses ovex and it isn't clear whether
   anything can be proved with weaker hypotheses than ~ off</td>
+</tr>
+
+<tr>
+  <td>ofc1</td>
+  <td>~ ofc1g</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>ofc2</td>
+  <td>~ ofc2g</td>
+  <td>adds set existence condition</td>
 </tr>
 
 <tr>
@@ -3499,6 +3553,32 @@ that we are evaluating functions within their domains.
 are functions being evaluated within their domains, there would be a
 fair bit of intuitionizing.</TD>
 </TR>
+
+<tr>
+  <td>caofass</td>
+  <td><i>none</i></td>
+  <td>presumably provable with added conditions similar to those
+  in ~ ofvalg</td>
+</tr>
+
+<tr>
+  <td>caofdi</td>
+  <td>~ caofdig</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>caofdir</td>
+  <td><i>none</i></td>
+  <td>this should be directly analogous to caofdi and ~ caofdig</td>
+</tr>
+
+<tr>
+  <td>caonncan</td>
+  <td><i>none</i></td>
+  <td>should be provable with an additional hypothesis analogous to
+  the one in ~ caofdig</td>
+</tr>
 
 <tr>
   <td>tpex</td>
@@ -6709,10 +6789,16 @@ favor of theorems in deduction form.</TD>
 </TR>
 
 <TR>
-<TD>ofsubeq0 , ofnegsub , ofsubge0</TD>
+<TD>ofsubeq0</TD>
 <TD><I>none</I></TD>
-<TD>Depend on ofval and/or offn .</TD>
+<TD>presumably provable</TD>
 </TR>
+
+<tr>
+  <td>ofsubge0</td>
+  <td><i>none</i></td>
+  <td>presumably provable</td>
+</tr>
 
 <TR>
 <TD>df-nn</TD>
@@ -7918,14 +8004,26 @@ or ~ ssfiexmid </TD>
 </TR>
 
 <TR>
-<TD>seq1 , seq1i</TD>
+<TD rowspan="2">seq1 , seq1i</TD>
 <TD>~ seq3-1</TD>
+<td>given closure hypotheses for both ` F ` and ` .+ `</td>
 </TR>
 
+<tr>
+  <td>~ seq1g</td>
+  <td>when ` F ` and ` .+ ` are sets</td>
+</tr>
+
 <TR>
-<TD>seqp1 , seqp1i</TD>
+<TD rowspan="2">seqp1 , seqp1i</TD>
 <TD>~ seq3p1</TD>
+<td>given closure hypotheses for both ` F ` and ` .+ `</td>
 </TR>
+
+<tr>
+  <td>~ seqp1g</td>
+  <td>when ` F ` and ` .+ ` are sets</td>
+</tr>
 
 <TR>
   <TD>seqm1</TD>
@@ -7940,12 +8038,22 @@ or ~ ssfiexmid </TD>
 </TR>
 
 <TR>
-  <TD>seqcl</TD>
-  <TD>~ seqf , ~ seq3clss</TD>
-  <TD>~ seqf requires that ` F ` be defined on ` ( ZZ>= `` M ) ` not
-  merely ` ( M ... N ) ` .  This requirement is relaxed somewhat in
-  ~ seq3clss .</TD>
+  <TD rowspan="3">seqcl</TD>
+  <TD>~ seqf</TD>
+  <TD>when ` F ` is defined on ` ( ZZ>= `` M ) ` not
+  merely ` ( M ... N ) `</TD>
 </TR>
+
+<tr>
+  <td>~ seq3clss</td>
+  <td>when ` S ` is a subset of a class ` T ` which satisfies
+  closure properties</td>
+</tr>
+
+<tr>
+  <td>~ seqclg</td>
+  <td>when ` F ` and ` .+ ` are sets</td>
+</tr>
 
 <TR>
 <TD>seqfveq2</TD>
@@ -8064,9 +8172,16 @@ or ~ ssfiexmid </TD>
 </TR>
 
 <TR>
-  <TD>seqhomo</TD>
+  <TD rowspan="2">seqhomo</TD>
   <TD>~ seq3homo</TD>
+  <td>where several hypotheses hold on ` ( ZZ>= `` M ) `
+  not just ` ( M ... N ) `</td>
 </TR>
+
+<tr>
+  <td>~ seqhomog</td>
+  <td>where ` F ` , ` .+ ` and ` Q ` are sets</td>
+</tr>
 
 <TR>
   <TD>seqz</TD>
@@ -9871,13 +9986,28 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>~ tanaddap</TD>
 </TR>
 
-<TR>
-  <TD>sinltx</TD>
-  <TD>~ sin01bnd , ~ sinbnd</TD>
-  <TD>Although we can prove the ` A <_ 1 ` case (see ~ sin01bnd )
-  or the ` 1 < A ` case (from ~ sinbnd ), set.mm uses real number
-  trichotomy to combine those cases.</TD>
-</TR>
+<tr>
+  <td rowspan="4">sinltx</td>
+  <td>~ sin01bnd</td>
+  <td>if you know that ` A <_ 1 `</td>
+</tr>
+
+<tr>
+  <td>~ sinbnd</td>
+  <td>if you know that ` 1 < A `</td>
+</tr>
+
+<tr>
+  <td>~ sinltxirr</td>
+  <td>if ` A ` is irrational</td>
+</tr>
+
+<tr>
+  <td><i>in general</i></td>
+  <td>it seems likely there would be a way to prove
+  sinltx (for example, if we had proofs for overlapping
+  intervals), but we don't have a proof yet</td>
+</tr>
 
 <TR>
   <TD id="missing-ruc">ruc</TD>
@@ -10879,11 +11009,12 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>gsumwsubmcl , gsumws1 , gsumwcl , gsumsgrpccat ,
-  gsumccat , gsumws2 , gsumccatsn , gsumspl , gsumwmhm ,
+  <td>gsumws1 , gsumsgrpccat ,
+  gsumccat , gsumws2 , gsumccatsn , gsumspl ,
   gsumwspan</td>
   <td><i>none</i></td>
-  <td>should be feasible once Word is defined</td>
+  <td>should be feasible once more ` Word ` related
+  theorems are available</td>
 </tr>
 
 <tr>
@@ -13994,6 +14125,52 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>df-ply</td>
+  <td><i>none</i></td>
+  <td>it seems like we will be able to use the set.mm definition</td>
+</tr>
+
+<tr>
+  <td>df-idp</td>
+  <td><i>none</i></td>
+  <td>it seems like we will be able to use the set.mm definition</td>
+</tr>
+
+<tr>
+  <td>df-coe</td>
+  <td><i>none</i></td>
+  <td>the set.mm defintion may work but this needs a closer look</td>
+</tr>
+
+<tr>
+  <td>df-dgr</td>
+  <td><i>none</i></td>
+  <td>This would seem to need to be replaced with something which
+  allows leading coefficients to be zero (to avoid difficulties
+  comparing complex numbers with zero). Or to say it another way,
+  we would more naturally work in terms of an upper bound on
+  the degree, rather than the exact degree itself.</td>
+</tr>
+
+<tr>
+  <td>fta1</td>
+  <td><i>none</i></td>
+  <td>The assertion that there are a finite (in the sense of ~ df-fin )
+  number of values which map to zero is on the face of it somewhat
+  strong, in the sense that we need to exclude the case of values
+  which map to a value close to zero. It seems like it may be possible
+  to find a way to state this theorem that works, given suitable
+  conditions such as having at least one coefficient apart from zero
+  (to replace the P ` =/= ` 0p condition in set.mm).</td>
+</tr>
+
+<tr>
+  <td>vieta1</td>
+  <td><i>none</i></td>
+  <td>depends on df-ply , df-coe , and df-dgr</td>
+</tr>
+
+<tr>
   <td>efcvx</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses dvres , dvres3 ,
@@ -14709,6 +14886,79 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>basellem1</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof should work with small changes</td>
+</tr>
+
+<tr>
+  <td>basellem2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof would apparently need changes related to the
+  support of a function (and it would depend how we handle the degree
+  of a polynomial)</td>
+</tr>
+
+<tr>
+  <td>basellem3</td>
+  <td><i>none</i></td>
+  <td>it would seem like the set.mm proof can be used with only
+  small changes</td>
+</tr>
+
+<tr>
+  <td>basellem4</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof uses Poly and fta1 . It may be possible to
+  replace the usage of sbth with ~ fisbth but only if both sets
+  being compared can be shown to be finite.</td>
+</tr>
+
+<tr>
+  <td>basellem5</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses vieta1</td>
+</tr>
+
+<tr>
+  <td>basellem6</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof would seem to work with only small changes</td>
+</tr>
+
+<tr>
+  <td>basellem7</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof apparently can be adapted. The use of ofval
+  should be replaceable by ~ ofvalg .</td>
+</tr>
+
+<tr>
+  <td>basellem8</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof apparently can be adapted. It should be
+  possible to replace the use of fsumser with ~ fsum3ser .
+  As for sinltx , the obvious solution would be to prove that ` _pi ` is irrational
+  (which oddly enough we don't appear to have in either set.mm or iset.mm), then show
+  that ` ( ( ( k x. _pi ) / N ) ` is irrational using ~ irrmulap , then apply
+  ~ sinltxirr .</td>
+</tr>
+
+<tr>
+  <td>basellem9</td>
+  <td><i>none</i></td>
+  <td>We should be able to use the set.mm proof with ~ ofvalg in
+  place of ofval , ~ off in place of offn ,
+  ~ caofdig in place of caofdi and - ofc1g in place of ofc1</td>
+</tr>
+
+<tr>
+  <td id="missing-basel">basel</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof would seem to work once basellem9 is proved</td>
+</tr>
+
+<tr>
   <td>lgsfval</td>
   <td>~ lgsfvalg</td>
   <td>adds ` A e. ZZ ` and ` N e. NN ` conditions</td>
@@ -14881,8 +15131,8 @@ proved in set.mm but not iset.mm:</p>
 
   <tr>
     <td>14.  Summation of ` sum_ k e. NN ( k ^ -u 2 ) `</td>
-    <td>Needs a closer look at the set.mm proof but we
-    do have ~ climsqz for whatever that is worth</td>
+    <td>Seems doable; see detailed notes in the <a href="#missing-basel"
+    >basel entry above</a></td>
   </tr>
 
   <tr>

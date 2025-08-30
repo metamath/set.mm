@@ -56919,6 +56919,33 @@ $)
   $}
 
   ${
+    ofc1.1 $e |- ( ph -> A e. V ) $.
+    ofc1.2 $e |- ( ph -> B e. W ) $.
+    ofc1.3 $e |- ( ph -> F Fn A ) $.
+    ofc1.4 $e |- ( ( ph /\ X e. A ) -> ( F ` X ) = C ) $.
+    ofc1g.ex $e |- ( ( ph /\ X e. A ) -> ( B R C ) e. U ) $.
+    $( Left operation by a constant.  (Contributed by Mario Carneiro,
+       24-Jul-2014.) $)
+    ofc1g $p |- ( ( ph /\ X e. A ) ->
+      ( ( ( A X. { B } ) oF R F ) ` X ) = ( B R C ) ) $=
+      ( csn cxp wcel wfn fnconstg syl inidm cfv wceq fvconst2g sylan ofvalg ) A
+      BBCDEBFBCPQZGHHJACIRZUHBSLBCITUAMKKBUBAUIJBRJUHUCCUDLBCJIUEUFNOUG $.
+  $}
+
+  ${
+    ofc2.1 $e |- ( ph -> A e. V ) $.
+    ofc2.2 $e |- ( ph -> B e. W ) $.
+    ofc2.3 $e |- ( ph -> F Fn A ) $.
+    ofc2.4 $e |- ( ( ph /\ X e. A ) -> ( F ` X ) = C ) $.
+    ofc2g.ex $e |- ( ( ph /\ X e. A ) -> ( C R B ) e. U ) $.
+    $( Right operation by a constant.  (Contributed by NM, 7-Oct-2014.) $)
+    ofc2g $p |- ( ( ph /\ X e. A ) ->
+      ( ( F oF R ( A X. { B } ) ) ` X ) = ( C R B ) ) $=
+      ( csn cxp wcel wfn fnconstg syl inidm cfv wceq fvconst2g sylan ofvalg ) A
+      BBDCEBFGBCPQZHHJMACIRZUHBSLBCITUAKKBUBNAUIJBRJUHUCCUDLBCJIUEUFOUG $.
+  $}
+
+  ${
     $d x A $.  $d x B $.  $d x C $.  $d x ph $.  $d x R $.  $d x W $.
     $d x X $.
     ofc12.1 $e |- ( ph -> A e. V ) $.
@@ -57026,6 +57053,38 @@ $)
         WCXFASEEVNVOFEJKMMAEGJVBJEVDOEGJVEVFZAEGKVBKEVDPEGKVEVFZNNEVGZWFVNVHZWF
         VOVHZVIASEEVOVQHEKLMMXHAEGLVBLEVDQEGLVEVFZNNXIXKWFVQVHZVIUPVPVRSEVJVKAS
         EEVNVQIEJLMMXGXLNNXIXJXMVIVL $.
+    $}
+  $}
+
+  ${
+    $d w x y z A $.  $d w x y z F $.  $d w x y z G $.  $d w x y z ph $.
+    $d w x y z H $.  $d w x y z K $.  $d w x y z O $.  $d w x y z R $.
+    $d w x y z S $.  $d w x y z T $.  $d V x y $.  $d W x y $.
+    caofdi.1 $e |- ( ph -> A e. V ) $.
+    caofdi.2 $e |- ( ph -> F : A --> K ) $.
+    caofdi.3 $e |- ( ph -> G : A --> S ) $.
+    caofdi.4 $e |- ( ph -> H : A --> S ) $.
+    caofdig.r $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x R y ) e. V ) $.
+    ${
+      caofdig.t $e |- ( ( ph /\ ( x e. K /\ y e. S ) ) -> ( x T y ) e. W ) $.
+      caofdi.5 $e |- ( ( ph /\ ( x e. K /\ y e. S /\ z e. S ) ) ->
+                          ( x T ( y R z ) ) = ( ( x T y ) O ( x T z ) ) ) $.
+      $( Transfer a distributive law to the function operation.  (Contributed
+         by Mario Carneiro, 26-Jul-2014.) $)
+      caofdig $p |- ( ph ->
+        ( F oF T ( G oF R H ) ) = ( ( F oF T G ) oF O ( F oF T H ) ) ) $=
+        ( vw cv cfv cmpt cof wcel w3a wceq adantlr ffvelcdmda caovdid mpteq2dva
+        co wa oveq2 eleq1d wral oveq1 ralbidv ralrimivva adantr rspcdva feqmptd
+        offval2 3eqtr4d ) AUCEUCUDZIUEZVHJUEZVHKUEZFUOZHUOZUFUCEVIVJHUOZVIVKHUO
+        ZMUOZUFIJKFUGUOZHUGZUOIJVRUOZIKVRUOZMUGUOAUCEVMVPAVHEUHZUPZBCDVIVJVKGFH
+        MLABUDZLUHCUDZGUHDUDZGUHUIWCWDWEFUOHUOWCWDHUOZWCWEHUOMUOUJWAUBUKAELVHIQ
+        ULZAEGVHJRULZAEGVHKSULZUMUNAUCEVIVLHIVQNLNPWGWBVJWDFUOZNUHZVLNUHCGVKWDV
+        KUJZWJVLNWDVKVJFUQURWBWCWDFUOZNUHZCGUSZWKCGUSBGVJWCVJUJZWNWKCGWPWMWJNWC
+        VJWDFUTURVAAWOBGUSWAAWNBCGGTVBVCWHVDWIVDAUCELIQVEZAUCEVJVKFJKNGGPWHWIAU
+        CEGJRVEZAUCEGKSVEZVFVFAUCEVNVOMVSVTNOOPWBVIWDHUOZOUHZVNOUHCGVJWDVJUJWTV
+        NOWDVJVIHUQURWBWFOUHZCGUSZXACGUSBLVIWCVIUJZXBXACGXDWFWTOWCVIWDHUTURVAAX
+        CBLUSWAAXBBCLGUAVBVCWGVDZWHVDWBXAVOOUHCGVKWLWTVOOWDVKVIHUQURXEWIVDAUCEV
+        IVJHIJNLGPWGWHWQWRVFAUCEVIVKHIKNLGPWGWIWQWSVFVFVG $.
     $}
   $}
 
@@ -93499,6 +93558,31 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Function operation analogue theorems
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d A x y $.  $d F x y $.  $d G x y $.  $d V x y $.
+    $( Function analogue of ~ negsub .  (Contributed by Mario Carneiro,
+       24-Jul-2014.) $)
+    ofnegsub $p |- ( ( A e. V /\ F : A --> CC /\ G : A --> CC ) ->
+      ( F oF + ( ( A X. { -u 1 } ) oF x. G ) ) = ( F oF - G ) ) $=
+      ( vx vy wcel cc wf cv cfv caddc cneg c1 cmul cof co cmin adantl a1i addcl
+      w3a csn cxp simp2 mulcl ax-1cn negcli fconst6 simp3 simp1 inidm off subcl
+      wa eqidd ffnd ffvelcdmda mulcld ofc1g mulm1d negsubd subcld ofvalg eqtr4d
+      eqtrd offeq ) ADGZAHBIZAHCIZUBZEFAAAEJZBKZLHHHVLCKZMZBANMZUCUDZCOPQZBCRPQ
+      ZDDVLHGFJZHGUOZVLVTLQHGVKVLVTUASVHVIVJUEZVKEFAAAOHHHVQCDDWAVLVTOQHGVKVLVT
+      UFSAHVQIVKAVPHNUGUHZUITVHVIVJUJZVHVIVJUKZWEAULZUMWEWEWFVKEFAAARHHHBCDDWAV
+      LVTRQHGVKVLVTUNSWBWDWEWEWFUMVKVLAGUOZVMUPZWGVLVRKVPVNOQVOVKAVPVNOHCDHVLWE
+      VPHGZVKWCTVKAHCWDUQZWGVNUPZWGVPVNWIWGWCTVKAHVLCWDURZUSUTWGVNWLVAVFWGVMVOL
+      QVMVNRQVLVSKWGVMVNVKAHVLBWBURZWLVBVKAAVMVNRAHBCDDVLVKAHBWBUQWJWEWEWFWHWKW
+      GVMVNWMWLVCVDVEVG $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Integer sets
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -99395,7 +99479,8 @@ $)
      rational.  Note that by "not rational" we mean the negation of "is
      rational" (whereas "irrational" is often defined to mean apart from any
      rational number - given excluded middle these two definitions would be
-     equivalent).  (Contributed by NM, 7-Nov-2008.) $)
+     equivalent).  For a similar theorem with irrational in place of not
+     rational, see ~ irrmulap .  (Contributed by NM, 7-Nov-2008.) $)
   irrmul $p |- ( ( A e. ( RR \ QQ ) /\ B e. QQ /\ B =/= 0 )
                 -> ( A x. B ) e. ( RR \ QQ ) ) $=
     ( cr cq cdif wcel cc0 wne w3a cmul co wn wa eldif remulcl wi 3expb 3ad2ant2
@@ -99407,6 +99492,26 @@ $)
     OVPWIVQBUDQUEUFWGWHADWBVOVPWHAUGWBVOVPIZABWBVOATFVPAUHUIVOWBBTFVPBUJRWJBGUK
     VFZVPWBVOVPULVOWBWKVPUMZVPVOGDFZWLGUNFWMUOGUPUQBGURUSRUTVAQVBVGVCVDVEVHVIVJ
     VKVQCDNVL $.
+
+  ${
+    $d A q $.  $d B q $.  $d Q q $.
+    irrmulap.a $e |- ( ph -> A e. RR ) $.
+    irrmulap.aq $e |- ( ph -> A. q e. QQ A =//= q ) $.
+    irrmulap.b $e |- ( ph -> B e. QQ ) $.
+    irrmulap.b0 $e |- ( ph -> B =/= 0 ) $.
+    irrmulap.q $e |- ( ph -> Q e. QQ ) $.
+    $( The product of an irrational with a nonzero rational is irrational.  By
+       irrational we mean apart from any rational number.  For a similar
+       theorem with not rational in place of irrational, see ~ irrmul .
+       (Contributed by Jim Kingdon, 25-Aug-2025.) $)
+    irrmulap $p |- ( ph -> ( A x. B ) =//= Q ) $=
+      ( co cap wbr cmul cq wcel cc0 cc qcn syl cdiv cv breq2 wne qdivcl syl3anc
+      rspcdva wb recnd apsym syl2anc mpbird cz 0z ax-mp qapne sylancl apdivmuld
+      zq mulcomd breq1d bitrd mpbid ) ADCUAKZBLMZBCNKZDLMZAVEBVDLMZABEUBZLMVHEO
+      VDVIVDBLUCGADOPZCOPZCQUDZVDOPZJHIDCUEUFZUGAVDRPZBRPVEVHUHAVMVOVNVDSTABFUI
+      ZVDBUJUKULAVECBNKZDLMVGADCBAVJDRPJDSTAVKCRPHCSTZVPACQLMZVLIAVKQOPZVSVLUHH
+      QUMPVTUNQUSUOCQUPUQULURAVQVFDLACBVRVPUTVAVBVC $.
+  $}
 
   ${
     $d A x y z $.
@@ -108593,6 +108698,19 @@ $)
   $}
 
   ${
+    $d .+ x y $.  $d F x y $.  $d M x y $.  $d V x y $.  $d W x y $.
+    $( Value of the sequence builder function at its initial value.
+       (Contributed by Mario Carneiro, 24-Jun-2013.)  (Revised by Jim Kingdon,
+       19-Aug-2025.) $)
+    seq1g $p |- ( ( M e. ZZ /\ F e. V /\ .+ e. W ) ->
+        ( seq M ( .+ , F ) ` M ) = ( F ` M ) ) $=
+      ( vx vy cz wcel w3a cvv simp1 cv cuz cfv fvexg 3ad2antl2 wa co simprl
+      simpl3 simprr ovexg syl3anc seq3-1 ) CHIZBDIZAEIZJZFGAKBCUFUGUHLUGUFFMZCN
+      OZIUJBOKIUHUJBDUKPQUIUJKIZGMZKIZRZRULUHUNUJUMASKIUIULUNTUFUGUHUOUAUIULUNU
+      BUJUMAKEKUCUDUE $.
+  $}
+
+  ${
     $d .+ a b x y $.  $d .+ s t w x y z $.  $d .+ u v w x y z $.  $d F b x y $.
     $d F c x $.  $d F s t w x y z $.  $d F u v w x y z $.  $d M a b x y $.
     $d M s t w x y z $.  $d M u v w x y z $.  $d S a b x y $.  $d S c x $.
@@ -108642,6 +108760,20 @@ $)
       BUCUJDEUGFGBCLMVAZABCLMDWNEFGWPXAJKVCVDVEAWKWAESWJESWHWJTIAWBEHVSABCDEFGW
       BWBVFWPJKVGIVHZABCWAWIEEEDKXBAWSWIESBWBVRWQVRTWRWIEWQVRFUMUNWTAWKVRWBSIGH
       VIULUQVJLMHWAWBEWFWJWGWCWIDPEWDHTWEWIWCDWDHNFOVLVMWCWAWIDVNWGVFVOVPVQ $.
+  $}
+
+  ${
+    $d .+ x y $.  $d F x y $.  $d M x y $.  $d N x y $.  $d V x y $.
+    $d W x y $.
+    $( Value of the sequence builder function at a successor.  (Contributed by
+       Mario Carneiro, 24-Jun-2013.)  (Revised by Jim Kingdon, 19-Aug-2025.) $)
+    seqp1g $p |- ( ( N e. ( ZZ>= ` M ) /\ F e. V /\ .+ e. W ) ->
+        ( seq M ( .+ , F ) ` ( N + 1 ) ) =
+          ( ( seq M ( .+ , F ) ` N ) .+ ( F ` ( N + 1 ) ) ) ) $=
+      ( vx vy cuz cfv wcel w3a cvv simp1 cv wa simpl2 vex fvexg sylancl mp3an2i
+      co simpl3 a1i ovexg seq3p1 ) DCIJZKZBEKZAFKZLZGHAMBCDUHUIUJNUKGOZUGKZPUIU
+      LMKZULBJMKUHUIUJUMQGRZULBEMSTUNUKUNHOZMKZPZPZUJUQULUPAUBMKUOUHUIUJURUCUQU
+      SHRUDULUPAMFMUEUAUF $.
   $}
 
   ${
@@ -108764,6 +108896,24 @@ $)
       FPZWMAXJXKXFKVFVFXGXBFPCUHZFPVAZXBXLDUDZFPZWMAXMXOXFOVFVFVGXHBCWLXIEEEDXG
       XBEPXLEPVAZXNEPZWMAXPXQXFMVFVFXGWMVHXHXDXIEPBVRWNXBWNSXCXIEXBWNGTUKAXDBVR
       VNXFWMXEVIXFWNVRPAWMHIWKVJVEUSVKUTVLVMVOVPVQ $.
+  $}
+
+  ${
+    $d F x y $.  $d .+ x y $.  $d M x y $.  $d N x y $.  $d S x y $.
+    $d ph x y $.
+    seqcl.1 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
+    seqcl.2 $e |- ( ( ph /\ x e. ( M ... N ) ) -> ( F ` x ) e. S ) $.
+    seqcl.3 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x .+ y ) e. S ) $.
+    seqclg.f $e |- ( ph -> F e. V ) $.
+    seqclg.p $e |- ( ph -> .+ e. W ) $.
+    $( Closure properties of the recursive sequence builder.  (Contributed by
+       Mario Carneiro, 2-Jul-2013.)  (Revised by Mario Carneiro,
+       27-May-2014.) $)
+    seqclg $p |- ( ph -> ( seq M ( .+ , F ) ` N ) e. S ) $=
+      ( cvv cv cfv wcel wa cuz adantr vex fvexg sylancl wss ssv co simprr ovexg
+      a1i mp3an2ani seq3clss ) ABCDEPFGHKABQZGUARSZTFISZUNPSZUNFRPSAUPUONUBBUCZ
+      UNFIPUDUELMEPUFAEUGUKUQADJSUQCQZPSZTUTUNUSDUHPSUROAUQUTUIUNUSDPJPUJULUM
+      $.
   $}
 
   ${
@@ -110181,6 +110331,57 @@ $)
       TZAVMUKVNVHPZVIVJVIQMZVDQMZVFQMZEUHAVHVIVJRVMLTWCVQWDVIRVRVIFSUJWCWEVDWFV
       FEVEWEVDRVNVGVDFSULVGWFVFRVNVEVFFSUMUNUOVNVSPWAVTQMVTRWBVTFSUJWBAVHVJFOVM
       VKTUPUQUR $.
+  $}
+
+  ${
+    $d n x y F $.  $d n x y H $.  $d n x y M $.  $d n x y N $.  $d n x y ph $.
+    $d n x G $.  $d x y K $.  $d n x y .+ $.  $d n x y Q $.  $d x y S $.
+    $d x y Z $.
+    seqhomo.1 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x .+ y ) e. S ) $.
+    seqhomo.2 $e |- ( ( ph /\ x e. ( M ... N ) ) -> ( F ` x ) e. S ) $.
+    ${
+      seqhomo.3 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
+      seqhomo.4 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
+                        ( H ` ( x .+ y ) ) = ( ( H ` x ) Q ( H ` y ) ) ) $.
+      seqhomo.5 $e |- ( ( ph /\ x e. ( M ... N ) ) ->
+                        ( H ` ( F ` x ) ) = ( G ` x ) ) $.
+      seqhomog.f $e |- ( ph -> F e. V ) $.
+      seqhomog.g $e |- ( ph -> G e. W ) $.
+      seqhomog.p $e |- ( ph -> .+ e. X ) $.
+      seqhomog.q $e |- ( ph -> Q e. Y ) $.
+      $( Apply a homomorphism to a sequence.  (Contributed by Mario Carneiro,
+         28-Jul-2013.)  (Revised by Mario Carneiro, 27-May-2014.) $)
+      seqhomog $p |- ( ph -> ( H ` ( seq M ( .+ , F ) ` N ) ) =
+                                  ( seq M ( Q , G ) ` N ) ) $=
+        ( vn cfz co wcel cseq cfv wceq cuz eluzfz2 syl wi cv caddc eleq1 2fveq3
+        c1 fveq2 eqeq12d imbi12d imbi2d ralrimiva eluzfz1 rspcdva eluzel2 seq1g
+        cz syl3anc fveq2d 3eqtr4d a1d peano2fzr adantl expr imim1d oveq1 simprl
+        wa adantr seqp1g wral ralrimivva wss elfzuz3 3syl sselda adantlr syldan
+        fzss2 seqclg eleq1d simprr fvoveq1 oveq1d oveq2 oveq2d rspc2v imbitrrid
+        syl2anc mpd 3eqtrd animpimp2impd uzind4i mpcom ) AKJKUFUGZUHZKDGJUIZUJI
+        UJZKEHJUIZUJZUKZAKJULUJZUHZXIRJKUMUNXPAXIXNUOZRABUPZXHUHZXRXJUJIUJZXRXL
+        UJZUKZUOZUOAJXHUHZJXJUJZIUJZJXLUJZUKZUOZUOAUEUPZXHUHZYJXJUJZIUJZYJXLUJZ
+        UKZUOZUOAYJUTUQUGZXHUHZYQXJUJZIUJZYQXLUJZUKZUOZUOAXQUOBUEJKXRJUKZYCYIAU
+        UDXSYDYBYHXRJXHURUUDXTYFYAYGXRJIXJUSXRJXLVAVBVCVDXRYJUKZYCYPAUUEXSYKYBY
+        OXRYJXHURUUEXTYMYAYNXRYJIXJUSXRYJXLVAVBVCVDXRYQUKZYCUUCAUUFXSYRYBUUBXRY
+        QXHURUUFXTYTYAUUAXRYQIXJUSXRYQXLVAVBVCVDXRKUKZYCXQAUUGXSXIYBXNXRKXHURUU
+        GXTXKYAXMXRKIXJUSXRKXLVAVBVCVDAYHYDAJGUJZIUJZJHUJZYFYGAXRGUJZIUJZXRHUJZ
+        UKZUUIUUJUKBXHJUUDUULUUIUUMUUJXRJIGUSXRJHVAVBAUUNBXHTVEZAXPYDRJKVFUNVGA
+        YEUUHIAJVJUHZGLUHZDNUHZYEUUHUKAXPUUPRJKVHUNZUAUCDGJLNVIVKVLAUUPHMUHZEOU
+        HZYGUUJUKUUSUBUDEHJMOVIVKVMVNYJXOUHZAYPYRUUBYOAUVBWAYRYKYOAUVBYRYKUVBYR
+        WAZYKAYJJKVOVPZVQVRYOUUBAUVCWAZYMYQHUJZEUGZYNUVFEUGZUKYMYNUVFEVSUVEYTUV
+        GUUAUVHUVEYTYLYQGUJZDUGZIUJZYMUVIIUJZEUGZUVGUVEYSUVJIUVEUVBUUQUURYSUVJU
+        KAUVBYRVTZAUUQUVCUAWBZAUURUVCUCWBZDGJYJLNWCVKVLUVEXRCUPZDUGZIUJZXRIUJZU
+        VQIUJZEUGZUKZCFWDBFWDZUVKUVMUKZAUWDUVCAUWCBCFFSWEWBUVEYLFUHUVIFUHZUWDUW
+        EUOUVEBCDFGJYJLNUVNUVEXRJYJUFUGZUHXSUUKFUHZUVEUWGXHXRUVEYKKYJULUJUHUWGX
+        HWFUVDYJJKWGYJJKWLWHWIAXSUWHUVCQWJWKAXRFUHUVQFUHWAUVRFUHUVCPWJUVOUVPWMU
+        VEUWHUWFBXHYQUUFUUKUVIFXRYQGVAWNAUWHBXHWDUVCAUWHBXHQVEWBAUVBYRWOZVGUWCU
+        WEYLUVQDUGZIUJZYMUWAEUGZUKBCYLUVIFFXRYLUKZUVSUWKUWBUWLXRYLUVQIDWPUWMUVT
+        YMUWAEXRYLIVAWQVBUVQUVIUKZUWKUVKUWLUVMUWNUWJUVJIUVQUVIYLDWRVLUWNUWAUVLY
+        MEUVQUVIIVAWSVBWTXBXCUVEUVLUVFYMEUVEUUNUVLUVFUKBXHYQUUFUULUVLUUMUVFXRYQ
+        IGUSXRYQHVAVBAUUNBXHWDUVCUUOWBUWIVGWSXDUVEUVBUUTUVAUUAUVHUKUVNAUUTUVCUB
+        WBAUVAUVCUDWBEHJYJMOWCVKVBXAXEXFXGXC $.
+    $}
   $}
 
   ${
@@ -130365,6 +130566,24 @@ $)
     AIEZBCDZTBKDZBCDZUWDUVIYLYMYAUWFNVDOYNIBUIPUWGUWEBCBTKDZEUWGUWEBTOXNUNUWIIB
     TIOXNVDXOXPUSQUTTUDLYLYQUWHUWDNXNOYRTBBUKPVCQXGXQUJ $.
 
+  ${
+    $d A q $.
+    $( The sine of a positive irrational number is less than its argument.
+       Here irrational means apart from any rational number.  (Contributed by
+       Mario Carneiro, 29-Jul-2014.) $)
+    sinltxirr $p |- ( ( A e. RR+ /\ A. q e. QQ A =//= q )
+        -> ( sin ` A ) < A ) $=
+      ( wcel cap wbr cq wa c1 clt cc0 co cr cle adantr 1red simpr wb 1re simprd
+      c3 crp cv wral csin cfv cioc rpre rpgt0 ad2antrr ltled cxr w3a 0xr elioc2
+      mp2an syl3anbrc cexp cdiv cmin sin01bnd syl resincld sinbnd lelttrd breq2
+      cneg wo cz 1z zq mp1i rspcdva reaplt sylancl mpbid mpjaodan ) AUACZABUBZD
+      EZBFUCZGZAHIEZAUDUEZAIEZHAIEZWAWBGZAJHUFKCZWDWFALCZJAIEZAHMEZWGWAWHWBVQWH
+      VTAUGNZNZVQWIVTWBAUHUIWFAHWLWFOWAWBPUJJUKCHLCZWGWHWIWJULQUMRJHAUNUOUPWGAA
+      TUQKTURKUSKWCIEWDAUTSVAWAWEGZWCHAWNAWAWHWEWKNZVBWNOWOWNWHWCHMEZWOWHHVFWCM
+      EWPAVCSVAWAWEPVDWAAHDEZWBWEVGZWAVSWQBFHVRHADVEVQVTPHVHCHFCWAVIHVJVKVLWAWH
+      WMWQWRQWKRAHVMVNVOVP $.
+  $}
+
   $( The sine of a positive real number less than or equal to 1 is positive.
      (Contributed by Paul Chapman, 19-Jan-2008.)  (Revised by Wolf Lammen,
      25-Sep-2020.) $)
@@ -149785,6 +150004,70 @@ $)
       UUHXSUVKUVMUWDUVNWTXCPUVRUUOEUVSEYIUVQUUPVCUVQUVSELUUPUVQAUUQEEYDYEYNUVOU
       UAUUQLEWLUVPUUQYDJXSCDUUNXDPXSYTUVPUUBWNWOPXEXSUWAELZUVPUUPXSYTUWEUUBYNYI
       BEEYOYPFXFXGWGXHXIXJXKXLXHYBYCXNZYCYGXOYBYAXTUWFYSYRDCXPWSYCXQUTXR $.
+  $}
+
+  ${
+    $d x y S $.  $d x y G $.  $d x y j W $.
+    $( Closure of the composite in any submonoid.  (Contributed by Stefan
+       O'Rear, 15-Aug-2015.)  (Revised by Mario Carneiro, 1-Oct-2015.) $)
+    gsumwsubmcl $p |- ( ( S e. ( SubMnd ` G ) /\ W e. Word S ) ->
+        ( G gsum W ) e. S ) $=
+      ( vx vy vj cfv wcel wa c0 wceq cgsu co cmnd eqid syl ad2antrr cc0 cvv cv
+      csubmnd cword wne oveq2 adantl submrcl gsum0g eqtrd subm0cl eqeltrd chash
+      c0g c1 cmin cplusg cseq cbs cn0 cn lennncl adantll nnm1nn0 nn0uz eleqtrdi
+      cuz cfz cfzo wf wrdf ad2antlr nnzd fzoval feq2d mpbid wss submss gsumval2
+      cz fssd fvexg ad4ant24 ffvelcdmda submcl 3expb ad4ant14 ssv simprl adantr
+      a1i plusgslid slotex simprr syl3anc seq3clss wo wex cfn wrdfin fin0or n0r
+      ovexg orim2i mpjaodan ) ABUAGHZCAUBZHZIZCJKZBCLMZAHCJUCZXGXHIZXIBULGZAXKX
+      IBJLMZXLXHXIXMKXGCJBLUDUEXDXMXLKZXFXHXDBNHZXNABUFZBNXLXLOZUGPQUHXDXLAHXFX
+      HABXLXQUIQUJXGXJIZXICUKGZUMUNMZBUOGZCRUPGAXRBUQGZYACBRXTNYBOZYAOZXDXOXFXJ
+      XPQZXRXTURRVEGZXRXSUSHZXTURHXFXJYGXDACUTVAZXSVBPVCVDZXRRXTVFMZAYBCXRRXSVG
+      MZACVHZYJACVHXFYLXDXJACVIVJXRYKYJACXRXSVRHYKYJKXRXSYHVKRXSVLPVMVNZXDAYBVO
+      XFXJYBABYCVPQVSVQXRDEYAASCRXTYIXFDTZYFHYNCGSHXDXJYNCXEYFVTWAXRYJAYNCYMWBX
+      DYNAHZETZAHZIYNYPYAMZAHZXFXJXDYOYQYSYAABYNYPYDWCWDWEASVOXRAWFWIXRYNSHZYPS
+      HZIZIZYTYASHZUUAYRSHXRYTUUAWGUUCXOUUDXRXOUUBYEWHBUONWJWKPXRYTUUAWLYNYPYAS
+      SSXAWMWNUJXFXHXJWOZXDXFXHFTCHFWPZWOZUUEXFCWQHUUGACWRFCWSPUUFXJXHFCWTXBPUE
+      XC $.
+  $}
+
+  ${
+    $d x y z B $.  $d x y z G $.  $d x y z .+ $.  $d x y z W $.  $d x y z X $.
+    gsumwcl.b $e |- B = ( Base ` G ) $.
+    $( Closure of the composite of a word in a structure ` G ` .  (Contributed
+       by Stefan O'Rear, 15-Aug-2015.) $)
+    gsumwcl $p |- ( ( G e. Mnd /\ W e. Word B ) -> ( G gsum W ) e. B ) $=
+      ( cmnd wcel csubmnd cfv cword cgsu co submid gsumwsubmcl sylan ) BEFABGHF
+      CAIFBCJKAFABDLABCMN $.
+  $}
+
+  ${
+    $d x y B $.  $d x y H $.  $d x y M $.  $d x y N $.  $d x y j W $.
+    gsumwmhm.b $e |- B = ( Base ` M ) $.
+    $( Behavior of homomorphisms on finite monoidal sums.  (Contributed by
+       Stefan O'Rear, 27-Aug-2015.) $)
+    gsumwmhm $p |- ( ( H e. ( M MndHom N ) /\ W e. Word B ) ->
+        ( H ` ( M gsum W ) ) = ( N gsum ( H o. W ) ) ) $=
+      ( vj co wcel wa c0 wceq cgsu cfv eqid ad2antrr cmnd syl cc0 cvv cmhm ccom
+      vx cword wne c0g mhm0 oveq2 adantl mhmrcl1 gsum0g eqtrd fveq2d coeq2 co02
+      vy eqtrdi oveq2d mhmrcl2 3eqtr4d chash c1 cmin cplusg cseq cv mndcl 3expb
+      sylan cfz cfzo wf wrdf ad2antlr cz cn cfn wb wrdfin hashnncl biimpar nnzd
+      fzoval feq2d mpbid ffvelcdmda cn0 cuz nnm1nn0 nn0uz eleqtrdi ad4ant14 wfn
+      mhmlin ffnd fvco2 eqcomd simplr adantr plusgslid slotex seqhomog gsumval2
+      coexg cbs mhmf fco syl2anc wo wex fin0or n0r orim2i mpjaodan ) BCDUAHZIZE
+      AUDZIZJZEKLZCEMHZBNZDBEUBZMHZLEKUEZXSXTJZCUFNZBNZDUFNZYBYDXPYHYILXRXTCDBY
+      IYGYGOZYIOZUGPYFYAYGBYFYACKMHZYGXTYAYLLXSEKCMUHUIYFCQIZYLYGLXPYMXRXTCDBUJ
+      ZPCQYGYJUKRULUMYFYDDKMHZYIXTYDYOLXSXTYCKDMXTYCBKUBKEKBUNBUOUQURUIYFDQIZYO
+      YILXPYPXRXTCDBUSZPDQYIYKUKRULUTXSYEJZEVANZVBVCHZCVDNZESVENZBNYTDVDNZYCSVE
+      NYBYDYRUCUPUUAUUCAEYCBSYTXQTTTYRYMUCVFZAIZUPVFZAIZJZUUDUUFUUAHZAIZXPYMXRY
+      EYNPZYMUUEUUGUUJAUUACUUDUUFFUUAOZVGVHVIYRSYTVJHZAUUDEYRSYSVKHZAEVLZUUMAEV
+      LZXRUUOXPYEAEVMVNYRUUNUUMAEYRYSVOIUUNUUMLYRYSXSYSVPIZYEXSEVQIZUUQYEVRXRUU
+      RXPAEVSUIZEVTRWAZWBSYSWCRWDWEZWFYRYTWGSWHNYRUUQYTWGIUUTYSWIRWJWKZXPUUHUUI
+      BNUUDBNUUFBNUUCHLZXRYEXPUUEUUGUVCAUUAUUCCDBUUDUUFFUULUUCOZWNVHWLYRUUDUUMI
+      ZJUUDYCNZUUDENBNZYREUUMWMUVEUVFUVGLYRUUMAEUVAWOUUMBEUUDWPVIWQXPXRYEWRXSYC
+      TIYEBEXOXQXDWSXPUUATIZXRYEXPYMUVHYNCVDQWTXARPXPUUCTIZXRYEXPYPUVIYQDVDQWTX
+      ARPXBYRYAUUBBYRAUUAECSYTQFUULUUKUVBUVAXCUMYRDXENZUUCYCDSYTQUVJOZUVDXPYPXR
+      YEYQPUVBYRAUVJBVLZUUPUUMUVJYCVLXPUVLXRYEAUVJCDBFUVKXFPUVAUUMAUVJBEXGXHXCU
+      TXSUURXTYEXIZUUSUURXTGVFEIGXJZXIUVMGEXKUVNYEXTGEXLXMRRXN $.
   $}
 
   ${
