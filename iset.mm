@@ -15614,6 +15614,39 @@ $)
   $}
 
   ${
+    $d ps y $.  $d ch x $.  $d ph x y $.
+    cbvaldvaw.1 $e |- ( ( ph /\ x = y ) -> ( ps <-> ch ) ) $.
+    $( Rule used to change the bound variable in a universal quantifier with
+       implicit substitution.  Deduction form.  Version of ~ cbvaldva with a
+       disjoint variable condition.  (Contributed by David Moews, 1-May-2017.)
+       (Revised by GG, 10-Jan-2024.)  (Revised by Wolf Lammen, 10-Feb-2024.) $)
+    cbvaldvaw $p |- ( ph -> ( A. x ps <-> A. y ch ) ) $=
+      ( wal wi weq wb ancoms pm5.74da cbvalvw 19.21v 3bitr3i pm5.74ri ) ABDGZCE
+      GZABHZDGACHZEGAQHARHSTDEDEIZABCAUABCJFKLMABDNACENOP $.
+
+    $( Rule used to change the bound variable in an existential quantifier with
+       implicit substitution.  Deduction form.  Version of ~ cbvexdva with a
+       disjoint variable condition.  (Contributed by David Moews, 1-May-2017.)
+       (Revised by GG, 10-Jan-2024.)  (Revised by Wolf Lammen, 10-Feb-2024.) $)
+    cbvexdvaw $p |- ( ph -> ( E. x ps <-> E. y ch ) ) $=
+      ( cbvexdva ) ABCDEFG $.
+  $}
+
+  ${
+    $d w z ph $.  $d x y ps $.  $d w x y z $.
+    cbval2vw.1 $e |- ( ( x = z /\ y = w ) -> ( ph <-> ps ) ) $.
+    $( Rule used to change bound variables, using implicit substitution.
+       (Contributed by NM, 4-Feb-2005.)  (Revised by GG, 10-Jan-2024.) $)
+    cbval2vw $p |- ( A. x A. y ph <-> A. z A. w ps ) $=
+      ( wal weq cbvaldvaw cbvalvw ) ADHBFHCECEIABDFGJK $.
+
+    $( Rule used to change bound variables, using implicit substitution.
+       (Contributed by NM, 26-Jul-1995.)  (Revised by GG, 10-Jan-2024.) $)
+    cbvex2vw $p |- ( E. x E. y ph <-> E. z E. w ps ) $=
+      ( wex weq cbvexdvaw cbvexvw ) ADHBFHCECEIABDFGJK $.
+  $}
+
+  ${
     $v f $.
     $v g $.
     $( Define temporary individual variables. $)
