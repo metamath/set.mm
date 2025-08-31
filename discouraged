@@ -16964,7 +16964,6 @@ New usage of "genpnnp" is discouraged (1 uses).
 New usage of "genpprecl" is discouraged (8 uses).
 New usage of "genpss" is discouraged (1 uses).
 New usage of "genpv" is discouraged (3 uses).
-New usage of "gg-ax8" is discouraged (0 uses).
 New usage of "ggen22" is discouraged (0 uses).
 New usage of "ggen31" is discouraged (2 uses).
 New usage of "ghomidOLD" is discouraged (2 uses).
@@ -17537,6 +17536,7 @@ New usage of "imsmet" is discouraged (12 uses).
 New usage of "imsmetlem" is discouraged (1 uses).
 New usage of "imsval" is discouraged (5 uses).
 New usage of "imsxmet" is discouraged (15 uses).
+New usage of "in-ax8" is discouraged (0 uses).
 New usage of "in1" is discouraged (89 uses).
 New usage of "in2" is discouraged (36 uses).
 New usage of "in2an" is discouraged (1 uses).
@@ -19454,6 +19454,7 @@ New usage of "srhmsubcALTV" is discouraged (4 uses).
 New usage of "srhmsubcALTVlem1" is discouraged (2 uses).
 New usage of "srhmsubcALTVlem2" is discouraged (1 uses).
 New usage of "sringcatALTV" is discouraged (2 uses).
+New usage of "ss-ax8" is discouraged (0 uses).
 New usage of "ssctOLD" is discouraged (0 uses).
 New usage of "ssdmd1" is discouraged (1 uses).
 New usage of "ssdmd2" is discouraged (0 uses).
@@ -21021,7 +21022,6 @@ Proof modification of "gen21" is discouraged (16 steps).
 Proof modification of "gen21nv" is discouraged (18 steps).
 Proof modification of "gen22" is discouraged (23 steps).
 Proof modification of "gen31" is discouraged (19 steps).
-Proof modification of "gg-ax8" is discouraged (208 steps).
 Proof modification of "ggen22" is discouraged (13 steps).
 Proof modification of "ggen31" is discouraged (22 steps).
 Proof modification of "ghomidOLD" is discouraged (178 steps).
@@ -21101,6 +21101,7 @@ Proof modification of "impsingle-step22" is discouraged (50 steps).
 Proof modification of "impsingle-step25" is discouraged (45 steps).
 Proof modification of "impsingle-step4" is discouraged (75 steps).
 Proof modification of "impsingle-step8" is discouraged (133 steps).
+Proof modification of "in-ax8" is discouraged (208 steps).
 Proof modification of "in1" is discouraged (11 steps).
 Proof modification of "in2" is discouraged (10 steps).
 Proof modification of "in2an" is discouraged (18 steps).
@@ -21685,6 +21686,7 @@ Proof modification of "sratsetOLD" is discouraged (21 steps).
 Proof modification of "sravscaOLD" is discouraged (177 steps).
 Proof modification of "srgcom4" is discouraged (279 steps).
 Proof modification of "srgcom4lem" is discouraged (213 steps).
+Proof modification of "ss-ax8" is discouraged (243 steps).
 Proof modification of "ssctOLD" is discouraged (38 steps).
 Proof modification of "sseliALT" is discouraged (152 steps).
 Proof modification of "ssfiALT" is discouraged (222 steps).
