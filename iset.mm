@@ -155863,6 +155863,54 @@ $)
       DRSWEVCAWLWFZWLWNWGAXLXKYBIHFEWHWIWLWJRWK $.
   $}
 
+  ${
+    $d B x k p q r $.  $d ph x k p q r $.  $d .+ x k p q r $.
+    $d M x k p q r $.  $d N x k p q r $.  $d C k $.  $d D k $.  $d F k $.
+    $d H k $.
+    gsummptfidmadd.b $e |- B = ( Base ` G ) $.
+    gsummptfidmadd.p $e |- .+ = ( +g ` G ) $.
+    gsummptfidmadd.g $e |- ( ph -> G e. CMnd ) $.
+    gsumfzmptfidmadd.m $e |- ( ph -> M e. ZZ ) $.
+    gsumfzmptfidmadd.n $e |- ( ph -> N e. ZZ ) $.
+    gsumfzmptfidmadd.c $e |- ( ( ph /\ x e. ( M ... N ) ) -> C e. B ) $.
+    gsumfzmptfidmadd.d $e |- ( ( ph /\ x e. ( M ... N ) ) -> D e. B ) $.
+    gsumfzmptfidmadd.f $e |- F = ( x e. ( M ... N ) |-> C ) $.
+    gsumfzmptfidmadd.h $e |- H = ( x e. ( M ... N ) |-> D ) $.
+    $( The sum of two group sums expressed as mappings with finite domain.
+       (Contributed by AV, 23-Jul-2019.)  (Revised by Jim Kingdon,
+       31-Aug-2025.) $)
+    gsumfzmptfidmadd $p |- ( ph
+        -> ( G gsum ( x e. ( M ... N ) |-> ( C .+ D ) ) )
+        = ( ( G gsum F ) .+ ( G gsum H ) ) ) $=
+      ( vp vq vr vk clt wbr cfz co cmpt cgsu wceq wn c0g cfv cseq simpr iftrued
+      wa cif ccmn eqid cv wcel cmnd cmnmndd adantr mndcl fmpttd gsumfzval fmptd
+      syl3anc eqtrd oveq12d mndidcl mndlid syl2anc2 3eqtr4d cvv ad2antrr simprl
+      simprr cmncom w3a mndass sylancom cz cle cuz zred nltled eluz2 ffvelcdmda
+      syl3anbrc wf cof cfn fzfigd a1i offval2 fveq1d inidm eqidd ofvalg adantlr
+      ffnd eqtr3d cplusg plusgslid slotex syl eqeltrid seqcaoprg iffalsed zdclt
+      fexd wdc wo syl2anc exmiddc mpjaodan ) AKJUEUFZHBJKUGUHZDEFUHZUIZUJUHZHGU
+      JUHZHIUJUHZFUHZUKYAULZAYAURZYAHUMUNZKFYDJUOUNZUSZYKYEYHYJYAYKYLAYAUPZUQAY
+      EYMUKZYAACFYDHJKUTYKLYKVAZMNOPABYBYCCABVBYBVCZURHVDVCZDCVCECVCYCCVCAYRYQA
+      HNVEZVFQRCFHDELMVGVKVHZVIZVFYJYHYKYKFUHZYKYJYFYKYGYKFYJYFYAYKKFGJUOUNZUSZ
+      YKAYFUUDUKZYAACFGHJKUTYKLYPMNOPABYBDCGQSVJZVIZVFYJYAYKUUCYNUQVLYJYGYAYKKF
+      IJUOUNZUSZYKAYGUUIUKZYAACFIHJKUTYKLYPMNOPABYBECIRTVJZVIZVFYJYAYKUUHYNUQVL
+      VMAUUBYKUKZYAAYRYKCVCUUMYSCHYKLYPVNCFHYKYKLMYPVOVPVFVLVQAYIURZYLUUCUUHFUH
+      YEYHUUNUAUBUCFCUDGIYDJKVRVRVRVRUUNUAVBZCVCZUBVBZCVCZURZURZYRUUPUURUUOUUQF
+      UHZCVCAYRYIUUSYSVSUUNUUPUURVTZUUNUUPUURWAZCFHUUOUUQLMVGVKUUTHUTVCZUUPUURU
+      VAUUQUUOFUHUKAUVDYIUUSNVSUVBUVCCFHUUOUUQLMWBVKUUNUUPUURUCVBZCVCWCZYRUVAUV
+      EFUHUUOUUQUVEFUHFUHUKAYRYIUVFYSVSCFHUUOUUQUVELMWDWEUUNJWFVCZKWFVCZJKWGUFK
+      JWHUNVCAUVGYIOVFZAUVHYIPVFZUUNJKUUNJUVIWIUUNKUVJWIAYIUPZWJJKWKWMUUNYBCUDV
+      BZGAYBCGWNYIUUFVFWLUUNYBCUVLIAYBCIWNYIUUKVFWLUUNUVLYBVCZURUVLGIFWOUHZUNZU
+      VLYDUNZUVLGUNZUVLIUNZFUHZAUVOUVPUKYIUVMAUVLUVNYDABYBDEFGIWPCCAJKOPWQZQRGB
+      YBDUIUKASWRIBYBEUIUKATWRWSWTVSAUVMUVOUVSUKYIAYBYBUVQUVRFYBCGIWPWPUVLAYBCG
+      UUFXEAYBCIUUKXEUVTUVTYBXAAUVMURZUVQXBUWAUVRXBUWAYRUVQCVCUVRCVCUVSCVCAYRUV
+      MYSVFAYBCUVLGUUFWLAYBCUVLIUUKWLCFHUVQUVRLMVGVKXCXDXFAFVRVCYIAFHXGUNZVRMAU
+      VDUWBVRVCNHXGUTXHXIXJXKVFAGVRVCYIAYBCWPGUUFUVTXOVFAIVRVCYIAYBCWPIUUKUVTXO
+      VFAYDVRVCYIAYBCWPYDYTUVTXOVFXLUUNYEYMYLAYOYIUUAVFUUNYAYKYLUVKXMVLUUNYFUUC
+      YGUUHFUUNYFUUDUUCAUUEYIUUGVFUUNYAYKUUCUVKXMVLUUNYGUUIUUHAUUJYIUULVFUUNYAY
+      KUUHUVKXMVLVMVQAYAXPZYAYIXQAUVHUVGUWCPOKJXNXRYAXSXJXT $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
