@@ -109432,14 +109432,14 @@ $)
     $d .+ n x y z $.  $d F k n x y z $.  $d G k n x y z $.  $d H k n x y z $.
     $d M k n x y z $.  $d N k n x y z $.  $d Q k n x y z $.  $d S k n x y z $.
     $d k n ph x y z $.
-    seqcaopr3.1 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x .+ y ) e. S ) $.
-    seqcaopr3.2 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x Q y ) e. S ) $.
-    seqcaopr3.3 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
+    seq3caopr3.1 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x .+ y ) e. S ) $.
+    seq3caopr3.2 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x Q y ) e. S ) $.
+    seq3caopr3.3 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
     seq3caopr3.4 $e |- ( ( ph /\ k e. ( ZZ>= ` M ) ) -> ( F ` k ) e. S ) $.
     seq3caopr3.5 $e |- ( ( ph /\ k e. ( ZZ>= ` M ) ) -> ( G ` k ) e. S ) $.
     seq3caopr3.6 $e |- ( ( ph /\ k e. ( ZZ>= ` M ) ) ->
                         ( H ` k ) = ( ( F ` k ) Q ( G ` k ) ) ) $.
-    seqcaopr3.7 $e |- ( ( ph /\ n e. ( M ..^ N ) ) ->
+    seq3caopr3.7 $e |- ( ( ph /\ n e. ( M ..^ N ) ) ->
       ( ( ( seq M ( .+ , F ) ` n ) Q ( seq M ( .+ , G ) ` n ) ) .+
         ( ( F ` ( n + 1 ) ) Q ( G ` ( n + 1 ) ) ) ) =
       ( ( ( seq M ( .+ , F ) ` n ) .+ ( F ` ( n + 1 ) ) ) Q
@@ -109474,6 +109474,52 @@ $)
       UWCYTUVRUUAUVSEYRYDIUQYRYDJUQUNUOAUUCGXDVDUVKUUEVFUVKYDXDUDZAUVKYDWNUDUWD
       LMXRWIYDLMWEUPWBVCWFUVLYFUWAYGUWBEUVLBCDFILXRUVPAUUJUVFUVKUVGWCUVQWDUVLBC
       DFJLXRUVPAUUJUVIUVKUVJWCUVQWDUNWGUOWHWJWKWLWM $.
+  $}
+
+  ${
+    $d k n x y z F $.  $d k n z H $.  $d k n x y z N $.  $d k n x y z ph $.
+    $d k n x y z G $.  $d k n x y z M $.  $d k n x y z Q $.  $d n x y z .+ $.
+    $d k x y z S $.
+    seqcaopr3.1 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x .+ y ) e. S ) $.
+    seqcaopr3.2 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x Q y ) e. S ) $.
+    seqcaopr3.3 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
+    seqcaopr3.4 $e |- ( ( ph /\ k e. ( M ... N ) ) -> ( F ` k ) e. S ) $.
+    seqcaopr3.5 $e |- ( ( ph /\ k e. ( M ... N ) ) -> ( G ` k ) e. S ) $.
+    seqcaopr3.6 $e |- ( ( ph /\ k e. ( M ... N ) ) ->
+                        ( H ` k ) = ( ( F ` k ) Q ( G ` k ) ) ) $.
+    seqcaopr3g.p $e |- ( ph -> .+ e. V ) $.
+    seqcaopr3g.f $e |- ( ph -> F e. W ) $.
+    seqcaopr3g.g $e |- ( ph -> G e. X ) $.
+    seqcaopr3g.h $e |- ( ph -> H e. Y ) $.
+    seqcaopr3.7 $e |- ( ( ph /\ n e. ( M ..^ N ) ) ->
+      ( ( ( seq M ( .+ , F ) ` n ) Q ( seq M ( .+ , G ) ` n ) ) .+
+        ( ( F ` ( n + 1 ) ) Q ( G ` ( n + 1 ) ) ) ) =
+      ( ( ( seq M ( .+ , F ) ` n ) .+ ( F ` ( n + 1 ) ) ) Q
+        ( ( seq M ( .+ , G ) ` n ) .+ ( G ` ( n + 1 ) ) ) ) ) $.
+    $( Lemma for ~ seqcaopr2g .  (Contributed by Mario Carneiro,
+       25-Apr-2016.) $)
+    seqcaopr3g $p |- ( ph -> ( seq M ( .+ , H ) ` N ) =
+                   ( ( seq M ( .+ , F ) ` N ) Q ( seq M ( .+ , G ) ` N ) ) ) $=
+      ( vz cfz co wcel cseq cfv wceq cuz eluzfz2 cv wi c1 caddc oveq12d eqeq12d
+      syl fveq2 imbi2d ralrimiva eluzfz1 rspcdva cz eluzel2 syl3anc 3eqtr4d a1i
+      seq1g cfzo wa oveq1 elfzouz adantl adantr seqp1g fzofzp1 oveq2d imbitrrid
+      wral 3eqtr4rd expcom a2d fzind2 mpcom ) MLMUJUKZULZAMDKLUMZUNZMDILUMZUNZM
+      DJLUMZUNZEUKZUOZAMLUPUNZULZWMTLMUQVDAUIURZWNUNZXDWPUNZXDWRUNZEUKZUOZUSALW
+      NUNZLWPUNZLWRUNZEUKZUOZUSZAHURZWNUNZXPWPUNZXPWRUNZEUKZUOZUSAXPUTVAUKZWNUN
+      ZYBWPUNZYBWRUNZEUKZUOZUSAXAUSUIHMLMXDLUOZXIXNAYHXEXJXHXMXDLWNVEYHXFXKXGXL
+      EXDLWPVEXDLWRVEVBVCVFXDXPUOZXIYAAYIXEXQXHXTXDXPWNVEYIXFXRXGXSEXDXPWPVEXDX
+      PWRVEVBVCVFXDYBUOZXIYGAYJXEYCXHYFXDYBWNVEYJXFYDXGYEEXDYBWPVEXDYBWRVEVBVCV
+      FXDMUOZXIXAAYKXEWOXHWTXDMWNVEYKXFWQXGWSEXDMWPVEXDMWRVEVBVCVFXOXCALKUNZLIU
+      NZLJUNZEUKZXJXMAGURZKUNZYPIUNZYPJUNZEUKZUOZYLYOUOGWLLYPLUOZYQYLYTYOYPLKVE
+      UUBYRYMYSYNEYPLIVEYPLJVEVBVCAUUAGWLUCVGZAXCLWLULTLMVHVDVIALVJULZKQULZDNUL
+      ZXJYLUOAXCUUDTLMVKVDZUGUDDKLQNVOVLAXKYMXLYNEAUUDIOULZUUFXKYMUOUUGUEUDDILO
+      NVOVLAUUDJPULZUUFXLYNUOUUGUFUDDJLPNVOVLVBVMVNXPLMVPUKULZAYAYGAUUJYAYGUSYA
+      YGAUUJVQZXQYBKUNZDUKZXTUULDUKZUOXQXTUULDVRUUKYCUUMYFUUNUUKXPXBULZUUEUUFYC
+      UUMUOUUJUUOAXPLMVSVTZAUUEUUJUGWAAUUFUUJUDWAZDKLXPQNWBVLUUKXTYBIUNZYBJUNZE
+      UKZDUKXRUURDUKZXSUUSDUKZEUKUUNYFUHUUKUULUUTXTDUUKUUAUULUUTUOGWLYBYPYBUOZY
+      QUULYTUUTYPYBKVEUVCYRUURYSUUSEYPYBIVEYPYBJVEVBVCAUUAGWLWFUUJUUCWAUUJYBWLU
+      LALMXPWCVTVIWDUUKYDUVAYEUVBEUUKUUOUUHUUFYDUVAUOUUPAUUHUUJUEWAUUQDILXPONWB
+      VLUUKUUOUUIUUFYEUVBUOUUPAUUIUUJUFWAUUQDJLXPPNWBVLVBWGVCWEWHWIWJWK $.
   $}
 
   ${
