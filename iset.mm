@@ -155909,6 +155909,14 @@ $)
       VFAYDVRVCYIAYBCWPYDYTUVTXOVFXLUUNYEYMYLAYOYIUUAVFUUNYAYKYLUVKXMVLUUNYFUUC
       YGUUHFUUNYFUUDUUCAUUEYIUUGVFUUNYAYKUUCUVKXMVLUUNYGUUIUUHAUUJYIUULVFUUNYAY
       KUUHUVKXMVLVMVQAYAXPZYAYIXQAUVHUVGUWCPOKJXNXRYAXSXJXT $.
+
+    $( The sum of two group sums expressed as mappings with finite domain,
+       using a function operation.  (Contributed by AV, 23-Jul-2019.) $)
+    gsumfzmptfidmadd2 $p |- ( ph ->
+      ( G gsum ( F oF .+ H ) ) = ( ( G gsum F ) .+ ( G gsum H ) ) ) $=
+      ( cof co cgsu cfz cmpt cfn fzfigd wceq a1i offval2 gsumfzmptfidmadd eqtrd
+      oveq2d ) AHGIFUAUBZUCUBHBJKUDUBZDEFUBUEZUCUBHGUCUBHIUCUBFUBAUNUPHUCABUODE
+      FGIUFCCAJKOPUGQRGBUODUEUHASUIIBUOEUEUHATUIUJUMABCDEFGHIJKLMNOPQRSTUKUL $.
   $}
 
 
