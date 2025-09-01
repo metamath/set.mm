@@ -109526,12 +109526,12 @@ $)
     $d .+ n w x y z $.  $d F k n w x y z $.  $d G k n w x y z $.
     $d H k n x y z $.  $d M k n w x y z $.  $d N k n x y z $.
     $d Q k n w x y z $.  $d S k n w x y z $.  $d k n ph w x y z $.
-    seqcaopr2.1 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x .+ y ) e. S ) $.
-    seqcaopr2.2 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x Q y ) e. S ) $.
-    seqcaopr2.3 $e |- ( ( ph /\
+    seq3caopr2.1 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x .+ y ) e. S ) $.
+    seq3caopr2.2 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x Q y ) e. S ) $.
+    seq3caopr2.3 $e |- ( ( ph /\
                         ( ( x e. S /\ y e. S ) /\ ( z e. S /\ w e. S ) ) ) ->
                   ( ( x Q z ) .+ ( y Q w ) ) = ( ( x .+ y ) Q ( z .+ w ) ) ) $.
-    seqcaopr2.4 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
+    seq3caopr2.4 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
     seq3caopr2.5 $e |- ( ( ph /\ k e. ( ZZ>= ` M ) ) -> ( F ` k ) e. S ) $.
     seq3caopr2.6 $e |- ( ( ph /\ k e. ( ZZ>= ` M ) ) -> ( G ` k ) e. S ) $.
     seq3caopr2.7 $e |- ( ( ph /\ k e. ( ZZ>= ` M ) ) ->
@@ -109560,6 +109560,51 @@ $)
       GWRWSGVSWAUUNUUJXBXCGYGWRWOFWBVPVTVQWCWDXEXLXGWTFUEZXBWJWSFUEZGUEZULDEWJW
       LHHWPWJULZXAUUOXDUUQUURWQXGWTFWPWJWOGWBVPUURXCUUPXBGWPWJWSFVSWAVTWSWLULZU
       UOXIUUQXKUUSWTXHXGFWSWLWRGWBWAUUSUUPXJXBGWSWLWJFWBWAVTWCWDWE $.
+  $}
+
+  ${
+    $d k n w x y z F $.  $d k n z H $.  $d k n x y z N $.  $d k n w x y z ph $.
+    $d k n w x y z G $.  $d k n w x y z M $.  $d k n w x y z Q $.
+    $d n w x y z .+ $.  $d k w x y z S $.
+    seqcaopr2.1 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x .+ y ) e. S ) $.
+    seqcaopr2.2 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x Q y ) e. S ) $.
+    seqcaopr2.3 $e |- ( ( ph /\
+                        ( ( x e. S /\ y e. S ) /\ ( z e. S /\ w e. S ) ) ) ->
+                  ( ( x Q z ) .+ ( y Q w ) ) = ( ( x .+ y ) Q ( z .+ w ) ) ) $.
+    seqcaopr2.4 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
+    seqcaopr2.5 $e |- ( ( ph /\ k e. ( M ... N ) ) -> ( F ` k ) e. S ) $.
+    seqcaopr2.6 $e |- ( ( ph /\ k e. ( M ... N ) ) -> ( G ` k ) e. S ) $.
+    seqcaopr2.7 $e |- ( ( ph /\ k e. ( M ... N ) ) ->
+                        ( H ` k ) = ( ( F ` k ) Q ( G ` k ) ) ) $.
+    seqcaopr2g.p $e |- ( ph -> .+ e. V ) $.
+    seqcaopr2g.f $e |- ( ph -> F e. W ) $.
+    seqcaopr2g.g $e |- ( ph -> G e. X ) $.
+    seqcaopr2g.h $e |- ( ph -> H e. Y ) $.
+    $( The sum of two infinite series (generalized to an arbitrary commutative
+       and associative operation).  (Contributed by Mario Carneiro,
+       30-May-2014.) $)
+    seqcaopr2g $p |- ( ph -> ( seq M ( .+ , H ) ` N ) =
+                   ( ( seq M ( .+ , F ) ` N ) Q ( seq M ( .+ , G ) ` N ) ) ) $=
+      ( vn cv cfzo co wcel wa cseq cfv c1 caddc wceq cuz elfzouz adantl cfz wss
+      wral elfzouz2 fzss2 syl sselda ralrimiva adantr fveq2 eleq1d sylan syldan
+      rspccva adantlr seqclg fzofzp1 syl2an anassrs ralrimivva eqeq12d 2ralbidv
+      oveq1 oveq1d oveq2d oveq2 rspc2va syl21anc seqcaopr3g ) ABCFGHIUJJKLMNOPQ
+      RSTUBUCUDUEUFUGUHUIAUJUKZMNULUMUNZUOZWMFKMUPUQZHUNWMURUSUMZKUQZHUNZWMFJMU
+      PUQZDUKZGUMZWQJUQZEUKZGUMZFUMZWTXCFUMZXAXDFUMZGUMZUTZEHVFDHVFZWTWPGUMZXCW
+      RGUMZFUMZXGWPWRFUMZGUMZUTZWOBCFHKMWMQOWNWMMVAUQUNAWMMNVBVCZWOBUKZMWMVDUMZ
+      UNZXSMNVDUMZUNZXSKUQZHUNZWOXTYBXSWONWMVAUQUNZXTYBVEWNYFAWMMNVGVCWMMNVHVIV
+      JZWOIUKZKUQZHUNZIYBVFZYCYEAYKWNAYJIYBUDVKZVLYJYEIXSYBYHXSUTZYIYDHYHXSKVMV
+      NVQVOVPAXSHUNCUKZHUNUOZXSYNFUMZHUNWNSVRZAKQUNWNUHVLAFOUNWNUFVLZVSAYKWQYBU
+      NZWSWNYLMNWMVTZYJWSIWQYBYHWQUTZYIWRHYHWQKVMVNVQWAWOWTHUNXCHUNZXSXAGUMZYNX
+      DGUMZFUMZYPXHGUMZUTZEHVFDHVFZCHVFBHVFZXKWOBCFHJMWMPOXRWOYAYCXSJUQZHUNZYGA
+      YCUUKWNAYHJUQZHUNZIYBVFZYCUUKAUUMIYBUCVKZUUMUUKIXSYBYMUULUUJHYHXSJVMVNVQV
+      OVRVPYQAJPUNWNUGVLYRVSAUUNYSUUBWNUUOYTUUMUUBIWQYBUUAUULXCHYHWQJVMVNVQWAAU
+      UIWNAUUHBCHHAYOUOUUGDEHHAYOXAHUNXDHUNUOUUGUAWBWCWCVLUUHXKXBUUDFUMZWTYNFUM
+      ZXHGUMZUTZEHVFDHVFBCWTXCHHXSWTUTZUUGUUSDEHHUUTUUEUUPUUFUURUUTUUCXBUUDFXSW
+      TXAGWFWGUUTYPUUQXHGXSWTYNFWFWGWDWEYNXCUTZUUSXJDEHHUVAUUPXFUURXIUVAUUDXEXB
+      FYNXCXDGWFWHUVAUUQXGXHGYNXCWTFWIWGWDWEWJWKXJXQXLXEFUMZXGWPXDFUMZGUMZUTDEW
+      PWRHHXAWPUTZXFUVBXIUVDUVEXBXLXEFXAWPWTGWIWGUVEXHUVCXGGXAWPXDFWFWHWDXDWRUT
+      ZUVBXNUVDXPUVFXEXMXLFXDWRXCGWIWHUVFUVCXOXGGXDWRWPFWIWHWDWJWKWL $.
   $}
 
   ${
