@@ -109611,12 +109611,12 @@ $)
     $d .+ a b c d k x y z $.  $d F a b c d k $.  $d G a b c d k $.
     $d H a b c k $.  $d M a b c d k $.  $d N a b c k $.
     $d S a b c d k x y z $.  $d a b c d k ph x y z $.
-    seqcaopr.1 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x .+ y ) e. S ) $.
-    seqcaopr.2 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
+    seq3caopr.1 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x .+ y ) e. S ) $.
+    seq3caopr.2 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
                        ( x .+ y ) = ( y .+ x ) ) $.
-    seqcaopr.3 $e |- ( ( ph /\ ( x e. S /\ y e. S /\ z e. S ) ) ->
+    seq3caopr.3 $e |- ( ( ph /\ ( x e. S /\ y e. S /\ z e. S ) ) ->
                        ( ( x .+ y ) .+ z ) = ( x .+ ( y .+ z ) ) ) $.
-    seqcaopr.4 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
+    seq3caopr.4 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
     seq3caopr.5 $e |- ( ( ph /\ k e. ( ZZ>= ` M ) ) -> ( F ` k ) e. S ) $.
     seq3caopr.6 $e |- ( ( ph /\ k e. ( ZZ>= ` M ) ) -> ( G ` k ) e. S ) $.
     seq3caopr.7 $e |- ( ( ph /\ k e. ( ZZ>= ` M ) ) ->
@@ -109635,6 +109635,41 @@ $)
       ABCDVKVFVMFEOUPUQVQAVIVLVNWIWBVCWJWLWKWMABCDVFVKVMFEOUPUQURUSVQAVHVLVRFUG
       ZWDVTVCWJAVHVIVOUTZWKVQAVIVNWNWJWLWMABCVFVMFFFEMUFUNABCDVEVKVRFEOUPUQVQAV
       HVIWAFUGZWEWCVCWJWOWLAVOWPVJABCVKVMFFFEMUFVAABCDVEVFWAFEOUPUQVBPQRSVD $.
+  $}
+
+  ${
+    $d a b c d k F $.  $d a b c d k G $.  $d c k H $.  $d a b c d k x y z ph $.
+    $d a b c d k M $.  $d a b c d k x y z .+ $.  $d a b c d k x y z S $.
+    $d a b c k N $.
+    seqcaopr.1 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x .+ y ) e. S ) $.
+    seqcaopr.2 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
+                       ( x .+ y ) = ( y .+ x ) ) $.
+    seqcaopr.3 $e |- ( ( ph /\ ( x e. S /\ y e. S /\ z e. S ) ) ->
+                       ( ( x .+ y ) .+ z ) = ( x .+ ( y .+ z ) ) ) $.
+    seqcaopr.4 $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
+    seqcaopr.5 $e |- ( ( ph /\ k e. ( M ... N ) ) -> ( F ` k ) e. S ) $.
+    seqcaopr.6 $e |- ( ( ph /\ k e. ( M ... N ) ) -> ( G ` k ) e. S ) $.
+    seqcaopr.7 $e |- ( ( ph /\ k e. ( M ... N ) ) ->
+                        ( H ` k ) = ( ( F ` k ) .+ ( G ` k ) ) ) $.
+    seqcaoprg.p $e |- ( ph -> .+ e. V ) $.
+    seqcaoprg.f $e |- ( ph -> F e. W ) $.
+    seqcaoprg.g $e |- ( ph -> G e. X ) $.
+    seqcaoprg.h $e |- ( ph -> H e. Y ) $.
+    $( The sum of two infinite series (generalized to an arbitrary commutative
+       and associative operation).  (Contributed by NM, 17-Mar-2005.)  (Revised
+       by Mario Carneiro, 30-May-2014.) $)
+    seqcaoprg $p |- ( ph -> ( seq M ( .+ , H ) ` N ) =
+                  ( ( seq M ( .+ , F ) ` N ) .+ ( seq M ( .+ , G ) ` N ) ) ) $=
+      ( va vb vc vd cv caovclg wcel wa co simpl simprrl simprlr caovcomg oveq1d
+      syl12anc simprrr caovassg syl13anc 3eqtr3d oveq2d simprll adantrl 3eqtr4d
+      wceq seqcaopr2g ) AUHUIUJUKEEFGHIJKLMNOPABCUHULZUIULZFFFEQUMZVOAVMFUNZVNF
+      UNZUOZUJULZFUNZUKULZFUNZUOZUOZUOZVMVSVNWAEUPZEUPZEUPZVMVNVSWAEUPZEUPZEUPZ
+      VMVSEUPWFEUPZVMVNEUPWIEUPZWEWGWJVMEWEVSVNEUPZWAEUPZVNVSEUPZWAEUPZWGWJWEWN
+      WPWAEWEAVTVQWNWPVKAWDUQZAVRVTWBURZAVPVQWCUSZABCVSVNFERUTVBVAWEAVTVQWBWOWG
+      VKWRWSWTAVRVTWBVCZABCDVSVNWAFESVDVEWEAVQVTWBWQWJVKWRWTWSXAABCDVNVSWAFESVD
+      VEVFVGWEAVPVTWFFUNZWLWHVKWRAVPVQWCVHZWSWEAVQWBXBWRWTXAABCVNWAFFFEQUMVBABC
+      DVMVSWFFESVDVEWEAVPVQWIFUNZWMWKVKWRXCWTAWCXDVRABCVSWAFFFEQUMVIABCDVMVNWIF
+      ESVDVEVJTUAUBUCUDUEUFUGVL $.
   $}
 
   ${
