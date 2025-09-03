@@ -178146,6 +178146,21 @@ $)
       NZIANVIUAPUDPCUBZUEZQZFBMUFUGRUHPZSDRSZBEUCVGVFEGNZVLQZFVNSDRSZGUIZJVOVGV
       EVSEABGCDFUJUKVRVOGEVMETJZDFRVNVMVTULVHRJVJVNJUMVMEVLTVMUNAKVKUOUPUQURUSV
       PEQVQVMDFRVNVPEVLUTVAVBVCVD $.
+
+    $d k z F $.
+    $( The set of polynomials is unaffected by the addition of zero.  (This is
+       built into the definition because all higher powers of a polynomial are
+       effectively zero, so we require that the coefficient field contain zero
+       to simplify some of our closure theorems.)  (Contributed by Mario
+       Carneiro, 17-Jul-2014.) $)
+    plyun0 $p |- ( Poly ` ( S u. { 0 } ) ) = ( Poly ` S ) $=
+      ( vf vz vn vk va cc0 cun cply cfv cc wss cv co cn0 cmap wrex wcel elply
+      wa csn cfz cexp cmul csu cmpt wceq snssi ax-mp biantru bitr2i unass unidm
+      0cn unss uneq2i eqtri oveq1i rexeqi rexbii anbi12i 3bitr4i eqriv ) BAGUAZ
+      HZIJZAIJZVEKLZBMZCKGDMUBNEMZFMJCMVJUCNUDNEUEUFUGZFVEVDHZOPNZQZDOQZTAKLZVK
+      FVEOPNZQZDOQZTVIVFRVIVGRVHVPVOVSVPVPVDKLZTVHVTVPGKRVTUNGKUHUIUJAVDKUOUKVN
+      VRDOVKFVMVQVLVEOPVLAVDVDHZHVEAVDVDULWAVDAVDUMUPUQURUSUTVACVEEDVIFSCAEDVIF
+      SVBVC $.
   $}
 
 
