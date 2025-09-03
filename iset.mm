@@ -40270,6 +40270,11 @@ $)
       ( cif cun cpw ifelpwund elexd ) ABCDICDJKABCDEFGHLM $.
   $}
 
+  $( Existence of the conditional operator (closed form).  (Contributed by NM,
+     21-Mar-2011.)  (Proof shortened by BJ, 1-Sep-2022.) $)
+  ifexg $p |- ( ( A e. V /\ B e. W ) -> if ( ph , A , B ) e. _V ) $=
+    ( wcel wa simpl simpr ifexd ) BDFZCEFZGABCDEKLHKLIJ $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
