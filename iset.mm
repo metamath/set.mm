@@ -40275,6 +40275,15 @@ $)
   ifexg $p |- ( ( A e. V /\ B e. W ) -> if ( ph , A , B ) e. _V ) $=
     ( wcel wa simpl simpr ifexd ) BDFZCEFZGABCDEKLHKLIJ $.
 
+  ${
+    ifex.1 $e |- A e. _V $.
+    ifex.2 $e |- B e. _V $.
+    $( Existence of the conditional operator (inference form).  (Contributed by
+       NM, 2-Sep-2004.) $)
+    ifex $p |- if ( ph , A , B ) e. _V $=
+      ( cvv wcel cif ifexg mp2an ) BFGCFGABCHFGDEABCFFIJ $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
