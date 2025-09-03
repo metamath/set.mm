@@ -178064,6 +178064,42 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Polynomials
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Elementary properties of complex polynomials
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c Poly $.
+  $c Xp $.
+
+  $( Extend class notation to include the set of complex polynomials. $)
+  cply $a class Poly $.
+
+  $( Extend class notation to include the identity polynomial. $)
+  cidp $a class Xp $.
+
+  ${
+    $d a f k n x z $.
+    $( Define the set of polynomials on the complex numbers with coefficients
+       in the given subset.  (Contributed by Mario Carneiro, 17-Jul-2014.) $)
+    df-ply $a |- Poly = ( x e. ~P CC |-> { f | E. n e. NN0
+      E. a e. ( ( x u. { 0 } ) ^m NN0 ) f =
+        ( z e. CC |-> sum_ k e. ( 0 ... n ) ( ( a ` k ) x. ( z ^ k ) ) ) } ) $.
+
+    $( Define the identity polynomial.  (Contributed by Mario Carneiro,
+       17-Jul-2014.) $)
+    df-idp $a |- Xp = ( _I |` CC ) $.
+  $}
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Basic trigonometry
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
@@ -185435,6 +185471,13 @@ htmldef "_D" as
     " <IMG SRC='rmcd.gif' WIDTH=10 HEIGHT=19 ALT=' _D' TITLE='_D'> ";
   althtmldef "_D" as " D ";
   latexdef "_D" as "\mathrm{D}";
+htmldef "Poly" as "Poly";
+  althtmldef "Poly" as "Poly";
+  latexdef "Poly" as "\mathrm{Poly}";
+htmldef "Xp" as "<IMG SRC='cx.gif' WIDTH=13 HEIGHT=19 ALT=' X' TITLE='X'>" +
+    "<IMG SRC='subp.gif' WIDTH=7 HEIGHT=19 ALT='p' TITLE='p'>";
+  althtmldef "Xp" as "<I>X<SUB>p</SUB></I>";
+  latexdef "Xp" as "X_p";
 htmldef "limCC" as
     " lim<IMG SRC='bbc.gif' WIDTH=12 HEIGHT=19 ALT=' CC' TITLE='CC'> ";
   althtmldef "limCC" as " lim<sub>&#8450;</sub> ";
