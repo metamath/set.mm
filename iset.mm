@@ -178097,6 +178097,23 @@ $)
     df-idp $a |- Xp = ( _I |` CC ) $.
   $}
 
+  ${
+    $d S a f n x $.  $d a f k n x z $.
+    $( Value of the polynomial set function.  (Contributed by Mario Carneiro,
+       17-Jul-2014.) $)
+    plyval $p |- ( S C_ CC -> ( Poly ` S ) = { f | E. n e. NN0
+      E. a e. ( ( S u. { 0 } ) ^m NN0 ) f =
+        ( z e. CC |-> sum_ k e. ( 0 ... n ) ( ( a ` k ) x. ( z ^ k ) ) ) } ) $=
+      ( vx cc cv cc0 co wceq cun cn0 cmap wrex cab cvv wcel cnex cexp cmul cmpt
+      wss cfz cfv csu csn cply df-ply uneq1 oveq1d rexeqdv rexbidv abbidv elpw2
+      cpw biimpri wral nn0ex cxp wfn fnmap ssex c0ex snex unexg sylancl mp3an2i
+      a1i fnovex abrexexg syl ralrimivw abrexex2g sylancr fvmptd3 ) BHUDZGBCIAH
+      JEIUEKDIZFIUFAIVSUAKUBKDUGUCZLZFGIZJUHZMZNOKZPZENPZCQWAFBWCMZNOKZPZENPZCQ
+      ZHUQZUIRGACDEFUJWBBLZWGWKCWNWFWJENWNWAFWEWIWNWDWHNOWBBWCUKULUMUNUOBWMSVRB
+      HTUPURVRNRSZWJCQRSZENUSWLRSUTVRWPENVRWIRSZWPORRVAVBVRWHRSZWOWQVCVRBRSWCRS
+      WRBHTVDJVEVFBWCRRVGVHWOVRUTVJWHNRROVKVIFCWIVTRVLVMVNWJECNRRVOVPVQ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
