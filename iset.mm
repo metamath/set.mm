@@ -178112,6 +178112,13 @@ $)
       ZHUQZUIRGACDEFUJWBBLZWGWKCWNWFWJENWNWAFWEWIWNWDWHNOWBBWCUKULUMUNUOBWMSVRB
       HTUPURVRNRSZWJCQRSZENUSWLRSUTVRWPENVRWIRSZWPORRVAVBVRWHRSZWOWQVCVRBRSWCRS
       WRBHTVDJVEVFBWCRRVGVHWOVRUTVJWHNRROVKVIFCWIVTRVLVMVNWJECNRRVOVPVQ $.
+
+    $( Reverse closure of the parameter ` S ` of the polynomial set function.
+       (Contributed by Mario Carneiro, 22-Jul-2014.) $)
+    plybss $p |- ( F e. ( Poly ` S ) -> S C_ CC ) $=
+      ( vx vf vz vn vk va cply cfv wcel cc cpw cv cc0 cfz co cexp cn0 wrex cmul
+      csu cmpt wceq csn cun cmap cab df-ply mptrcl elpwid ) BAIJKALCLMDNELOFNPQ
+      GNZHNJENULRQUAQGUBUCUDHCNOUEUFSUGQTFSTDUHIBACEDGFHUIUJUK $.
   $}
 
 
