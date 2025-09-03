@@ -19235,7 +19235,9 @@ New usage of "sbco" is discouraged (2 uses).
 New usage of "sbco2" is discouraged (6 uses).
 New usage of "sbco2d" is discouraged (1 uses).
 New usage of "sbco3" is discouraged (1 uses).
+New usage of "sbco4OLD" is discouraged (0 uses).
 New usage of "sbco4lemOLD" is discouraged (0 uses).
+New usage of "sbco4lemOLDOLD" is discouraged (0 uses).
 New usage of "sbcom" is discouraged (0 uses).
 New usage of "sbcom3" is discouraged (3 uses).
 New usage of "sbcoreleleq" is discouraged (2 uses).
@@ -21632,7 +21634,9 @@ Proof modification of "sbcim1OLD" is discouraged (33 steps).
 Proof modification of "sbcim2g" is discouraged (83 steps).
 Proof modification of "sbcim2gVD" is discouraged (139 steps).
 Proof modification of "sbcimdvOLD" is discouraged (52 steps).
-Proof modification of "sbco4lemOLD" is discouraged (98 steps).
+Proof modification of "sbco4OLD" is discouraged (79 steps).
+Proof modification of "sbco4lemOLD" is discouraged (66 steps).
+Proof modification of "sbco4lemOLDOLD" is discouraged (98 steps).
 Proof modification of "sbcoreleleq" is discouraged (91 steps).
 Proof modification of "sbcoreleleqVD" is discouraged (176 steps).
 Proof modification of "sbcovOLD" is discouraged (32 steps).
