@@ -14217,17 +14217,19 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>df-coe</td>
   <td><i>none</i></td>
-  <td>the set.mm defintion may work but this needs a closer look</td>
+  <td>The question is how much of the set.mm development assumes
+  that equality of coefficients is decidable.</td>
 </tr>
 
 <tr>
   <td>df-dgr</td>
   <td><i>none</i></td>
-  <td>This would seem to need to be replaced with something which
-  allows leading coefficients to be zero (to avoid difficulties
-  comparing complex numbers with zero). Or to say it another way,
-  we would more naturally work in terms of an upper bound on
-  the degree, rather than the exact degree itself.</td>
+  <td>In many cases we will find it more feasible to work with a
+  number which is an upper bound on the degree, as for example ` N ` in
+  theorems like elplyr .  To say it another way, when specifying
+  coefficients, we allow leading coefficients to be zero, thus
+  avoiding difficulties with coefficients which we are unable to
+  compare to zero.</td>
 </tr>
 
 <tr>
