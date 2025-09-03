@@ -178119,6 +178119,19 @@ $)
       ( vx vf vz vn vk va cply cfv wcel cc cpw cv cc0 cfz co cexp cn0 wrex cmul
       csu cmpt wceq csn cun cmap cab df-ply mptrcl elpwid ) BAIJKALCLMDNELOFNPQ
       GNZHNJENULRQUAQGUBUCUDHCNOUEUFSUGQTFSTDUHIBACEDGFHUIUJUK $.
+
+    $d F a f n $.  $d S a f n x $.  $d a f k n x z $.
+    $( Definition of a polynomial with coefficients in ` S ` .  (Contributed by
+       Mario Carneiro, 17-Jul-2014.) $)
+    elply $p |- ( F e. ( Poly ` S ) <-> ( S C_ CC /\ E. n e. NN0
+      E. a e. ( ( S u. { 0 } ) ^m NN0 ) F =
+        ( z e. CC |-> sum_ k e. ( 0 ... n ) ( ( a ` k ) x. ( z ^ k ) ) ) ) ) $=
+      ( vf cply cfv wcel cc wss cc0 cv cfz co wceq cn0 wrex cvv cexp csu plybss
+      cmul cmpt csn cun cmap cab plyval eleq2d wi wa id cnex mptex eqeltrdi a1i
+      rexlimivv eqeq1 2rexbidv elab3 bitrdi biadanii ) EBHIZJZBKLZEAKMDNZOPCNZF
+      NZIANVIUAPUDPCUBZUEZQZFBMUFUGRUHPZSDRSZBEUCVGVFEGNZVLQZFVNSDRSZGUIZJVOVGV
+      EVSEABGCDFUJUKVRVOGEVMETJZDFRVNVMVTULVHRJVJVNJUMVMEVLTVMUNAKVKUOUPUQURUSV
+      PEQVQVMDFRVNVPEVLUTVAVBVCVD $.
   $}
 
 
