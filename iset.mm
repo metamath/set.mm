@@ -178161,6 +178161,21 @@ $)
       FVEOPNZQZDOQZTVIVFRVIVGRVHVPVOVSVPVPVDKLZTVHVTVPGKRVTUNGKUHUIUJAVDKUOUKVN
       VRDOVKFVMVQVLVEOPVLAVDVDHZHVEAVDVDULWAVDAVDUMUPUQURUSUTVACVEEDVIFSCAEDVIF
       SVBVC $.
+
+    $d F a f k n z $.  $d S a f k n x z $.
+    $( The polynomial is a function on the complex numbers.  (Contributed by
+       Mario Carneiro, 22-Jul-2014.) $)
+    plyf $p |- ( F e. ( Poly ` S ) -> F : CC --> CC ) $=
+      ( vz vn vk va cfv wcel cc cc0 cv co cn0 wrex wf wss wa cvv sylancl syl2an
+      cply cfz cexp cmul csu cmpt wceq csn cun cmap elply simprbi simplrl nn0zd
+      0zd fzfigd plybss 0cnd snssd unssd ad2antrr adantr simplrr wb ssexg nn0ex
+      cnex elmapg mpbid elfznn0 ffvelcdm sseldd simpr mulcld fsumcl fmpttd feq1
+      expcl syl5ibrcom rexlimdvva mpd ) BAUAGHZBCIJDKZUBLZEKZFKZGZCKZWEUCLZUDLZ
+      EUEZUFZUGZFAJUHZUIZMUJLZNDMNZIIBOZWBAIPWQCAEDBFUKULWBWMWRDFMWPWBWCMHZWFWP
+      HZQZQZWRWMIIWLOXBCIWKIXBWHIHZQZWDWJEXDJWCXDUOXDWCWBWSWTXCUMUNUPXDWEWDHZQZ
+      WGWIXFWOIWGXDWOIPZXEWBXGXAXCWBAWNIABUQWBJIWBURUSUTVAZVBXDMWOWFOZWEMHZWGWO
+      HXEXDWTXIWBWSWTXCVCXDWORHZMRHWTXIVDXDXGIRHXKXHVGWOIRVESVFWOMWFRRVHSVIWEWC
+      VJZMWOWEWFVKTVLXDXCXJWIIHXEXBXCVMXLWHWEVRTVNVOVPIIBWLVQVSVTWA $.
   $}
 
 
