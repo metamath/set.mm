@@ -178238,6 +178238,40 @@ $)
       WBTZXGWCXRYCAWRWEURXTWDAYDXRAFHWFWGWRLFWHWIWJWKBXIXDJFWLWIWMDWOWN $.
   $}
 
+  ${
+    $d k z w A $.  $d k z w N $.  $d k z S $.
+    ply1term.1 $e |- F = ( z e. CC |-> ( A x. ( z ^ N ) ) ) $.
+    $( Lemma for ~ ply1term .  (Contributed by Mario Carneiro, 26-Jul-2014.) $)
+    ply1termlem $p |- ( ( A e. CC /\ N e. NN0 ) -> F = ( z e. CC |->
+      sum_ k e. ( 0 ... N ) ( if ( k = N , A , 0 ) x. ( z ^ k ) ) ) ) $=
+      ( vw cc wcel cn0 wa cv cexp co cmul cc0 wceq syl adantl adantr cfz simplr
+      cmpt cif csu cuz cfv wss nn0uz fzss1 elfz1eq iftrue simpll eqeltrd expcld
+      eleqtrdi mulcld cdif wn eldifn cz wb nn0zd fzsn eleq2d elsn2g bitrd mtbid
+      csn iffalsed oveq1d simpr eldifi elfznn0 expcl syl2an mul02d eqtrd fzdcel
+      wdc elfzelz syl3anc ralrimiva fzfigd fisumss oveq2 oveq12d syl2anc eqtr3d
+      0zd fsum1 mpteq2dva eqtr4id ) BHIZEJIZKZDAHBALZEMNZONZUCAHPEUANZCLZEQZBPU
+      DZWQXAMNZONZCUEZUCFWPAHXFWSWPWQHIZKZEEUANZXECUEZXFWSXHXIWTXEGCXHEPUFUGZIX
+      IWTUHXHEJXKWNWOXGUBZUIUPEPEUJRXHXAXIIZKZXCXDXNXCBHXNXBXCBQXMXBXHXAEUKSZXB
+      BPULZRXHWNXMWNWOXGUMZTUNXNWQXAWPXGXMUBXNXAEJXOXHWOXMXLTUNUOUQXHXAWTXIURIZ
+      KZXEPXDONPXSXCPXDOXSXBBPXSXMXBXRXMUSXHXAWTXIUTSXSEVAIZXMXBVBXSEXHWOXRXLTV
+      CXTXMXAEVIZIXBXTXIYAXAEVDVEXAEVAVFVGRVHVJVKXSXDXHXGXAJIZXDHIXRWPXGVLZXRXA
+      WTIYBXAWTXIVMXAEVNRWQXAVOVPVQVRXHGLZXIIVTZGWTXHYDWTIZKYDVAIZXTXTYEYFYGXHY
+      DPEWASXHXTYFXHEXLVCZTZYIYDEEVSWBWCXHPEXHWJYHWDWEXHXTWSHIXJWSQYHXHBWRXQXHW
+      QEYCXLUOUQXEWSCEXBXCBXDWROXPXAEWQMWFWGWKWHWIWLWM $.
+
+    $( A one-term polynomial.  (Contributed by Mario Carneiro, 17-Jul-2014.) $)
+    ply1term $p |- ( ( S C_ CC /\ A e. S /\ N e. NN0 ) ->
+                     F e. ( Poly ` S ) ) $=
+      ( vk cc wss wcel cn0 w3a cc0 csn cply cfv co cv wceq cz cun cfz cexp cmul
+      cif csu cmpt ssel2 ply1termlem stoic3 simp1 0cnd snssd unssd simp3 simpl2
+      wa elun1 syl ssun2 c0ex snss mpbir a1i elfzelz simpl3 nn0zd zdceq syl2an2
+      wdc ifcldcd elplyd eqeltrd plyun0 eleqtrdi ) CHIZBCJZEKJZLZDCMNZUAZOPZCOP
+      VSDAHMEUBQZGRZESZBMUEZARWDUCQUDQGUFUGZWBVPVQBHJVRDWGSCHBUHABGDEFUIUJVSAWF
+      WAGEVSCVTHVPVQVRUKVSMHVSULUMUNVPVQVRUOVSWDWCJZUQZWEBMWAWIVQBWAJVPVQVRWHUP
+      BCVTURUSMWAJZWIWJVTWAIVTCUTMWAVAVBVCVDWHWDTJVSETJWEVJWDMEVEWIEVPVQVRWHVFV
+      GWDEVHVIVKVLVMCVNVO $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
