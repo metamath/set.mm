@@ -178215,6 +178215,29 @@ $)
       VNACDFWGGVOVP $.
   $}
 
+  ${
+    $d j z A $.  $d j k z N $.  $d k z ph $.  $d j k z S $.
+    elplyd.1 $e |- ( ph -> S C_ CC ) $.
+    elplyd.2 $e |- ( ph -> N e. NN0 ) $.
+    elplyd.3 $e |- ( ( ph /\ k e. ( 0 ... N ) ) -> A e. S ) $.
+    $( Sufficient condition for elementhood in the set of polynomials.
+       (Contributed by Mario Carneiro, 17-Jul-2014.) $)
+    elplyd $p |- ( ph -> ( z e. CC |->
+      sum_ k e. ( 0 ... N ) ( A x. ( z ^ k ) ) ) e. ( Poly ` S ) ) $=
+      ( vj cc cc0 co cv cexp cmul csu cfv cn0 wcel cmpt cply nffvmpt1 nfcv nfov
+      cfz csn cun cif wceq fveq2 oveq2 oveq12d cbvsumi wa elfznn0 iftrue adantl
+      eqeltrd eqid fvmpt2 syl2an2 eqtrd oveq1d sumeq2dv eqtrid mpteq2dv wf 0cnd
+      wss snssd unssd elun1 syl adantlr wn ssun2 c0ex snss mpbir a1i cz wdc 0zd
+      nn0z nn0zd adantr fzdcel syl3anc ifcldadc fmpttd elplyr eqeltrrd eleqtrdi
+      plyun0 ) ABKLFUFMZCBNZENZOMZPMZEQZUAZDLUGZUHZUBRZDUBRABKWPJNZESWRWPTZCLUI
+      ZUAZRZWQXFOMZPMZJQZUAZXBXEABKXMXAAXMWPWRXIRZWSPMZEQXAWPXLXPJEEXJXKPESXHXF
+      UCEPUDEXKUDUEJXPUDXFWRUJXJXOXKWSPXFWRXIUKXFWRWQOULUMUNAWPXPWTEAXGUOZXOCWS
+      PXQXOXHCXGWRSTZAXHDTXOXHUJWRFUPXQXHCDXGXHCUJAXGCLUQURZIUSESXHDXIXIUTVAVBX
+      SVCVDVEVFVGAXDKVJFSTSXDXIVHXNXETADXCKGALKAVIVKVLHAESXHXDAXRUOZXGCLXDAXGCX
+      DTZXRXQCDTYAICDXCVMVNVOLXDTZXTXGVPUOYBXCXDVJXCDVQLXDVRVSVTWAXTWRWBTZLWBTF
+      WBTZXGWCXRYCAWRWEURXTWDAYDXRAFHWFWGWRLFWHWIWJWKBXIXDJFWLWIWMDWOWN $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
