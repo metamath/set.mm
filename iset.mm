@@ -178294,6 +178294,13 @@ $)
       adantr eqid ply1term mp3an3 eqeltrrd ) BDEZABFZGZCDACHZIJKZLKZMZDANOZBPQZ
       URVBCDAMVCURCDVAAURUSDFZGZVAATLKAVFUTTALVEUTTRURUSSUAUBVFAURADFVEBDAUCUKU
       DUEUFCDAUGUHUPUQIUIFVBVDFUJCABVBIVBULUMUNUO $.
+
+    $( The identity function is a polynomial.  (Contributed by Mario Carneiro,
+       17-Jul-2014.) $)
+    plyid $p |- ( ( S C_ CC /\ 1 e. S ) -> Xp e. ( Poly ` S ) ) $=
+      ( vz cc wss c1 wcel wa cidp cv cexp co cmpt cply cfv cres mptresid df-idp
+      cid exp1 mpteq2ia 3eqtr4i cn0 1nn0 plypow mp3an3 eqeltrid ) ACDZEAFZGHBCB
+      IZEJKZLZAMNZRCOBCUILHUKBCPQBCUJUIUISTUAUGUHEUBFUKULFUCBAEUDUEUF $.
   $}
 
 
