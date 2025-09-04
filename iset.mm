@@ -178195,6 +178195,24 @@ $)
     plyssc $p |- ( Poly ` S ) C_ ( Poly ` CC ) $=
       ( vf cply cfv cc wcel wss plybss ssid plyss sylancl sseld pm2.43i ssriv
       cv ) BACDZECDZBOZPFZRQFSPQRSAEGEEGPQGARHEIAEJKLMN $.
+
+    $d A a k n z $.  $d N a k n z $.
+    $( Sufficient condition for elementhood in the set of polynomials.
+       (Contributed by Mario Carneiro, 17-Jul-2014.)  (Revised by Mario
+       Carneiro, 23-Aug-2014.) $)
+    elplyr $p |- ( ( S C_ CC /\ N e. NN0 /\ A : NN0 --> S ) ->
+      ( z e. CC |->
+        sum_ k e. ( 0 ... N ) ( ( A ` k ) x. ( z ^ k ) ) ) e. ( Poly ` S ) ) $=
+      ( vn va cc wss cn0 wcel cc0 cfz co cv cfv cmul csu wceq cvv w3a cexp cmpt
+      wf csn cun cmap wrex cply simp1 simp2 simp3 ssun1 fss sylancl snssd unssd
+      wb 0cnd cnex ssexg nn0ex elmapg mpbird eqidd oveq2 sumeq1d mpteq2dv fveq1
+      eqeq2d oveq1d sumeq2sdv rspc2ev syl3anc elply sylanbrc ) CHIZEJKZJCBUDZUA
+      ZVQAHLEMNZDOZBPZAOWBUBNZQNZDRZUCZAHLFOZMNZWBGOZPZWDQNZDRZUCZSZGCLUEZUFZJU
+      GNZUHFJUHZWGCUIPKVQVRVSUJZVTVRBWRKZWGWGSZWSVQVRVSUKVTXAJWQBUDZVTVSCWQIXCV
+      QVRVSULCWPUMJCWQBUNUOVTWQTKZJTKXAXCURVTWQHIHTKXDVTCWPHWTVTLHVTUSUPUQUTWQH
+      TVAUOVBWQJBTTVCUOVDVTWGVEWOXBWGAHWAWLDRZUCZSFGEBJWRWHESZWNXFWGXGAHWMXEXGW
+      IWAWLDWHELMVFVGVHVJWJBSZXFWGWGXHAHXEWFXHWAWLWEDXHWKWCWDQWBWJBVIVKVLVHVJVM
+      VNACDFWGGVOVP $.
   $}
 
 
