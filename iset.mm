@@ -178189,6 +178189,12 @@ $)
       TZVPWAHZWHVLBSTZVOSTWIVLVKISTWKVJVKUKULBISUMUNKUOUQBVOSSUPUNVJWJVKABVOURU
       SVPWAPSUTVAVNGVQWBVBVHVCVDVLAIHWFVTNABIVEDACFEGVFVHVKWGWENVJDBCFEGVFVGVI
       $.
+
+    $( Every polynomial ring is contained in the ring of polynomials over
+       ` CC ` .  (Contributed by Mario Carneiro, 22-Jul-2014.) $)
+    plyssc $p |- ( Poly ` S ) C_ ( Poly ` CC ) $=
+      ( vf cply cfv cc wcel wss plybss ssid plyss sylancl sseld pm2.43i ssriv
+      cv ) BACDZECDZBOZPFZRQFSPQRSAEGEEGPQGARHEIAEJKLMN $.
   $}
 
 
