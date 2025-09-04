@@ -178283,6 +178283,16 @@ $)
       syl2anr mullidd mpteq2dva eqid ply1term eqeltrrd ) BDEZFBGZCHGZIZADFAJZCK
       LZMLZNZADULNBOPUJADUMULUJUKDGZQULUOUOUIULDGUJUORUGUHUISUKCTUAUBUCAFBUNCUN
       UDUEUF $.
+
+    $( A constant function is a polynomial.  (Contributed by Mario Carneiro,
+       17-Jul-2014.) $)
+    plyconst $p |- ( ( S C_ CC /\ A e. S ) ->
+                     ( CC X. { A } ) e. ( Poly ` S ) ) $=
+      ( vz cc wss wcel wa cv cc0 cexp co cmul cmpt csn cxp cply cfv wceq exp0
+      c1 adantl oveq2d ssel2 mulridd eqtrd mpteq2dva fconstmpt eqtr4di cn0 0nn0
+      adantr eqid ply1term mp3an3 eqeltrrd ) BDEZABFZGZCDACHZIJKZLKZMZDANOZBPQZ
+      URVBCDAMVCURCDVAAURUSDFZGZVAATLKAVFUTTALVEUTTRURUSSUAUBVFAURADFVEBDAUCUKU
+      DUEUFCDAUGUHUPUQIUIFVBVDFUJCABVBIVBULUMUNUO $.
   $}
 
 
