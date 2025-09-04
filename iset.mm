@@ -178176,6 +178176,19 @@ $)
       WGWIXFWOIWGXDWOIPZXEWBXGXAXCWBAWNIABUQWBJIWBURUSUTVAZVBXDMWOWFOZWEMHZWGWO
       HXEXDWTXIWBWSWTXCVCXDWORHZMRHWTXIVDXDXGIRHXKXHVGWOIRVESVFWOMWFRRVHSVIWEWC
       VJZMWOWEWFVKTVLXDXCXJWIIHXEXBXCVMXLWHWEVRTVNVOVPIIBWLVQVSVTWA $.
+
+    $d F a f k n z $.  $d S a f k n x z $.  $d T a f n $.
+    $( The polynomial set function preserves the subset relation.  (Contributed
+       by Mario Carneiro, 17-Jul-2014.) $)
+    plyss $p |- ( ( S C_ T /\ T C_ CC ) -> ( Poly ` S ) C_ ( Poly ` T ) ) $=
+      ( vf vz vn vk va wss cc cv cc0 co cfv wceq cun cn0 cmap wrex cvv wcel cfz
+      wa cexp cmul csu cmpt csn cab cply wi simpr cnex ssexg sylancl c0ex unexg
+      snex unss1 adantr mapss syl2anc ssrexv reximdv ss2abdv sstr plyval adantl
+      syl 3sstr4d ) ABHZBIHZUBZCJDIKEJUALFJZGJMDJVMUCLUDLFUEUFNZGAKUGZOZPQLZRZE
+      PRZCUHZVNGBVOOZPQLZRZEPRZCUHZAUIMZBUIMZVLVSWDCVLVRWCEPVLVQWBHZVRWCUJVLWAS
+      TZVPWAHZWHVLBSTZVOSTWIVLVKISTWKVJVKUKULBISUMUNKUOUQBVOSSUPUNVJWJVKABVOURU
+      SVPWAPSUTVAVNGVQWBVBVHVCVDVLAIHWFVTNABIVEDACFEGVFVHVKWGWENVJDBCFEGVFVGVI
+      $.
   $}
 
 
