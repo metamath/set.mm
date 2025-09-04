@@ -178272,6 +178272,19 @@ $)
       GWDEVHVIVKVLVMCVNVO $.
   $}
 
+  ${
+    $d k m n x z A $.  $d k m n M $.  $d k m n x z N $.  $d k m n z ph $.
+    $d k x z S $.
+    $( A power is a polynomial.  (Contributed by Mario Carneiro,
+       17-Jul-2014.) $)
+    plypow $p |- ( ( S C_ CC /\ 1 e. S /\ N e. NN0 ) ->
+                   ( z e. CC |-> ( z ^ N ) ) e. ( Poly ` S ) ) $=
+      ( cc wss c1 wcel cn0 w3a cv cexp co cmul cmpt cply cfv wa id simp3 expcl
+      syl2anr mullidd mpteq2dva eqid ply1term eqeltrrd ) BDEZFBGZCHGZIZADFAJZCK
+      LZMLZNZADULNBOPUJADUMULUJUKDGZQULUOUOUIULDGUJUORUGUHUISUKCTUAUBUCAFBUNCUN
+      UDUEUF $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
