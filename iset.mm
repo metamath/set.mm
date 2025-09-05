@@ -45121,6 +45121,25 @@ $)
       wa ) CEZBFZRDEGAFZQCHZDITCHZDIABJAKUAUBDSTCLMCDABNCDAOP $.
   $}
 
+  ${
+    $d A x $.  $d C x $.
+    $( Image of a function in maps-to notation.  (Contributed by Glauco
+       Siliprandi, 23-Oct-2021.) $)
+    mptima $p |- ( ( x e. A |-> B ) " C ) = ran ( x e. ( A i^i C ) |-> B ) $=
+      ( cmpt cima cres crn cin df-ima resmpt3 rneqi eqtri ) ABCEZDFNDGZHABDICEZ
+      HNDJOPABDCKLM $.
+  $}
+
+  ${
+    $d A x $.  $d C x $.
+    mptimass.1 $e |- ( ph -> C C_ A ) $.
+    $( Image of a function in maps-to notation for a subset.  (Contributed by
+       Glauco Siliprandi, 23-Oct-2021.) $)
+    mptimass $p |- ( ph -> ( ( x e. A |-> B ) " C ) = ran ( x e. C |-> B ) ) $=
+      ( cmpt cima cin crn mptima wss wceq sseqin2 sylib mpteq1d rneqd eqtrid )
+      ABCDGEHBCEIZDGZJBEDGZJBCDEKATUAABSEDAECLSEMFECNOPQR $.
+  $}
+
   $( The image of a set is a set.  Theorem 3.17 of [Monk1] p. 39.  (Contributed
      by NM, 24-Jul-1995.) $)
   imaexg $p |- ( A e. V -> ( A " B ) e. _V ) $=
