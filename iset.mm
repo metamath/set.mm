@@ -178615,6 +178615,17 @@ $)
       HIJUPIUQUR $.
   $}
 
+  ${
+    $d x y F $.  $d x y G $.  $d x y S $.
+    $( The sum of two polynomials is a polynomial.  (Contributed by Mario
+       Carneiro, 24-Jul-2014.) $)
+    plyaddcl $p |- ( ( F e. ( Poly ` S ) /\ G e. ( Poly ` S ) ) ->
+      ( F oF + G ) e. ( Poly ` CC ) ) $=
+      ( vx vy cply cfv wa cc plyssc simpl sselid simpr cv caddc co addcl adantl
+      wcel plyadd ) BAFGZSZCUASZHZDEIBCUDUAIFGZBAJZUBUCKLUDUAUECUFUBUCMLDNZISEN
+      ZISHUGUHOPISUDUGUHQRT $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
