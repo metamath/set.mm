@@ -178506,6 +178506,41 @@ $)
       UVIUVKUVLUVG $.
   $}
 
+  ${
+    $d k m n x y z B $.  $d a b j m n w x y z F $.  $d a b j k m n w x y z S $.
+    $d m n x y z A $.  $d a b j m n w x y z G $.  $d a b j k m n w x y z ph $.
+    $d k m n z M $.  $d k m n z N $.
+    plyadd.1 $e |- ( ph -> F e. ( Poly ` S ) ) $.
+    plyadd.2 $e |- ( ph -> G e. ( Poly ` S ) ) $.
+    plyadd.3 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x + y ) e. S ) $.
+    ${
+      plyadd.m $e |- ( ph -> M e. NN0 ) $.
+      plyadd.n $e |- ( ph -> N e. NN0 ) $.
+      plyadd.a $e |- ( ph -> A e. ( ( S u. { 0 } ) ^m NN0 ) ) $.
+      plyadd.b $e |- ( ph -> B e. ( ( S u. { 0 } ) ^m NN0 ) ) $.
+      plyadd.a2 $e |- ( ph -> ( A " ( ZZ>= ` ( M + 1 ) ) ) = { 0 } ) $.
+      plyadd.b2 $e |- ( ph -> ( B " ( ZZ>= ` ( N + 1 ) ) ) = { 0 } ) $.
+      plyadd.f $e |- ( ph -> F =
+        ( z e. CC |-> sum_ k e. ( 0 ... M ) ( ( A ` k ) x. ( z ^ k ) ) ) ) $.
+      plyadd.g $e |- ( ph -> G =
+        ( z e. CC |-> sum_ k e. ( 0 ... N ) ( ( B ` k ) x. ( z ^ k ) ) ) ) $.
+      $( Lemma for ~ plyadd .  (Contributed by Mario Carneiro, 21-Jul-2014.) $)
+      plyaddlem $p |- ( ph -> ( F oF + G ) e. ( Poly ` S ) ) $=
+        ( caddc cof co cc0 csn cun cply cfv cc cle wbr cif cfz cv cexp cmul csu
+        cmpt cn0 cmap wcel wf cvv wb wss plybss syl 0cnd snssd unssd cnex ssexg
+        sylancl nn0ex elmapg mpbid fssd plyaddlem1 cz wdc nn0zd syl2anc ifcldcd
+        zdcle eqid un0addcl a1i inidm off elfznn0 ffvelcdm syl2an elplyd plyun0
+        eqeltrd eleqtrdi ) AIJUDUEZUFZGUGUHZUIZUJUKZGUJUKZAXADULUGKLUMUNZLKUOZU
+        PUFZHUQZEFWTUFZUKZDUQXIURUFUSUFHUTVAXDADEFGHIJKLMNPQAVBXCULEAEXCVBVCUFZ
+        VDZVBXCEVEZRAXCVFVDZVBVFVDZXMXNVGAXCULVHULVFVDXOAGXBULAIXEVDGULVHMGIVIV
+        JZAUGULAVKVLVMZVNXCULVFVOVPZVQXCVBEVFVFVRVPVSZXRVTAVBXCULFAFXLVDZVBXCFV
+        EZSAXOXPYAYBVGXSVQXCVBFVFVFVRVPVSZXRVTTUAUBUCWAADXKXCHXGXRAXFLKVBQPAKWB
+        VDLWBVDXFWCAKPWDALQWDKLWGWEWFAVBXCXJVEXIVBVDXKXCVDXIXHVDABCVBVBVBUDXCXC
+        XCEFVFVFAGXCBUQCUQXQXCWHOWIXTYCXPAVQWJZYDVBWKWLXIXGWMVBXCXIXJWNWOWPWRGW
+        QWS $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
