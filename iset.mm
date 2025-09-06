@@ -178624,6 +178624,14 @@ $)
       ( vx vy cply cfv wa cc plyssc simpl sselid simpr cv caddc co addcl adantl
       wcel plyadd ) BAFGZSZCUASZHZDEIBCUDUAIFGZBAJZUBUCKLUDUAUECUFUBUCMLDNZISEN
       ZISHUGUHOPISUDUGUHQRT $.
+
+    $( The product of two polynomials is a polynomial.  (Contributed by Mario
+       Carneiro, 24-Jul-2014.) $)
+    plymulcl $p |- ( ( F e. ( Poly ` S ) /\ G e. ( Poly ` S ) ) ->
+      ( F oF x. G ) e. ( Poly ` CC ) ) $=
+      ( vx vy cply cfv wa cc plyssc simpl sselid simpr cv caddc co addcl adantl
+      wcel cmul mulcl plymul ) BAFGZSZCUCSZHZDEIBCUFUCIFGZBAJZUDUEKLUFUCUGCUHUD
+      UEMLDNZISENZISHZUIUJOPISUFUIUJQRUKUIUJTPISUFUIUJUARUB $.
   $}
 
 
