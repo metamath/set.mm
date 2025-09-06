@@ -178632,6 +178632,15 @@ $)
       ( vx vy cply cfv wa cc plyssc simpl sselid simpr cv caddc co addcl adantl
       wcel cmul mulcl plymul ) BAFGZSZCUCSZHZDEIBCUFUCIFGZBAJZUDUEKLUFUCUGCUHUD
       UEMLDNZISENZISHZUIUJOPISUFUIUJQRUKUIUJTPISUFUIUJUARUB $.
+
+    $( The difference of two polynomials is a polynomial.  (Contributed by
+       Mario Carneiro, 24-Jul-2014.) $)
+    plysubcl $p |- ( ( F e. ( Poly ` S ) /\ G e. ( Poly ` S ) ) ->
+      ( F oF - G ) e. ( Poly ` CC ) ) $=
+      ( vx vy cply cfv wa cc plyssc simpl sselid simpr cv caddc co addcl adantl
+      wcel cmul mulcl c1 cneg neg1cn a1i plysub ) BAFGZSZCUGSZHZDEIBCUJUGIFGZBA
+      JZUHUIKLUJUGUKCULUHUIMLDNZISENZISHZUMUNOPISUJUMUNQRUOUMUNTPISUJUMUNUARUBU
+      CISUJUDUEUF $.
   $}
 
 
