@@ -178603,6 +178603,16 @@ $)
       UAWMWAWRUUAUUCUOWBZWCWDWGWEWGYPFXQUEVFXMUUAXJOZUUDPNZUFUPZUQXLXRXFYLYOWFK
       UEVFXPUUOUUGXPXMXNUUHPNZLUPUUOUUGXMXOUUPLUUGXAUUHXNPUUJVSVTXMUUPUUNLUFUUK
       XNUUMUUHUUDPWRUUAXJWAUULWCWDWGWEWGYPAYTYRYSPNDTYQJVJWHWIWJWKWJWKWL $.
+
+    plysub.5 $e |- ( ph -> -u 1 e. S ) $.
+    $( The difference of two polynomials is a polynomial.  (Contributed by
+       Mario Carneiro, 21-Jul-2014.) $)
+    plysub $p |- ( ph -> ( F oF - G ) e. ( Poly ` S ) ) $=
+      ( cc c1 cof co cvv wcel wf plyf syl cneg csn cxp cmul caddc cmin cply cfv
+      wceq cnex ofnegsub mp3an2i plybss plyconst syl2anc plymul plyadd eqeltrrd
+      wss ) AELMUAZUBUCZFUDNOZUENOZEFUFNOZDUGUHZLPQALLERZLLFRZVCVDUIUJAEVEQZVFG
+      DESTAFVEQVGHDFSTLEFPUKULABCDEVBGABCDVAFADLUSZUTDQVAVEQAVHVIGDEUMTKUTDUNUO
+      HIJUPIUQUR $.
   $}
 
 
