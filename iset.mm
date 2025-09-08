@@ -178220,7 +178220,7 @@ $)
       SVBVC $.
 
     $d F a f k n z $.  $d S a f k n x z $.
-    $( The polynomial is a function on the complex numbers.  (Contributed by
+    $( A polynomial is a function on the complex numbers.  (Contributed by
        Mario Carneiro, 22-Jul-2014.) $)
     plyf $p |- ( F e. ( Poly ` S ) -> F : CC --> CC ) $=
       ( vz vn vk va cfv wcel cc cc0 cv co cn0 wrex wf wss wa cvv sylancl syl2an
