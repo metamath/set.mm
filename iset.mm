@@ -40270,6 +40270,20 @@ $)
       ( cif cun cpw ifelpwund elexd ) ABCDICDJKABCDEFGHLM $.
   $}
 
+  $( Existence of the conditional operator (closed form).  (Contributed by NM,
+     21-Mar-2011.)  (Proof shortened by BJ, 1-Sep-2022.) $)
+  ifexg $p |- ( ( A e. V /\ B e. W ) -> if ( ph , A , B ) e. _V ) $=
+    ( wcel wa simpl simpr ifexd ) BDFZCEFZGABCDEKLHKLIJ $.
+
+  ${
+    ifex.1 $e |- A e. _V $.
+    ifex.2 $e |- B e. _V $.
+    $( Existence of the conditional operator (inference form).  (Contributed by
+       NM, 2-Sep-2004.) $)
+    ifex $p |- if ( ph , A , B ) e. _V $=
+      ( cvv wcel cif ifexg mp2an ) BFGCFGABCHFGDEABCFFIJ $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -44936,20 +44950,21 @@ $)
 
   ${
     $d A x y $.
-    $( The restricted identity expressed with the class builder.  (Contributed
-       by FL, 25-Apr-2012.) $)
-    opabresid $p |- { <. x , y >. | ( x e. A /\ y = x ) } = ( _I |` A ) $=
-      ( weq copab cres cv wcel cid resopab equcom opabbii eqtr4i reseq1i eqtr3i
-      wa df-id ) BADZABEZCFAGCHRPABEICFRABCJSICSABDZABEIRTABBAKLABQMNO $.
+    $( The restricted identity relation expressed as an ordered-pair class
+       abstraction.  (Contributed by FL, 25-Apr-2012.) $)
+    opabresid $p |- ( _I |` A ) = { <. x , y >. | ( x e. A /\ y = x ) } $=
+      ( cid cres weq copab cv wcel df-id equcom opabbii eqtri reseq1i resopab
+      wa ) DCEBAFZABGZCEAHCIQPABGDRCDABFZABGRABJSQABABKLMNQABCOM $.
   $}
+
 
   ${
     $d A x y $.
-    $( The restricted identity expressed with the maps-to notation.
+    $( The restricted identity relation expressed in maps-to notation.
        (Contributed by FL, 25-Apr-2012.) $)
-    mptresid $p |- ( x e. A |-> x ) = ( _I |` A ) $=
-      ( vy cv cmpt wcel weq wa copab cid cres df-mpt opabresid eqtri ) ABADZEOB
-      FCAGHACIJBKACBOLACBMN $.
+    mptresid $p |- ( _I |` A ) = ( x e. A |-> x ) $=
+      ( vy cid cres cv wcel weq wa copab cmpt opabresid df-mpt eqtr4i ) DBEAFZB
+      GCAHIACJABOKACBLACBOMN $.
   $}
 
   $( The domain of a restricted identity function.  (Contributed by NM,
@@ -45104,6 +45119,25 @@ $)
     imassrn $p |- ( A " B ) C_ ran A $=
       ( vx vy cv wcel cop wex cab cima crn exsimpr ss2abi dfima3 dfrn3 3sstr4i
       wa ) CEZBFZRDEGAFZQCHZDITCHZDIABJAKUAUBDSTCLMCDABNCDAOP $.
+  $}
+
+  ${
+    $d A x $.  $d C x $.
+    $( Image of a function in maps-to notation.  (Contributed by Glauco
+       Siliprandi, 23-Oct-2021.) $)
+    mptima $p |- ( ( x e. A |-> B ) " C ) = ran ( x e. ( A i^i C ) |-> B ) $=
+      ( cmpt cima cres crn cin df-ima resmpt3 rneqi eqtri ) ABCEZDFNDGZHABDICEZ
+      HNDJOPABDCKLM $.
+  $}
+
+  ${
+    $d A x $.  $d C x $.
+    mptimass.1 $e |- ( ph -> C C_ A ) $.
+    $( Image of a function in maps-to notation for a subset.  (Contributed by
+       Glauco Siliprandi, 23-Oct-2021.) $)
+    mptimass $p |- ( ph -> ( ( x e. A |-> B ) " C ) = ran ( x e. C |-> B ) ) $=
+      ( cmpt cima cin crn mptima wss wceq sseqin2 sylib mpteq1d rneqd eqtrid )
+      ABCDGEHBCEIZDGZJBEDGZJBCDEKATUAABSEDAECLSEMFECNOPQR $.
   $}
 
   $( The image of a set is a set.  Theorem 3.17 of [Monk1] p. 39.  (Contributed
@@ -52572,10 +52606,10 @@ $)
        3-Nov-2015.)  (Proof modification is discouraged.) $)
     idref $p |- ( ( _I |` A ) C_ R <-> A. x e. A x R x ) $=
       ( cv cop wcel wral cmpt crn wss wbr cid cres wf eqid fmpt wfn opex fnmpti
-      vex mpbiran bitri df-br ralbii mptresid fnasrn eqtr3i sseq1i 3bitr4ri
-      df-f ) ADZUKEZCFZABGZABULHZIZCJZUKUKCKZABGLBMZCJUNBCUONZUQABCULUOUOOZPUTU
-      OBQUQABULUOUKUKATZVBRVASBCUOUJUAUBURUMABUKUKCUCUDUSUPCABUKHUSUPABUEABUKVB
-      UFUGUHUI $.
+      vex df-f bitri df-br ralbii mptresid eqcomi fnasrn eqtr3i sseq1i 3bitr4ri
+      mpbiran ) ADZULEZCFZABGZABUMHZIZCJZULULCKZABGLBMZCJUOBCUPNZURABCUMUPUPOZP
+      VAUPBQURABUMUPULULATZVCRVBSBCUPUAUKUBUSUNABULULCUCUDUTUQCABULHZUTUQUTVDAB
+      UEUFABULVCUGUHUIUJ $.
   $}
 
   ${
@@ -147130,10 +147164,11 @@ $)
        topology.  (Contributed by Mario Carneiro, 13-Aug-2015.) $)
     restid2 $p |- ( ( A e. V /\ J C_ ~P A ) -> ( J |`t A ) = J ) $=
       ( vx wcel cpw wss wa crest co cv cin cmpt crn cvv wceq pwexg adantr simpr
-      eqtrdi ssexd simpl restval syl2anc cid cres sselda elpwid df-ss mpteq2dva
-      sylib mptresid rneqd rnresi eqtrd ) ACEZBAFZGZHZBAIJZDBDKZALZMZNZBUSBOEUP
-      UTVDPUSBUQOUPUQOEURACQRUPURSZUAUPURUBDABOCUCUDUSVDUEBUFZNBUSVCVFUSVCDBVAM
-      VFUSDBVBVAUSVABEHZVAAGVBVAPVGVAAUSBUQVAVEUGUHVAAUIUKUJDBULTUMBUNTUO $.
+      ssexd simpl restval cid cres sselda elpwid df-ss sylib mpteq2dva mptresid
+      syl2anc eqtr4di rneqd rnresi eqtrdi eqtrd ) ACEZBAFZGZHZBAIJZDBDKZALZMZNZ
+      BUTBOEUQVAVEPUTBUROUQUROEUSACQRUQUSSZTUQUSUADABOCUBUKUTVEUCBUDZNBUTVDVGUT
+      VDDBVBMVGUTDBVCVBUTVBBEHZVBAGVCVBPVHVBAUTBURVBVFUEUFVBAUGUHUIDBUJULUMBUNU
+      OUP $.
 
     $( The subspace topology is a collection of subsets of the restriction set.
        (Contributed by Mario Carneiro, 13-Aug-2015.) $)
@@ -171200,13 +171235,13 @@ $)
        (Contributed by Mario Carneiro, 21-Mar-2015.) $)
     txswaphmeolem $p |- ( ( y e. Y , x e. X |-> <. x , y >. ) o.
         ( x e. X , y e. Y |-> <. y , x >. ) ) = ( _I |` ( X X. Y ) ) $=
-      ( vz cop cmpo ccom cxp cmpt wceq wtru csn ccnv cuni wcel cvv vex mpompt
-      cv cid cres opelxpi ancoms adantl eqidd sneq cnveqd unieqd opswapg eqtrdi
-      wa mp2an eqcomi a1i fmpoco mptru id mptresid 3eqtr2i ) BADCATZBTZFZGZABCD
-      VBVAFZGZHZABCDVCGZECDIZETZJUAVIUBVGVHKLABECDDCIZVEVJMZNZOZVCVFVDVACPZVBDP
-      ZULVEVKPZLVPVOVQVBVADCUCUDUELVFUFVDEVKVNJZKLVRVDBAEDCVNVCVJVEKZVNVEMZNZOZ
-      VCVSVMWAVSVLVTVJVEUGUHUIVBQPVAQPWBVCKBRARVBVAQQUJUMUKZSUNUOWCUPUQABECDVJV
-      CVJVCKURSEVIUSUT $.
+      ( vz cxp cv cmpt cop cmpo cid wceq mpompt wtru csn ccnv cuni wcel cvv vex
+      cres ccom id mptresid wa opelxpi ancoms adantl sneq cnveqd unieqd opswapg
+      eqidd mp2an eqtrdi eqcomi a1i fmpoco mptru 3eqtr4ri ) ECDFZEGZHABCDAGZBGZ
+      IZJZKVAUABADCVEJZABCDVDVCIZJZUBZABECDVBVEVBVELUCMEVAUDVJVFLNABECDDCFZVHVB
+      OZPZQZVEVIVGVCCRZVDDRZUEVHVKRZNVPVOVQVDVCDCUFUGUHNVIUMVGEVKVNHZLNVRVGBAED
+      CVNVEVBVHLZVNVHOZPZQZVEVSVMWAVSVLVTVBVHUIUJUKVDSRVCSRWBVELBTATVDVCSSULUNU
+      OZMUPUQWCURUSUT $.
 
     $( There is a homeomorphism from ` X X. Y ` to ` Y X. X ` .  (Contributed
        by Mario Carneiro, 21-Mar-2015.) $)
@@ -177695,38 +177730,37 @@ $)
     dvexp $p |- ( N e. NN -> ( CC _D ( x e. CC |-> ( x ^ N ) ) ) =
                   ( x e. CC |-> ( N x. ( x ^ ( N - 1 ) ) ) ) ) $=
       ( cc cexp co cmpt cdv c1 cmin cmul wceq caddc mpteq2dv oveq2d id wcel a1i
-      oveq1 cvv wf vn vk oveq2 oveq12d eqeq12d cid cres mpteq2ia mptresid eqtri
-      cv exp1 oveq2i csn cxp cc0 1m1e0 exp0 eqtrid eqtrdi fconstmpt eqtr4i dvid
-      1t1e1 cn cof nncn adantr ax-1cn pncan sylancl nnnn0 expcl syl2anr adddird
-      wa cn0 mulid2d 3eqtrd mpteq2dva mulcld nnm1nn0 simpr eqidd eqcomi offval2
-      cnex mulassd expm1t ancoms eqtr4d eqtrd oveq1d eqcomd sylan9eq cnelprrecn
-      cr cpr ssidd fmpttd wf1o f1oi f1of mp1i cdm dmeqd fdmd fconst feq1i mpbir
-      1ex fdmi dvimulf expp1 3eqtr2rd ex nnind ) CACAUKZUAUKZDEZFZGEZACXSXRXSHI
-      EZDEZJEZFZKCACXRHDEZFZGEZACHXRHHIEZDEZJEZFZKCACXRUBUKZDEZFZGEZACYNXRYNHIE
-      ZDEZJEZFZKZCACXRYNHLEZDEZFZGEZACUUCXRUUCHIEZDEZJEZFZKZCACXRBDEZFZGEZACBXR
-      BHIEZDEZJEZFZKUAUBBXSHKZYBYIYFYMUUSYAYHCGUUSACXTYGXSHXRDUCMNUUSACYEYLUUSX
-      SHYDYKJUUSOUUSYCYJXRDXSHHIRNUDMUEXSYNKZYBYQYFUUAUUTYAYPCGUUTACXTYOXSYNXRD
-      UCMNUUTACYEYTUUTXSYNYDYSJUUTOUUTYCYRXRDXSYNHIRNUDMUEXSUUCKZYBUUFYFUUJUVAY
-      AUUECGUVAACXTUUDXSUUCXRDUCMNUVAACYEUUIUVAXSUUCYDUUHJUVAOUVAYCUUGXRDXSUUCH
-      IRNUDMUEXSBKZYBUUNYFUURUVBYAUUMCGUVBACXTUULXSBXRDUCMNUVBACYEUUQUVBXSBYDUU
-      PJUVBOUVBYCUUOXRDXSBHIRNUDMUEYICUFCUGZGEZYMYHUVCCGYHACXRFZUVCACYGXRXRULUH
-      ACUIZUJUMYMCHUNZUOZUVDYMACHFZUVHACYLHXRCPZYLHHJEHUVJYKHHJUVJYKXRUPDEHYJUP
-      XRDUQUMXRURUSNVDUTUHACHVAZVBVCVBVBYNVEPZUUBUUKUVLUUBVPZUUJYQUVCJVFZEZUVDY
-      PUVNEZLVFZEZCYPUVCUVNEZGEZUUFUVLUUBUUJUUAUVCUVNEZUVPUVQEZUVRUVLUUJACYNYOJ
-      EZYOLEZFUWBUVLACUUIUWDUVLUVJVPZUUIUUCYOJEUWCHYOJEZLEUWDUWEUUHYOUUCJUWEUUG
-      YNXRDUWEYNCPZHCPZUUGYNKUVLUWGUVJYNVGVHZVIYNHVJVKNNUWEYNHYOUWIUWHUWEVIQZUV
-      JUVJYNVQPZYOCPUVLUVJOZYNVLZXRYNVMVNZVOUWEUWFYOUWCLUWEYOUWNVRZNVSVTUVLACUW
-      CYOLUWAUVPSCCCSPUVLWGQZUWEYNYOUWIUWNWAUWNUVLUWAACYTXRJEZFACUWCFUVLACYTXRJ
-      UUAUVCSCCUWPUWEYNYSUWIUVJUVJYRVQPYSCPUVLUWLYNWBXRYRVMVNZWAZUVLUVJWCZUVLUU
-      AWDUVCUVEKUVLUVEUVCUVFWEQZWFUVLACUWQUWCUWEUWQYNYSXRJEZJEUWCUWEYNYSXRUWIUW
-      RUWTWHUWEYOUXBYNJUVJUVLYOUXBKXRYNWIWJNWKVTWLUVLUVPACUWFFYPUVLACHYOJUVDYPS
-      CCUWPUWJUWNUVDUVIKUVLUVDUVHUVIVCUVKUJQUVLYPWDZWFUVLACUWFYOUWOVTWLWFWKUUBU
-      VRUWBUUBUVOUWAUVPUVQYQUUAUVCUVNRWMWNWOUVMCYPUVCCCWQCWRPUVMWPQUVMCWSUVLCCY
-      PTUUBUVLACYOCUWNWTVHCCUVCXACCUVCTUVMCXBCCUVCXCXDUVMYQXEUUAXECUVMYQUUAUVLU
-      UBWCXFUVMCCUUAUVLCCUUATUUBUVLACYTCUWSWTVHXGWLUVDXECKUVMCUVGUVDCUVGUVDTCUV
-      GUVHTCHXKXHCUVGUVDUVHVCXIXJXLQXMUVLUVTUUFKUUBUVLUVSUUECGUVLUVSACYOXRJEZFU
-      UEUVLACYOXRJYPUVCSCCUWPUWNUWTUXCUXAWFUVLACUUDUXDUVJUVJUWKUUDUXDKUVLUWLUWM
-      XRYNXNVNVTWKNVHXOXPXQ $.
+      oveq1 cvv wf vn vk cv oveq2 oveq12d eqeq12d cid cres exp1 mpteq2ia eqtr4i
+      mptresid oveq2i csn cxp cc0 1m1e0 exp0 eqtrid 1t1e1 eqtrdi fconstmpt dvid
+      cn cof nncn adantr ax-1cn pncan sylancl cn0 nnnn0 syl2anr adddird mulid2d
+      wa expcl 3eqtrd mpteq2dva cnex mulcld nnm1nn0 simpr eqidd offval2 mulassd
+      expm1t ancoms eqtr4d eqtrd eqtri oveq1d eqcomd sylan9eq cr cpr cnelprrecn
+      ssidd fmpttd wf1o f1oi f1of mp1i cdm dmeqd 1ex fconst feq1i mpbir dvimulf
+      fdmd fdmi expp1 3eqtr2rd ex nnind ) CACAUCZUAUCZDEZFZGEZACXRXQXRHIEZDEZJE
+      ZFZKCACXQHDEZFZGEZACHXQHHIEZDEZJEZFZKCACXQUBUCZDEZFZGEZACYMXQYMHIEZDEZJEZ
+      FZKZCACXQYMHLEZDEZFZGEZACUUBXQUUBHIEZDEZJEZFZKZCACXQBDEZFZGEZACBXQBHIEZDE
+      ZJEZFZKUAUBBXRHKZYAYHYEYLUURXTYGCGUURACXSYFXRHXQDUDMNUURACYDYKUURXRHYCYJJ
+      UUROUURYBYIXQDXRHHIRNUEMUFXRYMKZYAYPYEYTUUSXTYOCGUUSACXSYNXRYMXQDUDMNUUSA
+      CYDYSUUSXRYMYCYRJUUSOUUSYBYQXQDXRYMHIRNUEMUFXRUUBKZYAUUEYEUUIUUTXTUUDCGUU
+      TACXSUUCXRUUBXQDUDMNUUTACYDUUHUUTXRUUBYCUUGJUUTOUUTYBUUFXQDXRUUBHIRNUEMUF
+      XRBKZYAUUMYEUUQUVAXTUULCGUVAACXSUUKXRBXQDUDMNUVAACYDUUPUVAXRBYCUUOJUVAOUV
+      AYBUUNXQDXRBHIRNUEMUFYHCUGCUHZGEZYLYGUVBCGYGACXQFZUVBACYFXQXQUIUJACULZUKU
+      MYLCHUNZUOZUVCYLACHFZUVGACYKHXQCPZYKHHJEHUVIYJHHJUVIYJXQUPDEHYIUPXQDUQUMX
+      QURUSNUTVAUJACHVBZUKVCUKUKYMVDPZUUAUUJUVKUUAVPZUUIYPUVBJVEZEZUVCYOUVMEZLV
+      EZEZCYOUVBUVMEZGEZUUEUVKUUAUUIYTUVBUVMEZUVOUVPEZUVQUVKUUIACYMYNJEZYNLEZFU
+      WAUVKACUUHUWCUVKUVIVPZUUHUUBYNJEUWBHYNJEZLEUWCUWDUUGYNUUBJUWDUUFYMXQDUWDY
+      MCPZHCPZUUFYMKUVKUWFUVIYMVFVGZVHYMHVIVJNNUWDYMHYNUWHUWGUWDVHQZUVIUVIYMVKP
+      ZYNCPUVKUVIOZYMVLZXQYMVQVMZVNUWDUWEYNUWBLUWDYNUWMVOZNVRVSUVKACUWBYNLUVTUV
+      OSCCCSPUVKVTQZUWDYMYNUWHUWMWAUWMUVKUVTACYSXQJEZFACUWBFUVKACYSXQJYTUVBSCCU
+      WOUWDYMYRUWHUVIUVIYQVKPYRCPUVKUWKYMWBXQYQVQVMZWAZUVKUVIWCZUVKYTWDUVBUVDKU
+      VKUVEQZWEUVKACUWPUWBUWDUWPYMYRXQJEZJEUWBUWDYMYRXQUWHUWQUWSWFUWDYNUXAYMJUV
+      IUVKYNUXAKXQYMWGWHNWIVSWJUVKUVOACUWEFYOUVKACHYNJUVCYOSCCUWOUWIUWMUVCUVHKU
+      VKUVCUVGUVHVCUVJWKQUVKYOWDZWEUVKACUWEYNUWNVSWJWEWIUUAUVQUWAUUAUVNUVTUVOUV
+      PYPYTUVBUVMRWLWMWNUVLCYOUVBCCWOCWPPUVLWQQUVLCWRUVKCCYOTUUAUVKACYNCUWMWSVG
+      CCUVBWTCCUVBTUVLCXACCUVBXBXCUVLYPXDYTXDCUVLYPYTUVKUUAWCXEUVLCCYTUVKCCYTTU
+      UAUVKACYSCUWRWSVGXKWJUVCXDCKUVLCUVFUVCCUVFUVCTCUVFUVGTCHXFXGCUVFUVCUVGVCX
+      HXIXLQXJUVKUVSUUEKUUAUVKUVRUUDCGUVKUVRACYNXQJEZFUUDUVKACYNXQJYOUVBSCCUWOU
+      WMUWSUXBUWTWEUVKACUUCUXCUVIUVIUWJUUCUXCKUVKUWKUWLXQYMXMVMVSWINVGXNXOXP $.
   $}
 
   ${
@@ -177808,8 +177842,8 @@ $)
        (Contributed by Mario Carneiro, 1-Sep-2014.)  (Revised by Jim Kingdon,
        30-Dec-2023.) $)
     dvmptidcn $p |- ( CC _D ( x e. CC |-> x ) ) = ( x e. CC |-> 1 ) $=
-      ( cc cv cmpt cdv co cid cres c1 csn mptresid oveq2i dvid fconstmpt 3eqtri
-      cxp ) BABACDZEFBGBHZEFBIJPABIDQRBEABKLMABINO $.
+      ( cc cv cmpt cdv co cid cres c1 csn mptresid eqcomi oveq2i dvid fconstmpt
+      cxp 3eqtri ) BABACDZEFBGBHZEFBIJPABIDRSBESRABKLMNABIOQ $.
   $}
 
   ${
@@ -178060,6 +178094,554 @@ $(
   BASIC REAL AND COMPLEX FUNCTIONS
 ###############################################################################
 $)
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Polynomials
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Elementary properties of complex polynomials
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c Poly $.
+  $c Xp $.
+
+  $( Extend class notation to include the set of complex polynomials. $)
+  cply $a class Poly $.
+
+  $( Extend class notation to include the identity polynomial. $)
+  cidp $a class Xp $.
+
+  ${
+    $d a f k n x z $.
+    $( Define the set of polynomials on the complex numbers with coefficients
+       in the given subset.  (Contributed by Mario Carneiro, 17-Jul-2014.) $)
+    df-ply $a |- Poly = ( x e. ~P CC |-> { f | E. n e. NN0
+      E. a e. ( ( x u. { 0 } ) ^m NN0 ) f =
+        ( z e. CC |-> sum_ k e. ( 0 ... n ) ( ( a ` k ) x. ( z ^ k ) ) ) } ) $.
+
+    $( Define the identity polynomial.  (Contributed by Mario Carneiro,
+       17-Jul-2014.) $)
+    df-idp $a |- Xp = ( _I |` CC ) $.
+  $}
+
+  ${
+    $d S a f n x $.  $d a f k n x z $.
+    $( Value of the polynomial set function.  (Contributed by Mario Carneiro,
+       17-Jul-2014.) $)
+    plyval $p |- ( S C_ CC -> ( Poly ` S ) = { f | E. n e. NN0
+      E. a e. ( ( S u. { 0 } ) ^m NN0 ) f =
+        ( z e. CC |-> sum_ k e. ( 0 ... n ) ( ( a ` k ) x. ( z ^ k ) ) ) } ) $=
+      ( vx cc cv cc0 co wceq cun cn0 cmap wrex cab cvv wcel cnex cexp cmul cmpt
+      wss cfz cfv csu csn cply df-ply uneq1 oveq1d rexeqdv rexbidv abbidv elpw2
+      cpw biimpri wral nn0ex cxp wfn fnmap ssex c0ex snex unexg sylancl mp3an2i
+      a1i fnovex abrexexg syl ralrimivw abrexex2g sylancr fvmptd3 ) BHUDZGBCIAH
+      JEIUEKDIZFIUFAIVSUAKUBKDUGUCZLZFGIZJUHZMZNOKZPZENPZCQWAFBWCMZNOKZPZENPZCQ
+      ZHUQZUIRGACDEFUJWBBLZWGWKCWNWFWJENWNWAFWEWIWNWDWHNOWBBWCUKULUMUNUOBWMSVRB
+      HTUPURVRNRSZWJCQRSZENUSWLRSUTVRWPENVRWIRSZWPORRVAVBVRWHRSZWOWQVCVRBRSWCRS
+      WRBHTVDJVEVFBWCRRVGVHWOVRUTVJWHNRROVKVIFCWIVTRVLVMVNWJECNRRVOVPVQ $.
+
+    $( Reverse closure of the parameter ` S ` of the polynomial set function.
+       (Contributed by Mario Carneiro, 22-Jul-2014.) $)
+    plybss $p |- ( F e. ( Poly ` S ) -> S C_ CC ) $=
+      ( vx vf vz vn vk va cply cfv wcel cc cpw cv cc0 cfz co cexp cn0 wrex cmul
+      csu cmpt wceq csn cun cmap cab df-ply mptrcl elpwid ) BAIJKALCLMDNELOFNPQ
+      GNZHNJENULRQUAQGUBUCUDHCNOUEUFSUGQTFSTDUHIBACEDGFHUIUJUK $.
+
+    $d F a f n $.  $d S a f n x $.  $d a f k n x z $.
+    $( Definition of a polynomial with coefficients in ` S ` .  (Contributed by
+       Mario Carneiro, 17-Jul-2014.) $)
+    elply $p |- ( F e. ( Poly ` S ) <-> ( S C_ CC /\ E. n e. NN0
+      E. a e. ( ( S u. { 0 } ) ^m NN0 ) F =
+        ( z e. CC |-> sum_ k e. ( 0 ... n ) ( ( a ` k ) x. ( z ^ k ) ) ) ) ) $=
+      ( vf cply cfv wcel cc wss cc0 cv cfz co wceq cn0 wrex cvv cexp csu plybss
+      cmul cmpt csn cun cmap cab plyval eleq2d wi wa id cnex mptex eqeltrdi a1i
+      rexlimivv eqeq1 2rexbidv elab3 bitrdi biadanii ) EBHIZJZBKLZEAKMDNZOPCNZF
+      NZIANVIUAPUDPCUBZUEZQZFBMUFUGRUHPZSDRSZBEUCVGVFEGNZVLQZFVNSDRSZGUIZJVOVGV
+      EVSEABGCDFUJUKVRVOGEVMETJZDFRVNVMVTULVHRJVJVNJUMVMEVLTVMUNAKVKUOUPUQURUSV
+      PEQVQVMDFRVNVPEVLUTVAVBVCVD $.
+
+    $d n w $.
+    $( The coefficient function can be assumed to have zeroes outside
+       ` 0 ... n ` .  (Contributed by Mario Carneiro, 20-Jul-2014.)  (Revised
+       by Mario Carneiro, 23-Aug-2014.) $)
+    elply2 $p |- ( F e. ( Poly ` S ) <-> ( S C_ CC /\ E. n e. NN0
+    E. a e. ( ( S u. { 0 } ) ^m NN0 ) ( ( a " ( ZZ>= ` ( n + 1 ) ) ) = { 0 } /\
+  F = ( z e. CC |-> sum_ k e. ( 0 ... n ) ( ( a ` k ) x. ( z ^ k ) ) ) ) ) ) $=
+      ( vf vx cfv wcel cc cv co cc0 wceq cmpt wa cn0 wrex cvv vw cply wss caddc
+      c1 cuz cima csn cfz cexp cmul csu cun cmap elply cif wf simpr simpll cnex
+      wb ssexg sylancl c0ex snex unexg nn0ex elmapg mpbid ffvelcdmda ssun2 snss
+      mpbir a1i wdc nn0z adantl 0zd simpllr nn0zd fzdcel syl3anc ifcldcd fmpttd
+      mpbird cin crn mptima cxp fznuz elinel2 nsyl3 iffalsed mpteq2ia fconstmpt
+      eqtr4i rneqi wex peano2nn0 peano2zd uzidd elind elex2 rnxpm 3syl ad2antlr
+      cz eqtrid eqidd imaeq1 eqeq1d fveq1 elfznn0 eleq1w ifbieq1d eqid vex fvex
+      fveq2 ifex fvmpt syl iftrue eqtrd sylan9eq oveq1d sumeq2dv eqeq2d anbi12d
+      mpteq2dv rspcev syl12anc eqeq1 anbi2d rexbidv syl5ibrcom rexlimdva reximi
+      reximdva imdistani sylbi anim2i sylibr impbii ) EBUBIJZBKUCZFLZDLZUEUDMZU
+      FIZUGZNUHZOZEAKNUUHUIMZCLZUUGIZALUUOUJMZUKMZCULZPZOZQZFBUULUMZRUNMZSZDRSZ
+      QZUUEUUFEAKUUNUUOGLZIZUUQUKMZCULZPZOZGUVDSZDRSZQUVGABCDEGUOUUFUVOUVFUUFUV
+      NUVEDRUUFUUHRJZQZUVMUVEGUVDUVQUVHUVDJZQZUVEUVMUUMUVLUUTOZQZFUVDSZUVSHRHLZ
+      UUNJZUWCUVHIZNUPZPZUVDJZUWGUUJUGZUULOZUVLUVLOZUWBUVSUWHRUVCUWGUQZUVSHRUWF
+      UVCUVSUWCRJZQZUWDUWENUVCUVSRUVCUWCUVHUVSUVRRUVCUVHUQZUVQUVRURUVSUVCTJZRTJ
+      ZUVRUWOVAUVSBTJZUULTJUWPUVSUUFKTJUWRUUFUVPUVRUSUTBKTVBVCNVDVEBUULTTVFVCZV
+      GUVCRUVHTTVHVCVIVJNUVCJZUWNUWTUULUVCUCUULBVKNUVCVDVLVMVNUWNUWCXGJZNXGJUUH
+      XGJUWDVOUWMUXAUVSUWCVPVQUWNVRUWNUUHUUFUVPUVRUWMVSVTUWCNUUHWAWBWCWDUVSUWPU
+      WQUWHUWLVAUWSVGUVCRUWGTTVHVCWEUVPUWJUUFUVRUVPUWIHRUUJWFZUWFPZWGZUULHRUWFU
+      UJWHUVPUXDUXBUULWIZWGZUULUXCUXEUXCHUXBNPUXEHUXBUWFNUWCUXBJZUWDUWENUWDUWCU
+      UJJUXGUWCNUUHWJUWCRUUJWKWLWMWNHUXBNWOWPWQUVPUUIUXBJUALUXBJUAWRUXFUULOUVPR
+      UUJUUIUUHWSUVPUUIUVPUUHUUHVPWTXAXBUAUUIUXBXCUAUXBUULXDXEXHXHXFUVSUVLXIUWA
+      UWJUWKQFUWGUVDUUGUWGOZUUMUWJUVTUWKUXHUUKUWIUULUUGUWGUUJXJXKUXHUUTUVLUVLUX
+      HAKUUSUVKUXHUUNUURUVJCUXHUUOUUNJZQUUPUVIUUQUKUXHUXIUUPUUOUWGIZUVIUUOUUGUW
+      GXLUXIUXJUXIUVINUPZUVIUXIUUORJUXJUXKOUUOUUHXMHUUOUWFUXKRUWGUWCUUOOUWDUXIU
+      WEUVINHCUUNXNUWCUUOUVHXSXOUWGXPUXIUVINUUOUVHTTGXQCXQXRVDXTYAYBUXIUVINYCYD
+      YEYFYGYJYHYIYKYLUVMUVBUWAFUVDUVMUVAUVTUUMEUVLUUTYMYNYOYPYQYSYTUUAUVGUUFUV
+      AFUVDSZDRSZQUUEUVFUXMUUFUVEUXLDRUVBUVAFUVDUUMUVAURYRYRUUBABCDEFUOUUCUUD
+      $.
+
+    $d k z F $.
+    $( The set of polynomials is unaffected by the addition of zero.  (This is
+       built into the definition because all higher powers of a polynomial are
+       effectively zero, so we require that the coefficient field contain zero
+       to simplify some of our closure theorems.)  (Contributed by Mario
+       Carneiro, 17-Jul-2014.) $)
+    plyun0 $p |- ( Poly ` ( S u. { 0 } ) ) = ( Poly ` S ) $=
+      ( vf vz vn vk va cc0 cun cply cfv cc wss cv co cn0 cmap wrex wcel elply
+      wa csn cfz cexp cmul csu cmpt wceq snssi ax-mp biantru bitr2i unass unidm
+      0cn unss uneq2i eqtri oveq1i rexeqi rexbii anbi12i 3bitr4i eqriv ) BAGUAZ
+      HZIJZAIJZVEKLZBMZCKGDMUBNEMZFMJCMVJUCNUDNEUEUFUGZFVEVDHZOPNZQZDOQZTAKLZVK
+      FVEOPNZQZDOQZTVIVFRVIVGRVHVPVOVSVPVPVDKLZTVHVTVPGKRVTUNGKUHUIUJAVDKUOUKVN
+      VRDOVKFVMVQVLVEOPVLAVDVDHZHVEAVDVDULWAVDAVDUMUPUQURUSUTVACVEEDVIFSCAEDVIF
+      SVBVC $.
+
+    $d F a f k n z $.  $d S a f k n x z $.
+    $( A polynomial is a function on the complex numbers.  (Contributed by
+       Mario Carneiro, 22-Jul-2014.) $)
+    plyf $p |- ( F e. ( Poly ` S ) -> F : CC --> CC ) $=
+      ( vz vn vk va cfv wcel cc cc0 cv co cn0 wrex wf wss wa cvv sylancl syl2an
+      cply cfz cexp cmul csu cmpt wceq csn cun cmap elply simprbi simplrl nn0zd
+      0zd fzfigd plybss 0cnd snssd unssd ad2antrr adantr simplrr wb ssexg nn0ex
+      cnex elmapg mpbid elfznn0 ffvelcdm sseldd simpr mulcld fsumcl fmpttd feq1
+      expcl syl5ibrcom rexlimdvva mpd ) BAUAGHZBCIJDKZUBLZEKZFKZGZCKZWEUCLZUDLZ
+      EUEZUFZUGZFAJUHZUIZMUJLZNDMNZIIBOZWBAIPWQCAEDBFUKULWBWMWRDFMWPWBWCMHZWFWP
+      HZQZQZWRWMIIWLOXBCIWKIXBWHIHZQZWDWJEXDJWCXDUOXDWCWBWSWTXCUMUNUPXDWEWDHZQZ
+      WGWIXFWOIWGXDWOIPZXEWBXGXAXCWBAWNIABUQWBJIWBURUSUTVAZVBXDMWOWFOZWEMHZWGWO
+      HXEXDWTXIWBWSWTXCVCXDWORHZMRHWTXIVDXDXGIRHXKXHVGWOIRVESVFWOMWFRRVHSVIWEWC
+      VJZMWOWEWFVKTVLXDXCXJWIIHXEXBXCVMXLWHWEVRTVNVOVPIIBWLVQVSVTWA $.
+
+    $d F a f k n z $.  $d S a f k n x z $.  $d T a f n $.
+    $( The polynomial set function preserves the subset relation.  (Contributed
+       by Mario Carneiro, 17-Jul-2014.) $)
+    plyss $p |- ( ( S C_ T /\ T C_ CC ) -> ( Poly ` S ) C_ ( Poly ` T ) ) $=
+      ( vf vz vn vk va wss cc cv cc0 co cfv wceq cun cn0 cmap wrex cvv wcel cfz
+      wa cexp cmul csu cmpt csn cab cply wi simpr cnex ssexg sylancl c0ex unexg
+      snex unss1 adantr mapss syl2anc ssrexv reximdv ss2abdv sstr plyval adantl
+      syl 3sstr4d ) ABHZBIHZUBZCJDIKEJUALFJZGJMDJVMUCLUDLFUEUFNZGAKUGZOZPQLZRZE
+      PRZCUHZVNGBVOOZPQLZRZEPRZCUHZAUIMZBUIMZVLVSWDCVLVRWCEPVLVQWBHZVRWCUJVLWAS
+      TZVPWAHZWHVLBSTZVOSTWIVLVKISTWKVJVKUKULBISUMUNKUOUQBVOSSUPUNVJWJVKABVOURU
+      SVPWAPSUTVAVNGVQWBVBVHVCVDVLAIHWFVTNABIVEDACFEGVFVHVKWGWENVJDBCFEGVFVGVI
+      $.
+
+    $( Every polynomial ring is contained in the ring of polynomials over
+       ` CC ` .  (Contributed by Mario Carneiro, 22-Jul-2014.) $)
+    plyssc $p |- ( Poly ` S ) C_ ( Poly ` CC ) $=
+      ( vf cply cfv cc wcel wss plybss ssid plyss sylancl sseld pm2.43i ssriv
+      cv ) BACDZECDZBOZPFZRQFSPQRSAEGEEGPQGARHEIAEJKLMN $.
+
+    $d A a k n z $.  $d N a k n z $.
+    $( Sufficient condition for elementhood in the set of polynomials.
+       (Contributed by Mario Carneiro, 17-Jul-2014.)  (Revised by Mario
+       Carneiro, 23-Aug-2014.) $)
+    elplyr $p |- ( ( S C_ CC /\ N e. NN0 /\ A : NN0 --> S ) ->
+      ( z e. CC |->
+        sum_ k e. ( 0 ... N ) ( ( A ` k ) x. ( z ^ k ) ) ) e. ( Poly ` S ) ) $=
+      ( vn va cc wss cn0 wcel cc0 cfz co cv cfv cmul csu wceq cvv w3a cexp cmpt
+      wf csn cun cmap wrex cply simp1 simp2 simp3 ssun1 fss sylancl snssd unssd
+      wb 0cnd cnex ssexg nn0ex elmapg mpbird eqidd oveq2 sumeq1d mpteq2dv fveq1
+      eqeq2d oveq1d sumeq2sdv rspc2ev syl3anc elply sylanbrc ) CHIZEJKZJCBUDZUA
+      ZVQAHLEMNZDOZBPZAOWBUBNZQNZDRZUCZAHLFOZMNZWBGOZPZWDQNZDRZUCZSZGCLUEZUFZJU
+      GNZUHFJUHZWGCUIPKVQVRVSUJZVTVRBWRKZWGWGSZWSVQVRVSUKVTXAJWQBUDZVTVSCWQIXCV
+      QVRVSULCWPUMJCWQBUNUOVTWQTKZJTKXAXCURVTWQHIHTKXDVTCWPHWTVTLHVTUSUPUQUTWQH
+      TVAUOVBWQJBTTVCUOVDVTWGVEWOXBWGAHWAWLDRZUCZSFGEBJWRWHESZWNXFWGXGAHWMXEXGW
+      IWAWLDWHELMVFVGVHVJWJBSZXFWGWGXHAHXEWFXHWAWLWEDXHWKWCWDQWBWJBVIVKVLVHVJVM
+      VNACDFWGGVOVP $.
+  $}
+
+  ${
+    $d j z A $.  $d j k z N $.  $d k z ph $.  $d j k z S $.
+    elplyd.1 $e |- ( ph -> S C_ CC ) $.
+    elplyd.2 $e |- ( ph -> N e. NN0 ) $.
+    elplyd.3 $e |- ( ( ph /\ k e. ( 0 ... N ) ) -> A e. S ) $.
+    $( Sufficient condition for elementhood in the set of polynomials.
+       (Contributed by Mario Carneiro, 17-Jul-2014.) $)
+    elplyd $p |- ( ph -> ( z e. CC |->
+      sum_ k e. ( 0 ... N ) ( A x. ( z ^ k ) ) ) e. ( Poly ` S ) ) $=
+      ( vj cc cc0 co cv cexp cmul csu cfv cn0 wcel cmpt cply nffvmpt1 nfcv nfov
+      cfz csn cun cif wceq fveq2 oveq2 oveq12d cbvsumi wa elfznn0 iftrue adantl
+      eqeltrd eqid fvmpt2 syl2an2 eqtrd oveq1d sumeq2dv eqtrid mpteq2dv wf 0cnd
+      wss snssd unssd elun1 syl adantlr wn ssun2 c0ex snss mpbir a1i cz wdc 0zd
+      nn0z nn0zd adantr fzdcel syl3anc ifcldadc fmpttd elplyr eqeltrrd eleqtrdi
+      plyun0 ) ABKLFUFMZCBNZENZOMZPMZEQZUAZDLUGZUHZUBRZDUBRABKWPJNZESWRWPTZCLUI
+      ZUAZRZWQXFOMZPMZJQZUAZXBXEABKXMXAAXMWPWRXIRZWSPMZEQXAWPXLXPJEEXJXKPESXHXF
+      UCEPUDEXKUDUEJXPUDXFWRUJXJXOXKWSPXFWRXIUKXFWRWQOULUMUNAWPXPWTEAXGUOZXOCWS
+      PXQXOXHCXGWRSTZAXHDTXOXHUJWRFUPXQXHCDXGXHCUJAXGCLUQURZIUSESXHDXIXIUTVAVBX
+      SVCVDVEVFVGAXDKVJFSTSXDXIVHXNXETADXCKGALKAVIVKVLHAESXHXDAXRUOZXGCLXDAXGCX
+      DTZXRXQCDTYAICDXCVMVNVOLXDTZXTXGVPUOYBXCXDVJXCDVQLXDVRVSVTWAXTWRWBTZLWBTF
+      WBTZXGWCXRYCAWRWEURXTWDAYDXRAFHWFWGWRLFWHWIWJWKBXIXDJFWLWIWMDWOWN $.
+  $}
+
+  ${
+    $d k z w A $.  $d k z w N $.  $d k z S $.
+    ply1term.1 $e |- F = ( z e. CC |-> ( A x. ( z ^ N ) ) ) $.
+    $( Lemma for ~ ply1term .  (Contributed by Mario Carneiro, 26-Jul-2014.) $)
+    ply1termlem $p |- ( ( A e. CC /\ N e. NN0 ) -> F = ( z e. CC |->
+      sum_ k e. ( 0 ... N ) ( if ( k = N , A , 0 ) x. ( z ^ k ) ) ) ) $=
+      ( vw cc wcel cn0 wa cv cexp co cmul cc0 wceq syl adantl adantr cfz simplr
+      cmpt cif csu cuz cfv wss nn0uz fzss1 elfz1eq iftrue simpll eqeltrd expcld
+      eleqtrdi mulcld cdif wn eldifn cz wb nn0zd fzsn eleq2d elsn2g bitrd mtbid
+      csn iffalsed oveq1d simpr eldifi elfznn0 expcl syl2an mul02d eqtrd fzdcel
+      wdc elfzelz syl3anc ralrimiva fzfigd fisumss oveq2 oveq12d syl2anc eqtr3d
+      0zd fsum1 mpteq2dva eqtr4id ) BHIZEJIZKZDAHBALZEMNZONZUCAHPEUANZCLZEQZBPU
+      DZWQXAMNZONZCUEZUCFWPAHXFWSWPWQHIZKZEEUANZXECUEZXFWSXHXIWTXEGCXHEPUFUGZIX
+      IWTUHXHEJXKWNWOXGUBZUIUPEPEUJRXHXAXIIZKZXCXDXNXCBHXNXBXCBQXMXBXHXAEUKSZXB
+      BPULZRXHWNXMWNWOXGUMZTUNXNWQXAWPXGXMUBXNXAEJXOXHWOXMXLTUNUOUQXHXAWTXIURIZ
+      KZXEPXDONPXSXCPXDOXSXBBPXSXMXBXRXMUSXHXAWTXIUTSXSEVAIZXMXBVBXSEXHWOXRXLTV
+      CXTXMXAEVIZIXBXTXIYAXAEVDVEXAEVAVFVGRVHVJVKXSXDXHXGXAJIZXDHIXRWPXGVLZXRXA
+      WTIYBXAWTXIVMXAEVNRWQXAVOVPVQVRXHGLZXIIVTZGWTXHYDWTIZKYDVAIZXTXTYEYFYGXHY
+      DPEWASXHXTYFXHEXLVCZTZYIYDEEVSWBWCXHPEXHWJYHWDWEXHXTWSHIXJWSQYHXHBWRXQXHW
+      QEYCXLUOUQXEWSCEXBXCBXDWROXPXAEWQMWFWGWKWHWIWLWM $.
+
+    $( A one-term polynomial.  (Contributed by Mario Carneiro, 17-Jul-2014.) $)
+    ply1term $p |- ( ( S C_ CC /\ A e. S /\ N e. NN0 ) ->
+                     F e. ( Poly ` S ) ) $=
+      ( vk cc wss wcel cn0 w3a cc0 csn cply cfv co cv wceq cz cun cfz cexp cmul
+      cif csu cmpt ssel2 ply1termlem stoic3 simp1 0cnd snssd unssd simp3 simpl2
+      wa elun1 syl ssun2 c0ex snss mpbir a1i elfzelz simpl3 nn0zd zdceq syl2an2
+      wdc ifcldcd elplyd eqeltrd plyun0 eleqtrdi ) CHIZBCJZEKJZLZDCMNZUAZOPZCOP
+      VSDAHMEUBQZGRZESZBMUEZARWDUCQUDQGUFUGZWBVPVQBHJVRDWGSCHBUHABGDEFUIUJVSAWF
+      WAGEVSCVTHVPVQVRUKVSMHVSULUMUNVPVQVRUOVSWDWCJZUQZWEBMWAWIVQBWAJVPVQVRWHUP
+      BCVTURUSMWAJZWIWJVTWAIVTCUTMWAVAVBVCVDWHWDTJVSETJWEVJWDMEVEWIEVPVQVRWHVFV
+      GWDEVHVIVKVLVMCVNVO $.
+  $}
+
+  ${
+    $d k m n x z A $.  $d k m n M $.  $d k m n x z N $.  $d k m n z ph $.
+    $d k x z S $.
+    $( A power is a polynomial.  (Contributed by Mario Carneiro,
+       17-Jul-2014.) $)
+    plypow $p |- ( ( S C_ CC /\ 1 e. S /\ N e. NN0 ) ->
+                   ( z e. CC |-> ( z ^ N ) ) e. ( Poly ` S ) ) $=
+      ( cc wss c1 wcel cn0 w3a cv cexp co cmul cmpt cply cfv wa id simp3 expcl
+      syl2anr mullidd mpteq2dva eqid ply1term eqeltrrd ) BDEZFBGZCHGZIZADFAJZCK
+      LZMLZNZADULNBOPUJADUMULUJUKDGZQULUOUOUIULDGUJUORUGUHUISUKCTUAUBUCAFBUNCUN
+      UDUEUF $.
+
+    $( A constant function is a polynomial.  (Contributed by Mario Carneiro,
+       17-Jul-2014.) $)
+    plyconst $p |- ( ( S C_ CC /\ A e. S ) ->
+                     ( CC X. { A } ) e. ( Poly ` S ) ) $=
+      ( vz cc wss wcel wa cv cc0 cexp co cmul cmpt csn cxp cply cfv wceq exp0
+      c1 adantl oveq2d ssel2 mulridd eqtrd mpteq2dva fconstmpt eqtr4di cn0 0nn0
+      adantr eqid ply1term mp3an3 eqeltrrd ) BDEZABFZGZCDACHZIJKZLKZMZDANOZBPQZ
+      URVBCDAMVCURCDVAAURUSDFZGZVAATLKAVFUTTALVEUTTRURUSSUAUBVFAURADFVEBDAUCUKU
+      DUEUFCDAUGUHUPUQIUIFVBVDFUJCABVBIVBULUMUNUO $.
+
+    $( The identity function is a polynomial.  (Contributed by Mario Carneiro,
+       17-Jul-2014.) $)
+    plyid $p |- ( ( S C_ CC /\ 1 e. S ) -> Xp e. ( Poly ` S ) ) $=
+      ( vz cc wss c1 wcel wa cidp cv cexp co cmpt cply cfv cres mptresid df-idp
+      cid exp1 mpteq2ia 3eqtr4i cn0 1nn0 plypow mp3an3 eqeltrid ) ACDZEAFZGHBCB
+      IZEJKZLZAMNZRCOBCUILHUKBCPQBCUJUIUISTUAUGUHEUBFUKULFUCBAEUDUEUF $.
+  $}
+
+  ${
+    $d m n A $.  $d k m n B $.  $d k m n j M $.  $d k m n j N $.
+    $d k m n z j ph $.
+    plyaddlem.1 $e |- ( ph -> F e. ( Poly ` S ) ) $.
+    plyaddlem.2 $e |- ( ph -> G e. ( Poly ` S ) ) $.
+    plyaddlem.m $e |- ( ph -> M e. NN0 ) $.
+    plyaddlem.n $e |- ( ph -> N e. NN0 ) $.
+    plyaddlem.a $e |- ( ph -> A : NN0 --> CC ) $.
+    plyaddlem.b $e |- ( ph -> B : NN0 --> CC ) $.
+    plyaddlem.a2 $e |- ( ph -> ( A " ( ZZ>= ` ( M + 1 ) ) ) = { 0 } ) $.
+    plyaddlem.b2 $e |- ( ph -> ( B " ( ZZ>= ` ( N + 1 ) ) ) = { 0 } ) $.
+    plyaddlem.f $e |- ( ph -> F =
+      ( z e. CC |-> sum_ k e. ( 0 ... M ) ( ( A ` k ) x. ( z ^ k ) ) ) ) $.
+    plyaddlem.g $e |- ( ph -> G =
+      ( z e. CC |-> sum_ k e. ( 0 ... N ) ( ( B ` k ) x. ( z ^ k ) ) ) ) $.
+    $( Derive the coefficient function for the sum of two polynomials.
+       (Contributed by Mario Carneiro, 23-Jul-2014.) $)
+    plyaddlem1 $p |- ( ph -> ( F oF + G ) = ( z e. CC |->
+        sum_ k e. ( 0 ... if ( M <_ N , N , M ) )
+          ( ( ( A oF + B ) ` k ) x. ( z ^ k ) ) ) ) $=
+      ( vj caddc cof co cc cc0 cfz cfv cexp cmul csu cmpt cle wbr cif wcel cnex
+      cv cvv a1i wa cfn 0zd nn0zd fzfigd adantr cn0 wf elfznn0 adantl ffvelcdmd
+      ad2antrr simplr expcld mulcld fsumcl offval2 cz cpr cr csup wceq 2zsupmax
+      clt syl2anc ffvelcdmda sylan2 ffnd eqidd oveq1d eqtrd wss cuz wdc breqtrd
+      nn0red eluz2 syl3anbrc fzss2 syl cdif c1 cima wn eldifn cun wo cmin nn0uz
+      eldifi peano2nn0 uzsplit eqtrid nn0cnd ax-1cn pncan sylancl oveq2d uneq1d
+      eleqtrdi eleqtrd elun sylib ord mpd wi cdm ffund ssun2 sseqtrrid sseqtrrd
+      wfun fdmd funfvima2 elsni mul02d fzdcel syl3anc ralrimiva fisumss adantll
+      zmaxcl eqeltrrd expcl fsumadd nn0ex inidm addcld adantlr adddird sumeq2dv
+      ofvalg ifcldcd maxle1 csn elfzelz maxle2 oveq12d 3eqtr4d mpteq2dva eqtr4d
+      zdcle ) AGHUBUCZUDBUEUFIUGUDZFURZCUHZBURZUVEUIUDZUJUDZFUKZUFJUGUDZUVEDUHZ
+      UVHUJUDZFUKZUBUDZULBUEUFIJUMUNZJIUOZUGUDZUVECDUVCUDUHZUVHUJUDZFUKZULABUEU
+      VJUVNUBGHUSUEUEUEUSUPAUQUTAUVGUEUPZVAZUVDUVIFAUVDVBUPUWBAUFIAVCZAIMVDZVEV
+      FUWCUVEUVDUPZVAZUVFUVHUWGVGUEUVECAVGUECVHZUWBUWFOVLUWFUVEVGUPZUWCUVEIVIZV
+      JZVKUWGUVGUVEAUWBUWFVMUWKVNVOVPUWCUVKUVMFAUVKVBUPUWBAUFJUWDAJNVDZVEVFUWCU
+      VEUVKUPZVAZUVLUVHUWNVGUEUVEDAVGUEDVHZUWBUWMPVLUWMUWIUWCUVEJVIZVJZVKUWNUVG
+      UVEAUWBUWMVMUWQVNVOVPSTVQABUEUWAUVOUWCUVRUVIUVMUBUDZFUKUVRUVIFUKZUVRUVMFU
+      KZUBUDUWAUVOUWCUVRUVIUVMFUWCUFUVQUWCVCAUVQVRUPZUWBAIJVSVTWDWAZUVQVRAIVRUP
+      ZJVRUPZUXBUVQWBUWEUWLIJWCWEZAUXCUXDUXBVRUPUWEUWLIJUUBWEUUCVFVEZUVEUVRUPZU
+      WCUWIUVIUEUPZUVEUVQVIZUWCUWIVAZUVFUVHUWCVGUEUVECAUWHUWBOVFWFZUWBUWIUVHUEU
+      PZAUVGUVEUUDUUAZVOZWGUXGUWCUWIUVMUEUPZUXIUXJUVLUVHUWCVGUEUVEDAUWOUWBPVFWF
+      ZUXMVOZWGUUEUWCUVRUVTUWRFUXGUWCUWIUVTUWRWBUXIUXJUVTUVFUVLUBUDZUVHUJUDUWRU
+      XJUVSUXRUVHUJAUWIUVSUXRWBUWBAVGVGUVFUVLUBVGUECDUSUSUVEAVGUECOWHAVGUEDPWHV
+      GUSUPAUUFUTZUXSVGUUGAUWIVAZUVFWIUXTUVLWIUXTUVFUVLAVGUEUVECOWFAVGUEUVEDPWF
+      UUHUULUUIWJUXJUVFUVLUVHUXKUXPUXMUUJWKWGUUKUWCUVJUWSUVNUWTUBUWCUVDUVRUVIUA
+      FAUVDUVRWLZUWBAUVQIWMUHUPZUYAAUXCUXAIUVQUMUNUYBUWEAUVPJIVRUWLUWEAUXCUXDUV
+      PWNUWEUWLIJUVBWEUUMZAIUXBUVQUMAIVTUPZJVTUPZIUXBUMUNAIMWPZAJNWPZIJUUNWEUXE
+      WOIUVQWQWRIUFUVQWSWTVFUWFUWCUWIUXHUWJUXNWGUWCUVEUVRUVDXAUPZVAZUVIUFUVHUJU
+      DZUFUYIUVFUFUVHUJUYIUVFUFUUOZUPUVFUFWBUYIUVFCIXBUBUDZWMUHZXCZUYKUYIUVEUYM
+      UPZUVFUYNUPZUYIUWFXDZUYOUYHUYQUWCUVEUVRUVDXEVJUYIUWFUYOUYIUVEUVDUYMXFZUPU
+      WFUYOXGUYIUVEVGUYRUYHUWIUWCUYHUXGUWIUVEUVRUVDXJUXIWTZVJAVGUYRWBUWBUYHAVGU
+      FUYLXBXHUDZUGUDZUYMXFZUYRAVGUFWMUHZVUBXIAUYLVUCUPVUCVUBWBAUYLVGVUCAIVGUPU
+      YLVGUPMIXKWTXIXTUFUYLXLWTXMZAVUAUVDUYMAUYTIUFUGAIUEUPXBUEUPZUYTIWBAIMXNXO
+      IXBXPXQXRXSWKVLYAUVEUVDUYMYBYCYDYEAUYOUYPYFZUWBUYHACYLUYMCYGZWLVUFAVGUECO
+      YHAUYMVGVUGAVUBUYMVGUYMVUAYIVUDYJAVGUECOYMYKUYMUVECYNWEVLYEAUYNUYKWBUWBUY
+      HQVLYAUVFUFYOWTWJUYIUVHUYHUWCUWIUXLUYSUXMWGYPWKUWCUAURZUVDUPWNZUAUVRUWCVU
+      HUVRUPZVAZVUHVRUPZUFVRUPZUXCVUIVUJVULUWCVUHUFUVQUUPVJZVUKVCZAUXCUWBVUJUWE
+      VLVUHUFIYQYRYSUXFYTUWCUVKUVRUVMUAFAUVKUVRWLZUWBAUVQJWMUHUPZVUPAUXDUXAJUVQ
+      UMUNVUQUWLUYCAJUXBUVQUMAUYDUYEJUXBUMUNUYFUYGIJUUQWEUXEWOJUVQWQWRJUFUVQWSW
+      TVFUWMUWCUWIUXOUWPUXQWGUWCUVEUVRUVKXAUPZVAZUVMUYJUFVUSUVLUFUVHUJVUSUVLUYK
+      UPUVLUFWBVUSUVLDJXBUBUDZWMUHZXCZUYKVUSUVEVVAUPZUVLVVBUPZVUSUWMXDZVVCVURVV
+      EUWCUVEUVRUVKXEVJVUSUWMVVCVUSUVEUVKVVAXFZUPUWMVVCXGVUSUVEVGVVFVURUWIUWCVU
+      RUXGUWIUVEUVRUVKXJUXIWTZVJAVGVVFWBUWBVURAVGUFVUTXBXHUDZUGUDZVVAXFZVVFAVGV
+      UCVVJXIAVUTVUCUPVUCVVJWBAVUTVGVUCAJVGUPVUTVGUPNJXKWTXIXTUFVUTXLWTXMZAVVIU
+      VKVVAAVVHJUFUGAJUEUPVUEVVHJWBAJNXNXOJXBXPXQXRXSWKVLYAUVEUVKVVAYBYCYDYEAVV
+      CVVDYFZUWBVURADYLVVADYGZWLVVLAVGUEDPYHAVVAVGVVMAVVJVVAVGVVAVVIYIVVKYJAVGU
+      EDPYMYKVVAUVEDYNWEVLYEAVVBUYKWBUWBVURRVLYAUVLUFYOWTWJVUSUVHVURUWCUWIUXLVV
+      GUXMWGYPWKUWCVUHUVKUPWNZUAUVRVUKVULVUMUXDVVNVUNVUOAUXDUWBVUJUWLVLVUHUFJYQ
+      YRYSUXFYTUURUUSUUTUVA $.
+
+    $( Derive the coefficient function for the product of two polynomials.
+       (Contributed by Mario Carneiro, 23-Jul-2014.) $)
+    plymullem1 $p |- ( ph -> ( F oF x. G ) = ( z e. CC |->
+        sum_ n e. ( 0 ... ( M + N ) ) ( sum_ k e. ( 0 ... n )
+          ( ( A ` k ) x. ( B ` ( n - k ) ) ) x. ( z ^ n ) ) ) ) $=
+      ( vm vj cmul co cc cc0 cfz cv cfv cexp csu cmpt caddc cmin cvv wa cfn 0zd
+      wcel fzfigd adantr cn0 wf ad2antrr elfznn0 adantl ffvelcdmd simplr expcld
+      nn0zd mulcld fsumcl weq fveq2 oveq2 oveq12d wceq ffvelcdmda expcl adantll
+      oveq2d sylan2 syl cz zaddcld cuz nn0cnd fznn0sub eleqtrdi eluzadd syl2anc
+      nn0uz eqeltrd addlidd fveq2d eleqtrd fzss2 adantlr cdif c1 cima wn eldifn
+      wss cun eldifi peano2nn0 uzsplit eqtrid ax-1cn pncan sylancl uneq1d eqtrd
+      wo ad3antrrr elun sylib ord mpd wi wfun cdm ffund sseqtrrid fdmd sseqtrrd
+      ssun2 funfvima2 oveq1d syl2an mul02d wdc elfzelz fzdcel syl3anc ralrimiva
+      elsni sumeq2dv cof a1i offval2 anim12dan mulcl fisum0diag2 addsubd mul01d
+      cnex csn zsubcld fisumss fsum2mul addcomd wral w3a olcd 3eqtr3d fsummulc1
+      isumz simpll mul4d expaddd ad2antlr pncan3d eqtr3d eqtr4d 3eqtr4rd oveq2i
+      cbvsumv eqtrdi mpteq2dva ) AHIUDUUAUEBUFUGJUHUEZFUIZCUJZBUIZUVNUKUEZUDUEZ
+      FULZUGKUHUEZUVNDUJZUVQUDUEZFULZUDUEZUMBUFUGJKUNUEZUHUEZUGGUIZUHUEZUVOUWGU
+      VNUOUEZDUJZUDUEZFULUVPUWGUKUEZUDUEZGULZUMABUFUVSUWCUDHIUPUFUFUFUPUTAUUIUU
+      BAUVPUFUTZUQZUVMUVRFAUVMURUTUWOAUGJAUSZAJNVKZVAVBUWPUVNUVMUTZUQZUVOUVQUWT
+      VCUFUVNCAVCUFCVDZUWOUWSPVEUWSUVNVCUTZUWPUVNJVFZVGZVHUWTUVPUVNAUWOUWSVIZUX
+      DVJVLVMUWPUVTUWBFAUVTURUTUWOAUGKUWQAKOVKZVAVBUWPUVNUVTUTZUQZUWAUVQUXHVCUF
+      UVNDAVCUFDVDZUWOUXGQVEUXGUXBUWPUVNKVFVGZVHUXHUVPUVNAUWOUXGVIUXJVJVLVMTUAU
+      UCABUFUWNUWDUWPUWNUVSUVTUWGDUJZUWLUDUEZGULZUDUEZUWDUWPUWFUGUWEUVNUOUEZUHU
+      EZUVRUXLUDUEZGULZFULZUWFUWHUVRUWJUVPUWIUKUEZUDUEZUDUEZFULZGULUXNUWNUWPUBU
+      XQUVRUBUIZDUJZUVPUYDUKUEZUDUEZUDUEUYBFGUWEUBGVNZUYGUXLUVRUDUYHUYEUXKUYFUW
+      LUDUYDUWGDVOUYDUWGUVPUKVPVQWBUYDUWIVRZUYGUYAUVRUDUYIUYEUWJUYFUXTUDUYDUWID
+      VOUYDUWIUVPUKVPVQWBUWPUVNUWFUTZUWGUXPUTZUQUQUVRUFUTZUXLUFUTZUQUXQUFUTUWPU
+      YJUYLUYKUYMUYJUWPUXBUYLUVNUWEVFZUWPUXBUQUVOUVQUWPVCUFUVNCAUXAUWOPVBVSUWOU
+      XBUVQUFUTZAUVPUVNVTZWAZVLZWCUYKUWPUWGVCUTZUYMUWGUXOVFZUWPUYSUQUXKUWLUWPVC
+      UFUWGDAUXIUWOQVBVSUWOUYSUWLUFUTZAUVPUWGVTZWAZVLZWCZUUDUVRUXLUUEWDAUWEWEUT
+      ZUWOAJKUWRUXFWFVBZUUFUWPUVMUVTUXQGULZFULUVMUXRFULUXNUXSUWPUVMVUHUXRFUWTUV
+      TUXPUXQUCGUWTUXOKWGUJZUTUVTUXPXEUWTUXOUGKUNUEZWGUJZVUIUWTUXOJUVNUOUEZKUNU
+      EZVUKUWTJKUVNAJUFUTZUWOUWSAJNWHZVEAKUFUTZUWOUWSAKOWHZVEZUWTUVNUXDWHUUGUWT
+      VULUGWGUJZUTKWEUTZVUMVUKUTUWTVULVCVUSUWSVULVCUTUWPUVNUGJWIVGWMWJAVUTUWOUW
+      SUXFVEZKUGVULWKWLWNUWTVUJKWGUWTKVURWOWPWQKUGUXOWRWDUWTUWGUVTUTZUQUVRUXLUW
+      TUYLVVBUWSUWPUXBUYLUXCUYRWCZVBUWPVVBUYMUWSVVBUWPUYSUYMUWGKVFVUDWCZWSVLUWT
+      UWGUXPUVTWTUTZUQZUXQUVRUGUDUEUGVVFUXLUGUVRUDVVFUXLUGUWLUDUEUGVVFUXKUGUWLU
+      DVVFUXKUGUUJZUTUXKUGVRVVFUXKDKXAUNUEZWGUJZXBZVVGVVFUWGVVIUTZUXKVVJUTZVVFV
+      VBXCZVVKVVEVVMUWTUWGUXPUVTXDVGVVFVVBVVKVVFUWGUVTVVIXFZUTVVBVVKXPVVFUWGVCV
+      VNVVEUYSUWTVVEUYKUYSUWGUXPUVTXGUYTWDZVGAVCVVNVRUWOUWSVVEAVCUGVVHXAUOUEZUH
+      UEZVVIXFZVVNAVCVUSVVRWMAVVHVUSUTVUSVVRVRAVVHVCVUSAKVCUTVVHVCUTOKXHWDWMWJU
+      GVVHXIWDXJZAVVQUVTVVIAVVPKUGUHAVUPXAUFUTZVVPKVRVUQXKKXAXLXMWBXNXOXQWQUWGU
+      VTVVIXRXSXTYAAVVKVVLYBZUWOUWSVVEADYCVVIDYDZXEVWAAVCUFDQYEAVVIVCVWBAVVRVVI
+      VCVVIVVQYIVVSYFAVCUFDQYGYHVVIUWGDYJWLXQYAAVVJVVGVRUWOUWSVVESXQWQUXKUGYSWD
+      YKVVFUWLUWTUWOUYSVUAVVEUXEVVOVUBYLYMXOWBVVFUVRUWTUYLVVEVVCVBUUHXOUWTUCUIZ
+      UVTUTYNZUCUXPUWTVWCUXPUTZUQZVWCWEUTZUGWEUTZVUTVWDVWEVWGUWTVWCUGUXOYOVGVWF
+      USUWTVUTVWEVVAVBVWCUGKYPYQYRUWTUGUXOUWTUSUWTUWEUVNUWPVUFUWSVUGVBUWTUVNUXD
+      VKUUKVAZUULYTUWPUVMUVTUVRUXLFGUWPUGJUWPUSZAJWEUTZUWOUWRVBZVAUWPUGKVWJAVUT
+      UWOUXFVBZVAVVCVVDUUMUWPUVMUWFUXRUCFAUVMUWFXEZUWOAUWEJWGUJZUTVWNAUWEKJUNUE
+      ZVWOAJKVUOVUQUUNAVWPUGJUNUEZWGUJZVWOAKVUSUTVWKVWPVWRUTAKVCVUSOWMWJUWRJUGK
+      WKWLAVWQJWGAJVUOWOWPWQWNJUGUWEWRWDVBUWTUXPUXQGVWIUWTUYKUQUVRUXLUWTUYLUYKV
+      VCVBUWPUYKUYMUWSVUEWSVLVMUWPUVNUWFUVMWTUTZUQZUXRUXPUGGULZUGVWTUXPUXQUGGVW
+      TUYKUQZUXQUGUXLUDUEUGVXBUVRUGUXLUDVWTUVRUGVRUYKVWTUVRUGUVQUDUEUGVWTUVOUGU
+      VQUDVWTUVOVVGUTUVOUGVRVWTUVOCJXAUNUEZWGUJZXBZVVGVWTUVNVXDUTZUVOVXEUTZVWTU
+      WSXCZVXFVWSVXHUWPUVNUWFUVMXDVGVWTUWSVXFVWTUVNUVMVXDXFZUTUWSVXFXPVWTUVNVCV
+      XIVWSUXBUWPVWSUYJUXBUVNUWFUVMXGUYNWDZVGZAVCVXIVRUWOVWSAVCUGVXCXAUOUEZUHUE
+      ZVXDXFZVXIAVCVUSVXNWMAVXCVUSUTVUSVXNVRAVXCVCVUSAJVCUTVXCVCUTNJXHWDWMWJUGV
+      XCXIWDXJZAVXMUVMVXDAVXLJUGUHAVUNVVTVXLJVRVUOXKJXAXLXMWBXNXOVEWQUVNUVMVXDX
+      RXSXTYAAVXFVXGYBZUWOVWSACYCVXDCYDZXEVXPAVCUFCPYEAVXDVCVXQAVXNVXDVCVXDVXMY
+      IVXOYFAVCUFCPYGYHVXDUVNCYJWLVEYAAVXEVVGVRUWOVWSRVEWQUVOUGYSWDYKVWTUVQVWSU
+      WPUXBUYOVXJUYQWCYMXOVBYKVXBUXLUWPUYKUYMVWSVUEWSYMXOYTVWTVWHUXPVUSXEVWEYNU
+      CVUSUUOUUPZUXPURUTZXPVXAUGVRVWTVXSVXRVWTUGUXOVWTUSVWTUWEUVNUWPVUFVWSVUGVB
+      VWTUVNVXKVKUUKVAUUQUXPUCGUGUUTWDXOUWPVWCUVMUTYNZUCUWFUWPVWCUWFUTZUQZVWGVW
+      HVWKVXTVYAVWGUWPVWCUGUWEYOVGVYBUSUWPVWKVYAVWLVBVWCUGJYPYQYRUWPUGUWEVWJUWP
+      JKVWLVWMWFVAUULUURUWPUWFUWMUYCGUWPUWGUWFUTZUQZUWMUWHUWKUWLUDUEZFULUYCVYDU
+      WHUWKUWLFVYDUGUWGVYDUSVYCUWGWEUTUWPUWGUGUWEYOVGVAVYCUWPUYSVUAUWGUWEVFZVUC
+      WCVYDUVNUWHUTZUQZUVOUWJVYDAUXBUVOUFUTVYGAUWOVYCUVAZUVNUWGVFZAVCUFUVNCPVSY
+      LZVYDAUWIVCUTZUWJUFUTVYGVYIUVNUGUWGWIZAVCUFUWIDQVSYLZVLUUSVYDUWHUYBVYEFVY
+      HUYBUWKUVQUXTUDUEZUDUEVYEVYHUVOUVQUWJUXTVYKVYDUWOUXBUYOVYGAUWOVYCVIZVYJUY
+      PYLVYNVYDUWOVYLUXTUFUTVYGVYPVYMUVPUWIVTYLUVBVYHVYOUWLUWKUDVYHUVPUVNUWIUNU
+      EZUKUEVYOUWLVYHUVPUVNUWIVYDUWOVYGVYPVBVYGVYLVYDVYMVGVYGUXBVYDVYJVGZUVCVYH
+      VYQUWGUVPUKVYHUVNUWGVYHUVNVYRWHVYHUWGVYCUYSUWPVYGVYFUVDWHUVEWBUVFWBXOYTUV
+      GYTUVHUXMUWCUVSUDUVTUXLUWBGFGFVNUXKUWAUWLUVQUDUWGUVNDVOUWGUVNUVPUKVPVQUVJ
+      UVIUVKUVLUVG $.
+  $}
+
+  ${
+    $d k m n x y z B $.  $d a b j m n w x y z F $.  $d a b j k m n w x y z S $.
+    $d m n x y z A $.  $d a b j m n w x y z G $.  $d a b j k m n w x y z ph $.
+    $d k m n z M $.  $d k m n z N $.
+    plyadd.1 $e |- ( ph -> F e. ( Poly ` S ) ) $.
+    plyadd.2 $e |- ( ph -> G e. ( Poly ` S ) ) $.
+    plyadd.3 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x + y ) e. S ) $.
+    ${
+      plyadd.m $e |- ( ph -> M e. NN0 ) $.
+      plyadd.n $e |- ( ph -> N e. NN0 ) $.
+      plyadd.a $e |- ( ph -> A e. ( ( S u. { 0 } ) ^m NN0 ) ) $.
+      plyadd.b $e |- ( ph -> B e. ( ( S u. { 0 } ) ^m NN0 ) ) $.
+      plyadd.a2 $e |- ( ph -> ( A " ( ZZ>= ` ( M + 1 ) ) ) = { 0 } ) $.
+      plyadd.b2 $e |- ( ph -> ( B " ( ZZ>= ` ( N + 1 ) ) ) = { 0 } ) $.
+      plyadd.f $e |- ( ph -> F =
+        ( z e. CC |-> sum_ k e. ( 0 ... M ) ( ( A ` k ) x. ( z ^ k ) ) ) ) $.
+      plyadd.g $e |- ( ph -> G =
+        ( z e. CC |-> sum_ k e. ( 0 ... N ) ( ( B ` k ) x. ( z ^ k ) ) ) ) $.
+      $( Lemma for ~ plyadd .  (Contributed by Mario Carneiro, 21-Jul-2014.) $)
+      plyaddlem $p |- ( ph -> ( F oF + G ) e. ( Poly ` S ) ) $=
+        ( caddc cof co cc0 csn cun cply cfv cc cle wbr cif cfz cv cexp cmul csu
+        cmpt cn0 cmap wcel wf cvv wb wss plybss syl 0cnd snssd unssd cnex ssexg
+        sylancl nn0ex elmapg mpbid fssd plyaddlem1 cz wdc nn0zd syl2anc ifcldcd
+        zdcle eqid un0addcl a1i inidm off elfznn0 ffvelcdm syl2an elplyd plyun0
+        eqeltrd eleqtrdi ) AIJUDUEZUFZGUGUHZUIZUJUKZGUJUKZAXADULUGKLUMUNZLKUOZU
+        PUFZHUQZEFWTUFZUKZDUQXIURUFUSUFHUTVAXDADEFGHIJKLMNPQAVBXCULEAEXCVBVCUFZ
+        VDZVBXCEVEZRAXCVFVDZVBVFVDZXMXNVGAXCULVHULVFVDXOAGXBULAIXEVDGULVHMGIVIV
+        JZAUGULAVKVLVMZVNXCULVFVOVPZVQXCVBEVFVFVRVPVSZXRVTAVBXCULFAFXLVDZVBXCFV
+        EZSAXOXPYAYBVGXSVQXCVBFVFVFVRVPVSZXRVTTUAUBUCWAADXKXCHXGXRAXFLKVBQPAKWB
+        VDLWBVDXFWCAKPWDALQWDKLWGWEWFAVBXCXJVEXIVBVDXKXCVDXIXHVDABCVBVBVBUDXCXC
+        XCEFVFVFAGXCBUQCUQXQXCWHOWIXTYCXPAVQWJZYDVBWKWLXIXGWMVBXCXIXJWNWOWPWRGW
+        QWS $.
+
+      plymul.x $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x x. y ) e. S ) $.
+      $d N x y $.  $d M x y $.
+      $( Lemma for ~ plymul .  (Contributed by Mario Carneiro, 21-Jul-2014.) $)
+      plymullem $p |- ( ph -> ( F oF x. G ) e. ( Poly ` S ) ) $=
+        ( vn cmul cof co cc0 csn cun cply cfv cc caddc cfz cv cmin csu cexp cn0
+        cmpt cmap wcel wf cvv wb wss plybss 0cnd snssd unssd cnex ssexg sylancl
+        syl nn0ex elmapg mpbid fssd plymullem1 nn0addcld wa adantr eqid adantlr
+        un0addcl 0zd elfzelz adantl fzfigd elfznn0 ffvelcdm syl2an fznn0sub jca
+        cz un0mulcl caovclg syldan ssun2 c0ex snss a1i fsumcllem elplyd eqeltrd
+        mpbir plyun0 eleqtrdi ) AIJUFUGUHZGUIUJZUKZULUMZGULUMZAXKDUNUIKLUOUHZUP
+        UHZUIUEUQZUPUHZHUQZEUMZXRXTURUHZFUMZUFUHZHUSZDUQXRUTUHUFUHUEUSVBXNADEFG
+        HUEIJKLMNPQAVAXMUNEAEXMVAVCUHZVDZVAXMEVEZRAXMVFVDZVAVFVDZYGYHVGAXMUNVHZ
+        UNVFVDYIAGXLUNAIXOVDGUNVHMGIVIVPZAUIUNAVJVKVLZVMXMUNVFVNVOZVQXMVAEVFVFV
+        RVOVSZYMVTAVAXMUNFAFYFVDZVAXMFVEZSAYIYJYPYQVGYNVQXMVAFVFVFVRVOVSZYMVTTU
+        AUBUCWAADYEXMUEXPYMAKLPQWBAXRXQVDZWCZBCXSYDXMHAYKYSYMWDABUQZXMVDCUQZXMV
+        DWCUUAUUBUOUHXMVDYSAGXMUUAUUBYLXMWEZOWGWFYTUIXRYTWHYSXRWQVDAXRUIXPWIWJW
+        KAXTXSVDZYDXMVDZYSAUUDYAXMVDZYCXMVDZWCUUEAUUDWCUUFUUGAYHXTVAVDUUFUUDYOX
+        TXRWLVAXMXTEWMWNAYQYBVAVDUUGUUDYRXTUIXRWOVAXMYBFWMWNWPABCYAYCXMXMXMUFAG
+        XMUUAUUBYLUUCUDWRWSWTWFUIXMVDZYTUUHXLXMVHXLGXAUIXMXBXCXHXDXEXFXGGXIXJ
+        $.
+    $}
+
+    $( The sum of two polynomials is a polynomial.  (Contributed by Mario
+       Carneiro, 21-Jul-2014.) $)
+    plyadd $p |- ( ph -> ( F oF + G ) e. ( Poly ` S ) ) $=
+      ( vz vk cv co cfv cc cmul wa cn0 wrex wcel va vm vb vn vw vj c1 caddc cuz
+      cima cc0 csn wceq cfz cexp csu cmpt cun cof wss elply2 simprbi syl reeanv
+      cmap cply w3a simp1l sylan simp1rl simp1rr simp2l simp3ll simp3rl simp3lr
+      simp2r oveq1 oveq2d sumeq2sdv fveq2 oveq2 oveq12d cbvsumv cbvmptv simp3rr
+      eqtrdi plyaddlem 3expia rexlimdvva biimtrrid mp2and ) AUALZUBLZUGUHMUINUJ
+      UKULZUMZEJOUKWMUNMZKLZWLNZJLZWQUOMZPMZKUPZUQZUMZQZUADWNURRVEMZSZUBRSZUCLZ
+      UDLZUGUHMUINUJWNUMZFJOUKXJUNMZWQXINZWTPMZKUPZUQZUMZQZUCXFSZUDRSZEFUHUSMDV
+      FNZTZAEYATZXHGYCDOUTZXHJDKUBEUAVAVBVCAFYATZXTHYEYDXTJDKUDFUCVAVBVCXHXTQXG
+      XSQZUDRSUBRSAYBXGXSUBUDRRVDAYFYBUBUDRRYFXEXRQZUCXFSUAXFSAWMRTZXJRTZQZQZYB
+      XEXRUAUCXFXFVDYKYGYBUAUCXFXFYKWLXFTZXIXFTZQZYGYBYKYNYGVGZBCUEWLXIDUFEFWMX
+      JYOAYCAYJYNYGVHZGVCYOAYEYPHVCYOABLZDTCLZDTQYQYRUHMDTYPIVIYHYIAYNYGVJYHYIA
+      YNYGVKYKYLYMYGVLYKYLYMYGVPWOXDXRYKYNVMXKXQXEYKYNVNYOEXCUEOWPUFLZWLNZUELZY
+      SUOMZPMZUFUPZUQWOXDXRYKYNVOJUEOXBUUDWSUUAUMZXBWPWRUUAWQUOMZPMZKUPUUDUUEWP
+      XAUUGKUUEWTUUFWRPWSUUAWQUOVQZVRVSWPUUGUUCKUFWQYSUMZWRYTUUFUUBPWQYSWLVTWQY
+      SUUAUOWAZWBWCWFWDWFYOFXPUEOXLYSXINZUUBPMZUFUPZUQXKXQXEYKYNWEJUEOXOUUMUUEX
+      OXLXMUUFPMZKUPUUMUUEXLXNUUNKUUEWTUUFXMPUUHVRVSXLUUNUULKUFUUIXMUUKUUFUUBPW
+      QYSXIVTUUJWBWCWFWDWFWGWHWIWJWIWJWK $.
+
+    plymul.4 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x x. y ) e. S ) $.
+    $( The product of two polynomials is a polynomial.  (Contributed by Mario
+       Carneiro, 21-Jul-2014.) $)
+    plymul $p |- ( ph -> ( F oF x. G ) e. ( Poly ` S ) ) $=
+      ( vz vk cv co cfv cmul wa cn0 wrex wcel va vm vb vn vw vj c1 cuz cima cc0
+      caddc csn wceq cfz cexp csu cmpt cun cmap cof cply wss elply2 simprbi syl
+      cc reeanv w3a simp1l sylan simp1rl simp1rr simp2l simp3ll simp3rl simp3lr
+      simp2r oveq1 oveq2d sumeq2sdv fveq2 oveq2 oveq12d cbvsumv cbvmptv simp3rr
+      eqtrdi plymullem 3expia rexlimdvva biimtrrid mp2and ) AUAMZUBMZUGUKNUHOUI
+      UJULZUMZEKVFUJWNUNNZLMZWMOZKMZWRUONZPNZLUPZUQZUMZQZUADWOURRUSNZSZUBRSZUCM
+      ZUDMZUGUKNUHOUIWOUMZFKVFUJXKUNNZWRXJOZXAPNZLUPZUQZUMZQZUCXGSZUDRSZEFPUTND
+      VAOZTZAEYBTZXIGYDDVFVBZXIKDLUBEUAVCVDVEAFYBTZYAHYFYEYAKDLUDFUCVCVDVEXIYAQ
+      XHXTQZUDRSUBRSAYCXHXTUBUDRRVGAYGYCUBUDRRYGXFXSQZUCXGSUAXGSAWNRTZXKRTZQZQZ
+      YCXFXSUAUCXGXGVGYLYHYCUAUCXGXGYLWMXGTZXJXGTZQZYHYCYLYOYHVHZBCUEWMXJDUFEFW
+      NXKYPAYDAYKYOYHVIZGVEYPAYFYQHVEYPABMZDTCMZDTQZYRYSUKNDTYQIVJYIYJAYOYHVKYI
+      YJAYOYHVLYLYMYNYHVMYLYMYNYHVQWPXEXSYLYOVNXLXRXFYLYOVOYPEXDUEVFWQUFMZWMOZU
+      EMZUUAUONZPNZUFUPZUQWPXEXSYLYOVPKUEVFXCUUFWTUUCUMZXCWQWSUUCWRUONZPNZLUPUU
+      FUUGWQXBUUILUUGXAUUHWSPWTUUCWRUOVRZVSVTWQUUIUUELUFWRUUAUMZWSUUBUUHUUDPWRU
+      UAWMWAWRUUAUUCUOWBZWCWDWGWEWGYPFXQUEVFXMUUAXJOZUUDPNZUFUPZUQXLXRXFYLYOWFK
+      UEVFXPUUOUUGXPXMXNUUHPNZLUPUUOUUGXMXOUUPLUUGXAUUHXNPUUJVSVTXMUUPUUNLUFUUK
+      XNUUMUUHUUDPWRUUAXJWAUULWCWDWGWEWGYPAYTYRYSPNDTYQJVJWHWIWJWKWJWKWL $.
+
+    plysub.5 $e |- ( ph -> -u 1 e. S ) $.
+    $( The difference of two polynomials is a polynomial.  (Contributed by
+       Mario Carneiro, 21-Jul-2014.) $)
+    plysub $p |- ( ph -> ( F oF - G ) e. ( Poly ` S ) ) $=
+      ( cc c1 cof co cvv wcel wf plyf syl cneg csn cxp cmul caddc cmin cply cfv
+      wceq cnex ofnegsub mp3an2i plybss plyconst syl2anc plymul plyadd eqeltrrd
+      wss ) AELMUAZUBUCZFUDNOZUENOZEFUFNOZDUGUHZLPQALLERZLLFRZVCVDUIUJAEVEQZVFG
+      DESTAFVEQVGHDFSTLEFPUKULABCDEVBGABCDVAFADLUSZUTDQVAVEQAVHVIGDEUMTKUTDUNUO
+      HIJUPIUQUR $.
+  $}
+
+  ${
+    $d x y F $.  $d x y G $.  $d x y S $.
+    $( The sum of two polynomials is a polynomial.  (Contributed by Mario
+       Carneiro, 24-Jul-2014.) $)
+    plyaddcl $p |- ( ( F e. ( Poly ` S ) /\ G e. ( Poly ` S ) ) ->
+      ( F oF + G ) e. ( Poly ` CC ) ) $=
+      ( vx vy cply cfv wa cc plyssc simpl sselid simpr cv caddc co addcl adantl
+      wcel plyadd ) BAFGZSZCUASZHZDEIBCUDUAIFGZBAJZUBUCKLUDUAUECUFUBUCMLDNZISEN
+      ZISHUGUHOPISUDUGUHQRT $.
+
+    $( The product of two polynomials is a polynomial.  (Contributed by Mario
+       Carneiro, 24-Jul-2014.) $)
+    plymulcl $p |- ( ( F e. ( Poly ` S ) /\ G e. ( Poly ` S ) ) ->
+      ( F oF x. G ) e. ( Poly ` CC ) ) $=
+      ( vx vy cply cfv wa cc plyssc simpl sselid simpr cv caddc co addcl adantl
+      wcel cmul mulcl plymul ) BAFGZSZCUCSZHZDEIBCUFUCIFGZBAJZUDUEKLUFUCUGCUHUD
+      UEMLDNZISENZISHZUIUJOPISUFUIUJQRUKUIUJTPISUFUIUJUARUB $.
+
+    $( The difference of two polynomials is a polynomial.  (Contributed by
+       Mario Carneiro, 24-Jul-2014.) $)
+    plysubcl $p |- ( ( F e. ( Poly ` S ) /\ G e. ( Poly ` S ) ) ->
+      ( F oF - G ) e. ( Poly ` CC ) ) $=
+      ( vx vy cply cfv wa cc plyssc simpl sselid simpr cv caddc co addcl adantl
+      wcel cmul mulcl c1 cneg neg1cn a1i plysub ) BAFGZSZCUGSZHZDEIBCUJUGIFGZBA
+      JZUHUIKLUJUGUKCULUHUIMLDNZISENZISHZUMUNOPISUJUMUNQRUOUMUNTPISUJUMUNUARUBU
+      CISUJUDUEUF $.
+  $}
 
 
 $(
@@ -185435,6 +186017,13 @@ htmldef "_D" as
     " <IMG SRC='rmcd.gif' WIDTH=10 HEIGHT=19 ALT=' _D' TITLE='_D'> ";
   althtmldef "_D" as " D ";
   latexdef "_D" as "\mathrm{D}";
+htmldef "Poly" as "Poly";
+  althtmldef "Poly" as "Poly";
+  latexdef "Poly" as "\mathrm{Poly}";
+htmldef "Xp" as "<IMG SRC='cx.gif' WIDTH=13 HEIGHT=19 ALT=' X' TITLE='X'>" +
+    "<IMG SRC='subp.gif' WIDTH=7 HEIGHT=19 ALT='p' TITLE='p'>";
+  althtmldef "Xp" as "<I>X<SUB>p</SUB></I>";
+  latexdef "Xp" as "X_p";
 htmldef "limCC" as
     " lim<IMG SRC='bbc.gif' WIDTH=12 HEIGHT=19 ALT=' CC' TITLE='CC'> ";
   althtmldef "limCC" as " lim<sub>&#8450;</sub> ";

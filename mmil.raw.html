@@ -3264,6 +3264,13 @@ need</TD>
 </TR>
 
 <tr>
+  <td>rnmptc</td>
+  <td><i>none</i></td>
+  <td>presumably would be provable with not empty changed to
+  inhabited (see ~ fconstmpt and ~ rnxpm )</td>
+</tr>
+
+<tr>
   <td>mptfvmpt</td>
   <td>~ fvmptd3</td>
   <td>the set.mm proof relies, in an apparently essential
@@ -9519,6 +9526,12 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>~ isumss</TD>
 </TR>
 
+<tr>
+  <td>fsumss</td>
+  <td>~ fisumss</td>
+  <td>adds a decidability condition</td>
+</tr>
+
 <TR>
   <TD>sumss2</TD>
   <TD>~ isumss2</TD>
@@ -13765,6 +13778,12 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>df-0p</td>
+  <td><i>none</i></td>
+  <td>the set.mm definition and theorems would probably work</td>
+</tr>
+
+<tr>
   <td>df-limc</td>
   <td>~ df-limced</td>
   <td>~ df-limced is adapted from ellimc3 in set.mm</td>
@@ -14215,31 +14234,54 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>df-ply</td>
-  <td><i>none</i></td>
-  <td>it seems like we will be able to use the set.mm definition</td>
-</tr>
-
-<tr>
-  <td>df-idp</td>
-  <td><i>none</i></td>
-  <td>it seems like we will be able to use the set.mm definition</td>
-</tr>
-
-<tr>
   <td>df-coe</td>
   <td><i>none</i></td>
-  <td>the set.mm defintion may work but this needs a closer look</td>
+  <td>The question is how much of the set.mm development assumes
+  that equality of coefficients is decidable.</td>
 </tr>
 
 <tr>
   <td>df-dgr</td>
   <td><i>none</i></td>
-  <td>This would seem to need to be replaced with something which
-  allows leading coefficients to be zero (to avoid difficulties
-  comparing complex numbers with zero). Or to say it another way,
-  we would more naturally work in terms of an upper bound on
-  the degree, rather than the exact degree itself.</td>
+  <td>In many cases we will find it more feasible to work with a
+  number which is an upper bound on the degree, as for example ` N ` in
+  theorems like ~ elplyr .  To say it another way, when specifying
+  coefficients, we allow leading coefficients to be zero, thus
+  avoiding difficulties with coefficients which we are unable to
+  compare to zero.</td>
+</tr>
+
+<tr>
+  <td>plyco0</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses excluded middle</td>
+</tr>
+
+<tr>
+  <td>ne0p</td>
+  <td><i>none</i></td>
+  <td>could be added if we add df-0p (although a more useful
+  theorem would be based on apartness or something similar, rather
+  than negated equality)</td>
+</tr>
+
+<tr>
+  <td>ply0</td>
+  <td><i>none</i></td>
+  <td>could be added if we add df-0p</td>
+</tr>
+
+<tr>
+  <td>plyeq0</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses excluded middle</td>
+</tr>
+
+<tr>
+  <td>plypf1</td>
+  <td><i>none</i></td>
+  <td>may be feasible once we have Poly1 and related definitions
+  and theorems</td>
 </tr>
 
 <tr>
@@ -14257,7 +14299,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>vieta1</td>
   <td><i>none</i></td>
-  <td>depends on df-ply , df-coe , and df-dgr</td>
+  <td>depends on df-coe and df-dgr</td>
 </tr>
 
 <tr>
