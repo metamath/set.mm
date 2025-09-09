@@ -155997,6 +155997,42 @@ $)
       YBYCYD $.
   $}
 
+  ${
+    $d B x y $.  $d F x y $.  $d G x y $.  $d H x y $.  $d K x y $.
+    $d M x y $.  $d N x y $.  $d ph x y $.
+    gsummhm.b $e |- B = ( Base ` G ) $.
+    gsummhm.z $e |- .0. = ( 0g ` G ) $.
+    gsummhm.g $e |- ( ph -> G e. CMnd ) $.
+    gsummhm.h $e |- ( ph -> H e. Mnd ) $.
+    gsummhm.m $e |- ( ph -> M e. ZZ ) $.
+    gsummhm.n $e |- ( ph -> N e. ZZ ) $.
+    gsummhm.k $e |- ( ph -> K e. ( G MndHom H ) ) $.
+    gsummhm.f $e |- ( ph -> F : ( M ... N ) --> B ) $.
+    $( Apply a monoid homomorphism to a group sum.  (Contributed by Mario
+       Carneiro, 15-Dec-2014.)  (Revised by AV, 6-Jun-2019.)  (Revised by Jim
+       Kingdon, 8-Sep-2025.) $)
+    gsumfzmhm $p |- ( ph -> ( H gsum ( K o. F ) ) = ( K ` ( G gsum F ) ) ) $=
+      ( cfv wcel adantr vx vy clt wbr ccom cgsu co wceq wn wa c0g cmhm eqid syl
+      mhm0 cplusg cseq cif ccmn gsumfzval simpr iftrued eqtrd fveq2d cbs wf cfz
+      cmnd mhmf fco syl2anc 3eqtr4rd cvv cv cmnmndd simprl simprr mndcl syl3anc
+      adantlr ffvelcdmda cz cle cuz zred nltled eluz2 syl3anbrc ad2antrr mhmlin
+      fvco3 eqcomd cfn fzfigd fexd coexg plusgslid slotex seqhomog iffalsed wdc
+      wo zdclt exmiddc mpjaodan ) AHGUCUDZEFCUEZUFUGZDCUFUGZFRZUHXFUIZAXFUJZIFR
+      ZEUKRZXJXHAXMXNUHZXFAFDEULUGZSZXOPDEFXNIKXNUMZUOUNTXLXIIFXLXIXFIHDUPRZCGU
+      QRZURZIAXIYAUHZXFABXSCDGHUSIJKXSUMZLNOQUTZTXLXFIXTAXFVAZVBVCVDXLXHXFXNHEU
+      PRZXGGUQRZURZXNAXHYHUHZXFAEVERZYFXGEGHVHXNYJUMZXRYFUMZMNOABYJFVFZGHVGUGZB
+      CVFZYNYJXGVFAXQYMPBYJDEFJYKVIUNQYNBYJFCVJVKUTZTXLXFXNYGYEVBVCVLAXKUJZXTFR
+      YGXJXHYQUAUBXSYFBCXGFGHVMVMVMVMAUAVNZBSZUBVNZBSZUJZYRYTXSUGZBSZXKAUUBUJDV
+      HSZYSUUAUUDAUUEUUBADLVOTAYSUUAVPAYSUUAVQBXSDYRYTJYCVRVSVTAYRYNSZYRCRZBSXK
+      AYNBYRCQWAVTYQGWBSZHWBSZGHWCUDHGWDRSAUUHXKNTZAUUIXKOTZYQGHYQGUUJWEYQHUUKW
+      EAXKVAZWFGHWGWHYQUUBUJXQYSUUAUUCFRYRFRYTFRYFUGUHAXQXKUUBPWIYQYSUUAVPYQYSU
+      UAVQBXSYFDEFYRYTJYCYLWJVSYQUUFUJZYRXGRZUUGFRZUUMYOUUFUUNUUOUHAYOXKUUFQWIY
+      QUUFVAYNBYRFCWKVKWLACVMSZXKAYNBWMCQAGHNOWNWOZTAXGVMSZXKAXQUUPUURPUUQFCXPV
+      MWPVKTAXSVMSZXKADUSSUUSLDUPUSWQWRUNTAYFVMSZXKAEVHSUUTMEUPVHWQWRUNTWSYQXIX
+      TFYQXIYAXTAYBXKYDTYQXFIXTUULWTVCVDYQXHYHYGAYIXKYPTYQXFXNYGUULWTVCVLAXFXAZ
+      XFXKXBAUUIUUHUVAONHGXCVKXFXDUNXE $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
