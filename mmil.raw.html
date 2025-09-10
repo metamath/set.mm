@@ -813,16 +813,12 @@ things that might mean:</p>
 <ul>
 
 <li><b>explicit existence</b>: we can demonstrate what the thing is.
-Example: in ~ ctssdccl we show a mapping ` G ` and specify explicitly,
-via a hypothesis used as a local definition, what it is (contrast
-with ~ ctssdc which is using truncated existence). Our notation
-for explicit existence is giving a class variable as in this example.</li>
+Our notation for explicit existence is giving a class variable as in
+the examples below.</li>
 
 <li><b>truncated existence</b>: we can demonstrate there is such a thing,
 but we do not expose what it is. We represent this by ` E. ` .
-Example: because the existence for ` g ` in ~ omiunct is truncated,
-we need countable choice to get explicit existence and thus apply
-~ ctiunct which requires explicit existence. Two equivalent notations
+Two equivalent notations
 for "class ` A ` (truncatedly) exists" can be seen at ~ isset .</li>
 
 <li><b>classical existence</b>: there is no way that such a thing can fail
@@ -834,8 +830,46 @@ context.</li>
 
 </ul>
 
-<p>For more on these topics, see for example [HoTT] especially
-section 3.10.</p>
+<p>Examples:</p>
+
+<ul>
+
+<li>
+  If we have the coefficients of a polynomial, ~ elplyr gives explicit
+  existence (in the form of a function definition) for a polynomial
+  with those coefficients. But suppose we have a polynomial: can we
+  gets its coefficients? In the case of truncated existence, yes:
+  ~ elply2 does that.  But explicit existence in this case would be
+  something like df-coe from set.mm.
+</li>
+
+<li>
+  Saying that a sequence converges using the notation ` F e. dom ~~> `
+  is making an assertion of truncated existence; we are saying that
+  there is a rate at which the sequence converges but we are providing
+  no way to get that rate. (Note the use of ` E. ` in ~ df-clim ).
+  On the other hand, the hypothesis in ~ climcvg1n gives the rate at
+  which the sequence converges, and often we will need that rate of
+  convergence rather than the truncated (mere) existence of such a rate.
+</li>
+
+<li>
+  In ~ ctssdccl we show a mapping ` G ` and specify explicitly,
+  via a hypothesis used as a local definition, what it is (contrast
+  with ~ ctssdc which is using truncated existence).
+</li>
+
+<li>
+  Because the existence for ` g ` in ~ omiunct is truncated,
+  we need countable choice to get explicit existence and thus apply
+  ~ ctiunct which requires explicit existence.
+</li>
+
+</ul>
+
+<p>For more on these topics, see [HoTT] especially section 3.10.
+Section 11.2.2 discusses the issues around truncated existence
+and sequence convergence.</p>
 
 <P></P><HR NOSHADE SIZE=1><A NAME="theorems"></A><B><FONT COLOR="#006633">A
 Theorem Sampler</FONT></B>&nbsp;&nbsp;&nbsp;
