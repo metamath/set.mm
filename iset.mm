@@ -155998,6 +155998,20 @@ $)
   $}
 
   ${
+    $d k l N $.  $d k l M $.  $d l B $.  $d l G $.  $d l X $.
+    gsumconstf.k $e |- F/_ k X $.
+    gsumconstf.b $e |- B = ( Base ` G ) $.
+    gsumconstf.m $e |- .x. = ( .g ` G ) $.
+    $( Sum of a constant series.  (Contributed by Thierry Arnoux,
+       5-Jul-2017.) $)
+    gsumfzconstf $p |- ( ( G e. Mnd /\ N e. ( ZZ>= ` M ) /\ X e. B ) ->
+      ( G gsum ( k e. ( M ... N ) |-> X ) ) = ( ( ( N - M ) + 1 ) .x. X ) ) $=
+      ( vl cmnd wcel cuz cfv w3a cfz co cmpt cgsu cmin c1 caddc nfcv weq cbvmpt
+      eqidd oveq2i gsumfzconst eqtrid ) DLMFENOMGAMPDCEFQRZGSZTRDKUKGSZTRFEUARU
+      BUCRGBRULUMDTCKUKGGKGUDHCKUEGUGUFUHABKDEFGIJUIUJ $.
+  $}
+
+  ${
     $d B x y $.  $d F x y $.  $d G x y $.  $d H x y $.  $d K x y $.
     $d M x y $.  $d N x y $.  $d ph x y $.
     gsummhm.b $e |- B = ( Base ` G ) $.
