@@ -165538,6 +165538,86 @@ $)
       UDURACUEEFZUQJAFZUTAFUOVCUQACUFTVBUOVDUQACJUHUGTAUSCUPJUSUIUJUKULUMUN $.
   $}
 
+  ${
+    $d M k $.  $d N k $.
+    gsumfzfsumlem0.m $e |- ( ph -> M e. ZZ ) $.
+    gsumfzfsumlem0.n $e |- ( ph -> N e. ZZ ) $.
+    gsumfzfsumlem0.lt $e |- ( ph -> N < M ) $.
+    $( Lemma for ~ gsumfzfsum .  The case where the sum is empty.  (Contributed
+       by Jim Kingdon, 9-Sep-2025.) $)
+    gsumfzfsumlem0 $p |- ( ph -> ( CCfld gsum ( k e. ( M ... N ) |-> B ) )
+        = sum_ k e. ( M ... N ) B ) $=
+      ( ccnfld c0 cgsu co cc0 cmpt csu crg wcel wceq cz eqtrdi cfz cnring ax-mp
+      cnfld0 gsum0g clt wbr wb fzn syl2anc mpbid mpteq1d oveq2d sumeq1d 3eqtr4a
+      mpt0 sum0 ) AIJKLZMICDEUALZBNZKLUSBCOZIPQURMRUBIPMUDUEUCAUTJIKAUTCJBNJACU
+      SJBAEDUFUGZUSJRZHADSQESQVBVCUHFGDEUIUJUKZULCBUPTUMAVAJBCOMAUSJBCVDUNBCUQT
+      UO $.
+  $}
+
+  ${
+    $d B j w $.  $d B j x y $.  $d M j k w $.  $d M j k x y $.  $d N j k w $.
+    $d j k ph w $.
+    gsumfzfsumlemm.n $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
+    gsumfzfsumlemm.b $e |- ( ( ph /\ k e. ( M ... N ) ) -> B e. CC ) $.
+    $( Lemma for ~ gsumfzfsum .  The case where the sum is inhabited.
+       (Contributed by Jim Kingdon, 9-Sep-2025.) $)
+    gsumfzfsumlemm $p |- ( ph -> ( CCfld gsum ( k e. ( M ... N ) |-> B ) )
+        = sum_ k e. ( M ... N ) B ) $=
+      ( cfz co wcel ccnfld cmpt cgsu csu wceq syl wi caddc cc adantl vw cuz cfv
+      vj vx vy eluzfz2 cv c1 mpteq1d oveq2d sumeq1d eqeq12d imbi2d csn cnfldbas
+      oveq2 csb cmnd cnring ringmnd mp1i eluzel2 wral eluzfz1 ralrimiva nfcsb1v
+      crg cz nfel1 csbeq1a eleq1d rspc sylc nfv gsumfzsnfd sumsns syl2anc eqtrd
+      fzsn 3eqtr4d a1i cfzo wa simpr oveq1d cres cmpo mpocnfldadd adantr simpll
+      elfzouz elfzoel2 ad2antlr elfzelz cle wbr elfzle1 elfzoelz peano2zd letrd
+      zred elfzle2 fzofzp1 elfzd fmpttd gsumsplit1r wss fzssp1 resmpt rspcsbela
+      peano2uz syl2anr eqid fvmpts oveq12d cnfld0 fzelp1 sylan2 gsumfzcl addcld
+      cc0 oveq1 ovmpog syl3anc 3eqtrd cun fzsuc fzfigd wn fsumsplitsn ex expcom
+      fzp1nel a2d fzind2 mpcom ) EDEHIZJZAKCYRBLZMIZYRBCNZOZAEDUBUCZJZYSFDEUGPA
+      KCDUAUHZHIZBLZMIZUUGBCNZOZQAKCDDHIZBLZMIZUULBCNZOZQZAKCDUDUHZHIZBLZMIZUUS
+      BCNZOZQAKCDUURUIRIZHIZBLZMIZUVEBCNZOZQAUUCQUAUDEDEUUFDOZUUKUUPAUVJUUIUUNU
+      UJUUOUVJUUHUUMKMUVJCUUGUULBUUFDDHUQZUJUKUVJUUGUULBCUVKULUMUNUUFUUROZUUKUV
+      CAUVLUUIUVAUUJUVBUVLUUHUUTKMUVLCUUGUUSBUUFUURDHUQZUJUKUVLUUGUUSBCUVMULUMU
+      NUUFUVDOZUUKUVIAUVNUUIUVGUUJUVHUVNUUHUVFKMUVNCUUGUVEBUUFUVDDHUQZUJUKUVNUU
+      GUVEBCUVOULUMUNUUFEOZUUKUUCAUVPUUIUUAUUJUUBUVPUUHYTKMUVPCUUGYRBUUFEDHUQZU
+      JUKUVPUUGYRBCUVQULUMUNUUQUUEAKCDUOZBLZMICDBURZUUNUUOABSUVTCKDUPKVHJZKUSJZ
+      AUTKVAZVBAUUEDVIJZFDEVCPZADYRJZBSJZCYRVDZUVTSJZAUUEUWFFDEVEPAUWGCYRGVFZUW
+      GUWICDYRCUVTSCDBVGZVJCUHZDOZBUVTSCDBVKZVLVMVNZUWMBUVTOAUWNTACVOUWKVPAUUMU
+      VSKMACUULUVRBAUWDUULUVROUWEDVTZPUJUKAUUOUVRBCNZUVTAUWDUUOUWQOUWEUWDUULUVR
+      BCUWPULPAUWDUWIUWQUVTOUWEUWOBCDVIVQVRVSWAWBUURDEWCIJZAUVCUVIAUWRUVCUVIQAU
+      WRWDZUVCUVIUWSUVCWDZUVACUVDBURZRIZUVBUXARIZUVGUVHUWTUVAUVBUXARUWSUVCWEWFU
+      WSUVGUXBOUVCUWSUVGKUVFUUSWGZMIZUVDUVFUCZUEUFSSUEUHZUFUHZRIZWHZIUVAUXAUXJI
+      ZUXBUWSSUXJUVFKDUURVHUPUEUFWIUWAUWSUTWBAUWDUWRUWEWJZUWRUURUUDJZAUURDEWLZT
+      ZUWSCUVEBSUWSUWLUVEJZWDZAUWLYRJUWGAUWRUXPWKZUXQUWLDEUXQAUWDUXRUWEPUWREVIJ
+      AUXPUURDEWMWNZUXPUWLVIJUWSUWLDUVDWOTZUXPDUWLWPWQUWSUWLDUVDWRTUXQUWLUVDEUX
+      QUWLUXTXBUXQUVDUXQUURUWRUURVIJZAUXPUURDEWSZWNWTXBUXQEUXSXBUXPUWLUVDWPWQUW
+      SUWLDUVDXCTUXQUVDYRJZUVDEWPWQUWRUYCAUXPDEUURXDZWNUVDDEXCPXAXEGVRZXFXGUWSU
+      XEUVAUXFUXAUXJUWSUXDUUTKMUUSUVEXHUXDUUTOUWSDUURXICUVEUUSBXJVBUKUWSUVDUVEJ
+      ZUXASJZUXFUXAOUWSUVDUUDJZUYFUWRUYHAUWRUXMUYHUXNDUURXLPTDUVDUGPUWRUYCUWHUY
+      GAUYDUWJCUVDYRBSXKXMZCUVDBUVEUVFSUVFXNXOVRXPUWSUVASJUYGUXBSJUXKUXBOUWSSUU
+      TKDUURYBUPXQUWAUWBUWSUTUWCVBUXLUWRUYAAUYBTZUWSCUUSBSUWLUUSJUWSUXPUWGUWLDU
+      URXRUYEXSZXFXTZUYIUWSUVAUXAUYLUYIYAUEUFUVAUXASSUXIUXBUXJUVAUXHRISUXGUVAUX
+      HRYCUXHUXAUVARUQUXJXNYDYEYFWJUWSUVHUXCOUVCUWSUVHUUSUVDUOYGZBCNUXCUWSUVEUY
+      MBCUWSUXMUVEUYMOUXODUURYHPULUWSUUSUVDBUXACVIUWSCVOCUVDBVGUWSDUURUXLUYJYIU
+      WSUURUYJWTUVDUUSJYJUWSDUURYNWBUYKCUVDBVKUYIYKVSWJWAYLYMYOYPYQ $.
+  $}
+
+  ${
+    $d M k $.  $d N k $.  $d ph k $.
+    gsumfzfsum.m $e |- ( ph -> M e. ZZ ) $.
+    gsumfzfsum.n $e |- ( ph -> N e. ZZ ) $.
+    gsumfzfsum.2 $e |- ( ( ph /\ k e. ( M ... N ) ) -> B e. CC ) $.
+    $( Relate a group sum on ` CCfld ` to a finite sum on the complex numbers.
+       (Contributed by Mario Carneiro, 28-Dec-2014.) $)
+    gsumfzfsum $p |- ( ph -> ( CCfld gsum ( k e. ( M ... N ) |-> B ) )
+        = sum_ k e. ( M ... N ) B ) $=
+      ( clt wbr ccnfld cfz co cmpt wa cz wcel adantr simpr zred cgsu csu wn cle
+      wceq gsumfzfsumlem0 cuz cfv nltled eluz2 syl3anbrc adantlr gsumfzfsumlemm
+      cv cc wdc wo zdclt syl2anc exmiddc syl mpjaodan ) AEDIJZKCDELMZBNUAMVDBCU
+      BUEVCUCZAVCOBCDEADPQZVCFRAEPQZVCGRAVCSUFAVEOZBCDEVHVFVGDEUDJEDUGUHQAVFVEF
+      RZAVGVEGRZVHDEVHDVITVHEVJTAVESUIDEUJUKACUNVDQBUOQVEHULUMAVCUPZVCVEUQAVGVF
+      VKGFEDURUSVCUTVAVB $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
