@@ -165815,6 +165815,39 @@ $)
     zex mgpress mp2an ) ABCDECAFGZDHIJFGKLODAJRBEMRNPQ $.
 
   ${
+    $d A r s u v x z $.  $d U u v $.
+    expghm.m $e |- M = ( mulGrp ` CCfld ) $.
+    expghmap.u $e |- U = ( M |`s { z e. CC | z =//= 0 } ) $.
+    $( Exponentiation is a group homomorphism from addition to multiplication.
+       (Contributed by Mario Carneiro, 18-Jun-2015.)  (Revised by AV,
+       10-Jun-2019.)  (Revised by Jim Kingdon, 11-Sep-2025.) $)
+    expghmap $p |- ( ( A e. CC /\ A =//= 0 ) ->
+        ( x e. ZZ |-> ( A ^ x ) ) e. ( ZZring GrpHom U ) ) $=
+      ( vu vv cc wcel wa cz cv cexp co cfv cmul wceq wtru cc0 cap wbr crab cmpt
+      vr vs caddc cmpo wral czring cghm expclzaplem 3expa fmpttd expaddzap eqid
+      oveq2 zaddcl adantl simpll simplr expclzapd fvmptd3 simprl simprr oveq12d
+      wf 3eqtr4d ralrimivva anassrs eqeltrd simpr mulcld oveq1 syl3anc ralbidva
+      ovmpog eqeq2d mpbird cgrp zringgrp ccnfld crg cnring cnfldui cress oveq1i
+      cmgp eqtri unitgrp ax-mp zringbas cbs cvv a1i cnfldbas mgpbasg mp1i mgpex
+      pm3.2i wss apsscn ressbas2d mptru zringplusg cplusg mpocnfldmul mgpplusgg
+      cnex rabex ressplusgd isghm mpbiran sylanbrc ) CJKZCUAUBUCZLZMBNUAUBUCZBJ
+      UDZAMCANZOPZUEZVHZHNZINZUHPZYCQZYEYCQZYFYCQZUFUGJJUFNZUGNZRPZUIZPZSZIMUJZ
+      HMUJZYCUKDULPKZXRAMYBXTXPXQYAMKYBXTKBCYAUMUNUOXRYRYHYIYJRPZSZIMUJZHMUJXRU
+      UAHIMMXRYEMKZYFMKZLZLZCYGOPZCYEOPZCYFOPZRPYHYTCYEYFUPUUFAYGYBUUGMYCJYCUQZ
+      YAYGCOURUUEYGMKXRYEYFUSUTZUUFCYGXPXQUUEVAZXPXQUUEVBZUUKVCVDUUFYIUUHYJUUIR
+      UUFAYEYBUUHMYCJUUJYAYECOURZXRUUCUUDVEZUUFCYEUULUUMUUOVCZVDUUFAYFYBUUIMYCJ
+      UUJYAYFCOURZXRUUCUUDVFZUUFCYFUULUUMUURVCZVDVGVIVJXRYQUUBHMXRUUCLZYPUUAIMU
+      UTUUDLZYOYTYHUVAYIJKYJJKYTJKYOYTSUVAYIUUHJUVAAYEYBUUHMYCJUUJUUNXRUUCUUDVB
+      XRUUCUUDUUHJKUUPVKZVDUVBVLZUVAYJUUIJUVAAYFYBUUIMYCJUUJUUQUUTUUDVMXRUUCUUD
+      UUIJKUUSVKZVDUVDVLZUVAYIYJUVCUVEVNUFUGYIYJJJYMYTYNYIYLRPJYKYIYLRVOYLYJYIR
+      URYNUQVRVPVSVQVQVTYSUKWAKZDWAKZLYDYRLUVFUVGWBWCWDKZUVGWEWCXTDBWFDEXTWGPZW
+      CWIQZXTWGPGEUVJXTWGFWHWJWKWLXAIHUHYNUKDYCMXTWMXTDWNQSTXTJDEWODUVISTGWPZUV
+      HJEWNQSTWEJWCEWDFWQWRWSUVHEWOKTWEWCEWDFWTWSZXTJXBTBJUAXCWPXDXEXFYNDXGQSTX
+      TYNEDWOWOUVKUVHYNEXGQSTWEWCYNEWDFUFUGXHXIWSXTWOKTXSBJXJXKWPUVLXLXEXMXNXO
+      $.
+  $}
+
+  ${
     $d n x y B $.  $d f x y F $.  $d f n x y R $.  $d n .x. $.  $d n x y .1. $.
     mulgghm2.m $e |- .x. = ( .g ` R ) $.
     mulgghm2.f $e |- F = ( n e. ZZ |-> ( n .x. .1. ) ) $.
