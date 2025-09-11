@@ -165338,6 +165338,15 @@ $)
     sseqtrri strslfv ax-mp ) ABCADEFGHADEBIINJKLMOEFAKZPOQFRKZULOSFTKZUAZDUMULU
     NUBUOUOOUCFUDKPZUEDUOUPUFUGUIUHUJUK $.
 
+  ${
+    $d x y $.
+    $( The addition operation of the field of complex numbers.  Version of
+       ~ cnfldadd using maps-to notation.  (Contributed by GG, 31-Mar-2025.) $)
+    mpocnfldadd $p |- ( x e. CC , y e. CC |-> ( x + y ) ) = ( +g ` CCfld ) $=
+      ( caddc cc cv cmpo ccnfld cplusg cfv cxp wfn wceq ax-addf ffn fnovim mp2b
+      co wf cnfldadd eqtr3i ) CABDDAEBECQFZGHIDDJZDCRCUBKCUALMUBDCNABDDCOPST $.
+  $}
+
   $( The multiplication operation of the field of complex numbers.
      (Contributed by Stefan O'Rear, 27-Nov-2014.)  (Revised by Mario Carneiro,
      6-Oct-2015.)  (Revised by Thierry Arnoux, 17-Dec-2017.) $)
