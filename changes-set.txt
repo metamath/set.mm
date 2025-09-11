@@ -92,6 +92,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+11-Sep-25 cascl     [same]      revised - algSc may be non-injective
 24-Aug-25 elrab2w   [same]      Moved from SN's mathbox to main set.mm
 24-Aug-25 elab2gw   [same]      Moved from SN's mathbox to main set.mm
 24-Aug-25 elabgw    [same]      Moved from SN's mathbox to main set.mm
