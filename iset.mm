@@ -153313,6 +153313,25 @@ $)
       ( vx vy csubmnd cfv wcel cbs cplusg cmnd c0g eqid submrcl submss submcl
       cv subm0cl mulgnn0subcl ) ACIJKGHCLJZCMJZABCDNECOJZUCPZFUDPZACQUCACUFRUDA
       CGTHTUGSUEPZACUEUHUAUB $.
+
+    submmulg.h $e |- H = ( G |`s S ) $.
+    submmulg.t $e |- .x. = ( .g ` H ) $.
+    $( A group multiple is the same if evaluated in a submonoid.  (Contributed
+       by Mario Carneiro, 15-Jun-2015.) $)
+    submmulg $p |- ( ( S e. ( SubMnd ` G ) /\ N e. NN0 /\ X e. S ) ->
+      ( N .xb X ) = ( N .x. X ) ) $=
+      ( cfv wcel co wceq cc0 c1 syl eqid adantr 3eqtr4d csubmnd cn0 w3a csn cxp
+      cn wa cplusg cseq simpl1 cmnd cress a1i submrcl ressplusgd seqeq2d fveq1d
+      eqidd cbs simpr wss submss 3ad2ant1 sseldd mulgnn syl2anc submbas eleqtrd
+      id simp3 c0g subm0 mulg0 oveq1d wo simp2 elnn0 sylib mpjaodan ) ADUAKZLZF
+      UBLZGALZUCZFUFLZFGBMZFGCMZNFONZWDWEUGZFDUHKZUFGUDUEZPUIZKZFEUHKZWKPUIZKZW
+      FWGWIFWLWOWIWJWNWKPWIWAWJWNNWAWBWCWEUJWAAWJDEVTUKEDAULMNWAIUMWAWJURWAVIAD
+      UNUOQUPUQWIWEGDUSKZLZWFWMNWDWEUTZWDWRWEWDAWQGWAWBAWQVAWCWQADWQRZVBVCWAWBW
+      CVJZVDZSWQWJWLBDFGWTWJRHWLRVEVFWIWEGEUSKZLZWGWPNWSWDXDWEWDGAXCXAWAWBAXCNW
+      CAEDIVGVCVHZSXCWNWOCEFGXCRZWNRJWORVEVFTWDWHUGZOGBMZOGCMZWFWGXGDVKKZEVKKZX
+      HXIXGWAXJXKNWAWBWCWHUJAEDXJIXJRZVLQXGWRXHXJNWDWRWHXBSWQBDGXJWTXLHVMQXGXDX
+      IXKNWDXDWHXESXCCEGXKXFXKRJVMQTXGFOGBWDWHUTZVNXGFOGCXMVNTWDWBWEWHVOWAWBWCV
+      PFVQVRVS $.
   $}
 
 
