@@ -165647,6 +165647,25 @@ $)
       VKGFEDURUSVCUTVAVB $.
   $}
 
+  ${
+    $d u v x y z $.
+    $( The invertible complex numbers are exactly those apart from zero.  This
+       is ~ recapb but expressed in terms of ` CCfld ` .  (Contributed by Jim
+       Kingdon, 11-Sep-2025.) $)
+    cnfldui $p |- { z e. CC | z =//= 0 } = ( Unit ` CCfld ) $=
+      ( vy vu vv ccnfld cfv cv cc0 cap wbr cc wcel wa cmul co c1 wceq eqid wtru
+      a1i cui crab wrex recapb pm5.32i breq1 elrab cdsr cmpo ccrg cncrng cnfld1
+      vx wb crngunit ax-mp cbs cnfldbas eqidd csrg crg cnring cmulr mpocnfldmul
+      ringsrg dvdsrd mptru simpr simpl mulcld oveq1 oveq2 ovmpog syl3anc mulcom
+      eqtr4d eqeq1d rexbidva 3bitri 3bitr4ri eqriv eqcomi ) EUAFZAGZHIJZAKUBZUM
+      WCWFUMGZKLZWGHIJZMWHWGBGZNOZPQZBKUCZMZWGWFLWGWCLZWHWIWMBWGUDUEWEWIAWGKWDW
+      GHIUFUGWOWGPEUHFZJZWHWJWGCDKKCGZDGZNOZUIZOZPQZBKUCZMZWNEUJLWOWQUNUKWPEWCP
+      WGWCRULWPRUOUPWQXEUNSBKWPEXAWGPKEUQFQSURTSWPUSEUTLZSEVALXFVBEVEUPTXAEVCFQ
+      SCDVDTVFVGWHXDWMWHXCWLBKWHWJKLZMZXBWKPXHXBWJWGNOZWKXHXGWHXIKLXBXIQWHXGVHZ
+      WHXGVIZXHWJWGXJXKVJCDWJWGKKWTXIXAWJWSNOKWRWJWSNVKWSWGWJNVLXARVMVNWGWJVOVP
+      VQVRUEVSVTWAWB $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
