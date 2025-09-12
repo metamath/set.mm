@@ -165375,6 +165375,16 @@ $)
     ccj cun strslfv ax-mp ) ABCADEFGHADEBIIJKLMNOEFALZPOQFRLZOSFTLZULUAZDUMUNUL
     UBUOUOOUCFUHLPZUIDUOUPUDUEUFUGUJUK $.
 
+  ${
+    $d x y $.
+    $( The multiplication operation of the field of complex numbers.  Version
+       of ~ cnfldmul using maps-to notation.  (Contributed by GG,
+       31-Mar-2025.) $)
+    mpocnfldmul $p |- ( x e. CC , y e. CC |-> ( x x. y ) ) = ( .r ` CCfld ) $=
+      ( cmul cc cv co cmpo ccnfld cmulr cfv cxp wf wfn wceq ax-mulf fnovim mp2b
+      ffn cnfldmul eqtr3i ) CABDDAEBECFGZHIJDDKZDCLCUBMCUANOUBDCRABDDCPQST $.
+  $}
+
   $( The conjugation operation of the field of complex numbers.  (Contributed
      by Mario Carneiro, 6-Oct-2015.)  (Revised by Thierry Arnoux, 17-Dec-2017.)
      (Revised by Thierry Arnoux, 17-Dec-2017.) $)
