@@ -38226,6 +38226,22 @@ $)
   $}
 
   ${
+    $d x y A $.  $d x y B $.
+    opelopabgf.x $e |- F/ x ps $.
+    opelopabgf.y $e |- F/ y ch $.
+    opelopabgf.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    opelopabgf.2 $e |- ( y = B -> ( ps <-> ch ) ) $.
+    $( The law of concretion.  Theorem 9.5 of [Quine] p. 61.  This version of
+       ~ opelopabg uses bound-variable hypotheses in place of distinct variable
+       conditions.  (Contributed by Alexander van der Vekens, 8-Jul-2018.) $)
+    opelopabgf $p |- ( ( A e. V /\ B e. W )
+                       -> ( <. A , B >. e. { <. x , y >. | ph } <-> ch ) ) $=
+      ( cop copab wcel wsbc wa opelopabsb sbciegf nfcv cv wceq sbcbidv sylan9bb
+      nfsbcw bitrid ) FGNADEOPAEGQZDFQZFHPZGIPZRCADEFGSUJUIBEGQZUKCUHULDFHBDEGD
+      GUAJUFDUBFUCABEGLUDTBCEGIKMTUEUG $.
+  $}
+
+  ${
     $d x y A $.  $d x y B $.  $d x y C $.  $d x y D $.  $d x y ch $.
     opelopab2.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
     opelopab2.2 $e |- ( y = B -> ( ps <-> ch ) ) $.
