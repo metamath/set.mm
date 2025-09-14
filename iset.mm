@@ -57555,6 +57555,37 @@ $)
       HBCEFNORDJPQ $.
   $}
 
+  ${
+    $d A f u v x y $.  $d V u v $.  $d f ph u v $.
+    $( Principle of unique choice.  This is also called non-choice.  The name
+       choice results in its similarity to something like ~ acfun (with the key
+       difference being the change of ` E. ` to ` E! ` ) but unique choice in
+       fact follows from the axiom of collection and our other axioms.  This is
+       somewhat similar to Corollary 3.9.2 of [HoTT], p.  (varies) but is
+       better described by the paragraph at the end of Section 3.9 which starts
+       "A similar issue arises in set-theoretic mathematics".  (Contributed by
+       Jim Kingdon, 13-Sep-2025.) $)
+    uchoice $p |- ( ( A e. V /\ A. x e. A E! y ph ) -> E. f
+        ( f Fn A /\ A. x e. A [. ( f ` x ) / y ]. ph ) ) $=
+      ( vv vu wcel wral wa cv cfv wceq wsbc wb wal wex nfv vex weu wfn cvv eqid
+      copab fnopabg biimpi adantl simpl fnex syl2anc cop fnopfvb nfsbc1v eleq1w
+      sbceq1a anbi12d anbi2d opelopabf bitrdi ralrimiva alrimiv ancli syl fneq1
+      nfan fveq1 eqeq1d bibi1d ralbidv albidv elabd ralcom4 anbi2i exbii sylibr
+      nfcv nfsbc nfbi fveqeq2 sbceq2a sbcbidv bibi12d cbvral sylib eqidd dfsbcq
+      nfal fvex eqeq2 spcv mpbid simprd ralimi anim2i eximi ) DFIZACUABDJZKZELZ
+      DUBZBLZWTMZGLZNZXBDIZACXDOZKZPZGQZBDJZKZERZXAACXCOZBDJZKZERWSXAHLZWTMZXDN
+      ZXQDIZABXQOZCXDOZKZPZGQZHDJZKZERZXMWSXAYDHDJZGQZKZERYHWSYKXFAKZBCUEZDUBZX
+      QYMMZXDNZYCPZHDJZGQZKZEYMWSYNWQYMUCIWRYNWQWRYNABCDYMYMUDUFUGUHZWQWRUIDFYM
+      UJUKWSYNYTUUAYNYSYNYRGYNYQHDYNXTKYPXQXDULYMIYCDXQXDYMUMYLXTYAKYCBCXQXDXTY
+      ABXTBSZABXQUNZVFXTYBCXTCSYACXDUNVFHTGTXBXQNXFXTAYABHDUOABXQUPUQCLXDNYAYBX
+      TYACXDUPURUSUTVAVBVCVDWTYMNZXAYNYJYSDWTYMVEUUDYIYRGUUDYDYQHDUUDXSYPYCUUDX
+      RYOXDXQWTYMVGVHVIVJVKUQVLYGYKEYFYJXAYDHGDVMVNVOVPYGXLEYFXKXAYEXJHBDYDBGXS
+      YCBXSBSXTYBBUUBYABCXDBXDVQUUCVRVFVSWHXJHSXQXBNZYDXIGUUEXSXEYCXHXQXBXDWTVT
+      UUEXTXFYBXGHBDUOUUEYAACXDABXQWAWBUQWCVKWDVNVOWEXLXPEXKXOXAXJXNBDXJXFXNXJX
+      CXCNZXFXNKZXJXCWFXIUUFUUGPGXCXBWTUCUCETBTWIXDXCNZXEUUFXHUUGXDXCXCWJUUHXGX
+      NXFACXDXCWGURWCWKWLWMWNWOWPVD $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
