@@ -11228,12 +11228,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>submmulg</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses ressplusg</td>
-</tr>
-
-<tr>
   <td>pwsmulg</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses pwspjmhm and pwsmnd</td>
@@ -11373,11 +11367,32 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>gsumsubmcl</td>
+  <td>gsumzsubmcl , gsumsubmcl</td>
   <td>~ gsumfzsubmcl</td>
   <td>The group sum needs to be indexed by
   consecutive integers. Also, we don't need
   commutativity since the order is specified.</td>
+</tr>
+
+<tr>
+  <td>gsumsubgcl</td>
+  <td><i>none</i></td>
+  <td>at least at present, just use ~ gsumfzsubmcl although it
+  wouldn't be hard to add a version for groups rather than monoids</td>
+</tr>
+
+<tr>
+  <td>gsumzaddlem , gsumzadd , gsumadd</td>
+  <td><i>none</i></td>
+  <td>should be possible to prove versions indexed by
+  consecutive integers.</td>
+</tr>
+
+<tr>
+  <td>gsummptfsadd</td>
+  <td><i>none</i></td>
+  <td>should be possible (for sums indexed by consecutive integers)
+  given a theorem similar to gsumadd</td>
 </tr>
 
 <tr>
@@ -11392,6 +11407,85 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>~ gsumfzmptfidmadd2</td>
   <td>The group sum needs to be indexed by
   consecutive integers.</td>
+</tr>
+
+<tr>
+  <td>gsumzsplit , gsumsplit , gsumsplit2 , gsummptfidmsplit ,
+  gsummptfidmsplitres</td>
+  <td><i>none</i></td>
+  <td>should be possible to prove versions indexed by
+  consecutive integers (compare with gsummptfzsplit and gsummptfzsplitl
+  ).</td>
+</tr>
+
+<tr>
+  <td>gsummptfzsplit , gsummptfzsplitl</td>
+  <td><i>none</i></td>
+  <td>apparently these would be provable as stated</td>
+</tr>
+
+<tr>
+  <td>gsumconst</td>
+  <td>~ gsumfzconst</td>
+  <td>requires that the series is indexed by consecutive integers
+  and has an element (if the latter condition is an issue, detect it
+  with something like ~ fzn and handle it with ~ gsum0g )</td>
+</tr>
+
+<tr>
+  <td>gsumconstf</td>
+  <td>~ gsumfzconstf</td>
+  <td>requires that the series is indexed by consecutive integers
+  and has an element (if the latter condition is an issue, detect it
+  with something like ~ fzn and handle it with ~ gsum0g )</td>
+</tr>
+
+<tr>
+  <td>gsumconstf</td>
+  <td><i>none</i></td>
+  <td>it should be possible to adapt ~ gsumfzconst to a version with
+  a not-free-in hypothesis</td>
+</tr>
+
+<tr>
+  <td>gsummptshft</td>
+  <td><i>none</i></td>
+  <td>presumably provable (the sums are already indexed by consecutive
+  integers)</td>
+</tr>
+
+<tr>
+  <td>gsummhm</td>
+  <td>~ gsumfzmhm</td>
+  <td>The group sum needs to be indexed by
+  consecutive integers.</td>
+</tr>
+
+<tr>
+  <td>gsummhm2</td>
+  <td>~ gsumfzmhm2</td>
+  <td>The group sum needs to be indexed by
+  consecutive integers.</td>
+</tr>
+
+<tr>
+  <td>gsumsnfd</td>
+  <td>~ gsumfzsnfd</td>
+  <td>The group sum needs to be indexed by an integer</td>
+</tr>
+
+<tr>
+  <td>gsumsnd , gsumsnf , gsumsn</td>
+  <td><i>none</i></td>
+  <td>should be possible with small changes (see ~ gsumfzsnfd )</td>
+</tr>
+
+<tr>
+  <td>gsumpr</td>
+  <td><i>none</i></td>
+  <td>Should be possible with some changes.  Because ` M ` and ` N `
+  would need to be consecutive integers, perhaps it would be easier
+  to just state them as ` M ` and ` M + 1 ` .</td>
 </tr>
 
 <tr>
@@ -11924,6 +12018,19 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>df-field</td>
   <td><i>none</i></td>
   <td>once we define division rings this should follow</td>
+</tr>
+
+<tr>
+  <td rowspan="2">drngui</td>
+  <td>~ cnfldui</td>
+  <td>for complex numbers</td>
+</tr>
+
+<tr>
+  <td><i>none</i></td>
+  <td>for general division rings. To provide theorems like
+  this we'd need more development of apartness rings and/or
+  ~ df-apr .</td>
 </tr>
 
 <tr>
@@ -12462,6 +12569,12 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>gsumfsum</td>
+  <td>~ gsumfzfsum</td>
+  <td>requires the sums to be indexed by consecutive integers</td>
+</tr>
+
+<tr>
   <td>zringlpirlem1 , zringlpirlem2 , zringlpirlem3 , zringlpir ,
   zringndrg , zringcyg</td>
   <td><i>none</i></td>
@@ -12498,9 +12611,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>expghm</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses drngui - there would appear to be issues
-  around not equal to zero versus invertible</td>
+  <td>~ expghmap</td>
+  <td>changes not equal to apart</td>
 </tr>
 
 <tr>
@@ -15163,7 +15275,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>lgseisenlem3 , lgseisenlem4 , lgseisen</td>
+  <td>lgseisen</td>
   <td><i>none</i></td>
   <td>presumably the set.mm proofs can be adapted once we
   have added more theorems concerning ` gsum ` .</td>
