@@ -95,6 +95,18 @@ Date      Old       New         Notes
 10-Sep-25 soeq12d   [same]      Moved from SO's mathbox to main set.mm
 10-Sep-25 freq12d   [same]      Moved from SO's mathbox to main set.mm
 10-Sep-25 weeq12d   [same]      Moved from SO's mathbox to main set.mm
+ 4-Sep-25 mhphf4    [same]      Removed unneeded hypotheses
+ 4-Sep-25 mhphf3    [same]      Removed unneeded hypotheses
+ 4-Sep-25 mhphf     [same]      Removed unneeded hypotheses
+ 4-Sep-25 evlsmhpvvval [same]   Removed unneeded hypotheses
+ 4-Sep-25 mhpind    [same]      Removed unneeded hypotheses
+ 4-Sep-25 mhpvscacl [same]      Removed NN0 hypothesis
+ 4-Sep-25 mhpinvcl  [same]      Removed NN0 hypothesis
+ 4-Sep-25 mhpaddcl  [same]      Removed NN0 hypothesis
+ 4-Sep-25 mhppwdeg  [same]      Removed NN0 hypothesis
+ 4-Sep-25 mhpmulcl  [same]      Removed NN0 hypotheses
+ 4-Sep-25 mhpdeg    [same]      Removed unneeded hypotheses
+ 4-Sep-25 mhpmpl    [same]      Removed unneeded hypotheses
 24-Aug-25 elrab2w   [same]      Moved from SN's mathbox to main set.mm
 24-Aug-25 elab2gw   [same]      Moved from SN's mathbox to main set.mm
 24-Aug-25 elabgw    [same]      Moved from SN's mathbox to main set.mm
