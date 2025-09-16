@@ -183390,7 +183390,7 @@ $)
       lgseisen.4 $e |- R = ( ( Q x. ( 2 x. x ) ) mod P ) $.
       lgseisen.5 $e |- M = ( x e. ( 1 ... ( ( P - 1 ) / 2 ) ) |->
         ( ( ( ( -u 1 ^ R ) x. R ) mod P ) / 2 ) ) $.
-      $( Lemma for Eisenstein's lemma.  If ` R ( u ) = ( Q x. u ) mod P ` and
+      $( Lemma for ~ lgseisen .  If ` R ( u ) = ( Q x. u ) mod P ` and
          ` M ( u ) = ( -u 1 ^ R ( u ) ) x. R ( u ) ` , then for any even
          ` 1 <_ u <_ P - 1 ` , ` M ( u ) ` is also an even integer
          ` 1 <_ M ( u ) <_ P - 1 ` .  To simplify these statements, we divide
@@ -183468,8 +183468,8 @@ $)
         CVYDWVPWVQYDWUTVYFVYGVYHUYCUXQNUXNYHYTUXOKUXP $.
 
       lgseisen.6 $e |- S = ( ( Q x. ( 2 x. y ) ) mod P ) $.
-      $( Lemma for Eisenstein's lemma.  The function ` M ` is an injection (and
-         hence a bijection by the pigeonhole principle).  (Contributed by Mario
+      $( Lemma for ~ lgseisen .  The function ` M ` is an injection (and hence
+         a bijection by the pigeonhole principle).  (Contributed by Mario
          Carneiro, 17-Jun-2015.) $)
       lgseisenlem2 $p |- ( ph -> M : ( 1 ... ( ( P - 1 ) / 2 ) )
                          -1-1-onto-> ( 1 ... ( ( P - 1 ) / 2 ) ) ) $=
@@ -183569,7 +183569,7 @@ $)
         $d G x $.  $d L k x $.  $d M y $.  $d P k x $.  $d P x y $.
         $d Q x y $.  $d R k $.  $d S x $.  $d Y k x $.  $d k ph x $.
         $d ph x y $.
-        $( Lemma for Eisenstein's lemma.  (Contributed by Mario Carneiro,
+        $( Lemma for ~ lgseisen .  (Contributed by Mario Carneiro,
            17-Jun-2015.)  (Proof shortened by AV, 28-Jul-2019.) $)
         lgseisenlem3 $p |- ( ph -> ( G gsum ( x e. ( 1 ... ( ( P - 1 ) / 2 ) )
           |-> ( L ` ( ( -u 1 ^ R ) x. Q ) ) ) ) = ( 1r ` Y ) ) $=
@@ -183638,7 +183638,7 @@ $)
       $}
 
       ${
-        $( Lemma for Eisenstein's lemma.  (Contributed by Mario Carneiro,
+        $( Lemma for ~ lgseisen .  (Contributed by Mario Carneiro,
            18-Jun-2015.)  (Proof shortened by AV, 15-Jun-2019.) $)
         lgseisenlem4 $p |- ( ph -> ( ( Q ^ ( ( P - 1 ) / 2 ) ) mod P ) =
           ( ( -u 1 ^ sum_ x e. ( 1 ... ( ( P - 1 ) / 2 ) )
@@ -183727,6 +183727,40 @@ $)
           VBXDVYIWYQWYRVUKVUTDVUHYBVUI $.
       $}
     $}
+
+    $( Eisenstein's lemma, an expression for ` ( P /L Q ) ` when ` P , Q ` are
+       distinct odd primes.  (Contributed by Mario Carneiro, 18-Jun-2015.) $)
+    lgseisen $p |- ( ph -> ( Q /L P ) =
+        ( -u 1 ^ sum_ x e. ( 1 ... ( ( P - 1 ) / 2 ) )
+          ( |_ ` ( ( Q / P ) x. ( 2 x. x ) ) ) ) ) $=
+      ( co c1 c2 cexp cmul cfv cz wcel cprime syl cq cle wbr vy clgs cmin caddc
+      cdiv cmo cneg cfz cv cfl csu csn cdif wceq eldifad prmz gausslemma2dlem0a
+      lgsval3 syl2anc cn oddprm nnnn0d nnexpcld nnq cc0 1zzd znegcld zq neg1ne0
+      wne a1i nnzd fzfigd wa znq 2z elfznn adantl zmulcld qmulcl flqcld fsumzcl
+      syl2an2r qexpclz syl3anc mp1i nngt0d czn cmgp czrh cmpt eqid lgseisenlem4
+      1z modqadd1 clt qaddcl df-neg cabs cc cap neg1cn neg1ap0 absexpzap ax-1cn
+      mp3an12i absnegi abs1 eqtri oveq1i 1exp eqtrid eqtrd 1le1 eqbrtrdi neg1rr
+      cr wb reexpclzapd 1re absle sylancl mpbid simpld eqbrtrrid 0red lesubaddd
+      1red nnred peano2rem simprd df-2 eldifsni mpbird 2re cuz prmuz2 ltaddsubd
+      zapne eluzle leltapd lelttrd modqid syl22anc oveq1d recnd pncan 3eqtrd
+      3syl ) ADCUBHZDCIUCHZJUEHZKHZIUDHCUFHZIUCHZIUGZIUULUHHZDCUEHZJBUIZLHZLHZU
+      JMZBUKZKHZIUDHZIUCHZUVDADNOZCPJULZUMOZUUJUUOUNADPOUVGADPUVHFUODUPQZEDCURU
+      SAUUNUVEIUCAUUNUVECUFHZUVEAUUMUVDICAUUMUTOUUMROADUULADFUQAUULAUVIUULUTOEC
+      VAQZVBVCUUMVDQAUUPROZUUPVEVJZUVCNOZUVDROZAUUPNOUVMAIAVFZVGUUPVHQUVNAVIVKA
+      UUQUVBBAIUULUVQAUULUVLVLVMAUUSUUQOZVNZUVAAUURROZUVRUUTROZUVAROAUVGCUTOZUV
+      TUVJACEUQZDCVOUSUVSUUTNOUWAUVSJUUSJNOZUVSVPVKUVSUUSUVRUUSUTOAUUSUULVQVRVL
+      VSUUTVHQUURUUTVTWCWAWBZUUPUVCWDWEZINOIROZAWNIVHWFZAUWBCROZUWCCVDQZACUWCWG
+      ABUACDDUUTLHCUFHZDJUAUILHLHCUFHZCWHMZWIMZUWMWJMZBUUQUUPUWKKHUWKLHCUFHJUEH
+      WKZUWMEFGUWKWLUWPWLUWLWLUWMWLUWNWLUWOWLWMWOAUVEROZUWIVEUVESTZUVECWPTZUVKU
+      VEUNAUVPUWGUWQUWFUWHUVDIWQUSUWJAVEIUCHZUVDSTUWRAUWTUUPUVDSIWRAUUPUVDSTZUV
+      DISTZAUVDWSMZISTZUXAUXBVNZAUXCIISAUXCUUPWSMZUVCKHZIUUPWTOUUPVEXATZAUVOUXC
+      UXGUNXBXCUWEUUPUVCXDXFAUXGIUVCKHZIUXFIUVCKUXFIWSMIIXEXGXHXIXJAUVOUXIIUNUW
+      EUVCXKQXLXMXNXOAUVDXQOIXQOUXDUXEXRAUUPUVCUUPXQOAXPVKUXHAXCVKUWEXSZXTUVDIY
+      AYBYCZYDYEAVEIUVDAYFAYHZUXJYGYCAUWSUVDUUKWPTAUVDIUUKUXJUXLACXQOUUKXQOACUW
+      CYIZCYJQAUXAUXBUXKYKAIIUDHZCWPTIUUKWPTAUXNJCWPYLAJCWPTCJXATZAUXOCJVJZAUVI
+      UXPECPJYMQACNOUWDUXOUXPXRACUWCVLVPCJYSYBYNAJCJXQOAYOVKUXMACPOCJYPMOJCSTAC
+      PUVHEUOCYQJCYTUUIUUAYNYEAIICUXLUXLUXMYRYCUUBAUVDICUXJUXLUXMYRYNUVECUUCUUD
+      XMUUEAUVDWTOIWTOUVFUVDUNAUVDUXJUUFXEUVDIUUGYBUUH $.
   $}
 
   $( The first supplement to the law of quadratic reciprocity.  Negative one is
