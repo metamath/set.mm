@@ -38089,6 +38089,15 @@ $)
   $}
 
   ${
+    $d x y z $.  $d ph z $.
+    $( The law of concretion.  Special case of Theorem 9.5 of [Quine] p. 61.
+       Version of ~ opabid with a disjoint variable condition (Contributed by
+       NM, 14-Apr-1995.)  (Revised by GG, 26-Jan-2024.) $)
+    opabidw $p |- ( <. x , y >. e. { <. x , y >. | ph } <-> ph ) $=
+      ( opabid ) ABCD $.
+  $}
+
+  ${
     $d x z A $.  $d y z A $.  $d z ph $.
     $( Membership in a class abstraction of ordered pairs.  (Contributed by NM,
        24-Mar-1998.) $)
