@@ -43194,6 +43194,18 @@ $)
     ( c0 wrel cvv cxp wss 0ss df-rel mpbir ) ABACCDZEIFAGH $.
 
   ${
+    $d x y $.
+    relopabiv.1 $e |- A = { <. x , y >. | ph } $.
+    $( A class of ordered pairs is a relation.  For a version without a
+       disjoint variable condition, see ~ relopabi .  (Contributed by BJ,
+       22-Jul-2023.) $)
+    relopabiv $p |- Rel A $=
+      ( wrel cvv cxp wss copab cv wcel wa vex pm3.2i a1i ssopab2i df-xp 3sstr4i
+      df-rel mpbir ) DFDGGHZIABCJBKGLZCKGLZMZBCJDUBAUEBCUEAUCUDBNCNOPQEBCGGRSDT
+      UA $.
+  $}
+
+  ${
     $d ph z $.  $d x z $.  $d y z $.
     relopabi.1 $e |- A = { <. x , y >. | ph } $.
     $( A class of ordered pairs is a relation.  (Contributed by Mario Carneiro,
