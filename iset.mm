@@ -43206,6 +43206,15 @@ $)
   $}
 
   ${
+    $d x y $.
+    $( A class of ordered pairs is a relation.  For a version without a
+       disjoint variable condition, see ~ relopab .  (Contributed by SN,
+       8-Sep-2024.) $)
+    relopabv $p |- Rel { <. x , y >. | ph } $=
+      ( copab eqid relopabiv ) ABCABCDZGEF $.
+  $}
+
+  ${
     $d ph z $.  $d x z $.  $d y z $.
     relopabi.1 $e |- A = { <. x , y >. | ph } $.
     $( A class of ordered pairs is a relation.  (Contributed by Mario Carneiro,
