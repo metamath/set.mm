@@ -92,6 +92,9 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+16-Sep-25 ismhp3    [same]      Removed unneeded hypotheses
+16-Sep-25 ismhp2    [same]      Removed unneeded hypotheses
+16-Sep-25 ismhp     [same]      Removed unneeded hypotheses
 16-Sep-25 selvval   [same]      Removed unneeded hypotheses
 16-Sep-25 mplelsfi  [same]      Removed unused hypothesis
 10-Sep-25 soeq12d   [same]      Moved from SO's mathbox to main set.mm
