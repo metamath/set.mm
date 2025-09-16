@@ -68387,6 +68387,29 @@ $)
   $}
 
   ${
+    $d A x y z $.  $d B x y z $.  $d S z $.  $d ph z $.
+    opabfi.s $e |- S = { <. x , y >. | ( ( x e. A /\ y e. B ) /\ ps ) } $.
+    opabfi.a $e |- ( ph -> A e. Fin ) $.
+    opabfi.b $e |- ( ph -> B e. Fin ) $.
+    opabfi.dc $e |- ( ph -> A. x e. A A. y e. B DECID ps ) $.
+    $( Finiteness of an ordered pair abstraction which is a decidable subset of
+       finite sets.  (Contributed by Jim Kingdon, 16-Sep-2025.) $)
+    opabfi $p |- ( ph -> S e. Fin ) $=
+      ( vz cfn wcel cv wdc wral syl2anc wa adantl cxp wss xpfi opabssxp eqsstri
+      copab a1i c1st wsbc c2nd xp2nd xp1st adantr nfcv nfsbc1v nfdc nfralw wceq
+      cfv sbceq1a dcbid ralbidv rspc sylc wb cop nfv nfan anbi1d anbi12d anbi2d
+      eleq1 opelopabgf 1st2nd2 eleq12d 3bitr4d mpbird ralrimiva ssfidc syl3anc
+      ibar ) AEFUAZMNZGWBUBZLOZGNZPZLWBQGMNAEMNFMNWCIJEFUCRWDAGCOZENZDOZFNZSZBS
+      ZCDUFZWBHBCDEFUDUEUGAWGLWBAWEWBNZSZWGBCWEUHUSZUIZDWEUJUSZUIZPZWPWSFNZWRPZ
+      DFQZXAWOXBAWEEFUKZTWPWQENZBPZDFQZCEQZXDWOXFAWEEFULZTAXIWOKUMXHXDCWQEXCCDF
+      CFUNWRCBCWQUOZUPUQWHWQURZXGXCDFXLBWRBCWQUTZVAVBVCVDXCXADWSFWTDWRDWSUOZUPW
+      JWSURZWRWTWRDWSUTZVAVCVDWOWGXAVEAWOWFWTWOWQWSVFZWNNZXFXBSZWTSZWFWTWOXFXBX
+      RXTVEXJXEWMXFWKSZWRSXTCDWQWSEFYAWRCYACVGXKVHXSWTDXSDVGXNVHXLWLYABWRXLWIXF
+      WKWHWQEVLVIXMVJXOYAXSWRWTXOWKXBXFWJWSFVLVKXPVJVMRWOWEXQGWNWEEFVNGWNURWOHU
+      GVOWOXFXBWTXTVEXJXEXSWTWARVPVATVQVRLWBGVSVT $.
+  $}
+
+  ${
     $d A x $.  $d B x $.
     $( The intersection of two sets is finite if one of them is and the other
        is decidable.  (Contributed by Jim Kingdon, 24-May-2025.) $)
