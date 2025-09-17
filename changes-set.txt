@@ -92,6 +92,13 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+17-Sep-25 psdmul    [same]      Removed unneeded hypothesis
+17-Sep-25 psdvsca   [same]      Removed unneeded hypothesis
+17-Sep-25 psdadd    [same]      Removed unneeded hypothesis
+17-Sep-25 psdmplcl  [same]      Removed unneeded hypothesis
+17-Sep-25 psdcl     [same]      Removed unneeded hypothesis
+17-Sep-25 psdcoef   [same]      Removed unneeded hypotheses
+17-Sep-25 psdval    [same]      Removed unneeded hypotheses
 16-Sep-25 ismhp3    [same]      Removed unneeded hypotheses
 16-Sep-25 ismhp2    [same]      Removed unneeded hypotheses
 16-Sep-25 ismhp     [same]      Removed unneeded hypotheses
