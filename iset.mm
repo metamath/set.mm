@@ -183867,8 +183867,8 @@ $)
     lgsquad.5 $e |- N = ( ( Q - 1 ) / 2 ) $.
     lgsquad.6 $e |- S = { <. x , y >. |
   ( ( x e. ( 1 ... M ) /\ y e. ( 1 ... N ) ) /\ ( y x. P ) < ( x x. Q ) ) } $.
-    $( Lemma for Quadratic Reciprocity. ` S ` is finite.  (Contributed by Jim
-       Kingdon, 16-Sep-2025.) $)
+    $( Lemma for ~ lgsquad . ` S ` is finite.  (Contributed by Jim Kingdon,
+       16-Sep-2025.) $)
     lgsquadlemsfi $p |- ( ph -> S e. Fin ) $=
       ( cv co c1 nnzd wcel cn cmul clt wbr cfz 1zzd gausslemma2dlem0b fzfigd wa
       wdc cz elfznn ad2antll gausslemma2dlem0a adantr nnmulcld ad2antrl syl2anc
@@ -183877,9 +183877,8 @@ $)
       BVMVADVKVATSAVJVAHUKULADTSVLADIUMUNUORVMVDVMVCEVJVCTSAVKVCGUKUPAETSVLAEJU
       MUNUORVBVDURUQUSUT $.
 
-    $( Lemma for Quadratic Reciprocity.  There are finitely many members of
-       ` S ` with odd first part.  (Contributed by Jim Kingdon,
-       16-Sep-2025.) $)
+    $( Lemma for ~ lgsquad .  There are finitely many members of ` S ` with odd
+       first part.  (Contributed by Jim Kingdon, 16-Sep-2025.) $)
     lgsquadlemofi $p |- ( ph -> { z e. S | -. 2 || ( 1st ` z ) } e. Fin ) $=
       ( c2 cv wcel wa co c1st cfv cdvds wbr wn lgsquadlemsfi wdc cn 2nn cfz cxp
       cz cmul clt copab opabssxp eqsstri sseli xp1st syl elfzelzd adantl dvdsdc
@@ -183888,8 +183887,8 @@ $)
       VRRGVTVIGBQZVRRCQZVSRSWBEUMTWAFUMTUNUDZSBCUOVTOWCBCVRVSUPUQURVIVRVSUSUTVA
       VBPVJVCVEVKVFUTVGVH $.
 
-    $( Lemma for Quadratic Reciprocity.  Count the members of ` S ` with odd
-       coordinates.  (Contributed by Mario Carneiro, 19-Jun-2015.) $)
+    $( Lemma for ~ lgsquad .  Count the members of ` S ` with odd coordinates.
+       (Contributed by Mario Carneiro, 19-Jun-2015.) $)
     lgsquadlem1 $p |- ( ph -> ( -u 1 ^
         sum_ u e. ( ( ( |_ ` ( M / 2 ) ) + 1 ) ... M )
           ( |_ ` ( ( Q / P ) x. ( 2 x. u ) ) ) ) =
@@ -184037,9 +184036,9 @@ $)
       XPULRZUCWXSUCWXPULWUGWMAUUWQUUWSUCWKUUWRWXPWUHWDWNYQVVDAWVJWVLWVAVDTWVHVD
       TWXHWXIWKWVKWVMWWTWXDWUKWVAWVHWUIWUFUYKWUJ $.
 
-    $( Lemma for Quadratic Reciprocity.  Count the members of ` S ` with even
-       coordinates, and combine with ~ lgsquadlem1 to get the total count of
-       lattice points in ` S ` (up to parity).  (Contributed by Mario Carneiro,
+    $( Lemma for ~ lgsquad .  Count the members of ` S ` with even coordinates,
+       and combine with ~ lgsquadlem1 to get the total count of lattice points
+       in ` S ` (up to parity).  (Contributed by Mario Carneiro,
        18-Jun-2015.) $)
     lgsquadlem2 $p |- ( ph -> ( Q /L P ) = ( -u 1 ^ ( # ` S ) ) ) $=
       ( co c1 c2 clt wbr wcel vu vz vv cmin cdiv cfz cv cmul cfl cfv cexp caddc
@@ -184213,6 +184212,27 @@ $)
       CVWOUWIYQUWJUXJFUWKYFAVUSUWTUMUKZUXCUMUKZPOZUXPAUWTVJRUXCVJRVUSVXBVGUYSVU
       AUWTUXCUWLWOAVWTGVXAHPAGXIRVWTGVGAGUYRYSGYTTAHXIRVXAHVGAHUYTYSHYTTXEUWMUW
       NXCUWO $.
+  $}
+
+  ${
+    $d w x y z P $.  $d w x y z Q $.
+    $( The Law of Quadratic Reciprocity, see also theorem 9.8 in [ApostolNT]
+       p. 185.  If ` P ` and ` Q ` are distinct odd primes, then the product of
+       the Legendre symbols ` ( P /L Q ) ` and ` ( Q /L P ) ` is the parity of
+       ` ( ( P - 1 ) / 2 ) x. ( ( Q - 1 ) / 2 ) ` .  This uses Eisenstein's
+       proof, which also has a nice geometric interpretation - see
+       ~ https://en.wikipedia.org/wiki/Proofs_of_quadratic_reciprocity .  This
+       is Metamath 100 proof #7.  (Contributed by Mario Carneiro,
+       19-Jun-2015.) $)
+    lgsquad $p |- ( ( P e. ( Prime \ { 2 } ) /\ Q e. ( Prime \ { 2 } )
+      /\ P =/= Q ) -> ( ( P /L Q ) x. ( Q /L P ) ) =
+        ( -u 1 ^ ( ( ( P - 1 ) / 2 ) x. ( ( Q - 1 ) / 2 ) ) ) ) $=
+      ( vz vw vx vy c2 wcel cv c1 cmin co cdiv cfz wa cmul clt wbr eqid weq csn
+      cprime cdif wne w3a copab simp1 simp2 simp3 eleq1w bi2anan9 oveq1 anbi12d
+      breqan12rd cbvopabv lgsquadlem3 ) AUBGUAUCZHZBUQHZABUDZUECDABEIZJAJKLGMLZ
+      NLZHZFIZJBJKLGMLZNLZHZOZVEAPLZVABPLZQRZOZEFUFVBVFURUSUTUGURUSUTUHURUSUTUI
+      VBSVFSVMCIZVCHZDIZVGHZOZVPAPLZVNBPLZQRZOEFCDECTZFDTZOVIVRVLWAWBVDVOWCVHVQ
+      ECVCUJFDVGUJUKWCWBVJVSVKVTQVEVPAPULVAVNBPULUNUMUOUP $.
   $}
 
   $( The first supplement to the law of quadratic reciprocity.  Negative one is
