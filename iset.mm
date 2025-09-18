@@ -38226,6 +38226,22 @@ $)
   $}
 
   ${
+    $d x y A $.  $d x y B $.
+    opelopabgf.x $e |- F/ x ps $.
+    opelopabgf.y $e |- F/ y ch $.
+    opelopabgf.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    opelopabgf.2 $e |- ( y = B -> ( ps <-> ch ) ) $.
+    $( The law of concretion.  Theorem 9.5 of [Quine] p. 61.  This version of
+       ~ opelopabg uses bound-variable hypotheses in place of distinct variable
+       conditions.  (Contributed by Alexander van der Vekens, 8-Jul-2018.) $)
+    opelopabgf $p |- ( ( A e. V /\ B e. W )
+                       -> ( <. A , B >. e. { <. x , y >. | ph } <-> ch ) ) $=
+      ( cop copab wcel wsbc wa opelopabsb sbciegf nfcv cv wceq sbcbidv sylan9bb
+      nfsbcw bitrid ) FGNADEOPAEGQZDFQZFHPZGIPZRCADEFGSUJUIBEGQZUKCUHULDFHBDEGD
+      GUAJUFDUBFUCABEGLUDTBCEGIKMTUEUG $.
+  $}
+
+  ${
     $d x y A $.  $d x y B $.  $d x y C $.  $d x y D $.  $d x y ch $.
     opelopab2.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
     opelopab2.2 $e |- ( y = B -> ( ps <-> ch ) ) $.
@@ -57537,6 +57553,37 @@ $)
     ofmresex $p |- ( ph -> ( oF R |` ( A X. B ) ) e. _V ) $=
       ( cxp cvv wcel cof cres xpexg syl2anc ofexg syl ) ABCIZJKZDLRMJKABEKCFKSG
       HBCEFNORDJPQ $.
+  $}
+
+  ${
+    $d A f u v x y $.  $d V u v $.  $d f ph u v $.
+    $( Principle of unique choice.  This is also called non-choice.  The name
+       choice results in its similarity to something like ~ acfun (with the key
+       difference being the change of ` E. ` to ` E! ` ) but unique choice in
+       fact follows from the axiom of collection and our other axioms.  This is
+       somewhat similar to Corollary 3.9.2 of [HoTT], p.  (varies) but is
+       better described by the paragraph at the end of Section 3.9 which starts
+       "A similar issue arises in set-theoretic mathematics".  (Contributed by
+       Jim Kingdon, 13-Sep-2025.) $)
+    uchoice $p |- ( ( A e. V /\ A. x e. A E! y ph ) -> E. f
+        ( f Fn A /\ A. x e. A [. ( f ` x ) / y ]. ph ) ) $=
+      ( vv vu wcel wral wa cv cfv wceq wsbc wb wal wex nfv vex weu wfn cvv eqid
+      copab fnopabg biimpi adantl simpl fnex syl2anc cop fnopfvb nfsbc1v eleq1w
+      sbceq1a anbi12d anbi2d opelopabf bitrdi ralrimiva alrimiv ancli syl fneq1
+      nfan fveq1 eqeq1d bibi1d ralbidv albidv elabd ralcom4 anbi2i exbii sylibr
+      nfcv nfsbc nfbi fveqeq2 sbceq2a sbcbidv bibi12d cbvral sylib eqidd dfsbcq
+      nfal fvex eqeq2 spcv mpbid simprd ralimi anim2i eximi ) DFIZACUABDJZKZELZ
+      DUBZBLZWTMZGLZNZXBDIZACXDOZKZPZGQZBDJZKZERZXAACXCOZBDJZKZERWSXAHLZWTMZXDN
+      ZXQDIZABXQOZCXDOZKZPZGQZHDJZKZERZXMWSXAYDHDJZGQZKZERYHWSYKXFAKZBCUEZDUBZX
+      QYMMZXDNZYCPZHDJZGQZKZEYMWSYNWQYMUCIWRYNWQWRYNABCDYMYMUDUFUGUHZWQWRUIDFYM
+      UJUKWSYNYTUUAYNYSYNYRGYNYQHDYNXTKYPXQXDULYMIYCDXQXDYMUMYLXTYAKYCBCXQXDXTY
+      ABXTBSZABXQUNZVFXTYBCXTCSYACXDUNVFHTGTXBXQNXFXTAYABHDUOABXQUPUQCLXDNYAYBX
+      TYACXDUPURUSUTVAVBVCVDWTYMNZXAYNYJYSDWTYMVEUUDYIYRGUUDYDYQHDUUDXSYPYCUUDX
+      RYOXDXQWTYMVGVHVIVJVKUQVLYGYKEYFYJXAYDHGDVMVNVOVPYGXLEYFXKXAYEXJHBDYDBGXS
+      YCBXSBSXTYBBUUBYABCXDBXDVQUUCVRVFVSWHXJHSXQXBNZYDXIGUUEXSXEYCXHXQXBXDWTVT
+      UUEXTXFYBXGHBDUOUUEYAACXDABXQWAWBUQWCVKWDVNVOWEXLXPEXKXOXAXJXNBDXJXFXNXJX
+      CXCNZXFXNKZXJXCWFXIUUFUUGPGXCXBWTUCUCETBTWIXDXCNZXEUUFXHUUGXDXCXCWJUUHXGX
+      NXFACXDXCWGURWCWKWLWMWNWOWPVD $.
   $}
 
 
