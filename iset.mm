@@ -38091,7 +38091,7 @@ $)
   ${
     $d x y z $.  $d ph z $.
     $( The law of concretion.  Special case of Theorem 9.5 of [Quine] p. 61.
-       Version of ~ opabid with a disjoint variable condition (Contributed by
+       Version of ~ opabid with a disjoint variable condition.  (Contributed by
        NM, 14-Apr-1995.)  (Revised by GG, 26-Jan-2024.) $)
     opabidw $p |- ( <. x , y >. e. { <. x , y >. | ph } <-> ph ) $=
       ( opabid ) ABCD $.
