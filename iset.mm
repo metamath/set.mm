@@ -179150,6 +179150,73 @@ $)
       KUUMXAUUOYOXTUUTUUDWTXBXCXDXEXFXG $.
   $}
 
+  ${
+    $d k x z A $.  $d k x z F $.  $d k x z N $.  $d k x z ph $.  $d k x z S $.
+    plycjlemc.n $e |- ( ph -> N e. NN0 ) $.
+    plycjlem.2 $e |- G = ( ( * o. F ) o. * ) $.
+    plycjlemc.a $e |- ( ph -> A : NN0 --> ( S u. { 0 } ) ) $.
+    plycjlemc.f $e |- ( ph -> F = ( z
+      e. CC |-> sum_ k e. ( 0 ... N ) ( ( A ` k ) x. ( z ^ k ) ) ) ) $.
+    plycjlemc.p $e |- ( ph -> F e. ( Poly ` S ) ) $.
+    $( Lemma for ~ plycj .  (Contributed by Mario Carneiro, 24-Jul-2014.)
+       (Revised by Jim Kingdon, 22-Sep-2025.) $)
+    plycjlemc $p |- ( ph -> G = ( z e. CC |->
+        sum_ k e. ( 0 ... N ) ( ( ( * o. A ) ` k ) x. ( z ^ k ) ) ) ) $=
+      ( cc co cfv ccj cexp cmul wcel vx cc0 cfz cv csu cmpt ccom cjcl adantl wf
+      cjf a1i feqmptd wa cfn 0zd nn0zd fzfigd adantr cn0 csn cun wss plybss syl
+      cply snssi mp1i unssd fssd elfznn0 ffvelcdmd adantlr simplr expcld mulcld
+      0cn fsumcl wceq oveq1 oveq2d sumeq2sdv cbvmptv eqtrdi fveq2 fmptco fveq2d
+      eqtrid ad2antlr fsumcj cjmuld syl2anc cjexpd oveq1d eqtr2d oveq12d eqtr4d
+      fvco3 cjcj sumeq2dv eqtrd mpteq2dva ) AGBNUBHUCOZEUDZCPZBUDZQPZXDROZSOZEU
+      EZQPZUFZBNXCXDQCUGPZXFXDROZSOZEUEZUFAGQFUGZQUGXLJABUANNXGXCXEUAUDZXDROZSO
+      ZEUEZQPZXKQXQXFNTZXGNTZAXFUHZUIABNNQNNQUJAUKULUMZAUABNNYAXGYBFQAXRNTZUNZX
+      CXTEAXCUOTZYGAUBHAUPAHIUQURZUSYHXDXCTZUNZXEXSAYKXENTZYGAYKUNUTNXDCAUTNCUJ
+      ZYKAUTDUBVAZVBNCKADYONAFDVFPTDNVCMDFVDVEUBNTYONVCAVQUBNVGVHVIVJUSZYKXDUTT
+      ZAXDHVKZUIVLZVMYLXRXDAYGYKVNYKYQYHYRUIVOVPVRAFBNXCXEXNSOZEUEZUFUANYAUFLBU
+      ANUUAYAXFXRVSZXCYTXTEUUBXNXSXESXFXRXDRVTWAWBWCWDYFXFYAQWEWFXRXGVSZYAXJQUU
+      CXCXTXIEUUCXSXHXESXRXGXDRVTWAWBWGWFWHABNXKXPAYCUNZXKXCXIQPZEUEXPUUDXCXIEA
+      YIYCYJUSUUDYKUNZXEXHAYKYMYCYSVMZUUFXGXDYCYDAYKYEWIZYKYQUUDYRUIZVOZVPWJUUD
+      XCUUEXOEUUFUUEXEQPZXHQPZSOXOUUFXEXHUUGUUJWKUUFXMUUKXNUULSUUFYNYQXMUUKVSAY
+      KYNYCYPVMUUIUTNXDQCWRWLUUFUULXGQPZXDROXNUUFXGXDUUHUUIWMUUFUUMXFXDRYCUUMXF
+      VSAYKXFWSWIWNWOWPWQWTXAXBXA $.
+  $}
+
+  ${
+    $d A k x z $.  $d F a k n x z $.  $d G a n $.  $d N k x z $.
+    $d S a k n x z $.  $d a j k n w z $.  $d a k n ph x z $.
+    plycj.2 $e |- G = ( ( * o. F ) o. * ) $.
+    plycj.3 $e |- ( ( ph /\ x e. S ) -> ( * ` x ) e. S ) $.
+    plycj.4 $e |- ( ph -> F e. ( Poly ` S ) ) $.
+    $( The double conjugation of a polynomial is a polynomial.  (The single
+       conjugation is not because our definition of polynomial includes only
+       holomorphic functions, i.e. no dependence on ` ( * `` z ) `
+       independently of ` z ` .)  (Contributed by Mario Carneiro,
+       24-Jul-2014.) $)
+    plycj $p |- ( ph -> G e. ( Poly ` S ) ) $=
+      ( vj vz vk cc cc0 cv co cfv cn0 wcel ccj cvv vw vn cfz cexp cmul csu cmpt
+      va wceq csn cun cmap wrex cply wa elply sylib simprd ccom simplrl simplrr
+      wss wf cnex a1i simpld ssexd ad2antrr c0ex snex unexg sylancl nn0ex mpbid
+      elmapd simpr oveq1 oveq2d sumeq2sdv cbvmptv fveq2 oveq12d cbvsumv mpteq2i
+      oveq2 eqtri eqtrdi plycjlemc snssi mp1i unssd adantr elfznn0 adantl fvco3
+      0cn syl2anc ffvelcdmd wi wo wral ralrimiva eleq1d rspccv syl elsni fveq2d
+      cj0 wb eqeltrdi elsng mpbird orim12d 3imtr4g ad3antrrr mpd eqeltrd elplyd
+      elun plyun0 eleqtrdi ex rexlimdvva ) ADUALMUBNZUCOZINZUHNZPZUANZYFUDOZUEO
+      ZIUFZUGZUIZUHCMUJZUKZQULOZUMUBQUMZECUNPZRZACLVBZYRADYSRZUUAYRUOHUACIUBDUH
+      UPUQZURAYNYTUBUHQYQAYDQRZYGYQRZUOZUOZYNYTUUGYNUOZEYPUNPZYSUUHEJLYEKNZSYGU
+      SPZJNZUUJUDOZUEOKUFUGUUIUUHJYGCKDEYDAUUDUUEYNUTZFUUHUUEQYPYGVCZAUUDUUEYNV
+      AUUHYPQYGTTUUHCTRZYOTRYPTRAUUPUUFYNACLTLTRAVDVEAUUAYRUUCVFZVGVHMVIVJCYOTT
+      VKVLQTRUUHVMVEVOVNZUUHDYMJLYEUUJYGPZUUMUEOZKUFZUGZUUGYNVPYMJLYEYHUULYFUDO
+      ZUEOZIUFZUGUVBUAJLYLUVEYIUULUIZYEYKUVDIUVFYJUVCYHUEYIUULYFUDVQVRVSVTJLUVE
+      UVAYEUVDUUTIKYFUUJUIYHUUSUVCUUMUEYFUUJYGWAYFUUJUULUDWEWBWCWDWFWGAUUBUUFYN
+      HVHWHUUHJUUKYPKYDAYPLVBUUFYNACYOLUUQMLRYOLVBAWPMLWIWJWKVHUUNUUHUUJYERZUOZ
+      UUKUUSSPZYPUVHUUOUUJQRZUUKUVIUIUUHUUOUVGUURWLZUVGUVJUUHUUJYDWMWNZQYPUUJSY
+      GWOWQUVHUUSYPRZUVIYPRZUVHQYPUUJYGUVKUVLWRAUVMUVNWSUUFYNUVGAUUSCRZUUSYORZW
+      TUVICRZUVIYORZWTUVMUVNAUVOUVQUVPUVRABNZSPZCRZBCXAUVOUVQWSAUWABCGXBUWAUVQB
+      UUSCUVSUUSUIUVTUVICUVSUUSSWAXCXDXEUVPUVRWSAUVPUVRUVIMUIZUVPUVIMSPMUVPUUSM
+      SUUSMXFXGXHWGZUVPUVILRUVRUWBXIUVPUVIMLUWCWPXJUVIMLXKXEXLVEXMUUSCYOXSUVICY
+      OXSXNXOXPXQXRXQCXTYAYBYCXP $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
