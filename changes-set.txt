@@ -92,6 +92,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+22-Sep-25 oduprs    [same]      Moved from AV's mathbox to main set.mm
 16-Sep-25 reueqdv   [same]      Moved from GG's mathbox to main set.mm
 11-Sep-25 cascl     [same]      revised - algSc may be non-injective
 10-Sep-25 soeq12d   [same]      Moved from SO's mathbox to main set.mm
