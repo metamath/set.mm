@@ -93,6 +93,7 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
 23-Sep-25 elfzolem1 [same]      moved from GS's mathbox to main set.mm
+11-Sep-25 cascl     [same]      revised - algSc may be non-injective
 10-Sep-25 soeq12d   [same]      Moved from SO's mathbox to main set.mm
 10-Sep-25 freq12d   [same]      Moved from SO's mathbox to main set.mm
 10-Sep-25 weeq12d   [same]      Moved from SO's mathbox to main set.mm
