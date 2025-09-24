@@ -179341,6 +179341,20 @@ $)
       EWRXAWSXB $.
   $}
 
+  ${
+    $d F a $.
+    $( Real-coefficient polynomials restrict to real functions.  (Contributed
+       by Stefan O'Rear, 16-Nov-2014.) $)
+    plyreres $p |- ( F e. ( Poly ` RR ) -> ( F |` RR ) : RR --> RR ) $=
+      ( va cr cply cfv wcel cres wfn crn wss wf cc plybss wb plyf fnssresb wceq
+      ffn adantl ccj 3syl mpbird cv wral wa recn ffvelcdm syl2an plyrecj sylan2
+      fvres cjre fveq2d cjrebd eqeltrd ralrimiva fnfvrnss syl2anc df-f sylanbrc
+      eqtrd ) ACDEFZACGZCHZVCICJZCCVCKVBVDCLJZCAMVBLLAKZALHVDVFNCAOZLLARLCAPUAU
+      BZVBVDBUCZVCEZCFZBCUDVEVIVBVLBCVBVJCFZUEZVKVJAEZCVMVKVOQVBVJCAUKSVNVOVBVG
+      VJLFZVOLFVMVHVJUFZLLVJAUGUHVNVOTEZVJTEZAEZVOVMVBVPVRVTQVQVJAUIUJVNVSVJAVM
+      VSVJQVBVJULSUMVAUNUOUPBCCVCUQURCCVCUSUT $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
