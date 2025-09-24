@@ -92,6 +92,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+23-Sep-25 elfzolem1 [same]      moved from GS's mathbox to main set.mm
 17-Sep-25 psdmul    [same]      Removed unneeded hypothesis
 17-Sep-25 psdvsca   [same]      Removed unneeded hypothesis
 17-Sep-25 psdadd    [same]      Removed unneeded hypothesis
@@ -104,9 +105,14 @@ Date      Old       New         Notes
 16-Sep-25 ismhp     [same]      Removed unneeded hypotheses
 16-Sep-25 selvval   [same]      Removed unneeded hypotheses
 16-Sep-25 mplelsfi  [same]      Removed unused hypothesis
+11-Sep-25 cascl     [same]      revised - algSc may be non-injective
 10-Sep-25 soeq12d   [same]      Moved from SO's mathbox to main set.mm
 10-Sep-25 freq12d   [same]      Moved from SO's mathbox to main set.mm
 10-Sep-25 weeq12d   [same]      Moved from SO's mathbox to main set.mm
+ 9-Sep-25 5rp       [same]      moved from SN's mathbox to main set.mm
+ 8-Sep-25 mvrladdi  [same]      moved from DAW's mathbox to main set.mm
+ 8-Sep-25 comraddi  [same]      moved from DAW's mathbox to main set.mm
+ 8-Sep-25 zltlem1d  [same]      Moved from MKU's mathbox to main set.mm
  4-Sep-25 mhphf4    [same]      Removed unneeded hypotheses
  4-Sep-25 mhphf3    [same]      Removed unneeded hypotheses
  4-Sep-25 mhphf     [same]      Removed unneeded hypotheses
