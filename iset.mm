@@ -179217,6 +179217,33 @@ $)
       OXSXNXOXPXQXRXQCXTYAYBYCXP $.
   $}
 
+  ${
+    $d A a k n x $.  $d F a k n x $.  $d G x $.  $d S x $.  $d V x $.
+    $( A polynomial with real coefficients distributes under conjugation.
+       (Contributed by Mario Carneiro, 24-Jul-2014.) $)
+    plyrecj $p |- ( ( F e. ( Poly ` RR ) /\ A e. CC ) ->
+                    ( * ` ( F ` A ) ) = ( F ` ( * ` A ) ) ) $=
+      ( vx vn vk va cr cfv wcel cc wa cc0 cv co cexp cmul wceq cn0 ccj adantr
+      cply cfz csu cmpt csn cun cmap wrex simpl elply sylib simprd simprl nn0zd
+      wss 0zd fzfigd wf simplrr cvv snssi ax-mp ssequn2 mpbi reex eqeltri nn0ex
+      0re elmap feq3 bitri elfznn0 adantl ffvelcdmd recnd simpllr expcld mulcld
+      fsumcj cjmuld simprr cjred cjexpd oveq12d eqtrd sumeq2dv simpr eqid oveq1
+      wb fveq1d oveq2d sumeq2sdv simplr fsumcl fvmptd3 cjcld 3eqtr4d rexlimdvva
+      fveq2d ex mpd ) BGUAHIZAJIZKZBCJLDMZUBNZEMZFMZHZCMZXHONZPNZEUCZUDZQZFGLUE
+      ZUFZRUGNZUHDRUHZABHZSHZASHZBHZQZXEGJUOZXTXEXCYFXTKXCXDUICGEDBFUJUKULXEXPY
+      EDFRXSXEXFRIZXIXSIZKZKZXPYEYJXPKZXGXJAXHONZPNZEUCZSHZXGXJYCXHONZPNZEUCZYB
+      YDYJYOYRQXPYJYOXGYMSHZEUCYRYJXGYMEYJLXFYJUPYJXFXEYGYHUMUNUQZYJXHXGIZKZXJY
+      LUUBXJUUBRGXHXIUUBYHRGXIURZXEYGYHUUAUSYHRXRXIURZUUCXRRXIXRGUTXQGUOZXRGQZL
+      GIUUEVHLGVAVBXQGVCVDZVEVFVGVIUUFUUDUUCWJUUGXRGRXIVJVBVKZUKUUAXHRIYJXHXFVL
+      VMZVNVOZUUBAXHXCXDYIUUAVPZUUIVQZVRZVSYJXGYSYQEUUBYSXJSHZYLSHZPNYQUUBXJYLU
+      UJUULVTUUBUUNXJUUOYPPUUBXJUUBRGXHXIYJUUCUUAYJYHUUCXEYGYHWAUUHUKTUUIVNWBUU
+      BAXHUUKUUIWCWDWEWFWETYKYAYNSYKYAAXOHZYNYKABXOYJXPWGZWKYJUUPYNQXPYJCAXNYNJ
+      XOJXOWHZXKAQZXGXMYMEUUSXLYLXJPXKAXHOWIWLWMXCXDYIWNZYJXGYMEYTUUMWOWPTWEWTY
+      KYDYCXOHZYRYKYCBXOUUQWKYJUVAYRQXPYJCYCXNYRJXOJUURXKYCQZXGXMYQEUVBXLYPXJPX
+      KYCXHOWIWLWMYJAUUTWQZYJXGYQEYTUUBXJYPUUJUUBYCXHYJYCJIUUAUVCTUUIVQVRWOWPTW
+      EWRXAWSXB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
