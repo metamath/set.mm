@@ -4719,6 +4719,7 @@
 "df-base" is used by "resvbasOLD".
 "df-base" is used by "rmodislmodOLD".
 "df-base" is used by "slotsbhcdifOLD".
+"df-base" is used by "sn-base0".
 "df-base" is used by "srabaseOLD".
 "df-base" is used by "symgvalstructOLD".
 "df-base" is used by "tngbasOLD".
@@ -16030,7 +16031,7 @@ New usage of "df-aj" is discouraged (1 uses).
 New usage of "df-ass" is discouraged (1 uses).
 New usage of "df-at" is discouraged (2 uses).
 New usage of "df-ba" is discouraged (1 uses).
-New usage of "df-base" is discouraged (31 uses).
+New usage of "df-base" is discouraged (32 uses).
 New usage of "df-bdop" is discouraged (2 uses).
 New usage of "df-bj-1upl" is discouraged (6 uses).
 New usage of "df-bj-2upl" is discouraged (6 uses).
@@ -19376,6 +19377,7 @@ New usage of "smfval" is discouraged (17 uses).
 New usage of "smgrpassOLD" is discouraged (1 uses).
 New usage of "smgrpismgmOLD" is discouraged (1 uses).
 New usage of "smgrpmgm" is discouraged (1 uses).
+New usage of "sn-base0" is discouraged (0 uses).
 New usage of "sn-exelALT" is discouraged (0 uses).
 New usage of "sn-isghm" is discouraged (0 uses).
 New usage of "sn-wcdeq" is discouraged (0 uses).
@@ -21651,6 +21653,7 @@ Proof modification of "slotsbhcdifOLD" is discouraged (96 steps).
 Proof modification of "smgrpassOLD" is discouraged (54 steps).
 Proof modification of "smgrpismgmOLD" is discouraged (22 steps).
 Proof modification of "sn-00id" is discouraged (47 steps).
+Proof modification of "sn-base0" is discouraged (4 steps).
 Proof modification of "sn-exelALT" is discouraged (52 steps).
 Proof modification of "sn-isghm" is discouraged (432 steps).
 Proof modification of "snelpwiOLD" is discouraged (20 steps).
