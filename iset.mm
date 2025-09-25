@@ -165409,6 +165409,17 @@ $)
       df-bl fnmpti ) AEBCAFZGZGZHBFDFUAICFJKDUCLZMNBCUCHUDUBUAAOPPQRBDCAST $.
   $}
 
+  ${
+    $d D d x $.
+    $( Getting a set by applying ` MetOpen ` .  (Contributed by Jim Kingdon,
+       24-Sep-2025.) $)
+    mopnset $p |- ( D e. V -> ( MetOpen ` D ) e. _V ) $=
+      ( vd cbl cfv crn ctg cvv wcel wal cmopn wfn blfn vex funfvex funfni mp2an
+      cv rnex tgvalex ax-mp ax-gen cxmet cuni df-mopn mptfvex mpan ) CRZDEZFZGE
+      ZHIZCJABIAKEHIULCUJHIULUIDHLUHHIUIHIZMCNUMHUHDUHDOPQSUJHTUAUBCUCFUDUKAKHB
+      CUEUFUG $.
+  $}
+
   $c CCfld $.
 
   $( Extend class notation with the field of complex numbers. $)
