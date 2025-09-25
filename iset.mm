@@ -165420,6 +165420,17 @@ $)
       CUEUFUG $.
   $}
 
+  ${
+    $d x y z $.
+    $( The standard topology on the complex numbers is a set.  (Contributed by
+       Jim Kingdon, 25-Sep-2025.) $)
+    cntopex $p |- ( MetOpen ` ( abs o. - ) ) e. _V $=
+      ( vx vy vz cabs cmin ccom cvv wcel cmopn cfv cc cv ccj cmul co csqrt cmpt
+      df-abs cnex eqeltri mptex caddc wceq crio cmpo df-sub mpoex mopnset ax-mp
+      coex ) DEFZGHUKIJGHDEDAKALZULMJNOPJZQGARAKUMSUATEABKKBLCLUBOULUCCKUDZUEGA
+      BCUFABKKUNSSUGTUJUKGUHUI $.
+  $}
+
   $c CCfld $.
 
   $( Extend class notation with the field of complex numbers. $)
