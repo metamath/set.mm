@@ -165400,6 +165400,15 @@ $)
       ) filGen ran ( a e. RR+ |-> ( `' d " ( 0 [,) a ) ) ) ) ) $.
   $}
 
+  ${
+    $d d x y z $.
+    $( The ball function has universal domain.  (Contributed by Jim Kingdon,
+       24-Sep-2025.) $)
+    blfn $p |- ball Fn _V $=
+      ( vd vx vz vy cvv cv cdm cxr co clt wbr crab cmpo cbl vex dmex xrex mpoex
+      df-bl fnmpti ) AEBCAFZGZGZHBFDFUAICFJKDUCLZMNBCUCHUDUBUAAOPPQRBDCAST $.
+  $}
+
   $c CCfld $.
 
   $( Extend class notation with the field of complex numbers. $)
@@ -172416,7 +172425,9 @@ $)
 
   ${
     $d D r x y $.  $d X r x y $.
-    $( A ball is a set.  (Contributed by Jim Kingdon, 4-May-2023.) $)
+    $( A ball is a set.  Also see ~ blfn in case you just know ` D ` is a set,
+       not ` D e. ( *Met `` X ) ` .  (Contributed by Jim Kingdon,
+       4-May-2023.) $)
     blex $p |- ( D e. ( *Met ` X ) -> ( ball ` D ) e. _V ) $=
       ( vx vr vy cxmet cfv wcel cbl cxr cv co clt wbr crab cmpo cvv blfval wrel
       cdm xmetrel relelfvdm mpan xrex mpoexga sylancl eqeltrd ) ABFGHZAIGCDBJCK
