@@ -24159,6 +24159,19 @@ $)
   $}
 
   ${
+    $d x A $.
+    ceqsexv2d.1 $e |- A e. _V $.
+    ceqsexv2d.2 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    ceqsexv2d.3 $e |- ps $.
+    $( Elimination of an existential quantifier, using implicit substitution.
+       (Contributed by Thierry Arnoux, 10-Sep-2016.)  Shorten, reduce dv
+       conditions.  (Revised by Wolf Lammen, 5-Jun-2025.)  (Proof shortened by
+       SN, 5-Jun-2025.) $)
+    ceqsexv2d $p |- E. x ph $=
+      ( cv wceq isseti mpbiri eximii ) CHDIZACCDEJMABGFKL $.
+  $}
+
+  ${
     $d x y A $.  $d x y B $.
     ceqsex2.1 $e |- F/ x ps $.
     ceqsex2.2 $e |- F/ y ch $.
