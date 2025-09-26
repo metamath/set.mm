@@ -184545,6 +184545,29 @@ $)
       UMTUNHULWQWSQWFWGWHWIWJWKEAGXMFIWLXAAQWMWNGXBFWPWC $.
   $}
 
+  ${
+    $d P n $.
+    $( Lemma 3 for ~ 2lgslem1 .  (Contributed by AV, 19-Jun-2021.) $)
+    2lgslem1c $p |- ( ( P e. Prime /\ -. 2 || P )
+                      -> ( |_ ` ( P / 4 ) ) <_ ( ( P - 1 ) / 2 ) ) $=
+      ( vn wcel c2 cdvds wbr wn cdiv co c1 cmin cle wceq cn0 wa adantl ad2antlr
+      cr syl a1i cprime c4 cfl cfv cv cmul caddc wrex cn prmnn nnnn0 oddnn02np1
+      wb 3syl cif iftrue adantr 2nn nn0ledivnn eqbrtrd expcom iffalse peano2rem
+      mpan2 nn0re rehalfcld lem1d cc0 clt 2re pm3.2i lediv1 syl3anc mpbid letrd
+      2pos cz wo nn0z zeo3 mpjaod eqcom biimpi flodddiv4 syl2an oveq1 eqcoms cc
+      2nn0 id nn0mulcld nn0cnd pncan1 eqtrd oveq1d nn0cn cap divcanap3d 3brtr4d
+      2cnd 2ap0 rexlimdva2 sylbid imp ) AUACZDAEFGZAUBHIUCUDZAJKIZDHIZLFZXEXFDB
+      UEZUFIZJUGIZAMZBNUHZXJXEAUICANCXFXOUMAUJAUKBAULUNXEXNXJBNXEXKNCZOZXNOZDXK
+      EFZXKDHIZXKJKIZDHIZUOZXKXGXILXPYCXKLFZXEXNXPXSYDXSGZXSXPYDXSXPOYCXTXKLXSY
+      CXTMXPXSXTYBUPUQXPXTXKLFZXSXPDUICYFURXKDUSVDZPUTVAYEXPYDYEXPOYCYBXKLYEYCY
+      BMXPXSXTYBVBUQXPYBXKLFYEXPYBXTXKXPXKRCZYBRCXKVEZYHYAXKVCZVFSXPXKYIVFYIXPY
+      AXKLFZYBXTLFZXPXKYIVGXPYARCZYHDRCZVHDVIFZOZYKYLUMXPYHYMYIYJSYIYPXPYNYOVJV
+      PVKTYAXKDVLVMVNYGVOPUTVAXPXKVQCZXSYEVRXKVSZXKVTSWAQXQYQAXMMZXGYCMXNXPYQXE
+      YRPXNYSXMAWBWCXKAWDWEXRXIXLDHIZXKXRXHXLDHXRXHXMJKIZXLXNXHUUAMZXQUUBAXMAXM
+      JKWFWGPXPUUAXLMZXEXNXPXLWHCUUCXPXLXPDXKDNCXPWITXPWJWKWLXLWMSQWNWOXPYTXKMX
+      EXNXPXKDXKWPXPWTDVHWQFXPXATWRQWNWSXBXCXD $.
+  $}
+
   $( Lemma 1 for 2lgsoddprm .  (Contributed by AV, 19-Jul-2021.) $)
   2lgsoddprmlem1 $p |- ( ( A e. ZZ /\ B e. ZZ /\ N = ( ( 8 x. A ) + B ) )
             -> ( ( ( N ^ 2 ) - 1 ) / 8 ) = ( ( ( 8 x. ( A ^ 2 ) )
