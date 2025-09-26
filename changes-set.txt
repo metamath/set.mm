@@ -93,6 +93,7 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
 23-Sep-25 elfzolem1 [same]      moved from GS's mathbox to main set.mm
+19-Sep-25 bm1.3ii   sepexi      Generalized conclusion
 17-Sep-25 psdmul    [same]      Removed unneeded hypothesis
 17-Sep-25 psdvsca   [same]      Removed unneeded hypothesis
 17-Sep-25 psdadd    [same]      Removed unneeded hypothesis

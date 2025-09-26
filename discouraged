@@ -1731,6 +1731,9 @@
 "axpowndlem2" is used by "axpowndlem3".
 "axpowndlem3" is used by "axpowndlem4".
 "axpowndlem4" is used by "axpownd".
+"axprlem3OLD" is used by "axprOLD".
+"axprlem4OLD" is used by "axprOLD".
+"axprlem5OLD" is used by "axprOLD".
 "axregnd" is used by "axregprim".
 "axregnd" is used by "zfcndreg".
 "axregndlem1" is used by "axregnd".
@@ -1905,6 +1908,7 @@
 "blometi" is used by "blocni".
 "bloval" is used by "hhbloi".
 "bloval" is used by "isblo".
+"bm1.3iiOLD" is used by "axprlem4OLD".
 "bnj1000" is used by "bnj965".
 "bnj1001" is used by "bnj1020".
 "bnj1006" is used by "bnj1020".
@@ -13041,6 +13045,7 @@
 "scandx" is used by "zlmlemOLD".
 "scandx" is used by "zlmtsetOLD".
 "selsALT" is used by "elALT".
+"sepexlem" is used by "sepex".
 "setrec1lem1" is used by "setrec1lem2".
 "setrec1lem1" is used by "setrec1lem4".
 "setrec1lem1" is used by "setrec2fun".
@@ -14948,14 +14953,20 @@ New usage of "axpowndlem3" is discouraged (1 uses).
 New usage of "axpowndlem4" is discouraged (1 uses).
 New usage of "axpr" is discouraged (0 uses).
 New usage of "axprALT" is discouraged (0 uses).
+New usage of "axprOLD" is discouraged (0 uses).
 New usage of "axpre-ltadd" is discouraged (0 uses).
 New usage of "axpre-lttri" is discouraged (0 uses).
 New usage of "axpre-lttrn" is discouraged (0 uses).
 New usage of "axpre-mulgt0" is discouraged (0 uses).
 New usage of "axpre-sup" is discouraged (0 uses).
+New usage of "axprlem3OLD" is discouraged (1 uses).
+New usage of "axprlem4OLD" is discouraged (1 uses).
+New usage of "axprlem5OLD" is discouraged (1 uses).
 New usage of "axregnd" is discouraged (2 uses).
 New usage of "axregndlem1" is discouraged (2 uses).
 New usage of "axregndlem2" is discouraged (1 uses).
+New usage of "axrep4OLD" is discouraged (0 uses).
+New usage of "axrep6OLD" is discouraged (0 uses).
 New usage of "axrepnd" is discouraged (2 uses).
 New usage of "axrepndlem1" is discouraged (1 uses).
 New usage of "axrepndlem2" is discouraged (1 uses).
@@ -15057,6 +15068,7 @@ New usage of "blof" is discouraged (5 uses).
 New usage of "bloln" is discouraged (6 uses).
 New usage of "blometi" is discouraged (1 uses).
 New usage of "bloval" is discouraged (2 uses).
+New usage of "bm1.3iiOLD" is discouraged (1 uses).
 New usage of "bnj1000" is discouraged (1 uses).
 New usage of "bnj1001" is discouraged (1 uses).
 New usage of "bnj1006" is discouraged (1 uses).
@@ -19265,6 +19277,7 @@ New usage of "scmateALT" is discouraged (0 uses).
 New usage of "sdom0OLD" is discouraged (0 uses).
 New usage of "sdom1OLD" is discouraged (0 uses).
 New usage of "selsALT" is discouraged (1 uses).
+New usage of "sepexlem" is discouraged (1 uses).
 New usage of "seq1hcau" is discouraged (0 uses).
 New usage of "setrec1lem1" is discouraged (3 uses).
 New usage of "setrec1lem2" is discouraged (1 uses).
@@ -20069,6 +20082,12 @@ Proof modification of "axnul" is discouraged (36 steps).
 Proof modification of "axnulALT" is discouraged (95 steps).
 Proof modification of "axnulALT2" is discouraged (57 steps).
 Proof modification of "axprALT" is discouraged (67 steps).
+Proof modification of "axprOLD" is discouraged (122 steps).
+Proof modification of "axprlem3OLD" is discouraged (152 steps).
+Proof modification of "axprlem4OLD" is discouraged (149 steps).
+Proof modification of "axprlem5OLD" is discouraged (132 steps).
+Proof modification of "axrep4OLD" is discouraged (130 steps).
+Proof modification of "axrep6OLD" is discouraged (113 steps).
 Proof modification of "axsepg2ALT" is discouraged (170 steps).
 Proof modification of "barbariALT" is discouraged (22 steps).
 Proof modification of "barocoALT" is discouraged (24 steps).
@@ -20319,6 +20338,7 @@ Proof modification of "bj-xpima1snALT" is discouraged (25 steps).
 Proof modification of "bj-xpima2sn" is discouraged (23 steps).
 Proof modification of "bj-xpnzex" is discouraged (71 steps).
 Proof modification of "bj-zfauscl" is discouraged (65 steps).
+Proof modification of "bm1.3iiOLD" is discouraged (95 steps).
 Proof modification of "brdomgOLD" is discouraged (118 steps).
 Proof modification of "brdomiOLD" is discouraged (30 steps).
 Proof modification of "brenOLD" is discouraged (130 steps).
