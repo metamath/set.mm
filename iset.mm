@@ -184522,6 +184522,29 @@ $)
       XGBNWSWOWNWPWQWRWTWEVLXA $.
   $}
 
+  ${
+    $d F y z $.  $d I i j x y z $.
+    2lgslem1b.i $e |- I = ( A ... B ) $.
+    2lgslem1b.f $e |- F = ( j e. I |-> ( j x. 2 ) ) $.
+    $( Lemma 2 for ~ 2lgslem1 .  (Contributed by AV, 18-Jun-2021.) $)
+    2lgslem1b $p |- F : I -1-1-onto-> { x e. ZZ | E. i e. I x = ( i x. 2 ) } $=
+      ( vy vz cv c2 cmul co wceq cz wcel elfzelz a1i wrex crab wf1o wf1 crn cfv
+      wf wi eqeq1 rexbidv cfz eleq2s 2z zmulcld id wb oveq1 eqeq2d adantl eqidd
+      wral rspcedvd elrabd fmpti wa simpl syl adantr fvmptd3 simpr eqeq12d zcnd
+      cc 2cnd cc0 cap wbr 2ap0 mulcanap2d biimpd sylbid rgen2 mpbir2an cbvrexvw
+      dff13 eleq1 syl5ibrcom rexlimiv pm4.71ri bitri abbii rnmpt df-rab 3eqtr4i
+      cab dff1o5 ) GALZDLZMNOZPZDGUAZAQUBZFUCGXBFUDZFUEZXBPXCGXBFUGJLZFUFZKLZFU
+      FZPZXEXGPZUHZKGVAJGVAEGXBELZMNOZFIXLGRZXAXMWSPZDGUAAXMQWQXMPZWTXODGWQXMWS
+      UIUJXNXLMXLQRXLBCUKOZGXLBCSHULMQRZXNUMTUNXNXOXMXMPZDXLGXNUOWRXLPZXOXSUPXN
+      XTWSXMXMWRXLMNUQURUSXNXMUTVBVCVDXKJKGGXEGRZXGGRZVEZXIXEMNOZXGMNOZPZXJYCXF
+      YDXHYEYCEXEXMYDGFQIXLXEMNUQYAYBVFYAYDQRZYBYAXEQRZYGYHXEXQGXEBCSHULZYHXEMY
+      HUOXRYHUMTUNVGVHVIYCEXGXMYEGFQIXLXGMNUQYAYBVJYBYEQRYAYBXGMXGQRXGXQGXGBCSH
+      ULZXRYBUMTUNUSVIVKYCYFXJYCXEXGMYAXEVMRYBYAXEYIVLVHYBXGVMRYAYBXGYJVLUSYCVN
+      MVOVPVQYCVRTVSVTWAWBJKGXBFWEWCXPEGUAZAWOWQQRZXAVEZAWOXDXBYKYMAYKXAYMXPWTE
+      DGXLWRPXMWSWQXLWRMNUQURWDXAYLWTYLDGWRGRYLWTWSQRZYNWRXQGWRXQRZWRMWRBCSXRYO
+      UMTUNHULWQWSQWFWGWHWIWJWKEAGXMFIWLXAAQWMWNGXBFWPWC $.
+  $}
+
   $( Lemma 1 for 2lgsoddprm .  (Contributed by AV, 19-Jul-2021.) $)
   2lgsoddprmlem1 $p |- ( ( A e. ZZ /\ B e. ZZ /\ N = ( ( 8 x. A ) + B ) )
             -> ( ( ( N ^ 2 ) - 1 ) / 8 ) = ( ( ( 8 x. ( A ^ 2 ) )
