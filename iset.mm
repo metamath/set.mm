@@ -184494,6 +184494,34 @@ $)
     WIFNUNKVMUPQZWJUQWHLBGURUSUTVMAFVLASDVKATRWIWJVAVBVKVTVCDZVLWAWBOVKLVDDWKVE
     BLVGVFVTAVHVIVJ $.
 
+  ${
+    $d P i k x $.
+    $( Lemma 1 for ~ 2lgslem1 .  (Contributed by AV, 18-Jun-2021.) $)
+    2lgslem1a $p |- ( ( P e. Prime /\ -. 2 || P )
+                      -> { x e. ZZ | E. i e. ( 1 ... ( ( P - 1 ) / 2 ) )
+                                ( x = ( i x. 2 ) /\ ( P / 2 ) < ( x mod P ) ) }
+                         = { x e. ZZ | E. i e. ( ( ( |_ ` ( P / 4 ) ) + 1 )
+                                  ... ( ( P - 1 ) / 2 ) ) x = ( i x. 2 ) } ) $=
+      ( vk wcel c2 wbr wa cv cmul co wceq cdiv cmo clt c1 wrex cz wb ad2antrr
+      cprime cdvds wn cmin cfz c4 cfl cfv caddc cuz wss cn cn0 prmnn nnnn0d 4nn
+      jctir fldivnn0 nn0p1nn 3syl sylib fzss1 rexss ancom cle syl nn0zd elfzelz
+      elnnuz zltp1le syl2an bicomd anbi1d adantl peano2zd adantr oddm1d2 biimpa
+      prmz elfz syl3anc elfzle2 biantrud 2lgslem1a2 bitrd wral 2lgslem1a1 sylan
+      3bitr4d weq oveq1d eqeq12d rspccva breq2d eqcomd sylan9bb pm5.32da bitrid
+      oveq1 rexbidva rabbidva ) BUAEZFBUBGUCZHZAIZCIZFJKZLZBFMKZXEBNKZOGZHZCPBP
+      UDKFMKZUEKZQZXHCBUFMKUGUHZPUIKZXMUEKZQZARXDXEREZHZXSXOYAXSXFXREZXHHZCXNQZ
+      XOYAXQPUJUHEZXRXNUKXSYDSYAXQULEZYEYABUMEZUFULEZHZXPUMEZYFYAYGYHXBYGXCXTXB
+      BBUNZUOZTUPUQBUFURZXPUSUTXQVIVAXQPXMVBXHCXRXNVCUTYAYCXLCXNYCXHYBHYAXFXNEZ
+      HZXLYBXHVDYOXHYBXKYOYBXIXGBNKZOGZXHXKYOYBXIXGOGZYQYOYBXPXFOGZYRYOXQXFVEGZ
+      XFXMVEGZHZYSUUAHYBYSYOYTYSUUAYOYSYTYAXPREZXFREZYSYTSYNXBUUCXCXTXBXPXBYIYJ
+      XBYGYHYLUPUQYMVFVGZTXFPXMVHZXPXFVJVKVLVMYOUUDXQREZXMREZYBUUBSYNUUDYAUUFVN
+      XDUUGXTYNXBUUGXCXBXPUUEVOVPTXDUUHXTYNXBXCUUHXBBREZXCUUHSBVSZBVQVFVRTXFXQX
+      MVTWAYOUUAYSYNUUAYAXFPXMWBVNWCWIYAUUIUUDYSYRSYNXBUUIXCXTUUJTUUFXFBWDVKWEY
+      OXGYPXIOYADIZFJKZUULBNKZLZDXNWFZYNXGYPLZXDUUOXTXBBULEXCUUOYKBDWGWHVPUUNUU
+      PDXFXNDCWJZUULXGUUMYPUUKXFFJWSZUUQUULXGBNUURWKWLWMWHWNWEXHYPXJXIOXHXJYPXE
+      XGBNWSWOWNWPWQWRWTWEVLXA $.
+  $}
+
   $( Lemma 1 for 2lgsoddprm .  (Contributed by AV, 19-Jul-2021.) $)
   2lgsoddprmlem1 $p |- ( ( A e. ZZ /\ B e. ZZ /\ N = ( ( 8 x. A ) + B ) )
             -> ( ( ( N ^ 2 ) - 1 ) / 8 ) = ( ( ( 8 x. ( A ^ 2 ) )
