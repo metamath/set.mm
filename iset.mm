@@ -184460,6 +184460,28 @@ $)
     BRUULUVMUWBUVOUWCPUULUUCAEHXJWNUUDUUQEUUPEUSDZHUSDZQEUTNEHVANUUQEGUYAUYBUUE
     EVCVDUXEUYCXLHVCVDUUFUUGEHVIUUIUUHUUJ $.
 
+  ${
+    $d P i $.
+    $( Lemma 1 for ~ 2lgslem1a .  (Contributed by AV, 16-Jun-2021.) $)
+    2lgslem1a1 $p |- ( ( P e. NN /\ -. 2 || P )
+                     -> A. i e. ( 1 ... ( ( P - 1 ) / 2 ) )
+                        ( i x. 2 ) = ( ( i x. 2 ) mod P ) ) $=
+      ( cn wcel c2 wbr wa cmul co wceq c1 cq cc0 cle cz adantl a1i syl cr wi wn
+      cdvds cv cmo cmin cdiv cfz clt elfzelz 2z zmulcld zq ad2antrr elfznn nnre
+      nnq nnnn0 nn0ge0d 2re 0le2 pm3.2i mulge0 syl21anc elfz2 3ad2ant3 3ad2ant2
+      w3a wb zre 2pos lemul1 syl3anc cc nncn peano2cnm 2cnd cap 2ap0 divcanap1d
+      adantr breq2d id nnz zltlem1 syl2an biimprd sylbid com23 a1d imp32 impcom
+      ex sylbi modqid syl22anc eqcomd ralrimiva ) ACDZEAUBFUAZGZBUCZEHIZXBAUDIZ
+      JBKAKUEIZEUFIZUGIZWTXAXFDZGZXCXBXHXBLDZALDZMXBNFZXBAUHFZXCXBJXHXBODZXIXHX
+      AEXGXAODZWTXAKXEUIPEODZXHUJQUKXBULRWRXJWSXGAUPUMXGXKWTXGXACDZXKXAXEUNXPXA
+      SDZMXANFESDZMENFZGZXKXAUOXPXAXAUQURXTXPXRXSUSUTVAQXAEVBVCRPXGWTXLXGKODZXE
+      ODZXNVGZKXANFZXAXENFZGGWTXLTZXAKXEVDYCYDYEYFYCYEYFTYDYCYEXBXEEHIZNFZYFYCX
+      QXESDZXRMEUHFZGZYEYHVHXNYAXQYBXAVIVEYBYAYIXNXEVIVFYKYCXRYJUSVJVAQXAXEEVKV
+      LYCWTYHXLYCWTYHXLTYCWTGZYHXBXDNFZXLYLYGXDXBNWTYGXDJZYCWRYNWSWRXDEWRAVMDXD
+      VMDAVNAVORWRVPEMVQFWRVRQVSVTPWAYLXLYMYCXMAODZXLYMVHWTXNYAXMYBXNXAEXNWBXOX
+      NUJQUKVEWRYOWSAWCVTXBAWDWEWFWGWLWHWGWIWJWMWKXBAWNWOWPWQ $.
+  $}
+
   $( Lemma 1 for 2lgsoddprm .  (Contributed by AV, 19-Jul-2021.) $)
   2lgsoddprmlem1 $p |- ( ( A e. ZZ /\ B e. ZZ /\ N = ( ( 8 x. A ) + B ) )
             -> ( ( ( N ^ 2 ) - 1 ) / 8 ) = ( ( ( 8 x. ( A ^ 2 ) )
