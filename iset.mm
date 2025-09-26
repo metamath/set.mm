@@ -184482,6 +184482,18 @@ $)
       NUJQUKVEWRYOWSAWCVTXBAWDWEWFWGWLWHWGWIWJWMWKXBAWNWOWPWQ $.
   $}
 
+  $( Lemma 2 for ~ 2lgslem1a .  (Contributed by AV, 18-Jun-2021.) $)
+  2lgslem1a2 $p |- ( ( N e. ZZ /\ I e. ZZ )
+                  -> ( ( |_ ` ( N / 4 ) ) < I <-> ( N / 2 ) < ( I x. 2 ) ) ) $=
+    ( cz wcel wa c2 cdiv co cmul clt wbr c4 cr cc0 wb adantr a1i adantl cc zcn
+    cfl cfv zre rehalfcld id 2z zmulcld zred 2re 2pos pm3.2i ltdiv1 syl3anc cap
+    2cnd 2ap0 divdivap1d 2t2e4 oveq2i eqtrdi divcanap4d breq12d cq cn 4nn mpan2
+    znq flqlt sylan 3bitrrd ) BCDZACDZEZBFGHZAFIHZJKZVNFGHZVOFGHZJKZBLGHZAJKZVT
+    UAUBAJKZVMVNMDZVOMDZFMDZNFJKZEZVPVSOVKWCVLVKBBUCUDPVLWDVKVLVOVLAFVLUEFCDVLU
+    FQUGUHRWGVMWEWFUIUJUKQVNVOFULUMVMVQVTVRAJVMVQBFFIHZGHVTVMBFFVKBSDVLBTPVMUOZ
+    WIFNUNKVMUPQZWJUQWHLBGURUSUTVMAFVLASDVKATRWIWJVAVBVKVTVCDZVLWAWBOVKLVDDWKVE
+    BLVGVFVTAVHVIVJ $.
+
   $( Lemma 1 for 2lgsoddprm .  (Contributed by AV, 19-Jul-2021.) $)
   2lgsoddprmlem1 $p |- ( ( A e. ZZ /\ B e. ZZ /\ N = ( ( 8 x. A ) + B ) )
             -> ( ( ( N ^ 2 ) - 1 ) / 8 ) = ( ( ( 8 x. ( A ^ 2 ) )
