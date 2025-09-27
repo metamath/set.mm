@@ -94639,6 +94639,11 @@ $)
       ( cc wcel c2 cmul co caddc wceq times2 ax-mp ) ACDAEFGAAHGIBAJK $.
   $}
 
+  $( Two times a complex number minus the number itself results in the number
+     itself.  (Contributed by Alexander van der Vekens, 8-Jun-2018.) $)
+  2txmxeqx $p |- ( X e. CC -> ( ( 2 x. X ) - X ) = X ) $=
+    ( cc wcel c2 cmul co id 2times mvrladdd ) ABCZDAEFAAJGZKAHI $.
+
   $( 2 divided by 2 is 1 (common case).  (Contributed by David A. Wheeler,
      8-Dec-2018.) $)
   2div2e1 $p |- ( 2 / 2 ) = 1 $=
