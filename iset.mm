@@ -184581,6 +184581,27 @@ $)
       EXNXPXKDXKWPXPWTDVHWQFXPXATWRQWNWSXBXCXD $.
   $}
 
+  ${
+    $d P f i x y $.
+    $( Lemma 1 for ~ 2lgs .  (Contributed by AV, 19-Jun-2021.) $)
+    2lgslem1 $p |- ( ( P e. Prime /\ -. 2 || P )
+                     -> ( # ` { x e. ZZ | E. i e. ( 1 ... ( ( P - 1 ) / 2 ) )
+                              ( x = ( i x. 2 ) /\ ( P / 2 ) < ( x mod P ) ) } )
+                        = ( ( ( P - 1 ) / 2 ) - ( |_ ` ( P / 4 ) ) ) ) $=
+      ( vf vy cprime wcel c2 wbr wa cv cmul co wceq cdiv c1 cz chash cfv c4 cmo
+      cdvds wn clt cmin cfz wrex crab cfl caddc 2lgslem1a fveq2d cfn wf1o cq cn
+      wex prmz 4nn znq sylancl adantr flqcld peano2zd nnoddn2prmb oddprm sylbir
+      csn cdif nnzd fzfigd cmpt cvv mptexd 2lgslem1b f1oeq1 spcegv fihasheqf1oi
+      eqid mpisyl ex exlimdv sylc cuz cle wb oddm1d2 syl biimpa 2lgslem1c eluz2
+      syl3anbrc hashfzp1 3eqtr2d ) BFGZHBUBIUCZJZAKZCKHLMNZBHOMWRBUAMUDIJCPBPUE
+      MHOMZUFMUGAQUHZRSWSCBTOMZUISZPUJMZWTUFMZUGAQUHZRSZXERSZWTXCUEMZWQXAXFRABC
+      UKULWQXEUMGZXEXFDKZUNZDUQZXHXGNZWQXDWTWQXCWQXBWOXBUOGZWPWOBQGZTUPGXOBURZU
+      SBTUTVAZVBVCVDWQWTWQBFHVHVIGWTUPGBVEBVFVGVJVKZWQEXEEKHLMZVLZVMGXEXFYAUNZX
+      MWQEXEXTUMXSVNAXDWTCEYAXEXEVSYAVSVOXLYBDYAVMXEXFXKYAVPVQVTXJXLXNDXJXLXNXE
+      XFXKVRWAWBWCWQWTXCWDSGZXHXINWQXCQGZWTQGZXCWTWEIYCWOYDWPWOXBXRVCVBWOWPYEWO
+      XPWPYEWFXQBWGWHWIBWJXCWTWKWLXCWTWMWHWN $.
+  $}
+
   $( Lemma 1 for 2lgsoddprm .  (Contributed by AV, 19-Jul-2021.) $)
   2lgsoddprmlem1 $p |- ( ( A e. ZZ /\ B e. ZZ /\ N = ( ( 8 x. A ) + B ) )
             -> ( ( ( N ^ 2 ) - 1 ) / 8 ) = ( ( ( 8 x. ( A ^ 2 ) )
