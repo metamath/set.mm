@@ -184713,6 +184713,32 @@ $)
       UVAIPUSWBXBVMXCSXDXETXFXGXHTUGXTYKQYFLUUJUVHXTYFUVFULZUUDXIXTYNYFYONIXTYN
       NYFFGZYFMGZYFXTYKUVLYFMXTYKNNFGZBFGUVLXTPUVNBFPUVNJXTUVNPXJURSUAXTNNBUUHU
       UHUUIXKTUAXTYFUMKUVMYFJUVKYFXMXNTYONJXTXOSUGVQXP $.
+
+    $d N k $.  $d P k $.
+    $( Lemma 1 for ~ 2lgslem3 .  (Contributed by AV, 15-Jul-2021.) $)
+    2lgslem3a1 $p |- ( ( P e. NN /\ ( P mod 8 ) = 1 ) -> ( N mod 2 ) = 0 ) $=
+      ( vk cn wcel c8 cmo co c1 wceq c2 cc0 cmul caddc cn0 cq clt wbr a1i cv wi
+      wrex nnnn0 8nn nnq mp1i 8pos modqmuladdnn0 syl3anc wa simpr nn0cn mulcomd
+      cc 8cn adantl oveq1d eqeq2d biimpa 2lgslem3a syl2an2r oveq1 2cnd nn0z 2nn
+      cz 2pos mulqmod0 eqtrd sylan9eqr rexlimdva2 syld imp ) AEFZAGHIJKZBLHIZMK
+      ZVOVPADUAZGNIZJOIZKZDPUCZVRVOAPFGQFZMGRSZVPWCUBAUDGEFWDVOUEGUFUGWEVOUHTAJ
+      DGUIUJVOWBVRDPVOVSPFZUKZWFWBBLVSNIZKZVRVOWFULZWGWFWBAGVSNIZJOIZKZWIWJWGWB
+      WMWGWAWLAWGVTWKJOWFVTWKKVOWFVSGVSUMZGUOFWFUPTUNUQURUSUTAVSBCVAVBWIWFVQWHL
+      HIZMBWHLHVCWFWOVSLNIZLHIZMWFWHWPLHWFLVSWFVDWNUNURWFVSVGFLQFZMLRSZWQMKVSVE
+      LEFWRWFVFLUFUGWSWFVHTVSLVIUJVJVKVBVLVMVN $.
+
+    $( Lemma 2 for ~ 2lgslem3 .  (Contributed by AV, 16-Jul-2021.) $)
+    2lgslem3b1 $p |- ( ( P e. NN /\ ( P mod 8 ) = 3 ) -> ( N mod 2 ) = 1 ) $=
+      ( vk cn wcel c8 cmo co c3 wceq c2 c1 cmul caddc cn0 wbr a1i syl2an2r cz
+      cv wrex cq cc0 clt wi nnnn0 8nn nnq mp1i 8pos modqmuladdnn0 syl3anc simpr
+      wa nn0cn cc 8cn mulcomd adantl oveq1d eqeq2d biimpa 2lgslem3b oveq1 cdvds
+      wn nn0z eqidd 2tp1odd syl2anc wb 2z zmulcld peano2zd mod2eq1n2dvds mpbird
+      syl sylan9eqr rexlimdva2 syld imp ) AEFZAGHIJKZBLHIZMKZWCWDADUAZGNIZJOIZK
+      ZDPUBZWFWCAPFGUCFZUDGUEQZWDWKUFAUGGEFWLWCUHGUIUJWMWCUKRAJDGULUMWCWJWFDPWC
+      WGPFZUOZWNWJBLWGNIZMOIZKZWFWCWNUNZWOWNWJAGWGNIZJOIZKZWRWSWOWJXBWOWIXAAWOW
+      HWTJOWNWHWTKWCWNWGGWGUPGUQFWNURRUSUTVAVBVCAWGBCVDSWRWNWEWQLHIZMBWQLHVEWNX
+      CMKZLWQVFQVGZWNWGTFWQWQKXEWGVHZWNWQVIWGWQVJVKWNWQTFXDXEVLWNWPWNLWGLTFWNVM
+      RXFVNVOWQVPVRVQVSSVTWAWB $.
   $}
 
   $( Lemma 1 for 2lgsoddprm .  (Contributed by AV, 19-Jul-2021.) $)
