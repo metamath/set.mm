@@ -184602,6 +184602,18 @@ $)
       XPWPYEWFXQBWGWHWIBWJXCWTWKWLXCWTWMWHWN $.
   $}
 
+  ${
+    2lgslem2.n $e |- N = ( ( ( P - 1 ) / 2 ) - ( |_ ` ( P / 4 ) ) ) $.
+    $( Lemma 2 for ~ 2lgs .  (Contributed by AV, 20-Jun-2021.) $)
+    2lgslem2 $p |- ( ( P e. Prime /\ -. 2 || P ) -> N e. ZZ ) $=
+      ( cprime wcel c2 cdvds wbr wn wa c1 cmin co cdiv c4 cfl cfv cz csn cdif
+      simpl wceq elsng z2even breq2 mpbiri biimtrdi con3dimp eldifd oddprm nnzd
+      syl cn cq prmz 4nn znq sylancl flqcld adantr zsubcld eqeltrid ) ADEZFAGHZ
+      IZJZBAKLMFNMZAONMZPQZLMRCVFVGVIVFADFSZTEZVGREVFADVJVCVEUAVCAVJEZVDVCVLAFU
+      BZVDAFDUCVMVDFFGHUDAFFGUEUFUGUHUIVKVGAUJUKULVCVIREVEVCVHVCAREOUMEVHUNEAUO
+      UPAOUQURUSUTVAVB $.
+  $}
+
   $( Lemma 1 for 2lgsoddprm .  (Contributed by AV, 19-Jul-2021.) $)
   2lgsoddprmlem1 $p |- ( ( A e. ZZ /\ B e. ZZ /\ N = ( ( 8 x. A ) + B ) )
             -> ( ( ( N ^ 2 ) - 1 ) / 8 ) = ( ( ( 8 x. ( A ^ 2 ) )
