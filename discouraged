@@ -4719,6 +4719,7 @@
 "df-base" is used by "resvbasOLD".
 "df-base" is used by "rmodislmodOLD".
 "df-base" is used by "slotsbhcdifOLD".
+"df-base" is used by "sn-base0".
 "df-base" is used by "srabaseOLD".
 "df-base" is used by "symgvalstructOLD".
 "df-base" is used by "tngbasOLD".
@@ -8554,15 +8555,6 @@
 "idhmop" is used by "leopnmid".
 "idhmop" is used by "nmopleid".
 "idhmop" is used by "opsqrlem6".
-"idi" is used by "dvmptfprod".
-"idi" is used by "dvnprodlem1".
-"idi" is used by "imo72b2lem0".
-"idi" is used by "limsupvaluz2".
-"idi" is used by "madjusmdetlem2".
-"idi" is used by "rngcifuestrc".
-"idi" is used by "sge0f1o".
-"idi" is used by "smfinfmpt".
-"idi" is used by "ssmapsn".
 "idiALT" is used by "ax6e2nd".
 "idiALT" is used by "ax6e2ndALT".
 "idiALT" is used by "ax6e2ndeqALT".
@@ -14677,6 +14669,7 @@ New usage of "anmp" is discouraged (11 uses).
 New usage of "aprilfools2025" is discouraged (0 uses).
 New usage of "archnq" is discouraged (1 uses).
 New usage of "arglem1N" is discouraged (0 uses).
+New usage of "asclelbasALT" is discouraged (0 uses).
 New usage of "atabs2i" is discouraged (1 uses).
 New usage of "atabsi" is discouraged (1 uses).
 New usage of "atbtwnexOLDN" is discouraged (0 uses).
@@ -16029,7 +16022,7 @@ New usage of "df-aj" is discouraged (1 uses).
 New usage of "df-ass" is discouraged (1 uses).
 New usage of "df-at" is discouraged (2 uses).
 New usage of "df-ba" is discouraged (1 uses).
-New usage of "df-base" is discouraged (31 uses).
+New usage of "df-base" is discouraged (32 uses).
 New usage of "df-bdop" is discouraged (2 uses).
 New usage of "df-bj-1upl" is discouraged (6 uses).
 New usage of "df-bj-2upl" is discouraged (6 uses).
@@ -16972,6 +16965,7 @@ New usage of "glbconxN" is discouraged (1 uses).
 New usage of "goeqi" is discouraged (0 uses).
 New usage of "golem1" is discouraged (1 uses).
 New usage of "golem2" is discouraged (1 uses).
+New usage of "gpg3nbgrvtx0ALT" is discouraged (0 uses).
 New usage of "grothac" is discouraged (1 uses).
 New usage of "grothomex" is discouraged (0 uses).
 New usage of "grothpw" is discouraged (0 uses).
@@ -17481,7 +17475,7 @@ New usage of "idcnop" is discouraged (2 uses).
 New usage of "iddii" is discouraged (1 uses).
 New usage of "iden2" is discouraged (0 uses).
 New usage of "idhmop" is discouraged (6 uses).
-New usage of "idi" is discouraged (9 uses).
+New usage of "idi" is discouraged (0 uses).
 New usage of "idiALT" is discouraged (12 uses).
 New usage of "idiVD" is discouraged (0 uses).
 New usage of "idleop" is discouraged (1 uses).
@@ -19374,6 +19368,7 @@ New usage of "smfval" is discouraged (17 uses).
 New usage of "smgrpassOLD" is discouraged (1 uses).
 New usage of "smgrpismgmOLD" is discouraged (1 uses).
 New usage of "smgrpmgm" is discouraged (1 uses).
+New usage of "sn-base0" is discouraged (0 uses).
 New usage of "sn-exelALT" is discouraged (0 uses).
 New usage of "sn-isghm" is discouraged (0 uses).
 New usage of "sn-wcdeq" is discouraged (0 uses).
@@ -19988,6 +19983,7 @@ Proof modification of "anabss7p1" is discouraged (5 steps).
 Proof modification of "ancomstVD" is discouraged (22 steps).
 Proof modification of "anmp" is discouraged (8 steps).
 Proof modification of "aprilfools2025" is discouraged (116 steps).
+Proof modification of "asclelbasALT" is discouraged (84 steps).
 Proof modification of "avril1" is discouraged (194 steps).
 Proof modification of "ax1" is discouraged (3 steps).
 Proof modification of "ax10fromc7" is discouraged (50 steps).
@@ -21015,6 +21011,7 @@ Proof modification of "ggen31" is discouraged (22 steps).
 Proof modification of "ghomidOLD" is discouraged (178 steps).
 Proof modification of "ghomlinOLD" is discouraged (161 steps).
 Proof modification of "glbconNOLD" is discouraged (904 steps).
+Proof modification of "gpg3nbgrvtx0ALT" is discouraged (297 steps).
 Proof modification of "grpbaseOLD" is discouraged (11 steps).
 Proof modification of "grpinv11OLD" is discouraged (88 steps).
 Proof modification of "grpinvfvalALT" is discouraged (161 steps).
@@ -21647,6 +21644,7 @@ Proof modification of "slotsbhcdifOLD" is discouraged (96 steps).
 Proof modification of "smgrpassOLD" is discouraged (54 steps).
 Proof modification of "smgrpismgmOLD" is discouraged (22 steps).
 Proof modification of "sn-00id" is discouraged (47 steps).
+Proof modification of "sn-base0" is discouraged (4 steps).
 Proof modification of "sn-exelALT" is discouraged (52 steps).
 Proof modification of "sn-isghm" is discouraged (432 steps).
 Proof modification of "snelpwiOLD" is discouraged (20 steps).
