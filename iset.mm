@@ -184786,6 +184786,13 @@ $)
       SWGGDRSXHXBYAWGGERSVNVOPVCXAXBVRWAXEWBWCVFNWDUTPWEWF $.
   $}
 
+  $( The Legendre symbol for ` 2 ` at ` 2 ` is ` 0 ` .  (Contributed by AV,
+     20-Jun-2021.) $)
+  2lgs2 $p |- ( 2 /L 2 ) = 0 $=
+    ( c2 clgs co cdvds wbr cc0 c8 cmo c1 c7 cpr wcel cneg cz wceq 2z lgs2 ax-mp
+    cif z2even iftruei eqtri ) AABCZAADEZFAGHCIJKLIIMSZSZFANLUCUFOPAQRUDFUETUAU
+    B $.
+
   $( Lemma 1 for 2lgsoddprm .  (Contributed by AV, 19-Jul-2021.) $)
   2lgsoddprmlem1 $p |- ( ( A e. ZZ /\ B e. ZZ /\ N = ( ( 8 x. A ) + B ) )
             -> ( ( ( N ^ 2 ) - 1 ) / 8 ) = ( ( ( 8 x. ( A ^ 2 ) )
