@@ -184793,6 +184793,15 @@ $)
     cif z2even iftruei eqtri ) AABCZAADEZFAGHCIJKLIIMSZSZFANLUCUFOPAQRUDFUETUAU
     B $.
 
+  $( Lemma 4 for ~ 2lgs : special case of ~ 2lgs for ` P = 2 ` .  (Contributed
+     by AV, 20-Jun-2021.) $)
+  2lgslem4 $p |- ( ( 2 /L 2 ) = 1 <-> ( 2 mod 8 ) e. { 1 , 7 } ) $=
+    ( c2 clgs co c1 wceq cc0 c7 wo c8 cmo cpr wcel 2lgs2 eqeq1i neii cq wbr nnq
+    cn ax-mp 0ne1 1ne2 nesymi 2re 2lt7 ltneii pm3.2ni cle clt 2nn 8nn 0le2 2lt8
+    2false modqid mp4an eleq1i 2ex elpr bitr2i 3bitri ) AABCZDEFDEZADEZAGEZHZAI
+    JCZDGKZLZVBFDMNVCVFFDUAOVDVEDAUBUCAGAGUDUEUFOUGUNVIAVHLVFVGAVHAPLZIPLZFAUHQ
+    AIUIQVGAEASLVJUJARTISLVKUKIRTULUMAIUOUPUQADGURUSUTVA $.
+
   $( Lemma 1 for 2lgsoddprm .  (Contributed by AV, 19-Jul-2021.) $)
   2lgsoddprmlem1 $p |- ( ( A e. ZZ /\ B e. ZZ /\ N = ( ( 8 x. A ) + B ) )
             -> ( ( ( N ^ 2 ) - 1 ) / 8 ) = ( ( ( 8 x. ( A ^ 2 ) )
