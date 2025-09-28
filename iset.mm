@@ -184802,6 +184802,42 @@ $)
     JCZDGKZLZVBFDMNVCVFFDUAOVDVEDAUBUCAGAGUDUEUFOUGUNVIAVHLVFVGAVHAPLZIPLZFAUHQ
     AIUIQVGAEASLVJUJARTISLVKUKIRTULUMAIUOUPUQADGURUSUTVA $.
 
+  ${
+    $d P i x y $.
+    $( The second supplement to the law of quadratic reciprocity (for the
+       Legendre symbol extended to arbitrary primes as second argument).  Two
+       is a square modulo a prime ` P ` iff ` P == +- 1 ` (mod ` 8 ` ), see
+       first case of theorem 9.5 in [ApostolNT] p. 181.  This theorem justifies
+       our definition of ` ( N /L 2 ) ` ( ~ lgs2 ) to some degree, by demanding
+       that reciprocity extend to the case ` Q = 2 ` .  (Proposed by Mario
+       Carneiro, 19-Jun-2015.)  (Contributed by AV, 16-Jul-2021.) $)
+    2lgs $p |- ( P e. Prime -> ( ( 2 /L P ) = 1
+                                 <-> ( P mod 8 ) e. { 1 , 7 } ) ) $=
+      ( c2 wceq cdvds wbr wo cprime wcel co c1 c8 cmo c7 wb eqeq1d eqid syl cc0
+      cz wdc vx vi vy wn clgs cpr prm2orodd wi 2lgslem4 a1i oveq2 oveq1 3bitr4d
+      eleq1d a1d wa cneg cmin cdiv c4 cfl cfv cexp cmul clt cfz wrex crab chash
+      cv 2prm prmnn dvdsprime sylancr z2even breq2 eleq1 1nprm pm2.21i biimtrdi
+      cn mpbiri jaoi com12 sylbid con3dimp 2z jctil 2lgslem1 eqcomd w3a cif csn
+      cmpt cdif nnoddn2prmb biimpri 3ad2ant1 gausslemma2d mpd3an23 2lgslem2 2nn
+      m1exp1 dvdsval3 2lgslem3 sylan prmz 8nn zmodcld nn0zd 1z sylancl 7nn nnzi
+      zdceq dcor sylc cn0 elprg dcbid mpbird exmiddc iffalse wne eqneqall jao1i
+      1ne0 mpi iftrue impbid1 adantr 3bitrd expcom mpcom ) ABCZBADEZUDZFAGHZBAU
+      EIZJCZAKLIZJMUFZHZNZAUGYOYRUUDUHYQYOUUDYRYOBBUEIZJCZBKLIZUUBHZYTUUCUUFUUH
+      NYOUIUJYOYSUUEJABBUEUKOYOUUAUUGUUBABKLULUNUMUOYRYQUUDYRYQUPZYTJUQAJURIBUS
+      IZAUTUSIVAVBZURIZVCIZJCZBUULDEZUUCUUIBSHZABDEZUDZUPZUULUAVJZUBVJBVDICABUS
+      IZUUTALIVEEUPUBJUUJVFIZVGUASVHVIVBZCZYTUUNNUUIUURUUPYRUUQYPYRUUQYOAJCZFZY
+      PYRBGHAWAHZUUQUVFNVKAVLZBAVMVNUVFYRYPYOYRYPUHUVEYOYPYRYOYPBBDEVOABBDVPWBU
+      OUVEYRJGHZYPAJGVQUVIYPVRVSVTWCWDWEWFWGWHUUIUVCUULUAAUBWIWJUUIUUSUVDWKZYSU
+      UMJUVJUCAUCUVBUCVJBVDIZUVAVEEUVKAUVKURIWLWNZUUJUUKUULUUIUUSAGBWMWOHZUVDUV
+      MUUIAWPWQWRUUJPUVLPUUKPUULPZWSOWTUUIUULSHZUUNUUONAUULUVNXAZUULXCQUUIUUOUU
+      LBLIZRCZUUCRJWLZRCZUUCUUIBWAHUVOUUOUVRNXBUVPBUULXDVNUUIUVQUVSRYRUVGYQUVQU
+      VSCUVHAUULUVNXEXFOYRUVTUUCNYQYRUVTUUCYRUUCUUCUDZFZUVTUUCUHYRUUCTZUWBYRUWC
+      UUAJCZUUAMCZFZTZYRUWDTZUWETZUWGYRUUASHZJSHUWHYRUUAYRAKAXGKWAHYRXHUJXIZXJZ
+      XKUUAJXOXLYRUWJMSHUWIUWLMXMXNUUAMXOXLUWDUWEXPXQYRUUCUWFYRUUAXRHUUCUWFNUWK
+      UUAJMXRXSQXTYAUUCYBQUUCUWAUVTUWAUVTJRCZUUCUWAUVSJRUUCRJYCOUWMJRYDUUCYGUUC
+      JRYEYHVTYFQUUCRJYIYJYKYLYLYMWCYN $.
+  $}
+
   $( Lemma 1 for 2lgsoddprm .  (Contributed by AV, 19-Jul-2021.) $)
   2lgsoddprmlem1 $p |- ( ( A e. ZZ /\ B e. ZZ /\ N = ( ( 8 x. A ) + B ) )
             -> ( ( ( N ^ 2 ) - 1 ) / 8 ) = ( ( ( 8 x. ( A ^ 2 ) )
