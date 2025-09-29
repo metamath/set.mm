@@ -174761,6 +174761,12 @@ $)
       ( ccnfld ctopn cabs cmin ccom cmopn cc cxmet wcel ctopon wceq cnxmet eqid
       cfv mopntopon cnfldbas cnfldtset topontopn mp2b eqtr4i ) ACDPZEFGZHPZBUDI
       JPKUEILPKUEUCMNUDUEIUEOQIUECRSTUAUB $.
+
+    $( The topology of the complex numbers is a topology.  (Contributed by
+       Mario Carneiro, 2-Sep-2015.) $)
+    cnfldtopon $p |- J e. ( TopOn ` CC ) $=
+      ( ccnfld ctps wcel cc ctopon cfv cnfldtps cnfldbas istps mpbi ) CDEAFGHEI
+      FACJBKL $.
   $}
 
   $( The underlying set of the standard topology on the complex numbers is the
