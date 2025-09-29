@@ -174743,6 +174743,11 @@ $)
     QPUTGGUFZRZUTAUGOZVCRVCSUTTZUTVCUHVDUTJGSDTVCGETVFUIUJVCGSDEUKULVCSUTUSVCUT
     UMQUTVEVCUNUOUPUQUR $.
 
+  $( The complex number field is a topological space.  (Contributed by Mario
+     Carneiro, 28-Aug-2015.) $)
+  cnfldxms $p |- CCfld e. *MetSp $=
+    ( ccnfld cms wcel cxms cnfldms msxms ax-mp ) ABCADCEAFG $.
+
   $( The underlying set of the standard topology on the complex numbers is the
      set of complex numbers.  (Contributed by Glauco Siliprandi, 11-Dec-2019.)
      (Revised by Jim Kingdon, 12-Dec-2023.) $)
