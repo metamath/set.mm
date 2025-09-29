@@ -174793,6 +174793,12 @@ $)
     ( cc cabs cmin ccom cfv cuni unicntopcntop ctop wcel wss eqid cntoptop ssid
     cmopn uniopn mp2an eqeltri ) ABCDNEZFZRGRHIRRJSRIRRKLRMRROPQ $.
 
+  $( The set of complex numbers is open with respect to the standard topology
+     on complex numbers.  (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
+  cnopn $p |- CC e. ( TopOpen ` CCfld ) $=
+    ( cc ccnfld ctopn cfv cuni unicntop ctop wcel wss eqid cnfldtop ssid uniopn
+    mp2an eqeltri ) ABCDZEZPFPGHPPIQPHPPJKPLPPMNO $.
+
   ${
     $d A w x $.
     $( The real numbers apart from a given real number form an open set.
