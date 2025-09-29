@@ -174753,6 +174753,16 @@ $)
   cnfldtps $p |- CCfld e. TopSp $=
     ( ccnfld cms wcel ctps cnfldms mstps ax-mp ) ABCADCEAFG $.
 
+  ${
+    cnfldtopn.1 $e |- J = ( TopOpen ` CCfld ) $.
+    $( The topology of the complex numbers.  (Contributed by Mario Carneiro,
+       28-Aug-2015.) $)
+    cnfldtopn $p |- J = ( MetOpen ` ( abs o. - ) ) $=
+      ( ccnfld ctopn cabs cmin ccom cmopn cc cxmet wcel ctopon wceq cnxmet eqid
+      cfv mopntopon cnfldbas cnfldtset topontopn mp2b eqtr4i ) ACDPZEFGZHPZBUDI
+      JPKUEILPKUEUCMNUDUEIUEOQIUECRSTUAUB $.
+  $}
+
   $( The underlying set of the standard topology on the complex numbers is the
      set of complex numbers.  (Contributed by Glauco Siliprandi, 11-Dec-2019.)
      (Revised by Jim Kingdon, 12-Dec-2023.) $)
