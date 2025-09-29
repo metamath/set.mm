@@ -175001,7 +175001,7 @@ $)
       wss wceq ax-resscn metrest mp2an tgioo ) CDEZFFGHZAFIJZUEKZUDLMNOFLRUFUEP
       NZSQTUDUEAUHLFUGBUHKUAUBUC $.
 
-    rerest.2 $e |- R = ( topGen ` ran (,) ) $.
+    rerestcntop.2 $e |- R = ( topGen ` ran (,) ) $.
     $( The subspace topology induced by a subset of the reals.  (Contributed by
        Mario Carneiro, 13-Aug-2014.)  (Revised by Jim Kingdon, 6-Aug-2023.) $)
     rerestcntop $p |- ( A C_ RR -> ( J |`t A ) = ( R |`t A ) ) $=
@@ -175018,6 +175018,14 @@ $)
       ( cabs cmin ccom cr cxp cres crest co eqid cc cxmet cfv wcel cmopn cnxmet
       wss wceq ax-resscn cnfldtopn metrest mp2an tgioo ) CDEZFFGHZAFIJZUFKZUELM
       NOFLRUGUFPNZSQTUEUFAUILFUHABUAUIKUBUCUD $.
+
+    rerest.2 $e |- R = ( topGen ` ran (,) ) $.
+    $( The subspace topology induced by a subset of the reals.  (Contributed by
+       Mario Carneiro, 13-Aug-2014.) $)
+    rerest $p |- ( A C_ RR -> ( J |`t A ) = ( R |`t A ) ) $=
+      ( cr wss crest co cioo crn ctg cfv tgioo2 eqtri oveq1i ctop wcel cvv wceq
+      cnfldtop reex restabs mp3an13 eqtr2id ) AFGZBAHICFHIZAHIZCAHIZBUGAHBJKLMU
+      GECDNOPCQRUFFSRUHUITCDUAUBAFCQSUCUDUE $.
   $}
 
   ${
