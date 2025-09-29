@@ -174733,6 +174733,16 @@ $)
       HWASIGNWQHWABDVEHWAVFTVGWBWPWAGWAVHVITQVJVKVLVMVNWDAJVOVP $.
   $}
 
+  $( The complex number field is a metric space.  (Contributed by Mario
+     Carneiro, 28-Aug-2015.) $)
+  cnfldms $p |- CCfld e. MetSp $=
+    ( ccnfld cms wcel cabs cmin ccom cc cmet cmopn wceq cnmet eqid cxmet ctopon
+    cfv cnfldbas mp2b cres cr wf ctopn cnxmet mopntopon cnfldtset topontopn cxp
+    cds wfn absf subf fco mp2an fnresdm cnfldds reseq1i eqtr3i isms2 mpbir2an
+    ffn ) ABCDEFZGHOCUTIOZVAJKVALZUTVAAGUTGMOCVAGNOCVAAUAOJUBUTVAGVBUCGVAAPUDUE
+    QPUTGGUFZRZUTAUGOZVCRVCSUTTZUTVCUHVDUTJGSDTVCGETVFUIUJVCGSDEUKULVCSUTUSVCUT
+    UMQUTVEVCUNUOUPUQUR $.
+
   $( The underlying set of the standard topology on the complex numbers is the
      set of complex numbers.  (Contributed by Glauco Siliprandi, 11-Dec-2019.)
      (Revised by Jim Kingdon, 12-Dec-2023.) $)
