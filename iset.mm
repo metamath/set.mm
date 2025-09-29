@@ -174780,6 +174780,12 @@ $)
   unicntopcntop $p |- CC = U. ( MetOpen ` ( abs o. - ) ) $=
     ( cc cabs cmin ccom cmopn cfv eqid cntoptopon toponunii ) ABCDEFZJJGHI $.
 
+  $( The underlying set of the standard topology on the complex numbers is the
+     set of complex numbers.  (Contributed by Glauco Siliprandi,
+     11-Dec-2019.) $)
+  unicntop $p |- CC = U. ( TopOpen ` CCfld ) $=
+    ( cc ccnfld ctopn cfv eqid cnfldtopon toponunii ) ABCDZHHEFG $.
+
   $( The set of complex numbers is open with respect to the standard topology
      on complex numbers.  (Contributed by Glauco Siliprandi, 11-Dec-2019.)
      (Revised by Jim Kingdon, 12-Dec-2023.) $)
