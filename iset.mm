@@ -165454,6 +165454,19 @@ $)
       BCUFABKKUNSSUGTUJUKGUHUI $.
   $}
 
+  ${
+    $d A d $.  $d a d $.  $d w x y $.
+    $( Applying ` metUnif ` yields a set.  (Contributed by Jim Kingdon,
+       28-Sep-2025.) $)
+    metuex $p |- ( A e. V -> ( metUnif ` A ) e. _V ) $=
+      ( vd va vw vx vy cv cdm cxp crp co crn cfg cvv wcel cmetu cfv cpw dmex c0
+      ccnv cc0 cico cima cmpt wal cfbas cin wne crab df-fg vpwex rabex vex xpex
+      cr reex rpssre ssexi mptex rnex mpofvexi ax-gen cuni df-metu mptfvex mpan
+      cpsmet ) CHZIZIZVLJZDKVJUBUCDHUDLUEZUFZMZNLZOPZCUGABPAQROPVRCEFOEHZUHRFHG
+      HSUIUAUJZGVSSZUKVMVPNFGEULVTGWAEUMUNVLVLVKVJCUOTTZWBUPVODKVNKUQURUSUTVAVB
+      VCVDCVIMVEVQAQOBDCVFVGVH $.
+  $}
+
   $c CCfld $.
 
   $( Extend class notation with the field of complex numbers. $)
