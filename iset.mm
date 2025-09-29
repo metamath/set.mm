@@ -175011,6 +175011,16 @@ $)
   $}
 
   ${
+    tgioo2.1 $e |- J = ( TopOpen ` CCfld ) $.
+    $( The standard topology on the reals is a subspace of the complex metric
+       topology.  (Contributed by Mario Carneiro, 13-Aug-2014.) $)
+    tgioo2 $p |- ( topGen ` ran (,) ) = ( J |`t RR ) $=
+      ( cabs cmin ccom cr cxp cres crest co eqid cc cxmet cfv wcel cmopn cnxmet
+      wss wceq ax-resscn cnfldtopn metrest mp2an tgioo ) CDEZFFGHZAFIJZUFKZUELM
+      NOFLRUGUFPNZSQTUEUFAUILFUHABUAUIKUBUCUD $.
+  $}
+
+  ${
     $d a b c u v w x y z J $.  $d u w x y z K $.  $d a b c u v x y z .+ $.
     addcncntop.j $e |- J = ( MetOpen ` ( abs o. - ) ) $.
     ${
