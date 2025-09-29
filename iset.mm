@@ -58312,7 +58312,23 @@ $)
       ( wcel wral cvv cxp wfn elex ralimi wf fmpo dffn2 bitr4i sylib ) EGIZBDJZ
       ACJEKIZBDJZACJZFCDLZMZUBUDACUAUCBDEGNOOUEUFKFPUGABCDEKFHQUFFRST $.
 
-    $d R z $.  $d S z $.  $d V z $.
+    fnmpoi.2 $e |- C e. _V $.
+    $( Functionality and domain of a class given by the maps-to notation.
+       (Contributed by FL, 17-May-2010.) $)
+    fnmpoi $p |- F Fn ( A X. B ) $=
+      ( cvv wcel wral cxp wfn rgen2w fnmpo ax-mp ) EIJZBDKACKFCDLMQABCDHNABCDEF
+      IGOP $.
+
+    $( Domain of a class given by the maps-to notation.  (Contributed by FL,
+       17-May-2010.) $)
+    dmmpo $p |- dom F = ( A X. B ) $=
+      ( cxp wfn cdm wceq fnmpoi fndm ax-mp ) FCDIZJFKPLABCDEFGHMPFNO $.
+  $}
+
+  ${
+    $d A x y z $.  $d B y z $.  $d C z $.  $d D x y z $.  $d R z $.  $d S z $.
+    $d V z $.
+    mpofvex.1 $e |- F = ( x e. A , y e. B |-> C ) $.
     $( Sufficient condition for an operation maps-to notation to be set-like.
        (Contributed by Mario Carneiro, 3-Jul-2019.) $)
     mpofvex $p |- ( ( A. x A. y C e. V /\ R e. W /\ S e. X ) ->
@@ -58326,18 +58342,7 @@ $)
       OWDQNWLWHUHWPWCQVBWKWHAWDQAWDUKAWGQAWDWFULUMARZWDUNWFWGQAWDWFUOUPUQURVAUS
       UTVRVSWJVQFGJKVCVDMACWQVEDVFVGZWGWAHQQHABCDEVHMWRWGVMLABMCDEVIVJVKVLVN $.
 
-    fnmpoi.2 $e |- C e. _V $.
-    $( Functionality and domain of a class given by the maps-to notation.
-       (Contributed by FL, 17-May-2010.) $)
-    fnmpoi $p |- F Fn ( A X. B ) $=
-      ( cvv wcel wral cxp wfn rgen2w fnmpo ax-mp ) EIJZBDKACKFCDLMQABCDHNABCDEF
-      IGOP $.
-
-    $( Domain of a class given by the maps-to notation.  (Contributed by FL,
-       17-May-2010.) $)
-    dmmpo $p |- dom F = ( A X. B ) $=
-      ( cxp wfn cdm wceq fnmpoi fndm ax-mp ) FCDIZJFKPLABCDEFGHMPFNO $.
-
+    mpofvexi.c $e |- C e. _V $.
     mpofvexi.3 $e |- R e. _V $.
     mpofvexi.4 $e |- S e. _V $.
     $( Sufficient condition for an operation maps-to notation to be set-like.
