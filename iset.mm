@@ -175525,13 +175525,22 @@ $)
   $}
 
   ${
-    cncfcn1.1 $e |- J = ( MetOpen ` ( abs o. - ) ) $.
+    cncfcn1cntop.1 $e |- J = ( MetOpen ` ( abs o. - ) ) $.
     $( Relate complex function continuity to topological continuity.
        (Contributed by Paul Chapman, 28-Nov-2007.)  (Revised by Mario Carneiro,
        7-Sep-2015.)  (Revised by Jim Kingdon, 16-Jun-2023.) $)
     cncfcn1cntop $p |- ( CC -cn-> CC ) = ( J Cn J ) $=
       ( cc wss ccncf co ccn wceq ssid cntoptopon toponrestid cncfcncntop mp2an
       ) CCDZNCCEFAAGFHCIZOCCAAABACABJKZPLM $.
+  $}
+
+  ${
+    cncfcn1.1 $e |- J = ( TopOpen ` CCfld ) $.
+    $( Relate complex function continuity to topological continuity.
+       (Contributed by Paul Chapman, 28-Nov-2007.)  (Revised by Mario Carneiro,
+       7-Sep-2015.) $)
+    cncfcn1 $p |- ( CC -cn-> CC ) = ( J Cn J ) $=
+      ( cnfldtopn cncfcn1cntop ) AABCD $.
   $}
 
   ${
