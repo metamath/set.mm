@@ -12362,6 +12362,7 @@
 "plusgndx" is used by "topgrpstr".
 "plusgndx" is used by "tsetndxnplusgndx".
 "plusgndx" is used by "vscandxnplusgndx".
+"plycjOLD" is used by "coecjOLD".
 "pm2.43cbi" is used by "ee233".
 "pm2.43cbi" is used by "ee33VD".
 "pmap1N" is used by "pmapglb2N".
@@ -15925,6 +15926,7 @@ New usage of "cnvoprabOLD" is discouraged (0 uses).
 New usage of "cnvsymOLD" is discouraged (0 uses).
 New usage of "cnvsymOLDOLD" is discouraged (0 uses).
 New usage of "cnvunop" is discouraged (2 uses).
+New usage of "coecjOLD" is discouraged (0 uses).
 New usage of "com3rgbi" is discouraged (1 uses).
 New usage of "con3ALT" is discouraged (0 uses).
 New usage of "con3ALT2" is discouraged (0 uses).
@@ -18781,6 +18783,7 @@ New usage of "ply1basOLD" is discouraged (0 uses).
 New usage of "ply1idvr1OLD" is discouraged (0 uses).
 New usage of "ply1scl0OLD" is discouraged (0 uses).
 New usage of "ply1scl1OLD" is discouraged (0 uses).
+New usage of "plycjOLD" is discouraged (1 uses).
 New usage of "plycnOLD" is discouraged (0 uses).
 New usage of "pm10.252" is discouraged (0 uses).
 New usage of "pm11.07" is discouraged (0 uses).
@@ -20336,6 +20339,7 @@ Proof modification of "cnvopabOLD" is discouraged (77 steps).
 Proof modification of "cnvoprabOLD" is discouraged (262 steps).
 Proof modification of "cnvsymOLD" is discouraged (69 steps).
 Proof modification of "cnvsymOLDOLD" is discouraged (88 steps).
+Proof modification of "coecjOLD" is discouraged (263 steps).
 Proof modification of "com3rgbi" is discouraged (35 steps).
 Proof modification of "con3ALT" is discouraged (54 steps).
 Proof modification of "con3ALT2" is discouraged (14 steps).
@@ -21312,6 +21316,7 @@ Proof modification of "ply1basOLD" is discouraged (58 steps).
 Proof modification of "ply1idvr1OLD" is discouraged (151 steps).
 Proof modification of "ply1scl0OLD" is discouraged (137 steps).
 Proof modification of "ply1scl1OLD" is discouraged (132 steps).
+Proof modification of "plycjOLD" is discouraged (283 steps).
 Proof modification of "plycnOLD" is discouraged (172 steps).
 Proof modification of "pm13.181OLD" is discouraged (20 steps).
 Proof modification of "pm2.21ddALT" is discouraged (10 steps).
