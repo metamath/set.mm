@@ -175129,11 +175129,12 @@ $)
     $d k v w x y z K $.  $d k u v w x y z X $.  $d k u v w x y z Y $.
     $d u v w z B $.
     fsumcncntop.3 $e |- K = ( MetOpen ` ( abs o. - ) ) $.
-    fsumcn.4 $e |- ( ph -> J e. ( TopOn ` X ) ) $.
-    fsumcn.5 $e |- ( ph -> A e. Fin ) $.
+    fsumcncntop.4 $e |- ( ph -> J e. ( TopOn ` X ) ) $.
+    fsumcncntop.5 $e |- ( ph -> A e. Fin ) $.
     ${
       $d y B $.
-      fsumcn.6 $e |- ( ( ph /\ k e. A ) -> ( x e. X |-> B ) e. ( J Cn K ) ) $.
+      fsumcncntop.6 $e |- ( ( ph /\ k e. A )
+        -> ( x e. X |-> B ) e. ( J Cn K ) ) $.
       $( A finite sum of functions to complex numbers from a common topological
          space is continuous.  The class expression for ` B ` normally contains
          free variables ` k ` and ` x ` to index it.  (Contributed by NM,
@@ -175168,6 +175169,22 @@ $)
         LPZUUSUWIYRUUSYSCYOUUNUUOUUQXTVRWFAUXBUUMUURYRAUWFECLYAXRUWFUXCEYSCEUXA
         YLEBHUVFEHXIUWKYEXAUWLUWCUXAYLUWLBHDUVFUWMUIUKXCXDXSTGGYFUEGUDUEPUUTGIY
         BUQYCYDYGKYH $.
+    $}
+  $}
+
+  ${
+    fsumcn.3 $e |- K = ( TopOpen ` CCfld ) $.
+    fsumcn.4 $e |- ( ph -> J e. ( TopOn ` X ) ) $.
+    fsumcn.5 $e |- ( ph -> A e. Fin ) $.
+    ${
+      $d A k x $.  $d J k x $.  $d K k x $.  $d X k x $.  $d k ph x $.
+      fsumcn.6 $e |- ( ( ph /\ k e. A ) -> ( x e. X |-> B ) e. ( J Cn K ) ) $.
+      $( A finite sum of functions to complex numbers from a common topological
+         space is continuous.  The class expression for ` B ` normally contains
+         free variables ` k ` and ` x ` to index it.  (Contributed by NM,
+         8-Aug-2007.)  (Revised by Mario Carneiro, 23-Aug-2014.) $)
+      fsumcn $p |- ( ph -> ( x e. X |-> sum_ k e. A B ) e. ( J Cn K ) ) $=
+        ( cnfldtopn fsumcncntop ) ABCDEFGHGIMJKLN $.
     $}
   $}
 
