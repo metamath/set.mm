@@ -175143,6 +175143,34 @@ $)
   $}
 
   ${
+    $d a b c u v w z d e J $.  $d a b c d e u v x y z w $.
+    mpomulcn.j $e |- J = ( TopOpen ` CCfld ) $.
+    $( Complex number multiplication is a continuous function.  (Contributed by
+       GG, 16-Mar-2025.) $)
+    mpomulcn $p |- ( x e. CC , y e. CC |-> ( x x. y ) ) e.
+                                                         ( ( J tX J ) Cn J ) $=
+      ( vz vw vv vu cc cv cmul co crp wcel cmin cabs cfv clt wa wceq va vb cmpo
+      vc vd ve cnfldtopn mpomulf w3a wbr wi wral mulcn2 simplr simplll fvoveq1d
+      wrex breq1d simpr anbi12d eqcomd oveq12d cop wtru tru oveq1 oveq2 cbvmpov
+      a1i eqidd mulcl 3adant1 fvmpopr2d mp3an1 eqtr4di syl2an2r eqtr3d adantllr
+      df-ov eqtr2id ad3antlr fveq2d imbi12d rspcdv rspcimdv expimpd ex ralrimdv
+      com13 reximdv mpd addcncntoplem ) EFGHABIIAJZBJZKLZUCZCUAUBUDCDUGABUHUAJZ
+      MNZUBJZINZUDJZINZUIZUEJZWSOLPQZEJZRUJZUFJZXAOLPQZFJZRUJZSZXDXHKLZWSXAKLZO
+      LZPQZWQRUJZUKZUFIULZUEIULZFMUQZEMUQHJZWSOLPQZXFRUJZGJZXAOLPQZXJRUJZSZYBYE
+      WPLZWSXAWPLZOLZPQZWQRUJZUKZGIULZHIULZFMUQZEMUQEFUFUEWQWSXAUMXCYAYQEMXCXTY
+      PFMXCXTYOHIXCXTYBINZYOUKXCXTSZYRYNGIYEINZYRYSYNYTYRYSYNUKYTYRSZXCXTYNUUAX
+      CSZXSYNUEYBIYTYRXCUNUUBXDYBTZSZXRYNUFYEIYTYRXCUUCUOUUDXHYETZSZXLYHXQYMUUF
+      XGYDXKYGUUFXEYCXFRUUFXDYBWSPOUUBUUCUUEUNUPURUUFXIYFXJRUUFXHYEXAPOUUDUUEUS
+      UPURUTUUFXPYLWQRUUFXOYKPUUFXMYIXNYJOUUAUUCUUEXMYITXCUUAUUCSZUUESZYBYEKLZX
+      MYIUUHYBXDYEXHKUUHXDYBUUAUUCUUEUNVAUUHXHYEUUGUUEUSVAVBUUGYRUUEYTUUIYITYTY
+      RUUCUNYTYRUUCUUEUOYRYTSUUIYBYEVCZWPQZYIVDYRYTUUIUUKTVEVDYRYTUIUUKUUIVDIIU
+      UIUUJWPIHGWPHGIIUUIUCTVDABHGIIWOUUIYBWNKLWMYBWNKVFWNYEYBKVGVHVIVDUUJVJYRY
+      TUUIINVDYBYEVKVLVMVAVNYBYEWPVSVOVPVQVRXCXNYJTUUAUUCUUEXCYJWSXAVCZWPQXNWSX
+      AWPVSWRIIXNUULWPIUBUDWPUBUDIIXNUCTWRABUBUDIIWOXNWSWNKLWMWSWNKVFWNXAWSKVGV
+      HVIWRUULVJWTXBXNINWRWSXAVKVLVMVTWAVBWBURWCWDWEWFWGWIWHWGWHWJWJWKWL $.
+  $}
+
+  ${
     $d k u v w x y z A $.  $d k v w x y z J $.  $d k z L $.  $d k w x y z ph $.
     $d k v w x y z K $.  $d k u v w x y z X $.  $d k u v w x y z Y $.
     $d u v w z B $.
