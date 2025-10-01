@@ -175234,6 +175234,30 @@ $)
     $}
   $}
 
+  ${
+    $d x A $.  $d k n x u v J $.  $d n x N $.
+    expcn.j $e |- J = ( TopOpen ` CCfld ) $.
+    $( The power function on complex numbers, for fixed exponent ` N ` , is
+       continuous.  (Contributed by Mario Carneiro, 5-May-2014.)  (Revised by
+       Mario Carneiro, 23-Aug-2014.)  Avoid ~ ax-mulf .  (Revised by GG,
+       16-Mar-2025.) $)
+    expcn $p |- ( N e. NN0 -> ( x e. CC |-> ( x ^ N ) ) e. ( J Cn J ) ) $=
+      ( vn vu vv cc cv cexp co cmpt wcel cc0 c1 wceq oveq2 mpteq2dv eleq1d cmul
+      vk ccn caddc exp0 mpteq2ia wtru ctopon cfv cnfldtopon 1cnd cnmptc eqeltri
+      a1i mptru cn0 wa cmpo oveq1 cbvmptv simpl expp1 expcl mulcld eqid syl3anc
+      id ovmpog eqtr4d syl2anr mpteq2dva eqtrid simpr cnmptid mpomulcn cnmpt12f
+      eqeltrrid ctx eqeltrd ex nn0ind ) AHAIZEIZJKZLZBBUBKZMAHWANJKZLZWEMAHWAUA
+      IZJKZLZWEMZAHWAWHOUCKZJKZLZWEMZAHWACJKZLZWEMEUACWBNPZWDWGWEWRAHWCWFWBNWAJ
+      QRSWBWHPZWDWJWEWSAHWCWIWBWHWAJQRSWBWLPZWDWNWEWTAHWCWMWBWLWAJQRSWBCPZWDWQW
+      EXAAHWCWPWBCWAJQRSWGAHOLZWEAHWFOWAUDUEXBWEMUFAOBBHHBHUGUHMZUFBDUIZUMZXEUF
+      UJUKUNULWHUOMZWKWOXFWKUPZWNEHWBWHJKZWBFGHHFIZGIZTKZUQZKZLZWEXGWNEHWBWLJKZ
+      LXNAEHWMXOWAWBWLJURUSXGEHXOXMWBHMZXPXFXOXMPXGXPVFXFWKUTXPXFUPZXOXHWBTKZXM
+      WBWHVAXQXHHMXPXRHMXMXRPWBWHVBZXPXFUTZXQXHWBXSXTVCFGXHWBHHXKXRXLXHXJTKHXIX
+      HXJTURXJWBXHTQXLVDVGVEVHVIVJVKXGEXHWBXLBBBBHXCXGXDUMZXGEHXHLWJWEAEHWIXHWA
+      WBWHJURUSXFWKVLVPXGEBHYAVMXLBBVQKBUBKMXGFGBDVNUMVOVRVSVT $.
+    $( $j usage 'expcn' avoids 'ax-mulf'; $)
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
