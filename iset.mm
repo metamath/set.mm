@@ -55787,6 +55787,24 @@ $)
   $}
 
   ${
+    $d ph c d $.  $d C c d $.  $d A a b c d $.  $d B a b c d $.
+    fvmpopr2d.1 $e |- ( ph -> F = ( a e. A , b e. B |-> C ) ) $.
+    fvmpopr2d.2 $e |- ( ph -> P = <. a , b >. ) $.
+    fvmpopr2d.3 $e |- ( ( ph /\ a e. A /\ b e. B ) -> C e. V ) $.
+    $( Value of an operation given by maps-to notation.  (Contributed by Rohan
+       Ridenour, 14-May-2024.) $)
+    fvmpopr2d $p |- ( ( ph /\ a e. A /\ b e. B ) -> ( F ` P ) = C ) $=
+      ( vc vd cv wcel cmpo co wceq nfcv w3a cfv cop fveq12d eqtr4id csb nfcsb1v
+      df-ov 3ad2ant1 nfcsbw csbeq1a sylan9eq cbvmpo oveqi equcom anbi12i sylbir
+      eqidd wa eqcomd adantl simp2 simp3 ovmpod eqtrid eqtr3d ) AHOZBPZIOZCPZUA
+      ZVGVIHIBCDQZRZEFUBZDVKVMVGVIUCZVLUBVNVGVIVLUHVKEVOFVLAVHFVLSVJJUIAVHEVOSV
+      JKUIUDUEVKVMVGVIMNBCINOZHMOZDUFZUFZQZRDVLVTVGVIHIMNBCDVSMDTNDTHIVPVRHVPTH
+      VQDUGUJIVPVRUGVGVQSZVIVPSZDVRVSHVQDUKIVPVRUKULZUMUNVKMNVGVIBCVSDVTGVKVTUR
+      VQVGSZVPVISZUSZVSDSVKWFDVSWFWAWBUSDVSSWAWDWBWEHMUOINUOUPWCUQUTVAAVHVJVBAV
+      HVJVCLVDVEVF $.
+  $}
+
+  ${
     $d f u v w x y z A $.  $d f u v w x y z B $.  $d x y z R $.
     $d f u v w y z C $.  $d f u v w y z D $.  $d f u v w x y z H $.
     $d f u v w z S $.
