@@ -179546,6 +179546,26 @@ $)
   $}
 
   ${
+    $d F a d k z $.  $d F a k u v z $.  $d S a d k z $.
+    $( A polynomial is a continuous function.  (Contributed by Mario Carneiro,
+       23-Jul-2014.)  Avoid ~ ax-mulf .  (Revised by GG, 16-Mar-2025.) $)
+    plycn $p |- ( F e. ( Poly ` S ) -> F e. ( CC -cn-> CC ) ) $=
+      ( vz vd vk va vu vv cfv wcel cc cc0 cv co cmul cmpt cn0 wa a1i adantr cfz
+      cply cexp csu wceq csn cun cmap wrex ccncf wss elply simprbi ccnfld ctopn
+      ccn simpr eqid ctopon cnfldtopon 0zd simprl nn0zd fzfigd wf elmapi plybss
+      ad2antll 0cnd snssd unssd fssd elfznn0 adantl ffvelcdmd cnmptc expcn cmpo
+      syl ctx oveq12 cnmpt12 fsumcn eqeltrd cncfcn1 eleqtrrdi ex rexlimdvva mpd
+      mpomulcn ) BAUBIJZBCKLDMZUANZEMZFMZIZCMWNUCNZONZEUDPZUEZFALUFZUGZQUHNZUID
+      QUIZBKKUJNZJZWKAKUKZXDCAEDBFULUMWKWTXFDFQXCWKWLQJZWOXCJZRZRZWTXFXKWTRZBUN
+      UOIZXMUPNZXEXLBWSXNXKWTUQXKWSXNJWTXKCWMWREXMXMKXMURZXMKUSIJZXKXMXOUTZSXKL
+      WLXKVAXKWLWKXHXIVBVCVDXKWNWMJZRZCGHWPWQGMZHMZONZWRXMXMXMXMKKKXPXSXQSZXSCW
+      PXMXMKKYCYCXSQKWNWOXKQKWOVEXRXKQXBKWOXIQXBWOVEWKXHWOXBQVFVHXKAXAKWKXGXJAB
+      VGTXKLKXKVIVJVKVLTXRWNQJZXKWNWLVMVNZVOVPXSYDCKWQPXNJYECXMWNXOVQVSYCYCGHKK
+      YBVRXMXMVTNXMUPNJXSGHXMXOWJSXTWPYAWQOWAWBWCTWDXMXOWEWFWGWHWI $.
+    $( $j usage 'plycn' avoids 'ax-mulf'; $)
+  $}
+
+  ${
     $d A a k n x $.  $d F a k n x $.  $d G x $.  $d S x $.  $d V x $.
     $( A polynomial with real coefficients distributes under conjugation.
        (Contributed by Mario Carneiro, 24-Jul-2014.) $)
