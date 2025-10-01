@@ -58312,7 +58312,23 @@ $)
       ( wcel wral cvv cxp wfn elex ralimi wf fmpo dffn2 bitr4i sylib ) EGIZBDJZ
       ACJEKIZBDJZACJZFCDLZMZUBUDACUAUCBDEGNOOUEUFKFPUGABCDEKFHQUFFRST $.
 
-    $d R z $.  $d S z $.  $d V z $.
+    fnmpoi.2 $e |- C e. _V $.
+    $( Functionality and domain of a class given by the maps-to notation.
+       (Contributed by FL, 17-May-2010.) $)
+    fnmpoi $p |- F Fn ( A X. B ) $=
+      ( cvv wcel wral cxp wfn rgen2w fnmpo ax-mp ) EIJZBDKACKFCDLMQABCDHNABCDEF
+      IGOP $.
+
+    $( Domain of a class given by the maps-to notation.  (Contributed by FL,
+       17-May-2010.) $)
+    dmmpo $p |- dom F = ( A X. B ) $=
+      ( cxp wfn cdm wceq fnmpoi fndm ax-mp ) FCDIZJFKPLABCDEFGHMPFNO $.
+  $}
+
+  ${
+    $d A x y z $.  $d B y z $.  $d C z $.  $d D x y z $.  $d R z $.  $d S z $.
+    $d V z $.
+    mpofvex.1 $e |- F = ( x e. A , y e. B |-> C ) $.
     $( Sufficient condition for an operation maps-to notation to be set-like.
        (Contributed by Mario Carneiro, 3-Jul-2019.) $)
     mpofvex $p |- ( ( A. x A. y C e. V /\ R e. W /\ S e. X ) ->
@@ -58326,18 +58342,7 @@ $)
       OWDQNWLWHUHWPWCQVBWKWHAWDQAWDUKAWGQAWDWFULUMARZWDUNWFWGQAWDWFUOUPUQURVAUS
       UTVRVSWJVQFGJKVCVDMACWQVEDVFVGZWGWAHQQHABCDEVHMWRWGVMLABMCDEVIVJVKVLVN $.
 
-    fnmpoi.2 $e |- C e. _V $.
-    $( Functionality and domain of a class given by the maps-to notation.
-       (Contributed by FL, 17-May-2010.) $)
-    fnmpoi $p |- F Fn ( A X. B ) $=
-      ( cvv wcel wral cxp wfn rgen2w fnmpo ax-mp ) EIJZBDKACKFCDLMQABCDHNABCDEF
-      IGOP $.
-
-    $( Domain of a class given by the maps-to notation.  (Contributed by FL,
-       17-May-2010.) $)
-    dmmpo $p |- dom F = ( A X. B ) $=
-      ( cxp wfn cdm wceq fnmpoi fndm ax-mp ) FCDIZJFKPLABCDEFGHMPFNO $.
-
+    mpofvexi.c $e |- C e. _V $.
     mpofvexi.3 $e |- R e. _V $.
     mpofvexi.4 $e |- S e. _V $.
     $( Sufficient condition for an operation maps-to notation to be set-like.
@@ -165440,13 +165445,34 @@ $)
 
   ${
     $d x y z $.
+    $( The standard distance function on the complex numbers is a set.
+       (Contributed by Jim Kingdon, 28-Sep-2025.) $)
+    cndsex $p |- ( abs o. - ) e. _V $=
+      ( vx vy vz cabs cmin cc cv ccj cfv cmul co csqrt cmpt df-abs cnex eqeltri
+      cvv mptex caddc wceq crio cmpo df-sub mpoex coex ) DEDAFAGZUFHIJKLIZMQANA
+      FUGORPEABFFBGCGSKUFTCFUAZUBQABCUCABFFUHOOUDPUE $.
+  $}
+
+  ${
+    $d x y z $.
     $( The standard topology on the complex numbers is a set.  (Contributed by
        Jim Kingdon, 25-Sep-2025.) $)
     cntopex $p |- ( MetOpen ` ( abs o. - ) ) e. _V $=
-      ( vx vy vz cabs cmin ccom cvv wcel cmopn cfv cc cv ccj cmul co csqrt cmpt
-      df-abs cnex eqeltri mptex caddc wceq crio cmpo df-sub mpoex mopnset ax-mp
-      coex ) DEFZGHUKIJGHDEDAKALZULMJNOPJZQGARAKUMSUATEABKKBLCLUBOULUCCKUDZUEGA
-      BCUFABKKUNSSUGTUJUKGUHUI $.
+      ( cabs cmin ccom cvv wcel cmopn cfv cndsex mopnset ax-mp ) ABCZDEKFGDEHKD
+      IJ $.
+  $}
+
+  ${
+    $d A d $.  $d a d $.  $d w x y $.
+    $( Applying ` metUnif ` yields a set.  (Contributed by Jim Kingdon,
+       28-Sep-2025.) $)
+    metuex $p |- ( A e. V -> ( metUnif ` A ) e. _V ) $=
+      ( vd va vw vx vy cv cdm cxp crp co crn cfg cvv wcel cmetu cfv cpw dmex c0
+      ccnv cc0 cico cima cmpt wal cfbas cin wne crab df-fg vpwex rabex vex xpex
+      cr reex rpssre ssexi mptex rnex mpofvexi ax-gen cuni df-metu mptfvex mpan
+      cpsmet ) CHZIZIZVLJZDKVJUBUCDHUDLUEZUFZMZNLZOPZCUGABPAQROPVRCEFOEHZUHRFHG
+      HSUIUAUJZGVSSZUKVMVPNFGEULVTGWAEUMUNVLVLVKVJCUOTTZWBUPVODKVNKUQURUSUTVAVB
+      VCVDCVIMVEVQAQOBDCVFVGVH $.
   $}
 
   $c CCfld $.
@@ -165460,20 +165486,20 @@ $)
        constructed by applying the ` |``s ` restriction operator.
 
        The contract of this set is defined entirely by ~ cnfldex , ~ cnfldadd ,
-       ~ cnfldmul , ~ cnfldcj , ~ cnfldtset and ~ cnfldbas .
-
-       We may add additional members to this in the future.
-
-       At least for now, this structure does not include an order, a distance
-       function, or function mapping metrics.
-
+       ~ cnfldmul , ~ cnfldcj , ~ cnfldtset , ~ cnfldle , ~ cnfldds , and
+       ~ cnfldbas .  We may add additional members to this in the future.
        (Contributed by Stefan O'Rear, 27-Nov-2014.)  (Revised by Thierry
-       Arnoux, 15-Dec-2017.)  (New usage is discouraged.) $)
-    df-icnfld $a |- CCfld = ( ( { <. ( Base ` ndx ) , CC >. ,
+       Arnoux, 15-Dec-2017.)  Use maps-to notation for addition and
+       multiplication.  (Revised by GG, 31-Mar-2025.)
+       (New usage is discouraged.) $)
+    df-cnfld $a |- CCfld = ( ( { <. ( Base ` ndx ) , CC >. ,
            <. ( +g ` ndx ) , ( x e. CC , y e. CC |-> ( x + y ) ) >. ,
            <. ( .r ` ndx ) , ( x e. CC , y e. CC |-> ( x x. y ) ) >. } u.
            { <. ( *r ` ndx ) , * >. } ) u.
-         { <. ( TopSet ` ndx ) , ( MetOpen ` ( abs o. - ) ) >. } ) $.
+         ( { <. ( TopSet ` ndx ) , ( MetOpen ` ( abs o. - ) ) >. ,
+             <. ( le ` ndx ) , <_ >. ,
+             <. ( dist ` ndx ) , ( abs o. - ) >. } u.
+           { <. ( UnifSet ` ndx ) , ( metUnif ` ( abs o. - ) ) >. } ) ) $.
   $}
 
   ${
@@ -165481,16 +165507,18 @@ $)
     $( The field of complex numbers is a structure.  (Contributed by Mario
        Carneiro, 14-Aug-2015.)  (Revised by Thierry Arnoux, 17-Dec-2017.) $)
     cnfldstr $p |- CCfld Struct <. 1 , ; 1 3 >. $=
-      ( vx vy ccnfld c1 c3 cop cstr wbr wtru c9 cnx cfv cc cv ccj cvv wcel cnex
-      co a1i cdc cbs cplusg caddc cmpo cmul ctp cstv csn cun cts cabs cmin ccom
-      cmulr cmopn df-icnfld c4 eqid mpoex wf cjf fex mp2an srngstrd cntopex 9nn
-      mptru tsetndx strle1g ax-mp 4lt9 strleun eqbrtri cuz cz cle 9nn0 1nn0 3nn
-      nn0zi decnncl nnzi 1nn 3nn0 9re leidi declei eluz2 mpbir3an strext ) CDDE
-      UAZFGHIDJWLCCDJFZGHICKUBLMFKUCLABMMANZBNZUDSZUEZFKUOLABMMWNWOUFSZUEZFUGKU
-      HLOFUIUJZKUKLZULUMUNUPLZFUIZUJWMGABUQDURJJWTXCWTDURFGHIMWQWTWSOPPPPWTUSMP
-      QZIRTWQPQIABMMWPRRUTTWSPQIABMMWRRRUTTOPQZIMMOVAXDXEVBRMMPOVCVDTVEVHXBPQXC
-      JJFGHVFXAJPXBVGVIVJVKVLVMVNTWLJVOLQZIXFJVPQWLVPQJWLVQHJVRWAWLDEVSVTWBWCDE
-      JWDWEVRJWFWGWHJWLWIWJTWKVH $.
+      ( vx vy cnx cfv cc cop ccj cun cle c1 cstr c9 wtru cvv wcel cnex a1i 1nn0
+      c2 cxr ccnfld cbs cplusg cv caddc co cmpo cmul ctp cstv csn cts cabs cmin
+      cmulr ccom cmopn cple cds cunif cmetu c3 cdc df-cnfld c4 wbr mpoex wf cjf
+      eqid fex mp2an srngstrd mptru cntopex cxp xrex xpex lerelxr ssexi cc0 9nn
+      cndsex tsetndx 9lt10 10nn 0nn0 2nn 2pos declt decnncl dsndx strle3g mp3an
+      plendx metuex 3nn unifndx strle1g mp2b 2nn0 2lt3 strleun 4lt9 eqbrtri ) U
+      ACUBDEFCUCDABEEAUDZBUDZUEUFZUGZFCUODABEEXFXGUHUFZUGZFUICUJDGFUKHZCULDZUMU
+      NUPZUQDZFCURDZIFCUSDZXNFUIZCUTDZXNVADZFUKZHZHJJVBVCZFKABVDJVELYCXLYBXLJVE
+      FKVFMEXIXLXKGNNNNXLVJENOZMPQXINOMABEEXHPPVGQXKNOMABEEXJPPVGQGNOZMEEGVHYDY
+      EVIPEENGVKVLQVMVNLJSVCZYCYCXRYAXONOINOXNNOZXRLYFFKVFVOITTVPTTVQVQVRVSVTWC
+      XMXPXQNLJWAVCYFNNXOIXNWBWDWEWFWOJWASRWGWHWIWJJSRWHWKWLWMWNYGXTNOYAYCYCFKV
+      FWCXNNWPXSYCNXTJVBRWQWKWRWSWTJSVBRXAWQXBWJXCXDXCXE $.
   $}
 
   $( The field of complex numbers is a set.  (Contributed by Stefan O'Rear,
@@ -165506,11 +165534,12 @@ $)
        O'Rear, 27-Nov-2014.)  (Revised by Mario Carneiro, 6-Oct-2015.)
        (Revised by Thierry Arnoux, 17-Dec-2017.) $)
     cnfldbas $p |- CC = ( Base ` CCfld ) $=
-      ( vx vy cc cvv wcel ccnfld cbs cfv wceq cnex c1 cop cnx csn cv cmpo ssun1
-      co cun sstri c3 cdc cnfldstr baseslid cplusg caddc cmulr cmul ctp snsstp1
-      cstv ccj cts cabs cmin ccom cmopn df-icnfld sseqtrri strslfv ax-mp ) CDEC
-      FGHIJCFGDKKUAUBLUCUDMGHCLZNVBMUEHABCCAOZBOZUFRPLZMUGHABCCVCVDUHRPLZUIZFVB
-      VEVFUJVGVGMUKHULLNZSZMUMHUNUOUPUQHLNZSZFVGVIVKVGVHQVIVJQTABURUSTUTVA $.
+      ( vx vy cc cvv wcel ccnfld cbs cfv wceq c1 cop cnx csn cv co cmpo ctp cun
+      ssun1 sstri cnex c3 cdc cnfldstr baseslid cplusg caddc cmulr cmul snsstp1
+      cstv ccj cts cabs cmin ccom cmopn cle cds cunif df-cnfld sseqtrri strslfv
+      cple cmetu ax-mp ) CDECFGHIUACFGDJJUBUCKUDUELGHCKZMVGLUFHABCCANZBNZUGOPKZ
+      LUHHABCCVHVIUIOPKZQZFVGVJVKUJVLVLLUKHULKMZRZLUMHUNUOUPZUQHKLVDHURKLUSHVOK
+      QLUTHVOVEHKMRZRZFVLVNVQVLVMSVNVPSTABVAVBTVCVF $.
   $}
 
   ${
@@ -165519,12 +165548,12 @@ $)
        ~ cnfldadd using maps-to notation, which does not require ~ ax-addf .
        (Contributed by GG, 31-Mar-2025.) $)
     mpocnfldadd $p |- ( x e. CC , y e. CC |-> ( x + y ) ) = ( +g ` CCfld ) $=
-      ( cc cv caddc co cmpo cvv wcel ccnfld cplusg cfv c1 cop cnx csn cun ssun1
-      cnex sstri wceq mpoex c3 cdc cnfldstr plusgslid cbs cmul ctp snsstp2 cstv
-      cmulr ccj cts cabs cmin ccom cmopn df-icnfld sseqtrri strslfv ax-mp ) ABC
-      CADZBDZEFZGZHIVFJKLUAABCCVESSUBVFJKHMMUCUDNUEUFOKLVFNZPOUGLCNZVGOULLABCCV
-      CVDUHFGNZUIZJVHVGVIUJVJVJOUKLUMNPZQZJVJVKRVLVLOUNLUOUPUQURLNPZQJVLVMRABUS
-      UTTTVAVB $.
+      ( cc cv caddc co cmpo cvv ccnfld cplusg cfv cnex c1 cop cnx csn ctp ssun1
+      cun sstri wcel wceq mpoex c3 cdc cnfldstr plusgslid cbs cmul snsstp2 cstv
+      cmulr ccj cts cabs cmin ccom cmopn cple cle cunif cmetu df-cnfld sseqtrri
+      cds strslfv ax-mp ) ABCCADZBDZEFZGZHUAVKIJKUBABCCVJLLUCVKIJHMMUDUENUFUGOJ
+      KVKNZPOUHKCNZVLOULKABCCVHVIUIFGNZQZIVMVLVNUJVOVOOUKKUMNPZSZIVOVPRVQVQOUNK
+      UOUPUQZURKNOUSKUTNOVEKVRNQOVAKVRVBKNPSZSIVQVSRABVCVDTTVFVG $.
     $( $j usage 'mpocnfldadd' avoids 'ax-addf' 'ax-mulf'; $)
 
     $( The addition operation of the field of complex numbers.  (Contributed by
@@ -165543,12 +165572,12 @@ $)
        of ~ cnfldmul using maps-to notation, which does not require ~ ax-mulf .
        (Contributed by GG, 31-Mar-2025.) $)
     mpocnfldmul $p |- ( x e. CC , y e. CC |-> ( x x. y ) ) = ( .r ` CCfld ) $=
-      ( cc cv cmul co cmpo cvv wcel ccnfld cmulr cfv cnex cop cnx csn cun ssun1
-      c1 sstri wceq mpoex c3 cdc cnfldstr mulrslid cbs cplusg caddc ctp snsstp3
-      cstv ccj cts cabs cmin ccom cmopn df-icnfld sseqtrri strslfv ax-mp ) ABCC
-      ADZBDZEFZGZHIVFJKLUAABCCVEMMUBVFJKHSSUCUDNUEUFOKLVFNZPOUGLCNZOUHLABCCVCVD
-      UIFGNZVGUJZJVHVIVGUKVJVJOULLUMNPZQZJVJVKRVLVLOUNLUOUPUQURLNPZQJVLVMRABUSU
-      TTTVAVB $.
+      ( cc cv cmul co cmpo cvv ccnfld cmulr cfv cnex c1 cop cnx csn ssun1 sstri
+      ctp cun wcel wceq mpoex c3 cdc cnfldstr mulrslid cbs cplusg caddc snsstp3
+      cstv ccj cts cabs cmin ccom cmopn cle cds cunif df-cnfld sseqtrri strslfv
+      cple cmetu ax-mp ) ABCCADZBDZEFZGZHUAVKIJKUBABCCVJLLUCVKIJHMMUDUENUFUGOJK
+      VKNZPOUHKCNZOUIKABCCVHVIUJFGNZVLSZIVMVNVLUKVOVOOULKUMNPZTZIVOVPQVQVQOUNKU
+      OUPUQZURKNOVEKUSNOUTKVRNSOVAKVRVFKNPTZTIVQVSQABVBVCRRVDVG $.
     $( $j usage 'mpocnfldmul' avoids 'ax-addf' 'ax-mulf'; $)
 
     $( The multiplication operation of the field of complex numbers.
@@ -165567,12 +165596,12 @@ $)
        by Mario Carneiro, 6-Oct-2015.)  (Revised by Thierry Arnoux,
        17-Dec-2017.)  (Revised by Thierry Arnoux, 17-Dec-2017.) $)
     cnfldcj $p |- * = ( *r ` CCfld ) $=
-      ( vx vy ccj cvv wcel ccnfld cstv cfv wceq cc wf cjf c1 cop cnx cv co cmpo
-      csn cun cnex fex mp2an cdc cnfldstr starvslid cbs cplusg caddc cmulr cmul
-      ctp ssun2 cts cabs cmin ccom cmopn ssun1 df-icnfld sseqtrri sstri strslfv
-      c3 ax-mp ) CDEZCFGHIJJCKJDEVFLUAJJDCUBUCCFGDMMVDUDNUEUFOGHCNSZOUGHJNOUHHA
-      BJJAPZBPZUIQRNOUJHABJJVHVIUKQRNULZVGTZFVGVJUMVKVKOUNHUOUPUQURHNSZTFVKVLUS
-      ABUTVAVBVCVE $.
+      ( vx vy ccj cvv wcel ccnfld cstv cfv wceq cc wf c1 cop cnx csn cv co cmpo
+      ctp cun cjf cnex fex mp2an c3 cdc cnfldstr starvslid cbs caddc cmulr cmul
+      cplusg ssun2 cts cabs cmin ccom cmopn cple cle cunif cmetu ssun1 df-cnfld
+      cds sseqtrri sstri strslfv ax-mp ) CDEZCFGHIJJCKJDEVKUAUBJJDCUCUDCFGDLLUE
+      UFMUGUHNGHCMOZNUIHJMNUMHABJJAPZBPZUJQRMNUKHABJJVMVNULQRMSZVLTZFVLVOUNVPVP
+      NUOHUPUQURZUSHMNUTHVAMNVFHVQMSNVBHVQVCHMOTZTFVPVRVDABVEVGVHVIVJ $.
   $}
 
   ${
@@ -165582,11 +165611,46 @@ $)
        (Revised by Thierry Arnoux, 17-Dec-2017.)  (Revised by GG,
        31-Mar-2025.) $)
     cnfldtset $p |- ( MetOpen ` ( abs o. - ) ) = ( TopSet ` CCfld ) $=
-      ( vu vv cabs cmin ccom cmopn cfv cvv wcel ccnfld cts c1 cop cnx csn cc cv
-      co cmpo cun wceq cntopex c3 cdc cnfldstr tsetslid cplusg caddc cmulr cmul
-      cbs ctp cstv ccj ssun2 df-icnfld sseqtrri strslfv ax-mp ) CDEFGZHIUTJKGUA
-      UBUTJKHLLUCUDMUEUFNKGUTMOZNUKGPMNUGGABPPAQZBQZUHRSMNUIGABPPVBVCUJRSMULNUM
-      GUNMOTZVATJVAVDUOABUPUQURUS $.
+      ( vu vv cabs cmin ccom cfv cvv ccnfld cts c1 cop cnx csn ctp cun cc cv co
+      cmpo sstri cmopn wcel wceq cntopex cdc cnfldstr tsetslid cple cle snsstp1
+      cds cunif cmetu ssun1 cbs cplusg caddc cmulr cmul cstv ccj ssun2 df-cnfld
+      c3 sseqtrri strslfv ax-mp ) CDEZUAFZGUBVIHIFUCUDVIHIGJJVDUEKUFUGLIFVIKZMV
+      JLUHFUIKZLUKFVHKZNZHVJVKVLUJVMVMLULFVHUMFKMZOZHVMVNUNVOLUOFPKLUPFABPPAQZB
+      QZUQRSKLURFABPPVPVQUSRSKNLUTFVAKMOZVOOHVOVRVBABVCVETTVFVG $.
+  $}
+
+  ${
+    $d u v $.
+    $( The ordering of the field of complex numbers.  Note that this is not
+       actually an ordering on ` CC ` , but we put it in the structure anyway
+       because restricting to ` RR ` does not affect this component, so that
+       ` ( CCfld |``s RR ) ` is an ordered field even though ` CCfld ` itself
+       is not.  (Contributed by Mario Carneiro, 14-Aug-2015.)  (Revised by
+       Mario Carneiro, 6-Oct-2015.)  (Revised by Thierry Arnoux, 17-Dec-2017.)
+       Revise ~ df-cnfld .  (Revised by GG, 31-Mar-2025.) $)
+    cnfldle $p |- <_ = ( le ` CCfld ) $=
+      ( vu vv cle cvv ccnfld cple cfv cxr xrex c1 cop cnx csn ctp cc cv co cmpo
+      cun sstri wcel wceq cxp xpex lerelxr ssexi cdc cnfldstr pleslid cabs cmin
+      c3 cts ccom cmopn cds snsstp2 cunif cmetu ssun1 cbs caddc cmulr cmul cstv
+      cplusg ccj ssun2 df-cnfld sseqtrri strslfv ax-mp ) CDUACEFGUBCHHUCHHIIUDU
+      EUFCEFDJJULUGKUHUILFGCKZMLUMGUJUKUNZUOGKZVMLUPGVNKZNZEVOVMVPUQVQVQLURGVNU
+      SGKMZSZEVQVRUTVSLVAGOKLVFGABOOAPZBPZVBQRKLVCGABOOVTWAVDQRKNLVEGVGKMSZVSSE
+      VSWBVHABVIVJTTVKVL $.
+  $}
+
+  ${
+    $d u v $.
+    $( The metric of the field of complex numbers.  (Contributed by Mario
+       Carneiro, 14-Aug-2015.)  (Revised by Mario Carneiro, 6-Oct-2015.)
+       (Revised by Thierry Arnoux, 17-Dec-2017.)  Revise ~ df-cnfld .  (Revised
+       by GG, 31-Mar-2025.) $)
+    cnfldds $p |- ( abs o. - ) = ( dist ` CCfld ) $=
+      ( vu vv cabs cmin ccom cvv ccnfld cds cfv c1 cop cnx csn ctp cun cc cv co
+      cmpo sstri wcel wceq cndsex c3 cdc cnfldstr dsslid cts cmopn cple snsstp3
+      cle cunif cmetu ssun1 cbs cplusg caddc cmulr cmul cstv ccj ssun2 df-cnfld
+      sseqtrri strslfv ax-mp ) CDEZFUAVHGHIUBUCVHGHFJJUDUEKUFUGLHIVHKZMLUHIVHUI
+      IKZLUJIULKZVINZGVJVKVIUKVLVLLUMIVHUNIKMZOZGVLVMUOVNLUPIPKLUQIABPPAQZBQZUR
+      RSKLUSIABPPVOVPUTRSKNLVAIVBKMOZVNOGVNVQVCABVDVETTVFVG $.
   $}
 
   ${
@@ -174669,11 +174733,58 @@ $)
       HWASIGNWQHWABDVEHWAVFTVGWBWPWAGWAVHVITQVJVKVLVMVNWDAJVOVP $.
   $}
 
+  $( The complex number field is a metric space.  (Contributed by Mario
+     Carneiro, 28-Aug-2015.) $)
+  cnfldms $p |- CCfld e. MetSp $=
+    ( ccnfld cms wcel cabs cmin ccom cc cmet cmopn wceq cnmet eqid cxmet ctopon
+    cfv cnfldbas mp2b cres cr wf ctopn cnxmet mopntopon cnfldtset topontopn cxp
+    cds wfn absf subf fco mp2an fnresdm cnfldds reseq1i eqtr3i isms2 mpbir2an
+    ffn ) ABCDEFZGHOCUTIOZVAJKVALZUTVAAGUTGMOCVAGNOCVAAUAOJUBUTVAGVBUCGVAAPUDUE
+    QPUTGGUFZRZUTAUGOZVCRVCSUTTZUTVCUHVDUTJGSDTVCGETVFUIUJVCGSDEUKULVCSUTUSVCUT
+    UMQUTVEVCUNUOUPUQUR $.
+
+  $( The complex number field is a topological space.  (Contributed by Mario
+     Carneiro, 28-Aug-2015.) $)
+  cnfldxms $p |- CCfld e. *MetSp $=
+    ( ccnfld cms wcel cxms cnfldms msxms ax-mp ) ABCADCEAFG $.
+
+  $( The complex number field is a topological space.  (Contributed by Mario
+     Carneiro, 28-Aug-2015.) $)
+  cnfldtps $p |- CCfld e. TopSp $=
+    ( ccnfld cms wcel ctps cnfldms mstps ax-mp ) ABCADCEAFG $.
+
+  ${
+    cnfldtopn.1 $e |- J = ( TopOpen ` CCfld ) $.
+    $( The topology of the complex numbers.  (Contributed by Mario Carneiro,
+       28-Aug-2015.) $)
+    cnfldtopn $p |- J = ( MetOpen ` ( abs o. - ) ) $=
+      ( ccnfld ctopn cabs cmin ccom cmopn cc cxmet wcel ctopon wceq cnxmet eqid
+      cfv mopntopon cnfldbas cnfldtset topontopn mp2b eqtr4i ) ACDPZEFGZHPZBUDI
+      JPKUEILPKUEUCMNUDUEIUEOQIUECRSTUAUB $.
+
+    $( The topology of the complex numbers is a topology.  (Contributed by
+       Mario Carneiro, 2-Sep-2015.) $)
+    cnfldtopon $p |- J e. ( TopOn ` CC ) $=
+      ( ccnfld ctps wcel cc ctopon cfv cnfldtps cnfldbas istps mpbi ) CDEAFGHEI
+      FACJBKL $.
+
+    $( The topology of the complex numbers is a topology.  (Contributed by
+       Mario Carneiro, 2-Sep-2015.) $)
+    cnfldtop $p |- J e. Top $=
+      ( cc cnfldtopon topontopi ) CAABDE $.
+  $}
+
   $( The underlying set of the standard topology on the complex numbers is the
      set of complex numbers.  (Contributed by Glauco Siliprandi, 11-Dec-2019.)
      (Revised by Jim Kingdon, 12-Dec-2023.) $)
   unicntopcntop $p |- CC = U. ( MetOpen ` ( abs o. - ) ) $=
     ( cc cabs cmin ccom cmopn cfv eqid cntoptopon toponunii ) ABCDEFZJJGHI $.
+
+  $( The underlying set of the standard topology on the complex numbers is the
+     set of complex numbers.  (Contributed by Glauco Siliprandi,
+     11-Dec-2019.) $)
+  unicntop $p |- CC = U. ( TopOpen ` CCfld ) $=
+    ( cc ccnfld ctopn cfv eqid cnfldtopon toponunii ) ABCDZHHEFG $.
 
   $( The set of complex numbers is open with respect to the standard topology
      on complex numbers.  (Contributed by Glauco Siliprandi, 11-Dec-2019.)
@@ -174681,6 +174792,12 @@ $)
   cnopncntop $p |- CC e. ( MetOpen ` ( abs o. - ) ) $=
     ( cc cabs cmin ccom cfv cuni unicntopcntop ctop wcel wss eqid cntoptop ssid
     cmopn uniopn mp2an eqeltri ) ABCDNEZFZRGRHIRRJSRIRRKLRMRROPQ $.
+
+  $( The set of complex numbers is open with respect to the standard topology
+     on complex numbers.  (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
+  cnopn $p |- CC e. ( TopOpen ` CCfld ) $=
+    ( cc ccnfld ctopn cfv cuni unicntop ctop wcel wss eqid cnfldtop ssid uniopn
+    mp2an eqeltri ) ABCDZEZPFPGHPPIQPHPPJKPLPPMNO $.
 
   ${
     $d A w x $.
@@ -174884,13 +175001,31 @@ $)
       wss wceq ax-resscn metrest mp2an tgioo ) CDEZFFGHZAFIJZUEKZUDLMNOFLRUFUEP
       NZSQTUDUEAUHLFUGBUHKUAUBUC $.
 
-    rerest.2 $e |- R = ( topGen ` ran (,) ) $.
+    rerestcntop.2 $e |- R = ( topGen ` ran (,) ) $.
     $( The subspace topology induced by a subset of the reals.  (Contributed by
        Mario Carneiro, 13-Aug-2014.)  (Revised by Jim Kingdon, 6-Aug-2023.) $)
     rerestcntop $p |- ( A C_ RR -> ( J |`t A ) = ( R |`t A ) ) $=
       ( cr wss crest co cioo crn ctg cfv tgioo2cntop eqtri oveq1i ctop wcel cvv
       wceq cntoptop reex restabs mp3an13 eqtr2id ) AFGZBAHICFHIZAHIZCAHIZBUGAHB
       JKLMUGECDNOPCQRUFFSRUHUITCDUAUBAFCQSUCUDUE $.
+  $}
+
+  ${
+    tgioo2.1 $e |- J = ( TopOpen ` CCfld ) $.
+    $( The standard topology on the reals is a subspace of the complex metric
+       topology.  (Contributed by Mario Carneiro, 13-Aug-2014.) $)
+    tgioo2 $p |- ( topGen ` ran (,) ) = ( J |`t RR ) $=
+      ( cabs cmin ccom cr cxp cres crest co eqid cc cxmet cfv wcel cmopn cnxmet
+      wss wceq ax-resscn cnfldtopn metrest mp2an tgioo ) CDEZFFGHZAFIJZUFKZUELM
+      NOFLRUGUFPNZSQTUEUFAUILFUHABUAUIKUBUCUD $.
+
+    rerest.2 $e |- R = ( topGen ` ran (,) ) $.
+    $( The subspace topology induced by a subset of the reals.  (Contributed by
+       Mario Carneiro, 13-Aug-2014.) $)
+    rerest $p |- ( A C_ RR -> ( J |`t A ) = ( R |`t A ) ) $=
+      ( cr wss crest co cioo crn ctg cfv tgioo2 eqtri oveq1i ctop wcel cvv wceq
+      cnfldtop reex restabs mp3an13 eqtr2id ) AFGZBAHICFHIZAHIZCAHIZBUGAHBJKLMU
+      GECDNOPCQRUFFSRUHUITCDUAUBAFCQSUCUDUE $.
   $}
 
   ${
