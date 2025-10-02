@@ -20,6 +20,9 @@
 "4syl" is used by "fzosplitsnm1".
 "4syl" is used by "fzostep1".
 "4syl" is used by "fzssp1".
+"4syl" is used by "gausslemma2dlem0c".
+"4syl" is used by "gausslemma2dlem0e".
+"4syl" is used by "gausslemma2dlem1a".
 "4syl" is used by "hashiun".
 "4syl" is used by "hmeores".
 "4syl" is used by "isose".
@@ -28,6 +31,9 @@
 "4syl" is used by "serf0".
 "4syl" is used by "smoiso".
 "4syl" is used by "tposss".
+"4syl" is used by "znf1o".
+"4syl" is used by "znidom".
+"4syl" is used by "znzrh2".
 "a9evsep" is used by "ax9vsep".
 "alrimih" is used by "19.12".
 "alrimih" is used by "19.21h".
@@ -54,7 +60,7 @@
 "alrimih" is used by "sb4or".
 "alrimih" is used by "sb6rf".
 "alrimih" is used by "sbbidh".
-"ax-0id" is used by "addid1".
+"ax-0id" is used by "addrid".
 "ax-0lt1" is used by "0lt1".
 "ax-10o" is used by "ax10".
 "ax-1re" is used by "1re".
@@ -63,6 +69,7 @@
 "ax-addcom" is used by "addcom".
 "ax-addf" is used by "addcncntop".
 "ax-addf" is used by "addex".
+"ax-addf" is used by "cnfldadd".
 "ax-addf" is used by "cnfldplusf".
 "ax-addrcl" is used by "readdcl".
 "ax-arch" is used by "arch".
@@ -80,6 +87,7 @@
 "ax-mulass" is used by "mulass".
 "ax-mulcl" is used by "mulcl".
 "ax-mulcom" is used by "mulcom".
+"ax-mulf" is used by "cnfldmul".
 "ax-mulf" is used by "mulcncntop".
 "ax-mulf" is used by "mulex".
 "ax-mulrcl" is used by "remulcl".
@@ -139,13 +147,27 @@
 "csbco" is used by "fsum3".
 "csbco" is used by "fsumsplitf".
 "csbco" is used by "zsumdc".
+"dcan2" is used by "1arith".
+"dcan2" is used by "ctiunctlemudc".
+"dcan2" is used by "lgscllem".
+"dcan2" is used by "lgsdi".
+"dcan2" is used by "lgsdir".
+"dcan2" is used by "lgsne0".
+"dcan2" is used by "lgsneg".
+"dcan2" is used by "lgsval".
+"dcan2" is used by "nninfdclemp1".
+"dcan2" is used by "nninfsellemdc".
+"dcan2" is used by "pcmptdvds".
+"df-cnfld" is used by "cnfldbas".
+"df-cnfld" is used by "cnfldcj".
+"df-cnfld" is used by "cnfldds".
+"df-cnfld" is used by "cnfldle".
+"df-cnfld" is used by "cnfldstr".
+"df-cnfld" is used by "cnfldtset".
+"df-cnfld" is used by "mpocnfldadd".
+"df-cnfld" is used by "mpocnfldmul".
 "df-div" is used by "divfnzn".
 "df-div" is used by "divvalap".
-"df-icnfld" is used by "cnfldadd".
-"df-icnfld" is used by "cnfldbas".
-"df-icnfld" is used by "cnfldcj".
-"df-icnfld" is used by "cnfldmul".
-"df-icnfld" is used by "cnfldstr".
 "df-ilim" is used by "dflim2".
 "df-inn" is used by "dfnn2".
 "df-iom" is used by "dfom3".
@@ -196,6 +218,12 @@
 "imasival" is used by "imasmulr".
 "imasival" is used by "imasplusg".
 "infnninfOLD" is used by "fxnn0nninf".
+"islssmg" is used by "islss4".
+"islssmg" is used by "islssmd".
+"islssmg" is used by "lss0cl".
+"islssmg" is used by "lssclg".
+"islssmg" is used by "lsspropdg".
+"islssmg" is used by "lssssg".
 "mo3h" is used by "mo2dc".
 "mo3h" is used by "mo3".
 "mo3h" is used by "mo4f".
@@ -306,6 +334,7 @@
 "strnfvn" is used by "ndxarg".
 "strnfvn" is used by "strsl0".
 "unifndx" is used by "basendxltunifndx".
+"unifndx" is used by "cnfldstr".
 "unifndx" is used by "slotsdifunifndx".
 "unifndx" is used by "unifndxnn".
 "unifndx" is used by "unifndxntsetndx".
@@ -317,7 +346,7 @@ New usage of "19.41h" is discouraged (5 uses).
 New usage of "19.42h" is discouraged (1 uses).
 New usage of "19.9hd" is discouraged (2 uses).
 New usage of "2logb9irrALT" is discouraged (0 uses).
-New usage of "4syl" is discouraged (17 uses).
+New usage of "4syl" is discouraged (23 uses).
 New usage of "a1ii" is discouraged (0 uses).
 New usage of "a9evsep" is discouraged (1 uses).
 New usage of "addmodlteqALT" is discouraged (0 uses).
@@ -331,7 +360,7 @@ New usage of "ax-1re" is discouraged (1 uses).
 New usage of "ax-addass" is discouraged (1 uses).
 New usage of "ax-addcl" is discouraged (1 uses).
 New usage of "ax-addcom" is discouraged (1 uses).
-New usage of "ax-addf" is discouraged (3 uses).
+New usage of "ax-addf" is discouraged (4 uses).
 New usage of "ax-addrcl" is discouraged (1 uses).
 New usage of "ax-arch" is discouraged (1 uses).
 New usage of "ax-caucvg" is discouraged (1 uses).
@@ -347,7 +376,7 @@ New usage of "ax-io" is discouraged (1 uses).
 New usage of "ax-mulass" is discouraged (1 uses).
 New usage of "ax-mulcl" is discouraged (1 uses).
 New usage of "ax-mulcom" is discouraged (1 uses).
-New usage of "ax-mulf" is discouraged (2 uses).
+New usage of "ax-mulf" is discouraged (3 uses).
 New usage of "ax-mulrcl" is discouraged (1 uses).
 New usage of "ax0id" is discouraged (0 uses).
 New usage of "ax0lt1" is discouraged (0 uses).
@@ -409,11 +438,12 @@ New usage of "cnm" is discouraged (2 uses).
 New usage of "condcOLD" is discouraged (0 uses).
 New usage of "conventions" is discouraged (0 uses).
 New usage of "csbco" is discouraged (5 uses).
+New usage of "dcan2" is discouraged (11 uses).
 New usage of "dcapnconstALT" is discouraged (0 uses).
 New usage of "dcnnOLD" is discouraged (0 uses).
 New usage of "demoivreALT" is discouraged (0 uses).
+New usage of "df-cnfld" is discouraged (8 uses).
 New usage of "df-div" is discouraged (2 uses).
-New usage of "df-icnfld" is discouraged (5 uses).
 New usage of "df-ilim" is discouraged (1 uses).
 New usage of "df-inn" is discouraged (1 uses).
 New usage of "df-iom" is discouraged (1 uses).
@@ -438,6 +468,7 @@ New usage of "idALT" is discouraged (0 uses).
 New usage of "idi" is discouraged (0 uses).
 New usage of "imasival" is discouraged (3 uses).
 New usage of "infnninfOLD" is discouraged (1 uses).
+New usage of "islssmg" is discouraged (6 uses).
 New usage of "mathbox" is discouraged (0 uses).
 New usage of "mo3h" is discouraged (7 uses).
 New usage of "nfraldxy" is discouraged (3 uses).
@@ -472,7 +503,7 @@ New usage of "stoic2b" is discouraged (0 uses).
 New usage of "strcollnfALT" is discouraged (0 uses).
 New usage of "strnfvn" is discouraged (3 uses).
 New usage of "tfri1dALT" is discouraged (0 uses).
-New usage of "unifndx" is discouraged (4 uses).
+New usage of "unifndx" is discouraged (5 uses).
 New usage of "uzind4ALT" is discouraged (0 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
 Proof modification of "0cnALT" is discouraged (49 steps).
@@ -583,7 +614,7 @@ Proof modification of "findset" is discouraged (96 steps).
 Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "idALT" is discouraged (26 steps).
 Proof modification of "idi" is discouraged (1 steps).
-Proof modification of "idref" is discouraged (94 steps).
+Proof modification of "idref" is discouraged (97 steps).
 Proof modification of "infnninfOLD" is discouraged (127 steps).
 Proof modification of "nn0ge2m1nnALT" is discouraged (48 steps).
 Proof modification of "nnindALT" is discouraged (15 steps).

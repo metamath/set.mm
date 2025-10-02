@@ -63328,13 +63328,12 @@ htmldef "[." as
   /* althtmldef "[." as '&#x298F;'; */   /* corner tick */
   /* U+0323 COMBINING DOT BELOW (HTML &#803;) */
   althtmldef "[." as '[&#803;';
-  /* \underaccent is in accents package */
-  latexdef "[." as "\underaccent{\dot}{[}";
+  latexdef "[." as "\text{\d{[}}";
 htmldef "]." as
     "<IMG SRC='_drbrack.gif' WIDTH=5 HEIGHT=19 ALT=' ].' TITLE='].'>";
   /* althtmldef "]." as '&#x298E;'; */   /* corner tick */
   althtmldef "]." as ']&#803;';
-  latexdef "]." as "\underaccent{\dot}{]}";
+  latexdef "]." as "\text{\d{]}}";
 htmldef
     "[_" as "<IMG SRC='_ulbrack.gif' WIDTH=6 HEIGHT=19 TITLE='[_' ALIGN=TOP>";
   althtmldef "[_" as '<U>[</U>'; /* &lsqb; */
