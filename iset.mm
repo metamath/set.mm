@@ -55787,6 +55787,24 @@ $)
   $}
 
   ${
+    $d ph c d $.  $d C c d $.  $d A a b c d $.  $d B a b c d $.
+    fvmpopr2d.1 $e |- ( ph -> F = ( a e. A , b e. B |-> C ) ) $.
+    fvmpopr2d.2 $e |- ( ph -> P = <. a , b >. ) $.
+    fvmpopr2d.3 $e |- ( ( ph /\ a e. A /\ b e. B ) -> C e. V ) $.
+    $( Value of an operation given by maps-to notation.  (Contributed by Rohan
+       Ridenour, 14-May-2024.) $)
+    fvmpopr2d $p |- ( ( ph /\ a e. A /\ b e. B ) -> ( F ` P ) = C ) $=
+      ( vc vd cv wcel cmpo co wceq nfcv w3a cfv cop fveq12d eqtr4id csb nfcsb1v
+      df-ov 3ad2ant1 nfcsbw csbeq1a sylan9eq cbvmpo oveqi equcom anbi12i sylbir
+      eqidd wa eqcomd adantl simp2 simp3 ovmpod eqtrid eqtr3d ) AHOZBPZIOZCPZUA
+      ZVGVIHIBCDQZRZEFUBZDVKVMVGVIUCZVLUBVNVGVIVLUHVKEVOFVLAVHFVLSVJJUIAVHEVOSV
+      JKUIUDUEVKVMVGVIMNBCINOZHMOZDUFZUFZQZRDVLVTVGVIHIMNBCDVSMDTNDTHIVPVRHVPTH
+      VQDUGUJIVPVRUGVGVQSZVIVPSZDVRVSHVQDUKIVPVRUKULZUMUNVKMNVGVIBCVSDVTGVKVTUR
+      VQVGSZVPVISZUSZVSDSVKWFDVSWFWAWBUSDVSSWAWDWBWEHMUOINUOUPWCUQUTVAAVHVJVBAV
+      HVJVCLVDVEVF $.
+  $}
+
+  ${
     $d f u v w x y z A $.  $d f u v w x y z B $.  $d x y z R $.
     $d f u v w y z C $.  $d f u v w y z D $.  $d f u v w x y z H $.
     $d f u v w z S $.
@@ -175125,15 +175143,44 @@ $)
   $}
 
   ${
+    $d a b c u v w z d e J $.  $d a b c d e u v x y z w $.
+    mpomulcn.j $e |- J = ( TopOpen ` CCfld ) $.
+    $( Complex number multiplication is a continuous function.  (Contributed by
+       GG, 16-Mar-2025.) $)
+    mpomulcn $p |- ( x e. CC , y e. CC |-> ( x x. y ) ) e.
+                                                         ( ( J tX J ) Cn J ) $=
+      ( vz vw vv vu cc cv cmul co crp wcel cmin cabs cfv clt wa wceq va vb cmpo
+      vc vd ve cnfldtopn mpomulf w3a wbr wi wral mulcn2 simplr simplll fvoveq1d
+      wrex breq1d simpr anbi12d eqcomd oveq12d cop wtru tru oveq1 oveq2 cbvmpov
+      a1i eqidd mulcl 3adant1 fvmpopr2d mp3an1 eqtr4di syl2an2r eqtr3d adantllr
+      df-ov eqtr2id ad3antlr fveq2d imbi12d rspcdv rspcimdv expimpd ex ralrimdv
+      com13 reximdv mpd addcncntoplem ) EFGHABIIAJZBJZKLZUCZCUAUBUDCDUGABUHUAJZ
+      MNZUBJZINZUDJZINZUIZUEJZWSOLPQZEJZRUJZUFJZXAOLPQZFJZRUJZSZXDXHKLZWSXAKLZO
+      LZPQZWQRUJZUKZUFIULZUEIULZFMUQZEMUQHJZWSOLPQZXFRUJZGJZXAOLPQZXJRUJZSZYBYE
+      WPLZWSXAWPLZOLZPQZWQRUJZUKZGIULZHIULZFMUQZEMUQEFUFUEWQWSXAUMXCYAYQEMXCXTY
+      PFMXCXTYOHIXCXTYBINZYOUKXCXTSZYRYNGIYEINZYRYSYNYTYRYSYNUKYTYRSZXCXTYNUUAX
+      CSZXSYNUEYBIYTYRXCUNUUBXDYBTZSZXRYNUFYEIYTYRXCUUCUOUUDXHYETZSZXLYHXQYMUUF
+      XGYDXKYGUUFXEYCXFRUUFXDYBWSPOUUBUUCUUEUNUPURUUFXIYFXJRUUFXHYEXAPOUUDUUEUS
+      UPURUTUUFXPYLWQRUUFXOYKPUUFXMYIXNYJOUUAUUCUUEXMYITXCUUAUUCSZUUESZYBYEKLZX
+      MYIUUHYBXDYEXHKUUHXDYBUUAUUCUUEUNVAUUHXHYEUUGUUEUSVAVBUUGYRUUEYTUUIYITYTY
+      RUUCUNYTYRUUCUUEUOYRYTSUUIYBYEVCZWPQZYIVDYRYTUUIUUKTVEVDYRYTUIUUKUUIVDIIU
+      UIUUJWPIHGWPHGIIUUIUCTVDABHGIIWOUUIYBWNKLWMYBWNKVFWNYEYBKVGVHVIVDUUJVJYRY
+      TUUIINVDYBYEVKVLVMVAVNYBYEWPVSVOVPVQVRXCXNYJTUUAUUCUUEXCYJWSXAVCZWPQXNWSX
+      AWPVSWRIIXNUULWPIUBUDWPUBUDIIXNUCTWRABUBUDIIWOXNWSWNKLWMWSWNKVFWNXAWSKVGV
+      HVIWRUULVJWTXBXNINWRWSXAVKVLVMVTWAVBWBURWCWDWEWFWGWIWHWGWHWJWJWKWL $.
+  $}
+
+  ${
     $d k u v w x y z A $.  $d k v w x y z J $.  $d k z L $.  $d k w x y z ph $.
     $d k v w x y z K $.  $d k u v w x y z X $.  $d k u v w x y z Y $.
     $d u v w z B $.
     fsumcncntop.3 $e |- K = ( MetOpen ` ( abs o. - ) ) $.
-    fsumcn.4 $e |- ( ph -> J e. ( TopOn ` X ) ) $.
-    fsumcn.5 $e |- ( ph -> A e. Fin ) $.
+    fsumcncntop.4 $e |- ( ph -> J e. ( TopOn ` X ) ) $.
+    fsumcncntop.5 $e |- ( ph -> A e. Fin ) $.
     ${
       $d y B $.
-      fsumcn.6 $e |- ( ( ph /\ k e. A ) -> ( x e. X |-> B ) e. ( J Cn K ) ) $.
+      fsumcncntop.6 $e |- ( ( ph /\ k e. A )
+        -> ( x e. X |-> B ) e. ( J Cn K ) ) $.
       $( A finite sum of functions to complex numbers from a common topological
          space is continuous.  The class expression for ` B ` normally contains
          free variables ` k ` and ` x ` to index it.  (Contributed by NM,
@@ -175169,6 +175216,46 @@ $)
         YLEBHUVFEHXIUWKYEXAUWLUWCUXAYLUWLBHDUVFUWMUIUKXCXDXSTGGYFUEGUDUEPUUTGIY
         BUQYCYDYGKYH $.
     $}
+  $}
+
+  ${
+    fsumcn.3 $e |- K = ( TopOpen ` CCfld ) $.
+    fsumcn.4 $e |- ( ph -> J e. ( TopOn ` X ) ) $.
+    fsumcn.5 $e |- ( ph -> A e. Fin ) $.
+    ${
+      $d A k x $.  $d J k x $.  $d K k x $.  $d X k x $.  $d k ph x $.
+      fsumcn.6 $e |- ( ( ph /\ k e. A ) -> ( x e. X |-> B ) e. ( J Cn K ) ) $.
+      $( A finite sum of functions to complex numbers from a common topological
+         space is continuous.  The class expression for ` B ` normally contains
+         free variables ` k ` and ` x ` to index it.  (Contributed by NM,
+         8-Aug-2007.)  (Revised by Mario Carneiro, 23-Aug-2014.) $)
+      fsumcn $p |- ( ph -> ( x e. X |-> sum_ k e. A B ) e. ( J Cn K ) ) $=
+        ( cnfldtopn fsumcncntop ) ABCDEFGHGIMJKLN $.
+    $}
+  $}
+
+  ${
+    $d x A $.  $d k n x u v J $.  $d n x N $.
+    expcn.j $e |- J = ( TopOpen ` CCfld ) $.
+    $( The power function on complex numbers, for fixed exponent ` N ` , is
+       continuous.  (Contributed by Mario Carneiro, 5-May-2014.)  (Revised by
+       Mario Carneiro, 23-Aug-2014.)  Avoid ~ ax-mulf .  (Revised by GG,
+       16-Mar-2025.) $)
+    expcn $p |- ( N e. NN0 -> ( x e. CC |-> ( x ^ N ) ) e. ( J Cn J ) ) $=
+      ( vn vu vv cc cv cexp co cmpt wcel cc0 c1 wceq oveq2 mpteq2dv eleq1d cmul
+      vk ccn caddc exp0 mpteq2ia wtru ctopon cfv cnfldtopon 1cnd cnmptc eqeltri
+      a1i mptru cn0 wa cmpo oveq1 cbvmptv simpl expp1 expcl mulcld eqid syl3anc
+      id ovmpog eqtr4d syl2anr mpteq2dva eqtrid simpr cnmptid mpomulcn cnmpt12f
+      eqeltrrid ctx eqeltrd ex nn0ind ) AHAIZEIZJKZLZBBUBKZMAHWANJKZLZWEMAHWAUA
+      IZJKZLZWEMZAHWAWHOUCKZJKZLZWEMZAHWACJKZLZWEMEUACWBNPZWDWGWEWRAHWCWFWBNWAJ
+      QRSWBWHPZWDWJWEWSAHWCWIWBWHWAJQRSWBWLPZWDWNWEWTAHWCWMWBWLWAJQRSWBCPZWDWQW
+      EXAAHWCWPWBCWAJQRSWGAHOLZWEAHWFOWAUDUEXBWEMUFAOBBHHBHUGUHMZUFBDUIZUMZXEUF
+      UJUKUNULWHUOMZWKWOXFWKUPZWNEHWBWHJKZWBFGHHFIZGIZTKZUQZKZLZWEXGWNEHWBWLJKZ
+      LXNAEHWMXOWAWBWLJURUSXGEHXOXMWBHMZXPXFXOXMPXGXPVFXFWKUTXPXFUPZXOXHWBTKZXM
+      WBWHVAXQXHHMXPXRHMXMXRPWBWHVBZXPXFUTZXQXHWBXSXTVCFGXHWBHHXKXRXLXHXJTKHXIX
+      HXJTURXJWBXHTQXLVDVGVEVHVIVJVKXGEXHWBXLBBBBHXCXGXDUMZXGEHXHLWJWEAEHWIXHWA
+      WBWHJURUSXFWKVLVPXGEBHYAVMXLBBVQKBUBKMXGFGBDVNUMVOVRVSVT $.
+    $( $j usage 'expcn' avoids 'ax-mulf'; $)
   $}
 
 
@@ -175525,13 +175612,22 @@ $)
   $}
 
   ${
-    cncfcn1.1 $e |- J = ( MetOpen ` ( abs o. - ) ) $.
+    cncfcn1cntop.1 $e |- J = ( MetOpen ` ( abs o. - ) ) $.
     $( Relate complex function continuity to topological continuity.
        (Contributed by Paul Chapman, 28-Nov-2007.)  (Revised by Mario Carneiro,
        7-Sep-2015.)  (Revised by Jim Kingdon, 16-Jun-2023.) $)
     cncfcn1cntop $p |- ( CC -cn-> CC ) = ( J Cn J ) $=
       ( cc wss ccncf co ccn wceq ssid cntoptopon toponrestid cncfcncntop mp2an
       ) CCDZNCCEFAAGFHCIZOCCAAABACABJKZPLM $.
+  $}
+
+  ${
+    cncfcn1.1 $e |- J = ( TopOpen ` CCfld ) $.
+    $( Relate complex function continuity to topological continuity.
+       (Contributed by Paul Chapman, 28-Nov-2007.)  (Revised by Mario Carneiro,
+       7-Sep-2015.) $)
+    cncfcn1 $p |- ( CC -cn-> CC ) = ( J Cn J ) $=
+      ( cnfldtopn cncfcn1cntop ) AABCD $.
   $}
 
   ${
@@ -179447,6 +179543,26 @@ $)
       UUSCUVSUUSUIUVTUVICUVSUUSSWAXCXDXEUVPUVRWSAUVPUVRUVIMUIZUVPUVIMSPMUVPUUSM
       SUUSMXFXGXHWGZUVPUVILRUVRUWBXIUVPUVIMLUWCWPXJUVIMLXKXEXLVEXMUUSCYOXSUVICY
       OXSXNXOXPXQXRXQCXTYAYBYCXP $.
+  $}
+
+  ${
+    $d F a d k z $.  $d F a k u v z $.  $d S a d k z $.
+    $( A polynomial is a continuous function.  (Contributed by Mario Carneiro,
+       23-Jul-2014.)  Avoid ~ ax-mulf .  (Revised by GG, 16-Mar-2025.) $)
+    plycn $p |- ( F e. ( Poly ` S ) -> F e. ( CC -cn-> CC ) ) $=
+      ( vz vd vk va vu vv cfv wcel cc cc0 cv co cmul cmpt cn0 wa a1i adantr cfz
+      cply cexp csu wceq csn cun cmap wrex ccncf wss elply simprbi ccnfld ctopn
+      ccn simpr eqid ctopon cnfldtopon 0zd simprl nn0zd fzfigd wf elmapi plybss
+      ad2antll 0cnd snssd unssd fssd elfznn0 adantl ffvelcdmd cnmptc expcn cmpo
+      syl ctx oveq12 cnmpt12 fsumcn eqeltrd cncfcn1 eleqtrrdi ex rexlimdvva mpd
+      mpomulcn ) BAUBIJZBCKLDMZUANZEMZFMZIZCMWNUCNZONZEUDPZUEZFALUFZUGZQUHNZUID
+      QUIZBKKUJNZJZWKAKUKZXDCAEDBFULUMWKWTXFDFQXCWKWLQJZWOXCJZRZRZWTXFXKWTRZBUN
+      UOIZXMUPNZXEXLBWSXNXKWTUQXKWSXNJWTXKCWMWREXMXMKXMURZXMKUSIJZXKXMXOUTZSXKL
+      WLXKVAXKWLWKXHXIVBVCVDXKWNWMJZRZCGHWPWQGMZHMZONZWRXMXMXMXMKKKXPXSXQSZXSCW
+      PXMXMKKYCYCXSQKWNWOXKQKWOVEXRXKQXBKWOXIQXBWOVEWKXHWOXBQVFVHXKAXAKWKXGXJAB
+      VGTXKLKXKVIVJVKVLTXRWNQJZXKWNWLVMVNZVOVPXSYDCKWQPXNJYECXMWNXOVQVSYCYCGHKK
+      YBVRXMXMVTNXMUPNJXSGHXMXOWJSXTWPYAWQOWAWBWCTWDXMXOWEWFWGWHWI $.
+    $( $j usage 'plycn' avoids 'ax-mulf'; $)
   $}
 
   ${
