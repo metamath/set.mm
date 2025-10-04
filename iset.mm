@@ -178028,6 +178028,35 @@ $)
   $}
 
   ${
+    $d B x z $.  $d F w x z $.  $d ph x z $.
+    dvidrelem.1 $e |- ( ph -> F : RR --> CC ) $.
+    dvidrelem.2 $e |- ( ( ph /\ ( x e. RR /\ z e. RR /\ z =//= x ) ) ->
+                  ( ( ( F ` z ) - ( F ` x ) ) / ( z - x ) ) = B ) $.
+    dvidrelem.3 $e |- B e. CC $.
+    $( Analogue of ~ dvidlemap for real numbers rather than complex numbers.
+       (Contributed by Jim Kingdon, 3-Oct-2025.) $)
+    dvidrelem $p |- ( ph -> ( RR _D F ) = ( RR X. { B } ) ) $=
+      ( vw cr co cc wf wcel wss ax-resscn a1i cfv climc wceq cdv csn reex dvfpm
+      cxp cdm cpm cnex fpm syl ssidd dvbss cv wa wrel wbr reldvg syl2anc adantr
+      cioo crn ctg cnt cap crab cmin cdiv cmpt simpr ctop retop uniretop ntrtop
+      ax-mp eleqtrrdi cres limcresi ccncf cncfmptc eqidd cnmptlimc sselid breq1
+      mp3an12i elrab 3exp2 imp43 sylan2b mpteq2dva ssrab2 resmpt eqtr4di oveq1d
+      eleqtrrd cabs ccom cmopn eqid tgioo2cntop mpbir2and releldm eqelssd feq2d
+      eldvap mpbid ffnd wfn fnconstg mp1i ffund funbrfvb mpbird fvconst2g sylan
+      wfun wb eqtr4d eqfnfvd ) ABJJEUAKZJDUBUEZAJLXSAXSUFZLXSMZJLXSMAELJUGKNZYB
+      AJLEMZYCFJLEUCUHUIUJZEUDUJZAYAJLXSABYAJAJJEJLOZAPQZFAJUKULABUMZJNZUNZXSUO
+      ZYIDXSUPZYIYANZAYLYJAYGYCYLYHYEJEUQURUSYKYMYIJUTVAVBRZVCRRZNDCIUMZYIVDUPZ
+      IJVEZCUMZERYIERVFKYTYIVFKVGKZVHZYISKZNYKYIJYPAYJVIZYOVJNYPJTVKYOJVLVMVNVO
+      YKDCJDVHZYSVPZYISKZUUCYKUUEYISKUUGDYIYSUUEVQYKCJYILDDDLNZYGYKLLOUUEJLVRKN
+      HPYKLUKCDJLVSWDUUDYTYITDVTWAWBYKUUBUUFYISYKUUBCYSDVHZUUFYKCYSUUADYTYSNYKY
+      TJNZYTYIVDUPZUNUUADTZYRUUKIYTJYQYTYIVDWCWEAYJUUJUUKUULAYJUUJUUKUULGWFWGWH
+      WIYSJOUUFUUITYRIJWJCJYSDWKVNWLWMWNYKCIJYIDJYOEUUBWOVFWPWQRZUUMUUMWRZWSUUN
+      UUBWRYGYKPQAYDYJFUSYKJUKXDWTZYIDXSXAURZXBXCXEXFUUHXTJXGAHJDLXHXIYKYIXSRZD
+      YIXTRZYKUUQDTZYMUUOYKXSXOYNUUSYMXPYKYALXSAYBYJYFUSXJUUPYIDXSXKURXLAUUHYJU
+      URDTUUHAHQJDYILXMXNXQXR $.
+  $}
+
+  ${
     $d x z A $.
     $( Derivative of a constant function.  (Contributed by Mario Carneiro,
        8-Aug-2014.)  (Revised by Jim Kingdon, 2-Aug-2023.) $)
