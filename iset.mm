@@ -178645,7 +178645,7 @@ $)
 
   ${
     $d A x $.
-    dvmptc.2 $e |- ( ph -> A e. CC ) $.
+    dvmptccn.2 $e |- ( ph -> A e. CC ) $.
     $( Function-builder for derivative: derivative of a constant.  (Contributed
        by Mario Carneiro, 1-Sep-2014.)  (Revised by Jim Kingdon,
        30-Dec-2023.) $)
@@ -178666,6 +178666,18 @@ $)
       elpri eqtrdi eqtrid ) ACBCBEFZGHCICJZGHZBCKFZUPUQCGUQUPBCUAUBUCAURCKUDZLZ
       USACMNUEUFCMOZCNOZUGURVAOZDCMNUMVBVDVCVBMIMJZGHMUTLURVAUHVBCMUQVEGVBTCMIP
       QCMUTRSVCNINJZGHNUTLURVAUIVCCNUQVFGVCTCNIPQCNUTRSUJUKBCKULUNUO $.
+
+    dvmptc.2 $e |- ( ph -> A e. CC ) $.
+    $( Function-builder for derivative: derivative of a constant.  (Contributed
+       by Mario Carneiro, 1-Sep-2014.)  (Revised by Mario Carneiro,
+       11-Feb-2015.) $)
+    dvmptc $p |- ( ph -> ( S _D ( x e. S |-> A ) ) = ( x e. S |-> 0 ) ) $=
+      ( csn cxp cdv co cc0 cmpt cr wceq cc wa wcel syl adantr xpeq1d oveq12d wo
+      dvconstre simpr 3eqtr4d dvconst elpri mpjaodan fconstmpt oveq2i 3eqtr3g
+      cpr ) ADDCGZHZIJZDKGZHZDBDCLZIJBDKLADMNZUOUQNDONZAUSPZMMUMHZIJZMUPHZUOUQA
+      VCVDNZUSACOQZVEFCUCRSVADMUNVBIAUSUDZVADMUMVGTUAVADMUPVGTUEAUTPZOOUMHZIJZO
+      UPHZUOUQAVJVKNZUTAVFVLFCUFRSVHDOUNVIIAUTUDZVHDOUMVMTUAVHDOUPVMTUEADMOULQU
+      SUTUBEDMOUGRUHUNURDIBDCUIUJBDKUIUK $.
   $}
 
   ${
