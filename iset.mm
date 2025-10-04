@@ -178080,6 +178080,21 @@ $)
   $}
 
   ${
+    $d x z A $.
+    $( Real derivative of a constant function.  (Contributed by Jim Kingdon,
+       3-Oct-2025.) $)
+    dvconstre $p |- ( A e. CC
+        -> ( RR _D ( RR X. { A } ) ) = ( RR X. { 0 } ) ) $=
+      ( vx vz cc wcel cc0 cr csn cxp fconst6g cv cap cfv cmin co cdiv fvconst2g
+      wceq eqtrd recnd wbr w3a wa simpr2 syldan 3ad2antr1 oveq12d adantr oveq1d
+      subid simpr1 subcld simpr3 subap0d div0apd 0cn dvidrelem ) ADEZBCFGAHIZGA
+      DJURBKZGEZCKZGEZVBUTLUAZUBZUCZVBUSMZUTUSMZNOZVBUTNOZPOFVJPOFVFVIFVJPVFVIA
+      ANOZFVFVGAVHANURVEVCVGARURVAVCVDUDZGAVBDQUEURVCVAVHARVDGAUTDQUFUGURVKFRVE
+      AUJUHSUIVFVJVFVBUTVFVBVLTZVFUTURVAVCVDUKTZULVFVBUTVMVNURVAVCVDUMUNUOSUPUQ
+      $.
+  $}
+
+  ${
     $d y z w A $.  $d y z w B $.  $d y z w F $.  $d y z K $.  $d y z w S $.
     $d y z J $.
     dvcnp.j $e |- J = ( K |`t A ) $.
