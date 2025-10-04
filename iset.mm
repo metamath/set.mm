@@ -178092,6 +178092,17 @@ $)
       ANOZFVFVGAVHANURVEVCVGARURVAVCVDUDZGAVBDQUEURVCVAVHARVDGAUTDQUFUGURVKFRVE
       AUJUHSUIVFVJVFVBUTVFVBVLTZVFUTURVAVCVDUKTZULVFVBUTVMVNURVAVCVDUMUNUOSUPUQ
       $.
+
+    $( Real derivative of the identity function.  (Contributed by Jim Kingdon,
+       3-Oct-2025.) $)
+    dvidre $p |- ( RR _D ( _I |` RR ) ) = ( RR X. { 1 } ) $=
+      ( vx vz cr cid cres cdv co c1 csn cxp wceq wtru cc wf1o cv wcel cfv recnd
+      cmin fvresi f1oi f1of mp1i wss ax-resscn a1i fssd cap wbr w3a simp2 simp1
+      cdiv subcld subap0d oveqan12rd 3adant3 diveqap1bd adantl ax-1cn dvidrelem
+      wf simp3 mptru ) CDCEZFGCHIJKLABHVELCCMVECCVENCCVEVBLCUACCVEUBUCCMUDLUEUF
+      UGAOZCPZBOZCPZVHVFUHUIZUJZVHVEQZVFVEQZSGZVHVFSGZUMGHKLVKVNVOVKVHVFVKVHVGV
+      IVJUKRZVKVFVGVIVJULRZUNVKVHVFVPVQVGVIVJVCUOVGVIVNVOKVJVIVGVLVHVMVFSCVHTCV
+      FTUPUQURUSUTVAVD $.
   $}
 
   ${
