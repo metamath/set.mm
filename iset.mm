@@ -178655,6 +178655,20 @@ $)
   $}
 
   ${
+    $d x A $.  $d x ph $.  $d x S $.
+    dvmptid.1 $e |- ( ph -> S e. { RR , CC } ) $.
+    $( Function-builder for derivative: derivative of the identity.
+       (Contributed by Mario Carneiro, 1-Sep-2014.)  (Revised by Mario
+       Carneiro, 11-Feb-2015.) $)
+    dvmptid $p |- ( ph -> ( S _D ( x e. S |-> x ) ) = ( x e. S |-> 1 ) ) $=
+      ( cv cmpt cdv co cid cres c1 cxp cr cc wceq reseq2 oveq12d xpeq1 3eqtr4a
+      id mptresid eqcomi oveq2i csn cpr wcel wo dvidre dvid jaoi 3syl fconstmpt
+      elpri eqtrdi eqtrid ) ACBCBEFZGHCICJZGHZBCKFZUPUQCGUQUPBCUAUBUCAURCKUDZLZ
+      USACMNUEUFCMOZCNOZUGURVAOZDCMNUMVBVDVCVBMIMJZGHMUTLURVAUHVBCMUQVEGVBTCMIP
+      QCMUTRSVCNINJZGHNUTLURVAUIVCCNUQVFGVCTCNIPQCNUTRSUJUKBCKULUNUO $.
+  $}
+
+  ${
     $d x ph $.  $d x S $.  $d x V $.  $d x W $.  $d x X $.  $d x Y $.
     $d x Z $.
     dvmptadd.s $e |- ( ph -> S e. { RR , CC } ) $.
