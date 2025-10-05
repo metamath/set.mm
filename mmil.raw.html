@@ -2526,6 +2526,11 @@ A either - there are singletons at every rank.</P>
   <TD>~ opm , ~ opnzi</TD>
 </TR>
 
+<tr>
+  <td>opabn0</td>
+  <td>~ opabm</td>
+</tr>
+
 <TR>
 <TD>df-so</TD>
 <TD>~ df-iso </TD>
@@ -3447,6 +3452,12 @@ operation, as these are just a few examples).</TD>
 in set.mm, and in iset.mm those places need the modified form
 found in ~ ovi3 .</TD>
 </TR>
+
+<tr>
+  <td>ovmpot</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses ovex</td>
+</tr>
 
 <TR>
 <TD>oprssdm</TD>
@@ -12491,14 +12502,9 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>df-cnfld</td>
-  <td>~ df-icnfld</td>
-</tr>
-
-<tr>
-  <td>cnfldtset , cnfldle , cnfldds , cnfldunif</td>
+  <td>cnfldunif</td>
   <td><i>none</i></td>
-  <td>we do not currently define these slots in ` CCfld `</td>
+  <td>should be provable as the slot is now in ` CCfld `</td>
 </tr>
 
 <tr>
@@ -13638,34 +13644,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>cnfldtopn</td>
-  <td><i>none</i></td>
-  <td>if we continue to use ` ( MetOpen `` ( abs o. - ) ) ` as
-  our notation for the topology of the complex numbers, this
-  theorem is not needed</td>
-</tr>
-
-<tr>
-  <td>cnfldtopon</td>
-  <td>~ cntoptopon</td>
-</tr>
-
-<tr>
-  <td>cnfldtop</td>
-  <td>~ cntoptop</td>
-</tr>
-
-<tr>
-  <td>unicntop</td>
-  <td>~ unicntopcntop</td>
-</tr>
-
-<tr>
-  <td>cnopn</td>
-  <td>~ cnopncntop</td>
-</tr>
-
-<tr>
   <td>qdensere2</td>
   <td><i>none</i></td>
   <td>the set.mm proof depends on qdensere</td>
@@ -13677,16 +13655,6 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>presumably provable for either the ` T = 0 ` case or the
   ` T e. ( 0 (,] 1 ) ` case; set.mm uses excluded middle to
   combine those two cases</td>
-</tr>
-
-<tr>
-  <td>tgioo2</td>
-  <td>~ tgioo2cntop</td>
-</tr>
-
-<tr>
-  <td>rerest</td>
-  <td>~ rerestcntop</td>
 </tr>
 
 <tr>
@@ -13819,14 +13787,9 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>fsumcn</td>
-  <td>~ fsumcncntop</td>
-</tr>
-
-<tr>
   <td>fsum2cn</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses fsumcn</td>
+  <td>may be possible now that we have ~ fsumcn</td>
 </tr>
 
 <tr>
@@ -13856,11 +13819,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>cncfcn</td>
   <td>~ cncfcncntop</td>
-</tr>
-
-<tr>
-  <td>cncfcn1</td>
-  <td>~ cncfcn1cntop</td>
 </tr>
 
 <tr>
@@ -14426,6 +14384,25 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>may be feasible once we have Poly1 and related definitions
   and theorems</td>
+</tr>
+
+<tr>
+  <td>coecj</td>
+  <td>~ plycjlemc</td>
+  <td>the key difference between coecj and plycjlemc is that the latter
+  specifies coefficients explicitly</td>
+</tr>
+
+<tr>
+  <td>plymul0or</td>
+  <td><i>none</i></td>
+  <td>presumably not possible for reasons analogous to mul0ord</td>
+</tr>
+
+<tr>
+  <td>ofmulrt</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses mul0ord</td>
 </tr>
 
 <tr>
@@ -15275,35 +15252,9 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>lgsquad including lemmas</td>
-  <td><i>none</i></td>
-  <td>apparently provable and we have a start
-  at ~ lgsquadlem1</td>
-</tr>
-
-<tr>
-  <td>lgsquad2 including lemmas</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses lgsquad</td>
-</tr>
-
-<tr>
-  <td>lgsquad3</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses lgsquad2 and also needs a closer look
-  at the use of excluded middle</td>
-</tr>
-
-<tr>
-  <td>2lgs and lemmas</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses, at least, gausslemma2d</td>
-</tr>
-
-<tr>
   <td>2lgsoddprm</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses 2lgs</td>
+  <td>should be feasible now that we have ~ 2lgs</td>
 </tr>
 
 <tr>
@@ -15376,12 +15327,6 @@ proved in set.mm but not iset.mm:</p>
   <tr>
     <td>5.  The Prime Number Theorem</td>
     <td>The set.mm proof uses df-rlim .</td>
-  </tr>
-
-  <tr>
-    <td>7.  Law of Quadratic Reciprocity</td>
-    <td>Apparently provable and we have a start
-    at ~ lgsquadlem1 </td>
   </tr>
 
   <tr>
