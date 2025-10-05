@@ -92,6 +92,62 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 1-Oct-25 inindif   [same]      Moved from TA's mathbox to main set.mm
+23-Sep-25 coecj     [same]      Removed unneeded hypothesis
+23-Sep-25 plycj     [same]      Removed unneeded hypothesis
+23-Sep-25 elfzolem1 [same]      moved from GS's mathbox to main set.mm
+22-Sep-25 oduprs    [same]      Moved from TA's mathbox to main set.mm
+17-Sep-25 psdmul    [same]      Removed unneeded hypothesis
+17-Sep-25 psdvsca   [same]      Removed unneeded hypothesis
+17-Sep-25 psdadd    [same]      Removed unneeded hypothesis
+17-Sep-25 psdmplcl  [same]      Removed unneeded hypothesis
+17-Sep-25 psdcl     [same]      Removed unneeded hypothesis
+17-Sep-25 psdcoef   [same]      Removed unneeded hypotheses
+17-Sep-25 psdval    [same]      Removed unneeded hypotheses
+16-Sep-25 ismhp3    [same]      Removed unneeded hypotheses
+16-Sep-25 ismhp2    [same]      Removed unneeded hypotheses
+16-Sep-25 ismhp     [same]      Removed unneeded hypotheses
+16-Sep-25 selvval   [same]      Removed unneeded hypotheses
+16-Sep-25 mplelsfi  [same]      Removed unused hypothesis
+16-Sep-25 reueqdv   [same]      Moved from GG's mathbox to main set.mm
+11-Sep-25 cascl     [same]      revised - algSc may be non-injective
+10-Sep-25 soeq12d   [same]      Moved from SO's mathbox to main set.mm
+10-Sep-25 freq12d   [same]      Moved from SO's mathbox to main set.mm
+10-Sep-25 weeq12d   [same]      Moved from SO's mathbox to main set.mm
+ 9-Sep-25 5rp       [same]      moved from SN's mathbox to main set.mm
+ 8-Sep-25 mvrladdi  [same]      moved from DAW's mathbox to main set.mm
+ 8-Sep-25 comraddi  [same]      moved from DAW's mathbox to main set.mm
+ 8-Sep-25 zltlem1d  [same]      Moved from MKU's mathbox to main set.mm
+ 4-Sep-25 mhphf4    [same]      Removed unneeded hypotheses
+ 4-Sep-25 mhphf3    [same]      Removed unneeded hypotheses
+ 4-Sep-25 mhphf     [same]      Removed unneeded hypotheses
+ 4-Sep-25 evlsmhpvvval [same]   Removed unneeded hypotheses
+ 4-Sep-25 mhpind    [same]      Removed unneeded hypotheses
+ 4-Sep-25 mhpvscacl [same]      Removed NN0 hypothesis
+ 4-Sep-25 mhpinvcl  [same]      Removed NN0 hypothesis
+ 4-Sep-25 mhpaddcl  [same]      Removed NN0 hypothesis
+ 4-Sep-25 mhppwdeg  [same]      Removed NN0 hypothesis
+ 4-Sep-25 mhpmulcl  [same]      Removed NN0 hypotheses
+ 4-Sep-25 mhpdeg    [same]      Removed unneeded hypotheses
+ 4-Sep-25 mhpmpl    [same]      Removed unneeded hypotheses
+24-Aug-25 elrab2w   [same]      Moved from SN's mathbox to main set.mm
+24-Aug-25 elab2gw   [same]      Moved from SN's mathbox to main set.mm
+24-Aug-25 elabgw    [same]      Moved from SN's mathbox to main set.mm
+24-Aug-25 3rspcedvdw [same]     Moved from SN's mathbox to main set.mm
+24-Aug-25 fimarab   [same]      Moved from TA's mathbox to main set.mm
+20-Aug-25 naddsuc2  [same]      Moved from RP's mathbox to main set.mm
+18-Aug-25 cbvsumi   ---         deleted - redundant with cbvsum
+18-Aug-25 cbvsum    [same]      Removed unneeded hypotheses
+17-Aug-25 bj-denotes iseqsetv-clel Moved from BJ's mathbox to main
+17-Aug-25 bj-issettru issettru  Moved from BJ's mathbox to main set.mm
+10-Aug-25 bj-biorfi biorfi      Moved from BJ's mathbox to main set.mm
+10-Aug-25 biorfi    biorfri
+10-Aug-25 bj-pm2.01i pm2.01i    Moved from BJ's mathbox to main set.mm
+10-Aug-25 eqrrabd   [same]      Moved from TA's mathbox to main set.mm
+10-Aug-25 el3v      [same]      Moved from PM's mathbox to main set.mm
+ 9-Aug-25 frobrhm   [same]      Moved from TA's mathbox to main set.mm
+ 7-Aug-25 s3rn      [same]      Moved from TA's mathbox to main set.mm
+ 7-Aug-25 s2rn      [same]      Moved from TA's mathbox to main set.mm
 28-Jul-25 spcimgft  spcimgfi1   Is a kind of inference form
 27-Jul-25 fnimatp   fnimatpd    Moved from TA's mathbox to main set.mm
 25-Jul-25 alcomiw   alcomimw    Consistent with excomimw, excomim
