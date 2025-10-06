@@ -178057,6 +178057,43 @@ $)
   $}
 
   ${
+    $d x z B $.  $d x z w F $.  $d x z ph $.  $d S w x z $.  $d X w x z $.
+    dvidsslem.s $e |- ( ph -> S e. { RR , CC } ) $.
+    dvidsslem.j $e |- J = ( K |`t S ) $.
+    dvidsslem.k $e |- K = ( MetOpen ` ( abs o. - ) ) $.
+    dvidsslem.1 $e |- ( ph -> F : X --> CC ) $.
+    dvidsslem.x $e |- ( ph -> X e. J ) $.
+    dvidsslem.2 $e |- ( ( ph /\ ( x e. X /\ z e. X /\ z =//= x ) ) ->
+                  ( ( ( F ` z ) - ( F ` x ) ) / ( z - x ) ) = B ) $.
+    dvidsslem.3 $e |- B e. CC $.
+    $( Analogue of ~ dvidlemap where ` F ` is defined on an open subset of the
+       real or complex numbers.  (Contributed by Jim Kingdon, 3-Oct-2025.) $)
+    dvidsslem $p |- ( ph -> ( S _D F ) = ( X X. { B } ) ) $=
+      ( co cc wcel wss vw cdv csn cxp cdm wf cr cpr cpm cvv ssidd crest eqsstri
+      cpw restsspw sselid elpwid cnex a1i pmss12g syl22anc syl3anc sseldd dvfgg
+      fpmg syl2anc recnprss syl dvbss cv wa wrel wbr reldvg adantr cnt cfv crab
+      cap cmin cdiv cmpt climc ctop wceq cntoptop resttop isopn3i eqcomd eleq2d
+      eqeltrid biimpa limcresi ccncf sstrd cncfmptc simpr eqidd cnmptlimc breq1
+      elrab 3exp2 imp43 sylan2b mpteq2dva ssrab2 resmpt eqtr4di oveq1d eleqtrrd
+      cres ax-mp eqid eldvap mpbir2and releldm eqelssd feq2d mpbid wfn fnconstg
+      wb ffnd mp1i wfun ffund funbrfvb mpbird fvconst2g sylan eqtr4d eqfnfvd )
+      ABIEFUBQZIDUCUDZAIRYMAYMUEZRYMUFZIRYMUFAEUGRUHZSZFREUIQZSZYPJARIUIQZYSFAR
+      RTZIETRUJSZYRUUAYSTARUKZAIEAGEUNZIGHEULQZUUEKEHUOUMNUPUQZUUCAURUSZJRIREUJ
+      YQUTVAAIGSZUUCIRFUFFUUASNUUHMIRFGUJVEVBVCZEFVDVFZAYOIRYMABYOIAIEFAYRERTZJ
+      EVGVHZMUUGVIABVJZISZVKZYMVLZUUNDYMVMZUUNYOSZAUUQUUOAUULYTUUQUUMUUJEFVNVFV
+      OUUPUURUUNIGVPVQVQZSZDCUAVJZUUNVSVMZUAIVRZCVJZFVQUUNFVQVTQUVEUUNVTQWAQZWB
+      ZUUNWCQZSZAUUOUVAAIUUTUUNAUUTIAGWDSUUIUUTIWEAGUUFWDKAHWDSZYRUUFWDSUVJAHLW
+      FUSJEHYQWGVFWKNIGWHVFWIWJWLUUPDCIDWBZUVDXKZUUNWCQZUVHUUPUVKUUNWCQUVMDUUNU
+      VDUVKWMUUPCIUUNRDDAUVKIRWNQSZUUOADRSZIRTUUBUVNUVOAPUSZAIERUUGUUMWOUUDCDIR
+      WPVBVOAUUOWQUVEUUNWEDWRWSUPUUPUVGUVLUUNWCUUPUVGCUVDDWBZUVLUUPCUVDUVFDUVEU
+      VDSUUPUVEISZUVEUUNVSVMZVKUVFDWEZUVCUVSUAUVEIUVBUVEUUNVSWTXAAUUOUVRUVSUVTA
+      UUOUVRUVSUVTOXBXCXDXEUVDITUVLUVQWEUVCUAIXFCIUVDDXGXLXHXIXJAUURUVAUVIVKYBU
+      UOACUAIUUNDEGFUVGHKLUVGXMUUMMUUGXNVOXOZUUNDYMXPVFZXQXRXSYCUVOYNIXTAPIDRYA
+      YDUUPUUNYMVQZDUUNYNVQZUUPUWCDWEZUURUWAUUPYMYEUUSUWEUURYBUUPYORYMAYPUUOUUK
+      VOYFUWBUUNDYMYGVFYHAUVOUUOUWDDWEUVPIDUUNRYIYJYKYL $.
+  $}
+
+  ${
     $d x z A $.
     $( Derivative of a constant function.  (Contributed by Mario Carneiro,
        8-Aug-2014.)  (Revised by Jim Kingdon, 2-Aug-2023.) $)
