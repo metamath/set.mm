@@ -93,6 +93,9 @@ make a github issue.)
 DONE:
 Date      Old       New         Notes
  1-Oct-25 inindif   [same]      Moved from TA's mathbox to main set.mm
+29-Sep-25 elunsn    [same]      moved from TA's mathbox to main set.mm
+29-Sep-25 bianim    [same]      moved from PM's mathbox to main set.mm
+29-Sep-25 fzne1     [same]      moved from TA's mathbox to main set.mm
 23-Sep-25 coecj     [same]      Removed unneeded hypothesis
 23-Sep-25 plycj     [same]      Removed unneeded hypothesis
 23-Sep-25 elfzolem1 [same]      moved from GS's mathbox to main set.mm
