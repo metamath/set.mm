@@ -92,6 +92,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 6-Oct-25 nel2nelin [same]      Moved from GS's mathbox to main set.mm
+ 6-Oct-25 nel1nelin [same]      Moved from GS's mathbox to main set.mm
  1-Oct-25 inindif   [same]      Moved from TA's mathbox to main set.mm
 24-Sep-25 bibiad    [same]      Moved from TA's mathbox to main set.mm
 24-Sep-25 copsex2dv [same]      Moved from TA's mathbox to main set.mm
