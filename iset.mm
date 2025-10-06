@@ -178143,6 +178143,27 @@ $)
   $}
 
   ${
+    $d X x z $.  $d S x z $.  $d ph x z $.  $d A x z $.
+    dvconstss.s $e |- ( ph -> S e. { RR , CC } ) $.
+    dvconstss.j $e |- J = ( K |`t S ) $.
+    dvconstss.k $e |- K = ( MetOpen ` ( abs o. - ) ) $.
+    dvconstss.x $e |- ( ph -> X e. J ) $.
+    dvconstss.a $e |- ( ph -> A e. CC ) $.
+    $( Derivative of a constant function defined on an open set.  (Contributed
+       by Jim Kingdon, 6-Oct-2025.) $)
+    dvconstss $p |- ( ph -> ( S _D ( X X. { A } ) ) = ( X X. { 0 } ) ) $=
+      ( vx vz cc0 cc wcel syl cmin co cdiv csn cxp wf fconst6g cap wbr w3a wceq
+      cv wa simpr2 fvconst2g syl2an2r simpr1 oveq12d adantr subidd eqtrd oveq1d
+      cfv wss cpw crest restsspw eqsstri sselid elpwid cr recnprss sstrd sseldd
+      cpr subcld simpr3 subap0d div0apd 0cn dvidsslem ) ALMNCFBUAUBZDEFGHIABOPZ
+      FOVSUCKFBOUDQJALUIZFPZMUIZFPZWCWAUEUFZUGZUJZWCVSUTZWAVSUTZRSZWCWARSZTSNWK
+      TSNWGWJNWKTWGWJBBRSNWGWHBWIBRAVTWFWDWHBUHKAWBWDWEUKZFBWCOULUMAVTWFWBWIBUH
+      KAWBWDWEUNZFBWAOULUMUOWGBAVTWFKUPUQURUSWGWKWGWCWAWGFOWCAFOVAWFAFCOAFCADCV
+      BZFDECVCSWNHCEVDVEJVFVGACVHOVLPCOVAGCVIQVJUPZWLVKZWGFOWAWOWMVKZVMWGWCWAWP
+      WQAWBWDWEVNVOVPURVQVR $.
+  $}
+
+  ${
     $d y z w A $.  $d y z w B $.  $d y z w F $.  $d y z K $.  $d y z w S $.
     $d y z J $.
     dvcnp.j $e |- J = ( K |`t A ) $.
