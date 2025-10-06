@@ -45,6 +45,7 @@ GB  Gregory Bush
 MC  Mario Carneiro
 PC  Paul Chapman
 DF  Drahflow
+AD  Adrian Ducourtial
 GD  Georgy Dunaev
 SF  Scott Fenton
 GG  Gino Giotto
@@ -7961,6 +7962,58 @@ $)
   ( ( ( ph /\ ch ) /\ ( ps /\ th ) ) /\ ( ( ph /\ th ) /\ ( ps /\ ch ) ) ) ) $=
     ( wa an4 biimpi an42 biimpri jca adantl impbii ) ABECDEEZACEBDEEZADEBCEEZEM
     NOMNABCDFGOMADBCHZIJOMNOMPGKL $.
+
+  ${
+    dcfromnotnotr.1 $e |- ( ph <-> ( ps \/ -. ps ) ) $.
+    dcfromnotnotr.2 $e |- ( -. -. ph -> ph ) $.
+    $( The decidability of a proposition ` ps ` follows from a suitable
+       instance of double negation elimination (DNE).  Therefore, if we were to
+       introduce DNE as a general principle (without the decidability condition
+       in ~ notnotrdc ), then we could prove that every proposition is
+       decidable, giving us the classical system of propositional calculus
+       (since DNE itself is classically valid).  (Contributed by Adrian
+       Ducourtial, 6-Oct-2025.) $)
+    dcfromnotnotr $p |- DECID ps
+        $=
+          ( wdc wn wo nnexmid notbii 3imtr3i ax-mp df-dc mpbir ) BEBBFGZNFZFZNB
+          HAFZFAPNDQOANCIICJKBLM $.
+  $}
+
+  ${
+    dcfromcon.1 $e |- ( ph <-> ( ch \/ -. ch ) ) $.
+    dcfromcon.2 $e |- ( ps <-> T. ) $.
+    dcfromcon.3 $e |- ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) $.
+    $( The decidability of a proposition ` ch ` follows from a suitable
+       instance of the principle of contraposition.  Therefore, if we were to
+       introduce contraposition as a general principle (without the
+       decidability condition in ~ condc ), then we could prove that every
+       proposition is decidable, giving us the classical system of
+       propositional calculus (since the principle of contraposition is itself
+       classically valid).  (Contributed by Adrian Ducourtial, 6-Oct-2025.) $)
+    dcfromcon $p |- DECID ch
+          $=
+            ( wdc wn wo wtru wi nnexmid pm2.21i notbii imbi12i mpbi ax-mp mptru
+            df-dc mpbir ) CGCCHIZUAUAHZJHZKZJUAKZUBUCCLMAHZBHZKZBAKZKUDUEKFUHUD
+            UIUEUFUBUGUCAUADNBJENOBJAUAEDOOPQRCST $.
+  $}
+
+  ${
+    dcfrompeirce.1 $e |- ( ph <-> ( ch \/ -. ch ) ) $.
+    dcfrompeirce.2 $e |- ( ps <-> F. ) $.
+    dcfrompeirce.3 $e |- ( ( ( ph -> ps ) -> ph ) -> ph ) $.
+    $( The decidability of a proposition ` ch ` follows from a suitable
+       instance of Peirce's law.  Therefore, if we were to introduce Peirce's
+       law as a general principle (without the decidability condition in
+       ~ peircedc ), then we could prove that every proposition is decidable,
+       giving us the classical system of propositional calculus (since Perice's
+       law is itself classically valid).  (Contributed by Adrian Ducourtial,
+       6-Oct-2025.) $)
+    dcfrompeirce $p |- DECID ch
+          $=
+            ( wn wo wfal wi pm2.67-2 dfnot sylibr olcd imbi12i mpbi ax-mp df-dc
+            wdc mpbir ) CSCCGZHZUBIJZUBJZUBUCUACUCCIJUACIUAKCLMNABJZAJZAJUDUBJF
+            UFUDAUBUEUCAUBAUBBIDEODODOPQCRT $.
+  $}
 
 
 $(
