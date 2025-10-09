@@ -182514,6 +182514,30 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Number-theoretical functions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c sigma $.
+
+  $( Extend class notation with the divisor function. $)
+  csgm $a class sigma $.
+
+  ${
+    $d x n k p $.
+    $( Define the sum of positive divisors function ` ( x sigma n ) ` , which
+       is the sum of the xth powers of the positive integer divisors of n, see
+       definition in [ApostolNT] p. 38.  For ` x = 0 ` , ` ( x sigma n ) `
+       counts the number of divisors of ` n ` , i.e. ` ( 0 sigma n ) ` is _the_
+       divisor function, see remark in [ApostolNT] p. 38.  (Contributed by
+       Mario Carneiro, 22-Sep-2014.) $)
+    df-sgm $a |- sigma = ( x e. CC , n e. NN |->
+       sum_ k e. { p e. NN | p || n } ( k ^c x ) ) $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Quadratic residues and the Legendre symbol
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
@@ -188354,6 +188378,10 @@ htmldef "^c" as
     "<IMG SRC='subc.gif' WIDTH=6 HEIGHT=19 ALT='c' TITLE='c'> ";
   althtmldef "^c" as "&uarr;<SUB>&#x1D450;</SUB>";
   latexdef "^c" as "\uparrow_c";
+htmldef "sigma" as
+    " <IMG SRC='sigma.gif' WIDTH=10 HEIGHT=19 ALT=' sigma' TITLE='sigma'> ";
+  althtmldef "sigma" as " &sigma; ";
+  latexdef "sigma" as "\sigma";
 htmldef "/L" as
     " <IMG SRC='solidus.gif' WIDTH=6 HEIGHT=19 ALT=' /' TITLE='/'>" +
     "<IMG SRC='subcl.gif' WIDTH=8 HEIGHT=19 ALT='L' TITLE='L'>";
