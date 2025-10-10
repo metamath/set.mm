@@ -182590,6 +182590,17 @@ $)
        22-Sep-2014.) $)
     sgmcl $p |- ( ( A e. CC /\ B e. NN ) -> ( A sigma B ) e. CC ) $=
       ( cc cn csgm sgmf fovcl ) ABCCDEFG $.
+
+    $( Closure of the divisor function.  (Contributed by Mario Carneiro,
+       21-Jun-2015.) $)
+    sgmnncl $p |- ( ( A e. NN0 /\ B e. NN ) -> ( A sigma B ) e. NN ) $=
+      ( vp vk cn0 wcel cn wa csgm co cv cdvds wbr crab cexp csu wceq adantl syl
+      cz nn0z sgmval2 sylan cc0 clt dvdsfi elrabi simpl nnexpcl syl2anr fsumzcl
+      cfn nnzd c0 wne wrex nnz iddvds breq1 rspcev mpdan rabn0r fsumrpcl rpgt0d
+      nnrpd elnnz sylanbrc eqeltrd ) AEFZBGFZHZABIJZCKZBLMZCGNZDKZAOJZDPZGVIATF
+      VJVLVRQAUAABDCUBUCVKVRTFUDVRUEMVRGFVKVOVQDVJVOULFVICBUFRZVKVPVOFZHZVQVTVP
+      GFVIVQGFVKVNCVPGUGVIVJUHVPAUIUJZUMUKVKVRVKVOVQDVSVJVOUNUOZVIVJVNCGUPZWCVJ
+      BBLMZWDVJBTFWEBUQBURSVNWECBGVMBBLUSUTVAVNCGVBSRWAVQWBVEVCVDVRVFVGVH $.
   $}
 
 
