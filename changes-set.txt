@@ -94,7 +94,21 @@ DONE:
 Date      Old       New         Notes
  6-Oct-25 nel2nelin [same]      Moved from GS's mathbox to main set.mm
  6-Oct-25 nel1nelin [same]      Moved from GS's mathbox to main set.mm
+ 5-Oct-25 eliund    [same]      Moved from GS's mathbox to main set.mm
+ 5-Oct-25 feq1dd    [same]      Moved from GS's mathbox to main set.mm
+ 5-Oct-25 offvalfv  [same]      Moved from AV's mathbox to main set.mm
+ 5-Oct-25 finnzfsuppd [same]    Moved from RR's mathbox to main set.mm
+ 5-Oct-25 mndpsuppss [same]     Moved from AV's mathbox to main set.mm
+ 5-Oct-25 mndpsuppfi [same]     Moved from AV's mathbox to main set.mm
+ 5-Oct-25 mndpfsupp [same]      Moved from AV's mathbox to main set.mm
+ 5-Oct-25 rgspnval  [same]      Moved from SO's mathbox to main set.mm
+ 5-Oct-25 rgspncl   [same]      Moved from SO's mathbox to main set.mm
+ 5-Oct-25 rgspnssid [same]      Moved from SO's mathbox to main set.mm
+ 5-Oct-25 rgspnmin  [same]      Moved from SO's mathbox to main set.mm
  1-Oct-25 inindif   [same]      Moved from TA's mathbox to main set.mm
+29-Sep-25 elunsn    [same]      moved from TA's mathbox to main set.mm
+29-Sep-25 bianim    [same]      moved from PM's mathbox to main set.mm
+29-Sep-25 fzne1     [same]      moved from TA's mathbox to main set.mm
 24-Sep-25 bibiad    [same]      Moved from TA's mathbox to main set.mm
 24-Sep-25 copsex2dv [same]      Moved from TA's mathbox to main set.mm
 24-Sep-25 reueqbidv [same]      Moved from GG's mathbox to main set.mm
@@ -102,6 +116,7 @@ Date      Old       New         Notes
 23-Sep-25 plycj     [same]      Removed unneeded hypothesis
 23-Sep-25 elfzolem1 [same]      moved from GS's mathbox to main set.mm
 22-Sep-25 oduprs    [same]      Moved from TA's mathbox to main set.mm
+19-Sep-25 bm1.3ii   sepexi      Generalized conclusion
 17-Sep-25 psdmul    [same]      Removed unneeded hypothesis
 17-Sep-25 psdvsca   [same]      Removed unneeded hypothesis
 17-Sep-25 psdadd    [same]      Removed unneeded hypothesis

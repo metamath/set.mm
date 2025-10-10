@@ -84297,10 +84297,10 @@ $)
       VAWPABGJJVBVCVRWDVDSABHIJKILZJNHLXFNHRSHXFVEVFWEWBSVTWAVGZVFWCKVHSXEKVIVP
       VJVKVLKVRVMVNWBABJXGVOABJJJKVQVN $.
 
-    $( Multiplication is an operation on the complex numbers.  This theorem can
-       be used as an alternate axiom for complex numbers in place of the less
-       specific ~ axmulcl .  This construction-dependent theorem should not be
-       referenced directly; instead, use ~ ax-mulf .  (Contributed by NM,
+    $( Multiplication is an operation on the complex numbers.  This is the
+       construction-dependent version of ~ ax-mulf and it should not be
+       referenced outside the construction.  We generally prefer to develop our
+       theory using the less specific ~ mulcl .  (Contributed by NM,
        8-Feb-2005.)  (New usage is discouraged.) $)
     axmulf $p |- x. : ( CC X. CC ) --> CC $=
       ( vx vy vw vv vu vf vz vb va cc cmul cv co wcel wceq wa cop cmr wex wtru
@@ -85486,17 +85486,14 @@ $)
   ax-addf $a |- + : ( CC X. CC ) --> CC $.
   $( $j restatement 'ax-addf' of 'axaddf'; $)
 
-  $( Multiplication is an operation on the complex numbers.  This deprecated
-     axiom is provided for historical compatibility but is not a bona fide
-     axiom for complex numbers (independent of set theory) since it cannot be
-     interpreted as a first- or second-order statement (see
-     ~ https://us.metamath.org/downloads/schmidt-cnaxioms.pdf ).  It may be
-     deleted in the future and should be avoided for new theorems.  Instead,
-     the less specific ~ ax-mulcl should be used.  Note that uses of ~ ax-mulf
-     can be eliminated by using the defined operation
-     ` ( x e. CC , y e. CC |-> ( x x. y ) ) ` in place of ` x. ` , from which
-     this axiom (with the defined operation in place of ` x. ` ) follows as a
-     theorem.
+  $( Multiplication is an operation on the complex numbers.  This axiom tells
+     us that ` x. ` is defined only on complex numbers which is analogous to
+     the way that other operations are defined, for example see ~ subf or
+     ~ eff .  However, while Metamath can handle this axiom, if we wish to work
+     with weaker complex number axioms, we can avoid it by using the less
+     specific ~ mulcl .  Note that uses of ~ ax-mulf can be eliminated by using
+     the defined operation ` ( x e. CC , y e. CC |-> ( x x. y ) ) ` in place of
+     ` x. ` , as seen in ~ mpomulf .
 
      This axiom is justified by Theorem ~ axmulf .  (New usage is discouraged.)
      (Contributed by NM, 19-Oct-2004.) $)
