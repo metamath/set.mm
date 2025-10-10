@@ -182543,6 +182543,20 @@ $)
        sum_ k e. { p e. NN | p || n } ( k ^c x ) ) $.
   $}
 
+  ${
+    $d A k n p x $.  $d B k n p x $.
+    $( The value of the divisor function.  (Contributed by Mario Carneiro,
+       22-Sep-2014.)  (Revised by Mario Carneiro, 21-Jun-2015.) $)
+    sgmval $p |- ( ( A e. CC /\ B e. NN ) ->
+      ( A sigma B ) = sum_ k e. { p e. NN | p || B } ( k ^c A ) ) $=
+      ( vx vn cc wcel cn cv cdvds wbr crab ccxp co csu csgm wceq wa adantl cfn
+      dvdsfi elrabi nnrpd simpll rpcncxpcld fsumcl breq2d rabbidv oveq2d df-sgm
+      simpr sumeq12dv ovmpoga mpd3an3 ) AGHZBIHZDJZBKLZDIMZCJZANOZCPZGHABQOVCRU
+      PUQSZUTVBCUQUTUAHUPDBUBTVDVAUTHZSZVAAVFVAVEVAIHVDUSDVAIUCTUDUPUQVEUEUFUGE
+      FABGIURFJZKLZDIMZVAEJZNOZCPVCQGVJARZVGBRZSZVIUTVKVBCVNVHUSDIVNVGBURKVLVMU
+      LUHUIVNVAVIHZSVJAVANVLVMVOUEUJUMECFDUKUNUO $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
