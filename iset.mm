@@ -182564,6 +182564,17 @@ $)
       sgmval ssrab2 simpr sselid simpll cxpexpnn syl2anc sumeq2dv eqtrd ) AEFZB
       GFZHZABIJZDKBLMZDGNZCKZAOJZCPZUPUQAQJZCPUKARFULUNUSSATABCDUBUAUMUPURUTCUM
       UQUPFZHZUQGFUKURUTSVBUPGUQUODGUCUMVAUDUEUKULVAUFUQAUGUHUIUJ $.
+
+    $( The value of the sum-of-divisors function, usually denoted
+       &sigma;<SUB>0</SUB>(<i>n</i>).  (Contributed by Mario Carneiro,
+       21-Jun-2015.) $)
+    0sgm $p |- ( A e. NN -> ( 0 sigma A ) = ( # ` { p e. NN | p || A } ) ) $=
+      ( vk cn wcel cc0 csgm co cv cdvds wbr crab cexp csu chash c1 cmul cz wceq
+      cfv 0z sgmval2 mpan elrabi nncnd exp0d sumeq2i cc dvdsfi ax-1cn fsumconst
+      cfn sylancl eqtrid cn0 hashcl syl nn0cnd mulridd 3eqtrd ) ADEZFAGHZBIAJKZ
+      BDLZCIZFMHZCNZVDOTZPQHZVHFREVAVBVGSUAFACBUBUCVAVGVDPCNZVIVDVFPCVEVDEZVEVK
+      VEVCBVEDUDUEUFUGVAVDULEZPUHEVJVISBAUIZUJVDPCUKUMUNVAVHVAVHVAVLVHUOEVMVDUP
+      UQURUSUT $.
   $}
 
 
