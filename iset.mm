@@ -182575,6 +182575,16 @@ $)
       BDLZCIZFMHZCNZVDOTZPQHZVHFREVAVBVGSUAFACBUBUCVAVGVDPCNZVIVDVFPCVEVDEZVEVK
       VEVCBVEDUDUEUFUGVAVDULEZPUHEVJVISBAUIZUJVDPCUKUMUNVAVHVAVHVAVLVHUOEVMVDUP
       UQURUSUT $.
+
+    $( The divisor function is a function into the complex numbers.
+       (Contributed by Mario Carneiro, 22-Sep-2014.)  (Revised by Mario
+       Carneiro, 21-Jun-2015.) $)
+    sgmf $p |- sigma : ( CC X. NN ) --> CC $=
+      ( vp vn vk vx cv cdvds wbr cn crab ccxp co csu cc wcel wral cxp wf adantl
+      csgm wa cfn dvdsfi crp elrabi nnrpd simpll rpcncxpcld fsumcl rgen2 df-sgm
+      fmpo mpbi ) AEBEZFGZAHIZCEZDEZJKZCLZMNZBHODMOMHPMSQUTDBMHUQMNZUMHNZTZUOUR
+      CVBUOUANVAAUMUBRVCUPUONZTUPUQVDUPUCNVCVDUPUNAUPHUDUERVAVBVDUFUGUHUIDBMHUS
+      MSDCBAUJUKUL $.
   $}
 
 
