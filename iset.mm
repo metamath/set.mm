@@ -182555,6 +182555,15 @@ $)
       PUQSZUTVBCUQUTUAHUPDBUBTVDVAUTHZSZVAAVFVAVEVAIHVDUSDVAIUCTUDUPUQVEUEUFUGE
       FABGIURFJZKLZDIMZVAEJZNOZCPVCQGVJARZVGBRZSZVIUTVKVBCVNVHUSDIVNVGBURKVLVMU
       LUHUIVNVAVIHZSVJAVANVLVMVOUEUJUMECFDUKUNUO $.
+
+    $( The value of the divisor function.  (Contributed by Mario Carneiro,
+       21-Jun-2015.) $)
+    sgmval2 $p |- ( ( A e. ZZ /\ B e. NN ) ->
+      ( A sigma B ) = sum_ k e. { p e. NN | p || B } ( k ^ A ) ) $=
+      ( cz wcel cn wa csgm co cv cdvds wbr crab ccxp csu cexp cc wceq zcn sylan
+      sgmval ssrab2 simpr sselid simpll cxpexpnn syl2anc sumeq2dv eqtrd ) AEFZB
+      GFZHZABIJZDKBLMZDGNZCKZAOJZCPZUPUQAQJZCPUKARFULUNUSSATABCDUBUAUMUPURUTCUM
+      UQUPFZHZUQGFUKURUTSVBUPGUQUODGUCUMVAUDUEUKULVAUFUQAUGUHUIUJ $.
   $}
 
 
