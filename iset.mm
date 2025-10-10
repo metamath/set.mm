@@ -182585,6 +182585,11 @@ $)
       fmpo mpbi ) AEBEZFGZAHIZCEZDEZJKZCLZMNZBHODMOMHPMSQUTDBMHUQMNZUMHNZTZUOUR
       CVBUOUANVAAUMUBRVCUPUONZTUPUQVDUPUCNVCVDUPUNAUPHUDUERVAVBVDUFUGUHUIDBMHUS
       MSDCBAUJUKUL $.
+
+    $( Closure of the divisor function.  (Contributed by Mario Carneiro,
+       22-Sep-2014.) $)
+    sgmcl $p |- ( ( A e. CC /\ B e. NN ) -> ( A sigma B ) e. CC ) $=
+      ( cc cn csgm sgmf fovcl ) ABCCDEFG $.
   $}
 
 
