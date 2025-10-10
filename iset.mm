@@ -182603,6 +182603,30 @@ $)
       BBLMZWDVJBTFWEBUQBURSVNWECBGVMBBLUSUTVAVNCGVBSRWAVQWBVEVCVDVRVFVGVH $.
   $}
 
+  ${
+    $d m n x A $.  $d m n x P $.
+    dvdsppwf1o.f $e |- F = ( n e. ( 0 ... A ) |-> ( P ^ n ) ) $.
+    $( A bijection from the divisors of a prime power to the integers less than
+       the prime count.  (Contributed by Mario Carneiro, 5-May-2016.) $)
+    dvdsppwf1o $p |- ( ( P e. Prime /\ A e. NN0 ) ->
+      F : ( 0 ... A ) -1-1-onto-> { x e. NN | x || ( P ^ A ) } ) $=
+      ( wcel cn0 wa cc0 co cexp cdvds wbr cn cpc syl2an cz adantl wceq cfz crab
+      vm cprime cv breq1 prmnn adantr elfznn0 nnexpcl cuz prmz ad2antrr elfzuz3
+      cfv dvdsexp syl3anc elrabd cle simpl elrabi pccl nnzd simplr zexpcl elrab
+      syl2anc simprbi pcdvdstr syl13anc pcidlem breqtrd wb fznn0 mpbir2and wrex
+      oveq2 breq2d rspcev pcprmpw2 mpbid adantrl eqeq2d syl5ibrcom elfzelz pcid
+      syl eqcomd adantrr impbid f1o2d ) CUDGZBHGZIZDUCJBUAKZAUEZCBLKZMNZAOUBZCD
+      UEZLKZCUCUEZPKZEFWNWTWOGZIZWRXAWQMNZAXAOWPXAWQMUFWNCOGZWTHGZXAOGXDWLXGWMC
+      UGUHWTBUIZCWTUJQXECRGZXHBWTUKUOGZXFWLXJWMXDCULZUMXDXHWNXISXDXKWNWTJBUNSCW
+      TBUPUQURWNXBWSGZIZXCWOGZXCHGZXCBUSNZWNWLXBOGZXPXMWLWMUTZWRAXBOVAZCXBVBQXN
+      XCCWQPKZBUSXNWLXBRGWQRGZXBWQMNZXCYAUSNWNWLXMXSUHXNXBXMXRWNXTSVCXNXJWMYBWL
+      XJWMXMXLUMWLWMXMVDZCBVEVGXMYCWNXMXRYCWRYCAXBOWPXBWQMUFVFVHSZXBWQCVIVJWNYA
+      BTXMBCVKUHVLXNWMXOXPXQIVMYDXCBVNWGVOWNXDXMIIZWTXCTZXBXATZYFYHYGXBCXCLKZTZ
+      WNXMYJXDXNXBXAMNZDHVPZYJXNWMYCYLYDYEYKYCDBHWTBTXAWQXBMWTBCLVQVRVSVGWNWLXR
+      YLYJVMXMXSXTXBCDVTQWAWBYGXAYIXBWTXCCLVQWCWDYFYGYHWTCXAPKZTZWNXDYNXMXEYMWT
+      WNWLWTRGYMWTTXDXSWTJBWEWTCWFQWHWIYHXCYMWTXBXACPVQWCWDWJWK $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
