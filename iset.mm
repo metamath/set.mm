@@ -185751,6 +185751,33 @@ $)
     AMOJZDIJKLJMNJEFZUIKPTCZUEUFUIUIQZUHUJRUGUIUAZUIAUBSUEUFULUJUKRUMUIAUCSUD
     $.
 
+  $( The second supplement to the law of quadratic reciprocity for odd primes
+     (common representation, see theorem 9.5 in [ApostolNT] p. 181):  The
+     Legendre symbol for ` 2 ` at an odd prime is minus one to the power of the
+     square of the odd prime minus one divided by eight ( ` ( 2 /L P ) ` =
+     -1^(((P^2)-1)/8) ).  (Contributed by AV, 20-Jul-2021.) $)
+  2lgsoddprm $p |- ( P e. ( Prime \ { 2 } )
+                     -> ( 2 /L P ) = ( -u 1 ^ ( ( ( P ^ 2 ) - 1 ) / 8 ) ) ) $=
+    ( cprime c2 wcel co c1 c8 wceq c7 wdc wb wi cz syl a1i mpbird wa wn sylancr
+    cc0 csn cdif clgs cneg cexp cmin cdiv cmo cpr wo eldifi prmz cn 8nn zmodcld
+    nn0zd 1zzd zdceq syl2anc 7nn nnzi dcor sylc cn0 elprg dcbid simpl cdvds wbr
+    2lgs nnoddn2prm nnz anim1i sqoddm1div8z m1exp1 2lgsoddprmlem4 3bitrd adantl
+    eqcom biimparc eqtrd exp32 w3o ctp lgscl1 eltpg mpbid notbid biimpar m1expo
+    syl2an2r eqcomd a1d wne cgcd eldifsn simpr necomd sylbi 2prm prmrp eqneqall
+    2z lgsne0 syl5 pm2.24 2a1d 3jaoi mpcom com13 bijadc pm2.43i ) ABCUAZUBDZCAU
+    CEZFUDZACUEEFUFEGUGEZUEEZHZXNAGUHEZFIUIDZJZXOFHZYAKZXNXSLZXNYBXTFHZXTIHZUJZ
+    JZXNYFJZYGJZYIXNXTMDZFMDYJXNXTXNAGXNABDZAMDZABXMUKZAULNZGUMDXNUNOUOZUPZXNUQ
+    XTFURUSXNYLIMDZYKYRYSXNIUTVAOXTIURUSYFYGVBVCXNYAYHXNXTVDDYAYHKYQXTFIVDVENVF
+    PXNYMYDYOAVJNYCYAYEYCYAXNXSYCYAXNQZQXOFXRYCYTVGYTFXRHZYCXNUUAYAXNUUAXRFHZCX
+    QVHVIZYAUUAUUBKXNFXRVSOXNXQMDZUUBUUCKXNYNCAVHVIRZQZUUDXNAUMDZUUEQUUFAVKUUGY
+    NUUEAVLVMNZAVNNZXQVONXNUUFUUCYAKUUHAVPNZVQVTVRWAWBXNYARZYCRZXSXOXPHZXOTHZYC
+    WCZXNUUKUULXSLZLZXNXOXPTFWDZDZUUOXNCMDZYNUUSXCYPCAWESZXNUUSUUSUUOKUVAXOXPTF
+    UURWFNWGUUMXNUUQLUUNYCUUMXNUUKUUPUUMXNUUKQZQZXSUULUVCXOXPXRUUMUVBVGUVBXPXRH
+    UUMUVBXRXPXNUUDUUKUUCRZXRXPHUUIXNUVDUUKXNUUCYAUUJWHWIXQWJWKWLVRWAWMWBXNXOTW
+    NZUUNUUQXNUVECAWOEFHZXNUVFCAWNZXNYMACWNZQZUVGABCWPUVIACYMUVHWQWRWSXNCBDYMUV
+    FUVGKWTYOCAXASPXNUUTYNUVEUVFKXCYPCAXDSPUUQXOTXBXEYCUUPXNUUKYCXSXFXGXHXIXJXK
+    VCXL $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
