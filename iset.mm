@@ -182712,6 +182712,25 @@ $)
       VS $.
   $}
 
+  ${
+    $d N k $.
+    $( The sum of the divisors of ` 2 ^ ( N - 1 ) ` .  (Contributed by Mario
+       Carneiro, 17-May-2016.) $)
+    1sgm2ppw $p |- ( N e. NN ->
+      ( 1 sigma ( 2 ^ ( N - 1 ) ) ) = ( ( 2 ^ N ) - 1 ) ) $=
+      ( vk cn wcel c1 c2 cmin cexp cc0 csu cdiv cn0 wceq ax-1cn 2cn a1i cap wbr
+      co cc csgm cfz ccxp cv cprime 2prm nnm1nn0 sgmppw mp3an12i crp 2rp rpcxp1
+      mp1i oveq1d sumeq2i 1ap2 wb apsym mp2an mpbi geoserap eqtrid cneg nnexpcl
+      nnnn0 2nn sylancr nncnd subcl sylancl 1ap0 div2negapd negsubdi2 caddc 0cn
+      df-neg pnpcan mp3an 1p0e1 1p1e2 oveq12i 3eqtr2i oveq12d 3eqtr3d 3eqtrd
+      div1d ) ACDZEFAEGSZHSUASZIWHUBSZFEUCSZBUDZHSZBJZEFAHSZGSZEFGSZKSZWOEGSZET
+      DZFUEDWGWHLDWIWNMNUFAUGEFBWHUHUIWGWNWJFWLHSZBJWRWJWMXABWLWJDZWKFWLHFUJDWK
+      FMXBUKFULUMUNUOWGFBAFTDZWGOPFEQRZWGEFQRZXDUPWTXCXEXDUQNOEFURUSUTPAVEZVAVB
+      WGWSVCZEVCZKSWSEKSWRWSWGWSEWGWOTDZWTWSTDWGWOWGFCDALDWOCDVFXFFAVDVGVHZNWOE
+      VIVJZWTWGNPEIQRWGVKPVLWGXGWPXHWQKWGXIWTXGWPMXJNWOEVMVJXHWQMWGXHIEGSZEIVNS
+      ZEEVNSZGSZWQEVPWTITDWTXOXLMNVONEIEVQVRXMEXNFGVSVTWAWBPWCWGWSXKWFWDWE $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
