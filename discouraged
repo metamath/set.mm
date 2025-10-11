@@ -16877,6 +16877,7 @@ New usage of "friOLD" is discouraged (0 uses).
 New usage of "fsetprcnexALT" is discouraged (0 uses).
 New usage of "fsumdvdsmulOLD" is discouraged (0 uses).
 New usage of "fuchomOLD" is discouraged (0 uses).
+New usage of "fuco11bALT" is discouraged (0 uses).
 New usage of "fuco22natlem" is discouraged (1 uses).
 New usage of "funadj" is discouraged (4 uses).
 New usage of "funcnvadj" is discouraged (1 uses).
@@ -20924,6 +20925,7 @@ Proof modification of "friOLD" is discouraged (96 steps).
 Proof modification of "fsetprcnexALT" is discouraged (190 steps).
 Proof modification of "fsumdvdsmulOLD" is discouraged (538 steps).
 Proof modification of "fuchomOLD" is discouraged (229 steps).
+Proof modification of "fuco11bALT" is discouraged (199 steps).
 Proof modification of "funcrngcsetcALT" is discouraged (765 steps).
 Proof modification of "fundcmpsurinjALT" is discouraged (221 steps).
 Proof modification of "funimaexgOLD" is discouraged (133 steps).
