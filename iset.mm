@@ -181632,6 +181632,28 @@ $)
     ZKSVKUSVDVPKUSUPBGEVDVPOUPUQURUJZVNABPQRUSVKUSBVAVMVOUGUHUKULTRUSUPUTGEVHVC
     OVQUSBCVNVLUMAUTPQUPUQVDDEURVIVGOABUNVDCPUOT $.
 
+  ${
+    $d k x A $.  $d k x B $.  $d x C $.
+    $( Product of exponents law for complex exponentiation.  Variation on
+       ~ cxpmul with more general conditions on ` A ` and ` B ` when ` C ` is
+       an integer.  (Contributed by Mario Carneiro, 9-Aug-2014.) $)
+    rpcxpmul2 $p |- ( ( A e. RR+ /\ B e. CC /\ C e. NN0 ) ->
+                   ( A ^c ( B x. C ) ) = ( ( A ^c B ) ^ C ) ) $=
+      ( vx vk wcel cc cmul co ccxp cexp wceq wi cc0 caddc oveq2d eqeq12d imbi2d
+      c1 oveq2 crp cn0 wa cv rpcxp0 adantr mul01 adantl rpcncxpcl exp0d 3eqtr4d
+      oveq1 simplr nn0cn 1cnd adddid mulridd eqtrd simpll mulcld rpcxpadd expp1
+      syl3anc sylan imbitrrid expcom a2d nn0ind com12 3impia ) AUAFZBGFZCUBFZAB
+      CHIZJIZABJIZCKIZLZVMVKVLUCZVRVSABDUDZHIZJIZVPVTKIZLZMVSABNHIZJIZVPNKIZLZM
+      VSABEUDZHIZJIZVPWIKIZLZMVSABWISOIZHIZJIZVPWNKIZLZMVSVRMDECVTNLZWDWHVSWSWB
+      WFWCWGWSWAWEAJVTNBHTPVTNVPKTQRVTWILZWDWMVSWTWBWKWCWLWTWAWJAJVTWIBHTPVTWIV
+      PKTQRVTWNLZWDWRVSXAWBWPWCWQXAWAWOAJVTWNBHTPVTWNVPKTQRVTCLZWDVRVSXBWBVOWCV
+      QXBWAVNAJVTCBHTPVTCVPKTQRVSANJIZSWFWGVKXCSLVLAUEUFVSWENAJVLWENLVKBUGUHPVS
+      VPABUIZUJUKWIUBFZVSWMWRVSXEWMWRMWMWRVSXEUCZWKVPHIZWLVPHIZLWKWLVPHULXFWPXG
+      WQXHXFWPAWJBOIZJIZXGXFWOXIAJXFWOWJBSHIZOIXIXFBWISVKVLXEUMZXEWIGFVSWIUNUHZ
+      XFUOUPXFXKBWJOXFBXLUQPURPXFVKWJGFVLXJXGLVKVLXEUSXFBWIXLXMUTXLAWJBVAVCURVS
+      VPGFXEWQXHLXDVPWIVBVDQVEVFVGVHVIVJ $.
+  $}
+
   $( The complex power function allows us to write n-th roots via the idiom
      ` A ^c ( 1 / N ) ` .  (Contributed by Mario Carneiro, 6-May-2015.) $)
   rpcxproot $p |- ( ( A e. RR+ /\ N e. NN ) ->
