@@ -182679,6 +182679,21 @@ $)
       SRVTWAXMBAWSYCYAXOWBWCWDWE $.
   $}
 
+  ${
+    $d K n x $.  $d P n x $.
+    $( A prime power ` P ^ K ` has ` K + 1 ` divisors.  (Contributed by Mario
+       Carneiro, 17-May-2016.) $)
+    0sgmppw $p |- ( ( P e. Prime /\ K e. NN0 ) ->
+      ( 0 sigma ( P ^ K ) ) = ( K + 1 ) ) $=
+      ( vx vn cprime wcel cn0 wa cc0 cexp co chash cfv c1 caddc wceq syl adantl
+      cv cn csgm cfz cmin cdvds wbr crab prmnn nnexpcl sylan 0sgm cmpt 0zd nn0z
+      cz fzfigd eqid dvdsppwf1o fihasheqf1od eqtr4d simpr nn0uz eleqtrdi hashfz
+      cuz cc nn0cn subid1d oveq1d 3eqtrd ) AEFZBGFZHZIABJKZUAKZIBUBKZLMZBIUCKZN
+      OKZBNOKVLVNCSVMUDUECTUFZLMZVPVLVMTFZVNVTPVJATFVKWAAUGABUHUIVMCUJQVLVOVSDV
+      OADSJKUKZVLIBVLULVKBUNFVJBUMRUOCBADWBWBUPUQURUSVLBIVDMZFVPVRPVLBGWCVJVKUT
+      VAVBIBVCQVLVQBNOVLBVKBVEFVJBVFRVGVHVI $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
