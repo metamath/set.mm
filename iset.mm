@@ -181832,6 +181832,14 @@ $)
       cxprecd $p |- ( ph -> ( ( 1 / A ) ^c B ) = ( 1 / ( A ^c B ) ) ) $=
         ( crp wcel cc c1 cdiv co ccxp wceq cxprec syl2anc ) ABFGCHGIBJKCLKIBCLK
         JKMDEBCNO $.
+
+      cxpmul2d.4 $e |- ( ph -> C e. NN0 ) $.
+      $( Product of exponents law for complex exponentiation.  Variation on
+         ~ cxpmul with more general conditions on ` A ` and ` B ` when ` C ` is
+         an integer.  (Contributed by Mario Carneiro, 30-May-2016.) $)
+      rpcxpmul2d $p |- ( ph -> ( A ^c ( B x. C ) ) = ( ( A ^c B ) ^ C ) ) $=
+        ( crp wcel cc cn0 cmul co ccxp cexp wceq rpcxpmul2 syl3anc ) ABHICJIDKI
+        BCDLMNMBCNMDOMPEFGBCDQR $.
     $}
 
     rpcxpcld.2 $e |- ( ph -> B e. RR ) $.
