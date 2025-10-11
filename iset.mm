@@ -182694,6 +182694,24 @@ $)
       VAVBIBVCQVLVQBNOVLBVKBVEFVJBVFRVGVHVI $.
   $}
 
+  ${
+    $d P k $.
+    $( The sum of divisors for a prime is ` P + 1 ` because the only divisors
+       are ` 1 ` and ` P ` .  (Contributed by Mario Carneiro, 17-May-2016.) $)
+    1sgmprm $p |- ( P e. Prime -> ( 1 sigma P ) = ( P + 1 ) ) $=
+      ( vk cprime wcel c1 cexp csgm cc0 cfz ccxp csu caddc cn0 wceq ax-1cn 1nn0
+      co cc oveq2 eqtrd cv sgmppw mp3an13 prmnn nncnd exp1d oveq2d wa cn adantr
+      nnrpd rpcxp1d oveq1d sumeq2dv cmin 1m1e0 oveq2i sumeq1i cz exp0d eqeltrdi
+      0z fsum1 sylancr eqtrid oveq12d cuz cfv a1i nn0uz eleqtrdi elfznn0 syl2an
+      expcl fsumm1 addcom sylancl 3eqtr4d 3eqtr3d ) ACDZEAEFQZGQZHEIQZAEJQZBUAZ
+      FQZBKZEAGQAELQZERDZVTEMDZWBWGNOPEABEUBUCVTWAAEGVTAVTAAUDZUEZUFZUGVTWGWCAW
+      EFQZBKZWHVTWCWFWNBVTWEWCDZUHZWDAWEFWQAWQAVTAUIDWPWKUJUKULUMUNVTHEEUOQZIQZ
+      WNBKZWALQEALQZWOWHVTWTEWAALVTWTHHIQZWNBKZEWSXBWNBWRHHIUPUQURVTXCAHFQZEVTH
+      USDXDRDXCXDNVBVTXDERVTAWLUTZOVAWNXDBHWEHAFSVCVDXETVEWMVFVTWNWABHEVTEMHVGV
+      HWJVTPVIVJVKVTARDZWEMDWNRDWPWLWEEVLAWEVNVMWEEAFSVOVTXFWIWHXANWLOAEVPVQVRT
+      VS $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
