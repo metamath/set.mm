@@ -178033,8 +178033,9 @@ $)
     dvidrelem.2 $e |- ( ( ph /\ ( x e. RR /\ z e. RR /\ z =//= x ) ) ->
                   ( ( ( F ` z ) - ( F ` x ) ) / ( z - x ) ) = B ) $.
     dvidrelem.3 $e |- B e. CC $.
-    $( Analogue of ~ dvidlemap for real numbers rather than complex numbers.
-       (Contributed by Jim Kingdon, 3-Oct-2025.) $)
+    $( Lemma for ~ dvidre and ~ dvconstre .  Analogue of ~ dvidlemap for real
+       numbers rather than complex numbers.  (Contributed by Jim Kingdon,
+       3-Oct-2025.) $)
     dvidrelem $p |- ( ph -> ( RR _D F ) = ( RR X. { B } ) ) $=
       ( vw cr co cc wf wcel wss ax-resscn a1i cfv climc wceq cdv csn reex dvfpm
       cxp cdm cpm cnex fpm syl ssidd dvbss cv wa wrel wbr reldvg syl2anc adantr
@@ -178066,8 +178067,9 @@ $)
     dvidsslem.2 $e |- ( ( ph /\ ( x e. X /\ z e. X /\ z =//= x ) ) ->
                   ( ( ( F ` z ) - ( F ` x ) ) / ( z - x ) ) = B ) $.
     dvidsslem.3 $e |- B e. CC $.
-    $( Analogue of ~ dvidlemap where ` F ` is defined on an open subset of the
-       real or complex numbers.  (Contributed by Jim Kingdon, 3-Oct-2025.) $)
+    $( Lemma for ~ dvconstss .  Analogue of ~ dvidlemap where ` F ` is defined
+       on an open subset of the real or complex numbers.  (Contributed by Jim
+       Kingdon, 3-Oct-2025.) $)
     dvidsslem $p |- ( ph -> ( S _D F ) = ( X X. { B } ) ) $=
       ( co cc wcel wss vw cdv csn cxp cdm wf cr cpr cpm cvv ssidd crest eqsstri
       cpw restsspw sselid elpwid cnex a1i pmss12g syl22anc syl3anc sseldd dvfgg
