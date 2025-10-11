@@ -182657,6 +182657,28 @@ $)
       WNWLWTRGYMWTTXDXSWTJBWEWTCWFQWHWIYHXCYMWTXBXACPVQWCWDWJWK $.
   $}
 
+  ${
+    $d i j k n x A $.  $d i j k x M $.  $d i j k n x N $.  $d i k n x P $.
+    $d n x K $.
+    $( The value of the divisor function at a prime power.  (Contributed by
+       Mario Carneiro, 17-May-2016.) $)
+    sgmppw $p |- ( ( A e. CC /\ P e. Prime /\ N e. NN0 ) ->
+      ( A sigma ( P ^ N ) ) = sum_ k e. ( 0 ... N ) ( ( P ^c A ) ^ k ) ) $=
+      ( vx vn vi wcel cn0 cexp co cv ccxp csu cc0 wceq nnexpcld syl2anc adantr
+      cn cc cprime w3a csgm cdvds wbr crab cfz simp1 simp2 prmnn syl simp3 cmpt
+      sgmval oveq1 0zd nn0zd fzfigd wf1o eqid dvdsppwf1o wa oveq2 simpr elfznn0
+      adantl fvmptd3 elrabi nnrpd rpcncxpcld fsumf1o cmul nn0cnd mulcomd oveq2d
+      nn0red cxpmuld cxpexpnn oveq1d eqtrd rpcxpmul2d 3eqtr3d sumeq2dv 3eqtrd
+      cz ) AUAHZBUBHZDIHZUCZABDJKZUDKZELWKUEUFZETUGZFLZAMKZFNZODUHKZBCLZJKZAMKZ
+      CNWRBAMKWSJKZCNWJWGWKTHWLWQPWGWHWIUIZWJBDWJWHBTHZWGWHWIUJZBUKULZWGWHWIUMZ
+      QAWKFEUORWJWNWPWRXAFCGWRBGLZJKZUNZWTWOWTAMUPWJODWJUQWJDXGURUSWJWHWIWRWNXJ
+      UTXEXGEDBGXJXJVAZVBRWJWSWRHZVCZGWSXIWTWRXJTXKXHWSBJVDWJXLVEXMBWSWJXDXLXFS
+      ZXLWSIHWJWSDVFVGZQVHWJWOWNHZVCZWOAXQWOXPWOTHWJWMEWOTVIVGVJWJWGXPXCSVKVLWJ
+      WRXAXBCXMBWSAVMKZMKZBAWSVMKZMKXAXBXMXRXTBMXMWSAXMWSXOVNWJWGXLXCSZVOVPXMXS
+      BWSMKZAMKXAXMBWSAXMBXNVJZXMWSXOVQYAVRXMYBWTAMXMXDWSWFHYBWTPXNXMWSXOURBWSV
+      SRVTWAXMBAWSYCYAXOWBWCWDWE $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
