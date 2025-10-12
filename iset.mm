@@ -143714,6 +143714,14 @@ $)
     decsplit0 $p |- ( ( A x. ( ; 1 0 ^ 0 ) ) + 0 ) = A $=
       ( c1 cc0 cdc cexp co cmul caddc decsplit0b nn0cni addridi eqtri ) ACDEDFG
       HGDIGADIGAADBJAABKLM $.
+
+    $( Split a decimal number into two parts.  Base case: ` N = 1 ` .
+       (Contributed by Mario Carneiro, 16-Jul-2015.)  (Revised by AV,
+       8-Sep-2021.) $)
+    decsplit1 $p |- ( ( A x. ( ; 1 0 ^ 1 ) ) + B ) = ; A B $=
+      ( c1 cc0 cdc cexp co cmul caddc 10nn0 numexp1 oveq2i nn0cni eqtr4i oveq1i
+      mulcomi dfdec10 ) ADEFZDGHZIHZBJHSAIHZBJHABFUAUBBJUAASIHUBTSAISKLMSASKNAC
+      NQOPABRO $.
   $}
 
 
