@@ -143685,6 +143685,18 @@ $)
         ( c1 caddc co cexp cmul cc wcel cn0 wceq nn0cni expp1 mp2an 3eqtr3i
         oveq2i ) ACIJKZLKZACLKAMKZADLKBANOCPOUDUEQAERFACSTUCDALGUBHUA $.
     $}
+
+    ${
+      numexp2x.3 $e |- ( 2 x. M ) = N $.
+      numexp2x.4 $e |- ( A ^ M ) = D $.
+      numexp2x.5 $e |- ( D x. D ) = C $.
+      $( Double an integer power.  (Contributed by Mario Carneiro,
+         17-Apr-2015.) $)
+      numexp2x $p |- ( A ^ N ) = C $=
+        ( cexp co cmul caddc c2 nn0cni 2timesi eqtr3i wcel eqtri oveq2i cc wceq
+        cn0 expadd mp3an oveq12i ) AEKLZADKLZUIMLZBUHADDNLZKLZUJEUKAKODMLEUKHDD
+        GPQRUAAUBSDUDSZUMULUJUCAFPGGADDUEUFTUJCCMLBUICUICMIIUGJTT $.
+    $}
   $}
 
 
