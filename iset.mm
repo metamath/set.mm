@@ -143843,6 +143843,12 @@ $)
     LWDBWHBBEWEKWIKWKKRACBWGEEWDEHIRWOKRRGACABTOEMHRBAWMVMUCVGUEWTQEPECBTOERSRB
     CEPDVMVCVPUEXCQVNVQVRVSVT $.
 
+  $( Three to the third power is 27.  (Contributed by Mario Carneiro,
+     20-Apr-2015.) $)
+  3exp3 $p |- ( 3 ^ 3 ) = ; 2 7 $=
+    ( c3 c2 c7 cdc 3nn0 2nn0 2p1e3 cexp co cmul c9 oveq1i 9t3e27 eqtri numexpp1
+    sq3 ) ABCDZBAEFGABHIZAJIKAJIQRKAJPLMNO $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
