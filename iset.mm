@@ -143739,6 +143739,47 @@ $)
       UQUPUQVITZVLUIUJUDAUPUQAGTVLVNUOUKBDULUMCDULUN $.
   $}
 
+  ${
+    karatsuba.a $e |- A e. NN0 $.
+    karatsuba.b $e |- B e. NN0 $.
+    karatsuba.c $e |- C e. NN0 $.
+    karatsuba.d $e |- D e. NN0 $.
+    karatsuba.s $e |- S e. NN0 $.
+    karatsuba.m $e |- M e. NN0 $.
+    karatsuba.r $e |- ( A x. C ) = R $.
+    karatsuba.t $e |- ( B x. D ) = T $.
+    karatsuba.e $e |- ( ( A + B ) x. ( C + D ) ) = ( ( R + S ) + T ) $.
+    karatsuba.x $e |- ( ( A x. ( ; 1 0 ^ M ) ) + B ) = X $.
+    karatsuba.y $e |- ( ( C x. ( ; 1 0 ^ M ) ) + D ) = Y $.
+    karatsuba.w $e |- ( ( R x. ( ; 1 0 ^ M ) ) + S ) = W $.
+    karatsuba.z $e |- ( ( W x. ( ; 1 0 ^ M ) ) + T ) = Z $.
+    $( The Karatsuba multiplication algorithm.  If ` X ` and ` Y ` are
+       decomposed into two groups of digits of length ` M ` (only the lower
+       group is known to be this size but the algorithm is most efficient when
+       the partition is chosen near the middle of the digit string), then
+       ` X Y ` can be written in three groups of digits, where each group needs
+       only one multiplication.  Thus, we can halve both inputs with only three
+       multiplications on the smaller operands, yielding an asymptotic
+       improvement of n^(log_2 3) instead of n^2 for the "naive" algorithm
+       ~ decmul1c .  (Contributed by Mario Carneiro, 16-Jul-2015.)  (Revised by
+       AV, 9-Sep-2021.) $)
+    karatsuba $p |- ( X x. Y ) = Z $=
+      ( c1 cc0 cdc cexp co cmul caddc nn0cni wcel cn0 10nn0 expcl mp2an muladdi
+      cc mulcli addcli add32i adddiri mul32i oveq1i eqtri mulassi wceq mulcomli
+      oveq12i 3eqtr2i addcani mpbi 3eqtri 3eqtr3ri 3eqtr3i ) AUFUGUHZHUIUJZUKUJ
+      ZBULUJZCVSUKUJZDULUJZUKUJZIVSUKUJZGULUJZJKUKUJLWDVTWBUKUJZDBUKUJZULUJVTDU
+      KUJZWBBUKUJZULUJZULUJWGWKULUJZWHULUJWFVTBWBDAVSAMUMZVRUTUNHUOUNVSUTUNVRUP
+      UMRVRHUQURZVAZBNUMZCVSCOUMZWNVAZDPUMZUSWGWHWKVTWBWOWRVADBWSWPVAZWIWJVTDWO
+      WSVAWBBWRWPVAVBVCWLWEWHGULVTCUKUJZFULUJZVSUKUJXAVSUKUJZFVSUKUJZULUJWEWLXA
+      FVSVTCWOWQVAFQUMZWNVDXBIVSUKXBEVSUKUJZFULUJIXAXFFULXAACUKUJZVSUKUJXFAVSCW
+      MWNWQVEXGEVSUKSVFVGVFUDVGVFXCWGXDWKULVTCVSWOWQWNVHXDADUKUJZCBUKUJZULUJZVS
+      UKUJXHVSUKUJZXIVSUKUJZULUJWKFXJVSUKXGWHULUJZFULUJZXMXJULUJZVIFXJVIXNEFULU
+      JZGULUJZABULUJCDULUJUKUJXOXNXGFULUJZWHULUJXQXGWHFACWMWQVAZWTXEVCXRXPWHGUL
+      XGEFULSVFBDGWPWSTVJZVKVGUAABCDWMWPWQWSUSVLXMFXJXGWHXSWTVBXEXHXIADWMWSVAZC
+      BWQWPVAZVBVMVNVFXHXIVSYAYBWNVDXKWIXLWJULADVSWMWSWNVECBVSWQWPWNVEVKVOVKVPX
+      TVKVOWAJWCKUKUBUCVKUEVQ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
