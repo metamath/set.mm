@@ -143619,6 +143619,23 @@ $)
       RDIUQVEVFVGVAVH $.
   $}
 
+  ${
+    gcdi.1 $e |- K e. NN0 $.
+    gcdi.2 $e |- R e. NN0 $.
+    ${
+      gcdi.3 $e |- N e. NN0 $.
+      gcdi.5 $e |- ( N gcd R ) = G $.
+      gcdi.4 $e |- ( ( K x. N ) + R ) = M $.
+      $( Calculate a GCD via Euclid's algorithm.  (Contributed by Mario
+         Carneiro, 19-Feb-2014.) $)
+      gcdi $p |- ( M gcd N ) = G $=
+        ( cgcd co cmul caddc nn0mulcli nn0cni cz wcel wceq nn0zi oveq2i gcdaddm
+        addcomli mp3an cn0 numcl eqeltrri gcdcom mp2an 3eqtr4i eqtr3i ) EAKLZDE
+        KLZBEACEMLZNLZKLZEDKLZULUMUODEKUNADUNCEFHOPAGPJUCUACQREQRZAQRULUPSCFTEH
+        TZAGTCEAUBUDDQRURUMUQSDUNANLDUEJEACFHGUFUGTUSDEUHUIUJIUK $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
