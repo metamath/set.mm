@@ -86670,7 +86670,7 @@ $)
     mul.1 $e |- A e. CC $.
     $( ` 0 ` is an additive identity.  (Contributed by NM, 23-Nov-1994.)
        (Revised by Scott Fenton, 3-Jan-2013.) $)
-    addid1i $p |- ( A + 0 ) = A $=
+    addridi $p |- ( A + 0 ) = A $=
       ( cc wcel cc0 caddc co wceq addrid ax-mp ) ACDAEFGAHBAIJ $.
 
     $( ` 0 ` is a left identity for addition.  (Contributed by NM,
@@ -94581,7 +94581,7 @@ $)
 
   $( 1 + 0 = 1.  (Contributed by David A. Wheeler, 8-Dec-2018.) $)
   1p0e1 $p |- ( 1 + 0 ) = 1 $=
-    ( c1 ax-1cn addid1i ) ABC $.
+    ( c1 ax-1cn addridi ) ABC $.
 
   $( 1 + 1 = 2.  (Contributed by NM, 1-Apr-2008.) $)
   1p1e2 $p |- ( 1 + 1 ) = 2 $=
@@ -97280,7 +97280,7 @@ $)
      Stanislas Polu, 7-Apr-2020.)  (Revised by AV, 1-Aug-2021.) $)
   9p1e10 $p |- ( 9 + 1 ) = ; 1 0 $=
     ( c1 cc0 cdc c9 caddc co cmul df-dec cn 9nn 1nn nnaddcl mp2an nncni mulid1i
-    wcel oveq1i addid1i 3eqtrri ) ABCDAEFZAGFZBEFTBEFTABHUATBETTDIPAIPTIPJKDALM
+    wcel oveq1i addridi 3eqtrri ) ABCDAEFZAGFZBEFTBEFTABHUATBETTDIPAIPTIPJKDALM
     NZOQTUBRS $.
 
   $( Version of the definition of the "decimal constructor" using ` ; 1 0 `
@@ -97337,7 +97337,7 @@ $)
     $( Add a zero in the units place.  (Contributed by Mario Carneiro,
        18-Feb-2014.) $)
     num0u $p |- ( T x. A ) = ( ( T x. A ) + 0 ) $=
-      ( cmul co cc0 caddc nn0mulcli nn0cni addid1i eqcomi ) BAEFZGHFMMMBACDIJKL
+      ( cmul co cc0 caddc nn0mulcli nn0cni addridi eqcomi ) BAEFZGHFMMMBACDIJKL
       $.
 
     $( Add a zero in the higher places.  (Contributed by Mario Carneiro,
@@ -97423,7 +97423,7 @@ $)
     $( Closure for a decimal integer (zero units place).  (Contributed by Mario
        Carneiro, 9-Mar-2015.) $)
     numnncl2 $p |- ( ( T x. A ) + 0 ) e. NN $=
-      ( cmul co cc0 caddc cn nnmulcli nncni addid1i eqeltri ) BAEFZGHFNINNBACDJ
+      ( cmul co cc0 caddc cn nnmulcli nncni addridi eqeltri ) BAEFZGHFNINNBACDJ
       ZKLOM $.
   $}
 
@@ -97863,7 +97863,7 @@ $)
       $( Perform a multiply-add of two numerals ` M ` and ` N ` against a fixed
          multiplicand ` P ` (no carry).  (Contributed by AV, 16-Sep-2021.) $)
       decrmanc $p |- ( ( M x. P ) + N ) = ; E F $=
-        ( cc0 0nn0 dec0h cmul co caddc nn0mulcli nn0cni addid1i eqtri decma ) A
+        ( cc0 0nn0 dec0h cmul co caddc nn0mulcli nn0cni addridi eqtri decma ) A
         BOGCDEFGHIPJKGJQLACRSZOTSUFDUFUFACHLUAUBUCMUDNUE $.
     $}
 
@@ -97900,7 +97900,7 @@ $)
       $( Add two numerals ` M ` and ` N ` (no carry).  (Contributed by Mario
          Carneiro, 18-Feb-2014.) $)
       decaddi $p |- ( M + N ) = ; A C $=
-        ( cc0 0nn0 dec0h nn0cni addid1i decadd ) ABKEACDEFGLHIEHMAAFNOJP $.
+        ( cc0 0nn0 dec0h nn0cni addridi decadd ) ABKEACDEFGLHIEHMAAFNOJP $.
     $}
 
     decaddci.5 $e |- ( A + 1 ) = D $.
@@ -97910,7 +97910,7 @@ $)
       $( Add two numerals ` M ` and ` N ` (no carry).  (Contributed by Mario
          Carneiro, 18-Feb-2014.) $)
       decaddci $p |- ( M + N ) = ; D C $=
-        ( cc0 0nn0 dec0h caddc co c1 nn0cni addid1i oveq1i eqtri decaddc ) ABNF
+        ( cc0 0nn0 dec0h caddc co c1 nn0cni addridi oveq1i eqtri decaddc ) ABNF
         DCEFGHOIJFIPANQRZSQRASQRDUEASQAAGTUAUBKUCLMUD $.
     $}
 
@@ -97947,7 +97947,7 @@ $)
       $( The product of a numeral with a number (no carry).  (Contributed by
          AV, 22-Jul-2021.)  (Revised by AV, 6-Sep-2021.) $)
       decmul1 $p |- ( N x. P ) = ; C D $=
-        ( cmul co cc0 cdc caddc 10nn0 nn0cni c1 dfdec10 eqtri nn0mulcli addid1i
+        ( cmul co cc0 cdc caddc 10nn0 nn0cni c1 dfdec10 eqtri nn0mulcli addridi
         0nn0 oveq2i addlidi mul01i eqcomi oveq1i 3eqtr3i nummul1c eqtr4i ) FENO
         UAPQZCNODROCDQABCDEUOPFSGHIFABQUOANOBROJABUBUCKUFAENOZPROUPCUPUPAEHGUDT
         UELUCPBENOZROPDROUQUOPNOZDROUQDPRMUGUQUQBEIGUDTUHPURDRURPUOUOSTUIUJUKUL
@@ -97983,7 +97983,7 @@ $)
     $( The product of a numeral with a number (no carry).  (Contributed by AV,
        15-Jun-2021.) $)
     decmulnc $p |- ( N x. ; A B ) = ; ( N x. A ) ( N x. B ) $=
-      ( cmul co cc0 cdc eqid nn0mulcli 0nn0 nn0cni addid1i dec0h decmul2c ) ABC
+      ( cmul co cc0 cdc eqid nn0mulcli 0nn0 nn0cni addridi dec0h decmul2c ) ABC
       AGHZCBGHZCIABJZDEFTKCBDFLZMRRCADELNOSUAPQ $.
   $}
 
@@ -125233,7 +125233,7 @@ $)
       fsumrelem $p |- ( ph
           -> ( F ` sum_ k e. A B ) = sum_ k e. A ( F ` B ) ) $=
         ( csu cfv wceq sumeq1 cc0 caddc co cc wcel vw vu csn cun fveq2d eqeq12d
-        vv cv c0 ffvelcdmi ax-mp addid1i fvoveq1 fveq2 oveq1d oveq2 00id eqtrdi
+        vv cv c0 ffvelcdmi ax-mp addridi fvoveq1 fveq2 oveq1d oveq2 00id eqtrdi
         0cn oveq2d vtocl2ga mp2an eqtr2i addcani mpbi fveq2i 3eqtr4i a1i cfn wa
         wss csb cvv nfv nfcsb1v simplr vex simprr eldifbd simplll simprl sselda
         sum0 cdif syl2anc csbeq1a wral eldifad ralrimiva nfel1 eleq1d rspc sylc
@@ -131580,7 +131580,7 @@ $)
                  ( ( cos ` ( N x. A ) ) + ( _i x. ( sin ` ( N x. A ) ) ) ) ) $=
       ( wcel cc ccos cfv ci csin cmul caddc cexp wceq cc0 fveq2d oveq2d oveq12d
       co c1 ax-icn syl2anc vx vk cn0 cv wi oveq2 oveq1 imbi2d coscl sincl mulcl
-      eqeq12d sylancr addcl exp0 mul02 cos0 eqtrdi mul01i ax-1cn addid1i eqtr4d
+      eqeq12d sylancr addcl exp0 mul02 cos0 eqtrdi mul01i ax-1cn addridi eqtr4d
       syl sin0 wa expp1 sylan ancoms adantr adantl nn0cn sinadd sylancom mulcom
       oveq1d addcom 3eqtr2d w3a adddir mullid 3ad2ant3 syl3an1 mp3an2 cmin cneg
       eqtrd mpan 3syl jca muladd syl21anc jctil mul4 oveq1i mul12 mp3an1 3eqtrd
@@ -180424,7 +180424,7 @@ $)
     2ap0 cc sinpi sincl coscl mulcli divmulapi mpbir div0api resincl cioc pipos
     0cn 2pos divgt0ii 4re pigt2lt4 simpri ltleii wa pm3.2i ledivmul mp3an 2t2e4
     wb breq2i bitr2i cxr w3a 0xr elioc2 mp2an mpbir3an sin02gt0 gt0ap0ii oveq1i
-    mpbi sq0 eqtri oveq2i sincossq sqcli addid1i 3eqtr2ri 0re 0le1 sq11 mp4an
+    mpbi sq0 eqtri oveq2i sincossq sqcli addridi 3eqtr2ri 0re 0le1 sq11 mp4an
     1re ) ABUACZDEZFGZWTUBEZHGXABICZFBICZGZXBXEFXDHUCCZXDUDXDXCBICZUCCZXGFXHHXD
     UCXHHBICHXCHBIHXAUACZXCHXJXCGXAXCJCZHGHBUACZXKHXLXKGBXKJCZHGADEZXMHBWTJCZDE
     ZXNXMXOADABAKUEUFUKUGUHWTULRZXPXMGWTAKUIZUEZWTUJLMUMMHBXKVCUFXAXCXQXAULRXSW
@@ -180492,7 +180492,7 @@ $)
      Chapman, 23-Jan-2008.)  (Revised by Mario Carneiro, 10-May-2014.) $)
   efipi $p |- ( exp ` ( _i x. _pi ) ) = -u 1 $=
     ( ci cpi cmul co ce cfv ccos csin caddc c1 cneg wcel wceq picn efival ax-mp
-    cc cc0 cospi eqtri sinpi oveq2i it0e0 oveq12i neg1cn addid1i ) ABCDEFZBGFZA
+    cc cc0 cospi eqtri sinpi oveq2i it0e0 oveq12i neg1cn addridi ) ABCDEFZBGFZA
     BHFZCDZIDZJKZBQLUGUKMNBOPUKULRIDULUHULUJRISUJARCDRUIRACUAUBUCTUDULUEUFTT $.
 
   $( Euler's identity.  (Contributed by Paul Chapman, 23-Jan-2008.)  (Revised
