@@ -143634,6 +143634,18 @@ $)
         KLZBEACEMLZNLZKLZEDKLZULUMUODEKUNADUNCEFHOPAGPJUCUACQREQRZAQRULUPSCFTEH
         TZAGTCEAUBUDDQRURUMUQSDUNANLDUEJEACFHGUFUGTUSDEUHUIUJIUK $.
     $}
+
+    ${
+      gcdmodi.3 $e |- N e. NN $.
+      gcdmodi.4 $e |- ( K mod N ) = ( R mod N ) $.
+      gcdmodi.5 $e |- ( N gcd R ) = G $.
+      $( Calculate a GCD via Euclid's algorithm.  Theorem 5.6 in [ApostolNT]
+         p. 109.  (Contributed by Mario Carneiro, 19-Feb-2014.) $)
+      gcdmodi $p |- ( K gcd N ) = G $=
+        ( cgcd co cmo oveq1i cz wcel cn wceq nn0zi modgcd mp2an 3eqtr3i gcdcom
+        nnzi 3eqtri ) CDJKZADJKZDAJKZBCDLKZDJKZADLKZDJKZUEUFUHUJDJHMCNODPOZUIUE
+        QCERGCDSTANOZULUKUFQAFRZGADSTUAUMDNOUFUGQUNDGUCADUBTIUD $.
+    $}
   $}
 
 
