@@ -143798,6 +143798,13 @@ $)
     ( c2 c6 c4 cdc c8 c3 2nn0 3nn0 3cn 2cn 3t2e6 mulcomli cu2 8t8e64 numexp2x )
     ABCDEFBGHFABIJKLMNO $.
 
+  $( Two to the seventh power is 128.  (Contributed by AV, 16-Aug-2021.) $)
+  2exp7 $p |- ( 2 ^ 7 ) = ; ; 1 2 8 $=
+    ( c2 c7 cexp co c6 c4 cdc cmul c1 c8 caddc df-7 oveq2i cc wcel cn0 wceq 2cn
+    6nn0 eqtri expp1 mp2an 2exp6 oveq1i 2nn0 4nn0 eqid 6t2e12 4t2e8 decmul1
+    8nn0 ) ABCDZEFGZAHDZIAGZJGULAEIKDZCDZUNBUPACLMUQAECDZAHDZUNANOEPOUQUSQRSAEU
+    AUBURUMAHUCUDTTEFUOJAUMUESUFUMUGUKUHUIUJT $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
