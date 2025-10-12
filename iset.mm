@@ -143496,6 +143496,18 @@ $)
       PHJUDHABACHUNUERDUTHRUFUNUGAADUHUIGUJUKULUM $.
   $}
 
+  ${
+    dec5nprm.1 $e |- A e. NN $.
+    $( Divisibility by five is obvious in base 10.  (Contributed by Mario
+       Carneiro, 19-Apr-2015.) $)
+    dec5nprm $p |- -. ; A 5 e. Prime $=
+      ( c2 cmul co c1 caddc c5 cdc cn wcel 2nn nnmulcli peano2nn ax-mp 5nn 1nn0
+      1lt2 nncni 5cn numlti 1lt5 cc0 mul32i 5t2e10 oveq1i eqtri mullidi oveq12i
+      mulcomli ax-1cn adddiri dfdec10 3eqtr4i nprmi ) CADEZFGEZHAHIZUPJKUQJKCAL
+      BMZUPNOPAFFCLBQQRUAUBUPHDEZFHDEZGEFUCIZADEZHGEUQHDEURUTVCVAHGUTCHDEZADEVC
+      CAHCLSZABSTUDVDVBADHCVBTVEUEUJUFUGHTUHUIUPFHUPUSSUKTULAHUMUNUO $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
