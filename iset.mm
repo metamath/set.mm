@@ -143485,6 +143485,15 @@ $)
       ( c5 cdc c2 cmul co 5nn 2nn0 nn0mulcli caddc c1 cc0 5cn 2cn nn0cni oveq1i
       mulassi 5t2e10 eqtr3i dfdec10 eqtr4i ndvdsi ) FABGZHAIJZBKHALCMDFUHIJZBNJ
       OPGZAIJZBNJUGUIUKBNFHIJZAIJUIUKFHAQRACSUAULUJAIUBTUCTABUDUEEUF $.
+
+    dec5dvds2.4 $e |- ( 5 + B ) = C $.
+    $( Divisibility by five is obvious in base 10.  (Contributed by Mario
+       Carneiro, 19-Apr-2015.) $)
+    dec5dvds2 $p |- -. 5 || ; A C $=
+      ( c5 cdc cdvds wbr dec5dvds caddc co cz wcel wb 5nn0 nn0zi nnnn0i dvdsadd
+      deccl mp2an cc0 0nn0 dec0h eqid nn0cni addlidi decadd breq2i bitri mtbi )
+      HABIZJKZHACIZJKZABDEFLUOHHUNMNZJKZUQHOPUNOPUOUSQHRSUNABDBETZUBSHUNUAUCURU
+      PHJUDHABACHUNUERDUTHRUFUNUGAADUHUIGUJUKULUM $.
   $}
 
 
