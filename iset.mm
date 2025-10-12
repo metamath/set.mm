@@ -143506,6 +143506,17 @@ $)
       mulcomli ax-1cn adddiri dfdec10 3eqtr4i nprmi ) CADEZFGEZHAHIZUPJKUQJKCAL
       BMZUPNOPAFFCLBQQRUAUBUPHDEZFHDEZGEFUCIZADEZHGEUQHDEURUTVCVAHGUTCHDEZADEVC
       CAHCLSZABSTUDVDVBADHCVBTVEUEUJUFUGHTUHUIUPFHUPUSSUKTULAHUMUNUO $.
+
+    dec2nprm.2 $e |- B e. NN0 $.
+    dec2nprm.3 $e |- ( B x. 2 ) = C $.
+    $( Divisibility by two is obvious in base 10.  (Contributed by Mario
+       Carneiro, 19-Apr-2015.) $)
+    dec2nprm $p |- -. ; A C e. Prime $=
+      ( c5 cmul co caddc c2 cdc cn wcel cn0 5nn nnmulcli c1 nncni 2cn mp2an 2nn
+      nnnn0addcl 1nn0 1lt5 numlti cc0 mul32i 5t2e10 oveq1i eqtri oveq12i nn0cni
+      1lt2 adddiri dfdec10 3eqtr4i nprmi ) GAHIZBJIZKACLZUSMNBONUTMNGAPDQZEUSBU
+      CUAUBABRGPDEUDUEUFUNUSKHIZBKHIZJIRUGLZAHIZCJIUTKHIVAVCVFVDCJVCGKHIZAHIVFG
+      AKGPSADSTUHVGVEAHUIUJUKFULUSBKUSVBSBEUMTUOACUPUQUR $.
   $}
 
 
