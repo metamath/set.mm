@@ -143674,6 +143674,17 @@ $)
        17-Apr-2015.) $)
     numexp1 $p |- ( A ^ 1 ) = A $=
       ( cc wcel c1 cexp co wceq nn0cni exp1 ax-mp ) ACDAEFGAHABIAJK $.
+
+    numexpp1.2 $e |- M e. NN0 $.
+    ${
+      numexpp1.3 $e |- ( M + 1 ) = N $.
+      numexpp1.4 $e |- ( ( A ^ M ) x. A ) = C $.
+      $( Calculate an integer power.  (Contributed by Mario Carneiro,
+         17-Apr-2015.) $)
+      numexpp1 $p |- ( A ^ N ) = C $=
+        ( c1 caddc co cexp cmul cc wcel cn0 wceq nn0cni expp1 mp2an 3eqtr3i
+        oveq2i ) ACIJKZLKZACLKAMKZADLKBANOCPOUDUEQAERFACSTUCDALGUBHUA $.
+    $}
   $}
 
 
