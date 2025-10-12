@@ -143805,6 +143805,16 @@ $)
     8nn0 ) ABCDZEFGZAHDZIAGZJGULAEIKDZCDZUNBUPACLMUQAECDZAHDZUNANOEPOUQUSQRSAEU
     AUBURUMAHUCUDTTEFUOJAUMUESUFUMUGUKUHUIUJT $.
 
+  $( Two to the eighth power is 256.  (Contributed by Mario Carneiro,
+     20-Apr-2015.) $)
+  2exp8 $p |- ( 2 ^ 8 ) = ; ; 2 5 6 $=
+    ( c2 c5 cdc c6 c1 c4 c8 2nn0 4nn0 nn0cni 2cn c9 1nn0 6nn0 9nn0 co 6cn caddc
+    cmul c3 4t2e8 mulcomli 2exp4 deccl eqid mulridi 1p1e2 9cn addcomli decaddci
+    5nn0 9p6e15 mullidi oveq1i 6p3e9 eqtri 6t6e36 decmul1c decmul2c numexp2x
+    3nn0 ) AABCZDCEDCZFGHIFAGFIJKUAUBUCEDVBDVCLVCEDMNUDZMNVCUEZNOEDBAVCESPLMNOV
+    CVCVDJUFUGUKLDEBCUHQULUIUJEDLDDTVCNMNVENVAEDSPZTRPDTRPLVFDTRDQUMUNUOUPUQURU
+    SUT $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
