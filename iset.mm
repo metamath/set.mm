@@ -143699,6 +143699,16 @@ $)
     $}
   $}
 
+  ${
+    decsplit0.1 $e |- A e. NN0 $.
+    $( Split a decimal number into two parts.  Base case: ` N = 0 ` .
+       (Contributed by Mario Carneiro, 16-Jul-2015.)  (Revised by AV,
+       8-Sep-2021.) $)
+    decsplit0b $p |- ( ( A x. ( ; 1 0 ^ 0 ) ) + B ) = ( A + B ) $=
+      ( c1 cc0 cdc cexp co cmul caddc 10nn0 numexp0 oveq2i nn0cni mulridi eqtri
+      oveq1i ) ADEFZEGHZIHZABJTADIHASDAIRKLMAACNOPQ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
