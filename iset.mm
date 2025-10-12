@@ -143519,6 +143519,37 @@ $)
       AKGPSADSTUHVGVEAHUIUJUKFULUSBKUSVBSBEUMTUOACUPUQUR $.
   $}
 
+  ${
+    modxai.1 $e |- N e. NN $.
+    modxai.2 $e |- A e. NN $.
+    modxai.3 $e |- B e. NN0 $.
+    modxai.4 $e |- D e. ZZ $.
+    modxai.5 $e |- K e. NN0 $.
+    modxai.6 $e |- M e. NN0 $.
+    ${
+      modxai.7 $e |- C e. NN0 $.
+      modxai.8 $e |- L e. NN0 $.
+      modxai.11 $e |- ( ( A ^ B ) mod N ) = ( K mod N ) $.
+      modxai.12 $e |- ( ( A ^ C ) mod N ) = ( L mod N ) $.
+      modxai.9 $e |- ( B + C ) = E $.
+      modxai.10 $e |- ( ( D x. N ) + M ) = ( K x. L ) $.
+      $( Add exponents in a power mod calculation.  (Contributed by Mario
+         Carneiro, 21-Feb-2014.)  (Revised by Mario Carneiro, 5-Feb-2015.) $)
+      modxai $p |- ( ( A ^ E ) mod N ) = ( M mod N ) $=
+        ( cexp co cmo cmul caddc oveq2i wcel cn0 wceq nncni expadd mp3an eqtr3i
+        cc oveq1i wtru cz nnexpcl mp2an nnzi a1i nn0zi nnq mp1i crp nnrp rpgt0d
+        cn cq modqmul12d mptru zcn ax-mp mulcli nn0cni addcomi cc0 clt wbr nn0z
+        eqtri zq mp2b modqcyc mp4an ) AEUBUCZIUDUCABUBUCZACUBUCZUEUCZIUDUCZHIUD
+        UCZWGWJIUDABCUFUCZUBUCZWGWJWMEAUBTUGAUOUHBUIUHZCUIUHZWNWJUJAKUKLPABCULU
+        MUNUPWKHDIUEUCZUFUCZIUDUCZWLWKFGUEUCZIUDUCZWSWKXAUJUQWHFWIGIWHURUHUQWHA
+        VIUHZWOWHVIUHKLABUSUTVAVBFURUHUQFNVCVBWIURUHUQWIXBWPWIVIUHKPACUSUTVAVBG
+        URUHUQGQVCVBIVIUHZIVJUHZUQJIVDZVEUQIXCIVFUHUQJIVGVEVHZWHIUDUCFIUDUCUJUQ
+        RVBWIIUDUCGIUDUCUJUQSVBVKVLWTWRIUDWQHUFUCWTWRUAWQHDIDURUHZDUOUHMDVMVNIJ
+        UKVOHOVPVQUNUPWBHVJUHZXGXDVRIVSVTZWSWLUJHUIUHHURUHXHOHWAHWCWDMXCXDJXEVN
+        XIXFVLHIDWEWFWBWB $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
