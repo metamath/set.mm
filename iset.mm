@@ -143663,6 +143663,14 @@ $)
       USURT $.
   $}
 
+  ${
+    numexp.1 $e |- A e. NN0 $.
+    $( Calculate an integer power.  (Contributed by Mario Carneiro,
+       17-Apr-2015.) $)
+    numexp0 $p |- ( A ^ 0 ) = 1 $=
+      ( cc wcel cc0 cexp co c1 wceq nn0cni exp0 ax-mp ) ACDAEFGHIABJAKL $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
