@@ -143780,6 +143780,11 @@ $)
       TVKVOWAJWCKUKUBUCVKUEVQ $.
   $}
 
+  $( Two to the fourth power is 16.  (Contributed by Mario Carneiro,
+     20-Apr-2015.) $)
+  2exp4 $p |- ( 2 ^ 4 ) = ; 1 6 $=
+    ( c2 c1 c6 cdc c4 2nn0 2t2e4 sq2 4t4e16 numexp2x ) ABCDEAEFFGHIJ $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
