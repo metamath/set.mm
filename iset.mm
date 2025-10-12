@@ -143669,6 +143669,11 @@ $)
        17-Apr-2015.) $)
     numexp0 $p |- ( A ^ 0 ) = 1 $=
       ( cc wcel cc0 cexp co c1 wceq nn0cni exp0 ax-mp ) ACDAEFGHIABJAKL $.
+
+    $( Calculate an integer power.  (Contributed by Mario Carneiro,
+       17-Apr-2015.) $)
+    numexp1 $p |- ( A ^ 1 ) = A $=
+      ( cc wcel c1 cexp co wceq nn0cni exp1 ax-mp ) ACDAEFGAHABIAJK $.
   $}
 
 
