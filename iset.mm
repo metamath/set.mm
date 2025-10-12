@@ -182874,6 +182874,25 @@ $)
       ZEEVNSZGSZWQEVPWTITDWTXOXLMNVONEIEVQVRXMEXNFGVSVTWAWBPWCWGWSXKWFWDWE $.
   $}
 
+  ${
+    $d A i j k x $.  $d M i j k x $.  $d N i j k x $.
+    $( The divisor function for fixed parameter ` A ` is a multiplicative
+       function.  (Contributed by Mario Carneiro, 2-Jul-2015.) $)
+    sgmmul $p |- ( ( A e. CC /\ ( M e. NN /\ N e. NN /\ ( M gcd N ) = 1 ) ) ->
+      ( A sigma ( M x. N ) ) = ( ( A sigma M ) x. ( A sigma N ) ) ) $=
+      ( vx vj vk vi wcel cn co wceq wa cv cdvds wbr crab ccxp csu cmul nnrpd cc
+      cgcd c1 w3a csgm simpr1 simpr2 simpr3 eqid ssrab2 simpr sselid rpcncxpcld
+      simpll crp adantrr adantrl syl3anc eqcomd oveq1 fsumdvdsmul sgmval syldan
+      rpmulcxp oveq12d nnmulcld 3eqtr4rd ) AUAHZBIHZCIHZBCUBJUCKZUDZLZDMZBNOZDI
+      PZEMZAQJZERZVNCNOZDIPZFMZAQJZFRZSJVNBCSJZNODIPZGMZAQJZGRZABUEJZACUEJZSJAW
+      EUEJZVMDVRWCWHVQWBSJZAQJZGEFBCVPWAWFVHVIVJVKUFZVHVIVJVKUGZVHVIVJVKUHVPUIW
+      AUIWFUIVMVQVPHZLZVQAWRVQWRVPIVQVODIUJVMWQUKULZTVHVLWQUNUMVMWBWAHZLZWBAXAW
+      BXAWAIWBVTDIUJVMWTUKULZTVHVLWTUNUMVMWQWTLZLZWNVRWCSJZXDVQUOHWBUOHVHWNXEKX
+      DVQVMWQVQIHWTWSUPTXDWBVMWTWBIHWQXBUQTVHVLXCUNVQWBAVDURUSWGWMAQUTVAVMWJVSW
+      KWDSVHVLVIWJVSKWOABEDVBVCVHVLVJWKWDKWPACFDVBVCVEVHVLWEIHWLWIKVMBCWOWPVFAW
+      EGDVBVCVG $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
