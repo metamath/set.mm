@@ -143792,6 +143792,12 @@ $)
     HAJDZCDZUIBUJACUJBKLMUKAHCDZAACDZGDZUIANOHPOAPOUKUNRQSUAAHAUBUCULEUMFGUDUEU
     FTTUGT $.
 
+  $( Two to the sixth power is 64.  (Contributed by Mario Carneiro,
+     20-Apr-2015.)  (Proof shortened by OpenAI, 25-Mar-2020.) $)
+  2exp6 $p |- ( 2 ^ 6 ) = ; 6 4 $=
+    ( c2 c6 c4 cdc c8 c3 2nn0 3nn0 3cn 2cn 3t2e6 mulcomli cu2 8t8e64 numexp2x )
+    ABCDEFBGHFABIJKLMNO $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
