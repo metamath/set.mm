@@ -85672,7 +85672,7 @@ $)
   ${
     axi.1 $e |- A e. CC $.
     $( Identity law for multiplication.  (Contributed by NM, 14-Feb-1995.) $)
-    mulid1i $p |- ( A x. 1 ) = A $=
+    mulridi $p |- ( A x. 1 ) = A $=
       ( cc wcel c1 cmul co wceq mulrid ax-mp ) ACDAEFGAHBAIJ $.
 
     $( Identity law for multiplication.  (Contributed by NM, 14-Feb-1995.) $)
@@ -90091,7 +90091,7 @@ $)
     rimul $p |- ( ( A e. RR /\ ( _i x. A ) e. RR ) -> A = 0 ) $=
       ( vx cr wcel ci cmul co wa cc0 wceq creap wbr wn inelr cv c1 recnd ax-icn
       wrex cc recexre adantlr simplll simprl mulass mp3an1 syl2anc oveq2 eqtrdi
-      mulid1i ad2antll eqtrd simpllr remulcld eqeltrrd rexlimddv ex mtoi wb 0re
+      mulridi ad2antll eqtrd simpllr remulcld eqeltrrd rexlimddv ex mtoi wb 0re
       reapti mpan2 adantr mpbird ) ACDZEAFGZCDZHZAIJZAIKLZMZVHVJECDZNVHVJVLVHVJ
       HZABOZFGZPJZVLBCVEVJVPBCSVGBAUAUBVMVNCDZVPHZHZVFVNFGZECVSVTEVOFGZEVSATDZV
       NTDZVTWAJZVSAVEVGVJVRUCQVSVNVMVQVPUDZQETDWBWCWDREAVNUEUFUGVPWAEJVMVQVPWAE
@@ -91121,7 +91121,7 @@ $)
      [Kreyszig] p. 12.  (Contributed by NM, 13-Nov-2006.) $)
   muleqadd $p |- ( ( A e. CC /\ B e. CC ) ->
              ( ( A x. B ) = ( A + B ) <-> ( ( A - 1 ) x. ( B - 1 ) ) = 1 ) ) $=
-    ( cc wcel wa c1 cmin co cmul wceq caddc ax-1cn mulsub mpanr2 mpanl2 mulid1i
+    ( cc wcel wa c1 cmin co cmul wceq caddc ax-1cn mulsub mpanr2 mpanl2 mulridi
     cc0 oveq2i a1i mulrid oveqan12d oveq12d addsub mp3an2 syl2anc 3eqtrd eqeq1d
     mulcl addcl subcld 0cn addcan2 mp3an23 syl addlidi eqeq2i subeq0ad 3bitr2rd
     wb bitr3di ) ACDZBCDZEZAFGHBFGHIHZFJABIHZABKHZGHZFKHZFJZVGQJZVEVFJVCVDVHFVC
@@ -94759,11 +94759,11 @@ $)
 
   $( 1 times 1 equals 1.  (Contributed by David A. Wheeler, 7-Jul-2016.) $)
   1t1e1 $p |- ( 1 x. 1 ) = 1 $=
-    ( c1 ax-1cn mulid1i ) ABC $.
+    ( c1 ax-1cn mulridi ) ABC $.
 
   $( 2 times 1 equals 2.  (Contributed by David A. Wheeler, 6-Dec-2018.) $)
   2t1e2 $p |- ( 2 x. 1 ) = 2 $=
-    ( c2 2cn mulid1i ) ABC $.
+    ( c2 2cn mulridi ) ABC $.
 
   $( 2 times 2 equals 4.  (Contributed by NM, 1-Aug-1999.) $)
   2t2e4 $p |- ( 2 x. 2 ) = 4 $=
@@ -94771,7 +94771,7 @@ $)
 
   $( 3 times 1 equals 3.  (Contributed by David A. Wheeler, 8-Dec-2018.) $)
   3t1e3 $p |- ( 3 x. 1 ) = 3 $=
-    ( c3 3cn mulid1i ) ABC $.
+    ( c3 3cn mulridi ) ABC $.
 
   $( 3 times 2 equals 6.  (Contributed by NM, 2-Aug-2004.) $)
   3t2e6 $p |- ( 3 x. 2 ) = 6 $=
@@ -95090,7 +95090,7 @@ $)
   halfpm6th $p |- ( ( ( 1 / 2 ) - ( 1 / 6 ) ) = ( 1 / 3 ) /\
                        ( ( 1 / 2 ) + ( 1 / 6 ) ) = ( 2 / 3 ) ) $=
     ( c1 c2 cdiv co c6 cmin c3 wceq caddc cmul 3cn ax-1cn 2cn 2ap0 divmuldivapi
-    oveq1i mulid1i 3t2e6 oveq12i 3eqtr3i 3re 3pos gt0ap0ii halfcn mullidi eqtri
+    oveq1i mulridi 3t2e6 oveq12i 3eqtr3i 3re 3pos gt0ap0ii halfcn mullidi eqtri
     dividapi cc wcel cc0 cap wbr wa 6cn 6re 6pos pm3.2i divsubdirap mp3an 3m1e2
     oveq2i recclapi 3eqtr2i c4 divdirapi df-4 3eqtr4ri 2t2e4 divclapi ) ABCDZAE
     CDZFDZAGCDZHVJVKIDZBGCDZHVLGECDZVKFDZGAFDZECDZVMVJVPVKFGGCDZVJJDZGAJDZGBJDZ
@@ -95114,7 +95114,7 @@ $)
      Kingdon, 9-Mar-2020.) $)
   iap0 $p |- _i =//= 0 $=
     ( cc0 ci c1 cmul co caddc cap wbr wo 1ap0 olci cr wcel wb 0re apreim ax-icn
-    1re oveq2i eqtri mp4an mpbir mulid1i addlidi it0e0 00id 3brtr3i ) ABCDEZFEZ
+    1re oveq2i eqtri mp4an mpbir mulridi addlidi it0e0 00id 3brtr3i ) ABCDEZFEZ
     ABADEZFEZBAGUIUKGHZAAGHZCAGHZIZUNUMJKALMZCLMUPUPULUONOROOACAAPUAUBUIABFEBUH
     BAFBQUCSBQUDTUKAAFEAUJAAFUESUFTUG $.
 
@@ -97279,7 +97279,7 @@ $)
   $( 9 + 1 = 10.  (Contributed by Mario Carneiro, 18-Apr-2015.)  (Revised by
      Stanislas Polu, 7-Apr-2020.)  (Revised by AV, 1-Aug-2021.) $)
   9p1e10 $p |- ( 9 + 1 ) = ; 1 0 $=
-    ( c1 cc0 cdc c9 caddc co cmul df-dec cn 9nn 1nn nnaddcl mp2an nncni mulid1i
+    ( c1 cc0 cdc c9 caddc co cmul df-dec cn 9nn 1nn nnaddcl mp2an nncni mulridi
     wcel oveq1i addridi 3eqtrri ) ABCDAEFZAGFZBEFTBEFTABHUATBETTDIPAIPTIPJKDALM
     NZOQTUBRS $.
 
@@ -97457,7 +97457,7 @@ $)
     $( Comparing two decimal integers (unequal higher places).  (Contributed by
        Mario Carneiro, 18-Feb-2014.) $)
     numltc $p |- ( ( T x. A ) + C ) < ( ( T x. B ) + D ) $=
-      ( cmul co caddc clt wbr cle nn0rei wcel numlt nnrei ax-1cn adddii mulid1i
+      ( cmul co caddc clt wbr cle nn0rei wcel numlt nnrei ax-1cn adddii mulridi
       c1 recni oveq2i eqtri breqtrri cn0 wb nn0ltp1le mp2an cc0 nngt0i peano2re
       mpbi cr ax-mp lemul2i remulcli readdcli ltletri nn0addge1i ) EAMNZCONZEBM
       NZPQZVHVHDONZRQVGVJPQVGEAUFONZMNZPQVLVHRQZVIVGVFEONZVLPACEEFGIFKUAVLVFEUF
@@ -97625,7 +97625,7 @@ $)
        Carneiro, 18-Feb-2014.) $)
     numsucc $p |- ( N + 1 ) = ( ( T x. B ) + 0 ) $=
       ( c1 caddc co cmul cc0 cn0 1nn0 nn0addcli nn0cni oveq2i 3eqtr4ri eqeltrri
-      eqeltri mulid1i ax-1cn adddii eqcomi numsuc num0u 3eqtri ) DKLMZCAKLMZNMZ
+      eqeltri mulridi ax-1cn adddii eqcomi numsuc num0u 3eqtri ) DKLMZCAKLMZNMZ
       CBNMZUNOLMCANMZCKNMZLMUOCLMUMUKUPCUOLCCCEKLMZPGEKFQRUCZSZUDTCAKUSAHSUEUFA
       ECCDURHFCUQGUGJUHUAULBCNITBCURULBPIAKHQRUBUIUJ $.
   $}
@@ -97648,7 +97648,7 @@ $)
   $( Ten plus an integer.  (Contributed by Mario Carneiro, 19-Apr-2015.)
      (Revised by AV, 6-Sep-2021.) $)
   dec10p $p |- ( ; 1 0 + A ) = ; 1 A $=
-    ( c1 cdc cc0 cmul co caddc dfdec10 10nn nncni mulid1i oveq1i eqtr2i ) BACBD
+    ( c1 cdc cc0 cmul co caddc dfdec10 10nn nncni mulridi oveq1i eqtr2i ) BACBD
     CZBEFZAGFNAGFBAHONAGNNIJKLM $.
 
   ${
@@ -97718,7 +97718,7 @@ $)
       $( Add two decimal integers ` M ` and ` N ` (no carry).  (Contributed by
          Mario Carneiro, 18-Feb-2014.) $)
       numadd $p |- ( M + N ) = ( ( T x. E ) + F ) $=
-        ( co caddc c1 cmul numcl eqeltri nn0cni mulid1i oveq1i 1nn0 eqtri numma
+        ( co caddc c1 cmul numcl eqeltri nn0cni mulridi oveq1i 1nn0 eqtri numma
         cn0 eqtr3i ) HUAUBSZITSHITSEFUBSGTSUMHITHHHEAUBSBTSUKOABEJKLUCUDUEUFUGA
         BCDUAEFGHIJKLMNOPUHAUAUBSZCTSACTSFUNACTAAKUEUFUGQUIBUAUBSZDTSBDTSGUOBDT
         BBLUEUFUGRUIUJUL $.
@@ -97731,7 +97731,7 @@ $)
       $( Add two decimal integers ` M ` and ` N ` (with carry).  (Contributed
          by Mario Carneiro, 18-Feb-2014.) $)
       numaddc $p |- ( M + N ) = ( ( T x. E ) + F ) $=
-        ( co c1 cmul caddc cn0 numcl eqeltri nn0cni mulid1i oveq1i 1nn0 addassi
+        ( co c1 cmul caddc cn0 numcl eqeltri nn0cni mulridi oveq1i 1nn0 addassi
         ax-1cn 3eqtr2i eqtri nummac eqtr3i ) HUAUBTZIUCTHIUCTEFUBTGUCTUQHIUCHHH
         EAUBTBUCTUDOABEJKLUEUFUGUHUIABCDUAEFGUAHIJKLMNOPUJQUJAUAUBTZCUAUCTZUCTA
         USUCTACUCTUAUCTFURAUSUCAAKUGZUHUIACUAUTCMUGULUKRUMBUAUBTZDUCTBDUCTEUAUB
@@ -97992,7 +97992,7 @@ $)
     $( The product of 11 (as numeral) with a number (no carry).  (Contributed
        by AV, 15-Jun-2021.) $)
     11multnc $p |- ( N x. ; 1 1 ) = ; N N $=
-      ( c1 cdc cmul co 1nn0 decmulnc nn0cni mulid1i deceq12i eqtri ) ACCDEFACEF
+      ( c1 cdc cmul co 1nn0 decmulnc nn0cni mulridi deceq12i eqtri ) ACCDEFACEF
       ZMDAADCCABGGHMAMAAABIJZNKL $.
   $}
 
@@ -98158,7 +98158,7 @@ $)
     $( Lemma for ~ 4t3e12 and related theorems.  (Contributed by Mario
        Carneiro, 19-Apr-2015.) $)
     4t3lem $p |- ( A x. C ) = E $=
-      ( cmul co c1 caddc oveq2i nn0cni ax-1cn adddii mulid1i eqtri oveq12i ) AC
+      ( cmul co c1 caddc oveq2i nn0cni ax-1cn adddii mulridi eqtri oveq12i ) AC
       KLABMNLZKLZECUBAKHOUCDANLZEUCABKLZAMKLZNLUDABMAFPZBGPQRUEDUFANIAUGSUATJTT
       $.
   $}
@@ -98175,7 +98175,7 @@ $)
   $( 5 times 2 equals 10.  (Contributed by NM, 5-Feb-2007.)  (Revised by AV,
      4-Sep-2021.) $)
   5t2e10 $p |- ( 5 x. 2 ) = ; 1 0 $=
-    ( c5 c1 c2 cc0 cdc 5nn0 1nn0 df-2 5cn mulid1i 5p5e10 4t3lem ) ABCABDEFGHAIJ
+    ( c5 c1 c2 cc0 cdc 5nn0 1nn0 df-2 5cn mulridi 5p5e10 4t3lem ) ABCABDEFGHAIJ
     KL $.
 
   $( 5 times 3 equals 15.  (Contributed by Mario Carneiro, 19-Apr-2015.)
@@ -98342,7 +98342,7 @@ $)
   $( 9 times 11 equals 99.  (Contributed by AV, 14-Jun-2021.)  (Revised by AV,
      6-Sep-2021.) $)
   9t11e99 $p |- ( 9 x. ; 1 1 ) = ; 9 9 $=
-    ( c9 c1 cc0 cdc cmul co caddc 9cn 10nn0 nn0cni ax-1cn mulcli adddii mulid1i
+    ( c9 c1 cc0 cdc cmul co caddc 9cn 10nn0 nn0cni ax-1cn mulcli adddii mulridi
     oveq2i mulcomi eqtri oveq12i dfdec10 3eqtr4i ) ABCDZBEFZBGFZEFZUAAEFZAGFZAB
     BDZEFAADUDAUBEFZABEFZGFUFAUBBHUABUAIJZKLKMUHUEUIAGUHAUAEFUEUBUAAEUAUJNOAUAH
     UJPQAHNRQUGUCAEBBSOAAST $.
@@ -116617,13 +116617,13 @@ $)
   $( The real part of ` _i ` .  (Contributed by Scott Fenton, 9-Jun-2006.) $)
   rei $p |- ( Re ` _i ) = 0 $=
     ( cc0 ci c1 cmul co caddc cre ax-icn ax-1cn mulcli addlidi fveq2i wcel wceq
-    cfv cr 0re 1re crre mp2an mulid1i 3eqtr3ri ) ABCDEZFEZGOZUCGOABGOUDUCGUCBCH
+    cfv cr 0re 1re crre mp2an mulridi 3eqtr3ri ) ABCDEZFEZGOZUCGOABGOUDUCGUCBCH
     IJKLAPMCPMUEANQRACSTUCBGBHUALUB $.
 
   $( The imaginary part of ` _i ` .  (Contributed by Scott Fenton,
      9-Jun-2006.) $)
   imi $p |- ( Im ` _i ) = 1 $=
-    ( ci c1 cmul cim cfv cc0 ax-icn ax-1cn mulcli addlidi eqcomi fveq2i mulid1i
+    ( ci c1 cmul cim cfv cc0 ax-icn ax-1cn mulcli addlidi eqcomi fveq2i mulridi
     co caddc cr wcel wceq 0re 1re crim mp2an 3eqtr3i ) ABCNZDEFUDONZDEZADEBUDUE
     DUEUDUDABGHIJKLUDADAGMLFPQBPQUFBRSTFBUAUBUC $.
 
@@ -116634,7 +116634,7 @@ $)
   $( The complex conjugate of the imaginary unit.  (Contributed by NM,
      26-Mar-2005.) $)
   cji $p |- ( * ` _i ) = -u _i $=
-    ( ci cre cfv cim cmul co cmin cc0 ccj cneg rei c1 imi oveq2i ax-icn mulid1i
+    ( ci cre cfv cim cmul co cmin cc0 ccj cneg rei c1 imi oveq2i ax-icn mulridi
     eqtri oveq12i cc wcel wceq remim ax-mp df-neg 3eqtr4i ) ABCZAADCZEFZGFZHAGF
     AICZAJUFHUHAGKUHALEFAUGLAEMNAOPQRASTUJUIUAOAUBUCAUDUE $.
 
@@ -126419,7 +126419,7 @@ $)
     cc wceq cdc cv csu nnnn0 expcld cap gt0ap0ii nnz divrecapd exprecapd oveq2d
     expap0d eqtr4d sumeq2i cabs cfv rerecclapi cle recgt0ii ltleii absidi ax-mp
     0re 1lt10 cr recgt1 mp2an mpbi eqbrtri geoisum1c mp3an divrecapi divcanap2i
-    ax-1cn subdii mulid1i recidapi oveq12i 10m1e9 3eqtrri 9re redivclapi subcli
+    ax-1cn subdii mulridi recidapi oveq12i 10m1e9 3eqtrri 9re redivclapi subcli
     wb eqtri mulcanapi 9pos divgt0ii dividapi 3eqtr2i ) BCDEUAZAUBZFGZHGZAUCBCD
     WKHGZWLFGZIGZAUCZDBWNWQAWLBJZWNCDWMHGZIGWQWSCWMCSJZWSKLWSWKWLWKSJWSWKMNZLZW
     LUDUEWSWKWLXCWKEUFOWSWKMPUGZLZWLUHZULUIWSWPWTCIWSWKWLXCXEXFUJUKUMUNWRCWOIGZ
@@ -130884,7 +130884,7 @@ $)
     2ap0 c1 eqtr3i cneg cmin ccos csin mpan negicn addcld subcld cc0 cap wbr wa
     efcl pm3.2i divdirap mp3an3 syl2anc pncan3d oveq2d addassd oveq1d divcanap3
     2timesd mp3an23 eqtr2d cosval 2mulicn div12ap mp3an13 sinval mullidi oveq1i
-    2muliap0 divrecap iap0 dividapi oveq2i divmuldivapi mulid1i eqtr4di oveq12d
+    2muliap0 divrecap iap0 dividapi oveq2i divmuldivapi mulridi eqtr4di oveq12d
     ax-1cn halfcn ) ABCZDAEFZGHZDUAZAEFZGHZIFZWFWIUBFZIFZJKFZWJJKFZWKJKFZIFZWFA
     UCHZDAUDHZEFZIFWDWJBCZWKBCZWMWPLZWDWFWIWDWEBCZWFBCZDBCZWDXCMDANUEWEUMOZWDWH
     BCZWIBCWGBCWDXGUFWGANUEWHUMOZUGWDWFWIXFXHUHZWTXAJBCZJUIUJUKZULXBXJXKPRUNWJW
@@ -131223,7 +131223,7 @@ $)
       3z 6cn 3eqtr3i 2nn0 eqtr3i gt0ap0ii leexp2a 8re 2nn nnexpcl nnrei ltletri
       remulcli nngt0i mulgt0ii ltdiv1ii df-5 fveq2i facp1 eqtr2i 3eqtri mulassi
       3nn0 2p2e4 expadd oveq12i mullidi dividapi ax-1cn divmuldivapi rerecclapi
-      2cn nncni mulid1i rpexpcl wa elrp ltmul2 mp3an12 sylbi mpbii cap divrecap
+      2cn nncni mulridi rpexpcl wa elrp ltmul2 mp3an12 sylbi mpbii cap divrecap
       mp3an23 breqtrrd lelttrd ) AUAFUBGHZIUCJBUDDJBUEZUFJZAIKGZIFUGGZIUHJZILGZ
       MGZLGZUWDNMGZUWAUWBUWAUIALGZUJHZIUKHZUWBUJHUWAUIUJHZAUJHZUWLULUWAAUWAAOHZ
       UAAPQZAFUMQZUAUNHFOHUWAUWPUWQUWRUOUPUQURUAFAUSVAZUTZVBZUIAVCVDZVEUWKBCDIE
@@ -137873,7 +137873,7 @@ $)
   3lcm2e6 $p |- ( 3 lcm 2 ) = 6 $=
     ( c3 c2 clcm co cmul c6 cgcd c1 wceq wne 2re 2lt3 cprime wcel mp2an 3nn 2nn
     cn cz nnzi gtneii wb 3prm 2prm prmrp mpbir oveq2i lcmgcdnn cn0 lcmcl nn0cni
-    mulid1i 3eqtr3ri 3t2e6 eqtri ) ABCDZABEDZFUPABGDZEDZUPHEDUQUPURHUPEURHIZABJ
+    mulridi 3eqtr3ri 3t2e6 eqtri ) ABCDZABEDZFUPABGDZEDZUPHEDUQUPURHUPEURHIZABJ
     ZBAKLUAAMNBMNUTVAUBUCUDABUEOUFUGARNBRNUSUQIPQABUHOUPUPASNBSNUPUINAPTBQTABUJ
     OUKULUMUNUO $.
 
@@ -179207,7 +179207,7 @@ $)
       mpbir2an divsubdirapd dividapd subsub4d addcl sylancr 2nn0 df-2 1nn0 0nn0
       eftlcl efval2 nn0uz sumeq1i addlidd eqtr2d eft0val eqtr4di exp1 fac1 div1
       eqtrdi mvrladdd 3eqtr3d absmuld eqtr3d 2nn simpr ltled eqbrtrrd df-3 fac2
-      eftlub eqtr2i oveq12i breqtrrdi sqge0d 3lt4 4cn mulid1i breqtrri 4re 4pos
+      eftlub eqtr2i oveq12i breqtrrdi sqge0d 3lt4 4cn mulridi breqtrri 4re 4pos
       2t2e4 pm3.2i ltdivmul mp3an mpbir ltleii recnd sqcld mulridd letrd sqvald
       lemul2ad absgt0ap mpbid lemul2d mpbird ad2ant2l lelttrd eqbrtrd ex sylbid
       elrpd adantld sylan2b ralrimiva brimralrspcev syl2anc rgen elrabi simprbi
@@ -180526,7 +180526,7 @@ $)
      Carneiro, 9-May-2014.) $)
   efhalfpi $p |- ( exp ` ( _i x. ( _pi / 2 ) ) ) = _i $=
     ( ci cpi c2 cdiv co cmul ce cfv ccos csin caddc cc wcel wceq picn halfcl c1
-    cc0 ax-icn eqtri efival coshalfpi sinhalfpi oveq2i mulid1i oveq12i addlidi
+    cc0 ax-icn eqtri efival coshalfpi sinhalfpi oveq2i mulridi oveq12i addlidi
     mp2b ) ABCDEZFEGHZUIIHZAUIJHZFEZKEZABLMUILMUJUNNOBPUIUAUHUNRAKEAUKRUMAKUBUM
     AQFEAULQAFUCUDASUETUFASUGTT $.
 
