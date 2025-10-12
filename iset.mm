@@ -143452,6 +143452,31 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Decimal arithmetic (cont.)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    dec2dvds.1 $e |- A e. NN0 $.
+    dec2dvds.2 $e |- B e. NN0 $.
+    dec2dvds.3 $e |- ( B x. 2 ) = C $.
+    dec2dvds.4 $e |- D = ( C + 1 ) $.
+    $( Divisibility by two is obvious in base 10.  (Contributed by Mario
+       Carneiro, 19-Apr-2015.) $)
+    dec2dvds $p |- -. 2 || ; A D $=
+      ( c2 cdc c1 caddc co cdvds wbr c5 cz wcel nn0zi 2z cc0 cmul 5nn0 dvdsmul2
+      wn mp2an 5t2e10 breqtri wi 10nn0 dvdsmultr1 mp3an ax-mp wa nn0mulcli 2nn0
+      cn0 eqeltrri dvds2add dfdec10 breqtrri cn clt deccl 2nn 1lt2 ndvdsp1 eqid
+      eqcomi decsuc breq2i mtbi ) IACJZKLMZNOZIADJZNOIVMNOZVOUEZIKUAJZAUBMZCLMZ
+      VMNIVTNOZICNOZIWANOZIVSNOZWBIPIUBMZVSNPQRIQRZIWFNOPUCSTPIUDUFUGUHWGVSQRAQ
+      RWEWBUITVSUJSAESIVSAUKULUMIBIUBMZCNBQRWGIWHNOBFSTBIUDUFGUHWGVTQRCQRWBWCUN
+      WDUITVTVSAUJEUOSCWHCUQGBIFUPUOURZSIVTCUSULUFACUTVAVMQRIVBRKIVCOVQVRUIVMAC
+      EWIVDSVEVFIVMVGULUMVNVPINACDVMEWIDCKLMHVIVMVHVJVKVL $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Cardinality of real and complex number subsets
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
