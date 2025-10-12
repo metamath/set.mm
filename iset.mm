@@ -143722,6 +143722,21 @@ $)
       ( c1 cc0 cdc cexp co cmul caddc 10nn0 numexp1 oveq2i nn0cni eqtr4i oveq1i
       mulcomi dfdec10 ) ADEFZDGHZIHZBJHSAIHZBJHABFUAUBBJUAASIHUBTSAISKLMSASKNAC
       NQOPABRO $.
+
+    decsplit.2 $e |- B e. NN0 $.
+    decsplit.3 $e |- D e. NN0 $.
+    decsplit.4 $e |- M e. NN0 $.
+    decsplit.5 $e |- ( M + 1 ) = N $.
+    decsplit.6 $e |- ( ( A x. ( ; 1 0 ^ M ) ) + B ) = C $.
+    $( Split a decimal number into two parts.  Inductive step.  (Contributed by
+       Mario Carneiro, 16-Jul-2015.)  (Revised by AV, 8-Sep-2021.) $)
+    decsplit $p |- ( ( A x. ( ; 1 0 ^ N ) ) + ; B D ) = ; C D $=
+      ( cdc cexp co cmul caddc 10nn0 nn0mulcli nn0cni cc0 addassi adddii oveq2i
+      c1 nn0expcli eqtr3i oveq1i mulcomi numexpp1 eqtri dfdec10 oveq12i 3eqtr4i
+      mul12i ) UEUAMZAUPENOZPOZPOZUPBPOZDQOZQOZUPCPOZDQOZAUPFNOZPOZBDMZQOCDMUSU
+      TQOZDQOVBVDUSUTDUSUPURRAUQGUPERJUFZSZSTUTUPBRHSTDITUBVHVCDQUPURBQOZPOVHVC
+      UPURBUPRTZURVJTBHTUCVKCUPPLUDUGUHUGVFUSVGVAQVFAUPUQPOZPOUSVEVMAPUPVMEFRJK
+      UQUPUQVITZVLUIUJUDAUPUQAGTVLVNUOUKBDULUMCDULUN $.
   $}
 
 
