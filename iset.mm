@@ -143785,6 +143785,13 @@ $)
   2exp4 $p |- ( 2 ^ 4 ) = ; 1 6 $=
     ( c2 c1 c6 cdc c4 2nn0 2t2e4 sq2 4t4e16 numexp2x ) ABCDEAEFFGHIJ $.
 
+  $( Two to the fifth power is 32.  (Contributed by AV, 16-Aug-2021.) $)
+  2exp5 $p |- ( 2 ^ 5 ) = ; 3 2 $=
+    ( c2 c5 cexp co c8 c4 cmul c3 cdc caddc 3p2e5 eqcomi oveq2i cc wcel cn0 2cn
+    wceq 3nn0 eqtri 2nn0 expadd mp3an cu2 sq2 oveq12i 8t4e32 ) ABCDZEFGDZHAIUHA
+    HAJDZCDZUIBUJACUJBKLMUKAHCDZAACDZGDZUIANOHPOAPOUKUNRQSUAAHAUBUCULEUMFGUDUEU
+    FTTUGT $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
