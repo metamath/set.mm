@@ -143600,6 +143600,25 @@ $)
       ZXQVGVKVKVSVT $.
   $}
 
+  ${
+    modsubi.1 $e |- N e. NN $.
+    modsubi.2 $e |- A e. NN $.
+    modsubi.3 $e |- B e. NN0 $.
+    modsubi.4 $e |- M e. NN0 $.
+    modsubi.6 $e |- ( A mod N ) = ( K mod N ) $.
+    modsubi.5 $e |- ( M + B ) = K $.
+    $( Subtract from within a mod calculation.  (Contributed by Mario Carneiro,
+       18-Feb-2014.) $)
+    modsubi $p |- ( ( A - B ) mod N ) = ( M mod N ) $=
+      ( caddc co cmo cmin wceq wtru wcel cq mp1i cneg cn nnq nn0addcli eqeltrri
+      cz cn0 nn0zi nn0negzi cc0 clt wbr nngt0 a1i modqadd1 mptru nn0cni negsubi
+      zq nncni oveq1i cr nn0rei recni subadd2i mpbir eqtri 3eqtr3i ) ABUAZLMZEN
+      MZCVILMZENMZABOMZENMDENMVKVMPQACVIEAUBRASRQGAUCTCUFRCSRQCDBLMZCUGKDBIHUDZ
+      UEUHCUSTVIUFRVISRQBHUIVIUSTEUBRZESRQFEUCTVQUJEUKULQFEUMTAENMCENMPQJUNUOUP
+      VJVNENABAGUTBHUQZURVAVLDENVLCBOMZDCBCVOCVBKVOVPVCUEVDZVRURVSDPVOCPKCBDVTV
+      RDIUQVEVFVGVAVH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
