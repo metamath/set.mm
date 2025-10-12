@@ -1245,6 +1245,11 @@ elimination.</TD>
   <TD>~ con1dc</TD>
 </TR>
 
+<tr>
+  <td>ja</td>
+  <td>~ jadc</td>
+</tr>
+
 <TR>
 <TD>pm2.61 , pm2.61d , pm2.61d1 , pm2.61d2 , pm2.61i , pm2.61ii , pm2.61nii ,
 pm2.61iii , pm2.61ian , pm2.61dan , pm2.61ddan , pm2.61dda , pm2.61ine , pm2.61ne ,
@@ -1275,6 +1280,11 @@ then case elimination will work using theorems such as ~ exmiddc and ~ mpjaodan<
 <TD>impcon4bid, con4bid, notbi, con1bii, con4bii, con2bii</TD>
 <TD>~ con3 , ~ condc</TD>
 </TR>
+
+<tr>
+  <td>bija</td>
+  <td>~ bijadc</td>
+</tr>
 
 <TR>
 <TD>xor3 , nbbn</TD>
@@ -14173,20 +14183,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>dvmptid</td>
-  <td>~ dvmptidcn</td>
-  <td>the version for real numbers would presumably
-  be provable as well</td>
-</tr>
-
-<tr>
-  <td>dvmptc</td>
-  <td>~ dvmptccn</td>
-  <td>the version for real numbers would presumably
-  be provable as well</td>
-</tr>
-
-<tr>
   <td>dvmptcl</td>
   <td>~ dvmptclx</td>
   <td>adds a ` X C_ S ` hypothesis</td>
@@ -14289,17 +14285,10 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>dvmptfsum</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses dvmptc and dvmptres</td>
-</tr>
-
-<tr>
   <td>dvcnvlem , dvcnv</td>
   <td><i>none</i></td>
-  <td>Not equal would need to change to apart and
-  notation for the topology on the complex numbers would
-  change. More seriously, the set.mm proof uses limcco .
+  <td>Not equal would need to change to apart.
+  More seriously, the set.mm proof uses limcco .
   Changing to ~ limccoap may
   be possible given a condition along the lines of
   ` A. x e. X A. y e. X ( x =//= y <-> ( F `` x ) =//= ( F `` y ) ` .
@@ -15249,12 +15238,6 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>may be feasible if we defined Dirichlet characters
   ( DChr syntax)</td>
-</tr>
-
-<tr>
-  <td>2lgsoddprm</td>
-  <td><i>none</i></td>
-  <td>should be feasible now that we have ~ 2lgs</td>
 </tr>
 
 <tr>

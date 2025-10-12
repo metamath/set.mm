@@ -13805,6 +13805,7 @@
 "tbwlem4" is used by "tbwlem5".
 "tbwlem5" is used by "re1luk3".
 "tbwsyl" is used by "re1luk2".
+"tbwsyl" is used by "re1luk3".
 "tbwsyl" is used by "tbwlem1".
 "tbwsyl" is used by "tbwlem2".
 "tbwsyl" is used by "tbwlem3".
@@ -19549,7 +19550,7 @@ New usage of "tbwlem2" is discouraged (1 uses).
 New usage of "tbwlem3" is discouraged (1 uses).
 New usage of "tbwlem4" is discouraged (2 uses).
 New usage of "tbwlem5" is discouraged (1 uses).
-New usage of "tbwsyl" is discouraged (6 uses).
+New usage of "tbwsyl" is discouraged (7 uses).
 New usage of "tendospcanN" is discouraged (1 uses).
 New usage of "tfr1ALT" is discouraged (0 uses).
 New usage of "tfr2ALT" is discouraged (0 uses).
@@ -21117,7 +21118,7 @@ Proof modification of "merco1lem13" is discouraged (66 steps).
 Proof modification of "merco1lem14" is discouraged (86 steps).
 Proof modification of "merco1lem15" is discouraged (26 steps).
 Proof modification of "merco1lem16" is discouraged (45 steps).
-Proof modification of "merco1lem17" is discouraged (188 steps).
+Proof modification of "merco1lem17" is discouraged (220 steps).
 Proof modification of "merco1lem18" is discouraged (131 steps).
 Proof modification of "merco1lem2" is discouraged (47 steps).
 Proof modification of "merco1lem3" is discouraged (83 steps).
@@ -21415,8 +21416,8 @@ Proof modification of "re1ax2lem" is discouraged (61 steps).
 Proof modification of "re1axmp" is discouraged (19 steps).
 Proof modification of "re1luk1" is discouraged (4 steps).
 Proof modification of "re1luk2" is discouraged (51 steps).
-Proof modification of "re1luk3" is discouraged (71 steps).
-Proof modification of "re1tbw1" is discouraged (44 steps).
+Proof modification of "re1luk3" is discouraged (75 steps).
+Proof modification of "re1tbw1" is discouraged (87 steps).
 Proof modification of "re1tbw2" is discouraged (41 steps).
 Proof modification of "re1tbw3" is discouraged (38 steps).
 Proof modification of "re1tbw4" is discouraged (88 steps).
@@ -21652,8 +21653,8 @@ Proof modification of "tbw-ax3" is discouraged (3 steps).
 Proof modification of "tbw-ax4" is discouraged (2 steps).
 Proof modification of "tbw-bijust" is discouraged (70 steps).
 Proof modification of "tbw-negdf" is discouraged (39 steps).
-Proof modification of "tbwlem1" is discouraged (61 steps).
-Proof modification of "tbwlem2" is discouraged (76 steps).
+Proof modification of "tbwlem1" is discouraged (65 steps).
+Proof modification of "tbwlem2" is discouraged (80 steps).
 Proof modification of "tbwlem3" is discouraged (49 steps).
 Proof modification of "tbwlem4" is discouraged (91 steps).
 Proof modification of "tbwlem5" is discouraged (42 steps).
