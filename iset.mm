@@ -143815,6 +143815,16 @@ $)
     CVCVDJUFUGUKLDEBCUHQULUIUJEDLDDTVCNMNVENVAEDSPZTRPDTRPLVFDTRDQUMUNUOUPUQURU
     SUT $.
 
+  $( Two to the eleventh power is 2048.  (Contributed by AV, 16-Aug-2021.) $)
+  2exp11 $p |- ( 2 ^ ; 1 1 ) = ; ; ; 2 0 4 8 $=
+    ( c2 c1 cdc cexp co c8 c3 cmul cc0 c4 wcel 8nn0 eqtri c5 2nn0 4nn0 0nn0 8cn
+    c6 mulcomli caddc 8p3e11 eqcomi oveq2i cn0 wceq 2cn 3nn0 expadd mp3an 2exp8
+    cc cu2 oveq12i 5nn0 deccl 6nn0 eqid 8t2e16 1p1e2 6p4e10 decaddci 5cn 8t5e40
+    1nn0 decmul1c 4cn addlidi decaddi 6cn 8t6e48 ) ABBCZDEZAFDEZAGDEZHEZAICZJCZ
+    FCZVMAFGUAEZDEZVPVLVTADVTVLUBUCUDAULKFUEKGUEKWAVPUFUGLUHAFGUIUJMVPANCZSCZFH
+    EVSVNWCVOFHUKUMUNWBSVRFFJWCLANOUOUPUQWCURLPVQIJWBFHEJAIOQUPQPANVQIFJWBLOUOW
+    BURQPBSIAAFHEJVEUQPFABSCRUGUSTUTQVAVBFNJICRVCVDTVFJVGVHVIFSJFCRVJVKTVFMM $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
