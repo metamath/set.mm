@@ -143475,6 +143475,18 @@ $)
       EWIVDSVEVFIVMVGULUMVNVPINACDVMEWIDCKLMHVIVMVHVJVKVL $.
   $}
 
+  ${
+    dec5dvds.1 $e |- A e. NN0 $.
+    dec5dvds.2 $e |- B e. NN $.
+    dec5dvds.3 $e |- B < 5 $.
+    $( Divisibility by five is obvious in base 10.  (Contributed by Mario
+       Carneiro, 19-Apr-2015.) $)
+    dec5dvds $p |- -. 5 || ; A B $=
+      ( c5 cdc c2 cmul co 5nn 2nn0 nn0mulcli caddc c1 cc0 5cn 2cn nn0cni oveq1i
+      mulassi 5t2e10 eqtr3i dfdec10 eqtr4i ndvdsi ) FABGZHAIJZBKHALCMDFUHIJZBNJ
+      OPGZAIJZBNJUGUIUKBNFHIJZAIJUIUKFHAQRACSUAULUJAIUBTUCTABUDUEEUF $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
