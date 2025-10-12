@@ -143559,6 +143559,17 @@ $)
         ( c2 cmul co caddc nn0cni 2timesi eqtr3i modxai ) ABBCDEEFGHIJKLMJLNNQB
         RSBBTSDBBJUAUBOUCPUD $.
     $}
+
+    ${
+      modxp1i.9 $e |- ( ( A ^ B ) mod N ) = ( K mod N ) $.
+      modxp1i.7 $e |- ( B + 1 ) = E $.
+      modxp1i.8 $e |- ( ( D x. N ) + M ) = ( K x. A ) $.
+      $( Add one to an exponent in a power mod calculation.  (Contributed by
+         Mario Carneiro, 21-Feb-2014.) $)
+      modxp1i $p |- ( ( A ^ E ) mod N ) = ( M mod N ) $=
+        ( c1 1nn0 nnnn0i cexp co cmo wcel wceq nncni exp1 ax-mp oveq1i modxai
+        cc ) ABQCDEAFGHIJKLMRAISNAQTUAZAGUBAUJUCUKAUDAIUEAUFUGUHOPUI $.
+    $}
   $}
 
 
