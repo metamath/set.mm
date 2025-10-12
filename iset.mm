@@ -143849,6 +143849,26 @@ $)
     ( c3 c2 c7 cdc 3nn0 2nn0 2p1e3 cexp co cmul c9 oveq1i 9t3e27 eqtri numexpp1
     sq3 ) ABCDZBAEFGABHIZAJIKAJIQRKAJPLMNO $.
 
+  ${
+    $d n x $.  $d x N $.
+    $( The factorial grows faster than two to the power ` N ` .  (Contributed
+       by Mario Carneiro, 15-Sep-2016.) $)
+    2expltfac $p |- ( N e. ( ZZ>= ` 4 ) -> ( 2 ^ N ) < ( ! ` N ) ) $=
+      ( c2 cexp co cfa cfv clt wbr c1 c4 wceq oveq2 fveq2 breq12d wcel cmul a1i
+      cn nnred remulcld vx vn cv c6 caddc 2exp4 eqtrdi fac4 1nn0 2nn0 6nn0 4nn0
+      cdc 6lt10 1lt2 decltc cuz wa 2nn 4nn simpl eluznn sylancr nnnn0d nnexpcld
+      2re faccld 1red readdcld crp 2rp simpr ltmul1dd nn0ge0d cle df-2 leadd1dd
+      cr nnge1d eqbrtrid lemul2ad ltletrd 2cnd expp1d cn0 facp1 3brtr4d uzind4i
+      syl ex ) BUAUCZCDZWKEFZGHIUDUMZBJUMZGHBUBUCZCDZWPEFZGHZBWPIUEDZCDZWTEFZGH
+      ZBACDZAEFZGHUAUBJAWKJKZWLWNWMWOGXFWLBJCDWNWKJBCLUFUGXFWMJEFWOWKJEMUHUGNWK
+      WPKWLWQWMWRGWKWPBCLWKWPEMNWKWTKWLXAWMXBGWKWTBCLWKWTEMNWKAKWLXDWMXEGWKABCL
+      WKAEMNIBUDJUIUJUKULUNUOUPWPJUQFOZWSXCXGWSURZWQBPDZWRWTPDZXAXBGXHXIWRBPDXJ
+      XHWQBXHWQXHBWPBROXHUSQXHWPXHJROXGWPROUTXGWSVAWPJVBVCZVDZVESZBVROXHVFQZTXH
+      WRBXHWRXHWPXLVGZSZXNTXHWRWTXPXHWPIXHWPXKSZXHVHZVIZTXHWQWRBXMXPBVJOXHVKQXG
+      WSVLVMXHBWTWRXNXSXPXHWRXHWRXOVDVNXHBIIUEDWTVOVPXHIWPIXRXQXRXHWPXKVSVQVTWA
+      WBXHBWPXHWCXLWDXHWPWEOXBXJKXLWPWFWIWGWJWH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
