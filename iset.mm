@@ -68319,6 +68319,22 @@ $)
     PUDUEQRT $.
 
   ${
+    $d A x y $.  $d B y $.  $d C x y $.
+    prfidceq.a $e |- ( ph -> A e. C ) $.
+    prfidceq.b $e |- ( ph -> B e. C ) $.
+    prfidceq.dc $e |- ( ph -> A. x e. C A. y e. C DECID x = y ) $.
+    $( A pair is finite if it consists of elements of a class with decidable
+       equality.  (Contributed by Jim Kingdon, 13-Oct-2025.) $)
+    prfidceq $p |- ( ph -> { A , B } e. Fin ) $=
+      ( wceq cpr cfn wcel wn wa syl wdc cv wral dcbid csn snfig adantr wb dfsn2
+      preq2 eqtrid eleq1d adantl mpbid wne neqne prfidisj syl2an3an wo wi eqeq1
+      eqeq2 rspc2v syl2anc mpd exmiddc mpjaodan ) ADEJZDEKZLMZVDNZAVDODUAZLMZVF
+      AVIVDADFMZVIGDFUBPUCVDVIVFUDAVDVHVELVDVHDDKVEDUEDEDUFUGUHUIUJAVJEFMZVGDEU
+      KVFGHDEULDEFFUMUNAVDQZVDVGUOABRZCRZJZQZCFSBFSZVLIAVJVKVQVLUPGHVPVLDVNJZQB
+      CDEFFVMDJVOVRVMDVNUQTVNEJVRVDVNEDURTUSUTVAVDVBPVC $.
+  $}
+
+  ${
     tpfidisj.a $e |- ( ph -> A e. V ) $.
     tpfidisj.b $e |- ( ph -> B e. W ) $.
     tpfidisj.c $e |- ( ph -> C e. X ) $.
