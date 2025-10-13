@@ -182378,6 +182378,18 @@ $)
     RUAZUSBUNUOUPURUBZNUSCUNUOUPURUCZNUDUSUTVBVAVCIUSAUEEZUOUTVBOUSAVDUSPHAUSUF
     USUGVDPHIJUSUHUIVEUJUKZVFABQRUSVHUPVAVCOVIVGACQRULUM $.
 
+  ${
+    ltexp2d.a $e |- ( ph -> A e. RR ) $.
+    ltexp2d.2 $e |- ( ph -> M e. ZZ ) $.
+    ltexp2d.3 $e |- ( ph -> N e. ZZ ) $.
+    ltexp2d.4 $e |- ( ph -> 1 < A ) $.
+    $( Ordering relationship for exponentiation.  (Contributed by Mario
+       Carneiro, 28-May-2016.) $)
+    ltexp2d $p |- ( ph -> ( M < N <-> ( A ^ M ) < ( A ^ N ) ) ) $=
+      ( cr wcel cz c1 clt wbr cexp co wb ltexp2 syl31anc ) ABIJCKJDKJLBMNCDMNBC
+      OPBDOPMNQEFGHBCDRS $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
