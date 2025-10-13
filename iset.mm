@@ -68351,6 +68351,27 @@ $)
   $}
 
   ${
+    $d A x y $.  $d B y $.  $d C x y $.  $d D x y $.
+    tpfidceq.a $e |- ( ph -> A e. D ) $.
+    tpfidceq.b $e |- ( ph -> B e. D ) $.
+    tpfidceq.c $e |- ( ph -> C e. D ) $.
+    tpfidceq.dc $e |- ( ph -> A. x e. D A. y e. D DECID x = y ) $.
+    $( A triple is finite if it consists of elements of a class with decidable
+       equality.  (Contributed by Jim Kingdon, 13-Oct-2025.) $)
+    tpfidceq $p |- ( ph -> { A , B , C } e. Fin ) $=
+      ( csn cfn wcel wceq wb syl adantr wdc dcbid ctp cpr cun df-tp wn wa snssg
+      wss biimpa ssequn2 sylib prfidceq eqeltrd simpr unsnfi syl3anc wo cv wral
+      eqeq1 eqeq2 rspc2va syl21anc elsng mpbird dcun df-pr eleq2i dcbii exmiddc
+      sylibr mpjaodan eqeltrid ) ADEFUADEUBZFLZUCZMDEFUDAFVNNZVPMNZVQUEZAVQUFZV
+      PVNMVTVOVNUHZVPVNOAVQWAAFGNZVQWAPJFVNGUGQUIVOVNUJUKAVNMNZVQABCDEGHIKULZRU
+      MAVSUFWCWBVSVRAWCVSWDRAWBVSJRAVSUNVNFGUOUPAVQSZVQVSUQAFDLZELZUCZNZSWEAWFW
+      GFAFWFNZSFDOZSZAWBDGNBURZCURZOZSZCGUSBGUSZWLJHKWPWLFWNOZSZBCFDGGWMFOWOWRW
+      MFWNUTTZWNDOWRWKWNDFVATVBVCAWJWKAWBWJWKPJFDGVDQTVEAFWGNZSFEOZSZAWBEGNWQXC
+      JIKWPXCWSBCFEGGWTWNEOWRXBWNEFVATVBVCAXAXBAWBXAXBPJFEGVDQTVEVFVQWIVNWHFDEV
+      GVHVIVKVQVJQVLVM $.
+  $}
+
+  ${
     $d x y z w v f A $.
     $( If a class is closed under pairwise intersections, then it is closed
        under nonempty finite intersections.  The converse would appear to
