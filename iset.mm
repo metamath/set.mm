@@ -84297,10 +84297,10 @@ $)
       VAWPABGJJVBVCVRWDVDSABHIJKILZJNHLXFNHRSHXFVEVFWEWBSVTWAVGZVFWCKVHSXEKVIVP
       VJVKVLKVRVMVNWBABJXGVOABJJJKVQVN $.
 
-    $( Multiplication is an operation on the complex numbers.  This theorem can
-       be used as an alternate axiom for complex numbers in place of the less
-       specific ~ axmulcl .  This construction-dependent theorem should not be
-       referenced directly; instead, use ~ ax-mulf .  (Contributed by NM,
+    $( Multiplication is an operation on the complex numbers.  This is the
+       construction-dependent version of ~ ax-mulf and it should not be
+       referenced outside the construction.  We generally prefer to develop our
+       theory using the less specific ~ mulcl .  (Contributed by NM,
        8-Feb-2005.)  (New usage is discouraged.) $)
     axmulf $p |- x. : ( CC X. CC ) --> CC $=
       ( vx vy vw vv vu vf vz vb va cc cmul cv co wcel wceq wa cop cmr wex wtru
@@ -85486,17 +85486,14 @@ $)
   ax-addf $a |- + : ( CC X. CC ) --> CC $.
   $( $j restatement 'ax-addf' of 'axaddf'; $)
 
-  $( Multiplication is an operation on the complex numbers.  This deprecated
-     axiom is provided for historical compatibility but is not a bona fide
-     axiom for complex numbers (independent of set theory) since it cannot be
-     interpreted as a first- or second-order statement (see
-     ~ https://us.metamath.org/downloads/schmidt-cnaxioms.pdf ).  It may be
-     deleted in the future and should be avoided for new theorems.  Instead,
-     the less specific ~ ax-mulcl should be used.  Note that uses of ~ ax-mulf
-     can be eliminated by using the defined operation
-     ` ( x e. CC , y e. CC |-> ( x x. y ) ) ` in place of ` x. ` , from which
-     this axiom (with the defined operation in place of ` x. ` ) follows as a
-     theorem.
+  $( Multiplication is an operation on the complex numbers.  This axiom tells
+     us that ` x. ` is defined only on complex numbers which is analogous to
+     the way that other operations are defined, for example see ~ subf or
+     ~ eff .  However, while Metamath can handle this axiom, if we wish to work
+     with weaker complex number axioms, we can avoid it by using the less
+     specific ~ mulcl .  Note that uses of ~ ax-mulf can be eliminated by using
+     the defined operation ` ( x e. CC , y e. CC |-> ( x x. y ) ) ` in place of
+     ` x. ` , as seen in ~ mpomulf .
 
      This axiom is justified by Theorem ~ axmulf .  (New usage is discouraged.)
      (Contributed by NM, 19-Oct-2004.) $)
@@ -178028,6 +178025,74 @@ $)
   $}
 
   ${
+    $d B x z $.  $d F w x z $.  $d ph x z $.
+    dvidrelem.1 $e |- ( ph -> F : RR --> CC ) $.
+    dvidrelem.2 $e |- ( ( ph /\ ( x e. RR /\ z e. RR /\ z =//= x ) ) ->
+                  ( ( ( F ` z ) - ( F ` x ) ) / ( z - x ) ) = B ) $.
+    dvidrelem.3 $e |- B e. CC $.
+    $( Lemma for ~ dvidre and ~ dvconstre .  Analogue of ~ dvidlemap for real
+       numbers rather than complex numbers.  (Contributed by Jim Kingdon,
+       3-Oct-2025.) $)
+    dvidrelem $p |- ( ph -> ( RR _D F ) = ( RR X. { B } ) ) $=
+      ( vw cr co cc wf wcel wss ax-resscn a1i cfv climc wceq cdv csn reex dvfpm
+      cxp cdm cpm cnex fpm syl ssidd dvbss cv wa wrel wbr reldvg syl2anc adantr
+      cioo crn ctg cnt cap crab cmin cdiv cmpt simpr ctop retop uniretop ntrtop
+      ax-mp eleqtrrdi cres limcresi ccncf cncfmptc eqidd cnmptlimc sselid breq1
+      mp3an12i elrab 3exp2 imp43 sylan2b mpteq2dva ssrab2 resmpt eqtr4di oveq1d
+      eleqtrrd cabs ccom cmopn eqid tgioo2cntop mpbir2and releldm eqelssd feq2d
+      eldvap mpbid ffnd wfn fnconstg mp1i ffund funbrfvb mpbird fvconst2g sylan
+      wfun wb eqtr4d eqfnfvd ) ABJJEUAKZJDUBUEZAJLXSAXSUFZLXSMZJLXSMAELJUGKNZYB
+      AJLEMZYCFJLEUCUHUIUJZEUDUJZAYAJLXSABYAJAJJEJLOZAPQZFAJUKULABUMZJNZUNZXSUO
+      ZYIDXSUPZYIYANZAYLYJAYGYCYLYHYEJEUQURUSYKYMYIJUTVAVBRZVCRRZNDCIUMZYIVDUPZ
+      IJVEZCUMZERYIERVFKYTYIVFKVGKZVHZYISKZNYKYIJYPAYJVIZYOVJNYPJTVKYOJVLVMVNVO
+      YKDCJDVHZYSVPZYISKZUUCYKUUEYISKUUGDYIYSUUEVQYKCJYILDDDLNZYGYKLLOUUEJLVRKN
+      HPYKLUKCDJLVSWDUUDYTYITDVTWAWBYKUUBUUFYISYKUUBCYSDVHZUUFYKCYSUUADYTYSNYKY
+      TJNZYTYIVDUPZUNUUADTZYRUUKIYTJYQYTYIVDWCWEAYJUUJUUKUULAYJUUJUUKUULGWFWGWH
+      WIYSJOUUFUUITYRIJWJCJYSDWKVNWLWMWNYKCIJYIDJYOEUUBWOVFWPWQRZUUMUUMWRZWSUUN
+      UUBWRYGYKPQAYDYJFUSYKJUKXDWTZYIDXSXAURZXBXCXEXFUUHXTJXGAHJDLXHXIYKYIXSRZD
+      YIXTRZYKUUQDTZYMUUOYKXSXOYNUUSYMXPYKYALXSAYBYJYFUSXJUUPYIDXSXKURXLAUUHYJU
+      URDTUUHAHQJDYILXMXNXQXR $.
+  $}
+
+  ${
+    $d x z B $.  $d x z w F $.  $d x z ph $.  $d S w x z $.  $d X w x z $.
+    dvidsslem.s $e |- ( ph -> S e. { RR , CC } ) $.
+    dvidsslem.j $e |- J = ( K |`t S ) $.
+    dvidsslem.k $e |- K = ( MetOpen ` ( abs o. - ) ) $.
+    dvidsslem.1 $e |- ( ph -> F : X --> CC ) $.
+    dvidsslem.x $e |- ( ph -> X e. J ) $.
+    dvidsslem.2 $e |- ( ( ph /\ ( x e. X /\ z e. X /\ z =//= x ) ) ->
+                  ( ( ( F ` z ) - ( F ` x ) ) / ( z - x ) ) = B ) $.
+    dvidsslem.3 $e |- B e. CC $.
+    $( Lemma for ~ dvconstss .  Analogue of ~ dvidlemap where ` F ` is defined
+       on an open subset of the real or complex numbers.  (Contributed by Jim
+       Kingdon, 3-Oct-2025.) $)
+    dvidsslem $p |- ( ph -> ( S _D F ) = ( X X. { B } ) ) $=
+      ( co cc wcel wss vw cdv csn cxp cdm wf cr cpr cpm cvv ssidd crest eqsstri
+      cpw restsspw sselid elpwid cnex a1i pmss12g syl22anc syl3anc sseldd dvfgg
+      fpmg syl2anc recnprss syl dvbss cv wa wrel wbr reldvg adantr cnt cfv crab
+      cap cmin cdiv cmpt climc ctop wceq cntoptop resttop isopn3i eqcomd eleq2d
+      eqeltrid biimpa limcresi ccncf sstrd cncfmptc simpr eqidd cnmptlimc breq1
+      elrab 3exp2 imp43 sylan2b mpteq2dva ssrab2 resmpt eqtr4di oveq1d eleqtrrd
+      cres ax-mp eqid eldvap mpbir2and releldm eqelssd feq2d mpbid wfn fnconstg
+      wb ffnd mp1i wfun ffund funbrfvb mpbird fvconst2g sylan eqtr4d eqfnfvd )
+      ABIEFUBQZIDUCUDZAIRYMAYMUEZRYMUFZIRYMUFAEUGRUHZSZFREUIQZSZYPJARIUIQZYSFAR
+      RTZIETRUJSZYRUUAYSTARUKZAIEAGEUNZIGHEULQZUUEKEHUOUMNUPUQZUUCAURUSZJRIREUJ
+      YQUTVAAIGSZUUCIRFUFFUUASNUUHMIRFGUJVEVBVCZEFVDVFZAYOIRYMABYOIAIEFAYRERTZJ
+      EVGVHZMUUGVIABVJZISZVKZYMVLZUUNDYMVMZUUNYOSZAUUQUUOAUULYTUUQUUMUUJEFVNVFV
+      OUUPUURUUNIGVPVQVQZSZDCUAVJZUUNVSVMZUAIVRZCVJZFVQUUNFVQVTQUVEUUNVTQWAQZWB
+      ZUUNWCQZSZAUUOUVAAIUUTUUNAUUTIAGWDSUUIUUTIWEAGUUFWDKAHWDSZYRUUFWDSUVJAHLW
+      FUSJEHYQWGVFWKNIGWHVFWIWJWLUUPDCIDWBZUVDXKZUUNWCQZUVHUUPUVKUUNWCQUVMDUUNU
+      VDUVKWMUUPCIUUNRDDAUVKIRWNQSZUUOADRSZIRTUUBUVNUVOAPUSZAIERUUGUUMWOUUDCDIR
+      WPVBVOAUUOWQUVEUUNWEDWRWSUPUUPUVGUVLUUNWCUUPUVGCUVDDWBZUVLUUPCUVDUVFDUVEU
+      VDSUUPUVEISZUVEUUNVSVMZVKUVFDWEZUVCUVSUAUVEIUVBUVEUUNVSWTXAAUUOUVRUVSUVTA
+      UUOUVRUVSUVTOXBXCXDXEUVDITUVLUVQWEUVCUAIXFCIUVDDXGXLXHXIXJAUURUVAUVIVKYBU
+      UOACUAIUUNDEGFUVGHKLUVGXMUUMMUUGXNVOXOZUUNDYMXPVFZXQXRXSYCUVOYNIXTAPIDRYA
+      YDUUPUUNYMVQZDUUNYNVQZUUPUWCDWEZUURUWAUUPYMYEUUSUWEUURYBUUPYORYMAYPUUOUUK
+      VOYFUWBUUNDYMYGVFYHAUVOUUOUWDDWEUVPIDUUNRYIYJYKYL $.
+  $}
+
+  ${
     $d x z A $.
     $( Derivative of a constant function.  (Contributed by Mario Carneiro,
        8-Aug-2014.)  (Revised by Jim Kingdon, 2-Aug-2023.) $)
@@ -178048,6 +178113,53 @@ $)
       BHUSCCUSMCCUSNLCOCCUSUAUBAPZCQZBPZCQZVBUTUCUDZUEZVBUSSZUTUSSZRGZVBUTRGZUF
       GHKLVEVHVIVEVBUTVAVCVDUGZVAVCVDUHZUIVEVBUTVJVKVAVCVDUJULVAVCVHVIKVDVCVAVF
       VBVGUTRCVBTCUTTUKUMUNUOUPUQUR $.
+  $}
+
+  ${
+    $d x z A $.
+    $( Real derivative of a constant function.  (Contributed by Jim Kingdon,
+       3-Oct-2025.) $)
+    dvconstre $p |- ( A e. CC
+        -> ( RR _D ( RR X. { A } ) ) = ( RR X. { 0 } ) ) $=
+      ( vx vz cc wcel cc0 cr csn cxp fconst6g cv cap cfv cmin co cdiv fvconst2g
+      wceq eqtrd recnd wbr w3a wa simpr2 syldan 3ad2antr1 oveq12d adantr oveq1d
+      subid simpr1 subcld simpr3 subap0d div0apd 0cn dvidrelem ) ADEZBCFGAHIZGA
+      DJURBKZGEZCKZGEZVBUTLUAZUBZUCZVBUSMZUTUSMZNOZVBUTNOZPOFVJPOFVFVIFVJPVFVIA
+      ANOZFVFVGAVHANURVEVCVGARURVAVCVDUDZGAVBDQUEURVCVAVHARVDGAUTDQUFUGURVKFRVE
+      AUJUHSUIVFVJVFVBUTVFVBVLTZVFUTURVAVCVDUKTZULVFVBUTVMVNURVAVCVDUMUNUOSUPUQ
+      $.
+
+    $( Real derivative of the identity function.  (Contributed by Jim Kingdon,
+       3-Oct-2025.) $)
+    dvidre $p |- ( RR _D ( _I |` RR ) ) = ( RR X. { 1 } ) $=
+      ( vx vz cr cid cres cdv co c1 csn cxp wceq wtru cc wf1o cv wcel cfv recnd
+      cmin fvresi f1oi f1of mp1i wss ax-resscn a1i fssd cap wbr w3a simp2 simp1
+      cdiv subcld subap0d oveqan12rd 3adant3 diveqap1bd adantl ax-1cn dvidrelem
+      wf simp3 mptru ) CDCEZFGCHIJKLABHVELCCMVECCVENCCVEVBLCUACCVEUBUCCMUDLUEUF
+      UGAOZCPZBOZCPZVHVFUHUIZUJZVHVEQZVFVEQZSGZVHVFSGZUMGHKLVKVNVOVKVHVFVKVHVGV
+      IVJUKRZVKVFVGVIVJULRZUNVKVHVFVPVQVGVIVJVCUOVGVIVNVOKVJVIVGVLVHVMVFSCVHTCV
+      FTUPUQURUSUTVAVD $.
+  $}
+
+  ${
+    $d X x z $.  $d S x z $.  $d ph x z $.  $d A x z $.
+    dvconstss.s $e |- ( ph -> S e. { RR , CC } ) $.
+    dvconstss.j $e |- J = ( K |`t S ) $.
+    dvconstss.k $e |- K = ( MetOpen ` ( abs o. - ) ) $.
+    dvconstss.x $e |- ( ph -> X e. J ) $.
+    dvconstss.a $e |- ( ph -> A e. CC ) $.
+    $( Derivative of a constant function defined on an open set.  (Contributed
+       by Jim Kingdon, 6-Oct-2025.) $)
+    dvconstss $p |- ( ph -> ( S _D ( X X. { A } ) ) = ( X X. { 0 } ) ) $=
+      ( vx vz cc0 cc wcel syl cmin co cdiv csn cxp wf fconst6g cap wbr w3a wceq
+      cv wa simpr2 fvconst2g syl2an2r simpr1 oveq12d adantr subidd eqtrd oveq1d
+      cfv wss cpw crest restsspw eqsstri sselid elpwid cr recnprss sstrd sseldd
+      cpr subcld simpr3 subap0d div0apd 0cn dvidsslem ) ALMNCFBUAUBZDEFGHIABOPZ
+      FOVSUCKFBOUDQJALUIZFPZMUIZFPZWCWAUEUFZUGZUJZWCVSUTZWAVSUTZRSZWCWARSZTSNWK
+      TSNWGWJNWKTWGWJBBRSNWGWHBWIBRAVTWFWDWHBUHKAWBWDWEUKZFBWCOULUMAVTWFWBWIBUH
+      KAWBWDWEUNZFBWAOULUMUOWGBAVTWFKUPUQURUSWGWKWGWCWAWGFOWCAFOVAWFAFCOAFCADCV
+      BZFDECVCSWNHCEVDVEJVFVGACVHOVLPCOVAGCVIQVJUPZWLVKZWGFOWAWOWMVKZVMWGWCWAWP
+      WQAWBWDWEVNVOVPURVQVR $.
   $}
 
   ${
@@ -178590,13 +178702,39 @@ $)
 
   ${
     $d A x $.
-    dvmptc.2 $e |- ( ph -> A e. CC ) $.
+    dvmptccn.2 $e |- ( ph -> A e. CC ) $.
     $( Function-builder for derivative: derivative of a constant.  (Contributed
        by Mario Carneiro, 1-Sep-2014.)  (Revised by Jim Kingdon,
        30-Dec-2023.) $)
     dvmptccn $p |- ( ph -> ( CC _D ( x e. CC |-> A ) ) = ( x e. CC |-> 0 ) ) $=
       ( cc csn cxp cdv cc0 cmpt wcel wceq dvconst syl fconstmpt oveq2i 3eqtr3g
       co ) AEECFGZHRZEIFGZEBECJZHRBEIJACEKTUALDCMNSUBEHBECOPBEIOQ $.
+  $}
+
+  ${
+    $d x A $.  $d x ph $.  $d x S $.
+    dvmptid.1 $e |- ( ph -> S e. { RR , CC } ) $.
+    $( Function-builder for derivative: derivative of the identity.
+       (Contributed by Mario Carneiro, 1-Sep-2014.)  (Revised by Mario
+       Carneiro, 11-Feb-2015.) $)
+    dvmptid $p |- ( ph -> ( S _D ( x e. S |-> x ) ) = ( x e. S |-> 1 ) ) $=
+      ( cv cmpt cdv co cid cres c1 cxp cr cc wceq reseq2 oveq12d xpeq1 3eqtr4a
+      id mptresid eqcomi oveq2i csn cpr wcel wo dvidre dvid jaoi 3syl fconstmpt
+      elpri eqtrdi eqtrid ) ACBCBEFZGHCICJZGHZBCKFZUPUQCGUQUPBCUAUBUCAURCKUDZLZ
+      USACMNUEUFCMOZCNOZUGURVAOZDCMNUMVBVDVCVBMIMJZGHMUTLURVAUHVBCMUQVEGVBTCMIP
+      QCMUTRSVCNINJZGHNUTLURVAUIVCCNUQVFGVCTCNIPQCNUTRSUJUKBCKULUNUO $.
+
+    dvmptc.2 $e |- ( ph -> A e. CC ) $.
+    $( Function-builder for derivative: derivative of a constant.  (Contributed
+       by Mario Carneiro, 1-Sep-2014.)  (Revised by Mario Carneiro,
+       11-Feb-2015.) $)
+    dvmptc $p |- ( ph -> ( S _D ( x e. S |-> A ) ) = ( x e. S |-> 0 ) ) $=
+      ( csn cxp cdv co cc0 cmpt cr wceq cc wa wcel syl adantr xpeq1d oveq12d wo
+      dvconstre simpr 3eqtr4d dvconst elpri mpjaodan fconstmpt oveq2i 3eqtr3g
+      cpr ) ADDCGZHZIJZDKGZHZDBDCLZIJBDKLADMNZUOUQNDONZAUSPZMMUMHZIJZMUPHZUOUQA
+      VCVDNZUSACOQZVEFCUCRSVADMUNVBIAUSUDZVADMUMVGTUAVADMUPVGTUEAUTPZOOUMHZIJZO
+      UPHZUOUQAVJVKNZUTAVFVLFCUFRSVHDOUNVIIAUTUDZVHDOUMVMTUAVHDOUPVMTUEADMOULQU
+      SUTUBEDMOUGRUHUNURDIBDCUIUJBDKUIUK $.
   $}
 
   ${
@@ -178718,6 +178856,86 @@ $)
       cv ) ALMBFCNZOZPQZMLUSPQZOZLBFCMRNZPQBFDMRZNAFSUSTFLUAVAVCUBABFCSGUCJUSFU
       GUDAUTVDLPABFCSSMSSMTAUEUHZGUFUIABKFSDKURZMRVEVBMABCDLEFLLSUJUKAULUHGHIJU
       MIAKSSMVFUNVGDMUOUPUQ $.
+  $}
+
+  ${
+    $d a b c A $.  $d a b c i x I $.  $d a b c i x ph $.  $d a b c i x S $.
+    $d a b c B $.  $d a b c i x X $.
+    dvmptfsum.j $e |- J = ( K |`t S ) $.
+    dvmptfsum.k $e |- K = ( TopOpen ` CCfld ) $.
+    dvmptfsum.s $e |- ( ph -> S e. { RR , CC } ) $.
+    dvmptfsum.x $e |- ( ph -> X e. J ) $.
+    dvmptfsum.i $e |- ( ph -> I e. Fin ) $.
+    dvmptfsum.a $e |- ( ( ph /\ i e. I /\ x e. X ) -> A e. CC ) $.
+    dvmptfsum.b $e |- ( ( ph /\ i e. I /\ x e. X ) -> B e. CC ) $.
+    dvmptfsum.d $e |- ( ( ph /\ i e. I ) -> ( S _D ( x e. X |-> A ) ) =
+        ( x e. X |-> B ) ) $.
+    $( Function-builder for derivative, finite sums rule.  (Contributed by
+       Stefan O'Rear, 12-Nov-2014.) $)
+    dvmptfsum $p |- ( ph -> ( S _D ( x e. X |-> sum_ i e. I A ) ) =
+        ( x e. X |-> sum_ i e. I B ) ) $=
+      ( va cdv vb vc wss csu cmpt co wceq ssid cfn wcel wi cv c0 csn cun sumeq1
+      sseq1 mpteq2dv oveq2d eqeq12d imbi12d imbi2d weq cnfldtopn 0cnd dvconstss
+      cc0 cxp fconstmpt oveq2i 3eqtr3g sum0 mpteq2i 3eqtr4g a1d wel wn wa ssun1
+      sstr mpan imim1i csb caddc cc cpr ad2antrr simprl simp-4l ad2antlr sselda
+      cr simplr w3a nfcsb1v nfel1 eleq1w 3anbi3d csbeq1a eleq1d chvarfv syl3anc
+      nfv nfim fsumcl adantlrr nfcv nfsum cbvmpt eqeq12i biimpi ad2antll ctopon
+      sumeq2sdv cfv crest sylancr syl2anc simpr sylibr 3expb ancom2s ralrimivva
+      wral rspc2 ancoms mpan9 syl12anc sylanl1 nfmpt nfcsbw csbeq2dv cvv sumsns
+      fsumsplit eqtrd mpteq2dva eqtrid adantrr a2d cnfldtopon recnprss eqeltrid
+      syl resttopon toponss anim2i simplll ssun2 snss simpll ad2antrl nfov nfeq
+      vex anbi2d sylan dvmptaddx cin simpllr disjsn eqidd a1i unsnfi exp32 syl5
+      3eqtr4d expcom findcard2s mpcom mpi ) AGGUCZEBJGCFUDZUEZTUFZBJGDFUDZUEZUG
+      ZGUHGUIUJAUVLUVRUKZOASULZGUCZEBJUVTCFUDZUEZTUFZBJUVTDFUDZUEZUGZUKZUKAUMGU
+      CZEBJUMCFUDZUEZTUFZBJUMDFUDZUEZUGZUKZUKAUAULZGUCZEBJUWQCFUDZUEZTUFZBJUWQD
+      FUDZUEZUGZUKZUKAUWQUBULZUNZUOZGUCZEBJUXHCFUDZUEZTUFZBJUXHDFUDZUEZUGZUKZUK
+      AUVSUKSUAUBGUVTUMUGZUWHUWPAUXQUWAUWIUWGUWOUVTUMGUQUXQUWDUWLUWFUWNUXQUWCUW
+      KETUXQBJUWBUWJUVTUMCFUPURUSUXQBJUWEUWMUVTUMDFUPURUTVAVBSUAVCZUWHUXEAUXRUW
+      AUWRUWGUXDUVTUWQGUQUXRUWDUXAUWFUXCUXRUWCUWTETUXRBJUWBUWSUVTUWQCFUPURUSUXR
+      BJUWEUXBUVTUWQDFUPURUTVAVBUVTUXHUGZUWHUXPAUXSUWAUXIUWGUXOUVTUXHGUQUXSUWDU
+      XLUWFUXNUXSUWCUXKETUXSBJUWBUXJUVTUXHCFUPURUSUXSBJUWEUXMUVTUXHDFUPURUTVAVB
+      UVTGUGZUWHUVSAUXTUWAUVLUWGUVRUVTGGUQUXTUWDUVOUWFUVQUXTUWCUVNETUXTBJUWBUVM
+      UVTGCFUPURUSUXTBJUWEUVPUVTGDFUPURUTVAVBAUWOUWIAEBJVGUEZTUFZUYAUWLUWNAEJVG
+      UNVHZTUFUYCUYBUYAAVGEHIJMKILVDNAVEVFUYCUYAETBJVGVIZVJUYDVKUWKUYAETBJUWJVG
+      CFVLVMVJBJUWMVGDFVLVMVNVOUWQUIUJZUBUAVPVQZVRZAUXEUXPAUYGUXEUXPUKUXEUXIUXD
+      UKAUYGVRZUXPUXIUWRUXDUWQUXHUCUXIUWRUWQUXGVSUWQUXHGVTWAZWBUYHUXIUXDUXOUYHU
+      XIUXDUXOUYHUXIUXDVRZVRZESJUWQBUVTCWCZFUDZFUXFUYLWCZWDUFZUEZTUFSJUWQBUVTDW
+      CZFUDZFUXFUYQWCZWDUFZUEZUXLUXNUYKSUYMUYRUYNUYSEWEWEJAEWLWEWFUJZUYGUYJMWGU
+      YHUXIUVTJUJZUYMWEUJUXDUYHUXIVRZVUCVRZUWQUYLFUYHUYEUXIVUCAUYEUYFWHWGZVUEFU
+      AVPZVRZAFULZGUJZVUCUYLWEUJZAUYGUXIVUCVUGWIZVUEUWQGVUIUXIUWRUYHVUCUYIWJWKZ
+      VUDVUCVUGWMZAVUJBULJUJZWNZCWEUJZUKAVUJVUCWNZVUKUKBSVURVUKBVURBXCZBUYLWEBU
+      VTCWOZWPZXDBSVCZVUPVURVUQVUKVVBVUOVUCAVUJBSJWQWRZVVBCUYLWEBUVTCWSZWTZVAPX
+      AZXBXEXFUYHUXIVUCUYRWEUJUXDVUEUWQUYQFVUFVUHAVUJVUCUYQWEUJZVULVUMVUNVUPDWE
+      UJZUKVURVVGUKBSVURVVGBVUSBUYQWEBUVTDWOZWPZXDVVBVUPVURVVHVVGVVCVVBDUYQWEBU
+      VTDWSZWTZVAQXAZXBXEXFUXDESJUYMUEZTUFZSJUYRUEZUGZUYHUXIUXDVVQUXAVVOUXCVVPU
+      WTVVNETBSJUWSUYMSUWSXGBUWQUYLFBUWQXGZVUTXHVVBUWQCUYLFVVDXNXIVJBSJUXBUYRSU
+      XBXGBUWQUYQFVVRVVIXHVVBUWQDUYQFVVKXNXIXJXKXLAJEUCZUYGUYJAHEXMXOZUJJHUJVVS
+      AHIEXPUFZVVTKAIWEXMXOUJEWEUCZVWAVVTUJILUUAAVUBVWBMEUUBUUDEIWEUUEXQUUCNJHE
+      UUFXRWGUYHAUYFVRZUYJVUCUYNWEUJZUYGUYFAUYEUYFXSUUGZVWCUXIVUCVWDUXDVWCUXIVR
+      ZVUCVRZAUXFGUJZVUCVWDAUYFUXIVUCUUHZUXIVWHVWCVUCUXIUXGGUCZVWHUXGUXHUCUXIVW
+      JUXGUWQUUIUXGUXHGVTWAUXFGUBUUOZUUJXTZWJZVWFVUCXSZAVUQFGYDBJYDZVWHVUCVRZVW
+      DAVUQBFJGAVUJVUOVUQAVUJVUOVUQPYAYBYCVUCVWHVWOVWDUKVUQVWDVUKBFUVTUXFJGVVAF
+      UYNWEFUXFUYLWOWPVVEFUBVCZUYLUYNWEFUXFUYLWSWTYEYFYGYHZXFYIUYHVWCUYJVUCUYSW
+      EUJZVWEVWCUXIVUCVWSUXDVWGAVWHVUCVWSVWIVWMVWNAVVHFGYDBJYDZVWPVWSAVVHBFJGAV
+      UJVUOVVHAVUJVUOVVHQYAYBYCVUCVWHVWTVWSUKVVHVWSVVGBFUVTUXFJGVVJFUYSWEFUXFUY
+      QWOWPVVLVWQUYQUYSWEFUXFUYQWSWTYEYFYGYHZXFYIUYHVWCUYJESJUYNUEZTUFZSJUYSUEZ
+      UGZVWEVWCUYJVRAVWHVXEAUYFUYJUUKUXIVWHVWCUXDVWLUULAVWHVRZEBJFUXFCWCZUEZTUF
+      ZBJFUXFDWCZUEZVXCVXDAVUJVRZEBJCUEZTUFZBJDUEZUGZUKVXFVXIVXKUGZUKFUBVXFVXQF
+      VXFFXCFVXIVXKFEVXHTFEXGFTXGFBJVXGFJXGZFUXFCWOYJUUMFBJVXJVXRFUXFDWOYJUUNXD
+      VWQVXLVXFVXPVXQVWQVUJVWHAFUBGWQUUPVWQVXNVXIVXOVXKVWQVXMVXHETVWQBJCVXGFUXF
+      CWSURUSVWQBJDVXJFUXFDWSURUTVARXAVXHVXBETBSJVXGUYNSVXGXGBFUXFUYLBUXFXGZVUT
+      YKVVBFUXFCUYLVVDYLXIVJBSJVXJUYSSVXJXGBFUXFUYQVXSVVIYKVVBFUXFDUYQVVKYLXIVK
+      XRUUQUURUYKUXKUYPETUYHUXIUXKUYPUGUXDVUDUXKSJUXHUYLFUDZUEUYPBSJUXJVXTSUXJX
+      GBUXHUYLFBUXHXGZVUTXHVVBUXHCUYLFVVDXNXIVUDSJVXTUYOVUEVXTUYMUXGUYLFUDZWDUF
+      UYOVUEUWQUXGUYLUXHFUYHVWCUXIVUCUWQUXGUUSUMUGZVWEVWGUYFVYCAUYFUXIVUCUUTZUW
+      QUXFUVAXTYIZVUEUXHUVBZVUEUYEUXFYMUJZUYFUXHUIUJVUFVYGVUEVWKUVCUYHVWCUXIVUC
+      UYFVWEVYDYIUWQUXFYMUVDXBZVUEVUIUXHUJZVRZAVUJVUCVUKAUYGUXIVUCVYIWIZVUEUXHG
+      VUIUYHUXIVUCWMWKZVUDVUCVYIWMZVVFXBYOVUEVYBUYNUYMWDUYHVWCUXIVUCVYBUYNUGZVW
+      EVWGVYGVWDVYNVWKVWRUYLFUXFYMYNXQYIUSYPYQYRYSUSUYHUXIUXNVUAUGUXDVUDUXNSJUX
+      HUYQFUDZUEVUABSJUXMVYOSUXMXGBUXHUYQFVYAVVIXHVVBUXHDUYQFVVKXNXIVUDSJVYOUYT
+      VUEVYOUYRUXGUYQFUDZWDUFZUYTVUEUWQUXGUYQUXHFVYEVYFVYHVYJAVUJVUCVVGVYKVYLVY
+      MVVMXBYOUYHVWCUXIVUCVYQUYTUGVWEVWGVYPUYSUYRWDVWGVYGVWSVYPUYSUGVWKVXAUYQFU
+      XFYMYNXQUSYIYPYQYRYSUVGUVEYTUVFUVHYTUVIUVJUVK $.
   $}
 
   ${
@@ -179604,6 +179822,69 @@ $)
       BZVBVDBUCZVCEZCFZBCUDVEVIVBVLBCVBVJCFZUEZVKVJAEZCVMVKVOQVBVJCAUKSVNVOVBVG
       VJLFZVOLFVMVHVJUFZLLVJAUGUHVNVOTEZVJTEZAEZVOVMVBVPVRVTQVQVJAUIUJVNVSVJAVM
       VSVJQVBVJULSUMVAUNUOUPBCCVCUQURCCVCUSUT $.
+  $}
+
+  ${
+    $d ph z j k $.  $d A z j k $.  $d B z $.  $d N j k z $.
+    dvply1.f $e |- ( ph -> F = ( z e. CC |-> sum_ k e. ( 0 ... N )
+        ( ( A ` k ) x. ( z ^ k ) ) ) ) $.
+    dvply1.g $e |- ( ph -> G = ( z e. CC |-> sum_ k e. ( 0 ... ( N - 1 ) )
+        ( ( B ` k ) x. ( z ^ k ) ) ) ) $.
+    dvply1.a $e |- ( ph -> A : NN0 --> CC ) $.
+    dvply1.b $e |- B = ( k e. NN0 |-> ( ( k + 1 ) x. ( A ` ( k + 1 ) ) ) ) $.
+    dvply1.n $e |- ( ph -> N e. NN0 ) $.
+    $( Derivative of a polynomial, explicit sum version.  (Contributed by
+       Stefan O'Rear, 13-Nov-2014.)  (Revised by Mario Carneiro,
+       11-Feb-2015.) $)
+    dvply1 $p |- ( ph -> ( CC _D F ) = G ) $=
+      ( cc co cc0 cmul c1 wcel wa vj cdv cfz cv cfv cexp csu cmpt wceq cmin cif
+      oveq2d ccnfld ctopn cnfldtopon toponrestid cr cpr cnelprrecn a1i cnfldtop
+      eqid ctop unicntop topopn 0zd nn0zd fzfigd cn0 wf elfznn0 ffvelcdm syl2an
+      mp1i adantr simpr ad2antlr expcld mulcld 3impa w3a 3adant3 0cnd wn simpl2
+      syl nn0cnd simpl3 cn wo elnn0 sylib ecased nnm1nn0 3ad2ant2 zdceq syl2anc
+      cz wdc ifcldadc simplr 3expa adantl dvexp2 dvmptfsum elfznn nnne0d neneqd
+      dvmptcmulcn iffalsed sumeq2dv cuz wss 1eluzge0 fzss1 nnnn0d eqeltrd caddc
+      cdif eldifn 0p1e1 oveq1i eleq2i sylnibr eldifi wb nn0uz eleqtrdi ad2antrr
+      wne elfzp12 mpbid iftrued mul01d peano2nn0 ffvelcdmd oveq1d oveq1 oveq12d
+      1zzd sylan2 eqtrd elfzelz fzdcel syl3anc ralrimiva fisumss ax-1cn sylancl
+      pncan mulassd mulcomd 3eqtr2d 1m1e0 sumeq1i fvoveq1 oveq2 cbvsumv 3eqtr4g
+      fveq2 id fsumshftm fvmpt2 3eqtr4d 3eqtr3d mpteq2dva eqtr4d 3eqtrd ) ANFUB
+      ONBNPHUCOZEUDZCUEZBUDZUVJUFOZQOZEUGUHZUBOBNUVIUVKUVJPUIZPUVJUVLUVJRUJOZUF
+      OZQOZUKZQOZEUGZUHZGAFUVONUBIULABUVNUWANEUVIUMUNUEZUWDNUWDNUWDUWDVBZUOUPUW
+      ENUQNURSAUSUTUWDVCSNUWDSAUWDUWEVAUWDNVDVEVNAPHAVFAHMVGZVHAUVJUVISZUVLNSZU
+      VNNSAUWGTZUWHTZUVKUVMUWIUVKNSZUWHAVINCVJZUVJVISZUWKUWGKUVJHVKZVINUVJCVLZV
+      MZVOUWJUVLUVJUWIUWHVPUWGUWMAUWHUWNVQZVRZVSVTAUWGUWHWAZUVKUVTAUWGUWKUWHUWP
+      WBUWSUVPPUVSNUWSUVPTWCUWSUVPWDZTZUVJUVRUXAUVJUXAUWGUWMAUWGUWHUWTWEUWNWFZW
+      GUXAUVLUVQAUWGUWHUWTWHUXAUVJWISZUVQVISZUXAUXCUVPUWSUWTVPUXAUWMUXCUVPWJZUX
+      BUVJWKZWLWMUVJWNZWFVRVSUWSUVJWRSPWRSUVPWSZUWSUVJUWGAUWMUWHUWNWOVGUWSVFUVJ
+      PWPWQZWTVSUWIBUVMUVTUVKNUWRUWJUVPPUVSNUWJUVPTWCUWJUWTTZUVJUVRUWJUVJNSUWTU
+      WJUVJUWQWGVOUXJUVLUVQUWIUWHUWTXAUXJUXCUXDUXJUXCUVPUWJUWTVPUXJUWMUXEUWJUWM
+      UWTUWQVOUXFWLWMUXGWFVRVSAUWGUWHUXHUXIXBWTUWIUWMNBNUVMUHUBOBNUVTUHUIUWGUWM
+      AUWNXCBUVJXDWFUWPXIXEAUWCBNPHRUJOZUCOZUVJDUEZUVMQOZEUGZUHGABNUWBUXOAUWHTZ
+      RHUCOZUWAEUGUXQUVKUVSQOZEUGZUWBUXOUXPUXQUWAUXREUXPUVJUXQSZTZUVTUVSUVKQUYA
+      UVPPUVSUXTUWTUXPUXTUVJPUXTUVJUVJHXFZXGZXHXCXJULXKUXPUXQUVIUWAUAERPXLUEZSU
+      XQUVIXMUXPXNRPHXOVNUYAUVKUVTUXPUWLUWMUWKUXTAUWLUWHKVOZUXTUVJUYBXPZUWOVMZU
+      YAUVTUVSNUYAUVPPUVSUYAUVJPUXTUVJPYJUXPUYCXCXHXJUYAUVJUVRUYAUVJUXTUWMUXPUY
+      FXCWGUYAUVLUVQAUWHUXTXAUXTUXDUXPUXTUXCUXDUYBUXGWFXCVRVSZXQVSUXPUVJUVIUXQX
+      SSZTZUWAUVKPQOZPUYJUVTPUVKQUYJUVPPUVSUYJUVPUVJPRXROZHUCOZSZUYIUYNWDUXPUYI
+      UXTUYNUVJUVIUXQXTUYMUXQUVJUYLRHUCYAYBYCYDXCUYJUWGUVPUYNWJZUYIUWGUXPUVJUVI
+      UXQYEZXCUYJHUYDSZUWGUYOYFAUYQUWHUYIAHVIUYDMYGYHYIUVJPHYKWFYLWMYMULUYIUXPU
+      WGUYKPUIUYPUXPUWGTUVKUXPUWLUWMUWKUWGUYEUWNUWOVMYNUUAUUBUXPUAUDZUXQSWSZUAU
+      VIUXPUYRUVISZTZUYRWRSZRWRSHWRSZUYSUYTVUBUXPUYRPHUUCXCVUAYTAVUCUWHUYTUWFYI
+      UYRRHUUDUUEUUFUXPPHUXPVFAVUCUWHUWFVOVHUUGUXPRRUJOZUXKUCOZUYRRXROZCUEZVUFU
+      VLVUFRUJOZUFOZQOZQOZUAUGZUXLUVJRXROZVUMCUEZQOZUVMQOZEUGZUXSUXOUXPUXLVUKUA
+      UGUXLVUFVUGQOZUVLUYRUFOZQOZUAUGVULVUQUXPUXLVUKVUTUAUXPUYRUXLSZTZVUKVUGVUF
+      VUSQOZQOVUGVUFQOZVUSQOVUTVVBVUJVVCVUGQVVBVUIVUSVUFQVVBVUHUYRUVLUFVVBUYRNS
+      RNSVUHUYRUIVVBUYRVVAUYRVISZUXPUYRUXKVKZXCZWGUUHUYRRUUJUUIULULULVVBVUGVUFV
+      USVVBVINVUFCAUWLUWHVVAKYIVVAVUFVISZUXPVVAVVEVVHVVFUYRYOWFXCZYPZVVBVUFVVIW
+      GZVVBUVLUYRAUWHVVAXAVVGVRUUKVVBVVDVURVUSQVVBVUGVUFVVJVVKUULYQUUMXKVUEUXLV
+      UKUAVUDPUXKUCUUNYBUUOUXLVUPVUTEUAUVJUYRUIZVUOVURUVMVUSQVVLVUMVUFVUNVUGQUV
+      JUYRRXRYRUVJUYRRCXRUUPYSUVJUYRUVLUFUUQYSUURUUSUXPUXRVUKEUARRHUXPYTZVVMUXP
+      HAHVISUWHMVOVGUYAUVKUVSUYGUYHVSUVJVUFUIZUVKVUGUVSVUJQUVJVUFCUUTVVNUVJVUFU
+      VRVUIQVVNUVAVVNUVQVUHUVLUFUVJVUFRUJYRULYSYSUVBUXPUXLUXNVUPEUXPUVJUXLSZTZU
+      XMVUOUVMQVVPUWMVUONSUXMVUOUIVVOUWMUXPUVJUXKVKXCZVVPVUMVUNVVPVUMVVPUWMVUMV
+      ISVVQUVJYOWFZWGVVPVINVUMCAUWLUWHVVOKYIVVRYPVSEVIVUONDLUVCWQYQXKUVDUVEUVFJ
+      UVGUVH $.
   $}
 
 
@@ -185469,6 +185750,33 @@ $)
     cpr eqidd 2lgsoddprmlem2 2lgsoddprmlem3 bitrd ) ABCZDAEFGZHZDADIJKLJMNJEFZD
     AMOJZDIJKLJMNJEFZUIKPTCZUEUFUIUIQZUHUJRUGUIUAZUIAUBSUEUFULUJUKRUMUIAUCSUD
     $.
+
+  $( The second supplement to the law of quadratic reciprocity for odd primes
+     (common representation, see theorem 9.5 in [ApostolNT] p. 181):  The
+     Legendre symbol for ` 2 ` at an odd prime is minus one to the power of the
+     square of the odd prime minus one divided by eight ( ` ( 2 /L P ) ` =
+     -1^(((P^2)-1)/8) ).  (Contributed by AV, 20-Jul-2021.) $)
+  2lgsoddprm $p |- ( P e. ( Prime \ { 2 } )
+                     -> ( 2 /L P ) = ( -u 1 ^ ( ( ( P ^ 2 ) - 1 ) / 8 ) ) ) $=
+    ( cprime c2 wcel co c1 c8 wceq c7 wdc wb wi cz syl a1i mpbird wa wn sylancr
+    cc0 csn cdif clgs cneg cexp cmin cdiv cmo cpr wo eldifi prmz cn 8nn zmodcld
+    nn0zd 1zzd zdceq syl2anc 7nn nnzi dcor sylc cn0 elprg dcbid simpl cdvds wbr
+    2lgs nnoddn2prm nnz anim1i sqoddm1div8z m1exp1 2lgsoddprmlem4 3bitrd adantl
+    eqcom biimparc eqtrd exp32 w3o ctp lgscl1 eltpg mpbid notbid biimpar m1expo
+    syl2an2r eqcomd a1d wne cgcd eldifsn simpr necomd sylbi 2prm prmrp eqneqall
+    2z lgsne0 syl5 pm2.24 2a1d 3jaoi mpcom com13 bijadc pm2.43i ) ABCUAZUBDZCAU
+    CEZFUDZACUEEFUFEGUGEZUEEZHZXNAGUHEZFIUIDZJZXOFHZYAKZXNXSLZXNYBXTFHZXTIHZUJZ
+    JZXNYFJZYGJZYIXNXTMDZFMDYJXNXTXNAGXNABDZAMDZABXMUKZAULNZGUMDXNUNOUOZUPZXNUQ
+    XTFURUSXNYLIMDZYKYRYSXNIUTVAOXTIURUSYFYGVBVCXNYAYHXNXTVDDYAYHKYQXTFIVDVENVF
+    PXNYMYDYOAVJNYCYAYEYCYAXNXSYCYAXNQZQXOFXRYCYTVGYTFXRHZYCXNUUAYAXNUUAXRFHZCX
+    QVHVIZYAUUAUUBKXNFXRVSOXNXQMDZUUBUUCKXNYNCAVHVIRZQZUUDXNAUMDZUUEQUUFAVKUUGY
+    NUUEAVLVMNZAVNNZXQVONXNUUFUUCYAKUUHAVPNZVQVTVRWAWBXNYARZYCRZXSXOXPHZXOTHZYC
+    WCZXNUUKUULXSLZLZXNXOXPTFWDZDZUUOXNCMDZYNUUSXCYPCAWESZXNUUSUUSUUOKUVAXOXPTF
+    UURWFNWGUUMXNUUQLUUNYCUUMXNUUKUUPUUMXNUUKQZQZXSUULUVCXOXPXRUUMUVBVGUVBXPXRH
+    UUMUVBXRXPXNUUDUUKUUCRZXRXPHUUIXNUVDUUKXNUUCYAUUJWHWIXQWJWKWLVRWAWMWBXNXOTW
+    NZUUNUUQXNUVECAWOEFHZXNUVFCAWNZXNYMACWNZQZUVGABCWPUVIACYMUVHWQWRWSXNCBDYMUV
+    FUVGKWTYOCAXASPXNUUTYNUVEUVFKXCYPCAXDSPUUQXOTXBXEYCUUPXNUUKYCXSXFXGXHXIXJXK
+    VCXL $.
 
 
 $(
