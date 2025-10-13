@@ -183385,6 +183385,27 @@ $)
       UUHUVIUWQUYPUYOYJZUUHFDEUUDUVIUYQXAYKUUQUUKFAYLWBYMYNYOUVPFUUKAUWOUWRUUHU
       UDUVIUULUUQXFUWSVIRYPYQUVPINEUUFNEUVLNEUXGUYNUXHXAUWLUVPUUFUVRWKUWJUXBIUU
       FUVLYRYTRUVMVJPUVLUVMYSXIUUAUUBBAUUCP $.
+
+    $( Euclid's contribution to the Euclid-Euler theorem.  A number of the form
+       ` 2 ^ ( p - 1 ) x. ( 2 ^ p - 1 ) ` is a perfect number.  (Contributed by
+       Mario Carneiro, 17-May-2016.) $)
+    perfect1 $p |- ( ( P e. ZZ /\ ( ( 2 ^ P ) - 1 ) e. Prime ) ->
+      ( 1 sigma ( ( 2 ^ ( P - 1 ) ) x. ( ( 2 ^ P ) - 1 ) ) ) =
+        ( ( 2 ^ P ) x. ( ( 2 ^ P ) - 1 ) ) ) $=
+      ( cz wcel c2 cexp co cmin cprime csgm cmul wceq syl adantl sylancr ax-1cn
+      c1 cn cc cdvds wbr mersenne prmnn 1sgm2ppw 1sgmprm cn0 2nn nnnn0d nnexpcl
+      wa caddc nncnd npcan sylancl eqtrd oveq12d cgcd nnm1nn0 nnzd prmz gcdcomd
+      a1i iddvds clt cuz cfv prmuz2 eluz2gt1 ndvdsp1 syl3anc mpd dvdsmultr1 2cn
+      wn wi 2z expm1t eqtr2d breq2d sylibd mtod wb simpr coprm syl2anc syl13anc
+      mpbid sgmmul subcl mulcomd 3eqtr4d ) ABCZDAEFZPGFZHCZUIZPDAPGFZEFZIFZPWMI
+      FZJFZWMWLJFPWQWMJFIFZWLWMJFWOWRWMWSWLJWOAQCZWRWMKWOAHCXBAUAAUBLZAUCLWOWSW
+      MPUJFZWLWNWSXDKWKWMUDMWOWLRCZPRCZXDWLKWOWLWODQCZAUECWLQCUFWOAXCUGDAUHNUKZ
+      OWLPULUMZUNUOWOXFWQQCZWMQCZWQWMUPFZPKXAWTKXFWOOVAWOXGWPUECZXJUFWOXBXMXCAU
+      QLDWPUHNZWNXKWKWMUBMZWOXLWMWQUPFZPWOWQWMWOWQXNURZWNWMBCZWKWMUSMZUTWOWMWQS
+      TZVMZXPPKZWOXTWMXDSTZWOWMWMSTZYCVMZWOXRYDXSWMVBLWOXRXKPWMVCTZYDYEVNXSXOWO
+      WMDVDVECZYFWNYGWKWMVFMWMVGLWMWMVHVIVJWOXTWMWQDJFZSTZYCWOXRWQBCZDBCZXTYIVN
+      XSXQYKWOVOVAWMWQDVKVIWOYHXDWMSWOXDWLYHXIWODRCXBWLYHKVLXCDAVPNVQVRVSVTWOWN
+      YJYAYBWAWKWNWBXQWMWQWCWDWFUNPWQWMWGWEWOWLWMXHWOXEXFWMRCXHOWLPWHUMWIWJ $.
   $}
 
 
