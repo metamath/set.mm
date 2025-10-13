@@ -92,6 +92,11 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+13-Oct-25 ssinss1d  [same]      Moved from GS's mathbox to main set.mm
+13-Oct-25 opeliun2xp [same]     Moved from AV's mathbox to main set.mm
+13-Oct-25 fvelima2  [same]      Moved from GS's mathbox to main set.mm
+13-Oct-25 pwssfi    [same]      Moved from GS's mathbox to main set.mm
+13-Oct-25 pnfged    [same]      Moved from GS's mathbox to main set.mm
  7-Oct-25 tgioo4    [same]      Moved from GS's mathbox to main set.mm
  5-Oct-25 eliund    [same]      Moved from GS's mathbox to main set.mm
  5-Oct-25 feq1dd    [same]      Moved from GS's mathbox to main set.mm
