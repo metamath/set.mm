@@ -183565,6 +183565,40 @@ $)
       UEVUFVUGVUH $.
   $}
 
+  ${
+    $d p N $.
+    $( The Euclid-Euler theorem, or Perfect Number theorem.  A positive even
+       integer ` N ` is a perfect number (that is, its divisor sum is ` 2 N ` )
+       if and only if it is of the form ` 2 ^ ( p - 1 ) x. ( 2 ^ p - 1 ) ` ,
+       where ` 2 ^ p - 1 ` is prime (a Mersenne prime).  (It follows from this
+       that ` p ` is also prime.)  This is Metamath 100 proof #70.
+       (Contributed by Mario Carneiro, 17-May-2016.) $)
+    perfect $p |- ( ( N e. NN /\ 2 || N ) -> ( ( 1 sigma N ) = ( 2 x. N ) <->
+      E. p e. ZZ ( ( ( 2 ^ p ) - 1 ) e. Prime /\
+        N = ( ( 2 ^ ( p - 1 ) ) x. ( ( 2 ^ p ) - 1 ) ) ) ) ) $=
+      ( cn wcel c2 cdvds wa c1 csgm co cmul wceq cexp cmin cprime cz sylancr cc
+      wbr oveq2d cv wrex cpc caddc simplr wb 2prm simpll pcelnn mpbird peano2zd
+      nnzd pcdvds cn0 2nn nnnn0d nnexpcl nndivdvds syl2anc mpbid pcndvds2 simpr
+      cdiv wn nncn ad2antrr nnap0d divcanap2d 3eqtr4d perfectlem2 simprd simpld
+      nncnd ax-1cn pncan sylancl eqcomd eqtr3d oveq2 oveq1d eleq1d oveq1 eqeq2d
+      eqeltrrd oveq12d anbi12d rspcev syl12anc perfect1 2cn mersenne syl expm1t
+      ex prmnn nnm1nn0 expcl mulcom eqtrd 2cnd adantl mulassd 3eqtrd syl5ibrcom
+      eqeq12d impr rexlimiva impbid1 ) ACDZEAFSZGZHAIJZEAKJZLZEBUAZMJZHNJZODZAE
+      XOHNJZMJZXQKJZLZGZBPUBZXKXNYDXKXNGZEAUCJZHUDJZPDEYGMJZHNJZODZAEYGHNJZMJZY
+      IKJZLZYDYEYFYEYFYEYFCDZXJXIXJXNUEYEEODZXIYOXJUFUGXIXJXNUHZEAUIQUJZULUKYEA
+      EYFMJZVCJZYIOYEYTODZYTYILZYEYFYTYRYEYSAFSZYTCDZYEYPXIUUCUGYQEAUMQYEXIYSCD
+      ZUUCUUDUFYQYEECDYFUNDUUEUOYEYFYRUPEYFUQQZAYSURUSUTYEYPXIEYTFSVDUGYQEAVAQY
+      EXLXMHYSYTKJZIJEUUGKJXKXNVBYEUUGAHIYEAYSXIARDXJXNAVEVFYEYSUUFVMYEYSUUFVGV
+      HZTYEUUGAEKUUHTVIVJZVKZYEUUAUUBUUIVLWDYEUUGAYMUUHYEYSYLYTYIKYEYFYKEMYEYKY
+      FYEYFRDHRDYKYFLYEYFYRVMVNYFHVOVPVQTUUJWEVRYCYJYNGBYGPXOYGLZXRYJYBYNUUKXQY
+      IOUUKXPYHHNXOYGEMVSVTZWAUUKYAYMAUUKXTYLXQYIKUUKXSYKEMXOYGHNWBTUULWEWCWFWG
+      WHWNYCXNBPXOPDZXRYBXNUUMXRGZXNYBHYAIJZEYAKJZLUUNUUOXPXQKJEXTKJZXQKJUUPXOW
+      IUUNXPUUQXQKUUNXPXTEKJZUUQUUNERDZXOCDZXPUURLWJUUNXOODUUTXOWKXOWOWLZEXOWMQ
+      UUNXTRDZUUSUURUUQLUUNUUSXSUNDZUVBWJUUNUUTUVCUVAXOWPWLEXSWQQZWJXTEWRVPWSVT
+      UUNEXTXQUUNWTUVDUUNXQXRXQCDUUMXQWOXAVMXBXCYBXLUUOXMUUPAYAHIVSAYAEKVSXEXDX
+      FXGXH $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
