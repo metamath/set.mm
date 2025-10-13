@@ -183408,6 +183408,40 @@ $)
       YJYAYBWAWKWNWBXQWMWQWCWDWFUNPWQWMWGWEWOWLWMXHWOXEXFWMRCXHOWLPWHUMWIWJ $.
   $}
 
+  ${
+    $d k n x A $.  $d k n x B $.  $d k n x ph $.
+    perfectlem.1 $e |- ( ph -> A e. NN ) $.
+    perfectlem.2 $e |- ( ph -> B e. NN ) $.
+    perfectlem.3 $e |- ( ph -> -. 2 || B ) $.
+    perfectlem.4 $e |- ( ph ->
+      ( 1 sigma ( ( 2 ^ A ) x. B ) ) = ( 2 x. ( ( 2 ^ A ) x. B ) ) ) $.
+    $( Lemma for ~ perfect .  (Contributed by Mario Carneiro, 7-Jun-2016.) $)
+    perfectlem1 $p |- ( ph -> ( ( 2 ^ ( A + 1 ) ) e. NN /\
+                        ( ( 2 ^ ( A + 1 ) ) - 1 ) e. NN /\
+                ( B / ( ( 2 ^ ( A + 1 ) ) - 1 ) ) e. NN ) ) $=
+      ( c2 c1 co cn wcel sylancr wbr wb cdvds cmul cgcd wceq cz caddc cexp cmin
+      cdiv cn0 2nn nnnn0d peano2nn0 syl nnexpcl clt cr 2re peano2nnd a1i expgt1
+      1lt2 mp3an2i nnsub mpbid csgm nnzd peano2zm 1nn0 sgmnncl dvdsmul1 syl2anc
+      1nn cc 2cn expp1 nncnd mulcom sylancl eqtrd oveq1d mulassd ax-1cn wn 2prm
+      cprime coprm wi rpexp1i mpd sgmmul syl13anc pncan oveq2d 1sgm2ppw 3eqtr3d
+      2z eqtr3d 3eqtrd breqtrrd gcdcomd iddvdsexp wa n2dvds1 1zzd 3jca dvdssub2
+      w3a sylan mtbiri ex mt2d coprmdvds syl3anc mp2and nndivdvds ) AHBIUAJZUBJ
+      ZKLZXMIUCJZKLZCXOUDJKLZAHKLZXLUELZXNUFABUELZXSABDUGZBUHUIZHXLUJMZAIXMUKNZ
+      XPHULLAXLKLZIHUKNZYDUMABDUNZYFAUQUOHXLUPURAIKLXNYDXPOVHYCIXMUSMUTZAXOCPNZ
+      XQAXOXMCQJZPNZXOXMRJZISZYIAXOXOICVAJZQJZYJPAXOTLZYNTLXOYOPNAXMTLZYPAXMYCV
+      BZXMVCUIZAYNAIUELCKLZYNKLVDEICVEMVBXOYNVFVGAYJHHBUBJZQJZCQJHUUACQJZQJZYOA
+      XMUUBCQAXMUUAHQJZUUBAHVILZXTXMUUESVJYAHBVKMAUUAVILUUFUUEUUBSAUUAAXRXTUUAK
+      LZUFYAHBUJMZVLZVJUUAHVMVNVOVPAHUUACUUFAVJUOUUIACEVLVQAIUUCVAJZIUUAVAJZYNQ
+      JZUUDYOAIVILZUUGYTUUACRJISZUUJUULSUUMAVRUOUUHEAHCRJISZUUNAHCPNVSZUUOFAHWA
+      LZCTLZUUPUUOOVTACEVBZHCWBMUTHTLZAUURXTUUOUUNWCWLUUSYAHCBWDURWEIUUACWFWGGA
+      UUKXOYNQAIHXLIUCJZUBJZVAJZUUKXOAUVBUUAIVAAUVABHUBABVILUUMUVABSABDVLVRBIWH
+      VNWIWIAYEUVCXOSYGXLWJUIWMVPWKWNWOAYLXMXORJZIAXOXMYSYRWPAHXORJISZUVDISZAHX
+      OPNZVSZUVEAUVGHXMPNZAUUTYEUVIWLYGHXLWQMAUVGUVIVSAUVGWRUVIHIPNZWSAUUTYQITL
+      ZXCUVGUVIUVJOAUUTYQUVKUUTAWLUOYRAWTXAHXMIXBXDXEXFXGAUUQYPUVHUVEOVTYSHXOWB
+      MUTUUTAYPXSUVEUVFWCWLYSYBHXOXLWDURWEVOAYPYQUURYKYMWRYIWCYSYRUUSXOXMCXHXIX
+      JAYTXPYIXQOEYHCXOXKVGUTXA $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
