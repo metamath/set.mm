@@ -92,6 +92,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+16-Oct-25 ringdid   [same]      Moved from TA's mathbox to main set.mm
+16-Oct-25 ringdird  [same]      Moved from TA's mathbox to main set.mm
  7-Oct-25 tgioo4    [same]      Moved from GS's mathbox to main set.mm
  5-Oct-25 eliund    [same]      Moved from GS's mathbox to main set.mm
  5-Oct-25 feq1dd    [same]      Moved from GS's mathbox to main set.mm
