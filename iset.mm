@@ -143649,21 +143649,6 @@ $)
   $}
 
   ${
-    decexp2.1 $e |- M e. NN0 $.
-    decexp2.2 $e |- ( M + 2 ) = N $.
-    $( Calculate a power of two.  (Contributed by Mario Carneiro,
-       19-Feb-2014.) $)
-    decexp2 $p |- ( ( 4 x. ( 2 ^ M ) ) + 0 ) = ( 2 ^ N ) $=
-      ( c4 c2 cexp co cmul c1 caddc 2cn nn0cni wcel cn0 wceq expp1 mp2an ax-1cn
-      3eqtr4i 2nn0 nn0expcli mulcli cc mulcomi eqtr2i oveq1i mulcomli peano2nn0
-      cc0 decbin0 ax-mp 4nn0 nn0mulcli addridi addassi df-2 oveq2i 3eqtr2ri ) E
-      FAGHZIHZFAJKHZJKHZGHZVAUJKHFBGHFFUTIHZIHFVBGHZFIHZVAVDVEFVGFUTLUTFAUACUBZ
-      MZUCLVEVFFIVFUTFIHZVEFUDNZAONZVFVJPLCFAQRUTFVILUEUFUGUHUTVHUKVKVBONZVDVGP
-      LVLVMCAUIULFVBQRTVAVAEUTUMVHUNMUOBVCFGVCAJJKHZKHAFKHBAJJACMSSUPFVNAKUQURD
-      USURT $.
-  $}
-
-  ${
     numexp.1 $e |- A e. NN0 $.
     $( Calculate an integer power.  (Contributed by Mario Carneiro,
        17-Apr-2015.) $)
