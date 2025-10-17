@@ -180041,6 +180041,47 @@ $)
   $}
 
   ${
+    $d A j z r q $.  $d A k z r q $.  $d D k z r p q $.  $d M j p r $.
+    $d M k p r $.  $d X j z q r $.  $d X k z q r $.  $d ph p q r $.
+    plycoeid3.d $e |- ( ph -> D e. NN0 ) $.
+    plycoeid3.a $e |- ( ph -> A : NN0 --> CC ) $.
+    plycoeid3.z $e |- ( ph -> ( A " ( ZZ>= ` ( D + 1 ) ) ) = { 0 } ) $.
+    plycoeid3.f $e |- ( ph -> F = ( z e. CC |->
+      sum_ k e. ( 0 ... D ) ( ( A ` k ) x. ( z ^ k ) ) ) ) $.
+    plycoeid3.m $e |- ( ph -> M e. ( ZZ>= ` D ) ) $.
+    plycoeid3.x $e |- ( ph -> X e. CC ) $.
+    $( Reconstruct a polynomial as an explicit sum of the coefficient function
+       up to an index no smaller than the degree of the polynomial.
+       (Contributed by Jim Kingdon, 17-Oct-2025.) $)
+    plycoeid3 $p |- ( ph -> ( F ` X )
+        = sum_ j e. ( 0 ... M ) ( ( A ` j ) x. ( X ^ j ) ) ) $=
+      ( cc0 co cmul wcel cn0 vr vq vp cfv cfz cv cexp csu cmpt fveq1d eqid wceq
+      cc oveq1 oveq2d sumeq2sdv fveq2 oveq2 oveq12d cbvsumv 0zd nn0zd fzfigd wa
+      wf adantr elfznn0 adantl ffvelcdmd expcld mulcld fsumcl eqeltrrid fvmptd3
+      eqtrd eqtrdi cuz wss fzss2 syl csn c1 caddc wn eldifn cun eldifi nn0split
+      cdif eleqtrd elun sylib orcomd ecased cima wral eqimss wfun cdm peano2nn0
+      wo wb ffund nn0uz eleqtrdi uzss sseqtrrdi fdmd sseqtrrd funimass4 syl2anc
+      mpbid r19.21bi syldan elsni oveq1d mul02d wdc cz elfzelz fzdcel ralrimiva
+      syl3anc eluzelz fisumss ) AIGUDZPHUEQZUAUFZCUDZIYHUGQZRQZUAUHZYGEUFZCUDZI
+      YMUGQZRQZEUHAYFPDUEQZYKUAUHZYLAYFYQFUFZCUDZIYSUGQZRQZFUHZYRAYFIBUMYQYTBUF
+      ZYSUGQZRQZFUHZUIZUDUUCAIGUUHMUJABIUUGUUCUMUUHUMUUHUKUUDIULZYQUUFUUBFUUIUU
+      EUUAYTRUUDIYSUGUNUOUPOAUUCYQUBUFZCUDZIUUJUGQZRQZUBUHUMYQUUMUUBUBFUUJYSULU
+      UKYTUULUUARUUJYSCUQUUJYSIUGURUSUTAYQUUMUBAPDAVAZADJVBZVCAUUJYQSZVDZUUKUUL
+      UUQTUMUUJCATUMCVEZUUPKVFUUPUUJTSAUUJDVGVHZVIUUQIUUJAIUMSZUUPOVFUUSVJVKVLV
+      MVNVOYQUUBYKFUAYSYHULYTYIUUAYJRYSYHCUQYSYHIUGURUSUTVPAYQYGYKUCUAAHDVQUDSZ
+      YQYGVRNDPHVSVTAYHYQSZVDZYIYJUVCTUMYHCAUURUVBKVFUVBYHTSZAYHDVGVHZVIUVCIYHA
+      UUTUVBOVFUVEVJVKAYHYGYQWISZVDZYKPYJRQPUVGYIPYJRUVGYIPWAZSZYIPULAUVFYHDWBW
+      CQZVQUDZSZUVIUVGUVLUVBUVFUVBWDAYHYGYQWEVHUVGUVBUVLUVGYHYQUVKWFZSUVBUVLXAU
+      VGYHTUVMUVGYHYGSZUVDUVFUVNAYHYGYQWGVHYHHVGVTZATUVMULZUVFADTSZUVPJDWHVTVFW
+      JYHYQUVKWKWLWMWNAUVIUAUVKACUVKWOZUVHVRZUVIUAUVKWPZAUVRUVHULUVSLUVRUVHWQVT
+      ACWRUVKCWSZVRUVSUVTXBATUMCKXCAUVKTUWAAUVKPVQUDZTAUVJUWBSUVKUWBVRAUVJTUWBA
+      UVQUVJTSJDWTVTXDXEPUVJXFVTXDXGATUMCKXHXIUAUVKUVHCXJXKXLXMXNYIPXOVTXPUVGYJ
+      UVGIYHAUUTUVFOVFUVOVJXQVOAUCUFZYQSXRZUCYGAUWCYGSZVDZUWCXSSZPXSSDXSSZUWDUW
+      EUWGAUWCPHXTVHUWFVAAUWHUWEUUOVFUWCPDYAYCYBAPHUUNAUVAHXSSNDHYDVTVCYEVOYGYK
+      YPUAEYHYMULYIYNYJYORYHYMCUQYHYMIUGURUSUTVP $.
+  $}
+
+  ${
     plyco.1 $e |- ( ph -> F e. ( Poly ` S ) ) $.
     plyco.2 $e |- ( ph -> G e. ( Poly ` S ) ) $.
     plyco.3 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x + y ) e. S ) $.
