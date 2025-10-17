@@ -143498,8 +143498,8 @@ $)
 
   ${
     dec5nprm.1 $e |- A e. NN $.
-    $( Divisibility by five is obvious in base 10.  (Contributed by Mario
-       Carneiro, 19-Apr-2015.) $)
+    $( A decimal number greater than 10 and ending with five is not a prime
+       number.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
     dec5nprm $p |- -. ; A 5 e. Prime $=
       ( c2 cmul co c1 caddc c5 cdc cn wcel 2nn nnmulcli peano2nn ax-mp 5nn 1nn0
       1lt2 nncni 5cn numlti 1lt5 cc0 mul32i 5t2e10 oveq1i eqtri mullidi oveq12i
@@ -143509,8 +143509,8 @@ $)
 
     dec2nprm.2 $e |- B e. NN0 $.
     dec2nprm.3 $e |- ( B x. 2 ) = C $.
-    $( Divisibility by two is obvious in base 10.  (Contributed by Mario
-       Carneiro, 19-Apr-2015.) $)
+    $( A decimal number greater than 10 and ending with an even digit is not a
+       prime number.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
     dec2nprm $p |- -. ; A C e. Prime $=
       ( c5 cmul co caddc c2 cdc cn wcel cn0 5nn nnmulcli c1 nncni 2cn mp2an 2nn
       nnnn0addcl 1nn0 1lt5 numlti cc0 mul32i 5t2e10 oveq1i eqtri oveq12i nn0cni
