@@ -182636,8 +182636,9 @@ $)
   ${
     $d m n x A $.  $d m n x P $.
     dvdsppwf1o.f $e |- F = ( n e. ( 0 ... A ) |-> ( P ^ n ) ) $.
-    $( A bijection from the divisors of a prime power to the integers less than
-       the prime count.  (Contributed by Mario Carneiro, 5-May-2016.) $)
+    $( A bijection between the divisors of a prime power and the integers less
+       than or equal to the exponent.  (Contributed by Mario Carneiro,
+       5-May-2016.) $)
     dvdsppwf1o $p |- ( ( P e. Prime /\ A e. NN0 ) ->
       F : ( 0 ... A ) -1-1-onto-> { x e. NN | x || ( P ^ A ) } ) $=
       ( wcel cn0 wa cc0 co cexp cdvds wbr cn cpc syl2an cz adantl wceq cfz crab
