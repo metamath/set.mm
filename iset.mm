@@ -181635,8 +181635,8 @@ $)
   ${
     $d k x A $.  $d k x B $.  $d x C $.
     $( Product of exponents law for complex exponentiation.  Variation on
-       ~ cxpmul with more general conditions on ` A ` and ` B ` when ` C ` is
-       an integer.  (Contributed by Mario Carneiro, 9-Aug-2014.) $)
+       ~ cxpmul with more general conditions on ` A ` and ` B ` when ` C ` is a
+       nonnegative integer.  (Contributed by Mario Carneiro, 9-Aug-2014.) $)
     rpcxpmul2 $p |- ( ( A e. RR+ /\ B e. CC /\ C e. NN0 ) ->
                    ( A ^c ( B x. C ) ) = ( ( A ^c B ) ^ C ) ) $=
       ( vx vk wcel cc cmul co ccxp cexp wceq wi cc0 caddc oveq2d eqeq12d imbi2d
@@ -181836,7 +181836,8 @@ $)
       cxpmul2d.4 $e |- ( ph -> C e. NN0 ) $.
       $( Product of exponents law for complex exponentiation.  Variation on
          ~ cxpmul with more general conditions on ` A ` and ` B ` when ` C ` is
-         an integer.  (Contributed by Mario Carneiro, 30-May-2016.) $)
+         a nonnegative integer.  (Contributed by Mario Carneiro,
+         30-May-2016.) $)
       rpcxpmul2d $p |- ( ph -> ( A ^c ( B x. C ) ) = ( ( A ^c B ) ^ C ) ) $=
         ( crp wcel cc cn0 cmul co ccxp cexp wceq rpcxpmul2 syl3anc ) ABHICJIDKI
         BCDLMNMBCNMDOMPEFGBCDQR $.
