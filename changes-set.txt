@@ -92,6 +92,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+19-Oct-25 ralin     [same]      moved from PM's mathbox to main set.mm
 17-Oct-25 decexp2   ---         deleted - unused
 13-Oct-25 ssinss1d  [same]      Moved from GS's mathbox to main set.mm
 13-Oct-25 opeliun2xp [same]     Moved from AV's mathbox to main set.mm
