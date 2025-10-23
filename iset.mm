@@ -132468,6 +132468,28 @@ $)
     UJULUM $.
 
   ${
+    $d k j A $.  $d k N $.  $d k ph $.
+    fsumdvds.1 $e |- ( ph -> A e. Fin ) $.
+    fsumdvds.2 $e |- ( ph -> N e. ZZ ) $.
+    fsumdvds.3 $e |- ( ( ph /\ k e. A ) -> B e. ZZ ) $.
+    fsumdvds.4 $e |- ( ( ph /\ k e. A ) -> N || B ) $.
+    $( If every term in a sum is divisible by ` N ` , then so is the sum.
+       (Contributed by Mario Carneiro, 17-Jan-2015.) $)
+    fsumdvds $p |- ( ph -> N || sum_ k e. A B ) $=
+      ( vj cc0 wceq cdvds wbr wa cz wcel adantlr wb adantr csu dvds0 mp1i simpr
+      wne 0z cv simplr eqbrtrrd 0dvds syl sumeq2dv cuz cfv wss wdc wral w3a cfn
+      mpbid wo olcd isumz eqtrd 3brtr4d cdiv co zcnd sylancl biimpar fsumdivapc
+      zapne dvdsval2 syl3anc fsumzcl eqeltrd mpbird zdceq dcne sylib mpjaodan
+      cap ) AEKLZEBCDUAZMNZEKUEZAWCOZKKEWDMKPQZKKMNWGUFKUBUCAWCUDWGWDBKDUAZKWGB
+      CKDWGDUGBQZOZKCMNZCKLZWKEKCMAWCWJUHAWJECMNZWCIRUIWKCPQZWLWMSAWJWOWCHRCUJU
+      KUTULWGWHBKUMUNZUOJUGBQUPJWPUQURZBUSQZVAWIKLWGWRWQAWRWCFTVBBJDKVCUKVDVEAW
+      FOZWEWDEVFVGZPQZWSWTBCEVFVGZDUAPWSBCEDAWRWFFTZWSEAEPQZWFGTZVHWSWJOZCAWJWO
+      WFHRZVHAEKWBNZWFAXDWHXHWFSGUFEKVLVIVJVKWSBXBDXCXFWNXBPQZAWJWNWFIRXFXDWFWO
+      WNXISWSXDWJXETAWFWJUHXGECVMVNUTVOVPWSXDWFWDPQZWEXASXEAWFUDAXJWFABCDFHVOTE
+      WDVMVNVQAWCUPZWCWFVAAXDWHXKGUFEKVRVIEKVSVTWA $.
+  $}
+
+  ${
     dvdslelemd.1 $e |- ( ph -> M e. ZZ ) $.
     dvdslelemd.2 $e |- ( ph -> N e. NN ) $.
     dvdslelemd.3 $e |- ( ph -> K e. ZZ ) $.
