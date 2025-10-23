@@ -88815,8 +88815,14 @@ $)
   $}
 
   ${
-    mulsubfacd.1 $e |- ( ph -> A e. CC ) $.
-    mulsubfacd.2 $e |- ( ph -> B e. CC ) $.
+    muls1d.1 $e |- ( ph -> A e. CC ) $.
+    muls1d.2 $e |- ( ph -> B e. CC ) $.
+    $( Multiplication by one minus a number.  (Contributed by Scott Fenton,
+       23-Dec-2017.) $)
+    muls1d $p |- ( ph -> ( A x. ( B - 1 ) ) = ( ( A x. B ) - A ) ) $=
+      ( c1 cmin co cmul 1cnd subdid mulridd oveq2d eqtrd ) ABCFGHIHBCIHZBFIHZGH
+      OBGHABCFDEAJKAPBOGABDLMN $.
+
     $( Multiplication followed by the subtraction of a factor.  (Contributed by
        Alexander van der Vekens, 28-Aug-2018.) $)
     mulsubfacd $p |- ( ph -> ( ( A x. B ) - B ) = ( ( A - 1 ) x. B ) ) $=
