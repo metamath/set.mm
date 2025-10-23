@@ -132783,6 +132783,40 @@ $)
     FVKVLVTMNVCVKVDVOQVCVLVDVPQCUQURSSSUS $.
 
   ${
+    $d j k F $.  $d j k N $.
+    $( A rule for divisibility by 3 of a number written in base 10.  This is
+       Metamath 100 proof #85.  (Contributed by Mario Carneiro, 14-Jul-2014.)
+       (Revised by Mario Carneiro, 17-Jan-2015.)  (Revised by AV,
+       8-Sep-2021.) $)
+    3dvds $p |- ( ( N e. NN0 /\ F : ( 0 ... N ) --> ZZ ) ->
+     ( 3 || sum_ k e. ( 0 ... N ) ( ( F ` k ) x. ( ; 1 0 ^ k ) ) <->
+       3 || sum_ k e. ( 0 ... N ) ( F ` k ) ) ) $=
+      ( vj wcel cc0 co cz c3 c1 csu cmin cdvds wbr wb 3z sylancr c9 ax-1cn syl
+      cn0 cfz wf wa cv cfv cdc cexp cmul a1i 0zd adantr fzfigd ffvelcdm adantll
+      nn0z elfznn0 adantl zexpcl zmulcld fsumzcl zsubcld caddc nncni negsubdi2i
+      10nn nnzi cneg 9p1e10 eqcomi oveq1i 9cn pncan3oi 3eqtri 3t3e9 eqtr4i cdiv
+      cc cap 1re 1lt10 gtapii id geoserap peano2zm eqeltrrd wne 1z zsubcl mp2an
+      10re ltneii subeq0i necon3bii mpbir dvdsval2 mp3an12i wceq zcnd negsubdi2
+      mpbird sylancl breqtrrd dvdsnegb negdvdsb mpbid eqbrtrrid wi muldvds1 mpd
+      dvdsmultr2 mp3an2i muls1d breqtrd fsumdvds fsumsub dvdssub2 syl31anc ) CU
+      AEZFCUBGZHBUCZUDZIHEZXTAUEZBUFZJFUGZYDUHGZUIGZAKZHEXTYEAKZHEIYIYJLGZMNIYI
+      MNIYJMNOYCYBPUJZYBXTYHAYBFCYBUKXSCHEYACUPULUMZYBYDXTEZUDZYEYGYAYNYEHEZXSX
+      THYDBUNUOZYOYFHEZYDUAEZYGHEZYFVFVGZYNYSYBYDCUQURZYFYDUSZQZUTZVAYBXTYEAYMY
+      QVAYBIXTYHYELGZAKYKMYBXTUUFAIYMYLYOYHYEUUEYQVBYOIYEYGJLGZUIGZUUFMYOIUUGMN
+      ZIUUHMNZYOYSUUIUUBYSIIUIGZUUGMNZUUIYSUUKJYFLGZVHZUUGMUUNRUUKUUNYFJLGRJVCG
+      ZJLGRJYFSYFVFVDZVEYFUUOJLUUOYFVIVJVKRJVLSVMVNVOVPYSUUMUUGMNZUUNUUGMNZYSUU
+      QUUMUUGVHZMNZYSUUMJYGLGZUUSMYSUUMUVAMNZUVAUUMVQGZHEZYSFYDJLGZUBGZYFDUEZUH
+      GZDKUVCHYSYFDYDYFVREYSUUPUJYFJVSNYSJYFVTWKWAWBUJYSWCZWDYSUVFUVHDYSFUVEYSU
+      KYSYDHEUVEHEYDUPYDWETUMYSUVGUVFEZUDYRUVGUAEZUVHHEUUAUVJUVKYSUVGUVEUQURYFU
+      VGUSQVAWFUUMHEZUUMFWGZYSUVAHEZUVBUVDOJHEZYRUVLWHUUAJYFWIWJZUVMJYFWGJYFVTW
+      AWLUUMFJYFJYFSUUPWMWNWOYSUVOYTUVNWHYSYRYSYTUUAUVIUUCQZJYGWIQUUMUVAWPWQXAY
+      SYGVREJVREUUSUVAWRYSYGUVQWSSYGJWTXBXCYSUVLUUGHEZUUQUUTOUVPYSYTUVRUVQYGWEZ
+      TZUUMUUGXDQXAYSUVLUVRUUQUUROUVPUVTUUMUUGXEQXFXGYCYCYSUVRUULUUIXHPPUVTIIUU
+      GXIWQXJTYCYOYPUVRUUIUUJXHPYQYOYTUVRUUDUVSTIYEUUGXKXLXJYOYEYGYOYEYQWSZYOYG
+      UUDWSXMXNXOYBXTYHYEAYMYOYHUUEWSUWAXPXNIYIYJXQXR $.
+  $}
+
+  ${
     3dvdsdec.a $e |- A e. NN0 $.
     3dvdsdec.b $e |- B e. NN0 $.
     $( A decimal number is divisible by three iff the sum of its two "digits"
