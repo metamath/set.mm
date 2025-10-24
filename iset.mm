@@ -180041,6 +180041,47 @@ $)
   $}
 
   ${
+    $d A j z r q $.  $d A k z r q $.  $d D k z r p q $.  $d M j p r $.
+    $d M k p r $.  $d X j z q r $.  $d X k z q r $.  $d ph p q r $.
+    plycoeid3.d $e |- ( ph -> D e. NN0 ) $.
+    plycoeid3.a $e |- ( ph -> A : NN0 --> CC ) $.
+    plycoeid3.z $e |- ( ph -> ( A " ( ZZ>= ` ( D + 1 ) ) ) = { 0 } ) $.
+    plycoeid3.f $e |- ( ph -> F = ( z e. CC |->
+      sum_ k e. ( 0 ... D ) ( ( A ` k ) x. ( z ^ k ) ) ) ) $.
+    plycoeid3.m $e |- ( ph -> M e. ( ZZ>= ` D ) ) $.
+    plycoeid3.x $e |- ( ph -> X e. CC ) $.
+    $( Reconstruct a polynomial as an explicit sum of the coefficient function
+       up to an index no smaller than the degree of the polynomial.
+       (Contributed by Jim Kingdon, 17-Oct-2025.) $)
+    plycoeid3 $p |- ( ph -> ( F ` X )
+        = sum_ j e. ( 0 ... M ) ( ( A ` j ) x. ( X ^ j ) ) ) $=
+      ( cc0 co cmul wcel cn0 vr vq vp cfv cfz cv cexp csu cmpt fveq1d eqid wceq
+      cc oveq1 oveq2d sumeq2sdv fveq2 oveq2 oveq12d cbvsumv 0zd nn0zd fzfigd wa
+      wf adantr elfznn0 adantl ffvelcdmd expcld mulcld fsumcl eqeltrrid fvmptd3
+      eqtrd eqtrdi cuz wss fzss2 syl csn c1 caddc wn eldifn cun eldifi nn0split
+      cdif eleqtrd elun sylib orcomd ecased cima wral eqimss wfun cdm peano2nn0
+      wo wb ffund nn0uz eleqtrdi uzss sseqtrrdi fdmd sseqtrrd funimass4 syl2anc
+      mpbid r19.21bi syldan elsni oveq1d mul02d wdc cz elfzelz fzdcel ralrimiva
+      syl3anc eluzelz fisumss ) AIGUDZPHUEQZUAUFZCUDZIYHUGQZRQZUAUHZYGEUFZCUDZI
+      YMUGQZRQZEUHAYFPDUEQZYKUAUHZYLAYFYQFUFZCUDZIYSUGQZRQZFUHZYRAYFIBUMYQYTBUF
+      ZYSUGQZRQZFUHZUIZUDUUCAIGUUHMUJABIUUGUUCUMUUHUMUUHUKUUDIULZYQUUFUUBFUUIUU
+      EUUAYTRUUDIYSUGUNUOUPOAUUCYQUBUFZCUDZIUUJUGQZRQZUBUHUMYQUUMUUBUBFUUJYSULU
+      UKYTUULUUARUUJYSCUQUUJYSIUGURUSUTAYQUUMUBAPDAVAZADJVBZVCAUUJYQSZVDZUUKUUL
+      UUQTUMUUJCATUMCVEZUUPKVFUUPUUJTSAUUJDVGVHZVIUUQIUUJAIUMSZUUPOVFUUSVJVKVLV
+      MVNVOYQUUBYKFUAYSYHULYTYIUUAYJRYSYHCUQYSYHIUGURUSUTVPAYQYGYKUCUAAHDVQUDSZ
+      YQYGVRNDPHVSVTAYHYQSZVDZYIYJUVCTUMYHCAUURUVBKVFUVBYHTSZAYHDVGVHZVIUVCIYHA
+      UUTUVBOVFUVEVJVKAYHYGYQWISZVDZYKPYJRQPUVGYIPYJRUVGYIPWAZSZYIPULAUVFYHDWBW
+      CQZVQUDZSZUVIUVGUVLUVBUVFUVBWDAYHYGYQWEVHUVGUVBUVLUVGYHYQUVKWFZSUVBUVLXAU
+      VGYHTUVMUVGYHYGSZUVDUVFUVNAYHYGYQWGVHYHHVGVTZATUVMULZUVFADTSZUVPJDWHVTVFW
+      JYHYQUVKWKWLWMWNAUVIUAUVKACUVKWOZUVHVRZUVIUAUVKWPZAUVRUVHULUVSLUVRUVHWQVT
+      ACWRUVKCWSZVRUVSUVTXBATUMCKXCAUVKTUWAAUVKPVQUDZTAUVJUWBSUVKUWBVRAUVJTUWBA
+      UVQUVJTSJDWTVTXDXEPUVJXFVTXDXGATUMCKXHXIUAUVKUVHCXJXKXLXMXNYIPXOVTXPUVGYJ
+      UVGIYHAUUTUVFOVFUVOVJXQVOAUCUFZYQSXRZUCYGAUWCYGSZVDZUWCXSSZPXSSDXSSZUWDUW
+      EUWGAUWCPHXTVHUWFVAAUWHUWEUUOVFUWCPDYAYCYBAPHUUNAUVAHXSSNDHYDVTVCYEVOYGYK
+      YPUAEYHYMULYIYNYJYORYHYMCUQYHYMIUGURUSUTVP $.
+  $}
+
+  ${
     plyco.1 $e |- ( ph -> F e. ( Poly ` S ) ) $.
     plyco.2 $e |- ( ph -> G e. ( Poly ` S ) ) $.
     plyco.3 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) -> ( x + y ) e. S ) $.
@@ -180322,6 +180363,43 @@ $)
       XMVUOUVMQVVPUWMVUONSUXMVUOUIVVOUWMUXPUVJUXKVKXCZVVPVUMVUNVVPVUMVVPUWMVUMV
       ISVVQUVJYOWFZWGVVPVINVUMCAUWLUWHVVOKYIVVRYPVSEVIVUONDLUVCWQYQXKUVDUVEUVFJ
       UVGUVH $.
+  $}
+
+  ${
+    $d F a b c d p $.  $d F c p u v $.  $d S a b c d p $.  $d a b c d k p z $.
+    $( The derivative of a polynomial with coefficients in a subring is a
+       polynomial with coefficients in the same ring.  (Contributed by Mario
+       Carneiro, 1-Jan-2017.)  (Revised by GG, 30-Apr-2025.) $)
+    dvply2g $p |- ( ( S e. ( SubRing ` CCfld ) /\ F e. ( Poly ` S ) ) ->
+      ( CC _D F ) e. ( Poly ` S ) ) $=
+      ( va vb ccnfld cfv wcel wa cv c1 caddc co cc0 wceq cc cmul cn0 wss adantr
+      cmpt vp vd vz vk vc vu vv csubrg cply cuz cima csn cfz cexp csu cmap wrex
+      cun cdv elply2 simprbi adantl wf feqmptd ad2antrr simplrl elmapi ad2antll
+      plyf cnfldbas subrgss 0cn snssi mp1i ad3antrrr fssd simplrr nn0z peano2uz
+      unssd uzidd syl simpr plycoeid3 mpteq2dva eqtrd cmin nn0cnd pncand eqcomd
+      1cnd oveq2d sumeq1d mpteq2dv oveq1 fvoveq1 oveq12d cbvmptv dvply1 elfznn0
+      peano2nn0 cmpo ffvelcdmd mulcld oveq2 eqid ovmpog syl3anc simp-4l ad4antr
+      cz zsssubrg nn0zd sseldd csubg subrgsubg cnfld0 subg0cl snssd sylib feq3d
+      ssequn2 mpocnfldmul subrgmcl eqeltrrd fmpttd ffvelcdmda sylan2 eqeltrd ex
+      mpbid elplyd rexlimdvva mpd ) AEUHFGZBAUIFZGZHZUAIZUBIZJKLZUJFUKMULZNZBUC
+      OMYTUMLZUDIZYSFUCIUUEUNLPLUDUOTNZHZUAAUUBURZQUPLZUQUBQUQZOBUSLZYPGZYQUUJY
+      OYQAORZUUJUCAUDUBBUAUTVAVBYRUUGUULUBUAQUUIYRYTQGZYSUUIGZHZHZUUGUULUUQUUGH
+      ZUUKCOUUDDIZUEQUEIZJKLZUVAYSFZPLZTZFZCIZUUSUNLZPLZDUOZTZYPUURCYSUVDDBUVJU
+      UAUURBCOUVFBFZTZCOMUUAUMLUUSYSFUVGPLDUOZTYRBUVLNUUPUUGYRCOOBYQOOBVCYOABVI
+      VBVDVEUURCOUVKUVMUURUVFOGZHUCYSYTDUDBUUAUVFUURUUNUVNYRUUNUUOUUGVFZSUURQOY
+      SVCZUVNUURQUUHOYSUUQQUUHYSVCZUUGUUOUVQYRUUNYSUUHQVGVHSZYOUUHORYQUUPUUGYOA
+      UUBOAOEVJVKZMOGUUBORYOVLMOVMVNVTVOVPZSUUQUUCUUFUVNVFUUQUUCUUFUVNVQUURUUAY
+      TUJFZGZUVNUURUUNUWBUVOUUNYTUWAGUWBUUNYTYTVRWAYTYTVSWBWBSUURUVNWCWDWEWFUUR
+      COUVIMUUAJWGLZUMLZUVHDUOUURUUDUWDUVHDUURYTUWCMUMUURUWCYTUURYTJUURYTUVOWHU
+      URWKWIWJWLWMWNUVTUEDQUVCUUSJKLZUWEYSFZPLUUTUUSNUVAUWEUVBUWFPUUTUUSJKWOUUT
+      UUSJYSKWPWQWRUURUUNUUAQGUVOYTXAWBWSUURCUVEADYTYOUUMYQUUPUUGUVSVOUVOUUSUUD
+      GUURUUSQGUVEAGUUSYTWTUURQAUUSUVDUURUEQUVCAUURUUTQGZHZUVAUVBUFUGOOUFIZUGIZ
+      PLZXBZLZUVCAUWHUVAOGUVBOGUVCOGUWMUVCNUWHUVAUWGUVAQGUURUUTXAVBZWHZUWHQOUVA
+      YSUURUVPUWGUVTSUWNXCZUWHUVAUVBUWOUWPXDUFUGUVAUVBOOUWKUVCUWLUVAUWJPLOUWIUV
+      AUWJPWOUWJUVBUVAPXEUWLXFXGXHUWHYOUVAAGUVBAGUWMAGYOYQUUPUUGUWGXIUWHXKAUVAY
+      OXKARYQUUPUUGUWGAXLXJUWHUVAUWNXMXNUWHQAUVAYSUWHUVQQAYSVCUURUVQUWGUVRSUWHU
+      UHAYSQUWHUUBARUUHANUWHMAYOMAGZYQUUPUUGUWGYOAEXOFGUWQAEXPAEMXQXRWBXJXSUUBA
+      YBXTYAYKUWNXCAEUWLUVAUVBUFUGYCYDXHYEYFYGYHYLYIYJYMYN $.
   $}
 
 
