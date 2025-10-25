@@ -92,9 +92,18 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+19-Oct-25 ralin     [same]      moved from PM's mathbox to main set.mm
+17-Oct-25 decexp2   ---         deleted - unused
 16-Oct-25 ringdid   [same]      Moved from TA's mathbox to main set.mm
 16-Oct-25 ringdird  [same]      Moved from TA's mathbox to main set.mm
+13-Oct-25 ssinss1d  [same]      Moved from GS's mathbox to main set.mm
+13-Oct-25 opeliun2xp [same]     Moved from AV's mathbox to main set.mm
+13-Oct-25 fvelima2  [same]      Moved from GS's mathbox to main set.mm
+13-Oct-25 pwssfi    [same]      Moved from GS's mathbox to main set.mm
+13-Oct-25 pnfged    [same]      Moved from GS's mathbox to main set.mm
  7-Oct-25 tgioo4    [same]      Moved from GS's mathbox to main set.mm
+ 6-Oct-25 nel2nelin [same]      Moved from GS's mathbox to main set.mm
+ 6-Oct-25 nel1nelin [same]      Moved from GS's mathbox to main set.mm
  5-Oct-25 eliund    [same]      Moved from GS's mathbox to main set.mm
  5-Oct-25 feq1dd    [same]      Moved from GS's mathbox to main set.mm
  5-Oct-25 offvalfv  [same]      Moved from AV's mathbox to main set.mm
@@ -264,6 +273,7 @@ Date      Old       New         Notes
 18-May-25 evls1expd [same]      Moved from TA's mathbox to main set.mm
 18-May-25 evls1varpwval [same]  Moved from TA's mathbox to main set.mm
 17-May-25 reximddv3 [same]      Moved from GS's mathbox to main set.mm
+16-May-25 boolesineq [same]     Moved from ET's mathbox to TA's mathbox
 15-May-25 rabbieq   [same]      Moved from PM's mathbox to main set.mm
 15-May-25 dmresss   [same]      Moved from GS's mathbox to main set.mm
 11-May-25 rabdif    [same]      Moved from SN's mathbox to main set.mm
@@ -295,6 +305,8 @@ Date      Old       New         Notes
 30-Apr-25 idomrootle [same]     Moved from SO's mathbox to main set.mm
 30-Apr-25 ply1ascl0 [same]      Moved from TA's mathbox to main set.mm
 30-Apr-25 hashf1dmcdm [same]    Moved from BT's mathbox to main set.mm
+30-Apr-25 sotrd     [same]      Moved from SF's mathbox to main set.mm
+30-Apr-25 iscnrm3lem3 4anpull2  Moved from ZW's mathbox to main set.mm
 25-Apr-25 mon1pid   [same]      Moved from SO's mathbox to main set.mm
 27-Apr-25 df-cnfld  [same]      Use maps-to notation
 26-Apr-25 fsuppfund [same]      Moved from SN's mathbox to main set.mm
