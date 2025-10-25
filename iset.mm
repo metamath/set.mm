@@ -183481,7 +183481,7 @@ $)
     $d A n p q $.  $d B n p q $.
 
     $( Lemma for ~ perfect .  (Contributed by Mario Carneiro, 17-May-2016.)
-       Replace OLD theorem.  (Revised by Wolf Lammen, 17-Sep-2020.) $)
+       (Revised by Wolf Lammen, 17-Sep-2020.) $)
     perfectlem2 $p |- ( ph ->
       ( B e. Prime /\ B = ( ( 2 ^ ( A + 1 ) ) - 1 ) ) ) $=
       ( vk wcel c2 c1 caddc co wceq cdvds wbr cn clt cz cmul vn vx vp vq cprime
