@@ -183570,8 +183570,8 @@ $)
     $( The Euclid-Euler theorem, or Perfect Number theorem.  A positive even
        integer ` N ` is a perfect number (that is, its divisor sum is ` 2 N ` )
        if and only if it is of the form ` 2 ^ ( p - 1 ) x. ( 2 ^ p - 1 ) ` ,
-       where ` 2 ^ p - 1 ` is prime (a Mersenne prime).  (It follows from this
-       that ` p ` is also prime.)  This is Metamath 100 proof #70.
+       where ` 2 ^ p - 1 ` is prime (a Mersenne prime), and therefore ` p ` is
+       also prime, see ~ mersenne .  This is Metamath 100 proof #70.
        (Contributed by Mario Carneiro, 17-May-2016.) $)
     perfect $p |- ( ( N e. NN /\ 2 || N ) -> ( ( 1 sigma N ) = ( 2 x. N ) <->
       E. p e. ZZ ( ( ( 2 ^ p ) - 1 ) e. Prime /\
