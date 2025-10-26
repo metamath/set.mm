@@ -133982,6 +133982,13 @@ $)
     bitsss $p |- ( bits ` N ) C_ NN0 $=
       ( vm cbits cfv cn0 cv wcel cz c2 cexp co cfl cdvds wbr wn bitsval simp2bi
       cdiv ssriv ) BACDZEBFZTGAHGUAEGIAIUAJKRKLDMNOUAAPQS $.
+
+    $( The ` bits ` function is a function from integers to subsets of
+       nonnegative integers.  (Contributed by Mario Carneiro, 5-Sep-2016.) $)
+    bitsf $p |- bits : ZZ --> ~P NN0 $=
+      ( vn vk cz cn0 cpw c2 cv cexp co cdiv cfl cfv cdvds wn crab cbits df-bits
+      wbr wcel cvv nn0ex ssrab2 elpwi2 a1i fmpti ) ACDEZFAGZFBGHIJIKLMRNZBDOZPB
+      AQUIUFSUGCSUIDTUAUHBDUBUCUDUE $.
   $}
 
 
