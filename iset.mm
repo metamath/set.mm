@@ -133991,6 +133991,14 @@ $)
       AQUIUFSUGCSUIDTUAUHBDUBUCUDUE $.
   $}
 
+  $( Value of the zeroth bit.  (Contributed by Mario Carneiro, 5-Sep-2016.) $)
+  bits0 $p |- ( N e. ZZ -> ( 0 e. ( bits ` N ) <-> -. 2 || N ) ) $=
+    ( cz wcel cc0 cbits cfv c2 cexp co cdiv cfl cdvds wbr wn cn0 bitsval2 mpan2
+    wb 0nn0 c1 cc wceq 2cn exp0 ax-mp oveq2i zcn div1d eqtrid fveq2d flid eqtrd
+    breq2d notbid bitrd ) ABCZDAEFCZGAGDHIZJIZKFZLMZNZGALMZNUPDOCUQVBRSDAPQUPVA
+    VCUPUTAGLUPUTAKFAUPUSAKUPUSATJIAURTAJGUACURTUBUCGUDUEUFUPAAUGUHUIUJAUKULUMU
+    NUO $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
