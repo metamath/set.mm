@@ -133976,6 +133976,12 @@ $)
       ( cbits cfv wcel cz cn0 wa c2 cexp co cfl cdvds wbr wn w3a bitsval df-3an
       cdiv bitri baib ) ABCDEZBFEZAGEZHZIBIAJKSKLDMNOZUBUCUDUFPUEUFHABQUCUDUFRT
       UA $.
+
+    $( The set of bits of an integer is a subset of ` NN0 ` .  (Contributed by
+       Mario Carneiro, 5-Sep-2016.) $)
+    bitsss $p |- ( bits ` N ) C_ NN0 $=
+      ( vm cbits cfv cn0 cv wcel cz c2 cexp co cfl cdvds wbr wn bitsval simp2bi
+      cdiv ssriv ) BACDZEBFZTGAHGUAEGIAIUAJKRKLDMNOUAAPQS $.
   $}
 
 
