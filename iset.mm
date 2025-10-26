@@ -133957,6 +133957,17 @@ $)
       cn0 wceq notbid rabbidv df-bits nn0ex rabex fvmpt ) CBDCEZDAEFGZHGIJZKLZM
       ZASNDBUHHGIJZKLZMZASNOPUGBTZUKUNASUOUJUMUOUIULDKUGBUHIHQRUAUBACUCUNASUDUE
       UF $.
+
+    $( Expand the definition of the bits of an integer.  (Contributed by Mario
+       Carneiro, 5-Sep-2016.) $)
+    bitsval $p |- ( M e. ( bits ` N ) <-> ( N e. ZZ /\ M e. NN0 /\
+      -. 2 || ( |_ ` ( N / ( 2 ^ M ) ) ) ) ) $=
+      ( vn vm cbits cfv wcel cz cn0 c2 cexp co cdiv cfl cdvds wbr wn wa cv crab
+      w3a df-bits mptrcl bitsfval eleq2d wceq oveq2 oveq2d fveq2d breq2d notbid
+      elrab bitrdi biadanii 3anass bitr4i ) ABEFZGZBHGZAIGZJBJAKLZMLZNFZOPZQZRZ
+      RUSUTVEUAURUSVFCHJCSJDSZKLZMLNFOPQDITEABDCUBUCUSURAJBVHMLZNFZOPZQZDITZGVF
+      USUQVMADBUDUEVLVEDAIVGAUFZVKVDVNVJVCJOVNVIVBNVNVHVABMVGAJKUGUHUIUJUKULUMU
+      NUSUTVEUOUP $.
   $}
 
 
