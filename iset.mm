@@ -133968,6 +133968,14 @@ $)
       RUSUTVEUAURUSVFCHJCSJDSZKLZMLNFOPQDITEABDCUBUCUSURAJBVHMLZNFZOPZQZDITZGVF
       USUQVMADBUDUEVLVEDAIVGAUFZVKVDVNVJVCJOVNVIVBNVNVHVABMVGAJKUGUHUIUJUKULUMU
       NUSUTVEUOUP $.
+
+    $( Expand the definition of the bits of an integer.  (Contributed by Mario
+       Carneiro, 5-Sep-2016.) $)
+    bitsval2 $p |- ( ( N e. ZZ /\ M e. NN0 ) -> ( M e. ( bits ` N ) <->
+      -. 2 || ( |_ ` ( N / ( 2 ^ M ) ) ) ) ) $=
+      ( cbits cfv wcel cz cn0 wa c2 cexp co cfl cdvds wbr wn w3a bitsval df-3an
+      cdiv bitri baib ) ABCDEZBFEZAGEZHZIBIAJKSKLDMNOZUBUCUDUFPUEUFHABQUCUDUFRT
+      UA $.
   $}
 
 
