@@ -133846,6 +133846,16 @@ $)
       VDGIUGADUMUHUIUJUNBAMHUKUL $.
   $}
 
+  $( 5 does not divide 3.  (Contributed by AV, 8-Sep-2025.) $)
+  5ndvds3 $p |- -. 5 || 3 $=
+    ( c5 c3 cc0 5nn 0nn0 3nn cmul co caddc 5cn mul01i oveq1i addlidi eqtri 3lt5
+    3cn ndvdsi ) ABCBDEFACGHZBIHCBIHBRCBIAJKLBPMNOQ $.
+
+  $( 5 does not divide 6.  (Contributed by AV, 8-Sep-2025.) $)
+  5ndvds6 $p |- -. 5 || 6 $=
+    ( c5 c6 c1 5nn 1nn0 1nn cmul co caddc 5cn mulridi oveq1i 5p1e6 eqtri ndvdsi
+    1lt5 ) ABCCDEFACGHZCIHACIHBQACIAJKLMNPO $.
+
   ${
     $d M x $.
     $( The floor of an odd integer divided by 4.  (Contributed by AV,
