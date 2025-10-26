@@ -133931,6 +133931,28 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Bit sequences
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c bits $.
+
+  $( Define the binary bits of an integer. $)
+  cbits $a class bits $.
+
+  ${
+    $d k n $.  $d m M $.  $d m n N $.
+    $( Define the binary bits of an integer.  The expression
+       ` M e. ( bits `` N ) ` means that the ` M ` -th bit of ` N ` is 1 (and
+       its negation means the bit is 0).  (Contributed by Mario Carneiro,
+       4-Sep-2016.) $)
+    df-bits $a |- bits = ( n e. ZZ |->
+      { m e. NN0 | -. 2 || ( |_ ` ( n / ( 2 ^ m ) ) ) } ) $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   The greatest common divisor operator
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -189122,6 +189144,9 @@ htmldef "||" as
     " <IMG SRC='parallel.gif' WIDTH=5 HEIGHT=19 " + "ALT=' ||' TITLE='||'> ";
   althtmldef "||" as ' &#8741; ';
   latexdef "||" as " \parallel ";
+htmldef "bits" as "bits";
+  althtmldef "bits" as "bits";
+  latexdef "bits" as "\text{ bits }";
 htmldef "gcd" as
     " <IMG SRC='_gcd.gif' WIDTH=23 HEIGHT=19 ALT=' gcd' TITLE='gcd'> ";
   althtmldef "gcd" as " gcd ";
