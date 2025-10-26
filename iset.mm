@@ -133948,6 +133948,15 @@ $)
        4-Sep-2016.) $)
     df-bits $a |- bits = ( n e. ZZ |->
       { m e. NN0 | -. 2 || ( |_ ` ( n / ( 2 ^ m ) ) ) } ) $.
+
+    $( Expand the definition of the bits of an integer.  (Contributed by Mario
+       Carneiro, 5-Sep-2016.) $)
+    bitsfval $p |- ( N e. ZZ -> ( bits ` N ) =
+      { m e. NN0 | -. 2 || ( |_ ` ( N / ( 2 ^ m ) ) ) } ) $=
+      ( vn c2 cv cexp co cdiv cfl cfv cdvds wbr wn crab cz cbits fvoveq1 breq2d
+      cn0 wceq notbid rabbidv df-bits nn0ex rabex fvmpt ) CBDCEZDAEFGZHGIJZKLZM
+      ZASNDBUHHGIJZKLZMZASNOPUGBTZUKUNASUOUJUMUOUIULDKUGBUHIHQRUAUBACUCUNASUDUE
+      UF $.
   $}
 
 
