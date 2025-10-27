@@ -134028,6 +134028,16 @@ $)
     DZWBSDWCWIUQVKVLWKWQWLBFURUSZWOVTWBUTVARVBVCVLVKVNEDWFVSVDAVEVNBVFVGVKVLWAC
     DWGWEVDVMVTWRVHAWAVFVIVJ $.
 
+  $( The ` M + 1 ` -th bit of ` 2 N ` is the ` M ` -th bit of ` N ` .
+     (Contributed by Mario Carneiro, 5-Sep-2016.) $)
+  bitsp1e $p |- ( ( N e. ZZ /\ M e. NN0 ) ->
+    ( ( M + 1 ) e. ( bits ` ( 2 x. N ) ) <-> M e. ( bits ` N ) ) ) $=
+    ( cz wcel cn0 wa c1 caddc co c2 cmul cbits cfv cdiv cfl wb 2z a1i id fveq2d
+    zmulcld bitsp1 sylan wceq zcn 2cnd cc0 cap wbr 2ap0 divcanap3d eqtrd adantr
+    flid eleq2d bitrd ) BCDZAEDZFZAGHIJBKIZLMDZAUTJNIZOMZLMZDZABLMZDUQUTCDURVAV
+    EPUQJBJCDUQQRUQSUAAUTUBUCUSVDVFAUSVCBLUQVCBUDURUQVCBOMBUQVBBOUQBJBUEUQUFJUG
+    UHUIUQUJRUKTBUNULUMTUOUP $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
