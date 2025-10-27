@@ -4748,10 +4748,16 @@ this implies excluded middle</TD>
 </tr>
 
 <TR>
-  <TD ROWSPAN="2">prfi</TD>
+  <TD ROWSPAN="3">prfi</TD>
   <TD>~ prfidisj</TD>
   <TD>for two unequal sets</TD>
 </TR>
+
+<tr>
+  <td>~ prfidceq</td>
+  <td>for two sets which are elements of a class with decidable
+  equality</td>
+</tr>
 
 <TR>
   <TD><I>in general</I></TD>
@@ -4763,7 +4769,7 @@ this implies excluded middle</TD>
 
 <TR>
   <TD>tpfi</TD>
-  <TD>~ tpfidisj</TD>
+  <TD>~ tpfidisj , ~ tpfidceq</TD>
 </TR>
 
 <TR>
@@ -8449,7 +8455,7 @@ dividing by zero.</TD>
 </tr>
 
 <TR>
-<TD>leexp2a , ltexp2d , leexp2d</TD>
+<TD>leexp2a , leexp2d</TD>
 <TD><I>none</I></TD>
 <TD>Presumably provable using ~ ltexp2</TD>
 </TR>
@@ -14376,6 +14382,11 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>coeid3</td>
+  <td>~ elply2 plus ~ plycoeid3</td>
+</tr>
+
+<tr>
   <td>coecj</td>
   <td>~ plycjlemc</td>
   <td>the key difference between coecj and plycjlemc is that the latter
@@ -15528,11 +15539,6 @@ of Transcendental Numbers</td>
     and algebraic numbers.  Also see <a href="">transcendental
     number</a> at ncatlab concerning how we should
     define transcendental.</td>
-  </tr>
-
-  <tr>
-    <td>70.  The Perfect Number Theorem</td>
-    <td>Depends on the prime count function pCnt .</td>
   </tr>
 
   <tr>
