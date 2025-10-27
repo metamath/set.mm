@@ -134014,6 +134014,20 @@ $)
     1lt2 ) ABCZDEAFGZHIGZJKCZEUPLMNZUNEUOLMZUREBCZUNUSOEAPSUNUOBCEQCZHERMZUSURU
     AUNEAUTUNOTUNUBUCZVAUNUDTVBUNUMTEUOUEUFUGUNUPBCUQURUHUNUOVCUIUPUJUKUL $.
 
+  $( The ` M + 1 ` -th bit of ` N ` is the ` M ` -th bit of ` |_ ( N / 2 ) ` .
+     (Contributed by Mario Carneiro, 5-Sep-2016.) $)
+  bitsp1 $p |- ( ( N e. ZZ /\ M e. NN0 ) ->
+    ( ( M + 1 ) e. ( bits ` N ) <-> M e. ( bits ` ( |_ ` ( N / 2 ) ) ) ) ) $=
+    ( cz wcel cn0 c2 co cexp cdiv cfl cfv cdvds wbr wn cbits cmul nnap0d eqtr4d
+    cn nncnd wa c1 caddc 2nn a1i simpr expp1d nnexpcld mulcomd eqtrd simpl zcnd
+    oveq2d divdivap1d fveq2d cq wceq znq syldan flqdiv syl2anc breq2d notbid wb
+    peano2nn0 bitsval2 sylan2 flqcld sylancom 3bitr4d ) BCDZAEDZUAZFBFAUBUCGZHG
+    ZIGZJKZLMZNZFBFIGZJKZFAHGZIGJKZLMZNZVNBOKDZAWAOKDZVMVRWDVMVQWCFLVMVQVTWBIGZ
+    JKZWCVMVPWHJVMVPBFWBPGZIGWHVMVOWJBIVMVOWBFPGWJVMFAVMFFSDZVMUDUEZTZVKVLUFZUG
+    VMWBFVMWBVMFAWLWNUHZTZWMUIUJUMVMBFWBVMBVKVLUKULWMWPVMFWLQVMWBWOQUNRUOVMVTUP
+    DZWBSDWCWIUQVKVLWKWQWLBFURUSZWOVTWBUTVARVBVCVLVKVNEDWFVSVDAVEVNBVFVGVKVLWAC
+    DWGWEVDVMVTWRVHAWAVFVIVJ $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
