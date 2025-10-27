@@ -134038,6 +134038,20 @@ $)
     EPUQJBJCDUQQRUQSUAAUTUBUCUSVDVFAUSVCBLUQVCBUDURUQVCBOMBUQVBBOUQBJBUEUQUFJUG
     UHUIUQUJRUKTBUNULUMTUOUP $.
 
+  $( The ` M + 1 ` -th bit of ` 2 N + 1 ` is the ` M ` -th bit of ` N ` .
+     (Contributed by Mario Carneiro, 5-Sep-2016.) $)
+  bitsp1o $p |- ( ( N e. ZZ /\ M e. NN0 ) ->
+    ( ( M + 1 ) e. ( bits ` ( ( 2 x. N ) + 1 ) ) <-> M e. ( bits ` N ) ) ) $=
+    ( cz wcel wa c1 caddc co c2 cbits cfv cdiv cfl wb a1i wceq cc0 eqtrd fveq2d
+    wbr cn0 cmul 2z id zmulcld peano2zd bitsp1 sylan cr 2re remulcld recnd 1cnd
+    zre 2cnd cap divdirapd zcn divcanap3d oveq1d cle clt halfge0 halflt1 pm3.2i
+    2ap0 cq cn 1z 2nn znq mp2an flqbi2 mpan2 mpbiri adantr eleq2d bitrd ) BCDZA
+    UADZEZAFGHIBUBHZFGHZJKDZAWCILHZMKZJKZDZABJKZDVSWCCDVTWDWHNVSWBVSIBICDVSUCOV
+    SUDUEUFAWCUGUHWAWGWIAWAWFBJVSWFBPVTVSWFBFILHZGHZMKZBVSWEWKMVSWEWBILHZWJGHWK
+    VSWBFIVSWBVSIBIUIDVSUJOBUNUKULVSUMVSUOZIQUPTVSVFOZUQVSWMBWJGVSBIBURWNWOUSUT
+    RSVSWLBPZQWJVATZWJFVBTZEZWQWRVCVDVEVSWJVGDZWPWSNFCDIVHDWTVIVJFIVKVLWJBVMVNV
+    ORVPSVQVR $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
