@@ -133999,6 +133999,13 @@ $)
     VCUPUTAGLUPUTAKFAUPUSAKUPUSATJIAURTAJGUACURTUBUCGUDUEUFUPAAUGUHUIUJAUKULUMU
     NUO $.
 
+  $( The zeroth bit of an even number is zero.  (Contributed by Mario Carneiro,
+     5-Sep-2016.) $)
+  bits0e $p |- ( N e. ZZ -> -. 0 e. ( bits ` ( 2 x. N ) ) ) $=
+    ( cz wcel cc0 c2 cmul co cbits cfv cdvds wbr wn 2z dvdsmul1 mpan notnotd wb
+    a1i id zmulcld bits0 syl mtbird ) ABCZDEAFGZHICZEUEJKZLZUDUGEBCZUDUGMEANOPU
+    DUEBCUFUHQUDEAUIUDMRUDSTUEUAUBUC $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
