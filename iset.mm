@@ -106023,6 +106023,13 @@ $)
     UBSUSVJURUCVCABAFUDUEUFVFVGVBVFURUGVHRZUNUHSVEUTVFVBVDVCUTVFMBAUIUJVKUKULUM
     UO $.
 
+  $( Rational ` <_ ` is decidable.  (Contributed by Jim Kingdon,
+     28-Oct-2025.) $)
+  qdcle $p |- ( ( A e. QQ /\ B e. QQ ) -> DECID A <_ B ) $=
+    ( cq wa cle wbr wdc clt wn qdclt dcn syl ancoms cr qre adantr adantl lenltd
+    wcel dcbid mpbird ) ACSZBCSZDZABEFZGBAHFZIZGZUCUBUHUCUBDUFGUHBAJUFKLMUDUEUG
+    UDABUBANSUCAOPUCBNSUBBOQRTUA $.
+
   ${
     $d A j m $.  $d A m n $.  $d K j m $.  $d K m n $.  $d m n ph $.
     exbtwnzlemstep.k $e |- ( ph -> K e. NN ) $.
