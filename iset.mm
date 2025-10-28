@@ -88852,8 +88852,14 @@ $)
   $}
 
   ${
-    mulsubfacd.1 $e |- ( ph -> A e. CC ) $.
-    mulsubfacd.2 $e |- ( ph -> B e. CC ) $.
+    muls1d.1 $e |- ( ph -> A e. CC ) $.
+    muls1d.2 $e |- ( ph -> B e. CC ) $.
+    $( Multiplication by one minus a number.  (Contributed by Scott Fenton,
+       23-Dec-2017.) $)
+    muls1d $p |- ( ph -> ( A x. ( B - 1 ) ) = ( ( A x. B ) - A ) ) $=
+      ( c1 cmin co cmul 1cnd subdid mulridd oveq2d eqtrd ) ABCFGHIHBCIHZBFIHZGH
+      OBGHABCFDEAJKAPBOGABDLMN $.
+
     $( Multiplication followed by the subtraction of a factor.  (Contributed by
        Alexander van der Vekens, 28-Aug-2018.) $)
     mulsubfacd $p |- ( ph -> ( ( A x. B ) - B ) = ( ( A - 1 ) x. B ) ) $=
@@ -132505,6 +132511,28 @@ $)
     UJULUM $.
 
   ${
+    $d k j A $.  $d k N $.  $d k ph $.
+    fsumdvds.1 $e |- ( ph -> A e. Fin ) $.
+    fsumdvds.2 $e |- ( ph -> N e. ZZ ) $.
+    fsumdvds.3 $e |- ( ( ph /\ k e. A ) -> B e. ZZ ) $.
+    fsumdvds.4 $e |- ( ( ph /\ k e. A ) -> N || B ) $.
+    $( If every term in a sum is divisible by ` N ` , then so is the sum.
+       (Contributed by Mario Carneiro, 17-Jan-2015.) $)
+    fsumdvds $p |- ( ph -> N || sum_ k e. A B ) $=
+      ( vj cc0 wceq cdvds wbr wa cz wcel adantlr wb adantr csu dvds0 mp1i simpr
+      wne 0z cv simplr eqbrtrrd 0dvds syl sumeq2dv cuz cfv wss wdc wral w3a cfn
+      mpbid wo olcd isumz eqtrd 3brtr4d cdiv co zcnd sylancl biimpar fsumdivapc
+      zapne dvdsval2 syl3anc fsumzcl eqeltrd mpbird zdceq dcne sylib mpjaodan
+      cap ) AEKLZEBCDUAZMNZEKUEZAWCOZKKEWDMKPQZKKMNWGUFKUBUCAWCUDWGWDBKDUAZKWGB
+      CKDWGDUGBQZOZKCMNZCKLZWKEKCMAWCWJUHAWJECMNZWCIRUIWKCPQZWLWMSAWJWOWCHRCUJU
+      KUTULWGWHBKUMUNZUOJUGBQUPJWPUQURZBUSQZVAWIKLWGWRWQAWRWCFTVBBJDKVCUKVDVEAW
+      FOZWEWDEVFVGZPQZWSWTBCEVFVGZDUAPWSBCEDAWRWFFTZWSEAEPQZWFGTZVHWSWJOZCAWJWO
+      WFHRZVHAEKWBNZWFAXDWHXHWFSGUFEKVLVIVJVKWSBXBDXCXFWNXBPQZAWJWNWFIRXFXDWFWO
+      WNXISWSXDWJXETAWFWJUHXGECVMVNUTVOVPWSXDWFWDPQZWEXASXEAWFUDAXJWFABCDFHVOTE
+      WDVMVNVQAWCUPZWCWFVAAXDWHXKGUFEKVRVIEKVSVTWA $.
+  $}
+
+  ${
     dvdslelemd.1 $e |- ( ph -> M e. ZZ ) $.
     dvdslelemd.2 $e |- ( ph -> N e. NN ) $.
     dvdslelemd.3 $e |- ( ph -> K e. ZZ ) $.
@@ -132790,6 +132818,40 @@ $)
     BAUCPUTVAVBUDZVCUTVKUTVAVBUEZCUFPZVCCVNUGZABCUHUIULQVFVIMBJKZCLKZMVFVHVQCLV
     FVGMBJVCVDVGMNZUTVAVDVSUMVBCAUJUKUNRRVFVRMCLKZMVFVQMCLVFBVFBVCVBVDVMQUOUPRV
     FVKVLVTMNVCVKVDVOQVCVLVDVPQCUQURSSSUS $.
+
+  ${
+    $d j k F $.  $d j k N $.
+    $( A rule for divisibility by 3 of a number written in base 10.  This is
+       Metamath 100 proof #85.  (Contributed by Mario Carneiro, 14-Jul-2014.)
+       (Revised by Mario Carneiro, 17-Jan-2015.)  (Revised by AV,
+       8-Sep-2021.) $)
+    3dvds $p |- ( ( N e. NN0 /\ F : ( 0 ... N ) --> ZZ ) ->
+     ( 3 || sum_ k e. ( 0 ... N ) ( ( F ` k ) x. ( ; 1 0 ^ k ) ) <->
+       3 || sum_ k e. ( 0 ... N ) ( F ` k ) ) ) $=
+      ( vj wcel cc0 co cz c3 c1 csu cmin cdvds wbr wb 3z sylancr c9 ax-1cn syl
+      cn0 cfz wf wa cv cfv cdc cexp cmul a1i 0zd adantr fzfigd ffvelcdm adantll
+      nn0z elfznn0 adantl zexpcl zmulcld fsumzcl zsubcld caddc nncni negsubdi2i
+      10nn nnzi cneg 9p1e10 eqcomi oveq1i 9cn pncan3oi 3eqtri 3t3e9 eqtr4i cdiv
+      cc cap 1re 1lt10 gtapii id geoserap peano2zm eqeltrrd wne 1z zsubcl mp2an
+      10re ltneii subeq0i necon3bii mpbir dvdsval2 mp3an12i wceq zcnd negsubdi2
+      mpbird sylancl breqtrrd dvdsnegb negdvdsb mpbid eqbrtrrid wi muldvds1 mpd
+      dvdsmultr2 mp3an2i muls1d breqtrd fsumdvds fsumsub dvdssub2 syl31anc ) CU
+      AEZFCUBGZHBUCZUDZIHEZXTAUEZBUFZJFUGZYDUHGZUIGZAKZHEXTYEAKZHEIYIYJLGZMNIYI
+      MNIYJMNOYCYBPUJZYBXTYHAYBFCYBUKXSCHEYACUPULUMZYBYDXTEZUDZYEYGYAYNYEHEZXSX
+      THYDBUNUOZYOYFHEZYDUAEZYGHEZYFVFVGZYNYSYBYDCUQURZYFYDUSZQZUTZVAYBXTYEAYMY
+      QVAYBIXTYHYELGZAKYKMYBXTUUFAIYMYLYOYHYEUUEYQVBYOIYEYGJLGZUIGZUUFMYOIUUGMN
+      ZIUUHMNZYOYSUUIUUBYSIIUIGZUUGMNZUUIYSUUKJYFLGZVHZUUGMUUNRUUKUUNYFJLGRJVCG
+      ZJLGRJYFSYFVFVDZVEYFUUOJLUUOYFVIVJVKRJVLSVMVNVOVPYSUUMUUGMNZUUNUUGMNZYSUU
+      QUUMUUGVHZMNZYSUUMJYGLGZUUSMYSUUMUVAMNZUVAUUMVQGZHEZYSFYDJLGZUBGZYFDUEZUH
+      GZDKUVCHYSYFDYDYFVREYSUUPUJYFJVSNYSJYFVTWKWAWBUJYSWCZWDYSUVFUVHDYSFUVEYSU
+      KYSYDHEUVEHEYDUPYDWETUMYSUVGUVFEZUDYRUVGUAEZUVHHEUUAUVJUVKYSUVGUVEUQURYFU
+      VGUSQVAWFUUMHEZUUMFWGZYSUVAHEZUVBUVDOJHEZYRUVLWHUUAJYFWIWJZUVMJYFWGJYFVTW
+      AWLUUMFJYFJYFSUUPWMWNWOYSUVOYTUVNWHYSYRYSYTUUAUVIUUCQZJYGWIQUUMUVAWPWQXAY
+      SYGVREJVREUUSUVAWRYSYGUVQWSSYGJWTXBXCYSUVLUUGHEZUUQUUTOUVPYSYTUVRUVQYGWEZ
+      TZUUMUUGXDQXAYSUVLUVRUUQUUROUVPUVTUUMUUGXEQXFXGYCYCYSUVRUULUUIXHPPUVTIIUU
+      GXIWQXJTYCYOYPUVRUUIUUJXHPYQYOYTUVRUUDUVSTIYEUUGXKXLXJYOYEYGYOYEYQWSZYOYG
+      UUDWSXMXNXOYBXTYHYEAYMYOYHUUEWSUWAXPXNIYIYJXQXR $.
+  $}
 
   ${
     3dvdsdec.a $e |- A e. NN0 $.
