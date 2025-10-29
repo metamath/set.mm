@@ -180499,6 +180499,14 @@ $)
       OXKARYQUUPUUGUWGAXLXJUWHUVAUWNXMXNUWHQAUVAYSUWHUVQQAYSVCUURUVQUWGUVRSUWHU
       UHAYSQUWHUUBARUUHANUWHMAYOMAGZYQUUPUUGUWGYOAEXOFGUWQAEXPAEMXQXRWBXJXSUUBA
       YBXTYAYKUWNXCAEUWLUVAUVBUFUGYCYDXHYEYFYGYHYLYIYJYMYN $.
+
+    $( The derivative of a polynomial is a polynomial.  (Contributed by Stefan
+       O'Rear, 14-Nov-2014.)  (Proof shortened by Mario Carneiro,
+       1-Jan-2017.) $)
+    dvply2 $p |- ( F e. ( Poly ` S ) -> ( CC _D F ) e. ( Poly ` CC ) ) $=
+      ( cply cfv wcel cc ccnfld csubrg cdv co crg cnring cnfldbas subrgid ax-mp
+      plyssc sseli dvply2g sylancr ) BACDZEFGHDEZBFCDZEFBIJUBEGKEUALFGMNOTUBBAP
+      QFBRS $.
   $}
 
 
