@@ -120598,6 +120598,15 @@ $)
     ZUKCDUKBRZUIULEUKACUIULJUGUHULKLUIUMEUKBCUIUMJUGUHUMMLUIUKUJDZULUMNUIUNABOP
     BAOPNZABQUGAGDBGDUNUOSUHATBTABUAUBUCUKABUDUEUF $.
 
+  $( The maximum of two nonnegative integers is a nonnegative integer.
+     (Contributed by Jim Kingdon, 28-Oct-2025.) $)
+  nn0maxcl $p |- ( ( A e. NN0 /\ B e. NN0 )
+      -> sup ( { A , B } , RR , < ) e. NN0 ) $=
+    ( cn0 wcel wa cpr cr clt csup cz cc0 cle wbr nn0z zmaxcl syl2an 0red adantr
+    nn0re zred nn0ge0 maxle1 letrd elnn0z sylanbrc ) ACDZBCDZEZABFGHIZJDZKUILMU
+    ICDUFAJDBJDUJUGANBNABOPZUHKAUIUHQUFAGDZUGASZRUHUIUKTUFKALMUGAUARUFULBGDAUIL
+    MUGUMBSABUBPUCUIUDUE $.
+
   $( Two ways to express the maximum of two integers.  Because order of
      integers is decidable, we have more flexibility than for real numbers.
      (Contributed by Jim Kingdon, 22-Jan-2023.) $)
