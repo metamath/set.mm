@@ -13387,6 +13387,7 @@
 "siii" is used by "sii".
 "siilem1" is used by "siilem2".
 "siilem2" is used by "siii".
+"simprimi" is used by "dfbi1ALTb".
 "smcn" is used by "dipcn".
 "smcn" is used by "ipasslem7".
 "smcn" is used by "vmcn".
@@ -16126,6 +16127,8 @@ New usage of "df0op2" is discouraged (3 uses).
 New usage of "dfac5lem4OLD" is discouraged (0 uses).
 New usage of "dfadj2" is discouraged (7 uses).
 New usage of "dfbi1ALT" is discouraged (0 uses).
+New usage of "dfbi1ALTa" is discouraged (0 uses).
+New usage of "dfbi1ALTb" is discouraged (0 uses).
 New usage of "dfch2" is discouraged (0 uses).
 New usage of "dfcnfldOLD" is discouraged (13 uses).
 New usage of "dfcnqs" is discouraged (4 uses).
@@ -16533,6 +16536,7 @@ New usage of "ee333" is discouraged (2 uses).
 New usage of "ee33VD" is discouraged (0 uses).
 New usage of "ee33an" is discouraged (3 uses).
 New usage of "ee3bir" is discouraged (0 uses).
+New usage of "ee4anvOLD" is discouraged (0 uses).
 New usage of "ee7.2aOLD" is discouraged (0 uses).
 New usage of "eel000cT" is discouraged (0 uses).
 New usage of "eel00cT" is discouraged (0 uses).
@@ -19236,6 +19240,7 @@ New usage of "siilem1" is discouraged (1 uses).
 New usage of "siilem2" is discouraged (1 uses).
 New usage of "simplbi2VD" is discouraged (0 uses).
 New usage of "simplbi2comtVD" is discouraged (0 uses).
+New usage of "simprimi" is discouraged (1 uses).
 New usage of "sineq0ALT" is discouraged (0 uses).
 New usage of "slotsbhcdifOLD" is discouraged (0 uses).
 New usage of "smcn" is discouraged (3 uses).
@@ -20289,6 +20294,8 @@ Proof modification of "dariiALT" is discouraged (19 steps).
 Proof modification of "demoivreALT" is discouraged (1087 steps).
 Proof modification of "dfac5lem4OLD" is discouraged (689 steps).
 Proof modification of "dfbi1ALT" is discouraged (100 steps).
+Proof modification of "dfbi1ALTa" is discouraged (71 steps).
+Proof modification of "dfbi1ALTb" is discouraged (36 steps).
 Proof modification of "dfcnfldOLD" is discouraged (195 steps).
 Proof modification of "dfdif3OLD" is discouraged (137 steps).
 Proof modification of "dfeu" is discouraged (35 steps).
@@ -20499,6 +20506,7 @@ Proof modification of "ee333" is discouraged (33 steps).
 Proof modification of "ee33VD" is discouraged (68 steps).
 Proof modification of "ee33an" is discouraged (14 steps).
 Proof modification of "ee3bir" is discouraged (11 steps).
+Proof modification of "ee4anvOLD" is discouraged (60 steps).
 Proof modification of "ee7.2aOLD" is discouraged (134 steps).
 Proof modification of "eel000cT" is discouraged (19 steps).
 Proof modification of "eel00cT" is discouraged (13 steps).
@@ -21432,6 +21440,7 @@ Proof modification of "sgrpplusgaopALT" is discouraged (82 steps).
 Proof modification of "sii" is discouraged (145 steps).
 Proof modification of "simplbi2VD" is discouraged (24 steps).
 Proof modification of "simplbi2comtVD" is discouraged (42 steps).
+Proof modification of "simprimi" is discouraged (39 steps).
 Proof modification of "sineq0ALT" is discouraged (986 steps).
 Proof modification of "slotsbhcdifOLD" is discouraged (96 steps).
 Proof modification of "smgrpassOLD" is discouraged (54 steps).
