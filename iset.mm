@@ -134333,7 +134333,7 @@ $)
     a1i id zmulcld bits0 syl mtbird ) ABCZDEAFGZHICZEUEJKZLZUDUGEBCZUDUGMEANOPU
     DUEBCUFUHQUDEAUIUDMRUDSTUEUAUBUC $.
 
-  $( The zeroth bit of an odd number is zero.  (Contributed by Mario Carneiro,
+  $( The zeroth bit of an odd number is one.  (Contributed by Mario Carneiro,
      5-Sep-2016.) $)
   bits0o $p |- ( N e. ZZ -> 0 e. ( bits ` ( ( 2 x. N ) + 1 ) ) ) $=
     ( cz wcel cc0 c2 cmul co c1 caddc cbits cfv cdvds wbr wn 2z dvdsmul1 cn clt
