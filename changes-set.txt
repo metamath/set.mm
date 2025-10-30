@@ -92,6 +92,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+28-Oct-25 ad5ant12  ---         deleted - redundant with ad3antrrr
 27-Oct-25 cringmul32d crng32d   moved from TA's mathbox to main set.mm
 21-Oct-25 fnsnbt    fnsnbg      Moved from SN's mathbox to main set.mm and
                                 _V to V and renamed to match other sn theorems
