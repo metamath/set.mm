@@ -92,10 +92,10 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
-31-Oct-25 grpstrndx grpstr      new name became free
-31-Oct-25 2strbas1  2strbas     new name became free
-31-Oct-25 2strop1   2strop      new name became free
-31-Oct-25 2strtr1   2strstr     new name became free
+31-Oct-25 grpstrndx grpstr      new name became available
+31-Oct-25 2strbas1  2strbas     new name became available
+31-Oct-25 2strop1   2strop      new name became available
+31-Oct-25 2strtr1   2strstr     new name became available
 28-Oct-25 ad5ant12  ---         deleted - redundant with ad3antrrr
 27-Oct-25 cringmul32d crng32d   moved from TA's mathbox to main set.mm
 21-Oct-25 fnsnbt    fnsnbg      Moved from SN's mathbox to main set.mm and
