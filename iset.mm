@@ -134586,6 +134586,13 @@ $)
     cn0 0ss eqssi ) ABCZDUOAAEFZDAAGAHFZEFZIZUOUPJZAAKEFZURAALVAAMNOPUQKAEGQIUQ
     KRSGTUAUBPAUCIAULIUSUTUDUEUFAAUGUHUIAUJUKUOUMUN $.
 
+  $( The bits of negative one.  (Contributed by Mario Carneiro, 5-Sep-2016.) $)
+  m1bits $p |- ( bits ` -u 1 ) = NN0 $=
+    ( cn0 cc0 cbits cdif cneg c1 cmin co cz wcel wceq 0z bitscmp ax-mp c0 0bits
+    cfv difeq2i dif0 eqtri neg0 oveq1i df-neg eqtr4i fveq2i 3eqtr3ri ) ABCQZDZB
+    EZFGHZCQZAFEZCQBIJUHUKKLBMNUHAODAUGOAPRASTUJULCUJBFGHULUIBFGUAUBFUCUDUEUF
+    $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
