@@ -134432,9 +134432,9 @@ $)
 
   ${
     $d M m n x $.  $d N m n x $.
-    $( The bits of a number are all less than ` M ` iff the number is
-       nonnegative and less than ` 2 ^ M ` .  (Contributed by Mario Carneiro,
-       5-Sep-2016.)  (Proof shortened by AV, 1-Oct-2020.) $)
+    $( The bits of a number are all at positions less than ` M ` iff the number
+       is nonnegative and less than ` 2 ^ M ` .  (Contributed by Mario
+       Carneiro, 5-Sep-2016.)  (Proof shortened by AV, 1-Oct-2020.) $)
     bitsfzo $p |- ( ( N e. ZZ /\ M e. NN0 ) ->
       ( N e. ( 0 ..^ ( 2 ^ M ) ) <-> ( bits ` N ) C_ ( 0 ..^ M ) ) ) $=
       ( cz wcel cn0 wa cc0 c2 co cfv cdvds wbr wn clt cr a1i c1 cle syl2anc wb
