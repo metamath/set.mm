@@ -134579,6 +134579,13 @@ $)
       RVSXCXDXTDXOXGYMYEYAYJXHYLXTXRXIYEYAYJXJXKXLXM $.
   $}
 
+  $( The bits of zero.  (Contributed by Mario Carneiro, 6-Sep-2016.) $)
+  0bits $p |- ( bits ` 0 ) = (/) $=
+    ( cc0 cbits cfv c0 cfzo co c2 cexp wcel wss c1 csn c0ex snid fzo01 eleqtrri
+    cc wceq 2cn exp0 ax-mp oveq2i cz wb 0z 0nn0 bitsfzo mp2an mpbi fzo0 sseqtri
+    cn0 0ss eqssi ) ABCZDUOAAEFZDAAGAHFZEFZIZUOUPJZAAKEFZURAALVAAMNOPUQKAEGQIUQ
+    KRSGTUAUBPAUCIAULIUSUTUDUEUFAAUGUHUIAUJUKUOUMUN $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
