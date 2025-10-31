@@ -242,9 +242,6 @@
 "2sb5nd" is used by "2uasbanh".
 "2sb5nd" is used by "2uasbanhVD".
 "2sb5rf" is used by "sbel2x".
-"2strstr" is used by "2strbas".
-"2strstr" is used by "2strop".
-"2strstr" is used by "grpstr".
 "2uasbanh" is used by "2uasban".
 "3atnelvolN" is used by "2atnelvolN".
 "3atnelvolN" is used by "islvol2aN".
@@ -1773,7 +1770,6 @@
 "bafval" is used by "phpar".
 "bafval" is used by "sspba".
 "basendx" is used by "1strstr".
-"basendx" is used by "2strstr".
 "basendx" is used by "basendxltdsndx".
 "basendx" is used by "basendxltedgfndx".
 "basendx" is used by "basendxltplendx".
@@ -5076,7 +5072,6 @@
 "df-plq" is used by "addpqnq".
 "df-plr" is used by "addsrpr".
 "df-plr" is used by "dmaddsr".
-"df-plusg" is used by "grpstr".
 "df-plusg" is used by "hlhilsplusOLD".
 "df-plusg" is used by "mnringaddgdOLD".
 "df-plusg" is used by "oppraddOLD".
@@ -14353,9 +14348,6 @@ New usage of "2sb6rf" is discouraged (0 uses).
 New usage of "2sb8e" is discouraged (0 uses).
 New usage of "2sbcrexOLD" is discouraged (0 uses).
 New usage of "2sbiev" is discouraged (0 uses).
-New usage of "2strbas" is discouraged (0 uses).
-New usage of "2strop" is discouraged (0 uses).
-New usage of "2strstr" is discouraged (3 uses).
 New usage of "2thALT" is discouraged (0 uses).
 New usage of "2uasban" is discouraged (0 uses).
 New usage of "2uasbanh" is discouraged (1 uses).
@@ -14830,7 +14822,7 @@ New usage of "baerlem5bmN" is discouraged (0 uses).
 New usage of "bafval" is discouraged (38 uses).
 New usage of "barbariALT" is discouraged (0 uses).
 New usage of "barocoALT" is discouraged (0 uses).
-New usage of "basendx" is discouraged (34 uses).
+New usage of "basendx" is discouraged (33 uses).
 New usage of "baseval" is discouraged (0 uses).
 New usage of "bcs" is discouraged (6 uses).
 New usage of "bcs2" is discouraged (2 uses).
@@ -15993,7 +15985,7 @@ New usage of "df-plp" is discouraged (11 uses).
 New usage of "df-plpq" is discouraged (3 uses).
 New usage of "df-plq" is discouraged (2 uses).
 New usage of "df-plr" is discouraged (2 uses).
-New usage of "df-plusg" is discouraged (9 uses).
+New usage of "df-plusg" is discouraged (8 uses).
 New usage of "df-pnf" is discouraged (3 uses).
 New usage of "df-prstc" is discouraged (1 uses).
 New usage of "df-r" is discouraged (6 uses).
@@ -16831,7 +16823,6 @@ New usage of "grporn" is discouraged (11 uses).
 New usage of "grporndm" is discouraged (4 uses).
 New usage of "grposnOLD" is discouraged (1 uses).
 New usage of "grpplusgx" is discouraged (3 uses).
-New usage of "grpstr" is discouraged (0 uses).
 New usage of "grpsubfvalALT" is discouraged (0 uses).
 New usage of "gsummulc1OLD" is discouraged (0 uses).
 New usage of "gsummulc2OLD" is discouraged (0 uses).
