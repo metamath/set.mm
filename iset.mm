@@ -28235,7 +28235,7 @@ $)
 
   $( Define the subclass relationship.  Exercise 9 of [TakeutiZaring] p. 18.
      Note that ` A C_ A ` (proved in ~ ssid ).  For a more traditional
-     definition, but requiring a dummy variable, see ~ dfss2 .  Other possible
+     definition, but requiring a dummy variable, see ~ ssalel .  Other possible
      definitions are given by ~ dfss3 , ~ ssequn1 , ~ ssequn2 , and ~ sseqin2 .
      (Contributed by NM, 27-Apr-1994.) $)
   df-ss $a |- ( A C_ B <-> ( A i^i B ) = A ) $.
@@ -28250,7 +28250,7 @@ $)
     $( Alternate definition of the subclass relationship between two classes.
        Definition 5.9 of [TakeutiZaring] p. 17.  (Contributed by NM,
        8-Jan-2002.) $)
-    dfss2 $p |- ( A C_ B <-> A. x ( x e. A -> x e. B ) ) $=
+    ssalel $p |- ( A C_ B <-> A. x ( x e. A -> x e. B ) ) $=
       ( wss cv wcel wa wb wal wi cin wceq dfss df-in eqeq2i abeq2 3bitri pm4.71
       cab albii bitr4i ) BCDZAEZBFZUDUCCFZGZHZAIZUDUEJZAIUBBBCKZLBUFASZLUHBCMUJ
       UKBABCNOUFABPQUIUGAUDUERTUA $.
@@ -28258,8 +28258,8 @@ $)
     $( Alternate definition of subclass relationship.  (Contributed by NM,
        14-Oct-1999.) $)
     dfss3 $p |- ( A C_ B <-> A. x e. A x e. B ) $=
-      ( wss cv wcel wi wal wral dfss2 df-ral bitr4i ) BCDAEZBFMCFZGAHNABIABCJNA
-      BKL $.
+      ( wss cv wcel wi wal wral ssalel df-ral bitr4i ) BCDAEZBFMCFZGAHNABIABCJN
+      ABKL $.
   $}
 
   ${
@@ -28270,7 +28270,7 @@ $)
        instead of distinct variable conditions.  (Contributed by NM,
        3-Jul-1994.)  (Revised by Andrew Salmon, 27-Aug-2011.) $)
     dfss2f $p |- ( A C_ B <-> A. x ( x e. A -> x e. B ) ) $=
-      ( vz wss cv wcel wal dfss2 nfcri nfim nfv weq eleq1 imbi12d cbval bitri
+      ( vz wss cv wcel wal ssalel nfcri nfim nfv weq eleq1 imbi12d cbval bitri
       wi ) BCGFHZBIZUACIZTZFJAHZBIZUECIZTZAJFBCKUDUHFAUBUCAAFBDLAFCELMUHFNFAOUB
       UFUCUGUAUEBPUAUECPQRS $.
 
@@ -28292,9 +28292,9 @@ $)
     $( Membership relationships follow from a subclass relationship.
        (Contributed by NM, 5-Aug-1993.) $)
     ssel $p |- ( A C_ B -> ( C e. A -> C e. B ) ) $=
-      ( vx wss cv wceq wa wex wi wal dfss2 biimpi 19.21bi anim2d eximdv df-clel
-      wcel 3imtr4g ) ABEZDFZCGZUAARZHZDIUBUABRZHZDICARCBRTUDUFDTUCUEUBTUCUEJZDT
-      UGDKDABLMNOPDCAQDCBQS $.
+      ( vx wss cv wceq wcel wex wal ssalel biimpi 19.21bi anim2d eximdv df-clel
+      wa wi 3imtr4g ) ABEZDFZCGZUAAHZQZDIUBUABHZQZDICAHCBHTUDUFDTUCUEUBTUCUERZD
+      TUGDJDABKLMNODCAPDCBPS $.
   $}
 
   $( Membership relationships follow from a subclass relationship.
@@ -28367,7 +28367,7 @@ $)
     $( Inference based on subclass definition.  (Contributed by NM,
        5-Aug-1993.) $)
     ssriv $p |- A C_ B $=
-      ( wss cv wcel wi dfss2 mpgbir ) BCEAFZBGKCGHAABCIDJ $.
+      ( wss cv wcel wi ssalel mpgbir ) BCEAFZBGKCGHAABCIDJ $.
   $}
 
   ${
@@ -28388,7 +28388,8 @@ $)
     $( Deduction based on subclass definition.  (Contributed by NM,
        15-Nov-1995.) $)
     ssrdv $p |- ( ph -> A C_ B ) $=
-      ( cv wcel wi wal wss alrimiv dfss2 sylibr ) ABFZCGNDGHZBICDJAOBEKBCDLM $.
+      ( cv wcel wi wal wss alrimiv ssalel sylibr ) ABFZCGNDGHZBICDJAOBEKBCDLM
+      $.
   $}
 
   ${
@@ -28397,8 +28398,8 @@ $)
        (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew Salmon,
        14-Jun-2011.) $)
     sstr2 $p |- ( A C_ B -> ( B C_ C -> A C_ C ) ) $=
-      ( vx wss cv wcel wi wal ssel imim1d alimdv dfss2 3imtr4g ) ABEZDFZBGZPCGZ
-      HZDIPAGZRHZDIBCEACEOSUADOTQRABPJKLDBCMDACMN $.
+      ( vx wss cv wcel wi wal ssel imim1d alimdv ssalel 3imtr4g ) ABEZDFZBGZPCG
+      ZHZDIPAGZRHZDIBCEACEOSUADOTQRABPJKLDBCMDACMN $.
   $}
 
   $( Transitivity of subclasses.  Theorem 6 of [Suppes] p. 23.  (Contributed by
@@ -28461,7 +28462,7 @@ $)
     $( The subclass relationship is antisymmetric.  Compare Theorem 4 of
        [Suppes] p. 22.  (Contributed by NM, 5-Aug-1993.) $)
     eqss $p |- ( A = B <-> ( A C_ B /\ B C_ A ) ) $=
-      ( vx cv wcel wb wal wi wa wceq wss albiim dfcleq dfss2 anbi12i 3bitr4i )
+      ( vx cv wcel wb wal wi wa wceq wss albiim dfcleq ssalel anbi12i 3bitr4i )
       CDZAEZQBEZFCGRSHCGZSRHCGZIABJABKZBAKZIRSCLCABMUBTUCUACABNCBANOP $.
   $}
 
@@ -28833,8 +28834,8 @@ $)
     $( Negation of subclass relationship.  One direction of Exercise 13 of
        [TakeutiZaring] p. 18.  (Contributed by Jim Kingdon, 15-Jul-2018.) $)
     nssr $p |- ( E. x ( x e. A /\ -. x e. B ) -> -. A C_ B ) $=
-      ( cv wcel wn wa wex wi wal wss exanaliim dfss2 sylnibr ) ADZBEZOCEZFGAHPQ
-      IAJBCKPQALABCMN $.
+      ( cv wcel wn wa wex wi wal wss exanaliim ssalel sylnibr ) ADZBEZOCEZFGAHP
+      QIAJBCKPQALABCMN $.
   $}
 
   $( Demonstrate by witnesses that two classes lack a subclass relation.
@@ -29022,9 +29023,9 @@ $)
     $( Subclass law for restricted abstraction.  (Contributed by NM,
        18-Dec-2004.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
     rabss2 $p |- ( A C_ B -> { x e. A | ph } C_ { x e. B | ph } ) $=
-      ( wss cv wcel wa cab crab wi wal pm3.45 alimi dfss2 ss2ab 3imtr4i 3sstr4g
-      df-rab ) CDEZBFZCGZAHZBIZUADGZAHZBIZABCJABDJUBUEKZBLUCUFKZBLTUDUGEUHUIBUB
-      UEAMNBCDOUCUFBPQABCSABDSR $.
+      ( wss cv wcel wa cab crab wi wal pm3.45 alimi ssalel ss2ab 3imtr4i df-rab
+      3sstr4g ) CDEZBFZCGZAHZBIZUADGZAHZBIZABCJABDJUBUEKZBLUCUFKZBLTUDUGEUHUIBU
+      BUEAMNBCDOUCUFBPQABCRABDRS $.
 
     $( Subclass relation for the restriction of a class abstraction.
        (Contributed by NM, 31-Mar-1995.) $)
@@ -29278,11 +29279,11 @@ $)
     $( Contraposition law for subsets.  (Contributed by NM, 22-Mar-1998.) $)
     ssconb $p |- ( ( A C_ C /\ B C_ C ) ->
                   ( A C_ ( C \ B ) <-> B C_ ( C \ A ) ) ) $=
-      ( vx wss wa cv wcel cdif wi wal wn wb ssel pm5.1 jcab 3bitr4g eldif dfss2
-      imbi2i syl2an con2b a1i anbi12d albidv ) ACEZBCEZFZDGZAHZUICBIZHZJZDKUIBH
-      ZUICAIZHZJZDKAUKEBUOEUHUMUQDUHUJUICHZUNLZFZJZUNURUJLZFZJZUMUQUHUJURJZUJUS
-      JZFUNURJZUNVBJZFVAVDUHVEVGVFVHUFVEVGVEVGMUGACUINBCUINVEVGOUAVFVHMUHUJUNUB
-      UCUDUJURUSPUNURVBPQULUTUJUICBRTUPVCUNUICARTQUEDAUKSDBUOSQ $.
+      ( vx wss wa cv wcel cdif wi wal wn wb ssel pm5.1 jcab eldif imbi2i ssalel
+      3bitr4g syl2an con2b a1i anbi12d albidv ) ACEZBCEZFZDGZAHZUICBIZHZJZDKUIB
+      HZUICAIZHZJZDKAUKEBUOEUHUMUQDUHUJUICHZUNLZFZJZUNURUJLZFZJZUMUQUHUJURJZUJU
+      SJZFUNURJZUNVBJZFVAVDUHVEVGVFVHUFVEVGVEVGMUGACUINBCUINVEVGOUAVFVHMUHUJUNU
+      BUCUDUJURUSPUNURVBPTULUTUJUICBQRUPVCUNUICAQRTUEDAUKSDBUOST $.
 
     $( Contraposition law for subsets.  Exercise 15 of [TakeutiZaring] p. 22.
        (Contributed by NM, 22-Mar-1998.) $)
@@ -29540,8 +29541,8 @@ $)
        Salmon, 26-Jun-2011.) $)
     ssequn1 $p |- ( A C_ B <-> ( A u. B ) = B ) $=
       ( vx cv wcel wi wal cun wb wceq wo bicom pm4.72 elun bibi1i 3bitr4i albii
-      wss dfss2 dfcleq ) CDZAEZUABEZFZCGUAABHZEZUCIZCGABRUEBJUDUGCUCUBUCKZIUHUC
-      IUDUGUCUHLUBUCMUFUHUCUAABNOPQCABSCUEBTP $.
+      wss ssalel dfcleq ) CDZAEZUABEZFZCGUAABHZEZUCIZCGABRUEBJUDUGCUCUBUCKZIUHU
+      CIUDUGUCUHLUBUCMUFUHUCUAABNOPQCABSCUEBTP $.
   $}
 
   $( Subclass law for union of classes.  Exercise 7 of [TakeutiZaring] p. 18.
@@ -29563,10 +29564,10 @@ $)
     $( The union of two subclasses is a subclass.  Theorem 27 of [Suppes] p. 27
        and its converse.  (Contributed by NM, 11-Jun-2004.) $)
     unss $p |- ( ( A C_ C /\ B C_ C ) <-> ( A u. B ) C_ C ) $=
-      ( vx cun wss cv wcel wi wal wa dfss2 19.26 elun imbi1i jaob bitri anbi12i
-      wo albii 3bitr4i bitr2i ) ABEZCFDGZUCHZUDCHZIZDJZACFZBCFZKZDUCCLUDAHZUFIZ
-      UDBHZUFIZKZDJUMDJZUODJZKUHUKUMUODMUGUPDUGULUNSZUFIUPUEUSUFUDABNOULUFUNPQT
-      UIUQUJURDACLDBCLRUAUB $.
+      ( vx cun wss cv wcel wi wa ssalel 19.26 wo elun imbi1i jaob bitri anbi12i
+      wal albii 3bitr4i bitr2i ) ABEZCFDGZUCHZUDCHZIZDSZACFZBCFZJZDUCCKUDAHZUFI
+      ZUDBHZUFIZJZDSUMDSZUODSZJUHUKUMUODLUGUPDUGULUNMZUFIUPUEUSUFUDABNOULUFUNPQ
+      TUIUQUJURDACKDBCKRUAUB $.
   $}
 
   ${
@@ -29917,10 +29918,10 @@ $)
        (Contributed by NM, 15-Jun-2004.)  (Proof shortened by Andrew Salmon,
        26-Jun-2011.) $)
     ssin $p |- ( ( A C_ B /\ A C_ C ) <-> A C_ ( B i^i C ) ) $=
-      ( vx cv wcel wi wal wa cin wss elin imbi2i albii jcab 19.26 3bitrri dfss2
-      anbi12i 3bitr4i ) DEZAFZUABFZGZDHZUBUACFZGZDHZIZUBUABCJZFZGZDHZABKZACKZIA
-      UJKUMUBUCUFIZGZDHUDUGIZDHUIULUQDUKUPUBUABCLMNUQURDUBUCUFONUDUGDPQUNUEUOUH
-      DABRDACRSDAUJRT $.
+      ( vx cv wcel wi wal cin wss elin imbi2i albii jcab 3bitrri ssalel anbi12i
+      wa 19.26 3bitr4i ) DEZAFZUABFZGZDHZUBUACFZGZDHZRZUBUABCIZFZGZDHZABJZACJZR
+      AUJJUMUBUCUFRZGZDHUDUGRZDHUIULUQDUKUPUBUABCKLMUQURDUBUCUFNMUDUGDSOUNUEUOU
+      HDABPDACPQDAUJPT $.
   $}
 
   ${
@@ -30015,10 +30016,10 @@ $)
        24-Jul-2018.) $)
     ssddif $p |- ( A C_ B <-> A C_ ( B \ ( B \ A ) ) ) $=
       ( vx cv wcel wi wal cdif wss wa wn simpr con2i anim2i eldif notbii anbi2i
-      ancr bitri dfss2 sylibr syl6 eldifi imim2i impbii albii 3bitr4i ) CDZAEZU
-      HBEZFZCGUIUHBBAHZHZEZFZCGABIAUMIUKUOCUKUOUKUIUJUIJZUNUIUJRUPUJUJUIKZJZKZJ
-      ZUNUIUSUJURUIUJUQLMNUNUJUHULEZKZJUTUHBULOVBUSUJVAURUHBAOPQSUAUBUNUJUIUHBU
-      LUCUDUEUFCABTCAUMTUG $.
+      ancr bitri ssalel sylibr syl6 eldifi imim2i impbii albii 3bitr4i ) CDZAEZ
+      UHBEZFZCGUIUHBBAHZHZEZFZCGABIAUMIUKUOCUKUOUKUIUJUIJZUNUIUJRUPUJUJUIKZJZKZ
+      JZUNUIUSUJURUIUJUQLMNUNUJUHULEZKZJUTUHBULOVBUSUJVAURUHBAOPQSUAUBUNUJUIUHB
+      ULUCUDUEUFCABTCAUMTUG $.
 
     $( Union of two classes and class difference.  In classical logic this
        would be an equality.  (Contributed by Jim Kingdon, 24-Jul-2018.) $)
@@ -30853,7 +30854,7 @@ $)
        of ` B ` relative to a universe ` C ` .  (Contributed by NM,
        15-Feb-2007.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
     reldisj $p |- ( A C_ C -> ( ( A i^i B ) = (/) <-> A C_ ( C \ B ) ) ) $=
-      ( vx wss cv wcel wn wi wal cdif cin c0 wceq wb dfss2 pm5.44 eldif imbi2i
+      ( vx wss cv wcel wn wi wal cdif cin c0 wceq wb ssalel pm5.44 eldif imbi2i
       wa bitr4di sps sylbi albidv disj1 3bitr4g ) ACEZDFZAGZUHBGHZIZDJUIUHCBKZG
       ZIZDJABLMNAULEUGUKUNDUGUIUHCGZIZDJUKUNOZDACPUPUQDUPUKUIUOUJTZIUNUIUOUJQUM
       URUIUHCBRSUAUBUCUDDABUEDAULPUF $.
@@ -30948,9 +30949,9 @@ $)
        [TakeutiZaring] p. 22.  In classical logic this would be an equivalence.
        (Contributed by Jim Kingdon, 2-Aug-2018.) $)
     ssdif0im $p |- ( A C_ B -> ( A \ B ) = (/) ) $=
-      ( vx cv wcel wi wal cdif wn wss c0 wceq wa imanim eldif sylnibr alimi eq0
-      dfss2 3imtr4i ) CDZAEZUABEZFZCGUAABHZEZIZCGABJUEKLUDUGCUDUBUCIMUFUBUCNUAA
-      BOPQCABSCUERT $.
+      ( vx cv wcel wi wal cdif wn wss c0 wceq imanim eldif sylnibr alimi ssalel
+      wa eq0 3imtr4i ) CDZAEZUABEZFZCGUAABHZEZIZCGABJUEKLUDUGCUDUBUCIRUFUBUCMUA
+      ABNOPCABQCUEST $.
   $}
 
   $( Universal class equality in terms of empty difference.  (Contributed by
@@ -30977,10 +30978,10 @@ $)
        3-Aug-2018.) $)
     inssdif0im $p |- ( ( A i^i B ) C_ C -> ( A i^i ( B \ C ) ) = (/) ) $=
       ( vx cv cin wcel wi wal cdif wn c0 wceq wa elin imbi1i imanim sylbi eldif
-      wss anbi2i anass 3bitr4ri sylnib alimi dfss2 eq0 3imtr4i ) DEZABFZGZUICGZ
-      HZDIUIABCJZFZGZKZDIUJCTUOLMUMUQDUMUIAGZUIBGZNZULKZNZUPUMUTULHVBKUKUTULUIA
-      BOPUTULQRURUIUNGZNURUSVANZNUPVBVCVDURUIBCSUAUIAUNOURUSVAUBUCUDUEDUJCUFDUO
-      UGUH $.
+      wss anbi2i anass 3bitr4ri sylnib alimi ssalel eq0 3imtr4i ) DEZABFZGZUICG
+      ZHZDIUIABCJZFZGZKZDIUJCTUOLMUMUQDUMUIAGZUIBGZNZULKZNZUPUMUTULHVBKUKUTULUI
+      ABOPUTULQRURUIUNGZNURUSVANZNUPVBVCVDURUIBCSUAUIAUNOURUSVAUBUCUDUEDUJCUFDU
+      OUGUH $.
   $}
 
   $( The difference between a class and itself is the empty set.  Proposition
@@ -31083,9 +31084,9 @@ $)
        logic this would be a biconditional.  (Contributed by Jim Kingdon,
        4-Aug-2018.) $)
     ssundifim $p |- ( A C_ ( B u. C ) -> ( A \ B ) C_ C ) $=
-      ( vx cv wcel cun wi wal cdif wss wo wn wa pm5.6r elun eldif 3imtr4i dfss2
-      imbi2i imbi1i alimi ) DEZAFZUCBCGZFZHZDIUCABJZFZUCCFZHZDIAUEKUHCKUGUKDUDU
-      CBFZUJLZHUDULMNZUJHUGUKUDULUJOUFUMUDUCBCPTUIUNUJUCABQUARUBDAUESDUHCSR $.
+      ( vx cv wcel cun wi wal cdif wss wo wn wa pm5.6r elun imbi2i eldif ssalel
+      3imtr4i imbi1i alimi ) DEZAFZUCBCGZFZHZDIUCABJZFZUCCFZHZDIAUEKUHCKUGUKDUD
+      UCBFZUJLZHUDULMNZUJHUGUKUDULUJOUFUMUDUCBCPQUIUNUJUCABRUATUBDAUESDUHCST $.
   $}
 
   $( Distributive law for class difference.  In classical logic, as in Exercise
@@ -31322,10 +31323,10 @@ $)
        van der Vekens, 23-Jul-2017.) $)
     sbcssg $p |- ( A e. V -> ( [. A / x ]. B C_ C <->
       [_ A / x ]_ B C_ [_ A / x ]_ C ) ) $=
-      ( vy wcel cv wi wal wsbc csb wss sbcalg sbcimg sbcel2g bitrd albidv dfss2
-      imbi12d sbcbii 3bitr4g ) BEGZFHZCGZUDDGZIZFJZABKZUDABCLZGZUDABDLZGZIZFJZC
-      DMZABKUJULMUCUIUGABKZFJUOUGFABENUCUQUNFUCUQUEABKZUFABKZIUNUEUFABEOUCURUKU
-      SUMABUDCEPABUDDEPTQRQUPUHABFCDSUAFUJULSUB $.
+      ( vy wcel cv wal wsbc csb wss sbcalg sbcimg sbcel2g imbi12d albidv ssalel
+      wi bitrd sbcbii 3bitr4g ) BEGZFHZCGZUDDGZSZFIZABJZUDABCKZGZUDABDKZGZSZFIZ
+      CDLZABJUJULLUCUIUGABJZFIUOUGFABEMUCUQUNFUCUQUEABJZUFABJZSUNUEUFABENUCURUK
+      USUMABUDCEOABUDDEOPTQTUPUHABFCDRUAFUJULRUB $.
   $}
 
   ${
@@ -31884,8 +31885,8 @@ $)
     $( Subclass relationship for power class.  (Contributed by NM,
        21-Jun-2009.) $)
     pwss $p |- ( ~P A C_ B <-> A. x ( x C_ A -> x e. B ) ) $=
-      ( cpw wss cv wcel wi wal dfss2 df-pw abeq2i imbi1i albii bitri ) BDZCEAFZ
-      PGZQCGZHZAIQBEZSHZAIAPCJTUBARUASUAAPABKLMNO $.
+      ( cpw wss cv wcel wi wal ssalel df-pw abeq2i imbi1i albii bitri ) BDZCEAF
+      ZPGZQCGZHZAIQBEZSHZAIAPCJTUBARUASUAAPABKLMNO $.
   $}
 
 
@@ -32866,7 +32867,7 @@ $)
        5-Aug-1993.)  (Proof modification is discouraged.)
        (New usage is discouraged.) $)
     snssOLD $p |- ( A e. B <-> { A } C_ B ) $=
-      ( vx cv csn wcel wi wal wceq wss velsn imbi1i albii dfss2 clel2 3bitr4ri
+      ( vx cv csn wcel wi wal wceq wss velsn imbi1i albii ssalel clel2 3bitr4ri
       ) DEZAFZGZRBGZHZDIRAJZUAHZDISBKABGUBUDDTUCUADALMNDSBODABCPQ $.
   $}
 
@@ -32910,10 +32911,10 @@ $)
     $( Characterization of the inclusion of a singleton in a class.
        (Contributed by BJ, 1-Jan-2025.) $)
     snssb $p |- ( { A } C_ B <-> ( A e. _V -> A e. B ) ) $=
-      ( vx csn wss cv wcel wi wal wceq cvv dfss2 velsn imbi1i albii wex pm5.74i
-      eleq1 19.23v 3bitri isset bicomi ) ADZBECFZUCGZUDBGZHZCIUDAJZUFHZCIZAKGZA
-      BGZHZCUCBLUGUICUEUHUFCAMNOUJUHULHZCIUHCPZULHUMUIUNCUHUFULUDABRQOUHULCSUOU
-      KULUKUOCAUAUBNTT $.
+      ( vx csn wss cv wcel wal wceq cvv ssalel velsn imbi1i albii eleq1 pm5.74i
+      wi wex 19.23v 3bitri isset bicomi ) ADZBECFZUCGZUDBGZQZCHUDAIZUFQZCHZAJGZ
+      ABGZQZCUCBKUGUICUEUHUFCALMNUJUHULQZCHUHCRZULQUMUIUNCUHUFULUDABOPNUHULCSUO
+      UKULUKUOCAUAUBMTT $.
   $}
 
   $( The singleton formed on a set is included in a class if and only if the
@@ -33185,9 +33186,9 @@ $)
     $( If a singleton is a subset of another, their members are equal.
        (Contributed by NM, 28-May-2006.) $)
     snsssn $p |- ( { A } C_ { B } -> A = B ) $=
-      ( vx csn wss cv wceq wal wcel dfss2 velsn imbi12i albii bitri cvv sbceqal
-      wi ax-mp sylbi ) AEZBEZFZDGZAHZUDBHZRZDIZABHZUCUDUAJZUDUBJZRZDIUHDUAUBKUL
-      UGDUJUEUKUFDALDBLMNOAPJUHUIRCDABPQST $.
+      ( vx csn wss cv wceq wi wal wcel ssalel velsn imbi12i albii bitri sbceqal
+      cvv ax-mp sylbi ) AEZBEZFZDGZAHZUDBHZIZDJZABHZUCUDUAKZUDUBKZIZDJUHDUAUBLU
+      LUGDUJUEUKUFDAMDBMNOPARKUHUIICDABRQST $.
   $}
 
   ${
@@ -33847,9 +33848,9 @@ $)
        24-May-1994.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.) $)
     ssuni $p |- ( ( A C_ B /\ B e. C ) -> A C_ U. C ) $=
       ( vy vx wcel wss cuni cv wi wal eleq2 imbi1d elunii expcom vtoclga imim2d
-      wceq alimdv dfss2 3imtr4g impcom ) BCFZABGZACHZGZUCDIZAFZUGBFZJZDKUHUGUEF
-      ZJZDKUDUFUCUJULDUCUIUKUHUGEIZFZUKJUIUKJEBCUMBRUNUIUKUMBUGLMUNUMCFUKUGUMCN
-      OPQSDABTDAUETUAUB $.
+      wceq alimdv ssalel 3imtr4g impcom ) BCFZABGZACHZGZUCDIZAFZUGBFZJZDKUHUGUE
+      FZJZDKUDUFUCUJULDUCUIUKUHUGEIZFZUKJUIUKJEBCUMBRUNUIUKUMBUGLMUNUMCFUKUGUMC
+      NOPQSDABTDAUETUAUB $.
   $}
 
   ${
@@ -33910,11 +33911,11 @@ $)
     $( Relationship involving membership, subset, and union.  Exercise 5 of
        [Enderton] p. 26 and its converse.  (Contributed by NM, 20-Sep-2003.) $)
     unissb $p |- ( U. A C_ B <-> A. x e. A x C_ B ) $=
-      ( vy cv cuni wcel wi wal wss wa wex eluni imbi1i 19.23v albii bitri dfss2
-      wral 3bitr4i bitr4i alcom 19.21v impexp bi2.04 imbi2i df-ral ) DEZBFZGZUH
-      CGZHZDIZAEZBGZUNCJZHZAIZUICJUPABSUMUHUNGZUOKZUKHZAIZDIZURULVBDULUTALZUKHV
-      BUJVDUKAUHBMNUTUKAOUAPVCVADIZAIURVADAUBVEUQAUOUSUKHZHZDIUOVFDIZHVEUQUOVFD
-      UCVAVGDVAUSUOUKHHVGUSUOUKUDUSUOUKUEQPUPVHUODUNCRUFTPQQDUICRUPABUGT $.
+      ( vy cv cuni wcel wi wal wss wral wa wex eluni imbi1i 19.23v albii ssalel
+      bitri 3bitr4i bitr4i alcom 19.21v impexp bi2.04 imbi2i df-ral ) DEZBFZGZU
+      HCGZHZDIZAEZBGZUNCJZHZAIZUICJUPABKUMUHUNGZUOLZUKHZAIZDIZURULVBDULUTAMZUKH
+      VBUJVDUKAUHBNOUTUKAPUAQVCVADIZAIURVADAUBVEUQAUOUSUKHZHZDIUOVFDIZHVEUQUOVF
+      DUCVAVGDVAUSUOUKHHVGUSUOUKUDUSUOUKUESQUPVHUODUNCRUFTQSSDUICRUPABUGT $.
   $}
 
   ${
@@ -34140,9 +34141,9 @@ $)
 
     $( Intersection of subclasses.  (Contributed by NM, 14-Oct-1999.) $)
     intss $p |- ( A C_ B -> |^| B C_ |^| A ) $=
-      ( vy vx cv wcel wal cint wss imim1 al2imi vex elint 3imtr4g alrimiv dfss2
-      wi 3imtr4i ) CEZAFZSBFZQZCGZDEZBHZFZUDAHZFZQZDGABIUEUGIUCUIDUCUAUDSFZQZCG
-      TUJQZCGUFUHUBUKULCTUAUJJKCUDBDLZMCUDAUMMNOCABPDUEUGPR $.
+      ( vy vx cv wcel wi wal cint wss imim1 al2imi elint 3imtr4g alrimiv ssalel
+      vex 3imtr4i ) CEZAFZSBFZGZCHZDEZBIZFZUDAIZFZGZDHABJUEUGJUCUIDUCUAUDSFZGZC
+      HTUJGZCHUFUHUBUKULCTUAUJKLCUDBDQZMCUDAUMMNOCABPDUEUGPR $.
 
     $( The intersection of an inhabited set is a subclass of its union.
        (Contributed by NM, 29-Jul-2006.) $)
@@ -34728,10 +34729,10 @@ $)
     $( Subset theorem for an indexed union.  (Contributed by NM, 13-Sep-2003.)
        (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
     iunss $p |- ( U_ x e. A B C_ C <-> A. x e. A B C_ C ) $=
-      ( vy ciun wss cv wcel wrex cab wal wral df-iun sseq1i abss ralbii ralcom4
-      wi dfss2 r19.23v albii 3bitrri 3bitri ) ABCFZDGEHZCIZABJZEKZDGUHUFDIZSZEL
-      ZCDGZABMZUEUIDAEBCNOUHEDPUNUGUJSZELZABMUOABMZELULUMUPABECDTQUOAEBRUQUKEUG
-      UJABUAUBUCUD $.
+      ( vy ciun wss cv wcel wrex cab wal wral df-iun sseq1i abss ssalel ralcom4
+      wi ralbii r19.23v albii 3bitrri 3bitri ) ABCFZDGEHZCIZABJZEKZDGUHUFDIZSZE
+      LZCDGZABMZUEUIDAEBCNOUHEDPUNUGUJSZELZABMUOABMZELULUMUPABECDQTUOAEBRUQUKEU
+      GUJABUAUBUCUD $.
   $}
 
   ${
@@ -36412,9 +36413,9 @@ $)
     $( An alternate way of defining a transitive class.  Exercise 7 of
        [TakeutiZaring] p. 40.  (Contributed by NM, 24-Apr-1994.) $)
     dftr2 $p |- ( Tr A <-> A. x A. y ( ( x e. y /\ y e. A ) -> x e. A ) ) $=
-      ( cuni wss cv wcel wi wal wa dfss2 df-tr 19.23v eluni imbi1i bitr4i albii
-      wtr wex 3bitr4i ) CDZCEAFZUAGZUBCGZHZAICRUBBFZGUFCGJZUDHBIZAIAUACKCLUHUEA
-      UHUGBSZUDHUEUGUDBMUCUIUDBUBCNOPQT $.
+      ( cuni wss cv wcel wi wal wtr ssalel df-tr wex 19.23v eluni imbi1i bitr4i
+      wa albii 3bitr4i ) CDZCEAFZUAGZUBCGZHZAICJUBBFZGUFCGRZUDHBIZAIAUACKCLUHUE
+      AUHUGBMZUDHUEUGUDBNUCUIUDBUBCOPQST $.
 
     $( An alternate way of defining a transitive class.  (Contributed by NM,
        20-Mar-2004.) $)
@@ -37119,10 +37120,10 @@ $)
     axpweq $p |- ( ~P A e. _V
                 <-> E. x A. y ( A. z ( z e. y -> z e. A ) -> y e. x ) ) $=
       ( cpw cvv wcel cv wex wel wi wal pwidg wceq pweq eleq2d spcegv wss bitri
-      mpd elex exlimiv impbii vex elpw2 pwss dfss2 imbi1i albii exbii ) DFZGHZU
-      LAIZFZHZAJZCBKCIDHLCMZBAKZLZBMZAJUMUQUMULULFZHZUQULGNUPVCAULGUNULOUOVBULU
-      NULPQRUAUPUMAULUOUBUCUDUPVAAUPULUNSZVAULUNAUEUFVDBIZDSZUSLZBMVABDUNUGVGUT
-      BVFURUSCVEDUHUIUJTTUKT $.
+      mpd elex exlimiv impbii vex elpw2 pwss ssalel imbi1i albii exbii ) DFZGHZ
+      ULAIZFZHZAJZCBKCIDHLCMZBAKZLZBMZAJUMUQUMULULFZHZUQULGNUPVCAULGUNULOUOVBUL
+      UNULPQRUAUPUMAULUOUBUCUDUPVAAUPULUNSZVAULUNAUEUFVDBIZDSZUSLZBMVABDUNUGVGU
+      TBVFURUSCVEDUHUIUJTTUKT $.
   $}
 
 
@@ -37199,8 +37200,8 @@ $)
     $( A variant of the Axiom of Power Sets ~ ax-pow using subset notation.
        Problem in {BellMachover] p. 466.  (Contributed by NM, 4-Jun-2006.) $)
     axpow2 $p |- E. y A. z ( z C_ x -> z e. y ) $=
-      ( vw cv wss wel wi wal wex ax-pow dfss2 imbi1i albii exbii mpbir ) CEZAEZ
-      FZCBGZHZCIZBJDCGDAGHDIZTHZCIZBJABCDKUBUEBUAUDCSUCTDQRLMNOP $.
+      ( vw cv wss wel wi wal wex ax-pow ssalel imbi1i albii exbii mpbir ) CEZAE
+      ZFZCBGZHZCIZBJDCGDAGHDIZTHZCIZBJABCDKUBUEBUAUDCSUCTDQRLMNOP $.
 
     $( A variant of the Axiom of Power Sets ~ ax-pow .  For any set ` x ` ,
        there exists a set ` y ` whose members are exactly the subsets of ` x `
@@ -37714,8 +37715,8 @@ $)
     $( An extensionality-like principle defining subclass in terms of subsets.
        (Contributed by NM, 30-Jun-2004.) $)
     ssextss $p |- ( A C_ B <-> A. x ( x C_ A -> x C_ B ) ) $=
-      ( wss cpw cv wcel wi wal sspwb dfss2 vex elpw imbi12i albii 3bitri ) BCDB
-      EZCEZDAFZQGZSRGZHZAISBDZSCDZHZAIBCJAQRKUBUEATUCUAUDSBALZMSCUFMNOP $.
+      ( wss cpw cv wcel wi wal sspwb ssalel vex elpw imbi12i albii 3bitri ) BCD
+      BEZCEZDAFZQGZSRGZHZAISBDZSCDZHZAIBCJAQRKUBUEATUCUAUDSBALZMSCUFMNOP $.
 
     $( An extensionality-like principle that uses the subset instead of the
        membership relation: two classes are equal iff they have the same
@@ -40611,9 +40612,9 @@ $)
        to its union.  (Contributed by Jim Kingdon, 14-Nov-2018.) $)
     ordunisuc2r $p |- ( Ord A -> ( A. x e. A suc x e. A -> A = U. A ) ) $=
       ( word cv csuc wcel wral cuni wss wa wceq wi wal sucid elunii mpan imim2i
-      vex alimi df-ral dfss2 3imtr4i a1i orduniss jctird eqss imbitrrdi ) BCZAD
-      ZEZBFZABGZBBHZIZUMBIZJBUMKUHULUNUOULUNLUHUIBFZUKLZAMUPUIUMFZLZAMULUNUQUSA
-      UKURUPUIUJFUKURUIARNUIUJBOPQSUKABTABUMUAUBUCBUDUEBUMUFUG $.
+      vex alimi df-ral ssalel 3imtr4i a1i orduniss jctird eqss imbitrrdi ) BCZA
+      DZEZBFZABGZBBHZIZUMBIZJBUMKUHULUNUOULUNLUHUIBFZUKLZAMUPUIUMFZLZAMULUNUQUS
+      AUKURUPUIUJFUKURUIARNUIUJBOPQSUKABTABUMUAUBUCBUDUEBUMUFUG $.
   $}
 
   ${
@@ -41001,8 +41002,8 @@ $)
     $( Set (epsilon) induction.  Theorem 5.22 of [TakeutiZaring] p. 21.
        (Contributed by NM, 17-Sep-2003.) $)
     setind $p |- ( A. x ( x C_ A -> x e. A ) -> A = _V ) $=
-      ( vy cv wss wcel wi wal cvv wceq dfss2 imbi1i albii setindel sylbi ) ADZB
-      EZPBFZGZAHCDZPFTBFGCHZRGZAHBIJSUBAQUARCPBKLMACBNO $.
+      ( vy cv wss wcel wi wal cvv wceq ssalel imbi1i albii setindel sylbi ) ADZ
+      BEZPBFZGZAHCDZPFTBFGCHZRGZAHBIJSUBAQUARCPBKLMACBNO $.
   $}
 
   ${
@@ -41417,11 +41418,11 @@ $)
     zfregfr $p |- _E Fr A $=
       ( vs vy vx cep wfr cv wfrfor df-frind wel wi wral wcel wsb bitr4i clelsb1
       wal bitri ralbii imbi1i wbr bi2.04 albii df-ral sbim imbi12i ralcom3 epel
-      wss ax-setind dfss2 sylibr sylbir df-frfor mpbir mpgbir ) AEFAEBGZHZBAEBI
-      URCGZDGZEUAZCBJZKZCALZDBJZKZDALZAUQUIZKVGUTAMZVEKZDCNZCUTLZVJKZDQZVHVNVLV
-      EKZDALZVGVNVIVOKZDQVPVMVQDVLVIVEUBUCVODAUDOVOVFDAVLVDVEVLCDJZVBKZCALZVDVL
-      USAMZVBKZCUTLVTVKWBCUTVKVIDCNZVEDCNZKWBVIVEDCUEWCWAWDVBDCAPDCUQPUFRSVBCUT
-      AUGRVCVSCAVAVRVBCDUHTSOTSRVNVJDQVHVJCDUJDAUQUKULUMDCAEUQUNUOUP $.
+      wss ax-setind ssalel sylibr sylbir df-frfor mpbir mpgbir ) AEFAEBGZHZBAEB
+      IURCGZDGZEUAZCBJZKZCALZDBJZKZDALZAUQUIZKVGUTAMZVEKZDCNZCUTLZVJKZDQZVHVNVL
+      VEKZDALZVGVNVIVOKZDQVPVMVQDVLVIVEUBUCVODAUDOVOVFDAVLVDVEVLCDJZVBKZCALZVDV
+      LUSAMZVBKZCUTLVTVKWBCUTVKVIDCNZVEDCNZKWBVIVEDCUEWCWAWDVBDCAPDCUQPUFRSVBCU
+      TAUGRVCVSCAVAVRVBCDUHTSOTSRVNVJDQVHVJCDUJDAUQUKULUMDCAEUQUNUOUP $.
   $}
 
   $( Epsilon is well-founded on an ordinal class.  (Contributed by NM,
@@ -41548,17 +41549,17 @@ $)
 
        (Contributed by NM, 18-Feb-2004.) $)
     tfi $p |- ( ( A C_ On /\ A. x e. On ( x C_ A -> x e. A ) ) -> A = On ) $=
-      ( vy con0 wss cv wcel wi wral wa wal df-ral albii bitri imbi1i spi imim1i
-      dfss2 impexp wsb wceq imdi imbi2i 19.21v bitr4i simpl wtr tron dftr2 mpbi
-      bi2.04 3imtr3i alimi sylbi adantl clelsb1 imbi12i ralbii ax-setind sylbir
-      jca sbim sylibr syl eqss biimpri syldan ) BDEZAFZBEZVIBGZHZADIZDBEZBDUAZV
-      HVMJCFZVIGZVPDGZVPBGZHZHZCKZVIDGZVKHZHZAKZVNVMWFVHVMWCVQVSHZHZCKZWDHZAKZW
-      FVMWCVJHZWDHZAKZWKVMWCVLHZAKWNVLADLWOWMAWCVJVKUBMNWMWJAWLWIWDWLWCWGCKZHWI
-      VJWPWCCVIBRUCWCWGCUDUEOMNWJWEAWBWIWDWAWHCVQVRJZVSHVQWCJZVSHZWAWHWRWQVSWRV
-      QVRVQWCUFWRVRHZAWTAKZCDUGXACKUHCADUIUJPPVAQVQVRVSSWSVQWCVSHHWHVQWCVSSVQWC
-      VSUKNULUMQUMUNUOWFWDAKZVNWFWDACTZCVIIZWDHZAKXBXEWEAXDWBWDXDVTCVIIWBXCVTCV
-      IXCWCACTZVKACTZHVTWCVKACVBXFVRXGVSACDUPACBUPUQNURVTCVILNOMWDCAUSUTADBRVCV
-      DVOVHVNJBDVEVFVG $.
+      ( vy con0 wss cv wcel wi wral wa wal df-ral albii bitri ssalel imbi1i spi
+      imim1i impexp wsb wceq imdi imbi2i 19.21v bitr4i simpl wtr tron dftr2 jca
+      mpbi bi2.04 3imtr3i alimi sylbi adantl sbim clelsb1 imbi12i ralbii sylbir
+      ax-setind sylibr syl eqss biimpri syldan ) BDEZAFZBEZVIBGZHZADIZDBEZBDUAZ
+      VHVMJCFZVIGZVPDGZVPBGZHZHZCKZVIDGZVKHZHZAKZVNVMWFVHVMWCVQVSHZHZCKZWDHZAKZ
+      WFVMWCVJHZWDHZAKZWKVMWCVLHZAKWNVLADLWOWMAWCVJVKUBMNWMWJAWLWIWDWLWCWGCKZHW
+      IVJWPWCCVIBOUCWCWGCUDUEPMNWJWEAWBWIWDWAWHCVQVRJZVSHVQWCJZVSHZWAWHWRWQVSWR
+      VQVRVQWCUFWRVRHZAWTAKZCDUGXACKUHCADUIUKQQUJRVQVRVSSWSVQWCVSHHWHVQWCVSSVQW
+      CVSULNUMUNRUNUOUPWFWDAKZVNWFWDACTZCVIIZWDHZAKXBXEWEAXDWBWDXDVTCVIIWBXCVTC
+      VIXCWCACTZVKACTZHVTWCVKACUQXFVRXGVSACDURACBURUSNUTVTCVILNPMWDCAVBVAADBOVC
+      VDVOVHVNJBDVEVFVG $.
   $}
 
   ${
@@ -42953,11 +42954,11 @@ $)
     ssrel $p |- ( Rel A -> ( A C_ B <->
                 A. x A. y ( <. x , y >. e. A -> <. x , y >. e. B ) ) ) $=
       ( vz wrel wss cv cop wcel wi wal ssel alrimivv wceq wex eleq1 imbi12d cvv
-      dfss2 biimprcd 2alimi 19.23vv sylib com23 alimdv df-rel elvv imbi2i albii
-      a2d cxp 3bitri 3imtr4g com12 impbid2 ) CFZCDGZAHBHIZCJZUSDJZKZBLALZURVBAB
-      CDUSMNVCUQURVCEHZCJZVDUSOZBPAPZKZELZVEVDDJZKZELUQURVCVHVKEVCVEVGVJVCVGVEV
-      JVCVFVKKZBLALVGVKKVBVLABVFVKVBVFVEUTVJVAVDUSCQVDUSDQRUAUBVFVKABUCUDUEUKUF
-      UQCSSULZGVEVDVMJZKZELVICUGECVMTVOVHEVNVGVEABVDUHUIUJUMECDTUNUOUP $.
+      ssalel biimprcd 2alimi 19.23vv sylib com23 a2d alimdv df-rel imbi2i albii
+      cxp elvv 3bitri 3imtr4g com12 impbid2 ) CFZCDGZAHBHIZCJZUSDJZKZBLALZURVBA
+      BCDUSMNVCUQURVCEHZCJZVDUSOZBPAPZKZELZVEVDDJZKZELUQURVCVHVKEVCVEVGVJVCVGVE
+      VJVCVFVKKZBLALVGVKKVBVLABVFVKVBVFVEUTVJVAVDUSCQVDUSDQRUAUBVFVKABUCUDUEUFU
+      GUQCSSUKZGVEVDVMJZKZELVICUHECVMTVOVHEVNVGVEABVDULUIUJUMECDTUNUOUP $.
 
     $( Extensionality principle for relations.  Theorem 3.2(ii) of [Monk1]
        p. 33.  (Contributed by NM, 2-Aug-1994.) $)
@@ -42975,13 +42976,13 @@ $)
        (Contributed by Thierry Arnoux, 25-Jan-2018.) $)
     ssrel2 $p |- ( R C_ ( A X. B ) -> ( R C_ S <-> A. x e. A A. y e. B
       ( <. x , y >. e. R -> <. x , y >. e. S ) ) ) $=
-      ( vz cxp wss cv wcel wi wral wrex wal eleq1 ralimi r19.23v bitri dfss2 wa
-      cop ssel a1d ralrimivv wceq imbi12d biimprcd ralbii sylib com23 a2d elxp2
-      alimdv imbi2i albii 3imtr4g com12 impbid2 ) ECDHZIZEFIZAJZBJZUBZEKZVEFKZL
-      ZBDMZACMZVBVHABCDVBVHVCCKVDDKUAEFVEUCUDUEVJVAVBVJGJZEKZVKVEUFZBDNZACNZLZG
-      OZVLVKFKZLZGOVAVBVJVPVSGVJVLVOVRVJVOVLVRVJVMVSLZBDMZACMZVOVSLZVIWAACVHVTB
-      DVMVSVHVMVLVFVRVGVKVEEPVKVEFPUGUHQQWBVNVSLZACMWCWAWDACVMVSBDRUIVNVSACRSUJ
-      UKULUNVAVLVKUTKZLZGOVQGEUTTWFVPGWEVOVLABVKCDUMUOUPSGEFTUQURUS $.
+      ( vz cxp wss cv wcel wi wral wrex wal eleq1 ralimi r19.23v bitri ssalel
+      cop wa ssel a1d ralrimivv wceq imbi12d biimprcd ralbii sylib com23 alimdv
+      a2d elxp2 imbi2i albii 3imtr4g com12 impbid2 ) ECDHZIZEFIZAJZBJZUAZEKZVEF
+      KZLZBDMZACMZVBVHABCDVBVHVCCKVDDKUBEFVEUCUDUEVJVAVBVJGJZEKZVKVEUFZBDNZACNZ
+      LZGOZVLVKFKZLZGOVAVBVJVPVSGVJVLVOVRVJVOVLVRVJVMVSLZBDMZACMZVOVSLZVIWAACVH
+      VTBDVMVSVHVMVLVFVRVGVKVEEPVKVEFPUGUHQQWBVNVSLZACMWCWAWDACVMVSBDRUIVNVSACR
+      SUJUKUMULVAVLVKUTKZLZGOVQGEUTTWFVPGWEVOVLABVKCDUNUOUPSGEFTUQURUS $.
   $}
 
   ${
@@ -43096,7 +43097,7 @@ $)
     ssrelrel $p |- ( A C_ ( ( _V X. _V ) X. _V ) -> ( A C_ B <->
                    A. x A. y A. z ( <. <. x , y >. , z >. e. A
                        -> <. <. x , y >. , z >. e. B ) ) ) $=
-      ( vw cvv cxp wss cv cop wcel wi wal ssel alrimiv wex eleq1 sylib dfss2
+      ( vw cvv cxp wss cv cop wcel wi wal ssel alrimiv wex eleq1 sylib ssalel
       alrimivv wceq elvvv imbi12d biimprcd alimi 19.23v 2alimi 19.23vv biimtrid
       com23 a2d alimdv 3imtr4g com12 impbid2 ) DGGHGHZIZDEIZAJBJKCJKZDLZUTELZMZ
       CNZBNANZUSVDABUSVCCDEUTOPUAVEURUSVEFJZDLZVFUQLZMZFNVGVFELZMZFNURUSVEVIVKF
@@ -43253,9 +43254,9 @@ $)
        a relation.  (Contributed by NM, 19-Dec-2008.) $)
     reliun $p |- ( Rel U_ x e. A B <-> A. x e. A Rel B ) $=
       ( vy ciun wrel cv wcel wrex cab cvv cxp wss wral df-iun releqi df-rel wal
-      wi 3bitri abss dfss2 bitri ralbii ralcom4 r19.23v albii bitr4i ) ABCEZFDG
-      ZCHZABIZDJZFUMKKLZMZCFZABNZUIUMADBCOPUMQUOULUJUNHZSZDRZUQULDUNUAUQUKURSZD
-      RZABNVAABNZDRUTUPVBABUPCUNMVBCQDCUNUBUCUDVAADBUEVCUSDUKURABUFUGTUHT $.
+      wi 3bitri abss ssalel bitri ralbii ralcom4 r19.23v albii bitr4i ) ABCEZFD
+      GZCHZABIZDJZFUMKKLZMZCFZABNZUIUMADBCOPUMQUOULUJUNHZSZDRZUQULDUNUAUQUKURSZ
+      DRZABNVAABNZDRUTUPVBABUPCUNMVBCQDCUNUBUCUDVAADBUEVCUSDUKURABUFUGTUHT $.
   $}
 
   $( An indexed intersection is a relation if at least one of the member of the
@@ -43575,31 +43576,31 @@ $)
     relop $p |- ( Rel <. A , B >.
              <-> E. x E. y ( A = { x } /\ B = { x , y } ) ) $=
       ( vz vw vv cop cvv cv wceq wa wex wi wcel bitri weq eqeq2d cxp wss df-rel
-      wrel csn cpr wal dfss2 vex elop elvv imbi12i jaob albii 19.26 eqeq1 eqcom
-      wo snex opeqsn bitrdi 2exbidv imbi12d spcv sneq cbvexv a9ev equcom 19.41v
-      exbii mpbi mpbiran eqid a1bi 3bitr2ri sylib prexg mp2an mpi opeqpr preqsn
-      idd eqtr2 simplbi syl dfsn2 preq2 eqtr2id eqtrid biimpd expd com12 adantr
-      anbi12d mpd expcom impd biimtrid 2eximdv exlimiv syl2an sylbi simpr equid
-      jaod imp sylibr eqtr4d opeq12 spc2ev adantlr preq12 biimpa eqtr4di jaodan
-      jctl dfop ex 3imtr4g ssrdv exlimivv impbii ) CDJZUDYCKKUAZUBZCALZUEZMZDYF
-      BLZUFZMZNZBOAOZYCUCYEYMYEGLZCUEZMZYNYFYIJZMZBOAOZPZGUGZYNCDUFZMZYSPZGUGZN
-      ZYMYEYNYCQZYNYDQZPZGUGZUUFGYCYDUHUUJYTUUDNZGUGUUFUUIUUKGUUIYPUUCURZYSPUUK
-      UUGUULUUHYSYNCDGUIEFUJZABYNUKULYPYSUUCUMRUNYTUUDGUORRUUACHLZUEZMZHOZUUBYQ
-      MZBOAOZYMUUEUUAYOYOMZABSZYHNZBOZAOZPZUUQYTUVEGYOCEUSYPYPUUTYSUVDYNYOYOUPY
-      PYRUVBABYPYRYOYQMZUVBYNYOYQUPUVFYQYOMUVBYOYQUQYFYICAUIZBUIZEUTRVAVBVCVDUU
-      QYHAOUVDUVEUUPYHHAHASZUUOYGCUUNYFVETVFUVCYHAUVCUVABOZYHBASZBOUVJBAVGUVKUV
-      ABBAVHVJVKUVAYHBVIVLVJUUTUVDYOVMVNVOVPUUEUUBUUBMZUUSUUBVMUUDUVLUUSPGUUBCK
-      QDKQUUBKQEFCDKKVQVRUUCUUCUVLYSUUSYNUUBUUBUPUUCYRUURABYNUUBYQUPVBVCVDVSUUQ
-      UUSYMUUPUUSYMPHUUPUURYLABUURYLCYJMZDYGMZNZURZUUPYLUURYQUUBMUVPUUBYQUQYFYI
-      CDUVGUVHEFVTRUUPYLYLUVOUUPYLWBUUPUVMUVNYLUVMUUPUVNYLPZUVMUUPNZUVAUVQUVRYJ
-      UUOMZUVACYJUUOWCUVSUVABHSYFYIUUNUVGUVHHUIWAWDWEUVMUVAUVQPUUPUVAUVMUVQUVAU
-      VMUVNYLUVAUVOYLUVAUVMYHUVNYKUVAYJYGCUVAYGYFYFUFZYJYFWFZYFYIYFWGZWHTUVAYGY
-      JDUVAYGUVTYJUWAUWBWITWNWJWKWLWMWOWPWQXEWRWSWTXFXAXBYLYEABYLGYCYDYLUULYNUU
-      NILZJZMZIOHOZUUGUUHYLUULUWFYLYPUWFUUCYHYPUWFYKYHYPNZYNYFYFJZMZUWFUWGYNYOU
-      WHYHYPXCYHUWHYOMZYPYHAASZYHNUWJYHUWKAXDXPYFYFCUVGUVGEUTXGWMXHUWEUWIHIYFYF
-      UVGUVGUVIIASNUWDUWHYNUUNUWCYFYFXITXJWEXKYLUUCNZYRUWFUWLYNYGYJUFZYQYLUUCYN
-      UWMMYLUUBUWMYNCDYGYJXLTXMYFYIUVGUVHXQXNUWEYRHIYFYIUVGUVHUVIIBSNUWDYQYNUUN
-      UWCYFYIXITXJWEXOXRUUMHIYNUKXSXTYAYBR $.
+      wrel csn cpr wal ssalel vex elop elvv imbi12i jaob albii 19.26 snex eqeq1
+      wo eqcom opeqsn bitrdi 2exbidv imbi12d spcv sneq cbvexv a9ev equcom exbii
+      mpbi 19.41v mpbiran eqid a1bi 3bitr2ri sylib prexg mp2an mpi opeqpr eqtr2
+      idd preqsn simplbi dfsn2 preq2 eqtr2id eqtrid anbi12d biimpd com12 adantr
+      syl expd mpd expcom impd jaod biimtrid 2eximdv exlimiv syl2an sylbi simpr
+      equid jctl sylibr eqtr4d opeq12 spc2ev adantlr preq12 biimpa dfop eqtr4di
+      imp jaodan ex 3imtr4g ssrdv exlimivv impbii ) CDJZUDYCKKUAZUBZCALZUEZMZDY
+      FBLZUFZMZNZBOAOZYCUCYEYMYEGLZCUEZMZYNYFYIJZMZBOAOZPZGUGZYNCDUFZMZYSPZGUGZ
+      NZYMYEYNYCQZYNYDQZPZGUGZUUFGYCYDUHUUJYTUUDNZGUGUUFUUIUUKGUUIYPUUCURZYSPUU
+      KUUGUULUUHYSYNCDGUIEFUJZABYNUKULYPYSUUCUMRUNYTUUDGUORRUUACHLZUEZMZHOZUUBY
+      QMZBOAOZYMUUEUUAYOYOMZABSZYHNZBOZAOZPZUUQYTUVEGYOCEUPYPYPUUTYSUVDYNYOYOUQ
+      YPYRUVBABYPYRYOYQMZUVBYNYOYQUQUVFYQYOMUVBYOYQUSYFYICAUIZBUIZEUTRVAVBVCVDU
+      UQYHAOUVDUVEUUPYHHAHASZUUOYGCUUNYFVETVFUVCYHAUVCUVABOZYHBASZBOUVJBAVGUVKU
+      VABBAVHVIVJUVAYHBVKVLVIUUTUVDYOVMVNVOVPUUEUUBUUBMZUUSUUBVMUUDUVLUUSPGUUBC
+      KQDKQUUBKQEFCDKKVQVRUUCUUCUVLYSUUSYNUUBUUBUQUUCYRUURABYNUUBYQUQVBVCVDVSUU
+      QUUSYMUUPUUSYMPHUUPUURYLABUURYLCYJMZDYGMZNZURZUUPYLUURYQUUBMUVPUUBYQUSYFY
+      ICDUVGUVHEFVTRUUPYLYLUVOUUPYLWBUUPUVMUVNYLUVMUUPUVNYLPZUVMUUPNZUVAUVQUVRY
+      JUUOMZUVACYJUUOWAUVSUVABHSYFYIUUNUVGUVHHUIWCWDWMUVMUVAUVQPUUPUVAUVMUVQUVA
+      UVMUVNYLUVAUVOYLUVAUVMYHUVNYKUVAYJYGCUVAYGYFYFUFZYJYFWEZYFYIYFWFZWGTUVAYG
+      YJDUVAYGUVTYJUWAUWBWHTWIWJWNWKWLWOWPWQWRWSWTXAXPXBXCYLYEABYLGYCYDYLUULYNU
+      UNILZJZMZIOHOZUUGUUHYLUULUWFYLYPUWFUUCYHYPUWFYKYHYPNZYNYFYFJZMZUWFUWGYNYO
+      UWHYHYPXDYHUWHYOMZYPYHAASZYHNUWJYHUWKAXEXFYFYFCUVGUVGEUTXGWLXHUWEUWIHIYFY
+      FUVGUVGUVIIASNUWDUWHYNUUNUWCYFYFXITXJWMXKYLUUCNZYRUWFUWLYNYGYJUFZYQYLUUCY
+      NUWMMYLUUBUWMYNCDYGYJXLTXMYFYIUVGUVHXNXOUWEYRHIYFYIUVGUVHUVIIBSNUWDYQYNUU
+      NUWCYFYIXITXJWMXQXRUUMHIYNUKXSXTYAYBR $.
   $}
 
   ${
@@ -45506,16 +45507,16 @@ $)
       sylbi cres wb df-br bicomi imbi12i albii ralidm bitri cxp pm2.27 opelresg
       ralv wa weq ideq opeq2 eleq1d biimpcd syl6 biimtrrdi pm2.43i com3r sylbir
       imp biimtrdi ralrimiv sps ralimi eleq1 imbi12d ralxp sylibr relres df-rel
-      wceq wrel mpbi sseli ancri pm3.31 alimi syl dfss2 alrimiv impbii 3bitr2ri
-      syl5 ssel ) AFZWICGZABHWIBIZWJJZAKWIWILZMBUAZIZWMCIZJZAKZWNCNZWJABOWQWLAW
-      OWKWPWJWIPIZWOWKUBAQZWIBPRSWJWPWIWICUCUDUEUFWRWSWRDFZWNIZXBCIZJZDKZWSWRWQ
-      APHZAPHZXFXHXGWRWQAPUGWQAULUHXHXEDPPUIZHZXFXHWIEFZLZWNIZXLCIZJZEPHZAPHXJX
-      GXPAPXGWTWQJZAKXPWQAPOXQXPAWTXQXPJXAWTXQWQXPWTWQUJWQXOEPXKPIZXMWQXNXRXMXL
-      MIZWKUMWQXNJZWIXKMBPUKXSWKXTXSWIXKMGZWKXTJZWIXKMUCYAAEUNZYBWIXKEQUOWKWQYC
-      XNWKWQYCXNJZJZWKWKWOYEWIBBRWOWQWPYDWOWPUJYCWPXNYCWMXLCWIXKWIUPUQURUSUTVAV
-      BTVCVDVEVBVFUSSVGTVHXEXODAEPPXBXLVOXCXMXDXNXBXLWNVIXBXLCVIVJVKVLXJXBXIIZX
-      EJZDKXFXEDXIOYGXEDXCYFXCUMYGXDXCYFWNXIXBWNVPWNXINMBVMWNVNVQVRVSYFXCXDVTWG
-      WATWBVCDWNCWCVLWSWQAWNCWMWHWDWEWF $.
+      wceq wrel mpbi sseli ancri pm3.31 syl5 alimi ssalel ssel alrimiv 3bitr2ri
+      syl impbii ) AFZWICGZABHWIBIZWJJZAKWIWILZMBUAZIZWMCIZJZAKZWNCNZWJABOWQWLA
+      WOWKWPWJWIPIZWOWKUBAQZWIBPRSWJWPWIWICUCUDUEUFWRWSWRDFZWNIZXBCIZJZDKZWSWRW
+      QAPHZAPHZXFXHXGWRWQAPUGWQAULUHXHXEDPPUIZHZXFXHWIEFZLZWNIZXLCIZJZEPHZAPHXJ
+      XGXPAPXGWTWQJZAKXPWQAPOXQXPAWTXQXPJXAWTXQWQXPWTWQUJWQXOEPXKPIZXMWQXNXRXMX
+      LMIZWKUMWQXNJZWIXKMBPUKXSWKXTXSWIXKMGZWKXTJZWIXKMUCYAAEUNZYBWIXKEQUOWKWQY
+      CXNWKWQYCXNJZJZWKWKWOYEWIBBRWOWQWPYDWOWPUJYCWPXNYCWMXLCWIXKWIUPUQURUSUTVA
+      VBTVCVDVEVBVFUSSVGTVHXEXODAEPPXBXLVOXCXMXDXNXBXLWNVIXBXLCVIVJVKVLXJXBXIIZ
+      XEJZDKXFXEDXIOYGXEDXCYFXCUMYGXDXCYFWNXIXBWNVPWNXINMBVMWNVNVQVRVSYFXCXDVTW
+      AWBTWGVCDWNCWCVLWSWQAWNCWMWDWEWHWF $.
 
     $( Two ways of saying a relation is symmetric.  Similar to definition of
        symmetry in [Schechter] p. 51.  (Contributed by NM, 28-Dec-1996.)
@@ -50496,14 +50497,14 @@ $)
     funimass4 $p |- ( ( Fun F /\ A C_ dom F ) ->
                     ( ( F " A ) C_ B <-> A. x e. A ( F ` x ) e. B ) ) $=
       ( vy cima wss cv wcel wi wal wfun cdm wa wral wceq wb wrex bitrid cvv cfv
-      dfss2 wbr elima eqcom ssel funbrfvb ex syl9 imp31 rexbidva bitr4id imbi1d
-      vex r19.23v bitr4di albidv ancoms ralcom4 w3a ssel2 3impb funfvex ceqsalg
-      anim2i nfv eleq1 3syl 3expa ralbidva bitr3id bitrd ) DBFZCGEHZVMIZVNCIZJZ
-      EKZDLZBDMZGZNZAHZDUAZCIZABOZEVMCUBWBVRVNWDPZVPJZABOZEKZWFWAVSVRWJQWAVSNZV
-      QWIEWKVQWGABRZVPJWIWKVOWLVPWKVOWCVNDUCZABRWLAVNDBEUNUDWKWGWMABWGWDVNPZWKW
-      CBIZNWMVNWDUEWAVSWOWNWMQZWAWOWCVTIZVSWPBVTWCUFVSWQWPWCVNDUGUHUIUJSUKULUMW
-      GVPABUOUPUQURWJWHEKZABOWBWFWHAEBUSWBWRWEABVSWAWOWRWEQZVSWAWOUTVSWQNZWDTIW
-      SVSWAWOWTWAWONWQVSBVTWCVAVEVBWCDVCVPWEEWDTWEEVFVNWDCVGVDVHVIVJVKVLS $.
+      ssalel wbr vex elima eqcom ssel funbrfvb ex imp31 rexbidva bitr4id imbi1d
+      syl9 r19.23v bitr4di albidv ancoms ralcom4 w3a ssel2 anim2i 3impb funfvex
+      nfv eleq1 ceqsalg 3syl 3expa ralbidva bitr3id bitrd ) DBFZCGEHZVMIZVNCIZJ
+      ZEKZDLZBDMZGZNZAHZDUAZCIZABOZEVMCUBWBVRVNWDPZVPJZABOZEKZWFWAVSVRWJQWAVSNZ
+      VQWIEWKVQWGABRZVPJWIWKVOWLVPWKVOWCVNDUCZABRWLAVNDBEUDUEWKWGWMABWGWDVNPZWK
+      WCBIZNWMVNWDUFWAVSWOWNWMQZWAWOWCVTIZVSWPBVTWCUGVSWQWPWCVNDUHUIUNUJSUKULUM
+      WGVPABUOUPUQURWJWHEKZABOWBWFWHAEBUSWBWRWEABVSWAWOWRWEQZVSWAWOUTVSWQNZWDTI
+      WSVSWAWOWTWAWONWQVSBVTWCVAVBVCWCDVDVPWEEWDTWEEVEVNWDCVFVGVHVIVJVKVLS $.
 
     $( Function value in an image.  Part of Theorem 4.4(iii) of [Monk1] p. 42.
        (Contributed by NM, 29-Apr-2004.)  (Proof shortened by Andrew Salmon,
@@ -137745,15 +137746,15 @@ $)
       ( vn cprime wcel c1 wa cn cv cdvds wbr wss wceq wi bitri ancom bitr4i wal
       wb 3bitri wne crab cpr c2 cuz cfv wo wral 1nprm eleq1 biimpcd mtoi neqned
       pm4.71i c2o cen isprm isprm2lem eqss imbi2i 1idssfct jcab mpbiran2 adantr
-      pm5.74ri bitrd expcom pm5.32d bitrid anass eluz2b3 anbi1i dfss2 breq1 vex
-      pm5.32ri elrab elpr imbi12i impexp albii df-ral anbi2i ) BDEZWDBFUAZGBHEZ
-      CIZBJKZCHUBZFBUCZLZGZWEGZBUDUEUFEZAIZBJKZWOFMWOBMUGZNZAHUHZGZWDWEWDBFWDBF
-      MZFDEZUIXAWDXBBFDUJUKULUMUNWEWDWLWDWFWIUOUPKZGWEWLBCUQWEWFXCWKWFWEXCWKSWF
-      WEGZXCWIWJMZWKBCURWFXEWKSWEWFXEWKWFXENWFWKWJWILZGZNZWFWKNZXEXGWFWIWJUSUTX
-      HXIWFXFNCBVAWFWKXFVBVCOVEVDVFVGVHVIVPWMWEWFGZWKGZWNWKGWTWMWEWLGXKWLWEPWEW
-      FWKVJQXJWNWKXJXDWNWEWFPBVKQVLWKWSWNWKWOWIEZWOWJEZNZARZWSAWIWJVMXOWOHEZWRN
-      ZARWSXNXQAXNXPWPGZWQNXQXLXRXMWQWHWPCWOHWGWOBJVNVQWOFBAVOVRVSXPWPWQVTOWAWR
-      AHWBQOWCTT $.
+      pm5.74ri bitrd expcom pm5.32d bitrid pm5.32ri anass eluz2b3 anbi1i ssalel
+      breq1 elrab vex elpr imbi12i impexp albii df-ral anbi2i ) BDEZWDBFUAZGBHE
+      ZCIZBJKZCHUBZFBUCZLZGZWEGZBUDUEUFEZAIZBJKZWOFMWOBMUGZNZAHUHZGZWDWEWDBFWDB
+      FMZFDEZUIXAWDXBBFDUJUKULUMUNWEWDWLWDWFWIUOUPKZGWEWLBCUQWEWFXCWKWFWEXCWKSW
+      FWEGZXCWIWJMZWKBCURWFXEWKSWEWFXEWKWFXENWFWKWJWILZGZNZWFWKNZXEXGWFWIWJUSUT
+      XHXIWFXFNCBVAWFWKXFVBVCOVEVDVFVGVHVIVJWMWEWFGZWKGZWNWKGWTWMWEWLGXKWLWEPWE
+      WFWKVKQXJWNWKXJXDWNWEWFPBVLQVMWKWSWNWKWOWIEZWOWJEZNZARZWSAWIWJVNXOWOHEZWR
+      NZARWSXNXQAXNXPWPGZWQNXQXLXRXMWQWHWPCWOHWGWOBJVOVPWOFBAVQVRVSXPWPWQVTOWAW
+      RAHWBQOWCTT $.
 
     $( The predicate "is a prime number".  A prime number is an integer greater
        than or equal to 2 with no divisors strictly between 1 and itself.
@@ -192802,11 +192803,11 @@ $)
     bj-inf2vnlem3 $p |- ( A. x e. A ( x = (/) \/ E. y e. A x = suc y ) ->
                                                        ( Ind Z -> A C_ Z ) ) $=
       ( vz vt vu cv wceq wral wcel wi wal bdeli nfv weq eleq1 imbi12d csuc wrex
-      c0 wo wind wss bj-inf2vnlem2 ax-bdim biimpd biimprd bdsetindis syl6 dfss2
-      imbitrrdi ) AJZUCKUOBJUAKBCUBUDACLZDUEZGJZCMZURDMZNZGOZCDUFUPUQHJZCMZVCDM
-      ZNZHIJZLVGCMZVGDMZNZNIOVBABIHCDUGVAVFVJGIHUSUTGCEPGDFPUHVFGQVJGQVAIQVFIQG
-      HRZVAVFVKUSVDUTVEURVCCSURVCDSTUIGIRZVAVJVLUSVHUTVIURVGCSURVGDSTUJUKULGCDU
-      MUN $.
+      c0 wo wind bj-inf2vnlem2 ax-bdim biimpd biimprd bdsetindis syl6 imbitrrdi
+      wss ssalel ) AJZUCKUOBJUAKBCUBUDACLZDUEZGJZCMZURDMZNZGOZCDUMUPUQHJZCMZVCD
+      MZNZHIJZLVGCMZVGDMZNZNIOVBABIHCDUFVAVFVJGIHUSUTGCEPGDFPUGVFGQVJGQVAIQVFIQ
+      GHRZVAVFVKUSVDUTVEURVCCSURVCDSTUHGIRZVAVJVLUSVHUTVIURVGCSURVGDSTUIUJUKGCD
+      UNUL $.
   $}
 
   ${
@@ -192816,10 +192817,10 @@ $)
     bj-inf2vnlem4 $p |- ( A. x e. A ( x = (/) \/ E. y e. A x = suc y ) ->
                                                        ( Ind Z -> A C_ Z ) ) $=
       ( vz vt vu cv c0 wceq csuc wrex wral wcel wi wal nfv weq eleq1 imbi12d wo
-      wind wss bj-inf2vnlem2 biimpd biimprd setindis syl6 dfss2 imbitrrdi ) AHZ
-      IJUKBHKJBCLUAACMZDUBZEHZCNZUNDNZOZEPZCDUCULUMFHZCNZUSDNZOZFGHZMVCCNZVCDNZ
-      OZOGPURABGFCDUDUQVBVFEGFVBEQVFEQUQGQVBGQEFRZUQVBVGUOUTUPVAUNUSCSUNUSDSTUE
-      EGRZUQVFVHUOVDUPVEUNVCCSUNVCDSTUFUGUHECDUIUJ $.
+      wind wss bj-inf2vnlem2 biimpd biimprd setindis syl6 ssalel imbitrrdi ) AH
+      ZIJUKBHKJBCLUAACMZDUBZEHZCNZUNDNZOZEPZCDUCULUMFHZCNZUSDNZOZFGHZMVCCNZVCDN
+      ZOZOGPURABGFCDUDUQVBVFEGFVBEQVFEQUQGQVBGQEFRZUQVBVGUOUTUPVAUNUSCSUNUSDSTU
+      EEGRZUQVFVHUOVDUPVEUNVCCSUNVCDSTUFUGUHECDUIUJ $.
   $}
 
   ${
