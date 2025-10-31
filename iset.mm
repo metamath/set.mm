@@ -105643,6 +105643,317 @@ $)
     TXPXDXEJZXRXSUMWLXTWFWJWGXTWKWGWJXTWGXDWJXEXFXGQUJPTCBVFVGVDVHVIVJWNABCWMWR
     WLXCNWLXEWMXKTXMVKVLVNVOVPVQVRVJ $.
 
+  ${
+    $d K n x y z $.  $d M n y $.  $d n ph y $.  $d ps x y z $.
+    zsupcllemstep.dc $e |- ( ( ph /\ n e. ( ZZ>= ` M ) ) -> DECID ps ) $.
+    $( Lemma for ~ zsupcl .  Induction step.  (Contributed by Jim Kingdon,
+       7-Dec-2021.) $)
+    zsupcllemstep $p |- ( K e. ( ZZ>= ` M )
+      -> ( ( ( ph /\ A. n e. ( ZZ>= ` K ) -. ps )
+        -> E. x e. ZZ ( A. y e. { n e. ZZ | ps } -. x < y
+          /\ A. y e. RR ( y < x -> E. z e. { n e. ZZ | ps } y < z ) ) )
+        -> ( ( ph /\ A. n e. ( ZZ>= ` ( K + 1 ) ) -. ps )
+          -> E. x e. ZZ ( A. y e. { n e. ZZ | ps } -. x < y
+            /\ A. y e. RR ( y < x -> E. z e. { n e. ZZ | ps } y < z ) ) )
+      ) ) $=
+      ( wcel wn wral wa clt wbr cz wi cr wb wceq cuz cv crab wrex c1 caddc wsbc
+      cfv co eluzelz ad3antrrr nfv nfcv nfra1 nfan nfrexya nfim elrabsf simprbi
+      wsb sylibr ad2antlr cle elrabi zltp1le syl2an biimpa peano2zd eluz adantr
+      sbsbc mpbird simprr nfs1v nfn sbequ12 rspc sylc pm2.65da ralrimi ad2antrr
+      notbid simpllr sylanbrc breq2 rspcev sylancom exp31 breq1 ralbidv anbi12d
+      imbi1d syl12anc csn sbcng biimpar sbcsng mpbid simplrr cfzo uzid peano2uz
+      ex cun fzouzsplit 3syl fzosn uneq1d eqtrd raleqdv ralunb bitrdi mpbir2and
+      syl simprl simplr mpand mpd wdc wo ralrimiva nfsbc1v nfdc sbceq1a exmiddc
+      dcbid mpjaodan ) GHUAUHZJZABKZFGUAUHZLZMZCUBZDUBZNOZKZDBFPUCZLZYOYNNOZYOE
+      UBZNOZEYRUDZQZDRLZMZCPUDZQZAYJFGUEUFUIZUAUHZLZMZUUGYIUUHMZUULMZBFGUGZUUGU
+      UOKZUUNUUOMZGPJZGYONOZKZDYRLZYOGNOZUUCQZDRLZUUGYIUURUUHUULUUOHGUJZUKZUUQU
+      UTDYRUUNUUODUUMUULDYIUUHDYIDULYMUUGDYMDULUUFDCPDPUMYSUUEDYQDYRUNUUDDRUNUO
+      UPUQUOUULDULUOUUODULUOZUUQYOYRJZUUTUUQUVHMZUUSBFDUTZUVHUVJUUQUUSUVHBFYOUG
+      ZUVJUVHYOPJZUVKBFYOPFPUMZURUSBFDVKVAVBUVIUUSMZYOUUJJZUUKUVJKZUVNUVOUUIYOV
+      COZUVIUUSUVQUUQUURUVLUUSUVQSUVHUVFBFYOPVDZGYOVEVFVGUVIUVOUVQSZUUSUUQUUIPJ
+      UVLUVSUVHUUQGUVFVHUVRUUIYOVIVFVJVLUUNUUKUUOUVHUUSUUMAUUKVMUKYJUVPFYOUUJUV
+      JFBFDVNVOFUBZYOTBUVJBFDVPWBVQVRVSXCVTUUQUVCDRUVGUUQYORJZUVBUUCUUQUWAMZUVB
+      GYRJZUUCUWBUVBMUURUUOUWCUUQUURUWAUVBUVFWAUUNUUOUWAUVBWCBFGPUVMURWDUUBUVBE
+      GYRUUAGYONWEWFWGWHVTUUFUVAUVDMCGPYNGTZYSUVAUUEUVDUWDYQUUTDYRUWDYPUUSYNGYO
+      NWIWBWJUWDUUDUVCDRUWDYTUVBUUCYNGYONWEWLWJWKWFWMUUNUUPMZYLUUGUWEYLYJFGWNZL
+      ZUUKUWEYJFGUGZUWGUUNUWHUUPYIUWHUUPSUUHUULBFGYHWOWAWPYIUWHUWGSUUHUULUUPYJF
+      GYHWQUKWRUUMAUUKUUPWSYIYLUWGUUKMZSUUHUULUUPYIYLYJFUWFUUJXDZLUWIYIYJFYKUWJ
+      YIYKGUUIWTUIZUUJXDZUWJYIUURUUIYKJZYKUWLTUVEUURGYKJUWMGXAGGXBXNGUUIXEXFYIU
+      WKUWFUUJYIUURUWKUWFTUVEGXGXNXHXIXJYJFUWFUUJXKXLUKXMUUNYLUUGQUUPUUNAYLUUGU
+      UMAUUKXOZYIUUHUULXPXQVJXRUUNUUOXSZUUOUUPXTUUNBXSZFYHLZUWOUUNAUWQUWNAUWPFY
+      HIYAXNYIUWQUWOQUUHUULUWPUWOFGYHUUOFBFGYBYCUVTGTBUUOBFGYDYFVQWAXRUUOYEXNYG
+      WH $.
+  $}
+
+  ${
+    $d M k n w y $.  $d ch n $.  $d j n ph w y $.  $d j ps w x y z $.
+    $d k n ph w y $.  $d k ps w x y z $.  $d n w x y z $.
+    zsupcllemex.m $e |- ( ph -> M e. ZZ ) $.
+    zsupcllemex.sbm $e |- ( n = M -> ( ps <-> ch ) ) $.
+    zsupcllemex.mtru $e |- ( ph -> ch ) $.
+    zsupcllemex.dc $e |- ( ( ph /\ n e. ( ZZ>= ` M ) ) -> DECID ps ) $.
+    zsupcllemex.bnd $e |- ( ph ->
+      E. j e. ( ZZ>= ` M ) A. n e. ( ZZ>= ` j ) -. ps ) $.
+    $( Lemma for ~ zsupcl .  Existence of the supremum.  (Contributed by Jim
+       Kingdon, 7-Dec-2021.) $)
+    zsupcllemex $p |- ( ph -> E. x e. ZZ (
+          A. y e. { n e. ZZ | ps } -. x < y /\
+          A. y e. RR ( y < x -> E. z e. { n e. ZZ | ps } y < z ) ) ) $=
+      ( cv cuz cfv wral wi wa vw vk wn clt cz crab wrex cr wcel simpl simprr c1
+      wbr caddc co wceq fveq2 raleqdv anbi2d imbi1d adantr uzid notbid 3syl imp
+      rspcv pm2.21dd a1i zsupcllemstep uzind4 ad2antrl mp2and rexlimddv ) ABUCZ
+      HGOZPQZRZDOZEOZUDUMUCEBHUEUFZRVSVRUDUMVSFOUDUMFVTUGSEUHRTDUEUGZGIPQZNAVOW
+      BUIZVQTZTAVQWAAWDUJAWCVQUKWCAVQTZWASZAVQAVNHUAOZPQZRZTZWASAVNHWBRZTZWASZA
+      VNHUBOZPQZRZTZWASAVNHWNULUNUOZPQZRZTZWASWFUAUBIVOWGIUPZWJWLWAXBWIWKAXBVNH
+      WHWBWGIPUQURUSUTWGWNUPZWJWQWAXCWIWPAXCVNHWHWOWGWNPUQURUSUTWGWRUPZWJXAWAXD
+      WIWTAXDVNHWHWSWGWRPUQURUSUTWGVOUPZWJWEWAXEWIVQAXEVNHWHVPWGVOPUQURUSUTWMIU
+      EUIZWLCWAACWKLVAAWKCUCZAXFIWBUIWKXGSJIVBVNXGHIWBHOIUPBCKVCVFVDVEVGVHABDEF
+      HWNIMVIVJVKVLVM $.
+  $}
+
+  ${
+    $d ph j n x y z u v $.  $d ps j x y z u v $.  $d ch j n x y z u v $.
+    $d M j n x y z u v $.
+    zsupcl.m $e |- ( ph -> M e. ZZ ) $.
+    zsupcl.sbm $e |- ( n = M -> ( ps <-> ch ) ) $.
+    zsupcl.mtru $e |- ( ph -> ch ) $.
+    zsupcl.dc $e |- ( ( ph /\ n e. ( ZZ>= ` M ) ) -> DECID ps ) $.
+    zsupcl.bnd $e |- ( ph ->
+      E. j e. ( ZZ>= ` M ) A. n e. ( ZZ>= ` j ) -. ps ) $.
+    $( Closure of supremum for decidable integer properties.  The property
+       which defines the set we are taking the supremum of must (a) be true at
+       ` M ` (which corresponds to the nonempty condition of classical supremum
+       theorems), (b) decidable at each value after ` M ` , and (c) be false
+       after ` j ` (which corresponds to the upper bound condition found in
+       classical supremum theorems).  (Contributed by Jim Kingdon,
+       7-Dec-2021.) $)
+    zsupcl $p |- ( ph -> sup ( { n e. ZZ | ps } , RR , < ) e. ( ZZ>= ` M ) ) $=
+      ( vx vy vz vv cz cr clt wcel wbr vu crab csup cuz cfv cle cv wa weq wn wb
+      zred lttri3 adantl wss wral wrex wi zssre zsupcllemex mpsyl supclti elrab
+      ssrexv sylanbrc supubti mpd nltled a1i supelti eluz syl2anc mpbird ) ABEP
+      UBZQRUCZFUDUESZFVOUFTZAFVOAFGULALMNOUAQVNRUAUGZQSOUGZQSUHUAOUIVRVSRTUJVSV
+      RRTUJUHUKAVRVSUMUNZPQUOZALUGZMUGZRTUJMVNUPWCWBRTWCNUGRTNVNUQURMQUPUHZLPUQ
+      WDLQUQUSABCLMNDEFGHIJKUTZWDLPQVDVAZVBAFVNSZVOFRTUJAFPSZCWGGIBCEFPHVCVEALM
+      NOUAQVNFRVTWFVFVGVHAWHVOPSVPVQUKGALMNOUAQVNPRVTWEWAAUSVIVJFVOVKVLVM $.
+  $}
+
+  ${
+    $d B f g x y z $.  $d f g ph x y z $.
+    zssinfcl.ex $e |- ( ph -> E. x e. RR ( A. y e. B -. y < x /\
+                      A. y e. RR ( x < y -> E. z e. B z < y ) ) ) $.
+    zssinfcl.ss $e |- ( ph -> B C_ ZZ ) $.
+    zssinfcl.zz $e |- ( ph -> inf ( B , RR , < ) e. ZZ ) $.
+    $( The infimum of a set of integers is an element of the set.  (Contributed
+       by Jim Kingdon, 16-Jan-2022.) $)
+    zssinfcl $p |- ( ph -> inf ( B , RR , < ) e. B ) $=
+      ( vg vf cv cr clt c1 wbr wcel wa wn adantr cz cinf caddc co wrex readdcld
+      zred 1red ltp1d wceq lttri3 adantl infglbti mp2and cle wss simprl inflbti
+      sseldd imp adantrr nltled simprr zleltp1 syl2anc mpbird letri3d mpbir2and
+      wb eqeltrd rexlimddv ) ADKZELMUAZNUBUCZMOZVLEPDEAVMLPVLVMMOVNDEUDAVLNAVLH
+      UFZAUGUEAVLVOUHABCDIJLEVMMJKZLPIKZLPQVPVQUIVPVQMORVQVPMORQVHAVPVQUJUKZFUL
+      UMAVKEPZVNQZQZVLVKEWAVLVKUIVLVKUNOVKVLUNOZWAVLVKAVLLPVTVOSZWAVKWAETVKAETU
+      OVTGSAVSVNUPZURZUFZAVSVKVLMORZVNAVSWGABCDIJLEVKMVRFUQUSUTVAWAWBVNAVSVNVBW
+      AVKTPVLTPZWBVNVHWEAWHVTHSVKVLVCVDVEWAVLVKWCWFVFVGWDVIVJ $.
+  $}
+
+  ${
+    $d A j m y $.  $d A m n $.  $d M j m $.  $d M m n $.  $d S a m w $.
+    $d S b m $.  $d S j m x y z $.  $d a m n $.  $d b m n ph $.
+    $d j m ph x y $.  $d w x y z $.
+    infssuzledc.m $e |- ( ph -> M e. ZZ ) $.
+    infssuzledc.s $e |- S = { n e. ( ZZ>= ` M ) | ps } $.
+    infssuzledc.a $e |- ( ph -> A e. S ) $.
+    infssuzledc.dc $e |- ( ( ph /\ n e. ( M ... A ) ) -> DECID ps ) $.
+    $( Existence of the infimum of a subset of an upper set of integers.
+       (Contributed by Jim Kingdon, 13-Jan-2022.) $)
+    infssuzex $p |- ( ph -> E. x e. RR ( A. y e. S -. y < x
+        /\ A. y e. RR ( x < y -> E. z e. S z < y ) ) ) $=
+      ( vm wbr wcel cr wa cz syl vw vj vb va cv wn cneg crab wral wrex wi zssre
+      clt wss cuz eleq2i sylib elrabi eluzelz znegcld wceq negeq eleq1d negnegd
+      cfv zcnd eqeltrd cle wdc wsbc cfz co adantr zred adantl eluzle lenegcon1d
+      simpr jca wb ad2antrr elfz syl3anc mpbird ralrimiva nfsbc1v sbceq1a dcbid
+      nfdc rspc sylc nfcv elrabsf elfzuz biantrurd bitr4id bitrid wo nsyl df-dc
+      eleq2s olcd sylibr zdcle syl2anc exmiddc mpjaodan caddc lenegd mpbid eluz
+      c1 peano2uz renegcld peano2re ad2antlr adantlr letrd ltnrd pm2.65da fveq2
+      lenegcon2d zltp1le raleqdv rspcev zsupcllemex zre anim1i recn znegclb weq
+      cc impbii elrab 3bitr4i a1i eqrdv rexeqdv imbi2d ralbidv ssrexv supinfneg
+      anbi12d rexbidv mpsyl ssrab2 elrab3 renegcl 3bitrd pm5.21nii eqriv raleqi
+      eluzelre rexeqi imbi2i ralbii anbi12i rexbii ) ADUEZCUEZUMOZUFZDUAUEZUGZN
+      UEZUGZGPZNQUHZPZUAQUHZUIZUUTUUSUMOZEUEZUUSUMOZEUVJUJZUKZDQUIZRZCQUJUVBDGU
+      IZUVLUVNEGUJZUKZDQUIZRZCQUJACDEUAUVHSQUNAUVLUFZDUVHUIZUVAUUSUVMUMOZEUVHUJ
+      ZUKZDQUIZRZCSUJZUWJCQUJULAUWDDUVGNSUHZUIZUVAUWFEUWLUJZUKZDQUIZRZCSUJUWKAU
+      VGFUGZUGZGPCDEUBNUWRAFAFIUOVEZPZFSPZAFBHUWTUHZPZUXAAFGPUXDLGUXCFKUPUQBHFU
+      WTURTZIFUSTZUTZUVEUWRVAUVFUWSGUVEUWRVBVCAUWSFGAFAFUXFVFVDLVGAUVEUWRUOVEZP
+      ZRZIUVFVHOZUVGVIZUXKUFZUXJUXKRZUXLBHUVFVJZVIZUXNUVFIFVKVLZPZBVIZHUXQUIZUX
+      PUXNUXRUXKUVFFVHOZRZUXNUXKUYAUXJUXKVRUXJUYAUXKUXJFUVEUXJFAUXBUXIUXFVMVNUX
+      JUVEUXIUVESPZAUWRUVEUSVOZVNUXIUWRUVEVHOAUWRUVEVPVOVQVMVSUXNUVFSPZISPZUXBU
+      XRUYBVTUXJUYEUXKUXJUVEUYDUTZVMAUYFUXIUXKJWAAUXBUXIUXKUXFWAUVFIFWBWCWDZAUX
+      TUXIUXKAUXSHUXQMWEWAUXSUXPHUVFUXQUXOHBHUVFWFWIHUEUVFVABUXOBHUVFWGWHWJWKUX
+      NUVGUXOUVGUVFUXCPZUXNUXOGUXCUVFKUPUXNUYIUVFUWTPZUXORUXOBHUVFUWTHUWTWLWMUX
+      NUYJUXOUXNUXRUYJUYHUVFIFWNTWOWPWQWHWDUXJUXMRZUVGUVGUFZWRUXLUYKUYLUVGUYKUX
+      KUVGUXJUXMVRUXKUVFUXCGUYIUYJUXKBHUVFUWTURZIUVFVPZTKXAWSXBUVGWTXCUXJUXKVIZ
+      UXKUXMWRUXJUYFUYEUYOAUYFUXIJVMUYGIUVFXDXEUXKXFTXGAIUGZXLXHVLZUXHPZUYLNUYQ
+      UOVEZUIZUYLNUBUEZUOVEZUIZUBUXHUJAUYPUXHPZUYRAVUDUWRUYPVHOZAIFVHOZVUEAUXAV
+      UFUXEIFVPTAIFAIJVNZAFUXFVNXIXJAUWRSPUYPSPZVUDVUEVTUXGAIJUTZUWRUYPXKXEWDUW
+      RUYPXMTAUYLNUYSAUVEUYSPZRZUVGUYPUYPUMOZVUKUVGRZVULUYQUYPVHOZVUMUYQUVEUYPV
+      UMUYPQPUYQQPVUMIAIQPVUJUVGVUGWAZXNZUYPXOTVUMUVEVUJUYCAUVGUYQUVEUSXPVNZVUP
+      VUJUYQUVEVHOAUVGUYQUVEVPXPVUMIUVEVUOVUQAUVGUXKVUJAUVGRUYJUXKUVGUYJAUYJUVF
+      UXCGUYMKXAVOUYNTXQYBXRVUMVUHVUHVULVUNVTAVUHVUJUVGVUIWAZVURUYPUYPYCXEWDVUM
+      UYPVUPXSXTWEVUCUYTUBUYQUXHVUAUYQVAUYLNVUBUYSVUAUYQUOYAYDYEXEYFAUWQUWJCSAU
+      WMUWEUWPUWIAUWDDUWLUVHAUCUWLUVHUCUEZUWLPZVUSUVHPZVTAVUSSPZVUSUGZGPZRZVUSQ
+      PZVVDRZVUTVVAVVEVVGVVBVVFVVDVUSYGYHVVGVVBVVDVVGVVBVVCSPZVVDVVHVVFVVDVVCUW
+      TPZVVHVVIVVCUXCGBHVVCUWTURKXAIVVCUSTVOVVFVVBVVHVTZVVDVVFVUSYLPVVJVUSYIVUS
+      YJTVMWDVVFVVDVRVSYMUVGVVDNVUSSNUCYKUVFVVCGUVEVUSVBVCZYNUVGVVDNVUSQVVKYNYO
+      YPYQZYDAUWOUWHDQAUWNUWGUVAAUWFEUWLUVHVVLYRYSYTUUCUUDXJUWJCSQUUAUUEUVHQUNA
+      UVGNQUUFYPUUBUVRUWCCQUVKUVSUVQUWBUVBDUVJGUDUVJGUDUEZUVJPZVVMQPZVVMGPZUVIU
+      AVVMQURVVPVVMUWTPZVVOVVQVVMUXCGBHVVMUWTURKXAIVVMUUMTVVOVVNVVMUGZUVHPZVVRU
+      GZGPZVVPUVIVVSUAVVMQUAUDYKUVDVVRUVHUVCVVMVBVCUUGVVOVVSVVRQPZVWARVWAUVGVWA
+      NVVRQUVEVVRVAUVFVVTGUVEVVRVBVCYNVVOVWBVWAVVMUUHWOWPVVOVVTVVMGVVOVVMVVMYIV
+      DVCUUIUUJUUKZUULUVPUWADQUVOUVTUVLUVNEUVJGVWCUUNUUOUUPUUQUURUQ $.
+
+    $d S a b x y z $.  $d a ph x y z $.
+    $( The infimum of a subset of an upper set of integers is less than or
+       equal to all members of the subset.  (Contributed by Jim Kingdon,
+       13-Jan-2022.) $)
+    infssuzledc $p |- ( ph -> inf ( S , RR , < ) <_ A ) $=
+      ( vx vy vz vb va cr clt wcel wbr wn cinf cv wa wb lttri3 adantl infssuzex
+      weq infclti cuz cfv crab elrabi eleq2s eluzelre 3syl inflbti mpd nltled )
+      ADPQUAZCAKLMNOPDQOUBZPRNUBZPRUCONUHVAVBQSTVBVAQSTUCUDAVAVBUEUFZABKLMCDEFG
+      HIJUGZUIACDRZCFUJUKZRZCPRIVGCBEVFULDBECVFUMHUNFCUOUPAVECUTQSTIAKLMNOPDCQV
+      CVDUQURUS $.
+
+    ${
+      $d S u w $.  $d ph w x y z $.
+      $( The infimum of a subset of an upper set of integers belongs to the
+         subset.  (Contributed by Jim Kingdon, 20-Jan-2022.) $)
+      infssuzcldc $p |- ( ph -> inf ( S , RR , < ) e. S ) $=
+        ( vw vx vy vz vu cr clt cneg wcel cz cinf cv crab infssuzex wss cuz cfv
+        csup ssrab2 eqsstri uzssz sstri zssre a1i infrenegsupex infsupneg negeq
+        wa eleq1d elrab sseli adantl cc wb simpl recnd znegclb syl mpbird sylbi
+        wceq ssriv suprzclex nfrab1 nfcv nfsup nfneg nfel1 elrabf sylib eqeltrd
+        simprd ) ADPQUAKUBZRZDSZKPUCZPQUHZRZDALMKDABLMKCDEFGHIJUDDPUEADTPDFUFUG
+        ZTDBEWIUCWIHBEWIUIUJFUKULZUMULUNZUOAWGPSZWHDSZAWGWFSWLWMURALMNWFALMNKDA
+        BLMNCDEFGHIJUDWKUPWFTUEAOWFTOUBZWFSWNPSZWNRZDSZURZWNTSZWEWQKWNPWCWNVKWD
+        WPDWCWNUQUSUTWRWSWPTSZWQWTWODTWPWJVAVBWRWNVCSWSWTVDWRWNWOWQVEVFWNVGVHVI
+        VJVLUNVMWEWMKWGPKWFPQWEKPVNKPVOZKQVOVPZXAKWHDKWGXBVQVRWCWGVKWDWHDWCWGUQ
+        USVSVTWBWA $.
+    $}
+  $}
+
+  ${
+    $d A u v y z $.  $d A u x y z $.  $d B u v y z $.  $d ph u v z $.
+    suprzubdc.ss $e |- ( ph -> A C_ ZZ ) $.
+    suprzubdc.dc $e |- ( ph -> A. x e. ZZ DECID x e. A ) $.
+    suprzubdc.ub $e |- ( ph -> E. x e. ZZ A. y e. A y <_ x ) $.
+    suprzubdc.b $e |- ( ph -> B e. A ) $.
+    $( The supremum of a bounded-above decidable set of integers is greater
+       than any member of the set.  (Contributed by Mario Carneiro,
+       21-Apr-2015.)  (Revised by Jim Kingdon, 5-Oct-2024.) $)
+    suprzubdc $p |- ( ph -> B <_ sup ( A , RR , < ) ) $=
+      ( vu vz vv cv cle wbr wral cz wceq wcel wa cr clt csup wrex breq2 ralbidv
+      cbvrexv sylib cuz cfv cin dfin5 wss sseqin2 eqtr3id supeq1d adantr sseldd
+      eleq1 wdc eleq1w dcbid ad2antrr eluzelz adantl rspcdva c1 caddc co simprl
+      crab wn peano2zd breq1 simprr lep1d letrd eluz2 syl3anbrc eluzle ad2antlr
+      zred zltp1le syl2anc mpbird simpr lensymd pm2.65da ralrimiva fveq2 rspcev
+      wb raleqdv zsupcl eqeltrrd syl rexlimddv ) ACMZJMZNOZCDPZEDUAUBUCZNOZJQAW
+      RBMZNOZCDPZBQUDXAJQUDHXFXABJQXDWSRXEWTCDXDWSWRNUEUFUGUHAWSQSZXATZTZXBEUIU
+      JZSXCXIKMZDSZKQVKZUAUBUCZXBXJAXNXBRXHAUAXMDUBAXMQDUKZDKQDULADQUMXODRFDQUN
+      UHUOUPUQXIXLEDSZLKEAEQSZXHADQEFIURUQZXKEDUSAXPXHIUQZXIXKXJSZTXDDSZUTZXLUT
+      BQXKXDXKRYAXLBKDVAVBAYBBQPXHXTGVCXTXKQSZXIEXKVDVEVFXIWSVGVHVIZXJSZXLVLZKY
+      DUIUJZPZYFKLMZUIUJZPZLXJUDXIXQYDQSEYDNOYEXRXIWSAXGXAVJZVMZXIEWSYDXIEXRWBX
+      IWSYLWBZXIYDYMWBXIWTEWSNOCDEWREWSNVNAXGXAVOZXSVFXIWSYNVPVQEYDVRVSXIYFKYGX
+      IXKYGSZTZXLWSXKUBOZYQXLTZYRYDXKNOZYPYTXIXLYDXKVTWAYSXGYCYRYTWLXIXGYPXLYLV
+      CYPYCXIXLYDXKVDWAZWSXKWCWDWEYSXKWSYSXKUUAWBXIWSUASYPXLYNVCYSWTXKWSNOCDXKW
+      RXKWSNVNXIXAYPXLYOVCYQXLWFVFWGWHWIYKYHLYDXJYIYDRYFKYJYGYIYDUIWJWMWKWDWNWO
+      EXBVTWPWQ $.
+  $}
+
+  ${
+    $d A a p x y z $.  $d a p ph x y $.
+    nninfdcex.a $e |- ( ph -> A C_ NN ) $.
+    nninfdcex.dc $e |- ( ph -> A. x e. NN DECID x e. A ) $.
+    nninfdcex.m $e |- ( ph -> E. y y e. A ) $.
+    $( A decidable set of natural numbers has an infimum.  (Contributed by Jim
+       Kingdon, 28-Sep-2024.) $)
+    nninfdcex $p |- ( ph -> E. x e. RR ( A. y e. A -. y < x
+        /\ A. y e. RR ( x < y -> E. z e. A z < y ) ) ) $=
+      ( va vp cv wcel clt wbr wral wrex cr wa c1 cn wn wi wex eleq1w cbvexv cuz
+      sylib cfv crab 1zzd eqid cin wceq nnuz sseqtrdi dfss5 dfin5 eqtrdi eleq2d
+      wss biimpa cfz wdc dcbid ad2antrr elfznn adantl rspcdva infssuzex raleqdv
+      co wb rexeqdv imbi2d ralbidv anbi12d rexbidv adantr mpbird exlimddv ) AIK
+      ZELZCKZBKZMNUAZCEOZWDWCMNZDKWCMNZDEPZUBZCQOZRZBQPZIAWCELZCUCWBIUCHWNWBCIC
+      IEUDUEUGAWBRZWMWECJKZELZJSUFUHZUIZOZWGWHDWSPZUBZCQOZRZBQPZWOWQBCDWAWSJSWO
+      UJWSUKAWBWAWSLAEWSWAAEWREULZWSAEWRUTEXFUMAETWRFUNUOEWRUPUGJWREUQURZUSVAWO
+      WPSWAVBVKLZRWDELZVCZWQVCBTWPWDWPUMXIWQBJEUDVDAXJBTOWBXHGVEXHWPTLWOWPWAVFV
+      GVHVIAWMXEVLWBAWLXDBQAWFWTWKXCAWECEWSXGVJAWJXBCQAWIXAWGAWHDEWSXGVMVNVOVPV
+      QVRVSVT $.
+  $}
+
+  ${
+    $d A a m n w x y $.  $d A b n w $.  $d A n w x y z $.  $d B n x $.
+    $d a n ph w y $.
+    zsupssdc.a $e |- ( ph -> A C_ ZZ ) $.
+    zsupssdc.m $e |- ( ph -> E. x x e. A ) $.
+    zsupssdc.dc $e |- ( ph -> A. x e. ZZ DECID x e. A ) $.
+    zsupssdc.ub $e |- ( ph -> E. x e. ZZ A. y e. A y <_ x ) $.
+    $( An inhabited decidable bounded subset of integers has a supremum in the
+       set.  (The proof does not use ~ ax-pre-suploc .)  (Contributed by Mario
+       Carneiro, 21-Apr-2015.)  (Revised by Jim Kingdon, 5-Oct-2024.) $)
+    zsupssdc $p |- ( ph -> E. x e. A ( A. y e. A -. x < y /\
+        A. y e. B ( y < x -> E. z e. A y < z ) ) ) $=
+      ( vn vw va cv cle wbr wral clt cz wcel vm vb wn wrex wi wa breq1 cbvralvw
+      weq breq2 ralbidv bitrid cbvrexvw sylib cneg crab cr eleq1w cbvexv adantr
+      cinf wex cuz cfv wss uzssz rabss2 ax-mp wceq negeq eleq1d simp1rl znegcld
+      w3a simp2 simp1rr simp3 rspcdva lenegcon1d eluz2 syl3anbrc elrabd rabssdv
+      zred cbvrabv sseqtrdi a1i eqssd infeq1d simprl eqid ad2antrr simpr sseldd
+      simplrr lenegd mpbid zcnd negnegd eqeltrd cfz co wdc eleq1 elfzelz adantl
+      adantlr infssuzcldc sselid exlimddv elrab2 simprbi syl ssrab2 infssuzledc
+      dcbid renegcld eqbrtrd lenegcon2d lensymd ralrimiva notbid cbvralv rspcev
+      ex ralrimivw imbi1d anbi12d syl12anc rexlimddv ) AUANZKNZOPZUAEQZBNZCNZRP
+      ZUCZCEQZYPYORPZYPDNZRPZDEUDZUEZCFQZUFZBEUDZKSAYPYOOPZCEQZBSUDYNKSUDJUUIYN
+      BKSUUIYKYOOPZUAEQBKUIZYNUUHUUJCUAEYPYKYOOUGUHUUKUUJYMUAEYOYLYKOUJUKULUMUN
+      AYLSTZYNUFZUFZLNZUOZETZLSUPZUQRVAZUOZETZUUTYPRPZUCZCEQZYPUUTRPZUUCUEZCFQZ
+      UUGUUNUUSUURTZUVAUUNMNZETZUVHMAUVJMVBZUUMAYOETZBVBUVKHUVLUVJBMBMEURUSUNUT
+      UUNUVJUFZUUQLYLUOZVCVDZUPZUURUUSUVOSVEUVPUURVEZUVNVFUUQLUVOSVGVHZUVMUUSUV
+      PUQRVAZUVPUUNUUSUVSVIUVJUUNUQUURUVPRUUNUURUVPUUNUURUBNZUOZETZUBUVOUPZUVPU
+      UNUUQLSUWCUUNUUOSTZUUQVNZUWBUUQUBUUOUVOUBLUIUWAUUPEUVTUUOVJVKZUWEUVNSTZUW
+      DUVNUUOOPUUOUVOTUWEYLUULYNAUWDUUQVLZVMUUNUWDUUQVOZUWEUUOYLUWEUUOUWIWDUWEY
+      LUWHWDUWEYMUUPYLOPUAEUUPYKUUPYLOUGUULYNAUWDUUQVPUUNUWDUUQVQZVRVSUVNUUOVTW
+      AUWJWBWCUWBUUQUBLUVOUWFWEWFUVQUUNUVRWGWHWIUTZUVMUUQUVIUOZUVPLUVNUUNUWGUVJ
+      UUNYLAUULYNWJZVMUTZUVPWKZUVMUUQUWLUOZETLUWLUVOUUOUWLVIUUPUWPEUUOUWLVJVKUV
+      MUWGUWLSTUVNUWLOPZUWLUVOTUWNUVMUVIUVMESUVIAESVEUUMUVJGWLUUNUVJWMZWNZVMUVM
+      UVIYLOPZUWQUVMYMUWTUAEUVIYKUVIYLOUGAUULYNUVJWOUWRVRUVMUVIYLUVMUVIUWSWDZUV
+      MYLUUNUULUVJUWMUTWDWPWQUVNUWLVTWAUVMUWPUVIEUVMUVIUVMUVIUWSWRWSUWRWTWBZUUN
+      UUOUVNUWLXAXBTZUUQXCZUVJUUNUXCUFZUVLXCZUXDBSUUPYOUUPVIUVLUUQYOUUPEXDXPAUX
+      FBSQUUMUXCIWLUXEUUOUXCUWDUUNUUOUVNUWLXEXFVMVRXGZXHWTXIZXJUVHUUSSTUVAUVNET
+      ZUVAKUUSSUURYLUUSVIUVNUUTEYLUUSVJVKUUQUXILKSLKUIUUPUVNEUUOYLVJVKWEXKXLXMZ
+      UUNUUTUVIRPZUCZMEQUVDUUNUXLMEUVMUVIUUTUXAUVMUUSUVMUUSUVMUURSUUSUUQLSXNUXH
+      XIWDZXQUVMUUSUVIUXMUXAUVMUUSUVSUWLOUWKUVMUUQUWLUVPLUVNUWNUWOUXBUXGXOXRXSX
+      TYAUXLUVCMCEMCUIUXKUVBUVIYPUUTRUJYBYCUNUUNUVFCFUUNUVAUVFUXJUVAUVEUUCUUBUV
+      EDUUTEUUAUUTYPRUJYDYEXMYFUUFUVDUVGUFBUUTEYOUUTVIZYSUVDUUEUVGUXNYRUVCCEUXN
+      YQUVBYOUUTYPRUGYBUKUXNUUDUVFCFUXNYTUVEUUCYOUUTYPRUJYGUKYHYDYIYJ $.
+    $( $j usage 'zsupssdc' avoids 'ax-pre-suploc' 'ax-arch'; $)
+  $}
+
+  ${
+    $d A u v x y z $.  $d ph u v x y $.
+    suprzcl2dc.ss $e |- ( ph -> A C_ ZZ ) $.
+    suprzcl2dc.dc $e |- ( ph -> A. x e. ZZ DECID x e. A ) $.
+    suprzcl2dc.ub $e |- ( ph -> E. x e. ZZ A. y e. A y <_ x ) $.
+    suprzcl2dc.m $e |- ( ph -> E. x x e. A ) $.
+    $( The supremum of a bounded-above decidable set of integers is a member of
+       the set.  (This theorem avoids ~ ax-pre-suploc .)  (Contributed by Mario
+       Carneiro, 21-Apr-2015.)  (Revised by Jim Kingdon, 6-Oct-2024.) $)
+    suprzcl2dc $p |- ( ph -> sup ( A , RR , < ) e. A ) $=
+      ( vz vv vu cv clt wbr wn wral cr wa wcel wceq wrex wi zsupssdc wss adantr
+      csup cz simprl sseldd zred simprrl simprrr lttri3 adantl mp3and rexlimddv
+      wb eqsupti eqeltrd ) ABLZCLZMNOCDPZVAUTMNVAILMNIDUAUBCQPZRZDQMUFZDSBDABCI
+      DQEHFGUCAUTDSZVDRZRZVEUTDVHUTQSVBVCVEUTTVHUTVHDUGUTADUGUDVGEUEAVFVDUHZUIU
+      JAVFVBVCUKAVFVBVCULVHCIJKQDUTMKLZQSJLZQSRVJVKTVJVKMNOVKVJMNORUQVHVJVKUMUN
+      URUOVIUSUP $.
+    $( $j usage 'suprzcl2dc' avoids 'ax-pre-suploc' 'ax-arch'; $)
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -105711,6 +106022,13 @@ $)
     UTURVBMVEURURUROZPZVBURVFQURTZRUAVCUSVBMVDVCUSVBVCUSEZVFVBVIAAFGZURVCVJOUSA
     UBSUSVJURUCVCABAFUDUEUFVFVGVBVFURUGVHRZUNUHSVEUTVFVBVDVCUTVFMBAUIUJVKUKULUM
     UO $.
+
+  $( Rational ` <_ ` is decidable.  (Contributed by Jim Kingdon,
+     28-Oct-2025.) $)
+  qdcle $p |- ( ( A e. QQ /\ B e. QQ ) -> DECID A <_ B ) $=
+    ( cq wa cle wbr wdc clt wn qdclt dcn syl ancoms cr qre adantr adantl lenltd
+    wcel dcbid mpbird ) ACSZBCSZDZABEFZGBAHFZIZGZUCUBUHUCUBDUFGUHBAJUFKLMUDUEUG
+    UDABUBANSUCAOPUCBNSUBBOQRTUA $.
 
   ${
     $d A j m $.  $d A m n $.  $d K j m $.  $d K m n $.  $d m n ph $.
@@ -120280,6 +120598,15 @@ $)
     ZUKCDUKBRZUIULEUKACUIULJUGUHULKLUIUMEUKBCUIUMJUGUHUMMLUIUKUJDZULUMNUIUNABOP
     BAOPNZABQUGAGDBGDUNUOSUHATBTABUAUBUCUKABUDUEUF $.
 
+  $( The maximum of two nonnegative integers is a nonnegative integer.
+     (Contributed by Jim Kingdon, 28-Oct-2025.) $)
+  nn0maxcl $p |- ( ( A e. NN0 /\ B e. NN0 )
+      -> sup ( { A , B } , RR , < ) e. NN0 ) $=
+    ( cn0 wcel wa cpr cr clt csup cz cc0 cle wbr nn0z zmaxcl syl2an 0red adantr
+    nn0re zred nn0ge0 maxle1 letrd elnn0z sylanbrc ) ACDZBCDZEZABFGHIZJDZKUILMU
+    ICDUFAJDBJDUJUGANBNABOPZUHKAUIUHQUFAGDZUGASZRUHUIUKTUFKALMUGAUARUFULBGDAUIL
+    MUGUMBSABUBPUCUIUDUE $.
+
   $( Two ways to express the maximum of two integers.  Because order of
      integers is decidable, we have more flexibility than for real numbers.
      (Contributed by Jim Kingdon, 22-Jan-2023.) $)
@@ -133846,6 +134173,16 @@ $)
       VDGIUGADUMUHUIUJUNBAMHUKUL $.
   $}
 
+  $( 5 does not divide 3.  (Contributed by AV, 8-Sep-2025.) $)
+  5ndvds3 $p |- -. 5 || 3 $=
+    ( c5 c3 cc0 5nn 0nn0 3nn cmul co caddc 5cn mul01i oveq1i addlidi eqtri 3lt5
+    3cn ndvdsi ) ABCBDEFACGHZBIHCBIHBRCBIAJKLBPMNOQ $.
+
+  $( 5 does not divide 6.  (Contributed by AV, 8-Sep-2025.) $)
+  5ndvds6 $p |- -. 5 || 6 $=
+    ( c5 c6 c1 5nn 1nn0 1nn cmul co caddc 5cn mulridi oveq1i 5p1e6 eqtri ndvdsi
+    1lt5 ) ABCCDEFACGHZCIHACIHBQACIAJKLMNPO $.
+
   ${
     $d M x $.
     $( The floor of an odd integer divided by 4.  (Contributed by AV,
@@ -133921,6 +134258,230 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Bit sequences
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c bits $.
+
+  $( Define the binary bits of an integer. $)
+  cbits $a class bits $.
+
+  ${
+    $d k n $.  $d m M $.  $d m n N $.
+    $( Define the binary bits of an integer.  The expression
+       ` M e. ( bits `` N ) ` means that the ` M ` -th bit of ` N ` is 1 (and
+       its negation means the bit is 0).  (Contributed by Mario Carneiro,
+       4-Sep-2016.) $)
+    df-bits $a |- bits = ( n e. ZZ |->
+      { m e. NN0 | -. 2 || ( |_ ` ( n / ( 2 ^ m ) ) ) } ) $.
+
+    $( Expand the definition of the bits of an integer.  (Contributed by Mario
+       Carneiro, 5-Sep-2016.) $)
+    bitsfval $p |- ( N e. ZZ -> ( bits ` N ) =
+      { m e. NN0 | -. 2 || ( |_ ` ( N / ( 2 ^ m ) ) ) } ) $=
+      ( vn c2 cv cexp co cdiv cfl cfv cdvds wbr wn crab cz cbits fvoveq1 breq2d
+      cn0 wceq notbid rabbidv df-bits nn0ex rabex fvmpt ) CBDCEZDAEFGZHGIJZKLZM
+      ZASNDBUHHGIJZKLZMZASNOPUGBTZUKUNASUOUJUMUOUIULDKUGBUHIHQRUAUBACUCUNASUDUE
+      UF $.
+
+    $( Expand the definition of the bits of an integer.  (Contributed by Mario
+       Carneiro, 5-Sep-2016.) $)
+    bitsval $p |- ( M e. ( bits ` N ) <-> ( N e. ZZ /\ M e. NN0 /\
+      -. 2 || ( |_ ` ( N / ( 2 ^ M ) ) ) ) ) $=
+      ( vn vm cbits cfv wcel cz cn0 c2 cexp co cdiv cfl cdvds wbr wn wa cv crab
+      w3a df-bits mptrcl bitsfval eleq2d wceq oveq2 oveq2d fveq2d breq2d notbid
+      elrab bitrdi biadanii 3anass bitr4i ) ABEFZGZBHGZAIGZJBJAKLZMLZNFZOPZQZRZ
+      RUSUTVEUAURUSVFCHJCSJDSZKLZMLNFOPQDITEABDCUBUCUSURAJBVHMLZNFZOPZQZDITZGVF
+      USUQVMADBUDUEVLVEDAIVGAUFZVKVDVNVJVCJOVNVIVBNVNVHVABMVGAJKUGUHUIUJUKULUMU
+      NUSUTVEUOUP $.
+
+    $( Expand the definition of the bits of an integer.  (Contributed by Mario
+       Carneiro, 5-Sep-2016.) $)
+    bitsval2 $p |- ( ( N e. ZZ /\ M e. NN0 ) -> ( M e. ( bits ` N ) <->
+      -. 2 || ( |_ ` ( N / ( 2 ^ M ) ) ) ) ) $=
+      ( cbits cfv wcel cz cn0 wa c2 cexp co cfl cdvds wbr wn w3a bitsval df-3an
+      cdiv bitri baib ) ABCDEZBFEZAGEZHZIBIAJKSKLDMNOZUBUCUDUFPUEUFHABQUCUDUFRT
+      UA $.
+
+    $( The set of bits of an integer is a subset of ` NN0 ` .  (Contributed by
+       Mario Carneiro, 5-Sep-2016.) $)
+    bitsss $p |- ( bits ` N ) C_ NN0 $=
+      ( vm cbits cfv cn0 cv wcel cz c2 cexp co cfl cdvds wbr wn bitsval simp2bi
+      cdiv ssriv ) BACDZEBFZTGAHGUAEGIAIUAJKRKLDMNOUAAPQS $.
+
+    $( The ` bits ` function is a function from integers to subsets of
+       nonnegative integers.  (Contributed by Mario Carneiro, 5-Sep-2016.) $)
+    bitsf $p |- bits : ZZ --> ~P NN0 $=
+      ( vn vk cz cn0 cpw c2 cv cexp co cdiv cfl cfv cdvds wn crab cbits df-bits
+      wbr wcel cvv nn0ex ssrab2 elpwi2 a1i fmpti ) ACDEZFAGZFBGHIJIKLMRNZBDOZPB
+      AQUIUFSUGCSUIDTUAUHBDUBUCUDUE $.
+  $}
+
+  $( Value of the zeroth bit.  (Contributed by Mario Carneiro, 5-Sep-2016.) $)
+  bits0 $p |- ( N e. ZZ -> ( 0 e. ( bits ` N ) <-> -. 2 || N ) ) $=
+    ( cz wcel cc0 cbits cfv c2 cexp co cdiv cfl cdvds wbr wn cn0 bitsval2 mpan2
+    wb 0nn0 c1 cc wceq 2cn exp0 ax-mp oveq2i zcn div1d eqtrid fveq2d flid eqtrd
+    breq2d notbid bitrd ) ABCZDAEFCZGAGDHIZJIZKFZLMZNZGALMZNUPDOCUQVBRSDAPQUPVA
+    VCUPUTAGLUPUTAKFAUPUSAKUPUSATJIAURTAJGUACURTUBUCGUDUEUFUPAAUGUHUIUJAUKULUMU
+    NUO $.
+
+  $( The zeroth bit of an even number is zero.  (Contributed by Mario Carneiro,
+     5-Sep-2016.) $)
+  bits0e $p |- ( N e. ZZ -> -. 0 e. ( bits ` ( 2 x. N ) ) ) $=
+    ( cz wcel cc0 c2 cmul co cbits cfv cdvds wbr wn 2z dvdsmul1 mpan notnotd wb
+    a1i id zmulcld bits0 syl mtbird ) ABCZDEAFGZHICZEUEJKZLZUDUGEBCZUDUGMEANOPU
+    DUEBCUFUHQUDEAUIUDMRUDSTUEUAUBUC $.
+
+  $( The zeroth bit of an odd number is one.  (Contributed by Mario Carneiro,
+     5-Sep-2016.) $)
+  bits0o $p |- ( N e. ZZ -> 0 e. ( bits ` ( ( 2 x. N ) + 1 ) ) ) $=
+    ( cz wcel cc0 c2 cmul co c1 caddc cbits cfv cdvds wbr wn 2z dvdsmul1 cn clt
+    mpan a1i wi id zmulcld 2nn ndvdsp1 syl3anc mpd wb peano2zd bits0 syl mpbird
+    1lt2 ) ABCZDEAFGZHIGZJKCZEUPLMNZUNEUOLMZUREBCZUNUSOEAPSUNUOBCEQCZHERMZUSURU
+    AUNEAUTUNOTUNUBUCZVAUNUDTVBUNUMTEUOUEUFUGUNUPBCUQURUHUNUOVCUIUPUJUKUL $.
+
+  $( The ` M + 1 ` -th bit of ` N ` is the ` M ` -th bit of ` |_ ( N / 2 ) ` .
+     (Contributed by Mario Carneiro, 5-Sep-2016.) $)
+  bitsp1 $p |- ( ( N e. ZZ /\ M e. NN0 ) ->
+    ( ( M + 1 ) e. ( bits ` N ) <-> M e. ( bits ` ( |_ ` ( N / 2 ) ) ) ) ) $=
+    ( cz wcel cn0 c2 co cexp cdiv cfl cfv cdvds wbr wn cbits cmul nnap0d eqtr4d
+    cn nncnd wa c1 caddc 2nn a1i simpr expp1d nnexpcld mulcomd eqtrd simpl zcnd
+    oveq2d divdivap1d fveq2d cq wceq znq syldan flqdiv syl2anc breq2d notbid wb
+    peano2nn0 bitsval2 sylan2 flqcld sylancom 3bitr4d ) BCDZAEDZUAZFBFAUBUCGZHG
+    ZIGZJKZLMZNZFBFIGZJKZFAHGZIGJKZLMZNZVNBOKDZAWAOKDZVMVRWDVMVQWCFLVMVQVTWBIGZ
+    JKZWCVMVPWHJVMVPBFWBPGZIGWHVMVOWJBIVMVOWBFPGWJVMFAVMFFSDZVMUDUEZTZVKVLUFZUG
+    VMWBFVMWBVMFAWLWNUHZTZWMUIUJUMVMBFWBVMBVKVLUKULWMWPVMFWLQVMWBWOQUNRUOVMVTUP
+    DZWBSDWCWIUQVKVLWKWQWLBFURUSZWOVTWBUTVARVBVCVLVKVNEDWFVSVDAVEVNBVFVGVKVLWAC
+    DWGWEVDVMVTWRVHAWAVFVIVJ $.
+
+  $( The ` M + 1 ` -th bit of ` 2 N ` is the ` M ` -th bit of ` N ` .
+     (Contributed by Mario Carneiro, 5-Sep-2016.) $)
+  bitsp1e $p |- ( ( N e. ZZ /\ M e. NN0 ) ->
+    ( ( M + 1 ) e. ( bits ` ( 2 x. N ) ) <-> M e. ( bits ` N ) ) ) $=
+    ( cz wcel cn0 wa c1 caddc co c2 cmul cbits cfv cdiv cfl wb 2z a1i id fveq2d
+    zmulcld bitsp1 sylan wceq zcn 2cnd cc0 cap wbr 2ap0 divcanap3d eqtrd adantr
+    flid eleq2d bitrd ) BCDZAEDZFZAGHIJBKIZLMDZAUTJNIZOMZLMZDZABLMZDUQUTCDURVAV
+    EPUQJBJCDUQQRUQSUAAUTUBUCUSVDVFAUSVCBLUQVCBUDURUQVCBOMBUQVBBOUQBJBUEUQUFJUG
+    UHUIUQUJRUKTBUNULUMTUOUP $.
+
+  $( The ` M + 1 ` -th bit of ` 2 N + 1 ` is the ` M ` -th bit of ` N ` .
+     (Contributed by Mario Carneiro, 5-Sep-2016.) $)
+  bitsp1o $p |- ( ( N e. ZZ /\ M e. NN0 ) ->
+    ( ( M + 1 ) e. ( bits ` ( ( 2 x. N ) + 1 ) ) <-> M e. ( bits ` N ) ) ) $=
+    ( cz wcel wa c1 caddc co c2 cbits cfv cdiv cfl wb a1i wceq cc0 eqtrd fveq2d
+    wbr cn0 cmul 2z id zmulcld peano2zd bitsp1 sylan cr 2re remulcld recnd 1cnd
+    zre 2cnd cap divdirapd zcn divcanap3d oveq1d cle clt halfge0 halflt1 pm3.2i
+    2ap0 cq cn 1z 2nn znq mp2an flqbi2 mpan2 mpbiri adantr eleq2d bitrd ) BCDZA
+    UADZEZAFGHIBUBHZFGHZJKDZAWCILHZMKZJKZDZABJKZDVSWCCDVTWDWHNVSWBVSIBICDVSUCOV
+    SUDUEUFAWCUGUHWAWGWIAWAWFBJVSWFBPVTVSWFBFILHZGHZMKZBVSWEWKMVSWEWBILHZWJGHWK
+    VSWBFIVSWBVSIBIUIDVSUJOBUNUKULVSUMVSUOZIQUPTVSVFOZUQVSWMBWJGVSBIBURWNWOUSUT
+    RSVSWLBPZQWJVATZWJFVBTZEZWQWRVCVDVEVSWJVGDZWPWSNFCDIVHDWTVIVJFIVKVLWJBVMVNV
+    ORVPSVQVR $.
+
+  ${
+    $d M n u $.  $d N m n $.  $d N n u $.  $d S m u $.  $d n ph u $.
+    bitsfzo.1 $e |- ( ph -> N e. NN0 ) $.
+    bitsfzo.2 $e |- ( ph -> M e. NN0 ) $.
+    bitsfzo.3 $e |- ( ph -> ( bits ` N ) C_ ( 0 ..^ M ) ) $.
+    bitsfzo.4 $e |- S = inf ( { n e. NN0 | N < ( 2 ^ n ) } , RR , < ) $.
+    $( Lemma for ~ bitsfzo .  (Contributed by Mario Carneiro, 5-Sep-2016.)
+       (Revised by AV, 1-Oct-2020.) $)
+    bitsfzolem $p |- ( ph -> N e. ( 0 ..^ ( 2 ^ M ) ) ) $=
+      ( cc0 wcel c2 cexp co cz clt wbr cn0 wa c1 vu cuz cfv cfzo nn0uz eleqtrdi
+      vm cn 2nn a1i nnexpcld nnzd cle wn cmin cbits wss adantr cdiv cfl n2dvds1
+      cdvds wceq caddc cmul cv crab ssrab2 cr cinf wrex nnssnn0 nn0red 2re 1lt2
+      expnbnd syl3anc ssrexv mpsyl weq oveq2 breq2d cbvrexv sylib rabeqi sylibr
+      0zd simpr elrab cfz nn0zd ad2antrr 2z elfznn0 adantl zexpcl sylancr zdclt
+      wdc syl2anc infssuzcldc rexlimddv eqeltrid sselid 0red zred nn0ge0d nnred
+      reexpcld cbvrabv elrab2 simprbi syl wb nn0ltexp2 syl31anc mpbird sylanbrc
+      lelttrd elnnz nnm1nn0 nncnd mullidd ltm1d peano2zm zltnle mpbid ad3antrrr
+      eqtri infssuzledc sylan2b eqbrtrid ex biimtrrid mpand mtod nltled eqbrtrd
+      1red syl2an2r crp 2rp 1zzd zsubcld rpexpcld lemuldivd cc expm1t ltdivmuld
+      2cn breqtrd df-2 breqtrdi cq nnexpcl znq mpbir2and mtbiri bitsval2 sseldd
+      flqbi elfzolt2 zlem1lt pm2.65da elfzo2 syl3anbrc ) AEJUBUCZKLDMNZOKZEUVHP
+      QZEJUVHUDNKAERUVGFUEUFAUVHALDLUHKZAUIUJZGUKULZAUVJUVHEUMQZUNZAUVNBDUMQZAU
+      VNSZUVPBTUONZDPQZUVQUVRJDUDNZKUVSUVQEUPUCZUVTUVRAUWAUVTUQUVNHURUVQUVRUWAK
+      ZLELUVRMNZUSNZUTUCZVBQZUNZUVQUWFLTVBQVAUVQUWETLVBUVQUWETVCZTUWDUMQZUWDTTV
+      DNZPQZUVQTUWCVENZEUMQUWIUVQUWLUWCEUMUVQUWCUVQUWCUVQLUVRUVKUVQUIUJUVQBUHKZ
+      UVRRKZUVQBOKZJBPQUWMAUWOUVNABAELCVFZMNZPQZCRVGZRBUWRCRVHABUWSVIPVJZUWSIAE
+      LUAVFZMNZPQZUWTUWSKUARAUWRCRVKZUXCUARVKUHRUQAUWRCUHVKZUXDVLAEVIKZLVIKZTLP
+      QZUXEAEFVMZUXGAVNUJZUXHAVOUJZELCVPVQUWRCUHRVRVSUWRUXCCUARCUAVTUWQUXBEPUWP
+      UXALMWAWBZWCWDAUXARKZUXCSZSZUWRUXAUWSCJUXOWGUWRCRUVGUEWEZUXOUXNUXAUWSKAUX
+      NWHUWRUXCCUXARUXLWIWFUXOUWPJUXAWJNKZSZEOKZUWQOKZUWRWSAUXSUXNUXQAEFWKZWLUX
+      RLOKZUWPRKZUXTWMUXQUYCUXOUWPUXAWNWOLUWPWPWQEUWQWRWTXAXBXCZXDZWKZURZUVQJDB
+      UVQXEUVQDADOKZUVNADGWKZURZXFUVQBUYGXFZUVQDADRKZUVNGURZXGUVQDBPQZUVHLBMNZP
+      QZUVQUVHEUYOUVQLDUXGUVQVNUJZUYMXIAUXFUVNUXIURZUVQUYOAUYOUHKUVNALBUVLUYEUK
+      URXHAUVNWHUVQBUWSKZEUYOPQZAUYSUVNUYDURUYSBRKZUYTELUGVFZMNZPQZUYTUGBRUWSVU
+      BBVCVUCUYOEPVUBBLMWAWBUWRVUDCUGRCUGVTUWQVUCEPUWPVUBLMWAWBXJZXKXLXMZXSAUYN
+      UYPXNZUVNAUXGUYLVUAUXHVUGUXJGUYEUXKLDBXOXPURXQZXSBXTXRZBYAXMZUKZYBYCUVQUW
+      CEUVQUWCVUKXHUYRUVQEUWCPQZBUVRUMQZUVQUVRBPQZVUMUNZUVQBUYKYDAVUNVUOXNZUVNA
+      UVROKZUWOVUPAUWOVUQUYFBYEXMUYFUVRBYFWTURYGUVQUWNVULVUMVUJUWNVULSZUVRUWSKZ
+      UVQVUMVUDVULUGUVRRUWSVUBUVRVCVUCUWCEPVUBUVRLMWAWBVUEXKZUVQVUSVUMUVQVUSSBU
+      WTUVRUMIVUSUVQVURUWTUVRUMQVUTUVQVURSZUXCUVRUWSUAJVVAWGUWSUWRCUVGVGUXCUAUV
+      GVGUXPUWRUXCCUAUVGUXLXJYIVVAVURVUSUVQVURWHVUTWFVVAUXAJUVRWJNKZSZUXSUXBOKZ
+      UXCWSAUXSUVNVURVVBUYAYHVVCUYBUXMVVDWMVVBUXMVVAUXAUVRWNWOLUXAWPWQEUXBWRWTY
+      JYKYLYMYNYOYPYQYRUVQTEUWCUVQYSUYRUVQLUVRLUUAKUVQUUBUJUVQBTUYGUVQUUCZUUDUU
+      EZUUFYGUVQUWDLUWJPUVQUWDLPQEUWCLVENZPQUVQEUYOVVGPVUFUVQLUUGKUWMUYOVVGVCUU
+      JVUILBUUHWQUUKUVQELUWCUYRUYQVVFUUIXQUULUUMUVQUWDUUNKZTOKUWHUWIUWKSXNAUXSU
+      VNUWCUHKZVVHUYAUVQUVKUWNVVIUIVUJLUVRUUOWQEUWCUUPYTVVEUWDTUVAWTUUQWBUURAUX
+      SUVNUWNUWBUWGXNUYAVUJUVREUUSYTXQUUTUVRJDUVBXMAUWOUVNUYHUVPUVSXNUYFUYJBDUV
+      CYTXQUVQUYNUVPUNZVUHAUYHUVNUWOUYNVVJXNUYIUYGDBYFYTYGUVDAUXSUVIUVJUVOXNUYA
+      UVMEUVHYFWTXQEJUVHUVEUVF $.
+  $}
+
+  ${
+    $d M m n x $.  $d N m n x $.
+    $( The bits of a number are all at positions less than ` M ` iff the number
+       is nonnegative and less than ` 2 ^ M ` .  (Contributed by Mario
+       Carneiro, 5-Sep-2016.)  (Proof shortened by AV, 1-Oct-2020.) $)
+    bitsfzo $p |- ( ( N e. ZZ /\ M e. NN0 ) ->
+      ( N e. ( 0 ..^ ( 2 ^ M ) ) <-> ( bits ` N ) C_ ( 0 ..^ M ) ) ) $=
+      ( cz wcel cn0 wa cc0 c2 co cfv cdvds wbr wn clt cr a1i c1 cle syl2anc wb
+      vm vn cexp cfzo cbits wss cv cdiv cfl w3a bitsval cuz simp32 nn0uz simp1r
+      eleqtrdi nn0zd 2re reexpcld simp1l zred cmul recnd mullidd cq 1z zq ax-mp
+      wdc cn 2nn nnexpcld znq qdcle simp33 qltnle caddc breq2i crp 2rp rpexpcld
+      0p1e1 elfzole1 3ad2ant2 divge0d wceq 0z flqbi sylancl z0even id breqtrrid
+      biimtrrdi biimtrrid sylbird mtod notnotrdc sylc lemuldivd mpbird eqbrtrrd
+      1red elfzolt2 lelttrd nn0ltexp2 syl31anc elfzo2 syl3anbrc 3expia biimtrid
+      mpand 1lt2 ssrdv crab cinf cneg cpr csup simpr nnred nn0red maxle2 simplr
+      simpllr n2dvdsm1 simplll nnnn0d nn0maxcl nndivred nnap0d divnegapd maxle1
+      zcnd nncnd 2z uzid bernneq3 sylancr breqtrrd nngt0d ltled letrd ledivmuld
+      mulridd nnrpd eqbrtrd lenegcon1d lt0neg1d ax-1cn neg1cn 1pneg1e0 addcomli
+      divgt0d breqtrrdi neg1z mpbir2and breq2d mtbiri bitsval2 sseldd syl mpbid
+      zltnle pm2.65da intnand wo simpll elznn0nn ecased eqid bitsfzolem impbida
+      sylib ) BCDZAEDZFZBGHAUCIZUDIDZBUEJZGAUDIZUFZUVPUVRFZUAUVSUVTUAUGZUVSDUVN
+      UWCEDZHBHUWCUCIZUHIZUIJZKLZMZUJZUWBUWCUVTDZUWCBUKUVPUVRUWJUWKUVPUVRUWJUJZ
+      UWCGULJZDACDZUWCANLZUWKUWLUWCEUWMUVPUVRUVNUWDUWIUMZUNUPUWLAUVNUVOUVRUWJUO
+      ZUQUWLUWOUWEUVQNLZUWLUWEBUVQUWLHUWCHODZUWLURPZUWPUSZUWLBUVNUVOUVRUWJUTZVA
+      ZUWLHAUWTUWQUSUWLQUWEVBIZUWEBRUWLUWEUWLUWEUXAVCVDUWLUXDBRLQUWFRLZUWLUXEVI
+      ZUXEMZMUXEUWLQVEDZUWFVEDZUXFUXHUWLQCDUXHVFQVGVHPZUWLUVNUWEVJDUXIUXBUWLHUW
+      CHVJDZUWLVKPUWPVLBUWEVMSZQUWFVNSUWLUXGUWHUVPUVRUVNUWDUWIVOUWLUXGUWFQNLZUW
+      HUWLUXIUXHUXMUXGTUXLUXJUWFQVPSUXMUWFGQVQIZNLZUWLUWHUXNQUWFNWBVRUWLGUWFRLZ
+      UXOUWHUWLBUWEUXCUWLHUWCHVSDUWLVTPUWLUWCUWPUQWAZUVRUVPGBRLUWJBGUVQWCWDWEUW
+      LUXPUXOFZUWGGWFZUWHUWLUXIGCDUXSUXRTUXLWGUWFGWHWIUXSHGUWGKWJUXSWKWLWMXKWNW
+      OWPUXEWQWRUWLQBUWEUWLXBUXCUXQWSWTXAUVRUVPBUVQNLUWJBGUVQXCWDXDUWLUWSUWDUVO
+      QHNLZUWOUWRTUWTUWPUWQUXTUWLXLPHUWCAXEXFWTUWCGAXGXHXIXJXMUVPUWAFZBHUBUGUCI
+      NLUBEXNONXOZUBABUYABEDZBODZBXPZVJDZFZUYAUYFUYDUYAUYFAUYEAXQONXRZRLZUYAUYF
+      FZUYEODZAODZUYIUYJUYEUYAUYFXSZXTZUYJAUVNUVOUWAUYFYDZYAZUYEAYBSUYJUYHANLZU
+      YIMZUYJUYHUVTDUYQUYJUVSUVTUYHUVPUWAUYFYCUYJUYHUVSDZHBHUYHUCIZUHIZUIJZKLZM
+      ZUYJVUCHQXPZKLYEUYJVUBVUEHKUYJVUBVUEWFZVUEVUARLZVUAVUEQVQIZNLZUYJVUAQUYJB
+      UYTUYJBUVNUVOUWAUYFYFZVAUYJHUYHUXKUYJVKPUYJUYEEDUVOUYHEDZUYJUYEUYMYGUYOUY
+      EAYHSZVLZYIZUYJXBZUYJVUAXPZUYEUYTUHIZQRUYJBUYTUYJBVUJYMUYJUYTVUMYNZUYJUYT
+      VUMYJYKZUYJVUQQRLUYEUYTQVBIZRLUYJUYEUYTVUTRUYJUYEUYHUYTUYNUYJUYHVULYAZUYJ
+      UYTVUMXTZUYJUYKUYLUYEUYHRLUYNUYPUYEAYLSUYJUYHUYTVVAVVBUYJHHULJDZVUKUYHUYT
+      NLHCDVVCYOHYPVHVULHUYHYQYRUUAUUBUYJUYTVURUUDYSUYJUYEQUYTUYNVUOUYJUYTVUMUU
+      EUUCWTUUFUUGUYJVUAGVUHNUYJVUAGNLGVUPNLUYJGVUQVUPNUYJUYEUYTUYNVVBUYJUYEUYM
+      YTUYJUYTVUMYTUUMVUSYSUYJVUAVUNUUHWTQVUEGUUIUUJUUKUULUUNUYJVUAVEDZVUECDVUF
+      VUGVUIFTUYJUVNUYTVJDVVDVUJVUMBUYTVMSUUOVUAVUEWHWIUUPUUQUURUYJUVNVUKUYSVUD
+      TVUJVULUYHBUUSSWTUUTUYHGAXCUVAUYJUYHCDUWNUYQUYRTUYJUYHVULUQUYJAUYOUQUYHAU
+      VCSUVBUVDUVEUYAUVNUYCUYGUVFUVNUVOUWAUVGBUVHUVMUVIUVNUVOUWAYCUVPUWAXSUYBUV
+      JUVKUVL $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   The greatest common divisor operator
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -133944,317 +134505,6 @@ $)
   gcdmndc $p |- ( ( M e. ZZ /\ N e. ZZ ) -> DECID ( M = 0 /\ N = 0 ) ) $=
     ( cz wcel cc0 wceq wdc wa 0z zdceq mpan2 dcan syl2an ) ACDZAEFZGZBEFZGZOQHG
     BCDZNECDZPIAEJKSTRIBEJKOQLM $.
-
-  ${
-    $d K n x y z $.  $d M n y $.  $d n ph y $.  $d ps x y z $.
-    zsupcllemstep.dc $e |- ( ( ph /\ n e. ( ZZ>= ` M ) ) -> DECID ps ) $.
-    $( Lemma for ~ zsupcl .  Induction step.  (Contributed by Jim Kingdon,
-       7-Dec-2021.) $)
-    zsupcllemstep $p |- ( K e. ( ZZ>= ` M )
-      -> ( ( ( ph /\ A. n e. ( ZZ>= ` K ) -. ps )
-        -> E. x e. ZZ ( A. y e. { n e. ZZ | ps } -. x < y
-          /\ A. y e. RR ( y < x -> E. z e. { n e. ZZ | ps } y < z ) ) )
-        -> ( ( ph /\ A. n e. ( ZZ>= ` ( K + 1 ) ) -. ps )
-          -> E. x e. ZZ ( A. y e. { n e. ZZ | ps } -. x < y
-            /\ A. y e. RR ( y < x -> E. z e. { n e. ZZ | ps } y < z ) ) )
-      ) ) $=
-      ( wcel wn wral wa clt wbr cz wi cr wb wceq cuz cv crab wrex c1 caddc wsbc
-      cfv co eluzelz ad3antrrr nfv nfcv nfra1 nfan nfrexya nfim elrabsf simprbi
-      wsb sylibr ad2antlr cle elrabi zltp1le syl2an biimpa peano2zd eluz adantr
-      sbsbc mpbird simprr nfs1v nfn sbequ12 rspc sylc pm2.65da ralrimi ad2antrr
-      notbid simpllr sylanbrc breq2 rspcev sylancom exp31 breq1 ralbidv anbi12d
-      imbi1d syl12anc csn sbcng biimpar sbcsng mpbid simplrr cfzo uzid peano2uz
-      ex cun fzouzsplit 3syl fzosn uneq1d eqtrd raleqdv ralunb bitrdi mpbir2and
-      syl simprl simplr mpand mpd wdc wo ralrimiva nfsbc1v nfdc sbceq1a exmiddc
-      dcbid mpjaodan ) GHUAUHZJZABKZFGUAUHZLZMZCUBZDUBZNOZKZDBFPUCZLZYOYNNOZYOE
-      UBZNOZEYRUDZQZDRLZMZCPUDZQZAYJFGUEUFUIZUAUHZLZMZUUGYIUUHMZUULMZBFGUGZUUGU
-      UOKZUUNUUOMZGPJZGYONOZKZDYRLZYOGNOZUUCQZDRLZUUGYIUURUUHUULUUOHGUJZUKZUUQU
-      UTDYRUUNUUODUUMUULDYIUUHDYIDULYMUUGDYMDULUUFDCPDPUMYSUUEDYQDYRUNUUDDRUNUO
-      UPUQUOUULDULUOUUODULUOZUUQYOYRJZUUTUUQUVHMZUUSBFDUTZUVHUVJUUQUUSUVHBFYOUG
-      ZUVJUVHYOPJZUVKBFYOPFPUMZURUSBFDVKVAVBUVIUUSMZYOUUJJZUUKUVJKZUVNUVOUUIYOV
-      COZUVIUUSUVQUUQUURUVLUUSUVQSUVHUVFBFYOPVDZGYOVEVFVGUVIUVOUVQSZUUSUUQUUIPJ
-      UVLUVSUVHUUQGUVFVHUVRUUIYOVIVFVJVLUUNUUKUUOUVHUUSUUMAUUKVMUKYJUVPFYOUUJUV
-      JFBFDVNVOFUBZYOTBUVJBFDVPWBVQVRVSXCVTUUQUVCDRUVGUUQYORJZUVBUUCUUQUWAMZUVB
-      GYRJZUUCUWBUVBMUURUUOUWCUUQUURUWAUVBUVFWAUUNUUOUWAUVBWCBFGPUVMURWDUUBUVBE
-      GYRUUAGYONWEWFWGWHVTUUFUVAUVDMCGPYNGTZYSUVAUUEUVDUWDYQUUTDYRUWDYPUUSYNGYO
-      NWIWBWJUWDUUDUVCDRUWDYTUVBUUCYNGYONWEWLWJWKWFWMUUNUUPMZYLUUGUWEYLYJFGWNZL
-      ZUUKUWEYJFGUGZUWGUUNUWHUUPYIUWHUUPSUUHUULBFGYHWOWAWPYIUWHUWGSUUHUULUUPYJF
-      GYHWQUKWRUUMAUUKUUPWSYIYLUWGUUKMZSUUHUULUUPYIYLYJFUWFUUJXDZLUWIYIYJFYKUWJ
-      YIYKGUUIWTUIZUUJXDZUWJYIUURUUIYKJZYKUWLTUVEUURGYKJUWMGXAGGXBXNGUUIXEXFYIU
-      WKUWFUUJYIUURUWKUWFTUVEGXGXNXHXIXJYJFUWFUUJXKXLUKXMUUNYLUUGQUUPUUNAYLUUGU
-      UMAUUKXOZYIUUHUULXPXQVJXRUUNUUOXSZUUOUUPXTUUNBXSZFYHLZUWOUUNAUWQUWNAUWPFY
-      HIYAXNYIUWQUWOQUUHUULUWPUWOFGYHUUOFBFGYBYCUVTGTBUUOBFGYDYFVQWAXRUUOYEXNYG
-      WH $.
-  $}
-
-  ${
-    $d M k n w y $.  $d ch n $.  $d j n ph w y $.  $d j ps w x y z $.
-    $d k n ph w y $.  $d k ps w x y z $.  $d n w x y z $.
-    zsupcllemex.m $e |- ( ph -> M e. ZZ ) $.
-    zsupcllemex.sbm $e |- ( n = M -> ( ps <-> ch ) ) $.
-    zsupcllemex.mtru $e |- ( ph -> ch ) $.
-    zsupcllemex.dc $e |- ( ( ph /\ n e. ( ZZ>= ` M ) ) -> DECID ps ) $.
-    zsupcllemex.bnd $e |- ( ph ->
-      E. j e. ( ZZ>= ` M ) A. n e. ( ZZ>= ` j ) -. ps ) $.
-    $( Lemma for ~ zsupcl .  Existence of the supremum.  (Contributed by Jim
-       Kingdon, 7-Dec-2021.) $)
-    zsupcllemex $p |- ( ph -> E. x e. ZZ (
-          A. y e. { n e. ZZ | ps } -. x < y /\
-          A. y e. RR ( y < x -> E. z e. { n e. ZZ | ps } y < z ) ) ) $=
-      ( cv cuz cfv wral wi wa vw vk wn clt cz crab wrex cr wcel simpl simprr c1
-      wbr caddc co wceq fveq2 raleqdv anbi2d imbi1d adantr uzid notbid 3syl imp
-      rspcv pm2.21dd a1i zsupcllemstep uzind4 ad2antrl mp2and rexlimddv ) ABUCZ
-      HGOZPQZRZDOZEOZUDUMUCEBHUEUFZRVSVRUDUMVSFOUDUMFVTUGSEUHRTDUEUGZGIPQZNAVOW
-      BUIZVQTZTAVQWAAWDUJAWCVQUKWCAVQTZWASZAVQAVNHUAOZPQZRZTZWASAVNHWBRZTZWASZA
-      VNHUBOZPQZRZTZWASAVNHWNULUNUOZPQZRZTZWASWFUAUBIVOWGIUPZWJWLWAXBWIWKAXBVNH
-      WHWBWGIPUQURUSUTWGWNUPZWJWQWAXCWIWPAXCVNHWHWOWGWNPUQURUSUTWGWRUPZWJXAWAXD
-      WIWTAXDVNHWHWSWGWRPUQURUSUTWGVOUPZWJWEWAXEWIVQAXEVNHWHVPWGVOPUQURUSUTWMIU
-      EUIZWLCWAACWKLVAAWKCUCZAXFIWBUIWKXGSJIVBVNXGHIWBHOIUPBCKVCVFVDVEVGVHABDEF
-      HWNIMVIVJVKVLVM $.
-  $}
-
-  ${
-    $d ph j n x y z u v $.  $d ps j x y z u v $.  $d ch j n x y z u v $.
-    $d M j n x y z u v $.
-    zsupcl.m $e |- ( ph -> M e. ZZ ) $.
-    zsupcl.sbm $e |- ( n = M -> ( ps <-> ch ) ) $.
-    zsupcl.mtru $e |- ( ph -> ch ) $.
-    zsupcl.dc $e |- ( ( ph /\ n e. ( ZZ>= ` M ) ) -> DECID ps ) $.
-    zsupcl.bnd $e |- ( ph ->
-      E. j e. ( ZZ>= ` M ) A. n e. ( ZZ>= ` j ) -. ps ) $.
-    $( Closure of supremum for decidable integer properties.  The property
-       which defines the set we are taking the supremum of must (a) be true at
-       ` M ` (which corresponds to the nonempty condition of classical supremum
-       theorems), (b) decidable at each value after ` M ` , and (c) be false
-       after ` j ` (which corresponds to the upper bound condition found in
-       classical supremum theorems).  (Contributed by Jim Kingdon,
-       7-Dec-2021.) $)
-    zsupcl $p |- ( ph -> sup ( { n e. ZZ | ps } , RR , < ) e. ( ZZ>= ` M ) ) $=
-      ( vx vy vz vv cz cr clt wcel wbr vu crab csup cuz cfv cle cv wa weq wn wb
-      zred lttri3 adantl wss wral wrex wi zssre zsupcllemex mpsyl supclti elrab
-      ssrexv sylanbrc supubti mpd nltled a1i supelti eluz syl2anc mpbird ) ABEP
-      UBZQRUCZFUDUESZFVOUFTZAFVOAFGULALMNOUAQVNRUAUGZQSOUGZQSUHUAOUIVRVSRTUJVSV
-      RRTUJUHUKAVRVSUMUNZPQUOZALUGZMUGZRTUJMVNUPWCWBRTWCNUGRTNVNUQURMQUPUHZLPUQ
-      WDLQUQUSABCLMNDEFGHIJKUTZWDLPQVDVAZVBAFVNSZVOFRTUJAFPSZCWGGIBCEFPHVCVEALM
-      NOUAQVNFRVTWFVFVGVHAWHVOPSVPVQUKGALMNOUAQVNPRVTWEWAAUSVIVJFVOVKVLVM $.
-  $}
-
-  ${
-    $d B f g x y z $.  $d f g ph x y z $.
-    zssinfcl.ex $e |- ( ph -> E. x e. RR ( A. y e. B -. y < x /\
-                      A. y e. RR ( x < y -> E. z e. B z < y ) ) ) $.
-    zssinfcl.ss $e |- ( ph -> B C_ ZZ ) $.
-    zssinfcl.zz $e |- ( ph -> inf ( B , RR , < ) e. ZZ ) $.
-    $( The infimum of a set of integers is an element of the set.  (Contributed
-       by Jim Kingdon, 16-Jan-2022.) $)
-    zssinfcl $p |- ( ph -> inf ( B , RR , < ) e. B ) $=
-      ( vg vf cv cr clt c1 wbr wcel wa wn adantr cz cinf caddc co wrex readdcld
-      zred 1red ltp1d wceq lttri3 adantl infglbti mp2and cle wss simprl inflbti
-      sseldd imp adantrr nltled simprr zleltp1 syl2anc mpbird letri3d mpbir2and
-      wb eqeltrd rexlimddv ) ADKZELMUAZNUBUCZMOZVLEPDEAVMLPVLVMMOVNDEUDAVLNAVLH
-      UFZAUGUEAVLVOUHABCDIJLEVMMJKZLPIKZLPQVPVQUIVPVQMORVQVPMORQVHAVPVQUJUKZFUL
-      UMAVKEPZVNQZQZVLVKEWAVLVKUIVLVKUNOVKVLUNOZWAVLVKAVLLPVTVOSZWAVKWAETVKAETU
-      OVTGSAVSVNUPZURZUFZAVSVKVLMORZVNAVSWGABCDIJLEVKMVRFUQUSUTVAWAWBVNAVSVNVBW
-      AVKTPVLTPZWBVNVHWEAWHVTHSVKVLVCVDVEWAVLVKWCWFVFVGWDVIVJ $.
-  $}
-
-  ${
-    $d A j m y $.  $d A m n $.  $d M j m $.  $d M m n $.  $d S a m w $.
-    $d S b m $.  $d S j m x y z $.  $d a m n $.  $d b m n ph $.
-    $d j m ph x y $.  $d w x y z $.
-    infssuzledc.m $e |- ( ph -> M e. ZZ ) $.
-    infssuzledc.s $e |- S = { n e. ( ZZ>= ` M ) | ps } $.
-    infssuzledc.a $e |- ( ph -> A e. S ) $.
-    infssuzledc.dc $e |- ( ( ph /\ n e. ( M ... A ) ) -> DECID ps ) $.
-    $( Existence of the infimum of a subset of an upper set of integers.
-       (Contributed by Jim Kingdon, 13-Jan-2022.) $)
-    infssuzex $p |- ( ph -> E. x e. RR ( A. y e. S -. y < x
-        /\ A. y e. RR ( x < y -> E. z e. S z < y ) ) ) $=
-      ( vm wbr wcel cr wa cz syl vw vj vb va cv wn cneg crab wral wrex wi zssre
-      clt wss cuz eleq2i sylib elrabi eluzelz znegcld wceq negeq eleq1d negnegd
-      cfv zcnd eqeltrd cle wdc wsbc cfz co adantr zred adantl eluzle lenegcon1d
-      simpr jca wb ad2antrr elfz syl3anc mpbird ralrimiva nfsbc1v sbceq1a dcbid
-      nfdc rspc sylc nfcv elrabsf elfzuz biantrurd bitr4id bitrid wo nsyl df-dc
-      eleq2s olcd sylibr zdcle syl2anc exmiddc mpjaodan caddc lenegd mpbid eluz
-      c1 peano2uz renegcld peano2re ad2antlr adantlr letrd ltnrd pm2.65da fveq2
-      lenegcon2d zltp1le raleqdv rspcev zsupcllemex zre anim1i recn znegclb weq
-      cc impbii elrab 3bitr4i a1i eqrdv rexeqdv imbi2d ralbidv ssrexv supinfneg
-      anbi12d rexbidv mpsyl ssrab2 elrab3 renegcl 3bitrd pm5.21nii eqriv raleqi
-      eluzelre rexeqi imbi2i ralbii anbi12i rexbii ) ADUEZCUEZUMOZUFZDUAUEZUGZN
-      UEZUGZGPZNQUHZPZUAQUHZUIZUUTUUSUMOZEUEZUUSUMOZEUVJUJZUKZDQUIZRZCQUJUVBDGU
-      IZUVLUVNEGUJZUKZDQUIZRZCQUJACDEUAUVHSQUNAUVLUFZDUVHUIZUVAUUSUVMUMOZEUVHUJ
-      ZUKZDQUIZRZCSUJZUWJCQUJULAUWDDUVGNSUHZUIZUVAUWFEUWLUJZUKZDQUIZRZCSUJUWKAU
-      VGFUGZUGZGPCDEUBNUWRAFAFIUOVEZPZFSPZAFBHUWTUHZPZUXAAFGPUXDLGUXCFKUPUQBHFU
-      WTURTZIFUSTZUTZUVEUWRVAUVFUWSGUVEUWRVBVCAUWSFGAFAFUXFVFVDLVGAUVEUWRUOVEZP
-      ZRZIUVFVHOZUVGVIZUXKUFZUXJUXKRZUXLBHUVFVJZVIZUXNUVFIFVKVLZPZBVIZHUXQUIZUX
-      PUXNUXRUXKUVFFVHOZRZUXNUXKUYAUXJUXKVRUXJUYAUXKUXJFUVEUXJFAUXBUXIUXFVMVNUX
-      JUVEUXIUVESPZAUWRUVEUSVOZVNUXIUWRUVEVHOAUWRUVEVPVOVQVMVSUXNUVFSPZISPZUXBU
-      XRUYBVTUXJUYEUXKUXJUVEUYDUTZVMAUYFUXIUXKJWAAUXBUXIUXKUXFWAUVFIFWBWCWDZAUX
-      TUXIUXKAUXSHUXQMWEWAUXSUXPHUVFUXQUXOHBHUVFWFWIHUEUVFVABUXOBHUVFWGWHWJWKUX
-      NUVGUXOUVGUVFUXCPZUXNUXOGUXCUVFKUPUXNUYIUVFUWTPZUXORUXOBHUVFUWTHUWTWLWMUX
-      NUYJUXOUXNUXRUYJUYHUVFIFWNTWOWPWQWHWDUXJUXMRZUVGUVGUFZWRUXLUYKUYLUVGUYKUX
-      KUVGUXJUXMVRUXKUVFUXCGUYIUYJUXKBHUVFUWTURZIUVFVPZTKXAWSXBUVGWTXCUXJUXKVIZ
-      UXKUXMWRUXJUYFUYEUYOAUYFUXIJVMUYGIUVFXDXEUXKXFTXGAIUGZXLXHVLZUXHPZUYLNUYQ
-      UOVEZUIZUYLNUBUEZUOVEZUIZUBUXHUJAUYPUXHPZUYRAVUDUWRUYPVHOZAIFVHOZVUEAUXAV
-      UFUXEIFVPTAIFAIJVNZAFUXFVNXIXJAUWRSPUYPSPZVUDVUEVTUXGAIJUTZUWRUYPXKXEWDUW
-      RUYPXMTAUYLNUYSAUVEUYSPZRZUVGUYPUYPUMOZVUKUVGRZVULUYQUYPVHOZVUMUYQUVEUYPV
-      UMUYPQPUYQQPVUMIAIQPVUJUVGVUGWAZXNZUYPXOTVUMUVEVUJUYCAUVGUYQUVEUSXPVNZVUP
-      VUJUYQUVEVHOAUVGUYQUVEVPXPVUMIUVEVUOVUQAUVGUXKVUJAUVGRUYJUXKUVGUYJAUYJUVF
-      UXCGUYMKXAVOUYNTXQYBXRVUMVUHVUHVULVUNVTAVUHVUJUVGVUIWAZVURUYPUYPYCXEWDVUM
-      UYPVUPXSXTWEVUCUYTUBUYQUXHVUAUYQVAUYLNVUBUYSVUAUYQUOYAYDYEXEYFAUWQUWJCSAU
-      WMUWEUWPUWIAUWDDUWLUVHAUCUWLUVHUCUEZUWLPZVUSUVHPZVTAVUSSPZVUSUGZGPZRZVUSQ
-      PZVVDRZVUTVVAVVEVVGVVBVVFVVDVUSYGYHVVGVVBVVDVVGVVBVVCSPZVVDVVHVVFVVDVVCUW
-      TPZVVHVVIVVCUXCGBHVVCUWTURKXAIVVCUSTVOVVFVVBVVHVTZVVDVVFVUSYLPVVJVUSYIVUS
-      YJTVMWDVVFVVDVRVSYMUVGVVDNVUSSNUCYKUVFVVCGUVEVUSVBVCZYNUVGVVDNVUSQVVKYNYO
-      YPYQZYDAUWOUWHDQAUWNUWGUVAAUWFEUWLUVHVVLYRYSYTUUCUUDXJUWJCSQUUAUUEUVHQUNA
-      UVGNQUUFYPUUBUVRUWCCQUVKUVSUVQUWBUVBDUVJGUDUVJGUDUEZUVJPZVVMQPZVVMGPZUVIU
-      AVVMQURVVPVVMUWTPZVVOVVQVVMUXCGBHVVMUWTURKXAIVVMUUMTVVOVVNVVMUGZUVHPZVVRU
-      GZGPZVVPUVIVVSUAVVMQUAUDYKUVDVVRUVHUVCVVMVBVCUUGVVOVVSVVRQPZVWARVWAUVGVWA
-      NVVRQUVEVVRVAUVFVVTGUVEVVRVBVCYNVVOVWBVWAVVMUUHWOWPVVOVVTVVMGVVOVVMVVMYIV
-      DVCUUIUUJUUKZUULUVPUWADQUVOUVTUVLUVNEUVJGVWCUUNUUOUUPUUQUURUQ $.
-
-    $d S a b x y z $.  $d a ph x y z $.
-    $( The infimum of a subset of an upper set of integers is less than or
-       equal to all members of the subset.  (Contributed by Jim Kingdon,
-       13-Jan-2022.) $)
-    infssuzledc $p |- ( ph -> inf ( S , RR , < ) <_ A ) $=
-      ( vx vy vz vb va cr clt wcel wbr wn cinf cv wa wb lttri3 adantl infssuzex
-      weq infclti cuz cfv crab elrabi eleq2s eluzelre 3syl inflbti mpd nltled )
-      ADPQUAZCAKLMNOPDQOUBZPRNUBZPRUCONUHVAVBQSTVBVAQSTUCUDAVAVBUEUFZABKLMCDEFG
-      HIJUGZUIACDRZCFUJUKZRZCPRIVGCBEVFULDBECVFUMHUNFCUOUPAVECUTQSTIAKLMNOPDCQV
-      CVDUQURUS $.
-
-    ${
-      $d S u w $.  $d ph w x y z $.
-      $( The infimum of a subset of an upper set of integers belongs to the
-         subset.  (Contributed by Jim Kingdon, 20-Jan-2022.) $)
-      infssuzcldc $p |- ( ph -> inf ( S , RR , < ) e. S ) $=
-        ( vw vx vy vz vu cr clt cneg wcel cz cinf cv crab infssuzex wss cuz cfv
-        csup ssrab2 eqsstri uzssz sstri zssre a1i infrenegsupex infsupneg negeq
-        wa eleq1d elrab sseli adantl cc wb simpl recnd znegclb syl mpbird sylbi
-        wceq ssriv suprzclex nfrab1 nfcv nfsup nfneg nfel1 elrabf sylib eqeltrd
-        simprd ) ADPQUAKUBZRZDSZKPUCZPQUHZRZDALMKDABLMKCDEFGHIJUDDPUEADTPDFUFUG
-        ZTDBEWIUCWIHBEWIUIUJFUKULZUMULUNZUOAWGPSZWHDSZAWGWFSWLWMURALMNWFALMNKDA
-        BLMNCDEFGHIJUDWKUPWFTUEAOWFTOUBZWFSWNPSZWNRZDSZURZWNTSZWEWQKWNPWCWNVKWD
-        WPDWCWNUQUSUTWRWSWPTSZWQWTWODTWPWJVAVBWRWNVCSWSWTVDWRWNWOWQVEVFWNVGVHVI
-        VJVLUNVMWEWMKWGPKWFPQWEKPVNKPVOZKQVOVPZXAKWHDKWGXBVQVRWCWGVKWDWHDWCWGUQ
-        USVSVTWBWA $.
-    $}
-  $}
-
-  ${
-    $d A u v y z $.  $d A u x y z $.  $d B u v y z $.  $d ph u v z $.
-    suprzubdc.ss $e |- ( ph -> A C_ ZZ ) $.
-    suprzubdc.dc $e |- ( ph -> A. x e. ZZ DECID x e. A ) $.
-    suprzubdc.ub $e |- ( ph -> E. x e. ZZ A. y e. A y <_ x ) $.
-    suprzubdc.b $e |- ( ph -> B e. A ) $.
-    $( The supremum of a bounded-above decidable set of integers is greater
-       than any member of the set.  (Contributed by Mario Carneiro,
-       21-Apr-2015.)  (Revised by Jim Kingdon, 5-Oct-2024.) $)
-    suprzubdc $p |- ( ph -> B <_ sup ( A , RR , < ) ) $=
-      ( vu vz vv cv cle wbr wral cz wceq wcel wa cr clt csup wrex breq2 ralbidv
-      cbvrexv sylib cuz cfv cin dfin5 wss sseqin2 eqtr3id supeq1d adantr sseldd
-      eleq1 wdc eleq1w dcbid ad2antrr eluzelz adantl rspcdva c1 caddc co simprl
-      crab wn peano2zd breq1 simprr lep1d letrd eluz2 syl3anbrc eluzle ad2antlr
-      zred zltp1le syl2anc mpbird simpr lensymd pm2.65da ralrimiva fveq2 rspcev
-      wb raleqdv zsupcl eqeltrrd syl rexlimddv ) ACMZJMZNOZCDPZEDUAUBUCZNOZJQAW
-      RBMZNOZCDPZBQUDXAJQUDHXFXABJQXDWSRXEWTCDXDWSWRNUEUFUGUHAWSQSZXATZTZXBEUIU
-      JZSXCXIKMZDSZKQVKZUAUBUCZXBXJAXNXBRXHAUAXMDUBAXMQDUKZDKQDULADQUMXODRFDQUN
-      UHUOUPUQXIXLEDSZLKEAEQSZXHADQEFIURUQZXKEDUSAXPXHIUQZXIXKXJSZTXDDSZUTZXLUT
-      BQXKXDXKRYAXLBKDVAVBAYBBQPXHXTGVCXTXKQSZXIEXKVDVEVFXIWSVGVHVIZXJSZXLVLZKY
-      DUIUJZPZYFKLMZUIUJZPZLXJUDXIXQYDQSEYDNOYEXRXIWSAXGXAVJZVMZXIEWSYDXIEXRWBX
-      IWSYLWBZXIYDYMWBXIWTEWSNOCDEWREWSNVNAXGXAVOZXSVFXIWSYNVPVQEYDVRVSXIYFKYGX
-      IXKYGSZTZXLWSXKUBOZYQXLTZYRYDXKNOZYPYTXIXLYDXKVTWAYSXGYCYRYTWLXIXGYPXLYLV
-      CYPYCXIXLYDXKVDWAZWSXKWCWDWEYSXKWSYSXKUUAWBXIWSUASYPXLYNVCYSWTXKWSNOCDXKW
-      RXKWSNVNXIXAYPXLYOVCYQXLWFVFWGWHWIYKYHLYDXJYIYDRYFKYJYGYIYDUIWJWMWKWDWNWO
-      EXBVTWPWQ $.
-  $}
-
-  ${
-    $d A a p x y z $.  $d a p ph x y $.
-    nninfdcex.a $e |- ( ph -> A C_ NN ) $.
-    nninfdcex.dc $e |- ( ph -> A. x e. NN DECID x e. A ) $.
-    nninfdcex.m $e |- ( ph -> E. y y e. A ) $.
-    $( A decidable set of natural numbers has an infimum.  (Contributed by Jim
-       Kingdon, 28-Sep-2024.) $)
-    nninfdcex $p |- ( ph -> E. x e. RR ( A. y e. A -. y < x
-        /\ A. y e. RR ( x < y -> E. z e. A z < y ) ) ) $=
-      ( va vp cv wcel clt wbr wral wrex cr wa c1 cn wn wi wex eleq1w cbvexv cuz
-      sylib cfv crab 1zzd eqid cin wceq nnuz sseqtrdi dfss5 dfin5 eqtrdi eleq2d
-      wss biimpa cfz wdc dcbid ad2antrr elfznn adantl rspcdva infssuzex raleqdv
-      co wb rexeqdv imbi2d ralbidv anbi12d rexbidv adantr mpbird exlimddv ) AIK
-      ZELZCKZBKZMNUAZCEOZWDWCMNZDKWCMNZDEPZUBZCQOZRZBQPZIAWCELZCUCWBIUCHWNWBCIC
-      IEUDUEUGAWBRZWMWECJKZELZJSUFUHZUIZOZWGWHDWSPZUBZCQOZRZBQPZWOWQBCDWAWSJSWO
-      UJWSUKAWBWAWSLAEWSWAAEWREULZWSAEWRUTEXFUMAETWRFUNUOEWRUPUGJWREUQURZUSVAWO
-      WPSWAVBVKLZRWDELZVCZWQVCBTWPWDWPUMXIWQBJEUDVDAXJBTOWBXHGVEXHWPTLWOWPWAVFV
-      GVHVIAWMXEVLWBAWLXDBQAWFWTWKXCAWECEWSXGVJAWJXBCQAWIXAWGAWHDEWSXGVMVNVOVPV
-      QVRVSVT $.
-  $}
-
-  ${
-    $d A a m n w x y $.  $d A b n w $.  $d A n w x y z $.  $d B n x $.
-    $d a n ph w y $.
-    zsupssdc.a $e |- ( ph -> A C_ ZZ ) $.
-    zsupssdc.m $e |- ( ph -> E. x x e. A ) $.
-    zsupssdc.dc $e |- ( ph -> A. x e. ZZ DECID x e. A ) $.
-    zsupssdc.ub $e |- ( ph -> E. x e. ZZ A. y e. A y <_ x ) $.
-    $( An inhabited decidable bounded subset of integers has a supremum in the
-       set.  (The proof does not use ~ ax-pre-suploc .)  (Contributed by Mario
-       Carneiro, 21-Apr-2015.)  (Revised by Jim Kingdon, 5-Oct-2024.) $)
-    zsupssdc $p |- ( ph -> E. x e. A ( A. y e. A -. x < y /\
-        A. y e. B ( y < x -> E. z e. A y < z ) ) ) $=
-      ( vn vw va cv cle wbr wral clt cz wcel vm vb wn wrex wi wa breq1 cbvralvw
-      weq breq2 ralbidv bitrid cbvrexvw sylib cneg crab cr eleq1w cbvexv adantr
-      cinf wex cuz cfv wss uzssz rabss2 ax-mp wceq negeq eleq1d simp1rl znegcld
-      w3a simp2 simp1rr simp3 rspcdva lenegcon1d eluz2 syl3anbrc elrabd rabssdv
-      zred cbvrabv sseqtrdi a1i eqssd infeq1d simprl eqid ad2antrr simpr sseldd
-      simplrr lenegd mpbid zcnd negnegd eqeltrd cfz co wdc eleq1 elfzelz adantl
-      adantlr infssuzcldc sselid exlimddv elrab2 simprbi syl ssrab2 infssuzledc
-      dcbid renegcld eqbrtrd lenegcon2d lensymd ralrimiva notbid cbvralv rspcev
-      ex ralrimivw imbi1d anbi12d syl12anc rexlimddv ) AUANZKNZOPZUAEQZBNZCNZRP
-      ZUCZCEQZYPYORPZYPDNZRPZDEUDZUEZCFQZUFZBEUDZKSAYPYOOPZCEQZBSUDYNKSUDJUUIYN
-      BKSUUIYKYOOPZUAEQBKUIZYNUUHUUJCUAEYPYKYOOUGUHUUKUUJYMUAEYOYLYKOUJUKULUMUN
-      AYLSTZYNUFZUFZLNZUOZETZLSUPZUQRVAZUOZETZUUTYPRPZUCZCEQZYPUUTRPZUUCUEZCFQZ
-      UUGUUNUUSUURTZUVAUUNMNZETZUVHMAUVJMVBZUUMAYOETZBVBUVKHUVLUVJBMBMEURUSUNUT
-      UUNUVJUFZUUQLYLUOZVCVDZUPZUURUUSUVOSVEUVPUURVEZUVNVFUUQLUVOSVGVHZUVMUUSUV
-      PUQRVAZUVPUUNUUSUVSVIUVJUUNUQUURUVPRUUNUURUVPUUNUURUBNZUOZETZUBUVOUPZUVPU
-      UNUUQLSUWCUUNUUOSTZUUQVNZUWBUUQUBUUOUVOUBLUIUWAUUPEUVTUUOVJVKZUWEUVNSTZUW
-      DUVNUUOOPUUOUVOTUWEYLUULYNAUWDUUQVLZVMUUNUWDUUQVOZUWEUUOYLUWEUUOUWIWDUWEY
-      LUWHWDUWEYMUUPYLOPUAEUUPYKUUPYLOUGUULYNAUWDUUQVPUUNUWDUUQVQZVRVSUVNUUOVTW
-      AUWJWBWCUWBUUQUBLUVOUWFWEWFUVQUUNUVRWGWHWIUTZUVMUUQUVIUOZUVPLUVNUUNUWGUVJ
-      UUNYLAUULYNWJZVMUTZUVPWKZUVMUUQUWLUOZETLUWLUVOUUOUWLVIUUPUWPEUUOUWLVJVKUV
-      MUWGUWLSTUVNUWLOPZUWLUVOTUWNUVMUVIUVMESUVIAESVEUUMUVJGWLUUNUVJWMZWNZVMUVM
-      UVIYLOPZUWQUVMYMUWTUAEUVIYKUVIYLOUGAUULYNUVJWOUWRVRUVMUVIYLUVMUVIUWSWDZUV
-      MYLUUNUULUVJUWMUTWDWPWQUVNUWLVTWAUVMUWPUVIEUVMUVIUVMUVIUWSWRWSUWRWTWBZUUN
-      UUOUVNUWLXAXBTZUUQXCZUVJUUNUXCUFZUVLXCZUXDBSUUPYOUUPVIUVLUUQYOUUPEXDXPAUX
-      FBSQUUMUXCIWLUXEUUOUXCUWDUUNUUOUVNUWLXEXFVMVRXGZXHWTXIZXJUVHUUSSTUVAUVNET
-      ZUVAKUUSSUURYLUUSVIUVNUUTEYLUUSVJVKUUQUXILKSLKUIUUPUVNEUUOYLVJVKWEXKXLXMZ
-      UUNUUTUVIRPZUCZMEQUVDUUNUXLMEUVMUVIUUTUXAUVMUUSUVMUUSUVMUURSUUSUUQLSXNUXH
-      XIWDZXQUVMUUSUVIUXMUXAUVMUUSUVSUWLOUWKUVMUUQUWLUVPLUVNUWNUWOUXBUXGXOXRXSX
-      TYAUXLUVCMCEMCUIUXKUVBUVIYPUUTRUJYBYCUNUUNUVFCFUUNUVAUVFUXJUVAUVEUUCUUBUV
-      EDUUTEUUAUUTYPRUJYDYEXMYFUUFUVDUVGUFBUUTEYOUUTVIZYSUVDUUEUVGUXNYRUVCCEUXN
-      YQUVBYOUUTYPRUGYBUKUXNUUDUVFCFUXNYTUVEUUCYOUUTYPRUJYGUKYHYDYIYJ $.
-    $( $j usage 'zsupssdc' avoids 'ax-pre-suploc' 'ax-arch'; $)
-  $}
-
-  ${
-    $d A u v x y z $.  $d ph u v x y $.
-    suprzcl2dc.ss $e |- ( ph -> A C_ ZZ ) $.
-    suprzcl2dc.dc $e |- ( ph -> A. x e. ZZ DECID x e. A ) $.
-    suprzcl2dc.ub $e |- ( ph -> E. x e. ZZ A. y e. A y <_ x ) $.
-    suprzcl2dc.m $e |- ( ph -> E. x x e. A ) $.
-    $( The supremum of a bounded-above decidable set of integers is a member of
-       the set.  (This theorem avoids ~ ax-pre-suploc .)  (Contributed by Mario
-       Carneiro, 21-Apr-2015.)  (Revised by Jim Kingdon, 6-Oct-2024.) $)
-    suprzcl2dc $p |- ( ph -> sup ( A , RR , < ) e. A ) $=
-      ( vz vv vu cv clt wbr wn wral cr wa wcel wceq wrex wi zsupssdc wss adantr
-      csup cz simprl sseldd zred simprrl simprrr lttri3 adantl mp3and rexlimddv
-      wb eqsupti eqeltrd ) ABLZCLZMNOCDPZVAUTMNVAILMNIDUAUBCQPZRZDQMUFZDSBDABCI
-      DQEHFGUCAUTDSZVDRZRZVEUTDVHUTQSVBVCVEUTTVHUTVHDUGUTADUGUDVGEUEAVFVDUHZUIU
-      JAVFVBVCUKAVFVBVCULVHCIJKQDUTMKLZQSJLZQSRVJVKTVJVKMNOVKVJMNORUQVHVJVKUMUN
-      URUOVIUSUP $.
-    $( $j usage 'suprzcl2dc' avoids 'ax-pre-suploc' 'ax-arch'; $)
-  $}
 
   ${
     $d A m n $.
@@ -189112,6 +189362,9 @@ htmldef "||" as
     " <IMG SRC='parallel.gif' WIDTH=5 HEIGHT=19 " + "ALT=' ||' TITLE='||'> ";
   althtmldef "||" as ' &#8741; ';
   latexdef "||" as " \parallel ";
+htmldef "bits" as "bits";
+  althtmldef "bits" as "bits";
+  latexdef "bits" as "\text{ bits }";
 htmldef "gcd" as
     " <IMG SRC='_gcd.gif' WIDTH=23 HEIGHT=19 ALT=' gcd' TITLE='gcd'> ";
   althtmldef "gcd" as " gcd ";
