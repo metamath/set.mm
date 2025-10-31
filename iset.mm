@@ -134318,6 +134318,14 @@ $)
       AQUIUFSUGCSUIDTUAUHBDUBUCUDUE $.
   $}
 
+  $( Whether a bit is set is decidable.  (Contributed by Jim Kingdon,
+     31-Oct-2025.) $)
+  bitsdc $p |- ( ( N e. ZZ /\ M e. NN0 ) -> DECID M e. ( bits ` N ) ) $=
+    ( cz wcel cn0 wa cbits cfv wdc c2 cexp co cdiv cfl cdvds wbr wn cn 2nn cq
+    a1i simpr nnexpcld znq syldan flqcld dvdsdc sylancr dcn syl bitsval2 mpbird
+    dcbid ) BCDZAEDZFZABGHDZIJBJAKLZMLZNHZOPZQZIZUPVAIZVCUPJRDZUTCDVDSUPUSUNUOU
+    RRDUSTDUPJAVEUPSUAUNUOUBUCBURUDUEUFJUTUGUHVAUIUJUPUQVBABUKUMUL $.
+
   $( Value of the zeroth bit.  (Contributed by Mario Carneiro, 5-Sep-2016.) $)
   bits0 $p |- ( N e. ZZ -> ( 0 e. ( bits ` N ) <-> -. 2 || N ) ) $=
     ( cz wcel cc0 cbits cfv c2 cexp co cdiv cfl cdvds wbr wn cn0 bitsval2 mpan2
@@ -134536,18 +134544,15 @@ $)
     $( Every number is associated with a finite set of bits.  (Contributed by
        Mario Carneiro, 5-Sep-2016.) $)
     bitsfi $p |- ( N e. NN0 -> ( bits ` N ) e. Fin ) $=
-      ( vm vn cn0 wcel c2 cv cexp co clt wbr cfv cfn cn a1i wa cc0 wdc syl2anc
-      cz cbits cr c1 wrex nn0re 2re 1lt2 expnbnd syl3anc cfzo wss simprl nnnn0d
-      wral 0zd nn0zd fzofig cuz simpl nn0uz eleqtrdi 2nn nnexpcld simprr elfzo2
-      nnzd syl3anbrc wb bitsfzo mpbid cdiv cdvds wn cq elfzonn0 adantl syl2an2r
-      cfl znq flqcld dvdsdc dcn syl bitsval2 mpbird ralrimiva ssfidc rexlimddv
-      dcbid ) ADEZAFBGZHIZJKZAUALZMEZBNWJAUBEFUBEZUCFJKZWMBNUDAUEWPWJUFOWQWJUGO
-      AFBUHUIWJWKNEZWMPZPZQWKUJIZMEZWNXAUKZCGZWNEZRZCXAUNWOWTQTEWKTEXBWTUOWTWKW
-      TWKWJWRWMULUMZUPQWKUQSWTAQWLUJIEZXCWTAQURLZEWLTEWMXHWTADXIWJWSUSZUTVAWTWL
-      WTFWKFNEZWTVBOXGVCVFWJWRWMVDAQWLVEVGWTATEZWKDEXHXCVHWTAXJUPZXGWKAVISVJWTX
-      FCXAWTXDXAEZPZXFFAFXDHIZVKIZVRLZVLKZVMZRZXOXSRZYAXOXKXRTEYBXKXOVBOZXOXQWT
-      XLXNXPNEXQVNEXMXOFXDYCXNXDDEZWTXDWKVOVPZVCAXPVSVQVTFXRWASXSWBWCXOXEXTWTXL
-      XNYDXEXTVHXMYEXDAWDVQWIWEWFCXAWNWGUIWH $.
+      ( vm vn cn0 wcel c2 cv co clt wbr cfv cfn cn cr a1i syl3anc wa cc0 cfzo
+      cz cexp cbits c1 wrex nn0re 2re 1lt2 expnbnd wss wral simprl nnnn0d nn0zd
+      wdc 0zd fzofig syl2anc cuz simpl eleqtrdi 2nn nnexpcld nnzd simprr elfzo2
+      nn0uz syl3anbrc wb bitsfzo mpbid bitsdc syl2an ralrimiva ssfidc rexlimddv
+      elfzonn0 ) ADEZAFBGZUAHZIJZAUBKZLEZBMVQANEFNEZUCFIJZVTBMUDAUEWCVQUFOWDVQU
+      GOAFBUHPVQVRMEZVTQZQZRVRSHZLEZWAWHUIZCGZWAEUNZCWHUJWBWGRTEVRTEWIWGUOWGVRW
+      GVRVQWEVTUKULZUMRVRUPUQWGARVSSHEZWJWGARURKZEVSTEVTWNWGADWOVQWFUSZVFUTWGVS
+      WGFVRFMEWGVAOWMVBVCVQWEVTVDARVSVEVGWGATEZVRDEWNWJVHWGAWPUMZWMVRAVIUQVJWGW
+      LCWHWGWQWKDEWLWKWHEWRWKVRVPWKAVKVLVMCWHWAVNPVO $.
 
     $( The bit complement of ` N ` is ` -u N - 1 ` .  (Thus, by ~ bitsfi , all
        negative numbers have cofinite ` bits ` representations.)  (Contributed
