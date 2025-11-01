@@ -72445,6 +72445,16 @@ $)
     EAFGNHAIJMKL $.
 
   ${
+    $d A x $.
+    $( The cardinal number of a finite set is an ordinal.  (Contributed by Jim
+       Kingdon, 1-Nov-2025.) $)
+    ficardon $p |- ( A e. Fin -> ( card ` A ) e. On ) $=
+      ( vx cfn wcel cv cen wbr con0 wrex ccrd cfv com isfi wss wi omsson ssrexv
+      ax-mp sylbi ensymb rexbii sylib cardcl syl ) ACDZBEZAFGZBHIZAJKHDUEAUFFGZ
+      BHIZUHUEUIBLIZUJBAMLHNUKUJOPUIBLHQRSUIUGBHAUFTUAUBBAUCUD $.
+  $}
+
+  ${
     $d A x y $.  $d B x y $.
     $( If two numerable sets are equinumerous, then they have equal
        cardinalities.  (Contributed by Jim Kingdon, 30-Aug-2021.) $)
