@@ -28263,6 +28263,15 @@ $)
   $}
 
   ${
+    $( Alternate definition of the subclass relationship between two classes.
+       Exercise 9 of [TakeutiZaring] p. 18.  This is another name for ~ df-ss
+       which is more consistent with the naming in the Metamath Proof Explorer.
+       (Contributed by NM, 27-Apr-1994.) $)
+    dfss2 $p |- ( A C_ B <-> ( A i^i B ) = A ) $=
+      ( df-ss ) ABC $.
+  $}
+
+  ${
     $d z A $.  $d z B $.  $d x z $.
     dfss2f.1 $e |- F/_ x A $.
     dfss2f.2 $e |- F/_ x B $.
