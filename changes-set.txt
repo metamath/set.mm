@@ -92,6 +92,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 2-Nov-25 oneltri   [same]      Moved from RP's mathbox to main set.mm
 31-Oct-25 grpstrndx grpstr      new name became available
 31-Oct-25 2strbas1  2strbas     new name became available
 31-Oct-25 2strop1   2strop      new name became available
