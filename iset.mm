@@ -169776,6 +169776,17 @@ $)
     $}
   $}
 
+  ${
+    $d f B $.  $d f i r s I $.  $d f i r s R $.  $d i r s S $.  $d i r s U $.
+    $d f X $.  $d f .0. $.  $d a b f i k r w $.
+    $( The multivariate polynomial constructor is a proper binary operator.
+       (Contributed by Mario Carneiro, 21-Mar-2015.) $)
+    reldmmpl $p |- Rel dom mPoly $=
+      ( vi vr vw vk va vb vf cvv cv cmps co cfv clt wbr wral c0g wceq cn0 cmap
+      wi wrex cbs crab cress csb cmpl df-mplcoe reldmmpo ) ABHHCAIZBIZJKCIZDIZE
+      ILULFIZLMNDUIOUMGILUJPLQTFRUISKZOEUNUAGUKUBLUCUDKUEUFCGADBEFUGUH $.
+  $}
+
 
 $(
 ###############################################################################
