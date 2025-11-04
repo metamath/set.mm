@@ -169777,14 +169777,44 @@ $)
   $}
 
   ${
-    $d f B $.  $d f i r s I $.  $d f i r s R $.  $d i r s S $.  $d i r s U $.
-    $d f X $.  $d f .0. $.  $d a b f i k r w $.
+    $d f B $.  $d f i r s a b k I $.  $d f i r s a b k R $.  $d i r s S $.
+    $d i r s U $.  $d f X $.  $d f .0. $.  $d a b f i k s r w $.
     $( The multivariate polynomial constructor is a proper binary operator.
        (Contributed by Mario Carneiro, 21-Mar-2015.) $)
     reldmmpl $p |- Rel dom mPoly $=
       ( vi vr vw vk va vb vf cvv cv cmps co cfv clt wbr wral c0g wceq cn0 cmap
       wi wrex cbs crab cress csb cmpl df-mplcoe reldmmpo ) ABHHCAIZBIZJKCIZDIZE
       ILULFIZLMNDUIOUMGILUJPLQTFRUISKZOEUNUAGUKUBLUCUDKUEUFCGADBEFUGUH $.
+
+    mplval.p $e |- P = ( I mPoly R ) $.
+    mplval.s $e |- S = ( I mPwSer R ) $.
+    mplval.b $e |- B = ( Base ` S ) $.
+    mplval.z $e |- .0. = ( 0g ` R ) $.
+    ${
+      mplvalcoe.u $e |- U = { f e. B | E. a e. ( NN0 ^m I )
+        A. b e. ( NN0 ^m I ) ( A. k e. I ( a ` k ) < ( b ` k )
+          -> ( f ` b ) = .0. ) } $.
+      $( Value of the set of multivariate polynomials.  (Contributed by Mario
+         Carneiro, 7-Jan-2015.)  (Revised by AV, 25-Jun-2019.)  (Revised by Jim
+         Kingdon, 4-Nov-2025.) $)
+      mplvalcoe $p |- ( ( I e. V /\ R e. W ) -> P = ( S |`s U ) ) $=
+        ( wcel cvv vi vr vs wa cmpl co cress wceq elex adantr adantl cmps fnpsr
+        cxp wfn a1i fnovex syl3anc eqeltrid cv cfv clt wbr wral wi cn0 cmap cbs
+        wrex basfn funfvex funfni sylancr rabexd syl2anc c0g crab csb vex mp3an
+        ressex id oveq12 sylan9eqr eqtr4di fveq2d simpll oveq2d raleqdv imbi12d
+        simplr eqeq2d raleqbidv rexeqbidv rabeqbidv oveq12d df-mplcoe ovmpoga
+        csbied eqtrid ) HISZCJSZUDZBHCUEUFZDEUGUFZNXCHTSZCTSZXETSZXDXEUHXAXFXBH
+        IUIUJZXBXGXACJUIUKZXCDTSZETSXHXCDHCULUFZTOXCULTTUNUOZXFXGXLTSXMXCUMUPXI
+        XJHCTTULUQURUSZXCGUTZLUTVAXOMUTZVAVBVCZGHVDZXPFUTVAZKUHZVEZMVFHVGUFZVDZ
+        LYBVIZFAETRXCADVHVAZTPXCVHTUOXKYETSZVJXNYFTDVHDVHVKVLVMUSVNEDTTWAVOUAUB
+        HCTTUCUAUTZUBUTZULUFZUCUTZXQGYGVDZXSYHVPVAZUHZVEZMVFYGVGUFZVDZLYOVIZFYJ
+        VHVAZVQZUGUFZVRXEUETYGHUHZYHCUHZUDZUCYIYTXETYITSZUUCXMYGTSYHTSUUDUMUAVS
+        UBVSYGYHTTULUQVTUPUUCYJYIUHZUDZYJDYSEUGUUFYJXLDUUEUUCYJYIXLUUEWBYGHYHCU
+        LWCWDOWEZUUFYSYDFAVQEUUFYQYDFYRAUUFYRYEAUUFYJDVHUUGWFPWEUUFYPYCLYOYBUUF
+        YGHVFVGUUAUUBUUEWGZWHZUUFYNYAMYOYBUUIUUFYKXRYMXTUUFXQGYGHUUHWIUUFYLKXSU
+        UFYLCVPVAKUUFYHCVPUUAUUBUUEWKWFQWEWLWJWMWNWORWEWPWSUCFUAGUBLMWQWRURWT
+        $.
+    $}
   $}
 
 
