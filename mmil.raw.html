@@ -1832,6 +1832,14 @@ is double negation elimination.</TD>
   <TD>~ rmo2i</TD>
 </TR>
 
+<tr>
+  <td>df-ss</td>
+  <td>~ ssalel</td>
+  <td>There is no fundamental difference in subset theorems, but
+  some of the naming, what is a definition versus a theorem derived
+  from it, and possibly axiom use, has not been fully aligned</td>
+</tr>
+
 <TR>
   <TD>df-pss and all proper subclass theorems</TD>
   <TD><I>none</I></TD>
@@ -5304,7 +5312,7 @@ this implies excluded middle</TD>
 
 <TR>
   <TD>ficardom</TD>
-  <TD><I>none</I></TD>
+  <TD>~ ficardon</TD>
   <TD>Presumably not possible for the same reasons as
   onfin2</TD>
 </TR>
@@ -5623,6 +5631,16 @@ this implies excluded middle</TD>
 <tr>
   <td>pwdjudom</td>
   <td><i>none</i></td>
+</tr>
+
+<tr>
+  <td>ackbij1</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof would not appear to be easily adapated,
+  largely due to the ` card ` notation for cardinals not behaving
+  the same way without excluded middle.  See further notes at
+  <a href="#missing-ackbijnn" >the ackbijnn entry</a>; that statement
+  of the Ackermann bijection may be easier to deal with.</td>
 </tr>
 
 <tr>
@@ -9715,9 +9733,12 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <TR>
-  <TD>ackbijnn</TD>
+  <TD id="missing-ackbijnn">ackbijnn</TD>
   <TD><I>none</I></TD>
-  <TD>iset.mm does not have ackbij1</TD>
+  <TD>Presumably provable.  ~ bitsinv1 proves one portion of
+  this (together with theorems like ~ bitsf and ~ bitsfi ). The other
+  major portion is ackbij1lem16 in set.mm and perhaps that proof
+  by induction could be adapted.</TD>
 </TR>
 
 <TR>
@@ -10153,6 +10174,50 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>Since the end result ~ divalg is the same, we don't list
   all the differences in lemmas here.</TD>
 </TR>
+
+<tr>
+  <td>bitsinv2</td>
+  <td><i>none</i></td>
+  <td>See notes at the <a href="#missing-ackbijnn" >ackbijnn entry</a>.
+  It may be possible to prove bitsinv2 in terms of ackbijnn , or ackbijnn
+  in terms of bitsinv2 .</td>
+</tr>
+
+<tr>
+  <td>bitsf1ocnv</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses bitsinv2</td>
+</tr>
+
+<tr>
+  <td>bitsf1o</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses bitsf1ocnv</td>
+</tr>
+
+<tr>
+  <td>bitsf1</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses bitsf1o</td>
+</tr>
+
+<tr>
+  <td>2ebits</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses bitsinv2</td>
+</tr>
+
+<tr>
+  <td>bitsinv</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses bitsf1ocnv</td>
+</tr>
+
+<tr>
+  <td>bitsinvp1</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses bitsinv</td>
+</tr>
 
 <TR>
   <TD>gcdcllem1 , gcdcllem2 , gcdcllem3</TD>
@@ -15454,7 +15519,7 @@ of Transcendental Numbers</td>
 
   <tr>
     <td>45.  The Partition Theorem</td>
-    <td>The set.mm proof uses df-bits and df-ind .</td>
+    <td>The set.mm proof uses df-ind and supp .</td>
   </tr>
 
   <tr>
