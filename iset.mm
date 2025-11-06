@@ -169844,6 +169844,19 @@ $)
       EVQVGVMKVDVFJUPUQURUSUTVA $.
   $}
 
+  ${
+    $d a b f i k r w $.
+    $( ` mPoly ` has universal domain.  (Contributed by Jim Kingdon,
+       5-Nov-2025.) $)
+    fnmpl $p |- mPoly Fn ( _V X. _V ) $=
+      ( vi vr vw vk va vb vf cvv cv cmps co cfv clt wbr wral cbs wfn wcel mp2an
+      vex c0g wceq cn0 cmap wrex crab cress csb cmpl df-mplcoe cxp fnpsr fnovex
+      wi mp3an basfn funfvex funfni rabex ressex csbexa fnmpoi ) ABHHCAIZBIZJKZ
+      CIZDIZEILVGFIZLMNDVCOVHGILVDUALUBUNFUCVCUDKZOEVIUEZGVFPLZUFZUGKZUHUICGADB
+      EFUJCVEVMJHHUKQVCHRVDHRVEHRULATBTVCVDHHJUMUOVFHRZVLHRVMHRCTZVJGVKPHQVNVKH
+      RZUPVOVPHVFPVFPUQURSUSVLVFHHUTSVAVB $.
+  $}
+
 
 $(
 ###############################################################################
