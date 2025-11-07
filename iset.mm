@@ -148640,6 +148640,35 @@ $)
   $}
 
   ${
+    imasvalstr.u $e |- U = ( ( { <. ( Base ` ndx ) , B >. ,
+        <. ( +g ` ndx ) , .+ >. , <. ( .r ` ndx ) , .X. >. } u.
+        { <. ( Scalar ` ndx ) , S >. , <. ( .s ` ndx ) , .x. >. ,
+          <. ( .i ` ndx ) , ., >. } ) u.
+        { <. ( TopSet ` ndx ) , O >. , <. ( le ` ndx ) , L >. ,
+        <. ( dist ` ndx ) , D >. } ) $.
+    imasvalstrd.b $e |- ( ph -> B e. V ) $.
+    imasvalstrd.p $e |- ( ph -> .+ e. W ) $.
+    imasvalstrd.m $e |- ( ph -> .X. e. X ) $.
+    imasvalstrd.s $e |- ( ph -> S e. Y ) $.
+    imasvalstrd.c $e |- ( ph -> .x. e. Z ) $.
+    imasvalstrd.i $e |- ( ph -> ., e. P ) $.
+    imasvalstrd.t $e |- ( ph -> O e. Q ) $.
+    imasvalstrd.l $e |- ( ph -> L e. R ) $.
+    imasvalstrd.d $e |- ( ph -> D e. A ) $.
+    $( An image structure value is a structure.  (Contributed by Stefan O'Rear,
+       3-Jan-2015.)  (Revised by Mario Carneiro, 30-Apr-2015.)  (Revised by
+       Thierry Arnoux, 16-Jun-2019.) $)
+    imasvalstrd $p |- ( ph -> U Struct <. 1 , ; 1 2 >. ) $=
+      ( cnx cbs cfv cop cplusg cmulr ctp csca cvsca cip cun cts cple cds c1 cdc
+      c2 cstr c8 c9 eqid ipsstrd wcel wbr cc0 9nn tsetndx 10nn plendx 1nn0 0nn0
+      9lt10 2nn 2pos declt decnncl dsndx strle3g syl3anc 8lt9 strleund eqbrtrid
+      clt a1i ) ALUKULUMCUNUKUOUMFUNUKUPUMKUNUQUKURUMIUNUKUSUMJUNUKUTUMMUNUQVAZ
+      UKVBUMZOUNUKVCUMZNUNUKVDUMZDUNUQZVAVEVEVGVFZUNVHUAAVEVIVJWTWOWSAWOCFTIJKM
+      PQRSEWOVKUBUCUDUEUFUGVLAOGVMNHVMDBVMWSVJWTUNVHVNUHUIUJWPWQWRBVJVEVOVFWTGH
+      ONDVPVQWBVRVSVEVOVGVTWAWCWDWEVEVGVTWCWFWGWHWIVIVJWMVNAWJWNWKWL $.
+  $}
+
+  ${
     $d r i $.
     $( Define a structure power, which is just a structure product where all
        the factors are the same.  (Contributed by Mario Carneiro,
