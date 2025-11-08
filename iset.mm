@@ -148701,6 +148701,39 @@ $)
   $}
 
   ${
+    prdsvalstrd.b $e |- ( ph -> B e. V ) $.
+    prdsvalstrd.p $e |- ( ph -> .+ e. W ) $.
+    prdsvalstrd.m $e |- ( ph -> .X. e. X ) $.
+    prdsvalstrd.s $e |- ( ph -> S e. Y ) $.
+    prdsvalstrd.c $e |- ( ph -> .x. e. Z ) $.
+    prdsvalstrd.i $e |- ( ph -> ., e. P ) $.
+    prdsvalstrd.t $e |- ( ph -> O e. Q ) $.
+    prdsvalstrd.l $e |- ( ph -> L e. R ) $.
+    prdsvalstrd.d $e |- ( ph -> D e. A ) $.
+    prdsvalstrd.h $e |- ( ph -> H e. T ) $.
+    prdsvalstrd.x $e |- ( ph -> .xb e. U ) $.
+    $( Structure product value is a structure.  (Contributed by Stefan O'Rear,
+       3-Jan-2015.)  (Revised by Mario Carneiro, 30-Apr-2015.)  (Revised by
+       Thierry Arnoux, 16-Jun-2019.) $)
+    prdsvalstrd $p |- ( ph -> ( ( { <. ( Base ` ndx ) , B >. ,
+        <. ( +g ` ndx ) , .+ >. , <. ( .r ` ndx ) , .X. >. } u.
+        { <. ( Scalar ` ndx ) , S >. , <. ( .s ` ndx ) , .x. >. ,
+          <. ( .i ` ndx ) , ., >. } ) u.
+      ( { <. ( TopSet ` ndx ) , O >. , <. ( le ` ndx ) , L >. ,
+          <. ( dist ` ndx ) , D >. } u.
+        { <. ( Hom ` ndx ) , H >. , <. ( comp ` ndx ) , .xb >. } ) )
+        Struct <. 1 , ; 1 5 >. ) $=
+      ( cnx cbs cfv cop cplusg cmulr ctp csca cip cun cts cple cds chom cco cpr
+      cvsca c1 c5 cdc cstr unass c2 c4 eqid imasvalstrd wcel wbr decnncl homndx
+      1nn0 4nn 4nn0 5nn 4lt5 declt ccondx strle2g syl2anc clt 2nn0 a1i strleund
+      2lt4 eqbrtrrid ) AUOUPUQCURUOUSUQFURUOUTUQMURVAUOVBUQIURUOVKUQLURUOVCUQPU
+      RVAVDZUOVEUQRURUOVFUQQURUOVGUQDURVAZUOVHUQZOURUOVIUQZJURVJZVDVDWTXAVDZXDV
+      DVLVLVMVNZURVOWTXAXDVPAVLVLVQVNZVLVRVNZXFXEXDABCDEFGHILMXEPQRSTUAUBUCXEVS
+      UDUEUFUGUHUIUJUKULVTAOKWAJNWAXDXHXFURVOWBUMUNXBXCXHXFKNOJVLVRWEWFWCWDVLVR
+      VMWEWGWHWIWJVLVMWEWHWCWKWLWMXGXHWNWBAVLVQVRWEWOWFWRWJWPWQWS $.
+  $}
+
+  ${
     $d r i $.
     $( Define a structure power, which is just a structure product where all
        the factors are the same.  (Contributed by Mario Carneiro,
