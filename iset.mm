@@ -148253,6 +148253,11 @@ $)
     UMJKVMFVKWAUNLMNVPOWACOWAUOEFOPHUPVDJKVOOVKWAUQLMNURVRVTVREQGZWACWBWAUSEQFR
     UTSVATKVQWBVKWAVBLMNVTEDGZWACWCWAWCEDRVCVEVFEDFRISVGTKVSWCVKWAVHLMNVIVI $.
 
+  $( Index value of the ~ df-hom slot.  (Contributed by Mario Carneiro,
+     7-Jan-2017.)  (New usage is discouraged.) $)
+  homndx $p |- ( Hom ` ndx ) = ; 1 4 $=
+    ( chom c1 c4 cdc df-hom 1nn0 4nn decnncl ndxarg ) ABCDEBCFGHI $.
+
   $( Utility theorem: index-independent form of ~ df-hom .  (Contributed by
      Mario Carneiro, 7-Jan-2017.) $)
   homid $p |- Hom = Slot ( Hom ` ndx ) $=
