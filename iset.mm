@@ -148109,6 +148109,28 @@ $)
     plendx mpbir c9 9re 9lt10 tsetndx pm3.2i ) ABCZADCZEZAFCZUDEZUEGHIJZEGUHKLM
     UCGUDUHNPOQUGRUHERUHSTMUFRUDUHUAPOQUB $.
 
+  $( Index value of the ~ df-ocomp slot.  (Contributed by Mario Carneiro,
+     25-Oct-2015.)  (New usage is discouraged.) $)
+  ocndx $p |- ( oc ` ndx ) = ; 1 1 $=
+    ( coc c1 cdc df-ocomp 1nn0 1nn decnncl ndxarg ) ABBCDBBEFGH $.
+
+  $( Utility theorem: index-independent form of ~ df-ocomp .  (Contributed by
+     Mario Carneiro, 25-Oct-2015.) $)
+  ocid $p |- oc = Slot ( oc ` ndx ) $=
+    ( coc c1 cdc df-ocomp 1nn0 1nn decnncl ndxid ) ABBCDBBEFGH $.
+
+  $( The slot for the orthocomplementation is not the slot for the base set in
+     an extensible structure.  (Contributed by AV, 11-Nov-2024.) $)
+  basendxnocndx $p |- ( Base ` ndx ) =/= ( oc ` ndx ) $=
+    ( cnx cbs cfv coc wne c1 cdc 1re 1nn 1nn0 1lt10 declti ltneii basendx ocndx
+    neeq12i mpbir ) ABCZADCZEFFFGZEFTHFFFIJJKLMRFSTNOPQ $.
+
+  $( The slot for the orthocomplementation is not the slot for the order in an
+     extensible structure.  (Contributed by AV, 11-Nov-2024.) $)
+  plendxnocndx $p |- ( le ` ndx ) =/= ( oc ` ndx ) $=
+    ( cnx cple cfv coc wne cc0 cdc 10re 1nn0 0nn0 1nn declt ltneii plendx ocndx
+    c1 0lt1 neeq12i mpbir ) ABCZADCZEPFGZPPGZEUBUCHPFPIJKQLMTUBUAUCNORS $.
+
   $( Index value of the ~ df-ds slot.  (Contributed by Mario Carneiro,
      14-Aug-2015.) $)
   dsndx $p |- ( dist ` ndx ) = ; 1 2 $=

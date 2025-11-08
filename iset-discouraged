@@ -123,6 +123,7 @@
 "basendx" is used by "basendxltplusgndx".
 "basendx" is used by "basendxlttsetndx".
 "basendx" is used by "basendxltunifndx".
+"basendx" is used by "basendxnocndx".
 "basendx" is used by "ipndxnbasendx".
 "basendx" is used by "lmodstrd".
 "basendx" is used by "rngstrg".
@@ -275,6 +276,8 @@
 "nfralxy" is used by "strcollnfALT".
 "nfralxy" is used by "xpf1o".
 "nnindnn" is used by "nntopi".
+"ocndx" is used by "basendxnocndx".
+"ocndx" is used by "plendxnocndx".
 "opelopabsbALT" is used by "cnvopab".
 "opelopabsbALT" is used by "inopab".
 "peano1nnnn" is used by "nnindnn".
@@ -417,7 +420,7 @@ New usage of "axpre-suploc" is discouraged (0 uses).
 New usage of "axprecex" is discouraged (2 uses).
 New usage of "axresscn" is discouraged (4 uses).
 New usage of "axrnegex" is discouraged (0 uses).
-New usage of "basendx" is discouraged (18 uses).
+New usage of "basendx" is discouraged (19 uses).
 New usage of "baseval" is discouraged (0 uses).
 New usage of "bdcnulALT" is discouraged (0 uses).
 New usage of "bdnthALT" is discouraged (0 uses).
@@ -476,6 +479,7 @@ New usage of "nfralxy" is discouraged (40 uses).
 New usage of "nn0ge2m1nnALT" is discouraged (0 uses).
 New usage of "nnindALT" is discouraged (0 uses).
 New usage of "nnindnn" is discouraged (1 uses).
+New usage of "ocndx" is discouraged (2 uses).
 New usage of "opelopabsbALT" is discouraged (2 uses).
 New usage of "peano1nnnn" is discouraged (1 uses).
 New usage of "peano2nnnn" is discouraged (1 uses).
