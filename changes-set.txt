@@ -92,6 +92,9 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+ 8-Nov-25 xrsupssd  [same]      Moved from TA's mathbox to main set.mm
+ 8-Nov-25 infssd    [same]      Moved from TA's mathbox to main set.mm
+ 8-Nov-25 supssd    [same]      Moved from TA's mathbox to main set.mm
  8-Nov-25 icogelbd  [same]      Moved from GS's mathbox to main set.mm
  8-Nov-25 icossico2 icossico2d  Moved from GS's mathbox to main set.mm
  7-Nov-25 wrdfd     [same]      Moved from TA's mathbox to main set.mm
