@@ -148740,6 +148740,26 @@ $)
   $}
 
   ${
+    $d r x $.  $d f g r $.  $d f g v $.
+    $( Lemma for ~ prdsval .  (Contributed by Stefan O'Rear, 3-Jan-2015.)
+       Extracted from the former proof of ~ prdsval , dependency on ~ df-hom
+       removed.  (Revised by AV, 13-Oct-2024.) $)
+    prdsvallem $p |- ( f e. v , g e. v |-> X_ x e. dom r ( ( f ` x )
+                                     ( Hom ` ( r ` x ) ) ( g ` x ) ) ) e. _V $=
+      ( cv cfv chom co crn cuni cmap vex cvv wcel rnex uniex wss fvex wtru cixp
+      cdm cpw cxp wfn fnmap dmex mp3an pwex wral ovssunirng mp2an cnx homid a1i
+      fnovex cslot wceq homslid simpri strfvssn mptru fvssunirng elv rnss uniss
+      cn mp2b sstri rgenw ss2ixp ax-mp ixpconst sseqtri elpwi2 rgen2w mpoexw )
+      CDBFZVRAEFZUBZAFZCFZGZWADFZGZWAVSGZHGZIZUAZVSJZKZJZKZJZKZVTLIZUCZBMZWRWPL
+      NNUDUEWONOVTNOWPNOUFWNWMWLWKWJVSEMZPQPQPQZVSWSUGZWOVTNNLUPUHZUIWIWQOCDVRV
+      RWIWPNXBWIAVTWOUAZWPWHWORZAVTUJWIXCRXDAVTWHWGJZKZWOWCNOWENOWHXFRWAWBNNCMA
+      MZSWAWDNNDMXGSWGNNWCWEUKULWGWMRXEWNRXFWORWGWFJZKZWMWGXIRTWFHUMHGZNUNWFNOT
+      WAVSNNWSXGSUOXJVGOZTHXJUQURXKUSUTUOVAVBWFWKRZXHWLRXIWMRXLAWAVSVCVDWFWKVEX
+      HWLVFVHVIWGWMVEXEWNVFVHVIVJAVTWHWOVKVLAVTWOXAWTVMVNVOVPVQ $.
+    $( $j usage 'prdsvallem' avoids 'ax-coll' ; $)
+  $}
+
+  ${
     $d r i $.
     $( Define a structure power, which is just a structure product where all
        the factors are the same.  (Contributed by Mario Carneiro,
