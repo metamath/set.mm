@@ -15625,6 +15625,7 @@ New usage of "chub2i" is discouraged (24 uses).
 New usage of "chunssji" is discouraged (0 uses).
 New usage of "chvar" is discouraged (2 uses).
 New usage of "chvarv" is discouraged (0 uses).
+New usage of "cicerALT" is discouraged (0 uses).
 New usage of "cleljustALT" is discouraged (0 uses).
 New usage of "cleljustALT2" is discouraged (0 uses).
 New usage of "clelsb1f" is discouraged (0 uses).
@@ -17393,6 +17394,7 @@ New usage of "ismndo2" is discouraged (1 uses).
 New usage of "isnv" is discouraged (2 uses).
 New usage of "isnvi" is discouraged (3 uses).
 New usage of "isnvlem" is discouraged (1 uses).
+New usage of "isofnALT" is discouraged (0 uses).
 New usage of "isolatiN" is discouraged (0 uses).
 New usage of "isomliN" is discouraged (0 uses).
 New usage of "isosctrlem1ALT" is discouraged (0 uses).
@@ -19995,6 +19997,7 @@ Proof modification of "cffldtocusgrOLD" is discouraged (165 steps).
 Proof modification of "cflemOLD" is discouraged (136 steps).
 Proof modification of "cgsex4gOLD" is discouraged (318 steps).
 Proof modification of "chordthmALT" is discouraged (440 steps).
+Proof modification of "cicerALT" is discouraged (57 steps).
 Proof modification of "cleljustALT" is discouraged (25 steps).
 Proof modification of "cleljustALT2" is discouraged (25 steps).
 Proof modification of "clelsb2OLD" is discouraged (63 steps).
@@ -20724,6 +20727,7 @@ Proof modification of "isghmOLD" is discouraged (447 steps).
 Proof modification of "isinfOLD" is discouraged (588 steps).
 Proof modification of "ismgmALT" is discouraged (53 steps).
 Proof modification of "ismgmOLD" is discouraged (292 steps).
+Proof modification of "isofnALT" is discouraged (89 steps).
 Proof modification of "isosctrlem1ALT" is discouraged (363 steps).
 Proof modification of "isrim0OLD" is discouraged (177 steps).
 Proof modification of "isrimOLD" is discouraged (64 steps).
