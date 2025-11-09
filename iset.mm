@@ -54597,6 +54597,12 @@ $)
     ( wcel w3a co cop cfv cvv df-ov simp2 opexg 3adant2 fvexg syl2anc eqeltrid
     ) ADGZCEGZBFGZHZABCIABJZCKZLABCMUCUAUDLGZUELGTUAUBNTUBUFUAABDFOPUDCELQRS $.
 
+  $( The result of an operation value is always a subset of the union of the
+     range.  (Contributed by Mario Carneiro, 12-Jan-2017.) $)
+  ovssunirng $p |- ( ( X e. V /\ Y e. W ) -> ( X F Y ) C_ U. ran F ) $=
+    ( wcel wa co cop cfv crn cuni df-ov cvv wss opexg fvssunirng syl eqsstrid )
+    DBFECFGZDEAHDEIZAJZAKLZDEAMTUANFUBUCODEBCPUAAQRS $.
+
   ${
     ovprc1.1 $e |- Rel dom F $.
     $( The value of an operation when the one of the arguments is a proper
