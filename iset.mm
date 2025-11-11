@@ -148890,6 +148890,94 @@ $)
   $}
 
   ${
+    $d R a c d e f g x $.  $d S a c d e f g x $.  $d a c d e f g ph x $.
+    prdsbaslemss.p $e |- P = ( S Xs_ R ) $.
+    prdsbaslemss.s $e |- ( ph -> S e. V ) $.
+    prdsbaslemss.r $e |- ( ph -> R e. W ) $.
+    prdsbaslem.1 $e |- A = ( E ` P ) $.
+    prdsbaslem.2 $e |- E = Slot ( E ` ndx ) $.
+    prdsbaslemss.e $e |- ( E ` ndx ) e. NN $.
+    prdsbaslem.3 $e |- ( ph -> T e. X ) $.
+    prdsbaslemss.ss $e |- ( ph -> { <. ( E ` ndx ) , T >. } C_ P ) $.
+    $( Lemma for ~ prdsbas and similar theorems.  (Contributed by Jim Kingdon,
+       10-Nov-2025.) $)
+    prdsbaslemss $p |- ( ph -> A = T ) $=
+      ( cfv cvv vx vf vg va vc vd ve c1 c5 cdc cop eqidd cnx cbs cv cixp cplusg
+      cdm co cmpt cmpo cmulr ctp csca cvsca cip cgsu cun cts ctopn ccom cpt cpr
+      cple wss wbr wral wa copab cds crn cc0 csn cxr clt csup chom cco cxp c2nd
+      c1st cstr eqid prdsval wcel dmexg syl wfn basfn vex fvexg sylancl funfvex
+      funfni sylancr ralrimivw ixpexgg syl2anc mpoexga elexd topnfn fnfun ax-mp
+      wfun cofunexg ptex prss anbi1i opabbii xpexg opabssxp a1i ssexd eqeltrrid
+      prdsvalstrd eqbrtrd ndxslid strslfv3 ) ABFCCGJUHUHUIUJUKZACULACUMUNSUADUR
+      ZUAUOZDSZUNSZUPZUKUMUQSUBUCYNYNUAYJYKUBUOZSZYKUCUOZSZYLUQSUSUTZVAZUKUMVBS
+      UBUCYNYNUAYJYPYRYLVBSUSUTZVAZUKVCUMVDSEUKUMVESUBUCEUNSZYNUAYJYOYRYLVESUSU
+      TZVAZUKUMVFSUBUCYNYNEUAYJYPYRYLVFSUSUTVGUSZVAZUKVCVHUMVISVJDVKZVLSZUKUMVN
+      SYOYQVMYNVOZYPYRYLVNSVPUAYJVQZVRZUBUCVSZUKUMVTSUBUCYNYNUAYJYPYRYLVTSUSUTW
+      AWBWCVHWDWEWFZVAZUKVCUMWGSUBUCYNYNUAYJYPYRYLWGSUSUPZVAZUKUMWHSUDUEYNYNWIZ
+      YNUFUGUDUOZWJSZUEUOZUUQUSUUSUUQSUAYJYKUFUOSYKUGUOSYKUUSWKSSYKUUTSUKYKUVAS
+      YLWHSUSUSUTVAZVAZUKVMVHVHYIWLAUAYNUUOCYTDEUVCUUEUUBUGUBUCUUQUUGYJUUCUUMUU
+      IHIUDUEUFKUUCWMAYJULAYNULAYTULAUUBULAUUEULAUUGULAUUIULAUUMULAUUOULAUUQULA
+      UVCULLMWNATYNUUOTYTTTEUVCTUUEUUBTUUQUUGUUMUUITTTHTAYJTWOZYMTWOZUAYJVQYNTW
+      OZADIWOZUVDMDIWPWQAUVEUAYJAUNTWRZYLTWOZUVEWSAUVGYKTWOUVIMUAWTYKDITXAXBUVE
+      TYLUNYLUNXCXDXEXFUAYJYMTTXGXHZAUVFUVFYTTWOUVJUVJUBUCYNYNYSTTXIXHAUVFUVFUU
+      BTWOUVJUVJUBUCYNYNUUATTXIXHLAUUCTWOZUVFUUETWOAUVHETWOUVKWSAEHLXJUVKTEUNEU
+      NXCXDXEUVJUBUCUUCYNUUDTTXIXHAUVFUVFUUGTWOUVJUVJUBUCYNYNUUFTTXIXHAUUHTWOZU
+      UITWOAVJXNZUVGUVLVJTWRUVMXKTVJXLXMMVJDIXOXEUUHTXPWQAUUMYOYNWOYQYNWOVRZUUK
+      VRZUBUCVSZTUVOUULUBUCUVNUUJUUKYOYQYNUBWTUCWTXQXRXSAUVPUURTAUVFUVFUURTWOZU
+      VJUVJYNYNTTXTXHZUVPUURVOAUUKUBUCYNYNYAYBYCYDAUVFUVFUUOTWOUVJUVJUBUCYNYNUU
+      NTTXIXHAUVFUVFUUQTWOUVJUVJUBUCYNYNUUPTTXIXHAUVQUVFUVCTWOUVRUVJUDUEUURYNUV
+      BTTXIXHYEYFGUMGSOPYGRQNYH $.
+  $}
+
+  ${
+    $d a c d e f g x B $.  $d a c d e H $.  $d f g K $.  $d a c d e f g x ph $.
+    $d a c d e f g w x y z I $.  $d f g x P $.  $d a c d e f g w x y z R $.
+    $d a c d e f g x S $.
+    prdsbas.p $e |- P = ( S Xs_ R ) $.
+    prdsbas.s $e |- ( ph -> S e. V ) $.
+    prdsbas.r $e |- ( ph -> R e. W ) $.
+    $( Scalar ring of a structure product.  (Contributed by Stefan O'Rear,
+       5-Jan-2015.)  (Revised by Mario Carneiro, 15-Aug-2015.)  (Revised by
+       Thierry Arnoux, 16-Jun-2019.)  (Revised by Zhi Wang, 18-Aug-2024.) $)
+    prdssca $p |- ( ph -> S = ( Scalar ` P ) ) $=
+      ( vx vf vg cfv cnx cv cop co cmpt cmpo eqidd va vc vd ve csca scaid cslot
+      eqid wceq cn wcel scaslid simpri cbs cdm cixp cplusg cmulr ctp cvsca cgsu
+      cip cun cts ctopn ccom cpt cple cpr wss wbr wral wa copab cds crn cc0 csn
+      cxr clt csup chom cco cxp c2nd c1st snsstp1 ssun2 sstri prdsval sseqtrrid
+      ssun1 prdsbaslemss eqcomd ) ABUEMZDAWOBCDDUEEFEGHIWOUHUFUENUEMZUGUIWPUJUK
+      ULUMHANUNMJCUOZJOZCMZUNMUPZPNUQMKLWTWTJWQWRKOZMZWRLOZMZWSUQMQRSZPNURMKLWT
+      WTJWQXBXDWSURMQRSZPUSZWPDPZNUTMKLDUNMZWTJWQXAXDWSUTMQRSZPZNVBMKLWTWTDJWQX
+      BXDWSVBMQRVAQSZPZUSZVCZNVDMVECVFVGMZPNVHMXAXCVIWTVJXBXDWSVHMVKJWQVLVMKLVN
+      ZPNVOMKLWTWTJWQXBXDWSVOMQRVPVQVRVCVSVTWASZPUSNWBMKLWTWTJWQXBXDWSWBMQUPSZP
+      NWCMUAUBWTWTWDWTUCUDUAOZWEMZUBOZXSQXTXSMJWQWRUCOMWRUDOMWRXTWFMMWRYAMPWRYB
+      MWSWCMQQRSSZPVIVCZVCZXHVRZBYFXOYEYFXNXOXHXKXMWGXNXGWHWIXOYDWLWIAJWTXRBXEC
+      DYCXJXFUDKLXSXLWQXIXQXPEFUAUBUCGXIUHAWQTAWTTAXETAXFTAXJTAXLTAXPTAXQTAXRTA
+      XSTAYCTHIWJWKWMWN $.
+
+    prdsbas.b $e |- B = ( Base ` P ) $.
+    prdsbas.i $e |- ( ph -> dom R = I ) $.
+    $( Base set of a structure product.  (Contributed by Stefan O'Rear,
+       3-Jan-2015.)  (Revised by Mario Carneiro, 15-Aug-2015.)  (Revised by
+       Thierry Arnoux, 16-Jun-2019.)  (Revised by Zhi Wang, 18-Aug-2024.) $)
+    prdsbas $p |- ( ph -> B = X_ x e. I ( Base ` ( R ` x ) ) ) $=
+      ( cfv cvv cnx cop co eqidd vf vg va vc vd ve cv cbs cixp baseid basendxnn
+      wcel wral cdm dmexg syl eqeltrrd wfn basfn sylancl funfvex funfni sylancr
+      vex fvexg ralrimivw ixpexgg syl2anc cplusg cmpt cmpo cmulr ctp csca cvsca
+      cip cgsu cun cts ctopn ccom cpt cple cpr wss wbr wa copab cds crn cc0 csn
+      cxr clt csup chom cco cxp c2nd c1st snsstp1 ssun1 sstri prdsval sseqtrrid
+      eqid prdsbaslemss ) ACDEFBGBUGZEOZUHOZUIZUHHIPJKLMUJUKAGPULXJPULZBGUMXKPU
+      LAEUNZGPNAEIULZXMPULLEIUOUPUQAXLBGAUHPURXIPULZXLUSAXNXHPULXOLBVDXHEIPVEUT
+      XLPXIUHXIUHVAVBVCVFBGXJPPVGVHAQUHOXKRZQVIOUAUBXKXKBGXHUAUGZOZXHUBUGZOZXIV
+      IOSVJVKZRZQVLOUAUBXKXKBGXRXTXIVLOSVJVKZRZVMZQVNOFRQVOOUAUBFUHOZXKBGXQXTXI
+      VOOSVJVKZRQVPOUAUBXKXKFBGXRXTXIVPOSVJVQSVKZRVMZVRZQVSOVTEWAWBOZRQWCOXQXSW
+      DXKWEXRXTXIWCOWFBGUMWGUAUBWHZRQWIOUAUBXKXKBGXRXTXIWIOSVJWJWKWLVRWMWNWOVKZ
+      RVMQWPOUAUBXKXKBGXRXTXIWPOSUIVKZRQWQOUCUDXKXKWRXKUEUFUCUGZWSOZUDUGZYNSYOY
+      NOBGXHUEUGOXHUFUGOXHYOWTOOXHYPORXHYQOXIWQOSSVJVKVKZRWDVRZVRZXPWLZDUUAYJYT
+      UUAYEYJXPYBYDXAYEYIXBXCYJYSXBXCABXKYMDYAEFYRYGYCUFUAUBYNYHGYFYLYKHIUCUDUE
+      JYFXFNAXKTAYATAYCTAYGTAYHTAYKTAYLTAYMTAYNTAYRTKLXDXEXG $.
+  $}
+
+  ${
     $d r i $.
     $( Define a structure power, which is just a structure product where all
        the factors are the same.  (Contributed by Mario Carneiro,
