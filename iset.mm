@@ -148999,6 +148999,32 @@ $)
         GWRWSYHYQWRWSABCYKDXMFGYPYEYAUDHIYLYFJYDYJYIKLUAUBUCMYDXEQABCDFGJKLMNOP
         QWTAXMXAAYAXAAYEXAAYFXAAYIXAAYJXAAYKXAAYLXAAYPXANOXBXCXD $.
     $}
+
+    ${
+      prdsmulr.t $e |- .x. = ( .r ` P ) $.
+      $( Multiplication in a structure product.  (Contributed by Mario
+         Carneiro, 11-Jan-2015.)  (Revised by Mario Carneiro, 15-Aug-2015.)
+         (Revised by Thierry Arnoux, 16-Jun-2019.)  (Revised by Zhi Wang,
+         18-Aug-2024.) $)
+      prdsmulr $p |- ( ph -> .x. = ( f e. B , g e. B |-> ( x e. I |->
+            ( ( f ` x ) ( .r ` ( R ` x ) ) ( g ` x ) ) ) ) ) $=
+        ( cfv cvv va vc vd ve cv cmulr co cmpt cmpo mulridx cnx cslot wceq wcel
+        cn mulrslid simpri cbs wfn basfn prdsex syl2anc eqeltrid funfvex funfni
+        cprds sylancr mpoexga cop cplusg ctp csca cvsca cip cgsu cun ctopn ccom
+        cts cpt cple cpr wss wbr wral wa cds crn cc0 csn cxr clt csup chom cixp
+        copab cco c2nd c1st snsstp3 ssun1 sstri prdsbas eqidd prdsval sseqtrrid
+        cxp eqid prdsbaslemss ) AGDEFHICCBJBUEZHUEZSZXJIUEZSZXJESZUFSUGUHZUIZUF
+        KLTMNORUJUFUKUFSZULUMXRUOUNUPUQACTUNZXSXQTUNACDURSZTPAURTUSDTUNXTTUNZUT
+        ADFEVFUGZTMAFKUNELUNYBTUNNOEFKLVAVBVCYATDURDURVDVEVGVCZYCHICCXPTTVHVBAU
+        KURSCVIZUKVJSHICCBJXLXNXOVJSUGUHUIZVIZXRXQVIZVKZUKVLSFVIUKVMSHIFURSZCBJ
+        XKXNXOVMSUGUHUIZVIUKVNSHICCFBJXLXNXOVNSUGUHVOUGUIZVIVKZVPZUKVSSVQEVRVTS
+        ZVIUKWASXKXMWBCWCXLXNXOWASWDBJWEWFHIWPZVIUKWGSHICCBJXLXNXOWGSUGUHWHWIWJ
+        VPWKWLWMUIZVIVKUKWNSHICCBJXLXNXOWNSUGWOUIZVIUKWQSUAUBCCXGCUCUDUAUEZWRSZ
+        UBUEZYQUGYRYQSBJXJUCUESXJUDUESXJYRWSSSXJYSSVIXJYTSXOWQSUGUGUHUIUIZVIWBV
+        PZVPZYGWJZDUUDYMUUCUUDYHYMYDYFYGWTYHYLXAXBYMUUBXAXBABCYPDYEEFUUAYJXQUDH
+        IYQYKJYIYOYNKLUAUBUCMYIXHQABCDEFJKLMNOPQXCAYEXDAXQXDAYJXDAYKXDAYNXDAYOX
+        DAYPXDAYQXDAUUAXDNOXEXFXI $.
+    $}
   $}
 
   ${
