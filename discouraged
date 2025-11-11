@@ -10725,7 +10725,6 @@
 "nn0indALT" is used by "faclbnd4lem4".
 "nn0indALT" is used by "ipasslem1".
 "nn0indALT" is used by "uzaddcl".
-"nneneqOLD" is used by "phpOLD".
 "nnexALT" is used by "qexALT".
 "nnexALT" is used by "reexALT".
 "nnexALT" is used by "zexALT".
@@ -11752,8 +11751,6 @@
 "phplem1OLD" is used by "phplem2OLD".
 "phplem2OLD" is used by "phplem3OLD".
 "phplem3OLD" is used by "phpOLD".
-"phplem3OLD" is used by "phplem4OLD".
-"phplem4OLD" is used by "nneneqOLD".
 "phrel" is used by "phop".
 "pinn" is used by "addasspi".
 "pinn" is used by "addcanpi".
@@ -18018,7 +18015,6 @@ New usage of "nn0ge2m1nnALT" is discouraged (0 uses).
 New usage of "nn0indALT" is discouraged (3 uses).
 New usage of "nnadjuALT" is discouraged (0 uses).
 New usage of "nndomogOLD" is discouraged (0 uses).
-New usage of "nneneqOLD" is discouraged (1 uses).
 New usage of "nnexALT" is discouraged (3 uses).
 New usage of "nnindALT" is discouraged (0 uses).
 New usage of "nnne0ALT" is discouraged (0 uses).
@@ -18313,8 +18309,7 @@ New usage of "phpar2" is discouraged (2 uses).
 New usage of "phpeqdOLD" is discouraged (0 uses).
 New usage of "phplem1OLD" is discouraged (1 uses).
 New usage of "phplem2OLD" is discouraged (1 uses).
-New usage of "phplem3OLD" is discouraged (2 uses).
-New usage of "phplem4OLD" is discouraged (1 uses).
+New usage of "phplem3OLD" is discouraged (1 uses).
 New usage of "phrel" is discouraged (1 uses).
 New usage of "pige3ALT" is discouraged (0 uses).
 New usage of "pinn" is discouraged (17 uses).
@@ -20808,7 +20803,6 @@ Proof modification of "nn0ge2m1nnALT" is discouraged (48 steps).
 Proof modification of "nn0indALT" is discouraged (15 steps).
 Proof modification of "nnadjuALT" is discouraged (62 steps).
 Proof modification of "nndomogOLD" is discouraged (97 steps).
-Proof modification of "nneneqOLD" is discouraged (459 steps).
 Proof modification of "nnexALT" is discouraged (34 steps).
 Proof modification of "nnindALT" is discouraged (15 steps).
 Proof modification of "nnne0ALT" is discouraged (19 steps).
@@ -20867,7 +20861,6 @@ Proof modification of "phpeqdOLD" is discouraged (77 steps).
 Proof modification of "phplem1OLD" is discouraged (70 steps).
 Proof modification of "phplem2OLD" is discouraged (173 steps).
 Proof modification of "phplem3OLD" is discouraged (82 steps).
-Proof modification of "phplem4OLD" is discouraged (306 steps).
 Proof modification of "pige3ALT" is discouraged (1082 steps).
 Proof modification of "ply1basOLD" is discouraged (58 steps).
 Proof modification of "ply1idvr1OLD" is discouraged (151 steps).
