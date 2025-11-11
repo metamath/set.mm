@@ -146747,16 +146747,19 @@ $)
 
   ${
     strfv3.u $e |- ( ph -> U = S ) $.
-    strfv3.s $e |- S Struct X $.
+    strslfv3.s $e |- ( ph -> S Struct X ) $.
     strslfv3.e $e |- ( E = Slot ( E ` ndx ) /\ ( E ` ndx ) e. NN ) $.
-    strfv3.n $e |- { <. ( E ` ndx ) , C >. } C_ S $.
+    strslfv3.n $e |- ( ph -> { <. ( E ` ndx ) , C >. } C_ S ) $.
     strfv3.c $e |- ( ph -> C e. V ) $.
     strfv3.a $e |- A = ( E ` U ) $.
     $( Variant on ~ strslfv for large structures.  (Contributed by Mario
        Carneiro, 10-Jan-2017.)  (Revised by Jim Kingdon, 30-Jan-2023.) $)
     strslfv3 $p |- ( ph -> A = C ) $=
-      ( cfv wcel wceq strslfv syl fveq2d eqtr4d eqtr4id ) ABEFOZCNACDFOZUCACGPC
-      UDQMCDFGHJKLRSAEDFITUAUB $.
+      ( cfv cvv wcel syl ccnv wfun wbr structex structfung cnveqd funeqd mpbird
+      cstr eqeltrd cnx cop csn wss wb cn cslot wceq simpri opexg snssg eleqtrrd
+      sylancr strslfv2d eqtr4id ) ABEFOCNACEFPGKAEDPIADHUGUAZDPQJDHUBRUHAESZSZT
+      DSZSZTZAVDVIJDHUCRAVFVHAVEVGAEDIUDUDUEUFAUIFOZCUJZDEAVKDQZVKUKDULZLAVKPQZ
+      VLVMUMAVJUNQZCGQVNFVJUOUPVOKUQMVJCUNGURVAVKDPUSRUFIUTMVBVC $.
   $}
 
   ${
