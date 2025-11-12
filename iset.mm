@@ -193410,6 +193410,22 @@ $)
   $}
 
   ${
+    $d A f g s $.
+    $( A set dominated by ` _om ` is subcountable.  (Contributed by Jim
+       Kingdon, 11-Nov-2025.) $)
+    domomsubct $p |- ( A ~<_ _om
+        -> E. s ( s C_ _om /\ E. f f : s -onto-> A ) ) $=
+      ( vg com cdom wbr cv wf1 wex wss wfo brdomi cima crn wf1o wceq syl spcev
+      wa imassrn f1rn sstrid ccnv cres ssid f1ores mpan2 wfn f1fn fnresdm mpbid
+      f1oeq1d f1ocnv f1ofo cnvex foeq1 imaex sseq1 foeq2 exbidv anbi12d syl2anc
+      vex exlimiv ) AEFGAEDHZIZDJCHZEKZVHABHZLZBJZTZCJZAEDMVGVNDVGVFANZEKZVOAVJ
+      LZBJZVNVGVOVFOEVFAUAAEVFUBUCVGVOAVFUDZLZVRVGVOAVSPZVTVGAVOVFPZWAVGAVOVFAU
+      EZPZWBVGAAKWDAUFAEAVFUGUHVGAVOWCVFVGVFAUIWCVFQAEVFUJAVFUKRUMULAVOVFUNRVOA
+      VSUORVQVTBVSVFDVDZUPVOAVJVSUQSRVMVPVRTCVOVFAWEURVHVOQZVIVPVLVRVHVOEUSWFVK
+      VQBVHVOAVJUTVAVBSVCVER $.
+  $}
+
+  ${
     $d A x y z $.  $d B y z $.
     $( Any two elements of a subset of a singleton are equal.  (Contributed by
        Jim Kingdon, 28-May-2024.) $)
