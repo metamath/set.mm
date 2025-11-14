@@ -193715,6 +193715,18 @@ $)
       P $.
   $}
 
+  ${
+    $d A s x y z $.  $d V s y z $.
+    $( Equinumerosity of ` ( 2o ^m A ) ` and the set of decidable subsets of
+       ` A ` .  (Contributed by Jim Kingdon, 14-Nov-2025.) $)
+    2omapen $p |- ( A e. V -> ( 2o ^m A ) ~~
+        { x e. ~P A | A. y e. A DECID y e. x } ) $=
+      ( vs vz wcel c2o cmap co cvv cv wdc wral cpw crab cfv c1o wceq cmpt fnmap
+      wf1o cen wbr cxp wfn 2onn elexi elex fnovex mp3an12i 2omap f1oeng syl2anc
+      com eqid ) CDGZHCIJZKGZURBLALGMBCNACOPZEURFLELQRSFCPTZUBURUTUCUDIKKUEUFHK
+      GUQCKGUSUAHUOUGUHCDUIHCKKIUJUKABFCVADEVAUPULURUTKVAUMUN $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
