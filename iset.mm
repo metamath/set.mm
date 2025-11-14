@@ -65785,6 +65785,7 @@ $)
     f1oen3g $p |- ( ( F e. V /\ F : A -1-1-onto-> B ) -> A ~~ B ) $=
       ( vf wcel wf1o wa cv wex cen wbr f1oeq1 spcegv imp bren sylibr ) CDFZABCG
       ZHABEIZGZEJZABKLRSUBUASECDABTCMNOABEPQ $.
+    $( $j usage 'f1oen3g' avoids 'ax-coll'; $)
 
     $( The domain and range of a one-to-one, onto function are equinumerous.
        This variation of ~ f1oeng does not require the Axiom of Replacement.
@@ -65793,6 +65794,7 @@ $)
       ( wcel wf1o w3a cvv cen wbr f1of fex2 syl3an1 3coml simp3 f1oen3g syl2anc
       wf ) ADFZBEFZABCGZHCIFZUBABJKUBTUAUCUBABCSTUAUCABCLABCDEMNOTUAUBPABCIQR
       $.
+    $( $j usage 'f1oen2g' avoids 'ax-coll'; $)
 
     $( The domain of a one-to-one function is dominated by its codomain.  This
        variation of ~ f1domg does not require the Axiom of Replacement.
@@ -65802,6 +65804,7 @@ $)
       f1eq1 spcegv sylc brdomg 3ad2ant2 mpbird ) ADGZBEGZABCHZIZABJKZABFLZHZFMZ
       UKCNGZUJUOUJUHUIUPUJABCOUHUIUPABCPABCDEQRSUHUIUJTUNUJFCNABUMCUBUCUDUIUHUL
       UOUAUJABEFUEUFUG $.
+    $( $j usage 'f1dom2g' avoids 'ax-coll'; $)
 
     $( The domain and range of a one-to-one, onto function are equinumerous.
        (Contributed by NM, 19-Jun-1998.) $)
