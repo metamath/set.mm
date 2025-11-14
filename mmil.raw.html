@@ -131,6 +131,7 @@ then extended without justification to statements about infinite collections.
   <LI> <A HREF="#theorems">Some theorems</A></LI>
   <li><a href="#flavors">Different flavors of constructive mathematics</a></li>
   <li><a href="#existence">A note on existence</a></li>
+  <li><a href="#set-size">The size of sets</a></li>
   <LI> <A HREF="#intuitionize">How to intuitionize classical proofs</A></LI>
   <LI> <A HREF="#setmm">Metamath Proof Explorer cross reference</A></LI>
   <LI> <A HREF="#bib">Bibliography</A></LI>
@@ -976,6 +977,96 @@ context.</li>
 <p>For more on these topics, see [HoTT] especially section 3.10.
 Section 11.2.2 discusses the issues around truncated existence
 and sequence convergence.</p>
+
+<P></P><HR NOSHADE SIZE=1><A NAME="set-size"></A><B><FONT COLOR="#006633"
+>The size of sets</FONT></B>
+
+<p>When working without excluded middle, familiar concepts such
+as finiteness or countability spawn several concepts.  Although
+we need to list them in some order, beware of thinking of each
+category as including all smaller sets (for example the proposition
+that any subset of a finite set is finite is equivalent to excluded
+middle by ~ ssfiexmid ).</p>
+
+<table border cellspacing=0 bgcolor="#EEFFFA">
+
+<tr>
+  <th>name</th>
+  <th>our notation</th>
+  <th>notes and related theorems</th>
+</tr>
+
+<tr>
+  <td>finitely enumerable</td>
+  <td>` E. n e. _om E. f f : n -onto-> A `</td>
+  <td>implies countable by ~ enumct ; decidable equality
+  plus finitely enumerable is equivalent to finite by ~ fidcenum
+  </td>
+</tr>
+
+<tr>
+  <td>finite</td>
+  <td>` A e. Fin `</td>
+  <td>implies countable by ~ finct</td>
+</tr>
+
+<tr>
+  <td>dominated by ` _om `</td>
+  <td>` A ~<_ _om `</td>
+  <td>implies subcountable by ~ domomsubct</td>
+</tr>
+
+<tr>
+  <td>subcountable</td>
+  <td>` E. s ( s C_ _om /\ E. f f : s -onto-> A ) `</td>
+  <td>does not in general imply countable as shown at
+  ~ subctctexmid</td>
+</tr>
+
+<tr>
+  <td>countable</td>
+  <td>` E. f f : _om -onto-> ( A |_| 1o ) `</td>
+</tr>
+
+<tr>
+  <td>infinite</td>
+  <td>` _om ~<_ A `</td>
+  <td>We cannot conclude in general that a set is either finite
+  or infinite (see ~ inffiexmid )</td>
+</tr>
+
+<tr>
+  <td>countably infinite</td>
+  <td>` A ~~ _om `</td>
+  <td>` A ~~ NN ` is equivalent by ~ nnenom .
+  Countably infinite is equivalent to being countable, infinite,
+  and having decidable equality by ~ ctinf</td>
+</tr>
+
+<tr>
+  <td>uncountable</td>
+  <td>` -. E. f f : _om -onto-> ( A |_| 1o ) `</td>
+  <td>This is not fully developed yet, but we should be able to
+  prove that ` RR ` is not countable (but only under an assumption such
+  as ` CCHOICE ` or ` EXMID `), that ` 2o ^m _om ` is not countable
+  (Theorem 1.2 of [BauerHanson]),
+  and ` ~P 1o ^m _om ` is not countable (proof on slide 7 of
+  <a href="https://www.youtube.com/live/4CBFUojXoq4?si=xbO73bANMESrFO3M"
+  >The countable reals</a>, Andrej Bauer,
+  Topos Institute Colloquium, 12th of May 2022.)</td>
+</tr>
+
+</table>
+
+<p>Several more observations:</p>
+
+<ul>
+  <li>we cannot prove ` ~P 1o ~~ 2o ` (see ~ exmidpw )</li>
+  <li>` ( ~P 1o ^m A ) ` represents the number of subsets of ` A `
+  (although we do not yet have a proof of ` ( ~P 1o ^m A ) ~~ ~P A `)</li>
+  <li>` ( 2o ^m A ) ` represents the number of decidable subsets of ` A `
+  as shown at ~ 2omapen</li>
+</ul>
 
 <HR NOSHADE SIZE=1><A NAME="intuitionize"></A><B><FONT
 COLOR="#006633">How to intuitionize classical proofs</FONT></B>&nbsp;&nbsp;&nbsp;
