@@ -128,9 +128,9 @@ then extended without justification to statements about infinite collections.
   <LI> <A HREF="#overview">Overview of intuitionistic logic</A></LI>
   <LI> <A HREF="#overview2">Overview of this work</A></LI>
   <LI> <A HREF="#axioms">The axioms</A></LI>
+  <LI> <A HREF="#theorems">Some theorems</A></LI>
   <li><a href="#flavors">Different flavors of constructive mathematics</a></li>
   <li><a href="#existence">A note on existence</a></li>
-  <LI> <A HREF="#theorems">Some theorems</A></LI>
   <LI> <A HREF="#intuitionize">How to intuitionize classical proofs</A></LI>
   <LI> <A HREF="#setmm">Metamath Proof Explorer cross reference</A></LI>
   <LI> <A HREF="#bib">Bibliography</A></LI>
@@ -699,6 +699,114 @@ FACE=sans-serif>&isin;</FONT> <I><FONT COLOR="#FF0000">x</FONT></I> &rarr; suc
 <P>The above axioms fairly closely follow the Intuitionistic Zermelo-Fraenkel
 (IZF) axioms as laid out in [Crosilla].</P>
 
+<P></P><HR NOSHADE SIZE=1><A NAME="theorems"></A><B><FONT COLOR="#006633">A
+Theorem Sampler</FONT></B>&nbsp;&nbsp;&nbsp;
+
+<P></P><CENTER><FONT COLOR="#006633"><I>From a psychological point of view,
+learning constructive mathematics is agonizing, for it requires one to
+first unlearn certain deeply ingrained intuitions and
+habits acquired during classical mathematical training.</I>
+<BR> &mdash;Andrej Bauer</FONT></CENTER>
+
+<P>Listed here are some examples of starting points for your journey
+through the maze.  Some are stated just as they would be in a
+non-constructive context; others are here to highlight areas which
+look different constructively.
+You should study some simple proofs from
+propositional calculus until you get the hang of it.  Then try some
+predicate calculus and finally set theory.</P>
+
+<P>The <A HREF="mmtheorems.html">Theorem List</A> shows the complete set of
+theorems in the database.  You may also find the <A
+HREF="mmbiblio.html">Bibliographic Cross-Reference</A> useful.</P>
+
+
+<P><TABLE BORDER=0><TR><TD VALIGN=TOP WIDTH="50%"><TR><TD VALIGN=TOP WIDTH="50%">
+<B>Propositional calculus</B>
+<MENU>
+<LI>Law of identity ~ idALT</LI>
+
+<LI>Praeclarum theorema ~ anim12</LI>
+
+<LI>Contraposition introduction ~ con3</LI>
+
+<LI>Double negation introduction ~ notnot</LI>
+
+<LI>Triple negation ~ notnotnot</LI>
+
+<LI>Definition of exclusive or ~ df-xor</LI>
+
+<LI>Negation and the false constant ~ dfnot</LI>
+</MENU>
+<B>Predicate calculus</B>
+<MENU>
+<LI>Existential and universal quantifier swap ~ 19.12</LI>
+
+<LI>Existentially quantified implication ~ 19.35-1</LI>
+
+<LI><I>x</I> = <I>x</I> ~ equid</LI>
+
+<LI>Definition of proper substitution ~ df-sb</LI>
+
+<LI>Double existential uniqueness ~ 2eu7</LI>
+
+</MENU>
+<B>Set theory</B>
+<MENU>
+<LI>Commutative law for union ~ uncom</LI>
+
+<LI>A basic relationship between class and wff
+variables ~ abeq2</LI>
+
+<LI>Two ways of saying &quot;is a set&quot; ~ isset</LI>
+
+<LI>The ZF axiom of foundation implies excluded middle ~ regexmid</LI>
+
+<LI>Russell's paradox ~ ru</LI>
+
+<LI>Ordinal trichotomy implies excluded middle ~ ordtriexmid</LI>
+
+<LI>Mathematical (finite) induction ~ findes</LI>
+
+<LI>Peano's postulates for arithmetic:
+~ peano1 ~ peano2 ~ peano3 ~ peano4 ~ peano5</LI>
+
+<LI>Two natural numbers are either equal or not equal ~ nndceq (a special case of the law of the excluded middle which we can prove).</LI>
+
+<LI>A natural number is either zero or a successor ~ nn0suc</LI>
+
+<LI>The axiom of choice implies excluded middle ~ acexmid</LI>
+
+<LI>Burali-Forti paradox ~ onprc</LI>
+
+<LI>Transfinite induction ~ tfis3</LI>
+
+<LI>Closure law for ordinal addition ~ oacl</LI>
+
+</MENU>
+<B>Real and complex numbers</B>
+
+<MENU>
+<LI>Archimedean property of real numbers ~ arch</LI>
+
+<LI>Properties of apartness:
+~ apirr ~ apsym ~ apcotr ~ apti</LI>
+
+<LI>The square root of 2 is irrational ~ sqrt2irrap (a
+different statement than "The square root of 2
+is not rational" ~ sqrt2irr )</LI>
+
+<LI>Convergence of a sequence of complex
+numbers ~ climcvg1n given a condition on the rate of convergence</LI>
+
+<LI>Triangle inequality for absolute
+value ~ abstrii</LI>
+
+<LI>The maximum of two real numbers ~ maxleb</LI>
+
+</MENU>
+</TD></TR></TABLE>
+
 <P></P><HR NOSHADE SIZE=1><A NAME="flavors"></A><B><FONT COLOR="#006633">Different
 flavors of constructive mathematics</FONT></B>
 
@@ -868,114 +976,6 @@ context.</li>
 <p>For more on these topics, see [HoTT] especially section 3.10.
 Section 11.2.2 discusses the issues around truncated existence
 and sequence convergence.</p>
-
-<P></P><HR NOSHADE SIZE=1><A NAME="theorems"></A><B><FONT COLOR="#006633">A
-Theorem Sampler</FONT></B>&nbsp;&nbsp;&nbsp;
-
-<P></P><CENTER><FONT COLOR="#006633"><I>From a psychological point of view,
-learning constructive mathematics is agonizing, for it requires one to
-first unlearn certain deeply ingrained intuitions and
-habits acquired during classical mathematical training.</I>
-<BR> &mdash;Andrej Bauer</FONT></CENTER>
-
-<P>Listed here are some examples of starting points for your journey
-through the maze.  Some are stated just as they would be in a
-non-constructive context; others are here to highlight areas which
-look different constructively.
-You should study some simple proofs from
-propositional calculus until you get the hang of it.  Then try some
-predicate calculus and finally set theory.</P>
-
-<P>The <A HREF="mmtheorems.html">Theorem List</A> shows the complete set of
-theorems in the database.  You may also find the <A
-HREF="mmbiblio.html">Bibliographic Cross-Reference</A> useful.</P>
-
-
-<P><TABLE BORDER=0><TR><TD VALIGN=TOP WIDTH="50%"><TR><TD VALIGN=TOP WIDTH="50%">
-<B>Propositional calculus</B>
-<MENU>
-<LI>Law of identity ~ idALT</LI>
-
-<LI>Praeclarum theorema ~ anim12</LI>
-
-<LI>Contraposition introduction ~ con3</LI>
-
-<LI>Double negation introduction ~ notnot</LI>
-
-<LI>Triple negation ~ notnotnot</LI>
-
-<LI>Definition of exclusive or ~ df-xor</LI>
-
-<LI>Negation and the false constant ~ dfnot</LI>
-</MENU>
-<B>Predicate calculus</B>
-<MENU>
-<LI>Existential and universal quantifier swap ~ 19.12</LI>
-
-<LI>Existentially quantified implication ~ 19.35-1</LI>
-
-<LI><I>x</I> = <I>x</I> ~ equid</LI>
-
-<LI>Definition of proper substitution ~ df-sb</LI>
-
-<LI>Double existential uniqueness ~ 2eu7</LI>
-
-</MENU>
-<B>Set theory</B>
-<MENU>
-<LI>Commutative law for union ~ uncom</LI>
-
-<LI>A basic relationship between class and wff
-variables ~ abeq2</LI>
-
-<LI>Two ways of saying &quot;is a set&quot; ~ isset</LI>
-
-<LI>The ZF axiom of foundation implies excluded middle ~ regexmid</LI>
-
-<LI>Russell's paradox ~ ru</LI>
-
-<LI>Ordinal trichotomy implies excluded middle ~ ordtriexmid</LI>
-
-<LI>Mathematical (finite) induction ~ findes</LI>
-
-<LI>Peano's postulates for arithmetic:
-~ peano1 ~ peano2 ~ peano3 ~ peano4 ~ peano5</LI>
-
-<LI>Two natural numbers are either equal or not equal ~ nndceq (a special case of the law of the excluded middle which we can prove).</LI>
-
-<LI>A natural number is either zero or a successor ~ nn0suc</LI>
-
-<LI>The axiom of choice implies excluded middle ~ acexmid</LI>
-
-<LI>Burali-Forti paradox ~ onprc</LI>
-
-<LI>Transfinite induction ~ tfis3</LI>
-
-<LI>Closure law for ordinal addition ~ oacl</LI>
-
-</MENU>
-<B>Real and complex numbers</B>
-
-<MENU>
-<LI>Archimedean property of real numbers ~ arch</LI>
-
-<LI>Properties of apartness:
-~ apirr ~ apsym ~ apcotr ~ apti</LI>
-
-<LI>The square root of 2 is irrational ~ sqrt2irrap (a
-different statement than "The square root of 2
-is not rational" ~ sqrt2irr )</LI>
-
-<LI>Convergence of a sequence of complex
-numbers ~ climcvg1n given a condition on the rate of convergence</LI>
-
-<LI>Triangle inequality for absolute
-value ~ abstrii</LI>
-
-<LI>The maximum of two real numbers ~ maxleb</LI>
-
-</MENU>
-</TD></TR></TABLE>
 
 <HR NOSHADE SIZE=1><A NAME="intuitionize"></A><B><FONT
 COLOR="#006633">How to intuitionize classical proofs</FONT></B>&nbsp;&nbsp;&nbsp;
