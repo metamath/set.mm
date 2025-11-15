@@ -149105,6 +149105,19 @@ $)
           BUCZUAUCZUDZVCUBUCZUDZVCEUDUEUDZUNZUFBIVCGUDZVCHUDZVHUNZUFDUGABCLDEFU
           AUBIJUGMOAEIUOIKUHEUGUHQPIKEUIUJNAIEQUKTULAVDGUMZVFHUMZUPZUPBIVIVLVOV
           IVLUMAVMVNVEVJVGVKVHVCVDGUQVCVFHUQURUSUTRSABIVLKPVAVB $.
+
+        prdsplusgfval.j $e |- ( ph -> J e. I ) $.
+        $( Value of a structure product sum at a single coordinate.
+           (Contributed by Stefan O'Rear, 10-Jan-2015.) $)
+        prdsplusgfval $p |- ( ph -> ( ( F .+ G ) ` J ) = ( ( F ` J )
+            ( +g ` ( R ` J ) ) ( G ` J ) ) ) $=
+          ( vx co cfv cv cplusg cmpt prdsplusgval fveq1d eqid wceq 2fveq3 fveq2
+          cvv oveq123d wcel fvexg syl2anc wfn fnex plusgslid slotex syl syl3anc
+          ovexg fvmptd3 eqtrd ) AIFGCUCZUDIUBHUBUEZFUDZVIGUDZVIDUDUFUDZUCZUGZUD
+          IFUDZIGUDZIDUDZUFUDZUCZAIVHVNAUBBCDEFGHJKLMNOPQRSTUHUIAUBIVMVSHVNUNVN
+          UJVIIUKVJVOVKVPVLVRVIIUFDULVIIFUMVIIGUMUOUAAVOUNUPZVRUNUPZVPUNUPZVSUN
+          UPAFBUPIHUPZVTRUAIFBHUQURAVQUNUPZWAADUNUPZWCWDADHUSHKUPWEQPHKDUTURUAI
+          DUNHUQURVQUFUNVAVBVCAGBUPWCWBSUAIGBHUQURVOVPVRUNUNUNVEVDVFVG $.
       $}
     $}
   $}
