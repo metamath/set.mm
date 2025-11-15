@@ -149090,6 +149090,22 @@ $)
           ZTRFGUQGUBURVAUSVBUQGEUCUQGUJCUDUEAERFUSUFZTZUTRFUGZAEBVCPARBCDFHIJKL
           MNOUHUIVDEUKTEFULVERFUSEUMUNUOQUP $.
       $}
+
+      prdsplusgval.f $e |- ( ph -> F e. B ) $.
+      prdsplusgval.g $e |- ( ph -> G e. B ) $.
+      ${
+        prdsplusgval.p $e |- .+ = ( +g ` Y ) $.
+        $( Value of a componentwise sum in a structure product.  (Contributed
+           by Stefan O'Rear, 10-Jan-2015.)  (Revised by Mario Carneiro,
+           15-Aug-2015.) $)
+        prdsplusgval $p |- ( ph -> ( F .+ G ) = ( x e. I |-> ( ( F ` x )
+            ( +g ` ( R ` x ) ) ( G ` x ) ) ) ) $=
+          ( vy vz cv cfv cplusg cmpt cvv wcel fnex syl2anc fndmd prdsplusg wceq
+          co wfn wa fveq1 oveqan12d adantl mpteq2dv mptexd ovmpod ) AUAUBGHCCBI
+          BUCZUAUCZUDZVCUBUCZUDZVCEUDUEUDZUNZUFBIVCGUDZVCHUDZVHUNZUFDUGABCLDEFU
+          AUBIJUGMOAEIUOIKUHEUGUHQPIKEUIUJNAIEQUKTULAVDGUMZVFHUMZUPZUPBIVIVLVOV
+          IVLUMAVMVNVEVJVGVKVHVCVDGUQVCVFHUQURUSUTRSABIVLKPVAVB $.
+      $}
     $}
   $}
 
