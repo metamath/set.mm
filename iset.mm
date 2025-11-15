@@ -149080,6 +149080,16 @@ $)
       wb wfn funfni sylancr eqeltrid elmapg sylan bitr3d ) BELZCHLZMZFACNOZLZFD
       LCAFPZUPUQDFUPUQGQRDABCEHGIJSKUAUBUNATLUOURUSUFUNABQRZTJUNQTUGBTLUTTLZUCB
       EUDVATBQBQUEUHUIUJACFTHUKULUM $.
+
+    pwselbas.r $e |- ( ph -> R e. W ) $.
+    pwselbas.i $e |- ( ph -> I e. Z ) $.
+    pwselbas.x $e |- ( ph -> X e. V ) $.
+    $( An element of a structure power is a function from the index set to the
+       base set of the structure.  (Contributed by Mario Carneiro,
+       11-Jan-2015.)  (Revised by Mario Carneiro, 5-Jun-2015.) $)
+    pwselbas $p |- ( ph -> X : I --> B ) $=
+      ( wcel wf wb pwselbasb syl2anc mpbid ) AGEPZDBGQZOACFPDIPUBUCRMNBCDEFGHIJ
+      KLSTUA $.
   $}
 
 
