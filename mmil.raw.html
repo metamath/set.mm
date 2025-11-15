@@ -3434,6 +3434,11 @@ is often the way to intuitionize ovex (check for your particular
 operation, as these are just a few examples).</TD>
 </TR>
 
+<tr>
+  <td>ovssunirn</td>
+  <td>~ ovssunirng , ~ relfvssunirn</td>
+</tr>
+
 <TR>
   <TD>ovrcl</TD>
   <TD>~ elmpocl , ~ relelfvdm</TD>
@@ -10433,6 +10438,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 <TR>
   <TD>strfv3</TD>
   <TD>~ strslfv3</TD>
+  <td>puts more hypotheses into deduction form and adds
+  ` ( E `` ndx ) e. NN ` to hypotheses</td>
 </TR>
 
 <TR>
@@ -10883,20 +10890,45 @@ intuitionistic and it is lightly used in set.mm</TD>
   set.mm.</TD>
 </TR>
 
+<tr>
+  <td>imasvalstr</td>
+  <td>~ imasvalstrd</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>prdsvalstr</td>
+  <td>~ prdsvalstrd</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>prdsbaslem</td>
+  <td>~ prdsbaslemss</td>
+  <td>differs in various ways but serves roughly the same
+  function</td>
+</tr>
+
+<tr>
+  <td>prdsvsca , prdsip , prdsle ,
+  prdsless , prdsds , prdsdsfn , prdstset , prdshom , prdsco</td>
+  <td><i>none</i></td>
+  <td>these should be provable via ~ prdsbaslemss , in a
+  manner similar to ~ prdsbas or ~ prdsplusg</td>
+</tr>
+
 <TR>
-  <TD>imasvalstr , prdsvalstr , prdsvallem , prdsval , prdssca ,
-  prdsbas , prdsplusg , prdsmulr , prdsvsca , prdsip , prdsle ,
-  prdsless , prdsds , prdsdsfn , prdstset , prdshom , prdsco ,
-  prdsbas2 , prdsbasmpt , prdsbasfn , prdsbasprj , prdsplusgval ,
+  <TD>prdsbas2 , prdsbasmpt , prdsbasfn , prdsbasprj , prdsplusgval ,
   prdsplusgfval , prdsmulrval , prdsmulrfval , prdsleval , prdsdsval ,
   prdsvscaval , prdsvscafval , prdsbas3 , prdsbasmpt2 , prdsbascl ,
   prdsdsval2 , prdsdsval3 , pwsval , pwsbas , pwselbasb , pwselbas ,
   pwsplusgval , pwsmulrval , pwsle , pwsleval , pwsvscafval , pwsvscaval ,
   pwssca , pwsdiagel , pwssnf1o</TD>
   <TD><I>none</I></TD>
-  <TD>At a minimum, these theorems would need new set existence
-  conditions and other routine intuitionizing.  At worst, they
-  would need a bigger revamp for things like how order works.</TD>
+  <TD>Probably provable with new set existence
+  conditions and other routine intuitionizing.  Current plan is to
+  leave the order slot the same as set.mm (although it likely will
+  need changes later).</TD>
 </TR>
 
 <tr>
