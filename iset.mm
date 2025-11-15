@@ -48435,6 +48435,21 @@ $)
     ( wfn wfun cdm wceq df-fn simprbi ) BACBDBEAFBAGH $.
 
   ${
+    fndmi.1 $e |- F Fn A $.
+    $( The domain of a function.  (Contributed by Wolf Lammen, 1-Jun-2024.) $)
+    fndmi $p |- dom F = A $=
+      ( wfn cdm wceq fndm ax-mp ) BADBEAFCABGH $.
+  $}
+
+  ${
+    fndmd.1 $e |- ( ph -> F Fn A ) $.
+    $( The domain of a function.  (Contributed by Glauco Siliprandi,
+       23-Oct-2021.) $)
+    fndmd $p |- ( ph -> dom F = A ) $=
+      ( wfn cdm wceq fndm syl ) ACBECFBGDBCHI $.
+  $}
+
+  ${
     funfni.1 $e |- ( ( Fun F /\ B e. dom F ) -> ph ) $.
     $( Inference to convert a function and domain antecedent.  (Contributed by
        NM, 22-Apr-2004.) $)
