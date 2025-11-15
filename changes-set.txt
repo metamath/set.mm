@@ -94,6 +94,13 @@ DONE:
 Date      Old       New         Notes
  9-Nov-25 leadd12dd ---         deleted - redundant with le2addd
  9-Nov-25 leexp1ad  [same]      Moved from MKU's mathbox to main set.mm
+ 8-Nov-25 xrsupssd  [same]      Moved from TA's mathbox to main set.mm
+ 8-Nov-25 infssd    [same]      Moved from TA's mathbox to main set.mm
+ 8-Nov-25 supssd    [same]      Moved from TA's mathbox to main set.mm
+ 8-Nov-25 icogelbd  [same]      Moved from GS's mathbox to main set.mm
+ 8-Nov-25 icossico2 icossico2d  Moved from GS's mathbox to main set.mm
+ 7-Nov-25 wrdfd     [same]      Moved from TA's mathbox to main set.mm
+ 7-Nov-25 eel132    syl3an132   Moved from AS's mathbox to main set.mm
  5-Nov-25 sqnegd    [same]      Moved from II's mathbox to main set.mm
  2-Nov-25 oneltri   [same]      Moved from RP's mathbox to main set.mm
  1-Nov-25 elsnd     [same]      moved from TA's mathbox to main set.mm
