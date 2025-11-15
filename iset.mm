@@ -149070,6 +149070,16 @@ $)
         ( cmpt wcel cv cfv cbs cixp wral prdsbas2 eleq2d wb mptelixpg syl bitrd
         ) ABGFPZCQUIBGBRDSTSZUAZQZFUJQBGUBZACUKUIABCDEGHIJKLMNOUCUDAGIQULUMUENB
         GFUJIUFUGUH $.
+
+      ${
+        prdsbasmpt.t $e |- ( ph -> T e. B ) $.
+        $( Points in the structure product are functions; use this with
+           ~ dffn5im to establish equalities.  (Contributed by Stefan O'Rear,
+           10-Jan-2015.) $)
+        prdsbasfn $p |- ( ph -> T Fn I ) $=
+          ( vx cv cfv cbs cixp wcel wfn prdsbas2 eleqtrd ixpfn syl ) AEPFPQCRSR
+          ZTZUAEFUBAEBUHOAPBCDFGHIJKLMNUCUDPFUGEUEUF $.
+      $}
     $}
   $}
 
