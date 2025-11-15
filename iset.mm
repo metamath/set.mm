@@ -149046,6 +149046,25 @@ $)
   $}
 
   ${
+    $d f g x y z B $.  $d f g x y z F $.  $d f g x y z G $.  $d f g x y z ph $.
+    $d f g x y z I $.  $d x J $.  $d y z K $.  $d x T $.  $d x V $.
+    $d f g x y z R $.  $d f g x y z S $.  $d x W $.  $d f g x y z Y $.
+    prdsbasmpt.y $e |- Y = ( S Xs_ R ) $.
+    prdsbasmpt.b $e |- B = ( Base ` Y ) $.
+    ${
+      prdsbasmpt.s $e |- ( ph -> S e. V ) $.
+      prdsbasmpt.i $e |- ( ph -> I e. W ) $.
+      prdsbasmpt.r $e |- ( ph -> R Fn I ) $.
+      $( The base set of a structure product is an indexed set product.
+         (Contributed by Stefan O'Rear, 10-Jan-2015.)  (Revised by Mario
+         Carneiro, 15-Aug-2015.) $)
+      prdsbas2 $p |- ( ph -> B = X_ x e. I ( Base ` ( R ` x ) ) ) $=
+        ( cvv wfn wcel fnex syl2anc fndmd prdsbas ) ABCIDEFGOJLADFPFHQDOQNMFHDR
+        SKAFDNTUA $.
+    $}
+  $}
+
+  ${
     $d r i $.
     $( Define a structure power, which is just a structure product where all
        the factors are the same.  (Contributed by Mario Carneiro,
