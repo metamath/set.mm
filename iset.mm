@@ -149119,6 +149119,19 @@ $)
           UPAFBUPIHUPZVTRUAIFBHUQURAVQUNUPZWAADUNUPZWCWDADHUSHKUPWEQPHKDUTURUAI
           DUNHUQURVQUFUNVAVBVCAGBUPWCWBSUAIGBHUQURVOVPVRUNUNUNVEVDVFVG $.
       $}
+
+      ${
+        prdsmulrval.t $e |- .x. = ( .r ` Y ) $.
+        $( Value of a componentwise ring product in a structure product.
+           (Contributed by Mario Carneiro, 11-Jan-2015.) $)
+        prdsmulrval $p |- ( ph -> ( F .x. G ) = ( x e. I |-> ( ( F ` x )
+            ( .r ` ( R ` x ) ) ( G ` x ) ) ) ) $=
+          ( vy vz cv cfv cmulr co cmpt cvv wfn wcel fnex syl2anc fndmd prdsmulr
+          wceq wa fveq1 oveqan12d adantl mpteq2dv mptexd ovmpod ) AUAUBGHCCBIBU
+          CZUAUCZUDZVCUBUCZUDZVCDUDUEUDZUFZUGBIVCGUDZVCHUDZVHUFZUGFUHABCLDEFUAU
+          BIJUHMOADIUIIKUJDUHUJQPIKDUKULNAIDQUMTUNAVDGUOZVFHUOZUPZUPBIVIVLVOVIV
+          LUOAVMVNVEVJVGVKVHVCVDGUQVCVFHUQURUSUTRSABIVLKPVAVB $.
+      $}
     $}
   $}
 
