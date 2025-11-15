@@ -92,6 +92,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+14-Nov-25 pine0     [same]      Moved from SN's mathbox to main set.mm
+14-Nov-25 efne0d    [same]      Moved from SN's mathbox to main set.mm
  9-Nov-25 leadd12dd ---         deleted - redundant with le2addd
  9-Nov-25 leexp1ad  [same]      Moved from MKU's mathbox to main set.mm
  8-Nov-25 xrsupssd  [same]      Moved from TA's mathbox to main set.mm
