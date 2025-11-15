@@ -149039,6 +149039,22 @@ $)
         ^s = ( r e. _V , i e. _V |-> ( ( Scalar ` r ) Xs_ ( i X. { r } ) ) ) $.
   $}
 
+  ${
+    $d i r F $.  $d i r I $.  $d i r R $.
+    pwsval.y $e |- Y = ( R ^s I ) $.
+    pwsval.f $e |- F = ( Scalar ` R ) $.
+    $( Value of a structure power.  (Contributed by Mario Carneiro,
+       11-Jan-2015.) $)
+    pwsval $p |- ( ( R e. V /\ I e. W ) -> Y = ( F Xs_ ( I X. { R } ) ) ) $=
+      ( vr vi wcel wa cpws co csn cprds cvv wceq adantr csca cxp adantl scaslid
+      elex cfv slotex eqeltrid simpr snexg xpexg syl2anc prdsex cv simpl fveq2d
+      eqtr4di id sneq xpeq12 syl2anr oveq12d df-pws ovmpoga syl3anc eqtrid ) AD
+      KZCEKZLZFACMNZBCAOZUAZPNZGVHAQKZCQKZVLQKZVIVLRVFVMVGADUDSVGVNVFCEUDUBVHBQ
+      KZVKQKZVOVFVPVGVFBATUEZQHATDUCUFUGSVHVGVJQKZVQVFVGUHVFVSVGADUISCVJEQUJUKV
+      KBQQULUKIJACQQIUMZTUEZJUMZVTOZUAZPNVLMQVTARZWBCRZLZWABWDVKPWGWAVRBWGVTATW
+      EWFUNUOHUPWFWFWCVJRWDVKRWEWFUQVTAURWBCWCVJUSUTVAJIVBVCVDVE $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
