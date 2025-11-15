@@ -149079,6 +149079,16 @@ $)
         prdsbasfn $p |- ( ph -> T Fn I ) $=
           ( vx cv cfv cbs cixp wcel wfn prdsbas2 eleqtrd ixpfn syl ) AEPFPQCRSR
           ZTZUAEFUBAEBUHOAPBCDFGHIJKLMNUCUDPFUGEUEUF $.
+
+        prdsbasprj.j $e |- ( ph -> J e. I ) $.
+        $( Each point in a structure product restricts on each coordinate to
+           the relevant base set.  (Contributed by Stefan O'Rear,
+           10-Jan-2015.) $)
+        prdsbasprj $p |- ( ph -> ( T ` J ) e. ( Base ` ( R ` J ) ) ) $=
+          ( vx cfv wcel cv wceq fveq2 2fveq3 eleq12d cixp wral prdsbas2 eleqtrd
+          cbs cvv wfn elixp2 simp3bi syl rspcdva ) ARUAZESZUQCSUJSZTZGESZGCSUJS
+          ZTRFGUQGUBURVAUSVBUQGEUCUQGUJCUDUEAERFUSUFZTZUTRFUGZAEBVCPARBCDFHIJKL
+          MNOUHUIVDEUKTEFULVERFUSEUMUNUOQUP $.
       $}
     $}
   $}
