@@ -149055,6 +149055,24 @@ $)
       EWFUNUOHUPWFWFWCVJRWDVKRWEWFUQVTAURWBCWCVJUSUTVAJIVBVCVDVE $.
   $}
 
+  ${
+    $d x I $.  $d x w R $.  $d x V $.  $d x W $.
+    pwsbas.y $e |- Y = ( R ^s I ) $.
+    pwsbas.f $e |- B = ( Base ` R ) $.
+    $( Base set of a structure power.  (Contributed by Mario Carneiro,
+       11-Jan-2015.) $)
+    pwsbas $p |- ( ( R e. V /\ I e. W ) -> ( B ^m I ) = ( Base ` Y ) ) $=
+      ( vx vw wcel wa cbs cfv co cmap eqid cvv adantr wceq csn cxp cprds pwsval
+      csca cixp fveq2d cv scaslid slotex simpr snexg xpexg syl2anc cdm wex snmg
+      dmxpm syl prdsbas wral fvconst2g ralrimiva ixpeq2 eqtrd wfn basfn funfvex
+      elex funfni sylancr ixpconstg oveq1i eqtr4di 3eqtrrd ) BDKZCEKZLZFMNBUENZ
+      CBUAZUBZUCOZMNZICBMNZUFZACPOZVRFWBMBVSCDEFGVSQUDUGVRWCICIUHZWANZMNZUFZWEV
+      RIWCWBWAVSCRRWBQVPVSRKVQBUEDUIUJSVRVQVTRKZWARKVPVQUKZVPWKVQBDULSCVTERUMUN
+      WCQVPWAUOCTZVQVPJUHVTKJUPWMJBDUQJCVTURUSSUTVRWIWDTZICVAZWJWETVPWOVQVPWNIC
+      VPWGCKLWHBMCBWGDVBUGVCSICWIWDVDUSVEVRWEWDCPOZWFVRVQWDRKZWEWPTWLVPWQVQVPMR
+      VFBRKWQVGBDVIWQRBMBMVHVJVKSICWDERVLUNAWDCPHVMVNVO $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
