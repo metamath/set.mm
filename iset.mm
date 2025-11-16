@@ -149175,6 +149175,15 @@ $)
           ( ( x e. I |-> U ) e. B <-> A. x e. I U e. K ) ) $=
         ( cmpt wcel cixp wral prdsbas3 eleq2d wb mptelixpg syl bitrd ) ABGFSZCT
         UIBGHUAZTZFHTBGUBZACUJUIABCDEGHIJKLMNOPQRUCUDAGJTUKULUEPBGFHJUFUGUH $.
+
+      prdsbascl.f $e |- ( ph -> F e. B ) $.
+      $( An element of the base has projections closed in the factors.
+         (Contributed by Mario Carneiro, 27-Aug-2015.) $)
+      prdsbascl $p |- ( ph -> A. x e. I ( F ` x ) e. K ) $=
+        ( wcel cfv cmpt wral wfn wceq eqid fnmpt syl prdsbasfn dffn5im eqeltrrd
+        cv prdsbasmpt2 mpbid ) ABGBULFUAZUBZCTUOHTBGUCAFUPCAFGUDFUPUEACBGDUBZEF
+        GIJLMNOPADKTBGUCUQGUDQBGDUQKUQUFUGUHSUIBGFUJUHSUKABCDEUOGHIJKLMNOPQRUMU
+        N $.
     $}
   $}
 
