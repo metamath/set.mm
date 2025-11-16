@@ -149249,6 +149249,34 @@ $)
       KLSTUA $.
   $}
 
+  ${
+    $d x .+ $.  $d x F $.  $d x G $.  $d x I $.  $d x ph $.  $d x .x. $.
+    $d x R $.  $d x W $.
+    pwsplusgval.y $e |- Y = ( R ^s I ) $.
+    pwsplusgval.b $e |- B = ( Base ` Y ) $.
+    pwsplusgval.r $e |- ( ph -> R e. V ) $.
+    pwsplusgval.i $e |- ( ph -> I e. W ) $.
+    pwsplusgval.f $e |- ( ph -> F e. B ) $.
+    pwsplusgval.g $e |- ( ph -> G e. B ) $.
+    ${
+      pwsplusgval.a $e |- .+ = ( +g ` R ) $.
+      pwsplusgval.p $e |- .+b = ( +g ` Y ) $.
+      $( Value of addition in a structure power.  (Contributed by Mario
+         Carneiro, 11-Jan-2015.) $)
+      pwsplusgval $p |- ( ph -> ( F .+b G ) = ( F oF .+ G ) ) $=
+        ( cfv vx csca csn cxp cprds co cplusg cv cmpt cof cbs eqid wcel scaslid
+        cvv slotex syl fnconstg wceq pwsval syl2anc fveq2d eleqtrd prdsplusgval
+        wfn eqtrid fvconst2g sylan eqtr4di oveqd mpteq2dva eqtrd fvexg pwselbas
+        wa feqmptd offval2 3eqtr4d ) AFGEUBTZHEUCUDZUEUFZUGTZUFZUAHUAUHZFTZWDGT
+        ZCUFZUIZFGDUFFGCUJUFAWCUAHWEWFWDVTTZUGTZUFZUIWHAUAWAUKTZWBVTVSFGHUOJWAW
+        AULWLULAEIUMZVSUOUMNEUBIUNUPUQOAWMVTHVENHEIURUQAFBWLPABKUKTWLMAKWAUKAWM
+        HJUMKWAUSNOEVSHIJKLVSULUTVAZVBVFZVCAGBWLQWOVCWBULVDAUAHWKWGAWDHUMZVOZWJ
+        CWEWFWQWJEUGTCWQWIEUGAWMWPWIEUSNHEWDIVGVHVBRVIVJVKVLADWBFGADKUGTWBSAKWA
+        UGWNVBVFVJAUAHWEWFCFGJUOUOOAFBUMWPWEUOUMPWDFBHVMVHAGBUMWPWFUOUMQWDGBHVM
+        VHAUAHEUKTZFAWREHBIFKJLWRULZMNOPVNVPAUAHWRGAWREHBIGKJLWSMNOQVNVPVQVR $.
+    $}
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
