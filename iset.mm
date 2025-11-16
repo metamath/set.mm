@@ -149295,6 +149295,18 @@ $)
     $}
   $}
 
+  ${
+    pwsdiagel.y $e |- Y = ( R ^s I ) $.
+    pwsdiagel.b $e |- B = ( Base ` R ) $.
+    pwsdiagel.c $e |- C = ( Base ` Y ) $.
+    $( Membership of diagonal elements in the structure power base set.
+       (Contributed by Stefan O'Rear, 24-Jan-2015.) $)
+    pwsdiagel $p |- ( ( ( R e. V /\ I e. W ) /\ A e. B ) ->
+        ( I X. { A } ) e. C ) $=
+      ( wcel wa csn cxp wf fconst6g adantl wb pwselbasb adantr mpbird ) DFLEGLM
+      ZABLZMEANOZCLZEBUEPZUDUGUCEABQRUCUFUGSUDBDECFUEHGIJKTUAUB $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
