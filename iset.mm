@@ -149149,6 +149149,28 @@ $)
   $}
 
   ${
+    $d y B $.  $d x y F $.  $d x y G $.  $d y ph $.  $d y S $.  $d y V $.
+    $d x y I $.  $d y R $.  $d y W $.  $d y Y $.
+    prdsbasmpt2.y $e |- Y = ( S Xs_ ( x e. I |-> R ) ) $.
+    prdsbasmpt2.b $e |- B = ( Base ` Y ) $.
+    prdsbasmpt2.s $e |- ( ph -> S e. V ) $.
+    prdsbasmpt2.i $e |- ( ph -> I e. W ) $.
+    prdsbasmpt2.r $e |- ( ph -> A. x e. I R e. X ) $.
+    ${
+      prdsbasmpt2.k $e |- K = ( Base ` R ) $.
+      $( The base set of an indexed structure product.  (Contributed by Mario
+         Carneiro, 13-Sep-2015.) $)
+      prdsbas3 $p |- ( ph -> B = X_ x e. I K ) $=
+        ( vy cfv cbs cv cmpt cixp wcel wral wfn eqid syl prdsbas2 nfcv nffvmpt1
+        nffv 2fveq3 cbvixp eqtrdi wceq wa fvmpt2 fveq2d eqtr4di ralimiaa ixpeq2
+        fnmpt 3syl eqtrd ) ACBFBUAZBFDUBZSZTSZUCZBFGUCZACRFRUAZVGSZTSZUCVJARCVG
+        EFHIKLMNOADJUDZBFUEZVGFUFPBFDVGJVGUGZVCUHUIRBFVNVIBVMTBTUJBFDVLUKULRVIU
+        JVLVFTVGUMUNUOAVPVIGUPZBFUEVJVKUPPVOVRBFVFFUDVOUQZVIDTSGVSVHDTBFDJVGVQU
+        RUSQUTVABFVIGVBVDVE $.
+    $}
+  $}
+
+  ${
     $d r i $.
     $( Define a structure power, which is just a structure product where all
        the factors are the same.  (Contributed by Mario Carneiro,
