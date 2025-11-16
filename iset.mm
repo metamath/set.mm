@@ -149275,6 +149275,24 @@ $)
         UGWNVBVFVJAUAHWEWFCFGJUOUOOAFBUMWPWEUOUMPWDFBHVMVHAGBUMWPWFUOUMQWDGBHVM
         VHAUAHEUKTZFAWREHBIFKJLWRULZMNOPVNVPAUAHWRGAWREHBIGKJLWSMNOQVNVPVQVR $.
     $}
+
+    ${
+      pwsmulrval.a $e |- .x. = ( .r ` R ) $.
+      pwsmulrval.p $e |- .xb = ( .r ` Y ) $.
+      $( Value of multiplication in a structure power.  (Contributed by Mario
+         Carneiro, 11-Jan-2015.) $)
+      pwsmulrval $p |- ( ph -> ( F .xb G ) = ( F oF .x. G ) ) $=
+        ( cfv vx csca csn cxp cprds co cmulr cmpt cof cbs cvv eqid wcel scaslid
+        cv slotex syl fnconstg pwsval syl2anc fveq2d eqtrid eleqtrd prdsmulrval
+        wfn wceq wa fvconst2g sylan eqtr4di oveqd mpteq2dva eqtrd fvexg feqmptd
+        pwselbas offval2 3eqtr4d ) AFGCUBTZHCUCUDZUEUFZUGTZUFZUAHUAUOZFTZWDGTZE
+        UFZUHZFGDUFFGEUIUFAWCUAHWEWFWDVTTZUGTZUFZUHWHAUAWAUJTZVTVSWBFGHUKJWAWAU
+        LWLULACIUMZVSUKUMNCUBIUNUPUQOAWMVTHVENHCIURUQAFBWLPABKUJTWLMAKWAUJAWMHJ
+        UMKWAVFNOCVSHIJKLVSULUSUTZVAVBZVCAGBWLQWOVCWBULVDAUAHWKWGAWDHUMZVGZWJEW
+        EWFWQWJCUGTEWQWICUGAWMWPWICVFNHCWDIVHVIVARVJVKVLVMADWBFGADKUGTWBSAKWAUG
+        WNVAVBVKAUAHWEWFEFGJUKUKOAFBUMWPWEUKUMPWDFBHVNVIAGBUMWPWFUKUMQWDGBHVNVI
+        AUAHCUJTZFAWRCHBIFKJLWRULZMNOPVPVOAUAHWRGAWRCHBIGKJLWSMNOQVPVOVQVR $.
+    $}
   $}
 
 
