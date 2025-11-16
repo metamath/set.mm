@@ -149131,6 +149131,19 @@ $)
           CZUAUCZUDZVCUBUCZUDZVCDUDUEUDZUFZUGBIVCGUDZVCHUDZVHUFZUGFUHABCLDEFUAU
           BIJUHMOADIUIIKUJDUHUJQPIKDUKULNAIDQUMTUNAVDGUOZVFHUOZUPZUPBIVIVLVOVIV
           LUOAVMVNVEVJVGVKVHVCVDGUQVCVFHUQURUSUTRSABIVLKPVAVB $.
+
+        prdsmulrfval.j $e |- ( ph -> J e. I ) $.
+        $( Value of a structure product's ring product at a single coordinate.
+           (Contributed by Mario Carneiro, 11-Jan-2015.) $)
+        prdsmulrfval $p |- ( ph -> ( ( F .x. G ) ` J ) = ( ( F ` J )
+            ( .r ` ( R ` J ) ) ( G ` J ) ) ) $=
+          ( vx co cfv cv cmulr cmpt prdsmulrval fveq1d cvv eqid 2fveq3 oveq123d
+          wceq fveq2 wcel fvexg syl2anc wfn mulrslid slotex syl syl3anc fvmptd3
+          fnex ovexg eqtrd ) AIFGEUCZUDIUBHUBUEZFUDZVIGUDZVICUDUFUDZUCZUGZUDIFU
+          DZIGUDZICUDZUFUDZUCZAIVHVNAUBBCDEFGHJKLMNOPQRSTUHUIAUBIVMVSHVNUJVNUKV
+          IIUNVJVOVKVPVLVRVIIUFCULVIIFUOVIIGUOUMUAAVOUJUPZVRUJUPZVPUJUPZVSUJUPA
+          FBUPIHUPZVTRUAIFBHUQURAVQUJUPZWAACUJUPZWCWDACHUSHKUPWEQPHKCVEURUAICUJ
+          HUQURVQUFUJUTVAVBAGBUPWCWBSUAIGBHUQURVOVPVRUJUJUJVFVCVDVG $.
       $}
     $}
   $}
