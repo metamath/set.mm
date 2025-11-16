@@ -149167,6 +149167,14 @@ $)
         EFHIKLMNOADJUDZBFUEZVGFUFPBFDVGJVGUGZVCUHUIRBFVNVIBVMTBTUJBFDVLUKULRVIU
         JVLVFTVGUMUNUOAVPVIGUPZBFUEVJVKUPPVOVRBFVFFUDVOUQZVIDTSGVSVHDTBFDJVGVQU
         RUSQUTVABFVIGVBVDVE $.
+
+      $( A constructed tuple is a point in a structure product iff each
+         coordinate is in the proper base set.  (Contributed by Mario Carneiro,
+         3-Jul-2015.)  (Revised by Mario Carneiro, 13-Sep-2015.) $)
+      prdsbasmpt2 $p |- ( ph ->
+          ( ( x e. I |-> U ) e. B <-> A. x e. I U e. K ) ) $=
+        ( cmpt wcel cixp wral prdsbas3 eleq2d wb mptelixpg syl bitrd ) ABGFSZCT
+        UIBGHUAZTZFHTBGUBZACUJUIABCDEGHIJKLMNOPQRUCUDAGJTUKULUEPBGFHJUFUGUH $.
     $}
   $}
 
