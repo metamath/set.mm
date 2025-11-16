@@ -149307,6 +149307,22 @@ $)
       ZABLZMEANOZCLZEBUEPZUDUGUCEABQRUCUFUGSUDBDECFUEHGIJKTUAUB $.
   $}
 
+  ${
+    $d Y x $.  $d R x $.  $d I x $.  $d B x $.  $d C x $.  $d W x $.
+    pwssnf1o.y $e |- Y = ( R ^s { I } ) $.
+    pwssnf1o.b $e |- B = ( Base ` R ) $.
+    pwssnf1o.f $e |- F = ( x e. B |-> ( { I } X. { x } ) ) $.
+    pwssnf1o.c $e |- C = ( Base ` Y ) $.
+    $( Triviality of singleton powers: set equipollence.  (Contributed by
+       Stefan O'Rear, 24-Jan-2015.) $)
+    pwssnf1o $p |- ( ( R e. V /\ I e. W ) -> F : B -1-1-onto-> C ) $=
+      ( wcel wa wf1o csn cvv cbs cfv cmap wfn basfn elex adantr funfvex sylancr
+      funfni eqeltrid mapsnf1o sylancom wceq snexg pwsbas sylan2 eqtr4id mpbird
+      co f1oeq3d ) DGNZFHNZOZBCEPBBFQZUAURZEPZUTVABRNVEVBBDSTZRKVBSRUBDRNZVFRNZ
+      UCUTVGVADGUDUEVHRDSDSUFUHUGUIABEFRHLUJUKVBCVDBEVBCISTZVDMVAUTVCRNVDVIULFH
+      UMBDVCGRIJKUNUOUPUSUQ $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
