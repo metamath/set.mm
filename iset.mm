@@ -54597,6 +54597,12 @@ $)
     ( wcel w3a co cop cfv cvv df-ov simp2 opexg 3adant2 fvexg syl2anc eqeltrid
     ) ADGZCEGZBFGZHZABCIABJZCKZLABCMUCUAUDLGZUELGTUAUBNTUBUFUAABDFOPUDCELQRS $.
 
+  $( The result of an operation value is always a subset of the union of the
+     range.  (Contributed by Mario Carneiro, 12-Jan-2017.) $)
+  ovssunirng $p |- ( ( X e. V /\ Y e. W ) -> ( X F Y ) C_ U. ran F ) $=
+    ( wcel wa co cop cfv crn cuni df-ov cvv wss opexg fvssunirng syl eqsstrid )
+    DBFECFGZDEAHDEIZAJZAKLZDEAMTUANFUBUCODEBCPUAAQRS $.
+
   ${
     ovprc1.1 $e |- Rel dom F $.
     $( The value of an operation when the one of the arguments is a proper
@@ -65779,6 +65785,7 @@ $)
     f1oen3g $p |- ( ( F e. V /\ F : A -1-1-onto-> B ) -> A ~~ B ) $=
       ( vf wcel wf1o wa cv wex cen wbr f1oeq1 spcegv imp bren sylibr ) CDFZABCG
       ZHABEIZGZEJZABKLRSUBUASECDABTCMNOABEPQ $.
+    $( $j usage 'f1oen3g' avoids 'ax-coll'; $)
 
     $( The domain and range of a one-to-one, onto function are equinumerous.
        This variation of ~ f1oeng does not require the Axiom of Replacement.
@@ -65787,6 +65794,7 @@ $)
       ( wcel wf1o w3a cvv cen wbr f1of fex2 syl3an1 3coml simp3 f1oen3g syl2anc
       wf ) ADFZBEFZABCGZHCIFZUBABJKUBTUAUCUBABCSTUAUCABCLABCDEMNOTUAUBPABCIQR
       $.
+    $( $j usage 'f1oen2g' avoids 'ax-coll'; $)
 
     $( The domain of a one-to-one function is dominated by its codomain.  This
        variation of ~ f1domg does not require the Axiom of Replacement.
@@ -65796,6 +65804,7 @@ $)
       f1eq1 spcegv sylc brdomg 3ad2ant2 mpbird ) ADGZBEGZABCHZIZABJKZABFLZHZFMZ
       UKCNGZUJUOUJUHUIUPUJABCOUHUIUPABCPABCDEQRSUHUIUJTUNUJFCNABUMCUBUCUDUIUHUL
       UOUAUJABEFUEUFUG $.
+    $( $j usage 'f1dom2g' avoids 'ax-coll'; $)
 
     $( The domain and range of a one-to-one, onto function are equinumerous.
        (Contributed by NM, 19-Jun-1998.) $)
@@ -146741,16 +146750,19 @@ $)
 
   ${
     strfv3.u $e |- ( ph -> U = S ) $.
-    strfv3.s $e |- S Struct X $.
+    strslfv3.s $e |- ( ph -> S Struct X ) $.
     strslfv3.e $e |- ( E = Slot ( E ` ndx ) /\ ( E ` ndx ) e. NN ) $.
-    strfv3.n $e |- { <. ( E ` ndx ) , C >. } C_ S $.
+    strslfv3.n $e |- ( ph -> { <. ( E ` ndx ) , C >. } C_ S ) $.
     strfv3.c $e |- ( ph -> C e. V ) $.
     strfv3.a $e |- A = ( E ` U ) $.
     $( Variant on ~ strslfv for large structures.  (Contributed by Mario
        Carneiro, 10-Jan-2017.)  (Revised by Jim Kingdon, 30-Jan-2023.) $)
     strslfv3 $p |- ( ph -> A = C ) $=
-      ( cfv wcel wceq strslfv syl fveq2d eqtr4d eqtr4id ) ABEFOZCNACDFOZUCACGPC
-      UDQMCDFGHJKLRSAEDFITUAUB $.
+      ( cfv cvv wcel syl ccnv wfun wbr structex structfung cnveqd funeqd mpbird
+      cstr eqeltrd cnx cop csn wss wb cn cslot wceq simpri opexg snssg eleqtrrd
+      sylancr strslfv2d eqtr4id ) ABEFOCNACEFPGKAEDPIADHUGUAZDPQJDHUBRUHAESZSZT
+      DSZSZTZAVDVIJDHUCRAVFVHAVEVGAEDIUDUDUEUFAUIFOZCUJZDEAVKDQZVKUKDULZLAVKPQZ
+      VLVMUMAVJUNQZCGQVNFVJUOUPVOKUQMVJCUNGURVAVKDPUSRUFIUTMVBVC $.
   $}
 
   ${
@@ -148109,6 +148121,28 @@ $)
     plendx mpbir c9 9re 9lt10 tsetndx pm3.2i ) ABCZADCZEZAFCZUDEZUEGHIJZEGUHKLM
     UCGUDUHNPOQUGRUHERUHSTMUFRUDUHUAPOQUB $.
 
+  $( Index value of the ~ df-ocomp slot.  (Contributed by Mario Carneiro,
+     25-Oct-2015.)  (New usage is discouraged.) $)
+  ocndx $p |- ( oc ` ndx ) = ; 1 1 $=
+    ( coc c1 cdc df-ocomp 1nn0 1nn decnncl ndxarg ) ABBCDBBEFGH $.
+
+  $( Utility theorem: index-independent form of ~ df-ocomp .  (Contributed by
+     Mario Carneiro, 25-Oct-2015.) $)
+  ocid $p |- oc = Slot ( oc ` ndx ) $=
+    ( coc c1 cdc df-ocomp 1nn0 1nn decnncl ndxid ) ABBCDBBEFGH $.
+
+  $( The slot for the orthocomplementation is not the slot for the base set in
+     an extensible structure.  (Contributed by AV, 11-Nov-2024.) $)
+  basendxnocndx $p |- ( Base ` ndx ) =/= ( oc ` ndx ) $=
+    ( cnx cbs cfv coc wne c1 cdc 1re 1nn 1nn0 1lt10 declti ltneii basendx ocndx
+    neeq12i mpbir ) ABCZADCZEFFFGZEFTHFFFIJJKLMRFSTNOPQ $.
+
+  $( The slot for the orthocomplementation is not the slot for the order in an
+     extensible structure.  (Contributed by AV, 11-Nov-2024.) $)
+  plendxnocndx $p |- ( le ` ndx ) =/= ( oc ` ndx ) $=
+    ( cnx cple cfv coc wne cc0 cdc 10re 1nn0 0nn0 1nn declt ltneii plendx ocndx
+    c1 0lt1 neeq12i mpbir ) ABCZADCZEPFGZPPGZEUBUCHPFPIJKQLMTUBUAUCNORS $.
+
   $( Index value of the ~ df-ds slot.  (Contributed by Mario Carneiro,
      14-Aug-2015.) $)
   dsndx $p |- ( dist ` ndx ) = ; 1 2 $=
@@ -148231,6 +148265,11 @@ $)
     UMJKVMFVKWAUNLMNVPOWACOWAUOEFOPHUPVDJKVOOVKWAUQLMNURVRVTVREQGZWACWBWAUSEQFR
     UTSVATKVQWBVKWAVBLMNVTEDGZWACWCWAWCEDRVCVEVFEDFRISVGTKVSWCVKWAVHLMNVIVI $.
 
+  $( Index value of the ~ df-hom slot.  (Contributed by Mario Carneiro,
+     7-Jan-2017.)  (New usage is discouraged.) $)
+  homndx $p |- ( Hom ` ndx ) = ; 1 4 $=
+    ( chom c1 c4 cdc df-hom 1nn0 4nn decnncl ndxarg ) ABCDEBCFGHI $.
+
   $( Utility theorem: index-independent form of ~ df-hom .  (Contributed by
      Mario Carneiro, 7-Jan-2017.) $)
   homid $p |- Hom = Slot ( Hom ` ndx ) $=
@@ -148239,6 +148278,11 @@ $)
   $( Slot property of ` Hom ` .  (Contributed by Jim Kingdon, 20-Mar-2025.) $)
   homslid $p |- ( Hom = Slot ( Hom ` ndx ) /\ ( Hom ` ndx ) e. NN ) $=
     ( chom c1 c4 cdc df-hom 1nn0 4nn decnncl ndxslid ) ABCDEBCFGHI $.
+
+  $( Index value of the ~ df-cco slot.  (Contributed by Mario Carneiro,
+     7-Jan-2017.)  (New usage is discouraged.) $)
+  ccondx $p |- ( comp ` ndx ) = ; 1 5 $=
+    ( cco c1 c5 cdc df-cco 1nn0 5nn decnncl ndxarg ) ABCDEBCFGHI $.
 
   $( Utility theorem: index-independent form of ~ df-cco .  (Contributed by
      Mario Carneiro, 7-Jan-2017.) $)
@@ -148526,8 +148570,8 @@ $)
        modules, or ordered topological fields; any unused components will have
        garbage in them but this is usually not relevant for the purpose of
        inheriting the structures present in the factors.  (Contributed by
-       Stefan O'Rear, 3-Jan-2015.)  (Revised by Thierry Arnoux,
-       15-Jun-2019.) $)
+       Stefan O'Rear, 3-Jan-2015.)  (Revised by Thierry Arnoux, 15-Jun-2019.)
+       (Revised by Zhi Wang, 18-Aug-2024.) $)
     df-prds $a |- Xs_ = ( s e. _V , r e. _V |->
       [_ X_ x e. dom r ( Base ` ( r ` x ) ) / v ]_
       [_ ( f e. v , g e. v |-> X_ x e. dom r
@@ -148550,7 +148594,7 @@ $)
            u. { 0 } ) , RR* , < ) ) >. } u.
       { <. ( Hom ` ndx ) , h >. ,
         <. ( comp ` ndx ) , ( a e. ( v X. v ) , c e. v |->
-           ( d e. ( c h ( 2nd ` a ) ) , e e. ( h ` a ) |-> ( x e. dom r |->
+           ( d e. ( ( 2nd ` a ) h c ) , e e. ( h ` a ) |-> ( x e. dom r |->
              ( ( d ` x ) ( <. ( ( 1st ` a ) ` x ) , ( ( 2nd ` a ) ` x ) >.
                ( comp ` ( r ` x ) ) ( c ` x ) ) ( e ` x ) ) ) ) ) >. } ) ) ) $.
 
@@ -148565,8 +148609,8 @@ $)
       VTGLZMZWAUEMOUDPQNMWBRQUFMFGWBWBDVSWDWFWAUFMOSPRQUGMFGWBWBDVSWDWFWAUGMOSP
       RUHQUIMALZRQUJMFGWGNMWBDVSWCWFWAUJMOSPRQUKMFGWBWBWGDVSWDWFWAUKMOSULOPRUHT
       QUMMUNVRUOUPMRQUQMWCWEURWBUSWDWFWAUQMUTDVSVAUAFGVBRQVCMFGWBWBDVSWDWFWAVCM
-      OSVDVEVFTVGVHVIPRUHQUEMELZRQVJMHIWBWBVKWBJKILZHLZVLMZWHOWJWHMDVSVTJLMVTKL
-      MVTWJVNMMVTWKMRVTWIMWAVJMOOSPPRURTTVMVMVODCKFGEABHIJVPVQ $.
+      OSVDVEVFTVGVHVIPRUHQUEMELZRQVJMHIWBWBVKWBJKHLZVLMZILZWHOWIWHMDVSVTJLMVTKL
+      MVTWIVNMMVTWJMRVTWKMWAVJMOOSPPRURTTVMVMVODCKFGEABHIJVPVQ $.
   $}
 
   ${
@@ -148592,8 +148636,8 @@ $)
       WCFUVRUWEUWGUVTUMMZKZRZOZQZUNZPUOMZBQZPUPMZHIBNMZUWCFUVRUWDUWGUVTUPMZKZRZ
       OZQZPUQMZHIUWCUWCBFUVRUWEUWGUVTUQMZKZRZVAKZOZQZUNZURZPUSMZUTAVBZVCMZQZPVD
       MZUWDUWFVEUWCVFZUWEUWGUVTVDMZVGZFUVRVHZUHZHIVIZQZPVJMZHIUWCUWCFUVRUWEUWGU
-      VTVJMZKZRZVKZVLVMZURZVNVOVRZOZQZUNZPUKMZGLZQZPVPMZUAUBUWCUWCVQZUWCUCUEUBL
-      ZUALZVSMZVUIKZVUNVUIMZFUVRUVSUCLMZUVSUELMZUVSVUNVTMMUVSVUOMQZUVSVUMMZUVTV
+      VTVJMZKZRZVKZVLVMZURZVNVOVRZOZQZUNZPUKMZGLZQZPVPMZUAUBUWCUWCVQZUWCUCUEUAL
+      ZVSMZUBLZVUIKZVUMVUIMZFUVRUVSUCLMZUVSUELMZUVSVUMVTMMUVSVUNMQZUVSVUOMZUVTV
       PMZKZKZRZOZOZQZVEZURZURZWAZWAZSUVPBSJZASJZVVMSJZUVQVVMWBUVNVVNUVOBCWLWCUV
       OVVOUVNADWLWDUVPUWBSJZVVLSJZEWEVVPUVOUVRSJUVNUWASJZFUVRVHVVQADWFUVPVVSFUV
       RUVPNSWGZUVTSJZVVSWHUVPUVOUVSSJVWAUVNUVOWIZFWJUVSADSWKWMVVSSUVTNUVTNWNWOW
@@ -148637,6 +148681,353 @@ $)
       YIYMYPUVGUVHUVIYNYQYRWWGWVSVVHVUJWWGWVRVVGVUKWWGUAUBVULUWCWVQVVFWWGUCUEVU
       PVUQWVPVVEWWGFVXTWVOUVRVVDWWIWWGWVNVVCVURVUSWWGWVMVVBVUTVVAWWGVYAUVTVPWWK
       YIYMYMYPYNYNYQUVJYSYSYTYKYTYKFEUEHIGUFUGUAUBUCUVKUVLXJVXRUVM $.
+  $}
+
+  ${
+    imasvalstr.u $e |- U = ( ( { <. ( Base ` ndx ) , B >. ,
+        <. ( +g ` ndx ) , .+ >. , <. ( .r ` ndx ) , .X. >. } u.
+        { <. ( Scalar ` ndx ) , S >. , <. ( .s ` ndx ) , .x. >. ,
+          <. ( .i ` ndx ) , ., >. } ) u.
+        { <. ( TopSet ` ndx ) , O >. , <. ( le ` ndx ) , L >. ,
+        <. ( dist ` ndx ) , D >. } ) $.
+    imasvalstrd.b $e |- ( ph -> B e. V ) $.
+    imasvalstrd.p $e |- ( ph -> .+ e. W ) $.
+    imasvalstrd.m $e |- ( ph -> .X. e. X ) $.
+    imasvalstrd.s $e |- ( ph -> S e. Y ) $.
+    imasvalstrd.c $e |- ( ph -> .x. e. Z ) $.
+    imasvalstrd.i $e |- ( ph -> ., e. P ) $.
+    imasvalstrd.t $e |- ( ph -> O e. Q ) $.
+    imasvalstrd.l $e |- ( ph -> L e. R ) $.
+    imasvalstrd.d $e |- ( ph -> D e. A ) $.
+    $( An image structure value is a structure.  (Contributed by Stefan O'Rear,
+       3-Jan-2015.)  (Revised by Mario Carneiro, 30-Apr-2015.)  (Revised by
+       Thierry Arnoux, 16-Jun-2019.) $)
+    imasvalstrd $p |- ( ph -> U Struct <. 1 , ; 1 2 >. ) $=
+      ( cnx cbs cfv cop cplusg cmulr ctp csca cvsca cip cun cts cple cds c1 cdc
+      c2 cstr c8 c9 eqid ipsstrd wcel wbr cc0 9nn tsetndx 10nn plendx 1nn0 0nn0
+      9lt10 2nn 2pos declt decnncl dsndx strle3g syl3anc 8lt9 strleund eqbrtrid
+      clt a1i ) ALUKULUMCUNUKUOUMFUNUKUPUMKUNUQUKURUMIUNUKUSUMJUNUKUTUMMUNUQVAZ
+      UKVBUMZOUNUKVCUMZNUNUKVDUMZDUNUQZVAVEVEVGVFZUNVHUAAVEVIVJWTWOWSAWOCFTIJKM
+      PQRSEWOVKUBUCUDUEUFUGVLAOGVMNHVMDBVMWSVJWTUNVHVNUHUIUJWPWQWRBVJVEVOVFWTGH
+      ONDVPVQWBVRVSVEVOVGVTWAWCWDWEVEVGVTWCWFWGWHWIVIVJWMVNAWJWNWKWL $.
+  $}
+
+  ${
+    prdsvalstrd.b $e |- ( ph -> B e. V ) $.
+    prdsvalstrd.p $e |- ( ph -> .+ e. W ) $.
+    prdsvalstrd.m $e |- ( ph -> .X. e. X ) $.
+    prdsvalstrd.s $e |- ( ph -> S e. Y ) $.
+    prdsvalstrd.c $e |- ( ph -> .x. e. Z ) $.
+    prdsvalstrd.i $e |- ( ph -> ., e. P ) $.
+    prdsvalstrd.t $e |- ( ph -> O e. Q ) $.
+    prdsvalstrd.l $e |- ( ph -> L e. R ) $.
+    prdsvalstrd.d $e |- ( ph -> D e. A ) $.
+    prdsvalstrd.h $e |- ( ph -> H e. T ) $.
+    prdsvalstrd.x $e |- ( ph -> .xb e. U ) $.
+    $( Structure product value is a structure.  (Contributed by Stefan O'Rear,
+       3-Jan-2015.)  (Revised by Mario Carneiro, 30-Apr-2015.)  (Revised by
+       Thierry Arnoux, 16-Jun-2019.) $)
+    prdsvalstrd $p |- ( ph -> ( ( { <. ( Base ` ndx ) , B >. ,
+        <. ( +g ` ndx ) , .+ >. , <. ( .r ` ndx ) , .X. >. } u.
+        { <. ( Scalar ` ndx ) , S >. , <. ( .s ` ndx ) , .x. >. ,
+          <. ( .i ` ndx ) , ., >. } ) u.
+      ( { <. ( TopSet ` ndx ) , O >. , <. ( le ` ndx ) , L >. ,
+          <. ( dist ` ndx ) , D >. } u.
+        { <. ( Hom ` ndx ) , H >. , <. ( comp ` ndx ) , .xb >. } ) )
+        Struct <. 1 , ; 1 5 >. ) $=
+      ( cnx cbs cfv cop cplusg cmulr ctp csca cip cun cts cple cds chom cco cpr
+      cvsca c1 c5 cdc cstr unass c2 c4 eqid imasvalstrd wcel wbr decnncl homndx
+      1nn0 4nn 4nn0 5nn 4lt5 declt ccondx strle2g syl2anc clt 2nn0 a1i strleund
+      2lt4 eqbrtrrid ) AUOUPUQCURUOUSUQFURUOUTUQMURVAUOVBUQIURUOVKUQLURUOVCUQPU
+      RVAVDZUOVEUQRURUOVFUQQURUOVGUQDURVAZUOVHUQZOURUOVIUQZJURVJZVDVDWTXAVDZXDV
+      DVLVLVMVNZURVOWTXAXDVPAVLVLVQVNZVLVRVNZXFXEXDABCDEFGHILMXEPQRSTUAUBUCXEVS
+      UDUEUFUGUHUIUJUKULVTAOKWAJNWAXDXHXFURVOWBUMUNXBXCXHXFKNOJVLVRWEWFWCWDVLVR
+      VMWEWGWHWIWJVLVMWEWHWCWKWLWMXGXHWNWBAVLVQVRWEWOWFWRWJWPWQWS $.
+  $}
+
+  ${
+    $d r x $.  $d f g r $.  $d f g v $.
+    $( Lemma for ~ prdsval .  (Contributed by Stefan O'Rear, 3-Jan-2015.)
+       Extracted from the former proof of ~ prdsval , dependency on ~ df-hom
+       removed.  (Revised by AV, 13-Oct-2024.) $)
+    prdsvallem $p |- ( f e. v , g e. v |-> X_ x e. dom r ( ( f ` x )
+                                     ( Hom ` ( r ` x ) ) ( g ` x ) ) ) e. _V $=
+      ( cv cfv chom co crn cuni cmap vex cvv wcel rnex uniex wss fvex wtru cixp
+      cdm cpw cxp wfn fnmap dmex mp3an pwex wral ovssunirng mp2an cnx homid a1i
+      fnovex cslot wceq homslid simpri strfvssn mptru fvssunirng elv rnss uniss
+      cn mp2b sstri rgenw ss2ixp ax-mp ixpconst sseqtri elpwi2 rgen2w mpoexw )
+      CDBFZVRAEFZUBZAFZCFZGZWADFZGZWAVSGZHGZIZUAZVSJZKZJZKZJZKZVTLIZUCZBMZWRWPL
+      NNUDUEWONOVTNOWPNOUFWNWMWLWKWJVSEMZPQPQPQZVSWSUGZWOVTNNLUPUHZUIWIWQOCDVRV
+      RWIWPNXBWIAVTWOUAZWPWHWORZAVTUJWIXCRXDAVTWHWGJZKZWOWCNOWENOWHXFRWAWBNNCMA
+      MZSWAWDNNDMXGSWGNNWCWEUKULWGWMRXEWNRXFWORWGWFJZKZWMWGXIRTWFHUMHGZNUNWFNOT
+      WAVSNNWSXGSUOXJVGOZTHXJUQURXKUSUTUOVAVBWFWKRZXHWLRXIWMRXLAWAVSVCVDWFWKVEX
+      HWLVFVHVIWGWMVEXEWNVFVHVIVJAVTWHWOVKVLAVTWOXAWTVMVNVOVPVQ $.
+    $( $j usage 'prdsvallem' avoids 'ax-coll' ; $)
+  $}
+
+  ${
+    $d h r s v .+ $.  $d h r s v .<_ $.  $d a c d e f g h r s v B $.
+    $d a c d e h r s v H $.  $d a c d e f g h r s v x ph $.  $d h r s v D $.
+    $d h r s v O $.  $d h r s v .X. $.  $d h r s v .xb $.  $d x I $.
+    $d a c d e f g h r s v x R $.  $d a c d e f g h r s v x S $.
+    $d h r s v .x. $.  $d h r s v ., $.  $d f g K $.
+    prdsval.p $e |- P = ( S Xs_ R ) $.
+    prdsval.k $e |- K = ( Base ` S ) $.
+    prdsval.i $e |- ( ph -> dom R = I ) $.
+    prdsval.b $e |- ( ph -> B = X_ x e. I ( Base ` ( R ` x ) ) ) $.
+    prdsval.a $e |- ( ph -> .+ = ( f e. B , g e. B |-> ( x e. I |->
+        ( ( f ` x ) ( +g ` ( R ` x ) ) ( g ` x ) ) ) ) ) $.
+    prdsval.t $e |- ( ph -> .X. = ( f e. B , g e. B |-> ( x e. I |->
+        ( ( f ` x ) ( .r ` ( R ` x ) ) ( g ` x ) ) ) ) ) $.
+    prdsval.m $e |- ( ph -> .x. = ( f e. K , g e. B |-> ( x e. I |->
+        ( f ( .s ` ( R ` x ) ) ( g ` x ) ) ) ) ) $.
+    prdsval.j $e |- ( ph -> ., = ( f e. B , g e. B |-> ( S gsum
+        ( x e. I |-> ( ( f ` x ) ( .i ` ( R ` x ) ) ( g ` x ) ) ) ) ) ) $.
+    prdsval.o $e |- ( ph -> O = ( Xt_ ` ( TopOpen o. R ) ) ) $.
+    prdsval.l $e |- ( ph -> .<_ = { <. f , g >. | ( { f , g } C_ B /\
+        A. x e. I ( f ` x ) ( le ` ( R ` x ) ) ( g ` x ) ) } ) $.
+    prdsval.d $e |- ( ph -> D = ( f e. B , g e. B |-> sup ( ( ran ( x e. I |->
+   ( ( f ` x ) ( dist ` ( R ` x ) ) ( g ` x ) ) ) u. { 0 } ) , RR* , < ) ) ) $.
+    prdsval.h $e |- ( ph -> H = ( f e. B , g e. B |-> X_ x e. I
+           ( ( f ` x ) ( Hom ` ( R ` x ) ) ( g ` x ) ) ) ) $.
+    prdsval.x $e |- ( ph -> .xb = ( a e. ( B X. B ) , c e. B |->
+        ( d e. ( ( 2nd ` a ) H c ) , e e. ( H ` a ) |-> ( x e. I |->
+          ( ( d ` x ) ( <. ( ( 1st ` a ) ` x ) , ( ( 2nd ` a ) ` x ) >.
+            ( comp ` ( R ` x ) ) ( c ` x ) ) ( e ` x ) ) ) ) ) ) $.
+    prdsval.s $e |- ( ph -> S e. W ) $.
+    prdsval.r $e |- ( ph -> R e. Z ) $.
+    $( Value of the structure product.  (Contributed by Stefan O'Rear,
+       3-Jan-2015.)  (Revised by Mario Carneiro, 7-Jan-2017.)  (Revised by
+       Thierry Arnoux, 16-Jun-2019.)  (Revised by Zhi Wang, 18-Aug-2024.) $)
+    prdsval $p |- ( ph -> P = ( ( { <. ( Base ` ndx ) , B >. ,
+        <. ( +g ` ndx ) , .+ >. , <. ( .r ` ndx ) , .X. >. } u.
+        { <. ( Scalar ` ndx ) , S >. , <. ( .s ` ndx ) , .x. >. ,
+          <. ( .i ` ndx ) , ., >. } ) u.
+      ( { <. ( TopSet ` ndx ) , O >. , <. ( le ` ndx ) , .<_ >. ,
+          <. ( dist ` ndx ) , D >. } u.
+        { <. ( Hom ` ndx ) , H >. , <. ( comp ` ndx ) , .xb >. } ) ) ) $=
+      ( vs vr vv vh cprds co cnx cbs cfv cop cplusg cmulr ctp csca cip cun cple
+      cvsca cds chom cco cpr cvv cdm cixp cmpo cmpt cgsu ctopn ccom cpt wss wbr
+      cv wral copab crn cxr clt csup cxp csb wceq a1i cmap wcel cuni rnex uniex
+      wa vex wtru cn basendxnn ax-mp wfn fveq1d fveq2d ixpeq2dv ad2antrr adantr
+      simpr mpoeq123dv eqtr4d opeq2d mpteq12dv ad4antr tpeq123d uneq12d sylancr
+      oveqd syl2anc eqeltrd opexg mpoexga cslot simpri tpexg syl3anc unexg c2nd
+      cts cc0 csn c1st df-prds ciun baseid fvex strfvssn mptru fvssunirng uniss
+      elv rnss mp2b sstri rgenw iunss mpbir ssexi ixpssmap2g fnmap fnovex mp3an
+      dmex ssex dmeqd eqtrd ixpeq1d 3eqtr4d prdsvallem ad3antrrr simplr simp-4r
+      simpllr eqtr4di oveq12d coeq2d sseq2d wb breqd raleqbidv anbi12d opabbidv
+      mp1i rneqd uneq1d supeq1d sqxpeqd preq12d anasss elexd dmexg syl eqeltrrd
+      csbied2 basfn fvexg sylancl funfvex ralrimivw ixpexgg plusgndxnn mulrslid
+      funfni vscaslid eqeltrid ipslid tsetndxnn wfun topnfn fnfun cofunexg ptex
+      scaslid plendxnn prss anbi1i opabbii xpexg opabssxp ssexd dsndxnn homslid
+      eqeltrrid ccoslid prexg ovmpod eqtrid ) AEHGVEVFVGVHVIZCVJZVGVKVIZFVJZVGV
+      LVIZKVJZVMZVGVNVIZHVJZVGVRVIZJVJZVGVOVIZPVJZVMZVPZVGUUBVIZTVJZVGVQVIZSVJZ
+      VGVSVIZDVJZVMZVGVTVIZOVJZVGWAVIZIVJZWBZVPZVPZUFAVAVBHGWCWCVCBVBWNZWDZBWNZ
+      VUTVIZVHVIZWEZVDMNVCWNZVVFBVVAVVBMWNZVIZVVBNWNZVIZVVCVTVIZVFZWEZWFZUYKVVF
+      VJZUYMMNVVFVVFBVVAVVHVVJVVCVKVIZVFZWGZWFZVJZUYOMNVVFVVFBVVAVVHVVJVVCVLVIZ
+      VFZWGZWFZVJZVMZUYRVAWNZVJZUYTMNVWGVHVIZVVFBVVAVVGVVJVVCVRVIZVFZWGZWFZVJZV
+      UBMNVVFVVFVWGBVVAVVHVVJVVCVOVIZVFZWGZWHVFZWFZVJZVMZVPZVUFWIVUTWJZWKVIZVJZ
+      VUHVVGVVIWBZVVFWLZVVHVVJVVCVQVIZWMZBVVAWOZXJZMNWPZVJZVUJMNVVFVVFBVVAVVHVV
+      JVVCVSVIZVFZWGZWQZUUCUUDZVPZWRWSWTZWFZVJZVMZVUMVDWNZVJZVUOUCUDVVFVVFXAZVV
+      FUELUCWNZUUAVIZUDWNZVYDVFZVYGVYDVIZBVVAVVBUEWNVIZVVBLWNVIZVVBVYGUUEVIVIVV
+      BVYHVIVJZVVBVYIVIZVVCWAVIZVFZVFZWGZWFZWFZVJZWBZVPZVPZXBZXBZVUSVEWCVEVAVBW
+      CWCWUGWFXCABVCLMNVDVAVBUCUDUEUUFXDAVWGHXCZVUTGXCZWUGVUSXCAWUHXJZWUIXJZVCV
+      VECWUFVUSWCVVEBVVAVVDUUGZVVAXEVFZWLZVVEWCXFWUKWULWCXFZWUNWULVUTWQZXGZWQZX
+      GZWURWUQWUPVUTVBXKZXHXIXHXIWULWUSWLVVDWUSWLZBVVAWOWVABVVAVVDVVCWQZXGZWUSV
+      VDWVCWLXLVVCVHUYKWCUUHVVCWCXFXLVVBVUTWCWCWUTBXKZUUIXDUYKXMXFZXLXNXDUUJUUK
+      VVCWUQWLZWVBWURWLWVCWUSWLWVFBVVBVUTUULUUNVVCWUQUUOWVBWURUUMUUPUUQUURBVVAV
+      VDWUSUUSUUTUVAZBVVAVVDWCUVBXOVVEWUMXEWCWCXAXPWUOVVAWCXFWUMWCXFUVCWVGVUTWU
+      TUVFWULVVAWCWCXEUVDUVEUVGUWFWUKBQVVDWEBQVVBGVIZVHVIZWEZVVECWUKBQVVDWVIWUK
+      VVCWVHVHWUKVVBVUTGWUJWUIYBZXQZXRXSWUKBVVAQVVDWUKVVAGWDZQWUKVUTGWVKUVHAWVM
+      QXCWUHWUIUHXTUVIZUVJACWVJXCWUHWUIUIXTUVKWUKVVFCXCZXJZVDVVNOWUEVUSWCVVNWCX
+      FWVPBVCMNVBUVLXDWVPVVNMNCCBQVVHVVJWVHVTVIZVFZWEZWFZOWVPMNVVFVVFVVMCCWVSWU
+      KWVOYBZWWAWVPVVMBQVVLWEZWVSWVPBVVAQVVLWUKVVAQXCWVOWVNYAUVJWUKWWBWVSXCWVOW
+      UKBQVVLWVRWUKVVKWVQVVHVVJWUKVVCWVHVTWVLXRYKXSYAUVIYCAOWVTXCWUHWUIWVOUQUVM
+      YDWVPVYDOXCZXJZVXBVUEWUDVURWWDVWFUYQVXAVUDWWDVVOUYLVVTUYNVWEUYPWWDVVFCUYK
+      WUKWVOWWCUVNZYEWWDVVSFUYMWWDVVSMNCCBQVVHVVJWVHVKVIZVFZWGZWFZFWVPVVSWWIXCW
+      WCWVPMNVVFVVFVVRCCWWHWWAWWAWUKVVRWWHXCWVOWUKBVVAVVQQWWGWVNWUKVVPWWFVVHVVJ
+      WUKVVCWVHVKWVLXRYKYFYAYCYAAFWWIXCWUHWUIWVOWWCUJYGYDYEWWDVWDKUYOWWDVWDMNCC
+      BQVVHVVJWVHVLVIZVFZWGZWFZKWVPVWDWWMXCWWCWVPMNVVFVVFVWCCCWWLWWAWWAWUKVWCWW
+      LXCWVOWUKBVVAVWBQWWKWVNWUKVWAWWJVVHVVJWUKVVCWVHVLWVLXRYKYFYAYCYAAKWWMXCWU
+      HWUIWVOWWCUKYGYDYEYHWWDVWHUYSVWNVUAVWTVUCWWDVWGHUYRAWUHWUIWVOWWCUVOYEWWDV
+      WMJUYTWWDVWMMNRCBQVVGVVJWVHVRVIZVFZWGZWFZJWVPVWMWWQXCWWCWVPMNVWIVVFVWLRCW
+      WPWVPVWIHVHVIZRWVPVWGHVHAWUHWUIWVOUVPZXRUGUVQWWAWUKVWLWWPXCWVOWUKBVVAVWKQ
+      WWOWVNWUKVWJWWNVVGVVJWUKVVCWVHVRWVLXRYKYFYAYCYAAJWWQXCWUHWUIWVOWWCULYGYDY
+      EWWDVWSPVUBWWDVWSMNCCHBQVVHVVJWVHVOVIZVFZWGZWHVFZWFZPWVPVWSWXDXCWWCWVPMNV
+      VFVVFVWRCCWXCWWAWWAWVPVWGHVWQWXBWHWWSWUKVWQWXBXCWVOWUKBVVAVWPQWXAWVNWUKVW
+      OWWTVVHVVJWUKVVCWVHVOWVLXRYKYFYAUVRYCYAAPWXDXCWUHWUIWVOWWCUMYGYDYEYHYIWWD
+      VYCVULWUCVUQWWDVXEVUGVXMVUIVYBVUKWWDVXDTVUFWWDVXDWIGWJZWKVIZTWWDVXCWXEWKW
+      WDVUTGWIWUJWUIWVOWWCUVPUVSXRATWXFXCWUHWUIWVOWWCUNYGYDYEWWDVXLSVUHWWDVXLVX
+      FCWLZVVHVVJWVHVQVIZWMZBQWOZXJZMNWPZSWVPVXLWXLXCWWCWVPVXKWXKMNWVPVXGWXGVXJ
+      WXJWVPVVFCVXFWWAUVTWUKVXJWXJUWAWVOWUKVXIWXIBVVAQWVNWUKVXHWXHVVHVVJWUKVVCW
+      VHVQWVLXRUWBUWCYAUWDUWEYAASWXLXCWUHWUIWVOWWCUOYGYDYEWWDVYADVUJWWDVYAMNCCB
+      QVVHVVJWVHVSVIZVFZWGZWQZVXRVPZWRWSWTZWFZDWVPVYAWXSXCWWCWVPMNVVFVVFVXTCCWX
+      RWWAWWAWVPWRVXSWXQWSWVPVXQWXPVXRWVPVXPWXOWUKVXPWXOXCWVOWUKBVVAVXOQWXNWVNW
+      UKVXNWXMVVHVVJWUKVVCWVHVSWVLXRYKYFYAUWGUWHUWIYCYAADWXSXCWUHWUIWVOWWCUPYGY
+      DYEYHWWDVYEVUNWUBVUPWWDVYDOVUMWVPWWCYBZYEWWDWUAIVUOWWDWUAUCUDCCXAZCUELVYH
+      VYIOVFZVYGOVIZBQVYLVYMVYNVYOWVHWAVIZVFZVFZWGZWFZWFZIWWDUCUDVYFVVFVYTWYACW
+      YHWWDVVFCWWEUWJWWEWWDUELVYJVYKVYSWYBWYCWYGWWDVYDOVYHVYIWXTYKWWDVYGVYDOWXT
+      XQWUKVYSWYGXCWVOWWCWUKBVVAVYRQWYFWVNWUKVYQWYEVYLVYMWUKVYPWYDVYNVYOWUKVVCW
+      VHWAWVLXRYKYKYFXTYCYCAIWYIXCWUHWUIWVOWWCURYGYDYEUWKYIYIUWQUWQUWLAHUAUSUWM
+      ZAGUBUTUWMAVUEWCXFZVURWCXFZVUSWCXFAUYQWCXFZVUDWCXFZWYKAUYLWCXFZUYNWCXFZUY
+      PWCXFZWYMAWVECWCXFZWYOXNACWVJWCUIAQWCXFWVIWCXFZBQWOWVJWCXFAWVMQWCUHAGUBXF
+      ZWVMWCXFUTGUBUWNUWOUWPAWYSBQAVHWCXPZWVHWCXFZWYSUWRAWYTVVBWCXFXUBUTWVDVVBG
+      UBWCUWSUWTWYSWCWVHVHWVHVHUXAUXFYJUXBBQWVIWCWCUXCYLYMZUYKCXMWCYNYJAUYMXMXF
+      FWCXFWYPUXDAFWWIWCUJAWYRWYRWWIWCXFXUCXUCMNCCWWHWCWCYOYLYMUYMFXMWCYNYJAUYO
+      XMXFZKWCXFWYQVLUYOYPXCXUDUXEYQAKWWMWCUKAWYRWYRWWMWCXFXUCXUCMNCCWWLWCWCYOY
+      LYMUYOKXMWCYNYJUYLUYNUYPWCWCWCYRYSAUYSWCXFZVUAWCXFZVUCWCXFZWYNAUYRXMXFZHU
+      AXFXUEVNUYRYPXCXUHUXPYQUSUYRHXMUAYNYJAUYTXMXFZJWCXFXUFVRUYTYPXCXUIUXGYQAJ
+      WWQWCULARWCXFWYRWWQWCXFARWWRWCUGAXUAHWCXFWWRWCXFZUWRWYJXUJWCHVHHVHUXAUXFY
+      JUXHXUCMNRCWWPWCWCYOYLYMUYTJXMWCYNYJAVUBXMXFZPWCXFXUGVOVUBYPXCXUKUXIYQAPW
+      XDWCUMAWYRWYRWXDWCXFXUCXUCMNCCWXCWCWCYOYLYMVUBPXMWCYNYJUYSVUAVUCWCWCWCYRY
+      SUYQVUDWCWCYTYLAVULWCXFZVUQWCXFZWYLAVUGWCXFZVUIWCXFZVUKWCXFZXULAVUFXMXFTW
+      CXFXUNUXJATWXFWCUNAWXEWCXFZWXFWCXFAWIUXKZWYTXUQWIWCXPXURUXLWCWIUXMXOUTWIG
+      UBUXNYJWXEWCUXOUWOYMVUFTXMWCYNYJAVUHXMXFSWCXFXUOUXQASWXLWCUOAWXLVVGCXFVVI
+      CXFXJZWXJXJZMNWPZWCXUTWXKMNXUSWXGWXJVVGVVICMXKNXKUXRUXSUXTAXVAWYAWCAWYRWY
+      RWYAWCXFZXUCXUCCCWCWCUYAYLZXVAWYAWLAWXJMNCCUYBXDUYCUYFYMVUHSXMWCYNYJAVUJX
+      MXFDWCXFXUPUYDADWXSWCUPAWYRWYRWXSWCXFXUCXUCMNCCWXRWCWCYOYLYMVUJDXMWCYNYJV
+      UGVUIVUKWCWCWCYRYSAVUNWCXFZVUPWCXFZXUMAVUMXMXFZOWCXFXVDVTVUMYPXCXVFUYEYQA
+      OWVTWCUQAWYRWYRWVTWCXFXUCXUCMNCCWVSWCWCYOYLYMVUMOXMWCYNYJAVUOXMXFZIWCXFXV
+      EWAVUOYPXCXVGUYGYQAIWYIWCURAXVBWYRWYIWCXFXVCXUCUCUDWYACWYHWCWCYOYLYMVUOIX
+      MWCYNYJVUNVUPWCWCUYHYLVULVUQWCWCYTYLVUEVURWCWCYTYLUYIUYJ $.
+  $}
+
+  ${
+    $d R a c d e f g x $.  $d S a c d e f g x $.  $d a c d e f g ph x $.
+    prdsbaslemss.p $e |- P = ( S Xs_ R ) $.
+    prdsbaslemss.s $e |- ( ph -> S e. V ) $.
+    prdsbaslemss.r $e |- ( ph -> R e. W ) $.
+    prdsbaslem.1 $e |- A = ( E ` P ) $.
+    prdsbaslem.2 $e |- E = Slot ( E ` ndx ) $.
+    prdsbaslemss.e $e |- ( E ` ndx ) e. NN $.
+    prdsbaslem.3 $e |- ( ph -> T e. X ) $.
+    prdsbaslemss.ss $e |- ( ph -> { <. ( E ` ndx ) , T >. } C_ P ) $.
+    $( Lemma for ~ prdsbas and similar theorems.  (Contributed by Jim Kingdon,
+       10-Nov-2025.) $)
+    prdsbaslemss $p |- ( ph -> A = T ) $=
+      ( cfv cvv vx vf vg va vc vd ve c1 c5 cdc cop eqidd cnx cbs cv cixp cplusg
+      cdm co cmpt cmpo cmulr ctp csca cvsca cip cgsu cun cts ctopn ccom cpt cpr
+      cple wss wbr wral wa copab cds crn cc0 csn cxr clt csup chom cco cxp c2nd
+      c1st cstr eqid prdsval wcel dmexg syl wfn basfn vex fvexg sylancl funfvex
+      funfni sylancr ralrimivw ixpexgg syl2anc mpoexga elexd topnfn fnfun ax-mp
+      wfun cofunexg ptex prss anbi1i opabbii xpexg opabssxp a1i ssexd eqeltrrid
+      prdsvalstrd eqbrtrd ndxslid strslfv3 ) ABFCCGJUHUHUIUJUKZACULACUMUNSUADUR
+      ZUAUOZDSZUNSZUPZUKUMUQSUBUCYNYNUAYJYKUBUOZSZYKUCUOZSZYLUQSUSUTZVAZUKUMVBS
+      UBUCYNYNUAYJYPYRYLVBSUSUTZVAZUKVCUMVDSEUKUMVESUBUCEUNSZYNUAYJYOYRYLVESUSU
+      TZVAZUKUMVFSUBUCYNYNEUAYJYPYRYLVFSUSUTVGUSZVAZUKVCVHUMVISVJDVKZVLSZUKUMVN
+      SYOYQVMYNVOZYPYRYLVNSVPUAYJVQZVRZUBUCVSZUKUMVTSUBUCYNYNUAYJYPYRYLVTSUSUTW
+      AWBWCVHWDWEWFZVAZUKVCUMWGSUBUCYNYNUAYJYPYRYLWGSUSUPZVAZUKUMWHSUDUEYNYNWIZ
+      YNUFUGUDUOZWJSZUEUOZUUQUSUUSUUQSUAYJYKUFUOSYKUGUOSYKUUSWKSSYKUUTSUKYKUVAS
+      YLWHSUSUSUTVAZVAZUKVMVHVHYIWLAUAYNUUOCYTDEUVCUUEUUBUGUBUCUUQUUGYJUUCUUMUU
+      IHIUDUEUFKUUCWMAYJULAYNULAYTULAUUBULAUUEULAUUGULAUUIULAUUMULAUUOULAUUQULA
+      UVCULLMWNATYNUUOTYTTTEUVCTUUEUUBTUUQUUGUUMUUITTTHTAYJTWOZYMTWOZUAYJVQYNTW
+      OZADIWOZUVDMDIWPWQAUVEUAYJAUNTWRZYLTWOZUVEWSAUVGYKTWOUVIMUAWTYKDITXAXBUVE
+      TYLUNYLUNXCXDXEXFUAYJYMTTXGXHZAUVFUVFYTTWOUVJUVJUBUCYNYNYSTTXIXHAUVFUVFUU
+      BTWOUVJUVJUBUCYNYNUUATTXIXHLAUUCTWOZUVFUUETWOAUVHETWOUVKWSAEHLXJUVKTEUNEU
+      NXCXDXEUVJUBUCUUCYNUUDTTXIXHAUVFUVFUUGTWOUVJUVJUBUCYNYNUUFTTXIXHAUUHTWOZU
+      UITWOAVJXNZUVGUVLVJTWRUVMXKTVJXLXMMVJDIXOXEUUHTXPWQAUUMYOYNWOYQYNWOVRZUUK
+      VRZUBUCVSZTUVOUULUBUCUVNUUJUUKYOYQYNUBWTUCWTXQXRXSAUVPUURTAUVFUVFUURTWOZU
+      VJUVJYNYNTTXTXHZUVPUURVOAUUKUBUCYNYNYAYBYCYDAUVFUVFUUOTWOUVJUVJUBUCYNYNUU
+      NTTXIXHAUVFUVFUUQTWOUVJUVJUBUCYNYNUUPTTXIXHAUVQUVFUVCTWOUVRUVJUDUEUURYNUV
+      BTTXIXHYEYFGUMGSOPYGRQNYH $.
+  $}
+
+  ${
+    $d a c d e f g x B $.  $d a c d e H $.  $d f g K $.  $d a c d e f g x ph $.
+    $d a c d e f g w x y z I $.  $d f g x P $.  $d a c d e f g w x y z R $.
+    $d a c d e f g x S $.
+    prdsbas.p $e |- P = ( S Xs_ R ) $.
+    prdsbas.s $e |- ( ph -> S e. V ) $.
+    prdsbas.r $e |- ( ph -> R e. W ) $.
+    $( Scalar ring of a structure product.  (Contributed by Stefan O'Rear,
+       5-Jan-2015.)  (Revised by Mario Carneiro, 15-Aug-2015.)  (Revised by
+       Thierry Arnoux, 16-Jun-2019.)  (Revised by Zhi Wang, 18-Aug-2024.) $)
+    prdssca $p |- ( ph -> S = ( Scalar ` P ) ) $=
+      ( vx vf vg cfv cnx cv cop co cmpt cmpo eqidd va vc vd ve csca scaid cslot
+      eqid wceq cn wcel scaslid simpri cbs cdm cixp cplusg cmulr ctp cvsca cgsu
+      cip cun cts ctopn ccom cpt cple cpr wss wbr wral wa copab cds crn cc0 csn
+      cxr clt csup chom cco cxp c2nd c1st snsstp1 ssun2 sstri prdsval sseqtrrid
+      ssun1 prdsbaslemss eqcomd ) ABUEMZDAWOBCDDUEEFEGHIWOUHUFUENUEMZUGUIWPUJUK
+      ULUMHANUNMJCUOZJOZCMZUNMUPZPNUQMKLWTWTJWQWRKOZMZWRLOZMZWSUQMQRSZPNURMKLWT
+      WTJWQXBXDWSURMQRSZPUSZWPDPZNUTMKLDUNMZWTJWQXAXDWSUTMQRSZPZNVBMKLWTWTDJWQX
+      BXDWSVBMQRVAQSZPZUSZVCZNVDMVECVFVGMZPNVHMXAXCVIWTVJXBXDWSVHMVKJWQVLVMKLVN
+      ZPNVOMKLWTWTJWQXBXDWSVOMQRVPVQVRVCVSVTWASZPUSNWBMKLWTWTJWQXBXDWSWBMQUPSZP
+      NWCMUAUBWTWTWDWTUCUDUAOZWEMZUBOZXSQXTXSMJWQWRUCOMWRUDOMWRXTWFMMWRYAMPWRYB
+      MWSWCMQQRSSZPVIVCZVCZXHVRZBYFXOYEYFXNXOXHXKXMWGXNXGWHWIXOYDWLWIAJWTXRBXEC
+      DYCXJXFUDKLXSXLWQXIXQXPEFUAUBUCGXIUHAWQTAWTTAXETAXFTAXJTAXLTAXPTAXQTAXRTA
+      XSTAYCTHIWJWKWMWN $.
+
+    prdsbas.b $e |- B = ( Base ` P ) $.
+    prdsbas.i $e |- ( ph -> dom R = I ) $.
+    $( Base set of a structure product.  (Contributed by Stefan O'Rear,
+       3-Jan-2015.)  (Revised by Mario Carneiro, 15-Aug-2015.)  (Revised by
+       Thierry Arnoux, 16-Jun-2019.)  (Revised by Zhi Wang, 18-Aug-2024.) $)
+    prdsbas $p |- ( ph -> B = X_ x e. I ( Base ` ( R ` x ) ) ) $=
+      ( cfv cvv cnx cop co eqidd vf vg va vc vd ve cv cbs cixp baseid basendxnn
+      wcel wral cdm dmexg syl eqeltrrd wfn basfn sylancl funfvex funfni sylancr
+      vex fvexg ralrimivw ixpexgg syl2anc cplusg cmpt cmpo cmulr ctp csca cvsca
+      cip cgsu cun cts ctopn ccom cpt cple cpr wss wbr wa copab cds crn cc0 csn
+      cxr clt csup chom cco cxp c2nd c1st snsstp1 ssun1 sstri prdsval sseqtrrid
+      eqid prdsbaslemss ) ACDEFBGBUGZEOZUHOZUIZUHHIPJKLMUJUKAGPULXJPULZBGUMXKPU
+      LAEUNZGPNAEIULZXMPULLEIUOUPUQAXLBGAUHPURXIPULZXLUSAXNXHPULXOLBVDXHEIPVEUT
+      XLPXIUHXIUHVAVBVCVFBGXJPPVGVHAQUHOXKRZQVIOUAUBXKXKBGXHUAUGZOZXHUBUGZOZXIV
+      IOSVJVKZRZQVLOUAUBXKXKBGXRXTXIVLOSVJVKZRZVMZQVNOFRQVOOUAUBFUHOZXKBGXQXTXI
+      VOOSVJVKZRQVPOUAUBXKXKFBGXRXTXIVPOSVJVQSVKZRVMZVRZQVSOVTEWAWBOZRQWCOXQXSW
+      DXKWEXRXTXIWCOWFBGUMWGUAUBWHZRQWIOUAUBXKXKBGXRXTXIWIOSVJWJWKWLVRWMWNWOVKZ
+      RVMQWPOUAUBXKXKBGXRXTXIWPOSUIVKZRQWQOUCUDXKXKWRXKUEUFUCUGZWSOZUDUGZYNSYOY
+      NOBGXHUEUGOXHUFUGOXHYOWTOOXHYPORXHYQOXIWQOSSVJVKVKZRWDVRZVRZXPWLZDUUAYJYT
+      UUAYEYJXPYBYDXAYEYIXBXCYJYSXBXCABXKYMDYAEFYRYGYCUFUAUBYNYHGYFYLYKHIUCUDUE
+      JYFXFNAXKTAYATAYCTAYGTAYHTAYKTAYLTAYMTAYNTAYRTKLXDXEXG $.
+
+    ${
+      prdsplusg.b $e |- .+ = ( +g ` P ) $.
+      $( Addition in a structure product.  (Contributed by Stefan O'Rear,
+         3-Jan-2015.)  (Revised by Mario Carneiro, 15-Aug-2015.)  (Revised by
+         Thierry Arnoux, 16-Jun-2019.)  (Revised by Zhi Wang, 18-Aug-2024.) $)
+      prdsplusg $p |- ( ph -> .+ = ( f e. B , g e. B |-> ( x e. I |->
+            ( ( f ` x ) ( +g ` ( R ` x ) ) ( g ` x ) ) ) ) ) $=
+        ( cfv cvv va vc vd ve cv cplusg co cmpt cmpo plusgid plusgndxnn cbs wfn
+        wcel basfn cprds prdsex syl2anc eqeltrid funfvex funfni sylancr mpoexga
+        cnx cop cmulr ctp csca cvsca cip cgsu cun cts ccom cpt cple cpr wss wbr
+        ctopn wral wa copab cds crn cc0 csn cxr clt csup chom cixp cco cxp c2nd
+        c1st snsstp2 ssun1 sstri prdsbas eqidd prdsval sseqtrrid prdsbaslemss
+        eqid ) AEDFGHICCBJBUEZHUEZSZXFIUEZSZXFFSZUFSUGUHZUIZUFKLTMNORUJUKACTUNZ
+        XNXMTUNACDULSZTPAULTUMDTUNXOTUNZUOADGFUPUGZTMAGKUNFLUNXQTUNNOFGKLUQURUS
+        XPTDULDULUTVAVBUSZXRHICCXLTTVCURAVDULSCVEZVDUFSXMVEZVDVFSHICCBJXHXJXKVF
+        SUGUHUIZVEZVGZVDVHSGVEVDVISHIGULSZCBJXGXJXKVISUGUHUIZVEVDVJSHICCGBJXHXJ
+        XKVJSUGUHVKUGUIZVEVGZVLZVDVMSVTFVNVOSZVEVDVPSXGXIVQCVRXHXJXKVPSVSBJWAWB
+        HIWCZVEVDWDSHICCBJXHXJXKWDSUGUHWEWFWGVLWHWIWJUIZVEVGVDWKSHICCBJXHXJXKWK
+        SUGWLUIZVEVDWMSUAUBCCWNCUCUDUAUEZWOSZUBUEZYLUGYMYLSBJXFUCUESXFUDUESXFYM
+        WPSSXFYNSVEXFYOSXKWMSUGUGUHUIUIZVEVQVLZVLZXTWGZDYSYHYRYSYCYHXSXTYBWQYCY
+        GWRWSYHYQWRWSABCYKDXMFGYPYEYAUDHIYLYFJYDYJYIKLUAUBUCMYDXEQABCDFGJKLMNOP
+        QWTAXMXAAYAXAAYEXAAYFXAAYIXAAYJXAAYKXAAYLXAAYPXANOXBXCXD $.
+    $}
+
+    ${
+      prdsmulr.t $e |- .x. = ( .r ` P ) $.
+      $( Multiplication in a structure product.  (Contributed by Mario
+         Carneiro, 11-Jan-2015.)  (Revised by Mario Carneiro, 15-Aug-2015.)
+         (Revised by Thierry Arnoux, 16-Jun-2019.)  (Revised by Zhi Wang,
+         18-Aug-2024.) $)
+      prdsmulr $p |- ( ph -> .x. = ( f e. B , g e. B |-> ( x e. I |->
+            ( ( f ` x ) ( .r ` ( R ` x ) ) ( g ` x ) ) ) ) ) $=
+        ( cfv cvv va vc vd ve cv cmulr co cmpt cmpo mulridx cnx cslot wceq wcel
+        cn mulrslid simpri cbs wfn basfn prdsex syl2anc eqeltrid funfvex funfni
+        cprds sylancr mpoexga cop cplusg ctp csca cvsca cip cgsu cun ctopn ccom
+        cts cpt cple cpr wss wbr wral wa cds crn cc0 csn cxr clt csup chom cixp
+        copab cco c2nd c1st snsstp3 ssun1 sstri prdsbas eqidd prdsval sseqtrrid
+        cxp eqid prdsbaslemss ) AGDEFHICCBJBUEZHUEZSZXJIUEZSZXJESZUFSUGUHZUIZUF
+        KLTMNORUJUFUKUFSZULUMXRUOUNUPUQACTUNZXSXQTUNACDURSZTPAURTUSDTUNXTTUNZUT
+        ADFEVFUGZTMAFKUNELUNYBTUNNOEFKLVAVBVCYATDURDURVDVEVGVCZYCHICCXPTTVHVBAU
+        KURSCVIZUKVJSHICCBJXLXNXOVJSUGUHUIZVIZXRXQVIZVKZUKVLSFVIUKVMSHIFURSZCBJ
+        XKXNXOVMSUGUHUIZVIUKVNSHICCFBJXLXNXOVNSUGUHVOUGUIZVIVKZVPZUKVSSVQEVRVTS
+        ZVIUKWASXKXMWBCWCXLXNXOWASWDBJWEWFHIWPZVIUKWGSHICCBJXLXNXOWGSUGUHWHWIWJ
+        VPWKWLWMUIZVIVKUKWNSHICCBJXLXNXOWNSUGWOUIZVIUKWQSUAUBCCXGCUCUDUAUEZWRSZ
+        UBUEZYQUGYRYQSBJXJUCUESXJUDUESXJYRWSSSXJYSSVIXJYTSXOWQSUGUGUHUIUIZVIWBV
+        PZVPZYGWJZDUUDYMUUCUUDYHYMYDYFYGWTYHYLXAXBYMUUBXAXBABCYPDYEEFUUAYJXQUDH
+        IYQYKJYIYOYNKLUAUBUCMYIXHQABCDEFJKLMNOPQXCAYEXDAXQXDAYJXDAYKXDAYNXDAYOX
+        DAYPXDAYQXDAUUAXDNOXEXFXI $.
+    $}
   $}
 
   ${
@@ -193280,6 +193671,62 @@ $)
       VOFGVRVSVDVFVTWAWBWCDEWFWGWDWE $.
   $}
 
+  ${
+    $d A s u w y z $.  $d A s w x y z $.  $d V s u w y z $.
+    2omap.f $e |- F = ( s e. ( 2o ^m A ) |-> { z e. A | ( s ` z ) = 1o } ) $.
+    $( Mapping between ` ( 2o ^m A ) ` and decidable subsets of ` A ` .
+       (Contributed by Jim Kingdon, 12-Nov-2025.) $)
+    2omap $p |- ( A e. V -> F : ( 2o ^m A ) -1-1-onto->
+        { x e. ~P A | A. y e. A DECID y e. x } ) $=
+      ( vw vu wcel c2o cv wdc c1o wceq c0 wa adantr simpr cmap co wral cpw crab
+      cfv cif cmpt eleq2 dcbid ralbidv wss ssrab2 elpw2g mpbiri 2ssom wf elmapi
+      com ad2antlr ffvelcdmd sselid 1onn nndceq sylancl wb adantl fveqeq2 elrab
+      bitr4di mpbid ralrimiva elrabd weq 1lt2o a1i 0lt2o elequ1 simplrr rspcdva
+      ibar ifcldcd fmpttd 2onn simpl elmapd mpbird sylan2b anbi2i simplr fveq1d
+      wn eqid ifbid simprrr ad2antrr fvmptd3 eqtrd iftrued 2thd nesymi iffalsed
+      1n0 eqeq1d mtbiri 2falsed exmiddc syl mpjaodan rabbidva elpwi dfss1 sylib
+      wo cin dfin5 eqtr3di ad2antrl simplrl simpll feqmptd eleq2d bitrdi biimpa
+      baibd eqtr4d mpbirand mtbid df2o3 eleqtrdi elpri ecased mpteq2dva impbida
+      cpr f1o2d ) DFKZGILDUAUBZBMZAMZKZNZBDUCZADUDZUEZCMZGMZUFZOPZCDUEZJDJMZIMZ
+      KZOQUGZUHZEHYQUUGYRKZRZUUCYSUUJKZNZBDUCAUUJUUDYTUUJPZUUBUUSBDUUTUUAUURYTU
+      UJYSUIUJUKYQUUJUUDKZUUPYQUVAUUJDULUUICDUMUUJDFUNUOSUUQUUSBDUUQYSDKZRZYSUU
+      GUFZOPZNZUUSUVCUVDUSKOUSKUVFUVCLUSUVDUPUVCDLYSUUGUUPDLUUGUQZYQUVBUUGLDURU
+      TUUQUVBTVAVBVCUVDOVDVEUVCUVEUURUVCUVEUVBUVERZUURUVBUVEUVHVFUUQUVBUVEWAVGU
+      UIUVECYSDUUFYSOUUGVHVIVJUJVKVLVMUULUUEKZYQUULUUDKZYSUULKZNZBDUCZRZUUOYRKZ
+      UUCUVMAUULUUDAIVNZUUBUVLBDUVPUUAUVKYTUULYSUIUJUKVIZYQUVNRZUVODLUUOUQUVRJD
+      UUNLUVRUUKDKZRZUUMOQLOLKZUVTVOVPQLKZUVTVQVPUVTUVLUUMNZBDUUKBJVNUVKUUMBJIV
+      RUJZYQUVJUVMUVSVSUVRUVSTVTWBWCUVRLDUUOUSFLUSKZUVRWDVPYQUVNWEWFWGWHUUPUVIR
+      YQUUPUVNRZUUGUUOPZUULUUJPZVFUVIUVNUUPUVQWIYQUWFRZUWGUWHUWIUWGRZUWHUUFUULK
+      ZCDUEZUUJPZUWJUWKUUICDUWJUUFDKZRZUWKUWKUUIVFUWKWLZUWOUWKRZUWKUUIUWOUWKTZU
+      WQUUHUWKOQUGZOUWOUUHUWSPZUWKUWOUUHUUFUUOUFUWSUWOUUFUUGUUOUWIUWGUWNWJWKUWO
+      JUUFUUNUWSDUUOLUUOWMJCVNUUMUWKOQJCIVRWNUWJUWNTZUWOUWKOQLUWAUWOVOVPUWBUWOV
+      QVPUWOUVLUWKNZBDUUFBCVNUVKUWKBCIVRUJUWIUVMUWGUWNYQUUPUVJUVMWOZWPUXAVTZWBW
+      QWRZSUWQUWKOQUWRWSWRWTUWOUWPRZUWKUUIUWOUWPTZUXFUUIQOPOQXCXAUXFUUHQOUXFUUH
+      UWSQUWOUWTUWPUXESUXFUWKOQUXGXBWRXDXEXFUWOUXBUWKUWPXNUXDUWKXGXHXIXJUWFUWHU
+      WMVFZYQUWGUVJUXHUUPUVMUVJUULUWLUUJUVJDUULXOZUULUWLUVJUULDULUXIUULPUULDXKU
+      ULDXLXMCDUULXPXQXDXRUTWGUWIUWHRZUUGJDUUKUUGUFZUHUUOUXJJDLUUGUXJUUPUVGYQUU
+      PUVNUWHXSUXJLDUUGUSFUWEUXJWDVPYQUWFUWHXTWFVKZYAUXJJDUXKUUNUXJUVSRZUUMUXKU
+      UNPUUMWLZUXMUUMRZUXKOUUNUXMUUMUXKOPZUXJUUMUVSUXPUXJUUMUUKUUJKZUVSUXPRZUXJ
+      UULUUJUUKUWIUWHTYBUUIUXPCUUKDUUFUUKOUUGVHVIZYCYEYDUXOUUMOQUXMUUMTWSYFUXMU
+      XNRZUXKQUUNUXTUXKQPZUXPUXTUUMUXPUXMUXNTZUXMUUMUXPVFUXNUXMUUMUVSUXPUXJUVST
+      ZUXMUUMUXQUXRUXMUULUUJUUKUWIUWHUVSWJYBUXSYCYGSYHUXMUYAUXPXNZUXNUXMUXKQOYO
+      ZKUYDUXMUXKLUYEUXMDLUUKUUGUXJUVGUVSUXLSUYCVAYIYJUXKQOYKXHSYLUXTUUMOQUYBXB
+      YFUXMUWCUUMUXNXNUXMUVLUWCBDUUKUWDUWIUVMUWHUVSUXCWPUYCVTUUMXGXHXIYMWRYNWHY
+      P $.
+  $}
+
+  ${
+    $d A s x y z $.  $d V s y z $.
+    $( Equinumerosity of ` ( 2o ^m A ) ` and the set of decidable subsets of
+       ` A ` .  (Contributed by Jim Kingdon, 14-Nov-2025.) $)
+    2omapen $p |- ( A e. V -> ( 2o ^m A ) ~~
+        { x e. ~P A | A. y e. A DECID y e. x } ) $=
+      ( vs vz wcel c2o cmap co cvv cv wdc wral cpw crab cfv c1o wceq cmpt fnmap
+      wf1o cen wbr cxp wfn 2onn elexi elex fnovex mp3an12i 2omap f1oeng syl2anc
+      com eqid ) CDGZHCIJZKGZURBLALGMBCNACOPZEURFLELQRSFCPTZUBURUTUCUDIKKUEUFHK
+      GUQCKGUSUAHUOUGUHCDUIHCKKIUJUKABFCVADEVAUPULURUTKVAUMUN $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -193407,6 +193854,22 @@ $)
       JKUVEYRJLPZVURYTUOUWRUVEXBUUFUVGMJUUGQHLUVHVUSUVIUUHYQVURVUTUXHHLVURUYJOZ
       VUTUXHVVDVUTUXGUYHMUWRUYJUXGUYHKUVEVUFUUIVUTUYGMJVUTVUSWASZUYFJVUSUYEWAUU
       JVVCVVEJKYTLJUUOVAUUKUULUUMYSUUPUUQYSUURZWJWJVVFUUSUVEUUTXKUVAWOUVB $.
+  $}
+
+  ${
+    $d A f g s $.
+    $( A set dominated by ` _om ` is subcountable.  (Contributed by Jim
+       Kingdon, 11-Nov-2025.) $)
+    domomsubct $p |- ( A ~<_ _om
+        -> E. s ( s C_ _om /\ E. f f : s -onto-> A ) ) $=
+      ( vg com cdom wbr cv wf1 wex wss wfo brdomi cima crn wf1o wceq syl spcev
+      wa imassrn f1rn sstrid ccnv cres ssid f1ores mpan2 wfn f1fn fnresdm mpbid
+      f1oeq1d f1ocnv f1ofo cnvex foeq1 imaex sseq1 foeq2 exbidv anbi12d syl2anc
+      vex exlimiv ) AEFGAEDHZIZDJCHZEKZVHABHZLZBJZTZCJZAEDMVGVNDVGVFANZEKZVOAVJ
+      LZBJZVNVGVOVFOEVFAUAAEVFUBUCVGVOAVFUDZLZVRVGVOAVSPZVTVGAVOVFPZWAVGAVOVFAU
+      EZPZWBVGAAKWDAUFAEAVFUGUHVGAVOWCVFVGVFAUIWCVFQAEVFUJAVFUKRUMULAVOVFUNRVOA
+      VSUORVQVTBVSVFDVDZUPVOAVJVSUQSRVMVPVRTCVOVFAWEURVHVOQZVIVPVLVRVHVOEUSWFVK
+      VQBVHVOAVJUTVAVBSVCVER $.
   $}
 
   ${

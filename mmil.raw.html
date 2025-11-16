@@ -128,9 +128,10 @@ then extended without justification to statements about infinite collections.
   <LI> <A HREF="#overview">Overview of intuitionistic logic</A></LI>
   <LI> <A HREF="#overview2">Overview of this work</A></LI>
   <LI> <A HREF="#axioms">The axioms</A></LI>
+  <LI> <A HREF="#theorems">Some theorems</A></LI>
   <li><a href="#flavors">Different flavors of constructive mathematics</a></li>
   <li><a href="#existence">A note on existence</a></li>
-  <LI> <A HREF="#theorems">Some theorems</A></LI>
+  <li><a href="#set-size">The size of sets</a></li>
   <LI> <A HREF="#intuitionize">How to intuitionize classical proofs</A></LI>
   <LI> <A HREF="#setmm">Metamath Proof Explorer cross reference</A></LI>
   <LI> <A HREF="#bib">Bibliography</A></LI>
@@ -699,6 +700,114 @@ FACE=sans-serif>&isin;</FONT> <I><FONT COLOR="#FF0000">x</FONT></I> &rarr; suc
 <P>The above axioms fairly closely follow the Intuitionistic Zermelo-Fraenkel
 (IZF) axioms as laid out in [Crosilla].</P>
 
+<P></P><HR NOSHADE SIZE=1><A NAME="theorems"></A><B><FONT COLOR="#006633">A
+Theorem Sampler</FONT></B>&nbsp;&nbsp;&nbsp;
+
+<P></P><CENTER><FONT COLOR="#006633"><I>From a psychological point of view,
+learning constructive mathematics is agonizing, for it requires one to
+first unlearn certain deeply ingrained intuitions and
+habits acquired during classical mathematical training.</I>
+<BR> &mdash;Andrej Bauer</FONT></CENTER>
+
+<P>Listed here are some examples of starting points for your journey
+through the maze.  Some are stated just as they would be in a
+non-constructive context; others are here to highlight areas which
+look different constructively.
+You should study some simple proofs from
+propositional calculus until you get the hang of it.  Then try some
+predicate calculus and finally set theory.</P>
+
+<P>The <A HREF="mmtheorems.html">Theorem List</A> shows the complete set of
+theorems in the database.  You may also find the <A
+HREF="mmbiblio.html">Bibliographic Cross-Reference</A> useful.</P>
+
+
+<P><TABLE BORDER=0><TR><TD VALIGN=TOP WIDTH="50%"><TR><TD VALIGN=TOP WIDTH="50%">
+<B>Propositional calculus</B>
+<MENU>
+<LI>Law of identity ~ idALT</LI>
+
+<LI>Praeclarum theorema ~ anim12</LI>
+
+<LI>Contraposition introduction ~ con3</LI>
+
+<LI>Double negation introduction ~ notnot</LI>
+
+<LI>Triple negation ~ notnotnot</LI>
+
+<LI>Definition of exclusive or ~ df-xor</LI>
+
+<LI>Negation and the false constant ~ dfnot</LI>
+</MENU>
+<B>Predicate calculus</B>
+<MENU>
+<LI>Existential and universal quantifier swap ~ 19.12</LI>
+
+<LI>Existentially quantified implication ~ 19.35-1</LI>
+
+<LI><I>x</I> = <I>x</I> ~ equid</LI>
+
+<LI>Definition of proper substitution ~ df-sb</LI>
+
+<LI>Double existential uniqueness ~ 2eu7</LI>
+
+</MENU>
+<B>Set theory</B>
+<MENU>
+<LI>Commutative law for union ~ uncom</LI>
+
+<LI>A basic relationship between class and wff
+variables ~ abeq2</LI>
+
+<LI>Two ways of saying &quot;is a set&quot; ~ isset</LI>
+
+<LI>The ZF axiom of foundation implies excluded middle ~ regexmid</LI>
+
+<LI>Russell's paradox ~ ru</LI>
+
+<LI>Ordinal trichotomy implies excluded middle ~ ordtriexmid</LI>
+
+<LI>Mathematical (finite) induction ~ findes</LI>
+
+<LI>Peano's postulates for arithmetic:
+~ peano1 ~ peano2 ~ peano3 ~ peano4 ~ peano5</LI>
+
+<LI>Two natural numbers are either equal or not equal ~ nndceq (a special case of the law of the excluded middle which we can prove).</LI>
+
+<LI>A natural number is either zero or a successor ~ nn0suc</LI>
+
+<LI>The axiom of choice implies excluded middle ~ acexmid</LI>
+
+<LI>Burali-Forti paradox ~ onprc</LI>
+
+<LI>Transfinite induction ~ tfis3</LI>
+
+<LI>Closure law for ordinal addition ~ oacl</LI>
+
+</MENU>
+<B>Real and complex numbers</B>
+
+<MENU>
+<LI>Archimedean property of real numbers ~ arch</LI>
+
+<LI>Properties of apartness:
+~ apirr ~ apsym ~ apcotr ~ apti</LI>
+
+<LI>The square root of 2 is irrational ~ sqrt2irrap (a
+different statement than "The square root of 2
+is not rational" ~ sqrt2irr )</LI>
+
+<LI>Convergence of a sequence of complex
+numbers ~ climcvg1n given a condition on the rate of convergence</LI>
+
+<LI>Triangle inequality for absolute
+value ~ abstrii</LI>
+
+<LI>The maximum of two real numbers ~ maxleb</LI>
+
+</MENU>
+</TD></TR></TABLE>
+
 <P></P><HR NOSHADE SIZE=1><A NAME="flavors"></A><B><FONT COLOR="#006633">Different
 flavors of constructive mathematics</FONT></B>
 
@@ -869,113 +978,95 @@ context.</li>
 Section 11.2.2 discusses the issues around truncated existence
 and sequence convergence.</p>
 
-<P></P><HR NOSHADE SIZE=1><A NAME="theorems"></A><B><FONT COLOR="#006633">A
-Theorem Sampler</FONT></B>&nbsp;&nbsp;&nbsp;
+<P></P><HR NOSHADE SIZE=1><A NAME="set-size"></A><B><FONT COLOR="#006633"
+>The size of sets</FONT></B>
 
-<P></P><CENTER><FONT COLOR="#006633"><I>From a psychological point of view,
-learning constructive mathematics is agonizing, for it requires one to
-first unlearn certain deeply ingrained intuitions and
-habits acquired during classical mathematical training.</I>
-<BR> &mdash;Andrej Bauer</FONT></CENTER>
+<p>When working without excluded middle, familiar concepts such
+as finiteness or countability spawn several concepts.  Although
+we need to list them in some order, beware of thinking of each
+category as including all smaller sets (for example the proposition
+that any subset of a finite set is finite is equivalent to excluded
+middle by ~ ssfiexmid ).</p>
 
-<P>Listed here are some examples of starting points for your journey
-through the maze.  Some are stated just as they would be in a
-non-constructive context; others are here to highlight areas which
-look different constructively.
-You should study some simple proofs from
-propositional calculus until you get the hang of it.  Then try some
-predicate calculus and finally set theory.</P>
+<table border cellspacing=0 bgcolor="#EEFFFA">
 
-<P>The <A HREF="mmtheorems.html">Theorem List</A> shows the complete set of
-theorems in the database.  You may also find the <A
-HREF="mmbiblio.html">Bibliographic Cross-Reference</A> useful.</P>
+<tr>
+  <th>name</th>
+  <th>our notation</th>
+  <th>notes and related theorems</th>
+</tr>
 
+<tr>
+  <td>finitely enumerable</td>
+  <td>` E. n e. _om E. f f : n -onto-> A `</td>
+  <td>implies countable by ~ enumct ; decidable equality
+  plus finitely enumerable is equivalent to finite by ~ fidcenum
+  </td>
+</tr>
 
-<P><TABLE BORDER=0><TR><TD VALIGN=TOP WIDTH="50%"><TR><TD VALIGN=TOP WIDTH="50%">
-<B>Propositional calculus</B>
-<MENU>
-<LI>Law of identity ~ idALT</LI>
+<tr>
+  <td>finite</td>
+  <td>` A e. Fin `</td>
+  <td>implies countable by ~ finct</td>
+</tr>
 
-<LI>Praeclarum theorema ~ anim12</LI>
+<tr>
+  <td>dominated by ` _om `</td>
+  <td>` A ~<_ _om `</td>
+  <td>implies subcountable by ~ domomsubct</td>
+</tr>
 
-<LI>Contraposition introduction ~ con3</LI>
+<tr>
+  <td>subcountable</td>
+  <td>` E. s ( s C_ _om /\ E. f f : s -onto-> A ) `</td>
+  <td>does not in general imply countable as shown at
+  ~ subctctexmid</td>
+</tr>
 
-<LI>Double negation introduction ~ notnot</LI>
+<tr>
+  <td>countable</td>
+  <td>` E. f f : _om -onto-> ( A |_| 1o ) `</td>
+</tr>
 
-<LI>Triple negation ~ notnotnot</LI>
+<tr>
+  <td>infinite</td>
+  <td>` _om ~<_ A `</td>
+  <td>We cannot conclude in general that a set is either finite
+  or infinite (see ~ inffiexmid )</td>
+</tr>
 
-<LI>Definition of exclusive or ~ df-xor</LI>
+<tr>
+  <td>countably infinite</td>
+  <td>` A ~~ _om `</td>
+  <td>` A ~~ NN ` is equivalent by ~ nnenom .
+  Countably infinite is equivalent to being countable, infinite,
+  and having decidable equality by ~ ctinf</td>
+</tr>
 
-<LI>Negation and the false constant ~ dfnot</LI>
-</MENU>
-<B>Predicate calculus</B>
-<MENU>
-<LI>Existential and universal quantifier swap ~ 19.12</LI>
+<tr>
+  <td>uncountable</td>
+  <td>` -. E. f f : _om -onto-> ( A |_| 1o ) `</td>
+  <td>This is not fully developed yet, but we should be able to
+  prove that ` RR ` is not countable (but only under an assumption such
+  as ` CCHOICE ` or ` EXMID `), that ` 2o ^m _om ` is not countable
+  (Theorem 1.2 of [BauerHanson]),
+  and ` ~P 1o ^m _om ` is not countable (proof on slide 7 of
+  <a href="https://www.youtube.com/live/4CBFUojXoq4?si=xbO73bANMESrFO3M"
+  >The countable reals</a>, Andrej Bauer,
+  Topos Institute Colloquium, 12th of May 2022.)</td>
+</tr>
 
-<LI>Existentially quantified implication ~ 19.35-1</LI>
+</table>
 
-<LI><I>x</I> = <I>x</I> ~ equid</LI>
+<p>Several more observations:</p>
 
-<LI>Definition of proper substitution ~ df-sb</LI>
-
-<LI>Double existential uniqueness ~ 2eu7</LI>
-
-</MENU>
-<B>Set theory</B>
-<MENU>
-<LI>Commutative law for union ~ uncom</LI>
-
-<LI>A basic relationship between class and wff
-variables ~ abeq2</LI>
-
-<LI>Two ways of saying &quot;is a set&quot; ~ isset</LI>
-
-<LI>The ZF axiom of foundation implies excluded middle ~ regexmid</LI>
-
-<LI>Russell's paradox ~ ru</LI>
-
-<LI>Ordinal trichotomy implies excluded middle ~ ordtriexmid</LI>
-
-<LI>Mathematical (finite) induction ~ findes</LI>
-
-<LI>Peano's postulates for arithmetic:
-~ peano1 ~ peano2 ~ peano3 ~ peano4 ~ peano5</LI>
-
-<LI>Two natural numbers are either equal or not equal ~ nndceq (a special case of the law of the excluded middle which we can prove).</LI>
-
-<LI>A natural number is either zero or a successor ~ nn0suc</LI>
-
-<LI>The axiom of choice implies excluded middle ~ acexmid</LI>
-
-<LI>Burali-Forti paradox ~ onprc</LI>
-
-<LI>Transfinite induction ~ tfis3</LI>
-
-<LI>Closure law for ordinal addition ~ oacl</LI>
-
-</MENU>
-<B>Real and complex numbers</B>
-
-<MENU>
-<LI>Archimedean property of real numbers ~ arch</LI>
-
-<LI>Properties of apartness:
-~ apirr ~ apsym ~ apcotr ~ apti</LI>
-
-<LI>The square root of 2 is irrational ~ sqrt2irrap (a
-different statement than "The square root of 2
-is not rational" ~ sqrt2irr )</LI>
-
-<LI>Convergence of a sequence of complex
-numbers ~ climcvg1n given a condition on the rate of convergence</LI>
-
-<LI>Triangle inequality for absolute
-value ~ abstrii</LI>
-
-<LI>The maximum of two real numbers ~ maxleb</LI>
-
-</MENU>
-</TD></TR></TABLE>
+<ul>
+  <li>we cannot prove ` ~P 1o ~~ 2o ` (see ~ exmidpw )</li>
+  <li>` ( ~P 1o ^m A ) ` represents the number of subsets of ` A `
+  (although we do not yet have a proof of ` ( ~P 1o ^m A ) ~~ ~P A `)</li>
+  <li>` ( 2o ^m A ) ` represents the number of decidable subsets of ` A `
+  as shown at ~ 2omapen</li>
+</ul>
 
 <HR NOSHADE SIZE=1><A NAME="intuitionize"></A><B><FONT
 COLOR="#006633">How to intuitionize classical proofs</FONT></B>&nbsp;&nbsp;&nbsp;
@@ -3433,6 +3524,11 @@ any inputs, and is being evaluated at two sets.</TD>
 is often the way to intuitionize ovex (check for your particular
 operation, as these are just a few examples).</TD>
 </TR>
+
+<tr>
+  <td>ovssunirn</td>
+  <td>~ ovssunirng , ~ relfvssunirn</td>
+</tr>
 
 <TR>
   <TD>ovrcl</TD>
@@ -10433,6 +10529,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 <TR>
   <TD>strfv3</TD>
   <TD>~ strslfv3</TD>
+  <td>puts more hypotheses into deduction form and adds
+  ` ( E `` ndx ) e. NN ` to hypotheses</td>
 </TR>
 
 <TR>
@@ -10883,20 +10981,45 @@ intuitionistic and it is lightly used in set.mm</TD>
   set.mm.</TD>
 </TR>
 
+<tr>
+  <td>imasvalstr</td>
+  <td>~ imasvalstrd</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>prdsvalstr</td>
+  <td>~ prdsvalstrd</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>prdsbaslem</td>
+  <td>~ prdsbaslemss</td>
+  <td>differs in various ways but serves roughly the same
+  function</td>
+</tr>
+
+<tr>
+  <td>prdsvsca , prdsip , prdsle ,
+  prdsless , prdsds , prdsdsfn , prdstset , prdshom , prdsco</td>
+  <td><i>none</i></td>
+  <td>these should be provable via ~ prdsbaslemss , in a
+  manner similar to ~ prdsbas or ~ prdsplusg</td>
+</tr>
+
 <TR>
-  <TD>imasvalstr , prdsvalstr , prdsvallem , prdsval , prdssca ,
-  prdsbas , prdsplusg , prdsmulr , prdsvsca , prdsip , prdsle ,
-  prdsless , prdsds , prdsdsfn , prdstset , prdshom , prdsco ,
-  prdsbas2 , prdsbasmpt , prdsbasfn , prdsbasprj , prdsplusgval ,
+  <TD>prdsbas2 , prdsbasmpt , prdsbasfn , prdsbasprj , prdsplusgval ,
   prdsplusgfval , prdsmulrval , prdsmulrfval , prdsleval , prdsdsval ,
   prdsvscaval , prdsvscafval , prdsbas3 , prdsbasmpt2 , prdsbascl ,
   prdsdsval2 , prdsdsval3 , pwsval , pwsbas , pwselbasb , pwselbas ,
   pwsplusgval , pwsmulrval , pwsle , pwsleval , pwsvscafval , pwsvscaval ,
   pwssca , pwsdiagel , pwssnf1o</TD>
   <TD><I>none</I></TD>
-  <TD>At a minimum, these theorems would need new set existence
-  conditions and other routine intuitionizing.  At worst, they
-  would need a bigger revamp for things like how order works.</TD>
+  <TD>Probably provable with new set existence
+  conditions and other routine intuitionizing.  Current plan is to
+  leave the order slot the same as set.mm (although it likely will
+  need changes later).</TD>
 </TR>
 
 <tr>
