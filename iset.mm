@@ -151348,6 +151348,29 @@ $)
       WCWDAYRWOVIWMAWOYRAFHRWOYRVIJNOPXJFHXHXMXNUTVAWEVBWFUPWG $.
   $}
 
+  ${
+    $d B x $.  $d F x $.  $d G x $.  $d I x $.  $d R x $.  $d S x $.  $d V x $.
+    $d W x $.  $d Y x $.  $d ph x $.
+    prdsplusgsgrpcl.y $e |- Y = ( S Xs_ R ) $.
+    prdsplusgsgrpcl.b $e |- B = ( Base ` Y ) $.
+    prdsplusgsgrpcl.p $e |- .+ = ( +g ` Y ) $.
+    prdsplusgsgrpcl.s $e |- ( ph -> S e. V ) $.
+    prdsplusgsgrpcl.i $e |- ( ph -> I e. W ) $.
+    prdsplusgsgrpcl.r $e |- ( ph -> R : I --> Smgrp ) $.
+    prdsplusgsgrpcl.f $e |- ( ph -> F e. B ) $.
+    prdsplusgsgrpcl.g $e |- ( ph -> G e. B ) $.
+    $( Structure product pointwise sums are closed when the factors are
+       semigroups.  (Contributed by AV, 21-Feb-2025.) $)
+    prdsplusgsgrpcl $p |- ( ph -> ( F .+ G ) e. B ) $=
+      ( wcel vx co cv cfv cplusg cmpt csgrp ffnd prdsplusgval cbs wa ffvelcdmda
+      wral adantr wfn simpr prdsbasprj eqid sgrpcl syl3anc ralrimiva prdsbasmpt
+      mpbird eqeltrd ) AFGCUBUAHUAUCZFUDZVEGUDZVEDUDZUEUDZUBZUFZBAUABCDEFGHIJKL
+      MOPAHUGDQUHZRSNUIAVKBTVJVHUJUDZTZUAHUMAVNUAHAVEHTZUKZVHUGTVFVMTVGVMTVNAHU
+      GVEDQULVPBDEFHVEIJKLMAEITVOOUNZAHJTVOPUNZADHUOVOVLUNZAFBTVORUNAVOUPZUQVPB
+      DEGHVEIJKLMVQVRVSAGBTVOSUNVTUQVMVHVFVGVIVMURVIURUSUTVAAUABDEVJHIJKLMOPVLV
+      BVCVD $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
