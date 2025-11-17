@@ -152032,6 +152032,20 @@ $)
   $}
 
   ${
+    $d a b p q B $.  $d a b p q F $.  $d a b p q R $.  $d a b p q U $.
+    $d a b p q V $.
+    imasmndf1.u $e |- U = ( F "s R ) $.
+    imasmndf1.v $e |- V = ( Base ` R ) $.
+    $( The image of a monoid under an injection is a monoid.  (Contributed by
+       Mario Carneiro, 24-Feb-2015.) $)
+    imasmndf1 $p |- ( ( F : V -1-1-> B /\ R e. Mnd ) -> U e. Mnd ) $=
+      ( vq vp va vb wf1 cmnd wcel c0g cfv wceq a1i eqid cv crn cplusg cimas cbs
+      wa co wf1o wfo f1f1orn adantr f1ofo syl f1ocpbl simpr imasmnd simpld ) EA
+      DLZBMNZUEZCMNBOPZDPCOPQUSDUAZBUBPZBCDEUTHIJKCDBUCUFQUSFREBUDPQUSGRVBSUSEV
+      ADUGZEVADUHUQVCUREADUIUJZEVADUKULUSJTKTITHTVBDEVAVDUMUQURUNUTSUOUP $.
+  $}
+
+  ${
     $d I x y $.  $d M x y $.  $d V x y $.
     mnd1.m $e |- M = { <. ( Base ` ndx ) , { I } >. ,
                        <. ( +g ` ndx ) , { <. <. I , I >. , I >. } >. } $.
