@@ -151957,6 +151957,63 @@ $)
   $}
 
   ${
+    $d p q x y .+ $.  $d a b p q u v w x y z ph $.  $d a b p q u v w x y z U $.
+    $d p q u x .0. $.  $d p q u v w B $.  $d a b p q u x y z F $.  $d p q R $.
+    $d a b p q x y z V $.
+    imasmnd.u $e |- ( ph -> U = ( F "s R ) ) $.
+    imasmnd.v $e |- ( ph -> V = ( Base ` R ) ) $.
+    imasmnd.p $e |- .+ = ( +g ` R ) $.
+    imasmnd.f $e |- ( ph -> F : V -onto-> B ) $.
+    imasmnd.e $e |- ( ( ph /\ ( a e. V /\ b e. V ) /\ ( p e. V /\ q e. V ) )
+      -> ( ( ( F ` a ) = ( F ` p ) /\ ( F ` b ) = ( F ` q ) )
+        -> ( F ` ( a .+ b ) ) = ( F ` ( p .+ q ) ) ) ) $.
+    ${
+      imasmnd2.r $e |- ( ph -> R e. W ) $.
+      imasmnd2.1 $e |- ( ( ph /\ x e. V /\ y e. V ) -> ( x .+ y ) e. V ) $.
+      imasmnd2.2 $e |- ( ( ph /\ ( x e. V /\ y e. V /\ z e. V ) ) ->
+        ( F ` ( ( x .+ y ) .+ z ) ) = ( F ` ( x .+ ( y .+ z ) ) ) ) $.
+      imasmnd2.3 $e |- ( ph -> .0. e. V ) $.
+      imasmnd2.4 $e |- ( ( ph /\ x e. V ) ->
+        ( F ` ( .0. .+ x ) ) = ( F ` x ) ) $.
+      imasmnd2.5 $e |- ( ( ph /\ x e. V ) ->
+        ( F ` ( x .+ .0. ) ) = ( F ` x ) ) $.
+      $( The image structure of a monoid is a monoid.  (Contributed by Mario
+         Carneiro, 24-Feb-2015.) $)
+      imasmnd2 $p |- ( ph -> ( U e. Mnd /\ ( F ` .0. ) = ( 0g ` U ) ) ) $=
+        ( vu vv vw cmnd wcel cfv c0g wceq cplusg imasbas eqidd wf cv eqid 3expb
+        cxp co caovclg imasaddf fovcdm syl3an1 w3a wrex crn wfo forn syl eleq2d
+        3anbi123d wfn wb fofn fvelrnb bitr3d 3reeanv bitr4di wa simpl 3adant3r3
+        simpr3 imasaddval syl3anc simpr1 3adantr1 oveq1d 3adant3r1 oveq2d simp1
+        wi 3eqtr4d simp2 oveq12d simp3 eqeq12d syl5ibcom 3exp2 imp32 rexlimdvva
+        rexlimdv sylbid imp fof ffvelcdmd adantr simpr eqtrd oveq2 id rexlimdva
+        mpd3an3 oveq1 ismndd grpidd jca ) AHUKULLIUMZHUNUMUOAUHUIUJEHUPUMZHYBAE
+        GHIJKQRTUBUQZAYCURZAEEVCEYCUSUHUTZEULZUIUTZEULZYFYHYCVDZEULAEGYCFHIJKMN
+        OPTUAQRUBSYCVAZABCNUTMUTJJJFABUTZJULZCUTZJULZYLYNFVDZJULZUCVBVEZVFYFYHE
+        EEYCVGVHAYGYIUJUTZEULZVIZYJYSYCVDZYFYHYSYCVDZYCVDZUOZAUUAYLIUMZYFUOZYNI
+        UMZYHUOZDUTZIUMZYSUOZVIZDJVJZCJVJBJVJZUUEAUUAUUGBJVJZUUICJVJZUULDJVJZVI
+        ZUUOAYFIVKZULZYHUUTULZYSUUTULZVIZUUAUUSAUVAYGUVBYIUVCYTAUUTEYFAJEIVLZUU
+        TEUOTJEIVMVNZVOZAUUTEYHUVFVOAUUTEYSUVFVOVPAIJVQZUVDUUSVRAUVEUVHTJEIVSVN
+        ZUVHUVAUUPUVBUUQUVCUURBJYFIVTZCJYHIVTDJYSIVTVPVNWAUUGUUIUULBCDJJJWBWCAU
+        UNUUEBCJJAYMYOWDWDUUMUUEDJAYMYOUUJJULZUUMUUEWPZWPAYMYOUVKUVLAYMYOUVKVIZ
+        WDZUUFUUHYCVDZUUKYCVDZUUFUUHUUKYCVDZYCVDZUOUUMUUEUVNYPIUMZUUKYCVDZUUFYN
+        UUJFVDZIUMZYCVDZUVPUVRUVNYPUUJFVDIUMZYLUWAFVDIUMZUVTUWCUDUVNAYQUVKUVTUW
+        DUOAUVMWEZAYMYOYQUVKUCWFAYMYOUVKWGAEGYCFHIJYPUUJKMNOPTUAQRUBSYKWHWIUVNA
+        YMUWAJULZUWCUWEUOUWFAYMYOUVKWJAYOUVKUWGYMANMYNUUJJJJFYRVEWKAEGYCFHIJYLU
+        WAKMNOPTUAQRUBSYKWHWIWQUVNUVOUVSUUKYCAYMYOUVOUVSUOUVKAEGYCFHIJYLYNKMNOP
+        TUAQRUBSYKWHWFWLUVNUVQUWBUUFYCAYOUVKUVQUWBUOYMAEGYCFHIJYNUUJKMNOPTUAQRU
+        BSYKWHWMWNWQUUMUVPUUBUVRUUDUUMUVOYJUUKYSYCUUMUUFYFUUHYHYCUUGUUIUULWOZUU
+        GUUIUULWRZWSUUGUUIUULWTZWSUUMUUFYFUVQUUCYCUWHUUMUUHYHUUKYSYCUWIUWJWSWSX
+        AXBXCXDXFXEXGXHAJELIAUVEJEIUSTJEIXIVNUEXJZAYGYBYFYCVDZYFUOZAYGUUPUWMAUV
+        AYGUUPUVGAUVHUVAUUPVRUVIUVJVNWAZAUUGUWMBJAYMWDZYBUUFYCVDZUUFUOUUGUWMUWO
+        UWPLYLFVDIUMZUUFUWOALJULZYMUWPUWQUOAYMWEAUWRYMUEXKZAYMXLAEGYCFHIJLYLKMN
+        OPTUAQRUBSYKWHWIUFXMUUGUWPUWLUUFYFUUFYFYBYCXNUUGXOZXAXBXPXGXHZAYGYFYBYC
+        VDZYFUOZAYGUUPUXCUWNAUUGUXCBJUWOUUFYBYCVDZUUFUOUUGUXCUWOUXDYLLFVDIUMZUU
+        FAYMUWRUXDUXEUOUWSAEGYCFHIJYLLKMNOPTUAQRUBSYKWHXQUGXMUUGUXDUXBUUFYFUUFY
+        FYBYCXRUWTXAXBXPXGXHZXSAUHEYCHYBYDYEUWKUXAUXFXTYA $.
+    $}
+  $}
+
+  ${
     $d I x y $.  $d M x y $.  $d V x y $.
     mnd1.m $e |- M = { <. ( Base ` ndx ) , { I } >. ,
                        <. ( +g ` ndx ) , { <. <. I , I >. , I >. } >. } $.
