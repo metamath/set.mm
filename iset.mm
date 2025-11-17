@@ -151895,6 +151895,36 @@ $)
   $}
 
   ${
+    $d a b y I $.  $d a b c y ph $.  $d a b y R $.  $d a b c y Y $.
+    $d a b y S $.
+    prdsmndd.y $e |- Y = ( S Xs_ R ) $.
+    prdsmndd.i $e |- ( ph -> I e. W ) $.
+    prdsmndd.s $e |- ( ph -> S e. V ) $.
+    prdsmndd.r $e |- ( ph -> R : I --> Mnd ) $.
+    $( The product of a family of monoids is a monoid.  (Contributed by Stefan
+       O'Rear, 10-Jan-2015.) $)
+    prdsmndd $p |- ( ph -> Y e. Mnd ) $=
+      ( va vy cfv wcel co wa cvv eqid adantr vb vc cbs cplusg c0g ccom eqidd cv
+      elexd cmnd wf simprl simprr prdsplusgcl 3impb w3a cmpt ffvelcdmda adantlr
+      wceq ad2antrr wfn ffnd simplr1 prdsbasprj simplr2 simplr3 mndass syl13anc
+      simpr prdsplusgfval oveq1d oveq2d 3eqtr4d mpteq2dva 3adantr3 prdsplusgval
+      simpr3 simpr1 simpr2 wral prdsidlem simpld simprd r19.21bi ismndd ) ALUAU
+      BGUCNZGUDNZGUEBUFZAWGUGAWHUGALUHZWGOZUAUHZWGOZWJWLWHPZWGOZAWKWMQZQWGWHBCW
+      JWLDRRGHWGSZWHSZACROZWPACEJUIZTADROZWPADFIUIZTADUJBUKZWPKTAWKWMULAWKWMUMU
+      NZUOAWKWMUBUHZWGOZUPZQZMDMUHZWNNZXIXENZXIBNZUDNZPZUQMDXIWJNZXIWLXEWHPZNZX
+      MPZUQWNXEWHPWJXPWHPXHMDXNXRXHXIDOZQZXOXIWLNZXMPZXKXMPZXOYAXKXMPZXMPZXNXRX
+      TXLUJOZXOXLUCNZOYAYGOXKYGOYCYEUTAXSYFXGADUJXIBKURUSXTWGBCWJDXIRRGHWQAWSXG
+      XSWTVAZAXAXGXSXBVAZABDVBZXGXSADUJBKVCZVAZWKWMXFAXSVDZXHXSVJZVEXTWGBCWLDXI
+      RRGHWQYHYIYLWKWMXFAXSVFZYNVEXTWGBCXEDXIRRGHWQYHYIYLWKWMXFAXSVGZYNVEYGXMXL
+      XOYAXKYGSXMSVHVIXTXJYBXKXMXTWGWHBCWJWLDXIRRGHWQYHYIYLYMYOWRYNVKVLXTXQYDXO
+      XMXTWGWHBCWLXEDXIRRGHWQYHYIYLYOYPWRYNVKVMVNVOXHMWGWHBCWNXEDRRGHWQAWSXGWTT
+      ZAXAXGXBTZAYJXGYKTZAWKWMWOXFXDVPAWKWMXFVRZWRVQXHMWGWHBCWJXPDRRGHWQYQYRYSA
+      WKWMXFVSXHWGWHBCWLXEDRRGHWQWRYQYRAXCXGKTAWKWMXFVTYTUNWRVQVNAWIWGOZWIWJWHP
+      WJUTZWJWIWHPWJUTZQZLWGWAZALWGWHBCDRRGWIHWQWRWTXBKWISWBZWCAWKQZUUBUUCAUUDL
+      WGAUUAUUEUUFWDWEZWCUUGUUBUUCUUHWDWF $.
+  $}
+
+  ${
     $d I x y $.  $d M x y $.  $d V x y $.
     mnd1.m $e |- M = { <. ( Base ` ndx ) , { I } >. ,
                        <. ( +g ` ndx ) , { <. <. I , I >. , I >. } >. } $.
