@@ -152011,6 +152011,24 @@ $)
         FAYMUWRUXDUXEUOUWSAEGYCFHIJYLLKMNOPTUAQRUBSYKWHXQUGXMUUGUXDUXBUUFYFUUFY
         FYBYCXRUWTXAXBXPXGXHZXSAUHEYCHYBYDYEUWKUXAUXFXTYA $.
     $}
+
+    ${
+      imasmnd.r $e |- ( ph -> R e. Mnd ) $.
+      imasmnd.z $e |- .0. = ( 0g ` R ) $.
+      $( The image structure of a monoid is a monoid.  (Contributed by Mario
+         Carneiro, 24-Feb-2015.) $)
+      imasmnd $p |- ( ph -> ( U e. Mnd /\ ( F ` .0. ) = ( 0g ` U ) ) ) $=
+        ( wcel vx vy vz cmnd cv w3a co cbs cfv 3ad2ant1 simp2 wceq eleqtrd eqid
+        simp3 mndcl syl3anc eleqtrrd wa adantr 3adant3r3 simpr3 mndass syl13anc
+        fveq2d mndidcl syl eleq2d biimpa mndlid syl2an2r mndrid imasmnd2 ) AUAU
+        BUCBCDEFGUDHIJKLMNOPQRAUAUEZGTZUBUEZGTZUFZVNVPCUGZDUHUIZGVRDUDTZVNVTTZV
+        PVTTZVSVTTAVOWAVQRUJVRVNGVTAVOVQUKAVOGVTULZVQNUJZUMZVRVPGVTAVOVQUOWEUMZ
+        VTCDVNVPVTUNZOUPUQWEURAVOVQUCUEZGTZUFZUSZVSWICUGZVNVPWICUGCUGZFWLWAWBWC
+        WIVTTWMWNULAWAWKRUTAVOVQWBWJWFVAAVOVQWCWJWGVAWLWIGVTAVOVQWJVBAWDWKNUTUM
+        VTCDVNVPWIWHOVCVDVEAHVTGAWAHVTTRVTDHWHSVFVGNURAVOUSZHVNCUGZVNFAWAVOWBWP
+        VNULRAVOWBAGVTVNNVHVIZVTCDVNHWHOSVJVKVEWOVNHCUGZVNFAWAVOWBWRVNULRWQVTCD
+        VNHWHOSVLVKVEVM $.
+    $}
   $}
 
   ${
