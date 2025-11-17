@@ -151848,6 +151848,31 @@ $)
   $}
 
   ${
+    $d x y .+ $.  $d y .0. $.  $d x y B $.  $d x F $.  $d x y I $.  $d x y R $.
+    $d x G $.  $d x y ph $.  $d x y S $.  $d x y V $.  $d x y W $.  $d x y Y $.
+    prdsplusgcl.y $e |- Y = ( S Xs_ R ) $.
+    prdsplusgcl.b $e |- B = ( Base ` Y ) $.
+    prdsplusgcl.p $e |- .+ = ( +g ` Y ) $.
+    prdsplusgcl.s $e |- ( ph -> S e. V ) $.
+    prdsplusgcl.i $e |- ( ph -> I e. W ) $.
+    prdsplusgcl.r $e |- ( ph -> R : I --> Mnd ) $.
+    ${
+      prdsplusgcl.f $e |- ( ph -> F e. B ) $.
+      prdsplusgcl.g $e |- ( ph -> G e. B ) $.
+      $( Structure product pointwise sums are closed when the factors are
+         monoids.  (Contributed by Stefan O'Rear, 10-Jan-2015.) $)
+      prdsplusgcl $p |- ( ph -> ( F .+ G ) e. B ) $=
+        ( wcel vx co cfv cplusg cmpt cmnd ffnd prdsplusgval cbs wral ffvelcdmda
+        cv adantr wfn simpr prdsbasprj eqid syl3anc ralrimiva prdsbasmpt mpbird
+        wa mndcl eqeltrd ) AFGCUBUAHUAULZFUCZVEGUCZVEDUCZUDUCZUBZUEZBAUABCDEFGH
+        IJKLMOPAHUFDQUGZRSNUHAVKBTVJVHUIUCZTZUAHUJAVNUAHAVEHTZVBZVHUFTVFVMTVGVM
+        TVNAHUFVEDQUKVPBDEFHVEIJKLMAEITVOOUMZAHJTVOPUMZADHUNVOVLUMZAFBTVORUMAVO
+        UOZUPVPBDEGHVEIJKLMVQVRVSAGBTVOSUMVTUPVMVIVHVFVGVMUQVIUQVCURUSAUABDEVJH
+        IJKLMOPVLUTVAVD $.
+    $}
+  $}
+
+  ${
     $d I x y $.  $d M x y $.  $d V x y $.
     mnd1.m $e |- M = { <. ( Base ` ndx ) , { I } >. ,
                        <. ( +g ` ndx ) , { <. <. I , I >. , I >. } >. } $.
