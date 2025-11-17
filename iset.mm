@@ -151934,6 +151934,17 @@ $)
   $}
 
   ${
+    $d x I $.  $d r x R $.  $d x V $.  $d r x .0. $.
+    pwsmnd.y $e |- Y = ( R ^s I ) $.
+    $( The structure power of a monoid is a monoid.  (Contributed by Mario
+       Carneiro, 11-Jan-2015.) $)
+    pwsmnd $p |- ( ( R e. Mnd /\ I e. V ) -> Y e. Mnd ) $=
+      ( cmnd wcel wa csca cfv csn cxp cprds co eqid pwsval simpr scaslid adantr
+      cvv slotex wf fconst6g prdsmndd eqeltrd ) AFGZBCGZHZDAIJZBAKLZMNZFAUIBFCD
+      EUIOPUHUJUIBTCUKUKOUFUGQUFUITGUGAIFRUASUFBFUJUBUGBAFUCSUDUE $.
+  $}
+
+  ${
     $d I x y $.  $d M x y $.  $d V x y $.
     mnd1.m $e |- M = { <. ( Base ` ndx ) , { I } >. ,
                        <. ( +g ` ndx ) , { <. <. I , I >. , I >. } >. } $.
