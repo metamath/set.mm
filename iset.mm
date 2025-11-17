@@ -151371,6 +151371,34 @@ $)
       BVCVD $.
   $}
 
+  ${
+    $d I y $.  $d R y $.  $d S y $.  $d Y a b c y $.  $d ph a b c y $.
+    prdssgrpd.y $e |- Y = ( S Xs_ R ) $.
+    prdssgrpd.i $e |- ( ph -> I e. W ) $.
+    prdssgrpd.s $e |- ( ph -> S e. V ) $.
+    prdssgrpd.r $e |- ( ph -> R : I --> Smgrp ) $.
+    $( The product of a family of semigroups is a semigroup.  (Contributed by
+       AV, 21-Feb-2025.) $)
+    prdssgrpd $p |- ( ph -> Y e. Smgrp ) $=
+      ( vy cfv cvv cv wcel co wa adantr csgrp va vb cbs cplusg eqidd eqid elexd
+      vc wf simprl simprr prdsplusgsgrpcl 3impb w3a ffvelcdmda adantlr ad2antrr
+      cmpt wceq wfn ffnd simplr1 simpr prdsbasprj simplr2 simplr3 prdsplusgfval
+      sgrpass oveq1d oveq2d 3eqtr4d mpteq2dva simpr3 prdsplusgval simpr1 simpr2
+      syl13anc 3adantr3 cprds fexd prdsex syl2anc eqeltrid issgrpd ) AUAUBUHGUC
+      MZGUDMZGNAWEUEAWFUEAUAOZWEPZUBOZWEPZWGWIWFQZWEPZAWHWJRZRWEWFBCWGWIDNNGHWE
+      UFZWFUFZACNPZWMACEJUGZSADNPZWMADFIUGZSADTBUIZWMKSAWHWJUJAWHWJUKULZUMAWHWJ
+      UHOZWEPZUNZRZLDLOZWKMZXFXBMZXFBMZUDMZQZURLDXFWGMZXFWIXBWFQZMZXJQZURWKXBWF
+      QWGXMWFQXELDXKXOXEXFDPZRZXLXFWIMZXJQZXHXJQZXLXRXHXJQZXJQZXKXOXQXITPZXLXIU
+      CMZPXRYDPXHYDPXTYBUSAXPYCXDADTXFBKUOUPXQWEBCWGDXFNNGHWNAWPXDXPWQUQZAWRXDX
+      PWSUQZABDUTZXDXPADTBKVAZUQZWHWJXCAXPVBZXEXPVCZVDXQWEBCWIDXFNNGHWNYEYFYIWH
+      WJXCAXPVEZYKVDXQWEBCXBDXFNNGHWNYEYFYIWHWJXCAXPVFZYKVDYDXIXLXRXJXHYDUFXJUF
+      VHVQXQXGXSXHXJXQWEWFBCWGWIDXFNNGHWNYEYFYIYJYLWOYKVGVIXQXNYAXLXJXQWEWFBCWI
+      XBDXFNNGHWNYEYFYIYLYMWOYKVGVJVKVLXELWEWFBCWKXBDNNGHWNAWPXDWQSZAWRXDWSSZAY
+      GXDYHSZAWHWJWLXCXAVRAWHWJXCVMZWOVNXELWEWFBCWGXMDNNGHWNYNYOYPAWHWJXCVOXEWE
+      WFBCWIXBDNNGHWNWOYNYOAWTXDKSAWHWJXCVPYQULWOVNVKAGCBVSQZNHACEPBNPYRNPJADTF
+      BKIVTBCENWAWBWCWD $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
