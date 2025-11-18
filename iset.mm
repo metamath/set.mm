@@ -154336,6 +154336,18 @@ $)
   $}
 
   ${
+    $d x y G $.  $d x y M $.  $d x y R $.  $d x y X $.  $d x B $.  $d x F $.
+    $d x I $.  $d x N $.  $d x V $.
+    pwsgrp.y $e |- Y = ( R ^s I ) $.
+    $( A structure power of a group is a group.  (Contributed by Mario
+       Carneiro, 11-Jan-2015.) $)
+    pwsgrp $p |- ( ( R e. Grp /\ I e. V ) -> Y e. Grp ) $=
+      ( cgrp wcel wa csca cfv csn cxp cprds co eqid pwsval simpr scaslid adantr
+      cvv slotex wf fconst6g prdsgrpd eqeltrd ) AFGZBCGZHZDAIJZBAKLZMNZFAUIBFCD
+      EUIOPUHUJUIBTCUKUKOUFUGQUFUITGUGAIFRUASUFBFUJUBUGBAFUCSUDUE $.
+  $}
+
+  ${
     $d p q u v w x B $.  $d p v N $.  $d a b p q u v w x y z ph $.  $d p q R $.
     $d a b p q u v w x y z F $.  $d p q x y .+ $.  $d a b p q u v w x y z U $.
     $d a b p q x y z V $.  $d p q u v w x .0. $.
