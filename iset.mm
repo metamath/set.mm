@@ -48435,6 +48435,21 @@ $)
     ( wfn wfun cdm wceq df-fn simprbi ) BACBDBEAFBAGH $.
 
   ${
+    fndmi.1 $e |- F Fn A $.
+    $( The domain of a function.  (Contributed by Wolf Lammen, 1-Jun-2024.) $)
+    fndmi $p |- dom F = A $=
+      ( wfn cdm wceq fndm ax-mp ) BADBEAFCABGH $.
+  $}
+
+  ${
+    fndmd.1 $e |- ( ph -> F Fn A ) $.
+    $( The domain of a function.  (Contributed by Glauco Siliprandi,
+       23-Oct-2021.) $)
+    fndmd $p |- ( ph -> dom F = A ) $=
+      ( wfn cdm wceq fndm syl ) ACBECFBGDBCHI $.
+  $}
+
+  ${
     funfni.1 $e |- ( ( Fun F /\ B e. dom F ) -> ph ) $.
     $( Inference to convert a function and domain antecedent.  (Contributed by
        NM, 22-Apr-2004.) $)
@@ -149031,12 +149046,281 @@ $)
   $}
 
   ${
+    $d f g x y z B $.  $d f g x y z F $.  $d f g x y z G $.  $d f g x y z ph $.
+    $d f g x y z I $.  $d x J $.  $d y z K $.  $d x T $.  $d x V $.
+    $d f g x y z R $.  $d f g x y z S $.  $d x W $.  $d f g x y z Y $.
+    prdsbasmpt.y $e |- Y = ( S Xs_ R ) $.
+    prdsbasmpt.b $e |- B = ( Base ` Y ) $.
+    ${
+      prdsbasmpt.s $e |- ( ph -> S e. V ) $.
+      prdsbasmpt.i $e |- ( ph -> I e. W ) $.
+      prdsbasmpt.r $e |- ( ph -> R Fn I ) $.
+      $( The base set of a structure product is an indexed set product.
+         (Contributed by Stefan O'Rear, 10-Jan-2015.)  (Revised by Mario
+         Carneiro, 15-Aug-2015.) $)
+      prdsbas2 $p |- ( ph -> B = X_ x e. I ( Base ` ( R ` x ) ) ) $=
+        ( cvv wfn wcel fnex syl2anc fndmd prdsbas ) ABCIDEFGOJLADFPFHQDOQNMFHDR
+        SKAFDNTUA $.
+
+      $( A constructed tuple is a point in a structure product iff each
+         coordinate is in the proper base set.  (Contributed by Stefan O'Rear,
+         10-Jan-2015.) $)
+      prdsbasmpt $p |- ( ph -> ( ( x e. I |-> U ) e. B <->
+          A. x e. I U e. ( Base ` ( R ` x ) ) ) ) $=
+        ( cmpt wcel cv cfv cbs cixp wral prdsbas2 eleq2d wb mptelixpg syl bitrd
+        ) ABGFPZCQUIBGBRDSTSZUAZQZFUJQBGUBZACUKUIABCDEGHIJKLMNOUCUDAGIQULUMUENB
+        GFUJIUFUGUH $.
+
+      ${
+        prdsbasmpt.t $e |- ( ph -> T e. B ) $.
+        $( Points in the structure product are functions; use this with
+           ~ dffn5im to establish equalities.  (Contributed by Stefan O'Rear,
+           10-Jan-2015.) $)
+        prdsbasfn $p |- ( ph -> T Fn I ) $=
+          ( vx cv cfv cbs cixp wcel wfn prdsbas2 eleqtrd ixpfn syl ) AEPFPQCRSR
+          ZTZUAEFUBAEBUHOAPBCDFGHIJKLMNUCUDPFUGEUEUF $.
+
+        prdsbasprj.j $e |- ( ph -> J e. I ) $.
+        $( Each point in a structure product restricts on each coordinate to
+           the relevant base set.  (Contributed by Stefan O'Rear,
+           10-Jan-2015.) $)
+        prdsbasprj $p |- ( ph -> ( T ` J ) e. ( Base ` ( R ` J ) ) ) $=
+          ( vx cfv wcel cv wceq fveq2 2fveq3 eleq12d cixp wral prdsbas2 eleqtrd
+          cbs cvv wfn elixp2 simp3bi syl rspcdva ) ARUAZESZUQCSUJSZTZGESZGCSUJS
+          ZTRFGUQGUBURVAUSVBUQGEUCUQGUJCUDUEAERFUSUFZTZUTRFUGZAEBVCPARBCDFHIJKL
+          MNOUHUIVDEUKTEFULVERFUSEUMUNUOQUP $.
+      $}
+
+      prdsplusgval.f $e |- ( ph -> F e. B ) $.
+      prdsplusgval.g $e |- ( ph -> G e. B ) $.
+      ${
+        prdsplusgval.p $e |- .+ = ( +g ` Y ) $.
+        $( Value of a componentwise sum in a structure product.  (Contributed
+           by Stefan O'Rear, 10-Jan-2015.)  (Revised by Mario Carneiro,
+           15-Aug-2015.) $)
+        prdsplusgval $p |- ( ph -> ( F .+ G ) = ( x e. I |-> ( ( F ` x )
+            ( +g ` ( R ` x ) ) ( G ` x ) ) ) ) $=
+          ( vy vz cv cfv cplusg cmpt cvv wcel fnex syl2anc fndmd prdsplusg wceq
+          co wfn wa fveq1 oveqan12d adantl mpteq2dv mptexd ovmpod ) AUAUBGHCCBI
+          BUCZUAUCZUDZVCUBUCZUDZVCEUDUEUDZUNZUFBIVCGUDZVCHUDZVHUNZUFDUGABCLDEFU
+          AUBIJUGMOAEIUOIKUHEUGUHQPIKEUIUJNAIEQUKTULAVDGUMZVFHUMZUPZUPBIVIVLVOV
+          IVLUMAVMVNVEVJVGVKVHVCVDGUQVCVFHUQURUSUTRSABIVLKPVAVB $.
+
+        prdsplusgfval.j $e |- ( ph -> J e. I ) $.
+        $( Value of a structure product sum at a single coordinate.
+           (Contributed by Stefan O'Rear, 10-Jan-2015.) $)
+        prdsplusgfval $p |- ( ph -> ( ( F .+ G ) ` J ) = ( ( F ` J )
+            ( +g ` ( R ` J ) ) ( G ` J ) ) ) $=
+          ( vx co cfv cv cplusg cmpt prdsplusgval fveq1d eqid wceq 2fveq3 fveq2
+          cvv oveq123d wcel fvexg syl2anc wfn fnex plusgslid slotex syl syl3anc
+          ovexg fvmptd3 eqtrd ) AIFGCUCZUDIUBHUBUEZFUDZVIGUDZVIDUDUFUDZUCZUGZUD
+          IFUDZIGUDZIDUDZUFUDZUCZAIVHVNAUBBCDEFGHJKLMNOPQRSTUHUIAUBIVMVSHVNUNVN
+          UJVIIUKVJVOVKVPVLVRVIIUFDULVIIFUMVIIGUMUOUAAVOUNUPZVRUNUPZVPUNUPZVSUN
+          UPAFBUPIHUPZVTRUAIFBHUQURAVQUNUPZWAADUNUPZWCWDADHUSHKUPWEQPHKDUTURUAI
+          DUNHUQURVQUFUNVAVBVCAGBUPWCWBSUAIGBHUQURVOVPVRUNUNUNVEVDVFVG $.
+      $}
+
+      ${
+        prdsmulrval.t $e |- .x. = ( .r ` Y ) $.
+        $( Value of a componentwise ring product in a structure product.
+           (Contributed by Mario Carneiro, 11-Jan-2015.) $)
+        prdsmulrval $p |- ( ph -> ( F .x. G ) = ( x e. I |-> ( ( F ` x )
+            ( .r ` ( R ` x ) ) ( G ` x ) ) ) ) $=
+          ( vy vz cv cfv cmulr co cmpt cvv wfn wcel fnex syl2anc fndmd prdsmulr
+          wceq wa fveq1 oveqan12d adantl mpteq2dv mptexd ovmpod ) AUAUBGHCCBIBU
+          CZUAUCZUDZVCUBUCZUDZVCDUDUEUDZUFZUGBIVCGUDZVCHUDZVHUFZUGFUHABCLDEFUAU
+          BIJUHMOADIUIIKUJDUHUJQPIKDUKULNAIDQUMTUNAVDGUOZVFHUOZUPZUPBIVIVLVOVIV
+          LUOAVMVNVEVJVGVKVHVCVDGUQVCVFHUQURUSUTRSABIVLKPVAVB $.
+
+        prdsmulrfval.j $e |- ( ph -> J e. I ) $.
+        $( Value of a structure product's ring product at a single coordinate.
+           (Contributed by Mario Carneiro, 11-Jan-2015.) $)
+        prdsmulrfval $p |- ( ph -> ( ( F .x. G ) ` J ) = ( ( F ` J )
+            ( .r ` ( R ` J ) ) ( G ` J ) ) ) $=
+          ( vx co cfv cv cmulr cmpt prdsmulrval fveq1d cvv eqid 2fveq3 oveq123d
+          wceq fveq2 wcel fvexg syl2anc wfn mulrslid slotex syl syl3anc fvmptd3
+          fnex ovexg eqtrd ) AIFGEUCZUDIUBHUBUEZFUDZVIGUDZVICUDUFUDZUCZUGZUDIFU
+          DZIGUDZICUDZUFUDZUCZAIVHVNAUBBCDEFGHJKLMNOPQRSTUHUIAUBIVMVSHVNUJVNUKV
+          IIUNVJVOVKVPVLVRVIIUFCULVIIFUOVIIGUOUMUAAVOUJUPZVRUJUPZVPUJUPZVSUJUPA
+          FBUPIHUPZVTRUAIFBHUQURAVQUJUPZWAACUJUPZWCWDACHUSHKUPWEQPHKCVEURUAICUJ
+          HUQURVQUFUJUTVAVBAGBUPWCWBSUAIGBHUQURVOVPVRUJUJUJVFVCVDVG $.
+      $}
+    $}
+  $}
+
+  ${
+    $d y B $.  $d x y F $.  $d x y G $.  $d y ph $.  $d y S $.  $d y V $.
+    $d x y I $.  $d y R $.  $d y W $.  $d y Y $.
+    prdsbasmpt2.y $e |- Y = ( S Xs_ ( x e. I |-> R ) ) $.
+    prdsbasmpt2.b $e |- B = ( Base ` Y ) $.
+    prdsbasmpt2.s $e |- ( ph -> S e. V ) $.
+    prdsbasmpt2.i $e |- ( ph -> I e. W ) $.
+    prdsbasmpt2.r $e |- ( ph -> A. x e. I R e. X ) $.
+    ${
+      prdsbasmpt2.k $e |- K = ( Base ` R ) $.
+      $( The base set of an indexed structure product.  (Contributed by Mario
+         Carneiro, 13-Sep-2015.) $)
+      prdsbas3 $p |- ( ph -> B = X_ x e. I K ) $=
+        ( vy cfv cbs cv cmpt cixp wcel wral wfn eqid syl prdsbas2 nfcv nffvmpt1
+        nffv 2fveq3 cbvixp eqtrdi wceq wa fvmpt2 fveq2d eqtr4di ralimiaa ixpeq2
+        fnmpt 3syl eqtrd ) ACBFBUAZBFDUBZSZTSZUCZBFGUCZACRFRUAZVGSZTSZUCVJARCVG
+        EFHIKLMNOADJUDZBFUEZVGFUFPBFDVGJVGUGZVCUHUIRBFVNVIBVMTBTUJBFDVLUKULRVIU
+        JVLVFTVGUMUNUOAVPVIGUPZBFUEVJVKUPPVOVRBFVFFUDVOUQZVIDTSGVSVHDTBFDJVGVQU
+        RUSQUTVABFVIGVBVDVE $.
+
+      $( A constructed tuple is a point in a structure product iff each
+         coordinate is in the proper base set.  (Contributed by Mario Carneiro,
+         3-Jul-2015.)  (Revised by Mario Carneiro, 13-Sep-2015.) $)
+      prdsbasmpt2 $p |- ( ph ->
+          ( ( x e. I |-> U ) e. B <-> A. x e. I U e. K ) ) $=
+        ( cmpt wcel cixp wral prdsbas3 eleq2d wb mptelixpg syl bitrd ) ABGFSZCT
+        UIBGHUAZTZFHTBGUBZACUJUIABCDEGHIJKLMNOPQRUCUDAGJTUKULUEPBGFHJUFUGUH $.
+
+      prdsbascl.f $e |- ( ph -> F e. B ) $.
+      $( An element of the base has projections closed in the factors.
+         (Contributed by Mario Carneiro, 27-Aug-2015.) $)
+      prdsbascl $p |- ( ph -> A. x e. I ( F ` x ) e. K ) $=
+        ( wcel cfv cmpt wral wfn wceq eqid fnmpt syl prdsbasfn dffn5im eqeltrrd
+        cv prdsbasmpt2 mpbid ) ABGBULFUAZUBZCTUOHTBGUCAFUPCAFGUDFUPUEACBGDUBZEF
+        GIJLMNOPADKTBGUCUQGUDQBGDUQKUQUFUGUHSUIBGFUJUHSUKABCDEUOGHIJKLMNOPQRUMU
+        N $.
+    $}
+  $}
+
+  ${
     $d r i $.
     $( Define a structure power, which is just a structure product where all
        the factors are the same.  (Contributed by Mario Carneiro,
        11-Jan-2015.) $)
     df-pws $a |-
         ^s = ( r e. _V , i e. _V |-> ( ( Scalar ` r ) Xs_ ( i X. { r } ) ) ) $.
+  $}
+
+  ${
+    $d i r F $.  $d i r I $.  $d i r R $.
+    pwsval.y $e |- Y = ( R ^s I ) $.
+    pwsval.f $e |- F = ( Scalar ` R ) $.
+    $( Value of a structure power.  (Contributed by Mario Carneiro,
+       11-Jan-2015.) $)
+    pwsval $p |- ( ( R e. V /\ I e. W ) -> Y = ( F Xs_ ( I X. { R } ) ) ) $=
+      ( vr vi wcel wa cpws co csn cprds cvv wceq adantr csca cxp adantl scaslid
+      elex cfv slotex eqeltrid simpr snexg xpexg syl2anc prdsex cv simpl fveq2d
+      eqtr4di id sneq xpeq12 syl2anr oveq12d df-pws ovmpoga syl3anc eqtrid ) AD
+      KZCEKZLZFACMNZBCAOZUAZPNZGVHAQKZCQKZVLQKZVIVLRVFVMVGADUDSVGVNVFCEUDUBVHBQ
+      KZVKQKZVOVFVPVGVFBATUEZQHATDUCUFUGSVHVGVJQKZVQVFVGUHVFVSVGADUISCVJEQUJUKV
+      KBQQULUKIJACQQIUMZTUEZJUMZVTOZUAZPNVLMQVTARZWBCRZLZWABWDVKPWGWAVRBWGVTATW
+      EWFUNUOHUPWFWFWCVJRWDVKRWEWFUQVTAURWBCWCVJUSUTVAJIVBVCVDVE $.
+  $}
+
+  ${
+    $d x I $.  $d x w R $.  $d x V $.  $d x W $.
+    pwsbas.y $e |- Y = ( R ^s I ) $.
+    pwsbas.f $e |- B = ( Base ` R ) $.
+    $( Base set of a structure power.  (Contributed by Mario Carneiro,
+       11-Jan-2015.) $)
+    pwsbas $p |- ( ( R e. V /\ I e. W ) -> ( B ^m I ) = ( Base ` Y ) ) $=
+      ( vx vw wcel wa cbs cfv co cmap eqid cvv adantr wceq csn cxp cprds pwsval
+      csca cixp fveq2d cv scaslid slotex simpr snexg xpexg syl2anc cdm wex snmg
+      dmxpm syl prdsbas wral fvconst2g ralrimiva ixpeq2 eqtrd wfn basfn funfvex
+      elex funfni sylancr ixpconstg oveq1i eqtr4di 3eqtrrd ) BDKZCEKZLZFMNBUENZ
+      CBUAZUBZUCOZMNZICBMNZUFZACPOZVRFWBMBVSCDEFGVSQUDUGVRWCICIUHZWANZMNZUFZWEV
+      RIWCWBWAVSCRRWBQVPVSRKVQBUEDUIUJSVRVQVTRKZWARKVPVQUKZVPWKVQBDULSCVTERUMUN
+      WCQVPWAUOCTZVQVPJUHVTKJUPWMJBDUQJCVTURUSSUTVRWIWDTZICVAZWJWETVPWOVQVPWNIC
+      VPWGCKLWHBMCBWGDVBUGVCSICWIWDVDUSVEVRWEWDCPOZWFVRVQWDRKZWEWPTWLVPWQVQVPMR
+      VFBRKWQVGBDVIWQRBMBMVHVJVKSICWDERVLUNAWDCPHVMVNVO $.
+
+    pwselbas.v $e |- V = ( Base ` Y ) $.
+    $( Membership in the base set of a structure product.  (Contributed by
+       Stefan O'Rear, 24-Jan-2015.) $)
+    pwselbasb $p |- ( ( R e. W /\ I e. Z ) -> ( X e. V <-> X : I --> B ) ) $=
+      ( wcel wa cmap co wf cbs cfv pwsbas cvv eqtr4di eleq2d basfn elex funfvex
+      wb wfn funfni sylancr eqeltrid elmapg sylan bitr3d ) BELZCHLZMZFACNOZLZFD
+      LCAFPZUPUQDFUPUQGQRDABCEHGIJSKUAUBUNATLUOURUSUFUNABQRZTJUNQTUGBTLUTTLZUCB
+      EUDVATBQBQUEUHUIUJACFTHUKULUM $.
+
+    pwselbas.r $e |- ( ph -> R e. W ) $.
+    pwselbas.i $e |- ( ph -> I e. Z ) $.
+    pwselbas.x $e |- ( ph -> X e. V ) $.
+    $( An element of a structure power is a function from the index set to the
+       base set of the structure.  (Contributed by Mario Carneiro,
+       11-Jan-2015.)  (Revised by Mario Carneiro, 5-Jun-2015.) $)
+    pwselbas $p |- ( ph -> X : I --> B ) $=
+      ( wcel wf wb pwselbasb syl2anc mpbid ) AGEPZDBGQZOACFPDIPUBUCRMNBCDEFGHIJ
+      KLSTUA $.
+  $}
+
+  ${
+    $d x .+ $.  $d x F $.  $d x G $.  $d x I $.  $d x ph $.  $d x .x. $.
+    $d x R $.  $d x W $.
+    pwsplusgval.y $e |- Y = ( R ^s I ) $.
+    pwsplusgval.b $e |- B = ( Base ` Y ) $.
+    pwsplusgval.r $e |- ( ph -> R e. V ) $.
+    pwsplusgval.i $e |- ( ph -> I e. W ) $.
+    pwsplusgval.f $e |- ( ph -> F e. B ) $.
+    pwsplusgval.g $e |- ( ph -> G e. B ) $.
+    ${
+      pwsplusgval.a $e |- .+ = ( +g ` R ) $.
+      pwsplusgval.p $e |- .+b = ( +g ` Y ) $.
+      $( Value of addition in a structure power.  (Contributed by Mario
+         Carneiro, 11-Jan-2015.) $)
+      pwsplusgval $p |- ( ph -> ( F .+b G ) = ( F oF .+ G ) ) $=
+        ( cfv vx csca csn cxp cprds co cplusg cv cmpt cof cbs eqid wcel scaslid
+        cvv slotex syl fnconstg wceq pwsval syl2anc fveq2d eleqtrd prdsplusgval
+        wfn eqtrid fvconst2g sylan eqtr4di oveqd mpteq2dva eqtrd fvexg pwselbas
+        wa feqmptd offval2 3eqtr4d ) AFGEUBTZHEUCUDZUEUFZUGTZUFZUAHUAUHZFTZWDGT
+        ZCUFZUIZFGDUFFGCUJUFAWCUAHWEWFWDVTTZUGTZUFZUIWHAUAWAUKTZWBVTVSFGHUOJWAW
+        AULWLULAEIUMZVSUOUMNEUBIUNUPUQOAWMVTHVENHEIURUQAFBWLPABKUKTWLMAKWAUKAWM
+        HJUMKWAUSNOEVSHIJKLVSULUTVAZVBVFZVCAGBWLQWOVCWBULVDAUAHWKWGAWDHUMZVOZWJ
+        CWEWFWQWJEUGTCWQWIEUGAWMWPWIEUSNHEWDIVGVHVBRVIVJVKVLADWBFGADKUGTWBSAKWA
+        UGWNVBVFVJAUAHWEWFCFGJUOUOOAFBUMWPWEUOUMPWDFBHVMVHAGBUMWPWFUOUMQWDGBHVM
+        VHAUAHEUKTZFAWREHBIFKJLWRULZMNOPVNVPAUAHWRGAWREHBIGKJLWSMNOQVNVPVQVR $.
+    $}
+
+    ${
+      pwsmulrval.a $e |- .x. = ( .r ` R ) $.
+      pwsmulrval.p $e |- .xb = ( .r ` Y ) $.
+      $( Value of multiplication in a structure power.  (Contributed by Mario
+         Carneiro, 11-Jan-2015.) $)
+      pwsmulrval $p |- ( ph -> ( F .xb G ) = ( F oF .x. G ) ) $=
+        ( cfv vx csca csn cxp cprds co cmulr cmpt cof cbs cvv eqid wcel scaslid
+        cv slotex syl fnconstg pwsval syl2anc fveq2d eqtrid eleqtrd prdsmulrval
+        wfn wceq wa fvconst2g sylan eqtr4di oveqd mpteq2dva eqtrd fvexg feqmptd
+        pwselbas offval2 3eqtr4d ) AFGCUBTZHCUCUDZUEUFZUGTZUFZUAHUAUOZFTZWDGTZE
+        UFZUHZFGDUFFGEUIUFAWCUAHWEWFWDVTTZUGTZUFZUHWHAUAWAUJTZVTVSWBFGHUKJWAWAU
+        LWLULACIUMZVSUKUMNCUBIUNUPUQOAWMVTHVENHCIURUQAFBWLPABKUJTWLMAKWAUJAWMHJ
+        UMKWAVFNOCVSHIJKLVSULUSUTZVAVBZVCAGBWLQWOVCWBULVDAUAHWKWGAWDHUMZVGZWJEW
+        EWFWQWJCUGTEWQWICUGAWMWPWICVFNHCWDIVHVIVARVJVKVLVMADWBFGADKUGTWBSAKWAUG
+        WNVAVBVKAUAHWEWFEFGJUKUKOAFBUMWPWEUKUMPWDFBHVNVIAGBUMWPWFUKUMQWDGBHVNVI
+        AUAHCUJTZFAWRCHBIFKJLWRULZMNOPVPVOAUAHWRGAWRCHBIGKJLWSMNOQVPVOVQVR $.
+    $}
+  $}
+
+  ${
+    pwsdiagel.y $e |- Y = ( R ^s I ) $.
+    pwsdiagel.b $e |- B = ( Base ` R ) $.
+    pwsdiagel.c $e |- C = ( Base ` Y ) $.
+    $( Membership of diagonal elements in the structure power base set.
+       (Contributed by Stefan O'Rear, 24-Jan-2015.) $)
+    pwsdiagel $p |- ( ( ( R e. V /\ I e. W ) /\ A e. B ) ->
+        ( I X. { A } ) e. C ) $=
+      ( wcel wa csn cxp wf fconst6g adantl wb pwselbasb adantr mpbird ) DFLEGLM
+      ZABLZMEANOZCLZEBUEPZUDUGUCEABQRUCUFUGSUDBDECFUEHGIJKTUAUB $.
+  $}
+
+  ${
+    $d Y x $.  $d R x $.  $d I x $.  $d B x $.  $d C x $.  $d W x $.
+    pwssnf1o.y $e |- Y = ( R ^s { I } ) $.
+    pwssnf1o.b $e |- B = ( Base ` R ) $.
+    pwssnf1o.f $e |- F = ( x e. B |-> ( { I } X. { x } ) ) $.
+    pwssnf1o.c $e |- C = ( Base ` Y ) $.
+    $( Triviality of singleton powers: set equipollence.  (Contributed by
+       Stefan O'Rear, 24-Jan-2015.) $)
+    pwssnf1o $p |- ( ( R e. V /\ I e. W ) -> F : B -1-1-onto-> C ) $=
+      ( wcel wa wf1o csn cvv cbs cfv cmap wfn basfn elex adantr funfvex sylancr
+      funfni eqeltrid mapsnf1o sylancom wceq snexg pwsbas sylan2 eqtr4id mpbird
+      co f1oeq3d ) DGNZFHNZOZBCEPBBFQZUAURZEPZUTVABRNVEVBBDSTZRKVBSRUBDRNZVFRNZ
+      UCUTVGVADGUDUEVHRDSDSUFUHUGUIABEFRHLUJUKVBCVDBEVBCISTZVDMVAUTVCRNVDVIULFH
+      UMBDVCGRIJKUNUOUPUSUQ $.
   $}
 
 
