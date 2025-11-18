@@ -154272,6 +154272,38 @@ $)
   $}
 
   ${
+    $d x y B $.  $d x y F $.  $d x y I $.  $d x N $.  $d x y ph $.  $d x y R $.
+    $d x .+ $.  $d x y S $.  $d x y V $.  $d x y W $.  $d x y Y $.  $d x .0. $.
+    prdsinvlem.y $e |- Y = ( S Xs_ R ) $.
+    prdsinvlem.b $e |- B = ( Base ` Y ) $.
+    prdsinvlem.p $e |- .+ = ( +g ` Y ) $.
+    prdsinvlem.s $e |- ( ph -> S e. V ) $.
+    prdsinvlem.i $e |- ( ph -> I e. W ) $.
+    prdsinvlem.r $e |- ( ph -> R : I --> Grp ) $.
+    prdsinvlem.f $e |- ( ph -> F e. B ) $.
+    prdsinvlem.z $e |- .0. = ( 0g o. R ) $.
+    prdsinvlem.n $e |- N = ( y e. I |->
+        ( ( invg ` ( R ` y ) ) ` ( F ` y ) ) ) $.
+    $( Characterization of inverses in a structure product.  (Contributed by
+       Mario Carneiro, 10-Jan-2015.) $)
+    prdsinvlem $p |- ( ph -> ( N e. B /\ ( N .+ F ) = .0. ) ) $=
+      ( vx wcel co wceq cv cfv cminusg cmpt wral wa eqid cgrp ffvelcdmda adantr
+      cbs wfn ffnd simpr prdsbasprj grpinvcld prdsbasmpt mpbird eqeltrid cplusg
+      ralrimiva grplinvd 2fveq3 fveq2 fveq12d fvmptd3 oveq1d fveq1i fvco2 sylan
+      c0g ccom 3eqtr4d mpteq2dva prdsplusgval cvv crn wss fn0g ssv fnco mp3an2i
+      eqtrid a1i fneq1i sylibr dffn5im syl jca ) AICUDIGDUEZMUFAIBHBUGZGUHZWQEU
+      HZUIUHZUHZUJZCUBAXBCUDXAWSUQUHZUDZBHUKAXDBHAWQHUDZULZXCWSWTWRXCUMWTUMAHUN
+      WQESUOXFCEFGHWQJKLNOAFJUDZXEQUPAHKUDZXERUPAEHURZXEAHUNESUSZUPAGCUDZXETUPA
+      XEUTVAVBVGABCEFXAHJKLNOQRXJVCVDVEZAUCHUCUGZIUHZXMGUHZXMEUHZVFUHZUEZUJUCHX
+      MMUHZUJZWPMAUCHXRXSAXMHUDZULZXOXPUIUHZUHZXOXQUEXPVQUHZXRXSYBXPUQUHZXQXPYC
+      XOYEYFUMZXQUMYEUMYCUMZAHUNXMESUOZYBCEFGHXMJKLNOAXGYAQUPAXHYARUPAXIYAXJUPA
+      XKYATUPAYAUTZVAZVHYBXNYDXOXQYBBXMXAYDHIYFUBWQXMUFWRXOWTYCWQXMUIEVIWQXMGVJ
+      VKYJYBYFXPYCXOYGYHYIYKVBVLVMYBXSXMVQEVRZUHZYEXMMYLUAVNAXIYAYMYEUFXJHVQEXM
+      VOVPWIVSVTAUCCDEFIGHJKLNOQRXJXLTPWAAMHURZMXTUFAYLHURZYNVQWBURAXIEWCZWBWDZ
+      YOWEXJYQAYPWFWJWBHVQEWGWHHMYLUAWKWLUCHMWMWNVSWO $.
+  $}
+
+  ${
     $d p q u v w x B $.  $d p v N $.  $d a b p q u v w x y z ph $.  $d p q R $.
     $d a b p q u v w x y z F $.  $d p q x y .+ $.  $d a b p q u v w x y z U $.
     $d a b p q x y z V $.  $d p q u v w x .0. $.
