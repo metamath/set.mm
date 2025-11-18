@@ -154319,6 +154319,20 @@ $)
       NNUEZUFBUGZAVFUHAVGUHABCDEFGHIJADOBUIZOPUJDPBUIKLOPVIUKULDOPBUMUNZUOABCDE
       FGHIJVMUPAVIVFQZUQZVJVFQZVJVIVGUTVKVAZVOMVFVGBCVIDVJRRGVKHVFSVGSACRQVNACE
       JURTADRQVNADFIURTAVLVNKTAVNUSVKSVJSVBZVCVOVPVQVRVDVE $.
+
+    prdsinvgd.b $e |- B = ( Base ` Y ) $.
+    prdsinvgd.n $e |- N = ( invg ` Y ) $.
+    prdsinvgd.x $e |- ( ph -> X e. B ) $.
+    $( Negation in a product of groups.  (Contributed by Stefan O'Rear,
+       10-Jan-2015.) $)
+    prdsinvgd $p |- ( ph -> ( N ` X ) = ( x e. I |->
+        ( ( invg ` ( R ` x ) ) ` ( X ` x ) ) ) ) $=
+      ( cfv cgrp va cv cminusg cmpt wceq cplusg co c0g ccom wcel cvv eqid elexd
+      prdsinvlem simprd cmnd wss grpmnd ssriv fss sylancl prds0g eqtrd prdsgrpd
+      wf wb simpld grpinvid2 syl3anc mpbird ) AJGSBFBUBZJSVKDSUCSSUDZUEZVLJKUFS
+      ZUGZKUHSZUEZAVOUHDUIZVPAVLCUJZVOVRUEZABCVNDEJFVLUKUKKVRLPVNULZAEHNUMAFIMU
+      MORVRULVLULUNZUOADEFHIKLMNAFTDVETUPUQFUPDVEOUATUPUAUBURUSFTUPDUTVAVBVCAKT
+      UJJCUJVSVMVQVFADEFHIKLMNOVDRAVSVTWBVGCVNKGJVLVPPWAVPULQVHVIVJ $.
   $}
 
   ${
