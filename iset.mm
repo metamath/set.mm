@@ -154304,6 +154304,24 @@ $)
   $}
 
   ${
+    $d x B $.  $d b x I $.  $d a b x ph $.  $d b x R $.  $d b x S $.  $d x X $.
+    $d a b x Y $.
+    prdsgrpd.y $e |- Y = ( S Xs_ R ) $.
+    prdsgrpd.i $e |- ( ph -> I e. W ) $.
+    prdsgrpd.s $e |- ( ph -> S e. V ) $.
+    prdsgrpd.r $e |- ( ph -> R : I --> Grp ) $.
+    $( The product of a family of groups is a group.  (Contributed by Stefan
+       O'Rear, 10-Jan-2015.) $)
+    prdsgrpd $p |- ( ph -> Y e. Grp ) $=
+      ( va vb cfv cgrp cmnd wcel cvv eqid adantr cbs cplusg cv cminusg cmpt c0g
+      ccom eqidd wf wss grpmnd ssriv fss sylancl prds0g prdsmndd wa elexd simpr
+      co wceq prdsinvlem simpld simprd isgrpd2 ) ALGUANZGUBNZGMDMUCZLUCZNVHBNUD
+      NNUEZUFBUGZAVFUHAVGUHABCDEFGHIJADOBUIZOPUJDPBUIKLOPVIUKULDOPBUMUNZUOABCDE
+      FGHIJVMUPAVIVFQZUQZVJVFQZVJVIVGUTVKVAZVOMVFVGBCVIDVJRRGVKHVFSVGSACRQVNACE
+      JURTADRQVNADFIURTAVLVNKTAVNUSVKSVJSVBZVCVOVPVQVRVDVE $.
+  $}
+
+  ${
     $d p q u v w x B $.  $d p v N $.  $d a b p q u v w x y z ph $.  $d p q R $.
     $d a b p q u v w x y z F $.  $d p q x y .+ $.  $d a b p q u v w x y z U $.
     $d a b p q x y z V $.  $d p q u v w x .0. $.
