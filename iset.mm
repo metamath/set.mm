@@ -154345,6 +154345,27 @@ $)
       ( cgrp wcel wa csca cfv csn cxp cprds co eqid pwsval simpr scaslid adantr
       cvv slotex wf fconst6g prdsgrpd eqeltrd ) AFGZBCGZHZDAIJZBAKLZMNZFAUIBFCD
       EUIOPUHUJUIBTCUKUKOUFUGQUFUITGUGAIFRUASUFBFUJUBUGBAFUCSUDUE $.
+
+    pwsinvg.b $e |- B = ( Base ` Y ) $.
+    ${
+      pwsinvg.m $e |- M = ( invg ` R ) $.
+      pwsinvg.n $e |- N = ( invg ` Y ) $.
+      $( Negation in a group power.  (Contributed by Mario Carneiro,
+         11-Jan-2015.) $)
+      pwsinvg $p |- ( ( R e. Grp /\ I e. V /\ X e. B ) ->
+        ( N ` X ) = ( M o. X ) ) $=
+        ( vx vy cgrp wcel cfv cminusg cbs eqid w3a csca csn cxp cprds cmpt ccom
+        co cv cvv simp2 scaslid slotex 3ad2ant1 wf fconst6g wceq pwsval 3adant3
+        simp3 fveq2d eqtrid eleqtrd prdsinvgd wa simp1 fvconst2g eqtr4di fveq1d
+        sylan mpteq2dva eqtrd pwselbas ffvelcdmda feqmptd grpinvf fveq2 3eqtr4d
+        fmptco ) BOPZCFPZGAPZUAZGBUBQZCBUCUDZUEUHZRQZQZMCMUIZGQZDQZUFZGEQDGUGWC
+        WHMCWJWIWEQZRQZQZUFWLWCMWFSQZWEWDCWGUJFGWFWFTVTWAWBUKZVTWAWDUJPWBBUBOUL
+        UMUNVTWACOWEUOWBCBOUPUNWPTWGTWCGAWPVTWAWBUTZWCAHSQWPJWCHWFSVTWAHWFUQWBB
+        WDCOFHIWDTURUSZVAVBVCVDWCMCWOWKWCWICPZVEZWJWNDXAWNBRQDXAWMBRWCVTWTWMBUQ
+        VTWAWBVFZCBWIOVGVJVAKVHVIVKVLWCGEWGWCEHRQWGLWCHWFRWSVAVBVIWCMNCBSQZWJNU
+        IZDQWKGDWCCXCWIGWCXCBCAOGHFIXCTZJXBWQWRVMZVNWCMCXCGXFVOWCNXCXCDVTWAXCXC
+        DUOWBXCBDXEKVPUNVOXDWJDVQVSVR $.
+    $}
   $}
 
   ${
