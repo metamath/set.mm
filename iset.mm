@@ -169419,6 +169419,28 @@ $)
       AWBWCXJWDWEABWICDEFGHIJXCKMNWHABWNDEOFWKTUNIXBXDJXILWFWG $.
   $}
 
+  ${
+    $d x .0. $.  $d r s t x y z ph $.  $d r s t x y z R $.  $d r s t x y z S $.
+    $d x D $.  $d f x y z I $.  $d x y N $.  $d x y X $.
+    psrgrp.s $e |- S = ( I mPwSer R ) $.
+    psrgrp.i $e |- ( ph -> I e. V ) $.
+    psrgrp.r $e |- ( ph -> R e. Grp ) $.
+    ${
+      psr0cl.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+      psr0cl.o $e |- .0. = ( 0g ` R ) $.
+      psr0cl.b $e |- B = ( Base ` S ) $.
+      $( The zero element of the ring of power series.  (Contributed by Mario
+         Carneiro, 29-Dec-2014.) $)
+      psr0cl $p |- ( ph -> ( D X. { .0. } ) e. B ) $=
+        ( cbs cmap wcel cgrp cvv csn cxp co wf eqid grpidcl fconst6g 3syl basfn
+        cfv wfn elexd funfvex funfni sylancr cv ccnv cn cima fnmap nn0ex fnovex
+        cfn cn0 mp3an12i rabexd elmapd mpbird psrbasg eleqtrrd ) ACIUAUBZDPUJZC
+        QUCZBAVKVMRCVLVKUDZADSRIVLRVNLVLDIVLUEZNUFCIVLUGUHAVLCVKTTAPTUKDTRVLTRZ
+        UIADSLULVPTDPDPUMUNUOAFUPUQURUSVCRFVDGQUCZCTMQTTUBUKVDTRAGTRVQTRUTVAAGH
+        KULVDGTTQVBVEVFVGVHABCDEFGVLHSJVOMOKLVIVJ $.
+    $}
+  $}
+
 
 $(
 ###############################################################################
