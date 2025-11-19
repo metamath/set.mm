@@ -102,6 +102,8 @@ Date      Old       New         Notes
  8-Nov-25 supssd    [same]      Moved from TA's mathbox to main set.mm
  8-Nov-25 icogelbd  [same]      Moved from GS's mathbox to main set.mm
  8-Nov-25 icossico2 icossico2d  Moved from GS's mathbox to main set.mm
+ 7-Nov-25 suceqd    [same]      moved from RR's mathbox to main set.mm
+ 7-Nov-25 fnimasnd  [same]      moved from SN's mathbox to main set.mm
  7-Nov-25 wrdfd     [same]      Moved from TA's mathbox to main set.mm
  7-Nov-25 eel132    syl3an132   Moved from AS's mathbox to main set.mm
  5-Nov-25 sqnegd    [same]      Moved from II's mathbox to main set.mm
