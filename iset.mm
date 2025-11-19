@@ -57254,6 +57254,18 @@ $)
           APDSLCDUSIUEUFAVDUGUTUIADBOZETZVESZBFUJVDUTFRDUTETZUTSZAVGBFMUKACFUSG
           KULVGVIBUTFVEUTSZVFVHVEUTVEUTDEUMVJUNUOUPUQUR $.
       $}
+
+      ${
+        caofid0r.5 $e |- ( ( ph /\ x e. S ) -> ( x R B ) = x ) $.
+        $( Transfer a right identity law to the function operation.
+           (Contributed by NM, 21-Oct-2014.) $)
+        caofid0r $p |- ( ph -> ( F oF R ( A X. { B } ) ) = F ) $=
+          ( vw cv cfv csn wcel wceq co cxp ffnd wfn fnconstg wa eqidd fvconst2g
+          syl sylan wral ralrimiva ffvelcdmda oveq1 id eqeq12d rspccva syl2an2r
+          offveq ) ANCNOZGPZDEGCDQUAZGHJACFGKUBZADIRZVACUCLCDIUDUHVBAUSCRZUEUTU
+          FAVCVDUSVAPDSLCDUSIUGUIABOZDETZVESZBFUJVDUTFRUTDETZUTSZAVGBFMUKACFUSG
+          KULVGVIBUTFVEUTSZVFVHVEUTVEUTDEUMVJUNUOUPUQUR $.
+      $}
     $}
 
     caofcom.3 $e |- ( ph -> G : A --> S ) $.
