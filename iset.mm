@@ -169502,6 +169502,19 @@ $)
         QUCZBAVKVMRCVLVKUDZADSRIVLRVNLVLDIVLUEZNUFCIVLUGUHAVLCVKTTAPTUKDTRVLTRZ
         UIADSLULVPTDPDPUMUNUOAFUPUQURUSVCRFVDGQUCZCTMQTTUBUKVDTRAGTRVQTRUTVAAGH
         KULVDGTTQVBVEVFVGVHABCDEFGVLHSJVOMOKLVIVJ $.
+
+      psr0lid.p $e |- .+ = ( +g ` S ) $.
+      psr0lid.x $e |- ( ph -> X e. B ) $.
+      $( The zero element of the ring of power series is a left identity.
+         (Contributed by Mario Carneiro, 29-Dec-2014.) $)
+      psr0lid $p |- ( ph -> ( ( D X. { .0. } ) .+ X ) = X ) $=
+        ( cvv vx csn cxp co cplusg cfv cof eqid psr0cl psradd cbs ccnv cima cfn
+        cv cn wcel cn0 cmap wfn fnmap nn0ex elexd fnovex mp3an12i psrelbas cgrp
+        rabexd grpidcl syl wceq grplid sylan caofid0l eqtrd ) ACKUBUCZJDUDVPJEU
+        EUFZUGUDJABVQDEFHVPJLQVQUHZRABCEFGHIKLMNOPQUISUJAUACKVQEUKUFZJTVSAGUOUL
+        UPUMUNUQGURHUSUDZCTOUSTTUCUTURTUQAHTUQVTTUQVAVBAHIMVCURHTTUSVDVEVHABCEF
+        GHVSJLVSUHZOQSVFAEVGUQZKVSUQNVSEKWAPVIVJAWBUAUOZVSUQKWCVQUDWCVKNVSVQEWC
+        KWAVRPVLVMVNVO $.
     $}
   $}
 
