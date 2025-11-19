@@ -57266,6 +57266,21 @@ $)
           FAVCVDUSVAPDSLCDUSIUGUIABOZDETZVESZBFUJVDUTFRUTDETZUTSZAVGBFMUKACFUSG
           KULVGVIBUTFVEUTSZVFVHVEUTVEUTDEUMVJUNUOUPUQUR $.
       $}
+
+      caofid1.4 $e |- ( ph -> C e. X ) $.
+      ${
+        $d C w x $.
+        caofid1.5 $e |- ( ( ph /\ x e. S ) -> ( x R B ) = C ) $.
+        $( Transfer a right absorption law to the function operation.
+           (Contributed by Mario Carneiro, 28-Jul-2014.) $)
+        caofid1 $p |- ( ph -> ( F oF R ( A X. { B } ) ) = ( A X. { C } ) ) $=
+          ( vw cfv wcel wceq cv csn cxp ffnd wfn fnconstg eqidd fvconst2g sylan
+          syl wa wral ralrimiva ffvelcdmda oveq1 eqeq1d rspccva syl2an2r eqtr4d
+          co offveq ) AQCQUAZHRZDFHCDUBUCZCEUBUCZILACGHMUDADJSZVDCUENCDJUFUJAEK
+          SZVECUEOCEKUFUJAVBCSZUKZVCUGAVFVHVBVDRDTNCDVBJUHUIVIVCDFUTZEVBVERZABU
+          AZDFUTZETZBGULVHVCGSVJETZAVNBGPUMACGVBHMUNVNVOBVCGVLVCTVMVJEVLVCDFUOU
+          PUQURAVGVHVKETOCEVBKUHUIUSVA $.
+      $}
     $}
 
     caofcom.3 $e |- ( ph -> G : A --> S ) $.
