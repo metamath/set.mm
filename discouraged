@@ -12360,6 +12360,9 @@
 "psubspi2N" is used by "pclfinN".
 "psubspi2N" is used by "pclfinclN".
 "qexALT" is used by "reexALT".
+"ralimd4vOLD" is used by "ralimd6vOLD".
+"ralimdvvOLD" is used by "ralimd4vOLD".
+"ralimdvvOLD" is used by "ralimd6vOLD".
 "ralrnmpt" is used by "rexrnmpt".
 "rb-ax1" is used by "rblem1".
 "rb-ax1" is used by "rblem2".
@@ -18584,6 +18587,9 @@ New usage of "raleleqOLD" is discouraged (0 uses).
 New usage of "raleqOLD" is discouraged (0 uses).
 New usage of "raleqbidvvOLD" is discouraged (0 uses).
 New usage of "ralimaOLD" is discouraged (0 uses).
+New usage of "ralimd4vOLD" is discouraged (1 uses).
+New usage of "ralimd6vOLD" is discouraged (0 uses).
+New usage of "ralimdvvOLD" is discouraged (2 uses).
 New usage of "ralrnmpt" is discouraged (1 uses).
 New usage of "ralssOLD" is discouraged (0 uses).
 New usage of "ralxfrALT" is discouraged (0 uses).
@@ -20891,6 +20897,9 @@ Proof modification of "raleleqOLD" is discouraged (26 steps).
 Proof modification of "raleqOLD" is discouraged (11 steps).
 Proof modification of "raleqbidvvOLD" is discouraged (98 steps).
 Proof modification of "ralimaOLD" is discouraged (68 steps).
+Proof modification of "ralimd4vOLD" is discouraged (29 steps).
+Proof modification of "ralimd6vOLD" is discouraged (33 steps).
+Proof modification of "ralimdvvOLD" is discouraged (23 steps).
 Proof modification of "ralssOLD" is discouraged (44 steps).
 Proof modification of "ralxfrALT" is discouraged (85 steps).
 Proof modification of "rb-ax1" is discouraged (32 steps).
