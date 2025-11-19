@@ -169565,6 +169565,19 @@ $)
       XCAWGWHWNWJTVGVHAWQWPWHKZWOAWQXDAWGWHWPWJTVGVIXAQZWTQVJWSWKXAXBBCDWNWPFWL
       XEXBQAWOWNWKKZWQAXFWOAWKWGWNWMTVKVHAWQWPWKKZWOAXGWQAWKWGWPWMTVKVIVLVMVNVO
       $.
+
+    ${
+      psr0.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+      psr0.o $e |- O = ( 0g ` R ) $.
+      psr0.z $e |- .0. = ( 0g ` S ) $.
+      $( The zero element of the ring of power series.  (Contributed by Mario
+         Carneiro, 29-Dec-2014.) $)
+      psr0 $p |- ( ph -> .0. = ( D X. { O } ) ) $=
+        ( csn cfv wceq eqid wcel cxp cplusg co cbs psr0cl psr0lid cgrp wb grpid
+        psrgrp syl2anc mpbid ) ABGPUAZUMDUBQZUCUMRZIUMRZADUDQZBUNCDEFHUMGJKLMNU
+        QSZUNSZAUQBCDEFHGJKLMNURUEZUFADUGTUMUQTUOUPUHACDFHJKLUJUTUQUNDUMIURUSOU
+        IUKUL $.
+    $}
   $}
 
 
