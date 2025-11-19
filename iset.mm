@@ -169578,6 +169578,22 @@ $)
         QSZUNSZAUQBCDEFHGJKLMNURUEZUFADUGTUMUQTUOUPUHACDFHJKLUJUTUQUNDUMIURUSOU
         IUKUL $.
     $}
+
+    ${
+      psrneg.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+      psrneg.i $e |- N = ( invg ` R ) $.
+      psrneg.b $e |- B = ( Base ` S ) $.
+      psrneg.m $e |- M = ( invg ` S ) $.
+      psrneg.x $e |- ( ph -> X e. B ) $.
+      $( The negative function of the ring of power series.  (Contributed by
+         Mario Carneiro, 29-Dec-2014.) $)
+      psrneg $p |- ( ph -> ( M ` X ) = ( N o. X ) ) $=
+        ( cfv ccom wceq cplusg co c0g csn eqid psrlinv psr0 eqtr4d cgrp wcel wb
+        cxp psrgrp psrnegcl grpinvid2 syl3anc mpbird ) AKHTIKUAZUBZUTKEUCTZUDZE
+        UETZUBZAVCCDUETZUFUNVDABCVBDEFGIJKVFLMNOPQSVFUGZVBUGZUHACDEFGVFJVDLMNOV
+        GVDUGZUIUJAEUKULKBULUTBULVAVEUMADEGJLMNUOSABCDEFGIJKLMNOPQSUPBVBEHKUTVD
+        QVHVIRUQURUS $.
+    $}
   $}
 
 
