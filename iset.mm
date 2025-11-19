@@ -169532,6 +169532,23 @@ $)
         DHVRUGZOMUHVRVRHULUIABCDEFGVRJKWBNPQUJCVRVRHJUKUMAVRCVQTTARTUNDTSVRTSZU
         OADUPMUQWCTDRDRURUSUTAFVAVBVCVEVDSFVFGUCUDZCTNUCTTVGUNVFTSAGTSWDTSVHVIA
         GILUQVFGTTUCVJVKVLVMVPABCDEFGVRIUPKWBNPLMVNVO $.
+
+      psrlinv.o $e |- .0. = ( 0g ` R ) $.
+      psrlinv.p $e |- .+ = ( +g ` S ) $.
+      $( The negative function in the ring of power series.  (Contributed by
+         Mario Carneiro, 29-Dec-2014.) $)
+      psrlinv $p |- ( ph -> ( ( N o. X ) .+ X ) = ( D X. { .0. } ) ) $=
+        ( vx vy ccom cplusg cfv cof co cv cmpt csn cxp cvv cbs ccnv cn cima cfn
+        wcel cn0 cmap wfn fnmap nn0ex fnovex mp3an12i rabexd cgrp eqid psrelbas
+        elexd ffvelcdmda grpinvcl syl2an2r feqmptd wf1o wf grpinvf1o f1of fveq2
+        fmptco offval2 psrnegcl psradd fconstmpt wceq grplinv mpteq2dva eqtr4id
+        syl 3eqtr4d ) AIKUDZKEUEUFZUGUHUBCUBUIZKUFZIUFZWOWMUHZUJZWLKDUHCLUKULZA
+        UBCWPWOWMWLKUMEUNUFZWTAGUIUOUPUQURUSGUTHVAUHZCUMPVAUMUMULVBUTUMUSAHUMUS
+        XAUMUSVCVDAHJNVKUTHUMUMVAVEVFVGAEVHUSZWNCUSZWOWTUSZWPWTUSOACWTWNKABCEFG
+        HWTKMWTVIZPRSVJZVLZWTEIWOXEQVMVNXGAUBUCCWTWOUCUIZIUFWPKIXGAUBCWTKXFVOZA
+        UCWTWTIAWTWTIVPWTWTIVQAWTEIXEQOVRWTWTIVSWJVOXHWOIVTWAXIWBABWMDEFHWLKMRW
+        MVIZUAABCEFGHIJKMNOPQRSWCSWDAWSUBCLUJWRUBCLWEAUBCWQLAXBXCXDWQLWFOXGWTWM
+        EIWOLXEXJTQWGVNWHWIWK $.
     $}
   $}
 
