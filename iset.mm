@@ -57241,6 +57241,21 @@ $)
       $}
     $}
 
+    ${
+      caofid0.3 $e |- ( ph -> B e. W ) $.
+      ${
+        caofid0l.5 $e |- ( ( ph /\ x e. S ) -> ( B R x ) = x ) $.
+        $( Transfer a left identity law to the function operation.
+           (Contributed by NM, 21-Oct-2014.) $)
+        caofid0l $p |- ( ph -> ( ( A X. { B } ) oF R F ) = F ) $=
+          ( vw cv cfv csn wcel wceq co cxp wfn fnconstg ffnd fvconst2g sylan wa
+          syl eqidd wral ralrimiva ffvelcdmda oveq2 id eqeq12d rspccva syl2an2r
+          offveq ) ANCDNOZGPZECDQUAZGGHJADIRZVACUBLCDIUCUHACFGKUDZVCAVBUSCRZUSV
+          APDSLCDUSIUEUFAVDUGUTUIADBOZETZVESZBFUJVDUTFRDUTETZUTSZAVGBFMUKACFUSG
+          KULVGVIBUTFVEUTSZVFVHVEUTVEUTDEUMVJUNUOUPUQUR $.
+      $}
+    $}
+
     caofcom.3 $e |- ( ph -> G : A --> S ) $.
     ${
       caofcom.4 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
