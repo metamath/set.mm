@@ -57144,6 +57144,16 @@ $)
       cv wb funfvex funfni sylan ralrimiva mpteqb bitrd ) AIGHFUAQZRBCBUKZIUBZS
       ZBCDEFQZSZRZVAVCRBCTZAIVBUSVDAICUCZIVBRNBCIUDUEABCCDEFCGHJJLMKKCUFOPUGUHA
       VAUIUJZBCTVEVFULAVHBCAVGUTCUJVHNVHCUTIUTIUMUNUOUPBCVAVCUIUQUEUR $.
+
+    ${
+      offveq.7 $e |- ( ( ph /\ x e. A ) -> ( B R C ) = ( H ` x ) ) $.
+      $( Convert an identity of the operation to the analogous identity on the
+         function operation.  (Contributed by Mario Carneiro, 24-Jul-2014.) $)
+      offveq $p |- ( ph -> ( F oF R G ) = H ) $=
+        ( co wceq eqcomd cof cv cfv wral wcel wa ralrimiva offveqb mpbird ) AIG
+        HFUARZAIUJSBUBZIUCZDEFRZSZBCUDAUNBCAUKCUEUFUMULQTUGABCDEFGHIJKLMNOPUHUI
+        T $.
+    $}
   $}
 
   ${
