@@ -151987,7 +151987,7 @@ $)
       WJUTZWJWIWHPWJUTZQZLWGWAZALWGWHBCDRRGWIHWQWRWTXBKWISWBZWCAWKQZUUBUUCAUUDL
       WGAUUAUUEUUFWDWEZWCUUGUUBUUCUUHWDWF $.
 
-    $( Zero in a product of monoids.  (Contributed by Stefan O'Rear,
+    $( The identity in a product of monoids.  (Contributed by Stefan O'Rear,
        10-Jan-2015.) $)
     prds0g $p |- ( ph -> ( 0g o. R ) = ( 0g ` Y ) ) $=
       ( vb va c0g cfv wcel co wceq wa eqid ccom cbs cplusg wral elexd prdsidlem
