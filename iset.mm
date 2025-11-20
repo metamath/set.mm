@@ -152008,8 +152008,8 @@ $)
       EUIOPUHUJUIBTCUKUKOUFUGQUFUITGUGAIFRUASUFBFUJUBUGBAFUCSUDUE $.
 
     pws0g.z $e |- .0. = ( 0g ` R ) $.
-    $( Zero in a structure power of a monoid.  (Contributed by Mario Carneiro,
-       11-Jan-2015.) $)
+    $( The identity in a structure power of a monoid.  (Contributed by Mario
+       Carneiro, 11-Jan-2015.) $)
     pws0g $p |- ( ( R e. Mnd /\ I e. V ) -> ( I X. { .0. } ) = ( 0g ` Y ) ) $=
       ( vx vr cmnd wcel c0g csn cxp csca cfv cvv eqid cmpt wceq wa ccom scaslid
       cprds co simpr slotex adantr wf fconst6g prds0g fconstmpt cv ad2antrr a1i
