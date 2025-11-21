@@ -12932,8 +12932,9 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>psrbagcon</td>
   <td><i>none</i></td>
-  <td>The set.mm proof uses ssfi . We might have enough
-  decidability (for example via ~ elnndc ) to overcome this.</td>
+  <td>The set.mm proof uses ssfi . Perhaps a similar proof
+  would work but using ~ ssfidc (the decidability might be
+  somewhat similar to the proof of ~ psr1clfi ).</td>
 </tr>
 
 <tr>
@@ -12975,23 +12976,33 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>psrmulr</td>
+  <td id="missing-psrmulr">psrmulr</td>
   <td><i>none</i></td>
-  <td>presumably provable with added set existence conditions
-  (analogous to ~ psrplusgg )</td>
+  <td>although this theorem itself just extracts the multiplication
+  slot from the result of ~ psrval (analogous to ~ psrplusgg ),
+  the fundamental issue with ` mPwSer ` multiplication is that
+  the set.mm definition of that slot uses ` gsum ` on something
+  which is not a range of consecutive integers (as required by
+  ~ df-igsum )</td>
 </tr>
 
 <tr>
   <td>psrmulfval</td>
   <td><i>none</i></td>
-  <td>presumably provable once we have psrmulr ( ` F e. B ` should
-  take care of the set existence, as in ~ psradd )</td>
+  <td>this theorem in particular is a simple consequence of
+  psrmulr ( ` F e. B ` should take care of the set existence, as
+  in ~ psradd ), but see the <a href="#missing-psrmulr">psrmulr
+  entry</a> for thoughts on what ` mPwSer ` multiplication should
+  expand to</td>
 </tr>
 
 <tr>
   <td>psrmulval</td>
   <td><i>none</i></td>
-  <td>presumably provable once we have psrmulfval</td>
+  <td>this theorem in particular is a simple consequence of
+  psrmulfval , but see the <a href="#missing-psrmulr">psrmulr
+  entry</a> for thoughts on what ` mPwSer ` multiplication should
+  expand to</td>
 </tr>
 
 <tr>
@@ -13041,6 +13052,19 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>psr1cl</td>
   <td>~ psr1clfi</td>
   <td>requires a finite index set</td>
+</tr>
+
+<tr>
+  <td>psrlidm</td>
+  <td><i>none</i></td>
+  <td>this is where we really would need a functioning definition
+  of ` mPwSer ` multiplication (as discussed at the <a
+  href="#missing-psrmulr">psrmulr entry</a>), in particular how to
+  handle the parts of the set.mm proof which use gsumres and gsumsn .
+  The set.mm proof also uses psrbagcon .  There are some ` if `
+  expressions in the set.mm proof but it isn't clear they are
+  being used in a way that needs decidability (if they do,
+  see the similar portion of the ~ psr1clfi proof).</td>
 </tr>
 
 <TR>
