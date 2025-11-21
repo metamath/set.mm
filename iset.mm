@@ -57144,6 +57144,16 @@ $)
       cv wb funfvex funfni sylan ralrimiva mpteqb bitrd ) AIGHFUAQZRBCBUKZIUBZS
       ZBCDEFQZSZRZVAVCRBCTZAIVBUSVDAICUCZIVBRNBCIUDUEABCCDEFCGHJJLMKKCUFOPUGUHA
       VAUIUJZBCTVEVFULAVHBCAVGUTCUJVHNVHCUTIUTIUMUNUOUPBCVAVCUIUQUEUR $.
+
+    ${
+      offveq.7 $e |- ( ( ph /\ x e. A ) -> ( B R C ) = ( H ` x ) ) $.
+      $( Convert an identity of the operation to the analogous identity on the
+         function operation.  (Contributed by Mario Carneiro, 24-Jul-2014.) $)
+      offveq $p |- ( ph -> ( F oF R G ) = H ) $=
+        ( co wceq eqcomd cof cv cfv wral wcel wa ralrimiva offveqb mpbird ) AIG
+        HFUARZAIUJSBUBZIUCZDEFRZSZBCUDAUNBCAUKCUEUFUMULQTUGABCDEFGHIJKLMNOPUHUI
+        T $.
+    $}
   $}
 
   ${
@@ -57229,6 +57239,60 @@ $)
           XCEURBGWFXEWFURZXGXCEXIXFXBXEWFFXEWFJVHXIVOVPVQAXHBGUSWTAXHBGRUTUHWPV
           RVLVSVLSDEVTWA $.
       $}
+    $}
+
+    ${
+      caofid0.3 $e |- ( ph -> B e. W ) $.
+      ${
+        caofid0l.5 $e |- ( ( ph /\ x e. S ) -> ( B R x ) = x ) $.
+        $( Transfer a left identity law to the function operation.
+           (Contributed by NM, 21-Oct-2014.) $)
+        caofid0l $p |- ( ph -> ( ( A X. { B } ) oF R F ) = F ) $=
+          ( vw cv cfv csn wcel wceq co cxp wfn fnconstg ffnd fvconst2g sylan wa
+          syl eqidd wral ralrimiva ffvelcdmda oveq2 id eqeq12d rspccva syl2an2r
+          offveq ) ANCDNOZGPZECDQUAZGGHJADIRZVACUBLCDIUCUHACFGKUDZVCAVBUSCRZUSV
+          APDSLCDUSIUEUFAVDUGUTUIADBOZETZVESZBFUJVDUTFRDUTETZUTSZAVGBFMUKACFUSG
+          KULVGVIBUTFVEUTSZVFVHVEUTVEUTDEUMVJUNUOUPUQUR $.
+      $}
+
+      ${
+        caofid0r.5 $e |- ( ( ph /\ x e. S ) -> ( x R B ) = x ) $.
+        $( Transfer a right identity law to the function operation.
+           (Contributed by NM, 21-Oct-2014.) $)
+        caofid0r $p |- ( ph -> ( F oF R ( A X. { B } ) ) = F ) $=
+          ( vw cv cfv csn wcel wceq co cxp ffnd wfn fnconstg wa eqidd fvconst2g
+          syl sylan wral ralrimiva ffvelcdmda oveq1 id eqeq12d rspccva syl2an2r
+          offveq ) ANCNOZGPZDEGCDQUAZGHJACFGKUBZADIRZVACUCLCDIUDUHVBAUSCRZUEUTU
+          FAVCVDUSVAPDSLCDUSIUGUIABOZDETZVESZBFUJVDUTFRUTDETZUTSZAVGBFMUKACFUSG
+          KULVGVIBUTFVEUTSZVFVHVEUTVEUTDEUMVJUNUOUPUQUR $.
+      $}
+
+      caofid1.4 $e |- ( ph -> C e. X ) $.
+      ${
+        $d C w x $.
+        caofid1.5 $e |- ( ( ph /\ x e. S ) -> ( x R B ) = C ) $.
+        $( Transfer a right absorption law to the function operation.
+           (Contributed by Mario Carneiro, 28-Jul-2014.) $)
+        caofid1 $p |- ( ph -> ( F oF R ( A X. { B } ) ) = ( A X. { C } ) ) $=
+          ( vw cfv wcel wceq cv csn cxp ffnd wfn fnconstg eqidd fvconst2g sylan
+          syl wa wral ralrimiva ffvelcdmda oveq1 eqeq1d rspccva syl2an2r eqtr4d
+          co offveq ) AQCQUAZHRZDFHCDUBUCZCEUBUCZILACGHMUDADJSZVDCUENCDJUFUJAEK
+          SZVECUEOCEKUFUJAVBCSZUKZVCUGAVFVHVBVDRDTNCDVBJUHUIVIVCDFUTZEVBVERZABU
+          AZDFUTZETZBGULVHVCGSVJETZAVNBGPUMACGVBHMUNVNVOBVCGVLVCTVMVJEVLVCDFUOU
+          PUQURAVGVHVKETOCEVBKUHUIUSVA $.
+      $}
+
+      $d C w x $.
+      caofid2.5 $e |- ( ( ph /\ x e. S ) -> ( B R x ) = C ) $.
+      $( Transfer a right absorption law to the function operation.
+         (Contributed by Mario Carneiro, 28-Jul-2014.) $)
+      caofid2 $p |- ( ph -> ( ( A X. { B } ) oF R F ) = ( A X. { C } ) ) $=
+        ( vw cfv wcel wceq cv csn cxp wfn fnconstg syl fvconst2g sylan wa eqidd
+        ffnd co wral ralrimiva ffvelcdmda eqeq1d rspccva syl2an2r eqtr4d offveq
+        oveq2 ) AQCDQUAZHRZFCDUBUCZHCEUBUCZILADJSZVDCUDNCDJUEUFACGHMUKAEKSZVECU
+        DOCEKUEUFAVFVBCSZVBVDRDTNCDVBJUGUHAVHUIZVCUJVIDVCFULZEVBVERZADBUAZFULZE
+        TZBGUMVHVCGSVJETZAVNBGPUNACGVBHMUOVNVOBVCGVLVCTVMVJEVLVCDFVAUPUQURAVGVH
+        VKETOCEVBKUGUHUSUT $.
     $}
 
     caofcom.3 $e |- ( ph -> G : A --> S ) $.
@@ -151348,6 +151412,57 @@ $)
       WCWDAYRWOVIWMAWOYRAFHRWOYRVIJNOPXJFHXHXMXNUTVAWEVBWFUPWG $.
   $}
 
+  ${
+    $d B x $.  $d F x $.  $d G x $.  $d I x $.  $d R x $.  $d S x $.  $d V x $.
+    $d W x $.  $d Y x $.  $d ph x $.
+    prdsplusgsgrpcl.y $e |- Y = ( S Xs_ R ) $.
+    prdsplusgsgrpcl.b $e |- B = ( Base ` Y ) $.
+    prdsplusgsgrpcl.p $e |- .+ = ( +g ` Y ) $.
+    prdsplusgsgrpcl.s $e |- ( ph -> S e. V ) $.
+    prdsplusgsgrpcl.i $e |- ( ph -> I e. W ) $.
+    prdsplusgsgrpcl.r $e |- ( ph -> R : I --> Smgrp ) $.
+    prdsplusgsgrpcl.f $e |- ( ph -> F e. B ) $.
+    prdsplusgsgrpcl.g $e |- ( ph -> G e. B ) $.
+    $( Structure product pointwise sums are closed when the factors are
+       semigroups.  (Contributed by AV, 21-Feb-2025.) $)
+    prdsplusgsgrpcl $p |- ( ph -> ( F .+ G ) e. B ) $=
+      ( wcel vx co cv cfv cplusg cmpt csgrp ffnd prdsplusgval cbs wa ffvelcdmda
+      wral adantr wfn simpr prdsbasprj eqid sgrpcl syl3anc ralrimiva prdsbasmpt
+      mpbird eqeltrd ) AFGCUBUAHUAUCZFUDZVEGUDZVEDUDZUEUDZUBZUFZBAUABCDEFGHIJKL
+      MOPAHUGDQUHZRSNUIAVKBTVJVHUJUDZTZUAHUMAVNUAHAVEHTZUKZVHUGTVFVMTVGVMTVNAHU
+      GVEDQULVPBDEFHVEIJKLMAEITVOOUNZAHJTVOPUNZADHUOVOVLUNZAFBTVORUNAVOUPZUQVPB
+      DEGHVEIJKLMVQVRVSAGBTVOSUNVTUQVMVHVFVGVIVMURVIURUSUTVAAUABDEVJHIJKLMOPVLV
+      BVCVD $.
+  $}
+
+  ${
+    $d I y $.  $d R y $.  $d S y $.  $d Y a b c y $.  $d ph a b c y $.
+    prdssgrpd.y $e |- Y = ( S Xs_ R ) $.
+    prdssgrpd.i $e |- ( ph -> I e. W ) $.
+    prdssgrpd.s $e |- ( ph -> S e. V ) $.
+    prdssgrpd.r $e |- ( ph -> R : I --> Smgrp ) $.
+    $( The product of a family of semigroups is a semigroup.  (Contributed by
+       AV, 21-Feb-2025.) $)
+    prdssgrpd $p |- ( ph -> Y e. Smgrp ) $=
+      ( vy cfv cvv cv wcel co wa adantr csgrp va vb cbs cplusg eqidd eqid elexd
+      vc wf simprl simprr prdsplusgsgrpcl 3impb w3a ffvelcdmda adantlr ad2antrr
+      cmpt wceq wfn ffnd simplr1 simpr prdsbasprj simplr2 simplr3 prdsplusgfval
+      sgrpass oveq1d oveq2d 3eqtr4d mpteq2dva simpr3 prdsplusgval simpr1 simpr2
+      syl13anc 3adantr3 cprds fexd prdsex syl2anc eqeltrid issgrpd ) AUAUBUHGUC
+      MZGUDMZGNAWEUEAWFUEAUAOZWEPZUBOZWEPZWGWIWFQZWEPZAWHWJRZRWEWFBCWGWIDNNGHWE
+      UFZWFUFZACNPZWMACEJUGZSADNPZWMADFIUGZSADTBUIZWMKSAWHWJUJAWHWJUKULZUMAWHWJ
+      UHOZWEPZUNZRZLDLOZWKMZXFXBMZXFBMZUDMZQZURLDXFWGMZXFWIXBWFQZMZXJQZURWKXBWF
+      QWGXMWFQXELDXKXOXEXFDPZRZXLXFWIMZXJQZXHXJQZXLXRXHXJQZXJQZXKXOXQXITPZXLXIU
+      CMZPXRYDPXHYDPXTYBUSAXPYCXDADTXFBKUOUPXQWEBCWGDXFNNGHWNAWPXDXPWQUQZAWRXDX
+      PWSUQZABDUTZXDXPADTBKVAZUQZWHWJXCAXPVBZXEXPVCZVDXQWEBCWIDXFNNGHWNYEYFYIWH
+      WJXCAXPVEZYKVDXQWEBCXBDXFNNGHWNYEYFYIWHWJXCAXPVFZYKVDYDXIXLXRXJXHYDUFXJUF
+      VHVQXQXGXSXHXJXQWEWFBCWGWIDXFNNGHWNYEYFYIYJYLWOYKVGVIXQXNYAXLXJXQWEWFBCWI
+      XBDXFNNGHWNYEYFYIYLYMWOYKVGVJVKVLXELWEWFBCWKXBDNNGHWNAWPXDWQSZAWRXDWSSZAY
+      GXDYHSZAWHWJWLXCXAVRAWHWJXCVMZWOVNXELWEWFBCWGXMDNNGHWNYNYOYPAWHWJXCVOXEWE
+      WFBCWIXBDNNGHWNWOYNYOAWTXDKSAWHWJXCVPYQULWOVNVKAGCBVSQZNHACEPBNPYRNPJADTF
+      BKIVTBCENWAWBWCWD $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -151794,6 +151909,204 @@ $)
       WLAWGWBKSWBVTAWHTAWMWBLSWBWAAVTWAULZTWGVTWMWAUMQWJWFDEFVECVKHJUNUIUSSVQWJ
       WKPZWCVJWOVPVGWOVIVFGVKEUOSSTWCWKVKPZVQAWGWAWPWBKWNDEFVKGHJIUPUGSUQUQUTUR
       VJVPBMDVRVGVMVIVOVRVFVLGVEVKCEUOVAVRVHVNGVEVKCEUJVAVBVCVD $.
+  $}
+
+  ${
+    $d x y .+ $.  $d y .0. $.  $d x y B $.  $d x F $.  $d x y I $.  $d x y R $.
+    $d x G $.  $d x y ph $.  $d x y S $.  $d x y V $.  $d x y W $.  $d x y Y $.
+    prdsplusgcl.y $e |- Y = ( S Xs_ R ) $.
+    prdsplusgcl.b $e |- B = ( Base ` Y ) $.
+    prdsplusgcl.p $e |- .+ = ( +g ` Y ) $.
+    prdsplusgcl.s $e |- ( ph -> S e. V ) $.
+    prdsplusgcl.i $e |- ( ph -> I e. W ) $.
+    prdsplusgcl.r $e |- ( ph -> R : I --> Mnd ) $.
+    ${
+      prdsplusgcl.f $e |- ( ph -> F e. B ) $.
+      prdsplusgcl.g $e |- ( ph -> G e. B ) $.
+      $( Structure product pointwise sums are closed when the factors are
+         monoids.  (Contributed by Stefan O'Rear, 10-Jan-2015.) $)
+      prdsplusgcl $p |- ( ph -> ( F .+ G ) e. B ) $=
+        ( wcel vx co cfv cplusg cmpt cmnd ffnd prdsplusgval cbs wral ffvelcdmda
+        cv adantr wfn simpr prdsbasprj eqid syl3anc ralrimiva prdsbasmpt mpbird
+        wa mndcl eqeltrd ) AFGCUBUAHUAULZFUCZVEGUCZVEDUCZUDUCZUBZUEZBAUABCDEFGH
+        IJKLMOPAHUFDQUGZRSNUHAVKBTVJVHUIUCZTZUAHUJAVNUAHAVEHTZVBZVHUFTVFVMTVGVM
+        TVNAHUFVEDQUKVPBDEFHVEIJKLMAEITVOOUMZAHJTVOPUMZADHUNVOVLUMZAFBTVORUMAVO
+        UOZUPVPBDEGHVEIJKLMVQVRVSAGBTVOSUMVTUPVMVIVHVFVGVMUQVIUQVCURUSAUABDEVJH
+        IJKLMOPVLUTVAVD $.
+    $}
+
+    prdsidlem.z $e |- .0. = ( 0g o. R ) $.
+    $( Characterization of identity in a structure product.  (Contributed by
+       Mario Carneiro, 10-Jan-2015.) $)
+    prdsidlem $p |- ( ph -> ( .0. e. B /\ A. x e. B ( ( .0. .+ x ) = x /\
+        ( x .+ .0. ) = x ) ) ) $=
+      ( vy wcel cv co wceq wral cfv c0g cmpt ccom cmnd ffvelcdmda elexd feqmptd
+      wa cvv wfn fn0g dffn5im mp1i fmptco eqtrid cbs eqid mndidcl syl ralrimiva
+      fveq2 ffnd prdsbasmpt mpbird eqeltrd cplusg fveq1i fvco2 sylan adantlr wf
+      oveq1d adantr ad2antrr simplr simpr prdsbasprj syl2anc eqtrd prdsplusgval
+      mndlid mpteq2dva prdsbasfn 3eqtr4d oveq2d mndrid jca ) AKCTZKBUAZDUBZWNUC
+      ZWNKDUBZWNUCZUMZBCUDAKSGSUAZEUEZUFUEZUGZCAKUFEUHZXCRASBGUNXAWNUFUEZXBEUFA
+      WTGTZUMZXAUIAGUIWTEQUJZUKASGUIEQULUFUNUOUFBUNXEUGUCAUPBUNUFUQURWNXAUFVFUS
+      UTAXCCTXBXAVAUEZTZSGUDAXJSGXGXAUITZXJXHXIXAXBXIVBZXBVBZVCVDVEASCEFXBGHIJL
+      MOPAGUIEQVGZVHVIVJZAWSBCAWNCTZUMZWPWRXQSGWTKUEZWTWNUEZXAVKUEZUBZUGSGXSUGZ
+      WOWNXQSGYAXSXQXFUMZYAXBXSXTUBZXSYCXRXBXSXTAXFXRXBUCXPXGXRWTXDUEZXBWTKXDRV
+      LAEGUOZXFYEXBUCXNGUFEWTVMVNUTVOZVQYCXKXSXITZYDXSUCXQGUIWTEAGUIEVPXPQVRUJZ
+      YCCEFWNGWTHIJLMAFHTZXPXFOVSAGITZXPXFPVSAYFXPXFXNVSAXPXFVTXQXFWAWBZXIXTXAX
+      SXBXLXTVBZXMWFWCWDWGXQSCDEFKWNGHIJLMAYJXPOVRZAYKXPPVRZAYFXPXNVRZAWMXPXOVR
+      ZAXPWAZNWEXQWNGUOWNYBUCXQCEFWNGHIJLMYNYOYPYRWHSGWNUQVDZWIXQSGXSXRXTUBZUGY
+      BWQWNXQSGYTXSYCYTXSXBXTUBZXSYCXRXBXSXTYGWJYCXKYHUUAXSUCYIYLXIXTXAXSXBXLYM
+      XMWKWCWDWGXQSCDEFWNKGHIJLMYNYOYPYRYQNWEYSWIWLVEWL $.
+  $}
+
+  ${
+    $d a b y I $.  $d a b c y ph $.  $d a b y R $.  $d a b c y Y $.
+    $d a b y S $.
+    prdsmndd.y $e |- Y = ( S Xs_ R ) $.
+    prdsmndd.i $e |- ( ph -> I e. W ) $.
+    prdsmndd.s $e |- ( ph -> S e. V ) $.
+    prdsmndd.r $e |- ( ph -> R : I --> Mnd ) $.
+    $( The product of a family of monoids is a monoid.  (Contributed by Stefan
+       O'Rear, 10-Jan-2015.) $)
+    prdsmndd $p |- ( ph -> Y e. Mnd ) $=
+      ( va vy cfv wcel co wa cvv eqid adantr vb vc cbs cplusg c0g ccom eqidd cv
+      elexd cmnd wf simprl simprr prdsplusgcl 3impb w3a cmpt ffvelcdmda adantlr
+      wceq ad2antrr wfn ffnd simplr1 prdsbasprj simplr2 simplr3 mndass syl13anc
+      simpr prdsplusgfval oveq1d oveq2d 3eqtr4d mpteq2dva 3adantr3 prdsplusgval
+      simpr3 simpr1 simpr2 wral prdsidlem simpld simprd r19.21bi ismndd ) ALUAU
+      BGUCNZGUDNZGUEBUFZAWGUGAWHUGALUHZWGOZUAUHZWGOZWJWLWHPZWGOZAWKWMQZQWGWHBCW
+      JWLDRRGHWGSZWHSZACROZWPACEJUIZTADROZWPADFIUIZTADUJBUKZWPKTAWKWMULAWKWMUMU
+      NZUOAWKWMUBUHZWGOZUPZQZMDMUHZWNNZXIXENZXIBNZUDNZPZUQMDXIWJNZXIWLXEWHPZNZX
+      MPZUQWNXEWHPWJXPWHPXHMDXNXRXHXIDOZQZXOXIWLNZXMPZXKXMPZXOYAXKXMPZXMPZXNXRX
+      TXLUJOZXOXLUCNZOYAYGOXKYGOYCYEUTAXSYFXGADUJXIBKURUSXTWGBCWJDXIRRGHWQAWSXG
+      XSWTVAZAXAXGXSXBVAZABDVBZXGXSADUJBKVCZVAZWKWMXFAXSVDZXHXSVJZVEXTWGBCWLDXI
+      RRGHWQYHYIYLWKWMXFAXSVFZYNVEXTWGBCXEDXIRRGHWQYHYIYLWKWMXFAXSVGZYNVEYGXMXL
+      XOYAXKYGSXMSVHVIXTXJYBXKXMXTWGWHBCWJWLDXIRRGHWQYHYIYLYMYOWRYNVKVLXTXQYDXO
+      XMXTWGWHBCWLXEDXIRRGHWQYHYIYLYOYPWRYNVKVMVNVOXHMWGWHBCWNXEDRRGHWQAWSXGWTT
+      ZAXAXGXBTZAYJXGYKTZAWKWMWOXFXDVPAWKWMXFVRZWRVQXHMWGWHBCWJXPDRRGHWQYQYRYSA
+      WKWMXFVSXHWGWHBCWLXEDRRGHWQWRYQYRAXCXGKTAWKWMXFVTYTUNWRVQVNAWIWGOZWIWJWHP
+      WJUTZWJWIWHPWJUTZQZLWGWAZALWGWHBCDRRGWIHWQWRWTXBKWISWBZWCAWKQZUUBUUCAUUDL
+      WGAUUAUUEUUFWDWEZWCUUGUUBUUCUUHWDWF $.
+
+    $( The identity in a product of monoids.  (Contributed by Stefan O'Rear,
+       10-Jan-2015.) $)
+    prds0g $p |- ( ph -> ( 0g o. R ) = ( 0g ` Y ) ) $=
+      ( vb va c0g cfv wcel co wceq wa eqid ccom cbs cplusg wral elexd prdsidlem
+      cv cvv cmnd wrex prdsmndd mndid syl ismgmid mpbid eqcomd ) AGNOZNBUAZAURG
+      UBOZPURLUGZGUCOZQUTRUTURVAQUTRSLUSUDSUQURRALUSVABCDUHUHGURHUSTZVATZACEJUE
+      ADFIUEKURTUFALUSVAURMGUQVBUQTVCAGUIPMUGZUTVAQUTRUTVDVAQUTRSLUSUDMUSUJABCD
+      EFGHIJKUKLMUSVAGVBVCULUMUNUOUP $.
+  $}
+
+  ${
+    $d x I $.  $d r x R $.  $d x V $.  $d r x .0. $.
+    pwsmnd.y $e |- Y = ( R ^s I ) $.
+    $( The structure power of a monoid is a monoid.  (Contributed by Mario
+       Carneiro, 11-Jan-2015.) $)
+    pwsmnd $p |- ( ( R e. Mnd /\ I e. V ) -> Y e. Mnd ) $=
+      ( cmnd wcel wa csca cfv csn cxp cprds co eqid pwsval simpr scaslid adantr
+      cvv slotex wf fconst6g prdsmndd eqeltrd ) AFGZBCGZHZDAIJZBAKLZMNZFAUIBFCD
+      EUIOPUHUJUIBTCUKUKOUFUGQUFUITGUGAIFRUASUFBFUJUBUGBAFUCSUDUE $.
+
+    pws0g.z $e |- .0. = ( 0g ` R ) $.
+    $( The identity in a structure power of a monoid.  (Contributed by Mario
+       Carneiro, 11-Jan-2015.) $)
+    pws0g $p |- ( ( R e. Mnd /\ I e. V ) -> ( I X. { .0. } ) = ( 0g ` Y ) ) $=
+      ( vx vr cmnd wcel c0g csn cxp csca cfv cvv eqid cmpt wceq wa ccom scaslid
+      cprds co simpr slotex adantr wf fconst6g prds0g fconstmpt cv ad2antrr a1i
+      elex fn0g dffn5im mp1i fveq2 eqtr4di fmptco eqtr4id pwsval fveq2d 3eqtr4d
+      wfn ) AJKZBCKZUAZLBAMNZUBZAOPZVKUDUEZLPBEMNZDLPVJVKVMBQCVNVNRVHVIUFVHVMQK
+      VIAOJUCUGUHVHBJVKUIVIBAJUJUHUKVJVOHBESVLHBEULVJHIBQAIUMZLPZEVKLVHAQKVIHUM
+      BKAJUPUNVKHBASTVJHBAULUOLQVGLIQVQSTVJUQIQLURUSVPATVQALPEVPALUTGVAVBVCVJDV
+      NLAVMBJCDFVMRVDVEVF $.
+  $}
+
+  ${
+    $d p q x y .+ $.  $d a b p q u v w x y z ph $.  $d a b p q u v w x y z U $.
+    $d p q u x .0. $.  $d p q u v w B $.  $d a b p q u x y z F $.  $d p q R $.
+    $d a b p q x y z V $.
+    imasmnd.u $e |- ( ph -> U = ( F "s R ) ) $.
+    imasmnd.v $e |- ( ph -> V = ( Base ` R ) ) $.
+    imasmnd.p $e |- .+ = ( +g ` R ) $.
+    imasmnd.f $e |- ( ph -> F : V -onto-> B ) $.
+    imasmnd.e $e |- ( ( ph /\ ( a e. V /\ b e. V ) /\ ( p e. V /\ q e. V ) )
+      -> ( ( ( F ` a ) = ( F ` p ) /\ ( F ` b ) = ( F ` q ) )
+        -> ( F ` ( a .+ b ) ) = ( F ` ( p .+ q ) ) ) ) $.
+    ${
+      imasmnd2.r $e |- ( ph -> R e. W ) $.
+      imasmnd2.1 $e |- ( ( ph /\ x e. V /\ y e. V ) -> ( x .+ y ) e. V ) $.
+      imasmnd2.2 $e |- ( ( ph /\ ( x e. V /\ y e. V /\ z e. V ) ) ->
+        ( F ` ( ( x .+ y ) .+ z ) ) = ( F ` ( x .+ ( y .+ z ) ) ) ) $.
+      imasmnd2.3 $e |- ( ph -> .0. e. V ) $.
+      imasmnd2.4 $e |- ( ( ph /\ x e. V ) ->
+        ( F ` ( .0. .+ x ) ) = ( F ` x ) ) $.
+      imasmnd2.5 $e |- ( ( ph /\ x e. V ) ->
+        ( F ` ( x .+ .0. ) ) = ( F ` x ) ) $.
+      $( The image structure of a monoid is a monoid.  (Contributed by Mario
+         Carneiro, 24-Feb-2015.) $)
+      imasmnd2 $p |- ( ph -> ( U e. Mnd /\ ( F ` .0. ) = ( 0g ` U ) ) ) $=
+        ( vu vv vw cmnd wcel cfv c0g wceq cplusg imasbas eqidd wf cv eqid 3expb
+        cxp co caovclg imasaddf fovcdm syl3an1 w3a wrex crn wfo forn syl eleq2d
+        3anbi123d wfn wb fofn fvelrnb bitr3d 3reeanv bitr4di wa simpl 3adant3r3
+        simpr3 imasaddval syl3anc simpr1 3adantr1 oveq1d 3adant3r1 oveq2d simp1
+        wi 3eqtr4d simp2 oveq12d simp3 eqeq12d syl5ibcom 3exp2 imp32 rexlimdvva
+        rexlimdv sylbid imp fof ffvelcdmd adantr simpr eqtrd oveq2 id rexlimdva
+        mpd3an3 oveq1 ismndd grpidd jca ) AHUKULLIUMZHUNUMUOAUHUIUJEHUPUMZHYBAE
+        GHIJKQRTUBUQZAYCURZAEEVCEYCUSUHUTZEULZUIUTZEULZYFYHYCVDZEULAEGYCFHIJKMN
+        OPTUAQRUBSYCVAZABCNUTMUTJJJFABUTZJULZCUTZJULZYLYNFVDZJULZUCVBVEZVFYFYHE
+        EEYCVGVHAYGYIUJUTZEULZVIZYJYSYCVDZYFYHYSYCVDZYCVDZUOZAUUAYLIUMZYFUOZYNI
+        UMZYHUOZDUTZIUMZYSUOZVIZDJVJZCJVJBJVJZUUEAUUAUUGBJVJZUUICJVJZUULDJVJZVI
+        ZUUOAYFIVKZULZYHUUTULZYSUUTULZVIZUUAUUSAUVAYGUVBYIUVCYTAUUTEYFAJEIVLZUU
+        TEUOTJEIVMVNZVOZAUUTEYHUVFVOAUUTEYSUVFVOVPAIJVQZUVDUUSVRAUVEUVHTJEIVSVN
+        ZUVHUVAUUPUVBUUQUVCUURBJYFIVTZCJYHIVTDJYSIVTVPVNWAUUGUUIUULBCDJJJWBWCAU
+        UNUUEBCJJAYMYOWDWDUUMUUEDJAYMYOUUJJULZUUMUUEWPZWPAYMYOUVKUVLAYMYOUVKVIZ
+        WDZUUFUUHYCVDZUUKYCVDZUUFUUHUUKYCVDZYCVDZUOUUMUUEUVNYPIUMZUUKYCVDZUUFYN
+        UUJFVDZIUMZYCVDZUVPUVRUVNYPUUJFVDIUMZYLUWAFVDIUMZUVTUWCUDUVNAYQUVKUVTUW
+        DUOAUVMWEZAYMYOYQUVKUCWFAYMYOUVKWGAEGYCFHIJYPUUJKMNOPTUAQRUBSYKWHWIUVNA
+        YMUWAJULZUWCUWEUOUWFAYMYOUVKWJAYOUVKUWGYMANMYNUUJJJJFYRVEWKAEGYCFHIJYLU
+        WAKMNOPTUAQRUBSYKWHWIWQUVNUVOUVSUUKYCAYMYOUVOUVSUOUVKAEGYCFHIJYLYNKMNOP
+        TUAQRUBSYKWHWFWLUVNUVQUWBUUFYCAYOUVKUVQUWBUOYMAEGYCFHIJYNUUJKMNOPTUAQRU
+        BSYKWHWMWNWQUUMUVPUUBUVRUUDUUMUVOYJUUKYSYCUUMUUFYFUUHYHYCUUGUUIUULWOZUU
+        GUUIUULWRZWSUUGUUIUULWTZWSUUMUUFYFUVQUUCYCUWHUUMUUHYHUUKYSYCUWIUWJWSWSX
+        AXBXCXDXFXEXGXHAJELIAUVEJEIUSTJEIXIVNUEXJZAYGYBYFYCVDZYFUOZAYGUUPUWMAUV
+        AYGUUPUVGAUVHUVAUUPVRUVIUVJVNWAZAUUGUWMBJAYMWDZYBUUFYCVDZUUFUOUUGUWMUWO
+        UWPLYLFVDIUMZUUFUWOALJULZYMUWPUWQUOAYMWEAUWRYMUEXKZAYMXLAEGYCFHIJLYLKMN
+        OPTUAQRUBSYKWHWIUFXMUUGUWPUWLUUFYFUUFYFYBYCXNUUGXOZXAXBXPXGXHZAYGYFYBYC
+        VDZYFUOZAYGUUPUXCUWNAUUGUXCBJUWOUUFYBYCVDZUUFUOUUGUXCUWOUXDYLLFVDIUMZUU
+        FAYMUWRUXDUXEUOUWSAEGYCFHIJYLLKMNOPTUAQRUBSYKWHXQUGXMUUGUXDUXBUUFYFUUFY
+        FYBYCXRUWTXAXBXPXGXHZXSAUHEYCHYBYDYEUWKUXAUXFXTYA $.
+    $}
+
+    ${
+      imasmnd.r $e |- ( ph -> R e. Mnd ) $.
+      imasmnd.z $e |- .0. = ( 0g ` R ) $.
+      $( The image structure of a monoid is a monoid.  (Contributed by Mario
+         Carneiro, 24-Feb-2015.) $)
+      imasmnd $p |- ( ph -> ( U e. Mnd /\ ( F ` .0. ) = ( 0g ` U ) ) ) $=
+        ( wcel vx vy vz cmnd cv w3a co cbs cfv 3ad2ant1 simp2 wceq eleqtrd eqid
+        simp3 mndcl syl3anc eleqtrrd wa adantr 3adant3r3 simpr3 mndass syl13anc
+        fveq2d mndidcl syl eleq2d biimpa mndlid syl2an2r mndrid imasmnd2 ) AUAU
+        BUCBCDEFGUDHIJKLMNOPQRAUAUEZGTZUBUEZGTZUFZVNVPCUGZDUHUIZGVRDUDTZVNVTTZV
+        PVTTZVSVTTAVOWAVQRUJVRVNGVTAVOVQUKAVOGVTULZVQNUJZUMZVRVPGVTAVOVQUOWEUMZ
+        VTCDVNVPVTUNZOUPUQWEURAVOVQUCUEZGTZUFZUSZVSWICUGZVNVPWICUGCUGZFWLWAWBWC
+        WIVTTWMWNULAWAWKRUTAVOVQWBWJWFVAAVOVQWCWJWGVAWLWIGVTAVOVQWJVBAWDWKNUTUM
+        VTCDVNVPWIWHOVCVDVEAHVTGAWAHVTTRVTDHWHSVFVGNURAVOUSZHVNCUGZVNFAWAVOWBWP
+        VNULRAVOWBAGVTVNNVHVIZVTCDVNHWHOSVJVKVEWOVNHCUGZVNFAWAVOWBWRVNULRWQVTCD
+        VNHWHOSVLVKVEVM $.
+    $}
+  $}
+
+  ${
+    $d a b p q B $.  $d a b p q F $.  $d a b p q R $.  $d a b p q U $.
+    $d a b p q V $.
+    imasmndf1.u $e |- U = ( F "s R ) $.
+    imasmndf1.v $e |- V = ( Base ` R ) $.
+    $( The image of a monoid under an injection is a monoid.  (Contributed by
+       Mario Carneiro, 24-Feb-2015.) $)
+    imasmndf1 $p |- ( ( F : V -1-1-> B /\ R e. Mnd ) -> U e. Mnd ) $=
+      ( vq vp va vb wf1 cmnd wcel c0g cfv wceq a1i eqid cv crn cplusg cimas cbs
+      wa co wf1o wfo f1f1orn adantr f1ofo syl f1ocpbl simpr imasmnd simpld ) EA
+      DLZBMNZUEZCMNBOPZDPCOPQUSDUAZBUBPZBCDEUTHIJKCDBUCUFQUSFREBUDPQUSGRVBSUSEV
+      ADUGZEVADUHUQVCUREADUIUJZEVADUKULUSJTKTITHTVBDEVAVDUMUQURUNUTSUOUP $.
   $}
 
   ${
@@ -154020,6 +154333,123 @@ $)
       PEAAQZAQZFZPEZVCVHLACRVBVKPEZVMVJPEZVBVNVBVOAACCTSVJAPCTUDVKPROVCVLBPPDUE
       UFZVPUGUHVBVEVDVJFZLZVGVBVEVRUIAACCVDUJSVBVRVGVBVRUKVDVQVFVBVRULVBVQVFLVR
       VBVFVCVCUMZVQAUNVBVSVQLAACCUOSUPUQURUSUTVA $.
+  $}
+
+  ${
+    $d x y B $.  $d x y F $.  $d x y I $.  $d x N $.  $d x y ph $.  $d x y R $.
+    $d x .+ $.  $d x y S $.  $d x y V $.  $d x y W $.  $d x y Y $.  $d x .0. $.
+    prdsinvlem.y $e |- Y = ( S Xs_ R ) $.
+    prdsinvlem.b $e |- B = ( Base ` Y ) $.
+    prdsinvlem.p $e |- .+ = ( +g ` Y ) $.
+    prdsinvlem.s $e |- ( ph -> S e. V ) $.
+    prdsinvlem.i $e |- ( ph -> I e. W ) $.
+    prdsinvlem.r $e |- ( ph -> R : I --> Grp ) $.
+    prdsinvlem.f $e |- ( ph -> F e. B ) $.
+    prdsinvlem.z $e |- .0. = ( 0g o. R ) $.
+    prdsinvlem.n $e |- N = ( y e. I |->
+        ( ( invg ` ( R ` y ) ) ` ( F ` y ) ) ) $.
+    $( Characterization of inverses in a structure product.  (Contributed by
+       Mario Carneiro, 10-Jan-2015.) $)
+    prdsinvlem $p |- ( ph -> ( N e. B /\ ( N .+ F ) = .0. ) ) $=
+      ( vx wcel co wceq cv cfv cminusg cmpt wral wa eqid cgrp ffvelcdmda adantr
+      cbs wfn ffnd simpr prdsbasprj grpinvcld prdsbasmpt mpbird eqeltrid cplusg
+      ralrimiva grplinvd 2fveq3 fveq2 fveq12d fvmptd3 oveq1d fveq1i fvco2 sylan
+      c0g ccom 3eqtr4d mpteq2dva prdsplusgval cvv crn wss fn0g ssv fnco mp3an2i
+      eqtrid a1i fneq1i sylibr dffn5im syl jca ) AICUDIGDUEZMUFAIBHBUGZGUHZWQEU
+      HZUIUHZUHZUJZCUBAXBCUDXAWSUQUHZUDZBHUKAXDBHAWQHUDZULZXCWSWTWRXCUMWTUMAHUN
+      WQESUOXFCEFGHWQJKLNOAFJUDZXEQUPAHKUDZXERUPAEHURZXEAHUNESUSZUPAGCUDZXETUPA
+      XEUTVAVBVGABCEFXAHJKLNOQRXJVCVDVEZAUCHUCUGZIUHZXMGUHZXMEUHZVFUHZUEZUJUCHX
+      MMUHZUJZWPMAUCHXRXSAXMHUDZULZXOXPUIUHZUHZXOXQUEXPVQUHZXRXSYBXPUQUHZXQXPYC
+      XOYEYFUMZXQUMYEUMYCUMZAHUNXMESUOZYBCEFGHXMJKLNOAXGYAQUPAXHYARUPAXIYAXJUPA
+      XKYATUPAYAUTZVAZVHYBXNYDXOXQYBBXMXAYDHIYFUBWQXMUFWRXOWTYCWQXMUIEVIWQXMGVJ
+      VKYJYBYFXPYCXOYGYHYIYKVBVLVMYBXSXMVQEVRZUHZYEXMMYLUAVNAXIYAYMYEUFXJHVQEXM
+      VOVPWIVSVTAUCCDEFIGHJKLNOQRXJXLTPWAAMHURZMXTUFAYLHURZYNVQWBURAXIEWCZWBWDZ
+      YOWEXJYQAYPWFWJWBHVQEWGWHHMYLUAWKWLUCHMWMWNVSWO $.
+  $}
+
+  ${
+    $d x B $.  $d b x I $.  $d a b x ph $.  $d b x R $.  $d b x S $.  $d x X $.
+    $d a b x Y $.
+    prdsgrpd.y $e |- Y = ( S Xs_ R ) $.
+    prdsgrpd.i $e |- ( ph -> I e. W ) $.
+    prdsgrpd.s $e |- ( ph -> S e. V ) $.
+    prdsgrpd.r $e |- ( ph -> R : I --> Grp ) $.
+    $( The product of a family of groups is a group.  (Contributed by Stefan
+       O'Rear, 10-Jan-2015.) $)
+    prdsgrpd $p |- ( ph -> Y e. Grp ) $=
+      ( va vb cfv cgrp cmnd wcel cvv eqid adantr cbs cplusg cv cminusg cmpt c0g
+      ccom eqidd wf wss grpmnd ssriv fss sylancl prds0g prdsmndd wa elexd simpr
+      co wceq prdsinvlem simpld simprd isgrpd2 ) ALGUANZGUBNZGMDMUCZLUCZNVHBNUD
+      NNUEZUFBUGZAVFUHAVGUHABCDEFGHIJADOBUIZOPUJDPBUIKLOPVIUKULDOPBUMUNZUOABCDE
+      FGHIJVMUPAVIVFQZUQZVJVFQZVJVIVGUTVKVAZVOMVFVGBCVIDVJRRGVKHVFSVGSACRQVNACE
+      JURTADRQVNADFIURTAVLVNKTAVNUSVKSVJSVBZVCVOVPVQVRVDVE $.
+
+    prdsinvgd.b $e |- B = ( Base ` Y ) $.
+    prdsinvgd.n $e |- N = ( invg ` Y ) $.
+    prdsinvgd.x $e |- ( ph -> X e. B ) $.
+    $( Negation in a product of groups.  (Contributed by Stefan O'Rear,
+       10-Jan-2015.) $)
+    prdsinvgd $p |- ( ph -> ( N ` X ) = ( x e. I |->
+        ( ( invg ` ( R ` x ) ) ` ( X ` x ) ) ) ) $=
+      ( cfv cgrp va cv cminusg cmpt wceq cplusg co c0g ccom wcel cvv eqid elexd
+      prdsinvlem simprd cmnd wss grpmnd ssriv fss sylancl prds0g eqtrd prdsgrpd
+      wf wb simpld grpinvid2 syl3anc mpbird ) AJGSBFBUBZJSVKDSUCSSUDZUEZVLJKUFS
+      ZUGZKUHSZUEZAVOUHDUIZVPAVLCUJZVOVRUEZABCVNDEJFVLUKUKKVRLPVNULZAEHNUMAFIMU
+      MORVRULVLULUNZUOADEFHIKLMNAFTDVETUPUQFUPDVEOUATUPUAUBURUSFTUPDUTVAVBVCAKT
+      UJJCUJVSVMVQVFADEFHIKLMNOVDRAVSVTWBVGCVNKGJVLVPPWAVPULQVHVIVJ $.
+  $}
+
+  ${
+    $d x y G $.  $d x y M $.  $d x y R $.  $d x y X $.  $d x B $.  $d x F $.
+    $d x I $.  $d x N $.  $d x V $.
+    pwsgrp.y $e |- Y = ( R ^s I ) $.
+    $( A structure power of a group is a group.  (Contributed by Mario
+       Carneiro, 11-Jan-2015.) $)
+    pwsgrp $p |- ( ( R e. Grp /\ I e. V ) -> Y e. Grp ) $=
+      ( cgrp wcel wa csca cfv csn cxp cprds co eqid pwsval simpr scaslid adantr
+      cvv slotex wf fconst6g prdsgrpd eqeltrd ) AFGZBCGZHZDAIJZBAKLZMNZFAUIBFCD
+      EUIOPUHUJUIBTCUKUKOUFUGQUFUITGUGAIFRUASUFBFUJUBUGBAFUCSUDUE $.
+
+    pwsinvg.b $e |- B = ( Base ` Y ) $.
+    ${
+      pwsinvg.m $e |- M = ( invg ` R ) $.
+      pwsinvg.n $e |- N = ( invg ` Y ) $.
+      $( Negation in a group power.  (Contributed by Mario Carneiro,
+         11-Jan-2015.) $)
+      pwsinvg $p |- ( ( R e. Grp /\ I e. V /\ X e. B ) ->
+        ( N ` X ) = ( M o. X ) ) $=
+        ( vx vy cgrp wcel cfv cminusg cbs eqid w3a csca csn cxp cprds cmpt ccom
+        co cv cvv simp2 scaslid slotex 3ad2ant1 wf fconst6g wceq pwsval 3adant3
+        simp3 fveq2d eqtrid eleqtrd prdsinvgd wa simp1 fvconst2g eqtr4di fveq1d
+        sylan mpteq2dva eqtrd pwselbas ffvelcdmda feqmptd grpinvf fveq2 3eqtr4d
+        fmptco ) BOPZCFPZGAPZUAZGBUBQZCBUCUDZUEUHZRQZQZMCMUIZGQZDQZUFZGEQDGUGWC
+        WHMCWJWIWEQZRQZQZUFWLWCMWFSQZWEWDCWGUJFGWFWFTVTWAWBUKZVTWAWDUJPWBBUBOUL
+        UMUNVTWACOWEUOWBCBOUPUNWPTWGTWCGAWPVTWAWBUTZWCAHSQWPJWCHWFSVTWAHWFUQWBB
+        WDCOFHIWDTURUSZVAVBVCVDWCMCWOWKWCWICPZVEZWJWNDXAWNBRQDXAWMBRWCVTWTWMBUQ
+        VTWAWBVFZCBWIOVGVJVAKVHVIVKVLWCGEWGWCEHRQWGLWCHWFRWSVAVBVIWCMNCBSQZWJNU
+        IZDQWKGDWCCXCWIGWCXCBCAOGHFIXCTZJXBWQWRVMZVNWCMCXCGXFVOWCNXCXCDVTWAXCXC
+        DUOWBXCBDXEKVPUNVOXDWJDVQVSVR $.
+    $}
+
+    pwssub.m $e |- M = ( -g ` R ) $.
+    pwssub.n $e |- .- = ( -g ` Y ) $.
+    $( Subtraction in a group power.  (Contributed by Mario Carneiro,
+       12-Jan-2015.) $)
+    pwssub $p |- ( ( ( R e. Grp /\ I e. V ) /\ ( F e. B /\ G e. B ) ) ->
+        ( F .- G ) = ( F oF M G ) ) $=
+      ( vx cgrp wcel wa cfv co eqid vy cminusg cplusg cv cmpt cof simplr simpll
+      cbs simprl pwselbas ffvelcdmda wf grpinvf adantr simprr ffvelcdmd feqmptd
+      ad2antrr ccom wceq pwsinvg syl3anc fveq2 fmptco offval2 grpinvcl syl2an2r
+      eqtrd pwsgrp pwsplusgval grpsubval syl2anc mpteq2dva 3eqtr4d adantl ) BOP
+      ZEHPZQZCAPZDAPZQZQZCDIUBRZRZIUCRZSZNENUDZCRZWHDRZFSZUEZCDGSZCDFUFSWCCWEBU
+      CRZUFSNEWIWJBUBRZRZWNSZUEWGWLWCNEWIWPWNCWEHBUIRZWRVQVRWBUGZWCEWRWHCWCWRBE
+      AOCIHJWRTZKVQVRWBUHZWSVSVTWAUJZUKZULZWCWHEPZQZWRWRWJWOWCWRWRWOUMZXEVQXGVR
+      WBWRBWOWTWOTZUNUSZUOWCEWRWHDWCWRBEAODIHJWTKXAWSVSVTWAUPZUKZULZUQWCNEWRCXC
+      URZWCWEWODUTZNEWPUEWCVQVRWAWEXNVAXAWSXJABEWOWDHDIJKXHWDTZVBVCWCNUAEWRWJUA
+      UDZWORWPDWOXLWCNEWRDXKURZWCUAWRWRWOXIURXPWJWOVDVEVIVFWCAWNWFBCWEEOHIJKXAW
+      SXBVSIOPWBWAWEAPBEHIJVJXJAIWDDKXOVGVHWNTZWFTZVKWCNEWKWQXFWIWRPWJWRPWKWQVA
+      XDXLWRWNBWOFWIWJWTXRXHLVLVMVNVOWBWMWGVAVSAWFIWDGCDKXSXOMVLVPWCNEWIWJFCDHW
+      RWRWSXDXLXMXQVFVO $.
   $}
 
   ${
@@ -169051,6 +169481,58 @@ $)
       STTVAZVBUKTRAFTRZXEVCVDAXGDTRZAGBRXGXHUOMGBEVFFDVEVFXFVBVFVQVGXFVFVHVIIJV
       JVKVLZUKFTTSVMVNWLOWMTVOVKZXJWNVPVRAWKWNWJTTAQTVBXHWKTRZVSADUNLVTXKTDQDQW
       AWBWCXJWDWEABWICDEFGHIJXCKMNWHABWNDEOFWKTUNIXBXDJXILWFWG $.
+  $}
+
+  ${
+    $d x .0. $.  $d r s t x y z ph $.  $d r s t x y z R $.  $d r s t x y z S $.
+    $d x D $.  $d f x y z I $.  $d x y N $.  $d x y X $.
+    psrgrp.s $e |- S = ( I mPwSer R ) $.
+    psrgrp.i $e |- ( ph -> I e. V ) $.
+    psrgrp.r $e |- ( ph -> R e. Grp ) $.
+    ${
+      psr0cl.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+      psr0cl.o $e |- .0. = ( 0g ` R ) $.
+      psr0cl.b $e |- B = ( Base ` S ) $.
+      $( The zero element of the ring of power series.  (Contributed by Mario
+         Carneiro, 29-Dec-2014.) $)
+      psr0cl $p |- ( ph -> ( D X. { .0. } ) e. B ) $=
+        ( cbs cmap wcel cgrp cvv csn cxp co wf eqid grpidcl fconst6g 3syl basfn
+        cfv wfn elexd funfvex funfni sylancr cv ccnv cn cima fnmap nn0ex fnovex
+        cfn cn0 mp3an12i rabexd elmapd mpbird psrbasg eleqtrrd ) ACIUAUBZDPUJZC
+        QUCZBAVKVMRCVLVKUDZADSRIVLRVNLVLDIVLUEZNUFCIVLUGUHAVLCVKTTAPTUKDTRVLTRZ
+        UIADSLULVPTDPDPUMUNUOAFUPUQURUSVCRFVDGQUCZCTMQTTUBUKVDTRAGTRVQTRUTVAAGH
+        KULVDGTTQVBVEVFVGVHABCDEFGVLHSJVOMOKLVIVJ $.
+
+      psr0lid.p $e |- .+ = ( +g ` S ) $.
+      psr0lid.x $e |- ( ph -> X e. B ) $.
+      $( The zero element of the ring of power series is a left identity.
+         (Contributed by Mario Carneiro, 29-Dec-2014.) $)
+      psr0lid $p |- ( ph -> ( ( D X. { .0. } ) .+ X ) = X ) $=
+        ( cvv vx csn cxp co cplusg cfv cof eqid psr0cl psradd cbs ccnv cima cfn
+        cv cn wcel cn0 cmap wfn fnmap nn0ex elexd fnovex mp3an12i psrelbas cgrp
+        rabexd grpidcl syl wceq grplid sylan caofid0l eqtrd ) ACKUBUCZJDUDVPJEU
+        EUFZUGUDJABVQDEFHVPJLQVQUHZRABCEFGHIKLMNOPQUISUJAUACKVQEUKUFZJTVSAGUOUL
+        UPUMUNUQGURHUSUDZCTOUSTTUCUTURTUQAHTUQVTTUQVAVBAHIMVCURHTTUSVDVEVHABCEF
+        GHVSJLVSUHZOQSVFAEVGUQZKVSUQNVSEKWAPVIVJAWBUAUOZVSUQKWCVQUDWCVKNVSVQEWC
+        KWAVRPVLVMVNVO $.
+    $}
+
+    ${
+      psrnegcl.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+      psrnegcl.i $e |- N = ( invg ` R ) $.
+      psrnegcl.b $e |- B = ( Base ` S ) $.
+      psrnegcl.z $e |- ( ph -> X e. B ) $.
+      $( The negative function in the ring of power series.  (Contributed by
+         Mario Carneiro, 29-Dec-2014.) $)
+      psrnegcl $p |- ( ph -> ( N o. X ) e. B ) $=
+        ( cbs wcel cvv ccom cfv cmap co wf wf1o eqid grpinvf1o syl psrelbas fco
+        f1of syl2anc wfn basfn cgrp elexd funfvex funfni sylancr cv ccnv cn cfn
+        cima cn0 cxp fnmap nn0ex fnovex mp3an12i rabexd elmapd psrbasg eleqtrrd
+        mpbird ) AHJUAZDRUBZCUCUDZBAVQVSSCVRVQUEZAVRVRHUEZCVRJUEVTAVRVRHUFWAAVR
+        DHVRUGZOMUHVRVRHULUIABCDEFGVRJKWBNPQUJCVRVRHJUKUMAVRCVQTTARTUNDTSVRTSZU
+        OADUPMUQWCTDRDRURUSUTAFVAVBVCVEVDSFVFGUCUDZCTNUCTTVGUNVFTSAGTSWDTSVHVIA
+        GILUQVFGTTUCVJVKVLVMVPABCDEFGVRIUPKWBNPLMVNVO $.
+    $}
   $}
 
 

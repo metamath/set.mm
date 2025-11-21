@@ -3706,19 +3706,6 @@ that we are evaluating functions within their domains.
 </tr>
 
 <tr>
-  <td>offveq</td>
-  <td>~ offeq</td>
-</tr>
-
-<TR>
-<TD>caofid0l , caofid0r , caofid1 , caofid2</TD>
-<TD><I>none</I></TD>
-<TD>Assuming we really need to add conditions that the operations
-are functions being evaluated within their domains, there would be a
-fair bit of intuitionizing.</TD>
-</TR>
-
-<tr>
   <td>caofass</td>
   <td><i>none</i></td>
   <td>presumably provable with added conditions similar to those
@@ -11044,17 +11031,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>df-xps and all theorems mentioning the binary product on a structure
-  (syntax Xs.)</td>
-  <td><i>none</i></td>
-  <td>The set.mm definition depends on df-imas ( "s )
-  and df-prds ( Xs_ ). By its nature the definition of the binary
-  product considers every structure slot (including most notably
-  order which presumably will need to be handled differently
-  in iset.mm).</td>
-</tr>
-
-<tr>
   <td>imasval</td>
   <td>~ imasival</td>
 </tr>
@@ -11110,6 +11086,12 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>qusaddflem</td>
   <td>~ qusaddflemg</td>
+</tr>
+
+<tr>
+  <td>xpsrnbas</td>
+  <td><i>none</i></td>
+  <td>presumably provable</td>
 </tr>
 
 <tr>
@@ -11237,34 +11219,15 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>prdsplusgcl</td>
-  <td><i>none</i></td>
-  <td>should be provable using the set.mm proof</td>
-</tr>
-
-<tr>
-  <td>prdsidlem</td>
-  <td><i>none</i></td>
-  <td>should be provable using the set.mm proof</td>
-</tr>
-
-<tr>
-  <td>prdsmndd , prds0g , pwsmnd , pws0g</td>
-  <td><i>none</i></td>
-  <td>the set.mm proofs use structure product theorems not present
-  in iset.mm</td>
-</tr>
-
-<tr>
-  <td>imasmnd2 , imasmnd , imasmndf1</td>
-  <td><i>none</i></td>
-  <td>relies on image structure theorems not present in iset.mm</td>
-</tr>
-
-<tr>
   <td>xpsmnd</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses prdsmndd</td>
+  <td>the set.mm proof uses xpsrnbas</td>
+</tr>
+
+<tr>
+  <td>xpsmnd0</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses xpsbas and xpsadd</td>
 </tr>
 
 <tr>
@@ -11393,21 +11356,9 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>prdsinvlem , prdsgrpd , prdsinvgd</td>
-  <td><i>none</i></td>
-  <td>depend on structure product theorems we don't have</td>
-</tr>
-
-<tr>
-  <td>pwsgrp , pwsinvg , pwssub</td>
-  <td><i>none</i></td>
-  <td>depend on structure power theorems we don't have</td>
-</tr>
-
-<tr>
   <td>xpsgrp</td>
   <td><i>none</i></td>
-  <td>the set.mm proof depends on prdsgrpd</td>
+  <td>the set.mm proof depends on xpsrnbas</td>
 </tr>
 
 <tr>
@@ -11436,7 +11387,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>pwsmulg</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses pwspjmhm and pwsmnd</td>
+  <td>the set.mm proof uses pwspjmhm</td>
 </tr>
 
 <tr>
@@ -12409,7 +12360,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>prdslmodd</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses prdssca , prdsgrpd , prdsvscacl ,
+  <td>the set.mm proof uses prdssca , prdsvscacl ,
   prdsvscafval , and prdsvscaval</td>
 </tr>
 
@@ -13060,6 +13011,24 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>presumably provable with added set existence conditions
   (analogous to ~ psrplusgg )</td>
+</tr>
+
+<tr>
+  <td>psrvsca</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses psrvscafval</td>
+</tr>
+
+<tr>
+  <td>psrvscaval</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses psrvsca</td>
+</tr>
+
+<tr>
+  <td>psrvscacl</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses psrvsca</td>
 </tr>
 
 <TR>
@@ -14332,7 +14301,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>dvcmulf</td>
   <td><i>none</i></td>
-  <td>the set.mm proof depends on dvres , dvres3 , and caofid2</td>
+  <td>the set.mm proof depends on dvres and dvres3</td>
 </tr>
 
 <tr>
