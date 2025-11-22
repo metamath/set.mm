@@ -169940,6 +169940,142 @@ $)
       UDSZABUDIUDDEUCBGJUELUFTNUAUB $.
   $}
 
+  ${
+    mplsubg.s $e |- S = ( I mPwSer R ) $.
+    mplsubg.p $e |- P = ( I mPoly R ) $.
+    mplsubg.u $e |- U = ( Base ` P ) $.
+    mplsubg.i $e |- ( ph -> I e. Fin ) $.
+
+    ${
+      mplsubg.r $e |- ( ph -> R e. Grp ) $.
+
+      ${
+        $d I a b k n $.  $d I f $.  $d R a b k $.  $d S a b $.  $d S j $.
+        $d U j $.  $d b n ph $.
+        $( Lemma for ~ mplsubgfi .  There exists a polynomial.  (Contributed by
+           Jim Kingdon, 21-Nov-2025.) $)
+        mplsubgfilemm $p |- ( ph -> E. j j e. U ) $=
+          ( vk vb vf cfv wcel cv cn0 cfn va vn c0g wex cbs clt wbr wral wceq wi
+          cmap co wrex ccnv cima crab csn cxp eqid psr0 psr0cl eqeltrd cc0 cmpt
+          cn wf wa 0nn0 a1i fmpttd cvv elmapd mpbird fveq1d adantr cgrp grpidcl
+          nn0ex simpr psrbagfi eleqtrrd fvconst2g syl2anc eqtrd ralrimiva fveq1
+          syl a1d breq1d ralbidv rspceaimv wb mplelbascoe mpbir2and spcegv sylc
+          eleq1 ) ADUCPZEQZWSFRZEQZFUDAWSWRDUEPZQZMRZUARZPZXDNRZPZUFUGZMGUHZXGW
+          RPZCUCPZUIZUJNSGUKULZUHUAXNUMZAWRORUNVEUOTQOXNUPZXLUQURZXBAXPCDOGXLTW
+          RHKLXPUSZXLUSZWRUSUTZAXBXPCDOGTXLHKLXRXSXBUSZVAVBAUBGVCVDZXNQZXDYBPZX
+          HUFUGZMGUHZXMUJZNXNUHXOAYCGSYBVFAUBGVCSVCSQAUBRGQVGVHVIVJASGYBVKTSVKQ
+          AVRVIKVLVMAYGNXNAXGXNQZVGZXMYFYIXKXGXQPZXLAXKYJUIYHAXGWRXQXTVNVOYIXLC
+          UEPZQZXGXPQYJXLUIAYLYHACVPQZYLLYKCXLYKUSXSVQWGVOYIXGXNXPAYHVSAXPXNUIZ
+          YHAGTQZYNKXPOGXRVTWGVOWAXPXLXGYKWBWCWDWHWEXJYFXMUANYBXNXNXEYBUIZXIYEM
+          GYPXFYDXHUFXDXEYBWFWIWJWKWCAYOYMWSXCXOVGWLKLXBBCDEMGTVPWRXLUANIHYAXSJ
+          WMWCWNZYQXAWSFWREWTWREWQWOWP $.
+      $}
+
+      ${
+        $d .+ a b p q $.  $d I a b k p q $.  $d I c d p q u v $.
+        $d I b e k p q $.  $d I b e q s t $.  $d R a b k p q $.
+        $d R c d p q u v $.  $d R b e k p q $.  $d R b e q s t $.
+        $d X a b p q $.  $d X c d p q u $.  $d X b e p q u $.  $d Y a b p q $.
+        $d Y c d p q $.  $d Y b e p q $.  $d Y b e q s $.  $d b e p ph q $.
+        $d b e p q u v $.  $d c d p ph q $.  $d c d q s t $.
+        mplsubgfilemcl.x $e |- ( ph -> X e. U ) $.
+        mplsubgfilemcl.y $e |- ( ph -> Y e. U ) $.
+        mplsubgfilemcl.p $e |- .+ = ( +g ` S ) $.
+        $( Lemma for ~ mplsubgfi .  The sum of two polynomials is a polynomial.
+           (Contributed by Jim Kingdon, 26-Nov-2025.) $)
+        mplsubgfilemcl $p |- ( ph -> ( X .+ Y ) e. U ) $=
+          ( wcel cfv cn0 vk va vb vv vp vu vt vq vs vc vd ve co cbs cv clt wral
+          wbr c0g wceq cmap wrex eqid grpmgmd mplbasss sselid psraddcl cfn cgrp
+          wi wa wb mplelbascoe mpbid simprd adantr caddc cof wf nn0addcl adantl
+          syl2anc simplrl cvv nn0ex a1i elmapd ad2antrr simprl inidm off mpbird
+          cplusg simp-4l simplr psradd fveq1d psrelbasfi cxp fnmap elexd fnovex
+          wfn mp3an12i eqidd ffvelcdmda grpcld ofvalg eqtrd ad3antrrr ffvelcdmd
+          ffnd nn0red biimpa nn0addcld eqeltrd elmapi cle cr nn0addge1 breqtrrd
+          simpr weq fveq2 breq12d rspcdva lelttrd ralrimiva sylibr fveq1 breq2d
+          cbvralv ralbidv fveqeq2 imbi12d simprr mpd oveq1d syl rexlimddv ex
+          grplidd nn0addge2 3eqtrd breq1d rspceaimv mpbir2and ) AHICUMZFRZUUHEU
+          NSZRZUAUOZUBUOZSZUULUCUOZSZUPURZUAGUQZUUOUUHSZDUSSZUTZVJUCTGVAUMZUQUB
+          UVBVBZAUUJCDEGHIJUUJVCZQADNVDAFUUJHUUJBDEFGKJLUVDVEZOVFZAFUUJIUVEPVFZ
+          VGAUDUOZUEUOZSZUVHUFUOZSZUPURZUDGUQZUVKHSUUTUTZVJZUFUVBUQZUVCUEUVBAHU
+          UJRZUVQUEUVBVBZAHFRZUVRUVSVKZOAGVHRZDVIRZUVTUWAVLMNUUJBDEFUDGVHVIHUUT
+          UEUFKJUVDUUTVCZLVMWBVNVOAUVIUVBRZUVQVKZVKZUGUOZUHUOZSZUWHUIUOZSZUPURZ
+          UGGUQZUWKISUUTUTZVJZUIUVBUQZUVCUHUVBAUWQUHUVBVBZUWFAIUUJRZUWRAIFRZUWS
+          UWRVKZPAUWBUWCUWTUXAVLMNUUJBDEFUGGVHVIIUUTUHUIKJUVDUWDLVMWBVNVOVPUWGU
+          WIUVBRZUWQVKZVKZUVIUWIVQVRUMZUVBRZUULUXESZUUPUPURZUAGUQZUVAVJZUCUVBUQ
+          UVCUXDUXFGTUXEVSZUXDUJUKGGGVQTTTUVIUWIVHVHUJUOZTRUKUOZTRVKUXLUXMVQUMT
+          RUXDUXLUXMVTWAUXDUWEGTUVIVSZAUWEUVQUXCWCZAUWEUXNVLUWFUXCATGUVIWDVHTWD
+          RZAWEWFZMWGZWHVNZUXDUXBGTUWIVSZUWGUXBUWQWIZAUXBUXTVLUWFUXCATGUWIWDVHU
+          XQMWGZWHVNZAUWBUWFUXCMWHZUYDGWJZWKAUXFUXKVLUWFUXCATGUXEWDVHUXQMWGWHWL
+          UXDUXJUCUVBUXDUUOUVBRZVKZUXIUVAUYGUXIVKZUUSUUTUUOISZDWMSZUMZUYIUUTUYH
+          UUSUUOHSZUYIUYJUMZUYKUYHAUYFUUSUYMUTAUWFUXCUYFUXIWNZUXDUYFUXIWOZAUYFV
+          KZUUSUUOHIUYJVRUMZSZUYMAUUSUYRUTUYFAUUOUUHUYQAUUJUYJCDEGHIJUVDUYJVCZQ
+          UVFUVGWPWQVPAUVBUVBUYLUYIUYJUVBDUNSZHIWDWDUUOAUVBUYTHAUUJDEGUYTHJUYTV
+          CZMUVDUVFWRZXLAUVBUYTIAUUJDEGUYTIJVUAMUVDUVGWRZXLVAWDWDWSXCUXPAGWDRUV
+          BWDRWTWEAGVHMXATGWDWDVAXBXDZVUDUVBWJUYPUYLXEUYPUYIXEUYPUYTUYJDUYLUYIV
+          UAUYSAUWCUYFNVPAUVBUYTUUOHVUBXFAUVBUYTUUOIVUCXFZXGXHXIWBUYHUYLUUTUYIU
+          YJUYHUVJUVHUUOSZUPURZUDGUQZUYLUUTUTZUYHULUOZUVISZVUJUUOSZUPURZULGUQVU
+          HUYHVUMULGUYHVUJGRZVKZVUKVUJUXESZVULVUOVUKVUOGTVUJUVIUXDUXNUYFUXIVUNU
+          XSXJUYHVUNYBZXKZXMZVUOVUPVUOVUPVUKVUJUWISZVQUMZTUYHGGVUKVUTVQGTUVIUWI
+          VHVHVUJUYHAUWEUVIGXCUYNUXDUWEUYFUXIUXOWHAUWEVKGTUVIAUWEUXNUXRXNXLWBUY
+          HAUXBUWIGXCUYNUXDUXBUYFUXIUYAWHAUXBVKGTUWIAUXBUXTUYBXNXLWBUXDUWBUYFUX
+          IUYDWHZVVBUYEVUOVUKXEVUOVUTXEVUOVUKVUTVURVUOGTVUJUWIUXDUXTUYFUXIVUNUY
+          CXJVUQXKZXOZXHZVVDXPXMZVUOVULVUOGTVUJUUOUYGGTUUOVSZUXIVUNUYFVVGUXDUUO
+          TGXQWAWHVUQXKXMZVUOVUKVVAVUPXRVUOVUKXSRVUTTRVUKVVAXRURVUSVVCVUKVUTXTW
+          BVVEYAVUOUXHVUPVULUPURUAGVUJUAULYCUXGVUPUUPVULUPUULVUJUXEYDUULVUJUUOY
+          DYEUYGUXIVUNWOVUQYFZYGYHVUGVUMUDULGUDULYCUVJVUKVUFVULUPUVHVUJUVIYDUVH
+          VUJUUOYDYEYLYIUYHUVPVUHVUIVJUFUVBUUOUFUCYCZUVNVUHUVOVUIVVJUVMVUGUDGVV
+          JUVLVUFUVJUPUVHUVKUUOYJYKYMUVKUUOUUTHYNYOUWGUVQUXCUYFUXIAUWEUVQYPXJUY
+          OYFYQYRXIUYHUYTUYJDUYIUUTVUAUYSUWDUYHAUWCUYNNYSUYHAUYFUYIUYTRUYNUYOVU
+          EWBUUBUYHUWJUWHUUOSZUPURZUGGUQZUYIUUTUTZUYHVUTVULUPURZULGUQVVMUYHVVOU
+          LGVUOVUTVUPVULVUOVUTVVCXMZVVFVVHVUOVUTVVAVUPXRVUOVUTXSRVUKTRVUTVVAXRU
+          RVVPVURVUTVUKUUCWBVVEYAVVIYGYHVVLVVOUGULGUGULYCUWJVUTVVKVULUPUWHVUJUW
+          IYDUWHVUJUUOYDYEYLYIUYHUWPVVMVVNVJUIUVBUUOUIUCYCZUWNVVMUWOVVNVVQUWMVV
+          LUGGVVQUWLVVKUWJUPUWHUWKUUOYJYKYMUWKUUOUUTIYNYOUXDUWQUYFUXIUWGUXBUWQY
+          PWHUYOYFYQUUDUUAYHUURUXIUVAUBUCUXEUVBUVBUUMUXEUTZUUQUXHUAGVVRUUNUXGUU
+          PUPUULUUMUXEYJUUEYMUUFWBYTYTAUWBUWCUUIUUKUVCVKVLMNUUJBDEFUAGVHVIUUHUU
+          TUBUCKJUVDUWDLVMWBUUG $.
+      $}
+
+      ${
+        $d I a b k $.  $d I f $.  $d I p u v $.  $d N a b $.  $d R a b k $.
+        $d R p u v $.  $d X a b $.  $d X p u $.  $d a b ph $.  $d b u v $.
+        mplsubgfileminv.x $e |- ( ph -> X e. U ) $.
+        mplsubgfileminv.inv $e |- N = ( invg ` S ) $.
+        $( Lemma for ~ mplsubgfi .  The additive inverse of a polynomial is a
+           polynomial.  (Contributed by Jim Kingdon, 26-Nov-2025.) $)
+        mplsubgfileminv $p |- ( ph -> ( N ` X ) e. U ) $=
+          ( va vb cfv wcel cfn vk vf cbs cv clt wbr wral c0g wceq cn0 cmap wrex
+          wi co cminusg ccom ccnv cima crab eqid mplbasss sselid psrneg eqeltrd
+          cn psrnegcl wa wb mplelbascoe syl2anc mpbid simprd fveq1d ad2antrr wf
+          psrelbasfi simplr fvco3 simpr fveq2d grpinvid syl eqtrd 3eqtrd imim2d
+          cgrp ex ralimdva reximdv mpd mpbir2and ) AHGRZESZWLDUCRZSZUAUDZPUDRWP
+          QUDZRUEUFUAFUGZWQWLRZCUHRZUIZUMZQUJFUKUNZUGZPXCULZAWLCUORZHUPZWNAWNUB
+          UDUQVEURTSUBXCUSZCDUBFGXFTHILMXHUTZXFUTZWNUTZOAEWNHWNBCDEFJIKXKVANVBZ
+          VCZAWNXHCDUBFXFTHILMXIXJXKXLVFVDAWRWQHRZWTUIZUMZQXCUGZPXCULZXEAHWNSZX
+          RAHESZXSXRVGZNAFTSZCWFSZXTYAVHLMWNBCDEUAFTWFHWTPQJIXKWTUTZKVIVJVKVLAX
+          QXDPXCAXPXBQXCAWQXCSZVGZXOXAWRYFXOXAYFXOVGZWSWQXGRZXNXFRZWTAWSYHUIYEX
+          OAWQWLXGXMVMVNYGXCCUCRZHVOZYEYHYIUIAYKYEXOAWNCDFYJHIYJUTLXKXLVPVNAYEX
+          OVQXCYJWQXFHVRVJYGYIWTXFRZWTYGXNWTXFYFXOVSVTAYLWTUIZYEXOAYCYMMCXFWTYD
+          XJWAWBVNWCWDWGWEWHWIWJAYBYCWMWOXEVGVHLMWNBCDEUAFTWFWLWTPQJIXKYDKVIVJW
+          K $.
+      $}
+
+      $d S j u v $.  $d U j u v $.  $d ph u v $.
+      $( The set of polynomials is closed under addition, i.e. it is a subgroup
+         of the set of power series.  (Contributed by Mario Carneiro,
+         8-Jan-2015.)  (Proof shortened by AV, 16-Jul-2019.) $)
+      mplsubgfi $p |- ( ph -> U e. ( SubGrp ` S ) ) $=
+        ( vj vu vv cfv wcel cv wral wa eqid csubg cbs wss wex cplusg co cminusg
+        mplbasss a1i mplsubgfilemm cfn ad2antrr simplr mplsubgfilemcl ralrimiva
+        cgrp simpr adantr mplsubgfileminv jca w3a psrgrp issubg2m syl mpbir3and
+        wb ) AEDUAOPZEDUBOZUCZLQEPLUDZMQZNQZDUEOZUFEPZNERZVKDUGOZOEPZSZMERZVIAV
+        HBCDEFHGIVHTZUHUIABCDELFGHIJKUJAVRMEAVKEPZSZVOVQWBVNNEWBVLEPZSBVMCDEFVK
+        VLGHIAFUKPZWAWCJULACUPPZWAWCKULAWAWCUMWBWCUQVMTZUNUOWBBCDEFVPVKGHIAWDWA
+        JURAWEWAKURAWAUQVPTZUSUTUOADUPPVGVIVJVSVAVFACDFUKGJKVBMNLVHVMEDVPVTWFWG
+        VCVDVE $.
+    $}
+  $}
+
 
 $(
 ###############################################################################
