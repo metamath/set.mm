@@ -1769,7 +1769,6 @@
 "bafval" is used by "nvzcl".
 "bafval" is used by "phpar".
 "bafval" is used by "sspba".
-"basendx" is used by "1strstr".
 "basendx" is used by "basendxltdsndx".
 "basendx" is used by "basendxltedgfndx".
 "basendx" is used by "basendxltplendx".
@@ -14148,7 +14147,6 @@ New usage of "1psubclN" is discouraged (0 uses).
 New usage of "1sdom2ALT" is discouraged (0 uses).
 New usage of "1sdomOLD" is discouraged (0 uses).
 New usage of "1sr" is discouraged (8 uses).
-New usage of "1strstr" is discouraged (0 uses).
 New usage of "1t1e1ALT" is discouraged (3 uses).
 New usage of "235t711" is discouraged (0 uses).
 New usage of "2atm2atN" is discouraged (0 uses).
@@ -14671,7 +14669,7 @@ New usage of "baerlem5bmN" is discouraged (0 uses).
 New usage of "bafval" is discouraged (38 uses).
 New usage of "barbariALT" is discouraged (0 uses).
 New usage of "barocoALT" is discouraged (0 uses).
-New usage of "basendx" is discouraged (28 uses).
+New usage of "basendx" is discouraged (27 uses).
 New usage of "baseval" is discouraged (0 uses).
 New usage of "bcs" is discouraged (6 uses).
 New usage of "bcs2" is discouraged (2 uses).
