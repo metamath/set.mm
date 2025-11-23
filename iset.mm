@@ -72858,7 +72858,7 @@ $)
 
   ${
     $d f g h x y z j w A $.  $d g y z B $.  $d f g x F $.  $d g ph $.
-    $d y ps $.  $d f g x y z j w C $.  $d f g h x y w X $.
+    $d y ps $.  $d f g x y z j w C $.  $d f g h x y z w X $.
     $( Reverse closure for the choice set predicate.  (Contributed by Mario
        Carneiro, 31-Aug-2015.) $)
     acnrcl $p |- ( X e. AC_ A -> A e. _V ) $=
@@ -72875,6 +72875,17 @@ $)
       ABUAZAIJZCKZDKLUNEKLJZCAMZDNZEFKGKJFNGHKUBUCZAOPZMZQZHRBIJZUOCBMZDNZEURBO
       PZMZQZHRASBSULVAVGHULUMVBUTVFABIUDULUQVDEUSVEABUROUEULUPVCDUOCABUFUGUHUIU
       JHCGAEDFTHCGBEDFTUK $.
+
+    $( The property of being a choice set of length ` A ` .  (Contributed by
+       Mario Carneiro, 31-Aug-2015.) $)
+    isacnm $p |- ( ( X e. V /\ A e. W ) -> ( X e. AC_ A <->
+      A. f e. ( { z e. ~P X | E. j j e. z } ^m A )
+        E. g A. x e. A ( g ` x ) e. ( f ` x ) ) ) $=
+      ( vy wcel cv cfv wral wex cpw crab cmap co wa wacn rabeqdv oveq1d raleqdv
+      cvv wceq pweq anbi2d df-acnm elab2g wb elex biid baib syl sylan9bb ) IGKI
+      CUAZKCUEKZALZELMUSDLMKACNEOZDFLBLKFOZBIPZQZCRSZNZTZCHKZVEURUTDVABJLZPZQZC
+      RSZNZTVFJIUQGVHIUFZVLVEURVMUTDVKVDVMVJVCCRVMVABVIVBVHIUGUBUCUDUHJABCDEFUI
+      UJVGURVFVEUKCHULVFURVEVFUMUNUOUP $.
   $}
 
 
