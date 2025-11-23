@@ -73933,6 +73933,21 @@ $)
       AVBVECGHVEVCEQCBCDVCEMUNUOUEUPUQURUSUT $.
   $}
 
+  ${
+    $d f g j y z $.  $d f j n z $.  $d f g x y z $.  $d n x z $.
+    $( Given countable choice, every set has choice sets of length ` _om ` .
+       (Contributed by Mario Carneiro, 31-Aug-2015.) $)
+    acnccim $p |- ( CCHOICE -> AC_ _om = _V ) $=
+      ( vx vy vg vf vj vz vn wacc com wacn cvv cv wcel cfv wex cpw wa ralrimiva
+      wral wfn crab cmap co simpl elmapfn adantl elmapi ad2antlr ffvelcdmd wceq
+      wf simpr eleq2 exbidv elrab sylib simprd cc2 exsimpr syl vex isacnm mp2an
+      wb omex sylibr a1i 2thd eqrdv ) HAIJZKHALZVJMZVKKMZHBLZCLZNVNDLZNMBISZCOZ
+      DELZFLZMZEOZFVKPZUAZIUBUCZSZVLHVRDWEHVPWEMZQZVOITZVQQCOVRWHGECBVPHWGUDWGV
+      PITHVPWDIUEUFWHVSGLZVPNZMZEOZGIWHWJIMZQZWKWCMZWMWOWKWDMWPWMQWOIWDWJVPWGIW
+      DVPUKHWNVPWDIUGUHWHWNULUIWBWMFWKWCVTWKUJWAWLEVTWKVSUMUNUOUPUQRURWIVQCUSUT
+      RVMIKMVLWFVDAVAZVEBFIDCEKKVKVBVCVFVMHWQVGVHVI $.
+  $}
+
 
 $(
 ###############################################################################
