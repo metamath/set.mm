@@ -169532,6 +169532,108 @@ $)
         DHVRUGZOMUHVRVRHULUIABCDEFGVRJKWBNPQUJCVRVRHJUKUMAVRCVQTTARTUNDTSVRTSZU
         OADUPMUQWCTDRDRURUSUTAFVAVBVCVEVDSFVFGUCUDZCTNUCTTVGUNVFTSAGTSWDTSVHVIA
         GILUQVFGTTUCVJVKVLVMVPABCDEFGVRIUPKWBNPLMVNVO $.
+
+      psrlinv.o $e |- .0. = ( 0g ` R ) $.
+      psrlinv.p $e |- .+ = ( +g ` S ) $.
+      $( The negative function in the ring of power series.  (Contributed by
+         Mario Carneiro, 29-Dec-2014.) $)
+      psrlinv $p |- ( ph -> ( ( N o. X ) .+ X ) = ( D X. { .0. } ) ) $=
+        ( vx vy ccom cplusg cfv cof co cv cmpt csn cxp cvv cbs ccnv cn cima cfn
+        wcel cn0 cmap wfn fnmap nn0ex fnovex mp3an12i rabexd cgrp eqid psrelbas
+        elexd ffvelcdmda grpinvcl syl2an2r feqmptd wf1o wf grpinvf1o f1of fveq2
+        fmptco offval2 psrnegcl psradd fconstmpt wceq grplinv mpteq2dva eqtr4id
+        syl 3eqtr4d ) AIKUDZKEUEUFZUGUHUBCUBUIZKUFZIUFZWOWMUHZUJZWLKDUHCLUKULZA
+        UBCWPWOWMWLKUMEUNUFZWTAGUIUOUPUQURUSGUTHVAUHZCUMPVAUMUMULVBUTUMUSAHUMUS
+        XAUMUSVCVDAHJNVKUTHUMUMVAVEVFVGAEVHUSZWNCUSZWOWTUSZWPWTUSOACWTWNKABCEFG
+        HWTKMWTVIZPRSVJZVLZWTEIWOXEQVMVNXGAUBUCCWTWOUCUIZIUFWPKIXGAUBCWTKXFVOZA
+        UCWTWTIAWTWTIVPWTWTIVQAWTEIXEQOVRWTWTIVSWJVOXHWOIVTWAXIWBABWMDEFHWLKMRW
+        MVIZUAABCEFGHIJKMNOPQRSWCSWDAWSUBCLUJWRUBCLWEAUBCWQLAXBXCXDWQLWFOXGWTWM
+        EIWOLXEXJTQWGVNWHWIWK $.
+    $}
+
+    $( The ring of power series is a group.  (Contributed by Mario Carneiro,
+       29-Dec-2014.)  (Proof shortened by SN, 7-Feb-2025.) $)
+    psrgrp $p |- ( ph -> S e. Grp ) $=
+      ( vf cv wcel cn0 cmap co cgrp cvv eqid cbs cfv eleq2d vx vy ccnv cima cfn
+      crab cpws cxp wfn fnmap nn0ex elexd fnovex mp3an12i rabexd pwsgrp syl2anc
+      cn wceq pwsbas psrbasg eqcomd wa cplusg cof adantr biimpa adantrr adantrl
+      pwsplusgval biimpar psradd eqtr4d grppropd mpbid ) ABIJUCURUDUEKZILDMNZUF
+      ZUGNZOKZCOKABOKZVRPKZVTHAVPIVQVRPVRQZMPPUHUILPKADPKVQPKUJUKADEGULLDPPMUMU
+      NUOZBVRPVSVSQZUPUQAUAUBBRSZVRMNZVSCAWAWBWGVSRSZUSHWDWFBVROPVSWEWFQZUTUQZA
+      CRSZWGAWKVRBCIDWFEOFWIWCWKQZGHVAZVBAUAJZWGKZUBJZWGKZVCZVCZWNWPVSVDSZNWNWP
+      BVDSZVENWNWPCVDSZNWSWHXAWTBWNWPVROPVSWEWHQAWAWRHVFAWBWRWDVFAWOWNWHKZWQAWO
+      XCAWGWHWNWJTVGVHAWQWPWHKZWOAWQXDAWGWHWPWJTVGVIXAQZWTQVJWSWKXAXBBCDWNWPFWL
+      XEXBQAWOWNWKKZWQAXFWOAWKWGWNWMTVKVHAWQWPWKKZWOAXGWQAWKWGWPWMTVKVIVLVMVNVO
+      $.
+
+    ${
+      psr0.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+      psr0.o $e |- O = ( 0g ` R ) $.
+      psr0.z $e |- .0. = ( 0g ` S ) $.
+      $( The zero element of the ring of power series.  (Contributed by Mario
+         Carneiro, 29-Dec-2014.) $)
+      psr0 $p |- ( ph -> .0. = ( D X. { O } ) ) $=
+        ( csn cfv wceq eqid wcel cxp cplusg co cbs psr0cl psr0lid cgrp wb grpid
+        psrgrp syl2anc mpbid ) ABGPUAZUMDUBQZUCUMRZIUMRZADUDQZBUNCDEFHUMGJKLMNU
+        QSZUNSZAUQBCDEFHGJKLMNURUEZUFADUGTUMUQTUOUPUHACDFHJKLUJUTUQUNDUMIURUSOU
+        IUKUL $.
+    $}
+
+    ${
+      psrneg.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+      psrneg.i $e |- N = ( invg ` R ) $.
+      psrneg.b $e |- B = ( Base ` S ) $.
+      psrneg.m $e |- M = ( invg ` S ) $.
+      psrneg.x $e |- ( ph -> X e. B ) $.
+      $( The negative function of the ring of power series.  (Contributed by
+         Mario Carneiro, 29-Dec-2014.) $)
+      psrneg $p |- ( ph -> ( M ` X ) = ( N o. X ) ) $=
+        ( cfv ccom wceq cplusg co c0g csn eqid psrlinv psr0 eqtr4d cgrp wcel wb
+        cxp psrgrp psrnegcl grpinvid2 syl3anc mpbird ) AKHTIKUAZUBZUTKEUCTZUDZE
+        UETZUBZAVCCDUETZUFUNVDABCVBDEFGIJKVFLMNOPQSVFUGZVBUGZUHACDEFGVFJVDLMNOV
+        GVDUGZUIUJAEUKULKBULUTBULVAVEUMADEGJLMNUOSABCDEFGIJKLMNOPQSUPBVBEHKUTVD
+        QVHVIRUQURUS $.
+    $}
+  $}
+
+  ${
+    $d k x .+ $.  $d f x y z .0. $.  $d f g h j k n r s t w x y z I $.
+    $d k K $.  $d k u v w x A $.  $d j k n x z B $.
+    $d f g h j k n r s t u v w x y z R $.  $d g h j k n u v w x y z D $.
+    $d y z U $.  $d f g h j k n u v w x y z X $.
+    $d j k n r s t u v w x y z ph $.  $d g h j k r w x y V $.  $d k x y .x. $.
+    $d f g h j k n x Z $.  $d r s t x y z S $.  $d x y .1. $.  $d j k x .X. $.
+    $d f g h j k n u v w x Y $.
+    psrring.s $e |- S = ( I mPwSer R ) $.
+    psrringfi.i $e |- ( ph -> I e. Fin ) $.
+    psrring.r $e |- ( ph -> R e. Ring ) $.
+
+    ${
+      psr1cl.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+      psr1cl.z $e |- .0. = ( 0g ` R ) $.
+      psr1cl.o $e |- .1. = ( 1r ` R ) $.
+      psr1cl.u $e |- U =
+        ( x e. D |-> if ( x = ( I X. { 0 } ) , .1. , .0. ) ) $.
+      psr1cl.b $e |- B = ( Base ` S ) $.
+      $( The identity element of the ring of power series.  (Contributed by
+         Mario Carneiro, 29-Dec-2014.) $)
+      psr1clfi $p |- ( ph -> U e. B ) $=
+        ( wcel vz cbs cfv cmap co wf cc0 csn cxp wceq cif crg eqid ringidcl syl
+        cv wa adantr ring0cl wdc cmpt wral cfn cz 0z ccnv cn cima cnveq imaeq1d
+        cn0 eleq1d elrab2 simplbi adantl cvv nn0ex a1i elmapd mpbid nn0zd zdceq
+        ffvelcdmda sylancr ralrimiva dcfi syl2an2r wb rgenw mpteqb ax-mp sylibr
+        0nn0 dcbii eqcom sylib feqmptd fconstmpt eqeq12d dcbid mpbird fmptd wfn
+        ifcldcd basfn elexd funfvex funfni fnmap fnovex mp3an12i rabexd psrbasg
+        eleqtrrd ) AGEUBUCZDUDUEZCAGXPTDXOGUFABDBUPZJUGUHUIZUJZHKUKXOGAXQDTZUQZ
+        XSHKXOAHXOTZXTAEULTZYBNXOEHXOUMZQUNUOURAKXOTZXTAYCYENXOEKYDPUSUOURYAXSU
+        TUAJUAUPZXQUCZVAZUAJUGVAZUJZUTZYAYIYHUJZUTZYKYAUGYGUJZUAJVBZUTZYMAJVCTZ
+        XTYNUTZUAJVBYPMYAYRUAJYAYFJTUQZUGVDTYGVDTYRVEYSYGYAJVKYFXQYAXQVKJUDUEZT
+        ZJVKXQUFXTUUAAXTUUAXQVFZVGVHZVCTZIUPZVFZVGVHZVCTZUUDIXQYTDUUEXQUJZUUGUU
+        CVCUUIUUFUUBVGUUEXQVIVJVLOVMVNVOYAVKJXQVPVCVKVPTZYAVQVRAYQXTMURVSVTZWCW
+        AUGYGWBWDWEYNUAJWFWGYLYOUGVKTZUAJVBYLYOWHUULUAJWMWIUAJUGYGVKWJWKWNWLYLY
+        JYIYHWOWNWPYAXSYJYAXQYHXRYIYAUAJVKXQUUKWQXRYIUJYAUAJUGWRVRWSWTXAXDRXBAX
+        ODGVPVPAUBVPXCEVPTXOVPTZXEAEULNXFUUMVPEUBEUBXGXHWDAUUHIYTDVPOUDVPVPUIXC
+        UUJAJVPTYTVPTXIVQAJVCMXFVKJVPVPUDXJXKXLVSXAACDEFIJXOVCULLYDOSMNXMXN $.
     $}
   $}
 
