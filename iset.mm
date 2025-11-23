@@ -72858,7 +72858,7 @@ $)
 
   ${
     $d f g h x y z j w A $.  $d g y z B $.  $d f g x F $.  $d g ph $.
-    $d y ps $.  $d f g x y C $.  $d f g h x y w X $.
+    $d y ps $.  $d f g x y z j w C $.  $d f g h x y w X $.
     $( Reverse closure for the choice set predicate.  (Contributed by Mario
        Carneiro, 31-Aug-2015.) $)
     acnrcl $p |- ( X e. AC_ A -> A e. _V ) $=
@@ -72866,6 +72866,15 @@ $)
       cab wacn abn0m simpl exlimiv sylbi syl df-acnm eleq2s ) AJKZBUKCLZDLMULEL
       MKCANDOEFLGLKFOGHLPQARSNZTZHUBZAUCBUOKILUOKIOZUKIBUOUAUPUNHOUKUNHIUDUNUKH
       UKUMUEUFUGUHHCGAEDFUIUJ $.
+
+    $( Equality theorem for the choice set function.  (Contributed by Mario
+       Carneiro, 31-Aug-2015.) $)
+    acneq $p |- ( A = C -> AC_ A = AC_ C ) $=
+      ( vy vg vf vj vz vx cvv wcel cv cfv wral wex cmap co wa cab wacn df-acnm
+      wceq cpw crab eleq1 oveq2 raleq exbidv raleqbidv anbi12d abbidv 3eqtr4g )
+      ABUAZAIJZCKZDKLUNEKLJZCAMZDNZEFKGKJFNGHKUBUCZAOPZMZQZHRBIJZUOCBMZDNZEURBO
+      PZMZQZHRASBSULVAVGHULUMVBUTVFABIUDULUQVDEUSVEABUROUEULUPVCDUOCABUFUGUHUIU
+      JHCGAEDFTHCGBEDFTUK $.
   $}
 
 
