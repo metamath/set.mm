@@ -72856,6 +72856,18 @@ $)
       wa wi ) ECBFCGBHZAHZIJPSRDHKDGQBLALABCDMABCDNO $.
   $}
 
+  ${
+    $d f g h x y z j w A $.  $d g y z B $.  $d f g x F $.  $d g ph $.
+    $d y ps $.  $d f g x y C $.  $d f g h x y w X $.
+    $( Reverse closure for the choice set predicate.  (Contributed by Mario
+       Carneiro, 31-Aug-2015.) $)
+    acnrcl $p |- ( X e. AC_ A -> A e. _V ) $=
+      ( vy vg vf vj vz vx vw cvv wcel cv cfv wral wex cpw crab cmap co wa elex2
+      cab wacn abn0m simpl exlimiv sylbi syl df-acnm eleq2s ) AJKZBUKCLZDLMULEL
+      MKCANDOEFLGLKFOGHLPQARSNZTZHUBZAUCBUOKILUOKIOZUKIBUOUAUPUNHOUKUNHIUDUNUKH
+      UKUMUEUFUGUHHCGAEDFUIUJ $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
