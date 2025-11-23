@@ -72440,9 +72440,13 @@ $)
 
   $( Introduce new constant symbols. $)
   $c card $. $( Cardinal size function $)
+  $c AC_ $.
 
   $( Extend class definition to include the cardinal size function. $)
   ccrd $a class card $.
+
+  $( The axiom of choice for limited-length sequences. $)
+  wacn $a class AC_ A $.
 
   ${
     $d x y $.
@@ -72452,6 +72456,20 @@ $)
        from Enderton.  Other textbooks often use a double bar over the set to
        express this function.  (Contributed by NM, 21-Oct-2003.) $)
     df-card $a |- card = ( x e. _V |-> |^| { y e. On | y ~~ x } ) $.
+  $}
+
+  ${
+    $d A x f z j g y $.
+    $( Define a local and length-limited version of the axiom of choice.  The
+       definition of the predicate ` X e. AC_ A ` is that for all families of
+       inhabited subsets of ` X ` indexed on ` A ` (i.e. functions
+       ` A --> { z e. ~P X | E. j j e. z } ` ), there is a function which
+       selects an element from each set in the family.  (Contributed by Mario
+       Carneiro, 31-Aug-2015.)  Change nonempty to inhabited.  (Revised by Jim
+       Kingdon, 22-Nov-2025.) $)
+    df-acnm $a |- AC_ A = { x | ( A e. _V /\
+      A. f e. ( { z e. ~P x | E. j j e. z } ^m A )
+      E. g A. y e. A ( g ` y ) e. ( f ` y ) ) } $.
   $}
 
   ${
@@ -190369,6 +190387,9 @@ htmldef "card" as
     "<IMG SRC='_card.gif' WIDTH=30 HEIGHT=19 ALT=' card' TITLE='card'>";
   althtmldef "card" as 'card';
   latexdef "card" as "\mathrm{card}";
+htmldef "AC_" as '<U>AC</U> ';
+  althtmldef "AC_" as '<U>AC</U> ';
+  latexdef "AC_" as "\underline{\mathrm{AC}}";
 htmldef "CHOICE" as "<SMALL>CHOICE</SMALL>";
   althtmldef "CHOICE" as "<SMALL>CHOICE</SMALL>";
   latexdef "CHOICE" as "\mathrm{CHOICE}";
