@@ -169495,6 +169495,22 @@ $)
         XCNZXDVJXMWPVJVKVLVMWPVNVOWOCUTWLCVPZIWQWNSWOEJCXBVQWOWLEXNXIWOEJCXBVSV
         TWLPCWAVDTWBWC $.
     $}
+
+    ${
+      $d F f $.  $d I f x $.
+      $( A finite index set gives a simpler expression for finite bags.
+         (Contributed by Jim Kingdon, 23-Nov-2025.) $)
+      psrbagfi $p |- ( I e. Fin -> D = ( NN0 ^m I ) ) $=
+        ( vx cfn wcel cv ccnv cn cima cn0 cmap wral wceq wdc ad2antlr ralrimiva
+        wa syl co crab cdm wss elmapi fdmd adantl simpl eqeltrd cnvimass a1i cz
+        cfv wf simpr eleqtrd ffvelcdmd nn0zd elnndc wfn elpreima mpbirand dcbid
+        wb elmapfn mpbird ssfidc syl3anc rabid2 sylibr eqtr4id ) CFGZABHZIJKZFG
+        ZBLCMUAZUBZVPDVLVOBVPNVPVQOVLVOBVPVLVMVPGZSZVMUCZFGVNVTUDZEHZVNGZPZEVTN
+        VOVSVTCFVRVTCOZVLVRCLVMVMLCUEZUFZUGVLVRUHUIWAVSVMJUJUKVSWDEVTVSWBVTGZSZ
+        WDWBVMUMZJGZPZWIWJULGWLWIWJWICLWBVMVRCLVMUNVLWHWFQWIWBVTCVSWHUOVRWEVLWH
+        WGQUPZUQURWJUSTWIWCWKWIWCWBCGZWKWMWIVMCUTZWCWNWKSVDVRWOVLWHVMLCVEQCWBJV
+        MVATVBVCVFREVTVNVGVHRVOBVPVIVJVK $.
+    $}
   $}
 
   ${
