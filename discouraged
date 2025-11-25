@@ -5982,15 +5982,6 @@
 "e333" is used by "e33".
 "e3bi" is used by "en3lplem2VD".
 "e3bir" is used by "en3lplem2VD".
-"ecelqsOLD" is used by "cldsubg".
-"ecelqsOLD" is used by "ecelqsi".
-"ecelqsOLD" is used by "eroprf".
-"ecelqsOLD" is used by "erov".
-"ecelqsOLD" is used by "qliftlem".
-"ecelqsOLD" is used by "sylow2a".
-"ecelqsOLD" is used by "sylow2blem1".
-"ecelqsOLD" is used by "sylow2blem2".
-"ecelqsOLD" is used by "tgjustr".
 "edgfndx" is used by "basendxltedgfndx".
 "edgfndx" is used by "edgfndxnn".
 "ee03" is used by "ee03an".
@@ -13635,8 +13626,6 @@
 "unifndx" is used by "slotsdifunifndx".
 "unifndx" is used by "unifndxnn".
 "unifndx" is used by "unifndxntsetndx".
-"uniqsOLD" is used by "ecqs".
-"uniqsOLD" is used by "uniqs2".
 "unop" is used by "cnvunop".
 "unop" is used by "counop".
 "unop" is used by "unopadj".
@@ -16227,7 +16216,6 @@ New usage of "e333" is discouraged (2 uses).
 New usage of "e33an" is discouraged (0 uses).
 New usage of "e3bi" is discouraged (1 uses).
 New usage of "e3bir" is discouraged (1 uses).
-New usage of "ecelqsOLD" is discouraged (9 uses).
 New usage of "edgfndx" is discouraged (2 uses).
 New usage of "ee001" is discouraged (0 uses).
 New usage of "ee002" is discouraged (0 uses).
@@ -19157,7 +19145,6 @@ New usage of "unierri" is discouraged (0 uses).
 New usage of "unifndx" is discouraged (6 uses).
 New usage of "unipwr" is discouraged (0 uses).
 New usage of "unipwrVD" is discouraged (0 uses).
-New usage of "uniqsOLD" is discouraged (2 uses).
 New usage of "unisnALT" is discouraged (0 uses).
 New usage of "unissbOLD" is discouraged (0 uses).
 New usage of "unop" is discouraged (5 uses).
@@ -20030,7 +20017,6 @@ Proof modification of "e333" is discouraged (66 steps).
 Proof modification of "e33an" is discouraged (14 steps).
 Proof modification of "e3bi" is discouraged (11 steps).
 Proof modification of "e3bir" is discouraged (11 steps).
-Proof modification of "ecelqsOLD" is discouraged (64 steps).
 Proof modification of "ee001" is discouraged (16 steps).
 Proof modification of "ee002" is discouraged (27 steps).
 Proof modification of "ee010" is discouraged (16 steps).
@@ -21052,7 +21038,6 @@ Proof modification of "unexbOLD" is discouraged (92 steps).
 Proof modification of "unexgOLD" is discouraged (32 steps).
 Proof modification of "unipwr" is discouraged (32 steps).
 Proof modification of "unipwrVD" is discouraged (41 steps).
-Proof modification of "uniqsOLD" is discouraged (109 steps).
 Proof modification of "unisnALT" is discouraged (146 steps).
 Proof modification of "unissbOLD" is discouraged (138 steps).
 Proof modification of "upgr0eopALT" is discouraged (55 steps).
