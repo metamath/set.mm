@@ -72440,9 +72440,13 @@ $)
 
   $( Introduce new constant symbols. $)
   $c card $. $( Cardinal size function $)
+  $c AC_ $.
 
   $( Extend class definition to include the cardinal size function. $)
   ccrd $a class card $.
+
+  $( The axiom of choice for limited-length sequences. $)
+  wacn $a class AC_ A $.
 
   ${
     $d x y $.
@@ -72452,6 +72456,20 @@ $)
        from Enderton.  Other textbooks often use a double bar over the set to
        express this function.  (Contributed by NM, 21-Oct-2003.) $)
     df-card $a |- card = ( x e. _V |-> |^| { y e. On | y ~~ x } ) $.
+  $}
+
+  ${
+    $d A x f z j g y $.
+    $( Define a local and length-limited version of the axiom of choice.  The
+       definition of the predicate ` X e. AC_ A ` is that for all families of
+       inhabited subsets of ` X ` indexed on ` A ` (i.e. functions
+       ` A --> { z e. ~P X | E. j j e. z } ` ), there is a function which
+       selects an element from each set in the family.  (Contributed by Mario
+       Carneiro, 31-Aug-2015.)  Change nonempty to inhabited.  (Revised by Jim
+       Kingdon, 22-Nov-2025.) $)
+    df-acnm $a |- AC_ A = { x | ( A e. _V /\
+      A. f e. ( { z e. ~P x | E. j j e. z } ^m A )
+      E. g A. y e. A ( g ` y ) e. ( f ` y ) ) } $.
   $}
 
   ${
@@ -72836,6 +72854,51 @@ $)
         -> E. f f : x -onto-> y ) ) $=
       ( wem wel wex cv cdom wbr wfo wal exmidfodomrlemim exmidfodomrlemr impbii
       wa wi ) ECBFCGBHZAHZIJPSRDHKDGQBLALABCDMABCDNO $.
+  $}
+
+  ${
+    $d f g h x y z j w A $.  $d g y z B $.  $d f g x F $.  $d g ph $.
+    $d y ps $.  $d f g x y z j w C $.  $d f g h x y z w X $.
+    $( Reverse closure for the choice set predicate.  (Contributed by Mario
+       Carneiro, 31-Aug-2015.) $)
+    acnrcl $p |- ( X e. AC_ A -> A e. _V ) $=
+      ( vy vg vf vj vz vx vw cvv wcel cv cfv wral wex cpw crab cmap co wa elex2
+      cab wacn abn0m simpl exlimiv sylbi syl df-acnm eleq2s ) AJKZBUKCLZDLMULEL
+      MKCANDOEFLGLKFOGHLPQARSNZTZHUBZAUCBUOKILUOKIOZUKIBUOUAUPUNHOUKUNHIUDUNUKH
+      UKUMUEUFUGUHHCGAEDFUIUJ $.
+
+    $( Equality theorem for the choice set function.  (Contributed by Mario
+       Carneiro, 31-Aug-2015.) $)
+    acneq $p |- ( A = C -> AC_ A = AC_ C ) $=
+      ( vy vg vf vj vz vx cvv wcel cv cfv wral wex cmap co wa cab wacn df-acnm
+      wceq cpw crab eleq1 oveq2 raleq exbidv raleqbidv anbi12d abbidv 3eqtr4g )
+      ABUAZAIJZCKZDKLUNEKLJZCAMZDNZEFKGKJFNGHKUBUCZAOPZMZQZHRBIJZUOCBMZDNZEURBO
+      PZMZQZHRASBSULVAVGHULUMVBUTVFABIUDULUQVDEUSVEABUROUEULUPVCDUOCABUFUGUHUIU
+      JHCGAEDFTHCGBEDFTUK $.
+
+    $( The property of being a choice set of length ` A ` .  (Contributed by
+       Mario Carneiro, 31-Aug-2015.) $)
+    isacnm $p |- ( ( X e. V /\ A e. W ) -> ( X e. AC_ A <->
+      A. f e. ( { z e. ~P X | E. j j e. z } ^m A )
+        E. g A. x e. A ( g ` x ) e. ( f ` x ) ) ) $=
+      ( vy wcel cv cfv wral wex cpw crab cmap co wa wacn rabeqdv oveq1d raleqdv
+      cvv wceq pweq anbi2d df-acnm elab2g wb elex biid baib syl sylan9bb ) IGKI
+      CUAZKCUEKZALZELMUSDLMKACNEOZDFLBLKFOZBIPZQZCRSZNZTZCHKZVEURUTDVABJLZPZQZC
+      RSZNZTVFJIUQGVHIUFZVLVEURVMUTDVKVDVMVJVCCRVMVABVIVBVHIUGUBUCUDUHJABCDEFUI
+      UJVGURVFVEUKCHULVFURVEVFUMUNUOUP $.
+
+    $( Every set has finite choice sequences.  (Contributed by Mario Carneiro,
+       31-Aug-2015.) $)
+    finacn $p |- ( A e. Fin -> AC_ A = _V ) $=
+      ( vx vy vg vf vj vw vz cfn wcel cvv cv cfv wral wex wa wf sylib ralrimiva
+      syl wacn crab cmap co wrex elmapi adantl ffvelcdm wceq eleq2 exbidv elrab
+      cpw simprd eleq1w cbvexv sylibr eleq1 ac6sfi syldan exsimpr wb vex isacnm
+      rexv mpan mpbird a1i 2thd eqrdv ) AIJZBAUAZKVKBLZVLJZVMKJZVKVNCLZDLZMZVPE
+      LZMZJZCANZDOZEFLZGLZJZFOZGVMUMZUBZAUCUDZNZVKWCEWJVKVSWJJZPZAKVQQZWBPDOZWC
+      VKWLHLZVTJZHKUEZCANZWOWMAWIVSQZWSWLWTVKVSWIAUFUGWTWRCAWTVPAJPZWQHOZWRXAWD
+      VTJZFOZXBXAVTWHJZXDXAVTWIJXEXDPAWIVPVSUHWGXDGVTWHWEVTUIWFXCFWEVTWDUJUKULR
+      UNXCWQFHFHVTUOUPRWQHVEUQSTWQWACHAKDWPVRVTURUSUTWNWBDVATSVOVKVNWKVBBVCZCGA
+      EDFKIVMVDVFVGVOVKXFVHVIVJ $.
   $}
 
 
@@ -73868,6 +73931,21 @@ $)
       PVAUBZBDEUCZQZGHRZSZFTVBCGHRZSZFTAOFGVDHJAVDIQZGHRVDUDQZGHRKVJVKGHVDIUJUE
       UFABDEUKZGHROPVDQOTZGHRNVMVLGHBDOEUGUHUILULAVGVIFAVGVIAVGSVBVHAVBVFUMVFVH
       AVBVECGHVEVCEQCBCDVCEMUNUOUEUPUQURUSUT $.
+  $}
+
+  ${
+    $d f g j y z $.  $d f j n z $.  $d f g x y z $.  $d n x z $.
+    $( Given countable choice, every set has choice sets of length ` _om ` .
+       (Contributed by Mario Carneiro, 31-Aug-2015.) $)
+    acnccim $p |- ( CCHOICE -> AC_ _om = _V ) $=
+      ( vx vy vg vf vj vz vn wacc com wacn cvv cv wcel cfv wex cpw wa ralrimiva
+      wral wfn crab cmap co simpl elmapfn adantl elmapi ad2antlr ffvelcdmd wceq
+      wf simpr eleq2 exbidv elrab sylib simprd cc2 exsimpr syl vex isacnm mp2an
+      wb omex sylibr a1i 2thd eqrdv ) HAIJZKHALZVJMZVKKMZHBLZCLZNVNDLZNMBISZCOZ
+      DELZFLZMZEOZFVKPZUAZIUBUCZSZVLHVRDWEHVPWEMZQZVOITZVQQCOVRWHGECBVPHWGUDWGV
+      PITHVPWDIUEUFWHVSGLZVPNZMZEOZGIWHWJIMZQZWKWCMZWMWOWKWDMWPWMQWOIWDWJVPWGIW
+      DVPUKHWNVPWDIUGUHWHWNULUIWBWMFWKWCVTWKUJWAWLEVTWKVSUMUNUOUPUQRURWIVQCUSUT
+      RVMIKMVLWFVDAVAZVEBFIDCEKKVKVBVCVFVMHWQVGVHVI $.
   $}
 
 
@@ -190471,6 +190549,9 @@ htmldef "card" as
     "<IMG SRC='_card.gif' WIDTH=30 HEIGHT=19 ALT=' card' TITLE='card'>";
   althtmldef "card" as 'card';
   latexdef "card" as "\mathrm{card}";
+htmldef "AC_" as '<U>AC</U> ';
+  althtmldef "AC_" as '<U>AC</U> ';
+  latexdef "AC_" as "\underline{\mathrm{AC}}";
 htmldef "CHOICE" as "<SMALL>CHOICE</SMALL>";
   althtmldef "CHOICE" as "<SMALL>CHOICE</SMALL>";
   latexdef "CHOICE" as "\mathrm{CHOICE}";
