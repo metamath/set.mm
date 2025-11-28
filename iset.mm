@@ -169561,6 +169561,21 @@ $)
   $}
 
   ${
+    $d I f $.
+    psrelbasfi.s $e |- S = ( I mPwSer R ) $.
+    psrelbasfi.k $e |- K = ( Base ` R ) $.
+    psrelbasfi.f $e |- ( ph -> I e. Fin ) $.
+    psrelbasfi.b $e |- B = ( Base ` S ) $.
+    psrelbasfi.x $e |- ( ph -> X e. B ) $.
+    $( Simpler form of ~ psrelbas when the index set is finite.  (Contributed
+       by Jim Kingdon, 27-Nov-2025.) $)
+    psrelbasfi $p |- ( ph -> X : ( NN0 ^m I ) --> K ) $=
+      ( vf cv ccnv cn cima cfn wcel wf cmap co crab eqid psrelbas wceq psrbagfi
+      cn0 syl feq2d mpbid ) AMNOPQRSMUHEUAUBZUCZFGTULFGTABUMCDMEFGHIUMUDZKLUEAU
+      MULFGAERSUMULUFJUMMEUNUGUIUJUK $.
+  $}
+
+  ${
     $d f I $.
     psrelbasfun.s $e |- S = ( I mPwSer R ) $.
     psrelbasfun.b $e |- B = ( Base ` S ) $.
