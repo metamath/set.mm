@@ -71593,8 +71593,11 @@ $)
        Escardo.  One way to understand this theorem is that you do not need to
        look at an unbounded number of elements of the sequence ` X ` to decide
        whether it is equal to ` N ` (in fact, you only need to look at two
-       elements and ` N ` tells you where to look).  (Contributed by BJ and Jim
-       Kingdon, 12-Sep-2024.) $)
+       elements and ` N ` tells you where to look).
+
+       By contrast, the point at infinity being isolated is equivalent to the
+       Weak Limited Principle of Omniscience (WLPO) ( ~ nninfinfwlpo ).
+       (Contributed by BJ and Jim Kingdon, 12-Sep-2024.) $)
     nninfisol $p |- ( ( N e. _om /\ X e. NN+oo )
         -> DECID ( i e. _om |-> if ( i e. N , 1o , (/) ) ) = X ) $=
       ( com wcel wa cfv c0 wceq c1o cif wdc wn simpllr simpr adantr wo mpjaodan
@@ -72401,6 +72404,19 @@ $)
         MZNZOZEPFUDLNEKQZOAGCPZNZOZUMCRUKUOUKNUPULUOUKGUASABPZUONZOZCRQUQCRQBRG
         URGNZUTUQCRVAUSUPURGUOUESUBJABDFGHIUFTUKRUCADUGUHTAULUNABDEFGHIUISUJ $.
     $}
+
+    ${
+      $d F i n x $.  $d G n x $.  $d i n ph x $.
+      nninfinfwlpoimlem.eq $e |- ( ph
+        -> A. x e. NN+oo DECID x = ( i e. _om |-> 1o ) ) $.
+      $( Lemma for ~ nninfinfwlpo .  (Contributed by Jim Kingdon,
+         8-Dec-2024.) $)
+      nninfinfwlpolem $p |- ( ph ->
+          DECID A. n e. _om ( F ` n ) = 1o ) $=
+        ( com c1o cmpt wceq wdc cv cfv wral xnninf eqeq1 dcbid nninfwlpoimlemg
+        rspcdva nninfwlpoimlemginf mpbid ) AFCJKLZMZNZDOEPKMDJQZNABOZUEMZNUGBRF
+        UIFMUJUFUIFUESTIABCEFGHUAUBAUFUHABCDEFGHUCTUD $.
+    $}
   $}
 
   ${
@@ -72418,6 +72434,28 @@ $)
       WKEWGUHWOWNWEWKIEWGWDWJTVQULUMWOWKEWGWMWFWLUNUOUPUQURWCVPEFJZKZFLMELMVPWB
       USVOWQEBJZKABEFLLAEJVNWRAEBUTVABFJWRWPBFEVBVAVEVFVCVGRVHUEWAVTVIVJCRDVHVK
       VLVM $.
+  $}
+
+  ${
+    $d f i k n x z $.  $d f j k n q z $.
+    $( The point at infinity in ` NN+oo ` being isolated is equivalent to the
+       Weak Limited Principle of Omniscience (WLPO).  By isolated, we mean that
+       the equality of that point with every other element of ` NN+oo ` is
+       decidable.  From an online post by Martin Escardo.  By contrast,
+       elements of ` NN+oo ` corresponding to natural numbers are isolated
+       ( ~ nninfisol ).  (Contributed by Jim Kingdon, 25-Nov-2025.) $)
+    nninfinfwlpo $p |- ( A. x e. NN+oo DECID x = ( i e. _om |-> 1o )
+        <-> _om e. WOmni ) $=
+      ( vn vf vz vk vj vq cv com c1o cmpt wceq wdc xnninf wral wcel cfv c2o c0
+      cwomni cmap co wa csuc cif wf elmapi adantl fveqeq2 cbvrexv suceq rexeqdv
+      wrex bitrid ifbid cbvmptv simpl eqidd a1i eqeq12d cbvralv nninfinfwlpolem
+      id dcbid sylib ralrimiva wb omex iswomnimap ax-mp sylibr simpr nninfdcinf
+      cvv impbii ) AIZBJKLZMZNZAOPZJUAQZWACIDIZRKMCJPNZDSJUBUCZPZWBWAWDDWEWAWCW
+      EQZUDZEFCWCGJHIZWCRTMZHGIZUEZUNZTKUFZLWGJSWCUGWAWCSJUHUIGFJWNEIZWCRTMZEFI
+      ZUEZUNZTKUFWKWQMZWMWSTKWMWPEWLUNWTWSWJWPHEWLWIWOTWCUJUKWTWPEWLWRWKWQULUMU
+      OUPUQWHWAWOFJKLZMZNZEOPWAWGURVTXCAEOVQWOMZVSXBXDVQWOVRXAXDVDVRXAMXDBFJKKB
+      IWQMKUSUQUTVAVEVBVFVCVGJVOQWBWFVHVICJDVOVJVKVLWBVTAOWBVQOQZUDBVQWBXEURWBX
+      EVMVNVGVP $.
   $}
 
   ${
