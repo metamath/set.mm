@@ -71593,8 +71593,11 @@ $)
        Escardo.  One way to understand this theorem is that you do not need to
        look at an unbounded number of elements of the sequence ` X ` to decide
        whether it is equal to ` N ` (in fact, you only need to look at two
-       elements and ` N ` tells you where to look).  (Contributed by BJ and Jim
-       Kingdon, 12-Sep-2024.) $)
+       elements and ` N ` tells you where to look).
+
+       By contrast, the point at infinity being isolated is equivalent to the
+       Weak Limited Principle of Omniscience (WLPO) ( ~ nninfinfwlpo ).
+       (Contributed by BJ and Jim Kingdon, 12-Sep-2024.) $)
     nninfisol $p |- ( ( N e. _om /\ X e. NN+oo )
         -> DECID ( i e. _om |-> if ( i e. N , 1o , (/) ) ) = X ) $=
       ( com wcel wa cfv c0 wceq c1o cif wdc wn simpllr simpr adantr wo mpjaodan
@@ -72401,6 +72404,19 @@ $)
         MZNZOZEPFUDLNEKQZOAGCPZNZOZUMCRUKUOUKNUPULUOUKGUASABPZUONZOZCRQUQCRQBRG
         URGNZUTUQCRVAUSUPURGUOUESUBJABDFGHIUFTUKRUCADUGUHTAULUNABDEFGHIUISUJ $.
     $}
+
+    ${
+      $d F i n x $.  $d G n x $.  $d i n ph x $.
+      nninfinfwlpoimlem.eq $e |- ( ph
+        -> A. x e. NN+oo DECID x = ( i e. _om |-> 1o ) ) $.
+      $( Lemma for ~ nninfinfwlpo .  (Contributed by Jim Kingdon,
+         8-Dec-2024.) $)
+      nninfinfwlpolem $p |- ( ph ->
+          DECID A. n e. _om ( F ` n ) = 1o ) $=
+        ( com c1o cmpt wceq wdc cv cfv wral xnninf eqeq1 dcbid nninfwlpoimlemg
+        rspcdva nninfwlpoimlemginf mpbid ) AFCJKLZMZNZDOEPKMDJQZNABOZUEMZNUGBRF
+        UIFMUJUFUIFUESTIABCEFGHUAUBAUFUHABCDEFGHUCTUD $.
+    $}
   $}
 
   ${
@@ -72418,6 +72434,28 @@ $)
       WKEWGUHWOWNWEWKIEWGWDWJTVQULUMWOWKEWGWMWFWLUNUOUPUQURWCVPEFJZKZFLMELMVPWB
       USVOWQEBJZKABEFLLAEJVNWRAEBUTVABFJWRWPBFEVBVAVEVFVCVGRVHUEWAVTVIVJCRDVHVK
       VLVM $.
+  $}
+
+  ${
+    $d f i k n x z $.  $d f j k n q z $.
+    $( The point at infinity in ` NN+oo ` being isolated is equivalent to the
+       Weak Limited Principle of Omniscience (WLPO).  By isolated, we mean that
+       the equality of that point with every other element of ` NN+oo ` is
+       decidable.  From an online post by Martin Escardo.  By contrast,
+       elements of ` NN+oo ` corresponding to natural numbers are isolated
+       ( ~ nninfisol ).  (Contributed by Jim Kingdon, 25-Nov-2025.) $)
+    nninfinfwlpo $p |- ( A. x e. NN+oo DECID x = ( i e. _om |-> 1o )
+        <-> _om e. WOmni ) $=
+      ( vn vf vz vk vj vq cv com c1o cmpt wceq wdc xnninf wral wcel cfv c2o c0
+      cwomni cmap co wa csuc cif wf elmapi adantl fveqeq2 cbvrexv suceq rexeqdv
+      wrex bitrid ifbid cbvmptv simpl eqidd a1i eqeq12d cbvralv nninfinfwlpolem
+      id dcbid sylib ralrimiva wb omex iswomnimap ax-mp sylibr simpr nninfdcinf
+      cvv impbii ) AIZBJKLZMZNZAOPZJUAQZWACIDIZRKMCJPNZDSJUBUCZPZWBWAWDDWEWAWCW
+      EQZUDZEFCWCGJHIZWCRTMZHGIZUEZUNZTKUFZLWGJSWCUGWAWCSJUHUIGFJWNEIZWCRTMZEFI
+      ZUEZUNZTKUFWKWQMZWMWSTKWMWPEWLUNWTWSWJWPHEWLWIWOTWCUJUKWTWPEWLWRWKWQULUMU
+      OUPUQWHWAWOFJKLZMZNZEOPWAWGURVTXCAEOVQWOMZVSXBXDVQWOVRXAXDVDVRXAMXDBFJKKB
+      IWQMKUSUQUTVAVEVBVFVCVGJVOQWBWFVHVICJDVOVJVKVLWBVTAOWBVQOQZUDBVQWBXEURWBX
+      EVMVNVGVP $.
   $}
 
   ${
@@ -72440,9 +72478,13 @@ $)
 
   $( Introduce new constant symbols. $)
   $c card $. $( Cardinal size function $)
+  $c AC_ $.
 
   $( Extend class definition to include the cardinal size function. $)
   ccrd $a class card $.
+
+  $( The axiom of choice for limited-length sequences. $)
+  wacn $a class AC_ A $.
 
   ${
     $d x y $.
@@ -72452,6 +72494,20 @@ $)
        from Enderton.  Other textbooks often use a double bar over the set to
        express this function.  (Contributed by NM, 21-Oct-2003.) $)
     df-card $a |- card = ( x e. _V |-> |^| { y e. On | y ~~ x } ) $.
+  $}
+
+  ${
+    $d A x f z j g y $.
+    $( Define a local and length-limited version of the axiom of choice.  The
+       definition of the predicate ` X e. AC_ A ` is that for all families of
+       inhabited subsets of ` X ` indexed on ` A ` (i.e. functions
+       ` A --> { z e. ~P X | E. j j e. z } ` ), there is a function which
+       selects an element from each set in the family.  (Contributed by Mario
+       Carneiro, 31-Aug-2015.)  Change nonempty to inhabited.  (Revised by Jim
+       Kingdon, 22-Nov-2025.) $)
+    df-acnm $a |- AC_ A = { x | ( A e. _V /\
+      A. f e. ( { z e. ~P x | E. j j e. z } ^m A )
+      E. g A. y e. A ( g ` y ) e. ( f ` y ) ) } $.
   $}
 
   ${
@@ -72836,6 +72892,51 @@ $)
         -> E. f f : x -onto-> y ) ) $=
       ( wem wel wex cv cdom wbr wfo wal exmidfodomrlemim exmidfodomrlemr impbii
       wa wi ) ECBFCGBHZAHZIJPSRDHKDGQBLALABCDMABCDNO $.
+  $}
+
+  ${
+    $d f g h x y z j w A $.  $d g y z B $.  $d f g x F $.  $d g ph $.
+    $d y ps $.  $d f g x y z j w C $.  $d f g h x y z w X $.
+    $( Reverse closure for the choice set predicate.  (Contributed by Mario
+       Carneiro, 31-Aug-2015.) $)
+    acnrcl $p |- ( X e. AC_ A -> A e. _V ) $=
+      ( vy vg vf vj vz vx vw cvv wcel cv cfv wral wex cpw crab cmap co wa elex2
+      cab wacn abn0m simpl exlimiv sylbi syl df-acnm eleq2s ) AJKZBUKCLZDLMULEL
+      MKCANDOEFLGLKFOGHLPQARSNZTZHUBZAUCBUOKILUOKIOZUKIBUOUAUPUNHOUKUNHIUDUNUKH
+      UKUMUEUFUGUHHCGAEDFUIUJ $.
+
+    $( Equality theorem for the choice set function.  (Contributed by Mario
+       Carneiro, 31-Aug-2015.) $)
+    acneq $p |- ( A = C -> AC_ A = AC_ C ) $=
+      ( vy vg vf vj vz vx cvv wcel cv cfv wral wex cmap co wa cab wacn df-acnm
+      wceq cpw crab eleq1 oveq2 raleq exbidv raleqbidv anbi12d abbidv 3eqtr4g )
+      ABUAZAIJZCKZDKLUNEKLJZCAMZDNZEFKGKJFNGHKUBUCZAOPZMZQZHRBIJZUOCBMZDNZEURBO
+      PZMZQZHRASBSULVAVGHULUMVBUTVFABIUDULUQVDEUSVEABUROUEULUPVCDUOCABUFUGUHUIU
+      JHCGAEDFTHCGBEDFTUK $.
+
+    $( The property of being a choice set of length ` A ` .  (Contributed by
+       Mario Carneiro, 31-Aug-2015.) $)
+    isacnm $p |- ( ( X e. V /\ A e. W ) -> ( X e. AC_ A <->
+      A. f e. ( { z e. ~P X | E. j j e. z } ^m A )
+        E. g A. x e. A ( g ` x ) e. ( f ` x ) ) ) $=
+      ( vy wcel cv cfv wral wex cpw crab cmap co wa wacn rabeqdv oveq1d raleqdv
+      cvv wceq pweq anbi2d df-acnm elab2g wb elex biid baib syl sylan9bb ) IGKI
+      CUAZKCUEKZALZELMUSDLMKACNEOZDFLBLKFOZBIPZQZCRSZNZTZCHKZVEURUTDVABJLZPZQZC
+      RSZNZTVFJIUQGVHIUFZVLVEURVMUTDVKVDVMVJVCCRVMVABVIVBVHIUGUBUCUDUHJABCDEFUI
+      UJVGURVFVEUKCHULVFURVEVFUMUNUOUP $.
+
+    $( Every set has finite choice sequences.  (Contributed by Mario Carneiro,
+       31-Aug-2015.) $)
+    finacn $p |- ( A e. Fin -> AC_ A = _V ) $=
+      ( vx vy vg vf vj vw vz cfn wcel cvv cv cfv wral wex wa wf sylib ralrimiva
+      syl wacn crab cmap co wrex elmapi adantl ffvelcdm wceq eleq2 exbidv elrab
+      cpw simprd eleq1w cbvexv sylibr eleq1 ac6sfi syldan exsimpr wb vex isacnm
+      rexv mpan mpbird a1i 2thd eqrdv ) AIJZBAUAZKVKBLZVLJZVMKJZVKVNCLZDLZMZVPE
+      LZMZJZCANZDOZEFLZGLZJZFOZGVMUMZUBZAUCUDZNZVKWCEWJVKVSWJJZPZAKVQQZWBPDOZWC
+      VKWLHLZVTJZHKUEZCANZWOWMAWIVSQZWSWLWTVKVSWIAUFUGWTWRCAWTVPAJPZWQHOZWRXAWD
+      VTJZFOZXBXAVTWHJZXDXAVTWIJXEXDPAWIVPVSUHWGXDGVTWHWEVTUIWFXCFWEVTWDUJUKULR
+      UNXCWQFHFHVTUOUPRWQHVEUQSTWQWACHAKDWPVRVTURUSUTWNWBDVATSVOVKVNWKVBBVCZCGA
+      EDFKIVMVDVFVGVOVKXFVHVIVJ $.
   $}
 
 
@@ -73868,6 +73969,21 @@ $)
       PVAUBZBDEUCZQZGHRZSZFTVBCGHRZSZFTAOFGVDHJAVDIQZGHRVDUDQZGHRKVJVKGHVDIUJUE
       UFABDEUKZGHROPVDQOTZGHRNVMVLGHBDOEUGUHUILULAVGVIFAVGVIAVGSVBVHAVBVFUMVFVH
       AVBVECGHVEVCEQCBCDVCEMUNUOUEUPUQURUSUT $.
+  $}
+
+  ${
+    $d f g j y z $.  $d f j n z $.  $d f g x y z $.  $d n x z $.
+    $( Given countable choice, every set has choice sets of length ` _om ` .
+       (Contributed by Mario Carneiro, 31-Aug-2015.) $)
+    acnccim $p |- ( CCHOICE -> AC_ _om = _V ) $=
+      ( vx vy vg vf vj vz vn wacc com wacn cvv cv wcel cfv wex cpw wa ralrimiva
+      wral wfn crab cmap co simpl elmapfn adantl elmapi ad2antlr ffvelcdmd wceq
+      wf simpr eleq2 exbidv elrab sylib simprd cc2 exsimpr syl vex isacnm mp2an
+      wb omex sylibr a1i 2thd eqrdv ) HAIJZKHALZVJMZVKKMZHBLZCLZNVNDLZNMBISZCOZ
+      DELZFLZMZEOZFVKPZUAZIUBUCZSZVLHVRDWEHVPWEMZQZVOITZVQQCOVRWHGECBVPHWGUDWGV
+      PITHVPWDIUEUFWHVSGLZVPNZMZEOZGIWHWJIMZQZWKWCMZWMWOWKWDMWPWMQWOIWDWJVPWGIW
+      DVPUKHWNVPWDIUGUHWHWNULUIWBWMFWKWCVTWKUJWAWLEVTWKVSUMUNUOUPUQRURWIVQCUSUT
+      RVMIKMVLWFVDAVAZVEBFIDCEKKVKVBVCVFVMHWQVGVHVI $.
   $}
 
 
@@ -169532,6 +169648,108 @@ $)
         DHVRUGZOMUHVRVRHULUIABCDEFGVRJKWBNPQUJCVRVRHJUKUMAVRCVQTTARTUNDTSVRTSZU
         OADUPMUQWCTDRDRURUSUTAFVAVBVCVEVDSFVFGUCUDZCTNUCTTVGUNVFTSAGTSWDTSVHVIA
         GILUQVFGTTUCVJVKVLVMVPABCDEFGVRIUPKWBNPLMVNVO $.
+
+      psrlinv.o $e |- .0. = ( 0g ` R ) $.
+      psrlinv.p $e |- .+ = ( +g ` S ) $.
+      $( The negative function in the ring of power series.  (Contributed by
+         Mario Carneiro, 29-Dec-2014.) $)
+      psrlinv $p |- ( ph -> ( ( N o. X ) .+ X ) = ( D X. { .0. } ) ) $=
+        ( vx vy ccom cplusg cfv cof co cv cmpt csn cxp cvv cbs ccnv cn cima cfn
+        wcel cn0 cmap wfn fnmap nn0ex fnovex mp3an12i rabexd cgrp eqid psrelbas
+        elexd ffvelcdmda grpinvcl syl2an2r feqmptd wf1o wf grpinvf1o f1of fveq2
+        fmptco offval2 psrnegcl psradd fconstmpt wceq grplinv mpteq2dva eqtr4id
+        syl 3eqtr4d ) AIKUDZKEUEUFZUGUHUBCUBUIZKUFZIUFZWOWMUHZUJZWLKDUHCLUKULZA
+        UBCWPWOWMWLKUMEUNUFZWTAGUIUOUPUQURUSGUTHVAUHZCUMPVAUMUMULVBUTUMUSAHUMUS
+        XAUMUSVCVDAHJNVKUTHUMUMVAVEVFVGAEVHUSZWNCUSZWOWTUSZWPWTUSOACWTWNKABCEFG
+        HWTKMWTVIZPRSVJZVLZWTEIWOXEQVMVNXGAUBUCCWTWOUCUIZIUFWPKIXGAUBCWTKXFVOZA
+        UCWTWTIAWTWTIVPWTWTIVQAWTEIXEQOVRWTWTIVSWJVOXHWOIVTWAXIWBABWMDEFHWLKMRW
+        MVIZUAABCEFGHIJKMNOPQRSWCSWDAWSUBCLUJWRUBCLWEAUBCWQLAXBXCXDWQLWFOXGWTWM
+        EIWOLXEXJTQWGVNWHWIWK $.
+    $}
+
+    $( The ring of power series is a group.  (Contributed by Mario Carneiro,
+       29-Dec-2014.)  (Proof shortened by SN, 7-Feb-2025.) $)
+    psrgrp $p |- ( ph -> S e. Grp ) $=
+      ( vf cv wcel cn0 cmap co cgrp cvv eqid cbs cfv eleq2d vx vy ccnv cima cfn
+      crab cpws cxp wfn fnmap nn0ex elexd fnovex mp3an12i rabexd pwsgrp syl2anc
+      cn wceq pwsbas psrbasg eqcomd wa cplusg cof adantr biimpa adantrr adantrl
+      pwsplusgval biimpar psradd eqtr4d grppropd mpbid ) ABIJUCURUDUEKZILDMNZUF
+      ZUGNZOKZCOKABOKZVRPKZVTHAVPIVQVRPVRQZMPPUHUILPKADPKVQPKUJUKADEGULLDPPMUMU
+      NUOZBVRPVSVSQZUPUQAUAUBBRSZVRMNZVSCAWAWBWGVSRSZUSHWDWFBVROPVSWEWFQZUTUQZA
+      CRSZWGAWKVRBCIDWFEOFWIWCWKQZGHVAZVBAUAJZWGKZUBJZWGKZVCZVCZWNWPVSVDSZNWNWP
+      BVDSZVENWNWPCVDSZNWSWHXAWTBWNWPVROPVSWEWHQAWAWRHVFAWBWRWDVFAWOWNWHKZWQAWO
+      XCAWGWHWNWJTVGVHAWQWPWHKZWOAWQXDAWGWHWPWJTVGVIXAQZWTQVJWSWKXAXBBCDWNWPFWL
+      XEXBQAWOWNWKKZWQAXFWOAWKWGWNWMTVKVHAWQWPWKKZWOAXGWQAWKWGWPWMTVKVIVLVMVNVO
+      $.
+
+    ${
+      psr0.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+      psr0.o $e |- O = ( 0g ` R ) $.
+      psr0.z $e |- .0. = ( 0g ` S ) $.
+      $( The zero element of the ring of power series.  (Contributed by Mario
+         Carneiro, 29-Dec-2014.) $)
+      psr0 $p |- ( ph -> .0. = ( D X. { O } ) ) $=
+        ( csn cfv wceq eqid wcel cxp cplusg co cbs psr0cl psr0lid cgrp wb grpid
+        psrgrp syl2anc mpbid ) ABGPUAZUMDUBQZUCUMRZIUMRZADUDQZBUNCDEFHUMGJKLMNU
+        QSZUNSZAUQBCDEFHGJKLMNURUEZUFADUGTUMUQTUOUPUHACDFHJKLUJUTUQUNDUMIURUSOU
+        IUKUL $.
+    $}
+
+    ${
+      psrneg.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+      psrneg.i $e |- N = ( invg ` R ) $.
+      psrneg.b $e |- B = ( Base ` S ) $.
+      psrneg.m $e |- M = ( invg ` S ) $.
+      psrneg.x $e |- ( ph -> X e. B ) $.
+      $( The negative function of the ring of power series.  (Contributed by
+         Mario Carneiro, 29-Dec-2014.) $)
+      psrneg $p |- ( ph -> ( M ` X ) = ( N o. X ) ) $=
+        ( cfv ccom wceq cplusg co c0g csn eqid psrlinv psr0 eqtr4d cgrp wcel wb
+        cxp psrgrp psrnegcl grpinvid2 syl3anc mpbird ) AKHTIKUAZUBZUTKEUCTZUDZE
+        UETZUBZAVCCDUETZUFUNVDABCVBDEFGIJKVFLMNOPQSVFUGZVBUGZUHACDEFGVFJVDLMNOV
+        GVDUGZUIUJAEUKULKBULUTBULVAVEUMADEGJLMNUOSABCDEFGIJKLMNOPQSUPBVBEHKUTVD
+        QVHVIRUQURUS $.
+    $}
+  $}
+
+  ${
+    $d k x .+ $.  $d f x y z .0. $.  $d f g h j k n r s t w x y z I $.
+    $d k K $.  $d k u v w x A $.  $d j k n x z B $.
+    $d f g h j k n r s t u v w x y z R $.  $d g h j k n u v w x y z D $.
+    $d y z U $.  $d f g h j k n u v w x y z X $.
+    $d j k n r s t u v w x y z ph $.  $d g h j k r w x y V $.  $d k x y .x. $.
+    $d f g h j k n x Z $.  $d r s t x y z S $.  $d x y .1. $.  $d j k x .X. $.
+    $d f g h j k n u v w x Y $.
+    psrring.s $e |- S = ( I mPwSer R ) $.
+    psrringfi.i $e |- ( ph -> I e. Fin ) $.
+    psrring.r $e |- ( ph -> R e. Ring ) $.
+
+    ${
+      psr1cl.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+      psr1cl.z $e |- .0. = ( 0g ` R ) $.
+      psr1cl.o $e |- .1. = ( 1r ` R ) $.
+      psr1cl.u $e |- U =
+        ( x e. D |-> if ( x = ( I X. { 0 } ) , .1. , .0. ) ) $.
+      psr1cl.b $e |- B = ( Base ` S ) $.
+      $( The identity element of the ring of power series.  (Contributed by
+         Mario Carneiro, 29-Dec-2014.) $)
+      psr1clfi $p |- ( ph -> U e. B ) $=
+        ( wcel vz cbs cfv cmap co wf cc0 csn cxp wceq cif crg eqid ringidcl syl
+        cv wa adantr ring0cl wdc cmpt wral cfn cz 0z ccnv cn cima cnveq imaeq1d
+        cn0 eleq1d elrab2 simplbi adantl cvv nn0ex a1i elmapd mpbid nn0zd zdceq
+        ffvelcdmda sylancr ralrimiva dcfi syl2an2r wb rgenw mpteqb ax-mp sylibr
+        0nn0 dcbii eqcom sylib feqmptd fconstmpt eqeq12d dcbid mpbird fmptd wfn
+        ifcldcd basfn elexd funfvex funfni fnmap fnovex mp3an12i rabexd psrbasg
+        eleqtrrd ) AGEUBUCZDUDUEZCAGXPTDXOGUFABDBUPZJUGUHUIZUJZHKUKXOGAXQDTZUQZ
+        XSHKXOAHXOTZXTAEULTZYBNXOEHXOUMZQUNUOURAKXOTZXTAYCYENXOEKYDPUSUOURYAXSU
+        TUAJUAUPZXQUCZVAZUAJUGVAZUJZUTZYAYIYHUJZUTZYKYAUGYGUJZUAJVBZUTZYMAJVCTZ
+        XTYNUTZUAJVBYPMYAYRUAJYAYFJTUQZUGVDTYGVDTYRVEYSYGYAJVKYFXQYAXQVKJUDUEZT
+        ZJVKXQUFXTUUAAXTUUAXQVFZVGVHZVCTZIUPZVFZVGVHZVCTZUUDIXQYTDUUEXQUJZUUGUU
+        CVCUUIUUFUUBVGUUEXQVIVJVLOVMVNVOYAVKJXQVPVCVKVPTZYAVQVRAYQXTMURVSVTZWCW
+        AUGYGWBWDWEYNUAJWFWGYLYOUGVKTZUAJVBYLYOWHUULUAJWMWIUAJUGYGVKWJWKWNWLYLY
+        JYIYHWOWNWPYAXSYJYAXQYHXRYIYAUAJVKXQUUKWQXRYIUJYAUAJUGWRVRWSWTXAXDRXBAX
+        ODGVPVPAUBVPXCEVPTXOVPTZXEAEULNXFUUMVPEUBEUBXGXHWDAUUHIYTDVPOUDVPVPUIXC
+        UUJAJVPTYTVPTXIVQAJVCMXFVKJVPVPUDXJXKXLVSXAACDEFIJXOVCULLYDOSMNXMXN $.
     $}
   $}
 
@@ -190369,6 +190587,9 @@ htmldef "card" as
     "<IMG SRC='_card.gif' WIDTH=30 HEIGHT=19 ALT=' card' TITLE='card'>";
   althtmldef "card" as 'card';
   latexdef "card" as "\mathrm{card}";
+htmldef "AC_" as '<U>AC</U> ';
+  althtmldef "AC_" as '<U>AC</U> ';
+  latexdef "AC_" as "\underline{\mathrm{AC}}";
 htmldef "CHOICE" as "<SMALL>CHOICE</SMALL>";
   althtmldef "CHOICE" as "<SMALL>CHOICE</SMALL>";
   latexdef "CHOICE" as "\mathrm{CHOICE}";

@@ -5326,10 +5326,11 @@ this implies excluded middle</TD>
   <TD><I>none</I></TD>
 </TR>
 
-<TR>
-  <TD>df-acn and all theorems using this definition</TD>
-  <TD><I>none</I></TD>
-</TR>
+<tr>
+  <td>df-acn</td>
+  <td>~ df-acnm</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
 
 <TR>
   <TD>cardf2 , cardon , isnum2</TD>
@@ -5463,7 +5464,7 @@ this implies excluded middle</TD>
   <TD>The set.mm proof would only work in the case where
   ` A = B ` is decidable.
   If we can prove fodomfi , that would appear to imply
-  prsomd2 fairly quickly.</TD>
+  prdom2 fairly quickly.</TD>
 </TR>
 
 <TR>
@@ -5554,6 +5555,18 @@ this implies excluded middle</TD>
   <TD>Numerability (or cardinality in general) is not well
   developed and to a certain extent cannot be.</TD>
 </TR>
+
+<tr>
+  <td>isacn</td>
+  <td>~ isacnm</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
+
+<tr>
+  <td>dfacacn</td>
+  <td><i>none</i></td>
+  <td>should be provable</td>
+</tr>
 
 <tr>
   <td>undjudom</td>
@@ -5744,6 +5757,13 @@ this implies excluded middle</TD>
 <tr>
   <td>axcc4</td>
   <td>~ cc4</td>
+</tr>
+
+<tr>
+  <td>acncc</td>
+  <td>~ acnccim</td>
+  <td>uses ` CCHOICE ` notation rather than countable
+  choice expressed via the ax-cc axiom</td>
 </tr>
 
 <TR>
@@ -12932,8 +12952,9 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>psrbagcon</td>
   <td><i>none</i></td>
-  <td>The set.mm proof uses ssfi . We might have enough
-  decidability (for example via ~ elnndc ) to overcome this.</td>
+  <td>The set.mm proof uses ssfi . Perhaps a similar proof
+  would work but using ~ ssfidc (the decidability might be
+  somewhat similar to the proof of ~ psr1clfi ).</td>
 </tr>
 
 <tr>
@@ -12975,23 +12996,33 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>psrmulr</td>
+  <td id="missing-psrmulr">psrmulr</td>
   <td><i>none</i></td>
-  <td>presumably provable with added set existence conditions
-  (analogous to ~ psrplusgg )</td>
+  <td>although this theorem itself just extracts the multiplication
+  slot from the result of ~ psrval (analogous to ~ psrplusgg ),
+  the fundamental issue with ` mPwSer ` multiplication is that
+  the set.mm definition of that slot uses ` gsum ` on something
+  which is not a range of consecutive integers (as required by
+  ~ df-igsum )</td>
 </tr>
 
 <tr>
   <td>psrmulfval</td>
   <td><i>none</i></td>
-  <td>presumably provable once we have psrmulr ( ` F e. B ` should
-  take care of the set existence, as in ~ psradd )</td>
+  <td>this theorem in particular is a simple consequence of
+  psrmulr ( ` F e. B ` should take care of the set existence, as
+  in ~ psradd ), but see the <a href="#missing-psrmulr">psrmulr
+  entry</a> for thoughts on what ` mPwSer ` multiplication should
+  expand to</td>
 </tr>
 
 <tr>
   <td>psrmulval</td>
   <td><i>none</i></td>
-  <td>presumably provable once we have psrmulfval</td>
+  <td>this theorem in particular is a simple consequence of
+  psrmulfval , but see the <a href="#missing-psrmulr">psrmulr
+  entry</a> for thoughts on what ` mPwSer ` multiplication should
+  expand to</td>
 </tr>
 
 <tr>
@@ -13029,6 +13060,76 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>psrvscacl</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses psrvsca</td>
+</tr>
+
+<tr>
+  <td>psrlmod</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses psrvsca</td>
+</tr>
+
+<tr>
+  <td>psr1cl</td>
+  <td>~ psr1clfi</td>
+  <td>requires a finite index set</td>
+</tr>
+
+<tr>
+  <td>psrlidm</td>
+  <td><i>none</i></td>
+  <td>this is where we really would need a functioning definition
+  of ` mPwSer ` multiplication (as discussed at the <a
+  href="#missing-psrmulr">psrmulr entry</a>), in particular how to
+  handle the parts of the set.mm proof which use gsumres and gsumsn .
+  The set.mm proof also uses psrbagcon .  There are some ` if `
+  expressions in the set.mm proof but it isn't clear they are
+  being used in a way that needs decidability (if they do,
+  see the similar portion of the ~ psr1clfi proof).</td>
+</tr>
+
+<tr>
+  <td>psrridm</td>
+  <td><i>none</i></td>
+  <td>presumably the issues are similar to psrlidm</td>
+</tr>
+
+<tr>
+  <td>psrass1</td>
+  <td><i>none</i></td>
+  <td>depends on a variety of ` mPwSer ` and ` gsum ` theorems</td>
+</tr>
+
+<tr>
+  <td>psrdi , psrdir</td>
+  <td><i>none</i></td>
+  <td>depends on a variety of ` mPwSer ` and ` gsum ` theorems</td>
+</tr>
+
+<tr>
+  <td>psrass23l</td>
+  <td><i>none</i></td>
+  <td>depends on a variety of ` mPwSer ` and ` gsum ` theorems,
+  as well as scalar field theorems like psrvscaval</td>
+</tr>
+
+<tr>
+  <td>psrcom</td>
+  <td><i>none</i></td>
+  <td>depends on a variety of ` mPwSer ` and ` gsum ` theorems</td>
+</tr>
+
+<tr>
+  <td>psrass23</td>
+  <td><i>none</i></td>
+  <td>depends on a variety of ` mPwSer ` and ` gsum ` theorems,
+  as well as scalar field theorems like psrvscaval</td>
+</tr>
+
+<tr>
+  <td>psrring</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses psrmulcl , psrass1 , psrdi , psrdir ,
+  psrlidm , and psrridm</td>
 </tr>
 
 <TR>
@@ -15387,18 +15488,44 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>lgsqrlem1</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses evl1vard , evl1expd ,
+  evl1scad , ply1scl1 , and evl1subd</td>
+</tr>
+
+<tr>
+  <td>lgsqrlem2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses evl1rhm , ply1ring , and vr1cl</td>
+</tr>
+
+<tr>
+  <td>lgsqrlem3</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses evl1rhm , ply1ring , vr1cl</td>
+</tr>
+
+<tr>
   <td>lgsqrlem4</td>
   <td><i>none</i></td>
-  <td>The use of sbth can apparently be replaced
+  <td>The set.mm proof uses ply1ring , vr1cl , ply1scl1 , deg1scl ,
+  deg1pw , deg1sub , deg1nn0clb , and fta1g .
+  The use of sbth can apparently be replaced
   by ~ fisbth as this proof already shows that both
   sets are finite.</td>
 </tr>
 
 <tr>
+  <td>lgsqrlem5</td>
+  <td><i>none</i></td>
+  <td>should be feasible once we have lgsqrlem4</td>
+</tr>
+
+<tr>
   <td>lgsqr</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses df-ply1 , df-deg1 ,
-  and possibly other things not yet defined in iset.mm</td>
+  <td>should be feasible once we have lgsqrlem5</td>
 </tr>
 
 <tr>
