@@ -92,6 +92,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+19-Nov-25 feq2dd    [same]      Moved from TA's mathbox to main set.mm
 15-Nov-25 feq3dd    [same]      Moved from TA's mathbox to main set.mm
 14-Nov-25 pine0     [same]      Moved from SN's mathbox to main set.mm
 14-Nov-25 efne0d    [same]      Moved from SN's mathbox to main set.mm
