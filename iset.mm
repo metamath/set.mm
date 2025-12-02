@@ -170110,6 +170110,24 @@ $)
     $}
   $}
 
+  ${
+    mpladd.p $e |- P = ( I mPoly R ) $.
+    mpladd.b $e |- B = ( Base ` P ) $.
+    mpladd.a $e |- .+ = ( +g ` R ) $.
+    mpladd.g $e |- .+b = ( +g ` P ) $.
+    mpladd.x $e |- ( ph -> X e. B ) $.
+    mpladd.y $e |- ( ph -> Y e. B ) $.
+    $( The addition operation on multivariate polynomials.  (Contributed by
+       Mario Carneiro, 9-Jan-2015.)  (Revised by Mario Carneiro,
+       2-Oct-2015.) $)
+    mpladd $p |- ( ph -> ( X .+b Y ) = ( X oF .+ Y ) ) $=
+      ( co wcel cvv cmpl eqid cmps cplusg cfv cof wa wceq reldmmpl cxp wfn wrel
+      fnmpl fnrel ax-mp relelbasov mplplusgg 3syl oveqd cbs sselid psradd eqtrd
+      mplbasss ) AHIEPHIGFUAPZUBUCZPHIDUDPAEVDHIAHBQGRQFRQUEEVDUFNHBCSGFUGSRRUH
+      ZUISUJUKVESULUMJKUNEFVCGRRCJVCTZMUOUPUQAVCURUCZDVDFVCGHIVFVGTZLVDTABVGHVG
+      CFVCBGJVFKVHVBZNUSABVGIVIOUSUTVA $.
+  $}
+
 
 $(
 ###############################################################################
