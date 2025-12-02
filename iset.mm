@@ -170076,6 +170076,24 @@ $)
     $}
   $}
 
+  ${
+    $d f I $.  $d I x $.  $d O x $.
+    mpl0.p $e |- P = ( I mPoly R ) $.
+    mpl0.o $e |- O = ( 0g ` R ) $.
+    mpl0.z $e |- .0. = ( 0g ` P ) $.
+    mpl0fi.i $e |- ( ph -> I e. Fin ) $.
+    mpl0.r $e |- ( ph -> R e. Grp ) $.
+    $( The zero polynomial.  (Contributed by Mario Carneiro, 9-Jan-2015.) $)
+    mpl0fi $p |- ( ph -> .0. = ( x e. ( NN0 ^m I ) |-> O ) ) $=
+      ( vf c0g cfv co cfn wcel wceq eqid cn0 cmap cmpt cmps cress cgrp mplval2g
+      cbs syl2anc fveq2d csubg mplsubgfi subg0 syl csn cxp cv ccnv cn cima crab
+      psr0 psrbagfi xpeq1d eqtrd fconstmpt eqtrdi 3eqtr2d eqtrid ) AGCNOZBUAEUB
+      PZFUCZJAVJEDUDPZCUHOZUEPZNOZVMNOZVLACVONAEQRZDUFRCVOSKLCDVMVNEQUFHVMTZVNT
+      ZUGUIUJAVNVMUKORVQVPSACDVMVNEVSHVTKLULVNVMVOVQVOTVQTZUMUNAVQVKFUOZUPZVLAV
+      QMUQURUSUTQRMVKVAZWBUPWCAWDDVMMEFQVQVSKLWDTZIWAVBAWDVKWBAVRWDVKSKWDMEWEVC
+      UNVDVEBVKFVFVGVHVI $.
+  $}
+
 
 $(
 ###############################################################################
