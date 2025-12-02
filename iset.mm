@@ -170094,6 +170094,22 @@ $)
       UNVDVEBVKFVFVGVHVI $.
   $}
 
+  ${
+    mplplusg.y $e |- Y = ( I mPoly R ) $.
+    mplplusg.s $e |- S = ( I mPwSer R ) $.
+    ${
+      mplplusg.p $e |- .+ = ( +g ` Y ) $.
+      $( Value of addition in a polynomial ring.  (Contributed by Stefan
+         O'Rear, 21-Mar-2015.)  (Revised by Mario Carneiro, 2-Oct-2015.) $)
+      mplplusgg $p |- ( ( I e. V /\ R e. W ) -> .+ = ( +g ` S ) ) $=
+        ( wcel cplusg cfv cbs cvv wfn cmpl co elex cmps wa mplval2g eqidd basfn
+        eqid cxp fnmpl fnovex mp3an3an eqeltrid funfvex funfni fnpsr ressplusgd
+        sylancr eqtr4id ) DEKZBFKZUAZAGLMCLMZJUSGNMZUTCGOOGBCVADEFHIVAUEUBUSUTU
+        CUSNOPGOKVAOKZUDUSGDBQRZOHQOOUFZPUQDOKZURBOKZVCOKUGDESZBFSZDBOOQUHUIUJV
+        BOGNGNUKULUOUSCDBTRZOITVDPUQVEURVFVIOKUMVGVHDBOOTUHUIUJUNUP $.
+    $}
+  $}
+
 
 $(
 ###############################################################################
