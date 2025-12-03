@@ -170149,6 +170149,16 @@ $)
       VH $.
   $}
 
+  ${
+    mplgrp.p $e |- P = ( I mPoly R ) $.
+    $( The polynomial ring is a group.  (Contributed by Mario Carneiro,
+       9-Jan-2015.) $)
+    mplgrpfi $p |- ( ( I e. Fin /\ R e. Grp ) -> P e. Grp ) $=
+      ( cfn wcel cgrp wa cmps cbs cfv cress eqid mplval2g csubg simpl mplsubgfi
+      co simpr subggrp syl eqeltrd ) CEFZBGFZHZACBIRZAJKZLRZGABUFUGCEGDUFMZUGMZ
+      NUEUGUFOKFUHGFUEABUFUGCUIDUJUCUDPUCUDSQUGUFUHUHMTUAUB $.
+  $}
+
 
 $(
 ###############################################################################
