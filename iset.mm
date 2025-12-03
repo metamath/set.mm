@@ -170128,6 +170128,27 @@ $)
       CFVCBGJVFKVHVBZNUSABVGIVIOUSUTVA $.
   $}
 
+  ${
+    $d I f $.  $d I x $.
+    mplneg.p $e |- P = ( I mPoly R ) $.
+    mplneg.b $e |- B = ( Base ` P ) $.
+    mplneg.n $e |- N = ( invg ` R ) $.
+    mplneg.m $e |- M = ( invg ` P ) $.
+    mplnegfi.i $e |- ( ph -> I e. Fin ) $.
+    mplneg.r $e |- ( ph -> R e. Grp ) $.
+    mplneg.x $e |- ( ph -> X e. B ) $.
+    $( The negative function on multivariate polynomials.  (Contributed by SN,
+       25-May-2024.) $)
+    mplnegfi $p |- ( ph -> ( M ` X ) = ( N o. X ) ) $=
+      ( cfv cminusg cfn wcel eqid vx cmps co cress ccom fveq1i mplval2g syl2anc
+      cgrp wceq fveq2d fveq1d eqtrid csubg mplsubgfi subginv cbs cv ccnv cn cn0
+      cima cmap crab mplbasss sselid psrneg 3eqtr2d ) AHFPZHEDUBUCZBUDUCZQPZPZH
+      VJQPZPZGHUEAVIHCQPZPVMHFVPLUFAHVPVLACVKQAERSDUISCVKUJMNCDVJBERUIIVJTZJUGU
+      HUKULUMABVJUNPSHBSVOVMUJACDVJBEVQIJMNUOOBVJVKVNVLHVKTVNTZVLTUPUHAVJUQPZUA
+      URUSUTVBRSUAVAEVCUCVDZDVJUAEVNGRHVQMNVTTKVSTZVRABVSHVSCDVJBEIVQJWAVEOVFVG
+      VH $.
+  $}
+
 
 $(
 ###############################################################################
