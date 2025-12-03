@@ -195329,6 +195329,59 @@ $)
       KEQGKESVMVKUKDULEVNGUMEGCUNUOUPVLVGUQVAABGCURUSUTGOFVBVCVDVE $.
   $}
 
+  ${
+    $d N w $.  $d P i j $.  $d P i k n w $.
+    nnnninfex.p $e |- ( ph -> P e. NN+oo ) $.
+    nnnninfex.n $e |- ( ph -> N e. _om ) $.
+    nnnninfex.0 $e |- ( ph -> ( P ` N ) = (/) ) $.
+    $( If an element of ` NN+oo ` has a value of zero somewhere, then it is the
+       mapping of a natural number.  (Contributed by Jim Kingdon,
+       4-Aug-2022.) $)
+    nnnninfex $p |- ( ph
+        -> E. n e. _om P = ( i e. _om |-> if ( i e. n , 1o , (/) ) ) ) $=
+      ( vj com wcel cfv c0 wceq wa cv c1o wi fveqeq2 anbi2d vw xnninf cmpt wrex
+      cif jca csuc imbi1d peano1 wral simpll a1i simpr wss 0ss simplr nninfninc
+      vk noel iffalsei mpteq2i eqidd fvmptd3 eqtr4d ralrimiva wfn wb c2o nninff
+      ffnd adantr 1oex 0ex ifex eqid fnmpti eqfnfv sylancl eleq2 ifbid mpteq2dv
+      mpbird rspceeqv sylancr simpllr mpd simpl ad3antrrr peano2 syl cuni nnord
+      wtr word ordtr unisucg mpbid fveq2d eqtrd nnnninfeq2 adantllr syl2anc cpr
+      wo wf adantl ffvelcdmd df2o3 eleqtrdi elpri ad2antrr mpjaodan a2d 3imtr4g
+      exp41 impexp finds sylc ) AEJKBUBKZEBLMNZOZBCJCPZDPZKZQMUEZUCZNDJUDZGAXSX
+      TFHUFXSUAPZBLMNZOZYGRXSMBLMNZOZYGRXSURPZBLZMNZOZYGRZXSYMUGZBLMNZOZYGRZYAY
+      GRUAUREYHMNZYJYLYGUUBYIYKXSYHMMBSTUHYHYMNZYJYPYGUUCYIYOXSYHYMMBSTUHYHYRNZ
+      YJYTYGUUDYIYSXSYHYRMBSTUHYHENZYJYAYGUUEYIXTXSYHEMBSTUHYLMJKZBCJYBMKZQMUEZ
+      UCZNZYGUIYLUUJIPZBLZUUKUUILZNZIJUJZYLUUNIJYLUUKJKZOZUULMUUMUUQBMUUKXSYKUU
+      PUKUUFUUQUIULZYLUUPUMZMUUKUNUUQUUKUOULXSYKUUPUPUQUUQCUUKMMJUUIJCJUUHMUUGQ
+      MYBUSUTVAYBUUKNMVBUUSUURVCVDVEYLBJVFZUUIJVFUUJUUOVGXSUUTYKXSJVHBBVIZVJVKC
+      JUUHUUIUUGQMVLVMVNUUIVOVPIJBUUIVQVRWBDMJYFUUIBYCMNZCJYEUUHUVBYDUUGQMYCMYB
+      VSVTWAWCWDYMJKZXSYOYGRZRXSYSYGRZRYQUUAUVCXSUVDUVEUVCXSUVDYSYGUVCXSOZUVDOY
+      SOZYOYGYNQNZUVGYOOYOYGUVGYOUMUVFUVDYSYOWEWFUVGUVHOZYRJKZBCJYBYRKZQMUEZUCZ
+      NZYGUVIUVCUVJUVFUVCUVDYSUVHUVCXSWGZWHYMWIZWJUVFYSUVHUVNUVDUVFYSOZUVHOZBCY
+      RUVCXSYSUVHWEUVCUVJXSYSUVHUVPWHUVRYRWKZBLZYNQUVCUVTYNNXSYSUVHUVCUVSYMBUVC
+      YMWMZUVSYMNUVCYMWNUWAYMWLYMWOWJYMJWPWQWRWHUVQUVHUMWSUVFYSUVHUPWTXADYRJYFU
+      VMBYCYRNZCJYEUVLUWBYDUVKQMYCYRYBVSVTWAWCXBUVFYOUVHXDZUVDYSUVFYNMQXCZKUWCU
+      VFYNVHUWDUVFJVHYMBXSJVHBXEUVCUVAXFUVOXGXHXIYNMQXJWJXKXLXOXMXSYOYGXPXSYSYG
+      XPXNXQXR $.
+  $}
+
+  ${
+    $d A i j n $.
+    $( An element of ` NN+oo ` which is not finite is infinite.  (Contributed
+       by Jim Kingdon, 30-Nov-2025.) $)
+    nninfnfiinf $p |- ( ( A e. NN+oo /\
+        -. E. n e. _om A = ( i e. _om |-> if ( i e. n , 1o , (/) ) ) )
+        -> A = ( i e. _om |-> 1o ) ) $=
+      ( vj xnninf wcel com cv c1o c0 cif cmpt wceq wa cfv simplr simpr c2o 1oex
+      wfn wrex wn wral simplll nnnninfex mtand cpr wo nninff ad2antrr ffvelcdmd
+      df2o3 eleqtrdi elpri syl orcomd ecased csn cxp fconstmpt fvconst2 eqtr3id
+      wf fveq1i adantl eqtr4d ralrimiva ffnd eqid fnmpti eqfnfv sylancl adantr
+      wb mpbird ) AEFZABGBHCHFIJKLMCGUAZUBZNZABGILZMZDHZAOZWBVTOZMZDGUCZVSWEDGV
+      SWBGFZNZWCIWDWHWCIMZWCJMZWHWJVQVPVRWGPWHWJNABCWBVPVRWGWJUDVSWGWJPWHWJQUEU
+      FWHWJWIWHWCJIUGZFWJWIUHWHWCRWKWHGRWBAVPGRAVCVRWGAUIZUJVSWGQUKULUMWCJIUNUO
+      UPUQWGWDIMVSWGWDWBGIURUSZOIWBWMVTBGIUTVDGIWBSVAVBVEVFVGVPWAWFVNZVRVPAGTVT
+      GTWNVPGRAWLVHBGIVTSVTVIVJDGAVTVKVLVMVO $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
