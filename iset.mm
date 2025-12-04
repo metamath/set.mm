@@ -190318,6 +190318,13 @@ $)
     ( wcel cedgf cnx cfv edgfid id cn edgfndxnn a1i strnfvnd ) ABCZADEDFZBGMHNI
     CMJKL $.
 
+  $( The index value of the ` Base ` slot is less than the index value of the
+     ` .ef ` slot.  (Contributed by AV, 21-Sep-2020.)  (Proof shortened by AV,
+     30-Oct-2024.) $)
+  basendxltedgfndx $p |- ( Base ` ndx ) < ( .ef ` ndx ) $=
+    ( c1 cdc cnx cbs cfv cedgf clt 1nn 8nn0 1nn0 declti basendx edgfndx 3brtr4i
+    c8 1lt10 ) AAOBCDECFEGAOAHIJPKLMN $.
+
 
 $(
 ###############################################################################

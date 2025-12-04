@@ -119,6 +119,7 @@
 "basendx" is used by "2strstr1g".
 "basendx" is used by "2strstrg".
 "basendx" is used by "basendxltdsndx".
+"basendx" is used by "basendxltedgfndx".
 "basendx" is used by "basendxltplendx".
 "basendx" is used by "basendxltplusgndx".
 "basendx" is used by "basendxlttsetndx".
@@ -184,6 +185,7 @@
 "df-pnf" is used by "pnfxr".
 "df-tru" is used by "tru".
 "dvelimALT" is used by "hbsb4".
+"edgfndx" is used by "basendxltedgfndx".
 "edgfndx" is used by "edgfndxnn".
 "elirr" is used by "elirrv".
 "elirr" is used by "fiunsnnn".
@@ -425,7 +427,7 @@ New usage of "axpre-suploc" is discouraged (0 uses).
 New usage of "axprecex" is discouraged (2 uses).
 New usage of "axresscn" is discouraged (4 uses).
 New usage of "axrnegex" is discouraged (0 uses).
-New usage of "basendx" is discouraged (19 uses).
+New usage of "basendx" is discouraged (20 uses).
 New usage of "baseval" is discouraged (0 uses).
 New usage of "bdcnulALT" is discouraged (0 uses).
 New usage of "bdnthALT" is discouraged (0 uses).
@@ -467,7 +469,7 @@ New usage of "difidALT" is discouraged (0 uses).
 New usage of "djulclALT" is discouraged (0 uses).
 New usage of "djurclALT" is discouraged (0 uses).
 New usage of "dvelimALT" is discouraged (1 uses).
-New usage of "edgfndx" is discouraged (1 uses).
+New usage of "edgfndx" is discouraged (2 uses).
 New usage of "elirr" is discouraged (16 uses).
 New usage of "equsalh" is discouraged (5 uses).
 New usage of "eu3h" is discouraged (3 uses).
