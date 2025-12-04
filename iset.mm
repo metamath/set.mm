@@ -190371,6 +190371,18 @@ $)
   df-iedg $a |- iEdg = ( g e. _V |-> if ( g e. ( _V X. _V ) ,
                                                ( 2nd ` g ) , ( .ef ` g ) ) ) $.
 
+  ${
+    $d G g $.
+    $( The set of vertices of a graph.  (Contributed by AV, 9-Jan-2020.)
+       (Revised by AV, 21-Sep-2020.) $)
+    vtxvalg $p |- ( G e. V -> ( Vtx ` G ) = if ( G e. ( _V X. _V ) ,
+                                    ( 1st ` G ) , ( Base ` G ) ) ) $=
+      ( vg wcel cvv cxp c1st cfv cbs cif cvtx df-vtx wceq eleq1 fveq2 ifbieq12d
+      cv elex 1stexg wfn basfn funfvex funfni sylancr ifexd fvmptd3 ) ABDZCACQZ
+      EEFZDZUHGHZUHIHZJAUIDZAGHZAIHZJEKECLUHAMUJUMUKULUNUOUHAUINUHAGOUHAIOPABRZ
+      UGUMUNUOEEABSUGIETAEDUOEDZUAUPUQEAIAIUBUCUDUEUF $.
+  $}
+
 
 $(
 ###############################################################################
