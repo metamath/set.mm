@@ -190381,6 +190381,15 @@ $)
       cv elex 1stexg wfn basfn funfvex funfni sylancr ifexd fvmptd3 ) ABDZCACQZ
       EEFZDZUHGHZUHIHZJAUIDZAGHZAIHZJEKECLUHAMUJUMUKULUNUOUHAUINUHAGOUHAIOPABRZ
       UGUMUNUOEEABSUGIETAEDUOEDZUAUPUQEAIAIUBUCUDUEUF $.
+
+    $( The set of indexed edges of a graph.  (Contributed by AV,
+       21-Sep-2020.) $)
+    iedgvalg $p |- ( G e. V -> ( iEdg ` G ) = if ( G e. ( _V X. _V ) ,
+                                      ( 2nd ` G ) , ( .ef ` G ) ) ) $=
+      ( vg wcel cvv cxp c2nd cfv cedgf ciedg df-iedg wceq eleq1 fveq2 ifbieq12d
+      cv cif elex 2ndexg cnx edgfid edgfndxnn ndxslid slotex ifexd fvmptd3 ) AB
+      DZCACPZEEFZDZUHGHZUHIHZQAUIDZAGHZAIHZQEJECKUHALUJUMUKULUNUOUHAUIMUHAGNUHA
+      INOABRUGUMUNUOEEABSAIBITIHUAUBUCUDUEUF $.
   $}
 
 
