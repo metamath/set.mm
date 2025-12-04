@@ -190264,6 +190264,37 @@ $)
 
 $(
 ###############################################################################
+  GRAPH THEORY
+###############################################################################
+$)
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Vertices and edges
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  The edge function extractor for extensible structures
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c .ef $.
+
+  $( Extend class notation with an edge function. $)
+  cedgf $a class .ef $.
+
+  $( Define the edge function (indexed edges) of a graph.  (Contributed by AV,
+     18-Jan-2020.)  Use its index-independent form ~ edgfid instead.
+     (New usage is discouraged.) $)
+  df-edgf $a |- .ef = Slot ; 1 8 $.
+
+
+$(
+###############################################################################
   GUIDES AND MISCELLANEA
 ###############################################################################
 $)
@@ -192474,6 +192505,11 @@ htmldef "/L" as
     "<IMG SRC='subcl.gif' WIDTH=8 HEIGHT=19 ALT='L' TITLE='L'>";
   althtmldef "/L" as " /<sub><i>L</i></sub> ";
   latexdef "/L" as " /_L ";
+
+/* Graph theory */
+htmldef ".ef" as '.ef';
+  althtmldef ".ef" as ".ef";
+  latexdef ".ef" as "\mathrm{ef}";
 
 /* htmldef, althtmldef, latexdef for mathboxes */
 /* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
