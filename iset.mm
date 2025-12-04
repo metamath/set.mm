@@ -190333,6 +190333,46 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Vertices and indexed edges
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Definitions and basic properties
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $c Vtx iEdg $.
+
+  $( Extend class notation with the vertices of "graphs". $)
+  cvtx $a class Vtx $.
+
+  $( Extend class notation with the indexed edges of "graphs". $)
+  ciedg $a class iEdg $.
+
+  $( Define the function mapping a graph to the set of its vertices.  This
+     definition is very general:  It defines the set of vertices for any
+     ordered pair as its first component, and for any other class as its "base
+     set".  It is meaningful, however, only if the ordered pair represents a
+     graph resp. the class is an extensible structure representing a graph.
+     (Contributed by AV, 9-Jan-2020.)  (Revised by AV, 20-Sep-2020.) $)
+  df-vtx $a |- Vtx = ( g e. _V |-> if ( g e. ( _V X. _V ) ,
+                                        ( 1st ` g ) , ( Base ` g ) ) ) $.
+
+  $( Define the function mapping a graph to its indexed edges.  This definition
+     is very general:  It defines the indexed edges for any ordered pair as its
+     second component, and for any other class as its "edge function".  It is
+     meaningful, however, only if the ordered pair represents a graph resp. the
+     class is an extensible structure (containing a slot for "edge functions")
+     representing a graph.  (Contributed by AV, 20-Sep-2020.) $)
+  df-iedg $a |- iEdg = ( g e. _V |-> if ( g e. ( _V X. _V ) ,
+                                               ( 2nd ` g ) , ( .ef ` g ) ) ) $.
+
+
+$(
 ###############################################################################
   GUIDES AND MISCELLANEA
 ###############################################################################
@@ -192549,6 +192589,12 @@ htmldef "/L" as
 htmldef ".ef" as '.ef';
   althtmldef ".ef" as ".ef";
   latexdef ".ef" as "\mathrm{ef}";
+htmldef "Vtx" as 'Vtx';
+  althtmldef "Vtx" as 'Vtx';
+  latexdef "Vtx" as "\mathrm{Vtx}";
+htmldef "iEdg" as 'iEdg';
+  althtmldef "iEdg" as 'iEdg';
+  latexdef "iEdg" as "\mathrm{iEdg}";
 
 /* htmldef, althtmldef, latexdef for mathboxes */
 /* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
