@@ -190435,6 +190435,13 @@ $)
     ( cvv cxp wcel ciedg cfv c2nd cedgf cif iedgvalg iftrue eqtrd ) ABBCZDZAEFN
     AGFZAHFZIOAMJNOPKL $.
 
+  $( The set of indexed edges of a graph represented as an ordered pair of
+     vertices and indexed edges as function value.  (Contributed by AV,
+     21-Sep-2020.) $)
+  opiedgfv $p |- ( ( V e. X /\ E e. Y ) -> ( iEdg ` <. V , E >. ) = E ) $=
+    ( wcel cop ciedg cfv c2nd cvv cxp wceq opelvvg opiedgval syl op2ndg eqtrd
+    wa ) BCEADERZBAFZGHZTIHZASTJJKEUAUBLBACDMTNOBACDPQ $.
+
 
 $(
 ###############################################################################
