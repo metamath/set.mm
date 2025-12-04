@@ -190297,6 +190297,11 @@ $)
   edgfid $p |- .ef = Slot ( .ef ` ndx ) $=
     ( cedgf c1 c8 cdc df-edgf 1nn0 8nn decnncl ndxid ) ABCDEBCFGHI $.
 
+  $( Index value of the ~ df-edgf slot.  (Contributed by AV, 13-Oct-2024.)
+     (New usage is discouraged.) $)
+  edgfndx $p |- ( .ef ` ndx ) = ; 1 8 $=
+    ( cedgf c1 c8 cdc df-edgf 1nn0 8nn decnncl ndxarg ) ABCDEBCFGHI $.
+
 
 $(
 ###############################################################################

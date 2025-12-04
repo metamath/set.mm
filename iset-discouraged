@@ -171,6 +171,7 @@
 "df-div" is used by "divfnzn".
 "df-div" is used by "divvalap".
 "df-edgf" is used by "edgfid".
+"df-edgf" is used by "edgfndx".
 "df-ilim" is used by "dflim2".
 "df-inn" is used by "dfnn2".
 "df-iom" is used by "dfom3".
@@ -451,7 +452,7 @@ New usage of "dcnnOLD" is discouraged (0 uses).
 New usage of "demoivreALT" is discouraged (0 uses).
 New usage of "df-cnfld" is discouraged (8 uses).
 New usage of "df-div" is discouraged (2 uses).
-New usage of "df-edgf" is discouraged (1 uses).
+New usage of "df-edgf" is discouraged (2 uses).
 New usage of "df-ilim" is discouraged (1 uses).
 New usage of "df-inn" is discouraged (1 uses).
 New usage of "df-iom" is discouraged (1 uses).
@@ -465,6 +466,7 @@ New usage of "difidALT" is discouraged (0 uses).
 New usage of "djulclALT" is discouraged (0 uses).
 New usage of "djurclALT" is discouraged (0 uses).
 New usage of "dvelimALT" is discouraged (1 uses).
+New usage of "edgfndx" is discouraged (0 uses).
 New usage of "elirr" is discouraged (16 uses).
 New usage of "equsalh" is discouraged (5 uses).
 New usage of "eu3h" is discouraged (3 uses).
