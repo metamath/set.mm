@@ -190302,6 +190302,15 @@ $)
   edgfndx $p |- ( .ef ` ndx ) = ; 1 8 $=
     ( cedgf c1 c8 cdc df-edgf 1nn0 8nn decnncl ndxarg ) ABCDEBCFGHI $.
 
+  $( The index value of the edge function extractor is a positive integer.
+     This property should be ensured for every concrete coding because
+     otherwise it could not be used in an extensible structure (slots must be
+     positive integers).  (Contributed by AV, 21-Sep-2020.)  (Proof shortened
+     by AV, 13-Oct-2024.) $)
+  edgfndxnn $p |- ( .ef ` ndx ) e. NN $=
+    ( cnx cedgf cfv c1 c8 cdc cn edgfndx 1nn0 8nn decnncl eqeltri ) ABCDEFGHDEI
+    JKL $.
+
 
 $(
 ###############################################################################

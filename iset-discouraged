@@ -184,6 +184,7 @@
 "df-pnf" is used by "pnfxr".
 "df-tru" is used by "tru".
 "dvelimALT" is used by "hbsb4".
+"edgfndx" is used by "edgfndxnn".
 "elirr" is used by "elirrv".
 "elirr" is used by "fiunsnnn".
 "elirr" is used by "nndcel".
@@ -466,7 +467,7 @@ New usage of "difidALT" is discouraged (0 uses).
 New usage of "djulclALT" is discouraged (0 uses).
 New usage of "djurclALT" is discouraged (0 uses).
 New usage of "dvelimALT" is discouraged (1 uses).
-New usage of "edgfndx" is discouraged (0 uses).
+New usage of "edgfndx" is discouraged (1 uses).
 New usage of "elirr" is discouraged (16 uses).
 New usage of "equsalh" is discouraged (5 uses).
 New usage of "eu3h" is discouraged (3 uses).
