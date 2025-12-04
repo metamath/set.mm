@@ -190292,6 +190292,11 @@ $)
      (New usage is discouraged.) $)
   df-edgf $a |- .ef = Slot ; 1 8 $.
 
+  $( Utility theorem: index-independent form of ~ df-edgf .  (Contributed by
+     AV, 16-Nov-2021.) $)
+  edgfid $p |- .ef = Slot ( .ef ` ndx ) $=
+    ( cedgf c1 c8 cdc df-edgf 1nn0 8nn decnncl ndxid ) ABCDEBCFGHI $.
+
 
 $(
 ###############################################################################
