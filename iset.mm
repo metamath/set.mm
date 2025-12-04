@@ -190311,6 +190311,13 @@ $)
     ( cnx cedgf cfv c1 c8 cdc cn edgfndx 1nn0 8nn decnncl eqeltri ) ABCDEFGHDEI
     JKL $.
 
+  $( The value of the edge function extractor is the value of the corresponding
+     slot of the structure.  (Contributed by AV, 21-Sep-2020.)  (Proof
+     shortened by AV, 28-Oct-2024.) $)
+  edgfndxid $p |- ( G e. V -> ( .ef ` G ) = ( G ` ( .ef ` ndx ) ) ) $=
+    ( wcel cedgf cnx cfv edgfid id cn edgfndxnn a1i strnfvnd ) ABCZADEDFZBGMHNI
+    CMJKL $.
+
 
 $(
 ###############################################################################
