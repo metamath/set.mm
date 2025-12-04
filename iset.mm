@@ -190422,6 +190422,13 @@ $)
     ( wcel wa cop cvtx cfv c1st cvv cxp wceq opelvvg opvtxval syl op1stg eqtrd
     ) BCEADEFZBAGZHIZTJIZBSTKKLEUAUBMBACDNTOPBACDQR $.
 
+  $( The set of vertices of a graph represented as an ordered pair of vertices
+     and indexed edges as operation value.  (Contributed by AV,
+     21-Sep-2020.) $)
+  opvtxov $p |- ( ( V e. X /\ E e. Y ) -> ( V Vtx E ) = V ) $=
+    ( wcel wa cvtx co cop cfv df-ov opvtxfv eqtrid ) BCEADEFBAGHBAIGJBBAGKABCDL
+    M $.
+
 
 $(
 ###############################################################################
