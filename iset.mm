@@ -190449,6 +190449,16 @@ $)
     ( wcel wa ciedg co cop cfv df-ov opiedgfv eqtrid ) BCEADEFBAGHBAIGJABAGKABC
     DLM $.
 
+  ${
+    opvtxfvi.v $e |- V e. _V $.
+    opvtxfvi.e $e |- E e. _V $.
+    $( The set of vertices of a graph represented as an ordered pair of
+       vertices and indexed edges as function value.  (Contributed by AV,
+       4-Mar-2021.) $)
+    opvtxfvi $p |- ( Vtx ` <. V , E >. ) = V $=
+      ( cvv wcel cop cvtx cfv wceq opvtxfv mp2an ) BEFAEFBAGHIBJCDABEEKL $.
+  $}
+
 
 $(
 ###############################################################################
