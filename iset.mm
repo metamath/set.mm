@@ -190392,6 +190392,16 @@ $)
       INOABRUGUMUNUOEEABSAIBITIHUAUBUCUDUEUF $.
   $}
 
+  ${
+    1vgrex.v $e |- V = ( Vtx ` G ) $.
+    $( A graph with at least one vertex is a set.  (Contributed by AV,
+       2-Mar-2021.) $)
+    1vgrex $p |- ( N e. V -> G e. _V ) $=
+      ( vg wcel cvtx cdm cfv wrel wfun cvv cv cxp cbs cif df-vtx funmpt2 funrel
+      c1st ax-mp relelfvdm mpan eleq2s elexd ) BCFAGHZAUFFZBAGIZCGJZBUHFUGGKUIE
+      LEMZLLNFUJTIUJOIPGEQRGSUABAGUBUCDUDUE $.
+  $}
+
 
 $(
 ###############################################################################
