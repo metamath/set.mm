@@ -190429,6 +190429,12 @@ $)
     ( wcel wa cvtx co cop cfv df-ov opvtxfv eqtrid ) BCEADEFBAGHBAIGJBBAGKABCDL
     M $.
 
+  $( The set of indexed edges of a graph represented as an ordered pair of
+     vertices and indexed edges.  (Contributed by AV, 21-Sep-2020.) $)
+  opiedgval $p |- ( G e. ( _V X. _V ) -> ( iEdg ` G ) = ( 2nd ` G ) ) $=
+    ( cvv cxp wcel ciedg cfv c2nd cedgf cif iedgvalg iftrue eqtrd ) ABBCZDZAEFN
+    AGFZAHFZIOAMJNOPKL $.
+
 
 $(
 ###############################################################################
