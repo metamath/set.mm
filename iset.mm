@@ -190404,6 +190404,20 @@ $)
 
 
 $(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  The vertices and edges of a graph represented as ordered pair
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $( The set of vertices of a graph represented as an ordered pair of vertices
+     and indexed edges.  (Contributed by AV, 9-Jan-2020.)  (Revised by AV,
+     21-Sep-2020.) $)
+  opvtxval $p |- ( G e. ( _V X. _V ) -> ( Vtx ` G ) = ( 1st ` G ) ) $=
+    ( cvv cxp wcel cvtx cfv c1st cbs cif vtxvalg iftrue eqtrd ) ABBCZDZAEFNAGFZ
+    AHFZIOAMJNOPKL $.
+
+
+$(
 ###############################################################################
   GUIDES AND MISCELLANEA
 ###############################################################################
