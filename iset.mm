@@ -190325,6 +190325,12 @@ $)
     ( c1 cdc cnx cbs cfv cedgf clt 1nn 8nn0 1nn0 declti basendx edgfndx 3brtr4i
     c8 1lt10 ) AAOBCDECFEGAOAHIJPKLMN $.
 
+  $( The slots ` Base ` and ` .ef ` are different.  (Contributed by AV,
+     21-Sep-2020.) $)
+  basendxnedgfndx $p |- ( Base ` ndx ) =/= ( .ef ` ndx ) $=
+    ( cnx cbs cfv cedgf basendxnn nnrei basendxltedgfndx ltneii ) ABCZADCIEFGH
+    $.
+
 
 $(
 ###############################################################################
