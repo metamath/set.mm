@@ -115993,6 +115993,24 @@ $)
 
 
 $(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Proper unordered pairs and triples (sets of size 2 and 3)
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  ${
+    $( Two equivalent ways to say a set has two elements.  (Contributed by Jim
+       Kingdon, 4-Dec-2025.) $)
+    hash2en $p |- ( V ~~ 2o <-> ( V e. Fin /\ ( # ` V ) = 2 ) ) $=
+      ( c2o cen wbr cfn wcel chash cfv c2 wceq wa com 2onn nnfi ax-mp mpbiri wb
+      enfi sylancl hash2 hashen ibir eqtrdi simpr eqtr4di simpl mpbid impbii
+      jca ) ABCDZAEFZAGHZIJZKZUJUKUMUJUKBEFZBLFUOMBNOZABRPZUJULBGHZIUJULURJZUJU
+      KUOUSUJQZUQUPABUAZSUBTUCUIUNUSUJUNULIURUKUMUDTUEUNUKUOUTUKUMUFUPVASUGUH
+      $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Words over a set
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
