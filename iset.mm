@@ -66538,6 +66538,23 @@ $)
       CHUHBCUIRAIIQUJZVLVMAITUKULIIUMUNVDIVEVGUQUOBCUPIURUSUTVA $.
   $}
 
+  ${
+    $d A f x y $.
+    $( A set equinumerous to ordinal 2 is a pair.  (Contributed by Mario
+       Carneiro, 5-Jan-2016.) $)
+    en2 $p |- ( A ~~ 2o -> E. x E. y A = { x , y } ) $=
+      ( vf c2o cv wf1o cpr wceq wex cfv c1o cima wfn adantl wcel syl 0lt2o a1i
+      c0 cen wbr bren biimpi ccnv cdm crn cnvimarndm wfun dff1o2 simp3bi eqtrdi
+      wa df2o3 imaeq2d eqtr3id f1odm f1ocnv f1ofn 1lt2o fnimapr syl3anc 3eqtr3d
+      simpr f1ocnvdm sylancl wi preq2 eqeq2d spcegv exbidv sylsyld mpd exlimddv
+      preq1 ) CEUAUBZCEDFZGZCAFZBFZHZIZBJZAJZDVPVRDJCEDUCUDVPVRUMZCTVQUEZKZLWFK
+      ZHZIZWDWEVQUFZWFTLHZMZCWIWEWKWFVQUGZMZWMVQUHVRWOWMIVPVRWNWLWFVRWNEWLVRVQC
+      NWFUIWNEICEVQUJUKUNULUOOUPVRWKCIVPCEVQUQOWEWFENZTEPZLEPZWMWIIWEECWFGZWPVR
+      WSVPCEVQUROECWFUSQWQWERSWRWEUTSETLWFVAVBVCWEWGCPZWJCWGVTHZIZBJZWDWEVRWQWT
+      VPVRVDZRCETVQVEVFWEWHCPZWJXCVGWEVRWRXEXDUTCELVQVEVFXBWJBWHCVTWHIXAWICVTWH
+      WGVHVIVJQWCXCAWGCVSWGIZWBXBBXFWAXACVSWGVTVOVIVKVJVLVMVN $.
+  $}
+
   $( A subset of a set dominated by ` _om ` is dominated by ` _om ` .
      (Contributed by Thierry Arnoux, 31-Jan-2017.) $)
   ssct $p |- ( ( A C_ B /\ B ~<_ _om ) -> A ~<_ _om ) $=
