@@ -66209,6 +66209,18 @@ $)
       AQIUFUDRAKUAUBQMNOUAUBCPUAUBDPST $.
   $}
 
+  ${
+    $d A f $.  $d B f $.  $d C f $.  $d V f $.
+    $( If ` C ` is a superset of ` B ` and ` B ` dominates ` A ` , then ` C `
+       also dominates ` A ` .  (Contributed by BTernaryTau, 7-Dec-2024.) $)
+    domssr $p |- ( ( C e. V /\ B C_ C /\ A ~<_ B ) -> A ~<_ C ) $=
+      ( vf wcel wss cdom wbr w3a cv wf1 wex cvv wa brdomi 3ad2ant3 simp2 reldom
+      brrelex1i simp1 jca32 wi f1ss vex f1dom4g mp3anl1 sylan expl exlimiv sylc
+      ancoms ) CDFZBCGZABHIZJZABEKZLZEMZUNANFZUMOZOZACHIZUOUMUSUNABEPQUPUNUTUMU
+      MUNUORUOUMUTUNABHSTQUMUNUOUAUBURVBVCUCEURUNVAVCURUNOACUQLZVAVCABCUQUDVAVD
+      VCUQNFUTUMVDVCEUEACUQNNDUFUGULUHUIUJUK $.
+  $}
+
   $( A set dominates its subsets.  Theorem 16 of [Suppes] p. 94.  (Contributed
      by NM, 19-Jun-1998.)  (Revised by Mario Carneiro, 24-Jun-2015.) $)
   ssdomg $p |- ( B e. V -> ( A C_ B -> A ~<_ B ) ) $=
