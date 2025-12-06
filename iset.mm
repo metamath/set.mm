@@ -65892,6 +65892,15 @@ $)
       KZEKZUTLZCMAVGUTLZCMVBDEABHHFVFASVHVICVFAVGUTULTVGBSVIVACVGBAUTUNTDECUMUO
       UP $.
 
+    $( Dominance relation.  This variation of ~ brdomg does not require the
+       Axiom of Union.  (Contributed by NM, 15-Jun-1998.)  Extract from a
+       subproof of ~ brdomg .  (Revised by BTernaryTau, 29-Nov-2024.) $)
+    brdom2g $p |- ( ( A e. V /\ B e. W ) ->
+        ( A ~<_ B <-> E. f f : A -1-1-> B ) ) $=
+      ( vx vy cv wf1 wex cdom wceq f1eq2 exbidv f1eq3 df-dom brabg ) FHZGHZCHZI
+      ZCJASTIZCJABTIZCJFGABDEKRALUAUBCRASTMNSBLUBUCCSBATONFGCPQ $.
+    $( $j usage 'brdom2g' avoids 'ax-un'; $)
+
     $( Dominance relation.  (Contributed by NM, 15-Jun-1998.) $)
     brdomg $p |- ( B e. C -> ( A ~<_ B <-> E. f f : A -1-1-> B ) ) $=
       ( vx vy wcel cvv cdom wbr cv wf1 wex wi reldom brrelex1i a1i wceq exbidv
