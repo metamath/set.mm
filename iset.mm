@@ -66537,6 +66537,26 @@ $)
   $}
 
   ${
+    $d A f $.  $d B f $.  $d C f $.  $d D f $.
+    en2prd.1 $e |- ( ph -> A e. V ) $.
+    en2prd.2 $e |- ( ph -> B e. W ) $.
+    en2prd.3 $e |- ( ph -> C e. X ) $.
+    en2prd.4 $e |- ( ph -> D e. Y ) $.
+    en2prd.5 $e |- ( ph -> A =/= B ) $.
+    en2prd.6 $e |- ( ph -> C =/= D ) $.
+    $( Two unordered pairs are equinumerous.  (Contributed by BTernaryTau,
+       23-Dec-2024.) $)
+    en2prd $p |- ( ph -> { A , B } ~~ { C , D } ) $=
+      ( vf cpr cvv wcel syl2anc cen wbr cv wex cop opexg prexg wne wa wi f1oprg
+      wf1o syl22anc mp2and f1oeq1 elabd wb breng mpbird ) ABCQZDEQZUAUBZUTVAPUC
+      ZULZPUDZAVDUTVABDUEZCEUEZQZULZPVHAVFRSZVGRSZVHRSABFSZDHSZVJJLBDFHUFTACGSZ
+      EISZVKKMCEGIUFTVFVGRRUGTABCUHZDEUHZVINOAVLVMVNVOVPVQUIVIUJJLKMBDCEFHGIUKU
+      MUNUTVAVCVHUOUPAUTRSZVARSZVBVEUQAVLVNVRJKBCFGUGTAVMVOVSLMDEHIUGTUTVAPRRUR
+      TUS $.
+    $( $j usage 'en2prd' avoids 'ax-un'; $)
+  $}
+
+  ${
     enpr2d.1 $e |- ( ph -> A e. C ) $.
     enpr2d.2 $e |- ( ph -> B e. D ) $.
     enpr2d.3 $e |- ( ph -> -. A = B ) $.
