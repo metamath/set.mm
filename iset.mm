@@ -65871,6 +65871,18 @@ $)
 
   ${
     $d f x y A $.  $d f x y B $.  $d y C $.
+    $( Equinumerosity relation.  This variation of ~ bren does not require the
+       Axiom of Union.  (Contributed by NM, 15-Jun-1998.)  Extract from a
+       subproof of ~ bren .  (Revised by BTernaryTau, 23-Sep-2024.) $)
+    breng $p |- ( ( A e. V /\ B e. W ) ->
+        ( A ~~ B <-> E. f f : A -1-1-onto-> B ) ) $=
+      ( vx vy cv wf1o wex cen wceq f1oeq2 exbidv f1oeq3 df-en brabg ) FHZGHZCHZ
+      IZCJASTIZCJABTIZCJFGABDEKRALUAUBCRASTMNSBLUBUCCSBATONFGCPQ $.
+    $( $j usage 'breng' avoids 'ax-un'; $)
+  $}
+
+  ${
+    $d f x y A $.  $d f x y B $.  $d y C $.
     $( Equinumerosity relation.  (Contributed by NM, 15-Jun-1998.) $)
     bren $p |- ( A ~~ B <-> E. f f : A -1-1-onto-> B ) $=
       ( vx vy cen wbr cvv wcel wa cv wf1o wex encv wfn f1ofn eqeltrrdi syl wceq
