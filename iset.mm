@@ -66603,6 +66603,19 @@ $)
   $}
 
   ${
+    $d A x y $.
+    $( A set that has at least 2 different members dominates ordinal 2.
+       (Contributed by BTernaryTau, 30-Dec-2024.) $)
+    rex2dom $p |- ( ( A e. V /\ E. x e. A E. y e. A x =/= y ) -> 2o ~<_ A ) $=
+      ( wcel cv wne wrex c2o cdom wbr cvv wi cpr cen c0 c1o a1i vex syl elex wa
+      wss prssi df2o3 0ex 1oex 1n0 necomi en2prd eqbrtrid domssr 3expib syl2ani
+      id endom expd rexlimdvv imp ) CDEZAFZBFZGZBCHACHZICJKZUTCLEZVDVEMCDUAVFVC
+      VEABCCVFVACEVBCEUBZVCVEVGVFVAVBNZCUCZIVHJKZVEVCVAVBCUDVCIVHOKVJVCIPQNVHOU
+      EVCPQVAVBLLLLPLEVCUFRQLEVCUGRVALEVCASRVBLEVCBSRPQGVCQPUHUIRVCUOUJUKIVHUPT
+      VFVIVJVEIVHCLULUMUNUQURTUS $.
+  $}
+
+  ${
     enpr2d.1 $e |- ( ph -> A e. C ) $.
     enpr2d.2 $e |- ( ph -> B e. D ) $.
     enpr2d.3 $e |- ( ph -> -. A = B ) $.
