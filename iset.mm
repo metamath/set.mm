@@ -116196,6 +116196,34 @@ $)
 
 
 $(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Functions with a domain containing at least two different elements
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  ${
+    $d G a b x y $.
+    $( A function with a domain containing (at least) two different elements is
+       not an ordered pair.  This theorem (which requires that
+       ` ( G \ { (/) } ) ` needs to be a function instead of ` G ` ) is useful
+       for proofs for extensible structures, see ~ structn0fun .  (Contributed
+       by AV, 12-Oct-2020.)  (Revised by AV, 7-Jun-2021.)  (Proof shortened by
+       AV, 15-Nov-2021.) $)
+    fundm2domnop0 $p |- ( ( Fun ( G \ { (/) } ) /\ 2o ~<_ dom G )
+                        -> -. G e. ( _V X. _V ) ) $=
+      ( va vb vx vy cdm cdif wfun cvv wcel wn cv wceq wrex wi wa wex eleq2d vex
+      com23 c2o cdom wbr c0 csn cxp 2dom elvv difeq1 funeqd opwo0id eqcomi dmeq
+      cop funeqi anbi12d eqid funopdmsn expcom biimtrdi biimtrid sylbid impcomd
+      3expb exlimivv com12 con3d ex rexlimivv syl impcom ) UAAFZUBUCZAUDUEZGZHZ
+      AIIUFJZKZVMBLZCLZMZKZCVLNBVLNVPVROZBCVLUGWBWCBCVLVLVSVLJZVTVLJZPZVPWBVRWF
+      VPWBVROWFVPPZVQWAVQADLZELZUNZMZEQDQZWGWADEAUHWLWGWAWKWGWAODEWKVPWFWAWKVPW
+      JVNGZHZWFWAOZWKVOWMAWJVNUIUJWNWJHZWKWOWMWJWJWMWHWIUKULUOWKWFWPWAWKWFVSWJF
+      ZJZVTWQJZPZWPWAOWKWDWRWEWSWKVLWQVSAWJUMZRWKVLWQVTXARUPWPWTWAWPWRWSWAVSVTW
+      JIIWHWIWJUQDSESURVDUSUTTVAVBVCVEVFVAVGVHTVIVJVK $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Words over a set
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
