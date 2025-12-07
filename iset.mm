@@ -52145,6 +52145,76 @@ $)
       UDSUE $.
   $}
 
+  ${
+    $d F x $.
+    $( A function is a union of singletons of ordered pairs indexed by its
+       domain.  (Contributed by AV, 18-Sep-2020.) $)
+    funiun $p |- ( Fun F -> F = U_ x e. dom F { <. x , ( F ` x ) >. } ) $=
+      ( wfun cdm cv cfv cmpt cop csn ciun wfn wceq funfn dffn5im sylbi cvv wcel
+      wral funfvex ralrimiva dfmptg syl eqtrd ) BCZBABDZAEZBFZGZAUEUFUGHIJZUDBU
+      EKBUHLBMAUEBNOUDUGPQZAUERUHUILUDUJAUEUFBSTAUEUGPUAUBUC $.
+  $}
+
+  ${
+    $d F a b c d $.  $d X a b c d $.  $d Y a b c d $.
+    funopsn.x $e |- X e. _V $.
+    funopsn.y $e |- Y e. _V $.
+    $( If a function is an ordered pair then it is a singleton of an ordered
+       pair.  (Contributed by AV, 20-Sep-2020.)  (Proof shortened by AV,
+       15-Jul-2021.)  A function is a class of ordered pairs, so the fact that
+       an ordered pair may sometimes be itself a function is an "accident"
+       depending on the specific encoding of ordered pairs as classes (in
+       set.mm, the Kuratowski encoding).  A more meaningful statement is
+       ~ funsng , as ~ relsnopg is to ~ relop .  (New usage is discouraged.) $)
+    funopsn $p |- ( ( Fun F /\ F = <. X , Y >. )
+                              -> E. a ( X = { a } /\ F = { <. a , a >. } ) ) $=
+      ( vb vc vd cv cop wcel wex wceq wa csn cvv cpr vex sylib wfun wi mpbir2an
+      opm wrel funrel ad2antrr simpr simplr eleqtrrd syl2anc dfop eqeq2i biimpi
+      elrel adantl wo wb dfsn2 simpl funeqd mpbid funopg mp3an12i preq2d eqtrid
+      elop eqeq2d orbi2d adantr mpbird eqtr3d snex zfpair2 preqsn simpld simprd
+      oridm eqtr2d 3eqtr4a sneqd opid sneqi eqtr4di eqtrd sneq id opeq12d spcev
+      anbi12d ex exlimdvv mpd expcom exlimiv ax-mp ) GJZBCKZLZGMZAUAZAWRNZOZBDJ
+      ZPZNZAXDXDKZPZNZOZDMZUBZWTBQLZCQLZEFGBCUDUCWSXLGXCWSXKXCWSOZWQHJZIJZKZNZI
+      MHMZXKXOAUEZWQALXTXAYAXBWSAUFUGXOWQWRAXCWSUHZXAXBWSUIUJHIWQAUOUKXOXSXKHIX
+      OXSXKXOXSOZBXPPZNZAXPXPKZPZNZXKYCYDXPXQRZBYCYDYINZYIBNZYCYDYIRZBPZNYJYKOY
+      CWQYLYMXSWQYLNZXOXSYNXRYLWQXPXQHSZISULUMUNUPXOWQYMNZXSXOYPYPUQZYPXOYQYPWQ
+      BCRZNZUQZXOWSYTYBWQBCGSEFVGTXCYQYTURWSXCYPYSYPXCYMYRWQXCYMBBRYRBUSXCBCBXM
+      XNXCWRUAZBCNEFXCXAUUAXAXBUTXCAWRXAXBUHZVAVBBCQQVCVDVEVFZVHVIVJVKYPVRTVJVL
+      YDYIBXPYOVMHIVNEVOTZVPYCYJYKUUDVQVSZYCAYMPZYGXCAUUFNWSXSXCWRYMYRRZAUUFBCE
+      FULUUBXCUUFYMYMRUUGYMUSXCYMYRYMUUCVEVFVTUGYCUUFYDPZPYGYCYMUUHYCBYDUUEWAWA
+      YFUUHXPYOWBWCWDWEXJYEYHODXPYOXDXPNZXFYEXIYHUUIXEYDBXDXPWFVHUUIXHYGAUUIXGY
+      FUUIXDXPXDXPUUIWGZUUJWHWAVHWJWIUKWKWLWMWNWOWP $.
+
+    $( An ordered pair is a function iff it is a singleton of an ordered pair.
+       (Contributed by AV, 20-Sep-2020.)  A function is a class of ordered
+       pairs, so the fact that an ordered pair may sometimes be itself a
+       function is an "accident" depending on the specific encoding of ordered
+       pairs as classes (in set.mm, the Kuratowski encoding).  A more
+       meaningful statement is ~ funsng , as ~ relsnopg is to ~ relop .
+       (New usage is discouraged.) $)
+    funop $p |- ( Fun <. X , Y >.
+                  <-> E. a ( X = { a } /\ <. X , Y >. = { <. a , a >. } ) ) $=
+      ( cop wfun cv csn wceq wa wex funopsn mpan2 vex funsn funeq mpbiri adantl
+      eqid exlimiv impbii ) ABFZGZACHZIJZUCUEUEFIZJZKZCLZUDUCUCJUJUCTUCABCDEMNU
+      IUDCUHUDUFUHUDUGGUEUECOZUKPUCUGQRSUAUB $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d G x $.  $d X x $.  $d Y x $.
+    funopdmsn.g $e |- G = <. X , Y >. $.
+    funopdmsn.x $e |- X e. V $.
+    funopdmsn.y $e |- Y e. W $.
+    $( The domain of a function which is an ordered pair is a singleton.
+       (Contributed by AV, 15-Nov-2021.)  (Avoid depending on this detail.) $)
+    funopdmsn $p |- ( ( Fun G /\ A e. dom G /\ B e. dom G ) -> A = B ) $=
+      ( vx wfun cdm wcel wceq csn cop wa elexi eleq2 cv wex funeqi funop eqcomi
+      wi bitri eqeq1i vex dmsnop eqtrdi anbi12d elsni eqtr3 syl2an biimtrdi syl
+      dmeq sylbi adantl exlimiv 3impib ) CLZACMZNZBVDNZABOZVCFKUAZPZOZFGQZVHVHQ
+      PZOZRZKUBZVEVFRZVGUFZVCVKLVOCVKHUCFGKFDISGEJSUDUGVNVQKVMVQVJVMCVLOZVQVKCV
+      LCVKHUEUHVRVDVIOZVQVRVDVLMVICVLURVHVHKUIUJUKVSVPAVINZBVINZRVGVSVEVTVFWAVD
+      VIATVDVIBTULVTAVHOBVHOVGWAAVHUMBVHUMABVHUNUOUPUQUSUTVAUSVB $.
+  $}
+
   $( If ` A ` is not in ` C ` , then the restriction of a singleton of
      ` <. A , B >. ` to ` C ` is null.  (Contributed by Scott Fenton,
      15-Apr-2011.) $)
