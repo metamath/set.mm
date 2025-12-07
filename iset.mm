@@ -38115,6 +38115,13 @@ $)
     UICUJUKGZEULUICUHUMUIIUIAJEZBJEZKUHUMSABCLZABJJMNOCUJUKPNUICUJQZCUKQZKULTUI
     UQURUIUJCUIUNUJCQUIUNUOUPUAZAJUBNRUIUKCUIUNUKCQUSABJUCNRUDCUJCUKUEUFUG $.
 
+  $( An ordered pair is equal to the ordered pair without the empty set.  This
+     is because no ordered pair contains the empty set.  (Contributed by AV,
+     15-Nov-2021.) $)
+  opwo0id $p |- <. X , Y >. = ( <. X , Y >. \ { (/) } ) $=
+    ( cop c0 csn cdif cin wceq wcel 0nelop disjsn mpbir disjdif2 ax-mp eqcomi
+    wn ) ABCZDEZFZQQRGDHZSQHTDQIPABJQDKLQRMNO $.
+
   ${
     $d A x $.  $d B x $.  $d C x $.  $d D x $.
 
