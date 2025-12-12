@@ -47915,6 +47915,16 @@ $)
   $}
 
   ${
+    $d x y $.  $d F y $.  $d G y $.
+    $( If the union of classes is a function, there is at most one element in
+       relation to an arbitrary element regarding one of these classes.
+       (Contributed by AV, 18-Jul-2019.) $)
+    fununmo $p |- ( Fun ( F u. G ) -> E* y x F y ) $=
+      ( cun wfun cv wbr wmo funmo wo orc brun sylibr moimi syl ) CDEZFAGZBGZQHZ
+      BIRSCHZBIBRQJUATBUAUARSDHZKTUAUBLRSCDMNOP $.
+  $}
+
+  ${
     $d x y A $.  $d x y B $.
     $( The converse singleton of an ordered pair is a function.  This is
        equivalent to ~ funsn via ~ cnvsn , but stating it this way allows us to
