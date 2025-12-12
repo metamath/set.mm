@@ -190713,6 +190713,16 @@ $)
     IJKZLAMNZAOOPCZAQNZARNZTZUNUHUIUKUOSUJABUAUBUIUJUOUNSUHUIUJUCULUMUNAUDUEUFU
     G $.
 
+  $( The set of indexed edges of an extensible structure with (at least) two
+     slots.  (Contributed by AV, 12-Oct-2020.)  (Revised by Jim Kingdon,
+     11-Dec-2025.) $)
+  funiedgdm2domval $p |- ( ( G e. V /\ Fun ( G \ { (/) } ) /\ 2o ~<_ dom G )
+                          -> ( iEdg ` G ) = ( .ef ` G ) ) $=
+    ( wcel csn cdif wfun c2o cdm cdom wbr w3a ciedg cfv cvv cxp c2nd cedgf wceq
+    c0 cif iedgvalg 3ad2ant1 wa fundm2domnop0 iffalsed 3adant1 eqtrd ) ABCZASDE
+    FZGAHIJZKALMZANNOCZAPMZAQMZTZUNUHUIUKUORUJABUAUBUIUJUOUNRUHUIUJUCULUMUNAUDU
+    EUFUG $.
+
 
 $(
 ###############################################################################
