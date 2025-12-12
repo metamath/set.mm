@@ -71593,8 +71593,11 @@ $)
        Escardo.  One way to understand this theorem is that you do not need to
        look at an unbounded number of elements of the sequence ` X ` to decide
        whether it is equal to ` N ` (in fact, you only need to look at two
-       elements and ` N ` tells you where to look).  (Contributed by BJ and Jim
-       Kingdon, 12-Sep-2024.) $)
+       elements and ` N ` tells you where to look).
+
+       By contrast, the point at infinity being isolated is equivalent to the
+       Weak Limited Principle of Omniscience (WLPO) ( ~ nninfinfwlpo ).
+       (Contributed by BJ and Jim Kingdon, 12-Sep-2024.) $)
     nninfisol $p |- ( ( N e. _om /\ X e. NN+oo )
         -> DECID ( i e. _om |-> if ( i e. N , 1o , (/) ) ) = X ) $=
       ( com wcel wa cfv c0 wceq c1o cif wdc wn simpllr simpr adantr wo mpjaodan
@@ -72401,6 +72404,19 @@ $)
         MZNZOZEPFUDLNEKQZOAGCPZNZOZUMCRUKUOUKNUPULUOUKGUASABPZUONZOZCRQUQCRQBRG
         URGNZUTUQCRVAUSUPURGUOUESUBJABDFGHIUFTUKRUCADUGUHTAULUNABDEFGHIUISUJ $.
     $}
+
+    ${
+      $d F i n x $.  $d G n x $.  $d i n ph x $.
+      nninfinfwlpoimlem.eq $e |- ( ph
+        -> A. x e. NN+oo DECID x = ( i e. _om |-> 1o ) ) $.
+      $( Lemma for ~ nninfinfwlpo .  (Contributed by Jim Kingdon,
+         8-Dec-2024.) $)
+      nninfinfwlpolem $p |- ( ph ->
+          DECID A. n e. _om ( F ` n ) = 1o ) $=
+        ( com c1o cmpt wceq wdc cv cfv wral xnninf eqeq1 dcbid nninfwlpoimlemg
+        rspcdva nninfwlpoimlemginf mpbid ) AFCJKLZMZNZDOEPKMDJQZNABOZUEMZNUGBRF
+        UIFMUJUFUIFUESTIABCEFGHUAUBAUFUHABCDEFGHUCTUD $.
+    $}
   $}
 
   ${
@@ -72418,6 +72434,28 @@ $)
       WKEWGUHWOWNWEWKIEWGWDWJTVQULUMWOWKEWGWMWFWLUNUOUPUQURWCVPEFJZKZFLMELMVPWB
       USVOWQEBJZKABEFLLAEJVNWRAEBUTVABFJWRWPBFEVBVAVEVFVCVGRVHUEWAVTVIVJCRDVHVK
       VLVM $.
+  $}
+
+  ${
+    $d f i k n x z $.  $d f j k n q z $.
+    $( The point at infinity in ` NN+oo ` being isolated is equivalent to the
+       Weak Limited Principle of Omniscience (WLPO).  By isolated, we mean that
+       the equality of that point with every other element of ` NN+oo ` is
+       decidable.  From an online post by Martin Escardo.  By contrast,
+       elements of ` NN+oo ` corresponding to natural numbers are isolated
+       ( ~ nninfisol ).  (Contributed by Jim Kingdon, 25-Nov-2025.) $)
+    nninfinfwlpo $p |- ( A. x e. NN+oo DECID x = ( i e. _om |-> 1o )
+        <-> _om e. WOmni ) $=
+      ( vn vf vz vk vj vq cv com c1o cmpt wceq wdc xnninf wral wcel cfv c2o c0
+      cwomni cmap co wa csuc cif wf elmapi adantl fveqeq2 cbvrexv suceq rexeqdv
+      wrex bitrid ifbid cbvmptv simpl eqidd a1i eqeq12d cbvralv nninfinfwlpolem
+      id dcbid sylib ralrimiva wb omex iswomnimap ax-mp sylibr simpr nninfdcinf
+      cvv impbii ) AIZBJKLZMZNZAOPZJUAQZWACIDIZRKMCJPNZDSJUBUCZPZWBWAWDDWEWAWCW
+      EQZUDZEFCWCGJHIZWCRTMZHGIZUEZUNZTKUFZLWGJSWCUGWAWCSJUHUIGFJWNEIZWCRTMZEFI
+      ZUEZUNZTKUFWKWQMZWMWSTKWMWPEWLUNWTWSWJWPHEWLWIWOTWCUJUKWTWPEWLWRWKWQULUMU
+      OUPUQWHWAWOFJKLZMZNZEOPWAWGURVTXCAEOVQWOMZVSXBXDVQWOVRXAXDVDVRXAMXDBFJKKB
+      IWQMKUSUQUTVAVEVBVFVCVGJVOQWBWFVHVICJDVOVJVKVLWBVTAOWBVQOQZUDBVQWBXEURWBX
+      EVMVNVGVP $.
   $}
 
   ${
@@ -72440,9 +72478,13 @@ $)
 
   $( Introduce new constant symbols. $)
   $c card $. $( Cardinal size function $)
+  $c AC_ $.
 
   $( Extend class definition to include the cardinal size function. $)
   ccrd $a class card $.
+
+  $( The axiom of choice for limited-length sequences. $)
+  wacn $a class AC_ A $.
 
   ${
     $d x y $.
@@ -72452,6 +72494,20 @@ $)
        from Enderton.  Other textbooks often use a double bar over the set to
        express this function.  (Contributed by NM, 21-Oct-2003.) $)
     df-card $a |- card = ( x e. _V |-> |^| { y e. On | y ~~ x } ) $.
+  $}
+
+  ${
+    $d A x f z j g y $.
+    $( Define a local and length-limited version of the axiom of choice.  The
+       definition of the predicate ` X e. AC_ A ` is that for all families of
+       inhabited subsets of ` X ` indexed on ` A ` (i.e. functions
+       ` A --> { z e. ~P X | E. j j e. z } ` ), there is a function which
+       selects an element from each set in the family.  (Contributed by Mario
+       Carneiro, 31-Aug-2015.)  Change nonempty to inhabited.  (Revised by Jim
+       Kingdon, 22-Nov-2025.) $)
+    df-acnm $a |- AC_ A = { x | ( A e. _V /\
+      A. f e. ( { z e. ~P x | E. j j e. z } ^m A )
+      E. g A. y e. A ( g ` y ) e. ( f ` y ) ) } $.
   $}
 
   ${
@@ -72836,6 +72892,51 @@ $)
         -> E. f f : x -onto-> y ) ) $=
       ( wem wel wex cv cdom wbr wfo wal exmidfodomrlemim exmidfodomrlemr impbii
       wa wi ) ECBFCGBHZAHZIJPSRDHKDGQBLALABCDMABCDNO $.
+  $}
+
+  ${
+    $d f g h x y z j w A $.  $d g y z B $.  $d f g x F $.  $d g ph $.
+    $d y ps $.  $d f g x y z j w C $.  $d f g h x y z w X $.
+    $( Reverse closure for the choice set predicate.  (Contributed by Mario
+       Carneiro, 31-Aug-2015.) $)
+    acnrcl $p |- ( X e. AC_ A -> A e. _V ) $=
+      ( vy vg vf vj vz vx vw cvv wcel cv cfv wral wex cpw crab cmap co wa elex2
+      cab wacn abn0m simpl exlimiv sylbi syl df-acnm eleq2s ) AJKZBUKCLZDLMULEL
+      MKCANDOEFLGLKFOGHLPQARSNZTZHUBZAUCBUOKILUOKIOZUKIBUOUAUPUNHOUKUNHIUDUNUKH
+      UKUMUEUFUGUHHCGAEDFUIUJ $.
+
+    $( Equality theorem for the choice set function.  (Contributed by Mario
+       Carneiro, 31-Aug-2015.) $)
+    acneq $p |- ( A = C -> AC_ A = AC_ C ) $=
+      ( vy vg vf vj vz vx cvv wcel cv cfv wral wex cmap co wa cab wacn df-acnm
+      wceq cpw crab eleq1 oveq2 raleq exbidv raleqbidv anbi12d abbidv 3eqtr4g )
+      ABUAZAIJZCKZDKLUNEKLJZCAMZDNZEFKGKJFNGHKUBUCZAOPZMZQZHRBIJZUOCBMZDNZEURBO
+      PZMZQZHRASBSULVAVGHULUMVBUTVFABIUDULUQVDEUSVEABUROUEULUPVCDUOCABUFUGUHUIU
+      JHCGAEDFTHCGBEDFTUK $.
+
+    $( The property of being a choice set of length ` A ` .  (Contributed by
+       Mario Carneiro, 31-Aug-2015.) $)
+    isacnm $p |- ( ( X e. V /\ A e. W ) -> ( X e. AC_ A <->
+      A. f e. ( { z e. ~P X | E. j j e. z } ^m A )
+        E. g A. x e. A ( g ` x ) e. ( f ` x ) ) ) $=
+      ( vy wcel cv cfv wral wex cpw crab cmap co wa wacn rabeqdv oveq1d raleqdv
+      cvv wceq pweq anbi2d df-acnm elab2g wb elex biid baib syl sylan9bb ) IGKI
+      CUAZKCUEKZALZELMUSDLMKACNEOZDFLBLKFOZBIPZQZCRSZNZTZCHKZVEURUTDVABJLZPZQZC
+      RSZNZTVFJIUQGVHIUFZVLVEURVMUTDVKVDVMVJVCCRVMVABVIVBVHIUGUBUCUDUHJABCDEFUI
+      UJVGURVFVEUKCHULVFURVEVFUMUNUOUP $.
+
+    $( Every set has finite choice sequences.  (Contributed by Mario Carneiro,
+       31-Aug-2015.) $)
+    finacn $p |- ( A e. Fin -> AC_ A = _V ) $=
+      ( vx vy vg vf vj vw vz cfn wcel cvv cv cfv wral wex wa wf sylib ralrimiva
+      syl wacn crab cmap co wrex elmapi adantl ffvelcdm wceq eleq2 exbidv elrab
+      cpw simprd eleq1w cbvexv sylibr eleq1 ac6sfi syldan exsimpr wb vex isacnm
+      rexv mpan mpbird a1i 2thd eqrdv ) AIJZBAUAZKVKBLZVLJZVMKJZVKVNCLZDLZMZVPE
+      LZMZJZCANZDOZEFLZGLZJZFOZGVMUMZUBZAUCUDZNZVKWCEWJVKVSWJJZPZAKVQQZWBPDOZWC
+      VKWLHLZVTJZHKUEZCANZWOWMAWIVSQZWSWLWTVKVSWIAUFUGWTWRCAWTVPAJPZWQHOZWRXAWD
+      VTJZFOZXBXAVTWHJZXDXAVTWIJXEXDPAWIVPVSUHWGXDGVTWHWEVTUIWFXCFWEVTWDUJUKULR
+      UNXCWQFHFHVTUOUPRWQHVEUQSTWQWACHAKDWPVRVTURUSUTWNWBDVATSVOVKVNWKVBBVCZCGA
+      EDFKIVMVDVFVGVOVKXFVHVIVJ $.
   $}
 
 
@@ -73868,6 +73969,21 @@ $)
       PVAUBZBDEUCZQZGHRZSZFTVBCGHRZSZFTAOFGVDHJAVDIQZGHRVDUDQZGHRKVJVKGHVDIUJUE
       UFABDEUKZGHROPVDQOTZGHRNVMVLGHBDOEUGUHUILULAVGVIFAVGVIAVGSVBVHAVBVFUMVFVH
       AVBVECGHVEVCEQCBCDVCEMUNUOUEUPUQURUSUT $.
+  $}
+
+  ${
+    $d f g j y z $.  $d f j n z $.  $d f g x y z $.  $d n x z $.
+    $( Given countable choice, every set has choice sets of length ` _om ` .
+       (Contributed by Mario Carneiro, 31-Aug-2015.) $)
+    acnccim $p |- ( CCHOICE -> AC_ _om = _V ) $=
+      ( vx vy vg vf vj vz vn wacc com wacn cvv cv wcel cfv wex cpw wa ralrimiva
+      wral wfn crab cmap co simpl elmapfn adantl elmapi ad2antlr ffvelcdmd wceq
+      wf simpr eleq2 exbidv elrab sylib simprd cc2 exsimpr syl vex isacnm mp2an
+      wb omex sylibr a1i 2thd eqrdv ) HAIJZKHALZVJMZVKKMZHBLZCLZNVNDLZNMBISZCOZ
+      DELZFLZMZEOZFVKPZUAZIUBUCZSZVLHVRDWEHVPWEMZQZVOITZVQQCOVRWHGECBVPHWGUDWGV
+      PITHVPWDIUEUFWHVSGLZVPNZMZEOZGIWHWJIMZQZWKWCMZWMWOWKWDMWPWMQWOIWDWJVPWGIW
+      DVPUKHWNVPWDIUGUHWHWNULUIWBWMFWKWCVTWKUJWAWLEVTWKVSUMUNUOUPUQRURWIVQCUSUT
+      RVMIKMVLWFVDAVAZVEBFIDCEKKVKVBVCVFVMHWQVGVHVI $.
   $}
 
 
@@ -169148,9 +169264,13 @@ $(
 $)
 
   $c mPwSer $. $( Multivariate power series $)
+  $c mPoly $. $( Multivariate polynomial $)
 
   $( Multivariate power series. $)
   cmps $a class mPwSer $.
+
+  $( Multivariate polynomials. $)
+  cmpl $a class mPoly $.
 
   ${
     $d b d f g h i k p r s w x y z $.
@@ -169171,6 +169291,25 @@ $)
              ( ( d X. { x } ) oF ( .r ` r ) f ) ) >. ,
         <. ( TopSet ` ndx ) ,
              ( Xt_ ` ( d X. { ( TopOpen ` r ) } ) ) >. } ) ) $.
+  $}
+
+  ${
+    $d a b f i k r w $.
+    $( Define the subalgebra of the power series algebra generated by the
+       variables; this is the polynomial algebra (the set of power series with
+       finite degree).
+
+       The index set (which has an element for each variable) is ` i ` , the
+       coefficients are in ring ` r ` , and for each variable there is a
+       "degree" such that the coefficient is zero for a term where the powers
+       are all greater than those degrees.  (Degree is in quotes because there
+       is no guarantee that coefficients below that degree are nonzero, as we
+       do not assume decidable equality for ` r ` ).  (Contributed by Mario
+       Carneiro, 7-Jan-2015.)  (Revised by AV, 25-Jun-2019.)  (Revised by Jim
+       Kingdon, 7-Oct-2025.) $)
+    df-mplcoe $a |- mPoly = ( i e. _V , r e. _V |-> [_ ( i mPwSer r ) / w ]_
+      ( w |`s { f e. ( Base ` w ) | E. a e. ( NN0 ^m i ) A. b e. ( NN0 ^m i )
+      ( A. k e. i ( a ` k ) < ( b ` k ) -> ( f ` b ) = ( 0g ` r ) ) } ) ) $.
   $}
 
   ${
@@ -169356,6 +169495,22 @@ $)
         XCNZXDVJXMWPVJVKVLVMWPVNVOWOCUTWLCVPZIWQWNSWOEJCXBVQWOWLEXNXIWOEJCXBVSV
         TWLPCWAVDTWBWC $.
     $}
+
+    ${
+      $d F f $.  $d I f x $.
+      $( A finite index set gives a simpler expression for finite bags.
+         (Contributed by Jim Kingdon, 23-Nov-2025.) $)
+      psrbagfi $p |- ( I e. Fin -> D = ( NN0 ^m I ) ) $=
+        ( vx cfn wcel cv ccnv cn cima cn0 cmap wral wceq wdc ad2antlr ralrimiva
+        wa syl co crab cdm wss elmapi fdmd adantl simpl eqeltrd cnvimass a1i cz
+        cfv wf simpr eleqtrd ffvelcdmd nn0zd elnndc wfn elpreima mpbirand dcbid
+        wb elmapfn mpbird ssfidc syl3anc rabid2 sylibr eqtr4id ) CFGZABHZIJKZFG
+        ZBLCMUAZUBZVPDVLVOBVPNVPVQOVLVOBVPVLVMVPGZSZVMUCZFGVNVTUDZEHZVNGZPZEVTN
+        VOVSVTCFVRVTCOZVLVRCLVMVMLCUEZUFZUGVLVRUHUIWAVSVMJUJUKVSWDEVTVSWBVTGZSZ
+        WDWBVMUMZJGZPZWIWJULGWLWIWJWICLWBVMVRCLVMUNVLWHWFQWIWBVTCVSWHUOVRWEVLWH
+        WGQUPZUQURWJUSTWIWCWKWIWCWBCGZWKWMWIVMCUTZWCWNWKSVDVRWOVLWHVMLCVEQCWBJV
+        MVATVBVCVFREVTVNVGVHRVOBVPVIVJVK $.
+    $}
   $}
 
   ${
@@ -169403,6 +169558,21 @@ $)
       UDRQQUEZSRUFUGVRRUHUIJMUJUKZULZAVPVQVSUMZUNUOAHCIQQAHDTUTZQKATQSVQWBQPZUP
       WAWCQDTDTUQURUSVAAFVBVCVDVMVEPFVFGOUAZCQLOVRSVFQPAVPWDQPVGVHVTVFGQQOVIVJV
       KVLVN $.
+  $}
+
+  ${
+    $d I f $.
+    psrelbasfi.s $e |- S = ( I mPwSer R ) $.
+    psrelbasfi.k $e |- K = ( Base ` R ) $.
+    psrelbasfi.f $e |- ( ph -> I e. Fin ) $.
+    psrelbasfi.b $e |- B = ( Base ` S ) $.
+    psrelbasfi.x $e |- ( ph -> X e. B ) $.
+    $( Simpler form of ~ psrelbas when the index set is finite.  (Contributed
+       by Jim Kingdon, 27-Nov-2025.) $)
+    psrelbasfi $p |- ( ph -> X : ( NN0 ^m I ) --> K ) $=
+      ( vf cv ccnv cn cima cfn wcel wf cmap co crab eqid psrelbas wceq psrbagfi
+      cn0 syl feq2d mpbid ) AMNOPQRSMUHEUAUBZUCZFGTULFGTABUMCDMEFGHIUMUDZKLUEAU
+      MULFGAERSUMULUFJUMMEUNUGUIUJUK $.
   $}
 
   ${
@@ -169532,7 +169702,461 @@ $)
         DHVRUGZOMUHVRVRHULUIABCDEFGVRJKWBNPQUJCVRVRHJUKUMAVRCVQTTARTUNDTSVRTSZU
         OADUPMUQWCTDRDRURUSUTAFVAVBVCVEVDSFVFGUCUDZCTNUCTTVGUNVFTSAGTSWDTSVHVIA
         GILUQVFGTTUCVJVKVLVMVPABCDEFGVRIUPKWBNPLMVNVO $.
+
+      psrlinv.o $e |- .0. = ( 0g ` R ) $.
+      psrlinv.p $e |- .+ = ( +g ` S ) $.
+      $( The negative function in the ring of power series.  (Contributed by
+         Mario Carneiro, 29-Dec-2014.) $)
+      psrlinv $p |- ( ph -> ( ( N o. X ) .+ X ) = ( D X. { .0. } ) ) $=
+        ( vx vy ccom cplusg cfv cof co cv cmpt csn cxp cvv cbs ccnv cn cima cfn
+        wcel cn0 cmap wfn fnmap nn0ex fnovex mp3an12i rabexd cgrp eqid psrelbas
+        elexd ffvelcdmda grpinvcl syl2an2r feqmptd wf1o wf grpinvf1o f1of fveq2
+        fmptco offval2 psrnegcl psradd fconstmpt wceq grplinv mpteq2dva eqtr4id
+        syl 3eqtr4d ) AIKUDZKEUEUFZUGUHUBCUBUIZKUFZIUFZWOWMUHZUJZWLKDUHCLUKULZA
+        UBCWPWOWMWLKUMEUNUFZWTAGUIUOUPUQURUSGUTHVAUHZCUMPVAUMUMULVBUTUMUSAHUMUS
+        XAUMUSVCVDAHJNVKUTHUMUMVAVEVFVGAEVHUSZWNCUSZWOWTUSZWPWTUSOACWTWNKABCEFG
+        HWTKMWTVIZPRSVJZVLZWTEIWOXEQVMVNXGAUBUCCWTWOUCUIZIUFWPKIXGAUBCWTKXFVOZA
+        UCWTWTIAWTWTIVPWTWTIVQAWTEIXEQOVRWTWTIVSWJVOXHWOIVTWAXIWBABWMDEFHWLKMRW
+        MVIZUAABCEFGHIJKMNOPQRSWCSWDAWSUBCLUJWRUBCLWEAUBCWQLAXBXCXDWQLWFOXGWTWM
+        EIWOLXEXJTQWGVNWHWIWK $.
     $}
+
+    $( The ring of power series is a group.  (Contributed by Mario Carneiro,
+       29-Dec-2014.)  (Proof shortened by SN, 7-Feb-2025.) $)
+    psrgrp $p |- ( ph -> S e. Grp ) $=
+      ( vf cv wcel cn0 cmap co cgrp cvv eqid cbs cfv eleq2d vx vy ccnv cima cfn
+      crab cpws cxp wfn fnmap nn0ex elexd fnovex mp3an12i rabexd pwsgrp syl2anc
+      cn wceq pwsbas psrbasg eqcomd wa cplusg cof adantr biimpa adantrr adantrl
+      pwsplusgval biimpar psradd eqtr4d grppropd mpbid ) ABIJUCURUDUEKZILDMNZUF
+      ZUGNZOKZCOKABOKZVRPKZVTHAVPIVQVRPVRQZMPPUHUILPKADPKVQPKUJUKADEGULLDPPMUMU
+      NUOZBVRPVSVSQZUPUQAUAUBBRSZVRMNZVSCAWAWBWGVSRSZUSHWDWFBVROPVSWEWFQZUTUQZA
+      CRSZWGAWKVRBCIDWFEOFWIWCWKQZGHVAZVBAUAJZWGKZUBJZWGKZVCZVCZWNWPVSVDSZNWNWP
+      BVDSZVENWNWPCVDSZNWSWHXAWTBWNWPVROPVSWEWHQAWAWRHVFAWBWRWDVFAWOWNWHKZWQAWO
+      XCAWGWHWNWJTVGVHAWQWPWHKZWOAWQXDAWGWHWPWJTVGVIXAQZWTQVJWSWKXAXBBCDWNWPFWL
+      XEXBQAWOWNWKKZWQAXFWOAWKWGWNWMTVKVHAWQWPWKKZWOAXGWQAWKWGWPWMTVKVIVLVMVNVO
+      $.
+
+    ${
+      psr0.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+      psr0.o $e |- O = ( 0g ` R ) $.
+      psr0.z $e |- .0. = ( 0g ` S ) $.
+      $( The zero element of the ring of power series.  (Contributed by Mario
+         Carneiro, 29-Dec-2014.) $)
+      psr0 $p |- ( ph -> .0. = ( D X. { O } ) ) $=
+        ( csn cfv wceq eqid wcel cxp cplusg co cbs psr0cl psr0lid cgrp wb grpid
+        psrgrp syl2anc mpbid ) ABGPUAZUMDUBQZUCUMRZIUMRZADUDQZBUNCDEFHUMGJKLMNU
+        QSZUNSZAUQBCDEFHGJKLMNURUEZUFADUGTUMUQTUOUPUHACDFHJKLUJUTUQUNDUMIURUSOU
+        IUKUL $.
+    $}
+
+    ${
+      psrneg.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+      psrneg.i $e |- N = ( invg ` R ) $.
+      psrneg.b $e |- B = ( Base ` S ) $.
+      psrneg.m $e |- M = ( invg ` S ) $.
+      psrneg.x $e |- ( ph -> X e. B ) $.
+      $( The negative function of the ring of power series.  (Contributed by
+         Mario Carneiro, 29-Dec-2014.) $)
+      psrneg $p |- ( ph -> ( M ` X ) = ( N o. X ) ) $=
+        ( cfv ccom wceq cplusg co c0g csn eqid psrlinv psr0 eqtr4d cgrp wcel wb
+        cxp psrgrp psrnegcl grpinvid2 syl3anc mpbird ) AKHTIKUAZUBZUTKEUCTZUDZE
+        UETZUBZAVCCDUETZUFUNVDABCVBDEFGIJKVFLMNOPQSVFUGZVBUGZUHACDEFGVFJVDLMNOV
+        GVDUGZUIUJAEUKULKBULUTBULVAVEUMADEGJLMNUOSABCDEFGIJKLMNOPQSUPBVBEHKUTVD
+        QVHVIRUQURUS $.
+    $}
+  $}
+
+  ${
+    $d k x .+ $.  $d f x y z .0. $.  $d f g h j k n r s t w x y z I $.
+    $d k K $.  $d k u v w x A $.  $d j k n x z B $.
+    $d f g h j k n r s t u v w x y z R $.  $d g h j k n u v w x y z D $.
+    $d y z U $.  $d f g h j k n u v w x y z X $.
+    $d j k n r s t u v w x y z ph $.  $d g h j k r w x y V $.  $d k x y .x. $.
+    $d f g h j k n x Z $.  $d r s t x y z S $.  $d x y .1. $.  $d j k x .X. $.
+    $d f g h j k n u v w x Y $.
+    psrring.s $e |- S = ( I mPwSer R ) $.
+    psrringfi.i $e |- ( ph -> I e. Fin ) $.
+    psrring.r $e |- ( ph -> R e. Ring ) $.
+
+    ${
+      psr1cl.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+      psr1cl.z $e |- .0. = ( 0g ` R ) $.
+      psr1cl.o $e |- .1. = ( 1r ` R ) $.
+      psr1cl.u $e |- U =
+        ( x e. D |-> if ( x = ( I X. { 0 } ) , .1. , .0. ) ) $.
+      psr1cl.b $e |- B = ( Base ` S ) $.
+      $( The identity element of the ring of power series.  (Contributed by
+         Mario Carneiro, 29-Dec-2014.) $)
+      psr1clfi $p |- ( ph -> U e. B ) $=
+        ( wcel vz cbs cfv cmap co wf cc0 csn cxp wceq cif crg eqid ringidcl syl
+        cv wa adantr ring0cl wdc cmpt wral cfn cz 0z ccnv cn cima cnveq imaeq1d
+        cn0 eleq1d elrab2 simplbi adantl cvv nn0ex a1i elmapd mpbid nn0zd zdceq
+        ffvelcdmda sylancr ralrimiva dcfi syl2an2r wb rgenw mpteqb ax-mp sylibr
+        0nn0 dcbii eqcom sylib feqmptd fconstmpt eqeq12d dcbid mpbird fmptd wfn
+        ifcldcd basfn elexd funfvex funfni fnmap fnovex mp3an12i rabexd psrbasg
+        eleqtrrd ) AGEUBUCZDUDUEZCAGXPTDXOGUFABDBUPZJUGUHUIZUJZHKUKXOGAXQDTZUQZ
+        XSHKXOAHXOTZXTAEULTZYBNXOEHXOUMZQUNUOURAKXOTZXTAYCYENXOEKYDPUSUOURYAXSU
+        TUAJUAUPZXQUCZVAZUAJUGVAZUJZUTZYAYIYHUJZUTZYKYAUGYGUJZUAJVBZUTZYMAJVCTZ
+        XTYNUTZUAJVBYPMYAYRUAJYAYFJTUQZUGVDTYGVDTYRVEYSYGYAJVKYFXQYAXQVKJUDUEZT
+        ZJVKXQUFXTUUAAXTUUAXQVFZVGVHZVCTZIUPZVFZVGVHZVCTZUUDIXQYTDUUEXQUJZUUGUU
+        CVCUUIUUFUUBVGUUEXQVIVJVLOVMVNVOYAVKJXQVPVCVKVPTZYAVQVRAYQXTMURVSVTZWCW
+        AUGYGWBWDWEYNUAJWFWGYLYOUGVKTZUAJVBYLYOWHUULUAJWMWIUAJUGYGVKWJWKWNWLYLY
+        JYIYHWOWNWPYAXSYJYAXQYHXRYIYAUAJVKXQUUKWQXRYIUJYAUAJUGWRVRWSWTXAXDRXBAX
+        ODGVPVPAUBVPXCEVPTXOVPTZXEAEULNXFUUMVPEUBEUBXGXHWDAUUHIYTDVPOUDVPVPUIXC
+        UUJAJVPTYTVPTXIVQAJVCMXFVKJVPVPUDXJXKXLVSXAACDEFIJXOVCULLYDOSMNXMXN $.
+    $}
+  $}
+
+  ${
+    $d f B $.  $d f i r s a b k I $.  $d f i r s a b k R $.  $d i r s S $.
+    $d i r s U $.  $d f X $.  $d f .0. $.  $d a b f i k s r w $.
+    $( The multivariate polynomial constructor is a proper binary operator.
+       (Contributed by Mario Carneiro, 21-Mar-2015.) $)
+    reldmmpl $p |- Rel dom mPoly $=
+      ( vi vr vw vk va vb vf cvv cv cmps co cfv clt wbr wral c0g wceq cn0 cmap
+      wi wrex cbs crab cress csb cmpl df-mplcoe reldmmpo ) ABHHCAIZBIZJKCIZDIZE
+      ILULFIZLMNDUIOUMGILUJPLQTFRUISKZOEUNUAGUKUBLUCUDKUEUFCGADBEFUGUH $.
+
+    mplval.p $e |- P = ( I mPoly R ) $.
+    mplval.s $e |- S = ( I mPwSer R ) $.
+    mplval.b $e |- B = ( Base ` S ) $.
+    mplval.z $e |- .0. = ( 0g ` R ) $.
+    ${
+      mplvalcoe.u $e |- U = { f e. B | E. a e. ( NN0 ^m I )
+        A. b e. ( NN0 ^m I ) ( A. k e. I ( a ` k ) < ( b ` k )
+          -> ( f ` b ) = .0. ) } $.
+      $( Value of the set of multivariate polynomials.  (Contributed by Mario
+         Carneiro, 7-Jan-2015.)  (Revised by AV, 25-Jun-2019.)  (Revised by Jim
+         Kingdon, 4-Nov-2025.) $)
+      mplvalcoe $p |- ( ( I e. V /\ R e. W ) -> P = ( S |`s U ) ) $=
+        ( wcel cvv vi vr vs wa cmpl co cress wceq elex adantr adantl cmps fnpsr
+        cxp wfn a1i fnovex syl3anc eqeltrid cv cfv clt wbr wral wi cn0 cmap cbs
+        wrex basfn funfvex funfni sylancr rabexd syl2anc c0g crab csb vex mp3an
+        ressex id oveq12 sylan9eqr eqtr4di fveq2d simpll oveq2d raleqdv imbi12d
+        simplr eqeq2d raleqbidv rexeqbidv rabeqbidv oveq12d df-mplcoe ovmpoga
+        csbied eqtrid ) HISZCJSZUDZBHCUEUFZDEUGUFZNXCHTSZCTSZXETSZXDXEUHXAXFXBH
+        IUIUJZXBXGXACJUIUKZXCDTSZETSXHXCDHCULUFZTOXCULTTUNUOZXFXGXLTSXMXCUMUPXI
+        XJHCTTULUQURUSZXCGUTZLUTVAXOMUTZVAVBVCZGHVDZXPFUTVAZKUHZVEZMVFHVGUFZVDZ
+        LYBVIZFAETRXCADVHVAZTPXCVHTUOXKYETSZVJXNYFTDVHDVHVKVLVMUSVNEDTTWAVOUAUB
+        HCTTUCUAUTZUBUTZULUFZUCUTZXQGYGVDZXSYHVPVAZUHZVEZMVFYGVGUFZVDZLYOVIZFYJ
+        VHVAZVQZUGUFZVRXEUETYGHUHZYHCUHZUDZUCYIYTXETYITSZUUCXMYGTSYHTSUUDUMUAVS
+        UBVSYGYHTTULUQVTUPUUCYJYIUHZUDZYJDYSEUGUUFYJXLDUUEUUCYJYIXLUUEWBYGHYHCU
+        LWCWDOWEZUUFYSYDFAVQEUUFYQYDFYRAUUFYRYEAUUFYJDVHUUGWFPWEUUFYPYCLYOYBUUF
+        YGHVFVGUUAUUBUUEWGZWHZUUFYNYAMYOYBUUIUUFYKXRYMXTUUFXQGYGHUUHWIUUFYLKXSU
+        UFYLCVPVAKUUFYHCVPUUAUUBUUEWKWFQWEWLWJWMWNWORWEWPWSUCFUAGUBLMWQWRURWT
+        $.
+    $}
+
+    mplbas.u $e |- U = ( Base ` P ) $.
+    $( Base set of the set of multivariate polynomials.  (Contributed by Mario
+       Carneiro, 7-Jan-2015.)  (Revised by AV, 25-Jun-2019.)  (Revised by Jim
+       Kingdon, 4-Nov-2025.) $)
+    mplbascoe $p |- ( ( I e. V /\ R e. W ) -> U = { f e. B |
+        E. a e. ( NN0 ^m I ) A. b e. ( NN0 ^m I ) (
+          A. k e. I ( a ` k ) < ( b ` k )
+          -> ( f ` b ) = .0. ) } ) $=
+      ( wcel cvv wa cbs cfv cv clt wbr wral wceq wi cmap co wrex crab mplvalcoe
+      cn0 eqid a1i cmps cxp wfn fnpsr fnovex mp3an3an eqeltrid ssrab2 ressbas2d
+      elex wss eqtr4id ) HISZCJSZUAZEBUBUCGUDZLUDUCVMMUDZUCUEUFGHUGVNFUDUCKUHUI
+      MUOHUJUKZUGLVOULZFAUMZRVLVQABDTABCDVQFGHIJKLMNOPQVQUPUNADUBUCUHVLPUQVLDHC
+      URUKZTOURTTUSUTVJHTSVKCTSVRTSVAHIVGCJVGHCTTURVBVCVDVQAVHVLVPFAVEUQVFVI $.
+
+    $d X a b f $.
+    $( Property of being a polynomial.  (Contributed by Mario Carneiro,
+       7-Jan-2015.)  (Revised by Mario Carneiro, 2-Oct-2015.)  (Revised by AV,
+       25-Jun-2019.)  (Revised by Jim Kingdon, 4-Nov-2025.) $)
+    mplelbascoe $p |- ( ( I e. V /\ R e. W ) -> ( X e. U <-> ( X e. B /\
+        E. a e. ( NN0 ^m I ) A. b e. ( NN0 ^m I ) (
+        A. k e. I ( a ` k ) < ( b ` k ) -> ( X ` b ) = .0. ) ) ) ) $=
+      ( vf wcel wa cv cfv clt wbr wral wceq cn0 cmap wrex crab mplbascoe eleq2d
+      wi co fveq1 eqeq1d imbi2d rexralbidv elrab bitrdi ) GHTCITUAZJETJFUBZLUBU
+      CVCMUBZUCUDUEFGUFZVDSUBZUCZKUGZUNZMUHGUIUOZUFLVJUJZSAUKZTJATVEVDJUCZKUGZU
+      NZMVJUFLVJUJZUAVBEVLJABCDESFGHIKLMNOPQRULUMVKVPSJAVFJUGZVIVOLMVJVJVQVHVNV
+      EVQVGVMKVDVFJUPUQURUSUTVA $.
+  $}
+
+  ${
+    $d a b f i k r w $.
+    $( ` mPoly ` has universal domain.  (Contributed by Jim Kingdon,
+       5-Nov-2025.) $)
+    fnmpl $p |- mPoly Fn ( _V X. _V ) $=
+      ( vi vr vw vk va vb vf cvv cv cmps co cfv clt wbr wral cbs wfn wcel mp2an
+      vex c0g wceq cn0 cmap wrex crab cress csb cmpl df-mplcoe cxp fnpsr fnovex
+      wi mp3an basfn funfvex funfni rabex ressex csbexa fnmpoi ) ABHHCAIZBIZJKZ
+      CIZDIZEILVGFIZLMNDVCOVHGILVDUALUBUNFUCVCUDKZOEVIUEZGVFPLZUFZUGKZUHUICGADB
+      EFUJCVEVMJHHUKQVCHRVDHRVEHRULATBTVCVDHHJUMUOVFHRZVLHRVMHRCTZVJGVKPHQVNVKH
+      RZUPVOVPHVFPVFPUQURSUSVLVFHHUTSVAVB $.
+  $}
+
+  ${
+    mplrcl.p $e |- P = ( I mPoly R ) $.
+    mplrcl.b $e |- B = ( Base ` P ) $.
+    $( Reverse closure for the polynomial index set.  (Contributed by Stefan
+       O'Rear, 19-Mar-2015.)  (Revised by Mario Carneiro, 30-Aug-2015.) $)
+    mplrcl $p |- ( X e. B -> I e. _V ) $=
+      ( wcel cvv cmpl reldmmpl cxp wfn wrel fnmpl fnrel ax-mp relelbasov simpld
+      ) EAHDIHCIHEABJDCKJIILZMJNOTJPQFGRS $.
+  $}
+
+  ${
+    $d f B $.  $d I a b f k $.  $d R a b f k $.  $d f S $.
+    mplval2.p $e |- P = ( I mPoly R ) $.
+    mplval2.s $e |- S = ( I mPwSer R ) $.
+    mplval2.u $e |- U = ( Base ` P ) $.
+    $( Self-referential expression for the set of multivariate polynomials.
+       (Contributed by Mario Carneiro, 7-Jan-2015.)  (Revised by Mario
+       Carneiro, 2-Oct-2015.) $)
+    mplval2g $p |- ( ( I e. V /\ R e. W ) -> P = ( S |`s U ) ) $=
+      ( vk va vb vf wcel cv cfv co cress eqid wa clt wbr wral c0g wceq cn0 cmap
+      wi wrex cbs crab mplvalcoe mplbascoe oveq2d eqtr4d ) EFOBGOUAZACKPZLPQURM
+      PZQUBUCKEUDUSNPQBUEQZUFUIMUGEUHRZUDLVAUJNCUKQZULZSRCDSRVBABCVCNKEFGUTLMHI
+      VBTZUTTZVCTUMUQDVCCSVBABCDNKEFGUTLMHIVDVEJUNUOUP $.
+
+    $d B x $.  $d U x $.
+    mplbasss.b $e |- B = ( Base ` S ) $.
+    $( The set of polynomials is a subset of the set of power series.
+       (Contributed by Mario Carneiro, 7-Jan-2015.)  (Revised by Mario
+       Carneiro, 2-Oct-2015.) $)
+    mplbasss $p |- U C_ B $=
+      ( vx vk va vb vf cv wcel cfv cvv cmpl clt wbr wral c0g wceq cn0 cmap wrex
+      wi co crab wa reldmmpl cxp wfn wrel fnmpl fnrel relelbasov eqid mplbascoe
+      ax-mp syl ssrab2 eqsstrdi sseld pm2.43i ssriv ) KEAKPZEQZVIAQVJEAVIVJELPZ
+      MPRVKNPZRUAUBLFUCVLOPRCUDRZUEUINUFFUGUJZUCMVNUHZOAUKZAVJFSQCSQULEVPUEVIEB
+      TFCUMTSSUNZUOTUPUQVQTURVBGIUSABCDEOLFSSVMMNGHJVMUTIVAVCVOOAVDVEVFVGVH $.
+  $}
+
+  ${
+    $d f I $.
+    mplelf.p $e |- P = ( I mPoly R ) $.
+    mplelf.k $e |- K = ( Base ` R ) $.
+    mplelf.b $e |- B = ( Base ` P ) $.
+    mplelf.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+    mplelf.x $e |- ( ph -> X e. B ) $.
+    $( A polynomial is defined as a function on the coefficients.  (Contributed
+       by Mario Carneiro, 7-Jan-2015.)  (Revised by Mario Carneiro,
+       2-Oct-2015.) $)
+    mplelf $p |- ( ph -> X : D --> K ) $=
+      ( cmps co cbs cfv eqid mplbasss sselid psrelbas ) AGEOPZQRZCEUCFGHIUCSZKM
+      UDSZABUDIUDDEUCBGJUELUFTNUAUB $.
+  $}
+
+  ${
+    mplsubg.s $e |- S = ( I mPwSer R ) $.
+    mplsubg.p $e |- P = ( I mPoly R ) $.
+    mplsubg.u $e |- U = ( Base ` P ) $.
+    mplsubg.i $e |- ( ph -> I e. Fin ) $.
+
+    ${
+      mplsubg.r $e |- ( ph -> R e. Grp ) $.
+
+      ${
+        $d I a b k n $.  $d I f $.  $d R a b k $.  $d S a b $.  $d S j $.
+        $d U j $.  $d b n ph $.
+        $( Lemma for ~ mplsubgfi .  There exists a polynomial.  (Contributed by
+           Jim Kingdon, 21-Nov-2025.) $)
+        mplsubgfilemm $p |- ( ph -> E. j j e. U ) $=
+          ( vk vb vf cfv wcel cv cn0 cfn va vn c0g wex cbs clt wbr wral wceq wi
+          cmap co wrex ccnv cima crab csn cxp eqid psr0 psr0cl eqeltrd cc0 cmpt
+          cn wf wa 0nn0 a1i fmpttd cvv elmapd mpbird fveq1d adantr cgrp grpidcl
+          nn0ex simpr psrbagfi eleqtrrd fvconst2g syl2anc eqtrd ralrimiva fveq1
+          syl a1d breq1d ralbidv rspceaimv wb mplelbascoe mpbir2and spcegv sylc
+          eleq1 ) ADUCPZEQZWSFRZEQZFUDAWSWRDUEPZQZMRZUARZPZXDNRZPZUFUGZMGUHZXGW
+          RPZCUCPZUIZUJNSGUKULZUHUAXNUMZAWRORUNVEUOTQOXNUPZXLUQURZXBAXPCDOGXLTW
+          RHKLXPUSZXLUSZWRUSUTZAXBXPCDOGTXLHKLXRXSXBUSZVAVBAUBGVCVDZXNQZXDYBPZX
+          HUFUGZMGUHZXMUJZNXNUHXOAYCGSYBVFAUBGVCSVCSQAUBRGQVGVHVIVJASGYBVKTSVKQ
+          AVRVIKVLVMAYGNXNAXGXNQZVGZXMYFYIXKXGXQPZXLAXKYJUIYHAXGWRXQXTVNVOYIXLC
+          UEPZQZXGXPQYJXLUIAYLYHACVPQZYLLYKCXLYKUSXSVQWGVOYIXGXNXPAYHVSAXPXNUIZ
+          YHAGTQZYNKXPOGXRVTWGVOWAXPXLXGYKWBWCWDWHWEXJYFXMUANYBXNXNXEYBUIZXIYEM
+          GYPXFYDXHUFXDXEYBWFWIWJWKWCAYOYMWSXCXOVGWLKLXBBCDEMGTVPWRXLUANIHYAXSJ
+          WMWCWNZYQXAWSFWREWTWREWQWOWP $.
+      $}
+
+      ${
+        $d .+ a b p q $.  $d I a b k p q $.  $d I c d p q u v $.
+        $d I b e k p q $.  $d I b e q s t $.  $d R a b k p q $.
+        $d R c d p q u v $.  $d R b e k p q $.  $d R b e q s t $.
+        $d X a b p q $.  $d X c d p q u $.  $d X b e p q u $.  $d Y a b p q $.
+        $d Y c d p q $.  $d Y b e p q $.  $d Y b e q s $.  $d b e p ph q $.
+        $d b e p q u v $.  $d c d p ph q $.  $d c d q s t $.
+        mplsubgfilemcl.x $e |- ( ph -> X e. U ) $.
+        mplsubgfilemcl.y $e |- ( ph -> Y e. U ) $.
+        mplsubgfilemcl.p $e |- .+ = ( +g ` S ) $.
+        $( Lemma for ~ mplsubgfi .  The sum of two polynomials is a polynomial.
+           (Contributed by Jim Kingdon, 26-Nov-2025.) $)
+        mplsubgfilemcl $p |- ( ph -> ( X .+ Y ) e. U ) $=
+          ( wcel cfv cn0 vk va vb vv vp vu vt vq vs vc vd ve co cbs cv clt wral
+          wbr c0g wceq cmap wrex eqid grpmgmd mplbasss sselid psraddcl cfn cgrp
+          wi wa wb mplelbascoe mpbid simprd adantr caddc cof wf nn0addcl adantl
+          syl2anc simplrl cvv nn0ex a1i elmapd ad2antrr simprl inidm off mpbird
+          cplusg simp-4l simplr psradd fveq1d psrelbasfi cxp fnmap elexd fnovex
+          wfn mp3an12i eqidd ffvelcdmda grpcld ofvalg eqtrd ad3antrrr ffvelcdmd
+          ffnd nn0red biimpa nn0addcld eqeltrd elmapi cle cr nn0addge1 breqtrrd
+          simpr weq fveq2 breq12d rspcdva lelttrd ralrimiva sylibr fveq1 breq2d
+          cbvralv ralbidv fveqeq2 imbi12d simprr mpd oveq1d syl rexlimddv ex
+          grplidd nn0addge2 3eqtrd breq1d rspceaimv mpbir2and ) AHICUMZFRZUUHEU
+          NSZRZUAUOZUBUOZSZUULUCUOZSZUPURZUAGUQZUUOUUHSZDUSSZUTZVJUCTGVAUMZUQUB
+          UVBVBZAUUJCDEGHIJUUJVCZQADNVDAFUUJHUUJBDEFGKJLUVDVEZOVFZAFUUJIUVEPVFZ
+          VGAUDUOZUEUOZSZUVHUFUOZSZUPURZUDGUQZUVKHSUUTUTZVJZUFUVBUQZUVCUEUVBAHU
+          UJRZUVQUEUVBVBZAHFRZUVRUVSVKZOAGVHRZDVIRZUVTUWAVLMNUUJBDEFUDGVHVIHUUT
+          UEUFKJUVDUUTVCZLVMWBVNVOAUVIUVBRZUVQVKZVKZUGUOZUHUOZSZUWHUIUOZSZUPURZ
+          UGGUQZUWKISUUTUTZVJZUIUVBUQZUVCUHUVBAUWQUHUVBVBZUWFAIUUJRZUWRAIFRZUWS
+          UWRVKZPAUWBUWCUWTUXAVLMNUUJBDEFUGGVHVIIUUTUHUIKJUVDUWDLVMWBVNVOVPUWGU
+          WIUVBRZUWQVKZVKZUVIUWIVQVRUMZUVBRZUULUXESZUUPUPURZUAGUQZUVAVJZUCUVBUQ
+          UVCUXDUXFGTUXEVSZUXDUJUKGGGVQTTTUVIUWIVHVHUJUOZTRUKUOZTRVKUXLUXMVQUMT
+          RUXDUXLUXMVTWAUXDUWEGTUVIVSZAUWEUVQUXCWCZAUWEUXNVLUWFUXCATGUVIWDVHTWD
+          RZAWEWFZMWGZWHVNZUXDUXBGTUWIVSZUWGUXBUWQWIZAUXBUXTVLUWFUXCATGUWIWDVHU
+          XQMWGZWHVNZAUWBUWFUXCMWHZUYDGWJZWKAUXFUXKVLUWFUXCATGUXEWDVHUXQMWGWHWL
+          UXDUXJUCUVBUXDUUOUVBRZVKZUXIUVAUYGUXIVKZUUSUUTUUOISZDWMSZUMZUYIUUTUYH
+          UUSUUOHSZUYIUYJUMZUYKUYHAUYFUUSUYMUTAUWFUXCUYFUXIWNZUXDUYFUXIWOZAUYFV
+          KZUUSUUOHIUYJVRUMZSZUYMAUUSUYRUTUYFAUUOUUHUYQAUUJUYJCDEGHIJUVDUYJVCZQ
+          UVFUVGWPWQVPAUVBUVBUYLUYIUYJUVBDUNSZHIWDWDUUOAUVBUYTHAUUJDEGUYTHJUYTV
+          CZMUVDUVFWRZXLAUVBUYTIAUUJDEGUYTIJVUAMUVDUVGWRZXLVAWDWDWSXCUXPAGWDRUV
+          BWDRWTWEAGVHMXATGWDWDVAXBXDZVUDUVBWJUYPUYLXEUYPUYIXEUYPUYTUYJDUYLUYIV
+          UAUYSAUWCUYFNVPAUVBUYTUUOHVUBXFAUVBUYTUUOIVUCXFZXGXHXIWBUYHUYLUUTUYIU
+          YJUYHUVJUVHUUOSZUPURZUDGUQZUYLUUTUTZUYHULUOZUVISZVUJUUOSZUPURZULGUQVU
+          HUYHVUMULGUYHVUJGRZVKZVUKVUJUXESZVULVUOVUKVUOGTVUJUVIUXDUXNUYFUXIVUNU
+          XSXJUYHVUNYBZXKZXMZVUOVUPVUOVUPVUKVUJUWISZVQUMZTUYHGGVUKVUTVQGTUVIUWI
+          VHVHVUJUYHAUWEUVIGXCUYNUXDUWEUYFUXIUXOWHAUWEVKGTUVIAUWEUXNUXRXNXLWBUY
+          HAUXBUWIGXCUYNUXDUXBUYFUXIUYAWHAUXBVKGTUWIAUXBUXTUYBXNXLWBUXDUWBUYFUX
+          IUYDWHZVVBUYEVUOVUKXEVUOVUTXEVUOVUKVUTVURVUOGTVUJUWIUXDUXTUYFUXIVUNUY
+          CXJVUQXKZXOZXHZVVDXPXMZVUOVULVUOGTVUJUUOUYGGTUUOVSZUXIVUNUYFVVGUXDUUO
+          TGXQWAWHVUQXKXMZVUOVUKVVAVUPXRVUOVUKXSRVUTTRVUKVVAXRURVUSVVCVUKVUTXTW
+          BVVEYAVUOUXHVUPVULUPURUAGVUJUAULYCUXGVUPUUPVULUPUULVUJUXEYDUULVUJUUOY
+          DYEUYGUXIVUNWOVUQYFZYGYHVUGVUMUDULGUDULYCUVJVUKVUFVULUPUVHVUJUVIYDUVH
+          VUJUUOYDYEYLYIUYHUVPVUHVUIVJUFUVBUUOUFUCYCZUVNVUHUVOVUIVVJUVMVUGUDGVV
+          JUVLVUFUVJUPUVHUVKUUOYJYKYMUVKUUOUUTHYNYOUWGUVQUXCUYFUXIAUWEUVQYPXJUY
+          OYFYQYRXIUYHUYTUYJDUYIUUTVUAUYSUWDUYHAUWCUYNNYSUYHAUYFUYIUYTRUYNUYOVU
+          EWBUUBUYHUWJUWHUUOSZUPURZUGGUQZUYIUUTUTZUYHVUTVULUPURZULGUQVVMUYHVVOU
+          LGVUOVUTVUPVULVUOVUTVVCXMZVVFVVHVUOVUTVVAVUPXRVUOVUTXSRVUKTRVUTVVAXRU
+          RVVPVURVUTVUKUUCWBVVEYAVVIYGYHVVLVVOUGULGUGULYCUWJVUTVVKVULUPUWHVUJUW
+          IYDUWHVUJUUOYDYEYLYIUYHUWPVVMVVNVJUIUVBUUOUIUCYCZUWNVVMUWOVVNVVQUWMVV
+          LUGGVVQUWLVVKUWJUPUWHUWKUUOYJYKYMUWKUUOUUTIYNYOUXDUWQUYFUXIUWGUXBUWQY
+          PWHUYOYFYQUUDUUAYHUURUXIUVAUBUCUXEUVBUVBUUMUXEUTZUUQUXHUAGVVRUUNUXGUU
+          PUPUULUUMUXEYJUUEYMUUFWBYTYTAUWBUWCUUIUUKUVCVKVLMNUUJBDEFUAGVHVIUUHUU
+          TUBUCKJUVDUWDLVMWBUUG $.
+      $}
+
+      ${
+        $d I a b k $.  $d I f $.  $d I p u v $.  $d N a b $.  $d R a b k $.
+        $d R p u v $.  $d X a b $.  $d X p u $.  $d a b ph $.  $d b u v $.
+        mplsubgfileminv.x $e |- ( ph -> X e. U ) $.
+        mplsubgfileminv.inv $e |- N = ( invg ` S ) $.
+        $( Lemma for ~ mplsubgfi .  The additive inverse of a polynomial is a
+           polynomial.  (Contributed by Jim Kingdon, 26-Nov-2025.) $)
+        mplsubgfileminv $p |- ( ph -> ( N ` X ) e. U ) $=
+          ( va vb cfv wcel cfn vk vf cbs cv clt wbr wral c0g wceq cn0 cmap wrex
+          wi co cminusg ccom ccnv cima crab eqid mplbasss sselid psrneg eqeltrd
+          cn psrnegcl wa wb mplelbascoe syl2anc mpbid simprd fveq1d ad2antrr wf
+          psrelbasfi simplr fvco3 simpr fveq2d grpinvid syl eqtrd 3eqtrd imim2d
+          cgrp ex ralimdva reximdv mpd mpbir2and ) AHGRZESZWLDUCRZSZUAUDZPUDRWP
+          QUDZRUEUFUAFUGZWQWLRZCUHRZUIZUMZQUJFUKUNZUGZPXCULZAWLCUORZHUPZWNAWNUB
+          UDUQVEURTSUBXCUSZCDUBFGXFTHILMXHUTZXFUTZWNUTZOAEWNHWNBCDEFJIKXKVANVBZ
+          VCZAWNXHCDUBFXFTHILMXIXJXKXLVFVDAWRWQHRZWTUIZUMZQXCUGZPXCULZXEAHWNSZX
+          RAHESZXSXRVGZNAFTSZCWFSZXTYAVHLMWNBCDEUAFTWFHWTPQJIXKWTUTZKVIVJVKVLAX
+          QXDPXCAXPXBQXCAWQXCSZVGZXOXAWRYFXOXAYFXOVGZWSWQXGRZXNXFRZWTAWSYHUIYEX
+          OAWQWLXGXMVMVNYGXCCUCRZHVOZYEYHYIUIAYKYEXOAWNCDFYJHIYJUTLXKXLVPVNAYEX
+          OVQXCYJWQXFHVRVJYGYIWTXFRZWTYGXNWTXFYFXOVSVTAYLWTUIZYEXOAYCYMMCXFWTYD
+          XJWAWBVNWCWDWGWEWHWIWJAYBYCWMWOXEVGVHLMWNBCDEUAFTWFWLWTPQJIXKYDKVIVJW
+          K $.
+      $}
+
+      $d S j u v $.  $d U j u v $.  $d ph u v $.
+      $( The set of polynomials is closed under addition, i.e. it is a subgroup
+         of the set of power series.  (Contributed by Mario Carneiro,
+         8-Jan-2015.)  (Proof shortened by AV, 16-Jul-2019.) $)
+      mplsubgfi $p |- ( ph -> U e. ( SubGrp ` S ) ) $=
+        ( vj vu vv cfv wcel cv wral wa eqid csubg cbs wss wex cplusg co cminusg
+        mplbasss a1i mplsubgfilemm cfn ad2antrr simplr mplsubgfilemcl ralrimiva
+        cgrp simpr adantr mplsubgfileminv jca w3a psrgrp issubg2m syl mpbir3and
+        wb ) AEDUAOPZEDUBOZUCZLQEPLUDZMQZNQZDUEOZUFEPZNERZVKDUGOZOEPZSZMERZVIAV
+        HBCDEFHGIVHTZUHUIABCDELFGHIJKUJAVRMEAVKEPZSZVOVQWBVNNEWBVLEPZSBVMCDEFVK
+        VLGHIAFUKPZWAWCJULACUPPZWAWCKULAWAWCUMWBWCUQVMTZUNUOWBBCDEFVPVKGHIAWDWA
+        JURAWEWAKURAWAUQVPTZUSUTUOADUPPVGVIVJVSVAVFACDFUKGJKVBMNLVHVMEDVPVTWFWG
+        VCVDVE $.
+    $}
+  $}
+
+  ${
+    $d f I $.  $d I x $.  $d O x $.
+    mpl0.p $e |- P = ( I mPoly R ) $.
+    mpl0.o $e |- O = ( 0g ` R ) $.
+    mpl0.z $e |- .0. = ( 0g ` P ) $.
+    mpl0fi.i $e |- ( ph -> I e. Fin ) $.
+    mpl0.r $e |- ( ph -> R e. Grp ) $.
+    $( The zero polynomial.  (Contributed by Mario Carneiro, 9-Jan-2015.) $)
+    mpl0fi $p |- ( ph -> .0. = ( x e. ( NN0 ^m I ) |-> O ) ) $=
+      ( vf c0g cfv co cfn wcel wceq eqid cn0 cmap cmpt cmps cress cgrp mplval2g
+      cbs syl2anc fveq2d csubg mplsubgfi subg0 syl csn cxp cv ccnv cn cima crab
+      psr0 psrbagfi xpeq1d eqtrd fconstmpt eqtrdi 3eqtr2d eqtrid ) AGCNOZBUAEUB
+      PZFUCZJAVJEDUDPZCUHOZUEPZNOZVMNOZVLACVONAEQRZDUFRCVOSKLCDVMVNEQUFHVMTZVNT
+      ZUGUIUJAVNVMUKORVQVPSACDVMVNEVSHVTKLULVNVMVOVQVOTVQTZUMUNAVQVKFUOZUPZVLAV
+      QMUQURUSUTQRMVKVAZWBUPWCAWDDVMMEFQVQVSKLWDTZIWAVBAWDVKWBAVRWDVKSKWDMEWEVC
+      UNVDVEBVKFVFVGVHVI $.
+  $}
+
+  ${
+    mplplusg.y $e |- Y = ( I mPoly R ) $.
+    mplplusg.s $e |- S = ( I mPwSer R ) $.
+    ${
+      mplplusg.p $e |- .+ = ( +g ` Y ) $.
+      $( Value of addition in a polynomial ring.  (Contributed by Stefan
+         O'Rear, 21-Mar-2015.)  (Revised by Mario Carneiro, 2-Oct-2015.) $)
+      mplplusgg $p |- ( ( I e. V /\ R e. W ) -> .+ = ( +g ` S ) ) $=
+        ( wcel cplusg cfv cbs cvv wfn cmpl co elex cmps wa mplval2g eqidd basfn
+        eqid cxp fnmpl fnovex mp3an3an eqeltrid funfvex funfni fnpsr ressplusgd
+        sylancr eqtr4id ) DEKZBFKZUAZAGLMCLMZJUSGNMZUTCGOOGBCVADEFHIVAUEUBUSUTU
+        CUSNOPGOKVAOKZUDUSGDBQRZOHQOOUFZPUQDOKZURBOKZVCOKUGDESZBFSZDBOOQUHUIUJV
+        BOGNGNUKULUOUSCDBTRZOITVDPUQVEURVFVIOKUMVGVHDBOOTUHUIUJUNUP $.
+    $}
+  $}
+
+  ${
+    mpladd.p $e |- P = ( I mPoly R ) $.
+    mpladd.b $e |- B = ( Base ` P ) $.
+    mpladd.a $e |- .+ = ( +g ` R ) $.
+    mpladd.g $e |- .+b = ( +g ` P ) $.
+    mpladd.x $e |- ( ph -> X e. B ) $.
+    mpladd.y $e |- ( ph -> Y e. B ) $.
+    $( The addition operation on multivariate polynomials.  (Contributed by
+       Mario Carneiro, 9-Jan-2015.)  (Revised by Mario Carneiro,
+       2-Oct-2015.) $)
+    mpladd $p |- ( ph -> ( X .+b Y ) = ( X oF .+ Y ) ) $=
+      ( co wcel cvv cmpl eqid cmps cplusg cfv cof wa wceq reldmmpl cxp wfn wrel
+      fnmpl fnrel ax-mp relelbasov mplplusgg 3syl oveqd cbs sselid psradd eqtrd
+      mplbasss ) AHIEPHIGFUAPZUBUCZPHIDUDPAEVDHIAHBQGRQFRQUEEVDUFNHBCSGFUGSRRUH
+      ZUISUJUKVESULUMJKUNEFVCGRRCJVCTZMUOUPUQAVCURUCZDVDFVCGHIVFVGTZLVDTABVGHVG
+      CFVCBGJVFKVHVBZNUSABVGIVIOUSUTVA $.
+  $}
+
+  ${
+    $d I f $.  $d I x $.
+    mplneg.p $e |- P = ( I mPoly R ) $.
+    mplneg.b $e |- B = ( Base ` P ) $.
+    mplneg.n $e |- N = ( invg ` R ) $.
+    mplneg.m $e |- M = ( invg ` P ) $.
+    mplnegfi.i $e |- ( ph -> I e. Fin ) $.
+    mplneg.r $e |- ( ph -> R e. Grp ) $.
+    mplneg.x $e |- ( ph -> X e. B ) $.
+    $( The negative function on multivariate polynomials.  (Contributed by SN,
+       25-May-2024.) $)
+    mplnegfi $p |- ( ph -> ( M ` X ) = ( N o. X ) ) $=
+      ( cfv cminusg cfn wcel eqid vx cmps co cress ccom fveq1i mplval2g syl2anc
+      cgrp wceq fveq2d fveq1d eqtrid csubg mplsubgfi subginv cbs cv ccnv cn cn0
+      cima cmap crab mplbasss sselid psrneg 3eqtr2d ) AHFPZHEDUBUCZBUDUCZQPZPZH
+      VJQPZPZGHUEAVIHCQPZPVMHFVPLUFAHVPVLACVKQAERSDUISCVKUJMNCDVJBERUIIVJTZJUGU
+      HUKULUMABVJUNPSHBSVOVMUJACDVJBEVQIJMNUOOBVJVKVNVLHVKTVNTZVLTUPUHAVJUQPZUA
+      URUSUTVBRSUAVAEVCUCVDZDVJUAEVNGRHVQMNVTTKVSTZVRABVSHVSCDVJBEIVQJWAVEOVFVG
+      VH $.
+  $}
+
+  ${
+    mplgrp.p $e |- P = ( I mPoly R ) $.
+    $( The polynomial ring is a group.  (Contributed by Mario Carneiro,
+       9-Jan-2015.) $)
+    mplgrpfi $p |- ( ( I e. Fin /\ R e. Grp ) -> P e. Grp ) $=
+      ( cfn wcel cgrp wa cmps cbs cfv cress eqid mplval2g csubg simpl mplsubgfi
+      co simpr subggrp syl eqeltrd ) CEFZBGFZHZACBIRZAJKZLRZGABUFUGCEGDUFMZUGMZ
+      NUEUGUFOKFUHGFUEABUFUGCUIDUJUCUDPUCUDSQUGUFUHUHMTUAUB $.
   $}
 
 
@@ -190369,6 +190993,9 @@ htmldef "card" as
     "<IMG SRC='_card.gif' WIDTH=30 HEIGHT=19 ALT=' card' TITLE='card'>";
   althtmldef "card" as 'card';
   latexdef "card" as "\mathrm{card}";
+htmldef "AC_" as '<U>AC</U> ';
+  althtmldef "AC_" as '<U>AC</U> ';
+  latexdef "AC_" as "\underline{\mathrm{AC}}";
 htmldef "CHOICE" as "<SMALL>CHOICE</SMALL>";
   althtmldef "CHOICE" as "<SMALL>CHOICE</SMALL>";
   latexdef "CHOICE" as "\mathrm{CHOICE}";
@@ -191133,6 +191760,9 @@ htmldef "Z/nZ" as "&#8484;/<i>n</i>&#8484;";
 htmldef "mPwSer" as " mPwSer ";
   althtmldef "mPwSer" as " mPwSer ";
   latexdef "mPwSer" as "\mathrm{mPwSer}";
+htmldef "mPoly" as " mPoly ";
+  althtmldef "mPoly" as " mPoly ";
+  latexdef "mPoly" as "\mathrm{mPoly}";
 
 htmldef "metUnif" as "metUnif";
   althtmldef "metUnif" as "metUnif";
@@ -195106,6 +195736,59 @@ $)
       a1i entr sylancl ensymd impbii ) FGHIZFJKZVFVGGJKLFGMNVGGFVGGOHIZOFHIGFHI
       VGABUAUIBGPAGPZFGCQZRCSZFGUBIZVHVGFUCKVIUDABUEUFVGFGTUGVJRCSZVKCUHDFTUJZG
       KEQGKESVMVKUKDULEVNGUMEGCUNUOUPVLVGUQVAABGCURUSUTGOFVBVCVDVE $.
+  $}
+
+  ${
+    $d N w $.  $d P i j $.  $d P i k n w $.
+    nnnninfex.p $e |- ( ph -> P e. NN+oo ) $.
+    nnnninfex.n $e |- ( ph -> N e. _om ) $.
+    nnnninfex.0 $e |- ( ph -> ( P ` N ) = (/) ) $.
+    $( If an element of ` NN+oo ` has a value of zero somewhere, then it is the
+       mapping of a natural number.  (Contributed by Jim Kingdon,
+       4-Aug-2022.) $)
+    nnnninfex $p |- ( ph
+        -> E. n e. _om P = ( i e. _om |-> if ( i e. n , 1o , (/) ) ) ) $=
+      ( vj com wcel cfv c0 wceq wa cv c1o wi fveqeq2 anbi2d vw xnninf cmpt wrex
+      cif jca csuc imbi1d peano1 wral simpll a1i simpr wss 0ss simplr nninfninc
+      vk noel iffalsei mpteq2i eqidd fvmptd3 eqtr4d ralrimiva wfn wb c2o nninff
+      ffnd adantr 1oex 0ex ifex eqid fnmpti eqfnfv sylancl eleq2 ifbid mpteq2dv
+      mpbird rspceeqv sylancr simpllr mpd simpl ad3antrrr peano2 syl cuni nnord
+      wtr word ordtr unisucg mpbid fveq2d eqtrd nnnninfeq2 adantllr syl2anc cpr
+      wo wf adantl ffvelcdmd df2o3 eleqtrdi elpri ad2antrr mpjaodan a2d 3imtr4g
+      exp41 impexp finds sylc ) AEJKBUBKZEBLMNZOZBCJCPZDPZKZQMUEZUCZNDJUDZGAXSX
+      TFHUFXSUAPZBLMNZOZYGRXSMBLMNZOZYGRXSURPZBLZMNZOZYGRZXSYMUGZBLMNZOZYGRZYAY
+      GRUAUREYHMNZYJYLYGUUBYIYKXSYHMMBSTUHYHYMNZYJYPYGUUCYIYOXSYHYMMBSTUHYHYRNZ
+      YJYTYGUUDYIYSXSYHYRMBSTUHYHENZYJYAYGUUEYIXTXSYHEMBSTUHYLMJKZBCJYBMKZQMUEZ
+      UCZNZYGUIYLUUJIPZBLZUUKUUILZNZIJUJZYLUUNIJYLUUKJKZOZUULMUUMUUQBMUUKXSYKUU
+      PUKUUFUUQUIULZYLUUPUMZMUUKUNUUQUUKUOULXSYKUUPUPUQUUQCUUKMMJUUIJCJUUHMUUGQ
+      MYBUSUTVAYBUUKNMVBUUSUURVCVDVEYLBJVFZUUIJVFUUJUUOVGXSUUTYKXSJVHBBVIZVJVKC
+      JUUHUUIUUGQMVLVMVNUUIVOVPIJBUUIVQVRWBDMJYFUUIBYCMNZCJYEUUHUVBYDUUGQMYCMYB
+      VSVTWAWCWDYMJKZXSYOYGRZRXSYSYGRZRYQUUAUVCXSUVDUVEUVCXSUVDYSYGUVCXSOZUVDOY
+      SOZYOYGYNQNZUVGYOOYOYGUVGYOUMUVFUVDYSYOWEWFUVGUVHOZYRJKZBCJYBYRKZQMUEZUCZ
+      NZYGUVIUVCUVJUVFUVCUVDYSUVHUVCXSWGZWHYMWIZWJUVFYSUVHUVNUVDUVFYSOZUVHOZBCY
+      RUVCXSYSUVHWEUVCUVJXSYSUVHUVPWHUVRYRWKZBLZYNQUVCUVTYNNXSYSUVHUVCUVSYMBUVC
+      YMWMZUVSYMNUVCYMWNUWAYMWLYMWOWJYMJWPWQWRWHUVQUVHUMWSUVFYSUVHUPWTXADYRJYFU
+      VMBYCYRNZCJYEUVLUWBYDUVKQMYCYRYBVSVTWAWCXBUVFYOUVHXDZUVDYSUVFYNMQXCZKUWCU
+      VFYNVHUWDUVFJVHYMBXSJVHBXEUVCUVAXFUVOXGXHXIYNMQXJWJXKXLXOXMXSYOYGXPXSYSYG
+      XPXNXQXR $.
+  $}
+
+  ${
+    $d A i j n $.
+    $( An element of ` NN+oo ` which is not finite is infinite.  (Contributed
+       by Jim Kingdon, 30-Nov-2025.) $)
+    nninfnfiinf $p |- ( ( A e. NN+oo /\
+        -. E. n e. _om A = ( i e. _om |-> if ( i e. n , 1o , (/) ) ) )
+        -> A = ( i e. _om |-> 1o ) ) $=
+      ( vj xnninf wcel com cv c1o c0 cif cmpt wceq wa cfv simplr simpr c2o 1oex
+      wfn wrex wn wral simplll nnnninfex mtand cpr wo nninff ad2antrr ffvelcdmd
+      df2o3 eleqtrdi elpri syl orcomd ecased csn cxp fconstmpt fvconst2 eqtr3id
+      wf fveq1i adantl eqtr4d ralrimiva ffnd eqid fnmpti eqfnfv sylancl adantr
+      wb mpbird ) AEFZABGBHCHFIJKLMCGUAZUBZNZABGILZMZDHZAOZWBVTOZMZDGUCZVSWEDGV
+      SWBGFZNZWCIWDWHWCIMZWCJMZWHWJVQVPVRWGPWHWJNABCWBVPVRWGWJUDVSWGWJPWHWJQUEU
+      FWHWJWIWHWCJIUGZFWJWIUHWHWCRWKWHGRWBAVPGRAVCVRWGAUIZUJVSWGQUKULUMWCJIUNUO
+      UPUQWGWDIMVSWGWDWBGIURUSZOIWBWMVTBGIUTVDGIWBSVAVBVEVFVGVPWAWFVNZVRVPAGTVT
+      GTWNVPGRAWLVHBGIVTSVTVIVJDGAVTVKVLVMVO $.
   $}
 
 
