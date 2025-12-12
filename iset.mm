@@ -116254,6 +116254,14 @@ $)
       JVNGZHZWFWAOZWKVOWMAWJVNUIUJWNWJHZWKWOWMWJWJWMWHWIUKULUOWKWFWPWAWKWFVSWJF
       ZJZVTWQJZPZWPWAOWKWDWRWEWSWKVLWQVSAWJUMZRWKVLWQVTXARUPWPWTWAWPWRWSWAVSVTW
       JIIWHWIWJUQDSESURVDUSUTTVAVBVCVEVFVAVGVHTVIVJVK $.
+
+    $( A function with a domain containing (at least) two different elements is
+       not an ordered pair.  (Contributed by AV, 12-Oct-2020.)  (Proof
+       shortened by AV, 9-Jun-2021.) $)
+    fundm2domnop $p |- ( ( Fun G /\ 2o ~<_ dom G )
+                        -> -. G e. ( _V X. _V ) ) $=
+      ( wfun c0 csn cdif c2o cdm cdom wbr cvv cxp wn fundif fundm2domnop0 sylan
+      wcel ) ABACDZEBFAGHIAJJKPLQAMANO $.
   $}
 
 
