@@ -190698,6 +190698,23 @@ $)
 
 
 $(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  The vertices and edges of a graph represented as extensible structure
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $( The set of vertices of an extensible structure with (at least) two slots.
+     (Contributed by AV, 12-Oct-2020.)  (Revised by Jim Kingdon,
+     11-Dec-2025.) $)
+  funvtxdm2domval $p |- ( ( G e. V /\ Fun ( G \ { (/) } ) /\ 2o ~<_ dom G )
+                         -> ( Vtx ` G ) = ( Base ` G ) ) $=
+    ( wcel c0 csn cdif wfun c2o cdm cdom wbr w3a cvtx cfv cvv cxp c1st cbs wceq
+    cif vtxvalg 3ad2ant1 wa fundm2domnop0 iffalsed 3adant1 eqtrd ) ABCZADEFGZHA
+    IJKZLAMNZAOOPCZAQNZARNZTZUNUHUIUKUOSUJABUAUBUIUJUOUNSUHUIUJUCULUMUNAUDUEUFU
+    G $.
+
+
+$(
 ###############################################################################
   GUIDES AND MISCELLANEA
 ###############################################################################
