@@ -47937,6 +47937,18 @@ $)
   $}
 
   ${
+    $d A x y z $.  $d F x y z $.
+    $( A function with removed elements is still a function.  (Contributed by
+       AV, 7-Jun-2021.) $)
+    fundif $p |- ( Fun F -> Fun ( F \ A ) ) $=
+      ( vx vy vz wrel cv wbr wa weq wi wal cdif reldif wn brdif pm2.27 ad2ant2r
+      wfun dffun2 syl2anb com12 alimi 2alimi anim12i 3imtr4i ) BFZCGZDGZBHZUHEG
+      ZBHZIZDEJZKZELZDLCLZIBAMZFZUHUIURHZUHUKURHZIZUNKZELZDLCLZIBSURSUGUSUQVEBA
+      NUPVDCDUOVCEVBUOUNUTUJUHUIAHOZIULUHUKAHOZIUOUNKZVAUHUIBAPUHUKBAPUJULVHVFV
+      GUMUNQRUAUBUCUDUECDEBTCDEURTUF $.
+  $}
+
+  ${
     $d x y A $.  $d x y B $.
     $( The converse singleton of an ordered pair is a function.  This is
        equivalent to ~ funsn via ~ cnvsn , but stating it this way allows us to
