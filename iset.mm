@@ -47925,6 +47925,18 @@ $)
   $}
 
   ${
+    $d F x y $.  $d G x y $.
+    $( If the union of classes is a function, the classes itselves are
+       functions.  (Contributed by AV, 18-Jul-2019.) $)
+    fununfun $p |- ( Fun ( F u. G ) -> ( Fun F /\ Fun G ) ) $=
+      ( vx vy wrel wa cun funrel relun sylib cv wbr wmo fununmo alrimiv anim12i
+      wfun wal dffun6 sylibr simpl simpr uncom funeqi sylbi jca mpancom ) AEZBE
+      ZFZABGZQZAQZBQZFULUKEUJUKHABIJUJULFZUMUNUOUHCKZDKZALDMZCRZFUMUJUHULUSUHUI
+      UAULURCCDABNOPCDASTUOUIUPUQBLDMZCRZFUNUJUIULVAUHUIUBULUTCULBAGZQUTUKVBABU
+      CUDCDBANUEOPCDBSTUFUG $.
+  $}
+
+  ${
     $d x y A $.  $d x y B $.
     $( The converse singleton of an ordered pair is a function.  This is
        equivalent to ~ funsn via ~ cnvsn , but stating it this way allows us to
