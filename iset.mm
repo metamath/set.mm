@@ -190832,6 +190832,23 @@ $)
       RHPIQ $.
   $}
 
+  ${
+    basvtxval.s $e |- ( ph -> G Struct X ) $.
+    basvtxval.d $e |- ( ph -> 2o ~<_ dom G ) $.
+    ${
+      basvtxval.v $e |- ( ph -> V e. Y ) $.
+      basvtxval.b $e |- ( ph -> <. ( Base ` ndx ) , V >. e. G ) $.
+      $( The set of vertices of a graph represented as an extensible structure
+         with the set of vertices as base set.  (Contributed by AV,
+         14-Oct-2020.)  (Revised by AV, 12-Nov-2021.) $)
+      basvtxval2dom $p |- ( ph -> ( Vtx ` G ) = V ) $=
+        ( cvtx cfv cbs cvv wcel c0 csn cdif wfun wbr syl c2o cdm cdom wceq cstr
+        structex structn0fun funvtxdm2domval syl3anc opelstrbas eqtr4d ) ABJKZB
+        LKZCABMNZBOPQRZUABUBUCSULUMUDABDUESZUNFBDUFTAUPUOFBDUGTGBMUHUIABCDEFHIU
+        JUK $.
+    $}
+  $}
+
 
 $(
 ###############################################################################
