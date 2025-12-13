@@ -190834,7 +190834,7 @@ $)
 
   ${
     basvtxval.s $e |- ( ph -> G Struct X ) $.
-    basvtxval.d $e |- ( ph -> 2o ~<_ dom G ) $.
+    basvtxval2dom.d $e |- ( ph -> 2o ~<_ dom G ) $.
     ${
       basvtxval.v $e |- ( ph -> V e. Y ) $.
       basvtxval.b $e |- ( ph -> <. ( Base ` ndx ) , V >. e. G ) $.
@@ -190847,6 +190847,17 @@ $)
         LKZCABMNZBOPQRZUABUBUCSULUMUDABDUESZUNFBDUFTAUPUOFBDUGTGBMUHUIABCDEFHIU
         JUK $.
     $}
+
+    edgfiedgval.e $e |- ( ph -> E e. Y ) $.
+    edgfiedgval.f $e |- ( ph -> <. ( .ef ` ndx ) , E >. e. G ) $.
+    $( The set of indexed edges of a graph represented as an extensible
+       structure with the indexed edges in the slot for edge functions.
+       (Contributed by AV, 14-Oct-2020.)  (Revised by AV, 12-Nov-2021.) $)
+    edgfiedgval2dom $p |- ( ph -> ( iEdg ` G ) = E ) $=
+      ( ciedg cfv cedgf cvv wcel c0 csn cdif wfun wbr syl c2o cdm cdom structex
+      wceq cstr structn0fun funiedgdm2domval syl3anc edgfid edgfndxnn opelstrsl
+      cnx ndxslid eqtr4d ) ACJKZCLKZBACMNZCOPQRZUACUBUCSUPUQUEACDUFSZURFCDUDTAU
+      TUSFCDUGTGCMUHUIACLBDELUMLKUJUKUNFHIULUO $.
   $}
 
 
