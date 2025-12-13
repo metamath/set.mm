@@ -190818,6 +190818,20 @@ $)
       $.
   $}
 
+  ${
+    funvtxval0.s $e |- S e. _V $.
+    funvtxval0d.g $e |- ( ph -> G e. V ) $.
+    funvtxval0d.fun $e |- ( ph -> Fun ( G \ { (/) } ) ) $.
+    funvtxval0d.ne $e |- ( ph -> S =/= ( Base ` ndx ) ) $.
+    funvtxval0d.dm $e |- ( ph -> { ( Base ` ndx ) , S } C_ dom G ) $.
+    $( The set of vertices of an extensible structure with a base set and (at
+       least) another slot.  (Contributed by AV, 22-Sep-2020.)  (Revised by AV,
+       7-Jun-2021.)  (Revised by AV, 12-Nov-2021.) $)
+    funvtxval0d $p |- ( ph -> ( Vtx ` G ) = ( Base ` G ) ) $=
+      ( cnx cbs cfv cn basendxnn elexi necomd funvtxdm2vald ) AJKLZBCDRMNOEFGAB
+      RHPIQ $.
+  $}
+
 
 $(
 ###############################################################################
