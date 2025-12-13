@@ -190807,6 +190807,15 @@ $)
       ( cvtx cfv cvv cxp wcel c1st cbs cif wceq vtxvalg syl c0 csn cdif wne cpr
       wfun cdm wss wn fun2dmnop0 syl3anc iffalsed eqtrd ) ADLMZDNNOPZDQMZDRMZSZ
       USADEPUPUTTHDEUAUBAUQURUSADUCUDUEUHBCUFBCUGDUIUJUQUKIJKBCDFGULUMUNUO $.
+
+    $( The set of indexed edges of an extensible structure with (at least) two
+       slots.  (Contributed by AV, 22-Sep-2020.)  (Revised by Jim Kingdon,
+       12-Dec-2025.) $)
+    funiedgdm2vald $p |- ( ph -> ( iEdg ` G ) = ( .ef ` G ) ) $=
+      ( ciedg cfv cvv cxp wcel c2nd cedgf cif wceq iedgvalg syl c0 csn cdif wne
+      wfun cpr cdm wss wn fun2dmnop0 syl3anc iffalsed eqtrd ) ADLMZDNNOPZDQMZDR
+      MZSZUSADEPUPUTTHDEUAUBAUQURUSADUCUDUEUGBCUFBCUHDUIUJUQUKIJKBCDFGULUMUNUO
+      $.
   $}
 
 
