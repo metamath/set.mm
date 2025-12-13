@@ -116264,6 +116264,26 @@ $)
       wcel ) ABACDZEBFAGHIAJJKPLQAMANO $.
   $}
 
+  ${
+    $d A a b $.  $d B b $.  $d G a b $.
+    fun2dmnop.a $e |- A e. _V $.
+    fun2dmnop.b $e |- B e. _V $.
+    $( A function with a domain containing (at least) two different elements is
+       not an ordered pair.  This stronger version of ~ fun2dmnop (with the
+       less restrictive requirement that ` ( G \ { (/) } ) ` needs to be a
+       function instead of ` G ` ) is useful for proofs for extensible
+       structures, see ~ structn0fun .  (Contributed by AV, 21-Sep-2020.)
+       (Revised by AV, 7-Jun-2021.) $)
+    fun2dmnop0 $p |- ( ( Fun ( G \ { (/) } ) /\ A =/= B /\ { A , B } C_ dom G )
+                      -> -. G e. ( _V X. _V ) ) $=
+      ( va vb c0 csn cdif wfun wne cpr cdm cvv wcel cv wrex a1i sseldd wss cdom
+      w3a cxp wa c2o wbr wn simpl1 dmexg simpl3 prid1 prid2 neeq1 neeq2 rspc2ev
+      simpl2 syl3anc rex2dom syl2an2 fundm2domnop0 syl2anc pm2.01da ) CHIJKZABL
+      ZABMZCNZUAZUCZCOOUDZPZVIVKUEZVDUFVGUBUGZVKUHVDVEVHVKUIVKVGOPVIFQZGQZLZGVG
+      RFVGRZVMCVJUJVLAVGPBVGPVEVQVLVFVGAVDVEVHVKUKZAVFPVLABDULSTVLVFVGBVRBVFPVL
+      ABEUMSTVDVEVHVKUQVPVEAVOLFGABVGVGVNAVOUNVOBAUOUPURFGVGOUSUTCVAVBVC $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#

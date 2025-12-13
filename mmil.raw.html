@@ -1101,6 +1101,10 @@ Non-empty almost always needs to be changed to inhabited (those terms are define
 
 <LI>If there is case elimination on whether variables are distinct, most of the time you just need the variant with distinct variables. Sometimes you can then remove the constraint with a temporary variable (e.g. the various sbco2* variants, ~ nfralya , ~ r19.3rm ).</LI>
 
+<li>If you are proving something of the form ` -. A e. B ` and the proof does
+case elimination on whether ` A ` is a set or a proper class, use ~ pm2.01da so
+you only need to consider the case where ` A ` is a set (example: ~ fun2dmnop0 )</li>
+
 <LI>Sometimes one direction of a biconditional holds, or subset holds instead of equality. You might be able to keep the easy direction and worry about the other one later.</LI>
 
 <LI>
