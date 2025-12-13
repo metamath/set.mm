@@ -190793,6 +190793,22 @@ $)
     FZGAHIJZKALMZANNOCZAPMZAQMZTZUNUHUIUKUORUJABUAUBUIUJUOUNRUHUIUJUCULUMUNAUDU
     EUFUG $.
 
+  ${
+    funvtxdm2val.a $e |- A e. _V $.
+    funvtxdm2val.b $e |- B e. _V $.
+    funvtxdm2vald.g $e |- ( ph -> G e. X ) $.
+    funvtxdm2vald.fun $e |- ( ph -> Fun ( G \ { (/) } ) ) $.
+    funvtxdm2vald.ne $e |- ( ph -> A =/= B ) $.
+    funvtxdm2vald.dm $e |- ( ph -> { A , B } C_ dom G ) $.
+    $( The set of vertices of an extensible structure with (at least) two
+       slots.  (Contributed by AV, 22-Sep-2020.)  (Revised by Jim Kingdon,
+       11-Dec-2025.) $)
+    funvtxdm2vald $p |- ( ph -> ( Vtx ` G ) = ( Base ` G ) ) $=
+      ( cvtx cfv cvv cxp wcel c1st cbs cif wceq vtxvalg syl c0 csn cdif wne cpr
+      wfun cdm wss wn fun2dmnop0 syl3anc iffalsed eqtrd ) ADLMZDNNOPZDQMZDRMZSZ
+      USADEPUPUTTHDEUAUBAUQURUSADUCUDUEUHBCUFBCUGDUIUJUQUKIJKBCDFGULUMUNUO $.
+  $}
+
 
 $(
 ###############################################################################
