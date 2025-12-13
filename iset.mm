@@ -190860,6 +190860,30 @@ $)
       TUSFCDUGTGCMUHUIACLBDELUMLKUJUKUNFHIULUO $.
   $}
 
+  $( The set of vertices of a graph represented as an extensible structure with
+     vertices as base set and indexed edges.  (Contributed by AV, 22-Sep-2020.)
+     (Revised by AV, 7-Jun-2021.)  (Revised by AV, 12-Nov-2021.) $)
+  funvtxvalg $p |- ( ( G e. V
+                      /\ Fun ( G \ { (/) } )
+                      /\ { ( Base ` ndx ) , ( .ef ` ndx ) } C_ dom G )
+                    -> ( Vtx ` G ) = ( Base ` G ) ) $=
+    ( wcel c0 csn cdif cnx cbs cfv cedgf cpr cdm wss w3a cn basendxnn edgfndxnn
+    wfun elexi simp1 simp2 wne basendxnedgfndx a1i simp3 funvtxdm2vald ) ABCZAD
+    EFRZGHIZGJIZKALMZNZUIUJABUIOPSUJOQSUGUHUKTUGUHUKUAUIUJUBULUCUDUGUHUKUEUF $.
+
+  $( The set of indexed edges of a graph represented as an extensible structure
+     with vertices as base set and indexed edges.  (Contributed by AV,
+     21-Sep-2020.)  (Revised by AV, 7-Jun-2021.)  (Revised by AV,
+     12-Nov-2021.) $)
+  funiedgvalg $p |- ( ( G e. V
+                       /\ Fun ( G \ { (/) } )
+                       /\ { ( Base ` ndx ) , ( .ef ` ndx ) } C_ dom G )
+                     -> ( iEdg ` G ) = ( .ef ` G ) ) $=
+    ( wcel c0 csn cdif cnx cbs cfv cedgf cpr cdm wss w3a cn basendxnn edgfndxnn
+    wfun elexi simp1 simp2 wne basendxnedgfndx a1i simp3 funiedgdm2vald ) ABCZA
+    DEFRZGHIZGJIZKALMZNZUIUJABUIOPSUJOQSUGUHUKTUGUHUKUAUIUJUBULUCUDUGUHUKUEUF
+    $.
+
 
 $(
 ###############################################################################
