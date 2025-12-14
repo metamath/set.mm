@@ -190912,6 +190912,20 @@ $)
     DEFRZGHIZGJIZKALMZNZUIUJABUIOPSUJOQSUGUHUKTUGUHUKUAUIUJUBULUCUDUGUHUKUEUF
     $.
 
+  ${
+    structvtxvallem.s $e |- S e. NN $.
+    structvtxvallem.b $e |- ( Base ` ndx ) < S $.
+    structvtxvallem.g $e |- G = { <. ( Base ` ndx ) , V >. , <. S , E >. } $.
+    $( Lemma for ~ structvtxval and ~ structiedg0val .  (Contributed by AV,
+       23-Sep-2020.)  (Revised by AV, 12-Nov-2021.) $)
+    structvtxvallem2dom $p |- ( ( V e. X /\ E e. Y ) -> 2o ~<_ dom G ) $=
+      ( wcel wa cnx cbs cvv cn basendxnn a1i cop opexg sylancr cfv cpr eqeltrid
+      elexi simpl simpr prexg syl2anc wne nnrei ltneii eqimss2i hashdmprop2dom
+      wss ) DEJZBFJZKZLMUAZADBCNOEFNURNJUQUROPUDQAOJZUQGQUOUPUEZUOUPUFZUQCURDRZ
+      ABRZUBZNIUQVBNJZVCNJZVDNJUQUROJUOVEPUTURDOESTUQUSUPVFGVAABOFSTVBVCNNUGUHU
+      CURAUIUQURAURPUJHUKQVDCUNUQCVDIULQUM $.
+  $}
+
 
 $(
 ###############################################################################
