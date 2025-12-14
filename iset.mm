@@ -116236,6 +116236,26 @@ $)
       $.
   $}
 
+  ${
+    $d A a b $.  $d B b $.  $d F a b $.
+    hashdmpropge2.a $e |- ( ph -> A e. V ) $.
+    hashdmpropge2.b $e |- ( ph -> B e. W ) $.
+    hashdmpropge2.c $e |- ( ph -> C e. X ) $.
+    hashdmpropge2.d $e |- ( ph -> D e. Y ) $.
+    hashdmpropge2.f $e |- ( ph -> F e. Z ) $.
+    hashdmpropge2.n $e |- ( ph -> A =/= B ) $.
+    hashdmpropge2.s $e |- ( ph -> { <. A , C >. , <. B , D >. } C_ F ) $.
+    $( A class which contains two ordered pairs with different first components
+       has at least two elements.  (Contributed by AV, 12-Nov-2021.) $)
+    hashdmprop2dom $p |- ( ph -> 2o ~<_ dom F ) $=
+      ( va wcel vb cdm cvv wne wrex c2o cdom wbr dmexd cpr wss cop wceq dmpropg
+      cv wa syl2anc dmss syl eqsstrrd wb prssg mpbird simpld simprd neeq1 neeq2
+      rspc2ev syl3anc rex2dom ) AFUBZUCTSUOZUAUOZUDZUAVKUESVKUEZUFVKUGUHAFKPUIA
+      BVKTZCVKTZBCUDZVOAVPVQAVPVQUPZBCUJZVKUKZAVTBDULCEULUJZUBZVKADITEJTWCVTUMN
+      OBDCEIJUNUQAWBFUKWCVKUKRWBFURUSUTABGTCHTVSWAVALMBCVKGHVBUQVCZVDAVPVQWDVEQ
+      VNVRBVMUDSUABCVKVKVLBVMVFVMCBVGVHVISUAVKUCVJUQ $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
