@@ -44645,6 +44645,14 @@ $)
     cun ) ABCADZECQDZECZAFZECZABGQEGTRHSUATAIZTPRTUBJAKLTREMNO $.
 
   ${
+    dmexd.1 $e |- ( ph -> A e. V ) $.
+    $( The domain of a set is a set.  (Contributed by Glauco Siliprandi,
+       26-Jun-2021.) $)
+    dmexd $p |- ( ph -> dom A e. _V ) $=
+      ( wcel cdm cvv dmexg syl ) ABCEBFGEDBCHI $.
+  $}
+
+  ${
     dmex.1 $e |- A e. _V $.
     $( The domain of a set is a set.  Corollary 6.8(2) of [TakeutiZaring]
        p. 26.  (Contributed by NM, 7-Jul-2008.) $)
