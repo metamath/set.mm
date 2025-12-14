@@ -190938,6 +190938,15 @@ $)
       wss ) DEJZBFJZKZLMUAZADBCNOEFNURNJUQUROPUDQAOJZUQGQUOUPUEZUOUPUFZUQCURDRZ
       ABRZUBZNIUQVBNJZVCNJZVDNJUQUROJUOVEPUTURDOESTUQUSUPVFGVAABOFSTVBVCNNUGUHU
       CURAUIUQURAURPUJHUKQVDCUNUQCVDIULQUM $.
+
+    $( The set of vertices of an extensible structure with a base set and
+       another slot.  (Contributed by AV, 23-Sep-2020.)  (Proof shortened by
+       AV, 12-Nov-2021.) $)
+    structvtxval $p |- ( ( V e. X /\ E e. Y ) -> ( Vtx ` G ) = V ) $=
+      ( wcel wa cnx cbs cfv cop 2strstrndx structvtxvallem2dom simpl cvv cn cpr
+      basendxnn opexg sylancr prid1g syl eleqtrrdi basvtxval2dom ) DEJZBFJZKZCD
+      LMNZAOEDBCAEFIHGPABCDEFGHIQUIUJRZUKULDOZUNABOZUAZCUKUNSJZUNUPJUKULTJUIUQU
+      BUMULDTEUCUDUNUOSUEUFIUGUH $.
   $}
 
 
