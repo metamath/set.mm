@@ -11,6 +11,8 @@
 "19.42h" is used by "19.42v".
 "19.9hd" is used by "bj-sbimedh".
 "19.9hd" is used by "sbiedh".
+"2strstrg" is used by "2strstr1g".
+"2strstrg" is used by "grpstrg".
 "4syl" is used by "bcm1k".
 "4syl" is used by "climuni".
 "4syl" is used by "f1ocnvfvrneq".
@@ -358,6 +360,7 @@ New usage of "19.41h" is discouraged (5 uses).
 New usage of "19.42h" is discouraged (1 uses).
 New usage of "19.9hd" is discouraged (2 uses).
 New usage of "2logb9irrALT" is discouraged (0 uses).
+New usage of "2strstrg" is discouraged (2 uses).
 New usage of "4syl" is discouraged (23 uses).
 New usage of "a1ii" is discouraged (0 uses).
 New usage of "a9evsep" is discouraged (1 uses).

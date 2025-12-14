@@ -148513,12 +148513,26 @@ $)
   $}
 
   ${
+    2strndx.g $e |- G = { <. ( Base ` ndx ) , B >. , <. N , .+ >. } $.
+    2strndx.b $e |- ( Base ` ndx ) < N $.
+    2strndx.n $e |- N e. NN $.
+    $( A constructed two-slot structure not depending on the hard-coded index
+       value of the base set.  (Contributed by Mario Carneiro, 29-Aug-2015.)
+       (Revised by Jim Kingdon, 14-Dec-2025.) $)
+    2strstrndx $p |- ( ( B e. V /\ .+ e. W )
+        -> G Struct <. ( Base ` ndx ) , N >. ) $=
+      ( wcel wa cnx cbs cfv cop cpr cstr basendxnn eqid strle2g eqbrtrid ) AEJB
+      FJKCLMNZAODBOPUBDOQGUBDUBDEFABRUBSHIDSTUA $.
+  $}
+
+  ${
     2str.g $e |- G = { <. ( Base ` ndx ) , B >. , <. ( E ` ndx ) , .+ >. } $.
     2str.e $e |- E = Slot N $.
     2str.l $e |- 1 < N $.
     2str.n $e |- N e. NN $.
     $( A constructed two-slot structure.  (Contributed by Mario Carneiro,
-       29-Aug-2015.)  (Revised by Jim Kingdon, 28-Jan-2023.) $)
+       29-Aug-2015.)  (Revised by Jim Kingdon, 28-Jan-2023.)  Use ~ 2strstrndx
+       instead.  (New usage is discouraged.) $)
     2strstrg $p |- ( ( B e. V /\ .+ e. W ) -> G Struct <. 1 , N >. ) $=
       ( wcel wa cnx cbs cfv cop cpr c1 cstr 1nn basendx ndxarg strle2g eqbrtrid
       ) AFLBGLMDNOPZAQNCPZBQRSEQTHUFUGSEFGABUAUBJKCEIKUCUDUE $.
