@@ -191015,6 +191015,14 @@ $)
        23-Sep-2020.) $)
     struct2grvtx $p |- ( ( V e. X /\ E e. Y ) -> ( Vtx ` G ) = V ) $=
       ( cnx cedgf cfv edgfndxnn basendxltedgfndx structvtxval ) GHIABCDEJKFL $.
+
+    $( The set of indexed edges of a graph represented as an extensible
+       structure with vertices as base set and indexed edges.  (Contributed by
+       AV, 23-Sep-2020.)  (Proof shortened by AV, 12-Nov-2021.) $)
+    struct2griedg $p |- ( ( V e. X /\ E e. Y ) -> ( iEdg ` G ) = E ) $=
+      ( wa cnx cbs cfv cedgf cop struct2grstrg simpl simpr cpr wss eqimss2i a1i
+      wcel structgrssiedg ) CDTZAETZGZABCHIJZHKJZLDEABCDEFMUBUCNUBUCOUECLUFALPZ
+      BQUDBUGFRSUA $.
   $}
 
 
