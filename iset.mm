@@ -191080,6 +191080,22 @@ $)
     gropeld $p |- ( ph -> <. V , E >. e. C ) $=
       ( cv wcel cop wsbc gropd sbcel1v sylib ) ADKBLZDFEMZNSBLARCDEFGHIJODSBPQ
       $.
+
+    $d S g $.
+    grstructeld.s $e |- ( ph -> S e. X ) $.
+    grstructeld.f $e |- ( ph -> Fun ( S \ { (/) } ) ) $.
+    grstructeld2dom.d $e |- ( ph -> 2o ~<_ dom S ) $.
+    grstructeld.b $e |- ( ph -> ( Base ` S ) = V ) $.
+    grstructeld.e $e |- ( ph -> ( .ef ` S ) = E ) $.
+    $( If any representation of a graph with vertices ` V ` and edges ` E ` is
+       an element of an arbitrary class ` C ` , then any structure with base
+       set ` V ` and value ` E ` in the slot for edge functions (which is such
+       a representation of a graph with vertices ` V ` and edges ` E ` ) is an
+       element of this class ` C ` .  (Contributed by AV, 12-Oct-2020.)
+       (Revised by AV, 9-Jun-2021.) $)
+    grstructeld2dom $p |- ( ph -> S e. C ) $=
+      ( cv wcel wsbc grstructd2dom sbcel1v sylib ) AERBSZECTCBSAUDCDEFGHIJKLMNO
+      PQUAECBUBUC $.
   $}
 
 
