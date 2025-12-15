@@ -190989,6 +190989,15 @@ $)
       cpr wss wb basendxnn edgfndxnn prssg syl2anc mpbird simpld basvtxval2dom
       ) ACDEFHABCDEFGHIJKLIAMUANZDOZCPZMUBNZBOZCPZAUPUSUCZUOURUDCUEZKAUOQPZURQP
       ZUTVAUFAUNRPDFPVBUGIUNDRFSTAUQRPBGPVCUHJUQBRGSTUOURCQQUIUJUKULUM $.
+
+    $( The set of indexed edges of a graph represented as an extensible
+       structure with vertices as base set and indexed edges.  (Contributed by
+       AV, 14-Oct-2020.)  (Proof shortened by AV, 12-Nov-2021.) $)
+    structgrssiedg $p |- ( ph -> ( iEdg ` G ) = E ) $=
+      ( structgrssvtxlem2dom cnx cfv cop wcel cvv cn opexg sylancr cbs cedgf wa
+      cpr wss basendxnn edgfndxnn prssg syl2anc mpbird simprd edgfiedgval2dom
+      wb ) ABCEGHABCDEFGHIJKLJAMUANZDOZCPZMUBNZBOZCPZAUPUSUCZUOURUDCUEZKAUOQPZU
+      RQPZUTVAUMAUNRPDFPVBUFIUNDRFSTAUQRPBGPVCUGJUQBRGSTUOURCQQUHUIUJUKUL $.
   $}
 
 
