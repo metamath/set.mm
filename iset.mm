@@ -190947,6 +190947,25 @@ $)
       basendxnn opexg sylancr prid1g syl eleqtrrdi basvtxval2dom ) DEJZBFJZKZCD
       LMNZAOEDBCAEFIHGPABCDEFGHIQUIUJRZUKULDOZUNABOZUAZCUKUNSJZUNUPJUKULTJUIUQU
       BUMULDTEUCUDUNUOSUEUFIUGUH $.
+
+    $( The set of indexed edges of an extensible structure with a base set and
+       another slot not being the slot for edge functions is empty.
+       (Contributed by AV, 23-Sep-2020.)  (Proof shortened by AV,
+       12-Nov-2021.) $)
+    structiedg0val $p |- ( ( V e. X /\ E e. Y /\ S =/= ( .ef ` ndx ) )
+                           -> ( iEdg ` G ) = (/) ) $=
+      ( wcel cnx cfv c0 wceq cvv cop cn sylancr 3adant3 wn cedgf wne w3a wa csn
+      ciedg cdif wfun c2o cdm wbr cbs basendxnn simpl opexg simpr prexg syl2anc
+      cdom eqeltrid 2strstrndx structn0fun structvtxvallem2dom funiedgdm2domval
+      cpr cstr syl syl3anc edgfndxid edgfndxnn elexi basendxnedgfndx nesymi a1i
+      neneq neqcomd 3ad2ant3 ioran sylanbrc elpr sylnibr dmeqi eqtrid neleqtrrd
+      wo dmpropg ndmfvg 3eqtrd ) DEJZBFJZAKUALZUBZUCZCUFLZCUALZWKCLZMWIWJWNWONZ
+      WLWIWJUDZCOJZCMUEUGUHZUICUJZUSUKWQWRCKULLZDPZABPZVEZOIWRXCOJZXDOJZXEOJWRX
+      BQJWIXFUMWIWJUNXBDQEUORWRAQJWJXGGWIWJUPABQFUORXCXDOOUQURUTZWRCXBAPZVFUKWT
+      DBCAEFIHGVACXIVBVGABCDEFGHIVCCOVDVHSWIWJWOWPNZWLWRWSXJXHCOVIVGSWMWKOJWKXA
+      JTWPMNWKQVJVKZWMXAXBAVEZWKWMWKXBNZWKANZWEZWKXLJWMXMTZXNTZXOTXPWMXBWKVLVMV
+      NWLWIXQWJWLAWKAWKVOVPVQXMXNVRVSWKXBAXKVTWAWMXAXEUJZXLCXEIWBWIWJXRXLNWLXBD
+      ABEFWFSWCWDWKCWGRWH $.
   $}
 
 
