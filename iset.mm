@@ -191065,6 +191065,23 @@ $)
       $.
   $}
 
+  ${
+    $d C g $.  $d E g $.  $d V g $.  $d ph g $.
+    gropeld.g $e |- ( ph -> A. g ( ( ( Vtx ` g ) = V /\ ( iEdg ` g ) = E )
+                                   -> g e. C ) ) $.
+    gropeld.v $e |- ( ph -> V e. U ) $.
+    gropeld.e $e |- ( ph -> E e. W ) $.
+    $( If any representation of a graph with vertices ` V ` and edges ` E ` is
+       an element of an arbitrary class ` C ` , then the ordered pair
+       ` <. V , E >. ` of the set of vertices and the set of edges (which is
+       such a representation of a graph with vertices ` V ` and edges ` E ` )
+       is an element of this class ` C ` .  (Contributed by AV,
+       11-Oct-2020.) $)
+    gropeld $p |- ( ph -> <. V , E >. e. C ) $=
+      ( cv wcel cop wsbc gropd sbcel1v sylib ) ADKBLZDFEMZNSBLARCDEFGHIJODSBPQ
+      $.
+  $}
+
 
 $(
 ###############################################################################
