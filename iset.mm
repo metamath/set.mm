@@ -191042,6 +191042,27 @@ $)
       syl3c ) AFEUAZKLZDUEZMNFOZUTPNEOZQZBRZDUBURMNFOZURPNEOZQZBDURUCZAFCLZEGLZ
       USIJFECGUFSHAVIVJVGIJVIVJQVEVFEFCGUDEFCGUGUHSVDVGVHRDURKDURUIVGVHDVGDUJBD
       URUKULUTUROZVCVGBVHVKVAVEVBVFUTURFMTUTUREPTUMBDURUNUOUPUQ $.
+
+    $d S g $.
+    grstructd.s $e |- ( ph -> S e. X ) $.
+    grstructd.f $e |- ( ph -> Fun ( S \ { (/) } ) ) $.
+    grstructd2dom.d $e |- ( ph -> 2o ~<_ dom S ) $.
+    grstructd.b $e |- ( ph -> ( Base ` S ) = V ) $.
+    grstructd.e $e |- ( ph -> ( .ef ` S ) = E ) $.
+    $( If any representation of a graph with vertices ` V ` and edges ` E ` has
+       a certain property ` ps ` , then any structure with base set ` V ` and
+       value ` E ` in the slot for edge functions (which is such a
+       representation of a graph with vertices ` V ` and edges ` E ` ) has this
+       property.  (Contributed by AV, 12-Oct-2020.)  (Revised by AV,
+       9-Jun-2021.) $)
+    grstructd2dom $p |- ( ph -> [. S / g ]. ps ) $=
+      ( cvtx cfv wceq wcel cv ciedg wa wi wal wsbc cbs c0 csn cdif wfun c2o cdm
+      cdom wbr funvtxdm2domval syl3anc eqtrd cedgf funiedgdm2domval jca nfsbc1v
+      nfcv nfv nfim fveqeq2 anbi12d sbceq1a imbi12d spcgf syl3c ) ACIUAZEUBZRSG
+      TZVNUCSFTZUDZBUEZEUFCRSZGTZCUCSZFTZUDZBECUGZMJAVTWBAVSCUHSZGAVMCUIUJUKULZ
+      UMCUNUOUPZVSWETMNOCIUQURPUSAWACUTSZFAVMWFWGWAWHTMNOCIVAURQUSVBVRWCWDUEECI
+      ECVDWCWDEWCEVEBECVCVFVNCTZVQWCBWDWIVOVTVPWBVNCGRVGVNCFUCVGVHBECVIVJVKVL
+      $.
   $}
 
 
