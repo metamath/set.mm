@@ -191009,6 +191009,12 @@ $)
     struct2grstrg $p |- ( ( V e. X /\ E e. Y )
         -> G Struct <. ( Base ` ndx ) , ( .ef ` ndx ) >. ) $=
       ( cnx cedgf cfv basendxltedgfndx edgfndxnn 2strstrndx ) CABGHIDEFJKL $.
+
+    $( The set of vertices of a graph represented as an extensible structure
+       with vertices as base set and indexed edges.  (Contributed by AV,
+       23-Sep-2020.) $)
+    struct2grvtx $p |- ( ( V e. X /\ E e. Y ) -> ( Vtx ` G ) = V ) $=
+      ( cnx cedgf cfv edgfndxnn basendxltedgfndx structvtxval ) GHIABCDEJKFL $.
   $}
 
 
