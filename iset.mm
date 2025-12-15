@@ -191000,6 +191000,17 @@ $)
       RQPZUTVAUMAUNRPDFPVBUFIUNDRFSTAUQRPBGPVCUGJUQBRGSTUOURCQQUHUIUJUKUL $.
   $}
 
+  ${
+    struct2grvtx.g $e |- G = { <. ( Base ` ndx ) , V >. ,
+                               <. ( .ef ` ndx ) , E >. } $.
+    $( A graph represented as an extensible structure with vertices as base set
+       and indexed edges is actually an extensible structure.  (Contributed by
+       AV, 23-Nov-2020.) $)
+    struct2grstrg $p |- ( ( V e. X /\ E e. Y )
+        -> G Struct <. ( Base ` ndx ) , ( .ef ` ndx ) >. ) $=
+      ( cnx cedgf cfv basendxltedgfndx edgfndxnn 2strstrndx ) CABGHIDEFJKL $.
+  $}
+
 
 $(
 ###############################################################################
