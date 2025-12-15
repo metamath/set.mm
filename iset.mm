@@ -190968,6 +190968,20 @@ $)
       ABEFWFSWCWDWKCWGRWH $.
   $}
 
+  ${
+    structgrssvtx.g $e |- ( ph -> G Struct X ) $.
+    structgrssvtx.v $e |- ( ph -> V e. Y ) $.
+    structgrssvtx.e $e |- ( ph -> E e. Z ) $.
+    structgrssvtx.s $e |- ( ph -> { <. ( Base ` ndx ) , V >. ,
+                                    <. ( .ef ` ndx ) , E >. } C_ G ) $.
+    $( Lemma for ~ structgrssvtx and ~ structgrssiedg .  (Contributed by AV,
+       14-Oct-2020.)  (Proof shortened by AV, 12-Nov-2021.) $)
+    structgrssvtxlem2dom $p |- ( ph -> 2o ~<_ dom G ) $=
+      ( cnx cbs cfv cedgf cn cvv wcel basendxnn a1i edgfndxnn cstr wbr structex
+      syl wne basendxnedgfndx hashdmprop2dom ) ALMNZLONZDBCPPFGQUIPRASTUJPRAUAT
+      IJACEUBUCCQRHCEUDUEUIUJUFAUGTKUH $.
+  $}
+
 
 $(
 ###############################################################################
