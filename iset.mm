@@ -191025,6 +191025,25 @@ $)
       BQUDBUGFRSUA $.
   $}
 
+  ${
+    $d E g $.  $d V g $.  $d ph g $.
+    gropd.g $e |- ( ph -> A. g ( ( ( Vtx ` g ) = V /\ ( iEdg ` g ) = E )
+                                   -> ps ) ) $.
+    gropd.v $e |- ( ph -> V e. U ) $.
+    gropd.e $e |- ( ph -> E e. W ) $.
+    $( If any representation of a graph with vertices ` V ` and edges ` E ` has
+       a certain property ` ps ` , then the ordered pair ` <. V , E >. ` of the
+       set of vertices and the set of edges (which is such a representation of
+       a graph with vertices ` V ` and edges ` E ` ) has this property.
+       (Contributed by AV, 11-Oct-2020.) $)
+    gropd $p |- ( ph -> [. <. V , E >. / g ]. ps ) $=
+      ( cvv wcel cvtx cfv wceq ciedg wa wi syl2anc fveqeq2 cop wal wsbc opvtxfv
+      cv opexg opiedgfv jca nfcv nfv nfsbc1v nfim anbi12d sbceq1a imbi12d spcgf
+      syl3c ) AFEUAZKLZDUEZMNFOZUTPNEOZQZBRZDUBURMNFOZURPNEOZQZBDURUCZAFCLZEGLZ
+      USIJFECGUFSHAVIVJVGIJVIVJQVEVFEFCGUDEFCGUGUHSVDVGVHRDURKDURUIVGVHDVGDUJBD
+      URUKULUTUROZVCVGBVHVKVAVEVBVFUTURFMTUTUREPTUMBDURUNUOUPUQ $.
+  $}
+
 
 $(
 ###############################################################################
