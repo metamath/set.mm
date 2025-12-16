@@ -191102,6 +191102,19 @@ $)
 
 
 $(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Degenerated cases of representations of graphs
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $( Degenerated case 1 for vertices:  The set of vertices of the empty set is
+     the empty set.  (Contributed by AV, 24-Sep-2020.) $)
+  vtxval0 $p |- ( Vtx ` (/) ) = (/) $=
+    ( cvv cxp wcel c1st cfv cbs cif cvtx 0nelxp iffalsei wceq 0ex vtxvalg ax-mp
+    c0 base0 3eqtr4i ) OAABCZODEZOFEZGZTOHEZORSTAAIJOACUBUAKLOAMNPQ $.
+
+
+$(
 ###############################################################################
   GUIDES AND MISCELLANEA
 ###############################################################################
