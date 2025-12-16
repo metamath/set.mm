@@ -191113,6 +191113,13 @@ $)
     ( cvv cxp wcel c1st cfv cbs cif cvtx 0nelxp iffalsei wceq 0ex vtxvalg ax-mp
     c0 base0 3eqtr4i ) OAABCZODEZOFEZGZTOHEZORSTAAIJOACUBUAKLOAMNPQ $.
 
+  $( Degenerated case 1 for edges:  The set of indexed edges of the empty set
+     is the empty set.  (Contributed by AV, 24-Sep-2020.) $)
+  iedgval0 $p |- ( iEdg ` (/) ) = (/) $=
+    ( cvv cxp wcel c2nd cfv cedgf cif ciedg 0nelxp iffalsei wceq iedgvalg ax-mp
+    c0 0ex cnx edgfid edgfndxnn ndxslid strsl0 3eqtr4i ) NAABCZNDEZNFEZGZUDNHEZ
+    NUBUCUDAAIJNACUFUEKONALMFFPFEQRSTUA $.
+
 
 $(
 ###############################################################################
