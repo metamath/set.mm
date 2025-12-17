@@ -191134,6 +191134,32 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Edges as range of the edge function
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c Edg $.
+
+  $( Extend class notation with the set of edges (of an undirected simple
+     (hyper-/pseudo-)graph). $)
+  cedg $a class Edg $.
+
+  $( Define the class of edges of a graph, see also definition "E = E(G)" in
+     section I.1 of [Bollobas] p. 1.  This definition is very general:  It
+     defines edges of a class as the range of its edge function (which does not
+     even need to be a function).  Therefore, this definition could also be
+     used for hypergraphs, pseudographs and multigraphs.  In these cases,
+     however, the (possibly more than one) edges connecting the same vertices
+     could not be distinguished anymore.  In some cases, this is no problem, so
+     theorems with ` Edg ` are meaningful nevertheless.  Usually, however, this
+     definition is used only for undirected simple (hyper-/pseudo-)graphs (with
+     or without loops).  (Contributed by AV, 1-Jan-2020.)  (Revised by AV,
+     13-Oct-2020.) $)
+  df-edg $a |- Edg = ( g e. _V |-> ran ( iEdg ` g ) ) $.
+
+
+$(
 ###############################################################################
   GUIDES AND MISCELLANEA
 ###############################################################################
@@ -193356,6 +193382,9 @@ htmldef "Vtx" as 'Vtx';
 htmldef "iEdg" as 'iEdg';
   althtmldef "iEdg" as 'iEdg';
   latexdef "iEdg" as "\mathrm{iEdg}";
+htmldef "Edg" as 'Edg';
+  althtmldef "Edg" as 'Edg';
+  latexdef "Edg" as "\mathrm{Edg}";
 
 /* htmldef, althtmldef, latexdef for mathboxes */
 /* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
