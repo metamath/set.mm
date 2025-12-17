@@ -191120,6 +191120,12 @@ $)
     c0 0ex cnx edgfid edgfndxnn ndxslid strsl0 3eqtr4i ) NAABCZNDEZNFEZGZUDNHEZ
     NUBUCUDAAIJNACUFUEKONALMFFPFEQRSTUA $.
 
+  $( Degenerated case 4 for vertices:  The set of vertices of a proper class is
+     the empty set.  (Contributed by AV, 12-Oct-2020.) $)
+  vtxvalprc $p |- ( C e/ _V -> ( Vtx ` C ) = (/) ) $=
+    ( cvv wnel wcel wn cvtx cfv c0 wceq df-nel fvprc sylbi ) ABCABDEAFGHIABJAFK
+    L $.
+
 
 $(
 ###############################################################################
