@@ -191126,6 +191126,12 @@ $)
     ( cvv wnel wcel wn cvtx cfv c0 wceq df-nel fvprc sylbi ) ABCABDEAFGHIABJAFK
     L $.
 
+  $( Degenerated case 4 for edges:  The set of indexed edges of a proper class
+     is the empty set.  (Contributed by AV, 12-Oct-2020.) $)
+  iedgvalprc $p |- ( C e/ _V -> ( iEdg ` C ) = (/) ) $=
+    ( cvv wnel wcel wn ciedg cfv c0 wceq df-nel fvprc sylbi ) ABCABDEAFGHIABJAF
+    KL $.
+
 
 $(
 ###############################################################################
