@@ -191158,6 +191158,17 @@ $)
      13-Oct-2020.) $)
   df-edg $a |- Edg = ( g e. _V |-> ran ( iEdg ` g ) ) $.
 
+  ${
+    $d E g $.  $d V g $.
+    $( The edges of a graph represented as ordered pair.  (Contributed by AV,
+       1-Jan-2020.)  (Revised by AV, 13-Oct-2020.) $)
+    edgopval $p |- ( ( V e. W /\ E e. X ) -> ( Edg ` <. V , E >. ) = ran E ) $=
+      ( vg wcel wa cop cedg cfv ciedg crn cvv df-edg fveq2 rneqd opexg opiedgfv
+      cv wceq simpr eqeltrd rnexg syl fvmptd3 eqtrd ) BCFZADFZGZBAHZIJUJKJZLZAL
+      UIEUJESZKJZLULMIMENUMUJTUNUKUMUJKOPBACDQUIUKDFULMFUIUKADABCDRZUGUHUAUBUKD
+      UCUDUEUIUKAUOPUF $.
+  $}
+
 
 $(
 ###############################################################################
