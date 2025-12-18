@@ -116388,6 +116388,17 @@ $)
       PLEUJUNTEURUJUNABUBUCUNUDUEUOBUITUFUGUH $.
   $}
 
+  $( The last symbol of an empty word does not exist.  (Contributed by
+     Alexander van der Vekens, 19-Mar-2018.)  (Proof shortened by AV,
+     2-May-2020.) $)
+  lsw0 $p |- ( ( W e. Word V /\ ( # ` W ) = 0 ) -> ( lastS ` W ) = (/) ) $=
+    ( cword wcel chash cfv cc0 wceq wa clsw c1 co c0 lswwrd wn cle wbr ax-mp cz
+    cmin adantr fvoveq1 cdm cfzo wrddm cn 1nn nnnle0 0re subge0i mtbir elfzole1
+    1re mto eleq2 mtbiri cvv 0z peano2zm elexi ndmfvg mpan 3syl sylan9eqr eqtrd
+    ) BACDZBEFZGHZIBJFZVGKTLBFZMVFVIVJHVHABNUAVHVFVJGKTLZBFZMVGGKBTUBVFBUCZGVGU
+    DLZHZVKVMDZOZVLMHZABUEVOVPVKVNDZVSGVKPQZVTKGPQZKUFDWAOUGKUHRGKUIUMUJUKVKGVG
+    ULUNVMVNVKUOUPVKUQDVQVRVKSGSDVKSDURGUSRUTVKBVAVBVCVDVE $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
