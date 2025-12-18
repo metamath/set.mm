@@ -191179,6 +191179,27 @@ $)
     ( wcel wa cedg co cop cfv crn df-ov edgopval eqtrid ) BCEADEFBAGHBAIGJAKBAG
     LABCDMN $.
 
+  ${
+    $d G g $.
+    edgstruct.s $e |- G = { <. ( Base ` ndx ) , V >. ,
+                            <. ( .ef ` ndx ) , E >. } $.
+    $( The edges of a graph represented as an extensible structure with
+       vertices as base set and indexed edges.  (Contributed by AV,
+       13-Oct-2020.) $)
+    edgstruct $p |- ( ( V e. W /\ E e. X ) -> ( Edg ` G ) = ran E ) $=
+      ( vg wcel cedg cfv ciedg crn cvv wceq cedgf basendxnn edgfndxnn a1i syl
+      cn wa cv df-edg fveq2 rneqd cnx cbs cop simpl opexg sylancr simpr syl2anc
+      cpr prexg eqeltrid elexi wfn wfun c0 cdif basendxnedgfndx fnprg syl221anc
+      csn wne fneq1i sylibr fnfun fundif 3syl cdm eqimss2 funiedgdm2vald edgfid
+      wss fndmd ndxslid slotex eqeltrd rnexg fvmptd3 struct2griedg eqtrd ) CDHZ
+      AEHZUAZBIJBKJZLZALWGGBGUBZKJZLWIMIMGUCWJBNWKWHWJBKUDUEWGBUFUGJZCUHZUFOJZA
+      UHZUNZMFWGWMMHZWOMHZWPMHWGWLTHZWEWQPWEWFUIZWLCTDUJUKWGWNTHZWFWRQWEWFULZWN
+      ATEUJUKWMWOMMUOUMUPZWGWHMHWIMHWGWHBOJZMWGWLWNBMWLTPUQWNTQUQXCWGBWLWNUNZUR
+      ZBUSBUTVEZVAUSWGWPXEURZXFWGWSXAWEWFWLWNVFZXHWSWGPRXAWGQRWTXBXIWGVBRZWLWNC
+      ATTDEVCVDXEBWPFVGVHZXEBVIXGBVJVKXJWGBVLZXENXEXLVPWGXEBXKVQXEXLVMSVNWGBMHX
+      DMHXCBOMOWNVOQVRVSSVTWHMWASWBWGWHAABCDEFWCUEWD $.
+  $}
+
 
 $(
 ###############################################################################
