@@ -116370,6 +116370,18 @@ $)
      Word).  (Contributed by Alexander van der Vekens, 18-Mar-2018.) $)
   df-lsw $a |- lastS = ( w e. _V |-> ( w ` ( ( # ` w ) - 1 ) ) ) $.
 
+  ${
+    $d W w $.
+    $( Extract the last symbol of a word.  (Contributed by Alexander van der
+       Vekens, 18-Mar-2018.)  (Revised by Jim Kingdon, 18-Dec-2025.) $)
+    lswwrd $p |- ( W e. Word V
+        -> ( lastS ` W ) = ( W ` ( ( # ` W ) - 1 ) ) ) $=
+      ( vw cword wcel cv chash cfv c1 cmin co cvv clsw df-lsw wceq fveq2 oveq1d
+      id fveq12d cz elex lencl nn0zd peano2zm syl fvexg mpdan fvmptd3 ) BADZEZC
+      BCFZGHZIJKZUKHBGHZIJKZBHZLMLCNUKBOZUMUOUKBUQRUQULUNIJUKBGPQSBUIUAUJUOTEZU
+      PLEUJUNTEURUJUNABUBUCUNUDUEUOBUITUFUGUH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
