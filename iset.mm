@@ -116405,6 +116405,13 @@ $)
     ( cV c0 cword wcel chash cfv cc0 wceq clsw wrd0 hash0 lsw0 mp2an ) BACDBEFG
     HBIFBHAJKABLM $.
 
+  $( The last symbol of a word of length 1 is the first symbol of this word.
+     (Contributed by Alexander van der Vekens, 19-Mar-2018.) $)
+  lsw1 $p |- ( ( W e. Word V /\ ( # ` W ) = 1 )
+                 -> ( lastS ` W ) = ( W ` 0 ) ) $=
+    ( cword wcel chash cfv c1 wceq clsw co cc0 lswwrd oveq1 1m1e0 eqtrdi fveq2d
+    cmin sylan9eq ) BACDBEFZGHZBIFSGQJZBFKBFABLTUAKBTUAGGQJKSGGQMNOPR $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
