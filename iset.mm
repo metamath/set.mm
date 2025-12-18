@@ -116399,6 +116399,12 @@ $)
     DLZHZVKVMDZOZVLMHZABUEVOVPVKVNDZVSGVKPQZVTKGPQZKUFDWAOUGKUHRGKUIUMUJUKVKGVG
     ULUNVMVNVKUOUPVKUQDVQVRVKSGSDVKSDURGUSRUTVKBVAVBVCVDVE $.
 
+  $( The last symbol of an empty word does not exist.  (Contributed by
+     Alexander van der Vekens, 11-Nov-2018.) $)
+  lsw0g $p |- ( lastS ` (/) ) = (/) $=
+    ( cV c0 cword wcel chash cfv cc0 wceq clsw wrd0 hash0 lsw0 mp2an ) BACDBEFG
+    HBIFBHAJKABLM $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
