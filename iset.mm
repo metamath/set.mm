@@ -116412,6 +116412,14 @@ $)
     ( cword wcel chash cfv c1 wceq clsw co cc0 lswwrd oveq1 1m1e0 eqtrdi fveq2d
     cmin sylan9eq ) BACDBEFZGHZBIFSGQJZBFKBFABLTUAKBTUAGGQJKSGGQMNOPR $.
 
+  $( Closure of the last symbol: the last symbol of a not empty word belongs to
+     the alphabet for the word.  (Contributed by AV, 2-Aug-2018.)  (Proof
+     shortened by AV, 29-Apr-2020.) $)
+  lswcl $p |- ( ( W e. Word V /\ W =/= (/) ) -> ( lastS ` W ) e. V ) $=
+    ( cword wcel c0 wne wa clsw cfv chash c1 cmin co wceq lswwrd adantr cfzo cn
+    cc0 lennncl fzo0end syl wrdsymbcl syldan eqeltrd ) BACDZBEFZGZBHIZBJIZKLMZB
+    IZAUFUIULNUGABOPUFUGUKSUJQMDZULADUHUJRDUMABTUJUAUBUKABUCUDUE $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
