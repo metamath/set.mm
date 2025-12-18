@@ -115902,6 +115902,14 @@ $(
     <td> This is not a special definition for words,
          but for arbitrary functions with a half-open range of nonnegative
          integers as domain.</td></tr>
+  <tr>
+    <td>Last symbol of a word </td><td> ~ df-lsw : ` ( lastS ``  W ) ` </td>
+    <td>Operation which extracts the last symbol of a word. The result is the
+        symbol at the last place in the sequence representing the word.</td>
+    <td> ` W : ( 0 ..^ 3 ) --> S
+           -> ( W e. Word S /\ ( lastS `` W ) = ( W `` 2 ) ` </td>
+    <td> Note that the index of the last symbol is less by 1 than the length of
+         the word.</td></tr>
   </table>
 
   Conventions:
@@ -116339,6 +116347,28 @@ $)
     ZVOUFDZVQWDNWCWEVOVTUGZVSWGWAVMVSVLSDZWGVLUHZVLUITRWAWEWGUNWBVTVOBUJUKULWCJ
     SDVNSDZWFVDWCWHWJVSWHWAVMWIRVLUOTJVNUPUQVOVPURUSWBWDVNNZWAWBVNODZWKEODVSVMW
     LUTEVLVAVBVNVCTVEVFVGVHVIVJ $.
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Last symbol of a word
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c lastS $.
+
+  $( Extend class notation with the Last Symbol of a word. $)
+  clsw $a class lastS $.
+
+  $( Extract the last symbol of a word.  May be not meaningful for other sets
+     which are not words.  The name ` lastS ` (as abbreviation of "lastSymbol")
+     is a compromise between usually used names for corresponding functions in
+     computer programs (as last() or lastChar()), the terminology used for
+     words in set.mm ("symbol" instead of "character") and brevity ("lastS" is
+     shorter than "lastChar" and "lastSymbol").  Labels of theorems about last
+     symbols of a word will contain the abbreviation "lsw" (Last Symbol of a
+     Word).  (Contributed by Alexander van der Vekens, 18-Mar-2018.) $)
+  df-lsw $a |- lastS = ( w e. _V |-> ( w ` ( ( # ` w ) - 1 ) ) ) $.
 
 
 $(
@@ -191576,6 +191606,9 @@ htmldef "SubMnd" as "SubMnd";
 htmldef "Word" as "Word ";
   althtmldef "Word" as "Word ";
   latexdef "Word" as "\mathrm{Word}";
+htmldef "lastS" as 'lastS';
+  althtmldef "lastS" as 'lastS';
+  latexdef "lastS" as "\mathrm{lastS}";
 htmldef "~QG" as " ~<sub><i>QG</i></sub> ";
   althtmldef "~QG" as " ~<sub><i>QG</i></sub> ";
   latexdef "~QG" as " \sim_{QG} ";
