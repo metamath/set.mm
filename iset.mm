@@ -191169,6 +191169,16 @@ $)
       UCUDUEUIUKAUOPUF $.
   $}
 
+  $( The edges of a graph represented as ordered pair, shown as operation
+     value.  Although a little less intuitive, this representation is often
+     used because it is shorter than the representation as function value of a
+     graph given as ordered pair, see ~ edgopval .  The representation
+     ` ran E ` for the set of edges is even shorter, though.  (Contributed by
+     AV, 2-Jan-2020.)  (Revised by AV, 13-Oct-2020.) $)
+  edgov $p |- ( ( V e. W /\ E e. X ) -> ( V Edg E ) = ran E ) $=
+    ( wcel wa cedg co cop cfv crn df-ov edgopval eqtrid ) BCEADEFBAGHBAIGJAKBAG
+    LABCDMN $.
+
 
 $(
 ###############################################################################
