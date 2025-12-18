@@ -116420,6 +116420,16 @@ $)
     cc0 lennncl fzo0end syl wrdsymbcl syldan eqeltrd ) BACDZBEFZGZBHIZBJIZKLMZB
     IZAUFUIULNUGABOPUFUGUKSUJQMDZULADUHUJRDUMABTUJUAUBUKABUCUDUE $.
 
+  $( The last symbol of a nonempty word is an element of the alphabet for the
+     word.  (Contributed by Alexander van der Vekens, 1-Oct-2018.)  (Proof
+     shortened by AV, 29-Apr-2020.) $)
+  lswlgt0cl $p |- ( ( N e. NN /\ ( W e. Word V /\ ( # ` W ) = N ) )
+                    -> ( lastS ` W ) e. V ) $=
+    ( cn wcel cword chash cfv wceq wa c0 wne clsw simprl wb eleq1 eqcoms adantl
+    wi cfn wrdfin hashnncl syl biimpd adantr sylbid impcom lswcl syl2anc ) ADEZ
+    CBFEZCGHZAIZJZJUKCKLZCMHBEUJUKUMNUNUJUOUNUJULDEZUOUMUJUPOZUKUQAULAULDPQRUKU
+    PUOSUMUKUPUOUKCTEUPUOOBCUACUBUCUDUEUFUGBCUHUI $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
