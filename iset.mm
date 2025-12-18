@@ -96637,6 +96637,12 @@ $)
     ( cz wcel cn wn c1 cle wbr clt elnnz1 baib notbid wb 1z zltnle mpan2 bitr4d
     ) ABCZADCZEFAGHZEZAFIHZRSTSRTAJKLRFBCUBUAMNAFOPQ $.
 
+  $( A positive integer is not less than or equal to zero.  (Contributed by AV,
+     13-May-2020.) $)
+  nnnle0 $p |- ( A e. NN -> -. A <_ 0 ) $=
+    ( cn wcel cc0 clt wbr cle wn nngt0 cz wb 0z nnz zltnle sylancr mpbid ) ABCZ
+    DAEFZADGFHZAIQDJCAJCRSKLAMDANOP $.
+
   $( Transitive law of ordering for integers.  (Contributed by Alexander van
      der Vekens, 3-Apr-2018.) $)
   zletr $p |- ( ( J e. ZZ /\ K e. ZZ /\ L e. ZZ )
