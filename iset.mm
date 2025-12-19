@@ -116463,6 +116463,26 @@ $)
             ( s ` x ) , ( t ` ( x - ( # ` s ) ) ) ) ) ) $.
   $}
 
+  ${
+    $d s t x S $.  $d s t x T $.
+    $( Value of the concatenation operator.  (Contributed by Stefan O'Rear,
+       15-Aug-2015.) $)
+    ccatfvalfi $p |- ( ( S e. Fin /\ T e. Fin ) -> ( S ++ T ) =
+        ( x e. ( 0 ..^ ( ( # ` S ) + ( # ` T ) ) ) |->
+          if ( x e. ( 0 ..^ ( # ` S ) ) , ( S ` x ) ,
+            ( T ` ( x - ( # ` S ) ) ) ) ) ) $=
+      ( vs vt cfn wcel cvv cc0 chash cfv caddc co cfzo cv cmin cmpt wceq oveq2d
+      cif wa cconcat elex adantr adantl 0zd cn0 hashcl nn0addcld fzofig syl2anc
+      cz nn0zd mptexd oveq1d eleq2d fveq2d ifbieq12d mpteq12dv ifeq2d df-concat
+      fveq2 fveq1 ovmpog syl3anc ) BFGZCFGZUAZBHGZCHGZAIBJKZCJKZLMZNMZAOZIVKNMZ
+      GZVOBKZVOVKPMZCKZTZQZHGBCUBMWBRVFVIVGBFUCUDVGVJVFCFUCUEVHAVNWAFVHIULGVMUL
+      GVNFGVHUFVHVMVHVKVLVFVKUGGVGBUHUDVGVLUGGVFCUHUEUIUMIVMUJUKUNDEBCHHAIDOZJK
+      ZEOZJKZLMZNMZVOIWDNMZGZVOWCKZVOWDPMZWEKZTZQWBUBAIVKWFLMZNMZVQVRVSWEKZTZQH
+      WCBRZAWHWNWPWRWSWGWOINWSWDVKWFLWCBJVBZUOSWSWJVQWKWMVRWQWSWIVPVOWSWDVKINWT
+      SUPVOWCBVCWSWLVSWEWSWDVKVOPWTSUQURUSWECRZAWPWRVNWAXAWOVMINXAWFVLVKLWECJVB
+      SSXAVQWQVTVRVSWECVCUTUSAEDVAVDVE $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
