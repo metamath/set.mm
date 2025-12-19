@@ -116497,6 +116497,25 @@ $)
       IWKFVQTEZVRTEZFZWEWMEWJWIWKVOWIUNUOVOWPWIWKVMWNVNWOVMVQABQZRZVNVRACQZRUPP
       WAVQVRUQURUSWJWATEZHTEWNWCVAWIWTVOWAHVSUTVBWJVCVMWNVNWIWRPWAHVQVDVEVFVGVO
       VQVRVMVQOEVNWQVHVNVROEVMWSVBVIAVSWHVJURVK $.
+
+    ${
+      $d A x $.  $d B x $.
+      $( The length of a concatenated word.  (Contributed by Stefan O'Rear,
+         15-Aug-2015.)  (Revised by JJ, 1-Jan-2024.) $)
+      ccatlen $p |- ( ( S e. Word A /\ T e. Word B ) ->
+          ( # ` ( S ++ T ) ) = ( ( # ` S ) + ( # ` T ) ) ) $=
+        ( vx cword wcel wa co chash cfv cc0 cfzo cfn wceq cvv cn0 nn0zd syl2anc
+        cz cconcat caddc cmin cif cmpt wrdfin ccatfvalfi syl2an fveq2d wfn wral
+        cv fvexg adantlr simplr elfzoelz lencl ad2antrr zsubcld ifexd ralrimiva
+        adantl eqid syl adantr zaddcld fzofig fihashfn nn0addcl hashfzo0 3eqtrd
+        fnmpt 0zd ) CAFZGZDBFZGZHZCDUAIZJKELCJKZDJKZUBIZMIZEULZLVTMIGZWDCKZWDVT
+        UCIZDKZUDZUEZJKZWCJKZWBVRVSWJJVOCNGDNGVSWJOVQACUFBDUFECDUGUHUIVRWJWCUJZ
+        WCNGZWKWLOVRWIPGZEWCUKWMVRWOEWCVRWDWCGZHZWEWFWHPPVOWPWFPGVQWDCVNWCUMUNW
+        QVQWGTGWHPGVOVQWPUOWQWDVTWPWDTGVRWDLWBUPVBWQVTVOVTQGZVQWPACUQZURRUSWGDV
+        PTUMSUTVAEWCWIWJPWJVCVLVDVRLTGWBTGWNVRVMVRVTWAVRVTVOWRVQWSVERVQWATGVOVQ
+        WABDUQZRVBVFLWBVGSWCWJVHSVRWBQGZWLWBOVOWRWAQGXAVQWSWTVTWAVIUHWBVJVDVK
+        $.
+    $}
   $}
 
 
