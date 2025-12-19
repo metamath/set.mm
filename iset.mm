@@ -116498,6 +116498,14 @@ $)
       WAVQVRUQURUSWJWATEZHTEWNWCVAWIWTVOWAHVSUTVBWJVCVMWNVNWIWRPWAHVQVDVEVFVGVO
       VQVRVMVQOEVNWQVHVNVROEVMWSVBVIAVSWHVJURVK $.
 
+    $( The concatenation of words over two sets is a word over the union of
+       those sets.  (Contributed by Jim Kingdon, 19-Dec-2025.) $)
+    ccatclab $p |- ( ( S e. Word A /\ T e. Word B )
+        -> ( S ++ T ) e. Word ( A u. B ) ) $=
+      ( cword wcel cun cconcat wss ssun1 sswrd ax-mp sseli ssun2 ccatcl syl2an
+      co ) CAEZFCABGZEZFDTFCDHQTFDBEZFRTCASIRTIABJASKLMUATDBSIUATIBANBSKLMSCDOP
+      $.
+
     ${
       $d A x $.  $d B x $.
       $( The length of a concatenated word.  (Contributed by Stefan O'Rear,
