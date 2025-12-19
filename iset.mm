@@ -116524,6 +116524,18 @@ $)
         WABDUQZRVBVFLWBVGSWCWJVHSVRWBQGZWLWBOVOWRWAQGXAVQWSWTVTWAVIUHWBVJVDVK
         $.
     $}
+
+    $( The concatenation of two words is empty iff the two words are empty.
+       (Contributed by AV, 4-Mar-2022.)  (Revised by JJ, 18-Jan-2024.) $)
+    ccat0 $p |- ( ( S e. Word A /\ T e. Word B )
+                    -> ( ( S ++ T ) = (/) <-> ( S = (/) /\ T = (/) ) ) ) $=
+      ( cword wcel wa co c0 wceq chash cfv cc0 cfn wb wrdfin fihasheq0 cle syl
+      cr cconcat caddc ccatlen eqeq1d cun ccatclab 3syl wbr cn0 lencl nn0re jca
+      nn0ge0 add20 syl2an 3bitr3d bi2anan9 bitrd ) CAEFZDBEFZGZCDUAHZIJZCKLZMJZ
+      DKLZMJZGZCIJZDIJZGVAVBKLZMJZVDVFUBHZMJZVCVHVAVKVMMABCDUCUDVAVBABUEZEFVBNF
+      VLVCOABCDUFVOVBPVBQUGUSVDTFZMVDRUHZGZVFTFZMVFRUHZGZVNVHOUTUSVDUIFZVRACUJW
+      BVPVQVDUKVDUMULSUTVFUIFZWABDUJWCVSVTVFUKVFUMULSVDVFUNUOUPUSVEVIUTVGVJUSCN
+      FVEVIOACPCQSUTDNFVGVJOBDPDQSUQUR $.
   $}
 
 
