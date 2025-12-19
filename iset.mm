@@ -116576,6 +116576,21 @@ $)
       VLVCOABCDUFVOVBPVBQUGUSVDTFZMVDRUHZGZVFTFZMVFRUHZGZVNVHOUTUSVDUIFZVRACUJW
       BVPVQVDUKVDUMULSUTVFUIFZWABDUJWCVSVTVFUKVFUMULSVDVFUNUOUPUSVEVIUTVGVJUSCN
       FVEVIOACPCQSUTDNFVGVJOBDPDQSUQUR $.
+
+    $d x A $.  $d x I $.
+    $( Value of a symbol in the left half of a concatenated word.  (Contributed
+       by Stefan O'Rear, 15-Aug-2015.)  (Revised by Mario Carneiro,
+       22-Sep-2015.)  (Proof shortened by AV, 30-Apr-2020.)  (Revised by JJ,
+       18-Jan-2024.) $)
+    ccatval1 $p |- ( ( S e. Word A /\ T e. Word B /\ I e. ( 0 ..^ ( # ` S ) ) )
+                     -> ( ( S ++ T ) ` I ) = ( S ` I ) ) $=
+      ( vx cword wcel cc0 chash cfv cfzo co w3a cv cmin cif wceq cfn wrdfin cn0
+      caddc cconcat cmpt ccatfvalfi syl2an 3adant3 eleq1 fveq2 ifbieq12d iftrue
+      fvoveq1 3ad2ant3 sylan9eqr lencl syl2anr 3adant1 wrdsymbcl 3adant2 fvmptd
+      id elfzoext ) CAGHZDBGHZEICJKZLMZHZNZFEFOZVFHZVICKZVIVEPMDKZQZECKZIVEDJKZ
+      UBMLMZCDUCMZAVCVDVQFVPVMUDRZVGVCCSHDSHVRVDACTBDTFCDUEUFUGVIERZVHVMVGVNEVE
+      PMDKZQZVNVSVJVGVKVLVNVTVIEVFUHVIECUIVIEVEDPULUJVGVCWAVNRVDVGVNVTUKUMUNVDV
+      GEVPHZVCVGVGVOUAHWBVDVGVABDUOVOIVEEVBUPUQVCVGVNAHVDEACURUSUT $.
   $}
 
 
