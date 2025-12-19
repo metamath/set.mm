@@ -115916,6 +115916,16 @@ $(
            -> ( W e. Word S /\ ( lastS `` W ) = ( W `` 2 ) ` </td>
     <td> Note that the index of the last symbol is less by 1 than the length of
          the word.</td></tr>
+  <tr>
+    <td>Concatenation of two words </td>
+    <td> ~ df-concat : ` ( W ++ U ) ` </td>
+    <td>Operation combining two words to one new word. The result is a
+        combined, reindexed sequence build from the sequences representing
+        the two words.</td>
+    <td> ` ( W e. Word S /\ U e. Word S )
+           -> ( # `` ( W ++ U ) ) = ( ( # `` W ) + ( # `` U ) ) ` </td>
+    <td> Note that the index of the first symbol of the second concatenated
+         word is the length of the first word in the concatenation.</td></tr>
   </table>
 
   Conventions:
@@ -116429,6 +116439,29 @@ $)
     wi cfn wrdfin hashnncl syl biimpd adantr sylbid impcom lswcl syl2anc ) ADEZ
     CBFEZCGHZAIZJZJUKCKLZCMHBEUJUKUMNUNUJUOUNUJULDEZUOUMUJUPOZUKUQAULAULDPQRUKU
     PUOSUMUKUPUOUKCTEUPUOOBCUACUBUCUDUEUFUGBCUHUI $.
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Concatenations of words
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c ++ $.
+
+  $( Syntax for the concatenation operator. $)
+  cconcat $a class ++ $.
+
+  ${
+    $d s t x $.
+
+    $( Define the concatenation operator which combines two words.  Definition
+       in Section 9.1 of [AhoHopUll] p. 318.  (Contributed by FL, 14-Jan-2014.)
+       (Revised by Stefan O'Rear, 15-Aug-2015.) $)
+    df-concat $a |- ++ = ( s e. _V , t e. _V |-> ( x e. ( 0 ..^
+            ( ( # ` s ) + ( # ` t ) ) ) |-> if ( x e. ( 0 ..^ ( # ` s ) ) ,
+            ( s ` x ) , ( t ` ( x - ( # ` s ) ) ) ) ) ) $.
+  $}
 
 
 $(
@@ -191669,6 +191702,9 @@ htmldef "Word" as "Word ";
 htmldef "lastS" as 'lastS';
   althtmldef "lastS" as 'lastS';
   latexdef "lastS" as "\mathrm{lastS}";
+htmldef "++" as " ++ ";
+  althtmldef "++" as " ++ ";
+  latexdef "++" as "\mathbin{\operatorname{++}}";
 htmldef "~QG" as " ~<sub><i>QG</i></sub> ";
   althtmldef "~QG" as " ~<sub><i>QG</i></sub> ";
   latexdef "~QG" as " \sim_{QG} ";
