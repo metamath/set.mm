@@ -116481,6 +116481,22 @@ $)
       WCBRZAWHWNWPWRWSWGWOINWSWDVKWFLWCBJVBZUOSWSWJVQWKWMVRWQWSWIVPVOWSWDVKINWT
       SUPVOWCBVCWSWLVSWEWSWDVKVOPWTSUQURUSWECRZAWPWRVNWAXAWOVMINXAWFVLVKLWECJVB
       SSXAVQWQVTVRVSWECVCUTUSAEDVAVDVE $.
+
+    $d x B $.
+    $( The concatenation of two words is a word.  (Contributed by FL,
+       2-Feb-2014.)  (Proof shortened by Stefan O'Rear, 15-Aug-2015.)  (Proof
+       shortened by AV, 29-Apr-2020.) $)
+    ccatcl $p |- ( ( S e. Word B /\ T e. Word B ) -> ( S ++ T ) e. Word B ) $=
+      ( vx wcel wa co cc0 chash cfv cfzo cfn wrdfin wf cn0 ad2antrr lencl nn0zd
+      wrdf cz cword cconcat caddc cv cmin cif cmpt ccatfvalfi syl2an ffvelcdmda
+      wceq wn ad3antlr simpr anim1i anim12i fzocatel syl2anc ffvelcdmd elfzoelz
+      wdc adantl 0zd fzodcel syl3anc ifcldadc fmpttd adantr nn0addcld iswrdinn0
+      eqeltrd ) BAUAZEZCVLEZFZBCUBGZDHBIJZCIJZUCGZKGZDUDZHVQKGZEZWABJZWAVQUEGZC
+      JZUFZUGZVLVMBLECLEVPWHUKVNABMACMDBCUHUIVOVTAWHNVSOEWHVLEVODVTWGAVOWAVTEZF
+      ZWCWDWFAWJWBAWABVMWBABNVNWIABSPUJWJWCULZFZHVRKGZAWECVNWMACNVMWIWKACSUMWLW
+      IWKFVQTEZVRTEZFZWEWMEWJWIWKVOWIUNUOVOWPWIWKVMWNVNWOVMVQABQZRZVNVRACQZRUPP
+      WAVQVRUQURUSWJWATEZHTEWNWCVAWIWTVOWAHVSUTVBWJVCVMWNVNWIWRPWAHVQVDVEVFVGVO
+      VQVRVMVQOEVNWQVHVNVROEVMWSVBVIAVSWHVJURVK $.
   $}
 
 
