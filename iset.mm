@@ -116709,6 +116709,16 @@ $)
     GUUQCNYCUUGUUQKXNUVNDDABXEUMYDUVNOXFXDUULVLVNVQVOVPVRVSUUOUURVTZUURUUTSUUOX
     NUVKUWCYCXNUUNWAYDUVKUUNUVMTCUUQXGXHUURWDQWEYDXNYOXRVTYPYSCXQXGXHXIVAXJ $.
 
+  $( The first symbol of a concatenation of two words is the first symbol of
+     the first word if the first word is not empty.  (Contributed by Alexander
+     van der Vekens, 22-Sep-2018.) $)
+  ccatfv0 $p |- ( ( A e. Word V /\ B e. Word V /\ 0 < ( # ` A ) )
+                  -> ( ( A ++ B ) ` 0 ) = ( A ` 0 ) ) $=
+    ( cword wcel cc0 chash cfv clt wbr cfzo co cconcat wa cn cn0 lencl elnnnn0b
+    wceq biimpri sylan lbfzo0 sylibr 3adant2 ccatval1 syld3an3 ) ACDZEZBUGEZFAG
+    HZIJZFFUJKLEZFABMLHFAHSUHUKULUIUHUKNUJOEZULUHUJPEZUKUMCAQUMUNUKNUJRTUAUJUBU
+    CUDCCABFUEUF $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
