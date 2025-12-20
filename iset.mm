@@ -116864,6 +116864,13 @@ $)
     IXJSVKXKXLWHIJWMWHVLNTRTOVMTWCWDVSDZWKWGLVTWAXMWBCABVNOCWDVOVCWAVTWLWJLWBCB
     VOVQVR $.
 
+  $( The last symbol of a word concatenated with the empty word is the last
+     symbol of the word.  (Contributed by AV, 22-Oct-2018.)  (Proof shortened
+     by AV, 1-May-2020.) $)
+  lswccat0lsw $p |- ( W e. Word V
+                     -> ( lastS ` ( W ++ (/) ) ) = ( lastS ` W ) ) $=
+    ( cword wcel c0 cconcat co clsw ccatrid fveq2d ) BACDBEFGBHABIJ $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
