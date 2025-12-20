@@ -31655,6 +31655,17 @@ $)
   $}
 
   ${
+    ifeqda.1 $e |- ( ( ph /\ ps ) -> A = C ) $.
+    ifeqda.2 $e |- ( ( ph /\ -. ps ) -> B = C ) $.
+    ifeqdadc.dc $e |- ( ph -> DECID ps ) $.
+    $( Separation of the values of the conditional operator.  (Contributed by
+       Alexander van der Vekens, 13-Apr-2018.) $)
+    ifeqdadc $p |- ( ph -> if ( ps , A , B ) = C ) $=
+      ( cif wceq wn wa iftrue adantl eqtrd iffalse wdc wo exmiddc syl mpjaodan
+      ) ABBCDIZEJBKZABLUBCEBUBCJABCDMNFOAUCLUBDEUCUBDJABCDPNGOABQBUCRHBSTUA $.
+  $}
+
+  ${
     ifbothdc.1 $e |- ( A = if ( ph , A , B ) -> ( ps <-> th ) ) $.
     ifbothdc.2 $e |- ( B = if ( ph , A , B ) -> ( ch <-> th ) ) $.
 
