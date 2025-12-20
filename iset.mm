@@ -116840,6 +116840,12 @@ $)
       XL $.
   $}
 
+  $( Concatenation of the empty word by the empty word.  (Contributed by AV,
+     26-Mar-2022.) $)
+  ccatidid $p |- ( (/) ++ (/) ) = (/) $=
+    ( c0 cvv cword wcel cconcat co wceq wrd0 ccatlid ax-mp ) ABCDAAEFAGBHBAIJ
+    $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
