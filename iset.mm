@@ -116719,6 +116719,16 @@ $)
     HZIJZFFUJKLEZFABMLHFAHSUHUKULUIUHUKNUJOEZULUHUJPEZUKUMCAQUMUNUKNUJRTUAUJUBU
     CUDCCABFUEUF $.
 
+  $( The last symbol of the left (nonempty) half of a concatenated word.
+     (Contributed by Alexander van der Vekens, 3-Oct-2018.)  (Proof shortened
+     by AV, 1-May-2020.) $)
+  ccatval1lsw $p |- ( ( A e. Word V /\ B e. Word V /\ A =/= (/) )
+                     -> ( ( A ++ B ) ` ( ( # ` A ) - 1 ) ) = ( lastS ` A ) ) $=
+    ( cword wcel c0 wne w3a chash cfv c1 cmin co cconcat clsw cfzo wceq lennncl
+    cc0 cn 3adant2 fzo0end syl ccatval1 syld3an3 lswwrd 3ad2ant1 eqtr4d ) ACDZE
+    ZBUIEZAFGZHZAIJZKLMZABNMJZUOAJZAOJZUJUKULUOSUNPMEZUPUQQUMUNTEZUSUJULUTUKCAR
+    UAUNUBUCCCABUOUDUEUJUKURUQQULCAUFUGUH $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
