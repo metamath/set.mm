@@ -105311,6 +105311,38 @@ $)
     ZUECKFZGFZCBGFZUFUHUIULHUGADUECLMUGUHULUMNZUFUGBOHZCOHZUNUHBPCPUOUPQUJCUKBG
     UPUJCNUOCRSBCTUAUBUCUD $.
 
+  $( Membership of an integer in an extended open range of integers, extension
+     added to the left.  (Contributed by AV, 31-Aug-2025.)  Generalized by
+     replacing the left border of the ranges.  (Revised by SN, 18-Sep-2025.) $)
+  elfzoextl $p |- ( ( Z e. ( M ..^ N ) /\ I e. NN0 )
+                   -> Z e. ( M ..^ ( I + N ) ) ) $=
+    ( cn0 wcel cfzo co caddc wa cuz cfv cz elfzoel2 nn0pzuz sylan2 fzoss2 sseld
+    wss syl syldbl2 ancoms ) AEFZDBCGHZFZDBACIHZGHZFZUCUEUHUCUEJZUDUGDUIUFCKLFZ
+    UDUGSUEUCCMFUJDBCNACOPCBUFQTRUAUB $.
+
+  $( Membership of an integer in an extended open range of integers, extension
+     added to the right.  (Contributed by AV, 30-Apr-2020.)  (Proof shortened
+     by AV, 23-Sep-2025.) $)
+  elfzoext $p |- ( ( Z e. ( M ..^ N ) /\ I e. NN0 )
+                   -> Z e. ( M ..^ ( N + I ) ) ) $=
+    ( cfzo co wcel cn0 wa caddc elfzoextl cc elfzoel2 zcnd adantr nn0cn addcomd
+    adantl oveq2d eleqtrrd ) DBCEFGZAHGZIZDBACJFZEFBCAJFZEFABCDKUCUEUDBEUCCAUAC
+    LGUBUACDBCMNOUBALGUAAPRQST $.
+
+  $( Membership of an increased integer in a correspondingly extended half-open
+     range of integers.  (Contributed by AV, 30-Apr-2020.) $)
+  elincfzoext $p |- ( ( Z e. ( M ..^ N ) /\ I e. NN0 )
+                      -> ( Z + I ) e. ( M ..^ ( N + I ) ) ) $=
+    ( cfzo co wcel wa caddc cle wbr clt wi cr zred adantr adantl syl3anc mpd cz
+    elfzole1 elfzoelz nn0addge1 sylan elfzoel1 nn0re readdcld exp4b com23 imp31
+    cn0 letr exp31 imp elfzoel2 elfzolt2 ltadd1dd nn0z zaddcld elfzo mpbir2and
+    wb ) DBCEFGZAUKGZHZDAIFZBCAIFZEFGZBVFJKZVFVGLKZVCVDVIVCBDJKZVDVIMDBCUAVCVKV
+    DVIVCVKHZVDHDVFJKZVIVLDNGZVDVMVCVNVKVCDDBCUBZOZPDAUCUDVCVKVDVMVIMZVCVDVKVQV
+    CVDVKVMVIVEBNGZVNVFNGVKVMHVIMVCVRVDVCBDBCUEZOPVCVNVDVPPZVEDAVTVDANGVCAUFQZU
+    GBDVFULRUHUIUJSUMSUNVEDCAVTVCCNGVDVCCDBCUOZOPWAVCDCLKVDDBCUPPUQVEVFTGBTGZVG
+    TGVHVIVJHVBVEDAVCDTGVDVOPVDATGVCAURQZUSVCWCVDVSPVECAVCCTGVDWBPWDUSVFBVGUTRV
+    A $.
+
   $( Translate membership in a half-open integer range.  (Contributed by Stefan
      O'Rear, 15-Aug-2015.) $)
   fzosubel $p |- ( ( A e. ( B ..^ C ) /\ D e. ZZ ) ->
