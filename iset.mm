@@ -10357,6 +10357,13 @@ $)
     3bior1fand $p |- ( ph -> ( ( ch \/ ps )
                        <-> ( ( th /\ ta ) \/ ch \/ ps ) ) ) $=
       ( wa intnanrd 3bior1fd ) ABCDEGADEFHI $.
+
+    3biorfd.2 $e |- ( ph -> -. ch ) $.
+    $( A wff is equivalent to its threefold disjunction with double falsehood,
+       analogous to ~ biorf .  (Contributed by Alexander van der Vekens,
+       8-Sep-2017.) $)
+    3bior2fd $p |- ( ph -> ( ps <-> ( th \/ ch \/ ps ) ) ) $=
+      ( wo w3o wn wb biorf syl 3bior1fd bitrd ) ABCBGZDCBHACIBOJFCBKLABCDEMN $.
   $}
 
 
