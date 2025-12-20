@@ -116591,6 +116591,24 @@ $)
       UBMLMZCDUCMZAVCVDVQFVPVMUDRZVGVCCSHDSHVRVDACTBDTFCDUEUFUGVIERZVHVMVGVNEVE
       PMDKZQZVNVSVJVGVKVLVNVTVIEVFUHVIECUIVIEVEDPULUJVGVCWAVNRVDVGVNVTUKUMUNVDV
       GEVPHZVCVGVGVOUAHWBVDVGVABDUOVOIVEEVBUPUQVCVGVNAHVDEACURUSUT $.
+
+    $( Value of a symbol in the right half of a concatenated word.
+       (Contributed by Stefan O'Rear, 15-Aug-2015.)  (Revised by Mario
+       Carneiro, 22-Sep-2015.) $)
+    ccatval2 $p |- ( ( S e. Word B /\ T e. Word B /\
+          I e. ( ( # ` S ) ..^ ( ( # ` S ) + ( # ` T ) ) ) ) ->
+        ( ( S ++ T ) ` I ) = ( T ` ( I - ( # ` S ) ) ) ) $=
+      ( vx wcel chash cfv co cfzo cc0 cmin cif cvv wceq cfn wrdfin 3ad2ant3 cn0
+      cz cword caddc w3a cv cconcat cmpt ccatfvalfi 3adant3 eleq1 fveq2 fvoveq1
+      syl2an ifbieq12d wn cin fzodisj minel mpan2 iffalsed sylan9eqr wss adantr
+      c0 hashcl cuz fzoss1 nn0uz eleq2s sseld 3impia simp2 elfzoelz lencl nn0zd
+      wa 3syl 3ad2ant1 zsubcld fvexg syl2anc fvmptd ) BAUAZFZCWBFZDBGHZWECGHUBI
+      ZJIZFZUCZEDEUDZKWEJIZFZWJBHZWJWELICHZMZDWELIZCHZKWFJIZBCUEIZNWCWDWSEWRWOU
+      FOZWHWCBPFZCPFWTWDABQZACQEBCUGULUHWJDOZWIWODWKFZDBHZWQMWQXCWLXDWMWNXEWQWJ
+      DWKUIWJDBUJWJDWECLUKUMWIXDXEWQWHWCXDUNZWDWHWKWGUOVCOXFKWEWFUPDWGWKUQURRUS
+      UTWCWDWHDWRFWCWDVOZWGWRDXGXAWESFWGWRVAZWCXAWDXBVBBVDXHWEKVEHSWEKWFVFVGVHV
+      PVIVJWIWDWPTFWQNFWCWDWHVKWIDWEWHWCDTFWDDWEWFVLRWCWDWETFWHWCWEABVMVNVQVRWP
+      CWBTVSVTWA $.
   $}
 
 
