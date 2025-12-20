@@ -116756,6 +116756,15 @@ $)
       JZBHZWABHVJWBWAVNVOIJZEZWDWFTZVJWHWBVJWGVLWAVJVNFVOVKIVNFTVJQUMVTUNUOVAVR
       VJWHWIVSAKBWAUPUQURWCWEWABWCWEWAFSJWAVNFWASQUSWCWAWCWAWBWAUTEVJWAFVKVBVCV
       DVERVFVGVH $.
+
+    $( Concatenation of a word by the empty word on the right.  (Contributed by
+       Stefan O'Rear, 15-Aug-2015.)  (Proof shortened by AV, 1-May-2020.) $)
+    ccatrid $p |- ( S e. Word B -> ( S ++ (/) ) = S ) $=
+      ( vx cword wcel cc0 chash cfv cfzo co c0 cconcat wfn caddc wrd0 ccatvalfn
+      mpan2 hash0 oveq2i lencl nn0cnd addridd eqtr2id oveq2d fneq2d mpbird wceq
+      wrdfn cv ccatval1 mp3an2 eqfnfvd ) BADZEZCFBGHZIJZBKLJZBUNUQUPMUQFUOKGHZN
+      JZIJZMZUNKUMEZVAAOZBKAPQUNUPUTUQUNUOUSFIUNUSUOFNJUOURFUONRSUNUOUNUOABTUAU
+      BUCUDUEUFABUHUNVBCUIZUPEVDUQHVDBHUGVCAABKVDUJUKUL $.
   $}
 
 
