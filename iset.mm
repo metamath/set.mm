@@ -116742,6 +116742,22 @@ $)
     WHWKWDWAUKULWHWATEVPTEWKWFVEWDWAUMVPUNWAVPUOUPUQURUSUTVPWBVAVBCABVPVCVDVLVM
     VSVTOVNVLVRNBVLVPVLVPWIVFVGVHVIVJ $.
 
+  ${
+    $d x S $.  $d x T $.  $d x B $.  $d x U $.
+    $( Concatenation of a word by the empty word on the left.  (Contributed by
+       Stefan O'Rear, 15-Aug-2015.)  (Proof shortened by AV, 1-May-2020.) $)
+    ccatlid $p |- ( S e. Word B -> ( (/) ++ S ) = S ) $=
+      ( vx cword wcel cc0 chash cfv cfzo co c0 cconcat wfn caddc wrd0 ccatvalfn
+      hash0 eqtrid cmin wceq mpan oveq1i nn0cnd addlidd eqcomd oveq2d fneq2d cv
+      lencl mpbird wrdfn wa a1i oveq12d eleq2d ccatval2 mp3an1 syldan oveq2i cz
+      biimpar elfzoelz adantl zcnd subid1d fveq2d eqtrd eqfnfvd ) BADZEZCFBGHZI
+      JZKBLJZBVJVMVLMVMFKGHZVKNJZIJZMZKVIEZVJVQAOZKBAPUAVJVLVPVMVJVKVOFIVJVOVKV
+      JVOFVKNJVKVNFVKNQUBVJVKVJVKABUIUCUDRZUEUFUGUJABUKVJCUHZVLEZULZWAVMHZWAVNS
+      JZBHZWABHVJWBWAVNVOIJZEZWDWFTZVJWHWBVJWGVLWAVJVNFVOVKIVNFTVJQUMVTUNUOVAVR
+      VJWHWIVSAKBWAUPUQURWCWEWABWCWEWAFSJWAVNFWASQUSWCWAWCWAWBWAUTEVJWAFVKVBVCV
+      DVERVFVGVH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
