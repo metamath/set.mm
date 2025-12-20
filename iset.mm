@@ -116846,6 +116846,24 @@ $)
     ( c0 cvv cword wcel cconcat co wceq wrd0 ccatlid ax-mp ) ABCDAAEFAGBHBAIJ
     $.
 
+  $( The last symbol of a word concatenated with a nonempty word is the last
+     symbol of the nonempty word.  (Contributed by AV, 22-Oct-2018.)  (Proof
+     shortened by AV, 1-May-2020.) $)
+  lswccatn0lsw $p |- ( ( A e. Word V /\ B e. Word V /\ B =/= (/) )
+                       -> ( lastS ` ( A ++ B ) ) = ( lastS ` B ) ) $=
+    ( wcel w3a co chash cfv c1 cmin clsw wceq wa oveq1d 3adant3 cz lencl syl2an
+    simpl eqtrd cword c0 wne cconcat caddc cfzo ccatlen clt wbr cn zaddcllempos
+    nn0zd lennncl cr crp zre nnrp ltaddrp 3impb fzolb sylibr fzoend syl eqeltrd
+    3jca ccatval2 syld3an3 nn0cnd addcl 1cnd sub32d pncan2 fveq2d ccatcl lswwrd
+    cc 3ad2ant2 3eqtr4d ) ACUAZDZBVSDZBUBUCZEZABUDFZGHZIJFZWDHZBGHZIJFZBHZWDKHZ
+    BKHZWCWGWFAGHZJFZBHZWJVTWAWBWFWMWMWHUEFZUFFZDWGWOLWCWFWPIJFZWQVTWAWFWRLWBVT
+    WAMZWEWPIJCCABUGNZOWCWMWQDZWRWQDWCWMPDZWPPDZWMWPUHUIZEZXAVTWAWBXEVTXBWHUJDZ
+    XEWAWBMVTWMCAQZULCBUMXBXFMXBXCXDXBXFSWMWHUKXBWMUNDWHUODXDXFWMUPWHUQWMWHURRV
+    ERUSWMWPUTVAWMWPVBVCVDCABWFVFVGWCWNWIBVTWAWNWILWBWSWNWRWMJFZWIWSWFWRWMJWTNV
+    TWMVPDZWHVPDZXHWILWAVTWMXGVHWAWHCBQVHXIXJMZXHWPWMJFZIJFWIXKWPIWMWMWHVIXKVJX
+    IXJSVKXKXLWHIJWMWHVLNTRTOVMTWCWDVSDZWKWGLVTWAXMWBCABVNOCWDVOVCWAVTWLWJLWBCB
+    VOVQVR $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
