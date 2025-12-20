@@ -10350,6 +10350,13 @@ $)
     3bior1fd $p |- ( ph -> ( ( ch \/ ps ) <-> ( th \/ ch \/ ps ) ) ) $=
       ( wo w3o wn wb biorf syl 3orass bitr4di ) ACBFZDNFZDCBGADHNOIEDNJKDCBLM
       $.
+
+    $( A disjunction is equivalent to a threefold disjunction with single
+       falsehood of a conjunction.  (Contributed by Alexander van der Vekens,
+       8-Sep-2017.) $)
+    3bior1fand $p |- ( ph -> ( ( ch \/ ps )
+                       <-> ( ( th /\ ta ) \/ ch \/ ps ) ) ) $=
+      ( wa intnanrd 3bior1fd ) ABCDEGADEFHI $.
   $}
 
 
