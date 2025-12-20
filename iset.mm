@@ -116625,6 +116625,18 @@ $)
       UTWCWDWHDWRFWCWDVOZWGWRDXGXAWESFWGWRVAZWCXAWDXBVBBVDXHWEKVEHSWEKWFVFVGVHV
       PVIVJWIWDWPTFWQNFWCWDWHVKWIDWEWHWCDTFWDDWEWFVLRWCWDWETFWHWCWEABVMVNVQVRWP
       CWBTVSVTWA $.
+
+    $( Value of a symbol in the right half of a concatenated word, using an
+       index relative to the subword.  (Contributed by Stefan O'Rear,
+       16-Aug-2015.)  (Proof shortened by AV, 30-Apr-2020.) $)
+    ccatval3 $p |- ( ( S e. Word B /\ T e. Word B /\ I e. ( 0 ..^ ( # ` T ) ) )
+                     -> ( ( S ++ T ) ` ( I + ( # ` S ) ) ) = ( T ` I ) ) $=
+      ( cword wcel cc0 chash cfv cfzo co caddc cconcat cmin wceq cz lencl nn0zd
+      w3a wa anim1ci 3adant2 fzo0addelr syl ccatval2 syld3an3 elfzoelz 3ad2ant3
+      zcnd cn0 3ad2ant1 nn0cnd pncand fveq2d eqtrd ) BAEZFZCUPFZDGCHIZJKFZSZDBH
+      IZLKZBCMKIZVCVBNKZCIZDCIUQURUTVCVBVBUSLKJKFZVDVFOVAUTVBPFZTZVGUQUTVIURUQV
+      HUTUQVBABQZRUAUBDUSVBUCUDABCVCUEUFVAVEDCVADVBVADUTUQDPFURDGUSUGUHUIVAVBUQ
+      URVBUJFUTVJUKULUMUNUO $.
   $}
 
 
