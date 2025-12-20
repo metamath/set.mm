@@ -9827,6 +9827,14 @@ $)
   $}
 
   ${
+    syldbl2.1 $e |- ( ( ph /\ ps ) -> ( ps -> th ) ) $.
+    $( Stacked hypotheseis implies goal.  (Contributed by Stanislas Polu,
+       9-Mar-2020.) $)
+    syldbl2 $p |- ( ( ph /\ ps ) -> th ) $=
+      ( wa com12 anabsi7 ) ABCABEBCDFG $.
+  $}
+
+  ${
     3impdi.1 $e |- ( ( ( ph /\ ps ) /\ ( ph /\ ch ) ) -> th ) $.
     $( Importation inference (undistribute conjunction).  (Contributed by NM,
        14-Aug-1995.) $)
