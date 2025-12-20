@@ -10366,6 +10366,15 @@ $)
       ( wo w3o wn wb biorf syl 3bior1fd bitrd ) ABCBGZDCBHACIBOJFCBKLABCDEMN $.
   $}
 
+  ${
+    3biantd.1 $e |- ( ph -> th ) $.
+    $( A conjunction is equivalent to a threefold conjunction with single
+       truth, analogous to ~ biantrud .  (Contributed by Alexander van der
+       Vekens, 26-Sep-2017.) $)
+    3biant1d $p |- ( ph -> ( ( ch /\ ps ) <-> ( th /\ ch /\ ps ) ) ) $=
+      ( wa w3a biantrurd 3anass bitr4di ) ACBFZDKFDCBGADKEHDCBIJ $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
