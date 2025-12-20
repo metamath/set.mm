@@ -10388,6 +10388,12 @@ $)
        26-Jun-2011.) $)
     intn3an2d $p |- ( ph -> -. ( ch /\ ps /\ th ) ) $=
       ( w3a simp2 nsyl ) ABCBDFECBDGH $.
+
+    $( Introduction of a triple conjunct inside a contradiction.  (Contributed
+       by FL, 27-Dec-2007.)  (Proof shortened by Andrew Salmon,
+       26-Jun-2011.) $)
+    intn3an3d $p |- ( ph -> -. ( ch /\ th /\ ps ) ) $=
+      ( w3a simp3 nsyl ) ABCDBFECDBGH $.
   $}
 
 
