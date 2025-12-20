@@ -116729,6 +116729,19 @@ $)
     ZBUIEZAFGZHZAIJZKLMZABNMJZUOAJZAOJZUJUKULUOSUNPMEZUPUQQUMUNTEZUSUJULUTUKCAR
     UAUNUBUCCCABUOUDUEUJUKURUQQULCAUFUGUH $.
 
+  $( The first symbol of the right (nonempty) half of a concatenated word.
+     (Contributed by AV, 23-Apr-2022.) $)
+  ccatval21sw $p |- ( ( A e. Word V /\ B e. Word V /\ B =/= (/) )
+                     -> ( ( A ++ B ) ` ( # ` A ) ) = ( B ` 0 ) ) $=
+    ( cword wcel c0 wne w3a chash cfv cconcat co cmin cc0 wceq cz clt wbr wa cr
+    caddc cfzo cn lencl nn0zd lennncl simpl nnz zaddcl sylan2 nngt0 adantl nnre
+    zre ltaddpos syl2anr mpbid 3jca syl2an 3impb fzolb sylibr ccatval2 syld3an3
+    wb nn0cnd subidd fveq2d 3ad2ant1 eqtrd ) ACDZEZBVKEZBFGZHZAIJZABKLJZVPVPMLZ
+    BJZNBJZVLVMVNVPVPVPBIJZUALZUBLEZVQVSOVOVPPEZWBPEZVPWBQRZHZWCVLVMVNWGVLWDWAU
+    CEZWGVMVNSVLVPCAUDZUECBUFWDWHSZWDWEWFWDWHUGWHWDWAPEWEWAUHVPWAUIUJWJNWAQRZWF
+    WHWKWDWAUKULWHWATEVPTEWKWFVEWDWAUMVPUNWAVPUOUPUQURUSUTVPWBVAVBCABVPVCVDVLVM
+    VSVTOVNVLVRNBVLVPVLVPWIVFVGVHVIVJ $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
