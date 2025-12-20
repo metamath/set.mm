@@ -10342,6 +10342,16 @@ $)
       ( wo w3o df-3or sylib ecased ) ABCEABCHZDFABCDIMDHGBCDJKLL $.
   $}
 
+  ${
+    3biorfd.1 $e |- ( ph -> -. th ) $.
+    $( A disjunction is equivalent to a threefold disjunction with single
+       falsehood, analogous to ~ biorf .  (Contributed by Alexander van der
+       Vekens, 8-Sep-2017.) $)
+    3bior1fd $p |- ( ph -> ( ( ch \/ ps ) <-> ( th \/ ch \/ ps ) ) ) $=
+      ( wo w3o wn wb biorf syl 3orass bitr4di ) ACBFZDNFZDCBGADHNOIEDNJKDCBLM
+      $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
