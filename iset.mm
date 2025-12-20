@@ -116639,6 +116639,17 @@ $)
       URVBUJFUTVJUKULUMUNUO $.
   $}
 
+  $( An element of a finite set of sequential integers up to the length of a
+     word is an element of an extended finite set of sequential integers up to
+     the length of a concatenation of this word with another word.
+     (Contributed by Alexander van der Vekens, 28-Mar-2018.) $)
+  elfzelfzccat $p |- ( ( A e. Word V /\ B e. Word V )
+                       -> ( N e. ( 0 ... ( # ` A ) )
+                            -> N e. ( 0 ... ( # ` ( A ++ B ) ) ) ) ) $=
+    ( cword wcel wa cc0 chash cfv cfz co caddc cconcat wi lencl elfz0add syl2an
+    cn0 ccatlen oveq2d eleq2d sylibrd ) ADEZFZBUDFZGZCHAIJZKLFZCHUHBIJZMLZKLZFZ
+    CHABNLIJZKLZFUEUHSFUJSFUIUMOUFDAPDBPUHUJCQRUGUOULCUGUNUKHKDDABTUAUBUC $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
