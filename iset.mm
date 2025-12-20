@@ -10375,6 +10375,15 @@ $)
       ( wa w3a biantrurd 3anass bitr4di ) ACBFZDKFDCBGADKEHDCBIJ $.
   $}
 
+  ${
+    intn3and.1 $e |- ( ph -> -. ps ) $.
+    $( Introduction of a triple conjunct inside a contradiction.  (Contributed
+       by FL, 27-Dec-2007.)  (Proof shortened by Andrew Salmon,
+       26-Jun-2011.) $)
+    intn3an1d $p |- ( ph -> -. ( ps /\ ch /\ th ) ) $=
+      ( w3a simp1 nsyl ) ABBCDFEBCDGH $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
