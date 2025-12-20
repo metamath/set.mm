@@ -116650,6 +116650,23 @@ $)
     cn0 ccatlen oveq2d eleq2d sylibrd ) ADEZFZBUDFZGZCHAIJZKLFZCHUHBIJZMLZKLZFZ
     CHABNLIJZKLZFUEUHSFUJSFUIUMOUFDAPDBPUHUJCQRUGUOULCUGUNUKHKDDABTUAUBUC $.
 
+  ${
+    $d A x $.  $d B x $.  $d V x $.
+    $( The concatenation of two words is a function over the half-open integer
+       range having the sum of the lengths of the word as length.  (Contributed
+       by Alexander van der Vekens, 30-Mar-2018.) $)
+    ccatvalfn $p |- ( ( A e. Word V /\ B e. Word V )
+                  -> ( A ++ B ) Fn ( 0 ..^ ( ( # ` A ) + ( # ` B ) ) ) ) $=
+      ( vx cword wcel wa cconcat co cc0 chash cfv caddc wfn cvv fvexg cz wrdfin
+      cfzo cfn cv cmin cif cmpt wral adantlr simplr elfzoelz adantl lencl nn0zd
+      ad2antrr zsubcld syl2anc ifexd ralrimiva eqid fnmpt syl ccatfvalfi syl2an
+      wceq fneq1d mpbird ) ACEZFZBVEFZGZABHIZJAKLZBKLMIZSIZNDVLDUAZJVJSIFZVMALZ
+      VMVJUBIZBLZUCZUDZVLNZVHVROFZDVLUEVTVHWADVLVHVMVLFZGZVNVOVQOOVFWBVOOFVGVMA
+      VEVLPUFWCVGVPQFVQOFVFVGWBUGWCVMVJWBVMQFVHVMJVKUHUIVFVJQFVGWBVFVJCAUJUKULU
+      MVPBVEQPUNUOUPDVLVRVSOVSUQURUSVHVLVIVSVFATFBTFVIVSVBVGCARCBRDABUTVAVCVD
+      $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
