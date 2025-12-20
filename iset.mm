@@ -105302,6 +105302,22 @@ $)
     VDUJACMLUKABCUDOUEULUMHGZUNHGZUOHGZUPUQURIUFUJVAUKVGVBADRTUJUSUKVHUTBDRTUJV
     EUKVIVFCDRTUMUNUOUGUIUH $.
 
+  $( Translate membership in a 0-based half-open integer range.  (Contributed
+     by AV, 30-Apr-2020.) $)
+  fzo0addel $p |- ( ( A e. ( 0 ..^ C ) /\ D e. ZZ )
+                     -> ( A + D ) e. ( D ..^ ( C + D ) ) ) $=
+    ( cc0 cfzo co wcel cz wa caddc fzoaddel wceq cc addlid eqcomd adantl oveq1d
+    zcn syl eleqtrrd ) ADBEFGZCHGZIZACJFDCJFZBCJFZEFCUEEFADBCKUCCUDUEEUBCUDLZUA
+    UBCMGZUFCRUGUDCCNOSPQT $.
+
+  $( Translate membership in a 0-based half-open integer range.  (Contributed
+     by AV, 30-Apr-2020.) $)
+  fzo0addelr $p |- ( ( A e. ( 0 ..^ C ) /\ D e. ZZ )
+                     -> ( A + D ) e. ( D ..^ ( D + C ) ) ) $=
+    ( cc0 cfzo co wcel cz caddc fzo0addel wceq zcn elfzoel2 zcnd addcom syl2anr
+    wa cc oveq2d eleqtrrd ) ADBEFGZCHGZQZACIFCBCIFZEFCCBIFZEFABCJUCUEUDCEUBCRGB
+    RGUEUDKUACLUABADBMNCBOPST $.
+
   $( Translate membership in a shifted-down half-open integer range.
      (Contributed by Stefan O'Rear, 15-Aug-2015.) $)
   fzoaddel2 $p |- ( ( A e. ( 0 ..^ ( B - C ) ) /\ B e. ZZ /\ C e. ZZ ) ->
