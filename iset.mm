@@ -116963,6 +116963,12 @@ $)
     ( wcel cs1 crn cc0 cop csn s1val rneqd c0ex rnsnop eqtrdi ) ABCZADZEFAGHZEA
     HNOPABIJFAKLM $.
 
+  $( Equality theorem for a singleton word.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  s1eq $p |- ( A = B -> <" A "> = <" B "> ) $=
+    ( wceq cc0 cid cfv cop csn cs1 fveq2 opeq2d sneqd df-s1 3eqtr4g ) ABCZDAEFZ
+    GZHDBEFZGZHAIBIOQSOPRDABEJKLAMBMN $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
