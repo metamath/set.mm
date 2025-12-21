@@ -116984,6 +116984,14 @@ $)
     ( wcel cs1 cc0 cop csn cword s1val snopiswrd eqeltrd ) ABCADEAFGBHABIABJK
     $.
 
+  ${
+    s1cld.1 $e |- ( ph -> A e. B ) $.
+    $( A singleton word is a word.  (Contributed by Mario Carneiro,
+       26-Feb-2016.) $)
+    s1cld $p |- ( ph -> <" A "> e. Word B ) $=
+      ( wcel cs1 cword s1cl syl ) ABCEBFCGEDBCHI $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
