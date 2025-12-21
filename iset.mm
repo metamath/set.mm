@@ -117017,6 +117017,12 @@ $)
     ( wcel cc0 cs1 cfv cop csn s1val fveq1d cn0 wceq 0nn0 fvsng mpan eqtrd ) AB
     CZDAEZFDDAGHZFZAQDRSABIJDKCQTALMDAKBNOP $.
 
+  $( The last symbol of a singleton word is its symbol.  (Contributed by AV,
+     22-Oct-2018.) $)
+  lsws1 $p |- ( A e. V -> ( lastS ` <" A "> ) = A ) $=
+    ( wcel cs1 clsw cfv cword chash c1 wceq s1cl s1leng lsw1 syl2anc s1fv eqtrd
+    cc0 ) ABCZADZEFZQSFZARSBGCSHFIJTUAJABKABLBSMNABOP $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
