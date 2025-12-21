@@ -116999,6 +116999,13 @@ $)
     wceq ax-mp 3eqtr4g ) ABCDZEAFGZHZIEJHZIZAKJKZUAUCUDUAUBJEAFLMNAOJBCUFUERPJB
     QST $.
 
+  $( Length of a singleton word.  (Contributed by Stefan O'Rear, 15-Aug-2015.)
+     (Revised by Mario Carneiro, 26-Feb-2016.) $)
+  s1leng $p |- ( A e. V -> ( # ` <" A "> ) = 1 ) $=
+    ( wcel cs1 chash cfv cc0 cop csn c1 s1val fveq2d cvv wceq cn0 opexg hashsng
+    0nn0 mpan syl eqtrd ) ABCZADZEFGAHZIZEFZJUBUCUEEABKLUBUDMCZUFJNGOCUBUGRGAOB
+    PSUDMQTUA $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
