@@ -116969,6 +116969,14 @@ $)
     ( wceq cc0 cid cfv cop csn cs1 fveq2 opeq2d sneqd df-s1 3eqtr4g ) ABCZDAEFZ
     GZHDBEFZGZHAIBIOQSOPRDABEJKLAMBMN $.
 
+  ${
+    s1eqd.1 $e |- ( ph -> A = B ) $.
+    $( Equality theorem for a singleton word.  (Contributed by Mario Carneiro,
+       26-Feb-2016.) $)
+    s1eqd $p |- ( ph -> <" A "> = <" B "> ) $=
+      ( wceq cs1 s1eq syl ) ABCEBFCFEDBCGH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
