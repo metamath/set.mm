@@ -117050,6 +117050,17 @@ $)
       UCABUDUE $.
   $}
 
+  $( A word of length 1 is a singleton word consisting of the first symbol of
+     the word.  (Contributed by AV, 22-Jul-2018.)  (Proof shortened by AV,
+     14-Oct-2018.) $)
+  wrdl1s1 $p |- ( S e. V -> ( W = <" S ">
+                  <-> ( W e. Word V /\ ( # ` W ) = 1 /\ ( W ` 0 ) = S ) ) ) $=
+    ( wcel cs1 wceq cword chash cfv cc0 w3a s1cl s1leng s1fv 3jca eleq1 fveqeq2
+    c1 fveq1 eqeq1d 3anbi123d syl5ibrcom wa eqs1 s1eq eqeq2d syl5ibcom impbid1
+    3impia ) ABDZCAEZFZCBGZDZCHIRFZJCIZAFZKZUJURULUKUMDZUKHIRFZJUKIZAFZKUJUSUTV
+    BABLABMABNOULUNUSUOUTUQVBCUKUMPCUKRHQULUPVAAJCUKSTUAUBUNUOUQULUNUOUCCUPEZFU
+    QULBCUDUQVCUKCUPAUEUFUGUIUH $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
