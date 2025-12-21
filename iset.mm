@@ -116951,6 +116951,12 @@ $)
      26-Feb-2016.) $)
   df-s1 $a |- <" A "> = { <. 0 , ( _I ` A ) >. } $.
 
+  $( Value of a singleton word.  (Contributed by Stefan O'Rear, 15-Aug-2015.)
+     (Revised by Mario Carneiro, 26-Feb-2016.) $)
+  s1val $p |- ( A e. V -> <" A "> = { <. 0 , A >. } ) $=
+    ( wcel cs1 cc0 cid cfv cop csn df-s1 fvi opeq2d sneqd eqtrid ) ABCZADEAFGZH
+    ZIEAHZIAJOQROPAEABKLMN $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
