@@ -117038,6 +117038,18 @@ $)
       EWHVGVKNWCUTANBCVLVAVBPVC $.
   $}
 
+  ${
+    $d S s $.  $d W s $.
+    $( A word of length 1 is a singleton word.  (Contributed by AV,
+       24-Jan-2021.) $)
+    wrdl1exs1 $p |- ( ( W e. Word S /\ ( # ` W ) = 1 )
+                      -> E. s e. S W = <" s "> ) $=
+      ( cword wcel chash cfv c1 wceq wa cv cs1 cc0 cle wbr 1le1 mpbiri wrdsymb1
+      breq2 sylan2 s1eq adantl eqeq2d eqs1 rspcedvd ) BADEZBFGZHIZJZBCKZLZIBMBG
+      ZLZICULAUHUFHUGNOZULAEUHUNHHNOPUGHHNSQABRTUIUJULIZJUKUMBUOUKUMIUIUJULUAUB
+      UCABUDUE $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
