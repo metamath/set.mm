@@ -117011,6 +117011,12 @@ $)
     ( wcel cs1 cdm cc0 cop csn s1val dmeqd dmsnopg eqtrd ) ABCZADZEFAGHZEFHMNOA
     BIJFABKL $.
 
+  $( Sole symbol of a singleton word.  (Contributed by Stefan O'Rear,
+     15-Aug-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.) $)
+  s1fv $p |- ( A e. B -> ( <" A "> ` 0 ) = A ) $=
+    ( wcel cc0 cs1 cfv cop csn s1val fveq1d cn0 wceq 0nn0 fvsng mpan eqtrd ) AB
+    CZDAEZFDDAGHZFZAQDRSABIJDKCQTALMDAKBNOP $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
