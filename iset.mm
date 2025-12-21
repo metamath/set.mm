@@ -117023,6 +117023,21 @@ $)
     ( wcel cs1 clsw cfv cword chash c1 wceq s1cl s1leng lsw1 syl2anc s1fv eqtrd
     cc0 ) ABCZADZEFZQSFZARSBGCSHFIJTUAJABKABLBSMNABOP $.
 
+  ${
+    $d x W $.
+    $( A word of length 1 is a singleton word.  (Contributed by Stefan O'Rear,
+       23-Aug-2015.)  (Proof shortened by AV, 1-May-2020.) $)
+    eqs1 $p |- ( ( W e. Word A /\ ( # ` W ) = 1 ) -> W = <" ( W ` 0 ) "> ) $=
+      ( vx cword wcel chash cfv c1 wceq wa cc0 cfzo co cvv cn0 adantr syl fveq2
+      wral wb cs1 cv simpr 0nn0 fvexg mpan2 s1leng eqtr4d csn s1fv c0ex eqeq12d
+      eqcomd ralsn sylibr oveq2 fzo01 eqtrdi adantl s1cld eqwrd mpdan mpbir2and
+      raleqdv mpbird ) BADZEZBFGZHIZJZBKBGZUAZIZVHVLFGZIZCUBZBGZVPVLGZIZCKVHLMZ
+      SZVJVHHVNVGVIUCVJVKNEZVNHIVGWBVIVGKOEWBUDKBVFOUEUFZPVKNUGQUHVJWAVSCKUIZSZ
+      VGWEVIVGVKKVLGZIZWEVGWFVKVGWBWFVKIWCVKNUJQUMVSWGCKUKVPKIVQVKVRWFVPKBRVPKV
+      LRULUNUOPVIWAWETVGVIVSCVTWDVIVTKHLMWDVHHKLUPUQURVDUSVEVGVMVOWAJTZVIVGVLND
+      EWHVGVKNWCUTANBCVLVAVBPVC $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
