@@ -116946,9 +116946,8 @@ $)
   $( Define the canonical injection from symbols to words.  Although not
      required, ` A ` should usually be a set.  Otherwise, the singleton word
      ` <" A "> ` would be the singleton word consisting of the empty set, see
-     ~ s1prc , and not, as maybe expected, the empty word, see also ~ s1nz .
-     (Contributed by Stefan O'Rear, 15-Aug-2015.)  (Revised by Mario Carneiro,
-     26-Feb-2016.) $)
+     ~ s1prc , and not, as maybe expected, the empty word.  (Contributed by
+     Stefan O'Rear, 15-Aug-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.) $)
   df-s1 $a |- <" A "> = { <. 0 , ( _I ` A ) >. } $.
 
   $( Value of a singleton word.  (Contributed by Stefan O'Rear, 15-Aug-2015.)
