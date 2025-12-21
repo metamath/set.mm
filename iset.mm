@@ -116992,6 +116992,13 @@ $)
       ( wcel cs1 cword s1cl syl ) ABCEBFCGEDBCHI $.
   $}
 
+  $( Value of a singleton word if the symbol is a proper class.  (Contributed
+     by AV, 26-Mar-2022.) $)
+  s1prc $p |- ( -. A e. _V -> <" A "> = <" (/) "> ) $=
+    ( cvv wcel wn cc0 cid cfv cop csn c0 cs1 fvprc opeq2d sneqd df-s1 0ex s1val
+    wceq ax-mp 3eqtr4g ) ABCDZEAFGZHZIEJHZIZAKJKZUAUCUDUAUBJEAFLMNAOJBCUFUERPJB
+    QST $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
