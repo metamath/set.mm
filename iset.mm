@@ -116957,6 +116957,12 @@ $)
     ( wcel cs1 cc0 cid cfv cop csn df-s1 fvi opeq2d sneqd eqtrid ) ABCZADEAFGZH
     ZIEAHZIAJOQROPAEABKLMN $.
 
+  $( The range of a singleton word.  (Contributed by Mario Carneiro,
+     18-Jul-2016.) $)
+  s1rn $p |- ( A e. V -> ran <" A "> = { A } ) $=
+    ( wcel cs1 crn cc0 cop csn s1val rneqd c0ex rnsnop eqtrdi ) ABCZADZEFAGHZEA
+    HNOPABIJFAKLM $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
