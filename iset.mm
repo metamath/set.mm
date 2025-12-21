@@ -117005,6 +117005,12 @@ $)
     0nn0 mpan syl eqtrd ) ABCZADZEFGAHZIZEFZJUBUCUEEABKLUBUDMCZUFJNGOCUBUGRGAOB
     PSUDMQTUA $.
 
+  $( The domain of a singleton word is a singleton.  (Contributed by AV,
+     9-Jan-2020.) $)
+  s1dmg $p |- ( A e. S -> dom <" A "> = { 0 } ) $=
+    ( wcel cs1 cdm cc0 cop csn s1val dmeqd dmsnopg eqtrd ) ABCZADZEFAGHZEFHMNOA
+    BIJFABKL $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
