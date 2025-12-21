@@ -116047,6 +116047,12 @@ $(
            -> ( # `` ( W ++ U ) ) = ( ( # `` W ) + ( # `` U ) ) ` </td>
     <td> Note that the index of the first symbol of the second concatenated
          word is the length of the first word in the concatenation.</td></tr>
+  <tr>
+    <td>Singleton word </td>
+    <td> ~ df-s1 : ` <" S "> ` </td>
+    <td>Constructor building a word of length 1 from a symbol.</td>
+    <td> ` ( # `` <" S "> ) = 1 ` </td>
+    <td> </td></tr>
   </table>
 
   Conventions:
@@ -116924,6 +116930,26 @@ $)
   lswccat0lsw $p |- ( W e. Word V
                      -> ( lastS ` ( W ++ (/) ) ) = ( lastS ` W ) ) $=
     ( cword wcel c0 cconcat co clsw ccatrid fveq2d ) BACDBEFGBHABIJ $.
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Singleton words
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c <" "> $.
+
+  $( Syntax for the singleton word constructor. $)
+  cs1 $a class <" A "> $.
+
+  $( Define the canonical injection from symbols to words.  Although not
+     required, ` A ` should usually be a set.  Otherwise, the singleton word
+     ` <" A "> ` would be the singleton word consisting of the empty set, see
+     ~ s1prc , and not, as maybe expected, the empty word, see also ~ s1nz .
+     (Contributed by Stefan O'Rear, 15-Aug-2015.)  (Revised by Mario Carneiro,
+     26-Feb-2016.) $)
+  df-s1 $a |- <" A "> = { <. 0 , ( _I ` A ) >. } $.
 
 
 $(
@@ -192167,6 +192193,18 @@ htmldef "lastS" as 'lastS';
 htmldef "++" as " ++ ";
   althtmldef "++" as " ++ ";
   latexdef "++" as "\mathbin{\operatorname{++}}";
+htmldef '<"' as
+    "<IMG SRC='langle.gif' WIDTH=4 HEIGHT=19 ALT=' &lt;' TITLE='&lt;'>" +
+    "<IMG SRC='backquote.gif' WIDTH=7 HEIGHT=19 ALT='" + '"' +
+      "' TITLE='" + '"' + "'>";
+  althtmldef '<"' as '&lang;&ldquo;'; /* &#9001;&#8220; */
+  latexdef '<"' as "\langle``";
+htmldef '">' as
+    "<IMG SRC='quote.gif' WIDTH=7 HEIGHT=19 ALT=' " + '"' +
+      "' TITLE='" + '"' + "'>" +
+    "<IMG SRC='rangle.gif' WIDTH=4 HEIGHT=19 ALT='&gt;' TITLE='&gt;'>";
+  althtmldef '">' as '&rdquo;&rang;'; /* &#8221;&#9002; */
+  latexdef '">' as "''\rangle";
 htmldef "~QG" as " ~<sub><i>QG</i></sub> ";
   althtmldef "~QG" as " ~<sub><i>QG</i></sub> ";
   latexdef "~QG" as " \sim_{QG} ";
