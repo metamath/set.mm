@@ -117163,6 +117163,15 @@ $)
     ( cword wcel chash cfv wceq cs1 cconcat co wa eqidd ccats1val2 mpd3an3 ) BA
     DEZCAEZBFGZRHRBCIJKGCHPQLRMCRABNO $.
 
+  $( The last symbol of a word concatenated with a singleton word is the symbol
+     of the singleton word.  (Contributed by AV, 6-Aug-2018.) $)
+  lswccats1 $p |- ( ( W e. Word V /\ S e. V )
+                    -> ( lastS ` ( W ++ <" S "> ) ) = S ) $=
+    ( cword wcel wa cs1 cconcat co clsw cfv chash c1 cmin wceq ccatws1cl lswwrd
+    syl cn0 lencl adantr nn0cnd ccatws1leng mvrraddd fveq2d ccatws1ls 3eqtrd
+    1cnd ) CBDZEZABEZFZCAGHIZJKZUMLKZMNIZUMKZCLKZUMKAULUMUIEUNUQOBCAPBUMQRULUPU
+    RUMULUOURMULURUJURSEUKBCTUAUBULUHBCABUCUDUEBCAUFUG $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
