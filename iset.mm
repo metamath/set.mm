@@ -117084,6 +117084,13 @@ $)
     ( wcel cword cs1 cconcat co s1cl ccatcl sylan2 ) CADBAEZDCFZLDBMGHLDCAIABMJ
     K $.
 
+  $( The concatenation of two singleton words is a word.  (Contributed by
+     Alexander van der Vekens, 22-Sep-2018.) $)
+  ccat2s1cl $p |- ( ( X e. V /\ Y e. V )
+                    -> ( <" X "> ++ <" Y "> ) e. Word V ) $=
+    ( wcel cs1 cword cconcat co s1cl ccatws1cl sylan ) BADBEZAFZDCADLCEGHMDBAIA
+    LCJK $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
