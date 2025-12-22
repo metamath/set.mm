@@ -117110,6 +117110,13 @@ $)
     1cnd ) CBFGZDEGZAHGZIZCDJKLMSZANOLZPCMSZNOLZURPZUSAPZUPUQUTURUMUNUQUTPUOBCD
     EQRUAUMUOVAVBUBUNUMUOUCZUSANUMUSTGUOUMUSBCUDUEUFUOATGUMAUGUHVCULUIUJUK $.
 
+  $( The concatenation of a word with two singleton words is a word.
+     (Contributed by Alexander van der Vekens, 22-Sep-2018.) $)
+  ccatw2s1cl $p |- ( ( W e. Word V /\ X e. V /\ Y e. V )
+                     -> ( ( W ++ <" X "> ) ++ <" Y "> ) e. Word V ) $=
+    ( cword wcel cs1 cconcat co ccatws1cl stoic3 ) BAEZFCAFBCGHIZLFDAFMDGHILFAB
+    CJAMDJK $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
