@@ -117184,6 +117184,17 @@ $)
     BDVBUSPBARZUSBAQSURUOUTUNDKKUPTNDZVCUSPUOUQUAURUSBVDUBURUPUCDZVEUOUPUDDZUQV
     FBAUEVFVGUQJUPUFUGUHUPUIUJBBAUTKUKULUM $.
 
+  $( Extract the second of two single symbols concatenated with a word.
+     (Contributed by Alexander van der Vekens, 22-Sep-2018.)  (Proof shortened
+     by AV, 1-May-2020.) $)
+  ccatw2s1p2 $p |- ( ( ( W e. Word V /\ ( # ` W ) = N )
+                      /\ ( X e. V /\ Y e. V ) )
+                    -> ( ( ( W ++ <" X "> ) ++ <" Y "> ) ` ( N + 1 ) ) = Y ) $=
+    ( cword wcel chash cfv wa cs1 cconcat co c1 caddc ccatws1cl ad2ant2r simprr
+    wceq ccatws1leng oveq1 ad2antlr eqtr2d ccats1val2 syl3anc ) CBFZGZCHIZASZJZ
+    DBGZEBGZJZJZCDKLMZUFGZULANOMZUOHIZSUQUOEKLMIESUGUKUPUIULBCDPQUJUKULRUNURUHN
+    OMZUQUGUKURUSSUIULBCDBTQUIUSUQSUGUMUHANOUAUBUCEUQBUOUDUE $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
