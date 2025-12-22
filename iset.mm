@@ -117072,6 +117072,20 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Concatenations with singleton words
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( The concatenation of a word with a singleton word is a word.  (Contributed
+     by Alexander van der Vekens, 22-Sep-2018.) $)
+  ccatws1cl $p |- ( ( W e. Word V /\ X e. V )
+                   -> ( W ++ <" X "> ) e. Word V ) $=
+    ( wcel cword cs1 cconcat co s1cl ccatcl sylan2 ) CADBAEZDCFZLDBMGHLDCAIABMJ
+    K $.
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Elementary real and complex functions
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
