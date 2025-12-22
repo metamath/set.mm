@@ -117125,6 +117125,20 @@ $)
     ( wcel cword cs1 cc0 chash cfv cfzo co cconcat wceq s1cl ccatval1 syl3an2 )
     AEFDCGFAHZEGFBIDJKLMFBDSNMKBDKOAEPCEDSBQR $.
 
+  $( Value of the symbol concatenated with a word.  (Contributed by Alexander
+     van der Vekens, 5-Aug-2018.)  (Proof shortened by Alexander van der
+     Vekens, 14-Oct-2018.) $)
+  ccats1val2 $p |- ( ( W e. Word V /\ S e. V /\ I = ( # ` W ) )
+                     -> ( ( W ++ <" S "> ) ` I ) = S ) $=
+    ( cword wcel chash cfv wceq w3a cs1 co cmin caddc cfzo 3ad2ant2 c1 3ad2ant3
+    cc0 oveq2d cconcat simp1 s1cl cz lencl nn0zd elfzomin s1leng eleqtrrd eleq1
+    3syl mpbird ccatval2 syl3anc oveq1 nn0cnd subidd 3ad2ant1 eqtrd fveq2d s1fv
+    wb 3eqtrd ) DCEZFZACFZBDGHZIZJZBDAKZUALHZBVGMLZVJHZSVJHZAVIVEVJVDFZBVGVGVJG
+    HZNLZOLZFZVKVMIVEVFVHUBZVFVEVOVHACUCPVIVSVGVRFZVIVGVGVGQNLZOLZVRVIVEVGUDFVG
+    WCFVTVEVGCDUEZUFVGUGUKVFVEVRWCIVHVFVQWBVGOVFVPQVGNACUHTTPUIVHVEVSWAVBVFBVGV
+    RUJRULCDVJBUMUNVIVLSVJVIVLVGVGMLZSVHVEVLWEIVFBVGVGMUORVEVFWESIVHVEVGVEVGWDU
+    PUQURUSUTVFVEVNAIVHACVAPVC $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
