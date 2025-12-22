@@ -117091,6 +117091,15 @@ $)
     ( wcel cs1 cword cconcat co s1cl ccatws1cl sylan ) BADBEZAFZDCADLCEGHMDBAIA
     LCJK $.
 
+  $( The length of the concatenation of a word with a singleton word.
+     (Contributed by Alexander van der Vekens, 22-Sep-2018.)  (Revised by AV,
+     4-Mar-2022.) $)
+  ccatws1leng $p |- ( ( W e. Word V /\ X e. Y )
+                      -> ( # ` ( W ++ <" X "> ) ) = ( ( # ` W ) + 1 ) ) $=
+    ( cword wcel wa cs1 cconcat chash cfv caddc wceq s1cl ccatlen sylan2 s1leng
+    co c1 oveq2d adantl eqtrd ) BAEFZCDFZGBCHZIRJKZBJKZUEJKZLRZUGSLRZUDUCUEDEFU
+    FUIMCDNADBUEOPUDUIUJMUCUDUHSUGLCDQTUAUB $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
