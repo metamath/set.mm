@@ -117172,6 +117172,18 @@ $)
     1cnd ) CBDZEZABEZFZCAGHIZJKZUMLKZMNIZUMKZCLKZUMKAULUMUIEUNUQOBCAPBUMQRULUPU
     RUMULUOURMULURUJURSEUKBCTUAUBULUHBCABUCUDUEBCAUFUG $.
 
+  $( The last symbol of a nonempty word concatenated with its first symbol is
+     the first symbol.  (Contributed by AV, 28-Jun-2018.)  (Proof shortened by
+     AV, 1-May-2020.) $)
+  lswccats1fst $p |- ( ( P e. Word V /\ 1 <_ ( # ` P ) )
+                       -> ( lastS ` ( P ++ <" ( P ` 0 ) "> ) )
+                          = ( ( P ++ <" ( P ` 0 ) "> ) ` 0 ) ) $=
+    ( cword wcel c1 chash cfv cle wbr wa cc0 cs1 cconcat co clsw wceq lswccats1
+    wrdsymb1 syldan cfzo simpl s1cld cn cn0 lencl elnnnn0c biimpri sylan lbfzo0
+    sylibr ccatval1 syl3anc eqtr4d ) ABCZDZEAFGZHIZJZAKAGZLZMNZOGZUSKVAGZUOUQUS
+    BDVBUSPBARZUSBAQSURUOUTUNDKKUPTNDZVCUSPUOUQUAURUSBVDUBURUPUCDZVEUOUPUDDZUQV
+    FBAUEVFVGUQJUPUFUGUHUPUIUJBBAUTKUKULUM $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
