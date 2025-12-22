@@ -117100,6 +117100,16 @@ $)
     co c1 oveq2d adantl eqtrd ) BAEFZCDFZGBCHZIRJKZBJKZUEJKZLRZUGSLRZUDUCUEDEFU
     FUIMCDNADBUEOPUDUIUJMUCUDUHSUGLCDQTUAUB $.
 
+  $( The length of a word is ` N ` iff the length of the concatenation of the
+     word with a singleton word is ` N + 1 ` .  (Contributed by AV,
+     4-Mar-2022.) $)
+  ccatws1lenp1bg $p |- ( ( W e. Word V /\ X e. Y /\ N e. NN0 )
+             -> ( ( # ` ( W ++ <" X "> ) ) = ( N + 1 ) <-> ( # ` W ) = N ) ) $=
+    ( cword wcel cn0 w3a cs1 cconcat co chash c1 caddc wceq ccatws1leng 3adant3
+    cfv cc eqeq1d wb wa lencl nn0cnd adantr nn0cn adantl addcan2d 3adant2 bitrd
+    1cnd ) CBFGZDEGZAHGZIZCDJKLMSZANOLZPCMSZNOLZURPZUSAPZUPUQUTURUMUNUQUTPUOBCD
+    EQRUAUMUOVAVBUBUNUMUOUCZUSANUMUSTGUOUMUSBCUDUEUFUOATGUMAUGUHVCULUIUJUK $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
