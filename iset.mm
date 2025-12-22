@@ -117117,6 +117117,14 @@ $)
     ( cword wcel cs1 cconcat co ccatws1cl stoic3 ) BAEZFCAFBCGHIZLFDAFMDGHILFAB
     CJAMDJK $.
 
+  $( Value of a symbol in the left half of a word concatenated with a single
+     symbol.  (Contributed by Alexander van der Vekens, 5-Aug-2018.)  (Revised
+     by JJ, 20-Jan-2024.) $)
+  ccats1val1g $p |- ( ( W e. Word V /\ S e. Y /\ I e. ( 0 ..^ ( # ` W ) ) )
+                     -> ( ( W ++ <" S "> ) ` I ) = ( W ` I ) ) $=
+    ( wcel cword cs1 cc0 chash cfv cfzo co cconcat wceq s1cl ccatval1 syl3an2 )
+    AEFDCGFAHZEGFBIDJKLMFBDSNMKBDKOAEPCEDSBQR $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
