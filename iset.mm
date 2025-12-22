@@ -117139,6 +117139,22 @@ $)
     RUJRULCDVJBUMUNVIVLSVJVIVLVGVGMLZSVHVEVLWEIVFBVGVGMUORVEVFWESIVHVEVGVEVGWDU
     PUQURUSUTVFVEVNAIVHACVAPVC $.
 
+  $( The first symbol of a word concatenated with its first symbol is the first
+     symbol of the word.  This theorem holds even if ` W ` is the empty word.
+     (Contributed by AV, 26-Mar-2022.) $)
+  ccat1st1st $p |- ( W e. Word V
+                     -> ( ( W ++ <" ( W ` 0 ) "> ) ` 0 ) = ( W ` 0 ) ) $=
+    ( cword wcel cfv cc0 wceq cs1 cconcat co wne wa c0 syl biimpa cvv 0ex ax-mp
+    syldan cz chash wb wrdfin fihasheq0 s1cl ccatlid fveq1i s1fv eqtri id fveq1
+    cfn 0fv eqtrdi s1eqd oveq12d fveq1d 3eqtr4a cfzo necon3bid fstwrdne lennncl
+    simpl cn lbfzo0 sylibr ccats1val1g syl3anc wdc wo lencl nn0zd zdceq sylancl
+    0z dcne sylib mpjaodan ) BACDZBUAEZFGZFBFBEZHZIJZEZWBGZVTFKZVSWALBMGZWFVSWA
+    WHVSBULDWAWHUBABUCBUDNZOWHFMMHZIJZEZMWEWBWLFWJEZMFWKWJWJPCDZWKWJGMPDZWNQMPU
+    ERPWJUFRUGWOWMMGQMPUHRUIWHFWDWKWHBMWCWJIWHUJWHWBMWHWBFMEMFBMUKFUMUNZUOUPUQW
+    PURNVSWGLZVSWBADZFFVTUSJDZWFVSWGVCVSWGBMKZWRVSWGWTVSVTFBMWIUTOZABVASWQVTVDD
+    ZWSVSWGWTXBXAABVBSVTVEVFWBFABAVGVHVSWAVIZWAWGVJVSVTTDFTDXCVSVTABVKVLVOVTFVM
+    VNVTFVPVQVR $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
