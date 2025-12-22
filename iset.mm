@@ -117061,6 +117061,15 @@ $)
     BABLABMABNOULUNUSUOUTUQVBCUKUMPCUKRHQULUPVAAJCUKSTUAUBUNUOUQULUNUOUCCUPEZFU
     QULBCUDUQVCUKCUPAUEUFUGUIUH $.
 
+  $( The singleton word function is injective.  (Contributed by Mario Carneiro,
+     1-Oct-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.) $)
+  s111 $p |- ( ( S e. A /\ T e. A ) -> ( <" S "> = <" T "> <-> S = T ) ) $=
+    ( wcel wa cs1 wceq cc0 cop csn s1val eqeqan12d cvv 0nn0 simpl opexg sylancr
+    wb cn0 cz sneqbg syl 0z eqid opthg baibd mpan2 mpan adantr 3bitrd ) BADZCAD
+    ZEZBFZCFZGHBIZJZHCIZJZGZUPURGZBCGZUKULUNUQUOUSBAKCAKLUMUPMDZUTVARUMHSDUKVCN
+    UKULOHBSAPQUPURMUAUBUKVAVBRZULHTDZUKVDUCVEUKEZHHGZVDHUDVFVAVGVBHBHCTAUEUFUG
+    UHUIUJ $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
