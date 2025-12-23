@@ -66072,25 +66072,25 @@ $)
     $d f A $.  $d f B $.  $d f F $.
     $( The domain and range of a one-to-one, onto set function are
        equinumerous.  This variation of ~ f1oeng does not require the Axiom of
-       Replacement nor the Axiom of Power Sets nor the Axiom of Union.
-       (Contributed by BTernaryTau, 7-Dec-2024.) $)
+       Replacement nor the Axiom of Union.  (Contributed by BTernaryTau,
+       7-Dec-2024.) $)
     f1oen4g $p |- ( ( ( F e. V /\ A e. W /\ B e. X ) /\ F : A -1-1-onto-> B )
         -> A ~~ B ) $=
       ( vf wcel w3a wf1o wa cen wbr cv wex f1oeq1 spcegv imp 3ad2antl1 wb breng
       3adant1 adantr mpbird ) CDHZAEHZBFHZIZABCJZKABLMZABGNZJZGOZUEUFUIUMUGUEUI
       UMULUIGCDABUKCPQRSUHUJUMTZUIUFUGUNUEABGEFUAUBUCUD $.
-    $( $j usage 'f1oen4g' avoids 'ax-un'; $)
+    $( $j usage 'f1oen4g' avoids 'ax-coll' 'ax-un'; $)
 
     $( The domain of a one-to-one set function is dominated by its codomain
        when the latter is a set.  This variation of ~ f1domg does not require
-       the Axiom of Replacement nor the Axiom of Power Sets nor the Axiom of
-       Union.  (Contributed by BTernaryTau, 7-Dec-2024.) $)
+       the Axiom of Replacement nor the Axiom of Union.  (Contributed by
+       BTernaryTau, 7-Dec-2024.) $)
     f1dom4g $p |- ( ( ( F e. V /\ A e. W /\ B e. X ) /\ F : A -1-1-> B )
         -> A ~<_ B ) $=
       ( vf wcel w3a wf1 wa cdom wbr cv wex f1eq1 spcegv imp 3ad2antl1 wb adantr
       brdom2g 3adant1 mpbird ) CDHZAEHZBFHZIZABCJZKABLMZABGNZJZGOZUEUFUIUMUGUEU
       IUMULUIGCDABUKCPQRSUHUJUMTZUIUFUGUNUEABGEFUBUCUAUD $.
-    $( $j usage 'f1dom4g' avoids 'ax-un'; $)
+    $( $j usage 'f1dom4g' avoids 'ax-coll' 'ax-un'; $)
   $}
 
   ${
