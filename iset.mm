@@ -66709,8 +66709,8 @@ $)
     en2prd.4 $e |- ( ph -> D e. Y ) $.
     en2prd.5 $e |- ( ph -> A =/= B ) $.
     en2prd.6 $e |- ( ph -> C =/= D ) $.
-    $( Two unordered pairs are equinumerous.  (Contributed by BTernaryTau,
-       23-Dec-2024.) $)
+    $( Two proper unordered pairs are equinumerous.  (Contributed by
+       BTernaryTau, 23-Dec-2024.) $)
     en2prd $p |- ( ph -> { A , B } ~~ { C , D } ) $=
       ( vf cpr cvv wcel syl2anc cen wbr cv wex cop opexg prexg wne wa wi f1oprg
       wf1o syl22anc mp2and f1oeq1 elabd wb breng mpbird ) ABCQZDEQZUAUBZUTVAPUC
