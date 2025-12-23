@@ -116367,6 +116367,17 @@ $(
     <td> Note that the index of the last symbol is less by 1 than the length of
          the word.</td></tr>
   <tr>
+    <td>Subword (or substring) of a word </td>
+    <td> ~ df-substr : ` ( W substr <. I , J >. ) ` </td>
+    <td>Operation which extracts a portion of a word. The result is a
+        consecutive, reindexed part of the sequence representing the word.</td>
+    <td> ` W : ( 0 ..^ 3 ) --> S -> ( W e. Word S
+    /\ ( W substr <. 1 , 2 >. ) e. Word S
+    /\ ( # `` ( W substr <. 1 , 2 >. )  ) = 1 ` </td>
+    <td> Note that the last index of the range defining the subword is greater
+         by 1 than the index of the last symbol of the subword in the sequence
+         of the original word.</td></tr>
+  <tr>
     <td>Concatenation of two words </td>
     <td> ~ df-concat : ` ( W ++ U ) ` </td>
     <td>Operation combining two words to one new word. The result is a
@@ -117523,6 +117534,29 @@ $)
     wceq ccatws1leng oveq1 ad2antlr eqtr2d ccats1val2 syl3anc ) CBFZGZCHIZASZJZ
     DBGZEBGZJZJZCDKLMZUFGZULANOMZUOHIZSUQUOEKLMIESUGUKUPUIULBCDPQUJUKULRUNURUHN
     OMZUQUGUKURUSSUIULBCDBTQUIUSUQSUGUMUHANOUAUBUCEUQBUOUDUE $.
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Subwords/substrings
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c substr $.
+
+  $( Syntax for the subword operator. $)
+  csubstr $a class substr $.
+
+  ${
+    $d s b x $.
+    $( Define an operation which extracts portions (called _subwords_ or
+       _substrings_) of words.  Definition in Section 9.1 of [AhoHopUll]
+       p. 318.  (Contributed by Stefan O'Rear, 15-Aug-2015.) $)
+    df-substr $a |- substr = ( s e. _V , b e. ( ZZ X. ZZ ) |->
+        if ( ( ( 1st ` b ) ..^ ( 2nd ` b ) ) C_ dom s ,
+          ( x e. ( 0 ..^ ( ( 2nd ` b ) - ( 1st ` b ) ) ) |->
+            ( s ` ( x + ( 1st ` b ) ) ) ) , (/) ) ) $.
+  $}
 
 
 $(
@@ -193288,6 +193322,9 @@ htmldef '">' as
     "<IMG SRC='rangle.gif' WIDTH=4 HEIGHT=19 ALT='&gt;' TITLE='&gt;'>";
   althtmldef '">' as '&rdquo;&rang;'; /* &#8221;&#9002; */
   latexdef '">' as "''\rangle";
+htmldef "substr" as " substr ";
+  althtmldef "substr" as " substr ";
+  latexdef "substr" as "\mathrm{substr}";
 htmldef "~QG" as " ~<sub><i>QG</i></sub> ";
   althtmldef "~QG" as " ~<sub><i>QG</i></sub> ";
   latexdef "~QG" as " \sim_{QG} ";
