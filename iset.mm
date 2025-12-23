@@ -5529,6 +5529,15 @@ $)
   $}
 
   ${
+    nsyl4.1 $e |- ( ph -> ps ) $.
+    nsyl4.2 $e |- ( -. ph -> ch ) $.
+    $( A negated syllogism inference.  (Contributed by Wolf Lammen,
+       20-May-2024.) $)
+    nsyl5 $p |- ( -. ps -> ch ) $=
+      ( wn con3i syl ) BFAFCABDGEH $.
+  $}
+
+  ${
     jc.1 $e |- ( ph -> ps ) $.
     jc.2 $e |- ( ph -> ch ) $.
     $( Inference joining the consequents of two premises.  (Contributed by NM,
