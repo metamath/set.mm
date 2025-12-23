@@ -9827,6 +9827,14 @@ $)
   $}
 
   ${
+    syldbl2.1 $e |- ( ( ph /\ ps ) -> ( ps -> th ) ) $.
+    $( Stacked hypotheseis implies goal.  (Contributed by Stanislas Polu,
+       9-Mar-2020.) $)
+    syldbl2 $p |- ( ( ph /\ ps ) -> th ) $=
+      ( wa com12 anabsi7 ) ABCABEBCDFG $.
+  $}
+
+  ${
     3impdi.1 $e |- ( ( ( ph /\ ps ) /\ ( ph /\ ch ) ) -> th ) $.
     $( Importation inference (undistribute conjunction).  (Contributed by NM,
        14-Aug-1995.) $)
@@ -10332,6 +10340,60 @@ $)
        by NM, 22-Apr-1994.)  (Revised by Jim Kingdon, 9-Dec-2017.) $)
     ecase23d $p |- ( ph -> ps ) $=
       ( wo w3o df-3or sylib ecased ) ABCEABCHZDFABCDIMDHGBCDJKLL $.
+  $}
+
+  ${
+    3biorfd.1 $e |- ( ph -> -. th ) $.
+    $( A disjunction is equivalent to a threefold disjunction with single
+       falsehood, analogous to ~ biorf .  (Contributed by Alexander van der
+       Vekens, 8-Sep-2017.) $)
+    3bior1fd $p |- ( ph -> ( ( ch \/ ps ) <-> ( th \/ ch \/ ps ) ) ) $=
+      ( wo w3o wn wb biorf syl 3orass bitr4di ) ACBFZDNFZDCBGADHNOIEDNJKDCBLM
+      $.
+
+    $( A disjunction is equivalent to a threefold disjunction with single
+       falsehood of a conjunction.  (Contributed by Alexander van der Vekens,
+       8-Sep-2017.) $)
+    3bior1fand $p |- ( ph -> ( ( ch \/ ps )
+                       <-> ( ( th /\ ta ) \/ ch \/ ps ) ) ) $=
+      ( wa intnanrd 3bior1fd ) ABCDEGADEFHI $.
+
+    3biorfd.2 $e |- ( ph -> -. ch ) $.
+    $( A wff is equivalent to its threefold disjunction with double falsehood,
+       analogous to ~ biorf .  (Contributed by Alexander van der Vekens,
+       8-Sep-2017.) $)
+    3bior2fd $p |- ( ph -> ( ps <-> ( th \/ ch \/ ps ) ) ) $=
+      ( wo w3o wn wb biorf syl 3bior1fd bitrd ) ABCBGZDCBHACIBOJFCBKLABCDEMN $.
+  $}
+
+  ${
+    3biantd.1 $e |- ( ph -> th ) $.
+    $( A conjunction is equivalent to a threefold conjunction with single
+       truth, analogous to ~ biantrud .  (Contributed by Alexander van der
+       Vekens, 26-Sep-2017.) $)
+    3biant1d $p |- ( ph -> ( ( ch /\ ps ) <-> ( th /\ ch /\ ps ) ) ) $=
+      ( wa w3a biantrurd 3anass bitr4di ) ACBFZDKFDCBGADKEHDCBIJ $.
+  $}
+
+  ${
+    intn3and.1 $e |- ( ph -> -. ps ) $.
+    $( Introduction of a triple conjunct inside a contradiction.  (Contributed
+       by FL, 27-Dec-2007.)  (Proof shortened by Andrew Salmon,
+       26-Jun-2011.) $)
+    intn3an1d $p |- ( ph -> -. ( ps /\ ch /\ th ) ) $=
+      ( w3a simp1 nsyl ) ABBCDFEBCDGH $.
+
+    $( Introduction of a triple conjunct inside a contradiction.  (Contributed
+       by FL, 27-Dec-2007.)  (Proof shortened by Andrew Salmon,
+       26-Jun-2011.) $)
+    intn3an2d $p |- ( ph -> -. ( ch /\ ps /\ th ) ) $=
+      ( w3a simp2 nsyl ) ABCBDFECBDGH $.
+
+    $( Introduction of a triple conjunct inside a contradiction.  (Contributed
+       by FL, 27-Dec-2007.)  (Proof shortened by Andrew Salmon,
+       26-Jun-2011.) $)
+    intn3an3d $p |- ( ph -> -. ( ch /\ th /\ ps ) ) $=
+      ( w3a simp3 nsyl ) ABCDBFECDBGH $.
   $}
 
 
@@ -31644,6 +31706,17 @@ $)
     ifeq2dadc $p |- ( ph -> if ( ps , C , A ) = if ( ps , C , B ) ) $=
       ( cif wceq wn wa simpr iftrued eqtr4d ifeq2d wdc wo exmiddc syl mpjaodan
       ) ABBECHZBEDHZIBJZABKZUAEUBUDBECABLZMUDBEDUEMNAUCKBCDEFOABPBUCQGBRST $.
+  $}
+
+  ${
+    ifeqda.1 $e |- ( ( ph /\ ps ) -> A = C ) $.
+    ifeqda.2 $e |- ( ( ph /\ -. ps ) -> B = C ) $.
+    ifeqdadc.dc $e |- ( ph -> DECID ps ) $.
+    $( Separation of the values of the conditional operator.  (Contributed by
+       Alexander van der Vekens, 13-Apr-2018.) $)
+    ifeqdadc $p |- ( ph -> if ( ps , A , B ) = C ) $=
+      ( cif wceq wn wa iftrue adantl eqtrd iffalse wdc wo exmiddc syl mpjaodan
+      ) ABBCDIZEJBKZABLUBCEBUBCJABCDMNFOAUCLUBDEUCUBDJABCDPNGOABQBUCRHBSTUA $.
   $}
 
   ${
@@ -96637,6 +96710,12 @@ $)
     ( cz wcel cn wn c1 cle wbr clt elnnz1 baib notbid wb 1z zltnle mpan2 bitr4d
     ) ABCZADCZEFAGHZEZAFIHZRSTSRTAJKLRFBCUBUAMNAFOPQ $.
 
+  $( A positive integer is not less than or equal to zero.  (Contributed by AV,
+     13-May-2020.) $)
+  nnnle0 $p |- ( A e. NN -> -. A <_ 0 ) $=
+    ( cn wcel cc0 clt wbr cle wn nngt0 cz wb 0z nnz zltnle sylancr mpbid ) ABCZ
+    DAEFZADGFHZAIQDJCAJCRSKLAMDANOP $.
+
   $( Transitive law of ordering for integers.  (Contributed by Alexander van
      der Vekens, 3-Apr-2018.) $)
   zletr $p |- ( ( J e. ZZ /\ K e. ZZ /\ L e. ZZ )
@@ -105288,6 +105367,22 @@ $)
     VDUJACMLUKABCUDOUEULUMHGZUNHGZUOHGZUPUQURIUFUJVAUKVGVBADRTUJUSUKVHUTBDRTUJV
     EUKVIVFCDRTUMUNUOUGUIUH $.
 
+  $( Translate membership in a 0-based half-open integer range.  (Contributed
+     by AV, 30-Apr-2020.) $)
+  fzo0addel $p |- ( ( A e. ( 0 ..^ C ) /\ D e. ZZ )
+                     -> ( A + D ) e. ( D ..^ ( C + D ) ) ) $=
+    ( cc0 cfzo co wcel cz wa caddc fzoaddel wceq cc addlid eqcomd adantl oveq1d
+    zcn syl eleqtrrd ) ADBEFGZCHGZIZACJFDCJFZBCJFZEFCUEEFADBCKUCCUDUEEUBCUDLZUA
+    UBCMGZUFCRUGUDCCNOSPQT $.
+
+  $( Translate membership in a 0-based half-open integer range.  (Contributed
+     by AV, 30-Apr-2020.) $)
+  fzo0addelr $p |- ( ( A e. ( 0 ..^ C ) /\ D e. ZZ )
+                     -> ( A + D ) e. ( D ..^ ( D + C ) ) ) $=
+    ( cc0 cfzo co wcel cz caddc fzo0addel wceq zcn elfzoel2 zcnd addcom syl2anr
+    wa cc oveq2d eleqtrrd ) ADBEFGZCHGZQZACIFCBCIFZEFCCBIFZEFABCJUCUEUDCEUBCRGB
+    RGUEUDKUACLUABADBMNCBOPST $.
+
   $( Translate membership in a shifted-down half-open integer range.
      (Contributed by Stefan O'Rear, 15-Aug-2015.) $)
   fzoaddel2 $p |- ( ( A e. ( 0 ..^ ( B - C ) ) /\ B e. ZZ /\ C e. ZZ ) ->
@@ -105296,6 +105391,38 @@ $)
     adantl npcan oveq12d syl2an 3adant1 eleqtrd ) ADBCEFZGFHZBIHZCIHZJACKFZDCKF
     ZUECKFZGFZCBGFZUFUHUIULHUGADUECLMUGUHULUMNZUFUGBOHZCOHZUNUHBPCPUOUPQUJCUKBG
     UPUJCNUOCRSBCTUAUBUCUD $.
+
+  $( Membership of an integer in an extended open range of integers, extension
+     added to the left.  (Contributed by AV, 31-Aug-2025.)  Generalized by
+     replacing the left border of the ranges.  (Revised by SN, 18-Sep-2025.) $)
+  elfzoextl $p |- ( ( Z e. ( M ..^ N ) /\ I e. NN0 )
+                   -> Z e. ( M ..^ ( I + N ) ) ) $=
+    ( cn0 wcel cfzo co caddc wa cuz cfv cz elfzoel2 nn0pzuz sylan2 fzoss2 sseld
+    wss syl syldbl2 ancoms ) AEFZDBCGHZFZDBACIHZGHZFZUCUEUHUCUEJZUDUGDUIUFCKLFZ
+    UDUGSUEUCCMFUJDBCNACOPCBUFQTRUAUB $.
+
+  $( Membership of an integer in an extended open range of integers, extension
+     added to the right.  (Contributed by AV, 30-Apr-2020.)  (Proof shortened
+     by AV, 23-Sep-2025.) $)
+  elfzoext $p |- ( ( Z e. ( M ..^ N ) /\ I e. NN0 )
+                   -> Z e. ( M ..^ ( N + I ) ) ) $=
+    ( cfzo co wcel cn0 wa caddc elfzoextl cc elfzoel2 zcnd adantr nn0cn addcomd
+    adantl oveq2d eleqtrrd ) DBCEFGZAHGZIZDBACJFZEFBCAJFZEFABCDKUCUEUDBEUCCAUAC
+    LGUBUACDBCMNOUBALGUAAPRQST $.
+
+  $( Membership of an increased integer in a correspondingly extended half-open
+     range of integers.  (Contributed by AV, 30-Apr-2020.) $)
+  elincfzoext $p |- ( ( Z e. ( M ..^ N ) /\ I e. NN0 )
+                      -> ( Z + I ) e. ( M ..^ ( N + I ) ) ) $=
+    ( cfzo co wcel wa caddc cle wbr clt wi cr zred adantr adantl syl3anc mpd cz
+    elfzole1 elfzoelz nn0addge1 sylan elfzoel1 nn0re readdcld exp4b com23 imp31
+    cn0 letr exp31 imp elfzoel2 elfzolt2 ltadd1dd nn0z zaddcld elfzo mpbir2and
+    wb ) DBCEFGZAUKGZHZDAIFZBCAIFZEFGZBVFJKZVFVGLKZVCVDVIVCBDJKZVDVIMDBCUAVCVKV
+    DVIVCVKHZVDHDVFJKZVIVLDNGZVDVMVCVNVKVCDDBCUBZOZPDAUCUDVCVKVDVMVIMZVCVDVKVQV
+    CVDVKVMVIVEBNGZVNVFNGVKVMHVIMVCVRVDVCBDBCUEZOPVCVNVDVPPZVEDAVTVDANGVCAUFQZU
+    GBDVFULRUHUIUJSUMSUNVEDCAVTVCCNGVDVCCDBCUOZOPWAVCDCLKVDDBCUPPUQVEVFTGBTGZVG
+    TGVHVIVJHVBVEDAVCDTGVDVOPVDATGVCAURQZUSVCWCVDVSPVECAVCCTGVDWBPWDUSVFBVGUTRV
+    A $.
 
   $( Translate membership in a half-open integer range.  (Contributed by Stefan
      O'Rear, 15-Aug-2015.) $)
@@ -115902,6 +116029,24 @@ $(
     <td> This is not a special definition for words,
          but for arbitrary functions with a half-open range of nonnegative
          integers as domain.</td></tr>
+  <tr>
+    <td>Last symbol of a word </td><td> ~ df-lsw : ` ( lastS ``  W ) ` </td>
+    <td>Operation which extracts the last symbol of a word. The result is the
+        symbol at the last place in the sequence representing the word.</td>
+    <td> ` W : ( 0 ..^ 3 ) --> S
+           -> ( W e. Word S /\ ( lastS `` W ) = ( W `` 2 ) ` </td>
+    <td> Note that the index of the last symbol is less by 1 than the length of
+         the word.</td></tr>
+  <tr>
+    <td>Concatenation of two words </td>
+    <td> ~ df-concat : ` ( W ++ U ) ` </td>
+    <td>Operation combining two words to one new word. The result is a
+        combined, reindexed sequence build from the sequences representing
+        the two words.</td>
+    <td> ` ( W e. Word S /\ U e. Word S )
+           -> ( # `` ( W ++ U ) ) = ( ( # `` W ) + ( # `` U ) ) ` </td>
+    <td> Note that the index of the first symbol of the second concatenated
+         word is the length of the first word in the concatenation.</td></tr>
   </table>
 
   Conventions:
@@ -116339,6 +116484,446 @@ $)
     ZVOUFDZVQWDNWCWEVOVTUGZVSWGWAVMVSVLSDZWGVLUHZVLUITRWAWEWGUNWBVTVOBUJUKULWCJ
     SDVNSDZWFVDWCWHWJVSWHWAVMWIRVLUOTJVNUPUQVOVPURUSWBWDVNNZWAWBVNODZWKEODVSVMW
     LUTEVLVAVBVNVCTVEVFVGVHVIVJ $.
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Last symbol of a word
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c lastS $.
+
+  $( Extend class notation with the Last Symbol of a word. $)
+  clsw $a class lastS $.
+
+  $( Extract the last symbol of a word.  May be not meaningful for other sets
+     which are not words.  The name ` lastS ` (as abbreviation of "lastSymbol")
+     is a compromise between usually used names for corresponding functions in
+     computer programs (as last() or lastChar()), the terminology used for
+     words in set.mm ("symbol" instead of "character") and brevity ("lastS" is
+     shorter than "lastChar" and "lastSymbol").  Labels of theorems about last
+     symbols of a word will contain the abbreviation "lsw" (Last Symbol of a
+     Word).  (Contributed by Alexander van der Vekens, 18-Mar-2018.) $)
+  df-lsw $a |- lastS = ( w e. _V |-> ( w ` ( ( # ` w ) - 1 ) ) ) $.
+
+  ${
+    $d W w $.
+    $( Extract the last symbol of a word.  (Contributed by Alexander van der
+       Vekens, 18-Mar-2018.)  (Revised by Jim Kingdon, 18-Dec-2025.) $)
+    lswwrd $p |- ( W e. Word V
+        -> ( lastS ` W ) = ( W ` ( ( # ` W ) - 1 ) ) ) $=
+      ( vw cword wcel cv chash cfv c1 cmin co cvv clsw df-lsw wceq fveq2 oveq1d
+      id fveq12d cz elex lencl nn0zd peano2zm syl fvexg mpdan fvmptd3 ) BADZEZC
+      BCFZGHZIJKZUKHBGHZIJKZBHZLMLCNUKBOZUMUOUKBUQRUQULUNIJUKBGPQSBUIUAUJUOTEZU
+      PLEUJUNTEURUJUNABUBUCUNUDUEUOBUITUFUGUH $.
+  $}
+
+  $( The last symbol of an empty word does not exist.  (Contributed by
+     Alexander van der Vekens, 19-Mar-2018.)  (Proof shortened by AV,
+     2-May-2020.) $)
+  lsw0 $p |- ( ( W e. Word V /\ ( # ` W ) = 0 ) -> ( lastS ` W ) = (/) ) $=
+    ( cword wcel chash cfv cc0 wceq wa clsw c1 co c0 lswwrd wn cle wbr ax-mp cz
+    cmin adantr fvoveq1 cdm cfzo wrddm cn 1nn nnnle0 0re subge0i mtbir elfzole1
+    1re mto eleq2 mtbiri cvv 0z peano2zm elexi ndmfvg mpan 3syl sylan9eqr eqtrd
+    ) BACDZBEFZGHZIBJFZVGKTLBFZMVFVIVJHVHABNUAVHVFVJGKTLZBFZMVGGKBTUBVFBUCZGVGU
+    DLZHZVKVMDZOZVLMHZABUEVOVPVKVNDZVSGVKPQZVTKGPQZKUFDWAOUGKUHRGKUIUMUJUKVKGVG
+    ULUNVMVNVKUOUPVKUQDVQVRVKSGSDVKSDURGUSRUTVKBVAVBVCVDVE $.
+
+  $( The last symbol of an empty word does not exist.  (Contributed by
+     Alexander van der Vekens, 11-Nov-2018.) $)
+  lsw0g $p |- ( lastS ` (/) ) = (/) $=
+    ( cV c0 cword wcel chash cfv cc0 wceq clsw wrd0 hash0 lsw0 mp2an ) BACDBEFG
+    HBIFBHAJKABLM $.
+
+  $( The last symbol of a word of length 1 is the first symbol of this word.
+     (Contributed by Alexander van der Vekens, 19-Mar-2018.) $)
+  lsw1 $p |- ( ( W e. Word V /\ ( # ` W ) = 1 )
+                 -> ( lastS ` W ) = ( W ` 0 ) ) $=
+    ( cword wcel chash cfv c1 wceq clsw co cc0 lswwrd oveq1 1m1e0 eqtrdi fveq2d
+    cmin sylan9eq ) BACDBEFZGHZBIFSGQJZBFKBFABLTUAKBTUAGGQJKSGGQMNOPR $.
+
+  $( Closure of the last symbol: the last symbol of a nonempty word belongs to
+     the alphabet for the word.  (Contributed by AV, 2-Aug-2018.)  (Proof
+     shortened by AV, 29-Apr-2020.) $)
+  lswcl $p |- ( ( W e. Word V /\ W =/= (/) ) -> ( lastS ` W ) e. V ) $=
+    ( cword wcel c0 wne wa clsw cfv chash c1 cmin co wceq lswwrd adantr cfzo cn
+    cc0 lennncl fzo0end syl wrdsymbcl syldan eqeltrd ) BACDZBEFZGZBHIZBJIZKLMZB
+    IZAUFUIULNUGABOPUFUGUKSUJQMDZULADUHUJRDUMABTUJUAUBUKABUCUDUE $.
+
+  $( The last symbol of a nonempty word is an element of the alphabet for the
+     word.  (Contributed by Alexander van der Vekens, 1-Oct-2018.)  (Proof
+     shortened by AV, 29-Apr-2020.) $)
+  lswlgt0cl $p |- ( ( N e. NN /\ ( W e. Word V /\ ( # ` W ) = N ) )
+                    -> ( lastS ` W ) e. V ) $=
+    ( cn wcel cword chash cfv wceq wa c0 wne clsw simprl wb eleq1 eqcoms adantl
+    wi cfn wrdfin hashnncl syl biimpd adantr sylbid impcom lswcl syl2anc ) ADEZ
+    CBFEZCGHZAIZJZJUKCKLZCMHBEUJUKUMNUNUJUOUNUJULDEZUOUMUJUPOZUKUQAULAULDPQRUKU
+    PUOSUMUKUPUOUKCTEUPUOOBCUACUBUCUDUEUFUGBCUHUI $.
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Concatenations of words
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c ++ $.
+
+  $( Syntax for the concatenation operator. $)
+  cconcat $a class ++ $.
+
+  ${
+    $d s t x $.
+
+    $( Define the concatenation operator which combines two words.  Definition
+       in Section 9.1 of [AhoHopUll] p. 318.  (Contributed by FL, 14-Jan-2014.)
+       (Revised by Stefan O'Rear, 15-Aug-2015.) $)
+    df-concat $a |- ++ = ( s e. _V , t e. _V |-> ( x e. ( 0 ..^
+            ( ( # ` s ) + ( # ` t ) ) ) |-> if ( x e. ( 0 ..^ ( # ` s ) ) ,
+            ( s ` x ) , ( t ` ( x - ( # ` s ) ) ) ) ) ) $.
+  $}
+
+  ${
+    $d s t x S $.  $d s t x T $.
+    $( Value of the concatenation operator.  (Contributed by Stefan O'Rear,
+       15-Aug-2015.) $)
+    ccatfvalfi $p |- ( ( S e. Fin /\ T e. Fin ) -> ( S ++ T ) =
+        ( x e. ( 0 ..^ ( ( # ` S ) + ( # ` T ) ) ) |->
+          if ( x e. ( 0 ..^ ( # ` S ) ) , ( S ` x ) ,
+            ( T ` ( x - ( # ` S ) ) ) ) ) ) $=
+      ( vs vt cfn wcel cvv cc0 chash cfv caddc co cfzo cv cmin cmpt wceq oveq2d
+      cif wa cconcat elex adantr adantl 0zd cn0 hashcl nn0addcld fzofig syl2anc
+      cz nn0zd mptexd oveq1d eleq2d fveq2d ifbieq12d mpteq12dv ifeq2d df-concat
+      fveq2 fveq1 ovmpog syl3anc ) BFGZCFGZUAZBHGZCHGZAIBJKZCJKZLMZNMZAOZIVKNMZ
+      GZVOBKZVOVKPMZCKZTZQZHGBCUBMWBRVFVIVGBFUCUDVGVJVFCFUCUEVHAVNWAFVHIULGVMUL
+      GVNFGVHUFVHVMVHVKVLVFVKUGGVGBUHUDVGVLUGGVFCUHUEUIUMIVMUJUKUNDEBCHHAIDOZJK
+      ZEOZJKZLMZNMZVOIWDNMZGZVOWCKZVOWDPMZWEKZTZQWBUBAIVKWFLMZNMZVQVRVSWEKZTZQH
+      WCBRZAWHWNWPWRWSWGWOINWSWDVKWFLWCBJVBZUOSWSWJVQWKWMVRWQWSWIVPVOWSWDVKINWT
+      SUPVOWCBVCWSWLVSWEWSWDVKVOPWTSUQURUSWECRZAWPWRVNWAXAWOVMINXAWFVLVKLWECJVB
+      SSXAVQWQVTVRVSWECVCUTUSAEDVAVDVE $.
+
+    $d x B $.
+    $( The concatenation of two words is a word.  (Contributed by FL,
+       2-Feb-2014.)  (Proof shortened by Stefan O'Rear, 15-Aug-2015.)  (Proof
+       shortened by AV, 29-Apr-2020.) $)
+    ccatcl $p |- ( ( S e. Word B /\ T e. Word B ) -> ( S ++ T ) e. Word B ) $=
+      ( vx wcel wa co cc0 chash cfv cfzo cfn wrdfin wf cn0 ad2antrr lencl nn0zd
+      wrdf cz cword cconcat caddc cv cmin cif cmpt ccatfvalfi syl2an ffvelcdmda
+      wceq wn ad3antlr simpr anim1i anim12i fzocatel syl2anc ffvelcdmd elfzoelz
+      wdc adantl 0zd fzodcel syl3anc ifcldadc fmpttd adantr nn0addcld iswrdinn0
+      eqeltrd ) BAUAZEZCVLEZFZBCUBGZDHBIJZCIJZUCGZKGZDUDZHVQKGZEZWABJZWAVQUEGZC
+      JZUFZUGZVLVMBLECLEVPWHUKVNABMACMDBCUHUIVOVTAWHNVSOEWHVLEVODVTWGAVOWAVTEZF
+      ZWCWDWFAWJWBAWABVMWBABNVNWIABSPUJWJWCULZFZHVRKGZAWECVNWMACNVMWIWKACSUMWLW
+      IWKFVQTEZVRTEZFZWEWMEWJWIWKVOWIUNUOVOWPWIWKVMWNVNWOVMVQABQZRZVNVRACQZRUPP
+      WAVQVRUQURUSWJWATEZHTEWNWCVAWIWTVOWAHVSUTVBWJVCVMWNVNWIWRPWAHVQVDVEVFVGVO
+      VQVRVMVQOEVNWQVHVNVROEVMWSVBVIAVSWHVJURVK $.
+
+    $( The concatenation of words over two sets is a word over the union of
+       those sets.  (Contributed by Jim Kingdon, 19-Dec-2025.) $)
+    ccatclab $p |- ( ( S e. Word A /\ T e. Word B )
+        -> ( S ++ T ) e. Word ( A u. B ) ) $=
+      ( cword wcel cun cconcat wss ssun1 sswrd ax-mp sseli ssun2 ccatcl syl2an
+      co ) CAEZFCABGZEZFDTFCDHQTFDBEZFRTCASIRTIABJASKLMUATDBSIUATIBANBSKLMSCDOP
+      $.
+
+    ${
+      $d A x $.  $d B x $.
+      $( The length of a concatenated word.  (Contributed by Stefan O'Rear,
+         15-Aug-2015.)  (Revised by JJ, 1-Jan-2024.) $)
+      ccatlen $p |- ( ( S e. Word A /\ T e. Word B ) ->
+          ( # ` ( S ++ T ) ) = ( ( # ` S ) + ( # ` T ) ) ) $=
+        ( vx cword wcel wa co chash cfv cc0 cfzo cfn wceq cvv cn0 nn0zd syl2anc
+        cz cconcat caddc cmin cif cmpt wrdfin ccatfvalfi syl2an fveq2d wfn wral
+        cv fvexg adantlr simplr elfzoelz lencl ad2antrr zsubcld ifexd ralrimiva
+        adantl eqid syl adantr zaddcld fzofig fihashfn nn0addcl hashfzo0 3eqtrd
+        fnmpt 0zd ) CAFZGZDBFZGZHZCDUAIZJKELCJKZDJKZUBIZMIZEULZLVTMIGZWDCKZWDVT
+        UCIZDKZUDZUEZJKZWCJKZWBVRVSWJJVOCNGDNGVSWJOVQACUFBDUFECDUGUHUIVRWJWCUJZ
+        WCNGZWKWLOVRWIPGZEWCUKWMVRWOEWCVRWDWCGZHZWEWFWHPPVOWPWFPGVQWDCVNWCUMUNW
+        QVQWGTGWHPGVOVQWPUOWQWDVTWPWDTGVRWDLWBUPVBWQVTVOVTQGZVQWPACUQZURRUSWGDV
+        PTUMSUTVAEWCWIWJPWJVCVLVDVRLTGWBTGWNVRVMVRVTWAVRVTVOWRVQWSVERVQWATGVOVQ
+        WABDUQZRVBVFLWBVGSWCWJVHSVRWBQGZWLWBOVOWRWAQGXAVQWSWTVTWAVIUHWBVJVDVK
+        $.
+    $}
+
+    $( The concatenation of two words is empty iff the two words are empty.
+       (Contributed by AV, 4-Mar-2022.)  (Revised by JJ, 18-Jan-2024.) $)
+    ccat0 $p |- ( ( S e. Word A /\ T e. Word B )
+                    -> ( ( S ++ T ) = (/) <-> ( S = (/) /\ T = (/) ) ) ) $=
+      ( cword wcel wa co c0 wceq chash cfv cc0 cfn wb wrdfin fihasheq0 cle syl
+      cr cconcat caddc ccatlen eqeq1d cun ccatclab 3syl wbr cn0 lencl nn0re jca
+      nn0ge0 add20 syl2an 3bitr3d bi2anan9 bitrd ) CAEFZDBEFZGZCDUAHZIJZCKLZMJZ
+      DKLZMJZGZCIJZDIJZGVAVBKLZMJZVDVFUBHZMJZVCVHVAVKVMMABCDUCUDVAVBABUEZEFVBNF
+      VLVCOABCDUFVOVBPVBQUGUSVDTFZMVDRUHZGZVFTFZMVFRUHZGZVNVHOUTUSVDUIFZVRACUJW
+      BVPVQVDUKVDUMULSUTVFUIFZWABDUJWCVSVTVFUKVFUMULSVDVFUNUOUPUSVEVIUTVGVJUSCN
+      FVEVIOACPCQSUTDNFVGVJOBDPDQSUQUR $.
+
+    $d x A $.  $d x I $.
+    $( Value of a symbol in the left half of a concatenated word.  (Contributed
+       by Stefan O'Rear, 15-Aug-2015.)  (Revised by Mario Carneiro,
+       22-Sep-2015.)  (Proof shortened by AV, 30-Apr-2020.)  (Revised by JJ,
+       18-Jan-2024.) $)
+    ccatval1 $p |- ( ( S e. Word A /\ T e. Word B /\ I e. ( 0 ..^ ( # ` S ) ) )
+                     -> ( ( S ++ T ) ` I ) = ( S ` I ) ) $=
+      ( vx cword wcel cc0 chash cfv cfzo co w3a cv cmin cif wceq cfn wrdfin cn0
+      caddc cconcat cmpt ccatfvalfi syl2an 3adant3 eleq1 fveq2 ifbieq12d iftrue
+      fvoveq1 3ad2ant3 sylan9eqr lencl syl2anr 3adant1 wrdsymbcl 3adant2 fvmptd
+      id elfzoext ) CAGHZDBGHZEICJKZLMZHZNZFEFOZVFHZVICKZVIVEPMDKZQZECKZIVEDJKZ
+      UBMLMZCDUCMZAVCVDVQFVPVMUDRZVGVCCSHDSHVRVDACTBDTFCDUEUFUGVIERZVHVMVGVNEVE
+      PMDKZQZVNVSVJVGVKVLVNVTVIEVFUHVIECUIVIEVEDPULUJVGVCWAVNRVDVGVNVTUKUMUNVDV
+      GEVPHZVCVGVGVOUAHWBVDVGVABDUOVOIVEEVBUPUQVCVGVNAHVDEACURUSUT $.
+
+    $( Value of a symbol in the right half of a concatenated word.
+       (Contributed by Stefan O'Rear, 15-Aug-2015.)  (Revised by Mario
+       Carneiro, 22-Sep-2015.) $)
+    ccatval2 $p |- ( ( S e. Word B /\ T e. Word B /\
+          I e. ( ( # ` S ) ..^ ( ( # ` S ) + ( # ` T ) ) ) ) ->
+        ( ( S ++ T ) ` I ) = ( T ` ( I - ( # ` S ) ) ) ) $=
+      ( vx wcel chash cfv co cfzo cc0 cmin cif cvv wceq cfn wrdfin 3ad2ant3 cn0
+      cz cword caddc w3a cv cconcat cmpt ccatfvalfi 3adant3 eleq1 fveq2 fvoveq1
+      syl2an ifbieq12d wn cin fzodisj minel mpan2 iffalsed sylan9eqr wss adantr
+      c0 hashcl cuz fzoss1 nn0uz eleq2s sseld 3impia simp2 elfzoelz lencl nn0zd
+      wa 3syl 3ad2ant1 zsubcld fvexg syl2anc fvmptd ) BAUAZFZCWBFZDBGHZWECGHUBI
+      ZJIZFZUCZEDEUDZKWEJIZFZWJBHZWJWELICHZMZDWELIZCHZKWFJIZBCUEIZNWCWDWSEWRWOU
+      FOZWHWCBPFZCPFWTWDABQZACQEBCUGULUHWJDOZWIWODWKFZDBHZWQMWQXCWLXDWMWNXEWQWJ
+      DWKUIWJDBUJWJDWECLUKUMWIXDXEWQWHWCXDUNZWDWHWKWGUOVCOXFKWEWFUPDWGWKUQURRUS
+      UTWCWDWHDWRFWCWDVOZWGWRDXGXAWESFWGWRVAZWCXAWDXBVBBVDXHWEKVEHSWEKWFVFVGVHV
+      PVIVJWIWDWPTFWQNFWCWDWHVKWIDWEWHWCDTFWDDWEWFVLRWCWDWETFWHWCWEABVMVNVQVRWP
+      CWBTVSVTWA $.
+
+    $( Value of a symbol in the right half of a concatenated word, using an
+       index relative to the subword.  (Contributed by Stefan O'Rear,
+       16-Aug-2015.)  (Proof shortened by AV, 30-Apr-2020.) $)
+    ccatval3 $p |- ( ( S e. Word B /\ T e. Word B /\ I e. ( 0 ..^ ( # ` T ) ) )
+                     -> ( ( S ++ T ) ` ( I + ( # ` S ) ) ) = ( T ` I ) ) $=
+      ( cword wcel cc0 chash cfv cfzo co caddc cconcat cmin wceq cz lencl nn0zd
+      w3a wa anim1ci 3adant2 fzo0addelr syl ccatval2 syld3an3 elfzoelz 3ad2ant3
+      zcnd cn0 3ad2ant1 nn0cnd pncand fveq2d eqtrd ) BAEZFZCUPFZDGCHIZJKFZSZDBH
+      IZLKZBCMKIZVCVBNKZCIZDCIUQURUTVCVBVBUSLKJKFZVDVFOVAUTVBPFZTZVGUQUTVIURUQV
+      HUTUQVBABQZRUAUBDUSVBUCUDABCVCUEUFVAVEDCVADVBVADUTUQDPFURDGUSUGUHUIVAVBUQ
+      URVBUJFUTVJUKULUMUNUO $.
+  $}
+
+  $( An element of a finite set of sequential integers up to the length of a
+     word is an element of an extended finite set of sequential integers up to
+     the length of a concatenation of this word with another word.
+     (Contributed by Alexander van der Vekens, 28-Mar-2018.) $)
+  elfzelfzccat $p |- ( ( A e. Word V /\ B e. Word V )
+                       -> ( N e. ( 0 ... ( # ` A ) )
+                            -> N e. ( 0 ... ( # ` ( A ++ B ) ) ) ) ) $=
+    ( cword wcel wa cc0 chash cfv cfz co caddc cconcat wi lencl elfz0add syl2an
+    cn0 ccatlen oveq2d eleq2d sylibrd ) ADEZFZBUDFZGZCHAIJZKLFZCHUHBIJZMLZKLZFZ
+    CHABNLIJZKLZFUEUHSFUJSFUIUMOUFDAPDBPUHUJCQRUGUOULCUGUNUKHKDDABTUAUBUC $.
+
+  ${
+    $d A x $.  $d B x $.  $d V x $.
+    $( The concatenation of two words is a function over the half-open integer
+       range having the sum of the lengths of the word as length.  (Contributed
+       by Alexander van der Vekens, 30-Mar-2018.) $)
+    ccatvalfn $p |- ( ( A e. Word V /\ B e. Word V )
+                  -> ( A ++ B ) Fn ( 0 ..^ ( ( # ` A ) + ( # ` B ) ) ) ) $=
+      ( vx cword wcel wa cconcat co cc0 chash cfv caddc wfn cvv fvexg cz wrdfin
+      cfzo cfn cv cmin cif cmpt wral adantlr simplr elfzoelz adantl lencl nn0zd
+      ad2antrr zsubcld syl2anc ifexd ralrimiva eqid fnmpt syl ccatfvalfi syl2an
+      wceq fneq1d mpbird ) ACEZFZBVEFZGZABHIZJAKLZBKLMIZSIZNDVLDUAZJVJSIFZVMALZ
+      VMVJUBIZBLZUCZUDZVLNZVHVROFZDVLUEVTVHWADVLVHVMVLFZGZVNVOVQOOVFWBVOOFVGVMA
+      VEVLPUFWCVGVPQFVQOFVFVGWBUGWCVMVJWBVMQFVHVMJVKUHUIVFVJQFVGWBVFVJCAUJUKULU
+      MVPBVEQPUNUOUPDVLVRVSOVSUQURUSVHVLVIVSVFATFBTFVIVSVBVGCARCBRDABUTVAVCVD
+      $.
+  $}
+
+  $( The symbol at a given position in a concatenated word.  (Contributed by
+     AV, 26-May-2018.)  (Proof shortened by AV, 24-Nov-2018.) $)
+  ccatsymb $p |- ( ( A e. Word V /\ B e. Word V /\ I e. ZZ )
+                   -> ( ( A ++ B ) ` I ) = if ( I < ( # ` A ) ,
+                                   ( A ` I ) , ( B ` ( I - ( # ` A ) ) ) ) ) $=
+    ( wcel cz co cfv clt wbr wceq wa cc0 cle simpr wb syl c0 wo adantr cmin cif
+    cword cconcat chash wn cfzo w3a simprll anim2i lencl nn0zd ad2antrr syl3anc
+    0zd ad2antrl mpbird df-3an sylanbrc ccatval1 eqcomd ancoms 0z zltnle adantl
+    elfzo mpan2 simpl anim1i animorrl wrdsymb0 sylc ccatcl eqtr4d sylbird com12
+    ex adantrd impcom wdc simplr zdcle sylancr exmiddc mpjaodan caddc id nn0red
+    zre lenlt syl2an adantlr biimpar anim12ci ccatval2 readdcl zsubcld ad2antlr
+    cr zaddcl jca leaddsub2d biimpa olcd ccatlen eqbrtrd zdclt syl2anc ifeqdadc
+    3impa ) ADUCZEZBXKEZCFEZCABUDGZHZCAUEHZIJZCAHZCXQUAGZBHZUBZKXLXMLZXNLZYBXPY
+    DXRXSYAXPYDXRLZMCNJZXSXPKZYFUFZYFYEYGYFYELZXLXMCMXQUGGEZUHZYGYIYCYJYKYFYCXN
+    XRUIYIYJYFXRLZYEXRYFYDXROUJYDYJYLPZYFXRYDXNMFEZXQFEZYMYCXNOZYDUOXLYOXMXNXLX
+    QDAUKZULZUMZCMXQVFUNUPUQXLXMYJURUSYKXPXSDDABCUTVAQVBYHYEYGYHYDYGXRYDYHYGYDY
+    HCMIJZYGXNYTYHPZYCXNYNUUAVCCMVDVGVEYDYTYGYDYTLZXSRXPUUBXLXNLZYTXQCNJZSXSRKY
+    DUUCYTYCXLXNXLXMVHVITYDYTUUDVJCDAVKVLUUBXOXKEZXNLZYTXOUEHZCNJZSZXPRKZYDUUFY
+    TYCUUEXNDABVMVIZTYDYTUUHVJCDXOVKZVLVNVQVOVPVRVSYEYFVTZYFYHSYEYNXNUUMVCYCXNX
+    RWAMCWBWCYFWDQWEYDXRUFZLZCXQBUEHZWFGZIJZYAXPKZUURUFZUURUUOUUSUURUUOLZXLXMCX
+    QUUQUGGEZUHZUUSUVAYCUVBUVCUURYCXNUUNUIUVAUVBUUDUURLZUURUURUUOUUDUURWGYDUUDU
+    UNXLXNUUDUUNPZXMXLXQWSEZCWSEZUVEXNXLXQYQWHZCWIZXQCWJWKWLWMWNYDUVBUVDPZUURUU
+    NYDXNYOUUQFEZUVJYPYSYCUVKXNXLYOUUPFEUVKXMYRXMUUPDBUKZULXQUUPWTWKTZCXQUUQVFU
+    NUPUQXLXMUVBURUSUVCXPYADABCWOVAQVBUUTUUOUUSUUTYDUUSUUNYDUUTUUSYDUUTUUQCNJZU
+    USYCUUQWSEZUVGUVNUUTPXNXLUVFUUPWSEZUVOXMUVHXMUUPUVLWHZXQUUPWPWKUVIUUQCWJWKY
+    DUVNUUSYDUVNLZYARXPUVRXMXTFEZLZXTMIJZUUPXTNJZSYARKYDUVTUVNYDXMUVSXLXMXNWAXL
+    XNUVSXMUUCCXQXLXNOXLYOXNYRTWQWLXATUVRUWBUWAYDUVNUWBYDXQUUPCXLUVFXMXNUVHUMXM
+    UVPXLXNUVQWRXNUVGYCUVIVEXBXCXDXTDBVKVLUVRUUFUUIUUJYDUUFUVNUUKTUVRUUHYTUVRUU
+    GUUQCNYCUUGUUQKXNUVNDDABXEUMYDUVNOXFXDUULVLVNVQVOVPVRVSUUOUURVTZUURUUTSUUOX
+    NUVKUWCYCXNUUNWAYDUVKUUNUVMTCUUQXGXHUURWDQWEYDXNYOXRVTYPYSCXQXGXHXIVAXJ $.
+
+  $( The first symbol of a concatenation of two words is the first symbol of
+     the first word if the first word is not empty.  (Contributed by Alexander
+     van der Vekens, 22-Sep-2018.) $)
+  ccatfv0 $p |- ( ( A e. Word V /\ B e. Word V /\ 0 < ( # ` A ) )
+                  -> ( ( A ++ B ) ` 0 ) = ( A ` 0 ) ) $=
+    ( cword wcel cc0 chash cfv clt wbr cfzo co cconcat wa cn cn0 lencl elnnnn0b
+    wceq biimpri sylan lbfzo0 sylibr 3adant2 ccatval1 syld3an3 ) ACDZEZBUGEZFAG
+    HZIJZFFUJKLEZFABMLHFAHSUHUKULUIUHUKNUJOEZULUHUJPEZUKUMCAQUMUNUKNUJRTUAUJUBU
+    CUDCCABFUEUF $.
+
+  $( The last symbol of the left (nonempty) half of a concatenated word.
+     (Contributed by Alexander van der Vekens, 3-Oct-2018.)  (Proof shortened
+     by AV, 1-May-2020.) $)
+  ccatval1lsw $p |- ( ( A e. Word V /\ B e. Word V /\ A =/= (/) )
+                     -> ( ( A ++ B ) ` ( ( # ` A ) - 1 ) ) = ( lastS ` A ) ) $=
+    ( cword wcel c0 wne w3a chash cfv c1 cmin co cconcat clsw cfzo wceq lennncl
+    cc0 cn 3adant2 fzo0end syl ccatval1 syld3an3 lswwrd 3ad2ant1 eqtr4d ) ACDZE
+    ZBUIEZAFGZHZAIJZKLMZABNMJZUOAJZAOJZUJUKULUOSUNPMEZUPUQQUMUNTEZUSUJULUTUKCAR
+    UAUNUBUCCCABUOUDUEUJUKURUQQULCAUFUGUH $.
+
+  $( The first symbol of the right (nonempty) half of a concatenated word.
+     (Contributed by AV, 23-Apr-2022.) $)
+  ccatval21sw $p |- ( ( A e. Word V /\ B e. Word V /\ B =/= (/) )
+                     -> ( ( A ++ B ) ` ( # ` A ) ) = ( B ` 0 ) ) $=
+    ( cword wcel c0 wne w3a chash cfv cconcat co cmin cc0 wceq cz clt wbr wa cr
+    caddc cfzo cn lencl nn0zd lennncl simpl nnz zaddcl sylan2 nngt0 adantl nnre
+    zre ltaddpos syl2anr mpbid 3jca syl2an 3impb fzolb sylibr ccatval2 syld3an3
+    wb nn0cnd subidd fveq2d 3ad2ant1 eqtrd ) ACDZEZBVKEZBFGZHZAIJZABKLJZVPVPMLZ
+    BJZNBJZVLVMVNVPVPVPBIJZUALZUBLEZVQVSOVOVPPEZWBPEZVPWBQRZHZWCVLVMVNWGVLWDWAU
+    CEZWGVMVNSVLVPCAUDZUECBUFWDWHSZWDWEWFWDWHUGWHWDWAPEWEWAUHVPWAUIUJWJNWAQRZWF
+    WHWKWDWAUKULWHWATEVPTEWKWFVEWDWAUMVPUNWAVPUOUPUQURUSUTVPWBVAVBCABVPVCVDVLVM
+    VSVTOVNVLVRNBVLVPVLVPWIVFVGVHVIVJ $.
+
+  ${
+    $d x S $.  $d x T $.  $d x B $.  $d x U $.
+    $( Concatenation of a word by the empty word on the left.  (Contributed by
+       Stefan O'Rear, 15-Aug-2015.)  (Proof shortened by AV, 1-May-2020.) $)
+    ccatlid $p |- ( S e. Word B -> ( (/) ++ S ) = S ) $=
+      ( vx cword wcel cc0 chash cfv cfzo co c0 cconcat wfn caddc wrd0 ccatvalfn
+      hash0 eqtrid cmin wceq mpan oveq1i nn0cnd addlidd eqcomd oveq2d fneq2d cv
+      lencl mpbird wrdfn wa a1i oveq12d eleq2d ccatval2 mp3an1 syldan oveq2i cz
+      biimpar elfzoelz adantl zcnd subid1d fveq2d eqtrd eqfnfvd ) BADZEZCFBGHZI
+      JZKBLJZBVJVMVLMVMFKGHZVKNJZIJZMZKVIEZVJVQAOZKBAPUAVJVLVPVMVJVKVOFIVJVOVKV
+      JVOFVKNJVKVNFVKNQUBVJVKVJVKABUIUCUDRZUEUFUGUJABUKVJCUHZVLEZULZWAVMHZWAVNS
+      JZBHZWABHVJWBWAVNVOIJZEZWDWFTZVJWHWBVJWGVLWAVJVNFVOVKIVNFTVJQUMVTUNUOVAVR
+      VJWHWIVSAKBWAUPUQURWCWEWABWCWEWAFSJWAVNFWASQUSWCWAWCWAWBWAUTEVJWAFVKVBVCV
+      DVERVFVGVH $.
+
+    $( Concatenation of a word by the empty word on the right.  (Contributed by
+       Stefan O'Rear, 15-Aug-2015.)  (Proof shortened by AV, 1-May-2020.) $)
+    ccatrid $p |- ( S e. Word B -> ( S ++ (/) ) = S ) $=
+      ( vx cword wcel cc0 chash cfv cfzo co c0 cconcat wfn caddc wrd0 ccatvalfn
+      mpan2 hash0 oveq2i lencl nn0cnd addridd eqtr2id oveq2d fneq2d mpbird wceq
+      wrdfn cv ccatval1 mp3an2 eqfnfvd ) BADZEZCFBGHZIJZBKLJZBUNUQUPMUQFUOKGHZN
+      JZIJZMZUNKUMEZVAAOZBKAPQUNUPUTUQUNUOUSFIUNUSUOFNJUOURFUONRSUNUOUNUOABTUAU
+      BUCUDUEUFABUHUNVBCUIZUPEVDUQHVDBHUGVCAABKVDUJUKUL $.
+
+    $( Associative law for concatenation of words.  (Contributed by Stefan
+       O'Rear, 15-Aug-2015.) $)
+    ccatass $p |- ( ( S e. Word B /\ T e. Word B /\
+          U e. Word B ) -> ( ( S ++ T ) ++ U ) =
+          ( S ++ ( T ++ U ) ) ) $=
+      ( wcel cc0 chash cfv caddc co cfzo cconcat wfn wceq oveq2d syl2anc adantr
+      syl syl3anc cmin vx cword w3a ccatcl stoic3 ccatlen 3adant3 oveq1d fneq2d
+      wrdfn eqtrd mpbid simp1 3adant1 3ad2ant1 nn0cnd 3ad2ant2 3ad2ant3 addassd
+      cn0 lencl 3eqtr4d cv wo cz nn0zd fzospliti ex mpan9 wa simp2 id syl2an3an
+      ccatval1 simpl3 cuz uzidd uzaddcl fzoss2 sseqtrrd sselda zaddcld ccatval2
+      wss simpl2 fzosubel3 eqtr4d fzoss1 nn0uz eleq2s simpl1 cc elfzoelz adantl
+      zcnd subsub4d fveq2d eleq2d biimpa 3jca fzosubel2 oveq12d biimpar eqfnfvd
+      jaodan syldan ) BAUBZEZCXGEZDXGEZUCZUAFBGHZCGHZIJZDGHZIJZKJZBCLJZDLJZBCDL
+      JZLJZXKXSFXSGHZKJZMZXSXQMXKXSXGEZYDXHXIXRXGEZXJYEABCUDZAXRDUDUEAXSUJRXKYC
+      XQXSXKYBXPFKXKYBXRGHZXOIJZXPXHXIYFXJYBYINYGAAXRDUFUEXKYHXNXOIXHXIYHXNNXJA
+      ABCUFUGZUHZUKOUIULXKYAFYAGHZKJZMZYAXQMXKYAXGEZYNXKXHXTXGEZYOXHXIXJUMZXIXJ
+      YPXHACDUDUNZABXTUDPAYAUJRXKYMXQYAXKYLXPFKXKXLXTGHZIJZXLXMXOIJZIJZYLXPXKYS
+      UUAXLIXIXJYSUUANXHAACDUFUNOZXKXHYPYLYTNYQYRAABXTUFPXKXLXMXOXKXLXHXIXLUTEZ
+      XJABVAUOZUPZXKXMXIXHXMUTEZXJACVAUQZUPZXKXOXJXHXOUTEZXIADVAURZUPUSZVBOUIUL
+      XKUAVCZXQEZUUMFXLKJZEZUUMXLXPKJZEZVDZUUMXSHZUUMYAHZNZXKXLVEEZUUNUUSXKXLUU
+      EVFZUUNUVCUUSUUMFXPXLVGVHVIXKUUPUVBUURXKUUPVJZUUMXRHZUUMBHZUUTUVAXKXHXIUU
+      PUUPUVFUVGNYQXHXIXJVKZUUPVLZAABCUUMVNVMUVEYFXJUUMFYHKJZEZUUTUVFNZXKYFUUPX
+      HXIYFXJYGUGZQXHXIXJUUPVOXKUUOUVJUUMXKUUOFXNKJZUVJXKXNXLVPHZEZUUOUVNWDXKXL
+      UVOEUUGUVPXKXLUVDVQUUHXMXLXLVRPZXLFXNVSRXKYHXNFKYJOZVTWAAAXRDUUMVNZSXKXHY
+      PUUPUUPUVAUVGNYQYRUVIAABXTUUMVNVMVBXKUURUUMXLXNKJZEZUUMXNXPKJZEZVDZUVBXKX
+      NVEEZUURUWDXKXLXMUVDXKXMUUHVFZWBZUURUWEUWDUUMXLXPXNVGVHVIXKUWAUVBUWCXKUWA
+      VJZUVFUUMXLTJZXTHZUUTUVAUWHUVFUWICHZUWJXKXHXIUWAUWAUVFUWKNYQUVHUWAVLABCUU
+      MWCVMUWHXIXJUWIFXMKJEZUWJUWKNXHXIXJUWAWEXHXIXJUWAVOZXKXMVEEZUWAUWLUWFUWAU
+      WNUWLUUMXLXMWFVHVIAACDUWIVNSWGUWHYFXJUVKUVLXKYFUWAUVMQUWMXKUVTUVJUUMXKUVT
+      UVNUVJXKUUDUVTUVNWDZUUEUWOXLFVPHUTXLFXNWHWIWJRUVRVTWAUVSSUWHXHYPUUMXLYTKJ
+      ZEZUVAUWJNZXHXIXJUWAWKXKYPUWAYRQXKUVTUWPUUMXKUVTUUQUWPXKXPXNVPHZEZUVTUUQW
+      DXKXNUWSEUUJUWTXKXNUWGVQUUKXOXNXNVRPXNXLXPVSRXKYTXPXLKXKYTUUBXPUUCUULWGOZ
+      VTWAABXTUUMWCZSVBXKUWCVJZUUMYHTJZDHZUWJUUTUVAUXCUXEUWIXMTJZDHZUWJUXCUXDUX
+      FDUXCUXDUUMXNTJZUXFXKUXDUXHNUWCXKYHXNUUMTYJOQUXCUUMXLXMUWCUUMWLEXKUWCUUMU
+      UMXNXPWMWOWNXKXLWLEUWCUUFQXKXMWLEUWCUUIQWPWGWQUXCXIXJUWIXMUUAKJEZUWJUXGNX
+      HXIXJUWCWEXHXIXJUWCVOZUXCUUMXNUUBKJZEZUVCUWNUUAVEEZUCZUXIXKUWCUXLXKUWBUXK
+      UUMXKXPUUBXNKUULOWRWSXKUXNUWCXKUVCUWNUXMUVDUWFXKXMXOUWFXKXOUUKVFWBWTQUUMX
+      LXMUUAXAPACDUWIWCSWGUXCYFXJUUMYHYIKJZEZUUTUXENXKYFUWCUVMQUXJXKUXPUWCXKUXO
+      UWBUUMXKYHXNYIXPKYJYKXBWRXCAXRDUUMWCSUXCXHYPUWQUWRXHXIXJUWCWKXKYPUWCYRQXK
+      UWBUWPUUMXKUWBUUQUWPXKUVPUWBUUQWDUVQXNXLXPWHRUXAVTWAUXBSVBXEXFXEXFXD $.
+
+    $( The range of a concatenated word.  (Contributed by Stefan O'Rear,
+       15-Aug-2015.) $)
+    ccatrn $p |- ( ( S e. Word B /\ T e. Word B ) ->
+        ran ( S ++ T ) = ( ran S u. ran T ) ) $=
+      ( vx wcel wa co crn cc0 cfv cfzo wceq cn0 adantr sylanbrc fnfvelrn adantl
+      caddc clt wbr cword cconcat cun chash wfn cv wral wf ccatvalfn wo cfz cuz
+      lencl nn0uz eleqtrdi nn0zd uzidd uzaddcl syl2an elfzuzb fzosplit syl elun
+      eleq2d bitrdi ccatval1 3expa ssun1 wrdfn sylan sselid cmin ccatval2 ssun2
+      eqeltrd cz elfzouz uznn0sub ad2antlr elfzolt2 cr elfzoelz nn0red ad2antrr
+      zred ltsubadd2d mpbird elfzo2 syl3anbrc syl2an2r jaodan ex ralrimiv ffnfv
+      sylbid frnd fzoss2 sselda eqeltrrd ralrimiva ccatval3 syl2anr nn0addcl cc
+      wss elfzonn0 nn0cnd addcom ltadd2dd eqbrtrd unssd eqssd ) BAUAZEZCXMEZFZB
+      CUBGZHZBHZCHZUCZXPIBUDJZCUDJZRGZKGZYAXQXPXQYEUEZDUFZXQJZYAEZDYEUGYEYAXQUH
+      BCAUIZXPYIDYEXPYGYEEZYGIYBKGZEZYGYBYDKGZEZUJZYIXPYKYGYLYNUCZEYPXPYEYQYGXP
+      YBIYDUKGEZYEYQLXPYBIULJZEZYDYBULJZEZYRXNYTXOXNYBMYSABUMZUNUONXNYBUUAEYCME
+      ZUUBXOXNYBXNYBUUCUPUQACUMZYCYBYBURUSZYBIYDUTOIYDYBVAVBVDYGYLYNVCVEXPYPYIX
+      PYMYIYOXPYMFZYHYGBJZYAXNXOYMYHUUHLAABCYGVFVGZUUGXSYAUUHXSXTVHXPBYLUEZYMUU
+      HXSEXNUUJXOABVINZYLYGBPVJVKVOXPYOFZYHYGYBVLGZCJZYAXNXOYOYHUUNLABCYGVMVGUU
+      LXTYAUUNXTXSVNXPCIYCKGZUEZYOUUMUUOEZUUNXTEXOUUPXNACVIQZUULUUMYSEZYCVPEZUU
+      MYCSTZUUQYOUUSXPYOUUMMYSYOYGUUAEUUMMEYGYBYDVQYBYGVRVBUNUOQXOUUTXNYOXOYCUU
+      EUPVSUULUVAYGYDSTZYOUVBXPYGYBYDVTQUULYGYBYCYOYGWAEZXPYOYGYGYBYDWBWEQXNYBW
+      AEZXOYOXNYBUUCWCZWDXOYCWAEZXNYOXOYCUUEWCZVSWFWGUUMIYCWHWIUUOUUMCPWJVKVOWK
+      WLWOWMDYEYAXQWNOWPXPXSXTXRXPYLXRBXPUUJUUHXREZDYLUGYLXRBUHUUKXPUVHDYLUUGYH
+      UUHXRUUIXPYFYMYKYHXREYJXPYLYEYGXPUUBYLYEXEUUFYBIYDWQVBWRYEYGXQPWJWSWTDYLX
+      RBWNOWPXPUUOXRCXPUUPYGCJZXREZDUUOUGUUOXRCUHUURXPUVJDUUOXPYGUUOEZFZYGYBRGZ
+      XQJZUVIXRXNXOUVKUVNUVILABCYGXAVGXPYFUVKUVMYEEZUVNXREYJUVLUVMYSEZYDVPEZUVM
+      YDSTUVOUVKYGYSEYBMEZUVPXPYGIYCVQXNUVRXOUUCNYBIYGURXBXPUVQUVKXPYDXNUVRUUDY
+      DMEXOUUCUUEYBYCXCUSUPNUVLUVMYBYGRGZYDSUVKYGXDEYBXDEZUVMUVSLXPUVKYGYGYCXFZ
+      XGXNUVTXOXNYBUUCXGNYGYBXHXBUVLYGYCYBUVKUVCXPUVKYGUWAWCQXOUVFXNUVKUVGVSXNU
+      VDXOUVKUVEWDUVKYGYCSTXPYGIYCVTQXIXJUVMIYDWHWIYEUVMXQPWJWSWTDUUOXRCWNOWPXK
+      XL $.
+  $}
+
+  $( Concatenation of the empty word by the empty word.  (Contributed by AV,
+     26-Mar-2022.) $)
+  ccatidid $p |- ( (/) ++ (/) ) = (/) $=
+    ( c0 cvv cword wcel cconcat co wceq wrd0 ccatlid ax-mp ) ABCDAAEFAGBHBAIJ
+    $.
+
+  $( The last symbol of a word concatenated with a nonempty word is the last
+     symbol of the nonempty word.  (Contributed by AV, 22-Oct-2018.)  (Proof
+     shortened by AV, 1-May-2020.) $)
+  lswccatn0lsw $p |- ( ( A e. Word V /\ B e. Word V /\ B =/= (/) )
+                       -> ( lastS ` ( A ++ B ) ) = ( lastS ` B ) ) $=
+    ( wcel w3a co chash cfv c1 cmin clsw wceq wa oveq1d 3adant3 cz lencl syl2an
+    simpl eqtrd cword c0 wne cconcat caddc cfzo ccatlen clt wbr cn zaddcllempos
+    nn0zd lennncl cr crp zre nnrp ltaddrp 3impb fzolb sylibr fzoend syl eqeltrd
+    3jca ccatval2 syld3an3 nn0cnd addcl 1cnd sub32d pncan2 fveq2d ccatcl lswwrd
+    cc 3ad2ant2 3eqtr4d ) ACUAZDZBVSDZBUBUCZEZABUDFZGHZIJFZWDHZBGHZIJFZBHZWDKHZ
+    BKHZWCWGWFAGHZJFZBHZWJVTWAWBWFWMWMWHUEFZUFFZDWGWOLWCWFWPIJFZWQVTWAWFWRLWBVT
+    WAMZWEWPIJCCABUGNZOWCWMWQDZWRWQDWCWMPDZWPPDZWMWPUHUIZEZXAVTWAWBXEVTXBWHUJDZ
+    XEWAWBMVTWMCAQZULCBUMXBXFMXBXCXDXBXFSWMWHUKXBWMUNDWHUODXDXFWMUPWHUQWMWHURRV
+    ERUSWMWPUTVAWMWPVBVCVDCABWFVFVGWCWNWIBVTWAWNWILWBWSWNWRWMJFZWIWSWFWRWMJWTNV
+    TWMVPDZWHVPDZXHWILWAVTWMXGVHWAWHCBQVHXIXJMZXHWPWMJFZIJFWIXKWPIWMWMWHVIXKVJX
+    IXJSVKXKXLWHIJWMWHVLNTRTOVMTWCWDVSDZWKWGLVTWAXMWBCABVNOCWDVOVCWAVTWLWJLWBCB
+    VOVQVR $.
+
+  $( The last symbol of a word concatenated with the empty word is the last
+     symbol of the word.  (Contributed by AV, 22-Oct-2018.)  (Proof shortened
+     by AV, 1-May-2020.) $)
+  lswccat0lsw $p |- ( W e. Word V
+                     -> ( lastS ` ( W ++ (/) ) ) = ( lastS ` W ) ) $=
+    ( cword wcel c0 cconcat co clsw ccatrid fveq2d ) BACDBEFGBHABIJ $.
 
 
 $(
@@ -191576,6 +192161,12 @@ htmldef "SubMnd" as "SubMnd";
 htmldef "Word" as "Word ";
   althtmldef "Word" as "Word ";
   latexdef "Word" as "\mathrm{Word}";
+htmldef "lastS" as 'lastS';
+  althtmldef "lastS" as 'lastS';
+  latexdef "lastS" as "\mathrm{lastS}";
+htmldef "++" as " ++ ";
+  althtmldef "++" as " ++ ";
+  latexdef "++" as "\mathbin{\operatorname{++}}";
 htmldef "~QG" as " ~<sub><i>QG</i></sub> ";
   althtmldef "~QG" as " ~<sub><i>QG</i></sub> ";
   latexdef "~QG" as " \sim_{QG} ";
