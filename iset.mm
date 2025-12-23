@@ -190930,9 +190930,10 @@ $)
     structvtxvallem.s $e |- S e. NN $.
     structvtxvallem.b $e |- ( Base ` ndx ) < S $.
     structvtxvallem.g $e |- G = { <. ( Base ` ndx ) , V >. , <. S , E >. } $.
-    $( Lemma for ~ structvtxval and ~ structiedg0val .  (Contributed by AV,
-       23-Sep-2020.)  (Revised by AV, 12-Nov-2021.) $)
-    structvtxvallem2dom $p |- ( ( V e. X /\ E e. Y ) -> 2o ~<_ dom G ) $=
+    $( There are at least two elements in an extensible structure with a base
+       set and another slot.  (Contributed by AV, 23-Sep-2020.)  (Revised by
+       AV, 12-Nov-2021.) $)
+    struct2slots2dom $p |- ( ( V e. X /\ E e. Y ) -> 2o ~<_ dom G ) $=
       ( wcel wa cnx cbs cvv cn basendxnn a1i cop opexg sylancr cfv cpr eqeltrid
       elexi simpl simpr prexg syl2anc wne nnrei ltneii eqimss2i hashdmprop2dom
       wss ) DEJZBFJZKZLMUAZADBCNOEFNURNJUQUROPUDQAOJZUQGQUOUPUEZUOUPUFZUQCURDRZ
@@ -190943,10 +190944,10 @@ $)
        another slot.  (Contributed by AV, 23-Sep-2020.)  (Proof shortened by
        AV, 12-Nov-2021.) $)
     structvtxval $p |- ( ( V e. X /\ E e. Y ) -> ( Vtx ` G ) = V ) $=
-      ( wcel wa cnx cbs cfv cop 2strstrndx structvtxvallem2dom simpl cvv cn cpr
-      basendxnn opexg sylancr prid1g syl eleqtrrdi basvtxval2dom ) DEJZBFJZKZCD
-      LMNZAOEDBCAEFIHGPABCDEFGHIQUIUJRZUKULDOZUNABOZUAZCUKUNSJZUNUPJUKULTJUIUQU
-      BUMULDTEUCUDUNUOSUEUFIUGUH $.
+      ( wcel wa cnx cbs cfv cop 2strstrndx struct2slots2dom simpl cvv cn prid1g
+      cpr basendxnn opexg sylancr syl eleqtrrdi basvtxval2dom ) DEJZBFJZKZCDLMN
+      ZAOEDBCAEFIHGPABCDEFGHIQUIUJRZUKULDOZUNABOZUBZCUKUNSJZUNUPJUKULTJUIUQUCUM
+      ULDTEUDUEUNUOSUAUFIUGUH $.
 
     $( The set of indexed edges of an extensible structure with a base set and
        another slot not being the slot for edge functions is empty.
@@ -190956,16 +190957,16 @@ $)
                            -> ( iEdg ` G ) = (/) ) $=
       ( wcel cnx cfv c0 wceq cvv cop cn sylancr 3adant3 wn cedgf wne w3a wa csn
       ciedg cdif wfun c2o cdm wbr cbs basendxnn simpl opexg simpr prexg syl2anc
-      cdom eqeltrid 2strstrndx structn0fun structvtxvallem2dom funiedgdm2domval
-      cpr cstr syl syl3anc edgfndxid edgfndxnn elexi basendxnedgfndx nesymi a1i
+      cpr eqeltrid 2strstrndx structn0fun syl struct2slots2dom funiedgdm2domval
+      cdom cstr syl3anc edgfndxid edgfndxnn elexi wo basendxnedgfndx nesymi a1i
       neneq neqcomd 3ad2ant3 ioran sylanbrc elpr sylnibr dmeqi eqtrid neleqtrrd
-      wo dmpropg ndmfvg 3eqtrd ) DEJZBFJZAKUALZUBZUCZCUFLZCUALZWKCLZMWIWJWNWONZ
-      WLWIWJUDZCOJZCMUEUGUHZUICUJZUSUKWQWRCKULLZDPZABPZVEZOIWRXCOJZXDOJZXEOJWRX
-      BQJWIXFUMWIWJUNXBDQEUORWRAQJWJXGGWIWJUPABQFUORXCXDOOUQURUTZWRCXBAPZVFUKWT
-      DBCAEFIHGVACXIVBVGABCDEFGHIVCCOVDVHSWIWJWOWPNZWLWRWSXJXHCOVIVGSWMWKOJWKXA
-      JTWPMNWKQVJVKZWMXAXBAVEZWKWMWKXBNZWKANZWEZWKXLJWMXMTZXNTZXOTXPWMXBWKVLVMV
-      NWLWIXQWJWLAWKAWKVOVPVQXMXNVRVSWKXBAXKVTWAWMXAXEUJZXLCXEIWBWIWJXRXLNWLXBD
-      ABEFWFSWCWDWKCWGRWH $.
+      dmpropg ndmfvg 3eqtrd ) DEJZBFJZAKUALZUBZUCZCUFLZCUALZWKCLZMWIWJWNWONZWLW
+      IWJUDZCOJZCMUEUGUHZUICUJZVFUKWQWRCKULLZDPZABPZUSZOIWRXCOJZXDOJZXEOJWRXBQJ
+      WIXFUMWIWJUNXBDQEUORWRAQJWJXGGWIWJUPABQFUORXCXDOOUQURUTZWRCXBAPZVGUKWTDBC
+      AEFIHGVACXIVBVCABCDEFGHIVDCOVEVHSWIWJWOWPNZWLWRWSXJXHCOVIVCSWMWKOJWKXAJTW
+      PMNWKQVJVKZWMXAXBAUSZWKWMWKXBNZWKANZVLZWKXLJWMXMTZXNTZXOTXPWMXBWKVMVNVOWL
+      WIXQWJWLAWKAWKVPVQVRXMXNVSVTWKXBAXKWAWBWMXAXEUJZXLCXEIWCWIWJXRXLNWLXBDABE
+      FWFSWDWEWKCWGRWH $.
   $}
 
   ${
