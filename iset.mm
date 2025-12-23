@@ -66750,8 +66750,8 @@ $)
 
   ${
     $d A f x y $.
-    $( A set equinumerous to ordinal 2 is a pair.  (Contributed by Mario
-       Carneiro, 5-Jan-2016.) $)
+    $( A set equinumerous to ordinal 2 is an unordered pair.  (Contributed by
+       Mario Carneiro, 5-Jan-2016.) $)
     en2 $p |- ( A ~~ 2o -> E. x E. y A = { x , y } ) $=
       ( vf c2o cv wf1o cpr wceq wex cfv c1o cima wfn adantl wcel syl 0lt2o a1i
       c0 cen wbr bren biimpi ccnv cdm crn cnvimarndm wfun dff1o2 simp3bi eqtrdi
