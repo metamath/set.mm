@@ -117604,6 +117604,17 @@ $)
       BYAVCVEXTWTXIWNBYCXTWKCWSUFYAVEVFVHVIVJWDWEBJHWFBEVKVLWEWFWHWIHWDCDIIVMUR
       WGXFXKSJJWGAXHXJVNWGQIHXGIHXHVNHWGVRWGDCWDWEWFVBWDWEWFVAVOQXGVPVSVTSJHWGW
       AULWBWC $.
+
+    $( A zero length substring.  (Contributed by Stefan O'Rear,
+       27-Aug-2015.) $)
+    swrd00g $p |- ( ( S e. V /\ X e. ZZ )
+        -> ( S substr <. X , X >. ) = (/) ) $=
+      ( vx wcel cz wa cvv cop csubstr co c0 wceq elex adantr cfzo cc0 cmpt fzo0
+      eqtrdi simpr w3a cdm wss cv caddc cfv cif swrdval 0ss eqsstri iftruei zcn
+      cmin subidd oveq2d 3ad2ant2 mpteq1d mpt0 eqtrid eqtrd syl3anc ) ABEZCFEZG
+      AHEZVDVDACCIJKZLMVCVEVDABNOVCVDUAZVGVEVDVDUBZVFCCPKZAUCZUDZDQCCUNKZPKZDUE
+      CUFKAUGZRZLUHZLDACCHUIVHVPVOLVKVOLVILVJCSVJUJUKULVHVODLVNRLVHDVMLVNVHVMQQ
+      PKZLVDVEVMVQMVDVDVLQQPVDCCUMUOUPUQQSTURDVNUSTUTVAVB $.
   $}
 
 
