@@ -117584,6 +117584,28 @@ $)
       ABVNQVORS $.
   $}
 
+  ${
+    $d s b x S $.  $d s b x F $.  $d s b x L $.  $d s b x V $.  $d s b x A $.
+    $d x X $.
+    $( Value of a subword.  (Contributed by Stefan O'Rear, 15-Aug-2015.) $)
+    swrdval $p |- ( ( S e. V /\ F e. ZZ /\ L e. ZZ ) ->
+        ( S substr <. F , L >. ) = if ( ( F ..^ L ) C_ dom S ,
+          ( x e. ( 0 ..^ ( L - F ) ) |-> ( S ` ( x + F ) ) ) , (/) ) ) $=
+      ( vs vb wcel cz cvv cv c1st cfv c2nd cfzo co cc0 cmin c0 wceq w3a cop cxp
+      cdm wss caddc cmpt cif csubstr cmpo df-substr a1i wa simprl adantl op1stg
+      fveq2 3adant1 sylan9eqr op2ndg simp2 simp3 oveq12d sseq12d oveq2d fveq12d
+      simp1 mpteq12dv ifbieq1d syl3anc elex 3ad2ant1 opelxpi cfn zsubcld fzofig
+      dmeqd 0zd syl2anc mptexd 0ex ifexd ovmpod ) BEHZCIHZDIHZUAZFGBCDUBZJIIUCZ
+      GKZLMZWJNMZOPZFKZUDZUEZAQWLWKRPZOPZAKZWKUFPZWNMZUGZSUHZCDOPZBUDZUEZAQDCRP
+      ZOPZWSCUFPZBMZUGZSUHZUIJUIFGJWIXCUJTWGAFGUKULWGWNBTZWJWHTZUMZUMXMWKCTZWLD
+      TZXCXLTWGXMXNUNXOWGWKWHLMZCXNWKXRTXMWJWHLUQUOWEWFXRCTWDCDIIUPURUSXOWGWLWH
+      NMZDXNWLXSTXMWJWHNUQUOWEWFXSDTWDCDIIUTURUSXMXPXQUAZWPXFXBXKSXTWMXDWOXEXTW
+      KCWLDOXMXPXQVAZXMXPXQVBZVCXTWNBXMXPXQVGZVQVDXTAWRXAXHXJXTWQXGQOXTWLDWKCRY
+      BYAVCVEXTWTXIWNBYCXTWKCWSUFYAVEVFVHVIVJWDWEBJHWFBEVKVLWEWFWHWIHWDCDIIVMUR
+      WGXFXKSJJWGAXHXJVNWGQIHXGIHXHVNHWGVRWGDCWDWEWFVBWDWEWFVAVOQXGVPVSVTSJHWGW
+      AULWBWC $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
