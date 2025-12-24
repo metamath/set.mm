@@ -117629,6 +117629,19 @@ $)
       ABUGUHUIZWIWDVSWJWIVRVSWDVQVTWHUJWIWHVPVOWDVRGWGWHUNVNVOVPVTWHUKVNVOVPVTW
       HULWCDCUOUPUQWIWJABWLVCURUSUTWGDCVNVOVPVTVAVNVOVPVTVDVBAWAWFVEVFRVMGVQVTV
       GSAVHVIABCDVJVKVL $.
+
+    $( Value of the subword extractor in its intended domain.  (Contributed by
+       Stefan O'Rear, 15-Aug-2015.)  (Proof shortened by AV, 2-May-2020.) $)
+    swrdval2 $p |- ( ( S e. Word A /\ F e. ( 0 ... L ) /\
+          L e. ( 0 ... ( # ` S ) ) ) -> ( S substr <. F , L >. ) =
+          ( x e. ( 0 ..^ ( L - F ) ) |-> ( S ` ( x + F ) ) ) ) $=
+      ( wcel cc0 cfz co cfv cfzo wss c0 wceq elfzelz 3ad2ant2 3ad2ant3 cuz syl
+      cz cword chash w3a cop csubstr cdm cmin cv caddc cmpt cif swrdval syl3anc
+      simp1 elfzuz fzoss1 elfzuz3 fzoss2 sstrd wrddm 3ad2ant1 sseqtrrd iftrued
+      eqtrd ) CBUAZFZDGEHIFZEGCUBJZHIFZUCZCDEUDUEIZDEKIZCUFZLZAGEDUGIKIAUHDUIIC
+      JUJZMUKZVOVJVFDTFZETFZVKVPNVFVGVIUNVGVFVQVIDGEOPVIVFVRVGEGVHOQACDEVEULUMV
+      JVNVOMVJVLGVHKIZVMVJVLGEKIZVSVJDGRJFZVLVTLVGVFWAVIDGEUOPDGEUPSVJVHERJFZVT
+      VSLVIVFWBVGEGVHUQQEGVHURSUSVFVGVMVSNVIBCUTVAVBVCVD $.
   $}
 
 
