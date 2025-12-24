@@ -190975,9 +190975,10 @@ $)
     structgrssvtx.e $e |- ( ph -> E e. Z ) $.
     structgrssvtx.s $e |- ( ph -> { <. ( Base ` ndx ) , V >. ,
                                     <. ( .ef ` ndx ) , E >. } C_ G ) $.
-    $( Lemma for ~ structgrssvtx and ~ structgrssiedg .  (Contributed by AV,
-       14-Oct-2020.)  (Proof shortened by AV, 12-Nov-2021.) $)
-    structgrssvtxlem2dom $p |- ( ph -> 2o ~<_ dom G ) $=
+    $( There are at least two elements in a graph represented as an extensible
+       structure with vertices as base set and indexed edges.  (Contributed by
+       AV, 14-Oct-2020.)  (Proof shortened by AV, 12-Nov-2021.) $)
+    structgr2slots2dom $p |- ( ph -> 2o ~<_ dom G ) $=
       ( cnx cbs cfv cedgf cn cvv wcel basendxnn a1i edgfndxnn cstr wbr structex
       syl wne basendxnedgfndx hashdmprop2dom ) ALMNZLONZDBCPPFGQUIPRASTUJPRAUAT
       IJACEUBUCCQRHCEUDUEUIUJUFAUGTKUH $.
@@ -190986,19 +190987,19 @@ $)
        with vertices as base set and indexed edges.  (Contributed by AV,
        14-Oct-2020.)  (Proof shortened by AV, 12-Nov-2021.) $)
     structgrssvtx $p |- ( ph -> ( Vtx ` G ) = V ) $=
-      ( structgrssvtxlem2dom cnx cfv cop wcel cvv cn opexg sylancr cbs cedgf wa
-      cpr wss wb basendxnn edgfndxnn prssg syl2anc mpbird simpld basvtxval2dom
-      ) ACDEFHABCDEFGHIJKLIAMUANZDOZCPZMUBNZBOZCPZAUPUSUCZUOURUDCUEZKAUOQPZURQP
-      ZUTVAUFAUNRPDFPVBUGIUNDRFSTAUQRPBGPVCUHJUQBRGSTUOURCQQUIUJUKULUM $.
+      ( structgr2slots2dom cnx cfv cop wcel cvv cn opexg sylancr cbs wa cpr wss
+      cedgf wb basendxnn edgfndxnn prssg syl2anc mpbird simpld basvtxval2dom )
+      ACDEFHABCDEFGHIJKLIAMUANZDOZCPZMUENZBOZCPZAUPUSUBZUOURUCCUDZKAUOQPZURQPZU
+      TVAUFAUNRPDFPVBUGIUNDRFSTAUQRPBGPVCUHJUQBRGSTUOURCQQUIUJUKULUM $.
 
     $( The set of indexed edges of a graph represented as an extensible
        structure with vertices as base set and indexed edges.  (Contributed by
        AV, 14-Oct-2020.)  (Proof shortened by AV, 12-Nov-2021.) $)
     structgrssiedg $p |- ( ph -> ( iEdg ` G ) = E ) $=
-      ( structgrssvtxlem2dom cnx cfv cop wcel cvv cn opexg sylancr cbs cedgf wa
-      cpr wss basendxnn edgfndxnn prssg syl2anc mpbird simprd edgfiedgval2dom
-      wb ) ABCEGHABCDEFGHIJKLJAMUANZDOZCPZMUBNZBOZCPZAUPUSUCZUOURUDCUEZKAUOQPZU
-      RQPZUTVAUMAUNRPDFPVBUFIUNDRFSTAUQRPBGPVCUGJUQBRGSTUOURCQQUHUIUJUKUL $.
+      ( structgr2slots2dom cnx cfv cop wcel cvv cn opexg sylancr cbs wa cpr wss
+      cedgf wb basendxnn edgfndxnn prssg syl2anc mpbird simprd edgfiedgval2dom
+      ) ABCEGHABCDEFGHIJKLJAMUANZDOZCPZMUENZBOZCPZAUPUSUBZUOURUCCUDZKAUOQPZURQP
+      ZUTVAUFAUNRPDFPVBUGIUNDRFSTAUQRPBGPVCUHJUQBRGSTUOURCQQUIUJUKULUM $.
   $}
 
   ${
