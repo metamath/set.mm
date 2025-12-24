@@ -117567,6 +117567,23 @@ $)
             ( s ` ( x + ( 1st ` b ) ) ) ) , (/) ) ) $.
   $}
 
+  ${
+    $( Decidability of whether a range of integers is a subset of a word's
+       domain.  (Contributed by Jim Kingdon, 23-Dec-2025.) $)
+    fzowrddc $p |- ( ( S e. Word A /\ F e. ZZ /\ L e. ZZ )
+        -> DECID ( F ..^ L ) C_ dom S ) $=
+      ( wcel cz cfzo co wss wdc cc0 wbr wn wa cle zdcle 3ad2ant1 dcbid mpbird
+      wb cword w3a cdm chash cfv clt simpl2 sylancr simpl3 lencl adantr syl2anc
+      0z nn0zd dcand 0zd simpr ssfzo12bi syl221anc wo c0 fzonlt0 3adant1 biimpa
+      wceq 0ss eqsstrdi orcd df-dc sylibr zdclt exmiddc mpjaodan wrddm sseq2d
+      syl ) BAUAEZCFEZDFEZUBZCDGHZBUCZIZJWAKBUDUEZGHZIZJZVTCDUFLZWGWHMZVTWHNZWG
+      KCOLZDWDOLZNZJWJWKWLWJKFEZVRWKJUMVQVRVSWHUGZKCPUHWJVSWDFEZWLJVQVRVSWHUIZV
+      TWPWHVQVRWPVSVQWDABUJUNQUKZDWDPULUOWJWFWMWJVRVSWNWPWHWFWMTWOWQWJUPWRVTWHU
+      QCDKWDURUSRSVTWINZWFWFMZUTWGWSWFWTWSWAVAWEVTWIWAVAVEZVRVSWIXATVQCDVBVCVDW
+      EVFVGVHWFVIVJVTWHJZWHWIUTVRVSXBVQCDVKVCWHVLVPVMVTWCWFVTWBWEWAVQVRWBWEVEVS
+      ABVNQVORS $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
