@@ -66072,7 +66072,7 @@ $)
     $d f A $.  $d f B $.  $d f F $.
     $( The domain and range of a one-to-one, onto set function are
        equinumerous.  This variation of ~ f1oeng does not require the Axiom of
-       Replacement nor the Axiom of Union.  (Contributed by BTernaryTau,
+       Collection nor the Axiom of Union.  (Contributed by BTernaryTau,
        7-Dec-2024.) $)
     f1oen4g $p |- ( ( ( F e. V /\ A e. W /\ B e. X ) /\ F : A -1-1-onto-> B )
         -> A ~~ B ) $=
@@ -66083,7 +66083,7 @@ $)
 
     $( The domain of a one-to-one set function is dominated by its codomain
        when the latter is a set.  This variation of ~ f1domg does not require
-       the Axiom of Replacement nor the Axiom of Union.  (Contributed by
+       the Axiom of Collection nor the Axiom of Union.  (Contributed by
        BTernaryTau, 7-Dec-2024.) $)
     f1dom4g $p |- ( ( ( F e. V /\ A e. W /\ B e. X ) /\ F : A -1-1-> B )
         -> A ~<_ B ) $=
