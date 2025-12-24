@@ -117642,6 +117642,21 @@ $)
       JUJZMUKZVOVJVFDTFZETFZVKVPNVFVGVIUNVGVFVQVIDGEOPVIVFVRVGEGVHOQACDEVEULUMV
       JVNVOMVJVLGVHKIZVMVJVLGEKIZVSVJDGRJFZVLVTLVGVFWAVIDGEUOPDGEUPSVJVHERJFZVT
       VSLVIVFWBVGEGVHUQQEGVHURSUSVFVGVMVSNVIBCUTVAVBVCVD $.
+
+    $( Length of an extracted subword.  (Contributed by Stefan O'Rear,
+       16-Aug-2015.) $)
+    swrdlen $p |- ( ( S e. Word A /\ F e. ( 0 ... L ) /\
+          L e. ( 0 ... ( # ` S ) ) ) ->
+        ( # ` ( S substr <. F , L >. ) ) = ( L - F ) ) $=
+      ( vx cword wcel cc0 cfz co chash cfv wfn wceq cz elfzelz 3ad2ant2 syl2anc
+      cvv syl w3a cop csubstr cmin cfzo cfn cv caddc cmpt wral wa simpl1 adantl
+      elfzoelz adantr zaddcld fvexg ralrimiva eqid fnmpt swrdval2 fneq1d mpbird
+      0z 3ad2ant3 zsubcld fzofig sylancr fihashfn cn0 fznn0sub hashfzo0 eqtrd )
+      BAFZGZCHDIJGZDHBKLZIJGZUAZBCDUBUCJZKLZHDCUDJZUEJZKLZWBVSVTWCMZWCUFGZWAWDN
+      VSWEEWCEUGZCUHJZBLZUIZWCMZVSWISGZEWCUJWKVSWLEWCVSWGWCGZUKZVOWHOGWLVOVPVRW
+      MULWNWGCWMWGOGVSWGHWBUNUMVSCOGZWMVPVOWOVRCHDPQZUOUPWHBVNOUQRUREWCWIWJSWJU
+      SUTTVSWCVTWJEABCDVAVBVCVSHOGWBOGWFVDVSDCVRVODOGVPDHVQPVEWPVFHWBVGVHWCVTVI
+      RVSWBVJGZWDWBNVPVOWQVRCHDVKQWBVLTVM $.
   $}
 
 
