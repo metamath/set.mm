@@ -1101,6 +1101,10 @@ Non-empty almost always needs to be changed to inhabited (those terms are define
 
 <LI>If there is case elimination on whether variables are distinct, most of the time you just need the variant with distinct variables. Sometimes you can then remove the constraint with a temporary variable (e.g. the various sbco2* variants, ~ nfralya , ~ r19.3rm ).</LI>
 
+<li>If you are proving something of the form ` -. A e. B ` and the proof does
+case elimination on whether ` A ` is a set or a proper class, use ~ pm2.01da so
+you only need to consider the case where ` A ` is a set (example: ~ fun2dmnop0 )</li>
+
 <LI>Sometimes one direction of a biconditional holds, or subset holds instead of equality. You might be able to keep the easy direction and worry about the other one later.</LI>
 
 <LI>
@@ -2355,6 +2359,14 @@ favor of theorems in deduction form.</TD>
   <TD>~ eqsnm</TD>
 </TR>
 
+<tr>
+  <td>n0snor2el</td>
+  <td><i>none</i></td>
+  <td>even if nonempty were changed to inhabited, the choice
+  between a singleton and an unordered pair would seem to
+  require decidable equality</td>
+</tr>
+
 <TR>
   <TD>ssunpr</TD>
   <TD><I>none</I></TD>
@@ -2635,6 +2647,12 @@ A either - there are singletons at every rank.</P>
   <TD>opnz</TD>
   <TD>~ opm , ~ opnzi</TD>
 </TR>
+
+<tr>
+  <td>iunopeqop</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses n0snor2el</td>
+</tr>
 
 <tr>
   <td>opabn0</td>
@@ -4756,7 +4774,7 @@ this implies excluded middle</TD>
 </TR>
 
 <TR>
-  <TD>enp1ilem , enp1i , en2 , en3 , en4</TD>
+  <TD>enp1ilem , enp1i , en3 , en4</TD>
   <TD><I>none</I></TD>
   <TD>The set.mm proof relies on excluded middle and undif1</TD>
 </TR>
@@ -9275,6 +9293,115 @@ or not.</TD>
 </TR>
 
 <tr>
+  <td>phphashd , phphashrd</td>
+  <td><i>none</i></td>
+  <td>at a minimum, we'd expect to need finiteness conditions on
+  both ` A ` and ` B ` (lacking ssfi)</td>
+</tr>
+
+<tr>
+  <td>hashprlei</td>
+  <td><i>none</i></td>
+  <td>presumably not provable</td>
+</tr>
+
+<tr>
+  <td>hash2pr</td>
+  <td>~ en2</td>
+  <td>combine with ~ hash2en if desired</td>
+</tr>
+
+<tr>
+  <td>hash2prde</td>
+  <td><i>none</i></td>
+  <td>should be provable (if the antecedent is changed to ` V ~~ 2o ` )
+  via ~ en2 and ~ pr2ne</td>
+</tr>
+
+<tr>
+  <td>hash2exprb , hash2prb</td>
+  <td><i>none</i></td>
+  <td>probably would need the antecendent changed from ` V e. W ` to
+  ` V e. Fin ` ; also see other theorems like ~ en2
+  and ~ pr2ne</td>
+</tr>
+
+<tr>
+  <td>prprrab</td>
+  <td><i>none</i></td>
+  <td>apparently ` ( # `` x ) = 2 ` would need to be changed to
+  ` x ~~ 2o ` ; there is also the question of whether this theorem,
+  concerning non-empty subsets, would be as useful as a similar theorem
+  concerning inhabited subsets</td>
+</tr>
+
+<tr>
+  <td>nehash2</td>
+  <td><i>none</i></td>
+  <td>Presumably could be proved if ` P e. V ` were changed to
+  ` P e. Fin ` .  But perhaps ~ rex2dom better expresses the idea
+  here.</td>
+</tr>
+
+<tr>
+  <td>hash2prd</td>
+  <td>~ en2eqpr</td>
+</tr>
+
+<tr>
+  <td>hash2pwpr</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses excluded middle</td>
+</tr>
+
+<tr>
+  <td>hashle2pr , hashle2prv</td>
+  <td><i>none</i></td>
+  <td>likely would need changes even if something similar is
+  possible</td>
+</tr>
+
+<tr>
+  <td>pr2pwpr</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses hash2pwpr and other theorems we do
+  not have</td>
+</tr>
+
+<tr>
+  <td>hashge2el2dif</td>
+  <td>~ 2dom</td>
+</tr>
+
+<tr>
+  <td>hashge2el2difr</td>
+  <td>~ rex2dom</td>
+</tr>
+
+<tr>
+  <td>hashge2el2difb</td>
+  <td>~ 2dom and ~ rex2dom</td>
+</tr>
+
+<tr>
+  <td>hashdmpropge2</td>
+  <td>~ hashdmprop2dom</td>
+  <td>changes how we specify that a set has at least two elements</td>
+</tr>
+
+<tr>
+  <td>fundmge2nop0</td>
+  <td>~ fundm2domnop0</td>
+  <td>changes ` 2 <_ ( # `` dom G ) ` to ` 2o ~<_ dom G `</td>
+</tr>
+
+<tr>
+  <td>fundmge2nop</td>
+  <td>~ fundm2domnop</td>
+  <td>changes how we specify that a set has at least two elements</td>
+</tr>
+
+<tr>
   <td>iswrdi</td>
   <td>~ iswrdinn0</td>
   <td>adds ` L e. NN0 ` condition</td>
@@ -10650,7 +10777,9 @@ intuitionistic and it is lightly used in set.mm</TD>
 <TR>
   <TD>basprssdmsets</TD>
   <TD><I>none</I></TD>
-  <TD>The set.mm proof relies on setsdm</TD>
+  <TD>The set.mm proof relies on setsdm . Something of this sort
+  should be provable; we can change ` I e. _V ` to ` I e. NN `
+  (an easy condition to satisfy) if that helps.</TD>
 </TR>
 
 <tr>
@@ -10753,7 +10882,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>2strstr</TD>
-  <TD>~ 2strstrg</TD>
+  <TD>~ 2strstrndx</TD>
 </TR>
 
 <TR>
@@ -15745,6 +15874,117 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td id="missing-2sq">2sq</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses 2sqlem11</td>
+</tr>
+
+<tr>
+  <td>vtxval</td>
+  <td>~ vtxvalg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>iedgval</td>
+  <td>~ iedgvalg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>funvtxdmge2val</td>
+  <td>~ funvtxdm2domval</td>
+  <td>changes how we specify that a set has at least two elements
+  and adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>funiedgdmge2val</td>
+  <td>~ funiedgdm2domval</td>
+  <td>changes how we specify that a set has at least two elements
+  and adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>funvtxdm2val</td>
+  <td>~ funvtxdm2vald</td>
+  <td>adds set existence condition for ` G `</td>
+</tr>
+
+<tr>
+  <td>funiedgdm2val</td>
+  <td>~ funiedgdm2vald</td>
+  <td>adds set existence condition for ` G `</td>
+</tr>
+
+<tr>
+  <td>funvtxval0</td>
+  <td>~ funvtxval0d</td>
+  <td>adds set existence condition for ` G `</td>
+</tr>
+
+<tr>
+  <td>basvtxval</td>
+  <td>~ basvtxval2dom</td>
+  <td>changes how we specify that a set has at least two elements</td>
+</tr>
+
+<tr>
+  <td>edgfiedgval</td>
+  <td>~ edgfiedgval2dom</td>
+  <td>changes how we specify that a set has at least two elements</td>
+</tr>
+
+<tr>
+  <td>funvtxval</td>
+  <td>~ funvtxvalg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>funiedgval</td>
+  <td>~ funiedgvalg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>structvtxvallem</td>
+  <td>~ struct2slots2dom</td>
+  <td>changes how we specify that a set has at least two elements</td>
+</tr>
+
+<tr>
+  <td>structgrssvtxlem</td>
+  <td>~ structgr2slots2dom</td>
+  <td>changes how we specify that a set has at least two elements</td>
+</tr>
+
+<tr>
+  <td>struct2grstr</td>
+  <td>~ struct2grstrg</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>graop , grastruct</td>
+  <td><i>none</i></td>
+  <td>presumably could be proved (perhaps with a set existence condition
+  on ` G ` ), but unused in set.mm</td>
+</tr>
+
+<tr>
+  <td>grstructd</td>
+  <td>~ grstructd2dom</td>
+  <td>changes how we specify that a set has at least two elements</td>
+</tr>
+
+<tr>
+  <td>grstructeld</td>
+  <td>~ grstructeld2dom</td>
+  <td>changes how we specify that a set has at least two elements</td>
+</tr>
+
+<tr>
+  <td>setsvtx , setsiedg</td>
+  <td><i>none</i></td>
+  <td>presumably provable but the set.mm proof uses basprssdmsets</td>
 </tr>
 
 <tr>

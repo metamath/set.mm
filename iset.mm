@@ -38115,6 +38115,13 @@ $)
     UICUJUKGZEULUICUHUMUIIUIAJEZBJEZKUHUMSABCLZABJJMNOCUJUKPNUICUJQZCUKQZKULTUI
     UQURUIUJCUIUNUJCQUIUNUOUPUAZAJUBNRUIUKCUIUNUKCQUSABJUCNRUDCUJCUKUEUFUG $.
 
+  $( An ordered pair is equal to the ordered pair without the empty set.  This
+     is because no ordered pair contains the empty set.  (Contributed by AV,
+     15-Nov-2021.) $)
+  opwo0id $p |- <. X , Y >. = ( <. X , Y >. \ { (/) } ) $=
+    ( cop c0 csn cdif cin wceq wcel 0nelop disjsn mpbir disjdif2 ax-mp eqcomi
+    wn ) ABCZDEZFZQQRGDHZSQHTDQIPABJQDKLQRMNO $.
+
   ${
     $d A x $.  $d B x $.  $d C x $.  $d D x $.
 
@@ -44638,6 +44645,14 @@ $)
     cun ) ABCADZECQDZECZAFZECZABGQEGTRHSUATAIZTPRTUBJAKLTREMNO $.
 
   ${
+    dmexd.1 $e |- ( ph -> A e. V ) $.
+    $( The domain of a set is a set.  (Contributed by Glauco Siliprandi,
+       26-Jun-2021.) $)
+    dmexd $p |- ( ph -> dom A e. _V ) $=
+      ( wcel cdm cvv dmexg syl ) ABCEBFGEDBCHI $.
+  $}
+
+  ${
     dmex.1 $e |- A e. _V $.
     $( The domain of a set is a set.  Corollary 6.8(2) of [TakeutiZaring]
        p. 26.  (Contributed by NM, 7-Jul-2008.) $)
@@ -47905,6 +47920,40 @@ $)
       XEWTKVRXJXIGZXDVRXJXIOKXQOVRXIXJXMVAXJXIUPUQWRXJWPXIWBWCBXNXOQWBWFAXNXPQM
       URXDWTVBUTVCVDVEVOXAWJKVRVMWQWJVNWTVMWQWJKZDEVMXRELDLZCVMWMXSCLCDEARVFPVG
       VNWTWJKZDEVNXTELDLZCVNWNYACLCDEBRVFPVGVHUMVIVJVKCDEVTRVL $.
+  $}
+
+  ${
+    $d x y $.  $d F y $.  $d G y $.
+    $( If the union of classes is a function, there is at most one element in
+       relation to an arbitrary element regarding one of these classes.
+       (Contributed by AV, 18-Jul-2019.) $)
+    fununmo $p |- ( Fun ( F u. G ) -> E* y x F y ) $=
+      ( cun wfun cv wbr wmo funmo wo orc brun sylibr moimi syl ) CDEZFAGZBGZQHZ
+      BIRSCHZBIBRQJUATBUAUARSDHZKTUAUBLRSCDMNOP $.
+  $}
+
+  ${
+    $d F x y $.  $d G x y $.
+    $( If the union of classes is a function, the classes itselves are
+       functions.  (Contributed by AV, 18-Jul-2019.) $)
+    fununfun $p |- ( Fun ( F u. G ) -> ( Fun F /\ Fun G ) ) $=
+      ( vx vy wrel wa cun funrel relun sylib cv wbr wmo fununmo alrimiv anim12i
+      wfun wal dffun6 sylibr simpl simpr uncom funeqi sylbi jca mpancom ) AEZBE
+      ZFZABGZQZAQZBQZFULUKEUJUKHABIJUJULFZUMUNUOUHCKZDKZALDMZCRZFUMUJUHULUSUHUI
+      UAULURCCDABNOPCDASTUOUIUPUQBLDMZCRZFUNUJUIULVAUHUIUBULUTCULBAGZQUTUKVBABU
+      CUDCDBANUEOPCDBSTUFUG $.
+  $}
+
+  ${
+    $d A x y z $.  $d F x y z $.
+    $( A function with removed elements is still a function.  (Contributed by
+       AV, 7-Jun-2021.) $)
+    fundif $p |- ( Fun F -> Fun ( F \ A ) ) $=
+      ( vx vy vz wrel cv wbr wa weq wi wal cdif reldif wn brdif pm2.27 ad2ant2r
+      wfun dffun2 syl2anb com12 alimi 2alimi anim12i 3imtr4i ) BFZCGZDGZBHZUHEG
+      ZBHZIZDEJZKZELZDLCLZIBAMZFZUHUIURHZUHUKURHZIZUNKZELZDLCLZIBSURSUGUSUQVEBA
+      NUPVDCDUOVCEVBUOUNUTUJUHUIAHOZIULUHUKAHOZIUOUNKZVAUHUIBAPUHUKBAPUJULVHVFV
+      GUMUNQRUAUBUCUDUECDEBTCDEURTUF $.
   $}
 
   ${
@@ -52136,6 +52185,76 @@ $)
       eqid velsn rexbii abbii df-iun eqtr4di ) CDFABGABCHABAICJZKZLZABUFHZMZABC
       DNUJEIZUGFZABOZEPZUHUJUKUFQZABOZEPUNAEBUFUIUITRUMUPEULUOABEUFUAUBUCSAEBUG
       UDSUE $.
+  $}
+
+  ${
+    $d F x $.
+    $( A function is a union of singletons of ordered pairs indexed by its
+       domain.  (Contributed by AV, 18-Sep-2020.) $)
+    funiun $p |- ( Fun F -> F = U_ x e. dom F { <. x , ( F ` x ) >. } ) $=
+      ( wfun cdm cv cfv cmpt cop csn ciun wfn wceq funfn dffn5im sylbi cvv wcel
+      wral funfvex ralrimiva dfmptg syl eqtrd ) BCZBABDZAEZBFZGZAUEUFUGHIJZUDBU
+      EKBUHLBMAUEBNOUDUGPQZAUERUHUILUDUJAUEUFBSTAUEUGPUAUBUC $.
+  $}
+
+  ${
+    $d F a b c d $.  $d X a b c d $.  $d Y a b c d $.
+    funopsn.x $e |- X e. _V $.
+    funopsn.y $e |- Y e. _V $.
+    $( If a function is an ordered pair then it is a singleton of an ordered
+       pair.  (Contributed by AV, 20-Sep-2020.)  (Proof shortened by AV,
+       15-Jul-2021.)  A function is a class of ordered pairs, so the fact that
+       an ordered pair may sometimes be itself a function is an "accident"
+       depending on the specific encoding of ordered pairs as classes (in
+       set.mm, the Kuratowski encoding).  A more meaningful statement is
+       ~ funsng , as ~ relsnopg is to ~ relop .  (New usage is discouraged.) $)
+    funopsn $p |- ( ( Fun F /\ F = <. X , Y >. )
+                              -> E. a ( X = { a } /\ F = { <. a , a >. } ) ) $=
+      ( vb vc vd cv cop wcel wex wceq wa csn cvv cpr vex sylib wfun wi mpbir2an
+      opm wrel funrel ad2antrr simpr simplr eleqtrrd syl2anc dfop eqeq2i biimpi
+      elrel adantl wo wb dfsn2 simpl funeqd mpbid funopg mp3an12i preq2d eqtrid
+      elop eqeq2d orbi2d adantr mpbird eqtr3d snex zfpair2 preqsn simpld simprd
+      oridm eqtr2d 3eqtr4a sneqd opid sneqi eqtr4di eqtrd sneq id opeq12d spcev
+      anbi12d ex exlimdvv mpd expcom exlimiv ax-mp ) GJZBCKZLZGMZAUAZAWRNZOZBDJ
+      ZPZNZAXDXDKZPZNZOZDMZUBZWTBQLZCQLZEFGBCUDUCWSXLGXCWSXKXCWSOZWQHJZIJZKZNZI
+      MHMZXKXOAUEZWQALXTXAYAXBWSAUFUGXOWQWRAXCWSUHZXAXBWSUIUJHIWQAUOUKXOXSXKHIX
+      OXSXKXOXSOZBXPPZNZAXPXPKZPZNZXKYCYDXPXQRZBYCYDYINZYIBNZYCYDYIRZBPZNYJYKOY
+      CWQYLYMXSWQYLNZXOXSYNXRYLWQXPXQHSZISULUMUNUPXOWQYMNZXSXOYPYPUQZYPXOYQYPWQ
+      BCRZNZUQZXOWSYTYBWQBCGSEFVGTXCYQYTURWSXCYPYSYPXCYMYRWQXCYMBBRYRBUSXCBCBXM
+      XNXCWRUAZBCNEFXCXAUUAXAXBUTXCAWRXAXBUHZVAVBBCQQVCVDVEVFZVHVIVJVKYPVRTVJVL
+      YDYIBXPYOVMHIVNEVOTZVPYCYJYKUUDVQVSZYCAYMPZYGXCAUUFNWSXSXCWRYMYRRZAUUFBCE
+      FULUUBXCUUFYMYMRUUGYMUSXCYMYRYMUUCVEVFVTUGYCUUFYDPZPYGYCYMUUHYCBYDUUEWAWA
+      YFUUHXPYOWBWCWDWEXJYEYHODXPYOXDXPNZXFYEXIYHUUIXEYDBXDXPWFVHUUIXHYGAUUIXGY
+      FUUIXDXPXDXPUUIWGZUUJWHWAVHWJWIUKWKWLWMWNWOWP $.
+
+    $( An ordered pair is a function iff it is a singleton of an ordered pair.
+       (Contributed by AV, 20-Sep-2020.)  A function is a class of ordered
+       pairs, so the fact that an ordered pair may sometimes be itself a
+       function is an "accident" depending on the specific encoding of ordered
+       pairs as classes (in set.mm, the Kuratowski encoding).  A more
+       meaningful statement is ~ funsng , as ~ relsnopg is to ~ relop .
+       (New usage is discouraged.) $)
+    funop $p |- ( Fun <. X , Y >.
+                  <-> E. a ( X = { a } /\ <. X , Y >. = { <. a , a >. } ) ) $=
+      ( cop wfun cv csn wceq wa wex funopsn mpan2 vex funsn funeq mpbiri adantl
+      eqid exlimiv impbii ) ABFZGZACHZIJZUCUEUEFIZJZKZCLZUDUCUCJUJUCTUCABCDEMNU
+      IUDCUHUDUFUHUDUGGUEUECOZUKPUCUGQRSUAUB $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d G x $.  $d X x $.  $d Y x $.
+    funopdmsn.g $e |- G = <. X , Y >. $.
+    funopdmsn.x $e |- X e. V $.
+    funopdmsn.y $e |- Y e. W $.
+    $( The domain of a function which is an ordered pair is a singleton.
+       (Contributed by AV, 15-Nov-2021.)  (Avoid depending on this detail.) $)
+    funopdmsn $p |- ( ( Fun G /\ A e. dom G /\ B e. dom G ) -> A = B ) $=
+      ( vx wfun cdm wcel wceq csn cop wa elexi eleq2 cv wex funeqi funop eqcomi
+      wi bitri eqeq1i vex dmsnop eqtrdi anbi12d elsni eqtr3 syl2an biimtrdi syl
+      dmeq sylbi adantl exlimiv 3impib ) CLZACMZNZBVDNZABOZVCFKUAZPZOZFGQZVHVHQ
+      PZOZRZKUBZVEVFRZVGUFZVCVKLVOCVKHUCFGKFDISGEJSUDUGVNVQKVMVQVJVMCVLOZVQVKCV
+      LCVKHUEUHVRVDVIOZVQVRVDVLMVICVLURVHVHKUIUJUKVSVPAVINZBVINZRVGVSVEVTVFWAVD
+      VIATVDVIBTULVTAVHOBVHOVGWAAVHUMBVHUMABVHUNUOUPUQUSUTVAUSVB $.
   $}
 
   $( If ` A ` is not in ` C ` , then the restriction of a singleton of
@@ -65871,6 +65990,18 @@ $)
 
   ${
     $d f x y A $.  $d f x y B $.  $d y C $.
+    $( Equinumerosity relation.  This variation of ~ bren does not require the
+       Axiom of Union.  (Contributed by NM, 15-Jun-1998.)  Extract from a
+       subproof of ~ bren .  (Revised by BTernaryTau, 23-Sep-2024.) $)
+    breng $p |- ( ( A e. V /\ B e. W ) ->
+        ( A ~~ B <-> E. f f : A -1-1-onto-> B ) ) $=
+      ( vx vy cv wf1o wex cen wceq f1oeq2 exbidv f1oeq3 df-en brabg ) FHZGHZCHZ
+      IZCJASTIZCJABTIZCJFGABDEKRALUAUBCRASTMNSBLUBUCCSBATONFGCPQ $.
+    $( $j usage 'breng' avoids 'ax-un'; $)
+  $}
+
+  ${
+    $d f x y A $.  $d f x y B $.  $d y C $.
     $( Equinumerosity relation.  (Contributed by NM, 15-Jun-1998.) $)
     bren $p |- ( A ~~ B <-> E. f f : A -1-1-onto-> B ) $=
       ( vx vy cen wbr cvv wcel wa cv wf1o wex encv wfn f1ofn eqeltrrdi syl wceq
@@ -65879,6 +66010,15 @@ $)
       BUTPVCAUTUAHAUTUBUTCUCZUDQRVABUTUEZHVAABUTUFVEBSABUTUGABUTUHRUTVDUIQUJUKD
       KZEKZUTLZCMAVGUTLZCMVBDEABHHFVFASVHVICVFAVGUTULTVGBSVIVACVGBAUTUNTDECUMUO
       UP $.
+
+    $( Dominance relation.  This variation of ~ brdomg does not require the
+       Axiom of Union.  (Contributed by NM, 15-Jun-1998.)  Extract from a
+       subproof of ~ brdomg .  (Revised by BTernaryTau, 29-Nov-2024.) $)
+    brdom2g $p |- ( ( A e. V /\ B e. W ) ->
+        ( A ~<_ B <-> E. f f : A -1-1-> B ) ) $=
+      ( vx vy cv wf1 wex cdom wceq f1eq2 exbidv f1eq3 df-dom brabg ) FHZGHZCHZI
+      ZCJASTIZCJABTIZCJFGABDEKRALUAUBCRASTMNSBLUBUCCSBATONFGCPQ $.
+    $( $j usage 'brdom2g' avoids 'ax-un'; $)
 
     $( Dominance relation.  (Contributed by NM, 15-Jun-1998.) $)
     brdomg $p |- ( B e. C -> ( A ~<_ B <-> E. f f : A -1-1-> B ) ) $=
@@ -65927,6 +66067,31 @@ $)
      (Proof shortened by Jim Kingdon, 13-Mar-2023.) $)
   ctex $p |- ( A ~<_ _om -> A e. _V ) $=
     ( com cdom reldom brrelex1i ) ABCDE $.
+
+  ${
+    $d f A $.  $d f B $.  $d f F $.
+    $( The domain and range of a one-to-one, onto set function are
+       equinumerous.  This variation of ~ f1oeng does not require the Axiom of
+       Collection nor the Axiom of Union.  (Contributed by BTernaryTau,
+       7-Dec-2024.) $)
+    f1oen4g $p |- ( ( ( F e. V /\ A e. W /\ B e. X ) /\ F : A -1-1-onto-> B )
+        -> A ~~ B ) $=
+      ( vf wcel w3a wf1o wa cen wbr cv wex f1oeq1 spcegv imp 3ad2antl1 wb breng
+      3adant1 adantr mpbird ) CDHZAEHZBFHZIZABCJZKABLMZABGNZJZGOZUEUFUIUMUGUEUI
+      UMULUIGCDABUKCPQRSUHUJUMTZUIUFUGUNUEABGEFUAUBUCUD $.
+    $( $j usage 'f1oen4g' avoids 'ax-coll' 'ax-un'; $)
+
+    $( The domain of a one-to-one set function is dominated by its codomain
+       when the latter is a set.  This variation of ~ f1domg does not require
+       the Axiom of Collection nor the Axiom of Union.  (Contributed by
+       BTernaryTau, 7-Dec-2024.) $)
+    f1dom4g $p |- ( ( ( F e. V /\ A e. W /\ B e. X ) /\ F : A -1-1-> B )
+        -> A ~<_ B ) $=
+      ( vf wcel w3a wf1 wa cdom wbr cv wex f1eq1 spcegv imp 3ad2antl1 wb adantr
+      brdom2g 3adant1 mpbird ) CDHZAEHZBFHZIZABCJZKABLMZABGNZJZGOZUEUFUIUMUGUEU
+      IUMULUIGCDABUKCPQRSUHUJUMTZUIUFUGUNUEABGEFUBUCUAUD $.
+    $( $j usage 'f1dom4g' avoids 'ax-coll' 'ax-un'; $)
+  $}
 
   ${
     $d f A $.  $d f B $.  $d f F $.
@@ -66161,6 +66326,18 @@ $)
       ( vx vy cid cen reli cv wbr cop wcel weq vex ideq eqeng ax-mp sylbi df-br
       cvv wi 3imtr3i relssi ) ABCDEAFZBFZCGZUAUBDGZUAUBHZCIUEDIUCABJZUDUAUBBKLU
       AQIUFUDRAKUAUBQMNOUAUBCPUAUBDPST $.
+  $}
+
+  ${
+    $d A f $.  $d B f $.  $d C f $.  $d V f $.
+    $( If ` C ` is a superset of ` B ` and ` B ` dominates ` A ` , then ` C `
+       also dominates ` A ` .  (Contributed by BTernaryTau, 7-Dec-2024.) $)
+    domssr $p |- ( ( C e. V /\ B C_ C /\ A ~<_ B ) -> A ~<_ C ) $=
+      ( vf wcel wss cdom wbr w3a cv wf1 wex cvv wa brdomi 3ad2ant3 simp2 reldom
+      brrelex1i simp1 jca32 wi f1ss vex f1dom4g mp3anl1 sylan expl exlimiv sylc
+      ancoms ) CDFZBCGZABHIZJZABEKZLZEMZUNANFZUMOZOZACHIZUOUMUSUNABEPQUPUNUTUMU
+      MUNUORUOUMUTUNABHSTQUMUNUOUAUBURVBVCUCEURUNVAVCURUNOACUQLZVAVCABCUQUDVAVD
+      VCUQNFUTUMVDVCEUEACUQNNDUFUGULUHUIUJUK $.
   $}
 
   $( A set dominates its subsets.  Theorem 16 of [Suppes] p. 94.  (Contributed
@@ -66525,6 +66702,39 @@ $)
   $}
 
   ${
+    $d A f $.  $d B f $.  $d C f $.  $d D f $.
+    en2prd.1 $e |- ( ph -> A e. V ) $.
+    en2prd.2 $e |- ( ph -> B e. W ) $.
+    en2prd.3 $e |- ( ph -> C e. X ) $.
+    en2prd.4 $e |- ( ph -> D e. Y ) $.
+    en2prd.5 $e |- ( ph -> A =/= B ) $.
+    en2prd.6 $e |- ( ph -> C =/= D ) $.
+    $( Two proper unordered pairs are equinumerous.  (Contributed by
+       BTernaryTau, 23-Dec-2024.) $)
+    en2prd $p |- ( ph -> { A , B } ~~ { C , D } ) $=
+      ( vf cpr cvv wcel syl2anc cen wbr cv wex cop opexg prexg wne wa wi f1oprg
+      wf1o syl22anc mp2and f1oeq1 elabd wb breng mpbird ) ABCQZDEQZUAUBZUTVAPUC
+      ZULZPUDZAVDUTVABDUEZCEUEZQZULZPVHAVFRSZVGRSZVHRSABFSZDHSZVJJLBDFHUFTACGSZ
+      EISZVKKMCEGIUFTVFVGRRUGTABCUHZDEUHZVINOAVLVMVNVOVPVQUIVIUJJLKMBDCEFHGIUKU
+      MUNUTVAVCVHUOUPAUTRSZVARSZVBVEUQAVLVNVRJKBCFGUGTAVMVOVSLMDEHIUGTUTVAPRRUR
+      TUS $.
+    $( $j usage 'en2prd' avoids 'ax-un'; $)
+  $}
+
+  ${
+    $d A x y $.
+    $( A set that has at least 2 different members dominates ordinal 2.
+       (Contributed by BTernaryTau, 30-Dec-2024.) $)
+    rex2dom $p |- ( ( A e. V /\ E. x e. A E. y e. A x =/= y ) -> 2o ~<_ A ) $=
+      ( wcel cv wne wrex c2o cdom wbr cvv wi cpr cen c0 c1o a1i vex syl elex wa
+      wss prssi df2o3 0ex 1oex 1n0 necomi en2prd eqbrtrid domssr 3expib syl2ani
+      id endom expd rexlimdvv imp ) CDEZAFZBFZGZBCHACHZICJKZUTCLEZVDVEMCDUAVFVC
+      VEABCCVFVACEVBCEUBZVCVEVGVFVAVBNZCUCZIVHJKZVEVCVAVBCUDVCIVHOKVJVCIPQNVHOU
+      EVCPQVAVBLLLLPLEVCUFRQLEVCUGRVALEVCASRVBLEVCBSRPQGVCQPUHUIRVCUOUJUKIVHUPT
+      VFVIVJVEIVHCLULUMUNUQURTUS $.
+  $}
+
+  ${
     enpr2d.1 $e |- ( ph -> A e. C ) $.
     enpr2d.2 $e |- ( ph -> B e. D ) $.
     enpr2d.3 $e |- ( ph -> -. A = B ) $.
@@ -66536,6 +66746,23 @@ $)
       unen df-suc 3brtr4g df-2o breqtrrdi ) ABCUAZIUBZUEJABKZCKZLZIIKZLZVBVCJAV
       DIJMZVEVGJMZVDVENOPZIVGNOPZVFVHJMABDQVIFBDUCRACEQISQVJGTCIESUDUFABCUGVKAB
       CHUHBCUIRAIIQUJZVLVMAITUKULIIUMUNVDIVEVGUQUOBCUPIURUSUTVA $.
+  $}
+
+  ${
+    $d A f x y $.
+    $( A set equinumerous to ordinal 2 is an unordered pair.  (Contributed by
+       Mario Carneiro, 5-Jan-2016.) $)
+    en2 $p |- ( A ~~ 2o -> E. x E. y A = { x , y } ) $=
+      ( vf c2o cv wf1o cpr wceq wex cfv c1o cima wfn adantl wcel syl 0lt2o a1i
+      c0 cen wbr bren biimpi ccnv cdm crn cnvimarndm wfun dff1o2 simp3bi eqtrdi
+      wa df2o3 imaeq2d eqtr3id f1odm f1ocnv f1ofn 1lt2o fnimapr syl3anc 3eqtr3d
+      simpr f1ocnvdm sylancl wi preq2 eqeq2d spcegv exbidv sylsyld mpd exlimddv
+      preq1 ) CEUAUBZCEDFZGZCAFZBFZHZIZBJZAJZDVPVRDJCEDUCUDVPVRUMZCTVQUEZKZLWFK
+      ZHZIZWDWEVQUFZWFTLHZMZCWIWEWKWFVQUGZMZWMVQUHVRWOWMIVPVRWNWLWFVRWNEWLVRVQC
+      NWFUIWNEICEVQUJUKUNULUOOUPVRWKCIVPCEVQUQOWEWFENZTEPZLEPZWMWIIWEECWFGZWPVR
+      WSVPCEVQUROECWFUSQWQWERSWRWEUTSETLWFVAVBVCWEWGCPZWJCWGVTHZIZBJZWDWEVRWQWT
+      VPVRVDZRCETVQVEVFWEWHCPZWJXCVGWEVRWRXEXDUTCELVQVEVFXBWJBWHCVTWHIXAWICVTWH
+      WGVHVIVJQWCXCAWGCVSWGIZWBXBBXFWAXACVSWGVTVOVIVKVJVLVMVN $.
   $}
 
   $( A subset of a set dominated by ` _om ` is dominated by ` _om ` .
@@ -115993,6 +116220,108 @@ $)
 
 
 $(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Proper unordered pairs and triples (sets of size 2 and 3)
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  ${
+    $( Two equivalent ways to say a set has two elements.  (Contributed by Jim
+       Kingdon, 4-Dec-2025.) $)
+    hash2en $p |- ( V ~~ 2o <-> ( V e. Fin /\ ( # ` V ) = 2 ) ) $=
+      ( c2o cen wbr cfn wcel chash cfv c2 wceq wa com 2onn nnfi ax-mp mpbiri wb
+      enfi sylancl hash2 hashen ibir eqtrdi simpr eqtr4di simpl mpbid impbii
+      jca ) ABCDZAEFZAGHZIJZKZUJUKUMUJUKBEFZBLFUOMBNOZABRPZUJULBGHZIUJULURJZUJU
+      KUOUSUJQZUQUPABUAZSUBTUCUIUNUSUJUNULIURUKUMUDTUEUNUKUOUTUKUMUFUPVASUGUH
+      $.
+  $}
+
+  ${
+    $d A a b $.  $d B b $.  $d F a b $.
+    hashdmpropge2.a $e |- ( ph -> A e. V ) $.
+    hashdmpropge2.b $e |- ( ph -> B e. W ) $.
+    hashdmpropge2.c $e |- ( ph -> C e. X ) $.
+    hashdmpropge2.d $e |- ( ph -> D e. Y ) $.
+    hashdmpropge2.f $e |- ( ph -> F e. Z ) $.
+    hashdmpropge2.n $e |- ( ph -> A =/= B ) $.
+    hashdmpropge2.s $e |- ( ph -> { <. A , C >. , <. B , D >. } C_ F ) $.
+    $( A class which contains two ordered pairs with different first components
+       has at least two elements.  (Contributed by AV, 12-Nov-2021.) $)
+    hashdmprop2dom $p |- ( ph -> 2o ~<_ dom F ) $=
+      ( va wcel vb cdm cvv wne wrex c2o cdom wbr dmexd cpr wss cop wceq dmpropg
+      cv wa syl2anc dmss syl eqsstrrd wb prssg mpbird simpld simprd neeq1 neeq2
+      rspc2ev syl3anc rex2dom ) AFUBZUCTSUOZUAUOZUDZUAVKUESVKUEZUFVKUGUHAFKPUIA
+      BVKTZCVKTZBCUDZVOAVPVQAVPVQUPZBCUJZVKUKZAVTBDULCEULUJZUBZVKADITEJTWCVTUMN
+      OBDCEIJUNUQAWBFUKWCVKUKRWBFURUSUTABGTCHTVSWAVALMBCVKGHVBUQVCZVDAVPVQWDVEQ
+      VNVRBVMUDSUABCVKVKVLBVMVFVMCBVGVHVISUAVKUCVJUQ $.
+  $}
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Functions with a domain containing at least two different elements
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  ${
+    $d G a b x y $.
+    $( A function with a domain containing (at least) two different elements is
+       not an ordered pair.  This theorem (which requires that
+       ` ( G \ { (/) } ) ` needs to be a function instead of ` G ` ) is useful
+       for proofs for extensible structures, see ~ structn0fun .  (Contributed
+       by AV, 12-Oct-2020.)  (Revised by AV, 7-Jun-2021.)  (Proof shortened by
+       AV, 15-Nov-2021.) $)
+    fundm2domnop0 $p |- ( ( Fun ( G \ { (/) } ) /\ 2o ~<_ dom G )
+                        -> -. G e. ( _V X. _V ) ) $=
+      ( va vb vx vy cdm cdif wfun cvv wcel wn cv wceq wrex wi wa wex eleq2d vex
+      com23 c2o cdom wbr c0 csn cxp 2dom elvv difeq1 funeqd opwo0id eqcomi dmeq
+      cop funeqi anbi12d eqid funopdmsn expcom biimtrdi biimtrid sylbid impcomd
+      3expb exlimivv com12 con3d ex rexlimivv syl impcom ) UAAFZUBUCZAUDUEZGZHZ
+      AIIUFJZKZVMBLZCLZMZKZCVLNBVLNVPVROZBCVLUGWBWCBCVLVLVSVLJZVTVLJZPZVPWBVRWF
+      VPWBVROWFVPPZVQWAVQADLZELZUNZMZEQDQZWGWADEAUHWLWGWAWKWGWAODEWKVPWFWAWKVPW
+      JVNGZHZWFWAOZWKVOWMAWJVNUIUJWNWJHZWKWOWMWJWJWMWHWIUKULUOWKWFWPWAWKWFVSWJF
+      ZJZVTWQJZPZWPWAOWKWDWRWEWSWKVLWQVSAWJUMZRWKVLWQVTXARUPWPWTWAWPWRWSWAVSVTW
+      JIIWHWIWJUQDSESURVDUSUTTVAVBVCVEVFVAVGVHTVIVJVK $.
+
+    $( A function with a domain containing (at least) two different elements is
+       not an ordered pair.  (Contributed by AV, 12-Oct-2020.)  (Proof
+       shortened by AV, 9-Jun-2021.) $)
+    fundm2domnop $p |- ( ( Fun G /\ 2o ~<_ dom G )
+                        -> -. G e. ( _V X. _V ) ) $=
+      ( wfun c0 csn cdif c2o cdm cdom wbr cvv cxp wn fundif fundm2domnop0 sylan
+      wcel ) ABACDZEBFAGHIAJJKPLQAMANO $.
+  $}
+
+  ${
+    $d A a b $.  $d B b $.  $d G a b $.
+    fun2dmnop.a $e |- A e. _V $.
+    fun2dmnop.b $e |- B e. _V $.
+    $( A function with a domain containing (at least) two different elements is
+       not an ordered pair.  This stronger version of ~ fun2dmnop (with the
+       less restrictive requirement that ` ( G \ { (/) } ) ` needs to be a
+       function instead of ` G ` ) is useful for proofs for extensible
+       structures, see ~ structn0fun .  (Contributed by AV, 21-Sep-2020.)
+       (Revised by AV, 7-Jun-2021.) $)
+    fun2dmnop0 $p |- ( ( Fun ( G \ { (/) } ) /\ A =/= B /\ { A , B } C_ dom G )
+                      -> -. G e. ( _V X. _V ) ) $=
+      ( va vb c0 csn cdif wfun wne cpr cdm cvv wcel cv wrex a1i sseldd wss cdom
+      w3a cxp wa c2o wbr wn simpl1 dmexg simpl3 prid1 prid2 neeq1 neeq2 rspc2ev
+      simpl2 syl3anc rex2dom syl2an2 fundm2domnop0 syl2anc pm2.01da ) CHIJKZABL
+      ZABMZCNZUAZUCZCOOUDZPZVIVKUEZVDUFVGUBUGZVKUHVDVEVHVKUIVKVGOPVIFQZGQZLZGVG
+      RFVGRZVMCVJUJVLAVGPBVGPVEVQVLVFVGAVDVEVHVKUKZAVFPVLABDULSTVLVFVGBVRBVFPVL
+      ABEUMSTVDVEVHVKUQVPVEAVOLFGABVGVGVNAVOUNVOBAUOUPURFGVGOUSUTCVAVBVC $.
+
+    $( A function with a domain containing (at least) two different elements is
+       not an ordered pair.  (Contributed by AV, 21-Sep-2020.)  (Proof
+       shortened by AV, 9-Jun-2021.) $)
+    fun2dmnop $p |- ( ( Fun G /\ A =/= B /\ { A , B } C_ dom G )
+                      -> -. G e. ( _V X. _V ) ) $=
+      ( wfun c0 csn cdif wne cpr cdm wss cvv cxp wcel fundif fun2dmnop0 syl3an1
+      wn ) CFCGHZIFABJABKCLMCNNOPTUACQABCDERS $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Words over a set
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -148184,12 +148513,26 @@ $)
   $}
 
   ${
+    2strndx.g $e |- G = { <. ( Base ` ndx ) , B >. , <. N , .+ >. } $.
+    2strndx.b $e |- ( Base ` ndx ) < N $.
+    2strndx.n $e |- N e. NN $.
+    $( A constructed two-slot structure not depending on the hard-coded index
+       value of the base set.  (Contributed by Mario Carneiro, 29-Aug-2015.)
+       (Revised by Jim Kingdon, 14-Dec-2025.) $)
+    2strstrndx $p |- ( ( B e. V /\ .+ e. W )
+        -> G Struct <. ( Base ` ndx ) , N >. ) $=
+      ( wcel wa cnx cbs cfv cop cpr cstr basendxnn eqid strle2g eqbrtrid ) AEJB
+      FJKCLMNZAODBOPUBDOQGUBDUBDEFABRUBSHIDSTUA $.
+  $}
+
+  ${
     2str.g $e |- G = { <. ( Base ` ndx ) , B >. , <. ( E ` ndx ) , .+ >. } $.
     2str.e $e |- E = Slot N $.
     2str.l $e |- 1 < N $.
     2str.n $e |- N e. NN $.
     $( A constructed two-slot structure.  (Contributed by Mario Carneiro,
-       29-Aug-2015.)  (Revised by Jim Kingdon, 28-Jan-2023.) $)
+       29-Aug-2015.)  (Revised by Jim Kingdon, 28-Jan-2023.)  Use ~ 2strstrndx
+       instead.  (New usage is discouraged.) $)
     2strstrg $p |- ( ( B e. V /\ .+ e. W ) -> G Struct <. 1 , N >. ) $=
       ( wcel wa cnx cbs cfv cop cpr c1 cstr 1nn basendx ndxarg strle2g eqbrtrid
       ) AFLBGLMDNOPZAQNCPZBQRSEQTHUFUGSEFGABUAUBJKCEIKUCUDUE $.
@@ -190264,6 +190607,502 @@ $)
 
 $(
 ###############################################################################
+  GRAPH THEORY
+###############################################################################
+$)
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Vertices and edges
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  The edge function extractor for extensible structures
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c .ef $.
+
+  $( Extend class notation with an edge function. $)
+  cedgf $a class .ef $.
+
+  $( Define the edge function (indexed edges) of a graph.  (Contributed by AV,
+     18-Jan-2020.)  Use its index-independent form ~ edgfid instead.
+     (New usage is discouraged.) $)
+  df-edgf $a |- .ef = Slot ; 1 8 $.
+
+  $( Utility theorem: index-independent form of ~ df-edgf .  (Contributed by
+     AV, 16-Nov-2021.) $)
+  edgfid $p |- .ef = Slot ( .ef ` ndx ) $=
+    ( cedgf c1 c8 cdc df-edgf 1nn0 8nn decnncl ndxid ) ABCDEBCFGHI $.
+
+  $( Index value of the ~ df-edgf slot.  (Contributed by AV, 13-Oct-2024.)
+     (New usage is discouraged.) $)
+  edgfndx $p |- ( .ef ` ndx ) = ; 1 8 $=
+    ( cedgf c1 c8 cdc df-edgf 1nn0 8nn decnncl ndxarg ) ABCDEBCFGHI $.
+
+  $( The index value of the edge function extractor is a positive integer.
+     This property should be ensured for every concrete coding because
+     otherwise it could not be used in an extensible structure (slots must be
+     positive integers).  (Contributed by AV, 21-Sep-2020.)  (Proof shortened
+     by AV, 13-Oct-2024.) $)
+  edgfndxnn $p |- ( .ef ` ndx ) e. NN $=
+    ( cnx cedgf cfv c1 c8 cdc cn edgfndx 1nn0 8nn decnncl eqeltri ) ABCDEFGHDEI
+    JKL $.
+
+  $( The value of the edge function extractor is the value of the corresponding
+     slot of the structure.  (Contributed by AV, 21-Sep-2020.)  (Proof
+     shortened by AV, 28-Oct-2024.) $)
+  edgfndxid $p |- ( G e. V -> ( .ef ` G ) = ( G ` ( .ef ` ndx ) ) ) $=
+    ( wcel cedgf cnx cfv edgfid id cn edgfndxnn a1i strnfvnd ) ABCZADEDFZBGMHNI
+    CMJKL $.
+
+  $( The index value of the ` Base ` slot is less than the index value of the
+     ` .ef ` slot.  (Contributed by AV, 21-Sep-2020.)  (Proof shortened by AV,
+     30-Oct-2024.) $)
+  basendxltedgfndx $p |- ( Base ` ndx ) < ( .ef ` ndx ) $=
+    ( c1 cdc cnx cbs cfv cedgf clt 1nn 8nn0 1nn0 declti basendx edgfndx 3brtr4i
+    c8 1lt10 ) AAOBCDECFEGAOAHIJPKLMN $.
+
+  $( The slots ` Base ` and ` .ef ` are different.  (Contributed by AV,
+     21-Sep-2020.) $)
+  basendxnedgfndx $p |- ( Base ` ndx ) =/= ( .ef ` ndx ) $=
+    ( cnx cbs cfv cedgf basendxnn nnrei basendxltedgfndx ltneii ) ABCZADCIEFGH
+    $.
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Vertices and indexed edges
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Definitions and basic properties
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $c Vtx iEdg $.
+
+  $( Extend class notation with the vertices of "graphs". $)
+  cvtx $a class Vtx $.
+
+  $( Extend class notation with the indexed edges of "graphs". $)
+  ciedg $a class iEdg $.
+
+  $( Define the function mapping a graph to the set of its vertices.  This
+     definition is very general:  It defines the set of vertices for any
+     ordered pair as its first component, and for any other class as its "base
+     set".  It is meaningful, however, only if the ordered pair represents a
+     graph resp. the class is an extensible structure representing a graph.
+     (Contributed by AV, 9-Jan-2020.)  (Revised by AV, 20-Sep-2020.) $)
+  df-vtx $a |- Vtx = ( g e. _V |-> if ( g e. ( _V X. _V ) ,
+                                        ( 1st ` g ) , ( Base ` g ) ) ) $.
+
+  $( Define the function mapping a graph to its indexed edges.  This definition
+     is very general:  It defines the indexed edges for any ordered pair as its
+     second component, and for any other class as its "edge function".  It is
+     meaningful, however, only if the ordered pair represents a graph resp. the
+     class is an extensible structure (containing a slot for "edge functions")
+     representing a graph.  (Contributed by AV, 20-Sep-2020.) $)
+  df-iedg $a |- iEdg = ( g e. _V |-> if ( g e. ( _V X. _V ) ,
+                                               ( 2nd ` g ) , ( .ef ` g ) ) ) $.
+
+  ${
+    $d G g $.
+    $( The set of vertices of a graph.  (Contributed by AV, 9-Jan-2020.)
+       (Revised by AV, 21-Sep-2020.) $)
+    vtxvalg $p |- ( G e. V -> ( Vtx ` G ) = if ( G e. ( _V X. _V ) ,
+                                    ( 1st ` G ) , ( Base ` G ) ) ) $=
+      ( vg wcel cvv cxp c1st cfv cbs cif cvtx df-vtx wceq eleq1 fveq2 ifbieq12d
+      cv elex 1stexg wfn basfn funfvex funfni sylancr ifexd fvmptd3 ) ABDZCACQZ
+      EEFZDZUHGHZUHIHZJAUIDZAGHZAIHZJEKECLUHAMUJUMUKULUNUOUHAUINUHAGOUHAIOPABRZ
+      UGUMUNUOEEABSUGIETAEDUOEDZUAUPUQEAIAIUBUCUDUEUF $.
+
+    $( The set of indexed edges of a graph.  (Contributed by AV,
+       21-Sep-2020.) $)
+    iedgvalg $p |- ( G e. V -> ( iEdg ` G ) = if ( G e. ( _V X. _V ) ,
+                                      ( 2nd ` G ) , ( .ef ` G ) ) ) $=
+      ( vg wcel cvv cxp c2nd cfv cedgf ciedg df-iedg wceq eleq1 fveq2 ifbieq12d
+      cv cif elex 2ndexg cnx edgfid edgfndxnn ndxslid slotex ifexd fvmptd3 ) AB
+      DZCACPZEEFZDZUHGHZUHIHZQAUIDZAGHZAIHZQEJECKUHALUJUMUKULUNUOUHAUIMUHAGNUHA
+      INOABRUGUMUNUOEEABSAIBITIHUAUBUCUDUEUF $.
+  $}
+
+  ${
+    1vgrex.v $e |- V = ( Vtx ` G ) $.
+    $( A graph with at least one vertex is a set.  (Contributed by AV,
+       2-Mar-2021.) $)
+    1vgrex $p |- ( N e. V -> G e. _V ) $=
+      ( vg wcel cvtx cdm cfv wrel wfun cvv cv cxp cbs cif df-vtx funmpt2 funrel
+      c1st ax-mp relelfvdm mpan eleq2s elexd ) BCFAGHZAUFFZBAGIZCGJZBUHFUGGKUIE
+      LEMZLLNFUJTIUJOIPGEQRGSUABAGUBUCDUDUE $.
+  $}
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  The vertices and edges of a graph represented as ordered pair
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $( The set of vertices of a graph represented as an ordered pair of vertices
+     and indexed edges.  (Contributed by AV, 9-Jan-2020.)  (Revised by AV,
+     21-Sep-2020.) $)
+  opvtxval $p |- ( G e. ( _V X. _V ) -> ( Vtx ` G ) = ( 1st ` G ) ) $=
+    ( cvv cxp wcel cvtx cfv c1st cbs cif vtxvalg iftrue eqtrd ) ABBCZDZAEFNAGFZ
+    AHFZIOAMJNOPKL $.
+
+  $( The set of vertices of a graph represented as an ordered pair of vertices
+     and indexed edges as function value.  (Contributed by AV, 21-Sep-2020.) $)
+  opvtxfv $p |- ( ( V e. X /\ E e. Y ) -> ( Vtx ` <. V , E >. ) = V ) $=
+    ( wcel wa cop cvtx cfv c1st cvv cxp wceq opelvvg opvtxval syl op1stg eqtrd
+    ) BCEADEFZBAGZHIZTJIZBSTKKLEUAUBMBACDNTOPBACDQR $.
+
+  $( The set of vertices of a graph represented as an ordered pair of vertices
+     and indexed edges as operation value.  (Contributed by AV,
+     21-Sep-2020.) $)
+  opvtxov $p |- ( ( V e. X /\ E e. Y ) -> ( V Vtx E ) = V ) $=
+    ( wcel wa cvtx co cop cfv df-ov opvtxfv eqtrid ) BCEADEFBAGHBAIGJBBAGKABCDL
+    M $.
+
+  $( The set of indexed edges of a graph represented as an ordered pair of
+     vertices and indexed edges.  (Contributed by AV, 21-Sep-2020.) $)
+  opiedgval $p |- ( G e. ( _V X. _V ) -> ( iEdg ` G ) = ( 2nd ` G ) ) $=
+    ( cvv cxp wcel ciedg cfv c2nd cedgf cif iedgvalg iftrue eqtrd ) ABBCZDZAEFN
+    AGFZAHFZIOAMJNOPKL $.
+
+  $( The set of indexed edges of a graph represented as an ordered pair of
+     vertices and indexed edges as function value.  (Contributed by AV,
+     21-Sep-2020.) $)
+  opiedgfv $p |- ( ( V e. X /\ E e. Y ) -> ( iEdg ` <. V , E >. ) = E ) $=
+    ( wcel cop ciedg cfv c2nd cvv cxp wceq opelvvg opiedgval syl op2ndg eqtrd
+    wa ) BCEADERZBAFZGHZTIHZASTJJKEUAUBLBACDMTNOBACDPQ $.
+
+  $( The set of indexed edges of a graph represented as an ordered pair of
+     vertices and indexed edges as operation value.  (Contributed by AV,
+     21-Sep-2020.) $)
+  opiedgov $p |- ( ( V e. X /\ E e. Y ) -> ( V iEdg E ) = E ) $=
+    ( wcel wa ciedg co cop cfv df-ov opiedgfv eqtrid ) BCEADEFBAGHBAIGJABAGKABC
+    DLM $.
+
+  ${
+    opvtxfvi.v $e |- V e. _V $.
+    opvtxfvi.e $e |- E e. _V $.
+    $( The set of vertices of a graph represented as an ordered pair of
+       vertices and indexed edges as function value.  (Contributed by AV,
+       4-Mar-2021.) $)
+    opvtxfvi $p |- ( Vtx ` <. V , E >. ) = V $=
+      ( cvv wcel cop cvtx cfv wceq opvtxfv mp2an ) BEFAEFBAGHIBJCDABEEKL $.
+
+    $( The set of indexed edges of a graph represented as an ordered pair of
+       vertices and indexed edges as function value.  (Contributed by AV,
+       4-Mar-2021.) $)
+    opiedgfvi $p |- ( iEdg ` <. V , E >. ) = E $=
+      ( cvv wcel cop ciedg cfv wceq opiedgfv mp2an ) BEFAEFBAGHIAJCDABEEKL $.
+  $}
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  The vertices and edges of a graph represented as extensible structure
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $( The set of vertices of an extensible structure with (at least) two slots.
+     (Contributed by AV, 12-Oct-2020.)  (Revised by Jim Kingdon,
+     11-Dec-2025.) $)
+  funvtxdm2domval $p |- ( ( G e. V /\ Fun ( G \ { (/) } ) /\ 2o ~<_ dom G )
+                         -> ( Vtx ` G ) = ( Base ` G ) ) $=
+    ( wcel c0 csn cdif wfun c2o cdm cdom wbr w3a cvtx cfv cvv cxp c1st cbs wceq
+    cif vtxvalg 3ad2ant1 wa fundm2domnop0 iffalsed 3adant1 eqtrd ) ABCZADEFGZHA
+    IJKZLAMNZAOOPCZAQNZARNZTZUNUHUIUKUOSUJABUAUBUIUJUOUNSUHUIUJUCULUMUNAUDUEUFU
+    G $.
+
+  $( The set of indexed edges of an extensible structure with (at least) two
+     slots.  (Contributed by AV, 12-Oct-2020.)  (Revised by Jim Kingdon,
+     11-Dec-2025.) $)
+  funiedgdm2domval $p |- ( ( G e. V /\ Fun ( G \ { (/) } ) /\ 2o ~<_ dom G )
+                          -> ( iEdg ` G ) = ( .ef ` G ) ) $=
+    ( wcel csn cdif wfun c2o cdm cdom wbr w3a ciedg cfv cvv cxp c2nd cedgf wceq
+    c0 cif iedgvalg 3ad2ant1 wa fundm2domnop0 iffalsed 3adant1 eqtrd ) ABCZASDE
+    FZGAHIJZKALMZANNOCZAPMZAQMZTZUNUHUIUKUORUJABUAUBUIUJUOUNRUHUIUJUCULUMUNAUDU
+    EUFUG $.
+
+  ${
+    funvtxdm2val.a $e |- A e. _V $.
+    funvtxdm2val.b $e |- B e. _V $.
+    funvtxdm2vald.g $e |- ( ph -> G e. X ) $.
+    funvtxdm2vald.fun $e |- ( ph -> Fun ( G \ { (/) } ) ) $.
+    funvtxdm2vald.ne $e |- ( ph -> A =/= B ) $.
+    funvtxdm2vald.dm $e |- ( ph -> { A , B } C_ dom G ) $.
+    $( The set of vertices of an extensible structure with (at least) two
+       slots.  (Contributed by AV, 22-Sep-2020.)  (Revised by Jim Kingdon,
+       11-Dec-2025.) $)
+    funvtxdm2vald $p |- ( ph -> ( Vtx ` G ) = ( Base ` G ) ) $=
+      ( cvtx cfv cvv cxp wcel c1st cbs cif wceq vtxvalg syl c0 csn cdif wne cpr
+      wfun cdm wss wn fun2dmnop0 syl3anc iffalsed eqtrd ) ADLMZDNNOPZDQMZDRMZSZ
+      USADEPUPUTTHDEUAUBAUQURUSADUCUDUEUHBCUFBCUGDUIUJUQUKIJKBCDFGULUMUNUO $.
+
+    $( The set of indexed edges of an extensible structure with (at least) two
+       slots.  (Contributed by AV, 22-Sep-2020.)  (Revised by Jim Kingdon,
+       12-Dec-2025.) $)
+    funiedgdm2vald $p |- ( ph -> ( iEdg ` G ) = ( .ef ` G ) ) $=
+      ( ciedg cfv cvv cxp wcel c2nd cedgf cif wceq iedgvalg syl c0 csn cdif wne
+      wfun cpr cdm wss wn fun2dmnop0 syl3anc iffalsed eqtrd ) ADLMZDNNOPZDQMZDR
+      MZSZUSADEPUPUTTHDEUAUBAUQURUSADUCUDUEUGBCUFBCUHDUIUJUQUKIJKBCDFGULUMUNUO
+      $.
+  $}
+
+  ${
+    funvtxval0.s $e |- S e. _V $.
+    funvtxval0d.g $e |- ( ph -> G e. V ) $.
+    funvtxval0d.fun $e |- ( ph -> Fun ( G \ { (/) } ) ) $.
+    funvtxval0d.ne $e |- ( ph -> S =/= ( Base ` ndx ) ) $.
+    funvtxval0d.dm $e |- ( ph -> { ( Base ` ndx ) , S } C_ dom G ) $.
+    $( The set of vertices of an extensible structure with a base set and (at
+       least) another slot.  (Contributed by AV, 22-Sep-2020.)  (Revised by AV,
+       7-Jun-2021.)  (Revised by AV, 12-Nov-2021.) $)
+    funvtxval0d $p |- ( ph -> ( Vtx ` G ) = ( Base ` G ) ) $=
+      ( cnx cbs cfv cn basendxnn elexi necomd funvtxdm2vald ) AJKLZBCDRMNOEFGAB
+      RHPIQ $.
+  $}
+
+  ${
+    basvtxval.s $e |- ( ph -> G Struct X ) $.
+    basvtxval2dom.d $e |- ( ph -> 2o ~<_ dom G ) $.
+    ${
+      basvtxval.v $e |- ( ph -> V e. Y ) $.
+      basvtxval.b $e |- ( ph -> <. ( Base ` ndx ) , V >. e. G ) $.
+      $( The set of vertices of a graph represented as an extensible structure
+         with the set of vertices as base set.  (Contributed by AV,
+         14-Oct-2020.)  (Revised by AV, 12-Nov-2021.) $)
+      basvtxval2dom $p |- ( ph -> ( Vtx ` G ) = V ) $=
+        ( cvtx cfv cbs cvv wcel c0 csn cdif wfun wbr syl c2o cdm cdom wceq cstr
+        structex structn0fun funvtxdm2domval syl3anc opelstrbas eqtr4d ) ABJKZB
+        LKZCABMNZBOPQRZUABUBUCSULUMUDABDUESZUNFBDUFTAUPUOFBDUGTGBMUHUIABCDEFHIU
+        JUK $.
+    $}
+
+    edgfiedgval.e $e |- ( ph -> E e. Y ) $.
+    edgfiedgval.f $e |- ( ph -> <. ( .ef ` ndx ) , E >. e. G ) $.
+    $( The set of indexed edges of a graph represented as an extensible
+       structure with the indexed edges in the slot for edge functions.
+       (Contributed by AV, 14-Oct-2020.)  (Revised by AV, 12-Nov-2021.) $)
+    edgfiedgval2dom $p |- ( ph -> ( iEdg ` G ) = E ) $=
+      ( ciedg cfv cedgf cvv wcel c0 csn cdif wfun wbr syl c2o cdm cdom structex
+      wceq cstr structn0fun funiedgdm2domval syl3anc edgfid edgfndxnn opelstrsl
+      cnx ndxslid eqtr4d ) ACJKZCLKZBACMNZCOPQRZUACUBUCSUPUQUEACDUFSZURFCDUDTAU
+      TUSFCDUGTGCMUHUIACLBDELUMLKUJUKUNFHIULUO $.
+  $}
+
+  $( The set of vertices of a graph represented as an extensible structure with
+     vertices as base set and indexed edges.  (Contributed by AV, 22-Sep-2020.)
+     (Revised by AV, 7-Jun-2021.)  (Revised by AV, 12-Nov-2021.) $)
+  funvtxvalg $p |- ( ( G e. V
+                      /\ Fun ( G \ { (/) } )
+                      /\ { ( Base ` ndx ) , ( .ef ` ndx ) } C_ dom G )
+                    -> ( Vtx ` G ) = ( Base ` G ) ) $=
+    ( wcel c0 csn cdif cnx cbs cfv cedgf cpr cdm wss w3a cn basendxnn edgfndxnn
+    wfun elexi simp1 simp2 wne basendxnedgfndx a1i simp3 funvtxdm2vald ) ABCZAD
+    EFRZGHIZGJIZKALMZNZUIUJABUIOPSUJOQSUGUHUKTUGUHUKUAUIUJUBULUCUDUGUHUKUEUF $.
+
+  $( The set of indexed edges of a graph represented as an extensible structure
+     with vertices as base set and indexed edges.  (Contributed by AV,
+     21-Sep-2020.)  (Revised by AV, 7-Jun-2021.)  (Revised by AV,
+     12-Nov-2021.) $)
+  funiedgvalg $p |- ( ( G e. V
+                       /\ Fun ( G \ { (/) } )
+                       /\ { ( Base ` ndx ) , ( .ef ` ndx ) } C_ dom G )
+                     -> ( iEdg ` G ) = ( .ef ` G ) ) $=
+    ( wcel c0 csn cdif cnx cbs cfv cedgf cpr cdm wss w3a cn basendxnn edgfndxnn
+    wfun elexi simp1 simp2 wne basendxnedgfndx a1i simp3 funiedgdm2vald ) ABCZA
+    DEFRZGHIZGJIZKALMZNZUIUJABUIOPSUJOQSUGUHUKTUGUHUKUAUIUJUBULUCUDUGUHUKUEUF
+    $.
+
+  ${
+    structvtxvallem.s $e |- S e. NN $.
+    structvtxvallem.b $e |- ( Base ` ndx ) < S $.
+    structvtxvallem.g $e |- G = { <. ( Base ` ndx ) , V >. , <. S , E >. } $.
+    $( There are at least two elements in an extensible structure with a base
+       set and another slot.  (Contributed by AV, 23-Sep-2020.)  (Revised by
+       AV, 12-Nov-2021.) $)
+    struct2slots2dom $p |- ( ( V e. X /\ E e. Y ) -> 2o ~<_ dom G ) $=
+      ( wcel wa cnx cbs cvv cn basendxnn a1i cop opexg sylancr cfv cpr eqeltrid
+      elexi simpl simpr prexg syl2anc wne nnrei ltneii eqimss2i hashdmprop2dom
+      wss ) DEJZBFJZKZLMUAZADBCNOEFNURNJUQUROPUDQAOJZUQGQUOUPUEZUOUPUFZUQCURDRZ
+      ABRZUBZNIUQVBNJZVCNJZVDNJUQUROJUOVEPUTURDOESTUQUSUPVFGVAABOFSTVBVCNNUGUHU
+      CURAUIUQURAURPUJHUKQVDCUNUQCVDIULQUM $.
+
+    $( The set of vertices of an extensible structure with a base set and
+       another slot.  (Contributed by AV, 23-Sep-2020.)  (Proof shortened by
+       AV, 12-Nov-2021.) $)
+    structvtxval $p |- ( ( V e. X /\ E e. Y ) -> ( Vtx ` G ) = V ) $=
+      ( wcel wa cnx cbs cfv cop 2strstrndx struct2slots2dom simpl cvv cn prid1g
+      cpr basendxnn opexg sylancr syl eleqtrrdi basvtxval2dom ) DEJZBFJZKZCDLMN
+      ZAOEDBCAEFIHGPABCDEFGHIQUIUJRZUKULDOZUNABOZUBZCUKUNSJZUNUPJUKULTJUIUQUCUM
+      ULDTEUDUEUNUOSUAUFIUGUH $.
+
+    $( The set of indexed edges of an extensible structure with a base set and
+       another slot not being the slot for edge functions is empty.
+       (Contributed by AV, 23-Sep-2020.)  (Proof shortened by AV,
+       12-Nov-2021.) $)
+    structiedg0val $p |- ( ( V e. X /\ E e. Y /\ S =/= ( .ef ` ndx ) )
+                           -> ( iEdg ` G ) = (/) ) $=
+      ( wcel cnx cfv c0 wceq cvv cop cn sylancr 3adant3 wn cedgf wne w3a wa csn
+      ciedg cdif wfun c2o cdm wbr cbs basendxnn simpl opexg simpr prexg syl2anc
+      cpr eqeltrid 2strstrndx structn0fun syl struct2slots2dom funiedgdm2domval
+      cdom cstr syl3anc edgfndxid edgfndxnn elexi wo basendxnedgfndx nesymi a1i
+      neneq neqcomd 3ad2ant3 ioran sylanbrc elpr sylnibr dmeqi eqtrid neleqtrrd
+      dmpropg ndmfvg 3eqtrd ) DEJZBFJZAKUALZUBZUCZCUFLZCUALZWKCLZMWIWJWNWONZWLW
+      IWJUDZCOJZCMUEUGUHZUICUJZVFUKWQWRCKULLZDPZABPZUSZOIWRXCOJZXDOJZXEOJWRXBQJ
+      WIXFUMWIWJUNXBDQEUORWRAQJWJXGGWIWJUPABQFUORXCXDOOUQURUTZWRCXBAPZVGUKWTDBC
+      AEFIHGVACXIVBVCABCDEFGHIVDCOVEVHSWIWJWOWPNZWLWRWSXJXHCOVIVCSWMWKOJWKXAJTW
+      PMNWKQVJVKZWMXAXBAUSZWKWMWKXBNZWKANZVLZWKXLJWMXMTZXNTZXOTXPWMXBWKVMVNVOWL
+      WIXQWJWLAWKAWKVPVQVRXMXNVSVTWKXBAXKWAWBWMXAXEUJZXLCXEIWCWIWJXRXLNWLXBDABE
+      FWFSWDWEWKCWGRWH $.
+  $}
+
+  ${
+    structgrssvtx.g $e |- ( ph -> G Struct X ) $.
+    structgrssvtx.v $e |- ( ph -> V e. Y ) $.
+    structgrssvtx.e $e |- ( ph -> E e. Z ) $.
+    structgrssvtx.s $e |- ( ph -> { <. ( Base ` ndx ) , V >. ,
+                                    <. ( .ef ` ndx ) , E >. } C_ G ) $.
+    $( There are at least two elements in a graph represented as an extensible
+       structure with vertices as base set and indexed edges.  (Contributed by
+       AV, 14-Oct-2020.)  (Proof shortened by AV, 12-Nov-2021.) $)
+    structgr2slots2dom $p |- ( ph -> 2o ~<_ dom G ) $=
+      ( cnx cbs cfv cedgf cn cvv wcel basendxnn a1i edgfndxnn cstr wbr structex
+      syl wne basendxnedgfndx hashdmprop2dom ) ALMNZLONZDBCPPFGQUIPRASTUJPRAUAT
+      IJACEUBUCCQRHCEUDUEUIUJUFAUGTKUH $.
+
+    $( The set of vertices of a graph represented as an extensible structure
+       with vertices as base set and indexed edges.  (Contributed by AV,
+       14-Oct-2020.)  (Proof shortened by AV, 12-Nov-2021.) $)
+    structgrssvtx $p |- ( ph -> ( Vtx ` G ) = V ) $=
+      ( structgr2slots2dom cnx cfv cop wcel cvv cn opexg sylancr cbs wa cpr wss
+      cedgf wb basendxnn edgfndxnn prssg syl2anc mpbird simpld basvtxval2dom )
+      ACDEFHABCDEFGHIJKLIAMUANZDOZCPZMUENZBOZCPZAUPUSUBZUOURUCCUDZKAUOQPZURQPZU
+      TVAUFAUNRPDFPVBUGIUNDRFSTAUQRPBGPVCUHJUQBRGSTUOURCQQUIUJUKULUM $.
+
+    $( The set of indexed edges of a graph represented as an extensible
+       structure with vertices as base set and indexed edges.  (Contributed by
+       AV, 14-Oct-2020.)  (Proof shortened by AV, 12-Nov-2021.) $)
+    structgrssiedg $p |- ( ph -> ( iEdg ` G ) = E ) $=
+      ( structgr2slots2dom cnx cfv cop wcel cvv cn opexg sylancr cbs wa cpr wss
+      cedgf wb basendxnn edgfndxnn prssg syl2anc mpbird simprd edgfiedgval2dom
+      ) ABCEGHABCDEFGHIJKLJAMUANZDOZCPZMUENZBOZCPZAUPUSUBZUOURUCCUDZKAUOQPZURQP
+      ZUTVAUFAUNRPDFPVBUGIUNDRFSTAUQRPBGPVCUHJUQBRGSTUOURCQQUIUJUKULUM $.
+  $}
+
+  ${
+    struct2grvtx.g $e |- G = { <. ( Base ` ndx ) , V >. ,
+                               <. ( .ef ` ndx ) , E >. } $.
+    $( A graph represented as an extensible structure with vertices as base set
+       and indexed edges is actually an extensible structure.  (Contributed by
+       AV, 23-Nov-2020.) $)
+    struct2grstrg $p |- ( ( V e. X /\ E e. Y )
+        -> G Struct <. ( Base ` ndx ) , ( .ef ` ndx ) >. ) $=
+      ( cnx cedgf cfv basendxltedgfndx edgfndxnn 2strstrndx ) CABGHIDEFJKL $.
+
+    $( The set of vertices of a graph represented as an extensible structure
+       with vertices as base set and indexed edges.  (Contributed by AV,
+       23-Sep-2020.) $)
+    struct2grvtx $p |- ( ( V e. X /\ E e. Y ) -> ( Vtx ` G ) = V ) $=
+      ( cnx cedgf cfv edgfndxnn basendxltedgfndx structvtxval ) GHIABCDEJKFL $.
+
+    $( The set of indexed edges of a graph represented as an extensible
+       structure with vertices as base set and indexed edges.  (Contributed by
+       AV, 23-Sep-2020.)  (Proof shortened by AV, 12-Nov-2021.) $)
+    struct2griedg $p |- ( ( V e. X /\ E e. Y ) -> ( iEdg ` G ) = E ) $=
+      ( wa cnx cbs cfv cedgf cop struct2grstrg simpl simpr cpr wss eqimss2i a1i
+      wcel structgrssiedg ) CDTZAETZGZABCHIJZHKJZLDEABCDEFMUBUCNUBUCOUECLUFALPZ
+      BQUDBUGFRSUA $.
+  $}
+
+  ${
+    $d E g $.  $d V g $.  $d ph g $.
+    gropd.g $e |- ( ph -> A. g ( ( ( Vtx ` g ) = V /\ ( iEdg ` g ) = E )
+                                   -> ps ) ) $.
+    gropd.v $e |- ( ph -> V e. U ) $.
+    gropd.e $e |- ( ph -> E e. W ) $.
+    $( If any representation of a graph with vertices ` V ` and edges ` E ` has
+       a certain property ` ps ` , then the ordered pair ` <. V , E >. ` of the
+       set of vertices and the set of edges (which is such a representation of
+       a graph with vertices ` V ` and edges ` E ` ) has this property.
+       (Contributed by AV, 11-Oct-2020.) $)
+    gropd $p |- ( ph -> [. <. V , E >. / g ]. ps ) $=
+      ( cvv wcel cvtx cfv wceq ciedg wa wi syl2anc fveqeq2 cop wal wsbc opvtxfv
+      cv opexg opiedgfv jca nfcv nfv nfsbc1v nfim anbi12d sbceq1a imbi12d spcgf
+      syl3c ) AFEUAZKLZDUEZMNFOZUTPNEOZQZBRZDUBURMNFOZURPNEOZQZBDURUCZAFCLZEGLZ
+      USIJFECGUFSHAVIVJVGIJVIVJQVEVFEFCGUDEFCGUGUHSVDVGVHRDURKDURUIVGVHDVGDUJBD
+      URUKULUTUROZVCVGBVHVKVAVEVBVFUTURFMTUTUREPTUMBDURUNUOUPUQ $.
+
+    $d S g $.
+    grstructd.s $e |- ( ph -> S e. X ) $.
+    grstructd.f $e |- ( ph -> Fun ( S \ { (/) } ) ) $.
+    grstructd2dom.d $e |- ( ph -> 2o ~<_ dom S ) $.
+    grstructd.b $e |- ( ph -> ( Base ` S ) = V ) $.
+    grstructd.e $e |- ( ph -> ( .ef ` S ) = E ) $.
+    $( If any representation of a graph with vertices ` V ` and edges ` E ` has
+       a certain property ` ps ` , then any structure with base set ` V ` and
+       value ` E ` in the slot for edge functions (which is such a
+       representation of a graph with vertices ` V ` and edges ` E ` ) has this
+       property.  (Contributed by AV, 12-Oct-2020.)  (Revised by AV,
+       9-Jun-2021.) $)
+    grstructd2dom $p |- ( ph -> [. S / g ]. ps ) $=
+      ( cvtx cfv wceq wcel cv ciedg wa wi wal wsbc cbs c0 csn cdif wfun c2o cdm
+      cdom wbr funvtxdm2domval syl3anc eqtrd cedgf funiedgdm2domval jca nfsbc1v
+      nfcv nfv nfim fveqeq2 anbi12d sbceq1a imbi12d spcgf syl3c ) ACIUAZEUBZRSG
+      TZVNUCSFTZUDZBUEZEUFCRSZGTZCUCSZFTZUDZBECUGZMJAVTWBAVSCUHSZGAVMCUIUJUKULZ
+      UMCUNUOUPZVSWETMNOCIUQURPUSAWACUTSZFAVMWFWGWAWHTMNOCIVAURQUSVBVRWCWDUEECI
+      ECVDWCWDEWCEVEBECVCVFVNCTZVQWCBWDWIVOVTVPWBVNCGRVGVNCFUCVGVHBECVIVJVKVL
+      $.
+  $}
+
+  ${
+    $d C g $.  $d E g $.  $d V g $.  $d ph g $.
+    gropeld.g $e |- ( ph -> A. g ( ( ( Vtx ` g ) = V /\ ( iEdg ` g ) = E )
+                                   -> g e. C ) ) $.
+    gropeld.v $e |- ( ph -> V e. U ) $.
+    gropeld.e $e |- ( ph -> E e. W ) $.
+    $( If any representation of a graph with vertices ` V ` and edges ` E ` is
+       an element of an arbitrary class ` C ` , then the ordered pair
+       ` <. V , E >. ` of the set of vertices and the set of edges (which is
+       such a representation of a graph with vertices ` V ` and edges ` E ` )
+       is an element of this class ` C ` .  (Contributed by AV,
+       11-Oct-2020.) $)
+    gropeld $p |- ( ph -> <. V , E >. e. C ) $=
+      ( cv wcel cop wsbc gropd sbcel1v sylib ) ADKBLZDFEMZNSBLARCDEFGHIJODSBPQ
+      $.
+
+    $d S g $.
+    grstructeld.s $e |- ( ph -> S e. X ) $.
+    grstructeld.f $e |- ( ph -> Fun ( S \ { (/) } ) ) $.
+    grstructeld2dom.d $e |- ( ph -> 2o ~<_ dom S ) $.
+    grstructeld.b $e |- ( ph -> ( Base ` S ) = V ) $.
+    grstructeld.e $e |- ( ph -> ( .ef ` S ) = E ) $.
+    $( If any representation of a graph with vertices ` V ` and edges ` E ` is
+       an element of an arbitrary class ` C ` , then any structure with base
+       set ` V ` and value ` E ` in the slot for edge functions (which is such
+       a representation of a graph with vertices ` V ` and edges ` E ` ) is an
+       element of this class ` C ` .  (Contributed by AV, 12-Oct-2020.)
+       (Revised by AV, 9-Jun-2021.) $)
+    grstructeld2dom $p |- ( ph -> S e. C ) $=
+      ( cv wcel wsbc grstructd2dom sbcel1v sylib ) AERBSZECTCBSAUDCDEFGHIJKLMNO
+      PQUAECBUBUC $.
+  $}
+
+
+$(
+###############################################################################
   GUIDES AND MISCELLANEA
 ###############################################################################
 $)
@@ -192474,6 +193313,17 @@ htmldef "/L" as
     "<IMG SRC='subcl.gif' WIDTH=8 HEIGHT=19 ALT='L' TITLE='L'>";
   althtmldef "/L" as " /<sub><i>L</i></sub> ";
   latexdef "/L" as " /_L ";
+
+/* Graph theory */
+htmldef ".ef" as '.ef';
+  althtmldef ".ef" as ".ef";
+  latexdef ".ef" as "\mathrm{ef}";
+htmldef "Vtx" as 'Vtx';
+  althtmldef "Vtx" as 'Vtx';
+  latexdef "Vtx" as "\mathrm{Vtx}";
+htmldef "iEdg" as 'iEdg';
+  althtmldef "iEdg" as 'iEdg';
+  latexdef "iEdg" as "\mathrm{iEdg}";
 
 /* htmldef, althtmldef, latexdef for mathboxes */
 /* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
