@@ -117615,6 +117615,20 @@ $)
       AHEZVDVDACCIJKZLMVCVEVDABNOVCVDUAZVGVEVDVDUBZVFCCPKZAUCZUDZDQCCUNKZPKZDUE
       CUFKAUGZRZLUHZLDACCHUIVHVPVOLVKVOLVILVJCSVJUJUKULVHVODLVNRLVHDVMLVNVHVMQQ
       PKZLVDVEVMVQMVDVDVLQQPVDCCUMUOUPUQQSTURDVNUSTUTVAVB $.
+
+    $( Closure of the subword extractor.  (Contributed by Stefan O'Rear,
+       16-Aug-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.) $)
+    swrdclg $p |- ( ( S e. Word A /\ F e. ZZ /\ L e. ZZ )
+        -> ( S substr <. F , L >. ) e. Word A ) $=
+      ( vx cword wcel cz w3a cop csubstr co cfzo cdm wss cc0 cfv c0 wa wf caddc
+      cmin cmpt cif swrdval chash wrdf 3ad2ant1 ad2antrr simplr simpll3 simpll2
+      cv simpr fzoaddel2 syl3anc sseldd eleqtrd ffvelcdmd fmpttd simpl3 zsubcld
+      fdmd simpl2 iswrdiz syl2anc wn wrd0 a1i fzowrddc ifcldadc eqeltrd ) BAFZG
+      ZCHGZDHGZIZBCDJKLCDMLZBNZOZEPDCUBLZMLZEUMZCUALZBQZUCZRUDVMEBCDVMUEVQVTWFR
+      VMVQVTSZWBAWFTWAHGWFVMGWGEWBWEAWGWCWBGZSZPBUFQMLZAWDBVQWJABTZVTWHVNVOWKVP
+      ABUGUHUIZWIWDVSWJWIVRVSWDVQVTWHUJWIWHVPVOWDVRGWGWHUNVNVOVPVTWHUKVNVOVPVTW
+      HULWCDCUOUPUQWIWJABWLVCURUSUTWGDCVNVOVPVTVAVNVOVPVTVDVBAWAWFVEVFRVMGVQVTV
+      GSAVHVIABCDVJVKVL $.
   $}
 
 
