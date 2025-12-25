@@ -117671,6 +117671,17 @@ $)
       IULVJECVIETHVFEIVGUNUMVFCTHZVIVDVCVSVECIDUOUPRUQVQBVBTURUSUTVA $.
   $}
 
+  $( The first symbol in an extracted subword.  (Contributed by AV,
+     27-Apr-2022.) $)
+  swrdfv0 $p |- ( ( S e. Word A /\ F e. ( 0 ..^ L )
+                    /\ L e. ( 0 ... ( # ` S ) ) )
+                  -> ( ( S substr <. F , L >. ) ` 0 ) = ( S ` F ) ) $=
+    ( cword wcel cc0 cfzo chash cfv cfz w3a cop csubstr caddc cmin wceq elfzofz
+    co 3ad2ant2 3anim2i cn fzonnsub lbfzo0 sylibr syl2anc elfzoelz zcnd addlidd
+    swrdfv fveq2d eqtrd ) BAEFZCGDHSFZDGBIJKSFZLZGBCDMNSJZGCOSZBJZCBJZUPUMCGDKS
+    FZUOLGGDCPSZHSFZUQUSQUNVAUMUOCGDRUAUPVBUBFZVCUNUMVDUOCGDUCTVBUDUEABCDGUJUFU
+    NUMUSUTQUOUNURCBUNCUNCCGDUGUHUIUKTUL $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
