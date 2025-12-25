@@ -116376,6 +116376,12 @@ $(
            -> ( # `` ( W ++ U ) ) = ( ( # `` W ) + ( # `` U ) ) ` </td>
     <td> Note that the index of the first symbol of the second concatenated
          word is the length of the first word in the concatenation.</td></tr>
+  <tr>
+    <td>Singleton word </td>
+    <td> ~ df-s1 : ` <" S "> ` </td>
+    <td>Constructor building a word of length 1 from a symbol.</td>
+    <td> ` ( # `` <" S "> ) = 1 ` </td>
+    <td> </td></tr>
   </table>
 
   Conventions:
@@ -117253,6 +117259,270 @@ $)
   lswccat0lsw $p |- ( W e. Word V
                      -> ( lastS ` ( W ++ (/) ) ) = ( lastS ` W ) ) $=
     ( cword wcel c0 cconcat co clsw ccatrid fveq2d ) BACDBEFGBHABIJ $.
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Singleton words
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c <" "> $.
+
+  $( Syntax for the singleton word constructor. $)
+  cs1 $a class <" A "> $.
+
+  $( Define the canonical injection from symbols to words.  Although not
+     required, ` A ` should usually be a set.  Otherwise, the singleton word
+     ` <" A "> ` would be the singleton word consisting of the empty set, see
+     ~ s1prc , and not, as maybe expected, the empty word.  (Contributed by
+     Stefan O'Rear, 15-Aug-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.) $)
+  df-s1 $a |- <" A "> = { <. 0 , ( _I ` A ) >. } $.
+
+  $( Value of a singleton word.  (Contributed by Stefan O'Rear, 15-Aug-2015.)
+     (Revised by Mario Carneiro, 26-Feb-2016.) $)
+  s1val $p |- ( A e. V -> <" A "> = { <. 0 , A >. } ) $=
+    ( wcel cs1 cc0 cid cfv cop csn df-s1 fvi opeq2d sneqd eqtrid ) ABCZADEAFGZH
+    ZIEAHZIAJOQROPAEABKLMN $.
+
+  $( The range of a singleton word.  (Contributed by Mario Carneiro,
+     18-Jul-2016.) $)
+  s1rn $p |- ( A e. V -> ran <" A "> = { A } ) $=
+    ( wcel cs1 crn cc0 cop csn s1val rneqd c0ex rnsnop eqtrdi ) ABCZADZEFAGHZEA
+    HNOPABIJFAKLM $.
+
+  $( Equality theorem for a singleton word.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  s1eq $p |- ( A = B -> <" A "> = <" B "> ) $=
+    ( wceq cc0 cid cfv cop csn cs1 fveq2 opeq2d sneqd df-s1 3eqtr4g ) ABCZDAEFZ
+    GZHDBEFZGZHAIBIOQSOPRDABEJKLAMBMN $.
+
+  ${
+    s1eqd.1 $e |- ( ph -> A = B ) $.
+    $( Equality theorem for a singleton word.  (Contributed by Mario Carneiro,
+       26-Feb-2016.) $)
+    s1eqd $p |- ( ph -> <" A "> = <" B "> ) $=
+      ( wceq cs1 s1eq syl ) ABCEBFCFEDBCGH $.
+  $}
+
+  $( A singleton word is a word.  (Contributed by Stefan O'Rear, 15-Aug-2015.)
+     (Revised by Mario Carneiro, 26-Feb-2016.)  (Proof shortened by AV,
+     23-Nov-2018.) $)
+  s1cl $p |- ( A e. B -> <" A "> e. Word B ) $=
+    ( wcel cs1 cc0 cop csn cword s1val snopiswrd eqeltrd ) ABCADEAFGBHABIABJK
+    $.
+
+  ${
+    s1cld.1 $e |- ( ph -> A e. B ) $.
+    $( A singleton word is a word.  (Contributed by Mario Carneiro,
+       26-Feb-2016.) $)
+    s1cld $p |- ( ph -> <" A "> e. Word B ) $=
+      ( wcel cs1 cword s1cl syl ) ABCEBFCGEDBCHI $.
+  $}
+
+  $( Value of a singleton word if the symbol is a proper class.  (Contributed
+     by AV, 26-Mar-2022.) $)
+  s1prc $p |- ( -. A e. _V -> <" A "> = <" (/) "> ) $=
+    ( cvv wcel wn cc0 cid cfv cop csn c0 cs1 fvprc opeq2d sneqd df-s1 0ex s1val
+    wceq ax-mp 3eqtr4g ) ABCDZEAFGZHZIEJHZIZAKJKZUAUCUDUAUBJEAFLMNAOJBCUFUERPJB
+    QST $.
+
+  $( Length of a singleton word.  (Contributed by Stefan O'Rear, 15-Aug-2015.)
+     (Revised by Mario Carneiro, 26-Feb-2016.) $)
+  s1leng $p |- ( A e. V -> ( # ` <" A "> ) = 1 ) $=
+    ( wcel cs1 chash cfv cc0 cop csn c1 s1val fveq2d cvv wceq cn0 opexg hashsng
+    0nn0 mpan syl eqtrd ) ABCZADZEFGAHZIZEFZJUBUCUEEABKLUBUDMCZUFJNGOCUBUGRGAOB
+    PSUDMQTUA $.
+
+  $( The domain of a singleton word is a singleton.  (Contributed by AV,
+     9-Jan-2020.) $)
+  s1dmg $p |- ( A e. S -> dom <" A "> = { 0 } ) $=
+    ( wcel cs1 cdm cc0 cop csn s1val dmeqd dmsnopg eqtrd ) ABCZADZEFAGHZEFHMNOA
+    BIJFABKL $.
+
+  $( Sole symbol of a singleton word.  (Contributed by Stefan O'Rear,
+     15-Aug-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.) $)
+  s1fv $p |- ( A e. B -> ( <" A "> ` 0 ) = A ) $=
+    ( wcel cc0 cs1 cfv cop csn s1val fveq1d cn0 wceq 0nn0 fvsng mpan eqtrd ) AB
+    CZDAEZFDDAGHZFZAQDRSABIJDKCQTALMDAKBNOP $.
+
+  $( The last symbol of a singleton word is its symbol.  (Contributed by AV,
+     22-Oct-2018.) $)
+  lsws1 $p |- ( A e. V -> ( lastS ` <" A "> ) = A ) $=
+    ( wcel cs1 clsw cfv cword chash c1 wceq s1cl s1leng lsw1 syl2anc s1fv eqtrd
+    cc0 ) ABCZADZEFZQSFZARSBGCSHFIJTUAJABKABLBSMNABOP $.
+
+  ${
+    $d x W $.
+    $( A word of length 1 is a singleton word.  (Contributed by Stefan O'Rear,
+       23-Aug-2015.)  (Proof shortened by AV, 1-May-2020.) $)
+    eqs1 $p |- ( ( W e. Word A /\ ( # ` W ) = 1 ) -> W = <" ( W ` 0 ) "> ) $=
+      ( vx cword wcel chash cfv c1 wceq wa cc0 cfzo co cvv cn0 adantr syl fveq2
+      wral wb cs1 cv simpr 0nn0 fvexg mpan2 s1leng eqtr4d csn s1fv c0ex eqeq12d
+      eqcomd ralsn sylibr oveq2 fzo01 eqtrdi adantl s1cld eqwrd mpdan mpbir2and
+      raleqdv mpbird ) BADZEZBFGZHIZJZBKBGZUAZIZVHVLFGZIZCUBZBGZVPVLGZIZCKVHLMZ
+      SZVJVHHVNVGVIUCVJVKNEZVNHIVGWBVIVGKOEWBUDKBVFOUEUFZPVKNUGQUHVJWAVSCKUIZSZ
+      VGWEVIVGVKKVLGZIZWEVGWFVKVGWBWFVKIWCVKNUJQUMVSWGCKUKVPKIVQVKVRWFVPKBRVPKV
+      LRULUNUOPVIWAWETVGVIVSCVTWDVIVTKHLMWDVHHKLUPUQURVDUSVEVGVMVOWAJTZVIVGVLND
+      EWHVGVKNWCUTANBCVLVAVBPVC $.
+  $}
+
+  ${
+    $d S s $.  $d W s $.
+    $( A word of length 1 is a singleton word.  (Contributed by AV,
+       24-Jan-2021.) $)
+    wrdl1exs1 $p |- ( ( W e. Word S /\ ( # ` W ) = 1 )
+                      -> E. s e. S W = <" s "> ) $=
+      ( cword wcel chash cfv c1 wceq wa cv cs1 cc0 cle wbr 1le1 mpbiri wrdsymb1
+      breq2 sylan2 s1eq adantl eqeq2d eqs1 rspcedvd ) BADEZBFGZHIZJZBCKZLZIBMBG
+      ZLZICULAUHUFHUGNOZULAEUHUNHHNOPUGHHNSQABRTUIUJULIZJUKUMBUOUKUMIUIUJULUAUB
+      UCABUDUE $.
+  $}
+
+  $( A word of length 1 is a singleton word consisting of the first symbol of
+     the word.  (Contributed by AV, 22-Jul-2018.)  (Proof shortened by AV,
+     14-Oct-2018.) $)
+  wrdl1s1 $p |- ( S e. V -> ( W = <" S ">
+                  <-> ( W e. Word V /\ ( # ` W ) = 1 /\ ( W ` 0 ) = S ) ) ) $=
+    ( wcel cs1 wceq cword chash cfv cc0 w3a s1cl s1leng s1fv 3jca eleq1 fveqeq2
+    c1 fveq1 eqeq1d 3anbi123d syl5ibrcom wa eqs1 s1eq eqeq2d syl5ibcom impbid1
+    3impia ) ABDZCAEZFZCBGZDZCHIRFZJCIZAFZKZUJURULUKUMDZUKHIRFZJUKIZAFZKUJUSUTV
+    BABLABMABNOULUNUSUOUTUQVBCUKUMPCUKRHQULUPVAAJCUKSTUAUBUNUOUQULUNUOUCCUPEZFU
+    QULBCUDUQVCUKCUPAUEUFUGUIUH $.
+
+  $( The singleton word function is injective.  (Contributed by Mario Carneiro,
+     1-Oct-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.) $)
+  s111 $p |- ( ( S e. A /\ T e. A ) -> ( <" S "> = <" T "> <-> S = T ) ) $=
+    ( wcel wa cs1 wceq cc0 cop csn s1val eqeqan12d cvv 0nn0 simpl opexg sylancr
+    wb cn0 cz sneqbg syl 0z eqid opthg baibd mpan2 mpan adantr 3bitrd ) BADZCAD
+    ZEZBFZCFZGHBIZJZHCIZJZGZUPURGZBCGZUKULUNUQUOUSBAKCAKLUMUPMDZUTVARUMHSDUKVCN
+    UKULOHBSAPQUPURMUAUBUKVAVBRZULHTDZUKVDUCVEUKEZHHGZVDHUDVFVAVGVBHBHCTAUEUFUG
+    UHUIUJ $.
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Concatenations with singleton words
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( The concatenation of a word with a singleton word is a word.  (Contributed
+     by Alexander van der Vekens, 22-Sep-2018.) $)
+  ccatws1cl $p |- ( ( W e. Word V /\ X e. V )
+                   -> ( W ++ <" X "> ) e. Word V ) $=
+    ( wcel cword cs1 cconcat co s1cl ccatcl sylan2 ) CADBAEZDCFZLDBMGHLDCAIABMJ
+    K $.
+
+  $( The concatenation of two singleton words is a word.  (Contributed by
+     Alexander van der Vekens, 22-Sep-2018.) $)
+  ccat2s1cl $p |- ( ( X e. V /\ Y e. V )
+                    -> ( <" X "> ++ <" Y "> ) e. Word V ) $=
+    ( wcel cs1 cword cconcat co s1cl ccatws1cl sylan ) BADBEZAFZDCADLCEGHMDBAIA
+    LCJK $.
+
+  $( The length of the concatenation of a word with a singleton word.
+     (Contributed by Alexander van der Vekens, 22-Sep-2018.)  (Revised by AV,
+     4-Mar-2022.) $)
+  ccatws1leng $p |- ( ( W e. Word V /\ X e. Y )
+                      -> ( # ` ( W ++ <" X "> ) ) = ( ( # ` W ) + 1 ) ) $=
+    ( cword wcel wa cs1 cconcat chash cfv caddc wceq s1cl ccatlen sylan2 s1leng
+    co c1 oveq2d adantl eqtrd ) BAEFZCDFZGBCHZIRJKZBJKZUEJKZLRZUGSLRZUDUCUEDEFU
+    FUIMCDNADBUEOPUDUIUJMUCUDUHSUGLCDQTUAUB $.
+
+  $( The length of a word is ` N ` iff the length of the concatenation of the
+     word with a singleton word is ` N + 1 ` .  (Contributed by AV,
+     4-Mar-2022.) $)
+  ccatws1lenp1bg $p |- ( ( W e. Word V /\ X e. Y /\ N e. NN0 )
+             -> ( ( # ` ( W ++ <" X "> ) ) = ( N + 1 ) <-> ( # ` W ) = N ) ) $=
+    ( cword wcel cn0 w3a cs1 cconcat co chash c1 caddc wceq ccatws1leng 3adant3
+    cfv cc eqeq1d wb wa lencl nn0cnd adantr nn0cn adantl addcan2d 3adant2 bitrd
+    1cnd ) CBFGZDEGZAHGZIZCDJKLMSZANOLZPCMSZNOLZURPZUSAPZUPUQUTURUMUNUQUTPUOBCD
+    EQRUAUMUOVAVBUBUNUMUOUCZUSANUMUSTGUOUMUSBCUDUEUFUOATGUMAUGUHVCULUIUJUK $.
+
+  $( The concatenation of a word with two singleton words is a word.
+     (Contributed by Alexander van der Vekens, 22-Sep-2018.) $)
+  ccatw2s1cl $p |- ( ( W e. Word V /\ X e. V /\ Y e. V )
+                     -> ( ( W ++ <" X "> ) ++ <" Y "> ) e. Word V ) $=
+    ( cword wcel cs1 cconcat co ccatws1cl stoic3 ) BAEZFCAFBCGHIZLFDAFMDGHILFAB
+    CJAMDJK $.
+
+  $( Value of a symbol in the left half of a word concatenated with a single
+     symbol.  (Contributed by Alexander van der Vekens, 5-Aug-2018.)  (Revised
+     by JJ, 20-Jan-2024.) $)
+  ccats1val1g $p |- ( ( W e. Word V /\ S e. Y /\ I e. ( 0 ..^ ( # ` W ) ) )
+                     -> ( ( W ++ <" S "> ) ` I ) = ( W ` I ) ) $=
+    ( wcel cword cs1 cc0 chash cfv cfzo co cconcat wceq s1cl ccatval1 syl3an2 )
+    AEFDCGFAHZEGFBIDJKLMFBDSNMKBDKOAEPCEDSBQR $.
+
+  $( Value of the symbol concatenated with a word.  (Contributed by Alexander
+     van der Vekens, 5-Aug-2018.)  (Proof shortened by Alexander van der
+     Vekens, 14-Oct-2018.) $)
+  ccats1val2 $p |- ( ( W e. Word V /\ S e. V /\ I = ( # ` W ) )
+                     -> ( ( W ++ <" S "> ) ` I ) = S ) $=
+    ( cword wcel chash cfv wceq w3a cs1 co cmin caddc cfzo 3ad2ant2 c1 3ad2ant3
+    cc0 oveq2d cconcat simp1 s1cl cz lencl nn0zd elfzomin s1leng eleqtrrd eleq1
+    3syl mpbird ccatval2 syl3anc oveq1 nn0cnd subidd 3ad2ant1 eqtrd fveq2d s1fv
+    wb 3eqtrd ) DCEZFZACFZBDGHZIZJZBDAKZUALHZBVGMLZVJHZSVJHZAVIVEVJVDFZBVGVGVJG
+    HZNLZOLZFZVKVMIVEVFVHUBZVFVEVOVHACUCPVIVSVGVRFZVIVGVGVGQNLZOLZVRVIVEVGUDFVG
+    WCFVTVEVGCDUEZUFVGUGUKVFVEVRWCIVHVFVQWBVGOVFVPQVGNACUHTTPUIVHVEVSWAVBVFBVGV
+    RUJRULCDVJBUMUNVIVLSVJVIVLVGVGMLZSVHVEVLWEIVFBVGVGMUORVEVFWESIVHVEVGVEVGWDU
+    PUQURUSUTVFVEVNAIVHACVAPVC $.
+
+  $( The first symbol of a word concatenated with its first symbol is the first
+     symbol of the word.  This theorem holds even if ` W ` is the empty word.
+     (Contributed by AV, 26-Mar-2022.) $)
+  ccat1st1st $p |- ( W e. Word V
+                     -> ( ( W ++ <" ( W ` 0 ) "> ) ` 0 ) = ( W ` 0 ) ) $=
+    ( cword wcel cfv cc0 wceq cs1 cconcat co wne wa c0 syl biimpa cvv 0ex ax-mp
+    syldan cz chash wb wrdfin fihasheq0 s1cl ccatlid fveq1i s1fv eqtri id fveq1
+    cfn 0fv eqtrdi s1eqd oveq12d fveq1d 3eqtr4a cfzo necon3bid fstwrdne lennncl
+    simpl cn lbfzo0 sylibr ccats1val1g syl3anc wdc wo lencl nn0zd zdceq sylancl
+    0z dcne sylib mpjaodan ) BACDZBUAEZFGZFBFBEZHZIJZEZWBGZVTFKZVSWALBMGZWFVSWA
+    WHVSBULDWAWHUBABUCBUDNZOWHFMMHZIJZEZMWEWBWLFWJEZMFWKWJWJPCDZWKWJGMPDZWNQMPU
+    ERPWJUFRUGWOWMMGQMPUHRUIWHFWDWKWHBMWCWJIWHUJWHWBMWHWBFMEMFBMUKFUMUNZUOUPUQW
+    PURNVSWGLZVSWBADZFFVTUSJDZWFVSWGVCVSWGBMKZWRVSWGWTVSVTFBMWIUTOZABVASWQVTVDD
+    ZWSVSWGWTXBXAABVBSVTVEVFWBFABAVGVHVSWAVIZWAWGVJVSVTTDFTDXCVSVTABVKVLVOVTFVM
+    VNVTFVPVQVR $.
+
+  $( The last symbol of the concatenation of a word with a singleton word is
+     the symbol of the singleton word.  (Contributed by AV, 29-Sep-2018.)
+     (Proof shortened by AV, 14-Oct-2018.) $)
+  ccatws1ls $p |- ( ( W e. Word V /\ X e. V )
+                    -> ( ( W ++ <" X "> ) ` ( # ` W ) ) = X ) $=
+    ( cword wcel chash cfv wceq cs1 cconcat co wa eqidd ccats1val2 mpd3an3 ) BA
+    DEZCAEZBFGZRHRBCIJKGCHPQLRMCRABNO $.
+
+  $( The last symbol of a word concatenated with a singleton word is the symbol
+     of the singleton word.  (Contributed by AV, 6-Aug-2018.) $)
+  lswccats1 $p |- ( ( W e. Word V /\ S e. V )
+                    -> ( lastS ` ( W ++ <" S "> ) ) = S ) $=
+    ( cword wcel wa cs1 cconcat co clsw cfv chash c1 cmin wceq ccatws1cl lswwrd
+    syl cn0 lencl adantr nn0cnd ccatws1leng mvrraddd fveq2d ccatws1ls 3eqtrd
+    1cnd ) CBDZEZABEZFZCAGHIZJKZUMLKZMNIZUMKZCLKZUMKAULUMUIEUNUQOBCAPBUMQRULUPU
+    RUMULUOURMULURUJURSEUKBCTUAUBULUHBCABUCUDUEBCAUFUG $.
+
+  $( The last symbol of a nonempty word concatenated with its first symbol is
+     the first symbol.  (Contributed by AV, 28-Jun-2018.)  (Proof shortened by
+     AV, 1-May-2020.) $)
+  lswccats1fst $p |- ( ( P e. Word V /\ 1 <_ ( # ` P ) )
+                       -> ( lastS ` ( P ++ <" ( P ` 0 ) "> ) )
+                          = ( ( P ++ <" ( P ` 0 ) "> ) ` 0 ) ) $=
+    ( cword wcel c1 chash cfv cle wbr wa cc0 cs1 cconcat co clsw wceq lswccats1
+    wrdsymb1 syldan cfzo simpl s1cld cn cn0 lencl elnnnn0c biimpri sylan lbfzo0
+    sylibr ccatval1 syl3anc eqtr4d ) ABCZDZEAFGZHIZJZAKAGZLZMNZOGZUSKVAGZUOUQUS
+    BDVBUSPBARZUSBAQSURUOUTUNDKKUPTNDZVCUSPUOUQUAURUSBVDUBURUPUCDZVEUOUPUDDZUQV
+    FBAUEVFVGUQJUPUFUGUHUPUIUJBBAUTKUKULUM $.
+
+  $( Extract the second of two single symbols concatenated with a word.
+     (Contributed by Alexander van der Vekens, 22-Sep-2018.)  (Proof shortened
+     by AV, 1-May-2020.) $)
+  ccatw2s1p2 $p |- ( ( ( W e. Word V /\ ( # ` W ) = N )
+                      /\ ( X e. V /\ Y e. V ) )
+                    -> ( ( ( W ++ <" X "> ) ++ <" Y "> ) ` ( N + 1 ) ) = Y ) $=
+    ( cword wcel chash cfv wa cs1 cconcat co c1 caddc ccatws1cl ad2ant2r simprr
+    wceq ccatws1leng oveq1 ad2antlr eqtr2d ccats1val2 syl3anc ) CBFZGZCHIZASZJZ
+    DBGZEBGZJZJZCDKLMZUFGZULANOMZUOHIZSUQUOEKLMIESUGUKUPUIULBCDPQUJUKULRUNURUHN
+    OMZUQUGUKURUSSUIULBCDBTQUIUSUQSUGUMUHANOUAUBUCEUQBUOUDUE $.
 
 
 $(
@@ -193006,6 +193276,18 @@ htmldef "lastS" as 'lastS';
 htmldef "++" as " ++ ";
   althtmldef "++" as " ++ ";
   latexdef "++" as "\mathbin{\operatorname{++}}";
+htmldef '<"' as
+    "<IMG SRC='langle.gif' WIDTH=4 HEIGHT=19 ALT=' &lt;' TITLE='&lt;'>" +
+    "<IMG SRC='backquote.gif' WIDTH=7 HEIGHT=19 ALT='" + '"' +
+      "' TITLE='" + '"' + "'>";
+  althtmldef '<"' as '&lang;&ldquo;'; /* &#9001;&#8220; */
+  latexdef '<"' as "\langle``";
+htmldef '">' as
+    "<IMG SRC='quote.gif' WIDTH=7 HEIGHT=19 ALT=' " + '"' +
+      "' TITLE='" + '"' + "'>" +
+    "<IMG SRC='rangle.gif' WIDTH=4 HEIGHT=19 ALT='&gt;' TITLE='&gt;'>";
+  althtmldef '">' as '&rdquo;&rang;'; /* &#8221;&#9002; */
+  latexdef '">' as "''\rangle";
 htmldef "~QG" as " ~<sub><i>QG</i></sub> ";
   althtmldef "~QG" as " ~<sub><i>QG</i></sub> ";
   latexdef "~QG" as " \sim_{QG} ";
