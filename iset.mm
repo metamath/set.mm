@@ -117756,6 +117756,27 @@ $)
       $.
   $}
 
+  ${
+    $d F x $.  $d L x $.  $d b s z $.
+    $( A subword of an empty set is always the empty set.  (Contributed by AV,
+       31-Mar-2018.)  (Revised by AV, 20-Oct-2018.)  (Proof shortened by AV,
+       2-May-2020.) $)
+    swrd0g $p |- ( ( F e. ZZ /\ L e. ZZ )
+        -> ( (/) substr <. F , L >. ) = (/) ) $=
+      ( vx c0 cvv wcel cz co wceq cfzo cdm wss cmpt wa wbr dm0 a1i ancoms eqtrd
+      wn cop csubstr 0ex w3a cc0 cmin caddc cfv cif swrdval clt fzonlt0 biimprd
+      cv con2d impcom nsyl sseq2d mtbird iffalsed ssidd biimpac 3sstr4d iftrued
+      ss0 cle cr zre lenlt bicomd syl2anr fzo0n bitrd mpteq1d dmeqd wral dmmptg
+      wb ral0 mp1i wrel mptrel reldm0 mpbird wdc zdclt exmiddc mpjaodan 3adant1
+      wo syl mp3an1 ) DEFZAGFZBGFZDABUAUBHZDIUCWMWNWOUDWPABJHZDKZLZCUEBAUFHJHZC
+      UNAUGHDUHZMZDUIZDCDABEUJWNWOXCDIZWMWNWONZABUKOZXDXFTZXFXEXDXFXENZWSXBDXHW
+      SWQDLZXHWQDIZXIXEXFXJTXEXJXFXEXGXJABULZUMUOUPWQVEUQXHWRDWQWRDIZXHPQURUSUT
+      RXGXEXDXGXENZXCXBDXMWSXBDXMDDWQWRXMDVAXEXGXJXKVBXLXMPQVCVDXMXBDIZXBKZDIZX
+      MXOCDXAMZKZDXMXBXQXMCWTDXAXEXGWTDIZXEXGBAVFOZXSWOBVGFZAVGFZXGXTVRWNBVHAVH
+      YAYBNXTXGBAVIVJVKABVLVMVBVNVOXAEFZCDVPXRDIXMYCCVSCDXAEVQVTSXBWAXNXPVRXMCW
+      TXAWBXBWCVTWDSRXEXFWEXFXGWJABWFXFWGWKWHWISWL $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
