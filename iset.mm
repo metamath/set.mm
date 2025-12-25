@@ -117796,6 +117796,24 @@ $)
     BCUIUJTPBCQRVBVEUTGFZVAMVDVBVEVIVAUSUPVEVAVHPUPUSVIVADAULUKUPUSVAUMTCUTQRDA
     BCUNUO $.
 
+  $( A symbol in an extracted subword, indexed using the word's indices.
+     (Contributed by AV, 5-May-2020.) $)
+  swrdfv2 $p |- ( ( ( S e. Word V /\ ( F e. NN0 /\ L e. ( ZZ>= ` F ) )
+                      /\ L <_ ( # ` S ) ) /\ X e. ( F ..^ L ) )
+                  -> ( ( S substr <. F , L >. ) ` ( X - F ) ) = ( S ` X ) ) $=
+    ( wcel cn0 cfv wa cle wbr w3a cfzo co cc0 wceq 3ad2ant2 adantr cz cc eluzle
+    cword cuz chash cmin cop csubstr caddc cfz simp1 simpl adantl 3jca elfz2nn0
+    eluznn0 sylibr anim1i 3adant1 wb lencl 3ad2ant1 fznn0 mpbird nn0cn eluzelcn
+    pncan3 syl2an eqcomd oveq2d eleq2d biimpa eluzelz zsubcld fzosubel3 syl2anc
+    syl nn0z swrdfv elfzoelz zcnd npcan syl2anr fveq2d eqtrd ) ADUBFZBGFZCBUCHF
+    ZIZCAUDHZJKZLZEBCMNZFZIZEBUENZABCUFUGNHZWOBUHNZAHZEAHWNWEBOCUINFZCOWIUINFZL
+    ZWOOCBUENZMNFZWPWRPWKXAWMWKWEWSWTWEWHWJUJWKWFCGFZBCJKZLZWSWHWEXFWJWHWFXDXEW
+    FWGUKCBUOZWGXEWFBCUAULUMQBCUNUPWKWTXDWJIZWHWJXHWEWHXDWJXGUQURWKWIGFZWTXHUSW
+    EWHXIWJDAUTVACWIVBVPVCUMRWNEBBXBUHNZMNZFZXBSFZXCWKWMXLWKWLXKEWKCXJBMWHWECXJ
+    PWJWHXJCWFBTFZCTFXJCPWGBVDZBCVEBCVFVGVHQVIVJVKWKXMWMWHWEXMWJWHCBWGCSFWFBCVL
+    ULWFBSFWGBVQRVMQREBXBVNVODABCWOVRVOWNWQEAWMETFXNWQEPWKWMEEBCVSVTWHWEXNWJWFX
+    NWGXORQEBWAWBWCWD $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
