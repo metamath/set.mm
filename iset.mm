@@ -117701,6 +117701,14 @@ $)
     ( cword wcel cc0 cfz co chash cfv w3a cmin cfzo cop csubstr swrdf ffnd ) AD
     EFBGCHIFCGAJKHIFLGCBMINIDABCOPIBCDAQR $.
 
+  $( The range of a subword of a word is a subset of the set of symbols for the
+     word.  (Contributed by AV, 13-Nov-2018.) $)
+  swrdrn $p |- ( ( W e. Word V /\ M e. ( 0 ... N )
+                   /\ N e. ( 0 ... ( # ` W ) ) )
+                 -> ran ( W substr <. M , N >. ) C_ V ) $=
+    ( cword wcel cc0 cfz co chash cfv w3a cmin cfzo cop csubstr swrdf frnd ) DC
+    EFAGBHIFBGDJKHIFLGBAMINICDABOPIABCDQR $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
