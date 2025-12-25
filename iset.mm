@@ -105357,6 +105357,14 @@ $)
     zlem1lt ancoms fzoval adantl eqeq1d 3bitr4d ) ACDZBCDZEZBFGHZAIJZAUIKHZLMZB
     ANJZABOHZLMUGUFUICDUJULPBQAUIRSUGUFUMUJPBATUAUHUNUKLUGUNUKMUFABUBUCUDUE $.
 
+  $( A half-open range of nonnegative integers is empty iff the upper bound is
+     not positive.  (Contributed by AV, 2-May-2020.) $)
+  fzo0n $p |- ( ( M e. ZZ /\ N e. ZZ )
+                -> ( N <_ M <-> ( 0 ..^ ( N - M ) ) = (/) ) ) $=
+    ( cz wcel cle wbr cc0 cmin co cfzo c0 wceq wb wa cr suble0 syl2an 0z zsubcl
+    zre fzon sylancr bitr3d ancoms ) BCDZACDZBAEFZGBAHIZJIKLZMUEUFNZUHGEFZUGUIU
+    EBODAODUKUGMUFBTATBAPQUJGCDUHCDUKUIMRBASGUHUAUBUCUD $.
+
   $( A half-open integer range is empty if the bounds are equal or reversed.
      (Contributed by AV, 20-Oct-2018.) $)
   fzonlt0 $p |- ( ( M e. ZZ /\ N e. ZZ )
