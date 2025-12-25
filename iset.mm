@@ -117777,6 +117777,14 @@ $)
       TXAWBXBWCVTWDSRXEXFWEXFXGWJABWFXFWGWKWHWISWL $.
   $}
 
+  $( Length of a right-anchored subword.  (Contributed by Alexander van der
+     Vekens, 5-Apr-2018.) $)
+  swrdrlen $p |- ( ( W e. Word V /\ I e. ( 0 ... ( # ` W ) ) )
+           -> ( # ` ( W substr <. I , ( # ` W ) >. ) ) = ( ( # ` W ) - I ) ) $=
+    ( cword wcel cc0 chash cfv cfz cop csubstr cmin wceq cn0 lencl nn0fz0 sylib
+    co adantr swrdlen mpd3an3 ) CBDEZAFCGHZIRZEZUCUDEZCAUCJKRGHUCALRMUBUFUEUBUC
+    NEUFBCOUCPQSBCAUCTUA $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
