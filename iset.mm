@@ -117682,6 +117682,16 @@ $)
     FZUOLGGDCPSZHSFZUQUSQUNVAUMUOCGDRUAUPVBUBFZVCUNUMVDUOCGDUCTVBUDUEABCDGUJUFU
     NUMUSUTQUOUNURCBUNCUNCCGDUGUHUIUKTUL $.
 
+  $( A subword of a word is a function from a half-open range of nonnegative
+     integers of the same length as the subword to the set of symbols for the
+     original word.  (Contributed by AV, 13-Nov-2018.) $)
+  swrdf $p |- ( ( W e. Word V /\ M e. ( 0 ... N ) /\ N e. ( 0 ... ( # ` W ) ) )
+                -> ( W substr <. M , N >. ) : ( 0 ..^ ( N - M ) ) --> V ) $=
+    ( cword wcel cc0 cfz co chash cfv w3a cop csubstr cfzo wf cmin cz elfzelz
+    id swrdclg wrdf syl syl3an swrdlen oveq2d feq2d mpbid ) DCEZFZAGBHIFZBGDJKZ
+    HIFZLZGDABMNIZJKZOIZCUOPZGBAQIZOIZCUOPUJUJUKARFZUMBRFZURUJTAGBSBGULSUJVAVBL
+    UOUIFURCDABUACUOUBUCUDUNUQUTCUOUNUPUSGOCDABUEUFUGUH $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
