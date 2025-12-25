@@ -117731,6 +117731,29 @@ $)
       ZOUHZVTOVKVMWAPVLEDABVGUITVNVQVTOVNVOOVPVNVLVOOPZVKVLUJVNVIVJQZVLWBUPVKWC
       VLVHVIVJUKTABULUMUNVPUOUQURVNVTEOVSSOVNEVROVSVIVJVLVROPZVHWCVLWDABUSUTVAV
       BEVSVCVDVEVF $.
+
+    $( The value of the subword extractor is the empty set (undefined) if the
+       range is not valid.  (Contributed by Alexander van der Vekens,
+       16-Mar-2018.)  (Proof shortened by AV, 2-May-2020.) $)
+    swrdnd $p |- ( ( W e. Word V /\ F e. ZZ /\ L e. ZZ )
+                   -> ( ( F < 0 \/ L <_ F \/ ( # ` W ) < L )
+                        -> ( W substr <. F , L >. ) = (/) ) ) $=
+      ( vi wcel cz cc0 clt wbr cle wn wo wa co c0 wb wi cfzo adantl cword chash
+      w3a cfv w3o cop csubstr 3orcomb df-3or orcom 3bitri wdc simp3 simp2 zdcle
+      wceq syl2anc pm5.63dc syl bitrid swrdlend com12 cdm wss cmin cv caddc cif
+      swrdval 0z zltnle mpan2 3ad2ant2 cn0 lencl 3ad2ant1 nn0zd orbi12d biimpcd
+      cmpt adantr imp pm3.14 3simpc jctil 3adant1 biimprcd ssfzo12bi syl2an23an
+      mtbird wrddm sseq2d notbid mpbird iffalsed eqtrd exp31 impcom jaoi sylbid
+      ) DCUAZFZAGFZBGFZUCZAHIJZBAKJZDUBUDZBIJZUEZXGXGLZXFXIMZNZMZDABUFUGOZPUPZX
+      JXGXLMZXEXNXJXFXIXGUEXLXGMXQXFXGXIUHXFXIXGUIXLXGUJUKXEXGULZXQXNQXEXDXCXRX
+      BXCXDUMZXBXCXDUNBAUOUQXGXLURUSUTXNXEXPXGXEXPRZXMXEXGXPABCDVAVBXLXKXTXLXKX
+      EXPXLXKNZXENZXOABSOZDVCZVDZEHBAVEOSOEVFAVGODUDVTZPVHZPXEXOYGUPYAEDABXAVIT
+      YBYEYFPYBYELZYCHXHSOZVDZLZYBYJHAKJZBXHKJZNZYBYLLZYMLZMZYNLYAXEYQXLXEYQRXK
+      XEXLYQXEXFYOXIYPXCXBXFYOQZXDXCHGFZYRVJAHVKVLVMXEXHGFZXDXIYPQXEXHXBXCXHVNF
+      XDCDVOZVPVQXSXHBVKUQVRVSWAWBYLYMWCUSXEXCXDNYSYTNZYAABIJZYJYNQXBXCXDWDXBXC
+      UUBXDXBYTYSXBXHUUAVQVJWEVPYAXEUUCXKXEUUCRXLXEUUCXKXCXDUUCXKQXBABVKWFWGTWB
+      ABHXHWHWIWJXEYHYKQZYAXBXCUUDXDXBYEYJXBYDYIYCCDWKWLWMVPTWNWOWPWQWRWSVBWT
+      $.
   $}
 
 
