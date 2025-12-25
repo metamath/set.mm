@@ -117785,6 +117785,17 @@ $)
     co adantr swrdlen mpd3an3 ) CBDEZAFCGHZIRZEZUCUDEZCAUCJKRGHUCALRMUBUFUEUBUC
     NEUFBCOUCPQSBCAUCTUA $.
 
+  $( Length of an extracted subword.  (Contributed by AV, 5-May-2020.) $)
+  swrdlen2 $p |- ( ( S e. Word V /\ ( F e. NN0 /\ L e. ( ZZ>= ` F ) )
+                     /\ L <_ ( # ` S ) )
+                   -> ( # ` ( S substr <. F , L >. ) ) = ( L - F ) ) $=
+    ( cword wcel cn0 cuz cfv chash cle wbr w3a cc0 cfz 3ad2ant2 elfz2nn0 sylibr
+    co 3jca wa cop csubstr cmin wceq simp1 simpl eluznn0 eluzle adantl 3ad2ant1
+    lencl simp3 swrdlen syl3anc ) ADEFZBGFZCBHIFZUAZCAJIZKLZMZUPBNCOSFZCNUTOSFZ
+    ABCUBUCSJICBUDSUEUPUSVAUFVBUQCGFZBCKLZMZVCUSUPVGVAUSUQVEVFUQURUGCBUHZURVFUQ
+    BCUIUJTPBCQRVBVEUTGFZVAMVDVBVEVIVAUSUPVEVAVHPUPUSVIVADAULUKUPUSVAUMTCUTQRDA
+    BCUNUO $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
