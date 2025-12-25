@@ -117692,6 +117692,15 @@ $)
     HIFZLZGDABMNIZJKZOIZCUOPZGBAQIZOIZCUOPUJUJUKARFZUMBRFZURUJTAGBSBGULSUJVAVBL
     UOUIFURCDABUACUOUBUCUDUNUQUTCUOUNUPUSGOCDABUEUFUGUH $.
 
+  $( Value of the subword extractor as function with domain.  (Contributed by
+     Alexander van der Vekens, 28-Mar-2018.)  (Proof shortened by AV,
+     2-May-2020.) $)
+  swrdvalfn $p |- ( ( S e. Word V /\ F e. ( 0 ... L )
+                                    /\ L e. ( 0 ... ( # ` S ) ) )
+                      -> ( S substr <. F , L >. ) Fn ( 0 ..^ ( L - F ) ) ) $=
+    ( cword wcel cc0 cfz co chash cfv w3a cmin cfzo cop csubstr swrdf ffnd ) AD
+    EFBGCHIFCGAJKHIFLGCBMINIDABCOPIBCDAQR $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
