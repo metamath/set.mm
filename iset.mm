@@ -117717,6 +117717,22 @@ $)
     ( cword wcel cc0 cfz co chash cfv w3a cmin cfzo cop csubstr swrdf frnd ) DC
     EFAGBHIFBGDJKHIFLGBAMINICDABOPIABCDQR $.
 
+  ${
+    $d F i $.  $d L i $.  $d V i $.  $d W i $.
+    $( The value of the subword extractor is the empty set (undefined) if the
+       range is not valid.  (Contributed by Alexander van der Vekens,
+       16-Mar-2018.)  (Proof shortened by AV, 2-May-2020.) $)
+    swrdlend $p |- ( ( W e. Word V /\ F e. ZZ /\ L e. ZZ )
+                     -> ( L <_ F -> ( W substr <. F , L >. ) = (/) ) ) $=
+      ( vi cword wcel cz w3a cle wbr cop csubstr co c0 wceq wa cfzo cmpt adantr
+      cdm wss cc0 cmin cv caddc cfv cif swrdval simpr 3simpc fzon syl mpbid 0ss
+      wb eqsstrdi iftrued fzo0n biimpa 3adantl1 mpteq1d mpt0 eqtrdi 3eqtrd ex )
+      DCFZGZAHGZBHGZIZBAJKZDABLMNZOPVKVLQZVMABRNZDUAZUBZEUCBAUDNRNZEUEAUFNDUGZS
+      ZOUHZVTOVKVMWAPVLEDABVGUITVNVQVTOVNVOOVPVNVLVOOPZVKVLUJVNVIVJQZVLWBUPVKWC
+      VLVHVIVJUKTABULUMUNVPUOUQURVNVTEOVSSOVNEVROVSVIVJVLVROPZVHWCVLWDABUSUTVAV
+      BEVSVCVDVEVF $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
