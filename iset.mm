@@ -117657,6 +117657,18 @@ $)
       MULWNWGCWMWGOGVSWGHWBUNUMVSCOGZWMVPVOWOVRCHDPQZUOUPWHBVNOUQRUREWCWIWJSWJU
       SUTTVSWCVTWJEABCDVAVBVCVSHOGWBOGWFVDVSDCVRVODOGVPDHVQPVEWPVFHWBVGVHWCVTVI
       RVSWBVJGZWDWBNVPVOWQVRCHDVKQWBVLTVM $.
+
+    $( A symbol in an extracted subword, indexed using the subword's indices.
+       (Contributed by Stefan O'Rear, 16-Aug-2015.) $)
+    swrdfv $p |- ( ( ( S e. Word A /\ F e. ( 0 ... L ) /\
+            L e. ( 0 ... ( # ` S ) ) ) /\ X e. ( 0 ..^ ( L - F ) ) ) ->
+        ( ( S substr <. F , L >. ) ` X ) = ( S ` ( X + F ) ) ) $=
+      ( vx cword wcel cc0 cfz co chash cfv w3a cmin cfzo caddc adantr cvv cz wa
+      cop csubstr cv cmpt wceq swrdval2 fveq1d eqid fvoveq1 simpr simpl1 adantl
+      elfzoelz elfzelz 3ad2ant2 zaddcld fvexg syl2anc fvmptd3 eqtrd ) BAGZHZCID
+      JKHZDIBLMJKHZNZEIDCOKZPKZHZUAZEBCDUBUCKZMZEFVHFUDZCQKBMZUEZMZECQKZBMZVFVL
+      VPUFVIVFEVKVOFABCDUGUHRVJFEVNVRVHVOSVOUIVMECBQUJVFVIUKVJVCVQTHVRSHVCVDVEV
+      IULVJECVIETHVFEIVGUNUMVFCTHZVIVDVCVSVECIDUOUPRUQVQBVBTURUSUTVA $.
   $}
 
 
