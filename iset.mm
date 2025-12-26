@@ -117849,6 +117849,26 @@ $)
     GZHZCBJUAZUBEBCUCZKLZMAUQKLZULUOUPURMNZULUOHZUJBOGZCOGZUPUTTUJUKUOUDUMVBULU
     NBPUEZUNVCULUMCPUFZBCDEQRSULUOUPUSMNZVAUKVBVCUPVFTUJUKUOUGVDVEBCDAQRSUH $.
 
+  $( Two subwords with the same bounds have the same length.  (Contributed by
+     AV, 4-May-2020.) $)
+  swrdsbslen $p |- ( ( ( W e. Word V /\ U e. Word V )
+                       /\ ( M e. NN0 /\ N e. NN0 )
+                       /\ ( N <_ ( # ` W ) /\ N <_ ( # ` U ) ) )
+                     -> ( # ` ( W substr <. M , N >. ) )
+                        = ( # ` ( U substr <. M , N >. ) ) ) $=
+    ( wcel wa cn0 chash cfv cle wbr w3a csubstr co wceq wi cz nn0z syl2an cword
+    cop wn simpr1 simpr2 simpl swrdsb0eq syl3anc fveq2d ancoms clt wb zltnle cr
+    ltle sylbird 3ad2ant2 cmin cuz simpl1l simpl2l anim12i anim1i df-3an sylibr
+    nn0re eluz2 simpl3l swrdlen2 syl121anc simpl1r simpl3r eqtr4d ex imp wdc wo
+    syld simprd simpld zdcle syl2anc exmiddc syl mpjaodan ) EDUAZFZAWFFZGZBHFZC
+    HFZGZCEIJKLZCAIJKLZGZMZCBKLZEBCUBZNOZIJZAWRNOZIJZPZWQUCZWQWPXCWQWPGZWSXAIXE
+    WIWLWQWSXAPWQWIWLWOUDWQWIWLWOUEWQWPUFABCDEUGUHUIUJWPXDXCWPXDBCKLZXCWLWIXDXF
+    QWOWLXDBCUKLZXFWJBRFZCRFZXGXDULWKBSZCSZBCUMTWJBUNFCUNFXGXFQWKBVFCVFBCUOTUPU
+    QWPXFXCWPXFGZWTCBUROZXBXLWGWJCBUSJFZWMWTXMPWGWHWLWOXFUTWJWKWIWOXFVAZXLXHXIX
+    FMZXNXLXHXIGZXFGXPWPXQXFWLWIXQWOWJXHWKXIXJXKVBUQZVCXHXIXFVDVEBCVGVEZWMWNWIW
+    LXFVHEBCDVIVJXLWHWJXNWNXBXMPWGWHWLWOXFVKXOXSWMWNWIWLXFVLABCDVIVJVMVNVRVOWPW
+    QVPZWQXDVQWPXIXHXTWPXHXIXRVSWPXHXIXRVTCBWAWBWQWCWDWE $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
