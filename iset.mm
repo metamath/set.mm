@@ -117814,6 +117814,31 @@ $)
     ULWFBSFWGBVQRVMQREBXBVNVODABCWOVRVOWNWQEAWMETFXNWQEPWKWMEEBCVSVTWHWEXNWJWFX
     NWGXORQEBWAWBWCWD $.
 
+  ${
+    $d A x $.  $d M x $.  $d N x $.  $d S x $.
+    $( A subword is a word over the symbols it consists of.  (Contributed by
+       AV, 2-Dec-2022.) $)
+    swrdwrdsymbg $p |- (
+        ( S e. Word A /\ M e. ( 0 ... N ) /\ N e. ( 0 ... ( # ` S ) ) )
+        -> ( S substr <. M , N >. ) e. Word ( S " ( M ..^ N ) ) ) $=
+      ( vx wcel cc0 co chash cfv cfzo wa wceq cn0 adantr adantl syl cz ad2antrl
+      syl2anc cword cfz cop csubstr cima cmin cv caddc cmpt swrdval2 3expb wfun
+      wf cdm ffund wi wrddm elfzodifsumelfzo imp eleq2 mpbird exp32 imp31 simpr
+      wrdf wb elfzelz fzoaddel2 syl3anc funfvima syl21anc fmpttd wfn cfn simpll
+      cvv wral elfzoelz zaddcld fvexg ralrimiva fnmpt 0z elfzel2 zsubcld fzofig
+      eqid sylancr fihashfn fznn0sub eqtrd oveq2d feq2d eqeltrd iswrdinn0 3impb
+      hashfzo0 ) BAUAZFZCGDUBHFZDGBIJZUBHFZBCDUCUDHZBCDKHZUEZUAZFWSWTXBLZLZXCEG
+      DCUFHZKHZEUGZCUHHZBJZUIZXFWSWTXBXCXNMEABCDUJUKXHGXNIJZKHZXEXNUMZXONFXNXFF
+      XHXQXJXEXNUMXHEXJXMXEXHXKXJFZLZBULZXLBUNZFZXLXDFZXMXEFZXHXTXRWSXTXGWSGXAK
+      HZABABVEUOOOWSXGXRYBWSYAYEMZXGXRYBUPUPABUQYFXGXRYBYFXGXRLZLYBXLYEFZYGYHYF
+      XGXRYHXAXKCDURUSPYFYBYHVFYGYAYEXLUTOVAVBQVCXSXRDRFZCRFZYCXHXRVDXHYIXRXGYI
+      WSXBYIWTDGXAVGPPOXHYJXRWTYJWSXBCGDVGZSOZXKDCVHVIXTYBLYCYDXDXLBVJUSVKVLXHX
+      PXJXEXNXHXOXIGKXHXOXJIJZXIXHXNXJVMZXJVNFZXOYMMXHXMVPFZEXJVQYNXHYPEXJXSWSX
+      LRFYPWSXGXRVOXSXKCXRXKRFXHXKGXIVRPYLVSXLBWRRVTTWAEXJXMXNVPXNWGWBQWTYOWSXB
+      WTGRFXIRFYOWCWTDCCGDWDYKWEGXIWFWHSXJXNWITWTYMXIMZWSXBWTXINFZYQCGDWJZXIWQQ
+      SWKZWLWMVAXHXOXINYTWTYRWSXBYSSWNXEXOXNWOTWNWP $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
