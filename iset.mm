@@ -5529,6 +5529,15 @@ $)
   $}
 
   ${
+    nsyl4.1 $e |- ( ph -> ps ) $.
+    nsyl4.2 $e |- ( -. ph -> ch ) $.
+    $( A negated syllogism inference.  (Contributed by Wolf Lammen,
+       20-May-2024.) $)
+    nsyl5 $p |- ( -. ps -> ch ) $=
+      ( wn con3i syl ) BFAFCABDGEH $.
+  $}
+
+  ${
     jc.1 $e |- ( ph -> ps ) $.
     jc.2 $e |- ( ph -> ch ) $.
     $( Inference joining the consequents of two premises.  (Contributed by NM,
@@ -105348,6 +105357,14 @@ $)
     zlem1lt ancoms fzoval adantl eqeq1d 3bitr4d ) ACDZBCDZEZBFGHZAIJZAUIKHZLMZB
     ANJZABOHZLMUGUFUICDUJULPBQAUIRSUGUFUMUJPBATUAUHUNUKLUGUNUKMUFABUBUCUDUE $.
 
+  $( A half-open range of nonnegative integers is empty iff the upper bound is
+     not positive.  (Contributed by AV, 2-May-2020.) $)
+  fzo0n $p |- ( ( M e. ZZ /\ N e. ZZ )
+                -> ( N <_ M <-> ( 0 ..^ ( N - M ) ) = (/) ) ) $=
+    ( cz wcel cle wbr cc0 cmin co cfzo c0 wceq wb wa cr suble0 syl2an 0z zsubcl
+    zre fzon sylancr bitr3d ancoms ) BCDZACDZBAEFZGBAHIZJIKLZMUEUFNZUHGEFZUGUIU
+    EBODAODUKUGMUFBTATBAPQUJGCDUHCDUKUIMRBASGUHUAUBUCUD $.
+
   $( A half-open integer range is empty if the bounds are equal or reversed.
      (Contributed by AV, 20-Oct-2018.) $)
   fzonlt0 $p |- ( ( M e. ZZ /\ N e. ZZ )
@@ -116367,6 +116384,17 @@ $(
     <td> Note that the index of the last symbol is less by 1 than the length of
          the word.</td></tr>
   <tr>
+    <td>Subword (or substring) of a word </td>
+    <td> ~ df-substr : ` ( W substr <. I , J >. ) ` </td>
+    <td>Operation which extracts a portion of a word. The result is a
+        consecutive, reindexed part of the sequence representing the word.</td>
+    <td> ` W : ( 0 ..^ 3 ) --> S -> ( W e. Word S
+    /\ ( W substr <. 1 , 2 >. ) e. Word S
+    /\ ( # `` ( W substr <. 1 , 2 >. )  ) = 1 ` </td>
+    <td> Note that the last index of the range defining the subword is greater
+         by 1 than the index of the last symbol of the subword in the sequence
+         of the original word.</td></tr>
+  <tr>
     <td>Concatenation of two words </td>
     <td> ~ df-concat : ` ( W ++ U ) ` </td>
     <td>Operation combining two words to one new word. The result is a
@@ -117523,6 +117551,461 @@ $)
     wceq ccatws1leng oveq1 ad2antlr eqtr2d ccats1val2 syl3anc ) CBFZGZCHIZASZJZ
     DBGZEBGZJZJZCDKLMZUFGZULANOMZUOHIZSUQUOEKLMIESUGUKUPUIULBCDPQUJUKULRUNURUHN
     OMZUQUGUKURUSSUIULBCDBTQUIUSUQSUGUMUHANOUAUBUCEUQBUOUDUE $.
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Subwords/substrings
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c substr $.
+
+  $( Syntax for the subword operator. $)
+  csubstr $a class substr $.
+
+  ${
+    $d s b x $.
+    $( Define an operation which extracts portions (called _subwords_ or
+       _substrings_) of words.  Definition in Section 9.1 of [AhoHopUll]
+       p. 318.  (Contributed by Stefan O'Rear, 15-Aug-2015.) $)
+    df-substr $a |- substr = ( s e. _V , b e. ( ZZ X. ZZ ) |->
+        if ( ( ( 1st ` b ) ..^ ( 2nd ` b ) ) C_ dom s ,
+          ( x e. ( 0 ..^ ( ( 2nd ` b ) - ( 1st ` b ) ) ) |->
+            ( s ` ( x + ( 1st ` b ) ) ) ) , (/) ) ) $.
+  $}
+
+  ${
+    $( Decidability of whether a range of integers is a subset of a word's
+       domain.  (Contributed by Jim Kingdon, 23-Dec-2025.) $)
+    fzowrddc $p |- ( ( S e. Word A /\ F e. ZZ /\ L e. ZZ )
+        -> DECID ( F ..^ L ) C_ dom S ) $=
+      ( wcel cz cfzo co wss wdc cc0 wbr wn wa cle zdcle 3ad2ant1 dcbid mpbird
+      wb cword w3a cdm chash cfv clt simpl2 sylancr simpl3 lencl adantr syl2anc
+      0z nn0zd dcand 0zd simpr ssfzo12bi syl221anc wo c0 fzonlt0 3adant1 biimpa
+      wceq 0ss eqsstrdi orcd df-dc sylibr zdclt exmiddc mpjaodan wrddm sseq2d
+      syl ) BAUAEZCFEZDFEZUBZCDGHZBUCZIZJWAKBUDUEZGHZIZJZVTCDUFLZWGWHMZVTWHNZWG
+      KCOLZDWDOLZNZJWJWKWLWJKFEZVRWKJUMVQVRVSWHUGZKCPUHWJVSWDFEZWLJVQVRVSWHUIZV
+      TWPWHVQVRWPVSVQWDABUJUNQUKZDWDPULUOWJWFWMWJVRVSWNWPWHWFWMTWOWQWJUPWRVTWHU
+      QCDKWDURUSRSVTWINZWFWFMZUTWGWSWFWTWSWAVAWEVTWIWAVAVEZVRVSWIXATVQCDVBVCVDW
+      EVFVGVHWFVIVJVTWHJZWHWIUTVRVSXBVQCDVKVCWHVLVPVMVTWCWFVTWBWEWAVQVRWBWEVEVS
+      ABVNQVORS $.
+  $}
+
+  ${
+    $d s b x S $.  $d s b x F $.  $d s b x L $.  $d s b x V $.  $d s b x A $.
+    $d x X $.
+    $( Value of a subword.  (Contributed by Stefan O'Rear, 15-Aug-2015.) $)
+    swrdval $p |- ( ( S e. V /\ F e. ZZ /\ L e. ZZ ) ->
+        ( S substr <. F , L >. ) = if ( ( F ..^ L ) C_ dom S ,
+          ( x e. ( 0 ..^ ( L - F ) ) |-> ( S ` ( x + F ) ) ) , (/) ) ) $=
+      ( vs vb wcel cz cvv cv c1st cfv c2nd cfzo co cc0 cmin c0 wceq w3a cop cxp
+      cdm wss caddc cmpt cif csubstr cmpo df-substr a1i wa simprl adantl op1stg
+      fveq2 3adant1 sylan9eqr op2ndg simp2 simp3 oveq12d sseq12d oveq2d fveq12d
+      simp1 mpteq12dv ifbieq1d syl3anc elex 3ad2ant1 opelxpi cfn zsubcld fzofig
+      dmeqd 0zd syl2anc mptexd 0ex ifexd ovmpod ) BEHZCIHZDIHZUAZFGBCDUBZJIIUCZ
+      GKZLMZWJNMZOPZFKZUDZUEZAQWLWKRPZOPZAKZWKUFPZWNMZUGZSUHZCDOPZBUDZUEZAQDCRP
+      ZOPZWSCUFPZBMZUGZSUHZUIJUIFGJWIXCUJTWGAFGUKULWGWNBTZWJWHTZUMZUMXMWKCTZWLD
+      TZXCXLTWGXMXNUNXOWGWKWHLMZCXNWKXRTXMWJWHLUQUOWEWFXRCTWDCDIIUPURUSXOWGWLWH
+      NMZDXNWLXSTXMWJWHNUQUOWEWFXSDTWDCDIIUTURUSXMXPXQUAZWPXFXBXKSXTWMXDWOXEXTW
+      KCWLDOXMXPXQVAZXMXPXQVBZVCXTWNBXMXPXQVGZVQVDXTAWRXAXHXJXTWQXGQOXTWLDWKCRY
+      BYAVCVEXTWTXIWNBYCXTWKCWSUFYAVEVFVHVIVJWDWEBJHWFBEVKVLWEWFWHWIHWDCDIIVMUR
+      WGXFXKSJJWGAXHXJVNWGQIHXGIHXHVNHWGVRWGDCWDWEWFVBWDWEWFVAVOQXGVPVSVTSJHWGW
+      AULWBWC $.
+
+    $( A zero length substring.  (Contributed by Stefan O'Rear,
+       27-Aug-2015.) $)
+    swrd00g $p |- ( ( S e. V /\ X e. ZZ )
+        -> ( S substr <. X , X >. ) = (/) ) $=
+      ( vx wcel cz wa cvv cop csubstr co c0 wceq elex adantr cfzo cc0 cmpt fzo0
+      eqtrdi simpr w3a cdm wss cv caddc cfv cif swrdval 0ss eqsstri iftruei zcn
+      cmin subidd oveq2d 3ad2ant2 mpteq1d mpt0 eqtrid eqtrd syl3anc ) ABEZCFEZG
+      AHEZVDVDACCIJKZLMVCVEVDABNOVCVDUAZVGVEVDVDUBZVFCCPKZAUCZUDZDQCCUNKZPKZDUE
+      CUFKAUGZRZLUHZLDACCHUIVHVPVOLVKVOLVILVJCSVJUJUKULVHVODLVNRLVHDVMLVNVHVMQQ
+      PKZLVDVEVMVQMVDVDVLQQPVDCCUMUOUPUQQSTURDVNUSTUTVAVB $.
+
+    $( Closure of the subword extractor.  (Contributed by Stefan O'Rear,
+       16-Aug-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.) $)
+    swrdclg $p |- ( ( S e. Word A /\ F e. ZZ /\ L e. ZZ )
+        -> ( S substr <. F , L >. ) e. Word A ) $=
+      ( vx cword wcel cz w3a cop csubstr co cfzo cdm wss cc0 cfv c0 wa wf caddc
+      cmin cmpt cif swrdval chash wrdf 3ad2ant1 ad2antrr simplr simpll3 simpll2
+      cv simpr fzoaddel2 syl3anc sseldd eleqtrd ffvelcdmd fmpttd simpl3 zsubcld
+      fdmd simpl2 iswrdiz syl2anc wn wrd0 a1i fzowrddc ifcldadc eqeltrd ) BAFZG
+      ZCHGZDHGZIZBCDJKLCDMLZBNZOZEPDCUBLZMLZEUMZCUALZBQZUCZRUDVMEBCDVMUEVQVTWFR
+      VMVQVTSZWBAWFTWAHGWFVMGWGEWBWEAWGWCWBGZSZPBUFQMLZAWDBVQWJABTZVTWHVNVOWKVP
+      ABUGUHUIZWIWDVSWJWIVRVSWDVQVTWHUJWIWHVPVOWDVRGWGWHUNVNVOVPVTWHUKVNVOVPVTW
+      HULWCDCUOUPUQWIWJABWLVCURUSUTWGDCVNVOVPVTVAVNVOVPVTVDVBAWAWFVEVFRVMGVQVTV
+      GSAVHVIABCDVJVKVL $.
+
+    $( Value of the subword extractor in its intended domain.  (Contributed by
+       Stefan O'Rear, 15-Aug-2015.)  (Proof shortened by AV, 2-May-2020.) $)
+    swrdval2 $p |- ( ( S e. Word A /\ F e. ( 0 ... L ) /\
+          L e. ( 0 ... ( # ` S ) ) ) -> ( S substr <. F , L >. ) =
+          ( x e. ( 0 ..^ ( L - F ) ) |-> ( S ` ( x + F ) ) ) ) $=
+      ( wcel cc0 cfz co cfv cfzo wss c0 wceq elfzelz 3ad2ant2 3ad2ant3 cuz syl
+      cz cword chash w3a cop csubstr cdm cmin cv caddc cmpt cif swrdval syl3anc
+      simp1 elfzuz fzoss1 elfzuz3 fzoss2 sstrd wrddm 3ad2ant1 sseqtrrd iftrued
+      eqtrd ) CBUAZFZDGEHIFZEGCUBJZHIFZUCZCDEUDUEIZDEKIZCUFZLZAGEDUGIKIAUHDUIIC
+      JUJZMUKZVOVJVFDTFZETFZVKVPNVFVGVIUNVGVFVQVIDGEOPVIVFVRVGEGVHOQACDEVEULUMV
+      JVNVOMVJVLGVHKIZVMVJVLGEKIZVSVJDGRJFZVLVTLVGVFWAVIDGEUOPDGEUPSVJVHERJFZVT
+      VSLVIVFWBVGEGVHUQQEGVHURSUSVFVGVMVSNVIBCUTVAVBVCVD $.
+
+    $( Length of an extracted subword.  (Contributed by Stefan O'Rear,
+       16-Aug-2015.) $)
+    swrdlen $p |- ( ( S e. Word A /\ F e. ( 0 ... L ) /\
+          L e. ( 0 ... ( # ` S ) ) ) ->
+        ( # ` ( S substr <. F , L >. ) ) = ( L - F ) ) $=
+      ( vx cword wcel cc0 cfz co chash cfv wfn wceq cz elfzelz 3ad2ant2 syl2anc
+      cvv syl w3a cop csubstr cmin cfzo cfn cv caddc cmpt wral wa simpl1 adantl
+      elfzoelz adantr zaddcld fvexg ralrimiva eqid fnmpt swrdval2 fneq1d mpbird
+      0z 3ad2ant3 zsubcld fzofig sylancr fihashfn cn0 fznn0sub hashfzo0 eqtrd )
+      BAFZGZCHDIJGZDHBKLZIJGZUAZBCDUBUCJZKLZHDCUDJZUEJZKLZWBVSVTWCMZWCUFGZWAWDN
+      VSWEEWCEUGZCUHJZBLZUIZWCMZVSWISGZEWCUJWKVSWLEWCVSWGWCGZUKZVOWHOGWLVOVPVRW
+      MULWNWGCWMWGOGVSWGHWBUNUMVSCOGZWMVPVOWOVRCHDPQZUOUPWHBVNOUQRUREWCWIWJSWJU
+      SUTTVSWCVTWJEABCDVAVBVCVSHOGWBOGWFVDVSDCVRVODOGVPDHVQPVEWPVFHWBVGVHWCVTVI
+      RVSWBVJGZWDWBNVPVOWQVRCHDVKQWBVLTVM $.
+
+    $( A symbol in an extracted subword, indexed using the subword's indices.
+       (Contributed by Stefan O'Rear, 16-Aug-2015.) $)
+    swrdfv $p |- ( ( ( S e. Word A /\ F e. ( 0 ... L ) /\
+            L e. ( 0 ... ( # ` S ) ) ) /\ X e. ( 0 ..^ ( L - F ) ) ) ->
+        ( ( S substr <. F , L >. ) ` X ) = ( S ` ( X + F ) ) ) $=
+      ( vx cword wcel cc0 cfz co chash cfv w3a cmin cfzo caddc adantr cvv cz wa
+      cop csubstr cv cmpt wceq swrdval2 fveq1d eqid fvoveq1 simpr simpl1 adantl
+      elfzoelz elfzelz 3ad2ant2 zaddcld fvexg syl2anc fvmptd3 eqtrd ) BAGZHZCID
+      JKHZDIBLMJKHZNZEIDCOKZPKZHZUAZEBCDUBUCKZMZEFVHFUDZCQKBMZUEZMZECQKZBMZVFVL
+      VPUFVIVFEVKVOFABCDUGUHRVJFEVNVRVHVOSVOUIVMECBQUJVFVIUKVJVCVQTHVRSHVCVDVEV
+      IULVJECVIETHVFEIVGUNUMVFCTHZVIVDVCVSVECIDUOUPRUQVQBVBTURUSUTVA $.
+  $}
+
+  $( The first symbol in an extracted subword.  (Contributed by AV,
+     27-Apr-2022.) $)
+  swrdfv0 $p |- ( ( S e. Word A /\ F e. ( 0 ..^ L )
+                    /\ L e. ( 0 ... ( # ` S ) ) )
+                  -> ( ( S substr <. F , L >. ) ` 0 ) = ( S ` F ) ) $=
+    ( cword wcel cc0 cfzo chash cfv cfz w3a cop csubstr caddc cmin wceq elfzofz
+    co 3ad2ant2 3anim2i cn fzonnsub lbfzo0 sylibr syl2anc elfzoelz zcnd addlidd
+    swrdfv fveq2d eqtrd ) BAEFZCGDHSFZDGBIJKSFZLZGBCDMNSJZGCOSZBJZCBJZUPUMCGDKS
+    FZUOLGGDCPSZHSFZUQUSQUNVAUMUOCGDRUAUPVBUBFZVCUNUMVDUOCGDUCTVBUDUEABCDGUJUFU
+    NUMUSUTQUOUNURCBUNCUNCCGDUGUHUIUKTUL $.
+
+  $( A subword of a word is a function from a half-open range of nonnegative
+     integers of the same length as the subword to the set of symbols for the
+     original word.  (Contributed by AV, 13-Nov-2018.) $)
+  swrdf $p |- ( ( W e. Word V /\ M e. ( 0 ... N ) /\ N e. ( 0 ... ( # ` W ) ) )
+                -> ( W substr <. M , N >. ) : ( 0 ..^ ( N - M ) ) --> V ) $=
+    ( cword wcel cc0 cfz co chash cfv w3a cop csubstr cfzo wf cmin cz elfzelz
+    id swrdclg wrdf syl syl3an swrdlen oveq2d feq2d mpbid ) DCEZFZAGBHIFZBGDJKZ
+    HIFZLZGDABMNIZJKZOIZCUOPZGBAQIZOIZCUOPUJUJUKARFZUMBRFZURUJTAGBSBGULSUJVAVBL
+    UOUIFURCDABUACUOUBUCUDUNUQUTCUOUNUPUSGOCDABUEUFUGUH $.
+
+  $( Value of the subword extractor as function with domain.  (Contributed by
+     Alexander van der Vekens, 28-Mar-2018.)  (Proof shortened by AV,
+     2-May-2020.) $)
+  swrdvalfn $p |- ( ( S e. Word V /\ F e. ( 0 ... L )
+                                    /\ L e. ( 0 ... ( # ` S ) ) )
+                      -> ( S substr <. F , L >. ) Fn ( 0 ..^ ( L - F ) ) ) $=
+    ( cword wcel cc0 cfz co chash cfv w3a cmin cfzo cop csubstr swrdf ffnd ) AD
+    EFBGCHIFCGAJKHIFLGCBMINIDABCOPIBCDAQR $.
+
+  $( The range of a subword of a word is a subset of the set of symbols for the
+     word.  (Contributed by AV, 13-Nov-2018.) $)
+  swrdrn $p |- ( ( W e. Word V /\ M e. ( 0 ... N )
+                   /\ N e. ( 0 ... ( # ` W ) ) )
+                 -> ran ( W substr <. M , N >. ) C_ V ) $=
+    ( cword wcel cc0 cfz co chash cfv w3a cmin cfzo cop csubstr swrdf frnd ) DC
+    EFAGBHIFBGDJKHIFLGBAMINICDABOPIABCDQR $.
+
+  ${
+    $d F i $.  $d L i $.  $d V i $.  $d W i $.
+    $( The value of the subword extractor is the empty set (undefined) if the
+       range is not valid.  (Contributed by Alexander van der Vekens,
+       16-Mar-2018.)  (Proof shortened by AV, 2-May-2020.) $)
+    swrdlend $p |- ( ( W e. Word V /\ F e. ZZ /\ L e. ZZ )
+                     -> ( L <_ F -> ( W substr <. F , L >. ) = (/) ) ) $=
+      ( vi cword wcel cz w3a cle wbr cop csubstr co c0 wceq wa cfzo cmpt adantr
+      cdm wss cc0 cmin cv caddc cfv cif swrdval simpr 3simpc fzon syl mpbid 0ss
+      wb eqsstrdi iftrued fzo0n biimpa 3adantl1 mpteq1d mpt0 eqtrdi 3eqtrd ex )
+      DCFZGZAHGZBHGZIZBAJKZDABLMNZOPVKVLQZVMABRNZDUAZUBZEUCBAUDNRNZEUEAUFNDUGZS
+      ZOUHZVTOVKVMWAPVLEDABVGUITVNVQVTOVNVOOVPVNVLVOOPZVKVLUJVNVIVJQZVLWBUPVKWC
+      VLVHVIVJUKTABULUMUNVPUOUQURVNVTEOVSSOVNEVROVSVIVJVLVROPZVHWCVLWDABUSUTVAV
+      BEVSVCVDVEVF $.
+
+    $( The value of the subword extractor is the empty set (undefined) if the
+       range is not valid.  (Contributed by Alexander van der Vekens,
+       16-Mar-2018.)  (Proof shortened by AV, 2-May-2020.) $)
+    swrdnd $p |- ( ( W e. Word V /\ F e. ZZ /\ L e. ZZ )
+                   -> ( ( F < 0 \/ L <_ F \/ ( # ` W ) < L )
+                        -> ( W substr <. F , L >. ) = (/) ) ) $=
+      ( vi wcel cz cc0 clt wbr cle wn wo wa co c0 wb wi cfzo adantl cword chash
+      w3a cfv w3o cop csubstr 3orcomb df-3or orcom 3bitri wdc simp3 simp2 zdcle
+      wceq syl2anc pm5.63dc syl bitrid swrdlend com12 cdm wss cmin cv caddc cif
+      swrdval 0z zltnle mpan2 3ad2ant2 cn0 lencl 3ad2ant1 nn0zd orbi12d biimpcd
+      cmpt adantr imp pm3.14 3simpc jctil 3adant1 biimprcd ssfzo12bi syl2an23an
+      mtbird wrddm sseq2d notbid mpbird iffalsed eqtrd exp31 impcom jaoi sylbid
+      ) DCUAZFZAGFZBGFZUCZAHIJZBAKJZDUBUDZBIJZUEZXGXGLZXFXIMZNZMZDABUFUGOZPUPZX
+      JXGXLMZXEXNXJXFXIXGUEXLXGMXQXFXGXIUHXFXIXGUIXLXGUJUKXEXGULZXQXNQXEXDXCXRX
+      BXCXDUMZXBXCXDUNBAUOUQXGXLURUSUTXNXEXPXGXEXPRZXMXEXGXPABCDVAVBXLXKXTXLXKX
+      EXPXLXKNZXENZXOABSOZDVCZVDZEHBAVEOSOEVFAVGODUDVTZPVHZPXEXOYGUPYAEDABXAVIT
+      YBYEYFPYBYELZYCHXHSOZVDZLZYBYJHAKJZBXHKJZNZYBYLLZYMLZMZYNLYAXEYQXLXEYQRXK
+      XEXLYQXEXFYOXIYPXCXBXFYOQZXDXCHGFZYRVJAHVKVLVMXEXHGFZXDXIYPQXEXHXBXCXHVNF
+      XDCDVOZVPVQXSXHBVKUQVRVSWAWBYLYMWCUSXEXCXDNYSYTNZYAABIJZYJYNQXBXCXDWDXBXC
+      UUBXDXBYTYSXBXHUUAVQVJWEVPYAXEUUCXKXEUUCRXLXEUUCXKXCXDUUCXKQXBABVKWFWGTWB
+      ABHXHWHWIWJXEYHYKQZYAXBXCUUDXDXBYEYJXBYDYIYCCDWKWLWMVPTWNWOWPWQWRWSVBWT
+      $.
+  $}
+
+  ${
+    $d F x $.  $d L x $.  $d b s z $.
+    $( A subword of an empty set is always the empty set.  (Contributed by AV,
+       31-Mar-2018.)  (Revised by AV, 20-Oct-2018.)  (Proof shortened by AV,
+       2-May-2020.) $)
+    swrd0g $p |- ( ( F e. ZZ /\ L e. ZZ )
+        -> ( (/) substr <. F , L >. ) = (/) ) $=
+      ( vx c0 cvv wcel cz co wceq cfzo cdm wss cmpt wa wbr dm0 a1i ancoms eqtrd
+      wn cop csubstr 0ex w3a cc0 cmin caddc cfv cif swrdval clt fzonlt0 biimprd
+      cv con2d impcom nsyl sseq2d mtbird iffalsed ssidd biimpac 3sstr4d iftrued
+      ss0 cle cr zre lenlt bicomd syl2anr fzo0n bitrd mpteq1d dmeqd wral dmmptg
+      wb ral0 mp1i wrel mptrel reldm0 mpbird wdc zdclt exmiddc mpjaodan 3adant1
+      wo syl mp3an1 ) DEFZAGFZBGFZDABUAUBHZDIUCWMWNWOUDWPABJHZDKZLZCUEBAUFHJHZC
+      UNAUGHDUHZMZDUIZDCDABEUJWNWOXCDIZWMWNWONZABUKOZXDXFTZXFXEXDXFXENZWSXBDXHW
+      SWQDLZXHWQDIZXIXEXFXJTXEXJXFXEXGXJABULZUMUOUPWQVEUQXHWRDWQWRDIZXHPQURUSUT
+      RXGXEXDXGXENZXCXBDXMWSXBDXMDDWQWRXMDVAXEXGXJXKVBXLXMPQVCVDXMXBDIZXBKZDIZX
+      MXOCDXAMZKZDXMXBXQXMCWTDXAXEXGWTDIZXEXGBAVFOZXSWOBVGFZAVGFZXGXTVRWNBVHAVH
+      YAYBNXTXGBAVIVJVKABVLVMVBVNVOXAEFZCDVPXRDIXMYCCVSCDXAEVQVTSXBWAXNXPVRXMCW
+      TXAWBXBWCVTWDSRXEXFWEXFXGWJABWFXFWGWKWHWISWL $.
+  $}
+
+  $( Length of a right-anchored subword.  (Contributed by Alexander van der
+     Vekens, 5-Apr-2018.) $)
+  swrdrlen $p |- ( ( W e. Word V /\ I e. ( 0 ... ( # ` W ) ) )
+           -> ( # ` ( W substr <. I , ( # ` W ) >. ) ) = ( ( # ` W ) - I ) ) $=
+    ( cword wcel cc0 chash cfv cfz cop csubstr cmin wceq cn0 lencl nn0fz0 sylib
+    co adantr swrdlen mpd3an3 ) CBDEZAFCGHZIRZEZUCUDEZCAUCJKRGHUCALRMUBUFUEUBUC
+    NEUFBCOUCPQSBCAUCTUA $.
+
+  $( Length of an extracted subword.  (Contributed by AV, 5-May-2020.) $)
+  swrdlen2 $p |- ( ( S e. Word V /\ ( F e. NN0 /\ L e. ( ZZ>= ` F ) )
+                     /\ L <_ ( # ` S ) )
+                   -> ( # ` ( S substr <. F , L >. ) ) = ( L - F ) ) $=
+    ( cword wcel cn0 cuz cfv chash cle wbr w3a cc0 cfz 3ad2ant2 elfz2nn0 sylibr
+    co 3jca wa cop csubstr cmin wceq simp1 simpl eluznn0 eluzle adantl 3ad2ant1
+    lencl simp3 swrdlen syl3anc ) ADEFZBGFZCBHIFZUAZCAJIZKLZMZUPBNCOSFZCNUTOSFZ
+    ABCUBUCSJICBUDSUEUPUSVAUFVBUQCGFZBCKLZMZVCUSUPVGVAUSUQVEVFUQURUGCBUHZURVFUQ
+    BCUIUJTPBCQRVBVEUTGFZVAMVDVBVEVIVAUSUPVEVAVHPUPUSVIVADAULUKUPUSVAUMTCUTQRDA
+    BCUNUO $.
+
+  $( A symbol in an extracted subword, indexed using the word's indices.
+     (Contributed by AV, 5-May-2020.) $)
+  swrdfv2 $p |- ( ( ( S e. Word V /\ ( F e. NN0 /\ L e. ( ZZ>= ` F ) )
+                      /\ L <_ ( # ` S ) ) /\ X e. ( F ..^ L ) )
+                  -> ( ( S substr <. F , L >. ) ` ( X - F ) ) = ( S ` X ) ) $=
+    ( wcel cn0 cfv wa cle wbr w3a cfzo co cc0 wceq 3ad2ant2 adantr cz cc eluzle
+    cword cuz chash cmin cop csubstr caddc cfz simp1 simpl adantl 3jca elfz2nn0
+    eluznn0 sylibr anim1i 3adant1 wb lencl 3ad2ant1 fznn0 mpbird nn0cn eluzelcn
+    pncan3 syl2an eqcomd oveq2d eleq2d biimpa eluzelz zsubcld fzosubel3 syl2anc
+    syl nn0z swrdfv elfzoelz zcnd npcan syl2anr fveq2d eqtrd ) ADUBFZBGFZCBUCHF
+    ZIZCAUDHZJKZLZEBCMNZFZIZEBUENZABCUFUGNHZWOBUHNZAHZEAHWNWEBOCUINFZCOWIUINFZL
+    ZWOOCBUENZMNFZWPWRPWKXAWMWKWEWSWTWEWHWJUJWKWFCGFZBCJKZLZWSWHWEXFWJWHWFXDXEW
+    FWGUKCBUOZWGXEWFBCUAULUMQBCUNUPWKWTXDWJIZWHWJXHWEWHXDWJXGUQURWKWIGFZWTXHUSW
+    EWHXIWJDAUTVACWIVBVPVCUMRWNEBBXBUHNZMNZFZXBSFZXCWKWMXLWKWLXKEWKCXJBMWHWECXJ
+    PWJWHXJCWFBTFZCTFXJCPWGBVDZBCVEBCVFVGVHQVIVJVKWKXMWMWHWEXMWJWHCBWGCSFWFBCVL
+    ULWFBSFWGBVQRVMQREBXBVNVODABCWOVRVOWNWQEAWMETFXNWQEPWKWMEEBCVSVTWHWEXNWJWFX
+    NWGXORQEBWAWBWCWD $.
+
+  ${
+    $d A x $.  $d M x $.  $d N x $.  $d S x $.
+    $( A subword is a word over the symbols it consists of.  (Contributed by
+       AV, 2-Dec-2022.) $)
+    swrdwrdsymbg $p |- (
+        ( S e. Word A /\ M e. ( 0 ... N ) /\ N e. ( 0 ... ( # ` S ) ) )
+        -> ( S substr <. M , N >. ) e. Word ( S " ( M ..^ N ) ) ) $=
+      ( vx wcel cc0 co chash cfv cfzo wa wceq cn0 adantr adantl syl cz ad2antrl
+      syl2anc cword cfz cop csubstr cima cmin cv caddc cmpt swrdval2 3expb wfun
+      wf cdm ffund wi wrddm elfzodifsumelfzo imp eleq2 mpbird exp32 imp31 simpr
+      wrdf wb elfzelz fzoaddel2 syl3anc funfvima syl21anc fmpttd wfn cfn simpll
+      cvv wral elfzoelz zaddcld fvexg ralrimiva fnmpt 0z elfzel2 zsubcld fzofig
+      eqid sylancr fihashfn fznn0sub eqtrd oveq2d feq2d eqeltrd iswrdinn0 3impb
+      hashfzo0 ) BAUAZFZCGDUBHFZDGBIJZUBHFZBCDUCUDHZBCDKHZUEZUAZFWSWTXBLZLZXCEG
+      DCUFHZKHZEUGZCUHHZBJZUIZXFWSWTXBXCXNMEABCDUJUKXHGXNIJZKHZXEXNUMZXONFXNXFF
+      XHXQXJXEXNUMXHEXJXMXEXHXKXJFZLZBULZXLBUNZFZXLXDFZXMXEFZXHXTXRWSXTXGWSGXAK
+      HZABABVEUOOOWSXGXRYBWSYAYEMZXGXRYBUPUPABUQYFXGXRYBYFXGXRLZLYBXLYEFZYGYHYF
+      XGXRYHXAXKCDURUSPYFYBYHVFYGYAYEXLUTOVAVBQVCXSXRDRFZCRFZYCXHXRVDXHYIXRXGYI
+      WSXBYIWTDGXAVGPPOXHYJXRWTYJWSXBCGDVGZSOZXKDCVHVIXTYBLYCYDXDXLBVJUSVKVLXHX
+      PXJXEXNXHXOXIGKXHXOXJIJZXIXHXNXJVMZXJVNFZXOYMMXHXMVPFZEXJVQYNXHYPEXJXSWSX
+      LRFYPWSXGXRVOXSXKCXRXKRFXHXKGXIVRPYLVSXLBWRRVTTWAEXJXMXNVPXNWGWBQWTYOWSXB
+      WTGRFXIRFYOWCWTDCCGDWDYKWEGXIWFWHSXJXNWITWTYMXIMZWSXBWTXINFZYQCGDWJZXIWQQ
+      SWKZWLWMVAXHXOXINYTWTYRWSXBYSSWNXEXOXNWOTWNWP $.
+  $}
+
+  $( Two subwords with the same bounds are equal if the range is not valid.
+     (Contributed by AV, 4-May-2020.) $)
+  swrdsb0eq $p |- ( ( ( W e. Word V /\ U e. Word V )
+                      /\ ( M e. NN0 /\ N e. NN0 ) /\ N <_ M )
+                    -> ( W substr <. M , N >. ) = ( U substr <. M , N >. ) ) $=
+    ( cword wcel wa cn0 cle csubstr co c0 wceq cz nn0z swrdlend syl3anc 3impia
+    wi wbr w3a cop simpll ad2antrl ad2antll simplr eqtr4d ) EDFZGZAUIGZHZBIGZCI
+    GZHZCBJUAZUBEBCUCZKLZMAUQKLZULUOUPURMNZULUOHZUJBOGZCOGZUPUTTUJUKUOUDUMVBULU
+    NBPUEZUNVCULUMCPUFZBCDEQRSULUOUPUSMNZVAUKVBVCUPVFTUJUKUOUGVDVEBCDAQRSUH $.
+
+  $( Two subwords with the same bounds have the same length.  (Contributed by
+     AV, 4-May-2020.) $)
+  swrdsbslen $p |- ( ( ( W e. Word V /\ U e. Word V )
+                       /\ ( M e. NN0 /\ N e. NN0 )
+                       /\ ( N <_ ( # ` W ) /\ N <_ ( # ` U ) ) )
+                     -> ( # ` ( W substr <. M , N >. ) )
+                        = ( # ` ( U substr <. M , N >. ) ) ) $=
+    ( wcel wa cn0 chash cfv cle wbr w3a csubstr co wceq wi cz nn0z syl2an cword
+    cop wn simpr1 simpr2 simpl swrdsb0eq syl3anc fveq2d ancoms clt wb zltnle cr
+    ltle sylbird 3ad2ant2 cmin cuz simpl1l simpl2l anim12i anim1i df-3an sylibr
+    nn0re eluz2 simpl3l swrdlen2 syl121anc simpl1r simpl3r eqtr4d ex imp wdc wo
+    syld simprd simpld zdcle syl2anc exmiddc syl mpjaodan ) EDUAZFZAWFFZGZBHFZC
+    HFZGZCEIJKLZCAIJKLZGZMZCBKLZEBCUBZNOZIJZAWRNOZIJZPZWQUCZWQWPXCWQWPGZWSXAIXE
+    WIWLWQWSXAPWQWIWLWOUDWQWIWLWOUEWQWPUFABCDEUGUHUIUJWPXDXCWPXDBCKLZXCWLWIXDXF
+    QWOWLXDBCUKLZXFWJBRFZCRFZXGXDULWKBSZCSZBCUMTWJBUNFCUNFXGXFQWKBVFCVFBCUOTUPU
+    QWPXFXCWPXFGZWTCBUROZXBXLWGWJCBUSJFZWMWTXMPWGWHWLWOXFUTWJWKWIWOXFVAZXLXHXIX
+    FMZXNXLXHXIGZXFGXPWPXQXFWLWIXQWOWJXHWKXIXJXKVBUQZVCXHXIXFVDVEBCVGVEZWMWNWIW
+    LXFVHEBCDVIVJXLWHWJXNWNXBXMPWGWHWLWOXFVKXOXSWMWNWIWLXFVLABCDVIVJVMVNVRVOWPW
+    QVPZWQXDVQWPXIXHXTWPXHXIXRVSWPXHXIXRVTCBWAWBWQWCWDWE $.
+
+  ${
+    $d M i j $.  $d N i j $.  $d U i j $.  $d V i $.  $d W i j $.
+    $( Two words have a common subword (starting at the same position with the
+       same length) iff they have the same symbols at each position.
+       (Contributed by Alexander van der Vekens, 7-Aug-2018.)  (Proof shortened
+       by AV, 7-May-2020.) $)
+    swrdspsleq $p |- ( ( ( W e. Word V /\ U e. Word V )
+                         /\ ( M e. NN0 /\ N e. NN0 )
+                         /\ ( N <_ ( # ` W ) /\ N <_ ( # ` U ) ) )
+                      -> ( ( W substr <. M , N >. ) = ( U substr <. M , N >. )
+                           <-> A. i e. ( M ..^ N ) ( W ` i ) = ( U ` i ) ) ) $=
+      ( vj wcel wa chash cfv wbr co wceq cfzo wral wb cz 3ad2ant2 cc0 cword cn0
+      cle w3a cop csubstr cv wn swrdsb0eq 3expa ancoms 3adantr3 wi c0 ral0 nn0z
+      fzon syl2an biimpa raleqdv mpbiri impcom 2thd simp1l simp2l nn0zd swrdclg
+      ex simp2r syl3anc simp1r eqwrd syl2anc adantl swrdsbslen biantrurd zltnle
+      clt cr nn0red ltle sylbird cmin wsbc caddc simpl1l simpl2l anim12i anim1i
+      cuz df-3an sylibr eluz2 jca simpl3l swrdlen2 oveq2d zsubcl syl2anr adantr
+      0zd fzoshftral nn0cn addlid npcan oveq12d elfzoelz ad2antrr zsubcld elexd
+      cc cvv csb sbceqg csbfvg eqeq12d bitrd 3jca swrdfv2 sylan simpl1r simpl3r
+      syl ralbidva 3bitrd syld 3bitr2d wdc wo simprd zdcle exmiddc mpjaodan ) F
+      EUAZHZAYNHZIZCUBHZDUBHZIZDFJKUCLZDAJKUCLZIZUDZDCUCLZFCDUEZUFMZAUUFUFMZNZB
+      UGZFKZUUJAKZNZBCDOMZPZQZUUEUHZUUEUUDUUPUUEUUDIUUIUUOUUEYQYTUUIUUCYQYTIUUE
+      UUIYQYTUUEUUIACDEFUIUJUKULUUDUUEUUOYTYQUUEUUOUMUUCYTUUEUUOYTUUEIZUUOUUMBU
+      NPUUMBUOUURUUMBUUNUNYTUUEUUNUNNZYRCRHZDRHZUUEUUSQYSCUPZDUPZCDUQURUSUTVAVH
+      SVBVCUKUUQUUDUUPUUQUUDIZUUIUUGJKZUUHJKNZGUGZUUGKZUVGUUHKZNZGTUVEOMZPZIZUV
+      LUUOUUDUUIUVMQZUUQUUDUUGYNHZUUHYNHZUVNUUDYOUUTUVAUVOYOYPYTUUCVDUUDCYQYRYS
+      UUCVEZVFZUUDDYQYRYSUUCVIZVFZEFCDVGVJUUDYPUUTUVAUVPYOYPYTUUCVKUVRUVTEACDVG
+      VJEEUUGGUUHVLVMVNUVDUVFUVLUUDUVFUUQACDEFVOVNVPUUDUUQUVLUUOQZUUDUUQCDUCLZU
+      WAUUDUUQCDVRLZUWBUUDUUTUVAUWCUUQQUVRUVTCDVQVMUUDCVSHDVSHUWCUWBUMUUDCUVQVT
+      UUDDUVSVTCDWAVMWBUUDUWBUWAUUDUWBIZUVLUVJGTDCWCMZOMZPZUVJGUUJCWCMZWDZBTCWE
+      MZUWECWEMZOMZPZUUOUWDUVJGUVKUWFUWDUVEUWETOUWDYOYRDCWJKHZIZUUAUVEUWENYOYPY
+      TUUCUWBWFZUWDYRUWNYRYSYQUUCUWBWGUWDUUTUVAUWBUDZUWNUWDUUTUVAIZUWBIUWQUUDUW
+      RUWBYTYQUWRUUCYRUUTYSUVAUVBUVCWHSZWIUUTUVAUWBWKWLCDWMWLWNZUUAUUBYQYTUWBWO
+      ZFCDEWPVJWQUTUUDUWGUWMQZUWBUUDTRHUWERHZUUTUXBUUDXAYTYQUXCUUCYSUVAUUTUXCYR
+      UVCUVBDCWRWSSYTYQUUTUUCYRUUTYSUVBWTSZUVJGBCTUWEXBVJWTUWDUWMUWIBUUNPUUOUWD
+      UWIBUWLUUNUUDUWLUUNNZUWBYTYQUXEUUCYSDXKHZCXKHZUXEYRDXCCXCUXFUXGIUWJCUWKDO
+      UXGUWJCNUXFCXDVNDCXEXFWSSWTUTUWDUWIUUMBUUNUWDUUJUUNHZIZUWIUWHUUGKZUWHUUHK
+      ZNZUUMUXIUWHXLHZUWIUXLQUXIUWHRUXIUUJCUXHUUJRHUWDUUJCDXGVNUUDUUTUWBUXHUVRX
+      HXIXJUXMUWIGUWHUVHXMZGUWHUVIXMZNUXLGUWHUVHUVIXLXNUXMUXNUXJUXOUXKGUWHXLUUG
+      XOGUWHXLUUHXOXPXQYCUXIUXJUUKUXKUULUWDYOUWOUUAUDUXHUXJUUKNUWDYOUWOUUAUWPUW
+      TUXAXRFCDEUUJXSXTUWDYPUWOUUBUDUXHUXKUULNUWDYPUWOUUBYOYPYTUUCUWBYAUWTUUAUU
+      BYQYTUWBYBXRACDEUUJXSXTXPXQYDXQYEVHYFVBYGUKUUDUUEYHZUUEUUQYIUUDUVAUUTUXPU
+      UDUUTUVAUWSYJUXDDCYKVMUUEYLYCYM $.
+  $}
+
+  $( Extract a single symbol from a word.  (Contributed by Stefan O'Rear,
+     23-Aug-2015.) $)
+  swrds1 $p |- ( ( W e. Word A /\ I e. ( 0 ..^ ( # ` W ) ) ) ->
+      ( W substr <. I , ( I + 1 ) >. ) = <" ( W ` I ) "> ) $=
+    ( wcel cc0 chash cfv cfzo co c1 caddc cs1 wceq cz adantl syl3anc cfz cuz cc
+    eqtrd cword wa cop csubstr simpl elfzoelz peano2zd swrdclg elfzouz peano2uz
+    cmin uzid 3syl elfzuzb sylanbrc fzofzp1 swrdlen zcnd ax-1cn sylancl syl2anc
+    pncan2 csn snidg ax-mp oveq2d fzo01 eqtrdi eleqtrrid swrdfv syl31anc addlid
+    eqs1 0z eqcomd syl fveq2d eqtr4d s1eqd ) CAUAZDZBECFGZHIDZUBZCBBJKIZUCUDIZE
+    WFGZLZBCGZLWDWFVTDZWFFGZJMWFWHMWDWABNDZWENDWJWAWCUEZWCWLWABEWBUFOZWDBWNUGAC
+    BWEUHPWDWKWEBUKIZJWDWABEWEQIDZWEEWBQIDZWKWOMWMWDBERGDZWEBRGZDZWPWCWRWABEWBU
+    IOWDWLBWSDWTWNBULBBUJUMBEWEUNUOZWCWQWAEWBBUPOZACBWEUQPWDBSDZJSDWOJMWDBWNURZ
+    USBJVBUTZTAWFVMVAWDWGWIWDWGEBKIZCGZWIWDWAWPWQEEWOHIZDWGXGMWMXAXBWDEEVCZXHEN
+    DEXIDVNENVDVEWDXHEJHIXIWDWOJEHXEVFVGVHVIACBWEEVJVKWDBXFCWDXCBXFMXDXCXFBBVLV
+    OVPVQVRVST $.
+
+  $( Extract the last single symbol from a word.  (Contributed by Alexander van
+     der Vekens, 23-Sep-2018.) $)
+  swrdlsw $p |- ( ( W e. Word V /\ W =/= (/) )
+                 -> ( W substr <. ( ( # ` W ) - 1 ) , ( # ` W ) >. )
+                    = <" ( lastS ` W ) "> ) $=
+    ( cword wcel c0 wne wa chash cfv c1 cmin co cop csubstr cs1 cc0 wceq adantr
+    3syl cc caddc clsw cfzo clt wbr cfn wb wrdfin fihashneq0 syl cn0 cz wi nn0z
+    lencl cn elnnz fzo0end sylbir ex imp swrds1 syldan nn0cn ax-1cn jctir npcan
+    sylbird eqcomd opeq2d oveq2d lswwrd s1eqd 3eqtr4d ) BACDZBEFZGZBBHIZJKLZVSJ
+    UALZMZNLZVSBIZOZBVSVRMZNLBUBIZOVOVPVSPVRUCLDZWBWDQVOVPWGVOVPPVRUDUEZWGVOBUF
+    DWHVPUGABUHBUIUJVOVRUKDZVRULDZWHWGUMABUOZVRUNWJWHWGWJWHGVRUPDWGVRUQVRURUSUT
+    SVHVAAVSBVBVCVQWEWABNVQVRVTVSVOVRVTQZVPVOWIVRTDZJTDZGZWLWKWIWMWNVRVDVEVFWOV
+    TVRVRJVGVISRVJVKVQWFWCVOWFWCQVPABVLRVMVN $.
+
+  ${
+    $d x A $.  $d x S $.  $d x X $.  $d x Y $.  $d x Z $.
+    $( Joining two adjacent subwords makes a longer subword.  (Contributed by
+       Stefan O'Rear, 20-Aug-2015.) $)
+    ccatswrd $p |- ( ( S e. Word A /\ ( X e. ( 0 ... Y ) /\
+        Y e. ( 0 ... Z ) /\ Z e. ( 0 ... ( # ` S ) ) ) ) ->
+      ( ( S substr <. X , Y >. ) ++ ( S substr <. Y , Z >. ) ) =
+        ( S substr <. X , Z >. ) ) $=
+      ( wcel cc0 cfz co chash cfv wa cmin cfzo syl3anc caddc wceq oveq2d adantr
+      cz vx cword w3a cop csubstr cconcat simpl elfzelz 3ad2ant1 adantl elfzel2
+      wfn swrdclg 3ad2ant2 ccatcl syl2anc wrdfn syl simpr1 simpr2 simpr3 fzass4
+      ccatlen biimpri simpld swrdlen 3adant3r1 oveq12d elfzelzd npncan3d 3eqtrd
+      zcnd fneq2d mpbid cv wo zsubcld anim1ci fzospliti eleq2d biimpar ccatval1
+      simpll simplr1 swrdfv syl31anc ccatval2 simplr2 simplr3 fzosubel3 eqeltrd
+      simpr eqtrd oveq1d cc subcld subadd23d nncand fveq2d jaodan syldan eqtr4d
+      elfzoelz eqfnfvd ) BAUBZFZCGDHIFZDGEHIZFZEGBJKZHIZFZUCZLZUAGECMIZNIZBCDUD
+      UEIZBDEUDUEIZUFIZBCEUDUEIZXNXSGXSJKZNIZULZXSXPULXNXSXEFZYCXNXQXEFZXRXEFZY
+      DXNXFCTFZDTFZYEXFXMUGZXMYGXFXGXIYGXLCGDUHUIUJZXMYHXFXGXIYHXLCGDUKUIUJZABC
+      DUMOZXNXFYHETFZYFYIYKXMYMXFXIXGYMXLDGEUKUNUJZABDEUMOZAXQXRUOUPAXSUQURXNYB
+      XPXSXNYAXOGNXNYAXQJKZXRJKZPIZDCMIZEDMIZPIZXOXNYEYFYAYRQYLYOAAXQXRVCUPXNYP
+      YSYQYTPXNXFXGDXKFZYPYSQYIXFXGXIXLUSZXNXIXLUUBXFXGXIXLUTZXFXGXIXLVAZXIXLLZ
+      UUBEDXJHIFZUUBUUGLUUFGDEXJVBVDVEUPZABCDVFOZXFXIXLYQYTQXGABDEVFVGVHZXNDCEX
+      NDXNDGEUUDVIZVLZXNCXNCGDUUCVIZVLZXNEXNEGXJUUEVIZVLVJZVKRVMVNXNXTGXTJKZNIZ
+      ULZXTXPULXNXTXEFZUUSXNXFYGYMUUTYIYJYNABCEUMOAXTUQURXNUURXPXTXNUUQXOGNXNXF
+      CXHFZXLUUQXOQYIXNXGXIUVAUUCUUDXGXILZUVADCEHIFZUVAUVCLUVBGCDEVBVDVEUPZUUEA
+      BCEVFORVMVNXNUAVOZXPFZLZUVEXSKZUVECPIZBKZUVEXTKZXNUVFUVEGYSNIZFZUVEYSXONI
+      ZFZVPZUVHUVJQZUVGUVFYSTFZLUVPXNUVRUVFXNDCUUKUUMVQVRUVEGXOYSVSURXNUVMUVQUV
+      OXNUVMLZUVHUVEXQKZUVJUVSYEYFUVEGYPNIZFZUVHUVTQXNYEUVMYLSXNYFUVMYOSXNUWBUV
+      MXNUWAUVLUVEXNYPYSGNUUIRVTWAAAXQXRUVEWBOUVSXFXGUUBUVMUVTUVJQXFXMUVMWCXGXI
+      XLXFUVMWDXNUUBUVMUUHSXNUVMWLABCDUVEWEWFWMXNUVOLZUVHUVEYPMIZXRKZUWDDPIZBKZ
+      UVJUWCYEYFUVEYPYRNIZFZUVHUWEQXNYEUVOYLSXNYFUVOYOSXNUWIUVOXNUWHUVNUVEXNYPY
+      SYRXONUUIXNYRUUAXOUUJUUPWMVHVTWAAXQXRUVEWGOUWCXFXIXLUWDGYTNIZFUWEUWGQXFXM
+      UVOWCXGXIXLXFUVOWHXGXIXLXFUVOWIUWCUWDUVEYSMIZUWJXNUWDUWKQUVOXNYPYSUVEMUUI
+      RZSUWCUVEYSUUANIZFZYTTFZUWKUWJFXNUWNUVOXNUWMUVNUVEXNUUAXOYSNUUPRVTWAXNUWO
+      UVOXNEDUUOUUKVQSUVEYSYTWJUPWKABDEUWDWEWFUWCUWFUVIBUWCUWFUWKDPIZUVEDYSMIZP
+      IZUVIXNUWFUWPQUVOXNUWDUWKDPUWLWNSUWCUVEYSDUVOUVEWOFXNUVOUVEUVEYSXOXCVLUJX
+      NYSWOFUVOXNDCUULUUNWPSXNDWOFUVOUULSWQXNUWRUVIQUVOXNUWQCUVEPXNDCUULUUNWRRS
+      VKWSVKWTXAUVGXFUVAXLUVFUVKUVJQXFXMUVFWCXNUVAUVFUVDSXGXIXLXFUVFWIXNUVFWLAB
+      CEUVEWEWFXBXD $.
+  $}
+
+  ${
+    $d k B $.  $d k S $.  $d k T $.
+    $( Recover the right half of a concatenated word.  (Contributed by Mario
+       Carneiro, 27-Sep-2015.) $)
+    swrdccat2 $p |- ( ( S e. Word B /\ T e. Word B ) ->
+ ( ( S ++ T ) substr <. ( # ` S ) , ( ( # ` S ) + ( # ` T ) ) >. ) = T ) $=
+      ( vk wcel wa cc0 chash cfv cfzo co wfn nn0zd adantr cn0 cfz syl2an oveq2d
+      wceq cuz cword cconcat caddc cop csubstr cz ccatcl lencl adantl nn0addcld
+      swrdclg syl3anc wrdfn cmin nn0uz eleqtrdi uzidd uzaddcl sylanbrc nn0addcl
+      syl elfzuzb ccatlen eleqtrrd swrdlen nn0cnd pncan2 eqtrd fneq2d mpbid w3a
+      cc cv 3jca eleq2d biimpar swrdfv syl2an2r ccatval3 3expa eqfnfvd ) BAUAZE
+      ZCWBEZFZDGCHIZJKZBCUBKZBHIZWIWFUCKZUDUEKZCWEWKGWKHIZJKZLZWKWGLWEWKWBEZWNW
+      EWHWBEZWIUFEZWJUFEWOABCUGZWCWQWDWCWIABUHZMZNWEWJWEWIWFWCWIOEZWDWSNWDWFOEZ
+      WCACUHZUIUJMAWHWIWJUKULAWKUMVAWEWMWGWKWEWLWFGJWEWLWJWIUNKZWFWEWPWIGWJPKZE
+      ZWJGWHHIZPKZEZWLXDSWRWEWIGTIZEZWJWITIZEZXFWCXKWDWCWIOXJWSUOUPNWCWIXLEXBXM
+      WDWCWIWTUQXCWFWIWIURQWIGWJVBUSZWEWJXEXHWEWJXJEWJWJTIEWJXEEWEWJOXJWCXAXBWJ
+      OEWDWSXCWIWFUTQZUOUPWEWJWEWJXOMUQWJGWJVBUSWEXGWJGPAABCVCRVDZAWHWIWJVEULWC
+      WIVLEWFVLEXDWFSWDWCWIWSVFWDWFXCVFWIWFVGQZVHRVIVJWDCWGLWCACUMUIWEDVMZWGEZF
+      XRWKIZXRWIUCKWHIZXRCIZWEWPXFXIVKXSXRGXDJKZEZXTYASWEWPXFXIWRXNXPVNWEYDXSWE
+      YCWGXRWEXDWFGJXQRVOVPAWHWIWJXRVQVRWCWDXSYAYBSABCXRVSVTVHWA $.
+  $}
 
 
 $(
@@ -193388,6 +193871,9 @@ htmldef '">' as
     "<IMG SRC='rangle.gif' WIDTH=4 HEIGHT=19 ALT='&gt;' TITLE='&gt;'>";
   althtmldef '">' as '&rdquo;&rang;'; /* &#8221;&#9002; */
   latexdef '">' as "''\rangle";
+htmldef "substr" as " substr ";
+  althtmldef "substr" as " substr ";
+  latexdef "substr" as "\mathrm{substr}";
 htmldef "~QG" as " ~<sub><i>QG</i></sub> ";
   althtmldef "~QG" as " ~<sub><i>QG</i></sub> ";
   latexdef "~QG" as " \sim_{QG} ";
