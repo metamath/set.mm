@@ -191429,6 +191429,17 @@ $)
   df-edg $a |- Edg = ( g e. _V |-> ran ( iEdg ` g ) ) $.
 
   ${
+    $d G g $.
+    $( The edges of a graph.  (Contributed by AV, 1-Jan-2020.)  (Revised by AV,
+       13-Oct-2020.)  (Revised by AV, 8-Dec-2021.) $)
+    edgvalg $p |- ( G e. V -> ( Edg ` G ) = ran ( iEdg ` G ) ) $=
+      ( vg wcel cv ciedg cfv crn cvv cedg df-edg wceq fveq2 rneqd elex cxp c2nd
+      cedgf cif iedgvalg 2ndexg cnx edgfid edgfndxnn ndxslid slotex ifexd rnexg
+      eqeltrd syl fvmptd3 ) ABDZCACEZFGZHAFGZHZIJICKUMALUNUOUMAFMNABOULUOIDUPID
+      ULUOAIIPDZAQGZARGZSIABTULUQURUSIIABUAARBRUBRGUCUDUEUFUGUIUOIUHUJUK $.
+  $}
+
+  ${
     $d E g $.  $d V g $.
     $( The edges of a graph represented as ordered pair.  (Contributed by AV,
        1-Jan-2020.)  (Revised by AV, 13-Oct-2020.) $)
