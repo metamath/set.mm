@@ -117914,6 +117914,22 @@ $)
       UDUUTUVAUWSYJUXDDCYKVMUUEYLYCYM $.
   $}
 
+  $( Extract a single symbol from a word.  (Contributed by Stefan O'Rear,
+     23-Aug-2015.) $)
+  swrds1 $p |- ( ( W e. Word A /\ I e. ( 0 ..^ ( # ` W ) ) ) ->
+      ( W substr <. I , ( I + 1 ) >. ) = <" ( W ` I ) "> ) $=
+    ( wcel cc0 chash cfv cfzo co c1 caddc cs1 wceq cz adantl syl3anc cfz cuz cc
+    eqtrd cword wa cop csubstr simpl elfzoelz peano2zd swrdclg elfzouz peano2uz
+    cmin uzid 3syl elfzuzb sylanbrc fzofzp1 swrdlen zcnd ax-1cn sylancl syl2anc
+    pncan2 csn snidg ax-mp oveq2d fzo01 eqtrdi eleqtrrid swrdfv syl31anc addlid
+    eqs1 0z eqcomd syl fveq2d eqtr4d s1eqd ) CAUAZDZBECFGZHIDZUBZCBBJKIZUCUDIZE
+    WFGZLZBCGZLWDWFVTDZWFFGZJMWFWHMWDWABNDZWENDWJWAWCUEZWCWLWABEWBUFOZWDBWNUGAC
+    BWEUHPWDWKWEBUKIZJWDWABEWEQIDZWEEWBQIDZWKWOMWMWDBERGDZWEBRGZDZWPWCWRWABEWBU
+    IOWDWLBWSDWTWNBULBBUJUMBEWEUNUOZWCWQWAEWBBUPOZACBWEUQPWDBSDZJSDWOJMWDBWNURZ
+    USBJVBUTZTAWFVMVAWDWGWIWDWGEBKIZCGZWIWDWAWPWQEEWOHIZDWGXGMWMXAXBWDEEVCZXHEN
+    DEXIDVNENVDVEWDXHEJHIXIWDWOJEHXEVFVGVHVIACBWEEVJVKWDBXFCWDXCBXFMXDXCXFBBVLV
+    OVPVQVRVST $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
