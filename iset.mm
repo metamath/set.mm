@@ -191503,6 +191503,18 @@ $)
       ZJUFCEPUGDDUGFQRSUAADBUBUC $.
   $}
 
+  ${
+    edg0iedg0.i $e |- I = ( iEdg ` G ) $.
+    edg0iedg0.e $e |- E = ( Edg ` G ) $.
+    $( There is no edge in a graph iff its edge function is empty.
+       (Contributed by AV, 15-Dec-2020.)  (Revised by AV, 8-Dec-2021.) $)
+    edg0iedg0g $p |- ( ( G e. V /\ Fun I ) -> ( E = (/) <-> I = (/) ) ) $=
+      ( wcel wfun wa c0 wceq ciedg cfv crn wb cedg edgvalg eqtrid eqeq1d adantr
+      eqcomi rneqi eqeq1i a1i wrel funrel relrn0 bicomd syl adantl 3bitrd ) BDG
+      ZCHZIZAJKZBLMZNZJKZCNZJKZCJKZULUOUROUMULAUQJULABPMUQFBDQRSTURUTOUNUQUSJUP
+      CCUPEUAUBUCUDUMUTVAOZULUMCUEZVBCUFVCVAUTCUGUHUIUJUK $.
+  $}
+
 
 $(
 ###############################################################################
