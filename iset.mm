@@ -117839,6 +117839,16 @@ $)
       SWKZWLWMVAXHXOXINYTWTYRWSXBYSSWNXEXOXNWOTWNWP $.
   $}
 
+  $( Two subwords with the same bounds are equal if the range is not valid.
+     (Contributed by AV, 4-May-2020.) $)
+  swrdsb0eq $p |- ( ( ( W e. Word V /\ U e. Word V )
+                      /\ ( M e. NN0 /\ N e. NN0 ) /\ N <_ M )
+                    -> ( W substr <. M , N >. ) = ( U substr <. M , N >. ) ) $=
+    ( cword wcel wa cn0 cle csubstr co c0 wceq cz nn0z swrdlend syl3anc 3impia
+    wi wbr w3a cop simpll ad2antrl ad2antll simplr eqtr4d ) EDFZGZAUIGZHZBIGZCI
+    GZHZCBJUAZUBEBCUCZKLZMAUQKLZULUOUPURMNZULUOHZUJBOGZCOGZUPUTTUJUKUOUDUMVBULU
+    NBPUEZUNVCULUMCPUFZBCDEQRSULUOUPUSMNZVAUKVBVCUPVFTUJUKUOUGVDVEBCDAQRSUH $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
