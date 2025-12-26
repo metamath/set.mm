@@ -117930,6 +117930,20 @@ $)
     DEXIDVNENVDVEWDXHEJHIXIWDWOJEHXEVFVGVHVIACBWEEVJVKWDBXFCWDXCBXFMXDXCXFBBVLV
     OVPVQVRVST $.
 
+  $( Extract the last single symbol from a word.  (Contributed by Alexander van
+     der Vekens, 23-Sep-2018.) $)
+  swrdlsw $p |- ( ( W e. Word V /\ W =/= (/) )
+                 -> ( W substr <. ( ( # ` W ) - 1 ) , ( # ` W ) >. )
+                    = <" ( lastS ` W ) "> ) $=
+    ( cword wcel c0 wne wa chash cfv c1 cmin co cop csubstr cs1 cc0 wceq adantr
+    3syl cc caddc clsw cfzo clt wbr cfn wb wrdfin fihashneq0 syl cn0 cz wi nn0z
+    lencl cn elnnz fzo0end sylbir ex imp swrds1 syldan nn0cn ax-1cn jctir npcan
+    sylbird eqcomd opeq2d oveq2d lswwrd s1eqd 3eqtr4d ) BACDZBEFZGZBBHIZJKLZVSJ
+    UALZMZNLZVSBIZOZBVSVRMZNLBUBIZOVOVPVSPVRUCLDZWBWDQVOVPWGVOVPPVRUDUEZWGVOBUF
+    DWHVPUGABUHBUIUJVOVRUKDZVRULDZWHWGUMABUOZVRUNWJWHWGWJWHGVRUPDWGVRUQVRURUSUT
+    SVHVAAVSBVBVCVQWEWABNVQVRVTVSVOVRVTQZVPVOWIVRTDZJTDZGZWLWKWIWMWNVRVDVEVFWOV
+    TVRVRJVGVISRVJVKVQWFWCVOWFWCQVPABVLRVMVN $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
