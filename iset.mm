@@ -191440,6 +191440,16 @@ $)
   $}
 
   ${
+    iedgedg.e $e |- E = ( iEdg ` G ) $.
+    $( An indexed edge is an edge.  (Contributed by AV, 19-Dec-2021.) $)
+    iedgedgg $p |- ( ( G e. V /\ Fun E /\ I e. dom E )
+        -> ( E ` I ) e. ( Edg ` G ) ) $=
+      ( wcel wfun cdm w3a cfv crn cedg fvelrn 3adant1 ciedg wceq 3ad2ant1 rneqi
+      edgvalg eqtr4di eleqtrrd ) BDFZAGZCAHFZIZCAJZAKZBLJZUCUDUFUGFUBCAMNUEUHBO
+      JZKZUGUBUCUHUJPUDBDSQAUIERTUA $.
+  $}
+
+  ${
     $d E g $.  $d V g $.
     $( The edges of a graph represented as ordered pair.  (Contributed by AV,
        1-Jan-2020.)  (Revised by AV, 13-Oct-2020.) $)
