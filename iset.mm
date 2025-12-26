@@ -117985,6 +117985,28 @@ $)
       CEUVEWEWFXBXD $.
   $}
 
+  ${
+    $d k B $.  $d k S $.  $d k T $.
+    $( Recover the right half of a concatenated word.  (Contributed by Mario
+       Carneiro, 27-Sep-2015.) $)
+    swrdccat2 $p |- ( ( S e. Word B /\ T e. Word B ) ->
+ ( ( S ++ T ) substr <. ( # ` S ) , ( ( # ` S ) + ( # ` T ) ) >. ) = T ) $=
+      ( vk wcel wa cc0 chash cfv cfzo co wfn nn0zd adantr cn0 cfz syl2an oveq2d
+      wceq cuz cword cconcat caddc cop csubstr cz ccatcl lencl adantl nn0addcld
+      swrdclg syl3anc wrdfn cmin nn0uz eleqtrdi uzidd uzaddcl sylanbrc nn0addcl
+      syl elfzuzb ccatlen eleqtrrd swrdlen nn0cnd pncan2 eqtrd fneq2d mpbid w3a
+      cc cv 3jca eleq2d biimpar swrdfv syl2an2r ccatval3 3expa eqfnfvd ) BAUAZE
+      ZCWBEZFZDGCHIZJKZBCUBKZBHIZWIWFUCKZUDUEKZCWEWKGWKHIZJKZLZWKWGLWEWKWBEZWNW
+      EWHWBEZWIUFEZWJUFEWOABCUGZWCWQWDWCWIABUHZMZNWEWJWEWIWFWCWIOEZWDWSNWDWFOEZ
+      WCACUHZUIUJMAWHWIWJUKULAWKUMVAWEWMWGWKWEWLWFGJWEWLWJWIUNKZWFWEWPWIGWJPKZE
+      ZWJGWHHIZPKZEZWLXDSWRWEWIGTIZEZWJWITIZEZXFWCXKWDWCWIOXJWSUOUPNWCWIXLEXBXM
+      WDWCWIWTUQXCWFWIWIURQWIGWJVBUSZWEWJXEXHWEWJXJEWJWJTIEWJXEEWEWJOXJWCXAXBWJ
+      OEWDWSXCWIWFUTQZUOUPWEWJWEWJXOMUQWJGWJVBUSWEXGWJGPAABCVCRVDZAWHWIWJVEULWC
+      WIVLEWFVLEXDWFSWDWCWIWSVFWDWFXCVFWIWFVGQZVHRVIVJWDCWGLWCACUMUIWEDVMZWGEZF
+      XRWKIZXRWIUCKWHIZXRCIZWEWPXFXIVKXSXRGXDJKZEZXTYASWEWPXFXIWRXNXPVNWEYDXSWE
+      YCWGXRWEXDWFGJXQRVOVPAWHWIWJXRVQVRWCWDXSYAYBSABCXRVSVTVHWA $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
