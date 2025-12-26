@@ -191491,6 +191491,18 @@ $)
       DMHXCBOMOWNVOQVRVSSVTWHMWASWBWGWHAABCDEFWCUEWD $.
   $}
 
+  ${
+    $d E x $.  $d I x $.
+    edgiedgb.i $e |- I = ( iEdg ` G ) $.
+    $( A set is an edge iff it is an indexed edge.  (Contributed by AV,
+       17-Oct-2020.)  (Revised by AV, 8-Dec-2021.) $)
+    edgiedgbg $p |- ( ( G e. V /\ Fun I ) -> ( E e. ( Edg ` G )
+                                <-> E. x e. dom I E = ( I ` x ) ) ) $=
+      ( wcel cedg cfv crn wfun wceq cdm wrex ciedg edgvalg eqcomi rneqi eqtrdi
+      cv eleq2d elrnrexdmb sylan9bb ) CEGZBCHIZGBDJZGDKBATDILADMNUDUEUFBUDUECOI
+      ZJUFCEPUGDDUGFQRSUAADBUBUC $.
+  $}
+
 
 $(
 ###############################################################################
