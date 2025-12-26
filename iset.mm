@@ -191372,6 +191372,106 @@ $)
 
 
 $(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Degenerated cases of representations of graphs
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $( Degenerated case 1 for vertices:  The set of vertices of the empty set is
+     the empty set.  (Contributed by AV, 24-Sep-2020.) $)
+  vtxval0 $p |- ( Vtx ` (/) ) = (/) $=
+    ( cvv cxp wcel c1st cfv cbs cif cvtx 0nelxp iffalsei wceq 0ex vtxvalg ax-mp
+    c0 base0 3eqtr4i ) OAABCZODEZOFEZGZTOHEZORSTAAIJOACUBUAKLOAMNPQ $.
+
+  $( Degenerated case 1 for edges:  The set of indexed edges of the empty set
+     is the empty set.  (Contributed by AV, 24-Sep-2020.) $)
+  iedgval0 $p |- ( iEdg ` (/) ) = (/) $=
+    ( cvv cxp wcel c2nd cfv cedgf cif ciedg 0nelxp iffalsei wceq iedgvalg ax-mp
+    c0 0ex cnx edgfid edgfndxnn ndxslid strsl0 3eqtr4i ) NAABCZNDEZNFEZGZUDNHEZ
+    NUBUCUDAAIJNACUFUEKONALMFFPFEQRSTUA $.
+
+  $( Degenerated case 4 for vertices:  The set of vertices of a proper class is
+     the empty set.  (Contributed by AV, 12-Oct-2020.) $)
+  vtxvalprc $p |- ( C e/ _V -> ( Vtx ` C ) = (/) ) $=
+    ( cvv wnel wcel wn cvtx cfv c0 wceq df-nel fvprc sylbi ) ABCABDEAFGHIABJAFK
+    L $.
+
+  $( Degenerated case 4 for edges:  The set of indexed edges of a proper class
+     is the empty set.  (Contributed by AV, 12-Oct-2020.) $)
+  iedgvalprc $p |- ( C e/ _V -> ( iEdg ` C ) = (/) ) $=
+    ( cvv wnel wcel wn ciedg cfv c0 wceq df-nel fvprc sylbi ) ABCABDEAFGHIABJAF
+    KL $.
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Edges as range of the edge function
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c Edg $.
+
+  $( Extend class notation with the set of edges (of an undirected simple
+     (hyper-/pseudo-)graph). $)
+  cedg $a class Edg $.
+
+  $( Define the class of edges of a graph, see also definition "E = E(G)" in
+     section I.1 of [Bollobas] p. 1.  This definition is very general:  It
+     defines edges of a class as the range of its edge function (which does not
+     even need to be a function).  Therefore, this definition could also be
+     used for hypergraphs, pseudographs and multigraphs.  In these cases,
+     however, the (possibly more than one) edges connecting the same vertices
+     could not be distinguished anymore.  In some cases, this is no problem, so
+     theorems with ` Edg ` are meaningful nevertheless.  Usually, however, this
+     definition is used only for undirected simple (hyper-/pseudo-)graphs (with
+     or without loops).  (Contributed by AV, 1-Jan-2020.)  (Revised by AV,
+     13-Oct-2020.) $)
+  df-edg $a |- Edg = ( g e. _V |-> ran ( iEdg ` g ) ) $.
+
+  ${
+    $d E g $.  $d V g $.
+    $( The edges of a graph represented as ordered pair.  (Contributed by AV,
+       1-Jan-2020.)  (Revised by AV, 13-Oct-2020.) $)
+    edgopval $p |- ( ( V e. W /\ E e. X ) -> ( Edg ` <. V , E >. ) = ran E ) $=
+      ( vg wcel wa cop cedg cfv ciedg crn cvv df-edg fveq2 rneqd opexg opiedgfv
+      cv wceq simpr eqeltrd rnexg syl fvmptd3 eqtrd ) BCFZADFZGZBAHZIJUJKJZLZAL
+      UIEUJESZKJZLULMIMENUMUJTUNUKUMUJKOPBACDQUIUKDFULMFUIUKADABCDRZUGUHUAUBUKD
+      UCUDUEUIUKAUOPUF $.
+  $}
+
+  $( The edges of a graph represented as ordered pair, shown as operation
+     value.  Although a little less intuitive, this representation is often
+     used because it is shorter than the representation as function value of a
+     graph given as ordered pair, see ~ edgopval .  The representation
+     ` ran E ` for the set of edges is even shorter, though.  (Contributed by
+     AV, 2-Jan-2020.)  (Revised by AV, 13-Oct-2020.) $)
+  edgov $p |- ( ( V e. W /\ E e. X ) -> ( V Edg E ) = ran E ) $=
+    ( wcel wa cedg co cop cfv crn df-ov edgopval eqtrid ) BCEADEFBAGHBAIGJAKBAG
+    LABCDMN $.
+
+  ${
+    $d G g $.
+    edgstruct.s $e |- G = { <. ( Base ` ndx ) , V >. ,
+                            <. ( .ef ` ndx ) , E >. } $.
+    $( The edges of a graph represented as an extensible structure with
+       vertices as base set and indexed edges.  (Contributed by AV,
+       13-Oct-2020.) $)
+    edgstruct $p |- ( ( V e. W /\ E e. X ) -> ( Edg ` G ) = ran E ) $=
+      ( vg wcel cedg cfv ciedg crn cvv wceq cedgf basendxnn edgfndxnn a1i syl
+      cn wa cv df-edg fveq2 rneqd cnx cbs cop simpl opexg sylancr simpr syl2anc
+      cpr prexg eqeltrid elexi wfn wfun c0 cdif basendxnedgfndx fnprg syl221anc
+      csn wne fneq1i sylibr fnfun fundif 3syl cdm eqimss2 funiedgdm2vald edgfid
+      wss fndmd ndxslid slotex eqeltrd rnexg fvmptd3 struct2griedg eqtrd ) CDHZ
+      AEHZUAZBIJBKJZLZALWGGBGUBZKJZLWIMIMGUCWJBNWKWHWJBKUDUEWGBUFUGJZCUHZUFOJZA
+      UHZUNZMFWGWMMHZWOMHZWPMHWGWLTHZWEWQPWEWFUIZWLCTDUJUKWGWNTHZWFWRQWEWFULZWN
+      ATEUJUKWMWOMMUOUMUPZWGWHMHWIMHWGWHBOJZMWGWLWNBMWLTPUQWNTQUQXCWGBWLWNUNZUR
+      ZBUSBUTVEZVAUSWGWPXEURZXFWGWSXAWEWFWLWNVFZXHWSWGPRXAWGQRWTXBXIWGVBRZWLWNC
+      ATTDEVCVDXEBWPFVGVHZXEBVIXGBVJVKXJWGBVLZXENXEXLVPWGXEBXKVQXEXLVMSVNWGBMHX
+      DMHXCBOMOWNVOQVRVSSVTWHMWASWBWGWHAABCDEFWCUEWD $.
+  $}
+
+
+$(
 ###############################################################################
   GUIDES AND MISCELLANEA
 ###############################################################################
@@ -193606,6 +193706,9 @@ htmldef "Vtx" as 'Vtx';
 htmldef "iEdg" as 'iEdg';
   althtmldef "iEdg" as 'iEdg';
   latexdef "iEdg" as "\mathrm{iEdg}";
+htmldef "Edg" as 'Edg';
+  althtmldef "Edg" as 'Edg';
+  latexdef "Edg" as "\mathrm{Edg}";
 
 /* htmldef, althtmldef, latexdef for mathboxes */
 /* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
