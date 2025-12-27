@@ -118044,6 +118044,12 @@ $)
       GVMACUGUHVLVMUIZVNVTLBUJOAUKULZFLBLUMOZUJOZFKLUOOAUNZUPZSUQZJVNVLLTGZBTGV
       TWJQVLVMUCVNURZVNBWDUSZFALBCUTVAVNWEWISJJVNFWGWHVGVNWKWFTGWGVGGVBVNBLWMWL
       VCLWFVDVEVFSJGVNVHRVIVJVK $.
+
+    $( The zero length prefix is the empty set.  (Contributed by AV,
+       2-May-2020.) $)
+    pfx00g $p |- ( S e. V -> ( S prefix 0 ) = (/) ) $=
+      ( wcel cc0 cpfx co cop csubstr c0 wceq 0nn0 pfxval mpan2 cz swrd00g eqtrd
+      cn0 0z ) ABCZADEFZADDGHFZISDQCTUAJKADBLMSDNCUAIJRABDOMP $.
   $}
 
 
