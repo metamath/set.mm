@@ -118143,6 +118143,13 @@ $)
       AUKCUBZUMEZUCUKUOURUQUNHUQBHUDUKURUEUKUOURUPUFUKURUGUQULABUHUIUJ $.
   $}
 
+  $( The range of a prefix of a word is a subset of the set of symbols for the
+     word.  (Contributed by AV, 2-May-2020.) $)
+  pfxrn $p |- ( ( W e. Word V /\ L e. ( 0 ... ( # ` W ) ) )
+                 -> ran ( W prefix L ) C_ V ) $=
+    ( cword wcel cc0 chash cfv cfz co wa cfzo cpfx pfxf frnd ) CBDEAFCGHIJEKFAL
+    JBCAMJABCNO $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
