@@ -118050,6 +118050,13 @@ $)
     pfx00g $p |- ( S e. V -> ( S prefix 0 ) = (/) ) $=
       ( wcel cc0 cpfx co cop csubstr c0 wceq 0nn0 pfxval mpan2 cz swrd00g eqtrd
       cn0 0z ) ABCZADEFZADDGHFZISDQCTUAJKADBLMSDNCUAIJRABDOMP $.
+
+    $( A prefix of an empty set is always the empty set.  (Contributed by AV,
+       3-May-2020.) $)
+    pfx0g $p |- ( L e. NN0 -> ( (/) prefix L ) = (/) ) $=
+      ( cn0 wcel c0 cpfx co cc0 cop csubstr cvv wceq 0ex pfxval mpan cz 0z nn0z
+      swrd0g sylancr eqtrd ) ABCZDAEFZDGAHIFZDDJCUAUBUCKLDAJMNUAGOCAOCUCDKPAQGA
+      RST $.
   $}
 
 
