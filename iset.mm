@@ -118132,6 +118132,17 @@ $)
     BADEZCFBGHZIJEZKZBCLJZGHZFCMJZGHZCUNUOUQNUQOEZUPURPBCAQUNFRECREZUSTUMUTUKCF
     ULUASFCUBUCUQUOUDUEUNCUFEZURCPUMVAUKCULUGSCUHUIUJ $.
 
+  ${
+    $d x A $.  $d x S $.
+    $( A word is a prefix of itself.  (Contributed by Stefan O'Rear,
+       16-Aug-2015.)  (Revised by AV, 2-May-2020.) $)
+    pfxid $p |- ( S e. Word A -> ( S prefix ( # ` S ) ) = S ) $=
+      ( vx cword wcel cc0 chash cfv cfzo co cpfx cfz wf lencl nn0fz0 sylib pfxf
+      cn0 mpdan ffnd wrdfn cv wa wceq simpl adantr simpr pfxfv syl3anc eqfnfvd
+      ) BADEZCFBGHZIJZBULKJZBUKUMAUNUKULFULLJEZUMAUNMUKULREUOABNULOPZULABQSTABU
+      AUKCUBZUMEZUCUKUOURUQUNHUQBHUDUKURUEUKUOURUPUFUKURUGUQULABUHUIUJ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
