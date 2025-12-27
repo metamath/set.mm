@@ -118123,6 +118123,15 @@ $)
     TVIVKVMWFVKVLWEAVKBWDGLVKWDBVKBVKBWBULUMUNUOUPUQURUSCDGBAUTVAVNVRADVMVIVRAR
     VKVMAVMAAGBVCVDVBVEVFVG $.
 
+  $( Length of a prefix.  (Contributed by Stefan O'Rear, 24-Aug-2015.)
+     (Revised by AV, 2-May-2020.) $)
+  pfxlen $p |- ( ( S e. Word A /\ L e. ( 0 ... ( # ` S ) ) )
+                    -> ( # ` ( S prefix L ) ) = L ) $=
+    ( cword wcel cc0 chash cfv cfz co wa cpfx cfzo wfn cfn wceq pfxfn cz adantl
+    0z elfzelz fzofig sylancr fihashfn syl2anc cn0 elfznn0 hashfzo0 syl eqtrd )
+    BADEZCFBGHZIJEZKZBCLJZGHZFCMJZGHZCUNUOUQNUQOEZUPURPBCAQUNFRECREZUSTUMUTUKCF
+    ULUASFCUBUCUQUOUDUEUNCUFEZURCPUMVAUKCULUGSCUHUIUJ $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
