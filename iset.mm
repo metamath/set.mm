@@ -118059,6 +118059,15 @@ $)
       RST $.
   $}
 
+  ${
+    $d L x $.  $d S x $.  $d l s $.
+    $( Closure of the prefix extractor.  (Contributed by AV, 2-May-2020.) $)
+    pfxclg $p |- ( ( S e. Word A /\ L e. NN0 ) -> ( S prefix L ) e. Word A ) $=
+      ( cword wcel cn0 wa cpfx co cc0 cop csubstr pfxval simpl 0zd nn0z swrdclg
+      cz adantl syl3anc eqeltrd ) BADZEZCFEZGZBCHIBJCKLIZUBBCUBMUEUCJRECREZUFUB
+      EUCUDNUEOUDUGUCCPSABJCQTUA $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
