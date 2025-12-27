@@ -118066,6 +118066,19 @@ $)
       ( cword wcel cn0 wa cpfx co cc0 cop csubstr pfxval simpl 0zd nn0z swrdclg
       cz adantl syl3anc eqeltrd ) BADZEZCFEZGZBCHIBJCKLIZUBBCUBMUEUCJRECREZUFUB
       EUCUDNUEOUDUGUCCPSABJCQTUA $.
+
+    $d A x $.
+    $( Value of the prefix extractor as a mapping.  (Contributed by AV,
+       2-May-2020.) $)
+    pfxmpt $p |- ( ( S e. Word A /\ L e. ( 0 ... ( # ` S ) ) )
+                    -> ( S prefix L ) = ( x e. ( 0 ..^ L ) |-> ( S ` x ) ) ) $=
+      ( cword wcel cc0 chash cfv cfz co wa cpfx cfzo cmpt cn0 wceq adantl nn0cn
+      syl cop csubstr cv caddc elfznn0 pfxval sylan2 simpl 0elfz simpr swrdval2
+      cmin syl3anc subid1d oveq2d elfzonn0 addridd fveq2d mpteq12dva 3eqtrd ) C
+      BEZFZDGCHIZJKFZLZCDMKZCGDUAUBKZAGDGULKZNKZAUCZGUDKZCIZOZAGDNKZVJCIZOVDVBD
+      PFZVFVGQDVCUEZCDVAUFUGVEVBGGDJKFZVDVGVMQVBVDUHVEVPVRVDVPVBVQRDUITVBVDUJAB
+      CGDUKUMVEAVIVLVNVOVDVIVNQVBVDVHDGNVDVPVHDQVQVPDDSUNTUORVJVIFZVLVOQVEVSVKV
+      JCVSVJPFZVKVJQVJVHUPVTVJVJSUQTURRUSUT $.
   $}
 
 
