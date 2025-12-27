@@ -118161,6 +118161,18 @@ $)
     VEVAAPVCUFMEZVIVAVBVDUGVEATEZVCTEZVDVLVBVAVMVDAUHRVAVBVNVDBCUIUJVAVBVDUKAVC
     UMULABCUNUOVIVKVJVFVGBUPUQURUSUT $.
 
+  $( The value of a prefix operation for a length argument larger than the word
+     length is the empty set.  (This is due to our definition of function
+     values for out-of-domain arguments, see ~ ndmfvg ).  (Contributed by AV,
+     3-May-2020.) $)
+  pfxnd $p |- ( ( W e. Word V /\ L e. NN0 /\ ( # ` W ) < L )
+                 -> ( W prefix L ) = (/) ) $=
+    ( cword wcel cn0 chash cfv clt wbr w3a cpfx co cc0 cop csubstr c0 pfxval cz
+    wceq 3adant3 cle w3o simp1 0zd nn0z 3ad2ant2 3jca 3mix3 3ad2ant3 sylc eqtrd
+    swrdnd ) CBDZEZAFEZCGHAIJZKZCALMZCNAOPMZQUOUPUSUTTUQCAUNRUAURUONSEZASEZKNNI
+    JZANUBJZUQUCZUTQTURUOVAVBUOUPUQUDURUEUPUOVBUQAUFUGUHUQUOVEUPUQVCVDUIUJNABCU
+    MUKUL $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
