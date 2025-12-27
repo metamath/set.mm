@@ -118088,6 +118088,17 @@ $)
       cfz adantr cuz wss elfzuz3 adantl fzoss2 syl feqresmpt eqtr4d ) BAEFZCGBH
       IZTJFZKZBCLJDGCMJZDNBIOBUNPDABCQUMDGUKMJZAUNBUJUOABRULABSUAUMUKCUBIFZUNUO
       UCULUPUJCGUKUDUECGUKUFUGUHUI $.
+
+    $d V x $.  $d W x $.
+    $( A prefix of a word is a function from a half-open range of nonnegative
+       integers of the same length as the prefix to the set of symbols for the
+       original word.  (Contributed by AV, 2-May-2020.) $)
+    pfxf $p |- ( ( W e. Word V /\ L e. ( 0 ... ( # ` W ) ) )
+                -> ( W prefix L ) : ( 0 ..^ L ) --> V ) $=
+      ( vx cword wcel cc0 chash cfv cfz co wa cfzo cv pfxmpt simpll cuz elfzuz3
+      cpfx wss adantl fzoss2 syl sselda wrdsymbcl syl2anc fmpt3d ) CBEFZAGCHIZJ
+      KFZLZDGAMKZDNZCIZBCASKDBCAOUKUMULFZLUHUMGUIMKZFUNBFUHUJUOPUKULUPUMUKUIAQI
+      FZULUPTUJUQUHAGUIRUAAGUIUBUCUDUMBCUEUFUG $.
   $}
 
 
