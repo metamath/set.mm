@@ -118009,6 +118009,30 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Prefixes of a word
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c prefix $.
+
+  $( Syntax for the prefix operator. $)
+  cpfx $a class prefix $.
+
+  ${
+    $d l s $.
+    $( Define an operation which extracts prefixes of words, i.e. subwords (or
+       substrings) starting at the beginning of a word (or string).  In other
+       words, ` ( S prefix L ) ` is the prefix of the word ` S ` of length
+       ` L ` .  Definition in Section 9.1 of [AhoHopUll] p. 318.  See also
+       Wikipedia "Substring" ~ https://en.wikipedia.org/wiki/Substring#Prefix .
+       (Contributed by AV, 2-May-2020.) $)
+    df-pfx $a |- prefix = ( s e. _V , l e. NN0
+                               |-> ( s substr <. 0 , l >. ) ) $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Elementary real and complex functions
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -193919,6 +193943,9 @@ htmldef '">' as
 htmldef "substr" as " substr ";
   althtmldef "substr" as " substr ";
   latexdef "substr" as "\mathrm{substr}";
+htmldef "prefix" as ' prefix ';
+ althtmldef "prefix" as ' prefix ';
+ latexdef "prefix" as "\mathbin{\operatorname{prefix}}";
 htmldef "~QG" as " ~<sub><i>QG</i></sub> ";
   althtmldef "~QG" as " ~<sub><i>QG</i></sub> ";
   latexdef "~QG" as " \sim_{QG} ";
