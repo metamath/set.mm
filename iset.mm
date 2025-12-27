@@ -118031,6 +118031,21 @@ $)
                                |-> ( s substr <. 0 , l >. ) ) $.
   $}
 
+  ${
+    $d L l s x $.  $d S l s x $.  $d V l s x $.
+    $( Value of a prefix operation.  (Contributed by AV, 2-May-2020.) $)
+    pfxval $p |- ( ( S e. V /\ L e. NN0 )
+                    -> ( S prefix L ) = ( S substr <. 0 , L >. ) ) $=
+      ( vs vl vx wcel cn0 wa cvv cv cc0 cop csubstr co cpfx wceq a1i c0 cz cmpo
+      df-pfx simpl opeq2 adantl oveq12d elex adantr simpr cfzo cdm wss cmin cfv
+      caddc cmpt cif 0zd nn0zd swrdval syl3anc 0z zsubcld fzofig sylancr mptexd
+      cfn 0ex ifexd eqeltrd ovmpod ) ACGZBHGZIZDEABJHDKZLEKZMZNOZALBMZNOZPJPDEJ
+      HVRUAQVNDEUBRVOAQZVPBQZIZVRVTQVNWCVOAVQVSNWAWBUCWBVQVSQWAVPBLUDUEUFUEVLAJ
+      GVMACUGUHVLVMUIZVNVTLBUJOAUKULZFLBLUMOZUJOZFKLUOOAUNZUPZSUQZJVNVLLTGZBTGV
+      TWJQVLVMUCVNURZVNBWDUSZFALBCUTVAVNWEWISJJVNFWGWHVGVNWKWFTGWGVGGVBVNBLWMWL
+      VCLWFVDVEVFSJGVNVHRVIVJVK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
