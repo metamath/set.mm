@@ -118108,6 +118108,21 @@ $)
     ( cword wcel cc0 chash cfv cfz co wa cfzo cpfx pfxf ffnd ) ACDEBFAGHIJEKFBL
     JCABMJBCANO $.
 
+  $( A symbol in a prefix of a word, indexed using the prefix' indices.
+     (Contributed by Alexander van der Vekens, 16-Jun-2018.)  (Revised by AV,
+     3-May-2020.) $)
+  pfxfv $p |- ( ( W e. Word V /\ L e. ( 0 ... ( # ` W ) )
+                    /\ I e. ( 0 ..^ L ) )
+                 -> ( ( W prefix L ) ` I ) = ( W ` I ) ) $=
+    ( cword wcel cc0 chash cfv cfz co cfzo w3a cpfx cop csubstr caddc wceq cn0
+    wi elfznn0 pfxval sylan2 3adant3 fveq1d cmin simp1 0elfz syl 3ad2ant2 simp2
+    nn0cnd subid1d eqcomd oveq2d eleq2d biimpd a1i 3imp swrdfv syl31anc addridd
+    elfzoelz zcnd 3ad2ant3 fveq2d 3eqtrd ) DCEZFZBGDHIZJKFZAGBLKZFZMZADBNKZIADG
+    BOPKZIZAGQKZDIZADIVNAVOVPVIVKVOVPRZVMVKVIBSFZVTBVJUAZDBVHUBUCUDUEVNVIGGBJKF
+    ZVKAGBGUFKZLKZFZVQVSRVIVKVMUGVKVIWCVMVKWAWCWBBUHUIUJVIVKVMUKVIVKVMWFVKVMWFT
+    TVIVKVMWFVKVLWEAVKBWDGLVKWDBVKBVKBWBULUMUNUOUPUQURUSCDGBAUTVAVNVRADVMVIVRAR
+    VKVMAVMAAGBVCVDVBVEVFVG $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
