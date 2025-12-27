@@ -118101,6 +118101,13 @@ $)
       FZULUPTUJUQUHAGUIRUAAGUIUBUCUDUMBCUEUFUG $.
   $}
 
+  $( Value of the prefix extractor as function with domain.  (Contributed by
+     AV, 2-May-2020.) $)
+  pfxfn $p |- ( ( S e. Word V /\ L e. ( 0 ... ( # ` S ) ) )
+                 -> ( S prefix L ) Fn ( 0 ..^ L ) ) $=
+    ( cword wcel cc0 chash cfv cfz co wa cfzo cpfx pfxf ffnd ) ACDEBFAGHIJEKFBL
+    JCABMJBCANO $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
