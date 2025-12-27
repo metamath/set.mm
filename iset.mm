@@ -118079,6 +118079,15 @@ $)
       PFZVFVGQDVCUEZCDVAUFUGVEVBGGDJKFZVDVGVMQVBVDUHVEVPVRVDVPVBVQRDUITVBVDUJAB
       CGDUKUMVEAVIVLVNVOVDVIVNQVBVDVHDGNVDVPVHDQVQVPDDSUNTUORVJVIFZVLVOQVEVSVKV
       JCVSVJPFZVKVJQVJVHUPVTVJVJSUQTURRUSUT $.
+
+    $( Value of the subword extractor for left-anchored subwords.  (Contributed
+       by Stefan O'Rear, 24-Aug-2015.)  (Revised by AV, 2-May-2020.) $)
+    pfxres $p |- ( ( S e. Word A /\ L e. ( 0 ... ( # ` S ) ) )
+                    -> ( S prefix L ) = ( S |` ( 0 ..^ L ) ) ) $=
+      ( vx cword wcel cc0 chash cfv co wa cpfx cfzo cv cmpt cres pfxmpt wf wrdf
+      cfz adantr cuz wss elfzuz3 adantl fzoss2 syl feqresmpt eqtr4d ) BAEFZCGBH
+      IZTJFZKZBCLJDGCMJZDNBIOBUNPDABCQUMDGUKMJZAUNBUJUOABRULABSUAUMUKCUBIFZUNUO
+      UCULUPUJCGUKUDUECGUKUFUGUHUI $.
   $}
 
 
