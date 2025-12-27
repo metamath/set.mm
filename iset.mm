@@ -118150,6 +118150,17 @@ $)
     ( cword wcel cc0 chash cfv cfz co wa cfzo cpfx pfxf frnd ) CBDEAFCGHIJEKFAL
     JBCAMJABCNO $.
 
+  $( A prefix consisting of at least one symbol is not empty.  (Contributed by
+     Alexander van der Vekens, 4-Aug-2018.)  (Revised by AV, 2-May-2020.) $)
+  pfxn0 $p |- ( ( W e. Word V /\ L e. NN /\ L <_ ( # ` W ) )
+                 -> ( W prefix L ) =/= (/) ) $=
+    ( cword wcel cn chash cfv cle wbr w3a cpfx co c0 wne cc0 cfzo 3ad2ant2 wceq
+    cn0 lbfzo0 ne0i sylbir wf wb cfz simp1 nnnn0 lencl 3ad2ant1 simp3 syl3anbrc
+    elfz2nn0 pfxf syl2anc f0dom0 bicomd syl necon3bid mpbird ) CBDEZAFEZACGHZIJ
+    ZKZCALMZNOPAQMZNOZVBVAVHVDVBPVGEVHAUAVGPUBUCRVEVFNVGNVEVGBVFUDZVFNSZVGNSZUE
+    VEVAAPVCUFMEZVIVAVBVDUGVEATEZVCTEZVDVLVBVAVMVDAUHRVAVBVNVDBCUIUJVAVBVDUKAVC
+    UMULABCUNUOVIVKVJVFVGBUPUQURUSUT $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
