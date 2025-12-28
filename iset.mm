@@ -118249,6 +118249,31 @@ $)
     SZEZVDAMUSVKAURUEUFZBCAUGOUHVAUQVLVFQAUISEZVGVHMUQUTUJUTVLUQVMRUTVNUQUTAUKE
     VNVJAULPRVFABCUMUNUO $.
 
+  ${
+    $d M i $.  $d N i $.  $d U i $.  $d V i $.  $d W i $.
+    $( The prefixes of two words are equal iff they have the same length and
+       the same symbols at each position.  (Contributed by Alexander van der
+       Vekens, 7-Aug-2018.)  (Revised by AV, 4-May-2020.) $)
+    pfxeq $p |- ( ( ( W e. Word V /\ U e. Word V ) /\ ( M e. NN0 /\ N e. NN0 )
+                     /\ ( M <_ ( # ` W ) /\ N <_ ( # ` U ) ) )
+                   -> ( ( W prefix M ) = ( U prefix N )
+             <-> ( M = N /\ A. i e. ( 0 ..^ M ) ( W ` i ) = ( U ` i ) ) ) ) $=
+      ( cn0 wcel wa chash cfv co wceq cc0 cfzo wral wb w3a syl2anc ad2antrr cle
+      cword cpfx cv simp2l simp1l pfxclg simp2r simp1r eqwrd simpl lencl adantr
+      wbr 3anim123i elfz2nn0 sylibr pfxlen adantl eqeq12d anbi1d oveq2d raleqdv
+      cfz simpr pfxfv oveq2 eleq2d biimpa ralbidva bitrd pm5.32da 3bitrd 3com12
+      syl3anc ) CGHZDGHZIZFEUBZHZAVSHZIZCFJKZUAUNZDAJKZUAUNZIZFCUCLZADUCLZMZCDM
+      ZBUDZFKZWLAKZMZBNCOLZPZIZQVRWBWGRZWJWHJKZWIJKZMZWLWHKZWLWIKZMZBNWTOLZPZIZ
+      WKXGIWRWSWHVSHZWIVSHZWJXHQWSVTVPXIVRVTWAWGUEZVPVQWBWGUFEFCUGSWSWAVQXJVRVT
+      WAWGUHZVPVQWBWGUIEADUGSEEWHBWIUJSWSXBWKXGWSWTCXADWSVTCNWCVDLHZWTCMZXKWSVP
+      WCGHZWDRXMVRVPWBXOWGWDVPVQUKVTXOWAEFULUMWDWFUKUOCWCUPUQZEFCURSZWSWADNWEVD
+      LHZXADMXLWSVQWEGHZWFRXRVRVQWBXSWGWFVPVQVEWAXSVTEAULUSWDWFVEUODWEUPUQZEADU
+      RSUTVAWSWKXGWQWSWKIZXGXEBWPPWQYAXEBXFWPYAWTCNOWSXNWKXQUMVBVCYAXEWOBWPYAWL
+      WPHZIZXCWMXDWNYCVTXMYBXCWMMWSVTWKYBXKTWSXMWKYBXPTYAYBVEWLCEFVFVOYCWAXRWLN
+      DOLZHZXDWNMWSWAWKYBXLTWSXRWKYBXTTYAYBYEWKYBYEQWSWKWPYDWLCDNOVGVHUSVIWLDEA
+      VFVOUTVJVKVLVMVN $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
