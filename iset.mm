@@ -191912,6 +191912,27 @@ $)
   df-edg $a |- Edg = ( g e. _V |-> ran ( iEdg ` g ) ) $.
 
   ${
+    $d G g $.
+    $( The edges of a graph.  (Contributed by AV, 1-Jan-2020.)  (Revised by AV,
+       13-Oct-2020.)  (Revised by AV, 8-Dec-2021.) $)
+    edgvalg $p |- ( G e. V -> ( Edg ` G ) = ran ( iEdg ` G ) ) $=
+      ( vg wcel cv ciedg cfv crn cvv cedg df-edg wceq fveq2 rneqd elex cxp c2nd
+      cedgf cif iedgvalg 2ndexg cnx edgfid edgfndxnn ndxslid slotex ifexd rnexg
+      eqeltrd syl fvmptd3 ) ABDZCACEZFGZHAFGZHZIJICKUMALUNUOUMAFMNABOULUOIDUPID
+      ULUOAIIPDZAQGZARGZSIABTULUQURUSIIABUAARBRUBRGUCUDUEUFUGUIUOIUHUJUK $.
+  $}
+
+  ${
+    iedgedg.e $e |- E = ( iEdg ` G ) $.
+    $( An indexed edge is an edge.  (Contributed by AV, 19-Dec-2021.) $)
+    iedgedgg $p |- ( ( G e. V /\ Fun E /\ I e. dom E )
+        -> ( E ` I ) e. ( Edg ` G ) ) $=
+      ( wcel wfun cdm w3a cfv crn cedg fvelrn 3adant1 ciedg wceq 3ad2ant1 rneqi
+      edgvalg eqtr4di eleqtrrd ) BDFZAGZCAHFZIZCAJZAKZBLJZUCUDUFUGFUBCAMNUEUHBO
+      JZKZUGUBUCUHUJPUDBDSQAUIERTUA $.
+  $}
+
+  ${
     $d E g $.  $d V g $.
     $( The edges of a graph represented as ordered pair.  (Contributed by AV,
        1-Jan-2020.)  (Revised by AV, 13-Oct-2020.) $)
@@ -191951,6 +191972,30 @@ $)
       ZBUSBUTVEZVAUSWGWPXEURZXFWGWSXAWEWFWLWNVFZXHWSWGPRXAWGQRWTXBXIWGVBRZWLWNC
       ATTDEVCVDXEBWPFVGVHZXEBVIXGBVJVKXJWGBVLZXENXEXLVPWGXEBXKVQXEXLVMSVNWGBMHX
       DMHXCBOMOWNVOQVRVSSVTWHMWASWBWGWHAABCDEFWCUEWD $.
+  $}
+
+  ${
+    $d E x $.  $d I x $.
+    edgiedgb.i $e |- I = ( iEdg ` G ) $.
+    $( A set is an edge iff it is an indexed edge.  (Contributed by AV,
+       17-Oct-2020.)  (Revised by AV, 8-Dec-2021.) $)
+    edgiedgbg $p |- ( ( G e. V /\ Fun I ) -> ( E e. ( Edg ` G )
+                                <-> E. x e. dom I E = ( I ` x ) ) ) $=
+      ( wcel cedg cfv crn wfun wceq cdm wrex ciedg edgvalg eqcomi rneqi eqtrdi
+      cv eleq2d elrnrexdmb sylan9bb ) CEGZBCHIZGBDJZGDKBATDILADMNUDUEUFBUDUECOI
+      ZJUFCEPUGDDUGFQRSUAADBUBUC $.
+  $}
+
+  ${
+    edg0iedg0.i $e |- I = ( iEdg ` G ) $.
+    edg0iedg0.e $e |- E = ( Edg ` G ) $.
+    $( There is no edge in a graph iff its edge function is empty.
+       (Contributed by AV, 15-Dec-2020.)  (Revised by AV, 8-Dec-2021.) $)
+    edg0iedg0g $p |- ( ( G e. V /\ Fun I ) -> ( E = (/) <-> I = (/) ) ) $=
+      ( wcel wfun wa c0 wceq ciedg cfv crn wb cedg edgvalg eqtrid eqeq1d adantr
+      eqcomi rneqi eqeq1i a1i wrel funrel relrn0 bicomd syl adantl 3bitrd ) BDG
+      ZCHZIZAJKZBLMZNZJKZCNZJKZCJKZULUOUROUMULAUQJULABPMUQFBDQRSTURUTOUNUQUSJUP
+      CCUPEUAUBUCUDUMUTVAOZULUMCUEZVBCUFVCVAUTCUGUHUIUJUK $.
   $}
 
 
