@@ -118228,6 +118228,16 @@ $)
     UOHUOLJEZSZURUNUSVCUTUNUSSZVAVBUNCTEUSVABCUACUBUCVDUOUDEVBBCUEUOUFUGUKUHUOH
     UOUIULAUPBCUJUM $.
 
+  $( The first symbol in a word truncated by one symbol.  (Contributed by
+     Alexander van der Vekens, 16-Jun-2018.)  (Revised by AV, 3-May-2020.) $)
+  pfxtrcfv0 $p |- ( ( W e. Word V /\ 2 <_ ( # ` W ) )
+                     -> ( ( W prefix ( ( # ` W ) - 1 ) ) ` 0 ) = ( W ` 0 ) ) $=
+    ( cword wcel c2 chash cfv cle wbr wa c0 wne cc0 c1 cmin co cfzo cpfx wceq
+    cz simpl wrdlenge2n0 cn cuz 2z a1i lencl nn0zd adantr simpr eluz2 syl3anbrc
+    uz2m1nn syl lbfzo0 sylibr pfxtrcfv syl3anc ) BACDZEBFGZHIZJZUSBKLMMUTNOPZQP
+    DZMBVCRPGMBGSUSVAUAABUBVBVCUCDZVDVBUTEUDGDZVEVBETDZUTTDZVAVFVGVBUEUFUSVHVAU
+    SUTABUGUHUIUSVAUJEUTUKULUTUMUNVCUOUPMABUQUR $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
