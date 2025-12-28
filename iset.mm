@@ -118324,6 +118324,27 @@ $)
       LQWDWFVNFWLYAYDWFWKVOVPUTVMAEBWFCDVQVRVSVTWAWB $.
   $}
 
+  $( Two (nonempty) words are equal if and only if they have the same prefix
+     and the same single symbol suffix.  (Contributed by Alexander van der
+     Vekens, 23-Sep-2018.)  (Revised by AV, 6-May-2020.) $)
+  pfxsuff1eqwrdeq $p |- ( ( W e. Word V /\ U e. Word V /\ 0 < ( # ` W ) )
+                          -> ( W = U <-> ( ( # ` W ) = ( # ` U )
+           /\ ( ( W prefix ( ( # ` W ) - 1 ) ) = ( U prefix ( ( # ` W ) - 1 ) )
+           /\ ( lastS ` W ) = ( lastS ` U ) ) ) ) ) $=
+    ( wcel cc0 chash cfv clt wbr w3a wceq c1 cmin co cpfx csubstr wa wb syl cvv
+    cword cop clsw cfzo wne cfn wrdfin fihashneq0 biimpa lennncl syldan 3adant2
+    cn c0 fzo0end pfxsuffeqwrdeq syld3an3 biimpd imdistani adantr swrdlsw breq2
+    cs1 3anbi3d 3adant1 biimtrdi impcom id opeq12d oveq2d eqeq1d adantl eqeq12d
+    oveq1 mpbird lswex 3ad2ant1 3ad2ant2 s111 syl2an2r bitrd anbi2d pm5.32da )
+    CBUAZDZAWDDZECFGZHIZJZCAKZWGAFGZKZCWGLMNZONAWMONKZCWMWGUBZPNZAWOPNZKZQZQZWL
+    WNCUCGZAUCGZKZQZQWEWFWHWMEWGUDNDZWJWTRWIWGUMDZXEWEWHXFWFWEWHCUNUEZXFWEWHXGW
+    ECUFDWHXGRBCUGCUHSZUIBCUJUKULWGUOSAWMBCUPUQWIWLWSXDWIWLQZWRXCWNXIWRXAVCZXBV
+    CZKZXCXIWPXJWQXKXIWEXGQZWPXJKWIXMWLWEWHXMWFWEWHXGWEWHXGXHURUSULUTBCVASXIWQX
+    KKZAWKLMNZWKUBZPNZXKKZWLWIXRWLWIWEWFEWKHIZJZXRWLWHXSWEWFWGWKEHVBVDXTWFAUNUE
+    ZQZXRWFXSYBWEWFXSYAWFXSYAWFAUFDXSYARBAUGAUHSURUSVEBAVASVFVGWLXNXRRWIWLWQXQX
+    KWLWOXPAPWLWMXOWGWKWGWKLMVNWLVHVIVJVKVLVOVMWIXATDZWLXBTDZXLXCRWEWFYCWHBCVPV
+    QWIYDWLWFWEYDWHBAVPVRUTTXAXBVSVTWAWBWCWA $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
