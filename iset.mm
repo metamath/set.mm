@@ -118217,6 +118217,17 @@ $)
     adantl cn elfznn lbfzo0 sylibr pfxfv syl3anc ) CBDEZAFCGHZIJZEZKZUFALUGIJZE
     ZLLAMJEZLCANJHLCHOUFUIPUIULUFUHUKAUGQRSUJATEZUMUIUNUFAUGUASAUBUCLABCUDUE $.
 
+  $( A symbol in a word truncated by one symbol.  (Contributed by Alexander van
+     der Vekens, 16-Jun-2018.)  (Revised by AV, 3-May-2020.) $)
+  pfxtrcfv $p |- ( ( W e. Word V /\ W =/= (/)
+                      /\ I e. ( 0 ..^ ( ( # ` W ) - 1 ) ) )
+                    -> ( ( W prefix ( ( # ` W ) - 1 ) ) ` I ) = ( W ` I ) ) $=
+    ( cword wcel chash cfv c1 cmin co cc0 cfz c0 wne cfzo cpfx wceq w3a wa cfn
+    wrdfin 1elfz0hash sylan cn lennncl elfz1end sylib 3adant3 fz0fzdiffz0 pfxfv
+    jca syl syld3an2 ) CBDEZCFGZHIJZKUOLJZEZCMNZAKUPOJEZACUPPJGACGQUNUSUTRHUQEZ
+    UOHUOLJEZSZURUNUSVCUTUNUSSZVAVBUNCTEUSVABCUACUBUCVDUOUDEVBBCUEUOUFUGUKUHUOH
+    UOUIULAUPBCUJUM $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
