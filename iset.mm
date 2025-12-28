@@ -118274,6 +118274,17 @@ $)
       VFVOUTVJVKVLVMVN $.
   $}
 
+  $( The last symbol in a word truncated by one symbol.  (Contributed by AV,
+     16-Jun-2018.)  (Revised by AV, 5-May-2020.) $)
+  pfxtrcfvl $p |- ( ( W e. Word V /\ 2 <_ ( # ` W ) )
+                     -> ( lastS ` ( W prefix ( ( # ` W ) - 1 ) ) )
+                        = ( W ` ( ( # ` W ) - 2 ) ) ) $=
+    ( cword wcel c2 chash cfv cle wbr wa c1 cmin co cpfx clsw cfz cz adantr syl
+    wceq cuz 2z a1i lencl nn0zd simpr eluz2 syl3anbrc ige2m1fz1 pfxfvlsw syldan
+    cc nn0cnd sub1m1 fveq2d eqtrd ) BACDZEBFGZHIZJZBURKLMZNMOGZVAKLMZBGZURELMZB
+    GUQUSVAKURPMDZVBVDTUTUREUAGDZVFUTEQDZURQDZUSVGVHUTUBUCUQVIUSUQURABUDZUERUQU
+    SUFEURUGUHURUISVAABUJUKUTVCVEBUQVCVETZUSUQURULDVKUQURVJUMURUNSRUOUP $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
