@@ -118285,6 +118285,32 @@ $)
     GUQUSVAKURPMDZVBVDTUTUREUAGDZVFUTEQDZURQDZUSVGVHUTUBUCUQVIUSUQURABUDZUERUQU
     SUFEURUGUHURUISVAABUJUKUTVCVEBUQVCVETZUSUQURULDVKUQURVJUMURUNSRUOUP $.
 
+  ${
+    $d I i $.  $d S i $.  $d V i $.  $d W i $.
+    $( Two words are equal if and only if they have the same prefix and the
+       same suffix.  (Contributed by Alexander van der Vekens, 23-Sep-2018.)
+       (Revised by AV, 5-May-2020.) $)
+    pfxsuffeqwrdeq $p |- ( ( W e. Word V /\ S e. Word V
+                           /\ I e. ( 0 ..^ ( # ` W ) ) )
+                  -> ( W = S <-> ( ( # ` W ) = ( # ` S )
+                       /\ ( ( W prefix I ) = ( S prefix I )
+                       /\ ( W substr <. I , ( # ` W ) >. )
+                          = ( S substr <. I , ( # ` W ) >. ) ) ) ) ) $=
+      ( vi wcel cc0 chash cfv cfzo co wceq wral wa cpfx 3ad2ant3 adantr cle wbr
+      wb cword w3a cv cop csubstr eqwrd 3adant3 cun cfz elfzofz fzosplit ralunb
+      syl raleqdv bitrdi eqidd cn0 3simpa elfzonn0 jca breq2 adantl mpbid pfxeq
+      elfzo0le syl112anc mpbirand lencl anim12ci 3adant2 nn0red leidd 3ad2antl1
+      cr eqle sylan swrdspsleq syl3anc anbi12d bitr4d pm5.32da bitrd ) DCUAZFZA
+      WCFZBGDHIZJKZFZUBZDALZWFAHIZLZEUCZDIWMAILZEWGMZNZWLDBOKABOKLZDBWFUDZUEKAW
+      RUEKLZNZNWDWEWJWPTWHCCDEAUFUGWIWLWOWTWIWLNZWOWNEGBJKZMZWNEBWFJKZMZNZWTXAW
+      OWNEXBXDUHZMXFXAWNEWGXGWIWGXGLZWLWHWDXHWEWHBGWFUIKFXHBGWFUJGWFBUKUMPQUNWN
+      EXBXDULUOXAWQXCWSXEXAWQBBLZXCXABUPXAWDWENZBUQFZXKNZBWFRSZBWKRSZWQXIXCNTWI
+      XJWLWDWEWHURQZWIXLWLWHWDXLWEWHXKXKBWFUSZXPUTPQWIXMWLWHWDXMWEBWFVEPQZXAXMX
+      NXQWLXMXNTWIWFWKBRVAVBVCAEBBCDVDVFVGXAXJXKWFUQFZNZWFWFRSZWFWKRSZNZWSXETXO
+      WIXSWLWDWHXSWEWDXRWHXKCDVHZXPVIVJQWDWEWLYBWHWDWLNXTYAWDXTWLWDWFWDWFYCVKZV
+      LQWDWFVNFWLYAYDWFWKVOVPUTVMAEBWFCDVQVRVSVTWAWB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
