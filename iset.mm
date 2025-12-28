@@ -118173,6 +118173,20 @@ $)
     JZANUBJZUQUCZUTQTURUOVAVBUOUPUQUDURUEUPUOVBUQAUFUGUHUQUOVEUPUQVCVDUIUJNABCU
     MUKUL $.
 
+  $( A prefix of a word is a word over the symbols it consists of.
+     (Contributed by AV, 3-Dec-2022.) $)
+  pfxwrdsymbg $p |- ( ( S e. Word A /\ L e. NN0 )
+                     -> ( S prefix L ) e. Word ( S " ( 0 ..^ L ) ) ) $=
+    ( cword wcel wa co cc0 cfv cle wbr clt cfz simpll syl cz syl2anc syl3anc c0
+    adantl cn0 cpfx cop csubstr cfzo cima pfxval chash cuz simplr elnn0uz sylib
+    eluzfz1 simpr lencl nn0zd elfz5 mpbird swrdwrdsymbg w3o wceq 3mix3 0zd nn0z
+    wb wi adantr swrdnd mpd wrd0 eqeltrdi wo zlelttric mpjaodan eqeltrd ) BADZE
+    ZCUAEZFZBCUBGBHCUCUDGZBHCUEGUFZDZBCVPUGVSCBUHIZJKZVTWBEZWCCLKZVSWDFZVQHHCMG
+    EZCHWCMGEZWEVQVRWDNZWGCHUIIEZWHWGVRWKVQVRWDUJCUKULZHCUMOWGWIWDVSWDUNWGWKWCP
+    EZWIWDVEWLWGVQWMWJVQWCABUOUPZOCHWCUQQURABHCUSRVSWFFZVTSWBWOHHLKZCHJKZWFUTZV
+    TSVAZWFWRVSWFWPWQVBTWOVQHPECPEZWRWSVFVQVRWFNWOVCVSWTWFVRWTVQCVDTZVGHCABVHRV
+    IWAVJVKVSWTWMWDWFVLXAVQWMVRWNVGCWCVMQVNVO $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
