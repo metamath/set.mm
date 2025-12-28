@@ -48702,6 +48702,15 @@ $)
   fnssres $p |- ( ( F Fn A /\ B C_ A ) -> ( F |` B ) Fn B ) $=
     ( wfn cres wss fnssresb biimpar ) CADCBEBDBAFABCGH $.
 
+  ${
+    fnssresd.1 $e |- ( ph -> F Fn A ) $.
+    fnssresd.2 $e |- ( ph -> B C_ A ) $.
+    $( Restriction of a function to a subclass of its domain.  (Contributed by
+       Glauco Siliprandi, 5-Feb-2022.) $)
+    fnssresd $p |- ( ph -> ( F |` B ) Fn B ) $=
+      ( wfn wss cres fnssres syl2anc ) ADBGCBHDCICGEFBCDJK $.
+  $}
+
   $( Restriction of a function's domain with an intersection.  (Contributed by
      NM, 9-Aug-1994.) $)
   fnresin1 $p |- ( F Fn A -> ( F |` ( A i^i B ) ) Fn ( A i^i B ) ) $=
