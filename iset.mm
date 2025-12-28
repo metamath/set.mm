@@ -118410,6 +118410,24 @@ $)
       UUKUUNUUMKZXJXIXMUUKUWCUUJDABWGXCXFXDXEXG $.
   $}
 
+  ${
+    $d k B $.  $d k S $.  $d k T $.
+    $( Recover the left half of a concatenated word.  (Contributed by Mario
+       Carneiro, 27-Sep-2015.)  (Revised by AV, 6-May-2020.) $)
+    pfxccat1 $p |- ( ( S e. Word B /\ T e. Word B )
+                      -> ( ( S ++ T ) prefix ( # ` S ) ) = S ) $=
+      ( vk cword wcel wa cconcat co chash cfv cpfx cc0 cfzo cfz wceq cn0 adantr
+      lencl eqtrd cres ccatcl caddc anim12i nn0fz0 elfz0add sylc ccatlen oveq2d
+      sylib eleqtrrd pfxres syl2anc ccatvalfn cuz wss nn0zd uzidd syl2an fzoss2
+      uzaddcl syl fnssresd wfn wrdfn cv fvres adantl ccatval1 3expa eqfnfvd ) B
+      AEZFZCVLFZGZBCHIZBJKZLIZVPMVQNIZUAZBVOVPVLFVQMVPJKZOIZFVRVTPABCUBVOVQMVQC
+      JKZUCIZOIZWBVOVQQFZWCQFZGVQMVQOIFZVQWEFVMWFVNWGABSZACSZUDVMWHVNVMWFWHWIVQ
+      UEUJRVQWCVQUFUGVOWAWDMOAABCUHUIUKAVPVQULUMVODVSVTBVOMWDNIZVSVPBCAUNVOWDVQ
+      UOKZFZVSWKUPVMVQWLFWGWMVNVMVQVMVQWIUQURWJWCVQVQVAUSVQMWDUTVBVCVMBVSVDVNAB
+      VERVODVFZVSFZGWNVTKZWNVPKZWNBKZWOWPWQPVOWNVSVPVGVHVMVNWOWQWRPAABCWNVIVJTV
+      KT $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
