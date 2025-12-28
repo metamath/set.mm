@@ -118428,6 +118428,16 @@ $)
       KT $.
   $}
 
+  $( The prefix of length one of a nonempty word expressed as a singleton word.
+     (Contributed by AV, 15-May-2020.) $)
+  pfx1 $p |- ( ( W e. Word V /\ W =/= (/) )
+               -> ( W prefix 1 ) = <" ( W ` 0 ) "> ) $=
+    ( cword wcel c0 wne wa c1 cpfx co cc0 cop csubstr cfv cs1 cn0 wceq 1nn0 a1i
+    caddc pfxval sylan2 1e0p1 opeq2i oveq2i chash cfzo cn lennncl lbfzo0 sylibr
+    swrds1 syldan 3eqtrd ) BACZDZBEFZGZBHIJZBKHLZMJZBKKHTJZLZMJZKBNOZUQUPHPDZUS
+    VAQVFUQRSBHUOUAUBVAVDQURUTVCBMHVBKUCUDUESUPUQKKBUFNZUGJDZVDVEQURVGUHDVHABUI
+    VGUJUKAKBULUMUN $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
