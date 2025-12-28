@@ -118208,6 +118208,15 @@ $)
     ZIJEZKZCALJGHZCAUIMNJGHZOJAUIARJZOJZUIUKULAUMUNOBCAPABCQUAUJASEUISEUOUIUBUH
     UJAAUIUCTUHUIBCUDTAUIUEUFUG $.
 
+  $( The first symbol of a prefix is the first symbol of the word.
+     (Contributed by Alexander van der Vekens, 16-Jun-2018.)  (Revised by AV,
+     3-May-2020.) $)
+  pfxfv0 $p |- ( ( W e. Word V /\ L e. ( 1 ... ( # ` W ) ) )
+                  -> ( ( W prefix L ) ` 0 ) = ( W ` 0 ) ) $=
+    ( cword wcel c1 chash cfv cfz co wa cc0 cfzo cpfx wceq simpl fz1ssfz0 sseli
+    adantl cn elfznn lbfzo0 sylibr pfxfv syl3anc ) CBDEZAFCGHZIJZEZKZUFALUGIJZE
+    ZLLAMJEZLCANJHLCHOUFUIPUIULUFUHUKAUGQRSUJATEZUMUIUNUFAUGUASAUBUCLABCUDUE $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
