@@ -116914,6 +116914,19 @@ $)
     cc0 lennncl fzo0end syl wrdsymbcl syldan eqeltrd ) BACDZBEFZGZBHIZBJIZKLMZB
     IZAUFUIULNUGABOPUFUGUKSUJQMDZULADUHUJRDUMABTUJUAUBUKABUCUDUE $.
 
+  ${
+    $d W x $.
+    $( Existence of the last symbol.  The last symbol of a word is a set.  See
+       ~ lsw0g or ~ lswcl if you want more specific results for empty or
+       nonempty words, respectively.  (Contributed by Jim Kingdon,
+       27-Dec-2025.) $)
+    lswex $p |- ( W e. Word V -> ( lastS ` W ) e. _V ) $=
+      ( vx cword wcel c0 wceq clsw cfv cvv wne fveq2 lsw0g 0ex eqeltri eqeltrdi
+      adantl wa lswcl wo elexd cfn wex wrdfin fin0or n0r orim2i 3syl mpjaodan
+      cv ) BADEZBFGZBHIZJEZBFKZULUNUKULUMFHIZJBFHLUPFJMNOPQUKUORUMAABSUAUKBUBEU
+      LCUJBECUCZTULUOTABUDCBUEUQUOULCBUFUGUHUI $.
+  $}
+
   $( The last symbol of a nonempty word is an element of the alphabet for the
      word.  (Contributed by Alexander van der Vekens, 1-Oct-2018.)  (Proof
      shortened by AV, 29-Apr-2020.) $)
