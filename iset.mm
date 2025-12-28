@@ -118357,6 +118357,16 @@ $)
     KWLWOXPAPWLWMXOWGWKWGWKLMVNWLVHVIVJVKVLVOVMWIXATDZWLXBTDZXLXCRWEWFYCWHBCVPV
     QWIYDWLWFWEYDWHBAVPVRUTTXAXBVSVTWAWBWCWA $.
 
+  ${
+    $d N y $.  $d V x $.  $d x y $.
+    $( Sets of words are disjoint if each set contains exactly the extensions
+       of distinct words of a fixed length.  Remark:  A word ` W ` is called an
+       "extension" of a word ` P ` if ` P ` is a prefix of ` W ` .
+       (Contributed by AV, 29-Jul-2018.)  (Revised by AV, 6-May-2020.) $)
+    disjwrdpfx $p |- Disj_ y e. W { x e. Word V | ( x prefix N ) = y } $=
+      ( cword cv cpfx co invdisjrab ) ABEDFAGCHIJ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
