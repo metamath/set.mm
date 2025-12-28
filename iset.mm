@@ -118198,6 +118198,16 @@ $)
     DEZAFCGHZIJEZKZCAULLMJGHZCANJGHZOJULARJZAOJZULUNUOUQUPAOABCPBCAQUAUKULUBEZA
     UCEZURULUDZUMBCUEAFULUFUSULSEASEVAUTULUGAUHULAUITTUJ $.
 
+  $( The sum of the lengths of two parts of a word is the length of the word.
+     (Contributed by AV, 21-Oct-2018.)  (Revised by AV, 3-May-2020.) $)
+  addlenpfx $p |- ( ( W e. Word V /\ M e. ( 0 ... ( # ` W ) ) )
+               -> ( ( # ` ( W prefix M ) )
+                  + ( # ` ( W substr <. M , ( # ` W ) >. ) ) ) = ( # ` W ) ) $=
+    ( cword wcel cc0 chash cfv cfz co wa cpfx cop csubstr caddc pfxlen swrdrlen
+    cmin cc nn0cnd oveq12d wceq elfznn0 lencl pncan3 syl2anr eqtrd ) CBDEZAFCGH
+    ZIJEZKZCALJGHZCAUIMNJGHZOJAUIARJZOJZUIUKULAUMUNOBCAPABCQUAUJASEUISEUOUIUBUH
+    UJAAUIUCTUHUIBCUDTAUIUEUFUG $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
