@@ -35505,6 +35505,18 @@ $)
   $}
 
   ${
+    $d A z $.  $d B x z $.  $d C y z $.  $d x y z $.
+    $( The restricted class abstractions ` { x e. B | C = y } ` for distinct
+       ` y e. A ` are disjoint.  (Contributed by AV, 6-May-2020.)  (Proof
+       shortened by GG, 26-Jan-2024.) $)
+    invdisjrab $p |- Disj_ y e. A { x e. B | C = y } $=
+      ( vz cv csb wceq crab wral wdisj wcel wa nfcsb1v nfeq1 weq csbeq1a eqeq1d
+      nfcv elrabf simprr sylan2b rgen2 invdisj ax-mp ) AFGZEHZBGZIZFEUIIZADJZKB
+      CKBCULLUJBFCULUGULMUICMZUGDMZUJNUJUKUJAUGDAUGTADTAUHUIAUGEOPAFQEUHUIAUGER
+      SUAUMUNUJUBUCUDBFCULUHUEUF $.
+  $}
+
+  ${
     $d A u v w x y $.  $d B u v w y $.  $d C u v x y $.  $d D u v x y $.
     $( A disjoint collection yields disjoint indexed unions for disjoint index
        sets.  (Contributed by Mario Carneiro, 26-Mar-2015.)  (Revised by Mario
