@@ -118238,6 +118238,17 @@ $)
     DZMBVCRPGMBGSUSVAUAABUBVBVCUCDZVDVBUTEUDGDZVEVBETDZUTTDZVAVFVGVBUEUFUSVHVAU
     SUTABUGUHUIUSVAUJEUTUKULUTUMUNVCUOUPMABUQUR $.
 
+  $( The last symbol in a nonempty prefix of a word.  (Contributed by Alexander
+     van der Vekens, 24-Jun-2018.)  (Revised by AV, 3-May-2020.) $)
+  pfxfvlsw $p |- ( ( W e. Word V /\ L e. ( 1 ... ( # ` W ) ) )
+                    -> ( lastS ` ( W prefix L ) ) = ( W ` ( L - 1 ) ) ) $=
+    ( cword wcel c1 chash cfv cfz cpfx clsw cmin wceq cn0 sylan2 syl cc0 adantl
+    co wa elfznn nnnn0d pfxclg lswwrd fz1ssfz0 sseli pfxlen fvoveq1d cfzo simpl
+    cn fzo0end pfxfv syl3anc 3eqtrd ) CBDZEZAFCGHZISZEZTZCAJSZKHZVBGHZFLSVBHZAF
+    LSZVBHZVFCHZVAVBUPEZVCVEMUTUQANEVIUTAAURUAZUBBCAUCOBVBUDPVAVDAFVBLUTUQAQURI
+    SZEZVDAMUSVKAURUEUFZBCAUGOUHVAUQVLVFQAUISEZVGVHMUQUTUJUTVLUQVMRUTVNUQUTAUKE
+    VNVJAULPRVFABCUMUNUO $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
