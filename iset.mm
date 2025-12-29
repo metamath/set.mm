@@ -191916,6 +191916,13 @@ $)
     basfn sylancr ifexd eqeltrd ) ABCZADEAFFGCZAHEZAIEZJFABKUAUBUCUDFFABLUAIFMA
     FCUDFCZQABNUEFAIAIOPRST $.
 
+  $( Applying the indexed edge function yields a set.  (Contributed by Jim
+     Kingdon, 29-Dec-2025.) $)
+  iedgex $p |- ( G e. V -> ( iEdg ` G ) e. _V ) $=
+    ( wcel ciedg cfv cvv cxp cedgf cif iedgvalg 2ndexg edgfid edgfndxnn ndxslid
+    c2nd cnx slotex ifexd eqeltrd ) ABCZADEAFFGCZAOEZAHEZIFABJTUAUBUCFFABKAHBHP
+    HELMNQRS $.
+
   ${
     1vgrex.v $e |- V = ( Vtx ` G ) $.
     $( A graph with at least one vertex is a set.  (Contributed by AV,
