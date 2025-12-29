@@ -191909,6 +191909,13 @@ $)
       INOABRUGUMUNUOEEABSAIBITIHUAUBUCUDUEUF $.
   $}
 
+  $( Applying the vertex function yields a set.  (Contributed by Jim Kingdon,
+     29-Dec-2025.) $)
+  vtxex $p |- ( G e. V -> ( Vtx ` G ) e. _V ) $=
+    ( wcel cvtx cfv cvv cxp c1st cbs cif vtxvalg 1stexg wfn elex funfvex funfni
+    basfn sylancr ifexd eqeltrd ) ABCZADEAFFGCZAHEZAIEZJFABKUAUBUCUDFFABLUAIFMA
+    FCUDFCZQABNUEFAIAIOPRST $.
+
   ${
     1vgrex.v $e |- V = ( Vtx ` G ) $.
     $( A graph with at least one vertex is a set.  (Contributed by AV,
