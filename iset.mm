@@ -192481,6 +192481,25 @@ $)
       [. ( iEdg ` g ) / e ]. e : dom e -1-1-> { s e. ~P v | E. j j e. s } } $.
   $}
 
+  ${
+    $d g h v e j s $.  $d E h $.  $d G h $.  $d V h s $.
+    isuhgr.v $e |- V = ( Vtx ` G ) $.
+    isuhgr.e $e |- E = ( iEdg ` G ) $.
+    $( The predicate "is an undirected hypergraph."  (Contributed by Alexander
+       van der Vekens, 26-Dec-2017.)  (Revised by AV, 9-Oct-2020.) $)
+    isuhgrm $p |- ( G e. U -> ( G e. UHGraph
+        <-> E : dom E --> { s e. ~P V | E. j j e. s } ) ) $=
+      ( ve vv vg wcel cv cdm ciedg cfv cvtx wceq fveq2 cvv vh cuhgr wex crab wf
+      cpw cab df-uhgrm eleq2i eqtr4di dmeqd eqcomi dmeqi eqtrdi rabeqdv feq123d
+      wsbc pweqd vtxex elv a1i iedgex adantr simpr sbcied2 cbvabv elab2g bitrid
+      wa ) DUBLDIMZNZBMFMLBUCZFJMZUFZUDZVJUEZIKMZOPZUQZJVQQPZUQZKUGZLDALCNZVLFE
+      UFZUDZCUEZUBWBDJIKBFUHUIUAMZOPZNZVLFWGQPZUFZUDZWHUEZWFUADWBAWGDRZWIWCWLWE
+      WHCWNWHDOPZCWGDOSZHUJWNWIWONWCWNWHWOWPUKWOCCWOHULUMUNWNVLFWKWDWNWJEWNWJDQ
+      PEWGDQSGUJURUOUPWAWMKUAVQWGRZVSWMJVTWJTVTTLZWQWRKVQTUSUTVAVQWGQSWQVMWJRZV
+      IZVPWMIVRWHTVRTLZWTXAKVQTVBUTVAWQVRWHRWSVQWGOSVCWTVJWHRZVIZVKWIVOWLVJWHWT
+      XBVDZXCVJWHXDUKWTVOWLRXBWTVLFVNWKWTVMWJWQWSVDURUOVCUPVEVEVFVGVH $.
+  $}
+
 
 $(
 ###############################################################################
