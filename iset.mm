@@ -35505,6 +35505,18 @@ $)
   $}
 
   ${
+    $d A z $.  $d B x z $.  $d C y z $.  $d x y z $.
+    $( The restricted class abstractions ` { x e. B | C = y } ` for distinct
+       ` y e. A ` are disjoint.  (Contributed by AV, 6-May-2020.)  (Proof
+       shortened by GG, 26-Jan-2024.) $)
+    invdisjrab $p |- Disj_ y e. A { x e. B | C = y } $=
+      ( vz cv csb wceq crab wral wdisj wcel wa nfcsb1v nfeq1 weq csbeq1a eqeq1d
+      nfcv elrabf simprr sylan2b rgen2 invdisj ax-mp ) AFGZEHZBGZIZFEUIIZADJZKB
+      CKBCULLUJBFCULUGULMUICMZUGDMZUJNUJUKUJAUGDAUGTADTAUHUIAUGEOPAFQEUHUIAUGER
+      SUAUMUNUJUBUCUDBFCULUHUEUF $.
+  $}
+
+  ${
     $d A u v w x y $.  $d B u v w y $.  $d C u v x y $.  $d D u v x y $.
     $( A disjoint collection yields disjoint indexed unions for disjoint index
        sets.  (Contributed by Mario Carneiro, 26-Mar-2015.)  (Revised by Mario
@@ -48689,6 +48701,15 @@ $)
      NM, 2-Aug-1994.) $)
   fnssres $p |- ( ( F Fn A /\ B C_ A ) -> ( F |` B ) Fn B ) $=
     ( wfn cres wss fnssresb biimpar ) CADCBEBDBAFABCGH $.
+
+  ${
+    fnssresd.1 $e |- ( ph -> F Fn A ) $.
+    fnssresd.2 $e |- ( ph -> B C_ A ) $.
+    $( Restriction of a function to a subclass of its domain.  (Contributed by
+       Glauco Siliprandi, 5-Feb-2022.) $)
+    fnssresd $p |- ( ph -> ( F |` B ) Fn B ) $=
+      ( wfn wss cres fnssres syl2anc ) ADBGCBHDCICGEFBCDJK $.
+  $}
 
   $( Restriction of a function's domain with an intersection.  (Contributed by
      NM, 9-Aug-1994.) $)
@@ -116914,6 +116935,19 @@ $)
     cc0 lennncl fzo0end syl wrdsymbcl syldan eqeltrd ) BACDZBEFZGZBHIZBJIZKLMZB
     IZAUFUIULNUGABOPUFUGUKSUJQMDZULADUHUJRDUMABTUJUAUBUKABUCUDUE $.
 
+  ${
+    $d W x $.
+    $( Existence of the last symbol.  The last symbol of a word is a set.  See
+       ~ lsw0g or ~ lswcl if you want more specific results for empty or
+       nonempty words, respectively.  (Contributed by Jim Kingdon,
+       27-Dec-2025.) $)
+    lswex $p |- ( W e. Word V -> ( lastS ` W ) e. _V ) $=
+      ( vx cword wcel c0 wceq clsw cfv cvv wne fveq2 lsw0g 0ex eqeltri eqeltrdi
+      adantl wa lswcl wo elexd cfn wex wrdfin fin0or n0r orim2i 3syl mpjaodan
+      cv ) BADEZBFGZBHIZJEZBFKZULUNUKULUMFHIZJBFHLUPFJMNOPQUKUORUMAABSUAUKBUBEU
+      LCUJBECUCZTULUOTABUDCBUEUQUOULCBUFUGUHUI $.
+  $}
+
   $( The last symbol of a nonempty word is an element of the alphabet for the
      word.  (Contributed by Alexander van der Vekens, 1-Oct-2018.)  (Proof
      shortened by AV, 29-Apr-2020.) $)
@@ -118006,6 +118040,393 @@ $)
       XRWKIZXRWIUCKWHIZXRCIZWEWPXFXIVKXSXRGXDJKZEZXTYASWEWPXFXIWRXNXPVNWEYDXSWE
       YCWGXRWEXDWFGJXQRVOVPAWHWIWJXRVQVRWCWDXSYAYBSABCXRVSVTVHWA $.
   $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Prefixes of a word
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c prefix $.
+
+  $( Syntax for the prefix operator. $)
+  cpfx $a class prefix $.
+
+  ${
+    $d l s $.
+    $( Define an operation which extracts prefixes of words, i.e. subwords (or
+       substrings) starting at the beginning of a word (or string).  In other
+       words, ` ( S prefix L ) ` is the prefix of the word ` S ` of length
+       ` L ` .  Definition in Section 9.1 of [AhoHopUll] p. 318.  See also
+       Wikipedia "Substring" ~ https://en.wikipedia.org/wiki/Substring#Prefix .
+       (Contributed by AV, 2-May-2020.) $)
+    df-pfx $a |- prefix = ( s e. _V , l e. NN0
+                               |-> ( s substr <. 0 , l >. ) ) $.
+  $}
+
+  ${
+    $d L l s x $.  $d S l s x $.  $d V l s x $.
+    $( Value of a prefix operation.  (Contributed by AV, 2-May-2020.) $)
+    pfxval $p |- ( ( S e. V /\ L e. NN0 )
+                    -> ( S prefix L ) = ( S substr <. 0 , L >. ) ) $=
+      ( vs vl vx wcel cn0 wa cvv cv cc0 cop csubstr co cpfx wceq a1i c0 cz cmpo
+      df-pfx simpl opeq2 adantl oveq12d elex adantr simpr cfzo cdm wss cmin cfv
+      caddc cmpt cif 0zd nn0zd swrdval syl3anc 0z zsubcld fzofig sylancr mptexd
+      cfn 0ex ifexd eqeltrd ovmpod ) ACGZBHGZIZDEABJHDKZLEKZMZNOZALBMZNOZPJPDEJ
+      HVRUAQVNDEUBRVOAQZVPBQZIZVRVTQVNWCVOAVQVSNWAWBUCWBVQVSQWAVPBLUDUEUFUEVLAJ
+      GVMACUGUHVLVMUIZVNVTLBUJOAUKULZFLBLUMOZUJOZFKLUOOAUNZUPZSUQZJVNVLLTGZBTGV
+      TWJQVLVMUCVNURZVNBWDUSZFALBCUTVAVNWEWISJJVNFWGWHVGVNWKWFTGWGVGGVBVNBLWMWL
+      VCLWFVDVEVFSJGVNVHRVIVJVK $.
+
+    $( The zero length prefix is the empty set.  (Contributed by AV,
+       2-May-2020.) $)
+    pfx00g $p |- ( S e. V -> ( S prefix 0 ) = (/) ) $=
+      ( wcel cc0 cpfx co cop csubstr c0 wceq 0nn0 pfxval mpan2 cz swrd00g eqtrd
+      cn0 0z ) ABCZADEFZADDGHFZISDQCTUAJKADBLMSDNCUAIJRABDOMP $.
+
+    $( A prefix of an empty set is always the empty set.  (Contributed by AV,
+       3-May-2020.) $)
+    pfx0g $p |- ( L e. NN0 -> ( (/) prefix L ) = (/) ) $=
+      ( cn0 wcel c0 cpfx co cc0 cop csubstr cvv wceq 0ex pfxval mpan cz 0z nn0z
+      swrd0g sylancr eqtrd ) ABCZDAEFZDGAHIFZDDJCUAUBUCKLDAJMNUAGOCAOCUCDKPAQGA
+      RST $.
+  $}
+
+  ${
+    $d L x $.  $d S x $.  $d l s $.
+    $( Closure of the prefix extractor.  (Contributed by AV, 2-May-2020.) $)
+    pfxclg $p |- ( ( S e. Word A /\ L e. NN0 ) -> ( S prefix L ) e. Word A ) $=
+      ( cword wcel cn0 wa cpfx co cc0 cop csubstr pfxval simpl 0zd nn0z swrdclg
+      cz adantl syl3anc eqeltrd ) BADZEZCFEZGZBCHIBJCKLIZUBBCUBMUEUCJRECREZUFUB
+      EUCUDNUEOUDUGUCCPSABJCQTUA $.
+
+    $d A x $.
+    $( Value of the prefix extractor as a mapping.  (Contributed by AV,
+       2-May-2020.) $)
+    pfxmpt $p |- ( ( S e. Word A /\ L e. ( 0 ... ( # ` S ) ) )
+                    -> ( S prefix L ) = ( x e. ( 0 ..^ L ) |-> ( S ` x ) ) ) $=
+      ( cword wcel cc0 chash cfv cfz co wa cpfx cfzo cmpt cn0 wceq adantl nn0cn
+      syl cop csubstr cv caddc elfznn0 pfxval sylan2 simpl 0elfz simpr swrdval2
+      cmin syl3anc subid1d oveq2d elfzonn0 addridd fveq2d mpteq12dva 3eqtrd ) C
+      BEZFZDGCHIZJKFZLZCDMKZCGDUAUBKZAGDGULKZNKZAUCZGUDKZCIZOZAGDNKZVJCIZOVDVBD
+      PFZVFVGQDVCUEZCDVAUFUGVEVBGGDJKFZVDVGVMQVBVDUHVEVPVRVDVPVBVQRDUITVBVDUJAB
+      CGDUKUMVEAVIVLVNVOVDVIVNQVBVDVHDGNVDVPVHDQVQVPDDSUNTUORVJVIFZVLVOQVEVSVKV
+      JCVSVJPFZVKVJQVJVHUPVTVJVJSUQTURRUSUT $.
+
+    $( Value of the prefix extractor as the restriction of a word.
+       (Contributed by Stefan O'Rear, 24-Aug-2015.)  (Revised by AV,
+       2-May-2020.) $)
+    pfxres $p |- ( ( S e. Word A /\ L e. ( 0 ... ( # ` S ) ) )
+                    -> ( S prefix L ) = ( S |` ( 0 ..^ L ) ) ) $=
+      ( vx cword wcel cc0 chash cfv co wa cpfx cfzo cv cmpt cres pfxmpt wf wrdf
+      cfz adantr cuz wss elfzuz3 adantl fzoss2 syl feqresmpt eqtr4d ) BAEFZCGBH
+      IZTJFZKZBCLJDGCMJZDNBIOBUNPDABCQUMDGUKMJZAUNBUJUOABRULABSUAUMUKCUBIFZUNUO
+      UCULUPUJCGUKUDUECGUKUFUGUHUI $.
+
+    $d V x $.  $d W x $.
+    $( A prefix of a word is a function from a half-open range of nonnegative
+       integers of the same length as the prefix to the set of symbols for the
+       original word.  (Contributed by AV, 2-May-2020.) $)
+    pfxf $p |- ( ( W e. Word V /\ L e. ( 0 ... ( # ` W ) ) )
+                -> ( W prefix L ) : ( 0 ..^ L ) --> V ) $=
+      ( vx cword wcel cc0 chash cfv cfz co wa cfzo cv pfxmpt simpll cuz elfzuz3
+      cpfx wss adantl fzoss2 syl sselda wrdsymbcl syl2anc fmpt3d ) CBEFZAGCHIZJ
+      KFZLZDGAMKZDNZCIZBCASKDBCAOUKUMULFZLUHUMGUIMKZFUNBFUHUJUOPUKULUPUMUKUIAQI
+      FZULUPTUJUQUHAGUIRUAAGUIUBUCUDUMBCUEUFUG $.
+  $}
+
+  $( Value of the prefix extractor as function with domain.  (Contributed by
+     AV, 2-May-2020.) $)
+  pfxfn $p |- ( ( S e. Word V /\ L e. ( 0 ... ( # ` S ) ) )
+                 -> ( S prefix L ) Fn ( 0 ..^ L ) ) $=
+    ( cword wcel cc0 chash cfv cfz co wa cfzo cpfx pfxf ffnd ) ACDEBFAGHIJEKFBL
+    JCABMJBCANO $.
+
+  $( A symbol in a prefix of a word, indexed using the prefix' indices.
+     (Contributed by Alexander van der Vekens, 16-Jun-2018.)  (Revised by AV,
+     3-May-2020.) $)
+  pfxfv $p |- ( ( W e. Word V /\ L e. ( 0 ... ( # ` W ) )
+                    /\ I e. ( 0 ..^ L ) )
+                 -> ( ( W prefix L ) ` I ) = ( W ` I ) ) $=
+    ( cword wcel cc0 chash cfv cfz co cfzo w3a cpfx cop csubstr caddc wceq cn0
+    wi elfznn0 pfxval sylan2 3adant3 fveq1d cmin simp1 0elfz syl 3ad2ant2 simp2
+    nn0cnd subid1d eqcomd oveq2d eleq2d biimpd a1i 3imp swrdfv syl31anc addridd
+    elfzoelz zcnd 3ad2ant3 fveq2d 3eqtrd ) DCEZFZBGDHIZJKFZAGBLKZFZMZADBNKZIADG
+    BOPKZIZAGQKZDIZADIVNAVOVPVIVKVOVPRZVMVKVIBSFZVTBVJUAZDBVHUBUCUDUEVNVIGGBJKF
+    ZVKAGBGUFKZLKZFZVQVSRVIVKVMUGVKVIWCVMVKWAWCWBBUHUIUJVIVKVMUKVIVKVMWFVKVMWFT
+    TVIVKVMWFVKVLWEAVKBWDGLVKWDBVKBVKBWBULUMUNUOUPUQURUSCDGBAUTVAVNVRADVMVIVRAR
+    VKVMAVMAAGBVCVDVBVEVFVG $.
+
+  $( Length of a prefix.  (Contributed by Stefan O'Rear, 24-Aug-2015.)
+     (Revised by AV, 2-May-2020.) $)
+  pfxlen $p |- ( ( S e. Word A /\ L e. ( 0 ... ( # ` S ) ) )
+                    -> ( # ` ( S prefix L ) ) = L ) $=
+    ( cword wcel cc0 chash cfv cfz co wa cpfx cfzo wfn cfn wceq pfxfn cz adantl
+    0z elfzelz fzofig sylancr fihashfn syl2anc cn0 elfznn0 hashfzo0 syl eqtrd )
+    BADEZCFBGHZIJEZKZBCLJZGHZFCMJZGHZCUNUOUQNUQOEZUPURPBCAQUNFRECREZUSTUMUTUKCF
+    ULUASFCUBUCUQUOUDUEUNCUFEZURCPUMVAUKCULUGSCUHUIUJ $.
+
+  ${
+    $d x A $.  $d x S $.
+    $( A word is a prefix of itself.  (Contributed by Stefan O'Rear,
+       16-Aug-2015.)  (Revised by AV, 2-May-2020.) $)
+    pfxid $p |- ( S e. Word A -> ( S prefix ( # ` S ) ) = S ) $=
+      ( vx cword wcel cc0 chash cfv cfzo co cpfx cfz wf lencl nn0fz0 sylib pfxf
+      cn0 mpdan ffnd wrdfn cv wa wceq simpl adantr simpr pfxfv syl3anc eqfnfvd
+      ) BADEZCFBGHZIJZBULKJZBUKUMAUNUKULFULLJEZUMAUNMUKULREUOABNULOPZULABQSTABU
+      AUKCUBZUMEZUCUKUOURUQUNHUQBHUDUKURUEUKUOURUPUFUKURUGUQULABUHUIUJ $.
+  $}
+
+  $( The range of a prefix of a word is a subset of the set of symbols for the
+     word.  (Contributed by AV, 2-May-2020.) $)
+  pfxrn $p |- ( ( W e. Word V /\ L e. ( 0 ... ( # ` W ) ) )
+                 -> ran ( W prefix L ) C_ V ) $=
+    ( cword wcel cc0 chash cfv cfz co wa cfzo cpfx pfxf frnd ) CBDEAFCGHIJEKFAL
+    JBCAMJABCNO $.
+
+  $( A prefix consisting of at least one symbol is not empty.  (Contributed by
+     Alexander van der Vekens, 4-Aug-2018.)  (Revised by AV, 2-May-2020.) $)
+  pfxn0 $p |- ( ( W e. Word V /\ L e. NN /\ L <_ ( # ` W ) )
+                 -> ( W prefix L ) =/= (/) ) $=
+    ( cword wcel cn chash cfv cle wbr w3a cpfx co c0 wne cc0 cfzo 3ad2ant2 wceq
+    cn0 lbfzo0 ne0i sylbir wf wb cfz simp1 nnnn0 lencl 3ad2ant1 simp3 syl3anbrc
+    elfz2nn0 pfxf syl2anc f0dom0 bicomd syl necon3bid mpbird ) CBDEZAFEZACGHZIJ
+    ZKZCALMZNOPAQMZNOZVBVAVHVDVBPVGEVHAUAVGPUBUCRVEVFNVGNVEVGBVFUDZVFNSZVGNSZUE
+    VEVAAPVCUFMEZVIVAVBVDUGVEATEZVCTEZVDVLVBVAVMVDAUHRVAVBVNVDBCUIUJVAVBVDUKAVC
+    UMULABCUNUOVIVKVJVFVGBUPUQURUSUT $.
+
+  $( The value of a prefix operation for a length argument larger than the word
+     length is the empty set.  (This is due to our definition of function
+     values for out-of-domain arguments, see ~ ndmfvg ).  (Contributed by AV,
+     3-May-2020.) $)
+  pfxnd $p |- ( ( W e. Word V /\ L e. NN0 /\ ( # ` W ) < L )
+                 -> ( W prefix L ) = (/) ) $=
+    ( cword wcel cn0 chash cfv clt wbr w3a cpfx co cc0 cop csubstr c0 pfxval cz
+    wceq 3adant3 cle w3o simp1 0zd nn0z 3ad2ant2 3jca 3mix3 3ad2ant3 sylc eqtrd
+    swrdnd ) CBDZEZAFEZCGHAIJZKZCALMZCNAOPMZQUOUPUSUTTUQCAUNRUAURUONSEZASEZKNNI
+    JZANUBJZUQUCZUTQTURUOVAVBUOUPUQUDURUEUPUOVBUQAUFUGUHUQUOVEUPUQVCVDUIUJNABCU
+    MUKUL $.
+
+  $( A prefix of a word is a word over the symbols it consists of.
+     (Contributed by AV, 3-Dec-2022.) $)
+  pfxwrdsymbg $p |- ( ( S e. Word A /\ L e. NN0 )
+                     -> ( S prefix L ) e. Word ( S " ( 0 ..^ L ) ) ) $=
+    ( cword wcel wa co cc0 cfv cle wbr clt cfz simpll syl cz syl2anc syl3anc c0
+    adantl cn0 cpfx cop csubstr cfzo cima pfxval chash cuz simplr elnn0uz sylib
+    eluzfz1 simpr lencl nn0zd elfz5 mpbird swrdwrdsymbg w3o wceq 3mix3 0zd nn0z
+    wb wi adantr swrdnd mpd wrd0 eqeltrdi wo zlelttric mpjaodan eqeltrd ) BADZE
+    ZCUAEZFZBCUBGBHCUCUDGZBHCUEGUFZDZBCVPUGVSCBUHIZJKZVTWBEZWCCLKZVSWDFZVQHHCMG
+    EZCHWCMGEZWEVQVRWDNZWGCHUIIEZWHWGVRWKVQVRWDUJCUKULZHCUMOWGWIWDVSWDUNWGWKWCP
+    EZWIWDVEWLWGVQWMWJVQWCABUOUPZOCHWCUQQURABHCUSRVSWFFZVTSWBWOHHLKZCHJKZWFUTZV
+    TSVAZWFWRVSWFWPWQVBTWOVQHPECPEZWRWSVFVQVRWFNWOVCVSWTWFVRWTVQCVDTZVGHCABVHRV
+    IWAVJVKVSWTWMWDWFVLXAVQWMVRWNVGCWCVMQVNVO $.
+
+  $( The sum of the lengths of two parts of a word is the length of the word.
+     (Contributed by AV, 21-Oct-2018.)  (Revised by AV, 3-May-2020.) $)
+  addlenpfx $p |- ( ( W e. Word V /\ M e. ( 0 ... ( # ` W ) ) )
+               -> ( ( # ` ( W prefix M ) )
+                  + ( # ` ( W substr <. M , ( # ` W ) >. ) ) ) = ( # ` W ) ) $=
+    ( cword wcel cc0 chash cfv cfz co wa cpfx cop csubstr caddc pfxlen swrdrlen
+    cmin cc nn0cnd oveq12d wceq elfznn0 lencl pncan3 syl2anr eqtrd ) CBDEZAFCGH
+    ZIJEZKZCALJGHZCAUIMNJGHZOJAUIARJZOJZUIUKULAUMUNOBCAPABCQUAUJASEUISEUOUIUBUH
+    UJAAUIUCTUHUIBCUDTAUIUEUFUG $.
+
+  $( The first symbol of a prefix is the first symbol of the word.
+     (Contributed by Alexander van der Vekens, 16-Jun-2018.)  (Revised by AV,
+     3-May-2020.) $)
+  pfxfv0 $p |- ( ( W e. Word V /\ L e. ( 1 ... ( # ` W ) ) )
+                  -> ( ( W prefix L ) ` 0 ) = ( W ` 0 ) ) $=
+    ( cword wcel c1 chash cfv cfz co wa cc0 cfzo cpfx wceq simpl fz1ssfz0 sseli
+    adantl cn elfznn lbfzo0 sylibr pfxfv syl3anc ) CBDEZAFCGHZIJZEZKZUFALUGIJZE
+    ZLLAMJEZLCANJHLCHOUFUIPUIULUFUHUKAUGQRSUJATEZUMUIUNUFAUGUASAUBUCLABCUDUE $.
+
+  $( A symbol in a word truncated by one symbol.  (Contributed by Alexander van
+     der Vekens, 16-Jun-2018.)  (Revised by AV, 3-May-2020.) $)
+  pfxtrcfv $p |- ( ( W e. Word V /\ W =/= (/)
+                      /\ I e. ( 0 ..^ ( ( # ` W ) - 1 ) ) )
+                    -> ( ( W prefix ( ( # ` W ) - 1 ) ) ` I ) = ( W ` I ) ) $=
+    ( cword wcel chash cfv c1 cmin co cc0 cfz c0 wne cfzo cpfx wceq w3a wa cfn
+    wrdfin 1elfz0hash sylan cn lennncl elfz1end sylib 3adant3 fz0fzdiffz0 pfxfv
+    jca syl syld3an2 ) CBDEZCFGZHIJZKUOLJZEZCMNZAKUPOJEZACUPPJGACGQUNUSUTRHUQEZ
+    UOHUOLJEZSZURUNUSVCUTUNUSSZVAVBUNCTEUSVABCUACUBUCVDUOUDEVBBCUEUOUFUGUKUHUOH
+    UOUIULAUPBCUJUM $.
+
+  $( The first symbol in a word truncated by one symbol.  (Contributed by
+     Alexander van der Vekens, 16-Jun-2018.)  (Revised by AV, 3-May-2020.) $)
+  pfxtrcfv0 $p |- ( ( W e. Word V /\ 2 <_ ( # ` W ) )
+                     -> ( ( W prefix ( ( # ` W ) - 1 ) ) ` 0 ) = ( W ` 0 ) ) $=
+    ( cword wcel c2 chash cfv cle wbr wa c0 wne cc0 c1 cmin co cfzo cpfx wceq
+    cz simpl wrdlenge2n0 cn cuz 2z a1i lencl nn0zd adantr simpr eluz2 syl3anbrc
+    uz2m1nn syl lbfzo0 sylibr pfxtrcfv syl3anc ) BACDZEBFGZHIZJZUSBKLMMUTNOPZQP
+    DZMBVCRPGMBGSUSVAUAABUBVBVCUCDZVDVBUTEUDGDZVEVBETDZUTTDZVAVFVGVBUEUFUSVHVAU
+    SUTABUGUHUIUSVAUJEUTUKULUTUMUNVCUOUPMABUQUR $.
+
+  $( The last symbol in a nonempty prefix of a word.  (Contributed by Alexander
+     van der Vekens, 24-Jun-2018.)  (Revised by AV, 3-May-2020.) $)
+  pfxfvlsw $p |- ( ( W e. Word V /\ L e. ( 1 ... ( # ` W ) ) )
+                    -> ( lastS ` ( W prefix L ) ) = ( W ` ( L - 1 ) ) ) $=
+    ( cword wcel c1 chash cfv cfz cpfx clsw cmin wceq cn0 sylan2 syl cc0 adantl
+    co wa elfznn nnnn0d pfxclg lswwrd fz1ssfz0 sseli pfxlen fvoveq1d cfzo simpl
+    cn fzo0end pfxfv syl3anc 3eqtrd ) CBDZEZAFCGHZISZEZTZCAJSZKHZVBGHZFLSVBHZAF
+    LSZVBHZVFCHZVAVBUPEZVCVEMUTUQANEVIUTAAURUAZUBBCAUCOBVBUDPVAVDAFVBLUTUQAQURI
+    SZEZVDAMUSVKAURUEUFZBCAUGOUHVAUQVLVFQAUISEZVGVHMUQUTUJUTVLUQVMRUTVNUQUTAUKE
+    VNVJAULPRVFABCUMUNUO $.
+
+  ${
+    $d M i $.  $d N i $.  $d U i $.  $d V i $.  $d W i $.
+    $( The prefixes of two words are equal iff they have the same length and
+       the same symbols at each position.  (Contributed by Alexander van der
+       Vekens, 7-Aug-2018.)  (Revised by AV, 4-May-2020.) $)
+    pfxeq $p |- ( ( ( W e. Word V /\ U e. Word V ) /\ ( M e. NN0 /\ N e. NN0 )
+                     /\ ( M <_ ( # ` W ) /\ N <_ ( # ` U ) ) )
+                   -> ( ( W prefix M ) = ( U prefix N )
+             <-> ( M = N /\ A. i e. ( 0 ..^ M ) ( W ` i ) = ( U ` i ) ) ) ) $=
+      ( cn0 wcel wa chash cfv co wceq cc0 cfzo wral wb w3a syl2anc ad2antrr cle
+      cword cpfx cv simp2l simp1l pfxclg simp2r simp1r eqwrd simpl lencl adantr
+      wbr 3anim123i elfz2nn0 sylibr pfxlen adantl eqeq12d anbi1d oveq2d raleqdv
+      cfz simpr pfxfv oveq2 eleq2d biimpa ralbidva bitrd pm5.32da 3bitrd 3com12
+      syl3anc ) CGHZDGHZIZFEUBZHZAVSHZIZCFJKZUAUNZDAJKZUAUNZIZFCUCLZADUCLZMZCDM
+      ZBUDZFKZWLAKZMZBNCOLZPZIZQVRWBWGRZWJWHJKZWIJKZMZWLWHKZWLWIKZMZBNWTOLZPZIZ
+      WKXGIWRWSWHVSHZWIVSHZWJXHQWSVTVPXIVRVTWAWGUEZVPVQWBWGUFEFCUGSWSWAVQXJVRVT
+      WAWGUHZVPVQWBWGUIEADUGSEEWHBWIUJSWSXBWKXGWSWTCXADWSVTCNWCVDLHZWTCMZXKWSVP
+      WCGHZWDRXMVRVPWBXOWGWDVPVQUKVTXOWAEFULUMWDWFUKUOCWCUPUQZEFCURSZWSWADNWEVD
+      LHZXADMXLWSVQWEGHZWFRXRVRVQWBXSWGWFVPVQVEWAXSVTEAULUSWDWFVEUODWEUPUQZEADU
+      RSUTVAWSWKXGWQWSWKIZXGXEBWPPWQYAXEBXFWPYAWTCNOWSXNWKXQUMVBVCYAXEWOBWPYAWL
+      WPHZIZXCWMXDWNYCVTXMYBXCWMMWSVTWKYBXKTWSXMWKYBXPTYAYBVEWLCEFVFVOYCWAXRWLN
+      DOLZHZXDWNMWSWAWKYBXLTWSXRWKYBXTTYAYBYEWKYBYEQWSWKWPYDWLCDNOVGVHUSVIWLDEA
+      VFVOUTVJVKVLVMVN $.
+  $}
+
+  $( The last symbol in a word truncated by one symbol.  (Contributed by AV,
+     16-Jun-2018.)  (Revised by AV, 5-May-2020.) $)
+  pfxtrcfvl $p |- ( ( W e. Word V /\ 2 <_ ( # ` W ) )
+                     -> ( lastS ` ( W prefix ( ( # ` W ) - 1 ) ) )
+                        = ( W ` ( ( # ` W ) - 2 ) ) ) $=
+    ( cword wcel c2 chash cfv cle wbr wa c1 cmin co cpfx clsw cfz cz adantr syl
+    wceq cuz 2z a1i lencl nn0zd simpr eluz2 syl3anbrc ige2m1fz1 pfxfvlsw syldan
+    cc nn0cnd sub1m1 fveq2d eqtrd ) BACDZEBFGZHIZJZBURKLMZNMOGZVAKLMZBGZURELMZB
+    GUQUSVAKURPMDZVBVDTUTUREUAGDZVFUTEQDZURQDZUSVGVHUTUBUCUQVIUSUQURABUDZUERUQU
+    SUFEURUGUHURUISVAABUJUKUTVCVEBUQVCVETZUSUQURULDVKUQURVJUMURUNSRUOUP $.
+
+  ${
+    $d I i $.  $d S i $.  $d V i $.  $d W i $.
+    $( Two words are equal if and only if they have the same prefix and the
+       same suffix.  (Contributed by Alexander van der Vekens, 23-Sep-2018.)
+       (Revised by AV, 5-May-2020.) $)
+    pfxsuffeqwrdeq $p |- ( ( W e. Word V /\ S e. Word V
+                           /\ I e. ( 0 ..^ ( # ` W ) ) )
+                  -> ( W = S <-> ( ( # ` W ) = ( # ` S )
+                       /\ ( ( W prefix I ) = ( S prefix I )
+                       /\ ( W substr <. I , ( # ` W ) >. )
+                          = ( S substr <. I , ( # ` W ) >. ) ) ) ) ) $=
+      ( vi wcel cc0 chash cfv cfzo co wceq wral wa cpfx 3ad2ant3 adantr cle wbr
+      wb cword w3a cv cop csubstr eqwrd 3adant3 cun cfz elfzofz fzosplit ralunb
+      syl raleqdv bitrdi eqidd cn0 3simpa elfzonn0 jca breq2 adantl mpbid pfxeq
+      elfzo0le syl112anc mpbirand lencl anim12ci 3adant2 nn0red leidd 3ad2antl1
+      cr eqle sylan swrdspsleq syl3anc anbi12d bitr4d pm5.32da bitrd ) DCUAZFZA
+      WCFZBGDHIZJKZFZUBZDALZWFAHIZLZEUCZDIWMAILZEWGMZNZWLDBOKABOKLZDBWFUDZUEKAW
+      RUEKLZNZNWDWEWJWPTWHCCDEAUFUGWIWLWOWTWIWLNZWOWNEGBJKZMZWNEBWFJKZMZNZWTXAW
+      OWNEXBXDUHZMXFXAWNEWGXGWIWGXGLZWLWHWDXHWEWHBGWFUIKFXHBGWFUJGWFBUKUMPQUNWN
+      EXBXDULUOXAWQXCWSXEXAWQBBLZXCXABUPXAWDWENZBUQFZXKNZBWFRSZBWKRSZWQXIXCNTWI
+      XJWLWDWEWHURQZWIXLWLWHWDXLWEWHXKXKBWFUSZXPUTPQWIXMWLWHWDXMWEBWFVEPQZXAXMX
+      NXQWLXMXNTWIWFWKBRVAVBVCAEBBCDVDVFVGXAXJXKWFUQFZNZWFWFRSZWFWKRSZNZWSXETXO
+      WIXSWLWDWHXSWEWDXRWHXKCDVHZXPVIVJQWDWEWLYBWHWDWLNXTYAWDXTWLWDWFWDWFYCVKZV
+      LQWDWFVNFWLYAYDWFWKVOVPUTVMAEBWFCDVQVRVSVTWAWB $.
+  $}
+
+  $( Two (nonempty) words are equal if and only if they have the same prefix
+     and the same single symbol suffix.  (Contributed by Alexander van der
+     Vekens, 23-Sep-2018.)  (Revised by AV, 6-May-2020.) $)
+  pfxsuff1eqwrdeq $p |- ( ( W e. Word V /\ U e. Word V /\ 0 < ( # ` W ) )
+                          -> ( W = U <-> ( ( # ` W ) = ( # ` U )
+           /\ ( ( W prefix ( ( # ` W ) - 1 ) ) = ( U prefix ( ( # ` W ) - 1 ) )
+           /\ ( lastS ` W ) = ( lastS ` U ) ) ) ) ) $=
+    ( wcel cc0 chash cfv clt wbr w3a wceq c1 cmin co cpfx csubstr wa wb syl cvv
+    cword cop clsw cfzo wne cfn wrdfin fihashneq0 biimpa lennncl syldan 3adant2
+    cn c0 fzo0end pfxsuffeqwrdeq syld3an3 biimpd imdistani adantr swrdlsw breq2
+    cs1 3anbi3d 3adant1 biimtrdi impcom id opeq12d oveq2d eqeq1d adantl eqeq12d
+    oveq1 mpbird lswex 3ad2ant1 3ad2ant2 s111 syl2an2r bitrd anbi2d pm5.32da )
+    CBUAZDZAWDDZECFGZHIZJZCAKZWGAFGZKZCWGLMNZONAWMONKZCWMWGUBZPNZAWOPNZKZQZQZWL
+    WNCUCGZAUCGZKZQZQWEWFWHWMEWGUDNDZWJWTRWIWGUMDZXEWEWHXFWFWEWHCUNUEZXFWEWHXGW
+    ECUFDWHXGRBCUGCUHSZUIBCUJUKULWGUOSAWMBCUPUQWIWLWSXDWIWLQZWRXCWNXIWRXAVCZXBV
+    CZKZXCXIWPXJWQXKXIWEXGQZWPXJKWIXMWLWEWHXMWFWEWHXGWEWHXGXHURUSULUTBCVASXIWQX
+    KKZAWKLMNZWKUBZPNZXKKZWLWIXRWLWIWEWFEWKHIZJZXRWLWHXSWEWFWGWKEHVBVDXTWFAUNUE
+    ZQZXRWFXSYBWEWFXSYAWFXSYAWFAUFDXSYARBAUGAUHSURUSVEBAVASVFVGWLXNXRRWIWLWQXQX
+    KWLWOXPAPWLWMXOWGWKWGWKLMVNWLVHVIVJVKVLVOVMWIXATDZWLXBTDZXLXCRWEWFYCWHBCVPV
+    QWIYDWLWFWEYDWHBAVPVRUTTXAXBVSVTWAWBWCWA $.
+
+  ${
+    $d N y $.  $d V x $.  $d x y $.
+    $( Sets of words are disjoint if each set contains exactly the extensions
+       of distinct words of a fixed length.  Remark:  A word ` W ` is called an
+       "extension" of a word ` P ` if ` P ` is a prefix of ` W ` .
+       (Contributed by AV, 29-Jul-2018.)  (Revised by AV, 6-May-2020.) $)
+    disjwrdpfx $p |- Disj_ y e. W { x e. Word V | ( x prefix N ) = y } $=
+      ( cword cv cpfx co invdisjrab ) ABEDFAGCHIJ $.
+  $}
+
+  ${
+    $d x A $.  $d x S $.  $d x Y $.  $d x Z $.
+    $( Concatenating a prefix with an adjacent subword makes a longer prefix.
+       (Contributed by AV, 7-May-2020.) $)
+    ccatpfx $p |- ( ( S e. Word A /\ Y e. ( 0 ... Z )
+                       /\ Z e. ( 0 ... ( # ` S ) ) )
+        -> ( ( S prefix Y ) ++ ( S substr <. Y , Z >. ) ) = ( S prefix Z ) ) $=
+      ( wcel cc0 cfz co chash cfv wceq wa cfzo wfn ad2antrl adantl caddc adantr
+      cmin id vx cword cpfx cop csubstr cconcat cn0 elfznn0 pfxclg syldan simpl
+      cz nn0zd elfzelz swrdclg syl3anc ccatcl syl2anc wrdfn syl ccatlen biimpri
+      fzass4 simpld pfxlen sylan2 swrdlen 3expb oveq12d cc pncan3 syl2an 3eqtrd
+      oveq2d fneq2d mpbid pfxfn adantrl cv wo fzospliti syl2anr eleq2d ccatval1
+      zcnd biimpar pfxfv syl2an3an eqtrd ccatval2 w3a fzosubel wb subidd oveq1d
+      eqeltrd swrdfv syl2an2r elfzoelz npcan fveq2d jaodan 3expa eqtr4d eqfnfvd
+      adantlrl 3impb ) BAUBZEZCFDGHEZDFBIJZGHZEZBCUCHZBCDUDUEHZUFHZBDUCHZKXIXJX
+      MLZLZUAFDMHZXPXQXSXPFXPIJZMHZNZXPXTNXSXPXHEZYCXSXNXHEZXOXHEZYDXIXRCUGEZYE
+      XJYGXIXMCDUHOZABCUIUJZXSXICULEZDULEZYFXIXRUKZXSCYHUMXRYKXIXMYKXJDFXKUNZPP
+      ABCDUOUPZAXNXOUQURAXPUSUTXSYBXTXPXSYADFMXSYAXNIJZXOIJZQHZCDCSHZQHZDXSYEYF
+      YAYQKYIYNAAXNXOVAURXSYOCYPYRQXRXICXLEZYOCKXRYTDCXKGHEZYTUUALXRFCDXKVCVBVD
+      ZABCVEVFZXIXJXMYPYRKABCDVGVHVIZXRYSDKZXIXJCVJEZDVJEUUEXMXJCCFDUNZWEZXMDYM
+      WECDVKVLPZVMVNVOVPXIXMXQXTNXJBDAVQVRXSUAVSZXTEZLUUJXPJZUUJBJZUUJXQJZXSUUK
+      UUJFCMHZEZUUJCDMHZEZVTZUULUUMKZUUKUUKYJUUSXSUUKTXJYJXIXMUUGOZUUJFDCWAWBXS
+      UUPUUTUURXSUUPLZUULUUJXNJZUUMUVBYEYFUUJFYOMHZEZUULUVCKXSYEUUPYIRXSYFUUPYN
+      RXSUVEUUPXSUVDUUOUUJXSYOCFMUUCVNWCWFAAXNXOUUJWDUPXSXIYTUUPUUPUVCUUMKYLXRY
+      TXIUUBPUUPTUUJCABWGWHWIXSUURLZUULUUJYOSHZXOJZUVGCQHZBJZUUMUVFYEYFUUJYOYQM
+      HZEZUULUVHKXSYEUURYIRXSYFUURYNRXSUVLUURXSUVKUUQUUJXSYOCYQDMUUCXSYQYSDUUDU
+      UIWIVIWCWFAXNXOUUJWJUPXSXIXJXMWKZUURUVGFYRMHZEUVHUVJKXIXJXMUVMUVMTVHUVFUV
+      GUUJCSHZUVNXSUVGUVOKUURXSYOCUUJSUUCVNZRUVFUVOCCSHZYRMHZEZUVOUVNEZUURUURYJ
+      UVSXSUURTUVAUUJCDCWLWBXSUVSUVTWMZUURXJUWAXIXMXJUVRUVNUVOXJUVQFYRMXJCUUHWN
+      WOWCORVPWPABCDUVGWQWRUVFUVIUUJBUVFUVIUVOCQHZUUJXSUVIUWBKUURXSUVGUVOCQUVPW
+      ORUURUUJVJEUUFUWBUUJKXSUURUUJUUJCDWSWEXJUUFXIXMUUHOUUJCWTWBWIXAVMXBUJXIXM
+      UUKUUNUUMKZXJXIXMUUKUWCUUJDABWGXCXFXDXEXG $.
+  $}
+
+  ${
+    $d k B $.  $d k S $.  $d k T $.
+    $( Recover the left half of a concatenated word.  (Contributed by Mario
+       Carneiro, 27-Sep-2015.)  (Revised by AV, 6-May-2020.) $)
+    pfxccat1 $p |- ( ( S e. Word B /\ T e. Word B )
+                      -> ( ( S ++ T ) prefix ( # ` S ) ) = S ) $=
+      ( vk cword wcel wa cconcat co chash cfv cpfx cc0 cfzo cfz wceq cn0 adantr
+      lencl eqtrd cres ccatcl caddc anim12i nn0fz0 elfz0add sylc ccatlen oveq2d
+      sylib eleqtrrd pfxres syl2anc ccatvalfn cuz wss nn0zd uzidd syl2an fzoss2
+      uzaddcl syl fnssresd wfn wrdfn cv fvres adantl ccatval1 3expa eqfnfvd ) B
+      AEZFZCVLFZGZBCHIZBJKZLIZVPMVQNIZUAZBVOVPVLFVQMVPJKZOIZFVRVTPABCUBVOVQMVQC
+      JKZUCIZOIZWBVOVQQFZWCQFZGVQMVQOIFZVQWEFVMWFVNWGABSZACSZUDVMWHVNVMWFWHWIVQ
+      UEUJRVQWCVQUFUGVOWAWDMOAABCUHUIUKAVPVQULUMVODVSVTBVOMWDNIZVSVPBCAUNVOWDVQ
+      UOKZFZVSWKUPVMVQWLFWGWMVNVMVQVMVQWIUQURWJWCVQVQVAUSVQMWDUTVBVCVMBVSVDVNAB
+      VERVODVFZVSFZGWNVTKZWNVPKZWNBKZWOWPWQPVOWNVSVPVGVHVMVNWOWQWRPAABCWNVIVJTV
+      KT $.
+  $}
+
+  $( The prefix of length one of a nonempty word expressed as a singleton word.
+     (Contributed by AV, 15-May-2020.) $)
+  pfx1 $p |- ( ( W e. Word V /\ W =/= (/) )
+               -> ( W prefix 1 ) = <" ( W ` 0 ) "> ) $=
+    ( cword wcel c0 wne wa c1 cpfx co cc0 cop csubstr cfv cs1 cn0 wceq 1nn0 a1i
+    caddc pfxval sylan2 1e0p1 opeq2i oveq2i chash cfzo cn lennncl lbfzo0 sylibr
+    swrds1 syldan 3eqtrd ) BACZDZBEFZGZBHIJZBKHLZMJZBKKHTJZLZMJZKBNOZUQUPHPDZUS
+    VAQVFUQRSBHUOUAUBVAVDQURUTVCBMHVBKUCUDUESUPUQKKBUFNZUGJDZVDVEQURVGUHDVHABUI
+    VGUJUKAKBULUMUN $.
 
 
 $(
@@ -193919,6 +194340,9 @@ htmldef '">' as
 htmldef "substr" as " substr ";
   althtmldef "substr" as " substr ";
   latexdef "substr" as "\mathrm{substr}";
+htmldef "prefix" as ' prefix ';
+ althtmldef "prefix" as ' prefix ';
+ latexdef "prefix" as "\mathbin{\operatorname{prefix}}";
 htmldef "~QG" as " ~<sub><i>QG</i></sub> ";
   althtmldef "~QG" as " ~<sub><i>QG</i></sub> ";
   latexdef "~QG" as " \sim_{QG} ";
