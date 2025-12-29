@@ -192421,6 +192421,54 @@ $)
 
 
 $(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Undirected graphs
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Undirected hypergraphs
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c UHGraph $.
+  $c USHGraph $.
+
+  $( Extend class notation with undirected hypergraphs. $)
+  cuhgr $a class UHGraph $.
+
+  $( Extend class notation with undirected simple hypergraphs. $)
+  cushgr $a class USHGraph $.
+
+  ${
+    $d e g j s v $.
+    $( Define the class of all undirected hypergraphs.  An undirected
+       hypergraph consists of a set ` v ` (of "vertices") and a function ` e `
+       (representing indexed "edges") into the set of inhabited subsets of this
+       set.  (Contributed by Alexander van der Vekens, 26-Dec-2017.)  (Revised
+       by Jim Kingdon, 29-Dec-2025.) $)
+    df-uhgrm $a |- UHGraph = { g | [. ( Vtx ` g ) / v ]. [. ( iEdg ` g ) / e ].
+      e : dom e --> { s e. ~P v | E. j j e. s } } $.
+
+    $( Define the class of all undirected simple hypergraphs.  An undirected
+       simple hypergraph is a special (non-simple, multiple, multi-) hypergraph
+       for which the edge function ` e ` is an injective (one-to-one) function
+       into subsets of the set of vertices ` v ` , representing the (one or
+       more) vertices incident to the edge.  This definition corresponds to the
+       definition of hypergraphs in section I.1 of [Bollobas] p. 7 (except that
+       the empty set seems to be allowed to be an "edge") or section 1.10 of
+       [Diestel] p. 27, where "E is a subset of [[...] the power set of V, that
+       is the set of all subsets of V" resp.  "the elements of E are nonempty
+       subsets (of any cardinality) of V".  (Contributed by AV, 19-Jan-2020.)
+       (Revised by Jim Kingdon, 31-Dec-2025.) $)
+    df-ushgrm $a |- USHGraph = { g | [. ( Vtx ` g ) / v ].
+      [. ( iEdg ` g ) / e ]. e : dom e -1-1-> { s e. ~P v | E. j j e. s } } $.
+  $}
+
+
+$(
 ###############################################################################
   GUIDES AND MISCELLANEA
 ###############################################################################
@@ -194664,6 +194712,12 @@ htmldef "iEdg" as 'iEdg';
 htmldef "Edg" as 'Edg';
   althtmldef "Edg" as 'Edg';
   latexdef "Edg" as "\mathrm{Edg}";
+htmldef "UHGraph" as 'UHGraph';
+  althtmldef "UHGraph" as 'UHGraph';
+  latexdef "UHGraph" as "\mathrm{UHGraph}";
+htmldef "USHGraph" as 'USHGraph';
+  althtmldef "USHGraph" as 'USHGraph';
+  latexdef "USHGraph" as "\mathrm{USHGraph}";
 
 /* htmldef, althtmldef, latexdef for mathboxes */
 /* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
