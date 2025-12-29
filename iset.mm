@@ -118222,17 +118222,6 @@ $)
     TSVAZWFWRVSWFWPWQVBTWOVQHPECPEZWRWSVFVQVRWFNWOVCVSWTWFVRWTVQCVDTZVGHCABVHRV
     IWAVJVKVSWTWMWDWFVLXAVQWMVRWNVGCWCVMQVNVO $.
 
-  $( The sum of the lengths of two reversed parts of a word is the length of
-     the word.  (Contributed by Alexander van der Vekens, 1-Apr-2018.)
-     (Revised by AV, 3-May-2020.) $)
-  addlenrevpfx $p |- ( ( W e. Word V /\ M e. ( 0 ... ( # ` W ) ) )
-                       -> ( ( # ` ( W substr <. M , ( # ` W ) >. ) )
-                            + ( # ` ( W prefix M ) ) ) = ( # ` W ) ) $=
-    ( cword wcel cc0 chash cfv cfz co wa cop csubstr cpfx caddc swrdrlen pfxlen
-    cmin cc syl2an oveq12d cn0 cz wceq lencl elfzelz nn0cn zcn npcan eqtrd ) CB
-    DEZAFCGHZIJEZKZCAULLMJGHZCANJGHZOJULARJZAOJZULUNUOUQUPAOABCPBCAQUAUKULUBEZA
-    UCEZURULUDZUMBCUEAFULUFUSULSEASEVAUTULUGAUHULAUITTUJ $.
-
   $( The sum of the lengths of two parts of a word is the length of the word.
      (Contributed by AV, 21-Oct-2018.)  (Revised by AV, 3-May-2020.) $)
   addlenpfx $p |- ( ( W e. Word V /\ M e. ( 0 ... ( # ` W ) ) )

@@ -92,6 +92,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+28-Dec-25 addlenrevpfx --   deleted; use addlenpfx plus addcom
 23-Dec-25 isomnd    [same] 	Moved from TA's mathbox to main set.mm
 23-Dec-25 isogrp    [same] 	Moved from TA's mathbox to main set.mm
 23-Dec-25 ogrpgrp   [same] 	Moved from TA's mathbox to main set.mm
