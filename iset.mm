@@ -192515,7 +192515,7 @@ $)
   $}
 
   ${
-    $d E s $.  $d F s $.  $d V s $.  $d j s $.
+    $d E s $.  $d F s $.  $d V s $.  $d W s $.  $d j s $.
     uhgrf.v $e |- V = ( Vtx ` G ) $.
     uhgrf.e $e |- E = ( iEdg ` G ) $.
     $( The edge function of an undirected hypergraph is a function into the
@@ -192540,6 +192540,19 @@ $)
       ( vj vs cuhgr wcel cdm wa cfv wel wex cpw crab uhgrfm ffvelcdmda elrabi
       syl elpwid ) CIJZBAKZJLZBAMZDUEUFGHNGOZHDPZQZJUFUHJUCUDUIBAGACDHEFRSUGHUF
       UHTUAUB $.
+
+    uhgreq12g.w $e |- W = ( Vtx ` H ) $.
+    uhgreq12g.f $e |- F = ( iEdg ` H ) $.
+    $( If two sets have the same vertices and the same edges, one set is a
+       hypergraph iff the other set is a hypergraph.  (Contributed by Alexander
+       van der Vekens, 26-Dec-2017.)  (Revised by AV, 18-Jan-2020.) $)
+    uhgreq12g $p |- ( ( ( G e. X /\ H e. Y ) /\ ( V = W /\ E = F ) )
+                     -> ( G e. UHGraph <-> H e. UHGraph ) ) $=
+      ( vj vs wcel wa wceq cuhgr cdm adantr wel wex crab wf isuhgrm simpr dmeqd
+      cpw wb pweq rabeqdv feq123d adantl bicomd sylan9bbr bitrd ) CGOZDHOZPZEFQ
+      ZABQZPZPCROZASZMNUAMUBZNEUHZUCZAUDZDROZUSVCVHUIZVBUQVJURGMACENIJUETTVBVHB
+      SZVENFUHZUCZBUDZUSVIVBVDVKVGVMABUTVAUFZVBABVOUGUTVGVMQVAUTVENVFVLEFUJUKTU
+      LUSVIVNURVIVNUIUQHMBDFNKLUEUMUNUOUP $.
   $}
 
 
