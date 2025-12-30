@@ -192525,6 +192525,14 @@ $)
         -> E : dom E --> { s e. ~P V | E. j j e. s } ) $=
       ( cuhgr wcel cdm wel wex cpw crab wf isuhgrm ibi ) CHIBJAEKALEDMNBOHABCDE
       FGPQ $.
+
+    $( The edge function of an undirected simple hypergraph is a one-to-one
+       function into the power set of the set of vertices.  (Contributed by AV,
+       9-Oct-2020.) $)
+    ushgrfm $p |- ( G e. USHGraph
+        -> E : dom E -1-1-> { s e. ~P V | E. j j e. s } ) $=
+      ( cushgr wcel cdm wel wex cpw crab wf1 isushgrm ibi ) CHIBJAEKALEDMNBOHAB
+      CDEFGPQ $.
   $}
 
 
