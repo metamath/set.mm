@@ -192556,7 +192556,7 @@ $)
   $}
 
   ${
-    $d E s $.  $d G s $.  $d j s $.
+    $d E j s $.  $d F j s $.  $d G s $.  $d j s $.
     uhgrfun.e $e |- E = ( iEdg ` G ) $.
     $( The edge function of an undirected hypergraph is a function.
        (Contributed by Alexander van der Vekens, 26-Dec-2017.)  (Revised by AV,
@@ -192564,6 +192564,16 @@ $)
     uhgrfun $p |- ( G e. UHGraph -> Fun E ) $=
       ( vj vs cuhgr wcel cdm wel wex cvtx cfv cpw crab eqid uhgrfm ffund ) BFGA
       HDEIDJEBKLZMNADABREROCPQ $.
+
+    $( An edge is an inhabited subset of vertices.  (Contributed by Mario
+       Carneiro, 11-Mar-2015.)  (Revised by AV, 15-Dec-2020.) $)
+    uhgrm $p |- ( ( G e. UHGraph /\ E Fn A /\ F e. A )
+        -> E. j j e. ( E ` F ) ) $=
+      ( vs cuhgr wcel wfn w3a cfv cvtx cpw cv wex crab wa wf cdm eqid syl5ibcom
+      uhgrfm fndm feq2d ffvelcdmda 3impa wceq eleq2 exbidv elrab sylib simprd
+      imp ) EHIZCAJZDAIZKZDCLZEMLZNZIZBOZUSIZBPZURUSVCGOZIZBPZGVAQZIZVBVERUOUPU
+      QVJUOUPRAVIDCUOUPAVICSZUOCTZVICSUPVKBCEUTGUTUAFUCUPVLAVICACUDUEUBUNUFUGVH
+      VEGUSVAVFUSUHVGVDBVFUSVCUIUJUKULUM $.
   $}
 
 
