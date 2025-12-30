@@ -32885,7 +32885,8 @@ $)
       CDKL $.
   $}
 
-  $( The singleton of a set is not empty.  (Contributed by NM, 14-Dec-2008.) $)
+  $( The singleton of a set is not empty.  It is also inhabited as shown at
+     ~ snmg .  (Contributed by NM, 14-Dec-2008.) $)
   snnzg $p |- ( A e. V -> { A } =/= (/) ) $=
     ( wcel csn c0 wne snidg ne0i syl ) ABCAADZCJEFABGJAHI $.
 
@@ -32900,8 +32901,8 @@ $)
   ${
     $d x A $.
     snnz.1 $e |- A e. _V $.
-    $( The singleton of a set is not empty.  (Contributed by NM,
-       10-Apr-1994.) $)
+    $( The singleton of a set is not empty.  It is also inhabited as shown at
+       ~ snm .  (Contributed by NM, 10-Apr-1994.) $)
     snnz $p |- { A } =/= (/) $=
       ( cvv wcel csn c0 wne snnzg ax-mp ) ACDAEFGBACHI $.
 
