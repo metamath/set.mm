@@ -192514,6 +192514,19 @@ $)
       WHWTXBVEZXCVJWHXDULWTVOWLRXBWTVLFVNWKWTVMWJWQWSVEUQUPVDURVFVFVGVHVI $.
   $}
 
+  ${
+    $d V s $.  $d j s $.
+    uhgrf.v $e |- V = ( Vtx ` G ) $.
+    uhgrf.e $e |- E = ( iEdg ` G ) $.
+    $( The edge function of an undirected hypergraph is a function into the
+       power set of the set of vertices.  (Contributed by Alexander van der
+       Vekens, 26-Dec-2017.)  (Revised by AV, 9-Oct-2020.) $)
+    uhgrfm $p |- ( G e. UHGraph
+        -> E : dom E --> { s e. ~P V | E. j j e. s } ) $=
+      ( cuhgr wcel cdm wel wex cpw crab wf isuhgrm ibi ) CHIBJAEKALEDMNBOHABCDE
+      FGPQ $.
+  $}
+
 
 $(
 ###############################################################################
