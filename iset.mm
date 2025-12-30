@@ -192555,6 +192555,17 @@ $)
       LUSVIVNURVIVNUIUQHMBDFNKLUEUMUNUOUP $.
   $}
 
+  ${
+    $d E s $.  $d G s $.  $d j s $.
+    uhgrfun.e $e |- E = ( iEdg ` G ) $.
+    $( The edge function of an undirected hypergraph is a function.
+       (Contributed by Alexander van der Vekens, 26-Dec-2017.)  (Revised by AV,
+       15-Dec-2020.) $)
+    uhgrfun $p |- ( G e. UHGraph -> Fun E ) $=
+      ( vj vs cuhgr wcel cdm wel wex cvtx cfv cpw crab eqid uhgrfm ffund ) BFGA
+      HDEIDJEBKLZMNADABREROCPQ $.
+  $}
+
 
 $(
 ###############################################################################
