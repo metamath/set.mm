@@ -32913,6 +32913,15 @@ $)
   $}
 
   ${
+    $d A x $.
+    $( A singleton is inhabited iff its argument is a set.  (Contributed by
+       Scott Fenton, 8-May-2018.)  (Revised by Jim Kingdon, 29-Dec-2025.) $)
+    snmb $p |- ( A e. _V <-> E. x x e. { A } ) $=
+      ( cvv wcel cv wceq wex csn isset velsn exbii bitr4i ) BCDAEZBFZAGMBHDZAGA
+      BIONAABJKL $.
+  $}
+
+  ${
     $d x A $.  $d x B $.
     $( A pair containing a set is inhabited.  (Contributed by Jim Kingdon,
        21-Sep-2018.) $)
