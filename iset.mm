@@ -192515,7 +192515,7 @@ $)
   $}
 
   ${
-    $d V s $.  $d j s $.
+    $d E s $.  $d F s $.  $d V s $.  $d j s $.
     uhgrf.v $e |- V = ( Vtx ` G ) $.
     uhgrf.e $e |- E = ( iEdg ` G ) $.
     $( The edge function of an undirected hypergraph is a function into the
@@ -192533,6 +192533,13 @@ $)
         -> E : dom E -1-1-> { s e. ~P V | E. j j e. s } ) $=
       ( cushgr wcel cdm wel wex cpw crab wf1 isushgrm ibi ) CHIBJAEKALEDMNBOHAB
       CDEFGPQ $.
+
+    $( An edge is a subset of vertices.  (Contributed by Alexander van der
+       Vekens, 26-Dec-2017.)  (Revised by AV, 18-Jan-2020.) $)
+    uhgrss $p |- ( ( G e. UHGraph /\ F e. dom E ) -> ( E ` F ) C_ V ) $=
+      ( vj vs cuhgr wcel cdm wa cfv wel wex cpw crab uhgrfm ffvelcdmda elrabi
+      syl elpwid ) CIJZBAKZJLZBAMZDUEUFGHNGOZHDPZQZJUFUHJUCUDUIBAGACDHEFRSUGHUF
+      UHTUAUB $.
   $}
 
 
