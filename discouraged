@@ -16012,6 +16012,7 @@ New usage of "dmadjrnb" is discouraged (2 uses).
 New usage of "dmadjss" is discouraged (1 uses).
 New usage of "dmcossOLD" is discouraged (0 uses).
 New usage of "dmcosseqOLD" is discouraged (0 uses).
+New usage of "dmcosseqOLDOLD" is discouraged (0 uses).
 New usage of "dmdbr" is discouraged (5 uses).
 New usage of "dmdbr2" is discouraged (3 uses).
 New usage of "dmdbr3" is discouraged (1 uses).
@@ -19814,7 +19815,8 @@ Proof modification of "dju1p1e2" is discouraged (72 steps).
 Proof modification of "dju1p1e2ALT" is discouraged (34 steps).
 Proof modification of "djuexALT" is discouraged (51 steps).
 Proof modification of "dmcossOLD" is discouraged (89 steps).
-Proof modification of "dmcosseqOLD" is discouraged (167 steps).
+Proof modification of "dmcosseqOLD" is discouraged (196 steps).
+Proof modification of "dmcosseqOLDOLD" is discouraged (167 steps).
 Proof modification of "dmfexALT" is discouraged (25 steps).
 Proof modification of "dmtrclfvRP" is discouraged (46 steps).
 Proof modification of "domnlcanOLD" is discouraged (171 steps).
