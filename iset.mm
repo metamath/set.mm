@@ -192586,6 +192586,21 @@ $)
       VEGUSVAVFUSUHVGVDBVFUSVCUIUJUKULUM $.
   $}
 
+  ${
+    $d A j $.  $d I j $.  $d J j $.
+    lpvtx.i $e |- I = ( iEdg ` G ) $.
+    $( The endpoints of a loop (which is an edge at index ` J ` ) are two
+       (identical) vertices ` A ` .  (Contributed by AV, 1-Feb-2021.) $)
+    lpvtx $p |- ( ( G e. UHGraph /\ J e. dom I /\ ( I ` J ) = { A } )
+                  -> A e. ( Vtx ` G ) ) $=
+      ( vj cuhgr wcel cdm cfv csn wceq w3a cv wex wb 3ad2ant3 mpbid wss cvv wfn
+      cvtx simp1 uhgrfun funfnd 3ad2ant1 simp2 uhgrm syl3anc exbidv eqid uhgrss
+      eleq2 3adant3 sseq1 snmb snssg sylbir syl5ibrcom mpd ) BGHZDCIZHZDCJZAKZL
+      ZMZFNZVEHZFOZABUBJZHZVGVHVDHZFOZVJVGVACVBUAZVCVNVAVCVFUCVAVCVOVFVACCBEUDU
+      EUFVAVCVFUGVBFCDBEUHUIVFVAVNVJPVCVFVMVIFVDVEVHUMUJQRVGVLVJVEVKSZVGVDVKSZV
+      PVAVCVQVFCDBVKVKUKEULUNVFVAVQVPPVCVDVEVKUOQRVJATHVLVPPFAUPAVKTUQURUSUT $.
+  $}
+
 
 $(
 ###############################################################################
