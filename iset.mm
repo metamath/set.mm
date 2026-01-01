@@ -192641,6 +192641,16 @@ $)
       PSUSSUGTAUSJUHZVAURREVBUTUOUQUSJVBUIUSJUJUKTULUM $.
   $}
 
+  ${
+    $d G s $.  $d j s $.
+    $( There are no inhabited subsets of the empty set.  (Contributed by Jim
+       Kingdon, 31-Dec-2025.) $)
+    pw0ss $p |- { s e. ~P (/) | E. j j e. s } = (/) $=
+      ( cv wcel wex c0 cpw crab csn pw0 rabeqi wceq rabeq0 elsni sylibr mprgbir
+      wn notm0 eqtri ) ACBCZDAEZBFGZHUABFIZHZFUABUBUCJKUDFLUAQZBUCUABUCMTUCDTFL
+      UETFNATROPS $.
+  $}
+
 
 $(
 ###############################################################################
