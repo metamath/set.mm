@@ -192666,6 +192666,16 @@ $)
       UJURVDUMUNUOUPUQ $.
   $}
 
+  ${
+    $d j s $.
+    $( The null graph represented by an empty set is a hypergraph.
+       (Contributed by AV, 9-Oct-2020.) $)
+    uhgr0 $p |- (/) e. UHGraph $=
+      ( vj vs c0 cuhgr wcel cdm wel wex cpw wf f0 dm0 pw0ss feq23i mpbir cvv wb
+      crab cfv eqcomi 0ex cvtx vtxval0 ciedg iedgval0 isuhgrm ax-mp ) CDEZCFZAB
+      GAHBCIRZCJZUKCCCJCKUIUJCCCLABMNOCPEUHUKQUAPACCCBCUBSCUCTCUDSCUETUFUGO $.
+  $}
+
 
 $(
 ###############################################################################
