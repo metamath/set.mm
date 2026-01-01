@@ -192601,6 +192601,16 @@ $)
       PVAVCVQVFCDBVKVKUKEULUNVFVAVQVPPVCVDVEVKUOQRVJATHVLVPPFAUPAVKTUQURUSUT $.
   $}
 
+  ${
+    $d G s $.  $d j s $.
+    $( An undirected simple hypergraph is an undirected hypergraph.
+       (Contributed by AV, 19-Jan-2020.)  (Revised by AV, 9-Oct-2020.) $)
+    ushgruhgr $p |- ( G e. USHGraph -> G e. UHGraph ) $=
+      ( vj vs cushgr wcel cuhgr ciedg cfv cdm wel wex cvtx cpw crab wf wf1 eqid
+      ushgrfm f1f syl isuhgrm mpbird ) ADEZAFEAGHZIZBCJBKCALHZMNZUDOZUCUEUGUDPU
+      HBUDAUFCUFQZUDQZRUEUGUDSTDBUDAUFCUIUJUAUB $.
+  $}
+
 
 $(
 ###############################################################################
