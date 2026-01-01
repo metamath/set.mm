@@ -49177,6 +49177,17 @@ $)
     ( wf wa cin c0 wceq cun fun wb unidm feq3 ax-mp sylib ) ACDFBCEFGABHIJGABKZ
     CCKZDEKZFZRCTFZABCCDELSCJUAUBMCNSCRTOPQ $.
 
+  ${
+    fun2d.f $e |- ( ph -> F : A --> C ) $.
+    fun2d.g $e |- ( ph -> G : B --> C ) $.
+    fun2d.i $e |- ( ph -> ( A i^i B ) = (/) ) $.
+    $( The union of functions with disjoint domains is a function, deduction
+       version of ~ fun2 .  (Contributed by AV, 11-Oct-2020.)  (Revised by AV,
+       24-Oct-2021.) $)
+    fun2d $p |- ( ph -> ( F u. G ) : ( A u. B ) --> C ) $=
+      ( wf cin c0 wceq cun fun2 syl21anc ) ABDEJCDFJBCKLMBCNDEFNJGHIBCDEFOP $.
+  $}
+
   $( Composition of two functions.  (Contributed by NM, 22-May-2006.) $)
   fnfco $p |- ( ( F Fn A /\ G : B --> A ) -> ( F o. G ) Fn B ) $=
     ( wf wfn crn wss wa ccom df-f fnco 3expb sylan2b ) BADECAFZDBFZDGAHZICDJBFZ
