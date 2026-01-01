@@ -192611,6 +192611,22 @@ $)
       HBUDAUFCUFQZUDQZRUEUGUDSTDBUDAUFCUIUJUAUB $.
   $}
 
+  ${
+    $d E s $.  $d V s $.  $d j s $.
+    $( The property of being an undirected hypergraph represented as an ordered
+       pair.  The representation as an ordered pair is the usual representation
+       of a graph, see section I.1 of [Bollobas] p. 1.  (Contributed by AV,
+       1-Jan-2020.)  (Revised by AV, 9-Oct-2020.) $)
+    isuhgropm $p |- ( ( V e. W /\ E e. X )
+        -> ( <. V , E >. e. UHGraph
+          <-> E : dom E --> { s e. ~P V | E. j j e. s } ) ) $=
+      ( wcel wa cop cuhgr ciedg cfv cdm wel wex cpw crab wf cvv eqid cvtx opexg
+      wb isuhgrm syl opiedgfv dmeqd opvtxfv pweqd rabeqdv feq123d bitrd ) CDGBE
+      GHZCBIZJGZUNKLZMZAFNAOZFUNUALZPZQZUPRZBMZURFCPZQZBRUMUNSGUOVBUCCBDEUBSAUP
+      UNUSFUSTUPTUDUEUMUQVCVAVEUPBBCDEUFZUMUPBVFUGUMURFUTVDUMUSCBCDEUHUIUJUKUL
+      $.
+  $}
+
 
 $(
 ###############################################################################
