@@ -192687,6 +192687,34 @@ $)
       GAHBCIRZCJZUKCCCJCKUIUJCCCLABMNOCPEUHUKQUAPACCCBCUBSCUCTCUDSCUETUFUGO $.
   $}
 
+  ${
+    $d E s $.  $d F s $.  $d H s $.  $d U s $.  $d V s $.  $d j s $.
+    uhgrun.g $e |- ( ph -> G e. UHGraph ) $.
+    uhgrun.h $e |- ( ph -> H e. UHGraph ) $.
+    uhgrun.e $e |- E = ( iEdg ` G ) $.
+    uhgrun.f $e |- F = ( iEdg ` H ) $.
+    uhgrun.vg $e |- V = ( Vtx ` G ) $.
+    uhgrun.vh $e |- ( ph -> ( Vtx ` H ) = V ) $.
+    uhgrun.i $e |- ( ph -> ( dom E i^i dom F ) = (/) ) $.
+    ${
+      uhgrun.u $e |- ( ph -> U e. W ) $.
+      uhgrun.v $e |- ( ph -> ( Vtx ` U ) = V ) $.
+      uhgrun.un $e |- ( ph -> ( iEdg ` U ) = ( E u. F ) ) $.
+      $( The union ` U ` of two (undirected) hypergraphs ` G ` and ` H ` with
+         the same vertex set ` V ` is a hypergraph with the vertex ` V ` and
+         the union ` ( E u. F ) ` of the (indexed) edges.  (Contributed by AV,
+         11-Oct-2020.)  (Revised by AV, 24-Oct-2021.) $)
+      uhgrun $p |- ( ph -> U e. UHGraph ) $=
+        ( vj vs cuhgr wcel cfv cdm wel wex cvtx cpw crab wf cun uhgrfm syl eqid
+        ciedg eqcomd pweqd rabeqdv feq3d mpbird fun2d dmeqd dmun eqtrdi feq123d
+        wb isuhgrm ) ABUAUBZBUOUCZUDZSTUESUFZTBUGUCZUHZUIZVIUJZAVOCUDZDUDZUKZVK
+        TGUHZUIZCDUKZUJAVPVQVTCDAEUAUBVPVTCUJISCEGTMKULUMAVQVTDUJVQVKTFUGUCZUHZ
+        UIZDUJZAFUAUBWEJSDFWBTWBUNLULUMAVTWDDVQAVKTVSWCAGWBAWBGNUPUQURUSUTOVAAV
+        JVRVNVTVIWARAVJWAUDVRAVIWARVBCDVCVDAVKTVMVSAVLGQUQURVEUTABHUBVHVOVFPHSV
+        IBVLTVLUNVIUNVGUMUT $.
+    $}
+  $}
+
 
 $(
 ###############################################################################
