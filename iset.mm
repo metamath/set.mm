@@ -192651,6 +192651,21 @@ $)
       UETFNATROPS $.
   $}
 
+  ${
+    $d G s $.  $d j s $.
+    $( The null graph, with no vertices, is a hypergraph if and only if the
+       edge function is empty.  (Contributed by Alexander van der Vekens,
+       27-Dec-2017.)  (Revised by AV, 9-Oct-2020.) $)
+    uhgr0vb $p |- ( ( G e. W /\ ( Vtx ` G ) = (/) )
+                  -> ( G e. UHGraph <-> ( iEdg ` G ) = (/) ) ) $=
+      ( vj vs wcel cvtx cfv c0 wceq wa cuhgr ciedg cdm wel wex cpw crab wf eqid
+      uhgrfm pweq rabeqdv pw0ss eqtrdi adantl feq3d simplbi biimtrdi syl5 simpl
+      f00 wi simpr uhgr0e ex adantr impbid ) ABEZAFGZHIZJZAKEZALGZHIZVBVCMZCDNC
+      OZDUSPZQZVCRZVAVDCVCAUSDUSSVCSTVAVIVEHVCRZVDVAVHHVCVEUTVHHIURUTVHVFDHPZQH
+      UTVFDVGVKUSHUAUBCDUCUDUEUFVJVDVEHIVEVCUKUGUHUIURVDVBULUTURVDVBURVDJABURVD
+      UJURVDUMUNUOUPUQ $.
+  $}
+
 
 $(
 ###############################################################################
