@@ -16010,7 +16010,9 @@ New usage of "dmadjop" is discouraged (10 uses).
 New usage of "dmadjrn" is discouraged (7 uses).
 New usage of "dmadjrnb" is discouraged (2 uses).
 New usage of "dmadjss" is discouraged (1 uses).
+New usage of "dmcossOLD" is discouraged (0 uses).
 New usage of "dmcosseqOLD" is discouraged (0 uses).
+New usage of "dmcosseqOLDOLD" is discouraged (0 uses).
 New usage of "dmdbr" is discouraged (5 uses).
 New usage of "dmdbr2" is discouraged (3 uses).
 New usage of "dmdbr3" is discouraged (1 uses).
@@ -17704,6 +17706,7 @@ New usage of "nd2" is discouraged (4 uses).
 New usage of "nd4" is discouraged (1 uses).
 New usage of "negcncfOLD" is discouraged (0 uses).
 New usage of "negexsr" is discouraged (0 uses).
+New usage of "nelaneqOLD" is discouraged (0 uses).
 New usage of "nfa1-o" is discouraged (4 uses).
 New usage of "nfaba1OLD" is discouraged (0 uses).
 New usage of "nfaba1g" is discouraged (0 uses).
@@ -19237,6 +19240,7 @@ New usage of "zfcndrep" is discouraged (0 uses).
 New usage of "zfcndun" is discouraged (0 uses).
 New usage of "zfinf" is discouraged (2 uses).
 New usage of "zfpair" is discouraged (1 uses).
+New usage of "zfregclOLD" is discouraged (0 uses).
 New usage of "zfregs2VD" is discouraged (0 uses).
 New usage of "zfun" is discouraged (1 uses).
 New usage of "zrdivrng" is discouraged (1 uses).
@@ -19810,7 +19814,9 @@ Proof modification of "dividOLD" is discouraged (31 steps).
 Proof modification of "dju1p1e2" is discouraged (72 steps).
 Proof modification of "dju1p1e2ALT" is discouraged (34 steps).
 Proof modification of "djuexALT" is discouraged (51 steps).
-Proof modification of "dmcosseqOLD" is discouraged (167 steps).
+Proof modification of "dmcossOLD" is discouraged (89 steps).
+Proof modification of "dmcosseqOLD" is discouraged (196 steps).
+Proof modification of "dmcosseqOLDOLD" is discouraged (167 steps).
 Proof modification of "dmfexALT" is discouraged (25 steps).
 Proof modification of "dmtrclfvRP" is discouraged (46 steps).
 Proof modification of "domnlcanOLD" is discouraged (171 steps).
@@ -20505,6 +20511,7 @@ Proof modification of "mxidlprmALT" is discouraged (95 steps).
 Proof modification of "n0lpligALT" is discouraged (74 steps).
 Proof modification of "naecoms-o" is discouraged (19 steps).
 Proof modification of "negcncfOLD" is discouraged (107 steps).
+Proof modification of "nelaneqOLD" is discouraged (41 steps).
 Proof modification of "nfa1-o" is discouraged (8 steps).
 Proof modification of "nfaba1OLD" is discouraged (9 steps).
 Proof modification of "nfcrALT" is discouraged (20 steps).
@@ -21016,4 +21023,5 @@ Proof modification of "zfcndpow" is discouraged (145 steps).
 Proof modification of "zfcndreg" is discouraged (29 steps).
 Proof modification of "zfcndrep" is discouraged (258 steps).
 Proof modification of "zfcndun" is discouraged (72 steps).
+Proof modification of "zfregclOLD" is discouraged (122 steps).
 Proof modification of "zfregs2VD" is discouraged (128 steps).
