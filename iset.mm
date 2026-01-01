@@ -192627,6 +192627,20 @@ $)
       $.
   $}
 
+  ${
+    $d G s $.  $d j s $.
+    uhgr0e.g $e |- ( ph -> G e. W ) $.
+    uhgr0e.e $e |- ( ph -> ( iEdg ` G ) = (/) ) $.
+    $( The empty graph, with vertices but no edges, is a hypergraph.
+       (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by AV,
+       25-Nov-2020.) $)
+    uhgr0e $p |- ( ph -> G e. UHGraph ) $=
+      ( vj vs cuhgr wcel c0 cdm wel wex cvtx cfv cpw wf wb eqid syl crab f0 dm0
+      feq2i mpbir ciedg isuhgrm wceq id dmeq feq12d bitrd mpbiri ) ABHIZJKZFGLF
+      MGBNOZPUAZJQZURJUQJQUQUBUOJUQJUCUDUEAUNBUFOZKZUQUSQZURABCIUNVARDCFUSBUPGU
+      PSUSSUGTAUSJUHZVAURREVBUTUOUQUSJVBUIUSJUJUKTULUM $.
+  $}
+
 
 $(
 ###############################################################################
