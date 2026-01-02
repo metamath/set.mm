@@ -44072,6 +44072,20 @@ $)
   $}
 
   ${
+    $d A a $.  $d B a $.  $d R a $.  $d Y a $.
+    $( If a relation is a subset of a cartesian product, then for each element
+       of the range of the relation there is an element of the first set of the
+       cartesian product which is related to the element of the range by the
+       relation.  (Contributed by AV, 24-Oct-2020.) $)
+    ssrelrn $p |- ( ( R C_ ( A X. B ) /\ Y e. ran R ) -> E. a e. A a R Y ) $=
+      ( cxp wss crn wcel wa cv wbr wex wrex wi elrng ssbr brxp simplbi syl6 ex
+      ancrd adantl eximdv com23 sylbid pm2.43i impcom df-rex sylibr ) CABFZGZDC
+      HZIZJEKZAIZUODCLZJZEMZUQEANUNULUSUNULUSOZUNUNUQEMZUTEDCUMPUNULVAUSUNULVAU
+      SOUNULJUQUREULUQUROUNULUQUPULUQUODUKLZUPCUKUODQVBUPDBIUODABRSTUBUCUDUAUEU
+      FUGUHUQEAUIUJ $.
+  $}
+
+  ${
     $d x y A $.
     $( Alternate definition of domain.  (Contributed by NM, 28-Dec-1996.) $)
     dfdm4 $p |- dom A = ran `' A $=
