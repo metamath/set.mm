@@ -192729,6 +192729,29 @@ $)
       VBUMFNNUKTUL $.
   $}
 
+  ${
+    ushgrun.g $e |- ( ph -> G e. USHGraph ) $.
+    ushgrun.h $e |- ( ph -> H e. USHGraph ) $.
+    ushgrun.e $e |- E = ( iEdg ` G ) $.
+    ushgrun.f $e |- F = ( iEdg ` H ) $.
+    ushgrun.vg $e |- V = ( Vtx ` G ) $.
+    ushgrun.vh $e |- ( ph -> ( Vtx ` H ) = V ) $.
+    ushgrun.i $e |- ( ph -> ( dom E i^i dom F ) = (/) ) $.
+    ${
+      ushgrun.u $e |- ( ph -> U e. W ) $.
+      ushgrun.v $e |- ( ph -> ( Vtx ` U ) = V ) $.
+      ushgrun.un $e |- ( ph -> ( iEdg ` U ) = ( E u. F ) ) $.
+      $( The union ` U ` of two (undirected) simple hypergraphs ` G ` and ` H `
+         with the same vertex set ` V ` is a (not necessarily simple)
+         hypergraph with the vertex ` V ` and the union ` ( E u. F ) ` of the
+         (indexed) edges.  (Contributed by AV, 29-Nov-2020.)  (Revised by AV,
+         24-Oct-2021.) $)
+      ushgrun $p |- ( ph -> U e. UHGraph ) $=
+        ( cushgr wcel cuhgr ushgruhgr syl uhgrun ) ABCDEFGHAESTEUATIEUBUCAFSTFU
+        ATJFUBUCKLMNOPQRUD $.
+    $}
+  $}
+
 
 $(
 ###############################################################################
