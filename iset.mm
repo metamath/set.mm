@@ -192750,6 +192750,17 @@ $)
         ( cushgr wcel cuhgr ushgruhgr syl uhgrun ) ABCDEFGHAESTEUATIEUBUCAFSTFU
         ATJFUBUCKLMNOPQRUD $.
     $}
+
+    $( The union of two (undirected) simple hypergraphs (with the same vertex
+       set) represented as ordered pair:  If ` <. V , E >. ` and
+       ` <. V , F >. ` are simple hypergraphs, then ` <. V , E u. F >. ` is a
+       (not necessarily simple) hypergraph - the vertex set stays the same, but
+       the edges from both graphs are kept, possibly resulting in two edges
+       between two vertices.  (Contributed by AV, 29-Nov-2020.)  (Revised by
+       AV, 24-Oct-2021.) $)
+    ushgrunop $p |- ( ph -> <. V , ( E u. F ) >. e. UHGraph ) $=
+      ( cushgr wcel cuhgr ushgruhgr syl uhgrunop ) ABCDEFADNODPOGDQRAENOEPOHEQR
+      IJKLMS $.
   $}
 
 
