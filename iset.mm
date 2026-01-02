@@ -192713,6 +192713,20 @@ $)
         JVRVNVTVIWARAVJWAUDVRAVIWARVBCDVCVDAVKTVMVSAVLGQUQURVEUTABHUBVHVOVFPHSV
         IBVLTVLUNVIUNVGUMUT $.
     $}
+
+    $( The union of two (undirected) hypergraphs (with the same vertex set)
+       represented as ordered pair:  If ` <. V , E >. ` and ` <. V , F >. ` are
+       hypergraphs, then ` <. V , E u. F >. ` is a hypergraph (the vertex set
+       stays the same, but the edges from both graphs are kept, possibly
+       resulting in two edges between two vertices).  (Contributed by Alexander
+       van der Vekens, 27-Dec-2017.)  (Revised by AV, 11-Oct-2020.)  (Revised
+       by AV, 24-Oct-2021.) $)
+    uhgrunop $p |- ( ph -> <. V , ( E u. F ) >. e. UHGraph ) $=
+      ( cvv wcel cfv cuhgr syl eqeltrid syl2anc cun cop cvtx vtxex ciedg iedgex
+      unexg opexg wceq opvtxfv opiedgfv uhgrun ) AFBCUAZUBZBCDEFNGHIJKLMAFNOZUM
+      NOZUNNOAFDUCPZNKADQOZUQNOGDQUDRSZABNOCNOUPABDUEPZNIAURUTNOGDQUFRSACEUEPZN
+      JAEQOVANOHEQUFRSBCNNUGTZFUMNNUHTAUOUPUNUCPFUIUSVBUMFNNUJTAUOUPUNUEPUMUIUS
+      VBUMFNNUKTUL $.
   $}
 
 
