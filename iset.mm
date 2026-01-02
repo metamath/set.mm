@@ -35947,6 +35947,11 @@ $)
       ( cop wcel wbr sseld df-br 3imtr4g ) ADEGZBHMCHDEBIDECIABCMFJDEBKDECKL $.
   $}
 
+  $( Implication from a subclass relationship of binary relations.
+     (Contributed by Peter Mazsa, 11-Nov-2019.) $)
+  ssbr $p |- ( A C_ B -> ( C A D -> C B D ) ) $=
+    ( wss id ssbrd ) ABEZABCDHFG $.
+
   ${
     ssbri.1 $e |- A C_ B $.
     $( Inference from a subclass relationship of binary relations.
