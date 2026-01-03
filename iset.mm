@@ -118596,6 +118596,15 @@ $)
     CVMVSDFAKZLHZVTVLVHVSWJNVJVLVRWIDLVLVQAFVLAVLAABOZRUSUTUOVAVMVHASEZMZVTWJNV
     HVLWMVJVLWLVHWKPVDDAVGQTVEVF $.
 
+  $( A prefix of a prefix with the same length is the original prefix.  In
+     other words, the operation "prefix of length ` N ` " is idempotent.
+     (Contributed by AV, 5-Apr-2018.)  (Revised by AV, 8-May-2020.) $)
+  pfxpfxid $p |- ( ( W e. Word V /\ N e. ( 0 ... ( # ` W ) ) )
+                     -> ( ( W prefix N ) prefix N ) = ( W prefix N ) ) $=
+    ( cword wcel cc0 chash cfv cfz co cpfx wceq cn0 elfznn0 nn0fz0 sylib adantl
+    pfxpfx mpd3an3 ) CBDEZAFCGHZIJEZAFAIJEZCAKJZAKJUDLUBUCTUBAMEUCAUANAOPQAABCR
+    S $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
