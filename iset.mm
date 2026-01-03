@@ -193001,6 +193001,56 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Undirected pseudographs and multigraphs
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c UPGraph UMGraph $.
+
+  $( Extend class notation with undirected pseudographs. $)
+  cupgr $a class UPGraph $.
+
+  $( Extend class notation with undirected multigraphs. $)
+  cumgr $a class UMGraph $.
+
+  ${
+    $d e g v x $.
+    $( Define the class of all undirected pseudographs.  An (undirected)
+       pseudograph consists of a set ` v ` (of "vertices") and a function ` e `
+       (representing indexed "edges") into subsets of ` v ` of cardinality one
+       or two, representing the two vertices incident to the edge, or the one
+       vertex if the edge is a loop.  This is according to Chartrand, Gary and
+       Zhang, Ping (2012):  "A First Course in Graph Theory.", Dover, ISBN
+       978-0-486-48368-9, section 1.4, p. 26:  "In a pseudograph, not only are
+       parallel edges permitted but an edge is also permitted to join a vertex
+       to itself.  Such an edge is called a loop."  (in contrast to a
+       multigraph, see ~ df-umgren ).  (Contributed by Mario Carneiro,
+       11-Mar-2015.)  (Revised by AV, 24-Nov-2020.)  (Revised by Jim Kingdon,
+       3-Jan-2026.) $)
+    df-upgren $a |- UPGraph =
+      { g | [. ( Vtx ` g ) / v ]. [. ( iEdg ` g ) / e ].
+      e : dom e --> { x e. ~P v | ( x ~~ 1o \/ x ~~ 2o ) } } $.
+
+    $( Define the class of all undirected multigraphs.  An (undirected)
+       multigraph consists of a set ` v ` (of "vertices") and a function ` e `
+       (representing indexed "edges") into subsets of ` v ` of cardinality two,
+       representing the two vertices incident to the edge.  In contrast to a
+       pseudograph, a multigraph has no loop.  This is according to Chartrand,
+       Gary and Zhang, Ping (2012):  "A First Course in Graph Theory.", Dover,
+       ISBN 978-0-486-48368-9, section 1.4, p. 26:  "A multigraph M consists of
+       a finite nonempty set V of vertices and a set E of edges, where every
+       two vertices of M are joined by a finite number of edges (possibly
+       zero).  If two or more edges join the same pair of (distinct) vertices,
+       then these edges are called parallel edges."  (Contributed by AV,
+       24-Nov-2020.)  (Revised by Jim Kingdon, 3-Jan-2026.) $)
+    df-umgren $a |- UMGraph =
+      { g | [. ( Vtx ` g ) / v ]. [. ( iEdg ` g ) / e ].
+      e : dom e --> { x e. ~P v | x ~~ 2o } } $.
+  $}
+
+
+$(
 ###############################################################################
   GUIDES AND MISCELLANEA
 ###############################################################################
@@ -195250,6 +195300,12 @@ htmldef "UHGraph" as 'UHGraph';
 htmldef "USHGraph" as 'USHGraph';
   althtmldef "USHGraph" as 'USHGraph';
   latexdef "USHGraph" as "\mathrm{USHGraph}";
+htmldef "UPGraph" as 'UPGraph';
+  althtmldef "UPGraph" as 'UPGraph';
+  latexdef "UPGraph" as "\mathrm{UPGraph}";
+htmldef "UMGraph" as 'UMGraph';
+  althtmldef "UMGraph" as 'UMGraph';
+  latexdef "UMGraph" as "\mathrm{UMGraph}";
 
 /* htmldef, althtmldef, latexdef for mathboxes */
 /* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
