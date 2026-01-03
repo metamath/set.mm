@@ -118581,6 +118581,21 @@ $)
     VBWDWIWAELWDWGAWHBWDAVSAVCFZVNVPXEVRVPAAGCTVFOQVDWDBVSBVCFZVNVRXFVPVRBBACTV
     FQQVDVGRVHVI $.
 
+  $( A prefix of a prefix is a prefix.  (Contributed by Alexander van der
+     Vekens, 7-Apr-2018.)  (Revised by AV, 8-May-2020.) $)
+  pfxpfx $p |- ( ( W e. Word V /\ N e. ( 0 ... ( # ` W ) )
+                     /\ L e. ( 0 ... N ) )
+                   -> ( ( W prefix N ) prefix L ) = ( W prefix L ) ) $=
+    ( wcel cc0 cfz co w3a cpfx cop csubstr wa wceq elfznn0 anim2i pfxval nn0cnd
+    cn0 syl cword chash cfv caddc 3adant3 oveq1d cmin simp1 simp2 3ad2ant2 3jca
+    subid1d eqcomd adantl oveq2d eleq2d biimp3a pfxswrd addlidd opeq2d 3ad2ant3
+    0elfz sylc 3adant2 eqtr4d 3eqtrd ) DCUAZEZBFDUBUCZGHEZAFBGHZEZIZDBJHZAJHDFB
+    KLHZAJHZDFFAUDHZKZLHZDAJHZVMVNVOAJVMVHBSEZMZVNVONVHVJWBVLVJWAVHBVIOZPUEDBVG
+    QTUFVMVHVJFVKEZIAFBFUGHZGHZEZVPVSNVMVHVJWDVHVJVLUHVHVJVLUIVJVHWDVLVJWAWDWCB
+    VBTUJUKVHVJVLWGVHVJMZVKWFAWHBWEFGVJBWENVHVJWEBVJBVJBWCRULUMUNUOUPUQAFBCDURV
+    CVMVSDFAKZLHZVTVLVHVSWJNVJVLVRWIDLVLVQAFVLAVLAABOZRUSUTUOVAVMVHASEZMZVTWJNV
+    HVLWMVJVLWLVHWKPVDDAVGQTVEVF $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
