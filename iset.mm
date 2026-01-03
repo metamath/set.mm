@@ -11280,6 +11280,16 @@ $)
       ( wi syl6 syldd ) ABDEFHABCEFJGIKL $.
   $}
 
+  ${
+    a1ddd.1 $e |- ( ph -> ( ps -> ( ch -> ta ) ) ) $.
+    $( Triple deduction introducing an antecedent to a wff.  Deduction
+       associated with ~ a1dd .  Double deduction associated with ~ a1d .
+       Triple deduction associated with ~ ax-1 and ~ a1i .  (Contributed by
+       Jeff Hankins, 4-Aug-2009.) $)
+    a1ddd $p |- ( ph -> ( ps -> ( ch -> ( th -> ta ) ) ) ) $=
+      ( wi ax-1 syl8 ) ABCEDEGFEDHI $.
+  $}
+
   $( Exportation implication also converting head from biconditional to
      conditional.  (Contributed by Alan Sare, 31-Dec-2011.) $)
   exbir $p |- ( ( ( ph /\ ps ) -> ( ch <-> th ) ) ->
