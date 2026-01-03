@@ -192782,6 +192782,46 @@ $)
       IJKLMS $.
   $}
 
+  ${
+    $d E e $.  $d G e $.  $d I e v j s $.  $d L e v $.  $d P e v $.
+    $d V e v j s $.  $d W e $.
+    incistruhgr.v $e |- V = ( Vtx ` G ) $.
+    incistruhgr.e $e |- E = ( iEdg ` G ) $.
+    $( An _incidence structure_ ` <. P , L , I >. ` "where ` P ` is a set whose
+       elements are called _points_, ` L ` is a distinct set whose elements are
+       called _lines_ and ` I C_ ( P X. L ) ` is the _incidence relation_" (see
+       Wikipedia "Incidence structure" (24-Oct-2020),
+       ~ https://en.wikipedia.org/wiki/Incidence_structure ) implies an
+       undirected hypergraph, if the incidence relation is right-total (to
+       exclude empty edges).  The points become the vertices, and the edge
+       function is derived from the incidence relation by mapping each line
+       ("edge") to the set of vertices incident to the line/edge.  With
+       ` P = ( Base `` S ) ` and by defining two new slots for lines and
+       incidence relations and enhancing the definition of ` iEdg `
+       accordingly, it would even be possible to express that a corresponding
+       incidence structure _is_ an undirected hypergraph.  By choosing the
+       incident relation appropriately, other kinds of undirected graphs
+       (pseudographs, multigraphs, simple graphs, etc.) could be defined.
+       (Contributed by AV, 24-Oct-2020.) $)
+    incistruhgr $p |- ( ( G e. W /\ I C_ ( P X. L ) /\ ran I = L )
+                        -> ( ( V = P /\ E = ( e e. L |-> { v e. P | v I e } ) )
+                             -> G e. UHGraph ) ) $=
+      ( vj vs wcel wss wceq cv crab wa cvv cxp crn w3a wbr cuhgr cdm wex cpw wf
+      cmpt rabeq mpteq2dv eqeq2d xpeq1 3anbi2d anbi12d simpl dmeq eqid cvtx cfv
+      sseq2d simpl1 vtxex syl eqeltrid rabexd dmmptd sylan9eq jca exbidv ssrab2
+      simpr eleq2 wb elpwg mpbiri wrex 3ad2ant3 wi ssrelrn 3ad2ant2 sylbird imp
+      ex rabn0m sylibr elrabd fmpttd feq12d imbitrrid biimtrrdi expdimp isuhgrm
+      sylc impcom 3ad2ant1 adantr mpbird ) EINZFBGUAZOZFUBZGPZUCZHBPZDCGAQCQZFU
+      DZABRZUJZPZSZEUENZXEXLSXMDUFZLQZMQZNZLUGZMHUHZRZDUIZXLXEYAXFXKXEYAXFXKXES
+      DCGXHAHRZUJZPZWTFHGUAZOZXDUCZSZYAXFYDXKYGXEXFYCXJDXFCGYBXIXHAHBUKULUMXFYF
+      XBWTXDXFYEXAFHBGUNVBUOUPYHYDXNGPZSZYGYAYHYDYIYDYGUQYDYGXNYCUFGDYCURYGCYCG
+      YBTYCUSYGXGGNZSZXHAHYBTYBUSYLHEUTVAZTJYLWTYMTNWTYFXDYKVCEIVDVEVFVGZVHVIVJ
+      YDYGVMYGYAYJGXTYCUIYGCGYBXTYLXRXOYBNZLUGZMYBXSXPYBPXQYOLXPYBXOVNVKYLYBXSN
+      ZYBHOZXHAHVLYLYBTNYQYRVOYNYBHTVPVEVQYLXHAHVRZYPYGYKYSYGYKXGXCNZYSXDWTYTYK
+      VOYFXCGXGVNVSYFWTYTYSVTXDYFYTYSHGFXGAWAWEWBWCWDXHALHWFWGWHWIYJXNGXTDYCYDY
+      IUQYDYIVMWJWKWOWLWMWPXEXMYAVOZXLWTXBUUAXDILDEHMJKWNWQWRWSWE $.
+  $}
+
 
 $(
 ###############################################################################
