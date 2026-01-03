@@ -118549,6 +118549,21 @@ $)
       MVHUUOUUPEFUVMUVNUYDYTVSUUQUURXJYC $.
   $}
 
+  $( A prefix of a subword is a subword.  (Contributed by AV, 2-Apr-2018.)
+     (Revised by AV, 8-May-2020.) $)
+  pfxswrd $p |- ( ( W e. Word V /\ N e. ( 0 ... ( # ` W ) )
+                        /\ M e. ( 0 ... N ) ) -> ( L e. ( 0 ... ( N - M ) )
+                    -> ( ( W substr <. M , N >. ) prefix L )
+                       = ( W substr <. M , ( M + L ) >. ) ) ) $=
+    ( cword wcel cc0 cfz co cop csubstr caddc wceq wa cn0 3ad2ant3 elfznn0 syl
+    cz chash cfv w3a cmin simp1 elfzelz elfzel2 swrdclg syl3anc pfxval fznn0sub
+    cpfx syl2an 0elfz anim1i swrdswrd syldan nn0cn addridd adantr opeq1d oveq2d
+    imp 3eqtrd ex ) EDFZGZCHEUAUBIJGZBHCIJGZUCZAHCBUDJZIJZGZEBCKLJZAULJZEBBAMJZ
+    KZLJZNVJVMOZVOVNHAKLJZEBHMJZVPKZLJZVRVJVNVFGZAPGVOVTNVMVJVGBTGZCTGZWDVGVHVI
+    UEVIVGWEVHBHCUFQVIVGWFVHBHCUGQDEBCUHUIAVKRVNAVFUJUMVJVMHVLGZVMOZVTWCNZVJWGV
+    MVJVKPGZWGVIVGWJVHBHCUKQVKUNSUOVJWHWIHABCDEUPVCUQVSWBVQELVSWABVPVJWABNZVMVI
+    VGWKVHVIBPGZWKBCRWLBBURUSSQUTVAVBVDVE $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
