@@ -193049,6 +193049,26 @@ $)
       e : dom e --> { x e. ~P v | x ~~ 2o } } $.
   $}
 
+  ${
+    $d e g h v x $.  $d E h $.  $d G h x $.  $d V h x $.
+    isupgr.v $e |- V = ( Vtx ` G ) $.
+    isupgr.e $e |- E = ( iEdg ` G ) $.
+    $( The property of being an undirected pseudograph.  (Contributed by Mario
+       Carneiro, 11-Mar-2015.)  (Revised by AV, 10-Oct-2020.) $)
+    isupgren $p |- ( G e. U -> ( G e. UPGraph <->
+        E : dom E --> { x e. ~P V | ( x ~~ 1o \/ x ~~ 2o ) } ) ) $=
+      ( ve vv vg vh wcel cv cdm ciedg cfv cvtx wceq fveq2 cvv cupgr c1o cen wbr
+      c2o wo cpw crab wf cab df-upgren eleq2i eqtr4di dmeqd eqcomi dmeqi eqtrdi
+      wsbc pweqd rabeqdv feq123d vtxex elv wa iedgex adantr simpr pweq ad2antlr
+      a1i sbcied2 cbvabv elab2g bitrid ) DUALDHMZNZAMZUBUCUDVQUEUCUDUFZAIMZUGZU
+      HZVOUIZHJMZOPZURZIWCQPZURZJUJZLDBLCNZVRAEUGZUHZCUIZUAWHDAIHJUKULKMZOPZNZV
+      RAWMQPZUGZUHZWNUIZWLKDWHBWMDRZWOWIWRWKWNCWTWNDOPZCWMDOSZGUMWTWOXANWIWTWNX
+      AXBUNXACCXAGUOUPUQWTVRAWQWJWTWPEWTWPDQPEWMDQSFUMUSUTVAWGWSJKWCWMRZWEWSIWF
+      WPTWFTLZXCXDJWCTVBVCVJWCWMQSXCVSWPRZVDZWBWSHWDWNTWDTLZXFXGJWCTVEVCVJXCWDW
+      NRXEWCWMOSVFXFVOWNRZVDZVPWOWAWRVOWNXFXHVGZXIVOWNXJUNXIVRAVTWQXEVTWQRXCXHV
+      SWPVHVIUTVAVKVKVLVMVN $.
+  $}
+
 
 $(
 ###############################################################################
