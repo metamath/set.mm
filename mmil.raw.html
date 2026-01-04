@@ -1011,6 +1011,33 @@ middle by ~ ssfiexmid ).</p>
 </tr>
 
 <tr>
+  <td>is of size one</td>
+  <td>` A ~~ 1o `</td>
+  <td>for equivalent formulations, see ~ en1 , ~ en1bg and ~ euen1b</td>
+</tr>
+
+<tr>
+  <td>is of size two</td>
+  <td>` A ~~ 2o `</td>
+  <td>equivalent to being a pair of two distinct elements by
+  ~ en2 and ~ pr2ne</td>
+</tr>
+
+<tr>
+  <td>has at least one element</td>
+  <td>` 1o ~<_ A `</td>
+  <td>equivalent to ` E. x x e. A ` (which is how we often
+  express being inhabited) by ~ dom1o</td>
+</tr>
+
+<tr>
+  <td>has at least two elements</td>
+  <td>` 2o ~<_ A `</td>
+  <td>equivalent to having two distinct elements by
+  ~ 2dom and ~ rex2dom</td>
+</tr>
+
+<tr>
   <td>dominated by ` _om `</td>
   <td>` A ~<_ _om `</td>
   <td>implies subcountable by ~ domomsubct</td>
@@ -1221,6 +1248,14 @@ its domain by ~ relelfvdm .
 With excluded middle, ` (/) e. A ` and ` A =/= (/) ` are equivalent (where
 ` A ` is an ordinal). In such theorems, ` (/) e. A ` is generally the more
 interesting condition constructively.</LI>
+
+<li>
+  When dealing with the size of sets, the ` ( # `` A ) ` notation is
+  well behaved on sets known to be finite, but in many situations
+  prefer constructions such as ` 2o ~<_ A ` and the others mentioned
+  in <a href="#set-size" >the set size section</a>.  See the ~ df-ihash
+  comment for more discussion.
+</li>
 
 <LI>
 Reverse closure in set.mm uses excluded middle (for example ovrcl or ndmfvrcl

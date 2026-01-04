@@ -115273,6 +115273,12 @@ $)
        finite set as a member of ` NN0 ` , and assigns all infinite sets the
        value ` +oo ` .  For example, ` ( # `` { 0 , 1 , 2 } ) = 3 ` .
 
+       Since we don't know that an arbitrary set is either finite or infinite
+       (by ~ inffiexmid ), the behavior beyond finite sets is not as useful as
+       it might appear.  For example, we wouldn't expect to be able to define
+       this function in a meaningful way on ` ~P 1o ` , which cannot be shown
+       to be finite (per ~ pw1fin ).
+
        Note that we use the sharp sign ( ` # ` ) for this function and we use
        the different character octothorpe ( ` =//= ` ) for the apartness
        relation (see ~ df-ap ).  We adopt the former notation from Corollary
