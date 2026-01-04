@@ -193079,6 +193079,15 @@ $)
       BUFZCSZUCCUDUEZUGUHZVJCSZCVJJIZVDVGVKUIVEABCDEGHUJUKVFVHVMVJCVFVMFCVEVMFC
       SVDFCTULURUMVFVNVOVFVNVOVFVNKVNVLUNIZVOVFVNUOVEVPVDVNFCUSUPVJVLCUQUTVAVJC
       TVBVC $.
+
+    $( The edge function of an undirected pseudograph is a function into
+       unordered pairs of vertices.  Version of ~ upgrfnen without explicitly
+       specified domain of the edge function.  (Contributed by Mario Carneiro,
+       12-Mar-2015.)  (Revised by AV, 10-Oct-2020.) $)
+    upgrfen $p |- ( G e. UPGraph ->
+        E : dom E --> { x e. ~P V | ( x ~~ 1o \/ x ~~ 2o ) } ) $=
+      ( cupgr wcel cdm cv c1o cen wbr c2o wo cpw crab wf isupgren ibi ) CGHBIAJ
+      ZKLMUANLMOADPQBRAGBCDEFST $.
   $}
 
 
