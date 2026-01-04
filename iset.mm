@@ -193067,6 +193067,18 @@ $)
       WPTWFTLZXCXDJWCTVBVCVJWCWMQSXCVSWPRZVDZWBWSHWDWNTWDTLZXFXGJWCTVEVCVJXCWDW
       NRXEWCWMOSVFXFVOWNRZVDZVPWOWAWRVOWNXFXHVGZXIVOWNXJUNXIVRAVTWQXEVTWQRXCXHV
       SWPVHVIUTVAVKVKVLVMVN $.
+
+    $( The property of being an undirected pseudograph, expressing the edges as
+       "words".  (Contributed by Mario Carneiro, 11-Mar-2015.)  (Revised by AV,
+       10-Oct-2020.) $)
+    wrdupgren $p |- ( ( G e. U /\ E e. Word X ) -> ( G e. UPGraph <->
+        E e. Word { x e. ~P V | ( x ~~ 1o \/ x ~~ 2o ) } ) ) $=
+      ( wcel cword wa cupgr cdm cv c1o cen wbr c2o wf wrdf wo cpw cc0 chash cfv
+      crab cfzo co wb isupgren adantr adantl feq2d cn0 simpr ad2antlr iswrdinn0
+      fdmd lencl syl2anc ex impbid1 3bitrd ) DBIZCFJIZKZDLIZCMZANZOPQVIRPQUAAEU
+      BUFZCSZUCCUDUEZUGUHZVJCSZCVJJIZVDVGVKUIVEABCDEGHUJUKVFVHVMVJCVFVMFCVEVMFC
+      SVDFCTULURUMVFVNVOVFVNVOVFVNKVNVLUNIZVOVFVNUOVEVPVDVNFCUSUPVJVLCUQUTVAVJC
+      TVBVC $.
   $}
 
 
