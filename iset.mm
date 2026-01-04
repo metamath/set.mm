@@ -193097,6 +193097,13 @@ $)
       ( cupgr wcel wfn cv c1o cen wbr c2o wo cpw crab wf cdm upgrfen fndm feq2d
       syl5ibcom imp ) DHIZCBJZBAKZLMNUHOMNPAEQRZCSZUFCTZUICSUGUJACDEFGUAUGUKBUI
       CBCUBUCUDUE $.
+
+    $( An edge is a subset of vertices.  (Contributed by Mario Carneiro,
+       11-Mar-2015.)  (Revised by AV, 29-Nov-2020.) $)
+    upgrss $p |- ( ( G e. UPGraph /\ F e. dom E ) -> ( E ` F ) C_ V ) $=
+      ( vx cupgr wcel cdm wa cfv cv c1o cen wbr c2o wo cpw crab ssrab2 upgrfen
+      ffvelcdmda sselid elpwid ) CHIZBAJZIKZBALZDUHGMZNOPUJQOPRZGDSZTZULUIUKGUL
+      UAUFUGUMBAGACDEFUBUCUDUE $.
   $}
 
 
