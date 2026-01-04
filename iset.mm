@@ -192720,9 +192720,9 @@ $)
       uhgrun.v $e |- ( ph -> ( Vtx ` U ) = V ) $.
       uhgrun.un $e |- ( ph -> ( iEdg ` U ) = ( E u. F ) ) $.
       $( The union ` U ` of two (undirected) hypergraphs ` G ` and ` H ` with
-         the same vertex set ` V ` is a hypergraph with the vertex ` V ` and
-         the union ` ( E u. F ) ` of the (indexed) edges.  (Contributed by AV,
-         11-Oct-2020.)  (Revised by AV, 24-Oct-2021.) $)
+         the same vertex set ` V ` is a hypergraph with the vertex set ` V `
+         and the union ` ( E u. F ) ` of the (indexed) edges.  (Contributed by
+         AV, 11-Oct-2020.)  (Revised by AV, 24-Oct-2021.) $)
       uhgrun $p |- ( ph -> U e. UHGraph ) $=
         ( vj vs cuhgr wcel cfv cdm wel wex cvtx cpw crab wf cun uhgrfm syl eqid
         ciedg eqcomd pweqd rabeqdv feq3d mpbird fun2d dmeqd dmun eqtrdi feq123d
@@ -192762,9 +192762,9 @@ $)
       ushgrun.un $e |- ( ph -> ( iEdg ` U ) = ( E u. F ) ) $.
       $( The union ` U ` of two (undirected) simple hypergraphs ` G ` and ` H `
          with the same vertex set ` V ` is a (not necessarily simple)
-         hypergraph with the vertex ` V ` and the union ` ( E u. F ) ` of the
-         (indexed) edges.  (Contributed by AV, 29-Nov-2020.)  (Revised by AV,
-         24-Oct-2021.) $)
+         hypergraph with the vertex set ` V ` and the union ` ( E u. F ) ` of
+         the (indexed) edges.  (Contributed by AV, 29-Nov-2020.)  (Revised by
+         AV, 24-Oct-2021.) $)
       ushgrun $p |- ( ph -> U e. UHGraph ) $=
         ( cushgr wcel cuhgr ushgruhgr syl uhgrun ) ABCDEFGHAESTEUATIEUBUCAFSTFU
         ATJFUBUCKLMNOPQRUD $.
