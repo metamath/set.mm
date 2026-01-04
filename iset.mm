@@ -193129,6 +193129,19 @@ $)
       ( vx cupgr wcel cdm wa cfv cv c1o cen wbr c2o wo cpw crab ssrab2 upgrfen
       ffvelcdmda sselid elpwid ) CHIZBAJZIKZBALZDUHGMZNOPUJQOPRZGDSZTZULUIUKGUL
       UAUFUGUMBAGACDEFUBUCUDUE $.
+
+    ${
+      $d E j $.  $d E x $.  $d F j $.  $d F x $.
+      $( An edge is an inhabited subset of vertices.  (Contributed by Mario
+         Carneiro, 11-Mar-2015.)  (Revised by AV, 10-Oct-2020.) $)
+      upgrm $p |- ( ( G e. UPGraph /\ E Fn A /\ F e. A ) ->
+          E. j j e. ( E ` F ) ) $=
+        ( vx cupgr wcel wfn c1o cen wbr c2o wo cv wa breq1 w3a cfv cpw wex crab
+        upgrfnen ffvelcdmda 3impa wceq orbi12d elrab sylib en1m en2m simpl2im
+        jaoi ) EJKZCALZDAKZUAZDCUBZFUCZKZVAMNOZVAPNOZQZBRVAKBUDZUTVAIRZMNOZVHPN
+        OZQZIVBUEZKZVCVFSUQURUSVMUQURSAVLDCIACEFGHUFUGUHVKVFIVAVBVHVAUIVIVDVJVE
+        VHVAMNTVHVAPNTUJUKULVDVGVEBVAUMBVAUNUPUO $.
+    $}
   $}
 
 
