@@ -66854,6 +66854,16 @@ $)
       WGVHVIVJQWCXCAWGCVSWGIZWBXBBXFWAXACVSWGVTVOVIVKVJVLVMVN $.
   $}
 
+  ${
+    $d A x y $.
+    $( A set with two elements is inhabited.  (Contributed by Jim Kingdon,
+       3-Jan-2026.) $)
+    en2m $p |- ( A ~~ 2o -> E. x x e. A ) $=
+      ( vy c2o cen wbr cv cpr wceq wex en2 wi vex prid2 eleq2 mpbiri a1i eximdv
+      wcel imp exlimddv ) BDEFZBCGZAGZHZIZAJZUDBSZAJZCCABKUBUGUIUBUFUHAUFUHLUBU
+      FUHUDUESUCUDAMNBUEUDOPQRTUA $.
+  $}
+
   $( A subset of a set dominated by ` _om ` is dominated by ` _om ` .
      (Contributed by Thierry Arnoux, 31-Jan-2017.) $)
   ssct $p |- ( ( A C_ B /\ B ~<_ _om ) -> A ~<_ _om ) $=
