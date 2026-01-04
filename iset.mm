@@ -66647,6 +66647,15 @@ $)
     MUBAUDNZUBUEUBUFPUBUEBGHABOQAGRSTUA $.
 
   ${
+    $d A x $.
+    $( A set with one element is inhabited.  (Contributed by Jim Kingdon,
+       3-Jan-2026.) $)
+    en1m $p |- ( A ~~ 1o -> E. x x e. A ) $=
+      ( c1o cen wbr cuni wcel cv wex en1uniel elex2 syl ) BCDEBFZBGAHBGAIBJAMBK
+      L $.
+  $}
+
+  ${
     $d x y f A $.
     $( A set that dominates ordinal 2 has at least 2 different members.
        (Contributed by NM, 25-Jul-2004.) $)
