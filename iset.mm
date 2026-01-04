@@ -32885,7 +32885,8 @@ $)
       CDKL $.
   $}
 
-  $( The singleton of a set is not empty.  (Contributed by NM, 14-Dec-2008.) $)
+  $( The singleton of a set is not empty.  It is also inhabited as shown at
+     ~ snmg .  (Contributed by NM, 14-Dec-2008.) $)
   snnzg $p |- ( A e. V -> { A } =/= (/) ) $=
     ( wcel csn c0 wne snidg ne0i syl ) ABCAADZCJEFABGJAHI $.
 
@@ -32900,8 +32901,8 @@ $)
   ${
     $d x A $.
     snnz.1 $e |- A e. _V $.
-    $( The singleton of a set is not empty.  (Contributed by NM,
-       10-Apr-1994.) $)
+    $( The singleton of a set is not empty.  It is also inhabited as shown at
+       ~ snm .  (Contributed by NM, 10-Apr-1994.) $)
     snnz $p |- { A } =/= (/) $=
       ( cvv wcel csn c0 wne snnzg ax-mp ) ACDAEFGBACHI $.
 
@@ -32909,6 +32910,15 @@ $)
        11-Aug-2018.) $)
     snm $p |- E. x x e. { A } $=
       ( cvv wcel cv csn wex snmg ax-mp ) BDEAFBGEAHCABDIJ $.
+  $}
+
+  ${
+    $d A x $.
+    $( A singleton is inhabited iff its argument is a set.  (Contributed by
+       Scott Fenton, 8-May-2018.)  (Revised by Jim Kingdon, 29-Dec-2025.) $)
+    snmb $p |- ( A e. _V <-> E. x x e. { A } ) $=
+      ( cvv wcel cv wceq wex csn isset velsn exbii bitr4i ) BCDAEZBFZAGMBHDZAGA
+      BIONAABJKL $.
   $}
 
   ${
@@ -35936,6 +35946,11 @@ $)
     ssbrd $p |- ( ph -> ( C A D -> C B D ) ) $=
       ( cop wcel wbr sseld df-br 3imtr4g ) ADEGZBHMCHDEBIDECIABCMFJDEBKDECKL $.
   $}
+
+  $( Implication from a subclass relationship of binary relations.
+     (Contributed by Peter Mazsa, 11-Nov-2019.) $)
+  ssbr $p |- ( A C_ B -> ( C A D -> C B D ) ) $=
+    ( wss id ssbrd ) ABEZABCDHFG $.
 
   ${
     ssbri.1 $e |- A C_ B $.
@@ -44057,6 +44072,20 @@ $)
   $}
 
   ${
+    $d A a $.  $d B a $.  $d R a $.  $d Y a $.
+    $( If a relation is a subset of a cartesian product, then for each element
+       of the range of the relation there is an element of the first set of the
+       cartesian product which is related to the element of the range by the
+       relation.  (Contributed by AV, 24-Oct-2020.) $)
+    ssrelrn $p |- ( ( R C_ ( A X. B ) /\ Y e. ran R ) -> E. a e. A a R Y ) $=
+      ( cxp wss crn wcel wa cv wbr wex wrex wi elrng ssbr brxp simplbi syl6 ex
+      ancrd adantl eximdv com23 sylbid pm2.43i impcom df-rex sylibr ) CABFZGZDC
+      HZIZJEKZAIZUODCLZJZEMZUQEANUNULUSUNULUSOZUNUNUQEMZUTEDCUMPUNULVAUSUNULVAU
+      SOUNULJUQUREULUQUROUNULUQUPULUQUODUKLZUPCUKUODQVBUPDBIUODABRSTUBUCUDUAUEU
+      FUGUHUQEAUIUJ $.
+  $}
+
+  ${
     $d x y A $.
     $( Alternate definition of domain.  (Contributed by NM, 28-Dec-1996.) $)
     dfdm4 $p |- dom A = ran `' A $=
@@ -49166,6 +49195,17 @@ $)
              ( F u. G ) : ( A u. B ) --> C ) $=
     ( wf wa cin c0 wceq cun fun wb unidm feq3 ax-mp sylib ) ACDFBCEFGABHIJGABKZ
     CCKZDEKZFZRCTFZABCCDELSCJUAUBMCNSCRTOPQ $.
+
+  ${
+    fun2d.f $e |- ( ph -> F : A --> C ) $.
+    fun2d.g $e |- ( ph -> G : B --> C ) $.
+    fun2d.i $e |- ( ph -> ( A i^i B ) = (/) ) $.
+    $( The union of functions with disjoint domains is a function, deduction
+       version of ~ fun2 .  (Contributed by AV, 11-Oct-2020.)  (Revised by AV,
+       24-Oct-2021.) $)
+    fun2d $p |- ( ph -> ( F u. G ) : ( A u. B ) --> C ) $=
+      ( wf cin c0 wceq cun fun2 syl21anc ) ABDEJCDFJBCKLMBCNDEFNJGHIBCDEFOP $.
+  $}
 
   $( Composition of two functions.  (Contributed by NM, 22-May-2006.) $)
   fnfco $p |- ( ( F Fn A /\ G : B --> A ) -> ( F o. G ) Fn B ) $=
@@ -191909,6 +191949,20 @@ $)
       INOABRUGUMUNUOEEABSAIBITIHUAUBUCUDUEUF $.
   $}
 
+  $( Applying the vertex function yields a set.  (Contributed by Jim Kingdon,
+     29-Dec-2025.) $)
+  vtxex $p |- ( G e. V -> ( Vtx ` G ) e. _V ) $=
+    ( wcel cvtx cfv cvv cxp c1st cbs cif vtxvalg 1stexg wfn elex funfvex funfni
+    basfn sylancr ifexd eqeltrd ) ABCZADEAFFGCZAHEZAIEZJFABKUAUBUCUDFFABLUAIFMA
+    FCUDFCZQABNUEFAIAIOPRST $.
+
+  $( Applying the indexed edge function yields a set.  (Contributed by Jim
+     Kingdon, 29-Dec-2025.) $)
+  iedgex $p |- ( G e. V -> ( iEdg ` G ) e. _V ) $=
+    ( wcel ciedg cfv cvv cxp cedgf cif iedgvalg 2ndexg edgfid edgfndxnn ndxslid
+    c2nd cnx slotex ifexd eqeltrd ) ABCZADEAFFGCZAOEZAHEZIFABJTUAUBUCFFABKAHBHP
+    HELMNQRS $.
+
   ${
     1vgrex.v $e |- V = ( Vtx ` G ) $.
     $( A graph with at least one vertex is a set.  (Contributed by AV,
@@ -192417,6 +192471,355 @@ $)
       eqcomi rneqi eqeq1i a1i wrel funrel relrn0 bicomd syl adantl 3bitrd ) BDG
       ZCHZIZAJKZBLMZNZJKZCNZJKZCJKZULUOUROUMULAUQJULABPMUQFBDQRSTURUTOUNUQUSJUP
       CCUPEUAUBUCUDUMUTVAOZULUMCUEZVBCUFVCVAUTCUGUHUIUJUK $.
+  $}
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Undirected graphs
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Undirected hypergraphs
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c UHGraph $.
+  $c USHGraph $.
+
+  $( Extend class notation with undirected hypergraphs. $)
+  cuhgr $a class UHGraph $.
+
+  $( Extend class notation with undirected simple hypergraphs. $)
+  cushgr $a class USHGraph $.
+
+  ${
+    $d e g j s v $.
+    $( Define the class of all undirected hypergraphs.  An undirected
+       hypergraph consists of a set ` v ` (of "vertices") and a function ` e `
+       (representing indexed "edges") into the set of inhabited subsets of this
+       set.  (Contributed by Alexander van der Vekens, 26-Dec-2017.)  (Revised
+       by Jim Kingdon, 29-Dec-2025.) $)
+    df-uhgrm $a |- UHGraph = { g | [. ( Vtx ` g ) / v ]. [. ( iEdg ` g ) / e ].
+      e : dom e --> { s e. ~P v | E. j j e. s } } $.
+
+    $( Define the class of all undirected simple hypergraphs.  An undirected
+       simple hypergraph is a special (non-simple, multiple, multi-) hypergraph
+       for which the edge function ` e ` is an injective (one-to-one) function
+       into subsets of the set of vertices ` v ` , representing the (one or
+       more) vertices incident to the edge.  This definition corresponds to the
+       definition of hypergraphs in section I.1 of [Bollobas] p. 7 (except that
+       the empty set seems to be allowed to be an "edge") or section 1.10 of
+       [Diestel] p. 27, where "E is a subset of [[...] the power set of V, that
+       is the set of all subsets of V" resp.  "the elements of E are nonempty
+       subsets (of any cardinality) of V".  (Contributed by AV, 19-Jan-2020.)
+       (Revised by Jim Kingdon, 31-Dec-2025.) $)
+    df-ushgrm $a |- USHGraph = { g | [. ( Vtx ` g ) / v ].
+      [. ( iEdg ` g ) / e ]. e : dom e -1-1-> { s e. ~P v | E. j j e. s } } $.
+  $}
+
+  ${
+    $d g h v e j s $.  $d E h $.  $d G h $.  $d V h s $.
+    isuhgr.v $e |- V = ( Vtx ` G ) $.
+    isuhgr.e $e |- E = ( iEdg ` G ) $.
+    $( The predicate "is an undirected hypergraph."  (Contributed by Alexander
+       van der Vekens, 26-Dec-2017.)  (Revised by AV, 9-Oct-2020.) $)
+    isuhgrm $p |- ( G e. U -> ( G e. UHGraph
+        <-> E : dom E --> { s e. ~P V | E. j j e. s } ) ) $=
+      ( ve vv vg wcel cv cdm ciedg cfv cvtx wceq fveq2 cvv vh cuhgr wex crab wf
+      cpw cab df-uhgrm eleq2i eqtr4di dmeqd eqcomi dmeqi eqtrdi rabeqdv feq123d
+      wsbc pweqd vtxex elv a1i iedgex adantr simpr sbcied2 cbvabv elab2g bitrid
+      wa ) DUBLDIMZNZBMFMLBUCZFJMZUFZUDZVJUEZIKMZOPZUQZJVQQPZUQZKUGZLDALCNZVLFE
+      UFZUDZCUEZUBWBDJIKBFUHUIUAMZOPZNZVLFWGQPZUFZUDZWHUEZWFUADWBAWGDRZWIWCWLWE
+      WHCWNWHDOPZCWGDOSZHUJWNWIWONWCWNWHWOWPUKWOCCWOHULUMUNWNVLFWKWDWNWJEWNWJDQ
+      PEWGDQSGUJURUOUPWAWMKUAVQWGRZVSWMJVTWJTVTTLZWQWRKVQTUSUTVAVQWGQSWQVMWJRZV
+      IZVPWMIVRWHTVRTLZWTXAKVQTVBUTVAWQVRWHRWSVQWGOSVCWTVJWHRZVIZVKWIVOWLVJWHWT
+      XBVDZXCVJWHXDUKWTVOWLRXBWTVLFVNWKWTVMWJWQWSVDURUOVCUPVEVEVFVGVH $.
+
+    $( The predicate "is an undirected simple hypergraph."  (Contributed by AV,
+       19-Jan-2020.)  (Revised by AV, 9-Oct-2020.) $)
+    isushgrm $p |- ( G e. U -> ( G e. USHGraph
+        <-> E : dom E -1-1-> { s e. ~P V | E. j j e. s } ) ) $=
+      ( ve vv vg wcel cv cdm ciedg cfv cvtx wceq fveq2 cvv cushgr wex crab wsbc
+      vh cpw wf1 cab df-ushgrm eleq2i eqtr4di dmeqd eqcomi dmeqi eqtrdi rabeqdv
+      pweqd f1eq123d vtxex elv a1i wa iedgex adantr simpr sbcied2 cbvabv elab2g
+      bitrid ) DUALDIMZNZBMFMLBUBZFJMZUFZUCZVJUGZIKMZOPZUDZJVQQPZUDZKUHZLDALCNZ
+      VLFEUFZUCZCUGZUAWBDJIKBFUIUJUEMZOPZNZVLFWGQPZUFZUCZWHUGZWFUEDWBAWGDRZWIWC
+      WLWEWHCWNWHDOPZCWGDOSZHUKWNWIWONWCWNWHWOWPULWOCCWOHUMUNUOWNVLFWKWDWNWJEWN
+      WJDQPEWGDQSGUKUQUPURWAWMKUEVQWGRZVSWMJVTWJTVTTLZWQWRKVQTUSUTVAVQWGQSWQVMW
+      JRZVBZVPWMIVRWHTVRTLZWTXAKVQTVCUTVAWQVRWHRWSVQWGOSVDWTVJWHRZVBZVKWIVOWLVJ
+      WHWTXBVEZXCVJWHXDULWTVOWLRXBWTVLFVNWKWTVMWJWQWSVEUQUPVDURVFVFVGVHVI $.
+  $}
+
+  ${
+    $d E s $.  $d F s $.  $d V s $.  $d W s $.  $d j s $.
+    uhgrf.v $e |- V = ( Vtx ` G ) $.
+    uhgrf.e $e |- E = ( iEdg ` G ) $.
+    $( The edge function of an undirected hypergraph is a function into the
+       power set of the set of vertices.  (Contributed by Alexander van der
+       Vekens, 26-Dec-2017.)  (Revised by AV, 9-Oct-2020.) $)
+    uhgrfm $p |- ( G e. UHGraph
+        -> E : dom E --> { s e. ~P V | E. j j e. s } ) $=
+      ( cuhgr wcel cdm wel wex cpw crab wf isuhgrm ibi ) CHIBJAEKALEDMNBOHABCDE
+      FGPQ $.
+
+    $( The edge function of an undirected simple hypergraph is a one-to-one
+       function into the power set of the set of vertices.  (Contributed by AV,
+       9-Oct-2020.) $)
+    ushgrfm $p |- ( G e. USHGraph
+        -> E : dom E -1-1-> { s e. ~P V | E. j j e. s } ) $=
+      ( cushgr wcel cdm wel wex cpw crab wf1 isushgrm ibi ) CHIBJAEKALEDMNBOHAB
+      CDEFGPQ $.
+
+    $( An edge is a subset of vertices.  (Contributed by Alexander van der
+       Vekens, 26-Dec-2017.)  (Revised by AV, 18-Jan-2020.) $)
+    uhgrss $p |- ( ( G e. UHGraph /\ F e. dom E ) -> ( E ` F ) C_ V ) $=
+      ( vj vs cuhgr wcel cdm wa cfv wel wex cpw crab uhgrfm ffvelcdmda elrabi
+      syl elpwid ) CIJZBAKZJLZBAMZDUEUFGHNGOZHDPZQZJUFUHJUCUDUIBAGACDHEFRSUGHUF
+      UHTUAUB $.
+
+    uhgreq12g.w $e |- W = ( Vtx ` H ) $.
+    uhgreq12g.f $e |- F = ( iEdg ` H ) $.
+    $( If two sets have the same vertices and the same edges, one set is a
+       hypergraph iff the other set is a hypergraph.  (Contributed by Alexander
+       van der Vekens, 26-Dec-2017.)  (Revised by AV, 18-Jan-2020.) $)
+    uhgreq12g $p |- ( ( ( G e. X /\ H e. Y ) /\ ( V = W /\ E = F ) )
+                     -> ( G e. UHGraph <-> H e. UHGraph ) ) $=
+      ( vj vs wcel wa wceq cuhgr cdm adantr wel wex crab wf isuhgrm simpr dmeqd
+      cpw wb pweq rabeqdv feq123d adantl bicomd sylan9bbr bitrd ) CGOZDHOZPZEFQ
+      ZABQZPZPCROZASZMNUAMUBZNEUHZUCZAUDZDROZUSVCVHUIZVBUQVJURGMACENIJUETTVBVHB
+      SZVENFUHZUCZBUDZUSVIVBVDVKVGVMABUTVAUFZVBABVOUGUTVGVMQVAUTVENVFVLEFUJUKTU
+      LUSVIVNURVIVNUIUQHMBDFNKLUEUMUNUOUP $.
+  $}
+
+  ${
+    $d E j s $.  $d F j s $.  $d G s $.  $d j s $.
+    uhgrfun.e $e |- E = ( iEdg ` G ) $.
+    $( The edge function of an undirected hypergraph is a function.
+       (Contributed by Alexander van der Vekens, 26-Dec-2017.)  (Revised by AV,
+       15-Dec-2020.) $)
+    uhgrfun $p |- ( G e. UHGraph -> Fun E ) $=
+      ( vj vs cuhgr wcel cdm wel wex cvtx cfv cpw crab eqid uhgrfm ffund ) BFGA
+      HDEIDJEBKLZMNADABREROCPQ $.
+
+    $( An edge is an inhabited subset of vertices.  (Contributed by Mario
+       Carneiro, 11-Mar-2015.)  (Revised by AV, 15-Dec-2020.) $)
+    uhgrm $p |- ( ( G e. UHGraph /\ E Fn A /\ F e. A )
+        -> E. j j e. ( E ` F ) ) $=
+      ( vs cuhgr wcel wfn w3a cfv cvtx cpw cv wex crab wa wf cdm eqid syl5ibcom
+      uhgrfm fndm feq2d ffvelcdmda 3impa wceq eleq2 exbidv elrab sylib simprd
+      imp ) EHIZCAJZDAIZKZDCLZEMLZNZIZBOZUSIZBPZURUSVCGOZIZBPZGVAQZIZVBVERUOUPU
+      QVJUOUPRAVIDCUOUPAVICSZUOCTZVICSUPVKBCEUTGUTUAFUCUPVLAVICACUDUEUBUNUFUGVH
+      VEGUSVAVFUSUHVGVDBVFUSVCUIUJUKULUM $.
+  $}
+
+  ${
+    $d A j $.  $d I j $.  $d J j $.
+    lpvtx.i $e |- I = ( iEdg ` G ) $.
+    $( The endpoints of a loop (which is an edge at index ` J ` ) are two
+       (identical) vertices ` A ` .  (Contributed by AV, 1-Feb-2021.) $)
+    lpvtx $p |- ( ( G e. UHGraph /\ J e. dom I /\ ( I ` J ) = { A } )
+                  -> A e. ( Vtx ` G ) ) $=
+      ( vj cuhgr wcel cdm cfv csn wceq w3a cv wex wb 3ad2ant3 mpbid wss cvv wfn
+      cvtx simp1 uhgrfun funfnd 3ad2ant1 simp2 uhgrm syl3anc exbidv eqid uhgrss
+      eleq2 3adant3 sseq1 snmb snssg sylbir syl5ibrcom mpd ) BGHZDCIZHZDCJZAKZL
+      ZMZFNZVEHZFOZABUBJZHZVGVHVDHZFOZVJVGVACVBUAZVCVNVAVCVFUCVAVCVOVFVACCBEUDU
+      EUFVAVCVFUGVBFCDBEUHUIVFVAVNVJPVCVFVMVIFVDVEVHUMUJQRVGVLVJVEVKSZVGVDVKSZV
+      PVAVCVQVFCDBVKVKUKEULUNVFVAVQVPPVCVDVEVKUOQRVJATHVLVPPFAUPAVKTUQURUSUT $.
+  $}
+
+  ${
+    $d G s $.  $d j s $.
+    $( An undirected simple hypergraph is an undirected hypergraph.
+       (Contributed by AV, 19-Jan-2020.)  (Revised by AV, 9-Oct-2020.) $)
+    ushgruhgr $p |- ( G e. USHGraph -> G e. UHGraph ) $=
+      ( vj vs cushgr wcel cuhgr ciedg cfv cdm wel wex cvtx cpw crab wf wf1 eqid
+      ushgrfm f1f syl isuhgrm mpbird ) ADEZAFEAGHZIZBCJBKCALHZMNZUDOZUCUEUGUDPU
+      HBUDAUFCUFQZUDQZRUEUGUDSTDBUDAUFCUIUJUAUB $.
+  $}
+
+  ${
+    $d E s $.  $d V s $.  $d j s $.
+    $( The property of being an undirected hypergraph represented as an ordered
+       pair.  The representation as an ordered pair is the usual representation
+       of a graph, see section I.1 of [Bollobas] p. 1.  (Contributed by AV,
+       1-Jan-2020.)  (Revised by AV, 9-Oct-2020.) $)
+    isuhgropm $p |- ( ( V e. W /\ E e. X )
+        -> ( <. V , E >. e. UHGraph
+          <-> E : dom E --> { s e. ~P V | E. j j e. s } ) ) $=
+      ( wcel wa cop cuhgr ciedg cfv cdm wel wex cpw crab wf cvv eqid cvtx opexg
+      wb isuhgrm syl opiedgfv dmeqd opvtxfv pweqd rabeqdv feq123d bitrd ) CDGBE
+      GHZCBIZJGZUNKLZMZAFNAOZFUNUALZPZQZUPRZBMZURFCPZQZBRUMUNSGUOVBUCCBDEUBSAUP
+      UNUSFUSTUPTUDUEUMUQVCVAVEUPBBCDEUFZUMUPBVFUGUMURFUTVDUMUSCBCDEUHUIUJUKUL
+      $.
+  $}
+
+  ${
+    $d G s $.  $d j s $.
+    uhgr0e.g $e |- ( ph -> G e. W ) $.
+    uhgr0e.e $e |- ( ph -> ( iEdg ` G ) = (/) ) $.
+    $( The empty graph, with vertices but no edges, is a hypergraph.
+       (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by AV,
+       25-Nov-2020.) $)
+    uhgr0e $p |- ( ph -> G e. UHGraph ) $=
+      ( vj vs cuhgr wcel c0 cdm wel wex cvtx cfv cpw wf wb eqid syl crab f0 dm0
+      feq2i mpbir ciedg isuhgrm wceq id dmeq feq12d bitrd mpbiri ) ABHIZJKZFGLF
+      MGBNOZPUAZJQZURJUQJQUQUBUOJUQJUCUDUEAUNBUFOZKZUQUSQZURABCIUNVARDCFUSBUPGU
+      PSUSSUGTAUSJUHZVAURREVBUTUOUQUSJVBUIUSJUJUKTULUM $.
+  $}
+
+  ${
+    $d G s $.  $d j s $.
+    $( There are no inhabited subsets of the empty set.  (Contributed by Jim
+       Kingdon, 31-Dec-2025.) $)
+    pw0ss $p |- { s e. ~P (/) | E. j j e. s } = (/) $=
+      ( cv wcel wex c0 cpw crab csn pw0 rabeqi wceq rabeq0 elsni sylibr mprgbir
+      wn notm0 eqtri ) ACBCZDAEZBFGZHUABFIZHZFUABUBUCJKUDFLUAQZBUCUABUCMTUCDTFL
+      UETFNATROPS $.
+  $}
+
+  ${
+    $d G s $.  $d j s $.
+    $( The null graph, with no vertices, is a hypergraph if and only if the
+       edge function is empty.  (Contributed by Alexander van der Vekens,
+       27-Dec-2017.)  (Revised by AV, 9-Oct-2020.) $)
+    uhgr0vb $p |- ( ( G e. W /\ ( Vtx ` G ) = (/) )
+                  -> ( G e. UHGraph <-> ( iEdg ` G ) = (/) ) ) $=
+      ( vj vs wcel cvtx cfv c0 wceq wa cuhgr ciedg cdm wel wex cpw crab wf eqid
+      uhgrfm pweq rabeqdv pw0ss eqtrdi adantl feq3d simplbi biimtrdi syl5 simpl
+      f00 wi simpr uhgr0e ex adantr impbid ) ABEZAFGZHIZJZAKEZALGZHIZVBVCMZCDNC
+      OZDUSPZQZVCRZVAVDCVCAUSDUSSVCSTVAVIVEHVCRZVDVAVHHVCVEUTVHHIURUTVHVFDHPZQH
+      UTVFDVGVKUSHUAUBCDUCUDUEUFVJVDVEHIVEVCUKUGUHUIURVDVBULUTURVDVBURVDJABURVD
+      UJURVDUMUNUOUPUQ $.
+  $}
+
+  ${
+    $d j s $.
+    $( The null graph represented by an empty set is a hypergraph.
+       (Contributed by AV, 9-Oct-2020.) $)
+    uhgr0 $p |- (/) e. UHGraph $=
+      ( vj vs c0 cuhgr wcel cdm wel wex cpw wf f0 dm0 pw0ss feq23i mpbir cvv wb
+      crab cfv eqcomi 0ex cvtx vtxval0 ciedg iedgval0 isuhgrm ax-mp ) CDEZCFZAB
+      GAHBCIRZCJZUKCCCJCKUIUJCCCLABMNOCPEUHUKQUAPACCCBCUBSCUCTCUDSCUETUFUGO $.
+  $}
+
+  ${
+    $d E s $.  $d F s $.  $d H s $.  $d U s $.  $d V s $.  $d j s $.
+    uhgrun.g $e |- ( ph -> G e. UHGraph ) $.
+    uhgrun.h $e |- ( ph -> H e. UHGraph ) $.
+    uhgrun.e $e |- E = ( iEdg ` G ) $.
+    uhgrun.f $e |- F = ( iEdg ` H ) $.
+    uhgrun.vg $e |- V = ( Vtx ` G ) $.
+    uhgrun.vh $e |- ( ph -> ( Vtx ` H ) = V ) $.
+    uhgrun.i $e |- ( ph -> ( dom E i^i dom F ) = (/) ) $.
+    ${
+      uhgrun.u $e |- ( ph -> U e. W ) $.
+      uhgrun.v $e |- ( ph -> ( Vtx ` U ) = V ) $.
+      uhgrun.un $e |- ( ph -> ( iEdg ` U ) = ( E u. F ) ) $.
+      $( The union ` U ` of two (undirected) hypergraphs ` G ` and ` H ` with
+         the same vertex set ` V ` is a hypergraph with the vertex set ` V `
+         and the union ` ( E u. F ) ` of the (indexed) edges.  (Contributed by
+         AV, 11-Oct-2020.)  (Revised by AV, 24-Oct-2021.) $)
+      uhgrun $p |- ( ph -> U e. UHGraph ) $=
+        ( vj vs cuhgr wcel cfv cdm wel wex cvtx cpw crab wf cun uhgrfm syl eqid
+        ciedg eqcomd pweqd rabeqdv feq3d mpbird fun2d dmeqd dmun eqtrdi feq123d
+        wb isuhgrm ) ABUAUBZBUOUCZUDZSTUESUFZTBUGUCZUHZUIZVIUJZAVOCUDZDUDZUKZVK
+        TGUHZUIZCDUKZUJAVPVQVTCDAEUAUBVPVTCUJISCEGTMKULUMAVQVTDUJVQVKTFUGUCZUHZ
+        UIZDUJZAFUAUBWEJSDFWBTWBUNLULUMAVTWDDVQAVKTVSWCAGWBAWBGNUPUQURUSUTOVAAV
+        JVRVNVTVIWARAVJWAUDVRAVIWARVBCDVCVDAVKTVMVSAVLGQUQURVEUTABHUBVHVOVFPHSV
+        IBVLTVLUNVIUNVGUMUT $.
+    $}
+
+    $( The union of two (undirected) hypergraphs (with the same vertex set)
+       represented as ordered pair:  If ` <. V , E >. ` and ` <. V , F >. ` are
+       hypergraphs, then ` <. V , E u. F >. ` is a hypergraph (the vertex set
+       stays the same, but the edges from both graphs are kept, possibly
+       resulting in two edges between two vertices).  (Contributed by Alexander
+       van der Vekens, 27-Dec-2017.)  (Revised by AV, 11-Oct-2020.)  (Revised
+       by AV, 24-Oct-2021.) $)
+    uhgrunop $p |- ( ph -> <. V , ( E u. F ) >. e. UHGraph ) $=
+      ( cvv wcel cfv cuhgr syl eqeltrid syl2anc cun cop cvtx vtxex ciedg iedgex
+      unexg opexg wceq opvtxfv opiedgfv uhgrun ) AFBCUAZUBZBCDEFNGHIJKLMAFNOZUM
+      NOZUNNOAFDUCPZNKADQOZUQNOGDQUDRSZABNOCNOUPABDUEPZNIAURUTNOGDQUFRSACEUEPZN
+      JAEQOVANOHEQUFRSBCNNUGTZFUMNNUHTAUOUPUNUCPFUIUSVBUMFNNUJTAUOUPUNUEPUMUIUS
+      VBUMFNNUKTUL $.
+  $}
+
+  ${
+    ushgrun.g $e |- ( ph -> G e. USHGraph ) $.
+    ushgrun.h $e |- ( ph -> H e. USHGraph ) $.
+    ushgrun.e $e |- E = ( iEdg ` G ) $.
+    ushgrun.f $e |- F = ( iEdg ` H ) $.
+    ushgrun.vg $e |- V = ( Vtx ` G ) $.
+    ushgrun.vh $e |- ( ph -> ( Vtx ` H ) = V ) $.
+    ushgrun.i $e |- ( ph -> ( dom E i^i dom F ) = (/) ) $.
+    ${
+      ushgrun.u $e |- ( ph -> U e. W ) $.
+      ushgrun.v $e |- ( ph -> ( Vtx ` U ) = V ) $.
+      ushgrun.un $e |- ( ph -> ( iEdg ` U ) = ( E u. F ) ) $.
+      $( The union ` U ` of two (undirected) simple hypergraphs ` G ` and ` H `
+         with the same vertex set ` V ` is a (not necessarily simple)
+         hypergraph with the vertex set ` V ` and the union ` ( E u. F ) ` of
+         the (indexed) edges.  (Contributed by AV, 29-Nov-2020.)  (Revised by
+         AV, 24-Oct-2021.) $)
+      ushgrun $p |- ( ph -> U e. UHGraph ) $=
+        ( cushgr wcel cuhgr ushgruhgr syl uhgrun ) ABCDEFGHAESTEUATIEUBUCAFSTFU
+        ATJFUBUCKLMNOPQRUD $.
+    $}
+
+    $( The union of two (undirected) simple hypergraphs (with the same vertex
+       set) represented as ordered pair:  If ` <. V , E >. ` and
+       ` <. V , F >. ` are simple hypergraphs, then ` <. V , E u. F >. ` is a
+       (not necessarily simple) hypergraph - the vertex set stays the same, but
+       the edges from both graphs are kept, possibly resulting in two edges
+       between two vertices.  (Contributed by AV, 29-Nov-2020.)  (Revised by
+       AV, 24-Oct-2021.) $)
+    ushgrunop $p |- ( ph -> <. V , ( E u. F ) >. e. UHGraph ) $=
+      ( cushgr wcel cuhgr ushgruhgr syl uhgrunop ) ABCDEFADNODPOGDQRAENOEPOHEQR
+      IJKLMS $.
+  $}
+
+  ${
+    $d E e $.  $d G e $.  $d I e v j s $.  $d L e v $.  $d P e v $.
+    $d V e v j s $.  $d W e $.
+    incistruhgr.v $e |- V = ( Vtx ` G ) $.
+    incistruhgr.e $e |- E = ( iEdg ` G ) $.
+    $( An _incidence structure_ ` <. P , L , I >. ` "where ` P ` is a set whose
+       elements are called _points_, ` L ` is a distinct set whose elements are
+       called _lines_ and ` I C_ ( P X. L ) ` is the _incidence relation_" (see
+       Wikipedia "Incidence structure" (24-Oct-2020),
+       ~ https://en.wikipedia.org/wiki/Incidence_structure ) implies an
+       undirected hypergraph, if the incidence relation is right-total (to
+       exclude empty edges).  The points become the vertices, and the edge
+       function is derived from the incidence relation by mapping each line
+       ("edge") to the set of vertices incident to the line/edge.  With
+       ` P = ( Base `` S ) ` and by defining two new slots for lines and
+       incidence relations and enhancing the definition of ` iEdg `
+       accordingly, it would even be possible to express that a corresponding
+       incidence structure _is_ an undirected hypergraph.  By choosing the
+       incident relation appropriately, other kinds of undirected graphs
+       (pseudographs, multigraphs, simple graphs, etc.) could be defined.
+       (Contributed by AV, 24-Oct-2020.) $)
+    incistruhgr $p |- ( ( G e. W /\ I C_ ( P X. L ) /\ ran I = L )
+                        -> ( ( V = P /\ E = ( e e. L |-> { v e. P | v I e } ) )
+                             -> G e. UHGraph ) ) $=
+      ( vj vs wcel wss wceq cv crab wa cvv cxp crn w3a wbr cuhgr cdm wex cpw wf
+      cmpt rabeq mpteq2dv eqeq2d xpeq1 3anbi2d anbi12d simpl dmeq eqid cvtx cfv
+      sseq2d simpl1 vtxex syl eqeltrid rabexd dmmptd sylan9eq jca exbidv ssrab2
+      simpr eleq2 wb elpwg mpbiri wrex 3ad2ant3 wi ssrelrn 3ad2ant2 sylbird imp
+      ex rabn0m sylibr elrabd fmpttd feq12d imbitrrid biimtrrdi expdimp isuhgrm
+      sylc impcom 3ad2ant1 adantr mpbird ) EINZFBGUAZOZFUBZGPZUCZHBPZDCGAQCQZFU
+      DZABRZUJZPZSZEUENZXEXLSXMDUFZLQZMQZNZLUGZMHUHZRZDUIZXLXEYAXFXKXEYAXFXKXES
+      DCGXHAHRZUJZPZWTFHGUAZOZXDUCZSZYAXFYDXKYGXEXFYCXJDXFCGYBXIXHAHBUKULUMXFYF
+      XBWTXDXFYEXAFHBGUNVBUOUPYHYDXNGPZSZYGYAYHYDYIYDYGUQYDYGXNYCUFGDYCURYGCYCG
+      YBTYCUSYGXGGNZSZXHAHYBTYBUSYLHEUTVAZTJYLWTYMTNWTYFXDYKVCEIVDVEVFVGZVHVIVJ
+      YDYGVMYGYAYJGXTYCUIYGCGYBXTYLXRXOYBNZLUGZMYBXSXPYBPXQYOLXPYBXOVNVKYLYBXSN
+      ZYBHOZXHAHVLYLYBTNYQYRVOYNYBHTVPVEVQYLXHAHVRZYPYGYKYSYGYKXGXCNZYSXDWTYTYK
+      VOYFXCGXGVNVSYFWTYTYSVTXDYFYTYSHGFXGAWAWEWBWCWDXHALHWFWGWHWIYJXNGXTDYCYDY
+      IUQYDYIVMWJWKWOWLWMWPXEXMYAVOZXLWTXBUUAXDILDEHMJKWNWQWRWSWE $.
   $}
 
 
@@ -194664,6 +195067,12 @@ htmldef "iEdg" as 'iEdg';
 htmldef "Edg" as 'Edg';
   althtmldef "Edg" as 'Edg';
   latexdef "Edg" as "\mathrm{Edg}";
+htmldef "UHGraph" as 'UHGraph';
+  althtmldef "UHGraph" as 'UHGraph';
+  latexdef "UHGraph" as "\mathrm{UHGraph}";
+htmldef "USHGraph" as 'USHGraph';
+  althtmldef "USHGraph" as 'USHGraph';
+  latexdef "USHGraph" as "\mathrm{USHGraph}";
 
 /* htmldef, althtmldef, latexdef for mathboxes */
 /* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
