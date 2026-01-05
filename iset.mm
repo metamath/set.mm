@@ -193152,6 +193152,14 @@ $)
       wa ffvelcdmda 3impa wceq orbi12d elrab simprbi syl ) DIJZBAKZCAJZLCBMZHNZ
       OPQZUPRPQZSZHEUAZUBZJZUOOPQZUORPQZSZULUMUNVBULUMUDAVACBHABDEFGUCUEUFVBUOU
       TJVEUSVEHUOUTUPUOUGUQVCURVDUPUOOPTUPUORPTUHUIUJUK $.
+
+    $( An edge is a finite subset of vertices.  (Contributed by Mario Carneiro,
+       11-Mar-2015.)  (Revised by AV, 10-Oct-2020.) $)
+    upgrfi $p |- ( ( G e. UPGraph /\ E Fn A /\ F e. A ) ->
+        ( E ` F ) e. Fin ) $=
+      ( cupgr wcel wfn c1o cen wbr c2o cfn com nnfi ax-mp enfii mpan w3a cfv wo
+      upgr1or2 1onn 2onn jaoi syl ) DHIBAJCAIUACBUBZKLMZUINLMZUCUIOIZABCDEFGUDU
+      JULUKKOIZUJULKPIUMUEKQRUIKSTNOIZUKULNPIUNUFNQRUINSTUGUH $.
   $}
 
 
