@@ -193198,6 +193198,26 @@ $)
       UMUNUOUPUQ $.
   $}
 
+  ${
+    $d e g h v x $.  $d E h $.  $d G h x $.  $d V h x $.
+    isumgr.v $e |- V = ( Vtx ` G ) $.
+    isumgr.e $e |- E = ( iEdg ` G ) $.
+    $( The property of being an undirected multigraph.  (Contributed by AV,
+       24-Nov-2020.) $)
+    isumgren $p |- ( G e. U -> ( G e. UMGraph
+           <-> E : dom E --> { x e. ~P V | x ~~ 2o } ) ) $=
+      ( ve vv vg vh wcel cv cdm ciedg cfv cvtx wceq fveq2 cvv cumgr c2o cen wbr
+      cpw crab wf wsbc df-umgren eleq2i eqtr4di dmeqd eqcomi dmeqi eqtrdi pweqd
+      cab rabeqdv feq123d vtxex elv a1i wa iedgex adantr simpr ad2antlr sbcied2
+      pweq cbvabv elab2g bitrid ) DUALDHMZNZAMUBUCUDZAIMZUEZUFZVMUGZHJMZOPZUHZI
+      VTQPZUHZJUQZLDBLCNZVOAEUEZUFZCUGZUAWEDAIHJUIUJKMZOPZNZVOAWJQPZUEZUFZWKUGZ
+      WIKDWEBWJDRZWLWFWOWHWKCWQWKDOPZCWJDOSZGUKWQWLWRNWFWQWKWRWSULWRCCWRGUMUNUO
+      WQVOAWNWGWQWMEWQWMDQPEWJDQSFUKUPURUSWDWPJKVTWJRZWBWPIWCWMTWCTLZWTXAJVTTUT
+      VAVBVTWJQSWTVPWMRZVCZVSWPHWAWKTWATLZXCXDJVTTVDVAVBWTWAWKRXBVTWJOSVEXCVMWK
+      RZVCZVNWLVRWOVMWKXCXEVFZXFVMWKXGULXFVOAVQWNXBVQWNRWTXEVPWMVIVGURUSVHVHVJV
+      KVL $.
+  $}
+
 
 $(
 ###############################################################################
