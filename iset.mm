@@ -193226,6 +193226,15 @@ $)
       cn0 syl2anc ex impbid1 3bitrd ) DBIZCFJIZKZDLIZCMZANOPQAERUAZCSZUBCUFUCZU
       DUEZVGCSZCVGJIZVBVEVHUGVCABCDEGHUHUIVDVFVJVGCVDVJFCVCVJFCSVBFCTUJUKULVDVK
       VLVDVKVLVDVKKVKVIUQIZVLVDVKUMVCVMVBVKFCUNUOVGVICUPURUSVGCTUTVA $.
+
+    $( The edge function of an undirected multigraph is a function into
+       unordered pairs of vertices.  Version of ~ umgrfnen without explicitly
+       specified domain of the edge function.  (Contributed by AV,
+       24-Nov-2020.) $)
+    umgrfen $p |- ( G e. UMGraph
+                   -> E : dom E --> { x e. ~P V | x ~~ 2o } ) $=
+      ( cumgr wcel cdm cv c2o cen wbr cpw crab wf isumgren ibi ) CGHBIAJKLMADNO
+      BPAGBCDEFQR $.
   $}
 
 
