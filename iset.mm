@@ -193183,6 +193183,21 @@ $)
     $}
   $}
 
+  ${
+    $d G p $.
+    $( A pseudograph represented by an ordered pair.  (Contributed by AV,
+       12-Dec-2021.) $)
+    upgrop $p |- ( G e. UPGraph
+                   -> <. ( Vtx ` G ) , ( iEdg ` G ) >. e. UPGraph ) $=
+      ( vp cupgr wcel cvtx cfv ciedg cop cdm cv c1o cen wbr cpw crab wf syl2anc
+      eqid cvv wceq c2o wo upgrfen vtxex iedgex opexg isupgren opiedgfv opvtxfv
+      wb syl dmeqd pweqd rabeqdv feq123d bitrd mpbird ) ACDZAEFZAGFZHZCDZUTIZBJ
+      ZKLMVDUALMUBZBUSNZOZUTPZBUTAUSUSRUTRUCURVBVAGFZIZVEBVAEFZNZOZVIPZVHURVASD
+      ZVBVNUJURUSSDZUTSDZVOACUDZACUEZUSUTSSUFQBSVIVAVKVKRVIRUGUKURVJVCVMVGVIUTU
+      RVPVQVIUTTVRVSUTUSSSUHQZURVIUTVTULURVEBVLVFURVKUSURVPVQVKUSTVRVSUTUSSSUIQ
+      UMUNUOUPUQ $.
+  $}
+
 
 $(
 ###############################################################################
