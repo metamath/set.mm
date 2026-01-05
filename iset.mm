@@ -193160,6 +193160,27 @@ $)
       ( cupgr wcel wfn c1o cen wbr c2o cfn com nnfi ax-mp enfii mpan w3a cfv wo
       upgr1or2 1onn 2onn jaoi syl ) DHIBAJCAIUACBUBZKLMZUINLMZUCUIOIZABCDEFGUDU
       JULUKKOIZUJULKPIUMUEKQRUIKSTNOIZUKULNPIUNUFNQRUINSTUGUH $.
+
+    ${
+      $d A x y $.  $d E h x $.  $d E x y z $.  $d F x y z $.  $d G h x $.
+      $d G x y $.  $d V h x $.  $d V x y $.  $d e g h v x $.
+      $( An edge is an unordered pair of vertices.  (Contributed by Mario
+         Carneiro, 11-Mar-2015.)  (Revised by AV, 10-Oct-2020.) $)
+      upgrex $p |- ( ( G e. UPGraph /\ E Fn A /\ F e. A ) ->
+          E. x e. V E. y e. V ( E ` F ) = { x , y } ) $=
+        ( vz wcel cv wa cpr wceq wex wrex cen wbr wi cupgr wfn w3a cfv upgr1or2
+        c1o c2o wo csn en1 dfsn2 eqeq2i exbii bitri cvv preq2 eqeq2d spcegv elv
+        preq1 exbidv syl exlimiv sylbi en2 jaoi wss cdm simp1 3ad2ant2 eleqtrrd
+        simp3 fndm upgrss syl2anc adantr vex prid1 simpr eleqtrrid sseldd prid2
+        jca31 ex 2eximdv mpd r2ex sylibr ) FUAKZDCUBZECKZUCZALZGKZBLZGKZMEDUDZW
+        MWONZOZMZBPAPZWSBGQAGQWLWSBPZAPZXAWLWQUFRSZWQUGRSZUHXCCDEFGHIUEXDXCXEXD
+        WQJLZXFNZOZJPZXCXDWQXFUIZOZJPXIJWQUJXKXHJXJXGWQXFUKULUMUNXHXCJXHWQXFWON
+        ZOZBPZXCXHXNTJXMXHBXFUOWOXFOXLXGWQWOXFXFUPUQURUSXNXCTJXBXNAXFUOWMXFOZWS
+        XMBXOWRXLWQWMXFWOUTUQVAURUSVBVCVDABWQVEVFVBWLWSWTABWLWSWTWLWSMZWNWPWSXP
+        WQGWMWLWQGVGZWSWLWIEDVHZKXQWIWJWKVIWLECXRWIWJWKVLWJWIXRCOWKCDVMVJVKDEFG
+        HIVNVOVPZXPWMWRWQWMWOAVQVRWLWSVSZVTWAXPWQGWOXSXPWOWRWQWMWOBVQWBXTVTWAXT
+        WCWDWEWFWSABGGWGWH $.
+    $}
   $}
 
 
