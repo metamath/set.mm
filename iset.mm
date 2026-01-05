@@ -193216,6 +193216,16 @@ $)
       VAVBVTWJQSWTVPWMRZVCZVSWPHWAWKTWATLZXCXDJVTTVDVAVBWTWAWKRXBVTWJOSVEXCVMWK
       RZVCZVNWLVRWOVMWKXCXEVFZXFVMWKXGULXFVOAVQWNXBVQWNRWTXEVPWMVIVGURUSVHVHVJV
       KVL $.
+
+    $( The property of being an undirected multigraph, expressing the edges as
+       "words".  (Contributed by AV, 24-Nov-2020.) $)
+    wrdumgren $p |- ( ( G e. U /\ E e. Word X ) -> ( G e. UMGraph
+                             <-> E e. Word { x e. ~P V | x ~~ 2o } ) ) $=
+      ( wcel cword wa cumgr cdm cv c2o cen wbr cpw wf wrdf crab cc0 cfv cfzo co
+      chash wb isumgren adantr adantl fdmd feq2d simpr lencl ad2antlr iswrdinn0
+      cn0 syl2anc ex impbid1 3bitrd ) DBIZCFJIZKZDLIZCMZANOPQAERUAZCSZUBCUFUCZU
+      DUEZVGCSZCVGJIZVBVEVHUGVCABCDEGHUHUIVDVFVJVGCVDVJFCVCVJFCSVBFCTUJUKULVDVK
+      VLVDVKVLVDVKKVKVIUQIZVLVDVKUMVCVMVBVKFCUNUOVGVICUPURUSVGCTUTVA $.
   $}
 
 
