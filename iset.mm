@@ -193142,6 +193142,16 @@ $)
         OZQZIVBUEZKZVCVFSUQURUSVMUQURSAVLDCIACEFGHUFUGUHVKVFIVAVBVHVAUIVIVDVJVE
         VHVAMNTVHVAPNTUJUKULVDVGVEBVAUMBVAUNUPUO $.
     $}
+
+    $d E x $.  $d F x $.
+    $( An edge of an undirected pseudograph has one or two ends.  (Contributed
+       by Mario Carneiro, 11-Mar-2015.)  (Revised by AV, 10-Oct-2020.) $)
+    upgr1or2 $p |- ( ( G e. UPGraph /\ E Fn A /\ F e. A ) ->
+        ( ( E ` F ) ~~ 1o \/ ( E ` F ) ~~ 2o ) ) $=
+      ( vx cupgr wcel wfn w3a cfv cv c1o cen wbr c2o wo breq1 cpw crab upgrfnen
+      wa ffvelcdmda 3impa wceq orbi12d elrab simprbi syl ) DIJZBAKZCAJZLCBMZHNZ
+      OPQZUPRPQZSZHEUAZUBZJZUOOPQZUORPQZSZULUMUNVBULUMUDAVACBHABDEFGUCUEUFVBUOU
+      TJVEUSVEHUOUTUPUOUGUQVCURVDUPUOOPTUPUORPTUHUIUJUK $.
   $}
 
 
