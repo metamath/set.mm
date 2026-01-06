@@ -193279,6 +193279,14 @@ $)
       wi ) ADEZAFEAGHZIZBRCRZEBJZCAKHZLZMZUNSUMUOUPNOPZUPUAOPZUBZCUSMZUTUNCUNAU
       RURQZUNQZUCVDUTUDUMVCUQCUSVCUQULUPUSEVAUQVBBUPUEBUPUFUGTUHTUIDBUNAURCVEVF
       UJUK $.
+
+    $( An undirected multigraph is an undirected pseudograph.  (Contributed by
+       AV, 25-Nov-2020.) $)
+    umgrupgr $p |- ( G e. UMGraph -> G e. UPGraph ) $=
+      ( vx cumgr wcel cupgr ciedg cfv cdm cv c1o cen wbr c2o cvtx cpw crab eqid
+      wo wf a1i umgrfen wss wi olc ss2rabi fssd isupgren mpbird ) ACDZAEDAFGZHZ
+      BIZJKLZULMKLZRZBANGZOZPZUJSUIUKUNBUQPZURUJBUJAUPUPQZUJQZUAUSURUBUIUNUOBUQ
+      UNUOUCULUQDUNUMUDTUETUFBCUJAUPUTVAUGUH $.
   $}
 
 
