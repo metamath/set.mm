@@ -193243,6 +193243,15 @@ $)
       ( cumgr wcel wfn cv c2o cen wbr cpw crab wf cdm umgrfen fndm syl5ibcom
       feq2d imp ) DHIZCBJZBAKLMNAEOPZCQZUDCRZUFCQUEUGACDEFGSUEUHBUFCBCTUBUAUC
       $.
+
+    $d E x $.  $d X x $.
+    $( An edge of a multigraph has exactly two ends.  (Contributed by AV,
+       24-Nov-2020.) $)
+    umgredg2en $p |- ( ( G e. UMGraph /\ X e. dom E )
+                     -> ( E ` X ) ~~ 2o ) $=
+      ( vx cumgr wcel cdm wa cfv cv c2o cen wbr cpw crab umgrfen ffvelcdmda syl
+      breq1 elrab simprbi ) BHIZDAJZIKDALZGMZNOPZGCQZRZIZUGNOPZUEUFUKDAGABCEFST
+      ULUGUJIUMUIUMGUGUJUHUGNOUBUCUDUA $.
   $}
 
 
