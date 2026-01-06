@@ -193235,6 +193235,14 @@ $)
                    -> E : dom E --> { x e. ~P V | x ~~ 2o } ) $=
       ( cumgr wcel cdm cv c2o cen wbr cpw crab wf isumgren ibi ) CGHBIAJKLMADNO
       BPAGBCDEFQR $.
+
+    $( The edge function of an undirected multigraph is a function into
+       unordered pairs of vertices.  (Contributed by AV, 24-Nov-2020.) $)
+    umgrfnen $p |- ( ( G e. UMGraph /\ E Fn A )
+                  -> E : A --> { x e. ~P V | x ~~ 2o } ) $=
+      ( cumgr wcel wfn cv c2o cen wbr cpw crab wf cdm umgrfen fndm syl5ibcom
+      feq2d imp ) DHIZCBJZBAKLMNAEOPZCQZUDCRZUFCQUEUGACDEFGSUEUHBUFCBCTUBUAUC
+      $.
   $}
 
 
