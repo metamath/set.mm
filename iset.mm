@@ -193254,6 +193254,20 @@ $)
       ULUGUJIUMUIUMGUGUJUHUGNOUBUCUDUA $.
   $}
 
+  ${
+    $d V x $.  $d X x $.  $d Y x $.
+    umgrbi.x $e |- X e. V $.
+    umgrbi.y $e |- Y e. V $.
+    umgrbi.n $e |- X =/= Y $.
+    $( Show that an unordered pair is a valid edge in a multigraph.
+       (Contributed by AV, 9-Mar-2021.) $)
+    umgrbien $p |- { X , Y } e. { x e. ~P V | x ~~ 2o } $=
+      ( cpr cv c2o cen wbr cpw crab wcel wss prssi mp2an cvv mpbir prexg wne wb
+      elpw pr2ne breq1 elrab mpbir2an ) CDHZAIZJKLZABMZNOUIULOZUIJKLZUMUIBPZCBO
+      ZDBOZUOEFCDBQRUIBUPUQUISOEFCDBBUARUDTUNCDUBZGUPUQUNURUCEFCDBBUERTUKUNAUIU
+      LUJUIJKUFUGUH $.
+  $}
+
 
 $(
 ###############################################################################
