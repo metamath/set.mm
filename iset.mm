@@ -193268,6 +193268,19 @@ $)
       LUJUIJKUFUGUH $.
   $}
 
+  ${
+    $d G w x $.
+    $( An undirected pseudograph is an undirected hypergraph.  (Contributed by
+       Alexander van der Vekens, 27-Dec-2017.)  (Revised by AV,
+       10-Oct-2020.) $)
+    upgruhgr $p |- ( G e. UPGraph -> G e. UHGraph ) $=
+      ( vw vx cupgr wcel cuhgr ciedg cfv cdm wex cvtx cpw crab c1o cen wbr eqid
+      cv wf a1i c2o wo upgrfen wss en1m en2m jaoi ss2rabi fssd isuhgrm mpbird
+      wi ) ADEZAFEAGHZIZBRCRZEBJZCAKHZLZMZUNSUMUOUPNOPZUPUAOPZUBZCUSMZUTUNCUNAU
+      RURQZUNQZUCVDUTUDUMVCUQCUSVCUQULUPUSEVAUQVBBUPUEBUPUFUGTUHTUIDBUNAURCVEVF
+      UJUK $.
+  $}
+
 
 $(
 ###############################################################################
