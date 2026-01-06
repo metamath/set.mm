@@ -193289,6 +193289,11 @@ $)
       UNUOUCULUQDUNUMUDTUETUFBCUJAUPUTVAUGUH $.
   $}
 
+  $( An undirected multigraph is an undirected hypergraph.  (Contributed by AV,
+     26-Nov-2020.) $)
+  umgruhgr $p |- ( G e. UMGraph -> G e. UHGraph ) $=
+    ( cumgr wcel cupgr cuhgr umgrupgr upgruhgr syl ) ABCADCAECAFAGH $.
+
 
 $(
 ###############################################################################
