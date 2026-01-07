@@ -50060,6 +50060,15 @@ $)
     ( c0 wf1 wf ccnv wfun f0 fun0 cnv0 funeqi mpbir df-f1 mpbir2an ) BABCBABDBE
     ZFZAGOBFHNBIJKBABLM $.
 
+  ${
+    f10d.f $e |- ( ph -> F = (/) ) $.
+    $( The empty set maps one-to-one into any class, deduction version.
+       (Contributed by AV, 25-Nov-2020.) $)
+    f10d $p |- ( ph -> F : dom F -1-1-> A ) $=
+      ( cdm wf1 c0 f10 wceq dm0 f1eq2 ax-mp mpbir dmeqd eqidd f1eq123d mpbiri
+      wb ) ACEZBCFGEZBGFZUAGBGFZBHTGIUAUBRJTGBGKLMASTBBCGDACGDNABOPQ $.
+  $}
+
   $( One-to-one onto mapping of the empty set.  (Contributed by NM,
      15-Apr-1998.) $)
   f1o00 $p |- ( F : (/) -1-1-onto-> A <-> ( F = (/) /\ A = (/) ) ) $=
