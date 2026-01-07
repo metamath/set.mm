@@ -193303,6 +193303,23 @@ $)
   umgruhgr $p |- ( G e. UMGraph -> G e. UHGraph ) $=
     ( cumgr wcel cupgr cuhgr umgrupgr upgruhgr syl ) ABCADCAECAFAGH $.
 
+  ${
+    umgrnloopv.e $e |- E = ( iEdg ` G ) $.
+    $( In a multigraph, there is no loop, i.e. no edge connecting a vertex with
+       itself.  (Contributed by Alexander van der Vekens, 26-Jan-2018.)
+       (Revised by AV, 11-Dec-2020.) $)
+    umgrnloopvv $p |- ( ( G e. UMGraph /\ M e. W /\ N e. V )
+                       -> ( ( E ` X ) = { M , N } -> M =/= N ) ) $=
+      ( cumgr wcel w3a cfv cpr wceq wa c2o cen wbr wb syl2anc simpr simpll wrel
+      wne cuhgr wfun umgruhgr uhgrfun funrel 3syl ad2antrr simplr prid1g adantl
+      cdm adantr mpbird relelfvdm cvtx eqid umgredg2en eqbrtrrd 3adantl3 simpl2
+      eleq2 simpl3 pr2ne mpbid ex ) BIJZCFJZDEJZKZGALZCDMZNZCDUDZVMVPOZVOPQRZVQ
+      VJVKVPVSVLVJVKOZVPOZVNVOPQVTVPUAZWAVJGAUOJZVNPQRVJVKVPUBWAAUCZCVNJZWCVJWD
+      VKVPVJBUEJAUFWDBUGABHUHAUIUJUKWAVPVKWEWBVJVKVPULVPVKOWECVOJZVKWFVPCDFUMUN
+      VPWEWFSVKVNVOCVEUPUQTCGAURTABBUSLZGWGUTHVATVBVCVRVKVLVSVQSVJVKVLVPVDVJVKV
+      LVPVFCDFEVGTVHVI $.
+  $}
+
 
 $(
 ###############################################################################
