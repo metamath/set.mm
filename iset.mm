@@ -193410,6 +193410,22 @@ $)
     ( wcel c0 cop cvv 0ex opexg mpan2 ciedg cfv wceq opiedgfv upgr0e ) ABCZADEZ
     FODFCZPFCGADBFHIOQPJKDLGDABFMIN $.
 
+  ${
+    upgr1eopdc.v $e |- ( ph -> V e. W ) $.
+    upgr1eopdc.a $e |- ( ph -> A e. X ) $.
+    upgr1eopdc.b $e |- ( ph -> B e. V ) $.
+    upgr1eopdc.c $e |- ( ph -> C e. V ) $.
+    upgr1eopdc.dc $e |- ( ph -> DECID B = C ) $.
+    $( A pseudograph with one edge.  Such a graph is actually a simple
+       pseudograph.  (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by
+       AV, 10-Oct-2020.) $)
+    upgr1eopdc $p |- ( ph -> <. V , { <. A , { B , C } >. } >. e. UPGraph ) $=
+      ( cpr cop cfv wcel cvv wceq syl2anc eleqtrrd csn cvtx prexg opexg opvtxfv
+      eqid snexg syl ciedg opiedgfv upgr1edc ) ABCDEBCDMZNZUAZNZUOUBOZGUPUFIACE
+      UPJAEFPZUNQPZUPERHAUMQPZURABGPULQPZUSIACEPDEPUTJKCDEEUCSBULGQUDSUMQUGUHZU
+      NEFQUESZTADEUPKVBTLAUQURUOUIOUNRHVAUNEFQUJSUK $.
+  $}
+
 
 $(
 ###############################################################################
