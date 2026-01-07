@@ -23930,6 +23930,15 @@ $)
   $}
 
   ${
+    el2v.1 $e |- ( ( x e. _V /\ y e. _V ) -> ph ) $.
+    $( If a proposition is implied by ` x e. _V ` and ` y e. _V ` (which is
+       true, see ~ vex ), then it is true.  (Contributed by Peter Mazsa,
+       13-Oct-2018.) $)
+    el2v $p |- ph $=
+      ( cv cvv wcel vex mp2an ) BEFGCEFGABHCHDI $.
+  $}
+
+  ${
     $d x A $.
     $( Two ways to say " ` A ` is a set":  A class ` A ` is a member of the
        universal class ` _V ` (see ~ df-v ) if and only if the class ` A `
