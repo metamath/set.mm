@@ -193402,6 +193402,14 @@ $)
       VITAWHESOVNWAVDJECFHVJNSVOEVRVRVKVOVKVLVMT $.
   $}
 
+  $( The empty graph, with vertices but no edges, is a pseudograph.  The empty
+     graph is actually a simple graph, and therefore also a multigraph
+     ( ` G e. UMGraph ` ).  (Contributed by Mario Carneiro, 12-Mar-2015.)
+     (Revised by AV, 11-Oct-2020.) $)
+  upgr0eop $p |- ( V e. W -> <. V , (/) >. e. UPGraph ) $=
+    ( wcel c0 cop cvv 0ex opexg mpan2 ciedg cfv wceq opiedgfv upgr0e ) ABCZADEZ
+    FODFCZPFCGADBFHIOQPJKDLGDABFMIN $.
+
 
 $(
 ###############################################################################
