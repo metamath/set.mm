@@ -73064,6 +73064,15 @@ $)
     VFVHVGUTVFPZVHVGFVAOIJZVIVAVDOSVJVFUTVJVBOHIJZUHVJOVAIJZVBVKPVAOUIVLVBVKOVA
     HSTRUAUBRTUOUJUKULUMURUSVCVBABCDUPUNUQ $.
 
+  $( An unordered pair, with decidable equality for the specified elements, has
+     either one or two elements.  (Contributed by Jim Kingdon, 7-Jan-2026.) $)
+  pr1or2 $p |- ( ( A e. C /\ B e. D /\ DECID A = B )
+      -> ( { A , B } ~~ 1o \/ { A , B } ~~ 2o ) ) $=
+    ( wcel wceq wdc cpr c1o cen wbr c2o wo wa wne dcne enpr1g ad2antrr wb preq2
+    breq1d adantl mpbid orcd pr2ne biimpar olcd jaodan sylan2b 3impa ) ACEZBDEZ
+    ABFZGZABHZIJKZUOLJKZMZUNUKULNZUMABOZMURABPUSUMURUTUSUMNZUPUQVAAAHZIJKZUPUKV
+    CULUMACQRUMVCUPSUSUMVBUOIJABATUAUBUCUDUSUTNUQUPUSUQUTABCDUEUFUGUHUIUJ $.
+
   ${
     $d A r s $.  $d A z $.  $d ph x $.  $d s x $.
     exmidonfinlem.a $e |- A
