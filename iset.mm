@@ -193329,6 +193329,19 @@ $)
       LVPVFCDFEVGTVHVI $.
   $}
 
+  ${
+    $d G x $.
+    umgr0e.g $e |- ( ph -> G e. W ) $.
+    umgr0e.e $e |- ( ph -> ( iEdg ` G ) = (/) ) $.
+    $( The empty graph, with vertices but no edges, is a multigraph.
+       (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by AV,
+       25-Nov-2020.) $)
+    umgr0e $p |- ( ph -> G e. UMGraph ) $=
+      ( vx cumgr wcel ciedg cfv cdm cv c2o cen wbr cvtx cpw crab syl eqid wf wb
+      wf1 f10d f1f isumgren mpbird ) ABGHZBIJZKZFLMNOFBPJZQRZUIUAZAUJULUIUCUMAU
+      LUIEUDUJULUIUESABCHUHUMUBDFCUIBUKUKTUITUFSUG $.
+  $}
+
 
 $(
 ###############################################################################
