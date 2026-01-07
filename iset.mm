@@ -193340,6 +193340,12 @@ $)
       ( vx cumgr wcel ciedg cfv cdm cv c2o cen wbr cvtx cpw crab syl eqid wf wb
       wf1 f10d f1f isumgren mpbird ) ABGHZBIJZKZFLMNOFBPJZQRZUIUAZAUJULUIUCUMAU
       LUIEUDUJULUIUESABCHUHUMUBDFCUIBUKUKTUITUFSUG $.
+
+    $( The empty graph, with vertices but no edges, is a pseudograph.
+       (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by AV,
+       11-Oct-2020.)  (Proof shortened by AV, 25-Nov-2020.) $)
+    upgr0e $p |- ( ph -> G e. UPGraph ) $=
+      ( cumgr wcel cupgr umgr0e umgrupgr syl ) ABFGBHGABCDEIBJK $.
   $}
 
 
