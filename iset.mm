@@ -193357,6 +193357,21 @@ $)
       ( cumgr wcel cupgr umgr0e umgrupgr syl ) ABFGBHGABCDEIBJK $.
   $}
 
+  ${
+    $d B x $.  $d C x $.  $d S x $.
+    upgr1elem.s $e |- ( ph -> { B , C } e. S ) $.
+    upgr1elem.b $e |- ( ph -> B e. W ) $.
+    upgr1elem.c $e |- ( ph -> C e. X ) $.
+    upgr1elem.dc $e |- ( ph -> DECID B = C ) $.
+    $( Lemma for ~ upgr1e .  (Contributed by AV, 16-Oct-2020.)  (Revised by Jim
+       Kingdon, 6-Jan-2026.) $)
+    upgr1elem1 $p |- ( ph -> { { B , C } }
+                           C_ { x e. S | ( x ~~ 1o \/ x ~~ 2o ) } ) $=
+      ( cpr c1o cen wbr c2o wo wceq breq1 wcel cv orbi12d pr1or2 syl3anc elrabd
+      crab wdc snssd ) ACDLZBUAZMNOZUJPNOZQZBEUFAUMUIMNOZUIPNOZQZBUIEUJUIRUKUNU
+      LUOUJUIMNSUJUIPNSUBHACFTDGTCDRUGUPIJKCDFGUCUDUEUH $.
+  $}
+
 
 $(
 ###############################################################################
