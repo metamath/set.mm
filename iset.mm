@@ -49190,6 +49190,14 @@ $)
     ( wf cdm wss fdm feq2d ibir wceq eqimss syl jca ) ABCDZCEZBCDZOAFZNPNOABCAB
     CGZHINOAJQROAKLM $.
 
+  ${
+    ffdmd.1 $e |- ( ph -> F : A --> B ) $.
+    $( The domain of a function.  (Contributed by Glauco Siliprandi,
+       26-Jun-2021.) $)
+    ffdmd $p |- ( ph -> F : dom F --> B ) $=
+      ( cdm wf wss wa ffdm syl simpld ) ADFZCDGZMBHZABCDGNOIEBCDJKL $.
+  $}
+
   $( The members of an ordered pair element of a mapping belong to the
      mapping's domain and codomain.  (Contributed by NM, 10-Dec-2003.)
      (Revised by Mario Carneiro, 26-Apr-2015.) $)
