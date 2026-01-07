@@ -193371,13 +193371,35 @@ $)
     upgr1elem.b $e |- ( ph -> B e. W ) $.
     upgr1elem.c $e |- ( ph -> C e. X ) $.
     upgr1elem.dc $e |- ( ph -> DECID B = C ) $.
-    $( Lemma for ~ upgr1e .  (Contributed by AV, 16-Oct-2020.)  (Revised by Jim
-       Kingdon, 6-Jan-2026.) $)
+    $( Lemma for ~ upgr1edc .  (Contributed by AV, 16-Oct-2020.)  (Revised by
+       Jim Kingdon, 6-Jan-2026.) $)
     upgr1elem1 $p |- ( ph -> { { B , C } }
                            C_ { x e. S | ( x ~~ 1o \/ x ~~ 2o ) } ) $=
       ( cpr c1o cen wbr c2o wo wceq breq1 wcel cv orbi12d pr1or2 syl3anc elrabd
       crab wdc snssd ) ACDLZBUAZMNOZUJPNOZQZBEUFAUMUIMNOZUIPNOZQZBUIEUJUIRUKUNU
       LUOUJUIMNSUJUIPNSUBHACFTDGTCDRUGUPIJKCDFGUCUDUEUH $.
+  $}
+
+  ${
+    $d B x $.  $d C x $.  $d G x $.
+    upgr1e.v $e |- V = ( Vtx ` G ) $.
+    upgr1e.a $e |- ( ph -> A e. X ) $.
+    upgr1e.b $e |- ( ph -> B e. V ) $.
+    upgr1e.c $e |- ( ph -> C e. V ) $.
+    upgr1edc.dc $e |- ( ph -> DECID B = C ) $.
+    upgr1e.e $e |- ( ph -> ( iEdg ` G ) = { <. A , { B , C } >. } ) $.
+    $( A pseudograph with one edge.  Such a graph is actually a simple
+       pseudograph.  (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by
+       AV, 16-Oct-2020.)  (Revised by AV, 21-Mar-2021.)  (Proof shortened by
+       AV, 17-Apr-2021.) $)
+    upgr1edc $p |- ( ph -> G e. UPGraph ) $=
+      ( vx wcel cfv cdm csn cvv mpbird cupgr ciedg cv c1o cen wbr c2o cvtx crab
+      wo cpw cpr cop prexg syl2anc snidg syl fsnd wss prssd sseqtrdi upgr1elem1
+      wf wb elpwg fssd ffdmd dmeqd feq12d 1vgrex eqid isupgren 3syl ) AEUAOZEUB
+      PZQZNUCZUDUEUFVQUGUEUFUJNEUHPZUKZUIZVOVCZAWABCDULZUMRZQZVTWCVCABRZVTWCAWE
+      WBRZVTWCABWBGWFIAWBSOZWBWFOACFOZDFOWGJKCDFFUNUOZWBSUPUQURANCDVSFFAWBVSOZW
+      BVRUSZAWBFVRACDFJKUTHVAAWGWJWKVDWIWBVRSVEUQTJKLVBVFVGAVPWDVTVOWCMAVOWCMVH
+      VITAWHESOVNWAVDJECFHVJNSVOEVRVRVKVOVKVLVMT $.
   $}
 
 
