@@ -193495,6 +193495,18 @@ $)
         VKVSVOWAVJWBRAVKWBUDVSAVJWBRVCCDVFVDAVLSVNVTAVMGQURUSVEVAABHUBVIVPVGPSH
         VJBVMVMUPVJUPVHUNVA $.
     $}
+
+    $( The union of two multigraphs (with the same vertex set):  If
+       ` <. V , E >. ` and ` <. V , F >. ` are multigraphs, then
+       ` <. V , E u. F >. ` is a multigraph (the vertex set stays the same, but
+       the edges from both graphs are kept).  (Contributed by Mario Carneiro,
+       12-Mar-2015.)  (Revised by AV, 25-Nov-2020.) $)
+    umgrunop $p |- ( ph -> <. V , ( E u. F ) >. e. UMGraph ) $=
+      ( cvv wcel cfv cumgr syl eqeltrid syl2anc cun cop cvtx vtxex ciedg iedgex
+      unexg opexg wceq opvtxfv opiedgfv umgrun ) AFBCUAZUBZBCDEFNGHIJKLMAFNOZUM
+      NOZUNNOAFDUCPZNKADQOZUQNOGDQUDRSZABNOCNOUPABDUEPZNIAURUTNOGDQUFRSACEUEPZN
+      JAEQOVANOHEQUFRSBCNNUGTZFUMNNUHTAUOUPUNUCPFUIUSVBUMFNNUJTAUOUPUNUEPUMUIUS
+      VBUMFNNUKTUL $.
   $}
 
 
