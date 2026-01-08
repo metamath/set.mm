@@ -118838,6 +118838,18 @@ $)
     wb biantru bitr4di ) ADEZFZBUAFZCUAFZGACHIBCHIJZABJZCCJZKZUFUBUDUCUEUHRZUBU
     DKUCUDKCLMZUJJUIUJNACBCDOPQUGUFCNST $.
 
+  $( Decompose a nonempty word by separating off the first symbol.
+     (Contributed by Stefan O'Rear, 25-Aug-2015.)  (Revised by Mario Carneiro,
+     1-Oct-2015.)  (Proof shortened by AV, 12-Oct-2022.) $)
+  wrdeqs1cat $p |- ( ( W e. Word A /\ W =/= (/) ) -> W =
+      ( <" ( W ` 0 ) "> ++ ( W substr <. 1 , ( # ` W ) >. ) ) ) $=
+    ( cword wcel c0 wne wa c1 cpfx co chash cfv cop csubstr cconcat cc0 cs1 cfz
+    wceq cn0 simpl cfn wrdfin 1elfz0hash sylan lennncl nnnn0d cuz eluzfz2 nn0uz
+    eleq2s syl ccatpfx syl3anc pfx1 oveq1d pfxid adantr 3eqtr3rd ) BACDZBEFZGZB
+    HIJZBHBKLZMNJZOJZBVDIJZPBLQZVEOJBVBUTHPVDRJZDZVDVIDZVFVGSUTVAUAUTBUBDVAVJAB
+    UCBUDUEVBVDTDVKVBVDABUFUGVKVDPUHLTPVDUIUJUKULABHVDUMUNVBVCVHVEOABUOUPUTVGBS
+    VAABUQURUS $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
