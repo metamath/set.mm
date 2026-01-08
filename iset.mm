@@ -118745,6 +118745,16 @@ $)
     UIVEVBASRZVMVPVDVQVBAVCUKOZBCAULPBBVFVGUMPVEVIVJVEVIVEVIVCAUNIZSABCUOVDVSSR
     VBAEVCUTOQTVEVJVEVJASBCAUPVRQTUQABCURUS $.
 
+  $( Reconstruct a nonempty word from its prefix and last symbol.  (Contributed
+     by Alexander van der Vekens, 5-Aug-2018.)  (Revised by AV, 9-May-2020.) $)
+  pfxlswccat $p |- ( ( W e. Word V /\ W =/= (/) )
+          -> ( ( W prefix ( ( # ` W ) - 1 ) ) ++ <" ( lastS ` W ) "> ) = W ) $=
+    ( cword wcel c0 wne wa chash cfv cmin cpfx clsw cs1 cconcat csubstr swrdlsw
+    c1 co cop eqcomd oveq2d cc0 cfz wceq cfn wrdfin 1elfz0hash sylan pfxcctswrd
+    fznn0sub2 syl syldan eqtrd ) BACDZBEFZGZBBHIZQJRZKRZBLIMZNRUSBURUQSORZNRZBU
+    PUTVAUSNUPVAUTABPTUAUNUOURUBUQUCRZDZVBBUDUPQVCDZVDUNBUEDUOVEABUFBUGUHQUQUJU
+    KURABUIULUM $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
