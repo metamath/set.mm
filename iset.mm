@@ -193468,6 +193468,35 @@ $)
       VBUMFNNUKTUL $.
   $}
 
+  ${
+    umgrun.g $e |- ( ph -> G e. UMGraph ) $.
+    umgrun.h $e |- ( ph -> H e. UMGraph ) $.
+    umgrun.e $e |- E = ( iEdg ` G ) $.
+    umgrun.f $e |- F = ( iEdg ` H ) $.
+    umgrun.vg $e |- V = ( Vtx ` G ) $.
+    umgrun.vh $e |- ( ph -> ( Vtx ` H ) = V ) $.
+    umgrun.i $e |- ( ph -> ( dom E i^i dom F ) = (/) ) $.
+    ${
+      $d x E $.  $d x F $.  $d x G $.  $d x H $.  $d x U $.  $d x V $.
+      $d x ph $.
+      umgrun.u $e |- ( ph -> U e. W ) $.
+      umgrun.v $e |- ( ph -> ( Vtx ` U ) = V ) $.
+      umgrun.un $e |- ( ph -> ( iEdg ` U ) = ( E u. F ) ) $.
+      $( The union ` U ` of two multigraphs ` G ` and ` H ` with the same
+         vertex set ` V ` is a multigraph with the vertex ` V ` and the union
+         ` ( E u. F ) ` of the (indexed) edges.  (Contributed by AV,
+         25-Nov-2020.) $)
+      umgrun $p |- ( ph -> U e. UMGraph ) $=
+        ( vx wf cumgr wcel cfv cdm cv c2o cen wbr cvtx cpw crab cun umgrfen syl
+        ciedg eqid eqcomd pweqd rabeqdv feq3d mpbird fun2d dmeqd eqtrdi feq123d
+        dmun wb isumgren ) ABUAUBZBUOUCZUDZSUEUFUGUHZSBUIUCZUJZUKZVJTZAVPCUDZDU
+        DZULZVLSGUJZUKZCDULZTAVQVRWACDAEUAUBVQWACTISCEGMKUMUNAVRWADTVRVLSFUIUCZ
+        UJZUKZDTZAFUAUBWFJSDFWCWCUPLUMUNAWAWEDVRAVLSVTWDAGWCAWCGNUQURUSUTVAOVBA
+        VKVSVOWAVJWBRAVKWBUDVSAVJWBRVCCDVFVDAVLSVNVTAVMGQURUSVEVAABHUBVIVPVGPSH
+        VJBVMVMUPVJUPVHUNVA $.
+    $}
+  $}
+
 
 $(
 ###############################################################################
