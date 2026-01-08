@@ -1101,6 +1101,10 @@ Non-empty almost always needs to be changed to inhabited (those terms are define
 
 <LI>If there is case elimination on whether variables are distinct, most of the time you just need the variant with distinct variables. Sometimes you can then remove the constraint with a temporary variable (e.g. the various sbco2* variants, ~ nfralya , ~ r19.3rm ).</LI>
 
+<li>If you are proving something of the form ` -. A e. B ` and the proof does
+case elimination on whether ` A ` is a set or a proper class, use ~ pm2.01da so
+you only need to consider the case where ` A ` is a set (example: ~ fun2dmnop0 )</li>
+
 <LI>Sometimes one direction of a biconditional holds, or subset holds instead of equality. You might be able to keep the easy direction and worry about the other one later.</LI>
 
 <LI>
@@ -1513,6 +1517,13 @@ then case elimination will work using theorems such as ~ exmiddc and ~ mpjaodan<
   <TD>pm4.42</TD>
   <TD>~ pm4.42r</TD>
 </TR>
+
+<tr>
+  <td>jaoi2 , jaoi3</td>
+  <td><i>none</i></td>
+  <td>Apparently need ` ph ` to be decidable. ~ pm5.63dc is pretty
+  close.</td>
+</tr>
 
 <TR>
 <TD>3ianor</TD>
@@ -2243,10 +2254,11 @@ is double negation elimination.</TD>
 <TD>~ ifcldadc</TD>
 </TR>
 
-<TR>
-<TD>ifeqda</TD>
-<TD><I>none</I></TD>
-</TR>
+<tr>
+  <td>ifeqda</td>
+  <td>~ ifeqdadc</td>
+  <td>adds decidability condition</td>
+</tr>
 
 <TR>
 <TD>elimif , ifval , elif ,
@@ -2299,6 +2311,12 @@ favor of theorems in deduction form.</TD>
   <TD><I>none</I></TD>
   <TD>Should be provable if the condition is decidable.</TD>
 </TR>
+
+<tr>
+  <td>snnzb</td>
+  <td>~ snmb</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
 
 <TR>
   <TD ROWSPAN="4">difsnid</TD>
@@ -2353,6 +2371,14 @@ favor of theorems in deduction form.</TD>
   <TD>eqsn</TD>
   <TD>~ eqsnm</TD>
 </TR>
+
+<tr>
+  <td>n0snor2el</td>
+  <td><i>none</i></td>
+  <td>even if nonempty were changed to inhabited, the choice
+  between a singleton and an unordered pair would seem to
+  require decidable equality</td>
+</tr>
 
 <TR>
   <TD>ssunpr</TD>
@@ -2634,6 +2660,12 @@ A either - there are singletons at every rank.</P>
   <TD>opnz</TD>
   <TD>~ opm , ~ opnzi</TD>
 </TR>
+
+<tr>
+  <td>iunopeqop</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses n0snor2el</td>
+</tr>
 
 <tr>
   <td>opabn0</td>
@@ -3370,6 +3402,18 @@ need</TD>
 </TR>
 
 <tr>
+  <td>funsndifnop</td>
+  <td><i>none</i></td>
+  <td>presumably provable but lightly used in set.mm</td>
+</tr>
+
+<tr>
+  <td>funsneqopb</td>
+  <td><i>none</i></td>
+  <td>presumably provable but lightly used in set.mm</td>
+</tr>
+
+<tr>
   <td>fmptsng , fmptsnd</td>
   <td><i>none</i></td>
   <td>presumably provable</td>
@@ -3578,6 +3622,13 @@ found in ~ ovi3 .</TD>
 <TD>~ oprssdmm</TD>
 </TR>
 
+<tr>
+  <td>nssdmovg</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses ndmfv so it is possible that set
+  existence conditions on ` A ` and ` B ` would be needed</td>
+</tr>
+
 <TR>
 <TD>ndmovg , ndmov</TD>
 <TD>~ ndmfvg </TD>
@@ -3642,8 +3693,8 @@ that we are evaluating functions within their domains.
 <tr>
   <td>mpondm0</td>
   <td><i>none</i></td>
-  <td>could be proved, but usually is used in conjunction with
-  excluded middle</td>
+  <td>the set.mm proof uses nssdmovg so it is possible that set
+  existence conditions on ` V ` and ` W ` would be needed</td>
 </tr>
 
 <tr>
@@ -3704,19 +3755,6 @@ that we are evaluating functions within their domains.
   <td>~ ofc2g</td>
   <td>adds set existence condition</td>
 </tr>
-
-<tr>
-  <td>offveq</td>
-  <td>~ offeq</td>
-</tr>
-
-<TR>
-<TD>caofid0l , caofid0r , caofid1 , caofid2</TD>
-<TD><I>none</I></TD>
-<TD>Assuming we really need to add conditions that the operations
-are functions being evaluated within their domains, there would be a
-fair bit of intuitionizing.</TD>
-</TR>
 
 <tr>
   <td>caofass</td>
@@ -4768,7 +4806,7 @@ this implies excluded middle</TD>
 </TR>
 
 <TR>
-  <TD>enp1ilem , enp1i , en2 , en3 , en4</TD>
+  <TD>enp1ilem , enp1i , en3 , en4</TD>
   <TD><I>none</I></TD>
   <TD>The set.mm proof relies on excluded middle and undif1</TD>
 </TR>
@@ -4949,6 +4987,13 @@ this implies excluded middle</TD>
   <TD><I>none</I></TD>
   <TD>Implies excluded middle per ~ pw1fin</TD>
 </TR>
+
+<tr>
+  <td>mptfi</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof depends on ssfi and additional conditions
+  would be needed to prove something like this</td>
+</tr>
 
 <TR>
   <TD>abrexfi</TD>
@@ -5339,10 +5384,11 @@ this implies excluded middle</TD>
   <TD><I>none</I></TD>
 </TR>
 
-<TR>
-  <TD>df-acn and all theorems using this definition</TD>
-  <TD><I>none</I></TD>
-</TR>
+<tr>
+  <td>df-acn</td>
+  <td>~ df-acnm</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
 
 <TR>
   <TD>cardf2 , cardon , isnum2</TD>
@@ -5476,7 +5522,7 @@ this implies excluded middle</TD>
   <TD>The set.mm proof would only work in the case where
   ` A = B ` is decidable.
   If we can prove fodomfi , that would appear to imply
-  prsomd2 fairly quickly.</TD>
+  prdom2 fairly quickly.</TD>
 </TR>
 
 <TR>
@@ -5567,6 +5613,18 @@ this implies excluded middle</TD>
   <TD>Numerability (or cardinality in general) is not well
   developed and to a certain extent cannot be.</TD>
 </TR>
+
+<tr>
+  <td>isacn</td>
+  <td>~ isacnm</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
+
+<tr>
+  <td>dfacacn</td>
+  <td><i>none</i></td>
+  <td>should be provable</td>
+</tr>
 
 <tr>
   <td>undjudom</td>
@@ -5757,6 +5815,13 @@ this implies excluded middle</TD>
 <tr>
   <td>axcc4</td>
   <td>~ cc4</td>
+</tr>
+
+<tr>
+  <td>acncc</td>
+  <td>~ acnccim</td>
+  <td>uses ` CCHOICE ` notation rather than countable
+  choice expressed via the ax-cc axiom</td>
 </tr>
 
 <TR>
@@ -9260,9 +9325,118 @@ or not.</TD>
 </TR>
 
 <tr>
+  <td>phphashd , phphashrd</td>
+  <td><i>none</i></td>
+  <td>at a minimum, we'd expect to need finiteness conditions on
+  both ` A ` and ` B ` (lacking ssfi)</td>
+</tr>
+
+<tr>
+  <td>hashprlei</td>
+  <td><i>none</i></td>
+  <td>presumably not provable</td>
+</tr>
+
+<tr>
+  <td>hash2pr</td>
+  <td>~ en2</td>
+  <td>combine with ~ hash2en if desired</td>
+</tr>
+
+<tr>
+  <td>hash2prde</td>
+  <td><i>none</i></td>
+  <td>should be provable (if the antecedent is changed to ` V ~~ 2o ` )
+  via ~ en2 and ~ pr2ne</td>
+</tr>
+
+<tr>
+  <td>hash2exprb , hash2prb</td>
+  <td><i>none</i></td>
+  <td>probably would need the antecendent changed from ` V e. W ` to
+  ` V e. Fin ` ; also see other theorems like ~ en2
+  and ~ pr2ne</td>
+</tr>
+
+<tr>
+  <td>prprrab</td>
+  <td><i>none</i></td>
+  <td>apparently ` ( # `` x ) = 2 ` would need to be changed to
+  ` x ~~ 2o ` ; there is also the question of whether this theorem,
+  concerning non-empty subsets, would be as useful as a similar theorem
+  concerning inhabited subsets</td>
+</tr>
+
+<tr>
+  <td>nehash2</td>
+  <td><i>none</i></td>
+  <td>Presumably could be proved if ` P e. V ` were changed to
+  ` P e. Fin ` .  But perhaps ~ rex2dom better expresses the idea
+  here.</td>
+</tr>
+
+<tr>
+  <td>hash2prd</td>
+  <td>~ en2eqpr</td>
+</tr>
+
+<tr>
+  <td>hash2pwpr</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses excluded middle</td>
+</tr>
+
+<tr>
+  <td>hashle2pr , hashle2prv</td>
+  <td><i>none</i></td>
+  <td>likely would need changes even if something similar is
+  possible</td>
+</tr>
+
+<tr>
+  <td>pr2pwpr</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses hash2pwpr and other theorems we do
+  not have</td>
+</tr>
+
+<tr>
+  <td>hashge2el2dif</td>
+  <td>~ 2dom</td>
+</tr>
+
+<tr>
+  <td>hashge2el2difr</td>
+  <td>~ rex2dom</td>
+</tr>
+
+<tr>
+  <td>hashge2el2difb</td>
+  <td>~ 2dom and ~ rex2dom</td>
+</tr>
+
+<tr>
+  <td>hashdmpropge2</td>
+  <td>~ hashdmprop2dom</td>
+  <td>changes how we specify that a set has at least two elements</td>
+</tr>
+
+<tr>
+  <td>fundmge2nop0</td>
+  <td>~ fundm2domnop0</td>
+  <td>changes ` 2 <_ ( # `` dom G ) ` to ` 2o ~<_ dom G `</td>
+</tr>
+
+<tr>
+  <td>fundmge2nop</td>
+  <td>~ fundm2domnop</td>
+  <td>changes how we specify that a set has at least two elements</td>
+</tr>
+
+<tr>
   <td>iswrdi</td>
-  <td>~ iswrdinn0</td>
-  <td>adds ` L e. NN0 ` condition</td>
+  <td>~ iswrdinn0 , ~ iswrdiz</td>
+  <td>add conditions on ` L `</td>
 </tr>
 
 <tr>
@@ -9297,6 +9471,247 @@ or not.</TD>
   <td>elovmptnn0wrd</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses elovmpt3imp</td>
+</tr>
+
+<tr>
+  <td>lsw</td>
+  <td>~ lswwrd</td>
+  <td>only works on words</td>
+</tr>
+
+<tr>
+  <td>ccatfn</td>
+  <td><i>none</i></td>
+  <td>it doesn't seem like we'd be able to show ` ++ ` is defined on
+  all of ` _V X. _V ` (maybe just where the two operands are both
+  finite)</td>
+</tr>
+
+<tr>
+  <td>ccatfval</td>
+  <td>~ ccatfvalfi</td>
+  <td>requires both operands to be finite</td>
+</tr>
+
+<tr>
+  <td>ccatalpha</td>
+  <td><i>none</i></td>
+  <td>presumably provable but the set.mm proof uses mptfi and hashfun</td>
+</tr>
+
+<tr>
+  <td>ccatrcl1</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses ccatalpha</td>
+</tr>
+
+<tr>
+  <td>ids1</td>
+  <td>~ s1val , ~ s1prc</td>
+  <td>it is likely not possible to combine the set and proper class
+  cases</td>
+</tr>
+
+<tr>
+  <td>s1cli</td>
+  <td>~ s1cl</td>
+</tr>
+
+<tr>
+  <td>s1len</td>
+  <td>~ s1leng</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>s1nz</td>
+  <td><i>none</i></td>
+  <td>Presumably would be provable with a set existence condition
+  added.  Changing nonempty to inhabited would also perhaps
+  be useful.</td>
+</tr>
+
+<tr>
+  <td>s1dm , s1dmALT</td>
+  <td>~ s1dmg</td>
+</tr>
+
+<tr>
+  <td>ccatws1clv</td>
+  <td>~ ccatws1cl</td>
+</tr>
+
+<tr>
+  <td>ccats1alpha</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses ccatalpha</td>
+</tr>
+
+<tr>
+  <td>ccatws1len</td>
+  <td>~ ccatws1leng</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>ccatws1lenp1b</td>
+  <td>~ ccatws1lenp1bg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>wrdlenccats1lenm1</td>
+  <td><i>none</i></td>
+  <td>Presumably would be provable with a set existence condition
+  added.</td>
+</tr>
+
+<tr>
+  <td>ccat2s1len</td>
+  <td><i>none</i></td>
+  <td>Presumably would be provable with set existence conditions
+  added.</td>
+</tr>
+
+<tr>
+  <td>ccatw2s1len</td>
+  <td><i>none</i></td>
+  <td>Presumably would be provable with set existence conditions
+  added.</td>
+</tr>
+
+<tr>
+  <td>ccats1val1</td>
+  <td>~ ccats1val1g</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>ccat2s1p1 , ccat2s1p2</td>
+  <td><i>none</i></td>
+  <td>would need additional set existence conditions</td>
+</tr>
+
+<tr>
+  <td>ccatw2s1ass</td>
+  <td>~ ccatass</td>
+</tr>
+
+<tr>
+  <td>ccatws1n0</td>
+  <td><i>none</i></td>
+  <td>Presumably would be provable with a set existence condition
+  added.  Changing nonempty to inhabited would also perhaps
+  be useful.</td>
+</tr>
+
+<tr>
+  <td>ccatw2s1p1</td>
+  <td><i>none</i></td>
+  <td>would need an additional set existence condition</td>
+</tr>
+
+<tr>
+  <td>ccat2s1fvw</td>
+  <td><i>none</i></td>
+  <td>would need additional set existence conditions</td>
+</tr>
+
+<tr>
+  <td>ccat2s1fst</td>
+  <td><i>none</i></td>
+  <td>would need additional set existence conditions</td>
+</tr>
+
+<tr>
+  <td>swrdnznd</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses mpondm0 so it is possible set existence
+  conditions on ` F ` and ` L ` would be needed</td>
+</tr>
+
+<tr>
+  <td>swrd00</td>
+  <td>~ swrd00g</td>
+  <td>adds ` S e. V ` and ` X e. ZZ ` conditions</td>
+</tr>
+
+<tr>
+  <td>swrdcl</td>
+  <td>~ swrdclg</td>
+  <td>requires ` F ` and ` L ` to be integers</td>
+</tr>
+
+<tr>
+  <td>swrdnd2</td>
+  <td><i>none</i></td>
+  <td>presumably provable, but unused in set.mm</td>
+</tr>
+
+<tr>
+  <td>swrdnnn0nd</td>
+  <td><i>none</i></td>
+  <td>presumably would need additional conditions on ` F ` and ` L `</td>
+</tr>
+
+<tr>
+  <td>swrdnd0</td>
+  <td><i>none</i></td>
+  <td>presumably would need additional conditions on ` F ` and ` L `</td>
+</tr>
+
+<tr>
+  <td>swrd0</td>
+  <td>~ swrd0g</td>
+  <td>requires ` F ` and ` L ` to be integers</td>
+</tr>
+
+<tr>
+  <td>swrdwrdsymb</td>
+  <td>~ swrdwrdsymbg</td>
+  <td>adds conditions on ` M ` and ` N `</td>
+</tr>
+
+<tr>
+  <td>pfxnndmnd</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses mpondm0 so it is possible set existence
+  conditions would be needed</td>
+</tr>
+
+<tr>
+  <td>pfx00</td>
+  <td>~ pfx00g</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>pfx0</td>
+  <td>~ pfx0g</td>
+  <td>adds ` L e. NN0 ` condition</td>
+</tr>
+
+<tr>
+  <td>pfxval0</td>
+  <td>~ pfxval</td>
+</tr>
+
+<tr>
+  <td>pfxcl</td>
+  <td>~ pfxclg</td>
+  <td>adds ` L e. NN0 ` condition</td>
+</tr>
+
+<tr>
+  <td>pfxnd0</td>
+  <td><i>none</i></td>
+  <td>would presumably require a condition such as ` L e. ZZ `</td>
+</tr>
+
+<tr>
+  <td>pfxwrdsymb</td>
+  <td>~ pfxwrdsymbg</td>
+  <td>adds ` L e. NN0 ` condition</td>
 </tr>
 
 <TR>
@@ -10603,7 +11018,9 @@ intuitionistic and it is lightly used in set.mm</TD>
 <TR>
   <TD>basprssdmsets</TD>
   <TD><I>none</I></TD>
-  <TD>The set.mm proof relies on setsdm</TD>
+  <TD>The set.mm proof relies on setsdm . Something of this sort
+  should be provable; we can change ` I e. _V ` to ` I e. NN `
+  (an easy condition to satisfy) if that helps.</TD>
 </TR>
 
 <tr>
@@ -10706,7 +11123,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>2strstr</TD>
-  <TD>~ 2strstrg</TD>
+  <TD>~ 2strstrndx</TD>
 </TR>
 
 <TR>
@@ -11009,12 +11426,11 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <TR>
-  <TD>prdsbas2 , prdsbasmpt , prdsbasfn , prdsbasprj , prdsplusgval ,
-  prdsplusgfval , prdsmulrval , prdsmulrfval , prdsleval , prdsdsval ,
-  prdsvscaval , prdsvscafval , prdsbas3 , prdsbasmpt2 , prdsbascl ,
-  prdsdsval2 , prdsdsval3 , pwsval , pwsbas , pwselbasb , pwselbas ,
-  pwsplusgval , pwsmulrval , pwsle , pwsleval , pwsvscafval , pwsvscaval ,
-  pwssca , pwsdiagel , pwssnf1o</TD>
+  <TD>prdsleval , prdsdsval ,
+  prdsvscaval , prdsvscafval ,
+  prdsdsval2 , prdsdsval3 ,
+  pwsle , pwsleval , pwsvscafval , pwsvscaval ,
+  pwssca</TD>
   <TD><I>none</I></TD>
   <TD>Probably provable with new set existence
   conditions and other routine intuitionizing.  Current plan is to
@@ -11042,17 +11458,6 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>~ df-iimas</td>
   <td>currently defines only some of the slots in set.mm; more may be added
   later</td>
-</tr>
-
-<tr>
-  <td>df-xps and all theorems mentioning the binary product on a structure
-  (syntax Xs.)</td>
-  <td><i>none</i></td>
-  <td>The set.mm definition depends on df-imas ( "s )
-  and df-prds ( Xs_ ). By its nature the definition of the binary
-  product considers every structure slot (including most notably
-  order which presumably will need to be handled differently
-  in iset.mm).</td>
 </tr>
 
 <tr>
@@ -11111,6 +11516,12 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>qusaddflem</td>
   <td>~ qusaddflemg</td>
+</tr>
+
+<tr>
+  <td>xpsrnbas</td>
+  <td><i>none</i></td>
+  <td>presumably provable</td>
 </tr>
 
 <tr>
@@ -11238,36 +11649,15 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>prdsplusgcl</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses prdsplusgval , prdsbasmpt ,
-  and prdsbasprj</td>
-</tr>
-
-<tr>
-  <td>prdsidlem</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses prdsplusgval , prdsbasmpt , prdsbasprj ,
-  and prdsbasfn</td>
-</tr>
-
-<tr>
-  <td>prdsmndd , prds0g , pwsmnd , pws0g</td>
-  <td><i>none</i></td>
-  <td>the set.mm proofs use structure product theorems not present
-  in iset.mm</td>
-</tr>
-
-<tr>
-  <td>imasmnd2 , imasmnd , imasmndf1</td>
-  <td><i>none</i></td>
-  <td>relies on image structure theorems not present in iset.mm</td>
-</tr>
-
-<tr>
   <td>xpsmnd</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses prdsmndd</td>
+  <td>the set.mm proof uses xpsrnbas</td>
+</tr>
+
+<tr>
+  <td>xpsmnd0</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses xpsbas and xpsadd</td>
 </tr>
 
 <tr>
@@ -11396,21 +11786,9 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>prdsinvlem , prdsgrpd , prdsinvgd</td>
-  <td><i>none</i></td>
-  <td>depend on structure product theorems we don't have</td>
-</tr>
-
-<tr>
-  <td>pwsgrp , pwsinvg , pwssub</td>
-  <td><i>none</i></td>
-  <td>depend on structure power theorems we don't have</td>
-</tr>
-
-<tr>
   <td>xpsgrp</td>
   <td><i>none</i></td>
-  <td>the set.mm proof depends on prdsgrpd</td>
+  <td>the set.mm proof depends on xpsrnbas</td>
 </tr>
 
 <tr>
@@ -11439,7 +11817,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>pwsmulg</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses pwspjmhm and pwsmnd</td>
+  <td>the set.mm proof uses pwspjmhm</td>
 </tr>
 
 <tr>
@@ -12406,16 +12784,14 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>prdsvscacl</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses prdsvscaval , prdsbasprj ,
-  and prdsbasmpt</td>
+  <td>the set.mm proof uses prdsvscaval</td>
 </tr>
 
 <tr>
   <td>prdslmodd</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses prdssca , prdsgrpd , prdsvscacl ,
-  prdsplusgfval , prdsvscafval , prdsvscaval , prdsplusgval ,
-  and prdsbasfn</td>
+  <td>the set.mm proof uses prdssca , prdsvscacl ,
+  prdsvscafval , and prdsvscaval</td>
 </tr>
 
 <tr>
@@ -12941,6 +13317,21 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>df-mvr</td>
+  <td><i>none</i></td>
+  <td>it appears that the set.mm definition might work (most theorems
+  will need ` i e. Fin ` conditions but that's how we expect to use
+  this definition)</td>
+</tr>
+
+<tr>
+  <td>df-mpl</td>
+  <td>~ df-mplcoe</td>
+  <td>our definition does not assume decidable equality for
+  coefficients</td>
+</tr>
+
+<tr>
   <td>psrvalstr</td>
   <td>~ psrvalstrd</td>
   <td>adds set existence conditions</td>
@@ -12986,8 +13377,9 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>psrbagcon</td>
   <td><i>none</i></td>
-  <td>The set.mm proof uses ssfi . We might have enough
-  decidability (for example via ~ elnndc ) to overcome this.</td>
+  <td>The set.mm proof uses ssfi . Perhaps a similar proof
+  would work but using ~ ssfidc (the decidability might be
+  somewhat similar to the proof of ~ psr1clfi ).</td>
 </tr>
 
 <tr>
@@ -13029,23 +13421,33 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>psrmulr</td>
+  <td id="missing-psrmulr">psrmulr</td>
   <td><i>none</i></td>
-  <td>presumably provable with added set existence conditions
-  (analogous to ~ psrplusgg )</td>
+  <td>although this theorem itself just extracts the multiplication
+  slot from the result of ~ psrval (analogous to ~ psrplusgg ),
+  the fundamental issue with ` mPwSer ` multiplication is that
+  the set.mm definition of that slot uses ` gsum ` on something
+  which is not a range of consecutive integers (as required by
+  ~ df-igsum )</td>
 </tr>
 
 <tr>
   <td>psrmulfval</td>
   <td><i>none</i></td>
-  <td>presumably provable once we have psrmulr ( ` F e. B ` should
-  take care of the set existence, as in ~ psradd )</td>
+  <td>this theorem in particular is a simple consequence of
+  psrmulr ( ` F e. B ` should take care of the set existence, as
+  in ~ psradd ), but see the <a href="#missing-psrmulr">psrmulr
+  entry</a> for thoughts on what ` mPwSer ` multiplication should
+  expand to</td>
 </tr>
 
 <tr>
   <td>psrmulval</td>
   <td><i>none</i></td>
-  <td>presumably provable once we have psrmulfval</td>
+  <td>this theorem in particular is a simple consequence of
+  psrmulfval , but see the <a href="#missing-psrmulr">psrmulr
+  entry</a> for thoughts on what ` mPwSer ` multiplication should
+  expand to</td>
 </tr>
 
 <tr>
@@ -13065,6 +13467,227 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>presumably provable with added set existence conditions
   (analogous to ~ psrplusgg )</td>
+</tr>
+
+<tr>
+  <td>psrvsca</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses psrvscafval</td>
+</tr>
+
+<tr>
+  <td>psrvscaval</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses psrvsca</td>
+</tr>
+
+<tr>
+  <td>psrvscacl</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses psrvsca</td>
+</tr>
+
+<tr>
+  <td>psrlmod</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses psrvsca</td>
+</tr>
+
+<tr>
+  <td>psr1cl</td>
+  <td>~ psr1clfi</td>
+  <td>requires a finite index set</td>
+</tr>
+
+<tr>
+  <td>psrlidm</td>
+  <td><i>none</i></td>
+  <td>this is where we really would need a functioning definition
+  of ` mPwSer ` multiplication (as discussed at the <a
+  href="#missing-psrmulr">psrmulr entry</a>), in particular how to
+  handle the parts of the set.mm proof which use gsumres and gsumsn .
+  The set.mm proof also uses psrbagcon .  There are some ` if `
+  expressions in the set.mm proof but it isn't clear they are
+  being used in a way that needs decidability (if they do,
+  see the similar portion of the ~ psr1clfi proof).</td>
+</tr>
+
+<tr>
+  <td>psrridm</td>
+  <td><i>none</i></td>
+  <td>presumably the issues are similar to psrlidm</td>
+</tr>
+
+<tr>
+  <td>psrass1</td>
+  <td><i>none</i></td>
+  <td>depends on a variety of ` mPwSer ` and ` gsum ` theorems</td>
+</tr>
+
+<tr>
+  <td>psrdi , psrdir</td>
+  <td><i>none</i></td>
+  <td>depends on a variety of ` mPwSer ` and ` gsum ` theorems</td>
+</tr>
+
+<tr>
+  <td>psrass23l</td>
+  <td><i>none</i></td>
+  <td>depends on a variety of ` mPwSer ` and ` gsum ` theorems,
+  as well as scalar field theorems like psrvscaval</td>
+</tr>
+
+<tr>
+  <td>psrcom</td>
+  <td><i>none</i></td>
+  <td>depends on a variety of ` mPwSer ` and ` gsum ` theorems</td>
+</tr>
+
+<tr>
+  <td>psrass23</td>
+  <td><i>none</i></td>
+  <td>depends on a variety of ` mPwSer ` and ` gsum ` theorems,
+  as well as scalar field theorems like psrvscaval</td>
+</tr>
+
+<tr>
+  <td>psrring</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses psrmulcl , psrass1 , psrdi , psrdir ,
+  psrlidm , and psrridm</td>
+</tr>
+
+<tr>
+  <td>mplval</td>
+  <td>~ mplvalcoe</td>
+  <td>adds set existence conditions and changes the expansion
+  of the value to reflect ~ df-mplcoe</td>
+</tr>
+
+<tr>
+  <td>mplbas</td>
+  <td>~ mplbascoe</td>
+  <td>adds set existence conditions and changes the expansion
+  of the value to reflect ~ df-mplcoe</td>
+</tr>
+
+<tr>
+  <td>mplelbas</td>
+  <td>~ mplelbascoe</td>
+  <td>adds set existence conditions and changes the expansion
+  of the value to reflect ~ df-mplcoe</td>
+</tr>
+
+<tr>
+  <td>mvrcl , mvrf2</td>
+  <td><i>none</i></td>
+  <td>may be feasible (with ` I e. W ` changed to ` I e. Fin ` )
+  if we define mVar</td>
+</tr>
+
+<tr>
+  <td>mplelsfi</td>
+  <td><i>none</i></td>
+  <td>it may be possible to come up with a replacement which takes
+  into account the way ~ df-mplcoe works</td>
+</tr>
+
+<tr>
+  <td>mplval2</td>
+  <td>~ mplval2g</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>mplsubglem , mpllsslem , mplsubglem2</td>
+  <td><i>none</i></td>
+</tr>
+
+<tr>
+  <td>mplsubg</td>
+  <td>~ mplsubgfi</td>
+  <td>requires a finite index set</td>
+</tr>
+
+<tr>
+  <td>mpllss</td>
+  <td><i>none</i></td>
+  <td>Add a minimum, would require development of scalar multiplication
+  for power series. But it does not seem to require multiplication
+  of two polynomials.</td>
+</tr>
+
+<tr>
+  <td>mplsubrglem , mplsubrg</td>
+  <td><i>none</i></td>
+  <td>would require development of multiplication of two polynomials</td>
+</tr>
+
+<tr>
+  <td>mpl0</td>
+  <td>~ mpl0fi</td>
+  <td>requires a finite index set</td>
+</tr>
+
+<tr>
+  <td>mplplusg</td>
+  <td>~ mplplusgg</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>mplmulr</td>
+  <td><i>none</i></td>
+  <td>should be provable (with set existence conditions) in a manner
+  similar to ~ mplplusgg</td>
+</tr>
+
+<tr>
+  <td>mplneg</td>
+  <td>~ mplnegfi</td>
+  <td>requires a finite index set</td>
+</tr>
+
+<tr>
+  <td>mplmul</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses psrmulfval and mplmulr</td>
+</tr>
+
+<tr>
+  <td>mpl1</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses mplsubrg and psr1</td>
+</tr>
+
+<tr>
+  <td>mplvsca</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses mplvsca2 and psrvsca</td>
+</tr>
+
+<tr>
+  <td>mplvscaval</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses mplvsca</td>
+</tr>
+
+<tr>
+  <td>mplgrp</td>
+  <td>~ mplgrpfi</td>
+  <td>requires a finite index set</td>
+</tr>
+
+<tr>
+  <td>mpllmod</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses psrlmod and mpllss</td>
+</tr>
+
+<tr>
+  <td>mplring</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses mplsubrg</td>
 </tr>
 
 <TR>
@@ -14337,7 +14960,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>dvcmulf</td>
   <td><i>none</i></td>
-  <td>the set.mm proof depends on dvres , dvres3 , and caofid2</td>
+  <td>the set.mm proof depends on dvres and dvres3</td>
 </tr>
 
 <tr>
@@ -15423,18 +16046,44 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>lgsqrlem1</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses evl1vard , evl1expd ,
+  evl1scad , ply1scl1 , and evl1subd</td>
+</tr>
+
+<tr>
+  <td>lgsqrlem2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses evl1rhm , ply1ring , and vr1cl</td>
+</tr>
+
+<tr>
+  <td>lgsqrlem3</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses evl1rhm , ply1ring , vr1cl</td>
+</tr>
+
+<tr>
   <td>lgsqrlem4</td>
   <td><i>none</i></td>
-  <td>The use of sbth can apparently be replaced
+  <td>The set.mm proof uses ply1ring , vr1cl , ply1scl1 , deg1scl ,
+  deg1pw , deg1sub , deg1nn0clb , and fta1g .
+  The use of sbth can apparently be replaced
   by ~ fisbth as this proof already shows that both
   sets are finite.</td>
 </tr>
 
 <tr>
+  <td>lgsqrlem5</td>
+  <td><i>none</i></td>
+  <td>should be feasible once we have lgsqrlem4</td>
+</tr>
+
+<tr>
   <td>lgsqr</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses df-ply1 , df-deg1 ,
-  and possibly other things not yet defined in iset.mm</td>
+  <td>should be feasible once we have lgsqrlem5</td>
 </tr>
 
 <tr>
@@ -15466,6 +16115,240 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td id="missing-2sq">2sq</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses 2sqlem11</td>
+</tr>
+
+<tr>
+  <td>vtxval</td>
+  <td>~ vtxvalg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>iedgval</td>
+  <td>~ iedgvalg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>funvtxdmge2val</td>
+  <td>~ funvtxdm2domval</td>
+  <td>changes how we specify that a set has at least two elements
+  and adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>funiedgdmge2val</td>
+  <td>~ funiedgdm2domval</td>
+  <td>changes how we specify that a set has at least two elements
+  and adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>funvtxdm2val</td>
+  <td>~ funvtxdm2vald</td>
+  <td>adds set existence condition for ` G `</td>
+</tr>
+
+<tr>
+  <td>funiedgdm2val</td>
+  <td>~ funiedgdm2vald</td>
+  <td>adds set existence condition for ` G `</td>
+</tr>
+
+<tr>
+  <td>funvtxval0</td>
+  <td>~ funvtxval0d</td>
+  <td>adds set existence condition for ` G `</td>
+</tr>
+
+<tr>
+  <td>basvtxval</td>
+  <td>~ basvtxval2dom</td>
+  <td>changes how we specify that a set has at least two elements</td>
+</tr>
+
+<tr>
+  <td>edgfiedgval</td>
+  <td>~ edgfiedgval2dom</td>
+  <td>changes how we specify that a set has at least two elements</td>
+</tr>
+
+<tr>
+  <td>funvtxval</td>
+  <td>~ funvtxvalg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>funiedgval</td>
+  <td>~ funiedgvalg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>structvtxvallem</td>
+  <td>~ struct2slots2dom</td>
+  <td>changes how we specify that a set has at least two elements</td>
+</tr>
+
+<tr>
+  <td>structgrssvtxlem</td>
+  <td>~ structgr2slots2dom</td>
+  <td>changes how we specify that a set has at least two elements</td>
+</tr>
+
+<tr>
+  <td>struct2grstr</td>
+  <td>~ struct2grstrg</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>graop , grastruct</td>
+  <td><i>none</i></td>
+  <td>presumably could be proved (perhaps with a set existence condition
+  on ` G ` ), but unused in set.mm</td>
+</tr>
+
+<tr>
+  <td>grstructd</td>
+  <td>~ grstructd2dom</td>
+  <td>changes how we specify that a set has at least two elements</td>
+</tr>
+
+<tr>
+  <td>grstructeld</td>
+  <td>~ grstructeld2dom</td>
+  <td>changes how we specify that a set has at least two elements</td>
+</tr>
+
+<tr>
+  <td>setsvtx , setsiedg</td>
+  <td><i>none</i></td>
+  <td>presumably provable but the set.mm proof uses basprssdmsets</td>
+</tr>
+
+<tr>
+  <td>snstrvtxval</td>
+  <td><i>none</i></td>
+  <td>presumably provable but unused in set.mm</td>
+</tr>
+
+<tr>
+  <td>snstriedgval</td>
+  <td><i>none</i></td>
+  <td>presumably provable but unused in set.mm</td>
+</tr>
+
+<tr>
+  <td>vtxvalsnop</td>
+  <td><i>none</i></td>
+  <td>presumably provable but little used in set.mm</td>
+</tr>
+
+<tr>
+  <td>iedgvalsnop</td>
+  <td><i>none</i></td>
+  <td>presumably provable but little used in set.mm</td>
+</tr>
+
+<tr>
+  <td>vtxval3sn</td>
+  <td><i>none</i></td>
+  <td>presumably provable but unused in set.mm</td>
+</tr>
+
+<tr>
+  <td>iedgval3sn</td>
+  <td><i>none</i></td>
+  <td>presumably provable but unused in set.mm</td>
+</tr>
+
+<tr>
+  <td>edgval</td>
+  <td>~ edgvalg , ~ edgopval , ~ edgstruct</td>
+  <td>add conditions on ` G `</td>
+</tr>
+
+<tr>
+  <td>iedgedg</td>
+  <td>~ iedgedgg</td>
+  <td>adds set existence condition on ` G `</td>
+</tr>
+
+<tr>
+  <td>edgiedgb</td>
+  <td>~ edgiedgbg</td>
+  <td>adds set existence condition on ` G `</td>
+</tr>
+
+<tr>
+  <td>edg0iedg0</td>
+  <td>~ edg0iedg0g</td>
+  <td>adds set existence condition on ` G `</td>
+</tr>
+
+<tr>
+  <td>df-uhgr</td>
+  <td>~ df-uhgrm</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
+
+<tr>
+  <td>df-ushgr</td>
+  <td>~ df-ushgrm</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
+
+<tr>
+  <td>isuhgr</td>
+  <td>~ isuhgrm</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
+
+<tr>
+  <td>isushgr</td>
+  <td>~ isushgrm</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
+
+<tr>
+  <td>uhgrf</td>
+  <td>~ uhgrfm</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
+
+<tr>
+  <td>ushgrf</td>
+  <td>~ ushgrfm</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
+
+<tr>
+  <td>uhgrn0</td>
+  <td>~ uhgrm</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
+
+<tr>
+  <td>isuhgrop</td>
+  <td>~ isuhgropm</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
+
+<tr>
+  <td>uhgrstrrepe</td>
+  <td><i>none</i></td>
+  <td>would presumably be provable (with nonempty changed to
+  inhabited) but unused in set.mm</td>
+</tr>
+
+<tr>
+  <td>konigsberg</td>
+  <td><i>none</i></td>
+  <td>we don't have a complete list of what this proof depends on,
+  but here's a partial list of (direct or indirect) dependencies of the
+  set.mm proof: df-s7 , EulerPaths , and ccatalpha</td>
 </tr>
 
 <tr>
@@ -15930,6 +16813,14 @@ Amsterdam (1977) [QA9.B3953].</LI>
 Brad Inwood (ed.), Cambridge University Press (2003-2006),
 <A HREF="https://philpapers.org/rec/BOBSL">
 https://philpapers.org/rec/BOBSL</A>.
+</LI>
+
+<LI>
+<A NAME="Bollobas"></A> [Bollobas] B&eacute;la Bollob&aacute;s, <I>Modern
+Graph Theory</I>, Graduate Texts in Mathematics, Springer Science+Media New
+York (1998)
+[QA166.B663].
+</LI>
 
 <LI>
 <A NAME="BourbakiAlg1"></A> [BourbakiAlg1] Bourbaki, Nicolas,
@@ -15982,6 +16873,14 @@ Stanford Encyclopedia of Philosophy</I> (Summer 2015 Edition),
 Edward N. Zalta (ed.), <A
 HREF="https://plato.stanford.edu/archives/sum2015/entries/set-theory-constructive/">
 https://plato.stanford.edu/archives/sum2015/entries/set-theory-constructive/</A>.
+</LI>
+
+<LI>
+<A NAME="Diestel"></A> [Diestel] Diestel, Reinhard, <I>Graph Theory,
+5th Electronic Edition,</I> Springer-Verlag, Heidelberg (2016)
+[QA166.D51413].
+URL: <A HREF="http://diestel-graph-theory.com/index.html">
+http://diestel-graph-theory.com/index.html</A>
 </LI>
 
 <LI><A NAME="Eisenberg"></A> [Eisenberg] Eisenberg, Murray, <I>Axiomatic Theory of

@@ -11,6 +11,8 @@
 "19.42h" is used by "19.42v".
 "19.9hd" is used by "bj-sbimedh".
 "19.9hd" is used by "sbiedh".
+"2strstrg" is used by "2strstr1g".
+"2strstrg" is used by "grpstrg".
 "4syl" is used by "bcm1k".
 "4syl" is used by "climuni".
 "4syl" is used by "f1ocnvfvrneq".
@@ -119,6 +121,7 @@
 "basendx" is used by "2strstr1g".
 "basendx" is used by "2strstrg".
 "basendx" is used by "basendxltdsndx".
+"basendx" is used by "basendxltedgfndx".
 "basendx" is used by "basendxltplendx".
 "basendx" is used by "basendxltplusgndx".
 "basendx" is used by "basendxlttsetndx".
@@ -170,6 +173,8 @@
 "df-cnfld" is used by "mpocnfldmul".
 "df-div" is used by "divfnzn".
 "df-div" is used by "divvalap".
+"df-edgf" is used by "edgfid".
+"df-edgf" is used by "edgfndx".
 "df-ilim" is used by "dflim2".
 "df-inn" is used by "dfnn2".
 "df-iom" is used by "dfom3".
@@ -182,6 +187,8 @@
 "df-pnf" is used by "pnfxr".
 "df-tru" is used by "tru".
 "dvelimALT" is used by "hbsb4".
+"edgfndx" is used by "basendxltedgfndx".
+"edgfndx" is used by "edgfndxnn".
 "elirr" is used by "elirrv".
 "elirr" is used by "fiunsnnn".
 "elirr" is used by "nndcel".
@@ -211,6 +218,8 @@
 "fprodsplitdc" is used by "fprodm1".
 "fprodsplitdc" is used by "fprodsplit".
 "fprodsplitdc" is used by "fprodunsn".
+"funop" is used by "funopdmsn".
+"funopsn" is used by "funop".
 "hbs1" is used by "eu1".
 "hbs1" is used by "hbab1".
 "hbs1" is used by "mopick".
@@ -351,6 +360,7 @@ New usage of "19.41h" is discouraged (5 uses).
 New usage of "19.42h" is discouraged (1 uses).
 New usage of "19.9hd" is discouraged (2 uses).
 New usage of "2logb9irrALT" is discouraged (0 uses).
+New usage of "2strstrg" is discouraged (2 uses).
 New usage of "4syl" is discouraged (23 uses).
 New usage of "a1ii" is discouraged (0 uses).
 New usage of "a9evsep" is discouraged (1 uses).
@@ -422,7 +432,7 @@ New usage of "axpre-suploc" is discouraged (0 uses).
 New usage of "axprecex" is discouraged (2 uses).
 New usage of "axresscn" is discouraged (4 uses).
 New usage of "axrnegex" is discouraged (0 uses).
-New usage of "basendx" is discouraged (19 uses).
+New usage of "basendx" is discouraged (20 uses).
 New usage of "baseval" is discouraged (0 uses).
 New usage of "bdcnulALT" is discouraged (0 uses).
 New usage of "bdnthALT" is discouraged (0 uses).
@@ -450,6 +460,7 @@ New usage of "dcnnOLD" is discouraged (0 uses).
 New usage of "demoivreALT" is discouraged (0 uses).
 New usage of "df-cnfld" is discouraged (8 uses).
 New usage of "df-div" is discouraged (2 uses).
+New usage of "df-edgf" is discouraged (2 uses).
 New usage of "df-ilim" is discouraged (1 uses).
 New usage of "df-inn" is discouraged (1 uses).
 New usage of "df-iom" is discouraged (1 uses).
@@ -463,12 +474,15 @@ New usage of "difidALT" is discouraged (0 uses).
 New usage of "djulclALT" is discouraged (0 uses).
 New usage of "djurclALT" is discouraged (0 uses).
 New usage of "dvelimALT" is discouraged (1 uses).
+New usage of "edgfndx" is discouraged (2 uses).
 New usage of "elirr" is discouraged (16 uses).
 New usage of "equsalh" is discouraged (5 uses).
 New usage of "eu3h" is discouraged (3 uses).
 New usage of "exmidfodomrlemrALT" is discouraged (0 uses).
 New usage of "fnexALT" is discouraged (0 uses).
 New usage of "fprodsplitdc" is discouraged (5 uses).
+New usage of "funop" is discouraged (1 uses).
+New usage of "funopsn" is discouraged (1 uses).
 New usage of "hbs1" is discouraged (5 uses).
 New usage of "homndx" is discouraged (1 uses).
 New usage of "idALT" is discouraged (0 uses).
