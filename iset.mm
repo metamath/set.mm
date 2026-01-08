@@ -118807,6 +118807,21 @@ $)
     EABRSVQVDWFWAJVCVDVGVKUNZEECDRSTUOUPVQVCVTBJWGEABUQSVQVDWCDJWHECDUQSTVAURAC
     BDKUSUT $.
 
+  $( An ~ opth -like theorem for recovering the two halves of a concatenated
+     word.  (Contributed by Mario Carneiro, 1-Oct-2015.) $)
+  ccatopth2 $p |- ( ( ( A e. Word X /\ B e. Word X ) /\
+    ( C e. Word X /\ D e. Word X ) /\ ( # ` B ) = ( # ` D ) ) ->
+      ( ( A ++ B ) = ( C ++ D ) <-> ( A = C /\ B = D ) ) ) $=
+    ( wcel wa chash cfv wceq w3a cconcat co caddc ccatlen cn0 lencl syl nn0cnd
+    wi cword fveq2 3ad2ant1 simp3 oveq2d eqtrd 3ad2ant2 eqeq12d simp1l addcan2d
+    simp2l simp2r bitrd imbitrid ccatopth biimpd 3expia 3adant3 oveq12 impbid1
+    com23 mpdd ) AEUAZFZBVCFZGZCVCFZDVCFZGZBHIZDHIZJZKZABLMZCDLMZJZACJBDJGZVMVP
+    AHIZCHIZJZVQVPVNHIZVOHIZJZVMVTVNVOHUBVMWCVRVKNMZVSVKNMZJVTVMWAWDWBWEVMWAVRV
+    JNMZWDVFVIWAWFJVLEEABOUCVMVJVKVRNVFVIVLUDUEUFVIVFWBWEJVLEECDOUGUHVMVRVSVKVM
+    VRVMVDVRPFVDVEVIVLUIEAQRSVMVSVMVGVSPFVFVGVHVLUKECQRSVMVKVMVHVKPFVFVGVHVLULE
+    DQRSUJUMUNVFVIVPVTVQTTVLVFVIGVTVPVQVFVIVTVPVQTVFVIVTKVPVQABCDEUOUPUQVAURVBA
+    CBDLUSUT $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
