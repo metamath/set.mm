@@ -118822,6 +118822,14 @@ $)
     DQRSUJUMUNVFVIVPVTVQTTVLVFVIGVTVPVQVFVIVTVPVQTVFVIVTKVPVQABCDEUOUPUQVAURVBA
     CBDLUSUT $.
 
+  $( Concatenation of words is left-cancellative.  (Contributed by Mario
+     Carneiro, 2-Oct-2015.) $)
+  ccatlcan $p |- ( ( A e. Word X /\ B e. Word X /\
+    C e. Word X ) -> ( ( C ++ A ) = ( C ++ B ) <-> A = B ) ) $=
+    ( cword wcel w3a cconcat co wceq wa wb chash cfv eqid ccatopth mp3an3 3coml
+    3impdi biantrur bitr4di ) ADEZFZBUBFZCUBFZGCAHICBHIJZCCJZABJZKZUHUEUCUDUFUI
+    LZUEUCUDUJUEUCKUEUDKCMNZUKJUJUKOCACBDPQSRUGUHCOTUA $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
