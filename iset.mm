@@ -118830,6 +118830,14 @@ $)
     3impdi biantrur bitr4di ) ADEZFZBUBFZCUBFZGCAHICBHIJZCCJZABJZKZUHUEUCUDUFUI
     LZUEUCUDUJUEUCKUEUDKCMNZUKJUJUKOCACBDPQSRUGUHCOTUA $.
 
+  $( Concatenation of words is right-cancellative.  (Contributed by Mario
+     Carneiro, 2-Oct-2015.) $)
+  ccatrcan $p |- ( ( A e. Word X /\ B e. Word X /\
+    C e. Word X ) -> ( ( A ++ C ) = ( B ++ C ) <-> A = B ) ) $=
+    ( cword wcel w3a cconcat co wceq wa chash cfv eqid ccatopth2 mp3an3 3impdir
+    wb biantru bitr4di ) ADEZFZBUAFZCUAFZGACHIBCHIJZABJZCCJZKZUFUBUDUCUEUHRZUBU
+    DKUCUDKCLMZUJJUIUJNACBCDOPQUGUFCNST $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
