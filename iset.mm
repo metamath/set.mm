@@ -118772,6 +118772,25 @@ $)
     SUPVTSVPTUQZWKVTWLSVRTUQZVNVOWMVSVNVQURDWMWJVQUSMOVSVNWLWMUTVOVPVRSTVAPVBVO
     VNWLWKUTZVSVOAVCDWNBAVEAVDMVFVGBAVHVIRVJVKVL $.
 
+  ${
+    $d U s $.  $d V s $.  $d W s $.
+    $( There exists a symbol such that its concatenation after the prefix
+       obtained by deleting the last symbol of a nonempty word results in the
+       word itself.  (Contributed by AV, 5-Oct-2018.)  (Revised by AV,
+       9-May-2020.) $)
+    ccats1pfxeqrex $p |- ( ( W e. Word V /\ U e. Word V
+                              /\ ( # ` U ) = ( ( # ` W ) + 1 ) )
+                            -> ( W = ( U prefix ( # ` W ) )
+                                 -> E. s e. V U = ( W ++ <" s "> ) ) ) $=
+      ( cword wcel chash cfv c1 caddc co w3a cs1 cconcat cc0 clt wbr wb syl2anc
+      wceq clsw cpfx cv wrex c0 wne simp2 cn0 lencl 3ad2ant1 nn0p1nn nngt0 3syl
+      cn breq2 3ad2ant3 mpbird cfn wrdfin fihashneq0 syl lswcl ccats1pfxeq s1eq
+      biimpa oveq2d rspceeqv syl6an ) CBEZFZAVIFZAGHZCGHZIJKZTZLZAUAHZBFZCAVMUB
+      KTACVQMZNKZTACDUCZMZNKZTDBUDVPVKAUEUFZVRVJVKVOUGZVPVKOVLPQZWDWEVPWFOVNPQZ
+      VPVMUHFZVNUNFWGVJVKWHVOBCUIUJVMUKVNULUMVOVJWFWGRVKVLVNOPUOUPUQVKWFWDVKAUR
+      FWFWDRBAUSAUTVAVESBAVBSABCVCDVQBWCVTAWAVQTWBVSCNWAVQVDVFVGVH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
