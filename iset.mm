@@ -118722,6 +118722,15 @@ $)
     GRMJNJZCUGLJZCUFUIUGUHEZUJUKOUFULUIUFUGSEULBCPUGQUATBCAUGUBUCUFUKCOUIBCUDTU
     E $.
 
+  $( The length of the concatenation of the prefix of a word and the rest of
+     the word is the length of the word.  (Contributed by AV, 21-Oct-2018.)
+     (Revised by AV, 9-May-2020.) $)
+  lenpfxcctswrd $p |- ( ( W e. Word V /\ M e. ( 0 ... ( # ` W ) ) )
+            -> ( # ` ( ( W prefix M )
+                       ++ ( W substr <. M , ( # ` W ) >. ) ) ) = ( # ` W ) ) $=
+    ( cword wcel cc0 chash cfv cfz co wa cpfx csubstr cconcat pfxcctswrd fveq2d
+    cop ) CBDEAFCGHZIJEKCALJCARQMJNJCGABCOP $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
