@@ -118731,6 +118731,20 @@ $)
     ( cword wcel cc0 chash cfv cfz co wa cpfx csubstr cconcat pfxcctswrd fveq2d
     cop ) CBDEAFCGHZIJEKCALJCARQMJNJCGABCOP $.
 
+  $( The length of the concatenation of the rest of a word and the prefix of
+     the word is the length of the word.  (Contributed by Alexander van der
+     Vekens, 1-Apr-2018.)  (Revised by AV, 9-May-2020.) $)
+  lenrevpfxcctswrd $p |- ( ( W e. Word V /\ M e. ( 0 ... ( # ` W ) ) )
+                            -> ( # ` ( ( W substr <. M , ( # ` W ) >. )
+                                     ++ ( W prefix M ) ) ) = ( # ` W ) ) $=
+    ( cword cc0 chash cfv cfz co wa cop csubstr caddc cz adantl syl2anc eqeltrd
+    wcel cn0 nn0cnd cpfx cconcat wceq simpl elfzelz lencl nn0zd swrdclg syl3anc
+    adantr elfznn0 pfxclg ccatlen cmin swrdrlen pfxlen addcomd addlenpfx 3eqtrd
+    fznn0sub ) CBDZRZAECFGZHIRZJZCAVCKLIZCAUAIZUBIFGZVFFGZVGFGZMIZVJVIMIVCVEVFV
+    ARZVGVARZVHVKUCVEVBANRZVCNRZVLVBVDUDZVDVNVBAEVCUEOVBVOVDVBVCBCUFUGUJBCAVCUH
+    UIVEVBASRZVMVPVDVQVBAVCUKOZBCAULPBBVFVGUMPVEVIVJVEVIVEVIVCAUNIZSABCUOVDVSSR
+    VBAEVCUTOQTVEVJVEVJASBCAUPVRQTUQABCURUS $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
