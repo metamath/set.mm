@@ -118755,6 +118755,23 @@ $)
     PUTVAUSNUPVAUTABPTUAUNUOURUBUQUCRZDZVBBUDUPQVCDZVDUNBUEDUOVEABUFBUGUHQUQUJU
     KURABUIULUM $.
 
+  $( The last symbol of a word concatenated with the word with the last symbol
+     removed results in the word itself.  (Contributed by Alexander van der
+     Vekens, 24-Oct-2018.)  (Revised by AV, 9-May-2020.) $)
+  ccats1pfxeq $p |- ( ( W e. Word V /\ U e. Word V
+                         /\ ( # ` U ) = ( ( # ` W ) + 1 ) )
+                       -> ( W = ( U prefix ( # ` W ) )
+                            -> U = ( W ++ <" ( lastS ` U ) "> ) ) ) $=
+    ( wcel chash cfv c1 co wceq cpfx cconcat oveq1 syl eqcomd 3ad2ant1 3ad2ant3
+    cmin eqtrd cc0 clt cword caddc w3a cs1 wa adantl lencl nn0cnd pncan1 oveq2d
+    clsw cc oveq1d c0 wne simp2 wbr cn0 nn0p1gt0 wb breq2 mpbird cfn fihashneq0
+    wrdfin 3ad2ant2 mpbid pfxlswccat syl2anc adantr eqtr2d ex ) CBUAZDZAVMDZAEF
+    ZCEFZGUBHZIZUCZCAVQJHZIZACAUKFUDZKHZIVTWBUEWDWAWCKHZAWBWDWEIVTCWAWCKLUFVTWE
+    AIWBVTWEAVPGQHZJHZWCKHZAVTWAWGWCKVTVQWFAJVTVQVRGQHZWFVNVOVQWIIVSVNWIVQVNVQU
+    LDWIVQIVNVQBCUGZUHVQUIMNOVSVNWIWFIVOVSWFWIVPVRGQLNPRUJUMVTVOAUNUOZWHAIVNVOV
+    SUPVTSVPTUQZWKVTWLSVRTUQZVNVOWMVSVNVQURDWMWJVQUSMOVSVNWLWMUTVOVPVRSTVAPVBVO
+    VNWLWKUTZVSVOAVCDWNBAVEAVDMVFVGBAVHVIRVJVKVL $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
