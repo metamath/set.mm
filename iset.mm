@@ -193453,6 +193453,19 @@ $)
         WFGNURUSUTVAVBOVCAVMWBVRWDVLWERAVMWEUEWBAVLWERVDCDVEVFAVOSVQWCAVPGQUSUT
         VHVBABHUBVKVSVIPSHVLBVPVPUQVLUQVJVGVB $.
     $}
+
+    $( The union of two pseudographs (with the same vertex set):  If
+       ` <. V , E >. ` and ` <. V , F >. ` are pseudographs, then
+       ` <. V , E u. F >. ` is a pseudograph (the vertex set stays the same,
+       but the edges from both graphs are kept).  (Contributed by Mario
+       Carneiro, 12-Mar-2015.)  (Revised by AV, 12-Oct-2020.)  (Revised by AV,
+       24-Oct-2021.) $)
+    upgrunop $p |- ( ph -> <. V , ( E u. F ) >. e. UPGraph ) $=
+      ( cvv wcel cfv cupgr syl eqeltrid syl2anc cun cop cvtx vtxex ciedg iedgex
+      unexg opexg wceq opvtxfv opiedgfv upgrun ) AFBCUAZUBZBCDEFNGHIJKLMAFNOZUM
+      NOZUNNOAFDUCPZNKADQOZUQNOGDQUDRSZABNOCNOUPABDUEPZNIAURUTNOGDQUFRSACEUEPZN
+      JAEQOVANOHEQUFRSBCNNUGTZFUMNNUHTAUOUPUNUCPFUIUSVBUMFNNUJTAUOUPUNUEPUMUIUS
+      VBUMFNNUKTUL $.
   $}
 
 
