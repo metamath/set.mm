@@ -105624,6 +105624,16 @@ $)
     UTUQAOFURABUAPUQBOFZCOFUTOFURABUBZCUCBCUDQUQVAURVBPUQABRSURABUEPUSUFCRSZBUT
     RSZURVCUQCUGUHUQBTFCTFVCVDUIURABUJCULBCUKQUMUNAUTBUOUP $.
 
+  ${
+    $d A x $.  $d B x $.
+    $( A half-open integer range and the singleton of its upper bound are
+       disjoint.  (Contributed by AV, 7-Mar-2021.) $)
+    fzodisjsn $p |- ( ( A ..^ B ) i^i { B } ) = (/) $=
+      ( vx cfzo co csn c0 wceq cv wcel wn wi disj1 elfzoelz zred elfzolt2 ltned
+      cin neneqd elsni nsyl mpgbir ) ABDEZBFZRGHCIZUCJZUEUDJZKLCCUCUDMUFUEBHUGU
+      FUEBUFUEBUFUEUEABNOUEABPQSUEBTUAUB $.
+  $}
+
   $( An integer is strictly greater than zero iff it is a member of ` NN ` .
      (Contributed by Mario Carneiro, 29-Sep-2015.) $)
   lbfzo0 $p |- ( 0 e. ( 0 ..^ A ) <-> A e. NN ) $=
