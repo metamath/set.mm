@@ -193426,6 +193426,35 @@ $)
       NEFQUESZTADEUPKVBTLAUQURUOUIOUNRHVAUNEFQUJSUK $.
   $}
 
+  ${
+    upgrun.g $e |- ( ph -> G e. UPGraph ) $.
+    upgrun.h $e |- ( ph -> H e. UPGraph ) $.
+    upgrun.e $e |- E = ( iEdg ` G ) $.
+    upgrun.f $e |- F = ( iEdg ` H ) $.
+    upgrun.vg $e |- V = ( Vtx ` G ) $.
+    upgrun.vh $e |- ( ph -> ( Vtx ` H ) = V ) $.
+    upgrun.i $e |- ( ph -> ( dom E i^i dom F ) = (/) ) $.
+    ${
+      $d x E $.  $d x F $.  $d x G $.  $d x H $.  $d x U $.  $d x V $.
+      $d x ph $.
+      upgrun.u $e |- ( ph -> U e. W ) $.
+      upgrun.v $e |- ( ph -> ( Vtx ` U ) = V ) $.
+      upgrun.un $e |- ( ph -> ( iEdg ` U ) = ( E u. F ) ) $.
+      $( The union ` U ` of two pseudographs ` G ` and ` H ` with the same
+         vertex set ` V ` is a pseudograph with the vertex ` V ` and the union
+         ` ( E u. F ) ` of the (indexed) edges.  (Contributed by AV,
+         12-Oct-2020.)  (Revised by AV, 24-Oct-2021.) $)
+      upgrun $p |- ( ph -> U e. UPGraph ) $=
+        ( vx wf cupgr wcel ciedg cfv cdm cv c1o cen wbr c2o wo cvtx cpw upgrfen
+        crab cun eqid eqcomd pweqd rabeqdv feq3d mpbird fun2d dmeqd dmun eqtrdi
+        syl feq123d wb isupgren ) ABUAUBZBUCUDZUEZSUFZUGUHUIVNUJUHUIUKZSBULUDZU
+        MZUOZVLTZAVSCUEZDUEZUPZVOSGUMZUOZCDUPZTAVTWAWDCDAEUAUBVTWDCTISCEGMKUNVG
+        AWAWDDTWAVOSFULUDZUMZUOZDTZAFUAUBWIJSDFWFWFUQLUNVGAWDWHDWAAVOSWCWGAGWFA
+        WFGNURUSUTVAVBOVCAVMWBVRWDVLWERAVMWEUEWBAVLWERVDCDVEVFAVOSVQWCAVPGQUSUT
+        VHVBABHUBVKVSVIPSHVLBVPVPUQVLUQVJVGVB $.
+    $}
+  $}
+
 
 $(
 ###############################################################################
