@@ -118707,6 +118707,23 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Subwords and concatenations
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( The concatenation of the prefix of a word and the rest of the word yields
+     the word itself.  (Contributed by AV, 21-Oct-2018.)  (Revised by AV,
+     9-May-2020.) $)
+  pfxcctswrd $p |- ( ( W e. Word V /\ M e. ( 0 ... ( # ` W ) ) )
+             -> ( ( W prefix M ) ++ ( W substr <. M , ( # ` W ) >. ) ) = W ) $=
+    ( cword wcel cc0 chash cfv cfz co wa cpfx csubstr cconcat wceq lencl nn0fz0
+    cop cn0 adantr sylib ccatpfx mpd3an3 pfxid eqtrd ) CBDEZAFCGHZIJZEZKCALJCAU
+    GRMJNJZCUGLJZCUFUIUGUHEZUJUKOUFULUIUFUGSEULBCPUGQUATBCAUGUBUCUFUKCOUIBCUDTU
+    E $.
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Elementary real and complex functions
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
