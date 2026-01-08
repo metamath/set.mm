@@ -105614,6 +105614,16 @@ $)
       QUNUOULUKUM $.
   $}
 
+  $( A half-open integer range as union of two half-open integer ranges.
+     (Contributed by AV, 23-Apr-2022.) $)
+  fzoun $p |- ( ( B e. ( ZZ>= ` A ) /\ C e. NN0 )
+           -> ( A ..^ ( B + C ) ) = ( ( A ..^ B ) u. ( B ..^ ( B + C ) ) ) ) $=
+    ( cuz cfv wcel cn0 wa caddc co cfz cfzo cun wceq cz adantr syl2an cle wbr
+    cr eluzel2 eluzelz nn0z zaddcl eluzle cc0 nn0ge0 adantl wb eluzelre addge01
+    nn0re mpbid elfzd fzosplit syl ) BADEFZCGFZHZBABCIJZKJFAUTLJABLJBUTLJMNUSBA
+    UTUQAOFURABUAPUQBOFZCOFUTOFURABUBZCUCBCUDQUQVAURVBPUQABRSURABUEPUSUFCRSZBUT
+    RSZURVCUQCUGUHUQBTFCTFVCVDUIURABUJCULBCUKQUMUNAUTBUOUP $.
+
   $( An integer is strictly greater than zero iff it is a member of ` NN ` .
      (Contributed by Mario Carneiro, 29-Sep-2015.) $)
   lbfzo0 $p |- ( 0 e. ( 0 ..^ A ) <-> A e. NN ) $=
