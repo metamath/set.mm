@@ -193974,6 +193974,30 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Loop-free graphs
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  For a hypergraph, the property to be "loop-free" is expressed by
+  ` I : dom I --> E ` with ` E = { x e. ~P V | 2o ~<_ x } ` and
+  ` I = ( iEdg `` G ) `. ` E ` is the set of edges which connect at least two
+  vertices.
+
+$)
+
+  $( Lemma for ~ umgrislfupgren and ~ usgrislfuspgr .  (Contributed by AV,
+     27-Jan-2021.) $)
+  umgrislfupgrenlem $p |- ( { x e. ~P V | ( x ~~ 1o \/ x ~~ 2o ) }
+                      i^i { x e. ~P V | 2o ~<_ x } )
+                        = { x e. ~P V | x ~~ 2o } $=
+    ( cv c1o cen wbr c2o wo cpw crab cdom wa inrab wn wi 1ndom2 domentr ex mtoi
+    cin orel1 syl impcom olc ensymb endom sylbir jca impbii rabbii eqtri ) ACZD
+    EFZULGEFZHZABIZJGULKFZAUPJTUOUQLZAUPJUNAUPJUOUQAUPMURUNAUPURUNUQUOUNUQUMNUO
+    UNOUQUMGDKFZPUQUMUSGULDQRSUMUNUAUBUCUNUOUQUNUMUDUNGULEFUQGULUEGULUFUGUHUIUJ
+    UK $.
+
+
+$(
 ###############################################################################
   GUIDES AND MISCELLANEA
 ###############################################################################
