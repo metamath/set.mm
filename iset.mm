@@ -24805,6 +24805,23 @@ $)
   $}
 
   ${
+    $d A x $.  $d A y $.  $d B y $.  $d ps x $.  $d ch y $.  $d C z $.
+    $d C w $.  $d D w $.  $d A z $.  $d Q z $.  $d B z $.  $d R z $.
+    $d rh z $.  $d A w $.  $d Q w $.  $d B w $.  $d R w $.  $d th w $.
+    vtocl4g.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    vtocl4g.2 $e |- ( y = B -> ( ps <-> ch ) ) $.
+    vtocl4g.3 $e |- ( z = C -> ( ch <-> rh ) ) $.
+    vtocl4g.4 $e |- ( w = D -> ( rh <-> th ) ) $.
+    vtocl4g.5 $e |- ph $.
+    $( Implicit substitution of 4 classes for 4 setvar variables.  (Contributed
+       by AV, 22-Jan-2019.) $)
+    vtocl4g $p |- ( ( ( A e. Q /\ B e. R )
+                     /\ ( C e. S /\ D e. T ) ) -> th ) $=
+      ( wcel wa wi cv wceq imbi2d vtocl2g impcom ) LPUCMQUCUDJNUCKOUCUDZDUKCUEU
+      KEUEUKDUEHILMPQHUFLUGCEUKTUHIUFMUGEDUKUAUHABCFGJKNORSUBUIUIUJ $.
+  $}
+
+  ${
     $d x A $.  $d x ph $.
     vtocleg.1 $e |- ( x = A -> ph ) $.
     $( Implicit substitution of a class for a setvar variable.  (Contributed by
