@@ -118870,6 +118870,34 @@ $)
     UCBUDUEVBVDTDVKVBVDABUFUGVKVDPUHLTPVDUIUJUKULABHVDUMUNVBVCVHVEOABUOUPUTVGBS
     VAABUQURUS $.
 
+  ${
+    $d x A $.  $d x B $.  $d x X $.
+    $( Express a word with an extra symbol as the union of the word and the new
+       value.  (Contributed by Mario Carneiro, 28-Feb-2016.) $)
+    cats1un $p |- ( ( A e. Word X /\ B e. X ) ->
+      ( A ++ <" B "> ) = ( A u. { <. ( # ` A ) , B >. } ) ) $=
+      ( vx wcel wa cc0 chash cfv cfzo csn cun wceq cn0 adantr cvv adantl fveq2d
+      co wf cword cs1 cconcat cop ccatws1cl syl c1 caddc ccatws1leng oveq2d cuz
+      wrdf lencl nn0uz eleqtrdi fzosplitsn eqtrd feq2d mpbid ffnd cin eqid fsng
+      c0 mpbiri sylan fzodisjsn a1i fun syl21anc cv wo elun ccats1val1g wne vex
+      3expa simpr fzonel nelne2 sylancl necomd fvunsng sylancr eqtr4d cdm elexd
+      wn fdmd eleq2d mtbiri fsnunfv syl3anc simpl cn s1leng 1nn eqeltrdi lbfzo0
+      s1cl sylibr ccatval3 nn0cnd addlidd 3eqtr2rd elsni eqeq12d syl5ibrcom imp
+      s1fv jaodan sylan2b eqfnfvd ) ACUAZEZBCEZFZDGAHIZJSZXRKZLZABUBZUCSZAXRBUD
+      KZLZXQYACYCXQGYCHIZJSZCYCTZYACYCTXQYCXNEYHCABUECYCULUFXQYGYACYCXQYGGXRUGU
+      HSZJSZYAXQYFYIGJCABCUIUJXOYJYAMZXPXOXRGUKIZEYKXOXRNYLCAUMZUNUOGXRUPUFOUQU
+      RUSUTXQYACBKZLZYEXQXSCATZXTYNYDTZXSXTVAVDMZYAYOYETXOYPXPCAULOZXOXRNEZXPYQ
+      YMYTXPFYQYDYDMYDVBXRBNCYDVCVEVFYRXQGXRVGVHXSXTCYNAYDVIVJUTDVKZYAEXQUUAXSE
+      ZUUAXTEZVLUUAYCIZUUAYEIZMZUUAXSXTVMXQUUBUUFUUCXQUUBFZUUDUUAAIZUUEXOXPUUBU
+      UDUUHMBUUACACVNVQUUGUUAPEXRUUAVOUUEUUHMDVPUUGUUAXRUUGUUBXRXSEZWHUUAXRVOXQ
+      UUBVRGXRVSZUUAXRXSVTWAWBAXRBUUAPWCWDWEXQUUCUUFXQUUFUUCXRYCIZXRYEIZMXQUULB
+      GXRUHSZYCIZUUKXQXRPEZXPXRAWFZEZWHUULBMXOUUOXPXOXRNYMWGOXOXPVRXQUUQUUIUUJX
+      QUUPXSXRXQXSCAYSWIWJWKAPCXRBWLWMXQUUNGYBIZBXQXOYBXNEZGGYBHIZJSEZUUNUURMXO
+      XPWNXPUUSXOBCWTQXPUVAXOXPUUTWOEUVAXPUUTUGWOBCWPWQWRUUTWSXAQCAYBGXBWMXPUUR
+      BMXOBCXJQUQXQUUMXRYCXQXRXQXRXOYTXPYMOXCXDRXEUUCUUDUUKUUEUULUUCUUAXRYCUUAX
+      RXFZRUUCUUAXRYEUVBRXGXHXIXKXLXM $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
