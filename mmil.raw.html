@@ -1011,6 +1011,33 @@ middle by ~ ssfiexmid ).</p>
 </tr>
 
 <tr>
+  <td>is of size one</td>
+  <td>` A ~~ 1o `</td>
+  <td>for equivalent formulations, see ~ en1 , ~ en1bg and ~ euen1b</td>
+</tr>
+
+<tr>
+  <td>is of size two</td>
+  <td>` A ~~ 2o `</td>
+  <td>equivalent to being a pair of two distinct elements by
+  ~ en2 and ~ pr2ne</td>
+</tr>
+
+<tr>
+  <td>has at least one element</td>
+  <td>` 1o ~<_ A `</td>
+  <td>equivalent to ` E. x x e. A ` (which is how we often
+  express being inhabited) by ~ dom1o</td>
+</tr>
+
+<tr>
+  <td>has at least two elements</td>
+  <td>` 2o ~<_ A `</td>
+  <td>equivalent to having two distinct elements by
+  ~ 2dom and ~ rex2dom</td>
+</tr>
+
+<tr>
   <td>dominated by ` _om `</td>
   <td>` A ~<_ _om `</td>
   <td>implies subcountable by ~ domomsubct</td>
@@ -1221,6 +1248,14 @@ its domain by ~ relelfvdm .
 With excluded middle, ` (/) e. A ` and ` A =/= (/) ` are equivalent (where
 ` A ` is an ordinal). In such theorems, ` (/) e. A ` is generally the more
 interesting condition constructively.</LI>
+
+<li>
+  When dealing with the size of sets, the ` ( # `` A ) ` notation is
+  well behaved on sets known to be finite, but in many situations
+  prefer constructions such as ` 2o ~<_ A ` and the others mentioned
+  in <a href="#set-size" >the set size section</a>.  See the ~ df-ihash
+  comment for more discussion.
+</li>
 
 <LI>
 Reverse closure in set.mm uses excluded middle (for example ovrcl or ndmfvrcl
@@ -3267,17 +3302,26 @@ and is evaluated at a set</TD>
 <TR>
 <TD>elfvdm</TD>
 <TD>~ relelfvdm </TD>
-<TD>It would seem elfvdm may be provable, but the set.mm
-proof does not work.  A straightforward combination of
-~ eliotaeu and ~ eldmg would require adding a ` B e. _V `
-condition but perhaps there is a way to remove that
-need</TD>
+<TD>Proving elfvdm for ` B e. _V ` would be a straightforward
+combination of ~ eliotaeu and ~ eldmg , and for ` -. B e. _V ` it
+is trivial (per ~ fvprc ).  But there is no clear way to
+combine those cases (especially since they hold in
+different ways - the set case has only one value which can map
+` B ` and the proper class can map ` B ` for every set).</TD>
 </TR>
 
 <TR>
 <TD>elfvex , elfvexd</TD>
 <TD>~ relelfvdm , ~ mptrcl</TD>
 </TR>
+
+<tr>
+  <td>fvfundmfvn0</td>
+  <td><i>none</i></td>
+  <td>something along these lines (with nonempty changed to inhabited,
+  presumably) may be possible (see for example ~ relelfvdm or the proof
+  of ~ elfvm ), but the set.mm proof is not intuitionistic</td>
+</tr>
 
 <tr>
   <td>elfv2ex</td>
@@ -16341,6 +16385,154 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>would presumably be provable (with nonempty changed to
   inhabited) but unused in set.mm</td>
+</tr>
+
+<tr>
+  <td>df-upgr</td>
+  <td>~ df-upgren</td>
+  <td>restates how we say that a set has one or two elements</td>
+</tr>
+
+<tr>
+  <td>df-umgr</td>
+  <td>~ df-umgren</td>
+  <td>restates how we say that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>isupgr</td>
+  <td>~ isupgren</td>
+  <td>restates how we say that a set has one or two elements</td>
+</tr>
+
+<tr>
+  <td>wrdupgr</td>
+  <td>~ wrdupgren</td>
+  <td>restates how we say that a set has one or two elements</td>
+</tr>
+
+<tr>
+  <td>upgrf</td>
+  <td>~ upgrfen</td>
+  <td>restates how we say that a set has one or two elements</td>
+</tr>
+
+<tr>
+  <td>upgrfn</td>
+  <td>~ upgrfnen</td>
+  <td>restates how we say that a set has one or two elements</td>
+</tr>
+
+<tr>
+  <td>upgrn0</td>
+  <td>~ upgrm</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
+
+<tr>
+  <td>upgrle</td>
+  <td>~ upgr1or2</td>
+  <td>specifies one or two exactly rather than at most two</td>
+</tr>
+
+<tr>
+  <td>upgrbi</td>
+  <td><i>none</i></td>
+  <td>we'd probably need decidability of ` X = Y ` to prove something
+  analogous for our definition of pseugraphs, but this theorem is
+  unused in set.mm</td>
+</tr>
+
+<tr>
+  <td>isumgr</td>
+  <td>~ isumgren</td>
+  <td>restates how we say that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>isumgrs</td>
+  <td>~ isumgren</td>
+  <td>restates how we say that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>wrdumgr</td>
+  <td>~ wrdumgren</td>
+  <td>restates how we say that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>umgrf</td>
+  <td>~ umgrfen</td>
+  <td>restates how we say that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>umgrfn</td>
+  <td>~ umgrfnen</td>
+  <td>restates how we say that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>umgredg2</td>
+  <td>~ umgredg2en</td>
+  <td>restates how we say that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>umgrbi</td>
+  <td>~ umgrbien</td>
+  <td>restates how we say that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>upgrle2</td>
+  <td><i>none</i></td>
+  <td>seems likely adaptable (with set size most likely handled as
+  in ~ upgr1or2 )</td>
+</tr>
+
+<tr>
+  <td>umgrnloopv</td>
+  <td>~ umgrnloopvv</td>
+  <td>adds a set existence condition</td>
+</tr>
+
+<tr>
+  <td>umgredgprv</td>
+  <td><i>none</i></td>
+  <td>this may need set existence conditions on ` M ` and ` N `
+  (unless we can prove pr2cv from set.mm or something similar)</td>
+</tr>
+
+<tr>
+  <td>umgrnloop</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses umgredgprv</td>
+</tr>
+
+<tr>
+  <td>umgrnloop0</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses umgrnloop</td>
+</tr>
+
+<tr>
+  <td>upgr1elem</td>
+  <td>~ upgr1elem1</td>
+  <td>changes related to set size and decidability</td>
+</tr>
+
+<tr>
+  <td>upgr1e</td>
+  <td>~ upgr1edc</td>
+  <td>adds decidability condition</td>
+</tr>
+
+<tr>
+  <td>upgr1eop</td>
+  <td>~ upgr1eopdc</td>
+  <td>adds decidability condition</td>
 </tr>
 
 <tr>

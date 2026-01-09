@@ -23930,6 +23930,15 @@ $)
   $}
 
   ${
+    el2v.1 $e |- ( ( x e. _V /\ y e. _V ) -> ph ) $.
+    $( If a proposition is implied by ` x e. _V ` and ` y e. _V ` (which is
+       true, see ~ vex ), then it is true.  (Contributed by Peter Mazsa,
+       13-Oct-2018.) $)
+    el2v $p |- ph $=
+      ( cv cvv wcel vex mp2an ) BEFGCEFGABHCHDI $.
+  $}
+
+  ${
     $d x A $.
     $( Two ways to say " ` A ` is a set":  A class ` A ` is a member of the
        universal class ` _V ` (see ~ df-v ) if and only if the class ` A `
@@ -49181,6 +49190,14 @@ $)
     ( wf cdm wss fdm feq2d ibir wceq eqimss syl jca ) ABCDZCEZBCDZOAFZNPNOABCAB
     CGZHINOAJQROAKLM $.
 
+  ${
+    ffdmd.1 $e |- ( ph -> F : A --> B ) $.
+    $( The domain of a function.  (Contributed by Glauco Siliprandi,
+       26-Jun-2021.) $)
+    ffdmd $p |- ( ph -> F : dom F --> B ) $=
+      ( cdm wf wss wa ffdm syl simpld ) ADFZCDGZMBHZABCDGNOIEBCDJKL $.
+  $}
+
   $( The members of an ordered pair element of a mapping belong to the
      mapping's domain and codomain.  (Contributed by NM, 10-Dec-2003.)
      (Revised by Mario Carneiro, 26-Apr-2015.) $)
@@ -50050,6 +50067,15 @@ $)
   f10 $p |- (/) : (/) -1-1-> A $=
     ( c0 wf1 wf ccnv wfun f0 fun0 cnv0 funeqi mpbir df-f1 mpbir2an ) BABCBABDBE
     ZFZAGOBFHNBIJKBABLM $.
+
+  ${
+    f10d.f $e |- ( ph -> F = (/) ) $.
+    $( The empty set maps one-to-one into any class, deduction version.
+       (Contributed by AV, 25-Nov-2020.) $)
+    f10d $p |- ( ph -> F : dom F -1-1-> A ) $=
+      ( cdm wf1 c0 f10 wceq dm0 f1eq2 ax-mp mpbir dmeqd eqidd f1eq123d mpbiri
+      wb ) ACEZBCFGEZBGFZUAGBGFZBHTGIUAUBRJTGBGKLMASTBBCGDACGDNABOPQ $.
+  $}
 
   $( One-to-one onto mapping of the empty set.  (Contributed by NM,
      15-Apr-1998.) $)
@@ -66647,6 +66673,15 @@ $)
     MUBAUDNZUBUEUBUFPUBUEBGHABOQAGRSTUA $.
 
   ${
+    $d A x $.
+    $( A set with one element is inhabited.  (Contributed by Jim Kingdon,
+       3-Jan-2026.) $)
+    en1m $p |- ( A ~~ 1o -> E. x x e. A ) $=
+      ( c1o cen wbr cuni wcel cv wex en1uniel elex2 syl ) BCDEBFZBGAHBGAIBJAMBK
+      L $.
+  $}
+
+  ${
     $d x y f A $.
     $( A set that dominates ordinal 2 has at least 2 different members.
        (Contributed by NM, 25-Jul-2004.) $)
@@ -66843,6 +66878,16 @@ $)
       WSVPCEVQUROECWFUSQWQWERSWRWEUTSETLWFVAVBVCWEWGCPZWJCWGVTHZIZBJZWDWEVRWQWT
       VPVRVDZRCETVQVEVFWEWHCPZWJXCVGWEVRWRXEXDUTCELVQVEVFXBWJBWHCVTWHIXAWICVTWH
       WGVHVIVJQWCXCAWGCVSWGIZWBXBBXFWAXACVSWGVTVOVIVKVJVLVMVN $.
+  $}
+
+  ${
+    $d A x y $.
+    $( A set with two elements is inhabited.  (Contributed by Jim Kingdon,
+       3-Jan-2026.) $)
+    en2m $p |- ( A ~~ 2o -> E. x x e. A ) $=
+      ( vy c2o cen wbr cv cpr wceq wex en2 wi vex prid2 eleq2 mpbiri a1i eximdv
+      wcel imp exlimddv ) BDEFZBCGZAGZHZIZAJZUDBSZAJZCCABKUBUGUIUBUFUHAUFUHLUBU
+      FUHUDUESUCUDAMNBUEUDOPQRTUA $.
   $}
 
   $( A subset of a set dominated by ` _om ` is dominated by ` _om ` .
@@ -73026,6 +73071,15 @@ $)
     ANUCUTVEVDOIJZVFURVGUSACUDUEUTVEVAVDIJZVGVFPUTVAQEVEVHPABCDUFVAVDQUGRVHVGUT
     VFVHVGUTVFPZVHVGFVAOIJZVIVAVDOSVJVFUTVJVBOHIJZUHVJOVAIJZVBVKPVAOUIVLVBVKOVA
     HSTRUAUBRTUOUJUKULUMURUSVCVBABCDUPUNUQ $.
+
+  $( An unordered pair, with decidable equality for the specified elements, has
+     either one or two elements.  (Contributed by Jim Kingdon, 7-Jan-2026.) $)
+  pr1or2 $p |- ( ( A e. C /\ B e. D /\ DECID A = B )
+      -> ( { A , B } ~~ 1o \/ { A , B } ~~ 2o ) ) $=
+    ( wcel wceq wdc cpr c1o cen wbr c2o wo wa wne dcne enpr1g ad2antrr wb preq2
+    breq1d adantl mpbid orcd pr2ne biimpar olcd jaodan sylan2b 3impa ) ACEZBDEZ
+    ABFZGZABHZIJKZUOLJKZMZUNUKULNZUMABOZMURABPUSUMURUTUSUMNZUPUQVAAAHZIJKZUPUKV
+    CULUMACQRUMVCUPSUSUMVBUOIJABATUAUBUCUDUSUTNUQUPUSUQUTABCDUEUFUGUHUIUJ $.
 
   ${
     $d A r s $.  $d A z $.  $d ph x $.  $d s x $.
@@ -115253,6 +115307,12 @@ $)
     $( Define the set size function ` # ` , which gives the cardinality of a
        finite set as a member of ` NN0 ` , and assigns all infinite sets the
        value ` +oo ` .  For example, ` ( # `` { 0 , 1 , 2 } ) = 3 ` .
+
+       Since we don't know that an arbitrary set is either finite or infinite
+       (by ~ inffiexmid ), the behavior beyond finite sets is not as useful as
+       it might appear.  For example, we wouldn't expect to be able to define
+       this function in a meaningful way on ` ~P 1o ` , which cannot be shown
+       to be finite (per ~ pw1fin ).
 
        Note that we use the sharp sign ( ` # ` ) for this function and we use
        the different character octothorpe ( ` =//= ` ) for the apartness
@@ -193001,6 +193061,456 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Undirected pseudographs and multigraphs
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c UPGraph UMGraph $.
+
+  $( Extend class notation with undirected pseudographs. $)
+  cupgr $a class UPGraph $.
+
+  $( Extend class notation with undirected multigraphs. $)
+  cumgr $a class UMGraph $.
+
+  ${
+    $d e g v x $.
+    $( Define the class of all undirected pseudographs.  An (undirected)
+       pseudograph consists of a set ` v ` (of "vertices") and a function ` e `
+       (representing indexed "edges") into subsets of ` v ` of cardinality one
+       or two, representing the two vertices incident to the edge, or the one
+       vertex if the edge is a loop.  This is according to Chartrand, Gary and
+       Zhang, Ping (2012):  "A First Course in Graph Theory.", Dover, ISBN
+       978-0-486-48368-9, section 1.4, p. 26:  "In a pseudograph, not only are
+       parallel edges permitted but an edge is also permitted to join a vertex
+       to itself.  Such an edge is called a loop."  (in contrast to a
+       multigraph, see ~ df-umgren ).  (Contributed by Mario Carneiro,
+       11-Mar-2015.)  (Revised by AV, 24-Nov-2020.)  (Revised by Jim Kingdon,
+       3-Jan-2026.) $)
+    df-upgren $a |- UPGraph =
+      { g | [. ( Vtx ` g ) / v ]. [. ( iEdg ` g ) / e ].
+      e : dom e --> { x e. ~P v | ( x ~~ 1o \/ x ~~ 2o ) } } $.
+
+    $( Define the class of all undirected multigraphs.  An (undirected)
+       multigraph consists of a set ` v ` (of "vertices") and a function ` e `
+       (representing indexed "edges") into subsets of ` v ` of cardinality two,
+       representing the two vertices incident to the edge.  In contrast to a
+       pseudograph, a multigraph has no loop.  This is according to Chartrand,
+       Gary and Zhang, Ping (2012):  "A First Course in Graph Theory.", Dover,
+       ISBN 978-0-486-48368-9, section 1.4, p. 26:  "A multigraph M consists of
+       a finite nonempty set V of vertices and a set E of edges, where every
+       two vertices of M are joined by a finite number of edges (possibly
+       zero).  If two or more edges join the same pair of (distinct) vertices,
+       then these edges are called parallel edges."  (Contributed by AV,
+       24-Nov-2020.)  (Revised by Jim Kingdon, 3-Jan-2026.) $)
+    df-umgren $a |- UMGraph =
+      { g | [. ( Vtx ` g ) / v ]. [. ( iEdg ` g ) / e ].
+      e : dom e --> { x e. ~P v | x ~~ 2o } } $.
+  $}
+
+  ${
+    $d e g h v x $.  $d E h $.  $d G h x $.  $d V h x $.
+    isupgr.v $e |- V = ( Vtx ` G ) $.
+    isupgr.e $e |- E = ( iEdg ` G ) $.
+    $( The property of being an undirected pseudograph.  (Contributed by Mario
+       Carneiro, 11-Mar-2015.)  (Revised by AV, 10-Oct-2020.) $)
+    isupgren $p |- ( G e. U -> ( G e. UPGraph <->
+        E : dom E --> { x e. ~P V | ( x ~~ 1o \/ x ~~ 2o ) } ) ) $=
+      ( ve vv vg vh wcel cv cdm ciedg cfv cvtx wceq fveq2 cvv cupgr c1o cen wbr
+      c2o wo cpw crab wf cab df-upgren eleq2i eqtr4di dmeqd eqcomi dmeqi eqtrdi
+      wsbc pweqd rabeqdv feq123d vtxex elv wa iedgex adantr simpr pweq ad2antlr
+      a1i sbcied2 cbvabv elab2g bitrid ) DUALDHMZNZAMZUBUCUDVQUEUCUDUFZAIMZUGZU
+      HZVOUIZHJMZOPZURZIWCQPZURZJUJZLDBLCNZVRAEUGZUHZCUIZUAWHDAIHJUKULKMZOPZNZV
+      RAWMQPZUGZUHZWNUIZWLKDWHBWMDRZWOWIWRWKWNCWTWNDOPZCWMDOSZGUMWTWOXANWIWTWNX
+      AXBUNXACCXAGUOUPUQWTVRAWQWJWTWPEWTWPDQPEWMDQSFUMUSUTVAWGWSJKWCWMRZWEWSIWF
+      WPTWFTLZXCXDJWCTVBVCVJWCWMQSXCVSWPRZVDZWBWSHWDWNTWDTLZXFXGJWCTVEVCVJXCWDW
+      NRXEWCWMOSVFXFVOWNRZVDZVPWOWAWRVOWNXFXHVGZXIVOWNXJUNXIVRAVTWQXEVTWQRXCXHV
+      SWPVHVIUTVAVKVKVLVMVN $.
+
+    $( The property of being an undirected pseudograph, expressing the edges as
+       "words".  (Contributed by Mario Carneiro, 11-Mar-2015.)  (Revised by AV,
+       10-Oct-2020.) $)
+    wrdupgren $p |- ( ( G e. U /\ E e. Word X ) -> ( G e. UPGraph <->
+        E e. Word { x e. ~P V | ( x ~~ 1o \/ x ~~ 2o ) } ) ) $=
+      ( wcel cword wa cupgr cdm cv c1o cen wbr c2o wf wrdf wo cpw cc0 chash cfv
+      crab cfzo co wb isupgren adantr adantl feq2d cn0 simpr ad2antlr iswrdinn0
+      fdmd lencl syl2anc ex impbid1 3bitrd ) DBIZCFJIZKZDLIZCMZANZOPQVIRPQUAAEU
+      BUFZCSZUCCUDUEZUGUHZVJCSZCVJJIZVDVGVKUIVEABCDEGHUJUKVFVHVMVJCVFVMFCVEVMFC
+      SVDFCTULURUMVFVNVOVFVNVOVFVNKVNVLUNIZVOVFVNUOVEVPVDVNFCUSUPVJVLCUQUTVAVJC
+      TVBVC $.
+
+    $( The edge function of an undirected pseudograph is a function into
+       unordered pairs of vertices.  Version of ~ upgrfnen without explicitly
+       specified domain of the edge function.  (Contributed by Mario Carneiro,
+       12-Mar-2015.)  (Revised by AV, 10-Oct-2020.) $)
+    upgrfen $p |- ( G e. UPGraph ->
+        E : dom E --> { x e. ~P V | ( x ~~ 1o \/ x ~~ 2o ) } ) $=
+      ( cupgr wcel cdm cv c1o cen wbr c2o wo cpw crab wf isupgren ibi ) CGHBIAJ
+      ZKLMUANLMOADPQBRAGBCDEFST $.
+
+    $( The edge function of an undirected pseudograph is a function into
+       unordered pairs of vertices.  (Contributed by Mario Carneiro,
+       11-Mar-2015.)  (Revised by AV, 10-Oct-2020.) $)
+    upgrfnen $p |- ( ( G e. UPGraph /\ E Fn A ) ->
+        E : A --> { x e. ~P V | ( x ~~ 1o \/ x ~~ 2o ) } ) $=
+      ( cupgr wcel wfn cv c1o cen wbr c2o wo cpw crab wf cdm upgrfen fndm feq2d
+      syl5ibcom imp ) DHIZCBJZBAKZLMNUHOMNPAEQRZCSZUFCTZUICSUGUJACDEFGUAUGUKBUI
+      CBCUBUCUDUE $.
+
+    $( An edge is a subset of vertices.  (Contributed by Mario Carneiro,
+       11-Mar-2015.)  (Revised by AV, 29-Nov-2020.) $)
+    upgrss $p |- ( ( G e. UPGraph /\ F e. dom E ) -> ( E ` F ) C_ V ) $=
+      ( vx cupgr wcel cdm wa cfv cv c1o cen wbr c2o wo cpw crab ssrab2 upgrfen
+      ffvelcdmda sselid elpwid ) CHIZBAJZIKZBALZDUHGMZNOPUJQOPRZGDSZTZULUIUKGUL
+      UAUFUGUMBAGACDEFUBUCUDUE $.
+
+    ${
+      $d E j $.  $d E x $.  $d F j $.  $d F x $.
+      $( An edge is an inhabited subset of vertices.  (Contributed by Mario
+         Carneiro, 11-Mar-2015.)  (Revised by AV, 10-Oct-2020.) $)
+      upgrm $p |- ( ( G e. UPGraph /\ E Fn A /\ F e. A ) ->
+          E. j j e. ( E ` F ) ) $=
+        ( vx cupgr wcel wfn c1o cen wbr c2o wo cv wa breq1 w3a cfv cpw wex crab
+        upgrfnen ffvelcdmda 3impa wceq orbi12d elrab sylib en1m en2m simpl2im
+        jaoi ) EJKZCALZDAKZUAZDCUBZFUCZKZVAMNOZVAPNOZQZBRVAKBUDZUTVAIRZMNOZVHPN
+        OZQZIVBUEZKZVCVFSUQURUSVMUQURSAVLDCIACEFGHUFUGUHVKVFIVAVBVHVAUIVIVDVJVE
+        VHVAMNTVHVAPNTUJUKULVDVGVEBVAUMBVAUNUPUO $.
+    $}
+
+    $d E x $.  $d F x $.
+    $( An edge of an undirected pseudograph has one or two ends.  (Contributed
+       by Mario Carneiro, 11-Mar-2015.)  (Revised by AV, 10-Oct-2020.) $)
+    upgr1or2 $p |- ( ( G e. UPGraph /\ E Fn A /\ F e. A ) ->
+        ( ( E ` F ) ~~ 1o \/ ( E ` F ) ~~ 2o ) ) $=
+      ( vx cupgr wcel wfn w3a cfv cv c1o cen wbr c2o wo breq1 cpw crab upgrfnen
+      wa ffvelcdmda 3impa wceq orbi12d elrab simprbi syl ) DIJZBAKZCAJZLCBMZHNZ
+      OPQZUPRPQZSZHEUAZUBZJZUOOPQZUORPQZSZULUMUNVBULUMUDAVACBHABDEFGUCUEUFVBUOU
+      TJVEUSVEHUOUTUPUOUGUQVCURVDUPUOOPTUPUORPTUHUIUJUK $.
+
+    $( An edge is a finite subset of vertices.  (Contributed by Mario Carneiro,
+       11-Mar-2015.)  (Revised by AV, 10-Oct-2020.) $)
+    upgrfi $p |- ( ( G e. UPGraph /\ E Fn A /\ F e. A ) ->
+        ( E ` F ) e. Fin ) $=
+      ( cupgr wcel wfn c1o cen wbr c2o cfn com nnfi ax-mp enfii mpan w3a cfv wo
+      upgr1or2 1onn 2onn jaoi syl ) DHIBAJCAIUACBUBZKLMZUINLMZUCUIOIZABCDEFGUDU
+      JULUKKOIZUJULKPIUMUEKQRUIKSTNOIZUKULNPIUNUFNQRUINSTUGUH $.
+
+    ${
+      $d A x y $.  $d E h x $.  $d E x y z $.  $d F x y z $.  $d G h x $.
+      $d G x y $.  $d V h x $.  $d V x y $.  $d e g h v x $.
+      $( An edge is an unordered pair of vertices.  (Contributed by Mario
+         Carneiro, 11-Mar-2015.)  (Revised by AV, 10-Oct-2020.) $)
+      upgrex $p |- ( ( G e. UPGraph /\ E Fn A /\ F e. A ) ->
+          E. x e. V E. y e. V ( E ` F ) = { x , y } ) $=
+        ( vz wcel cv wa cpr wceq wex wrex cen wbr wi cupgr wfn w3a cfv upgr1or2
+        c1o c2o wo csn en1 dfsn2 eqeq2i exbii bitri cvv preq2 eqeq2d spcegv elv
+        preq1 exbidv syl exlimiv sylbi en2 jaoi wss cdm simp1 3ad2ant2 eleqtrrd
+        simp3 fndm upgrss syl2anc adantr vex prid1 simpr eleqtrrid sseldd prid2
+        jca31 ex 2eximdv mpd r2ex sylibr ) FUAKZDCUBZECKZUCZALZGKZBLZGKZMEDUDZW
+        MWONZOZMZBPAPZWSBGQAGQWLWSBPZAPZXAWLWQUFRSZWQUGRSZUHXCCDEFGHIUEXDXCXEXD
+        WQJLZXFNZOZJPZXCXDWQXFUIZOZJPXIJWQUJXKXHJXJXGWQXFUKULUMUNXHXCJXHWQXFWON
+        ZOZBPZXCXHXNTJXMXHBXFUOWOXFOXLXGWQWOXFXFUPUQURUSXNXCTJXBXNAXFUOWMXFOZWS
+        XMBXOWRXLWQWMXFWOUTUQVAURUSVBVCVDABWQVEVFVBWLWSWTABWLWSWTWLWSMZWNWPWSXP
+        WQGWMWLWQGVGZWSWLWIEDVHZKXQWIWJWKVIWLECXRWIWJWKVLWJWIXRCOWKCDVMVJVKDEFG
+        HIVNVOVPZXPWMWRWQWMWOAVQVRWLWSVSZVTWAXPWQGWOXSXPWOWRWQWMWOBVQWBXTVTWAXT
+        WCWDWEWFWSABGGWGWH $.
+    $}
+  $}
+
+  ${
+    $d G p $.
+    $( A pseudograph represented by an ordered pair.  (Contributed by AV,
+       12-Dec-2021.) $)
+    upgrop $p |- ( G e. UPGraph
+                   -> <. ( Vtx ` G ) , ( iEdg ` G ) >. e. UPGraph ) $=
+      ( vp cupgr wcel cvtx cfv ciedg cop cdm cv c1o cen wbr cpw crab wf syl2anc
+      eqid cvv wceq c2o wo upgrfen vtxex iedgex opexg isupgren opiedgfv opvtxfv
+      wb syl dmeqd pweqd rabeqdv feq123d bitrd mpbird ) ACDZAEFZAGFZHZCDZUTIZBJ
+      ZKLMVDUALMUBZBUSNZOZUTPZBUTAUSUSRUTRUCURVBVAGFZIZVEBVAEFZNZOZVIPZVHURVASD
+      ZVBVNUJURUSSDZUTSDZVOACUDZACUEZUSUTSSUFQBSVIVAVKVKRVIRUGUKURVJVCVMVGVIUTU
+      RVPVQVIUTTVRVSUTUSSSUHQZURVIUTVTULURVEBVLVFURVKUSURVPVQVKUSTVRVSUTUSSSUIQ
+      UMUNUOUPUQ $.
+  $}
+
+  ${
+    $d e g h v x $.  $d E h $.  $d G h x $.  $d V h x $.
+    isumgr.v $e |- V = ( Vtx ` G ) $.
+    isumgr.e $e |- E = ( iEdg ` G ) $.
+    $( The property of being an undirected multigraph.  (Contributed by AV,
+       24-Nov-2020.) $)
+    isumgren $p |- ( G e. U -> ( G e. UMGraph
+           <-> E : dom E --> { x e. ~P V | x ~~ 2o } ) ) $=
+      ( ve vv vg vh wcel cv cdm ciedg cfv cvtx wceq fveq2 cvv cumgr c2o cen wbr
+      cpw crab wf wsbc df-umgren eleq2i eqtr4di dmeqd eqcomi dmeqi eqtrdi pweqd
+      cab rabeqdv feq123d vtxex elv a1i wa iedgex adantr simpr ad2antlr sbcied2
+      pweq cbvabv elab2g bitrid ) DUALDHMZNZAMUBUCUDZAIMZUEZUFZVMUGZHJMZOPZUHZI
+      VTQPZUHZJUQZLDBLCNZVOAEUEZUFZCUGZUAWEDAIHJUIUJKMZOPZNZVOAWJQPZUEZUFZWKUGZ
+      WIKDWEBWJDRZWLWFWOWHWKCWQWKDOPZCWJDOSZGUKWQWLWRNWFWQWKWRWSULWRCCWRGUMUNUO
+      WQVOAWNWGWQWMEWQWMDQPEWJDQSFUKUPURUSWDWPJKVTWJRZWBWPIWCWMTWCTLZWTXAJVTTUT
+      VAVBVTWJQSWTVPWMRZVCZVSWPHWAWKTWATLZXCXDJVTTVDVAVBWTWAWKRXBVTWJOSVEXCVMWK
+      RZVCZVNWLVRWOVMWKXCXEVFZXFVMWKXGULXFVOAVQWNXBVQWNRWTXEVPWMVIVGURUSVHVHVJV
+      KVL $.
+
+    $( The property of being an undirected multigraph, expressing the edges as
+       "words".  (Contributed by AV, 24-Nov-2020.) $)
+    wrdumgren $p |- ( ( G e. U /\ E e. Word X ) -> ( G e. UMGraph
+                             <-> E e. Word { x e. ~P V | x ~~ 2o } ) ) $=
+      ( wcel cword wa cumgr cdm cv c2o cen wbr cpw wf wrdf crab cc0 cfv cfzo co
+      chash wb isumgren adantr adantl fdmd feq2d simpr lencl ad2antlr iswrdinn0
+      cn0 syl2anc ex impbid1 3bitrd ) DBIZCFJIZKZDLIZCMZANOPQAERUAZCSZUBCUFUCZU
+      DUEZVGCSZCVGJIZVBVEVHUGVCABCDEGHUHUIVDVFVJVGCVDVJFCVCVJFCSVBFCTUJUKULVDVK
+      VLVDVKVLVDVKKVKVIUQIZVLVDVKUMVCVMVBVKFCUNUOVGVICUPURUSVGCTUTVA $.
+
+    $( The edge function of an undirected multigraph is a function into
+       unordered pairs of vertices.  Version of ~ umgrfnen without explicitly
+       specified domain of the edge function.  (Contributed by AV,
+       24-Nov-2020.) $)
+    umgrfen $p |- ( G e. UMGraph
+                   -> E : dom E --> { x e. ~P V | x ~~ 2o } ) $=
+      ( cumgr wcel cdm cv c2o cen wbr cpw crab wf isumgren ibi ) CGHBIAJKLMADNO
+      BPAGBCDEFQR $.
+
+    $( The edge function of an undirected multigraph is a function into
+       unordered pairs of vertices.  (Contributed by AV, 24-Nov-2020.) $)
+    umgrfnen $p |- ( ( G e. UMGraph /\ E Fn A )
+                  -> E : A --> { x e. ~P V | x ~~ 2o } ) $=
+      ( cumgr wcel wfn cv c2o cen wbr cpw crab wf cdm umgrfen fndm syl5ibcom
+      feq2d imp ) DHIZCBJZBAKLMNAEOPZCQZUDCRZUFCQUEUGACDEFGSUEUHBUFCBCTUBUAUC
+      $.
+
+    $d E x $.  $d X x $.
+    $( An edge of a multigraph has exactly two ends.  (Contributed by AV,
+       24-Nov-2020.) $)
+    umgredg2en $p |- ( ( G e. UMGraph /\ X e. dom E )
+                     -> ( E ` X ) ~~ 2o ) $=
+      ( vx cumgr wcel cdm wa cfv cv c2o cen wbr cpw crab umgrfen ffvelcdmda syl
+      breq1 elrab simprbi ) BHIZDAJZIKDALZGMZNOPZGCQZRZIZUGNOPZUEUFUKDAGABCEFST
+      ULUGUJIUMUIUMGUGUJUHUGNOUBUCUDUA $.
+  $}
+
+  ${
+    $d V x $.  $d X x $.  $d Y x $.
+    umgrbi.x $e |- X e. V $.
+    umgrbi.y $e |- Y e. V $.
+    umgrbi.n $e |- X =/= Y $.
+    $( Show that an unordered pair is a valid edge in a multigraph.
+       (Contributed by AV, 9-Mar-2021.) $)
+    umgrbien $p |- { X , Y } e. { x e. ~P V | x ~~ 2o } $=
+      ( cpr cv c2o cen wbr cpw crab wcel wss prssi mp2an cvv mpbir prexg wne wb
+      elpw pr2ne breq1 elrab mpbir2an ) CDHZAIZJKLZABMZNOUIULOZUIJKLZUMUIBPZCBO
+      ZDBOZUOEFCDBQRUIBUPUQUISOEFCDBBUARUDTUNCDUBZGUPUQUNURUCEFCDBBUERTUKUNAUIU
+      LUJUIJKUFUGUH $.
+  $}
+
+  ${
+    $d G w x $.
+    $( An undirected pseudograph is an undirected hypergraph.  (Contributed by
+       Alexander van der Vekens, 27-Dec-2017.)  (Revised by AV,
+       10-Oct-2020.) $)
+    upgruhgr $p |- ( G e. UPGraph -> G e. UHGraph ) $=
+      ( vw vx cupgr wcel cuhgr ciedg cfv cdm wex cvtx cpw crab c1o cen wbr eqid
+      cv wf a1i c2o wo upgrfen wss en1m en2m jaoi ss2rabi fssd isuhgrm mpbird
+      wi ) ADEZAFEAGHZIZBRCRZEBJZCAKHZLZMZUNSUMUOUPNOPZUPUAOPZUBZCUSMZUTUNCUNAU
+      RURQZUNQZUCVDUTUDUMVCUQCUSVCUQULUPUSEVAUQVBBUPUEBUPUFUGTUHTUIDBUNAURCVEVF
+      UJUK $.
+
+    $( An undirected multigraph is an undirected pseudograph.  (Contributed by
+       AV, 25-Nov-2020.) $)
+    umgrupgr $p |- ( G e. UMGraph -> G e. UPGraph ) $=
+      ( vx cumgr wcel cupgr ciedg cfv cdm cv c1o cen wbr c2o cvtx cpw crab eqid
+      wo wf a1i umgrfen wss wi olc ss2rabi fssd isupgren mpbird ) ACDZAEDAFGZHZ
+      BIZJKLZULMKLZRZBANGZOZPZUJSUIUKUNBUQPZURUJBUJAUPUPQZUJQZUAUSURUBUIUNUOBUQ
+      UNUOUCULUQDUNUMUDTUETUFBCUJAUPUTVAUGUH $.
+  $}
+
+  $( An undirected multigraph is an undirected hypergraph.  (Contributed by AV,
+     26-Nov-2020.) $)
+  umgruhgr $p |- ( G e. UMGraph -> G e. UHGraph ) $=
+    ( cumgr wcel cupgr cuhgr umgrupgr upgruhgr syl ) ABCADCAECAFAGH $.
+
+  ${
+    umgrnloopv.e $e |- E = ( iEdg ` G ) $.
+    $( In a multigraph, there is no loop, i.e. no edge connecting a vertex with
+       itself.  (Contributed by Alexander van der Vekens, 26-Jan-2018.)
+       (Revised by AV, 11-Dec-2020.) $)
+    umgrnloopvv $p |- ( ( G e. UMGraph /\ M e. W /\ N e. V )
+                       -> ( ( E ` X ) = { M , N } -> M =/= N ) ) $=
+      ( cumgr wcel w3a cfv cpr wceq wa c2o cen wbr wb syl2anc simpr simpll wrel
+      wne cuhgr wfun umgruhgr uhgrfun funrel 3syl ad2antrr simplr prid1g adantl
+      cdm adantr mpbird relelfvdm cvtx eqid umgredg2en eqbrtrrd 3adantl3 simpl2
+      eleq2 simpl3 pr2ne mpbid ex ) BIJZCFJZDEJZKZGALZCDMZNZCDUDZVMVPOZVOPQRZVQ
+      VJVKVPVSVLVJVKOZVPOZVNVOPQVTVPUAZWAVJGAUOJZVNPQRVJVKVPUBWAAUCZCVNJZWCVJWD
+      VKVPVJBUEJAUFWDBUGABHUHAUIUJUKWAVPVKWEWBVJVKVPULVPVKOWECVOJZVKWFVPCDFUMUN
+      VPWEWFSVKVNVOCVEUPUQTCGAURTABBUSLZGWGUTHVATVBVCVRVKVLVSVQSVJVKVLVPVDVJVKV
+      LVPVFCDFEVGTVHVI $.
+  $}
+
+  ${
+    $d G x $.
+    umgr0e.g $e |- ( ph -> G e. W ) $.
+    umgr0e.e $e |- ( ph -> ( iEdg ` G ) = (/) ) $.
+    $( The empty graph, with vertices but no edges, is a multigraph.
+       (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by AV,
+       25-Nov-2020.) $)
+    umgr0e $p |- ( ph -> G e. UMGraph ) $=
+      ( vx cumgr wcel ciedg cfv cdm cv c2o cen wbr cvtx cpw crab syl eqid wf wb
+      wf1 f10d f1f isumgren mpbird ) ABGHZBIJZKZFLMNOFBPJZQRZUIUAZAUJULUIUCUMAU
+      LUIEUDUJULUIUESABCHUHUMUBDFCUIBUKUKTUITUFSUG $.
+
+    $( The empty graph, with vertices but no edges, is a pseudograph.
+       (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by AV,
+       11-Oct-2020.)  (Proof shortened by AV, 25-Nov-2020.) $)
+    upgr0e $p |- ( ph -> G e. UPGraph ) $=
+      ( cumgr wcel cupgr umgr0e umgrupgr syl ) ABFGBHGABCDEIBJK $.
+  $}
+
+  ${
+    $d B x $.  $d C x $.  $d S x $.
+    upgr1elem.s $e |- ( ph -> { B , C } e. S ) $.
+    upgr1elem.b $e |- ( ph -> B e. W ) $.
+    upgr1elem.c $e |- ( ph -> C e. X ) $.
+    upgr1elem.dc $e |- ( ph -> DECID B = C ) $.
+    $( Lemma for ~ upgr1edc .  (Contributed by AV, 16-Oct-2020.)  (Revised by
+       Jim Kingdon, 6-Jan-2026.) $)
+    upgr1elem1 $p |- ( ph -> { { B , C } }
+                           C_ { x e. S | ( x ~~ 1o \/ x ~~ 2o ) } ) $=
+      ( cpr c1o cen wbr c2o wo wceq breq1 wcel cv orbi12d pr1or2 syl3anc elrabd
+      crab wdc snssd ) ACDLZBUAZMNOZUJPNOZQZBEUFAUMUIMNOZUIPNOZQZBUIEUJUIRUKUNU
+      LUOUJUIMNSUJUIPNSUBHACFTDGTCDRUGUPIJKCDFGUCUDUEUH $.
+  $}
+
+  ${
+    $d B x $.  $d C x $.  $d G x $.
+    upgr1e.v $e |- V = ( Vtx ` G ) $.
+    upgr1e.a $e |- ( ph -> A e. X ) $.
+    upgr1e.b $e |- ( ph -> B e. V ) $.
+    upgr1e.c $e |- ( ph -> C e. V ) $.
+    upgr1edc.dc $e |- ( ph -> DECID B = C ) $.
+    upgr1e.e $e |- ( ph -> ( iEdg ` G ) = { <. A , { B , C } >. } ) $.
+    $( A pseudograph with one edge.  Such a graph is actually a simple
+       pseudograph.  (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by
+       AV, 16-Oct-2020.)  (Revised by AV, 21-Mar-2021.)  (Proof shortened by
+       AV, 17-Apr-2021.) $)
+    upgr1edc $p |- ( ph -> G e. UPGraph ) $=
+      ( vx wcel cfv cdm csn cvv mpbird cupgr ciedg cv c1o cen wbr c2o cvtx crab
+      wo cpw cpr cop prexg syl2anc snidg syl fsnd wss prssd sseqtrdi upgr1elem1
+      wf wb elpwg fssd ffdmd dmeqd feq12d 1vgrex eqid isupgren 3syl ) AEUAOZEUB
+      PZQZNUCZUDUEUFVQUGUEUFUJNEUHPZUKZUIZVOVCZAWABCDULZUMRZQZVTWCVCABRZVTWCAWE
+      WBRZVTWCABWBGWFIAWBSOZWBWFOACFOZDFOWGJKCDFFUNUOZWBSUPUQURANCDVSFFAWBVSOZW
+      BVRUSZAWBFVRACDFJKUTHVAAWGWJWKVDWIWBVRSVEUQTJKLVBVFVGAVPWDVTVOWCMAVOWCMVH
+      VITAWHESOVNWAVDJECFHVJNSVOEVRVRVKVOVKVLVMT $.
+  $}
+
+  $( The empty graph, with vertices but no edges, is a pseudograph.  The empty
+     graph is actually a simple graph, and therefore also a multigraph
+     ( ` G e. UMGraph ` ).  (Contributed by Mario Carneiro, 12-Mar-2015.)
+     (Revised by AV, 11-Oct-2020.) $)
+  upgr0eop $p |- ( V e. W -> <. V , (/) >. e. UPGraph ) $=
+    ( wcel c0 cop cvv 0ex opexg mpan2 ciedg cfv wceq opiedgfv upgr0e ) ABCZADEZ
+    FODFCZPFCGADBFHIOQPJKDLGDABFMIN $.
+
+  ${
+    upgr1eopdc.v $e |- ( ph -> V e. W ) $.
+    upgr1eopdc.a $e |- ( ph -> A e. X ) $.
+    upgr1eopdc.b $e |- ( ph -> B e. V ) $.
+    upgr1eopdc.c $e |- ( ph -> C e. V ) $.
+    upgr1eopdc.dc $e |- ( ph -> DECID B = C ) $.
+    $( A pseudograph with one edge.  Such a graph is actually a simple
+       pseudograph.  (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by
+       AV, 10-Oct-2020.) $)
+    upgr1eopdc $p |- ( ph -> <. V , { <. A , { B , C } >. } >. e. UPGraph ) $=
+      ( cpr cop cfv wcel cvv wceq syl2anc eleqtrrd csn cvtx prexg opexg opvtxfv
+      eqid snexg syl ciedg opiedgfv upgr1edc ) ABCDEBCDMZNZUAZNZUOUBOZGUPUFIACE
+      UPJAEFPZUNQPZUPERHAUMQPZURABGPULQPZUSIACEPDEPUTJKCDEEUCSBULGQUDSUMQUGUHZU
+      NEFQUESZTADEUPKVBTLAUQURUOUIOUNRHVAUNEFQUJSUK $.
+  $}
+
+  ${
+    upgrun.g $e |- ( ph -> G e. UPGraph ) $.
+    upgrun.h $e |- ( ph -> H e. UPGraph ) $.
+    upgrun.e $e |- E = ( iEdg ` G ) $.
+    upgrun.f $e |- F = ( iEdg ` H ) $.
+    upgrun.vg $e |- V = ( Vtx ` G ) $.
+    upgrun.vh $e |- ( ph -> ( Vtx ` H ) = V ) $.
+    upgrun.i $e |- ( ph -> ( dom E i^i dom F ) = (/) ) $.
+    ${
+      $d x E $.  $d x F $.  $d x G $.  $d x H $.  $d x U $.  $d x V $.
+      $d x ph $.
+      upgrun.u $e |- ( ph -> U e. W ) $.
+      upgrun.v $e |- ( ph -> ( Vtx ` U ) = V ) $.
+      upgrun.un $e |- ( ph -> ( iEdg ` U ) = ( E u. F ) ) $.
+      $( The union ` U ` of two pseudographs ` G ` and ` H ` with the same
+         vertex set ` V ` is a pseudograph with the vertex ` V ` and the union
+         ` ( E u. F ) ` of the (indexed) edges.  (Contributed by AV,
+         12-Oct-2020.)  (Revised by AV, 24-Oct-2021.) $)
+      upgrun $p |- ( ph -> U e. UPGraph ) $=
+        ( vx wf cupgr wcel ciedg cfv cdm cv c1o cen wbr c2o wo cvtx cpw upgrfen
+        crab cun eqid eqcomd pweqd rabeqdv feq3d mpbird fun2d dmeqd dmun eqtrdi
+        syl feq123d wb isupgren ) ABUAUBZBUCUDZUEZSUFZUGUHUIVNUJUHUIUKZSBULUDZU
+        MZUOZVLTZAVSCUEZDUEZUPZVOSGUMZUOZCDUPZTAVTWAWDCDAEUAUBVTWDCTISCEGMKUNVG
+        AWAWDDTWAVOSFULUDZUMZUOZDTZAFUAUBWIJSDFWFWFUQLUNVGAWDWHDWAAVOSWCWGAGWFA
+        WFGNURUSUTVAVBOVCAVMWBVRWDVLWERAVMWEUEWBAVLWERVDCDVEVFAVOSVQWCAVPGQUSUT
+        VHVBABHUBVKVSVIPSHVLBVPVPUQVLUQVJVGVB $.
+    $}
+
+    $( The union of two pseudographs (with the same vertex set):  If
+       ` <. V , E >. ` and ` <. V , F >. ` are pseudographs, then
+       ` <. V , E u. F >. ` is a pseudograph (the vertex set stays the same,
+       but the edges from both graphs are kept).  (Contributed by Mario
+       Carneiro, 12-Mar-2015.)  (Revised by AV, 12-Oct-2020.)  (Revised by AV,
+       24-Oct-2021.) $)
+    upgrunop $p |- ( ph -> <. V , ( E u. F ) >. e. UPGraph ) $=
+      ( cvv wcel cfv cupgr syl eqeltrid syl2anc cun cop cvtx vtxex ciedg iedgex
+      unexg opexg wceq opvtxfv opiedgfv upgrun ) AFBCUAZUBZBCDEFNGHIJKLMAFNOZUM
+      NOZUNNOAFDUCPZNKADQOZUQNOGDQUDRSZABNOCNOUPABDUEPZNIAURUTNOGDQUFRSACEUEPZN
+      JAEQOVANOHEQUFRSBCNNUGTZFUMNNUHTAUOUPUNUCPFUIUSVBUMFNNUJTAUOUPUNUEPUMUIUS
+      VBUMFNNUKTUL $.
+  $}
+
+  ${
+    umgrun.g $e |- ( ph -> G e. UMGraph ) $.
+    umgrun.h $e |- ( ph -> H e. UMGraph ) $.
+    umgrun.e $e |- E = ( iEdg ` G ) $.
+    umgrun.f $e |- F = ( iEdg ` H ) $.
+    umgrun.vg $e |- V = ( Vtx ` G ) $.
+    umgrun.vh $e |- ( ph -> ( Vtx ` H ) = V ) $.
+    umgrun.i $e |- ( ph -> ( dom E i^i dom F ) = (/) ) $.
+    ${
+      $d x E $.  $d x F $.  $d x G $.  $d x H $.  $d x U $.  $d x V $.
+      $d x ph $.
+      umgrun.u $e |- ( ph -> U e. W ) $.
+      umgrun.v $e |- ( ph -> ( Vtx ` U ) = V ) $.
+      umgrun.un $e |- ( ph -> ( iEdg ` U ) = ( E u. F ) ) $.
+      $( The union ` U ` of two multigraphs ` G ` and ` H ` with the same
+         vertex set ` V ` is a multigraph with the vertex ` V ` and the union
+         ` ( E u. F ) ` of the (indexed) edges.  (Contributed by AV,
+         25-Nov-2020.) $)
+      umgrun $p |- ( ph -> U e. UMGraph ) $=
+        ( vx wf cumgr wcel cfv cdm cv c2o cen wbr cvtx cpw crab cun umgrfen syl
+        ciedg eqid eqcomd pweqd rabeqdv feq3d mpbird fun2d dmeqd eqtrdi feq123d
+        dmun wb isumgren ) ABUAUBZBUOUCZUDZSUEUFUGUHZSBUIUCZUJZUKZVJTZAVPCUDZDU
+        DZULZVLSGUJZUKZCDULZTAVQVRWACDAEUAUBVQWACTISCEGMKUMUNAVRWADTVRVLSFUIUCZ
+        UJZUKZDTZAFUAUBWFJSDFWCWCUPLUMUNAWAWEDVRAVLSVTWDAGWCAWCGNUQURUSUTVAOVBA
+        VKVSVOWAVJWBRAVKWBUDVSAVJWBRVCCDVFVDAVLSVNVTAVMGQURUSVEVAABHUBVIVPVGPSH
+        VJBVMVMUPVJUPVHUNVA $.
+    $}
+
+    $( The union of two multigraphs (with the same vertex set):  If
+       ` <. V , E >. ` and ` <. V , F >. ` are multigraphs, then
+       ` <. V , E u. F >. ` is a multigraph (the vertex set stays the same, but
+       the edges from both graphs are kept).  (Contributed by Mario Carneiro,
+       12-Mar-2015.)  (Revised by AV, 25-Nov-2020.) $)
+    umgrunop $p |- ( ph -> <. V , ( E u. F ) >. e. UMGraph ) $=
+      ( cvv wcel cfv cumgr syl eqeltrid syl2anc cun cop cvtx vtxex ciedg iedgex
+      unexg opexg wceq opvtxfv opiedgfv umgrun ) AFBCUAZUBZBCDEFNGHIJKLMAFNOZUM
+      NOZUNNOAFDUCPZNKADQOZUQNOGDQUDRSZABNOCNOUPABDUEPZNIAURUTNOGDQUFRSACEUEPZN
+      JAEQOVANOHEQUFRSBCNNUGTZFUMNNUHTAUOUPUNUCPFUIUSVBUMFNNUJTAUOUPUNUEPUMUIUS
+      VBUMFNNUKTUL $.
+  $}
+
+
+$(
 ###############################################################################
   GUIDES AND MISCELLANEA
 ###############################################################################
@@ -195250,6 +195760,12 @@ htmldef "UHGraph" as 'UHGraph';
 htmldef "USHGraph" as 'USHGraph';
   althtmldef "USHGraph" as 'USHGraph';
   latexdef "USHGraph" as "\mathrm{USHGraph}";
+htmldef "UPGraph" as 'UPGraph';
+  althtmldef "UPGraph" as 'UPGraph';
+  latexdef "UPGraph" as "\mathrm{UPGraph}";
+htmldef "UMGraph" as 'UMGraph';
+  althtmldef "UMGraph" as 'UMGraph';
+  latexdef "UMGraph" as "\mathrm{UMGraph}";
 
 /* htmldef, althtmldef, latexdef for mathboxes */
 /* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
@@ -198364,7 +198880,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-  Natural numbers
+  The sizes of sets
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -198388,6 +198904,20 @@ $)
     ( wem cv c0 csn wss wceq wo wal c1o c2o wcel exmid01 df1o2 sseq2i cpr df2o2
     wi eleq2i vex elpr bitri imbi12i albii bitr4i ) BACZDEZFZUFDGUFUGGHZRZAIUFJ
     FZUFKLZRZAIAMUMUJAUKUHULUIJUGUFNOULUFDUGPZLUIKUNUFQSUFDUGATUAUBUCUDUE $.
+
+  ${
+    $d A f j $.  $d V f $.
+    $( Two ways of saying that a set is inhabited.  (Contributed by Jim
+       Kingdon, 3-Jan-2026.) $)
+    dom1o $p |- ( A e. V -> ( 1o ~<_ A <-> E. j j e. A ) ) $=
+      ( vf wcel c1o cdom wbr cv wex wf1 brdomg wi wf c0 cfv f1f 0lt1o a1i csn
+      ffvelcdm mpan2 elex2 3syl exlimdv sylbid cop cvv 0ex opex snex f1sng mpan
+      vex wceq wb df1o2 f1eq2 ax-mp sylibr f1eq1 elabd exlimiv imbitrrid impbid
+      ) ACEZFAGHZBIZAEZBJZVFVGFADIZKZDJZVJFACDLZVFVLVJDVLVJMVFVLFAVKNZOVKPZAEZV
+      JFAVKQVOOFEZVQRFAOVKUAUBBVPAUCUDSUEUFVJVGVFVMVIVMBVIVLFAOVHUGZTZKZDVTVTUH
+      EVIVSOVHUIBUNUJUKSVIOTZAVTKZWAVRVIWCROVHFAULUMFWBUOWAWCUPUQFWBAVTURUSUTFA
+      VKVTVAVBVCVNVDVE $.
+  $}
 
   ${
     nnti.a $e |- ( ph -> A e. _om ) $.
