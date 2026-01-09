@@ -24822,6 +24822,26 @@ $)
   $}
 
   ${
+    $d w x y z A $.  $d w y z B $.  $d w z C $.  $d w D $.  $d w x y z R $.
+    $d w x y z S $.  $d w x y z T $.  $d w x y z Q $.  $d x ps $.  $d z rh $.
+    $d w th $.  $d y ch $.
+    vtocl4ga.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    vtocl4ga.2 $e |- ( y = B -> ( ps <-> ch ) ) $.
+    vtocl4ga.3 $e |- ( z = C -> ( ch <-> rh ) ) $.
+    vtocl4ga.4 $e |- ( w = D -> ( rh <-> th ) ) $.
+    vtocl4ga.5 $e |- ( ( ( x e. Q /\ y e. R )
+                         /\ ( z e. S /\ w e. T ) ) -> ph ) $.
+    $( Implicit substitution of 4 classes for 4 setvar variables.  (Contributed
+       by AV, 22-Jan-2019.)  (Proof shortened by Wolf Lammen, 31-May-2025.) $)
+    vtocl4ga $p |- ( ( ( A e. Q /\ B e. R )
+                       /\ ( C e. S /\ D e. T ) ) -> th ) $=
+      ( wcel wa wi cv wceq imbi2d ex vtocl2ga com12 impcom ) LPUCMQUCUDJNUCKOUC
+      UDZDUMCUEUMEUEUMDUEHILMPQHUFZLUGCEUMTUHIUFZMUGEDUMUAUHUMUNPUCUOQUCUDZCUPA
+      UEUPBUEUPCUEFGJKNOFUFZJUGABUPRUHGUFZKUGBCUPSUHUQNUCUROUCUDUPAUBUIUJUKUJUL
+      $.
+  $}
+
+  ${
     $d x A $.  $d x ph $.
     vtocleg.1 $e |- ( x = A -> ph ) $.
     $( Implicit substitution of a class for a setvar variable.  (Contributed by
