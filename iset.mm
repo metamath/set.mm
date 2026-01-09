@@ -118224,6 +118224,20 @@ $)
   $}
 
   ${
+    $d l s x $.
+    $( The domain of the prefix extractor.  (Contributed by Jim Kingdon,
+       8-Jan-2026.) $)
+    fnpfx $p |- prefix Fn ( _V X. NN0 ) $=
+      ( vs vl vx cv cc0 cop csubstr co cvv wcel cn0 wral cpfx cxp wfn cdm c0 cz
+      cfzo cfn wss cmin caddc cfv cmpt cif wceq vex 0zd nn0z swrdval mp3an2i 0z
+      zsubcld fzofig sylancr mptexd 0ex ifexd eqeltrd adantl rgen2 df-pfx fnmpo
+      a1i ax-mp ) ADZEBDZFGHZIJZBKLAILMIKNOVJABIKVHKJZVJVGIJZVKVIEVHSHVGPUAZCEV
+      HEUBHZSHZCDEUCHVGUDZUEZQUFZIVLVKERJZVHRJVIVRUGAUHVKUIZVHUJZCVGEVHIUKULVKV
+      MVQQIIVKCVOVPTVKVSVNRJVOTJUMVKVHEWAVTUNEVNUOUPUQQIJVKURVEUSUTVAVBABIKVIMI
+      ABVCVDVF $.
+  $}
+
+  ${
     $d L x $.  $d S x $.  $d l s $.
     $( Closure of the prefix extractor.  (Contributed by AV, 2-May-2020.) $)
     pfxclg $p |- ( ( S e. Word A /\ L e. NN0 ) -> ( S prefix L ) e. Word A ) $=
