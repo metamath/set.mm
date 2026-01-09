@@ -118245,6 +118245,17 @@ $)
       cz adantl syl3anc eqeltrd ) BADZEZCFEZGZBCHIBJCKLIZUBBCUBMUEUCJRECREZUFUB
       EUCUDNUEOUDUGUCCPSABJCQTUA $.
 
+    $( Closure of the prefix extractor.  This extends ~ pfxclg from ` NN0 ` to
+       ` ZZ ` (negative lengths are trivial, resulting in the empty word).
+       (Contributed by Jim Kingdon, 8-Jan-2026.) $)
+    pfxclz $p |- ( ( S e. Word A /\ L e. ZZ ) -> ( S prefix L ) e. Word A ) $=
+      ( cword wcel cz wa cn0 cpfx co wn pfxclg adantlr c0 cop cfv df-ov cvv cdm
+      wceq opexg cxp opelxp2 fnpfx fndmi eleq2s con3i ndmfvg syl2an eqtrid wrd0
+      eqeltrdi wo wdc elnn0dc exmiddc syl adantl mpjaodan ) BADZEZCFEZGZCHEZBCI
+      JZUTEZVDKZVAVDVFVBABCLMVCVGGZVENUTVHVEBCOZIPZNBCIQVCVIREVIISZEZKVJNTVGBCU
+      TFUAVLVDVDVIRHUBZVKBCRHUCVMIUDUEUFUGVIIUHUIUJAUKULVBVDVGUMZVAVBVDUNVNCUOV
+      DUPUQURUS $.
+
     $d A x $.
     $( Value of the prefix extractor as a mapping.  (Contributed by AV,
        2-May-2020.) $)
