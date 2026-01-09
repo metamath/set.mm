@@ -73915,6 +73915,19 @@ $)
       AEZBEZFQPFGZDDBHIAHIZORBHIAHIDDSABJABKLABMN $.
   $}
 
+  $( With a formula ` ph ` one can associate an element of ` ~P 1o ` , which
+     can therefore be thought of as the set of "truth values" (but recall that
+     there are no other genuine truth values than ` T. ` and ` F. ` , by
+     ~ nndc , which translate to ` 1o ` and ` (/) ` respectively by ~ iftrue
+     and ~ iffalse , giving ~ pwtrufal ).
+
+     As proved in ~ if0ab , the associated element of ` ~P 1o ` is the
+     extension, in ` ~P 1o ` , of the formula ` ph ` .  (Contributed by BJ,
+     15-Aug-2024.) $)
+  fmelpw1o $p |- if ( ph , 1o , (/) ) e. ~P 1o $=
+    ( c1o c0 cif cun cpw 1oex 0ex ifelpwun un0 pweqi eleqtri ) ABCDBCEZFBFABCGH
+    IMBBJKL $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -196581,19 +196594,6 @@ $)
       df-rab 3eqtr4i ) BDZCEAFZUAGEZAHZFZIZBJUBBJACGKABCLUFUBBUBUFUEUBUCUDUAMNO
       PQABCGRABCST $.
   $}
-
-  $( With a formula ` ph ` one can associate an element of ` ~P 1o ` , which
-     can therefore be thought of as the set of "truth values" (but recall that
-     there are no other genuine truth values than ` T. ` and ` F. ` , by
-     ~ nndc , which translate to ` 1o ` and ` (/) ` respectively by ~ iftrue
-     and ~ iffalse , giving ~ pwtrufal ).
-
-     As proved in ~ if0ab , the associated element of ` ~P 1o ` is the
-     extension, in ` ~P 1o ` , of the formula ` ph ` .  (Contributed by BJ,
-     15-Aug-2024.) $)
-  fmelpw1o $p |- if ( ph , 1o , (/) ) e. ~P 1o $=
-    ( c1o c0 cif cun cpw 1oex 0ex ifelpwun un0 pweqi eleqtri ) ABCDBCEZFBFABCGH
-    IMBBJKL $.
 
   ${
     $d x ph $.  $d x X $.  $d A x $.  $d F x $.
