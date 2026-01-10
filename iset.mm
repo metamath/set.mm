@@ -199093,6 +199093,17 @@ $)
       VAYMYKWQIYOYKNYJBWQXEXAYLWHYKWJWKWLWMVHWNWO $.
   $}
 
+  ${
+    $d A s x y z $.  $d V s y z $.
+    $( Equinumerosity of ` ( ~P 1o ^m A ) ` and the set of subsets of ` A ` .
+       (Contributed by Jim Kingdon, 10-Jan-2026.) $)
+    pw1mapen $p |- ( A e. V -> ( ~P 1o ^m A ) ~~ ~P A ) $=
+      ( vs vz wcel c1o cpw cmap co cvv cfv wceq crab cmpt wf1o cen wbr cxp wfn
+      cv fnmap 1oex pwex elex fnovex mp3an12i eqid pw1map f1oeng syl2anc ) ABEZ
+      FGZAHIZJEZUMAGZCUMDTCTKFLDAMNZOUMUOPQHJJRSULJEUKAJEUNUAFUBUCABUDULAJJHUEU
+      FDAUPBCUPUGUHUMUOJUPUIUJ $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
