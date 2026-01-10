@@ -73726,6 +73726,30 @@ $)
   $}
 
   ${
+    $d A x $.
+    $( A truth value which is inhabited is equal to true.  This is a variation
+       of ~ pwntru and ~ pwtrufal .  (Contributed by Jim Kingdon,
+       10-Jan-2026.) $)
+    pw1m $p |- ( ( A e. ~P 1o /\ E. x x e. A ) -> A = 1o ) $=
+      ( c1o cpw wcel cv wex wceq wa c0 csn elpwi df1o2 sseqtrdi adantr eleqtrdi
+      wss sselda elsni syl simpr eqeltrrd snssd eqssd eqtr4di ex exlimdv imp )
+      BCDEZAFZBEZAGBCHZUIUKULAUIUKULUIUKIZBJKZCUMBUNUIBUNQUKUIBCUNBCLZMNOUMJBUM
+      UJJBUMUJUNEUJJHUMUJCUNUIBCUJUORMPUJJSTUIUKUAUBUCUDMUEUFUGUH $.
+  $}
+
+  ${
+    $d A x y $.
+    $( Expressing a truth value in terms of an ` if ` expression.  (Contributed
+       by Jim Kingdon, 10-Jan-2026.) $)
+    pw1if $p |- ( A e. ~P 1o -> if ( A = 1o , 1o , (/) ) = A ) $=
+      ( vx vy c1o cpw wcel wceq c0 cif cv wa simpr wn elif intnan biorfi bitr4i
+      wo noel sylib simprd simpld eleqtrrd pw1m sylan2 eleqtrd sylanbrc impbida
+      wex elex2 eqrdv ) ADEFZBADGZDHIZAULBJZUNFZUOAFZULUPKZUODAURUMUODFZURUPUMU
+      SKZULUPLUPUTUMMZUOHFZKZRUTUMUODHNVCUTVBVAUOSOPQZTZUAURUMUSVEUBUCULUQKZUMU
+      SUPUQULCJAFCUIUMCUOAUJCAUDUEZVFUOADULUQLVGUFVDUGUHUK $.
+  $}
+
+  ${
     $d x y $.
     $( The power set of ` 1o ` is an ordinal.  (Contributed by Jim Kingdon,
        29-Jul-2024.) $)
