@@ -73714,6 +73714,18 @@ $(
 $)
 
   ${
+    $d ph x $.
+    $( Using an ` if ` expression to represent a truth value by ` (/) ` or
+       ` 1o ` .  Unlike some theorems using ` if ` , ` ph ` does not need to be
+       decidable.  (Contributed by Jim Kingdon, 9-Jan-2026.) $)
+    iftrueb01 $p |- ( if ( ph , 1o , (/) ) = 1o <-> ph ) $=
+      ( vx c1o c0 cif wceq cv wcel wex 0lt1o elex2 ax-mp wa wb wi eleq2 wn elif
+      wo noel intnan biorfi bitr4i bitr3di pm4.71r sylibr exlimdv iftrue impbii
+      mpi ) ACDEZCFZAULBGZCHZBIZADCHUOJBDCKLULUNABULUNAUNMZNUNAOULUMUKHZUNUPUKC
+      UMPUQUPAQZUMDHZMZSUPAUMCDRUTUPUSURUMTUAUBUCUDUNAUEUFUGUJACDUHUI $.
+  $}
+
+  ${
     $d x y $.
     $( The power set of ` 1o ` is an ordinal.  (Contributed by Jim Kingdon,
        29-Jul-2024.) $)
