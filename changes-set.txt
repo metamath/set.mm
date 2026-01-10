@@ -92,7 +92,6 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
-10-Jan-26 fconst7   [same]      Moved from GS's mathbox to main set.mm
 10-Jan-26 xrltnled  [same]      Moved from GS's mathbox to main set.mm
 28-Dec-25 addlenrevpfx --       deleted; use addlenpfx plus addcom
 23-Dec-25 isomnd    [same]      Moved from TA's mathbox to main set.mm
