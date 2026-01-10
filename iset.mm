@@ -31550,6 +31550,19 @@ $)
     ( wne wceq wn cif df-ne iffalse sylbi ) ABEABFZGLCDHDFABILCDJK $.
 
   ${
+    $d A x $.  $d B x $.  $d C x $.  $d ph x $.
+    $( Membership in a conditional operator.  (Contributed by NM,
+       14-Feb-2005.) $)
+    elif $p |- ( A e. if ( ph , B , C ) <->
+        ( ( ph /\ A e. B ) \/ ( -. ph /\ A e. C ) ) ) $=
+      ( vx cif wcel cvv wa wn wo elex adantl jaoi cv eleq1 anbi1d orbi12d ancom
+      wceq df-if elab2g orbi12i bitrdi pm5.21nii ) BACDFZGZBHGZABCGZIZAJZBDGZIZ
+      KZBUFLUJUHUMUIUHABCLMULUHUKBDLMNUHUGUIAIZULUKIZKZUNEOZCGZAIZURDGZUKIZKUQE
+      BUFHURBTZUTUOVBUPVCUSUIAURBCPQVCVAULUKURBDPQRAECDUAUBUOUJUPUMUIASULUKSUCU
+      DUE $.
+  $}
+
+  ${
     ifsbdc.1 $e |- ( if ( ph , A , B ) = A -> C = D ) $.
     ifsbdc.2 $e |- ( if ( ph , A , B ) = B -> C = E ) $.
     $( Distribute a function over an if-clause.  (Contributed by Jim Kingdon,
