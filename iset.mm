@@ -67756,6 +67756,13 @@ $)
     KVAHUJUMBJKUMUTVALULUTUMVAURABMNOPUJUSUTLUKUMURACRSPUJUPUSLZUKUMUJATVBAUABA
     UBUCSPULUNUQUDUMABUEUFUGUIUKUNUMLUJABCROUH $.
 
+  $( Two is not dominated by one.  (Contributed by Jim Kingdon,
+     10-Jan-2026.) $)
+  1ndom2 $p |- -. 2o ~<_ 1o $=
+    ( c2o c1o cdom wbr wss wcel com word wn 1onn nnord ordirr mp2b ssel mpi mto
+    1lt2o wb 2onn nndomo mp2an mtbir ) ABCDZABEZUDBBFZBGFZBHUEIJBKBLMUDBAFUEQAB
+    BNOPAGFUFUCUDRSJABTUAUB $.
+
   ${
     $d x y A $.  $d x y B $.
     $( Pigeonhole Principle.  A natural number is not equinumerous to a proper
