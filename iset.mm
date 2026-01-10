@@ -199069,6 +199069,30 @@ $)
       GUQCKGUSUAHUOUGUHCDUIHCKKIUJUKABFCVADEVAUPULURUTKVAUMUN $.
   $}
 
+  ${
+    $d A s u w y z $.  $d A s w x y z $.  $d V s u w y z $.
+    pw1map.f $e |- F = ( s e. ( ~P 1o ^m A ) |->
+      { z e. A | ( s ` z ) = 1o } ) $.
+    $( Mapping between ` ( ~P 1o ^m A ) ` and subsets of ` A ` .  (Contributed
+       by Jim Kingdon, 9-Jan-2026.) $)
+    pw1map $p |- ( A e. V -> F : ( ~P 1o ^m A ) -1-1-onto-> ~P A ) $=
+      ( vw vu wcel c1o cpw cv cfv wceq crab c0 cif wa a1i cvv wss ssrab2 elpw2g
+      cmap co cmpt mpbiri adantr fmelpw1o fmpttd 1oex pwex elmapd mpbird simplr
+      wf simpl fveq1d eqid elequ1 ifbid simpr 0ex ifex fvmptd3 eqeq1d iftrueb01
+      eqtrd bitr2di rabbidva wb elpwi dfss1 sylib dfin5 eqtr3di adantl ad2antlr
+      simplrl simpll mpbid feqmptd eleq2d fveqeq2 elrab bitrdi baibd ffvelcdmda
+      cin pw1if syl eqtr2d mpteq2dva impbida f1o2d ) BDIZEGJKZBUDUEZBKZALZELZMZ
+      JNZABOZHBHLZGLZIZJPQZUFZCFWPXDWSIZXAWRIZWPXJXDBUAXCABUBXDBDUCUGUHWPXFWSIZ
+      RZXIWRIBWQXIUPXMHBXHWQXHWQIXMXEBIZRXGUISUJXMWQBXITDWQTIZXMJUKULZSWPXLUQUM
+      UNWPXKXLRZRZXAXINZXFXDNZXRXSRZXTWTXFIZABOZXDNZYAYBXCABYAWTBIZRZXCYBJPQZJN
+      YBYFXBYGJYFXBWTXIMYGYFWTXAXIXRXSYEUOURYFHWTXHYGBXITXIUSXEWTNXGYBJPHAGUTVA
+      YAYEVBYGTIYFYBJPUKVCVDSVEVHVFYBVGVIVJXQXTYDVKZWPXSXLYHXKXLXFYCXDXLBXFWIZX
+      FYCXLXFBUAYIXFNXFBVLXFBVMVNABXFVOVPVFVQVRUNXRXTRZXAHBXEXAMZUFXIYJHBWQXAYJ
+      XKBWQXAUPWPXKXLXTVSYJWQBXATDXOYJXPSWPXQXTVTUMWAZWBYJHBYKXHYJXNRZXHYKJNZJP
+      QZYKYMXGYNJPYJXGXNYNYJXGXEXDIXNYNRYJXFXDXEXRXTVBWCXCYNAXEBWTXEJXAWDWEWFWG
+      VAYMYKWQIYOYKNYJBWQXEXAYLWHYKWJWKWLWMVHWNWO $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
