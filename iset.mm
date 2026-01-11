@@ -193985,8 +193985,7 @@ $(
 
 $)
 
-  $( Lemma for ~ umgrislfupgren and ~ usgrislfuspgr .  (Contributed by AV,
-     27-Jan-2021.) $)
+  $( Lemma for ~ umgrislfupgrdom .  (Contributed by AV, 27-Jan-2021.) $)
   umgrislfupgrenlem $p |- ( { x e. ~P V | ( x ~~ 1o \/ x ~~ 2o ) }
                       i^i { x e. ~P V | 2o ~<_ x } )
                         = { x e. ~P V | x ~~ 2o } $=
@@ -193995,6 +193994,23 @@ $)
     EFZULGEFZHZABIZJGULKFZAUPJTUOUQLZAUPJUNAUPJUOUQAUPMURUNAUPURUNUQUOUNUQUMNUO
     UNOUQUMGDKFZPUQUMUSGULDQRSUMUNUAUBUCUNUOUQUNUMUDUNGULEFUQGULUEGULUFUGUHUIUJ
     UK $.
+
+  ${
+    $d G x $.  $d V x $.
+    umgrislfupgr.v $e |- V = ( Vtx ` G ) $.
+    umgrislfupgr.i $e |- I = ( iEdg ` G ) $.
+    $( A multigraph is a loop-free pseudograph.  (Contributed by AV,
+       27-Jan-2021.) $)
+    umgrislfupgrdom $p |- ( G e. UMGraph <-> ( G e. UPGraph
+                         /\ I : dom I --> { x e. ~P V | 2o ~<_ x } ) ) $=
+      ( cumgr wcel cupgr cdm c2o cv cdom wbr crab wf wa cen a1i wb cpw umgrupgr
+      umgrfen id wss wi ensymb endom sylbir ss2rabi fssd syl jca c1o wo upgrfen
+      cin wceq umgrislfupgrenlem feq3 ax-mp sylbb1 sylan isumgren adantr mpbird
+      fin impbii ) BGHZBIHZCJZKALZMNZADUAZOZCPZQZVIVJVPBUBVIVKVLKRNZAVNOZCPZVPA
+      CBDEFUCVTVKVSVOCVTUDVSVOUEVTVRVMAVNVRVMUFVLVNHVRKVLRNVMKVLUGKVLUHUISUJSUK
+      ULUMVQVIVTVJVKVLUNRNVRUOAVNOZCPZVPVTACBDEFUPVKWAVOUQZCPZWBVPQVTVKWAVOCVGW
+      CVSURWDVTTADUSWCVSVKCUTVAVBVCVJVIVTTVPAICBDEFVDVEVFVH $.
+  $}
 
 
 $(
