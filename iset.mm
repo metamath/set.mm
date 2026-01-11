@@ -194061,6 +194061,18 @@ $)
     ( cuhgr wcel ciedg cfv wfun cedg c0 wceq wb eqid uhgrfun edg0iedg0g mpdan )
     ABCADEZFAGEZHIOHIJOAOKZLPAOBQPKMN $.
 
+  ${
+    $d E x y $.  $d G y $.
+    $( An edge of a hypergraph is an inhabited subset of vertices.
+       (Contributed by AV, 28-Nov-2020.) $)
+    uhgredgm $p |- ( ( G e. UHGraph /\ E e. ( Edg ` G ) )
+                    -> ( E e. ~P ( Vtx ` G ) /\ E. x x e. E ) ) $=
+      ( vy cuhgr wcel cedg cfv wa cv wex cvtx cpw crab ciedg crn edgvalg uhgrfm
+      cdm eqid frnd eqsstrd sselda wceq eleq2 exbidv elrab sylib ) CEFZBCGHZFIB
+      AJZDJZFZAKZDCLHZMZNZFBUPFUKBFZAKZIUIUJUQBUIUJCOHZPUQCEQUIUTSUQUTAUTCUODUO
+      TUTTRUAUBUCUNUSDBUPULBUDUMURAULBUKUEUFUGUH $.
+  $}
+
 
 $(
 ###############################################################################
