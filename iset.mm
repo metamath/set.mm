@@ -194012,6 +194012,21 @@ $)
       CVSURWDVTTADUSWCVSVKCUTVAVBVCVJVIVTTVPAICBDEFVDVEVFVH $.
   $}
 
+  ${
+    $d A x $.  $d I x y $.  $d V x y $.  $d X y $.
+    lfuhgrnloopv.i $e |- I = ( iEdg ` G ) $.
+    lfuhgrnloopv.a $e |- A = dom I $.
+    lfuhgrnloopv.e $e |- E = { x e. ~P V | 2o ~<_ x } $.
+    $( An edge of a loop-free graph has at least two ends.  (Contributed by AV,
+       23-Feb-2021.) $)
+    lfgredg2dom $p |- ( ( I : A --> E /\ X e. A )
+                       -> 2o ~<_ ( I ` X ) ) $=
+      ( vy wf wcel wa cfv c2o cv cdom wbr breq2 cpw crab eqid feq23i ffvelcdmda
+      biimpi cbvrabv elrab2 simprbi syl ) BCELZGBMNGEOZPAQZRSZAFUAZUBZMZPULRSZU
+      KBUPGEUKBUPELBCBUPEBUCJUDUFUEUQULUOMURPKQZRSZURKULUOUPUSULPRTUNUTAKUOUMUS
+      PRTUGUHUIUJ $.
+  $}
+
 
 $(
 ###############################################################################
