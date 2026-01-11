@@ -194038,6 +194038,24 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Edges as subsets of vertices of graphs
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d E x $.  $d I x $.
+    uhgredgiedgb.i $e |- I = ( iEdg ` G ) $.
+    $( In a hypergraph, a set is an edge iff it is an indexed edge.
+       (Contributed by AV, 17-Oct-2020.) $)
+    uhgredgiedgb $p |- ( G e. UHGraph -> ( E e. ( Edg ` G )
+                                         <-> E. x e. dom I E = ( I ` x ) ) ) $=
+      ( cuhgr wcel wfun cedg cfv cv wceq cdm wrex wb uhgrfun edgiedgbg mpdan )
+      CFGDHBCIJGBAKDJLADMNODCEPABCDFEQR $.
+  $}
+
+
+$(
 ###############################################################################
   GUIDES AND MISCELLANEA
 ###############################################################################
