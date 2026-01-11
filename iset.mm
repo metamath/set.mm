@@ -194112,6 +194112,21 @@ $)
       DUKUOCAUMUJAJKUEUFUG $.
   $}
 
+  ${
+    $d E e $.  $d I e i $.  $d U e i $.
+    uhgrvtxedgiedgb.i $e |- I = ( iEdg ` G ) $.
+    uhgrvtxedgiedgb.e $e |- E = ( Edg ` G ) $.
+    $( In a hypergraph, a vertex is incident with an edge iff it is contained
+       in an element of the range of the edge function.  (Contributed by AV,
+       24-Dec-2020.)  (Revised by AV, 6-Jul-2022.) $)
+    uhgrvtxedgiedgb $p |- ( ( G e. UHGraph /\ U e. V )
+                  -> ( E. i e. dom I U e. ( I ` i ) <-> E. e e. E U e. e ) ) $=
+      ( cuhgr wcel wa cv wrex cfv cdm wb crn cedg ciedg edgvalg 3eqtr4g rexeqdv
+      rneqi wfn uhgrfun funfnd eleq2 rexrn syl bitrd adantr bicomd ) EJKZAGKZLA
+      BMZKZBDNZACMFOZKZCFPZNZUNURVBQUOUNURUQBFRZNZVBUNUQBDVCUNESOETOZRDVCEJUAIF
+      VEHUDUBUCUNFVAUEVDVBQUNFFEHUFUGUQUTBCVAFUPUSAUHUIUJUKULUM $.
+  $}
+
 
 $(
 ###############################################################################
