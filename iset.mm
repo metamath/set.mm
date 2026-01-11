@@ -194073,6 +194073,16 @@ $)
       TUTTRUAUBUCUNUSDBUPULBUDUMURAULBUKUEUFUGUH $.
   $}
 
+  ${
+    $d E x $.
+    $( An edge of a hypergraph is a subset of vertices.  (Contributed by AV,
+       26-Oct-2020.)  (Proof shortened by AV, 28-Nov-2020.) $)
+    edguhgr $p |- ( ( G e. UHGraph /\ E e. ( Edg ` G ) )
+                    -> E e. ~P ( Vtx ` G ) ) $=
+      ( vx cuhgr wcel cedg cfv wa cvtx cpw cv wex uhgredgm simpld ) BDEABFGEHAB
+      IGJECKAECLCABMN $.
+  $}
+
 
 $(
 ###############################################################################
