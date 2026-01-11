@@ -194101,6 +194101,15 @@ $)
       mpd wceq elrab sylib ) BDEZABFGZEZHZACIZJKLZUTMKLZSZCBNGZTZOZEZAVEEAJKLZA
       MKLZSZHUSABPGZUAZEZVGUPURVMUPUQVLABDUBUCUDUPVMVGUEURUPVLVFAUPVKUFVFVKCVKB
       VDVDQVKQUGUHUIUJULVCVJCAVEUTAUMVAVHVBVIUTAJKRUTAMKRUKUNUO $.
+
+    $( Properties of an edge of a multigraph.  (Contributed by AV,
+       25-Nov-2020.) $)
+    edgumgren $p |- ( ( G e. UMGraph /\ E e. ( Edg ` G ) )
+                    -> ( E e. ~P ( Vtx ` G ) /\ E ~~ 2o ) ) $=
+      ( vx cumgr wcel cedg cfv wa cv c2o cen wbr cvtx cpw ciedg crn edgvalg cdm
+      crab eqid umgrfen frnd eqsstrd sselda breq1 elrab sylib ) BDEZABFGZEHACIZ
+      JKLZCBMGZNZSZEAUMEAJKLZHUHUIUNAUHUIBOGZPUNBDQUHUPRUNUPCUPBULULTUPTUAUBUCU
+      DUKUOCAUMUJAJKUEUFUG $.
   $}
 
 
