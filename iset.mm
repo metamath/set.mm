@@ -194025,6 +194025,15 @@ $)
       biimpi cbvrabv elrab2 simprbi syl ) BCELZGBMNGEOZPAQZRSZAFUAZUBZMZPULRSZU
       KBUPGEUKBUPELBCBUPEBUCJUDUFUEUQULUOMURPKQZRSZURKULUOUPUSULPRTUNUTAKUOUMUS
       PRTUGUHUIUJ $.
+
+    $d U x $.
+    $( A loop-free graph has no loops.  (Contributed by AV, 23-Feb-2021.) $)
+    lfgrnloopen $p |- ( I : A --> E -> { x e. A | ( I ` x ) ~~ 1o } = (/) ) $=
+      ( wf cv cfv c1o cen wbr crab nfcv c2o cdom ex wral wceq cpw nfrab1 nfcxfr
+      wn c0 nff wcel lfgredg2dom 1ndom2 domentr mtoi syl ralrimi rabeq0 sylibr
+      wa ) BCEJZAKZELZMNOZUFZABUAVBABPUGUBUSVCABABCEAEQABQACRUTSOZAFUCZPIVDAVEU
+      DUEUHUSUTBUIZVCUSVFURRVASOZVCABCDEFUTGHIUJVGVBRMSOZUKVGVBVHRVAMULTUMUNTUO
+      VBABUPUQ $.
   $}
 
 
