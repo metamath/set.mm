@@ -194127,6 +194127,26 @@ $)
       VEHUDUBUCUNFVAUEVDVBQUNFFEHUFUGUQUTBCVAFUPUSAUHUIUJUKULUM $.
   $}
 
+  ${
+    $d C x $.  $d G x $.  $d V x $.  $d C a b c z $.  $d G a b z $.
+    $d V a b c z $.
+    upgredg.v $e |- V = ( Vtx ` G ) $.
+    upgredg.e $e |- E = ( Edg ` G ) $.
+    $( For each edge in a pseudograph, there are two vertices which are
+       connected by this edge.  (Contributed by AV, 4-Nov-2020.)  (Proof
+       shortened by AV, 26-Nov-2021.) $)
+    upgredg $p |- ( ( G e. UPGraph /\ C e. E )
+                    -> E. a e. V E. b e. V C = { a , b } ) $=
+      ( vz vx cupgr wcel cfv cv wceq wrex wa cen wbr syl ciedg crn cedg edgvalg
+      cpr eqtrid eleq2d biimpa cdm wfun wfn c1o c2o wo crab eqid upgrfen adantr
+      cpw ffnd fnfun simpr elrnrexdm simpll simprl upgrex syl3anc simprr eqeq1d
+      sylc 2rexbidv mpbird rexlimddv syldan ) CKLZABLZACUAMZUBZLZAENFNUEZOZFDPE
+      DPZVOVPVSVOBVRAVOBCUCMVRHCKUDUFUGUHVOVSQZAINZVQMZOZWBIVQUIZWCVQUJZVSWFIWG
+      PWCVQWGUKZWHVOWIVSVOWGJNZULRSWJUMRSUNJDUSUOVQJVQCDGVQUPZUQUTZURWGVQVATVOV
+      SVBIVQAVCVJWCWDWGLZWFQZQZWBWEVTOZFDPEDPZWOVOWIWMWQVOVSWNVDZWOVOWIWRWLTWCW
+      MWFVEEFWGVQWDCDGWKVFVGWOWAWPEFDDWOAWEVTWCWMWFVHVIVKVLVMVN $.
+  $}
+
 
 $(
 ###############################################################################
