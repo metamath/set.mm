@@ -24805,6 +24805,43 @@ $)
   $}
 
   ${
+    $d A x $.  $d A y $.  $d B y $.  $d ps x $.  $d ch y $.  $d C z $.
+    $d C w $.  $d D w $.  $d A z $.  $d Q z $.  $d B z $.  $d R z $.
+    $d rh z $.  $d A w $.  $d Q w $.  $d B w $.  $d R w $.  $d th w $.
+    vtocl4g.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    vtocl4g.2 $e |- ( y = B -> ( ps <-> ch ) ) $.
+    vtocl4g.3 $e |- ( z = C -> ( ch <-> rh ) ) $.
+    vtocl4g.4 $e |- ( w = D -> ( rh <-> th ) ) $.
+    vtocl4g.5 $e |- ph $.
+    $( Implicit substitution of 4 classes for 4 setvar variables.  (Contributed
+       by AV, 22-Jan-2019.) $)
+    vtocl4g $p |- ( ( ( A e. Q /\ B e. R )
+                     /\ ( C e. S /\ D e. T ) ) -> th ) $=
+      ( wcel wa wi cv wceq imbi2d vtocl2g impcom ) LPUCMQUCUDJNUCKOUCUDZDUKCUEU
+      KEUEUKDUEHILMPQHUFLUGCEUKTUHIUFMUGEDUKUAUHABCFGJKNORSUBUIUIUJ $.
+  $}
+
+  ${
+    $d w x y z A $.  $d w y z B $.  $d w z C $.  $d w D $.  $d w x y z R $.
+    $d w x y z S $.  $d w x y z T $.  $d w x y z Q $.  $d x ps $.  $d z rh $.
+    $d w th $.  $d y ch $.
+    vtocl4ga.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    vtocl4ga.2 $e |- ( y = B -> ( ps <-> ch ) ) $.
+    vtocl4ga.3 $e |- ( z = C -> ( ch <-> rh ) ) $.
+    vtocl4ga.4 $e |- ( w = D -> ( rh <-> th ) ) $.
+    vtocl4ga.5 $e |- ( ( ( x e. Q /\ y e. R )
+                         /\ ( z e. S /\ w e. T ) ) -> ph ) $.
+    $( Implicit substitution of 4 classes for 4 setvar variables.  (Contributed
+       by AV, 22-Jan-2019.)  (Proof shortened by Wolf Lammen, 31-May-2025.) $)
+    vtocl4ga $p |- ( ( ( A e. Q /\ B e. R )
+                       /\ ( C e. S /\ D e. T ) ) -> th ) $=
+      ( wcel wa wi cv wceq imbi2d ex vtocl2ga com12 impcom ) LPUCMQUCUDJNUCKOUC
+      UDZDUMCUEUMEUEUMDUEHILMPQHUFZLUGCEUMTUHIUFZMUGEDUMUAUHUMUNPUCUOQUCUDZCUPA
+      UEUPBUEUPCUEFGJKNOFUFZJUGABUPRUHGUFZKUGBCUPSUHUQNUCUROUCUDUPAUBUIUJUKUJUL
+      $.
+  $}
+
+  ${
     $d x A $.  $d x ph $.
     vtocleg.1 $e |- ( x = A -> ph ) $.
     $( Implicit substitution of a class for a setvar variable.  (Contributed by
@@ -105614,6 +105651,26 @@ $)
       QUNUOULUKUM $.
   $}
 
+  $( A half-open integer range as union of two half-open integer ranges.
+     (Contributed by AV, 23-Apr-2022.) $)
+  fzoun $p |- ( ( B e. ( ZZ>= ` A ) /\ C e. NN0 )
+           -> ( A ..^ ( B + C ) ) = ( ( A ..^ B ) u. ( B ..^ ( B + C ) ) ) ) $=
+    ( cuz cfv wcel cn0 wa caddc co cfz cfzo cun wceq cz adantr syl2an cle wbr
+    cr eluzel2 eluzelz nn0z zaddcl eluzle cc0 nn0ge0 adantl wb eluzelre addge01
+    nn0re mpbid elfzd fzosplit syl ) BADEFZCGFZHZBABCIJZKJFAUTLJABLJBUTLJMNUSBA
+    UTUQAOFURABUAPUQBOFZCOFUTOFURABUBZCUCBCUDQUQVAURVBPUQABRSURABUEPUSUFCRSZBUT
+    RSZURVCUQCUGUHUQBTFCTFVCVDUIURABUJCULBCUKQUMUNAUTBUOUP $.
+
+  ${
+    $d A x $.  $d B x $.
+    $( A half-open integer range and the singleton of its upper bound are
+       disjoint.  (Contributed by AV, 7-Mar-2021.) $)
+    fzodisjsn $p |- ( ( A ..^ B ) i^i { B } ) = (/) $=
+      ( vx cfzo co csn c0 wceq cv wcel wn wi disj1 elfzoelz zred elfzolt2 ltned
+      cin neneqd elsni nsyl mpgbir ) ABDEZBFZRGHCIZUCJZUEUDJZKLCCUCUDMUFUEBHUGU
+      FUEBUFUEBUFUEUEABNOUEABPQSUEBTUAUB $.
+  $}
+
   $( An integer is strictly greater than zero iff it is a member of ` NN ` .
      (Contributed by Mario Carneiro, 29-Sep-2015.) $)
   lbfzo0 $p |- ( 0 e. ( 0 ..^ A ) <-> A e. NN ) $=
@@ -118204,12 +118261,37 @@ $)
   $}
 
   ${
+    $d l s x $.
+    $( The domain of the prefix extractor.  (Contributed by Jim Kingdon,
+       8-Jan-2026.) $)
+    fnpfx $p |- prefix Fn ( _V X. NN0 ) $=
+      ( vs vl vx cv cc0 cop csubstr co cvv wcel cn0 wral cpfx cxp wfn cdm c0 cz
+      cfzo cfn wss cmin caddc cfv cmpt cif wceq vex 0zd nn0z swrdval mp3an2i 0z
+      zsubcld fzofig sylancr mptexd 0ex ifexd eqeltrd adantl rgen2 df-pfx fnmpo
+      a1i ax-mp ) ADZEBDZFGHZIJZBKLAILMIKNOVJABIKVHKJZVJVGIJZVKVIEVHSHVGPUAZCEV
+      HEUBHZSHZCDEUCHVGUDZUEZQUFZIVLVKERJZVHRJVIVRUGAUHVKUIZVHUJZCVGEVHIUKULVKV
+      MVQQIIVKCVOVPTVKVSVNRJVOTJUMVKVHEWAVTUNEVNUOUPUQQIJVKURVEUSUTVAVBABIKVIMI
+      ABVCVDVF $.
+  $}
+
+  ${
     $d L x $.  $d S x $.  $d l s $.
     $( Closure of the prefix extractor.  (Contributed by AV, 2-May-2020.) $)
     pfxclg $p |- ( ( S e. Word A /\ L e. NN0 ) -> ( S prefix L ) e. Word A ) $=
       ( cword wcel cn0 wa cpfx co cc0 cop csubstr pfxval simpl 0zd nn0z swrdclg
       cz adantl syl3anc eqeltrd ) BADZEZCFEZGZBCHIBJCKLIZUBBCUBMUEUCJRECREZUFUB
       EUCUDNUEOUDUGUCCPSABJCQTUA $.
+
+    $( Closure of the prefix extractor.  This extends ~ pfxclg from ` NN0 ` to
+       ` ZZ ` (negative lengths are trivial, resulting in the empty word).
+       (Contributed by Jim Kingdon, 8-Jan-2026.) $)
+    pfxclz $p |- ( ( S e. Word A /\ L e. ZZ ) -> ( S prefix L ) e. Word A ) $=
+      ( cword wcel cz wa cn0 cpfx co wn pfxclg adantlr c0 cop cfv df-ov cvv cdm
+      wceq opexg cxp opelxp2 fnpfx fndmi eleq2s con3i ndmfvg syl2an eqtrid wrd0
+      eqeltrdi wo wdc elnn0dc exmiddc syl adantl mpjaodan ) BADZEZCFEZGZCHEZBCI
+      JZUTEZVDKZVAVDVFVBABCLMVCVGGZVENUTVHVEBCOZIPZNBCIQVCVIREVIISZEZKVJNTVGBCU
+      TFUAVLVDVDVIRHUBZVKBCRHUCVMIUDUEUFUGVIIUHUIUJAUKULVBVDVGUMZVAVBVDUNVNCUOV
+      DUPUQURUS $.
 
     $d A x $.
     $( Value of the prefix extractor as a mapping.  (Contributed by AV,
@@ -118704,6 +118786,318 @@ $)
     ( cword wcel cc0 chash cfv cfz co cpfx wceq cn0 elfznn0 nn0fz0 sylib adantl
     pfxpfx mpd3an3 ) CBDEZAFCGHZIJEZAFAIJEZCAKJZAKJUDLUBUCTUBAMEUCAUANAOPQAABCR
     S $.
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Subwords and concatenations
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( The concatenation of the prefix of a word and the rest of the word yields
+     the word itself.  (Contributed by AV, 21-Oct-2018.)  (Revised by AV,
+     9-May-2020.) $)
+  pfxcctswrd $p |- ( ( W e. Word V /\ M e. ( 0 ... ( # ` W ) ) )
+             -> ( ( W prefix M ) ++ ( W substr <. M , ( # ` W ) >. ) ) = W ) $=
+    ( cword wcel cc0 chash cfv cfz co wa cpfx csubstr cconcat wceq lencl nn0fz0
+    cop cn0 adantr sylib ccatpfx mpd3an3 pfxid eqtrd ) CBDEZAFCGHZIJZEZKCALJCAU
+    GRMJNJZCUGLJZCUFUIUGUHEZUJUKOUFULUIUFUGSEULBCPUGQUATBCAUGUBUCUFUKCOUIBCUDTU
+    E $.
+
+  $( The length of the concatenation of the prefix of a word and the rest of
+     the word is the length of the word.  (Contributed by AV, 21-Oct-2018.)
+     (Revised by AV, 9-May-2020.) $)
+  lenpfxcctswrd $p |- ( ( W e. Word V /\ M e. ( 0 ... ( # ` W ) ) )
+            -> ( # ` ( ( W prefix M )
+                       ++ ( W substr <. M , ( # ` W ) >. ) ) ) = ( # ` W ) ) $=
+    ( cword wcel cc0 chash cfv cfz co wa cpfx csubstr cconcat pfxcctswrd fveq2d
+    cop ) CBDEAFCGHZIJEKCALJCARQMJNJCGABCOP $.
+
+  $( The length of the concatenation of the rest of a word and the prefix of
+     the word is the length of the word.  (Contributed by Alexander van der
+     Vekens, 1-Apr-2018.)  (Revised by AV, 9-May-2020.) $)
+  lenrevpfxcctswrd $p |- ( ( W e. Word V /\ M e. ( 0 ... ( # ` W ) ) )
+                            -> ( # ` ( ( W substr <. M , ( # ` W ) >. )
+                                     ++ ( W prefix M ) ) ) = ( # ` W ) ) $=
+    ( cword cc0 chash cfv cfz co wa cop csubstr caddc cz adantl syl2anc eqeltrd
+    wcel cn0 nn0cnd cpfx cconcat wceq simpl elfzelz lencl nn0zd swrdclg syl3anc
+    adantr elfznn0 pfxclg ccatlen cmin swrdrlen pfxlen addcomd addlenpfx 3eqtrd
+    fznn0sub ) CBDZRZAECFGZHIRZJZCAVCKLIZCAUAIZUBIFGZVFFGZVGFGZMIZVJVIMIVCVEVFV
+    ARZVGVARZVHVKUCVEVBANRZVCNRZVLVBVDUDZVDVNVBAEVCUEOVBVOVDVBVCBCUFUGUJBCAVCUH
+    UIVEVBASRZVMVPVDVQVBAVCUKOZBCAULPBBVFVGUMPVEVIVJVEVIVEVIVCAUNIZSABCUOVDVSSR
+    VBAEVCUTOQTVEVJVEVJASBCAUPVRQTUQABCURUS $.
+
+  $( Reconstruct a nonempty word from its prefix and last symbol.  (Contributed
+     by Alexander van der Vekens, 5-Aug-2018.)  (Revised by AV, 9-May-2020.) $)
+  pfxlswccat $p |- ( ( W e. Word V /\ W =/= (/) )
+          -> ( ( W prefix ( ( # ` W ) - 1 ) ) ++ <" ( lastS ` W ) "> ) = W ) $=
+    ( cword wcel c0 wne wa chash cfv cmin cpfx clsw cs1 cconcat csubstr swrdlsw
+    c1 co cop eqcomd oveq2d cc0 cfz wceq cfn wrdfin 1elfz0hash sylan pfxcctswrd
+    fznn0sub2 syl syldan eqtrd ) BACDZBEFZGZBBHIZQJRZKRZBLIMZNRUSBURUQSORZNRZBU
+    PUTVAUSNUPVAUTABPTUAUNUOURUBUQUCRZDZVBBUDUPQVCDZVDUNBUEDUOVEABUFBUGUHQUQUJU
+    KURABUIULUM $.
+
+  $( The last symbol of a word concatenated with the word with the last symbol
+     removed results in the word itself.  (Contributed by Alexander van der
+     Vekens, 24-Oct-2018.)  (Revised by AV, 9-May-2020.) $)
+  ccats1pfxeq $p |- ( ( W e. Word V /\ U e. Word V
+                         /\ ( # ` U ) = ( ( # ` W ) + 1 ) )
+                       -> ( W = ( U prefix ( # ` W ) )
+                            -> U = ( W ++ <" ( lastS ` U ) "> ) ) ) $=
+    ( wcel chash cfv c1 co wceq cpfx cconcat oveq1 syl eqcomd 3ad2ant1 3ad2ant3
+    cmin eqtrd cc0 clt cword caddc w3a cs1 wa adantl lencl nn0cnd pncan1 oveq2d
+    clsw cc oveq1d c0 wne simp2 wbr cn0 nn0p1gt0 wb breq2 mpbird cfn fihashneq0
+    wrdfin 3ad2ant2 mpbid pfxlswccat syl2anc adantr eqtr2d ex ) CBUAZDZAVMDZAEF
+    ZCEFZGUBHZIZUCZCAVQJHZIZACAUKFUDZKHZIVTWBUEWDWAWCKHZAWBWDWEIVTCWAWCKLUFVTWE
+    AIWBVTWEAVPGQHZJHZWCKHZAVTWAWGWCKVTVQWFAJVTVQVRGQHZWFVNVOVQWIIVSVNWIVQVNVQU
+    LDWIVQIVNVQBCUGZUHVQUIMNOVSVNWIWFIVOVSWFWIVPVRGQLNPRUJUMVTVOAUNUOZWHAIVNVOV
+    SUPVTSVPTUQZWKVTWLSVRTUQZVNVOWMVSVNVQURDWMWJVQUSMOVSVNWLWMUTVOVPVRSTVAPVBVO
+    VNWLWKUTZVSVOAVCDWNBAVEAVDMVFVGBAVHVIRVJVKVL $.
+
+  ${
+    $d U s $.  $d V s $.  $d W s $.
+    $( There exists a symbol such that its concatenation after the prefix
+       obtained by deleting the last symbol of a nonempty word results in the
+       word itself.  (Contributed by AV, 5-Oct-2018.)  (Revised by AV,
+       9-May-2020.) $)
+    ccats1pfxeqrex $p |- ( ( W e. Word V /\ U e. Word V
+                              /\ ( # ` U ) = ( ( # ` W ) + 1 ) )
+                            -> ( W = ( U prefix ( # ` W ) )
+                                 -> E. s e. V U = ( W ++ <" s "> ) ) ) $=
+      ( cword wcel chash cfv c1 caddc co w3a cs1 cconcat cc0 clt wbr wb syl2anc
+      wceq clsw cpfx cv wrex c0 wne simp2 cn0 lencl 3ad2ant1 nn0p1nn nngt0 3syl
+      cn breq2 3ad2ant3 mpbird cfn wrdfin fihashneq0 syl lswcl ccats1pfxeq s1eq
+      biimpa oveq2d rspceeqv syl6an ) CBEZFZAVIFZAGHZCGHZIJKZTZLZAUAHZBFZCAVMUB
+      KTACVQMZNKZTACDUCZMZNKZTDBUDVPVKAUEUFZVRVJVKVOUGZVPVKOVLPQZWDWEVPWFOVNPQZ
+      VPVMUHFZVNUNFWGVJVKWHVOBCUIUJVMUKVNULUMVOVJWFWGRVKVLVNOPUOUPUQVKWFWDVKAUR
+      FWFWDRBAUSAUTVAVESBAVBSABCVCDVQBWCVTAWAVQTWBVSCNWAVQVDVFVGVH $.
+  $}
+
+  $( An ~ opth -like theorem for recovering the two halves of a concatenated
+     word.  (Contributed by Mario Carneiro, 1-Oct-2015.)  (Proof shortened by
+     AV, 12-Oct-2022.) $)
+  ccatopth $p |- ( ( ( A e. Word X /\ B e. Word X ) /\
+    ( C e. Word X /\ D e. Word X ) /\ ( # ` A ) = ( # ` C ) ) ->
+      ( ( A ++ B ) = ( C ++ D ) <-> ( A = C /\ B = D ) ) ) $=
+    ( wcel wa chash cfv wceq cconcat co cpfx pfxccat1 caddc cop csubstr ccatlen
+    syl 3eqtr3d cword w3a oveq1 oveq2 sylan9eqr eqeqan12d imbitrid 3impb simpl3
+    wi simpr fveq2d simpl1 simpl2 opeq12d oveq12d swrdccat2 jcad oveq12 impbid1
+    ex ) AEUAZFBVBFGZCVBFDVBFGZAHIZCHIZJZUBZABKLZCDKLZJZACJZBDJZGVHVKVLVMVCVDVG
+    VKVLUJVKVIVEMLZVJVEMLZJVCVDVGGZGVLVIVJVEMUCVCVPVNAVOCEABNVGVDVOVJVFMLCVEVFV
+    JMUDECDNUEUFUGUHVHVKVMVHVKGZVIVEVEBHIOLZPZQLZVJVFVFDHIOLZPZQLZBDVQVIVJVSWBQ
+    VHVKUKZVQVEVFVRWAVCVDVGVKUIVQVIHIZVJHIZVRWAVQVIVJHWDULVQVCWEVRJVCVDVGVKUMZE
+    EABRSVQVDWFWAJVCVDVGVKUNZEECDRSTUOUPVQVCVTBJWGEABUQSVQVDWCDJWHECDUQSTVAURAC
+    BDKUSUT $.
+
+  $( An ~ opth -like theorem for recovering the two halves of a concatenated
+     word.  (Contributed by Mario Carneiro, 1-Oct-2015.) $)
+  ccatopth2 $p |- ( ( ( A e. Word X /\ B e. Word X ) /\
+    ( C e. Word X /\ D e. Word X ) /\ ( # ` B ) = ( # ` D ) ) ->
+      ( ( A ++ B ) = ( C ++ D ) <-> ( A = C /\ B = D ) ) ) $=
+    ( wcel wa chash cfv wceq w3a cconcat co caddc ccatlen cn0 lencl syl nn0cnd
+    wi cword fveq2 3ad2ant1 simp3 oveq2d eqtrd 3ad2ant2 eqeq12d simp1l addcan2d
+    simp2l simp2r bitrd imbitrid ccatopth biimpd 3expia 3adant3 oveq12 impbid1
+    com23 mpdd ) AEUAZFZBVCFZGZCVCFZDVCFZGZBHIZDHIZJZKZABLMZCDLMZJZACJBDJGZVMVP
+    AHIZCHIZJZVQVPVNHIZVOHIZJZVMVTVNVOHUBVMWCVRVKNMZVSVKNMZJVTVMWAWDWBWEVMWAVRV
+    JNMZWDVFVIWAWFJVLEEABOUCVMVJVKVRNVFVIVLUDUEUFVIVFWBWEJVLEECDOUGUHVMVRVSVKVM
+    VRVMVDVRPFVDVEVIVLUIEAQRSVMVSVMVGVSPFVFVGVHVLUKECQRSVMVKVMVHVKPFVFVGVHVLULE
+    DQRSUJUMUNVFVIVPVTVQTTVLVFVIGVTVPVQVFVIVTVPVQTVFVIVTKVPVQABCDEUOUPUQVAURVBA
+    CBDLUSUT $.
+
+  $( Concatenation of words is left-cancellative.  (Contributed by Mario
+     Carneiro, 2-Oct-2015.) $)
+  ccatlcan $p |- ( ( A e. Word X /\ B e. Word X /\
+    C e. Word X ) -> ( ( C ++ A ) = ( C ++ B ) <-> A = B ) ) $=
+    ( cword wcel w3a cconcat co wceq wa wb chash cfv eqid ccatopth mp3an3 3coml
+    3impdi biantrur bitr4di ) ADEZFZBUBFZCUBFZGCAHICBHIJZCCJZABJZKZUHUEUCUDUFUI
+    LZUEUCUDUJUEUCKUEUDKCMNZUKJUJUKOCACBDPQSRUGUHCOTUA $.
+
+  $( Concatenation of words is right-cancellative.  (Contributed by Mario
+     Carneiro, 2-Oct-2015.) $)
+  ccatrcan $p |- ( ( A e. Word X /\ B e. Word X /\
+    C e. Word X ) -> ( ( A ++ C ) = ( B ++ C ) <-> A = B ) ) $=
+    ( cword wcel w3a cconcat co wceq wa chash cfv eqid ccatopth2 mp3an3 3impdir
+    wb biantru bitr4di ) ADEZFZBUAFZCUAFZGACHIBCHIJZABJZCCJZKZUFUBUDUCUEUHRZUBU
+    DKUCUDKCLMZUJJUIUJNACBCDOPQUGUFCNST $.
+
+  $( Decompose a nonempty word by separating off the first symbol.
+     (Contributed by Stefan O'Rear, 25-Aug-2015.)  (Revised by Mario Carneiro,
+     1-Oct-2015.)  (Proof shortened by AV, 12-Oct-2022.) $)
+  wrdeqs1cat $p |- ( ( W e. Word A /\ W =/= (/) ) -> W =
+      ( <" ( W ` 0 ) "> ++ ( W substr <. 1 , ( # ` W ) >. ) ) ) $=
+    ( cword wcel c0 wne wa c1 cpfx co chash cfv cop csubstr cconcat cc0 cs1 cfz
+    wceq cn0 simpl cfn wrdfin 1elfz0hash sylan lennncl nnnn0d cuz eluzfz2 nn0uz
+    eleq2s syl ccatpfx syl3anc pfx1 oveq1d pfxid adantr 3eqtr3rd ) BACDZBEFZGZB
+    HIJZBHBKLZMNJZOJZBVDIJZPBLQZVEOJBVBUTHPVDRJZDZVDVIDZVFVGSUTVAUAUTBUBDVAVJAB
+    UCBUDUEVBVDTDVKVBVDABUFUGVKVDPUHLTPVDUIUJUKULABHVDUMUNVBVCVHVEOABUOUPUTVGBS
+    VAABUQURUS $.
+
+  ${
+    $d x A $.  $d x B $.  $d x X $.
+    $( Express a word with an extra symbol as the union of the word and the new
+       value.  (Contributed by Mario Carneiro, 28-Feb-2016.) $)
+    cats1un $p |- ( ( A e. Word X /\ B e. X ) ->
+      ( A ++ <" B "> ) = ( A u. { <. ( # ` A ) , B >. } ) ) $=
+      ( vx wcel wa cc0 chash cfv cfzo csn cun wceq cn0 adantr cvv adantl fveq2d
+      co wf cword cs1 cconcat cop ccatws1cl syl c1 caddc ccatws1leng oveq2d cuz
+      wrdf lencl nn0uz eleqtrdi fzosplitsn eqtrd feq2d mpbid ffnd cin eqid fsng
+      c0 mpbiri sylan fzodisjsn a1i fun syl21anc cv wo elun ccats1val1g wne vex
+      3expa simpr fzonel nelne2 sylancl necomd fvunsng sylancr eqtr4d cdm elexd
+      wn fdmd eleq2d mtbiri fsnunfv syl3anc simpl cn s1leng 1nn eqeltrdi lbfzo0
+      s1cl sylibr ccatval3 nn0cnd addlidd 3eqtr2rd elsni eqeq12d syl5ibrcom imp
+      s1fv jaodan sylan2b eqfnfvd ) ACUAZEZBCEZFZDGAHIZJSZXRKZLZABUBZUCSZAXRBUD
+      KZLZXQYACYCXQGYCHIZJSZCYCTZYACYCTXQYCXNEYHCABUECYCULUFXQYGYACYCXQYGGXRUGU
+      HSZJSZYAXQYFYIGJCABCUIUJXOYJYAMZXPXOXRGUKIZEYKXOXRNYLCAUMZUNUOGXRUPUFOUQU
+      RUSUTXQYACBKZLZYEXQXSCATZXTYNYDTZXSXTVAVDMZYAYOYETXOYPXPCAULOZXOXRNEZXPYQ
+      YMYTXPFYQYDYDMYDVBXRBNCYDVCVEVFYRXQGXRVGVHXSXTCYNAYDVIVJUTDVKZYAEXQUUAXSE
+      ZUUAXTEZVLUUAYCIZUUAYEIZMZUUAXSXTVMXQUUBUUFUUCXQUUBFZUUDUUAAIZUUEXOXPUUBU
+      UDUUHMBUUACACVNVQUUGUUAPEXRUUAVOUUEUUHMDVPUUGUUAXRUUGUUBXRXSEZWHUUAXRVOXQ
+      UUBVRGXRVSZUUAXRXSVTWAWBAXRBUUAPWCWDWEXQUUCUUFXQUUFUUCXRYCIZXRYEIZMXQUULB
+      GXRUHSZYCIZUUKXQXRPEZXPXRAWFZEZWHUULBMXOUUOXPXOXRNYMWGOXOXPVRXQUUQUUIUUJX
+      QUUPXSXRXQXSCAYSWIWJWKAPCXRBWLWMXQUUNGYBIZBXQXOYBXNEZGGYBHIZJSEZUUNUURMXO
+      XPWNXPUUSXOBCWTQXPUVAXOXPUUTWOEUVAXPUUTUGWOBCWPWQWRUUTWSXAQCAYBGXBWMXPUUR
+      BMXOBCXJQUQXQUUMXRYCXQXRXQXRXOYTXPYMOXCXDRXEUUCUUDUUKUUEUULUUCUUAXRYCUUAX
+      RXFZRUUCUUAXRYEUVBRXGXHXIXKXLXM $.
+  $}
+
+  ${
+    $d n x A $.  $d m n x y z B $.  $d x ch $.  $d m n y z ph $.  $d x ta $.
+    $d x th $.
+    wrdind.1 $e |- ( x = (/) -> ( ph <-> ps ) ) $.
+    wrdind.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    wrdind.3 $e |- ( x = ( y ++ <" z "> ) -> ( ph <-> th ) ) $.
+    wrdind.4 $e |- ( x = A -> ( ph <-> ta ) ) $.
+    wrdind.5 $e |- ps $.
+    wrdind.6 $e |- ( ( y e. Word B /\ z e. B ) -> ( ch -> th ) ) $.
+    $( Perform induction over the structure of a word.  (Contributed by Mario
+       Carneiro, 27-Sep-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.)
+       (Proof shortened by AV, 12-Oct-2022.) $)
+    wrdind $p |- ( A e. Word B -> ta ) $=
+      ( wcel wceq wi co vn vm cword cv chash cfv wral cn0 lencl cc0 caddc eqeq2
+      c1 imbi1d ralbidv c0 cfn wb wrdfin fihasheq0 mpbiri biimtrdi rgen fveqeq2
+      syl imbi12d cbvralvw wa cmin cpfx clsw cs1 cconcat wsbc simprl fzossfz cn
+      cfzo simprr nn0p1nn ad2antrr eqeltrd fzo0end sselid pfxlen syl2anc oveq1d
+      cfz cc nn0cn ax-1cn pncan sylancl 3eqtrd vex sbcie dfsbcq simplr cz nn0zd
+      bitr3id 1zzd zsubcld pfxclz mpdan ad2antrl rspcdva mpd wne cle wbr nnge1d
+      wrdlenge1n0 mpbird lswcl oveq1 sbceq1d oveq2d imbi2d a1i ccatws1cl adantl
+      s1eq sbcied 3imtr4d vtocl2ga hashnncl pfxlswccat eqcomd sbceq1a ralrimiva
+      mpbid expr ex biimtrid nn0ind eqidd rspcv mp2d ) IJUCZQZFUDZUEUFZIUEUFZRZ
+      ASZFYTUGZUUDUUDRZEUUAUUDUHQUUGJIUIUUCUAUDZRZASZFYTUGUUCUJRZASZFYTUGUUCUBU
+      DZRZASZFYTUGZUUCUUNUMUKTZRZASZFYTUGZUUGUAUBUUDUUIUJRZUUKUUMFYTUVBUUJUULAU
+      UIUJUUCULUNUOUUIUUNRZUUKUUPFYTUVCUUJUUOAUUIUUNUUCULUNUOUUIUURRZUUKUUTFYTU
+      VDUUJUUSAUUIUURUUCULUNUOUUIUUDRZUUKUUFFYTUVEUUJUUEAUUIUUDUUCULUNUOUUMFYTU
+      UBYTQZUULUUBUPRZAUVFUUBUQQZUULUVGURJUUBUSZUUBUTVEUVGABOKVAVBVCUUQGUDZUEUF
+      UUNRZCSZGYTUGZUUNUHQZUVAUUPUVLFGYTUUBUVJRUUOUVKACUUBUVJUUNUEVDLVFVGUVNUVM
+      UVAUVNUVMVHZUUTFYTUVOUVFUUSAUVOUVFUUSVHZVHZAAFUUBUUCUMVITZVJTZUUBVKUFZVLZ
+      VMTZVNZUVQAFUVSVNZUWCUVQUVSUEUFZUUNRZUWDUVQUWEUVRUURUMVITZUUNUVQUVFUVRUJU
+      UCWHTZQUWEUVRRUVOUVFUUSVOZUVQUJUUCVRTZUWHUVRUJUUCVPUVQUUCVQQZUVRUWJQUVQUU
+      CUURVQUVOUVFUUSVSZUVNUURVQQUVMUVPUUNVTWAWBZUUCWCVEWDJUUBUVRWEWFUVQUUCUURU
+      MVIUWLWGUVQUUNWIQZUMWIQUWGUUNRUVNUWNUVMUVPUUNWJWAWKUUNUMWLWMWNUVQUVLUWFUW
+      DSGYTUVSUVJUVSRZUVKUWFCUWDUVJUVSUUNUEVDCAFUVJVNZUWOUWDACFUVJGWOLWPZAFUVJU
+      VSWQZXAVFUVNUVMUVPWRUVFUVSYTQZUVOUUSUVFUVRWSQUWSUVFUUCUMUVFUUCJUUBUIWTUVF
+      XBXCJUUBUVRXDXEXFZXGXHUVQUWSUVTJQZUWDUWCSZUWTUVQUVFUUBUPXIZUXAUWIUVQUXCUM
+      UUCXJXKZUVQUUCUWMXLUVFUXCUXDURUVOUUSJUUBXMXFXNJUUBXOWFUWPAFUVJHUDZVLZVMTZ
+      VNZSUWDAFUVSUXFVMTZVNZSUXBGHUVSUVTYTJUWOUWPUWDUXHUXJUWRUWOAFUXGUXIUVJUVSU
+      XFVMXPXQVFUXEUVTRZUXJUWCUWDUXKAFUXIUWBUXKUXFUWAUVSVMUXEUVTYCXRXQXSUVJYTQU
+      XEJQVHZCDUWPUXHPUWPCURUXLUWQXTUXLADFUXGYTJUVJUXEYAUUBUXGRADURUXLMYBYDYEYF
+      WFXHUVQUUBUWBRZAUWCURUVQUVFUXCUXMUWIUVQUWKUXCUWMUVQUVHUWKUXCURUVFUVHUVOUU
+      SUVIXFUUBYGVEYLUVFUXCVHUWBUUBJUUBYHYIWFAFUWBYJVEXNYMYKYNYOYPVEUUAUUDYQUUF
+      UUHESFIYTUUBIRUUEUUHAEUUBIUUDUEVDNVFYRYS $.
+  $}
+
+  ${
+    $d n w x A $.  $d m n w x y z B $.  $d m n s u w x y z X $.
+    $d m n s u w x y z Y $.  $d w x ch $.  $d m n s u y z ph $.  $d x ta $.
+    $d w x th $.  $d w rh $.
+    wrd2ind.1 $e |- ( ( x = (/) /\ w = (/) ) -> ( ph <-> ps ) ) $.
+    wrd2ind.2 $e |- ( ( x = y /\ w = u ) -> ( ph <-> ch ) ) $.
+    wrd2ind.3 $e |- ( ( x = ( y ++ <" z "> ) /\ w = ( u ++ <" s "> ) )
+                      -> ( ph <-> th ) ) $.
+    wrd2ind.4 $e |- ( x = A -> ( rh <-> ta ) ) $.
+    wrd2ind.5 $e |- ( w = B -> ( ph <-> rh ) ) $.
+    wrd2ind.6 $e |- ps $.
+    wrd2ind.7 $e |- ( ( ( y e. Word X /\ z e. X ) /\ ( u e. Word Y /\ s e. Y )
+                        /\ ( # ` y ) = ( # ` u ) ) -> ( ch -> th ) ) $.
+    $( Perform induction over the structure of two words of the same length.
+       (Contributed by AV, 23-Jan-2019.)  (Proof shortened by AV,
+       12-Oct-2022.) $)
+    wrd2ind $p |- ( ( A e. Word X /\ B e. Word Y /\ ( # ` A ) = ( # ` B ) )
+                    -> ta ) $=
+      ( vn vm cword wcel chash cfv wceq cv wa wi wral cn0 lencl cc0 c1 co eqeq2
+      anbi2d imbi1d 2ralbidv weq wb eqeq1 adantl c0 cfn wrdfin fihasheq0 syl ex
+      biimtrdi impcomd fveq2 eqeqan12d fveqeq2 adantr anbi12d imbi12d cmin cpfx
+      ancoms clsw cs1 cconcat wsbc nn0zd 1zzd zsubcld pfxclz mpdan ad2antrl wne
+      cz simprll cle cn eleq1 eqcoms imbitrrid impcom nnge1d wrdlenge1n0 mpbird
+      wbr lswcl syl2anc jca simprlr ad2antll simplr oveq1d cfz ad2antrr eqeltrd
+      pfxlen oveq1 imp vex sbc2ie a1i simpr sbceq1d dfsbcq sbccom eqeq2d oveq2d
+      s1eq imbi2d ccatws1cl nfv hashnncl mpbid pfxlswccat eqcomd sbceq1a rspcv
+      cc w3a caddc eqcom bitrid mpbiri com13 com24 imp31 sylbid rgen2 cbvraldva
+      cbvralvw nn0p1nn jca32 adantlr simprl simprrl cfzo fzossfz simprrr sselid
+      fzo0end oveq2 eleq12d 3eqtr4d ax-1cn sylancl 3eqtrd expcom bicomi sbcbidv
+      nn0cn pncan 3bitrd rspcdv rspcimdv bitrdi simpll syl3anc sbc2iegf 3imtr4d
+      syl3c bitrd vtocl4ga sylc sylan9bb expr ralrimivva biimtrid nn0ind anbi1d
+      eqtr2 3ad2ant1 ralbidv 3ad2ant2 mpd eqidd com23 expd com34 3adant2 mp2d )
+      LNUFZUGZMOUFZUGZLUHUIZMUHUIZUJZUUAZGUKZUHUIZUXHUJZUXLUXGUJZULZFUMZGUXCUNZ
+      UXGUXGUJZEUXJUXLJUKZUHUIZUJZUXNULZAUMZGUXCUNZJUXEUNZUXQUXDUXFUYEUXIUXDUXG
+      UOUGUYENLUPUYAUXLUDUKZUJZULZAUMZGUXCUNJUXEUNUYAUXLUQUJZULZAUMZGUXCUNJUXEU
+      NUYAUXLUEUKZUJZULZAUMZGUXCUNZJUXEUNZUYAUXLUYMURUUBUSZUJZULZAUMZGUXCUNJUXE
+      UNZUYEUDUEUXGUYFUQUJZUYIUYLJGUXEUXCVUDUYHUYKAVUDUYGUYJUYAUYFUQUXLUTVAVBVC
+      UDUEVDZUYIUYPJGUXEUXCVUEUYHUYOAVUEUYGUYNUYAUYFUYMUXLUTVAVBVCUYFUYSUJZUYIV
+      UBJGUXEUXCVUFUYHVUAAVUFUYGUYTUYAUYFUYSUXLUTVAVBVCUYFUXGUJZUYIUYCJGUXEUXCV
+      UGUYHUYBAVUGUYGUXNUYAUYFUXGUXLUTVAVBVCUYLJGUXEUXCUXSUXEUGZUXKUXCUGZULZUYJ
+      UYAAVUJUYJUYAAUMVUJUYJULUYAUQUXTUJZAUYJUYAVUKVEVUJUXLUQUXTVFVGVUHVUIUYJVU
+      KAUMVUHVUKUYJVUIAVUHVUKUXSVHUJZUYJVUIAUMUMVUKUXTUQUJZVUHVULUQUXTUUCVUHUXS
+      VIUGZVUMVULVEOUXSVJZUXSVKVLUUDVUIUYJVULAVUIUYJUXKVHUJZVULAUMVUIUXKVIUGZUY
+      JVUPVENUXKVJZUXKVKVLVUPVULAVUPVULULABUBQUUEVMVNUUFVNUUGUUHUUIVMVOUUJUYRHU
+      KZUHUIZKUKZUHUIZUJZVUTUYMUJZULZCUMZHUXCUNZKUXEUNZUYMUOUGZVUCUYQVVGJKUXEJK
+      VDZUYPVVFGHUXCGHVDZVVJUYPVVFVEVVKVVJULZUYOVVEACVVLUYAVVCUYNVVDVVKVVJUXLVU
+      TUXTVVBUXKVUSUHVPUXSVVAUHVPVQVVKUYNVVDVEVVJUXKVUSUYMUHVRVSVTRWAWDUUKUULVV
+      IVVHVUCVVIVVHULZVUBJGUXEUXCVVMVUJVUAAVVMVUJVUAULZULZAAJUXSUXTURWBUSZWCUSZ
+      UXSWEUIZWFZWGUSZWHZGUXKUXLURWBUSZWCUSZUXKWEUIZWFZWGUSZWHZVVOVVQUXEUGZVVRO
+      UGZULZVWCUXCUGZVWDNUGZULULZAJVVQWHZGVWCWHZVWCUHUIZVVQUHUIZUJZULZVWGVVIVVN
+      VWMVVHVVIVVNULZVWJVWKVWLVWTVWHVWIVUJVWHVVIVUAVUHVWHVUIVUHVVPWPUGVWHVUHUXT
+      URVUHUXTOUXSUPWIVUHWJWKOUXSVVPWLWMVSZWNVWTVUHUXSVHWOZVWIVVIVUHVUIVUAWQZVW
+      TVXBURUXTWRXGZVWTUXTVVNVVIUXTWSUGZVUAVVIVXEUMZVUJUYTUYAVXFUYTUYAUYSUXTUJZ
+      VXFUXLUYSUXTVFVVIVXEVXGUYSWSUGZUYMUUMZVXEVXHVEUXTUYSUXTUYSWSWTXAXBVNXCVGX
+      CXDVWTVUHVXBVXDVEVXCOUXSXEVLXFOUXSXHXIXJVUJVWKVVIVUAVUIVWKVUHVUIVWBWPUGVW
+      KVUIUXLURVUIUXLNUXKUPWIVUIWJWKNUXKVWBWLWMVGZWNVWTVUIUXKVHWOZVWLVVIVUHVUIV
+      UAXKZVWTVXKURUXLWRXGZVWTUXLVVNVVIUXLWSUGZUYTVVIVXNUMVUJUYAVVIVXNUYTVXHVXI
+      UXLUYSWSWTXBXLXCXDVWTVUIVXKVXMVEVXLNUXKXEVLXFNUXKXHXIUUNUUOVVOVWOVWRVVOVU
+      JVVHVWRVWPUYMUJZULZVWOVVMVUJVUAUUPVVIVVHVVNXMVVOVWRVXOVVOVWBVVPVWPVWQVVOU
+      XLUXTURWBVVMVUJUYAUYTUUQXNVVOVUIVWBUQUXLXOUSZUGZVWPVWBUJVVMVUHVUIVUAXKZVV
+      OUQUXLUURUSZVXQVWBUQUXLUUSVVOVXNVWBVXTUGVVOUXLUYSWSVVMVUJUYAUYTUUTZVVIVXH
+      VVHVVNVXIXPZXQZUXLUVBVLUVAZNUXKVWBXRXIZVVOVUHVVPUQUXTXOUSZUGZVWQVVPUJVVMV
+      UHVUIVUAWQZVVOVYGVXRVYDVUAVYGVXRVEZVVMVUJUYAVYIUYTVYIUXTUXLUXTUXLUJVVPVWB
+      VYFVXQUXTUXLURWBXSUXTUXLUQXOUVCUVDXAVSXLXFOUXSVVPXRXIUVEZVVOVWPVWBUYSURWB
+      USZUYMVYEVVOUXLUYSURWBVYAXNVVOUYMYTUGZURYTUGVYKUYMUJVVIVYLVVHVVNUYMUVLXPU
+      VFUYMURUVMUVGUVHXJVUJVVGVXPVWOUMZKVVQUXEVXAVUJVVAVVQUJZULZVVFVYMHVWCUXCVU
+      JVWKVYNVXJVSVYOVUSVWCUJZULZVVEVXPCVWOVYQVVCVWRVVDVXOVYOVYPVVCVWRVEZVYNVYP
+      VYRUMVUJVYPVYNVYRVYPVYNVUTVWPVVBVWQVUSVWCUHVPVVAVVQUHVPZVQUVIVGXTVYPVVDVX
+      OVEVYOVUSVWCUYMUHVRVGVTVYQCAJVVAWHZGVUSWHZVYTGVWCWHZVWOCWUAVEVYQWUACACGJV
+      USVVAHYAZKYAZRYBUVJYCVYQVYTGVUSVWCVYOVYPYDYEVYOWUBVWOVEZVYPVYNWUEVUJVYNVY
+      TVWNGVWCAJVVAVVQYFUVKVGVSUVNWAUVOUVPUWBVYJXJAGVUSWHZJVVAWHZVVCULZAGVUSIUK
+      ZWFZWGUSZWHZJVVAPUKZWFZWGUSZWHZUMVWNGVUSWHZVUTVWQUJZULZWULJVVQWUNWGUSZWHZ
+      UMZWUSVWAGWUKWHZUMZVWSVWGUMVWSVWAGVWCWUJWGUSZWHZUMKPHIVVQVVRVWCVWDUXEOUXC
+      NVYNWUHWUSWUPWVAVYNWUGWUQVVCWURVYNWUGWUFJVVQWHWUQWUFJVVAVVQYFAJGVVQVUSYGU
+      VQVYNVVBVWQVUTVYSYHVTVYNWULJWUOWUTVVAVVQWUNWGXSYEWAWUMVVRUJZWVBWUSWULJVVT
+      WHZUMWVDWVGWVAWVHWUSWVGWULJWUTVVTWVGWUNVVSVVQWGWUMVVRYJYIYEYKWVGWVHWVCWUS
+      WVHWVCVEWVGAJGVVTWUKYGYCYKUWCVYPWUSVWSWVCWVFVYPWUQVWOWURVWRVWNGVUSVWCYFVU
+      SVWCVWQUHVRVTVYPVWAGWUKWVEVUSVWCWUJWGXSYEWAWUIVWDUJZWVFVWGVWSWVIVWAGWVEVW
+      FWVIWUJVWEVWCWGWUIVWDYJYIYEYKVVAUXEUGWUMOUGULZVUSUXCUGWUINUGULZULZVVCWUGW
+      UPWVLVVCWUGWUPUMWVLVVCULZCDWUGWUPWVMWVKWVJVVCCDUMWVJWVKVVCXMZWVJWVKVVCUVR
+      WVLVVCYDUCUVSWUGCVEWVMACJGVVAVUSWUDWUCVVKVVJACVERWDYBYCWVMWUOUXEUGZWUKUXC
+      UGZWUPDVEWVJWVOWVKVVCOVVAWUMYLXPWVMWVKWVPWVNNVUSWUIYLVLADJGWUOWUKUXEUXCDJ
+      YMDGYMWVPJYMUXKWUKUJUXSWUOUJADVESWDUVTXIUWAVMVOUWDUWEVVOUXSVVTUJZUXKVWFUJ
+      ZAVWGVEVVOVUHVXBWVQVYHVVOVXEVXBVVOUXTUYSWSVUAUXTUYSUJVVMVUJUXLUXTUYSUWLXL
+      VYBXQVVOVUNVXEVXBVEVUJVUNVVMVUAVUHVUNVUIVUOVSWNUXSYNVLYOVUHVXBULVVTUXSOUX
+      SYPYQXIVVOVUIVXKWVRVXSVVOVXNVXKVYCVVOVUQVXNVXKVEVUJVUQVVMVUAVUIVUQVUHVURV
+      GWNUXKYNVLYOVUIVXKULVWFUXKNUXKYPYQXIWVQAVWAWVRVWGAJVVTYRVWAGVWFYRUWFXIXFU
+      WGUWHVMUWIUWJVLUWMUXFUXDUYEUXQUMUXIUYDUXQJMUXEUXSMUJZUYCUXPGUXCWVSUYBUXOA
+      FWVSUYAUXMUXNWVSUXTUXHUXLUXSMUHVPYHUWKUAWAUWNYSUWOUWPUXJUXGUWQUXDUXIUXQUX
+      REUMUMZUXFUXDUXIWVTUXDUXIUXRUXQEUXDUXIUXRUXQEUMUXDUXQUXIUXRULZEUXPWWAEUMG
+      LUXCUXKLUJZUXOWWAFEWWBUXMUXIUXNUXRUXKLUXHUHVRUXKLUXGUHVRVTTWAYSUWRUWSUWTX
+      TUXAUXB $.
+  $}
 
 
 $(
