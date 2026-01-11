@@ -194083,6 +194083,13 @@ $)
       IGJECKAECLCABMN $.
   $}
 
+  $( An edge of a hypergraph contains only vertices.  (Contributed by Alexander
+     van der Vekens, 18-Feb-2018.)  (Revised by AV, 4-Jun-2021.) $)
+  uhgredgrnv $p |- ( ( G e. UHGraph /\ E e. ( Edg ` G ) /\ N e. E )
+                     -> N e. ( Vtx ` G ) ) $=
+    ( cuhgr wcel cedg cfv cvtx wa cpw wi edguhgr elelpwi expcom syl 3impia ) BD
+    EZABFGEZCAEZCBHGZEZQRIATJEZSUAKABLSUBUACATMNOP $.
+
 
 $(
 ###############################################################################
