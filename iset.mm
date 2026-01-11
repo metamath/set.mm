@@ -194054,6 +194054,13 @@ $)
       CFGDHBCIJGBAKDJLADMNODCEPABCDFEQR $.
   $}
 
+  $( A hypergraph has no edges iff its edge function is empty.  (Contributed by
+     AV, 21-Oct-2020.)  (Proof shortened by AV, 8-Dec-2021.) $)
+  uhgriedg0edg0 $p |- ( G e. UHGraph -> ( ( Edg ` G ) = (/)
+                                          <-> ( iEdg ` G ) = (/) ) ) $=
+    ( cuhgr wcel ciedg cfv wfun cedg c0 wceq wb eqid uhgrfun edg0iedg0g mpdan )
+    ABCADEZFAGEZHIOHIJOAOKZLPAOBQPKMN $.
+
 
 $(
 ###############################################################################
