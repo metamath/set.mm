@@ -194090,6 +194090,19 @@ $)
     ( cuhgr wcel cedg cfv cvtx wa cpw wi edguhgr elelpwi expcom syl 3impia ) BD
     EZABFGEZCAEZCBHGZEZQRIATJEZSUAKABLSUBUACATMNOP $.
 
+  ${
+    $d E x $.  $d G x $.
+    $( Properties of an edge of a pseudograph.  (Contributed by AV,
+       8-Nov-2020.) $)
+    edgupgren $p |- ( ( G e. UPGraph /\ E e. ( Edg ` G ) )
+                -> ( E e. ~P ( Vtx ` G ) /\ ( E ~~ 1o \/ E ~~ 2o ) ) ) $=
+      ( vx cupgr wcel cedg cfv wa cv c1o cen wbr c2o cvtx crab ciedg eqid breq1
+      wo cpw crn edgvalg eleq2d biimpa wi cdm upgrfen frnd sseld adantr orbi12d
+      mpd wceq elrab sylib ) BDEZABFGZEZHZACIZJKLZUTMKLZSZCBNGZTZOZEZAVEEAJKLZA
+      MKLZSZHUSABPGZUAZEZVGUPURVMUPUQVLABDUBUCUDUPVMVGUEURUPVLVFAUPVKUFVFVKCVKB
+      VDVDQVKQUGUHUIUJULVCVJCAVEUTAUMVAVHVBVIUTAJKRUTAMKRUKUNUO $.
+  $}
+
 
 $(
 ###############################################################################
