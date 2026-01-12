@@ -194156,6 +194156,19 @@ $)
       PWCVQWGUKZWHVOWIVSVOWGJNZULRSWJUMRSUNJDUSUOVQJVQCDGVQUPZUQUTZURWGVQVATVOV
       SVBIVQAVCVJWCWDWGLZWFQZQZWBWEVTOZFDPEDPZWOVOWIWMWQVOVSWNVDZWOVOWIWRWLTWCW
       MWFVEEFWGVQWDCDGWKVFVGWOWAWPEFDDWOAWEVTWCWMWFVHVIVKVLVMVN $.
+
+    $( For each edge in a multigraph, there are two distinct vertices which are
+       connected by this edge.  (Contributed by Alexander van der Vekens,
+       9-Dec-2017.)  (Revised by AV, 25-Nov-2020.) $)
+    umgredg $p |- ( ( G e. UMGraph /\ C e. E )
+                    -> E. a e. V E. b e. V ( a =/= b /\ C = { a , b } ) ) $=
+      ( cumgr wcel wa cv wne cpr wex wrex cfv adantl wss vex wceq cvtx cpw cedg
+      c2o cen wbr eleq2i edgumgren sylan2b en2prde wi eleq1 zfpair2 elpw sseq2i
+      prss sylbbr sylbi biimtrdi adantrd imdistanri 2eximdv mpd syl r2ex sylibr
+      ex ) CIJZABJZKZELZDJFLZDJKZVLVMMZAVLVMNZUAZKZKZFOEOZVRFDPEDPVKACUBQZUCZJZ
+      AUEUFUGZKZVTVJVIACUDQZJWEBWFAHUHACUIUJWEVRFOEOZVTWDWGWCAEFUKRWEVRVSEFWEVR
+      VSVRWEVNVQWEVNULVOVQWCVNWDVQWCVPWBJZVNAVPWBUMWHVPWASZVNVPWAEFUNUOVNVPDSWI
+      VLVMDETFTUQDWAVPGUPURUSUTVARVBVHVCVDVEVREFDDVFVG $.
   $}
 
 
