@@ -73129,6 +73129,17 @@ $)
     VFVHVGUTVFPZVHVGFVAOIJZVIVAVDOSVJVFUTVJVBOHIJZUHVJOVAIJZVBVKPVAOUIVLVBVKOVA
     HSTRUAUBRTUOUJUKULUMURUSVCVBABCDUPUNUQ $.
 
+  ${
+    $d V a b $.
+    $( A set of size two is an unordered pair of two different elements.
+       (Contributed by Alexander van der Vekens, 8-Dec-2017.)  (Revised by Jim
+       Kingdon, 11-Jan-2026.) $)
+    en2prde $p |- ( V ~~ 2o -> E. a E. b ( a =/= b /\ V = { a , b } ) ) $=
+      ( c2o cen wbr cv cpr wceq wex wne wa en2 breq1 wb cvv el2v bitrdi biimpcd
+      pr2ne ancrd 2eximdv mpd ) ADEFZABGZCGZHZIZCJBJUEUFKZUHLZCJBJBCAMUDUHUJBCU
+      DUHUIUHUDUIUHUDUGDEFZUIAUGDENUKUIOBCUEUFPPTQRSUAUBUC $.
+  $}
+
   $( An unordered pair, with decidable equality for the specified elements, has
      either one or two elements.  (Contributed by Jim Kingdon, 7-Jan-2026.) $)
   pr1or2 $p |- ( ( A e. C /\ B e. D /\ DECID A = B )
