@@ -31587,6 +31587,19 @@ $)
     ( wne wceq wn cif df-ne iffalse sylbi ) ABEABFZGLCDHDFABILCDJK $.
 
   ${
+    $d A x $.  $d B x $.  $d C x $.  $d ph x $.
+    $( Membership in a conditional operator.  (Contributed by NM,
+       14-Feb-2005.) $)
+    elif $p |- ( A e. if ( ph , B , C ) <->
+        ( ( ph /\ A e. B ) \/ ( -. ph /\ A e. C ) ) ) $=
+      ( vx cif wcel cvv wa wn wo elex adantl jaoi cv eleq1 anbi1d orbi12d ancom
+      wceq df-if elab2g orbi12i bitrdi pm5.21nii ) BACDFZGZBHGZABCGZIZAJZBDGZIZ
+      KZBUFLUJUHUMUIUHABCLMULUHUKBDLMNUHUGUIAIZULUKIZKZUNEOZCGZAIZURDGZUKIZKUQE
+      BUFHURBTZUTUOVBUPVCUSUIAURBCPQVCVAULUKURBDPQRAECDUAUBUOUJUPUMUIASULUKSUCU
+      DUE $.
+  $}
+
+  ${
     ifsbdc.1 $e |- ( if ( ph , A , B ) = A -> C = D ) $.
     ifsbdc.2 $e |- ( if ( ph , A , B ) = B -> C = E ) $.
     $( Distribute a function over an if-clause.  (Contributed by Jim Kingdon,
@@ -73738,6 +73751,42 @@ $(
 $)
 
   ${
+    $d ph x $.
+    $( Using an ` if ` expression to represent a truth value by ` (/) ` or
+       ` 1o ` .  Unlike some theorems using ` if ` , ` ph ` does not need to be
+       decidable.  (Contributed by Jim Kingdon, 9-Jan-2026.) $)
+    iftrueb01 $p |- ( if ( ph , 1o , (/) ) = 1o <-> ph ) $=
+      ( vx c1o c0 cif wceq cv wcel wex 0lt1o elex2 ax-mp wa wb wi eleq2 wn elif
+      wo noel intnan biorfi bitr4i bitr3di pm4.71r sylibr exlimdv iftrue impbii
+      mpi ) ACDEZCFZAULBGZCHZBIZADCHUOJBDCKLULUNABULUNAUNMZNUNAOULUMUKHZUNUPUKC
+      UMPUQUPAQZUMDHZMZSUPAUMCDRUTUPUSURUMTUAUBUCUDUNAUEUFUGUJACDUHUI $.
+  $}
+
+  ${
+    $d A x $.
+    $( A truth value which is inhabited is equal to true.  This is a variation
+       of ~ pwntru and ~ pwtrufal .  (Contributed by Jim Kingdon,
+       10-Jan-2026.) $)
+    pw1m $p |- ( ( A e. ~P 1o /\ E. x x e. A ) -> A = 1o ) $=
+      ( c1o cpw wcel cv wex wceq wa c0 csn elpwi df1o2 sseqtrdi adantr eleqtrdi
+      wss sselda elsni syl simpr eqeltrrd snssd eqssd eqtr4di ex exlimdv imp )
+      BCDEZAFZBEZAGBCHZUIUKULAUIUKULUIUKIZBJKZCUMBUNUIBUNQUKUIBCUNBCLZMNOUMJBUM
+      UJJBUMUJUNEUJJHUMUJCUNUIBCUJUORMPUJJSTUIUKUAUBUCUDMUEUFUGUH $.
+  $}
+
+  ${
+    $d A x y $.
+    $( Expressing a truth value in terms of an ` if ` expression.  (Contributed
+       by Jim Kingdon, 10-Jan-2026.) $)
+    pw1if $p |- ( A e. ~P 1o -> if ( A = 1o , 1o , (/) ) = A ) $=
+      ( vx vy c1o cpw wcel wceq c0 cif cv wa simpr wn elif intnan biorfi bitr4i
+      wo noel sylib simprd simpld eleqtrrd pw1m sylan2 eleqtrd sylanbrc impbida
+      wex elex2 eqrdv ) ADEFZBADGZDHIZAULBJZUNFZUOAFZULUPKZUODAURUMUODFZURUPUMU
+      SKZULUPLUPUTUMMZUOHFZKZRUTUMUODHNVCUTVBVAUOSOPQZTZUAURUMUSVEUBUCULUQKZUMU
+      SUPUQULCJAFCUIUMCUOAUJCAUDUEZVFUOADULUQLVGUFVDUGUHUK $.
+  $}
+
+  ${
     $d x y $.
     $( The power set of ` 1o ` is an ordinal.  (Contributed by Jim Kingdon,
        29-Jul-2024.) $)
@@ -73951,6 +74000,19 @@ $)
       ( wem wn cv wss wo con0 wral onntri52 onntri24 syl onntri45 impbii ) CDDZ
       AEZBEZFQPFGZDDBHIAHIZORBHIAHIDDSABJABKLABMN $.
   $}
+
+  $( With a formula ` ph ` one can associate an element of ` ~P 1o ` , which
+     can therefore be thought of as the set of "truth values" (but recall that
+     there are no other genuine truth values than ` T. ` and ` F. ` , by
+     ~ nndc , which translate to ` 1o ` and ` (/) ` respectively by ~ iftrue
+     and ~ iffalse , giving ~ pwtrufal ).
+
+     As proved in ~ if0ab , the associated element of ` ~P 1o ` is the
+     extension, in ` ~P 1o ` , of the formula ` ph ` .  (Contributed by BJ,
+     15-Aug-2024.) $)
+  fmelpw1o $p |- if ( ph , 1o , (/) ) e. ~P 1o $=
+    ( c1o c0 cif cun cpw 1oex 0ex ifelpwun un0 pweqi eleqtri ) ABCDBCEZFBFABCGH
+    IMBBJKL $.
 
 
 $(
@@ -196976,19 +197038,6 @@ $)
       PQABCGRABCST $.
   $}
 
-  $( With a formula ` ph ` one can associate an element of ` ~P 1o ` , which
-     can therefore be thought of as the set of "truth values" (but recall that
-     there are no other genuine truth values than ` T. ` and ` F. ` , by
-     ~ nndc , which translate to ` 1o ` and ` (/) ` respectively by ~ iftrue
-     and ~ iffalse , giving ~ pwtrufal ).
-
-     As proved in ~ if0ab , the associated element of ` ~P 1o ` is the
-     extension, in ` ~P 1o ` , of the formula ` ph ` .  (Contributed by BJ,
-     15-Aug-2024.) $)
-  fmelpw1o $p |- if ( ph , 1o , (/) ) e. ~P 1o $=
-    ( c1o c0 cif cun cpw 1oex 0ex ifelpwun un0 pweqi eleqtri ) ABCDBCEZFBFABCGH
-    IMBBJKL $.
-
   ${
     $d x ph $.  $d x X $.  $d A x $.  $d F x $.
     bj-charfun.1 $e |- ( ph -> F = ( x e. X |-> if ( x e. A , 1o , (/) ) ) ) $.
@@ -199412,6 +199461,41 @@ $)
       wf1o cen wbr cxp wfn 2onn elexi elex fnovex mp3an12i 2omap f1oeng syl2anc
       com eqid ) CDGZHCIJZKGZURBLALGMBCNACOPZEURFLELQRSFCPTZUBURUTUCUDIKKUEUFHK
       GUQCKGUSUAHUOUGUHCDUIHCKKIUJUKABFCVADEVAUPULURUTKVAUMUN $.
+  $}
+
+  ${
+    $d A s u w y z $.  $d A s w x y z $.  $d V s u w y z $.
+    pw1map.f $e |- F = ( s e. ( ~P 1o ^m A ) |->
+      { z e. A | ( s ` z ) = 1o } ) $.
+    $( Mapping between ` ( ~P 1o ^m A ) ` and subsets of ` A ` .  (Contributed
+       by Jim Kingdon, 9-Jan-2026.) $)
+    pw1map $p |- ( A e. V -> F : ( ~P 1o ^m A ) -1-1-onto-> ~P A ) $=
+      ( vw vu wcel c1o cpw cv cfv wceq crab c0 cif wa a1i cvv wss ssrab2 elpw2g
+      cmap co cmpt mpbiri adantr fmelpw1o fmpttd 1oex pwex elmapd mpbird simplr
+      wf simpl fveq1d eqid elequ1 ifbid simpr 0ex ifex fvmptd3 eqeq1d iftrueb01
+      eqtrd bitr2di rabbidva wb elpwi dfss1 sylib dfin5 eqtr3di adantl ad2antlr
+      simplrl simpll mpbid feqmptd eleq2d fveqeq2 elrab bitrdi baibd ffvelcdmda
+      cin pw1if syl eqtr2d mpteq2dva impbida f1o2d ) BDIZEGJKZBUDUEZBKZALZELZMZ
+      JNZABOZHBHLZGLZIZJPQZUFZCFWPXDWSIZXAWRIZWPXJXDBUAXCABUBXDBDUCUGUHWPXFWSIZ
+      RZXIWRIBWQXIUPXMHBXHWQXHWQIXMXEBIZRXGUISUJXMWQBXITDWQTIZXMJUKULZSWPXLUQUM
+      UNWPXKXLRZRZXAXINZXFXDNZXRXSRZXTWTXFIZABOZXDNZYAYBXCABYAWTBIZRZXCYBJPQZJN
+      YBYFXBYGJYFXBWTXIMYGYFWTXAXIXRXSYEUOURYFHWTXHYGBXITXIUSXEWTNXGYBJPHAGUTVA
+      YAYEVBYGTIYFYBJPUKVCVDSVEVHVFYBVGVIVJXQXTYDVKZWPXSXLYHXKXLXFYCXDXLBXFWIZX
+      FYCXLXFBUAYIXFNXFBVLXFBVMVNABXFVOVPVFVQVRUNXRXTRZXAHBXEXAMZUFXIYJHBWQXAYJ
+      XKBWQXAUPWPXKXLXTVSYJWQBXATDXOYJXPSWPXQXTVTUMWAZWBYJHBYKXHYJXNRZXHYKJNZJP
+      QZYKYMXGYNJPYJXGXNYNYJXGXEXDIXNYNRYJXFXDXEXRXTVBWCXCYNAXEBWTXEJXAWDWEWFWG
+      VAYMYKWQIYOYKNYJBWQXEXAYLWHYKWJWKWLWMVHWNWO $.
+  $}
+
+  ${
+    $d A s x y z $.  $d V s y z $.
+    $( Equinumerosity of ` ( ~P 1o ^m A ) ` and the set of subsets of ` A ` .
+       (Contributed by Jim Kingdon, 10-Jan-2026.) $)
+    pw1mapen $p |- ( A e. V -> ( ~P 1o ^m A ) ~~ ~P A ) $=
+      ( vs vz wcel c1o cpw cmap co cvv cfv wceq crab cmpt wf1o cen wbr cxp wfn
+      cv fnmap 1oex pwex elex fnovex mp3an12i eqid pw1map f1oeng syl2anc ) ABEZ
+      FGZAHIZJEZUMAGZCUMDTCTKFLDAMNZOUMUOPQHJJRSULJEUKAJEUNUAFUBUCABUDULAJJHUEU
+      FDAUPBCUPUGUHUMUOJUPUIUJ $.
   $}
 
 
