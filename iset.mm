@@ -73150,6 +73150,23 @@ $)
     CULUMACQRUMVCUPSUSUMVBUOIJABATUAUBUCUDUSUTNUQUPUSUQUTABCDUEUFUGUHUIUJ $.
 
   ${
+    $d A f $.  $d B f $.
+    $( If an unordered pair is equinumerous to ordinal two, then a part is a
+       set.  (Contributed by RP, 21-Oct-2023.) $)
+    pr2cv1 $p |- ( { A , B } ~~ 2o -> A e. _V ) $=
+      ( vf cpr c2o cen wbr c0 c1o cvv wcel cfv wceq 0ex fvex eleq1 mpbii adantl
+      a1i syl cv wf1o wex df2o3 ensym eqbrtrrid bren sylib wa 1oex simplr simpr
+      vex eqtr4d wf1 wi f1of1 ad2antrr prid1 prid2 f1veqaeq syl12anc mpd wn 1n0
+      nesymi pm2.21dd wo f1of ffvelcdmd elpri adantr mpjaodan exlimiv ) ABDZEFG
+      ZHIDZVOCUAZUBZCUCZAJKZVPVQVOFGVTVPVQEVOFUDVOEUEUFVQVOCUGUHVSWACVSHVRLZAMZ
+      WAWBBMZWCWAVSWCWBJKWAHVRJJCUMZNOWBAJPQRVSWDUIZIVRLZAMZWAWGBMZWHWAWFWHWGJK
+      WAIVRJJWEUJOWGAJPQRWFWIUIZHIMZWAWJWBWGMZWKWJWBBWGVSWDWIUKWFWIULUNWJVQVOVR
+      UOZHVQKZIVQKZWLWKUPVSWMWDWIVQVOVRUQURWNWJHINUSZSWOWJHIUJUTZSVQVOHIVRVAVBV
+      CWKVDWJIHVEVFSVGVSWHWIVHZWDVSWGVOKWRVSVQVOIVRVQVOVRVIZWOVSWQSVJWGABVKTVLV
+      MVSWBVOKWCWDVHVSVQVOHVRWSWNVSWPSVJWBABVKTVMVNT $.
+  $}
+
+  ${
     $d A r s $.  $d A z $.  $d ph x $.  $d s x $.
     exmidonfinlem.a $e |- A
       = { { x e. { (/) } | ph } , { x e. { (/) } | -. ph } } $.
