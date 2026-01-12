@@ -73166,6 +73166,12 @@ $)
       MVSWBVOKWCWDVHVSVQVOHVRWSWNVSWPSVJWBABVKTVMVNT $.
   $}
 
+  $( If an unordered pair is equinumerous to ordinal two, then a part is a set.
+     (Contributed by RP, 21-Oct-2023.) $)
+  pr2cv2 $p |- ( { A , B } ~~ 2o -> B e. _V ) $=
+    ( cpr c2o cen wbr cvv wcel prcom breq1i pr2cv1 sylbir ) ABCZDEFBACZDEFBGHNM
+    DEBAIJBAKL $.
+
   ${
     $d A r s $.  $d A z $.  $d ph x $.  $d s x $.
     exmidonfinlem.a $e |- A
