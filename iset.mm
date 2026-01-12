@@ -194169,6 +194169,24 @@ $)
       AUEUFUGZKZVTVJVIACUDQZJWEBWFAHUHACUIUJWEVRFOEOZVTWDWGWCAEFUKRWEVRVSEFWEVR
       VSVRWEVNVQWEVNULVOVQWCVNWDVQWCVPWBJZVNAVPWBUMWHVPWASZVNVPWAEFUNUOVNVPDSWI
       VLVMDETFTUQDWAVPGUPURUSUTVARVBVHVCVDVEVREFDDVFVG $.
+
+    ${
+      $d E m n $.  $d G m n $.  $d M m n $.  $d N m n $.  $d U m n $.
+      $d V m n $.  $d W m n $.
+      $( An edge of a pseudograph always connects two vertices if the edge
+         contains two sets.  The two vertices/sets need not necessarily be
+         different (loops are allowed).  (Contributed by AV, 18-Nov-2021.) $)
+      upgrpredgv $p |- ( ( G e. UPGraph /\ ( M e. U /\ N e. W )
+                                        /\ { M , N } e. E )
+                         -> ( M e. V /\ N e. V ) ) $=
+        ( vm vn wcel wa cpr cv wceq wb eleq1 eqcoms biimpd wrex upgredg 3adant2
+        cupgr wo preq12bg 3ad2antl2 wi im2anan9 com12 ancoms jaod adantl sylbid
+        w3a rexlimdvva mpd ) CUDLZDALEGLMZDENZBLZUOZUTJOZKOZNPZKFUAJFUAZDFLZEFL
+        ZMZURVAVFUSUTBCFJKHIUBUCVBVEVIJKFFVBVCFLZVDFLZMZMVEDVCPZEVDPZMZDVDPZEVC
+        PZMZUEZVIUSURVLVEVSQVADEVCVDAGFFUFUGVLVSVIUHVBVLVOVIVRVOVLVIVMVJVGVNVKV
+        HVMVJVGVJVGQVCDVCDFRSTVNVKVHVKVHQVDEVDEFRSTUIUJVKVJVRVIUHVRVKVJMVIVPVKV
+        GVQVJVHVPVKVGVKVGQVDDVDDFRSTVQVJVHVJVHQVCEVCEFRSTUIUJUKULUMUNUPUQ $.
+    $}
   $}
 
 
