@@ -194230,6 +194230,20 @@ $)
         HVMVJVGVJVGQVCDVCDFRSTVNVKVHVKVHQVDEVDEFRSTUIUJVKVJVRVIUHVRVKVJMVIVPVKV
         GVQVJVHVPVKVGVKVGQVDDVDDFRSTVQVJVHVJVHQVCEVCEFRSTUIUJUKULUMUNUPUQ $.
     $}
+
+    $( An edge of a multigraph always connects two vertices.  This theorem does
+       not hold for arbitrary pseudographs: if either ` M ` or ` N ` is a
+       proper class, then ` { M , N } e. E ` could still hold ( ` { M , N } `
+       would be either ` { M } ` or ` { N } ` , see ~ prprc1 or ~ prprc2 , i.e.
+       a loop), but ` M e. V ` or ` N e. V ` would not be true.  (Contributed
+       by AV, 27-Nov-2020.) $)
+    umgrpredgv $p |- ( ( G e. UMGraph /\ { M , N } e. E )
+                      -> ( M e. V /\ N e. V ) ) $=
+      ( cumgr wcel cpr wa cpw cvtx cfv c2o cen wbr simpld cvv simpl2im eleqtrdi
+      cedg eleq2i edgumgren sylan2b eqcomi pweqi pr2cv prid1g syl prid2g prelpw
+      wb syl2anc mpbird ) BHIZCDJZAIZKZCEIDEIKZUQELZIZUSUQBMNZLZVAUSUQVDIZUQOPQ
+      ZURUPUQBUBNZIVEVFKAVGUQGUCUQBUDUEZRVCEEVCFUFUGUAUSCUQIZDUQIZUTVBUMUSCSIZV
+      IUSVKDSIZUSVEVFVKVLKVHCDUHTZRCDSUIUJUSVKVLVJVMCDSUKTCDEUQUQULUNUO $.
   $}
 
 
