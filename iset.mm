@@ -194259,6 +194259,18 @@ $)
       wb syl2anc mpbird ) BHIZCDJZAIZKZCEIDEIKZUQELZIZUSUQBMNZLZVAUSUQVDIZUQOPQ
       ZURUPUQBUBNZIVEVFKAVGUQGUCUQBUDUEZRVCEEVCFUFUGUAUSCUQIZDUQIZUTVBUMUSCSIZV
       IUSVKDSIZUSVEVFVKVLKVHCDUHTZRCDSUIUJUSVKVLVJVMCDSUKTCDEUQUQULUNUO $.
+
+    $d A a b c $.  $d E a c $.  $d G c $.
+    $( For a vertex incident to an edge there is another vertex incident to the
+       edge in a pseudograph.  (Contributed by AV, 18-Oct-2020.)  (Revised by
+       AV, 5-Dec-2020.) $)
+    upgredg2vtx $p |- ( ( G e. UPGraph /\ C e. E /\ A e. C )
+                        -> E. b e. V C = { A , b } ) $=
+      ( va vc cupgr wcel w3a cv cpr wceq wrex upgredg 3adant3 wi wa eleq2 eqeq1
+      elpr2elpr 3expia rexbidv imbi12d imbitrrid com13 3ad2ant3 rexlimdvv mpd )
+      DKLZBCLZABLZMZBINZJNZOZPZJEQIEQZBAFNOZPZFEQZUMUNVAUOBCDEIJGHRSUPUTVDIJEEU
+      OUMUQELZURELZUAZUTVDTTUNUTVGUOVDVGUOVDTUTAUSLZUSVBPZFEQZTVEVFVHVJAEUQURFU
+      DUEUTUOVHVDVJBUSAUBUTVCVIFEBUSVBUCUFUGUHUIUJUKUL $.
   $}
 
 
