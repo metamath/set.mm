@@ -33518,6 +33518,21 @@ $)
   $}
 
   ${
+    $d A b $.  $d V b $.  $d X b $.  $d Y b $.
+    $( For an element ` A ` of an unordered pair which is a subset of a given
+       set ` V ` , there is another (maybe the same) element ` b ` of the given
+       set ` V ` being an element of the unordered pair.  (Contributed by AV,
+       5-Dec-2020.) $)
+    elpr2elpr $p |- ( ( X e. V /\ Y e. V /\ A e. { X , Y } )
+                      -> E. b e. V { X , Y } = { A , b } ) $=
+      ( wcel cpr cv wceq wrex wo wa wi simprr preq12 eqcomd adantlr rspcedeq2vd
+      ex simprl prcom eqtr2di jaoi elpri syl11 3impia ) CBFZDBFZACDGZFZUIAEHZGZ
+      IZEBJZACIZADIZKUGUHLZUNUJUOUQUNMUPUOUQUNUOUQLEDBUIULUOUGUHNUOUKDIZUMUQUOU
+      RLULUIAUKCDOPQRSUPUQUNUPUQLECBUIULUPUGUHTUPUKCIZUMUQUPUSLULDCGUIAUKDCODCU
+      AUBQRSUCACDUDUEUF $.
+  $}
+
+  ${
     $d x A $.  $d x B $.
     $( Value of the ordered pair when the arguments are sets.  (Contributed by
        Mario Carneiro, 26-Apr-2015.) $)
