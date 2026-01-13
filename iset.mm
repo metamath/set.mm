@@ -33282,6 +33282,12 @@ $)
     ( wcel wa cpw cpr wss prssg elpwg bi2anan9 bitr3d ) ADFZBEFZGACHZFZBQFZGABI
     QJACJZBCJZGABQDEKORTPSUAACDLBCELMN $.
 
+  $( A pair as subset of a pair.  (Contributed by AV, 26-Oct-2020.) $)
+  ssprss $p |- ( ( A e. V /\ B e. W ) -> ( { A , B } C_ { C , D }
+                        <-> ( ( A = C \/ A = D ) /\ ( B = C \/ B = D ) ) ) ) $=
+    ( wcel wa cpr wss wceq wo prssg elprg bi2anan9 bitr3d ) AEGZBFGZHACDIZGZBSG
+    ZHABISJACKADKLZBCKBDKLZHABSEFMQTUBRUAUCACDENBCDFNOP $.
+
   ${
     $d x A $.  $d x B $.
     $( Empty set and the singleton itself are subsets of a singleton.
