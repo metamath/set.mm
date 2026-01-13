@@ -73172,6 +73172,11 @@ $)
     ( cpr c2o cen wbr cvv wcel prcom breq1i pr2cv1 sylbir ) ABCZDEFBACZDEFBGHNM
     DEBAIJBAKL $.
 
+  $( If an unordered pair is equinumerous to ordinal two, then both parts are
+     sets.  (Contributed by RP, 8-Oct-2023.) $)
+  pr2cv $p |- ( { A , B } ~~ 2o -> ( A e. _V /\ B e. _V ) ) $=
+    ( cpr c2o cen wbr cvv wcel pr2cv1 pr2cv2 jca ) ABCDEFAGHBGHABIABJK $.
+
   ${
     $d A r s $.  $d A z $.  $d ph x $.  $d s x $.
     exmidonfinlem.a $e |- A
