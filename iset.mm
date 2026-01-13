@@ -194314,6 +194314,13 @@ $)
       $.
   $}
 
+  $( A multigraph has no loops.  (Contributed by AV, 27-Oct-2020.)  (Revised by
+     AV, 30-Nov-2020.) $)
+  umgrnloop2 $p |- ( G e. UMGraph -> { N , N } e/ ( Edg ` G ) ) $=
+    ( cumgr wcel cpr cedg wn wnel cvtx wa eqid umgrpredgv simpld wceq umgredgne
+    cfv wne eqneqall mpsyl pm2.65da df-nel sylibr ) ACDZBBEZAFPZDZGUDUEHUCUFBAI
+    PZDZUCUFJZUHUHUEABBUGUGKUEKZLMBBNUIBBQUHGZBKUEABBUJOUKBBRSTUDUEUAUB $.
+
 
 $(
 ###############################################################################
