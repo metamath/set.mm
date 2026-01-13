@@ -37852,6 +37852,14 @@ $)
       ( wcel csn wss cpw snss snex elpw bitr4i ) ABDAEZBFLBGDABCHLBACIJK $.
   $}
 
+  $( An unordered pair of two sets is a member of the powerclass of a class if
+     and only if the two sets are members of that class.  (Contributed by AV,
+     8-Jan-2020.) $)
+  prelpw $p |- ( ( A e. V /\ B e. W )
+                 -> ( ( A e. C /\ B e. C ) <-> { A , B } e. ~P C ) ) $=
+    ( wcel wa cpr wss cpw prssg cvv wb prexg elpwg syl bitr4d ) ADFBEFGZACFBCFG
+    ABHZCIZSCJFZABCDEKRSLFUATMABDENSCLOPQ $.
+
   $( A pair of two sets belongs to the power class of a class containing those
      two sets.  (Contributed by Thierry Arnoux, 10-Mar-2017.) $)
   prelpwi $p |- ( ( A e. C /\ B e. C ) -> { A , B } e. ~P C ) $=
