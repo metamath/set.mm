@@ -194303,6 +194303,17 @@ $)
       MUNUOUQUR $.
   $}
 
+  ${
+    umgredgne.v $e |- E = ( Edg ` G ) $.
+    $( An edge of a multigraph always connects two different vertices.
+       Analogue of ~ umgrnloopvv .  (Contributed by AV, 27-Nov-2020.) $)
+    umgredgne $p |- ( ( G e. UMGraph /\ { M , N } e. E ) -> M =/= N ) $=
+      ( cumgr wcel cpr c2o cen wbr wne cvtx cfv cpw cedg eleq2i edgumgren cvv
+      wa sylan2b simprd wb pr2cv pr2ne 3syl mpbid ) BFGZCDHZAGZTZUIIJKZCDLZUKUI
+      BMNOGZULUJUHUIBPNZGUNULTAUOUIEQUIBRUAUBZUKULCSGDSGTULUMUCUPCDUDCDSSUEUFUG
+      $.
+  $}
+
 
 $(
 ###############################################################################
