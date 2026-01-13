@@ -33288,6 +33288,17 @@ $)
     ( wcel wa cpr wss wceq wo prssg elprg bi2anan9 bitr3d ) AEGZBFGZHACDIZGZBSG
     ZHABISJACKADKLZBCKBDKLZHABSEFMQTUBRUAUCACDENBCDFNOP $.
 
+  $( A proper pair is a subset of a pair iff it is equal to the superset.
+     (Contributed by AV, 26-Oct-2020.) $)
+  ssprsseq $p |- ( ( A e. V /\ B e. W /\ A =/= B ) -> ( { A , B } C_ { C , D }
+                                               <-> { A , B } = { C , D } ) ) $=
+    ( wcel wne w3a cpr wceq wo wa wi eqtr3 syl11 3ad2ant3 com12 preq12 a1d wss
+    wb ssprss 3adant3 eqneqall prcom eqtrdi ccase sylbid eqimss impbid1 ) AEGZB
+    FGZABHZIZABJZCDJZUAZUPUQKZUOURACKZADKZLBCKZBDKZLMZUSULUMURVDUBUNABCDEFUCUDV
+    DUOUSUTVBVAVCUOUSNUOUTVBMZUSUNULVEUSNUMABKZUNUSVEUSABUEZABCOPQRVAVBMZUSUOVH
+    UPDCJUQABDCSDCUFUGTUTVCMUSUOABCDSTUOVAVCMZUSUNULVIUSNUMVFUNUSVIVGABDOPQRUHR
+    UIUPUQUJUK $.
+
   ${
     $d x A $.  $d x B $.
     $( Empty set and the singleton itself are subsets of a singleton.
