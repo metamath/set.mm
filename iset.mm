@@ -194321,6 +194321,18 @@ $)
     cfv wne eqneqall mpsyl pm2.65da df-nel sylibr ) ACDZBBEZAFPZDZGUDUEHUCUFBAI
     PZDZUCUFJZUHUHUEABBUGUGKUEKZLMBBNUIBBQUHGZBKUEABBUJOUKBBRSTUDUEUAUB $.
 
+  ${
+    $d C v $.  $d E v $.  $d G v $.
+    umgredgnlp.e $e |- E = ( Edg ` G ) $.
+    $( An edge of a multigraph is not a loop.  (Contributed by AV, 9-Jan-2020.)
+       (Revised by AV, 8-Jun-2021.) $)
+    umgredgnlp $p |- ( ( G e. UMGraph /\ C e. E ) -> -. E. v C = { v } ) $=
+      ( cumgr wcel wa cv csn wceq cvtx cfv cpw c2o cen wbr c1o 1nen2 vex ensymi
+      ensn1 entr mpan breq1 mtbiri intnand eleq2i edgumgren sylan2b nsyl3 nexdv
+      mto cedg ) DFGZBCGZHZBAIZJZKZAUTBDLMNGZBOPQZHZUQUTVBVAUTVBUSOPQZVDROPQZSR
+      USPQVDVEUSRURATUBUARUSOUCUDUMBUSOPUEUFUGUPUOBDUNMZGVCCVFBEUHBDUIUJUKUL $.
+  $}
+
 
 $(
 ###############################################################################
