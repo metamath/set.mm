@@ -194288,6 +194288,19 @@ $)
       DKLZBCLZABLZMZBINZJNZOZPZJEQIEQZBAFNOZPZFEQZUMUNVAUOBCDEIJGHRSUPUTVDIJEEU
       OUMUQELZURELZUAZUTVDTTUNUTVGUOVDVGUOVDTUTAUSLZUSVBPZFEQZTVEVFVHVJAEUQURFU
       DUEUTUOVHVDVJBUSAUBUTVCVIFEBUSVBUCUFUGUHUIUJUKUL $.
+
+    $d B a b $.  $d U a b $.  $d W a b $.
+    $( If a proper pair (of vertices) is a subset of an edge in a pseudograph,
+       the pair is the edge.  (Contributed by AV, 30-Dec-2020.) $)
+    upgredgpr $p |- ( ( ( G e. UPGraph /\ C e. E /\ { A , B } C_ C )
+                          /\ ( A e. U /\ B e. W /\ A =/= B ) )
+                      -> { A , B } = C ) $=
+      ( va vb wcel cpr wss w3a wceq cv wrex wi cupgr wne upgredg 3adant3 biimpd
+      ssprsseq sseq2 eqeq2 imbi12d imbitrrid com23 a1i rexlimivv com12 3ad2ant3
+      wa mpd imp ) FUAMZCEMZABNZCOZPZADMBHMABUBPZVACQZVCCKRZLRZNZQZLGSKGSZVDVET
+      ZUSUTVJVBCEFGKLIJUCUDVBUSVJVKTUTVJVBVKVIVBVKTZKLGGVIVLTVFGMVGGMUPVIVDVBVE
+      VDVBVETVIVAVHOZVAVHQZTVDVMVNABVFVGDHUFUEVIVBVMVEVNCVHVAUGCVHVAUHUIUJUKULU
+      MUNUOUQUR $.
   $}
 
 
