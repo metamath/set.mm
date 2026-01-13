@@ -37831,6 +37831,13 @@ $)
       UIUEIUHBUDMNEFOPUGUEUBIUDABQNSRT $.
   $}
 
+  $( A singleton of a set is a member of the powerclass of a class if and only
+     if that set is a member of that class.  (Contributed by NM, 1-Apr-1998.)
+     Put in closed form and avoid ~ ax-nul .  (Revised by BJ, 17-Jan-2025.) $)
+  snelpwg $p |- ( A e. V -> ( A e. B <-> { A } e. ~P B ) ) $=
+    ( wcel csn wss cpw snssg cvv wb snexg elpwg syl bitr4d ) ACDZABDAEZBFZPBGDZ
+    ABCHOPIDRQJACKPBILMN $.
+
   $( A singleton of a set belongs to the power class of a class containing the
      set.  (Contributed by Alan Sare, 25-Aug-2011.) $)
   snelpwi $p |- ( A e. B -> { A } e. ~P B ) $=
