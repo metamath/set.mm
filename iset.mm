@@ -119321,6 +119321,19 @@ $)
       UFVKUKVSVMXTRYRVTYSUVHUXFVVBUUQUXFVVBUIUUOUVAUUQUVJUVMUXEUWQUKSUUGFUVCDEU
       XEYTUUHUVHUUNUWRUWSWEUXFUXMUXKOUVHUUNUWRUWSUWTUXAUUNUVAUWSUUMUUQUUNUXBUVA
       UWSUXCUXDVQUUIYSFBUVEUVFUXEYTVQUUJUUKXT $.
+
+    $( Lemma for ~ pfxccatin12lem2 and ~ pfxccatin12lem3 .  (Contributed by AV,
+       30-Mar-2018.)  (Revised by AV, 27-May-2018.) $)
+    pfxccatin12lem2c $p |- ( ( ( A e. Word V /\ B e. Word V )
+                  /\ ( M e. ( 0 ... L ) /\ N e. ( L ... ( L + ( # ` B ) ) ) ) )
+                             -> ( ( A ++ B ) e. Word V /\ M e. ( 0 ... N )
+                                /\ N e. ( 0 ... ( # ` ( A ++ B ) ) ) ) ) $=
+      ( cword wcel wa cc0 cfz chash cfv caddc cconcat ccatcl adantr elfz0fzfz0
+      co adantl cuz wss elfzuz2 syl sselda ccatlen oveq1i eqtr4di oveq2d eleq2d
+      fzss1 imbitrrid imp 3jca ) AFHZIBUPIJZDKCLTIZECCBMNZOTZLTZIJZJABPTZUPIZDK
+      ELTIZEKVCMNZLTZIZUQVDVBFABQRVBVEUQCDEUTSUAUQVBVHVBVHUQEKUTLTZIURVAVIEURCK
+      UBNIVAVIUCDKCUDCKUTULUEUFUQVGVIEUQVFUTKLUQVFAMNZUSOTUTFFABUGCVJUSOGUHUIUJ
+      UKUMUNUO $.
   $}
 
 
