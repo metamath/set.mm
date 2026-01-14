@@ -119163,6 +119163,24 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Subwords of concatenations
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( The subword of a concatenation as function.  (Contributed by Alexander van
+     der Vekens, 27-May-2018.) $)
+  swrdccatfn $p |- ( ( ( A e. Word V /\ B e. Word V )
+          /\ ( M e. ( 0 ... N ) /\ N e. ( 0 ... ( ( # ` A ) + ( # ` B ) ) ) ) )
+           -> ( ( A ++ B ) substr <. M , N >. ) Fn ( 0 ..^ ( N - M ) ) ) $=
+    ( cword wcel wa cc0 cfz chash cfv caddc cconcat cop csubstr cmin cfzo wfn
+    co ccatcl adantr simprl ccatlen oveq2d biimpar adantrl swrdvalfn syl3anc
+    eleq2d ) AEFZGBUKGHZCIDJTGZDIAKLBKLMTZJTZGZHZHABNTZUKGZUMDIURKLZJTZGZURCDOP
+    TIDCQTRTSULUSUQEABUAUBULUMUPUCULUPVBUMULVBUPULVAUODULUTUNIJEEABUDUEUJUFUGUR
+    CDEUHUI $.
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Elementary real and complex functions
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
