@@ -119678,6 +119678,31 @@ $)
       YAYBYDWHXOWTVRUSTUUDUUEUUSUUROZYSUUEUYAOUUCYSUUEUUGUYAYQUWIYTVBGUUEUUGUOY
       RYQUWDUWIUWFUWDUWGUWICUWCPFVAUWJYEQYRYTUVEYFCYTYGXKUUGUURYNYHTUSUUFUUGXMZ
       UUGUUSYIUUFYTWCGUXJUYBUUFYTYRUVDYQUUCUUEUVEYJWGWJYTIXJYKUUGYLQYO $.
+
+    $( A suffix of a concatenation is either a suffix of the second
+       concatenated word or a concatenation of a suffix of the first word with
+       the second word.  (Contributed by Alexander van der Vekens,
+       31-Mar-2018.)  (Revised by Alexander van der Vekens, 30-May-2018.)
+       (Proof shortened by AV, 14-Oct-2022.) $)
+    swrdccat3b $p |- ( ( A e. Word V /\ B e. Word V )
+                 -> ( M e. ( 0 ... ( L + ( # ` B ) ) )
+                      -> ( ( A ++ B ) substr <. M , ( L + ( # ` B ) ) >. )
+         = if ( L <_ M , ( B substr <. ( M - L ) , ( # ` B ) >. ) ,
+                         ( ( A substr <. M , L >. ) ++ B ) ) ) ) $=
+      ( wcel wa cc0 co cconcat cop csubstr cif wceq cpfx adantr 3ad2ant1 oveq2d
+      cc cword chash cfv caddc cfz cle wbr cmin simpl simpr elfzubelfz pfxccat3
+      adantl imp syl12anc swrdccat3blem w3a iftrue 3ad2ant3 lencl nn0cnd eqcomi
+      wn eleq1i pncan2 sylanb syl2an eqcomd opeq2d eqtrd iffalse pfxid ad2antlr
+      eqtr2d cz wdc elfzelzd cn0 eqeltrid ad2antrr nn0zd syl2anc elfznn0 2if2dc
+      zdcle eqtr4d ex ) AEUAZGZBWHGZHZDICBUBUCZUDJZUEJZGZABKJDWMLZMJZCDUFUGZBDC
+      UHJZWLLZMJZADCLMJZBKJZNZOWKWOHZWQWMCUFUGZAWPMJZWRBWSWMCUHJZLZMJZXBBXHPJZK
+      JZNNZXDXEWKWOWMWNGZWQXMOZWKWOUIWKWOUJWOXNWKDIWMUKUMZWKWOXNHXOABCDWMEFULUN
+      UOXEXFWRXGXJXLXDABCDEFUPXEXFVCZWRUQZXDXAXJWRXEXDXAOXQWRXAXCURUSXRWTXIBMXR
+      WLXHWSXEXQWLXHOZWRWKXSWOWKXHWLWIAUBUCZTGZWLTGZXHWLOZWJWIXTEAUTZVAWJWLEBUT
+      VAYACTGYBYCXTCTCXTFVBVDCWLVEVFVGZVHQRVISVJXEXQWRVCZUQZXDXCXLYFXEXDXCOXQWR
+      XAXCVKUSYGBXKXBKYGXKBWLPJZBYGXHWLBPXEXQYCYFWKYCWOYEQRSXEXQYHBOZYFWJYIWIWO
+      EBVLVMRVNSVJXEWMVOGCVOGZXFVPXEWMIWMXPVQXECWICVRGWJWOWICXTVRFYDVSVTWAZWMCW
+      EWBXEXQHZYJDVOGWRVPXEYJXQYKQYLDWODVRGWKXQDWMWCVMWACDWEWBWDWFWG $.
   $}
 
 
