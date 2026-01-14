@@ -119589,6 +119589,29 @@ $)
       CUTVOVAVCVKVNVCDUFHZVKDCUGZDULQVCVNVBVMDCVLIJFUHUIUJRSABIDEUKUMVDVEUSHZVP
       OVIVGPVDVRVPUTVAVRVCEABUNUOVCUTVPVAVQSRVEDUSTQUTVCVJVHPZVAVCUTVPVSVQADUST
       UPUQUR $.
+
+    ${
+      pfxccatpfx2.m $e |- M = ( # ` B ) $.
+      $( A prefix of a concatenation of two words being the first word
+         concatenated with a prefix of the second word.  (Contributed by AV,
+         10-May-2020.) $)
+      pfxccatpfx2 $p |- ( ( A e. Word V /\ B e. Word V
+                            /\ N e. ( ( L + 1 ) ... ( L + M ) ) )
+              -> ( ( A ++ B ) prefix N ) = ( A ++ ( B prefix ( N - L ) ) ) ) $=
+        ( wcel caddc co cfz cconcat cpfx cc0 cop csubstr cn0 wceq cfv cword w3a
+        c1 cmin ccatcl 3adant3 cuz chash lencl eqeltrid elfzuz peano2nn0 anim1i
+        wa syl2an 3adant2 eluznn0 pfxval syl2anc 3simpa 3ad2ant1 0elfz cz nn0zd
+        syl wss adantr uzid peano2uz fzss1 eqcomi oveq2i sseqtrrdi sseld 3impia
+        4syl pfxccatin12 sylc opeq2i mpdan pfxid eqtr3d eqtrid oveq1d 3eqtrd
+        jca ) AFUAZIZBWGIZECUCJKZCDJKZLKZIZUBZABMKZENKZWOOEPQKZAOCPZQKZBECUDKNK
+        ZMKZAWTMKWNWOWGIZERIZWPWQSWHWIXBWMFABUEUFWNWJRIZEWJUGTIZUNZXCWHWMXFWIWH
+        CRIZXEXFWMWHCAUHTZRGFAUIZUJZEWJWKUKXGXDXECULUMUOUPEWJUQVEWOEWGURUSWNWHW
+        IUNZOOCLKIZECCBUHTZJKZLKZIZUNWQXASWHWIWMUTWNXLXPWNXGXLWHWIXGWMXJVACVBVE
+        WHWIWMXPXKWLXOEXKWLCWKLKZXOXKCVCIZCCUGTZIWJXSIWLXQVFWHXRWIWHCXHVCGWHXHX
+        IVDUJVGCVHCCVIWJCWKVJVPXNWKCLXMDCJDXMHVKVLVLVMVNVOWFABCOEFGVQVRWNWSAWTM
+        WHWIWSASWMWHWSAOXHPZQKZAWRXTAQCXHOGVSVLWHAXHNKZYAAWHXHRIYBYASXIAXHWGURV
+        TFAWAWBWCVAWDWE $.
+    $}
   $}
 
 
