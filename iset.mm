@@ -119577,6 +119577,18 @@ $)
       UXOUXMVUIVUGQUWCUXRUYCCEYOYIYJTUOCEYKWJYLBUUTUUDYMYPYQXKUWEUXEUXAUUMVGUYN
       UVQUXAUUGUWCUXBYRECVIYPVUFUXAUXCUVEVGVUFCVUHVCUWEUXCUYOUYMRCDVIYPYSUUAUUB
       YLYTRUUCYTXOUOYQXN $.
+
+    $( A prefix of a concatenation being a prefix of the first concatenated
+       word.  (Contributed by AV, 10-May-2020.) $)
+    pfxccatpfx1 $p |- ( ( A e. Word V /\ B e. Word V /\ N e. ( 0 ... L ) )
+                         -> ( ( A ++ B ) prefix N ) = ( A prefix N ) ) $=
+      ( cword wcel cc0 cfz co w3a csubstr cpfx wa wceq syl jca 3ad2ant3 pfxval
+      cconcat cop chash cfv 3simpa cn0 elfznn0 oveq2i eleq2i biimpi swrdccatin1
+      0elfz sylc ccatcl 3adant3 sylan2 3adant2 3eqtr4d ) AEGZHZBUSHZDICJKZHZLZA
+      BUAKZIDUBZMKZAVFMKZVEDNKZADNKZVDUTVAOIIDJKHZDIAUCUDZJKZHZOZVGVHPUTVAVCUEV
+      CUTVOVAVCVKVNVCDUFHZVKDCUGZDULQVCVNVBVMDCVLIJFUHUIUJRSABIDEUKUMVDVEUSHZVP
+      OVIVGPVDVRVPUTVAVRVCEABUNUOVCUTVPVAVQSRVEDUSTQUTVCVJVHPZVAVCUTVPVSVQADUST
+      UPUQUR $.
   $}
 
 
