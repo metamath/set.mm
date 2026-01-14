@@ -119222,6 +119222,17 @@ $)
       YGUMYPIYIYJPYK $.
   $}
 
+  $( Lemma 4 for ~ pfxccatin12 .  (Contributed by Alexander van der Vekens,
+     30-Mar-2018.)  (Revised by Alexander van der Vekens, 23-May-2018.) $)
+  pfxccatin12lem4 $p |- ( ( L e. NN0 /\ M e. NN0 /\ N e. ZZ )
+              -> ( ( K e. ( 0 ..^ ( N - M ) ) /\ -. K e. ( 0 ..^ ( L - M ) ) )
+                     -> K e. ( ( L - M ) ..^ ( ( L - M ) + ( N - L ) ) ) ) ) $=
+    ( cn0 wcel cz w3a cc0 cmin co cfzo wn wa caddc nn0z zsubcl syl2an cc nn0cn
+    3adant3 elfzonelfzo imp sylan wb npncan3 syl3an oveq2d eleq2d adantr mpbird
+    wceq zcn ex ) BEFZCEFZDGFZHZAIDCJKZLKFAIBCJKZLKFMNZAUTUTDBJKOKZLKZFZURVANVD
+    AUTUSLKZFZURUTGFZVAVFUOUPVGUQUOBGFCGFVGUPBPCPBCQRUAVGVAVFUSAIUTUBUCUDURVDVF
+    UEVAURVCVEAURVBUSUTLUOBSFUPCSFUQDSFVBUSULBTCTDUMBCDUFUGUHUIUJUKUN $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
