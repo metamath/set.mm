@@ -119611,6 +119611,32 @@ $)
         IVDUJVGCVHCCVIWJCWKVJVPXNWKCLXMDCJDXMHVKVLVLVMVNVOWFABCOEFGVQVRWNWSAWTM
         WHWIWSASWMWHWSAOXHPZQKZAWRXTAQCXHOGVSVLWHAXHNKZYAAWHXHRIYBYASXIAXHWGURV
         TFAWAWBWCVAWDWE $.
+
+      $( A prefix of a concatenation is either a prefix of the first
+         concatenated word or a concatenation of the first word with a prefix
+         of the second word.  (Contributed by Alexander van der Vekens,
+         31-Mar-2018.)  (Revised by AV, 10-May-2020.) $)
+      pfxccat3a $p |- ( ( A e. Word V /\ B e. Word V )
+                        -> ( N e. ( 0 ... ( L + M ) )
+                    -> ( ( A ++ B ) prefix N ) = if ( N <_ L , ( A prefix N ) ,
+                                       ( A ++ ( B prefix ( N - L ) ) ) ) ) ) $=
+        ( wcel wa co cfz wbr wceq cz cn0 adantl adantr syl ex cword cc0 cconcat
+        caddc cpfx cle cmin cif wdc elfznn0 nn0zd chash cfv lencl zdcle syl2anc
+        eqeltrid wn wo wi exmiddc w3a simprl elfz2nn0 syl3anbrc df-3an sylanbrc
+        simpl pfxccatpfx1 iftrue eqtr4d eleq1i clt nn0ltp1le nn0z zltnle syl2an
+        c1 wb bitr3d 3ad2antr1 anim1ci 3ad2ant1 peano2nn0 3ad2ant2 elfz syl3anc
+        simpr3 mpbird sylbird sylbir biimtrid imp impcom pfxccatpfx2 jaoi mpcom
+        iffalse ) AFUAZIZBWSIZJZEUBCDUDKZLKIZABUCKEUEKZECUFMZAEUEKZABECUGKUEKUC
+        KZUHZNZXFUIZXBXDJZXJXLEOIZCOIZXKXLEXDEPIZXBEXCUJQZUKXLCXBCPIZXDWTXQXAWT
+        CAULUMZPGFAUNZUQRRZUKECUOUPXKXFXFURZUSXLXJUTZXFVAXFYBYAXFXLXJXFXLJZXEXG
+        XIYCWTXAEUBCLKIZVBZXEXGNYCXBYDYEXFXBXDVCYCXOXQXFYDXLXOXFXPQXLXQXFXTQXFX
+        LVHECVDVEWTXAYDVFVGABCEFGVISXFXIXGNXLXFXGXHVJRVKTYAXLXJYAXLJZXEXHXIYFWT
+        XAECVRUDKZXCLKIZVBZXEXHNYFXBYHYIYAXBXDVCXLYAYHXBXDYAYHUTZXDXOXCPIZEXCUF
+        MZVBZXBYJEXCVDWTYMYJUTZXAWTXRPIZYNXSYOXQYNCXRPGVLXQYMYJXQYMJZYAYGEUFMZY
+        HXQYKXOYQYAVSYLXQXOJCEVMMZYQYACEVNXQXNXMYRYAVSXOCVOEVOZCEVPVQVTWAYPYQYH
+        YPYQJZYHYQYLJZYPYLYQXQXOYKYLWHWBYTXMYGOIZXCOIZYHUUAVSYPXMYQYMXMXQXOYKXM
+        YLYSWCQRYPUUBYQXQUUBYMXQYGCWDUKRRYPUUCYQYMUUCXQYKXOUUCYLXCVOWEQREYGXCWF
+        WGWITWJTWKSRWLWMWNWTXAYHVFVGABCDEFGHWOSYAXIXHNXLXFXGXHWRRVKTWPSWQT $.
     $}
   $}
 
