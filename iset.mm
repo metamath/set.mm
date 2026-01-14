@@ -119251,6 +119251,24 @@ $)
     UEXNWSXHXIWIXHWSXMVCWIXHWSXMVDXMXIXKXLXISTVEQTTDEVGVHDBEVIRVJVKVLVMVNVOVP
     $.
 
+  $( Lemma 1 for ~ pfxccatin12 .  (Contributed by AV, 30-Mar-2018.)  (Revised
+     by AV, 9-May-2020.) $)
+  pfxccatin12lem1 $p |- ( ( M e. ( 0 ... L ) /\ N e. ( L ... X ) )
+               -> ( ( K e. ( 0 ..^ ( N - M ) ) /\ -. K e. ( 0 ..^ ( L - M ) ) )
+                    -> ( K - ( L - M ) ) e. ( 0 ..^ ( N - L ) ) ) ) $=
+    ( cc0 co wcel wa cmin cfzo cz wi w3a cle wbr adantr sylbi cc adantl 3adant1
+    cfz wn elfz2 zsubcl elfzonelfzo syl caddc wceq elfz2nn0 nn0cn elfzelz subcl
+    cn0 zcn ancoms addridd eqcomd simprr simpl npncan3d oveq12d ex com12 syl2an
+    3syl 3adant3 imp eleq2d biimpa 0zd 3adant2 3jca fzosubel2 syl2anc syld ) CF
+    BUBGHZDBEUBGHZIZAFDCJGZKGHAFBCJGZKGHUCIZAWAVTKGZHZAWAJGFDBJGZKGHZVSWALHZWBW
+    DMVQWGVRVQFLHZBLHZCLHZNZFCOPCBOPZIZIWGCFBUDWKWGWMWIWJWGWHBCUEUAQRQZVTAFWAUF
+    UGVSWDWFVSWDIAWAFUHGZWAWEUHGZKGZHZWGWHWELHZNZWFVSWDWRVSWCWQAVQVRWCWQUIZVQCU
+    NHZBUNHZWLNVRXAMZCBUJXBXCXDWLXBCSHZBSHZXDXCCUKBUKVRXEXFIZXAVRDLHZDSHZXGXAMD
+    BEULDUOXIXGXAXIXGIZWAWOVTWPKXGWAWOUIXIXGWOWAXGWAXFXEWASHBCUMUPUQURTXJWPVTXJ
+    BCDXIXEXFUSXGXEXIXEXFUTTXIXGUTVAURVBVCVFVDVEVGRVHVIVJVSWTWDVSWGWHWSWNVSVKVR
+    WSVQVRWIELHZXHNZBDOPDEOPIZIWSDBEUDXLWSXMWIXHWSXKXHWIWSDBUEUPVLQRTVMQAWAFWEV
+    NVOVCVP $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
