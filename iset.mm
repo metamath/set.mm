@@ -31856,6 +31856,21 @@ $)
     ( wdc wn wo cif wceq df-dc notnot iffalsed iftrue eqtr4d iffalse jaoi sylbi
     ) ADAAEZFQBCGZACBGZHZAIATQARCSAQBCAJKACBLMQRBSQBCLACBNMOP $.
 
+  ${
+    2if2.1 $e |- ( ( ph /\ ps ) -> D = A ) $.
+    2if2.2 $e |- ( ( ph /\ -. ps /\ th ) -> D = B ) $.
+    2if2.3 $e |- ( ( ph /\ -. ps /\ -. th ) -> D = C ) $.
+    2if2dc.ps $e |- ( ph -> DECID ps ) $.
+    2if2dc.th $e |- ( ( ph /\ -. ps ) -> DECID th ) $.
+    $( Resolve two nested conditionals.  (Contributed by Alexander van der
+       Vekens, 27-Mar-2018.) $)
+    2if2dc $p |- ( ph -> D = if ( ps , A , if ( th , B , C ) ) ) $=
+      ( cif wceq wn wa iftrue adantl eqtr4d 3expa iffalse eqcomd wdc wo exmiddc
+      eqtrd syl mpjaodan ) ABGBDCEFMZMZNBOZABPGDUJHBUJDNABDUIQRSAUKPZGUIUJULCGU
+      INCOZULCPGEUIAUKCGENITCUIENULCEFQRSULUMPGFUIAUKUMGFNJTUMFUINULUMUIFCEFUAU
+      BRUFULCUCCUMUDLCUEUGUHUKUJUINABDUIUARSABUCBUKUDKBUEUGUH $.
+  $}
+
   $( Rewrite a conjunction in a conditional as two nested conditionals.
      (Contributed by Mario Carneiro, 28-Jul-2014.) $)
   ifandc $p |- ( DECID ph
