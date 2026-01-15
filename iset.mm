@@ -119862,6 +119862,32 @@ $)
       EWOEMXQXDBXQBXDXNXLXMXNVAVBVCVDUQVEVGVHVIVJVKVLTVMSULVNTVHVNTVO $.
   $}
 
+  ${
+    $d V u v x y $.  $d W u v x y $.  $d X u x y $.
+    reuccatpfxs1.1 $e |- F/_ v X $.
+    $( There is a unique word having the length of a given word increased by 1
+       with the given word as prefix if there is a unique symbol which extends
+       the given word.  (Contributed by Alexander van der Vekens, 6-Oct-2018.)
+       (Revised by AV, 21-Jan-2022.)  (Revised by AV, 13-Oct-2022.) $)
+    reuccatpfxs1 $p |- ( ( W e. Word V /\ A. x e. X ( x e. Word V
+                                           /\ ( # ` x ) = ( ( # ` W ) + 1 ) ) )
+                          -> ( E! v e. V ( W ++ <" v "> ) e. X
+                               -> E! x e. X W = ( x prefix ( # ` W ) ) ) ) $=
+      ( vy vu cv wcel chash cfv co wceq wa wral cs1 cconcat cpfx weq cword wreu
+      c1 caddc wi eleq1w fveqeq2 anbi12d cbvralvw wrex nfel2 s1eq oveq2d eleq1d
+      reu8nf nfralw nfan nfreuw wb simprl simpl ad2antrr anim1i simplrr simp-4r
+      nfv reuccatpfxs1lem syl3anc s1cl anim12i pfxccat1 syl sylan9eqr eqcomd ex
+      oveq1 impbid ralrimiva reu6i syl2anc exp31 rexlimd biimtrid sylan2b ) AIZ
+      CUAZJZWEKLDKLZUCUDMZNZOZAEPDWFJZGIZWFJZWMKLWINZOZGEPZDBIZQZRMZEJZBCUBZDWE
+      WHSMZNZAEUBZUEWKWPAGEAGTWGWNWJWOAGWFUFWEWMWIKUGUHUIXBXADHIZQZRMZEJZBHTUEH
+      CPZOZBCUJWLWQOZXEXAXIDWEQZRMZEJBHACBXHEFUKBXNEFUKBATZWTXNEXOWSXMDRWRWEULU
+      MUNAHTZXNXHEXPXMXGDRWEXFULUMUNUOXLXKXEBCWLWQBWLBVFWPBGEFWPBVFUPUQXDBAEFXD
+      BVFURXLWRCJZXKXEXLXQOZXKOZXAXDWEWTNZUSZAEPXEXRXAXJUTXSYAAEXSWEEJZOZXDXTYC
+      WLYBOXJWQXDXTUEXSWLYBXLWLXQXKWLWQVAZVBVCXRXAXJYBVDWLWQXQXKYBVEGWRWECDEHVG
+      VHYCXTXDYCXTOXCDXTYCXCWTWHSMZDWEWTWHSVPYCWLWSWFJZOZYEDNXRYGXKYBXLWLXQYFYD
+      WRCVIVJVBCDWSVKVLVMVNVOVQVRXDAEWTVSVTWAWBWCWD $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
