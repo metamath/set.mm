@@ -119705,6 +119705,17 @@ $)
       EWBXEXQHZYJDVOGWRVPXEYJXQYKQYLDWODVRGWKXQDWMWCVMWACDWEWBWDWFWG $.
   $}
 
+  $( A prefix of a concatenation of length of the first concatenated word is
+     the first word itself.  (Contributed by Alexander van der Vekens,
+     20-Sep-2018.)  (Revised by AV, 10-May-2020.) $)
+  pfxccatid $p |- ( ( A e. Word V /\ B e. Word V /\ N = ( # ` A ) )
+                     -> ( ( A ++ B ) prefix N ) = A ) $=
+    ( cword wcel chash cfv wceq w3a cconcat co cpfx cc0 cfz cn0 nn0fz0 3ad2ant1
+    lencl 3ad2ant3 sylib wb eleq1 mpbird eqid pfxccatpfx1 syld3an3 oveq2 3eqtrd
+    pfxid ) ADEZFZBUKFZCAGHZIZJZABKLCMLZACMLZAUNMLZAULUMUOCNUNOLZFZUQURIUPVAUNU
+    TFZULUMVBUOULUNPFVBDASUNQUARUOULVAVBUBUMCUNUTUCTUDABUNCDUNUEUFUGUOULURUSIUM
+    CUNAMUHTULUMUSAIUODAUJRUI $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
