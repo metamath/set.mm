@@ -119731,6 +119731,24 @@ $)
     USUTVCQVDVGBVDVBSEZUTVCUAVGBEUSUTVNVCUSVAUBEVNBCUCVAUDUEUFUSUTVCUJVBBAUGUHU
     IVDVAUKUSVLVMLVKCCVHVABULTUMVJVEVKAVIVAMUNTUOUPUQ $.
 
+  ${
+    swrdccatind.l $e |- ( ph -> ( # ` A ) = L ) $.
+    swrdccatind.w $e |- ( ph -> ( A e. Word V /\ B e. Word V ) ) $.
+    ${
+      swrdccatin1d.1 $e |- ( ph -> M e. ( 0 ... N ) ) $.
+      swrdccatin1d.2 $e |- ( ph -> N e. ( 0 ... L ) ) $.
+      $( The subword of a concatenation of two words within the first of the
+         concatenated words.  (Contributed by AV, 31-May-2018.)  (Revised by
+         Mario Carneiro/AV, 21-Oct-2018.) $)
+      swrdccatin1d $p |- ( ph -> ( ( A ++ B ) substr <. M , N >. )
+                                 = ( A substr <. M , N >. ) ) $=
+        ( cword wcel wa cc0 cfz co chash csubstr wceq cfv cconcat cop imbitrrid
+        oveq2 eleq2d mpcom jca swrdccatin1 sylc ) ABGLZMCUKMNEOFPQMZFOBRUAZPQZM
+        ZNBCUBQEFUCZSQBUPSQTIAULUOJUMDTZAUOHAUOUQFODPQZMKUQUNURFUMDOPUEUFUDUGUH
+        BCEFGUIUJ $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
