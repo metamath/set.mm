@@ -119888,6 +119888,20 @@ $)
       WRCVIVJVBCDWSVKVLVMVNVOVQVRXDAEWTVSVTWAWBWCWD $.
   $}
 
+  ${
+    $d V v x $.  $d W v x $.  $d X v x $.
+    $( There is a unique word having the length of a given word increased by 1
+       with the given word as prefix if there is a unique symbol which extends
+       the given word.  (Contributed by Alexander van der Vekens, 6-Oct-2018.)
+       (Revised by AV, 21-Jan-2022.)  (Revised by AV, 10-May-2022.)  (Proof
+       shortened by AV, 13-Oct-2022.) $)
+    reuccatpfxs1v $p |- ( ( W e. Word V /\ A. x e. X ( x e. Word V
+                                           /\ ( # ` x ) = ( ( # ` W ) + 1 ) ) )
+                          -> ( E! v e. V ( W ++ <" v "> ) e. X
+                               -> E! x e. X W = ( x prefix ( # ` W ) ) ) ) $=
+      ( nfcv reuccatpfxs1 ) ABCDEBEFG $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
