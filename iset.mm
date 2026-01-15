@@ -119765,6 +119765,22 @@ $)
         DWDWLSVGUJVFDWCTUHUKUIULUMUNUFUOVTWGVRBCVFEFGVFUQUPURUSVGVQVLVHVGVPVKCO
         VGVNVIVOVJVFDEPUTVFDFPUTVAVBVCVDVE $.
     $}
+
+    ${
+      pfxccatin12d.m $e |- ( ph -> M e. ( 0 ... L ) ) $.
+      pfxccatin12d.n $e |- ( ph -> N e. ( L ... ( L + ( # ` B ) ) ) ) $.
+      $( The subword of a concatenation of two words within both of the
+         concatenated words.  (Contributed by AV, 31-May-2018.)  (Revised by
+         AV, 10-May-2020.) $)
+      pfxccatin12d $p |- ( ph -> ( ( A ++ B ) substr <. M , N >. )
+                  = ( ( A substr <. M , L >. ) ++ ( B prefix ( N - L ) ) ) ) $=
+        ( cconcat co cop csubstr cmin cpfx wcel cfz oveq2d chash cword wa caddc
+        cfv cc0 wceq eleq2d oveq1d oveq12d anbi12d mpbir2and pfxccatin12 opeq2d
+        eqid sylc eqtrd ) ABCLMEFNOMZBEBUAUEZNZOMZCFUSPMZQMZLMZBEDNZOMZCFDPMZQM
+        ZLMABGUBZRCVIRUCEUFUSSMZRZFUSUSCUAUEZUDMZSMZRZUCZURVDUGIAVPEUFDSMZRZFDD
+        VLUDMZSMZRZJKAVKVRVOWAAVJVQEAUSDUFSHTUHAVNVTFAUSDVMVSSHAUSDVLUDHUIUJUHU
+        KULBCUSEFGUSUOUMUPAVAVFVCVHLAUTVEBOAUSDEHUNTAVBVGCQAUSDFPHTTUJUQ $.
+    $}
   $}
 
 
