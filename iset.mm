@@ -23139,6 +23139,21 @@ $)
   $}
 
   ${
+    $d x y A $.
+    cbvrmow.1 $e |- F/ y ph $.
+    cbvrmow.2 $e |- F/ x ps $.
+    cbvrmow.3 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Change the bound variable of a restricted at-most-one quantifier using
+       implicit substitution.  Version of ~ cbvrmo with a disjoint variable
+       condition.  (Contributed by NM, 16-Jun-2017.)  (Revised by GG,
+       23-May-2024.) $)
+    cbvrmow $p |- ( E* x e. A ph <-> E* y e. A ps ) $=
+      ( cv wcel wa wmo wrmo nfv nfan weq eleq1w anbi12d cbvmow df-rmo 3bitr4i )
+      CIEJZAKZCLDIEJZBKZDLACEMBDEMUCUECDUBADUBDNFOUDBCUDCNGOCDPUBUDABCDEQHRSACE
+      TBDETUA $.
+  $}
+
+  ${
     $d x ph $.
     reubidva.1 $e |- ( ( ph /\ x e. A ) -> ( ps <-> ch ) ) $.
     $( Formula-building rule for restricted existential quantifier (deduction
