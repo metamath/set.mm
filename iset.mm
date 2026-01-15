@@ -195076,6 +195076,57 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Undirected simple graphs
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  In this section, "simple graph" will always stand for "undirected simple
+  graph (without loops)" and "simple pseudograph" for "undirected simple
+  pseudograph (which could have loops)".
+
+$)
+
+  $c USPGraph $.
+  $c USGraph $.
+
+  $( Extend class notation with undirected simple pseudographs (which could
+     have loops). $)
+  cuspgr $a class USPGraph $.
+
+  $( Extend class notation with undirected simple graphs (without loops). $)
+  cusgr $a class USGraph $.
+
+  ${
+    $d e g v x $.
+    $( Define the class of all undirected simple pseudographs (which could have
+       loops).  An undirected simple pseudograph is a special undirected
+       pseudograph or a special undirected simple hypergraph, consisting of a
+       set ` v ` (of "vertices") and an injective (one-to-one) function ` e `
+       (representing (indexed) "edges") into subsets of ` v ` of cardinality
+       one or two, representing the two vertices incident to the edge, or the
+       one vertex if the edge is a loop.  In contrast to a pseudograph, there
+       is at most one edge between two vertices resp. at most one loop for a
+       vertex.  (Contributed by Alexander van der Vekens, 10-Aug-2017.)
+       (Revised by Jim Kingdon, 15-Jan-2026.) $)
+    df-uspgren $a |- USPGraph = { g | [. ( Vtx ` g ) / v ].
+                                    [. ( iEdg ` g ) / e ].
+             e : dom e -1-1-> { x e. ~P v | ( x ~~ 1o \/ x ~~ 2o ) } } $.
+
+    $( Define the class of all undirected simple graphs (without loops).  An
+       undirected simple graph is a special undirected simple pseudograph,
+       consisting of a set ` v ` (of "vertices") and an injective (one-to-one)
+       function ` e ` (representing (indexed) "edges") into subsets of ` v ` of
+       cardinality two, representing the two vertices incident to the edge.  In
+       contrast to an undirected simple pseudograph, an undirected simple graph
+       has no loops (edges connecting a vertex with itself).  (Contributed by
+       Alexander van der Vekens, 10-Aug-2017.)  (Revised by AV,
+       13-Oct-2020.) $)
+    df-usgren $a |- USGraph = { g | [. ( Vtx ` g ) / v ].
+      [. ( iEdg ` g ) / e ]. e : dom e -1-1-> { x e. ~P v | x ~~ 2o } } $.
+  $}
+
+
+$(
 ###############################################################################
   GUIDES AND MISCELLANEA
 ###############################################################################
@@ -197331,6 +197382,12 @@ htmldef "UPGraph" as 'UPGraph';
 htmldef "UMGraph" as 'UMGraph';
   althtmldef "UMGraph" as 'UMGraph';
   latexdef "UMGraph" as "\mathrm{UMGraph}";
+htmldef "USPGraph" as 'USPGraph';
+  althtmldef "USPGraph" as 'USPGraph';
+  latexdef "USPGraph" as "\mathrm{USPGraph}";
+htmldef "USGraph" as 'USGraph';
+  althtmldef "USGraph" as 'USGraph';
+  latexdef "USGraph" as "\mathrm{USGraph}";
 
 /* htmldef, althtmldef, latexdef for mathboxes */
 /* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
