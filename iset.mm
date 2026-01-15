@@ -17196,6 +17196,18 @@ $)
   $}
 
   ${
+    $d x y z $.  $d ph z $.  $d ps z $.
+    cbvmow.1 $e |- F/ y ph $.
+    cbvmow.2 $e |- F/ x ps $.
+    cbvmow.3 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Rule used to change bound variables, using implicit substitution.
+       Version of ~ cbvmo with a disjoint variable condition.  (Contributed by
+       NM, 9-Mar-1995.)  (Revised by GG, 23-May-2024.) $)
+    cbvmow $p |- ( E* x ph <-> E* y ps ) $=
+      ( cbvmo ) ABCDEFGH $.
+  $}
+
+  ${
     $d x y z $.  $d ph z $.
     mo23.1 $e |- F/ y ph $.
     $( An implication between two definitions of "there exists at most one."
