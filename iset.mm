@@ -27349,6 +27349,23 @@ $)
   $}
 
   ${
+    $d w x y A $.  $d w ph $.  $d w ps $.  $d y ch $.
+    reu8nf.1 $e |- F/ x ps $.
+    reu8nf.2 $e |- F/ x ch $.
+    reu8nf.3 $e |- ( x = w -> ( ph <-> ch ) ) $.
+    reu8nf.4 $e |- ( w = y -> ( ch <-> ps ) ) $.
+    $( Restricted uniqueness using implicit substitution.  This version of
+       ~ reu8 uses a nonfreeness hypothesis for ` x ` and ` ps ` instead of
+       distinct variable conditions.  (Contributed by AV, 21-Jan-2022.) $)
+    reu8nf $p |- ( E! x e. A ph <-> E. x e. A ( ph /\
+                A. y e. A ( ps -> x = y ) ) ) $=
+      ( wreu weq wi wral wa wrex nfv cbvreuw reu8 nfcv nfim nfralw nfan equcoms
+      wb bicomd equequ1 imbi2d ralbidv anbi12d cbvrexw 3bitri ) ADGLCFGLCBFEMZN
+      ZEGOZPZFGQABDEMZNZEGOZPZDGQACDFGAFRIJSCBFEGKTUQVAFDGCUPDIUODEGDGUABUNDHUN
+      DRUBUCUDVAFRFDMZCAUPUTCAUFDFDFMACJUGUEVBUOUSEGVBUNURBFDEUHUIUJUKULUM $.
+  $}
+
+  ${
     $d y w A $.  $d w B $.  $d w ph $.  $d x y $.  $d w x $.
     sbcabel.1 $e |- F/_ x B $.
     $( Interchange class substitution and class abstraction.  (Contributed by
