@@ -23074,11 +23074,11 @@ $)
 
   ${
     $d x y $.
-    nfreuxy.1 $e |- F/_ x A $.
-    nfreuxy.2 $e |- F/ x ph $.
+    nfreuw.1 $e |- F/_ x A $.
+    nfreuw.2 $e |- F/ x ph $.
     $( Not-free for restricted uniqueness.  This is a version where ` x ` and
        ` y ` are distinct.  (Contributed by Jim Kingdon, 6-Jun-2018.) $)
-    nfreuxy $p |- F/ x E! y e. A ph $=
+    nfreuw $p |- F/ x E! y e. A ph $=
       ( wreu wnf wtru nftru wnfc a1i nfreudxy mptru ) ACDGBHIABCDCJBDKIELABHIFL
       MN $.
   $}
@@ -27343,9 +27343,9 @@ $)
        quantifier.  (Contributed by NM, 24-Feb-2013.) $)
     sbcreug $p |- ( A e. V ->
                  ( [. A / x ]. E! y e. B ph <-> E! y e. B [. A / x ]. ph ) ) $=
-      ( vz wreu wsb wsbc dfsbcq2 cv wceq reubidv nfcv nfs1v nfreuxy weq sbequ12
-      sbie vtoclbg ) ACEHZBGIABGIZCEHZUBBDJABDJZCEHGDFUBBGDKGLDMUCUECEABGDKNUBU
-      DBGUCBCEBEOABGPQBGRAUCCEABGSNTUA $.
+      ( vz wreu wsb wsbc dfsbcq2 cv wceq reubidv nfcv nfs1v nfreuw sbequ12 sbie
+      weq vtoclbg ) ACEHZBGIABGIZCEHZUBBDJABDJZCEHGDFUBBGDKGLDMUCUECEABGDKNUBUD
+      BGUCBCEBEOABGPQBGTAUCCEABGRNSUA $.
   $}
 
   ${
