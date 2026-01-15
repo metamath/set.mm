@@ -119783,6 +119783,27 @@ $)
     $}
   $}
 
+  ${
+    $d S s u $.  $d U u x $.  $d V s u x $.  $d W s u x $.  $d X s u x $.
+    $( Lemma for ~ reuccatpfxs1 .  (Contributed by Alexander van der Vekens,
+       5-Oct-2018.)  (Revised by AV, 9-May-2020.) $)
+    reuccatpfxs1lem $p |- ( ( ( W e. Word V /\ U e. X )
+           /\ A. s e. V ( ( W ++ <" s "> ) e. X -> S = s )
+                /\ A. x e. X ( x e. Word V /\ ( # ` x ) = ( ( # ` W ) + 1 ) ) )
+                 -> ( W = ( U prefix ( # ` W ) ) -> U = ( W ++ <" S "> ) ) ) $=
+      ( vu wcel wa cv cs1 cconcat co wceq wi chash cfv adantl com23 cword caddc
+      wral c1 cpfx eleq1 fveqeq2 anbi12d rspcv wrex simpl adantr ccats1pfxeqrex
+      simprr syl3anc weq oveq2d eleq1d eqeq2 imbi12d id imp eqcomd s1eqd eqeq2d
+      s1eq biimpd ex com13 sylbid com3l sylan9r rexlimdva syld 3imp ) EDUAZIZCF
+      IZJZEGKZLZMNZFIZBVTOZPZGDUCZAKZVPIZWGQREQRZUDUBNZOZJZAFUCZECWIUENOZCEBLZM
+      NZOZPZVSWMWFWRVSWMCVPIZCQRWJOZJZWFWRPZVRWMXAPVQWLXAACFWGCOWHWSWKWTWGCVPUF
+      WGCWJQUGUHUISVSXAXBVSXAJZWNWFWQXCWNCEHKZLZMNZOZHDUJZWFWQPZXCVQWSWTWNXHPVS
+      VQXAVQVRUKULXAWSVSWSWTUKSVSWSWTUNCDEHUMUOVSXHXIPZXAVRXJVQVRXGXIHDVRXDDIZJ
+      WFXGWQXKWFXFFIZBXDOZPZVRXGWQPZWEXNGXDDGHUPZWCXLWDXMXPWBXFFXPWAXEEMVTXDVFU
+      QURVTXDBUSUTUIXGVRXNWQXGVRXLXNWQPCXFFUFXNXLXGWQXNXLXOXNXLJZXGWQXQXFWPCXQX
+      EWOEMXQXDBXQBXDXNXLXMXNVAVBVCVDUQVEVGVHVIVJVKVLTVMSULVNTVHVNTVO $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
