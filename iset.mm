@@ -119716,6 +119716,21 @@ $)
     TFZULUMVBUOULUNPFVBDASUNQUARUOULVAVBUBUMCUNUTUCTUDABUNCDUNUEUFUGUOULURUSIUM
     CUNAMUHTULUMUSAIUODAUJRUI $.
 
+  $( A word is a prefix of a word with length greater by 1 than the first word
+     iff the second word is the first word concatenated with the last symbol of
+     the second word.  (Contributed by AV, 24-Oct-2018.)  (Revised by AV,
+     10-May-2020.) $)
+  ccats1pfxeqbi $p |- ( ( W e. Word V /\ U e. Word V
+                           /\ ( # ` U ) = ( ( # ` W ) + 1 ) )
+                         -> ( W = ( U prefix ( # ` W ) )
+                              <-> U = ( W ++ <" ( lastS ` U ) "> ) ) ) $=
+    ( cword wcel chash cfv c1 caddc co wceq w3a cpfx clsw cs1 ccats1pfxeq simp1
+    cconcat cn eqcomd wa cn0 lencl nn0p1nn syl 3ad2ant1 lswlgt0cl syl2anc s1cld
+    3simpc eqidd pfxccatid syl3anc oveq1 sylan9eq ex impbid ) CBDZEZAUREZAFGCFG
+    ZHIJZKZLZCAVAMJZKZACANGZOZRJZKZABCPVDVJVFVDVJCVIVAMJZVEVDUSVHUREZVAVAKZCVKK
+    USUTVCQVDVGBVDVBSEZUTVCUAVGBEUSUTVNVCUSVAUBEVNBCUCVAUDUEUFUSUTVCUJVBBAUGUHU
+    IVDVAUKUSVLVMLVKCCVHVABULTUMVJVEVKAVIVAMUNTUOUPUQ $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
