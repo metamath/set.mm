@@ -23532,6 +23532,20 @@ $)
   $}
 
   ${
+    $d A x y $.
+    cbvreuw.1 $e |- F/ y ph $.
+    cbvreuw.2 $e |- F/ x ps $.
+    cbvreuw.3 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Change the bound variable of a restricted unique existential quantifier
+       using implicit substitution.  Version of ~ cbvreu with a disjoint
+       variable condition.  (Contributed by Mario Carneiro, 15-Oct-2016.)
+       (Revised by GG, 10-Jan-2024.)  (Revised by Wolf Lammen, 10-Dec-2024.) $)
+    cbvreuw $p |- ( E! x e. A ph <-> E! y e. A ps ) $=
+      ( wrex wrmo wa wreu cbvrexw cbvrmow anbi12i reu5 3bitr4i ) ACEIZACEJZKBDE
+      IZBDEJZKACELBDELRTSUAABCDEFGHMABCDEFGHNOACEPBDEPQ $.
+  $}
+
+  ${
     $d x z A $.  $d y z A $.  $d z ph $.  $d z ps $.
     cbvral.1 $e |- F/ y ph $.
     cbvral.2 $e |- F/ x ps $.
