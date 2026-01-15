@@ -1089,8 +1089,8 @@ middle by ~ ssfiexmid ).</p>
 
 <ul>
   <li>we cannot prove ` ~P 1o ~~ 2o ` (see ~ exmidpw )</li>
-  <li>` ( ~P 1o ^m A ) ` represents the number of subsets of ` A `
-  (although we do not yet have a proof of ` ( ~P 1o ^m A ) ~~ ~P A `)</li>
+  <li>` ( ~P 1o ^m A ) ` represents the number of subsets of ` A ` as
+  shown at ~ pw1mapen</li>
   <li>` ( 2o ^m A ) ` represents the number of decidable subsets of ` A `
   as shown at ~ 2omapen</li>
 </ul>
@@ -2242,6 +2242,13 @@ is double negation elimination.</TD>
 <TD>~ df-if </TD>
 </TR>
 
+<tr>
+  <td>iftrueb</td>
+  <td><i>none</i></td>
+  <td>although we don't have anything as general as iftrueb ,
+  ~ iftrueb01 is one useful special case</td>
+</tr>
+
 <TR>
 <TD>ifsb</TD>
 <TD>~ ifsbdc</TD>
@@ -2296,7 +2303,7 @@ is double negation elimination.</TD>
 </tr>
 
 <TR>
-<TD>elimif , ifval , elif ,
+<TD>elimif , ifval ,
 ifel , ifeqor , 2if2 , ifcomnan , csbif ,
 csbifgOLD</TD>
 <TD><I>none</I></TD>
@@ -9180,7 +9187,9 @@ or not.</TD>
 <TR>
   <TD>hashprdifel</TD>
   <TD><I>none</I></TD>
-  <TD>This would appear to be a form of reverse closure.</TD>
+  <TD>Not clear we'd be able to prove it in this form, but if you have
+  ` { A , B } ~~ 2o ` rather than ` ( # `` { A , B } ) = 2 ` , see
+  ~ pr2cv and ~ pr2ne</TD>
 </TR>
 
 <TR>
@@ -9396,9 +9405,8 @@ or not.</TD>
 
 <tr>
   <td>hash2prde</td>
-  <td><i>none</i></td>
-  <td>should be provable (if the antecedent is changed to ` V ~~ 2o ` )
-  via ~ en2 and ~ pr2ne</td>
+  <td>~ en2prde</td>
+  <td>changes antecedent to ` V ~~ 2o `</td>
 </tr>
 
 <tr>
@@ -16508,8 +16516,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>umgredgprv</td>
   <td><i>none</i></td>
-  <td>this may need set existence conditions on ` M ` and ` N `
-  (unless we can prove pr2cv from set.mm or something similar)</td>
+  <td>may be possible now that we have ~ pr2cv</td>
 </tr>
 
 <tr>
@@ -16540,6 +16547,62 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>upgr1eop</td>
   <td>~ upgr1eopdc</td>
   <td>adds decidability condition</td>
+</tr>
+
+<tr>
+  <td>umgrislfupgrlem</td>
+  <td>~ umgrislfupgrenlem</td>
+  <td>changes related to set size</td>
+</tr>
+
+<tr>
+  <td>umgrislfupgr</td>
+  <td>~ umgrislfupgrdom</td>
+  <td>changes how we say that a set has at least two elements</td>
+</tr>
+
+<tr>
+  <td>lfgredgge2</td>
+  <td>~ lfgredg2dom</td>
+  <td>changes how we say that a set has at least two elements</td>
+</tr>
+
+<tr>
+  <td>lfgrnloop</td>
+  <td>~ lfgrnloopen</td>
+  <td>changes related to set size</td>
+</tr>
+
+<tr>
+  <td>uhgredgn0</td>
+  <td>~ uhgredgm</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
+
+<tr>
+  <td>uhgredgss</td>
+  <td>~ uhgredgm</td>
+  <td>there's no great need to have a version of this theorem
+  expressed in terms of subsets</td>
+</tr>
+
+<tr>
+  <td>upgredgss , edgupgr</td>
+  <td>~ edgupgren</td>
+  <td>restates how we say that a set has one or two elements</td>
+</tr>
+
+<tr>
+  <td>umgredgss , edgumgr</td>
+  <td>~ edgumgren</td>
+  <td>restates how we say that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>edglnl , numedglnl</td>
+  <td><i>none</i></td>
+  <td>would apparently need decidability equality for vertexes or
+  other changes</td>
 </tr>
 
 <tr>
