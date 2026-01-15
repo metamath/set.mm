@@ -33282,6 +33282,23 @@ $)
     ( wcel wa cpw cpr wss prssg elpwg bi2anan9 bitr3d ) ADFZBEFZGACHZFZBQFZGABI
     QJACJZBCJZGABQDEKORTPSUAACDLBCELMN $.
 
+  $( A pair as subset of a pair.  (Contributed by AV, 26-Oct-2020.) $)
+  ssprss $p |- ( ( A e. V /\ B e. W ) -> ( { A , B } C_ { C , D }
+                        <-> ( ( A = C \/ A = D ) /\ ( B = C \/ B = D ) ) ) ) $=
+    ( wcel wa cpr wss wceq wo prssg elprg bi2anan9 bitr3d ) AEGZBFGZHACDIZGZBSG
+    ZHABISJACKADKLZBCKBDKLZHABSEFMQTUBRUAUCACDENBCDFNOP $.
+
+  $( A proper pair is a subset of a pair iff it is equal to the superset.
+     (Contributed by AV, 26-Oct-2020.) $)
+  ssprsseq $p |- ( ( A e. V /\ B e. W /\ A =/= B ) -> ( { A , B } C_ { C , D }
+                                               <-> { A , B } = { C , D } ) ) $=
+    ( wcel wne w3a cpr wceq wo wa wi eqtr3 syl11 3ad2ant3 com12 preq12 a1d wss
+    wb ssprss 3adant3 eqneqall prcom eqtrdi ccase sylbid eqimss impbid1 ) AEGZB
+    FGZABHZIZABJZCDJZUAZUPUQKZUOURACKZADKZLBCKZBDKZLMZUSULUMURVDUBUNABCDEFUCUDV
+    DUOUSUTVBVAVCUOUSNUOUTVBMZUSUNULVEUSNUMABKZUNUSVEUSABUEZABCOPQRVAVBMZUSUOVH
+    UPDCJUQABDCSDCUFUGTUTVCMUSUOABCDSTUOVAVCMZUSUNULVIUSNUMVFUNUSVIVGABDOPQRUHR
+    UIUPUQUJUK $.
+
   ${
     $d x A $.  $d x B $.
     $( Empty set and the singleton itself are subsets of a singleton.
@@ -33515,6 +33532,21 @@ $)
       ( cpr csn wceq wa dfsn2 eqeq2i preq12b oridm eqtr3 simpr jca eqtr bitri
       wo impbii ) ABGZCHZIUBCCGZIZABIZBCIZJZUCUDUBCKLUEACIZUGJZUJTZUHABCCDEFFMU
       KUJUHUJNUJUHUJUFUGABCOUIUGPQUHUIUGABCRUFUGPQUASSS $.
+  $}
+
+  ${
+    $d A b $.  $d V b $.  $d X b $.  $d Y b $.
+    $( For an element ` A ` of an unordered pair which is a subset of a given
+       set ` V ` , there is another (maybe the same) element ` b ` of the given
+       set ` V ` being an element of the unordered pair.  (Contributed by AV,
+       5-Dec-2020.) $)
+    elpr2elpr $p |- ( ( X e. V /\ Y e. V /\ A e. { X , Y } )
+                      -> E. b e. V { X , Y } = { A , b } ) $=
+      ( wcel cpr cv wceq wrex wo wa wi simprr preq12 eqcomd adantlr rspcedeq2vd
+      ex simprl prcom eqtr2di jaoi elpri syl11 3impia ) CBFZDBFZACDGZFZUIAEHZGZ
+      IZEBJZACIZADIZKUGUHLZUNUJUOUQUNMUPUOUQUNUOUQLEDBUIULUOUGUHNUOUKDIZUMUQUOU
+      RLULUIAUKCDOPQRSUPUQUNUPUQLECBUIULUPUGUHTUPUKCIZUMUQUPUSLULDCGUIAUKDCODCU
+      AUBQRSUCACDUDUEUF $.
   $}
 
   ${
@@ -37831,6 +37863,13 @@ $)
       UIUEIUHBUDMNEFOPUGUEUBIUDABQNSRT $.
   $}
 
+  $( A singleton of a set is a member of the powerclass of a class if and only
+     if that set is a member of that class.  (Contributed by NM, 1-Apr-1998.)
+     Put in closed form and avoid ~ ax-nul .  (Revised by BJ, 17-Jan-2025.) $)
+  snelpwg $p |- ( A e. V -> ( A e. B <-> { A } e. ~P B ) ) $=
+    ( wcel csn wss cpw snssg cvv wb snexg elpwg syl bitr4d ) ACDZABDAEZBFZPBGDZ
+    ABCHOPIDRQJACKPBILMN $.
+
   $( A singleton of a set belongs to the power class of a class containing the
      set.  (Contributed by Alan Sare, 25-Aug-2011.) $)
   snelpwi $p |- ( A e. B -> { A } e. ~P B ) $=
@@ -37844,6 +37883,14 @@ $)
     snelpw $p |- ( A e. B <-> { A } e. ~P B ) $=
       ( wcel csn wss cpw snss snex elpw bitr4i ) ABDAEZBFLBGDABCHLBACIJK $.
   $}
+
+  $( An unordered pair of two sets is a member of the powerclass of a class if
+     and only if the two sets are members of that class.  (Contributed by AV,
+     8-Jan-2020.) $)
+  prelpw $p |- ( ( A e. V /\ B e. W )
+                 -> ( ( A e. C /\ B e. C ) <-> { A , B } e. ~P C ) ) $=
+    ( wcel wa cpr wss cpw prssg cvv wb prexg elpwg syl bitr4d ) ADFBEFGZACFBCFG
+    ABHZCIZSCJFZABCDEKRSLFUATMABDENSCLOPQ $.
 
   $( A pair of two sets belongs to the power class of a class containing those
      two sets.  (Contributed by Thierry Arnoux, 10-Mar-2017.) $)
@@ -67756,6 +67803,13 @@ $)
     KVAHUJUMBJKUMUTVALULUTUMVAURABMNOPUJUSUTLUKUMURACRSPUJUPUSLZUKUMUJATVBAUABA
     UBUCSPULUNUQUDUMABUEUFUGUIUKUNUMLUJABCROUH $.
 
+  $( Two is not dominated by one.  (Contributed by Jim Kingdon,
+     10-Jan-2026.) $)
+  1ndom2 $p |- -. 2o ~<_ 1o $=
+    ( c2o c1o cdom wbr wss wcel com word wn 1onn nnord ordirr mp2b ssel mpi mto
+    1lt2o wb 2onn nndomo mp2an mtbir ) ABCDZABEZUDBBFZBGFZBHUEIJBKBLMUDBAFUEQAB
+    BNOPAGFUFUCUDRSJABTUAUB $.
+
   ${
     $d x y A $.  $d x y B $.
     $( Pigeonhole Principle.  A natural number is not equinumerous to a proper
@@ -73122,6 +73176,17 @@ $)
     VFVHVGUTVFPZVHVGFVAOIJZVIVAVDOSVJVFUTVJVBOHIJZUHVJOVAIJZVBVKPVAOUIVLVBVKOVA
     HSTRUAUBRTUOUJUKULUMURUSVCVBABCDUPUNUQ $.
 
+  ${
+    $d V a b $.
+    $( A set of size two is an unordered pair of two different elements.
+       (Contributed by Alexander van der Vekens, 8-Dec-2017.)  (Revised by Jim
+       Kingdon, 11-Jan-2026.) $)
+    en2prde $p |- ( V ~~ 2o -> E. a E. b ( a =/= b /\ V = { a , b } ) ) $=
+      ( c2o cen wbr cv cpr wceq wex wne wa en2 breq1 wb cvv el2v bitrdi biimpcd
+      pr2ne ancrd 2eximdv mpd ) ADEFZABGZCGZHZIZCJBJUEUFKZUHLZCJBJBCAMUDUHUJBCU
+      DUHUIUHUDUIUHUDUGDEFZUIAUGDENUKUIOBCUEUFPPTQRSUAUBUC $.
+  $}
+
   $( An unordered pair, with decidable equality for the specified elements, has
      either one or two elements.  (Contributed by Jim Kingdon, 7-Jan-2026.) $)
   pr1or2 $p |- ( ( A e. C /\ B e. D /\ DECID A = B )
@@ -73130,6 +73195,34 @@ $)
     breq1d adantl mpbid orcd pr2ne biimpar olcd jaodan sylan2b 3impa ) ACEZBDEZ
     ABFZGZABHZIJKZUOLJKZMZUNUKULNZUMABOZMURABPUSUMURUTUSUMNZUPUQVAAAHZIJKZUPUKV
     CULUMACQRUMVCUPSUSUMVBUOIJABATUAUBUCUDUSUTNUQUPUSUQUTABCDUEUFUGUHUIUJ $.
+
+  ${
+    $d A f $.  $d B f $.
+    $( If an unordered pair is equinumerous to ordinal two, then a part is a
+       set.  (Contributed by RP, 21-Oct-2023.) $)
+    pr2cv1 $p |- ( { A , B } ~~ 2o -> A e. _V ) $=
+      ( vf cpr c2o cen wbr c0 c1o cvv wcel cfv wceq 0ex fvex eleq1 mpbii adantl
+      a1i syl cv wf1o wex df2o3 ensym eqbrtrrid bren sylib wa 1oex simplr simpr
+      vex eqtr4d wf1 wi f1of1 ad2antrr prid1 prid2 f1veqaeq syl12anc mpd wn 1n0
+      nesymi pm2.21dd wo f1of ffvelcdmd elpri adantr mpjaodan exlimiv ) ABDZEFG
+      ZHIDZVOCUAZUBZCUCZAJKZVPVQVOFGVTVPVQEVOFUDVOEUEUFVQVOCUGUHVSWACVSHVRLZAMZ
+      WAWBBMZWCWAVSWCWBJKWAHVRJJCUMZNOWBAJPQRVSWDUIZIVRLZAMZWAWGBMZWHWAWFWHWGJK
+      WAIVRJJWEUJOWGAJPQRWFWIUIZHIMZWAWJWBWGMZWKWJWBBWGVSWDWIUKWFWIULUNWJVQVOVR
+      UOZHVQKZIVQKZWLWKUPVSWMWDWIVQVOVRUQURWNWJHINUSZSWOWJHIUJUTZSVQVOHIVRVAVBV
+      CWKVDWJIHVEVFSVGVSWHWIVHZWDVSWGVOKWRVSVQVOIVRVQVOVRVIZWOVSWQSVJWGABVKTVLV
+      MVSWBVOKWCWDVHVSVQVOHVRWSWNVSWPSVJWBABVKTVMVNT $.
+  $}
+
+  $( If an unordered pair is equinumerous to ordinal two, then a part is a set.
+     (Contributed by RP, 21-Oct-2023.) $)
+  pr2cv2 $p |- ( { A , B } ~~ 2o -> B e. _V ) $=
+    ( cpr c2o cen wbr cvv wcel prcom breq1i pr2cv1 sylbir ) ABCZDEFBACZDEFBGHNM
+    DEBAIJBAKL $.
+
+  $( If an unordered pair is equinumerous to ordinal two, then both parts are
+     sets.  (Contributed by RP, 8-Oct-2023.) $)
+  pr2cv $p |- ( { A , B } ~~ 2o -> ( A e. _V /\ B e. _V ) ) $=
+    ( cpr c2o cen wbr cvv wcel pr2cv1 pr2cv2 jca ) ABCDEFAGHBGHABIABJK $.
 
   ${
     $d A r s $.  $d A z $.  $d ph x $.  $d s x $.
@@ -193963,6 +194056,281 @@ $)
       NOZUNNOAFDUCPZNKADQOZUQNOGDQUDRSZABNOCNOUPABDUEPZNIAURUTNOGDQUFRSACEUEPZN
       JAEQOVANOHEQUFRSBCNNUGTZFUMNNUHTAUOUPUNUCPFUIUSVBUMFNNUJTAUOUPUNUEPUMUIUS
       VBUMFNNUKTUL $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Loop-free graphs
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  For a hypergraph, the property to be "loop-free" is expressed by
+  ` I : dom I --> E ` with ` E = { x e. ~P V | 2o ~<_ x } ` and
+  ` I = ( iEdg `` G ) `. ` E ` is the set of edges which connect at least two
+  vertices.
+
+$)
+
+  $( Lemma for ~ umgrislfupgrdom .  (Contributed by AV, 27-Jan-2021.) $)
+  umgrislfupgrenlem $p |- ( { x e. ~P V | ( x ~~ 1o \/ x ~~ 2o ) }
+                      i^i { x e. ~P V | 2o ~<_ x } )
+                        = { x e. ~P V | x ~~ 2o } $=
+    ( cv c1o cen wbr c2o wo cpw crab cdom wa inrab wn wi 1ndom2 domentr ex mtoi
+    cin orel1 syl impcom olc ensymb endom sylbir jca impbii rabbii eqtri ) ACZD
+    EFZULGEFZHZABIZJGULKFZAUPJTUOUQLZAUPJUNAUPJUOUQAUPMURUNAUPURUNUQUOUNUQUMNUO
+    UNOUQUMGDKFZPUQUMUSGULDQRSUMUNUAUBUCUNUOUQUNUMUDUNGULEFUQGULUEGULUFUGUHUIUJ
+    UK $.
+
+  ${
+    $d G x $.  $d V x $.
+    umgrislfupgr.v $e |- V = ( Vtx ` G ) $.
+    umgrislfupgr.i $e |- I = ( iEdg ` G ) $.
+    $( A multigraph is a loop-free pseudograph.  (Contributed by AV,
+       27-Jan-2021.) $)
+    umgrislfupgrdom $p |- ( G e. UMGraph <-> ( G e. UPGraph
+                         /\ I : dom I --> { x e. ~P V | 2o ~<_ x } ) ) $=
+      ( cumgr wcel cupgr cdm c2o cv cdom wbr crab wf wa cen a1i wb cpw umgrupgr
+      umgrfen id wss wi ensymb endom sylbir ss2rabi fssd syl jca c1o wo upgrfen
+      cin wceq umgrislfupgrenlem feq3 ax-mp sylbb1 sylan isumgren adantr mpbird
+      fin impbii ) BGHZBIHZCJZKALZMNZADUAZOZCPZQZVIVJVPBUBVIVKVLKRNZAVNOZCPZVPA
+      CBDEFUCVTVKVSVOCVTUDVSVOUEVTVRVMAVNVRVMUFVLVNHVRKVLRNVMKVLUGKVLUHUISUJSUK
+      ULUMVQVIVTVJVKVLUNRNVRUOAVNOZCPZVPVTACBDEFUPVKWAVOUQZCPZWBVPQVTVKWAVOCVGW
+      CVSURWDVTTADUSWCVSVKCUTVAVBVCVJVIVTTVPAICBDEFVDVEVFVH $.
+  $}
+
+  ${
+    $d A x $.  $d I x y $.  $d V x y $.  $d X y $.
+    lfuhgrnloopv.i $e |- I = ( iEdg ` G ) $.
+    lfuhgrnloopv.a $e |- A = dom I $.
+    lfuhgrnloopv.e $e |- E = { x e. ~P V | 2o ~<_ x } $.
+    $( An edge of a loop-free graph has at least two ends.  (Contributed by AV,
+       23-Feb-2021.) $)
+    lfgredg2dom $p |- ( ( I : A --> E /\ X e. A )
+                       -> 2o ~<_ ( I ` X ) ) $=
+      ( vy wf wcel wa cfv c2o cv cdom wbr breq2 cpw crab eqid feq23i ffvelcdmda
+      biimpi cbvrabv elrab2 simprbi syl ) BCELZGBMNGEOZPAQZRSZAFUAZUBZMZPULRSZU
+      KBUPGEUKBUPELBCBUPEBUCJUDUFUEUQULUOMURPKQZRSZURKULUOUPUSULPRTUNUTAKUOUMUS
+      PRTUGUHUIUJ $.
+
+    $d U x $.
+    $( A loop-free graph has no loops.  (Contributed by AV, 23-Feb-2021.) $)
+    lfgrnloopen $p |- ( I : A --> E -> { x e. A | ( I ` x ) ~~ 1o } = (/) ) $=
+      ( wf cv cfv c1o cen wbr crab nfcv c2o cdom ex wral wceq cpw nfrab1 nfcxfr
+      wn c0 nff wcel lfgredg2dom 1ndom2 domentr mtoi syl ralrimi rabeq0 sylibr
+      wa ) BCEJZAKZELZMNOZUFZABUAVBABPUGUBUSVCABABCEAEQABQACRUTSOZAFUCZPIVDAVEU
+      DUEUHUSUTBUIZVCUSVFURRVASOZVCABCDEFUTGHIUJVGVBRMSOZUKVGVBVHRVAMULTUMUNTUO
+      VBABUPUQ $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Edges as subsets of vertices of graphs
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d E x $.  $d I x $.
+    uhgredgiedgb.i $e |- I = ( iEdg ` G ) $.
+    $( In a hypergraph, a set is an edge iff it is an indexed edge.
+       (Contributed by AV, 17-Oct-2020.) $)
+    uhgredgiedgb $p |- ( G e. UHGraph -> ( E e. ( Edg ` G )
+                                         <-> E. x e. dom I E = ( I ` x ) ) ) $=
+      ( cuhgr wcel wfun cedg cfv cv wceq cdm wrex wb uhgrfun edgiedgbg mpdan )
+      CFGDHBCIJGBAKDJLADMNODCEPABCDFEQR $.
+  $}
+
+  $( A hypergraph has no edges iff its edge function is empty.  (Contributed by
+     AV, 21-Oct-2020.)  (Proof shortened by AV, 8-Dec-2021.) $)
+  uhgriedg0edg0 $p |- ( G e. UHGraph -> ( ( Edg ` G ) = (/)
+                                          <-> ( iEdg ` G ) = (/) ) ) $=
+    ( cuhgr wcel ciedg cfv wfun cedg c0 wceq wb eqid uhgrfun edg0iedg0g mpdan )
+    ABCADEZFAGEZHIOHIJOAOKZLPAOBQPKMN $.
+
+  ${
+    $d E x y $.  $d G y $.
+    $( An edge of a hypergraph is an inhabited subset of vertices.
+       (Contributed by AV, 28-Nov-2020.) $)
+    uhgredgm $p |- ( ( G e. UHGraph /\ E e. ( Edg ` G ) )
+                    -> ( E e. ~P ( Vtx ` G ) /\ E. x x e. E ) ) $=
+      ( vy cuhgr wcel cedg cfv wa cv wex cvtx cpw crab ciedg crn edgvalg uhgrfm
+      cdm eqid frnd eqsstrd sselda wceq eleq2 exbidv elrab sylib ) CEFZBCGHZFIB
+      AJZDJZFZAKZDCLHZMZNZFBUPFUKBFZAKZIUIUJUQBUIUJCOHZPUQCEQUIUTSUQUTAUTCUODUO
+      TUTTRUAUBUCUNUSDBUPULBUDUMURAULBUKUEUFUGUH $.
+  $}
+
+  ${
+    $d E x $.
+    $( An edge of a hypergraph is a subset of vertices.  (Contributed by AV,
+       26-Oct-2020.)  (Proof shortened by AV, 28-Nov-2020.) $)
+    edguhgr $p |- ( ( G e. UHGraph /\ E e. ( Edg ` G ) )
+                    -> E e. ~P ( Vtx ` G ) ) $=
+      ( vx cuhgr wcel cedg cfv wa cvtx cpw cv wex uhgredgm simpld ) BDEABFGEHAB
+      IGJECKAECLCABMN $.
+  $}
+
+  $( An edge of a hypergraph contains only vertices.  (Contributed by Alexander
+     van der Vekens, 18-Feb-2018.)  (Revised by AV, 4-Jun-2021.) $)
+  uhgredgrnv $p |- ( ( G e. UHGraph /\ E e. ( Edg ` G ) /\ N e. E )
+                     -> N e. ( Vtx ` G ) ) $=
+    ( cuhgr wcel cedg cfv cvtx wa cpw wi edguhgr elelpwi expcom syl 3impia ) BD
+    EZABFGEZCAEZCBHGZEZQRIATJEZSUAKABLSUBUACATMNOP $.
+
+  ${
+    $d E x $.  $d G x $.
+    $( Properties of an edge of a pseudograph.  (Contributed by AV,
+       8-Nov-2020.) $)
+    edgupgren $p |- ( ( G e. UPGraph /\ E e. ( Edg ` G ) )
+                -> ( E e. ~P ( Vtx ` G ) /\ ( E ~~ 1o \/ E ~~ 2o ) ) ) $=
+      ( vx cupgr wcel cedg cfv wa cv c1o cen wbr c2o cvtx crab ciedg eqid breq1
+      wo cpw crn edgvalg eleq2d biimpa wi cdm upgrfen frnd sseld adantr orbi12d
+      mpd wceq elrab sylib ) BDEZABFGZEZHZACIZJKLZUTMKLZSZCBNGZTZOZEZAVEEAJKLZA
+      MKLZSZHUSABPGZUAZEZVGUPURVMUPUQVLABDUBUCUDUPVMVGUEURUPVLVFAUPVKUFVFVKCVKB
+      VDVDQVKQUGUHUIUJULVCVJCAVEUTAUMVAVHVBVIUTAJKRUTAMKRUKUNUO $.
+
+    $( Properties of an edge of a multigraph.  (Contributed by AV,
+       25-Nov-2020.) $)
+    edgumgren $p |- ( ( G e. UMGraph /\ E e. ( Edg ` G ) )
+                    -> ( E e. ~P ( Vtx ` G ) /\ E ~~ 2o ) ) $=
+      ( vx cumgr wcel cedg cfv wa cv c2o cen wbr cvtx cpw ciedg crn edgvalg cdm
+      crab eqid umgrfen frnd eqsstrd sselda breq1 elrab sylib ) BDEZABFGZEHACIZ
+      JKLZCBMGZNZSZEAUMEAJKLZHUHUIUNAUHUIBOGZPUNBDQUHUPRUNUPCUPBULULTUPTUAUBUCU
+      DUKUOCAUMUJAJKUEUFUG $.
+  $}
+
+  ${
+    $d E e $.  $d I e i $.  $d U e i $.
+    uhgrvtxedgiedgb.i $e |- I = ( iEdg ` G ) $.
+    uhgrvtxedgiedgb.e $e |- E = ( Edg ` G ) $.
+    $( In a hypergraph, a vertex is incident with an edge iff it is contained
+       in an element of the range of the edge function.  (Contributed by AV,
+       24-Dec-2020.)  (Revised by AV, 6-Jul-2022.) $)
+    uhgrvtxedgiedgb $p |- ( ( G e. UHGraph /\ U e. V )
+                  -> ( E. i e. dom I U e. ( I ` i ) <-> E. e e. E U e. e ) ) $=
+      ( cuhgr wcel wa cv wrex cfv cdm wb crn cedg ciedg edgvalg 3eqtr4g rexeqdv
+      rneqi wfn uhgrfun funfnd eleq2 rexrn syl bitrd adantr bicomd ) EJKZAGKZLA
+      BMZKZBDNZACMFOZKZCFPZNZUNURVBQUOUNURUQBFRZNZVBUNUQBDVCUNESOETOZRDVCEJUAIF
+      VEHUDUBUCUNFVAUEVDVBQUNFFEHUFUGUQUTBCVAFUPUSAUHUIUJUKULUM $.
+  $}
+
+  ${
+    $d C x $.  $d G x $.  $d V x $.  $d C a b c z $.  $d G a b z $.
+    $d V a b c z $.
+    upgredg.v $e |- V = ( Vtx ` G ) $.
+    upgredg.e $e |- E = ( Edg ` G ) $.
+    $( For each edge in a pseudograph, there are two vertices which are
+       connected by this edge.  (Contributed by AV, 4-Nov-2020.)  (Proof
+       shortened by AV, 26-Nov-2021.) $)
+    upgredg $p |- ( ( G e. UPGraph /\ C e. E )
+                    -> E. a e. V E. b e. V C = { a , b } ) $=
+      ( vz vx cupgr wcel cfv cv wceq wrex wa cen wbr syl ciedg crn cedg edgvalg
+      cpr eqtrid eleq2d biimpa cdm wfun wfn c1o c2o wo crab eqid upgrfen adantr
+      cpw ffnd fnfun simpr elrnrexdm simpll simprl upgrex syl3anc simprr eqeq1d
+      sylc 2rexbidv mpbird rexlimddv syldan ) CKLZABLZACUAMZUBZLZAENFNUEZOZFDPE
+      DPZVOVPVSVOBVRAVOBCUCMVRHCKUDUFUGUHVOVSQZAINZVQMZOZWBIVQUIZWCVQUJZVSWFIWG
+      PWCVQWGUKZWHVOWIVSVOWGJNZULRSWJUMRSUNJDUSUOVQJVQCDGVQUPZUQUTZURWGVQVATVOV
+      SVBIVQAVCVJWCWDWGLZWFQZQZWBWEVTOZFDPEDPZWOVOWIWMWQVOVSWNVDZWOVOWIWRWLTWCW
+      MWFVEEFWGVQWDCDGWKVFVGWOWAWPEFDDWOAWEVTWCWMWFVHVIVKVLVMVN $.
+
+    $( For each edge in a multigraph, there are two distinct vertices which are
+       connected by this edge.  (Contributed by Alexander van der Vekens,
+       9-Dec-2017.)  (Revised by AV, 25-Nov-2020.) $)
+    umgredg $p |- ( ( G e. UMGraph /\ C e. E )
+                    -> E. a e. V E. b e. V ( a =/= b /\ C = { a , b } ) ) $=
+      ( cumgr wcel wa cv wne cpr wex wrex cfv adantl wss vex wceq cvtx cpw cedg
+      c2o cen wbr eleq2i edgumgren sylan2b en2prde wi eleq1 zfpair2 elpw sseq2i
+      prss sylbbr sylbi biimtrdi adantrd imdistanri 2eximdv mpd syl r2ex sylibr
+      ex ) CIJZABJZKZELZDJFLZDJKZVLVMMZAVLVMNZUAZKZKZFOEOZVRFDPEDPVKACUBQZUCZJZ
+      AUEUFUGZKZVTVJVIACUDQZJWEBWFAHUHACUIUJWEVRFOEOZVTWDWGWCAEFUKRWEVRVSEFWEVR
+      VSVRWEVNVQWEVNULVOVQWCVNWDVQWCVPWBJZVNAVPWBUMWHVPWASZVNVPWAEFUNUOVNVPDSWI
+      VLVMDETFTUQDWAVPGUPURUSUTVARVBVHVCVDVEVREFDDVFVG $.
+
+    ${
+      $d E m n $.  $d G m n $.  $d M m n $.  $d N m n $.  $d U m n $.
+      $d V m n $.  $d W m n $.
+      $( An edge of a pseudograph always connects two vertices if the edge
+         contains two sets.  The two vertices/sets need not necessarily be
+         different (loops are allowed).  (Contributed by AV, 18-Nov-2021.) $)
+      upgrpredgv $p |- ( ( G e. UPGraph /\ ( M e. U /\ N e. W )
+                                        /\ { M , N } e. E )
+                         -> ( M e. V /\ N e. V ) ) $=
+        ( vm vn wcel wa cpr cv wceq wb eleq1 eqcoms biimpd wrex upgredg 3adant2
+        cupgr wo preq12bg 3ad2antl2 wi im2anan9 com12 ancoms jaod adantl sylbid
+        w3a rexlimdvva mpd ) CUDLZDALEGLMZDENZBLZUOZUTJOZKOZNPZKFUAJFUAZDFLZEFL
+        ZMZURVAVFUSUTBCFJKHIUBUCVBVEVIJKFFVBVCFLZVDFLZMZMVEDVCPZEVDPZMZDVDPZEVC
+        PZMZUEZVIUSURVLVEVSQVADEVCVDAGFFUFUGVLVSVIUHVBVLVOVIVRVOVLVIVMVJVGVNVKV
+        HVMVJVGVJVGQVCDVCDFRSTVNVKVHVKVHQVDEVDEFRSTUIUJVKVJVRVIUHVRVKVJMVIVPVKV
+        GVQVJVHVPVKVGVKVGQVDDVDDFRSTVQVJVHVJVHQVCEVCEFRSTUIUJUKULUMUNUPUQ $.
+    $}
+
+    $( An edge of a multigraph always connects two vertices.  This theorem does
+       not hold for arbitrary pseudographs: if either ` M ` or ` N ` is a
+       proper class, then ` { M , N } e. E ` could still hold ( ` { M , N } `
+       would be either ` { M } ` or ` { N } ` , see ~ prprc1 or ~ prprc2 , i.e.
+       a loop), but ` M e. V ` or ` N e. V ` would not be true.  (Contributed
+       by AV, 27-Nov-2020.) $)
+    umgrpredgv $p |- ( ( G e. UMGraph /\ { M , N } e. E )
+                      -> ( M e. V /\ N e. V ) ) $=
+      ( cumgr wcel cpr wa cpw cvtx cfv c2o cen wbr simpld cvv simpl2im eleqtrdi
+      cedg eleq2i edgumgren sylan2b eqcomi pweqi pr2cv prid1g syl prid2g prelpw
+      wb syl2anc mpbird ) BHIZCDJZAIZKZCEIDEIKZUQELZIZUSUQBMNZLZVAUSUQVDIZUQOPQ
+      ZURUPUQBUBNZIVEVFKAVGUQGUCUQBUDUEZRVCEEVCFUFUGUAUSCUQIZDUQIZUTVBUMUSCSIZV
+      IUSVKDSIZUSVEVFVKVLKVHCDUHTZRCDSUIUJUSVKVLVJVMCDSUKTCDEUQUQULUNUO $.
+
+    $d A a b c $.  $d E a c $.  $d G c $.
+    $( For a vertex incident to an edge there is another vertex incident to the
+       edge in a pseudograph.  (Contributed by AV, 18-Oct-2020.)  (Revised by
+       AV, 5-Dec-2020.) $)
+    upgredg2vtx $p |- ( ( G e. UPGraph /\ C e. E /\ A e. C )
+                        -> E. b e. V C = { A , b } ) $=
+      ( va vc cupgr wcel w3a cv cpr wceq wrex upgredg 3adant3 wi wa eleq2 eqeq1
+      elpr2elpr 3expia rexbidv imbi12d imbitrrid com13 3ad2ant3 rexlimdvv mpd )
+      DKLZBCLZABLZMZBINZJNZOZPZJEQIEQZBAFNOZPZFEQZUMUNVAUOBCDEIJGHRSUPUTVDIJEEU
+      OUMUQELZURELZUAZUTVDTTUNUTVGUOVDVGUOVDTUTAUSLZUSVBPZFEQZTVEVFVHVJAEUQURFU
+      DUEUTUOVHVDVJBUSAUBUTVCVIFEBUSVBUCUFUGUHUIUJUKUL $.
+
+    $d B a b $.  $d U a b $.  $d W a b $.
+    $( If a proper pair (of vertices) is a subset of an edge in a pseudograph,
+       the pair is the edge.  (Contributed by AV, 30-Dec-2020.) $)
+    upgredgpr $p |- ( ( ( G e. UPGraph /\ C e. E /\ { A , B } C_ C )
+                          /\ ( A e. U /\ B e. W /\ A =/= B ) )
+                      -> { A , B } = C ) $=
+      ( va vb wcel cpr wss w3a wceq cv wrex wi cupgr wne upgredg 3adant3 biimpd
+      ssprsseq sseq2 eqeq2 imbi12d imbitrrid com23 a1i rexlimivv com12 3ad2ant3
+      wa mpd imp ) FUAMZCEMZABNZCOZPZADMBHMABUBPZVACQZVCCKRZLRZNZQZLGSKGSZVDVET
+      ZUSUTVJVBCEFGKLIJUCUDVBUSVJVKTUTVJVBVKVIVBVKTZKLGGVIVLTVFGMVGGMUPVIVDVBVE
+      VDVBVETVIVAVHOZVAVHQZTVDVMVNABVFVGDHUFUEVIVBVMVEVNCVHVAUGCVHVAUHUIUJUKULU
+      MUNUOUQUR $.
+  $}
+
+  ${
+    umgredgne.v $e |- E = ( Edg ` G ) $.
+    $( An edge of a multigraph always connects two different vertices.
+       Analogue of ~ umgrnloopvv .  (Contributed by AV, 27-Nov-2020.) $)
+    umgredgne $p |- ( ( G e. UMGraph /\ { M , N } e. E ) -> M =/= N ) $=
+      ( cumgr wcel cpr c2o cen wbr wne cvtx cfv cpw cedg eleq2i edgumgren cvv
+      wa sylan2b simprd wb pr2cv pr2ne 3syl mpbid ) BFGZCDHZAGZTZUIIJKZCDLZUKUI
+      BMNOGZULUJUHUIBPNZGUNULTAUOUIEQUIBRUAUBZUKULCSGDSGTULUMUCUPCDUDCDSSUEUFUG
+      $.
+  $}
+
+  $( A multigraph has no loops.  (Contributed by AV, 27-Oct-2020.)  (Revised by
+     AV, 30-Nov-2020.) $)
+  umgrnloop2 $p |- ( G e. UMGraph -> { N , N } e/ ( Edg ` G ) ) $=
+    ( cumgr wcel cpr cedg wn wnel cvtx wa eqid umgrpredgv simpld wceq umgredgne
+    cfv wne eqneqall mpsyl pm2.65da df-nel sylibr ) ACDZBBEZAFPZDZGUDUEHUCUFBAI
+    PZDZUCUFJZUHUHUEABBUGUGKUEKZLMBBNUIBBQUHGZBKUEABBUJOUKBBRSTUDUEUAUB $.
+
+  ${
+    $d C v $.  $d E v $.  $d G v $.
+    umgredgnlp.e $e |- E = ( Edg ` G ) $.
+    $( An edge of a multigraph is not a loop.  (Contributed by AV, 9-Jan-2020.)
+       (Revised by AV, 8-Jun-2021.) $)
+    umgredgnlp $p |- ( ( G e. UMGraph /\ C e. E ) -> -. E. v C = { v } ) $=
+      ( cumgr wcel wa cv csn wceq cvtx cfv cpw c2o cen wbr c1o 1nen2 vex ensymi
+      ensn1 entr mpan breq1 mtbiri intnand eleq2i edgumgren sylan2b nsyl3 nexdv
+      mto cedg ) DFGZBCGZHZBAIZJZKZAUTBDLMNGZBOPQZHZUQUTVBVAUTVBUSOPQZVDROPQZSR
+      USPQVDVEUSRURATUBUARUSOUCUDUMBUSOPUEUFUGUPUOBDUNMZGVCCVFBEUHBDUIUJUKUL $.
   $}
 
 
