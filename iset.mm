@@ -195125,6 +195125,26 @@ $)
       [. ( iEdg ` g ) / e ]. e : dom e -1-1-> { x e. ~P v | x ~~ 2o } } $.
   $}
 
+  ${
+    $d e g h v x $.  $d E h $.  $d G h x $.  $d V h x $.
+    isuspgr.v $e |- V = ( Vtx ` G ) $.
+    isuspgr.e $e |- E = ( iEdg ` G ) $.
+    $( The property of being a simple pseudograph.  (Contributed by Alexander
+       van der Vekens, 10-Aug-2017.)  (Revised by AV, 13-Oct-2020.) $)
+    isuspgren $p |- ( G e. U -> ( G e. USPGraph <->
+           E : dom E -1-1-> { x e. ~P V | ( x ~~ 1o \/ x ~~ 2o ) } ) ) $=
+      ( ve vv vg vh wcel cv cdm ciedg cfv cvtx wceq fveq2 cvv cuspgr c1o cen wo
+      wbr c2o cpw crab wf1 wsbc cab df-uspgren eleq2i dmeqd eqcomi dmeqi eqtrdi
+      eqtr4di pweqd rabeqdv f1eq123d vtxex elv a1i iedgex adantr simpr ad2antlr
+      wa pweq sbcied2 cbvabv elab2g bitrid ) DUALDHMZNZAMZUBUCUEVQUFUCUEUDZAIMZ
+      UGZUHZVOUIZHJMZOPZUJZIWCQPZUJZJUKZLDBLCNZVRAEUGZUHZCUIZUAWHDAIHJULUMKMZOP
+      ZNZVRAWMQPZUGZUHZWNUIZWLKDWHBWMDRZWOWIWRWKWNCWTWNDOPZCWMDOSZGURWTWOXANWIW
+      TWNXAXBUNXACCXAGUOUPUQWTVRAWQWJWTWPEWTWPDQPEWMDQSFURUSUTVAWGWSJKWCWMRZWEW
+      SIWFWPTWFTLZXCXDJWCTVBVCVDWCWMQSXCVSWPRZVIZWBWSHWDWNTWDTLZXFXGJWCTVEVCVDX
+      CWDWNRXEWCWMOSVFXFVOWNRZVIZVPWOWAWRVOWNXFXHVGZXIVOWNXJUNXIVRAVTWQXEVTWQRX
+      CXHVSWPVJVHUTVAVKVKVLVMVN $.
+  $}
+
 
 $(
 ###############################################################################
