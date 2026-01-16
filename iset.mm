@@ -195204,6 +195204,21 @@ $)
       UGCAUEUCAIJPST $.
   $}
 
+  ${
+    $d E p $.  $d V p $.  $d W p $.  $d X p $.
+    $( The property of being an undirected simple pseudograph represented as an
+       ordered pair.  The representation as an ordered pair is the usual
+       representation of a graph, see section I.1 of [Bollobas] p. 1.
+       (Contributed by AV, 25-Nov-2021.) $)
+    isuspgropen $p |- ( ( V e. W /\ E e. X ) -> ( <. V , E >. e. USPGraph
+        <-> E : dom E -1-1-> { p e. ~P V | ( p ~~ 1o \/ p ~~ 2o ) } ) ) $=
+      ( wcel wa cop cuspgr ciedg cfv cdm cv cen wbr cpw crab wf1 cvv eqid wo wb
+      c1o c2o opexg isuspgren syl opiedgfv dmeqd opvtxfv pweqd rabeqdv f1eq123d
+      cvtx bitrd ) BCFADFGZBAHZIFZUQJKZLZEMZUCNOVAUDNOUAZEUQUNKZPZQZUSRZALZVBEB
+      PZQZARUPUQSFURVFUBBACDUEESUSUQVCVCTUSTUFUGUPUTVGVEVIUSAABCDUHZUPUSAVJUIUP
+      VBEVDVHUPVCBABCDUJUKULUMUO $.
+  $}
+
 
 $(
 ###############################################################################
