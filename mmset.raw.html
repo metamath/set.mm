@@ -1943,8 +1943,8 @@ abstraction</A></TD>
 </TR>
 
 <TR ALIGN=LEFT>
-<TD><A HREF="df-clel.html">Definition of class membership</A></TD>
-<TD NOWRAP><FONT COLOR="#006633"><B>df-clel</B></FONT></TD>
+<TD><A HREF="dfclel.html">Definition of class membership</A></TD>
+<TD NOWRAP><FONT COLOR="#006633"><B>dfclel</B></FONT></TD>
 <TD>` |- ( A e. B <-> E. x ( x = A /\ x e. B ) ) `</TD>
 </TR>
 </TABLE>
@@ -1976,8 +1976,13 @@ exactly where ~ ax-ext was used by a proof.
 
 <P>
 Definition ~ df-clel similarly extends the ` e. ` connective to allow classes
-on both sides.  We do not need a hypothesis as we did for ~ df-cleq because its
+on both sides.  This definition also has two hypotheses, and above we show the
+derived version ~ dfclel with the hypotheses eliminated for practical use.
+Unlike ~ df-cleq , ~ df-clel without its hypotheses would still be a sound
+definition in the context of predicate calculus without set theory because its
 instances are theorems of predicate calculus (see Theorem ~ cleljust ).
+However, we include the hypotheses so that we can more easily determine exactly
+where a proof used the axioms of predicate calculus.
 </P>
 
 <P>
