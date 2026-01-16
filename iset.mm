@@ -195166,6 +195166,14 @@ $)
              E : dom E -1-1-> { x e. ~P V | ( x ~~ 1o \/ x ~~ 2o ) } ) $=
       ( cuspgr wcel cdm cv c1o cen wbr c2o wo cpw crab wf1 isuspgren ibi ) CGHB
       IAJZKLMUANLMOADPQBRAGBCDEFST $.
+
+    $( The edge function of a simple graph is a one-to-one function into
+       unordered pairs of vertices.  (Contributed by Alexander van der Vekens,
+       10-Aug-2017.)  (Revised by AV, 13-Oct-2020.) $)
+    usgrfen $p |- ( G e. USGraph ->
+              E : dom E -1-1-> { x e. ~P V | x ~~ 2o } ) $=
+      ( cusgr wcel cdm cv c2o cen wbr cpw crab wf1 isusgren ibi ) CGHBIAJKLMADN
+      OBPAGBCDEFQR $.
   $}
 
 
