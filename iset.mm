@@ -195184,6 +195184,15 @@ $)
     usgrfun $p |- ( G e. USGraph -> Fun ( iEdg ` G ) ) $=
       ( vx cusgr wcel ciedg cfv cdm c2o cen wbr cvtx cpw crab wfun eqid usgrfen
       cv wf1 f1fun syl ) ACDAEFZGZBQHIJBAKFZLMZUARUANBUAAUCUCOUAOPUBUDUAST $.
+
+    $( The set of edges of a simple graph is a subset of the set of unordered
+       pairs of vertices.  (Contributed by AV, 1-Jan-2020.)  (Revised by AV,
+       14-Oct-2020.) $)
+    usgredgssen $p |- ( G e. USGraph
+               -> ( Edg ` G ) C_ { x e. ~P ( Vtx ` G ) | x ~~ 2o } ) $=
+      ( cusgr wcel cedg cfv ciedg crn c2o cen wbr cvtx cpw crab edgvalg cdm wf1
+      cv wf eqid wss usgrfen f1f frn 3syl eqsstrd ) BCDZBEFBGFZHZARIJKABLFZMNZB
+      COUGUHPZUKUHQULUKUHSUIUKUAAUHBUJUJTUHTUBULUKUHUCULUKUHUDUEUF $.
   $}
 
 
