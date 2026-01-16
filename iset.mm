@@ -195176,6 +195176,16 @@ $)
       OBPAGBCDEFQR $.
   $}
 
+  ${
+    $d G x $.
+    $( The edge function of a simple graph is a function.  (Contributed by
+       Alexander van der Vekens, 18-Aug-2017.)  (Revised by AV,
+       13-Oct-2020.) $)
+    usgrfun $p |- ( G e. USGraph -> Fun ( iEdg ` G ) ) $=
+      ( vx cusgr wcel ciedg cfv cdm c2o cen wbr cvtx cpw crab wfun eqid usgrfen
+      cv wf1 f1fun syl ) ACDAEFZGZBQHIJBAKFZLMZUARUANBUAAUCUCOUAOPUBUDUAST $.
+  $}
+
 
 $(
 ###############################################################################
