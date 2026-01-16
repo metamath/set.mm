@@ -195193,6 +195193,15 @@ $)
       ( cusgr wcel cedg cfv ciedg crn c2o cen wbr cvtx cpw crab edgvalg cdm wf1
       cv wf eqid wss usgrfen f1f frn 3syl eqsstrd ) BCDZBEFBGFZHZARIJKABLFZMNZB
       COUGUHPZUKUHQULUKUHSUIUKUAAUHBUJUJTUHTUBULUKUHUCULUKUHUDUEUF $.
+
+    $d E x $.
+    $( An edge of a simple graph is an unordered pair of vertices.
+       (Contributed by AV, 1-Jan-2020.)  (Revised by AV, 14-Oct-2020.) $)
+    edgusgren $p |- ( ( G e. USGraph /\ E e. ( Edg ` G ) )
+                -> ( E e. ~P ( Vtx ` G ) /\ E ~~ 2o ) ) $=
+      ( vx cusgr wcel cedg cfv wa c2o cen wbr cvtx cpw usgredgssen sselda breq1
+      cv crab elrab sylib ) BDEZABFGZEHACQZIJKZCBLGMZRZEAUEEAIJKZHUAUBUFACBNOUD
+      UGCAUEUCAIJPST $.
   $}
 
 
