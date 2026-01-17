@@ -195231,6 +195231,17 @@ $)
       UHUIUJUKUL $.
   $}
 
+  ${
+    $d G x $.
+    $( A simple graph represented by an ordered pair.  (Contributed by AV,
+       23-Oct-2020.)  (Proof shortened by AV, 30-Nov-2020.) $)
+    usgrop $p |- ( G e. USGraph
+                   -> <. ( Vtx ` G ) , ( iEdg ` G ) >. e. USGraph ) $=
+      ( cusgr wcel cvtx cfv ciedg cop cdm c2o cen wbr cpw crab wf1 eqid usgrfen
+      vx cv cvv wb vtxex iedgex isusgropen syl2anc mpbird ) ABCZADEZAFEZGBCZUHH
+      QRIJKQUGLMUHNZQUHAUGUGOUHOPUFUGSCUHSCUIUJTABUAABUBUHUGSSQUCUDUE $.
+  $}
+
 
 $(
 ###############################################################################
