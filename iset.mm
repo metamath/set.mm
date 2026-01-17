@@ -195254,6 +195254,24 @@ $)
       ( cv c2o cen wbr cpw crab wss wceq wa simpr pweq adantr rabeqdv sseq12d
       brabga ) CJZAJKLMZABJZNZOZPDUFAFNZOZPBCFDEGHUGFQZUEDQZRZUEDUIUKULUMSUNUFA
       UHUJULUHUJQUMUGFTUAUBUCIUD $.
+
+    $( The equivalence of the definitions of a simple graph.  (Contributed by
+       Alexander van der Vekens, 28-Aug-2017.)  (Revised by AV,
+       14-Oct-2020.) $)
+    ausgrusgrben $p |- ( ( V e. X /\ E e. Y )
+                       -> ( V G E <-> <. V , ( _I |` E ) >. e. USGraph ) ) $=
+      ( wcel wa wbr cpw crab wss wf1 wi wceq cvv sylan2 cv c2o cen cid cres cop
+      ciedg cfv cdm cvtx cusgr wf1o f1oi crn dff1o5 f1ss wb dmresi eqcomi f1eq2
+      ax-mp sylib ex a1d adantr sylbi wf wfn rnresi sseq1i biimpi simplbiim f1f
+      syl11 impbid resiexg opiedgfv dmeqd opvtxfv pweqd rabeqdv f1eq123d bitr4d
+      df-f isausgren opexg eqid isusgren syl 3bitr4d ) FGJZDHJZKZDAUAUBUCLZAFMZ
+      NZOZFUDDUEZUFZUGUHZUIZWNAWSUJUHZMZNZWTPZFDELWSUKJZWMWQWRUIZWPWRPZXEWMWQXH
+      DDWRULZWMWQXHQZQZDUMXIDDWRPZWRUNZDRZKXKDDWRUOXLXKXNXLXJWMXLWQXHXLWQKDWPWR
+      PZXHDDWPWRUPDXGRXOXHUQXGDDURUSDXGWPWRUTVAVBVCVDVEVFVAXGWPWRVGZWMWQXHXPWRX
+      GVHXMWPOZWMWQQXGWPWRWDXQWQWMXQWQXMDWPDVIVJVKVDVLXGWPWRVMVNVOWMXAXGXDWPWTW
+      RWLWKWRSJZWTWRRDHVPZWRFGSVQTZWMWTWRXTVRWMWNAXCWOWMXBFWLWKXRXBFRXSWRFGSVST
+      VTWAWBWCABCDEFGHIWEWMWSSJZXFXEUQWLWKXRYAXSFWRGSWFTASWTWSXBXBWGWTWGWHWIWJ
+      $.
   $}
 
 
