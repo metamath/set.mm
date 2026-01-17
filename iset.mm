@@ -195392,6 +195392,16 @@ $)
       f1oeq3 ax-mp f1ofveu sylan eqcom reubii ) CHIZEBIZJAKDLZEMZADNZOZEUIMZAUK
       OUGUKBDPZUHULUGUKCQLZDPZUNDCGRBUOMUNUPSFBUOUKDUAUBTAUKBEDUCUDUMUJAUKEUIUE
       UFT $.
+
+    $d E k $.  $d I k $.  $d X k $.
+    $( In a simple pseudograph, for each indexed edge there is exactly one
+       edge.  (Contributed by AV, 20-Apr-2025.) $)
+    uspgriedgedg $p |- ( ( G e. USPGraph /\ X e. dom I )
+                         -> E! k e. E k = ( I ` X ) ) $=
+      ( cuspgr wcel cdm wa cfv cv wceq wreu wf cedg wf1o uspgrf1oedg sylibr syl
+      f1of wb feq3 ax-mp fdmeu sylan eqcom reubii ) CHIZEDJZIZKEDLZAMZNZABOZUNU
+      MNZABOUJUKBDPZULUPUJUKCQLZDPZURUJUKUSDRUTDCGSUKUSDUBUABUSNURUTUCFBUSUKDUD
+      UETAUKBDEUFUGUQUOABUNUMUHUIT $.
   $}
 
 
