@@ -195414,6 +195414,15 @@ $)
       mpan2 isushgrm sylibrd pm2.43i ) ADEZAFEZUPUPAGHZIZBJCJZEBKZCALHZMZNZUROZ
       UQUPUPUSUTPQRZUTSQRZUAZCVCNZUROZVECDURAVBVBTZURTZUBVJVIVDUCVEVHVACVCVHVAU
       DUTVCEVFVAVGBUTUEBUTUFUGUHUIUSVIVDURUJULUKDBURAVBCVKVLUMUNUO $.
+
+    $( A simple pseudograph is an undirected pseudograph.  (Contributed by
+       Alexander van der Vekens, 10-Aug-2017.)  (Revised by AV,
+       15-Oct-2020.) $)
+    uspgrupgr $p |- ( G e. USPGraph -> G e. UPGraph ) $=
+      ( vx cuspgr wcel cupgr ciedg cfv cdm cv c1o cen wbr c2o cvtx cpw crab wf1
+      wo wf eqid isuspgren f1f biimtrdi isupgren sylibrd pm2.43i ) ACDZAEDZUGUG
+      AFGZHZBIZJKLUKMKLRBANGZOPZUISZUHUGUGUJUMUIQUNBCUIAULULTZUITZUAUJUMUIUBUCB
+      CUIAULUOUPUDUEUF $.
   $}
 
 
