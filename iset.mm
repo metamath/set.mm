@@ -195242,6 +195242,20 @@ $)
       QRIJKQUGLMUHNZQUHAUGUGOUHOPUFUGSCUHSCUIUJTABUAABUBUHUGSSQUCUDUE $.
   $}
 
+  ${
+    $d e v x E $.  $d e v x V $.  $d x X $.  $d x Y $.
+    ausgr.1 $e |- G = { <. v , e >. | e C_ { x e. ~P v | x ~~ 2o } } $.
+    $( The property of an unordered pair to be an alternatively defined simple
+       graph, defined as a pair (V,E) of a set V (vertex set) and a set of
+       unordered pairs of elements of V (edge set).  (Contributed by Alexander
+       van der Vekens, 28-Aug-2017.) $)
+    isausgren $p |- ( ( V e. W /\ E e. X )
+                     -> ( V G E <-> E C_ { x e. ~P V | x ~~ 2o } ) ) $=
+      ( cv c2o cen wbr cpw crab wss wceq wa simpr pweq adantr rabeqdv sseq12d
+      brabga ) CJZAJKLMZABJZNZOZPDUFAFNZOZPBCFDEGHUGFQZUEDQZRZUEDUIUKULUMSUNUFA
+      UHUJULUHUJQUMUGFTUAUBUCIUD $.
+  $}
+
 
 $(
 ###############################################################################
