@@ -195334,6 +195334,17 @@ $)
     funeq imp stoic3 ) BFGZABHIZJZAKZEALGEAICDMZJEUFNAGOUBUDUEUBUEUDUCKBPAUCSQT
     EUFARUA $.
 
+  ${
+    $d G x $.
+    usgrf1o.e $e |- E = ( iEdg ` G ) $.
+    $( The edge function of a simple graph is a bijective function onto its
+       range.  (Contributed by Alexander van der Vekens, 18-Nov-2017.)
+       (Revised by AV, 15-Oct-2020.) $)
+    usgrf1o $p |- ( G e. USGraph -> E : dom E -1-1-onto-> ran E ) $=
+      ( vx cusgr wcel cdm cv c2o cen wbr cvtx cfv cpw crab wf1 crn wf1o usgrfen
+      eqid f1f1orn syl ) BEFAGZDHIJKDBLMZNOZAPUCAQARDABUDUDTCSUCUEAUAUB $.
+  $}
+
 
 $(
 ###############################################################################
