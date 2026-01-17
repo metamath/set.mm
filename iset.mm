@@ -195295,6 +195295,23 @@ $)
       WDQHEFUMVPQUNUQUOABCVNDVMQQGUPURVLWBWDVTPZWCVLVNWDVTWEUSVLWFVQWAVLWFVQOVP
       VSUTZWFWAVQVLWGWFVQWGVPVAVBVCVLWFVQVDVSVTVPVEVFVHSSVIVLVOVRWARVQAFVPEVMVM
       TVPTVGVJVK $.
+
+    $d H f $.  $d x W $.
+    ausgrusgri.1 $e |- O = { f | f : dom f -1-1-> ran f } $.
+    $( The equivalence of the definitions of a simple graph, expressed with the
+       set of vertices and the set of edges.  (Contributed by AV,
+       15-Oct-2020.) $)
+    ausgrusgrien $p |- ( ( H e. W /\ ( Vtx ` H ) G ( Edg ` H )
+                                /\ ( iEdg ` H ) e. O ) -> H e. USGraph ) $=
+      ( wcel cfv wbr w3a cdm cv wf1 wss cvv wb cvtx cedg ciedg c2o cen cpw crab
+      cusgr vtxex crn edgvalg iedgex rnexg syl eqeltrd isausgren syl2anc sseq1d
+      wi eleq2i biimpi wceq dmeq rneq f1eq123d elabg mpbid 3ad2ant3 simp2 f1ssr
+      cab id 3exp sylbid 3imp eqid isusgren 3ad2ant1 mpbird ) FHKZFUALZFUBLZEMZ
+      FUCLZGKZNFUHKZWDOZAPUDUEMAWAUFUGZWDQZVTWCWEWIVTWCWBWHRZWEWIUSZVTWASKWBSKW
+      CWJTFHUIVTWBWDUJZSFHUKZVTWDSKWLSKFHULWDSUMUNUOABCWBEWASSIUPUQVTWJWLWHRZWK
+      VTWBWLWHWMURVTWNWEWIVTWNWENWGWLWDQZWNWIWEVTWOWNWEWDDPZOZWPUJZWPQZDVKZKZWO
+      WEXAGWTWDJUTVAWSWODWDGWPWDVBZWQWGWRWLWPWDXBVLWPWDVCWPWDVDVEVFVGVHVTWNWEVI
+      WGWLWHWDVJUQVMVNVNVOVTWCWFWITWEAHWDFWAWAVPWDVPVQVRVS $.
   $}
 
 
