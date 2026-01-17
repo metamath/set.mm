@@ -195370,6 +195370,20 @@ $)
       SUHUIUNDAUHUIUNATUIUNAUCGABCFEUAUIUNAUBUDUEUFUG $.
   $}
 
+  ${
+    $d E x $.  $d I x $.  $d K x $.
+    uspgredgiedg.e $e |- E = ( Edg ` G ) $.
+    uspgredgiedg.i $e |- I = ( iEdg ` G ) $.
+    $( In a simple pseudograph, for each edge there is exactly one indexed
+       edge.  (Contributed by AV, 20-Apr-2025.) $)
+    uspgredgiedg $p |- ( ( G e. USPGraph /\ K e. E )
+                         -> E! x e. dom I K = ( I ` x ) ) $=
+      ( cuspgr wcel wa cv cfv wceq cdm wreu wf1o cedg uspgrf1oedg wb sylibr
+      f1oeq3 ax-mp f1ofveu sylan eqcom reubii ) CHIZEBIZJAKDLZEMZADNZOZEUIMZAUK
+      OUGUKBDPZUHULUGUKCQLZDPZUNDCGRBUOMUNUPSFBUOUKDUAUBTAUKBEDUCUDUMUJAUKEUIUE
+      UFT $.
+  $}
+
 
 $(
 ###############################################################################
