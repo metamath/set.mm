@@ -195272,6 +195272,15 @@ $)
       RWLWKWRSJZWTWRRDHVPZWRFGSVQTZWMWTWRXTVRWMWNAXCWOWMXBFWLWKXRXBFRXSWRFGSVST
       VTWAWBWCABCDEFGHIWEWMWSSJZXFXEUQWLWKXRYAXSFWRGSWFTASWTWSXBXBWGWTWGWHWIWJ
       $.
+
+    $d H e v x $.
+    $( A simple graph represented by an alternatively defined simple graph.
+       (Contributed by AV, 15-Oct-2020.) $)
+    usgrausgrien $p |- ( H e. USGraph -> ( Vtx ` H ) G ( Edg ` H ) ) $=
+      ( cusgr wcel cvtx cfv cedg wbr cv c2o cen cpw crab wss usgredgssen cvv wb
+      vtxex ciedg crn edgvalg iedgex rnexg syl eqeltrd isausgren syl2anc mpbird
+      ) EGHZEIJZEKJZDLZUOAMNOLAUNPQRZAESUMUNTHUOTHUPUQUAEGUBUMUOEUCJZUDZTEGUEUM
+      URTHUSTHEGUFURTUGUHUIABCUODUNTTFUJUKUL $.
   $}
 
 
