@@ -195350,6 +195350,15 @@ $)
     usgrf1 $p |- ( G e. USGraph -> E : dom E -1-1-> ran E ) $=
       ( cusgr wcel cdm crn wf1o wf1 usgrf1o f1of1 syl ) BDEAFZAGZAHMNAIABCJMNAK
       L $.
+
+    $( The edge function of a simple pseudograph is a bijective function onto
+       the edges of the graph.  (Contributed by AV, 2-Jan-2020.)  (Revised by
+       AV, 15-Oct-2020.) $)
+    uspgrf1oedg $p |- ( G e. USPGraph -> E : dom E -1-1-onto-> ( Edg ` G ) ) $=
+      ( vx cuspgr wcel cdm cv c1o cen wbr c2o wo cvtx cfv cpw crab wf1 wf1o crn
+      cedg eqid uspgrfen f1f1orn ciedg rneqi edgvalg eqtr4id f1oeq3d imbitrid
+      mpd ) BEFZAGZDHZIJKUNLJKMDBNOZPQZARZUMBUAOZASZDABUOUOUBCUCUQUMATZASULUSUM
+      UPAUDULUTURUMAULUTBUEOZTURAVACUFBEUGUHUIUJUK $.
   $}
 
 
