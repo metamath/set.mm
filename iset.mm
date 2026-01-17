@@ -195312,6 +195312,15 @@ $)
       VTWBWLWHWMURVTWNWEWIVTWNWENWGWLWDQZWNWIWEVTWOWNWEWDDPZOZWPUJZWPQZDVKZKZWO
       WEXAGWTWDJUTVAWSWODWDGWPWDVBZWQWGWRWLWPWDXBVLWPWDVCWPWDVDVEVFVGVHVTWNWEVI
       WGWLWHWDVJUQVMVNVNVOVTWCWFWITWEAHWDFWAWAVPWDVPVQVRVS $.
+
+    $( The equivalence of the definitions of a simple graph, expressed with the
+       set of vertices and the set of edges.  (Contributed by AV, 2-Jan-2020.)
+       (Revised by AV, 15-Oct-2020.) $)
+    usgrausgrben $p |- ( ( H e. W /\ ( iEdg ` H ) e. O )
+                      -> ( ( Vtx ` H ) G ( Edg ` H ) <-> H e. USGraph ) ) $=
+      ( wcel ciedg cfv wa cvtx cedg wbr cusgr wi ausgrusgrien 3exp usgrausgrien
+      com23 imp impbid1 ) FHKZFLMGKZNFOMFPMEQZFRKZUFUGUHUISUFUHUGUIUFUHUGUIABCD
+      EFGHIJTUAUCUDABCEFIUBUE $.
   $}
 
 
