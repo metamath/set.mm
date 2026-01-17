@@ -195217,6 +195217,18 @@ $)
       cvtx bitrd ) BCFADFGZBAHZIFZUQJKZLZEMZUCNOVAUDNOUAZEUQUNKZPZQZUSRZALZVBEB
       PZQZARUPUQSFURVFUBBACDUEESUSUQVCVCTUSTUFUGUPUTVGVEVIUSAABCDUHZUPUSAVJUIUP
       VBEVDVHUPVCBABCDUJUKULUMUO $.
+
+    $( The property of being an undirected simple graph represented as an
+       ordered pair.  The representation as an ordered pair is the usual
+       representation of a graph, see section I.1 of [Bollobas] p. 1.
+       (Contributed by AV, 30-Nov-2020.) $)
+    isusgropen $p |- ( ( V e. W /\ E e. X ) -> ( <. V , E >. e. USGraph
+                      <-> E : dom E -1-1-> { p e. ~P V | p ~~ 2o } ) ) $=
+      ( wcel wa cop cusgr ciedg cfv cdm cv c2o cen cpw crab wf1 cvv eqid wbr wb
+      cvtx opexg isusgren opiedgfv dmeqd opvtxfv pweqd rabeqdv f1eq123d bitrd
+      syl ) BCFADFGZBAHZIFZUOJKZLZEMNOUAZEUOUCKZPZQZUQRZALZUSEBPZQZARUNUOSFUPVC
+      UBBACDUDESUQUOUTUTTUQTUEUMUNURVDVBVFUQAABCDUFZUNUQAVGUGUNUSEVAVEUNUTBABCD
+      UHUIUJUKUL $.
   $}
 
 
