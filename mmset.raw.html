@@ -2004,14 +2004,14 @@ setvar variable ` b ` as a class and applying ~ dfcleq , we get
 ` A. y ( y e. { x | x = a } <-> y e. b ) ` .
 Applying ~ df-clab , we get
 ` A. y ( [ y / x ] x = a <-> y e.  b ) ` .
-Applying ~ df-sb , we get
-` A. y ( ( x = y -> x = a ) /\ E. x ( x = y /\ x = a ) ) <-> y e. b ) ` ,
+Applying ~ df-sb (and introducing a new dummy variable in the process), we get
+` A. y ( A. z ( z = y -> A. x ( x = z -> x = a ) ) <-> y e. b ) ` ,
 which is our final expression in the basic language of predicate calculus
-(implicitly assuming we have expanded the defined connectives ` E. ` , ` /\ ` ,
-` <-> `).  This expression is unique provided we have some canonical convention
-for traversing the extended wff syntax tree and for naming any new variables
-introduced at each step.  By the way, this can be simplified with additional
-applications of predicate calculus to become ` A. y ( y = a <-> y e. b ) ` .
+(implicitly assuming we have expanded the defined connective ` <-> `).  This
+expression is unique provided we have some canonical convention for traversing
+the extended wff syntax tree and for naming any new variables introduced at
+each step.  By the way, this can be simplified with additional applications of
+predicate calculus to become ` A. y ( y = a <-> y e. b ) ` .
 </P>
 
 <!-- which we can also obtain immediately from the penultimate step by noticing
