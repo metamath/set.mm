@@ -195323,6 +195323,17 @@ $)
       EFGHIJTUAUCUDABCEFIUBUE $.
   $}
 
+  $( An edge of a simple graph as second component of an ordered pair.
+     (Contributed by Alexander van der Vekens, 17-Aug-2017.)  (Proof shortened
+     by Alexander van der Vekens, 16-Dec-2017.)  (Revised by AV,
+     15-Oct-2020.) $)
+  usgredgop $p |- ( ( G e. USGraph /\ E = ( iEdg ` G ) /\ X e. dom E )
+                     -> ( ( E ` X ) = { M , N }
+                          <-> <. X , { M , N } >. e. E ) ) $=
+    ( cusgr wcel ciedg cfv wceq wfun cdm cpr cop wb usgrfun syl5ibrcom funopfvb
+    funeq imp stoic3 ) BFGZABHIZJZAKZEALGEAICDMZJEUFNAGOUBUDUEUBUEUDUCKBPAUCSQT
+    EUFARUA $.
+
 
 $(
 ###############################################################################
