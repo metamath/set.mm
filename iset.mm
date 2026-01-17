@@ -195404,6 +195404,18 @@ $)
       UETAUKBDEUFUGUQUOABUNUMUHUIT $.
   $}
 
+  ${
+    $d G x y $.
+    $( A simple pseudograph is an undirected simple hypergraph.  (Contributed
+       by AV, 19-Jan-2020.)  (Revised by AV, 15-Oct-2020.) $)
+    uspgrushgr $p |- ( G e. USPGraph -> G e. USHGraph ) $=
+      ( vy vx cuspgr wcel cushgr ciedg cfv cdm cv wex cvtx cpw crab wf1 c1o cen
+      wbr c2o eqid wo isuspgren wss wi en1m en2m jaoi a1i ss2rabi f1ss biimtrdi
+      mpan2 isushgrm sylibrd pm2.43i ) ADEZAFEZUPUPAGHZIZBJCJZEBKZCALHZMZNZUROZ
+      UQUPUPUSUTPQRZUTSQRZUAZCVCNZUROZVECDURAVBVBTZURTZUBVJVIVDUCVEVHVACVCVHVAU
+      DUTVCEVFVAVGBUTUEBUTUFUGUHUIUSVIVDURUJULUKDBURAVBCVKVLUMUNUO $.
+  $}
+
 
 $(
 ###############################################################################
