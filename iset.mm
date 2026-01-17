@@ -50857,6 +50857,16 @@ $)
     BJCGKCLOABCMN $.
 
   ${
+    $d A y $.  $d B y $.  $d F y $.  $d X y $.
+    $( There is exactly one codomain element for each element of the domain of
+       a function.  (Contributed by AV, 20-Apr-2025.) $)
+    fdmeu $p |- ( ( F : A --> B /\ X e. A ) -> E! y e. B ( F ` X ) = y ) $=
+      ( wf wcel wa cfv cv wceq wreu cop feu wfn wb ffn anim1i adantr fnopfvb
+      syl reubidva mpbird ) BCDFZEBGZHZEDIAJZKZACLEUGMDGZACLABCEDNUFUHUIACUFUGC
+      GZHDBOZUEHZUHUIPUFULUJUDUKUEBCDQRSBEUGDTUAUBUC $.
+  $}
+
+  ${
     $d x y A $.  $d x y B $.  $d x y F $.
     $( Function value in terms of a binary relation.  (Contributed by Mario
        Carneiro, 19-Mar-2014.) $)
