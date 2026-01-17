@@ -195343,6 +195343,13 @@ $)
     usgrf1o $p |- ( G e. USGraph -> E : dom E -1-1-onto-> ran E ) $=
       ( vx cusgr wcel cdm cv c2o cen wbr cvtx cfv cpw crab wf1 crn wf1o usgrfen
       eqid f1f1orn syl ) BEFAGZDHIJKDBLMZNOZAPUCAQARDABUDUDTCSUCUEAUAUB $.
+
+    $( The edge function of a simple graph is a one to one function.
+       (Contributed by Alexander van der Vekens, 18-Nov-2017.)  (Revised by AV,
+       15-Oct-2020.) $)
+    usgrf1 $p |- ( G e. USGraph -> E : dom E -1-1-> ran E ) $=
+      ( cusgr wcel cdm crn wf1o wf1 usgrf1o f1of1 syl ) BDEAFZAGZAHMNAIABCJMNAK
+      L $.
   $}
 
 
