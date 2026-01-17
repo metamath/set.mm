@@ -195359,6 +195359,15 @@ $)
       cedg eqid uspgrfen f1f1orn ciedg rneqi edgvalg eqtr4id f1oeq3d imbitrid
       mpd ) BEFZAGZDHZIJKUNLJKMDBNOZPQZARZUMBUAOZASZDABUOUOUBCUCUQUMATZASULUSUM
       UPAUDULUTURUMAULUTBUEOZTURAVACUFBEUGUHUIUJUK $.
+
+    $d V x $.
+    usgrss.v $e |- V = ( Vtx ` G ) $.
+    $( An edge is a subset of vertices.  (Contributed by Alexander van der
+       Vekens, 19-Aug-2017.)  (Revised by AV, 15-Oct-2020.) $)
+    usgrss $p |- ( ( G e. USGraph /\ X e. dom E ) -> ( E ` X ) C_ V ) $=
+      ( vx cusgr wcel cdm wa cfv cv c2o cen wbr cpw crab ssrab2 wf1 usgrfen f1f
+      wf syl ffvelcdmda sselid elpwid ) BHIZDAJZIKZDALZCUJGMNOPZGCQZRZUMUKULGUM
+      SUHUIUNDAUHUIUNATUIUNAUCGABCFEUAUIUNAUBUDUEUFUG $.
   $}
 
 
