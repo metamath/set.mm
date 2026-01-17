@@ -195281,6 +195281,20 @@ $)
       vtxex ciedg crn edgvalg iedgex rnexg syl eqeltrd isausgren syl2anc mpbird
       ) EGHZEIJZEKJZDLZUOAMNOLAUNPQRZAESUMUNTHUOTHUPUQUAEGUBUMUOEUCJZUDZTEGUEUM
       URTHUSTHEGUFURTUGUHUIABCUODUNTTFUJUKUL $.
+
+    $( If an alternatively defined simple graph has the vertices and edges of
+       an arbitrary graph, the arbitrary graph is an undirected multigraph.
+       (Contributed by AV, 18-Oct-2020.)  (Revised by AV, 25-Nov-2020.) $)
+    ausgrumgrien $p |- ( ( H e. W /\ ( Vtx ` H ) G ( Edg ` H )
+                       /\ Fun ( iEdg ` H ) ) -> H e. UMGraph ) $=
+      ( wcel cvtx cfv cedg wbr ciedg wfun w3a wss cvv wb sylbid eqid cdm cv c2o
+      cumgr cen cpw crab wf wi vtxex crn edgvalg iedgex rnexg eqeltrd isausgren
+      syl syl2anc sseq1d wfn funfn biimpi 3ad2ant3 simp2 df-f sylanbrc isumgren
+      3exp 3imp 3ad2ant1 mpbird ) EFHZEIJZEKJZDLZEMJZNZOEUDHZVPUAZAUBUCUELAVMUF
+      UGZVPUHZVLVOVQWAVLVOVNVTPZVQWAUIZVLVMQHVNQHVOWBREFUJVLVNVPUKZQEFULZVLVPQH
+      WDQHEFUMVPQUNUQUOABCVNDVMQQGUPURVLWBWDVTPZWCVLVNWDVTWEUSVLWFVQWAVLWFVQOVP
+      VSUTZWFWAVQVLWGWFVQWGVPVAVBVCVLWFVQVDVSVTVPVEVFVHSSVIVLVOVRWARVQAFVPEVMVM
+      TVPTVGVJVK $.
   $}
 
 
