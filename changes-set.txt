@@ -94,7 +94,7 @@ DONE:
 Date      Old       New         Notes
 17-Jan-26 upwrdfi   chnflenfi   Moved from ET's mathbox to main set.mm and
                                 ported to relations other than less-than
-17-Jan-26 upwordsseti chnexig   Moved from ET's mathbox to main set.mm and
+17-Jan-26 upwordsseti chnexg    Moved from ET's mathbox to main set.mm and
                                 ported to relations other than less-than
 17-Jan-26 upwordnul nulchn      Moved from ET's mathbox to main set.mm and
                                 ported to relations other than less-than
