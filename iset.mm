@@ -195512,6 +195512,25 @@ $)
   usgruhgr $p |- ( G e. USGraph -> G e. UHGraph ) $=
     ( cusgr wcel cupgr cuhgr usgrupgr upgruhgr syl ) ABCADCAECAFAGH $.
 
+  ${
+    $d G x $.  $d V x $.
+    usgrislfuspgr.v $e |- V = ( Vtx ` G ) $.
+    usgrislfuspgr.i $e |- I = ( iEdg ` G ) $.
+    $( A simple graph is a loop-free simple pseudograph.  (Contributed by AV,
+       27-Jan-2021.) $)
+    usgrislfuspgrdom $p |- ( G e. USGraph <-> ( G e. USPGraph
+                         /\ I : dom I --> { x e. ~P V | 2o ~<_ x } ) ) $=
+      ( wcel cuspgr c2o wbr crab wf wa cen wf1 wi syl a1i df-f1 wb cusgr cdm cv
+      cdom cpw usgruspgr usgrfen f1f wss ensym ss2rabi fssd jca c1o wo uspgrfen
+      endom ccnv wfun cin fin wceq umgrislfupgrenlem ax-mp sylbb1 anim1i sylibr
+      feq3 ex impancom sylbi imp sylan isusgren adantr mpbird impbii ) BUAGZBHG
+      ZCUBZIAUCZUDJZADUEZKZCLZMZVRVSWEBUFVRVTWAINJZAWCKZCOZWEACBDEFUGWIVTWHWDCV
+      TWHCUHWHWDUIWIWGWBAWCWGWBPWAWCGWGIWANJWBWAIUJIWAUQQRUKRULQUMWFVRWIVSVTWAU
+      NNJWGUOAWCKZCOZWEWIACBDEFUPWKWEWIWKVTWJCLZCURUSZMWEWIPVTWJCSWLWEWMWIWLWEM
+      ZWMWIWNWMMVTWHCLZWMMWIWNWOWMVTWJWDUTZCLZWNWOVTWJWDCVAWPWHVBWQWOTADVCWPWHV
+      TCVHVDVEVFVTWHCSVGVIVJVKVLVMVSVRWITWEAHCBDEFVNVOVPVQ $.
+  $}
+
 
 $(
 ###############################################################################
