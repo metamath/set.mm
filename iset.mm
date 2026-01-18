@@ -195507,6 +195507,11 @@ $)
   usgrupgr $p |- ( G e. USGraph -> G e. UPGraph ) $=
     ( cusgr wcel cuspgr cupgr usgruspgr uspgrupgr syl ) ABCADCAECAFAGH $.
 
+  $( A simple graph is an undirected hypergraph.  (Contributed by AV,
+     9-Feb-2018.)  (Revised by AV, 15-Oct-2020.) $)
+  usgruhgr $p |- ( G e. USGraph -> G e. UHGraph ) $=
+    ( cusgr wcel cupgr cuhgr usgrupgr upgruhgr syl ) ABCADCAECAFAGH $.
+
 
 $(
 ###############################################################################
