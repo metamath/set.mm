@@ -1011,6 +1011,33 @@ middle by ~ ssfiexmid ).</p>
 </tr>
 
 <tr>
+  <td>is of size one</td>
+  <td>` A ~~ 1o `</td>
+  <td>for equivalent formulations, see ~ en1 , ~ en1bg and ~ euen1b</td>
+</tr>
+
+<tr>
+  <td>is of size two</td>
+  <td>` A ~~ 2o `</td>
+  <td>equivalent to being a pair of two distinct elements by
+  ~ en2 and ~ pr2ne</td>
+</tr>
+
+<tr>
+  <td>has at least one element</td>
+  <td>` 1o ~<_ A `</td>
+  <td>equivalent to ` E. x x e. A ` (which is how we often
+  express being inhabited) by ~ dom1o</td>
+</tr>
+
+<tr>
+  <td>has at least two elements</td>
+  <td>` 2o ~<_ A `</td>
+  <td>equivalent to having two distinct elements by
+  ~ 2dom and ~ rex2dom</td>
+</tr>
+
+<tr>
   <td>dominated by ` _om `</td>
   <td>` A ~<_ _om `</td>
   <td>implies subcountable by ~ domomsubct</td>
@@ -1062,8 +1089,8 @@ middle by ~ ssfiexmid ).</p>
 
 <ul>
   <li>we cannot prove ` ~P 1o ~~ 2o ` (see ~ exmidpw )</li>
-  <li>` ( ~P 1o ^m A ) ` represents the number of subsets of ` A `
-  (although we do not yet have a proof of ` ( ~P 1o ^m A ) ~~ ~P A `)</li>
+  <li>` ( ~P 1o ^m A ) ` represents the number of subsets of ` A ` as
+  shown at ~ pw1mapen</li>
   <li>` ( 2o ^m A ) ` represents the number of decidable subsets of ` A `
   as shown at ~ 2omapen</li>
 </ul>
@@ -1221,6 +1248,14 @@ its domain by ~ relelfvdm .
 With excluded middle, ` (/) e. A ` and ` A =/= (/) ` are equivalent (where
 ` A ` is an ordinal). In such theorems, ` (/) e. A ` is generally the more
 interesting condition constructively.</LI>
+
+<li>
+  When dealing with the size of sets, the ` ( # `` A ) ` notation is
+  well behaved on sets known to be finite, but in many situations
+  prefer constructions such as ` 2o ~<_ A ` and the others mentioned
+  in <a href="#set-size" >the set size section</a>.  See the ~ df-ihash
+  comment for more discussion.
+</li>
 
 <LI>
 Reverse closure in set.mm uses excluded middle (for example ovrcl or ndmfvrcl
@@ -2207,6 +2242,13 @@ is double negation elimination.</TD>
 <TD>~ df-if </TD>
 </TR>
 
+<tr>
+  <td>iftrueb</td>
+  <td><i>none</i></td>
+  <td>although we don't have anything as general as iftrueb ,
+  ~ iftrueb01 is one useful special case</td>
+</tr>
+
 <TR>
 <TD>ifsb</TD>
 <TD>~ ifsbdc</TD>
@@ -2261,9 +2303,8 @@ is double negation elimination.</TD>
 </tr>
 
 <TR>
-<TD>elimif , ifval , elif ,
-ifel , ifeqor , 2if2 , ifcomnan , csbif ,
-csbifgOLD</TD>
+<TD>elimif , ifval ,
+ifel , ifeqor , ifcomnan , csbif</TD>
 <TD><I>none</I></TD>
 </TR>
 
@@ -2297,6 +2338,12 @@ csbifgOLD</TD>
   <TD>~ ifandc</TD>
 </TR>
 
+<tr>
+  <td>2if2</td>
+  <td>~ 2if2dc</td>
+  <td>adds decidability conditions</td>
+</tr>
+
 <TR>
 <TD>dedth , dedth2h , dedth3h , dedth4h , dedth2v , dedth3v ,
 dedth4v , elimhyp , elimhyp2v , elimhyp3v , elimhyp4v ,
@@ -2311,6 +2358,12 @@ favor of theorems in deduction form.</TD>
   <TD><I>none</I></TD>
   <TD>Should be provable if the condition is decidable.</TD>
 </TR>
+
+<tr>
+  <td>snnzb</td>
+  <td>~ snmb</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
 
 <TR>
   <TD ROWSPAN="4">difsnid</TD>
@@ -3261,17 +3314,26 @@ and is evaluated at a set</TD>
 <TR>
 <TD>elfvdm</TD>
 <TD>~ relelfvdm </TD>
-<TD>It would seem elfvdm may be provable, but the set.mm
-proof does not work.  A straightforward combination of
-~ eliotaeu and ~ eldmg would require adding a ` B e. _V `
-condition but perhaps there is a way to remove that
-need</TD>
+<TD>Proving elfvdm for ` B e. _V ` would be a straightforward
+combination of ~ eliotaeu and ~ eldmg , and for ` -. B e. _V ` it
+is trivial (per ~ fvprc ).  But there is no clear way to
+combine those cases (especially since they hold in
+different ways - the set case has only one value which can map
+` B ` and the proper class can map ` B ` for every set).</TD>
 </TR>
 
 <TR>
 <TD>elfvex , elfvexd</TD>
 <TD>~ relelfvdm , ~ mptrcl</TD>
 </TR>
+
+<tr>
+  <td>fvfundmfvn0</td>
+  <td><i>none</i></td>
+  <td>something along these lines (with nonempty changed to inhabited,
+  presumably) may be possible (see for example ~ relelfvdm or the proof
+  of ~ elfvm ), but the set.mm proof is not intuitionistic</td>
+</tr>
 
 <tr>
   <td>elfv2ex</td>
@@ -7524,6 +7586,13 @@ the theorem is lightly used in set.mm.</TD>
 <TD>~ fzom </TD>
 </TR>
 
+<tr>
+  <td>prinfzo0</td>
+  <td><i>none</i></td>
+  <td>probably provable, most likely with an ` N e. ZZ ` condition
+  added</td>
+</tr>
+
 <TR>
 <TD>fzo0n0</TD>
 <TD>~ fzo0m </TD>
@@ -9123,7 +9192,9 @@ or not.</TD>
 <TR>
   <TD>hashprdifel</TD>
   <TD><I>none</I></TD>
-  <TD>This would appear to be a form of reverse closure.</TD>
+  <TD>Not clear we'd be able to prove it in this form, but if you have
+  ` { A , B } ~~ 2o ` rather than ` ( # `` { A , B } ) = 2 ` , see
+  ~ pr2cv and ~ pr2ne</TD>
 </TR>
 
 <TR>
@@ -9339,9 +9410,8 @@ or not.</TD>
 
 <tr>
   <td>hash2prde</td>
-  <td><i>none</i></td>
-  <td>should be provable (if the antecedent is changed to ` V ~~ 2o ` )
-  via ~ en2 and ~ pr2ne</td>
+  <td>~ en2prde</td>
+  <td>changes antecedent to ` V ~~ 2o `</td>
 </tr>
 
 <tr>
@@ -9692,8 +9762,8 @@ or not.</TD>
 
 <tr>
   <td>pfxcl</td>
-  <td>~ pfxclg</td>
-  <td>adds ` L e. NN0 ` condition</td>
+  <td>~ pfxclg , ~ pfxclz</td>
+  <td>adds condition on ` L `</td>
 </tr>
 
 <tr>
@@ -16283,6 +16353,264 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>df-uhgr</td>
+  <td>~ df-uhgrm</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
+
+<tr>
+  <td>df-ushgr</td>
+  <td>~ df-ushgrm</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
+
+<tr>
+  <td>isuhgr</td>
+  <td>~ isuhgrm</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
+
+<tr>
+  <td>isushgr</td>
+  <td>~ isushgrm</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
+
+<tr>
+  <td>uhgrf</td>
+  <td>~ uhgrfm</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
+
+<tr>
+  <td>ushgrf</td>
+  <td>~ ushgrfm</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
+
+<tr>
+  <td>uhgrn0</td>
+  <td>~ uhgrm</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
+
+<tr>
+  <td>isuhgrop</td>
+  <td>~ isuhgropm</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
+
+<tr>
+  <td>uhgrstrrepe</td>
+  <td><i>none</i></td>
+  <td>would presumably be provable (with nonempty changed to
+  inhabited) but unused in set.mm</td>
+</tr>
+
+<tr>
+  <td>df-upgr</td>
+  <td>~ df-upgren</td>
+  <td>restates how we say that a set has one or two elements</td>
+</tr>
+
+<tr>
+  <td>df-umgr</td>
+  <td>~ df-umgren</td>
+  <td>restates how we say that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>isupgr</td>
+  <td>~ isupgren</td>
+  <td>restates how we say that a set has one or two elements</td>
+</tr>
+
+<tr>
+  <td>wrdupgr</td>
+  <td>~ wrdupgren</td>
+  <td>restates how we say that a set has one or two elements</td>
+</tr>
+
+<tr>
+  <td>upgrf</td>
+  <td>~ upgrfen</td>
+  <td>restates how we say that a set has one or two elements</td>
+</tr>
+
+<tr>
+  <td>upgrfn</td>
+  <td>~ upgrfnen</td>
+  <td>restates how we say that a set has one or two elements</td>
+</tr>
+
+<tr>
+  <td>upgrn0</td>
+  <td>~ upgrm</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
+
+<tr>
+  <td>upgrle</td>
+  <td>~ upgr1or2</td>
+  <td>specifies one or two exactly rather than at most two</td>
+</tr>
+
+<tr>
+  <td>upgrbi</td>
+  <td><i>none</i></td>
+  <td>we'd probably need decidability of ` X = Y ` to prove something
+  analogous for our definition of pseugraphs, but this theorem is
+  unused in set.mm</td>
+</tr>
+
+<tr>
+  <td>isumgr</td>
+  <td>~ isumgren</td>
+  <td>restates how we say that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>isumgrs</td>
+  <td>~ isumgren</td>
+  <td>restates how we say that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>wrdumgr</td>
+  <td>~ wrdumgren</td>
+  <td>restates how we say that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>umgrf</td>
+  <td>~ umgrfen</td>
+  <td>restates how we say that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>umgrfn</td>
+  <td>~ umgrfnen</td>
+  <td>restates how we say that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>umgredg2</td>
+  <td>~ umgredg2en</td>
+  <td>restates how we say that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>umgrbi</td>
+  <td>~ umgrbien</td>
+  <td>restates how we say that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>upgrle2</td>
+  <td><i>none</i></td>
+  <td>seems likely adaptable (with set size most likely handled as
+  in ~ upgr1or2 )</td>
+</tr>
+
+<tr>
+  <td>umgrnloopv</td>
+  <td>~ umgrnloopvv</td>
+  <td>adds a set existence condition</td>
+</tr>
+
+<tr>
+  <td>umgredgprv</td>
+  <td><i>none</i></td>
+  <td>may be possible now that we have ~ pr2cv</td>
+</tr>
+
+<tr>
+  <td>umgrnloop</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses umgredgprv</td>
+</tr>
+
+<tr>
+  <td>umgrnloop0</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses umgrnloop</td>
+</tr>
+
+<tr>
+  <td>upgr1elem</td>
+  <td>~ upgr1elem1</td>
+  <td>changes related to set size and decidability</td>
+</tr>
+
+<tr>
+  <td>upgr1e</td>
+  <td>~ upgr1edc</td>
+  <td>adds decidability condition</td>
+</tr>
+
+<tr>
+  <td>upgr1eop</td>
+  <td>~ upgr1eopdc</td>
+  <td>adds decidability condition</td>
+</tr>
+
+<tr>
+  <td>umgrislfupgrlem</td>
+  <td>~ umgrislfupgrenlem</td>
+  <td>changes related to set size</td>
+</tr>
+
+<tr>
+  <td>umgrislfupgr</td>
+  <td>~ umgrislfupgrdom</td>
+  <td>changes how we say that a set has at least two elements</td>
+</tr>
+
+<tr>
+  <td>lfgredgge2</td>
+  <td>~ lfgredg2dom</td>
+  <td>changes how we say that a set has at least two elements</td>
+</tr>
+
+<tr>
+  <td>lfgrnloop</td>
+  <td>~ lfgrnloopen</td>
+  <td>changes related to set size</td>
+</tr>
+
+<tr>
+  <td>uhgredgn0</td>
+  <td>~ uhgredgm</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
+
+<tr>
+  <td>uhgredgss</td>
+  <td>~ uhgredgm</td>
+  <td>there's no great need to have a version of this theorem
+  expressed in terms of subsets</td>
+</tr>
+
+<tr>
+  <td>upgredgss , edgupgr</td>
+  <td>~ edgupgren</td>
+  <td>restates how we say that a set has one or two elements</td>
+</tr>
+
+<tr>
+  <td>umgredgss , edgumgr</td>
+  <td>~ edgumgren</td>
+  <td>restates how we say that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>edglnl , numedglnl</td>
+  <td><i>none</i></td>
+  <td>would apparently need decidability equality for vertexes or
+  other changes</td>
+</tr>
+
+<tr>
   <td>konigsberg</td>
   <td><i>none</i></td>
   <td>we don't have a complete list of what this proof depends on,
@@ -16812,6 +17140,14 @@ Stanford Encyclopedia of Philosophy</I> (Summer 2015 Edition),
 Edward N. Zalta (ed.), <A
 HREF="https://plato.stanford.edu/archives/sum2015/entries/set-theory-constructive/">
 https://plato.stanford.edu/archives/sum2015/entries/set-theory-constructive/</A>.
+</LI>
+
+<LI>
+<A NAME="Diestel"></A> [Diestel] Diestel, Reinhard, <I>Graph Theory,
+5th Electronic Edition,</I> Springer-Verlag, Heidelberg (2016)
+[QA166.D51413].
+URL: <A HREF="http://diestel-graph-theory.com/index.html">
+http://diestel-graph-theory.com/index.html</A>
 </LI>
 
 <LI><A NAME="Eisenberg"></A> [Eisenberg] Eisenberg, Murray, <I>Axiomatic Theory of
