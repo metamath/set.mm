@@ -195442,6 +195442,15 @@ $)
       ) ADEZAFEZAGEZHZVAVBVCAIAJKVDVAALMZOZBNZUAPQVGUBPQUCBAUDMZUEZRZVESZVCVFCN
       VGECUFBVIRZVESVEUGZVJUHVKVBCVEAVHBVHTZVETZUIVBVMAUKMVJAFUJBAULUMVFVLVJVEU
       NUOVBVAVKUPVCBFVEAVHVNVOUQURUSUT $.
+
+    $( A simple graph is a simple pseudograph.  (Contributed by Alexander van
+       der Vekens, 10-Aug-2017.)  (Revised by AV, 15-Oct-2020.) $)
+    usgruspgr $p |- ( G e. USGraph -> G e. USPGraph ) $=
+      ( vx cusgr wcel cuspgr ciedg cfv cdm cv c1o cen wbr c2o cvtx cpw crab wf1
+      wo eqid isusgren wss wi olc ss2rabi f1ss mpan2 biimtrdi isuspgren sylibrd
+      a1i pm2.43i ) ACDZAEDZULULAFGZHZBIZJKLZUPMKLZRZBANGZOZPZUNQZUMULULUOURBVA
+      PZUNQZVCBCUNAUTUTSZUNSZTVEVDVBUAVCURUSBVAURUSUBUPVADURUQUCUJUDUOVDVBUNUEU
+      FUGBCUNAUTVFVGUHUIUK $.
   $}
 
 
