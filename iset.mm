@@ -195635,6 +195635,17 @@ $)
       BKJFALJFAMCDNOCEJDEJPQBRABCDEFGHST $.
   $}
 
+  ${
+    usgredgppr.e $e |- E = ( Edg ` G ) $.
+    $( An edge of a simple graph is a proper pair, i.e. a set containing two
+       different elements (the endvertices of the edge).  Analogue of
+       ~ usgredg2en .  (Contributed by Alexander van der Vekens, 11-Aug-2017.)
+       (Revised by AV, 9-Jan-2020.)  (Revised by AV, 23-Oct-2020.) $)
+    usgredgppren $p |- ( ( G e. USGraph /\ C e. E ) -> C ~~ 2o ) $=
+      ( cusgr wcel wa cvtx cfv cpw c2o cen cedg eleq2i edgusgren sylan2b simprd
+      wbr ) CEFZABFZGACHIJFZAKLRZTSACMIZFUAUBGBUCADNACOPQ $.
+  $}
+
 
 $(
 ###############################################################################
