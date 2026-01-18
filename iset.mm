@@ -17196,6 +17196,18 @@ $)
   $}
 
   ${
+    $d x y z $.  $d ph z $.  $d ps z $.
+    cbvmow.1 $e |- F/ y ph $.
+    cbvmow.2 $e |- F/ x ps $.
+    cbvmow.3 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Rule used to change bound variables, using implicit substitution.
+       Version of ~ cbvmo with a disjoint variable condition.  (Contributed by
+       NM, 9-Mar-1995.)  (Revised by GG, 23-May-2024.) $)
+    cbvmow $p |- ( E* x ph <-> E* y ps ) $=
+      ( cbvmo ) ABCDEFGH $.
+  $}
+
+  ${
     $d x y z $.  $d ph z $.
     mo23.1 $e |- F/ y ph $.
     $( An implication between two definitions of "there exists at most one."
@@ -23062,11 +23074,11 @@ $)
 
   ${
     $d x y $.
-    nfreuxy.1 $e |- F/_ x A $.
-    nfreuxy.2 $e |- F/ x ph $.
+    nfreuw.1 $e |- F/_ x A $.
+    nfreuw.2 $e |- F/ x ph $.
     $( Not-free for restricted uniqueness.  This is a version where ` x ` and
        ` y ` are distinct.  (Contributed by Jim Kingdon, 6-Jun-2018.) $)
-    nfreuxy $p |- F/ x E! y e. A ph $=
+    nfreuw $p |- F/ x E! y e. A ph $=
       ( wreu wnf wtru nftru wnfc a1i nfreudxy mptru ) ACDGBHIABCDCJBDKIELABHIFL
       MN $.
   $}
@@ -23124,6 +23136,21 @@ $)
     reubida $p |- ( ph -> ( E! x e. A ps <-> E! x e. A ch ) ) $=
       ( cv wcel wa weu wreu pm5.32da eubid df-reu 3bitr4g ) ADHEIZBJZDKQCJZDKBD
       ELCDELARSDFAQBCGMNBDEOCDEOP $.
+  $}
+
+  ${
+    $d x y A $.
+    cbvrmow.1 $e |- F/ y ph $.
+    cbvrmow.2 $e |- F/ x ps $.
+    cbvrmow.3 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Change the bound variable of a restricted at-most-one quantifier using
+       implicit substitution.  Version of ~ cbvrmo with a disjoint variable
+       condition.  (Contributed by NM, 16-Jun-2017.)  (Revised by GG,
+       23-May-2024.) $)
+    cbvrmow $p |- ( E* x e. A ph <-> E* y e. A ps ) $=
+      ( cv wcel wa wmo wrmo nfv nfan weq eleq1w anbi12d cbvmow df-rmo 3bitr4i )
+      CIEJZAKZCLDIEJZBKZDLACEMBDEMUCUECDUBADUBDNFOUDBCUDCNGOCDPUBUDABCDEQHRSACE
+      TBDETUA $.
   $}
 
   ${
@@ -23502,6 +23529,20 @@ $)
        (Contributed by NM, 31-Jul-2003.)  (Revised by GG, 10-Jan-2024.) $)
     cbvrexw $p |- ( E. x e. A ph <-> E. y e. A ps ) $=
       ( nfcv cbvrexfw ) ABCDECEIDEIFGHJ $.
+  $}
+
+  ${
+    $d A x y $.
+    cbvreuw.1 $e |- F/ y ph $.
+    cbvreuw.2 $e |- F/ x ps $.
+    cbvreuw.3 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Change the bound variable of a restricted unique existential quantifier
+       using implicit substitution.  Version of ~ cbvreu with a disjoint
+       variable condition.  (Contributed by Mario Carneiro, 15-Oct-2016.)
+       (Revised by GG, 10-Jan-2024.)  (Revised by Wolf Lammen, 10-Dec-2024.) $)
+    cbvreuw $p |- ( E! x e. A ph <-> E! y e. A ps ) $=
+      ( wrex wrmo wa wreu cbvrexw cbvrmow anbi12i reu5 3bitr4i ) ACEIZACEJZKBDE
+      IZBDEJZKACELBDELRTSUAABCDEFGHMABCDEFGHNOACEPBDEPQ $.
   $}
 
   ${
@@ -27302,9 +27343,26 @@ $)
        quantifier.  (Contributed by NM, 24-Feb-2013.) $)
     sbcreug $p |- ( A e. V ->
                  ( [. A / x ]. E! y e. B ph <-> E! y e. B [. A / x ]. ph ) ) $=
-      ( vz wreu wsb wsbc dfsbcq2 cv wceq reubidv nfcv nfs1v nfreuxy weq sbequ12
-      sbie vtoclbg ) ACEHZBGIABGIZCEHZUBBDJABDJZCEHGDFUBBGDKGLDMUCUECEABGDKNUBU
-      DBGUCBCEBEOABGPQBGRAUCCEABGSNTUA $.
+      ( vz wreu wsb wsbc dfsbcq2 cv wceq reubidv nfcv nfs1v nfreuw sbequ12 sbie
+      weq vtoclbg ) ACEHZBGIABGIZCEHZUBBDJABDJZCEHGDFUBBGDKGLDMUCUECEABGDKNUBUD
+      BGUCBCEBEOABGPQBGTAUCCEABGRNSUA $.
+  $}
+
+  ${
+    $d w x y A $.  $d w ph $.  $d w ps $.  $d y ch $.
+    reu8nf.1 $e |- F/ x ps $.
+    reu8nf.2 $e |- F/ x ch $.
+    reu8nf.3 $e |- ( x = w -> ( ph <-> ch ) ) $.
+    reu8nf.4 $e |- ( w = y -> ( ch <-> ps ) ) $.
+    $( Restricted uniqueness using implicit substitution.  This version of
+       ~ reu8 uses a nonfreeness hypothesis for ` x ` and ` ps ` instead of
+       distinct variable conditions.  (Contributed by AV, 21-Jan-2022.) $)
+    reu8nf $p |- ( E! x e. A ph <-> E. x e. A ( ph /\
+                A. y e. A ( ps -> x = y ) ) ) $=
+      ( wreu weq wi wral wa wrex nfv cbvreuw reu8 nfcv nfim nfralw nfan equcoms
+      wb bicomd equequ1 imbi2d ralbidv anbi12d cbvrexw 3bitri ) ADGLCFGLCBFEMZN
+      ZEGOZPZFGQABDEMZNZEGOZPZDGQACDFGAFRIJSCBFEGKTUQVAFDGCUPDIUODEGDGUABUNDHUN
+      DRUBUCUDVAFRFDMZCAUPUTCAUFDFDFMACJUGUEVBUOUSEGVBUNURBFDEUHUIUJUKULUM $.
   $}
 
   ${
@@ -31587,6 +31645,19 @@ $)
     ( wne wceq wn cif df-ne iffalse sylbi ) ABEABFZGLCDHDFABILCDJK $.
 
   ${
+    $d A x $.  $d B x $.  $d C x $.  $d ph x $.
+    $( Membership in a conditional operator.  (Contributed by NM,
+       14-Feb-2005.) $)
+    elif $p |- ( A e. if ( ph , B , C ) <->
+        ( ( ph /\ A e. B ) \/ ( -. ph /\ A e. C ) ) ) $=
+      ( vx cif wcel cvv wa wn wo elex adantl jaoi cv eleq1 anbi1d orbi12d ancom
+      wceq df-if elab2g orbi12i bitrdi pm5.21nii ) BACDFZGZBHGZABCGZIZAJZBDGZIZ
+      KZBUFLUJUHUMUIUHABCLMULUHUKBDLMNUHUGUIAIZULUKIZKZUNEOZCGZAIZURDGZUKIZKUQE
+      BUFHURBTZUTUOVBUPVCUSUIAURBCPQVCVAULUKURBDPQRAECDUAUBUOUJUPUMUIASULUKSUCU
+      DUE $.
+  $}
+
+  ${
     ifsbdc.1 $e |- ( if ( ph , A , B ) = A -> C = D ) $.
     ifsbdc.2 $e |- ( if ( ph , A , B ) = B -> C = E ) $.
     $( Distribute a function over an if-clause.  (Contributed by Jim Kingdon,
@@ -31842,6 +31913,21 @@ $)
   ifnotdc $p |- ( DECID ph -> if ( -. ph , A , B ) = if ( ph , B , A ) ) $=
     ( wdc wn wo cif wceq df-dc notnot iffalsed iftrue eqtr4d iffalse jaoi sylbi
     ) ADAAEZFQBCGZACBGZHZAIATQARCSAQBCAJKACBLMQRBSQBCLACBNMOP $.
+
+  ${
+    2if2.1 $e |- ( ( ph /\ ps ) -> D = A ) $.
+    2if2.2 $e |- ( ( ph /\ -. ps /\ th ) -> D = B ) $.
+    2if2.3 $e |- ( ( ph /\ -. ps /\ -. th ) -> D = C ) $.
+    2if2dc.ps $e |- ( ph -> DECID ps ) $.
+    2if2dc.th $e |- ( ( ph /\ -. ps ) -> DECID th ) $.
+    $( Resolve two nested conditionals.  (Contributed by Alexander van der
+       Vekens, 27-Mar-2018.) $)
+    2if2dc $p |- ( ph -> D = if ( ps , A , if ( th , B , C ) ) ) $=
+      ( cif wceq wn wa iftrue adantl eqtr4d 3expa iffalse eqcomd wdc wo exmiddc
+      eqtrd syl mpjaodan ) ABGBDCEFMZMZNBOZABPGDUJHBUJDNABDUIQRSAUKPZGUIUJULCGU
+      INCOZULCPGEUIAUKCGENITCUIENULCEFQRSULUMPGFUIAUKUMGFNJTUMFUINULUMUIFCEFUAU
+      BRUFULCUCCUMUDLCUEUGUHUKUJUINABDUIUARSABUCBUKUDKBUEUGUH $.
+  $}
 
   $( Rewrite a conjunction in a conditional as two nested conditionals.
      (Contributed by Mario Carneiro, 28-Jul-2014.) $)
@@ -33269,6 +33355,23 @@ $)
     ( wcel wa cpw cpr wss prssg elpwg bi2anan9 bitr3d ) ADFZBEFZGACHZFZBQFZGABI
     QJACJZBCJZGABQDEKORTPSUAACDLBCELMN $.
 
+  $( A pair as subset of a pair.  (Contributed by AV, 26-Oct-2020.) $)
+  ssprss $p |- ( ( A e. V /\ B e. W ) -> ( { A , B } C_ { C , D }
+                        <-> ( ( A = C \/ A = D ) /\ ( B = C \/ B = D ) ) ) ) $=
+    ( wcel wa cpr wss wceq wo prssg elprg bi2anan9 bitr3d ) AEGZBFGZHACDIZGZBSG
+    ZHABISJACKADKLZBCKBDKLZHABSEFMQTUBRUAUCACDENBCDFNOP $.
+
+  $( A proper pair is a subset of a pair iff it is equal to the superset.
+     (Contributed by AV, 26-Oct-2020.) $)
+  ssprsseq $p |- ( ( A e. V /\ B e. W /\ A =/= B ) -> ( { A , B } C_ { C , D }
+                                               <-> { A , B } = { C , D } ) ) $=
+    ( wcel wne w3a cpr wceq wo wa wi eqtr3 syl11 3ad2ant3 com12 preq12 a1d wss
+    wb ssprss 3adant3 eqneqall prcom eqtrdi ccase sylbid eqimss impbid1 ) AEGZB
+    FGZABHZIZABJZCDJZUAZUPUQKZUOURACKZADKZLBCKZBDKZLMZUSULUMURVDUBUNABCDEFUCUDV
+    DUOUSUTVBVAVCUOUSNUOUTVBMZUSUNULVEUSNUMABKZUNUSVEUSABUEZABCOPQRVAVBMZUSUOVH
+    UPDCJUQABDCSDCUFUGTUTVCMUSUOABCDSTUOVAVCMZUSUNULVIUSNUMVFUNUSVIVGABDOPQRUHR
+    UIUPUQUJUK $.
+
   ${
     $d x A $.  $d x B $.
     $( Empty set and the singleton itself are subsets of a singleton.
@@ -33502,6 +33605,21 @@ $)
       ( cpr csn wceq wa dfsn2 eqeq2i preq12b oridm eqtr3 simpr jca eqtr bitri
       wo impbii ) ABGZCHZIUBCCGZIZABIZBCIZJZUCUDUBCKLUEACIZUGJZUJTZUHABCCDEFFMU
       KUJUHUJNUJUHUJUFUGABCOUIUGPQUHUIUGABCRUFUGPQUASSS $.
+  $}
+
+  ${
+    $d A b $.  $d V b $.  $d X b $.  $d Y b $.
+    $( For an element ` A ` of an unordered pair which is a subset of a given
+       set ` V ` , there is another (maybe the same) element ` b ` of the given
+       set ` V ` being an element of the unordered pair.  (Contributed by AV,
+       5-Dec-2020.) $)
+    elpr2elpr $p |- ( ( X e. V /\ Y e. V /\ A e. { X , Y } )
+                      -> E. b e. V { X , Y } = { A , b } ) $=
+      ( wcel cpr cv wceq wrex wo wa wi simprr preq12 eqcomd adantlr rspcedeq2vd
+      ex simprl prcom eqtr2di jaoi elpri syl11 3impia ) CBFZDBFZACDGZFZUIAEHZGZ
+      IZEBJZACIZADIZKUGUHLZUNUJUOUQUNMUPUOUQUNUOUQLEDBUIULUOUGUHNUOUKDIZUMUQUOU
+      RLULUIAUKCDOPQRSUPUQUNUPUQLECBUIULUPUGUHTUPUKCIZUMUQUPUSLULDCGUIAUKDCODCU
+      AUBQRSUCACDUDUEUF $.
   $}
 
   ${
@@ -37818,6 +37936,13 @@ $)
       UIUEIUHBUDMNEFOPUGUEUBIUDABQNSRT $.
   $}
 
+  $( A singleton of a set is a member of the powerclass of a class if and only
+     if that set is a member of that class.  (Contributed by NM, 1-Apr-1998.)
+     Put in closed form and avoid ~ ax-nul .  (Revised by BJ, 17-Jan-2025.) $)
+  snelpwg $p |- ( A e. V -> ( A e. B <-> { A } e. ~P B ) ) $=
+    ( wcel csn wss cpw snssg cvv wb snexg elpwg syl bitr4d ) ACDZABDAEZBFZPBGDZ
+    ABCHOPIDRQJACKPBILMN $.
+
   $( A singleton of a set belongs to the power class of a class containing the
      set.  (Contributed by Alan Sare, 25-Aug-2011.) $)
   snelpwi $p |- ( A e. B -> { A } e. ~P B ) $=
@@ -37831,6 +37956,14 @@ $)
     snelpw $p |- ( A e. B <-> { A } e. ~P B ) $=
       ( wcel csn wss cpw snss snex elpw bitr4i ) ABDAEZBFLBGDABCHLBACIJK $.
   $}
+
+  $( An unordered pair of two sets is a member of the powerclass of a class if
+     and only if the two sets are members of that class.  (Contributed by AV,
+     8-Jan-2020.) $)
+  prelpw $p |- ( ( A e. V /\ B e. W )
+                 -> ( ( A e. C /\ B e. C ) <-> { A , B } e. ~P C ) ) $=
+    ( wcel wa cpr wss cpw prssg cvv wb prexg elpwg syl bitr4d ) ADFBEFGZACFBCFG
+    ABHZCIZSCJFZABCDEKRSLFUATMABDENSCLOPQ $.
 
   $( A pair of two sets belongs to the power class of a class containing those
      two sets.  (Contributed by Thierry Arnoux, 10-Mar-2017.) $)
@@ -67743,6 +67876,13 @@ $)
     KVAHUJUMBJKUMUTVALULUTUMVAURABMNOPUJUSUTLUKUMURACRSPUJUPUSLZUKUMUJATVBAUABA
     UBUCSPULUNUQUDUMABUEUFUGUIUKUNUMLUJABCROUH $.
 
+  $( Two is not dominated by one.  (Contributed by Jim Kingdon,
+     10-Jan-2026.) $)
+  1ndom2 $p |- -. 2o ~<_ 1o $=
+    ( c2o c1o cdom wbr wss wcel com word wn 1onn nnord ordirr mp2b ssel mpi mto
+    1lt2o wb 2onn nndomo mp2an mtbir ) ABCDZABEZUDBBFZBGFZBHUEIJBKBLMUDBAFUEQAB
+    BNOPAGFUFUCUDRSJABTUAUB $.
+
   ${
     $d x y A $.  $d x y B $.
     $( Pigeonhole Principle.  A natural number is not equinumerous to a proper
@@ -73109,6 +73249,17 @@ $)
     VFVHVGUTVFPZVHVGFVAOIJZVIVAVDOSVJVFUTVJVBOHIJZUHVJOVAIJZVBVKPVAOUIVLVBVKOVA
     HSTRUAUBRTUOUJUKULUMURUSVCVBABCDUPUNUQ $.
 
+  ${
+    $d V a b $.
+    $( A set of size two is an unordered pair of two different elements.
+       (Contributed by Alexander van der Vekens, 8-Dec-2017.)  (Revised by Jim
+       Kingdon, 11-Jan-2026.) $)
+    en2prde $p |- ( V ~~ 2o -> E. a E. b ( a =/= b /\ V = { a , b } ) ) $=
+      ( c2o cen wbr cv cpr wceq wex wne wa en2 breq1 wb cvv el2v bitrdi biimpcd
+      pr2ne ancrd 2eximdv mpd ) ADEFZABGZCGZHZIZCJBJUEUFKZUHLZCJBJBCAMUDUHUJBCU
+      DUHUIUHUDUIUHUDUGDEFZUIAUGDENUKUIOBCUEUFPPTQRSUAUBUC $.
+  $}
+
   $( An unordered pair, with decidable equality for the specified elements, has
      either one or two elements.  (Contributed by Jim Kingdon, 7-Jan-2026.) $)
   pr1or2 $p |- ( ( A e. C /\ B e. D /\ DECID A = B )
@@ -73117,6 +73268,34 @@ $)
     breq1d adantl mpbid orcd pr2ne biimpar olcd jaodan sylan2b 3impa ) ACEZBDEZ
     ABFZGZABHZIJKZUOLJKZMZUNUKULNZUMABOZMURABPUSUMURUTUSUMNZUPUQVAAAHZIJKZUPUKV
     CULUMACQRUMVCUPSUSUMVBUOIJABATUAUBUCUDUSUTNUQUPUSUQUTABCDUEUFUGUHUIUJ $.
+
+  ${
+    $d A f $.  $d B f $.
+    $( If an unordered pair is equinumerous to ordinal two, then a part is a
+       set.  (Contributed by RP, 21-Oct-2023.) $)
+    pr2cv1 $p |- ( { A , B } ~~ 2o -> A e. _V ) $=
+      ( vf cpr c2o cen wbr c0 c1o cvv wcel cfv wceq 0ex fvex eleq1 mpbii adantl
+      a1i syl cv wf1o wex df2o3 ensym eqbrtrrid bren sylib wa 1oex simplr simpr
+      vex eqtr4d wf1 wi f1of1 ad2antrr prid1 prid2 f1veqaeq syl12anc mpd wn 1n0
+      nesymi pm2.21dd wo f1of ffvelcdmd elpri adantr mpjaodan exlimiv ) ABDZEFG
+      ZHIDZVOCUAZUBZCUCZAJKZVPVQVOFGVTVPVQEVOFUDVOEUEUFVQVOCUGUHVSWACVSHVRLZAMZ
+      WAWBBMZWCWAVSWCWBJKWAHVRJJCUMZNOWBAJPQRVSWDUIZIVRLZAMZWAWGBMZWHWAWFWHWGJK
+      WAIVRJJWEUJOWGAJPQRWFWIUIZHIMZWAWJWBWGMZWKWJWBBWGVSWDWIUKWFWIULUNWJVQVOVR
+      UOZHVQKZIVQKZWLWKUPVSWMWDWIVQVOVRUQURWNWJHINUSZSWOWJHIUJUTZSVQVOHIVRVAVBV
+      CWKVDWJIHVEVFSVGVSWHWIVHZWDVSWGVOKWRVSVQVOIVRVQVOVRVIZWOVSWQSVJWGABVKTVLV
+      MVSWBVOKWCWDVHVSVQVOHVRWSWNVSWPSVJWBABVKTVMVNT $.
+  $}
+
+  $( If an unordered pair is equinumerous to ordinal two, then a part is a set.
+     (Contributed by RP, 21-Oct-2023.) $)
+  pr2cv2 $p |- ( { A , B } ~~ 2o -> B e. _V ) $=
+    ( cpr c2o cen wbr cvv wcel prcom breq1i pr2cv1 sylbir ) ABCZDEFBACZDEFBGHNM
+    DEBAIJBAKL $.
+
+  $( If an unordered pair is equinumerous to ordinal two, then both parts are
+     sets.  (Contributed by RP, 8-Oct-2023.) $)
+  pr2cv $p |- ( { A , B } ~~ 2o -> ( A e. _V /\ B e. _V ) ) $=
+    ( cpr c2o cen wbr cvv wcel pr2cv1 pr2cv2 jca ) ABCDEFAGHBGHABIABJK $.
 
   ${
     $d A r s $.  $d A z $.  $d ph x $.  $d s x $.
@@ -73738,6 +73917,42 @@ $(
 $)
 
   ${
+    $d ph x $.
+    $( Using an ` if ` expression to represent a truth value by ` (/) ` or
+       ` 1o ` .  Unlike some theorems using ` if ` , ` ph ` does not need to be
+       decidable.  (Contributed by Jim Kingdon, 9-Jan-2026.) $)
+    iftrueb01 $p |- ( if ( ph , 1o , (/) ) = 1o <-> ph ) $=
+      ( vx c1o c0 cif wceq cv wcel wex 0lt1o elex2 ax-mp wa wb wi eleq2 wn elif
+      wo noel intnan biorfi bitr4i bitr3di pm4.71r sylibr exlimdv iftrue impbii
+      mpi ) ACDEZCFZAULBGZCHZBIZADCHUOJBDCKLULUNABULUNAUNMZNUNAOULUMUKHZUNUPUKC
+      UMPUQUPAQZUMDHZMZSUPAUMCDRUTUPUSURUMTUAUBUCUDUNAUEUFUGUJACDUHUI $.
+  $}
+
+  ${
+    $d A x $.
+    $( A truth value which is inhabited is equal to true.  This is a variation
+       of ~ pwntru and ~ pwtrufal .  (Contributed by Jim Kingdon,
+       10-Jan-2026.) $)
+    pw1m $p |- ( ( A e. ~P 1o /\ E. x x e. A ) -> A = 1o ) $=
+      ( c1o cpw wcel cv wex wceq wa c0 csn elpwi df1o2 sseqtrdi adantr eleqtrdi
+      wss sselda elsni syl simpr eqeltrrd snssd eqssd eqtr4di ex exlimdv imp )
+      BCDEZAFZBEZAGBCHZUIUKULAUIUKULUIUKIZBJKZCUMBUNUIBUNQUKUIBCUNBCLZMNOUMJBUM
+      UJJBUMUJUNEUJJHUMUJCUNUIBCUJUORMPUJJSTUIUKUAUBUCUDMUEUFUGUH $.
+  $}
+
+  ${
+    $d A x y $.
+    $( Expressing a truth value in terms of an ` if ` expression.  (Contributed
+       by Jim Kingdon, 10-Jan-2026.) $)
+    pw1if $p |- ( A e. ~P 1o -> if ( A = 1o , 1o , (/) ) = A ) $=
+      ( vx vy c1o cpw wcel wceq c0 cif cv wa simpr wn elif intnan biorfi bitr4i
+      wo noel sylib simprd simpld eleqtrrd pw1m sylan2 eleqtrd sylanbrc impbida
+      wex elex2 eqrdv ) ADEFZBADGZDHIZAULBJZUNFZUOAFZULUPKZUODAURUMUODFZURUPUMU
+      SKZULUPLUPUTUMMZUOHFZKZRUTUMUODHNVCUTVBVAUOSOPQZTZUAURUMUSVEUBUCULUQKZUMU
+      SUPUQULCJAFCUIUMCUOAUJCAUDUEZVFUOADULUQLVGUFVDUGUHUK $.
+  $}
+
+  ${
     $d x y $.
     $( The power set of ` 1o ` is an ordinal.  (Contributed by Jim Kingdon,
        29-Jul-2024.) $)
@@ -73951,6 +74166,19 @@ $)
       ( wem wn cv wss wo con0 wral onntri52 onntri24 syl onntri45 impbii ) CDDZ
       AEZBEZFQPFGZDDBHIAHIZORBHIAHIDDSABJABKLABMN $.
   $}
+
+  $( With a formula ` ph ` one can associate an element of ` ~P 1o ` , which
+     can therefore be thought of as the set of "truth values" (but recall that
+     there are no other genuine truth values than ` T. ` and ` F. ` , by
+     ~ nndc , which translate to ` 1o ` and ` (/) ` respectively by ~ iftrue
+     and ~ iffalse , giving ~ pwtrufal ).
+
+     As proved in ~ if0ab , the associated element of ` ~P 1o ` is the
+     extension, in ` ~P 1o ` , of the formula ` ph ` .  (Contributed by BJ,
+     15-Aug-2024.) $)
+  fmelpw1o $p |- if ( ph , 1o , (/) ) e. ~P 1o $=
+    ( c1o c0 cif cun cpw 1oex 0ex ifelpwun un0 pweqi eleqtri ) ABCDBCEZFBFABCGH
+    IMBBJKL $.
 
 
 $(
@@ -119097,6 +119325,674 @@ $)
       REUMUMZUXFUXDUXIWVTUXDUXIUXRUXQEUXDUXIUXRUXQEUMUXDUXQUXIUXRULZEUXPWWAEUMG
       LUXCUXKLUJZUXOWWAFEWWBUXMUXIUXNUXRUXKLUXHUHVRUXKLUXGUHVRVTTWAYSUWRUWSUWTX
       TUXAUXB $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Subwords of concatenations
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( The subword of a concatenation as function.  (Contributed by Alexander van
+     der Vekens, 27-May-2018.) $)
+  swrdccatfn $p |- ( ( ( A e. Word V /\ B e. Word V )
+          /\ ( M e. ( 0 ... N ) /\ N e. ( 0 ... ( ( # ` A ) + ( # ` B ) ) ) ) )
+           -> ( ( A ++ B ) substr <. M , N >. ) Fn ( 0 ..^ ( N - M ) ) ) $=
+    ( cword wcel wa cc0 cfz chash cfv caddc cconcat cop csubstr cmin cfzo wfn
+    co ccatcl adantr simprl ccatlen oveq2d biimpar adantrl swrdvalfn syl3anc
+    eleq2d ) AEFZGBUKGHZCIDJTGZDIAKLBKLMTZJTZGZHZHABNTZUKGZUMDIURKLZJTZGZURCDOP
+    TIDCQTRTSULUSUQEABUAUBULUMUPUCULUPVBUMULVBUPULVAUODULUTUNIJEEABUDUEUJUFUGUR
+    CDEUHUI $.
+
+  ${
+    $d A k $.  $d B k $.  $d M k $.  $d N k $.  $d V k $.
+    $( The subword of a concatenation of two words within the first of the
+       concatenated words.  (Contributed by Alexander van der Vekens,
+       28-Mar-2018.) $)
+    swrdccatin1 $p |- ( ( A e. Word V /\ B e. Word V )
+                        -> ( ( M e. ( 0 ... N ) /\ N e. ( 0 ... ( # ` A ) ) )
+     -> ( ( A ++ B ) substr <. M , N >. ) = ( A substr <. M , N >. ) ) ) $=
+      ( wcel wa cfv cc0 wceq cfz co csubstr wi adantl adantr oveq2d ex cn0 cr
+      vk cword chash cconcat cop wne wb oveq2 eleq2d elfz1eq c0 swrd00g sylancl
+      cz ccatcl simpl eqtr4d opeq1 3eqtr4d sylan2 eqeq12d imbi12d mpbird sylbid
+      0z opeq2 impcomd cmin cfzo wfn ad2antrr simprl elfzelfzccat imp ad2ant2rl
+      swrdvalfn syl3anc w3a 3anass simplbi2 syl cv caddc simp-4l simp-4r cn clt
+      wbr elfznn0 nn0addcl expcom ad2antrl elfzonn0 impel lencl elfzo0 elfz2nn0
+      elnnne0 nn0re ad2antll ltaddsubd nn0readdcl ad2antlr ltletr sylbird com24
+      cle 3impia com13 impancom 3adant2 sylbi mpan9 biimtrid syl3anbrc ccatval1
+      expd ad3antrrr simplrl simpr swrdfv syl31anc sylan eqfnfvd wo nn0zd zdceq
+      wdc dcne sylib mpjaodan ) AEUBZFZBYLFZGZAUCHZIJZCIDKLZFZDIYPKLZFZGZABUDLZ
+      CDUEZMLZAUUDMLZJZNYPIUFZYOYQGZUUAYSUUGUUIUUADIIKLZFZYSUUGNZYQUUAUUKUGYOYQ
+      YTUUJDYPIIKUHUIOYOUUKUULNYQYOUUKUULUUKYODIJZUULDIUJYOUUMGUULCUUJFZUUCCIUE
+      ZMLZAUUOMLZJZNZYOUUSUUMYOUUNUURUUNYOCIJZUURCIUJYOUUTGUUCIIUEZMLZAUVAMLZUU
+      PUUQYOUVBUVCJUUTYOUVBUKUVCYOUUCYLFZIUNFZUVBUKJEABUOZVEUUCYLIULUMYOYMUVEUV
+      CUKJYMYNUPVEAYLIULUMUQPUUTUUPUVBJYOUUTUUOUVAUUCMCIIURZQOUUTUUQUVCJYOUUTUU
+      OUVAAMUVGQOUSUTRPUUMUULUUSUGYOUUMYSUUNUUGUURUUMYRUUJCDIIKUHUIUUMUUEUUPUUF
+      UUQUUMUUDUUOUUCMDICVFZQUUMUUDUUOAMUVHQVAVBOVCUTRPVDVGYOUUHGZUUBUUGUVIUUBG
+      ZUAIDCVHLZVILZUUEUUFUVJUVDYSDIUUCUCHKLFZUUEUVLVJYOUVDUUHUUBUVFVKUVIYSUUAV
+      LYOUUAUVMUUHYSYOUUAUVMABDEVMVNVOZUUCCDEVPVQUVJYMYSUUAVRZUUFUVLVJUVIUUBUVO
+      YMUUBUVONYNUUHUVOYMUUBYMYSUUAVSVTVKVNZACDEVPWAUVJUAWBZUVLFZGZUVQCWCLZUUCH
+      ZUVTAHZUVQUUEHZUVQUUFHZUVSYMYNUVTIYPVILFZUWAUWBJYMYNUUHUUBUVRWDYMYNUUHUUB
+      UVRWEUVSUVTSFZYPWFFZUVTYPWGWHZUWEUVJUVQSFZUWFUVRYSUWIUWFNZUVIUUAYSCSFZUWJ
+      CDWIZUWIUWKUWFUVQCWJWKWAWLUVQUVKWMWNUVIUWGUUBUVRYOUUHUWGYMUUHUWGNZYNYMYPS
+      FZUWMEAWOZUWGUWNUUHYPWRVTWAPVNVKUVJUVRUWHUVRUWIUVKWFFZUVQUVKWGWHZVRZUVJUW
+      HUVQUVKWPUUBUWRUWHNZUVIYSUWKUUAUWSUWLUUADSFZUWNDYPXGWHZVRZUWKUWSNDYPWQUWR
+      UWKUXBUWHUWIUWQUWKUXBUWHNZNUWPUWIUWKUWQUXCUXBUWQUWIUWKGZUWHUWTUWNUXAUWQUX
+      DUWHNNUWTUWNGZUXDUWQUXAUWHUXEUXDUWQUXAUWHNZNUXEUXDGZUWQUVTDWGWHZUXFUXGUVQ
+      CDUWIUVQTFUXEUWKUVQWSWLUWKCTFUXEUWICWSWTUWTDTFZUWNUXDDWSVKZXAUXGUXHUXAUWH
+      UXGUVTTFZUXIYPTFZUXHUXAGUWHNUXDUXKUXEUVQCXBOUXJUWNUXLUWTUXDYPWSXCUVTDYPXD
+      VQXQXERXFXHXIXJXKXIXLXMOXNVNUVTYPWPXOEEABUVTXPVQUVSUVDYSUVMUVRUWCUWAJYOUV
+      DUUHUUBUVRUVFXRUVIYSUUAUVRXSUVJUVMUVRUVNPUVJUVRXTEUUCCDUVQYAYBUVJUVOUVRUW
+      DUWBJUVPEACDUVQYAYCUSYDRYMYQUUHYEZYNYMYQYHZUXMYMYPUNFUVEUXNYMYPUWOYFVEYPI
+      YGUMYPIYIYJPYK $.
+  $}
+
+  $( Lemma 4 for ~ pfxccatin12 .  (Contributed by Alexander van der Vekens,
+     30-Mar-2018.)  (Revised by Alexander van der Vekens, 23-May-2018.) $)
+  pfxccatin12lem4 $p |- ( ( L e. NN0 /\ M e. NN0 /\ N e. ZZ )
+              -> ( ( K e. ( 0 ..^ ( N - M ) ) /\ -. K e. ( 0 ..^ ( L - M ) ) )
+                     -> K e. ( ( L - M ) ..^ ( ( L - M ) + ( N - L ) ) ) ) ) $=
+    ( cn0 wcel cz w3a cc0 cmin co cfzo wn wa caddc nn0z zsubcl syl2an cc nn0cn
+    3adant3 elfzonelfzo imp sylan wb npncan3 syl3an oveq2d eleq2d adantr mpbird
+    wceq zcn ex ) BEFZCEFZDGFZHZAIDCJKZLKFAIBCJKZLKFMNZAUTUTDBJKOKZLKZFZURVANVD
+    AUTUSLKZFZURUTGFZVAVFUOUPVGUQUOBGFCGFVGUPBPCPBCQRUAVGVAVFUSAIUTUBUCUDURVDVF
+    UEVAURVCVEAURVBUSUTLUOBSFUPCSFUQDSFVBUSULBTCTDUMBCDUFUGUHUIUJUKUN $.
+
+  $( Lemma for ~ pfxccatin12lem2 .  (Contributed by AV, 30-Mar-2018.)  (Revised
+     by AV, 27-May-2018.) $)
+  pfxccatin12lem2a $p |- ( ( M e. ( 0 ... L ) /\ N e. ( L ... X ) )
+               -> ( ( K e. ( 0 ..^ ( N - M ) ) /\ -. K e. ( 0 ..^ ( L - M ) ) )
+                    -> ( K + M ) e. ( L ..^ X ) ) ) $=
+    ( cc0 co wcel wa cfzo cz wi w3a cle wbr adantr sylbi syl simpr adantl caddc
+    cfz cmin wn elfz2 zsubcl 3adant1 elfzonelfzo elfzoelz elfzelz simpl anim12i
+    wb anim12ci jca syl5 imp impcom elfzomelpfzo cuz cfv wss simpl3 simpl2 3jca
+    exp32 eluz2 sylibr fzoss2 sseld sylbid ex com23 mpcom com12 syld ) CFBUBGHZ
+    DBEUBGHZIZAFDCUCGZJGHAFBCUCGZJGHUDIZAWAVTJGHZACUAGZBEJGZHZVSWAKHZWBWCLVQWGV
+    RVQFKHZBKHZCKHZMZFCNOCBNOIZIZWGCFBUEZWKWGWLWIWJWGWHBCUFUGPQPVTAFWAUHRWCVSWF
+    AKHZWCVSWFLAWAVTUIWOVSWCWFWOVSWCWFLWOVSIZWCWDBDJGZHZWFWPWIDKHZIZWOWJIZIZWCW
+    RUMVSWOXBVQVRWOXBLZVQWMVRXCLZWNWKXDWLWIWJXDWHVRWSWIWJIZXCDBEUJXEWSWOXBXEWSW
+    OIZIWTXAXEWIXFWSWIWJUKWSWOUKULXEWJXFWOWIWJSWSWOSUNUOVFUPUGPQUQURACBDUSRWPWQ
+    WEWDWPEDUTVAHZWQWEVBWPWSEKHZDENOZMZXGVSXJWOVRXJVQVRWIXHWSMZBDNOZXIIZIZXJDBE
+    UEXNWSXHXIWIXHWSXMVCWIXHWSXMVDXMXIXKXLXISTVEQTTDEVGVHDBEVIRVJVKVLVMVNVOVP
+    $.
+
+  $( Lemma 1 for ~ pfxccatin12 .  (Contributed by AV, 30-Mar-2018.)  (Revised
+     by AV, 9-May-2020.) $)
+  pfxccatin12lem1 $p |- ( ( M e. ( 0 ... L ) /\ N e. ( L ... X ) )
+               -> ( ( K e. ( 0 ..^ ( N - M ) ) /\ -. K e. ( 0 ..^ ( L - M ) ) )
+                    -> ( K - ( L - M ) ) e. ( 0 ..^ ( N - L ) ) ) ) $=
+    ( cc0 co wcel wa cmin cfzo cz wi w3a cle wbr adantr sylbi cc adantl 3adant1
+    cfz wn elfz2 zsubcl elfzonelfzo syl caddc wceq elfz2nn0 nn0cn elfzelz subcl
+    cn0 zcn ancoms addridd eqcomd simprr simpl npncan3d oveq12d ex com12 syl2an
+    3syl 3adant3 imp eleq2d biimpa 0zd 3adant2 3jca fzosubel2 syl2anc syld ) CF
+    BUBGHZDBEUBGHZIZAFDCJGZKGHAFBCJGZKGHUCIZAWAVTKGZHZAWAJGFDBJGZKGHZVSWALHZWBW
+    DMVQWGVRVQFLHZBLHZCLHZNZFCOPCBOPZIZIWGCFBUDWKWGWMWIWJWGWHBCUEUAQRQZVTAFWAUF
+    UGVSWDWFVSWDIAWAFUHGZWAWEUHGZKGZHZWGWHWELHZNZWFVSWDWRVSWCWQAVQVRWCWQUIZVQCU
+    NHZBUNHZWLNVRXAMZCBUJXBXCXDWLXBCSHZBSHZXDXCCUKBUKVRXEXFIZXAVRDLHZDSHZXGXAMD
+    BEULDUOXIXGXAXIXGIZWAWOVTWPKXGWAWOUIXIXGWOWAXGWAXFXEWASHBCUMUPUQURTXJWPVTXJ
+    BCDXIXEXFUSXGXEXIXEXFUTTXIXGUTVAURVBVCVFVDVEVGRVHVIVJVSWTWDVSWGWHWSWNVSVKVR
+    WSVQVRWIELHZXHNZBDOPDEOPIZIWSDBEUDXLWSXMWIXHWSXKXHWIWSDBUEUPVLQRTVMQAWAFWEV
+    NVOVCVP $.
+
+  ${
+    $d A k $.  $d B k $.  $d L k $.  $d M k $.  $d N k $.  $d V k $.
+    swrdccatin2.l $e |- L = ( # ` A ) $.
+    $( The subword of a concatenation of two words within the second of the
+       concatenated words.  (Contributed by Alexander van der Vekens,
+       28-Mar-2018.)  (Revised by Alexander van der Vekens, 27-May-2018.) $)
+    swrdccatin2 $p |- ( ( A e. Word V /\ B e. Word V )
+                  -> ( ( M e. ( L ... N ) /\ N e. ( L ... ( L + ( # ` B ) ) ) )
+                           -> ( ( A ++ B ) substr <. M , N >. )
+                              = ( B substr <. ( M - L ) , ( N - L ) >. ) ) ) $=
+      ( wcel wa cfz co cfv caddc cmin wceq cc0 wi sylbi ad2antrl wbr vk cconcat
+      cword chash cop csubstr cfzo wfn wb oveq1 eleq2d id oveq12d anbi12d ax-mp
+      cn0 lencl cuz wss elnn0uz fzss1 sseld anim12d syl biimtrid imp swrdccatfn
+      adantr syldan fzmmmeqm oveq2d fneq2d mpbird elfzmlbm nn0zd elfzmlbp sylan
+      simplr adantl adantrl swrdvalfn syl3anc clt cif w3a simpll elfzelz zaddcl
+      cz cv expcom elfzoelz impel df-3an sylanbrc ccatsymb wn cle elfz2 anim12i
+      cr zre elnn0z 0re jctl le2add syl2anc addlidd breq1d sylibd simprl lenltd
+      recn readdcl com12 mpan9 breq2i notbii imbitrdi ex com23 3adant2 elfzonn0
+      expd adantrr iffalsed cc zcn ad2antlr ad2antrr addsubassd eqeq1d imbitrid
+      oveq2 fveq2d 3eqtrd 3syl impcom 3jca swrdfv ccatcl biimpi eqeltrid sselda
+      ad2ant2r ccatlen biimpa syl2an2r ad2ant2l 3eqtr4d eqfnfvd ) AFUCZHZBUULHZ
+      IZDCEJKZHZECCBUDLZMKZJKZHZIZABUBKZDEUEUFKZBDCNKZECNKZUEUFKZOUUOUVBIZUAPUV
+      FUVENKZUGKZUVDUVGUVHUVDUVJUHZUVDPEDNKZUGKZUHZUUOUVBDPEJKZHZEPAUDLZUURMKZJ
+      KZHZIZUVNUUOUVBUWAUVBDUVQEJKZHZEUVQUVRJKZHZIZUUOUWACUVQOZUVBUWFUIGUWGUUQU
+      WCUVAUWEUWGUUPUWBDCUVQEJUJUKUWGUUTUWDEUWGCUVQUUSUVRJUWGULCUVQUURMUJUMUKZU
+      NUOUUMUWFUWAQZUUNUUMUVQUPHZUWIFAUQZUWJUWCUVPUWEUVTUWJUWBUVODUWJUVQPURLZHZ
+      UWBUVOUSUVQUTZUVQPEVARVBUWJUWDUVSEUWJUWMUWDUVSUSZUWNUVQPUVRVAZRVBVCVDVHVE
+      VFABDEFVGVIUUQUVKUVNUIUUOUVAUUQUVJUVMUVDUUQUVIUVLPUGCDEVJVKZVLSVMUVHUUNUV
+      EPUVFJKHZUVFPUURJKHZUVGUVJUHUUMUUNUVBVRZUUQUWRUUOUVADCEVNSZUUOUVAUWSUUQUU
+      OUURWIHZUVAUWSUUNUXBUUMUUNUURFBUQVOZVSECUURVPZVQVTBUVEUVFFWAWBUVHUAWJZUVJ
+      HZIZUXEDMKZUVCLZUXEUVEMKZBLZUXEUVDLZUXEUVGLZUXGUXIUXHUVQWCTZUXHALZUXHUVQN
+      KZBLZWDZUXQUXKUXGUUMUUNUXHWIHZWEZUXIUXROUXGUUOUXSUXTUUOUVBUXFWFUVHUXEWIHZ
+      UXSUXFUUQUYAUXSQZUUOUVAUUQDWIHZUYBDCEWGUYAUYCUXSUXEDWHWKVDSUXEPUVIWLZWMUU
+      MUUNUXSWNWOABUXHFWPVDUXGUXNUXOUXQUVHUXEUPHZUXNWQZUXFUUQUYEUYFQZUUOUVAUUQC
+      WIHZEWIHZUYCWEZCDWRTZDEWRTZIZIZUYGDCEWSZUYJUYKUYGUYLUYJUYKUYGUYHUYCUYKUYG
+      QUYIUYHUYCIZUYEUYKUYFUYPUYEUYKUYFQUYPUYEIUYKUXHCWCTZWQZUYFUYPCXAHZDXAHZIZ
+      UYEUYKUYRQZUYHUYSUYCUYTCXBDXBWTUYEUYAPUXEWRTZIVUAVUBQZUXEXCUYAUXEXAHZVUCV
+      UDUXEXBVUCVUEVUAVUBVUEVUAIZVUCVUBVUFVUCUYKUYRVUFVUCUYKIZCUXHWRTZUYRVUFVUG
+      PCMKZUXHWRTZVUHVUFPXAHZUYSIZVUEUYTIZVUGVUJQUYSVULVUEUYTUYSVUKXDXESVUEUYTV
+      UMUYSVUMULVTPCUXEDXFXGVUFVUICUXHWRUYSVUICOVUEUYTUYSCCXMXHSXIXJVUFCUXHVUEU
+      YSUYTXKVUEUYTUXHXAHUYSUXEDXNVTXLXJYDXOYDXPRXPUYQUXNCUVQUXHWCGXQXRXSXTYAYB
+      VFYERSUXEUVIYCWMYFUXGUXPUXJBUVHUYAUXPUXJOZUXFUUQUYAVUNQZUUOUVAUUQUYNVUOUY
+      OUYJVUOUYMUYHUYCVUOUYIUYPUYAVUNUWGUYPUYAIZVUNQGVUPUXHCNKZUXJOUWGVUNVUPUXE
+      DCUYAUXEYGHUYPUXEYHVSUYCDYGHUYHUYADYHYIUYHCYGHUYCUYACYHYJYKUWGVUQUXPUXJCU
+      VQUXHNYNYLYMUOXTYBVHRSUYDWMYOYPUVHUVCUULHZUVPEPUVCUDLZJKZHZWEUXFUXEUVMHZU
+      XLUXIOUVHVURUVPVVAUUOVURUVBFABUUAVHUUMUUQUVPUUNUVAUUMUUPUVODUUMUWJCUWLHUU
+      PUVOUSUWKUWJCUVQUWLGUWJUWMUWNUUBZUUCCPEVAYQUUDUUEUUOUVAVVAUUQUVAUUOVVAUVA
+      UWEUUOVVAQUWGUVAUWEUIGUWHUOUWEUUOVVAUWEUUOIVVAUVTUUOUWEUVTUUOUWDUVSEUUMUW
+      OUUNUUMUWJUWMUWOUWKVVCUWPYQVHVBYRUUOVVAUVTUIUWEUUOVUTUVSEUUOVUSUVRPJFFABU
+      UFVKUKVSVMXTRYRVTYSUVHUXFVVBUUQUXFVVBUIUUOUVAUUQUVJUVMUXEUWQUKSUUGFUVCDEU
+      XEYTUUHUVHUUNUWRUWSWEUXFUXMUXKOUVHUUNUWRUWSUWTUXAUUNUVAUWSUUMUUQUUNUXBUVA
+      UWSUXCUXDVQUUIYSFBUVEUVFUXEYTVQUUJUUKXT $.
+
+    $( Lemma for ~ pfxccatin12lem2 and ~ pfxccatin12lem3 .  (Contributed by AV,
+       30-Mar-2018.)  (Revised by AV, 27-May-2018.) $)
+    pfxccatin12lem2c $p |- ( ( ( A e. Word V /\ B e. Word V )
+                  /\ ( M e. ( 0 ... L ) /\ N e. ( L ... ( L + ( # ` B ) ) ) ) )
+                             -> ( ( A ++ B ) e. Word V /\ M e. ( 0 ... N )
+                                /\ N e. ( 0 ... ( # ` ( A ++ B ) ) ) ) ) $=
+      ( cword wcel wa cc0 cfz chash cfv caddc cconcat ccatcl adantr elfz0fzfz0
+      co adantl cuz wss elfzuz2 syl sselda ccatlen oveq1i eqtr4di oveq2d eleq2d
+      fzss1 imbitrrid imp 3jca ) AFHZIBUPIJZDKCLTIZECCBMNZOTZLTZIJZJABPTZUPIZDK
+      ELTIZEKVCMNZLTZIZUQVDVBFABQRVBVEUQCDEUTSUAUQVBVHVBVHUQEKUTLTZIURVAVIEURCK
+      UBNIVAVIUCDKCUDCKUTULUEUFUQVGVIEUQVFUTKLUQVFAMNZUSOTUTFFABUGCVJUSOGUHUIUJ
+      UKUMUNUO $.
+
+    $( Lemma 2 for ~ pfxccatin12 .  (Contributed by AV, 30-Mar-2018.)  (Revised
+       by AV, 9-May-2020.) $)
+    pfxccatin12lem2 $p |- ( ( ( A e. Word V /\ B e. Word V )
+          /\ ( M e. ( 0 ... L ) /\ N e. ( L ... ( L + ( # ` B ) ) ) ) )
+              -> ( ( K e. ( 0 ..^ ( N - M ) ) /\ -. K e. ( 0 ..^ ( L - M ) ) )
+                     -> ( ( ( A ++ B ) substr <. M , N >. ) ` K )
+                    = ( ( B prefix ( N - L ) ) `
+                        ( K - ( # ` ( A substr <. M , L >. ) ) ) ) ) ) $=
+      ( wcel wa cc0 cfz co cfv cmin wceq w3a wi adantr imp cword chash caddc wn
+      cfzo cconcat cop csubstr pfxccatin12lem2c simprl swrdfv syl2an2r elfzoelz
+      cz cn0 cle wbr elfz2nn0 cc nn0cn anim12i zcn subcl ancoms anim1ci addridd
+      cpfx simpr simplr simpll subsub3d eqtr2d syl2an oveq2 eqcoms eqeq1d ax-mp
+      imbitrrid ex 3adant3 sylbi ad2antrl impcom fveq2d pfxccatin12lem2a adantl
+      syl syl5com wb oveq1 oveq12d eleq2d sylibr df-3an sylanbrc ccatval2 lencl
+      id elfzel2 zsubcl zre subge0 syl2anr biimprd elnn0z expcom com12 3ad2ant3
+      cr expcomd nn0re lesubadd2 syl3anc com13 3jca elfz2 com23 pfxccatin12lem1
+      3imtr4g pfxfv zcnd elfzelz subcld eqcomd 3eqtr4d elnn0uz eluzfz2 eqeltrid
+      eqtrd cuz swrdlen oveq2d 3eqtrd ) AGUAZIZBYNIZJZEKDLMIZFDDBUBNZUCMZLMIZJZ
+      JZCKFEOMZUEMIZCKDEOMZUEMIUDZJZCABUFMZEFUGUHMNZCAEDUGUHMUBNZOMZBFDOMZVGMZN
+      ZPUUCUUHJZUUJCEUCMZUUINZCUUFOMZUUNNZUUOUUCUUIYNIEKFLMIFKUUIUBNLMIQUUHUUEU
+      UJUURPABDEFGHUIUUCUUEUUGUJGUUIEFCUKULUUPUUQAUBNZOMZBNZUUSKUCMZBNZUURUUTUU
+      PUVBUVDBUUHUUCUVBUVDPZUUEUUCUVFRUUGUUECUNIZUUCUVFCKUUDUMZYRUVGUVFRZYQUUAY
+      REUOIZDUOIZEDUPUQZQUVIEDURUVJUVKUVIUVLUVJUVKJZUVGUVFDUVAPZUVMUVGJZUVFRHUV
+      OUVFUVNUUQDOMZUVDPZUVMEUSIZDUSIZJZCUSIZUVQUVGUVJUVRUVKUVSEUTDUTVACVBUVTUW
+      AJZUVDUUSUVPUWBUUSUWBUWAUUFUSIZJUUSUSIUVTUWCUWAUVSUVRUWCDEVCVDVECUUFVCWGV
+      FUWBCDEUVTUWAVHUVRUVSUWAVIUVRUVSUWAVJVKVLVMUVNUVBUVPUVDUVBUVPPUVADUVADUUQ
+      OVNVOVPVRVQVSVTWAWBWHSWCWDUUPYOYPUUQUVAUVAYSUCMZUEMZIZQZUURUVCPUUPYQUWFUW
+      GYQUUBUUHVJUUPUUQDYTUEMZIZUWFUUCUUHUWIUUBUUHUWIRYQCDEFYTWEWFTUVNUWFUWIWIZ
+      HUWJUVADUVADPZUWEUWHUUQUWKUVADUWDYTUEUWKWRUVADYSUCWJWKWLVOVQWMYOYPUWFWNWO
+      GABUUQWPWGUUPUUTUUSBNZUVEUUPYPUUMKYSLMIZUUSKUUMUEMIZUUTUWLPUUCYPUUHYOYPUU
+      BVISUUCUWMUUHYQUUBUWMYPUUBUWMRYOYPYSUOIZUUBUWMGBWQYRUUAUWOUWMRZYRDUNIZUUA
+      UWPREKDWSZUWQUWOUUAUWMUWQUWOUUAUWMRUWQUWOJZUWQYTUNIZFUNIZQZDFUPUQZFYTUPUQ
+      ZJZJZUUMUOIZUWOUUMYSUPUQZQZUUAUWMUWSUXFUXIUWSUXFJUXGUWOUXHUWSUXFUXGUWQUXF
+      UXGRUWOUXFUWQUXGUXBUXEUWQUXGRZUXAUWQUXEUXJRUWTUXEUXAUXJUXEUWQUXAUXGUXCUWQ
+      UXAJZUXGRUXDUXKUXCUXGUXKUXCJUUMUNIZKUUMUPUQZUXGUXKUXLUXCUXAUWQUXLFDWTVDSU
+      XKUXCUXMUXKUXMUXCUXAFXIIZDXIIZUXMUXCWIUWQFXAZDXAZFDXBXCXDTUUMXEWOXFSXJXGX
+      HTXGSTUWQUWOUXFVIUXFUWSUXHUXEUXBUWSUXHRZUXDUXBUXRRUXCUWSUXBUXDUXHUWSUXBUX
+      DUXHRZUWSUXBJUXNUXOYSXIIZUXSUXBUXNUWSUXAUWQUXNUWTUXPXHWFUWSUXOUXBUWQUXOUW
+      OUXQSSUWSUXTUXBUWOUXTUWQYSXKWFSUXNUXOUXTQUXHUXDFDYSXLXDXMVSXNWFWCWCXOVSFD
+      YTXPUUMYSURXSVSXQWGTWHWFTSUUCUUHUWNUUBUUHUWNRYQCDEFYTXRWFTUUSUUMGBXTXMUUP
+      UUSUVDBUUPUVDUUSUUPUUSUUPCUUFUUEUWAUUCUUGUUECUVHYAWBUUPDEUUCUVSUUHYRUVSYQ
+      UUAYRDUWRYAWBSUUCUVRUUHYRUVRYQUUAYREEKDYBYAWBSYCYCVFYDWDYIYEUUPUUSUULUUNU
+      UPUUFUUKCOUUPUUKUUFUUPYOYRDKUVALMZIZQZUUKUUFPUUCUYCUUHUUCYOYRUYBYOYPUUBVJ
+      YQYRUUAUJYQUYBUUBYOUYBYPYOUVAUOIZUYBGAWQUYDDUVAUYAHUYDUVAKYJNIUVAUYAIUVAY
+      FKUVAYGWAYHWGSSXOSGAEDYKWGYDYLWDYMVS $.
+
+    $( Lemma 3 for ~ pfxccatin12 .  (Contributed by AV, 30-Mar-2018.)  (Revised
+       by AV, 27-May-2018.) $)
+    pfxccatin12lem3 $p |- ( ( ( A e. Word V /\ B e. Word V )
+          /\ ( M e. ( 0 ... L ) /\ N e. ( L ... ( L + ( # ` B ) ) ) ) )
+                  -> ( ( K e. ( 0 ..^ ( N - M ) ) /\ K e. ( 0 ..^ ( L - M ) ) )
+                       -> ( ( ( A ++ B ) substr <. M , N >. ) ` K )
+                          = ( ( A substr <. M , L >. ) ` K ) ) ) $=
+      ( wcel wa cc0 cfz co cfv wceq w3a cn0 clt wbr wi cword chash cmin cconcat
+      caddc cfzo cop csubstr simpll elfzo0 lencl cle elfz2nn0 nn0addcl 3ad2ant1
+      cn ex com12 imp cz elnnz cr wb nn0re posdif syl2an elnn0z lelttr mp3an3an
+      0re nn0z anim1i sylibr adantl syld expd impancom sylbi simplbiim 3ad2ant2
+      zre sylbird 3adant3 adantr ltaddsubd exbiri com23 3adant2 impcom 3jca a1d
+      eleq1 breq2 3anbi23d imbi2d 3imtr4d eqcoms mpsyl df-3an sylanbrc ccatval1
+      2a1i syl pfxccatin12lem2c simpl swrdfv simplll simplrl eleq1i cuz elnn0uz
+      eluzfz2 oveq2i eleqtrdi sylbir ad3antrrr simprr syl31anc 3eqtr4d ) AGUAZI
+      ZBXTIZJZEKDLMZIZFDDBUBNUEMLMIZJZJZCKFEUCMUFMIZCKDEUCMZUFMIZJZCABUDMZEFUGU
+      HMNZCAEDUGUHMNZOYHYLJZCEUEMZYMNZYQANZYNYOYPYAYBYQKAUBNZUFMIZPZYRYSOYPYCUU
+      AUUBYCYGYLUIYPYQQIZYTUPIZYQYTRSZPZUUAYLYHUUFYKYHUUFTZYIYKCQIZYJUPIZCYJRSZ
+      PZUUGCYJUJYHUUKUUFYCYGUUKUUFTZYAYGUULTZYBDYTOYAYTQIZUUMHGAUKZUUNUUMTYTDYT
+      DOZDQIZYGUUKUUCDUPIZYQDRSZPZTZTZUUNUUMUUPUUQUVBYEYFUVAYEEQIZUUQEDULSZPZYF
+      UVATEDUMUVEUVAYFUVEUUKUUTUVEUUKJUUCUURUUSUVEUUKUUCUVCUUQUUKUUCTUVDUUKUVCU
+      UCUUHUUIUVCUUCTUUJUUHUVCUUCCEUNUQUOURUOUSUVEUUKUURUVCUUQUUKUURTUVDUUKUVCU
+      UQJZUURUUIUUHUVFUURTZUUJUUIYJUTIKYJRSZUVGYJVAUVFUVHUURUVFUVHEDRSZUURUVCEV
+      BIZDVBIZUVIUVHVCUUQEVDZDVDZEDVEVFUVCUUQUVIUURTZUVCEUTIZKEULSZJUUQUVNTEVGU
+      VOUUQUVPUVNUVOUUQJZUVPUVIUURUVQUVPUVIJZKDRSZUURKVBIUVOUVJUUQUVKUVRUVSTVJE
+      WAUVMKEDVHVIUUQUVSUURTUVOUUQUVSUURUUQUVSJDUTIZUVSJUURUUQUVTUVSDVKVLDVAVMU
+      QVNVOVPVQVRUSWBURVSVTURWCUSUUKUVEUUSUUHUUJUVEUUSTZUUIUUHUUJUWAUUHUVEUUJUU
+      SUUHUVEUUSUUJUUHUVEJCEDUUHCVBIUVECVDWDUVEUVJUUHUVCUUQUVJUVDUVLUOVNUVEUVKU
+      UHUUQUVCUVKUVDUVMVTVNWEWFWGUSWHWIWJUQWKVRUSXBYTDQWLUUPUULUVAYGUUPUUFUUTUU
+      KUUPUUDUURUUEUUSUUCYTDUPWLYTDYQRWMWNWOWOWPWQWRWDUSURVRVNWIYQYTUJVMYAYBUUA
+      WSWTGGABYQXAXCYHYMXTIEKFLMIFKYMUBNLMIPYIYNYROYLABDEFGHXDYIYKXEGYMEFCXFVFY
+      PYAYEDKYTLMZIZYKYOYSOYAYBYGYLXGYCYEYFYLXHYAUWCYBYGYLYAUUNUWCUUOUUNUUQUWCD
+      YTQHXIUUQDYDUWBUUQDKXJNIDYDIDXKKDXLVRDYTKLHXMXNXOXCXPYHYIYKXQGAEDCXFXRXSU
+      Q $.
+
+    $( The subword of a concatenation of two words within both of the
+       concatenated words.  (Contributed by Alexander van der Vekens,
+       5-Apr-2018.)  (Revised by AV, 9-May-2020.) $)
+    pfxccatin12 $p |- ( ( A e. Word V /\ B e. Word V )
+        -> ( ( M e. ( 0 ... L ) /\ N e. ( L ... ( L + ( # ` B ) ) ) )
+             -> ( ( A ++ B ) substr <. M , N >. )
+                = ( ( A substr <. M , L >. ) ++ ( B prefix ( N - L ) ) ) ) ) $=
+      ( wcel wa cc0 cfz co chash cfv wceq cfzo w3a syl cz ad2antrl vk cword cop
+      caddc cconcat csubstr cmin cpfx pfxccatin12lem2c swrdvalfn simpll elfzelz
+      wfn elfzel1 swrdclg syl3anc cn0 simplr cle wbr elfzle1 wb znn0sub syl2anc
+      ad2antll mpbid pfxclg simprl lencl nn0fz0 sylib eqeltrid ad2antrr swrdlen
+      ccatvalfn nn0zd elfzmlbp sylan pfxlen syldan ad2ant2l oveq12d cc elfz2nn0
+      wi nn0cn zcn adantr 3jca ex syl11 3adant3 sylbi imp npncan3 adantl eqtr2d
+      oveq2d fneq2d mpbird cv wdc elfzoelz 0zd zsubcld fzodcel wn exmiddc simpr
+      anim2i ancomd pfxccatin12lem3 jca simpl eleqtrrd df-3an sylanbrc ccatval1
+      wo sylc eqtr4d pfxccatin12lem2 cuz elfzuz eluzelz id 3expia ancoms impcom
+      syl5com pfxccatin12lem4 ccatval2 jaoi mpcom eqfnfvd ) AFUBZHZBYPHZIZDJCKL
+      HZECCBMNZUDLZKLHZIZABUELZDEUCUFLZADCUCUFLZBECUGLZUHLZUELZOYSUUDIZUAJEDUGL
+      ZPLZUUFUUJUUKUUEYPHDJEKLHEJUUEMNKLHQUUFUUMUMABCDEFGUIUUEDEFUJRUUKUUJUUMUM
+      UUJJUUGMNZUUIMNZUDLZPLZUMZUUKUUGYPHZUUIYPHZUURUUKYQDSHZCSHZUUSYQYRUUDUKZY
+      TUVAYSUUCDJCULTZUUCUVBYSYTECUUBUNZVEZFADCUOUPZUUKYRUUHUQHZUUTYQYRUUDURUUC
+      UVHYSYTUUCCEUSUTZUVHECUUBVAUUCUVBESHZUVIUVHVBUVEECUUBULZCEVCVDVFVEFBUUHVG
+      VDZUUGUUIFVOVDUUKUUMUUQUUJUUKUULUUPJPUUKUUPCDUGLZUUHUDLZUULUUKUUNUVMUUOUU
+      HUDUUKYQYTCJAMNZKLZHZUUNUVMOUVCYSYTUUCVHYQUVQYRUUDYQCUVOUVPGYQUVOUQHUVOUV
+      PHFAVIUVOVJVKVLVMFADCVNUPZYRUUCUUOUUHOZYQYTYRUUCUUHJUUAKLHZUVSYRUUASHUUCU
+      VTYRUUAFBVIVPECUUAVQVRFBUUHVSVTWAWBZUUDUVNUULOZYSUUDCWCHZDWCHZEWCHZQZUWBY
+      TUUCUWFYTDUQHZCUQHZDCUSUTZQZUUCUWFWEZDCWDZUWGUWHUWKUWIUVJUWGUWHIZUWFUUCUV
+      JUWMUWFUVJUWMIUWCUWDUWEUWHUWCUVJUWGCWFVEUWGUWDUVJUWHDWFTUVJUWEUWMEWGWHWIW
+      JUVKWKWLWMWNCDEWORWPWQWRWSWTUAXAZJUVMPLZHZXBZUUKUWNUUMHZIZUWNUUFNZUWNUUJN
+      ZOZUWSUWNSHZJSHUVMSHZUWQUWRUXCUUKUWNJUULXCWPUWSXDUUKUXDUWRUUKCDUVFUVDXEWH
+      UWNJUVMXFUPUWQUWPUWPXGZXSUWSUXBWEZUWPXHUWPUXFUXEUWPUWSUXBUWPUWSIZUWTUWNUU
+      GNZUXAUXGUUKUWRUWPIUWTUXHOUWPUUKUWRVHUXGUWPUWRUWSUWRUWPUUKUWRXIZXJXKABUWN
+      CDEFGXLXTUXGUUSUUTUWNJUUNPLZHZQZUXAUXHOUXGUUSUUTIZUXKUXLUUKUXMUWPUWRUUKUU
+      SUUTUVGUVLXMZTUXGUWNUWOUXJUWPUWSXNUUKUXJUWOOUWPUWRUUKUUNUVMJPUVRWRTXOUUSU
+      UTUXKXPXQFFUUGUUIUWNXRRYAWJUXEUWSUXBUXEUWSIZUWTUWNUUNUGLUUINZUXAUXOUUKUWR
+      UXEIZUWTUXPOUXEUUKUWRVHUXOUXEUWRUWSUWRUXEUXIXJXKZABUWNCDEFGYBXTUXOUUSUUTU
+      WNUUNUUPPLZHZQZUXAUXPOUXOUXMUXTUYAUUKUXMUXEUWRUXNTUXOUWNUVMUVNPLZUXSUXOUW
+      HUWGUVJQZUXQUWNUYBHUUKUYCUXEUWRUUDUYCYSUUCYTUYCUUCECYCNHZYTUYCWEECUUBYDUY
+      DUVJYTUYCCEYEYTUWJUVJUYCWEZUWLUWGUWHUYEUWIUWHUWGUYEUWHUWGUVJUYCUYCYFYGYHW
+      LWMYJRYIWPTUXRUWNCDEYKXTUUKUXSUYBOUXEUWRUUKUUNUVMUUPUVNPUVRUWAWBTXOUUSUUT
+      UXTXPXQFUUGUUIUWNYLRYAWJYMRYNYOWJ $.
+
+    $( The subword of a concatenation is either a subword of the first
+       concatenated word or a subword of the second concatenated word or a
+       concatenation of a suffix of the first word with a prefix of the second
+       word.  (Contributed by Alexander van der Vekens, 30-Mar-2018.)  (Revised
+       by AV, 10-May-2020.) $)
+    pfxccat3 $p |- ( ( A e. Word V /\ B e. Word V )
+                -> ( ( M e. ( 0 ... N ) /\ N e. ( 0 ... ( L + ( # ` B ) ) ) )
+                           -> ( ( A ++ B ) substr <. M , N >. )
+                = if ( N <_ L , ( A substr <. M , N >. ) ,
+                       if ( L <_ M , ( B substr <. ( M - L ) , ( N - L ) >. ) ,
+                                   ( ( A substr <. M , L >. )
+                                     ++ ( B prefix ( N - L ) ) ) ) ) ) ) $=
+      ( wcel wa cc0 cfz co cle wbr wi cn0 adantl adantr imp w3a cword chash cfv
+      caddc cconcat cop csubstr cmin cpfx cif wceq simpll simplrl lencl elfznn0
+      ad2antrr simplr breq2i biimpi elfz2nn0 syl3anbrc syl5com swrdccatin1 sylc
+      exp31 jca wn simp1l eleq1i cz nn0z 3ad2ant2 3ad2ant1 simpl3 anim1ci elfz2
+      3jca sylanbrc sylbi com12 sylbir syl a1d 3imp eqeltrid ad2antrl eqcomi wb
+      clt zltnle syl2anr bicomd cr nn0re ltle sylbid biimtrid imp32 elfzd exp32
+      a1dd swrdccatin2 syl2an impcom expcom 3adant3 simplr3 pfxccatin12 elfzelz
+      ex wdc ad2antll zdcle syl2anc 2if2dc ) AFUAZHZBXPHZIZDJEKLHZEJCBUBUCUDLZK
+      LHZIZABUELDEUFZUGLZECMNZAYDUGLZCDMNZBDCUHLECUHLZUFUGLZADCUFUGLBYIUILUELZU
+      JUJUKXSYCIZYFYHYGYJYKYEYLYFIZXSXTEJAUBUCZKLHZIYEYGUKXSYCYFULYMXTYOXSXTYBY
+      FUMYLYFYOXSYCYFYOOZXQYCYPOXRXQYNPHZYCYPFAUNZYBYQYPOXTYBYQYFYOYBYQIZYFIEPH
+      ZYQEYNMNZYOYBYTYQYFEYAUOUPYBYQYFUQYFUUAYSYFUUACYNEMGURUSQEYNUTVAVEQVBRSSV
+      FABDEFVCVDYLYFVGZYHTZXSDCEKLHZECYAKLHZIYEYJUKXSYCUUBYHVHUUCUUDUUEYLUUBYHU
+      UDYLYHUUDOZUUBXSYCUUFXQYCUUFOZXRXQYQUUGYRYQCPHZUUGCYNPGVIYCUUHUUFXTUUHUUF
+      OZYBXTDPHZYTDEMNZTZUUIDEUTZUULUUHYHUUDUULUUHIZYHICVJHZEVJHZDVJHZTZYHUUKIU
+      UDUUNUURYHUUNUUOUUPUUQUUHUUOUULCVKZQUULUUPUUHYTUUJUUPUUKEVKZVLRUULUUQUUHU
+      UJYTUUQUUKDVKZVMRVQRUUNUUKYHUUJYTUUKUUHVNVODCEVPVRVEVSRVTWAWBRSWCWDYLUUBY
+      HUUEYLUUBUUEYHXSYCUUBUUEOZXQYCUVBOXRXQYQYCUVBYRYBYQUVBOZXTYBYTYAPHZEYAMNZ
+      TZUVCEYAUTZUVFYQUUBUUEUVFYQUUBIZIECYAYQUUOUVFUUBYQCYNVJGYNVKWEZWFUVFYAVJH
+      ZUVHUVDYTUVJUVEYAVKVLZRUVFUUPUVHYTUVDUUPUVEUUTVMZRUVFYQUUBCEMNZYTUVDYQUUB
+      UVMOZOUVEYQUUHYTUVNYNCPCYNGWGVIZYTUUHUVNYTUUHIZUUBCEWINZUVMUVPUVQUUBUUHUU
+      OUUPUVQUUBWHYTUUSUUTCEWJZWKWLUUHCWMHZEWMHZUVQUVMOZYTCWNZEWNZCEWOZWKWPXJWQ
+      VMWRYTUVDUVEUVHVNWSWTVSQVBRSXAWDVFABCDEFGXBVDYLUUBYHVGZTZXSDJCKLHZUUEIYEY
+      KUKXSYCUUBUWEVHUWFUWGUUEYLUUBUWEUWGYLUWEUWGOZUUBXSYCUWHXQYCUWHOXRXQYQYCUW
+      HYRXTYQUWHOYBYQUUHXTUWHUVOXTUULUUHUWHOZUUMUUJYTUWIUUKUUHUUJYTIZUWHUUHUWJI
+      ZUWEDCWINZUWGUWKUWLUWEUWJUUQUUOUWLUWEWHUUHUUJUUQYTUVARUUSDCWJWKWLUWJUUHUW
+      LUWGOZUUJUUHUWMOYTUUJUUHUWLUWGUUJUUHIZUWLIUUJUUHDCMNZUWGUUJUUHUWLULUUJUUH
+      UWLUQUWNUWLUWOUUJDWMHUVSUWLUWOOUUHDWNUWBDCWOXCSDCUTVAVERXDWPXEXFVSWQRVBRS
+      WCWDYLUUBUWEUUEYLUUBUUEUWEYCXSUVBYBXSUVBOZXTYBUVFUWPUVGXSUVFUVBXQUVFUVBOZ
+      XRXQYQUWQYRYQUUHUWQUVOUUHUVFUVBUUHUVFIZUUBUVQUUEUUHUUOUUPUUBUVQWHUVFUUSUV
+      LUUOUUPIUVQUUBUVRWLXCUWRUVQUUEUWRUVQIZUUOUVJUUPTZUVMUVEIUUEUWRUWTUVQUWRUU
+      OUVJUUPUUHUUOUVFUUSRUVFUVJUUHUVKQUVFUUPUUHUVLQVQRUWSUVMUVEUWRUVQUVMUUHUVS
+      UVTUWAUVFUWBYTUVDUVTUVEUWCVMUWDXCSYTUVDUVEUUHUVQXGVFECYAVPVRXJWPXJVSWBRVT
+      VSQXDXAWDVFABCDEFGXHVDYLUUPUUOYFXKYBUUPXSXTEJYAXIXLXQUUOXRYCXQYQUUOYRUVIW
+      BUPZECXMXNYLUUBIUUOUUQYHXKYLUUOUUBUXARYLUUQUUBXTUUQXSYBDJEXIWFRCDXMXNXOXJ
+      $.
+
+    $( The subword of a concatenation of two words as concatenation of subwords
+       of the two concatenated words.  (Contributed by Alexander van der
+       Vekens, 29-May-2018.) $)
+    swrdccat $p |- ( ( A e. Word V /\ B e. Word V )
+              -> ( ( M e. ( 0 ... N ) /\ N e. ( 0 ... ( L + ( # ` B ) ) ) )
+                  -> ( ( A ++ B ) substr <. M , N >. )
+                     = ( ( A substr <. M , if ( N <_ L , N , L ) >. ) ++
+                         ( B substr <. if ( 0 <_ ( M - L ) , ( M - L ) , 0 ) ,
+                                                        ( N - L ) >. ) ) ) ) $=
+      ( wcel wa cc0 co cconcat csubstr cle wbr wceq wi adantr c0 adantl cfz cfv
+      cword chash caddc cop cif cmin cpfx pfxccat3 lencl eqcomi eleq1i elfz2nn0
+      imp cn0 w3a iftrue opeq2d oveq2d cz simprll nn0zd simplrr zsubcld sylancr
+      wdc 0z zdcle wn exmiddc opeq1d simpr nn0z zsubcl sylan jca sylan2 anim12i
+      wo 3anass sylibr ad2antrl nn0re subge0 adantlr simplr simpll letr syl3anc
+      cr expcomd sylbid com23 syl2an impcom 3jca lesub1 syl mpbid swrdlend sylc
+      wb eqtrd iffalse 0zd suble0 biimpar sylan9eq jaoi oveq12d swrdclg ccatrid
+      ex mpcom 3ad2ant2 simpl 3anim123i 3adant2 biimprd ccatlid 3ad2ant1 biimpd
+      3expb 3syl con3dimp simprlr zltnle syl2anr sylbird nn0sub2 3adant3 pfxval
+      clt ltle syl2anc eqtr4d ad2antll 2if2dc sylbi exp32 com12 com13 ) AFUCZHZ
+      BUUDHZIZDJEUAKHZEJCBUDUBUEKUAKHZIZABLKDEUFZMKZADECNOZECUGZUFZMKZBJDCUHKZN
+      OZUUQJUGZECUHKZUFZMKZLKZPUUGUUJIUULUUMAUUKMKZCDNOZBUUQUUTUFZMKZADCUFZMKZB
+      UUTUIKZLKZUGUGZUVCUUGUUJUULUVLPABCDEFGUJUOUUGUUJUVCUVLPZAUDUBZUPHZUUGUUJU
+      VMQZUUEUVOUUFFAUKRUVOCUPHZUUGUVPQUVNCUPCUVNGULUMUUJUUGUVQUVMUUHUUGUVQUVMQ
+      ZQZUUIUUHDUPHZEUPHZDENOZUQUVSDEUNUVTUWAUVSUWBUUGUVTUWAIZUVRUUGUWCUVQUVMUU
+      GUWCUVQIZIZUUMUVEUVDUVGUVKUVCUWEUUMIZUVCUVDSLKZUVDUWFUUPUVDUVBSLUWFUUOUUK
+      AMUWFUUNEDUUMUUNEPUWEUUMECURTUSUTUURVGZUWFUVBSPZUWFJVAHZUUQVAHZUWHVHUWFDC
+      UWFDUWEUVTUUMUUGUVTUWAUVQVBZRVCUWFCUUGUWCUVQUUMVDVCVEJUUQVIVFUWHUURUURVJZ
+      VTUWFUWIQZUURVKUURUWNUWMUURUWFUWIUURUWFIZUVBUVGSUURUVBUVGPUWFUURUVAUVFBMU
+      URUUSUUQUUTUURUUQJURVLZUTRUWOUUFUWKUUTVAHZUQZUUTUUQNOZUVGSPUWEUWRUURUUMUW
+      EUUFUWKUWQIZIUWRUUGUUFUWDUWTUUEUUFVMUVQUWCCVAHZUWTCVNZUWCUXAIUWKUWQUWCDVA
+      HZUXAUWKUVTUXCUWADVNRZDCVOVPUWCEVAHZUXAUWQUWAUXEUVTEVNTZECVOZVPVQVRVSUUFU
+      WKUWQWAWBZWCUWOEDNOZUWSUWFUURUXIUWEUUMUURUXIQZUWDUUMUXJQZUUGUWCDWKHZEWKHZ
+      IZCWKHZUXKUVQUVTUXLUWAUXMDWDZEWDZVSCWDZUXNUXOIZUURUUMUXIUXSUURUVEUUMUXIQU
+      XLUXOUURUVEXCZUXMDCWEZWFUXSUUMUVEUXIUXSUXMUXOUXLUUMUVEIUXIQUXLUXMUXOWGUXN
+      UXOVMUXLUXMUXOWHECDWIWJWLWMWNWOTUOWPUWOUXMUXLUXOUQZUXIUWSXCUWEUYBUURUUMUW
+      DUYBUUGUWDUXMUXLUXOUWCUXMUVQUWAUXMUVTUXQTZRUWCUXLUVQUVTUXLUWAUXPRZRUVQUXO
+      UWCUXRTWQTWCEDCWRWSWTUUQUUTFBXAXBXDXNUWMUWFUWIUWMUWFUVBBJUUTUFZMKZSUWMUVA
+      UYEBMUWMUUSJUUTUURUUQJXEZVLUTUWFUUFUWJUWQUQUUTJNOZUYFSPUWFUUFUWJUWQUWEUUF
+      UUMUUEUUFUWDWGZRUWFXFUWEUWQUUMUWDUWQUUGUWCUXEUXAUWQUVQUXFUXBUXGWOTRWQUWEU
+      YHUUMUWEUXMUXOIZUYHUUMXCUWDUYJUUGUWCUXMUVQUXOUYCUXRVSTECXGWSXHJUUTFBXAXBX
+      IXNXJWSXOXKUWEUWGUVDPZUUMUWEUVDUUDHZUYKUWEUUEUXCUXEUYLUUEUUFUWDWHUWEDUWLV
+      CZUWCUXEUUGUVQUXFWCZFADEXLWJFUVDXMWSRXDUWEUUMVJZUVEUQZUVCSUVGLKZUVGUYPUUP
+      SUVBUVGLUYPUUPUVISUYPUUOUVHAMUYPUUNCDUYOUWEUUNCPZUVEUUMECXEZXPUSUTUWEUVEU
+      VISPZUYOUWEUVEUYTUWEUUEUXCUXAUQZUVEUYTQUUGUWCUVQVUAUUGUUEUWCUXCUVQUXAUUEU
+      UFXQUXDUXBXRYDDCFAXAWSUOXSXDUYPUVAUVFBMUYPUURUVAUVFPUWEUVEUURUYOUWEUVEUUR
+      UWDUVEUURQUUGUWDUURUVEUWCUXLUXOUXTUVQUYDUXRUYAWOXTTUOXSUWPWSUTXKUWEUYOUYQ
+      UVGPZUVEUWEUWRUVGUUDHVUBUXHFBUUQUUTXLFUVGYAYEYBXDUWEUYOUVEVJZUQZUUPUVIUVB
+      UVJLVUDUUOUVHAMVUDUUNCDUYOUWEUYRVUCUYSXPUSUTVUDUVBUYFUVJVUDUVAUYEBMVUDUUS
+      JUUTVUDUWMUUSJPUWEVUCUWMUYOUWEUURUVEUWEUURUVEUWDUXTUUGUVTUVQUXTUWAUVTUXLU
+      XOUXTUVQUXPUXRUYAWOWFTYCYFXSUYGWSVLUTVUDUUFUUTUPHZUVJUYFPUWEUYOUUFVUCUYIY
+      BUWEUYOVUEVUCUWEUYOIZUVQUWACENOZVUEUUGUWCUVQUYOVDZUWEUWAUYOUUGUVTUWAUVQYG
+      RUWEUYOVUGUWDUYOVUGQUUGUWDUYOCEYNOZVUGUVQUXAUXEVUIUYOXCUWCUXBUXFCEYHYIUVQ
+      UXOUXMVUIVUGQUWCUXRUYCCEYOYIYJTUOCEYKWJYLBUUTUUDYMYPYQXKUWEUXEUXAUUMVGUYN
+      UVQUXAUUGUWCUXBYRECVIYPVUFUXAUXCUVEVGVUFCVUHVCUWEUXCUYOUYMRCDVIYPYSUUAUUB
+      YLYTRUUCYTXOUOYQXN $.
+
+    $( A prefix of a concatenation being a prefix of the first concatenated
+       word.  (Contributed by AV, 10-May-2020.) $)
+    pfxccatpfx1 $p |- ( ( A e. Word V /\ B e. Word V /\ N e. ( 0 ... L ) )
+                         -> ( ( A ++ B ) prefix N ) = ( A prefix N ) ) $=
+      ( cword wcel cc0 cfz co w3a csubstr cpfx wa wceq syl jca 3ad2ant3 pfxval
+      cconcat cop chash cfv 3simpa cn0 elfznn0 oveq2i eleq2i biimpi swrdccatin1
+      0elfz sylc ccatcl 3adant3 sylan2 3adant2 3eqtr4d ) AEGZHZBUSHZDICJKZHZLZA
+      BUAKZIDUBZMKZAVFMKZVEDNKZADNKZVDUTVAOIIDJKHZDIAUCUDZJKZHZOZVGVHPUTVAVCUEV
+      CUTVOVAVCVKVNVCDUFHZVKDCUGZDULQVCVNVBVMDCVLIJFUHUIUJRSABIDEUKUMVDVEUSHZVP
+      OVIVGPVDVRVPUTVAVRVCEABUNUOVCUTVPVAVQSRVEDUSTQUTVCVJVHPZVAVCUTVPVSVQADUST
+      UPUQUR $.
+
+    ${
+      pfxccatpfx2.m $e |- M = ( # ` B ) $.
+      $( A prefix of a concatenation of two words being the first word
+         concatenated with a prefix of the second word.  (Contributed by AV,
+         10-May-2020.) $)
+      pfxccatpfx2 $p |- ( ( A e. Word V /\ B e. Word V
+                            /\ N e. ( ( L + 1 ) ... ( L + M ) ) )
+              -> ( ( A ++ B ) prefix N ) = ( A ++ ( B prefix ( N - L ) ) ) ) $=
+        ( wcel caddc co cfz cconcat cpfx cc0 cop csubstr cn0 wceq cfv cword w3a
+        c1 cmin ccatcl 3adant3 cuz chash lencl eqeltrid elfzuz peano2nn0 anim1i
+        wa syl2an 3adant2 eluznn0 pfxval syl2anc 3simpa 3ad2ant1 0elfz cz nn0zd
+        syl wss adantr uzid peano2uz fzss1 eqcomi oveq2i sseqtrrdi sseld 3impia
+        4syl pfxccatin12 sylc opeq2i mpdan pfxid eqtr3d eqtrid oveq1d 3eqtrd
+        jca ) AFUAZIZBWGIZECUCJKZCDJKZLKZIZUBZABMKZENKZWOOEPQKZAOCPZQKZBECUDKNK
+        ZMKZAWTMKWNWOWGIZERIZWPWQSWHWIXBWMFABUEUFWNWJRIZEWJUGTIZUNZXCWHWMXFWIWH
+        CRIZXEXFWMWHCAUHTZRGFAUIZUJZEWJWKUKXGXDXECULUMUOUPEWJUQVEWOEWGURUSWNWHW
+        IUNZOOCLKIZECCBUHTZJKZLKZIZUNWQXASWHWIWMUTWNXLXPWNXGXLWHWIXGWMXJVACVBVE
+        WHWIWMXPXKWLXOEXKWLCWKLKZXOXKCVCIZCCUGTZIWJXSIWLXQVFWHXRWIWHCXHVCGWHXHX
+        IVDUJVGCVHCCVIWJCWKVJVPXNWKCLXMDCJDXMHVKVLVLVMVNVOWFABCOEFGVQVRWNWSAWTM
+        WHWIWSASWMWHWSAOXHPZQKZAWRXTAQCXHOGVSVLWHAXHNKZYAAWHXHRIYBYASXIAXHWGURV
+        TFAWAWBWCVAWDWE $.
+
+      $( A prefix of a concatenation is either a prefix of the first
+         concatenated word or a concatenation of the first word with a prefix
+         of the second word.  (Contributed by Alexander van der Vekens,
+         31-Mar-2018.)  (Revised by AV, 10-May-2020.) $)
+      pfxccat3a $p |- ( ( A e. Word V /\ B e. Word V )
+                        -> ( N e. ( 0 ... ( L + M ) )
+                    -> ( ( A ++ B ) prefix N ) = if ( N <_ L , ( A prefix N ) ,
+                                       ( A ++ ( B prefix ( N - L ) ) ) ) ) ) $=
+        ( wcel wa co cfz wbr wceq cz cn0 adantl adantr syl ex cword cc0 cconcat
+        caddc cpfx cle cmin cif wdc elfznn0 nn0zd chash cfv lencl zdcle syl2anc
+        eqeltrid wn wo wi exmiddc w3a simprl elfz2nn0 syl3anbrc df-3an sylanbrc
+        simpl pfxccatpfx1 iftrue eqtr4d eleq1i clt nn0ltp1le nn0z zltnle syl2an
+        c1 wb bitr3d 3ad2antr1 anim1ci 3ad2ant1 peano2nn0 3ad2ant2 elfz syl3anc
+        simpr3 mpbird sylbird sylbir biimtrid imp impcom pfxccatpfx2 jaoi mpcom
+        iffalse ) AFUAZIZBWSIZJZEUBCDUDKZLKIZABUCKEUEKZECUFMZAEUEKZABECUGKUEKUC
+        KZUHZNZXFUIZXBXDJZXJXLEOIZCOIZXKXLEXDEPIZXBEXCUJQZUKXLCXBCPIZXDWTXQXAWT
+        CAULUMZPGFAUNZUQRRZUKECUOUPXKXFXFURZUSXLXJUTZXFVAXFYBYAXFXLXJXFXLJZXEXG
+        XIYCWTXAEUBCLKIZVBZXEXGNYCXBYDYEXFXBXDVCYCXOXQXFYDXLXOXFXPQXLXQXFXTQXFX
+        LVHECVDVEWTXAYDVFVGABCEFGVISXFXIXGNXLXFXGXHVJRVKTYAXLXJYAXLJZXEXHXIYFWT
+        XAECVRUDKZXCLKIZVBZXEXHNYFXBYHYIYAXBXDVCXLYAYHXBXDYAYHUTZXDXOXCPIZEXCUF
+        MZVBZXBYJEXCVDWTYMYJUTZXAWTXRPIZYNXSYOXQYNCXRPGVLXQYMYJXQYMJZYAYGEUFMZY
+        HXQYKXOYQYAVSYLXQXOJCEVMMZYQYACEVNXQXNXMYRYAVSXOCVOEVOZCEVPVQVTWAYPYQYH
+        YPYQJZYHYQYLJZYPYLYQXQXOYKYLWHWBYTXMYGOIZXCOIZYHUUAVSYPXMYQYMXMXQXOYKXM
+        YLYSWCQRYPUUBYQXQUUBYMXQYGCWDUKRRYPUUCYQYMUUCXQYKXOUUCYLXCVOWEQREYGXCWF
+        WGWITWJTWKSRWLWMWNWTXAYHVFVGABCDEFGHWOSYAXIXHNXLXFXGXHWRRVKTWPSWQT $.
+    $}
+
+    $( Lemma for ~ swrdccat3b .  (Contributed by AV, 30-May-2018.) $)
+    swrdccat3blem $p |- ( ( ( ( A e. Word V /\ B e. Word V )
+              /\ M e. ( 0 ... ( L + ( # ` B ) ) ) ) /\ ( L + ( # ` B ) ) <_ L )
+                    -> if ( L <_ M , ( B substr <. ( M - L ) , ( # ` B ) >. ) ,
+                                     ( ( A substr <. M , L >. ) ++ B ) )
+                                = ( A substr <. M , ( L + ( # ` B ) ) >. ) ) $=
+      ( wcel wa cc0 co cle cop csubstr wceq wi cn0 syl c0 oveq2d adantr cfv cfz
+      cword chash caddc wbr cconcat cif wn lencl nn0le0eq0 biimpd adantl cfn wb
+      cmin wrdfin fihasheq0 imp eqcomi eleq1i cr nn0re w3a elfz2nn0 recn breq2d
+      addridd anim1i ancoms letri3 biimprd exp4b sylbid impcom 3adant2 biimtrid
+      com23 com3l com12 sylbi cvv cz swrd00g mp2an eqeltrid nn0zd mpdan eqtr4id
+      0z nn0cn subidd opeq1d opeq2d 3eqtr4d oveq1 opeq1 eqeq12d syl5ibrcom syld
+      simpl elfzelz swrdclg syl3anc ccatrid cc addrid eqcomd eqtrd zdcle syl2an
+      0ex wdc ifeqdadc ex ad3antrrr oveq2 simpr oveq12d ifeq12d imbi12d adantll
+      eleq2d mpbird sylbir nn0red leaddle0 biimtrdi wo ad3antlr sylancl exmiddc
+      opeq2 pm2.24 mpjaod ) AEUCZGZBYPGZHZDICBUDUAZUEJZUBJZGZHZUUACKUFZHZYTIKUF
+      ZCDKUFZBDCUPJZYTLZMJZADCLZMJZBUGJZUHZADUUALZMJZNZUUGUIZUUDUUGUUROZUUEYSUU
+      CUUTYSUUGUUCUURYSUUGYTINZUUCUUROZYRUUGUVAOZYQYRYTPGZUVCEBUJZUVDUUGUVAYTUK
+      ULQUMYSUVAUVBYSUVAHZBRNZUVBYSUVAUVGYRUVAUVGOYQYRUVAUVGYRBUNGUVAUVGUOEBUQB
+      URQULUMUSUVFUVGHUVBDICIUEJZUBJZGZUUHRUUIILZMJZUUMRUGJZUHZADUVHLZMJZNZOZYQ
+      UVRYRUVAUVGYQUVJUVQYQUVJHZUUHUVLUVMUVPUVSUUHUVLUVPNZUVSUUHDCNZUVTYQUVJUUH
+      UWAOZYQAUDUAZPGZUVJUWBOZEAUJZUWDCPGZUWEUWCCPCUWCFUTVAZUWGCVBGZUWECVCZUVJD
+      PGZUVHPGZDUVHKUFZVDZUWIUWBDUVHVEUWNUWIUWBUWKUWMUWIUWBOZUWLUWMUWKUWOUWIUWM
+      UWKUWBUWIUWMDCKUFZUWKUWBOUWIUVHCDKUWICCVFVHVGUWIUWKUWPUWBUWIUWKUWPUUHUWAU
+      WIUWKHZUWAUWPUUHHZUWQDVBGZUWIHZUWAUWRUOUWKUWIUWTUWKUWSUWIDVCVIVJDCVKQVLVM
+      VRVNVSVOVPVTVQQWAQUSYQUWAUVTOUVJYQUVTUWARCCUPJZILZMJZACUVHLZMJZNYQRIILZMJ
+      ZACCLZMJZUXCUXEYQUXGRUXIRWBGIWCGZUXGRNXLWJRWBIWDWEYQCWCGZUXIRNYQCYQCUWCPF
+      UWFWFZWGZAYPCWDWHWIYQUWGUXCUXGNUXLUWGUXBUXFRMUWGUXAIIUWGCCWKZWLWMSQYQUWGU
+      XEUXINUXLUWGUXDUXHAMUWGUVHCCUWGCUXNVHWNSQWOUWAUVLUXCUVPUXEUWAUVKUXBRMUWAU
+      UIUXAIDCCUPWPWMSUWAUVOUXDAMDCUVHWQSWRWSTWTUSUVSUVMUVPNUUHUIUVSUVMUUMUVPUV
+      SUUMYPGZUVMUUMNUVSYQDWCGZUXKUXOYQUVJXAUVJUXPYQDIUVHXBZUMYQUXKUVJUXMTEADCX
+      CXDEUUMXEQYQUUMUVPNUVJYQUULUVOAMYQCUVHDYQCXFGZCUVHNYQUWDUXRUWFUWDUWGUXRUW
+      HUXNWAQUXRUVHCCXGXHQWNSTXITYQUXKUXPUUHXMUVJUXMUXQCDXJXKXNXOXPUVAUVGUVBUVR
+      UOYSUVAUVGHZUUCUVJUURUVQUVAUUCUVJUOUVGUVAUUBUVIDUVAUUAUVHIUBYTICUEXQZSYCT
+      UXSUUOUVNUUQUVPUXSUUHUUKUVLUUNUVMUXSBRUUJUVKMUVAUVGXRUVAUUJUVKNUVGYTIUUIY
+      MTXSUVGUUNUVMNUVABRUUMUGXQUMXTUVAUUQUVPNUVGUVAUUPUVOAMUVAUUAUVHDUXTWNSTWR
+      YAYBYDWHXOWTVRUSTUUDUUEUUSUUROZYSUUEUYAOUUCYSUUEUUGUYAYQUWIYTVBGUUEUUGUOY
+      RYQUWDUWIUWFUWDUWGUWICUWCPFVAUWJYEQYRYTUVEYFCYTYGXKUUGUURYNYHTUSUUFUUGXMZ
+      UUGUUSYIUUFYTWCGUXJUYBUUFYTYRUVDYQUUCUUEUVEYJWGWJYTIXJYKUUGYLQYO $.
+
+    $( A suffix of a concatenation is either a suffix of the second
+       concatenated word or a concatenation of a suffix of the first word with
+       the second word.  (Contributed by Alexander van der Vekens,
+       31-Mar-2018.)  (Revised by Alexander van der Vekens, 30-May-2018.)
+       (Proof shortened by AV, 14-Oct-2022.) $)
+    swrdccat3b $p |- ( ( A e. Word V /\ B e. Word V )
+                 -> ( M e. ( 0 ... ( L + ( # ` B ) ) )
+                      -> ( ( A ++ B ) substr <. M , ( L + ( # ` B ) ) >. )
+         = if ( L <_ M , ( B substr <. ( M - L ) , ( # ` B ) >. ) ,
+                         ( ( A substr <. M , L >. ) ++ B ) ) ) ) $=
+      ( wcel wa cc0 co cconcat cop csubstr cif wceq cpfx adantr 3ad2ant1 oveq2d
+      cc cword chash cfv caddc cfz cle wbr cmin simpl simpr elfzubelfz pfxccat3
+      adantl imp syl12anc swrdccat3blem w3a iftrue 3ad2ant3 lencl nn0cnd eqcomi
+      wn eleq1i pncan2 sylanb syl2an eqcomd opeq2d eqtrd iffalse pfxid ad2antlr
+      eqtr2d cz wdc elfzelzd cn0 eqeltrid ad2antrr nn0zd syl2anc elfznn0 2if2dc
+      zdcle eqtr4d ex ) AEUAZGZBWHGZHZDICBUBUCZUDJZUEJZGZABKJDWMLZMJZCDUFUGZBDC
+      UHJZWLLZMJZADCLMJZBKJZNZOWKWOHZWQWMCUFUGZAWPMJZWRBWSWMCUHJZLZMJZXBBXHPJZK
+      JZNNZXDXEWKWOWMWNGZWQXMOZWKWOUIWKWOUJWOXNWKDIWMUKUMZWKWOXNHXOABCDWMEFULUN
+      UOXEXFWRXGXJXLXDABCDEFUPXEXFVCZWRUQZXDXAXJWRXEXDXAOXQWRXAXCURUSXRWTXIBMXR
+      WLXHWSXEXQWLXHOZWRWKXSWOWKXHWLWIAUBUCZTGZWLTGZXHWLOZWJWIXTEAUTZVAWJWLEBUT
+      VAYACTGYBYCXTCTCXTFVBVDCWLVEVFVGZVHQRVISVJXEXQWRVCZUQZXDXCXLYFXEXDXCOXQWR
+      XAXCVKUSYGBXKXBKYGXKBWLPJZBYGXHWLBPXEXQYCYFWKYCWOYEQRSXEXQYHBOZYFWJYIWIWO
+      EBVLVMRVNSVJXEWMVOGCVOGZXFVPXEWMIWMXPVQXECWICVRGWJWOWICXTVRFYDVSVTWAZWMCW
+      EWBXEXQHZYJDVOGWRVPXEYJXQYKQYLDWODVRGWKXQDWMWCVMWACDWEWBWDWFWG $.
+  $}
+
+  $( A prefix of a concatenation of length of the first concatenated word is
+     the first word itself.  (Contributed by Alexander van der Vekens,
+     20-Sep-2018.)  (Revised by AV, 10-May-2020.) $)
+  pfxccatid $p |- ( ( A e. Word V /\ B e. Word V /\ N = ( # ` A ) )
+                     -> ( ( A ++ B ) prefix N ) = A ) $=
+    ( cword wcel chash cfv wceq w3a cconcat co cpfx cc0 cfz cn0 nn0fz0 3ad2ant1
+    lencl 3ad2ant3 sylib wb eleq1 mpbird eqid pfxccatpfx1 syld3an3 oveq2 3eqtrd
+    pfxid ) ADEZFZBUKFZCAGHZIZJZABKLCMLZACMLZAUNMLZAULUMUOCNUNOLZFZUQURIUPVAUNU
+    TFZULUMVBUOULUNPFVBDASUNQUARUOULVAVBUBUMCUNUTUCTUDABUNCDUNUEUFUGUOULURUSIUM
+    CUNAMUHTULUMUSAIUODAUJRUI $.
+
+  $( A word is a prefix of a word with length greater by 1 than the first word
+     iff the second word is the first word concatenated with the last symbol of
+     the second word.  (Contributed by AV, 24-Oct-2018.)  (Revised by AV,
+     10-May-2020.) $)
+  ccats1pfxeqbi $p |- ( ( W e. Word V /\ U e. Word V
+                           /\ ( # ` U ) = ( ( # ` W ) + 1 ) )
+                         -> ( W = ( U prefix ( # ` W ) )
+                              <-> U = ( W ++ <" ( lastS ` U ) "> ) ) ) $=
+    ( cword wcel chash cfv c1 caddc co wceq w3a cpfx clsw cs1 ccats1pfxeq simp1
+    cconcat cn eqcomd wa cn0 lencl nn0p1nn syl 3ad2ant1 lswlgt0cl syl2anc s1cld
+    3simpc eqidd pfxccatid syl3anc oveq1 sylan9eq ex impbid ) CBDZEZAUREZAFGCFG
+    ZHIJZKZLZCAVAMJZKZACANGZOZRJZKZABCPVDVJVFVDVJCVIVAMJZVEVDUSVHUREZVAVAKZCVKK
+    USUTVCQVDVGBVDVBSEZUTVCUAVGBEUSUTVNVCUSVAUBEVNBCUCVAUDUEUFUSUTVCUJVBBAUGUHU
+    IVDVAUKUSVLVMLVKCCVHVABULTUMVJVEVKAVIVAMUNTUOUPUQ $.
+
+  ${
+    swrdccatind.l $e |- ( ph -> ( # ` A ) = L ) $.
+    swrdccatind.w $e |- ( ph -> ( A e. Word V /\ B e. Word V ) ) $.
+    ${
+      swrdccatin1d.1 $e |- ( ph -> M e. ( 0 ... N ) ) $.
+      swrdccatin1d.2 $e |- ( ph -> N e. ( 0 ... L ) ) $.
+      $( The subword of a concatenation of two words within the first of the
+         concatenated words.  (Contributed by AV, 31-May-2018.)  (Revised by
+         Mario Carneiro/AV, 21-Oct-2018.) $)
+      swrdccatin1d $p |- ( ph -> ( ( A ++ B ) substr <. M , N >. )
+                                 = ( A substr <. M , N >. ) ) $=
+        ( cword wcel wa cc0 cfz co chash csubstr wceq cfv cconcat cop imbitrrid
+        oveq2 eleq2d mpcom jca swrdccatin1 sylc ) ABGLZMCUKMNEOFPQMZFOBRUAZPQZM
+        ZNBCUBQEFUCZSQBUPSQTIAULUOJUMDTZAUOHAUOUQFODPQZMKUQUNURFUMDOPUEUFUDUGUH
+        BCEFGUIUJ $.
+    $}
+
+    ${
+      swrdccatin2d.1 $e |- ( ph -> M e. ( L ... N ) ) $.
+      swrdccatin2d.2 $e |- ( ph -> N e. ( L ... ( L + ( # ` B ) ) ) ) $.
+      $( The subword of a concatenation of two words within the second of the
+         concatenated words.  (Contributed by AV, 31-May-2018.)  (Revised by
+         Mario Carneiro/AV, 21-Oct-2018.) $)
+      swrdccatin2d $p |- ( ph -> ( ( A ++ B ) substr <. M , N >. )
+                                = ( B substr <. ( M - L ) , ( N - L ) >. ) ) $=
+        ( wceq co cop csubstr cmin wcel wa cfz caddc chash cconcat cword adantl
+        cfv jca wb oveq1 eleq2d id oveq12d anbi12d adantr mpbird ex swrdccatin2
+        eqid imp syl6 oveq2 opeq12d oveq2d eqeq2d sylibd mpcom ) BUAUEZDLZABCUB
+        MEFNOMZCEDPMZFDPMZNZOMZLZHVGAVHCEVFPMZFVFPMZNZOMZLZVMVGABGUCZQCVSQRZEVF
+        FSMZQZFVFVFCUAUEZTMZSMZQZRZRZVRVGAWHVGARZVTWGAVTVGIUDWIWGEDFSMZQZFDDWCT
+        MZSMZQZRZAWOVGAWKWNJKUFUDVGWGWOUGAVGWBWKWFWNVGWAWJEVFDFSUHUIVGWEWMFVGVF
+        DWDWLSVGUJVFDWCTUHUKUIULUMUNUFUOVTWGVRBCVFEFGVFUQUPURUSVGVQVLVHVGVPVKCO
+        VGVNVIVOVJVFDEPUTVFDFPUTVAVBVCVDVE $.
+    $}
+
+    ${
+      pfxccatin12d.m $e |- ( ph -> M e. ( 0 ... L ) ) $.
+      pfxccatin12d.n $e |- ( ph -> N e. ( L ... ( L + ( # ` B ) ) ) ) $.
+      $( The subword of a concatenation of two words within both of the
+         concatenated words.  (Contributed by AV, 31-May-2018.)  (Revised by
+         AV, 10-May-2020.) $)
+      pfxccatin12d $p |- ( ph -> ( ( A ++ B ) substr <. M , N >. )
+                  = ( ( A substr <. M , L >. ) ++ ( B prefix ( N - L ) ) ) ) $=
+        ( cconcat co cop csubstr cmin cpfx wcel cfz oveq2d chash cword wa caddc
+        cfv cc0 wceq eleq2d oveq1d oveq12d anbi12d mpbir2and pfxccatin12 opeq2d
+        eqid sylc eqtrd ) ABCLMEFNOMZBEBUAUEZNZOMZCFUSPMZQMZLMZBEDNZOMZCFDPMZQM
+        ZLMABGUBZRCVIRUCEUFUSSMZRZFUSUSCUAUEZUDMZSMZRZUCZURVDUGIAVPEUFDSMZRZFDD
+        VLUDMZSMZRZJKAVKVRVOWAAVJVQEAUSDUFSHTUHAVNVTFAUSDVMVSSHAUSDVLUDHUIUJUHU
+        KULBCUSEFGUSUOUMUPAVAVFVCVHLAUTVEBOAUSDEHUNTAVBVGCQAUSDFPHTTUJUQ $.
+    $}
+  $}
+
+  ${
+    $d S s u $.  $d U u x $.  $d V s u x $.  $d W s u x $.  $d X s u x $.
+    $( Lemma for ~ reuccatpfxs1 .  (Contributed by Alexander van der Vekens,
+       5-Oct-2018.)  (Revised by AV, 9-May-2020.) $)
+    reuccatpfxs1lem $p |- ( ( ( W e. Word V /\ U e. X )
+           /\ A. s e. V ( ( W ++ <" s "> ) e. X -> S = s )
+                /\ A. x e. X ( x e. Word V /\ ( # ` x ) = ( ( # ` W ) + 1 ) ) )
+                 -> ( W = ( U prefix ( # ` W ) ) -> U = ( W ++ <" S "> ) ) ) $=
+      ( vu wcel wa cv cs1 cconcat co wceq wi chash cfv adantl com23 cword caddc
+      wral c1 cpfx eleq1 fveqeq2 anbi12d rspcv wrex simpl adantr ccats1pfxeqrex
+      simprr syl3anc weq oveq2d eleq1d eqeq2 imbi12d id imp eqcomd s1eqd eqeq2d
+      s1eq biimpd ex com13 sylbid com3l sylan9r rexlimdva syld 3imp ) EDUAZIZCF
+      IZJZEGKZLZMNZFIZBVTOZPZGDUCZAKZVPIZWGQREQRZUDUBNZOZJZAFUCZECWIUENOZCEBLZM
+      NZOZPZVSWMWFWRVSWMCVPIZCQRWJOZJZWFWRPZVRWMXAPVQWLXAACFWGCOWHWSWKWTWGCVPUF
+      WGCWJQUGUHUISVSXAXBVSXAJZWNWFWQXCWNCEHKZLZMNZOZHDUJZWFWQPZXCVQWSWTWNXHPVS
+      VQXAVQVRUKULXAWSVSWSWTUKSVSWSWTUNCDEHUMUOVSXHXIPZXAVRXJVQVRXGXIHDVRXDDIZJ
+      WFXGWQXKWFXFFIZBXDOZPZVRXGWQPZWEXNGXDDGHUPZWCXLWDXMXPWBXFFXPWAXEEMVTXDVFU
+      QURVTXDBUSUTUIXGVRXNWQXGVRXLXNWQPCXFFUFXNXLXGWQXNXLXOXNXLJZXGWQXQXFWPCXQX
+      EWOEMXQXDBXQBXDXNXLXMXNVAVBVCVDUQVEVGVHVIVJVKVLTVMSULVNTVHVNTVO $.
+  $}
+
+  ${
+    $d V u v x y $.  $d W u v x y $.  $d X u x y $.
+    reuccatpfxs1.1 $e |- F/_ v X $.
+    $( There is a unique word having the length of a given word increased by 1
+       with the given word as prefix if there is a unique symbol which extends
+       the given word.  (Contributed by Alexander van der Vekens, 6-Oct-2018.)
+       (Revised by AV, 21-Jan-2022.)  (Revised by AV, 13-Oct-2022.) $)
+    reuccatpfxs1 $p |- ( ( W e. Word V /\ A. x e. X ( x e. Word V
+                                           /\ ( # ` x ) = ( ( # ` W ) + 1 ) ) )
+                          -> ( E! v e. V ( W ++ <" v "> ) e. X
+                               -> E! x e. X W = ( x prefix ( # ` W ) ) ) ) $=
+      ( vy vu cv wcel chash cfv co wceq wa wral cs1 cconcat cpfx weq cword wreu
+      c1 caddc wi eleq1w fveqeq2 anbi12d cbvralvw wrex nfel2 s1eq oveq2d eleq1d
+      reu8nf nfralw nfan nfreuw wb simprl simpl ad2antrr anim1i simplrr simp-4r
+      nfv reuccatpfxs1lem syl3anc s1cl anim12i pfxccat1 syl sylan9eqr eqcomd ex
+      oveq1 impbid ralrimiva reu6i syl2anc exp31 rexlimd biimtrid sylan2b ) AIZ
+      CUAZJZWEKLDKLZUCUDMZNZOZAEPDWFJZGIZWFJZWMKLWINZOZGEPZDBIZQZRMZEJZBCUBZDWE
+      WHSMZNZAEUBZUEWKWPAGEAGTWGWNWJWOAGWFUFWEWMWIKUGUHUIXBXADHIZQZRMZEJZBHTUEH
+      CPZOZBCUJWLWQOZXEXAXIDWEQZRMZEJBHACBXHEFUKBXNEFUKBATZWTXNEXOWSXMDRWRWEULU
+      MUNAHTZXNXHEXPXMXGDRWEXFULUMUNUOXLXKXEBCWLWQBWLBVFWPBGEFWPBVFUPUQXDBAEFXD
+      BVFURXLWRCJZXKXEXLXQOZXKOZXAXDWEWTNZUSZAEPXEXRXAXJUTXSYAAEXSWEEJZOZXDXTYC
+      WLYBOXJWQXDXTUEXSWLYBXLWLXQXKWLWQVAZVBVCXRXAXJYBVDWLWQXQXKYBVEGWRWECDEHVG
+      VHYCXTXDYCXTOXCDXTYCXCWTWHSMZDWEWTWHSVPYCWLWSWFJZOZYEDNXRYGXKYBXLWLXQYFYD
+      WRCVIVJVBCDWSVKVLVMVNVOVQVRXDAEWTVSVTWAWBWCWD $.
+  $}
+
+  ${
+    $d V v x $.  $d W v x $.  $d X v x $.
+    $( There is a unique word having the length of a given word increased by 1
+       with the given word as prefix if there is a unique symbol which extends
+       the given word.  (Contributed by Alexander van der Vekens, 6-Oct-2018.)
+       (Revised by AV, 21-Jan-2022.)  (Revised by AV, 10-May-2022.)  (Proof
+       shortened by AV, 13-Oct-2022.) $)
+    reuccatpfxs1v $p |- ( ( W e. Word V /\ A. x e. X ( x e. Word V
+                                           /\ ( # ` x ) = ( ( # ` W ) + 1 ) ) )
+                          -> ( E! v e. V ( W ++ <" v "> ) e. X
+                               -> E! x e. X W = ( x prefix ( # ` W ) ) ) ) $=
+      ( nfcv reuccatpfxs1 ) ABCDEBEFG $.
   $}
 
 
@@ -193905,6 +194801,281 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Loop-free graphs
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  For a hypergraph, the property to be "loop-free" is expressed by
+  ` I : dom I --> E ` with ` E = { x e. ~P V | 2o ~<_ x } ` and
+  ` I = ( iEdg `` G ) `. ` E ` is the set of edges which connect at least two
+  vertices.
+
+$)
+
+  $( Lemma for ~ umgrislfupgrdom .  (Contributed by AV, 27-Jan-2021.) $)
+  umgrislfupgrenlem $p |- ( { x e. ~P V | ( x ~~ 1o \/ x ~~ 2o ) }
+                      i^i { x e. ~P V | 2o ~<_ x } )
+                        = { x e. ~P V | x ~~ 2o } $=
+    ( cv c1o cen wbr c2o wo cpw crab cdom wa inrab wn wi 1ndom2 domentr ex mtoi
+    cin orel1 syl impcom olc ensymb endom sylbir jca impbii rabbii eqtri ) ACZD
+    EFZULGEFZHZABIZJGULKFZAUPJTUOUQLZAUPJUNAUPJUOUQAUPMURUNAUPURUNUQUOUNUQUMNUO
+    UNOUQUMGDKFZPUQUMUSGULDQRSUMUNUAUBUCUNUOUQUNUMUDUNGULEFUQGULUEGULUFUGUHUIUJ
+    UK $.
+
+  ${
+    $d G x $.  $d V x $.
+    umgrislfupgr.v $e |- V = ( Vtx ` G ) $.
+    umgrislfupgr.i $e |- I = ( iEdg ` G ) $.
+    $( A multigraph is a loop-free pseudograph.  (Contributed by AV,
+       27-Jan-2021.) $)
+    umgrislfupgrdom $p |- ( G e. UMGraph <-> ( G e. UPGraph
+                         /\ I : dom I --> { x e. ~P V | 2o ~<_ x } ) ) $=
+      ( cumgr wcel cupgr cdm c2o cv cdom wbr crab wf wa cen a1i wb cpw umgrupgr
+      umgrfen id wss wi ensymb endom sylbir ss2rabi fssd syl jca c1o wo upgrfen
+      cin wceq umgrislfupgrenlem feq3 ax-mp sylbb1 sylan isumgren adantr mpbird
+      fin impbii ) BGHZBIHZCJZKALZMNZADUAZOZCPZQZVIVJVPBUBVIVKVLKRNZAVNOZCPZVPA
+      CBDEFUCVTVKVSVOCVTUDVSVOUEVTVRVMAVNVRVMUFVLVNHVRKVLRNVMKVLUGKVLUHUISUJSUK
+      ULUMVQVIVTVJVKVLUNRNVRUOAVNOZCPZVPVTACBDEFUPVKWAVOUQZCPZWBVPQVTVKWAVOCVGW
+      CVSURWDVTTADUSWCVSVKCUTVAVBVCVJVIVTTVPAICBDEFVDVEVFVH $.
+  $}
+
+  ${
+    $d A x $.  $d I x y $.  $d V x y $.  $d X y $.
+    lfuhgrnloopv.i $e |- I = ( iEdg ` G ) $.
+    lfuhgrnloopv.a $e |- A = dom I $.
+    lfuhgrnloopv.e $e |- E = { x e. ~P V | 2o ~<_ x } $.
+    $( An edge of a loop-free graph has at least two ends.  (Contributed by AV,
+       23-Feb-2021.) $)
+    lfgredg2dom $p |- ( ( I : A --> E /\ X e. A )
+                       -> 2o ~<_ ( I ` X ) ) $=
+      ( vy wf wcel wa cfv c2o cv cdom wbr breq2 cpw crab eqid feq23i ffvelcdmda
+      biimpi cbvrabv elrab2 simprbi syl ) BCELZGBMNGEOZPAQZRSZAFUAZUBZMZPULRSZU
+      KBUPGEUKBUPELBCBUPEBUCJUDUFUEUQULUOMURPKQZRSZURKULUOUPUSULPRTUNUTAKUOUMUS
+      PRTUGUHUIUJ $.
+
+    $d U x $.
+    $( A loop-free graph has no loops.  (Contributed by AV, 23-Feb-2021.) $)
+    lfgrnloopen $p |- ( I : A --> E -> { x e. A | ( I ` x ) ~~ 1o } = (/) ) $=
+      ( wf cv cfv c1o cen wbr crab nfcv c2o cdom ex wral wceq cpw nfrab1 nfcxfr
+      wn c0 nff wcel lfgredg2dom 1ndom2 domentr mtoi syl ralrimi rabeq0 sylibr
+      wa ) BCEJZAKZELZMNOZUFZABUAVBABPUGUBUSVCABABCEAEQABQACRUTSOZAFUCZPIVDAVEU
+      DUEUHUSUTBUIZVCUSVFURRVASOZVCABCDEFUTGHIUJVGVBRMSOZUKVGVBVHRVAMULTUMUNTUO
+      VBABUPUQ $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Edges as subsets of vertices of graphs
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d E x $.  $d I x $.
+    uhgredgiedgb.i $e |- I = ( iEdg ` G ) $.
+    $( In a hypergraph, a set is an edge iff it is an indexed edge.
+       (Contributed by AV, 17-Oct-2020.) $)
+    uhgredgiedgb $p |- ( G e. UHGraph -> ( E e. ( Edg ` G )
+                                         <-> E. x e. dom I E = ( I ` x ) ) ) $=
+      ( cuhgr wcel wfun cedg cfv cv wceq cdm wrex wb uhgrfun edgiedgbg mpdan )
+      CFGDHBCIJGBAKDJLADMNODCEPABCDFEQR $.
+  $}
+
+  $( A hypergraph has no edges iff its edge function is empty.  (Contributed by
+     AV, 21-Oct-2020.)  (Proof shortened by AV, 8-Dec-2021.) $)
+  uhgriedg0edg0 $p |- ( G e. UHGraph -> ( ( Edg ` G ) = (/)
+                                          <-> ( iEdg ` G ) = (/) ) ) $=
+    ( cuhgr wcel ciedg cfv wfun cedg c0 wceq wb eqid uhgrfun edg0iedg0g mpdan )
+    ABCADEZFAGEZHIOHIJOAOKZLPAOBQPKMN $.
+
+  ${
+    $d E x y $.  $d G y $.
+    $( An edge of a hypergraph is an inhabited subset of vertices.
+       (Contributed by AV, 28-Nov-2020.) $)
+    uhgredgm $p |- ( ( G e. UHGraph /\ E e. ( Edg ` G ) )
+                    -> ( E e. ~P ( Vtx ` G ) /\ E. x x e. E ) ) $=
+      ( vy cuhgr wcel cedg cfv wa cv wex cvtx cpw crab ciedg crn edgvalg uhgrfm
+      cdm eqid frnd eqsstrd sselda wceq eleq2 exbidv elrab sylib ) CEFZBCGHZFIB
+      AJZDJZFZAKZDCLHZMZNZFBUPFUKBFZAKZIUIUJUQBUIUJCOHZPUQCEQUIUTSUQUTAUTCUODUO
+      TUTTRUAUBUCUNUSDBUPULBUDUMURAULBUKUEUFUGUH $.
+  $}
+
+  ${
+    $d E x $.
+    $( An edge of a hypergraph is a subset of vertices.  (Contributed by AV,
+       26-Oct-2020.)  (Proof shortened by AV, 28-Nov-2020.) $)
+    edguhgr $p |- ( ( G e. UHGraph /\ E e. ( Edg ` G ) )
+                    -> E e. ~P ( Vtx ` G ) ) $=
+      ( vx cuhgr wcel cedg cfv wa cvtx cpw cv wex uhgredgm simpld ) BDEABFGEHAB
+      IGJECKAECLCABMN $.
+  $}
+
+  $( An edge of a hypergraph contains only vertices.  (Contributed by Alexander
+     van der Vekens, 18-Feb-2018.)  (Revised by AV, 4-Jun-2021.) $)
+  uhgredgrnv $p |- ( ( G e. UHGraph /\ E e. ( Edg ` G ) /\ N e. E )
+                     -> N e. ( Vtx ` G ) ) $=
+    ( cuhgr wcel cedg cfv cvtx wa cpw wi edguhgr elelpwi expcom syl 3impia ) BD
+    EZABFGEZCAEZCBHGZEZQRIATJEZSUAKABLSUBUACATMNOP $.
+
+  ${
+    $d E x $.  $d G x $.
+    $( Properties of an edge of a pseudograph.  (Contributed by AV,
+       8-Nov-2020.) $)
+    edgupgren $p |- ( ( G e. UPGraph /\ E e. ( Edg ` G ) )
+                -> ( E e. ~P ( Vtx ` G ) /\ ( E ~~ 1o \/ E ~~ 2o ) ) ) $=
+      ( vx cupgr wcel cedg cfv wa cv c1o cen wbr c2o cvtx crab ciedg eqid breq1
+      wo cpw crn edgvalg eleq2d biimpa wi cdm upgrfen frnd sseld adantr orbi12d
+      mpd wceq elrab sylib ) BDEZABFGZEZHZACIZJKLZUTMKLZSZCBNGZTZOZEZAVEEAJKLZA
+      MKLZSZHUSABPGZUAZEZVGUPURVMUPUQVLABDUBUCUDUPVMVGUEURUPVLVFAUPVKUFVFVKCVKB
+      VDVDQVKQUGUHUIUJULVCVJCAVEUTAUMVAVHVBVIUTAJKRUTAMKRUKUNUO $.
+
+    $( Properties of an edge of a multigraph.  (Contributed by AV,
+       25-Nov-2020.) $)
+    edgumgren $p |- ( ( G e. UMGraph /\ E e. ( Edg ` G ) )
+                    -> ( E e. ~P ( Vtx ` G ) /\ E ~~ 2o ) ) $=
+      ( vx cumgr wcel cedg cfv wa cv c2o cen wbr cvtx cpw ciedg crn edgvalg cdm
+      crab eqid umgrfen frnd eqsstrd sselda breq1 elrab sylib ) BDEZABFGZEHACIZ
+      JKLZCBMGZNZSZEAUMEAJKLZHUHUIUNAUHUIBOGZPUNBDQUHUPRUNUPCUPBULULTUPTUAUBUCU
+      DUKUOCAUMUJAJKUEUFUG $.
+  $}
+
+  ${
+    $d E e $.  $d I e i $.  $d U e i $.
+    uhgrvtxedgiedgb.i $e |- I = ( iEdg ` G ) $.
+    uhgrvtxedgiedgb.e $e |- E = ( Edg ` G ) $.
+    $( In a hypergraph, a vertex is incident with an edge iff it is contained
+       in an element of the range of the edge function.  (Contributed by AV,
+       24-Dec-2020.)  (Revised by AV, 6-Jul-2022.) $)
+    uhgrvtxedgiedgb $p |- ( ( G e. UHGraph /\ U e. V )
+                  -> ( E. i e. dom I U e. ( I ` i ) <-> E. e e. E U e. e ) ) $=
+      ( cuhgr wcel wa cv wrex cfv cdm wb crn cedg ciedg edgvalg 3eqtr4g rexeqdv
+      rneqi wfn uhgrfun funfnd eleq2 rexrn syl bitrd adantr bicomd ) EJKZAGKZLA
+      BMZKZBDNZACMFOZKZCFPZNZUNURVBQUOUNURUQBFRZNZVBUNUQBDVCUNESOETOZRDVCEJUAIF
+      VEHUDUBUCUNFVAUEVDVBQUNFFEHUFUGUQUTBCVAFUPUSAUHUIUJUKULUM $.
+  $}
+
+  ${
+    $d C x $.  $d G x $.  $d V x $.  $d C a b c z $.  $d G a b z $.
+    $d V a b c z $.
+    upgredg.v $e |- V = ( Vtx ` G ) $.
+    upgredg.e $e |- E = ( Edg ` G ) $.
+    $( For each edge in a pseudograph, there are two vertices which are
+       connected by this edge.  (Contributed by AV, 4-Nov-2020.)  (Proof
+       shortened by AV, 26-Nov-2021.) $)
+    upgredg $p |- ( ( G e. UPGraph /\ C e. E )
+                    -> E. a e. V E. b e. V C = { a , b } ) $=
+      ( vz vx cupgr wcel cfv cv wceq wrex wa cen wbr syl ciedg crn cedg edgvalg
+      cpr eqtrid eleq2d biimpa cdm wfun wfn c1o c2o wo crab eqid upgrfen adantr
+      cpw ffnd fnfun simpr elrnrexdm simpll simprl upgrex syl3anc simprr eqeq1d
+      sylc 2rexbidv mpbird rexlimddv syldan ) CKLZABLZACUAMZUBZLZAENFNUEZOZFDPE
+      DPZVOVPVSVOBVRAVOBCUCMVRHCKUDUFUGUHVOVSQZAINZVQMZOZWBIVQUIZWCVQUJZVSWFIWG
+      PWCVQWGUKZWHVOWIVSVOWGJNZULRSWJUMRSUNJDUSUOVQJVQCDGVQUPZUQUTZURWGVQVATVOV
+      SVBIVQAVCVJWCWDWGLZWFQZQZWBWEVTOZFDPEDPZWOVOWIWMWQVOVSWNVDZWOVOWIWRWLTWCW
+      MWFVEEFWGVQWDCDGWKVFVGWOWAWPEFDDWOAWEVTWCWMWFVHVIVKVLVMVN $.
+
+    $( For each edge in a multigraph, there are two distinct vertices which are
+       connected by this edge.  (Contributed by Alexander van der Vekens,
+       9-Dec-2017.)  (Revised by AV, 25-Nov-2020.) $)
+    umgredg $p |- ( ( G e. UMGraph /\ C e. E )
+                    -> E. a e. V E. b e. V ( a =/= b /\ C = { a , b } ) ) $=
+      ( cumgr wcel wa cv wne cpr wex wrex cfv adantl wss vex wceq cvtx cpw cedg
+      c2o cen wbr eleq2i edgumgren sylan2b en2prde wi eleq1 zfpair2 elpw sseq2i
+      prss sylbbr sylbi biimtrdi adantrd imdistanri 2eximdv mpd syl r2ex sylibr
+      ex ) CIJZABJZKZELZDJFLZDJKZVLVMMZAVLVMNZUAZKZKZFOEOZVRFDPEDPVKACUBQZUCZJZ
+      AUEUFUGZKZVTVJVIACUDQZJWEBWFAHUHACUIUJWEVRFOEOZVTWDWGWCAEFUKRWEVRVSEFWEVR
+      VSVRWEVNVQWEVNULVOVQWCVNWDVQWCVPWBJZVNAVPWBUMWHVPWASZVNVPWAEFUNUOVNVPDSWI
+      VLVMDETFTUQDWAVPGUPURUSUTVARVBVHVCVDVEVREFDDVFVG $.
+
+    ${
+      $d E m n $.  $d G m n $.  $d M m n $.  $d N m n $.  $d U m n $.
+      $d V m n $.  $d W m n $.
+      $( An edge of a pseudograph always connects two vertices if the edge
+         contains two sets.  The two vertices/sets need not necessarily be
+         different (loops are allowed).  (Contributed by AV, 18-Nov-2021.) $)
+      upgrpredgv $p |- ( ( G e. UPGraph /\ ( M e. U /\ N e. W )
+                                        /\ { M , N } e. E )
+                         -> ( M e. V /\ N e. V ) ) $=
+        ( vm vn wcel wa cpr cv wceq wb eleq1 eqcoms biimpd wrex upgredg 3adant2
+        cupgr wo preq12bg 3ad2antl2 wi im2anan9 com12 ancoms jaod adantl sylbid
+        w3a rexlimdvva mpd ) CUDLZDALEGLMZDENZBLZUOZUTJOZKOZNPZKFUAJFUAZDFLZEFL
+        ZMZURVAVFUSUTBCFJKHIUBUCVBVEVIJKFFVBVCFLZVDFLZMZMVEDVCPZEVDPZMZDVDPZEVC
+        PZMZUEZVIUSURVLVEVSQVADEVCVDAGFFUFUGVLVSVIUHVBVLVOVIVRVOVLVIVMVJVGVNVKV
+        HVMVJVGVJVGQVCDVCDFRSTVNVKVHVKVHQVDEVDEFRSTUIUJVKVJVRVIUHVRVKVJMVIVPVKV
+        GVQVJVHVPVKVGVKVGQVDDVDDFRSTVQVJVHVJVHQVCEVCEFRSTUIUJUKULUMUNUPUQ $.
+    $}
+
+    $( An edge of a multigraph always connects two vertices.  This theorem does
+       not hold for arbitrary pseudographs: if either ` M ` or ` N ` is a
+       proper class, then ` { M , N } e. E ` could still hold ( ` { M , N } `
+       would be either ` { M } ` or ` { N } ` , see ~ prprc1 or ~ prprc2 , i.e.
+       a loop), but ` M e. V ` or ` N e. V ` would not be true.  (Contributed
+       by AV, 27-Nov-2020.) $)
+    umgrpredgv $p |- ( ( G e. UMGraph /\ { M , N } e. E )
+                      -> ( M e. V /\ N e. V ) ) $=
+      ( cumgr wcel cpr wa cpw cvtx cfv c2o cen wbr simpld cvv simpl2im eleqtrdi
+      cedg eleq2i edgumgren sylan2b eqcomi pweqi pr2cv prid1g syl prid2g prelpw
+      wb syl2anc mpbird ) BHIZCDJZAIZKZCEIDEIKZUQELZIZUSUQBMNZLZVAUSUQVDIZUQOPQ
+      ZURUPUQBUBNZIVEVFKAVGUQGUCUQBUDUEZRVCEEVCFUFUGUAUSCUQIZDUQIZUTVBUMUSCSIZV
+      IUSVKDSIZUSVEVFVKVLKVHCDUHTZRCDSUIUJUSVKVLVJVMCDSUKTCDEUQUQULUNUO $.
+
+    $d A a b c $.  $d E a c $.  $d G c $.
+    $( For a vertex incident to an edge there is another vertex incident to the
+       edge in a pseudograph.  (Contributed by AV, 18-Oct-2020.)  (Revised by
+       AV, 5-Dec-2020.) $)
+    upgredg2vtx $p |- ( ( G e. UPGraph /\ C e. E /\ A e. C )
+                        -> E. b e. V C = { A , b } ) $=
+      ( va vc cupgr wcel w3a cv cpr wceq wrex upgredg 3adant3 wi wa eleq2 eqeq1
+      elpr2elpr 3expia rexbidv imbi12d imbitrrid com13 3ad2ant3 rexlimdvv mpd )
+      DKLZBCLZABLZMZBINZJNZOZPZJEQIEQZBAFNOZPZFEQZUMUNVAUOBCDEIJGHRSUPUTVDIJEEU
+      OUMUQELZURELZUAZUTVDTTUNUTVGUOVDVGUOVDTUTAUSLZUSVBPZFEQZTVEVFVHVJAEUQURFU
+      DUEUTUOVHVDVJBUSAUBUTVCVIFEBUSVBUCUFUGUHUIUJUKUL $.
+
+    $d B a b $.  $d U a b $.  $d W a b $.
+    $( If a proper pair (of vertices) is a subset of an edge in a pseudograph,
+       the pair is the edge.  (Contributed by AV, 30-Dec-2020.) $)
+    upgredgpr $p |- ( ( ( G e. UPGraph /\ C e. E /\ { A , B } C_ C )
+                          /\ ( A e. U /\ B e. W /\ A =/= B ) )
+                      -> { A , B } = C ) $=
+      ( va vb wcel cpr wss w3a wceq cv wrex wi cupgr wne upgredg 3adant3 biimpd
+      ssprsseq sseq2 eqeq2 imbi12d imbitrrid com23 a1i rexlimivv com12 3ad2ant3
+      wa mpd imp ) FUAMZCEMZABNZCOZPZADMBHMABUBPZVACQZVCCKRZLRZNZQZLGSKGSZVDVET
+      ZUSUTVJVBCEFGKLIJUCUDVBUSVJVKTUTVJVBVKVIVBVKTZKLGGVIVLTVFGMVGGMUPVIVDVBVE
+      VDVBVETVIVAVHOZVAVHQZTVDVMVNABVFVGDHUFUEVIVBVMVEVNCVHVAUGCVHVAUHUIUJUKULU
+      MUNUOUQUR $.
+  $}
+
+  ${
+    umgredgne.v $e |- E = ( Edg ` G ) $.
+    $( An edge of a multigraph always connects two different vertices.
+       Analogue of ~ umgrnloopvv .  (Contributed by AV, 27-Nov-2020.) $)
+    umgredgne $p |- ( ( G e. UMGraph /\ { M , N } e. E ) -> M =/= N ) $=
+      ( cumgr wcel cpr c2o cen wbr wne cvtx cfv cpw cedg eleq2i edgumgren cvv
+      wa sylan2b simprd wb pr2cv pr2ne 3syl mpbid ) BFGZCDHZAGZTZUIIJKZCDLZUKUI
+      BMNOGZULUJUHUIBPNZGUNULTAUOUIEQUIBRUAUBZUKULCSGDSGTULUMUCUPCDUDCDSSUEUFUG
+      $.
+  $}
+
+  $( A multigraph has no loops.  (Contributed by AV, 27-Oct-2020.)  (Revised by
+     AV, 30-Nov-2020.) $)
+  umgrnloop2 $p |- ( G e. UMGraph -> { N , N } e/ ( Edg ` G ) ) $=
+    ( cumgr wcel cpr cedg wn wnel cvtx wa eqid umgrpredgv simpld wceq umgredgne
+    cfv wne eqneqall mpsyl pm2.65da df-nel sylibr ) ACDZBBEZAFPZDZGUDUEHUCUFBAI
+    PZDZUCUFJZUHUHUEABBUGUGKUEKZLMBBNUIBBQUHGZBKUEABBUJOUKBBRSTUDUEUAUB $.
+
+  ${
+    $d C v $.  $d E v $.  $d G v $.
+    umgredgnlp.e $e |- E = ( Edg ` G ) $.
+    $( An edge of a multigraph is not a loop.  (Contributed by AV, 9-Jan-2020.)
+       (Revised by AV, 8-Jun-2021.) $)
+    umgredgnlp $p |- ( ( G e. UMGraph /\ C e. E ) -> -. E. v C = { v } ) $=
+      ( cumgr wcel wa cv csn wceq cvtx cfv cpw c2o cen wbr c1o 1nen2 vex ensymi
+      ensn1 entr mpan breq1 mtbiri intnand eleq2i edgumgren sylan2b nsyl3 nexdv
+      mto cedg ) DFGZBCGZHZBAIZJZKZAUTBDLMNGZBOPQZHZUQUTVBVAUTVBUSOPQZVDROPQZSR
+      USPQVDVEUSRURATUBUARUSOUCUDUMBUSOPUEUFUGUPUOBDUNMZGVCCVFBEUHBDUIUJUKUL $.
+  $}
+
+
+$(
 ###############################################################################
   GUIDES AND MISCELLANEA
 ###############################################################################
@@ -196976,19 +198147,6 @@ $)
       PQABCGRABCST $.
   $}
 
-  $( With a formula ` ph ` one can associate an element of ` ~P 1o ` , which
-     can therefore be thought of as the set of "truth values" (but recall that
-     there are no other genuine truth values than ` T. ` and ` F. ` , by
-     ~ nndc , which translate to ` 1o ` and ` (/) ` respectively by ~ iftrue
-     and ~ iffalse , giving ~ pwtrufal ).
-
-     As proved in ~ if0ab , the associated element of ` ~P 1o ` is the
-     extension, in ` ~P 1o ` , of the formula ` ph ` .  (Contributed by BJ,
-     15-Aug-2024.) $)
-  fmelpw1o $p |- if ( ph , 1o , (/) ) e. ~P 1o $=
-    ( c1o c0 cif cun cpw 1oex 0ex ifelpwun un0 pweqi eleqtri ) ABCDBCEZFBFABCGH
-    IMBBJKL $.
-
   ${
     $d x ph $.  $d x X $.  $d A x $.  $d F x $.
     bj-charfun.1 $e |- ( ph -> F = ( x e. X |-> if ( x e. A , 1o , (/) ) ) ) $.
@@ -199412,6 +200570,41 @@ $)
       wf1o cen wbr cxp wfn 2onn elexi elex fnovex mp3an12i 2omap f1oeng syl2anc
       com eqid ) CDGZHCIJZKGZURBLALGMBCNACOPZEURFLELQRSFCPTZUBURUTUCUDIKKUEUFHK
       GUQCKGUSUAHUOUGUHCDUIHCKKIUJUKABFCVADEVAUPULURUTKVAUMUN $.
+  $}
+
+  ${
+    $d A s u w y z $.  $d A s w x y z $.  $d V s u w y z $.
+    pw1map.f $e |- F = ( s e. ( ~P 1o ^m A ) |->
+      { z e. A | ( s ` z ) = 1o } ) $.
+    $( Mapping between ` ( ~P 1o ^m A ) ` and subsets of ` A ` .  (Contributed
+       by Jim Kingdon, 9-Jan-2026.) $)
+    pw1map $p |- ( A e. V -> F : ( ~P 1o ^m A ) -1-1-onto-> ~P A ) $=
+      ( vw vu wcel c1o cpw cv cfv wceq crab c0 cif wa a1i cvv wss ssrab2 elpw2g
+      cmap co cmpt mpbiri adantr fmelpw1o fmpttd 1oex pwex elmapd mpbird simplr
+      wf simpl fveq1d eqid elequ1 ifbid simpr 0ex ifex fvmptd3 eqeq1d iftrueb01
+      eqtrd bitr2di rabbidva wb elpwi dfss1 sylib dfin5 eqtr3di adantl ad2antlr
+      simplrl simpll mpbid feqmptd eleq2d fveqeq2 elrab bitrdi baibd ffvelcdmda
+      cin pw1if syl eqtr2d mpteq2dva impbida f1o2d ) BDIZEGJKZBUDUEZBKZALZELZMZ
+      JNZABOZHBHLZGLZIZJPQZUFZCFWPXDWSIZXAWRIZWPXJXDBUAXCABUBXDBDUCUGUHWPXFWSIZ
+      RZXIWRIBWQXIUPXMHBXHWQXHWQIXMXEBIZRXGUISUJXMWQBXITDWQTIZXMJUKULZSWPXLUQUM
+      UNWPXKXLRZRZXAXINZXFXDNZXRXSRZXTWTXFIZABOZXDNZYAYBXCABYAWTBIZRZXCYBJPQZJN
+      YBYFXBYGJYFXBWTXIMYGYFWTXAXIXRXSYEUOURYFHWTXHYGBXITXIUSXEWTNXGYBJPHAGUTVA
+      YAYEVBYGTIYFYBJPUKVCVDSVEVHVFYBVGVIVJXQXTYDVKZWPXSXLYHXKXLXFYCXDXLBXFWIZX
+      FYCXLXFBUAYIXFNXFBVLXFBVMVNABXFVOVPVFVQVRUNXRXTRZXAHBXEXAMZUFXIYJHBWQXAYJ
+      XKBWQXAUPWPXKXLXTVSYJWQBXATDXOYJXPSWPXQXTVTUMWAZWBYJHBYKXHYJXNRZXHYKJNZJP
+      QZYKYMXGYNJPYJXGXNYNYJXGXEXDIXNYNRYJXFXDXEXRXTVBWCXCYNAXEBWTXEJXAWDWEWFWG
+      VAYMYKWQIYOYKNYJBWQXEXAYLWHYKWJWKWLWMVHWNWO $.
+  $}
+
+  ${
+    $d A s x y z $.  $d V s y z $.
+    $( Equinumerosity of ` ( ~P 1o ^m A ) ` and the set of subsets of ` A ` .
+       (Contributed by Jim Kingdon, 10-Jan-2026.) $)
+    pw1mapen $p |- ( A e. V -> ( ~P 1o ^m A ) ~~ ~P A ) $=
+      ( vs vz wcel c1o cpw cmap co cvv cfv wceq crab cmpt wf1o cen wbr cxp wfn
+      cv fnmap 1oex pwex elex fnovex mp3an12i eqid pw1map f1oeng syl2anc ) ABEZ
+      FGZAHIZJEZUMAGZCUMDTCTKFLDAMNZOUMUOPQHJJRSULJEUKAJEUNUAFUBUCABUDULAJJHUEU
+      FDAUPBCUPUGUHUMUOJUPUIUJ $.
   $}
 
 
