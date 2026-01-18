@@ -195644,6 +195644,16 @@ $)
     usgredgppren $p |- ( ( G e. USGraph /\ C e. E ) -> C ~~ 2o ) $=
       ( cusgr wcel wa cvtx cfv cpw c2o cen cedg eleq2i edgusgren sylan2b simprd
       wbr ) CEFZABFZGACHIJFZAKLRZTSACMIZFUAUBGBUCADNACOPQ $.
+
+    usgrpredgv.v $e |- V = ( Vtx ` G ) $.
+    $( An edge of a simple graph always connects two vertices.  Analogue of
+       ~ usgredgprv .  (Contributed by Alexander van der Vekens, 7-Oct-2017.)
+       (Revised by AV, 9-Jan-2020.)  (Revised by AV, 23-Oct-2020.)  (Proof
+       shortened by AV, 27-Nov-2020.) $)
+    usgrpredgv $p |- ( ( G e. USGraph /\ { M , N } e. E )
+                      -> ( M e. V /\ N e. V ) ) $=
+      ( cusgr wcel cumgr cpr wa usgrumgr umgrpredgv sylan ) BHIBJICDKAICEIDEILB
+      MABCDEGFNO $.
   $}
 
 
