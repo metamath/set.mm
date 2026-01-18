@@ -194937,6 +194937,14 @@ $)
       cv wo eqid upgrfen frnd eqsstrd ) BCDZBEFBGFZHARZIJKUFLJKSABMFZNOZBCPUDUE
       QUHUEAUEBUGUGTUETUAUBUC $.
 
+    $( The set of edges of a multigraph is a subset of the set of unordered
+       pairs of vertices.  (Contributed by AV, 25-Nov-2020.) $)
+    umgredgssen $p |- ( G e. UMGraph
+               -> ( Edg ` G ) C_ { x e. ~P ( Vtx ` G ) | x ~~ 2o } ) $=
+      ( cumgr wcel cedg cfv ciedg crn cv c2o cen wbr cvtx cpw crab edgvalg eqid
+      cdm umgrfen frnd eqsstrd ) BCDZBEFBGFZHAIJKLABMFZNOZBCPUBUCRUEUCAUCBUDUDQ
+      UCQSTUA $.
+
     $( Properties of an edge of a pseudograph.  (Contributed by AV,
        8-Nov-2020.) $)
     edgupgren $p |- ( ( G e. UPGraph /\ E e. ( Edg ` G ) )
