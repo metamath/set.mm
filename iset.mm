@@ -195466,6 +195466,17 @@ $)
       ( vx cusgr wcel cumgr ciedg cfv cdm cv c2o cen wbr cvtx cpw crab wf1 eqid
       wf usgrfen f1f syl isumgren mpbird ) ACDZAEDAFGZHZBIJKLBAMGZNOZUERZUDUFUH
       UEPUIBUEAUGUGQZUEQZSUFUHUETUABCUEAUGUJUKUBUC $.
+
+    $( A graph is a simple graph iff it is a multigraph and a simple
+       pseudograph.  (Contributed by AV, 30-Nov-2020.) $)
+    usgrumgruspgr $p |- ( G e. USGraph
+                          <-> ( G e. UMGraph /\ G e. USPGraph ) ) $=
+      ( vx cusgr wcel cumgr cuspgr usgrumgr usgruspgr jca ciedg cfv cdm c2o cen
+      wa cv wbr crab wf1 eqid cvtx cpw c1o wo crn wss uspgrfen cedg umgredgssen
+      edgvalg eqsstrrd f1ssr syl2anr wb isusgren adantr mpbird impbii ) ACDZAED
+      ZAFDZOZUSUTVAAGAHIVBUSAJKZLZBPZMNQZBAUAKZUBZRZVCSZVAVDVEUCNQVFUDBVHRZVCSV
+      CUEZVIUFVJUTBVCAVGVGTZVCTZUGUTVLAUHKVIAEUJBAUIUKVDVKVIVCULUMUTUSVJUNVABEV
+      CAVGVMVNUOUPUQUR $.
   $}
 
 
