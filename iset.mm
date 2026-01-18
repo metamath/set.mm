@@ -195531,6 +195531,28 @@ $)
       TCVHVDVEVFVTWHCSVGVIVJVKVLVMVSVRWITWEAHCBDEFVNVOVPVQ $.
   $}
 
+  ${
+    uspgrun.g $e |- ( ph -> G e. USPGraph ) $.
+    uspgrun.h $e |- ( ph -> H e. USPGraph ) $.
+    uspgrun.e $e |- E = ( iEdg ` G ) $.
+    uspgrun.f $e |- F = ( iEdg ` H ) $.
+    uspgrun.vg $e |- V = ( Vtx ` G ) $.
+    uspgrun.vh $e |- ( ph -> ( Vtx ` H ) = V ) $.
+    uspgrun.i $e |- ( ph -> ( dom E i^i dom F ) = (/) ) $.
+    ${
+      uspgrun.u $e |- ( ph -> U e. W ) $.
+      uspgrun.v $e |- ( ph -> ( Vtx ` U ) = V ) $.
+      uspgrun.un $e |- ( ph -> ( iEdg ` U ) = ( E u. F ) ) $.
+      $( The union ` U ` of two simple pseudographs ` G ` and ` H ` with the
+         same vertex set ` V ` is a pseudograph with the vertex ` V ` and the
+         union ` ( E u. F ) ` of the (indexed) edges.  (Contributed by AV,
+         16-Oct-2020.) $)
+      uspgrun $p |- ( ph -> U e. UPGraph ) $=
+        ( cuspgr wcel cupgr uspgrupgr syl upgrun ) ABCDEFGHAESTEUATIEUBUCAFSTFU
+        ATJFUBUCKLMNOPQRUD $.
+    $}
+  $}
+
 
 $(
 ###############################################################################
