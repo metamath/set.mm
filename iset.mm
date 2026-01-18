@@ -195497,6 +195497,11 @@ $)
       XCXDVSVEVTWA $.
   $}
 
+  $( An undirected simple pseudograph is an undirected hypergraph.
+     (Contributed by AV, 21-Apr-2025.) $)
+  uspgruhgr $p |- ( G e. USPGraph -> G e. UHGraph ) $=
+    ( cuspgr wcel cupgr cuhgr uspgrupgr upgruhgr syl ) ABCADCAECAFAGH $.
+
 
 $(
 ###############################################################################
