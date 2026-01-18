@@ -195709,6 +195709,16 @@ $)
                        -> ( ( E ` X ) = { M , N } -> M =/= N ) ) $=
       ( cusgr wcel cumgr cfv cpr wceq wne wi usgrumgr umgrnloopv sylan ) BHIBJI
       CEIFAKCDLMCDNOBPABCDEFGQR $.
+
+    $d G x $.  $d M x $.  $d N x $.
+    $( In a simple graph, there is no loop, i.e. no edge connecting a vertex
+       with itself.  (Contributed by Alexander van der Vekens, 19-Aug-2017.)
+       (Proof shortened by Alexander van der Vekens, 20-Mar-2018.)  (Revised by
+       AV, 17-Oct-2020.)  (Proof shortened by AV, 11-Dec-2020.) $)
+    usgrnloop $p |- ( G e. USGraph -> ( E. x e. dom E ( E ` x ) = { M , N }
+                                      -> M =/= N ) ) $=
+      ( cusgr wcel cumgr cv cfv cpr wceq cdm wrex wne wi usgrumgr umgrnloop syl
+      ) CGHCIHAJBKDELMABNODEPQCRABCDEFST $.
   $}
 
 
