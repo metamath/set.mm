@@ -195564,6 +195564,28 @@ $)
       IJKLMS $.
   $}
 
+  ${
+    usgrun.g $e |- ( ph -> G e. USGraph ) $.
+    usgrun.h $e |- ( ph -> H e. USGraph ) $.
+    usgrun.e $e |- E = ( iEdg ` G ) $.
+    usgrun.f $e |- F = ( iEdg ` H ) $.
+    usgrun.vg $e |- V = ( Vtx ` G ) $.
+    usgrun.vh $e |- ( ph -> ( Vtx ` H ) = V ) $.
+    usgrun.i $e |- ( ph -> ( dom E i^i dom F ) = (/) ) $.
+    ${
+      usgrun.u $e |- ( ph -> U e. W ) $.
+      usgrun.v $e |- ( ph -> ( Vtx ` U ) = V ) $.
+      usgrun.un $e |- ( ph -> ( iEdg ` U ) = ( E u. F ) ) $.
+      $( The union ` U ` of two simple graphs ` G ` and ` H ` with the same
+         vertex set ` V ` is a multigraph (not necessarily a simple graph!)
+         with the vertex ` V ` and the union ` ( E u. F ) ` of the (indexed)
+         edges.  (Contributed by AV, 29-Nov-2020.) $)
+      usgrun $p |- ( ph -> U e. UMGraph ) $=
+        ( cusgr wcel cumgr usgrumgr syl umgrun ) ABCDEFGHAESTEUATIEUBUCAFSTFUAT
+        JFUBUCKLMNOPQRUD $.
+    $}
+  $}
+
 
 $(
 ###############################################################################
