@@ -195668,6 +195668,16 @@ $)
       wa elpwi anim1i syl wceq a1i sseq2d anbi1d mpbird ) CGHZABHZTZADIZAJKLZTA
       CMNZIZUMTZUKAUNOHZUMTZUPUJUIACPNZHURBUSAFQACRSUQUOUMAUNUAUBUCUKULUOUMUKDU
       NADUNUDUKEUEUFUGUH $.
+
+    $d C a b $.  $d G a b $.  $d V a b $.
+    $( For each edge in a simple graph, there are two distinct vertices which
+       are connected by this edge.  (Contributed by Alexander van der Vekens,
+       9-Dec-2017.)  (Revised by AV, 17-Oct-2020.)  (Shortened by AV,
+       25-Nov-2020.) $)
+    usgredg $p |- ( ( G e. USGraph /\ C e. E )
+                    -> E. a e. V E. b e. V ( a =/= b /\ C = { a , b } ) ) $=
+      ( cusgr wcel cumgr cv wne cpr wceq wa wrex usgrumgr umgredg sylan ) CIJCK
+      JABJELZFLZMAUAUBNOPFDQEDQCRABCDEFGHST $.
   $}
 
 
