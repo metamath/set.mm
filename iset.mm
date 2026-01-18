@@ -195800,6 +195800,18 @@ $)
       cdm ) FKLZCDMZNZHCOELZDHOELZNZNZFUALZUPNZCFUBPZLZDVDLZHVDLZUTAQZBQZMHVHGP
       LHVIGPLUDBGUNZRAVJRUQVCUTUOVBUPFUCUEUFVAVGVEUOURVGVENUPUSEFHCVDVDUGZJSUHZ
       UIVAVFVGUOUSVFVGNUPUREFDHVDVKJSUJTVAVGVEVLTUQUTUKABCDEFGHVDIJVKULUM $.
+
+    $( If a vertex is adjacent to two different vertices in a simple graph,
+       there are more than one edges starting at this vertex.  (Contributed by
+       Alexander van der Vekens, 10-Dec-2017.)  (Revised by AV, 17-Oct-2020.)
+       (Proof shortened by AV, 11-Feb-2021.) $)
+    usgr2edg $p |- ( ( ( G e. USGraph /\ A =/= B )
+                       /\ ( { N , A } e. E /\ { B , N } e. E ) )
+                     -> E. x e. dom I E. y e. dom I
+                         ( x =/= y /\ N e. ( I ` x ) /\ N e. ( I ` y ) ) ) $=
+      ( cusgr wcel cumgr wne cpr wa cv cfv w3a wrex usgrumgr umgr2edg sylanl1
+      cdm ) FKLFMLCDNHCOELDHOELPAQZBQZNHUEGRLHUFGRLSBGUDZTAUGTFUAABCDEFGHIJUBUC
+      $.
   $}
 
 
