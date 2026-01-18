@@ -195679,6 +195679,17 @@ $)
       JABJELZFLZMAUAUBNOPFDQEDQCRABCDEFGHST $.
   $}
 
+  ${
+    usgrnloopv.e $e |- E = ( iEdg ` G ) $.
+    $( In a simple graph, there is no loop, i.e. no edge connecting a vertex
+       with itself.  (Contributed by Alexander van der Vekens, 26-Jan-2018.)
+       (Revised by AV, 17-Oct-2020.)  (Proof shortened by AV, 11-Dec-2020.) $)
+    usgrnloopv $p |- ( ( G e. USGraph /\ M e. W )
+                       -> ( ( E ` X ) = { M , N } -> M =/= N ) ) $=
+      ( cusgr wcel cumgr cfv cpr wceq wne wi usgrumgr umgrnloopv sylan ) BHIBJI
+      CEIFAKCDLMCDNOBPABCDEFGQR $.
+  $}
+
 
 $(
 ###############################################################################
