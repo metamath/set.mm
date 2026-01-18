@@ -195719,6 +195719,15 @@ $)
                                       -> M =/= N ) ) $=
       ( cusgr wcel cumgr cv cfv cpr wceq cdm wrex wne wi usgrumgr umgrnloop syl
       ) CGHCIHAJBKDELMABNODEPQCRABCDEFST $.
+
+    $d U x $.
+    $( A simple graph has no loops.  (Contributed by Alexander van der Vekens,
+       6-Dec-2017.)  (Revised by AV, 17-Oct-2020.)  (Proof shortened by AV,
+       11-Dec-2020.) $)
+    usgrnloop0 $p |- ( G e. USGraph
+                       -> { x e. dom E | ( E ` x ) = { U } } = (/) ) $=
+      ( cusgr wcel cumgr cv cfv csn wceq cdm crab c0 usgrumgr umgrnloop0 syl )
+      DFGDHGAICJBKLACMNOLDPABCDEQR $.
   $}
 
 
