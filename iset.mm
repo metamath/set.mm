@@ -195451,6 +195451,13 @@ $)
       a1i pm2.43i ) ACDZAEDZULULAFGZHZBIZJKLZUPMKLZRZBANGZOZPZUNQZUMULULUOURBVA
       PZUNQZVCBCUNAUTUTSZUNSZTVEVDVBUAVCURUSBVAURUSUBUPVADURUQUCUJUDUOVDVBUNUEU
       FUGBCUNAUTVFVGUHUIUK $.
+
+    $( A simple graph is an undirected multigraph.  (Contributed by AV,
+       25-Nov-2020.) $)
+    usgrumgr $p |- ( G e. USGraph -> G e. UMGraph ) $=
+      ( vx cusgr wcel cumgr ciedg cfv cdm cv c2o cen wbr cvtx cpw crab wf1 eqid
+      wf usgrfen f1f syl isumgren mpbird ) ACDZAEDAFGZHZBIJKLBAMGZNOZUERZUDUFUH
+      UEPUIBUEAUGUGQZUEQZSUFUHUETUABCUEAUGUJUKUBUC $.
   $}
 
 
