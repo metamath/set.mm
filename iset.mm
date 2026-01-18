@@ -195584,6 +195584,16 @@ $)
         ( cusgr wcel cumgr usgrumgr syl umgrun ) ABCDEFGHAESTEUATIEUBUCAFSTFUAT
         JFUBUCKLMNOPQRUD $.
     $}
+
+    $( The union of two simple graphs (with the same vertex set):  If
+       ` <. V , E >. ` and ` <. V , F >. ` are simple graphs, then
+       ` <. V , E u. F >. ` is a multigraph (not necessarily a simple graph!) -
+       the vertex set stays the same, but the edges from both graphs are kept,
+       possibly resulting in two edges between two vertices.  (Contributed by
+       AV, 29-Nov-2020.) $)
+    usgrunop $p |- ( ph -> <. V , ( E u. F ) >. e. UMGraph ) $=
+      ( cusgr wcel cumgr usgrumgr syl umgrunop ) ABCDEFADNODPOGDQRAENOEPOHEQRIJ
+      KLMS $.
   $}
 
 
