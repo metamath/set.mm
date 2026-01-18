@@ -194634,16 +194634,15 @@ $)
     $( In a multigraph, there is no loop, i.e. no edge connecting a vertex with
        itself.  (Contributed by Alexander van der Vekens, 26-Jan-2018.)
        (Revised by AV, 11-Dec-2020.) $)
-    umgrnloopvv $p |- ( ( G e. UMGraph /\ M e. W /\ N e. V )
+    umgrnloopv $p |- ( ( G e. UMGraph /\ M e. W )
                        -> ( ( E ` X ) = { M , N } -> M =/= N ) ) $=
-      ( cumgr wcel w3a cfv cpr wceq wa c2o cen wbr wb syl2anc simpr simpll wrel
-      wne cuhgr wfun umgruhgr uhgrfun funrel 3syl ad2antrr simplr prid1g adantl
-      cdm adantr mpbird relelfvdm cvtx eqid umgredg2en eqbrtrrd 3adantl3 simpl2
-      eleq2 simpl3 pr2ne mpbid ex ) BIJZCFJZDEJZKZGALZCDMZNZCDUDZVMVPOZVOPQRZVQ
-      VJVKVPVSVLVJVKOZVPOZVNVOPQVTVPUAZWAVJGAUOJZVNPQRVJVKVPUBWAAUCZCVNJZWCVJWD
-      VKVPVJBUEJAUFWDBUGABHUHAUIUJUKWAVPVKWEWBVJVKVPULVPVKOWECVOJZVKWFVPCDFUMUN
-      VPWEWFSVKVNVOCVEUPUQTCGAURTABBUSLZGWGUTHVATVBVCVRVKVLVSVQSVJVKVLVPVDVJVKV
-      LVPVFCDFEVGTVHVI $.
+      ( cumgr wcel wa cfv cpr wceq c2o cen wbr 3syl wb syl2anc cvv simpr simpll
+      wne wrel cuhgr wfun umgruhgr uhgrfun funrel ad2antrr simplr prid1g adantl
+      cdm eleq2 adantr mpbird relelfvdm cvtx umgredg2en eqbrtrrd pr2cv pr2ne ex
+      eqid mpbid ) BHIZCEIZJZFAKZCDLZMZCDUCZVIVLJZVKNOPZVMVNVJVKNOVIVLUAZVNVGFA
+      UNIZVJNOPVGVHVLUBVNAUDZCVJIZVQVGVRVHVLVGBUEIAUFVRBUGABGUHAUIQUJVNVLVHVSVP
+      VGVHVLUKVLVHJVSCVKIZVHVTVLCDEULUMVLVSVTRVHVJVKCUOUPUQSCFAURSABBUSKZFWAVEG
+      UTSVAZVNVOCTIDTIJVOVMRWBCDVBCDTTVCQVFVD $.
 
     ${
       umgredgprv.v $e |- V = ( Vtx ` G ) $.
@@ -195091,7 +195090,7 @@ $)
   ${
     umgredgne.v $e |- E = ( Edg ` G ) $.
     $( An edge of a multigraph always connects two different vertices.
-       Analogue of ~ umgrnloopvv .  (Contributed by AV, 27-Nov-2020.) $)
+       Analogue of ~ umgrnloopv .  (Contributed by AV, 27-Nov-2020.) $)
     umgredgne $p |- ( ( G e. UMGraph /\ { M , N } e. E ) -> M =/= N ) $=
       ( cumgr wcel cpr c2o cen wbr wne cvtx cfv cpw cedg eleq2i edgumgren cvv
       wa sylan2b simprd wb pr2cv pr2ne 3syl mpbid ) BFGZCDHZAGZTZUIIJKZCDLZUKUI
