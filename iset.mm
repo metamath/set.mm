@@ -195624,6 +195624,15 @@ $)
     usgredg2en $p |- ( ( G e. USGraph /\ X e. dom E ) -> ( E ` X ) ~~ 2o ) $=
       ( cusgr wcel cumgr cdm cfv c2o cen usgrumgr cvtx eqid umgredg2en sylan
       wbr ) BEFBGFCAHFCAIJKQBLABBMIZCRNDOP $.
+
+    usgredgprv.v $e |- V = ( Vtx ` G ) $.
+    $( In a simple graph, an edge is an unordered pair of vertices.
+       (Contributed by Alexander van der Vekens, 19-Aug-2017.)  (Revised by AV,
+       16-Oct-2020.)  (Proof shortened by AV, 11-Dec-2020.) $)
+    usgredgprv $p |- ( ( G e. USGraph /\ X e. dom E )
+                     -> ( ( E ` X ) = { M , N } -> ( M e. V /\ N e. V ) ) ) $=
+      ( cusgr wcel cumgr cdm cfv cpr wceq wa wi usgrumgr umgredgprv sylan ) BIJ
+      BKJFALJFAMCDNOCEJDEJPQBRABCDEFGHST $.
   $}
 
 
