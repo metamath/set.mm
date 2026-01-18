@@ -195596,6 +195596,18 @@ $)
       KLMS $.
   $}
 
+  ${
+    $d E x $.  $d G x $.  $d X x $.
+    usgredg2.e $e |- E = ( iEdg ` G ) $.
+    $( The value of the "edge function" of a simple graph is a set containing
+       two elements (the vertices the corresponding edge is connecting).
+       (Contributed by Alexander van der Vekens, 11-Aug-2017.)  (Revised by AV,
+       16-Oct-2020.)  (Proof shortened by AV, 11-Dec-2020.) $)
+    usgredg2en $p |- ( ( G e. USGraph /\ X e. dom E ) -> ( E ` X ) ~~ 2o ) $=
+      ( cusgr wcel cumgr cdm cfv c2o cen usgrumgr cvtx eqid umgredg2en sylan
+      wbr ) BEFBGFCAHFCAIJKQBLABBMIZCRNDOP $.
+  $}
+
 
 $(
 ###############################################################################
