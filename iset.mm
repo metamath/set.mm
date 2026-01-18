@@ -195656,6 +195656,20 @@ $)
       MABCDEGFNO $.
   $}
 
+  ${
+    edgssv2.v $e |- V = ( Vtx ` G ) $.
+    edgssv2.e $e |- E = ( Edg ` G ) $.
+    $( An edge of a simple graph is an unordered pair of vertices, i.e. a
+       subset of the set of vertices of size 2.  (Contributed by AV,
+       10-Jan-2020.)  (Revised by AV, 23-Oct-2020.) $)
+    edgssv2en $p |- ( ( G e. USGraph /\ C e. E )
+                    -> ( C C_ V /\ C ~~ 2o ) ) $=
+      ( cusgr wcel wss c2o cen wbr cvtx cfv cpw cedg eleq2i edgusgren sylan2b
+      wa elpwi anim1i syl wceq a1i sseq2d anbi1d mpbird ) CGHZABHZTZADIZAJKLZTA
+      CMNZIZUMTZUKAUNOHZUMTZUPUJUIACPNZHURBUSAFQACRSUQUOUMAUNUAUBUCUKULUOUMUKDU
+      NADUNUDUKEUEUFUGUH $.
+  $}
+
 
 $(
 ###############################################################################
