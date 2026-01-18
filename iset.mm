@@ -194644,6 +194644,24 @@ $)
       VKVPVJBUEJAUFWDBUGABHUHAUIUJUKWAVPVKWEWBVJVKVPULVPVKOWECVOJZVKWFVPCDFUMUN
       VPWEWFSVKVNVOCVEUPUQTCGAURTABBUSLZGWGUTHVATVBVCVRVKVLVSVQSVJVKVLVPVDVJVKV
       LVPVFCDFEVGTVHVI $.
+
+    ${
+      umgredgprv.v $e |- V = ( Vtx ` G ) $.
+      $( In a multigraph, an edge is an unordered pair of vertices.  This
+         theorem would not hold for arbitrary hyper-/pseudographs since either
+         ` M ` or ` N ` could be proper classes ( ` ( E `` X ) ` would be a
+         loop in this case), which are no vertices of course.  (Contributed by
+         Alexander van der Vekens, 19-Aug-2017.)  (Revised by AV,
+         11-Dec-2020.) $)
+      umgredgprv $p |- ( ( G e. UMGraph /\ X e. dom E )
+                     -> ( ( E ` X ) = { M , N } -> ( M e. V /\ N e. V ) ) ) $=
+        ( cumgr wcel cdm wa cfv cpr wss adantr cvv c2o cen wbr wceq simpr cuhgr
+        umgruhgr uhgrss sylan eqsstrrd wb umgredg2en eqbrtrrd syl prid1g prid2g
+        pr2cv anim12i prssg 3syl mpbird ex ) BIJZFAKJZLZFAMZCDNZUAZCEJDEJLZVBVE
+        LZVFVDEOZVGVDVCEVBVEUBZVBVCEOZVEUTBUCJVAVJBUDAFBEHGUEUFPUGVGCQJZDQJZLZC
+        VDJZDVDJZLVFVHUHVGVDRSTVMVGVCVDRSVIVBVCRSTVEABEFHGUIPUJCDUNUKVKVNVLVOCD
+        QULCDQUMUOCDEVDVDUPUQURUS $.
+    $}
   $}
 
   ${
