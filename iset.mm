@@ -195551,6 +195551,17 @@ $)
         ( cuspgr wcel cupgr uspgrupgr syl upgrun ) ABCDEFGHAESTEUATIEUBUCAFSTFU
         ATJFUBUCKLMNOPQRUD $.
     $}
+
+    $( The union of two simple pseudographs (with the same vertex set):  If
+       ` <. V , E >. ` and ` <. V , F >. ` are simple pseudographs, then
+       ` <. V , E u. F >. ` is a pseudograph (the vertex set stays the same,
+       but the edges from both graphs are kept, maybe resulting incident two
+       edges between two vertices).  (Contributed by Alexander van der Vekens,
+       10-Aug-2017.)  (Revised by AV, 16-Oct-2020.)  (Revised by AV,
+       24-Oct-2021.) $)
+    uspgrunop $p |- ( ph -> <. V , ( E u. F ) >. e. UPGraph ) $=
+      ( cuspgr wcel cupgr uspgrupgr syl upgrunop ) ABCDEFADNODPOGDQRAENOEPOHEQR
+      IJKLMS $.
   $}
 
 
