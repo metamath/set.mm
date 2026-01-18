@@ -195751,6 +195751,41 @@ $)
       ( cusgr wcel cdm wf1o crn usgrf1o cedg ciedg edgvalg eqcomi eqtrdi eqtrid
       cfv rneqi f1oeq3d mpbird ) BFGZCHZACIUCCJZCICBDKUBAUDUCCUBABLRZUDEUBUEBMR
       ZJUDBFNUFCCUFDOSPQTUA $.
+
+    $d A x y $.  $d B x y $.  $d G y $.  $d I x y $.  $d N x y $.
+    ${
+      $d V x y $.
+      uhgr2edg.v $e |- V = ( Vtx ` G ) $.
+      $( If a vertex is adjacent to two different vertices in a hypergraph,
+         there are more than one edges starting at this vertex.  (Contributed
+         by Alexander van der Vekens, 10-Dec-2017.)  (Revised by AV,
+         11-Feb-2021.) $)
+      uhgr2edg $p |- ( ( ( G e. UHGraph /\ A =/= B )
+                         /\ ( A e. V /\ B e. V /\ N e. V )
+                         /\ ( { N , A } e. E /\ { B , N } e. E ) )
+                       -> E. x e. dom I E. y e. dom I
+                          ( x =/= y /\ N e. ( I ` x ) /\ N e. ( I ` y ) ) ) $=
+        ( wcel wa w3a cfv wrex wceq wi adantl cuhgr wne cv simp1l simp1r simp23
+        cpr cdm simp21 3simpc 3ad2ant2 jca31 simp3 wb crn cedg ciedg a1i eqcomi
+        edgvalg rneqd 3eqtrd eleq2d anbi12d wfn uhgrfun funfnd fvelrnb ad2antrr
+        syl bitrd reeanv fveqeq2 anbi1d eqtr2 prcom eqeq2i wo preq12bg eqneqall
+        ancom2s eqtr ancoms jaoi adantld com3l impd sylbi impcomd impcom neneqd
+        biimtrdi pm2.01da neqned prid1g imbitrrid adantr prid2g 3jca ex reximdv
+        eleq2 biimtrrid sylbid sylc ) FUAMZCDUBZNZCIMZDIMZHIMZOZHCUGZEMZDHUGZEM
+        ZNZOZXHXKXINZXJXKNZNZNZXQAUCZBUCZUBZHYCGPZMZHYDGPZMZOZBGUHZQZAYKQZXRXFX
+        GYAXFXGXLXQUDXFXGXLXQUEXRXKXIXTXHXIXJXKXQUFXHXIXJXKXQUIXLXHXTXQXIXJXKUJ
+        UKULULXHXLXQUMYBXQYFXMRZAYKQZYHXORZBYKQZNZYMXFXQYRUNXGYAXFXQXMGUOZMZXOY
+        SMZNZYRXFXNYTXPUUAXFEYSXMXFEFUPPZFUQPZUOYSEUUCRXFKURFUAUTXFUUDGUUDGRXFG
+        UUDJUSURVAVBZVCXFEYSXOUUEVCVDXFGYKVEZUUBYRUNXFGGFJVFVGUUFYTYOUUAYQAYKXM
+        GVHBYKXOGVHVDVJVKVIYRYNYPNZBYKQZAYKQYBYMYNYPABYKYKVLYBUUHYLAYKYBUUGYJBY
+        KYBUUGYJYBUUGNZYEYGYIUUIYCYDUUIYCYDRZUUIUUJNYCYDUUJUUIYEUUJUUGYBYEUUJUU
+        GYHXMRZYPNZYBYESZUUJYNUUKYPYCYDXMGVMVNUULXMXORZUUMYHXMXOVOUUNXMHDUGZRZU
+        UMXOUUOXMDHVPVQUUPXHYAYEYAUUPXHYEYAUUPHHRZCDRZNZHDRZCHRZNZVRZXHYESXSXKX
+        JUUPUVCUNHCHDIIIIVSWAUVCXGYEXFUUSXGYESZUVBUURUVDUUQYECDVTZTUVBUURUVDUVA
+        UUTUURCHDWBWCUVEVJWDWEWLWFWGWHVJWLWIWJWKWMWNUUGYBYGYNYBYGSYPYBYGYNHXMMZ
+        YAUVFXHXKUVFXIXTHCIWOVITYFXMHXBWPWQWJUUGYBYIYPYBYISYNYBYIYPHXOMZYAUVGXH
+        XKUVGXIXTDHIWRVITYHXOHXBWPTWJWSWTXAXAXCXDXE $.
+    $}
   $}
 
 
