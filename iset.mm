@@ -194929,6 +194929,14 @@ $)
 
   ${
     $d E x $.  $d G x $.
+    $( The set of edges of a pseudograph is a subset of the set of unordered
+       pairs of vertices.  (Contributed by AV, 29-Nov-2020.) $)
+    upgredgssen $p |- ( G e. UPGraph -> ( Edg ` G )
+                 C_ { x e. ~P ( Vtx ` G ) | ( x ~~ 1o \/ x ~~ 2o ) } ) $=
+      ( cupgr wcel cedg cfv ciedg crn c1o cen wbr c2o cvtx cpw crab edgvalg cdm
+      cv wo eqid upgrfen frnd eqsstrd ) BCDZBEFBGFZHARZIJKUFLJKSABMFZNOZBCPUDUE
+      QUHUEAUEBUGUGTUETUAUBUC $.
+
     $( Properties of an edge of a pseudograph.  (Contributed by AV,
        8-Nov-2020.) $)
     edgupgren $p |- ( ( G e. UPGraph /\ E e. ( Edg ` G ) )
