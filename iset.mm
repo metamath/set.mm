@@ -22441,6 +22441,14 @@ $)
       EGUAEKGLMBCHNOPIQ $.
   $}
 
+  $( A transformation of restricted quantifiers and logical connectives.
+     (Contributed by NM, 4-Sep-2005.)  (Revised by Jim Kingdon,
+     18-Jan-2026.) $)
+  rexanaliim $p |- ( E. x e. A ( ph /\ -. ps )
+      -> -. A. x e. A ( ph -> ps ) ) $=
+    ( wn wa wrex wi wral annimim reximi rexnalim syl ) ABEFZCDGABHZEZCDGOCDIENP
+    CDABJKOCDLM $.
+
   ${
     $d x y $.  $d y A $.  $d x B $.
     $( Theorem 19.12 of [Margaris] p. 89 with restricted quantifiers.
