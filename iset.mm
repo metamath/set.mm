@@ -195502,6 +195502,11 @@ $)
   uspgruhgr $p |- ( G e. USPGraph -> G e. UHGraph ) $=
     ( cuspgr wcel cupgr cuhgr uspgrupgr upgruhgr syl ) ABCADCAECAFAGH $.
 
+  $( A simple graph is an undirected pseudograph.  (Contributed by Alexander
+     van der Vekens, 20-Aug-2017.)  (Revised by AV, 15-Oct-2020.) $)
+  usgrupgr $p |- ( G e. USGraph -> G e. UPGraph ) $=
+    ( cusgr wcel cuspgr cupgr usgruspgr uspgrupgr syl ) ABCADCAECAFAGH $.
+
 
 $(
 ###############################################################################
