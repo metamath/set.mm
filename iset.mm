@@ -194672,6 +194672,16 @@ $)
       umgredgprv umgrnloopv com12 mpcom rexlimdva2 ) CGHZAIZBJDEKLZDEMZABNZDCOJ
       ZHZEUMHZPZUHUIULHZPZUJPZUKURUJUPBCDEUMUIFUMQUCRUNUSUKSUOUSUNUKURUJUNUKSZU
       HUJUTSUQUHUNUJUKUHUNUJUKSBCDEUMUIFUDUAUBTRUETUFUG $.
+
+    $d U x $.
+    $( A multigraph has no loops.  (Contributed by Alexander van der Vekens,
+       6-Dec-2017.)  (Revised by AV, 11-Dec-2020.) $)
+    umgrnloop0 $p |- ( G e. UMGraph
+                       -> { x e. dom E | ( E ` x ) = { U } } = (/) ) $=
+      ( cumgr wcel cv cfv csn wceq wn cdm wral crab c0 wrex cpr wne sylibr mtoi
+      neirr umgrnloop wa simpr dfsn2 eqtrdi ex reximdv mtod ralnex rabeq0 ) DFG
+      ZAHCIZBJZKZLACMZNZUPAUQOPKUMUPAUQQZLURUMUSUNBBRZKZAUQQZUMVBBBSBUBACDBBEUC
+      UAUMUPVAAUQUMUPVAUMUPUDUNUOUTUMUPUEBUFUGUHUIUJUPAUQUKTUPAUQULT $.
   $}
 
   ${
