@@ -195431,6 +195431,17 @@ $)
       wo wf eqid isuspgren f1f biimtrdi isupgren sylibrd pm2.43i ) ACDZAEDZUGUG
       AFGZHZBIZJKLUKMKLRBANGZOPZUISZUHUGUGUJUMUIQUNBCUIAULULTZUITZUAUJUMUIUBUCB
       CUIAULUOUPUDUEUF $.
+
+    $( A graph is a simple pseudograph iff it is a pseudograph and a simple
+       hypergraph.  (Contributed by AV, 30-Nov-2020.) $)
+    uspgrupgrushgr $p |- ( G e. USPGraph
+                           <-> ( G e. UPGraph /\ G e. USHGraph ) ) $=
+      ( vx vy cuspgr wcel cupgr cushgr wa uspgrupgr uspgrushgr jca ciedg cfv cv
+      cdm cen wbr crab wf1 eqid c1o c2o wo cvtx cpw wex crn wss ushgrfm edgvalg
+      cedg upgredgssen eqsstrrd f1ssr syl2anr wb isuspgren adantr mpbird impbii
+      ) ADEZAFEZAGEZHZVAVBVCAIAJKVDVAALMZOZBNZUAPQVGUBPQUCBAUDMZUEZRZVESZVCVFCN
+      VGECUFBVIRZVESVEUGZVJUHVKVBCVEAVHBVHTZVETZUIVBVMAUKMVJAFUJBAULUMVFVLVJVEU
+      NUOVBVAVKUPVCBFVEAVHVNVOUQURUSUT $.
   $}
 
 
