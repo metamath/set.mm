@@ -195820,6 +195820,20 @@ $)
       ( cusgr wcel cumgr wne cpr wa cv cfv w3a wrex usgrumgr umgr2edg sylanl1
       cdm ) FKLFMLCDNHCOELDHOELPAQZBQZNHUEGRLHUFGRLSBGUDZTAUGTFUAABCDEFGHIJUBUC
       $.
+
+    $( If a vertex is adjacent to two different vertices in a multigraph, there
+       is not only one edge starting at this vertex.  (Contributed by Alexander
+       van der Vekens, 10-Dec-2017.)  (Revised by AV, 8-Jun-2021.) $)
+    umgr2edg1 $p |- ( ( ( G e. UMGraph /\ A =/= B )
+                        /\ ( { N , A } e. E /\ { B , N } e. E ) )
+                      -> -. E! x e. dom I N e. ( I ` x ) ) $=
+      ( vy wcel wne wa cpr cv cfv wrex wral wn w3a cumgr cdm weq wi wreu 3anrot
+      umgr2edg df-ne 3anbi3i df-3an 3bitri 2rexbii sylib rexanaliim reximi 3syl
+      rexnalim intnand fveq2 eleq2d reu4 sylnibr ) EUAKBCLMGBNDKCGNDKMMZGAOZFPZ
+      KZAFUBZQZVFGJOZFPZKZMZAJUCZUDJVGRZAVGRZMVFAVGUEVCVOVHVCVLVMSZMZJVGQZAVGQZ
+      VNSZAVGQVOSVCVDVILZVFVKTZJVGQAVGQVSAJBCDEFGHIUGWBVQAJVGVGWBVFVKWATVFVKVPT
+      VQWAVFVKUFWAVPVFVKVDVIUHUIVFVKVPUJUKULUMVRVTAVGVLVMJVGUNUOVNAVGUQUPURVFVK
+      AJVGVMVEVJGVDVIFUSUTVAVB $.
   $}
 
 
