@@ -195741,6 +195741,18 @@ $)
       DELM $.
   $}
 
+  ${
+    $d G x $.
+    usgrf1oedg.i $e |- I = ( iEdg ` G ) $.
+    usgrf1oedg.e $e |- E = ( Edg ` G ) $.
+    $( The edge function of a simple graph is a 1-1 function onto the set of
+       edges.  (Contributed by AV, 18-Oct-2020.) $)
+    usgrf1oedg $p |- ( G e. USGraph -> I : dom I -1-1-onto-> E ) $=
+      ( cusgr wcel cdm wf1o crn usgrf1o cedg ciedg edgvalg eqcomi eqtrdi eqtrid
+      cfv rneqi f1oeq3d mpbird ) BFGZCHZACIUCCJZCICBDKUBAUDUCCUBABLRZUDEUBUEBMR
+      ZJUDBFNUFCCUFDOSPQTUA $.
+  $}
+
 
 $(
 ###############################################################################
