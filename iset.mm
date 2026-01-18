@@ -195730,6 +195730,17 @@ $)
       DFGDHGAICJBKLACMNOLDPABCDEQR $.
   $}
 
+  ${
+    usgredgne.v $e |- E = ( Edg ` G ) $.
+    $( An edge of a simple graph always connects two different vertices.
+       Analogue of ~ usgrnloopv resp. ~ usgrnloop .  (Contributed by Alexander
+       van der Vekens, 2-Sep-2017.)  (Revised by AV, 17-Oct-2020.)  (Proof
+       shortened by AV, 27-Nov-2020.) $)
+    usgredgne $p |- ( ( G e. USGraph /\ { M , N } e. E ) -> M =/= N ) $=
+      ( cusgr wcel cumgr cpr wne usgrumgr umgredgne sylan ) BFGBHGCDIAGCDJBKABC
+      DELM $.
+  $}
+
 
 $(
 ###############################################################################
