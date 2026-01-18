@@ -194661,6 +194661,17 @@ $)
         VDJZDVDJZLVFVHUHVGVDRSTVMVGVCVDRSVIVBVCRSTVEABEFHGUIPUJCDUNUKVKVNVLVOCD
         QULCDQUMUOCDEVDVDUPUQURUS $.
     $}
+
+    $d G x $.  $d M x $.  $d N x $.
+    $( In a multigraph, there is no loop, i.e. no edge connecting a vertex with
+       itself.  (Contributed by Alexander van der Vekens, 19-Aug-2017.)
+       (Revised by AV, 11-Dec-2020.) $)
+    umgrnloop $p |- ( G e. UMGraph -> ( E. x e. dom E ( E ` x ) = { M , N }
+                                      -> M =/= N ) ) $=
+      ( cumgr wcel cv cfv cpr wceq wne cdm cvtx wa eqid imp wi adantr ex com23
+      umgredgprv umgrnloopv com12 mpcom rexlimdva2 ) CGHZAIZBJDEKLZDEMZABNZDCOJ
+      ZHZEUMHZPZUHUIULHZPZUJPZUKURUJUPBCDEUMUIFUMQUCRUNUSUKSUOUSUNUKURUJUNUKSZU
+      HUJUTSUQUHUNUJUKUHUNUJUKSBCDEUMUIFUDUAUBTRUETUFUG $.
   $}
 
   ${
