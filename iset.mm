@@ -120061,6 +120061,20 @@ $)
         ( cs1 cconcat co cword wcel s1cld ccatcl syl2anc eqeltrid ) ADCEIZJKZBL
         ZFACTMRTMSTMGAEBHNBCROPQ $.
     $}
+
+    ${
+      cats1cli.2 $e |- S e. Word _V $.
+      cats1fvn.3 $e |- ( # ` S ) = M $.
+      $( The last symbol of a concatenation with a singleton word.
+         (Contributed by Mario Carneiro, 26-Feb-2016.) $)
+      cats1fvn $p |- ( X e. V -> ( T ` M ) = X ) $=
+        ( wcel cfv cc0 cs1 chash caddc co cconcat oveq2i cn0 cvv cn cword lencl
+        ax-mp eqeltrri nn0cni addlidi eqtr2i fveq12i cfzo wceq s1cld s1leng 1nn
+        elex c1 eqeltrdi lbfzo0 sylibr ccatval3 mp3an2i eqtrid s1fv eqtrd ) EDI
+        ZCBJZKELZJZEVDVEKAMJZNOZAVFPOZJZVGCVIBVJFVIKCNOCVHCKNHQCCVHCRHASUAZIZVH
+        RIGSAUBUCUDUEUFUGUHVMVDVFVLIKKVFMJZUIOIZVKVGUJGVDESEDUNUKVDVNTIVOVDVNUO
+        TEDULUMUPVNUQURSAVFKUSUTVAEDVBVC $.
+    $}
   $}
 
 
