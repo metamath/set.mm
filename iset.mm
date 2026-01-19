@@ -120075,6 +120075,25 @@ $)
         RIGSAUBUCUDUEUFUGUHVMVDVFVLIKKVFMJZUIOIZVKVGUJGVDESEDUNUKVDVNTIVOVDVNUO
         TEDULUMUPVNUQURSAVFKUSUTVAEDVBVC $.
     $}
+
+    ${
+      cats1fvd.s $e |- ( ph -> S e. Word _V ) $.
+      cats1fvd.3 $e |- ( ph -> ( # ` S ) = M ) $.
+      cats1fvd.yex $e |- ( ph -> Y e. V ) $.
+      cats1fvd.x $e |- ( ph -> X e. W ) $.
+      cats1fvd.y $e |- ( ph -> ( S ` N ) = Y ) $.
+      cats1fvd.5 $e |- ( ph -> N e. NN0 ) $.
+      cats1fvd.6 $e |- ( ph -> N < M ) $.
+      $( A symbol other than the last in a concatenation with a singleton word.
+         (Contributed by Mario Carneiro, 26-Feb-2016.)  (Revised by Jim
+         Kingdon, 20-Jan-2026.) $)
+      cats1fvd $p |- ( ph -> ( T ` N ) = Y ) $=
+        ( cfv cvv wcel cs1 cconcat fveq1i cword cc0 chash cfzo wceq elexd s1cld
+        co cuz cz clt wbr cn0 nn0uz eleqtrdi lencl nn0z 3syl breqtrrd syl3anbrc
+        elfzo2 ccatval1 syl3anc eqtrid eqtrd ) AECRZEBRZIAVIEBHUAZUBUKZRZVJECVL
+        JUCABSUDZTZVKVNTEUEBUFRZUGUKTZVMVJUHKAHSAHGNUIUJAEUEULRZTVPUMTZEVPUNUOV
+        QAEUPVRPUQURAVOVPUPTVSKSBUSVPUTVAAEDVPUNQLVBEUEVPVDVCSSBVKEVEVFVGOVH $.
+    $}
   $}
 
 
