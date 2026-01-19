@@ -120050,6 +120050,19 @@ $)
      26-Feb-2016.) $)
   df-s8 $a |- <" A B C D E F G H "> = ( <" A B C D E F G "> ++ <" H "> ) $.
 
+  ${
+    cats1cld.1 $e |- T = ( S ++ <" X "> ) $.
+    ${
+      cats1cld.2 $e |- ( ph -> S e. Word A ) $.
+      cats1cld.3 $e |- ( ph -> X e. A ) $.
+      $( Closure of concatenation with a singleton word.  (Contributed by Mario
+         Carneiro, 26-Feb-2016.) $)
+      cats1cld $p |- ( ph -> T e. Word A ) $=
+        ( cs1 cconcat co cword wcel s1cld ccatcl syl2anc eqeltrid ) ADCEIZJKZBL
+        ZFACTMRTMSTMGAEBHNBCROPQ $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
