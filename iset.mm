@@ -119997,6 +119997,61 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Longer string literals
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+  $( Syntax for the length 2 word constructor. $)
+  cs2 $a class <" A B "> $.
+
+  $( Syntax for the length 3 word constructor. $)
+  cs3 $a class <" A B C "> $.
+
+  $( Syntax for the length 4 word constructor. $)
+  cs4 $a class <" A B C D "> $.
+
+  $( Syntax for the length 5 word constructor. $)
+  cs5 $a class <" A B C D E "> $.
+
+  $( Syntax for the length 6 word constructor. $)
+  cs6 $a class <" A B C D E F "> $.
+
+  $( Syntax for the length 7 word constructor. $)
+  cs7 $a class <" A B C D E F G "> $.
+
+  $( Syntax for the length 8 word constructor. $)
+  cs8 $a class <" A B C D E F G H "> $.
+
+  $( Define the length 2 word constructor.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  df-s2 $a |- <" A B "> = ( <" A "> ++ <" B "> ) $.
+
+  $( Define the length 3 word constructor.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  df-s3 $a |- <" A B C "> = ( <" A B "> ++ <" C "> ) $.
+
+  $( Define the length 4 word constructor.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  df-s4 $a |- <" A B C D "> = ( <" A B C "> ++ <" D "> ) $.
+
+  $( Define the length 5 word constructor.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  df-s5 $a |- <" A B C D E "> = ( <" A B C D "> ++ <" E "> ) $.
+
+  $( Define the length 6 word constructor.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  df-s6 $a |- <" A B C D E F "> = ( <" A B C D E "> ++ <" F "> ) $.
+
+  $( Define the length 7 word constructor.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  df-s7 $a |- <" A B C D E F G "> = ( <" A B C D E F "> ++ <" G "> ) $.
+
+  $( Define the length 8 word constructor.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  df-s8 $a |- <" A B C D E F G H "> = ( <" A B C D E F G "> ++ <" H "> ) $.
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Elementary real and complex functions
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
