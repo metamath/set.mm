@@ -120264,6 +120264,14 @@ $)
   s3cl $p |- ( ( A e. X /\ B e. X /\ C e. X ) -> <" A B C "> e. Word X ) $=
     ( wcel w3a simp1 simp2 simp3 s3cld ) ADEZBDEZCDEZFABCDKLMGKLMHKLMIJ $.
 
+  $( Extract the first symbol from a doubleton word.  (Contributed by Stefan
+     O'Rear, 23-Aug-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.) $)
+  s2fv0g $p |- ( ( A e. V /\ B e. W ) -> ( <" A B "> ` 0 ) = A ) $=
+    ( wcel wa cs1 cs2 c1 cc0 df-s2 cvv cword s1cl wrdv syl adantr cfv wceq a1i
+    chash s1leng simpl simpr s1fv cn0 0nn0 clt wbr 0lt1 cats1fvd ) ACEZBDEZFZAG
+    ZABHIJCDBAABKULUOLMEZUMULUOCMEUPACNCUOOPQULUOUARISUMACUBQULUMUCULUMUDULJUOR
+    ASUMACUEQJUFEUNUGTJIUHUIUNUJTUK $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
