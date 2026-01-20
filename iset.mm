@@ -120109,6 +120109,40 @@ $)
         MNZECUPMHUFAUQDPQOZEAUQBMNZUOMNZQOZURABRUCSUOFUCSUQVATIAGFJUGRFBUOUDUEA
         USDUTPQUSDTAKUHAGFSUTPTJGFUIUJUKULLUMUN $.
     $}
+
+    ${
+      cats1catd.2 $e |- ( ph -> A e. Word _V ) $.
+      cats1catd.3 $e |- ( ph -> S e. Word _V ) $.
+      cats1catd.x $e |- ( ph -> X e. W ) $.
+      cats1catd.4 $e |- ( ph -> C = ( B ++ <" X "> ) ) $.
+      cats1catd.5 $e |- ( ph -> B = ( A ++ S ) ) $.
+      $( Closure of concatenation with a singleton word.  (Contributed by Mario
+         Carneiro, 26-Feb-2016.)  (Revised by Jim Kingdon, 19-Jan-2026.) $)
+      cats1catd $p |- ( ph -> C = ( A ++ T ) ) $=
+        ( cconcat co cvv cword wcel wceq cs1 oveq1d s1cld ccatass syl3anc eqtrd
+        wrdv syl oveq2i a1i 3eqtr4d ) ACHUAZOPZBEULOPZOPZDBFOPZAUMBEOPZULOPZUOA
+        CUQULONUBABQRZSEUSSULUSSZURUOTJKAULGRSUTAHGLUCGULUGUHQBEULUDUEUFMUPUOTA
+        FUNBOIUIUJUK $.
+    $}
+  $}
+
+  ${
+    cats2catd.b $e |- ( ph -> B e. Word _V ) $.
+    cats2catd.d $e |- ( ph -> D e. Word _V ) $.
+    cats2catd.x $e |- ( ph -> X e. V ) $.
+    cats2catd.y $e |- ( ph -> Y e. W ) $.
+    cats2catd.a $e |- ( ph -> A = ( B ++ <" X "> ) ) $.
+    cats2catd.c $e |- ( ph -> C = ( <" Y "> ++ D ) ) $.
+    $( Closure of concatenation of concatenations with singleton words.
+       (Contributed by AV, 1-Mar-2021.)  (Revised by Jim Kingdon,
+       19-Jan-2026.) $)
+    cats2catd $p |- ( ph -> ( A ++ C ) = ( ( B ++ <" X Y "> ) ++ D ) ) $=
+      ( cconcat co cvv cword wcel cs1 cs2 oveq12d wceq s1cld syl ccatcl syl2anc
+      wrdv ccatass syl3anc df-s2 eqcomi oveq2i eqtrdi oveq1d 3eqtr2d ) ABDPQCHU
+      AZPQZIUAZEPQZPQZUSUTPQZEPQZCHIUBZPQZEPQABUSDVAPNOUCAUSRSZTZUTVGTZEVGTVDVB
+      UDACVGTZURVGTZVHJAURFSTVKAHFLUEFURUIUFZRCURUGUHAUTGSTVIAIGMUEGUTUIUFZKRUS
+      UTEUJUKAVCVFEPAVCCURUTPQZPQZVFAVJVKVIVCVOUDJVLVMRCURUTUJUKVNVECPVEVNHIULU
+      MUNUOUPUQ $.
   $}
 
 
