@@ -120213,6 +120213,12 @@ $)
        27-Feb-2016.) $)
     s2cld $p |- ( ph -> <" A B "> e. Word X ) $=
       ( cs1 cs2 df-s2 s1cld cats1cld ) ADBGBCHCBCIABDEJFK $.
+
+    s3cld.3 $e |- ( ph -> C e. X ) $.
+    $( A length 3 string is a word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s3cld $p |- ( ph -> <" A B C "> e. Word X ) $=
+      ( cs2 cs3 df-s3 s2cld cats1cld ) AEBCIBCDJDBCDKABCEFGLHM $.
   $}
 
 
