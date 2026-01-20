@@ -120167,6 +120167,14 @@ $)
     s4eqd $p |- ( ph -> <" A B C D "> = <" N O P Q "> ) $=
       ( cs3 cs1 cconcat co cs4 s3eqd df-s4 s1eqd oveq12d 3eqtr4g ) ABCDNZEOZPQH
       IFNZGOZPQBCDERHIFGRAUDUFUEUGPABCDFHIJKLSAEGMUAUBBCDETHIFGTUC $.
+
+    s5eqd.5 $e |- ( ph -> E = R ) $.
+    $( Equality theorem for a length 5 word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s5eqd $p |- ( ph -> <" A B C D E "> = <" N O P Q R "> ) $=
+      ( cs4 cs1 cconcat co cs5 s4eqd s1eqd oveq12d df-s5 3eqtr4g ) ABCDEQZIRZST
+      JKFGQZHRZSTBCDEIUAJKFGHUAAUGUIUHUJSABCDEFGJKLMNOUBAIHPUCUDBCDEIUEJKFGHUEU
+      F $.
   $}
 
 
