@@ -120259,6 +120259,11 @@ $)
   s2cl $p |- ( ( A e. X /\ B e. X ) -> <" A B "> e. Word X ) $=
     ( wcel wa simpl simpr s2cld ) ACDZBCDZEABCIJFIJGH $.
 
+  $( A length 3 string is a word.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  s3cl $p |- ( ( A e. X /\ B e. X /\ C e. X ) -> <" A B C "> e. Word X ) $=
+    ( wcel w3a simp1 simp2 simp3 s3cld ) ADEZBDEZCDEZFABCDKLMGKLMHKLMIJ $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
