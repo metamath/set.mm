@@ -120153,6 +120153,13 @@ $)
     s2eqd $p |- ( ph -> <" A B "> = <" N O "> ) $=
       ( cs1 cconcat co cs2 s1eqd oveq12d df-s2 3eqtr4g ) ABHZCHZIJDHZEHZIJBCKDE
       KAPRQSIABDFLACEGLMBCNDENO $.
+
+    s3eqd.3 $e |- ( ph -> C = P ) $.
+    $( Equality theorem for a length 3 word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s3eqd $p |- ( ph -> <" A B C "> = <" N O P "> ) $=
+      ( cs2 cs1 cconcat co cs3 s2eqd s1eqd oveq12d df-s3 3eqtr4g ) ABCKZDLZMNFG
+      KZELZMNBCDOFGEOAUAUCUBUDMABCFGHIPADEJQRBCDSFGEST $.
   $}
 
 
