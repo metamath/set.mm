@@ -120254,6 +120254,11 @@ $)
       LMNOPQUBRUC $.
   $}
 
+  $( A doubleton word is a word.  (Contributed by Stefan O'Rear, 23-Aug-2015.)
+     (Revised by Mario Carneiro, 26-Feb-2016.) $)
+  s2cl $p |- ( ( A e. X /\ B e. X ) -> <" A B "> e. Word X ) $=
+    ( wcel wa simpl simpr s2cld ) ACDZBCDZEABCIJFIJGH $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
