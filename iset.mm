@@ -120183,6 +120183,14 @@ $)
       ( cconcat cs5 cs1 co cs6 s5eqd s1eqd oveq12d df-s6 3eqtr4g ) ABCDEJUAZKUB
       ZTUCLMFGHUAZIUBZTUCBCDEJKUDLMFGHIUDAUJULUKUMTABCDEFGHJLMNOPQRUEAKISUFUGBC
       DEJKUHLMFGHIUHUI $.
+
+    s7eqd.6 $e |- ( ph -> G = T ) $.
+    $( Equality theorem for a length 7 word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s7eqd $p |- ( ph -> <" A B C D E F G "> = <" N O P Q R S T "> ) $=
+      ( cs6 cs1 cconcat co cs7 s6eqd s1eqd oveq12d df-s7 3eqtr4g ) ABCDEKLUCZMU
+      DZUEUFNOFGHIUCZJUDZUEUFBCDEKLMUGNOFGHIJUGAUMUOUNUPUEABCDEFGHIKLNOPQRSTUAU
+      HAMJUBUIUJBCDEKLMUKNOFGHIJUKUL $.
   $}
 
 
