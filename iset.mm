@@ -120175,6 +120175,14 @@ $)
       ( cs4 cs1 cconcat co cs5 s4eqd s1eqd oveq12d df-s5 3eqtr4g ) ABCDEQZIRZST
       JKFGQZHRZSTBCDEIUAJKFGHUAAUGUIUHUJSABCDEFGJKLMNOUBAIHPUCUDBCDEIUEJKFGHUEU
       F $.
+
+    s6eqd.6 $e |- ( ph -> F = S ) $.
+    $( Equality theorem for a length 6 word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s6eqd $p |- ( ph -> <" A B C D E F "> = <" N O P Q R S "> ) $=
+      ( cconcat cs5 cs1 co cs6 s5eqd s1eqd oveq12d df-s6 3eqtr4g ) ABCDEJUAZKUB
+      ZTUCLMFGHUAZIUBZTUCBCDEJKUDLMFGHIUDAUJULUKUMTABCDEFGHJLMNOPQRUEAKISUFUGBC
+      DEJKUHLMFGHIUHUI $.
   $}
 
 
