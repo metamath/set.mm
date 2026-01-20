@@ -120245,6 +120245,13 @@ $)
     s7cld $p |- ( ph -> <" A B C D E F G "> e. Word X ) $=
       ( cs6 cs7 df-s7 s6cld cats1cld ) AIBCDEFGQBCDEFGHRHBCDEFGHSABCDEFGIJKLMNO
       TPUA $.
+
+    s8cld.8 $e |- ( ph -> H e. X ) $.
+    $( A length 7 string is a word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s8cld $p |- ( ph -> <" A B C D E F G H "> e. Word X ) $=
+      ( cs7 cs8 df-s8 s7cld cats1cld ) AJBCDEFGHSBCDEFGHITIBCDEFGHIUAABCDEFGHJK
+      LMNOPQUBRUC $.
   $}
 
 
