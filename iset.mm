@@ -120191,6 +120191,14 @@ $)
       ( cs6 cs1 cconcat co cs7 s6eqd s1eqd oveq12d df-s7 3eqtr4g ) ABCDEKLUCZMU
       DZUEUFNOFGHIUCZJUDZUEUFBCDEKLMUGNOFGHIJUGAUMUOUNUPUEABCDEFGHIKLNOPQRSTUAU
       HAMJUBUIUJBCDEKLMUKNOFGHIJUKUL $.
+
+    s8eqd.6 $e |- ( ph -> H = U ) $.
+    $( Equality theorem for a length 8 word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s8eqd $p |- ( ph -> <" A B C D E F G H "> = <" N O P Q R S T U "> ) $=
+      ( cs7 cs1 cconcat co cs8 s7eqd s1eqd oveq12d df-s8 3eqtr4g ) ABCDELMNUFZO
+      UGZUHUIPQFGHIJUFZKUGZUHUIBCDELMNOUJPQFGHIJKUJAUPURUQUSUHABCDEFGHIJLMNPQRS
+      TUAUBUCUDUKAOKUEULUMBCDELMNOUNPQFGHIJKUNUO $.
   $}
 
 
