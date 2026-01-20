@@ -120219,6 +120219,12 @@ $)
        27-Feb-2016.) $)
     s3cld $p |- ( ph -> <" A B C "> e. Word X ) $=
       ( cs2 cs3 df-s3 s2cld cats1cld ) AEBCIBCDJDBCDKABCEFGLHM $.
+
+    s4cld.4 $e |- ( ph -> D e. X ) $.
+    $( A length 4 string is a word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s4cld $p |- ( ph -> <" A B C D "> e. Word X ) $=
+      ( cs3 cs4 df-s4 s3cld cats1cld ) AFBCDKBCDELEBCDEMABCDFGHINJO $.
   $}
 
 
