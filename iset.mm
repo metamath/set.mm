@@ -120201,6 +120201,11 @@ $)
       TUAUBUCUDUKAOKUEULUMBCDELMNOUNPQFGHIJKUNUO $.
   $}
 
+  $( Equality theorem for a length 3 word for the second symbol.  (Contributed
+     by AV, 4-Jan-2022.) $)
+  s3eq2 $p |- ( B = D -> <" A B C "> = <" A D C "> ) $=
+    ( wceq eqidd id s3eqd ) BDEZABCCADIAFIGICFH $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
