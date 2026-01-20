@@ -120225,6 +120225,12 @@ $)
        27-Feb-2016.) $)
     s4cld $p |- ( ph -> <" A B C D "> e. Word X ) $=
       ( cs3 cs4 df-s4 s3cld cats1cld ) AFBCDKBCDELEBCDEMABCDFGHINJO $.
+
+    s5cld.5 $e |- ( ph -> E e. X ) $.
+    $( A length 5 string is a word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s5cld $p |- ( ph -> <" A B C D E "> e. Word X ) $=
+      ( cs4 cs5 df-s5 s4cld cats1cld ) AGBCDEMBCDEFNFBCDEFOABCDEGHIJKPLQ $.
   $}
 
 
