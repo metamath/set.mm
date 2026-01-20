@@ -120094,6 +120094,21 @@ $)
         JUCABSUDZTZVKVNTEUEBUFRZUGUKTZVMVJUHKAHSAHGNUIUJAEUEULRZTVPUMTZEVPUNUOV
         QAEUPVRPUQURAVOVPUPTVSKSBUSVPUTVAAEDVPUNQLVBEUEVPVDVCSSBVKEVEVFVGOVH $.
     $}
+
+    ${
+      cats1lend.s $e |- ( ph -> S e. Word _V ) $.
+      cats1lend.x $e |- ( ph -> X e. W ) $.
+      cats1lend.3 $e |- ( # ` S ) = M $.
+      cats1len.4 $e |- ( M + 1 ) = N $.
+      $( The length of concatenation with a singleton word.  (Contributed by
+         Mario Carneiro, 26-Feb-2016.)  (Revised by Jim Kingdon,
+         19-Jan-2026.) $)
+      cats1lend $p |- ( ph -> ( # ` T ) = N ) $=
+        ( chash cfv co c1 caddc cvv wcel wceq cs1 cconcat cword ccatlen syl2anc
+        fveq2i s1cld a1i s1leng syl oveq12d eqtrd eqtrdi eqtrid ) ACMNBGUAZUBOZ
+        MNZECUPMHUFAUQDPQOZEAUQBMNZUOMNZQOZURABRUCSUOFUCSUQVATIAGFJUGRFBUOUDUEA
+        USDUTPQUSDTAKUHAGFSUTPTJGFUIUJUKULLUMUN $.
+    $}
   $}
 
 
