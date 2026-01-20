@@ -120145,6 +120145,16 @@ $)
       MUNUOUPUQ $.
   $}
 
+  ${
+    s2eqd.1 $e |- ( ph -> A = N ) $.
+    s2eqd.2 $e |- ( ph -> B = O ) $.
+    $( Equality theorem for a doubleton word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s2eqd $p |- ( ph -> <" A B "> = <" N O "> ) $=
+      ( cs1 cconcat co cs2 s1eqd oveq12d df-s2 3eqtr4g ) ABHZCHZIJDHZEHZIJBCKDE
+      KAPRQSIABDFLACEGLMBCNDENO $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
