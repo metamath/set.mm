@@ -120206,6 +120206,15 @@ $)
   s3eq2 $p |- ( B = D -> <" A B C "> = <" A D C "> ) $=
     ( wceq eqidd id s3eqd ) BDEZABCCADIAFIGICFH $.
 
+  ${
+    s2cld.1 $e |- ( ph -> A e. X ) $.
+    s2cld.2 $e |- ( ph -> B e. X ) $.
+    $( A doubleton word is a word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s2cld $p |- ( ph -> <" A B "> e. Word X ) $=
+      ( cs1 cs2 df-s2 s1cld cats1cld ) ADBGBCHCBCIABDEJFK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
