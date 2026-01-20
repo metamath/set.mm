@@ -92,6 +92,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+18-Jan-26 elprn1    [same]      Moved from GS's mathbox to main set.mm
+18-Jan-26 elprn2    [same]      Moved from GS's mathbox to main set.mm
 10-Jan-26 xrltnled  [same]      Moved from GS's mathbox to main set.mm
 28-Dec-25 addlenrevpfx --       deleted; use addlenpfx plus addcom
 23-Dec-25 isomnd    [same]      Moved from TA's mathbox to main set.mm
