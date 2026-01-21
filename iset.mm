@@ -120294,6 +120294,14 @@ $)
     ( wcel wa cs1 cs2 c1 df-s2 cvv elex adantr s1cld simpr chash wceq cats1fvnd
     cfv s1leng ) ACEZBDEZFZAGZABHIDBABJUCAKUAAKEUBACLMNUAUBOUAUDPSIQUBACTMR $.
 
+  $( The length of a doubleton word.  (Contributed by Stefan O'Rear,
+     23-Aug-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.) $)
+  s2leng $p |- ( ( A e. V /\ B e. W ) -> ( # ` <" A B "> ) = 2 ) $=
+    ( wcel wa cs2 chash cfv cs1 c1 caddc co c2 df-s2 cvv elex adantr s1cld eqid
+    simpr cats1lend wceq s1leng oveq1d 1p1e2 eqtrdi eqtrd ) ACEZBDEZFZABGZHIAJZ
+    HIZKLMZNUKUMULUNUODBABOUKAPUIAPEUJACQRSUIUJUAUNTUOTUBUKUOKKLMNUKUNKKLUIUNKU
+    CUJACUDRUEUFUGUH $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
