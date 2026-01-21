@@ -120077,6 +120077,22 @@ $)
     $}
 
     ${
+      cats1fvnd.2 $e |- ( ph -> S e. Word _V ) $.
+      cats1fvnd.x $e |- ( ph -> X e. V ) $.
+      cats1fvnd.3 $e |- ( ph -> ( # ` S ) = M ) $.
+      $( The last symbol of a concatenation with a singleton word.
+         (Contributed by Mario Carneiro, 26-Feb-2016.)  (Revised by Jim
+         Kingdon, 20-Jan-2026.) $)
+      cats1fvnd $p |- ( ph -> ( T ` M ) = X ) $=
+        ( cfv cc0 chash caddc co wceq cvv wcel syl cn cs1 cconcat a1i cword cn0
+        lencl nn0cnd addlidd eqtr2d fveq12d cfzo elex s1cld s1leng 1nn eqeltrdi
+        c1 lbfzo0 sylibr ccatval3 syl3anc s1fv 3eqtrd ) ADCKLBMKZNOZBFUAZUBOZKZ
+        LVFKZFADVECVGCVGPAGUCAVEVDDAVDAVDABQUDZRZVDUERHQBUFSUGUHJUIUJAVKVFVJRZL
+        LVFMKZUKORZVHVIPHAFERZVLIVOFQFEULUMSAVOVNIVOVMTRVNVOVMUQTFEUNUOUPVMURUS
+        SQBVFLUTVAAVOVIFPIFEVBSVC $.
+    $}
+
+    ${
       cats1fvd.s $e |- ( ph -> S e. Word _V ) $.
       cats1fvd.3 $e |- ( ph -> ( # ` S ) = M ) $.
       cats1fvd.yex $e |- ( ph -> Y e. V ) $.
