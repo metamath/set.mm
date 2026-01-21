@@ -120318,6 +120318,14 @@ $)
     ZHZABIZABCJKLDFCAABCMUPABNUPADUMUNUOOZPUPBEUMUNUOUBPUCUMUNUQUDQKRUOABDEUASU
     RUMUNUOUEUMUNLUQQARUOABDEUFSLUGGUPUHTLKUIUJUPUKTUL $.
 
+  $( Extract the second symbol from a length 3 string.  (Contributed by Mario
+     Carneiro, 13-Jan-2017.) $)
+  s3fv1g $p |- ( ( A e. V /\ B e. W /\ C e. X ) -> ( <" A B C "> ` 1 ) = B ) $=
+    ( wcel w3a cs2 cs3 c2 c1 df-s3 cvv simp1 elexd cfv wceq 3adant3 a1i cn0 clt
+    simp2 s2cld chash s2leng simp3 s2fv1g 1nn0 wbr 1lt2 cats1fvd ) ADGZBEGZCFGZ
+    HZABIZABCJKLEFCBABCMUPABNUPADUMUNUOOPUPBEUMUNUOUCZPUDUMUNUQUEQKRUOABDEUFSUR
+    UMUNUOUGUMUNLUQQBRUOABDEUHSLUAGUPUITLKUBUJUPUKTUL $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
