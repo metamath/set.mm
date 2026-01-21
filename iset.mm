@@ -120302,6 +120302,14 @@ $)
     HIZKLMZNUKUMULUNUODBABOUKAPUIAPEUJACQRSUIUJUAUNTUOTUBUKUOKKLMNUKUNKKLUIUNKU
     CUJACUDRUEUFUGUH $.
 
+  $( The domain of a doubleton word is an unordered pair.  (Contributed by AV,
+     9-Jan-2020.) $)
+  s2dmg $p |- ( ( A e. V /\ B e. W ) -> dom <" A B "> = { 0 , 1 } ) $=
+    ( wcel wa cc0 c1 cpr cvv cs2 chash cfv cfzo co wf elex syl c2 wceq syl2an
+    cword s2cl wrdf s2leng oveq2 fzo0to2pr eqtrdi feq2d mpbid fdmd ) ACEZBDEZFZ
+    GHIZJABKZUNGUPLMZNOZJUPPZUOJUPPULAJEZBJEZUSUMACQBDQUTVAFUPJUBEUSABJUCJUPUDR
+    UAUNURUOJUPUNUQSTZURUOTABCDUEVBURGSNOUOUQSGNUFUGUHRUIUJUK $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
