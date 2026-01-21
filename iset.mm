@@ -120288,6 +120288,12 @@ $)
     ZABHIJCDBAABKULUOLMEZUMULUOCMEUPACNCUOOPQULUOUARISUMACUBQULUMUCULUMUDULJUOR
     ASUMACUEQJUFEUNUGTJIUHUIUNUJTUK $.
 
+  $( Extract the second symbol from a doubleton word.  (Contributed by Stefan
+     O'Rear, 23-Aug-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.) $)
+  s2fv1g $p |- ( ( A e. V /\ B e. W ) -> ( <" A B "> ` 1 ) = B ) $=
+    ( wcel wa cs1 cs2 c1 df-s2 cvv elex adantr s1cld simpr chash wceq cats1fvnd
+    cfv s1leng ) ACEZBDEZFZAGZABHIDBABJUCAKUAAKEUBACLMNUAUBOUAUDPSIQUBACTMR $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
