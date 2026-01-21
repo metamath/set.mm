@@ -120310,6 +120310,14 @@ $)
     GHIZJABKZUNGUPLMZNOZJUPPZUOJUPPULAJEZBJEZUSUMACQBDQUTVAFUPJUBEUSABJUCJUPUDR
     UAUNURUOJUPUNUQSTZURUOTABCDUEVBURGSNOUOUQSGNUFUGUHRUIUJUK $.
 
+  $( Extract the first symbol from a length 3 string.  (Contributed by Mario
+     Carneiro, 13-Jan-2017.) $)
+  s3fv0g $p |- ( ( A e. V /\ B e. W /\ C e. X ) -> ( <" A B C "> ` 0 ) = A ) $=
+    ( wcel w3a cs2 cs3 c2 cc0 df-s3 cvv simp1 elexd cfv wceq 3adant3 a1i s2leng
+    simp2 s2cld chash simp3 s2fv0g cn0 0nn0 clt wbr 2pos cats1fvd ) ADGZBEGZCFG
+    ZHZABIZABCJKLDFCAABCMUPABNUPADUMUNUOOZPUPBEUMUNUOUBPUCUMUNUQUDQKRUOABDEUASU
+    RUMUNUOUEUMUNLUQQARUOABDEUFSLUGGUPUHTLKUIUJUPUKTUL $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
