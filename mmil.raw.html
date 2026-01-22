@@ -1562,6 +1562,15 @@ then case elimination will work using theorems such as ~ exmiddc and ~ mpjaodan<
   close.</td>
 </tr>
 
+<tr>
+  <td>df-ifp , dfifp2 , dfifp3 , dfifp4 , dfifp5 , dfifp6 ,
+  dfifp7 , ifpdfbi , anifp , ifpor , ifpn , ifptru , ifpfal ,
+  ifpid , casesifp , ifpbi123d , ifpbi23d , ifpimpda , 1fpid3</td>
+  <td><i>none</i></td>
+  <td>should be possible although many theorems are likely to
+  need decidability conditions</td>
+</tr>
+
 <TR>
 <TD>3ianor</TD>
 <TD>~ 3ianorr </TD>
@@ -16823,11 +16832,31 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>df-wlks</td>
+  <td><i>none</i></td>
+  <td>the set.mm definition uses if- ( df-ifp ) and probably
+  the set of vertexes will need to have decidable equality for
+  the definition to behave well</td>
+</tr>
+
+<tr>
+  <td>df-trls</td>
+  <td><i>none</i></td>
+  <td>depends on Walks ( df-wlks )</td>
+</tr>
+
+<tr>
+  <td>df-eupth</td>
+  <td><i>none</i></td>
+  <td>depends on Trails ( df-trls )</td>
+</tr>
+
+<tr>
   <td>konigsberg</td>
   <td><i>none</i></td>
   <td>we don't have a complete list of what this proof depends on,
   but here's a partial list of (direct or indirect) dependencies of the
-  set.mm proof: df-s7 , EulerPaths , and ccatalpha</td>
+  set.mm proof: EulerPaths ( df-eupth ), and ccatalpha</td>
 </tr>
 
 <tr>
