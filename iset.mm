@@ -120015,6 +120015,337 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Longer string literals
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+  $( Syntax for the length 2 word constructor. $)
+  cs2 $a class <" A B "> $.
+
+  $( Syntax for the length 3 word constructor. $)
+  cs3 $a class <" A B C "> $.
+
+  $( Syntax for the length 4 word constructor. $)
+  cs4 $a class <" A B C D "> $.
+
+  $( Syntax for the length 5 word constructor. $)
+  cs5 $a class <" A B C D E "> $.
+
+  $( Syntax for the length 6 word constructor. $)
+  cs6 $a class <" A B C D E F "> $.
+
+  $( Syntax for the length 7 word constructor. $)
+  cs7 $a class <" A B C D E F G "> $.
+
+  $( Syntax for the length 8 word constructor. $)
+  cs8 $a class <" A B C D E F G H "> $.
+
+  $( Define the length 2 word constructor.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  df-s2 $a |- <" A B "> = ( <" A "> ++ <" B "> ) $.
+
+  $( Define the length 3 word constructor.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  df-s3 $a |- <" A B C "> = ( <" A B "> ++ <" C "> ) $.
+
+  $( Define the length 4 word constructor.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  df-s4 $a |- <" A B C D "> = ( <" A B C "> ++ <" D "> ) $.
+
+  $( Define the length 5 word constructor.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  df-s5 $a |- <" A B C D E "> = ( <" A B C D "> ++ <" E "> ) $.
+
+  $( Define the length 6 word constructor.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  df-s6 $a |- <" A B C D E F "> = ( <" A B C D E "> ++ <" F "> ) $.
+
+  $( Define the length 7 word constructor.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  df-s7 $a |- <" A B C D E F G "> = ( <" A B C D E F "> ++ <" G "> ) $.
+
+  $( Define the length 8 word constructor.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  df-s8 $a |- <" A B C D E F G H "> = ( <" A B C D E F G "> ++ <" H "> ) $.
+
+  ${
+    cats1cld.1 $e |- T = ( S ++ <" X "> ) $.
+    ${
+      cats1cld.2 $e |- ( ph -> S e. Word A ) $.
+      cats1cld.3 $e |- ( ph -> X e. A ) $.
+      $( Closure of concatenation with a singleton word.  (Contributed by Mario
+         Carneiro, 26-Feb-2016.) $)
+      cats1cld $p |- ( ph -> T e. Word A ) $=
+        ( cs1 cconcat co cword wcel s1cld ccatcl syl2anc eqeltrid ) ADCEIZJKZBL
+        ZFACTMRTMSTMGAEBHNBCROPQ $.
+    $}
+
+    ${
+      cats1cli.2 $e |- S e. Word _V $.
+      cats1fvn.3 $e |- ( # ` S ) = M $.
+      $( The last symbol of a concatenation with a singleton word.
+         (Contributed by Mario Carneiro, 26-Feb-2016.) $)
+      cats1fvn $p |- ( X e. V -> ( T ` M ) = X ) $=
+        ( wcel cfv cc0 cs1 chash caddc co cconcat oveq2i cn0 cvv cn cword lencl
+        ax-mp eqeltrri nn0cni addlidi eqtr2i fveq12i cfzo wceq s1cld s1leng 1nn
+        elex c1 eqeltrdi lbfzo0 sylibr ccatval3 mp3an2i eqtrid s1fv eqtrd ) EDI
+        ZCBJZKELZJZEVDVEKAMJZNOZAVFPOZJZVGCVIBVJFVIKCNOCVHCKNHQCCVHCRHASUAZIZVH
+        RIGSAUBUCUDUEUFUGUHVMVDVFVLIKKVFMJZUIOIZVKVGUJGVDESEDUNUKVDVNTIVOVDVNUO
+        TEDULUMUPVNUQURSAVFKUSUTVAEDVBVC $.
+    $}
+
+    ${
+      cats1fvnd.2 $e |- ( ph -> S e. Word _V ) $.
+      cats1fvnd.x $e |- ( ph -> X e. V ) $.
+      cats1fvnd.3 $e |- ( ph -> ( # ` S ) = M ) $.
+      $( The last symbol of a concatenation with a singleton word.
+         (Contributed by Mario Carneiro, 26-Feb-2016.)  (Revised by Jim
+         Kingdon, 20-Jan-2026.) $)
+      cats1fvnd $p |- ( ph -> ( T ` M ) = X ) $=
+        ( cfv cc0 chash caddc co wceq cvv wcel syl cn cs1 cconcat a1i cword cn0
+        lencl nn0cnd addlidd eqtr2d fveq12d cfzo elex s1cld s1leng 1nn eqeltrdi
+        c1 lbfzo0 sylibr ccatval3 syl3anc s1fv 3eqtrd ) ADCKLBMKZNOZBFUAZUBOZKZ
+        LVFKZFADVECVGCVGPAGUCAVEVDDAVDAVDABQUDZRZVDUERHQBUFSUGUHJUIUJAVKVFVJRZL
+        LVFMKZUKORZVHVIPHAFERZVLIVOFQFEULUMSAVOVNIVOVMTRVNVOVMUQTFEUNUOUPVMURUS
+        SQBVFLUTVAAVOVIFPIFEVBSVC $.
+    $}
+
+    ${
+      cats1fvd.s $e |- ( ph -> S e. Word _V ) $.
+      cats1fvd.3 $e |- ( ph -> ( # ` S ) = M ) $.
+      cats1fvd.yex $e |- ( ph -> Y e. V ) $.
+      cats1fvd.x $e |- ( ph -> X e. W ) $.
+      cats1fvd.y $e |- ( ph -> ( S ` N ) = Y ) $.
+      cats1fvd.5 $e |- ( ph -> N e. NN0 ) $.
+      cats1fvd.6 $e |- ( ph -> N < M ) $.
+      $( A symbol other than the last in a concatenation with a singleton word.
+         (Contributed by Mario Carneiro, 26-Feb-2016.)  (Revised by Jim
+         Kingdon, 20-Jan-2026.) $)
+      cats1fvd $p |- ( ph -> ( T ` N ) = Y ) $=
+        ( cfv cvv wcel cs1 cconcat fveq1i cword cc0 chash cfzo wceq elexd s1cld
+        co cuz cz clt wbr cn0 nn0uz eleqtrdi lencl nn0z 3syl breqtrrd syl3anbrc
+        elfzo2 ccatval1 syl3anc eqtrid eqtrd ) AECRZEBRZIAVIEBHUAZUBUKZRZVJECVL
+        JUCABSUDZTZVKVNTEUEBUFRZUGUKTZVMVJUHKAHSAHGNUIUJAEUEULRZTVPUMTZEVPUNUOV
+        QAEUPVRPUQURAVOVPUPTVSKSBUSVPUTVAAEDVPUNQLVBEUEVPVDVCSSBVKEVEVFVGOVH $.
+    $}
+
+    ${
+      cats1lend.s $e |- ( ph -> S e. Word _V ) $.
+      cats1lend.x $e |- ( ph -> X e. W ) $.
+      cats1lend.3 $e |- ( # ` S ) = M $.
+      cats1len.4 $e |- ( M + 1 ) = N $.
+      $( The length of concatenation with a singleton word.  (Contributed by
+         Mario Carneiro, 26-Feb-2016.)  (Revised by Jim Kingdon,
+         19-Jan-2026.) $)
+      cats1lend $p |- ( ph -> ( # ` T ) = N ) $=
+        ( chash cfv co c1 caddc cvv wcel wceq cs1 cconcat cword ccatlen syl2anc
+        fveq2i s1cld a1i s1leng syl oveq12d eqtrd eqtrdi eqtrid ) ACMNBGUAZUBOZ
+        MNZECUPMHUFAUQDPQOZEAUQBMNZUOMNZQOZURABRUCSUOFUCSUQVATIAGFJUGRFBUOUDUEA
+        USDUTPQUSDTAKUHAGFSUTPTJGFUIUJUKULLUMUN $.
+    $}
+
+    ${
+      cats1catd.2 $e |- ( ph -> A e. Word _V ) $.
+      cats1catd.3 $e |- ( ph -> S e. Word _V ) $.
+      cats1catd.x $e |- ( ph -> X e. W ) $.
+      cats1catd.4 $e |- ( ph -> C = ( B ++ <" X "> ) ) $.
+      cats1catd.5 $e |- ( ph -> B = ( A ++ S ) ) $.
+      $( Closure of concatenation with a singleton word.  (Contributed by Mario
+         Carneiro, 26-Feb-2016.)  (Revised by Jim Kingdon, 19-Jan-2026.) $)
+      cats1catd $p |- ( ph -> C = ( A ++ T ) ) $=
+        ( cconcat co cvv cword wcel wceq cs1 oveq1d s1cld ccatass syl3anc eqtrd
+        wrdv syl oveq2i a1i 3eqtr4d ) ACHUAZOPZBEULOPZOPZDBFOPZAUMBEOPZULOPZUOA
+        CUQULONUBABQRZSEUSSULUSSZURUOTJKAULGRSUTAHGLUCGULUGUHQBEULUDUEUFMUPUOTA
+        FUNBOIUIUJUK $.
+    $}
+  $}
+
+  ${
+    cats2catd.b $e |- ( ph -> B e. Word _V ) $.
+    cats2catd.d $e |- ( ph -> D e. Word _V ) $.
+    cats2catd.x $e |- ( ph -> X e. V ) $.
+    cats2catd.y $e |- ( ph -> Y e. W ) $.
+    cats2catd.a $e |- ( ph -> A = ( B ++ <" X "> ) ) $.
+    cats2catd.c $e |- ( ph -> C = ( <" Y "> ++ D ) ) $.
+    $( Closure of concatenation of concatenations with singleton words.
+       (Contributed by AV, 1-Mar-2021.)  (Revised by Jim Kingdon,
+       19-Jan-2026.) $)
+    cats2catd $p |- ( ph -> ( A ++ C ) = ( ( B ++ <" X Y "> ) ++ D ) ) $=
+      ( cconcat co cvv cword wcel cs1 cs2 oveq12d wceq s1cld syl ccatcl syl2anc
+      wrdv ccatass syl3anc df-s2 eqcomi oveq2i eqtrdi oveq1d 3eqtr2d ) ABDPQCHU
+      AZPQZIUAZEPQZPQZUSUTPQZEPQZCHIUBZPQZEPQABUSDVAPNOUCAUSRSZTZUTVGTZEVGTVDVB
+      UDACVGTZURVGTZVHJAURFSTVKAHFLUEFURUIUFZRCURUGUHAUTGSTVIAIGMUEGUTUIUFZKRUS
+      UTEUJUKAVCVFEPAVCCURUTPQZPQZVFAVJVKVIVCVOUDJVLVMRCURUTUJUKVNVECPVEVNHIULU
+      MUNUOUPUQ $.
+  $}
+
+  ${
+    s2eqd.1 $e |- ( ph -> A = N ) $.
+    s2eqd.2 $e |- ( ph -> B = O ) $.
+    $( Equality theorem for a doubleton word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s2eqd $p |- ( ph -> <" A B "> = <" N O "> ) $=
+      ( cs1 cconcat co cs2 s1eqd oveq12d df-s2 3eqtr4g ) ABHZCHZIJDHZEHZIJBCKDE
+      KAPRQSIABDFLACEGLMBCNDENO $.
+
+    s3eqd.3 $e |- ( ph -> C = P ) $.
+    $( Equality theorem for a length 3 word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s3eqd $p |- ( ph -> <" A B C "> = <" N O P "> ) $=
+      ( cs2 cs1 cconcat co cs3 s2eqd s1eqd oveq12d df-s3 3eqtr4g ) ABCKZDLZMNFG
+      KZELZMNBCDOFGEOAUAUCUBUDMABCFGHIPADEJQRBCDSFGEST $.
+
+    s4eqd.4 $e |- ( ph -> D = Q ) $.
+    $( Equality theorem for a length 4 word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s4eqd $p |- ( ph -> <" A B C D "> = <" N O P Q "> ) $=
+      ( cs3 cs1 cconcat co cs4 s3eqd df-s4 s1eqd oveq12d 3eqtr4g ) ABCDNZEOZPQH
+      IFNZGOZPQBCDERHIFGRAUDUFUEUGPABCDFHIJKLSAEGMUAUBBCDETHIFGTUC $.
+
+    s5eqd.5 $e |- ( ph -> E = R ) $.
+    $( Equality theorem for a length 5 word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s5eqd $p |- ( ph -> <" A B C D E "> = <" N O P Q R "> ) $=
+      ( cs4 cs1 cconcat co cs5 s4eqd s1eqd oveq12d df-s5 3eqtr4g ) ABCDEQZIRZST
+      JKFGQZHRZSTBCDEIUAJKFGHUAAUGUIUHUJSABCDEFGJKLMNOUBAIHPUCUDBCDEIUEJKFGHUEU
+      F $.
+
+    s6eqd.6 $e |- ( ph -> F = S ) $.
+    $( Equality theorem for a length 6 word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s6eqd $p |- ( ph -> <" A B C D E F "> = <" N O P Q R S "> ) $=
+      ( cconcat cs5 cs1 co cs6 s5eqd s1eqd oveq12d df-s6 3eqtr4g ) ABCDEJUAZKUB
+      ZTUCLMFGHUAZIUBZTUCBCDEJKUDLMFGHIUDAUJULUKUMTABCDEFGHJLMNOPQRUEAKISUFUGBC
+      DEJKUHLMFGHIUHUI $.
+
+    s7eqd.6 $e |- ( ph -> G = T ) $.
+    $( Equality theorem for a length 7 word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s7eqd $p |- ( ph -> <" A B C D E F G "> = <" N O P Q R S T "> ) $=
+      ( cs6 cs1 cconcat co cs7 s6eqd s1eqd oveq12d df-s7 3eqtr4g ) ABCDEKLUCZMU
+      DZUEUFNOFGHIUCZJUDZUEUFBCDEKLMUGNOFGHIJUGAUMUOUNUPUEABCDEFGHIKLNOPQRSTUAU
+      HAMJUBUIUJBCDEKLMUKNOFGHIJUKUL $.
+
+    s8eqd.6 $e |- ( ph -> H = U ) $.
+    $( Equality theorem for a length 8 word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s8eqd $p |- ( ph -> <" A B C D E F G H "> = <" N O P Q R S T U "> ) $=
+      ( cs7 cs1 cconcat co cs8 s7eqd s1eqd oveq12d df-s8 3eqtr4g ) ABCDELMNUFZO
+      UGZUHUIPQFGHIJUFZKUGZUHUIBCDELMNOUJPQFGHIJKUJAUPURUQUSUHABCDEFGHIJLMNPQRS
+      TUAUBUCUDUKAOKUEULUMBCDELMNOUNPQFGHIJKUNUO $.
+  $}
+
+  $( Equality theorem for a length 3 word for the second symbol.  (Contributed
+     by AV, 4-Jan-2022.) $)
+  s3eq2 $p |- ( B = D -> <" A B C "> = <" A D C "> ) $=
+    ( wceq eqidd id s3eqd ) BDEZABCCADIAFIGICFH $.
+
+  ${
+    s2cld.1 $e |- ( ph -> A e. X ) $.
+    s2cld.2 $e |- ( ph -> B e. X ) $.
+    $( A doubleton word is a word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s2cld $p |- ( ph -> <" A B "> e. Word X ) $=
+      ( cs1 cs2 df-s2 s1cld cats1cld ) ADBGBCHCBCIABDEJFK $.
+
+    s3cld.3 $e |- ( ph -> C e. X ) $.
+    $( A length 3 string is a word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s3cld $p |- ( ph -> <" A B C "> e. Word X ) $=
+      ( cs2 cs3 df-s3 s2cld cats1cld ) AEBCIBCDJDBCDKABCEFGLHM $.
+
+    s4cld.4 $e |- ( ph -> D e. X ) $.
+    $( A length 4 string is a word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s4cld $p |- ( ph -> <" A B C D "> e. Word X ) $=
+      ( cs3 cs4 df-s4 s3cld cats1cld ) AFBCDKBCDELEBCDEMABCDFGHINJO $.
+
+    s5cld.5 $e |- ( ph -> E e. X ) $.
+    $( A length 5 string is a word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s5cld $p |- ( ph -> <" A B C D E "> e. Word X ) $=
+      ( cs4 cs5 df-s5 s4cld cats1cld ) AGBCDEMBCDEFNFBCDEFOABCDEGHIJKPLQ $.
+
+    s6cld.6 $e |- ( ph -> F e. X ) $.
+    $( A length 6 string is a word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s6cld $p |- ( ph -> <" A B C D E F "> e. Word X ) $=
+      ( cs5 cs6 df-s6 s5cld cats1cld ) AHBCDEFOBCDEFGPGBCDEFGQABCDEFHIJKLMRNS
+      $.
+
+    s7cld.7 $e |- ( ph -> G e. X ) $.
+    $( A length 7 string is a word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s7cld $p |- ( ph -> <" A B C D E F G "> e. Word X ) $=
+      ( cs6 cs7 df-s7 s6cld cats1cld ) AIBCDEFGQBCDEFGHRHBCDEFGHSABCDEFGIJKLMNO
+      TPUA $.
+
+    s8cld.8 $e |- ( ph -> H e. X ) $.
+    $( A length 8 string is a word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s8cld $p |- ( ph -> <" A B C D E F G H "> e. Word X ) $=
+      ( cs7 cs8 df-s8 s7cld cats1cld ) AJBCDEFGHSBCDEFGHITIBCDEFGHIUAABCDEFGHJK
+      LMNOPQUBRUC $.
+  $}
+
+  $( A doubleton word is a word.  (Contributed by Stefan O'Rear, 23-Aug-2015.)
+     (Revised by Mario Carneiro, 26-Feb-2016.) $)
+  s2cl $p |- ( ( A e. X /\ B e. X ) -> <" A B "> e. Word X ) $=
+    ( wcel wa simpl simpr s2cld ) ACDZBCDZEABCIJFIJGH $.
+
+  $( A length 3 string is a word.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  s3cl $p |- ( ( A e. X /\ B e. X /\ C e. X ) -> <" A B C "> e. Word X ) $=
+    ( wcel w3a simp1 simp2 simp3 s3cld ) ADEZBDEZCDEZFABCDKLMGKLMHKLMIJ $.
+
+  $( Extract the first symbol from a doubleton word.  (Contributed by Stefan
+     O'Rear, 23-Aug-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.) $)
+  s2fv0g $p |- ( ( A e. V /\ B e. W ) -> ( <" A B "> ` 0 ) = A ) $=
+    ( wcel wa cs1 cs2 c1 cc0 df-s2 cvv cword s1cl wrdv syl adantr cfv wceq a1i
+    chash s1leng simpl simpr s1fv cn0 0nn0 clt wbr 0lt1 cats1fvd ) ACEZBDEZFZAG
+    ZABHIJCDBAABKULUOLMEZUMULUOCMEUPACNCUOOPQULUOUARISUMACUBQULUMUCULUMUDULJUOR
+    ASUMACUEQJUFEUNUGTJIUHUIUNUJTUK $.
+
+  $( Extract the second symbol from a doubleton word.  (Contributed by Stefan
+     O'Rear, 23-Aug-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.) $)
+  s2fv1g $p |- ( ( A e. V /\ B e. W ) -> ( <" A B "> ` 1 ) = B ) $=
+    ( wcel wa cs1 cs2 c1 df-s2 cvv elex adantr s1cld simpr chash wceq cats1fvnd
+    cfv s1leng ) ACEZBDEZFZAGZABHIDBABJUCAKUAAKEUBACLMNUAUBOUAUDPSIQUBACTMR $.
+
+  $( The length of a doubleton word.  (Contributed by Stefan O'Rear,
+     23-Aug-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.) $)
+  s2leng $p |- ( ( A e. V /\ B e. W ) -> ( # ` <" A B "> ) = 2 ) $=
+    ( wcel wa cs2 chash cfv cs1 c1 caddc co c2 df-s2 cvv elex adantr s1cld eqid
+    simpr cats1lend wceq s1leng oveq1d 1p1e2 eqtrdi eqtrd ) ACEZBDEZFZABGZHIAJZ
+    HIZKLMZNUKUMULUNUODBABOUKAPUIAPEUJACQRSUIUJUAUNTUOTUBUKUOKKLMNUKUNKKLUIUNKU
+    CUJACUDRUEUFUGUH $.
+
+  $( The domain of a doubleton word is an unordered pair.  (Contributed by AV,
+     9-Jan-2020.) $)
+  s2dmg $p |- ( ( A e. V /\ B e. W ) -> dom <" A B "> = { 0 , 1 } ) $=
+    ( wcel wa cc0 c1 cpr cvv cs2 chash cfv cfzo co wf elex syl c2 wceq syl2an
+    cword s2cl wrdf s2leng oveq2 fzo0to2pr eqtrdi feq2d mpbid fdmd ) ACEZBDEZFZ
+    GHIZJABKZUNGUPLMZNOZJUPPZUOJUPPULAJEZBJEZUSUMACQBDQUTVAFUPJUBEUSABJUCJUPUDR
+    UAUNURUOJUPUNUQSTZURUOTABCDUEVBURGSNOUOUQSGNUFUGUHRUIUJUK $.
+
+  $( Extract the first symbol from a length 3 string.  (Contributed by Mario
+     Carneiro, 13-Jan-2017.) $)
+  s3fv0g $p |- ( ( A e. V /\ B e. W /\ C e. X ) -> ( <" A B C "> ` 0 ) = A ) $=
+    ( wcel w3a cs2 cs3 c2 cc0 df-s3 cvv simp1 elexd cfv wceq 3adant3 a1i s2leng
+    simp2 s2cld chash simp3 s2fv0g cn0 0nn0 clt wbr 2pos cats1fvd ) ADGZBEGZCFG
+    ZHZABIZABCJKLDFCAABCMUPABNUPADUMUNUOOZPUPBEUMUNUOUBPUCUMUNUQUDQKRUOABDEUASU
+    RUMUNUOUEUMUNLUQQARUOABDEUFSLUGGUPUHTLKUIUJUPUKTUL $.
+
+  $( Extract the second symbol from a length 3 string.  (Contributed by Mario
+     Carneiro, 13-Jan-2017.) $)
+  s3fv1g $p |- ( ( A e. V /\ B e. W /\ C e. X ) -> ( <" A B C "> ` 1 ) = B ) $=
+    ( wcel w3a cs2 cs3 c2 c1 df-s3 cvv simp1 elexd cfv wceq 3adant3 a1i cn0 clt
+    simp2 s2cld chash s2leng simp3 s2fv1g 1nn0 wbr 1lt2 cats1fvd ) ADGZBEGZCFGZ
+    HZABIZABCJKLEFCBABCMUPABNUPADUMUNUOOPUPBEUMUNUOUCZPUDUMUNUQUEQKRUOABDEUFSUR
+    UMUNUOUGUMUNLUQQBRUOABDEUHSLUAGUPUITLKUBUJUPUKTUL $.
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Elementary real and complex functions
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
