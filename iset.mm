@@ -196165,6 +196165,16 @@ $)
       VNSZAVGQVOSVCVDVILZVFVKTZJVGQAVGQVSAJBCDEFGHIUGWBVQAJVGVGWBVFVKWATVFVKVPT
       VQWAVFVKUFWAVPVFVKVDVIUHUIVFVKVPUJUKULUMVRVTAVGVLVMJVGUNUOVNAVGUQUPURVFVK
       AJVGVMVEVJGVDVIFUSUTVAVB $.
+
+    $( If a vertex is adjacent to two different vertices in a simple graph,
+       there is not only one edge starting at this vertex.  (Contributed by
+       Alexander van der Vekens, 10-Dec-2017.)  (Revised by AV, 17-Oct-2020.)
+       (Proof shortened by AV, 8-Jun-2021.) $)
+    usgr2edg1 $p |- ( ( ( G e. USGraph /\ A =/= B )
+                        /\ ( { N , A } e. E /\ { B , N } e. E ) )
+                      -> -. E! x e. dom I N e. ( I ` x ) ) $=
+      ( cusgr wcel cumgr wne cpr wa cv cfv cdm wreu wn usgrumgr umgr2edg1
+      sylanl1 ) EJKELKBCMGBNDKCGNDKOGAPFQKAFRSTEUAABCDEFGHIUBUC $.
   $}
 
 
