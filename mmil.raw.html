@@ -1130,7 +1130,9 @@ Non-empty almost always needs to be changed to inhabited (those terms are define
 
 <li>If you are proving something of the form ` -. A e. B ` and the proof does
 case elimination on whether ` A ` is a set or a proper class, use ~ pm2.01da so
-you only need to consider the case where ` A ` is a set (example: ~ fun2dmnop0 )</li>
+you only need to consider the case where ` A ` is a set (example: ~ fun2dmnop0 ).
+If a proof is proving ` -. ph ` and does case elimination on ` ph ` , the
+case elimination can be replaced by ~ pm2.01da (example: ~ uhgr2edg ).</li>
 
 <LI>Sometimes one direction of a biconditional holds, or subset holds instead of equality. You might be able to keep the easy direction and worry about the other one later.</LI>
 
@@ -1901,7 +1903,8 @@ is double negation elimination.</TD>
 
 <TR>
 <TD>rexanali</TD>
-<TD><I>none</I></TD>
+<TD>~ rexanaliim</TD>
+<TD>the converse is presumably not provable</TD>
 </TR>
 
 <TR>
@@ -16513,30 +16516,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>umgrnloopv</td>
-  <td>~ umgrnloopvv</td>
-  <td>adds a set existence condition</td>
-</tr>
-
-<tr>
-  <td>umgredgprv</td>
-  <td><i>none</i></td>
-  <td>may be possible now that we have ~ pr2cv</td>
-</tr>
-
-<tr>
-  <td>umgrnloop</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses umgredgprv</td>
-</tr>
-
-<tr>
-  <td>umgrnloop0</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses umgrnloop</td>
-</tr>
-
-<tr>
   <td>upgr1elem</td>
   <td>~ upgr1elem1</td>
   <td>changes related to set size and decidability</td>
@@ -16592,13 +16571,25 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>upgredgss , edgupgr</td>
+  <td>upgredgss</td>
+  <td>~ upgredgssen</td>
+  <td>restates how we say that a set has one or two elements</td>
+</tr>
+
+<tr>
+  <td>umgredgss</td>
+  <td>~ umgredgssen</td>
+  <td>restates how we say that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>edgupgr</td>
   <td>~ edgupgren</td>
   <td>restates how we say that a set has one or two elements</td>
 </tr>
 
 <tr>
-  <td>umgredgss , edgumgr</td>
+  <td>edgumgr</td>
   <td>~ edgumgren</td>
   <td>restates how we say that a set has two elements</td>
 </tr>
@@ -16608,6 +16599,132 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>would apparently need decidability equality for vertexes or
   other changes</td>
+</tr>
+
+<tr>
+  <td>df-uspgr</td>
+  <td>~ df-uspgren</td>
+  <td>changes how we express that a set has one or two elements</td>
+</tr>
+
+<tr>
+  <td>df-usgr</td>
+  <td>~ df-usgren</td>
+  <td>changes how we express that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>isuspgr</td>
+  <td>~ isuspgren</td>
+  <td>changes how we express that a set has one or two elements</td>
+</tr>
+
+<tr>
+  <td>isusgr , isusgrs</td>
+  <td>~ isusgren</td>
+  <td>changes how we express that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>uspgrf</td>
+  <td>~ uspgrfen</td>
+  <td>changes how we express that a set has one or two elements</td>
+</tr>
+
+<tr>
+  <td>usgrf , usgrfs</td>
+  <td>~ usgrfen</td>
+  <td>changes how we express that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>usgredgss</td>
+  <td>~ usgredgssen</td>
+  <td>changes how we express that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>edgusgr</td>
+  <td>~ edgusgren</td>
+  <td>changes how we express that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>isuspgrop</td>
+  <td>~ isuspgropen</td>
+  <td>changes how we express that a set has one or two elements</td>
+</tr>
+
+<tr>
+  <td>isusgrop</td>
+  <td>~ isusgropen</td>
+  <td>changes how we express that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>isausgr</td>
+  <td>~ isausgren</td>
+  <td>changes how we express that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>ausgrusgrb</td>
+  <td>~ ausgrusgrben</td>
+  <td>changes how we express that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>usgrausgri</td>
+  <td>~ usgrausgrien</td>
+  <td>changes how we express that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>ausgrumgri</td>
+  <td>~ ausgrumgrien</td>
+  <td>changes how we express that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>ausgrusgri</td>
+  <td>~ ausgrusgrien</td>
+  <td>changes how we express that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>usgrausgrb</td>
+  <td>~ usgrausgrben</td>
+  <td>changes how we express that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>usgruspgrb</td>
+  <td>~ usgruspgrben</td>
+  <td>changes how we express that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>usgrislfuspgr</td>
+  <td>~ usgrislfuspgrdom</td>
+  <td>changes how we express that a set has at least two elements</td>
+</tr>
+
+<tr>
+  <td>usgredg2</td>
+  <td>~ usgredg2en</td>
+  <td>changes how we express that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>usgredgppr</td>
+  <td>~ usgredgppren</td>
+  <td>changes how we express that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>edgssv2</td>
+  <td>~ edgssv2en</td>
+  <td>changes how we express that a set has two elements</td>
 </tr>
 
 <tr>
