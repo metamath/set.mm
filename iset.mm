@@ -196197,6 +196197,20 @@ $)
       KVQVRVSWMWQVQGCDGWHWHWHWHUQRWIVRWJWLWQGCWHURSWIVSWJWLWQDGWHVFSUSUTWFVTVIW
       BLZVRWEMABVIVKEEWAVITWCWSWDVRWEWAVIWBVAWAVIGVBVCWBVKTWSVQWEVSVRWBVKVIVDWB
       VKGVBVEVGVH $.
+
+    $( If a vertex is adjacent to two different vertices in a multigraph, there
+       is not only one edge starting at this vertex, analogous to ~ usgr2edg1 .
+       Lemma for theorems about friendship graphs.  (Contributed by Alexander
+       van der Vekens, 10-Dec-2017.)  (Revised by AV, 9-Jan-2020.) $)
+    umgr2edgneu $p |- ( ( ( G e. UMGraph /\ A =/= B )
+                        /\ ( { N , A } e. E /\ { B , N } e. E ) )
+                          -> -. E! x e. E N e. x ) $=
+      ( vy cumgr wcel wne wa cpr cv wrex weq wral wn reximi syl w3a umgrvad2edg
+      wi wreu 3simpc neneq 3ad2ant1 jca rexanaliim rexnalim intnand eleq2w reu4
+      sylnibr ) EIJBCKLFBMDJCFMDJLLZFANZJZADOZUQFHNZJZLZAHPZUCHDQZADQZLUQADUDUO
+      VDURUOVAVBRZLZHDOZADOZVDRZUOUPUSKZUQUTUAZHDOZADOVHAHBCDEFGUBVLVGADVKVFHDV
+      KVAVEVJUQUTUEVJUQVEUTUPUSUFUGUHSSTVHVCRZADOVIVGVMADVAVBHDUISVCADUJTTUKUQU
+      TAHDAHFULUMUN $.
   $}
 
 
