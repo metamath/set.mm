@@ -194983,8 +194983,8 @@ $)
       cv wo eqid upgrfen frnd eqsstrd ) BCDZBEFBGFZHARZIJKUFLJKSABMFZNOZBCPUDUE
       QUHUEAUEBUGUGTUETUAUBUC $.
 
-    $( The set of edges of a multigraph is a subset of the set of unordered
-       pairs of vertices.  (Contributed by AV, 25-Nov-2020.) $)
+    $( The set of edges of a multigraph is a subset of the set of proper
+       unordered pairs of vertices.  (Contributed by AV, 25-Nov-2020.) $)
     umgredgssen $p |- ( G e. UMGraph
                -> ( Edg ` G ) C_ { x e. ~P ( Vtx ` G ) | x ~~ 2o } ) $=
       ( cumgr wcel cedg cfv ciedg crn cv c2o cen wbr cvtx cpw crab edgvalg eqid
@@ -195239,9 +195239,9 @@ $)
       ( cuspgr wcel cdm cv c1o cen wbr c2o wo cpw crab wf1 isuspgren ibi ) CGHB
       IAJZKLMUANLMOADPQBRAGBCDEFST $.
 
-    $( The edge function of a simple graph is a one-to-one function into
-       unordered pairs of vertices.  (Contributed by Alexander van der Vekens,
-       10-Aug-2017.)  (Revised by AV, 13-Oct-2020.) $)
+    $( The edge function of a simple graph is a one-to-one function into the
+       set of proper unordered pairs of vertices.  (Contributed by Alexander
+       van der Vekens, 10-Aug-2017.)  (Revised by AV, 13-Oct-2020.) $)
     usgrfen $p |- ( G e. USGraph ->
               E : dom E -1-1-> { x e. ~P V | x ~~ 2o } ) $=
       ( cusgr wcel cdm cv c2o cen wbr cpw crab wf1 isusgren ibi ) CGHBIAJKLMADN
@@ -195257,9 +195257,9 @@ $)
       ( vx cusgr wcel ciedg cfv cdm c2o cen wbr cvtx cpw crab wfun eqid usgrfen
       cv wf1 f1fun syl ) ACDAEFZGZBQHIJBAKFZLMZUARUANBUAAUCUCOUAOPUBUDUAST $.
 
-    $( The set of edges of a simple graph is a subset of the set of unordered
-       pairs of vertices.  (Contributed by AV, 1-Jan-2020.)  (Revised by AV,
-       14-Oct-2020.) $)
+    $( The set of edges of a simple graph is a subset of the set of proper
+       unordered pairs of vertices.  (Contributed by AV, 1-Jan-2020.)  (Revised
+       by AV, 14-Oct-2020.) $)
     usgredgssen $p |- ( G e. USGraph
                -> ( Edg ` G ) C_ { x e. ~P ( Vtx ` G ) | x ~~ 2o } ) $=
       ( cusgr wcel cedg cfv ciedg crn c2o cen wbr cvtx cpw crab edgvalg cdm wf1
@@ -195267,7 +195267,7 @@ $)
       COUGUHPZUKUHQULUKUHSUIUKUAAUHBUJUJTUHTUBULUKUHUCULUKUHUDUEUF $.
 
     $d E x $.
-    $( An edge of a simple graph is an unordered pair of vertices.
+    $( An edge of a simple graph is a proper unordered pair of vertices.
        (Contributed by AV, 1-Jan-2020.)  (Revised by AV, 14-Oct-2020.) $)
     edgusgren $p |- ( ( G e. USGraph /\ E e. ( Edg ` G ) )
                 -> ( E e. ~P ( Vtx ` G ) /\ E ~~ 2o ) ) $=
@@ -195317,7 +195317,7 @@ $)
   ${
     $d e v x E $.  $d e v x V $.  $d x X $.  $d x Y $.
     ausgr.1 $e |- G = { <. v , e >. | e C_ { x e. ~P v | x ~~ 2o } } $.
-    $( The property of an unordered pair to be an alternatively defined simple
+    $( The property of an ordered pair to be an alternatively defined simple
        graph, defined as a pair (V,E) of a set V (vertex set) and a set of
        unordered pairs of elements of V (edge set).  (Contributed by Alexander
        van der Vekens, 28-Aug-2017.) $)
@@ -195601,8 +195601,8 @@ $)
     $( The union of two simple pseudographs (with the same vertex set):  If
        ` <. V , E >. ` and ` <. V , F >. ` are simple pseudographs, then
        ` <. V , E u. F >. ` is a pseudograph (the vertex set stays the same,
-       but the edges from both graphs are kept, maybe resulting incident two
-       edges between two vertices).  (Contributed by Alexander van der Vekens,
+       but the edges from both graphs are kept, maybe resulting in two edges
+       between two vertices).  (Contributed by Alexander van der Vekens,
        10-Aug-2017.)  (Revised by AV, 16-Oct-2020.)  (Revised by AV,
        24-Oct-2021.) $)
     uspgrunop $p |- ( ph -> <. V , ( E u. F ) >. e. UPGraph ) $=
@@ -195687,7 +195687,7 @@ $)
   ${
     edgssv2.v $e |- V = ( Vtx ` G ) $.
     edgssv2.e $e |- E = ( Edg ` G ) $.
-    $( An edge of a simple graph is an unordered pair of vertices, i.e. a
+    $( An edge of a simple graph is a proper unordered pair of vertices, i.e. a
        subset of the set of vertices of size 2.  (Contributed by AV,
        10-Jan-2020.)  (Revised by AV, 23-Oct-2020.) $)
     edgssv2en $p |- ( ( G e. USGraph /\ C e. E )
