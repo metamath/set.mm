@@ -196177,6 +196177,28 @@ $)
       sylanl1 ) EJKELKBCMGBNDKCGNDKOGAPFQKAFRSTEUAABCDEFGHIUBUC $.
   $}
 
+  ${
+    $d A x y $.  $d B x y $.  $d E x y $.  $d G x y $.  $d N x y $.
+    umgrvad2edg.e $e |- E = ( Edg ` G ) $.
+    $( If a vertex is adjacent to two different vertices in a multigraph, there
+       are more than one edges starting at this vertex, analogous to
+       ~ usgr2edg .  (Contributed by Alexander van der Vekens, 10-Dec-2017.)
+       (Revised by AV, 9-Jan-2020.)  (Revised by AV, 8-Jun-2021.) $)
+    umgrvad2edg $p |- ( ( ( G e. UMGraph /\ A =/= B )
+                       /\ ( { N , A } e. E /\ { B , N } e. E ) )
+                    -> E. x e. E E. y e. E ( x =/= y /\ N e. x /\ N e. y ) ) $=
+      ( cpr wcel wa wne w3a cv wrex umgrpredgv ex imp ad3antrrr wceq cumgr cvtx
+      simpl simpr cfv wo wi anim12d adantr simplr umgredgne necomd ad2ant2r jca
+      eqid olcd prneimg prid1g 3jca syl2anc neeq1 eleq2 3anbi12d neeq2 3anbi13d
+      prid2g rspc2ev syl2an23an ) GCIZEJZDGIZEJZKZVJVLFUAJZCDLZKZVIVKLZGVIJZGVK
+      JZMZANZBNZLZGWAJZGWBJZMZBEOAEOVJVLUCVJVLUDVPVMKZGFUBUEZJZCWHJZKZDWHJWIKZK
+      ZGDLGGLKZVOCGLZKZUFZVTVPVMWMVNVMWMUGVOVNVJWKVLWLVNVJWKEFGCWHWHUOZHPQVNVLW
+      LEFDGWHWRHPQUHUIRWGWPWNWGVOWOVNVOVMUJVNVJWOVOVLVNVJKGCEFGCHUKULUMUNUPWMWQ
+      KVQVRVSWMWQVQGCDGWHWHWHWHUQRWIVRWJWLWQGCWHURSWIVSWJWLWQDGWHVFSUSUTWFVTVIW
+      BLZVRWEMABVIVKEEWAVITWCWSWDVRWEWAVIWBVAWAVIGVBVCWBVKTWSVQWEVSVRWBVKVIVDWB
+      VKGVBVEVGVH $.
+  $}
+
 
 $(
 ###############################################################################
