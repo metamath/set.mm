@@ -151137,6 +151137,30 @@ $)
   basendxnn $p |- ( Base ` ndx ) e. NN $=
     ( cnx cbs cfv c1 cn df-base 1nn ndxarg eqeltri ) ABCDEBDFGHGI $.
 
+  ${
+    basprssdmsets.s $e |- ( ph -> S Struct X ) $.
+    bassetsnn.i $e |- ( ph -> I e. NN ) $.
+    basprssdmsets.w $e |- ( ph -> E e. W ) $.
+    basprssdmsets.b $e |- ( ph -> ( Base ` ndx ) e. dom S ) $.
+    $( The pair of the base index and another index is a subset of the domain
+       of the structure obtained by replacing/adding a slot at the other index
+       in a structure having a base slot.  (Contributed by AV, 7-Jun-2021.)
+       (Revised by AV, 16-Nov-2021.) $)
+    bassetsnn $p |- ( ph -> { ( Base ` ndx ) , I }
+                                C_ dom ( S sSet <. I , E >. ) ) $=
+      ( cdm wceq wcel wa cvv cn syl eleqtrrd eleqtrrdi adantr cnx cbs cfv co wn
+      cop csts simpr csn cdif cres snidg dmsnopg elun2 dmun cstr structex opexg
+      cun wbr syl2anc setsvalg dmeqd eqeltrd cin basendxnn elexi eleqtrd eldifd
+      a1i elsni stoic1a elind dmres elun1 wo cz nnzi nnzd zdceq sylancr exmiddc
+      wdc mpjaodan prssd ) AUAUBUCZDBDCUFZUGUDZKZAWFDLZWFWIMWJUEZAWJNWFDWIAWJUH
+      ADWIMWJADBOWGUIZKZUJZUKZWLUSZKZWIADWOKZWMUSZWQADWMMDWSMADDUIZWMADPMZDWTMH
+      DPULQACEMZWMWTLZIDCEUMQZRDWMWRUNQWOWLUOZSAWHWPABOMZWGOMZWHWPLABFUPUTXFGBF
+      UQQAXAXBXGHIDCPEURVAWGBOOVBVAVCZRZTVDAWKNZWFWQWIXJWFWSWQXJWFWRMWFWSMXJWFW
+      NBKZVEWRXJWNXKWFXJWFOWMWFOMXJWFPVFVGVJAWFWMMZWJAXLNZWFWTMWJXMWFWMWTAXLUHA
+      XCXLXDTVHWFDVKQVLVIAWFXKMWKJTVMBWNVNSWFWRWMVOQXESAWIWQLWKXHTRAWJWCZWJWKVP
+      AWFVQMDVQMXNWFVFVRADHVSWFDVTWAWJWBQWDXIWE $.
+  $}
+
   $( The base set extractor is a slot.  (Contributed by Jim Kingdon,
      31-Jan-2023.) $)
   baseslid $p |- ( Base = Slot ( Base ` ndx ) /\ ( Base ` ndx ) e. NN ) $=
