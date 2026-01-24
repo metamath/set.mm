@@ -196587,6 +196587,15 @@ $)
       cdom wbr wi cvtx cfv vtxex eqeltrid f1domg syl adantr mpd ) CJKZDEKZLDAMK
       ABNZEHUPHMDIMOPIEQRZUAZUPEUCUDZHIUPABUQCDEFGUPSUQSUBUNURUSUEZUOUNETKUTUNE
       CUFUGTFCJUHUIUPETUQUJUKULUM $.
+
+    $( In a simple graph the number of edges which contain a given vertex is
+       not greater than the number of vertices.  (Contributed by Alexander van
+       der Vekens, 4-Jan-2018.)  (Revised by AV, 18-Oct-2020.)  (Proof
+       shortened by AV, 6-Dec-2020.) $)
+    usgredgdomord $p |- ( ( G e. USGraph /\ N e. V )
+                   -> { e e. E | N e. e } ~<_ V ) $=
+      ( cusgr wcel cuspgr cv crab cdom wbr usgruspgr uspgredgdomord sylan ) CHI
+      CJIDEIDAKIABLEMNCOABCDEFGPQ $.
   $}
 
 
