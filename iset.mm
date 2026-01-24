@@ -54486,6 +54486,27 @@ $)
   $}
 
   ${
+    $d I a $.  $d J a $.  $d V a $.  $d X a $.  $d Y a $.
+    riotaeqimp.i $e |- I = ( iota_ a e. V X = A ) $.
+    riotaeqimp.j $e |- J = ( iota_ a e. V Y = A ) $.
+    riotaeqimp.x $e |- ( ph -> E! a e. V X = A ) $.
+    riotaeqimp.y $e |- ( ph -> E! a e. V Y = A ) $.
+    $( If two restricted iota descriptors for an equality are equal, then the
+       terms of the equality are equal.  (Contributed by AV, 6-Dec-2020.) $)
+    riotaeqimp $p |- ( ( ph /\ I = J ) -> X = Y ) $=
+      ( wceq wa crio csb wb wcel nfcvd adantl eqcomi eqeq2i bicomd wreu riotacl
+      a1i biimpa eqeq1i syl eqeltrid nfcsb1d nfeqd id cv csbeq1a eqeq2d syl2anc
+      nfv riota2df bitrid wi bitrdi adantr csbeq1 eqcoms eqeq12 syl5ibrcom expd
+      eqcom ancoms sylbird mp2d ) ACDMZNZCGBMZHEOZMZFHDBPZMZFGMZAVMVQAVQVMVQVMQ
+      AVPDCDVPJUAUBUFUCUGAVMVSVMFBMZHEOZDMZAVSCWBDIUHADERZWAHEUDZWCVSQADVPEJAVO
+      HEUDZVPERLVOHEUEUIUJKWDWENVSWCWDWAVSHEDWDHURWDHDSZWDHFVRWDHFSWDHDBWGUKULW
+      DUMHUNZDMZWAVSQWDWIBVRFHDBUOUPTUSUCUQUTUGVNVQGHCBPZMZVSVTVAZAWKVQQVMAWKVP
+      CMZVQACERZWFWKWMQACWBEIAWEWBERKWAHEUEUIUJLWNVOWKHECWNHURWNHCSZWNHGWJWNHGS
+      WNHCBWOUKULWNUMWHCMZVOWKQWNWPBWJGHCBUOUPTUSUQVPCVIVBVCVMWKWLVAAVMWKVSVTVM
+      VTWKVSNVRWJMZWQDCHDCBVDVEVSWKVTWQQFVRGWJVFVJVGVHTVKVL $.
+  $}
+
+  ${
     $d x A $.
     riotaprop.0 $e |- F/ x ps $.
     riotaprop.1 $e |- B = ( iota_ x e. A ph ) $.
