@@ -196302,6 +196302,22 @@ $)
       usgruspgr ) CEFCGFBCHIFDBFBDAJKLACMINCQABCDOP $.
   $}
 
+  ${
+    $d E e $.  $d G z $.  $d N e $.  $d N z $.  $d V z $.  $d Y e $.  $d Y z $.
+    uspgredg2v.v $e |- V = ( Vtx ` G ) $.
+    uspgredg2v.e $e |- E = ( Edg ` G ) $.
+    uspgredg2v.a $e |- A = { e e. E | N e. e } $.
+    $( Lemma for ~ uspgredg2v .  (Contributed by Alexander van der Vekens,
+       4-Jan-2018.)  (Revised by AV, 6-Dec-2020.) $)
+    uspgredg2vlem $p |- ( ( G e. USPGraph /\ Y e. A )
+                           -> ( iota_ z e. V Y = { N , z } ) e. V ) $=
+      ( wcel cuspgr wa cv cpr wceq crio cfv wreu eleq2 elrab2 cedg simpl eleq2i
+      w3a biimpi ad2antrl simprr 3jca cvtx uspgredg2vtxeu reueq1 sylibr riotacl
+      wb ax-mp 3syl sylan2b ) HBLEMLZHDLZFHLZNZHFAOPQZAGRGLZFCOZLVBCHDBVFHFUAKU
+      BUTVCNZUTHEUCSZLZVBUFZVDAGTZVEVGUTVIVBUTVCUDVAVIUTVBVAVIDVHHJUEUGUHUTVAVB
+      UIUJVJVDAEUKSZTZVKAHEFULGVLQVKVMUPIVDAGVLUMUQUNVDAGUOURUS $.
+  $}
+
 
 $(
 ###############################################################################
