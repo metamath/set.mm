@@ -196271,6 +196271,17 @@ $)
       MUN $.
   $}
 
+  ${
+    $d E x y $.  $d G x y $.  $d Y x y $.
+    $( For a vertex incident to an edge there is another vertex incident to the
+       edge in a simple graph.  (Contributed by AV, 18-Oct-2020.)  (Proof
+       shortened by AV, 5-Dec-2020.) $)
+    usgredg2vtx $p |- ( ( G e. USGraph /\ E e. ( Edg ` G ) /\ Y e. E )
+                        -> E. y e. ( Vtx ` G ) E = { Y , y } ) $=
+      ( cusgr wcel cupgr cedg cfv cv cpr wceq cvtx usgrupgr upgredg2vtx syl3an1
+      wrex eqid ) CEFCGFBCHIZFDBFBDAJKLACMIZQCNDBSCTATRSROP $.
+  $}
+
 
 $(
 ###############################################################################
