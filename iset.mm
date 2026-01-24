@@ -196574,6 +196574,21 @@ $)
       LFCUVCUVLUUDXEOYNYPYQYRYSXB $.
   $}
 
+  ${
+    $d E e f x $.  $d G f x y $.  $d N e f x y $.  $d V f x y $.
+    usgredgleord.v $e |- V = ( Vtx ` G ) $.
+    usgredgleord.e $e |- E = ( Edg ` G ) $.
+    $( In a simple pseudograph the number of edges which contain a given vertex
+       is not greater than the number of vertices.  (Contributed by Alexander
+       van der Vekens, 4-Jan-2018.)  (Revised by AV, 6-Dec-2020.) $)
+    uspgredgdomord $p |- ( ( G e. USPGraph /\ N e. V )
+                   -> { e e. E | N e. e } ~<_ V ) $=
+      ( vx vy cuspgr wcel wa cv crab cpr wceq crio cmpt eqid cvv wf1 uspgredg2v
+      cdom wbr wi cvtx cfv vtxex eqeltrid f1domg syl adantr mpd ) CJKZDEKZLDAMK
+      ABNZEHUPHMDIMOPIEQRZUAZUPEUCUDZHIUPABUQCDEFGUPSUQSUBUNURUSUEZUOUNETKUTUNE
+      CUFUGTFCJUHUIUPETUQUJUKULUM $.
+  $}
+
 
 $(
 ###############################################################################
