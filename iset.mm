@@ -196280,6 +196280,18 @@ $)
                         -> E. y e. ( Vtx ` G ) E = { Y , y } ) $=
       ( cusgr wcel cupgr cedg cfv cv cpr wceq cvtx usgrupgr upgredg2vtx syl3an1
       wrex eqid ) CEFCGFBCHIZFDBFBDAJKLACMIZQCNDBSCTATRSROP $.
+
+    $( For a vertex incident to an edge there is exactly one other vertex
+       incident to the edge in a simple pseudograph.  (Contributed by AV,
+       18-Oct-2020.)  (Revised by AV, 6-Dec-2020.) $)
+    uspgredg2vtxeu $p |- ( ( G e. USPGraph /\ E e. ( Edg ` G ) /\ Y e. E )
+                           -> E! y e. ( Vtx ` G ) E = { Y , y } ) $=
+      ( vx cuspgr wcel cedg cfv w3a cv cpr wceq cvtx wrex wa weq wral eqid vex
+      wi wreu cupgr uspgrupgr upgredg2vtx syl3an1 eqtr2 preqr2 ralrimivva preq2
+      syl a1i eqeq2d reu4 sylanbrc ) CFGZBCHIZGZDBGZJZBDAKZLZMZACNIZOZVCBDEKZLZ
+      MZPZAEQZUAZEVDRAVDRVCAVDUBUPCUCGURUSVECUDDBUQCVDAVDSUQSUEUFUTVKAEVDVDVKUT
+      VAVDGVFVDGPPVIVBVGMVJBVBVGUGVAVFDATETUHUKULUIVCVHAEVDVJVBVGBVAVFDUJUMUNUO
+      $.
   $}
 
 
