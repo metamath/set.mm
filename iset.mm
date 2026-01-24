@@ -196359,6 +196359,29 @@ $)
       wb ax-mp 3syl sylan2b ) HBLEMLZHDLZFHLZNZHFAOPQZAGRGLZFCOZLVBCHDBVFHFUAKU
       BUTVCNZUTHEUCSZLZVBUFZVDAGTZVEVGUTVIVBUTVCUDVAVIUTVBVAVIDVHHJUEUGUHUTVAVB
       UIUJVJVDAEUKSZTZVKAHEFULGVLQVKVMUPIVDAGVLUMUQUNVDAGUOURUS $.
+
+    $d A x y $.  $d F x $.  $d G n x y $.  $d N n x y z $.  $d V n x y $.
+    $d e x y $.
+    uspgredg2v.f $e |- F = ( y e. A |-> ( iota_ z e. V y = { N , z } ) ) $.
+    $( In a simple pseudograph, the mapping of edges having a fixed endpoint to
+       the "other" vertex of the edge (which may be the fixed vertex itself in
+       the case of a loop) is a one-to-one function into the set of vertices.
+       (Contributed by Alexander van der Vekens, 4-Jan-2018.)  (Revised by AV,
+       6-Dec-2020.) $)
+    uspgredg2v $p |- ( ( G e. USPGraph /\ N e. V ) -> F : A -1-1-> V ) $=
+      ( vx vn wcel wa cv wceq wreu cuspgr cpr crio wral uspgredg2vlem ralrimiva
+      wi wf1 adantr preq2 eqeq2d cbvriotavw cedg cfv simpl eleq2w elrab2 eleq2i
+      w3a biimpi anim1i sylbi anim12i 3anass sylibr uspgredg2vtxeu reueq1 ax-mp
+      cvtx wb syl adantl riotaeqimp ralrimivva eqeq1 riotabidv f1mpt sylanbrc
+      ex ) GUAPZHIPZQZARZHBRZUBZSZBIUCZIPZACUDZWGNRZWESZBIUCZSZWCWJSZUGZNCUDACU
+      DCIFUHVTWIWAVTWHACBCDEGHIWCJKLUEUFUIWBWOANCCWBWCCPZWJCPZQZQZWMWNWSHORZUBZ
+      WGWLIWCWJOWFWCXASZBOIWDWTSZWEXAWCWDWTHUJZUKULWKWJXASZBOIXCWEXAWJXDUKULWSV
+      TWCGUMUNZPZHWCPZUSZXBOITZWSVTXGXHQZQXIWBVTWRXKVTWAUOZWPXKWQWPWCEPZXHQXKHD
+      RPZXHDWCECDAHUPLUQXMXGXHXMXGEXFWCKURUTVAVBUIVCVTXGXHVDVEXIXBOGVIUNZTZXJOW
+      CGHVFIXOSZXJXPVJJXBOIXOVGVHVEVKWSVTWJXFPZHWJPZUSZXEOITZWSVTXRXSQZQXTWBVTW
+      RYBXLWQYBWPWQWJEPZXSQYBXNXSDWJECDNHUPLUQYCXRXSYCXREXFWJKURUTVAVBVLVCVTXRX
+      SVDVEXTXEOXOTZYAOWJGHVFXQYAYDVJJXEOIXOVGVHVEVKVMVSVNANCIWGWLFMWNWFWKBIWCW
+      JWEVOVPVQVR $.
   $}
 
 
