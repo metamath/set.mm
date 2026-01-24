@@ -196258,6 +196258,17 @@ $)
       HWKVKWAVNWNWGVTWBUMZFVRVMUQUNUOURTWLWHVPWLWHPZVPWAVSVMMZNZADOWSXAWAVSVRMZ
       NZAVRDWHWEWLVQWEWFWCUSSAIUHZXAXCRWSXDWTXBWAVMVRVSUIUJSXCWSVRVSUTVAULWSVOX
       AADWHWLVKWAVNWTWRFVSVMUQUNUOURTVBFVRVSVCVHVDTVEVFVG $.
+
+    $( For a vertex incident to an edge there is exactly one other vertex
+       incident to the edge.  (Contributed by Alexander van der Vekens,
+       4-Jan-2018.)  (Revised by AV, 18-Oct-2020.) $)
+    usgredgreu $p |- ( ( G e. USGraph /\ X e. dom E /\ Y e. ( E ` X ) )
+                      -> E! y e. V ( E ` X ) = { Y , y } ) $=
+      ( vx cusgr wcel cdm cfv w3a cv cpr wceq wa wral vex wrex wi wreu usgredg4
+      weq eqtr2 preqr2 syl a1i ralrimivva preq2 eqeq2d reu4 sylanbrc ) CJKEBLKF
+      EBMZKNZUOFAOZPZQZADUAUSUOFIOZPZQZRZAIUEZUBZIDSADSUSADUCABCDEFGHUDUPVEAIDD
+      VEUPUQDKUTDKRRVCURVAQVDUOURVAUFUQUTFATITUGUHUIUJUSVBAIDVDURVAUOUQUTFUKULU
+      MUN $.
   $}
 
 
