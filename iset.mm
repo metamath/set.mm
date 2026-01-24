@@ -47426,6 +47426,17 @@ $)
   $}
 
   ${
+    $d ph y z $.  $d ps x z $.  $d x y $.
+    cbviotavw.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Change bound variables in a description binder.  Version of ~ cbviotav
+       with a disjoint variable condition.  (Contributed by Andrew Salmon,
+       1-Aug-2011.)  (Revised by GG, 30-Sep-2024.) $)
+    cbviotavw $p |- ( iota x ph ) = ( iota y ps ) $=
+      ( vz cab cv csn wceq cuni cio cbvabv eqeq1i abbii unieqi df-iota 3eqtr4i
+      ) ACGZFHIZJZFGZKBDGZTJZFGZKACLBDLUBUEUAUDFSUCTABCDEMNOPACFQBDFQR $.
+  $}
+
+  ${
     $d ph y $.  $d ps x $.
     cbviotav.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
     $( Change bound variables in a description binder.  (Contributed by Andrew
@@ -54326,6 +54337,17 @@ $)
     nfriota $p |- F/_ x ( iota_ y e. A ph ) $=
       ( crio wnfc wtru nftru wnf a1i nfriotadxy mptru ) BACDGHIABCDCJABKIELBDHI
       FLMN $.
+  $}
+
+  ${
+    $d x y A $.  $d y ph $.  $d x ps $.
+    cbvriotavw.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Change bound variable in a restricted description binder.  Version of
+       ~ cbvriotav with a disjoint variable condition.  (Contributed by NM,
+       18-Mar-2013.)  (Revised by GG, 30-Sep-2024.) $)
+    cbvriotavw $p |- ( iota_ x e. A ph ) = ( iota_ y e. A ps ) $=
+      ( cv wcel wa cio crio weq eleq1w anbi12d cbviotavw df-riota 3eqtr4i ) CGE
+      HZAIZCJDGEHZBIZDJACEKBDEKSUACDCDLRTABCDEMFNOACEPBDEPQ $.
   $}
 
   ${
