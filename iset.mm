@@ -196241,6 +196241,23 @@ $)
       eleqtrrd syldan ) DIJZFCKJZFCLZDMLZJANZBNZOUSVAVBUAPQBERAERUQURQUSCSZUTUQ
       CTZURUSVCJUQDUDLZTVDDUBCVEHUCUEFCUFUGUQUTVCPURUQUTVESVCDIUHVECCVEHUIUJUKU
       LUOUSUTDEABGUTUMUNUP $.
+
+    $d E x z $.  $d G z $.  $d V z $.  $d X z $.  $d Y x y z $.
+    $( For a vertex incident to an edge there is another vertex incident to the
+       edge.  (Contributed by Alexander van der Vekens, 18-Dec-2017.)  (Revised
+       by AV, 17-Oct-2020.) $)
+    usgredg4 $p |- ( ( G e. USGraph /\ X e. dom E /\ Y e. ( E ` X ) )
+                      -> E. y e. V ( E ` X ) = { Y , y } ) $=
+      ( vx vz wcel cv cpr wceq wrex wa wi wb adantl ex cusgr cdm usgredg3 eleq2
+      cfv wne simplrr weq preq2 eqeq2d eqidd rspcedvd simprr eqeqan12rd rexbidv
+      wo preq1 mpbird simplrl prcom a1i jaoi elpri sylbid rexlimdvva mpd 3impia
+      syl11 ) CUAKZEBUBKZFEBUEZKZVKFALZMZNZADOZVIVJPZILZJLZUFZVKVRVSMZNZPZJDOID
+      OVLVPQZIJBCDEGHUCVQWCWDIJDDVQVRDKZVSDKZPPZWCWDWGWCPZVLFWAKZVPWCVLWIRZWGWB
+      WJVTVKWAFUDSSFVRNZFVSNZUPWHVPWIWKWHVPQWLWKWHVPWKWHPZVPWAVRVMMZNZADOWMWOWA
+      WANZAVSDWHWFWKVQWEWFWCUGSAJUHZWOWPRWMWQWNWAWAVMVSVRUIUJSWMWAUKULWMVOWOADW
+      HWKVKWAVNWNWGVTWBUMZFVRVMUQUNUOURTWLWHVPWLWHPZVPWAVSVMMZNZADOWSXAWAVSVRMZ
+      NZAVRDWHWEWLVQWEWFWCUSSAIUHZXAXCRWSXDWTXBWAVMVRVSUIUJSXCWSVRVSUTVAULWSVOX
+      AADWHWLVKWAVNWTWRFVSVMUQUNUOURTVBFVRVSVCVHVDTVEVFVG $.
   $}
 
 
