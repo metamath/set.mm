@@ -196517,6 +196517,15 @@ $)
         IUVAUVJTUVBUVKRUUEUVAUVJUUTYJYKYLJUVASUVNDUVJFCUVAUVJJXFPYOYMYPVNVMYQWT
         $.
     $}
+
+    $( In a simple graph there is a 1-1 onto mapping between the indexed edges
+       containing a fixed vertex and the set of edges containing this vertex.
+       (Contributed by AV, 18-Oct-2020.)  (Proof shortened by AV,
+       11-Dec-2020.) $)
+    usgredgedg $p |- ( ( G e. USGraph /\ N e. V )
+                        -> F : A -1-1-onto-> B ) $=
+      ( cusgr wcel cushgr wf1o cuspgr usgruspgr uspgrushgr ushgredgedg sylan
+      syl ) HRSZHTSZJKSBCGUAUHHUBSUIHUCHUDUGABCDEFGHIJKLMNOPQUEUF $.
   $}
 
 
