@@ -196292,6 +196292,14 @@ $)
       MZPZAEQZUAZEVDRAVDRVCAVDUBUPCUCGURUSVECUDDBUQCVDAVDSUQSUEUFUTVKAEVDVDVKUT
       VAVDGVFVDGPPVIVBVGMVJBVBVGUGVAVFDATETUHUKULUIVCVHAEVDVJVBVGBVAVFDUJUMUNUO
       $.
+
+    $( For a vertex incident to an edge there is exactly one other vertex
+       incident to the edge in a simple graph.  (Contributed by AV,
+       18-Oct-2020.)  (Proof shortened by AV, 6-Dec-2020.) $)
+    usgredg2vtxeu $p |- ( ( G e. USGraph /\ E e. ( Edg ` G ) /\ Y e. E )
+                          -> E! y e. ( Vtx ` G ) E = { Y , y } ) $=
+      ( cusgr wcel cuspgr cedg cfv cv cpr wceq cvtx wreu uspgredg2vtxeu syl3an1
+      usgruspgr ) CEFCGFBCHIFDBFBDAJKLACMINCQABCDOP $.
   $}
 
 
