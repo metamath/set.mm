@@ -196384,6 +196384,25 @@ $)
       JWEVOVPVQVR $.
   $}
 
+  ${
+    $d E x z $.  $d G z $.  $d N x z $.  $d V z $.
+    usgredg2v.v $e |- V = ( Vtx ` G ) $.
+    usgredg2v.e $e |- E = ( iEdg ` G ) $.
+    ${
+      $d Y x z $.
+      usgredg2v.a $e |- A = { x e. dom E | N e. ( E ` x ) } $.
+      $( Lemma 1 for ~ usgredg2v .  (Contributed by Alexander van der Vekens,
+         4-Jan-2018.)  (Revised by AV, 18-Oct-2020.) $)
+      usgredg2vlem1 $p |- ( ( G e. USGraph /\ Y e. A )
+                            -> ( iota_ z e. V ( E ` Y ) = { z , N } ) e. V ) $=
+        ( wcel cusgr cdm cfv wa cv cpr wceq wreu fveq2 eleq2d elrab2 usgredgreu
+        crio w3a prcom eqeq2i reubii sylib 3expb riotacl syl sylan2b ) HCLEMLZH
+        DNZLZFHDOZLZPZURBQZFRZSZBGUEGLZFAQZDOZLUSAHUPCVEHSVFURFVEHDUAUBKUCUOUTP
+        VCBGTZVDUOUQUSVGUOUQUSUFURFVARZSZBGTVGBDEGHFIJUDVIVCBGVHVBURFVAUGUHUIUJ
+        UKVCBGULUMUN $.
+    $}
+  $}
+
 
 $(
 ###############################################################################
