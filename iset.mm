@@ -5050,6 +5050,12 @@ $)
                  ( ( ph /\ ch ) /\ ( th /\ ps ) ) ) $=
     ( wa an4 ancom anbi2i bitri ) ABECDEEACEZBDEZEJDBEZEABCDFKLJBDGHI $.
 
+  $( Rearrangement of 4 conjuncts.  (Contributed by Rodolfo Medina,
+     24-Sep-2010.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.) $)
+  an43 $p |- ( ( ( ph /\ ps ) /\ ( ch /\ th ) ) <->
+               ( ( ph /\ th ) /\ ( ps /\ ch ) ) ) $=
+    ( wa an42 bicomi ) ADEBCEEABECDEEADBCFG $.
+
   ${
     an4s.1 $e |- ( ( ( ph /\ ps ) /\ ( ch /\ th ) ) -> ta ) $.
     $( Inference rearranging 4 conjuncts in antecedent.  (Contributed by NM,
