@@ -196400,6 +196400,23 @@ $)
         DNZLZFHDOZLZPZURBQZFRZSZBGUEGLZFAQZDOZLUSAHUPCVEHSVFURFVEHDUAUBKUCUOUTP
         VCBGTZVDUOUQUSVGUOUQUSUFURFVARZSZBGTVGBDEGHFIJUDVIVCBGVHVBURFVAUGUHUIUJ
         UKVCBGULUMUN $.
+
+      $d I z $.
+      $( Lemma 2 for ~ usgredg2v .  (Contributed by Alexander van der Vekens,
+         4-Jan-2018.)  (Revised by AV, 18-Oct-2020.) $)
+      usgredg2vlem2 $p |- ( ( G e. USGraph /\ Y e. A )
+                            -> ( I = ( iota_ z e. V ( E ` Y ) = { z , N } )
+                                 -> ( E ` Y ) = { I , N } ) ) $=
+        ( wcel cfv cv cpr wceq wi wa biimpi cusgr crio fveq2 eleq2d elrab2 wreu
+        cdm usgredgreu 3expb usgredg2vlem1 adantlr ad4ant23 eleq1 adantl mpbird
+        prcom eqeq2i reubii ad3antrrr preq1 eqeq2d riota2 syl2anc exbiri eqcoms
+        wb com13 pm2.43i expdcom mpancom expcom com23 mpcom impcom ) ICMZEUAMZF
+        IDNZBOZGPZQZBHUBZQZVQFGPZQZRZIDUGZMZGVQMZSZVOVPWERVOWIGAOZDNZMWHAIWFCWJ
+        IQWKVQGWJIDUCUDLUETWIVPVOWEVPWIVOWERZVQGVRPZQZBHUFZVPWISZWLVPWGWHWOBDEH
+        IGJKUHUIWBWOWPSZVOWDWBWQVOSZWDRZWBWSRWAFWRWBWAFQZWDWRWBWDWTWRWBSZFHMZVT
+        BHUFZWDWTVFXAXBWAHMZWPVOXDWOWBVPVOXDWIABCDEGHIJKLUJUKULWBXBXDVFWRFWAHUM
+        UNUOWOXCWPVOWBWOXCWNVTBHWMVSVQGVRUPUQURTUSVTWDBHFVRFQVSWCVQVRFGUTVAVBVC
+        VDVGVEVHVIVJVKVLVMVN $.
     $}
   $}
 
