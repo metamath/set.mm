@@ -196428,6 +196428,32 @@ $)
         BHUFZWDWTVFXAXBWAHMZWPVOXDWOWBVPVOXDWIABCDEGHIJKLUJUKULWBXBXDVFWRFWAHUM
         UNUOWOXCWPVOWBWOXCWNVTBHWMVSVQGVRUPUQURTUSVTWDBHFVRFQVSWCVQVRFGUTVAVBVC
         VDVGVEVHVIVJVKVLVMVN $.
+
+      $d A w y $.  $d E w x y z $.  $d F w $.  $d G w y $.  $d N u w y $.
+      $d V u w y $.  $d E u w z $.
+      usgredg2v.f $e |- F = ( y e. A
+                              |-> ( iota_ z e. V ( E ` y ) = { z , N } ) ) $.
+      $( In a simple graph, the mapping of edges having a fixed endpoint to the
+         other vertex of the edge is a one-to-one function into the set of
+         vertices.  (Contributed by Alexander van der Vekens, 4-Jan-2018.)
+         (Revised by AV, 18-Oct-2020.) $)
+      usgredg2v $p |- ( ( G e. USGraph /\ N e. V ) -> F : A -1-1-> V ) $=
+        ( vu wcel wa cv wceq adantr cvv vw cusgr cfv crio wral wi usgredg2vlem1
+        cpr wf1 ralrimiva simpr preq1 eqeq2d cbvriotavw 3eqtr4g eqid jctir orcd
+        wo simpl anim12i usgredg2vlem2 mpisyl an3 eqeq12d cdm crn usgrf1 elrabi
+        crab eleq2s f1fveq syl2an vtxex eqeltrid riotaexg syl preq12bg syl22anc
+        wb cvtx 3bitr3d mpbird ex ralrimivva fveqeq2 riotabidv f1mpt sylanbrc )
+        GUBOZHIOZPZBQZEUCZCQZHUHZRZCIUDZIOZBDUEZWRUAQZEUCZWPRZCIUDZRZWMXARZUFZU
+        ADUEBDUEDIFUIWJWTWKWJWSBDACDEGHIWMJKLUGUJSWLXGBUADDWLWMDOZXADOZPZPZXEXF
+        XKXEPZXFWNNQZHUHZRZNIUDZXBXNRZNIUDZRZHHRZPZXPHRHXRRPZUSZXLYAYBXLXSXTXLW
+        RXDXPXRXKXEUKXOWQNCIXMWORZXNWPWNXMWOHULZUMUNZXQXCNCIYDXNWPXBYEUMUNZUOHU
+        PUQURXKXFYCVTXEXKWNXBRZXPHUHZXRHUHZRZXFYCXKWNYIXBYJXKWJXHPXPWRRWNYIRWLW
+        JXJXHWJWKUTXHXIUTVAYFACDEGXPHIWMJKLVBVCXKWJXIPXRXDRXBYJRWJWKXHXIVDYGACD
+        EGXRHIXAJKLVBVCVEWLEVFZEVGZEUIZWMYLOZXAYLOZPYHXFVTXJWJYNWKEGKVHSXHYOXIY
+        PYOWMHAQEUCOZAYLVJZDYQAWMYLVILVKYPXAYRDYQAXAYLVILVKVAYLYMWMXAEVLVMWLYKY
+        CVTZXJWLXPTOZWKXRTOZWKYSWJYTWKWJITOZYTWJIGWAUCTJGUBVNVOZXONITVPVQSWJWKU
+        KZWJUUAWKWJUUBUUAUUCXQNITVPVQSUUDXPHXRHTITIVRVSSWBSWCWDWEBUADIWRXDFMXFW
+        QXCCIWMXAWPEWFWGWHWI $.
     $}
   $}
 
