@@ -196213,6 +196213,19 @@ $)
       TAHDAHFULUMUN $.
   $}
 
+  ${
+    $d G x $.
+    $( In a simple graph, the size of the edge function is the number of the
+       edges of the graph.  (Contributed by AV, 4-Jan-2020.)  (Revised by AV,
+       7-Jun-2021.) $)
+    usgrsizedgen $p |- ( G e. USGraph
+                       -> ( iEdg ` G ) ~~ ( Edg ` G ) ) $=
+      ( cusgr wcel ciedg cfv crn cedg cen cdm wbr wfun usgrfun fundmeng syl2anc
+      cvv iedgex ensymd wf1o dmexd eqid usgrf1o f1oeng entr edgvalg breqtrrd )
+      ABCZADEZUGFZAGEHUFUGUGIZHJUIUHHJZUGUHHJUFUIUGUFUGOCUGKUIUGHJABPZALUGOMNQU
+      FUIOCUIUHUGRUJUFUGOUKSUGAUGTUAUIUHOUGUBNUGUIUHUCNABUDUE $.
+  $}
+
 
 $(
 ###############################################################################
