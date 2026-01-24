@@ -196226,6 +196226,23 @@ $)
       FUIOCUIUHUGRUJUFUGOUKSUGAUGTUAUIUHOUGUBNUGUIUHUCNABUDUE $.
   $}
 
+  ${
+    $d E x y $.  $d G x y $.  $d V x y $.  $d X x y $.
+    usgredg3.v $e |- V = ( Vtx ` G ) $.
+    usgredg3.e $e |- E = ( iEdg ` G ) $.
+    $( The value of the "edge function" of a simple graph is a set containing
+       two elements (the endvertices of the corresponding edge).  (Contributed
+       by Alexander van der Vekens, 18-Dec-2017.)  (Revised by AV,
+       17-Oct-2020.) $)
+    usgredg3 $p |- ( ( G e. USGraph /\ X e. dom E )
+              -> E. x e. V E. y e. V ( x =/= y /\ ( E ` X ) = { x , y } ) ) $=
+      ( cusgr wcel cdm cfv cedg cv wne wceq wa wrex crn wfun cpr usgrfun funeqi
+      ciedg sylibr fvelrn sylan edgvalg eqcomi rneqi eqtrdi adantr eqid usgredg
+      eleqtrrd syldan ) DIJZFCKJZFCLZDMLZJANZBNZOUSVAVBUAPQBERAERUQURQUSCSZUTUQ
+      CTZURUSVCJUQDUDLZTVDDUBCVEHUCUEFCUFUGUQUTVCPURUQUTVESVCDIUHVECCVEHUIUJUKU
+      LUOUSUTDEABGUTUMUNUP $.
+  $}
+
 
 $(
 ###############################################################################
