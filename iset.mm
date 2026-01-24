@@ -196528,6 +196528,52 @@ $)
       syl ) HRSZHTSZJKSBCGUAUHHUBSUIHUCHUDUGABCDEFGHIJKLMNOPQUEUF $.
   $}
 
+  ${
+    $d B e f $.  $d E e i j $.  $d G e f i j $.  $d G x $.  $d I e f i j $.
+    $d I e i x $.  $d N e f i j $.  $d N x $.  $d V e f i j $.  $d V x $.
+    $d G p $.  $d I p $.  $d p w $.
+    ushgredgedgloop.e $e |- E = ( Edg ` G ) $.
+    ushgredgedgloop.i $e |- I = ( iEdg ` G ) $.
+    ushgredgedgloop.a $e |- A = { i e. dom I | ( I ` i ) = { N } } $.
+    ushgredgedgloop.b $e |- B = { e e. E | e = { N } } $.
+    ushgredgedgloop.f $e |- F = ( x e. A |-> ( I ` x ) ) $.
+    $( In a simple hypergraph there is a 1-1 onto mapping between the indexed
+       edges being loops at a fixed vertex ` N ` and the set of loops at this
+       vertex ` N ` .  (Contributed by AV, 11-Dec-2020.)  (Revised by AV,
+       6-Jul-2022.) $)
+    ushgredgedgloop $p |- ( ( G e. USHGraph /\ N e. V )
+                            -> F : A -1-1-onto-> B ) $=
+      ( vj wcel wa wceq vw vp vf cushgr wf1o cv cfv csn cdm crab cima cres cvtx
+      wex cpw wf1 wss eqid ushgrfm adantr ssrab2 f1ores sylancl cmpt mpteq12dva
+      a1i eqidd eqtrid f1f syl feqresmpt eqtr4d wrex wfun ciedg cuhgr ushgruhgr
+      wf cab uhgrfun funeqi sylibr dfimafn wi fveqeq2 elrab simpl fvelrn eqcomi
+      w3a crn rneqi eleqtrrdi syl2an 3adant3 eleq1 eqcoms 3ad2ant3 cedg edgvalg
+      wb mpbird eleq2d 3ad2ant1 eqeq1 biimpcd adantl 3imp jca biimtrid rexlimdv
+      3exp wfn funfnd fvelrnb eleq2i biimpi fveq1i eqeq2i eqeq1d adantld eqeq1i
+      dmeqi imp reximdv2 com23 sylbid impd impbid vex eqeq2 rexbidv elab elrab2
+      ex 3bitr4g eqrdv eqtr2d f1oeq123d ) HUDRZJKRZSZBCGUEEUFZIUGJUHZTZEIUIZUJZ
+      IUUGUKZIUUGULZUEZUUBUUFUAUFUBUFRUAUNUBHUMUGZUOUJZIUPZUUGUUFUQZUUJYTUUMUUA
+      UAIHUUKUBUUKURMUSZUTUUEEUUFVAZUUFUULUUGIVBVCUUBBUUGCUUHGUUIUUBGAUUGAUFZIU
+      GZVDZUUIUUBGABUURVDUUSPUUBABUURUUGUURBUUGTUUBNVFZUUBUUQBRSUURVGVEVHYTUUIU
+      USTUUAYTAUUFUULUUGIYTUUMUUFUULIVRUUOUUFUULIVIVJUUNYTUUPVFVKUTVLUUTUUBUUHQ
+      UFZIUGZDUFZTZQUUGVMZDVSZCUUBIVNZUUNUUHUVFTYTUVGUUAYTHVOUGZVNZUVGYTHVPRUVI
+      HVQUVHHUVHURVTVJZIUVHMWAWBUTZUUPQDUUGIWCVCUUBUCUVFCUUBUVBUCUFZTZQUUGVMZUV
+      LFRZUVLUUDTZSZUVLUVFRUVLCRUUBUVNUVQUUBUVMUVQQUUGUVAUUGRZUVAUUFRZUVBUUDTZS
+      ZUUBUVMUVQWDUUEUVTEUVAUUFUUCUVAUUDIWEWFZUUBUWAUVMUVQUUBUWAUVMWJZUVOUVPUWC
+      UVOUVLUVHWKZRZUWCUWEUVBUWDRZUUBUWAUWFUVMUUBUVGUVSUWFUWAUVKUVSUVTWGUVGUVSS
+      UVBIWKUWDUVAIWHUVHIIUVHMWIZWLWMWNWOUVMUUBUWEUWFXAZUWAUWHUVLUVBUVLUVBUWDWP
+      WQWRXBUUBUWAUVOUWEXAZUVMYTUWIUUAYTFUWDUVLYTFHWSUGUWDLHUDWTVHXCZUTXDXBUUBU
+      WAUVMUVPUWAUVMUVPWDZWDUUBUVTUWKUVSUVMUVTUVPUVBUVLUUDXEXFXGVFXHXIXLXJXKYTU
+      VQUVNWDUUAYTUVOUVPUVNYTUVOUWEUVPUVNWDZUWJYTUWEUVAUVHUGZUVLTZQUVHUIZVMZUWL
+      YTUVHUWOXMUWEUWPXAYTUVHUVJXNQUWOUVLUVHXOVJYTUVPUWPUVNYTUVPUWPUVNWDYTUVPSZ
+      UWNUVMQUWOUUGUWQUVAUWORZUWNSZUVRUVMSUWQUWSSZUVRUVMUWTUWAUVRUWTUVSUVTUWSUV
+      SUWQUWRUVSUWNUWRUVSUWOUUFUVAUVHIUWGYCXPXQUTXGUWQUWSUVTUWQUWNUVTUWRUVPUWNU
+      VTWDYTUWNUVPUVTUWNUVLUVBUUDUVLUVBTZUVLUWMUVLUWMTUXAUWMUVBUVLUVAUVHIUWGXRZ
+      XSXQWQXTXFXGYAYDXIUWBWBUWSUVMUWQUWNUVMUWRUWNUVMUWMUVBUVLUXBYBXQXGXGXIYOYE
+      YOYFYGYGYHUTYIUVEUVNDUVLUCYJUVCUVLTUVDUVMQUUGUVCUVLUVBYKYLYMUVCUUDTUVPDUV
+      LFCUVCUVLUUDXEOYNYPYQYRYSXB $.
+  $}
+
 
 $(
 ###############################################################################
