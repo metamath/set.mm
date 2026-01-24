@@ -196455,6 +196455,19 @@ $)
         KZWJUUAWKWJUUBUUAUUCXQNITVPVQSUUDXPHXRHTITIVRVSSWBSWCWDWEBUADIWRXDFMXFW
         QXCCIWMXAWPEWFWGWHWI $.
     $}
+
+    $d E x y z $.  $d G y $.  $d N y $.  $d V y $.
+    $( Alternate version of ~ usgredgdomord , not using the notation
+       ` ( Edg `` G ) ` .  In a simple graph the number of edges which contain
+       a given vertex is not greater than the number of vertices.  (Contributed
+       by Alexander van der Vekens, 4-Jan-2018.)  (Revised by AV,
+       18-Oct-2020.) $)
+    usgriedgdomord $p |- ( ( G e. USGraph /\ N e. V )
+                   -> { x e. dom E | N e. ( E ` x ) } ~<_ V ) $=
+      ( vy vz cusgr wcel wa cvv cv cfv cdm crab cpr wceq eqid crio cmpt wf1 wbr
+      cdom cvtx vtxex eqeltrid adantr usgredg2v f1domg sylc ) CJKZDEKZLEMKZDANB
+      OKABPQZEHUPHNBOINDRSIEUAUBZUCUPEUEUDUMUOUNUMECUFOMFCJUGUHUIAHIUPBUQCDEFGU
+      PTUQTUJUPEMUQUKUL $.
   $}
 
 
