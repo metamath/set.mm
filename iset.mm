@@ -7986,6 +7986,61 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  The conditional operator for propositions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  This subsection introduces the conditional operator for propositions, denoted
+  by ` if- ( ph , ps , ch ) ` (see ~ df-ifp ).  It is the analogue for
+  propositions of the conditional operator for classes, denoted by
+  ` if ( ph , A , B ) ` (see ~ df-if ).
+
+$)
+
+  $( Comma.  Also used later for adders, pairs, tuples, etc. $)
+  $c , $.
+
+  $( Symbol for the conditional operator for propositions. $)
+  $c if- $.
+
+  $( Extend wff notation to include the conditional operator for
+     propositions. $)
+  wif $a wff if- ( ph , ps , ch ) $.
+
+  $( Definition of the conditional operator for propositions.  The expression
+     ` if- ( ph , ps , ch ) ` is read "if ` ph ` then ` ps ` else ` ch ` ".
+     See ~ dfifp2 , ~ dfifp3 , ~ dfifp4 , ~ dfifp5 , ~ dfifp6 and ~ dfifp7 for
+     alternate definitions.
+
+     This definition (in the form of ~ dfifp2 ) appears in Section II.24 of
+     [Church] p. 129 (Definition D12 page 132), where it is called "conditioned
+     disjunction".  Church's ` [ ps , ph , ch ] ` corresponds to our
+     ` if- ( ph , ps , ch ) ` (note the permutation of the first two
+     variables).
+
+     This form was chosen as the definition rather than ~ dfifp2 for
+     compatibility with intuitionistic logic development: with this form, it is
+     clear that ` if- ( ph , ps , ch ) ` implies decidability of ` ph ` , which
+     is most often what is wanted.
+
+     Church uses the conditional operator as an intermediate step to prove
+     completeness of some systems of connectives.  The first result is that the
+     system ` { if- , T. , F. } ` is complete: for the induction step, consider
+     a formula of n+1 variables; single out one variable, say ` ph ` ; when one
+     sets ` ph ` to True (resp.  False), then what remains is a formula of n
+     variables, so by the induction hypothesis it is equivalent to a formula
+     using only the connectives ` if- , T. , F. ` , say ` ps ` (resp. ` ch ` );
+     therefore, the formula ` if- ( ph , ps , ch ) ` is equivalent to the
+     initial formula of n+1 variables.  Now, since ` { -> , -. } ` and similar
+     systems suffice to express the connectives ` if- , T. , F. ` , they are
+     also complete.
+
+     (Contributed by BJ, 22-Jun-2019.) $)
+  df-ifp $a |-
+            ( if- ( ph , ps , ch ) <-> ( ( ph /\ ps ) \/ ( -. ph /\ ch ) ) ) $.
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Abbreviated conjunction and disjunction of three wff's
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -31563,7 +31618,6 @@ $(
 $)
 
   $( Declare new constant symbols. $)
-  $c , $.  $( Comma (also used for unordered pair notation later) $)
   $c if $.  $( Conditional operator (was "ded" for "deduction class"). $)
 
   $( Extend class notation to include the conditional operator.  See ~ df-if
@@ -197203,6 +197257,9 @@ htmldef "F." as
     " <IMG SRC='perp.gif' WIDTH=11 HEIGHT=19 ALT='F.' TITLE='F.'> ";
   althtmldef "F." as '&perp;';
   latexdef "F." as "\bot";
+htmldef "if-" as "if-";
+  althtmldef "if-" as "if-";
+  latexdef "if-" as "\operatorname{if}";
 htmldef "A." as
     "<IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 ALT=' A.' TITLE='A.'>";
   althtmldef "A." as '&forall;'; /* &#8704; */
