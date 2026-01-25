@@ -194282,6 +194282,24 @@ $)
       PQUAECBUBUC $.
   $}
 
+  ${
+    setsvtx.i $e |- I = ( .ef ` ndx ) $.
+    setsvtx.s $e |- ( ph -> G Struct X ) $.
+    setsvtx.b $e |- ( ph -> ( Base ` ndx ) e. dom G ) $.
+    setsvtx.e $e |- ( ph -> E e. W ) $.
+    $( The vertices of a structure with a base set and an inserted resp.
+       replaced slot for the edge function.  (Contributed by AV, 18-Jan-2020.)
+       (Revised by AV, 16-Nov-2021.) $)
+    setsvtx $p |- ( ph -> ( Vtx ` ( G sSet <. I , E >. ) ) = ( Base ` G ) ) $=
+      ( cop cfv cbs cvv wcel cnx cpr wceq cn syl3anc csts co cvtx csn cdif wfun
+      c0 cedgf cdm wss cstr wbr structex syl edgfndxnn eqeltri setsex setsn0fun
+      a1i eqcomi preq2i bassetsnn eqsstrid funvtxvalg basendxnedgfndx setsslnid
+      baseslid neeqtrri syl2anc eqtr4d ) ACDBKUAUBZUCLZVKMLZCMLZAVKNOZVKUGUDUEU
+      FPMLZPUHLZQZVKUIZUJVLVMRACNOZDSOZBEOZVOACFUKULVTHCFUMUNZWAADVQSGUOUPZUSZJ
+      DBCNESUQTACSBDEFHWEJURAVRVPDQVSVQDVPDVQGUTVAACBDEFHWEJIVBVCVKNVDTAVTWBVNV
+      MRWCJNBDMECVGVPVQDVEGVHWDVFVIVJ $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
