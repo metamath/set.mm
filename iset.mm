@@ -8008,16 +8008,16 @@ $)
 
   $( Definition of the conditional operator for propositions.  The expression
      ` if- ( ph , ps , ch ) ` is read "if ` ph ` then ` ps ` else ` ch ` ".
-     See ~ dfifp2 , ~ dfifp3 , ~ dfifp4 , ~ dfifp5 , ~ dfifp6 and ~ dfifp7 for
-     alternate definitions.
+     See ~ dfifp2dc , ~ dfifp3 , ~ dfifp4 , ~ dfifp5 , ~ dfifp6 and ~ dfifp7
+     for alternate definitions.
 
-     This definition (in the form of ~ dfifp2 ) appears in Section II.24 of
+     This definition (in the form of ~ dfifp2dc ) appears in Section II.24 of
      [Church] p. 129 (Definition D12 page 132), where it is called "conditioned
      disjunction".  Church's ` [ ps , ph , ch ] ` corresponds to our
      ` if- ( ph , ps , ch ) ` (note the permutation of the first two
      variables).
 
-     This form was chosen as the definition rather than ~ dfifp2 for
+     This form was chosen as the definition rather than ~ dfifp2dc for
      compatibility with intuitionistic logic development: with this form, it is
      clear that ` if- ( ph , ps , ch ) ` implies decidability of ` ph ` , which
      is most often what is wanted.
@@ -8037,6 +8037,24 @@ $)
      (Contributed by BJ, 22-Jun-2019.) $)
   df-ifp $a |-
             ( if- ( ph , ps , ch ) <-> ( ( ph /\ ps ) \/ ( -. ph /\ ch ) ) ) $.
+
+  $( Forward direction of ~ dfifp2dc .  This direction does not require
+     decidability.  (Contributed by Jim Kingdon, 25-Jan-2026.) $)
+  ifp2 $p |- ( if- ( ph , ps , ch ) -> ( ( ph -> ps ) /\ ( -. ph -> ch ) ) ) $=
+    ( wif wa wn wo wi df-ifp pm3.4 pm2.24 adantr jca ax-in2 jaoi sylbi ) ABCDAB
+    EZAFZCEZGABHZRCHZEZABCIQUBSQTUAABJAUABACKLMSTUARTCABNLRCJMOP $.
+
+  $( Alternate definition of the conditional operator for decidable
+     propositions.  The value of ` if- ( ph , ps , ch ) ` is "if ` ph ` then
+     ` ps ` , and if not ` ph ` then ` ch ` ".  This is the definition used in
+     Section II.24 of [Church] p. 129 (Definition D12 page 132) (see comment of
+     ~ df-ifp ).  (Contributed by BJ, 22-Jun-2019.) $)
+  dfifp2dc $p |- ( DECID ph ->
+      ( if- ( ph , ps , ch ) <-> ( ( ph -> ps ) /\ ( -. ph -> ch ) ) ) ) $=
+    ( wdc wif wi wn wa ifp2 wo exmiddc simpl simprl jcai orcd simprr olcd sylan
+    jaoian df-ifp sylibr ex impbid2 ) ADZABCEZABFZAGZCFZHZABCIUDUIUEUDUIHABHZUG
+    CHZJZUEUDAUGJUIULAKAUIULUGAUIHZUJUKUMABAUILAUFUHMNOUGUIHZUKUJUNUGCUGUILUGUF
+    UHPNQSRABCTUAUBUC $.
 
 
 $(
