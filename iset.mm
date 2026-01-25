@@ -22441,6 +22441,14 @@ $)
       EGUAEKGLMBCHNOPIQ $.
   $}
 
+  $( A transformation of restricted quantifiers and logical connectives.
+     (Contributed by NM, 4-Sep-2005.)  (Revised by Jim Kingdon,
+     18-Jan-2026.) $)
+  rexanaliim $p |- ( E. x e. A ( ph /\ -. ps )
+      -> -. A. x e. A ( ph -> ps ) ) $=
+    ( wn wa wrex wi wral annimim reximi rexnalim syl ) ABEFZCDGABHZEZCDGOCDIENP
+    CDABJKOCDLM $.
+
   ${
     $d x y $.  $d y A $.  $d x B $.
     $( Theorem 19.12 of [Margaris] p. 89 with restricted quantifiers.
@@ -50855,6 +50863,16 @@ $)
                  ( ( F ` A ) = B <-> <. A , B >. e. F ) ) $=
     ( wfun cdm wfn wcel cfv wceq cop wb funfn fnopfvb sylanb ) CDCCEZFAOGACHBIA
     BJCGKCLOABCMN $.
+
+  ${
+    $d A y $.  $d B y $.  $d F y $.  $d X y $.
+    $( There is exactly one codomain element for each element of the domain of
+       a function.  (Contributed by AV, 20-Apr-2025.) $)
+    fdmeu $p |- ( ( F : A --> B /\ X e. A ) -> E! y e. B ( F ` X ) = y ) $=
+      ( wf wcel wa cfv cv wceq wreu cop feu wfn wb ffn anim1i adantr fnopfvb
+      syl reubidva mpbird ) BCDFZEBGZHZEDIAJZKZACLEUGMDGZACLABCEDNUFUHUIACUFUGC
+      GZHDBOZUEHZUHUIPUFULUJUDUKUEBCDQRSBEUGDTUAUBUC $.
+  $}
 
   ${
     $d x y A $.  $d x y B $.  $d x y F $.
@@ -119994,6 +120012,337 @@ $)
                                -> E! x e. X W = ( x prefix ( # ` W ) ) ) ) $=
       ( nfcv reuccatpfxs1 ) ABCDEBEFG $.
   $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Longer string literals
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+  $( Syntax for the length 2 word constructor. $)
+  cs2 $a class <" A B "> $.
+
+  $( Syntax for the length 3 word constructor. $)
+  cs3 $a class <" A B C "> $.
+
+  $( Syntax for the length 4 word constructor. $)
+  cs4 $a class <" A B C D "> $.
+
+  $( Syntax for the length 5 word constructor. $)
+  cs5 $a class <" A B C D E "> $.
+
+  $( Syntax for the length 6 word constructor. $)
+  cs6 $a class <" A B C D E F "> $.
+
+  $( Syntax for the length 7 word constructor. $)
+  cs7 $a class <" A B C D E F G "> $.
+
+  $( Syntax for the length 8 word constructor. $)
+  cs8 $a class <" A B C D E F G H "> $.
+
+  $( Define the length 2 word constructor.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  df-s2 $a |- <" A B "> = ( <" A "> ++ <" B "> ) $.
+
+  $( Define the length 3 word constructor.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  df-s3 $a |- <" A B C "> = ( <" A B "> ++ <" C "> ) $.
+
+  $( Define the length 4 word constructor.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  df-s4 $a |- <" A B C D "> = ( <" A B C "> ++ <" D "> ) $.
+
+  $( Define the length 5 word constructor.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  df-s5 $a |- <" A B C D E "> = ( <" A B C D "> ++ <" E "> ) $.
+
+  $( Define the length 6 word constructor.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  df-s6 $a |- <" A B C D E F "> = ( <" A B C D E "> ++ <" F "> ) $.
+
+  $( Define the length 7 word constructor.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  df-s7 $a |- <" A B C D E F G "> = ( <" A B C D E F "> ++ <" G "> ) $.
+
+  $( Define the length 8 word constructor.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  df-s8 $a |- <" A B C D E F G H "> = ( <" A B C D E F G "> ++ <" H "> ) $.
+
+  ${
+    cats1cld.1 $e |- T = ( S ++ <" X "> ) $.
+    ${
+      cats1cld.2 $e |- ( ph -> S e. Word A ) $.
+      cats1cld.3 $e |- ( ph -> X e. A ) $.
+      $( Closure of concatenation with a singleton word.  (Contributed by Mario
+         Carneiro, 26-Feb-2016.) $)
+      cats1cld $p |- ( ph -> T e. Word A ) $=
+        ( cs1 cconcat co cword wcel s1cld ccatcl syl2anc eqeltrid ) ADCEIZJKZBL
+        ZFACTMRTMSTMGAEBHNBCROPQ $.
+    $}
+
+    ${
+      cats1cli.2 $e |- S e. Word _V $.
+      cats1fvn.3 $e |- ( # ` S ) = M $.
+      $( The last symbol of a concatenation with a singleton word.
+         (Contributed by Mario Carneiro, 26-Feb-2016.) $)
+      cats1fvn $p |- ( X e. V -> ( T ` M ) = X ) $=
+        ( wcel cfv cc0 cs1 chash caddc co cconcat oveq2i cn0 cvv cn cword lencl
+        ax-mp eqeltrri nn0cni addlidi eqtr2i fveq12i cfzo wceq s1cld s1leng 1nn
+        elex c1 eqeltrdi lbfzo0 sylibr ccatval3 mp3an2i eqtrid s1fv eqtrd ) EDI
+        ZCBJZKELZJZEVDVEKAMJZNOZAVFPOZJZVGCVIBVJFVIKCNOCVHCKNHQCCVHCRHASUAZIZVH
+        RIGSAUBUCUDUEUFUGUHVMVDVFVLIKKVFMJZUIOIZVKVGUJGVDESEDUNUKVDVNTIVOVDVNUO
+        TEDULUMUPVNUQURSAVFKUSUTVAEDVBVC $.
+    $}
+
+    ${
+      cats1fvnd.2 $e |- ( ph -> S e. Word _V ) $.
+      cats1fvnd.x $e |- ( ph -> X e. V ) $.
+      cats1fvnd.3 $e |- ( ph -> ( # ` S ) = M ) $.
+      $( The last symbol of a concatenation with a singleton word.
+         (Contributed by Mario Carneiro, 26-Feb-2016.)  (Revised by Jim
+         Kingdon, 20-Jan-2026.) $)
+      cats1fvnd $p |- ( ph -> ( T ` M ) = X ) $=
+        ( cfv cc0 chash caddc co wceq cvv wcel syl cn cs1 cconcat a1i cword cn0
+        lencl nn0cnd addlidd eqtr2d fveq12d cfzo elex s1cld s1leng 1nn eqeltrdi
+        c1 lbfzo0 sylibr ccatval3 syl3anc s1fv 3eqtrd ) ADCKLBMKZNOZBFUAZUBOZKZ
+        LVFKZFADVECVGCVGPAGUCAVEVDDAVDAVDABQUDZRZVDUERHQBUFSUGUHJUIUJAVKVFVJRZL
+        LVFMKZUKORZVHVIPHAFERZVLIVOFQFEULUMSAVOVNIVOVMTRVNVOVMUQTFEUNUOUPVMURUS
+        SQBVFLUTVAAVOVIFPIFEVBSVC $.
+    $}
+
+    ${
+      cats1fvd.s $e |- ( ph -> S e. Word _V ) $.
+      cats1fvd.3 $e |- ( ph -> ( # ` S ) = M ) $.
+      cats1fvd.yex $e |- ( ph -> Y e. V ) $.
+      cats1fvd.x $e |- ( ph -> X e. W ) $.
+      cats1fvd.y $e |- ( ph -> ( S ` N ) = Y ) $.
+      cats1fvd.5 $e |- ( ph -> N e. NN0 ) $.
+      cats1fvd.6 $e |- ( ph -> N < M ) $.
+      $( A symbol other than the last in a concatenation with a singleton word.
+         (Contributed by Mario Carneiro, 26-Feb-2016.)  (Revised by Jim
+         Kingdon, 20-Jan-2026.) $)
+      cats1fvd $p |- ( ph -> ( T ` N ) = Y ) $=
+        ( cfv cvv wcel cs1 cconcat fveq1i cword cc0 chash cfzo wceq elexd s1cld
+        co cuz cz clt wbr cn0 nn0uz eleqtrdi lencl nn0z 3syl breqtrrd syl3anbrc
+        elfzo2 ccatval1 syl3anc eqtrid eqtrd ) AECRZEBRZIAVIEBHUAZUBUKZRZVJECVL
+        JUCABSUDZTZVKVNTEUEBUFRZUGUKTZVMVJUHKAHSAHGNUIUJAEUEULRZTVPUMTZEVPUNUOV
+        QAEUPVRPUQURAVOVPUPTVSKSBUSVPUTVAAEDVPUNQLVBEUEVPVDVCSSBVKEVEVFVGOVH $.
+    $}
+
+    ${
+      cats1lend.s $e |- ( ph -> S e. Word _V ) $.
+      cats1lend.x $e |- ( ph -> X e. W ) $.
+      cats1lend.3 $e |- ( # ` S ) = M $.
+      cats1len.4 $e |- ( M + 1 ) = N $.
+      $( The length of concatenation with a singleton word.  (Contributed by
+         Mario Carneiro, 26-Feb-2016.)  (Revised by Jim Kingdon,
+         19-Jan-2026.) $)
+      cats1lend $p |- ( ph -> ( # ` T ) = N ) $=
+        ( chash cfv co c1 caddc cvv wcel wceq cs1 cconcat cword ccatlen syl2anc
+        fveq2i s1cld a1i s1leng syl oveq12d eqtrd eqtrdi eqtrid ) ACMNBGUAZUBOZ
+        MNZECUPMHUFAUQDPQOZEAUQBMNZUOMNZQOZURABRUCSUOFUCSUQVATIAGFJUGRFBUOUDUEA
+        USDUTPQUSDTAKUHAGFSUTPTJGFUIUJUKULLUMUN $.
+    $}
+
+    ${
+      cats1catd.2 $e |- ( ph -> A e. Word _V ) $.
+      cats1catd.3 $e |- ( ph -> S e. Word _V ) $.
+      cats1catd.x $e |- ( ph -> X e. W ) $.
+      cats1catd.4 $e |- ( ph -> C = ( B ++ <" X "> ) ) $.
+      cats1catd.5 $e |- ( ph -> B = ( A ++ S ) ) $.
+      $( Closure of concatenation with a singleton word.  (Contributed by Mario
+         Carneiro, 26-Feb-2016.)  (Revised by Jim Kingdon, 19-Jan-2026.) $)
+      cats1catd $p |- ( ph -> C = ( A ++ T ) ) $=
+        ( cconcat co cvv cword wcel wceq cs1 oveq1d s1cld ccatass syl3anc eqtrd
+        wrdv syl oveq2i a1i 3eqtr4d ) ACHUAZOPZBEULOPZOPZDBFOPZAUMBEOPZULOPZUOA
+        CUQULONUBABQRZSEUSSULUSSZURUOTJKAULGRSUTAHGLUCGULUGUHQBEULUDUEUFMUPUOTA
+        FUNBOIUIUJUK $.
+    $}
+  $}
+
+  ${
+    cats2catd.b $e |- ( ph -> B e. Word _V ) $.
+    cats2catd.d $e |- ( ph -> D e. Word _V ) $.
+    cats2catd.x $e |- ( ph -> X e. V ) $.
+    cats2catd.y $e |- ( ph -> Y e. W ) $.
+    cats2catd.a $e |- ( ph -> A = ( B ++ <" X "> ) ) $.
+    cats2catd.c $e |- ( ph -> C = ( <" Y "> ++ D ) ) $.
+    $( Closure of concatenation of concatenations with singleton words.
+       (Contributed by AV, 1-Mar-2021.)  (Revised by Jim Kingdon,
+       19-Jan-2026.) $)
+    cats2catd $p |- ( ph -> ( A ++ C ) = ( ( B ++ <" X Y "> ) ++ D ) ) $=
+      ( cconcat co cvv cword wcel cs1 cs2 oveq12d wceq s1cld syl ccatcl syl2anc
+      wrdv ccatass syl3anc df-s2 eqcomi oveq2i eqtrdi oveq1d 3eqtr2d ) ABDPQCHU
+      AZPQZIUAZEPQZPQZUSUTPQZEPQZCHIUBZPQZEPQABUSDVAPNOUCAUSRSZTZUTVGTZEVGTVDVB
+      UDACVGTZURVGTZVHJAURFSTVKAHFLUEFURUIUFZRCURUGUHAUTGSTVIAIGMUEGUTUIUFZKRUS
+      UTEUJUKAVCVFEPAVCCURUTPQZPQZVFAVJVKVIVCVOUDJVLVMRCURUTUJUKVNVECPVEVNHIULU
+      MUNUOUPUQ $.
+  $}
+
+  ${
+    s2eqd.1 $e |- ( ph -> A = N ) $.
+    s2eqd.2 $e |- ( ph -> B = O ) $.
+    $( Equality theorem for a doubleton word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s2eqd $p |- ( ph -> <" A B "> = <" N O "> ) $=
+      ( cs1 cconcat co cs2 s1eqd oveq12d df-s2 3eqtr4g ) ABHZCHZIJDHZEHZIJBCKDE
+      KAPRQSIABDFLACEGLMBCNDENO $.
+
+    s3eqd.3 $e |- ( ph -> C = P ) $.
+    $( Equality theorem for a length 3 word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s3eqd $p |- ( ph -> <" A B C "> = <" N O P "> ) $=
+      ( cs2 cs1 cconcat co cs3 s2eqd s1eqd oveq12d df-s3 3eqtr4g ) ABCKZDLZMNFG
+      KZELZMNBCDOFGEOAUAUCUBUDMABCFGHIPADEJQRBCDSFGEST $.
+
+    s4eqd.4 $e |- ( ph -> D = Q ) $.
+    $( Equality theorem for a length 4 word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s4eqd $p |- ( ph -> <" A B C D "> = <" N O P Q "> ) $=
+      ( cs3 cs1 cconcat co cs4 s3eqd df-s4 s1eqd oveq12d 3eqtr4g ) ABCDNZEOZPQH
+      IFNZGOZPQBCDERHIFGRAUDUFUEUGPABCDFHIJKLSAEGMUAUBBCDETHIFGTUC $.
+
+    s5eqd.5 $e |- ( ph -> E = R ) $.
+    $( Equality theorem for a length 5 word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s5eqd $p |- ( ph -> <" A B C D E "> = <" N O P Q R "> ) $=
+      ( cs4 cs1 cconcat co cs5 s4eqd s1eqd oveq12d df-s5 3eqtr4g ) ABCDEQZIRZST
+      JKFGQZHRZSTBCDEIUAJKFGHUAAUGUIUHUJSABCDEFGJKLMNOUBAIHPUCUDBCDEIUEJKFGHUEU
+      F $.
+
+    s6eqd.6 $e |- ( ph -> F = S ) $.
+    $( Equality theorem for a length 6 word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s6eqd $p |- ( ph -> <" A B C D E F "> = <" N O P Q R S "> ) $=
+      ( cconcat cs5 cs1 co cs6 s5eqd s1eqd oveq12d df-s6 3eqtr4g ) ABCDEJUAZKUB
+      ZTUCLMFGHUAZIUBZTUCBCDEJKUDLMFGHIUDAUJULUKUMTABCDEFGHJLMNOPQRUEAKISUFUGBC
+      DEJKUHLMFGHIUHUI $.
+
+    s7eqd.6 $e |- ( ph -> G = T ) $.
+    $( Equality theorem for a length 7 word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s7eqd $p |- ( ph -> <" A B C D E F G "> = <" N O P Q R S T "> ) $=
+      ( cs6 cs1 cconcat co cs7 s6eqd s1eqd oveq12d df-s7 3eqtr4g ) ABCDEKLUCZMU
+      DZUEUFNOFGHIUCZJUDZUEUFBCDEKLMUGNOFGHIJUGAUMUOUNUPUEABCDEFGHIKLNOPQRSTUAU
+      HAMJUBUIUJBCDEKLMUKNOFGHIJUKUL $.
+
+    s8eqd.6 $e |- ( ph -> H = U ) $.
+    $( Equality theorem for a length 8 word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s8eqd $p |- ( ph -> <" A B C D E F G H "> = <" N O P Q R S T U "> ) $=
+      ( cs7 cs1 cconcat co cs8 s7eqd s1eqd oveq12d df-s8 3eqtr4g ) ABCDELMNUFZO
+      UGZUHUIPQFGHIJUFZKUGZUHUIBCDELMNOUJPQFGHIJKUJAUPURUQUSUHABCDEFGHIJLMNPQRS
+      TUAUBUCUDUKAOKUEULUMBCDELMNOUNPQFGHIJKUNUO $.
+  $}
+
+  $( Equality theorem for a length 3 word for the second symbol.  (Contributed
+     by AV, 4-Jan-2022.) $)
+  s3eq2 $p |- ( B = D -> <" A B C "> = <" A D C "> ) $=
+    ( wceq eqidd id s3eqd ) BDEZABCCADIAFIGICFH $.
+
+  ${
+    s2cld.1 $e |- ( ph -> A e. X ) $.
+    s2cld.2 $e |- ( ph -> B e. X ) $.
+    $( A doubleton word is a word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s2cld $p |- ( ph -> <" A B "> e. Word X ) $=
+      ( cs1 cs2 df-s2 s1cld cats1cld ) ADBGBCHCBCIABDEJFK $.
+
+    s3cld.3 $e |- ( ph -> C e. X ) $.
+    $( A length 3 string is a word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s3cld $p |- ( ph -> <" A B C "> e. Word X ) $=
+      ( cs2 cs3 df-s3 s2cld cats1cld ) AEBCIBCDJDBCDKABCEFGLHM $.
+
+    s4cld.4 $e |- ( ph -> D e. X ) $.
+    $( A length 4 string is a word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s4cld $p |- ( ph -> <" A B C D "> e. Word X ) $=
+      ( cs3 cs4 df-s4 s3cld cats1cld ) AFBCDKBCDELEBCDEMABCDFGHINJO $.
+
+    s5cld.5 $e |- ( ph -> E e. X ) $.
+    $( A length 5 string is a word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s5cld $p |- ( ph -> <" A B C D E "> e. Word X ) $=
+      ( cs4 cs5 df-s5 s4cld cats1cld ) AGBCDEMBCDEFNFBCDEFOABCDEGHIJKPLQ $.
+
+    s6cld.6 $e |- ( ph -> F e. X ) $.
+    $( A length 6 string is a word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s6cld $p |- ( ph -> <" A B C D E F "> e. Word X ) $=
+      ( cs5 cs6 df-s6 s5cld cats1cld ) AHBCDEFOBCDEFGPGBCDEFGQABCDEFHIJKLMRNS
+      $.
+
+    s7cld.7 $e |- ( ph -> G e. X ) $.
+    $( A length 7 string is a word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s7cld $p |- ( ph -> <" A B C D E F G "> e. Word X ) $=
+      ( cs6 cs7 df-s7 s6cld cats1cld ) AIBCDEFGQBCDEFGHRHBCDEFGHSABCDEFGIJKLMNO
+      TPUA $.
+
+    s8cld.8 $e |- ( ph -> H e. X ) $.
+    $( A length 8 string is a word.  (Contributed by Mario Carneiro,
+       27-Feb-2016.) $)
+    s8cld $p |- ( ph -> <" A B C D E F G H "> e. Word X ) $=
+      ( cs7 cs8 df-s8 s7cld cats1cld ) AJBCDEFGHSBCDEFGHITIBCDEFGHIUAABCDEFGHJK
+      LMNOPQUBRUC $.
+  $}
+
+  $( A doubleton word is a word.  (Contributed by Stefan O'Rear, 23-Aug-2015.)
+     (Revised by Mario Carneiro, 26-Feb-2016.) $)
+  s2cl $p |- ( ( A e. X /\ B e. X ) -> <" A B "> e. Word X ) $=
+    ( wcel wa simpl simpr s2cld ) ACDZBCDZEABCIJFIJGH $.
+
+  $( A length 3 string is a word.  (Contributed by Mario Carneiro,
+     26-Feb-2016.) $)
+  s3cl $p |- ( ( A e. X /\ B e. X /\ C e. X ) -> <" A B C "> e. Word X ) $=
+    ( wcel w3a simp1 simp2 simp3 s3cld ) ADEZBDEZCDEZFABCDKLMGKLMHKLMIJ $.
+
+  $( Extract the first symbol from a doubleton word.  (Contributed by Stefan
+     O'Rear, 23-Aug-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.) $)
+  s2fv0g $p |- ( ( A e. V /\ B e. W ) -> ( <" A B "> ` 0 ) = A ) $=
+    ( wcel wa cs1 cs2 c1 cc0 df-s2 cvv cword s1cl wrdv syl adantr cfv wceq a1i
+    chash s1leng simpl simpr s1fv cn0 0nn0 clt wbr 0lt1 cats1fvd ) ACEZBDEZFZAG
+    ZABHIJCDBAABKULUOLMEZUMULUOCMEUPACNCUOOPQULUOUARISUMACUBQULUMUCULUMUDULJUOR
+    ASUMACUEQJUFEUNUGTJIUHUIUNUJTUK $.
+
+  $( Extract the second symbol from a doubleton word.  (Contributed by Stefan
+     O'Rear, 23-Aug-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.) $)
+  s2fv1g $p |- ( ( A e. V /\ B e. W ) -> ( <" A B "> ` 1 ) = B ) $=
+    ( wcel wa cs1 cs2 c1 df-s2 cvv elex adantr s1cld simpr chash wceq cats1fvnd
+    cfv s1leng ) ACEZBDEZFZAGZABHIDBABJUCAKUAAKEUBACLMNUAUBOUAUDPSIQUBACTMR $.
+
+  $( The length of a doubleton word.  (Contributed by Stefan O'Rear,
+     23-Aug-2015.)  (Revised by Mario Carneiro, 26-Feb-2016.) $)
+  s2leng $p |- ( ( A e. V /\ B e. W ) -> ( # ` <" A B "> ) = 2 ) $=
+    ( wcel wa cs2 chash cfv cs1 c1 caddc co c2 df-s2 cvv elex adantr s1cld eqid
+    simpr cats1lend wceq s1leng oveq1d 1p1e2 eqtrdi eqtrd ) ACEZBDEZFZABGZHIAJZ
+    HIZKLMZNUKUMULUNUODBABOUKAPUIAPEUJACQRSUIUJUAUNTUOTUBUKUOKKLMNUKUNKKLUIUNKU
+    CUJACUDRUEUFUGUH $.
+
+  $( The domain of a doubleton word is an unordered pair.  (Contributed by AV,
+     9-Jan-2020.) $)
+  s2dmg $p |- ( ( A e. V /\ B e. W ) -> dom <" A B "> = { 0 , 1 } ) $=
+    ( wcel wa cc0 c1 cpr cvv cs2 chash cfv cfzo co wf elex syl c2 wceq syl2an
+    cword s2cl wrdf s2leng oveq2 fzo0to2pr eqtrdi feq2d mpbid fdmd ) ACEZBDEZFZ
+    GHIZJABKZUNGUPLMZNOZJUPPZUOJUPPULAJEZBJEZUSUMACQBDQUTVAFUPJUBEUSABJUCJUPUDR
+    UAUNURUOJUPUNUQSTZURUOTABCDUEVBURGSNOUOUQSGNUFUGUHRUIUJUK $.
+
+  $( Extract the first symbol from a length 3 string.  (Contributed by Mario
+     Carneiro, 13-Jan-2017.) $)
+  s3fv0g $p |- ( ( A e. V /\ B e. W /\ C e. X ) -> ( <" A B C "> ` 0 ) = A ) $=
+    ( wcel w3a cs2 cs3 c2 cc0 df-s3 cvv simp1 elexd cfv wceq 3adant3 a1i s2leng
+    simp2 s2cld chash simp3 s2fv0g cn0 0nn0 clt wbr 2pos cats1fvd ) ADGZBEGZCFG
+    ZHZABIZABCJKLDFCAABCMUPABNUPADUMUNUOOZPUPBEUMUNUOUBPUCUMUNUQUDQKRUOABDEUASU
+    RUMUNUOUEUMUNLUQQARUOABDEUFSLUGGUPUHTLKUIUJUPUKTUL $.
+
+  $( Extract the second symbol from a length 3 string.  (Contributed by Mario
+     Carneiro, 13-Jan-2017.) $)
+  s3fv1g $p |- ( ( A e. V /\ B e. W /\ C e. X ) -> ( <" A B C "> ` 1 ) = B ) $=
+    ( wcel w3a cs2 cs3 c2 c1 df-s3 cvv simp1 elexd cfv wceq 3adant3 a1i cn0 clt
+    simp2 s2cld chash s2leng simp3 s2fv1g 1nn0 wbr 1lt2 cats1fvd ) ADGZBEGZCFGZ
+    HZABIZABCJKLEFCBABCMUPABNUPADUMUNUOOPUPBEUMUNUOUCZPUDUMUNUQUEQKRUOABDEUFSUR
+    UMUNUOUGUMUNLUQQBRUOABDEUHSLUAGUPUITLKUBUJUPUKTUL $.
 
 
 $(
@@ -194624,16 +194973,54 @@ $)
     $( In a multigraph, there is no loop, i.e. no edge connecting a vertex with
        itself.  (Contributed by Alexander van der Vekens, 26-Jan-2018.)
        (Revised by AV, 11-Dec-2020.) $)
-    umgrnloopvv $p |- ( ( G e. UMGraph /\ M e. W /\ N e. V )
+    umgrnloopv $p |- ( ( G e. UMGraph /\ M e. W )
                        -> ( ( E ` X ) = { M , N } -> M =/= N ) ) $=
-      ( cumgr wcel w3a cfv cpr wceq wa c2o cen wbr wb syl2anc simpr simpll wrel
-      wne cuhgr wfun umgruhgr uhgrfun funrel 3syl ad2antrr simplr prid1g adantl
-      cdm adantr mpbird relelfvdm cvtx eqid umgredg2en eqbrtrrd 3adantl3 simpl2
-      eleq2 simpl3 pr2ne mpbid ex ) BIJZCFJZDEJZKZGALZCDMZNZCDUDZVMVPOZVOPQRZVQ
-      VJVKVPVSVLVJVKOZVPOZVNVOPQVTVPUAZWAVJGAUOJZVNPQRVJVKVPUBWAAUCZCVNJZWCVJWD
-      VKVPVJBUEJAUFWDBUGABHUHAUIUJUKWAVPVKWEWBVJVKVPULVPVKOWECVOJZVKWFVPCDFUMUN
-      VPWEWFSVKVNVOCVEUPUQTCGAURTABBUSLZGWGUTHVATVBVCVRVKVLVSVQSVJVKVLVPVDVJVKV
-      LVPVFCDFEVGTVHVI $.
+      ( cumgr wcel wa cfv cpr wceq c2o cen wbr 3syl wb syl2anc cvv simpr simpll
+      wne wrel cuhgr wfun umgruhgr uhgrfun funrel ad2antrr simplr prid1g adantl
+      cdm eleq2 adantr mpbird relelfvdm cvtx umgredg2en eqbrtrrd pr2cv pr2ne ex
+      eqid mpbid ) BHIZCEIZJZFAKZCDLZMZCDUCZVIVLJZVKNOPZVMVNVJVKNOVIVLUAZVNVGFA
+      UNIZVJNOPVGVHVLUBVNAUDZCVJIZVQVGVRVHVLVGBUEIAUFVRBUGABGUHAUIQUJVNVLVHVSVP
+      VGVHVLUKVLVHJVSCVKIZVHVTVLCDEULUMVLVSVTRVHVJVKCUOUPUQSCFAURSABBUSKZFWAVEG
+      UTSVAZVNVOCTIDTIJVOVMRWBCDVBCDTTVCQVFVD $.
+
+    ${
+      umgredgprv.v $e |- V = ( Vtx ` G ) $.
+      $( In a multigraph, an edge is an unordered pair of vertices.  This
+         theorem would not hold for arbitrary hyper-/pseudographs since either
+         ` M ` or ` N ` could be proper classes ( ` ( E `` X ) ` would be a
+         loop in this case), which are no vertices of course.  (Contributed by
+         Alexander van der Vekens, 19-Aug-2017.)  (Revised by AV,
+         11-Dec-2020.) $)
+      umgredgprv $p |- ( ( G e. UMGraph /\ X e. dom E )
+                     -> ( ( E ` X ) = { M , N } -> ( M e. V /\ N e. V ) ) ) $=
+        ( cumgr wcel cdm wa cfv cpr wss adantr cvv c2o cen wbr wceq simpr cuhgr
+        umgruhgr uhgrss sylan eqsstrrd wb umgredg2en eqbrtrrd syl prid1g prid2g
+        pr2cv anim12i prssg 3syl mpbird ex ) BIJZFAKJZLZFAMZCDNZUAZCEJDEJLZVBVE
+        LZVFVDEOZVGVDVCEVBVEUBZVBVCEOZVEUTBUCJVAVJBUDAFBEHGUEUFPUGVGCQJZDQJZLZC
+        VDJZDVDJZLVFVHUHVGVDRSTVMVGVCVDRSVIVBVCRSTVEABEFHGUIPUJCDUNUKVKVNVLVOCD
+        QULCDQUMUOCDEVDVDUPUQURUS $.
+    $}
+
+    $d G x $.  $d M x $.  $d N x $.
+    $( In a multigraph, there is no loop, i.e. no edge connecting a vertex with
+       itself.  (Contributed by Alexander van der Vekens, 19-Aug-2017.)
+       (Revised by AV, 11-Dec-2020.) $)
+    umgrnloop $p |- ( G e. UMGraph -> ( E. x e. dom E ( E ` x ) = { M , N }
+                                      -> M =/= N ) ) $=
+      ( cumgr wcel cv cfv cpr wceq wne cdm cvtx wa eqid imp wi adantr ex com23
+      umgredgprv umgrnloopv com12 mpcom rexlimdva2 ) CGHZAIZBJDEKLZDEMZABNZDCOJ
+      ZHZEUMHZPZUHUIULHZPZUJPZUKURUJUPBCDEUMUIFUMQUCRUNUSUKSUOUSUNUKURUJUNUKSZU
+      HUJUTSUQUHUNUJUKUHUNUJUKSBCDEUMUIFUDUAUBTRUETUFUG $.
+
+    $d U x $.
+    $( A multigraph has no loops.  (Contributed by Alexander van der Vekens,
+       6-Dec-2017.)  (Revised by AV, 11-Dec-2020.) $)
+    umgrnloop0 $p |- ( G e. UMGraph
+                       -> { x e. dom E | ( E ` x ) = { U } } = (/) ) $=
+      ( cumgr wcel cv cfv csn wceq wn cdm wral crab c0 wrex cpr wne sylibr mtoi
+      neirr umgrnloop wa simpr dfsn2 eqtrdi ex reximdv mtod ralnex rabeq0 ) DFG
+      ZAHCIZBJZKZLACMZNZUPAUQOPKUMUPAUQQZLURUMUSUNBBRZKZAUQQZUMVBBBSBUBACDBBEUC
+      UAUMUPVAAUQUMUPVAUMUPUDUNUOUTUMUPUEBUFUGUHUIUJUPAUQUKTUPAUQULT $.
   $}
 
   ${
@@ -194919,6 +195306,22 @@ $)
 
   ${
     $d E x $.  $d G x $.
+    $( The set of edges of a pseudograph is a subset of the set of unordered
+       pairs of vertices.  (Contributed by AV, 29-Nov-2020.) $)
+    upgredgssen $p |- ( G e. UPGraph -> ( Edg ` G )
+                 C_ { x e. ~P ( Vtx ` G ) | ( x ~~ 1o \/ x ~~ 2o ) } ) $=
+      ( cupgr wcel cedg cfv ciedg crn c1o cen wbr c2o cvtx cpw crab edgvalg cdm
+      cv wo eqid upgrfen frnd eqsstrd ) BCDZBEFBGFZHARZIJKUFLJKSABMFZNOZBCPUDUE
+      QUHUEAUEBUGUGTUETUAUBUC $.
+
+    $( The set of edges of a multigraph is a subset of the set of proper
+       unordered pairs of vertices.  (Contributed by AV, 25-Nov-2020.) $)
+    umgredgssen $p |- ( G e. UMGraph
+               -> ( Edg ` G ) C_ { x e. ~P ( Vtx ` G ) | x ~~ 2o } ) $=
+      ( cumgr wcel cedg cfv ciedg crn cv c2o cen wbr cvtx cpw crab edgvalg eqid
+      cdm umgrfen frnd eqsstrd ) BCDZBEFBGFZHAIJKLABMFZNOZBCPUBUCRUEUCAUCBUDUDQ
+      UCQSTUA $.
+
     $( Properties of an edge of a pseudograph.  (Contributed by AV,
        8-Nov-2020.) $)
     edgupgren $p |- ( ( G e. UPGraph /\ E e. ( Edg ` G ) )
@@ -195047,7 +195450,7 @@ $)
   ${
     umgredgne.v $e |- E = ( Edg ` G ) $.
     $( An edge of a multigraph always connects two different vertices.
-       Analogue of ~ umgrnloopvv .  (Contributed by AV, 27-Nov-2020.) $)
+       Analogue of ~ umgrnloopv .  (Contributed by AV, 27-Nov-2020.) $)
     umgredgne $p |- ( ( G e. UMGraph /\ { M , N } e. E ) -> M =/= N ) $=
       ( cumgr wcel cpr c2o cen wbr wne cvtx cfv cpw cedg eleq2i edgumgren cvv
       wa sylan2b simprd wb pr2cv pr2ne 3syl mpbid ) BFGZCDHZAGZTZUIIJKZCDLZUKUI
@@ -195072,6 +195475,696 @@ $)
       ensn1 entr mpan breq1 mtbiri intnand eleq2i edgumgren sylan2b nsyl3 nexdv
       mto cedg ) DFGZBCGZHZBAIZJZKZAUTBDLMNGZBOPQZHZUQUTVBVAUTVBUSOPQZVDROPQZSR
       USPQVDVEUSRURATUBUARUSOUCUDUMBUSOPUEUFUGUPUOBDUNMZGVCCVFBEUHBDUIUJUKUL $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Undirected simple graphs
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  In this section, "simple graph" will always stand for "undirected simple
+  graph (without loops)" and "simple pseudograph" for "undirected simple
+  pseudograph (which could have loops)".
+
+$)
+
+  $c USPGraph $.
+  $c USGraph $.
+
+  $( Extend class notation with undirected simple pseudographs (which could
+     have loops). $)
+  cuspgr $a class USPGraph $.
+
+  $( Extend class notation with undirected simple graphs (without loops). $)
+  cusgr $a class USGraph $.
+
+  ${
+    $d e g v x $.
+    $( Define the class of all undirected simple pseudographs (which could have
+       loops).  An undirected simple pseudograph is a special undirected
+       pseudograph or a special undirected simple hypergraph, consisting of a
+       set ` v ` (of "vertices") and an injective (one-to-one) function ` e `
+       (representing (indexed) "edges") into subsets of ` v ` of cardinality
+       one or two, representing the two vertices incident to the edge, or the
+       one vertex if the edge is a loop.  In contrast to a pseudograph, there
+       is at most one edge between two vertices resp. at most one loop for a
+       vertex.  (Contributed by Alexander van der Vekens, 10-Aug-2017.)
+       (Revised by Jim Kingdon, 15-Jan-2026.) $)
+    df-uspgren $a |- USPGraph = { g | [. ( Vtx ` g ) / v ].
+                                    [. ( iEdg ` g ) / e ].
+             e : dom e -1-1-> { x e. ~P v | ( x ~~ 1o \/ x ~~ 2o ) } } $.
+
+    $( Define the class of all undirected simple graphs (without loops).  An
+       undirected simple graph is a special undirected simple pseudograph,
+       consisting of a set ` v ` (of "vertices") and an injective (one-to-one)
+       function ` e ` (representing (indexed) "edges") into subsets of ` v ` of
+       cardinality two, representing the two vertices incident to the edge.  In
+       contrast to an undirected simple pseudograph, an undirected simple graph
+       has no loops (edges connecting a vertex with itself).  (Contributed by
+       Alexander van der Vekens, 10-Aug-2017.)  (Revised by AV,
+       13-Oct-2020.) $)
+    df-usgren $a |- USGraph = { g | [. ( Vtx ` g ) / v ].
+      [. ( iEdg ` g ) / e ]. e : dom e -1-1-> { x e. ~P v | x ~~ 2o } } $.
+  $}
+
+  ${
+    $d e g h v x $.  $d E h $.  $d G h x $.  $d V h x $.
+    isuspgr.v $e |- V = ( Vtx ` G ) $.
+    isuspgr.e $e |- E = ( iEdg ` G ) $.
+    $( The property of being a simple pseudograph.  (Contributed by Alexander
+       van der Vekens, 10-Aug-2017.)  (Revised by AV, 13-Oct-2020.) $)
+    isuspgren $p |- ( G e. U -> ( G e. USPGraph <->
+           E : dom E -1-1-> { x e. ~P V | ( x ~~ 1o \/ x ~~ 2o ) } ) ) $=
+      ( ve vv vg vh wcel cv cdm ciedg cfv cvtx wceq fveq2 cvv cuspgr c1o cen wo
+      wbr c2o cpw crab wf1 wsbc cab df-uspgren eleq2i dmeqd eqcomi dmeqi eqtrdi
+      eqtr4di pweqd rabeqdv f1eq123d vtxex elv a1i iedgex adantr simpr ad2antlr
+      wa pweq sbcied2 cbvabv elab2g bitrid ) DUALDHMZNZAMZUBUCUEVQUFUCUEUDZAIMZ
+      UGZUHZVOUIZHJMZOPZUJZIWCQPZUJZJUKZLDBLCNZVRAEUGZUHZCUIZUAWHDAIHJULUMKMZOP
+      ZNZVRAWMQPZUGZUHZWNUIZWLKDWHBWMDRZWOWIWRWKWNCWTWNDOPZCWMDOSZGURWTWOXANWIW
+      TWNXAXBUNXACCXAGUOUPUQWTVRAWQWJWTWPEWTWPDQPEWMDQSFURUSUTVAWGWSJKWCWMRZWEW
+      SIWFWPTWFTLZXCXDJWCTVBVCVDWCWMQSXCVSWPRZVIZWBWSHWDWNTWDTLZXFXGJWCTVEVCVDX
+      CWDWNRXEWCWMOSVFXFVOWNRZVIZVPWOWAWRVOWNXFXHVGZXIVOWNXJUNXIVRAVTWQXEVTWQRX
+      CXHVSWPVJVHUTVAVKVKVLVMVN $.
+
+    $( The property of being a simple graph.  (Contributed by Alexander van der
+       Vekens, 10-Aug-2017.)  (Revised by AV, 13-Oct-2020.) $)
+    isusgren $p |- ( G e. U -> ( G e. USGraph <->
+            E : dom E -1-1-> { x e. ~P V | x ~~ 2o } ) ) $=
+      ( ve vv vg vh wcel cv cdm ciedg cfv cvtx wceq fveq2 cvv cusgr c2o cen wbr
+      cpw crab wf1 cab df-usgren eleq2i eqtr4di dmeqd eqcomi dmeqi eqtrdi pweqd
+      wsbc rabeqdv f1eq123d vtxex elv a1i wa iedgex simpr pweq ad2antlr sbcied2
+      adantr cbvabv elab2g bitrid ) DUALDHMZNZAMUBUCUDZAIMZUEZUFZVMUGZHJMZOPZUQ
+      ZIVTQPZUQZJUHZLDBLCNZVOAEUEZUFZCUGZUAWEDAIHJUIUJKMZOPZNZVOAWJQPZUEZUFZWKU
+      GZWIKDWEBWJDRZWLWFWOWHWKCWQWKDOPZCWJDOSZGUKWQWLWRNWFWQWKWRWSULWRCCWRGUMUN
+      UOWQVOAWNWGWQWMEWQWMDQPEWJDQSFUKUPURUSWDWPJKVTWJRZWBWPIWCWMTWCTLZWTXAJVTT
+      UTVAVBVTWJQSWTVPWMRZVCZVSWPHWAWKTWATLZXCXDJVTTVDVAVBWTWAWKRXBVTWJOSVIXCVM
+      WKRZVCZVNWLVRWOVMWKXCXEVEZXFVMWKXGULXFVOAVQWNXBVQWNRWTXEVPWMVFVGURUSVHVHV
+      JVKVL $.
+
+    $( The edge function of a simple pseudograph is a one-to-one function into
+       unordered pairs of vertices.  (Contributed by Alexander van der Vekens,
+       10-Aug-2017.)  (Revised by AV, 13-Oct-2020.) $)
+    uspgrfen $p |- ( G e. USPGraph ->
+             E : dom E -1-1-> { x e. ~P V | ( x ~~ 1o \/ x ~~ 2o ) } ) $=
+      ( cuspgr wcel cdm cv c1o cen wbr c2o wo cpw crab wf1 isuspgren ibi ) CGHB
+      IAJZKLMUANLMOADPQBRAGBCDEFST $.
+
+    $( The edge function of a simple graph is a one-to-one function into the
+       set of proper unordered pairs of vertices.  (Contributed by Alexander
+       van der Vekens, 10-Aug-2017.)  (Revised by AV, 13-Oct-2020.) $)
+    usgrfen $p |- ( G e. USGraph ->
+              E : dom E -1-1-> { x e. ~P V | x ~~ 2o } ) $=
+      ( cusgr wcel cdm cv c2o cen wbr cpw crab wf1 isusgren ibi ) CGHBIAJKLMADN
+      OBPAGBCDEFQR $.
+  $}
+
+  ${
+    $d G x $.
+    $( The edge function of a simple graph is a function.  (Contributed by
+       Alexander van der Vekens, 18-Aug-2017.)  (Revised by AV,
+       13-Oct-2020.) $)
+    usgrfun $p |- ( G e. USGraph -> Fun ( iEdg ` G ) ) $=
+      ( vx cusgr wcel ciedg cfv cdm c2o cen wbr cvtx cpw crab wfun eqid usgrfen
+      cv wf1 f1fun syl ) ACDAEFZGZBQHIJBAKFZLMZUARUANBUAAUCUCOUAOPUBUDUAST $.
+
+    $( The set of edges of a simple graph is a subset of the set of proper
+       unordered pairs of vertices.  (Contributed by AV, 1-Jan-2020.)  (Revised
+       by AV, 14-Oct-2020.) $)
+    usgredgssen $p |- ( G e. USGraph
+               -> ( Edg ` G ) C_ { x e. ~P ( Vtx ` G ) | x ~~ 2o } ) $=
+      ( cusgr wcel cedg cfv ciedg crn c2o cen wbr cvtx cpw crab edgvalg cdm wf1
+      cv wf eqid wss usgrfen f1f frn 3syl eqsstrd ) BCDZBEFBGFZHZARIJKABLFZMNZB
+      COUGUHPZUKUHQULUKUHSUIUKUAAUHBUJUJTUHTUBULUKUHUCULUKUHUDUEUF $.
+
+    $d E x $.
+    $( An edge of a simple graph is a proper unordered pair of vertices.
+       (Contributed by AV, 1-Jan-2020.)  (Revised by AV, 14-Oct-2020.) $)
+    edgusgren $p |- ( ( G e. USGraph /\ E e. ( Edg ` G ) )
+                -> ( E e. ~P ( Vtx ` G ) /\ E ~~ 2o ) ) $=
+      ( vx cusgr wcel cedg cfv wa c2o cen wbr cvtx cpw usgredgssen sselda breq1
+      cv crab elrab sylib ) BDEZABFGZEHACQZIJKZCBLGMZRZEAUEEAIJKZHUAUBUFACBNOUD
+      UGCAUEUCAIJPST $.
+  $}
+
+  ${
+    $d E p $.  $d V p $.  $d W p $.  $d X p $.
+    $( The property of being an undirected simple pseudograph represented as an
+       ordered pair.  The representation as an ordered pair is the usual
+       representation of a graph, see section I.1 of [Bollobas] p. 1.
+       (Contributed by AV, 25-Nov-2021.) $)
+    isuspgropen $p |- ( ( V e. W /\ E e. X ) -> ( <. V , E >. e. USPGraph
+        <-> E : dom E -1-1-> { p e. ~P V | ( p ~~ 1o \/ p ~~ 2o ) } ) ) $=
+      ( wcel wa cop cuspgr ciedg cfv cdm cv cen wbr cpw crab wf1 cvv eqid wo wb
+      c1o c2o opexg isuspgren syl opiedgfv dmeqd opvtxfv pweqd rabeqdv f1eq123d
+      cvtx bitrd ) BCFADFGZBAHZIFZUQJKZLZEMZUCNOVAUDNOUAZEUQUNKZPZQZUSRZALZVBEB
+      PZQZARUPUQSFURVFUBBACDUEESUSUQVCVCTUSTUFUGUPUTVGVEVIUSAABCDUHZUPUSAVJUIUP
+      VBEVDVHUPVCBABCDUJUKULUMUO $.
+
+    $( The property of being an undirected simple graph represented as an
+       ordered pair.  The representation as an ordered pair is the usual
+       representation of a graph, see section I.1 of [Bollobas] p. 1.
+       (Contributed by AV, 30-Nov-2020.) $)
+    isusgropen $p |- ( ( V e. W /\ E e. X ) -> ( <. V , E >. e. USGraph
+                      <-> E : dom E -1-1-> { p e. ~P V | p ~~ 2o } ) ) $=
+      ( wcel wa cop cusgr ciedg cfv cdm cv c2o cen cpw crab wf1 cvv eqid wbr wb
+      cvtx opexg isusgren opiedgfv dmeqd opvtxfv pweqd rabeqdv f1eq123d bitrd
+      syl ) BCFADFGZBAHZIFZUOJKZLZEMNOUAZEUOUCKZPZQZUQRZALZUSEBPZQZARUNUOSFUPVC
+      UBBACDUDESUQUOUTUTTUQTUEUMUNURVDVBVFUQAABCDUFZUNUQAVGUGUNUSEVAVEUNUTBABCD
+      UHUIUJUKUL $.
+  $}
+
+  ${
+    $d G x $.
+    $( A simple graph represented by an ordered pair.  (Contributed by AV,
+       23-Oct-2020.)  (Proof shortened by AV, 30-Nov-2020.) $)
+    usgrop $p |- ( G e. USGraph
+                   -> <. ( Vtx ` G ) , ( iEdg ` G ) >. e. USGraph ) $=
+      ( cusgr wcel cvtx cfv ciedg cop cdm c2o cen wbr cpw crab wf1 eqid usgrfen
+      vx cv cvv wb vtxex iedgex isusgropen syl2anc mpbird ) ABCZADEZAFEZGBCZUHH
+      QRIJKQUGLMUHNZQUHAUGUGOUHOPUFUGSCUHSCUIUJTABUAABUBUHUGSSQUCUDUE $.
+  $}
+
+  ${
+    $d e v x E $.  $d e v x V $.  $d x X $.  $d x Y $.
+    ausgr.1 $e |- G = { <. v , e >. | e C_ { x e. ~P v | x ~~ 2o } } $.
+    $( The property of an ordered pair to be an alternatively defined simple
+       graph, defined as a pair (V,E) of a set V (vertex set) and a set of
+       unordered pairs of elements of V (edge set).  (Contributed by Alexander
+       van der Vekens, 28-Aug-2017.) $)
+    isausgren $p |- ( ( V e. W /\ E e. X )
+                     -> ( V G E <-> E C_ { x e. ~P V | x ~~ 2o } ) ) $=
+      ( cv c2o cen wbr cpw crab wss wceq wa simpr pweq adantr rabeqdv sseq12d
+      brabga ) CJZAJKLMZABJZNZOZPDUFAFNZOZPBCFDEGHUGFQZUEDQZRZUEDUIUKULUMSUNUFA
+      UHUJULUHUJQUMUGFTUAUBUCIUD $.
+
+    $( The equivalence of the definitions of a simple graph.  (Contributed by
+       Alexander van der Vekens, 28-Aug-2017.)  (Revised by AV,
+       14-Oct-2020.) $)
+    ausgrusgrben $p |- ( ( V e. X /\ E e. Y )
+                       -> ( V G E <-> <. V , ( _I |` E ) >. e. USGraph ) ) $=
+      ( wcel wa wbr cpw crab wss wf1 wi wceq cvv sylan2 cv c2o cen cid cres cop
+      ciedg cfv cdm cvtx cusgr wf1o f1oi crn dff1o5 f1ss wb dmresi eqcomi f1eq2
+      ax-mp sylib ex a1d adantr sylbi wf wfn rnresi sseq1i biimpi simplbiim f1f
+      syl11 impbid resiexg opiedgfv dmeqd opvtxfv pweqd rabeqdv f1eq123d bitr4d
+      df-f isausgren opexg eqid isusgren syl 3bitr4d ) FGJZDHJZKZDAUAUBUCLZAFMZ
+      NZOZFUDDUEZUFZUGUHZUIZWNAWSUJUHZMZNZWTPZFDELWSUKJZWMWQWRUIZWPWRPZXEWMWQXH
+      DDWRULZWMWQXHQZQZDUMXIDDWRPZWRUNZDRZKXKDDWRUOXLXKXNXLXJWMXLWQXHXLWQKDWPWR
+      PZXHDDWPWRUPDXGRXOXHUQXGDDURUSDXGWPWRUTVAVBVCVDVEVFVAXGWPWRVGZWMWQXHXPWRX
+      GVHXMWPOZWMWQQXGWPWRWDXQWQWMXQWQXMDWPDVIVJVKVDVLXGWPWRVMVNVOWMXAXGXDWPWTW
+      RWLWKWRSJZWTWRRDHVPZWRFGSVQTZWMWTWRXTVRWMWNAXCWOWMXBFWLWKXRXBFRXSWRFGSVST
+      VTWAWBWCABCDEFGHIWEWMWSSJZXFXEUQWLWKXRYAXSFWRGSWFTASWTWSXBXBWGWTWGWHWIWJ
+      $.
+
+    $d H e v x $.
+    $( A simple graph represented by an alternatively defined simple graph.
+       (Contributed by AV, 15-Oct-2020.) $)
+    usgrausgrien $p |- ( H e. USGraph -> ( Vtx ` H ) G ( Edg ` H ) ) $=
+      ( cusgr wcel cvtx cfv cedg wbr cv c2o cen cpw crab wss usgredgssen cvv wb
+      vtxex ciedg crn edgvalg iedgex rnexg syl eqeltrd isausgren syl2anc mpbird
+      ) EGHZEIJZEKJZDLZUOAMNOLAUNPQRZAESUMUNTHUOTHUPUQUAEGUBUMUOEUCJZUDZTEGUEUM
+      URTHUSTHEGUFURTUGUHUIABCUODUNTTFUJUKUL $.
+
+    $( If an alternatively defined simple graph has the vertices and edges of
+       an arbitrary graph, the arbitrary graph is an undirected multigraph.
+       (Contributed by AV, 18-Oct-2020.)  (Revised by AV, 25-Nov-2020.) $)
+    ausgrumgrien $p |- ( ( H e. W /\ ( Vtx ` H ) G ( Edg ` H )
+                       /\ Fun ( iEdg ` H ) ) -> H e. UMGraph ) $=
+      ( wcel cvtx cfv cedg wbr ciedg wfun w3a wss cvv wb sylbid eqid cdm cv c2o
+      cumgr cen cpw crab wf wi vtxex crn edgvalg iedgex rnexg eqeltrd isausgren
+      syl syl2anc sseq1d wfn funfn biimpi 3ad2ant3 simp2 df-f sylanbrc isumgren
+      3exp 3imp 3ad2ant1 mpbird ) EFHZEIJZEKJZDLZEMJZNZOEUDHZVPUAZAUBUCUELAVMUF
+      UGZVPUHZVLVOVQWAVLVOVNVTPZVQWAUIZVLVMQHVNQHVOWBREFUJVLVNVPUKZQEFULZVLVPQH
+      WDQHEFUMVPQUNUQUOABCVNDVMQQGUPURVLWBWDVTPZWCVLVNWDVTWEUSVLWFVQWAVLWFVQOVP
+      VSUTZWFWAVQVLWGWFVQWGVPVAVBVCVLWFVQVDVSVTVPVEVFVHSSVIVLVOVRWARVQAFVPEVMVM
+      TVPTVGVJVK $.
+
+    $d H f $.  $d x W $.
+    ausgrusgri.1 $e |- O = { f | f : dom f -1-1-> ran f } $.
+    $( The equivalence of the definitions of a simple graph, expressed with the
+       set of vertices and the set of edges.  (Contributed by AV,
+       15-Oct-2020.) $)
+    ausgrusgrien $p |- ( ( H e. W /\ ( Vtx ` H ) G ( Edg ` H )
+                                /\ ( iEdg ` H ) e. O ) -> H e. USGraph ) $=
+      ( wcel cfv wbr w3a cdm cv wf1 wss cvv wb cvtx cedg ciedg c2o cen cpw crab
+      cusgr vtxex crn edgvalg iedgex rnexg syl eqeltrd isausgren syl2anc sseq1d
+      wi eleq2i biimpi wceq dmeq rneq f1eq123d elabg mpbid 3ad2ant3 simp2 f1ssr
+      cab id 3exp sylbid 3imp eqid isusgren 3ad2ant1 mpbird ) FHKZFUALZFUBLZEMZ
+      FUCLZGKZNFUHKZWDOZAPUDUEMAWAUFUGZWDQZVTWCWEWIVTWCWBWHRZWEWIUSZVTWASKWBSKW
+      CWJTFHUIVTWBWDUJZSFHUKZVTWDSKWLSKFHULWDSUMUNUOABCWBEWASSIUPUQVTWJWLWHRZWK
+      VTWBWLWHWMURVTWNWEWIVTWNWENWGWLWDQZWNWIWEVTWOWNWEWDDPZOZWPUJZWPQZDVKZKZWO
+      WEXAGWTWDJUTVAWSWODWDGWPWDVBZWQWGWRWLWPWDXBVLWPWDVCWPWDVDVEVFVGVHVTWNWEVI
+      WGWLWHWDVJUQVMVNVNVOVTWCWFWITWEAHWDFWAWAVPWDVPVQVRVS $.
+
+    $( The equivalence of the definitions of a simple graph, expressed with the
+       set of vertices and the set of edges.  (Contributed by AV, 2-Jan-2020.)
+       (Revised by AV, 15-Oct-2020.) $)
+    usgrausgrben $p |- ( ( H e. W /\ ( iEdg ` H ) e. O )
+                      -> ( ( Vtx ` H ) G ( Edg ` H ) <-> H e. USGraph ) ) $=
+      ( wcel ciedg cfv wa cvtx cedg wbr cusgr wi ausgrusgrien 3exp usgrausgrien
+      com23 imp impbid1 ) FHKZFLMGKZNFOMFPMEQZFRKZUFUGUHUISUFUHUGUIUFUHUGUIABCD
+      EFGHIJTUAUCUDABCEFIUBUE $.
+  $}
+
+  $( An edge of a simple graph as second component of an ordered pair.
+     (Contributed by Alexander van der Vekens, 17-Aug-2017.)  (Proof shortened
+     by Alexander van der Vekens, 16-Dec-2017.)  (Revised by AV,
+     15-Oct-2020.) $)
+  usgredgop $p |- ( ( G e. USGraph /\ E = ( iEdg ` G ) /\ X e. dom E )
+                     -> ( ( E ` X ) = { M , N }
+                          <-> <. X , { M , N } >. e. E ) ) $=
+    ( cusgr wcel ciedg cfv wceq wfun cdm cpr cop wb usgrfun syl5ibrcom funopfvb
+    funeq imp stoic3 ) BFGZABHIZJZAKZEALGEAICDMZJEUFNAGOUBUDUEUBUEUDUCKBPAUCSQT
+    EUFARUA $.
+
+  ${
+    $d G x $.
+    usgrf1o.e $e |- E = ( iEdg ` G ) $.
+    $( The edge function of a simple graph is a bijective function onto its
+       range.  (Contributed by Alexander van der Vekens, 18-Nov-2017.)
+       (Revised by AV, 15-Oct-2020.) $)
+    usgrf1o $p |- ( G e. USGraph -> E : dom E -1-1-onto-> ran E ) $=
+      ( vx cusgr wcel cdm cv c2o cen wbr cvtx cfv cpw crab wf1 crn wf1o usgrfen
+      eqid f1f1orn syl ) BEFAGZDHIJKDBLMZNOZAPUCAQARDABUDUDTCSUCUEAUAUB $.
+
+    $( The edge function of a simple graph is a one to one function.
+       (Contributed by Alexander van der Vekens, 18-Nov-2017.)  (Revised by AV,
+       15-Oct-2020.) $)
+    usgrf1 $p |- ( G e. USGraph -> E : dom E -1-1-> ran E ) $=
+      ( cusgr wcel cdm crn wf1o wf1 usgrf1o f1of1 syl ) BDEAFZAGZAHMNAIABCJMNAK
+      L $.
+
+    $( The edge function of a simple pseudograph is a bijective function onto
+       the edges of the graph.  (Contributed by AV, 2-Jan-2020.)  (Revised by
+       AV, 15-Oct-2020.) $)
+    uspgrf1oedg $p |- ( G e. USPGraph -> E : dom E -1-1-onto-> ( Edg ` G ) ) $=
+      ( vx cuspgr wcel cdm cv c1o cen wbr c2o wo cvtx cfv cpw crab wf1 wf1o crn
+      cedg eqid uspgrfen f1f1orn ciedg rneqi edgvalg eqtr4id f1oeq3d imbitrid
+      mpd ) BEFZAGZDHZIJKUNLJKMDBNOZPQZARZUMBUAOZASZDABUOUOUBCUCUQUMATZASULUSUM
+      UPAUDULUTURUMAULUTBUEOZTURAVACUFBEUGUHUIUJUK $.
+
+    $d V x $.
+    usgrss.v $e |- V = ( Vtx ` G ) $.
+    $( An edge is a subset of vertices.  (Contributed by Alexander van der
+       Vekens, 19-Aug-2017.)  (Revised by AV, 15-Oct-2020.) $)
+    usgrss $p |- ( ( G e. USGraph /\ X e. dom E ) -> ( E ` X ) C_ V ) $=
+      ( vx cusgr wcel cdm wa cfv cv c2o cen wbr cpw crab ssrab2 wf1 usgrfen f1f
+      wf syl ffvelcdmda sselid elpwid ) BHIZDAJZIKZDALZCUJGMNOPZGCQZRZUMUKULGUM
+      SUHUIUNDAUHUIUNATUIUNAUCGABCFEUAUIUNAUBUDUEUFUG $.
+  $}
+
+  ${
+    $d E x $.  $d I x $.  $d K x $.
+    uspgredgiedg.e $e |- E = ( Edg ` G ) $.
+    uspgredgiedg.i $e |- I = ( iEdg ` G ) $.
+    $( In a simple pseudograph, for each edge there is exactly one indexed
+       edge.  (Contributed by AV, 20-Apr-2025.) $)
+    uspgredgiedg $p |- ( ( G e. USPGraph /\ K e. E )
+                         -> E! x e. dom I K = ( I ` x ) ) $=
+      ( cuspgr wcel wa cv cfv wceq cdm wreu wf1o cedg uspgrf1oedg wb sylibr
+      f1oeq3 ax-mp f1ofveu sylan eqcom reubii ) CHIZEBIZJAKDLZEMZADNZOZEUIMZAUK
+      OUGUKBDPZUHULUGUKCQLZDPZUNDCGRBUOMUNUPSFBUOUKDUAUBTAUKBEDUCUDUMUJAUKEUIUE
+      UFT $.
+
+    $d E k $.  $d I k $.  $d X k $.
+    $( In a simple pseudograph, for each indexed edge there is exactly one
+       edge.  (Contributed by AV, 20-Apr-2025.) $)
+    uspgriedgedg $p |- ( ( G e. USPGraph /\ X e. dom I )
+                         -> E! k e. E k = ( I ` X ) ) $=
+      ( cuspgr wcel cdm wa cfv cv wceq wreu wf cedg wf1o uspgrf1oedg sylibr syl
+      f1of wb feq3 ax-mp fdmeu sylan eqcom reubii ) CHIZEDJZIZKEDLZAMZNZABOZUNU
+      MNZABOUJUKBDPZULUPUJUKCQLZDPZURUJUKUSDRUTDCGSUKUSDUBUABUSNURUTUCFBUSUKDUD
+      UETAUKBDEUFUGUQUOABUNUMUHUIT $.
+  $}
+
+  ${
+    $d G x y $.
+    $( A simple pseudograph is an undirected simple hypergraph.  (Contributed
+       by AV, 19-Jan-2020.)  (Revised by AV, 15-Oct-2020.) $)
+    uspgrushgr $p |- ( G e. USPGraph -> G e. USHGraph ) $=
+      ( vy vx cuspgr wcel cushgr ciedg cfv cdm cv wex cvtx cpw crab wf1 c1o cen
+      wbr c2o eqid wo isuspgren wss wi en1m en2m jaoi a1i ss2rabi f1ss biimtrdi
+      mpan2 isushgrm sylibrd pm2.43i ) ADEZAFEZUPUPAGHZIZBJCJZEBKZCALHZMZNZUROZ
+      UQUPUPUSUTPQRZUTSQRZUAZCVCNZUROZVECDURAVBVBTZURTZUBVJVIVDUCVEVHVACVCVHVAU
+      DUTVCEVFVAVGBUTUEBUTUFUGUHUIUSVIVDURUJULUKDBURAVBCVKVLUMUNUO $.
+
+    $( A simple pseudograph is an undirected pseudograph.  (Contributed by
+       Alexander van der Vekens, 10-Aug-2017.)  (Revised by AV,
+       15-Oct-2020.) $)
+    uspgrupgr $p |- ( G e. USPGraph -> G e. UPGraph ) $=
+      ( vx cuspgr wcel cupgr ciedg cfv cdm cv c1o cen wbr c2o cvtx cpw crab wf1
+      wo wf eqid isuspgren f1f biimtrdi isupgren sylibrd pm2.43i ) ACDZAEDZUGUG
+      AFGZHZBIZJKLUKMKLRBANGZOPZUISZUHUGUGUJUMUIQUNBCUIAULULTZUITZUAUJUMUIUBUCB
+      CUIAULUOUPUDUEUF $.
+
+    $( A graph is a simple pseudograph iff it is a pseudograph and a simple
+       hypergraph.  (Contributed by AV, 30-Nov-2020.) $)
+    uspgrupgrushgr $p |- ( G e. USPGraph
+                           <-> ( G e. UPGraph /\ G e. USHGraph ) ) $=
+      ( vx vy cuspgr wcel cupgr cushgr wa uspgrupgr uspgrushgr jca ciedg cfv cv
+      cdm cen wbr crab wf1 eqid c1o c2o wo cvtx cpw wex crn wss ushgrfm edgvalg
+      cedg upgredgssen eqsstrrd f1ssr syl2anr wb isuspgren adantr mpbird impbii
+      ) ADEZAFEZAGEZHZVAVBVCAIAJKVDVAALMZOZBNZUAPQVGUBPQUCBAUDMZUEZRZVESZVCVFCN
+      VGECUFBVIRZVESVEUGZVJUHVKVBCVEAVHBVHTZVETZUIVBVMAUKMVJAFUJBAULUMVFVLVJVEU
+      NUOVBVAVKUPVCBFVEAVHVNVOUQURUSUT $.
+
+    $( A simple graph is a simple pseudograph.  (Contributed by Alexander van
+       der Vekens, 10-Aug-2017.)  (Revised by AV, 15-Oct-2020.) $)
+    usgruspgr $p |- ( G e. USGraph -> G e. USPGraph ) $=
+      ( vx cusgr wcel cuspgr ciedg cfv cdm cv c1o cen wbr c2o cvtx cpw crab wf1
+      wo eqid isusgren wss wi olc ss2rabi f1ss mpan2 biimtrdi isuspgren sylibrd
+      a1i pm2.43i ) ACDZAEDZULULAFGZHZBIZJKLZUPMKLZRZBANGZOZPZUNQZUMULULUOURBVA
+      PZUNQZVCBCUNAUTUTSZUNSZTVEVDVBUAVCURUSBVAURUSUBUPVADURUQUCUJUDUOVDVBUNUEU
+      FUGBCUNAUTVFVGUHUIUK $.
+
+    $( A simple graph is an undirected multigraph.  (Contributed by AV,
+       25-Nov-2020.) $)
+    usgrumgr $p |- ( G e. USGraph -> G e. UMGraph ) $=
+      ( vx cusgr wcel cumgr ciedg cfv cdm cv c2o cen wbr cvtx cpw crab wf1 eqid
+      wf usgrfen f1f syl isumgren mpbird ) ACDZAEDAFGZHZBIJKLBAMGZNOZUERZUDUFUH
+      UEPUIBUEAUGUGQZUEQZSUFUHUETUABCUEAUGUJUKUBUC $.
+
+    $( A graph is a simple graph iff it is a multigraph and a simple
+       pseudograph.  (Contributed by AV, 30-Nov-2020.) $)
+    usgrumgruspgr $p |- ( G e. USGraph
+                          <-> ( G e. UMGraph /\ G e. USPGraph ) ) $=
+      ( vx cusgr wcel cumgr cuspgr usgrumgr usgruspgr jca ciedg cfv cdm c2o cen
+      wa cv wbr crab wf1 eqid cvtx cpw c1o wo crn wss uspgrfen cedg umgredgssen
+      edgvalg eqsstrrd f1ssr syl2anr wb isusgren adantr mpbird impbii ) ACDZAED
+      ZAFDZOZUSUTVAAGAHIVBUSAJKZLZBPZMNQZBAUAKZUBZRZVCSZVAVDVEUCNQVFUDBVHRZVCSV
+      CUEZVIUFVJUTBVCAVGVGTZVCTZUGUTVLAUHKVIAEUJBAUIUKVDVKVIVCULUMUTUSVJUNVABEV
+      CAVGVMVNUOUPUQUR $.
+
+    $d G e x y $.
+    $( A class is a simple graph iff it is a simple pseudograph without loops.
+       (Contributed by AV, 18-Oct-2020.) $)
+    usgruspgrben $p |- ( G e. USGraph
+                <-> ( G e. USPGraph /\ A. e e. ( Edg ` G ) e ~~ 2o ) ) $=
+      ( vx vy wcel cuspgr cv c2o cen wbr cfv wral wa crab wf1 c1o wo eqid breq1
+      wi cusgr cedg usgruspgr cvtx cpw edgusgren simprd ralrimiva jca ciedg cdm
+      crn edgvalg raleqdv uspgrfen wss f1rn ssel2 expcom rspcv orbi12d simplbi2
+      weq elrab adantr sylbi syl9 syld com13 ssrdv ex mpan9 f1ssr syldan sylbid
+      imp syl wb isusgren mpbird impbii ) BUAEZBFEZAGZHIJZABUBKZLZMZWBWCWGBUCWB
+      WEAWFWBWDWFEMWDBUDKZUEZEWEWDBUFUGUHUIWHWBBUJKZUKZCGZHIJZCWJNZWKOZWCWGWPWC
+      WGWEAWKULZLZWPWCWEAWFWQBFUMUNWCWLWMPIJZWNQZCWJNZWKOZWRWPTCWKBWIWIRZWKRZUO
+      XBWRWPXBWRWQWOUPZWPXBWQXAUPZWRXEWLXAWKUQWRXFXEWRXFMDWQWOWRXFDGZWQEZXGWOEZ
+      TXHXFWRXIXHXFXGXAEZWRXITXFXHXJWQXAXGURUSXHWRXGHIJZXJXIWEXKAXGWQWDXGHISUTX
+      JXGWJEZXGPIJZXKQZMXKXITZWTXNCXGWJCDVCWSXMWNXKWMXGPISWMXGHISZVAVDXLXOXNXIX
+      LXKWNXKCXGWJXPVDVBVEVFVGVHVIVPVJVKVLWLXAWOWKVMVNVKVQVOVPWCWBWPVRWGCFWKBWI
+      XCXDVSVEVTWA $.
+  $}
+
+  $( An undirected simple pseudograph is an undirected hypergraph.
+     (Contributed by AV, 21-Apr-2025.) $)
+  uspgruhgr $p |- ( G e. USPGraph -> G e. UHGraph ) $=
+    ( cuspgr wcel cupgr cuhgr uspgrupgr upgruhgr syl ) ABCADCAECAFAGH $.
+
+  $( A simple graph is an undirected pseudograph.  (Contributed by Alexander
+     van der Vekens, 20-Aug-2017.)  (Revised by AV, 15-Oct-2020.) $)
+  usgrupgr $p |- ( G e. USGraph -> G e. UPGraph ) $=
+    ( cusgr wcel cuspgr cupgr usgruspgr uspgrupgr syl ) ABCADCAECAFAGH $.
+
+  $( A simple graph is an undirected hypergraph.  (Contributed by AV,
+     9-Feb-2018.)  (Revised by AV, 15-Oct-2020.) $)
+  usgruhgr $p |- ( G e. USGraph -> G e. UHGraph ) $=
+    ( cusgr wcel cupgr cuhgr usgrupgr upgruhgr syl ) ABCADCAECAFAGH $.
+
+  ${
+    $d G x $.  $d V x $.
+    usgrislfuspgr.v $e |- V = ( Vtx ` G ) $.
+    usgrislfuspgr.i $e |- I = ( iEdg ` G ) $.
+    $( A simple graph is a loop-free simple pseudograph.  (Contributed by AV,
+       27-Jan-2021.) $)
+    usgrislfuspgrdom $p |- ( G e. USGraph <-> ( G e. USPGraph
+                         /\ I : dom I --> { x e. ~P V | 2o ~<_ x } ) ) $=
+      ( wcel cuspgr c2o wbr crab wf wa cen wf1 wi syl a1i df-f1 wb cusgr cdm cv
+      cdom cpw usgruspgr usgrfen f1f wss ensym ss2rabi fssd jca c1o wo uspgrfen
+      endom ccnv wfun cin fin wceq umgrislfupgrenlem ax-mp sylbb1 anim1i sylibr
+      feq3 ex impancom sylbi imp sylan isusgren adantr mpbird impbii ) BUAGZBHG
+      ZCUBZIAUCZUDJZADUEZKZCLZMZVRVSWEBUFVRVTWAINJZAWCKZCOZWEACBDEFUGWIVTWHWDCV
+      TWHCUHWHWDUIWIWGWBAWCWGWBPWAWCGWGIWANJWBWAIUJIWAUQQRUKRULQUMWFVRWIVSVTWAU
+      NNJWGUOAWCKZCOZWEWIACBDEFUPWKWEWIWKVTWJCLZCURUSZMWEWIPVTWJCSWLWEWMWIWLWEM
+      ZWMWIWNWMMVTWHCLZWMMWIWNWOWMVTWJWDUTZCLZWNWOVTWJWDCVAWPWHVBWQWOTADVCWPWHV
+      TCVHVDVEVFVTWHCSVGVIVJVKVLVMVSVRWITWEAHCBDEFVNVOVPVQ $.
+  $}
+
+  ${
+    uspgrun.g $e |- ( ph -> G e. USPGraph ) $.
+    uspgrun.h $e |- ( ph -> H e. USPGraph ) $.
+    uspgrun.e $e |- E = ( iEdg ` G ) $.
+    uspgrun.f $e |- F = ( iEdg ` H ) $.
+    uspgrun.vg $e |- V = ( Vtx ` G ) $.
+    uspgrun.vh $e |- ( ph -> ( Vtx ` H ) = V ) $.
+    uspgrun.i $e |- ( ph -> ( dom E i^i dom F ) = (/) ) $.
+    ${
+      uspgrun.u $e |- ( ph -> U e. W ) $.
+      uspgrun.v $e |- ( ph -> ( Vtx ` U ) = V ) $.
+      uspgrun.un $e |- ( ph -> ( iEdg ` U ) = ( E u. F ) ) $.
+      $( The union ` U ` of two simple pseudographs ` G ` and ` H ` with the
+         same vertex set ` V ` is a pseudograph with the vertex ` V ` and the
+         union ` ( E u. F ) ` of the (indexed) edges.  (Contributed by AV,
+         16-Oct-2020.) $)
+      uspgrun $p |- ( ph -> U e. UPGraph ) $=
+        ( cuspgr wcel cupgr uspgrupgr syl upgrun ) ABCDEFGHAESTEUATIEUBUCAFSTFU
+        ATJFUBUCKLMNOPQRUD $.
+    $}
+
+    $( The union of two simple pseudographs (with the same vertex set):  If
+       ` <. V , E >. ` and ` <. V , F >. ` are simple pseudographs, then
+       ` <. V , E u. F >. ` is a pseudograph (the vertex set stays the same,
+       but the edges from both graphs are kept, maybe resulting in two edges
+       between two vertices).  (Contributed by Alexander van der Vekens,
+       10-Aug-2017.)  (Revised by AV, 16-Oct-2020.)  (Revised by AV,
+       24-Oct-2021.) $)
+    uspgrunop $p |- ( ph -> <. V , ( E u. F ) >. e. UPGraph ) $=
+      ( cuspgr wcel cupgr uspgrupgr syl upgrunop ) ABCDEFADNODPOGDQRAENOEPOHEQR
+      IJKLMS $.
+  $}
+
+  ${
+    usgrun.g $e |- ( ph -> G e. USGraph ) $.
+    usgrun.h $e |- ( ph -> H e. USGraph ) $.
+    usgrun.e $e |- E = ( iEdg ` G ) $.
+    usgrun.f $e |- F = ( iEdg ` H ) $.
+    usgrun.vg $e |- V = ( Vtx ` G ) $.
+    usgrun.vh $e |- ( ph -> ( Vtx ` H ) = V ) $.
+    usgrun.i $e |- ( ph -> ( dom E i^i dom F ) = (/) ) $.
+    ${
+      usgrun.u $e |- ( ph -> U e. W ) $.
+      usgrun.v $e |- ( ph -> ( Vtx ` U ) = V ) $.
+      usgrun.un $e |- ( ph -> ( iEdg ` U ) = ( E u. F ) ) $.
+      $( The union ` U ` of two simple graphs ` G ` and ` H ` with the same
+         vertex set ` V ` is a multigraph (not necessarily a simple graph!)
+         with the vertex ` V ` and the union ` ( E u. F ) ` of the (indexed)
+         edges.  (Contributed by AV, 29-Nov-2020.) $)
+      usgrun $p |- ( ph -> U e. UMGraph ) $=
+        ( cusgr wcel cumgr usgrumgr syl umgrun ) ABCDEFGHAESTEUATIEUBUCAFSTFUAT
+        JFUBUCKLMNOPQRUD $.
+    $}
+
+    $( The union of two simple graphs (with the same vertex set):  If
+       ` <. V , E >. ` and ` <. V , F >. ` are simple graphs, then
+       ` <. V , E u. F >. ` is a multigraph (not necessarily a simple graph!) -
+       the vertex set stays the same, but the edges from both graphs are kept,
+       possibly resulting in two edges between two vertices.  (Contributed by
+       AV, 29-Nov-2020.) $)
+    usgrunop $p |- ( ph -> <. V , ( E u. F ) >. e. UMGraph ) $=
+      ( cusgr wcel cumgr usgrumgr syl umgrunop ) ABCDEFADNODPOGDQRAENOEPOHEQRIJ
+      KLMS $.
+  $}
+
+  ${
+    $d E x $.  $d G x $.  $d X x $.
+    usgredg2.e $e |- E = ( iEdg ` G ) $.
+    $( The value of the "edge function" of a simple graph is a set containing
+       two elements (the vertices the corresponding edge is connecting).
+       (Contributed by Alexander van der Vekens, 11-Aug-2017.)  (Revised by AV,
+       16-Oct-2020.)  (Proof shortened by AV, 11-Dec-2020.) $)
+    usgredg2en $p |- ( ( G e. USGraph /\ X e. dom E ) -> ( E ` X ) ~~ 2o ) $=
+      ( cusgr wcel cumgr cdm cfv c2o cen usgrumgr cvtx eqid umgredg2en sylan
+      wbr ) BEFBGFCAHFCAIJKQBLABBMIZCRNDOP $.
+
+    usgredgprv.v $e |- V = ( Vtx ` G ) $.
+    $( In a simple graph, an edge is an unordered pair of vertices.
+       (Contributed by Alexander van der Vekens, 19-Aug-2017.)  (Revised by AV,
+       16-Oct-2020.)  (Proof shortened by AV, 11-Dec-2020.) $)
+    usgredgprv $p |- ( ( G e. USGraph /\ X e. dom E )
+                     -> ( ( E ` X ) = { M , N } -> ( M e. V /\ N e. V ) ) ) $=
+      ( cusgr wcel cumgr cdm cfv cpr wceq wa wi usgrumgr umgredgprv sylan ) BIJ
+      BKJFALJFAMCDNOCEJDEJPQBRABCDEFGHST $.
+  $}
+
+  ${
+    usgredgppr.e $e |- E = ( Edg ` G ) $.
+    $( An edge of a simple graph is a proper pair, i.e. a set containing two
+       different elements (the endvertices of the edge).  Analogue of
+       ~ usgredg2en .  (Contributed by Alexander van der Vekens, 11-Aug-2017.)
+       (Revised by AV, 9-Jan-2020.)  (Revised by AV, 23-Oct-2020.) $)
+    usgredgppren $p |- ( ( G e. USGraph /\ C e. E ) -> C ~~ 2o ) $=
+      ( cusgr wcel wa cvtx cfv cpw c2o cen cedg eleq2i edgusgren sylan2b simprd
+      wbr ) CEFZABFZGACHIJFZAKLRZTSACMIZFUAUBGBUCADNACOPQ $.
+
+    usgrpredgv.v $e |- V = ( Vtx ` G ) $.
+    $( An edge of a simple graph always connects two vertices.  Analogue of
+       ~ usgredgprv .  (Contributed by Alexander van der Vekens, 7-Oct-2017.)
+       (Revised by AV, 9-Jan-2020.)  (Revised by AV, 23-Oct-2020.)  (Proof
+       shortened by AV, 27-Nov-2020.) $)
+    usgrpredgv $p |- ( ( G e. USGraph /\ { M , N } e. E )
+                      -> ( M e. V /\ N e. V ) ) $=
+      ( cusgr wcel cumgr cpr wa usgrumgr umgrpredgv sylan ) BHIBJICDKAICEIDEILB
+      MABCDEGFNO $.
+  $}
+
+  ${
+    edgssv2.v $e |- V = ( Vtx ` G ) $.
+    edgssv2.e $e |- E = ( Edg ` G ) $.
+    $( An edge of a simple graph is a proper unordered pair of vertices, i.e. a
+       subset of the set of vertices of size 2.  (Contributed by AV,
+       10-Jan-2020.)  (Revised by AV, 23-Oct-2020.) $)
+    edgssv2en $p |- ( ( G e. USGraph /\ C e. E )
+                    -> ( C C_ V /\ C ~~ 2o ) ) $=
+      ( cusgr wcel wss c2o cen wbr cvtx cfv cpw cedg eleq2i edgusgren sylan2b
+      wa elpwi anim1i syl wceq a1i sseq2d anbi1d mpbird ) CGHZABHZTZADIZAJKLZTA
+      CMNZIZUMTZUKAUNOHZUMTZUPUJUIACPNZHURBUSAFQACRSUQUOUMAUNUAUBUCUKULUOUMUKDU
+      NADUNUDUKEUEUFUGUH $.
+
+    $d C a b $.  $d G a b $.  $d V a b $.
+    $( For each edge in a simple graph, there are two distinct vertices which
+       are connected by this edge.  (Contributed by Alexander van der Vekens,
+       9-Dec-2017.)  (Revised by AV, 17-Oct-2020.)  (Shortened by AV,
+       25-Nov-2020.) $)
+    usgredg $p |- ( ( G e. USGraph /\ C e. E )
+                    -> E. a e. V E. b e. V ( a =/= b /\ C = { a , b } ) ) $=
+      ( cusgr wcel cumgr cv wne cpr wceq wa wrex usgrumgr umgredg sylan ) CIJCK
+      JABJELZFLZMAUAUBNOPFDQEDQCRABCDEFGHST $.
+  $}
+
+  ${
+    usgrnloopv.e $e |- E = ( iEdg ` G ) $.
+    $( In a simple graph, there is no loop, i.e. no edge connecting a vertex
+       with itself.  (Contributed by Alexander van der Vekens, 26-Jan-2018.)
+       (Revised by AV, 17-Oct-2020.)  (Proof shortened by AV, 11-Dec-2020.) $)
+    usgrnloopv $p |- ( ( G e. USGraph /\ M e. W )
+                       -> ( ( E ` X ) = { M , N } -> M =/= N ) ) $=
+      ( cusgr wcel cumgr cfv cpr wceq wne wi usgrumgr umgrnloopv sylan ) BHIBJI
+      CEIFAKCDLMCDNOBPABCDEFGQR $.
+
+    $d G x $.  $d M x $.  $d N x $.
+    $( In a simple graph, there is no loop, i.e. no edge connecting a vertex
+       with itself.  (Contributed by Alexander van der Vekens, 19-Aug-2017.)
+       (Proof shortened by Alexander van der Vekens, 20-Mar-2018.)  (Revised by
+       AV, 17-Oct-2020.)  (Proof shortened by AV, 11-Dec-2020.) $)
+    usgrnloop $p |- ( G e. USGraph -> ( E. x e. dom E ( E ` x ) = { M , N }
+                                      -> M =/= N ) ) $=
+      ( cusgr wcel cumgr cv cfv cpr wceq cdm wrex wne wi usgrumgr umgrnloop syl
+      ) CGHCIHAJBKDELMABNODEPQCRABCDEFST $.
+
+    $d U x $.
+    $( A simple graph has no loops.  (Contributed by Alexander van der Vekens,
+       6-Dec-2017.)  (Revised by AV, 17-Oct-2020.)  (Proof shortened by AV,
+       11-Dec-2020.) $)
+    usgrnloop0 $p |- ( G e. USGraph
+                       -> { x e. dom E | ( E ` x ) = { U } } = (/) ) $=
+      ( cusgr wcel cumgr cv cfv csn wceq cdm crab c0 usgrumgr umgrnloop0 syl )
+      DFGDHGAICJBKLACMNOLDPABCDEQR $.
+  $}
+
+  ${
+    usgredgne.v $e |- E = ( Edg ` G ) $.
+    $( An edge of a simple graph always connects two different vertices.
+       Analogue of ~ usgrnloopv resp. ~ usgrnloop .  (Contributed by Alexander
+       van der Vekens, 2-Sep-2017.)  (Revised by AV, 17-Oct-2020.)  (Proof
+       shortened by AV, 27-Nov-2020.) $)
+    usgredgne $p |- ( ( G e. USGraph /\ { M , N } e. E ) -> M =/= N ) $=
+      ( cusgr wcel cumgr cpr wne usgrumgr umgredgne sylan ) BFGBHGCDIAGCDJBKABC
+      DELM $.
+  $}
+
+  ${
+    $d G x $.
+    usgrf1oedg.i $e |- I = ( iEdg ` G ) $.
+    usgrf1oedg.e $e |- E = ( Edg ` G ) $.
+    $( The edge function of a simple graph is a 1-1 function onto the set of
+       edges.  (Contributed by AV, 18-Oct-2020.) $)
+    usgrf1oedg $p |- ( G e. USGraph -> I : dom I -1-1-onto-> E ) $=
+      ( cusgr wcel cdm wf1o crn usgrf1o cedg ciedg edgvalg eqcomi eqtrdi eqtrid
+      cfv rneqi f1oeq3d mpbird ) BFGZCHZACIUCCJZCICBDKUBAUDUCCUBABLRZUDEUBUEBMR
+      ZJUDBFNUFCCUFDOSPQTUA $.
+
+    $d A x y $.  $d B x y $.  $d G y $.  $d I x y $.  $d N x y $.
+    ${
+      $d V x y $.
+      uhgr2edg.v $e |- V = ( Vtx ` G ) $.
+      $( If a vertex is adjacent to two different vertices in a hypergraph,
+         there are more than one edges starting at this vertex.  (Contributed
+         by Alexander van der Vekens, 10-Dec-2017.)  (Revised by AV,
+         11-Feb-2021.) $)
+      uhgr2edg $p |- ( ( ( G e. UHGraph /\ A =/= B )
+                         /\ ( A e. V /\ B e. V /\ N e. V )
+                         /\ ( { N , A } e. E /\ { B , N } e. E ) )
+                       -> E. x e. dom I E. y e. dom I
+                          ( x =/= y /\ N e. ( I ` x ) /\ N e. ( I ` y ) ) ) $=
+        ( wcel wa w3a cfv wrex wceq wi adantl cuhgr wne cv simp1l simp1r simp23
+        cpr cdm simp21 3simpc 3ad2ant2 jca31 simp3 wb crn cedg ciedg a1i eqcomi
+        edgvalg rneqd 3eqtrd eleq2d anbi12d wfn uhgrfun funfnd fvelrnb ad2antrr
+        syl bitrd reeanv fveqeq2 anbi1d eqtr2 prcom eqeq2i wo preq12bg eqneqall
+        ancom2s eqtr ancoms jaoi adantld com3l impd sylbi impcomd impcom neneqd
+        biimtrdi pm2.01da neqned prid1g imbitrrid adantr prid2g 3jca ex reximdv
+        eleq2 biimtrrid sylbid sylc ) FUAMZCDUBZNZCIMZDIMZHIMZOZHCUGZEMZDHUGZEM
+        ZNZOZXHXKXINZXJXKNZNZNZXQAUCZBUCZUBZHYCGPZMZHYDGPZMZOZBGUHZQZAYKQZXRXFX
+        GYAXFXGXLXQUDXFXGXLXQUEXRXKXIXTXHXIXJXKXQUFXHXIXJXKXQUIXLXHXTXQXIXJXKUJ
+        UKULULXHXLXQUMYBXQYFXMRZAYKQZYHXORZBYKQZNZYMXFXQYRUNXGYAXFXQXMGUOZMZXOY
+        SMZNZYRXFXNYTXPUUAXFEYSXMXFEFUPPZFUQPZUOYSEUUCRXFKURFUAUTXFUUDGUUDGRXFG
+        UUDJUSURVAVBZVCXFEYSXOUUEVCVDXFGYKVEZUUBYRUNXFGGFJVFVGUUFYTYOUUAYQAYKXM
+        GVHBYKXOGVHVDVJVKVIYRYNYPNZBYKQZAYKQYBYMYNYPABYKYKVLYBUUHYLAYKYBUUGYJBY
+        KYBUUGYJYBUUGNZYEYGYIUUIYCYDUUIYCYDRZUUIUUJNYCYDUUJUUIYEUUJUUGYBYEUUJUU
+        GYHXMRZYPNZYBYESZUUJYNUUKYPYCYDXMGVMVNUULXMXORZUUMYHXMXOVOUUNXMHDUGZRZU
+        UMXOUUOXMDHVPVQUUPXHYAYEYAUUPXHYEYAUUPHHRZCDRZNZHDRZCHRZNZVRZXHYESXSXKX
+        JUUPUVCUNHCHDIIIIVSWAUVCXGYEXFUUSXGYESZUVBUURUVDUUQYECDVTZTUVBUURUVDUVA
+        UUTUURCHDWBWCUVEVJWDWEWLWFWGWHVJWLWIWJWKWMWNUUGYBYGYNYBYGSYPYBYGYNHXMMZ
+        YAUVFXHXKUVFXIXTHCIWOVITYFXMHXBWPWQWJUUGYBYIYPYBYISYNYBYIYPHXOMZYAUVGXH
+        XKUVGXIXTDHIWRVITYHXOHXBWPTWJWSWTXAXAXCXDXE $.
+    $}
+
+    $( If a vertex is adjacent to two different vertices in a multigraph, there
+       are more than one edges starting at this vertex.  (Contributed by
+       Alexander van der Vekens, 10-Dec-2017.)  (Revised by AV,
+       11-Feb-2021.) $)
+    umgr2edg $p |- ( ( ( G e. UMGraph /\ A =/= B )
+                       /\ ( { N , A } e. E /\ { B , N } e. E ) )
+                     -> E. x e. dom I E. y e. dom I
+                         ( x =/= y /\ N e. ( I ` x ) /\ N e. ( I ` y ) ) ) $=
+      ( cumgr wcel wne wa cpr cfv cv wrex umgrpredgv simpld cuhgr cvtx umgruhgr
+      w3a anim1i adantr eqid ad2ant2r simprd ad2ant2rl simpr uhgr2edg syl131anc
+      cdm ) FKLZCDMZNZHCOELZDHOELZNZNZFUALZUPNZCFUBPZLZDVDLZHVDLZUTAQZBQZMHVHGP
+      LHVIGPLUDBGUNZRAVJRUQVCUTUOVBUPFUCUEUFVAVGVEUOURVGVENUPUSEFHCVDVDUGZJSUHZ
+      UIVAVFVGUOUSVFVGNUPUREFDHVDVKJSUJTVAVGVEVLTUQUTUKABCDEFGHVDIJVKULUM $.
+
+    $( If a vertex is adjacent to two different vertices in a simple graph,
+       there are more than one edges starting at this vertex.  (Contributed by
+       Alexander van der Vekens, 10-Dec-2017.)  (Revised by AV, 17-Oct-2020.)
+       (Proof shortened by AV, 11-Feb-2021.) $)
+    usgr2edg $p |- ( ( ( G e. USGraph /\ A =/= B )
+                       /\ ( { N , A } e. E /\ { B , N } e. E ) )
+                     -> E. x e. dom I E. y e. dom I
+                         ( x =/= y /\ N e. ( I ` x ) /\ N e. ( I ` y ) ) ) $=
+      ( cusgr wcel cumgr wne cpr wa cv cfv w3a wrex usgrumgr umgr2edg sylanl1
+      cdm ) FKLFMLCDNHCOELDHOELPAQZBQZNHUEGRLHUFGRLSBGUDZTAUGTFUAABCDEFGHIJUBUC
+      $.
+
+    $( If a vertex is adjacent to two different vertices in a multigraph, there
+       is not only one edge starting at this vertex.  (Contributed by Alexander
+       van der Vekens, 10-Dec-2017.)  (Revised by AV, 8-Jun-2021.) $)
+    umgr2edg1 $p |- ( ( ( G e. UMGraph /\ A =/= B )
+                        /\ ( { N , A } e. E /\ { B , N } e. E ) )
+                      -> -. E! x e. dom I N e. ( I ` x ) ) $=
+      ( vy wcel wne wa cpr cv cfv wrex wral wn w3a cumgr cdm weq wi wreu 3anrot
+      umgr2edg df-ne 3anbi3i df-3an 3bitri 2rexbii sylib rexanaliim reximi 3syl
+      rexnalim intnand fveq2 eleq2d reu4 sylnibr ) EUAKBCLMGBNDKCGNDKMMZGAOZFPZ
+      KZAFUBZQZVFGJOZFPZKZMZAJUCZUDJVGRZAVGRZMVFAVGUEVCVOVHVCVLVMSZMZJVGQZAVGQZ
+      VNSZAVGQVOSVCVDVILZVFVKTZJVGQAVGQVSAJBCDEFGHIUGWBVQAJVGVGWBVFVKWATVFVKVPT
+      VQWAVFVKUFWAVPVFVKVDVIUHUIVFVKVPUJUKULUMVRVTAVGVLVMJVGUNUOVNAVGUQUPURVFVK
+      AJVGVMVEVJGVDVIFUSUTVAVB $.
   $}
 
 
@@ -197331,6 +198424,12 @@ htmldef "UPGraph" as 'UPGraph';
 htmldef "UMGraph" as 'UMGraph';
   althtmldef "UMGraph" as 'UMGraph';
   latexdef "UMGraph" as "\mathrm{UMGraph}";
+htmldef "USPGraph" as 'USPGraph';
+  althtmldef "USPGraph" as 'USPGraph';
+  latexdef "USPGraph" as "\mathrm{USPGraph}";
+htmldef "USGraph" as 'USGraph';
+  althtmldef "USGraph" as 'USGraph';
+  latexdef "USGraph" as "\mathrm{USGraph}";
 
 /* htmldef, althtmldef, latexdef for mathboxes */
 /* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */

@@ -1130,9 +1130,9 @@ suggestions</A>.
 <!-- and take a quick look at this
 <A HREF="../mmsolitaire/mms.html#q5">summary of symbols</A>. -->
 A more extensive but still informal overview is given in Chapter 3, "Abstract
-Mathematics Revealed," of the <A HREF="../downloads/metamath.pdf">
+Mathematics Revealed," of the <A HREF="../downloads/metamath.pdf#page=77">
 <I>Metamath</I> book</A> (1.3 MB PDF file; click on the fourth bookmark in your
-PDF reader).]
+PDF reader if needed).]
 </FONT>
 </P>
 
@@ -1912,18 +1912,18 @@ the basic language from a wff in the extended language.
 <B><FONT COLOR="#006633">The class definitions</FONT></B>
 &nbsp;&nbsp;&nbsp;
 The algorithm for eliminating class builders is accomplished using the
-following three definitions, which in effect provide the recursive definition
-of wffs containing class builders.
+following three defining characterizations, which in effect provide the
+recursive definition of wffs containing class builders.
 </P>
 
 <P>
 <CENTER>
 <TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
-SUMMARY="Definitions for the theory of classes">
-<CAPTION><B>Definitions for the theory of classes</B></CAPTION>
+SUMMARY="Defining characterizations for the theory of classes">
+<CAPTION><B>Defining characterizations for the theory of classes</B></CAPTION>
 
-<TR ALIGN=LEFT><TD> <A HREF="df-clab.html">Definition of class
-abstraction</A></TD>
+<TR ALIGN=LEFT>
+<TD><A HREF="df-clab.html">Definition of class abstraction</A></TD>
 <TD NOWRAP><FONT COLOR="#006633"><B>df-clab</B></FONT></TD>
 <TD>
 ` |- ( x e. { y | ph } <-> [ x / y ] ph ) `
@@ -1931,7 +1931,7 @@ abstraction</A></TD>
 </TR>
 
 <TR ALIGN=LEFT>
-<TD><A HREF="dfcleq.html">Definition of class equality</A></TD>
+<TD><A HREF="dfcleq.html">Defining characterization of class equality</A></TD>
 <TD NOWRAP><FONT COLOR="#006633"><B>dfcleq</B></FONT></TD>
 <TD>
 <!--
@@ -1943,8 +1943,9 @@ abstraction</A></TD>
 </TR>
 
 <TR ALIGN=LEFT>
-<TD><A HREF="df-clel.html">Definition of class membership</A></TD>
-<TD NOWRAP><FONT COLOR="#006633"><B>df-clel</B></FONT></TD>
+<TD><A HREF="dfclel.html">Defining characterization of class
+membership</A></TD>
+<TD NOWRAP><FONT COLOR="#006633"><B>dfclel</B></FONT></TD>
 <TD>` |- ( A e. B <-> E. x ( x = A /\ x e. B ) ) `</TD>
 </TR>
 </TABLE>
@@ -1961,23 +1962,28 @@ itself contain class builders.  The proper substitution denoted by
 
 <P>
 Definition ~ df-cleq extends the ` = ` connective to allow classes on both
-sides.  The definition itself has a hypothesis, and above we show the derived
-version ~ dfcleq with the hypothesis eliminated for practical use.  Without its
-hypothesis, ~ df-cleq would produce the axiom of extensionality ~ ax-ext as a
+sides.  The definition itself has two hypotheses, and above we show the derived
+version ~ dfcleq with the hypotheses eliminated for practical use.  Without its
+hypotheses, ~ df-cleq would produce the axiom of extensionality ~ ax-ext as a
 special case and thus is not sound (is not conservative) in the context of
 predicate calculus without set theory.  If we assume our class theory
 definitionally extends set theory rather than just predicate calculus, the
-hypothesis is unnecessary and merely provides us with a somewhat nitpicking
-isolation from set theory.  Most authors do not include this hypothesis.  An
-advantage of the hypothesis for us is that we must explicitly use ~ ax-ext to
-satisfy it as in Theorem ~ dfcleq , meaning we can more easily determine
+hypotheses are unnecessary and merely provide us with a somewhat nitpicking
+isolation from set theory.  Most authors do not include these hypotheses.  An
+advantage of the hypotheses for us is that we must explicitly use ~ ax-ext to
+satisfy them as in Theorem ~ dfcleq , meaning we can more easily determine
 exactly where ~ ax-ext was used by a proof.
 </P>
 
 <P>
 Definition ~ df-clel similarly extends the ` e. ` connective to allow classes
-on both sides.  We do not need a hypothesis as we did for ~ df-cleq because its
+on both sides.  This definition also has two hypotheses, and above we show the
+derived version ~ dfclel with the hypotheses eliminated for practical use.
+Unlike ~ df-cleq , ~ df-clel without its hypotheses would still be a sound
+definition in the context of predicate calculus without set theory because its
 instances are theorems of predicate calculus (see Theorem ~ cleljust ).
+However, we include the hypotheses so that we can more easily determine exactly
+where a proof used the axioms of predicate calculus.
 </P>
 
 <P>
@@ -1999,14 +2005,14 @@ setvar variable ` b ` as a class and applying ~ dfcleq , we get
 ` A. y ( y e. { x | x = a } <-> y e. b ) ` .
 Applying ~ df-clab , we get
 ` A. y ( [ y / x ] x = a <-> y e.  b ) ` .
-Applying ~ df-sb , we get
-` A. y ( ( x = y -> x = a ) /\ E. x ( x = y /\ x = a ) ) <-> y e. b ) ` ,
+Applying ~ df-sb (and introducing a new dummy variable in the process), we get
+` A. y ( A. z ( z = y -> A. x ( x = z -> x = a ) ) <-> y e. b ) ` ,
 which is our final expression in the basic language of predicate calculus
-(implicitly assuming we have expanded the defined connectives ` E. ` , ` /\ ` ,
-` <-> `).  This expression is unique provided we have some canonical convention
-for traversing the extended wff syntax tree and for naming any new variables
-introduced at each step.  By the way, this can be simplified with additional
-applications of predicate calculus to become ` A. y ( y = a <-> y e. b ) ` .
+(implicitly assuming we have expanded the defined connective ` <-> `).  This
+expression is unique provided we have some canonical convention for traversing
+the extended wff syntax tree and for naming any new variables introduced at
+each step.  By the way, this can be simplified with additional applications of
+predicate calculus to become ` A. y ( y = a <-> y e. b ) ` .
 </P>
 
 <!-- which we can also obtain immediately from the penultimate step by noticing
@@ -2280,7 +2286,7 @@ variables ~ eqabb</LI>
  equivalent ~ gch-kn</LI>
 
 </MENU>
-<B>Real and complex numbers</B> (<A HREF="mmcomplex.html">27
+<B>Real and complex numbers</B> (<A HREF="mmcomplex.html">22
 postulates</A>)
 <MENU>
 
@@ -3437,8 +3443,8 @@ conditions on them.  These conditions are somewhat awkward to formalize
 but they are not hard to grasp intuitively.  You can look them up in any
 elementary logic book.  For example, they are explained in Hirst and
 Hirst's
-<A HREF="http://www.appstate.edu/~~hirstjl/primer/hirst.pdf"><I>A Primer
-for Logic and Proof</I></A> [retrieved 17-Sep-2017] (PDF, 0.5MB);
+<A HREF="http://www.appstate.edu/~~hirstjl/primer/hirst.pdf#page=42"><I>A
+Primer for Logic and Proof</I></A> [retrieved 17-Sep-2017] (PDF, 0.5MB);
 Section 2.4 (pp. 36-37; add 6 for the PDF page number) defines "free
 variable," and Section 2.11 (pp. 48-51) defines "free for."  See pp. 15,
 51, &amp; 64 for the propositional calculus, predicate calculus, and
@@ -3501,8 +3507,9 @@ will satisfy the hypothesis, as shown by Theorem ~ hbequid , even though ` x `
 is technically free in it).
 
 Because the idiom for "effectively not free in" is so frequently used, we
-define a special logical connective, ` F/ x ph ` , that stands for
-` A. x ( ph -> A. x ph ) ` .  See Definition ~ df-nf .
+define a special logical connective, ` F/ x ph ` , that stands for the
+equivalent expression ` E. x ph -> A. x ph ` .  See Definition ~ df-nf and
+Theorem ~ nf5 .
 </P>
 
 <P>
@@ -3742,8 +3749,9 @@ the distinct variable condition that is inherited at the tenth step (ax-16).
 </P>
 
 <P>
-Constants are considered distinct from all variables and never appear (nor are
-allowed to appear) in a distinct variable group. See the comment for ~ isset .
+Constants, such as the class constant ` _V ` defined in ~ df-v , are considered
+distinct from all variables and never appear (nor are allowed to appear) in a
+distinct variable group.
 </P>
 
 <P>
@@ -4521,7 +4529,7 @@ number <I><FONT COLOR="#CC33CC">A</FONT></I >, where we use &quot;` ( Re `` A )
 `&quot; instead of &quot;` Re A `", and the conjugate of a complex number,
 where we use &quot;` ( * `` A ) `&quot; instead of
 &quot;` A `<sup>*</sup>&quot; (or sometimes with an overbar), both of which you
-can see in Theorem ~ cjval .  Another example is the factorial function, which
+can see in Theorem ~ remim .  Another example is the factorial function, which
 we express as &quot;` ( ! `` A ) `&quot; instead of &quot;` A ! `&quot; in
 ~ facnn2 .  In the conventional textbook notation, these four examples use four
 different positional relationships to indicate one concept (the value of a
@@ -6068,7 +6076,7 @@ Section 107 of the United States Copyright Act (Title 17 of the
 &nbsp;</FONT></TD>
 
 <TD NOWRAP ALIGN=CENTER>
-<I><FONT SIZE=-1>This page was last updated on 14-Jan-2024.</FONT></I>
+<I><FONT SIZE=-1>This page was last updated on 19-Jan-2026.</FONT></I>
 <BR>
 <FONT FACE="ARIAL" SIZE=-2>Your comments are welcome: Norman Megill
 <A HREF="../email.html"><IMG BORDER=0 SRC="_nmemail.gif"
