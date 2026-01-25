@@ -196652,6 +196652,31 @@ $)
       CJIDEIDAKIABLEMNCOABCDEFGPQ $.
   $}
 
+  ${
+    $d G x $.  $d E x $.  $d I x $.  $d V x $.  $d ph x $.
+    usgrstrrepe.v $e |- V = ( Base ` G ) $.
+    usgrstrrepe.i $e |- I = ( .ef ` ndx ) $.
+    usgrstrrepe.s $e |- ( ph -> G Struct X ) $.
+    usgrstrrepe.b $e |- ( ph -> ( Base ` ndx ) e. dom G ) $.
+    usgrstrrepe.w $e |- ( ph -> E e. W ) $.
+    usgrstrrepeen.e $e |- ( ph -> E : dom E -1-1-> { x e. ~P V | x ~~ 2o } ) $.
+    $( Replacing (or adding) the edges (between elements of the base set) of an
+       extensible structure results in a simple graph.  Instead of requiring
+       ` ( ph -> G Struct X ) ` , it would be sufficient to require
+       ` ( ph -> Fun ( G \ { (/) } ) ) ` and ` ( ph -> G e. _V ) ` .
+       (Contributed by AV, 13-Nov-2021.)  (Proof shortened by AV,
+       16-Nov-2021.) $)
+    usgrstrrepeen $p |- ( ph -> ( G sSet <. I , E >. ) e. USGraph ) $=
+      ( wcel cfv wf1 syl mpbird cvv cop csts co cusgr ciedg cdm cv c2o cen cvtx
+      wbr cpw crab wceq wb cbs setsvtx eqtr4di pweqd f1eq3 setsiedg dmeqd eqidd
+      rabeqdv f1eq123d cn cstr structex cnx cedgf edgfndxnn eqeltri a1i syl3anc
+      setsex eqid isusgren ) ADECUAUBUCZUDOZVRUEPZUFZBUGUHUIUKZBVRUJPZULZUMZVTQ
+      ZAWFCUFZWECQZAWHWGWBBFULZUMZCQZNAWEWJUNWHWKUOAWBBWDWIAWCFAWCDUPPFACDEGHJK
+      LMUQIURUSVDWEWJWGCUTRSAWAWGWEWEVTCACDEGHJKLMVAZAVTCWLVBAWEVCVESAVRTOZVSWF
+      UOADTOZEVFOZCGOWMADHVGUKWNKDHVHRWOAEVIVJPVFJVKVLVMMECDTGVFVOVNBTVTVRWCWCV
+      PVTVPVQRS $.
+  $}
+
 
 $(
 ###############################################################################
