@@ -194298,6 +194298,18 @@ $)
       FPMLZPUHLZQZVKUIZUJVLVMRACNOZDSOZBEOZVOACFUKULVTHCFUMUNZWAADVQSGUOUPZUSZJ
       DBCNESUQTACSBDEFHWEJURAVRVPDQVSVQDVPDVQGUTVAACBDEFHWEJIVBVCVKNVDTAVTWBVNV
       MRWCJNBDMECVGVPVQDVEGVHWDVFVIVJ $.
+
+    $( The (indexed) edges of a structure with a base set and an inserted resp.
+       replaced slot for the edge function.  (Contributed by AV, 7-Jun-2021.)
+       (Revised by AV, 16-Nov-2021.) $)
+    setsiedg $p |- ( ph -> ( iEdg ` ( G sSet <. I , E >. ) ) = E ) $=
+      ( cnx cedgf cfv cop csts ciedg cvv wcel wceq cn csn cdif wfun cbs cpr cdm
+      co c0 wss cstr wbr structex syl edgfndxnn a1i syl3anc setsn0fun bassetsnn
+      setsex funiedgvalg opeq1i oveq2i fveq2i ndxslid setsslid syl2anc 3eqtr4d
+      edgfid ) ACKLMZBNZOUGZPMZVKLMZCDBNZOUGZPMZBAVKQRZVKUHUAUBUCKUDMVIUEVKUFUI
+      VLVMSACQRZVITRZBERZVQACFUJUKVRHCFULUMZVSAUNUOZJVIBCQETUSUPACTBVIEFHWBJUQA
+      CBVIEFHWBJIURVKQUTUPVPVLSAVOVKPVNVJCODVIBGVAVBVCUOAVRVTBVMSWAJQBLECLVIVHU
+      NVDVEVFVG $.
   $}
 
 
