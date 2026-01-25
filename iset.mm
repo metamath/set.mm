@@ -8019,8 +8019,8 @@ $)
 
      This form was chosen as the definition rather than ~ dfifp2dc for
      compatibility with intuitionistic logic development: with this form, it is
-     clear that ` if- ( ph , ps , ch ) ` implies decidability of ` ph ` , which
-     is most often what is wanted.
+     clear that ` if- ( ph , ps , ch ) ` implies decidability of ` ph `
+     ( ~ ifpdc ), which is most often what is wanted.
 
      Church uses the conditional operator as an intermediate step to prove
      completeness of some systems of connectives.  The first result is that the
@@ -8037,6 +8037,12 @@ $)
      (Contributed by BJ, 22-Jun-2019.) $)
   df-ifp $a |-
             ( if- ( ph , ps , ch ) <-> ( ( ph /\ ps ) \/ ( -. ph /\ ch ) ) ) $.
+
+  $( The conditional operator for propositions implies decidability.
+     (Contributed by Jim Kingdon, 25-Jan-2026.) $)
+  ifpdc $p |- ( if- ( ph , ps , ch ) -> DECID ph ) $=
+    ( wa wn wo wif wdc simpl orim12i df-ifp df-dc 3imtr4i ) ABDZAEZCDZFAOFABCGA
+    HNAPOABIOCIJABCKALM $.
 
   $( Forward direction of ~ dfifp2dc .  This direction does not require
      decidability.  (Contributed by Jim Kingdon, 25-Jan-2026.) $)
