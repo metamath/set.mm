@@ -8008,7 +8008,7 @@ $)
 
   $( Definition of the conditional operator for propositions.  The expression
      ` if- ( ph , ps , ch ) ` is read "if ` ph ` then ` ps ` else ` ch ` ".
-     See ~ dfifp2dc , ~ dfifp3dc , ~ dfifp4dc , ~ dfifp5 , ~ dfifp6 and
+     See ~ dfifp2dc , ~ dfifp3dc , ~ dfifp4dc , ~ dfifp5dc , ~ dfifp6 and
      ~ dfifp7 for alternate definitions.
 
      This definition (in the form of ~ dfifp2dc ) appears in Section II.24 of
@@ -8075,6 +8075,13 @@ $)
       ( if- ( ph , ps , ch ) <-> ( ( -. ph \/ ps ) /\ ( ph \/ ch ) ) ) ) $=
     ( wdc wif wi wo wa wn dfifp3dc imordc anbi1d bitrd ) ADZABCEABFZACGZHAIBGZP
     HABCJNOQPABKLM $.
+
+  $( Alternate definition of the conditional operator for propositions.
+     (Contributed by BJ, 2-Oct-2019.) $)
+  dfifp5dc $p |- ( DECID ph ->
+      ( if- ( ph , ps , ch ) <-> ( ( -. ph \/ ps ) /\ ( -. ph -> ch ) ) ) ) $=
+    ( wdc wif wi wn wa wo dfifp2dc imordc anbi1d bitrd ) ADZABCEABFZAGZCFZHPBIZ
+    QHABCJNORQABKLM $.
 
 
 $(
