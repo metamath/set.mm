@@ -8097,6 +8097,12 @@ $)
     ( wa wif wdc wn wo olc anim12i dfifp4dc imbitrrid ) BCDABCEAFAGZBHZACHZDBNC
     OBMICAIJABCKL $.
 
+  $( The conditional operator implies the disjunction of its possible outputs.
+     Dual statement of ~ anifpdc .  (Contributed by BJ, 1-Oct-2019.) $)
+  ifpor $p |- ( if- ( ph , ps , ch ) -> ( ps \/ ch ) ) $=
+    ( wif wa wn wo df-ifp simpr orim12i sylbi ) ABCDABEZAFZCEZGBCGABCHLBNCABIMC
+    IJK $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
