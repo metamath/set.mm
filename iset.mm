@@ -8090,6 +8090,13 @@ $)
     ( wdc wi wa wn wb wif con34bdc anbi2d dfbi2 a1i dfifp2dc 3bitr4d ) ACZABDZB
     ADZEZPAFBFZDZEABGZABSHOQTPBAIJUARGOABKLABSMN $.
 
+  $( The conditional operator is implied by the conjunction of its possible
+     outputs.  Dual statement of ~ ifpor .  (Contributed by BJ,
+     30-Sep-2019.) $)
+  anifpdc $p |- ( DECID ph -> ( ( ps /\ ch ) -> if- ( ph , ps , ch ) ) ) $=
+    ( wa wif wdc wn wo olc anim12i dfifp4dc imbitrrid ) BCDABCEAFAGZBHZACHZDBNC
+    OBMICAIJABCKL $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
