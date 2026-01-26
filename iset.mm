@@ -8083,6 +8083,13 @@ $)
     ( wdc wif wi wn wa wo dfifp2dc imordc anbi1d bitrd ) ADZABCEABFZAGZCFZHPBIZ
     QHABCJNORQABKLM $.
 
+  $( Define the biconditional as conditional logic operator.  (Contributed by
+     RP, 20-Apr-2020.)  (Proof shortened by Wolf Lammen, 30-Apr-2024.) $)
+  ifpdfbidc $p |- ( DECID ph ->
+      ( ( ph <-> ps ) <-> if- ( ph , ps , -. ps ) ) ) $=
+    ( wdc wi wa wn wb wif con34bdc anbi2d dfbi2 a1i dfifp2dc 3bitr4d ) ACZABDZB
+    ADZEZPAFBFZDZEABGZABSHOQTPBAIJUARGOABKLABSMN $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
