@@ -8103,6 +8103,15 @@ $)
     ( wif wa wn wo df-ifp simpr orim12i sylbi ) ABCDABEZAFZCEZGBCGABCHLBNCABIMC
     IJK $.
 
+  $( Conditional operator for the negation of a proposition.  (Contributed by
+     BJ, 30-Sep-2019.)  (Proof shortened by Wolf Lammen, 5-May-2024.) $)
+  ifpnst $p |- ( STAB ph ->
+      ( if- ( ph , ps , ch ) <-> if- ( -. ph , ch , ps ) ) ) $=
+    ( wstab wif wn wdc ifpdc adantl wa biimpi sylan2 wi wo dfifp5dc biancomd wb
+    stdcndc dcn dfifp3dc syl bitr4d pm5.21nd ) ADZABCEZAFZCBEZAGZUEUHUDABCHIUGU
+    DUFGZUHUFCBHUDUIJUHARKLUHUEUFCMZUFBNZJZUGUHUEUJUKABCOPUHUIUGULQASUFCBTUAUBU
+    C $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
