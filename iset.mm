@@ -8128,6 +8128,13 @@ $)
     ( wn wif wa wo df-ifp ancom orbi12i bitri dedlemb bitr4id ) ADZABCEZBAFZCNF
     ZGZCOABFZNCFZGRABCHSPTQABINCIJKABCLM $.
 
+  $( Value of the conditional operator for propositions when the same
+     proposition is returned in either case.  Analogue for propositions of
+     ~ ifiddc .  (Contributed by BJ, 20-Sep-2019.) $)
+  ifpiddc $p |- ( DECID ph -> ( if- ( ph , ps , ps ) <-> ps ) ) $=
+    ( wdc wn wo wif wb exmiddc ifptru ifpfal jaoi syl ) ACAADZEABBFBGZAHANMABBI
+    ABBJKL $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
