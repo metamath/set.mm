@@ -8120,6 +8120,14 @@ $)
     ( wif wa wn wo df-ifp ancom orbi12i bitri dedlema bitr4id ) AABCDZBAEZCAFZE
     ZGZBNABEZPCEZGRABCHSOTQABIPCIJKABCLM $.
 
+  $( Value of the conditional operator for propositions when its first argument
+     is false.  Analogue for propositions of ~ iffalse .  This is essentially
+     ~ dedlemb .  (Contributed by BJ, 20-Sep-2019.)  (Proof shortened by Wolf
+     Lammen, 25-Jun-2020.) $)
+  ifpfal $p |- ( -. ph -> ( if- ( ph , ps , ch ) <-> ch ) ) $=
+    ( wn wif wa wo df-ifp ancom orbi12i bitri dedlemb bitr4id ) ADZABCEZBAFZCNF
+    ZGZCOABFZNCFZGRABCHSPTQABINCIJKABCLM $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
