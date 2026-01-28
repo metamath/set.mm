@@ -196884,6 +196884,57 @@ $)
 
 
 $(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Walks, paths and cycles
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Walks
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c Walks $.
+
+  $( Extend class notation with walks (i.e. 1-walks) (of a hypergraph). $)
+  cwlks $a class Walks $.
+
+  ${
+    $d f g k p $.
+    $( Define the set of all walks (in a hypergraph).  Such walks correspond to
+       the s-walks "on the vertex level" (with s = 1), and also to 1-walks "on
+       the edge level" discussed in Aksoy et al.  The predicate
+       ` F ( Walks `` G ) P ` can be read as "The pair ` <. F , P >. `
+       represents a walk in a graph ` G ` ", see also ~ iswlk .
+
+       The condition ` { ( p `` k ) , ( p `` ( k + 1 ) ) } `
+       ` C_ ( ( iEdg `` g ) `` ( f `` k ) ) ` (hereinafter referred to as C)
+       would not be sufficient, because the repetition of a vertex in a walk
+       (i.e. ` ( p `` k ) = ( p `` ( k + 1 ) ) ` should be allowed only if
+       there is a loop at ` ( p `` k ) ` .  Otherwise, C would be fulfilled by
+       each edge containing ` ( p `` k ) ` .
+
+       According to the definition of [Bollobas] p. 4.:  "A walk W in a graph
+       is an alternating sequence of vertices and edges x0 , e1 , x1 ,
+       e2 , ... , e(l) , x(l) ...", a walk can be represented by two mappings f
+       from { 1 , ... , n } and p from { 0 , ... , n }, where f enumerates the
+       (indices of the) edges, and p enumerates the vertices.  So the walk is
+       represented by the following sequence: p(0) e(f(1)) p(1) e(f(2)) ...
+       p(n-1) e(f(n)) p(n).  (Contributed by AV, 30-Dec-2020.) $)
+    df-wlks $a |- Walks = ( g e. _V |-> { <. f , p >. |
+                     ( f e. Word dom ( iEdg ` g )
+                       /\ p : ( 0 ... ( # ` f ) ) --> ( Vtx ` g )
+                       /\ A. k e. ( 0 ..^ ( # ` f ) )
+                          if- ( ( p ` k ) = ( p ` ( k + 1 ) ) ,
+                                ( ( iEdg ` g ) ` ( f ` k ) ) = { ( p ` k ) } ,
+                                { ( p ` k ) , ( p ` ( k + 1 ) ) }
+                                C_ ( ( iEdg ` g ) ` ( f ` k ) ) ) ) } ) $.
+  $}
+
+
+$(
 ###############################################################################
   GUIDES AND MISCELLANEA
 ###############################################################################
@@ -199148,6 +199199,9 @@ htmldef "USPGraph" as 'USPGraph';
 htmldef "USGraph" as 'USGraph';
   althtmldef "USGraph" as 'USGraph';
   latexdef "USGraph" as "\mathrm{USGraph}";
+htmldef "Walks" as "Walks";
+  althtmldef "Walks" as "Walks";
+  latexdef "Walks" as "\mathrm{Walks}";
 
 /* htmldef, althtmldef, latexdef for mathboxes */
 /* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
