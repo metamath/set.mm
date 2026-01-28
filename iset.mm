@@ -196948,6 +196948,23 @@ $)
     ZUHKZFUHUILZUJSUBUCUHUDUIABCMZABHCINZOUBUEUJUFUKABEDPZUBUCUHUMTOUBUGULUEUJU
     BUCUHUDUIUMUNQUORUA $.
 
+  $( Lemma 2 for walks to substitute the index of the condition for vertices
+     and edges in a walk.  (Contributed by AV, 23-Apr-2021.) $)
+  wkslem2 $p |- ( ( A = B /\ ( A + 1 ) = C )
+                         -> ( if- ( ( P ` A ) = ( P ` ( A + 1 ) ) ,
+                                    ( I ` ( F ` A ) ) = { ( P ` A ) } ,
+                                    { ( P ` A ) , ( P ` ( A + 1 ) ) }
+                                    C_ ( I ` ( F ` A ) ) )
+                          <-> if- ( ( P ` B ) = ( P ` C ) ,
+                                    ( I ` ( F ` B ) ) = { ( P ` B ) } ,
+                                    { ( P ` B ) , ( P ` C ) }
+                                    C_ ( I ` ( F ` B ) ) ) ) ) $=
+    ( wceq c1 caddc co wa cfv csn cpr wss fveq2 adantr adantl eqeq12d wb 2fveq3
+    sneqd preq12d sseq12d ifpbi123d ) ABGZAHIJZCGZKZADLZUGDLZGAELFLZUJMZGZUJUKN
+    ZULOBDLZCDLZGBELFLZUPMZGZUPUQNZUROUIUJUPUKUQUFUJUPGUHABDPZQZUHUKUQGUFUGCDPR
+    ZSUFUNUTTUHUFULURUMUSABFEUAZUFUJUPVBUBSQUIUOVAULURUIUJUPUKUQVCVDUCUFULURGUH
+    VEQUDUE $.
+
 
 $(
 ###############################################################################
