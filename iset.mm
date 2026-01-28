@@ -8168,6 +8168,15 @@ $)
       ( biidd ifpbi123d ) ABCDBEFABIGHJ $.
   $}
 
+  ${
+    1fpid3.1 $e |- ( ( ph /\ ps ) -> ch ) $.
+    $( The value of the conditional operator for propositions is its third
+       argument if the first and second argument imply the third argument.
+       (Contributed by AV, 4-Apr-2021.) $)
+    1fpid3 $p |- ( if- ( ph , ps , ch ) -> ch ) $=
+      ( wif wa wn wo df-ifp simpr jaoi sylbi ) ABCEABFZAGZCFZHCABCIMCODNCJKL $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
