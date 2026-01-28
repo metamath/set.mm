@@ -38998,6 +38998,12 @@ $)
     elopabr $p |- ( A e. { <. x , y >. | x R y } -> A e. R ) $=
       ( cv wbr copab opabss sseli ) AEBEDFABGDCABDHI $.
     $( $j usage 'elopabr' avoids 'ax-sep' 'ax-nul' 'ax-pr'; $)
+
+    $( Membership in an ordered-pair class abstraction defined by a restricted
+       binary relation.  (Contributed by AV, 16-Feb-2021.) $)
+    elopabran $p |- ( A e. { <. x , y >. | ( x R y /\ ps ) } -> A e. R ) $=
+      ( cv wbr wa copab simpl ssopab2i opabss sstri sseli ) BFCFEGZAHZBCIZEDQOB
+      CIEPOBCOAJKBCELMN $.
   $}
 
 
