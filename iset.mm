@@ -10524,6 +10524,18 @@ $)
   $}
 
   ${
+    ecase2d.1 $e |- ( ph -> ps ) $.
+    ecase2d.2 $e |- ( ph -> -. ( ps /\ ch ) ) $.
+    ecase2d.3 $e |- ( ph -> -. ( ps /\ th ) ) $.
+    ecase2d.4 $e |- ( ph -> ( ta \/ ( ch \/ th ) ) ) $.
+    $( Deduction for elimination by cases.  (Contributed by NM, 21-Apr-1994.)
+       (Proof shortened by Wolf Lammen, 19-Sep-2024.) $)
+    ecase2d $p |- ( ph -> ta ) $=
+      ( wo wn mpnanrd ioran sylanbrc ecased ) AECDJZACKDKPKABCFGLABDFHLCDMNIO
+      $.
+  $}
+
+  ${
     3biorfd.1 $e |- ( ph -> -. th ) $.
     $( A disjunction is equivalent to a threefold disjunction with single
        falsehood, analogous to ~ biorf .  (Contributed by Alexander van der
