@@ -51091,6 +51091,14 @@ $)
     ( wfun cdm wfn wcel cfv wceq cop wb funfn fnopfvb sylanb ) CDCCEZFAOGACHBIA
     BJCGKCLOABCMN $.
 
+  $( Version of ~ fnbrfvb for functions on Cartesian products: function value
+     expressed as a binary relation.  See ~ fnbrovb for the form when ` F ` is
+     seen as a binary operation.  (Contributed by BJ, 15-Feb-2022.) $)
+  fnbrfvb2 $p |- ( ( F Fn ( V X. W ) /\ ( A e. V /\ B e. W ) ) ->
+                           ( ( F ` <. A , B >. ) = C <-> <. A , B >. F C ) ) $=
+    ( wcel wa cxp wfn cop cfv wceq wbr wb opelxpi fnbrfvb sylan2 ) AEGBFGHDEFIZ
+    JABKZSGTDLCMTCDNOABEFPSTCDQR $.
+
   ${
     $d A y $.  $d B y $.  $d F y $.  $d X y $.
     $( There is exactly one codomain element for each element of the domain of
