@@ -38990,6 +38990,16 @@ $)
       NUOUQDBEQUTUNBUTUPDEJZCNUNUPDCEQVAUMCUKADEUBRSRSSUCDFEUHUDULBCFUEUF $.
   $}
 
+  ${
+    $d R x $.  $d R y $.
+    $( Membership in an ordered-pair class abstraction defined by a binary
+       relation.  (Contributed by AV, 16-Feb-2021.)  (Proof shortened by SN,
+       11-Dec-2024.) $)
+    elopabr $p |- ( A e. { <. x , y >. | x R y } -> A e. R ) $=
+      ( cv wbr copab opabss sseli ) AEBEDFABGDCABDHI $.
+    $( $j usage 'elopabr' avoids 'ax-sep' 'ax-nul' 'ax-pr'; $)
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
