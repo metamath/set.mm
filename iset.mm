@@ -196965,6 +196965,34 @@ $)
     ZSUFUNUTTUHUFULURUMUSABFEUAZUFUJUPVBUBSQUIUOVAULURUIUJUPUKUQVCVDUCUFULURGUH
     VEQUDUE $.
 
+  ${
+    $d G f g k p $.  $d I f g p $.  $d V g p $.  $d W f g $.
+    wksfval.v $e |- V = ( Vtx ` G ) $.
+    wksfval.i $e |- I = ( iEdg ` G ) $.
+    $( The set of walks (in an undirected graph).  (Contributed by AV,
+       30-Dec-2020.) $)
+    wksfval $p |- ( G e. W -> ( Walks ` G ) = { <. f , p >. |
+             ( f e. Word dom I /\ p : ( 0 ... ( # ` f ) ) --> V
+               /\ A. k e. ( 0 ..^ ( # ` f ) )
+                  if- ( ( p ` k ) = ( p ` ( k + 1 ) ) ,
+                                ( I ` ( f ` k ) ) = { ( p ` k ) } ,
+                                { ( p ` k ) , ( p ` ( k + 1 ) ) }
+                                C_ ( I ` ( f ` k ) ) ) ) } ) $=
+      ( vg wcel cv ciedg cfv cc0 co cvtx wceq wss cvv cdm cword chash cfz wf c1
+      caddc csn cpr wif cfzo wral copab cwlks df-wlks fveq2 eqtr4di dmeqd wrdeq
+      w3a eleq2d feq3d fveq1d eqeq1d sseq2d ifpbi23d ralbidv 3anbi123d opabbidv
+      syl elex wa 3anass opabbii iedgex eqeltrid dmexd wrdexg cab cfn 0zd lencl
+      nn0zd fzfigd vtxex mapex syl2anr simpl ss2abi a1i ssexd opabex3d fvmptd3
+      ) CFKZJCALZJLZMNZUAZUBZKZOWOUCNZUDPZWPQNZGLZUEZBLZXDNZXFUFUGPXDNZRZXFWONZ
+      WQNZXGUHZRZXGXHUIZXKSZUJZBOXAUKPZULZUTZAGUMWODUAZUBZKZXBEXDUEZXIXJDNZXLRZ
+      XNYDSZUJZBXQULZUTZAGUMZTUNTAJBGUOWPCRZXSYIAGYKWTYBXEYCXRYHYKWSYAWOYKWRXTR
+      WSYARYKWQDYKWQCMNZDWPCMUPIUQZURWRXTUSVJVAYKXCEXDXBYKXCCQNZEWPCQUPHUQVBYKX
+      PYGBXQYKXIXMXOYEYFYKXKYDXLYKXJWQDYMVCZVDYKXKYDXNYOVEVFVGVHVICFVKWNYJYBYCY
+      HVLZVLZAGUMTYIYQAGYBYCYHVMVNWNYPAGYAWNXTTKYATKWNDTWNDYLTICFVOVPVQXTTVRVJW
+      NYBVLZYPGVSZYCGVSZTYBXBVTKETKYTTKWNYBOXAYBWAYBXAXTWOWBWCWDWNEYNTHCFWEVPXB
+      EVTTGWFWGYSYTSYRYPYCGYCYHWHWIWJWKWLVPWM $.
+  $}
+
 
 $(
 ###############################################################################
