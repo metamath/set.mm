@@ -196933,6 +196933,21 @@ $)
                                 C_ ( ( iEdg ` g ) ` ( f ` k ) ) ) ) } ) $.
   $}
 
+  $( Lemma 1 for walks to substitute the index of the condition for vertices
+     and edges in a walk.  (Contributed by AV, 23-Apr-2021.) $)
+  wkslem1 $p |- ( A = B -> ( if- ( ( P ` A ) = ( P ` ( A + 1 ) ) ,
+                                    ( I ` ( F ` A ) ) = { ( P ` A ) } ,
+                                    { ( P ` A ) , ( P ` ( A + 1 ) ) }
+                                    C_ ( I ` ( F ` A ) ) )
+                          <-> if- ( ( P ` B ) = ( P ` ( B + 1 ) ) ,
+                                    ( I ` ( F ` B ) ) = { ( P ` B ) } ,
+                                    { ( P ` B ) , ( P ` ( B + 1 ) ) }
+                                    C_ ( I ` ( F ` B ) ) ) ) ) $=
+    ( wceq cfv c1 caddc co csn cpr fveq2 fvoveq1 eqeq12d 2fveq3 preq12d sseq12d
+    wss sneqd ifpbi123d ) ABFZACGZAHIJCGZFADGEGZUCKZFUCUDLZUESBCGZBHIJCGZFBDGEG
+    ZUHKZFUHUILZUJSUBUCUHUDUIABCMZABHCINZOUBUEUJUFUKABEDPZUBUCUHUMTOUBUGULUEUJU
+    BUCUHUDUIUMUNQUORUA $.
+
 
 $(
 ###############################################################################
