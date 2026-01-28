@@ -55461,6 +55461,14 @@ $)
       KULUDIAUIUNUGJUMUAUIUGFUBUCUEUF $.
   $}
 
+  $( Value of a binary operation expressed as a binary relation.  See also
+     ~ fnbrfvb for functions on Cartesian products.  (Contributed by BJ,
+     15-Feb-2022.) $)
+  fnbrovb $p |- ( ( F Fn ( V X. W ) /\ ( A e. V /\ B e. W ) ) ->
+                                     ( ( A F B ) = C <-> <. A , B >. F C ) ) $=
+    ( co wceq cop cfv cxp wfn wcel wa wbr df-ov eqeq1i fnbrfvb2 bitrid ) ABDGZC
+    HABIZDJZCHDEFKLAEMBFMNNUACDOTUBCABDPQABCDEFRS $.
+
   $( Equivalence of operation value and ordered triple membership, analogous to
      ~ fnopfvb .  (Contributed by NM, 17-Dec-2008.)  (Revised by Mario
      Carneiro, 28-Apr-2015.) $)
