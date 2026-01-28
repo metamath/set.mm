@@ -8157,6 +8157,17 @@ $)
       ZGKZMBCDNEFGNATUCUBUEABECFHIOAUAUDDGABEHPJOQBCDREFGRS $.
   $}
 
+  ${
+    ifpbi23d.1 $e |- ( ph -> ( ch <-> et ) ) $.
+    ifpbi23d.2 $e |- ( ph -> ( th <-> ze ) ) $.
+    $( Equivalence deduction for conditional operator for propositions.
+       Convenience theorem for a frequent case.  (Contributed by Wolf Lammen,
+       28-Apr-2024.) $)
+    ifpbi23d $p |- ( ph -> ( if- ( ps , ch , th )
+                              <-> if- ( ps , et , ze ) ) ) $=
+      ( biidd ifpbi123d ) ABCDBEFABIGHJ $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
