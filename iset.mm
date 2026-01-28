@@ -55440,6 +55440,19 @@ $)
       PEKRTGPEQHLMQFKTSGQFEHNMO $.
   $}
 
+  ${
+    elovimad.1 $e |- ( ph -> A e. C ) $.
+    elovimad.2 $e |- ( ph -> B e. D ) $.
+    elovimad.3 $e |- ( ph -> Fun F ) $.
+    elovimad.4 $e |- ( ph -> ( C X. D ) C_ dom F ) $.
+    $( Elementhood of the image set of an operation value.  (Contributed by
+       Thierry Arnoux, 13-Mar-2017.) $)
+    elovimad $p |- ( ph -> ( A F B ) e. ( F " ( C X. D ) ) ) $=
+      ( co cop cfv cxp cima df-ov wcel opelxpd wfun cdm sseldd funfvima syl2anc
+      wi mpd eqeltrid ) ABCFKBCLZFMZFDENZOZBCFPAUGUIQZUHUJQZABCDEGHRZAFSUGFTZQU
+      KULUDIAUIUNUGJUMUAUIUGFUBUCUEUF $.
+  $}
+
   $( Equivalence of operation value and ordered triple membership, analogous to
      ~ fnopfvb .  (Contributed by NM, 17-Dec-2008.)  (Revised by Mario
      Carneiro, 28-Apr-2015.) $)
