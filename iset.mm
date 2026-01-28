@@ -5878,6 +5878,15 @@ $)
   nan $p |- ( ( ph -> -. ( ps /\ ch ) ) <-> ( ( ph /\ ps ) -> -. ch ) ) $=
     ( wa wn wi impexp imnan imbi2i bitr2i ) ABDCEZFABKFZFABCDEZFABKGLMABCHIJ $.
 
+  ${
+    mpnanrd.1 $e |- ( ph -> ps ) $.
+    mpnanrd.2 $e |- ( ph -> -. ( ps /\ ch ) ) $.
+    $( Eliminate the right side of a negated conjunction in an implication.
+       (Contributed by ML, 17-Oct-2020.) $)
+    mpnanrd $p |- ( ph -> -. ch ) $=
+      ( wn wa wi imnan sylibr mpd ) ABCFZDABCGFBLHEBCIJK $.
+  $}
+
   $( Law of noncontradiction.  Theorem *3.24 of [WhiteheadRussell] p. 111 (who
      call it the "law of contradiction").  (Contributed by NM, 16-Sep-1993.)
      (Revised by Mario Carneiro, 2-Feb-2015.) $)
