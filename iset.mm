@@ -196991,6 +196991,30 @@ $)
       HVLZVLZAGUMTYIYQAGYBYCYHVMVNWNYPAGYAWNXTTKYATKWNDTWNDYLTICFVOVPVQXTTVRVJW
       NYBVLZYPGVSZYCGVSZTYBXBVTKETKYTTKWNYBOXAYBWAYBXAXTWOWBWCWDWNEYNTHCFWEVPXB
       EVTTGWFWGYSYTSYRYPYCGYCYHWHWIWJWKWLVPWM $.
+
+    $d F f k p $.  $d P f k p $.  $d V f $.
+    $( Properties of a pair of functions to be/represent a walk.  (Contributed
+       by AV, 30-Dec-2020.) $)
+    iswlk $p |- ( ( G e. W /\ F e. U /\ P e. Z ) -> ( F ( Walks ` G ) P
+                         <-> ( F e. Word dom I /\ P : ( 0 ... ( # ` F ) ) --> V
+                               /\ A. k e. ( 0 ..^ ( # ` F ) )
+                                  if- ( ( P ` k ) = ( P ` ( k + 1 ) ) ,
+                                        ( I ` ( F ` k ) ) = { ( P ` k ) } ,
+                                        { ( P ` k ) , ( P ` ( k + 1 ) ) }
+                                        C_ ( I ` ( F ` k ) ) ) ) ) ) $=
+      ( vf vp wcel w3a cfv cc0 co wceq adantr cwlks wbr cop cdm cword chash cfz
+      cv wf caddc csn cpr wss wif cfzo wral copab df-br wksfval 3ad2ant1 eleq2d
+      c1 bitrid wb wa eleq1 simpr fveq2 oveq2d feq12d fveq1 adantl fveq2d sneqd
+      eqeq12d eqeqan12d preq12d sseq12d ifpbi123d raleqbidv opelopabga 3adant1
+      3anbi123d bitrd ) EHNZDBNZAINZOZDAEUAPZUBZDAUCZLUHZFUDUEZNZQWLUFPZUGRZGMU
+      HZUIZCUHZWQPZWSVBUJRZWQPZSZWSWLPZFPZWTUKZSZWTXBULZXEUMZUNZCQWOUORZUPZOZLM
+      UQZNZDWMNZQDUFPZUGRZGAUIZWSAPZXAAPZSZWSDPZFPZXTUKZSZXTYAULZYDUMZUNZCQXQUO
+      RZUPZOZWJWKWINWHXODAWIURWHWIXNWKWEWFWIXNSWGLCEFGHMJKUSUTVAVCWFWGXOYLVDWEX
+      MYLLMDABIWLDSZWQASZVEZWNXPWRXSXLYKYMWNXPVDYNWLDWMVFTYOWPXRGWQAYMYNVGYMWPX
+      RSYNYMWOXQQUGWLDUFVHZVITVJYOXJYICXKYJYMXKYJSYNYMWOXQQUOYPVITYOXCXGXIYBYFY
+      HYNXCYBVDYMYNWTXTXBYAWSWQAVKZXAWQAVKZVOVLYMYNXEYDXFYEYMXDYCFWSWLDVKVMZYNW
+      TXTYQVNVPYOXHYGXEYDYNXHYGSYMYNWTXTXBYAYQYRVQVLYMXEYDSYNYSTVRVSVTWCWAWBWD
+      $.
   $}
 
 
