@@ -8144,6 +8144,19 @@ $)
     ( wdc wn wo wif wb exmiddc ifptru ifpfal jaoi syl ) ACAADZEABBFBGZAHANMABBI
     ABBJKL $.
 
+  ${
+    ifpbi123d.1 $e |- ( ph -> ( ps <-> ta ) ) $.
+    ifpbi123d.2 $e |- ( ph -> ( ch <-> et ) ) $.
+    ifpbi123d.3 $e |- ( ph -> ( th <-> ze ) ) $.
+    $( Equivalence deduction for conditional operator for propositions.
+       (Contributed by AV, 30-Dec-2020.)  (Proof shortened by Wolf Lammen,
+       17-Apr-2024.) $)
+    ifpbi123d $p |- ( ph -> ( if- ( ps , ch , th )
+                              <-> if- ( ta , et , ze ) ) ) $=
+      ( wa wn wo wif anbi12d notbid orbi12d df-ifp 3bitr4g ) ABCKZBLZDKZMEFKZEL
+      ZGKZMBCDNEFGNATUCUBUEABECFHIOAUAUDDGABEHPJOQBCDREFGRS $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
