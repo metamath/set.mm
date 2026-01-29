@@ -197078,6 +197078,19 @@ $)
       URWLJKCAUSUTVBZVCVMVNVOWNVDVEVJVLVFVPVLWDAOBCDEFGOHIVGVHVI $.
   $}
 
+  ${
+    $d G f k p $.  $d W f $.
+    $( The classes involved in a walk are sets.  (Contributed by Alexander van
+       der Vekens, 31-Oct-2017.)  (Revised by AV, 3-Feb-2021.) $)
+    wlkvg $p |- ( ( G e. W /\ F ( Walks ` G ) P )
+        -> ( F e. _V /\ P e. _V ) ) $=
+      ( vf vp vk wcel cwlks cfv wbr cvv wa cv ciedg cdm cc0 co wceq eqid cfz wf
+      cword chash cvtx c1 caddc csn cpr wss wif cfzo wral w3a copab breqd brabv
+      wksfval biimtrdi imp ) CDHZBACIJZKZBLHALHMZVAVCBAENZCOJZPUCHQVEUDJZUARCUE
+      JZFNZUBGNZVIJZVJUFUGRVIJZSVJVEJVFJZVKUHSVKVLUIVMUJUKGQVGULRUMUNZEFUOZKVDV
+      AVBVOBAEGCVFVHDFVHTVFTURUPVNEFBAUQUSUT $.
+  $}
+
 
 $(
 ###############################################################################
