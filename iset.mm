@@ -197089,6 +197089,27 @@ $)
       wksfval biimtrdi imp ) CDHZBACIJZKZBLHALHMZVAVCBAENZCOJZPUCHQVEUDJZUARCUE
       JZFNZUBGNZVIJZVJUFUGRVIJZSVJVEJVFJZVKUHSVKVLUIVMUJUKGQVGULRUMUNZEFUOZKVDV
       AVBVOBAEGCVFVHDFVHTVFTURUPVNEFBAUQUSUT $.
+
+    $d F k $.  $d P k $.
+    iswlkg.v $e |- V = ( Vtx ` G ) $.
+    iswlkg.i $e |- I = ( iEdg ` G ) $.
+    $( Generalization of ~ iswlk :  Conditions for two classes to represent a
+       walk.  (Contributed by Alexander van der Vekens, 23-Jun-2018.)  (Revised
+       by AV, 1-Jan-2021.) $)
+    iswlkg $p |- ( G e. W -> ( F ( Walks ` G ) P
+                         <-> ( F e. Word dom I /\ P : ( 0 ... ( # ` F ) ) --> V
+                               /\ A. k e. ( 0 ..^ ( # ` F ) )
+                                  if- ( ( P ` k ) = ( P ` ( k + 1 ) ) ,
+                                        ( I ` ( F ` k ) ) = { ( P ` k ) } ,
+                                        { ( P ` k ) , ( P ` ( k + 1 ) ) }
+                                        C_ ( I ` ( F ` k ) ) ) ) ) ) $=
+      ( wcel cvv wa cwlks cfv cc0 co wceq ex ad2antrl cfn wbr cword chash wf cv
+      cdm cfz caddc csn cpr wss wif cfzo wral w3a wlkvg elex simprr lencl nn0zd
+      c1 0zd fzfigd fexd jca 3adantr3 wb iswlk 3expib pm5.21ndd ) DGJZCKJZAKJZL
+      ZCADMNUAZCEUFZUBZJZOCUCNZUGPZFAUDZBUEZANZWBVAUHPANZQWBCNENZWCUIQWCWDUJWEU
+      KULBOVSUMPUNZUOZVKVOVNACDGUPRVKWGVNVKVRWAVNWFVKVRWALLZVLVMVRVLVKWACVQUQSW
+      HVTFTAVKVRWAURVRVTTJVKWAVROVSVRVBVRVSVPCUSUTVCSVDVEVFRVKVLVMVOWGVGAKBCDEF
+      GKHIVHVIVJ $.
   $}
 
 
