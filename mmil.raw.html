@@ -1562,6 +1562,15 @@ then case elimination will work using theorems such as ~ exmiddc and ~ mpjaodan<
   close.</td>
 </tr>
 
+<tr>
+  <td>df-ifp , dfifp2 , dfifp3 , dfifp4 , dfifp5 , dfifp6 ,
+  dfifp7 , ifpdfbi , anifp , ifpor , ifpn , ifptru , ifpfal ,
+  ifpid , casesifp , ifpbi123d , ifpbi23d , ifpimpda , 1fpid3</td>
+  <td><i>none</i></td>
+  <td>should be possible although many theorems are likely to
+  need decidability conditions</td>
+</tr>
+
 <TR>
 <TD>3ianor</TD>
 <TD>~ 3ianorr </TD>
@@ -11179,10 +11188,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <TR>
   <TD>basprssdmsets</TD>
-  <TD><I>none</I></TD>
-  <TD>The set.mm proof relies on setsdm . Something of this sort
-  should be provable; we can change ` I e. _V ` to ` I e. NN `
-  (an easy condition to satisfy) if that helps.</TD>
+  <TD>~ bassetsnn</TD>
+  <TD>Adds condition ` I e. NN `</TD>
 </TR>
 
 <tr>
@@ -16385,12 +16392,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>setsvtx , setsiedg</td>
-  <td><i>none</i></td>
-  <td>presumably provable but the set.mm proof uses basprssdmsets</td>
-</tr>
-
-<tr>
   <td>snstrvtxval</td>
   <td><i>none</i></td>
   <td>presumably provable but unused in set.mm</td>
@@ -16823,11 +16824,64 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>usgrsizedg</td>
+  <td>~ usgrsizedgen</td>
+  <td>changes how we express that two sets are the same size</td>
+</tr>
+
+<tr>
+  <td>usgriedgleord</td>
+  <td>~ usgriedgdomord</td>
+  <td>changes how we express that a set is at least as large as
+  another</td>
+</tr>
+
+<tr>
+  <td>uspgredgleord</td>
+  <td>~ uspgredgdomord</td>
+  <td>changes how we express that a set is at least as large as
+  another</td>
+</tr>
+
+<tr>
+  <td>usgredgleord</td>
+  <td>~ usgredgdomord</td>
+  <td>changes how we express that a set is at least as large as
+  another</td>
+</tr>
+
+<tr>
+  <td>usgrstrrepe</td>
+  <td>~ usgrstrrepeen</td>
+  <td>changes how we express that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>df-wlks</td>
+  <td><i>none</i></td>
+  <td>the set.mm definition uses if- ( df-ifp ) and probably
+  the set of vertexes will need to have decidable equality for
+  the definition to behave well</td>
+</tr>
+
+<tr>
+  <td>df-trls</td>
+  <td><i>none</i></td>
+  <td>depends on Walks ( df-wlks )</td>
+</tr>
+
+<tr>
+  <td>df-eupth</td>
+  <td><i>none</i></td>
+  <td>depends on Trails ( df-trls )</td>
+</tr>
+
+<tr>
   <td>konigsberg</td>
   <td><i>none</i></td>
   <td>we don't have a complete list of what this proof depends on,
   but here's a partial list of (direct or indirect) dependencies of the
-  set.mm proof: df-s7 , EulerPaths , and ccatalpha</td>
+  set.mm proof: EulerPaths ( df-eupth ), and ccatalpha</td>
 </tr>
 
 <tr>
