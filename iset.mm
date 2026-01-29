@@ -197060,6 +197060,22 @@ $)
       HYNXCYBVDYMYNWTXTXBYAWSWQAVKZXAWQAVKZVOVLYMYNXEYDXFYEYMXDYCFWSWLDVKVMZYNW
       TXTYQVNVPYOXHYGXEYDYNXHYGSYMYNWTXTXBYAYQYRVQVLYMXEYDSYNYSTVRVSVTWCWAWBWD
       $.
+
+    $( Properties of a walk.  (Contributed by AV, 5-Nov-2021.) $)
+    wlkpropg $p |- ( ( G e. W /\ F ( Walks ` G ) P )
+                    -> ( F e. Word dom I /\ P : ( 0 ... ( # ` F ) ) --> V
+                               /\ A. k e. ( 0 ..^ ( # ` F ) )
+                                  if- ( ( P ` k ) = ( P ` ( k + 1 ) ) ,
+                                        ( I ` ( F ` k ) ) = { ( P ` k ) } ,
+                                        { ( P ` k ) , ( P ` ( k + 1 ) ) }
+                                        C_ ( I ` ( F ` k ) ) ) ) ) $=
+      ( vf vp wcel cfv wbr cvv w3a cc0 co cv wceq cwlks wa cword chash wf caddc
+      cdm cfz c1 csn cpr wss cfzo wral simpl copab wksfval breqd brabv biimtrdi
+      wif imp simpld simprd 3jca simpr iswlk biimpd sylc ) DGLZCADUAMZNZUBZVJCO
+      LZAOLZPZVLCEUGUCZLQCUDMZUHRFAUEBSZAMZVSUIUFRZAMZTVSCMEMZVTUJTVTWBUKWCULVA
+      BQVRUMRUNPZVMVJVNVOVJVLUOVMVNVOVJVLVNVOUBZVJVLCAJSZVQLQWFUDMZUHRFKSZUEVSW
+      HMZWAWHMZTVSWFMEMZWIUJTWIWJUKWKULVABQWGUMRUNPZJKUPZNWEVJVKWMCAJBDEFGKHIUQ
+      URWLJKCAUSUTVBZVCVMVNVOWNVDVEVJVLVFVPVLWDAOBCDEFGOHIVGVHVI $.
   $}
 
 
