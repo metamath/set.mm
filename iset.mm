@@ -197184,6 +197184,19 @@ $)
     eqid wlkpg ffz0hash syl2anc ) CDEBACFGHIBJGZKELUEMNCOGZAPAJGUEQRNSABCDTABCU
     FDUFUAUBUFAUEUCUD $.
 
+  ${
+    $d F y $.  $d G y $.  $d P x y $.
+    $( The sequence of vertices of a walk cannot be empty, i.e. a walk always
+       consists of at least one vertex.  (Contributed by Alexander van der
+       Vekens, 19-Jul-2018.)  (Revised by AV, 2-Jan-2021.) $)
+    wlkm $p |- ( ( G e. W /\ F ( Walks ` G ) P ) -> E. x x e. P ) $=
+      ( vy wcel cwlks cfv wbr wa cv wex cdm cc0 chash cfz syl wb mpbird cn0 cuz
+      co wlkclg elnn0uz fzm sylbb2 cvtx wf eqid wlkpg eleq2d exbidv wrel reldmm
+      fdm frel 3syl ) DEGCBDHIJKZALBGAMZFLZBNZGZFMZUSVDVAOCPIZQUCZGZFMZUSVEUAGZ
+      VHBCDEUDVIVEOUBIGVHVEUEFOVEUFUGRUSVFDUHIZBUIZVDVHSBCDVJEVJUJUKZVKVCVGFVKV
+      BVFVAVFVJBUPULUMRTUSVKBUNUTVDSVLVFVJBUQAFBUOURT $.
+  $}
+
 
 $(
 ###############################################################################
