@@ -197125,6 +197125,12 @@ $)
       FULUM $.
   $}
 
+  $( A walk has length ` # ( F ) ` , which is an integer.  (Contributed by
+     Mario Carneiro, 12-Mar-2015.)  (Revised by AV, 18-Feb-2021.) $)
+  wlkclg $p |- ( ( G e. W /\ F ( Walks ` G ) P ) -> ( # ` F ) e. NN0 ) $=
+    ( wcel cwlks cfv wbr wa ciedg cdm cword chash cn0 eqid wlkfg lencl syl ) CD
+    EBACFGHIBCJGZKZLEBMGNEABCSDSOPTBQR $.
+
 
 $(
 ###############################################################################
