@@ -197207,13 +197207,30 @@ $)
     KOMZNABCDPUFUJIUKUHUJUFUKUIKOMZUHUGUIKOQUFUHSEULUHNUFUHABCDRTUHUAUBUCUDUE
     $.
 
-  $( Lemma for ~ wlkvtxeledg :  Two adjacent (not necessarily different)
+  $( Lemma for ~ wlkvtxeledgg :  Two adjacent (not necessarily different)
      vertices ` A ` and ` B ` in a walk are incident with an edge ` E ` .
      (Contributed by AV, 4-Apr-2021.)  (Revised by AV, 5-Nov-2021.) $)
   ifpsnprss $p |- ( if- ( A = B , E = { A } , { A , B } C_ E )
                     -> { A , B } C_ E ) $=
     ( wceq csn cpr wss wa ssidd preq2 dfsn2 eqtr4di eqcoms adantr simpr 3sstr4d
     1fpid3 ) ABDZCAEZDZABFZCGRTHZSSUACUBSIRUASDZTUCBABADUAAAFSBAAJAKLMNRTOPQ $.
+
+  ${
+    $d G k $.  $d F k $.  $d P k $.
+    wlkvtxeledg.i $e |- I = ( iEdg ` G ) $.
+    $( Each pair of adjacent vertices in a walk is a subset of an edge.
+       (Contributed by AV, 28-Jan-2021.)  (Proof shortened by AV,
+       4-Apr-2021.) $)
+    wlkvtxeledgg $p |- ( ( G e. W /\ F ( Walks ` G ) P )
+        -> A. k e. ( 0 ..^ ( # ` F ) )
+          { ( P ` k ) , ( P ` ( k + 1 ) ) } C_ ( I ` ( F ` k ) ) ) $=
+      ( wcel cwlks cfv wbr wa cvv w3a cv c1 co cc0 wral wceq caddc cpr wss cfzo
+      chash elex adantr wlkvg simpld simprd 3jca simpr cdm cword cfz wf csn wif
+      cvtx eqid iswlk ifpsnprss ralimi 3ad2ant3 biimtrdi sylc ) DFHZCADIJKZLZDM
+      HZCMHZAMHZNZVHBOZAJZVNPUAQAJZUBVNCJEJZUCZBRCUEJZUDQZSZVIVJVKVLVGVJVHDFUFU
+      GVIVKVLACDFUHZUIVIVKVLWBUJUKVGVHULVMVHCEUMUNHZRVSUOQDUSJZAUPZVOVPTVQVOUQT
+      VRURZBVTSZNWAAMBCDEWDMMWDUTGVAWGWCWAWEWFVRBVTVOVPVQVBVCVDVEVF $.
+  $}
 
 
 $(
