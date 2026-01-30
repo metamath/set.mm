@@ -197131,6 +197131,19 @@ $)
     ( wcel cwlks cfv wbr wa ciedg cdm cword chash cn0 eqid wlkfg lencl syl ) CD
     EBACFGHIBCJGZKZLEBMGNEABCSDSOPTBQR $.
 
+  ${
+    $d F k $.  $d G k $.  $d P k $.
+    wlkp.v $e |- V = ( Vtx ` G ) $.
+    $( The mapping enumerating the vertices of a walk is a function.
+       (Contributed by AV, 5-Apr-2021.) $)
+    wlkpg $p |- ( ( G e. W /\ F ( Walks ` G ) P )
+        -> P : ( 0 ... ( # ` F ) ) --> V ) $=
+      ( vk wcel cwlks cfv wbr wa ciedg cdm cword cc0 chash cfz co wceq wf cv c1
+      caddc csn cpr wss wif cfzo wral eqid wlkpropg simp2d ) CEHBACIJKLBCMJZNOH
+      PBQJZRSDAUAGUBZAJZUPUCUDSAJZTUPBJUNJZUQUETUQURUFUSUGUHGPUOUISUJAGBCUNDEFU
+      NUKULUM $.
+  $}
+
 
 $(
 ###############################################################################
