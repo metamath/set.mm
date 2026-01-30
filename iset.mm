@@ -44744,13 +44744,27 @@ $)
       LZVBVEVGUOCFZRVIVGULBFVJULBMUKBCUCUDUOCMUEVFVABUTULUINSOVHVDCVCUOUJNSOUFU
       LBHPUOCHPQURUMHBCAUGTUSUPHBCAUHTQ $.
 
-    $( A relation is empty iff its domain is empty.  (Contributed by NM,
-       15-Sep-2004.) $)
+    $( A relation is empty iff its domain is empty.  For a similar theorem for
+       whether the relation and domain are inhabited, see ~ reldmm .
+       (Contributed by NM, 15-Sep-2004.) $)
     reldm0 $p |- ( Rel A -> ( A = (/) <-> dom A = (/) ) ) $=
       ( vx vy wrel c0 wceq cv cop wcel wb wal cdm rel0 eqrel mpan2 wn eq0 alnex
       wex albii vex eldm2 xchbinxr noel nbn bitr3i bitr2i bitrdi ) ADZAEFZBGZCG
       HZAIZULEIZJZCKZBKZALZEFZUIEDUJUQJMBCAENOUSUKURIZPZBKUQBURQVAUPBVAUMPZCKZU
       PVCUMCSUTUMCRCUKABUAUBUCVBUOCUNUMULUDUETUFTUGUH $.
+  $}
+
+  ${
+    $d A x z w $.  $d A y z w $.
+    $( A relation is inhabited iff its domain is inhabited.  (Contributed by
+       Jim Kingdon, 30-Jan-2026.) $)
+    reldmm $p |- ( Rel A -> ( E. x x e. A <-> E. y y e. dom A ) ) $=
+      ( vw vz cv wcel wex wrel cdm eleq1w cbvexv wa cop wceq wi elrel eximi nfv
+      19.37-1 eleq1 biimpd syl 3syl syldbl2 eldm2 exbii sylibr ex exlimdv elex2
+      vex exlimivv sylbi impbid1 bitr3id ) AFCGZAHDFZCGZDHZCIZBFZCJGZBHZUSUQDAD
+      ACKLVAUTVDVAUSVDDVAUSVDVAUSMZVBEFNZCGZEHZBHZVDVAUSVIVEURVFOZEHZBHUSVHPZBH
+      USVIPBEURCQVKVLBVKUSVGPZEHVLVJVMEVJUSVGURVFCUAUBRUSVGEUSESTUCRUSVHBUSBSTU
+      DUEVCVHBEVBCBULUFUGZUHUIUJVDVIUTVNVGUTBEDVFCUKUMUNUOUP $.
   $}
 
   ${
