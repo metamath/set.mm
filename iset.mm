@@ -197207,6 +197207,14 @@ $)
     KOMZNABCDPUFUJIUKUHUJUFUKUIKOMZUHUGUIKOQUFUHSEULUHNUFUHABCDRTUHUAUBUCUDUE
     $.
 
+  $( Lemma for ~ wlkvtxeledg :  Two adjacent (not necessarily different)
+     vertices ` A ` and ` B ` in a walk are incident with an edge ` E ` .
+     (Contributed by AV, 4-Apr-2021.)  (Revised by AV, 5-Nov-2021.) $)
+  ifpsnprss $p |- ( if- ( A = B , E = { A } , { A , B } C_ E )
+                    -> { A , B } C_ E ) $=
+    ( wceq csn cpr wss wa ssidd preq2 dfsn2 eqtr4di eqcoms adantr simpr 3sstr4d
+    1fpid3 ) ABDZCAEZDZABFZCGRTHZSSUACUBSIRUASDZTUCBABADUAAAFSBAAJAKLMNRTOPQ $.
+
 
 $(
 ###############################################################################
