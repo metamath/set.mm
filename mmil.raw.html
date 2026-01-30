@@ -1330,8 +1330,8 @@ with the closest replacements.</P>
 </TR>
 
 <TR>
-<TD>ax-3 , con4d , con34b , necon4d</TD>
-<TD>~ con3 </TD>
+<TD>ax-3 , con4d , necon4d</TD>
+<TD>~ con3 , ~ condc</TD>
 <TD>The form of contraposition which removes negation does not hold
 in intuitionistic logic.</TD>
 </TR>
@@ -1339,14 +1339,14 @@ in intuitionistic logic.</TD>
 <TR>
 <TD>pm2.18</TD>
 <TD>~ pm2.01 </TD>
-<TD>See for example [Bauer] who uses the terminology "proof of negation"
+<TD>See for example [Bauer] which uses the terminology "proof of negation"
 versus "proof by contradiction" to distinguish these.</TD>
 </TR>
 
 <TR>
 <TD>pm2.18d , pm2.18i</TD>
 <TD>~ pm2.01d</TD>
-<TD>See for example [Bauer] who uses the terminology "proof of negation"
+<TD>See for example [Bauer] which uses the terminology "proof of negation"
 versus "proof by contradiction" to distinguish these.</TD>
 </TR>
 
@@ -1414,6 +1414,11 @@ then case elimination will work using theorems such as ~ exmiddc and ~ mpjaodan<
 </TR>
 
 <tr>
+  <td>con34b</td>
+  <td>~ con3 , ~ con34bdc</td>
+</tr>
+
+<tr>
   <td>bija</td>
   <td>~ bijadc</td>
 </tr>
@@ -1450,7 +1455,7 @@ then case elimination will work using theorems such as ~ exmiddc and ~ mpjaodan<
 
 <TR>
 <TD>annim</TD>
-<TD>~ annimim </TD>
+<TD>~ annimim , ~ annimdc</TD>
 </TR>
 
 <TR>
@@ -1480,7 +1485,7 @@ then case elimination will work using theorems such as ~ exmiddc and ~ mpjaodan<
 
 <TR>
   <TD>pm5.17</TD>
-  <TD>~ xorbin</TD>
+  <TD>~ xorbin , ~ pm5.17dc</TD>
   <TD>The combination of ~ df-xor and ~ xorbin is the forward direction
   of pm5.17</TD>
 </TR>
@@ -1502,13 +1507,48 @@ then case elimination will work using theorems such as ~ exmiddc and ~ mpjaodan<
 </TR>
 
 <tr>
+  <td>pm4.62</td>
+  <td>~ pm4.62dc</td>
+</tr>
+
+<tr>
   <td>exmid</td>
   <td>~ exmiddc</td>
 </tr>
 
 <tr>
   <td>pm2.13</td>
-  <td>pm2.13dc</td>
+  <td>~ pm2.13dc</td>
+</tr>
+
+<tr>
+  <td>pm2.26</td>
+  <td>~ pm2.26dc</td>
+</tr>
+
+<tr>
+  <td>anor</td>
+  <td>~ anordc</td>
+</tr>
+
+<tr>
+  <td>pm3.11</td>
+  <td>~ pm3.11dc</td>
+</tr>
+
+<tr>
+  <td>pm3.12</td>
+  <td>~ pm3.12dc</td>
+</tr>
+
+<tr>
+  <td>pm3.13</td>
+  <td>~ pm3.13dc</td>
+</tr>
+
+<tr>
+  <td>pm4.79</td>
+  <td>~ pm4.79dc</td>
 </tr>
 
 <tr>
@@ -1524,6 +1564,18 @@ then case elimination will work using theorems such as ~ exmiddc and ~ mpjaodan<
 <tr>
   <td>pm4.83</td>
   <td>~ pm4.83dc</td>
+</tr>
+
+<tr>
+  <td>pm5.71</td>
+  <td>~ pm5.71dc</td>
+</tr>
+
+<tr>
+  <td>ecase3</td>
+  <td><i>none</i></td>
+  <td>it would appear that both ` ph ` and ` ps ` would need to be
+  decidable</td>
 </tr>
 
 <TR>
@@ -1545,15 +1597,36 @@ then case elimination will work using theorems such as ~ exmiddc and ~ mpjaodan<
   as ~ jaoi , ~ mpjaodan and ~ exmiddc </td>
 </tr>
 
+<tr>
+  <td>cases</td>
+  <td><i>none</i></td>
+  <td>it would appear to be necessary that ` ph ` is
+  decidable to prove the forward direction of the
+  biconditional</td>
+</tr>
+
 <TR>
 <TD>dedlem0b</TD>
 <TD>~ dedlemb </TD>
 </TR>
 
+<tr>
+  <td>cases2</td>
+  <td><i>none</i></td>
+  <td>would seem to need decidability of ` ph ` in order
+  to prove the reverse direction of the biconditional (see
+  ~ dfifp2dc )</td>
+</tr>
+
 <TR>
   <TD>pm4.42</TD>
   <TD>~ pm4.42r</TD>
 </TR>
+
+<tr>
+  <td>dn1</td>
+  <td>~ dn1dc</td>
+</tr>
 
 <tr>
   <td>jaoi2 , jaoi3</td>
@@ -1563,12 +1636,70 @@ then case elimination will work using theorems such as ~ exmiddc and ~ mpjaodan<
 </tr>
 
 <tr>
-  <td>df-ifp , dfifp2 , dfifp3 , dfifp4 , dfifp5 , dfifp6 ,
-  dfifp7 , ifpdfbi , anifp , ifpor , ifpn , ifptru , ifpfal ,
-  ifpid , casesifp , ifpbi123d , ifpbi23d , ifpimpda , 1fpid3</td>
+  <td>dfifp2</td>
+  <td>~ dfifp2dc</td>
+</tr>
+
+<tr>
+  <td>dfifp3</td>
+  <td>~ dfifp3dc</td>
+</tr>
+
+<tr>
+  <td>dfifp4</td>
+  <td>~ dfifp4dc</td>
+</tr>
+
+<tr>
+  <td>dfifp5</td>
+  <td>~ dfifp5dc</td>
+</tr>
+
+<tr>
+  <td>dfifp6</td>
   <td><i>none</i></td>
-  <td>should be possible although many theorems are likely to
-  need decidability conditions</td>
+  <td>would apparently require decidability of both ` ph `
+  and ` ch `</td>
+</tr>
+
+<tr>
+  <td>dfifp7</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses dfifp6 and like dfifp6 the
+  proof would seem to require decidability of both ` ph `
+  and ` ch `</td>
+</tr>
+
+<tr>
+  <td>ifpdfbi</td>
+  <td>~ ifpdfbidc</td>
+</tr>
+
+<tr>
+  <td>anifp</td>
+  <td>~ anifpdc</td>
+</tr>
+
+<tr>
+  <td>ifpn</td>
+  <td>~ ifpnst</td>
+  <td>adds condition that ` ph ` is a stable proposition</td>
+</tr>
+
+<tr>
+  <td>ifpid</td>
+  <td>~ ifpiddc</td>
+</tr>
+
+<tr>
+  <td>casesifp</td>
+  <td><i>none</i></td>
+  <td>would be possible with a decidability condition</td>
+</tr>
+
+<tr>
+  <td>ifpimpda</td>
+  <td>~ dfifp2dc</td>
 </tr>
 
 <TR>
@@ -17387,6 +17518,11 @@ systems</I>, 3rd ed., Springer-Verlag Berlin Heidelberg New York (1971)
 DeWitt-Morette, with Margaret Dillard-Bleick, <I>Analysis, Manifolds and
 Physics,</I> Elsevier Science B.V., Amsterdam (1982) [QC20.7.A5C48
 1981].</LI>
+
+<LI>
+<A NAME="Church"></A> [Church] Church, Alonzo, <I>Introduction to
+Mathematical Logic,</I> Princeton University Press, 1956.
+</LI>
 
 <LI>
 <A NAME="Cohen"></A> [Cohen] Cohen, David, <I>Precalculus With Unit-Circle

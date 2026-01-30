@@ -5878,6 +5878,15 @@ $)
   nan $p |- ( ( ph -> -. ( ps /\ ch ) ) <-> ( ( ph /\ ps ) -> -. ch ) ) $=
     ( wa wn wi impexp imnan imbi2i bitr2i ) ABDCEZFABKFZFABCDEZFABKGLMABCHIJ $.
 
+  ${
+    mpnanrd.1 $e |- ( ph -> ps ) $.
+    mpnanrd.2 $e |- ( ph -> -. ( ps /\ ch ) ) $.
+    $( Eliminate the right side of a negated conjunction in an implication.
+       (Contributed by ML, 17-Oct-2020.) $)
+    mpnanrd $p |- ( ph -> -. ch ) $=
+      ( wn wa wi imnan sylibr mpd ) ABCFZDABCGFBLHEBCIJK $.
+  $}
+
   $( Law of noncontradiction.  Theorem *3.24 of [WhiteheadRussell] p. 111 (who
      call it the "law of contradiction").  (Contributed by NM, 16-Sep-1993.)
      (Revised by Mario Carneiro, 2-Feb-2015.) $)
@@ -7982,6 +7991,191 @@ $)
   ( ( ( ph /\ ch ) /\ ( ps /\ th ) ) /\ ( ( ph /\ th ) /\ ( ps /\ ch ) ) ) ) $=
     ( wa an4 biimpi an42 biimpri jca adantl impbii ) ABECDEEZACEBDEEZADEBCEEZEM
     NOMNABCDFGOMADBCHZIJOMNOMPGKL $.
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  The conditional operator for propositions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  This subsection introduces the conditional operator for propositions, denoted
+  by ` if- ( ph , ps , ch ) ` (see ~ df-ifp ).  It is the analogue for
+  propositions of the conditional operator for classes, denoted by
+  ` if ( ph , A , B ) ` (see ~ df-if ).
+
+$)
+
+  $( Comma.  Also used later for adders, pairs, tuples, etc. $)
+  $c , $.
+
+  $( Symbol for the conditional operator for propositions. $)
+  $c if- $.
+
+  $( Extend wff notation to include the conditional operator for
+     propositions. $)
+  wif $a wff if- ( ph , ps , ch ) $.
+
+  $( Definition of the conditional operator for propositions.  The expression
+     ` if- ( ph , ps , ch ) ` is read "if ` ph ` then ` ps ` else ` ch ` ".
+     See ~ dfifp2dc , ~ dfifp3dc , ~ dfifp4dc and ~ dfifp5dc for alternate
+     definitions.
+
+     This definition (in the form of ~ dfifp2dc ) appears in Section II.24 of
+     [Church] p. 129 (Definition D12 page 132), where it is called "conditioned
+     disjunction".  Church's ` [ ps , ph , ch ] ` corresponds to our
+     ` if- ( ph , ps , ch ) ` (note the permutation of the first two
+     variables).
+
+     This form was chosen as the definition rather than ~ dfifp2dc for
+     compatibility with intuitionistic logic development: with this form, it is
+     clear that ` if- ( ph , ps , ch ) ` implies decidability of ` ph `
+     ( ~ ifpdc ), which is most often what is wanted.
+
+     Church uses the conditional operator as an intermediate step to prove
+     completeness of some systems of connectives.  The first result is that the
+     system ` { if- , T. , F. } ` is complete: for the induction step, consider
+     a formula of n+1 variables; single out one variable, say ` ph ` ; when one
+     sets ` ph ` to True (resp.  False), then what remains is a formula of n
+     variables, so by the induction hypothesis it is equivalent to a formula
+     using only the connectives ` if- , T. , F. ` , say ` ps ` (resp. ` ch ` );
+     therefore, the formula ` if- ( ph , ps , ch ) ` is equivalent to the
+     initial formula of n+1 variables.  Now, since ` { -> , -. } ` and similar
+     systems suffice to express the connectives ` if- , T. , F. ` , they are
+     also complete.
+
+     (Contributed by BJ, 22-Jun-2019.) $)
+  df-ifp $a |-
+            ( if- ( ph , ps , ch ) <-> ( ( ph /\ ps ) \/ ( -. ph /\ ch ) ) ) $.
+
+  $( The conditional operator for propositions implies decidability.
+     (Contributed by Jim Kingdon, 25-Jan-2026.) $)
+  ifpdc $p |- ( if- ( ph , ps , ch ) -> DECID ph ) $=
+    ( wa wn wo wif wdc simpl orim12i df-ifp df-dc 3imtr4i ) ABDZAEZCDZFAOFABCGA
+    HNAPOABIOCIJABCKALM $.
+
+  $( Forward direction of ~ dfifp2dc .  This direction does not require
+     decidability.  (Contributed by Jim Kingdon, 25-Jan-2026.) $)
+  ifp2 $p |- ( if- ( ph , ps , ch ) -> ( ( ph -> ps ) /\ ( -. ph -> ch ) ) ) $=
+    ( wif wa wn wo wi df-ifp pm3.4 pm2.24 adantr jca ax-in2 jaoi sylbi ) ABCDAB
+    EZAFZCEZGABHZRCHZEZABCIQUBSQTUAABJAUABACKLMSTUARTCABNLRCJMOP $.
+
+  $( Alternate definition of the conditional operator for decidable
+     propositions.  The value of ` if- ( ph , ps , ch ) ` is "if ` ph ` then
+     ` ps ` , and if not ` ph ` then ` ch ` ".  This is the definition used in
+     Section II.24 of [Church] p. 129 (Definition D12 page 132) (see comment of
+     ~ df-ifp ).  (Contributed by BJ, 22-Jun-2019.) $)
+  dfifp2dc $p |- ( DECID ph ->
+      ( if- ( ph , ps , ch ) <-> ( ( ph -> ps ) /\ ( -. ph -> ch ) ) ) ) $=
+    ( wdc wif wi wn wa ifp2 wo exmiddc simpl simprl jcai orcd simprr olcd sylan
+    jaoian df-ifp sylibr ex impbid2 ) ADZABCEZABFZAGZCFZHZABCIUDUIUEUDUIHABHZUG
+    CHZJZUEUDAUGJUIULAKAUIULUGAUIHZUJUKUMABAUILAUFUHMNOUGUIHZUKUJUNUGCUGUILUGUF
+    UHPNQSRABCTUAUBUC $.
+
+  $( Alternate definition of the conditional operator for propositions.
+     (Contributed by BJ, 30-Sep-2019.) $)
+  dfifp3dc $p |- ( DECID ph ->
+      ( if- ( ph , ps , ch ) <-> ( ( ph -> ps ) /\ ( ph \/ ch ) ) ) ) $=
+    ( wdc wif wi wn wa wo dfifp2dc pm4.64dc anbi2d bitrd ) ADZABCEABFZAGCFZHOAC
+    IZHABCJNPQOACKLM $.
+
+  $( Alternate definition of the conditional operator for propositions.
+     (Contributed by BJ, 30-Sep-2019.) $)
+  dfifp4dc $p |- ( DECID ph ->
+      ( if- ( ph , ps , ch ) <-> ( ( -. ph \/ ps ) /\ ( ph \/ ch ) ) ) ) $=
+    ( wdc wif wi wo wa wn dfifp3dc imordc anbi1d bitrd ) ADZABCEABFZACGZHAIBGZP
+    HABCJNOQPABKLM $.
+
+  $( Alternate definition of the conditional operator for propositions.
+     (Contributed by BJ, 2-Oct-2019.) $)
+  dfifp5dc $p |- ( DECID ph ->
+      ( if- ( ph , ps , ch ) <-> ( ( -. ph \/ ps ) /\ ( -. ph -> ch ) ) ) ) $=
+    ( wdc wif wi wn wa wo dfifp2dc imordc anbi1d bitrd ) ADZABCEABFZAGZCFZHPBIZ
+    QHABCJNORQABKLM $.
+
+  $( Define the biconditional as conditional logic operator.  (Contributed by
+     RP, 20-Apr-2020.)  (Proof shortened by Wolf Lammen, 30-Apr-2024.) $)
+  ifpdfbidc $p |- ( DECID ph ->
+      ( ( ph <-> ps ) <-> if- ( ph , ps , -. ps ) ) ) $=
+    ( wdc wi wa wn wb wif con34bdc anbi2d dfbi2 a1i dfifp2dc 3bitr4d ) ACZABDZB
+    ADZEZPAFBFZDZEABGZABSHOQTPBAIJUARGOABKLABSMN $.
+
+  $( The conditional operator is implied by the conjunction of its possible
+     outputs.  Dual statement of ~ ifpor .  (Contributed by BJ,
+     30-Sep-2019.) $)
+  anifpdc $p |- ( DECID ph -> ( ( ps /\ ch ) -> if- ( ph , ps , ch ) ) ) $=
+    ( wa wif wdc wn wo olc anim12i dfifp4dc imbitrrid ) BCDABCEAFAGZBHZACHZDBNC
+    OBMICAIJABCKL $.
+
+  $( The conditional operator implies the disjunction of its possible outputs.
+     Dual statement of ~ anifpdc .  (Contributed by BJ, 1-Oct-2019.) $)
+  ifpor $p |- ( if- ( ph , ps , ch ) -> ( ps \/ ch ) ) $=
+    ( wif wa wn wo df-ifp simpr orim12i sylbi ) ABCDABEZAFZCEZGBCGABCHLBNCABIMC
+    IJK $.
+
+  $( Conditional operator for the negation of a proposition.  (Contributed by
+     BJ, 30-Sep-2019.)  (Proof shortened by Wolf Lammen, 5-May-2024.) $)
+  ifpnst $p |- ( STAB ph ->
+      ( if- ( ph , ps , ch ) <-> if- ( -. ph , ch , ps ) ) ) $=
+    ( wstab wif wn wdc ifpdc adantl wa biimpi sylan2 wi wo dfifp5dc biancomd wb
+    stdcndc dcn dfifp3dc syl bitr4d pm5.21nd ) ADZABCEZAFZCBEZAGZUEUHUDABCHIUGU
+    DUFGZUHUFCBHUDUIJUHARKLUHUEUFCMZUFBNZJZUGUHUEUJUKABCOPUHUIUGULQASUFCBTUAUBU
+    C $.
+
+  $( Value of the conditional operator for propositions when its first argument
+     is true.  Analogue for propositions of ~ iftrue .  This is essentially
+     ~ dedlema .  (Contributed by BJ, 20-Sep-2019.)  (Proof shortened by Wolf
+     Lammen, 10-Jul-2020.) $)
+  ifptru $p |- ( ph -> ( if- ( ph , ps , ch ) <-> ps ) ) $=
+    ( wif wa wn wo df-ifp ancom orbi12i bitri dedlema bitr4id ) AABCDZBAEZCAFZE
+    ZGZBNABEZPCEZGRABCHSOTQABIPCIJKABCLM $.
+
+  $( Value of the conditional operator for propositions when its first argument
+     is false.  Analogue for propositions of ~ iffalse .  This is essentially
+     ~ dedlemb .  (Contributed by BJ, 20-Sep-2019.)  (Proof shortened by Wolf
+     Lammen, 25-Jun-2020.) $)
+  ifpfal $p |- ( -. ph -> ( if- ( ph , ps , ch ) <-> ch ) ) $=
+    ( wn wif wa wo df-ifp ancom orbi12i bitri dedlemb bitr4id ) ADZABCEZBAFZCNF
+    ZGZCOABFZNCFZGRABCHSPTQABINCIJKABCLM $.
+
+  $( Value of the conditional operator for propositions when the same
+     proposition is returned in either case.  Analogue for propositions of
+     ~ ifiddc .  (Contributed by BJ, 20-Sep-2019.) $)
+  ifpiddc $p |- ( DECID ph -> ( if- ( ph , ps , ps ) <-> ps ) ) $=
+    ( wdc wn wo wif wb exmiddc ifptru ifpfal jaoi syl ) ACAADZEABBFBGZAHANMABBI
+    ABBJKL $.
+
+  ${
+    ifpbi123d.1 $e |- ( ph -> ( ps <-> ta ) ) $.
+    ifpbi123d.2 $e |- ( ph -> ( ch <-> et ) ) $.
+    ifpbi123d.3 $e |- ( ph -> ( th <-> ze ) ) $.
+    $( Equivalence deduction for conditional operator for propositions.
+       (Contributed by AV, 30-Dec-2020.)  (Proof shortened by Wolf Lammen,
+       17-Apr-2024.) $)
+    ifpbi123d $p |- ( ph -> ( if- ( ps , ch , th )
+                              <-> if- ( ta , et , ze ) ) ) $=
+      ( wa wn wo wif anbi12d notbid orbi12d df-ifp 3bitr4g ) ABCKZBLZDKZMEFKZEL
+      ZGKZMBCDNEFGNATUCUBUEABECFHIOAUAUDDGABEHPJOQBCDREFGRS $.
+  $}
+
+  ${
+    ifpbi23d.1 $e |- ( ph -> ( ch <-> et ) ) $.
+    ifpbi23d.2 $e |- ( ph -> ( th <-> ze ) ) $.
+    $( Equivalence deduction for conditional operator for propositions.
+       Convenience theorem for a frequent case.  (Contributed by Wolf Lammen,
+       28-Apr-2024.) $)
+    ifpbi23d $p |- ( ph -> ( if- ( ps , ch , th )
+                              <-> if- ( ps , et , ze ) ) ) $=
+      ( biidd ifpbi123d ) ABCDBEFABIGHJ $.
+  $}
+
+  ${
+    1fpid3.1 $e |- ( ( ph /\ ps ) -> ch ) $.
+    $( The value of the conditional operator for propositions is its third
+       argument if the first and second argument imply the third argument.
+       (Contributed by AV, 4-Apr-2021.) $)
+    1fpid3 $p |- ( if- ( ph , ps , ch ) -> ch ) $=
+      ( wif wa wn wo df-ifp simpr jaoi sylbi ) ABCEABFZAGZCFZHCABCIMCODNCJKL $.
+  $}
 
 
 $(
@@ -10360,6 +10554,18 @@ $)
        by NM, 22-Apr-1994.)  (Revised by Jim Kingdon, 9-Dec-2017.) $)
     ecase23d $p |- ( ph -> ps ) $=
       ( wo w3o df-3or sylib ecased ) ABCEABCHZDFABCDIMDHGBCDJKLL $.
+  $}
+
+  ${
+    ecase2d.1 $e |- ( ph -> ps ) $.
+    ecase2d.2 $e |- ( ph -> -. ( ps /\ ch ) ) $.
+    ecase2d.3 $e |- ( ph -> -. ( ps /\ th ) ) $.
+    ecase2d.4 $e |- ( ph -> ( ta \/ ( ch \/ th ) ) ) $.
+    $( Deduction for elimination by cases.  (Contributed by NM, 21-Apr-1994.)
+       (Proof shortened by Wolf Lammen, 19-Sep-2024.) $)
+    ecase2d $p |- ( ph -> ta ) $=
+      ( wo wn mpnanrd ioran sylanbrc ecased ) AECDJZACKDKPKABCFGLABDFHLCDMNIO
+      $.
   $}
 
   ${
@@ -31563,7 +31769,6 @@ $(
 $)
 
   $( Declare new constant symbols. $)
-  $c , $.  $( Comma (also used for unordered pair notation later) $)
   $c if $.  $( Conditional operator (was "ded" for "deduction class"). $)
 
   $( Extend class notation to include the conditional operator.  See ~ df-if
@@ -197203,6 +197408,9 @@ htmldef "F." as
     " <IMG SRC='perp.gif' WIDTH=11 HEIGHT=19 ALT='F.' TITLE='F.'> ";
   althtmldef "F." as '&perp;';
   latexdef "F." as "\bot";
+htmldef "if-" as "if-";
+  althtmldef "if-" as "if-";
+  latexdef "if-" as "\operatorname{if}";
 htmldef "A." as
     "<IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 ALT=' A.' TITLE='A.'>";
   althtmldef "A." as '&forall;'; /* &#8704; */
