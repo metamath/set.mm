@@ -197152,6 +197152,13 @@ $)
       caddc csn cpr wss wif cfzo wral eqid wlkpropg simp2d ) CEHBACIJKLBCMJZNOH
       PBQJZRSDAUAGUBZAJZUPUCUDSAJZTUPBJUNJZUQUETUQURUFUSUGUHGPUOUISUJAGBCUNDEFU
       NUKULUM $.
+
+    $( The sequence of vertices of a walk is a word over the set of vertices.
+       (Contributed by AV, 27-Jan-2021.) $)
+    wlkpwrdg $p |- ( ( G e. W /\ F ( Walks ` G ) P ) -> P e. Word V ) $=
+      ( wcel cwlks cfv wbr wa cc0 chash cfz co wf cn0 cword wlkpg wlkclg
+      ffz0iswrdnn0 syl2anc ) CEGBACHIJKLBMIZNODAPUCQGADRGABCDEFSABCETDUCAUAUB
+      $.
   $}
 
 
