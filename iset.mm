@@ -117412,6 +117412,16 @@ $)
     wf eleq1 impbii ) ABCZDZABEZUAFAGHIJZBAQZUBBAKUDUBUCBEUCALMNUBUABTDBOABTRPS
     $.
 
+  $( A sequence with zero-based indices is a word.  (Contributed by AV,
+     31-Jan-2018.)  (Proof shortened by AV, 13-Oct-2018.)  (Proof shortened by
+     JJ, 18-Nov-2022.) $)
+  ffz0iswrdnn0 $p |- ( ( W : ( 0 ... L ) --> S /\ L e. NN0 )
+      -> W e. Word S ) $=
+    ( cc0 cfz co wf cn0 wcel wa c1 caddc cfzo cword simpl wceq cz fzval3 adantl
+    nn0z syl feq2d mpbid peano2nn0 iswrdinn0 syl2anc ) DBEFZACGZBHIZJZDBKLFZMFZ
+    ACGZUKHIZCANIUJUHUMUHUIOUJUGULACUIUGULPZUHUIBQIUOBTDBRUASUBUCUIUNUHBUDSAUKC
+    UEUF $.
+
   $( A word is a word over the symbols it consists of.  (Contributed by AV,
      1-Dec-2022.) $)
   wrdsymb $p |- ( S e. Word A -> S e. Word ( S " ( 0 ..^ ( # ` S ) ) ) ) $=
