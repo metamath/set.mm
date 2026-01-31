@@ -15586,6 +15586,7 @@ New usage of "cnnvs" is discouraged (2 uses).
 New usage of "cnopc" is discouraged (1 uses).
 New usage of "cnrehmeoOLD" is discouraged (0 uses).
 New usage of "cnsubrglemOLD" is discouraged (0 uses).
+New usage of "cnv0OLD" is discouraged (0 uses).
 New usage of "cnvadj" is discouraged (3 uses).
 New usage of "cnvbrabra" is discouraged (2 uses).
 New usage of "cnvbracl" is discouraged (2 uses).
@@ -19694,6 +19695,7 @@ Proof modification of "cnncvsaddassdemo" is discouraged (46 steps).
 Proof modification of "cnncvsmulassdemo" is discouraged (95 steps).
 Proof modification of "cnrehmeoOLD" is discouraged (351 steps).
 Proof modification of "cnsubrglemOLD" is discouraged (67 steps).
+Proof modification of "cnv0OLD" is discouraged (59 steps).
 Proof modification of "cnvfiALT" is discouraged (46 steps).
 Proof modification of "cnvopabOLD" is discouraged (77 steps).
 Proof modification of "coecjOLD" is discouraged (263 steps).
