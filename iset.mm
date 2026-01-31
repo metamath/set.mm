@@ -50998,6 +50998,15 @@ $)
   $}
 
   ${
+    $d B w $.  $d F w $.
+    $( If a function value is inhabited, the function value is a set.
+       (Contributed by Jim Kingdon, 30-Jan-2026.) $)
+    elfvex $p |- ( A e. ( F ` B ) -> ( F ` B ) e. _V ) $=
+      ( vw cfv wcel wbr cio cvv df-fv weu eliotaeu eleq2s euiotaex syl eqeltrid
+      cv ) ABCEZFZRBDQCGZDHZIDBCJZSTDKZUAIFUCAUARTDALUBMTDNOP $.
+  $}
+
+  ${
     $d x y z w A $.  $d x y z w B $.  $d x y z w F $.
     $( The value of a non-member of a restriction is the empty set.
        (Contributed by NM, 13-Nov-1995.) $)
