@@ -51007,6 +51007,16 @@ $)
   $}
 
   ${
+    $d F w $.  $d X w $.
+    $( If a function value is inhabited, the argument is related to the
+       function value.  (Contributed by Jim Kingdon, 31-Jan-2026.) $)
+    fvmbr $p |- ( A e. ( F ` X ) -> X F ( F ` X ) ) $=
+      ( vw cfv wcel wbr cv cio wceq df-fv eqcomi cvv weu elfvex eliotaeu eleq2s
+      wb breq2 iota2 syl2anc mpbiri ) ACBEZFZCUCBGZCDHZBGZDIZUCJZUCUHDCBKZLUDUC
+      MFUGDNZUEUIRACBOUKAUHUCUGDAPUJQUGUEDUCMUFUCCBSTUAUB $.
+  $}
+
+  ${
     $d x y z w A $.  $d x y z w B $.  $d x y z w F $.
     $( The value of a non-member of a restriction is the empty set.
        (Contributed by NM, 13-Nov-1995.) $)
