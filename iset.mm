@@ -197249,6 +197249,25 @@ $)
       HZCMHZAMHZNZVHBOZAJZVNPUAQAJZUBVNCJEJZUCZBRCUEJZUDQZSZVIVJVKVLVGVJVHDFUFU
       GVIVKVLACDFUHZUIVIVKVLWBUJUKVGVHULVMVHCEUMUNHZRVSUOQDUSJZAUPZVOVPTVQVOUQT
       VRURZBVTSZNWAAMBCDEWDMMWDUTGVAWGWCWAWEWFVRBVTVOVPVQVBVCVDVEVF $.
+
+    $d F e x y $.  $d G e x $.  $d I e k x y $.  $d P e x $.  $d W e k x $.
+    $( The vertices of a walk are connected by indexed edges.  (Contributed by
+       Alexander van der Vekens, 22-Jul-2018.)  (Revised by AV, 2-Jan-2021.)
+       (Proof shortened by AV, 4-Apr-2021.) $)
+    wlkvtxiedgg $p |- ( ( G e. W /\ F ( Walks ` G ) P )
+                       -> A. k e. ( 0 ..^ ( # ` F ) ) E. e e. ran I
+                          { ( P ` k ) , ( P ` ( k + 1 ) ) } C_ e ) $=
+      ( vx vy wcel cfv wbr wa cv co wss cc0 wral cvv cwlks caddc cpr chash cfzo
+      c1 crn wrex wlkvtxeledgg wex cvtx cfz wf eqid wlkpg adantr elfzofz adantl
+      ffvelcdmd prmg syl wlkvg simpld vex fvexg sylancl ad3antrrr simplr sseldd
+      simpr fvmbr breq1 elabd wb elfvex elrng 3syl exlimddv wceq sseq2 rspcedvd
+      mpbird ex ralimdva mpd ) EGKDAEUALMNZCOZALZWGUFUBPALZUCZWGDLZFLZQZCRDUDLZ
+      UEPZSWJBOZQZBFUGZUHZCWOSACDEFGHUIWFWMWSCWOWFWGWOKZNZWMWSXAWMNZWQWMBWLWRXB
+      IOZWJKZWLWRKZIXAXDIUJZWMXAWHEUKLZKXFXARWNULPZXGWGAWFXHXGAUMWTADEXGGXGUNUO
+      UPWTWGXHKWFWGRWNUQURUSIWHWIXGUTVAUPXBXDNZXEJOZWLFMZJUJZXIXKWKWLFMZJWKWFWK
+      TKZWTWMXDWFDTKZWGTKXNWFXOATKADEGVBVCCVDWGDTTVEVFVGXIXCWLKZXMXIWJWLXCXAWMX
+      DVHXBXDVJVIZXCFWKVKVAXJWKWLFVLVMXIXPWLTKXEXLVNXQXCWKFVOJWLFTVPVQWBVRWPWLV
+      SWQWMVNXBWPWLWJVTURXAWMVJWAWCWDWE $.
   $}
 
 
