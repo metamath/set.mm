@@ -197272,6 +197272,19 @@ $)
       SWQWMVNXBWPWLWJVTURXAWMVJWAWCWDWE $.
   $}
 
+  ${
+    $d f g k p $.
+    $( The set ` ( Walks `` G ) ` of all walks on ` G ` is a set of pairs by
+       our definition of a walk, and so is a relation.  (Contributed by
+       Alexander van der Vekens, 30-Jun-2018.)  (Revised by AV,
+       19-Feb-2021.) $)
+    relwlk $p |- Rel ( Walks ` G ) $=
+      ( vf vg vp vk cv ciedg cfv cdm cword wcel cc0 chash co cvtx wf caddc wceq
+      cfz c1 csn cpr wss wif cfzo wral w3a cvv cwlks df-wlks relmptopab ) BFZCF
+      ZGHZIJKLULMHZSNUMOHDFZPEFZUPHZUQTQNUPHZRUQULHUNHZURUARURUSUBUTUCUDELUOUEN
+      UFUGCBDUHAUIBCEDUJUK $.
+  $}
+
 
 $(
 ###############################################################################
