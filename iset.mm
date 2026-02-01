@@ -8031,18 +8031,6 @@ $)
      clear that ` if- ( ph , ps , ch ) ` implies decidability of ` ph `
      ( ~ ifpdc ), which is most often what is wanted.
 
-     Church uses the conditional operator as an intermediate step to prove
-     completeness of some systems of connectives.  The first result is that the
-     system ` { if- , T. , F. } ` is complete: for the induction step, consider
-     a formula of n+1 variables; single out one variable, say ` ph ` ; when one
-     sets ` ph ` to True (resp.  False), then what remains is a formula of n
-     variables, so by the induction hypothesis it is equivalent to a formula
-     using only the connectives ` if- , T. , F. ` , say ` ps ` (resp. ` ch ` );
-     therefore, the formula ` if- ( ph , ps , ch ) ` is equivalent to the
-     initial formula of n+1 variables.  Now, since ` { -> , -. } ` and similar
-     systems suffice to express the connectives ` if- , T. , F. ` , they are
-     also complete.
-
      (Contributed by BJ, 22-Jun-2019.) $)
   df-ifp $a |-
             ( if- ( ph , ps , ch ) <-> ( ( ph /\ ps ) \/ ( -. ph /\ ch ) ) ) $.
