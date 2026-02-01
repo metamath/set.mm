@@ -176544,6 +176544,13 @@ $)
        ( f e. ( U. j ^pm CC ) /\ x e. U. j /\
          A. u e. j ( x e. u -> E. y e. ran ZZ>= ( f |` y ) : y --> u ) ) } ) $.
 
+    $( The topological space convergence relation is a relation.  (Contributed
+       by NM, 7-Dec-2006.)  (Revised by Mario Carneiro, 14-Nov-2013.) $)
+    lmrel $p |- Rel ( ~~>t ` J ) $=
+      ( vf vj vx vu vy cv cuni cc cpm co wcel cres wf cuz crn wrex wi wral w3a
+      ctop clm df-lm relmptopab ) BGZCGZHZIJKLDGZUGLUHEGZLFGZUIUEUJMNFOPQREUFST
+      CBDUAAUBDFEBCUCUD $.
+
     $( Reverse closure for the convergence relation.  (Contributed by Mario
        Carneiro, 7-Sep-2015.) $)
     lmrcl $p |- ( F ( ~~>t ` J ) P -> J e. Top ) $=
@@ -176573,17 +176580,6 @@ $)
       BFEURUOUPZUQUSXCWEFWHXFUSXCWLCWDEXEUTVHVAFEVBWBXAWPFVCZVDXGRHZXARHXAWQWRT
       WSTZDAPXGWTXIDAWQWRWSVEVFWSDAWPFVGVIWBWPRHZFEHXHLRRVCVJWBFRHKRHZXJVKWBFEF
       EVLZVMXKWBVNULFKRRLVOVPXLWPFREVQVSXAXGRVRVTWA $.
-  $}
-
-  ${
-    $d J f u x y $.
-    $( The topological space convergence relation is a relation.  (Contributed
-       by Jim Kingdon, 25-Mar-2023.) $)
-    lmreltop $p |- ( J e. Top -> Rel ( ~~>t ` J ) ) $=
-      ( vf vx vu vy ctop wcel clm cfv wrel cv cuni cc cpm co cres cuz crn wrex
-      wf wi wral copab relopab ctopon wceq toptopon2 lmfval sylbi releqd mpbiri
-      w3a ) AFGZAHIZJBKZALZMNOGCKZUPGUQDKZGEKZURUOUSPTEQRSUADAUBULZBCUCZJUTBCUD
-      UMUNVAUMAUPUEIGUNVAUFAUGCEDBAUPUHUIUJUK $.
   $}
 
   ${
