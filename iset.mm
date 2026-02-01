@@ -197338,6 +197338,16 @@ $)
       w3a syl ) GDLMZNZCAVDOZCEPUANQCUBMZUCRFAUDBUEZAMZVHUFUIRAMZSVHCMEMZVIUGSV
       IVJUHVKUJUKBQVGULRUMVBZVEGUNMGUOMCAVDDGUPJKUQVEDTNVFVLURDGUSABCDEFTHIUTVC
       VA $.
+
+    $( The components of a walk are words/functions over a zero based range of
+       integers.  (Contributed by Alexander van der Vekens, 23-Jun-2018.)
+       (Revised by AV, 2-Jan-2021.) $)
+    wlkelwrd $p |- ( W e. ( Walks ` G ) -> ( F e. Word dom I
+                                        /\ P : ( 0 ... ( # ` F ) ) --> V ) ) $=
+      ( vk cwlks cfv wcel cdm cword cc0 chash co wceq cfz wf cv csn cpr wss wif
+      c1 caddc cfzo wral w3a wa wlkcompim 3simpa syl ) FCLMNBDOPNZQBRMZUASEAUBZ
+      KUCZAMZUTUHUISAMZTUTBMDMZVAUDTVAVBUEVCUFUGKQURUJSUKZULUQUSUMAKBCDEFGHIJUN
+      UQUSVDUOUP $.
   $}
 
 
