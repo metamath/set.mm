@@ -197020,6 +197020,17 @@ $)
                                 C_ ( ( iEdg ` g ) ` ( f ` k ) ) ) ) } ) $.
   $}
 
+  ${
+    $d f g k p $.
+    $( If there are walks on a graph, the graph is a set.  (Contributed by Jim
+       Kingdon, 1-Feb-2026.) $)
+    wlkmex $p |- ( W e. ( Walks ` G ) -> G e. _V ) $=
+      ( vg vf vp vk cvv cv ciedg cfv cdm cword wcel cc0 chash cfz co cvtx wceq
+      wf c1 caddc csn cpr wss wif cfzo wral w3a copab cwlks df-wlks mptrcl ) CG
+      DHZCHZIJZKLMNUNOJZPQUORJEHZTFHZURJZUSUAUBQURJZSUSUNJUPJZUTUCSUTVAUDVBUEUF
+      FNUQUGQUHUIDEUJUKBADCFEULUM $.
+  $}
+
   $( Lemma 1 for walks to substitute the index of the condition for vertices
      and edges in a walk.  (Contributed by AV, 23-Apr-2021.) $)
   wkslem1 $p |- ( A = B -> ( if- ( ( P ` A ) = ( P ` ( A + 1 ) ) ,
