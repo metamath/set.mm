@@ -197289,6 +197289,14 @@ $)
     ( cwlks cfv wrel wcel c1st c2nd cop wceq relwlk 1st2nd mpan ) ACDZEBNFBBGDB
     HDIJAKBNLM $.
 
+  $( A walk as class with two components.  (Contributed by Alexander van der
+     Vekens, 22-Jul-2018.)  (Revised by AV, 2-Jan-2021.)  (Revised by Jim
+     Kingdon, 1-Feb-2026.) $)
+  wlkcprim $p |- ( W e. ( Walks ` G )
+      -> ( 1st ` W ) ( Walks ` G ) ( 2nd ` W ) ) $=
+    ( cwlks cfv wcel c1st c2nd cop wbr wlkop eleq1d ibi df-br sylibr ) BACDZEZB
+    FDZBGDZHZOEZQROIPTPBSOABJKLQROMN $.
+
 
 $(
 ###############################################################################
