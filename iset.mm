@@ -5050,6 +5050,17 @@ $)
                  ( ( ph /\ ch ) /\ ( th /\ ps ) ) ) $=
     ( wa an4 ancom anbi2i bitri ) ABECDEEACEZBDEZEJDBEZEABCDFKLJBDGHI $.
 
+  $( Rearrangement of 4 conjuncts.  (Contributed by Rodolfo Medina,
+     24-Sep-2010.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.) $)
+  an43 $p |- ( ( ( ph /\ ps ) /\ ( ch /\ th ) ) <->
+               ( ( ph /\ th ) /\ ( ps /\ ch ) ) ) $=
+    ( wa an42 bicomi ) ADEBCEEABECDEEADBCFG $.
+
+  $( A rearrangement of conjuncts.  (Contributed by Rodolfo Medina,
+     25-Sep-2010.) $)
+  an3 $p |- ( ( ( ph /\ ps ) /\ ( ch /\ th ) ) -> ( ph /\ th ) ) $=
+    ( wa an43 simplbi ) ABECDEEADEBCEABCDFG $.
+
   ${
     an4s.1 $e |- ( ( ( ph /\ ps ) /\ ( ch /\ th ) ) -> ta ) $.
     $( Inference rearranging 4 conjuncts in antecedent.  (Contributed by NM,
@@ -5866,6 +5877,15 @@ $)
      9-Nov-2003.) $)
   nan $p |- ( ( ph -> -. ( ps /\ ch ) ) <-> ( ( ph /\ ps ) -> -. ch ) ) $=
     ( wa wn wi impexp imnan imbi2i bitr2i ) ABDCEZFABKFZFABCDEZFABKGLMABCHIJ $.
+
+  ${
+    mpnanrd.1 $e |- ( ph -> ps ) $.
+    mpnanrd.2 $e |- ( ph -> -. ( ps /\ ch ) ) $.
+    $( Eliminate the right side of a negated conjunction in an implication.
+       (Contributed by ML, 17-Oct-2020.) $)
+    mpnanrd $p |- ( ph -> -. ch ) $=
+      ( wn wa wi imnan sylibr mpd ) ABCFZDABCGFBLHEBCIJK $.
+  $}
 
   $( Law of noncontradiction.  Theorem *3.24 of [WhiteheadRussell] p. 111 (who
      call it the "law of contradiction").  (Contributed by NM, 16-Sep-1993.)
@@ -7971,6 +7991,191 @@ $)
   ( ( ( ph /\ ch ) /\ ( ps /\ th ) ) /\ ( ( ph /\ th ) /\ ( ps /\ ch ) ) ) ) $=
     ( wa an4 biimpi an42 biimpri jca adantl impbii ) ABECDEEZACEBDEEZADEBCEEZEM
     NOMNABCDFGOMADBCHZIJOMNOMPGKL $.
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  The conditional operator for propositions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  This subsection introduces the conditional operator for propositions, denoted
+  by ` if- ( ph , ps , ch ) ` (see ~ df-ifp ).  It is the analogue for
+  propositions of the conditional operator for classes, denoted by
+  ` if ( ph , A , B ) ` (see ~ df-if ).
+
+$)
+
+  $( Comma.  Also used later for adders, pairs, tuples, etc. $)
+  $c , $.
+
+  $( Symbol for the conditional operator for propositions. $)
+  $c if- $.
+
+  $( Extend wff notation to include the conditional operator for
+     propositions. $)
+  wif $a wff if- ( ph , ps , ch ) $.
+
+  $( Definition of the conditional operator for propositions.  The expression
+     ` if- ( ph , ps , ch ) ` is read "if ` ph ` then ` ps ` else ` ch ` ".
+     See ~ dfifp2dc , ~ dfifp3dc , ~ dfifp4dc and ~ dfifp5dc for alternate
+     definitions.
+
+     This definition (in the form of ~ dfifp2dc ) appears in Section II.24 of
+     [Church] p. 129 (Definition D12 page 132), where it is called "conditioned
+     disjunction".  Church's ` [ ps , ph , ch ] ` corresponds to our
+     ` if- ( ph , ps , ch ) ` (note the permutation of the first two
+     variables).
+
+     This form was chosen as the definition rather than ~ dfifp2dc for
+     compatibility with intuitionistic logic development: with this form, it is
+     clear that ` if- ( ph , ps , ch ) ` implies decidability of ` ph `
+     ( ~ ifpdc ), which is most often what is wanted.
+
+     Church uses the conditional operator as an intermediate step to prove
+     completeness of some systems of connectives.  The first result is that the
+     system ` { if- , T. , F. } ` is complete: for the induction step, consider
+     a formula of n+1 variables; single out one variable, say ` ph ` ; when one
+     sets ` ph ` to True (resp.  False), then what remains is a formula of n
+     variables, so by the induction hypothesis it is equivalent to a formula
+     using only the connectives ` if- , T. , F. ` , say ` ps ` (resp. ` ch ` );
+     therefore, the formula ` if- ( ph , ps , ch ) ` is equivalent to the
+     initial formula of n+1 variables.  Now, since ` { -> , -. } ` and similar
+     systems suffice to express the connectives ` if- , T. , F. ` , they are
+     also complete.
+
+     (Contributed by BJ, 22-Jun-2019.) $)
+  df-ifp $a |-
+            ( if- ( ph , ps , ch ) <-> ( ( ph /\ ps ) \/ ( -. ph /\ ch ) ) ) $.
+
+  $( The conditional operator for propositions implies decidability.
+     (Contributed by Jim Kingdon, 25-Jan-2026.) $)
+  ifpdc $p |- ( if- ( ph , ps , ch ) -> DECID ph ) $=
+    ( wa wn wo wif wdc simpl orim12i df-ifp df-dc 3imtr4i ) ABDZAEZCDZFAOFABCGA
+    HNAPOABIOCIJABCKALM $.
+
+  $( Forward direction of ~ dfifp2dc .  This direction does not require
+     decidability.  (Contributed by Jim Kingdon, 25-Jan-2026.) $)
+  ifp2 $p |- ( if- ( ph , ps , ch ) -> ( ( ph -> ps ) /\ ( -. ph -> ch ) ) ) $=
+    ( wif wa wn wo wi df-ifp pm3.4 pm2.24 adantr jca ax-in2 jaoi sylbi ) ABCDAB
+    EZAFZCEZGABHZRCHZEZABCIQUBSQTUAABJAUABACKLMSTUARTCABNLRCJMOP $.
+
+  $( Alternate definition of the conditional operator for decidable
+     propositions.  The value of ` if- ( ph , ps , ch ) ` is "if ` ph ` then
+     ` ps ` , and if not ` ph ` then ` ch ` ".  This is the definition used in
+     Section II.24 of [Church] p. 129 (Definition D12 page 132) (see comment of
+     ~ df-ifp ).  (Contributed by BJ, 22-Jun-2019.) $)
+  dfifp2dc $p |- ( DECID ph ->
+      ( if- ( ph , ps , ch ) <-> ( ( ph -> ps ) /\ ( -. ph -> ch ) ) ) ) $=
+    ( wdc wif wi wn wa ifp2 wo exmiddc simpl simprl jcai orcd simprr olcd sylan
+    jaoian df-ifp sylibr ex impbid2 ) ADZABCEZABFZAGZCFZHZABCIUDUIUEUDUIHABHZUG
+    CHZJZUEUDAUGJUIULAKAUIULUGAUIHZUJUKUMABAUILAUFUHMNOUGUIHZUKUJUNUGCUGUILUGUF
+    UHPNQSRABCTUAUBUC $.
+
+  $( Alternate definition of the conditional operator for propositions.
+     (Contributed by BJ, 30-Sep-2019.) $)
+  dfifp3dc $p |- ( DECID ph ->
+      ( if- ( ph , ps , ch ) <-> ( ( ph -> ps ) /\ ( ph \/ ch ) ) ) ) $=
+    ( wdc wif wi wn wa wo dfifp2dc pm4.64dc anbi2d bitrd ) ADZABCEABFZAGCFZHOAC
+    IZHABCJNPQOACKLM $.
+
+  $( Alternate definition of the conditional operator for propositions.
+     (Contributed by BJ, 30-Sep-2019.) $)
+  dfifp4dc $p |- ( DECID ph ->
+      ( if- ( ph , ps , ch ) <-> ( ( -. ph \/ ps ) /\ ( ph \/ ch ) ) ) ) $=
+    ( wdc wif wi wo wa wn dfifp3dc imordc anbi1d bitrd ) ADZABCEABFZACGZHAIBGZP
+    HABCJNOQPABKLM $.
+
+  $( Alternate definition of the conditional operator for propositions.
+     (Contributed by BJ, 2-Oct-2019.) $)
+  dfifp5dc $p |- ( DECID ph ->
+      ( if- ( ph , ps , ch ) <-> ( ( -. ph \/ ps ) /\ ( -. ph -> ch ) ) ) ) $=
+    ( wdc wif wi wn wa wo dfifp2dc imordc anbi1d bitrd ) ADZABCEABFZAGZCFZHPBIZ
+    QHABCJNORQABKLM $.
+
+  $( Define the biconditional as conditional logic operator.  (Contributed by
+     RP, 20-Apr-2020.)  (Proof shortened by Wolf Lammen, 30-Apr-2024.) $)
+  ifpdfbidc $p |- ( DECID ph ->
+      ( ( ph <-> ps ) <-> if- ( ph , ps , -. ps ) ) ) $=
+    ( wdc wi wa wn wb wif con34bdc anbi2d dfbi2 a1i dfifp2dc 3bitr4d ) ACZABDZB
+    ADZEZPAFBFZDZEABGZABSHOQTPBAIJUARGOABKLABSMN $.
+
+  $( The conditional operator is implied by the conjunction of its possible
+     outputs.  Dual statement of ~ ifpor .  (Contributed by BJ,
+     30-Sep-2019.) $)
+  anifpdc $p |- ( DECID ph -> ( ( ps /\ ch ) -> if- ( ph , ps , ch ) ) ) $=
+    ( wa wif wdc wn wo olc anim12i dfifp4dc imbitrrid ) BCDABCEAFAGZBHZACHZDBNC
+    OBMICAIJABCKL $.
+
+  $( The conditional operator implies the disjunction of its possible outputs.
+     Dual statement of ~ anifpdc .  (Contributed by BJ, 1-Oct-2019.) $)
+  ifpor $p |- ( if- ( ph , ps , ch ) -> ( ps \/ ch ) ) $=
+    ( wif wa wn wo df-ifp simpr orim12i sylbi ) ABCDABEZAFZCEZGBCGABCHLBNCABIMC
+    IJK $.
+
+  $( Conditional operator for the negation of a proposition.  (Contributed by
+     BJ, 30-Sep-2019.)  (Proof shortened by Wolf Lammen, 5-May-2024.) $)
+  ifpnst $p |- ( STAB ph ->
+      ( if- ( ph , ps , ch ) <-> if- ( -. ph , ch , ps ) ) ) $=
+    ( wstab wif wn wdc ifpdc adantl wa biimpi sylan2 wi wo dfifp5dc biancomd wb
+    stdcndc dcn dfifp3dc syl bitr4d pm5.21nd ) ADZABCEZAFZCBEZAGZUEUHUDABCHIUGU
+    DUFGZUHUFCBHUDUIJUHARKLUHUEUFCMZUFBNZJZUGUHUEUJUKABCOPUHUIUGULQASUFCBTUAUBU
+    C $.
+
+  $( Value of the conditional operator for propositions when its first argument
+     is true.  Analogue for propositions of ~ iftrue .  This is essentially
+     ~ dedlema .  (Contributed by BJ, 20-Sep-2019.)  (Proof shortened by Wolf
+     Lammen, 10-Jul-2020.) $)
+  ifptru $p |- ( ph -> ( if- ( ph , ps , ch ) <-> ps ) ) $=
+    ( wif wa wn wo df-ifp ancom orbi12i bitri dedlema bitr4id ) AABCDZBAEZCAFZE
+    ZGZBNABEZPCEZGRABCHSOTQABIPCIJKABCLM $.
+
+  $( Value of the conditional operator for propositions when its first argument
+     is false.  Analogue for propositions of ~ iffalse .  This is essentially
+     ~ dedlemb .  (Contributed by BJ, 20-Sep-2019.)  (Proof shortened by Wolf
+     Lammen, 25-Jun-2020.) $)
+  ifpfal $p |- ( -. ph -> ( if- ( ph , ps , ch ) <-> ch ) ) $=
+    ( wn wif wa wo df-ifp ancom orbi12i bitri dedlemb bitr4id ) ADZABCEZBAFZCNF
+    ZGZCOABFZNCFZGRABCHSPTQABINCIJKABCLM $.
+
+  $( Value of the conditional operator for propositions when the same
+     proposition is returned in either case.  Analogue for propositions of
+     ~ ifiddc .  (Contributed by BJ, 20-Sep-2019.) $)
+  ifpiddc $p |- ( DECID ph -> ( if- ( ph , ps , ps ) <-> ps ) ) $=
+    ( wdc wn wo wif wb exmiddc ifptru ifpfal jaoi syl ) ACAADZEABBFBGZAHANMABBI
+    ABBJKL $.
+
+  ${
+    ifpbi123d.1 $e |- ( ph -> ( ps <-> ta ) ) $.
+    ifpbi123d.2 $e |- ( ph -> ( ch <-> et ) ) $.
+    ifpbi123d.3 $e |- ( ph -> ( th <-> ze ) ) $.
+    $( Equivalence deduction for conditional operator for propositions.
+       (Contributed by AV, 30-Dec-2020.)  (Proof shortened by Wolf Lammen,
+       17-Apr-2024.) $)
+    ifpbi123d $p |- ( ph -> ( if- ( ps , ch , th )
+                              <-> if- ( ta , et , ze ) ) ) $=
+      ( wa wn wo wif anbi12d notbid orbi12d df-ifp 3bitr4g ) ABCKZBLZDKZMEFKZEL
+      ZGKZMBCDNEFGNATUCUBUEABECFHIOAUAUDDGABEHPJOQBCDREFGRS $.
+  $}
+
+  ${
+    ifpbi23d.1 $e |- ( ph -> ( ch <-> et ) ) $.
+    ifpbi23d.2 $e |- ( ph -> ( th <-> ze ) ) $.
+    $( Equivalence deduction for conditional operator for propositions.
+       Convenience theorem for a frequent case.  (Contributed by Wolf Lammen,
+       28-Apr-2024.) $)
+    ifpbi23d $p |- ( ph -> ( if- ( ps , ch , th )
+                              <-> if- ( ps , et , ze ) ) ) $=
+      ( biidd ifpbi123d ) ABCDBEFABIGHJ $.
+  $}
+
+  ${
+    1fpid3.1 $e |- ( ( ph /\ ps ) -> ch ) $.
+    $( The value of the conditional operator for propositions is its third
+       argument if the first and second argument imply the third argument.
+       (Contributed by AV, 4-Apr-2021.) $)
+    1fpid3 $p |- ( if- ( ph , ps , ch ) -> ch ) $=
+      ( wif wa wn wo df-ifp simpr jaoi sylbi ) ABCEABFZAGZCFZHCABCIMCODNCJKL $.
+  $}
 
 
 $(
@@ -10349,6 +10554,18 @@ $)
        by NM, 22-Apr-1994.)  (Revised by Jim Kingdon, 9-Dec-2017.) $)
     ecase23d $p |- ( ph -> ps ) $=
       ( wo w3o df-3or sylib ecased ) ABCEABCHZDFABCDIMDHGBCDJKLL $.
+  $}
+
+  ${
+    ecase2d.1 $e |- ( ph -> ps ) $.
+    ecase2d.2 $e |- ( ph -> -. ( ps /\ ch ) ) $.
+    ecase2d.3 $e |- ( ph -> -. ( ps /\ th ) ) $.
+    ecase2d.4 $e |- ( ph -> ( ta \/ ( ch \/ th ) ) ) $.
+    $( Deduction for elimination by cases.  (Contributed by NM, 21-Apr-1994.)
+       (Proof shortened by Wolf Lammen, 19-Sep-2024.) $)
+    ecase2d $p |- ( ph -> ta ) $=
+      ( wo wn mpnanrd ioran sylanbrc ecased ) AECDJZACKDKPKABCFGLABDFHLCDMNIO
+      $.
   $}
 
   ${
@@ -31552,7 +31769,6 @@ $(
 $)
 
   $( Declare new constant symbols. $)
-  $c , $.  $( Comma (also used for unordered pair notation later) $)
   $c if $.  $( Conditional operator (was "ded" for "deduction class"). $)
 
   $( Extend class notation to include the conditional operator.  See ~ df-if
@@ -47426,6 +47642,17 @@ $)
   $}
 
   ${
+    $d ph y z $.  $d ps x z $.  $d x y $.
+    cbviotavw.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Change bound variables in a description binder.  Version of ~ cbviotav
+       with a disjoint variable condition.  (Contributed by Andrew Salmon,
+       1-Aug-2011.)  (Revised by GG, 30-Sep-2024.) $)
+    cbviotavw $p |- ( iota x ph ) = ( iota y ps ) $=
+      ( vz cab cv csn wceq cuni cio cbvabv eqeq1i abbii unieqi df-iota 3eqtr4i
+      ) ACGZFHIZJZFGZKBDGZTJZFGZKACLBDLUBUEUAUDFSUCTABCDEMNOPACFQBDFQR $.
+  $}
+
+  ${
     $d ph y $.  $d ps x $.
     cbviotav.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
     $( Change bound variables in a description binder.  (Contributed by Andrew
@@ -54329,6 +54556,17 @@ $)
   $}
 
   ${
+    $d x y A $.  $d y ph $.  $d x ps $.
+    cbvriotavw.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Change bound variable in a restricted description binder.  Version of
+       ~ cbvriotav with a disjoint variable condition.  (Contributed by NM,
+       18-Mar-2013.)  (Revised by GG, 30-Sep-2024.) $)
+    cbvriotavw $p |- ( iota_ x e. A ph ) = ( iota_ y e. A ps ) $=
+      ( cv wcel wa cio crio weq eleq1w anbi12d cbviotavw df-riota 3eqtr4i ) CGE
+      HZAIZCJDGEHZBIZDJACEKBDEKSUACDCDLRTABCDEMFNOACEPBDEPQ $.
+  $}
+
+  ${
     $d x z A $.  $d y z A $.  $d z ph $.  $d z ps $.
     cbvriota.1 $e |- F/ y ph $.
     cbvriota.2 $e |- F/ x ps $.
@@ -54461,6 +54699,27 @@ $)
     riota2 $p |- ( ( B e. A /\ E! x e. A ph ) ->
             ( ps <-> ( iota_ x e. A ph ) = B ) ) $=
       ( nfcv nfv riota2f ) ABCDECEGBCHFI $.
+  $}
+
+  ${
+    $d I a $.  $d J a $.  $d V a $.  $d X a $.  $d Y a $.
+    riotaeqimp.i $e |- I = ( iota_ a e. V X = A ) $.
+    riotaeqimp.j $e |- J = ( iota_ a e. V Y = A ) $.
+    riotaeqimp.x $e |- ( ph -> E! a e. V X = A ) $.
+    riotaeqimp.y $e |- ( ph -> E! a e. V Y = A ) $.
+    $( If two restricted iota descriptors for an equality are equal, then the
+       terms of the equality are equal.  (Contributed by AV, 6-Dec-2020.) $)
+    riotaeqimp $p |- ( ( ph /\ I = J ) -> X = Y ) $=
+      ( wceq wa crio csb wb wcel nfcvd adantl eqcomi eqeq2i bicomd wreu riotacl
+      a1i biimpa eqeq1i syl eqeltrid nfcsb1d nfeqd id cv csbeq1a eqeq2d syl2anc
+      nfv riota2df bitrid wi bitrdi adantr csbeq1 eqcoms eqeq12 syl5ibrcom expd
+      eqcom ancoms sylbird mp2d ) ACDMZNZCGBMZHEOZMZFHDBPZMZFGMZAVMVQAVQVMVQVMQ
+      AVPDCDVPJUAUBUFUCUGAVMVSVMFBMZHEOZDMZAVSCWBDIUHADERZWAHEUDZWCVSQADVPEJAVO
+      HEUDZVPERLVOHEUEUIUJKWDWENVSWCWDWAVSHEDWDHURWDHDSZWDHFVRWDHFSWDHDBWGUKULW
+      DUMHUNZDMZWAVSQWDWIBVRFHDBUOUPTUSUCUQUTUGVNVQGHCBPZMZVSVTVAZAWKVQQVMAWKVP
+      CMZVQACERZWFWKWMQACWBEIAWEWBERKWAHEUEUIUJLWNVOWKHECWNHURWNHCSZWNHGWJWNHGS
+      WNHCBWOUKULWNUMWHCMZVOWKQWNWPBWJGHCBUOUPTUSUQVPCVIVBVCVMWKWLVAAVMWKVSVTVM
+      VTWKVSNVRWJMZWQDCHDCBVDVEVSWKVTWQQFVRGWJVFVJVGVHTVKVL $.
   $}
 
   ${
@@ -151083,6 +151342,30 @@ $)
   basendxnn $p |- ( Base ` ndx ) e. NN $=
     ( cnx cbs cfv c1 cn df-base 1nn ndxarg eqeltri ) ABCDEBDFGHGI $.
 
+  ${
+    basprssdmsets.s $e |- ( ph -> S Struct X ) $.
+    bassetsnn.i $e |- ( ph -> I e. NN ) $.
+    basprssdmsets.w $e |- ( ph -> E e. W ) $.
+    basprssdmsets.b $e |- ( ph -> ( Base ` ndx ) e. dom S ) $.
+    $( The pair of the base index and another index is a subset of the domain
+       of the structure obtained by replacing/adding a slot at the other index
+       in a structure having a base slot.  (Contributed by AV, 7-Jun-2021.)
+       (Revised by AV, 16-Nov-2021.) $)
+    bassetsnn $p |- ( ph -> { ( Base ` ndx ) , I }
+                                C_ dom ( S sSet <. I , E >. ) ) $=
+      ( cdm wceq wcel wa cvv cn syl eleqtrrd eleqtrrdi adantr cnx cbs cfv co wn
+      cop csts simpr csn cdif cres snidg dmsnopg elun2 dmun cstr structex opexg
+      cun wbr syl2anc setsvalg dmeqd eqeltrd cin basendxnn elexi eleqtrd eldifd
+      a1i elsni stoic1a elind dmres elun1 wo cz nnzi nnzd zdceq sylancr exmiddc
+      wdc mpjaodan prssd ) AUAUBUCZDBDCUFZUGUDZKZAWFDLZWFWIMWJUEZAWJNWFDWIAWJUH
+      ADWIMWJADBOWGUIZKZUJZUKZWLUSZKZWIADWOKZWMUSZWQADWMMDWSMADDUIZWMADPMZDWTMH
+      DPULQACEMZWMWTLZIDCEUMQZRDWMWRUNQWOWLUOZSAWHWPABOMZWGOMZWHWPLABFUPUTXFGBF
+      UQQAXAXBXGHIDCPEURVAWGBOOVBVAVCZRZTVDAWKNZWFWQWIXJWFWSWQXJWFWRMWFWSMXJWFW
+      NBKZVEWRXJWNXKWFXJWFOWMWFOMXJWFPVFVGVJAWFWMMZWJAXLNZWFWTMWJXMWFWMWTAXLUHA
+      XCXLXDTVHWFDVKQVLVIAWFXKMWKJTVMBWNVNSWFWRWMVOQXESAWIWQLWKXHTRAWJWCZWJWKVP
+      AWFVQMDVQMXNWFVFVRADHVSWFDVTWAWJWBQWDXIWE $.
+  $}
+
   $( The base set extractor is a slot.  (Contributed by Jim Kingdon,
      31-Jan-2023.) $)
   baseslid $p |- ( Base = Slot ( Base ` ndx ) /\ ( Base ` ndx ) e. NN ) $=
@@ -194204,6 +194487,36 @@ $)
       PQUAECBUBUC $.
   $}
 
+  ${
+    setsvtx.i $e |- I = ( .ef ` ndx ) $.
+    setsvtx.s $e |- ( ph -> G Struct X ) $.
+    setsvtx.b $e |- ( ph -> ( Base ` ndx ) e. dom G ) $.
+    setsvtx.e $e |- ( ph -> E e. W ) $.
+    $( The vertices of a structure with a base set and an inserted resp.
+       replaced slot for the edge function.  (Contributed by AV, 18-Jan-2020.)
+       (Revised by AV, 16-Nov-2021.) $)
+    setsvtx $p |- ( ph -> ( Vtx ` ( G sSet <. I , E >. ) ) = ( Base ` G ) ) $=
+      ( cop cfv cbs cvv wcel cnx cpr wceq cn syl3anc csts co cvtx csn cdif wfun
+      c0 cedgf cdm wss cstr wbr structex syl edgfndxnn eqeltri setsex setsn0fun
+      a1i eqcomi preq2i bassetsnn eqsstrid funvtxvalg basendxnedgfndx setsslnid
+      baseslid neeqtrri syl2anc eqtr4d ) ACDBKUAUBZUCLZVKMLZCMLZAVKNOZVKUGUDUEU
+      FPMLZPUHLZQZVKUIZUJVLVMRACNOZDSOZBEOZVOACFUKULVTHCFUMUNZWAADVQSGUOUPZUSZJ
+      DBCNESUQTACSBDEFHWEJURAVRVPDQVSVQDVPDVQGUTVAACBDEFHWEJIVBVCVKNVDTAVTWBVNV
+      MRWCJNBDMECVGVPVQDVEGVHWDVFVIVJ $.
+
+    $( The (indexed) edges of a structure with a base set and an inserted resp.
+       replaced slot for the edge function.  (Contributed by AV, 7-Jun-2021.)
+       (Revised by AV, 16-Nov-2021.) $)
+    setsiedg $p |- ( ph -> ( iEdg ` ( G sSet <. I , E >. ) ) = E ) $=
+      ( cnx cedgf cfv cop csts ciedg cvv wcel wceq cn csn cdif wfun cbs cpr cdm
+      co c0 wss cstr wbr structex syl edgfndxnn a1i syl3anc setsn0fun bassetsnn
+      setsex funiedgvalg opeq1i oveq2i fveq2i ndxslid setsslid syl2anc 3eqtr4d
+      edgfid ) ACKLMZBNZOUGZPMZVKLMZCDBNZOUGZPMZBAVKQRZVKUHUAUBUCKUDMVIUEVKUFUI
+      VLVMSACQRZVITRZBERZVQACFUJUKVRHCFULUMZVSAUNUOZJVIBCQETUSUPACTBVIEFHWBJUQA
+      CBVIEFHWBJIURVKQUTUPVPVLSAVOVKPVNVJCODVIBGVAVBVCUOAVRVTBVMSWAJQBLECLVIVHU
+      NVDVEVFVG $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
@@ -196165,6 +196478,408 @@ $)
       VNSZAVGQVOSVCVDVILZVFVKTZJVGQAVGQVSAJBCDEFGHIUGWBVQAJVGVGWBVFVKWATVFVKVPT
       VQWAVFVKUFWAVPVFVKVDVIUHUIVFVKVPUJUKULUMVRVTAVGVLVMJVGUNUOVNAVGUQUPURVFVK
       AJVGVMVEVJGVDVIFUSUTVAVB $.
+
+    $( If a vertex is adjacent to two different vertices in a simple graph,
+       there is not only one edge starting at this vertex.  (Contributed by
+       Alexander van der Vekens, 10-Dec-2017.)  (Revised by AV, 17-Oct-2020.)
+       (Proof shortened by AV, 8-Jun-2021.) $)
+    usgr2edg1 $p |- ( ( ( G e. USGraph /\ A =/= B )
+                        /\ ( { N , A } e. E /\ { B , N } e. E ) )
+                      -> -. E! x e. dom I N e. ( I ` x ) ) $=
+      ( cusgr wcel cumgr wne cpr wa cv cfv cdm wreu wn usgrumgr umgr2edg1
+      sylanl1 ) EJKELKBCMGBNDKCGNDKOGAPFQKAFRSTEUAABCDEFGHIUBUC $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.  $d E x y $.  $d G x y $.  $d N x y $.
+    umgrvad2edg.e $e |- E = ( Edg ` G ) $.
+    $( If a vertex is adjacent to two different vertices in a multigraph, there
+       are more than one edges starting at this vertex, analogous to
+       ~ usgr2edg .  (Contributed by Alexander van der Vekens, 10-Dec-2017.)
+       (Revised by AV, 9-Jan-2020.)  (Revised by AV, 8-Jun-2021.) $)
+    umgrvad2edg $p |- ( ( ( G e. UMGraph /\ A =/= B )
+                       /\ ( { N , A } e. E /\ { B , N } e. E ) )
+                    -> E. x e. E E. y e. E ( x =/= y /\ N e. x /\ N e. y ) ) $=
+      ( cpr wcel wa wne w3a cv wrex umgrpredgv ex imp ad3antrrr wceq cumgr cvtx
+      simpl simpr cfv wo wi anim12d adantr simplr umgredgne necomd ad2ant2r jca
+      eqid olcd prneimg prid1g 3jca syl2anc neeq1 eleq2 3anbi12d neeq2 3anbi13d
+      prid2g rspc2ev syl2an23an ) GCIZEJZDGIZEJZKZVJVLFUAJZCDLZKZVIVKLZGVIJZGVK
+      JZMZANZBNZLZGWAJZGWBJZMZBEOAEOVJVLUCVJVLUDVPVMKZGFUBUEZJZCWHJZKZDWHJWIKZK
+      ZGDLGGLKZVOCGLZKZUFZVTVPVMWMVNVMWMUGVOVNVJWKVLWLVNVJWKEFGCWHWHUOZHPQVNVLW
+      LEFDGWHWRHPQUHUIRWGWPWNWGVOWOVNVOVMUJVNVJWOVOVLVNVJKGCEFGCHUKULUMUNUPWMWQ
+      KVQVRVSWMWQVQGCDGWHWHWHWHUQRWIVRWJWLWQGCWHURSWIVSWJWLWQDGWHVFSUSUTWFVTVIW
+      BLZVRWEMABVIVKEEWAVITWCWSWDVRWEWAVIWBVAWAVIGVBVCWBVKTWSVQWEVSVRWBVKVIVDWB
+      VKGVBVEVGVH $.
+
+    $( If a vertex is adjacent to two different vertices in a multigraph, there
+       is not only one edge starting at this vertex, analogous to ~ usgr2edg1 .
+       Lemma for theorems about friendship graphs.  (Contributed by Alexander
+       van der Vekens, 10-Dec-2017.)  (Revised by AV, 9-Jan-2020.) $)
+    umgr2edgneu $p |- ( ( ( G e. UMGraph /\ A =/= B )
+                        /\ ( { N , A } e. E /\ { B , N } e. E ) )
+                          -> -. E! x e. E N e. x ) $=
+      ( vy cumgr wcel wne wa cpr cv wrex weq wral wn reximi syl w3a umgrvad2edg
+      wi wreu 3simpc neneq 3ad2ant1 jca rexanaliim rexnalim intnand eleq2w reu4
+      sylnibr ) EIJBCKLFBMDJCFMDJLLZFANZJZADOZUQFHNZJZLZAHPZUCHDQZADQZLUQADUDUO
+      VDURUOVAVBRZLZHDOZADOZVDRZUOUPUSKZUQUTUAZHDOZADOVHAHBCDEFGUBVLVGADVKVFHDV
+      KVAVEVJUQUTUEVJUQVEUTUPUSUFUGUHSSTVHVCRZADOVIVGVMADVAVBHDUISVCADUJTTUKUQU
+      TAHDAHFULUMUN $.
+  $}
+
+  ${
+    $d G x $.
+    $( In a simple graph, the size of the edge function is the number of the
+       edges of the graph.  (Contributed by AV, 4-Jan-2020.)  (Revised by AV,
+       7-Jun-2021.) $)
+    usgrsizedgen $p |- ( G e. USGraph
+                       -> ( iEdg ` G ) ~~ ( Edg ` G ) ) $=
+      ( cusgr wcel ciedg cfv crn cedg cen cdm wbr wfun usgrfun fundmeng syl2anc
+      cvv iedgex ensymd wf1o dmexd eqid usgrf1o f1oeng entr edgvalg breqtrrd )
+      ABCZADEZUGFZAGEHUFUGUGIZHJUIUHHJZUGUHHJUFUIUGUFUGOCUGKUIUGHJABPZALUGOMNQU
+      FUIOCUIUHUGRUJUFUGOUKSUGAUGTUAUIUHOUGUBNUGUIUHUCNABUDUE $.
+  $}
+
+  ${
+    $d E x y $.  $d G x y $.  $d V x y $.  $d X x y $.
+    usgredg3.v $e |- V = ( Vtx ` G ) $.
+    usgredg3.e $e |- E = ( iEdg ` G ) $.
+    $( The value of the "edge function" of a simple graph is a set containing
+       two elements (the endvertices of the corresponding edge).  (Contributed
+       by Alexander van der Vekens, 18-Dec-2017.)  (Revised by AV,
+       17-Oct-2020.) $)
+    usgredg3 $p |- ( ( G e. USGraph /\ X e. dom E )
+              -> E. x e. V E. y e. V ( x =/= y /\ ( E ` X ) = { x , y } ) ) $=
+      ( cusgr wcel cdm cfv cedg cv wne wceq wa wrex crn wfun cpr usgrfun funeqi
+      ciedg sylibr fvelrn sylan edgvalg eqcomi rneqi eqtrdi adantr eqid usgredg
+      eleqtrrd syldan ) DIJZFCKJZFCLZDMLZJANZBNZOUSVAVBUAPQBERAERUQURQUSCSZUTUQ
+      CTZURUSVCJUQDUDLZTVDDUBCVEHUCUEFCUFUGUQUTVCPURUQUTVESVCDIUHVECCVEHUIUJUKU
+      LUOUSUTDEABGUTUMUNUP $.
+
+    $d E x z $.  $d G z $.  $d V z $.  $d X z $.  $d Y x y z $.
+    $( For a vertex incident to an edge there is another vertex incident to the
+       edge.  (Contributed by Alexander van der Vekens, 18-Dec-2017.)  (Revised
+       by AV, 17-Oct-2020.) $)
+    usgredg4 $p |- ( ( G e. USGraph /\ X e. dom E /\ Y e. ( E ` X ) )
+                      -> E. y e. V ( E ` X ) = { Y , y } ) $=
+      ( vx vz wcel cv cpr wceq wrex wa wi wb adantl ex cusgr cdm usgredg3 eleq2
+      cfv wne simplrr weq preq2 eqeq2d eqidd rspcedvd simprr eqeqan12rd rexbidv
+      wo preq1 mpbird simplrl prcom a1i jaoi elpri sylbid rexlimdvva mpd 3impia
+      syl11 ) CUAKZEBUBKZFEBUEZKZVKFALZMZNZADOZVIVJPZILZJLZUFZVKVRVSMZNZPZJDOID
+      OVLVPQZIJBCDEGHUCVQWCWDIJDDVQVRDKZVSDKZPPZWCWDWGWCPZVLFWAKZVPWCVLWIRZWGWB
+      WJVTVKWAFUDSSFVRNZFVSNZUPWHVPWIWKWHVPQWLWKWHVPWKWHPZVPWAVRVMMZNZADOWMWOWA
+      WANZAVSDWHWFWKVQWEWFWCUGSAJUHZWOWPRWMWQWNWAWAVMVSVRUIUJSWMWAUKULWMVOWOADW
+      HWKVKWAVNWNWGVTWBUMZFVRVMUQUNUOURTWLWHVPWLWHPZVPWAVSVMMZNZADOWSXAWAVSVRMZ
+      NZAVRDWHWEWLVQWEWFWCUSSAIUHZXAXCRWSXDWTXBWAVMVRVSUIUJSXCWSVRVSUTVAULWSVOX
+      AADWHWLVKWAVNWTWRFVSVMUQUNUOURTVBFVRVSVCVHVDTVEVFVG $.
+
+    $( For a vertex incident to an edge there is exactly one other vertex
+       incident to the edge.  (Contributed by Alexander van der Vekens,
+       4-Jan-2018.)  (Revised by AV, 18-Oct-2020.) $)
+    usgredgreu $p |- ( ( G e. USGraph /\ X e. dom E /\ Y e. ( E ` X ) )
+                      -> E! y e. V ( E ` X ) = { Y , y } ) $=
+      ( vx cusgr wcel cdm cfv w3a cv cpr wceq wa wral vex wrex wi wreu usgredg4
+      weq eqtr2 preqr2 syl a1i ralrimivva preq2 eqeq2d reu4 sylanbrc ) CJKEBLKF
+      EBMZKNZUOFAOZPZQZADUAUSUOFIOZPZQZRZAIUEZUBZIDSADSUSADUCABCDEFGHUDUPVEAIDD
+      VEUPUQDKUTDKRRVCURVAQVDUOURVAUFUQUTFATITUGUHUIUJUSVBAIDVDURVAUOUQUTFUKULU
+      MUN $.
+  $}
+
+  ${
+    $d E x y $.  $d G x y $.  $d Y x y $.
+    $( For a vertex incident to an edge there is another vertex incident to the
+       edge in a simple graph.  (Contributed by AV, 18-Oct-2020.)  (Proof
+       shortened by AV, 5-Dec-2020.) $)
+    usgredg2vtx $p |- ( ( G e. USGraph /\ E e. ( Edg ` G ) /\ Y e. E )
+                        -> E. y e. ( Vtx ` G ) E = { Y , y } ) $=
+      ( cusgr wcel cupgr cedg cfv cv cpr wceq cvtx usgrupgr upgredg2vtx syl3an1
+      wrex eqid ) CEFCGFBCHIZFDBFBDAJKLACMIZQCNDBSCTATRSROP $.
+
+    $( For a vertex incident to an edge there is exactly one other vertex
+       incident to the edge in a simple pseudograph.  (Contributed by AV,
+       18-Oct-2020.)  (Revised by AV, 6-Dec-2020.) $)
+    uspgredg2vtxeu $p |- ( ( G e. USPGraph /\ E e. ( Edg ` G ) /\ Y e. E )
+                           -> E! y e. ( Vtx ` G ) E = { Y , y } ) $=
+      ( vx cuspgr wcel cedg cfv w3a cv cpr wceq cvtx wrex wa weq wral eqid vex
+      wi wreu cupgr uspgrupgr upgredg2vtx syl3an1 eqtr2 preqr2 ralrimivva preq2
+      syl a1i eqeq2d reu4 sylanbrc ) CFGZBCHIZGZDBGZJZBDAKZLZMZACNIZOZVCBDEKZLZ
+      MZPZAEQZUAZEVDRAVDRVCAVDUBUPCUCGURUSVECUDDBUQCVDAVDSUQSUEUFUTVKAEVDVDVKUT
+      VAVDGVFVDGPPVIVBVGMVJBVBVGUGVAVFDATETUHUKULUIVCVHAEVDVJVBVGBVAVFDUJUMUNUO
+      $.
+
+    $( For a vertex incident to an edge there is exactly one other vertex
+       incident to the edge in a simple graph.  (Contributed by AV,
+       18-Oct-2020.)  (Proof shortened by AV, 6-Dec-2020.) $)
+    usgredg2vtxeu $p |- ( ( G e. USGraph /\ E e. ( Edg ` G ) /\ Y e. E )
+                          -> E! y e. ( Vtx ` G ) E = { Y , y } ) $=
+      ( cusgr wcel cuspgr cedg cfv cv cpr wceq cvtx wreu uspgredg2vtxeu syl3an1
+      usgruspgr ) CEFCGFBCHIFDBFBDAJKLACMINCQABCDOP $.
+  $}
+
+  ${
+    $d E e $.  $d G z $.  $d N e $.  $d N z $.  $d V z $.  $d Y e $.  $d Y z $.
+    uspgredg2v.v $e |- V = ( Vtx ` G ) $.
+    uspgredg2v.e $e |- E = ( Edg ` G ) $.
+    uspgredg2v.a $e |- A = { e e. E | N e. e } $.
+    $( Lemma for ~ uspgredg2v .  (Contributed by Alexander van der Vekens,
+       4-Jan-2018.)  (Revised by AV, 6-Dec-2020.) $)
+    uspgredg2vlem $p |- ( ( G e. USPGraph /\ Y e. A )
+                           -> ( iota_ z e. V Y = { N , z } ) e. V ) $=
+      ( wcel cuspgr wa cv cpr wceq crio cfv wreu eleq2 elrab2 cedg simpl eleq2i
+      w3a biimpi ad2antrl simprr 3jca cvtx uspgredg2vtxeu reueq1 sylibr riotacl
+      wb ax-mp 3syl sylan2b ) HBLEMLZHDLZFHLZNZHFAOPQZAGRGLZFCOZLVBCHDBVFHFUAKU
+      BUTVCNZUTHEUCSZLZVBUFZVDAGTZVEVGUTVIVBUTVCUDVAVIUTVBVAVIDVHHJUEUGUHUTVAVB
+      UIUJVJVDAEUKSZTZVKAHEFULGVLQVKVMUPIVDAGVLUMUQUNVDAGUOURUS $.
+
+    $d A x y $.  $d F x $.  $d G n x y $.  $d N n x y z $.  $d V n x y $.
+    $d e x y $.
+    uspgredg2v.f $e |- F = ( y e. A |-> ( iota_ z e. V y = { N , z } ) ) $.
+    $( In a simple pseudograph, the mapping of edges having a fixed endpoint to
+       the "other" vertex of the edge (which may be the fixed vertex itself in
+       the case of a loop) is a one-to-one function into the set of vertices.
+       (Contributed by Alexander van der Vekens, 4-Jan-2018.)  (Revised by AV,
+       6-Dec-2020.) $)
+    uspgredg2v $p |- ( ( G e. USPGraph /\ N e. V ) -> F : A -1-1-> V ) $=
+      ( vx vn wcel wa cv wceq wreu cuspgr cpr crio wral uspgredg2vlem ralrimiva
+      wi wf1 adantr preq2 eqeq2d cbvriotavw cedg cfv simpl eleq2w elrab2 eleq2i
+      w3a biimpi anim1i sylbi anim12i 3anass sylibr uspgredg2vtxeu reueq1 ax-mp
+      cvtx wb syl adantl riotaeqimp ralrimivva eqeq1 riotabidv f1mpt sylanbrc
+      ex ) GUAPZHIPZQZARZHBRZUBZSZBIUCZIPZACUDZWGNRZWESZBIUCZSZWCWJSZUGZNCUDACU
+      DCIFUHVTWIWAVTWHACBCDEGHIWCJKLUEUFUIWBWOANCCWBWCCPZWJCPZQZQZWMWNWSHORZUBZ
+      WGWLIWCWJOWFWCXASZBOIWDWTSZWEXAWCWDWTHUJZUKULWKWJXASZBOIXCWEXAWJXDUKULWSV
+      TWCGUMUNZPZHWCPZUSZXBOITZWSVTXGXHQZQXIWBVTWRXKVTWAUOZWPXKWQWPWCEPZXHQXKHD
+      RPZXHDWCECDAHUPLUQXMXGXHXMXGEXFWCKURUTVAVBUIVCVTXGXHVDVEXIXBOGVIUNZTZXJOW
+      CGHVFIXOSZXJXPVJJXBOIXOVGVHVEVKWSVTWJXFPZHWJPZUSZXEOITZWSVTXRXSQZQXTWBVTW
+      RYBXLWQYBWPWQWJEPZXSQYBXNXSDWJECDNHUPLUQYCXRXSYCXREXFWJKURUTVAVBVLVCVTXRX
+      SVDVEXTXEOXOTZYAOWJGHVFXQYAYDVJJXEOIXOVGVHVEVKVMVSVNANCIWGWLFMWNWFWKBIWCW
+      JWEVOVPVQVR $.
+  $}
+
+  ${
+    $d E x z $.  $d G z $.  $d N x z $.  $d V z $.
+    usgredg2v.v $e |- V = ( Vtx ` G ) $.
+    usgredg2v.e $e |- E = ( iEdg ` G ) $.
+    ${
+      $d Y x z $.
+      usgredg2v.a $e |- A = { x e. dom E | N e. ( E ` x ) } $.
+      $( Lemma 1 for ~ usgredg2v .  (Contributed by Alexander van der Vekens,
+         4-Jan-2018.)  (Revised by AV, 18-Oct-2020.) $)
+      usgredg2vlem1 $p |- ( ( G e. USGraph /\ Y e. A )
+                            -> ( iota_ z e. V ( E ` Y ) = { z , N } ) e. V ) $=
+        ( wcel cusgr cdm cfv wa cv cpr wceq wreu fveq2 eleq2d elrab2 usgredgreu
+        crio w3a prcom eqeq2i reubii sylib 3expb riotacl syl sylan2b ) HCLEMLZH
+        DNZLZFHDOZLZPZURBQZFRZSZBGUEGLZFAQZDOZLUSAHUPCVEHSVFURFVEHDUAUBKUCUOUTP
+        VCBGTZVDUOUQUSVGUOUQUSUFURFVARZSZBGTVGBDEGHFIJUDVIVCBGVHVBURFVAUGUHUIUJ
+        UKVCBGULUMUN $.
+
+      $d I z $.
+      $( Lemma 2 for ~ usgredg2v .  (Contributed by Alexander van der Vekens,
+         4-Jan-2018.)  (Revised by AV, 18-Oct-2020.) $)
+      usgredg2vlem2 $p |- ( ( G e. USGraph /\ Y e. A )
+                            -> ( I = ( iota_ z e. V ( E ` Y ) = { z , N } )
+                                 -> ( E ` Y ) = { I , N } ) ) $=
+        ( wcel cfv cv cpr wceq wi wa biimpi cusgr crio fveq2 eleq2d elrab2 wreu
+        cdm usgredgreu 3expb usgredg2vlem1 adantlr ad4ant23 eleq1 adantl mpbird
+        prcom eqeq2i reubii ad3antrrr preq1 eqeq2d riota2 syl2anc exbiri eqcoms
+        wb com13 pm2.43i expdcom mpancom expcom com23 mpcom impcom ) ICMZEUAMZF
+        IDNZBOZGPZQZBHUBZQZVQFGPZQZRZIDUGZMZGVQMZSZVOVPWERVOWIGAOZDNZMWHAIWFCWJ
+        IQWKVQGWJIDUCUDLUETWIVPVOWEVPWIVOWERZVQGVRPZQZBHUFZVPWISZWLVPWGWHWOBDEH
+        IGJKUHUIWBWOWPSZVOWDWBWQVOSZWDRZWBWSRWAFWRWBWAFQZWDWRWBWDWTWRWBSZFHMZVT
+        BHUFZWDWTVFXAXBWAHMZWPVOXDWOWBVPVOXDWIABCDEGHIJKLUJUKULWBXBXDVFWRFWAHUM
+        UNUOWOXCWPVOWBWOXCWNVTBHWMVSVQGVRUPUQURTUSVTWDBHFVRFQVSWCVQVRFGUTVAVBVC
+        VDVGVEVHVIVJVKVLVMVN $.
+
+      $d A w y $.  $d E w x y z $.  $d F w $.  $d G w y $.  $d N u w y $.
+      $d V u w y $.  $d E u w z $.
+      usgredg2v.f $e |- F = ( y e. A
+                              |-> ( iota_ z e. V ( E ` y ) = { z , N } ) ) $.
+      $( In a simple graph, the mapping of edges having a fixed endpoint to the
+         other vertex of the edge is a one-to-one function into the set of
+         vertices.  (Contributed by Alexander van der Vekens, 4-Jan-2018.)
+         (Revised by AV, 18-Oct-2020.) $)
+      usgredg2v $p |- ( ( G e. USGraph /\ N e. V ) -> F : A -1-1-> V ) $=
+        ( vu wcel wa cv wceq adantr cvv vw cusgr cfv crio wral wi usgredg2vlem1
+        cpr wf1 ralrimiva simpr preq1 eqeq2d cbvriotavw 3eqtr4g eqid jctir orcd
+        wo simpl anim12i usgredg2vlem2 mpisyl an3 eqeq12d cdm crn usgrf1 elrabi
+        crab eleq2s f1fveq syl2an vtxex eqeltrid riotaexg syl preq12bg syl22anc
+        wb cvtx 3bitr3d mpbird ex ralrimivva fveqeq2 riotabidv f1mpt sylanbrc )
+        GUBOZHIOZPZBQZEUCZCQZHUHZRZCIUDZIOZBDUEZWRUAQZEUCZWPRZCIUDZRZWMXARZUFZU
+        ADUEBDUEDIFUIWJWTWKWJWSBDACDEGHIWMJKLUGUJSWLXGBUADDWLWMDOZXADOZPZPZXEXF
+        XKXEPZXFWNNQZHUHZRZNIUDZXBXNRZNIUDZRZHHRZPZXPHRHXRRPZUSZXLYAYBXLXSXTXLW
+        RXDXPXRXKXEUKXOWQNCIXMWORZXNWPWNXMWOHULZUMUNZXQXCNCIYDXNWPXBYEUMUNZUOHU
+        PUQURXKXFYCVTXEXKWNXBRZXPHUHZXRHUHZRZXFYCXKWNYIXBYJXKWJXHPXPWRRWNYIRWLW
+        JXJXHWJWKUTXHXIUTVAYFACDEGXPHIWMJKLVBVCXKWJXIPXRXDRXBYJRWJWKXHXIVDYGACD
+        EGXRHIXAJKLVBVCVEWLEVFZEVGZEUIZWMYLOZXAYLOZPYHXFVTXJWJYNWKEGKVHSXHYOXIY
+        PYOWMHAQEUCOZAYLVJZDYQAWMYLVILVKYPXAYRDYQAXAYLVILVKVAYLYMWMXAEVLVMWLYKY
+        CVTZXJWLXPTOZWKXRTOZWKYSWJYTWKWJITOZYTWJIGWAUCTJGUBVNVOZXONITVPVQSWJWKU
+        KZWJUUAWKWJUUBUUAUUCXQNITVPVQSUUDXPHXRHTITIVRVSSWBSWCWDWEBUADIWRXDFMXFW
+        QXCCIWMXAWPEWFWGWHWI $.
+    $}
+
+    $d E x y z $.  $d G y $.  $d N y $.  $d V y $.
+    $( Alternate version of ~ usgredgdomord , not using the notation
+       ` ( Edg `` G ) ` .  In a simple graph the number of edges which contain
+       a given vertex is not greater than the number of vertices.  (Contributed
+       by Alexander van der Vekens, 4-Jan-2018.)  (Revised by AV,
+       18-Oct-2020.) $)
+    usgriedgdomord $p |- ( ( G e. USGraph /\ N e. V )
+                   -> { x e. dom E | N e. ( E ` x ) } ~<_ V ) $=
+      ( vy vz cusgr wcel wa cvv cv cfv cdm crab cpr wceq eqid crio cmpt wf1 wbr
+      cdom cvtx vtxex eqeltrid adantr usgredg2v f1domg sylc ) CJKZDEKZLEMKZDANB
+      OKABPQZEHUPHNBOINDRSIEUAUBZUCUPEUEUDUMUOUNUMECUFOMFCJUGUHUIAHIUPBUQCDEFGU
+      PTUQTUJUPEMUQUKUL $.
+  $}
+
+  ${
+    $d B e f $.  $d E e i j $.  $d G e f i j $.  $d G x $.  $d I e f i j $.
+    $d I e i x $.  $d N e f i j $.  $d N x $.  $d V e f i j $.  $d V x $.
+    ushgredgedg.e $e |- E = ( Edg ` G ) $.
+    ushgredgedg.i $e |- I = ( iEdg ` G ) $.
+    ushgredgedg.v $e |- V = ( Vtx ` G ) $.
+    ushgredgedg.a $e |- A = { i e. dom I | N e. ( I ` i ) } $.
+    ushgredgedg.b $e |- B = { e e. E | N e. e } $.
+    ushgredgedg.f $e |- F = ( x e. A |-> ( I ` x ) ) $.
+    ${
+      $d G p $.  $d I p $.  $d p w $.
+      $( In a simple hypergraph there is a 1-1 onto mapping between the indexed
+         edges containing a fixed vertex and the set of edges containing this
+         vertex.  (Contributed by AV, 11-Dec-2020.) $)
+      ushgredgedg $p |- ( ( G e. USHGraph /\ N e. V )
+                          -> F : A -1-1-onto-> B ) $=
+        ( vj wcel wceq vw vp vf cushgr wf1o cfv cdm crab cima cres wex cvtx cpw
+        wa cv wf1 wss eqid ushgrfm adantr ssrab2 f1ores sylancl cmpt mpteq12dva
+        a1i eqidd eqtrid wf f1f syl feqresmpt eqcomd eqtrd wrex cab ciedg cuhgr
+        wfun ushgruhgr uhgrfun funeqi sylibr dfimafn fveq2 eleq2d elrab w3a crn
+        wi simpl fvelrn eqcomi rneqi eleq2i syl2an eleq1 eqcoms 3ad2ant3 mpbird
+        3adant3 wb cedg edgvalg 3ad2ant1 eleq2 biimpcd adantl 3imp jca biimtrid
+        3exp rexlimdv wfn funfnd fvelrnb dmeqi biimpi fveq1i eqeq2i adantld imp
+        eqeq1i reximdv2 com23 sylbid impd impbid vex eqeq2 rexbidv elab 3bitr4g
+        ex elrab2 eqrdv f1oeq123d ) HUDSZJKSZUNZBCGUEJEUOZIUFZSZEIUGZUHZIUUEUIZ
+        IUUEUJZUEZYTUUDUAUOUBUOSUAUKUBHULUFZUMUHZIUPZUUEUUDUQZUUHYRUUKYSUAIHUUI
+        UBUUIURMUSZUTUUCEUUDVAZUUDUUJUUEIVBVCYTBUUECUUFGUUGYTGAUUEAUOZIUFZVDZUU
+        GYTGABUUPVDUUQQYTABUUPUUEUUPBUUETYTOVFZYTUUOBSUNUUPVGVEVHYTUUGUUQYRUUGU
+        UQTYSYRAUUDUUJUUEIYRUUKUUDUUJIVIUUMUUDUUJIVJVKUULYRUUNVFVLUTVMVNUURYTUU
+        FCYTUUFRUOZIUFZDUOZTZRUUEVOZDVPZCYTIVSZUULUUFUVDTYRUVEYSYRHVQUFZVSZUVEY
+        RHVRSUVGHVTUVFHUVFURWAVKZIUVFMWBWCUTZUUNRDUUEIWDVCYTUCUVDCYTUUTUCUOZTZR
+        UUEVOZUVJFSZJUVJSZUNZUVJUVDSUVJCSYTUVLUVOYTUVKUVORUUEUUSUUESZUUSUUDSZJU
+        UTSZUNZYTUVKUVOWJUUCUVREUUSUUDUUAUUSTUUBUUTJUUAUUSIWEWFWGZYTUVSUVKUVOYT
+        UVSUVKWHZUVMUVNUWAUVMUVJUVFWIZSZUWAUWCUUTUWBSZYTUVSUWDUVKYTUVEUVQUWDUVS
+        UVIUVQUVRWKUVEUVQUNUUTIWIZSUWDUUSIWLUWBUWEUUTUVFIIUVFMWMZWNWOWCWPXAUVKY
+        TUWCUWDXBZUVSUWGUVJUUTUVJUUTUWBWQWRWSWTYTUVSUVMUWCXBZUVKYRUWHYSYRFUWBUV
+        JYRFHXCUFUWBLHUDXDVHWFZUTXEWTYTUVSUVKUVNUVSUVKUVNWJZWJYTUVRUWJUVQUVKUVR
+        UVNUUTUVJJXFXGXHVFXIXJXLXKXMYRUVOUVLWJYSYRUVMUVNUVLYRUVMUWCUVNUVLWJZUWI
+        YRUWCUUSUVFUFZUVJTZRUVFUGZVOZUWKYRUVFUWNXNUWCUWOXBYRUVFUVHXORUWNUVJUVFX
+        PVKYRUVNUWOUVLYRUVNUWOUVLWJYRUVNUNZUWMUVKRUWNUUEUWPUUSUWNSZUWMUNZUVPUVK
+        UNUWPUWRUNZUVPUVKUWSUVSUVPUWSUVQUVRUWRUVQUWPUWQUVQUWMUWQUVQUWNUUDUUSUVF
+        IUWFXQWOXRUTXHUWPUWRUVRUWPUWMUVRUWQUVNUWMUVRWJYRUWMUVNUVRUWMUVJUUTJUVJU
+        UTTZUVJUWLUVJUWLTUWTUWLUUTUVJUUSUVFIUWFXSZXTXRWRWFXGXHYAYBXJUVTWCUWRUVK
+        UWPUWMUVKUWQUWMUVKUWLUUTUVJUXAYCXRXHXHXJYNYDYNYEYFYFYGUTYHUVCUVLDUVJUCY
+        IUVAUVJTUVBUVKRUUEUVAUVJUUTYJYKYLJUVASUVNDUVJFCUVAUVJJXFPYOYMYPVNVMYQWT
+        $.
+    $}
+
+    $( In a simple graph there is a 1-1 onto mapping between the indexed edges
+       containing a fixed vertex and the set of edges containing this vertex.
+       (Contributed by AV, 18-Oct-2020.)  (Proof shortened by AV,
+       11-Dec-2020.) $)
+    usgredgedg $p |- ( ( G e. USGraph /\ N e. V )
+                        -> F : A -1-1-onto-> B ) $=
+      ( cusgr wcel cushgr wf1o cuspgr usgruspgr uspgrushgr ushgredgedg sylan
+      syl ) HRSZHTSZJKSBCGUAUHHUBSUIHUCHUDUGABCDEFGHIJKLMNOPQUEUF $.
+  $}
+
+  ${
+    $d B e f $.  $d E e i j $.  $d G e f i j $.  $d G x $.  $d I e f i j $.
+    $d I e i x $.  $d N e f i j $.  $d N x $.  $d V e f i j $.  $d V x $.
+    $d G p $.  $d I p $.  $d p w $.
+    ushgredgedgloop.e $e |- E = ( Edg ` G ) $.
+    ushgredgedgloop.i $e |- I = ( iEdg ` G ) $.
+    ushgredgedgloop.a $e |- A = { i e. dom I | ( I ` i ) = { N } } $.
+    ushgredgedgloop.b $e |- B = { e e. E | e = { N } } $.
+    ushgredgedgloop.f $e |- F = ( x e. A |-> ( I ` x ) ) $.
+    $( In a simple hypergraph there is a 1-1 onto mapping between the indexed
+       edges being loops at a fixed vertex ` N ` and the set of loops at this
+       vertex ` N ` .  (Contributed by AV, 11-Dec-2020.)  (Revised by AV,
+       6-Jul-2022.) $)
+    ushgredgedgloop $p |- ( ( G e. USHGraph /\ N e. V )
+                            -> F : A -1-1-onto-> B ) $=
+      ( vj wcel wa wceq vw vp vf cushgr wf1o cv cfv csn cdm crab cima cres cvtx
+      wex cpw wf1 wss eqid ushgrfm adantr ssrab2 f1ores sylancl cmpt mpteq12dva
+      a1i eqidd eqtrid f1f syl feqresmpt eqtr4d wrex wfun ciedg cuhgr ushgruhgr
+      wf cab uhgrfun funeqi sylibr dfimafn wi fveqeq2 elrab simpl fvelrn eqcomi
+      w3a crn rneqi eleqtrrdi syl2an 3adant3 eleq1 eqcoms 3ad2ant3 cedg edgvalg
+      wb mpbird eleq2d 3ad2ant1 eqeq1 biimpcd adantl 3imp jca biimtrid rexlimdv
+      3exp wfn funfnd fvelrnb eleq2i biimpi fveq1i eqeq2i eqeq1d adantld eqeq1i
+      dmeqi imp reximdv2 com23 sylbid impd impbid vex eqeq2 rexbidv elab elrab2
+      ex 3bitr4g eqrdv eqtr2d f1oeq123d ) HUDRZJKRZSZBCGUEEUFZIUGJUHZTZEIUIZUJZ
+      IUUGUKZIUUGULZUEZUUBUUFUAUFUBUFRUAUNUBHUMUGZUOUJZIUPZUUGUUFUQZUUJYTUUMUUA
+      UAIHUUKUBUUKURMUSZUTUUEEUUFVAZUUFUULUUGIVBVCUUBBUUGCUUHGUUIUUBGAUUGAUFZIU
+      GZVDZUUIUUBGABUURVDUUSPUUBABUURUUGUURBUUGTUUBNVFZUUBUUQBRSUURVGVEVHYTUUIU
+      USTUUAYTAUUFUULUUGIYTUUMUUFUULIVRUUOUUFUULIVIVJUUNYTUUPVFVKUTVLUUTUUBUUHQ
+      UFZIUGZDUFZTZQUUGVMZDVSZCUUBIVNZUUNUUHUVFTYTUVGUUAYTHVOUGZVNZUVGYTHVPRUVI
+      HVQUVHHUVHURVTVJZIUVHMWAWBUTZUUPQDUUGIWCVCUUBUCUVFCUUBUVBUCUFZTZQUUGVMZUV
+      LFRZUVLUUDTZSZUVLUVFRUVLCRUUBUVNUVQUUBUVMUVQQUUGUVAUUGRZUVAUUFRZUVBUUDTZS
+      ZUUBUVMUVQWDUUEUVTEUVAUUFUUCUVAUUDIWEWFZUUBUWAUVMUVQUUBUWAUVMWJZUVOUVPUWC
+      UVOUVLUVHWKZRZUWCUWEUVBUWDRZUUBUWAUWFUVMUUBUVGUVSUWFUWAUVKUVSUVTWGUVGUVSS
+      UVBIWKUWDUVAIWHUVHIIUVHMWIZWLWMWNWOUVMUUBUWEUWFXAZUWAUWHUVLUVBUVLUVBUWDWP
+      WQWRXBUUBUWAUVOUWEXAZUVMYTUWIUUAYTFUWDUVLYTFHWSUGUWDLHUDWTVHXCZUTXDXBUUBU
+      WAUVMUVPUWAUVMUVPWDZWDUUBUVTUWKUVSUVMUVTUVPUVBUVLUUDXEXFXGVFXHXIXLXJXKYTU
+      VQUVNWDUUAYTUVOUVPUVNYTUVOUWEUVPUVNWDZUWJYTUWEUVAUVHUGZUVLTZQUVHUIZVMZUWL
+      YTUVHUWOXMUWEUWPXAYTUVHUVJXNQUWOUVLUVHXOVJYTUVPUWPUVNYTUVPUWPUVNWDYTUVPSZ
+      UWNUVMQUWOUUGUWQUVAUWORZUWNSZUVRUVMSUWQUWSSZUVRUVMUWTUWAUVRUWTUVSUVTUWSUV
+      SUWQUWRUVSUWNUWRUVSUWOUUFUVAUVHIUWGYCXPXQUTXGUWQUWSUVTUWQUWNUVTUWRUVPUWNU
+      VTWDYTUWNUVPUVTUWNUVLUVBUUDUVLUVBTZUVLUWMUVLUWMTUXAUWMUVBUVLUVAUVHIUWGXRZ
+      XSXQWQXTXFXGYAYDXIUWBWBUWSUVMUWQUWNUVMUWRUWNUVMUWMUVBUVLUXBYBXQXGXGXIYOYE
+      YOYFYGYGYHUTYIUVEUVNDUVLUCYJUVCUVLTUVDUVMQUUGUVCUVLUVBYKYLYMUVCUUDTUVPDUV
+      LFCUVCUVLUUDXEOYNYPYQYRYSXB $.
+  $}
+
+  ${
+    $d E e f x $.  $d G f x y $.  $d N e f x y $.  $d V f x y $.
+    usgredgleord.v $e |- V = ( Vtx ` G ) $.
+    usgredgleord.e $e |- E = ( Edg ` G ) $.
+    $( In a simple pseudograph the number of edges which contain a given vertex
+       is not greater than the number of vertices.  (Contributed by Alexander
+       van der Vekens, 4-Jan-2018.)  (Revised by AV, 6-Dec-2020.) $)
+    uspgredgdomord $p |- ( ( G e. USPGraph /\ N e. V )
+                   -> { e e. E | N e. e } ~<_ V ) $=
+      ( vx vy cuspgr wcel wa cv crab cpr wceq crio cmpt eqid cvv wf1 uspgredg2v
+      cdom wbr wi cvtx cfv vtxex eqeltrid f1domg syl adantr mpd ) CJKZDEKZLDAMK
+      ABNZEHUPHMDIMOPIEQRZUAZUPEUCUDZHIUPABUQCDEFGUPSUQSUBUNURUSUEZUOUNETKUTUNE
+      CUFUGTFCJUHUIUPETUQUJUKULUM $.
+
+    $( In a simple graph the number of edges which contain a given vertex is
+       not greater than the number of vertices.  (Contributed by Alexander van
+       der Vekens, 4-Jan-2018.)  (Revised by AV, 18-Oct-2020.)  (Proof
+       shortened by AV, 6-Dec-2020.) $)
+    usgredgdomord $p |- ( ( G e. USGraph /\ N e. V )
+                   -> { e e. E | N e. e } ~<_ V ) $=
+      ( cusgr wcel cuspgr cv crab cdom wbr usgruspgr uspgredgdomord sylan ) CHI
+      CJIDEIDAKIABLEMNCOABCDEFGPQ $.
+  $}
+
+  ${
+    $d G x $.  $d E x $.  $d I x $.  $d V x $.  $d ph x $.
+    usgrstrrepe.v $e |- V = ( Base ` G ) $.
+    usgrstrrepe.i $e |- I = ( .ef ` ndx ) $.
+    usgrstrrepe.s $e |- ( ph -> G Struct X ) $.
+    usgrstrrepe.b $e |- ( ph -> ( Base ` ndx ) e. dom G ) $.
+    usgrstrrepe.w $e |- ( ph -> E e. W ) $.
+    usgrstrrepeen.e $e |- ( ph -> E : dom E -1-1-> { x e. ~P V | x ~~ 2o } ) $.
+    $( Replacing (or adding) the edges (between elements of the base set) of an
+       extensible structure results in a simple graph.  Instead of requiring
+       ` ( ph -> G Struct X ) ` , it would be sufficient to require
+       ` ( ph -> Fun ( G \ { (/) } ) ) ` and ` ( ph -> G e. _V ) ` .
+       (Contributed by AV, 13-Nov-2021.)  (Proof shortened by AV,
+       16-Nov-2021.) $)
+    usgrstrrepeen $p |- ( ph -> ( G sSet <. I , E >. ) e. USGraph ) $=
+      ( wcel cfv wf1 syl mpbird cvv cop csts co cusgr ciedg cdm cv c2o cen cvtx
+      wbr cpw crab wceq wb cbs setsvtx eqtr4di pweqd f1eq3 setsiedg dmeqd eqidd
+      rabeqdv f1eq123d cn cstr structex cnx cedgf edgfndxnn eqeltri a1i syl3anc
+      setsex eqid isusgren ) ADECUAUBUCZUDOZVRUEPZUFZBUGUHUIUKZBVRUJPZULZUMZVTQ
+      ZAWFCUFZWECQZAWHWGWBBFULZUMZCQZNAWEWJUNWHWKUOAWBBWDWIAWCFAWCDUPPFACDEGHJK
+      LMUQIURUSVDWEWJWGCUTRSAWAWGWEWEVTCACDEGHJKLMVAZAVTCWLVBAWEVCVESAVRTOZVSWF
+      UOADTOZEVFOZCGOWMADHVGUKWNKDHVHRWOAEVIVJPVFJVKVLVMMECDTGVFVOVNBTVTVRWCWCV
+      PVTVPVQRS $.
   $}
 
 
@@ -196693,6 +197408,9 @@ htmldef "F." as
     " <IMG SRC='perp.gif' WIDTH=11 HEIGHT=19 ALT='F.' TITLE='F.'> ";
   althtmldef "F." as '&perp;';
   latexdef "F." as "\bot";
+htmldef "if-" as "if-";
+  althtmldef "if-" as "if-";
+  latexdef "if-" as "\operatorname{if}";
 htmldef "A." as
     "<IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 ALT=' A.' TITLE='A.'>";
   althtmldef "A." as '&forall;'; /* &#8704; */
