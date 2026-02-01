@@ -197297,6 +197297,16 @@ $)
     ( cwlks cfv wcel c1st c2nd cop wbr wlkop eleq1d ibi df-br sylibr ) BACDZEZB
     FDZBGDZHZOEZQROIPTPBSOABJKLQROMN $.
 
+  ${
+    $d G f p $.  $d W f p $.
+    $( If there is a walk ` W ` there is a pair of functions representing this
+       walk.  (Contributed by Alexander van der Vekens, 22-Jul-2018.) $)
+    wlk2f $p |- ( W e. ( Walks ` G ) -> E. f E. p f ( Walks ` G ) p ) $=
+      ( cwlks cfv wcel c1st cvv wa wbr cv wex 1stexg 2ndexg jca wlkcprim breq12
+      c2nd spc2egv sylc ) CBEFZGZCHFZIGZCSFZIGZJUDUFUBKZALZDLZUBKZDMAMUCUEUGCUB
+      NCUBOPBCQUKUHADUDUFIIUIUDUJUFUBRTUA $.
+  $}
+
 
 $(
 ###############################################################################
