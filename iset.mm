@@ -197318,6 +197318,28 @@ $)
       NCUBOPBCQUKUHADUDUFIIUIUDUJUFUBRTUA $.
   $}
 
+  ${
+    $d F k $.  $d G k $.  $d P k $.
+    wlkcomp.v $e |- V = ( Vtx ` G ) $.
+    wlkcomp.i $e |- I = ( iEdg ` G ) $.
+    wlkcomp.1 $e |- F = ( 1st ` W ) $.
+    wlkcomp.2 $e |- P = ( 2nd ` W ) $.
+    $( Implications for the properties of the components of a walk.
+       (Contributed by Alexander van der Vekens, 23-Jun-2018.)  (Revised by AV,
+       2-Jan-2021.) $)
+    wlkcompim $p |- ( W e. ( Walks ` G ) -> ( F e. Word dom I
+                /\ P : ( 0 ... ( # ` F ) ) --> V /\ A. k e. ( 0 ..^ ( # ` F ) )
+                                  if- ( ( P ` k ) = ( P ` ( k + 1 ) ) ,
+                                        ( I ` ( F ` k ) ) = { ( P ` k ) } ,
+                                        { ( P ` k ) , ( P ` ( k + 1 ) ) }
+                                        C_ ( I ` ( F ` k ) ) ) ) ) $=
+      ( cwlks cfv wcel wbr cdm cc0 co wceq cvv cword chash cfz wf cv c1 csn cpr
+      caddc wss wif cfzo wral c1st c2nd wlkcprim 3brtr4g wb wlkmex iswlkg mpbid
+      w3a syl ) GDLMZNZCAVDOZCEPUANQCUBMZUCRFAUDBUEZAMZVHUFUIRAMZSVHCMEMZVIUGSV
+      IVJUHVKUJUKBQVGULRUMVBZVEGUNMGUOMCAVDDGUPJKUQVEDTNVFVLURDGUSABCDEFTHIUTVC
+      VA $.
+  $}
+
 
 $(
 ###############################################################################
