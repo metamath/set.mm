@@ -197282,6 +197282,13 @@ $)
       UFUGCBDUHAUIBCEDUJUK $.
   $}
 
+  $( A walk is an ordered pair.  (Contributed by Alexander van der Vekens,
+     30-Jun-2018.)  (Revised by AV, 1-Jan-2021.) $)
+  wlkop $p |- ( W e. ( Walks ` G )
+                 -> W = <. ( 1st ` W ) , ( 2nd ` W ) >. ) $=
+    ( cwlks cfv wrel wcel c1st c2nd cop wceq relwlk 1st2nd mpan ) ACDZEBNFBBGDB
+    HDIJAKBNLM $.
+
 
 $(
 ###############################################################################
