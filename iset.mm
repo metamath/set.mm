@@ -197300,6 +197300,11 @@ $)
     ( cwlks cfv wrel wcel c1st c2nd cop wceq relwlk 1st2nd mpan ) ACDZEBNFBBGDB
     HDIJAKBNLM $.
 
+  $( A walk is an ordered pair.  (Contributed by Jim Kingdon, 2-Feb-2026.) $)
+  wlkelvv $p |- ( W e. ( Walks ` G ) -> W e. ( _V X. _V ) ) $=
+    ( cwlks cfv wcel c1st c2nd cop cvv cxp wlkop 1stexg 2ndexg opelxpd eqeltrd
+    ) BACDZEZBBFDZBGDZHIIJABKQRSIIBPLBPMNO $.
+
   $( A walk as class with two components.  (Contributed by Alexander van der
      Vekens, 22-Jul-2018.)  (Revised by AV, 2-Jan-2021.)  (Revised by Jim
      Kingdon, 1-Feb-2026.) $)
