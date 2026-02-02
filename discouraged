@@ -17626,6 +17626,7 @@ New usage of "mobidvALT" is discouraged (0 uses).
 New usage of "moexex" is discouraged (2 uses).
 New usage of "moexexv" is discouraged (0 uses).
 New usage of "mof0ALT" is discouraged (0 uses).
+New usage of "mpteleeOLD" is discouraged (0 uses).
 New usage of "mptmpoopabbrdOLD" is discouraged (0 uses).
 New usage of "mptssALT" is discouraged (0 uses).
 New usage of "mpv" is discouraged (1 uses).
@@ -18481,6 +18482,7 @@ New usage of "reglogleb" is discouraged (1 uses).
 New usage of "reglogltb" is discouraged (1 uses).
 New usage of "reglogmul" is discouraged (1 uses).
 New usage of "reldmxpcALT" is discouraged (0 uses).
+New usage of "reliunOLD" is discouraged (0 uses).
 New usage of "relop" is discouraged (1 uses).
 New usage of "relopabVD" is discouraged (0 uses).
 New usage of "relopabiALT" is discouraged (0 uses).
@@ -20437,6 +20439,7 @@ Proof modification of "moabexOLD" is discouraged (65 steps).
 Proof modification of "mobidvALT" is discouraged (48 steps).
 Proof modification of "mof0ALT" is discouraged (67 steps).
 Proof modification of "mopickr" is discouraged (77 steps).
+Proof modification of "mpteleeOLD" is discouraged (202 steps).
 Proof modification of "mptmpoopabbrdOLD" is discouraged (208 steps).
 Proof modification of "mptssALT" is discouraged (57 steps).
 Proof modification of "mrelatglbALT" is discouraged (66 steps).
@@ -20618,6 +20621,7 @@ Proof modification of "re2luk3" is discouraged (59 steps).
 Proof modification of "reexALT" is discouraged (19 steps).
 Proof modification of "refsymrels3" is discouraged (56 steps).
 Proof modification of "reldmxpcALT" is discouraged (143 steps).
+Proof modification of "reliunOLD" is discouraged (98 steps).
 Proof modification of "relopabVD" is discouraged (354 steps).
 Proof modification of "relopabiALT" is discouraged (74 steps).
 Proof modification of "renegcl" is discouraged (34 steps).
