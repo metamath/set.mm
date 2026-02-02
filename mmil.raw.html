@@ -2862,6 +2862,30 @@ A either - there are singletons at every rank.</P>
   <td>~ opabm</td>
 </tr>
 
+<tr>
+  <td>opab0</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof will not work as-is</td>
+</tr>
+
+<tr>
+  <td>csbopab</td>
+  <td>~ csbopabg</td>
+</tr>
+
+<tr>
+  <td>csbmpt12</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof may be adaptable (it needs to
+  use ~ csbopabg )</td>
+</tr>
+
+<tr>
+  <td>csbmpt2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses csbmpt12</td>
+</tr>
+
 <TR>
 <TD>df-so</TD>
 <TD>~ df-iso </TD>
@@ -3395,7 +3419,7 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
 </TR>
 
 <TR>
-<TD ROWSPAN="6">fvex</TD>
+<TD ROWSPAN="7">fvex</TD>
 <TD>~ funfvex </TD>
 <TD>when evaluating a function within its domain</TD>
 </TR>
@@ -3415,6 +3439,11 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
 <TD>when the function is defined via maps-to, yields a set for all inputs,
 and is evaluated at a set</TD>
 </TR>
+
+<tr>
+  <td>~ elfvex</td>
+  <td>when a function value is inhabited</td>
+</tr>
 
 <TR>
 <TD>~ 1stexg , ~ 2ndexg </TD>
@@ -3442,6 +3471,15 @@ and is evaluated at a set</TD>
   <TD>The set.mm proof uses case elimination on whether ` ( F `` X ) `
   is the empty set.</TD>
 </TR>
+
+<tr>
+  <td>fvn0fvelrn</td>
+  <td><i>none</i></td>
+  <td>We get somewhat close with ~ fvmbr (not empty is, as usual,
+  changed to inhabited).  To get from there
+  to ` ( F `` X ) e. ran F ` we'd want ` X ` to be a set (see ~ elrng ).
+  If ` F ` is a relation see ~ relelfvdm .</td>
+</tr>
 
 <TR>
   <TD>fvssunirn</TD>
@@ -3779,10 +3817,18 @@ operation, as these are just a few examples).</TD>
 </TR>
 
 <tr>
-  <td>opabresex2d</td>
+  <td>opabresex2</td>
   <td><i>none</i></td>
-  <td>it should be possible to update iset.mm to reflect
-  set.mm in this area and related theorems</td>
+  <td>This theorem would appear to need set existence conditions
+  on ` W ` and ` G `</td>
+</tr>
+
+<tr>
+  <td>brfvopab</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof does case elimination on whether ` X ` is
+  a set, so adding a sethood condition for ` X ` would seem to
+  be needed.  See ~ brabv .</td>
 </tr>
 
 <tr>
@@ -9655,9 +9701,8 @@ or not.</TD>
 
 <tr>
   <td>ffz0iswrd</td>
-  <td><i>none</i></td>
-  <td>probably would need another condition such
-  as ` L e. ZZ `</td>
+  <td>~ ffz0iswrdnn0</td>
+  <td>adds ` L e. NN0 ` condition</td>
 </tr>
 
 <tr>
@@ -16988,11 +17033,67 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>df-wlks</td>
+  <td>wlkprop</td>
+  <td>~ wlkpropg</td>
+</tr>
+
+<tr>
+  <td>wlkv</td>
+  <td>~ wlkvg</td>
+</tr>
+
+<tr>
+  <td>wlkf</td>
+  <td>~ wlkfg</td>
+</tr>
+
+<tr>
+  <td>wlkcl</td>
+  <td>~ wlkclg</td>
+</tr>
+
+<tr>
+  <td>wlkp</td>
+  <td>~ wlkpg</td>
+</tr>
+
+<tr>
+  <td>wlkpwrd</td>
+  <td>~ wlkpwrdg</td>
+</tr>
+
+<tr>
+  <td>wlklenvp1</td>
+  <td>~ wlklenvp1g</td>
+</tr>
+
+<tr>
+  <td>wksv</td>
   <td><i>none</i></td>
-  <td>the set.mm definition uses if- ( df-ifp ) and probably
-  the set of vertexes will need to have decidable equality for
-  the definition to behave well</td>
+  <td>presumably would be provable with a condition that ` G `
+  is a set</td>
+</tr>
+
+<tr>
+  <td>wlkn0</td>
+  <td>~ wlkm</td>
+  <td>changes not empty to inhabited and adds a set existence
+  condition</td>
+</tr>
+
+<tr>
+  <td>wlklenvm1</td>
+  <td>~ wlklenvm1g</td>
+</tr>
+
+<tr>
+  <td>wlkvtxeledg</td>
+  <td>~ wlkvtxeledgg</td>
+</tr>
+
+<tr>
+  <td>wlkvtxiedg</td>
+  <td>~ wlkvtxiedgg</td>
 </tr>
 
 <tr>
