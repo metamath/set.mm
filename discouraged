@@ -17235,6 +17235,8 @@ New usage of "itvndx" is discouraged (4 uses).
 New usage of "iunconnALT" is discouraged (0 uses).
 New usage of "iunconnlem2" is discouraged (1 uses).
 New usage of "iuneq12dOLD" is discouraged (0 uses).
+New usage of "iunssOLD" is discouraged (0 uses).
+New usage of "iunssfOLD" is discouraged (0 uses).
 New usage of "ivthALT" is discouraged (0 uses).
 New usage of "jaoded" is discouraged (1 uses).
 New usage of "joincomALT" is discouraged (1 uses).
@@ -20349,6 +20351,8 @@ Proof modification of "itgeq1fOLD" is discouraged (152 steps).
 Proof modification of "iunconnALT" is discouraged (56 steps).
 Proof modification of "iunconnlem2" is discouraged (580 steps).
 Proof modification of "iuneq12dOLD" is discouraged (37 steps).
+Proof modification of "iunssOLD" is discouraged (84 steps).
+Proof modification of "iunssfOLD" is discouraged (89 steps).
 Proof modification of "ivthALT" is discouraged (1080 steps).
 Proof modification of "jaoded" is discouraged (26 steps).
 Proof modification of "jath" is discouraged (318 steps).
