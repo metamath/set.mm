@@ -197381,6 +197381,20 @@ $)
       WQXAXEJJXGWQXAXEVRWQXAXEVSVTWAWB $.
   $}
 
+  ${
+    edginwlk.i $e |- I = ( iEdg ` G ) $.
+    edginwlk.e $e |- E = ( Edg ` G ) $.
+    $( The value of the edge function for an index of an edge within a walk is
+       an edge.  (Contributed by AV, 2-Jan-2021.)  (Revised by AV,
+       9-Dec-2021.) $)
+    edginwlk $p |- ( ( Fun I /\ F e. Word dom I /\ K e. ( 0 ..^ ( # ` F ) ) )
+                     -> ( I ` ( F ` K ) ) e. E ) $=
+      ( wfun cdm cword wcel cc0 chash cfv cfzo co w3a crn simp1 wrdsymbcl ciedg
+      3adant1 fvelrn syl2anc cedg edgval eqcomi rneqi 3eqtri eleqtrrdi ) DHZBDI
+      ZJKZELBMNOPKZQZEBNZDNZDRZAUOUKUPULKZUQURKUKUMUNSUMUNUSUKEULBTUBUPDUCUDACU
+      ENCUANZRURGCUFUTDDUTFUGUHUIUJ $.
+  $}
+
 
 $(
 ###############################################################################
