@@ -197355,6 +197355,32 @@ $)
       UQUSVDUOUP $.
   $}
 
+  ${
+    $d A x $.  $d B x $.  $d N x $.
+    $( Conditions for two walks (within the same graph) being the same.
+       (Contributed by AV, 1-Jul-2018.)  (Revised by AV, 16-May-2019.)
+       (Revised by AV, 14-Apr-2021.) $)
+    wlkeq $p |- ( ( A e. ( Walks ` G ) /\ B e. ( Walks ` G )
+          /\ N = ( # ` ( 1st ` A ) ) ) -> ( A = B <-> ( N = ( # ` ( 1st ` B ) )
+      /\ A. x e. ( 0 ..^ N ) ( ( 1st ` A ) ` x ) = ( ( 1st ` B ) ` x )
+      /\ A. x e. ( 0 ... N ) ( ( 2nd ` A ) ` x ) = ( ( 2nd ` B ) ` x ) ) ) ) $=
+      ( cfv wcel chash wceq wa cc0 cfzo co wral cfz wb eqid cvv syl2anc anbi12d
+      cwlks c1st w3a c2nd cv ciedg cdm cword cvtx wf c1 wlkelwrd anim12i wlkmex
+      cmin wbr wlkcprim wlklenvm1g eqwrd ad2ant2r adantr cn0 lencl simpr 2ffzeq
+      syl2an3an 3adant3 eqeq1 raleqdv bibi2d 3ad2ant3 mpbird cxp wlkelvv xpopth
+      oveq2 syl2an 3anass anandi bitr2i a1i 3bitr3d ) BDUAFZGZCWCGZEBUBFZHFZIZU
+      CZWFCUBFZIZBUDFZCUDFZIZJZEWJHFZIZAUEZWFFWRWJFIZAKELMZNZJZWQWRWLFWRWMFIZAK
+      EOMZNZJZJZBCIZWQXAXEUCZWIWOXGPZWOWGWPIZWSAKWGLMZNZJZXKXCAKWGOMZNZJZJZPZWD
+      WEXSWHWDWEJWFDUFFZUGZUHZGZXODUIFZWLUJZJZWJYBGZKWPOMYDWMUJZJZJZWGWLHFUKUOM
+      IZWPWMHFUKUOMIZJZXSWDYFWEYIWLWFDXTYDBYDQZXTQZWFQWLQULWMWJDXTYDCYNYOWJQWMQ
+      ULUMWDYKWEYLWDDRGZWFWLWCUPYKDBUNDBUQWLWFDRURSWEYPWJWMWCUPYLDCUNDCUQWMWJDR
+      URSUMYJYMJWKXNWNXQYJWKXNPZYMYCYGYQYEYHYAYAWFAWJUSUTVAYJWNXQPZYMYFWGVBGZYE
+      YIYHYRYCYSYEYAWFVCVAYCYEVDYGYHVDWMAWLWGWPYDYDVEVFVATSVGWHWDXJXSPWEWHXGXRW
+      OWHXBXNXFXQWHWQXKXAXMEWGWPVHZWHWSAWTXLEWGKLVPVITWHWQXKXEXPYTWHXCAXDXOEWGK
+      OVPVITTVJVKVLWDWEWOXHPZWHWDBRRVMZGCUUBGUUAWEDBVNDCVNBCRRRRVOVQVGXGXIPWIXI
+      WQXAXEJJXGWQXAXEVRWQXAXEVSVTWAWB $.
+  $}
+
 
 $(
 ###############################################################################
