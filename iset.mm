@@ -197398,6 +197398,19 @@ $)
       SAITADGQVBVDSMDGUKULVDUSSAVCEEVCHUMUNTUOUP $.
   $}
 
+  ${
+    upgredginwlk.i $e |- I = ( iEdg ` G ) $.
+    upgredginwlk.e $e |- E = ( Edg ` G ) $.
+    $( The value of the edge function for an index of an edge within a walk is
+       an edge.  (Contributed by AV, 2-Jan-2021.) $)
+    upgredginwlk $p |- ( ( G e. UPGraph /\ F e. Word dom I )
+                 -> ( K e. ( 0 ..^ ( # ` F ) ) -> ( I ` ( F ` K ) ) e. E ) ) $=
+      ( cupgr wcel cdm cword wa cc0 chash cfv cfzo co wfun cuhgr upgruhgr simpr
+      uhgrfun syl ad2antrr simplr simpll edginwlkd ex ) CHIZBDJKIZLZEMBNOPQIZEB
+      ODOAIUKULLABCDEHFGUIDRZUJULUICSIUMCTDCFUBUCUDUIUJULUEUKULUAUIUJULUFUGUH
+      $.
+  $}
+
 
 $(
 ###############################################################################
