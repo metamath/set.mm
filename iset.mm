@@ -67450,6 +67450,15 @@ $)
   $}
 
   ${
+    $d A j $.  $d B j $.
+    $( A set with an element dominates one.  (Contributed by Jim Kingdon,
+       3-Feb-2026.) $)
+    dom1oi $p |- ( ( A e. V /\ B e. A ) -> 1o ~<_ A ) $=
+      ( vj wcel wa c1o cdom wbr cv wex elex2 adantl wb dom1o adantr mpbird ) AC
+      EZBAEZFGAHIZDJAEDKZSUARDBALMRTUANSADCOPQ $.
+  $}
+
+  ${
     $d f x y A $.  $d f x y B $.
     $( A set equinumerous to an inhabited set is inhabited.  (Contributed by
        Jim Kingdon, 19-May-2020.) $)
