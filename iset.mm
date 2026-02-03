@@ -197145,6 +197145,24 @@ $)
   $}
 
   ${
+    $d F k $.  $d G k $.  $d P k $.
+    wlkprop.v $e |- V = ( Vtx ` G ) $.
+    wlkprop.i $e |- I = ( iEdg ` G ) $.
+    $( Properties of a walk.  (Contributed by AV, 5-Nov-2021.) $)
+    wlkprop $p |- ( F ( Walks ` G ) P
+                    -> ( F e. Word dom I /\ P : ( 0 ... ( # ` F ) ) --> V
+                               /\ A. k e. ( 0 ..^ ( # ` F ) )
+                                  if- ( ( P ` k ) = ( P ` ( k + 1 ) ) ,
+                                        ( I ` ( F ` k ) ) = { ( P ` k ) } ,
+                                        { ( P ` k ) , ( P ` ( k + 1 ) ) }
+                                        C_ ( I ` ( F ` k ) ) ) ) ) $=
+      ( cvv wcel cwlks cfv wbr cdm cword cc0 chash cfz co wceq wf cv c1 csn cpr
+      caddc wss wif cfzo wral w3a wlkv simp1d wlkpropg mpancom ) DIJZCADKLMZCEN
+      OJPCQLZRSFAUABUBZALZUSUCUFSALZTUSCLELZUTUDTUTVAUEVBUGUHBPURUISUJUKUQUPCIJ
+      AIJACDULUMABCDEFIGHUNUO $.
+  $}
+
+  ${
     $d G f k p $.  $d W f $.
     $( The classes involved in a walk are sets.  Now that we have ~ wlkv there
        is no reason to use this theorem in new proofs and using ~ wlkv is
