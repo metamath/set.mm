@@ -353,6 +353,9 @@
 "unifndx" is used by "slotsdifunifndx".
 "unifndx" is used by "unifndxnn".
 "unifndx" is used by "unifndxntsetndx".
+"wlkvg" is used by "iswlkg".
+"wlkvg" is used by "wlkvtxeledgg".
+"wlkvg" is used by "wlkvtxiedgg".
 New usage of "0cnALT" is discouraged (0 uses).
 New usage of "0reALT" is discouraged (0 uses).
 New usage of "19.21h" is discouraged (3 uses).
@@ -528,6 +531,7 @@ New usage of "strnfvn" is discouraged (3 uses).
 New usage of "tfri1dALT" is discouraged (0 uses).
 New usage of "unifndx" is discouraged (5 uses).
 New usage of "uzind4ALT" is discouraged (0 uses).
+New usage of "wlkvg" is discouraged (3 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
 Proof modification of "0cnALT" is discouraged (49 steps).
 Proof modification of "0reALT" is discouraged (15 steps).

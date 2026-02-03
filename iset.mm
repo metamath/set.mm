@@ -197132,9 +197132,25 @@ $)
   $}
 
   ${
-    $d G f k p $.  $d W f $.
+    $d G f k p $.
     $( The classes involved in a walk are sets.  (Contributed by Alexander van
        der Vekens, 31-Oct-2017.)  (Revised by AV, 3-Feb-2021.) $)
+    wlkv $p |- ( F ( Walks ` G ) P -> ( G e. _V /\ F e. _V /\ P e. _V ) ) $=
+      ( vf vp vk cwlks cfv wbr cvv wcel cop df-br wlkmex sylbi cv cc0 wceq eqid
+      co wa ciedg cdm cword chash cfz cvtx wf c1 caddc csn cpr wss wif cfzo w3a
+      wral copab wksfval breqd brabv biimtrdi mpcom simpld simprd 3jca ) BACGHZ
+      IZCJKZBJKZAJKZVHBALZVGKVIBAVGMCVLNOZVHVJVKVIVHVJVKUAZVMVIVHBADPZCUBHZUCUD
+      KQVOUEHZUFTCUGHZEPZUHFPZVSHZVTUIUJTVSHZRVTVOHVPHZWAUKRWAWBULWCUMUNFQVQUOT
+      UQUPZDEURZIVNVIVGWEBADFCVPVRJEVRSVPSUSUTWDDEBAVAVBVCZVDVHVJVKWFVEVF $.
+  $}
+
+  ${
+    $d G f k p $.  $d W f $.
+    $( The classes involved in a walk are sets.  Now that we have ~ wlkv there
+       is no reason to use this theorem in new proofs and using ~ wlkv is
+       encouraged for consistency with the Metamath Proof Explorer.
+       (Contributed by Alexander van der Vekens, 31-Oct-2017.)  (Revised by AV,
+       3-Feb-2021.)  (New usage is discouraged.) $)
     wlkvg $p |- ( ( G e. W /\ F ( Walks ` G ) P )
         -> ( F e. _V /\ P e. _V ) ) $=
       ( vf vp vk wcel cwlks cfv wbr cvv wa cv ciedg cdm cc0 co wceq eqid cfz wf
