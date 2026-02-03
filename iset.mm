@@ -197205,6 +197205,18 @@ $)
     $( The mapping enumerating the (indices of the) edges of a walk is a word
        over the indices of the edges of the graph.  (Contributed by AV,
        5-Apr-2021.) $)
+    wlkf $p |- ( F ( Walks ` G ) P -> F e. Word dom I ) $=
+      ( vk cwlks cfv wbr cdm cword wcel cc0 chash cfz co cvtx wf cv wceq c1 csn
+      caddc cpr wss wif cfzo wral eqid wlkprop simp1d ) BACGHIBDJKLMBNHZOPCQHZA
+      RFSZAHZUNUAUCPAHZTUNBHDHZUOUBTUOUPUDUQUEUFFMULUGPUHAFBCDUMUMUIEUJUK $.
+  $}
+
+  ${
+    $d F k $.  $d G k $.  $d P k $.
+    wlkfg.i $e |- I = ( iEdg ` G ) $.
+    $( The mapping enumerating the (indices of the) edges of a walk is a word
+       over the indices of the edges of the graph.  (Contributed by AV,
+       5-Apr-2021.) $)
     wlkfg $p |- ( ( G e. W /\ F ( Walks ` G ) P ) -> F e. Word dom I ) $=
       ( vk wcel cwlks cfv wbr wa cdm cword cc0 chash cfz co cvtx wceq wf cv csn
       c1 caddc cpr wss wif cfzo wral eqid wlkpropg simp1d ) CEHBACIJKLBDMNHOBPJ
