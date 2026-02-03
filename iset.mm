@@ -197469,6 +197469,29 @@ $)
       QZOZUKDIDROUGUHUISUJBULUAOZUIUMUHUGUNUIABCDFUBUCUGUHUIUDEULBUETUKDUFT $.
   $}
 
+  ${
+    $d F k $.  $d G k $.  $d P k $.
+    $( A walk of length 1 from a vertex to itself is a loop.  (Contributed by
+       AV, 23-Apr-2021.) $)
+    wlkl1loop $p |- ( ( ( Fun ( iEdg ` G ) /\ F ( Walks ` G ) P )
+                         /\ ( ( # ` F ) = 1 /\ ( P ` 0 ) = ( P ` 1 ) ) )
+                       -> { ( P ` 0 ) } e. ( Edg ` G ) ) $=
+      ( vk cfv wa c1 wceq cc0 csn wcel wi cvv w3a cfzo co eqtrdi ad2antrl caddc
+      c0ex ciedg wfun cwlks wbr chash cedg wlkv crn simp3l simp2 snid eleqtrrid
+      oveq2 fzo01 3ad2ant3 eqid iedginwlk syl3anc cdm cword cfz cvtx wf cpr wss
+      cv wif wral iswlkg raleqdv oveq1 0p1e1 wkslem2 mpdan bitrdi ifptru biimpa
+      wb ralsn eqcomd ex ad2antll sylbid biimtrdi 3imp edgvalg 3ad2ant1 3eltr4d
+      com12 3exp mpcom expd impcom imp ) CUAEZUBZBACUCEUDZFBUEEZGHZIAEZGAEZHZFZ
+      WTJZCUFEZKZWQWPXCXFLWQWPXCXFCMKZBMKZAMKZNWQWPXCFZXFLZABCUGXGXHWQXKLXIXGWQ
+      XJXFXGWQXJNZIBEWOEZWOUHZXDXEXLWPWQIIWROPZKZXMXNKXGWQWPXCUIXGWQXJUJXJXGXPW
+      QWSXPWPXBWSIIJZXOITUKWSXOIGOPXQWRGIOUMUNQZULRUOABCWOIWOUPZUQURXGWQXJXDXMH
+      ZXGWQBWOUSUTKZIWRVAPCVBEZAVCZDVFZAEZYDGSPZAEZHYDBEWOEZYEJHYEYGVDYHVEVGZDX
+      OVHZNXJXTLZADBCWOYBMYBUPXSVIYJYAYKYCXJYJXTXJYJXBXMXDHZWTXAVDXMVEZVGZXTWSY
+      JYNVRWPXBWSYJYIDXQVHYNWSYIDXOXQXRVJYIYNDITYDIHZYFGHYIYNVRYOYFIGSPGYDIGSVK
+      VLQYDIGABWOVMVNVSVORXBYNXTLWPWSXBYNXTXBYNFXMXDXBYNYLXBYLYMVPVQVTWAWBWCWIU
+      OWDWEXGWQXEXNHXJCMWFWGWHWJWGWKWLWMWN $.
+  $}
+
 
 $(
 ###############################################################################
