@@ -106340,6 +106340,12 @@ $)
     WHWAWIWSWJVRWIWPBURUSUTPVAQVBRSVCQVDVESWCVOVSVOWDWCVSWFVQWAWBWDVSMVQWAWBWDV
     SWEWGVSWKVFVGVHVISVJVKRVLABVMVN $.
 
+  $( Translation of one between closed and open integer ranges.  (Contributed
+     by Thierry Arnoux, 28-Jul-2020.) $)
+  fz1fzo0m1 $p |- ( M e. ( 1 ... N ) -> ( M - 1 ) e. ( 0 ..^ N ) ) $=
+    ( c1 cfz co wcel cmin cc0 cfzo elfzmlbm cz wceq elfzel2 fzoval syl eleqtrrd
+    ) ACBDEFZACGEHBCGEDEZHBIEZACBJQBKFSRLACBMHBNOP $.
+
   ${
     $d k N $.
     $( Half-open integer ranges starting with 1 are subsets of ` NN ` .
