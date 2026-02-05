@@ -33172,6 +33172,16 @@ $)
       ( cpr prid1 prcom eleqtri ) BBADABDBACEBAFG $.
   $}
 
+  $( An unordered pair is a singleton or a subset of itself.  This theorem is
+     helpful to convert theorems about walks in arbitrary graphs into theorems
+     about walks in pseudographs.  (Contributed by AV, 27-Feb-2021.) $)
+  ifpprsnssdc $p |- ( ( P = { A , B } /\ DECID A = B )
+                    -> if- ( A = B , P = { A } , { A , B } C_ P ) ) $=
+    ( cpr wceq wdc wa csn wss wif wi preq2 eqtr4di eqcoms eqeq2d biimpcd adantr
+    wn dfsn2 eqimss2 a1d wb dfifp2dc adantl mpbir2and ) CABDZEZABEZFZGUHCAHZEZU
+    FCIZJZUHUKKZUHRZULKZUGUNUIUHUGUKUHUFUJCUFUJEBABAEUFAADUJBAALASMNOPQUGUPUIUG
+    ULUOUFCTUAQUIUMUNUPGUBUGUHUKULUCUDUE $.
+
   $( A proper class vanishes in an unordered pair.  (Contributed by NM,
      5-Aug-1993.) $)
   prprc1 $p |- ( -. A e. _V -> { A , B } = { B } ) $=
