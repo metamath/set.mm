@@ -197280,6 +197280,13 @@ $)
     wlkp.v $e |- V = ( Vtx ` G ) $.
     $( The mapping enumerating the vertices of a walk is a function.
        (Contributed by AV, 5-Apr-2021.) $)
+    wlkp $p |- ( F ( Walks ` G ) P -> P : ( 0 ... ( # ` F ) ) --> V ) $=
+      ( vk cwlks cfv wbr ciedg cdm cword wcel cc0 chash cfz co wf cv wceq caddc
+      c1 csn cpr wss wif cfzo wral eqid wlkprop simp2d ) BACGHIBCJHZKLMNBOHZPQD
+      ARFSZAHZUNUBUAQAHZTUNBHULHZUOUCTUOUPUDUQUEUFFNUMUGQUHAFBCULDEULUIUJUK $.
+
+    $( The mapping enumerating the vertices of a walk is a function.
+       (Contributed by AV, 5-Apr-2021.) $)
     wlkpg $p |- ( ( G e. W /\ F ( Walks ` G ) P )
         -> P : ( 0 ... ( # ` F ) ) --> V ) $=
       ( vk wcel cwlks cfv wbr wa ciedg cdm cword cc0 chash cfz co wceq wf cv c1
