@@ -197803,6 +197803,18 @@ $)
       TVCVDVEVF $.
   $}
 
+  ${
+    $d F k $.  $d G k $.  $d P k $.
+    $( In a multigraph, each walk has no loops!  (Contributed by Alexander van
+       der Vekens, 7-Nov-2017.)  (Revised by AV, 3-Jan-2021.) $)
+    umgrwlknloop $p |- ( ( G e. UMGraph /\ F ( Walks ` G ) P )
+            -> A. k e. ( 0 ..^ ( # ` F ) ) ( P ` k ) =/= ( P ` ( k + 1 ) ) ) $=
+      ( cumgr wcel cwlks cfv wbr wa cv c1 caddc co cpr cedg cc0 chash cfzo wral
+      wne cupgr umgrupgr upgrwlkvtxedg sylan wi umgredgne ex adantr ralimdv mpd
+      eqid ) DEFZCADGHIZJZBKZAHZUPLMNAHZODPHZFZBQCRHSNZTZUQURUAZBVATUMDUBFUNVBD
+      UCABUSCDUSULZUDUEUOUTVCBVAUMUTVCUFUNUMUTVCUSDUQURVDUGUHUIUJUK $.
+  $}
+
 
 $(
 ###############################################################################
