@@ -197784,6 +197784,23 @@ $)
       EUBDUKUCZUDZVKVQVNVJVAVQVFVJVHDVGVIPQUERVPVSEVTVNVSVKVRVLVMUFUGUHVPUSVCVG
       IZDVDNZVOVQWAIULUSUTVFVJVNUIVKWBVNVFVJWBVAVFVCVJVGVCVETVGVITUJUMRVKWCVNVF
       VAWCVJVFVDDVCVEPQUNREABCDUOUPUQUR $.
+
+    $( Conditions for two walks within the same simple pseudograph to be
+       identical.  It is sufficient that the vertices (in the same order) are
+       identical.  (Contributed by AV, 6-May-2021.) $)
+    uspgr2wlkeqi $p |- ( ( G e. USPGraph /\ ( A e. ( Walks ` G )
+                        /\ B e. ( Walks ` G ) ) /\ ( 2nd ` A ) = ( 2nd ` B ) )
+                         -> A = B ) $=
+      ( wcel cfv wa c2nd wceq c1st chash wbr wi wlkcprim c1 co adantl wlklenvm1
+      cmin simpl anim12i cuspgr cwlks w3a cn0 wlkcl oveq1d eqcomd wb eqeqan12rd
+      fveq2 adantr mpbird anim2i exp44 mpcom syl2im imp31 3adant1 eqidd syl3anc
+      simpr uspgr2wlkeq2 ex com23 3impia mpd ) CUADZACUBEZDZBVHDZFZAGEZBGEZHZUC
+      AIEZJEZUDDZBIEZJEZVPHZFZABHZVKVNWAVGVIVJVNWAVIVOVLVHKZVJVRVMVHKZVNWALZCAM
+      CBMVQWCWDWELVLVOCUEVQWCWDVNWAWCWDFZVNFZVTVQWGVTVMJEZNROZVLJEZNROZHZVNWLWF
+      VNWKWIVNWJWHNRVLVMJUJUFUGPWFVTWLUHVNWDWCVSWIVPWKVMVRCQVLVOCQUIUKULUMUNUOU
+      PUQURVGVKVNWAWBLVGVKFZWAVNWBWMWAVNWBLZWMWAFVGVQFVIVPVPHZFVJVTFWNWMVGWAVQV
+      GVKSVQVTSTWMVIWAWOVKVIVGVIVJSPWAVPUSTWMVJWAVTVKVJVGVIVJVAPVQVTVATABCVPVBU
+      TVCVDVEVF $.
   $}
 
 
