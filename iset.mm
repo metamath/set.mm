@@ -197620,6 +197620,26 @@ $)
       LUMVBVHVGBVJVHVGUNVBVFVGUOUPURUS $.
   $}
 
+  ${
+    $d F k $.  $d G k $.  $d I k $.  $d P k $.  $d V k $.
+    upgrwlkcompim.v $e |- V = ( Vtx ` G ) $.
+    upgrwlkcompim.i $e |- I = ( iEdg ` G ) $.
+    upgrwlkcompim.1 $e |- F = ( 1st ` W ) $.
+    upgrwlkcompim.2 $e |- P = ( 2nd ` W ) $.
+    $( Implications for the properties of the components of a walk in a
+       pseudograph.  (Contributed by Alexander van der Vekens, 23-Jun-2018.)
+       (Revised by AV, 14-Apr-2021.) $)
+    upgrwlkcompim $p |- ( ( G e. UPGraph /\ W e. ( Walks ` G ) )
+           -> ( F e. Word dom I /\ P : ( 0 ... ( # ` F ) ) --> V
+                /\ A. k e. ( 0 ..^ ( # ` F ) )
+                   ( I ` ( F ` k ) ) = { ( P ` k ) , ( P ` ( k + 1 ) ) } ) ) $=
+      ( cupgr wcel cfv wa cc0 co wceq wral w3a cwlks cword chash wf cv c1 caddc
+      cdm cfz wdc cpr cfzo wbr upgriswlkdc biimpd c1st c2nd 3brtr4g impel simpr
+      wlkcprim ralimi 3anim3i syl ) DLMZGDUANZMZOCEUHUBMZPCUCNZUIQFAUDZBUEZANZV
+      KUFUGQANZRUJZVKCNENVLVMUKRZOZBPVIULQZSZTZVHVJVOBVQSZTVECAVFUMZVSVGVEWAVSA
+      BCDEFHIUNUOVGGUPNGUQNCAVFDGVAJKURUSVRVTVHVJVPVOBVQVNVOUTVBVCVD $.
+  $}
+
 
 $(
 ###############################################################################
