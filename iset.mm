@@ -197659,6 +197659,21 @@ $)
       BCDEFHIUNUOVGGUPNGUQNCAVFDGVAJKURUSVRVTVHVJVPVOBVQVNVOUTVBVCVD $.
   $}
 
+  ${
+    $d E e $.  $d F e k $.  $d G e k $.  $d P e k $.
+    wlkvtxedg.e $e |- E = ( Edg ` G ) $.
+    $( The vertices of a walk are connected by edges.  (Contributed by
+       Alexander van der Vekens, 22-Jul-2018.)  (Revised by AV, 2-Jan-2021.) $)
+    wlkvtxedg $p |- ( F ( Walks ` G ) P
+                       -> A. k e. ( 0 ..^ ( # ` F ) ) E. e e. E
+                          { ( P ` k ) , ( P ` ( k + 1 ) ) } C_ e ) $=
+      ( cwlks cfv wbr cv c1 caddc co cpr wss wrex wral cvv wcel ciedg crn chash
+      cc0 cfzo eqid wlkvtxiedg cedg wceq simp1d edgvalg eqtr2id rexeqdv ralbidv
+      wlkv syl mpbid ) EAFHIJZCKZAIUSLMNAIOBKPZBFUAIZUBZQZCUDEUCIUENZRUTBDQZCVD
+      RABCEFVAVAUFUGURVCVECVDURUTBVBDURDFUHIZVBGURFSTZVFVBUIURVGESTASTAEFUOUJFS
+      UKUPULUMUNUQ $.
+  $}
+
 
 $(
 ###############################################################################
