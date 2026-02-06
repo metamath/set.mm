@@ -197335,6 +197335,14 @@ $)
   $( The number of edges of a walk is the number of its vertices minus 1.
      (Contributed by Alexander van der Vekens, 1-Jul-2018.)  (Revised by AV,
      2-Jan-2021.) $)
+  wlklenvm1 $p |- ( F ( Walks ` G ) P -> ( # ` F ) = ( ( # ` P ) - 1 ) ) $=
+    ( cwlks cfv wbr chash c1 caddc co wceq cmin wlklenvp1 wa oveq1 wlkcl nn0cnd
+    cc wcel pncan1 syl sylan9eqr eqcomd mpdan ) BACDEFZAGEZBGEZHIJZKZUGUFHLJZKA
+    BCMUEUINUJUGUIUEUJUHHLJZUGUFUHHLOUEUGRSUKUGKUEUGABCPQUGTUAUBUCUD $.
+
+  $( The number of edges of a walk is the number of its vertices minus 1.
+     (Contributed by Alexander van der Vekens, 1-Jul-2018.)  (Revised by AV,
+     2-Jan-2021.) $)
   wlklenvm1g $p |- ( ( G e. W /\ F ( Walks ` G ) P )
       -> ( # ` F ) = ( ( # ` P ) - 1 ) ) $=
     ( wcel cwlks cfv wbr wa chash c1 caddc co wceq cmin wlklenvp1g oveq1 wlkclg
