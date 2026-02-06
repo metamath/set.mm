@@ -197842,6 +197842,11 @@ $)
       TAUOUFUGUKUHUIUJBUPULUM $.
   $}
 
+  $( There is no walk for the empty set, i.e. in a null graph.  (Contributed by
+     Alexander van der Vekens, 2-Sep-2018.)  (Revised by AV, 5-Mar-2021.) $)
+  0wlk0 $p |- ( Walks ` (/) ) = (/) $=
+    ( c0 cvtx cfv wceq cwlks vtxval0 g0wlk0 ax-mp ) ABCADAECADFAGH $.
+
 
 $(
 ###############################################################################
