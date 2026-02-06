@@ -197854,6 +197854,22 @@ $)
     ( cvv wnel cvtx cfv wa c0 cwlks eqcom biimpi vtxvalprc sylan9eqr g0wlk0 syl
     wceq ) ACDZAEFZBEFZPZGSHPBIFHPTQSRHTSRPRSJKALMBNO $.
 
+  $( The number of vertices in a walk equals the length of the walk after it is
+     "closed" (i.e. enhanced by an edge from its last vertex to its first
+     vertex).  (Contributed by Alexander van der Vekens, 29-Jun-2018.)
+     (Revised by AV, 2-May-2021.)  (Revised by JJ, 14-Jan-2024.) $)
+  wlklenvclwlk $p |- ( W e. Word ( Vtx ` G )
+                   -> ( <. F , ( W ++ <" ( W ` 0 ) "> ) >. e. ( Walks ` G )
+                        -> ( # ` F ) = ( # ` W ) ) ) $=
+    ( cc0 cfv cs1 cconcat co cop cwlks wcel chash c1 caddc wceq wa cz adantr cc
+    cvv cn0 cvtx cword wbr df-br wlkcl wlklenvp1 sylbir wb 0z fvexg ccatws1leng
+    jca mpan2 mpdan eqeq1d eqcom bitrdi nn0cn adantl lencl nn0cnd 1cnd addcan2d
+    biimpd sylbid expimpd syl5 ) ACDCEZFGHZIBJEZKZALEZUAKZVJLEZVMMNHZOZPZCBUBEZ
+    UCZKZVMCLEZOZVLAVJVKUDZVRAVJVKUEWDVNVQVJABUFVJABUGUMUHWAVNVQWCWAVNPZVQVPWBM
+    NHZOZWCWAVQWGUIVNWAVQWFVPOWGWAVOWFVPWAVITKZVOWFOWADQKWHUJDCVTQUKUNVSCVITULU
+    OUPWFVPUQURRWEWGWCWEVMWBMVNVMSKWAVMUSUTWAWBSKVNWAWBVSCVAVBRWEVCVDVEVFVGVH
+    $.
+
 
 $(
 ###############################################################################
