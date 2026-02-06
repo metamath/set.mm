@@ -197605,6 +197605,21 @@ $)
       XB $.
   $}
 
+  ${
+    $d F k $.  $d G k $.  $d I k $.  $d P k $.
+    upgrwlkedg.i $e |- I = ( iEdg ` G ) $.
+    $( The edges of a walk in a pseudograph join exactly the two corresponding
+       adjacent vertices in the walk.  (Contributed by AV, 27-Feb-2021.) $)
+    upgrwlkedg $p |- ( ( G e. UPGraph /\ F ( Walks ` G ) P )
+                       -> A. k e. ( 0 ..^ ( # ` F ) ) ( I ` ( F ` k ) )
+                                       = { ( P ` k ) , ( P ` ( k + 1 ) ) } ) $=
+      ( cupgr wcel cwlks cfv wbr wa cv c1 caddc co wceq wdc cc0 wral chash cfzo
+      cpr cdm cword cfz cvtx wf w3a upgriswlkdc simp3 biimtrdi imp wi simpr a1i
+      eqid ralimdv mpd ) DGHZCADIJKZLZBMZAJZVCNOPAJZQRZVCCJEJVDVEUCQZLZBSCUAJZU
+      BPZTZVGBVJTUTVAVKUTVACEUDUEHZSVIUFPDUGJZAUHZVKUIVKABCDEVMVMUQFUJVLVNVKUKU
+      LUMVBVHVGBVJVHVGUNVBVFVGUOUPURUS $.
+  $}
+
 
 $(
 ###############################################################################
