@@ -197577,6 +197577,34 @@ $)
       AXJYGYHYIYJYFUUIYSUUAYKYLUUBUUIMYMQYN $.
   $}
 
+  ${
+    $d G k $.  $d F k $.  $d I k $.  $d P k $.  $d V k $.
+    upgriswlk.v $e |- V = ( Vtx ` G ) $.
+    upgriswlk.i $e |- I = ( iEdg ` G ) $.
+    $( Properties of a pair of functions to be a walk in a pseudograph.
+       (Contributed by AV, 2-Jan-2021.)  (Revised by AV, 28-Oct-2021.) $)
+    upgriswlkdc $p |- ( G e. UPGraph -> ( F ( Walks ` G ) P
+        <-> ( F e. Word dom I /\ P : ( 0 ... ( # ` F ) ) --> V
+          /\ A. k e. ( 0 ..^ ( # ` F ) ) ( DECID ( P ` k ) = ( P ` ( k + 1 ) )
+            /\ ( I ` ( F ` k ) ) = { ( P ` k ) , ( P ` ( k + 1 ) ) } ) ) ) ) $=
+      ( cupgr wcel cfv cc0 co wceq cpr wral w3a wa wi cvv cwlks wbr cword chash
+      cdm cfz wf cv c1 caddc csn wss wif cfzo wdc iswlkg ifpdc adantl wn df-ifp
+      wo dfsn2 preq2 eqtrid eqeq2d biimpa a1d cedg upgredginwlk adantrr imp wne
+      eqid simp-4l simplr simprr ad5ant12 elfzofz ffvelcdmd elexd fzofzp1 neqne
+      ad3antlr ad2antrl upgredgpr syl33anc eqcomd exp31 mpd com12 jaoi biimtrid
+      jca ex ifpprsnssdc ancoms impbid1 ralbidva pm5.32da df-3an 3bitr4g bitrd
+      ) DIJZCADUAKUBCEUEUCJZLCUDKZUFMZFAUGZBUHZAKZXHUIUJMZAKZNZXHCKEKZXIUKZNZXI
+      XKOZXMULZUMZBLXEUNMZPZQZXDXGXLUOZXMXPNZRZBXSPZQZABCDEFIGHUPXCXDXGRZXTRYGY
+      ERYAYFXCYGXTYEXCYGRZXRYDBXSYHXHXSJZRZXRYDYJXRYDYJXRRYBYCXRYBYJXLXOXQUQURY
+      JXRYCXRXLXORZXLUSZXQRZVAZYJYCXLXOXQUTYNYJYCYKYJYCSYMYKYCYJXLXOYCXLXNXPXMX
+      LXNXIXIOXPXIVBXIXKXIVCVDVEVFVGYJYMYCYJXMDVHKZJZYMYCSYHYIYPXCXDYIYPSXGYOCD
+      EXHHYOVMZVIVJVKYJYPYMYCYJYPRZYMRZXPXMYSXCYPXQXITJXKTJXIXKVLZXPXMNXCYGYIYP
+      YMVNYJYPYMVOYRYLXQVPYSXIFYSXFFXHAXCYGXGYIYPYMXCXDXGVPVQZYIXHXFJYHYPYMXHLX
+      EVRWCVSVTYSXKFYSXFFXJAUUAYIXJXFJYHYPYMLXEXHWAWCVSVTYLYTYRXQXIXKWBWDXIXKXM
+      TYODFTGYQWEWFWGWHWIWJWKWJWLVKWMWNYCYBXRXIXKXMWOWPWQWRWSXDXGXTWTXDXGYEWTXA
+      XB $.
+  $}
+
 
 $(
 ###############################################################################
