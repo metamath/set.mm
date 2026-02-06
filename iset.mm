@@ -197349,6 +197349,25 @@ $)
     $( The vertices of a walk are connected by indexed edges.  (Contributed by
        Alexander van der Vekens, 22-Jul-2018.)  (Revised by AV, 2-Jan-2021.)
        (Proof shortened by AV, 4-Apr-2021.) $)
+    wlkvtxiedg $p |- ( F ( Walks ` G ) P
+                       -> A. k e. ( 0 ..^ ( # ` F ) ) E. e e. ran I
+                          { ( P ` k ) , ( P ` ( k + 1 ) ) } C_ e ) $=
+      ( vx vy cfv wbr cv co wss cc0 wral cvv wcel wa adantl cwlks c1 caddc cfzo
+      cpr chash crn wrex wlkv simp1d wlkvtxeledgg mpancom wi wex cvtx cfz wlkpg
+      eqid adantr elfzofz ffvelcdmd prmg syl simp2d vex fvexg sylancl ad3antrrr
+      wf simplr simpr sseldd fvmbr breq1 elabd wb elfvex elrng 3syl mpbird wceq
+      exlimddv sseq2 rspcedvd ex ralimdva mpd ) DAEUAJKZCLZAJZWIUBUCMAJZUEZWIDJ
+      ZFJZNZCODUFJZUDMZPZWLBLZNZBFUGZUHZCWQPZEQRZWHWRWHXDDQRZAQRZADEUIZUJZACDEF
+      QGUKULXDWHWRXCUMXHXDWHSZWOXBCWQXIWIWQRZSZWOXBXKWOSZWTWOBWNXAXLHLZWLRZWNXA
+      RZHXKXNHUNZWOXKWJEUOJZRXPXKOWPUPMZXQWIAXIXRXQAVIXJADEXQQXQURUQUSXJWIXRRXI
+      WIOWPUTTVAHWJWKXQVBVCUSXLXNSZXOILZWNFKZIUNZXSYAWMWNFKZIWMXIWMQRZXJWOXNXIX
+      EWIQRYDWHXEXDWHXDXEXFXGVDTCVEWIDQQVFVGVHXSXMWNRZYCXSWLWNXMXKWOXNVJXLXNVKV
+      LZXMFWMVMVCXTWMWNFVNVOXSYEWNQRXOYBVPYFXMWMFVQIWNFQVRVSVTWBWSWNWAWTWOVPXLW
+      SWNWLWCTXKWOVKWDWEWFULWG $.
+
+    $( The vertices of a walk are connected by indexed edges.  (Contributed by
+       Alexander van der Vekens, 22-Jul-2018.)  (Revised by AV, 2-Jan-2021.)
+       (Proof shortened by AV, 4-Apr-2021.) $)
     wlkvtxiedgg $p |- ( ( G e. W /\ F ( Walks ` G ) P )
                        -> A. k e. ( 0 ..^ ( # ` F ) ) E. e e. ran I
                           { ( P ` k ) , ( P ` ( k + 1 ) ) } C_ e ) $=
