@@ -197815,6 +197815,20 @@ $)
       UCABUSCDUSULZUDUEUOUTVCBVAUMUTVCUFUNUMUTVCUSDUQURVDUGUHUIUJUK $.
   $}
 
+  $( If there is a walk in the null graph (a class without vertices), it would
+     be the pair consisting of empty sets.  (Contributed by Alexander van der
+     Vekens, 2-Sep-2018.)  (Revised by AV, 5-Mar-2021.) $)
+  wlkv0 $p |- ( ( ( Vtx ` G ) = (/) /\ W e. ( Walks ` G ) )
+                 -> ( ( 1st ` W ) = (/) /\ ( 2nd ` W ) = (/) ) ) $=
+    ( cvtx cfv c0 wceq c1st c2nd cwlks wbr wa wcel ciedg cc0 wf jca wi cz impel
+    eqid cdm cword chash cfz co wlkf wlkp feq3 f00 bitrdi cn0 clt wb 0z sylancr
+    nn0z fzn nn0nlt0 pm2.21d sylbird com12 adantl lencl simpll biimtrdi impcomd
+    ex syl5 wlkcprim ) ACDZEFZBGDZBHDZAIDZJZVLEFZVMEFZKZBVNLVOVLAMDZUAZUBLZNVLU
+    CDZUDUEZVJVMOZKVKVRVOWAWDVMVLAVSVSTUFVMVLAVJVJTUGPVKWDWAVRVKWDVQWCEFZKZWAVR
+    QVKWDWCEVMOWFVJEWCVMUHWCVMUIUJWFWAVRWFWAKVPVQWFWBUKLZVPWAWEWGVPQVQWGWEVPWGW
+    EWBNULJZVPWGNRLWBRLWHWEUMUNWBUPNWBUQUOWGWHVPWBURUSUTVAVBVTVLVCSVQWEWAVDPVGV
+    EVFVHABVIS $.
+
 
 $(
 ###############################################################################
