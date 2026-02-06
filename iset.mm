@@ -197829,6 +197829,19 @@ $)
     EWBNULJZVPWGNRLWBRLWHWEUMUNWBUPNWBUQUOWGWHVPWBURUSUTVAVBVTVLVCSVQWEWAVDPVGV
     EVFVHABVIS $.
 
+  ${
+    $d G w x $.
+    $( There is no walk in a null graph (a class without vertices).
+       (Contributed by Alexander van der Vekens, 2-Sep-2018.)  (Revised by AV,
+       5-Mar-2021.) $)
+    g0wlk0 $p |- ( ( Vtx ` G ) = (/) -> ( Walks ` G ) = (/) ) $=
+      ( vw vx cvtx cfv c0 wceq cv cwlks wcel wex c2nd wne cvv c1st wbr wlkcprim
+      wn wlkmex wlkm syl2anc n0r syl neneqd wa wlkv0 simprd mtand exlimiv con2i
+      ancoms notm0 sylib ) ADEFGZBHZAIEZJZBKZRUPFGURUNUQUNRBUQUNUOLEZFGZUQUSFUQ
+      CHUSJCKZUSFMUQANJUOOEZUSUPPVAAUOSAUOQCUSVBANTUACUSUBUCUDUNUQUTUNUQUEVBFGU
+      TAUOUFUGUKUHUIUJBUPULUM $.
+  $}
+
 
 $(
 ###############################################################################
