@@ -197672,6 +197672,21 @@ $)
       wlkv syl mpbid ) EAFHIJZCKZAIUSLMNAIOBKPZBFUAIZUBZQZCUDEUCIUENZRUTBDQZCVD
       RABCEFVAVAUFUGURVCVECVDURUTBVBDURDFUHIZVBGURFSTZVFVBUIURVGESTASTAEFUOUJFS
       UKUPULUMUNUQ $.
+
+    $( The pairs of connected vertices of a walk are edges in a pseudograph.
+       (Contributed by Alexander van der Vekens, 22-Jul-2018.)  (Revised by AV,
+       2-Jan-2021.) $)
+    upgrwlkvtxedg $p |- ( ( G e. UPGraph /\ F ( Walks ` G ) P )
+                           -> A. k e. ( 0 ..^ ( # ` F ) )
+                              { ( P ` k ) , ( P ` ( k + 1 ) ) } e. E ) $=
+      ( cupgr wcel cwlks cfv wbr co cc0 wral wceq w3a wa eqid wi imp cv c1 cfzo
+      caddc cpr chash ciedg cdm cword cfz cvtx wf wdc upgriswlkdc simpr 3anim3i
+      ralimi biimtrdi upgredginwlk ancoms wb eleq1 syl5ibrcom ralimdva impancom
+      eqcoms 3adant2 com12 syld ) EGHZDAEIJKZBUAZAJZVLUBUDLAJZUEZCHZBMDUFJZUCLZ
+      NZVJVKDEUGJZUHUIHZMVQUJLEUKJZAULZVLDJVTJZVOOZBVRNZPZVSVJVKWAWCVMVNOUMZWEQ
+      ZBVRNZPWGABDEVTWBWBRVTRZUNWJWFWAWCWIWEBVRWHWEUOUQUPURWGVJVSWAWFVJVSSWCWAV
+      JWFVSWAVJQZWEVPBVRWLVLVRHZQVPWEWDCHZWLWMWNVJWAWMWNSCDEVTVLWKFUSUTTVPWNVAV
+      OWDVOWDCVBVFVCVDVEVGVHVIT $.
   $}
 
 
