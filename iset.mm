@@ -197847,6 +197847,13 @@ $)
   0wlk0 $p |- ( Walks ` (/) ) = (/) $=
     ( c0 cvtx cfv wceq cwlks vtxval0 g0wlk0 ax-mp ) ABCADAECADFAGH $.
 
+  $( There is no walk in a null graph (a class without vertices).  (Contributed
+     by Alexander van der Vekens, 2-Sep-2018.)  (Revised by AV, 5-Mar-2021.) $)
+  wlk0prc $p |- ( ( S e/ _V /\ ( Vtx ` S ) = ( Vtx ` G ) )
+                     -> ( Walks ` G ) = (/) ) $=
+    ( cvv wnel cvtx cfv wa c0 cwlks eqcom biimpi vtxvalprc sylan9eqr g0wlk0 syl
+    wceq ) ACDZAEFZBEFZPZGSHPBIFHPTQSRHTSRPRSJKALMBNO $.
+
 
 $(
 ###############################################################################
