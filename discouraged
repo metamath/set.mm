@@ -941,10 +941,6 @@
 "aecoms" is used by "axrepnd".
 "aecoms" is used by "e2ebind".
 "aecoms" is used by "nd4".
-"aecoms" is used by "wl-ax11-lem1".
-"aecoms" is used by "wl-ax11-lem10".
-"aecoms" is used by "wl-ax11-lem3".
-"aecoms" is used by "wl-ax11-lem9".
 "aecoms-o" is used by "aev-o".
 "aecoms-o" is used by "ax12inda2ALT".
 "aecoms-o" is used by "ax12indalem".
@@ -1647,8 +1643,6 @@
 "axc11n" is used by "axi10".
 "axc11n" is used by "e2ebindALT".
 "axc11n" is used by "e2ebindVD".
-"axc11n" is used by "wl-ax11-lem3".
-"axc11n" is used by "wl-ax11-lem8".
 "axc11n" is used by "wl-hbae1".
 "axc15" is used by "ax12".
 "axc15" is used by "ax12b".
@@ -5525,9 +5519,6 @@
 "dral1" is used by "drnf1".
 "dral1" is used by "ralcom2".
 "dral1" is used by "sb9".
-"dral1" is used by "wl-ax11-lem5".
-"dral1" is used by "wl-ax11-lem8".
-"dral1" is used by "wl-ax11-lem9".
 "dral1" is used by "wl-dral1d".
 "dral1-o" is used by "ax12fromc15".
 "dral1-o" is used by "ax12inda2ALT".
@@ -14323,7 +14314,7 @@ New usage of "adjval2" is discouraged (0 uses).
 New usage of "adjvalval" is discouraged (1 uses).
 New usage of "aecom" is discouraged (3 uses).
 New usage of "aecom-o" is discouraged (4 uses).
-New usage of "aecoms" is discouraged (13 uses).
+New usage of "aecoms" is discouraged (9 uses).
 New usage of "aecoms-o" is discouraged (6 uses).
 New usage of "aev-o" is discouraged (1 uses).
 New usage of "aevdemo" is discouraged (0 uses).
@@ -14526,7 +14517,7 @@ New usage of "axbnd" is discouraged (0 uses).
 New usage of "axc10" is discouraged (1 uses).
 New usage of "axc11" is discouraged (12 uses).
 New usage of "axc11-o" is discouraged (0 uses).
-New usage of "axc11n" is discouraged (9 uses).
+New usage of "axc11n" is discouraged (7 uses).
 New usage of "axc11n-16" is discouraged (0 uses).
 New usage of "axc11next" is discouraged (0 uses).
 New usage of "axc11nfromc11" is discouraged (0 uses).
@@ -16041,7 +16032,7 @@ New usage of "dochsordN" is discouraged (0 uses).
 New usage of "dochspocN" is discouraged (0 uses).
 New usage of "domnlcanOLD" is discouraged (0 uses).
 New usage of "domnlcanbOLD" is discouraged (0 uses).
-New usage of "dral1" is discouraged (11 uses).
+New usage of "dral1" is discouraged (8 uses).
 New usage of "dral1-o" is discouraged (4 uses).
 New usage of "dral1ALT" is discouraged (0 uses).
 New usage of "dral2" is discouraged (5 uses).
