@@ -197305,6 +197305,14 @@ $)
   $( The number of vertices of a walk (in an undirected graph) is the number of
      its edges plus 1.  (Contributed by Alexander van der Vekens, 29-Jun-2018.)
      (Revised by AV, 1-May-2021.) $)
+  wlklenvp1 $p |- ( F ( Walks ` G ) P -> ( # ` P ) = ( ( # ` F ) + 1 ) ) $=
+    ( cwlks cfv wbr chash cn0 wcel cc0 co cvtx wf c1 caddc wceq wlkcl eqid wlkp
+    cfz ffz0hash syl2anc ) BACDEFBGEZHIJUCTKCLEZAMAGEUCNOKPABCQABCUDUDRSUDAUCUA
+    UB $.
+
+  $( The number of vertices of a walk (in an undirected graph) is the number of
+     its edges plus 1.  (Contributed by Alexander van der Vekens, 29-Jun-2018.)
+     (Revised by AV, 1-May-2021.) $)
   wlklenvp1g $p |- ( ( G e. W /\ F ( Walks ` G ) P )
       -> ( # ` P ) = ( ( # ` F ) + 1 ) ) $=
     ( wcel cwlks cfv wbr wa chash cn0 cc0 cfz co cvtx wf c1 caddc wceq wlkclg
