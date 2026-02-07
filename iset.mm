@@ -197914,6 +197914,20 @@ $)
     OUPWFVPUQURRWEWGWCWEVMWBMVNVMSKWAVMUSUTWAWBSKVNWAWBVSCVAVBRWEVCVDVEVFVGVH
     $.
 
+  ${
+    $d E k $.  $d F k $.  $d P k $.
+    $( Lemma for theorems for walks of length 2.  (Contributed by Alexander van
+       der Vekens, 1-Feb-2018.) $)
+    2wlklem $p |- ( A. k e. { 0 , 1 } ( E ` ( F ` k ) )
+                                        = { ( P ` k ) , ( P ` ( k + 1 ) ) }
+                     <-> ( ( E ` ( F ` 0 ) ) = { ( P ` 0 ) , ( P ` 1 ) }
+                        /\ ( E ` ( F ` 1 ) ) = { ( P ` 1 ) , ( P ` 2 ) } ) ) $=
+      ( cv cfv c1 caddc co cpr wceq cc0 c0ex 1ex 2fveq3 fv0p1e1 preq12d eqeq12d
+      c2 fveq2 oveq1 1p1e2 eqtrdi fveq2d ralpr ) BEZDFCFZUFAFZUFGHIZAFZJZKLDFCF
+      ZLAFZGAFZJZKGDFCFZUNSAFZJZKBLGMNUFLKZUGULUKUOUFLCDOUSUHUMUJUNUFLATAUFPQRU
+      FGKZUGUPUKURUFGCDOUTUHUNUJUQUFGATUTUISAUTUIGGHISUFGGHUAUBUCUDQRUE $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
