@@ -197997,6 +197997,29 @@ $)
       IUJ $.
   $}
 
+  ${
+    trlres.v $e |- V = ( Vtx ` G ) $.
+    trlres.i $e |- I = ( iEdg ` G ) $.
+    trlres.d $e |- ( ph -> F ( Trails ` G ) P ) $.
+    trlres.n $e |- ( ph -> N e. ( 0 ..^ ( # ` F ) ) ) $.
+    trlres.h $e |- H = ( F prefix N ) $.
+    $( Lemma for ~ trlres .  (Contributed by Mario Carneiro, 12-Mar-2015.)
+       (Revised by Mario Carneiro, 3-May-2015.)  (Revised by AV, 6-Mar-2021.)
+       Hypothesis revised using the prefix operation.  (Revised by AV,
+       30-Nov-2022.) $)
+    trlreslem $p |- ( ph -> H : ( 0 ..^ ( # ` H ) )
+                              -1-1-onto-> dom ( I |` ( F " ( 0 ..^ N ) ) ) ) $=
+      ( cc0 chash cfv cfzo co wcel 3syl cima cres cdm wf1 wss ctrls wbr syl cuz
+      wf1o trlf1 elfzouz2 fzoss2 f1ores cpfx cword cfz wceq cwlks trliswlk wlkf
+      syl2anc fzossfz sselid pfxres eqtrid fveq2i elfzofz pfxlen oveq2d wf wrdf
+      fimass ssdmres sylib f1oeq123d mpbird ) ANEOPZQRZFCNGQRZUAZUBUCZEUJVTWACV
+      TUBZUJZANCOPZQRZFUCZCUDZVTWFUEZWDACBDUFPUGZWHKBCDFJUKUHAGWFSZWEGUIPSWILGN
+      WEULGNWEUMTWFWGVTCUNVBAVSVTWBWAEWCAECGUORZWCMACWGUPSZGNWEUQRZSZWLWCURAWJC
+      BDUSPUGZWMKBCDUTZBCDFJVAZTZAWFWNGNWEVCLVDWGCGVEVBVFAVRGNQAVRWLOPZGEWLOMVG
+      AWMWOWTGURWSAWKWOLGNWEVHUHWGCGVIVBVFVJAWAWGUEZWBWAURAWJWPXAKWQWPWMWFWGCVK
+      XAWRWGCVLWFWGCVTVMTTWAFVNVOVPVQ $.
+  $}
+
 
 $(
 ###############################################################################
