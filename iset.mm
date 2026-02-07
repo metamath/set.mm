@@ -197973,6 +197973,12 @@ $)
       R $.
   $}
 
+  $( A trail is a walk.  (Contributed by Alexander van der Vekens,
+     20-Oct-2017.)  (Revised by AV, 7-Jan-2021.)  (Proof shortened by AV,
+     29-Oct-2021.) $)
+  trliswlk $p |- ( F ( Trails ` G ) P -> F ( Walks ` G ) P ) $=
+    ( ctrls cfv wbr cwlks ccnv wfun istrl simplbi ) BACDEFBACGEFBHIABCJK $.
+
 
 $(
 ###############################################################################
