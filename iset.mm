@@ -197979,6 +197979,19 @@ $)
   trliswlk $p |- ( F ( Trails ` G ) P -> F ( Walks ` G ) P ) $=
     ( ctrls cfv wbr cwlks ccnv wfun istrl simplbi ) BACDEFBACGEFBHIABCJK $.
 
+  ${
+    trlf1.i $e |- I = ( iEdg ` G ) $.
+    $( The enumeration ` F ` of a trail ` <. F , P >. ` is injective.
+       (Contributed by AV, 20-Feb-2021.)  (Proof shortened by AV,
+       29-Oct-2021.) $)
+    trlf1 $p |- ( F ( Trails ` G ) P
+                  -> F : ( 0 ..^ ( # ` F ) ) -1-1-> dom I ) $=
+      ( ctrls cfv wbr cwlks ccnv wfun wa cc0 chash cfzo co cdm wf1 istrl cword
+      wcel wf wi wlkf wrdf df-f1 simplbi2 3syl imp sylbi ) BACFGHBACIGHZBJKZLMB
+      NGOPZDQZBRZABCSUKULUOUKBUNTUAUMUNBUBZULUOUCABCDEUDUNBUEUOUPULUMUNBUFUGUHU
+      IUJ $.
+  $}
+
 
 $(
 ###############################################################################
