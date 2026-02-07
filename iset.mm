@@ -197930,6 +197930,20 @@ $)
       EZCEDEFGHPIJKDBCLAMBDCNO $.
   $}
 
+  ${
+    $d G f g p z $.
+    $( The set of trails (in an undirected graph).  (Contributed by Alexander
+       van der Vekens, 20-Oct-2017.)  (Revised by AV, 28-Dec-2020.)  (Revised
+       by AV, 29-Oct-2021.) $)
+    trlsfvalg $p |- ( G e. V -> ( Trails ` G ) = { <. f , p >. |
+                                      ( f ( Walks ` G ) p /\ Fun `' f ) } ) $=
+      ( vg vz wcel cv cwlks cfv wbr ccnv wfun wa copab ctrls df-trls wceq fveq2
+      cvv breqd anbi1d opabbidv elex wlkex wss elopabran ssriv ssexd fvmptd3
+      a1i ) BCGZEBAHZDHZEHZIJZKZUMLMZNZADOUMUNBIJZKZURNZADOZTPTAEDQUOBRZUSVBADV
+      DUQVAURVDUPUTUMUNUOBISUAUBUCBCUDULVCUTTBCUEVCUTUFULFVCUTURADFHUTUGUHUKUIU
+      J $.
+  $}
+
 
 $(
 ###############################################################################
