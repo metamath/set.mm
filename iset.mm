@@ -197944,6 +197944,35 @@ $)
       J $.
   $}
 
+  ${
+    $d G f p $.  $d f g p $.
+    $( The classes involved in a trail are sets.  (Contributed by Jim Kingdon,
+       7-Feb-2026.) $)
+    trlsv $p |- ( F ( Trails ` G ) P -> ( G e. _V /\ F e. _V /\ P e. _V ) ) $=
+      ( vg vf vp ctrls cfv wbr cvv wcel cop df-br cv cwlks ccnv wfun copab syl
+      wa df-trls mptrcl sylbi wceq trlsfvalg breqd ibi brabv simpld simprd 3jca
+      ) BACGHZIZCJKZBJKZAJKZUMBALZULKUNBAULMDJENZFNZDNOHIURPQZTEFRGUQCEDFUAUBUC
+      ZUMUOUPUMBAURUSCOHIUTTZEFRZIZUOUPTUMVDUMULVCBAUMUNULVCUDVAECJFUESUFUGVBEF
+      BAUHSZUIUMUOUPVEUJUK $.
+  $}
+
+  ${
+    $d F f p $.  $d P f p $.  $d G f p $.
+    $( Conditions for a pair of classes/functions to be a trail (in an
+       undirected graph).  (Contributed by Alexander van der Vekens,
+       20-Oct-2017.)  (Revised by AV, 28-Dec-2020.)  (Revised by AV,
+       29-Oct-2021.) $)
+    istrl $p |- ( F ( Trails ` G ) P
+                  <-> ( F ( Walks ` G ) P /\ Fun `' F ) ) $=
+      ( vf vp ctrls cfv wbr cvv wcel w3a cwlks ccnv wfun trlsv wlkv adantr wceq
+      wa cv cop copab df-br trlsfvalg 3ad2ant1 eleq2d bitrid breq1 cnveq funeqd
+      wb anbi12d breq2 anbi1d opelopabg 3adant1 bitrd pm5.21nii ) BACFGZHZCIJZB
+      IJZAIJZKZBACLGZHZBMZNZSZABCOVFVDVHABCPQVDUTBAUAZDTZETZVEHZVKMZNZSZDEUBZJZ
+      VIUTVJUSJVDVRBAUSUCVDUSVQVJVAVBUSVQRVCDCIEUDUEUFUGVBVCVRVIUKVAVPBVLVEHZVH
+      SVIDEBAIIVKBRZVMVSVOVHVKBVLVEUHVTVNVGVKBUIUJULVLARVSVFVHVLABVEUMUNUOUPUQU
+      R $.
+  $}
+
 
 $(
 ###############################################################################
