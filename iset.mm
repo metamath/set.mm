@@ -197872,6 +197872,41 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Trails
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c Trails $.
+
+  $( Extend class notation with trails (within a graph). $)
+  ctrls $a class Trails $.
+
+  ${
+    $d f g p $.
+    $( Define the set of all Trails (in an undirected graph).
+
+       According to Wikipedia ("Path (graph theory)",
+       ~ https://en.wikipedia.org/wiki/Path_(graph_theory) , 3-Oct-2017):  "A
+       trail is a walk in which all edges are distinct.
+
+       According to Bollobas:  "... walk is called a trail if all its edges are
+       distinct.", see Definition of [Bollobas] p. 5.
+
+       Therefore, a trail can be represented by an injective mapping f from {
+       1 , ... , n } and a mapping p from { 0 , ... , n }, where f enumerates
+       the (indices of the) different edges, and p enumerates the vertices.  So
+       the trail is also represented by the following sequence: p(0) e(f(1))
+       p(1) e(f(2)) ... p(n-1) e(f(n)) p(n).  (Contributed by Alexander van der
+       Vekens and Mario Carneiro, 4-Oct-2017.)  (Revised by AV,
+       28-Dec-2020.) $)
+    df-trls $a |- Trails = ( g e. _V |-> { <. f , p >. |
+                                      ( f ( Walks ` g ) p /\ Fun `' f ) } ) $.
+
+  $}
+
+
+$(
 ###############################################################################
   GUIDES AND MISCELLANEA
 ###############################################################################
@@ -200139,6 +200174,9 @@ htmldef "USGraph" as 'USGraph';
 htmldef "Walks" as "Walks";
   althtmldef "Walks" as "Walks";
   latexdef "Walks" as "\mathrm{Walks}";
+htmldef "Trails" as "Trails";
+  althtmldef "Trails" as "Trails";
+  latexdef "Trails" as "\mathrm{Trails}";
 
 /* htmldef, althtmldef, latexdef for mathboxes */
 /* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
