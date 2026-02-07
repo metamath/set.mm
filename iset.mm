@@ -197905,6 +197905,16 @@ $)
 
   $}
 
+  ${
+    $d f g p $.
+    $( The set ` ( Trails `` G ) ` of all trails on ` G ` is a set of pairs by
+       our definition of a trail, and so is a relation.  (Contributed by AV,
+       29-Oct-2021.) $)
+    reltrls $p |- Rel ( Trails ` G ) $=
+      ( vf vp vg cv cwlks cfv wbr ccnv wfun wa cvv ctrls df-trls relmptopab ) B
+      EZCEDEFGHPIJKDBCLAMBDCNO $.
+  $}
+
 
 $(
 ###############################################################################
