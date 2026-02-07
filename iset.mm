@@ -49584,6 +49584,14 @@ $)
   fimass $p |- ( F : A --> B -> ( F " X ) C_ B ) $=
     ( wf cima crn imassrn frn sstrid ) ABCECDFCGBCDHABCIJ $.
 
+  ${
+    fimassd.1 $e |- ( ph -> F : A --> B ) $.
+    $( The image of a class is a subset of its codomain.  (Contributed by
+       Glauco Siliprandi, 23-Oct-2021.) $)
+    fimassd $p |- ( ph -> ( F " X ) C_ B ) $=
+      ( wf cima wss fimass syl ) ABCDGDEHCIFBCDEJK $.
+  $}
+
   $( Composition of two mappings.  (Contributed by NM, 29-Aug-1999.)  (Proof
      shortened by Andrew Salmon, 17-Sep-2011.) $)
   fco $p |- ( ( F : B --> C /\ G : A --> B ) -> ( F o. G ) : A --> C ) $=
