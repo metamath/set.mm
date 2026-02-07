@@ -52830,6 +52830,22 @@ $)
       IUDCUHUDUFUHUDUGGUEUECOZUKPUCUGQRSUAUB $.
   $}
 
+  $( Composition of a function with domain and a function as a function with
+     domain.  Generalization of ~ fnco .  (Contributed by AV, 17-Sep-2024.) $)
+  fncofn $p |- ( ( F Fn A /\ Fun G ) -> ( F o. G ) Fn ( `' G " A ) ) $=
+    ( wfn wfun wa ccom ccnv cima cdm fnfun funco funfnd wceq fndm adantr eqcomd
+    sylan imaeq2d dmco eqtr4di fneq2d mpbird ) BADZCEZFZBCGZCHZAIZDUGUGJZDUFUGU
+    DBEUEUGEABKBCLRMUFUIUJUGUFUIUHBJZIUJUFAUKUHUFUKAUDUKANUEABOPQSBCTUAUBUC $.
+
+  $( Composition of a function with domain and codomain and a function as a
+     function with domain and codomain.  Generalization of ~ fco .
+     (Contributed by AV, 18-Sep-2024.) $)
+  fcof $p |- ( ( F : A --> B /\ Fun G ) -> ( F o. G ) : ( `' G " A ) --> B ) $=
+    ( wf wfun wa ccom ccnv cima wfn crn wss df-f wi fncofn adantr rncoss sstr
+    ex mpan adantl jctird imp sylanb sylibr ) ABCEZDFZGCDHZDIAJZKZUILZBMZGZUJBU
+    IEUGCAKZCLZBMZGZUHUNABCNURUHUNURUHUKUMUOUHUKOUQUOUHUKACDPTQUQUMUOULUPMUQUMC
+    DRULUPBSUAUBUCUDUEUJBUINUF $.
+
   ${
     $d A x $.  $d B x $.  $d G x $.  $d X x $.  $d Y x $.
     funopdmsn.g $e |- G = <. X , Y >. $.
