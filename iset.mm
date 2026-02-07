@@ -197171,6 +197171,21 @@ $)
   $}
 
   ${
+    $d G f k p $.  $d V f p $.
+    $( The class of walks on a graph is a set.  (Contributed by Jim Kingdon,
+       7-Feb-2026.) $)
+    wlkex $p |- ( G e. V -> ( Walks ` G ) e. _V ) $=
+      ( vf vp vk wcel cwlks cfv cv ciedg cdm cword cc0 chash co wceq copab eqid
+      cvv cfn cfz cvtx wf c1 caddc csn cpr wss wif cfzo wral w3a wksfval iedgex
+      wa dmexd wrdexg syl cab 0zd lencl nn0zd fzfigd vtxex mapex syl2anr 3simpa
+      opabex3d wi a1i ssopab2dv ssexd eqeltrd ) ABFZAGHCIZAJHZKZLZFZMVONHZUAOZA
+      UBHZDIZUCZEIZWCHZWEUDUEOWCHZPWEVOHVPHZWFUFPWFWGUGWHUHUIEMVTUJOUKZULZCDQZS
+      CEAVPWBBDWBRVPRUMVNWKVSWDUOZCDQSVNWDCDVRVNVQSFVRSFVNVPSABUNUPVQSUQURVSWAT
+      FWBSFWDDUSSFVNVSMVTVSUTVSVTVQVOVAVBVCABVDWAWBTSDVEVFVHVNWJWLCDWJWLVIVNVSW
+      DWIVGVJVKVLVM $.
+  $}
+
+  ${
     $d G f k p $.
     $( The classes involved in a walk are sets.  (Contributed by Alexander van
        der Vekens, 31-Oct-2017.)  (Revised by AV, 3-Feb-2021.) $)
