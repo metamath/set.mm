@@ -2508,6 +2508,11 @@ favor of theorems in deduction form.</TD>
   <td>changes nonempty to inhabited</td>
 </tr>
 
+<tr>
+  <td>ifpprsnss</td>
+  <td>~ ifpprsnssdc</td>
+</tr>
+
 <TR>
   <TD ROWSPAN="4">difsnid</TD>
   <TD>~ difsnss</TD>
@@ -3956,12 +3961,6 @@ that we are evaluating functions within their domains.
   be more likely to be helpful (if anything is).</td>
 </tr>
 
-<TR>
-  <TD>relmptopab</TD>
-  <TD><I>none</I></TD>
-  <TD>Presumably would need a condition that ` B e. dom F `</TD>
-</TR>
-
 <tr>
   <td>elovmpt3imp</td>
   <td><i>none</i></td>
@@ -4287,6 +4286,23 @@ hasn't been a need for it.</TD>
 <TD><I>none</I></TD>
 <TD>May be intuitionizable, but very lightly used in set.mm.</TD>
 </TR>
+
+<tr>
+  <td>fo1stres</td>
+  <td>~ fo1stresm</td>
+</tr>
+
+<tr>
+  <td>fo2ndres</td>
+  <td>~ fo2ndresm</td>
+</tr>
+
+<tr>
+  <td>1st2ndb</td>
+  <td>~ 1st2nd2</td>
+  <td>the reverse direction would appear to need a set existence
+  condition (see ~ 1stexg , ~ 2ndexg , and ~ opelvvg )</td>
+</tr>
 
 <tr>
   <td>mptmpoopabbrd</td>
@@ -9350,12 +9366,10 @@ or not.</TD>
   and infinite cases.</TD>
 </TR>
 
-<TR>
-  <TD>hashgt0 , hashge1</TD>
-  <TD>~ hashnncl</TD>
-  <TD>It is not clear there would be any way to combine the finite
-  and infinite cases.</TD>
-</TR>
+<tr>
+  <td>hashgt0 , hashge1</td>
+  <td>~ hashnncl , ~ dom1oi</td>
+</tr>
 
 <TR>
   <TD>hashnn0n0nn</TD>
@@ -12606,11 +12620,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>reldvdsr</td>
-  <td>~ reldvdsrsrg</td>
-</tr>
-
-<tr>
   <td>dvdsrval</td>
   <td>~ dvdsrvald</td>
 </tr>
@@ -14398,11 +14407,6 @@ intuitionistic and it is lightly used in set.mm</TD>
   <TD>resstps</TD>
   <TD><I>none</I></TD>
   <TD>The set.mm proof relies on resstopn</TD>
-</TR>
-
-<TR>
-  <TD>lmrel</TD>
-  <TD>~ lmreltop</TD>
 </TR>
 
 <TR>
@@ -17033,38 +17037,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>wlkprop</td>
-  <td>~ wlkpropg</td>
-</tr>
-
-<tr>
-  <td>wlkv</td>
-  <td>~ wlkvg</td>
-</tr>
-
-<tr>
-  <td>wlkf</td>
-  <td>~ wlkfg</td>
-</tr>
-
-<tr>
-  <td>wlkcl</td>
-  <td>~ wlkclg</td>
-</tr>
-
-<tr>
-  <td>wlkp</td>
-  <td>~ wlkpg</td>
-</tr>
-
-<tr>
   <td>wlkpwrd</td>
   <td>~ wlkpwrdg</td>
-</tr>
-
-<tr>
-  <td>wlklenvp1</td>
-  <td>~ wlklenvp1g</td>
 </tr>
 
 <tr>
@@ -17082,18 +17056,42 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>wlklenvm1</td>
-  <td>~ wlklenvm1g</td>
-</tr>
-
-<tr>
   <td>wlkvtxeledg</td>
   <td>~ wlkvtxeledgg</td>
 </tr>
 
 <tr>
-  <td>wlkvtxiedg</td>
-  <td>~ wlkvtxiedgg</td>
+  <td>wlkvv</td>
+  <td>~ wlkelvv</td>
+</tr>
+
+<tr>
+  <td>wlkcpr</td>
+  <td>~ wlkcprim</td>
+  <td>the set.mm proof of the converse uses wlkvv</td>
+</tr>
+
+<tr>
+  <td>wlkcomp</td>
+  <td>~ wlkcompim</td>
+</tr>
+
+<tr>
+  <td>edginwlk</td>
+  <td>~ edginwlkd</td>
+  <td>adds set existence condition for ` G `</td>
+</tr>
+
+<tr>
+  <td>wlk1walk</td>
+  <td>~ wlk1walkdom</td>
+  <td>changes the way we say that a set has at least one
+  element</td>
+</tr>
+
+<tr>
+  <td>upgriswlk</td>
+  <td>~ upgriswlkdc</td>
 </tr>
 
 <tr>

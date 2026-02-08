@@ -33172,6 +33172,16 @@ $)
       ( cpr prid1 prcom eleqtri ) BBADABDBACEBAFG $.
   $}
 
+  $( An unordered pair is a singleton or a subset of itself.  This theorem is
+     helpful to convert theorems about walks in arbitrary graphs into theorems
+     about walks in pseudographs.  (Contributed by AV, 27-Feb-2021.) $)
+  ifpprsnssdc $p |- ( ( P = { A , B } /\ DECID A = B )
+                    -> if- ( A = B , P = { A } , { A , B } C_ P ) ) $=
+    ( cpr wceq wdc wa csn wss wif wi preq2 eqtr4di eqcoms eqeq2d biimpcd adantr
+    wn dfsn2 eqimss2 a1d wb dfifp2dc adantl mpbir2and ) CABDZEZABEZFZGUHCAHZEZU
+    FCIZJZUHUKKZUHRZULKZUGUNUIUHUGUKUHUFUJCUFUJEBABAEUFAADUJBAALASMNOPQUGUPUIUG
+    ULUOUFCTUAQUIUMUNUPGUBUGUHUKULUCUDUE $.
+
   $( A proper class vanishes in an unordered pair.  (Contributed by NM,
      5-Aug-1993.) $)
   prprc1 $p |- ( -. A e. _V -> { A , B } = { B } ) $=
@@ -57513,6 +57523,20 @@ $)
   $}
 
   ${
+    $d x A $.  $d B r $.  $d F r $.
+    relmptopab.1 $e |- F = ( x e. A |-> { <. y , z >. | ph } ) $.
+    $( Any function to sets of ordered pairs produces a relation on function
+       value unconditionally.  (Contributed by Mario Carneiro, 7-Aug-2014.)
+       (Proof shortened by Mario Carneiro, 24-Dec-2016.) $)
+    relmptopab $p |- Rel ( F ` B ) $=
+      ( vr cfv wrel cvv cxp wss cv wcel cdm copab wral df-rel wfun funrel ax-mp
+      funmpt2 relelfvdm mpan relopab rgenw fvmptssdm sylancl mpcom ssriv mpbir
+      mpbi ssel ) FGJZKUPLLMZNZIUPUQURIOZUPPZUSUQPUTFGQPZACDRZUQNZBESURGKZUTVAG
+      UAVDBEVBGHUDGUBUCUSFGUEUFVCBEVBKVCACDUGVBTUNUHBEVBUQFGHUIUJUPUQUSUOUKULUP
+      TUM $.
+  $}
+
+  ${
     $d x y A $.  $d x y B $.  $d y C $.  $d x D $.  $d x y ph $.
     f1od.1 $e |- F = ( x e. A |-> C ) $.
     ${
@@ -67419,6 +67443,29 @@ $)
       ax-mp ) ADZEBULFGZHZULEIJUNFEKZBULLFFSZBMZCMZSZNZCULLBULLUOBULOPUTBCULUQU
       LKZURULKZQZUSUPVCUQAURVAUQASVBUQARTVBURASVAURARUAUBUCUDBCULEFFUMUMUEUSFUF
       UGUHULEUMUIUJUK $.
+  $}
+
+  ${
+    $d A f j $.  $d V f $.
+    $( Two ways of saying that a set is inhabited.  (Contributed by Jim
+       Kingdon, 3-Jan-2026.) $)
+    dom1o $p |- ( A e. V -> ( 1o ~<_ A <-> E. j j e. A ) ) $=
+      ( vf wcel c1o cdom wbr cv wex wf1 brdomg wi wf c0 cfv f1f 0lt1o a1i csn
+      ffvelcdm mpan2 elex2 3syl exlimdv sylbid cop cvv 0ex opex snex f1sng mpan
+      vex wceq wb df1o2 f1eq2 ax-mp sylibr f1eq1 elabd exlimiv imbitrrid impbid
+      ) ACEZFAGHZBIZAEZBJZVFVGFADIZKZDJZVJFACDLZVFVLVJDVLVJMVFVLFAVKNZOVKPZAEZV
+      JFAVKQVOOFEZVQRFAOVKUAUBBVPAUCUDSUEUFVJVGVFVMVIVMBVIVLFAOVHUGZTZKZDVTVTUH
+      EVIVSOVHUIBUNUJUKSVIOTZAVTKZWAVRVIWCROVHFAULUMFWBUOWAWCUPUQFWBAVTURUSUTFA
+      VKVTVAVBVCVNVDVE $.
+  $}
+
+  ${
+    $d A j $.  $d B j $.
+    $( A set with an element dominates one.  (Contributed by Jim Kingdon,
+       3-Feb-2026.) $)
+    dom1oi $p |- ( ( A e. V /\ B e. A ) -> 1o ~<_ A ) $=
+      ( vj wcel wa c1o cdom wbr cv wex elex2 adantl wb dom1o adantr mpbird ) AC
+      EZBAEZFGAHIZDJAEDKZSUARDBALMRTUANSADCOPQ $.
   $}
 
   ${
@@ -106325,6 +106372,12 @@ $)
     VRWNWMVSGZDBIJZVRWNDTFATFZBTFZWOWPMWNUKWHWQWAAUNULWAWRWHBUOPDABUPUQWAWPVRMZ
     WHWAWIWSWJVRWIWPBURUSUTPVAQVBRSVCQVDVESWCVOVSVOWDWCVSWFVQWAWBWDVSMVQWAWBWDV
     SWEWGVSWKVFVGVHVISVJVKRVLABVMVN $.
+
+  $( Translation of one between closed and open integer ranges.  (Contributed
+     by Thierry Arnoux, 28-Jul-2020.) $)
+  fz1fzo0m1 $p |- ( M e. ( 1 ... N ) -> ( M - 1 ) e. ( 0 ..^ N ) ) $=
+    ( c1 cfz co wcel cmin cc0 cfzo elfzmlbm cz wceq elfzel2 fzoval syl eleqtrrd
+    ) ACBDEFZACGEHBCGEDEZHBIEZACBJQBKFSRLACBMHBNOP $.
 
   ${
     $d k N $.
@@ -165536,20 +165589,21 @@ $)
 
   ${
     $d w x y z R $.
+    reldvdsr.1 $e |- .|| = ( ||r ` R ) $.
+    $( The divides relation is a relation.  (Contributed by Mario Carneiro,
+       1-Dec-2014.) $)
+    reldvdsr $p |- Rel .|| $=
+      ( vx vw vz vy wrel cdsr cfv cv cbs wcel cmulr co wceq wrex cvv df-dvdsr
+      wa relmptopab releqi mpbir ) AHBIJZHDKZEKZLJZMFKUEUFNJOGKPFUGQTEDGRBIDGFE
+      SUAAUDCUBUC $.
+  $}
+
+  ${
+    $d w x y z R $.
     $( The divides relation is a relation.  (Contributed by Mario Carneiro,
        1-Dec-2014.)  (Revised by Jim Kingdon, 24-Jan-2025.) $)
     reldvdsrsrg $p |- ( R e. SRing -> Rel ( ||r ` R ) ) $=
-      ( vx vz vy vw csrg wcel cdsr cfv cvv cxp cbs cv cmulr co wceq copab fveq2
-      wrex wa wrel df-dvdsr eleq2d oveqd eqeq1d rexeqbidv anbi12d opabbidv elex
-      wss wfn basfn funfvex funfni sylancr xpexg syl2anc simplll simplr simpllr
-      simpr eqid srgcl eqeltrrd rexlimdva2 imdistanda ssopab2dv df-xp sseqtrrdi
-      syl3anc ssexd fvmptd3 eqsstrd xpss sstrdi df-rel sylibr ) AFGZAHIZJJKZUJV
-      SUAVRVSALIZWAKZVTVRVSBMZWAGZCMZWCANIZOZDMZPZCWASZTZBDQZWBVREAWCEMZLIZGZWE
-      WCWMNIZOZWHPZCWNSZTZBDQWLJHJBDCEUBWMAPZWTWKBDXAWOWDWSWJXAWNWAWCWMALRZUCXA
-      WRWICWNWAXBXAWQWGWHXAWPWFWEWCWMANRUDUEUFUGUHAFUIZVRWLWBJVRWAJGZXDWBJGVRLJ
-      UKAJGXDULXCXDJALALUMUNUOZXEWAWAJJUPUQVRWLWDWHWAGZTZBDQWBVRWKXGBDVRWDWJXFV
-      RWDTZWIXFCWAXHWEWAGZTZWITZWGWHWAXJWIVAXKVRXIWDWGWAGVRWDXIWIURXHXIWIUSVRWD
-      XIWIUTWAAWFWEWCWAVBWFVBVCVJVDVEVFVGBDWAWAVHVIZVKVLXLVMWAWAVNVOVSVPVQ $.
+      ( cdsr cfv wrel csrg wcel eqid reldvdsr a1i ) ABCZDAEFJAJGHI $.
   $}
 
   ${
@@ -176530,6 +176584,13 @@ $)
        ( f e. ( U. j ^pm CC ) /\ x e. U. j /\
          A. u e. j ( x e. u -> E. y e. ran ZZ>= ( f |` y ) : y --> u ) ) } ) $.
 
+    $( The topological space convergence relation is a relation.  (Contributed
+       by NM, 7-Dec-2006.)  (Revised by Mario Carneiro, 14-Nov-2013.) $)
+    lmrel $p |- Rel ( ~~>t ` J ) $=
+      ( vf vj vx vu vy cv cuni cc cpm co wcel cres wf cuz crn wrex wi wral w3a
+      ctop clm df-lm relmptopab ) BGZCGZHZIJKLDGZUGLUHEGZLFGZUIUEUJMNFOPQREUFST
+      CBDUAAUBDFEBCUCUD $.
+
     $( Reverse closure for the convergence relation.  (Contributed by Mario
        Carneiro, 7-Sep-2015.) $)
     lmrcl $p |- ( F ( ~~>t ` J ) P -> J e. Top ) $=
@@ -176559,17 +176620,6 @@ $)
       BFEURUOUPZUQUSXCWEFWHXFUSXCWLCWDEXEUTVHVAFEVBWBXAWPFVCZVDXGRHZXARHXAWQWRT
       WSTZDAPXGWTXIDAWQWRWSVEVFWSDAWPFVGVIWBWPRHZFEHXHLRRVCVJWBFRHKRHZXJVKWBFEF
       EVLZVMXKWBVNULFKRRLVOVPXLWPFREVQVSXAXGRVRVTWA $.
-  $}
-
-  ${
-    $d J f u x y $.
-    $( The topological space convergence relation is a relation.  (Contributed
-       by Jim Kingdon, 25-Mar-2023.) $)
-    lmreltop $p |- ( J e. Top -> Rel ( ~~>t ` J ) ) $=
-      ( vf vx vu vy ctop wcel clm cfv wrel cv cuni cc cpm co cres cuz crn wrex
-      wf wi wral copab relopab ctopon wceq toptopon2 lmfval sylbi releqd mpbiri
-      w3a ) AFGZAHIZJBKZALZMNOGCKZUPGUQDKZGEKZURUOUSPTEQRSUADAUBULZBCUCZJUTBCUD
-      UMUNVAUMAUPUEIGUNVAUFAUGCEDBAUPUHUIUJUK $.
   $}
 
   ${
@@ -196981,9 +197031,9 @@ $)
     $d f g k p $.
     $( Define the set of all walks (in a hypergraph).  Such walks correspond to
        the s-walks "on the vertex level" (with s = 1), and also to 1-walks "on
-       the edge level" discussed in Aksoy et al.  The predicate
-       ` F ( Walks `` G ) P ` can be read as "The pair ` <. F , P >. `
-       represents a walk in a graph ` G ` ", see also ~ iswlk .
+       the edge level" (see ~ wlk1walkdom ) discussed in Aksoy et al.  The
+       predicate ` F ( Walks `` G ) P ` can be read as "The pair
+       ` <. F , P >. ` represents a walk in a graph ` G ` ", see also ~ iswlk .
 
        The condition ` { ( p `` k ) , ( p `` ( k + 1 ) ) } `
        ` C_ ( ( iEdg `` g ) `` ( f `` k ) ) ` (hereinafter referred to as C)
@@ -197007,6 +197057,17 @@ $)
                                 ( ( iEdg ` g ) ` ( f ` k ) ) = { ( p ` k ) } ,
                                 { ( p ` k ) , ( p ` ( k + 1 ) ) }
                                 C_ ( ( iEdg ` g ) ` ( f ` k ) ) ) ) } ) $.
+  $}
+
+  ${
+    $d f g k p $.
+    $( If there are walks on a graph, the graph is a set.  (Contributed by Jim
+       Kingdon, 1-Feb-2026.) $)
+    wlkmex $p |- ( W e. ( Walks ` G ) -> G e. _V ) $=
+      ( vg vf vp vk cvv cv ciedg cfv cdm cword wcel cc0 chash cfz co cvtx wceq
+      wf c1 caddc csn cpr wss wif cfzo wral w3a copab cwlks df-wlks mptrcl ) CG
+      DHZCHZIJZKLMNUNOJZPQUORJEHZTFHZURJZUSUAUBQURJZSUSUNJUPJZUTUCSUTVAUDVBUEUF
+      FNUQUGQUHUIDEUJUKBADCFEULUM $.
   $}
 
   $( Lemma 1 for walks to substitute the index of the condition for vertices
@@ -197110,9 +197171,43 @@ $)
   $}
 
   ${
-    $d G f k p $.  $d W f $.
+    $d G f k p $.
     $( The classes involved in a walk are sets.  (Contributed by Alexander van
        der Vekens, 31-Oct-2017.)  (Revised by AV, 3-Feb-2021.) $)
+    wlkv $p |- ( F ( Walks ` G ) P -> ( G e. _V /\ F e. _V /\ P e. _V ) ) $=
+      ( vf vp vk cwlks cfv wbr cvv wcel cop df-br wlkmex sylbi cv cc0 wceq eqid
+      co wa ciedg cdm cword chash cfz cvtx wf c1 caddc csn cpr wss wif cfzo w3a
+      wral copab wksfval breqd brabv biimtrdi mpcom simpld simprd 3jca ) BACGHZ
+      IZCJKZBJKZAJKZVHBALZVGKVIBAVGMCVLNOZVHVJVKVIVHVJVKUAZVMVIVHBADPZCUBHZUCUD
+      KQVOUEHZUFTCUGHZEPZUHFPZVSHZVTUIUJTVSHZRVTVOHVPHZWAUKRWAWBULWCUMUNFQVQUOT
+      UQUPZDEURZIVNVIVGWEBADFCVPVRJEVRSVPSUSUTWDDEBAVAVBVCZVDVHVJVKWFVEVF $.
+  $}
+
+  ${
+    $d F k $.  $d G k $.  $d P k $.
+    wlkprop.v $e |- V = ( Vtx ` G ) $.
+    wlkprop.i $e |- I = ( iEdg ` G ) $.
+    $( Properties of a walk.  (Contributed by AV, 5-Nov-2021.) $)
+    wlkprop $p |- ( F ( Walks ` G ) P
+                    -> ( F e. Word dom I /\ P : ( 0 ... ( # ` F ) ) --> V
+                               /\ A. k e. ( 0 ..^ ( # ` F ) )
+                                  if- ( ( P ` k ) = ( P ` ( k + 1 ) ) ,
+                                        ( I ` ( F ` k ) ) = { ( P ` k ) } ,
+                                        { ( P ` k ) , ( P ` ( k + 1 ) ) }
+                                        C_ ( I ` ( F ` k ) ) ) ) ) $=
+      ( cvv wcel cwlks cfv wbr cdm cword cc0 chash cfz co wceq wf cv c1 csn cpr
+      caddc wss wif cfzo wral w3a wlkv simp1d wlkpropg mpancom ) DIJZCADKLMZCEN
+      OJPCQLZRSFAUABUBZALZUSUCUFSALZTUSCLELZUTUDTUTVAUEVBUGUHBPURUISUJUKUQUPCIJ
+      AIJACDULUMABCDEFIGHUNUO $.
+  $}
+
+  ${
+    $d G f k p $.  $d W f $.
+    $( The classes involved in a walk are sets.  Now that we have ~ wlkv there
+       is no reason to use this theorem in new proofs and using ~ wlkv is
+       encouraged for consistency with the Metamath Proof Explorer.
+       (Contributed by Alexander van der Vekens, 31-Oct-2017.)  (Revised by AV,
+       3-Feb-2021.)  (New usage is discouraged.) $)
     wlkvg $p |- ( ( G e. W /\ F ( Walks ` G ) P )
         -> ( F e. _V /\ P e. _V ) ) $=
       ( vf vp vk wcel cwlks cfv wbr cvv wa cv ciedg cdm cc0 co wceq eqid cfz wf
@@ -197149,12 +197244,30 @@ $)
     $( The mapping enumerating the (indices of the) edges of a walk is a word
        over the indices of the edges of the graph.  (Contributed by AV,
        5-Apr-2021.) $)
+    wlkf $p |- ( F ( Walks ` G ) P -> F e. Word dom I ) $=
+      ( vk cwlks cfv wbr cdm cword wcel cc0 chash cfz co cvtx wf cv wceq c1 csn
+      caddc cpr wss wif cfzo wral eqid wlkprop simp1d ) BACGHIBDJKLMBNHZOPCQHZA
+      RFSZAHZUNUAUCPAHZTUNBHDHZUOUBTUOUPUDUQUEUFFMULUGPUHAFBCDUMUMUIEUJUK $.
+  $}
+
+  ${
+    $d F k $.  $d G k $.  $d P k $.
+    wlkfg.i $e |- I = ( iEdg ` G ) $.
+    $( The mapping enumerating the (indices of the) edges of a walk is a word
+       over the indices of the edges of the graph.  (Contributed by AV,
+       5-Apr-2021.) $)
     wlkfg $p |- ( ( G e. W /\ F ( Walks ` G ) P ) -> F e. Word dom I ) $=
       ( vk wcel cwlks cfv wbr wa cdm cword cc0 chash cfz co cvtx wceq wf cv csn
       c1 caddc cpr wss wif cfzo wral eqid wlkpropg simp1d ) CEHBACIJKLBDMNHOBPJ
       ZQRCSJZAUAGUBZAJZUPUDUERAJZTUPBJDJZUQUCTUQURUFUSUGUHGOUNUIRUJAGBCDUOEUOUK
       FULUM $.
   $}
+
+  $( A walk has length ` # ( F ) ` , which is an integer.  (Contributed by
+     Mario Carneiro, 12-Mar-2015.)  (Revised by AV, 18-Feb-2021.) $)
+  wlkcl $p |- ( F ( Walks ` G ) P -> ( # ` F ) e. NN0 ) $=
+    ( cwlks cfv wbr ciedg cdm cword wcel chash cn0 eqid wlkf lencl syl ) BACDEF
+    BCGEZHZIJBKELJABCQQMNRBOP $.
 
   $( A walk has length ` # ( F ) ` , which is an integer.  (Contributed by
      Mario Carneiro, 12-Mar-2015.)  (Revised by AV, 18-Feb-2021.) $)
@@ -197165,6 +197278,13 @@ $)
   ${
     $d F k $.  $d G k $.  $d P k $.
     wlkp.v $e |- V = ( Vtx ` G ) $.
+    $( The mapping enumerating the vertices of a walk is a function.
+       (Contributed by AV, 5-Apr-2021.) $)
+    wlkp $p |- ( F ( Walks ` G ) P -> P : ( 0 ... ( # ` F ) ) --> V ) $=
+      ( vk cwlks cfv wbr ciedg cdm cword wcel cc0 chash cfz co wf cv wceq caddc
+      c1 csn cpr wss wif cfzo wral eqid wlkprop simp2d ) BACGHIBCJHZKLMNBOHZPQD
+      ARFSZAHZUNUBUAQAHZTUNBHULHZUOUCTUOUPUDUQUEUFFNUMUGQUHAFBCULDEULUIUJUK $.
+
     $( The mapping enumerating the vertices of a walk is a function.
        (Contributed by AV, 5-Apr-2021.) $)
     wlkpg $p |- ( ( G e. W /\ F ( Walks ` G ) P )
@@ -197181,6 +197301,14 @@ $)
       ffz0iswrdnn0 syl2anc ) CEGBACHIJKLBMIZNODAPUCQGADRGABCDEFSABCETDUCAUAUB
       $.
   $}
+
+  $( The number of vertices of a walk (in an undirected graph) is the number of
+     its edges plus 1.  (Contributed by Alexander van der Vekens, 29-Jun-2018.)
+     (Revised by AV, 1-May-2021.) $)
+  wlklenvp1 $p |- ( F ( Walks ` G ) P -> ( # ` P ) = ( ( # ` F ) + 1 ) ) $=
+    ( cwlks cfv wbr chash cn0 wcel cc0 co cvtx wf c1 caddc wceq wlkcl eqid wlkp
+    cfz ffz0hash syl2anc ) BACDEFBGEZHIJUCTKCLEZAMAGEUCNOKPABCQABCUDUDRSUDAUCUA
+    UB $.
 
   $( The number of vertices of a walk (in an undirected graph) is the number of
      its edges plus 1.  (Contributed by Alexander van der Vekens, 29-Jun-2018.)
@@ -197203,6 +197331,14 @@ $)
       VHBCDEUDVIVEOUBIGVHVEUEFOVEUFUGRUSVFDUHIZBUIZVDVHSBCDVJEVJUJUKZVKVCVGFVKV
       BVFVAVFVJBUPULUMRTUSVKBUNUTVDSVLVFVJBUQAFBUOURT $.
   $}
+
+  $( The number of edges of a walk is the number of its vertices minus 1.
+     (Contributed by Alexander van der Vekens, 1-Jul-2018.)  (Revised by AV,
+     2-Jan-2021.) $)
+  wlklenvm1 $p |- ( F ( Walks ` G ) P -> ( # ` F ) = ( ( # ` P ) - 1 ) ) $=
+    ( cwlks cfv wbr chash c1 caddc co wceq cmin wlklenvp1 wa oveq1 wlkcl nn0cnd
+    cc wcel pncan1 syl sylan9eqr eqcomd mpdan ) BACDEFZAGEZBGEZHIJZKZUGUFHLJZKA
+    BCMUEUINUJUGUIUEUJUHHLJZUGUFUHHLOUEUGRSUKUGKUEUGABCPQUGTUAUBUCUD $.
 
   $( The number of edges of a walk is the number of its vertices minus 1.
      (Contributed by Alexander van der Vekens, 1-Jul-2018.)  (Revised by AV,
@@ -197242,6 +197378,25 @@ $)
     $( The vertices of a walk are connected by indexed edges.  (Contributed by
        Alexander van der Vekens, 22-Jul-2018.)  (Revised by AV, 2-Jan-2021.)
        (Proof shortened by AV, 4-Apr-2021.) $)
+    wlkvtxiedg $p |- ( F ( Walks ` G ) P
+                       -> A. k e. ( 0 ..^ ( # ` F ) ) E. e e. ran I
+                          { ( P ` k ) , ( P ` ( k + 1 ) ) } C_ e ) $=
+      ( vx vy cfv wbr cv co wss cc0 wral cvv wcel wa adantl cwlks c1 caddc cfzo
+      cpr chash crn wrex wlkv simp1d wlkvtxeledgg mpancom wi wex cvtx cfz wlkpg
+      eqid adantr elfzofz ffvelcdmd prmg syl simp2d vex fvexg sylancl ad3antrrr
+      wf simplr simpr sseldd fvmbr breq1 elabd wb elfvex elrng 3syl mpbird wceq
+      exlimddv sseq2 rspcedvd ex ralimdva mpd ) DAEUAJKZCLZAJZWIUBUCMAJZUEZWIDJ
+      ZFJZNZCODUFJZUDMZPZWLBLZNZBFUGZUHZCWQPZEQRZWHWRWHXDDQRZAQRZADEUIZUJZACDEF
+      QGUKULXDWHWRXCUMXHXDWHSZWOXBCWQXIWIWQRZSZWOXBXKWOSZWTWOBWNXAXLHLZWLRZWNXA
+      RZHXKXNHUNZWOXKWJEUOJZRXPXKOWPUPMZXQWIAXIXRXQAVIXJADEXQQXQURUQUSXJWIXRRXI
+      WIOWPUTTVAHWJWKXQVBVCUSXLXNSZXOILZWNFKZIUNZXSYAWMWNFKZIWMXIWMQRZXJWOXNXIX
+      EWIQRYDWHXEXDWHXDXEXFXGVDTCVEWIDQQVFVGVHXSXMWNRZYCXSWLWNXMXKWOXNVJXLXNVKV
+      LZXMFWMVMVCXTWMWNFVNVOXSYEWNQRXOYBVPYFXMWMFVQIWNFQVRVSVTWBWSWNWAWTWOVPXLW
+      SWNWLWCTXKWOVKWDWEWFULWG $.
+
+    $( The vertices of a walk are connected by indexed edges.  (Contributed by
+       Alexander van der Vekens, 22-Jul-2018.)  (Revised by AV, 2-Jan-2021.)
+       (Proof shortened by AV, 4-Apr-2021.) $)
     wlkvtxiedgg $p |- ( ( G e. W /\ F ( Walks ` G ) P )
                        -> A. k e. ( 0 ..^ ( # ` F ) ) E. e e. ran I
                           { ( P ` k ) , ( P ` ( k + 1 ) ) } C_ e ) $=
@@ -197257,6 +197412,463 @@ $)
       DVHXBXDVJVIZXCFWKVKVAXJWKWLFVLVMXIXPWLTKXEXLVNXQXCWKFVOJWLFTVPVQWBVRWPWLV
       SWQWMVNXBWPWLWJVTURXAWMVJWAWCWDWE $.
   $}
+
+  ${
+    $d f g k p $.
+    $( The set ` ( Walks `` G ) ` of all walks on ` G ` is a set of pairs by
+       our definition of a walk, and so is a relation.  (Contributed by
+       Alexander van der Vekens, 30-Jun-2018.)  (Revised by AV,
+       19-Feb-2021.) $)
+    relwlk $p |- Rel ( Walks ` G ) $=
+      ( vf vg vp vk cv ciedg cfv cdm cword wcel cc0 chash co cvtx wf caddc wceq
+      cfz c1 csn cpr wss wif cfzo wral w3a cvv cwlks df-wlks relmptopab ) BFZCF
+      ZGHZIJKLULMHZSNUMOHDFZPEFZUPHZUQTQNUPHZRUQULHUNHZURUARURUSUBUTUCUDELUOUEN
+      UFUGCBDUHAUIBCEDUJUK $.
+  $}
+
+  $( A walk is an ordered pair.  (Contributed by Alexander van der Vekens,
+     30-Jun-2018.)  (Revised by AV, 1-Jan-2021.) $)
+  wlkop $p |- ( W e. ( Walks ` G )
+                 -> W = <. ( 1st ` W ) , ( 2nd ` W ) >. ) $=
+    ( cwlks cfv wrel wcel c1st c2nd cop wceq relwlk 1st2nd mpan ) ACDZEBNFBBGDB
+    HDIJAKBNLM $.
+
+  $( A walk is an ordered pair.  (Contributed by Jim Kingdon, 2-Feb-2026.) $)
+  wlkelvv $p |- ( W e. ( Walks ` G ) -> W e. ( _V X. _V ) ) $=
+    ( cwlks cfv wcel c1st c2nd cop cvv cxp wlkop 1stexg 2ndexg opelxpd eqeltrd
+    ) BACDZEZBBFDZBGDZHIIJABKQRSIIBPLBPMNO $.
+
+  $( A walk as class with two components.  (Contributed by Alexander van der
+     Vekens, 22-Jul-2018.)  (Revised by AV, 2-Jan-2021.)  (Revised by Jim
+     Kingdon, 1-Feb-2026.) $)
+  wlkcprim $p |- ( W e. ( Walks ` G )
+      -> ( 1st ` W ) ( Walks ` G ) ( 2nd ` W ) ) $=
+    ( cwlks cfv wcel c1st c2nd cop wbr wlkop eleq1d ibi df-br sylibr ) BACDZEZB
+    FDZBGDZHZOEZQROIPTPBSOABJKLQROMN $.
+
+  ${
+    $d G f p $.  $d W f p $.
+    $( If there is a walk ` W ` there is a pair of functions representing this
+       walk.  (Contributed by Alexander van der Vekens, 22-Jul-2018.) $)
+    wlk2f $p |- ( W e. ( Walks ` G ) -> E. f E. p f ( Walks ` G ) p ) $=
+      ( cwlks cfv wcel c1st cvv wa wbr cv wex 1stexg 2ndexg jca wlkcprim breq12
+      c2nd spc2egv sylc ) CBEFZGZCHFZIGZCSFZIGZJUDUFUBKZALZDLZUBKZDMAMUCUEUGCUB
+      NCUBOPBCQUKUHADUDUFIIUIUDUJUFUBRTUA $.
+  $}
+
+  ${
+    $d F k $.  $d G k $.  $d P k $.
+    wlkcomp.v $e |- V = ( Vtx ` G ) $.
+    wlkcomp.i $e |- I = ( iEdg ` G ) $.
+    wlkcomp.1 $e |- F = ( 1st ` W ) $.
+    wlkcomp.2 $e |- P = ( 2nd ` W ) $.
+    $( Implications for the properties of the components of a walk.
+       (Contributed by Alexander van der Vekens, 23-Jun-2018.)  (Revised by AV,
+       2-Jan-2021.) $)
+    wlkcompim $p |- ( W e. ( Walks ` G ) -> ( F e. Word dom I
+                /\ P : ( 0 ... ( # ` F ) ) --> V /\ A. k e. ( 0 ..^ ( # ` F ) )
+                                  if- ( ( P ` k ) = ( P ` ( k + 1 ) ) ,
+                                        ( I ` ( F ` k ) ) = { ( P ` k ) } ,
+                                        { ( P ` k ) , ( P ` ( k + 1 ) ) }
+                                        C_ ( I ` ( F ` k ) ) ) ) ) $=
+      ( cwlks cfv wcel wbr cdm cc0 co wceq cvv cword chash cfz wf cv c1 csn cpr
+      caddc wss wif cfzo wral c1st c2nd wlkcprim 3brtr4g wb wlkmex iswlkg mpbid
+      w3a syl ) GDLMZNZCAVDOZCEPUANQCUBMZUCRFAUDBUEZAMZVHUFUIRAMZSVHCMEMZVIUGSV
+      IVJUHVKUJUKBQVGULRUMVBZVEGUNMGUOMCAVDDGUPJKUQVEDTNVFVLURDGUSABCDEFTHIUTVC
+      VA $.
+
+    $( The components of a walk are words/functions over a zero based range of
+       integers.  (Contributed by Alexander van der Vekens, 23-Jun-2018.)
+       (Revised by AV, 2-Jan-2021.) $)
+    wlkelwrd $p |- ( W e. ( Walks ` G ) -> ( F e. Word dom I
+                                        /\ P : ( 0 ... ( # ` F ) ) --> V ) ) $=
+      ( vk cwlks cfv wcel cdm cword cc0 chash co wceq cfz wf cv csn cpr wss wif
+      c1 caddc cfzo wral w3a wa wlkcompim 3simpa syl ) FCLMNBDOPNZQBRMZUASEAUBZ
+      KUCZAMZUTUHUISAMZTUTBMDMZVAUDTVAVBUEVCUFUGKQURUJSUKZULUQUSUMAKBCDEFGHIJUN
+      UQUSVDUOUP $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d N x $.
+    $( Conditions for two walks (within the same graph) being the same.
+       (Contributed by AV, 1-Jul-2018.)  (Revised by AV, 16-May-2019.)
+       (Revised by AV, 14-Apr-2021.) $)
+    wlkeq $p |- ( ( A e. ( Walks ` G ) /\ B e. ( Walks ` G )
+          /\ N = ( # ` ( 1st ` A ) ) ) -> ( A = B <-> ( N = ( # ` ( 1st ` B ) )
+      /\ A. x e. ( 0 ..^ N ) ( ( 1st ` A ) ` x ) = ( ( 1st ` B ) ` x )
+      /\ A. x e. ( 0 ... N ) ( ( 2nd ` A ) ` x ) = ( ( 2nd ` B ) ` x ) ) ) ) $=
+      ( cfv wcel chash wceq wa cc0 cfzo co wral cfz wb eqid cvv syl2anc anbi12d
+      cwlks c1st w3a c2nd cv ciedg cdm cword cvtx wf c1 wlkelwrd anim12i wlkmex
+      cmin wbr wlkcprim wlklenvm1g eqwrd ad2ant2r adantr cn0 lencl simpr 2ffzeq
+      syl2an3an 3adant3 eqeq1 raleqdv bibi2d 3ad2ant3 mpbird cxp wlkelvv xpopth
+      oveq2 syl2an 3anass anandi bitr2i a1i 3bitr3d ) BDUAFZGZCWCGZEBUBFZHFZIZU
+      CZWFCUBFZIZBUDFZCUDFZIZJZEWJHFZIZAUEZWFFWRWJFIZAKELMZNZJZWQWRWLFWRWMFIZAK
+      EOMZNZJZJZBCIZWQXAXEUCZWIWOXGPZWOWGWPIZWSAKWGLMZNZJZXKXCAKWGOMZNZJZJZPZWD
+      WEXSWHWDWEJWFDUFFZUGZUHZGZXODUIFZWLUJZJZWJYBGZKWPOMYDWMUJZJZJZWGWLHFUKUOM
+      IZWPWMHFUKUOMIZJZXSWDYFWEYIWLWFDXTYDBYDQZXTQZWFQWLQULWMWJDXTYDCYNYOWJQWMQ
+      ULUMWDYKWEYLWDDRGZWFWLWCUPYKDBUNDBUQWLWFDRURSWEYPWJWMWCUPYLDCUNDCUQWMWJDR
+      URSUMYJYMJWKXNWNXQYJWKXNPZYMYCYGYQYEYHYAYAWFAWJUSUTVAYJWNXQPZYMYFWGVBGZYE
+      YIYHYRYCYSYEYAWFVCVAYCYEVDYGYHVDWMAWLWGWPYDYDVEVFVATSVGWHWDXJXSPWEWHXGXRW
+      OWHXBXNXFXQWHWQXKXAXMEWGWPVHZWHWSAWTXLEWGKLVPVITWHWQXKXEXPYTWHXCAXDXOEWGK
+      OVPVITTVJVKVLWDWEWOXHPZWHWDBRRVMZGCUUBGUUAWEDBVNDCVNBCRRRRVOVQVGXGXIPWIXI
+      WQXAXEJJXGWQXAXEVRWQXAXEVSVTWAWB $.
+  $}
+
+  ${
+    edginwlk.i $e |- I = ( iEdg ` G ) $.
+    edginwlk.e $e |- E = ( Edg ` G ) $.
+    edginwlkd.f $e |- ( ph -> Fun I ) $.
+    edginwlkd.w $e |- ( ph -> F e. Word dom I ) $.
+    edginwlkd.k $e |- ( ph -> K e. ( 0 ..^ ( # ` F ) ) ) $.
+    edginwlkd.g $e |- ( ph -> G e. V ) $.
+    $( The value of the edge function for an index of an edge within a walk is
+       an edge.  (Contributed by AV, 2-Jan-2021.)  (Revised by AV, 9-Dec-2021.)
+       (Revised by Jim Kingdon, 2-Feb-2026.) $)
+    edginwlkd $p |- ( ph -> ( I ` ( F ` K ) ) e. E ) $=
+      ( cfv crn wfun wcel syl2anc wceq a1i cdm cword cc0 chash wrdsymbcl fvelrn
+      cfzo co cedg ciedg edgvalg syl eqcomi rneqi 3eqtrd eleqtrrd ) AFCNZENZEOZ
+      BAEPUQEUAZQZURUSQJACUTUBQFUCCUDNUGUHQVAKLFUTCUERUQEUFRABDUINZDUJNZOZUSBVB
+      SAITADGQVBVDSMDGUKULVDUSSAVCEEVCHUMUNTUOUP $.
+  $}
+
+  ${
+    upgredginwlk.i $e |- I = ( iEdg ` G ) $.
+    upgredginwlk.e $e |- E = ( Edg ` G ) $.
+    $( The value of the edge function for an index of an edge within a walk is
+       an edge.  (Contributed by AV, 2-Jan-2021.) $)
+    upgredginwlk $p |- ( ( G e. UPGraph /\ F e. Word dom I )
+                 -> ( K e. ( 0 ..^ ( # ` F ) ) -> ( I ` ( F ` K ) ) e. E ) ) $=
+      ( cupgr wcel cdm cword wa cc0 chash cfv cfzo co wfun cuhgr upgruhgr simpr
+      uhgrfun syl ad2antrr simplr simpll edginwlkd ex ) CHIZBDJKIZLZEMBNOPQIZEB
+      ODOAIUKULLABCDEHFGUIDRZUJULUICSIUMCTDCFUBUCUDUIUJULUEUKULUAUIUJULUFUGUH
+      $.
+  $}
+
+  ${
+    iedginwlk.i $e |- I = ( iEdg ` G ) $.
+    $( The value of the edge function for an index of an edge within a walk is
+       an edge.  (Contributed by AV, 23-Apr-2021.) $)
+    iedginwlk $p |- ( ( Fun I /\ F ( Walks ` G ) P
+                        /\ X e. ( 0 ..^ ( # ` F ) ) )
+                      -> ( I ` ( F ` X ) ) e. ran I ) $=
+      ( wfun cwlks cfv wbr cc0 chash cfzo co wcel w3a cdm crn simp1 syl2anc
+      cword wlkf 3ad2ant2 simp3 wrdsymbcl fvelrn ) DGZBACHIJZEKBLIMNOZPZUGEBIZD
+      QZOZUKDIDROUGUHUISUJBULUAOZUIUMUHUGUNUIABCDFUBUCUGUHUIUDEULBUETUKDUFT $.
+  $}
+
+  ${
+    $d F k $.  $d G k $.  $d P k $.
+    $( A walk of length 1 from a vertex to itself is a loop.  (Contributed by
+       AV, 23-Apr-2021.) $)
+    wlkl1loop $p |- ( ( ( Fun ( iEdg ` G ) /\ F ( Walks ` G ) P )
+                         /\ ( ( # ` F ) = 1 /\ ( P ` 0 ) = ( P ` 1 ) ) )
+                       -> { ( P ` 0 ) } e. ( Edg ` G ) ) $=
+      ( vk cfv wa c1 wceq cc0 csn wcel wi cvv w3a cfzo co eqtrdi ad2antrl caddc
+      c0ex ciedg wfun cwlks wbr chash cedg wlkv crn simp3l simp2 snid eleqtrrid
+      oveq2 fzo01 3ad2ant3 eqid iedginwlk syl3anc cdm cword cfz cvtx wf cpr wss
+      cv wif wral iswlkg raleqdv oveq1 0p1e1 wkslem2 mpdan bitrdi ifptru biimpa
+      wb ralsn eqcomd ex ad2antll sylbid biimtrdi 3imp edgvalg 3ad2ant1 3eltr4d
+      com12 3exp mpcom expd impcom imp ) CUAEZUBZBACUCEUDZFBUEEZGHZIAEZGAEZHZFZ
+      WTJZCUFEZKZWQWPXCXFLWQWPXCXFCMKZBMKZAMKZNWQWPXCFZXFLZABCUGXGXHWQXKLXIXGWQ
+      XJXFXGWQXJNZIBEWOEZWOUHZXDXEXLWPWQIIWROPZKZXMXNKXGWQWPXCUIXGWQXJUJXJXGXPW
+      QWSXPWPXBWSIIJZXOITUKWSXOIGOPXQWRGIOUMUNQZULRUOABCWOIWOUPZUQURXGWQXJXDXMH
+      ZXGWQBWOUSUTKZIWRVAPCVBEZAVCZDVFZAEZYDGSPZAEZHYDBEWOEZYEJHYEYGVDYHVEVGZDX
+      OVHZNXJXTLZADBCWOYBMYBUPXSVIYJYAYKYCXJYJXTXJYJXBXMXDHZWTXAVDXMVEZVGZXTWSY
+      JYNVRWPXBWSYJYIDXQVHYNWSYIDXOXQXRVJYIYNDITYDIHZYFGHYIYNVRYOYFIGSPGYDIGSVK
+      VLQYDIGABWOVMVNVSVORXBYNXTLWPWSXBYNXTXBYNFXMXDXBYNYLXBYLYMVPVQVTWAWBWCWIU
+      OWDWEXGWQXEXNHXJCMWFWGWHWJWGWKWLWMWN $.
+  $}
+
+  ${
+    $d F i k $.  $d G i k $.  $d P i k $.
+    wlk1walk.i $e |- I = ( iEdg ` G ) $.
+    $( A walk is a 1-walk "on the edge level" according to Aksoy et al.
+       (Contributed by AV, 30-Dec-2020.) $)
+    wlk1walkdom $p |- ( F ( Walks ` G ) P -> A. k e. ( 1 ..^ ( # ` F ) )
+        1o ~<_ ( ( I ` ( F ` ( k - 1 ) ) ) i^i ( I ` ( F ` k ) ) ) ) $=
+      ( vi cfv c1 co wcel wa cvv syl adantr cz syl2anc wceq wi adantld cwlks cv
+      wbr c1o cmin cin cdom chash cfzo ciedg wlkv simp1d iedgex eqeltrid simp2d
+      elfzoelz adantl peano2zm fvexg inex1g caddc csn cpr wss wif cc0 cdm cword
+      wral cfz cvtx wf eqid wlkprop simp3d elfzofz fz1fzo0m1 wkslem1 rspcv 3syl
+      mpan9 fzo0ss1 sseli wn wo df-ifp wb zcn eqidd npcan1 wkslem2 anass eqeq2d
+      cc sneq biimpa sylancl snidg fveq1i eleq2i eleq2 bitrid syl5ibrcom mpbird
+      vex eleqtrrdi anim12d sylani ancomsd biimtrid expd peano2zd prssg biimpar
+      ex simpld eqcomi biimpi syl5 com23 jaod a1i sylbird anbi12i biimtrrdi mpd
+      sylbid com3r sylbi mpcom elin sylibr dom1oi ralrimiva ) CADUAHUCZUDBUBZIU
+      EJZCHZEHZYPCHZEHZUFZUGUCZBICUHHZUIJZYOYPUUEKZLZUUBMKZYPAHZUUBKZUUCUUGYSMK
+      ZUUHUUGEMKZYRMKZUUKYOUULUUFYOEDUJHZMFYODMKZUUNMKYOUUOCMKZAMKZACDUKZULDMUM
+      NUNOUUGUUPYQPKZUUMYOUUPUUFYOUUOUUPUUQUURUOOUUGYPPKZUUSUUFUUTYOYPIUUDUPZUQ
+      ZYPURNZYQCMPUSQYREMMUSQYSUUAMUTNUUGUUIYSKZUUIUUAKZLZUUJUUGYQAHZYQIVAJZAHZ
+      RYRUUNHZUVGVBZRZUVGUVIVCUVJVDVEZUVFYOGUBZAHZUVNIVAJAHZRUVNCHUUNHZUVOVBRUV
+      OUVPVCUVQVDVEZGVFUUDUIJZVIZUUFUVMYOCUUNVGVHKVFUUDVJJDVKHZAVLUVTAGCDUUNUWA
+      UWAVMUUNVMVNVOZUUFYPIUUDVJJKYQUVSKUVTUVMSYPIUUDVPYPUUDVQUVRUVMGYQUVSUVNYQ
+      ACUUNVRVSVTWAUUIYPIVAJZAHZRZYTUUNHZUUIVBZRZUUIUWDVCUWFVDZVEZUUGUVMUVFSZYO
+      UVTUUFUWJUWBUUFYPUVSKUVTUWJSUUEUVSYPUUDWBWCUVRUWJGYPUVSUVNYPACUUNVRVSNWAU
+      WJUWEUWHLZUWEWDZUWILZWEZUUGUWKSUWEUWHUWIWFUUGUVMUWOUVFUUGUVMUVGUUIRZUVLUV
+      GUUIVCUVJVDZVEZUWOUVFSZUUFUVMUWRWGZYOUUFUUTYPWNKZUWTUVAYPWHUXAYQYQRUVHYPR
+      UWTUXAYQWIYPWJYQYQYPACUUNWKQVTUQUWRUWPUVLLZUWPWDZUWQLZWEUUGUWSUWPUVLUWQWF
+      UUGUXBUWSUXDUUGUWOUXBUVFUUGUWLUXBUVFSZUWNUUGUWLUXBUVFUWLUXBLUWEUWHUXBLZLU
+      UGUVFUWEUWHUXBWLUUGUXFUVFUWEUUGUXBUWHUVFUXBUUGUVJUWGRZUWHUVFUWPUVLUXGUWPU
+      VKUWGUVJUVGUUIWOWMWPZUUGUXGUVDUWHUVEUUGUVDUXGUUIUWGKZUUGUUIMKZUXIUUGUUQYP
+      MKUXJYOUUQUUFYOUUOUUPUUQUURVOOZBXEYPAMMUSWQZUUIMWRNZUVDUUIUVJKZUXGUXIYSUV
+      JUUIYREUUNFWSWTUVJUWGUUIXAXBXCZUUGUWHUVEUUGUWHLZUUIUWFUUAUXPUUIUWFKZUXIUU
+      GUXIUWHUXMOUWHUXQUXIWGUUGUWFUWGUUIXAUQXDYTEUUNFWSXFXOZXGXHXITXJXKUUGUWIUX
+      EUWMUUGUXBUWIUVFUXBUXGUUGUWIUVFSUXHUUGUXGUWIUVFUUGUXGUVDUWIUVEUXOUUGUWIUV
+      EUUGUWILZUXQUVEUXSUXQUWDUWFKZUUGUXQUXTLZUWIUUGUXJUWDMKZUYAUWIWGUXLUUGUUQU
+      WCPKUYBUXKUUGYPUVBXLUWCAMPUSQUUIUWDUWFMMXMQXNXPZUXQUVEUWFUUAUUIYTUUNEEUUN
+      FXQZWSWTZXRNXOXGXKXSXTTYAXTUUGUWOUXDUVFUUGUWLUXDUVFSZUWNUUGUWHUYFUWEUUGUX
+      DUWHUVFUUGUWQUWHUVFSZUXCUUGUWQUVGUVJKZUXNLZUYGUUGUVGMKZUXJUYIUWQWGUUGUUQU
+      USUYJUXKUVCYQAMPUSQUXLUVGUUIUVJMMXMQZUUGUXNUYGUYHUUGUXNUWHUVFUUGUXNUVDUWH
+      UVEUXNUVDSUUGUXNUVDUVJYSUUIYRUUNEUYDWSWTZXRYBUXRXGXKTYCTXTTUUGUWIUYFUWMUU
+      GUWIUYFUXSUXQUYFUYCUUGUXQUYFSUWIUUGUXDUXQUVFUUGUWQUXQUVFSZUXCUUGUWQUYIUYM
+      UYKUXNUYMUYHUXNUXQUVFUXNUXQLUVFUXNUVDUXQUVEUYLUYEYDXRXOUQYETXTOYFXOTYAXTY
+      AXJYGYHYIYJYFUUIYSUUAYKYLUUBUUIMYMQYN $.
+  $}
+
+  ${
+    $d G k $.  $d F k $.  $d I k $.  $d P k $.  $d V k $.
+    upgriswlk.v $e |- V = ( Vtx ` G ) $.
+    upgriswlk.i $e |- I = ( iEdg ` G ) $.
+    $( Properties of a pair of functions to be a walk in a pseudograph.
+       (Contributed by AV, 2-Jan-2021.)  (Revised by AV, 28-Oct-2021.) $)
+    upgriswlkdc $p |- ( G e. UPGraph -> ( F ( Walks ` G ) P
+        <-> ( F e. Word dom I /\ P : ( 0 ... ( # ` F ) ) --> V
+          /\ A. k e. ( 0 ..^ ( # ` F ) ) ( DECID ( P ` k ) = ( P ` ( k + 1 ) )
+            /\ ( I ` ( F ` k ) ) = { ( P ` k ) , ( P ` ( k + 1 ) ) } ) ) ) ) $=
+      ( cupgr wcel cfv cc0 co wceq cpr wral w3a wa wi cvv cwlks wbr cword chash
+      cdm cfz wf cv c1 caddc csn wss wif cfzo wdc iswlkg ifpdc adantl wn df-ifp
+      wo dfsn2 preq2 eqtrid eqeq2d biimpa a1d cedg upgredginwlk adantrr imp wne
+      eqid simp-4l simplr simprr ad5ant12 elfzofz ffvelcdmd elexd fzofzp1 neqne
+      ad3antlr ad2antrl upgredgpr syl33anc eqcomd exp31 mpd com12 jaoi biimtrid
+      jca ex ifpprsnssdc ancoms impbid1 ralbidva pm5.32da df-3an 3bitr4g bitrd
+      ) DIJZCADUAKUBCEUEUCJZLCUDKZUFMZFAUGZBUHZAKZXHUIUJMZAKZNZXHCKEKZXIUKZNZXI
+      XKOZXMULZUMZBLXEUNMZPZQZXDXGXLUOZXMXPNZRZBXSPZQZABCDEFIGHUPXCXDXGRZXTRYGY
+      ERYAYFXCYGXTYEXCYGRZXRYDBXSYHXHXSJZRZXRYDYJXRYDYJXRRYBYCXRYBYJXLXOXQUQURY
+      JXRYCXRXLXORZXLUSZXQRZVAZYJYCXLXOXQUTYNYJYCYKYJYCSYMYKYCYJXLXOYCXLXNXPXMX
+      LXNXIXIOXPXIVBXIXKXIVCVDVEVFVGYJYMYCYJXMDVHKZJZYMYCSYHYIYPXCXDYIYPSXGYOCD
+      EXHHYOVMZVIVJVKYJYPYMYCYJYPRZYMRZXPXMYSXCYPXQXITJXKTJXIXKVLZXPXMNXCYGYIYP
+      YMVNYJYPYMVOYRYLXQVPYSXIFYSXFFXHAXCYGXGYIYPYMXCXDXGVPVQZYIXHXFJYHYPYMXHLX
+      EVRWCVSVTYSXKFYSXFFXJAUUAYIXJXFJYHYPYMLXEXHWAWCVSVTYLYTYRXQXIXKWBWDXIXKXM
+      TYODFTGYQWEWFWGWHWIWJWKWJWLVKWMWNYCYBXRXIXKXMWOWPWQWRWSXDXGXTWTXDXGYEWTXA
+      XB $.
+  $}
+
+  ${
+    $d F k $.  $d G k $.  $d I k $.  $d P k $.
+    upgrwlkedg.i $e |- I = ( iEdg ` G ) $.
+    $( The edges of a walk in a pseudograph join exactly the two corresponding
+       adjacent vertices in the walk.  (Contributed by AV, 27-Feb-2021.) $)
+    upgrwlkedg $p |- ( ( G e. UPGraph /\ F ( Walks ` G ) P )
+                       -> A. k e. ( 0 ..^ ( # ` F ) ) ( I ` ( F ` k ) )
+                                       = { ( P ` k ) , ( P ` ( k + 1 ) ) } ) $=
+      ( cupgr wcel cwlks cfv wbr wa cv c1 caddc co wceq wdc cc0 wral chash cfzo
+      cpr cdm cword cfz cvtx wf w3a upgriswlkdc simp3 biimtrdi imp wi simpr a1i
+      eqid ralimdv mpd ) DGHZCADIJKZLZBMZAJZVCNOPAJZQRZVCCJEJVDVEUCQZLZBSCUAJZU
+      BPZTZVGBVJTUTVAVKUTVACEUDUEHZSVIUFPDUGJZAUHZVKUIVKABCDEVMVMUQFUJVLVNVKUKU
+      LUMVBVHVGBVJVHVGUNVBVFVGUOUPURUS $.
+  $}
+
+  ${
+    $d F k $.  $d G k $.  $d I k $.  $d P k $.  $d V k $.
+    upgrwlkcompim.v $e |- V = ( Vtx ` G ) $.
+    upgrwlkcompim.i $e |- I = ( iEdg ` G ) $.
+    upgrwlkcompim.1 $e |- F = ( 1st ` W ) $.
+    upgrwlkcompim.2 $e |- P = ( 2nd ` W ) $.
+    $( Implications for the properties of the components of a walk in a
+       pseudograph.  (Contributed by Alexander van der Vekens, 23-Jun-2018.)
+       (Revised by AV, 14-Apr-2021.) $)
+    upgrwlkcompim $p |- ( ( G e. UPGraph /\ W e. ( Walks ` G ) )
+           -> ( F e. Word dom I /\ P : ( 0 ... ( # ` F ) ) --> V
+                /\ A. k e. ( 0 ..^ ( # ` F ) )
+                   ( I ` ( F ` k ) ) = { ( P ` k ) , ( P ` ( k + 1 ) ) } ) ) $=
+      ( cupgr wcel cfv wa cc0 co wceq wral w3a cwlks cword chash wf cv c1 caddc
+      cdm cfz wdc cpr cfzo wbr upgriswlkdc biimpd c1st c2nd 3brtr4g impel simpr
+      wlkcprim ralimi 3anim3i syl ) DLMZGDUANZMZOCEUHUBMZPCUCNZUIQFAUDZBUEZANZV
+      KUFUGQANZRUJZVKCNENVLVMUKRZOZBPVIULQZSZTZVHVJVOBVQSZTVECAVFUMZVSVGVEWAVSA
+      BCDEFHIUNUOVGGUPNGUQNCAVFDGVAJKURUSVRVTVHVJVPVOBVQVNVOUTVBVCVD $.
+  $}
+
+  ${
+    $d E e $.  $d F e k $.  $d G e k $.  $d P e k $.
+    wlkvtxedg.e $e |- E = ( Edg ` G ) $.
+    $( The vertices of a walk are connected by edges.  (Contributed by
+       Alexander van der Vekens, 22-Jul-2018.)  (Revised by AV, 2-Jan-2021.) $)
+    wlkvtxedg $p |- ( F ( Walks ` G ) P
+                       -> A. k e. ( 0 ..^ ( # ` F ) ) E. e e. E
+                          { ( P ` k ) , ( P ` ( k + 1 ) ) } C_ e ) $=
+      ( cwlks cfv wbr cv c1 caddc co cpr wss wrex wral cvv wcel ciedg crn chash
+      cc0 cfzo eqid wlkvtxiedg cedg wceq simp1d edgvalg eqtr2id rexeqdv ralbidv
+      wlkv syl mpbid ) EAFHIJZCKZAIUSLMNAIOBKPZBFUAIZUBZQZCUDEUCIUENZRUTBDQZCVD
+      RABCEFVAVAUFUGURVCVECVDURUTBVBDURDFUHIZVBGURFSTZVFVBUIURVGESTASTAEFUOUJFS
+      UKUPULUMUNUQ $.
+
+    $( The pairs of connected vertices of a walk are edges in a pseudograph.
+       (Contributed by Alexander van der Vekens, 22-Jul-2018.)  (Revised by AV,
+       2-Jan-2021.) $)
+    upgrwlkvtxedg $p |- ( ( G e. UPGraph /\ F ( Walks ` G ) P )
+                           -> A. k e. ( 0 ..^ ( # ` F ) )
+                              { ( P ` k ) , ( P ` ( k + 1 ) ) } e. E ) $=
+      ( cupgr wcel cwlks cfv wbr co cc0 wral wceq w3a wa eqid wi imp cv c1 cfzo
+      caddc cpr chash ciedg cdm cword cfz cvtx wf wdc upgriswlkdc simpr 3anim3i
+      ralimi biimtrdi upgredginwlk ancoms wb eleq1 syl5ibrcom ralimdva impancom
+      eqcoms 3adant2 com12 syld ) EGHZDAEIJKZBUAZAJZVLUBUDLAJZUEZCHZBMDUFJZUCLZ
+      NZVJVKDEUGJZUHUIHZMVQUJLEUKJZAULZVLDJVTJZVOOZBVRNZPZVSVJVKWAWCVMVNOUMZWEQ
+      ZBVRNZPWGABDEVTWBWBRVTRZUNWJWFWAWCWIWEBVRWHWEUOUQUPURWGVJVSWAWFVJVSSWCWAV
+      JWFVSWAVJQZWEVPBVRWLVLVRHZQVPWEWDCHZWLWMWNVJWAWMWNSCDEVTVLWKFUSUTTVPWNVAV
+      OWDVOWDCVBVFVCVDVEVGVHVIT $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.  $d G x y $.  $d N x y $.
+    $( Conditions for two walks within the same simple pseudograph being the
+       same.  It is sufficient that the vertices (in the same order) are
+       identical.  (Contributed by AV, 3-Jul-2018.)  (Revised by AV,
+       14-Apr-2021.) $)
+    uspgr2wlkeq $p |- ( ( G e. USPGraph /\ ( A e. ( Walks ` G )
+                          /\ B e. ( Walks ` G ) ) /\ N = ( # ` ( 1st ` A ) ) )
+                -> ( A = B <-> ( N = ( # ` ( 1st ` B ) ) /\ A. y e. ( 0 ... N )
+                             ( ( 2nd ` A ) ` y ) = ( ( 2nd ` B ) ` y ) ) ) ) $=
+      ( vx wcel cfv wa wceq cc0 cfzo co wral wi imp ex eqid com12 adantr cuspgr
+      cwlks c1st chash w3a cv c2nd cfz wb 3anan32 a1i wlkeq 3expa 3adant1 caddc
+      cpr ciedg fzofzp1 adantl fveq2 eqeq12d impancom ralrimiv fvoveq1 cbvralvw
+      c1 rspcdv sylibr fzossfz ssralv mp1i r19.26 preq12 ralimdv biimtrrid expd
+      wss syld mpd cdm cword cvtx wf cupgr uspgrupgr upgrwlkcompim oveq2 eqcoms
+      syl raleqdv bi2anan9r eqeq2 biimpd biimtrdi com13 ral2imi sylbir 3ad2ant3
+      syl2and 3imp1 eqcom crn wf1 cedg uspgrf1oedg f1of1 eqidd edgvalg f1eq123d
+      eqcomd mpbird 3ad2ant1 wlkelwrd eleq2d wrdsymbcl expcom f1veqaeq syl2an2r
+      wf1o jcad syl2an biimtrid ralimdva 3syld expimpd pm4.71d 3bitr4d ) DUAGZB
+      DUBHZGZCYIGZIZEBUCHZUDHZJZUEZECUCHZUDHZJZAUFZYMHZYTYQHZJZAKELMZNZYTBUGHZH
+      ZYTCUGHZHZJZAKEUHMZNZUEZYSUULIZUUEIZBCJZUUNUUMUUOUIYPYSUUEUULUJUKYLYOUUPU
+      UMUIZYHYJYKYOUUQABCDEULUMUNYPUUNUUEYPYSUULUUEYPYSIZUULUUGYTVFUOMZUUFHZUPZ
+      UUIUUSUUHHZUPZJZAUUDNZUUBDUQHZHZUUAUVFHZJZAUUDNZUUEUURUULUVEUURUULIZUUTUV
+      BJZAUUDNZUVEUVKFUFZVFUOMZUUFHZUVOUUHHZJZFUUDNUVMUVKUVRFUUDUURUVNUUDGZUULU
+      VRUURUVSIZUUJUVRAUVOUUKUVSUVOUUKGUURKEUVNURUSYTUVOJZUUJUVRUIUVTUWAUUGUVPU
+      UIUVQYTUVOUUFUTYTUVOUUHUTVAUSVGVBVCUVLUVRAFUUDYTUVNJUUTUVPUVBUVQYTUVNVFUU
+      FUOVDYTUVNVFUUHUOVDVAVEVHUURUULUVMUVEOZUURUULUUJAUUDNZUWBUUDUUKVQUULUWCOU
+      URKEVIUUJAUUDUUKVJVKUURUWCUVMUVEUWCUVMIUUJUVLIZAUUDNUURUVEUUJUVLAUUDVLUUR
+      UWDUVDAUUDUWDUVDOUURUUGUUTUUIUVBVMUKVNVOVPVRPVSQYHYLYOYSUVEUVJOZYHYJYMUVF
+      VTZWAZGZKYNUHMDWBHZUUFWCZUVHUVAJZAKYNLMZNZUEZYKYQUWGGZKYRUHMUWIUUHWCZUVGU
+      VCJZAKYRLMZNZUEZYOYSUWEOOZYHDWDGZYJUWNODWEZUXBYJUWNUUFAYMDUVFUWIBUWIRZUVF
+      RZYMRZUUFRZWFQWIYHUXBYKUWTOUXCUXBYKUWTUUHAYQDUVFUWICUXDUXEYQRZUUHRZWFQWIU
+      WNUWTIZUXAOYHUXJYOYSUWEUWNUWTYOYSIZUWEOZUWMUWHUWTUXLOUWJUWTUWMUXLUWSUWOUW
+      MUXLOUWPUWSUWMUXLUXKUWSUWMIZUWEUXKUXMUWQAUUDNZUWKAUUDNZIZUWEYSUWSUXNYOUWM
+      UXOYSUWQAUWRUUDUWRUUDJYREYREKLWGWHWJYOUWKAUWLUUDUWLUUDJYNEYNEKLWGWHWJWKUX
+      PUWQUWKIZAUUDNUWEUWQUWKAUUDVLUXQUVDUVIAUUDUWQUWKUVDUVIOUVDUWKUWQUVIUVDUWK
+      UVHUVCJZUWQUVIOUVAUVCUVHWLUXRUWQUVIUWQUVIUIUVCUVHUVCUVHUVGWLWHWMWNWOPWPWQ
+      WNSQWRSWRPVPUKWSWTUURUVIUUCAUUDUVIUVHUVGJZUURYTUUDGZIUUCUVGUVHXAUURUWFUVF
+      XBZUVFXCZUXTUUAUWFGZUUBUWFGZIZUXSUUCOYPUYBYSYHYLUYBYOYHUYBUWFDXDHZUVFXCZY
+      HUWFUYFUVFXSUYGUVFDUXEXEUWFUYFUVFXFWIYHUWFUWFUYAUYFUVFUVFYHUVFXGYHUWFXGYH
+      UYFUYADUAXHXJXIXKXLTUURUXTUYEYPYSUXTUYEOZYLYOYSUYHOZYHYLYOUYIYLYOYSUYHYLU
+      XKUXTUYEYJUWHUWJIZUWOUWPIZUXKUXTIZUYEOZYKUUFYMDUVFUWIBUXDUXEUXFUXGXMUUHYQ
+      DUVFUWICUXDUXEUXHUXIXMUYJUYKUYMUWHUYKUYMOUWJUYKUWHUYMUWOUWHUYMOUWPUWOUWHU
+      YMUWOUWHIUYLUYCUYDUWHUYLUYCOUWOUYLUWHUYCUXKUXTUWHUYCOZYOUXTUYNOYSYOUXTYTU
+      WLGZUYNYOUUDUWLYTEYNKLWGXNUWHUYOUYCYTUWFYMXOXPWNTPSUSUWOUYLUYDOUWHUYLUWOU
+      YDUXKUXTUWOUYDOZYSUXTUYPOYOYSUXTYTUWRGZUYPYSUUDUWRYTEYRKLWGXNUWOUYQUYDYTU
+      WFYQXOXPWNUSPSTXTQTSTPYAVPVPPUNPPUWFUYAUUAUUBUVFXQXRYBYCYDYEYFYG $.
+  $}
+
+  ${
+    $d A i $.  $d B i $.  $d G i $.  $d N i $.
+    $( Conditions for two walks within the same simple pseudograph to be
+       identical.  It is sufficient that the vertices (in the same order) are
+       identical.  (Contributed by Alexander van der Vekens, 25-Aug-2018.)
+       (Revised by AV, 14-Apr-2021.) $)
+    uspgr2wlkeq2 $p |- ( ( ( G e. USPGraph /\ N e. NN0 )
+                        /\ ( A e. ( Walks ` G ) /\ ( # ` ( 1st ` A ) ) = N )
+                        /\ ( B e. ( Walks ` G ) /\ ( # ` ( 1st ` B ) ) = N ) )
+                         -> ( ( 2nd ` A ) = ( 2nd ` B ) -> A = B ) ) $=
+      ( vi cuspgr wcel cn0 wa cwlks cfv c1st chash wceq w3a simpr eqcomd adantr
+      c2nd simpl cv cc0 co wral 3ad2ant3 fveq1 adantl ralrimivw simpl1l anim12i
+      cfz wb 3adant1 3ad2ant2 uspgr2wlkeq syl3anc mpbir2and ex ) CFGZDHGZIZACJK
+      ZGZALKMKZDNZIZBVBGZBLKMKZDNZIZOZASKZBSKZNZABNZVKVNIZVODVHNZEUAZVLKVRVMKNZ
+      EUBDUKUCZUDZVKVQVNVJVAVQVFVJVHDVGVIPQUERVPVSEVTVNVSVKVRVLVMUFUGUHVPUSVCVG
+      IZDVDNZVOVQWAIULUSUTVFVJVNUIVKWBVNVFVJWBVAVFVCVJVGVCVETVGVITUJUMRVKWCVNVF
+      VAWCVJVFVDDVCVEPQUNREABCDUOUPUQUR $.
+
+    $( Conditions for two walks within the same simple pseudograph to be
+       identical.  It is sufficient that the vertices (in the same order) are
+       identical.  (Contributed by AV, 6-May-2021.) $)
+    uspgr2wlkeqi $p |- ( ( G e. USPGraph /\ ( A e. ( Walks ` G )
+                        /\ B e. ( Walks ` G ) ) /\ ( 2nd ` A ) = ( 2nd ` B ) )
+                         -> A = B ) $=
+      ( wcel cfv wa c2nd wceq c1st chash wbr wi wlkcprim c1 co adantl wlklenvm1
+      cmin simpl anim12i cuspgr cwlks w3a cn0 wlkcl oveq1d eqcomd wb eqeqan12rd
+      fveq2 adantr mpbird anim2i exp44 mpcom syl2im imp31 3adant1 eqidd syl3anc
+      simpr uspgr2wlkeq2 ex com23 3impia mpd ) CUADZACUBEZDZBVHDZFZAGEZBGEZHZUC
+      AIEZJEZUDDZBIEZJEZVPHZFZABHZVKVNWAVGVIVJVNWAVIVOVLVHKZVJVRVMVHKZVNWALZCAM
+      CBMVQWCWDWELVLVOCUEVQWCWDVNWAWCWDFZVNFZVTVQWGVTVMJEZNROZVLJEZNROZHZVNWLWF
+      VNWKWIVNWJWHNRVLVMJUJUFUGPWFVTWLUHVNWDWCVSWIVPWKVMVRCQVLVOCQUIUKULUMUNUOU
+      PUQURVGVKVNWAWBLVGVKFZWAVNWBWMWAVNWBLZWMWAFVGVQFVIVPVPHZFVJVTFWNWMVGWAVQV
+      GVKSVQVTSTWMVIWAWOVKVIVGVIVJSPWAVPUSTWMVJWAVTVKVJVGVIVJVAPVQVTVATABCVPVBU
+      TVCVDVEVF $.
+  $}
+
+  ${
+    $d F k $.  $d G k $.  $d P k $.
+    $( In a multigraph, each walk has no loops!  (Contributed by Alexander van
+       der Vekens, 7-Nov-2017.)  (Revised by AV, 3-Jan-2021.) $)
+    umgrwlknloop $p |- ( ( G e. UMGraph /\ F ( Walks ` G ) P )
+            -> A. k e. ( 0 ..^ ( # ` F ) ) ( P ` k ) =/= ( P ` ( k + 1 ) ) ) $=
+      ( cumgr wcel cwlks cfv wbr wa cv c1 caddc co cpr cedg cc0 chash cfzo wral
+      wne cupgr umgrupgr upgrwlkvtxedg sylan wi umgredgne ex adantr ralimdv mpd
+      eqid ) DEFZCADGHIZJZBKZAHZUPLMNAHZODPHZFZBQCRHSNZTZUQURUAZBVATUMDUBFUNVBD
+      UCABUSCDUSULZUDUEUOUTVCBVAUMUTVCUFUNUMUTVCUSDUQURVDUGUHUIUJUK $.
+  $}
+
+  $( If there is a walk in the null graph (a class without vertices), it would
+     be the pair consisting of empty sets.  (Contributed by Alexander van der
+     Vekens, 2-Sep-2018.)  (Revised by AV, 5-Mar-2021.) $)
+  wlkv0 $p |- ( ( ( Vtx ` G ) = (/) /\ W e. ( Walks ` G ) )
+                 -> ( ( 1st ` W ) = (/) /\ ( 2nd ` W ) = (/) ) ) $=
+    ( cvtx cfv c0 wceq c1st c2nd cwlks wbr wa wcel ciedg cc0 wf jca wi cz impel
+    eqid cdm cword chash cfz co wlkf wlkp feq3 f00 bitrdi cn0 clt wb 0z sylancr
+    nn0z fzn nn0nlt0 pm2.21d sylbird com12 adantl lencl simpll biimtrdi impcomd
+    ex syl5 wlkcprim ) ACDZEFZBGDZBHDZAIDZJZVLEFZVMEFZKZBVNLVOVLAMDZUAZUBLZNVLU
+    CDZUDUEZVJVMOZKVKVRVOWAWDVMVLAVSVSTUFVMVLAVJVJTUGPVKWDWAVRVKWDVQWCEFZKZWAVR
+    QVKWDWCEVMOWFVJEWCVMUHWCVMUIUJWFWAVRWFWAKVPVQWFWBUKLZVPWAWEWGVPQVQWGWEVPWGW
+    EWBNULJZVPWGNRLWBRLWHWEUMUNWBUPNWBUQUOWGWHVPWBURUSUTVAVBVTVLVCSVQWEWAVDPVGV
+    EVFVHABVIS $.
+
+  ${
+    $d G w x $.
+    $( There is no walk in a null graph (a class without vertices).
+       (Contributed by Alexander van der Vekens, 2-Sep-2018.)  (Revised by AV,
+       5-Mar-2021.) $)
+    g0wlk0 $p |- ( ( Vtx ` G ) = (/) -> ( Walks ` G ) = (/) ) $=
+      ( vw vx cvtx cfv c0 wceq cv cwlks wcel wex c2nd wne cvv c1st wbr wlkcprim
+      wn wlkmex wlkm syl2anc n0r syl neneqd wa wlkv0 simprd mtand exlimiv con2i
+      ancoms notm0 sylib ) ADEFGZBHZAIEZJZBKZRUPFGURUNUQUNRBUQUNUOLEZFGZUQUSFUQ
+      CHUSJCKZUSFMUQANJUOOEZUSUPPVAAUOSAUOQCUSVBANTUACUSUBUCUDUNUQUTUNUQUEVBFGU
+      TAUOUFUGUKUHUIUJBUPULUM $.
+  $}
+
+  $( There is no walk for the empty set, i.e. in a null graph.  (Contributed by
+     Alexander van der Vekens, 2-Sep-2018.)  (Revised by AV, 5-Mar-2021.) $)
+  0wlk0 $p |- ( Walks ` (/) ) = (/) $=
+    ( c0 cvtx cfv wceq cwlks vtxval0 g0wlk0 ax-mp ) ABCADAECADFAGH $.
+
+  $( There is no walk in a null graph (a class without vertices).  (Contributed
+     by Alexander van der Vekens, 2-Sep-2018.)  (Revised by AV, 5-Mar-2021.) $)
+  wlk0prc $p |- ( ( S e/ _V /\ ( Vtx ` S ) = ( Vtx ` G ) )
+                     -> ( Walks ` G ) = (/) ) $=
+    ( cvv wnel cvtx cfv wa c0 cwlks eqcom biimpi vtxvalprc sylan9eqr g0wlk0 syl
+    wceq ) ACDZAEFZBEFZPZGSHPBIFHPTQSRHTSRPRSJKALMBNO $.
+
+  $( The number of vertices in a walk equals the length of the walk after it is
+     "closed" (i.e. enhanced by an edge from its last vertex to its first
+     vertex).  (Contributed by Alexander van der Vekens, 29-Jun-2018.)
+     (Revised by AV, 2-May-2021.)  (Revised by JJ, 14-Jan-2024.) $)
+  wlklenvclwlk $p |- ( W e. Word ( Vtx ` G )
+                   -> ( <. F , ( W ++ <" ( W ` 0 ) "> ) >. e. ( Walks ` G )
+                        -> ( # ` F ) = ( # ` W ) ) ) $=
+    ( cc0 cfv cs1 cconcat co cop cwlks wcel chash c1 caddc wceq wa cz adantr cc
+    cvv cn0 cvtx cword wbr df-br wlkcl wlklenvp1 sylbir wb 0z fvexg ccatws1leng
+    jca mpan2 mpdan eqeq1d eqcom bitrdi nn0cn adantl lencl nn0cnd 1cnd addcan2d
+    biimpd sylbid expimpd syl5 ) ACDCEZFGHZIBJEZKZALEZUAKZVJLEZVMMNHZOZPZCBUBEZ
+    UCZKZVMCLEZOZVLAVJVKUDZVRAVJVKUEWDVNVQVJABUFVJABUGUMUHWAVNVQWCWAVNPZVQVPWBM
+    NHZOZWCWAVQWGUIVNWAVQWFVPOWGWAVOWFVPWAVITKZVOWFOWADQKWHUJDCVTQUKUNVSCVITULU
+    OUPWFVPUQURRWEWGWCWEVMWBMVNVMSKWAVMUSUTWAWBSKVNWAWBVSCVAVBRWEVCVDVEVFVGVH
+    $.
 
 
 $(
@@ -202652,20 +203264,6 @@ $)
     ( wem cv c0 csn wss wceq wo wal c1o c2o wcel exmid01 df1o2 sseq2i cpr df2o2
     wi eleq2i vex elpr bitri imbi12i albii bitr4i ) BACZDEZFZUFDGUFUGGHZRZAIUFJ
     FZUFKLZRZAIAMUMUJAUKUHULUIJUGUFNOULUFDUGPZLUIKUNUFQSUFDUGATUAUBUCUDUE $.
-
-  ${
-    $d A f j $.  $d V f $.
-    $( Two ways of saying that a set is inhabited.  (Contributed by Jim
-       Kingdon, 3-Jan-2026.) $)
-    dom1o $p |- ( A e. V -> ( 1o ~<_ A <-> E. j j e. A ) ) $=
-      ( vf wcel c1o cdom wbr cv wex wf1 brdomg wi wf c0 cfv f1f 0lt1o a1i csn
-      ffvelcdm mpan2 elex2 3syl exlimdv sylbid cop cvv 0ex opex snex f1sng mpan
-      vex wceq wb df1o2 f1eq2 ax-mp sylibr f1eq1 elabd exlimiv imbitrrid impbid
-      ) ACEZFAGHZBIZAEZBJZVFVGFADIZKZDJZVJFACDLZVFVLVJDVLVJMVFVLFAVKNZOVKPZAEZV
-      JFAVKQVOOFEZVQRFAOVKUAUBBVPAUCUDSUEUFVJVGVFVMVIVMBVIVLFAOVHUGZTZKZDVTVTUH
-      EVIVSOVHUIBUNUJUKSVIOTZAVTKZWAVRVIWCROVHFAULUMFWBUOWAWCUPUQFWBAVTURUSUTFA
-      VKVTVAVBVCVNVDVE $.
-  $}
 
   ${
     nnti.a $e |- ( ph -> A e. _om ) $.
