@@ -197926,6 +197926,41 @@ $)
       c2 fveq2 oveq1 1p1e2 eqtrdi fveq2d ralpr ) BEZDFCFZUFAFZUFGHIZAFZJZKLDFCF
       ZLAFZGAFZJZKGDFCFZUNSAFZJZKBLGMNUFLKZUGULUKUOUFLCDOUSUHUMUJUNUFLATAUFPQRU
       FGKZUGUPUKURUFGCDOUTUHUNUJUQUFGATUTUISAUTUIGGHISUFGGHUAUBUCUDQRUE $.
+
+    $d G k $.  $d I k $.  $d V k $.
+    upgr2wlk.v $e |- V = ( Vtx ` G ) $.
+    upgr2wlk.i $e |- I = ( iEdg ` G ) $.
+    $( Properties of a pair of functions to be a walk of length 2 in a
+       pseudograph.  Note that the vertices need not to be distinct and the
+       edges can be loops or multiedges.  (Contributed by Alexander van der
+       Vekens, 16-Feb-2018.)  (Revised by AV, 3-Jan-2021.)  (Revised by AV,
+       28-Oct-2021.) $)
+    upgr2wlkdc $p |- ( G e. UPGraph -> ( ( F ( Walks ` G ) P /\ F ~~ 2o )
+                  <-> ( ( F : ( 0 ..^ 2 ) --> dom I /\ P : ( 0 ... 2 ) --> V
+                  /\ A. k e. { 0 , 1 } DECID ( P ` k ) = ( P ` ( k + 1 ) ) )
+               /\ ( ( I ` ( F ` 0 ) ) = { ( P ` 0 ) , ( P ` 1 ) }
+                    /\ ( I ` ( F ` 1 ) ) = { ( P ` 1 ) , ( P ` 2 ) } ) ) ) ) $=
+      ( wcel cfv wbr c2o cen wa cc0 c2 co c1 wceq syl cupgr cwlks cdm wf cfz cv
+      cfzo caddc wdc cpr w3a chash cword simprl upgriswlkdc adantr mpbid simp1d
+      wral wb wrdf simprr cfn hash2en simprbi oveq2d feq2d simp2d simp3d ralimi
+      simpl oveq2 fzo0to2pr eqtrdi raleqtrdv 3jca simpr raleqdv 2wlklem jca cn0
+      bitrdi simprl1 2nn0 sylancl simprl2 fnfzo0hash sylancr simprl3 raleqtrrdv
+      iswrdinn0 mpbird sylibr r19.26 cvv wfun cz 0z fzofig mp2an fex mpan2 ffun
+      2z fundmeng syl2anc ensymd fdm wne 1z 0ne1 pr2nelem eqbrtrdi entr impbida
+      mp3an ) DUAIZCADUBJKZCLMKZNZOPUGQZEUCZCUDZOPUEQZFAUDZBUFZAJZYFRUHQAJZSUIZ
+      BORUJZUSZUKZOCJEJOAJRAJZUJSRCJEJYMPAJUJSNZNZXQXTNZYLYNYPYCYEYKYPOCULJZUGQ
+      ZYBCUDZYCYPCYBUMIZYSYPYTOYQUEQZFAUDZYIYFCJEJYGYHUJSZNZBYRUSZYPXRYTUUBUUEU
+      KZXQXRXSUNXQXRUUFUTZXTABCDEFGHUOZUPUQZURYBCVATYPYRYAYBCYPYQPOUGYPXSYQPSZX
+      QXRXSVBXSCVCIUUJCVDVETZVFVGUQYPUUBYEYPYTUUBUUEUUIVHYPUUAYDFAYPYQPOUEUUKVF
+      VGUQYPYIBYRYJYPUUEYIBYRUSZYPYTUUBUUEUUIVIZUUDYIBYRYIUUCVKVJTYPUUJYRYJSZUU
+      KUUJYRYAYJYQPOUGVLVMVNZTZVOVPYPUUCBYRUSZYNYPUUEUUQUUMUUDUUCBYRYIUUCVQVJTY
+      PUUQUUCBYJUSZYNYPUUCBYRYJUUPVRABECVSZWBUQVTXQYONZXRXSUUTXRUUFUUTYTUUBUUEU
+      UTYCPWAIZYTYCYEYKYNXQWCZWDYBPCWKWEUUTUUBYEYCYEYKYNXQWFUUTUUAYDFAUUTYQPOUE
+      UUTUVAYCUUJWDUVBYBCPWGWHZVFVGWLUUTUULUUQNUUEUUTUULUUQUUTYIBYJYRYCYEYKYNXQ
+      WIUUTUUJUUNUVCUUOTZWJUUTUUCBYJYRUUTYNUURXQYLYNVBUUSWMUVDWJVTYIUUCBYRWNWMV
+      PXQUUGYOUUHUPWLUUTYCXSUVBYCCCUCZMKUVELMKXSYCUVECYCCWOIZCWPUVECMKYCYAVCIZU
+      VFOWQIZPWQIUVGWRXDOPWSWTYAYBVCCXAXBYAYBCXCCWOXEXFXGYCUVEYJLMYCUVEYAYJYAYB
+      CXHVMVNUVHRWQIORXIYJLMKWRXJXKORWQWQXLXPXMCUVELXNXFTVTXO $.
   $}
 
 
