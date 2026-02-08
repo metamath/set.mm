@@ -197376,6 +197376,18 @@ $)
       JUKRTUQVIBULURVBSVJVDVHBUMAEBUNUPT $.
   $}
 
+  ${
+    $d V x $.  $d P x $.
+    wlkvtxm.v $e |- V = ( Vtx ` G ) $.
+    $( A graph with a walk has at least one vertex.  (Contributed by Jim
+       Kingdon, 8-Feb-2026.) $)
+    wlkvtxm $p |- ( F ( Walks ` G ) P -> E. x x e. V ) $=
+      ( cwlks cfv wbr cc0 wcel cv wex cvtx chash cfz co eqid wlkp syl cuz wlkcl
+      cn0 elnn0uz sylib eluzfz1 ffvelcdmd eleqtrrdi elex2 ) CBDGHIZJBHZEKALEKAM
+      UJUKDNHZEUJJCOHZPQZULJBBCDULULRSUJUMJUAHKZJUNKUJUMUCKUOBCDUBUMUDUEJUMUFTU
+      GFUHAUKEUIT $.
+  $}
+
   $( The number of edges of a walk is the number of its vertices minus 1.
      (Contributed by Alexander van der Vekens, 1-Jul-2018.)  (Revised by AV,
      2-Jan-2021.) $)
