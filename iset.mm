@@ -197368,12 +197368,12 @@ $)
     $( The sequence of vertices of a walk cannot be empty, i.e. a walk always
        consists of at least one vertex.  (Contributed by Alexander van der
        Vekens, 19-Jul-2018.)  (Revised by AV, 2-Jan-2021.) $)
-    wlkm $p |- ( ( G e. W /\ F ( Walks ` G ) P ) -> E. x x e. P ) $=
-      ( vy wcel cwlks cfv wbr wa cv wex cdm cc0 chash cfz syl wb mpbird cn0 cuz
-      co wlkclg elnn0uz fzm sylbb2 cvtx wf eqid wlkpg eleq2d exbidv wrel reldmm
-      fdm frel 3syl ) DEGCBDHIJKZALBGAMZFLZBNZGZFMZUSVDVAOCPIZQUCZGZFMZUSVEUAGZ
-      VHBCDEUDVIVEOUBIGVHVEUEFOVEUFUGRUSVFDUHIZBUIZVDVHSBCDVJEVJUJUKZVKVCVGFVKV
-      BVFVAVFVJBUPULUMRTUSVKBUNUTVDSVLVFVJBUQAFBUOURT $.
+    wlkm $p |- ( F ( Walks ` G ) P -> E. x x e. P ) $=
+      ( vy cwlks cfv wbr cv wcel wex cdm cc0 chash cfz co cn0 syl wb mpbird cuz
+      wlkcl elnn0uz fzm sylbb2 cvtx wf eqid wlkp eleq2d exbidv wrel frel reldmm
+      fdm 3syl ) CBDFGHZAIBJAKZEIZBLZJZEKZUQVBUSMCNGZOPZJZEKZUQVCQJZVFBCDUBVGVC
+      MUAGJVFVCUCEMVCUDUERUQVDDUFGZBUGZVBVFSBCDVHVHUHUIZVIVAVEEVIUTVDUSVDVHBUOU
+      JUKRTUQVIBULURVBSVJVDVHBUMAEBUNUPT $.
   $}
 
   $( The number of edges of a walk is the number of its vertices minus 1.
@@ -197879,11 +197879,10 @@ $)
        (Contributed by Alexander van der Vekens, 2-Sep-2018.)  (Revised by AV,
        5-Mar-2021.) $)
     g0wlk0 $p |- ( ( Vtx ` G ) = (/) -> ( Walks ` G ) = (/) ) $=
-      ( vw vx cvtx cfv c0 wceq cv cwlks wcel wex c2nd wne cvv c1st wbr wlkcprim
-      wn wlkmex wlkm syl2anc n0r syl neneqd wa wlkv0 simprd mtand exlimiv con2i
-      ancoms notm0 sylib ) ADEFGZBHZAIEZJZBKZRUPFGURUNUQUNRBUQUNUOLEZFGZUQUSFUQ
-      CHUSJCKZUSFMUQANJUOOEZUSUPPVAAUOSAUOQCUSVBANTUACUSUBUCUDUNUQUTUNUQUEVBFGU
-      TAUOUFUGUKUHUIUJBUPULUM $.
+      ( vw vx cvtx cfv c0 wceq cv cwlks wcel wex wn c2nd c1st wbr wlkcprim wlkm
+      wne n0r 3syl neneqd wlkv0 simprd ancoms mtand exlimiv con2i notm0 sylib
+      wa ) ADEFGZBHZAIEZJZBKZLUMFGUOUKUNUKLBUNUKULMEZFGZUNUPFUNULNEZUPUMOCHUPJC
+      KUPFRAULPCUPURAQCUPSTUAUKUNUQUKUNUJURFGUQAULUBUCUDUEUFUGBUMUHUI $.
   $}
 
   $( There is no walk for the empty set, i.e. in a null graph.  (Contributed by
