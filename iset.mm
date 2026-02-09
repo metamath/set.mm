@@ -198193,6 +198193,21 @@ $)
       BDUSPUGZWMKBCDUTZBCDFJVAZTZAWFWNGNWEVCLVDWGCGVEVBVFAVRGNQAVRWLOPZGEWLOMVG
       AWMWOWTGURWSAWKWOLGNWEVHUHWGCGVIVBVFVJAWAWGUEZWBWAURAWJWPXAKWQWPWMWFWGCVK
       XAWRWGCVLWFWGCVTVMTTWAFVNVOVPVQ $.
+
+    trlres.s $e |- ( ph -> ( Vtx ` S ) = V ) $.
+    trlres.e $e |- ( ph -> ( iEdg ` S ) = ( I |` ( F " ( 0 ..^ N ) ) ) ) $.
+    trlres.q $e |- Q = ( P |` ( 0 ... N ) ) $.
+    $( The restriction ` <. H , Q >. ` of a trail ` <. F , P >. ` to an initial
+       segment of the trail (of length ` N ` ) forms a trail on the subgraph
+       ` S ` consisting of the edges in the initial segment.  (Contributed by
+       AV, 6-Mar-2021.)  Hypothesis revised using the prefix operation.
+       (Revised by AV, 30-Nov-2022.) $)
+    trlres $p |- ( ph -> H ( Trails ` S ) Q ) $=
+      ( cfv wbr cwlks ccnv wfun ctrls trliswlk syl wlkres cc0 cfzo co cima cres
+      chash cdm wf1o wf1 trlreslem f1of1 wf df-f1 simprbi 3syl istrl sylanbrc )
+      AGCDUASTGUBUCZGCDUDSTABCDEFGHIJKLAEBFUDSTEBFUASTMBEFUEUFNPQORUGAUHGUMSUIU
+      JZHEUHIUIUJUKULUNZGUOVFVGGUPZVEABEFGHIJKLMNOUQVFVGGURVHVFVGGUSVEVFVGGUTVA
+      VBCGDVCVD $.
   $}
 
 
