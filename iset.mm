@@ -53484,6 +53484,20 @@ $)
   $}
 
   ${
+    resfvresima.f $e |- ( ph -> Fun F ) $.
+    resfvresima.s $e |- ( ph -> S C_ dom F ) $.
+    resfvresima.x $e |- ( ph -> X e. S ) $.
+    $( The value of the function value of a restriction for a function
+       restricted to the image of the restricting subset.  (Contributed by AV,
+       6-Mar-2021.) $)
+    resfvresima $p |- ( ph -> ( ( H |` ( F " S ) ) ` ( ( F |` S ) ` X ) )
+                              = ( H ` ( F ` X ) ) ) $=
+      ( cres cfv cima fvresd fveq2d wfun cdm wss wa wcel jca funfvima2 eqtrd
+      sylc ) AECBIJZDCBKZIZJECJZUEJUFDJAUCUFUEAEBCHLMAUFUDDACNZBCOPZQEBRUFUDRAU
+      GUHFGSHBECTUBLUA $.
+  $}
+
+  ${
     $d A x $.  $d Y x $.  $d F x $.
     $( Given an onto function, an element is in its codomain if and only if it
        is the image of an element of its domain (see ~ foima ).  (Contributed
