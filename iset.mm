@@ -53472,6 +53472,18 @@ $)
     HUFACMNUGBAUIUDUEUFOUDUEUIAPUFACQNRTUDUEUFUABDCUBUC $.
 
   ${
+    fnfvimad.1 $e |- ( ph -> F Fn A ) $.
+    fnfvimad.2 $e |- ( ph -> B e. A ) $.
+    fnfvimad.3 $e |- ( ph -> B e. C ) $.
+    $( A function's value belongs to the image.  (Contributed by Glauco
+       Siliprandi, 23-Oct-2021.) $)
+    fnfvimad $p |- ( ph -> ( F ` B ) e. ( F " C ) ) $=
+      ( cin cima cfv wss inss2 imass2 ax-mp wfn wcel inss1 a1i elind fnfvima
+      syl3anc sselid ) AEBDIZJZEDJZCEKZUDDLUEUFLBDMUDDENOAEBPUDBLZCUDQUGUEQFUHA
+      BDRSABDCGHTBUDECUAUBUC $.
+  $}
+
+  ${
     $d A x $.  $d Y x $.  $d F x $.
     $( Given an onto function, an element is in its codomain if and only if it
        is the image of an element of its domain (see ~ foima ).  (Contributed
