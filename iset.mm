@@ -197974,6 +197974,22 @@ $)
       CXHVMVNUVHRWQIORXIYJLMKWRXJXKORWQWQXLXPXMCUVELXNXFTVTXO $.
   $}
 
+  ${
+    $d V x $.  $d P x $.  $d S x $.  $d ph x $.
+    wlkres.v $e |- V = ( Vtx ` G ) $.
+    wlkres.i $e |- I = ( iEdg ` G ) $.
+    wlkres.d $e |- ( ph -> F ( Walks ` G ) P ) $.
+    wlkres.n $e |- ( ph -> N e. ( 0 ..^ ( # ` F ) ) ) $.
+    wlkres.s $e |- ( ph -> ( Vtx ` S ) = V ) $.
+    $( Lemma for ~ wlkres .  (Contributed by AV, 5-Mar-2021.)  (Revised by AV,
+       30-Nov-2022.) $)
+    wlkreslem $p |- ( ph -> S e. _V ) $=
+      ( vx vg cv wcel cvv cfv syl cwlks wbr wex wlkvtxm cvtx eleq2d biimpar cxp
+      wa c1st cbs cif df-vtx mptrcl exlimddv ) ANPZHQZCRQZNADBEUASUBUQNUCKNBDEH
+      IUDTAUQUIUPCUESZQZURAUTUQAUSHUPMUFUGOROPZRRUHQVAUJSVAUKSULUEUPCOUMUNTUO
+      $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
