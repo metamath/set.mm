@@ -197107,6 +197107,29 @@ $)
                                           [_ ( iEdg ` g ) / e ]_ ( u e. v |->
                           ( ( # ` { x e. dom e | u e. ( e ` x ) } ) +e
                             ( # ` { x e. dom e | ( e ` x ) = { u } } ) ) ) ) $.
+
+    $d A g x $.  $d G g u x $.  $d I g $.  $d V g u $.  $d W g $.
+    vtxdgfval.v $e |- V = ( Vtx ` G ) $.
+    vtxdgfval.i $e |- I = ( iEdg ` G ) $.
+    vtxdgfval.a $e |- A = dom I $.
+    $( The value of the vertex degree function.  (Contributed by Mario
+       Carneiro, 12-Mar-2015.)  (Revised by Alexander van der Vekens,
+       20-Dec-2017.)  (Revised by AV, 9-Dec-2020.) $)
+    vtxdgfval $p |- ( G e. W -> ( VtxDeg ` G ) = ( u e. V
+                          |-> ( ( # ` { x e. A | u e. ( I ` x ) } ) +e
+                                ( # ` { x e. A | ( I ` x ) = { u } } ) ) ) ) $=
+      ( vg vv wcel cv cfv crab chash wceq cxad cvv ve cvtx ciedg cdm csn co csb
+      cmpt cvtxdg df-vtxdg vtxex elv iedgex simpl fveq1 eleq2d rabeqbidv fveq2d
+      wa eqeq1d oveq12d adantl mpteq12dv csbie2 fveq2 eqtr4di dmeqd dmeqi eqtri
+      dmeq fveq1d eqtrid elex eqeltrid mptexd fvmptd2 ) DGMZKDLKNZUBOZUAVRUCOZB
+      LNZBNZANZUANZOZMZAWDUDZPZQOZWEWBUEZRZAWGPZQOZSUFZUHZUGUGZBFWBWCEOZMZACPZQ
+      OZWQWJRZACPZQOZSUFZUHZTUITALBUAKUJVQVRDRZUSWPBVSWBWCVTOZMZAVTUDZPZQOZXGWJ
+      RZAXIPZQOZSUFZUHZXELUAVSVTWOXPVSTMKVRTUKULVTTMKVRTUMULWAVSRZWDVTRZUSBWAWN
+      VSXOXQXRUNXRWNXORXQXRWIXKWMXNSXRWHXJQXRWFXHAWGXIWDVTVJZXRWEXGWBWCWDVTUOZU
+      PUQURXRWLXMQXRWKXLAWGXIXSXRWEXGWJXTUTUQURVAVBVCVDXFXPXERVQXFBVSXOFXDXFVSD
+      UBOZFVRDUBVEHVFXFXKWTXNXCSXFXJWSQXFXHWRAXICXFXIDUCOZUDZCXFVTYBVRDUCVEZVGC
+      EUDYCJEYBIVHVIVFZXFXGWQWBXFWCVTEXFVTYBEYDIVFVKZUPUQURXFXMXBQXFXLXAAXICYEX
+      FXGWQWJYFUTUQURVAVCVBVLDGVMVQBFXDTVQFYATHDGUKVNVOVP $.
   $}
 
 
