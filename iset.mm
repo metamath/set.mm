@@ -197078,6 +197078,39 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Vertex degree
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c VtxDeg $.
+
+  $( Extend class notation with the vertex degree function. $)
+  cvtxdg $a class VtxDeg $.
+
+  ${
+    $d e g u v x $.
+    $( Define the vertex degree function for a graph.  To be appropriate for
+       arbitrary hypergraphs, we have to double-count those edges that contain
+       ` u ` "twice" (i.e. self-loops), this being represented as a singleton
+       as the edge's value.  Since the degree of a vertex can be (positive)
+       infinity (if the graph containing the vertex is infinite), the extended
+       addition ` +e ` is used for the summation of the number of "ordinary"
+       edges" and the number of "loops".
+
+       Because we cannot in general show that an arbitrary set is either finite
+       or infinite (see ~ inffiexmid ), this definition is not as general as it
+       may appear.  But we keep it for consistency with the Metamath Proof
+       Explorer.  (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by
+       Alexander van der Vekens, 20-Dec-2017.)  (Revised by AV, 9-Dec-2020.) $)
+    df-vtxdg $a |- VtxDeg = ( g e. _V |-> [_ ( Vtx ` g ) / v ]_
+                                          [_ ( iEdg ` g ) / e ]_ ( u e. v |->
+                          ( ( # ` { x e. dom e | u e. ( e ` x ) } ) +e
+                            ( # ` { x e. dom e | ( e ` x ) = { u } } ) ) ) ) $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Walks, paths and cycles
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -200489,6 +200522,9 @@ htmldef "USPGraph" as 'USPGraph';
 htmldef "USGraph" as 'USGraph';
   althtmldef "USGraph" as 'USGraph';
   latexdef "USGraph" as "\mathrm{USGraph}";
+htmldef "VtxDeg" as 'VtxDeg';
+  althtmldef "VtxDeg" as 'VtxDeg';
+  latexdef "VtxDeg" as "\mathrm{VtxDeg}";
 htmldef "Walks" as "Walks";
   althtmldef "Walks" as "Walks";
   latexdef "Walks" as "\mathrm{Walks}";
