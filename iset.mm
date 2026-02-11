@@ -203256,6 +203256,22 @@ $)
       HVCSLVAAECURVEUNUOUPUSUEZPVCQTUFVAUSUOUPVDUTUGUQUSUHVFVGAEBCURUIUJULUM $.
   $}
 
+  ${
+    $d A x y $.  $d B x y $.
+    $( Equinumerosity of finite sets is decidable.  (Contributed by Jim
+       Kingdon, 10-Feb-2026.) $)
+    fidcen $p |- ( ( A e. Fin /\ B e. Fin ) -> DECID A ~~ B ) $=
+      ( vx vy cfn wcel wa cv cen wbr wdc wrex isfi biimpi wn wo simplrl simplrr
+      com entr adantr ad2antlr weq simprl nndceq syl2anc exmiddc simpr breqtrrd
+      syl ensymd syl2an2r ex sylan wb nneneq mpbid orim12d mpd sylibr rexlimddv
+      con3d df-dc ) AEFZBEFZGZACHZIJZABIJZKZCSVDVHCSLZVEVDVKCAMNUAVFVGSFZVHGZGZ
+      BDHZIJZVJDSVEVPDSLZVDVMVEVQDBMNUBVNVOSFZVPGZGZVIVIOZPZVJVTCDUCZWCOZPZWBVT
+      WCKZWEVTVLVRWFVFVLVHVSQZVNVRVPUDVGVOUEUFWCUGUJVTWCVIWDWAVTWCVIVTVHWCVGBIJ
+      ZVIVFVLVHVSRZVTWCGZBVGWJBVOVGIVNVRVPWCRVTWCUHUIUKAVGBTULUMVTVIWCVTVIWCVTV
+      IGZVGVOIJZWCWKWHVPWLVTVGAIJVIWHVTAVGWIUKVGABTUNVNVRVPVIRVGBVOTUFVTVLVIVRW
+      LWCUOWGVNVRVPVIQVGVOUPULUQUMVBURUSVIVCUTVAVA $.
+  $}
+
   $( Any subset of ordinal one being an element of ordinal two is equivalent to
      excluded middle.  A variation of ~ exmid01 which more directly illustrates
      the contrast with ~ el2oss1o .  (Contributed by Jim Kingdon,
