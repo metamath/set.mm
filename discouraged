@@ -8395,6 +8395,11 @@
 "idhmop" is used by "leopnmid".
 "idhmop" is used by "nmopleid".
 "idhmop" is used by "opsqrlem6".
+"idi" is used by "undiscolgt1".
+"idi" is used by "undiscolgt2".
+"idi" is used by "undiscolgt3".
+"idi" is used by "undiscolgt4".
+"idi" is used by "undiscolle7".
 "idiALT" is used by "ax6e2nd".
 "idiALT" is used by "ax6e2ndALT".
 "idiALT" is used by "ax6e2ndeqALT".
@@ -17047,7 +17052,7 @@ New usage of "idcnop" is discouraged (2 uses).
 New usage of "iddii" is discouraged (1 uses).
 New usage of "iden2" is discouraged (0 uses).
 New usage of "idhmop" is discouraged (6 uses).
-New usage of "idi" is discouraged (0 uses).
+New usage of "idi" is discouraged (5 uses).
 New usage of "idiALT" is discouraged (12 uses).
 New usage of "idiVD" is discouraged (0 uses).
 New usage of "idleop" is discouraged (1 uses).
@@ -20813,6 +20818,11 @@ Proof modification of "un10" is discouraged (18 steps).
 Proof modification of "un2122" is discouraged (44 steps).
 Proof modification of "undif3VD" is discouraged (295 steps).
 Proof modification of "undifrOLD" is discouraged (26 steps).
+Proof modification of "undiscolgt1" is discouraged (12 steps).
+Proof modification of "undiscolgt2" is discouraged (12 steps).
+Proof modification of "undiscolgt3" is discouraged (12 steps).
+Proof modification of "undiscolgt4" is discouraged (12 steps).
+Proof modification of "undiscolle7" is discouraged (11 steps).
 Proof modification of "unexOLD" is discouraged (19 steps).
 Proof modification of "unexbOLD" is discouraged (92 steps).
 Proof modification of "unexgOLD" is discouraged (32 steps).
