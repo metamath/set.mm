@@ -62919,7 +62919,7 @@ $)
   ord3 $p |- Ord 3o $=
     ( c3o 3on onordi ) ABC $.
 
-  $( Ordinal 3 is an ordinal number.  (Contributed by Mario Carneiro,
+  $( Ordinal 4 is an ordinal number.  (Contributed by Mario Carneiro,
      5-Jan-2016.) $)
   4on $p |- 4o e. On $=
     ( c4o c3o csuc con0 df-4o 3on onsuci eqeltri ) ABCDEBFGH $.
