@@ -197192,6 +197192,42 @@ $)
       FXGWQWJYFUTUQURVAVCVBVLDGVMVQBFXDTVQFYATHDGUKVNVOVP $.
   $}
 
+  ${
+    $d A u r x $.  $d G u x $.  $d I u r x $.  $d U u r x p q $.
+    $d V u x p q $.  $d ph p q r $.
+    vtxdgval.v $e |- V = ( Vtx ` G ) $.
+    vtxdgval.i $e |- I = ( iEdg ` G ) $.
+    vtxdgval.a $e |- A = dom I $.
+    vtxdgfifival.a $e |- ( ph -> A e. Fin ) $.
+    vtxdgfifival.v $e |- ( ph -> V e. Fin ) $.
+    vtxdgfifival.u $e |- ( ph -> U e. V ) $.
+    vtxdgfifival.g $e |- ( ph -> G e. UPGraph ) $.
+    $( The degree of a vertex for graphs with finite vertex and edge sets.
+       (Contributed by Jim Kingdon, 10-Feb-2026.) $)
+    vtxdgfifival $p |- ( ph
+        -> ( ( VtxDeg ` G ) ` U )
+          = ( ( # ` { x e. A | U e. ( I ` x ) } ) +
+          ( # ` { x e. A | ( I ` x ) = { U } } ) ) ) $=
+      ( vr cfv wcel chash wceq wral vu vp vq cvtxdg cv crab csn cxad cmpt caddc
+      cvv 1vgrex vtxdgfval syl fveq1d cxr eqid eleq1 rabbidv fveq2d sneq eqeq2d
+      co oveq12d cfn cn0 wdc adantr simprl simprr fidceq syl3anc ralrimivva cdm
+      wa cupgr wss eleq2i biimpi upgrss syl2an wfn c1o cen wbr c2o upgrfen ffnd
+      wo fneq2i sylibr simpr upgrfi elssdc ralrimiva fveq2 eleq2d dcbid cbvralv
+      sylib ssfirab hashcl nn0red eqsndc fveqeq2 xaddcld fvmptd3 rexaddd 3eqtrd
+      cpw rexrd ) ADEUDPZPZDUAGUAUEZBUEZFPZQZBCUFZRPZXPXNUGZSZBCUFZRPZUHVCZUIZP
+      ZDXPQZBCUFZRPZXPDUGZSZBCUFZRPZUHVCZYIYMUJVCADGQZXMYFSMYODXLYEYOEUKQXLYESE
+      DGHULBUACEFGUKHIJUMUNUOUNAUADYDYNGYEUPYEUQXNDSZXSYIYCYMUHYPXRYHRYPXQYGBCX
+      NDXPURUSUTYPYBYLRYPYAYKBCYPXTYJXPXNDVAVBUSUTVDMAYIYMAYIAYIAYHVEQYIVFQAYGB
+      CKADOUEZFPZQZVGZOCTYGVGZBCTAYTOCAYQCQZVOZUBUCYRGDAUBUEZUCUEZSVGZUCGTUBGTU
+      UBAUUFUBUCGGAUUDGQZUUEGQZVOZVOGVEQZUUGUUHUUFAUUJUUILVHAUUGUUHVIAUUGUUHVJG
+      UUDUUEVKVLVMVHZAYOUUBMVHZAEVPQZYQFVNZQZYRGVQUUBNUUBUUOCUUNYQJVRVSFYQEGHIV
+      TWAZUUCUUMFCWBZUUBYRVEQAUUMUUBNVHZUUCUUMUUQUURUUMFUUNWBUUQUUMUUNXOWCWDWEX
+      OWFWDWEWIBGXJUFFBFEGHIWGWHCUUNFJWJWKUNAUUBWLCFYQEGHIWMVLZWNWOYTUUAOBCYQXO
+      SZYSYGUUTYRXPDYQXOFWPWQWRWSWTXAYHXBUNXCZXKAYMAYMAYLVEQYMVFQAYKBCKAYRYJSZV
+      GZOCTYKVGZBCTAUVCOCUUCUBUCYRGDUUKUULUUPUUSXDWOUVCUVDOBCUUTUVBYKYQXOYJFXEW
+      RWSWTXAYLXBUNXCZXKXFXGAYIYMUVAUVEXHXI $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
