@@ -69116,6 +69116,31 @@ $)
   $}
 
   ${
+    $d A u v w $.  $d B x y $.  $d X u v w $.  $d X x y $.  $d ph u v w $.
+    $d v y $.
+    elssdc.b $e |- ( ph -> A. x e. B A. y e. B DECID x = y ) $.
+    elssdc.x $e |- ( ph -> X e. B ) $.
+    elssdc.ss $e |- ( ph -> A C_ B ) $.
+    elssdc.a $e |- ( ph -> A e. Fin ) $.
+    $( Membership in a finite subset of a set with decidable equality is
+       decidable.  (Contributed by Jim Kingdon, 11-Feb-2026.) $)
+    elssdc $p |- ( ph -> DECID X e. A ) $=
+      ( vv cv wcel wdc wceq eleq2 dcbid wn wo wa vw vu csn cun noel df-dc mpbir
+      c0 olci a1i cfn cdif vsnid wb eleq1 adantl mpbiri elun2 orcd sylibr elun1
+      wss syl simpr elsni con3i ad2antlr sylanbrc elun sylnibr exmiddc mpjaodan
+      ioran olcd eqeq2 wral ralbidv rspcdva ad3antrrr simplrr eldifad sseldd ex
+      eqeq1 findcard2sd ) AFUALZMZNFUHMZNZFUBLZMZNZFWJKLZUCZUDZMZNZFDMZNUAUBKDW
+      FUHOWGWHWFUHFPQWFWJOWGWKWFWJFPQWFWOOWGWPWFWOFPQWFDOWGWRWFDFPQWIAWIWHWHRZS
+      WSWHFUEUIWHUFUGUJAWJUKMZTZWJDVBZWMDWJULMZTZTZWLWQXEWLTZFWMOZWQXGRZXFXGTZF
+      WNMZWQXIXJWMWNMZKUMXGXJXKUNXFFWMWNUOUPUQXJWPWPRZSZWQXJWPXLFWNWJURUSWPUFZU
+      TVCXFXHTZWKWQWKRZWKWQXOWKXMWQWKWPXLFWJWNVAUSXNUTUPXOXPTZXMWQXQXLWPXQWKXJS
+      ZWPXQXPXJRZXRRXOXPVDXHXSXFXPXJXGFWMVEVFVGWKXJVMVHFWJWNVIVJVNXNUTWLWKXPSXE
+      XHWKVKVGVLXFXGNZXGXHSXFFCLZOZNZXTCEWMYAWMOYBXGYAWMFVOQAYCCEVPZWTXDWLABLZY
+      AOZNZCEVPYDBEFYEFOZYGYCCEYHYFYBYEFYAWDQVQGHVRVSXFDEWMADEVBWTXDWLIVSXFWMDW
+      JXAXBXCWLVTWAWBVRXGVKVCVLWCJWE $.
+  $}
+
+  ${
     $d A f x $.
     $( An infinite set is inhabited.  (Contributed by Jim Kingdon,
        18-Feb-2022.) $)
