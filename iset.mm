@@ -203640,6 +203640,17 @@ $)
       MUUKGHXSPGUGYRYQSUULGQXSXNGXSAXOXPXQ $.
   $}
 
+  ${
+    $d x y $.
+    $( The powerset of ` 1o ` having decidable equality is equivalent to
+       excluded middle.  (Contributed by Jim Kingdon, 12-Feb-2026.) $)
+    pw1dceq $p |- ( EXMID <-> A. x e. ~P 1o A. y e. ~P 1o DECID x = y ) $=
+      ( wem cv wceq wdc c1o cpw wral exmidexmid ralrimivw wcel 1oex eqeq2 dcbid
+      wi pwid rspcv ax-mp ralimi pw1dc1 sylibr impbii ) CADZBDZEZFZBGHZIZAUHIZC
+      UIAUHCUGBUHUFJKKUJUDGEZFZAUHICUIULAUHGUHLUIULPGMQUGULBGUHUEGEUFUKUEGUDNOR
+      STAUAUBUC $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
