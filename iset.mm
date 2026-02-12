@@ -62914,6 +62914,11 @@ $)
   3on $p |- 3o e. On $=
     ( c3o c2o csuc con0 df-3o 2on onsuci eqeltri ) ABCDEBFGH $.
 
+  $( Ordinal 3 is an ordinal class.  (Contributed by BTernaryTau,
+     6-Jan-2025.) $)
+  ord3 $p |- Ord 3o $=
+    ( c3o 3on onordi ) ABC $.
+
   $( Ordinal 3 is an ordinal number.  (Contributed by Mario Carneiro,
      5-Jan-2016.) $)
   4on $p |- 4o e. On $=
