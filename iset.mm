@@ -62935,6 +62935,12 @@ $)
   df2o2 $p |- 2o = { (/) , { (/) } } $=
     ( c2o c0 c1o cpr csn df2o3 df1o2 preq2i eqtri ) ABCDBBEZDFCJBGHI $.
 
+  $( ` 2o ` is a set.  (Contributed by BJ, 6-Apr-2019.)  (Proof shortened by
+     Zhi Wang, 19-Sep-2024.) $)
+  2oex $p |- 2o e. _V $=
+    ( c2o c0 c1o cpr cvv df2o3 wcel 0ex 1oex prexg mp2an eqeltri ) ABCDZEFBEGCE
+    GMEGHIBCEEJKL $.
+
   $( Ordinal one is not equal to ordinal zero.  (Contributed by NM,
      26-Dec-2004.) $)
   1n0 $p |- 1o =/= (/) $=
