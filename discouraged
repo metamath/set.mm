@@ -16369,6 +16369,7 @@ New usage of "enrbreq" is discouraged (3 uses).
 New usage of "enreceq" is discouraged (9 uses).
 New usage of "enrer" is discouraged (8 uses).
 New usage of "enrex" is discouraged (9 uses).
+New usage of "enssdomOLD" is discouraged (0 uses).
 New usage of "ensucne0OLD" is discouraged (0 uses).
 New usage of "epweonALT" is discouraged (0 uses).
 New usage of "eq0ALT" is discouraged (0 uses).
@@ -16459,6 +16460,7 @@ New usage of "expcnOLD" is discouraged (0 uses).
 New usage of "expcomdg" is discouraged (0 uses).
 New usage of "f1cofveqaeqALT" is discouraged (0 uses).
 New usage of "f1oabexgOLD" is discouraged (0 uses).
+New usage of "f1oiOLD" is discouraged (0 uses).
 New usage of "f1omoALT" is discouraged (0 uses).
 New usage of "f1omoOLD" is discouraged (0 uses).
 New usage of "f1oweALT" is discouraged (0 uses).
@@ -19993,6 +19995,7 @@ Proof modification of "en3lpVD" is discouraged (147 steps).
 Proof modification of "en3lplem1VD" is discouraged (95 steps).
 Proof modification of "en3lplem2VD" is discouraged (267 steps).
 Proof modification of "enfiALT" is discouraged (42 steps).
+Proof modification of "enssdomOLD" is discouraged (77 steps).
 Proof modification of "ensucne0OLD" is discouraged (82 steps).
 Proof modification of "epweonALT" is discouraged (86 steps).
 Proof modification of "eq0ALT" is discouraged (31 steps).
@@ -20041,6 +20044,7 @@ Proof modification of "exlimexi" is discouraged (15 steps).
 Proof modification of "expcnOLD" is discouraged (294 steps).
 Proof modification of "f1cofveqaeqALT" is discouraged (124 steps).
 Proof modification of "f1oabexgOLD" is discouraged (64 steps).
+Proof modification of "f1oiOLD" is discouraged (30 steps).
 Proof modification of "f1omoALT" is discouraged (39 steps).
 Proof modification of "f1omoOLD" is discouraged (124 steps).
 Proof modification of "f1oweALT" is discouraged (805 steps).
