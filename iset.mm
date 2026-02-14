@@ -203347,6 +203347,14 @@ $)
       $.
   $}
 
+  $( The powerset of ` 1o ` is not infinite.  Since we cannot prove it is
+     finite (see ~ pw1fin ), this provides a concrete example of a set which we
+     cannot show to be finite or infinite, as seen another way at
+     ~ inffiexmid .  (Contributed by Jim Kingdon, 14-Feb-2026.) $)
+  pw1ninf $p |- -. _om ~<_ ~P 1o $=
+    ( com c1o cpw cdom wbr c3o pw1ndom3 wcel cfn 3onn nnfi fict mp2b domtr mpan
+    mto ) ABCZDEZFQDEZGFADEZRSFAHFIHTJFKFLMFAQNOP $.
+
   ${
     nnti.a $e |- ( ph -> A e. _om ) $.
     $( Ordering on a natural number generates a tight apartness.  (Contributed
