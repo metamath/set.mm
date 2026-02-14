@@ -62914,7 +62914,12 @@ $)
   3on $p |- 3o e. On $=
     ( c3o c2o csuc con0 df-3o 2on onsuci eqeltri ) ABCDEBFGH $.
 
-  $( Ordinal 3 is an ordinal number.  (Contributed by Mario Carneiro,
+  $( Ordinal 3 is an ordinal class.  (Contributed by BTernaryTau,
+     6-Jan-2025.) $)
+  ord3 $p |- Ord 3o $=
+    ( c3o 3on onordi ) ABC $.
+
+  $( Ordinal 4 is an ordinal number.  (Contributed by Mario Carneiro,
      5-Jan-2016.) $)
   4on $p |- 4o e. On $=
     ( c4o c3o csuc con0 df-4o 3on onsuci eqeltri ) ABCDEBFGH $.
@@ -62934,6 +62939,12 @@ $)
      29-Jan-2004.) $)
   df2o2 $p |- 2o = { (/) , { (/) } } $=
     ( c2o c0 c1o cpr csn df2o3 df1o2 preq2i eqtri ) ABCDBBEZDFCJBGHI $.
+
+  $( ` 2o ` is a set.  (Contributed by BJ, 6-Apr-2019.)  (Proof shortened by
+     Zhi Wang, 19-Sep-2024.) $)
+  2oex $p |- 2o e. _V $=
+    ( c2o c0 c1o cpr cvv df2o3 wcel 0ex 1oex prexg mp2an eqeltri ) ABCDZEFBEGCE
+    GMEGHIBCEEJKL $.
 
   $( Ordinal one is not equal to ordinal zero.  (Contributed by NM,
      26-Dec-2004.) $)
@@ -203256,6 +203267,22 @@ $)
       HVCSLVAAECURVEUNUOUPUSUEZPVCQTUFVAUSUOUPVDUTUGUQUSUHVFVGAEBCURUIUJULUM $.
   $}
 
+  ${
+    $d A x y $.  $d B x y $.
+    $( Equinumerosity of finite sets is decidable.  (Contributed by Jim
+       Kingdon, 10-Feb-2026.) $)
+    fidcen $p |- ( ( A e. Fin /\ B e. Fin ) -> DECID A ~~ B ) $=
+      ( vx vy cfn wcel wa cv cen wbr wdc wrex isfi biimpi wn wo simplrl simplrr
+      com entr adantr ad2antlr weq simprl nndceq syl2anc exmiddc simpr breqtrrd
+      syl ensymd syl2an2r ex sylan wb nneneq mpbid orim12d mpd sylibr rexlimddv
+      con3d df-dc ) AEFZBEFZGZACHZIJZABIJZKZCSVDVHCSLZVEVDVKCAMNUAVFVGSFZVHGZGZ
+      BDHZIJZVJDSVEVPDSLZVDVMVEVQDBMNUBVNVOSFZVPGZGZVIVIOZPZVJVTCDUCZWCOZPZWBVT
+      WCKZWEVTVLVRWFVFVLVHVSQZVNVRVPUDVGVOUEUFWCUGUJVTWCVIWDWAVTWCVIVTVHWCVGBIJ
+      ZVIVFVLVHVSRZVTWCGZBVGWJBVOVGIVNVRVPWCRVTWCUHUIUKAVGBTULUMVTVIWCVTVIWCVTV
+      IGZVGVOIJZWCWKWHVPWLVTVGAIJVIWHVTAVGWIUKVGABTUNVNVRVPVIRVGBVOTUFVTVLVIVRW
+      LWCUOWGVNVRVPVIQVGVOUPULUQUMVBURUSVIVCUTVAVA $.
+  $}
+
   $( Any subset of ordinal one being an element of ordinal two is equivalent to
      excluded middle.  A variation of ~ exmid01 which more directly illustrates
      the contrast with ~ el2oss1o .  (Contributed by Jim Kingdon,
@@ -203264,6 +203291,29 @@ $)
     ( wem cv c0 csn wss wceq wo wal c1o c2o wcel exmid01 df1o2 sseq2i cpr df2o2
     wi eleq2i vex elpr bitri imbi12i albii bitr4i ) BACZDEZFZUFDGUFUGGHZRZAIUFJ
     FZUFKLZRZAIAMUMUJAUKUHULUIJUGUFNOULUFDUGPZLUIKUNUFQSUFDUGATUAUBUCUDUE $.
+
+  ${
+    $d x y z f A $.
+    $( A set that dominates ordinal 3 has at least 3 different members.
+       (Contributed by Jim Kingdon, 12-Feb-2026.) $)
+    3dom $p |- ( 3o ~<_ A -> E. x e. A E. y e. A E. z e. A
+        ( x =/= y /\ x =/= z /\ y =/= z ) ) $=
+      ( vf c3o cv wne w3a wrex wa c0 cfv wcel adantl c2o ax-mp c1o wceq wn cdom
+      wbr wf1 brdomi wf f1f csuc 0lt2o elelsuc df-3o eleqtrri a1i ffvelcdmd com
+      1lt2o 2onn elexi sucid 1n0 nesymi f1veqaeq mtoi mpanr12 neqned 2on0 nnord
+      word ordirr eleq1 mtbiri mt2 neeq2 3anbi23d rspcev syl13anc biidd rexbidv
+      neeq1 3anbi123d syl2anc 2rexbidv exlimddv ) FDUAUBZFDEGZUCZAGZBGZHZWFCGZH
+      ZWGWIHZIZCDJBDJZADJZEFDEUDWCWEKZLWDMZDNWPWGHZWPWIHZWKIZCDJZBDJZWNWOFDLWDW
+      EFDWDUEWCFDWDUFOZLFNZWOLPUGZFLPNLXDNUHLPUIQUJUKZULUMWORWDMZDNWPXFHZWRXFWI
+      HZIZCDJZXAWOFDRWDXBRFNZWORXDFRPNZRXDNUORPUIQUJUKZULUMWOPWDMZDNXGWPXNHZXFX
+      NHZXJWOFDPWDXBPFNZWOPXDFPPUNUPUQURUJUKZULUMWEXGWCWEWPXFWEXCXKWPXFSZTXEXMW
+      EXCXKKKXSLRSRLUSUTFDLRWDVAVBVCVDOWEXOWCWEWPXNWEXCXQWPXNSZTXEXRWEXCXQKKXTL
+      PSPLVEUTFDLPWDVAVBVCVDOWEXPWCWEXFXNWEXKXQXFXNSZTXMXRWEXKXQKKYARPSZYBXLUOY
+      BXLPPNZPVGZYCTPUNNYDUPPVFQPVHQRPPVIVJVKFDRPWDVAVBVCVDOXIXGXOXPICXNDWIXNSW
+      RXOXHXPXGWIXNWPVLWIXNXFVLVMVNVOWTXJBXFDWGXFSZWSXICDYEWQXGWRWRWKXHWGXFWPVL
+      YEWRVPWGXFWIVRVSVQVNVTWMXAAWPDWFWPSZWLWSBCDDYFWHWQWJWRWKWKWFWPWGVRWFWPWIV
+      RYFWKVPVSWAVNVTWB $.
+  $}
 
   ${
     nnti.a $e |- ( ph -> A e. _om ) $.
@@ -203588,6 +203638,17 @@ $)
       SAYOTXFWNYNYPXAYMUWADYTTXRYTRZYAUVBYLUVTXRYTXTXBUWBYFUVEYKUVFUWBYEUVDFXSU
       WBYDUVCCJYBYCXRYTXGXCXDUWBYJUUBBJUWBYIUUAEXSYGYHXRYTXGXDXCXEXEXHXIXJXKXLX
       MUUKGHXSPGUGYRYQSUULGQXSXNGXSAXOXPXQ $.
+  $}
+
+  ${
+    $d x y $.
+    $( The powerset of ` 1o ` having decidable equality is equivalent to
+       excluded middle.  (Contributed by Jim Kingdon, 12-Feb-2026.) $)
+    pw1dceq $p |- ( EXMID <-> A. x e. ~P 1o A. y e. ~P 1o DECID x = y ) $=
+      ( wem cv wceq wdc c1o cpw wral exmidexmid ralrimivw wcel 1oex eqeq2 dcbid
+      wi pwid rspcv ax-mp ralimi pw1dc1 sylibr impbii ) CADZBDZEZFZBGHZIZAUHIZC
+      UIAUHCUGBUHUFJKKUJUDGEZFZAUHICUIULAUHGUHLUIULPGMQUGULBGUHUEGEUFUKUEGUDNOR
+      STAUAUBUC $.
   $}
 
 
