@@ -69079,7 +69079,9 @@ $)
     $d ph x y z $.
     inffiexmid.1 $e |- ( x e. Fin \/ _om ~<_ x ) $.
     $( If any given set is either finite or infinite, excluded middle follows.
-       (Contributed by Jim Kingdon, 15-Jun-2022.) $)
+       For another example, ` ~P 1o ` is not infinite, by ~ pw1ninf , but also
+       cannot be shown to be finite by ~ pw1fin .  (Contributed by Jim Kingdon,
+       15-Jun-2022.) $)
     inffiexmid $p |- ( ph \/ -. ph ) $=
       ( vy vw vz wn wo com crab cfn wcel cdom wbr cv omex wceq wex c0 ax-mp syl
       rabex eleq1 breq2 orbi12d vtocl ominf peano1 elex2 r19.3rmv rabid2 sylbb2
