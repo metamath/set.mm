@@ -203316,6 +203316,38 @@ $)
   $}
 
   ${
+    pw1ndom3lem.x $e |- ( ph -> X e. ~P 1o ) $.
+    pw1ndom3lem.y $e |- ( ph -> Y e. ~P 1o ) $.
+    pw1ndom3lem.z $e |- ( ph -> Z e. ~P 1o ) $.
+    pw1ndom3lem.xy $e |- ( ph -> X =/= Y ) $.
+    pw1ndom3lem.xz $e |- ( ph -> X =/= Z ) $.
+    pw1ndom3lem.yz $e |- ( ph -> Y =/= Z ) $.
+    $( Lemma for ~ pw1ndom3 .  (Contributed by Jim Kingdon, 14-Feb-2026.) $)
+    pw1ndom3lem $p |- ( ph -> X = (/) ) $=
+      ( c0 wss wne wceq c1o elpwid df1o2 sseqtrdi adantr neeqtrd wa neeq1 mpbid
+      csn wb adantl necomd a1i pwntru syl2anc eqtr4d neneqd pm2.65da neqned ) A
+      BKUDZLBUOMBKNABOUOABOEPQRABOUOABOABONZCDNAUPUAZCKDUQCUOLCUOMCKNUQCOUOACOL
+      UPACOFPSQRUQCOUOUQOCUQBCMZOCMZAURUPHSUPURUSUEABOCUBUFUCUGOUONZUQQUHZTCUIU
+      JUQDUOLDUOMDKNUQDOUOADOLUPADOGPSQRUQDOUOUQODUQBDMZODMZAVBUPISUPVBVCUEABOD
+      UBUFUCUGVATDUIUJUKUQCDACDMUPJSULUMUNUTAQUHTBUIUJ $.
+  $}
+
+  ${
+    $d x y z $.
+    $( The powerset of ` 1o ` does not dominate ` 3o ` .  This is another way
+       of saying that ` ~P 1o ` does not have three elements (like ~ pwntru ).
+       (Contributed by Steven Nguyen and Jim Kingdon, 14-Feb-2026.) $)
+    pw1ndom3 $p |- -. 3o ~<_ ~P 1o $=
+      ( vx vy vz c3o c1o cpw cdom wbr wn wfal wi wne wrex 3dom wcel pw1ndom3lem
+      cv w3a wa rexlimdva c0 simp-4r simpllr simplr simpr1 simpr2 simpr3 necomd
+      eqtr4d pm2.21ddne ex mpd dfnot mpbir ) DEFZGHZIUPJKUPAQZBQZLZUQCQZLZURUTL
+      ZRZCUOMZBUOMZAUOMJABCUONUPVEJAUOUPUQUOOZSZVDJBUOVGURUOOZSZVCJCUOVIUTUOOZS
+      ZVCJVKVCSZJUQURVLUQUAURVLUQURUTUPVFVHVJVCUBZVGVHVJVCUCZVIVJVCUDZVKUSVAVBU
+      EZVKUSVAVBUFZVKUSVAVBUGZPVLURUQUTVNVMVOVLUQURVPUHVRVQPUIVPUJUKTTTULUPUMUN
+      $.
+  $}
+
+  ${
     nnti.a $e |- ( ph -> A e. _om ) $.
     $( Ordering on a natural number generates a tight apartness.  (Contributed
        by Jim Kingdon, 7-Aug-2022.) $)
