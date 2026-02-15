@@ -69134,7 +69134,9 @@ $)
     $d ph x y z $.
     inffiexmid.1 $e |- ( x e. Fin \/ _om ~<_ x ) $.
     $( If any given set is either finite or infinite, excluded middle follows.
-       (Contributed by Jim Kingdon, 15-Jun-2022.) $)
+       For another example, ` ~P 1o ` is not infinite, by ~ pw1ninf , but also
+       cannot be shown to be finite by ~ pw1fin .  (Contributed by Jim Kingdon,
+       15-Jun-2022.) $)
     inffiexmid $p |- ( ph \/ -. ph ) $=
       ( vy vw vz wn wo com crab cfn wcel cdom wbr cv omex wceq wex c0 ax-mp syl
       rabex eleq1 breq2 orbi12d vtocl ominf peano1 elex2 r19.3rmv rabid2 sylbb2
@@ -203657,6 +203659,46 @@ $)
       YEWRVPWGXFWIVRVSVQVNVTWMXAAWPDWFWPSZWLWSBCDDYFWHWQWJWRWKWKWFWPWGVRWFWPWIV
       RYFWKVPVSWAVNVTWB $.
   $}
+
+  ${
+    pw1ndom3lem.x $e |- ( ph -> X e. ~P 1o ) $.
+    pw1ndom3lem.y $e |- ( ph -> Y e. ~P 1o ) $.
+    pw1ndom3lem.z $e |- ( ph -> Z e. ~P 1o ) $.
+    pw1ndom3lem.xy $e |- ( ph -> X =/= Y ) $.
+    pw1ndom3lem.xz $e |- ( ph -> X =/= Z ) $.
+    pw1ndom3lem.yz $e |- ( ph -> Y =/= Z ) $.
+    $( Lemma for ~ pw1ndom3 .  (Contributed by Jim Kingdon, 14-Feb-2026.) $)
+    pw1ndom3lem $p |- ( ph -> X = (/) ) $=
+      ( c0 wss wne wceq c1o elpwid df1o2 sseqtrdi adantr neeqtrd wa neeq1 mpbid
+      csn wb adantl necomd a1i pwntru syl2anc eqtr4d neneqd pm2.65da neqned ) A
+      BKUDZLBUOMBKNABOUOABOEPQRABOUOABOABONZCDNAUPUAZCKDUQCUOLCUOMCKNUQCOUOACOL
+      UPACOFPSQRUQCOUOUQOCUQBCMZOCMZAURUPHSUPURUSUEABOCUBUFUCUGOUONZUQQUHZTCUIU
+      JUQDUOLDUOMDKNUQDOUOADOLUPADOGPSQRUQDOUOUQODUQBDMZODMZAVBUPISUPVBVCUEABOD
+      UBUFUCUGVATDUIUJUKUQCDACDMUPJSULUMUNUTAQUHTBUIUJ $.
+  $}
+
+  ${
+    $d x y z $.
+    $( The powerset of ` 1o ` does not dominate ` 3o ` .  This is another way
+       of saying that ` ~P 1o ` does not have three elements (like ~ pwntru ).
+       (Contributed by Steven Nguyen and Jim Kingdon, 14-Feb-2026.) $)
+    pw1ndom3 $p |- -. 3o ~<_ ~P 1o $=
+      ( vx vy vz c3o c1o cpw cdom wbr wn wfal wi wne wrex 3dom wcel pw1ndom3lem
+      cv w3a wa rexlimdva c0 simp-4r simpllr simplr simpr1 simpr2 simpr3 necomd
+      eqtr4d pm2.21ddne ex mpd dfnot mpbir ) DEFZGHZIUPJKUPAQZBQZLZUQCQZLZURUTL
+      ZRZCUOMZBUOMZAUOMJABCUONUPVEJAUOUPUQUOOZSZVDJBUOVGURUOOZSZVCJCUOVIUTUOOZS
+      ZVCJVKVCSZJUQURVLUQUAURVLUQURUTUPVFVHVJVCUBZVGVHVJVCUCZVIVJVCUDZVKUSVAVBU
+      EZVKUSVAVBUFZVKUSVAVBUGZPVLURUQUTVNVMVOVLUQURVPUHVRVQPUIVPUJUKTTTULUPUMUN
+      $.
+  $}
+
+  $( The powerset of ` 1o ` is not infinite.  Since we cannot prove it is
+     finite (see ~ pw1fin ), this provides a concrete example of a set which we
+     cannot show to be finite or infinite, as seen another way at
+     ~ inffiexmid .  (Contributed by Jim Kingdon, 14-Feb-2026.) $)
+  pw1ninf $p |- -. _om ~<_ ~P 1o $=
+    ( com c1o cpw cdom wbr c3o pw1ndom3 wcel cfn 3onn nnfi fict mp2b domtr mpan
+    mto ) ABCZDEZFQDEZGFADEZRSFAHFIHTJFKFLMFAQNOP $.
 
   ${
     nnti.a $e |- ( ph -> A e. _om ) $.
