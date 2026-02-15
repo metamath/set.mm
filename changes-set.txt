@@ -92,6 +92,23 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+15-Feb-26 nelrnmpt  [same]      Moved from GS's mathbox to main set.mm
+15-Feb-26 elmapssresd [same]    Moved from SN's mathbox to main set.mm
+15-Feb-26 xrgtned   [same]      Moved from GS's mathbox to main set.mm
+15-Feb-26 pwselbasr [same]      Moved from SN's mathbox to main set.mm
+15-Feb-26 pwsgprod  [same]      Moved from SN's mathbox to main set.mm
+15-Feb-26 asclelbas [same]      Moved from ZW's mathbox to main set.mm
+15-Feb-26 mplascl0  [same]      Moved from SN's mathbox to main set.mm
+15-Feb-26 mplascl1  [same]      Moved from SN's mathbox to main set.mm
+15-Feb-26 evlsval3  [same]      Moved from SN's mathbox to main set.mm
+15-Feb-26 evlsvval  [same]      Moved from SN's mathbox to main set.mm
+15-Feb-26 evlsvvvallem [same]   Moved from SN's mathbox to main set.mm
+15-Feb-26 evlsvvvallem2 [same]  Moved from SN's mathbox to main set.mm
+15-Feb-26 evlsvvval [same]      Moved from SN's mathbox to main set.mm
+15-Feb-26 evlcl     [same]      Moved from SN's mathbox to main set.mm
+15-Feb-26 evladdval [same]      Moved from SN's mathbox to main set.mm
+15-Feb-26 evlmulval [same]      Moved from SN's mathbox to main set.mm
+15-Feb-26 coe1id    [same]      Moved from AV mathbox to main set.mm
 18-Jan-26 elprn1    [same]      Moved from GS's mathbox to main set.mm
 18-Jan-26 elprn2    [same]      Moved from GS's mathbox to main set.mm
 17-Jan-26 upwrdfi   chnflenfi   Moved from ET's mathbox to main set.mm and
