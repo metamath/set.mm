@@ -197228,6 +197228,23 @@ $)
       RWSWTXAYLXBUNXCZXKXFXGAYIYMUVAUVEXHXI $.
   $}
 
+  ${
+    $d G u x $.  $d W u x $.
+    $( The vertex degree expressed as operation.  (Contributed by AV,
+       12-Dec-2021.) $)
+    vtxdgop $p |- ( G e. W -> ( VtxDeg ` G )
+                              = ( ( Vtx ` G ) VtxDeg ( iEdg ` G ) ) ) $=
+      ( vu vx wcel cvtx cfv ciedg cvtxdg cv cdm crab chash wceq cxad co syl2anc
+      cmpt cvv eqid cop csn vtxex iedgex opexg vtxdgfval opvtxfv opiedgfv dmeqd
+      syl fveq1d eleq2d rabeqbidv fveq2d oveq12d mpteq12dv eqtrd df-ov 3eqtr4rd
+      eqeq1d a1i ) ABEZAFGZAHGZUAZIGZCVCCJZDJZVDGZEZDVDKZLZMGZVIVGUBZNZDVKLZMGZ
+      OPZRZVCVDIPZAIGVBVFCVEFGZVGVHVEHGZGZEZDWBKZLZMGZWCVNNZDWELZMGZOPZRZVSVBVE
+      SEZVFWLNVBVCSEZVDSEZWMABUCZABUDZVCVDSSUEQDCWEVEWBWASWATWBTWETUFUJVBCWAWKV
+      CVRVBWNWOWAVCNWPWQVDVCSSUGQVBWGVMWJVQOVBWFVLMVBWDVJDWEVKVBWBVDVBWNWOWBVDN
+      WPWQVDVCSSUHQZUIZVBWCVIVGVBVHWBVDWRUKZULUMUNVBWIVPMVBWHVODWEVKWSVBWCVIVNW
+      TUTUMUNUOUPUQVTVFNVBVCVDIURVADCVKAVDVCBVCTVDTVKTUFUS $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
