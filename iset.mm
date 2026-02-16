@@ -69154,6 +69154,25 @@ $)
       XHWKVKVGVLXFXGNZXGXHSXFFCLZOZNZXTCEWMYAWMOYBXGYAWMFVOQAYCCEVPZWTXDWLABLZY
       AOZNZCEVPYDBEFYEFOZYGYCCEYHYFYBYEFYAWDQVQGHVRVSXFDEWMADEVBWTXDWLIVSXFWMDW
       JXAXBXCWLVTWAWBVRXGVKVCVLWCJWE $.
+
+    ${
+      $d u x $.  $d u y $.
+      $( Decidability of equality between a finite subset of a set with
+         decidable equality, and a singleton whose element is an element of the
+         larger set.  (Contributed by Jim Kingdon, 15-Feb-2026.) $)
+      eqsndc $p |- ( ph -> DECID A = { X } ) $=
+        ( vu cen wbr wceq wdc wa cv c1o wcel syl csn wn wex simpr ensn1g adantr
+        entr syl2anc en1 sylib weq wral wss ad2antrr vsnid mpbiri adantl sseldd
+        eleq2 eqeq1 dcbid eqeq2 rspc2va syl21anc cvv sneqbg elv bitrdi exlimddv
+        wb mpbird wo cfn eqeng con3dimp olcd df-dc sylibr snfig fidcen mpjaodan
+        wi exmiddc ) ADFUAZLMZDWDNZOZWEUBZAWEPZDKQZUAZNZWGKWIDRLMZWLKUCWIWEWDRL
+        MZWMAWEUDAWNWEAFESZWNHFEUETUFDWDRUGUHKDUIUJWIWLPZWGWJFNZOZWPWJESWOBCUKZ
+        OZCEULBEULZWRWPDEWJADEUMWEWLIUNWLWJDSZWIWLXBWJWKSKUODWKWJUSUPUQURAWOWEW
+        LHUNAXAWEWLGUNWTWRKCUKZOBCWJFEEBKUKWSXCBQWJCQZUTVAXDFNXCWQXDFWJVBVAVCVD
+        WPWFWQWPWFWKWDNZWQWLWFXEVJWIDWKWDUTUQXEWQVJKWJFVEVFVGVHVAVKVIAWHPZWFWFU
+        BZVLWGXFXGWFAWFWEADVMSZWFWEWBJDWDVMVNTVOVPWFVQVRAWEOZWEWHVLAXHWDVMSZXIJ
+        AWOXJHFEVSTDWDVTUHWEWCTWA $.
+    $}
   $}
 
   ${
