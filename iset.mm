@@ -197202,30 +197202,46 @@ $)
     vtxdgfifival.v $e |- ( ph -> V e. Fin ) $.
     vtxdgfifival.u $e |- ( ph -> U e. V ) $.
     vtxdgfifival.g $e |- ( ph -> G e. UPGraph ) $.
+    $( The number of edges from a given vertex is finite.  (Contributed by Jim
+       Kingdon, 16-Feb-2026.) $)
+    vtxedgfi $p |- ( ph -> { x e. A | U e. ( I ` x ) } e. Fin ) $=
+      ( vr vp vq cv wcel wral cfv wdc wa adantr simprl simprr fidceq ralrimivva
+      weq cfn syl3anc cupgr cdm wss eleq2i biimpi upgrss syl2an wfn c1o cen wbr
+      c2o cpw crab upgrfen ffnd fneq2i sylibr syl simpr upgrfi elssdc ralrimiva
+      wo fveq2 eleq2d dcbid cbvralv sylib ssfirab ) ADBRZFUAZSZBCKADORZFUAZSZUB
+      ZOCTWDUBZBCTAWHOCAWECSZUCZPQWFGDAPQUIUBZQGTPGTWJAWLPQGGAPRZGSZQRZGSZUCZUC
+      GUJSZWNWPWLAWRWQLUDAWNWPUEAWNWPUFGWMWOUGUKUHUDADGSWJMUDAEULSZWEFUMZSZWFGU
+      NWJNWJXACWTWEJUOUPFWEEGHIUQURWKWSFCUSZWJWFUJSAWSWJNUDZWKWSXBXCWSFWTUSXBWS
+      WTWBUTVAVBWBVCVAVBVOBGVDVEFBFEGHIVFVGCWTFJVHVIVJAWJVKCFWEEGHIVLUKVMVNWHWI
+      OBCOBUIZWGWDXDWFWCDWEWBFVPVQVRVSVTWA $.
+
+    $( The number of loops from a given vertex is finite.  (Contributed by Jim
+       Kingdon, 16-Feb-2026.) $)
+    vtxlpfi $p |- ( ph -> { x e. A | ( I ` x ) = { U } } e. Fin ) $=
+      ( vr vp vq cv wral wcel cfv csn wceq wdc wa weq cfn adantr simprl syl3anc
+      simprr fidceq ralrimivva cdm wss eleq2i biimpi upgrss wfn c1o cen wbr c2o
+      cupgr syl2an wo cpw crab upgrfen fneq2i sylibr syl simpr upgrfi ralrimiva
+      ffnd eqsndc fveqeq2 dcbid cbvralv sylib ssfirab ) ABRZFUADUBZUCZBCKAORZFU
+      AZWDUCZUDZOCSWEUDZBCSAWIOCAWFCTZUEZPQWGGDAPQUFUDZQGSPGSWKAWMPQGGAPRZGTZQR
+      ZGTZUEZUEGUGTZWOWQWMAWSWRLUHAWOWQUIAWOWQUKGWNWPULUJUMUHADGTWKMUHAEVDTZWFF
+      UNZTZWGGUOWKNWKXBCXAWFJUPUQFWFEGHIURVEWLWTFCUSZWKWGUGTAWTWKNUHZWLWTXCXDWT
+      FXAUSXCWTXAWCUTVAVBWCVCVAVBVFBGVGVHFBFEGHIVIVPCXAFJVJVKVLAWKVMCFWFEGHIVNU
+      JVQVOWIWJOBCOBUFWHWEWFWCWDFVRVSVTWAWB $.
+
     $( The degree of a vertex for graphs with finite vertex and edge sets.
        (Contributed by Jim Kingdon, 10-Feb-2026.) $)
     vtxdgfifival $p |- ( ph
         -> ( ( VtxDeg ` G ) ` U )
           = ( ( # ` { x e. A | U e. ( I ` x ) } ) +
           ( # ` { x e. A | ( I ` x ) = { U } } ) ) ) $=
-      ( vr cfv wcel chash wceq wral vu vp vq cvtxdg cv crab csn cxad cmpt caddc
-      cvv 1vgrex vtxdgfval syl fveq1d cxr eqid eleq1 rabbidv fveq2d sneq eqeq2d
-      co oveq12d cfn cn0 wdc adantr simprl simprr fidceq syl3anc ralrimivva cdm
-      wa cupgr wss eleq2i biimpi upgrss syl2an wfn c1o cen wbr c2o upgrfen ffnd
-      wo fneq2i sylibr simpr upgrfi elssdc ralrimiva fveq2 eleq2d dcbid cbvralv
-      sylib ssfirab hashcl nn0red eqsndc fveqeq2 xaddcld fvmptd3 rexaddd 3eqtrd
-      cpw rexrd ) ADEUDPZPZDUAGUAUEZBUEZFPZQZBCUFZRPZXPXNUGZSZBCUFZRPZUHVCZUIZP
-      ZDXPQZBCUFZRPZXPDUGZSZBCUFZRPZUHVCZYIYMUJVCADGQZXMYFSMYODXLYEYOEUKQXLYESE
-      DGHULBUACEFGUKHIJUMUNUOUNAUADYDYNGYEUPYEUQXNDSZXSYIYCYMUHYPXRYHRYPXQYGBCX
-      NDXPURUSUTYPYBYLRYPYAYKBCYPXTYJXPXNDVAVBUSUTVDMAYIYMAYIAYIAYHVEQYIVFQAYGB
-      CKADOUEZFPZQZVGZOCTYGVGZBCTAYTOCAYQCQZVOZUBUCYRGDAUBUEZUCUEZSVGZUCGTUBGTU
-      UBAUUFUBUCGGAUUDGQZUUEGQZVOZVOGVEQZUUGUUHUUFAUUJUUILVHAUUGUUHVIAUUGUUHVJG
-      UUDUUEVKVLVMVHZAYOUUBMVHZAEVPQZYQFVNZQZYRGVQUUBNUUBUUOCUUNYQJVRVSFYQEGHIV
-      TWAZUUCUUMFCWBZUUBYRVEQAUUMUUBNVHZUUCUUMUUQUURUUMFUUNWBUUQUUMUUNXOWCWDWEX
-      OWFWDWEWIBGXJUFFBFEGHIWGWHCUUNFJWJWKUNAUUBWLCFYQEGHIWMVLZWNWOYTUUAOBCYQXO
-      SZYSYGUUTYRXPDYQXOFWPWQWRWSWTXAYHXBUNXCZXKAYMAYMAYLVEQYMVFQAYKBCKAYRYJSZV
-      GZOCTYKVGZBCTAUVCOCUUCUBUCYRGDUUKUULUUPUUSXDWOUVCUVDOBCUUTUVBYKYQXOYJFXEW
-      RWSWTXAYLXBUNXCZXKXFXGAYIYMUVAUVEXHXI $.
+      ( vu cfv wcel crab chash wceq cvtxdg cv csn cxad co cmpt caddc cvv 1vgrex
+      vtxdgfval syl fveq1d cxr eqid eleq1 rabbidv fveq2d eqeq2d oveq12d cfn cn0
+      sneq vtxedgfi hashcl nn0red rexrd vtxlpfi xaddcld fvmptd3 rexaddd 3eqtrd
+      ) ADEUAPZPZDOGOUBZBUBFPZQZBCRZSPZVOVNUCZTZBCRZSPZUDUEZUFZPZDVOQZBCRZSPZVO
+      DUCZTZBCRZSPZUDUEZWHWLUGUEADGQZVMWETMWNDVLWDWNEUHQVLWDTEDGHUIBOCEFGUHHIJU
+      JUKULUKAODWCWMGWDUMWDUNVNDTZVRWHWBWLUDWOVQWGSWOVPWFBCVNDVOUOUPUQWOWAWKSWO
+      VTWJBCWOVSWIVOVNDVBURUPUQUSMAWHWLAWHAWHAWGUTQWHVAQABCDEFGHIJKLMNVCWGVDUKV
+      EZVFAWLAWLAWKUTQWLVAQABCDEFGHIJKLMNVGWKVDUKVEZVFVHVIAWHWLWPWQVJVK $.
   $}
 
   ${
