@@ -15842,7 +15842,6 @@ New usage of "dfhnorm2" is discouraged (3 uses).
 New usage of "dfid2" is discouraged (0 uses).
 New usage of "dfid3" is discouraged (0 uses).
 New usage of "dfiop2" is discouraged (3 uses).
-New usage of "dfmo" is discouraged (0 uses).
 New usage of "dfpjop" is discouraged (4 uses).
 New usage of "dfsb1" is discouraged (3 uses).
 New usage of "dfsb2" is discouraged (1 uses).
@@ -17614,6 +17613,7 @@ New usage of "mobidvALT" is discouraged (0 uses).
 New usage of "moexex" is discouraged (2 uses).
 New usage of "moexexv" is discouraged (0 uses).
 New usage of "mof0ALT" is discouraged (0 uses).
+New usage of "mofromeu" is discouraged (0 uses).
 New usage of "mpteleeOLD" is discouraged (0 uses).
 New usage of "mptmpoopabbrdOLD" is discouraged (0 uses).
 New usage of "mptssALT" is discouraged (0 uses).
@@ -19723,7 +19723,6 @@ Proof modification of "dfcnfldOLD" is discouraged (195 steps).
 Proof modification of "dfdif3OLD" is discouraged (137 steps).
 Proof modification of "dfeu" is discouraged (35 steps).
 Proof modification of "dffr2ALT" is discouraged (64 steps).
-Proof modification of "dfmo" is discouraged (44 steps).
 Proof modification of "dfsn2ALT" is discouraged (30 steps).
 Proof modification of "dfvd1imp" is discouraged (10 steps).
 Proof modification of "dfvd1impr" is discouraged (10 steps).
@@ -20419,6 +20418,7 @@ Proof modification of "mndoissmgrpOLD" is discouraged (22 steps).
 Proof modification of "moabexOLD" is discouraged (65 steps).
 Proof modification of "mobidvALT" is discouraged (48 steps).
 Proof modification of "mof0ALT" is discouraged (67 steps).
+Proof modification of "mofromeu" is discouraged (44 steps).
 Proof modification of "mopickr" is discouraged (77 steps).
 Proof modification of "mpteleeOLD" is discouraged (202 steps).
 Proof modification of "mptmpoopabbrdOLD" is discouraged (208 steps).
