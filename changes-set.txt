@@ -92,7 +92,7 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
-16-Feb-26 dfmo      mofromeu    Free dfmo for a simplified form of df-mo
+16-Feb-26 dfmo      dfmo2       Free dfmo for a simplified form of df-mo
 11-Feb-26 4d2e2     4div2e2
 24-Jan-26 setinds2  [same]      Moved from SF's mathbox to main set.mm
 24-Jan-26 setinds2f [same]      Moved from SF's mathbox to main set.mm
