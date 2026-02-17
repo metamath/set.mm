@@ -49579,6 +49579,19 @@ $)
       ( cdm fdmd sseqtrid ) AEHDBFABCEGIJ $.
   $}
 
+  $( The image of a class under a function with domain and codomain is a subset
+     of its codomain.  (Contributed by Glauco Siliprandi, 17-Aug-2020.) $)
+  fimass $p |- ( F : A --> B -> ( F " X ) C_ B ) $=
+    ( wf cima crn imassrn frn sstrid ) ABCECDFCGBCDHABCIJ $.
+
+  ${
+    fimassd.1 $e |- ( ph -> F : A --> B ) $.
+    $( The image of a class is a subset of its codomain.  (Contributed by
+       Glauco Siliprandi, 23-Oct-2021.) $)
+    fimassd $p |- ( ph -> ( F " X ) C_ B ) $=
+      ( wf cima wss fimass syl ) ABCDGDEHCIFBCDEJK $.
+  $}
+
   $( Composition of two mappings.  (Contributed by NM, 29-Aug-1999.)  (Proof
      shortened by Andrew Salmon, 17-Sep-2011.) $)
   fco $p |- ( ( F : B --> C /\ G : A --> B ) -> ( F o. G ) : A --> C ) $=
@@ -52817,6 +52830,22 @@ $)
       IUDCUHUDUFUHUDUGGUEUECOZUKPUCUGQRSUAUB $.
   $}
 
+  $( Composition of a function with domain and a function as a function with
+     domain.  Generalization of ~ fnco .  (Contributed by AV, 17-Sep-2024.) $)
+  fncofn $p |- ( ( F Fn A /\ Fun G ) -> ( F o. G ) Fn ( `' G " A ) ) $=
+    ( wfn wfun wa ccom ccnv cima cdm fnfun funco funfnd wceq fndm adantr eqcomd
+    sylan imaeq2d dmco eqtr4di fneq2d mpbird ) BADZCEZFZBCGZCHZAIZDUGUGJZDUFUGU
+    DBEUEUGEABKBCLRMUFUIUJUGUFUIUHBJZIUJUFAUKUHUFUKAUDUKANUEABOPQSBCTUAUBUC $.
+
+  $( Composition of a function with domain and codomain and a function as a
+     function with domain and codomain.  Generalization of ~ fco .
+     (Contributed by AV, 18-Sep-2024.) $)
+  fcof $p |- ( ( F : A --> B /\ Fun G ) -> ( F o. G ) : ( `' G " A ) --> B ) $=
+    ( wf wfun wa ccom ccnv cima wfn crn wss df-f wi fncofn adantr rncoss sstr
+    ex mpan adantl jctird imp sylanb sylibr ) ABCEZDFZGCDHZDIAJZKZUILZBMZGZUJBU
+    IEUGCAKZCLZBMZGZUHUNABCNURUHUNURUHUKUMUOUHUKOUQUOUHUKACDPTQUQUMUOULUPMUQUMC
+    DRULUPBSUAUBUCUDUEUJBUINUF $.
+
   ${
     $d A x $.  $d B x $.  $d G x $.  $d X x $.  $d Y x $.
     funopdmsn.g $e |- G = <. X , Y >. $.
@@ -53441,6 +53470,32 @@ $)
     ( wfn wss wcel w3a wfun cdm wa cima fnfun 3ad2ant1 simp2 wceq fndm sseqtrrd
     cfv jca simp3 funfvima2 sylc ) CAEZBAFZDBGZHZCIZBCJZFZKUFDCSCBLGUGUHUJUDUEU
     HUFACMNUGBAUIUDUEUFOUDUEUIAPUFACQNRTUDUEUFUABDCUBUC $.
+
+  ${
+    fnfvimad.1 $e |- ( ph -> F Fn A ) $.
+    fnfvimad.2 $e |- ( ph -> B e. A ) $.
+    fnfvimad.3 $e |- ( ph -> B e. C ) $.
+    $( A function's value belongs to the image.  (Contributed by Glauco
+       Siliprandi, 23-Oct-2021.) $)
+    fnfvimad $p |- ( ph -> ( F ` B ) e. ( F " C ) ) $=
+      ( cin cima cfv wss inss2 imass2 ax-mp wfn wcel inss1 a1i elind fnfvima
+      syl3anc sselid ) AEBDIZJZEDJZCEKZUDDLUEUFLBDMUDDENOAEBPUDBLZCUDQUGUEQFUHA
+      BDRSABDCGHTBUDECUAUBUC $.
+  $}
+
+  ${
+    resfvresima.f $e |- ( ph -> Fun F ) $.
+    resfvresima.s $e |- ( ph -> S C_ dom F ) $.
+    resfvresima.x $e |- ( ph -> X e. S ) $.
+    $( The value of the function value of a restriction for a function
+       restricted to the image of the restricting subset.  (Contributed by AV,
+       6-Mar-2021.) $)
+    resfvresima $p |- ( ph -> ( ( H |` ( F " S ) ) ` ( ( F |` S ) ` X ) )
+                              = ( H ` ( F ` X ) ) ) $=
+      ( cres cfv cima fvresd fveq2d wfun cdm wss wa wcel jca funfvima2 eqtrd
+      sylc ) AECBIJZDCBKZIZJECJZUEJUFDJAUCUFUEAEBCHLMAUFUDDACNZBCOPZQEBRUFUDRAU
+      GUHFGSHBECTUBLUA $.
+  $}
 
   ${
     $d A x $.  $d Y x $.  $d F x $.
@@ -62914,7 +62969,12 @@ $)
   3on $p |- 3o e. On $=
     ( c3o c2o csuc con0 df-3o 2on onsuci eqeltri ) ABCDEBFGH $.
 
-  $( Ordinal 3 is an ordinal number.  (Contributed by Mario Carneiro,
+  $( Ordinal 3 is an ordinal class.  (Contributed by BTernaryTau,
+     6-Jan-2025.) $)
+  ord3 $p |- Ord 3o $=
+    ( c3o 3on onordi ) ABC $.
+
+  $( Ordinal 4 is an ordinal number.  (Contributed by Mario Carneiro,
      5-Jan-2016.) $)
   4on $p |- 4o e. On $=
     ( c4o c3o csuc con0 df-4o 3on onsuci eqeltri ) ABCDEBFGH $.
@@ -62934,6 +62994,12 @@ $)
      29-Jan-2004.) $)
   df2o2 $p |- 2o = { (/) , { (/) } } $=
     ( c2o c0 c1o cpr csn df2o3 df1o2 preq2i eqtri ) ABCDBBEZDFCJBGHI $.
+
+  $( ` 2o ` is a set.  (Contributed by BJ, 6-Apr-2019.)  (Proof shortened by
+     Zhi Wang, 19-Sep-2024.) $)
+  2oex $p |- 2o e. _V $=
+    ( c2o c0 c1o cpr cvv df2o3 wcel 0ex 1oex prexg mp2an eqeltri ) ABCDZEFBEGCE
+    GMEGHIBCEEJKL $.
 
   $( Ordinal one is not equal to ordinal zero.  (Contributed by NM,
      26-Dec-2004.) $)
@@ -69068,7 +69134,9 @@ $)
     $d ph x y z $.
     inffiexmid.1 $e |- ( x e. Fin \/ _om ~<_ x ) $.
     $( If any given set is either finite or infinite, excluded middle follows.
-       (Contributed by Jim Kingdon, 15-Jun-2022.) $)
+       For another example, ` ~P 1o ` is not infinite, by ~ pw1ninf , but also
+       cannot be shown to be finite by ~ pw1fin .  (Contributed by Jim Kingdon,
+       15-Jun-2022.) $)
     inffiexmid $p |- ( ph \/ -. ph ) $=
       ( vy vw vz wn wo com crab cfn wcel cdom wbr cv omex wceq wex c0 ax-mp syl
       rabex eleq1 breq2 orbi12d vtocl ominf peano1 elex2 r19.3rmv rabid2 sylbb2
@@ -197171,6 +197239,21 @@ $)
   $}
 
   ${
+    $d G f k p $.  $d V f p $.
+    $( The class of walks on a graph is a set.  (Contributed by Jim Kingdon,
+       7-Feb-2026.) $)
+    wlkex $p |- ( G e. V -> ( Walks ` G ) e. _V ) $=
+      ( vf vp vk wcel cwlks cfv cv ciedg cdm cword cc0 chash co wceq copab eqid
+      cvv cfn cfz cvtx wf c1 caddc csn cpr wss wif cfzo wral w3a wksfval iedgex
+      wa dmexd wrdexg syl cab 0zd lencl nn0zd fzfigd vtxex mapex syl2anr 3simpa
+      opabex3d wi a1i ssopab2dv ssexd eqeltrd ) ABFZAGHCIZAJHZKZLZFZMVONHZUAOZA
+      UBHZDIZUCZEIZWCHZWEUDUEOWCHZPWEVOHVPHZWFUFPWFWGUGWHUHUIEMVTUJOUKZULZCDQZS
+      CEAVPWBBDWBRVPRUMVNWKVSWDUOZCDQSVNWDCDVRVNVQSFVRSFVNVPSABUNUPVQSUQURVSWAT
+      FWBSFWDDUSSFVNVSMVTVSUTVSVTVQVOVAVBVCABVDWAWBTSDVEVFVHVNWJWLCDWJWLVIVNVSW
+      DWIVGVJVKVLVM $.
+  $}
+
+  ${
     $d G f k p $.
     $( The classes involved in a walk are sets.  (Contributed by Alexander van
        der Vekens, 31-Oct-2017.)  (Revised by AV, 3-Feb-2021.) $)
@@ -197324,12 +197407,24 @@ $)
     $( The sequence of vertices of a walk cannot be empty, i.e. a walk always
        consists of at least one vertex.  (Contributed by Alexander van der
        Vekens, 19-Jul-2018.)  (Revised by AV, 2-Jan-2021.) $)
-    wlkm $p |- ( ( G e. W /\ F ( Walks ` G ) P ) -> E. x x e. P ) $=
-      ( vy wcel cwlks cfv wbr wa cv wex cdm cc0 chash cfz syl wb mpbird cn0 cuz
-      co wlkclg elnn0uz fzm sylbb2 cvtx wf eqid wlkpg eleq2d exbidv wrel reldmm
-      fdm frel 3syl ) DEGCBDHIJKZALBGAMZFLZBNZGZFMZUSVDVAOCPIZQUCZGZFMZUSVEUAGZ
-      VHBCDEUDVIVEOUBIGVHVEUEFOVEUFUGRUSVFDUHIZBUIZVDVHSBCDVJEVJUJUKZVKVCVGFVKV
-      BVFVAVFVJBUPULUMRTUSVKBUNUTVDSVLVFVJBUQAFBUOURT $.
+    wlkm $p |- ( F ( Walks ` G ) P -> E. x x e. P ) $=
+      ( vy cwlks cfv wbr cv wcel wex cdm cc0 chash cfz co cn0 syl wb mpbird cuz
+      wlkcl elnn0uz fzm sylbb2 cvtx wf eqid wlkp eleq2d exbidv wrel frel reldmm
+      fdm 3syl ) CBDFGHZAIBJAKZEIZBLZJZEKZUQVBUSMCNGZOPZJZEKZUQVCQJZVFBCDUBVGVC
+      MUAGJVFVCUCEMVCUDUERUQVDDUFGZBUGZVBVFSBCDVHVHUHUIZVIVAVEEVIUTVDUSVDVHBUOU
+      JUKRTUQVIBULURVBSVJVDVHBUMAEBUNUPT $.
+  $}
+
+  ${
+    $d V x $.  $d P x $.
+    wlkvtxm.v $e |- V = ( Vtx ` G ) $.
+    $( A graph with a walk has at least one vertex.  (Contributed by Jim
+       Kingdon, 8-Feb-2026.) $)
+    wlkvtxm $p |- ( F ( Walks ` G ) P -> E. x x e. V ) $=
+      ( cwlks cfv wbr cc0 wcel cv wex cvtx chash cfz co eqid wlkp syl cuz wlkcl
+      cn0 elnn0uz sylib eluzfz1 ffvelcdmd eleqtrrdi elex2 ) CBDGHIZJBHZEKALEKAM
+      UJUKDNHZEUJJCOHZPQZULJBBCDULULRSUJUMJUAHKZJUNKUJUMUCKUOBCDUBUMUDUEJUMUFTU
+      GFUHAUKEUIT $.
   $}
 
   $( The number of edges of a walk is the number of its vertices minus 1.
@@ -197835,11 +197930,10 @@ $)
        (Contributed by Alexander van der Vekens, 2-Sep-2018.)  (Revised by AV,
        5-Mar-2021.) $)
     g0wlk0 $p |- ( ( Vtx ` G ) = (/) -> ( Walks ` G ) = (/) ) $=
-      ( vw vx cvtx cfv c0 wceq cv cwlks wcel wex c2nd wne cvv c1st wbr wlkcprim
-      wn wlkmex wlkm syl2anc n0r syl neneqd wa wlkv0 simprd mtand exlimiv con2i
-      ancoms notm0 sylib ) ADEFGZBHZAIEZJZBKZRUPFGURUNUQUNRBUQUNUOLEZFGZUQUSFUQ
-      CHUSJCKZUSFMUQANJUOOEZUSUPPVAAUOSAUOQCUSVBANTUACUSUBUCUDUNUQUTUNUQUEVBFGU
-      TAUOUFUGUKUHUIUJBUPULUM $.
+      ( vw vx cvtx cfv c0 wceq cv cwlks wcel wex wn c2nd c1st wbr wlkcprim wlkm
+      wne n0r 3syl neneqd wlkv0 simprd ancoms mtand exlimiv con2i notm0 sylib
+      wa ) ADEFGZBHZAIEZJZBKZLUMFGUOUKUNUKLBUNUKULMEZFGZUNUPFUNULNEZUPUMOCHUPJC
+      KUPFRAULPCUPURAQCUPSTUAUKUNUQUKUNUJURFGUQAULUBUCUDUEUFUGBUMUHUI $.
   $}
 
   $( There is no walk for the empty set, i.e. in a null graph.  (Contributed by
@@ -197869,6 +197963,265 @@ $)
     NHZOZWCWAVQWGUIVNWAVQWFVPOWGWAVOWFVPWAVITKZVOWFOWADQKWHUJDCVTQUKUNVSCVITULU
     OUPWFVPUQURRWEWGWCWEVMWBMVNVMSKWAVMUSUTWAWBSKVNWAWBVSCVAVBRWEVCVDVEVFVGVH
     $.
+
+  ${
+    $d E k $.  $d F k $.  $d P k $.
+    $( Lemma for theorems for walks of length 2.  (Contributed by Alexander van
+       der Vekens, 1-Feb-2018.) $)
+    2wlklem $p |- ( A. k e. { 0 , 1 } ( E ` ( F ` k ) )
+                                        = { ( P ` k ) , ( P ` ( k + 1 ) ) }
+                     <-> ( ( E ` ( F ` 0 ) ) = { ( P ` 0 ) , ( P ` 1 ) }
+                        /\ ( E ` ( F ` 1 ) ) = { ( P ` 1 ) , ( P ` 2 ) } ) ) $=
+      ( cv cfv c1 caddc co cpr wceq cc0 c0ex 1ex 2fveq3 fv0p1e1 preq12d eqeq12d
+      c2 fveq2 oveq1 1p1e2 eqtrdi fveq2d ralpr ) BEZDFCFZUFAFZUFGHIZAFZJZKLDFCF
+      ZLAFZGAFZJZKGDFCFZUNSAFZJZKBLGMNUFLKZUGULUKUOUFLCDOUSUHUMUJUNUFLATAUFPQRU
+      FGKZUGUPUKURUFGCDOUTUHUNUJUQUFGATUTUISAUTUIGGHISUFGGHUAUBUCUDQRUE $.
+
+    $d G k $.  $d I k $.  $d V k $.
+    upgr2wlk.v $e |- V = ( Vtx ` G ) $.
+    upgr2wlk.i $e |- I = ( iEdg ` G ) $.
+    $( Properties of a pair of functions to be a walk of length 2 in a
+       pseudograph.  Note that the vertices need not to be distinct and the
+       edges can be loops or multiedges.  (Contributed by Alexander van der
+       Vekens, 16-Feb-2018.)  (Revised by AV, 3-Jan-2021.)  (Revised by AV,
+       28-Oct-2021.) $)
+    upgr2wlkdc $p |- ( G e. UPGraph -> ( ( F ( Walks ` G ) P /\ F ~~ 2o )
+                  <-> ( ( F : ( 0 ..^ 2 ) --> dom I /\ P : ( 0 ... 2 ) --> V
+                  /\ A. k e. { 0 , 1 } DECID ( P ` k ) = ( P ` ( k + 1 ) ) )
+               /\ ( ( I ` ( F ` 0 ) ) = { ( P ` 0 ) , ( P ` 1 ) }
+                    /\ ( I ` ( F ` 1 ) ) = { ( P ` 1 ) , ( P ` 2 ) } ) ) ) ) $=
+      ( wcel cfv wbr c2o cen wa cc0 c2 co c1 wceq syl cupgr cwlks cdm wf cfz cv
+      cfzo caddc wdc cpr w3a chash cword simprl upgriswlkdc adantr mpbid simp1d
+      wral wb wrdf simprr cfn hash2en simprbi oveq2d feq2d simp2d simp3d ralimi
+      simpl oveq2 fzo0to2pr eqtrdi raleqtrdv 3jca simpr raleqdv 2wlklem jca cn0
+      bitrdi simprl1 2nn0 sylancl simprl2 fnfzo0hash sylancr simprl3 raleqtrrdv
+      iswrdinn0 mpbird sylibr r19.26 cvv wfun cz 0z fzofig mp2an fex mpan2 ffun
+      2z fundmeng syl2anc ensymd fdm wne 1z 0ne1 pr2nelem eqbrtrdi entr impbida
+      mp3an ) DUAIZCADUBJKZCLMKZNZOPUGQZEUCZCUDZOPUEQZFAUDZBUFZAJZYFRUHQAJZSUIZ
+      BORUJZUSZUKZOCJEJOAJRAJZUJSRCJEJYMPAJUJSNZNZXQXTNZYLYNYPYCYEYKYPOCULJZUGQ
+      ZYBCUDZYCYPCYBUMIZYSYPYTOYQUEQZFAUDZYIYFCJEJYGYHUJSZNZBYRUSZYPXRYTUUBUUEU
+      KZXQXRXSUNXQXRUUFUTZXTABCDEFGHUOZUPUQZURYBCVATYPYRYAYBCYPYQPOUGYPXSYQPSZX
+      QXRXSVBXSCVCIUUJCVDVETZVFVGUQYPUUBYEYPYTUUBUUEUUIVHYPUUAYDFAYPYQPOUEUUKVF
+      VGUQYPYIBYRYJYPUUEYIBYRUSZYPYTUUBUUEUUIVIZUUDYIBYRYIUUCVKVJTYPUUJYRYJSZUU
+      KUUJYRYAYJYQPOUGVLVMVNZTZVOVPYPUUCBYRUSZYNYPUUEUUQUUMUUDUUCBYRYIUUCVQVJTY
+      PUUQUUCBYJUSZYNYPUUCBYRYJUUPVRABECVSZWBUQVTXQYONZXRXSUUTXRUUFUUTYTUUBUUEU
+      UTYCPWAIZYTYCYEYKYNXQWCZWDYBPCWKWEUUTUUBYEYCYEYKYNXQWFUUTUUAYDFAUUTYQPOUE
+      UUTUVAYCUUJWDUVBYBCPWGWHZVFVGWLUUTUULUUQNUUEUUTUULUUQUUTYIBYJYRYCYEYKYNXQ
+      WIUUTUUJUUNUVCUUOTZWJUUTUUCBYJYRUUTYNUURXQYLYNVBUUSWMUVDWJVTYIUUCBYRWNWMV
+      PXQUUGYOUUHUPWLUUTYCXSUVBYCCCUCZMKUVELMKXSYCUVECYCCWOIZCWPUVECMKYCYAVCIZU
+      VFOWQIZPWQIUVGWRXDOPWSWTYAYBVCCXAXBYAYBCXCCWOXEXFXGYCUVEYJLMYCUVEYAYJYAYB
+      CXHVMVNUVHRWQIORXIYJLMKWRXJXKORWQWQXLXPXMCUVELXNXFTVTXO $.
+  $}
+
+  ${
+    $d V x $.  $d P x $.  $d S x $.  $d ph x $.
+    wlkres.v $e |- V = ( Vtx ` G ) $.
+    wlkres.i $e |- I = ( iEdg ` G ) $.
+    wlkres.d $e |- ( ph -> F ( Walks ` G ) P ) $.
+    wlkres.n $e |- ( ph -> N e. ( 0 ..^ ( # ` F ) ) ) $.
+    wlkres.s $e |- ( ph -> ( Vtx ` S ) = V ) $.
+    $( Lemma for ~ wlkres .  (Contributed by AV, 5-Mar-2021.)  (Revised by AV,
+       30-Nov-2022.) $)
+    wlkreslem $p |- ( ph -> S e. _V ) $=
+      ( vx vg cv wcel cvv cfv syl cwlks wbr wex wlkvtxm cvtx eleq2d biimpar cxp
+      wa c1st cbs cif df-vtx mptrcl exlimddv ) ANPZHQZCRQZNADBEUASUBUQNUCKNBDEH
+      IUDTAUQUIUPCUESZQZURAUTUQAUSHUPMUFUGOROPZRRUHQVAUJSVAUKSULUEUPCOUMUNTUO
+      $.
+
+    $d F k x $.  $d G k $.  $d H x $.  $d I k $.  $d N x $.  $d P k $.
+    $d Q x $.  $d S x $.  $d ph x $.
+    wlkres.e $e |- ( ph -> ( iEdg ` S ) = ( I |` ( F " ( 0 ..^ N ) ) ) ) $.
+    wlkres.h $e |- H = ( F prefix N ) $.
+    wlkres.q $e |- Q = ( P |` ( 0 ... N ) ) $.
+    $( The restriction ` <. H , Q >. ` of a walk ` <. F , P >. ` to an initial
+       segment of the walk (of length ` N ` ) forms a walk on the subgraph
+       ` S ` consisting of the edges in the initial segment.  (Contributed by
+       Mario Carneiro, 12-Mar-2015.)  (Revised by Mario Carneiro, 3-May-2015.)
+       (Revised by AV, 5-Mar-2021.)  Hypothesis revised using the prefix
+       operation.  (Revised by AV, 30-Nov-2022.) $)
+    wlkres $p |- ( ph -> H ( Walks ` S ) Q ) $=
+      ( cfv wceq vx vk cwlks wbr ciedg cdm cword wcel cc0 chash cfz co wf cv c1
+      cvtx csn cpr wss wif cfzo wral cpfx cima cn0 wlkf syl pfxwrdsymbg syl2anc
+      caddc elfzonn0 a1i cres dmeqd wrdf 3syl ssdmres sylib eqtrd wrdeq 3eltr4d
+      fimass wlkp feq3d mpbird cuz fzossfz sselid elfzuz3 fssresd fveq2i pfxlen
+      fzss2 eqtrid oveq2d feq2d feq1i sylibr wa wlkprop adantr wi eleq2d fveq1i
+      w3a sselda fvresd eqtr2id fzofzp1 adantl jca ex sylbid imp ancli wfun fdm
+      ffund fzoss2 sseq2 imbitrrid impcom simpr resfvresima sylan eqcomd pfxres
+      elfzouz2 fveq1d fveq12d eqtr4d fveq2d eleqtrrd wkslem1 wb eqeq12 sneq cvv
+      rspcv eqid eqeq12d preq12 sseq12d ifpbi123d biimpd sylsyld com12 3ad2ant3
+      mpcom ralrimiva wlkreslem iswlkg mpbir3and ) AGCDUCSUDZGDUESZUFZUGZUHZUIG
+      UJSZUKULZDUPSZCUMZUAUNZCSZUVCUOVJULZCSZTZUVCGSZUUOSZUVDUQZTZUVDUVFURZUVIU
+      SZUTZUAUIUUSVAULZVBZAEIVCULZEUIIVAULZVDZUGZGUUQAEHUFZUGUHZIVEUHZUVQUVTUHA
+      EBFUCSUDZUWBMBEFHLVFVGZAIUIEUJSZVAULZUHZUWCNIUWFVKVGUWAEIVHVIGUVQTAQVLAUU
+      PUVSTUUQUVTTAUUPHUVSVMZUFZUVSAUUOUWIPVNAUVSUWAUSZUWJUVSTAUWBUWGUWAEUMZUWK
+      UWEUWAEVOZUWGUWAEUVRWBVPUVSHVQVRVSUUPUVSVTVGWAAUUTUVABUIIUKULZVMZUMZUVBAU
+      WPUWNUVAUWOUMAUIUWFUKULZUVAUWNBAUWQUVABUMUWQJBUMZAUWDUWRMBEFJKWCVGAUVAJBU
+      WQOWDWEAIUWQUHZUWFIWFSZUHZUWNUWQUSAUWGUWQIUIUWFWGNWHZIUIUWFWIIUIUWFWMVPWJ
+      AUUTUWNUVAUWOAUUSIUIUKAUUSUVQUJSZIGUVQUJQWKAUWBUWSUXCITUWEUXBUWAEIWLVIWNZ
+      WOWPWEUUTUVACUWORWQWRAUVNUAUVOUWBUWRUBUNZBSZUXEUOVJULBSZTUXEESHSZUXFUQTUX
+      FUXGURUXHUSUTZUBUWGVBZXEZAUVCUVOUHZWSZUVNAUXKUXLAUWDUXKMBUBEFHJKLWTVGXAUX
+      JUWBUXMUVNXBUWRUXMUXJUVNUXMUVCBSZUVDTZUVEBSZUVFTZWSZUVCESHSZUVITZWSZUXJUX
+      NUXPTZUXSUXNUQZTZUXNUXPURZUXSUSZUTZUVNUXMUXRUXTAUXLUXRAUXLUVCUVRUHZUXRAUV
+      OUVRUVCAUUSIUIVAUXDWOXCZAUYHUXRAUYHWSZUXOUXQUYJUVDUVCUWOSUXNUVCCUWORXDUYJ
+      UVCUWNBAUVRUWNUVCUVRUWNUSAUIIWGVLXFXGXHUYJUVFUVEUWOSUXPUVECUWORXDUYJUVEUW
+      NBUYHUVEUWNUHAUIIUVCXIXJXGXHXKXLXMXNUXMUXSUVCEUVRVMZSZUWISZUVIAUXLUXSUYMT
+      ZAUXLUYHUYNUYIAUYHUYNUYJUYMUXSAAUWBWSZUYHUYMUXSTAUWBUWEXOUYOUYHWSUVREHUVC
+      UYOEXPZUYHUWBUYPAUWBUWGUWAEUWMXRXJXAUYOUVREUFZUSZUYHUWBAUYRUWBUWLUYQUWGTZ
+      AUYRXBUWMUWGUWAEXQAUYRUYSUVRUWGUSZAUWHUXAUYTNIUIUWFYHZIUIUWFXSVPUYQUWGUVR
+      XTYAVPYBXAUYOUYHYCYDYEYFXLXMXNUXMUVHUYLUUOUWIAUUOUWITUXLPXAUXMUVHUVCUVQSU
+      YLUVCGUVQQXDUXMUVCUVQUYKUXMUWBUWSUVQUYKTAUWBUXLUWEXAAUWSUXLUXBXAUWAEIYGVI
+      YIWNYJYKXKUXMUVCUWGUHUXJUYGXBAUVOUWGUVCAUWFUUSWFSZUHUVOUWGUSAUWFUWTVUBAUW
+      HUXANVUAVGAUUSIWFUXDYLYMUUSUIUWFXSVGXFUXIUYGUBUVCUWGUXEUVCBEHYNYSVGUYAUYG
+      UVNUYAUYBUYDUYFUVGUVKUVMUXRUYBUVGYOUXTUXNUVDUXPUVFYPXAUYAUXSUVIUYCUVJUXRU
+      XTYCZUXRUYCUVJTZUXTUXOVUDUXQUXNUVDYQXAXAUUAUYAUYEUVLUXSUVIUXRUYEUVLTUXTUX
+      NUXPUVDUVFUUBXAVUCUUCUUDUUEUUFUUGUUHUUIUUJADYRUHUUNUURUVBUVPXEYOABDEFHIJK
+      LMNOUUKCUAGDUUOUVAYRUVAYTUUOYTUULVGUUM $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Trails
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c Trails $.
+
+  $( Extend class notation with trails (within a graph). $)
+  ctrls $a class Trails $.
+
+  ${
+    $d f g p $.
+    $( Define the set of all Trails (in an undirected graph).
+
+       According to Wikipedia ("Path (graph theory)",
+       ~ https://en.wikipedia.org/wiki/Path_(graph_theory) , 3-Oct-2017):  "A
+       trail is a walk in which all edges are distinct.
+
+       According to Bollobas:  "... walk is called a trail if all its edges are
+       distinct.", see Definition of [Bollobas] p. 5.
+
+       Therefore, a trail can be represented by an injective mapping f from {
+       1 , ... , n } and a mapping p from { 0 , ... , n }, where f enumerates
+       the (indices of the) different edges, and p enumerates the vertices.  So
+       the trail is also represented by the following sequence: p(0) e(f(1))
+       p(1) e(f(2)) ... p(n-1) e(f(n)) p(n).  (Contributed by Alexander van der
+       Vekens and Mario Carneiro, 4-Oct-2017.)  (Revised by AV,
+       28-Dec-2020.) $)
+    df-trls $a |- Trails = ( g e. _V |-> { <. f , p >. |
+                                      ( f ( Walks ` g ) p /\ Fun `' f ) } ) $.
+
+  $}
+
+  ${
+    $d f g p $.
+    $( The set ` ( Trails `` G ) ` of all trails on ` G ` is a set of pairs by
+       our definition of a trail, and so is a relation.  (Contributed by AV,
+       29-Oct-2021.) $)
+    reltrls $p |- Rel ( Trails ` G ) $=
+      ( vf vp vg cv cwlks cfv wbr ccnv wfun wa cvv ctrls df-trls relmptopab ) B
+      EZCEDEFGHPIJKDBCLAMBDCNO $.
+  $}
+
+  ${
+    $d G f g p z $.
+    $( The set of trails (in an undirected graph).  (Contributed by Alexander
+       van der Vekens, 20-Oct-2017.)  (Revised by AV, 28-Dec-2020.)  (Revised
+       by AV, 29-Oct-2021.) $)
+    trlsfvalg $p |- ( G e. V -> ( Trails ` G ) = { <. f , p >. |
+                                      ( f ( Walks ` G ) p /\ Fun `' f ) } ) $=
+      ( vg vz wcel cv cwlks cfv wbr ccnv wfun wa copab ctrls df-trls wceq fveq2
+      cvv breqd anbi1d opabbidv elex wlkex wss elopabran ssriv ssexd fvmptd3
+      a1i ) BCGZEBAHZDHZEHZIJZKZUMLMZNZADOUMUNBIJZKZURNZADOZTPTAEDQUOBRZUSVBADV
+      DUQVAURVDUPUTUMUNUOBISUAUBUCBCUDULVCUTTBCUEVCUTUFULFVCUTURADFHUTUGUHUKUIU
+      J $.
+  $}
+
+  ${
+    $d G f p $.  $d f g p $.
+    $( The classes involved in a trail are sets.  (Contributed by Jim Kingdon,
+       7-Feb-2026.) $)
+    trlsv $p |- ( F ( Trails ` G ) P -> ( G e. _V /\ F e. _V /\ P e. _V ) ) $=
+      ( vg vf vp ctrls cfv wbr cvv wcel cop df-br cv cwlks ccnv wfun copab syl
+      wa df-trls mptrcl sylbi wceq trlsfvalg breqd ibi brabv simpld simprd 3jca
+      ) BACGHZIZCJKZBJKZAJKZUMBALZULKUNBAULMDJENZFNZDNOHIURPQZTEFRGUQCEDFUAUBUC
+      ZUMUOUPUMBAURUSCOHIUTTZEFRZIZUOUPTUMVDUMULVCBAUMUNULVCUDVAECJFUESUFUGVBEF
+      BAUHSZUIUMUOUPVEUJUK $.
+  $}
+
+  ${
+    $d F f p $.  $d P f p $.  $d G f p $.
+    $( Conditions for a pair of classes/functions to be a trail (in an
+       undirected graph).  (Contributed by Alexander van der Vekens,
+       20-Oct-2017.)  (Revised by AV, 28-Dec-2020.)  (Revised by AV,
+       29-Oct-2021.) $)
+    istrl $p |- ( F ( Trails ` G ) P
+                  <-> ( F ( Walks ` G ) P /\ Fun `' F ) ) $=
+      ( vf vp ctrls cfv wbr cvv wcel w3a cwlks ccnv wfun trlsv wlkv adantr wceq
+      wa cv cop copab df-br trlsfvalg 3ad2ant1 eleq2d bitrid breq1 cnveq funeqd
+      wb anbi12d breq2 anbi1d opelopabg 3adant1 bitrd pm5.21nii ) BACFGZHZCIJZB
+      IJZAIJZKZBACLGZHZBMZNZSZABCOVFVDVHABCPQVDUTBAUAZDTZETZVEHZVKMZNZSZDEUBZJZ
+      VIUTVJUSJVDVRBAUSUCVDUSVQVJVAVBUSVQRVCDCIEUDUEUFUGVBVCVRVIUKVAVPBVLVEHZVH
+      SVIDEBAIIVKBRZVMVSVOVHVKBVLVEUHVTVNVGVKBUIUJULVLARVSVFVHVLABVEUMUNUOUPUQU
+      R $.
+  $}
+
+  $( A trail is a walk.  (Contributed by Alexander van der Vekens,
+     20-Oct-2017.)  (Revised by AV, 7-Jan-2021.)  (Proof shortened by AV,
+     29-Oct-2021.) $)
+  trliswlk $p |- ( F ( Trails ` G ) P -> F ( Walks ` G ) P ) $=
+    ( ctrls cfv wbr cwlks ccnv wfun istrl simplbi ) BACDEFBACGEFBHIABCJK $.
+
+  ${
+    trlf1.i $e |- I = ( iEdg ` G ) $.
+    $( The enumeration ` F ` of a trail ` <. F , P >. ` is injective.
+       (Contributed by AV, 20-Feb-2021.)  (Proof shortened by AV,
+       29-Oct-2021.) $)
+    trlf1 $p |- ( F ( Trails ` G ) P
+                  -> F : ( 0 ..^ ( # ` F ) ) -1-1-> dom I ) $=
+      ( ctrls cfv wbr cwlks ccnv wfun wa cc0 chash cfzo co cdm wf1 istrl cword
+      wcel wf wi wlkf wrdf df-f1 simplbi2 3syl imp sylbi ) BACFGHBACIGHZBJKZLMB
+      NGOPZDQZBRZABCSUKULUOUKBUNTUAUMUNBUBZULUOUCABCDEUDUNBUEUOUPULUMUNBUFUGUHU
+      IUJ $.
+  $}
+
+  ${
+    trlres.v $e |- V = ( Vtx ` G ) $.
+    trlres.i $e |- I = ( iEdg ` G ) $.
+    trlres.d $e |- ( ph -> F ( Trails ` G ) P ) $.
+    trlres.n $e |- ( ph -> N e. ( 0 ..^ ( # ` F ) ) ) $.
+    trlres.h $e |- H = ( F prefix N ) $.
+    $( Lemma for ~ trlres .  (Contributed by Mario Carneiro, 12-Mar-2015.)
+       (Revised by Mario Carneiro, 3-May-2015.)  (Revised by AV, 6-Mar-2021.)
+       Hypothesis revised using the prefix operation.  (Revised by AV,
+       30-Nov-2022.) $)
+    trlreslem $p |- ( ph -> H : ( 0 ..^ ( # ` H ) )
+                              -1-1-onto-> dom ( I |` ( F " ( 0 ..^ N ) ) ) ) $=
+      ( cc0 chash cfv cfzo co wcel 3syl cima cres cdm wf1 wss ctrls wbr syl cuz
+      wf1o trlf1 elfzouz2 fzoss2 f1ores cpfx cword cfz wceq cwlks trliswlk wlkf
+      syl2anc fzossfz sselid pfxres eqtrid fveq2i elfzofz pfxlen oveq2d wf wrdf
+      fimass ssdmres sylib f1oeq123d mpbird ) ANEOPZQRZFCNGQRZUAZUBUCZEUJVTWACV
+      TUBZUJZANCOPZQRZFUCZCUDZVTWFUEZWDACBDUFPUGZWHKBCDFJUKUHAGWFSZWEGUIPSWILGN
+      WEULGNWEUMTWFWGVTCUNVBAVSVTWBWAEWCAECGUORZWCMACWGUPSZGNWEUQRZSZWLWCURAWJC
+      BDUSPUGZWMKBCDUTZBCDFJVAZTZAWFWNGNWEVCLVDWGCGVEVBVFAVRGNQAVRWLOPZGEWLOMVG
+      AWMWOWTGURWSAWKWOLGNWEVHUHWGCGVIVBVFVJAWAWGUEZWBWAURAWJWPXAKWQWPWMWFWGCVK
+      XAWRWGCVLWFWGCVTVMTTWAFVNVOVPVQ $.
+
+    trlres.s $e |- ( ph -> ( Vtx ` S ) = V ) $.
+    trlres.e $e |- ( ph -> ( iEdg ` S ) = ( I |` ( F " ( 0 ..^ N ) ) ) ) $.
+    trlres.q $e |- Q = ( P |` ( 0 ... N ) ) $.
+    $( The restriction ` <. H , Q >. ` of a trail ` <. F , P >. ` to an initial
+       segment of the trail (of length ` N ` ) forms a trail on the subgraph
+       ` S ` consisting of the edges in the initial segment.  (Contributed by
+       AV, 6-Mar-2021.)  Hypothesis revised using the prefix operation.
+       (Revised by AV, 30-Nov-2022.) $)
+    trlres $p |- ( ph -> H ( Trails ` S ) Q ) $=
+      ( cfv wbr cwlks ccnv wfun ctrls trliswlk syl wlkres cc0 cfzo co cima cres
+      chash cdm wf1o wf1 trlreslem f1of1 wf df-f1 simprbi 3syl istrl sylanbrc )
+      AGCDUASTGUBUCZGCDUDSTABCDEFGHIJKLAEBFUDSTEBFUASTMBEFUEUFNPQORUGAUHGUMSUIU
+      JZHEUHIUIUJUKULUNZGUOVFVGGUPZVEABEFGHIJKLMNOUQVFVGGURVHVFVGGUSVEVFVGGUTVA
+      VBCGDVCVD $.
+  $}
 
 
 $(
@@ -200139,6 +200492,9 @@ htmldef "USGraph" as 'USGraph';
 htmldef "Walks" as "Walks";
   althtmldef "Walks" as "Walks";
   latexdef "Walks" as "\mathrm{Walks}";
+htmldef "Trails" as "Trails";
+  althtmldef "Trails" as "Trails";
+  latexdef "Trails" as "\mathrm{Trails}";
 
 /* htmldef, althtmldef, latexdef for mathboxes */
 /* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
@@ -203256,6 +203612,22 @@ $)
       HVCSLVAAECURVEUNUOUPUSUEZPVCQTUFVAUSUOUPVDUTUGUQUSUHVFVGAEBCURUIUJULUM $.
   $}
 
+  ${
+    $d A x y $.  $d B x y $.
+    $( Equinumerosity of finite sets is decidable.  (Contributed by Jim
+       Kingdon, 10-Feb-2026.) $)
+    fidcen $p |- ( ( A e. Fin /\ B e. Fin ) -> DECID A ~~ B ) $=
+      ( vx vy cfn wcel wa cv cen wbr wdc wrex isfi biimpi wn wo simplrl simplrr
+      com entr adantr ad2antlr weq simprl nndceq syl2anc exmiddc simpr breqtrrd
+      syl ensymd syl2an2r ex sylan wb nneneq mpbid orim12d mpd sylibr rexlimddv
+      con3d df-dc ) AEFZBEFZGZACHZIJZABIJZKZCSVDVHCSLZVEVDVKCAMNUAVFVGSFZVHGZGZ
+      BDHZIJZVJDSVEVPDSLZVDVMVEVQDBMNUBVNVOSFZVPGZGZVIVIOZPZVJVTCDUCZWCOZPZWBVT
+      WCKZWEVTVLVRWFVFVLVHVSQZVNVRVPUDVGVOUEUFWCUGUJVTWCVIWDWAVTWCVIVTVHWCVGBIJ
+      ZVIVFVLVHVSRZVTWCGZBVGWJBVOVGIVNVRVPWCRVTWCUHUIUKAVGBTULUMVTVIWCVTVIWCVTV
+      IGZVGVOIJZWCWKWHVPWLVTVGAIJVIWHVTAVGWIUKVGABTUNVNVRVPVIRVGBVOTUFVTVLVIVRW
+      LWCUOWGVNVRVPVIQVGVOUPULUQUMVBURUSVIVCUTVAVA $.
+  $}
+
   $( Any subset of ordinal one being an element of ordinal two is equivalent to
      excluded middle.  A variation of ~ exmid01 which more directly illustrates
      the contrast with ~ el2oss1o .  (Contributed by Jim Kingdon,
@@ -203264,6 +203636,69 @@ $)
     ( wem cv c0 csn wss wceq wo wal c1o c2o wcel exmid01 df1o2 sseq2i cpr df2o2
     wi eleq2i vex elpr bitri imbi12i albii bitr4i ) BACZDEZFZUFDGUFUGGHZRZAIUFJ
     FZUFKLZRZAIAMUMUJAUKUHULUIJUGUFNOULUFDUGPZLUIKUNUFQSUFDUGATUAUBUCUDUE $.
+
+  ${
+    $d x y z f A $.
+    $( A set that dominates ordinal 3 has at least 3 different members.
+       (Contributed by Jim Kingdon, 12-Feb-2026.) $)
+    3dom $p |- ( 3o ~<_ A -> E. x e. A E. y e. A E. z e. A
+        ( x =/= y /\ x =/= z /\ y =/= z ) ) $=
+      ( vf c3o cv wne w3a wrex wa c0 cfv wcel adantl c2o ax-mp c1o wceq wn cdom
+      wbr wf1 brdomi wf f1f csuc 0lt2o elelsuc df-3o eleqtrri a1i ffvelcdmd com
+      1lt2o 2onn elexi sucid 1n0 nesymi f1veqaeq mtoi mpanr12 neqned 2on0 nnord
+      word ordirr eleq1 mtbiri mt2 neeq2 3anbi23d rspcev syl13anc biidd rexbidv
+      neeq1 3anbi123d syl2anc 2rexbidv exlimddv ) FDUAUBZFDEGZUCZAGZBGZHZWFCGZH
+      ZWGWIHZIZCDJBDJZADJZEFDEUDWCWEKZLWDMZDNWPWGHZWPWIHZWKIZCDJZBDJZWNWOFDLWDW
+      EFDWDUEWCFDWDUFOZLFNZWOLPUGZFLPNLXDNUHLPUIQUJUKZULUMWORWDMZDNWPXFHZWRXFWI
+      HZIZCDJZXAWOFDRWDXBRFNZWORXDFRPNZRXDNUORPUIQUJUKZULUMWOPWDMZDNXGWPXNHZXFX
+      NHZXJWOFDPWDXBPFNZWOPXDFPPUNUPUQURUJUKZULUMWEXGWCWEWPXFWEXCXKWPXFSZTXEXMW
+      EXCXKKKXSLRSRLUSUTFDLRWDVAVBVCVDOWEXOWCWEWPXNWEXCXQWPXNSZTXEXRWEXCXQKKXTL
+      PSPLVEUTFDLPWDVAVBVCVDOWEXPWCWEXFXNWEXKXQXFXNSZTXMXRWEXKXQKKYARPSZYBXLUOY
+      BXLPPNZPVGZYCTPUNNYDUPPVFQPVHQRPPVIVJVKFDRPWDVAVBVCVDOXIXGXOXPICXNDWIXNSW
+      RXOXHXPXGWIXNWPVLWIXNXFVLVMVNVOWTXJBXFDWGXFSZWSXICDYEWQXGWRWRWKXHWGXFWPVL
+      YEWRVPWGXFWIVRVSVQVNVTWMXAAWPDWFWPSZWLWSBCDDYFWHWQWJWRWKWKWFWPWGVRWFWPWIV
+      RYFWKVPVSWAVNVTWB $.
+  $}
+
+  ${
+    pw1ndom3lem.x $e |- ( ph -> X e. ~P 1o ) $.
+    pw1ndom3lem.y $e |- ( ph -> Y e. ~P 1o ) $.
+    pw1ndom3lem.z $e |- ( ph -> Z e. ~P 1o ) $.
+    pw1ndom3lem.xy $e |- ( ph -> X =/= Y ) $.
+    pw1ndom3lem.xz $e |- ( ph -> X =/= Z ) $.
+    pw1ndom3lem.yz $e |- ( ph -> Y =/= Z ) $.
+    $( Lemma for ~ pw1ndom3 .  (Contributed by Jim Kingdon, 14-Feb-2026.) $)
+    pw1ndom3lem $p |- ( ph -> X = (/) ) $=
+      ( c0 wss wne wceq c1o elpwid df1o2 sseqtrdi adantr neeqtrd wa neeq1 mpbid
+      csn wb adantl necomd a1i pwntru syl2anc eqtr4d neneqd pm2.65da neqned ) A
+      BKUDZLBUOMBKNABOUOABOEPQRABOUOABOABONZCDNAUPUAZCKDUQCUOLCUOMCKNUQCOUOACOL
+      UPACOFPSQRUQCOUOUQOCUQBCMZOCMZAURUPHSUPURUSUEABOCUBUFUCUGOUONZUQQUHZTCUIU
+      JUQDUOLDUOMDKNUQDOUOADOLUPADOGPSQRUQDOUOUQODUQBDMZODMZAVBUPISUPVBVCUEABOD
+      UBUFUCUGVATDUIUJUKUQCDACDMUPJSULUMUNUTAQUHTBUIUJ $.
+  $}
+
+  ${
+    $d x y z $.
+    $( The powerset of ` 1o ` does not dominate ` 3o ` .  This is another way
+       of saying that ` ~P 1o ` does not have three elements (like ~ pwntru ).
+       (Contributed by Steven Nguyen and Jim Kingdon, 14-Feb-2026.) $)
+    pw1ndom3 $p |- -. 3o ~<_ ~P 1o $=
+      ( vx vy vz c3o c1o cpw cdom wbr wn wfal wi wne wrex 3dom wcel pw1ndom3lem
+      cv w3a wa rexlimdva c0 simp-4r simpllr simplr simpr1 simpr2 simpr3 necomd
+      eqtr4d pm2.21ddne ex mpd dfnot mpbir ) DEFZGHZIUPJKUPAQZBQZLZUQCQZLZURUTL
+      ZRZCUOMZBUOMZAUOMJABCUONUPVEJAUOUPUQUOOZSZVDJBUOVGURUOOZSZVCJCUOVIUTUOOZS
+      ZVCJVKVCSZJUQURVLUQUAURVLUQURUTUPVFVHVJVCUBZVGVHVJVCUCZVIVJVCUDZVKUSVAVBU
+      EZVKUSVAVBUFZVKUSVAVBUGZPVLURUQUTVNVMVOVLUQURVPUHVRVQPUIVPUJUKTTTULUPUMUN
+      $.
+  $}
+
+  $( The powerset of ` 1o ` is not infinite.  Since we cannot prove it is
+     finite (see ~ pw1fin ), this provides a concrete example of a set which we
+     cannot show to be finite or infinite, as seen another way at
+     ~ inffiexmid .  (Contributed by Jim Kingdon, 14-Feb-2026.) $)
+  pw1ninf $p |- -. _om ~<_ ~P 1o $=
+    ( com c1o cpw cdom wbr c3o pw1ndom3 wcel cfn 3onn nnfi fict mp2b domtr mpan
+    mto ) ABCZDEZFQDEZGFADEZRSFAHFIHTJFKFLMFAQNOP $.
 
   ${
     nnti.a $e |- ( ph -> A e. _om ) $.
@@ -203588,6 +204023,17 @@ $)
       SAYOTXFWNYNYPXAYMUWADYTTXRYTRZYAUVBYLUVTXRYTXTXBUWBYFUVEYKUVFUWBYEUVDFXSU
       WBYDUVCCJYBYCXRYTXGXCXDUWBYJUUBBJUWBYIUUAEXSYGYHXRYTXGXDXCXEXEXHXIXJXKXLX
       MUUKGHXSPGUGYRYQSUULGQXSXNGXSAXOXPXQ $.
+  $}
+
+  ${
+    $d x y $.
+    $( The powerset of ` 1o ` having decidable equality is equivalent to
+       excluded middle.  (Contributed by Jim Kingdon, 12-Feb-2026.) $)
+    pw1dceq $p |- ( EXMID <-> A. x e. ~P 1o A. y e. ~P 1o DECID x = y ) $=
+      ( wem cv wceq wdc c1o cpw wral exmidexmid ralrimivw wcel 1oex eqeq2 dcbid
+      wi pwid rspcv ax-mp ralimi pw1dc1 sylibr impbii ) CADZBDZEZFZBGHZIZAUHIZC
+      UIAUHCUGBUHUFJKKUJUDGEZFZAUHICUIULAUHGUHLUIULPGMQUGULBGUHUEGEUFUKUEGUDNOR
+      STAUAUBUC $.
   $}
 
 

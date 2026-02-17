@@ -1059,7 +1059,9 @@ middle by ~ ssfiexmid ).</p>
   <td>infinite</td>
   <td>` _om ~<_ A `</td>
   <td>We cannot conclude in general that a set is either finite
-  or infinite (see ~ inffiexmid )</td>
+  or infinite (see ~ inffiexmid ).  For example, ` ~P 1o ` is not
+  infinite, by ~ pw1ninf , but also cannot be shown to be finite
+  by ~ pw1fin .</td>
 </tr>
 
 <tr>
@@ -3574,6 +3576,12 @@ different ways - the set case has only one value which can map
   the case where we are not</td>
 </tr>
 
+<tr>
+  <td>brfvopabrbr</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof is not intuitionistic</td>
+</tr>
+
 <TR>
   <TD>fvmpti</TD>
   <TD>~ fvmptg</TD>
@@ -3826,6 +3834,12 @@ operation, as these are just a few examples).</TD>
   <td><i>none</i></td>
   <td>This theorem would appear to need set existence conditions
   on ` W ` and ` G `</td>
+</tr>
+
+<tr>
+  <td>fvmptopab</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof is not intuitionistic</td>
 </tr>
 
 <tr>
@@ -5037,9 +5051,9 @@ is conjectured that we could prove the special case
 
 <TR>
 <TD>rabfi</TD>
-<TD><I>none</I></TD>
+<TD>~ ssfirab</TD>
 <TD>Presumably the proof of ~ ssfiexmid could be adapted to show
-this implies excluded middle</TD>
+that rabfi implies excluded middle</TD>
 </TR>
 
 <TR>
@@ -17051,8 +17065,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>wlkn0</td>
   <td>~ wlkm</td>
-  <td>changes not empty to inhabited and adds a set existence
-  condition</td>
+  <td>changes not empty to inhabited</td>
 </tr>
 
 <tr>
@@ -17095,9 +17108,36 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>df-trls</td>
+  <td>upgr2wlk</td>
+  <td>~ upgr2wlkdc</td>
+  <td>changes the way we say that a set has two elements and
+  adds a decidability condition</td>
+</tr>
+
+<tr>
+  <td>trlsfval</td>
+  <td>~ trlsfvalg</td>
+</tr>
+
+<tr>
+  <td>upgrtrls</td>
   <td><i>none</i></td>
-  <td>depends on Walks ( df-wlks )</td>
+  <td>apparently would need to have decidability added, similar
+  to ~ upgriswlkdc</td>
+</tr>
+
+<tr>
+  <td>upgristrl</td>
+  <td><i>none</i></td>
+  <td>apparently would need to have decidability added, similar
+  to ~ upgriswlkdc</td>
+</tr>
+
+<tr>
+  <td>upgrf1istrl</td>
+  <td><i>none</i></td>
+  <td>apparently would need to have decidability added, similar
+  to ~ upgriswlkdc</td>
 </tr>
 
 <tr>
@@ -17111,7 +17151,8 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>we don't have a complete list of what this proof depends on,
   but here's a partial list of (direct or indirect) dependencies of the
-  set.mm proof: EulerPaths ( df-eupth ), and ccatalpha</td>
+  set.mm proof: EulerPaths ( df-eupth ), VtxDeg ( df-vtxdg ) ,
+  eulerpath , ccatalpha , ccatrcl1</td>
 </tr>
 
 <tr>
