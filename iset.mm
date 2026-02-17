@@ -197280,6 +197280,16 @@ $)
       BVBCDEFGHVMVNVOVPUPVFUNRZUOUSVLVEVGVQVRUQUTVA $.
   $}
 
+  ${
+    vtxdg0v.v $e |- V = ( Vtx ` G ) $.
+    $( The degree of a vertex in the null graph is zero (or anything else),
+       because there are no vertices.  (Contributed by AV, 11-Dec-2020.) $)
+    vtxdg0v $p |- ( ( G = (/) /\ U e. V ) -> ( ( VtxDeg ` G ) ` U ) = 0 ) $=
+      ( wceq wcel cvtxdg cfv cc0 cvtx eleq2i fveq2 vtxval0 eqtrdi eleq2d bitrid
+      c0 noel pm2.21i biimtrdi imp ) BQEZACFZABGHHIEZUBUCAQFZUDUCABJHZFUBUECUFA
+      DKUBUFQAUBUFQJHQBQJLMNOPUEUDARSTUA $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
