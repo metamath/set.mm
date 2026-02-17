@@ -197261,6 +197261,25 @@ $)
       TUTUMUNUOUPUQVTVFNVBVCVDIURVADCVKAVDVCBVCTVDTVKTUFUS $.
   $}
 
+  ${
+    $d G u x $.  $d V u x $.  $d W u $.  $d A x $.  $d I x $.  $d ph u $.
+    vtxdgf.v $e |- V = ( Vtx ` G ) $.
+    vtxdgfif.i $e |- I = ( iEdg ` G ) $.
+    vtxdgfif.a $e |- A = dom I $.
+    vtxdgfif.afi $e |- ( ph -> A e. Fin ) $.
+    vtxdgfif.v $e |- ( ph -> V e. Fin ) $.
+    vtxdgfif.g $e |- ( ph -> G e. UPGraph ) $.
+    $( The vertex degree function is a function from vertices to nonnegative
+       integers.  (Contributed by Jim Kingdon, 17-Feb-2026.) $)
+    vtxdgfif $p |- ( ph -> ( VtxDeg ` G ) : V --> NN0 ) $=
+      ( vu vx cv cfv wcel cn0 syl cfn adantr crab chash csn wceq cxad co cvtxdg
+      cupgr cmpt vtxdgfval caddc simpr vtxedgfi hashcl nn0red vtxlpfi nn0addcld
+      wa rexaddd eqeltrd fmpt3d ) ALELNZMNDOZPMBUAZUBOZVCVBUCUDMBUAZUBOZUEUFZQC
+      UGOZACUHPZVILEVHUIUDKMLBCDEUHFGHUJRAVBEPZURZVHVEVGUKUFQVLVEVGVLVEVLVDSPVE
+      QPVLMBVBCDEFGHABSPVKITZAESPVKJTZAVKULZAVJVKKTZUMVDUNRZUOVLVGVLVFSPVGQPVLM
+      BVBCDEFGHVMVNVOVPUPVFUNRZUOUSVLVEVGVQVRUQUTVA $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
