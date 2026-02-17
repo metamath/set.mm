@@ -197288,6 +197288,26 @@ $)
       ( wceq wcel cvtxdg cfv cc0 cvtx eleq2i fveq2 vtxval0 eqtrdi eleq2d bitrid
       c0 noel pm2.21i biimtrdi imp ) BQEZACFZABGHHIEZUBUCAQFZUDUCABJHZFUBUECUFA
       DKUBUFQAUBUFQJHQBQJLMNOPUEUDARSTUA $.
+
+    $d U x $.  $d G x $.  $d I x $.  $d U x $.  $d V x $.
+    vtxdg0e.i $e |- I = ( iEdg ` G ) $.
+    vtxdgfi0e.u $e |- ( ph -> U e. V ) $.
+    vtxdgfi0e.i $e |- ( ph -> I = (/) ) $.
+    vtxdgfi0e.v $e |- ( ph -> V e. Fin ) $.
+    vtxdgfi0e.g $e |- ( ph -> G e. UPGraph ) $.
+    $( The degree of a vertex in an empty graph is zero, because there are no
+       edges.  This is the base case for the induction for calculating the
+       degree of a vertex, for example in a K&ouml;nigsberg graph.
+       (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by Alexander van
+       der Vekens, 20-Dec-2017.)  (Revised by AV, 11-Dec-2020.)  (Revised by
+       AV, 22-Mar-2021.) $)
+    vtxdgfi0e $p |- ( ph -> ( ( VtxDeg ` G ) ` U ) = 0 ) $=
+      ( vx cfv cdm crab chash caddc cc0 c0 eqtrdi cvtxdg wcel csn wceq eqid cfn
+      cv co dmeqd dm0 0fi eqeltrdi vtxdgfifival rabeqdv rab0 hash0 oveq12d 00id
+      fveq2d eqtrd ) ABCUAMMBLUGDMZUBZLDNZOZPMZVABUCUDZLVCOZPMZQUHZRALVCBCDEFGV
+      CUEAVCSUFAVCSNSADSIUIUJTZUKULJHKUMAVIRRQUHRAVERVHRQAVESPMZRAVDSPAVDVBLSOS
+      AVBLVCSVJUNVBLUOTUSUPTAVHVKRAVGSPAVGVFLSOSAVFLVCSVJUNVFLUOTUSUPTUQURTUT
+      $.
   $}
 
 
