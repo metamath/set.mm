@@ -4971,6 +4971,7 @@
 "df-mul" is used by "mulcnsr".
 "df-mulr" is used by "mulridx".
 "df-mulr" is used by "mulrndx".
+"df-nfc" is used by "dfnfc".
 "df-ni" is used by "dmaddpi".
 "df-ni" is used by "dmmulpi".
 "df-ni" is used by "elni".
@@ -9075,6 +9076,7 @@
 "joincomALT" is used by "joincom".
 "jplem1" is used by "jplem2".
 "jplem2" is used by "jpi".
+"just" is used by "dfnfc".
 "kbass2" is used by "kbass6".
 "kbass5" is used by "kbass6".
 "kbfval" is used by "kbmul".
@@ -15773,6 +15775,7 @@ New usage of "df-mq" is discouraged (2 uses).
 New usage of "df-mr" is discouraged (2 uses).
 New usage of "df-mul" is discouraged (2 uses).
 New usage of "df-mulr" is discouraged (2 uses).
+New usage of "df-nfc" is discouraged (1 uses).
 New usage of "df-ni" is discouraged (7 uses).
 New usage of "df-nlfn" is discouraged (1 uses).
 New usage of "df-nmcv" is discouraged (1 uses).
@@ -17231,6 +17234,7 @@ New usage of "joincomALT" is discouraged (1 uses).
 New usage of "jpi" is discouraged (0 uses).
 New usage of "jplem1" is discouraged (1 uses).
 New usage of "jplem2" is discouraged (1 uses).
+New usage of "just" is discouraged (1 uses).
 New usage of "kbass1" is discouraged (0 uses).
 New usage of "kbass2" is discouraged (1 uses).
 New usage of "kbass3" is discouraged (0 uses).
@@ -19724,6 +19728,7 @@ Proof modification of "dfdif3OLD" is discouraged (137 steps).
 Proof modification of "dfeu" is discouraged (35 steps).
 Proof modification of "dffr2ALT" is discouraged (64 steps).
 Proof modification of "dfmo" is discouraged (44 steps).
+Proof modification of "dfnfc" is discouraged (32 steps).
 Proof modification of "dfsn2ALT" is discouraged (30 steps).
 Proof modification of "dfvd1imp" is discouraged (10 steps).
 Proof modification of "dfvd1impr" is discouraged (10 steps).
