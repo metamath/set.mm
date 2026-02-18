@@ -197389,6 +197389,37 @@ $)
       UWMUWNPXOXGXP $.
   $}
 
+  ${
+    $d A x y $.  $d G x $.  $d I u y $.  $d I x y $.  $d U u y $.  $d U x y $.
+    $d V x $.  $d ph y $.
+    vtxdlfgrval.v $e |- V = ( Vtx ` G ) $.
+    vtxdlfgrval.i $e |- I = ( iEdg ` G ) $.
+    vtxdlfgrval.a $e |- A = dom I $.
+    vtxdlfgrval.d $e |- D = ( VtxDeg ` G ) $.
+    vtxdumgrfival.g $e |- ( ph -> G e. UMGraph ) $.
+    vtxdumgrfival.u $e |- ( ph -> U e. V ) $.
+    vtxdumgrfival.a $e |- ( ph -> A e. Fin ) $.
+    vtxdumgrfival.v $e |- ( ph -> V e. Fin ) $.
+    $( The value of the vertex degree function for a multigraph.  (Contributed
+       by Alexander van der Vekens, 20-Dec-2017.)  (Revised by AV,
+       23-Feb-2021.) $)
+    vtxdumgrfival $p |- ( ph
+        -> ( D ` U ) = ( # ` { x e. A | U e. ( I ` x ) } ) ) $=
+      ( vy cfv wceq c0 vu cv wcel crab chash caddc co cvtxdg fveq1i cumgr cupgr
+      csn cc0 umgrupgr syl vtxdgfifival eqtrid fveqeq2 cbvrabv wss c1o cen wral
+      wbr wi wex sneq eqeq2d spcegv en1 imbitrrdi ralrimivw ss2rab sylibr fveq2
+      breq1d c2o cdom cpw wf cdm umgrislfupgrdom sylib simprd feq2i lfgrnloopen
+      wa eqtr3id sseqtrd ss0 fveq2d hash0 eqtrdi oveq2d cfn cn0 vtxedgfi hashcl
+      eqid nn0cnd addridd 3eqtrd ) AEDRZEBUBZGRZUCBCUDZUERZXEEULZSZBCUDZUERZUFU
+      GZXGUMUFUGXGAXCEFUHRZRXLEDXMLUIABCEFGHIJKOPNAFUJUCZFUKUCZMFUNUOZUPUQAXKUM
+      XGUFAXKTUERUMAXJTUEAXJQUBZGRZXHSZQCUDZTXIXSBQCXDXQXHGURUSAXTTUTXTTSAXTXRV
+      AVBVDZQCUDZTAXSYAVEZQCVCXTYBUTAYCQCAXSXRUAUBZULZSZUAVFZYAAEHUCXSYGVENYFXS
+      UAEHYDESYEXHXRYDEVGVHVIUOUAXRVJVKVLXSYAQCVMVNAYBXEVAVBVDZBCUDZTYHYABQCXDX
+      QSXEXRVAVBXDXQGVOVPUSACVQXDVRVDBHVSUDZGVTZYITSAGWAZYJGVTZYKAXOYMAXNXOYMWG
+      MBFGHIJWBWCWDCYLYJGKWEVNBCYJFGHJKYJWSWFUOWHWIXTWJUOUQWKWLWMWNAXGAXGAXFWOU
+      CXGWPUCABCEFGHIJKOPNXPWQXFWRUOWTXAXB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
