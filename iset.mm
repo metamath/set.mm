@@ -197310,6 +197310,25 @@ $)
       $.
   $}
 
+  ${
+    $d H u x $.  $d G u x $.  $d ph u x $.
+    vtxdeqd.g $e |- ( ph -> G e. X ) $.
+    vtxdeqd.h $e |- ( ph -> H e. Y ) $.
+    vtxdeqd.v $e |- ( ph -> ( Vtx ` H ) = ( Vtx ` G ) ) $.
+    vtxdeqd.i $e |- ( ph -> ( iEdg ` H ) = ( iEdg ` G ) ) $.
+    $( Equality theorem for the vertex degree:  If two graphs are structurally
+       equal, their vertex degree functions are equal.  (Contributed by AV,
+       26-Feb-2021.) $)
+    vtxdeqd $p |- ( ph -> ( VtxDeg ` H ) = ( VtxDeg ` G ) ) $=
+      ( vu vx cvtx cfv cv wcel crab chash wceq cxad eqid cdm csn co cmpt cvtxdg
+      ciedg dmeqd fveq1d eleq2d rabeqbidv fveq2d eqeq1d mpteq12dv vtxdgfval syl
+      oveq12d 3eqtr4d ) AJCLMZJNZKNZCUFMZMZOZKVAUAZPZQMZVBUSUBZRZKVDPZQMZSUCZUD
+      ZJBLMZUSUTBUFMZMZOZKVNUAZPZQMZVOVGRZKVQPZQMZSUCZUDZCUEMZBUEMZAJURVKVMWCHA
+      VFVSVJWBSAVEVRQAVCVPKVDVQAVAVNIUGZAVBVOUSAUTVAVNIUHZUIUJUKAVIWAQAVHVTKVDV
+      QWGAVBVOVGWHULUJUKUPUMACEOWEVLRGKJVDCVAUREURTVATVDTUNUOABDOWFWDRFKJVQBVNV
+      MDVMTVNTVQTUNUOUQ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
