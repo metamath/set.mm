@@ -118238,6 +118238,17 @@ $)
       XIXGYSYTUUAYQUUBYQCABUUCUUD $.
   $}
 
+  $( Reverse closure of a concatenation:  If the concatenation of two arbitrary
+     words is a word over an alphabet then the symbols of the first word belong
+     to the alphabet.  (Contributed by AV, 3-Mar-2021.) $)
+  ccatrcl1 $p |- ( ( A e. Word X /\ B e. Word Y
+                     /\ ( W = ( A ++ B ) /\ W e. Word S ) )
+                   -> A e. Word S ) $=
+    ( cword wcel cconcat co wceq wa eleq1 cvv wb wrdv ccatalpha sylan9bbr simpl
+    syl2an biimtrdi expimpd 3impia ) AEGHZBFGHZDABIJZKZDCGZHZLAUHHZUDUELZUGUIUJ
+    UKUGLUIUJBUHHZLZUJUGUIUFUHHZUKUMDUFUHMUDANGZHBUOHUNUMOUEEAPFBPABCQTRUJULSUA
+    UBUC $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
