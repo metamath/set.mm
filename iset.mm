@@ -198316,6 +198316,28 @@ $)
                        /\ { ( lastS ` w ) , ( w ` 0 ) } e. ( Edg ` g ) ) } ) $.
   $}
 
+  ${
+    $d E g $.  $d G g i w $.  $d V g w $.
+    clwwlk.v $e |- V = ( Vtx ` G ) $.
+    clwwlk.e $e |- E = ( Edg ` G ) $.
+    $( The set of closed walks (in an undirected graph) as words over the set
+       of vertices.  (Contributed by Alexander van der Vekens, 20-Mar-2018.)
+       (Revised by AV, 24-Apr-2021.) $)
+    clwwlkg $p |- ( G e. W ->
+        ( ClWWalks ` G ) = { w e. Word V | ( w =/= (/)
+          /\ A. i e. ( 0 ..^ ( ( # ` w ) - 1 ) )
+            { ( w ` i ) , ( w ` ( i + 1 ) ) } e. E
+          /\ { ( lastS ` w ) , ( w ` 0 ) } e. E ) } ) $=
+      ( vg wcel cv cfv c1 co cpr cedg cc0 cvtx cvv wceq c0 wne caddc chash cmin
+      cfzo wral clsw w3a cword cclwwlk df-clwwlk fveq2 eqtr4di wrdeq syl eleq2d
+      crab ralbidv 3anbi23d rabeqbidv elex vtxex eqeltrid wrdexg rabexg fvmptd3
+      3syl ) DFJZIDAKZUAUBZBKZVJLVLMUCNVJLOZIKZPLZJZBQVJUDLMUENUFNZUGZVJUHLQVJL
+      OZVOJZUIZAVNRLZUJZURVKVMCJZBVQUGZVSCJZUIZAEUJZURZSUKSAIBULVNDTZWAWGAWCWHW
+      JWBETWCWHTWJWBDRLZEVNDRUMGUNWBEUOUPWJVRWEVTWFVKWJVPWDBVQWJVOCVMWJVODPLCVN
+      DPUMHUNZUQUSWJVOCVSWLUQUTVADFVBVIESJWHSJWISJVIEWKSGDFVCVDESVEWGAWHSVFVHVG
+      $.
+  $}
+
 
 $(
 ###############################################################################
