@@ -99978,6 +99978,15 @@ $)
       QNTUAUBOPR $.
   $}
 
+  $( Membership in an earlier upper set of integers.  (Contributed by Thierry
+     Arnoux, 8-Oct-2018.) $)
+  eluzmn $p |- ( ( M e. ZZ /\ N e. NN0 ) -> M e. ( ZZ>= ` ( M - N ) ) ) $=
+    ( cz wcel cn0 wa cmin co cle wbr cuz simpl simpr nn0zd zsubcld caddc nn0red
+    cfv zred recnd readdcld cr nn0addge1 sylancom lesub1dd pncand breqtrd eluz2
+    syl3anbrc ) ACDZBEDZFZABGHZCDUJUMAIJAUMKRDULABUJUKLZULBUJUKMZNOUNULUMABPHZB
+    GHAIULAUPBULAUNSZULABUQULBUOQZUAURUJUKAUBDAUPIJUQABUCUDUEULABULAUQTULBURTUF
+    UGUMAUHUI $.
+
   ${
     eluz.1 $e |- M e. ZZ $.
     $( Membership in an upper set of integers.  (Contributed by NM,
