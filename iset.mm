@@ -198393,6 +198393,20 @@ $)
       ICUQAUJULUJTUQTUEUFUGUH $.
   $}
 
+  ${
+    $d G i $.  $d W i $.
+    $( A closed walk of length 1 is a loop.  (Contributed by AV,
+       24-Apr-2021.) $)
+    clwwlk1loop $p |- ( ( W e. ( ClWWalks ` G ) /\ ( # ` W ) = 1 )
+                         -> { ( W ` 0 ) , ( W ` 0 ) } e. ( Edg ` G ) ) $=
+      ( vi cclwwlk cfv wcel chash c1 wceq cc0 cpr cedg cvtx cword c0 wa co eqid
+      wi imp wne cv caddc cmin cfzo wral clsw w3a isclwwlk preq1d eleq1d biimpd
+      lsw1 ex com23 adantr 3adant2 sylbi ) BADEFZBGEZHIZJBEZVBKZALEZFZUSBAMEZNF
+      ZBOUAZPZCUBZBEVJHUCQBEKVDFCJUTHUDQUEQUFZBUGEZVBKZVDFZUHVAVESZCVDAVFBVFRVD
+      RUIVIVNVOVKVIVNVOVGVNVOSVHVGVAVNVEVGVAVNVESVGVAPZVNVEVPVMVCVDVPVLVBVBVFBU
+      MUJUKULUNUOUPTUQURT $.
+  $}
+
 
 $(
 ###############################################################################
