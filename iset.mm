@@ -198281,6 +198281,41 @@ $)
       VBCGDVCVD $.
   $}
 
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Closed walks as words
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Closed walks as words
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $c ClWWalks $.
+
+  $( Extend class notation with closed walks (in an undirected graph) as word
+     over the set of vertices. $)
+  cclwwlk $a class ClWWalks $.
+
+  ${
+    $d g i w $.
+    $( Define the set of all closed walks (in an undirected graph) as words
+       over the set of vertices.  Such a word corresponds to the sequence p(0)
+       p(1) ... p(n-1) of the vertices in a closed walk p(0) e(f(1)) p(1)
+       e(f(2)) ... p(n-1) e(f(n)) p(n)=p(0) as defined elsewhere.  Notice that
+       the word does not contain the terminating vertex p(n) of the walk,
+       because it is always equal to the first vertex of the closed walk.
+       (Contributed by Alexander van der Vekens, 20-Mar-2018.)  (Revised by AV,
+       24-Apr-2021.) $)
+    df-clwwlk $a |- ClWWalks = ( g e. _V |-> { w e. Word ( Vtx ` g ) |
+                     ( w =/= (/) /\ A. i e. ( 0 ..^ ( ( # ` w ) - 1 ) )
+                               { ( w ` i ) , ( w ` ( i + 1 ) ) } e. ( Edg ` g )
+                       /\ { ( lastS ` w ) , ( w ` 0 ) } e. ( Edg ` g ) ) } ) $.
+  $}
+
 
 $(
 ###############################################################################
@@ -200553,6 +200588,9 @@ htmldef "Walks" as "Walks";
 htmldef "Trails" as "Trails";
   althtmldef "Trails" as "Trails";
   latexdef "Trails" as "\mathrm{Trails}";
+htmldef "ClWWalks" as 'ClWWalks';
+  althtmldef "ClWWalks" as 'ClWWalks';
+  latexdef "ClWWalks" as "\mathrm{ClWWalks}";
 
 /* htmldef, althtmldef, latexdef for mathboxes */
 /* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
