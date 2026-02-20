@@ -198381,6 +198381,18 @@ $)
     wbr lennncl nngt0d 3adant1 syl ) BACDEAFEZBAGDZHEZBIJZKLBMDZNRZAUDBUDOPUEUF
     UHUCUEUFQUGUDBSTUAUB $.
 
+  ${
+    $d G i w $.
+    $( Closed walks (represented by words) are words.  (Contributed by
+       Alexander van der Vekens, 25-Mar-2018.)  (Revised by AV,
+       25-Apr-2021.) $)
+    clwwlksswrd $p |- ( ClWWalks ` G ) C_ Word ( Vtx ` G ) $=
+      ( vw vi cclwwlk cfv cvtx cword cv wcel c0 wne wa c1 caddc co cpr cedg cc0
+      chash eqid cmin cfzo wral clsw isclwwlk simp1bi simpld ssriv ) BADEZAFEZG
+      ZBHZUIIZULUKIZULJKZUMUNUOLCHZULEUPMNOULEPAQEZICRULSEMUAOUBOUCULUDERULEPUQ
+      ICUQAUJULUJTUQTUEUFUGUH $.
+  $}
+
 
 $(
 ###############################################################################
