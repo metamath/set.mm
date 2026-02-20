@@ -198493,6 +198493,30 @@ $)
       UPUXJVVQUXFUVDUWCUXJVVQOUVEUWDUVDUWCHUXIVVKIUGUVBUVBABUULUUMUUNVWDWEYIUVF
       UVNMTFGZUWLXQGZVWRUXHOUWEUVDVWSUVEUVDVWAVWSUYKUVNUUOUUPSUWEUWKXAGVWTUVBBX
       BUWKUUQRMUVNUWLUURXTWEUUSUUTVLUVA $.
+
+    $( The concatenation of two words representing closed walks anchored at the
+       same vertex represents a closed walk.  The resulting walk is a "double
+       loop", starting at the common vertex, coming back to the common vertex
+       by the first walk, following the second walk and finally coming back to
+       the common vertex again.  (Contributed by AV, 23-Apr-2022.) $)
+    clwwlkccat $p |- ( ( A e. ( ClWWalks ` G ) /\ B e. ( ClWWalks ` G )
+                         /\ ( A ` 0 ) = ( B ` 0 ) )
+                       -> ( A ++ B ) e. ( ClWWalks ` G ) ) $=
+      ( vi vj cfv wcel c0 wne wa c1 co cpr cc0 chash cmin cfzo wral w3a wceq cv
+      cvtx cword caddc cedg clsw cconcat cclwwlk simp1l ccatcl wb ccat0 adantlr
+      simpr biimtrdi necon3d impr 3ad2antr1 3ad2antl1 jca 3adant3 clwwlkccatlem
+      syl2an simpl1l simpr1l simpr1r lswccatn0lsw syl3anc clt wbr cfn fihashgt0
+      wrdfin sylan 3ad2ant1 adantr ccatfv0 simp3 eqtrd preq12d simp23 3jca eqid
+      eqeltrd isclwwlk biid 3anbi123i 3imtr4i ) ACUBFZUCZGZAHIZJZDUAZAFWNKUDLZA
+      FMCUEFZGDNAOFZKPLQLRZAUFFNAFZMWPGZSZBWJGZBHIZJZEUAZBFXEKUDLBFMWPGENBOFKPL
+      QLRZBUFFZNBFZMZWPGZSZWSXHTZSZABUGLZWJGZXNHIZJZWNXNFWOXNFMWPGDNXNOFKPLQLRZ
+      XNUFFZNXNFZMZWPGZSACUHFZGZBYCGZXLSXNYCGXMXQXRYBXAXKXQXLXAXKJZXOXPXAWKXBXO
+      XKWKWLWRWTUIXBXCXFXJUIWIABUJVCWMWRXKXPWTWMXFXDXPXJWMXBXCXPWMXBJZXNHBHYGXN
+      HTZAHTZBHTZJZYJWKXBYHYKUKWLWIWIABULUMYIYJUNUOUPUQURUSUTVAABDECVBXMYAXIWPX
+      MXSXGXTXHXAXKXSXGTZXLYFWKXBXCYLWKWLWRWTXKVDZXBXCXFXJXAVEZXBXCXFXJXAVFABWI
+      VGVHVAXMXTWSXHXAXKXTWSTZXLYFWKXBNWQVIVJZYOYMYNXAYPXKWMWRYPWTWKAVKGWLYPWIA
+      VMAVLVNVOVPABWIVQVHVAXAXKXLVRVSVTXAXDXFXJXLWAWDWBYDXAYEXKXLXLDWPCWIAWIWCZ
+      WPWCZWEEWPCWIBYQYRWEXLWFWGDWPCWIXNYQYRWEWH $.
   $}
 
 
