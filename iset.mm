@@ -198336,6 +198336,26 @@ $)
       JWBETWCWHTWJWBDRLZEVNDRUMGUNWBEUOUPWJVRWEVTWFVKWJVPWDBVQWJVOCVMWJVODPLCVN
       DPUMHUNZUQUSWJVOCVSWLUQUTVADFVBVIESJWHSJWISJVIEWKSGDFVCVDESVEWGAWHSVFVHVG
       $.
+
+    $d E w $.  $d W i w $.
+    $( Properties of a word to represent a closed walk (in an undirected
+       graph).  (Contributed by Alexander van der Vekens, 20-Mar-2018.)
+       (Revised by AV, 24-Apr-2021.) $)
+    isclwwlk $p |- ( W e. ( ClWWalks ` G ) <-> ( ( W e. Word V /\ W =/= (/) )
+                                 /\ A. i e. ( 0 ..^ ( ( # ` W ) - 1 ) )
+                                    { ( W ` i ) , ( W ` ( i + 1 ) ) } e. E
+                                 /\ { ( lastS ` W ) , ( W ` 0 ) } e. E ) ) $=
+      ( vg vw cfv wcel c0 cv c1 co cpr cc0 chash w3a wa cclwwlk cword wne caddc
+      cmin cfzo wral clsw cvv cedg cvtx df-clwwlk mptrcl fstwrdne syl 3ad2antr1
+      crab 1vgrex clwwlkg eleq2d neeq1 fveq2 oveq1d oveq2d fveq1 preq12d eleq1d
+      raleqbidv 3anbi123d elrab bitrdi 3anass anass bicomi anbi2i 3bitri bitr4i
+      wceq pm5.21nii ) ECUAJZKZEDUBZKZELUCZAMZEJZWENUDOZEJZPZBKZAQERJZNUEOZUFOZ
+      UGZEUHJZQEJZPZBKZSZTZWCWDTZWNWRSZWACUIKZWTHUIIMZLUCZWEXDJZWGXDJZPZHMZUJJZ
+      KAQXDRJZNUEOZUFOZUGXDUHJZQXDJZPZXJKSIXIUKJUBUQUAECIHAULUMWCWNWDXCWRXAWPDK
+      XCDEUNCWPDFURUOUPXCWAEXEXHBKZAXMUGZXPBKZSZIWBUQZKWTXCVTYAEIABCDUIFGUSUTXT
+      WSIEWBXDEVRZXEWDXRWNXSWRXDELVAYBXQWJAXMWMYBXLWLQUFYBXKWKNUEXDERVBVCVDYBXH
+      WIBYBXFWFXGWHWEXDEVEWGXDEVEVFVGVHYBXPWQBYBXNWOXOWPXDEUHVBQXDEVEVFVGVIVJVK
+      VSXBXAWNWRTZTWCWDYCTZTWTXAWNWRVLWCWDYCVMYDWSWCWSYDWDWNWRVLVNVOVPVQ $.
   $}
 
 
