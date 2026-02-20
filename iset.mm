@@ -198358,6 +198358,21 @@ $)
       VSXBXAWNWRTZTWCWDYCTZTWTXAWNWRVLWCWDYCVMYDWSWCWSYDWDWNWRVLVNVOVPVQ $.
   $}
 
+  ${
+    $d G i $.  $d W i $.  $d g i w $.
+    clwwlkbp.v $e |- V = ( Vtx ` G ) $.
+    $( Basic properties of a closed walk (in an undirected graph) as word.
+       (Contributed by Alexander van der Vekens, 15-Mar-2018.)  (Revised by AV,
+       24-Apr-2021.) $)
+    clwwlkbp $p |- ( W e. ( ClWWalks ` G )
+                      -> ( G e. _V /\ W e. Word V /\ W =/= (/) ) ) $=
+      ( vg vw vi cclwwlk cfv wcel cvv cword c0 wne w3a cv c1 co cpr cc0 wa cedg
+      caddc chash cmin cfzo wral clsw cvtx crab df-clwwlk eqid isclwwlk simp1bi
+      mptrcl 3anass sylanbrc ) CAHIJZAKJZCBLJZCMNZUAZUSUTVAOEKFPZMNGPZVCIVDQUCR
+      ZVCISEPZUBIZJGTVCUDIQUERUFRUGVCUHITVCISVGJOFVFUIILUJHCAFEGUKUOURVBVDCIVEC
+      ISAUBIZJGTCUDIQUERUFRUGCUHITCISVHJGVHABCDVHULUMUNUSUTVAUPUQ $.
+  $}
+
 
 $(
 ###############################################################################
