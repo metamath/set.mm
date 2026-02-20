@@ -92,8 +92,50 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+15-Feb-26 nelrnmpt  [same]      Moved from GS's mathbox to main set.mm
+15-Feb-26 elmapssresd [same]    Moved from SN's mathbox to main set.mm
+15-Feb-26 xrgtned   [same]      Moved from GS's mathbox to main set.mm
+15-Feb-26 pwselbasr [same]      Moved from SN's mathbox to main set.mm
+15-Feb-26 pwsgprod  [same]      Moved from SN's mathbox to main set.mm
+15-Feb-26 asclelbas [same]      Moved from ZW's mathbox to main set.mm
+15-Feb-26 mplascl0  [same]      Moved from SN's mathbox to main set.mm
+15-Feb-26 mplascl1  [same]      Moved from SN's mathbox to main set.mm
+15-Feb-26 evlsval3  [same]      Moved from SN's mathbox to main set.mm
+15-Feb-26 evlsvval  [same]      Moved from SN's mathbox to main set.mm
+15-Feb-26 evlsvvvallem [same]   Moved from SN's mathbox to main set.mm
+15-Feb-26 evlsvvvallem2 [same]  Moved from SN's mathbox to main set.mm
+15-Feb-26 evlsvvval [same]      Moved from SN's mathbox to main set.mm
+15-Feb-26 evlcl     [same]      Moved from SN's mathbox to main set.mm
+15-Feb-26 evladdval [same]      Moved from SN's mathbox to main set.mm
+15-Feb-26 evlmulval [same]      Moved from SN's mathbox to main set.mm
+15-Feb-26 coe1id    [same]      Moved from AV mathbox to main set.mm
+11-Feb-26 4d2e2     4div2e2
+24-Jan-26 setinds2  [same]      Moved from SF's mathbox to main set.mm
+24-Jan-26 setinds2f [same]      Moved from SF's mathbox to main set.mm
+24-Jan-26 setinds   [same]      Moved from SF's mathbox to main set.mm
 18-Jan-26 elprn1    [same]      Moved from GS's mathbox to main set.mm
 18-Jan-26 elprn2    [same]      Moved from GS's mathbox to main set.mm
+17-Jan-26 upwrdfi   chnflenfi   Moved from ET's mathbox to main set.mm and
+                                ported to relations other than less-than
+17-Jan-26 upwordsseti chnexg    Moved from ET's mathbox to main set.mm and
+                                ported to relations other than less-than
+17-Jan-26 upwordnul nulchn      Moved from ET's mathbox to main set.mm and
+                                ported to relations other than less-than
+17-Jan-26 df-chn    [same]      Moved from TA's mathbox to main set.mm
+17-Jan-26 ischn     [same]      Moved from TA's mathbox to main set.mm
+17-Jan-26 chnwrd    [same]      Moved from TA's mathbox to main set.mm
+17-Jan-26 chnltm1   [same]      Moved from TA's mathbox to main set.mm
+17-Jan-26 pfxchn    [same]      Moved from TA's mathbox to main set.mm
+17-Jan-26 fzom1ne1  [same]      Moved from TA's mathbox to main set.mm
+17-Jan-26 fzone1    [same]      Moved from TA's mathbox to main set.mm
+17-Jan-26 s1chn     [same]      Moved from TA's mathbox to main set.mm
+17-Jan-26 chnind    [same]      Moved from TA's mathbox to main set.mm
+17-Jan-26 ccatdmss  [same]      Moved from TA's mathbox to main set.mm
+17-Jan-26 chnub     [same]      Moved from TA's mathbox to main set.mm
+17-Jan-26 chnlt     [same]      Moved from TA's mathbox to main set.mm
+17-Jan-26 chnso     [same]      Moved from TA's mathbox to main set.mm
+17-Jan-26 chnccats1 [same]      Moved from TA's mathbox to main set.mm
+17-Jan-26 elfzodif0 [same]      Moved from TA's mathbox to main set.mm
 10-Jan-26 xrltnled  [same]      Moved from GS's mathbox to main set.mm
 28-Dec-25 addlenrevpfx --       deleted; use addlenpfx plus addcom
 23-Dec-25 isomnd    [same]      Moved from TA's mathbox to main set.mm
