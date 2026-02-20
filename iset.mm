@@ -198373,6 +198373,14 @@ $)
       ISAUBIZJGTCUDIQUERUFRUGCUHITCISVHJGVHABCDVHULUMUNUSUTVAUPUQ $.
   $}
 
+  $( There is no empty closed walk (i.e. a closed walk without any edge)
+     represented by a word of vertices.  (Contributed by Alexander van der
+     Vekens, 15-Sep-2018.)  (Revised by AV, 24-Apr-2021.) $)
+  clwwlkgt0 $p |- ( W e. ( ClWWalks ` G ) -> 0 < ( # ` W ) ) $=
+    ( cclwwlk cfv wcel cvv cvtx cword c0 wne w3a cc0 chash clt eqid clwwlkbp wa
+    wbr lennncl nngt0d 3adant1 syl ) BACDEAFEZBAGDZHEZBIJZKLBMDZNRZAUDBUDOPUEUF
+    UHUCUEUFQUGUDBSTUAUB $.
+
 
 $(
 ###############################################################################
