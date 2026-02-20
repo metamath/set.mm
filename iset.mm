@@ -116487,6 +116487,12 @@ $)
       RVSXBWJXFHZWRYDXBWBWQFGZYIWRVPYBXBWTYJXNWQVQSBWQVRRVSVDVGVTVT $.
   $}
 
+  $( The cardinality of a finite nonempty set is greater than zero.
+     (Contributed by Thierry Arnoux, 2-Mar-2017.) $)
+  fihashgt0 $p |- ( ( A e. Fin /\ A =/= (/) ) -> 0 < ( # ` A ) ) $=
+    ( cfn wcel c0 wne wa chash cfv cn hashnncl biimpar nngt0d ) ABCZADEZFAGHZMO
+    ICNAJKL $.
+
   $( 1 is an element of the finite set of sequential nonnegative integers
      bounded by the size of a nonempty finite set.  (Contributed by AV,
      9-May-2020.) $)
