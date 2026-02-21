@@ -198519,6 +198519,23 @@ $)
       WPWCZWEEWPCWIBYQYRWEXLWFWGDWPCWIXNYQYRWEWH $.
   $}
 
+  $( A closed walk in a multigraph has a length of at least 2 (because it
+     cannot have a loop).  (Contributed by Alexander van der Vekens,
+     16-Sep-2018.)  (Revised by AV, 24-Apr-2021.) $)
+  umgrclwwlkge2 $p |- ( G e. UMGraph -> ( P e. ( ClWWalks ` G )
+                                           -> 2 <_ ( # ` P ) ) ) $=
+    ( cumgr wcel cclwwlk cfv c2 wa cc0 wne c1 w3a c0 eqid adantl wi wceq syl cz
+    expcom chash cle wbr cn0 cvv cword clwwlkbp lencl 3ad2ant2 cfn wb fihasheq0
+    cvtx wrdfin bicomd necon3bid biimpd a1i 3imp wn wo nn0zd 1z sylancl exmiddc
+    zdceq cedg clwwlk1loop umgredgne eqneqall mpsyl syl6 com23 imp4c neqne jaoi
+    wdc cpr a1d mpcom 3jca mpdan nn0n0n1ge2 ex ) BCDZABEFDZGAUAFZUBUCZWEWFHZWGU
+    DDZWGIJZWGKJZLZWHWIBUEDZABUMFZUFDZAMJZLZWMWFWRWEBWOAWONUGOWIWRHZWJWKWLWRWJW
+    IWPWNWJWQWOAUHUIOZWRWKWIWNWPWQWKWPWQWKPPWNWPWQWKWPAMWGIWPWGIQZAMQZWPAUJDXAX
+    BUKWOAUNAULRUOUPUQURUSOWGKQZXCUTZVAZWSWLWSXCVQZXEWSWGSDKSDXFWSWGWTVBVCWGKVF
+    VDXCVERXCWSWLPXDXCWEWFWRWLXCWFWEWRWLPZXCWFIAFZXHVRBVGFZDZWEXGPWFXCXJBAVHTWE
+    XJXGXHXHQWEXJHXHXHJXGXHNXIBXHXHXINVIXGXHXHVJVKTVLVMVNXDWLWSWGKVOVSVPVTWAWBW
+    GWCRWD $.
+
 
 $(
 ###############################################################################
