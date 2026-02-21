@@ -92,6 +92,8 @@ make a github issue.)
 
 DONE:
 Date      Old       New         Notes
+19-Feb-26 unifi3    [same]      Moved from TA's mathbox to main set.mm
+19-Feb-26 imafi2    [same]      Moved from TA's mathbox to main set.mm
 24-Jan-26 setinds2  [same]      Moved from SF's mathbox to main set.mm
 24-Jan-26 setinds2f [same]      Moved from SF's mathbox to main set.mm
 24-Jan-26 setinds   [same]      Moved from SF's mathbox to main set.mm
