@@ -5266,8 +5266,9 @@ that rabfi implies excluded middle</TD>
 <tr>
   <td>mptfi</td>
   <td><i>none</i></td>
-  <td>the set.mm proof depends on ssfi and additional conditions
-  would be needed to prove something like this</td>
+  <td>Additional conditions are needed. For some situations
+  ~ dmmptd plus ~ fundmeng might get you most of the way
+  there.</td>
 </tr>
 
 <TR>
@@ -9514,8 +9515,10 @@ or not.</TD>
 <TR>
   <TD>hashfun</TD>
   <TD><I>none</I></TD>
-  <TD>Presumably provable but the set.mm proof relies on excluded
-  middle and undif.</TD>
+  <TD>The forward direction follows easily from ~ fihashfn plus
+  ~ fundmfi .  The reverse direction would appear to need decidable
+  equality, not of elements of ` F ` (which we have), but of
+  first elements of ordered pairs contained in ` F ` .</TD>
 </TR>
 
 <TR>
@@ -9774,18 +9777,6 @@ or not.</TD>
 </tr>
 
 <tr>
-  <td>ccatalpha</td>
-  <td><i>none</i></td>
-  <td>presumably provable but the set.mm proof uses mptfi and hashfun</td>
-</tr>
-
-<tr>
-  <td>ccatrcl1</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses ccatalpha</td>
-</tr>
-
-<tr>
   <td>ids1</td>
   <td>~ s1val , ~ s1prc</td>
   <td>it is likely not possible to combine the set and proper class
@@ -9824,7 +9815,7 @@ or not.</TD>
 <tr>
   <td>ccats1alpha</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses ccatalpha</td>
+  <td>may be possible now that we have ~ ccatalpha</td>
 </tr>
 
 <tr>
@@ -17151,8 +17142,8 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>we don't have a complete list of what this proof depends on,
   but here's a partial list of (direct or indirect) dependencies of the
-  set.mm proof: EulerPaths ( df-eupth ), VtxDeg ( df-vtxdg ) ,
-  eulerpath , ccatalpha , ccatrcl1</td>
+  set.mm proof: ClWWalks , ClWWalksN , ClWWalksNOn including clwwlknonccat ,
+  EulerPaths ( df-eupth ), various VtxDeg theorems, eulerpath</td>
 </tr>
 
 <tr>
