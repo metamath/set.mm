@@ -198883,6 +198883,32 @@ $)
 
 
 $(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Closed walks of a fixed length as words
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $c ClWWalksN $.
+
+  $( Extend class notation with closed walks (in an undirected graph) of a
+     fixed length as word over the set of vertices. $)
+  cclwwlkn $a class ClWWalksN $.
+
+  ${
+    $d g n w $.
+    $( Define the set of all closed walks of a fixed length ` n ` as words over
+       the set of vertices in a graph ` g ` .  If ` 0 < n ` , such a word
+       corresponds to the sequence p(0) p(1) ... p(n-1) of the vertices in a
+       closed walk p(0) e(f(1)) p(1) e(f(2)) ... p(n-1) e(f(n)) p(n)=p(0) .
+       For ` n = 0 ` , the set is empty, see ~ clwwlkn0 .  (Contributed by
+       Alexander van der Vekens, 20-Mar-2018.)  (Revised by AV, 24-Apr-2021.)
+       (Revised by AV, 22-Mar-2022.) $)
+    df-clwwlkn $a |- ClWWalksN = ( n e. NN0 , g e. _V |->
+                                 { w e. ( ClWWalks ` g ) | ( # ` w ) = n } ) $.
+  $}
+
+
+$(
 ###############################################################################
   GUIDES AND MISCELLANEA
 ###############################################################################
@@ -201159,6 +201185,9 @@ htmldef "Trails" as "Trails";
 htmldef "ClWWalks" as 'ClWWalks';
   althtmldef "ClWWalks" as 'ClWWalks';
   latexdef "ClWWalks" as "\mathrm{ClWWalks}";
+htmldef "ClWWalksN" as ' ClWWalksN ';
+  althtmldef "ClWWalksN" as ' ClWWalksN ';
+  latexdef "ClWWalksN" as "\mathrm{ClWWalksN}";
 
 /* htmldef, althtmldef, latexdef for mathboxes */
 /* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
