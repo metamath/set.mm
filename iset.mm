@@ -197202,8 +197202,8 @@ $)
     vtxdgfifival.v $e |- ( ph -> V e. Fin ) $.
     vtxdgfifival.u $e |- ( ph -> U e. V ) $.
     vtxdgfifival.g $e |- ( ph -> G e. UPGraph ) $.
-    $( The number of edges from a given vertex is finite.  (Contributed by Jim
-       Kingdon, 16-Feb-2026.) $)
+    $( In a finite graph, the number of edges from a given vertex is finite.
+       (Contributed by Jim Kingdon, 16-Feb-2026.) $)
     vtxedgfi $p |- ( ph -> { x e. A | U e. ( I ` x ) } e. Fin ) $=
       ( vr vp vq cv wcel wral cfv wdc wa adantr simprl simprr fidceq ralrimivva
       weq cfn syl3anc cupgr cdm wss eleq2i biimpi upgrss syl2an wfn c1o cen wbr
@@ -197215,8 +197215,8 @@ $)
       WTWBUTVAVBWBVCVAVBVOBGVDVEFBFEGHIVFVGCWTFJVHVIVJAWJVKCFWEEGHIVLUKVMVNWHWI
       OBCOBUIZWGWDXDWFWCDWEWBFVPVQVRVSVTWA $.
 
-    $( The number of loops from a given vertex is finite.  (Contributed by Jim
-       Kingdon, 16-Feb-2026.) $)
+    $( In a finite graph, the number of loops from a given vertex is finite.
+       (Contributed by Jim Kingdon, 16-Feb-2026.) $)
     vtxlpfi $p |- ( ph -> { x e. A | ( I ` x ) = { U } } e. Fin ) $=
       ( vr vp vq cv wral wcel cfv csn wceq wdc wa weq cfn adantr simprl syl3anc
       simprr fidceq ralrimivva cdm wss eleq2i biimpi upgrss wfn c1o cen wbr c2o
@@ -197269,8 +197269,9 @@ $)
     vtxdgfif.afi $e |- ( ph -> A e. Fin ) $.
     vtxdgfif.v $e |- ( ph -> V e. Fin ) $.
     vtxdgfif.g $e |- ( ph -> G e. UPGraph ) $.
-    $( The vertex degree function is a function from vertices to nonnegative
-       integers.  (Contributed by Jim Kingdon, 17-Feb-2026.) $)
+    $( In a finite graph, the vertex degree function is a function from
+       vertices to nonnegative integers.  (Contributed by Jim Kingdon,
+       17-Feb-2026.) $)
     vtxdgfif $p |- ( ph -> ( VtxDeg ` G ) : V --> NN0 ) $=
       ( vu vx cv cfv wcel cn0 syl cfn adantr crab chash csn wceq cxad co cvtxdg
       cupgr cmpt vtxdgfval caddc simpr vtxedgfi hashcl nn0red vtxlpfi nn0addcld
@@ -197400,8 +197401,8 @@ $)
     vtxdumgrfival.u $e |- ( ph -> U e. V ) $.
     vtxdumgrfival.a $e |- ( ph -> A e. Fin ) $.
     vtxdumgrfival.v $e |- ( ph -> V e. Fin ) $.
-    $( The value of the vertex degree function for a multigraph.  (Contributed
-       by Alexander van der Vekens, 20-Dec-2017.)  (Revised by AV,
+    $( The value of the vertex degree function for a finite multigraph.
+       (Contributed by Alexander van der Vekens, 20-Dec-2017.)  (Revised by AV,
        23-Feb-2021.) $)
     vtxdumgrfival $p |- ( ph
         -> ( D ` U ) = ( # ` { x e. A | U e. ( I ` x ) } ) ) $=
