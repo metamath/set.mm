@@ -198983,6 +198983,12 @@ $)
       ( vw cclwwlkn co cclwwlk cfv cv clwwlkclwwlkn ssriv ) CBADEAFGABCHIJ $.
   $}
 
+  $( The length of a word representing a closed walk of a fixed length is this
+     fixed length.  (Contributed by AV, 22-Mar-2022.) $)
+  clwwlknlen $p |- ( W e. ( N ClWWalksN G ) -> ( # ` W ) = N ) $=
+    ( cclwwlkn co wcel cclwwlk cfv chash wceq isclwwlkni simprd ) CBADEFCAGHFCI
+    HBJABCKL $.
+
 
 $(
 ###############################################################################
