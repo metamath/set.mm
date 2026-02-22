@@ -198754,6 +198754,14 @@ $)
   $}
 
   ${
+    $( Existence of the set of closed walks (represented by words).
+       (Contributed by Jim Kingdon, 21-Feb-2026.) $)
+    clwwlkex $p |- ( G e. V -> ( ClWWalks ` G ) e. _V ) $=
+      ( wcel cclwwlk cfv cvtx cword wss cvv clwwlksswrd vtxex syl ssexg sylancr
+      wrdexg ) ABCZADEZAFEZGZHSICZQICAJPRICTABKRIOLQSIMN $.
+  $}
+
+  ${
     $d G i $.  $d W i $.
     $( A closed walk of length 1 is a loop.  (Contributed by AV,
        24-Apr-2021.) $)
