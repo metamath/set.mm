@@ -199000,6 +199000,16 @@ $)
       URUOUSCBKAGUAUBUCUDUPBRIUQURUEDERUFFSUGTDSLFESUHTUKBAGCFEDUIUJBULUMUN $.
   $}
 
+  ${
+    clwwlknwrd.v $e |- V = ( Vtx ` G ) $.
+    $( A closed walk of a fixed length as word is a word over the vertices.
+       (Contributed by AV, 30-Apr-2021.) $)
+    clwwlknwrd $p |- ( W e. ( N ClWWalksN G ) -> W e. Word V ) $=
+      ( cclwwlkn co wcel cclwwlk cfv chash wceq wa cword isclwwlkni c0 clwwlkbp
+      cvv wne simp2d adantr syl ) DBAFGHDAIJHZDKJBLZMDCNHZABDOUCUEUDUCARHUEDPSA
+      CDEQTUAUB $.
+  $}
+
 
 $(
 ###############################################################################
