@@ -68659,7 +68659,7 @@ $)
   $}
 
   $( The empty set is finite.  (Contributed by FL, 14-Jul-2008.) $)
-  0fin $p |- (/) e. Fin $=
+  0fi $p |- (/) e. Fin $=
     ( c0 com wcel cfn peano1 nnfi ax-mp ) ABCADCEAFG $.
 
   ${
@@ -69002,6 +69002,22 @@ $)
   $}
 
   ${
+    $d A x y $.  $d B x y $.
+    $( Equinumerosity of finite sets is decidable.  (Contributed by Jim
+       Kingdon, 10-Feb-2026.) $)
+    fidcen $p |- ( ( A e. Fin /\ B e. Fin ) -> DECID A ~~ B ) $=
+      ( vx vy cfn wcel wa cv cen wbr wdc wrex isfi biimpi wn wo simplrl simplrr
+      com entr adantr ad2antlr weq simprl nndceq syl2anc exmiddc simpr breqtrrd
+      syl ensymd syl2an2r ex sylan wb nneneq mpbid orim12d mpd sylibr rexlimddv
+      con3d df-dc ) AEFZBEFZGZACHZIJZABIJZKZCSVDVHCSLZVEVDVKCAMNUAVFVGSFZVHGZGZ
+      BDHZIJZVJDSVEVPDSLZVDVMVEVQDBMNUBVNVOSFZVPGZGZVIVIOZPZVJVTCDUCZWCOZPZWBVT
+      WCKZWEVTVLVRWFVFVLVHVSQZVNVRVPUDVGVOUEUFWCUGUJVTWCVIWDWAVTWCVIVTVHWCVGBIJ
+      ZVIVFVLVHVSRZVTWCGZBVGWJBVOVGIVNVRVPWCRVTWCUHUIUKAVGBTULUMVTVIWCVTVIWCVTV
+      IGZVGVOIJZWCWKWHVPWLVTVGAIJVIWHVTAVGWIUKVGABTUNVNVRVPVIRVGBVOTUFVTVLVIVRW
+      LWCUOWGVNVRVPVIQVGVOUPULUQUMVBURUSVIVCUTVAVA $.
+  $}
+
+  ${
     $d A x y $.  $d B x y $.  $d C y $.  $d R x y $.
     tridc.po $e |- ( ph -> R Po A ) $.
     tridc.tri $e |- ( ph
@@ -69113,6 +69129,50 @@ $)
         -> ( E. x e. A ph <-> -. A. x e. A -. ph ) ) $=
       ( cfn wcel wdc wral wa wrex wn wb finexdc dfrex2dc syl ) CDEAFBCGHABCIZFO
       AJBCGJKABCLABCMN $.
+  $}
+
+  ${
+    $d A u v w $.  $d B x y $.  $d X u v w $.  $d X x y $.  $d ph u v w $.
+    $d v y $.
+    elssdc.b $e |- ( ph -> A. x e. B A. y e. B DECID x = y ) $.
+    elssdc.x $e |- ( ph -> X e. B ) $.
+    elssdc.ss $e |- ( ph -> A C_ B ) $.
+    elssdc.a $e |- ( ph -> A e. Fin ) $.
+    $( Membership in a finite subset of a set with decidable equality is
+       decidable.  (Contributed by Jim Kingdon, 11-Feb-2026.) $)
+    elssdc $p |- ( ph -> DECID X e. A ) $=
+      ( vv cv wcel wdc wceq eleq2 dcbid wn wo wa vw vu csn cun noel df-dc mpbir
+      c0 olci a1i cfn cdif vsnid wb eleq1 adantl mpbiri elun2 orcd sylibr elun1
+      wss syl simpr elsni con3i ad2antlr sylanbrc elun sylnibr exmiddc mpjaodan
+      ioran olcd eqeq2 wral ralbidv rspcdva ad3antrrr simplrr eldifad sseldd ex
+      eqeq1 findcard2sd ) AFUALZMZNFUHMZNZFUBLZMZNZFWJKLZUCZUDZMZNZFDMZNUAUBKDW
+      FUHOWGWHWFUHFPQWFWJOWGWKWFWJFPQWFWOOWGWPWFWOFPQWFDOWGWRWFDFPQWIAWIWHWHRZS
+      WSWHFUEUIWHUFUGUJAWJUKMZTZWJDVBZWMDWJULMZTZTZWLWQXEWLTZFWMOZWQXGRZXFXGTZF
+      WNMZWQXIXJWMWNMZKUMXGXJXKUNXFFWMWNUOUPUQXJWPWPRZSZWQXJWPXLFWNWJURUSWPUFZU
+      TVCXFXHTZWKWQWKRZWKWQXOWKXMWQWKWPXLFWJWNVAUSXNUTUPXOXPTZXMWQXQXLWPXQWKXJS
+      ZWPXQXPXJRZXRRXOXPVDXHXSXFXPXJXGFWMVEVFVGWKXJVMVHFWJWNVIVJVNXNUTWLWKXPSXE
+      XHWKVKVGVLXFXGNZXGXHSXFFCLZOZNZXTCEWMYAWMOYBXGYAWMFVOQAYCCEVPZWTXDWLABLZY
+      AOZNZCEVPYDBEFYEFOZYGYCCEYHYFYBYEFYAWDQVQGHVRVSXFDEWMADEVBWTXDWLIVSXFWMDW
+      JXAXBXCWLVTWAWBVRXGVKVCVLWCJWE $.
+
+    ${
+      $d u x $.  $d u y $.
+      $( Decidability of equality between a finite subset of a set with
+         decidable equality, and a singleton whose element is an element of the
+         larger set.  (Contributed by Jim Kingdon, 15-Feb-2026.) $)
+      eqsndc $p |- ( ph -> DECID A = { X } ) $=
+        ( vu cen wbr wceq wdc wa cv c1o wcel syl csn wn wex simpr ensn1g adantr
+        entr syl2anc en1 sylib weq wral wss ad2antrr vsnid mpbiri adantl sseldd
+        eleq2 eqeq1 dcbid eqeq2 rspc2va syl21anc cvv sneqbg elv bitrdi exlimddv
+        wb mpbird wo cfn eqeng con3dimp olcd df-dc sylibr snfig fidcen mpjaodan
+        wi exmiddc ) ADFUAZLMZDWDNZOZWEUBZAWEPZDKQZUAZNZWGKWIDRLMZWLKUCWIWEWDRL
+        MZWMAWEUDAWNWEAFESZWNHFEUETUFDWDRUGUHKDUIUJWIWLPZWGWJFNZOZWPWJESWOBCUKZ
+        OZCEULBEULZWRWPDEWJADEUMWEWLIUNWLWJDSZWIWLXBWJWKSKUODWKWJUSUPUQURAWOWEW
+        LHUNAXAWEWLGUNWTWRKCUKZOBCWJFEEBKUKWSXCBQWJCQZUTVAXDFNXCWQXDFWJVBVAVCVD
+        WPWFWQWPWFWKWDNZWQWLWFXEVJWIDWKWDUTUQXEWQVJKWJFVEVFVGVHVAVKVIAWHPZWFWFU
+        BZVLWGXFXGWFAWFWEADVMSZWFWEWBJDWDVMVNTVOVPWFVQVRAWEOZWEWHVLAXHWDVMSZXIJ
+        AWOXJHFEVSTDWDVTUHWEWCTWA $.
+    $}
   $}
 
   ${
@@ -69601,21 +69661,21 @@ $)
        (Revised by Mario Carneiro, 12-Mar-2015.) $)
     xpfi $p |- ( ( A e. Fin /\ B e. Fin ) -> ( A X. B ) e. Fin ) $=
       ( vx vy vz vw cfn wcel cxp cv wi c0 csn wceq xpeq1 eleq1d imbi2d cvv cin
-      wa cdif 0xp 0fin eqeltri a1i wral wex eqeltrdi a1i13 difeq2d xpeq1d rspcv
-      sneq adantl pm2.27 ad2antlr cen wbr c2nd cres wf1o vex snex xpexg mpan id
-      2ndconst mp1i f1oen2g syl3anc enfii mpdan cun incom disjdif xpdisj1 ax-mp
-      eqtr3i unfidisj mp3an3 xpundir fidifsnid adantlr imbitrid mpan2d 3syld ex
-      eqtr3id exlimdv wo fin0or adantr mpjaod com23 findcard imp ) AGHBGHZABIZG
-      HZWQCJZBIZGHZKWQLBIZGHZKWQDJZEJZMZUAZBIZGHZKZWQXEBIZGHZKWQWSKCDEAWTLNZXBX
-      DWQXNXAXCGWTLBOPQWTXHNZXBXJWQXOXAXIGWTXHBOPQWTXENZXBXMWQXPXAXLGWTXEBOPQWT
-      ANZXBWSWQXQXAWRGWTABOPQXDWQXCLGBUBUCUDZUEXEGHZWQXKEXEUFZXMXSWQXTXMKZXSWQT
-      ZXELNZYAFJZXEHZFUGZYBYCXTXMYCXLXCGXELBOXRUHUIYBYEYAFYBYEYAYBYETZXTWQXEYDM
-      ZUAZBIZGHZKZYKXMYEXTYLKYBXKYLEYDXEXFYDNZXJYKWQYMXIYJGYMXHYIBYMXGYHXEXFYDU
-      MUJUKPQULUNWQYLYKKXSYEWQYKUOUPYGYKYHBIZGHZXMWQYOXSYEWQYNBUQURZYOWQYNRHZWQ
-      YNBUSYNUTZVAZYPYHRHWQYQYDFVBZVCYHBRGVDVEWQVFYDRHYSWQYTYDBRVGVHYNBYRRGVIVJ
-      YNBVKVLUPYKYOTYJYNVMZGHZYGXMYKYOYJYNSLNZUUBYIYHSZLNUUCYHYISUUDLYHYIVNYHXE
-      VOVRYIYHBBVPVQYJYNVSVTYGUUAXLGYGUUAYIYHVMZBIXLYIYHBWAYGUUEXEBXSYEUUEXENWQ
-      XEYDWBWCUKWHPWDWEWFWGWIXSYCYFWJWQFXEWKWLWMWGWNWOWP $.
+      wa cdif 0xp 0fi eqeltri a1i wral eqeltrdi a1i13 sneq difeq2d xpeq1d rspcv
+      wex adantl pm2.27 ad2antlr cen wbr c2nd cres wf1o vex snex xpexg 2ndconst
+      mpan id mp1i f1oen2g syl3anc enfii mpdan cun incom disjdif eqtr3i xpdisj1
+      ax-mp unfidisj mp3an3 xpundir fidifsnid adantlr eqtr3id imbitrid 3syld ex
+      mpan2d exlimdv wo fin0or adantr mpjaod com23 findcard imp ) AGHBGHZABIZGH
+      ZWQCJZBIZGHZKWQLBIZGHZKWQDJZEJZMZUAZBIZGHZKZWQXEBIZGHZKWQWSKCDEAWTLNZXBXD
+      WQXNXAXCGWTLBOPQWTXHNZXBXJWQXOXAXIGWTXHBOPQWTXENZXBXMWQXPXAXLGWTXEBOPQWTA
+      NZXBWSWQXQXAWRGWTABOPQXDWQXCLGBUBUCUDZUEXEGHZWQXKEXEUFZXMXSWQXTXMKZXSWQTZ
+      XELNZYAFJZXEHZFUMZYBYCXTXMYCXLXCGXELBOXRUGUHYBYEYAFYBYEYAYBYETZXTWQXEYDMZ
+      UAZBIZGHZKZYKXMYEXTYLKYBXKYLEYDXEXFYDNZXJYKWQYMXIYJGYMXHYIBYMXGYHXEXFYDUI
+      UJUKPQULUNWQYLYKKXSYEWQYKUOUPYGYKYHBIZGHZXMWQYOXSYEWQYNBUQURZYOWQYNRHZWQY
+      NBUSYNUTZVAZYPYHRHWQYQYDFVBZVCYHBRGVDVFWQVGYDRHYSWQYTYDBRVEVHYNBYRRGVIVJY
+      NBVKVLUPYKYOTYJYNVMZGHZYGXMYKYOYJYNSLNZUUBYIYHSZLNUUCYHYISUUDLYHYIVNYHXEV
+      OVPYIYHBBVQVRYJYNVSVTYGUUAXLGYGUUAYIYHVMZBIXLYIYHBWAYGUUEXEBXSYEUUEXENWQX
+      EYDWBWCUKWDPWEWHWFWGWIXSYCYFWJWQFXEWKWLWMWGWNWOWP $.
   $}
 
   $( The Cartesian product of three finite sets is a finite set.  (Contributed
@@ -69674,20 +69734,20 @@ $)
        property.  (Contributed by Jim Kingdon, 27-May-2022.) $)
     ssfirab $p |- ( ph -> { x e. A | ps } e. Fin ) $=
       ( vz cv crab cfn wcel c0 cun wceq rabeq eleq1d wa wn wral cvv vw csn rab0
-      vy 0fin eqeltri a1i wss cdif wsb rabun2 wsbc sbsbc wb ralsns ax-mp bitr4i
-      vex rabid2 sylbb2 adantl uneq2d simplr simprr ad2antrr elrabi nsyl unsnfi
-      eldifbd syl3anc eqeltrrd eqeltrid sbn rabeq0 un0 eqtrdi eqtrid eqeltrd wo
-      3bitr2ri wdc simplrr eldifad ad3antrrr nfs1v nfdc sbequ12 dcbid rspc sylc
-      exmiddc syl mpjaodan ex findcard2sd ) ABCUAHZIZJKBCLIZJKZBCUDHZIZJKZBCWTG
-      HZUBZMZIZJKZBCDIZJKUAUDGDWPLNWQWRJBCWPLOPWPWTNWQXAJBCWPWTOPWPXENWQXFJBCWP
-      XEOPWPDNWQXHJBCWPDOPWSAWRLJBCUCUEUFUGAWTJKZQZWTDUHZXCDWTUIKZQZQZXBXGXNXBQ
-      ZBCGUJZXGXPRZXOXPQZXFXABCXDIZMZJBCWTXDUKZXRXAXDMZXTJXRXDXSXAXPXDXSNZXOXPB
-      CXDSZYCXPBCXCULZYDBCGUMXCTKZYDYEUNGURZBCXCTUOUPUQBCXDUSUTVAVBXRXBYFXCXAKZ
-      RYBJKXNXBXPVCYFXRYGUGXRXCWTKYHXRXCDWTXNXLXBXPXJXKXLVDVEVIBCXCWTVFVGXAXCTV
-      HVJVKVLXOXQQZXFXAJYIXFXTXAYAYIXTXALMXAYIXSLXAXQXSLNZXOXQBRZCXDSZYJYLYKCXC
-      ULZYKCGUJXQYFYLYMUNYGYKCXCTUOUPYKCGUMBCGVMVTBCXDVNUTVAVBXAVOVPVQXNXBXQVCV
-      RXOXPWAZXPXQVSXOXCDKBWAZCDSZYNXOXCDWTXJXKXLXBWBWCAYPXIXMXBFWDYOYNCXCDXPCB
-      CGWEWFCHXCNBXPBCGWGWHWIWJXPWKWLWMWNEWO $.
+      vy 0fi eqeltri a1i wss cdif wsb rabun2 wsbc sbsbc vex ralsns ax-mp bitr4i
+      wb rabid2 sylbb2 adantl uneq2d simplr simprr ad2antrr eldifbd elrabi nsyl
+      unsnfi syl3anc eqeltrrd eqeltrid sbn rabeq0 un0 eqtrdi eqtrid eqeltrd wdc
+      3bitr2ri simplrr eldifad ad3antrrr nfs1v nfdc sbequ12 dcbid rspc sylc syl
+      wo exmiddc mpjaodan ex findcard2sd ) ABCUAHZIZJKBCLIZJKZBCUDHZIZJKZBCWTGH
+      ZUBZMZIZJKZBCDIZJKUAUDGDWPLNWQWRJBCWPLOPWPWTNWQXAJBCWPWTOPWPXENWQXFJBCWPX
+      EOPWPDNWQXHJBCWPDOPWSAWRLJBCUCUEUFUGAWTJKZQZWTDUHZXCDWTUIKZQZQZXBXGXNXBQZ
+      BCGUJZXGXPRZXOXPQZXFXABCXDIZMZJBCWTXDUKZXRXAXDMZXTJXRXDXSXAXPXDXSNZXOXPBC
+      XDSZYCXPBCXCULZYDBCGUMXCTKZYDYEURGUNZBCXCTUOUPUQBCXDUSUTVAVBXRXBYFXCXAKZR
+      YBJKXNXBXPVCYFXRYGUGXRXCWTKYHXRXCDWTXNXLXBXPXJXKXLVDVEVFBCXCWTVGVHXAXCTVI
+      VJVKVLXOXQQZXFXAJYIXFXTXAYAYIXTXALMXAYIXSLXAXQXSLNZXOXQBRZCXDSZYJYLYKCXCU
+      LZYKCGUJXQYFYLYMURYGYKCXCTUOUPYKCGUMBCGVMVTBCXDVNUTVAVBXAVOVPVQXNXBXQVCVR
+      XOXPVSZXPXQWKXOXCDKBVSZCDSZYNXOXCDWTXJXKXLXBWAWBAYPXIXMXBFWCYOYNCXCDXPCBC
+      GWDWECHXCNBXPBCGWFWGWHWIXPWLWJWMWNEWO $.
   $}
 
   ${
@@ -69753,17 +69813,17 @@ $)
        16-Nov-2014.)  (Revised by Mario Carneiro, 24-Jun-2015.) $)
     fnfi $p |- ( ( F Fn A /\ A e. Fin ) -> F e. Fin ) $=
       ( vw vy vz cfn wcel wa cres cv c0 csn cun reseq2 eleq1d syl2anc cvv simpr
-      wceq cdm wfn fnresdm adantr res0 0fin eqeltri a1i wss resundi cfv simp-4l
-      cdif simplrr eldifad fnressn uneq2d wn elexd funfvex funfni opexg eldifbd
-      cop cin wi opeldmg dmres eleq2i imbitrdi elin simplbi syl6 unsnfi syl3anc
-      mtod eqeltrd eqeltrid ex findcard2sd eqeltrrd ) BAUAZAFGZHZBAIZBFWAWDBSWB
-      ABUBUCWCBCJZIZFGBKIZFGZBDJZIZFGZBWIEJZLZMZIZFGZWDFGCDEAWEKSWFWGFWEKBNOWEW
-      ISWFWJFWEWIBNOWEWNSWFWOFWEWNBNOWEASWFWDFWEABNOWHWCWGKFBUDUEUFUGWCWIFGZHZW
-      IAUHZWLAWIULZGZHZHZWKWPXCWKHZWOWJBWMIZMZFBWIWMUIXDXFWJWLWLBUJZVCZLZMZFXDX
-      EXIWJXDWAWLAGZXEXISWAWBWQXBWKUKZXDWLAWIWRWSXAWKUMZUNZAWLBUOPUPXDWKXHQGZXH
-      WJGZUQXJFGXCWKRXDWLQGXGQGZXOXDWLWTXMURXDWAXKXQXLXNXQAWLBWLBUSUTPZWLXGQQVA
-      PXDXPWLWIGZXDWLAWIXMVBXDXPWLWIBTZVDZGZXSXDXPWLWJTZGZYBXDXKXQXPYDVEXNXRWLX
-      GWJAQVFPYCYAWLBWIVGVHVIYBXSWLXTGWLWIXTVJVKVLVOWJXHQVMVNVPVQVRWAWBRVSVT $.
+      wceq cdm wfn fnresdm adantr res0 0fi eqeltri a1i wss cdif resundi cfv cop
+      simp-4l simplrr eldifad fnressn uneq2d elexd funfvex funfni opexg eldifbd
+      wn wi opeldmg dmres eleq2i imbitrdi elin simplbi syl6 mtod unsnfi syl3anc
+      cin eqeltrd eqeltrid ex findcard2sd eqeltrrd ) BAUAZAFGZHZBAIZBFWAWDBSWBA
+      BUBUCWCBCJZIZFGBKIZFGZBDJZIZFGZBWIEJZLZMZIZFGZWDFGCDEAWEKSWFWGFWEKBNOWEWI
+      SWFWJFWEWIBNOWEWNSWFWOFWEWNBNOWEASWFWDFWEABNOWHWCWGKFBUDUEUFUGWCWIFGZHZWI
+      AUHZWLAWIUIZGZHZHZWKWPXCWKHZWOWJBWMIZMZFBWIWMUJXDXFWJWLWLBUKZULZLZMZFXDXE
+      XIWJXDWAWLAGZXEXISWAWBWQXBWKUMZXDWLAWIWRWSXAWKUNZUOZAWLBUPPUQXDWKXHQGZXHW
+      JGZVCXJFGXCWKRXDWLQGXGQGZXOXDWLWTXMURXDWAXKXQXLXNXQAWLBWLBUSUTPZWLXGQQVAP
+      XDXPWLWIGZXDWLAWIXMVBXDXPWLWIBTZVOZGZXSXDXPWLWJTZGZYBXDXKXQXPYDVDXNXRWLXG
+      WJAQVEPYCYAWLBWIVFVGVHYBXSWLXTGWLWIXTVIVJVKVLWJXHQVMVNVPVQVRWAWBRVSVT $.
   $}
 
   $( The domain of a finite function is finite.  (Contributed by Jim Kingdon,
@@ -69841,16 +69901,16 @@ $)
     iunfidisj $p |- ( ( A e. Fin /\ A. x e. A B e. Fin /\ Disj_ x e. A B )
         -> U_ x e. A B e. Fin ) $=
       ( vw vy vz cfn wcel wral cv ciun c0 cun iuneq1 eleq1d wss wa cin eqeltrid
-      wceq wdisj w3a csn 0iun 0fin eqeltri a1i iunxun simpr csb nfcsb1v csbeq1a
-      cdif cvv iunxsngf simplrr eldifad simpll2 nfel1 rspc sylc simpll3 simplrl
-      snssd wn eldifbd disjsn sylibr disjiun syl13anc unfidisj syl3anc ex simp1
-      elv findcard2d ) BGHZCGHZABIZABCUAZUBZADJZCKZGHALCKZGHZAEJZCKZGHZAWFFJZUC
-      ZMZCKZGHZABCKZGHDEFBWBLTWCWDGAWBLCNOWBWFTWCWGGAWBWFCNOWBWKTWCWLGAWBWKCNOW
-      BBTWCWNGAWBBCNOWEWAWDLGACUDUEUFUGWAWFBPZWIBWFUMHZQZQZWHWMWRWHQZWLWGAWJCKZ
-      MZGAWFWJCUHWSWHWTGHWGWTRLTZXAGHWRWHUIWSWTAWICUJZGWTXCTFAWICXCUNAWICUKZAWI
-      CULZUOVOWSWIBHVSXCGHZWSWIBWFWAWOWPWHUPZUQZVQVSVTWQWHURVRXFAWIBAXCGXDUSAJW
-      ITCXCGXEOUTVASWSVTWOWJBPWFWJRLTZXBVQVSVTWQWHVBWAWOWPWHVCWSWIBXHVDWSWIWFHV
-      EXIWSWIBWFXGVFWFWIVGVHABCWFWJVIVJWGWTVKVLSVMVQVSVTVNVP $.
+      wceq wdisj w3a csn 0iun 0fi eqeltri a1i cdif iunxun simpr csb cvv nfcsb1v
+      csbeq1a iunxsngf simplrr eldifad simpll2 nfel1 rspc simpll3 simplrl snssd
+      elv sylc wn eldifbd disjsn sylibr disjiun syl13anc unfidisj syl3anc simp1
+      ex findcard2d ) BGHZCGHZABIZABCUAZUBZADJZCKZGHALCKZGHZAEJZCKZGHZAWFFJZUCZ
+      MZCKZGHZABCKZGHDEFBWBLTWCWDGAWBLCNOWBWFTWCWGGAWBWFCNOWBWKTWCWLGAWBWKCNOWB
+      BTWCWNGAWBBCNOWEWAWDLGACUDUEUFUGWAWFBPZWIBWFUHHZQZQZWHWMWRWHQZWLWGAWJCKZM
+      ZGAWFWJCUIWSWHWTGHWGWTRLTZXAGHWRWHUJWSWTAWICUKZGWTXCTFAWICXCULAWICUMZAWIC
+      UNZUOVDWSWIBHVSXCGHZWSWIBWFWAWOWPWHUPZUQZVQVSVTWQWHURVRXFAWIBAXCGXDUSAJWI
+      TCXCGXEOUTVESWSVTWOWJBPWFWJRLTZXBVQVSVTWQWHVAWAWOWPWHVBWSWIBXHVCWSWIWFHVF
+      XIWSWIBWFXGVGWFWIVHVIABCWFWJVJVKWGWTVLVMSVOVQVSVTVNVP $.
   $}
 
   $( Any injection from one finite set to another of equal size must be a
@@ -69976,24 +70036,24 @@ $)
          (Contributed by Jim Kingdon, 19-Oct-2022.) $)
       fidcenumlemr $p |- ( ph -> A e. Fin ) $=
         ( cima cfn wceq syl wss wcel wa adantr cv wi c0 vw vk wfo ssid com csuc
-        foima anbi2d imaeq2 eleq1d imbi12d ima0 0fin eqeltri a1i cfv wn csn cun
-        sseq1 wfn simprl fofn simprr sucid sseldd fnsnfv syl2anc uneq2d imaeq2i
-        vex df-suc imaundi eqtri eqtr4di simpr snssd ssequn2 sylib sssucid sstr
-        eqtr3d mpan ad2antll simplr mp2and eqeltrd fof ffvelcdmd unsnfi syl3anc
-        eqeltrrd wdc wral simpll fidcenumlemrk mpjaodan exp31 finds mpcom mpan2
+        foima sseq1 anbi2d imaeq2 eleq1d imbi12d 0fi eqeltri a1i cfv wn csn cun
+        ima0 wfn simprl fofn simprr sseldd fnsnfv syl2anc uneq2d df-suc imaeq2i
+        vex sucid imaundi eqtri eqtr4di simpr snssd ssequn2 eqtr3d sssucid sstr
+        sylib mpan ad2antll simplr mp2and eqeltrd fof ffvelcdmd unsnfi eqeltrrd
+        syl3anc wdc wral simpll fidcenumlemrk mpjaodan exp31 finds mpcom mpan2
         wf ) AEFJZDKAFDEUCZXCDLHFDEUGMAFFNZXCKOZFUDFUEOZAXEPZXFAXGXEIQAUARZFNZP
         ZEXIJZKOZSATFNZPZETJZKOZSAUBRZFNZPZEXRJZKOZSZAXRUFZFNZPZEYDJZKOZSXHXFSU
-        AUBFXITLZXKXOXMXQYIXJXNAXITFUTUHYIXLXPKXITEUIUJUKXIXRLZXKXTXMYBYJXJXSAX
-        IXRFUTUHYJXLYAKXIXREUIUJUKXIYDLZXKYFXMYHYKXJYEAXIYDFUTUHYKXLYGKXIYDEUIU
-        JUKXIFLZXKXHXMXFYLXJXEAXIFFUTUHYLXLXCKXIFEUIUJUKXQXOXPTKEULUMUNUOXRUEOZ
+        AUBFXITLZXKXOXMXQYIXJXNAXITFUHUIYIXLXPKXITEUJUKULXIXRLZXKXTXMYBYJXJXSAX
+        IXRFUHUIYJXLYAKXIXREUJUKULXIYDLZXKYFXMYHYKXJYEAXIYDFUHUIYKXLYGKXIYDEUJU
+        KULXIFLZXKXHXMXFYLXJXEAXIFFUHUIYLXLXCKXIFEUJUKULXQXOXPTKEUTUMUNUOXRUEOZ
         YCYFYHYMYCPZYFPZXREUPZYAOZYHYQUQZYOYQPZYGYAKYSYAYPURZUSZYGYAYOUUAYGLZYQ
         YOUUAYAEXRURZJZUSZYGYOYTUUDYAYOEFVAZXRFOYTUUDLYOAUUFYNAYEVBZAXDUUFHFDEV
-        CMMYOYDFXRYNAYEVDXRYDOYOXRUBVKVEUOVFZFXREVGVHVIYGEXRUUCUSZJUUEYDUUIEXRV
-        LVJEXRUUCVMVNVOZQYSYTYANUUAYALYSYPYAYOYQVPVQYTYAVRVSWBYOYBYQYOAXSYBUUGY
+        CMMYOYDFXRYNAYEVDXRYDOYOXRUBVKVLUOVEZFXREVFVGVHYGEXRUUCUSZJUUEYDUUIEXRV
+        IVJEXRUUCVMVNVOZQYSYTYANUUAYALYSYPYAYOYQVPVQYTYAVRWBVSYOYBYQYOAXSYBUUGY
         EXSYNAXRYDNYEXSXRVTXRYDFWAWCWDZYMYCYFWEWFZQWGYOYRPZUUAYGKYOUUBYRUUJQUUM
         YBYPDOZYRUUAKOYOYBYRUULQYOUUNYRYOFDXREYOXDFDEXBYOAXDUUGHMZFDEWHMUUHWIZQ
-        YOYRVPYAYPDWJWKWLYOBCDEXRFYPYOABRCRLWMCDWNBDWNUUGGMUUOYMYCYFWOUUKUUPWPW
-        QWRWSWTXAWL $.
+        YOYRVPYAYPDWJWLWKYOBCDEXRFYPYOABRCRLWMCDWNBDWNUUGGMUUOYMYCYFWOUUKUUPWPW
+        QWRWSWTXAWK $.
     $}
   $}
 
@@ -110175,11 +110235,11 @@ $)
     ( vx cz wcel wa cle wbr cfz co cfn wn cuz cfv c1 caddc com cn0 syl c0 cfrec
     eluz cmin cv cmpt cc0 ccnv cen wf1o frechashgf1o peano2uz uznn0sub f1ocnvdm
     eqid sylancr nnfi frecfzen2 syl2anc biimtrrdi wceq clt wb zltnle ancoms fzn
-    enfii bitr3d 0fin eleq1 mpbiri biimtrdi wdc wo zdcle df-dc sylib mpjaod ) A
-    DEZBDEZFZABGHZABIJZKEZWALZVTWABAMNZEZWCABUBWFBOPJZAUCJZCDCUDOPJUEUFUAZUGNZK
-    EZWBWJUHHWCWFWJQEZWKWFQRWIUIWHREZWLCWIWIUNZUJWFWGWEEWMABUKAWGULSQRWHWIUMUOW
-    JUPSCWIABWNUQWBWJVFURUSVTWDWBTUTZWCVTBAVAHZWDWOVSVRWPWDVBBAVCVDABVEVGWOWCTK
-    EVHWBTKVIVJVKVTWAVLWAWDVMABVNWAVOVPVQ $.
+    enfii bitr3d 0fi eleq1 mpbiri biimtrdi wdc wo zdcle df-dc sylib mpjaod ) AD
+    EZBDEZFZABGHZABIJZKEZWALZVTWABAMNZEZWCABUBWFBOPJZAUCJZCDCUDOPJUEUFUAZUGNZKE
+    ZWBWJUHHWCWFWJQEZWKWFQRWIUIWHREZWLCWIWIUNZUJWFWGWEEWMABUKAWGULSQRWHWIUMUOWJ
+    UPSCWIABWNUQWBWJVFURUSVTWDWBTUTZWCVTBAVAHZWDWOVSVRWPWDVBBAVCVDABVEVGWOWCTKE
+    VHWBTKVIVJVKVTWAVLWAWDVMABVNWAVOVPVQ $.
 
   ${
     fzfigd.m $e |- ( ph -> M e. ZZ ) $.
@@ -116298,9 +116358,9 @@ $)
      26-Oct-2012.)  (Revised by Mario Carneiro, 27-Jul-2014.)  (Intuitionized
      by Jim Kingdon, 23-Feb-2022.) $)
   fihasheq0 $p |- ( A e. Fin -> ( ( # ` A ) = 0 <-> A = (/) ) ) $=
-    ( cfn wcel chash cfv c0 wceq cen wbr cc0 wb 0fin hashen mpan2 c1 cfz fveq2i
-    co fz10 cn0 0nn0 hashfz1 ax-mp eqtr3i eqeq2i en0 3bitr3g ) ABCZADEZFDEZGZAF
-    HIZUIJGAFGUHFBCUKULKLAFMNUJJUIOJPRZDEZUJJUMFDSQJTCUNJGUAJUBUCUDUEAUFUG $.
+    ( cfn wcel chash cfv c0 wceq cen wbr cc0 wb 0fi hashen mpan2 c1 cfz co fz10
+    fveq2i cn0 0nn0 hashfz1 ax-mp eqtr3i eqeq2i en0 3bitr3g ) ABCZADEZFDEZGZAFH
+    IZUIJGAFGUHFBCUKULKLAFMNUJJUIOJPQZDEZUJJUMFDRSJTCUNJGUAJUBUCUDUEAUFUG $.
 
   $( Two ways of saying a finite set is not empty.  Also, "A is inhabited"
      would be equivalent by ~ fin0 .  (Contributed by Alexander van der Vekens,
@@ -116323,8 +116383,8 @@ $)
   $( The empty set has size zero.  (Contributed by Mario Carneiro,
      8-Jul-2014.) $)
   hash0 $p |- ( # ` (/) ) = 0 $=
-    ( c0 chash cfv cc0 wceq eqid cfn wcel wb 0fin fihasheq0 ax-mp mpbir ) ABCDE
-    ZAAEZAFAGHNOIJAKLM $.
+    ( c0 chash cfv cc0 wceq eqid cfn wcel wb 0fi fihasheq0 ax-mp mpbir ) ABCDEZ
+    AAEZAFAGHNOIJAKLM $.
 
   ${
     hashelne0d.1 $e |- ( ph -> B e. A ) $.
@@ -174026,9 +174086,9 @@ $)
          AV, 8-Jul-2019.) $)
       fczpsrbag $p |- ( I e. V -> ( x e. I |-> 0 ) e. D ) $=
         ( wcel cc0 cmpt cn0 wf ccnv cn cima cfn cv wa 0nn0 a1i c0 crab wn rgenw
-        fmpttd eqid mptpreima wceq wral 0nnn mpbir eqtri 0fin eqeltri mpbir2and
-        rabeq0 psrbag ) DEGZADHIZBGDJURKURLMNZOGZUQADHJHJGUQAPDGQRSUDUTUQUSTOUS
-        HMGZADUAZTADHMURURUEUFVBTUGVAUBZADUHVCADUIUCVAADUOUJUKULUMSBCURDEFUPUN
+        fmpttd eqid mptpreima wceq wral 0nnn rabeq0 mpbir 0fi eqeltri mpbir2and
+        eqtri psrbag ) DEGZADHIZBGDJURKURLMNZOGZUQADHJHJGUQAPDGQRSUDUTUQUSTOUSH
+        MGZADUAZTADHMURURUEUFVBTUGVAUBZADUHVCADUIUCVAADUJUKUOULUMSBCURDEFUPUN
         $.
     $}
 
@@ -197136,6 +197196,291 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Vertex degree
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c VtxDeg $.
+
+  $( Extend class notation with the vertex degree function. $)
+  cvtxdg $a class VtxDeg $.
+
+  ${
+    $d e g u v x $.
+    $( Define the vertex degree function for a graph.  To be appropriate for
+       arbitrary hypergraphs, we have to double-count those edges that contain
+       ` u ` "twice" (i.e. self-loops), this being represented as a singleton
+       as the edge's value.  Since the degree of a vertex can be (positive)
+       infinity (if the graph containing the vertex is infinite), the extended
+       addition ` +e ` is used for the summation of the number of "ordinary"
+       edges" and the number of "loops".
+
+       Because we cannot in general show that an arbitrary set is either finite
+       or infinite (see ~ inffiexmid ), this definition is not as general as it
+       may appear.  But we keep it for consistency with the Metamath Proof
+       Explorer.  (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by
+       Alexander van der Vekens, 20-Dec-2017.)  (Revised by AV, 9-Dec-2020.) $)
+    df-vtxdg $a |- VtxDeg = ( g e. _V |-> [_ ( Vtx ` g ) / v ]_
+                                          [_ ( iEdg ` g ) / e ]_ ( u e. v |->
+                          ( ( # ` { x e. dom e | u e. ( e ` x ) } ) +e
+                            ( # ` { x e. dom e | ( e ` x ) = { u } } ) ) ) ) $.
+
+    $d A g x $.  $d G g u x $.  $d I g $.  $d V g u $.  $d W g $.
+    vtxdgfval.v $e |- V = ( Vtx ` G ) $.
+    vtxdgfval.i $e |- I = ( iEdg ` G ) $.
+    vtxdgfval.a $e |- A = dom I $.
+    $( The value of the vertex degree function.  (Contributed by Mario
+       Carneiro, 12-Mar-2015.)  (Revised by Alexander van der Vekens,
+       20-Dec-2017.)  (Revised by AV, 9-Dec-2020.) $)
+    vtxdgfval $p |- ( G e. W -> ( VtxDeg ` G ) = ( u e. V
+                          |-> ( ( # ` { x e. A | u e. ( I ` x ) } ) +e
+                                ( # ` { x e. A | ( I ` x ) = { u } } ) ) ) ) $=
+      ( vg vv wcel cv cfv crab chash wceq cxad cvv ve cvtx ciedg cdm csn co csb
+      cmpt cvtxdg df-vtxdg vtxex elv iedgex simpl fveq1 eleq2d rabeqbidv fveq2d
+      wa eqeq1d oveq12d adantl mpteq12dv csbie2 fveq2 eqtr4di dmeqd dmeqi eqtri
+      dmeq fveq1d eqtrid elex eqeltrid mptexd fvmptd2 ) DGMZKDLKNZUBOZUAVRUCOZB
+      LNZBNZANZUANZOZMZAWDUDZPZQOZWEWBUEZRZAWGPZQOZSUFZUHZUGUGZBFWBWCEOZMZACPZQ
+      OZWQWJRZACPZQOZSUFZUHZTUITALBUAKUJVQVRDRZUSWPBVSWBWCVTOZMZAVTUDZPZQOZXGWJ
+      RZAXIPZQOZSUFZUHZXELUAVSVTWOXPVSTMKVRTUKULVTTMKVRTUMULWAVSRZWDVTRZUSBWAWN
+      VSXOXQXRUNXRWNXORXQXRWIXKWMXNSXRWHXJQXRWFXHAWGXIWDVTVJZXRWEXGWBWCWDVTUOZU
+      PUQURXRWLXMQXRWKXLAWGXIXSXRWEXGWJXTUTUQURVAVBVCVDXFXPXERVQXFBVSXOFXDXFVSD
+      UBOZFVRDUBVEHVFXFXKWTXNXCSXFXJWSQXFXHWRAXICXFXIDUCOZUDZCXFVTYBVRDUCVEZVGC
+      EUDYCJEYBIVHVIVFZXFXGWQWBXFWCVTEXFVTYBEYDIVFVKZUPUQURXFXMXBQXFXLXAAXICYEX
+      FXGWQWJYFUTUQURVAVCVBVLDGVMVQBFXDTVQFYATHDGUKVNVOVP $.
+  $}
+
+  ${
+    $d A u r x $.  $d G u x $.  $d I u r x $.  $d U u r x p q $.
+    $d V u x p q $.  $d ph p q r $.
+    vtxdgval.v $e |- V = ( Vtx ` G ) $.
+    vtxdgval.i $e |- I = ( iEdg ` G ) $.
+    vtxdgval.a $e |- A = dom I $.
+    vtxdgfifival.a $e |- ( ph -> A e. Fin ) $.
+    vtxdgfifival.v $e |- ( ph -> V e. Fin ) $.
+    vtxdgfifival.u $e |- ( ph -> U e. V ) $.
+    vtxdgfifival.g $e |- ( ph -> G e. UPGraph ) $.
+    $( In a finite graph, the number of edges from a given vertex is finite.
+       (Contributed by Jim Kingdon, 16-Feb-2026.) $)
+    vtxedgfi $p |- ( ph -> { x e. A | U e. ( I ` x ) } e. Fin ) $=
+      ( vr vp vq cv wcel wral cfv wdc wa adantr simprl simprr fidceq ralrimivva
+      weq cfn syl3anc cupgr cdm wss eleq2i biimpi upgrss syl2an wfn c1o cen wbr
+      c2o cpw crab upgrfen ffnd fneq2i sylibr syl simpr upgrfi elssdc ralrimiva
+      wo fveq2 eleq2d dcbid cbvralv sylib ssfirab ) ADBRZFUAZSZBCKADORZFUAZSZUB
+      ZOCTWDUBZBCTAWHOCAWECSZUCZPQWFGDAPQUIUBZQGTPGTWJAWLPQGGAPRZGSZQRZGSZUCZUC
+      GUJSZWNWPWLAWRWQLUDAWNWPUEAWNWPUFGWMWOUGUKUHUDADGSWJMUDAEULSZWEFUMZSZWFGU
+      NWJNWJXACWTWEJUOUPFWEEGHIUQURWKWSFCUSZWJWFUJSAWSWJNUDZWKWSXBXCWSFWTUSXBWS
+      WTWBUTVAVBWBVCVAVBVOBGVDVEFBFEGHIVFVGCWTFJVHVIVJAWJVKCFWEEGHIVLUKVMVNWHWI
+      OBCOBUIZWGWDXDWFWCDWEWBFVPVQVRVSVTWA $.
+
+    $( In a finite graph, the number of loops from a given vertex is finite.
+       (Contributed by Jim Kingdon, 16-Feb-2026.) $)
+    vtxlpfi $p |- ( ph -> { x e. A | ( I ` x ) = { U } } e. Fin ) $=
+      ( vr vp vq cv wral wcel cfv csn wceq wdc wa weq cfn adantr simprl syl3anc
+      simprr fidceq ralrimivva cdm wss eleq2i biimpi upgrss wfn c1o cen wbr c2o
+      cupgr syl2an wo cpw crab upgrfen fneq2i sylibr syl simpr upgrfi ralrimiva
+      ffnd eqsndc fveqeq2 dcbid cbvralv sylib ssfirab ) ABRZFUADUBZUCZBCKAORZFU
+      AZWDUCZUDZOCSWEUDZBCSAWIOCAWFCTZUEZPQWGGDAPQUFUDZQGSPGSWKAWMPQGGAPRZGTZQR
+      ZGTZUEZUEGUGTZWOWQWMAWSWRLUHAWOWQUIAWOWQUKGWNWPULUJUMUHADGTWKMUHAEVDTZWFF
+      UNZTZWGGUOWKNWKXBCXAWFJUPUQFWFEGHIURVEWLWTFCUSZWKWGUGTAWTWKNUHZWLWTXCXDWT
+      FXAUSXCWTXAWCUTVAVBWCVCVAVBVFBGVGVHFBFEGHIVIVPCXAFJVJVKVLAWKVMCFWFEGHIVNU
+      JVQVOWIWJOBCOBUFWHWEWFWCWDFVRVSVTWAWB $.
+
+    $( The degree of a vertex for graphs with finite vertex and edge sets.
+       (Contributed by Jim Kingdon, 10-Feb-2026.) $)
+    vtxdgfifival $p |- ( ph
+        -> ( ( VtxDeg ` G ) ` U )
+          = ( ( # ` { x e. A | U e. ( I ` x ) } ) +
+          ( # ` { x e. A | ( I ` x ) = { U } } ) ) ) $=
+      ( vu cfv wcel crab chash wceq cvtxdg cv csn cxad co cmpt caddc cvv 1vgrex
+      vtxdgfval syl fveq1d cxr eqid eleq1 rabbidv fveq2d eqeq2d oveq12d cfn cn0
+      sneq vtxedgfi hashcl nn0red rexrd vtxlpfi xaddcld fvmptd3 rexaddd 3eqtrd
+      ) ADEUAPZPZDOGOUBZBUBFPZQZBCRZSPZVOVNUCZTZBCRZSPZUDUEZUFZPZDVOQZBCRZSPZVO
+      DUCZTZBCRZSPZUDUEZWHWLUGUEADGQZVMWETMWNDVLWDWNEUHQVLWDTEDGHUIBOCEFGUHHIJU
+      JUKULUKAODWCWMGWDUMWDUNVNDTZVRWHWBWLUDWOVQWGSWOVPWFBCVNDVOUOUPUQWOWAWKSWO
+      VTWJBCWOVSWIVOVNDVBURUPUQUSMAWHWLAWHAWHAWGUTQWHVAQABCDEFGHIJKLMNVCWGVDUKV
+      EZVFAWLAWLAWKUTQWLVAQABCDEFGHIJKLMNVGWKVDUKVEZVFVHVIAWHWLWPWQVJVK $.
+  $}
+
+  ${
+    $d G u x $.  $d W u x $.
+    $( The vertex degree expressed as operation.  (Contributed by AV,
+       12-Dec-2021.) $)
+    vtxdgop $p |- ( G e. W -> ( VtxDeg ` G )
+                              = ( ( Vtx ` G ) VtxDeg ( iEdg ` G ) ) ) $=
+      ( vu vx wcel cvtx cfv ciedg cvtxdg cv cdm crab chash wceq cxad co syl2anc
+      cmpt cvv eqid cop csn vtxex iedgex opexg vtxdgfval opvtxfv opiedgfv dmeqd
+      syl fveq1d eleq2d rabeqbidv fveq2d oveq12d mpteq12dv eqtrd df-ov 3eqtr4rd
+      eqeq1d a1i ) ABEZAFGZAHGZUAZIGZCVCCJZDJZVDGZEZDVDKZLZMGZVIVGUBZNZDVKLZMGZ
+      OPZRZVCVDIPZAIGVBVFCVEFGZVGVHVEHGZGZEZDWBKZLZMGZWCVNNZDWELZMGZOPZRZVSVBVE
+      SEZVFWLNVBVCSEZVDSEZWMABUCZABUDZVCVDSSUEQDCWEVEWBWASWATWBTWETUFUJVBCWAWKV
+      CVRVBWNWOWAVCNWPWQVDVCSSUGQVBWGVMWJVQOVBWFVLMVBWDVJDWEVKVBWBVDVBWNWOWBVDN
+      WPWQVDVCSSUHQZUIZVBWCVIVGVBVHWBVDWRUKZULUMUNVBWIVPMVBWHVODWEVKWSVBWCVIVNW
+      TUTUMUNUOUPUQVTVFNVBVCVDIURVADCVKAVDVCBVCTVDTVKTUFUS $.
+  $}
+
+  ${
+    $d G u x $.  $d V u x $.  $d W u $.  $d A x $.  $d I x $.  $d ph u $.
+    vtxdgf.v $e |- V = ( Vtx ` G ) $.
+    vtxdgfif.i $e |- I = ( iEdg ` G ) $.
+    vtxdgfif.a $e |- A = dom I $.
+    vtxdgfif.afi $e |- ( ph -> A e. Fin ) $.
+    vtxdgfif.v $e |- ( ph -> V e. Fin ) $.
+    vtxdgfif.g $e |- ( ph -> G e. UPGraph ) $.
+    $( In a finite graph, the vertex degree function is a function from
+       vertices to nonnegative integers.  (Contributed by Jim Kingdon,
+       17-Feb-2026.) $)
+    vtxdgfif $p |- ( ph -> ( VtxDeg ` G ) : V --> NN0 ) $=
+      ( vu vx cv cfv wcel cn0 syl cfn adantr crab chash csn wceq cxad co cvtxdg
+      cupgr cmpt vtxdgfval caddc simpr vtxedgfi hashcl nn0red vtxlpfi nn0addcld
+      wa rexaddd eqeltrd fmpt3d ) ALELNZMNDOZPMBUAZUBOZVCVBUCUDMBUAZUBOZUEUFZQC
+      UGOZACUHPZVILEVHUIUDKMLBCDEUHFGHUJRAVBEPZURZVHVEVGUKUFQVLVEVGVLVEVLVDSPVE
+      QPVLMBVBCDEFGHABSPVKITZAESPVKJTZAVKULZAVJVKKTZUMVDUNRZUOVLVGVLVFSPVGQPVLM
+      BVBCDEFGHVMVNVOVPUPVFUNRZUOUSVLVEVGVQVRUQUTVA $.
+  $}
+
+  ${
+    vtxdg0v.v $e |- V = ( Vtx ` G ) $.
+    $( The degree of a vertex in the null graph is zero (or anything else),
+       because there are no vertices.  (Contributed by AV, 11-Dec-2020.) $)
+    vtxdg0v $p |- ( ( G = (/) /\ U e. V ) -> ( ( VtxDeg ` G ) ` U ) = 0 ) $=
+      ( wceq wcel cvtxdg cfv cc0 cvtx eleq2i fveq2 vtxval0 eqtrdi eleq2d bitrid
+      c0 noel pm2.21i biimtrdi imp ) BQEZACFZABGHHIEZUBUCAQFZUDUCABJHZFUBUECUFA
+      DKUBUFQAUBUFQJHQBQJLMNOPUEUDARSTUA $.
+
+    $d U x $.  $d G x $.  $d I x $.  $d U x $.  $d V x $.
+    vtxdg0e.i $e |- I = ( iEdg ` G ) $.
+    vtxdgfi0e.u $e |- ( ph -> U e. V ) $.
+    vtxdgfi0e.i $e |- ( ph -> I = (/) ) $.
+    vtxdgfi0e.v $e |- ( ph -> V e. Fin ) $.
+    vtxdgfi0e.g $e |- ( ph -> G e. UPGraph ) $.
+    $( The degree of a vertex in an empty graph is zero, because there are no
+       edges.  This is the base case for the induction for calculating the
+       degree of a vertex, for example in a K&ouml;nigsberg graph.
+       (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by Alexander van
+       der Vekens, 20-Dec-2017.)  (Revised by AV, 11-Dec-2020.)  (Revised by
+       AV, 22-Mar-2021.) $)
+    vtxdgfi0e $p |- ( ph -> ( ( VtxDeg ` G ) ` U ) = 0 ) $=
+      ( vx cfv cdm crab chash caddc cc0 c0 eqtrdi cvtxdg wcel csn wceq eqid cfn
+      cv co dmeqd dm0 0fi eqeltrdi vtxdgfifival rabeqdv rab0 hash0 oveq12d 00id
+      fveq2d eqtrd ) ABCUAMMBLUGDMZUBZLDNZOZPMZVABUCUDZLVCOZPMZQUHZRALVCBCDEFGV
+      CUEAVCSUFAVCSNSADSIUIUJTZUKULJHKUMAVIRRQUHRAVERVHRQAVESPMZRAVDSPAVDVBLSOS
+      AVBLVCSVJUNVBLUOTUSUPTAVHVKRAVGSPAVGVFLSOSAVFLVCSVJUNVFLUOTUSUPTUQURTUT
+      $.
+  $}
+
+  ${
+    $d H u x $.  $d G u x $.  $d ph u x $.
+    vtxdeqd.g $e |- ( ph -> G e. X ) $.
+    vtxdeqd.h $e |- ( ph -> H e. Y ) $.
+    vtxdeqd.v $e |- ( ph -> ( Vtx ` H ) = ( Vtx ` G ) ) $.
+    vtxdeqd.i $e |- ( ph -> ( iEdg ` H ) = ( iEdg ` G ) ) $.
+    $( Equality theorem for the vertex degree:  If two graphs are structurally
+       equal, their vertex degree functions are equal.  (Contributed by AV,
+       26-Feb-2021.) $)
+    vtxdeqd $p |- ( ph -> ( VtxDeg ` H ) = ( VtxDeg ` G ) ) $=
+      ( vu vx cvtx cfv cv wcel crab chash wceq cxad eqid cdm csn co cmpt cvtxdg
+      ciedg dmeqd fveq1d eleq2d rabeqbidv fveq2d eqeq1d mpteq12dv vtxdgfval syl
+      oveq12d 3eqtr4d ) AJCLMZJNZKNZCUFMZMZOZKVAUAZPZQMZVBUSUBZRZKVDPZQMZSUCZUD
+      ZJBLMZUSUTBUFMZMZOZKVNUAZPZQMZVOVGRZKVQPZQMZSUCZUDZCUEMZBUEMZAJURVKVMWCHA
+      VFVSVJWBSAVEVRQAVCVPKVDVQAVAVNIUGZAVBVOUSAUTVAVNIUHZUIUJUKAVIWAQAVHVTKVDV
+      QWGAVBVOVGWHULUJUKUPUMACEOWEVLRGKJVDCVAUREURTVATVDTUNUOABDOWFWDRFKJVQBVNV
+      MDVMTVNTVQTUNUOUQ $.
+  $}
+
+  ${
+    $d G x $.  $d H x $.  $d I x $.  $d J x $.  $d N x $.  $d U x $.  $d V x $.
+    $d ph x $.
+    vtxdun.i $e |- I = ( iEdg ` G ) $.
+    vtxdun.j $e |- J = ( iEdg ` H ) $.
+    vtxdun.vg $e |- V = ( Vtx ` G ) $.
+    vtxdun.vh $e |- ( ph -> ( Vtx ` H ) = V ) $.
+    vtxdun.vu $e |- ( ph -> ( Vtx ` U ) = V ) $.
+    vtxdfifiun.v $e |- ( ph -> V e. Fin ) $.
+    vtxdfifiun.g $e |- ( ph -> G e. UPGraph ) $.
+    vtxdfifiun.h $e |- ( ph -> H e. UPGraph ) $.
+    vtxdun.d $e |- ( ph -> ( dom I i^i dom J ) = (/) ) $.
+    vtxdun.fi $e |- ( ph -> Fun I ) $.
+    vtxdun.fj $e |- ( ph -> Fun J ) $.
+    vtxdun.n $e |- ( ph -> N e. V ) $.
+    vtxdun.u $e |- ( ph -> ( iEdg ` U ) = ( I u. J ) ) $.
+    vtxdfiun.a $e |- ( ph -> dom I e. Fin ) $.
+    vtxdfiun.b $e |- ( ph -> dom J e. Fin ) $.
+    $( The degree of a vertex in the union of two pseudographs of finite size
+       on the same finite vertex set is the sum of the degrees of the vertex in
+       each pseudograph.  (Contributed by Mario Carneiro, 12-Mar-2015.)
+       (Revised by Alexander van der Vekens, 21-Jan-2018.)  (Revised by AV,
+       19-Feb-2021.) $)
+    vtxdfifiun $p |- ( ph -> ( ( VtxDeg ` U ) ` N )
+                     = ( ( ( VtxDeg ` G ) ` N ) + ( ( VtxDeg ` H ) ` N ) ) ) $=
+      ( vx cv ciedg cfv wcel cdm crab chash csn wceq caddc co cvtxdg cun wa cab
+      wo df-rab dmeqd dmun eqtrdi eleq2d elun bitrdi anbi1d andir abbidv eqtrid
+      unab eqcomi a1i fveq1d adantr wfn c0 funfnd anim1i fvun1 syl3anc rabbidva
+      cin eqtrd eqtr3id fvun2 uneq12d 3eqtrd fveq2d eqid vtxedgfi cvtx eleqtrrd
+      cfn eqeltrd wss ssrab2 ss2in mp2an sseqtrid ss0 syl hashun eqeq1d vtxlpfi
+      oveq12d cn0 hashcl nn0cnd unfidisj cvv 1vgrex upgrun vtxdgfifival 3eqtr4d
+      add4d ) AGUDUEZBUFUGZUGZUHZUDXSUIZUJZUKUGZXTGULZUMZUDYBUJZUKUGZUNUOZGXREU
+      GZUHZUDEUIZUJZUKUGZYJYEUMZUDYLUJZUKUGZUNUOZGXRFUGZUHZUDFUIZUJZUKUGZYSYEUM
+      ZUDUUAUJZUKUGZUNUOZUNUOZGBUPUGUGGCUPUGUGZGDUPUGUGZUNUOAYIYNUUCUNUOZYQUUFU
+      NUOZUNUOUUHAYDUUKYHUULUNAYDYMUUBUQZUKUGZUUKAYCUUMUKAYCXRYLUHZYAURZXRUUAUH
+      ZYAURZUTZUDUSZUUPUDUSZUURUDUSZUQZUUMAYCXRYBUHZYAURZUDUSUUTYAUDYBVAAUVEUUS
+      UDAUVEUUOUUQUTZYAURUUSAUVDUVFYAAUVDXRYLUUAUQZUHUVFAYBUVGXRAYBEFUQZUIUVGAX
+      SUVHUAVBEFVCVDZVEXRYLUUAVFVGZVHUUOUUQYAVIVGVJVKUUTUVCUMAUVCUUTUUPUURUDVLV
+      MVNAUVAYMUVBUUBAUVAYAUDYLUJYMYAUDYLVAAYAYKUDYLAUUOURZXTYJGUVKXTXRUVHUGZYJ
+      AXTUVLUMZUUOAXRXSUVHUAVOZVPUVKEYLVQZFUUAVQZYLUUAWDZVRUMZUUOURUVLYJUMAUVOU
+      UOAERVSZVPAUVPUUOAFSVSZVPAUVRUUOQVTYLUUAEFXRWAWBWEZVEWCWFAUVBYAUDUUAUJUUB
+      YAUDUUAVAAYAYTUDUUAAUUQURZXTYSGUWBXTUVLYSAUVMUUQUVNVPUWBUVOUVPUVRUUQURUVL
+      YSUMAUVOUUQUVSVPAUVPUUQUVTVPAUVRUUQQVTYLUUAEFXRWGWBWEZVEWCWFWHWIWJAYMWOUH
+      ZUUBWOUHZYMUUBWDZVRUMZUUNUUKUMAUDYLGCEHKIYLWKZUBNTOWLZAUDUUAGDFDWMUGZUWJW
+      KZJUUAWKZUCAUWJHWOLNWPZAGHUWJTLWNZPWLZAUWFVRWQUWGAUVQUWFVRYMYLWQUUBUUAWQU
+      WFUVQWQYKUDYLWRYTUDUUAWRYMYLUUBUUAWSWTQXAUWFXBXCYMUUBXDWBWEAYHYPUUEUQZUKU
+      GZUULAYGUWPUKAYGUUOYFURZUUQYFURZUTZUDUSZUWRUDUSZUWSUDUSZUQZUWPAYGUVDYFURZ
+      UDUSUXAYFUDYBVAAUXEUWTUDAUXEUVFYFURUWTAUVDUVFYFUVJVHUUOUUQYFVIVGVJVKUXAUX
+      DUMAUXDUXAUWRUWSUDVLVMVNAUXBYPUXCUUEAUXBYFUDYLUJYPYFUDYLVAAYFYOUDYLUVKXTY
+      JYEUWAXEWCWFAUXCYFUDUUAUJUUEYFUDUUAVAAYFUUDUDUUAUWBXTYSYEUWCXEWCWFWHWIWJA
+      YPWOUHZUUEWOUHZYPUUEWDZVRUMZUWQUULUMAUDYLGCEHKIUWHUBNTOXFZAUDUUAGDFUWJUWK
+      JUWLUCUWMUWNPXFZAUXHVRWQUXIAUVQUXHVRYPYLWQUUEUUAWQUXHUVQWQYOUDYLWRUUDUDUU
+      AWRYPYLUUEUUAWSWTQXAUXHXBXCYPUUEXDWBWEXGAYNUUCYQUUFAYNAUWDYNXHUHUWIYMXIXC
+      XJAUUCAUWEUUCXHUHUWOUUBXIXCXJAYQAUXFYQXHUHUXJYPXIXCXJAUUFAUXGUUFXHUHUXKUU
+      EXIXCXJXQWEAUDYBGBXSBWMUGZUXLWKZXSWKYBWKAYBUVGWOUVIAYLWOUHUUAWOUHUVRUVGWO
+      UHUBUCQYLUUAXKWBWPAUXLHWOMNWPAGHUXLTMWNZABEFCDHXLOPIJKLQAGUXLUHBXLUHUXNBG
+      UXLUXMXMXCMUAXNXOAUUIYRUUJUUGUNAUDYLGCEHKIUWHUBNTOXOAUDUUAGDFUWJUWKJUWLUC
+      UWMUWNPXOXGXP $.
+  $}
+
+  ${
+    $d A x y $.  $d G x $.  $d I u y $.  $d I x y $.  $d U u y $.  $d U x y $.
+    $d V x $.  $d ph y $.
+    vtxdlfgrval.v $e |- V = ( Vtx ` G ) $.
+    vtxdlfgrval.i $e |- I = ( iEdg ` G ) $.
+    vtxdlfgrval.a $e |- A = dom I $.
+    vtxdlfgrval.d $e |- D = ( VtxDeg ` G ) $.
+    vtxdumgrfival.g $e |- ( ph -> G e. UMGraph ) $.
+    vtxdumgrfival.u $e |- ( ph -> U e. V ) $.
+    vtxdumgrfival.a $e |- ( ph -> A e. Fin ) $.
+    vtxdumgrfival.v $e |- ( ph -> V e. Fin ) $.
+    $( The value of the vertex degree function for a finite multigraph.
+       (Contributed by Alexander van der Vekens, 20-Dec-2017.)  (Revised by AV,
+       23-Feb-2021.) $)
+    vtxdumgrfival $p |- ( ph
+        -> ( D ` U ) = ( # ` { x e. A | U e. ( I ` x ) } ) ) $=
+      ( vy cfv wceq c0 vu cv wcel crab chash caddc co cvtxdg fveq1i cumgr cupgr
+      csn cc0 umgrupgr syl vtxdgfifival eqtrid fveqeq2 cbvrabv wss c1o cen wral
+      wbr wi wex sneq eqeq2d spcegv en1 imbitrrdi ralrimivw ss2rab sylibr fveq2
+      breq1d c2o cdom cpw wf cdm umgrislfupgrdom sylib simprd feq2i lfgrnloopen
+      wa eqtr3id sseqtrd ss0 fveq2d hash0 eqtrdi oveq2d cfn cn0 vtxedgfi hashcl
+      eqid nn0cnd addridd 3eqtrd ) AEDRZEBUBZGRZUCBCUDZUERZXEEULZSZBCUDZUERZUFU
+      GZXGUMUFUGXGAXCEFUHRZRXLEDXMLUIABCEFGHIJKOPNAFUJUCZFUKUCZMFUNUOZUPUQAXKUM
+      XGUFAXKTUERUMAXJTUEAXJQUBZGRZXHSZQCUDZTXIXSBQCXDXQXHGURUSAXTTUTXTTSAXTXRV
+      AVBVDZQCUDZTAXSYAVEZQCVCXTYBUTAYCQCAXSXRUAUBZULZSZUAVFZYAAEHUCXSYGVENYFXS
+      UAEHYDESYEXHXRYDEVGVHVIUOUAXRVJVKVLXSYAQCVMVNAYBXEVAVBVDZBCUDZTYHYABQCXDX
+      QSXEXRVAVBXDXQGVOVPUSACVQXDVRVDBHVSUDZGVTZYITSAGWAZYJGVTZYKAXOYMAXNXOYMWG
+      MBFGHIJWBWCWDCYLYJGKWEVNBCYJFGHJKYJWSWFUOWHWIXTWJUOUQWKWLWMWNAXGAXGAXFWOU
+      CXGWPUCABCEFGHIJKOPNXPWQXFWRUOWTXAXB $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Walks, paths and cycles
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -200547,6 +200892,9 @@ htmldef "USPGraph" as 'USPGraph';
 htmldef "USGraph" as 'USGraph';
   althtmldef "USGraph" as 'USGraph';
   latexdef "USGraph" as "\mathrm{USGraph}";
+htmldef "VtxDeg" as 'VtxDeg';
+  althtmldef "VtxDeg" as 'VtxDeg';
+  latexdef "VtxDeg" as "\mathrm{VtxDeg}";
 htmldef "Walks" as "Walks";
   althtmldef "Walks" as "Walks";
   latexdef "Walks" as "\mathrm{Walks}";
@@ -203668,22 +204016,6 @@ $)
       f1f mpd exlimddv ) AEFGZBAHZCAHZIZAEDJZKZBCLZDUNUOUSDMUPAEDNOUQUSUAZBURRZ
       CURRZLZUTVAVBSVCVAVBEHVBSLVAAEBURUSAEURUBUQAEURUKUCZUNUOUPUSUDZPVBQTVAVCE
       HVCSLVAAECURVEUNUOUPUSUEZPVCQTUFVAUSUOUPVDUTUGUQUSUHVFVGAEBCURUIUJULUM $.
-  $}
-
-  ${
-    $d A x y $.  $d B x y $.
-    $( Equinumerosity of finite sets is decidable.  (Contributed by Jim
-       Kingdon, 10-Feb-2026.) $)
-    fidcen $p |- ( ( A e. Fin /\ B e. Fin ) -> DECID A ~~ B ) $=
-      ( vx vy cfn wcel wa cv cen wbr wdc wrex isfi biimpi wn wo simplrl simplrr
-      com entr adantr ad2antlr weq simprl nndceq syl2anc exmiddc simpr breqtrrd
-      syl ensymd syl2an2r ex sylan wb nneneq mpbid orim12d mpd sylibr rexlimddv
-      con3d df-dc ) AEFZBEFZGZACHZIJZABIJZKZCSVDVHCSLZVEVDVKCAMNUAVFVGSFZVHGZGZ
-      BDHZIJZVJDSVEVPDSLZVDVMVEVQDBMNUBVNVOSFZVPGZGZVIVIOZPZVJVTCDUCZWCOZPZWBVT
-      WCKZWEVTVLVRWFVFVLVHVSQZVNVRVPUDVGVOUEUFWCUGUJVTWCVIWDWAVTWCVIVTVHWCVGBIJ
-      ZVIVFVLVHVSRZVTWCGZBVGWJBVOVGIVNVRVPWCRVTWCUHUIUKAVGBTULUMVTVIWCVTVIWCVTV
-      IGZVGVOIJZWCWKWHVPWLVTVGAIJVIWHVTAVGWIUKVGABTUNVNVRVPVIRVGBVOTUFVTVLVIVRW
-      LWCUOWGVNVRVPVIQVGVOUPULUQUMVBURUSVIVCUTVAVA $.
   $}
 
   $( Any subset of ordinal one being an element of ordinal two is equivalent to
