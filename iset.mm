@@ -198943,6 +198943,17 @@ $)
   $}
 
   ${
+    $d g n w $.
+    $( A word over the set of vertices representing a closed walk of a fixed
+       length.  (Contributed by Jim Kingdon, 22-Feb-2026.) $)
+    isclwwlkni $p |- ( W e. ( N ClWWalksN G )
+        -> ( W e. ( ClWWalks ` G ) /\ ( # ` W ) = N ) ) $=
+      ( vn vg vw cclwwlkn co wcel cclwwlk cfv chash wa cn0 cvv wb cv df-clwwlkn
+      wceq crab elmpocl isclwwlkng syl ibi ) CBAGHIZCAJKICLKBSMZUEBNIAOIMUEUFPD
+      ENOFQLKDQSFEQJKTBAGCFEDRUAABOCUBUCUD $.
+  $}
+
+  ${
     $d G w $.  $d G x $.  $d g n w $.
     $( There is no closed walk of length 0 (i.e. a closed walk without any
        edge) represented by a word of vertices.  (Contributed by Alexander van
