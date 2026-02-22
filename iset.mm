@@ -198942,6 +198942,20 @@ $)
       GDEABCPSUEUHEDUFUDDBKQTUA $.
   $}
 
+  ${
+    $d G w $.  $d G x $.  $d g n w $.
+    $( There is no closed walk of length 0 (i.e. a closed walk without any
+       edge) represented by a word of vertices.  (Contributed by Alexander van
+       der Vekens, 15-Sep-2018.)  (Revised by AV, 24-Apr-2021.) $)
+    clwwlkn0 $p |- ( 0 ClWWalksN G ) = (/) $=
+      ( vx vn vg vw cc0 cclwwlkn co c0 wcel cvv cn0 chash cfv wceq cclwwlk crab
+      cv clt wbr df-clwwlkn elmpocl2 noel pm2.21i 0nn0 clwwlkng mpan rabeq0 0re
+      ltnri breq2 mtbiri clwwlkgt0 nsyl3 mprgbir eqtrdi eleq2d pm5.21nii eqriv
+      wn ) BFAGHZIBRZVAJAKJZVBIJZCDLKERZMNZCROEDRPNQFAGVBEDCUAUBVDVCVBUCUDVCVAI
+      VBVCVAVFFOZEAPNZQZIFLJVCVAVIOUEEAFKUFUGVIIOVGUTEVHVGEVHUHVGFVFSTZVEVHJVGV
+      JFFSTFUIUJVFFFSUKULAVEUMUNUOUPUQURUS $.
+  $}
+
 
 $(
 ###############################################################################
