@@ -198967,6 +198967,13 @@ $)
       JFFSTFUIUJVFFFSUKULAVEUMUNUOUPUQURUS $.
   $}
 
+  $( A closed walk of a fixed length as word is a closed walk (in an undirected
+     graph) as word.  (Contributed by Alexander van der Vekens, 15-Mar-2018.)
+     (Revised by AV, 24-Apr-2021.)  (Proof shortened by AV, 22-Mar-2022.) $)
+  clwwlkclwwlkn $p |- ( W e. ( N ClWWalksN G ) -> W e. ( ClWWalks ` G ) ) $=
+    ( cclwwlkn co wcel cclwwlk cfv chash wceq isclwwlkni simpld ) CBADEFCAGHFCI
+    HBJABCKL $.
+
 
 $(
 ###############################################################################
