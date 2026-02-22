@@ -198930,6 +198930,18 @@ $)
       DUSVFVDUSNVEVCBOUESVEVBURUJVFVACUQUKUFUGAFEUHUIUL $.
   $}
 
+  ${
+    $d G w $.  $d N w $.  $d W w $.
+    $( A word over the set of vertices representing a closed walk of a fixed
+       length.  (Contributed by Alexander van der Vekens, 15-Mar-2018.)
+       (Revised by AV, 24-Apr-2021.)  (Revised by AV, 22-Mar-2022.) $)
+    isclwwlkng $p |- ( ( N e. NN0 /\ G e. V ) -> ( W e. ( N ClWWalksN G )
+        <-> ( W e. ( ClWWalks ` G ) /\ ( # ` W ) = N ) ) ) $=
+      ( vw cn0 wcel wa cclwwlkn co chash cfv wceq cclwwlk crab clwwlkng fveqeq2
+      cv eleq2d elrab bitrdi ) BFGACGHZDBAIJZGDERZKLBMZEANLZOZGDUFGDKLBMZHUBUCU
+      GDEABCPSUEUHEDUFUDDBKQTUA $.
+  $}
+
 
 $(
 ###############################################################################
