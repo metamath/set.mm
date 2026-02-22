@@ -198974,6 +198974,15 @@ $)
     ( cclwwlkn co wcel cclwwlk cfv chash wceq isclwwlkni simpld ) CBADEFCAGHFCI
     HBJABCKL $.
 
+  ${
+    $d G w $.  $d N w $.
+    $( The closed walks of a fixed length as words are closed walks (in an
+       undirected graph) as words.  (Contributed by Alexander van der Vekens,
+       15-Mar-2018.)  (Revised by AV, 12-Apr-2021.) $)
+    clwwlksclwwlkn $p |- ( N ClWWalksN G ) C_ ( ClWWalks ` G ) $=
+      ( vw cclwwlkn co cclwwlk cfv cv clwwlkclwwlkn ssriv ) CBADEAFGABCHIJ $.
+  $}
+
 
 $(
 ###############################################################################
