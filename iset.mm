@@ -198915,6 +198915,21 @@ $)
                                  { w e. ( ClWWalks ` g ) | ( # ` w ) = n } ) $.
   $}
 
+  ${
+    $d G g n w $.  $d N g n w $.
+    $( The set of closed walks of a fixed length ` N ` as words over the set of
+       vertices in a graph ` G ` .  (Contributed by Alexander van der Vekens,
+       20-Mar-2018.)  (Revised by AV, 24-Apr-2021.)  (Revised by AV,
+       22-Mar-2022.) $)
+    clwwlkng $p |- ( ( N e. NN0 /\ G e. V ) ->
+        ( N ClWWalksN G ) = { w e. ( ClWWalks ` G ) | ( # ` w ) = N } ) $=
+      ( vn vg cn0 wcel wa cvv cv chash cfv wceq cclwwlk crab cclwwlkn co adantl
+      simpl elex eqid clwwlkex rabexd fveq2 adantr rabeqbidv df-clwwlkn ovmpoga
+      wb eqeq2 syl3anc ) CGHZBDHZIZUMBJHZAKLMZCNZABOMZPZJHCBQRUTNUMUNTUNUPUMBDU
+      ASUOURAUSUTJUTUBUNUSJHUMBDUCSUDEFCBGJUQEKZNZAFKZOMZPUTQJVACNZVCBNZIVBURAV
+      DUSVFVDUSNVEVCBOUESVEVBURUJVFVACUQUKUFUGAFEUHUIUL $.
+  $}
+
 
 $(
 ###############################################################################
