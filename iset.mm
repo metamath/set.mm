@@ -198989,6 +198989,17 @@ $)
     ( cclwwlkn co wcel cclwwlk cfv chash wceq isclwwlkni simprd ) CBADEFCAGHFCI
     HBJABCKL $.
 
+  ${
+    $d g n w $.
+    $( The length of a closed walk of a fixed length as word is a positive
+       integer.  (Contributed by AV, 22-Mar-2022.) $)
+    clwwlknnn $p |- ( W e. ( N ClWWalksN G ) -> N e. NN ) $=
+      ( vn vg vw cclwwlkn co wcel cn cc0 wceq c0 noel clwwlkn0 eleq2i mtbir cn0
+      cv cfv oveq1 eleq2d mtbiri con2i wo cvv chash cclwwlk df-clwwlkn elmpocl1
+      crab elnn0 sylib ecased ) CBAGHZIZBJIZBKLZURUPURUPCKAGHZIZUTCMICNUSMCAOPQ
+      URUOUSCBKAGUAUBUCUDUPBRIUQURUEDERUFFSUGTDSLFESUHTUKBAGCFEDUIUJBULUMUN $.
+  $}
+
 
 $(
 ###############################################################################
