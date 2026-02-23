@@ -199008,6 +199008,14 @@ $)
       ( cclwwlkn co wcel cclwwlk cfv chash wceq wa cword isclwwlkni c0 clwwlkbp
       cvv wne simp2d adantr syl ) DBAFGHDAIJHZDKJBLZMDCNHZABDOUCUEUDUCARHUEDPSA
       CDEQTUAUB $.
+
+    $( Basic properties of a closed walk of a fixed length as word.
+       (Contributed by AV, 30-Apr-2021.)  (Proof shortened by AV,
+       22-Mar-2022.) $)
+    clwwlknbp $p |- ( W e. ( N ClWWalksN G )
+                      -> ( W e. Word V /\ ( # ` W ) = N ) ) $=
+      ( cclwwlkn co wcel cword chash cfv wceq clwwlknwrd clwwlknlen jca ) DBAFG
+      HDCIHDJKBLABCDEMABDNO $.
   $}
 
 
