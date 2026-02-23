@@ -199080,6 +199080,18 @@ $)
       VLVM $.
   $}
 
+  $( The singleton word consisting of a vertex ` V ` represents a closed walk
+     of length 1 iff there is a loop at vertex ` V ` .  (Contributed by AV,
+     11-Feb-2022.) $)
+  loopclwwlkn1b $p |- ( V e. ( Vtx ` G )
+              -> ( { V } e. ( Edg ` G ) <-> <" V "> e. ( 1 ClWWalksN G ) ) ) $=
+    ( cs1 c1 cclwwlkn co wcel chash cfv wceq cvtx cword cc0 cedg clwwlkn1 sneqd
+    csn w3a eleq1d adantr s1fv biimpcd 3ad2ant3 com12 s1leng s1cl eqcomd biimpa
+    wi wa 3jca ex impbid bitr2id ) BCZDAEFGUOHIDJZUOAKIZLGZMUOIZQZANIZGZRZBUQGZ
+    BQZVAGZAUOOVDVCVFVCVDVFVBUPVDVFUIURVDVBVFVDUTVEVAVDUSBBUQUAZPSUBUCUDVDVFVCV
+    DVFUJUPURVBVDUPVFBUQUETVDURVFBUQUFTVDVFVBVDVEUTVAVDBUSVDUSBVGUGPSUHUKULUMUN
+    $.
+
 
 $(
 ###############################################################################
