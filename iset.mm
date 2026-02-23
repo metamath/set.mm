@@ -199111,6 +199111,28 @@ $)
       WIWFWDVMWNVPWOVTWQCWCDGVECWCVOVFWDVRWPVSWDVQWKWLOPVGVHVIVJVKVL $.
   $}
 
+  ${
+    $d G i $.  $d W i $.
+    $( A closed walk of length 2 represented as word is a word consisting of 2
+       symbols representing (not necessarily different) vertices connected by
+       (at least) one edge.  (Contributed by Alexander van der Vekens,
+       19-Sep-2018.)  (Revised by AV, 25-Apr-2021.) $)
+    clwwlkn2 $p |- ( W e. ( 2 ClWWalksN G ) <-> ( ( # ` W ) = 2
+                             /\ W e. Word ( Vtx ` G )
+                             /\ { ( W ` 0 ) , ( W ` 1 ) } e. ( Edg ` G ) ) ) $=
+      ( vi c2 co wcel cfv c1 cpr cc0 cmin cfzo wral w3a wceq eqid 3anass eqtrdi
+      wa eleq1d cclwwlkn cvtx cword cv caddc cedg chash cn 2nn isclwwlknx ax-mp
+      clsw wb csn oveq1 2m1e1 oveq2d fzo01 adantr raleqdv fveq2 fv0p1e1 preq12d
+      ralsn bitrdi prcom lswwrd fveq2d sylan9eqr preq2d eqtrid anbi12d pm5.32da
+      c0ex anidm bitrid pm5.32ri ancom bitr2i 3bitri ) BDAUAEFZBAUBGZUCFZCUDZBG
+      ZWDHUEEBGZIZAUFGZFZCJBUGGZHKEZLEZMZBULGZJBGZIZWHFZNZWJDOZSZWCWOHBGZIZWHFZ
+      SZWSSZWSWCXCNZDUHFWAWTUMUICWHADWBBWBPWHPUJUKWSWRXDWRWCWMWQSZSWSXDWCWMWQQW
+      SWCXGXCWSWCSZXGXCXCSXCXHWMXCWQXCXHWMWICJUNZMXCXHWICWLXIWSWLXIOWCWSWLJHLEX
+      IWSWKHJLWSWKDHKEHWJDHKUOUPRZUQURRUSUTWIXCCJVNWDJOZWGXBWHXKWEWOWFXAWDJBVAB
+      WDVBVCTVDVEXHWPXBWHXHWPWOWNIXBWNWOVFXHWNXAWOWCWSWNWKBGXAWBBVGWSWKHBXJVHVI
+      VJVKTVLXCVOVEVMVPVQXFWSXDSXEWSWCXCQWSXDVRVSVT $.
+  $}
+
 
 $(
 ###############################################################################
