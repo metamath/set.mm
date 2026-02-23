@@ -199092,6 +199092,25 @@ $)
     DVFUJUPURVBVDUPVFBUQUETVDURVFBUQUFTVDVFVBVDVEUTVAVDBUSVDUSBVGUGPSUHUKULUMUN
     $.
 
+  ${
+    $d G v $.  $d W v $.
+    $( A word represents a closed walk of length 1 iff this word is a singleton
+       word consisting of a vertex with an attached loop.  (Contributed by AV,
+       11-Feb-2022.) $)
+    clwwlkn1loopb $p |- ( W e. ( 1 ClWWalksN G )
+           <-> E. v e. ( Vtx ` G ) ( W = <" v "> /\ { v } e. ( Edg ` G ) ) ) $=
+      ( c1 cclwwlkn wcel chash cfv wceq cc0 csn w3a wa wrex sneqd eleq1d biimpd
+      wi imp adantr co cvtx cword cedg cv cs1 clwwlkn1 wrdl1exs1 fveq1 sylan9eq
+      s1fv ex com13 ancld reximdva syl5com expcom 3imp s1leng s1cl 3jca adantrl
+      eqcomd wb fveqeq2 eleq1 3anbi123d ad2antrl mpbird rexlimiva impbii bitri
+      ) CDBEUAFCGHDIZCBUBHZUCZFZJCHZKZBUDHZFZLZCAUEZUFZIZWBKZVSFZMZAVNNZBCUGWAW
+      HVMVPVTWHVPVMVTWHRVPVMMWDAVNNVTWHVNCAUHVTWDWGAVNVTWBVNFZMWDWFVTWIWDWFRWDW
+      IVTWFWDWIVTWFRWDWIMZVTWFWJVRWEVSWJVQWBWDWIVQJWCHZWBJCWCUIZWBVNUKZUJOPQULU
+      MSUNUOUPUQURWGWAAVNWIWGMWAWCGHDIZWCVOFZWKKZVSFZLZWIWFWRWDWIWFMWNWOWQWIWNW
+      FWBVNUSTWIWOWFWBVNUTTWIWFWQWIWFWQWIWEWPVSWIWBWKWIWKWBWMVCOPQSVAVBWDWAWRVD
+      WIWFWDVMWNVPWOVTWQCWCDGVECWCVOVFWDVRWPVSWDVQWKWLOPVGVHVIVJVKVL $.
+  $}
+
 
 $(
 ###############################################################################
