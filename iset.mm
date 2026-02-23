@@ -199060,6 +199060,26 @@ $)
       PVQVJVMAWBVOVJWAVNOQVIDMPUQURUSUTVAVBVFVCVKVPVQVDVE $.
   $}
 
+  ${
+    $d G i $.  $d W i $.
+    $( A closed walk of length 1 represented as word is a word consisting of 1
+       symbol representing a vertex connected to itself by (at least) one edge,
+       that is, a loop.  (Contributed by AV, 24-Apr-2021.)  (Revised by AV,
+       11-Feb-2022.) $)
+    clwwlkn1 $p |- ( W e. ( 1 ClWWalksN G ) <-> ( ( # ` W ) = 1
+                /\ W e. Word ( Vtx ` G ) /\ { ( W ` 0 ) } e. ( Edg ` G ) ) ) $=
+      ( vi c1 co wcel cfv cpr cc0 cmin cfzo wral w3a wceq wa eqid 3anass eqtrdi
+      wb c0 cclwwlkn cvtx cword cv caddc cedg chash csn cn 1nn isclwwlknx ax-mp
+      clsw ral0 oveq1 oveq2d fzo0 raleqdv adantr mpbiri biantrurd ancoms preq1d
+      1m1e0 dfsn2 eqtr4di eleq1d bitr3d pm5.32da bitrid pm5.32ri bitr2i 3bitri
+      lsw1 ancom ) BDAUAEFZBAUBGZUCFZCUDZBGVSDUEEBGHAUFGZFZCIBUGGZDJEZKEZLZBUMG
+      ZIBGZHZVTFZMZWBDNZOZVRWGUHZVTFZOZWKOZWKVRWNMZDUIFVPWLSUJCVTADVQBVQPVTPUKU
+      LWKWJWOWJVRWEWIOZOWKWOVRWEWIQWKVRWRWNWKVROZWIWRWNWSWEWIWSWEWACTLZWACUNWKW
+      EWTSVRWKWACWDTWKWDIIKETWKWCIIKWKWCDDJEIWBDDJUOVDRUPIUQRURUSUTVAWSWHWMVTWS
+      WHWGWGHWMWSWFWGWGVRWKWFWGNVQBVNVBVCWGVEVFVGVHVIVJVKWQWKWOOWPWKVRWNQWKWOVO
+      VLVM $.
+  $}
+
 
 $(
 ###############################################################################
