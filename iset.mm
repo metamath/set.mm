@@ -199021,6 +199021,29 @@ $)
       HDCIHDJKBLABCDEMABDNO $.
   $}
 
+  ${
+    $d G i $.  $d W i $.
+    isclwwlknx.v $e |- V = ( Vtx ` G ) $.
+    isclwwlknx.e $e |- E = ( Edg ` G ) $.
+    $( Characterization of a word representing a closed walk of a fixed length,
+       definition of ` ClWWalks ` expanded.  (Contributed by AV, 25-Apr-2021.)
+       (Proof shortened by AV, 22-Mar-2022.) $)
+    isclwwlknx $p |- ( N e. NN -> ( W e. ( N ClWWalksN G )
+                  <-> ( ( W e. Word V /\ A. i e. ( 0 ..^ ( ( # ` W ) - 1 ) )
+                                         { ( W ` i ) , ( W ` ( i + 1 ) ) } e. E
+                          /\ { ( lastS ` W ) , ( W ` 0 ) } e. E )
+                        /\ ( # ` W ) = N ) ) ) $=
+      ( cn wcel cfv c1 co cpr cc0 wa w3a wb 3anass anbi1i cword c0 wne cv caddc
+      chash cmin cfzo wral clsw wceq cclwwlkn eleq1 len0nnbi biimprcd biimtrrdi
+      wi impcom imp biantrurd bicomd pm5.32da pm5.32rd cclwwlk nnnn0 isclwwlkng
+      ex cn0 syl isclwwlk anass 3bitri bitrdi a1i 3bitr4d ) DIJZFEUAJZFUBUCZAUD
+      ZFKVSLUEMFKNBJAOFUFKZLUGMUHMUIZFUJKOFKNBJZPZPZPZVTDUKZPZVQWCPZWFPZFDCULMJ
+      ZVQWAWBQZWFPZVPWFWEWHVPWFWEWHRVPWFPZVQWDWCWMVQPZWCWDWNVRWCWMVQVRWFVPVQVRU
+      QZWFVPVTIJZWOVTDIUMVQVRWPEFUNUOUPURUSUTVAVBVGVCVPWJFCVDKJZWFPZWGVPDVHJWJW
+      RRDVECDFVFVIWQWEWFWQVQVRPZWAWBQWSWCPWEABCEFGHVJWSWAWBSVQVRWCVKVLTVMWLWIRV
+      PWKWHWFVQWAWBSTVNVO $.
+  $}
+
 
 $(
 ###############################################################################
