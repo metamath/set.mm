@@ -199042,6 +199042,22 @@ $)
       QZWFVPVTIJZWOVTDIUMVQVRWPEFUNUOUPURUSUTVAVBVGVCVPWJFCVDKJZWFPZWGVPDVHJWJW
       RRDVECDFVFVIWQWEWFWQVQVRPZWAWBQWSWCPWEABCEFGHVJWSWAWBSVQVRWCVKVLTVMWLWIRV
       PWKWHWFVQWAWBSTVNVO $.
+
+    $d N i $.
+    $( Properties of a set being a closed walk (represented by a word).
+       (Contributed by Alexander van der Vekens, 17-Jun-2018.)  (Revised by AV,
+       24-Apr-2021.)  (Proof shortened by AV, 23-Mar-2022.) $)
+    clwwlknp $p |- ( W e. ( N ClWWalksN G )
+     -> ( ( W e. Word V /\ ( # ` W ) = N )
+          /\ A. i e. ( 0 ..^ ( N - 1 ) ) { ( W ` i ) , ( W ` ( i + 1 ) ) } e. E
+          /\ { ( lastS ` W ) , ( W ` 0 ) } e. E ) ) $=
+      ( co wcel cfv wa c1 cpr cc0 cmin cfzo wral w3a adantr cclwwlkn cword wceq
+      chash cv caddc clwwlknbp simpr clwwlknnn isclwwlknx 3simpc biimtrdi mpcom
+      clsw cn wb oveq1 oveq2d raleqdv anbi1d ad2antll mpbid mpdan 3anass sylibr
+      jca ) FDCUAIJZFEUBJZFUDKZDUCZLZAUEZFKVLMUFIFKNBJZAODMPIZQIZRZFUNKOFKNBJZL
+      ZLZVKVPVQSVGVKVSCDEFGUGVGVKLZVKVRVGVKUHVTVMAOVIMPIZQIZRZVQLZVRVGWDVKDUOJZ
+      VGWDCDFUIWEVGVHWCVQSZVJLWDABCDEFGHUJWFWDVJVHWCVQUKTULUMTVJWDVRUPVGVHVJWCV
+      PVQVJVMAWBVOVJWAVNOQVIDMPUQURUSUTVAVBVFVCVKVPVQVDVE $.
   $}
 
 
