@@ -3448,7 +3448,7 @@ and is evaluated at a set</TD>
 </TR>
 
 <tr>
-  <td>~ elfvex</td>
+  <td>~ elfvfvex</td>
   <td>when a function value is inhabited</td>
 </tr>
 
@@ -9376,13 +9376,16 @@ or not.</TD>
 
 <TR>
   <TD>hashge0</TD>
-  <TD>~ hashcl</TD>
-  <TD>It is not clear there would be any way to combine the finite
-  and infinite cases.</TD>
+  <TD>~ hashcl , ~ 0dom</TD>
 </TR>
 
 <tr>
-  <td>hashgt0 , hashge1</td>
+  <td>hashgt0</td>
+  <td>~ fihashgt0 , ~ hashnncl , ~ dom1oi</td>
+</tr>
+
+<tr>
+  <td>hashge1</td>
   <td>~ hashnncl , ~ dom1oi</td>
 </tr>
 
@@ -17214,6 +17217,77 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>clwwlk</td>
+  <td>~ clwwlkg</td>
+</tr>
+
+<tr>
+  <td>clwlkclwwlk and lemmas</td>
+  <td><i>none</i></td>
+  <td>presumably provable using proofs similar to the
+  set.mm proofs (once ClWalks is defined)</td>
+</tr>
+
+<tr>
+  <td>clwlkclwwlk2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses clwlkclwwlk</td>
+</tr>
+
+<tr>
+  <td>clwlkclwwlkf</td>
+  <td><i>none</i></td>
+  <td>presumably provable using proofs similar to the
+  set.mm proofs (once ClWalks is defined)</td>
+</tr>
+
+<tr>
+  <td>clwlkclwwlkfo</td>
+  <td><i>none</i></td>
+  <td>presumably provable using proofs similar to the
+  set.mm proofs (once ClWalks is defined)</td>
+</tr>
+
+<tr>
+  <td>clwlkclwwlkf1</td>
+  <td><i>none</i></td>
+  <td>presumably provable using proofs similar to the
+  set.mm proofs (once ClWalks is defined)</td>
+</tr>
+
+<tr>
+  <td>clwlkclwwlkf1o</td>
+  <td><i>none</i></td>
+  <td>presumably provable using proofs similar to the
+  set.mm proofs (once ClWalks is defined)</td>
+</tr>
+
+<tr>
+  <td>clwlkclwwlken</td>
+  <td><i>none</i></td>
+  <td>may be possible once ClWalks is defined</td>
+</tr>
+
+<tr>
+  <td>clwwisshclwws and lemmas</td>
+  <td><i>none</i></td>
+  <td>may be possible once cyclShift is defined</td>
+</tr>
+
+<tr>
+  <td>clwwisshclwwsn</td>
+  <td><i>none</i></td>
+  <td>may be possible once cyclShift is defined</td>
+</tr>
+
+<tr>
+  <td>erclwwlk (and nearby theorems using the same equivalence
+  relation)</td>
+  <td><i>none</i></td>
+  <td>may be possible once cyclShift is defined</td>
+</tr>
+
+<tr>
   <td>df-eupth</td>
   <td><i>none</i></td>
   <td>depends on Trails ( df-trls )</td>
@@ -17224,7 +17298,7 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>we don't have a complete list of what this proof depends on,
   but here's a partial list of (direct or indirect) dependencies of the
-  set.mm proof: ClWWalks , ClWWalksN , ClWWalksNOn including clwwlknonccat ,
+  set.mm proof: ClWWalksN , ClWWalksNOn including clwwlknonccat ,
   EulerPaths ( df-eupth ), various VtxDeg theorems, eulerpath</td>
 </tr>
 

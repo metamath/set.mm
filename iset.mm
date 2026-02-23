@@ -51012,7 +51012,7 @@ $)
     $d B w $.  $d F w $.
     $( If a function value is inhabited, the function value is a set.
        (Contributed by Jim Kingdon, 30-Jan-2026.) $)
-    elfvex $p |- ( A e. ( F ` B ) -> ( F ` B ) e. _V ) $=
+    elfvfvex $p |- ( A e. ( F ` B ) -> ( F ` B ) e. _V ) $=
       ( vw cfv wcel wbr cio cvv df-fv weu eliotaeu eleq2s euiotaex syl eqeltrid
       cv ) ABCEZFZRBDQCGZDHZIDBCJZSTDKZUAIFUCAUARTDALUBMTDNOP $.
   $}
@@ -51022,9 +51022,9 @@ $)
     $( If a function value is inhabited, the argument is related to the
        function value.  (Contributed by Jim Kingdon, 31-Jan-2026.) $)
     fvmbr $p |- ( A e. ( F ` X ) -> X F ( F ` X ) ) $=
-      ( vw cfv wcel wbr cv cio wceq df-fv eqcomi cvv weu elfvex eliotaeu eleq2s
-      wb breq2 iota2 syl2anc mpbiri ) ACBEZFZCUCBGZCDHZBGZDIZUCJZUCUHDCBKZLUDUC
-      MFUGDNZUEUIRACBOUKAUHUCUGDAPUJQUGUEDUCMUFUCCBSTUAUB $.
+      ( vw cfv wcel wbr cv cio df-fv eqcomi cvv weu wb elfvfvex eliotaeu eleq2s
+      wceq breq2 iota2 syl2anc mpbiri ) ACBEZFZCUCBGZCDHZBGZDIZUCRZUCUHDCBJZKUD
+      UCLFUGDMZUEUINACBOUKAUHUCUGDAPUJQUGUEDUCLUFUCCBSTUAUB $.
   $}
 
   ${
@@ -100038,6 +100038,15 @@ $)
       QNTUAUBOPR $.
   $}
 
+  $( Membership in an earlier upper set of integers.  (Contributed by Thierry
+     Arnoux, 8-Oct-2018.) $)
+  eluzmn $p |- ( ( M e. ZZ /\ N e. NN0 ) -> M e. ( ZZ>= ` ( M - N ) ) ) $=
+    ( cz wcel cn0 wa cmin co cle wbr cuz simpl simpr nn0zd zsubcld caddc nn0red
+    cfv zred recnd readdcld cr nn0addge1 sylancom lesub1dd pncand breqtrd eluz2
+    syl3anbrc ) ACDZBEDZFZABGHZCDUJUMAIJAUMKRDULABUJUKLZULBUJUKMZNOUNULUMABPHZB
+    GHAIULAUPBULAUNSZULABUQULBUOQZUAURUJUKAUBDAUPIJUQABUCUDUEULABULAUQTULBURTUF
+    UGUMAUHUI $.
+
   ${
     eluz.1 $e |- M e. ZZ $.
     $( Membership in an upper set of integers.  (Contributed by NM,
@@ -116537,6 +116546,12 @@ $)
       XCVQSRWGXCVRRVSXBWIXEWJXFNXBWIXEHZWFYCXBWAWEFGZYGWFVPYAXBWNYHXMWEVQSAWEVR
       RVSXBWJXFHZWRYDXBWBWQFGZYIWRVPYBXBWTYJXNWQVQSBWQVRRVSVDVGVTVT $.
   $}
+
+  $( The cardinality of a finite nonempty set is greater than zero.
+     (Contributed by Thierry Arnoux, 2-Mar-2017.) $)
+  fihashgt0 $p |- ( ( A e. Fin /\ A =/= (/) ) -> 0 < ( # ` A ) ) $=
+    ( cfn wcel c0 wne wa chash cfv cn hashnncl biimpar nngt0d ) ABCZADEZFAGHZMO
+    ICNAJKL $.
 
   $( 1 is an element of the finite set of sequential nonnegative integers
      bounded by the size of a nonempty finite set.  (Contributed by AV,
@@ -197882,15 +197897,15 @@ $)
       ( vx vy cfv wbr cv co wss cc0 wral cvv wcel wa adantl cwlks c1 caddc cfzo
       cpr chash crn wrex wlkv simp1d wlkvtxeledgg mpancom wi wex cvtx cfz wlkpg
       eqid adantr elfzofz ffvelcdmd prmg syl simp2d vex fvexg sylancl ad3antrrr
-      wf simplr simpr sseldd fvmbr breq1 elabd wb elfvex elrng 3syl mpbird wceq
-      exlimddv sseq2 rspcedvd ex ralimdva mpd ) DAEUAJKZCLZAJZWIUBUCMAJZUEZWIDJ
-      ZFJZNZCODUFJZUDMZPZWLBLZNZBFUGZUHZCWQPZEQRZWHWRWHXDDQRZAQRZADEUIZUJZACDEF
-      QGUKULXDWHWRXCUMXHXDWHSZWOXBCWQXIWIWQRZSZWOXBXKWOSZWTWOBWNXAXLHLZWLRZWNXA
-      RZHXKXNHUNZWOXKWJEUOJZRXPXKOWPUPMZXQWIAXIXRXQAVIXJADEXQQXQURUQUSXJWIXRRXI
-      WIOWPUTTVAHWJWKXQVBVCUSXLXNSZXOILZWNFKZIUNZXSYAWMWNFKZIWMXIWMQRZXJWOXNXIX
-      EWIQRYDWHXEXDWHXDXEXFXGVDTCVEWIDQQVFVGVHXSXMWNRZYCXSWLWNXMXKWOXNVJXLXNVKV
-      LZXMFWMVMVCXTWMWNFVNVOXSYEWNQRXOYBVPYFXMWMFVQIWNFQVRVSVTWBWSWNWAWTWOVPXLW
-      SWNWLWCTXKWOVKWDWEWFULWG $.
+      wf simplr simpr sseldd fvmbr breq1 elabd wb elfvfvex 3syl mpbird exlimddv
+      elrng wceq sseq2 rspcedvd ex ralimdva mpd ) DAEUAJKZCLZAJZWIUBUCMAJZUEZWI
+      DJZFJZNZCODUFJZUDMZPZWLBLZNZBFUGZUHZCWQPZEQRZWHWRWHXDDQRZAQRZADEUIZUJZACD
+      EFQGUKULXDWHWRXCUMXHXDWHSZWOXBCWQXIWIWQRZSZWOXBXKWOSZWTWOBWNXAXLHLZWLRZWN
+      XARZHXKXNHUNZWOXKWJEUOJZRXPXKOWPUPMZXQWIAXIXRXQAVIXJADEXQQXQURUQUSXJWIXRR
+      XIWIOWPUTTVAHWJWKXQVBVCUSXLXNSZXOILZWNFKZIUNZXSYAWMWNFKZIWMXIWMQRZXJWOXNX
+      IXEWIQRYDWHXEXDWHXDXEXFXGVDTCVEWIDQQVFVGVHXSXMWNRZYCXSWLWNXMXKWOXNVJXLXNV
+      KVLZXMFWMVMVCXTWMWNFVNVOXSYEWNQRXOYBVPYFXMWMFVQIWNFQWAVRVSVTWSWNWBWTWOVPX
+      LWSWNWLWCTXKWOVKWDWEWFULWG $.
 
     $( The vertices of a walk are connected by indexed edges.  (Contributed by
        Alexander van der Vekens, 22-Jul-2018.)  (Revised by AV, 2-Jan-2021.)
@@ -197901,14 +197916,14 @@ $)
       ( vx vy wcel cfv wbr wa cv co wss cc0 wral cvv cwlks caddc cpr chash cfzo
       c1 crn wrex wlkvtxeledgg wex cvtx cfz wf eqid wlkpg adantr elfzofz adantl
       ffvelcdmd prmg syl wlkvg simpld vex fvexg sylancl ad3antrrr simplr sseldd
-      simpr fvmbr breq1 elabd wb elfvex elrng 3syl exlimddv wceq sseq2 rspcedvd
-      mpbird ex ralimdva mpd ) EGKDAEUALMNZCOZALZWGUFUBPALZUCZWGDLZFLZQZCRDUDLZ
-      UEPZSWJBOZQZBFUGZUHZCWOSACDEFGHUIWFWMWSCWOWFWGWOKZNZWMWSXAWMNZWQWMBWLWRXB
-      IOZWJKZWLWRKZIXAXDIUJZWMXAWHEUKLZKXFXARWNULPZXGWGAWFXHXGAUMWTADEXGGXGUNUO
-      UPWTWGXHKWFWGRWNUQURUSIWHWIXGUTVAUPXBXDNZXEJOZWLFMZJUJZXIXKWKWLFMZJWKWFWK
-      TKZWTWMXDWFDTKZWGTKXNWFXOATKADEGVBVCCVDWGDTTVEVFVGXIXCWLKZXMXIWJWLXCXAWMX
-      DVHXBXDVJVIZXCFWKVKVAXJWKWLFVLVMXIXPWLTKXEXLVNXQXCWKFVOJWLFTVPVQWBVRWPWLV
-      SWQWMVNXBWPWLWJVTURXAWMVJWAWCWDWE $.
+      simpr fvmbr breq1 elabd wb elfvfvex elrng 3syl mpbird exlimddv wceq sseq2
+      rspcedvd ex ralimdva mpd ) EGKDAEUALMNZCOZALZWGUFUBPALZUCZWGDLZFLZQZCRDUD
+      LZUEPZSWJBOZQZBFUGZUHZCWOSACDEFGHUIWFWMWSCWOWFWGWOKZNZWMWSXAWMNZWQWMBWLWR
+      XBIOZWJKZWLWRKZIXAXDIUJZWMXAWHEUKLZKXFXARWNULPZXGWGAWFXHXGAUMWTADEXGGXGUN
+      UOUPWTWGXHKWFWGRWNUQURUSIWHWIXGUTVAUPXBXDNZXEJOZWLFMZJUJZXIXKWKWLFMZJWKWF
+      WKTKZWTWMXDWFDTKZWGTKXNWFXOATKADEGVBVCCVDWGDTTVEVFVGXIXCWLKZXMXIWJWLXCXAW
+      MXDVHXBXDVJVIZXCFWKVKVAXJWKWLFVLVMXIXPWLTKXEXLVNXQXCWKFVOJWLFTVPVQVRVSWPW
+      LVTWQWMVNXBWPWLWJWAURXAWMVJWBWCWDWE $.
   $}
 
   ${
@@ -198625,6 +198640,246 @@ $)
       JZHEUHIUIUJUKULUNZGUOVFVGGUPZVEABEFGHIJKLMNOUQVFVGGURVHVFVGGUSVEVFVGGUTVA
       VBCGDVCVD $.
   $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Closed walks as words
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Closed walks as words
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $c ClWWalks $.
+
+  $( Extend class notation with closed walks (in an undirected graph) as word
+     over the set of vertices. $)
+  cclwwlk $a class ClWWalks $.
+
+  ${
+    $d g i w $.
+    $( Define the set of all closed walks (in an undirected graph) as words
+       over the set of vertices.  Such a word corresponds to the sequence p(0)
+       p(1) ... p(n-1) of the vertices in a closed walk p(0) e(f(1)) p(1)
+       e(f(2)) ... p(n-1) e(f(n)) p(n)=p(0) as defined elsewhere.  Notice that
+       the word does not contain the terminating vertex p(n) of the walk,
+       because it is always equal to the first vertex of the closed walk.
+       (Contributed by Alexander van der Vekens, 20-Mar-2018.)  (Revised by AV,
+       24-Apr-2021.) $)
+    df-clwwlk $a |- ClWWalks = ( g e. _V |-> { w e. Word ( Vtx ` g ) |
+                     ( w =/= (/) /\ A. i e. ( 0 ..^ ( ( # ` w ) - 1 ) )
+                               { ( w ` i ) , ( w ` ( i + 1 ) ) } e. ( Edg ` g )
+                       /\ { ( lastS ` w ) , ( w ` 0 ) } e. ( Edg ` g ) ) } ) $.
+  $}
+
+  ${
+    $d E g $.  $d G g i w $.  $d V g w $.
+    clwwlk.v $e |- V = ( Vtx ` G ) $.
+    clwwlk.e $e |- E = ( Edg ` G ) $.
+    $( The set of closed walks (in an undirected graph) as words over the set
+       of vertices.  (Contributed by Alexander van der Vekens, 20-Mar-2018.)
+       (Revised by AV, 24-Apr-2021.) $)
+    clwwlkg $p |- ( G e. W ->
+        ( ClWWalks ` G ) = { w e. Word V | ( w =/= (/)
+          /\ A. i e. ( 0 ..^ ( ( # ` w ) - 1 ) )
+            { ( w ` i ) , ( w ` ( i + 1 ) ) } e. E
+          /\ { ( lastS ` w ) , ( w ` 0 ) } e. E ) } ) $=
+      ( vg wcel cv cfv c1 co cpr cedg cc0 cvtx cvv wceq c0 wne caddc chash cmin
+      cfzo wral clsw w3a cword cclwwlk df-clwwlk fveq2 eqtr4di wrdeq syl eleq2d
+      crab ralbidv 3anbi23d rabeqbidv elex vtxex eqeltrid wrdexg rabexg fvmptd3
+      3syl ) DFJZIDAKZUAUBZBKZVJLVLMUCNVJLOZIKZPLZJZBQVJUDLMUENUFNZUGZVJUHLQVJL
+      OZVOJZUIZAVNRLZUJZURVKVMCJZBVQUGZVSCJZUIZAEUJZURZSUKSAIBULVNDTZWAWGAWCWHW
+      JWBETWCWHTWJWBDRLZEVNDRUMGUNWBEUOUPWJVRWEVTWFVKWJVPWDBVQWJVOCVMWJVODPLCVN
+      DPUMHUNZUQUSWJVOCVSWLUQUTVADFVBVIESJWHSJWISJVIEWKSGDFVCVDESVEWGAWHSVFVHVG
+      $.
+
+    $d E w $.  $d W i w $.
+    $( Properties of a word to represent a closed walk (in an undirected
+       graph).  (Contributed by Alexander van der Vekens, 20-Mar-2018.)
+       (Revised by AV, 24-Apr-2021.) $)
+    isclwwlk $p |- ( W e. ( ClWWalks ` G ) <-> ( ( W e. Word V /\ W =/= (/) )
+                                 /\ A. i e. ( 0 ..^ ( ( # ` W ) - 1 ) )
+                                    { ( W ` i ) , ( W ` ( i + 1 ) ) } e. E
+                                 /\ { ( lastS ` W ) , ( W ` 0 ) } e. E ) ) $=
+      ( vg vw cfv wcel c0 cv c1 co cpr cc0 chash w3a wa cclwwlk cword wne caddc
+      cmin cfzo wral clsw cvv cedg cvtx df-clwwlk mptrcl fstwrdne syl 3ad2antr1
+      crab 1vgrex clwwlkg eleq2d neeq1 fveq2 oveq1d oveq2d fveq1 preq12d eleq1d
+      raleqbidv 3anbi123d elrab bitrdi 3anass anass bicomi anbi2i 3bitri bitr4i
+      wceq pm5.21nii ) ECUAJZKZEDUBZKZELUCZAMZEJZWENUDOZEJZPZBKZAQERJZNUEOZUFOZ
+      UGZEUHJZQEJZPZBKZSZTZWCWDTZWNWRSZWACUIKZWTHUIIMZLUCZWEXDJZWGXDJZPZHMZUJJZ
+      KAQXDRJZNUEOZUFOZUGXDUHJZQXDJZPZXJKSIXIUKJUBUQUAECIHAULUMWCWNWDXCWRXAWPDK
+      XCDEUNCWPDFURUOUPXCWAEXEXHBKZAXMUGZXPBKZSZIWBUQZKWTXCVTYAEIABCDUIFGUSUTXT
+      WSIEWBXDEVRZXEWDXRWNXSWRXDELVAYBXQWJAXMWMYBXLWLQUFYBXKWKNUEXDERVBVCVDYBXH
+      WIBYBXFWFXGWHWEXDEVEWGXDEVEVFVGVHYBXPWQBYBXNWOXOWPXDEUHVBQXDEVEVFVGVIVJVK
+      VSXBXAWNWRTZTWCWDYCTZTWTXAWNWRVLWCWDYCVMYDWSWCWSYDWDWNWRVLVNVOVPVQ $.
+  $}
+
+  ${
+    $d G i $.  $d W i $.  $d g i w $.
+    clwwlkbp.v $e |- V = ( Vtx ` G ) $.
+    $( Basic properties of a closed walk (in an undirected graph) as word.
+       (Contributed by Alexander van der Vekens, 15-Mar-2018.)  (Revised by AV,
+       24-Apr-2021.) $)
+    clwwlkbp $p |- ( W e. ( ClWWalks ` G )
+                      -> ( G e. _V /\ W e. Word V /\ W =/= (/) ) ) $=
+      ( vg vw vi cclwwlk cfv wcel cvv cword c0 wne w3a cv c1 co cpr cc0 wa cedg
+      caddc chash cmin cfzo wral clsw cvtx crab df-clwwlk eqid isclwwlk simp1bi
+      mptrcl 3anass sylanbrc ) CAHIJZAKJZCBLJZCMNZUAZUSUTVAOEKFPZMNGPZVCIVDQUCR
+      ZVCISEPZUBIZJGTVCUDIQUERUFRUGVCUHITVCISVGJOFVFUIILUJHCAFEGUKUOURVBVDCIVEC
+      ISAUBIZJGTCUDIQUERUFRUGCUHITCISVHJGVHABCDVHULUMUNUSUTVAUPUQ $.
+  $}
+
+  $( There is no empty closed walk (i.e. a closed walk without any edge)
+     represented by a word of vertices.  (Contributed by Alexander van der
+     Vekens, 15-Sep-2018.)  (Revised by AV, 24-Apr-2021.) $)
+  clwwlkgt0 $p |- ( W e. ( ClWWalks ` G ) -> 0 < ( # ` W ) ) $=
+    ( cclwwlk cfv wcel cvv cvtx cword c0 wne w3a cc0 chash clt eqid clwwlkbp wa
+    wbr lennncl nngt0d 3adant1 syl ) BACDEAFEZBAGDZHEZBIJZKLBMDZNRZAUDBUDOPUEUF
+    UHUCUEUFQUGUDBSTUAUB $.
+
+  ${
+    $d G i w $.
+    $( Closed walks (represented by words) are words.  (Contributed by
+       Alexander van der Vekens, 25-Mar-2018.)  (Revised by AV,
+       25-Apr-2021.) $)
+    clwwlksswrd $p |- ( ClWWalks ` G ) C_ Word ( Vtx ` G ) $=
+      ( vw vi cclwwlk cfv cvtx cword cv wcel c0 wne wa c1 caddc co cpr cedg cc0
+      chash eqid cmin cfzo wral clsw isclwwlk simp1bi simpld ssriv ) BADEZAFEZG
+      ZBHZUIIZULUKIZULJKZUMUNUOLCHZULEUPMNOULEPAQEZICRULSEMUAOUBOUCULUDERULEPUQ
+      ICUQAUJULUJTUQTUEUFUGUH $.
+  $}
+
+  ${
+    $d G i $.  $d W i $.
+    $( A closed walk of length 1 is a loop.  (Contributed by AV,
+       24-Apr-2021.) $)
+    clwwlk1loop $p |- ( ( W e. ( ClWWalks ` G ) /\ ( # ` W ) = 1 )
+                         -> { ( W ` 0 ) , ( W ` 0 ) } e. ( Edg ` G ) ) $=
+      ( vi cclwwlk cfv wcel chash c1 wceq cc0 cpr cedg cvtx cword c0 wa co eqid
+      wi imp wne cv caddc cmin cfzo wral clsw w3a isclwwlk preq1d eleq1d biimpd
+      lsw1 ex com23 adantr 3adant2 sylbi ) BADEFZBGEZHIZJBEZVBKZALEZFZUSBAMEZNF
+      ZBOUAZPZCUBZBEVJHUCQBEKVDFCJUTHUDQUEQUFZBUGEZVBKZVDFZUHVAVESZCVDAVFBVFRVD
+      RUIVIVNVOVKVIVNVOVGVNVOSVHVGVAVNVEVGVAVNVESVGVAPZVNVEVPVMVCVDVPVLVBVBVFBU
+      MUJUKULUNUOUPTUQURT $.
+  $}
+
+  ${
+    $d A i j $.  $d B i j $.  $d G i j $.
+    $( Lemma for ~ clwwlkccat : index ` j ` is shifted up by ` ( # `` A ) ` ,
+       and the case ` i = ( ( # `` A ) - 1 ) ` is covered by the "bridge"
+       ` { ( lastS `` A ) , ( B `` 0 ) } = { ( lastS `` A ) , ( A `` 0 ) } `
+       ` e. ( Edg `` G ) ` .  (Contributed by AV, 23-Apr-2022.) $)
+    clwwlkccatlem $p |- ( ( ( ( A e. Word ( Vtx ` G ) /\ A =/= (/) )
+                            /\ A. i e. ( 0 ..^ ( ( # ` A ) - 1 ) )
+                               { ( A ` i ) , ( A ` ( i + 1 ) ) } e. ( Edg ` G )
+                            /\ { ( lastS ` A ) , ( A ` 0 ) } e. ( Edg ` G ) )
+                          /\ ( ( B e. Word ( Vtx ` G ) /\ B =/= (/) )
+                            /\ A. j e. ( 0 ..^ ( ( # ` B ) - 1 ) )
+                               { ( B ` j ) , ( B ` ( j + 1 ) ) } e. ( Edg ` G )
+                            /\ { ( lastS ` B ) , ( B ` 0 ) } e. ( Edg ` G ) )
+                          /\ ( A ` 0 ) = ( B ` 0 ) )
+     -> A. i e. ( 0 ..^ ( ( # ` ( A ++ B ) ) - 1 ) )
+        { ( ( A ++ B ) ` i ) , ( ( A ++ B ) ` ( i + 1 ) ) } e. ( Edg ` G ) ) $=
+      ( cfv wcel wa c1 caddc co cpr cc0 cfzo wceq wi cz syl adantr cuz cword c0
+      cvtx wne cedg chash cmin wral clsw w3a cconcat cun csn simplll simplr wss
+      cv lencl nn0zd fzossrbm1 ad2antrr ccatval1 syl3anc elfzom1elp1fzo preq12d
+      sselda sylan eleq1d biimprd ralimdva impancom 3adant3 com12 impcom simprl
+      3ad2ant1 simpll simprr ccatval1lsw cc nn0cnd npcan1 ad2antrl fveq2d eqtrd
+      ccatval21sw simpr eqtr4d exbiri com23 expimpd 3adant2 3imp peano2zm fveq2
+      wb fvoveq1 ralunsn mpbird 0z cn lennncl 0p1e1 fveq2i eleq2i elnnuz bitr4i
+      jca fzosplitsnm1 sylancr raleqdv anim1ci fzosubel3 rspcv 3syl simp-4l cn0
+      sylibr nn0addcl syl2an 1nn0 eluzmn sylancl 1cnd addsubassd eleqtrd fzoss2
+      ccatval2 oveq2d eleq2d ad3antrrr fzoss1 sseld sylbird imp zaddcl elfzoelz
+      simpl 1zzd elfzomelpfzo mpbid zcnd adantl addsubd sylibrd ralrimiv expcom
+      exp31 com24 ralunb sylanbrc ccatlen oveq1d ad2ant2r elnn0uz sylib nnm1nn0
+      fzoun 3ad2antr1 3ad2antl1 raleqtrrdv ) AEUCFZUAZGZAUBUDZHZCUQZAFZUVGIJKZA
+      FZLZEUEFZGZCMAUFFZIUGKZNKZUHZAUIFZMAFZLZUVLGZUJZBUVCGZBUBUDZHZDUQZBFZUWFI
+      JKBFZLZUVLGZDMBUFFZIUGKZNKZUHZBUIFMBFZLUVLGZUJZUVSUWOOZUJZUVGABUKKZFZUVIU
+      WTFZLZUVLGZCMUVNNKZUVNUVNUWLJKZNKZULZMUWTUFFZIUGKZNKZUWSUXDCUXEUHZUXDCUXG
+      UHZUXDCUXHUHUWSUXLUXDCUVPUVOUMULZUHZUWSUXOUXDCUVPUHZUVOUWTFZUVOIJKZUWTFZL
+      ZUVLGZHZUWSUXPUYAUWBUWQUXPUWRUWQUWBUXPUWEUWNUWBUXPPZUWPUWCUYCUWDUWBUWCUXP
+      UVFUVQUWCUXPPUWAUVFUWCUVQUXPUVFUWCHZUVMUXDCUVPUYDUVGUVPGZHZUXDUVMUYFUXCUV
+      KUVLUYFUXAUVHUXBUVJUYFUVDUWCUVGUXEGUXAUVHOUVDUVEUWCUYEUNZUVFUWCUYEUOZUYDU
+      VPUXEUVGUVDUVPUXEUPZUVEUWCUVDUVNQGZUYIUVDUVNUVBAURZUSZUVNUTRVAVFUVBUVBABU
+      VGVBVCUYFUVDUWCUVIUXEGZUXBUVJOUYGUYHUYDUYJUYEUYMUVDUYJUVEUWCUYLVAUVGUVNVD
+      VGUVBUVBABUVIVBVCVEVHVIVJVKVLVMSVPVNVLUWBUWQUWRUYAUVFUWAUWQUWRUYAPZPUVQUW
+      QUVFUWAHZUYNUWEUWNUYOUYNPUWPUWEUVFUWAUYNUWEUVFHZUWRUWAUYAUYPUWRUYAUWAUYPU
+      WRHZUXTUVTUVLUYQUXQUVRUXSUVSUYPUXQUVROZUWRUYPUVDUWCUVEUYRUWEUVDUVEVOZUWCU
+      WDUVFVQZUWEUVDUVEVRABUVBVSVCSUYQUXSUWOUVSUYPUXSUWOOUWRUYPUXSUVNUWTFZUWOUY
+      PUXRUVNUWTUVDUXRUVNOZUWEUVEUVDUVNVTGZVUBUVDUVNUYKWAZUVNWBRWCWDUYPUVDUWCUW
+      DVUAUWOOUYSUYTUWCUWDUVFUOABUVBWFVCWESUYPUWRWGWHVEVHWIWJWKVPVMWLWMXHUWSUVO
+      QGZUXOUYBWPUWBUWQVUEUWRUVFUVQVUEUWAUVDVUEUVEUVDUYJVUEUYLUVNWNRSVPVPUXDUYA
+      CUVPUVOQUVGUVOOZUXCUXTUVLVUFUXAUXQUXBUXSUVGUVOUWTWOUVGUVOIUWTJWQVEVHWRRWS
+      UWBUWQUXLUXOWPZUWRUVFUVQVUGUWAUVFUXDCUXEUXNUVFMQGUVNMIJKZTFZGZUXEUXNOWTUV
+      FUVNXAGZVUJUVBAXBVUJUVNITFZGVUKVUIVULUVNVUHITXCXDXEUVNXFXGXRMUVNXIXJXKVPV
+      PWSUWBUWQUWRUXMUVFUVQUWQUWRUXMPZPUWAUWQUVFVUMUWEUWNUVFVUMPZUWPUWEUWNVUNUW
+      EUWRUVFUWNUXMUWEUVFUWRUWNUXMPZUVFUWEUWRVUOPUVFUWEHZUWRUWNUXMVUPUWRHZUWNHU
+      XDCUXGVUQUVGUXGGZUWNUXDVUQVURHZUWNUVGUVNUGKZBFZVUTIJKZBFZLZUVLGZUXDVUSVUR
+      UWLQGZHVUTUWMGUWNVVEPVUQVVFVURVUPVVFUWRUWCVVFUVFUWDUWCUWKQGZVVFUWCUWKUVBB
+      URZUSZUWKWNRWCSXLUVGUVNUWLXMUWJVVEDVUTUWMUWFVUTOZUWIVVDUVLVVJUWGVVAUWHVVC
+      UWFVUTBWOUWFVUTIBJWQVEVHXNXOVUSUXCVVDUVLVUSUXAVVAUXBVVCVUSUVDUWCUVGUVNUVN
+      UWKJKZNKZGUXAVVAOUVDUVEUWEUWRVURXPZVUPUWCUWRVURUVFUWCUWDVOVAZVUQUXGVVLUVG
+      VUPUXGVVLUPZUWRVUPVVKUXFTFZGVVOVUPVVKVVKIUGKZTFZVVPVUPVVKQGZIXQGZVVKVVRGU
+      VFUVNXQGZUWKXQGZVVSUWEUVDVWAUVEUYKSUWCVWBUWDVVHSVWAVWBHVVKUVNUWKXSUSXTYAV
+      VKIYBYCVUPVVQUXFTVUPUVNUWKIUVDVUCUVEUWEVUDVAZUWCUWKVTGUVFUWDUWCUWKVVHWAWC
+      VUPYDYEZWDYFUXFUVNVVKYGRSVFUVBABUVGYHVCVUSUXBUVIUVNUGKZBFZVVCVUSUVDUWCUVI
+      VVLGZUXBVWFOVVMVVNVUSUVGUVOVVQNKZGZVWGVUQVURVWIVUQVURUVGUVNVVQNKZGZVWIVUP
+      VWKVURWPUWRVUPVWJUXGUVGVUPVVQUXFUVNNVWDYIYJSVUQVWJVWHUVGVUQUVNUVOTFGZVWJV
+      WHUPUVDVWLUVEUWEUWRUVDUYJVVTVWLUYLYAUVNIYBYCYKUVNUVOVVQYLRYMYNYOVUQUYJVVS
+      HZUVGQGZIQGZHVWIVWGWPVURVUPVWMUWRUVFUYJVVGVWMUWEUVDUYJUVEUYLSUWCVVGUWDVVI
+      SUYJVVGHUYJVVSUYJVVGYRUVNUWKYPXHXTSVURVWNVWOUVGUVNUXFYQZVURYSXHUVGIUVNVVK
+      YTXTUUAUVBABUVIYHVCVUSVWEVVBBVUSUVGIUVNVURUVGVTGVUQVURUVGVWPUUBUUCVUSYDVU
+      PVUCUWRVURVWCVAUUDWDWEVEVHUUEVKUUFUUHUUGWJUUIYOVLVMVPWMUXDCUXEUXGUUJUUKUW
+      BUWQUXKUXHOZUWRUVFUVQUWQVWQUWAUVFUWNUWEVWQUWPVUPUXKMUXFNKZUXHVUPUXJUXFMNV
+      UPUXJVVQUXFUVDUWCUXJVVQOUVEUWDUVDUWCHUXIVVKIUGUVBUVBABUULUUMUUNVWDWEYIUVF
+      UVNMTFGZUWLXQGZVWRUXHOUWEUVDVWSUVEUVDVWAVWSUYKUVNUUOUUPSUWEUWKXAGVWTUVBBX
+      BUWKUUQRMUVNUWLUURXTWEUUSUUTVLUVA $.
+
+    $( The concatenation of two words representing closed walks anchored at the
+       same vertex represents a closed walk.  The resulting walk is a "double
+       loop", starting at the common vertex, coming back to the common vertex
+       by the first walk, following the second walk and finally coming back to
+       the common vertex again.  (Contributed by AV, 23-Apr-2022.) $)
+    clwwlkccat $p |- ( ( A e. ( ClWWalks ` G ) /\ B e. ( ClWWalks ` G )
+                         /\ ( A ` 0 ) = ( B ` 0 ) )
+                       -> ( A ++ B ) e. ( ClWWalks ` G ) ) $=
+      ( vi vj cfv wcel c0 wne wa c1 co cpr cc0 chash cmin cfzo wral w3a wceq cv
+      cvtx cword caddc cedg clsw cconcat cclwwlk simp1l ccatcl wb ccat0 adantlr
+      simpr biimtrdi necon3d impr 3ad2antr1 3ad2antl1 jca 3adant3 clwwlkccatlem
+      syl2an simpl1l simpr1l simpr1r lswccatn0lsw syl3anc clt wbr cfn fihashgt0
+      wrdfin sylan 3ad2ant1 adantr ccatfv0 simp3 eqtrd preq12d simp23 3jca eqid
+      eqeltrd isclwwlk biid 3anbi123i 3imtr4i ) ACUBFZUCZGZAHIZJZDUAZAFWNKUDLZA
+      FMCUEFZGDNAOFZKPLQLRZAUFFNAFZMWPGZSZBWJGZBHIZJZEUAZBFXEKUDLBFMWPGENBOFKPL
+      QLRZBUFFZNBFZMZWPGZSZWSXHTZSZABUGLZWJGZXNHIZJZWNXNFWOXNFMWPGDNXNOFKPLQLRZ
+      XNUFFZNXNFZMZWPGZSACUHFZGZBYCGZXLSXNYCGXMXQXRYBXAXKXQXLXAXKJZXOXPXAWKXBXO
+      XKWKWLWRWTUIXBXCXFXJUIWIABUJVCWMWRXKXPWTWMXFXDXPXJWMXBXCXPWMXBJZXNHBHYGXN
+      HTZAHTZBHTZJZYJWKXBYHYKUKWLWIWIABULUMYIYJUNUOUPUQURUSUTVAABDECVBXMYAXIWPX
+      MXSXGXTXHXAXKXSXGTZXLYFWKXBXCYLWKWLWRWTXKVDZXBXCXFXJXAVEZXBXCXFXJXAVFABWI
+      VGVHVAXMXTWSXHXAXKXTWSTZXLYFWKXBNWQVIVJZYOYMYNXAYPXKWMWRYPWTWKAVKGWLYPWIA
+      VMAVLVNVOVPABWIVQVHVAXAXKXLVRVSVTXAXDXFXJXLWAWDWBYDXAYEXKXLXLDWPCWIAWIWCZ
+      WPWCZWEEWPCWIBYQYRWEXLWFWGDWPCWIXNYQYRWEWH $.
+  $}
+
+  $( A closed walk in a multigraph has a length of at least 2 (because it
+     cannot have a loop).  (Contributed by Alexander van der Vekens,
+     16-Sep-2018.)  (Revised by AV, 24-Apr-2021.) $)
+  umgrclwwlkge2 $p |- ( G e. UMGraph -> ( P e. ( ClWWalks ` G )
+                                           -> 2 <_ ( # ` P ) ) ) $=
+    ( cumgr wcel cclwwlk cfv c2 wa cc0 wne c1 w3a c0 eqid adantl wi wceq syl cz
+    expcom chash cle wbr cn0 cvv cword clwwlkbp lencl 3ad2ant2 cfn wb fihasheq0
+    cvtx wrdfin bicomd necon3bid biimpd a1i 3imp wn wo nn0zd 1z sylancl exmiddc
+    zdceq cedg clwwlk1loop umgredgne eqneqall mpsyl syl6 com23 imp4c neqne jaoi
+    wdc cpr a1d mpcom 3jca mpdan nn0n0n1ge2 ex ) BCDZABEFDZGAUAFZUBUCZWEWFHZWGU
+    DDZWGIJZWGKJZLZWHWIBUEDZABUMFZUFDZAMJZLZWMWFWRWEBWOAWONUGOWIWRHZWJWKWLWRWJW
+    IWPWNWJWQWOAUHUIOZWRWKWIWNWPWQWKWPWQWKPPWNWPWQWKWPAMWGIWPWGIQZAMQZWPAUJDXAX
+    BUKWOAUNAULRUOUPUQURUSOWGKQZXCUTZVAZWSWLWSXCVQZXEWSWGSDKSDXFWSWGWTVBVCWGKVF
+    VDXCVERXCWSWLPXDXCWEWFWRWLXCWFWEWRWLPZXCWFIAFZXHVRBVGFZDZWEXGPWFXCXJBAVHTWE
+    XJXGXHXHQWEXJHXHXHJXGXHNXIBXHXHXINVIXGXHXHVJVKTVLVMVNXDWLWSWGKVOVSVPVTWAWBW
+    GWCRWD $.
 
 
 $(
@@ -200901,6 +201156,9 @@ htmldef "Walks" as "Walks";
 htmldef "Trails" as "Trails";
   althtmldef "Trails" as "Trails";
   latexdef "Trails" as "\mathrm{Trails}";
+htmldef "ClWWalks" as 'ClWWalks';
+  althtmldef "ClWWalks" as 'ClWWalks';
+  latexdef "ClWWalks" as "\mathrm{ClWWalks}";
 
 /* htmldef, althtmldef, latexdef for mathboxes */
 /* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
