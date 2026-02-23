@@ -198931,15 +198931,18 @@ $)
   $}
 
   ${
-    $d G w $.  $d N w $.  $d W w $.
+    $d G w $.  $d N w $.  $d W w $.  $d g n w $.
     $( A word over the set of vertices representing a closed walk of a fixed
        length.  (Contributed by Alexander van der Vekens, 15-Mar-2018.)
        (Revised by AV, 24-Apr-2021.)  (Revised by AV, 22-Mar-2022.) $)
-    isclwwlkng $p |- ( ( N e. NN0 /\ G e. V ) -> ( W e. ( N ClWWalksN G )
+    isclwwlkng $p |- ( N e. NN0 -> ( W e. ( N ClWWalksN G )
         <-> ( W e. ( ClWWalks ` G ) /\ ( # ` W ) = N ) ) ) $=
-      ( vw cn0 wcel wa cclwwlkn co chash cfv wceq cclwwlk crab clwwlkng fveqeq2
-      cv eleq2d elrab bitrdi ) BFGACGHZDBAIJZGDERZKLBMZEANLZOZGDUFGDKLBMZHUBUCU
-      GDEABCPSUEUHEDUFUDDBKQTUA $.
+      ( vn vg vw cn0 wcel cvv cclwwlkn co cclwwlk cfv chash wceq wa wi crab a1i
+      cv df-clwwlkn elmpocl2 cvtx cword c0 eqid clwwlkbp simp1d adantr clwwlkng
+      wne wb eleq2d fveqeq2 elrab bitrdi ex pm5.21ndd ) BGHZAIHZCBAJKZHZCALMZHZ
+      CNMBOZPZVBUTQUSDEGIFTZNMZDTOFETLMRBAJCFEDUAUBSVFUTQUSVDUTVEVDUTCAUCMZUDHC
+      UEUKAVICVIUFUGUHUISUSUTVBVFULUSUTPZVBCVHBOZFVCRZHVFVJVAVLCFABIUJUMVKVEFCV
+      CVGCBNUNUOUPUQUR $.
   $}
 
   ${
@@ -198948,9 +198951,9 @@ $)
        length.  (Contributed by Jim Kingdon, 22-Feb-2026.) $)
     isclwwlkni $p |- ( W e. ( N ClWWalksN G )
         -> ( W e. ( ClWWalks ` G ) /\ ( # ` W ) = N ) ) $=
-      ( vn vg vw cclwwlkn co wcel cclwwlk cfv chash wa cn0 cvv wb cv df-clwwlkn
-      wceq crab elmpocl isclwwlkng syl ibi ) CBAGHIZCAJKICLKBSMZUEBNIAOIMUEUFPD
-      ENOFQLKDQSFEQJKTBAGCFEDRUAABOCUBUCUD $.
+      ( vn vg vw cclwwlkn co wcel cclwwlk cfv chash wa cn0 wb cvv cv df-clwwlkn
+      wceq crab elmpocl1 isclwwlkng syl ibi ) CBAGHIZCAJKICLKBSMZUEBNIUEUFODENP
+      FQLKDQSFEQJKTBAGCFEDRUAABCUBUCUD $.
   $}
 
   ${
