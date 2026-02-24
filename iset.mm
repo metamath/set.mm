@@ -199226,6 +199226,19 @@ $)
       TVSQZWIGZWAWQVRUKWQWSVRWOVQWSWMWCVQWSRWNVQWMWSVQWJWSDMWLVQWKUNGMWLGBULWKU
       OUPVQWDMNZOZWHWRWIXAWEVTWGVSWTWEVTNVQWDMCUQSXAWFLCXAWFMLPFZLWTWFXBNVQWDML
       PURSUSUTVAVBVCVDVFVGVHVIVRWSOVTVSWIAVTVSWPVJVKVLVMVNVO $.
+
+    $( If a word represents a closed walk of length at least 2 in a undirected
+       simple graph, the first two symbols of the word must be different.
+       (Contributed by Alexander van der Vekens, 17-Jun-2018.)  (Revised by AV,
+       30-Apr-2021.) $)
+    umgr2cwwkdifex $p |- ( ( G e. UMGraph /\ N e. ( ZZ>= ` 2 )
+                            /\ W e. ( N ClWWalksN G ) )
+                          -> E. i e. ( 0 ..^ N ) ( W ` i ) =/= ( W ` 0 ) ) $=
+      ( cumgr wcel c2 cuz cfv cclwwlkn co w3a cv cc0 wne c1 cfzo cn wa wceq clt
+      wbr eluz2b2 1nn0 simpl simpr elfzo0 syl3anbrc sylbi 3ad2ant2 fveq2 adantl
+      cn0 a1i neeq1d umgr2cwwk2dif rspcedvd ) BEFZCGHIFZDCBJKFZLZAMZDIZNDIZOPDI
+      ZVDOAPNCQKZUSURPVFFZUTUSCRFZPCUAUBZSZVGCUCVJPUMFZVHVIVGVKVJUDUNVHVIUEVHVI
+      UFPCUGUHUIUJVAVBPTZSVCVEVDVLVCVETVAVBPDUKULUOBCDUPUQ $.
   $}
 
 
