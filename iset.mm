@@ -197494,6 +197494,34 @@ $)
       CXGWPUCABCEFGHIJKOPNXPWQXFWRUOWTXAXB $.
   $}
 
+  ${
+    $d G i $.  $d I i $.  $d U i $.  $d V i $.
+    vtxd0nedgb.v $e |- V = ( Vtx ` G ) $.
+    vtxd0nedgb.i $e |- I = ( iEdg ` G ) $.
+    vtxd0nedgb.d $e |- D = ( VtxDeg ` G ) $.
+    vtxd0nedgbfi.i $e |- ( ph -> dom I e. Fin ) $.
+    vtxd0nedgbfi.v $e |- ( ph -> V e. Fin ) $.
+    vtxd0nedgbfi.u $e |- ( ph -> U e. V ) $.
+    vtxd0nedgbfi.g $e |- ( ph -> G e. UPGraph ) $.
+    $( A vertex has degree 0 iff there is no edge incident with the vertex.
+       (Contributed by AV, 24-Dec-2020.)  (Revised by AV, 22-Mar-2021.) $)
+    vtxd0nedgbfi $p |- ( ph -> ( ( D ` U ) = 0
+                                     <-> -. E. i e. dom I U e. ( I ` i ) ) ) $=
+      ( cfv cc0 wceq wcel wn wb cv cdm crab chash csn caddc co wa cvtxdg fveq1i
+      wrex vtxdgfifival eqtrid eqeq1d cr cle wbr cfn cn0 vtxedgfi hashcl nn0red
+      eqid syl nn0ge0d vtxlpfi add20 syl22anc wo wral fihasheq0 anbi12d anbi12i
+      c0 rabeq0 ioran ralbii ralnex r19.26 3bitr3ri 3bitrd orcom wi snidg eleq2
+      a1i syl5ibrcom pm4.72 sylib bitr4id rexbidv notbid bitrd ) ACBOZPQCDUAFOZ
+      RZDFUBZUCZUDOZWOCUEZQZDWQUCZUDOZUFUGZPQZWSPQZXCPQZUHZWPDWQUKZSZAWNXDPAWNC
+      EUIOZOXDCBXKJUJADWQCEFGHIWQVCZKLMNULUMUNAWSUORPWSUPUQXCUORPXCUPUQXEXHTAWS
+      AWRURRZWSUSRADWQCEFGHIXLKLMNUTZWRVAVDZVBAWSXOVEAXCAXBURRZXCUSRADWQCEFGHIX
+      LKLMNVFZXBVAVDZVBAXCXRVEWSXCVGVHAXHWPXAVIZDWQUKZSZXJAXHWRVNQZXBVNQZUHZWPS
+      ZDWQVJZXASZDWQVJZUHZYAAXFYBXGYCAXMXFYBTXNWRVKVDAXPXGYCTXQXBVKVDVLYDYITAYB
+      YFYCYHWPDWQVOXADWQVOVMWFYIYATAXSSZDWQVJYEYGUHZDWQVJYAYIYJYKDWQWPXAVPVQXSD
+      WQVRYEYGDWQVSVTWFWAACGRZYAXJTMYLXTXIYLXSWPDWQYLXSXAWPVIZWPWPXAWBYLXAWPWCW
+      PYMTYLWPXACWTRCGWDWOWTCWEWGXAWPWHWIWJWKWLVDWMWA $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
