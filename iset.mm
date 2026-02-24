@@ -199208,6 +199208,27 @@ $)
     WDAWDUGZQCEWDBWFQWDWDABUHUIVCVDVODVSELCDASCEBSUJUKULVFVHTHVIVKVMNUSVFDEVCVD
     DTHVEVCDCDAUMUNUOVDVCETHVEVDECEBUMUNUPUQCVHVGUTVAVB $.
 
+  ${
+    $d G i $.  $d N i $.  $d W i $.
+    $( If a word represents a closed walk of length at least 2 in a multigraph,
+       the first two symbols of the word must be different.  (Contributed by
+       Alexander van der Vekens, 17-Jun-2018.)  (Revised by AV,
+       30-Apr-2021.) $)
+    umgr2cwwk2dif $p |- ( ( G e. UMGraph /\ N e. ( ZZ>= ` 2 )
+                            /\ W e. ( N ClWWalksN G ) )
+                          -> ( W ` 1 ) =/= ( W ` 0 ) ) $=
+      ( vi cclwwlkn co wcel c2 cuz cfv cumgr c1 cc0 wceq wa caddc cpr wi adantl
+      eqid wne cvtx cword chash cedg cmin cfzo wral clsw clwwlknp simpr uz2m1nn
+      cv cn lbfzo0 sylibr fveq2 oveq1 0p1e1 eqtrdi fveq2d preq12d eleq1d rspcdv
+      w3a com12 3ad2ant2 imp adantr umgredgne necomd syl2anc exp31 syl 3imp31 )
+      CBAEFGZBHIJGZAKGZLCJZMCJZUAZVPCAUBJZUCGCUDJBNOZDUMZCJZWDLPFZCJZQZAUEJZGZD
+      MBLUFFZUGFZUHZCUIJVTQWIGZVEZVQVRWARRDWIABWBCWBTWITZUJWOVQVRWAWOVQOZVROVRV
+      TVSQZWIGZWAWQVRUKWQWSVRWOVQWSWMWCVQWSRWNVQWMWSVQWJWSDMWLVQWKUNGMWLGBULWKU
+      OUPVQWDMNZOZWHWRWIXAWEVTWGVSWTWEVTNVQWDMCUQSXAWFLCXAWFMLPFZLWTWFXBNVQWDML
+      PURSUSUTVAVBVCVDVFVGVHVIVRWSOVTVSWIAVTVSWPVJVKVLVMVNVO $.
+  $}
+
+
 $(
 ###############################################################################
   GUIDES AND MISCELLANEA
