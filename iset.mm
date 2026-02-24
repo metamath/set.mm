@@ -118503,6 +118503,15 @@ $)
     1cnd ) CBFGZDEGZAHGZIZCDJKLMSZANOLZPCMSZNOLZURPZUSAPZUPUQUTURUMUNUQUTPUOBCD
     EQRUAUMUOVAVBUBUNUMUOUCZUSANUMUSTGUOUMUSBCUDUEUFUOATGUMAUGUHVCULUIUJUK $.
 
+  $( The length of a word is the length of the word concatenated with a
+     singleton word minus 1.  (Contributed by AV, 28-Jun-2018.)  (Revised by
+     AV, 5-Mar-2022.) $)
+  wrdlenccats1lenm1g $p |- ( ( W e. Word V /\ S e. B )
+      -> ( ( # ` ( W ++ <" S "> ) ) - 1 ) = ( # ` W ) ) $=
+    ( cword wcel wa cs1 cconcat co chash cfv cmin caddc ccatws1leng oveq1d wceq
+    c1 cc lencl nn0cnd pncan1 syl adantr eqtrd ) DCEFZBAFZGZDBHIJKLZRMJDKLZRNJZ
+    RMJZUJUHUIUKRMCDBAOPUFULUJQZUGUFUJSFUMUFUJCDTUAUJUBUCUDUE $.
+
   $( The concatenation of a word with two singleton words is a word.
      (Contributed by Alexander van der Vekens, 22-Sep-2018.) $)
   ccatw2s1cl $p |- ( ( W e. Word V /\ X e. V /\ Y e. V )
