@@ -199190,6 +199190,23 @@ $)
       UWFUXKUUBUXLVCVDEYODYGYHVFTWAYIVGYJUSYKYLTYMYNYI $.
   $}
 
+  $( The concatenation of two words representing closed walks anchored at the
+     same vertex represents a closed walk with a length which is the sum of the
+     lengths of the two walks.  The resulting walk is a "double loop", starting
+     at the common vertex, coming back to the common vertex by the first walk,
+     following the second walk and finally coming back to the common vertex
+     again.  (Contributed by AV, 24-Apr-2022.) $)
+  clwwlknccat $p |- ( ( A e. ( M ClWWalksN G ) /\ B e. ( N ClWWalksN G )
+                        /\ ( A ` 0 ) = ( B ` 0 ) )
+                      -> ( A ++ B ) e. ( ( M + N ) ClWWalksN G ) ) $=
+    ( cclwwlkn co wcel cc0 cfv wceq caddc chash wa isclwwlkni syl3an clwwlknwrd
+    simpl clwwlknlen cn0 w3a cconcat cclwwlk clwwlkccat cvtx cword eqid ccatlen
+    syl2an oveqan12d eqtrd 3adant3 clwwlknnn nnnn0d 3ad2ant1 3ad2ant2 nn0addcld
+    id wb isclwwlkng syl mpbir2and ) ADCFGHZBECFGHZIAJIBJKZUAZABUBGZDELGZCFGHZV
+    GCUCJZHZVGMJZVHKZVCAVJHZAMJZDKZNZVDBVJHZBMJZEKZNZVEVEVKCDAOCEBOVEURZVQVNWAV
+    RVEVEVKVNVPRVRVTRWBABCUDPPVCVDVMVEVCVDNVLVOVSLGZVHVCACUEJZUFZHBWEHVLWCKVDCD
+    WDAWDUGZQCEWDBWFQWDWDABUHUIVCVDVODVSELCDASCEBSUJUKULVFVHTHVIVKVMNUSVFDEVCVD
+    DTHVEVCDCDAUMUNUOVDVCETHVEVDECEBUMUNUPUQCVHVGUTVAVB $.
 
 $(
 ###############################################################################
