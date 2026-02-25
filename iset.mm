@@ -197522,6 +197522,56 @@ $)
       PYMTYLWPXACWTRCGWDWOWTCWEWGXAWPWHWIWJWKWLVDWMWA $.
   $}
 
+  ${
+    $d E c e i $.  $d G c e i x $.  $d U c e i x $.  $d V c e i x $.
+    vtxdushgrfvedg.v $e |- V = ( Vtx ` G ) $.
+    vtxdushgrfvedg.e $e |- E = ( Edg ` G ) $.
+    vtxduspgrfvedgfi.fi $e |- ( ph -> dom ( iEdg ` G ) e. Fin ) $.
+    vtxduspgrfvedgfi.v $e |- ( ph -> V e. Fin ) $.
+    vtxduspgrfvedgfi.u $e |- ( ph -> U e. V ) $.
+    ${
+      vtxduspgrfvedgfi.g $e |- ( ph -> G e. USPGraph ) $.
+      $( Lemma for ~ vtxduspgrfvedgfi and ~ vtxdusgrfvedgfi .  (Contributed by
+         AV, 12-Dec-2020.)  (Proof shortened by AV, 5-May-2021.) $)
+      vtxduspgrfvedgfilem $p |- ( ph
+               -> ( # ` { i e. dom ( iEdg ` G ) | U e. ( ( iEdg ` G ) ` i ) } )
+                  = ( # ` { e e. E | U e. e } ) ) $=
+        ( vx vc cv cfv wcel crab eqid ciedg cdm cmpt cuspgr cupgr uspgrupgr syl
+        vtxedgfi cushgr wf1o uspgrushgr eleq2w cbvrabv ushgredgedg fihasheqf1od
+        syl2anc ) ABDPFUAQZQRDUQUBZSZBCPRZCESZNUSNPUQQUCZADURBFUQGHUQTZURTJKLAF
+        UDRZFUERMFUFUGUHAFUIRZBGRUSVAVBUJAVDVEMFUKUGLNUSVAODEVBFUQBGIVCHUSTUTBO
+        PRCOECOBULUMVBTUNUPUO $.
+
+      vtxdushgrfvedg.d $e |- D = ( VtxDeg ` G ) $.
+      $( The value of the vertex degree function for a simple pseudograph.
+         (Contributed by AV, 12-Dec-2020.)  (Proof shortened by AV,
+         5-May-2021.) $)
+      vtxduspgrfvedgfi $p |- ( ph -> ( D ` U ) = ( ( # ` { e e. E | U e. e } )
+        + ( # ` { e e. E | e = { U } } ) ) ) $=
+        ( vi cfv cv wcel crab chash vx vc cvtxdg ciedg cdm wceq caddc co fveq1i
+        csn a1i eqid cuspgr uspgrupgr syl vtxdgfifival vtxduspgrfvedgfilem cmpt
+        cupgr vtxlpfi cushgr wf1o uspgrushgr eqeq1 ushgredgedgloop fihasheqf1od
+        cbvrabv syl2anc oveq12d 3eqtrd ) ACBPZCFUCPZPZCOQFUDPZPZROVNUEZSTPZVOCU
+        JZUFOVPSZTPZUGUHCDQZRDESTPZWAVRUFZDESZTPZUGUHVKVMUFACBVLNUIUKAOVPCFVNGH
+        VNULZVPULZJKLAFUMRZFUSRMFUNUOZUPAVQWBVTWEUGACDOEFGHIJKLMUQAVSWDUAVSUAQV
+        NPURZAOVPCFVNGHWFWGJKLWIUTAFVARZCGRVSWDWJVBAWHWKMFVCUOLUAVSWDUBOEWJFVNC
+        GIWFVSULWCUBQZVRUFDUBEWAWLVRVDVGWJULVEVHVFVIVJ $.
+    $}
+
+    ${
+      vtxdusgrfvedgfi.g $e |- ( ph -> G e. USGraph ) $.
+      vtxdusgrfvedgfi.d $e |- D = ( VtxDeg ` G ) $.
+      $( The value of the vertex degree function for a simple graph.
+         (Contributed by AV, 12-Dec-2020.) $)
+      vtxdusgrfvedgfi $p |- ( ph
+                            -> ( D ` U ) = ( # ` { e e. E | U e. e } ) ) $=
+        ( vi cfv cv wcel crab chash ciedg cdm eqid cusgr usgrumgr vtxdumgrfival
+        cumgr syl cuspgr usgruspgr vtxduspgrfvedgfilem eqtrd ) ACBPCOQFUAPZPROU
+        MUBZSTPCDQRDESTPAOUNBCFUMGHUMUCUNUCNAFUDRZFUGRMFUEUHLJKUFACDOEFGHIJKLAU
+        OFUIRMFUJUHUKUL $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
