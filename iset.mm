@@ -197221,6 +197221,26 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Examples for graphs
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d G x $.
+    usgr0e.g $e |- ( ph -> G e. W ) $.
+    usgr0e.e $e |- ( ph -> ( iEdg ` G ) = (/) ) $.
+    $( The empty graph, with vertices but no edges, is a simple graph.
+       (Contributed by Alexander van der Vekens, 10-Aug-2017.)  (Revised by AV,
+       16-Oct-2020.)  (Proof shortened by AV, 25-Nov-2020.) $)
+    usgr0e $p |- ( ph -> G e. USGraph ) $=
+      ( vx cusgr wcel ciedg cfv cdm cv c2o cen wbr cvtx cpw crab wf1 eqid f10d
+      wb isusgren syl mpbird ) ABGHZBIJZKFLMNOFBPJZQRZUGSZAUIUGEUAABCHUFUJUBDFC
+      UGBUHUHTUGTUCUDUE $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Vertex degree
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
