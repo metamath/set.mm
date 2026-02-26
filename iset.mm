@@ -197266,6 +197266,14 @@ $)
       HLZAHIJRQCHLSCMABCDENOAMP $.
   $}
 
+  $( A graph of order 0 (i.e. with 0 vertices) has a finite set of edges.
+     (Contributed by Alexander van der Vekens, 5-Jan-2018.)  (Revised by AV,
+     10-Jan-2020.)  (Revised by AV, 8-Jun-2021.) $)
+  uhgr0enedgfi $p |- ( ( G e. UHGraph /\ ( Vtx ` G ) ~~ (/) )
+                     -> ( Edg ` G ) e. Fin ) $=
+    ( cuhgr wcel cvtx cfv c0 cen wbr cedg cfn wceq eqid uhgr0vsize0en en0 sylib
+    wa 0fi eqeltrdi ) ABCADEZFGHPZAIEZFJTUAFGHUAFKUAASSLUALMUANOQR $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
