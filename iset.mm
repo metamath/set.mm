@@ -197238,6 +197238,15 @@ $)
       UGBUHUHTUGTUCUDUE $.
   $}
 
+  $( The null graph, with no vertices, is a simple graph iff the edge function
+     is empty.  (Contributed by Alexander van der Vekens, 30-Sep-2017.)
+     (Revised by AV, 16-Oct-2020.) $)
+  usgr0vb $p |- ( ( G e. W /\ ( Vtx ` G ) = (/) )
+                -> ( G e. USGraph <-> ( iEdg ` G ) = (/) ) ) $=
+    ( wcel cvtx c0 wceq wa cusgr ciedg cuhgr usgruhgr uhgr0vb imbitrid wi simpl
+    cfv simpr usgr0e ex adantr impbid ) ABCZADPEFZGZAHCZAIPEFZUEAJCUDUFAKABLMUB
+    UFUENUCUBUFUEUBUFGABUBUFOUBUFQRSTUA $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
