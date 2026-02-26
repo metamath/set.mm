@@ -197288,6 +197288,14 @@ $)
     eqid adantr mpbid usgr0e ) ABCZADEZFGZHZABSUAIUBAJEZFGZAKEFGZUCATTOUCOLSUDU
     EMUAANPQR $.
 
+  $( The null graph represented by an empty set is a simple graph.
+     (Contributed by AV, 16-Oct-2020.) $)
+  usgr0 $p |- (/) e. USGraph $=
+    ( vx c0 cusgr wcel cdm cv c2o cen wbr cpw crab wf1 f10 wceq ax-mp mpbir cvv
+    wb cfv eqcomi dm0 f1eq2 0ex cvtx vtxval0 ciedg iedgval0 isusgren ) BCDZBEZA
+    FGHIABJKZBLZULBUKBLZUKMUJBNULUMRUAUJBUKBUBOPBQDUIULRUCAQBBBBUDSBUETBUFSBUGT
+    UHOP $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
