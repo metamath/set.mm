@@ -197257,6 +197257,13 @@ $)
       biimpd ex imp wb cedg uhgriedg0edg0 bitrid adantr mpbird ) BFGZCHIZJAHIZB
       KLHIZUHUIUKUIUHUKUIBMLZHIZUHUHUKNZCULHDOUHUMUNUHUMJUHUKBFPSTQRUAUHUJUKUBU
       IUJBUCLZHIUHUKAUOHEOBUDUEUFUG $.
+
+    $( The size of a hypergraph with no vertices (the null graph) is 0.
+       (Contributed by Alexander van der Vekens, 5-Jan-2018.)  (Revised by AV,
+       7-Nov-2020.) $)
+    uhgr0vsize0en $p |- ( ( G e. UHGraph /\ V ~~ (/) ) -> E ~~ (/) ) $=
+      ( cuhgr wcel c0 cen wbr wa wceq en0 uhgr0v0e sylan2b sylibr ) BFGZCHIJZKA
+      HLZAHIJRQCHLSCMABCDENOAMP $.
   $}
 
 
