@@ -197274,6 +197274,13 @@ $)
     ( cuhgr wcel cvtx cfv c0 cen wbr cedg cfn wceq eqid uhgr0vsize0en en0 sylib
     wa 0fi eqeltrdi ) ABCADEZFGHPZAIEZFJTUAFGHUAFKUAASSLUALMUANOQR $.
 
+  $( The null graph, with no vertices, is a simple graph.  (Contributed by AV,
+     1-Nov-2020.) $)
+  usgr0v $p |- ( ( G e. W /\ ( Vtx ` G ) = (/) /\ ( iEdg ` G ) = (/) )
+                 -> G e. USGraph ) $=
+    ( wcel cvtx cfv c0 wceq cusgr ciedg usgr0vb biimp3ar ) ABCADEFGAHCAIEFGABJK
+    $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
