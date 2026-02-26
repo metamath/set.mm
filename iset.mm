@@ -197281,6 +197281,13 @@ $)
     ( wcel cvtx cfv c0 wceq cusgr ciedg usgr0vb biimp3ar ) ABCADEFGAHCAIEFGABJK
     $.
 
+  $( The null graph, with no vertices, represented by a hypergraph, is a simple
+     graph.  (Contributed by AV, 5-Dec-2020.) $)
+  uhgr0vusgr $p |- ( ( G e. UHGraph /\ ( Vtx ` G ) = (/) ) -> G e. USGraph ) $=
+    ( cuhgr wcel cvtx cfv c0 wceq wa simpl cedg ciedg uhgr0v0e wb uhgriedg0edg0
+    eqid adantr mpbid usgr0e ) ABCZADEZFGZHZABSUAIUBAJEZFGZAKEFGZUCATTOUCOLSUDU
+    EMUAANPQR $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
