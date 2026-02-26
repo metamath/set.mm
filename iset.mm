@@ -197296,6 +197296,29 @@ $)
     FGHIABJKZBLZULBUKBLZUKMUJBNULUMRUAUJBUKBUBOPBQDUIULRUCAQBBBBUDSBUETBUFSBUGT
     UHOP $.
 
+  ${
+    $d B x $.  $d C x $.  $d G x $.
+    uspgr1e.v $e |- V = ( Vtx ` G ) $.
+    uspgr1e.a $e |- ( ph -> A e. X ) $.
+    uspgr1e.b $e |- ( ph -> B e. V ) $.
+    uspgr1e.c $e |- ( ph -> C e. V ) $.
+    uspgr1edc.dc $e |- ( ph -> DECID B = C ) $.
+    uspgr1e.e $e |- ( ph -> ( iEdg ` G ) = { <. A , { B , C } >. } ) $.
+    $( A simple pseudograph with one edge.  (Contributed by Alexander van der
+       Vekens, 10-Aug-2017.)  (Revised by AV, 16-Oct-2020.)  (Revised by AV,
+       21-Mar-2021.)  (Proof shortened by AV, 17-Apr-2021.) $)
+    uspgr1edc $p |- ( ph -> G e. USPGraph ) $=
+      ( vx wcel wf1 csn cvv syl2anc mpbird cuspgr ciedg cfv cdm c1o cen wbr c2o
+      cv wo cvtx cpw crab cpr cop wss prexg snidg f1sng prssd sseqtrdi wb elpwg
+      syl upgr1elem1 f1ss wceq f1dm f1eq2 3syl dmeqd eqidd f1eq123d 1vgrex eqid
+      isuspgren ) AEUAOZEUBUCZUDZNUIZUEUFUGVTUHUFUGUJZNEUKUCZULZUMZVRPZAWEBCDUN
+      ZUOQZUDZWDWGPZAWIBQZWDWGPZAWJWFQZWGPZWLWDUPWKABGOWFWLOZWMIAWFROZWNACFOZDF
+      OWOJKCDFFUQSZWFRURVDBWFGWLUSSZANCDWCFFAWFWCOZWFWBUPZAWFFWBACDFJKUTHVAAWOW
+      SWTVBWQWFWBRVCVDTJKLVEWJWLWDWGVFSAWJWANRUMZWGPZWHWJVGWIWKVBAWMWLXAUPXBWRA
+      NCDRFFWQJKLVEWJWLXAWGVFSWJXAWGVHWHWJWDWGVIVJTAVSWHWDWDVRWGMAVRWGMVKAWDVLV
+      MTAWPEROVQWEVBJECFHVNNRVREWBWBVOVRVOVPVJT $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
