@@ -197247,6 +197247,18 @@ $)
     cfv simpr usgr0e ex adantr impbid ) ABCZADPEFZGZAHCZAIPEFZUEAJCUDUFAKABLMUB
     UFUENUCUBUFUEUBUFGABUBUFOUBUFQRSTUA $.
 
+  ${
+    uhgr0v0e.v $e |- V = ( Vtx ` G ) $.
+    uhgr0v0e.e $e |- E = ( Edg ` G ) $.
+    $( The null graph, with no vertices, has no edges.  (Contributed by AV,
+       21-Oct-2020.) $)
+    uhgr0v0e $p |- ( ( G e. UHGraph /\ V = (/) ) -> E = (/) ) $=
+      ( cuhgr wcel c0 wceq wa ciedg cfv cvtx wi eqeq1i uhgr0vb biimtrid pm2.43a
+      biimpd ex imp wb cedg uhgriedg0edg0 bitrid adantr mpbird ) BFGZCHIZJAHIZB
+      KLHIZUHUIUKUIUHUKUIBMLZHIZUHUHUKNZCULHDOUHUMUNUHUMJUHUKBFPSTQRUAUHUJUKUBU
+      IUJBUCLZHIUHUKAUOHEOBUDUEUFUG $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
