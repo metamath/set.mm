@@ -199146,7 +199146,7 @@ $)
     $d E i $.  $d G i $.  $d N i $.  $d W i $.  $d Z i $.
     clwwlkext2edg.v $e |- V = ( Vtx ` G ) $.
     clwwlkext2edg.e $e |- E = ( Edg ` G ) $.
-    $( If a word concatenated with a vertex represents a closed walk in (in a
+    $( If a word concatenated with a vertex represents a closed walk (in a
        graph), there is an edge between this vertex and the last vertex of the
        word, and between this vertex and the first vertex of the word.
        (Contributed by Alexander van der Vekens, 3-Oct-2018.)  (Revised by AV,
@@ -199228,9 +199228,9 @@ $)
       PURSUSUTVAVBVCVDVFVGVHVIVRWSOVTVSWIAVTVSWPVJVKVLVMVNVO $.
 
     $( If a word represents a closed walk of length at least 2 in a undirected
-       simple graph, the first two symbols of the word must be different.
-       (Contributed by Alexander van der Vekens, 17-Jun-2018.)  (Revised by AV,
-       30-Apr-2021.) $)
+       simple graph, there must be a symbol different from the first symbol of
+       the word.  (Contributed by Alexander van der Vekens, 17-Jun-2018.)
+       (Revised by AV, 30-Apr-2021.) $)
     umgr2cwwkdifex $p |- ( ( G e. UMGraph /\ N e. ( ZZ>= ` 2 )
                             /\ W e. ( N ClWWalksN G ) )
                           -> E. i e. ( 0 ..^ N ) ( W ` i ) =/= ( W ` 0 ) ) $=
