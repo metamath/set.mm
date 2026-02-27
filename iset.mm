@@ -197494,6 +197494,84 @@ $)
       CXGWPUCABCEFGHIJKOPNXPWQXFWRUOWTXAXB $.
   $}
 
+  ${
+    $d G i $.  $d I i $.  $d U i $.  $d V i $.
+    vtxd0nedgb.v $e |- V = ( Vtx ` G ) $.
+    vtxd0nedgb.i $e |- I = ( iEdg ` G ) $.
+    vtxd0nedgb.d $e |- D = ( VtxDeg ` G ) $.
+    vtxd0nedgbfi.i $e |- ( ph -> dom I e. Fin ) $.
+    vtxd0nedgbfi.v $e |- ( ph -> V e. Fin ) $.
+    vtxd0nedgbfi.u $e |- ( ph -> U e. V ) $.
+    vtxd0nedgbfi.g $e |- ( ph -> G e. UPGraph ) $.
+    $( A vertex has degree 0 iff there is no edge incident with the vertex.
+       (Contributed by AV, 24-Dec-2020.)  (Revised by AV, 22-Mar-2021.) $)
+    vtxd0nedgbfi $p |- ( ph -> ( ( D ` U ) = 0
+                                     <-> -. E. i e. dom I U e. ( I ` i ) ) ) $=
+      ( cfv cc0 wceq wcel wn wb cv cdm crab chash csn caddc co wa cvtxdg fveq1i
+      wrex vtxdgfifival eqtrid eqeq1d cr cle wbr cfn cn0 vtxedgfi hashcl nn0red
+      eqid syl nn0ge0d vtxlpfi add20 syl22anc wo wral fihasheq0 anbi12d anbi12i
+      c0 rabeq0 ioran ralbii ralnex r19.26 3bitr3ri 3bitrd orcom wi snidg eleq2
+      a1i syl5ibrcom pm4.72 sylib bitr4id rexbidv notbid bitrd ) ACBOZPQCDUAFOZ
+      RZDFUBZUCZUDOZWOCUEZQZDWQUCZUDOZUFUGZPQZWSPQZXCPQZUHZWPDWQUKZSZAWNXDPAWNC
+      EUIOZOXDCBXKJUJADWQCEFGHIWQVCZKLMNULUMUNAWSUORPWSUPUQXCUORPXCUPUQXEXHTAWS
+      AWRURRZWSUSRADWQCEFGHIXLKLMNUTZWRVAVDZVBAWSXOVEAXCAXBURRZXCUSRADWQCEFGHIX
+      LKLMNVFZXBVAVDZVBAXCXRVEWSXCVGVHAXHWPXAVIZDWQUKZSZXJAXHWRVNQZXBVNQZUHZWPS
+      ZDWQVJZXASZDWQVJZUHZYAAXFYBXGYCAXMXFYBTXNWRVKVDAXPXGYCTXQXBVKVDVLYDYITAYB
+      YFYCYHWPDWQVOXADWQVOVMWFYIYATAXSSZDWQVJYEYGUHZDWQVJYAYIYJYKDWQWPXAVPVQXSD
+      WQVRYEYGDWQVSVTWFWAACGRZYAXJTMYLXTXIYLXSWPDWQYLXSXAWPVIZWPWPXAWBYLXAWPWCW
+      PYMTYLWPXACWTRCGWDWOWTCWEWGXAWPWHWIWJWKWLVDWMWA $.
+  $}
+
+  ${
+    $d E c e i $.  $d G c e i x $.  $d U c e i x $.  $d V c e i x $.
+    vtxdushgrfvedg.v $e |- V = ( Vtx ` G ) $.
+    vtxdushgrfvedg.e $e |- E = ( Edg ` G ) $.
+    vtxduspgrfvedgfi.fi $e |- ( ph -> dom ( iEdg ` G ) e. Fin ) $.
+    vtxduspgrfvedgfi.v $e |- ( ph -> V e. Fin ) $.
+    vtxduspgrfvedgfi.u $e |- ( ph -> U e. V ) $.
+    ${
+      vtxduspgrfvedgfi.g $e |- ( ph -> G e. USPGraph ) $.
+      $( Lemma for ~ vtxduspgrfvedgfi and ~ vtxdusgrfvedgfi .  (Contributed by
+         AV, 12-Dec-2020.)  (Proof shortened by AV, 5-May-2021.) $)
+      vtxduspgrfvedgfilem $p |- ( ph
+               -> ( # ` { i e. dom ( iEdg ` G ) | U e. ( ( iEdg ` G ) ` i ) } )
+                  = ( # ` { e e. E | U e. e } ) ) $=
+        ( vx vc cv cfv wcel crab eqid ciedg cdm cmpt cuspgr cupgr uspgrupgr syl
+        vtxedgfi cushgr wf1o uspgrushgr eleq2w cbvrabv ushgredgedg fihasheqf1od
+        syl2anc ) ABDPFUAQZQRDUQUBZSZBCPRZCESZNUSNPUQQUCZADURBFUQGHUQTZURTJKLAF
+        UDRZFUERMFUFUGUHAFUIRZBGRUSVAVBUJAVDVEMFUKUGLNUSVAODEVBFUQBGIVCHUSTUTBO
+        PRCOECOBULUMVBTUNUPUO $.
+
+      vtxdushgrfvedg.d $e |- D = ( VtxDeg ` G ) $.
+      $( The value of the vertex degree function for a simple pseudograph.
+         (Contributed by AV, 12-Dec-2020.)  (Proof shortened by AV,
+         5-May-2021.) $)
+      vtxduspgrfvedgfi $p |- ( ph -> ( D ` U ) = ( ( # ` { e e. E | U e. e } )
+        + ( # ` { e e. E | e = { U } } ) ) ) $=
+        ( vi cfv cv wcel crab chash vx vc cvtxdg ciedg cdm wceq caddc co fveq1i
+        csn a1i eqid cuspgr uspgrupgr syl vtxdgfifival vtxduspgrfvedgfilem cmpt
+        cupgr vtxlpfi cushgr wf1o uspgrushgr eqeq1 ushgredgedgloop fihasheqf1od
+        cbvrabv syl2anc oveq12d 3eqtrd ) ACBPZCFUCPZPZCOQFUDPZPZROVNUEZSTPZVOCU
+        JZUFOVPSZTPZUGUHCDQZRDESTPZWAVRUFZDESZTPZUGUHVKVMUFACBVLNUIUKAOVPCFVNGH
+        VNULZVPULZJKLAFUMRZFUSRMFUNUOZUPAVQWBVTWEUGACDOEFGHIJKLMUQAVSWDUAVSUAQV
+        NPURZAOVPCFVNGHWFWGJKLWIUTAFVARZCGRVSWDWJVBAWHWKMFVCUOLUAVSWDUBOEWJFVNC
+        GIWFVSULWCUBQZVRUFDUBEWAWLVRVDVGWJULVEVHVFVIVJ $.
+    $}
+
+    ${
+      vtxdusgrfvedgfi.g $e |- ( ph -> G e. USGraph ) $.
+      vtxdusgrfvedgfi.d $e |- D = ( VtxDeg ` G ) $.
+      $( The value of the vertex degree function for a simple graph.
+         (Contributed by AV, 12-Dec-2020.) $)
+      vtxdusgrfvedgfi $p |- ( ph
+                            -> ( D ` U ) = ( # ` { e e. E | U e. e } ) ) $=
+        ( vi cfv cv wcel crab chash ciedg cdm eqid cusgr usgrumgr vtxdumgrfival
+        cumgr syl cuspgr usgruspgr vtxduspgrfvedgfilem eqtrd ) ACBPCOQFUAPZPROU
+        MUBZSTPCDQRDESTPAOUNBCFUMGHUMUCUNUCNAFUDRZFUGRMFUEUHLJKUFACDOEFGHIJKLAU
+        OFUIRMFUJUHUKUL $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
