@@ -197326,6 +197326,23 @@ $)
     ( wcel c0 cop cvv 0ex opexg mpan2 ciedg cfv wceq opiedgfv usgr0e ) ABCZADEZ
     FODFCZPFCGADBFHIOQPJKDLGDABFMIN $.
 
+  ${
+    uspgr1eopdc.v $e |- ( ph -> V e. W ) $.
+    uspgr1eopdc.a $e |- ( ph -> A e. X ) $.
+    uspgr1eopdc.b $e |- ( ph -> B e. V ) $.
+    uspgr1eopdc.c $e |- ( ph -> C e. V ) $.
+    uspgr1eopdc.dc $e |- ( ph -> DECID B = C ) $.
+    $( A simple pseudograph with (at least) two vertices and one edge.
+       (Contributed by Alexander van der Vekens, 10-Aug-2017.)  (Revised by AV,
+       16-Oct-2020.) $)
+    uspgr1eopdc $p |- ( ph
+        -> <. V , { <. A , { B , C } >. } >. e. USPGraph ) $=
+      ( cpr cop cfv wcel cvv wceq syl2anc eleqtrrd csn cvtx prexg opexg opvtxfv
+      eqid snexg syl ciedg opiedgfv uspgr1edc ) ABCDEBCDMZNZUAZNZUOUBOZGUPUFIAC
+      EUPJAEFPZUNQPZUPERHAUMQPZURABGPULQPZUSIACEPDEPUTJKCDEEUCSBULGQUDSUMQUGUHZ
+      UNEFQUESZTADEUPKVBTLAUQURUOUIOUNRHVAUNEFQUJSUK $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
