@@ -197319,6 +197319,13 @@ $)
       MTAWPEROVQWEVBJECFHVNNRVREWBWBVOVRVOVPVJT $.
   $}
 
+  $( The empty graph, with vertices but no edges, is a simple graph.
+     (Contributed by Alexander van der Vekens, 10-Aug-2017.)  (Revised by AV,
+     16-Oct-2020.) $)
+  usgr0eop $p |- ( V e. W -> <. V , (/) >. e. USGraph ) $=
+    ( wcel c0 cop cvv 0ex opexg mpan2 ciedg cfv wceq opiedgfv usgr0e ) ABCZADEZ
+    FODFCZPFCGADBFHIOQPJKDLGDABFMIN $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
