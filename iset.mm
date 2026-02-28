@@ -197343,6 +197343,19 @@ $)
       UNEFQUESZTADEUPKVBTLAUQURUOUIOUNRHVAUNEFQUJSUK $.
   $}
 
+  ${
+    uspgr1ewopdc.v $e |- ( ph -> V e. W ) $.
+    uspgr1ewopdc.a $e |- ( ph -> A e. V ) $.
+    uspgr1ewopdc.b $e |- ( ph -> B e. V ) $.
+    uspgr1ewopdc.dc $e |- ( ph -> DECID A = B ) $.
+    $( A simple pseudograph with (at least) two vertices and one edge
+       represented by a singleton word.  (Contributed by AV, 9-Jan-2021.) $)
+    uspgr1ewopdc $p |- ( ph -> <. V , <" { A , B } "> >. e. USPGraph ) $=
+      ( cpr cs1 cop cc0 csn cuspgr cvv wcel wceq prexg syl2anc s1val syl opeq2d
+      c0ex a1i uspgr1eopdc eqeltrd ) ADBCJZKZLDMUHLNZLOAUIUJDAUHPQZUIUJRABDQCDQ
+      UKGHBCDDSTUHPUAUBUCAMBCDEPFMPQAUDUEGHIUFUG $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
