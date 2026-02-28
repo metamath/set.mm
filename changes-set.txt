@@ -148,8 +148,6 @@ Date      Old       New         Notes
 27-Feb-26 sssslt2     ssslts2
 27-Feb-26 nulsslt     nulslts
 27-Feb-26 nulssgt     nulsgts
-27-Feb-26 nulssgt     nulsltsd
-27-Feb-26 nulssgt     nulsgtsd
 27-Feb-26 scutval     cutsval
 27-Feb-26 scutcut     cutcuts
 27-Feb-26 scutcl      cutscl
@@ -299,7 +297,6 @@ Date      Old       New         Notes
 27-Feb-26 nnsno     nnno
 27-Feb-26 n0snod    n0nod
 27-Feb-26 nnsnod    nnnod
-27-Feb-26 nnsnod    peano2n0sd
 27-Feb-26 n0scut    n0cut
 27-Feb-26 n0scut2   n0cut2
 27-Feb-26 n0ons     n0on
