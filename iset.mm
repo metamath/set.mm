@@ -118503,6 +118503,15 @@ $)
     1cnd ) CBFGZDEGZAHGZIZCDJKLMSZANOLZPCMSZNOLZURPZUSAPZUPUQUTURUMUNUQUTPUOBCD
     EQRUAUMUOVAVBUBUNUMUOUCZUSANUMUSTGUOUMUSBCUDUEUFUOATGUMAUGUHVCULUIUJUK $.
 
+  $( The length of a word is the length of the word concatenated with a
+     singleton word minus 1.  (Contributed by AV, 28-Jun-2018.)  (Revised by
+     AV, 5-Mar-2022.) $)
+  wrdlenccats1lenm1g $p |- ( ( W e. Word V /\ S e. B )
+      -> ( ( # ` ( W ++ <" S "> ) ) - 1 ) = ( # ` W ) ) $=
+    ( cword wcel wa cs1 cconcat co chash cfv cmin caddc ccatws1leng oveq1d wceq
+    c1 cc lencl nn0cnd pncan1 syl adantr eqtrd ) DCEFZBAFZGZDBHIJKLZRMJDKLZRNJZ
+    RMJZUJUHUIUKRMCDBAOPUFULUJQZUGUFUJSFUMUFUJCDTUAUJUBUCUDUE $.
+
   $( The concatenation of a word with two singleton words is a word.
      (Contributed by Alexander van der Vekens, 22-Sep-2018.) $)
   ccatw2s1cl $p |- ( ( W e. Word V /\ X e. V /\ Y e. V )
@@ -198832,6 +198841,14 @@ $)
   $}
 
   ${
+    $( Existence of the set of closed walks (represented by words).
+       (Contributed by Jim Kingdon, 21-Feb-2026.) $)
+    clwwlkex $p |- ( G e. V -> ( ClWWalks ` G ) e. _V ) $=
+      ( wcel cclwwlk cfv cvtx cword wss cvv clwwlksswrd vtxex syl ssexg sylancr
+      wrdexg ) ABCZADEZAFEZGZHSICZQICAJPRICTABKRIOLQSIMN $.
+  $}
+
+  ${
     $d G i $.  $d W i $.
     $( A closed walk of length 1 is a loop.  (Contributed by AV,
        24-Apr-2021.) $)
@@ -198958,6 +198975,349 @@ $)
     VDXCVERXCWSWLPXDXCWEWFWRWLXCWFWEWRWLPZXCWFIAFZXHVRBVGFZDZWEXGPWFXCXJBAVHTWE
     XJXGXHXHQWEXJHXHXHJXGXHNXIBXHXHXINVIXGXHXHVJVKTVLVMVNXDWLWSWGKVOVSVPVTWAWBW
     GWCRWD $.
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Closed walks of a fixed length as words
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $c ClWWalksN $.
+
+  $( Extend class notation with closed walks (in an undirected graph) of a
+     fixed length as word over the set of vertices. $)
+  cclwwlkn $a class ClWWalksN $.
+
+  ${
+    $d g n w $.
+    $( Define the set of all closed walks of a fixed length ` n ` as words over
+       the set of vertices in a graph ` g ` .  If ` 0 < n ` , such a word
+       corresponds to the sequence p(0) p(1) ... p(n-1) of the vertices in a
+       closed walk p(0) e(f(1)) p(1) e(f(2)) ... p(n-1) e(f(n)) p(n)=p(0) .
+       For ` n = 0 ` , the set is empty, see ~ clwwlkn0 .  (Contributed by
+       Alexander van der Vekens, 20-Mar-2018.)  (Revised by AV, 24-Apr-2021.)
+       (Revised by AV, 22-Mar-2022.) $)
+    df-clwwlkn $a |- ClWWalksN = ( n e. NN0 , g e. _V |->
+                                 { w e. ( ClWWalks ` g ) | ( # ` w ) = n } ) $.
+  $}
+
+  ${
+    $d G g n w $.  $d N g n w $.
+    $( The set of closed walks of a fixed length ` N ` as words over the set of
+       vertices in a graph ` G ` .  (Contributed by Alexander van der Vekens,
+       20-Mar-2018.)  (Revised by AV, 24-Apr-2021.)  (Revised by AV,
+       22-Mar-2022.) $)
+    clwwlkng $p |- ( ( N e. NN0 /\ G e. V ) ->
+        ( N ClWWalksN G ) = { w e. ( ClWWalks ` G ) | ( # ` w ) = N } ) $=
+      ( vn vg cn0 wcel wa cvv cv chash cfv wceq cclwwlk crab cclwwlkn co adantl
+      simpl elex eqid clwwlkex rabexd fveq2 adantr rabeqbidv df-clwwlkn ovmpoga
+      wb eqeq2 syl3anc ) CGHZBDHZIZUMBJHZAKLMZCNZABOMZPZJHCBQRUTNUMUNTUNUPUMBDU
+      ASUOURAUSUTJUTUBUNUSJHUMBDUCSUDEFCBGJUQEKZNZAFKZOMZPUTQJVACNZVCBNZIVBURAV
+      DUSVFVDUSNVEVCBOUESVEVBURUJVFVACUQUKUFUGAFEUHUIUL $.
+  $}
+
+  ${
+    $d G w $.  $d N w $.  $d W w $.  $d g n w $.
+    $( A word over the set of vertices representing a closed walk of a fixed
+       length.  (Contributed by Alexander van der Vekens, 15-Mar-2018.)
+       (Revised by AV, 24-Apr-2021.)  (Revised by AV, 22-Mar-2022.) $)
+    isclwwlkng $p |- ( N e. NN0 -> ( W e. ( N ClWWalksN G )
+        <-> ( W e. ( ClWWalks ` G ) /\ ( # ` W ) = N ) ) ) $=
+      ( vn vg vw cn0 wcel cvv cclwwlkn co cclwwlk cfv chash wceq wa wi crab a1i
+      cv df-clwwlkn elmpocl2 cvtx cword c0 eqid clwwlkbp simp1d adantr clwwlkng
+      wne wb eleq2d fveqeq2 elrab bitrdi ex pm5.21ndd ) BGHZAIHZCBAJKZHZCALMZHZ
+      CNMBOZPZVBUTQUSDEGIFTZNMZDTOFETLMRBAJCFEDUAUBSVFUTQUSVDUTVEVDUTCAUCMZUDHC
+      UEUKAVICVIUFUGUHUISUSUTVBVFULUSUTPZVBCVHBOZFVCRZHVFVJVAVLCFABIUJUMVKVEFCV
+      CVGCBNUNUOUPUQUR $.
+  $}
+
+  ${
+    $d g n w $.
+    $( A word over the set of vertices representing a closed walk of a fixed
+       length.  (Contributed by Jim Kingdon, 22-Feb-2026.) $)
+    isclwwlkni $p |- ( W e. ( N ClWWalksN G )
+        -> ( W e. ( ClWWalks ` G ) /\ ( # ` W ) = N ) ) $=
+      ( vn vg vw cclwwlkn co wcel cclwwlk cfv chash wa cn0 wb cvv cv df-clwwlkn
+      wceq crab elmpocl1 isclwwlkng syl ibi ) CBAGHIZCAJKICLKBSMZUEBNIUEUFODENP
+      FQLKDQSFEQJKTBAGCFEDRUAABCUBUCUD $.
+  $}
+
+  ${
+    $d G w $.  $d G x $.  $d g n w $.
+    $( There is no closed walk of length 0 (i.e. a closed walk without any
+       edge) represented by a word of vertices.  (Contributed by Alexander van
+       der Vekens, 15-Sep-2018.)  (Revised by AV, 24-Apr-2021.) $)
+    clwwlkn0 $p |- ( 0 ClWWalksN G ) = (/) $=
+      ( vx vn vg vw cc0 cclwwlkn co c0 wcel cvv cn0 chash cfv wceq cclwwlk crab
+      cv clt wbr df-clwwlkn elmpocl2 noel pm2.21i 0nn0 clwwlkng mpan rabeq0 0re
+      ltnri breq2 mtbiri clwwlkgt0 nsyl3 mprgbir eqtrdi eleq2d pm5.21nii eqriv
+      wn ) BFAGHZIBRZVAJAKJZVBIJZCDLKERZMNZCROEDRPNQFAGVBEDCUAUBVDVCVBUCUDVCVAI
+      VBVCVAVFFOZEAPNZQZIFLJVCVAVIOUEEAFKUFUGVIIOVGUTEVHVGEVHUHVGFVFSTZVEVHJVGV
+      JFFSTFUIUJVFFFSUKULAVEUMUNUOUPUQURUS $.
+  $}
+
+  $( A closed walk of a fixed length as word is a closed walk (in an undirected
+     graph) as word.  (Contributed by Alexander van der Vekens, 15-Mar-2018.)
+     (Revised by AV, 24-Apr-2021.)  (Proof shortened by AV, 22-Mar-2022.) $)
+  clwwlkclwwlkn $p |- ( W e. ( N ClWWalksN G ) -> W e. ( ClWWalks ` G ) ) $=
+    ( cclwwlkn co wcel cclwwlk cfv chash wceq isclwwlkni simpld ) CBADEFCAGHFCI
+    HBJABCKL $.
+
+  ${
+    $d G w $.  $d N w $.
+    $( The closed walks of a fixed length as words are closed walks (in an
+       undirected graph) as words.  (Contributed by Alexander van der Vekens,
+       15-Mar-2018.)  (Revised by AV, 12-Apr-2021.) $)
+    clwwlksclwwlkn $p |- ( N ClWWalksN G ) C_ ( ClWWalks ` G ) $=
+      ( vw cclwwlkn co cclwwlk cfv cv clwwlkclwwlkn ssriv ) CBADEAFGABCHIJ $.
+  $}
+
+  $( The length of a word representing a closed walk of a fixed length is this
+     fixed length.  (Contributed by AV, 22-Mar-2022.) $)
+  clwwlknlen $p |- ( W e. ( N ClWWalksN G ) -> ( # ` W ) = N ) $=
+    ( cclwwlkn co wcel cclwwlk cfv chash wceq isclwwlkni simprd ) CBADEFCAGHFCI
+    HBJABCKL $.
+
+  ${
+    $d g n w $.
+    $( The length of a closed walk of a fixed length as word is a positive
+       integer.  (Contributed by AV, 22-Mar-2022.) $)
+    clwwlknnn $p |- ( W e. ( N ClWWalksN G ) -> N e. NN ) $=
+      ( vn vg vw cclwwlkn co wcel cn cc0 wceq c0 noel clwwlkn0 eleq2i mtbir cn0
+      cv cfv oveq1 eleq2d mtbiri con2i wo cvv chash cclwwlk df-clwwlkn elmpocl1
+      crab elnn0 sylib ecased ) CBAGHZIZBJIZBKLZURUPURUPCKAGHZIZUTCMICNUSMCAOPQ
+      URUOUSCBKAGUAUBUCUDUPBRIUQURUEDERUFFSUGTDSLFESUHTUKBAGCFEDUIUJBULUMUN $.
+  $}
+
+  ${
+    clwwlknwrd.v $e |- V = ( Vtx ` G ) $.
+    $( A closed walk of a fixed length as word is a word over the vertices.
+       (Contributed by AV, 30-Apr-2021.) $)
+    clwwlknwrd $p |- ( W e. ( N ClWWalksN G ) -> W e. Word V ) $=
+      ( cclwwlkn co wcel cclwwlk cfv chash wceq wa cword isclwwlkni c0 clwwlkbp
+      cvv wne simp2d adantr syl ) DBAFGHDAIJHZDKJBLZMDCNHZABDOUCUEUDUCARHUEDPSA
+      CDEQTUAUB $.
+
+    $( Basic properties of a closed walk of a fixed length as word.
+       (Contributed by AV, 30-Apr-2021.)  (Proof shortened by AV,
+       22-Mar-2022.) $)
+    clwwlknbp $p |- ( W e. ( N ClWWalksN G )
+                      -> ( W e. Word V /\ ( # ` W ) = N ) ) $=
+      ( cclwwlkn co wcel cword chash cfv wceq clwwlknwrd clwwlknlen jca ) DBAFG
+      HDCIHDJKBLABCDEMABDNO $.
+  $}
+
+  ${
+    $d G i $.  $d W i $.
+    isclwwlknx.v $e |- V = ( Vtx ` G ) $.
+    isclwwlknx.e $e |- E = ( Edg ` G ) $.
+    $( Characterization of a word representing a closed walk of a fixed length,
+       definition of ` ClWWalks ` expanded.  (Contributed by AV, 25-Apr-2021.)
+       (Proof shortened by AV, 22-Mar-2022.) $)
+    isclwwlknx $p |- ( N e. NN -> ( W e. ( N ClWWalksN G )
+                  <-> ( ( W e. Word V /\ A. i e. ( 0 ..^ ( ( # ` W ) - 1 ) )
+                                         { ( W ` i ) , ( W ` ( i + 1 ) ) } e. E
+                          /\ { ( lastS ` W ) , ( W ` 0 ) } e. E )
+                        /\ ( # ` W ) = N ) ) ) $=
+      ( cn wcel cfv c1 co cpr cc0 wa w3a wb 3anass anbi1i cword c0 wne cv caddc
+      chash cmin cfzo wral clsw wceq cclwwlkn eleq1 len0nnbi biimprcd biimtrrdi
+      wi impcom imp biantrurd bicomd pm5.32da pm5.32rd cclwwlk nnnn0 isclwwlkng
+      ex cn0 syl isclwwlk anass 3bitri bitrdi a1i 3bitr4d ) DIJZFEUAJZFUBUCZAUD
+      ZFKVSLUEMFKNBJAOFUFKZLUGMUHMUIZFUJKOFKNBJZPZPZPZVTDUKZPZVQWCPZWFPZFDCULMJ
+      ZVQWAWBQZWFPZVPWFWEWHVPWFWEWHRVPWFPZVQWDWCWMVQPZWCWDWNVRWCWMVQVRWFVPVQVRU
+      QZWFVPVTIJZWOVTDIUMVQVRWPEFUNUOUPURUSUTVAVBVGVCVPWJFCVDKJZWFPZWGVPDVHJWJW
+      RRDVECDFVFVIWQWEWFWQVQVRPZWAWBQWSWCPWEABCEFGHVJWSWAWBSVQVRWCVKVLTVMWLWIRV
+      PWKWHWFVQWAWBSTVNVO $.
+
+    $d N i $.
+    $( Properties of a set being a closed walk (represented by a word).
+       (Contributed by Alexander van der Vekens, 17-Jun-2018.)  (Revised by AV,
+       24-Apr-2021.)  (Proof shortened by AV, 23-Mar-2022.) $)
+    clwwlknp $p |- ( W e. ( N ClWWalksN G )
+     -> ( ( W e. Word V /\ ( # ` W ) = N )
+          /\ A. i e. ( 0 ..^ ( N - 1 ) ) { ( W ` i ) , ( W ` ( i + 1 ) ) } e. E
+          /\ { ( lastS ` W ) , ( W ` 0 ) } e. E ) ) $=
+      ( co wcel cfv wa c1 cpr cc0 cmin cfzo wral w3a adantr cclwwlkn cword wceq
+      chash cv caddc clwwlknbp simpr clwwlknnn isclwwlknx 3simpc biimtrdi mpcom
+      clsw cn wb oveq1 oveq2d raleqdv anbi1d ad2antll mpbid mpdan 3anass sylibr
+      jca ) FDCUAIJZFEUBJZFUDKZDUCZLZAUEZFKVLMUFIFKNBJZAODMPIZQIZRZFUNKOFKNBJZL
+      ZLZVKVPVQSVGVKVSCDEFGUGVGVKLZVKVRVGVKUHVTVMAOVIMPIZQIZRZVQLZVRVGWDVKDUOJZ
+      VGWDCDFUIWEVGVHWCVQSZVJLWDABCDEFGHUJWFWDVJVHWCVQUKTULUMTVJWDVRUPVGVHVJWCV
+      PVQVJVMAWBVOVJWAVNOQVIDMPUQURUSUTVAVBVFVCVKVPVQVDVE $.
+  $}
+
+  ${
+    $d G i $.  $d W i $.
+    $( A closed walk of length 1 represented as word is a word consisting of 1
+       symbol representing a vertex connected to itself by (at least) one edge,
+       that is, a loop.  (Contributed by AV, 24-Apr-2021.)  (Revised by AV,
+       11-Feb-2022.) $)
+    clwwlkn1 $p |- ( W e. ( 1 ClWWalksN G ) <-> ( ( # ` W ) = 1
+                /\ W e. Word ( Vtx ` G ) /\ { ( W ` 0 ) } e. ( Edg ` G ) ) ) $=
+      ( vi c1 co wcel cfv cpr cc0 cmin cfzo wral w3a wceq wa eqid 3anass eqtrdi
+      wb c0 cclwwlkn cvtx cword cv caddc cedg chash csn cn 1nn isclwwlknx ax-mp
+      clsw ral0 oveq1 oveq2d fzo0 raleqdv adantr mpbiri biantrurd ancoms preq1d
+      1m1e0 dfsn2 eqtr4di eleq1d bitr3d pm5.32da bitrid pm5.32ri bitr2i 3bitri
+      lsw1 ancom ) BDAUAEFZBAUBGZUCFZCUDZBGVSDUEEBGHAUFGZFZCIBUGGZDJEZKEZLZBUMG
+      ZIBGZHZVTFZMZWBDNZOZVRWGUHZVTFZOZWKOZWKVRWNMZDUIFVPWLSUJCVTADVQBVQPVTPUKU
+      LWKWJWOWJVRWEWIOZOWKWOVRWEWIQWKVRWRWNWKVROZWIWRWNWSWEWIWSWEWACTLZWACUNWKW
+      EWTSVRWKWACWDTWKWDIIKETWKWCIIKWKWCDDJEIWBDDJUOVDRUPIUQRURUSUTVAWSWHWMVTWS
+      WHWGWGHWMWSWFWGWGVRWKWFWGNVQBVNVBVCWGVEVFVGVHVIVJVKWQWKWOOWPWKVRWNQWKWOVO
+      VLVM $.
+  $}
+
+  $( The singleton word consisting of a vertex ` V ` represents a closed walk
+     of length 1 iff there is a loop at vertex ` V ` .  (Contributed by AV,
+     11-Feb-2022.) $)
+  loopclwwlkn1b $p |- ( V e. ( Vtx ` G )
+              -> ( { V } e. ( Edg ` G ) <-> <" V "> e. ( 1 ClWWalksN G ) ) ) $=
+    ( cs1 c1 cclwwlkn co wcel chash cfv wceq cvtx cword cc0 cedg clwwlkn1 sneqd
+    csn w3a eleq1d adantr s1fv biimpcd 3ad2ant3 com12 s1leng s1cl eqcomd biimpa
+    wi wa 3jca ex impbid bitr2id ) BCZDAEFGUOHIDJZUOAKIZLGZMUOIZQZANIZGZRZBUQGZ
+    BQZVAGZAUOOVDVCVFVCVDVFVBUPVDVFUIURVDVBVFVDUTVEVAVDUSBBUQUAZPSUBUCUDVDVFVCV
+    DVFUJUPURVBVDUPVFBUQUETVDURVFBUQUFTVDVFVBVDVEUTVAVDBUSVDUSBVGUGPSUHUKULUMUN
+    $.
+
+  ${
+    $d G v $.  $d W v $.
+    $( A word represents a closed walk of length 1 iff this word is a singleton
+       word consisting of a vertex with an attached loop.  (Contributed by AV,
+       11-Feb-2022.) $)
+    clwwlkn1loopb $p |- ( W e. ( 1 ClWWalksN G )
+           <-> E. v e. ( Vtx ` G ) ( W = <" v "> /\ { v } e. ( Edg ` G ) ) ) $=
+      ( c1 cclwwlkn wcel chash cfv wceq cc0 csn w3a wa wrex sneqd eleq1d biimpd
+      wi imp adantr co cvtx cword cedg cv cs1 clwwlkn1 wrdl1exs1 fveq1 sylan9eq
+      s1fv ex com13 ancld reximdva syl5com expcom 3imp s1leng s1cl 3jca adantrl
+      eqcomd wb fveqeq2 eleq1 3anbi123d ad2antrl mpbird rexlimiva impbii bitri
+      ) CDBEUAFCGHDIZCBUBHZUCZFZJCHZKZBUDHZFZLZCAUEZUFZIZWBKZVSFZMZAVNNZBCUGWAW
+      HVMVPVTWHVPVMVTWHRVPVMMWDAVNNVTWHVNCAUHVTWDWGAVNVTWBVNFZMWDWFVTWIWDWFRWDW
+      IVTWFWDWIVTWFRWDWIMZVTWFWJVRWEVSWJVQWBWDWIVQJWCHZWBJCWCUIZWBVNUKZUJOPQULU
+      MSUNUOUPUQURWGWAAVNWIWGMWAWCGHDIZWCVOFZWKKZVSFZLZWIWFWRWDWIWFMWNWOWQWIWNW
+      FWBVNUSTWIWOWFWBVNUTTWIWFWQWIWFWQWIWEWPVSWIWBWKWIWKWBWMVCOPQSVAVBWDWAWRVD
+      WIWFWDVMWNVPWOVTWQCWCDGVECWCVOVFWDVRWPVSWDVQWKWLOPVGVHVIVJVKVL $.
+  $}
+
+  ${
+    $d G i $.  $d W i $.
+    $( A closed walk of length 2 represented as word is a word consisting of 2
+       symbols representing (not necessarily different) vertices connected by
+       (at least) one edge.  (Contributed by Alexander van der Vekens,
+       19-Sep-2018.)  (Revised by AV, 25-Apr-2021.) $)
+    clwwlkn2 $p |- ( W e. ( 2 ClWWalksN G ) <-> ( ( # ` W ) = 2
+                             /\ W e. Word ( Vtx ` G )
+                             /\ { ( W ` 0 ) , ( W ` 1 ) } e. ( Edg ` G ) ) ) $=
+      ( vi c2 co wcel cfv c1 cpr cc0 cmin cfzo wral w3a wceq eqid 3anass eqtrdi
+      wa eleq1d cclwwlkn cvtx cword cv caddc cedg chash cn 2nn isclwwlknx ax-mp
+      clsw wb csn oveq1 2m1e1 oveq2d fzo01 adantr raleqdv fveq2 fv0p1e1 preq12d
+      ralsn bitrdi prcom lswwrd fveq2d sylan9eqr preq2d eqtrid anbi12d pm5.32da
+      c0ex anidm bitrid pm5.32ri ancom bitr2i 3bitri ) BDAUAEFZBAUBGZUCFZCUDZBG
+      ZWDHUEEBGZIZAUFGZFZCJBUGGZHKEZLEZMZBULGZJBGZIZWHFZNZWJDOZSZWCWOHBGZIZWHFZ
+      SZWSSZWSWCXCNZDUHFWAWTUMUICWHADWBBWBPWHPUJUKWSWRXDWRWCWMWQSZSWSXDWCWMWQQW
+      SWCXGXCWSWCSZXGXCXCSXCXHWMXCWQXCXHWMWICJUNZMXCXHWICWLXIWSWLXIOWCWSWLJHLEX
+      IWSWKHJLWSWKDHKEHWJDHKUOUPRZUQURRUSUTWIXCCJVNWDJOZWGXBWHXKWEWOWFXAWDJBVAB
+      WDVBVCTVDVEXHWPXBWHXHWPWOWNIXBWNWOVFXHWNXAWOWCWSWNWKBGXAWBBVGWSWKHBXJVHVI
+      VJVKTVLXCVOVEVMVPVQXFWSXDSXEWSWCXCQWSXDVRVSVT $.
+  $}
+
+  ${
+    $d E i $.  $d G i $.  $d N i $.  $d W i $.  $d Z i $.
+    clwwlkext2edg.v $e |- V = ( Vtx ` G ) $.
+    clwwlkext2edg.e $e |- E = ( Edg ` G ) $.
+    $( If a word concatenated with a vertex represents a closed walk (in a
+       graph), there is an edge between this vertex and the last vertex of the
+       word, and between this vertex and the first vertex of the word.
+       (Contributed by Alexander van der Vekens, 3-Oct-2018.)  (Revised by AV,
+       27-Apr-2021.)  (Proof shortened by AV, 22-Mar-2022.) $)
+    clwwlkext2edg $p |- ( ( ( W e. Word V /\ Z e. V /\ N e. ( ZZ>= ` 2 ) )
+                             /\ ( W ++ <" Z "> ) e. ( N ClWWalksN G ) )
+                           -> ( { ( lastS ` W ) , Z } e. E
+                                /\ { Z , ( W ` 0 ) } e. E ) ) $=
+      ( co wcel c2 cfv cc0 wa wi c1 cmin wceq adantr ex vi cs1 cconcat cclwwlkn
+      cword cuz w3a clsw cpr cn clwwlknnn caddc chash cfzo isclwwlknx ige2m2fzo
+      cv wral 3ad2ant3 oveq1 oveq2d eleq2d adantl mpbird fvoveq1 preq12d eleq1d
+      wb fveq2 syl wrdlenccats1lenm1g eqcomd sylan9eq 3adant3 eluzelcn subsub4d
+      rspcv 1cnd a1i eqtr2d syld imp fveq2d c0 wne simpl1 s1cl 3ad2ant2 clt wbr
+      1p1e2 cz cle eluz2 cr zre 1red 2re simpl 1lt2 simpr ltletrd posdifd mpbid
+      3imp sylbi ad2antlr breq2 cfn wrdfin fihashneq0 3adantl2 3jca ccatval1lsw
+      id eqtrd 2m1e1 2cnd subsubd eqeq2 syl5ibrcom ccatws1ls sylibd com13 imp31
+      lswccats1 ccatfv0 syl3anc impcom biimpcd impl jca biimtrdi mpcom ) EFUBZU
+      CIZCBUDIJZEDUEZJZFDJZCKUFLJZUGZEUHLZFUIZAJZFMELZUIZAJZNZCUJJZYQUUBUUIOZBC
+      YPUKUUJYQYPYRJZUAUQZYPLZUUMPULIYPLZUIZAJZUAMYPUMLZPQIZUNIZURZYPUHLZMYPLZU
+      IZAJZUGZUURCRZNZUUKUAABCDYPGHUOUVHUUBUUIUVHUUBNUUEUUHUVFUVGUUBUUEUVAUULUV
+      GUUBUUEOOUVEUUBUVGUVAUUEUUBUVGUVAUUEOUUBUVGNZUVACKQIZYPLZUVJPULIZYPLZUIZA
+      JZUUEUVIUVJUUTJZUVAUVOOUVIUVPUVJMCPQIZUNIZJZUUBUVSUVGUUAYSUVSYTCUPUSSUVGU
+      VPUVSVHUUBUVGUUTUVRUVJUVGUUSUVQMUNUURCPQUTZVAVBVCVDUUQUVOUAUVJUUTUUMUVJRZ
+      UUPUVNAUWAUUNUVKUUOUVMUUMUVJYPVIUUMUVJPYPULVEVFVGVQVJUVIUVNUUDAUVIUVKUUCU
+      VMFUVIUVKEUMLZPQIZYPLZUUCUVIUVJUWCYPUUBUVGUVJUWCRZUUBUVGUWBUVQRZUWEYSYTUV
+      GUWFOUUAYSYTNZUVGUWFUWGUVGUWBUUSUVQUWGUUSUWBDFDEVKVLUVTVMTVNZUUBUWFUWEUUB
+      UWFUVJUVQPQIZUWCUUAYSUVJUWIRYTUUAUWICPPULIZQIUVJUUACPPKCVOZUUAVRZUWLVPUUA
+      UWJKCQUWJKRUUAWKVSVAVTUSUWFUWCUWIUWBUVQPQUTVLVMTWAWBWCUVIYSYOYRJZEWDWEZUG
+      ZUWDUUCRUUBUVGUWOUUBUVGUWFUWOUWHUUBUWFUWOUUBUWFNZYSUWMUWNYSYTUUAUWFWFZUUB
+      UWMUWFYTYSUWMUUAFDWGWHSZYSUUAUWFUWNYTYSUUANZUWFNZMUWBWIWJZUWNUWTUXAMUVQWI
+      WJZUUAUXBYSUWFUUAKWLJZCWLJZKCWMWJZUGUXBKCWNUXCUXDUXEUXBUXDUXEUXBOZOUXCUXD
+      CWOJZUXFCWPUXGUXEUXBUXGUXENZPCWIWJZUXBUXHPKCUXHWQKWOJUXHWRVSUXGUXEWSPKWIW
+      JUXHWTVSUXGUXEXAXBUXGUXIUXBVHUXEUXGPCUXGWQUXGXOXCSXDTVJVSXEXFZXGUWFUXAUXB
+      VHZUWSUWBUVQMWIXHZVCVDUWSUXAUWNVHZUWFYSUXMUUAYSEXIJUXMDEXJEXKVJSSXDXLXMTW
+      AWBEYODXNVJXPUVIUVMUWBYPLZFUVIUVLUWBYPUUBUVGUVLUWBRZUUBUVGUWFUXOUWHUUBUXO
+      UWFUVLUVQRZUUAYSUXPYTUUAUVQCKPQIZQIUVLUUAPUXQCQUUAUXQPUXQPRUUAXQVSVLVAUUA
+      CKPUWKUUAXRUWLXSVTUSUWBUVQUVLXTYAWAWBWCUVIUWGUXNFRUUBUWGUVGYSYTUWGUUAUWGX
+      OVNZSDEFYBVJXPVFVGYCTYDWHYEUVFUVGUUBUUHUVEUULUVGUUBNZUUHOUVAUXSUVEUUHUXSU
+      VDUUGAUUBUVGUVDUUGRZUUBUVGUWFUXTUWHUUBUWFUXTUWPUVBFUVCUUFUWPUWGUVBFRUUBUW
+      GUWFUXRSFDEYFVJUWPYSUWMUXAUVCUUFRUWQUWRUWPUXAUXBUUBUXBUWFUUAYSUXBYTUXJUSS
+      UWFUXKUUBUXLVCVDEYODYGYHVFTWAYIVGYJUSYKYLTYMYNYI $.
+  $}
+
+  $( The concatenation of two words representing closed walks anchored at the
+     same vertex represents a closed walk with a length which is the sum of the
+     lengths of the two walks.  The resulting walk is a "double loop", starting
+     at the common vertex, coming back to the common vertex by the first walk,
+     following the second walk and finally coming back to the common vertex
+     again.  (Contributed by AV, 24-Apr-2022.) $)
+  clwwlknccat $p |- ( ( A e. ( M ClWWalksN G ) /\ B e. ( N ClWWalksN G )
+                        /\ ( A ` 0 ) = ( B ` 0 ) )
+                      -> ( A ++ B ) e. ( ( M + N ) ClWWalksN G ) ) $=
+    ( cclwwlkn co wcel cc0 cfv wceq caddc chash wa isclwwlkni syl3an clwwlknwrd
+    simpl clwwlknlen cn0 w3a cconcat cclwwlk clwwlkccat cvtx cword eqid ccatlen
+    syl2an oveqan12d eqtrd 3adant3 clwwlknnn nnnn0d 3ad2ant1 3ad2ant2 nn0addcld
+    id wb isclwwlkng syl mpbir2and ) ADCFGHZBECFGHZIAJIBJKZUAZABUBGZDELGZCFGHZV
+    GCUCJZHZVGMJZVHKZVCAVJHZAMJZDKZNZVDBVJHZBMJZEKZNZVEVEVKCDAOCEBOVEURZVQVNWAV
+    RVEVEVKVNVPRVRVTRWBABCUDPPVCVDVMVEVCVDNVLVOVSLGZVHVCACUEJZUFZHBWEHVLWCKVDCD
+    WDAWDUGZQCEWDBWFQWDWDABUHUIVCVDVODVSELCDASCEBSUJUKULVFVHTHVIVKVMNUSVFDEVCVD
+    DTHVEVCDCDAUMUNUOVDVCETHVEVDECEBUMUNUPUQCVHVGUTVAVB $.
+
+  ${
+    $d G i $.  $d N i $.  $d W i $.
+    $( If a word represents a closed walk of length at least 2 in a multigraph,
+       the first two symbols of the word must be different.  (Contributed by
+       Alexander van der Vekens, 17-Jun-2018.)  (Revised by AV,
+       30-Apr-2021.) $)
+    umgr2cwwk2dif $p |- ( ( G e. UMGraph /\ N e. ( ZZ>= ` 2 )
+                            /\ W e. ( N ClWWalksN G ) )
+                          -> ( W ` 1 ) =/= ( W ` 0 ) ) $=
+      ( vi cclwwlkn co wcel c2 cuz cfv cumgr c1 cc0 wceq wa caddc cpr wi adantl
+      eqid wne cvtx cword chash cedg cmin cfzo wral clsw clwwlknp simpr uz2m1nn
+      cv cn lbfzo0 sylibr fveq2 oveq1 0p1e1 eqtrdi fveq2d preq12d eleq1d rspcdv
+      w3a com12 3ad2ant2 imp adantr umgredgne necomd syl2anc exp31 syl 3imp31 )
+      CBAEFGZBHIJGZAKGZLCJZMCJZUAZVPCAUBJZUCGCUDJBNOZDUMZCJZWDLPFZCJZQZAUEJZGZD
+      MBLUFFZUGFZUHZCUIJVTQWIGZVEZVQVRWARRDWIABWBCWBTWITZUJWOVQVRWAWOVQOZVROVRV
+      TVSQZWIGZWAWQVRUKWQWSVRWOVQWSWMWCVQWSRWNVQWMWSVQWJWSDMWLVQWKUNGMWLGBULWKU
+      OUPVQWDMNZOZWHWRWIXAWEVTWGVSWTWEVTNVQWDMCUQSXAWFLCXAWFMLPFZLWTWFXBNVQWDML
+      PURSUSUTVAVBVCVDVFVGVHVIVRWSOVTVSWIAVTVSWPVJVKVLVMVNVO $.
+
+    $( If a word represents a closed walk of length at least 2 in a undirected
+       simple graph, there must be a symbol different from the first symbol of
+       the word.  (Contributed by Alexander van der Vekens, 17-Jun-2018.)
+       (Revised by AV, 30-Apr-2021.) $)
+    umgr2cwwkdifex $p |- ( ( G e. UMGraph /\ N e. ( ZZ>= ` 2 )
+                            /\ W e. ( N ClWWalksN G ) )
+                          -> E. i e. ( 0 ..^ N ) ( W ` i ) =/= ( W ` 0 ) ) $=
+      ( cumgr wcel c2 cuz cfv cclwwlkn co w3a cv cc0 wne c1 cfzo cn wa wceq clt
+      wbr eluz2b2 1nn0 simpl simpr elfzo0 syl3anbrc sylbi 3ad2ant2 fveq2 adantl
+      cn0 a1i neeq1d umgr2cwwk2dif rspcedvd ) BEFZCGHIFZDCBJKFZLZAMZDIZNDIZOPDI
+      ZVDOAPNCQKZUSURPVFFZUTUSCRFZPCUAUBZSZVGCUCVJPUMFZVHVIVGVKVJUDUNVHVIUEVHVI
+      UFPCUGUHUIUJVAVBPTZSVCVEVDVLVCVETVAVBPDUKULUOBCDUPUQ $.
+  $}
 
 
 $(
@@ -201237,6 +201597,9 @@ htmldef "Trails" as "Trails";
 htmldef "ClWWalks" as 'ClWWalks';
   althtmldef "ClWWalks" as 'ClWWalks';
   latexdef "ClWWalks" as "\mathrm{ClWWalks}";
+htmldef "ClWWalksN" as ' ClWWalksN ';
+  althtmldef "ClWWalksN" as ' ClWWalksN ';
+  latexdef "ClWWalksN" as "\mathrm{ClWWalksN}";
 
 /* htmldef, althtmldef, latexdef for mathboxes */
 /* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
