@@ -197396,6 +197396,17 @@ $)
     VAUOABCDPQZUQNRSUAUPVAKNEZAUQEZBUQEZUOUTMEZVBVCUPUBUCUMUNVDUOABCUDUEUNUMVEU
     OABDUFUGUMUNUOUHVAVCTVDVETUOVFKABUQNNUIUKUJUL $.
 
+  $( A class without edges is a simple graph.  Since ` ran F = (/) ` does not
+     generally imply ` Fun F ` , but ` Fun ( iEdg `` G ) ` is required for
+     ` G ` to be a simple graph, however, this must be provided as assertion.
+     (Contributed by AV, 18-Oct-2020.) $)
+  edg0usgr $p |- ( ( G e. W /\ ( Edg ` G ) = (/) /\ Fun ( iEdg ` G ) )
+                   -> G e. USGraph ) $=
+    ( wcel cedg cfv wceq ciedg wfun cusgr crn edgvalg eqeq1d wrel funrel relrn0
+    c0 wi wb bicomd syl wa simpr simpl usgr0e ex biimtrdi com13 sylbid 3imp ) A
+    BCZADEZPFZAGEZHZAICZUJULUMJZPFZUNUOQUJUKUPPABKLUNUQUJUOUNUQUMPFZUJUOQUNUMMZ
+    UQURRUMNUSURUQUMOSTURUJUOURUJUAABURUJUBURUJUCUDUEUFUGUHUI $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
