@@ -197372,6 +197372,20 @@ $)
       UKGHBCDDSTUHPUAUBUCAMBCDEPFMPQAUDUEGHIUFUG $.
   $}
 
+  $( A simple graph with (at least) two different vertices and one edge.  If
+     the two vertices were not different, the edge would be a loop.
+     (Contributed by Alexander van der Vekens, 10-Aug-2017.)  (Revised by AV,
+     18-Oct-2020.) $)
+  usgr1eop $p |- ( ( ( V e. W /\ A e. X ) /\ ( B e. V /\ C e. V ) )
+            -> ( B =/= C -> <. V , { <. A , { B , C } >. } >. e. USGraph ) ) $=
+    ( wcel wa wne cpr cop csn cusgr cvtx cfv cvv wceq adantr syl2anc eleqtrrd
+    simpllr simplrl simpll simplr prexg adantl opexg snexg opvtxfv simprr ciedg
+    eqid syl opiedgfv simpr usgr1e ex ) DEGZAFGZHZBDGZCDGZHZHZBCIZDABCJZKZLZKZM
+    GVDVEHZABCVIVINOZFVKULURUSVCVEUAVJBDVKUTVAVBVEUBVJURVHPGZVKDQZVDURVEURUSVCU
+    CZRZVDVLVEVDVGPGZVLVDUSVFPGZVPURUSVCUDVCVQUTBCDDUEUFAVFFPUGSVGPUHUMZRZVHDEP
+    UIZSTVDCVKGVEVDCDVKUTVAVBUJVDURVLVMVNVRVTSTRVJURVLVIUKOVHQVOVSVHDEPUNSVDVEU
+    OUPUQ $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
