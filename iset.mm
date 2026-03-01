@@ -197302,21 +197302,37 @@ $)
     uspgr1e.a $e |- ( ph -> A e. X ) $.
     uspgr1e.b $e |- ( ph -> B e. V ) $.
     uspgr1e.c $e |- ( ph -> C e. V ) $.
-    uspgr1edc.dc $e |- ( ph -> DECID B = C ) $.
     uspgr1e.e $e |- ( ph -> ( iEdg ` G ) = { <. A , { B , C } >. } ) $.
-    $( A simple pseudograph with one edge.  (Contributed by Alexander van der
-       Vekens, 10-Aug-2017.)  (Revised by AV, 16-Oct-2020.)  (Revised by AV,
-       21-Mar-2021.)  (Proof shortened by AV, 17-Apr-2021.) $)
-    uspgr1edc $p |- ( ph -> G e. USPGraph ) $=
-      ( vx wcel wf1 csn cvv syl2anc mpbird cuspgr ciedg cfv cdm c1o cen wbr c2o
-      cv wo cvtx cpw crab cpr cop wss prexg snidg f1sng prssd sseqtrdi wb elpwg
-      syl upgr1elem1 f1ss wceq f1dm f1eq2 3syl dmeqd eqidd f1eq123d 1vgrex eqid
-      isuspgren ) AEUAOZEUBUCZUDZNUIZUEUFUGVTUHUFUGUJZNEUKUCZULZUMZVRPZAWEBCDUN
-      ZUOQZUDZWDWGPZAWIBQZWDWGPZAWJWFQZWGPZWLWDUPWKABGOWFWLOZWMIAWFROZWNACFOZDF
-      OWOJKCDFFUQSZWFRURVDBWFGWLUSSZANCDWCFFAWFWCOZWFWBUPZAWFFWBACDFJKUTHVAAWOW
-      SWTVBWQWFWBRVCVDTJKLVEWJWLWDWGVFSAWJWANRUMZWGPZWHWJVGWIWKVBAWMWLXAUPXBWRA
-      NCDRFFWQJKLVEWJWLXAWGVFSWJXAWGVHWHWJWDWGVIVJTAVSWHWDWDVRWGMAVRWGMVKAWDVLV
-      MTAWPEROVQWEVBJECFHVNNRVREWBWBVOVRVOVPVJT $.
+    ${
+      uspgr1edc.dc $e |- ( ph -> DECID B = C ) $.
+      $( A simple pseudograph with one edge.  (Contributed by Alexander van der
+         Vekens, 10-Aug-2017.)  (Revised by AV, 16-Oct-2020.)  (Revised by AV,
+         21-Mar-2021.)  (Proof shortened by AV, 17-Apr-2021.) $)
+      uspgr1edc $p |- ( ph -> G e. USPGraph ) $=
+        ( vx wcel wf1 csn cvv syl2anc mpbird cuspgr ciedg cfv cdm cv c1o cen wo
+        wbr c2o cvtx cpw cpr cop wss prexg snidg syl f1sng prssd sseqtrdi elpwg
+        crab wb upgr1elem1 f1ss wceq f1dm f1eq2 3syl dmeqd f1eq123d 1vgrex eqid
+        eqidd isuspgren ) AEUAOZEUBUCZUDZNUEZUFUGUIVTUJUGUIUHZNEUKUCZULZVCZVRPZ
+        AWEBCDUMZUNQZUDZWDWGPZAWIBQZWDWGPZAWJWFQZWGPZWLWDUOWKABGOWFWLOZWMIAWFRO
+        ZWNACFOZDFOWOJKCDFFUPSZWFRUQURBWFGWLUSSZANCDWCFFAWFWCOZWFWBUOZAWFFWBACD
+        FJKUTHVAAWOWSWTVDWQWFWBRVBURTJKMVEWJWLWDWGVFSAWJWANRVCZWGPZWHWJVGWIWKVD
+        AWMWLXAUOXBWRANCDRFFWQJKMVEWJWLXAWGVFSWJXAWGVHWHWJWDWGVIVJTAVSWHWDWDVRW
+        GLAVRWGLVKAWDVOVLTAWPEROVQWEVDJECFHVMNRVREWBWBVNVRVNVPVJT $.
+    $}
+
+    usgr1e.e $e |- ( ph -> B =/= C ) $.
+    $( A simple graph with one edge (with additional assumption that
+       ` B =/= C ` since otherwise the edge is a loop!).  (Contributed by
+       Alexander van der Vekens, 10-Aug-2017.)  (Revised by AV,
+       18-Oct-2020.) $)
+    usgr1e $p |- ( ph -> G e. USGraph ) $=
+      ( vx cuspgr wcel c2o cen wceq syl cv wbr cedg cfv wral cusgr wne wdc olcd
+      wo dcne sylibr uspgr1edc cpr csn wb pr2ne syl2anc mpbird cvv prexg ralsng
+      breq1 ciedg crn cop edgvalg rneqd 3eqtrd raleqtrrdv usgruspgrben sylanbrc
+      rnsnopg ) AEOPZNUAZQRUBZNEUCUDZUEEUFPABCDEFGHIJKLACDSZCDUGZUJVRUHAVSVRMUI
+      CDUKULUMZAVPNCDUNZUOZVQAVPNWBUEZWAQRUBZAWDVSMACFPZDFPZWDVSUPJKCDFFUQURUSA
+      WAUTPZWCWDUPAWEWFWGJKCDFFVAURVPWDNWAUTVOWAQRVCVBTUSAVQEVDUDZVEZBWAVFUOZVE
+      ZWBAVNVQWISVTEOVGTAWHWJLVHABGPWKWBSIBWAGVMTVIVJNEVKVL $.
   $}
 
   $( The empty graph, with vertices but no edges, is a simple graph.
@@ -197340,7 +197356,7 @@ $)
       ( cpr cop cfv wcel cvv wceq syl2anc eleqtrrd csn cvtx prexg opexg opvtxfv
       eqid snexg syl ciedg opiedgfv uspgr1edc ) ABCDEBCDMZNZUAZNZUOUBOZGUPUFIAC
       EUPJAEFPZUNQPZUPERHAUMQPZURABGPULQPZUSIACEPDEPUTJKCDEEUCSBULGQUDSUMQUGUHZ
-      UNEFQUESZTADEUPKVBTLAUQURUOUIOUNRHVAUNEFQUJSUK $.
+      UNEFQUESZTADEUPKVBTAUQURUOUIOUNRHVAUNEFQUJSLUK $.
   $}
 
   ${
