@@ -197386,6 +197386,16 @@ $)
     UIZSTVDCVKGVEVDCDVKUTVAVBUJVDURVLVMVNVRVTSTRVJURVLVIUKOVHQVOVSVHDEPUNSVDVEU
     OUPUQ $.
 
+  $( A simple graph with two vertices and one edge represented by a singleton
+     word.  (Contributed by AV, 9-Jan-2021.) $)
+  usgr2v1e2w $p |- ( ( A e. X /\ B e. Y /\ A =/= B )
+                     -> <. { A , B } , <" { A , B } "> >. e. USGraph ) $=
+    ( wcel wne w3a cpr cs1 cop cc0 csn cusgr cvv wceq prexg 3adant3 s1val syl
+    wa opeq2d c0ex a1i prid1g 3ad2ant1 prid2g 3ad2ant2 simp3 usgr1eop syl221anc
+    3impia eqeltrd ) ACEZBDEZABFZGZABHZUQIZJUQKUQJLZJZMUPURUSUQUPUQNEZURUSOUMUN
+    VAUOABCDPQZUQNRSUAUPVAKNEZAUQEZBUQEZUOUTMEZVBVCUPUBUCUMUNVDUOABCUDUEUNUMVEU
+    OABDUFUGUMUNUOUHVAVCTVDVETUOVFKABUQNNUIUKUJUL $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
