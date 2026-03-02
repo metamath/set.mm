@@ -197407,6 +197407,25 @@ $)
     BCZADEZPFZAGEZHZAICZUJULUMJZPFZUNUOQUJUKUPPABKLUNUQUJUOUNUQUMPFZUJUOQUNUMMZ
     UQURRUMNUSURUQUMOSTURUJUOURUJUAABURUJUBURUJUCUDUEUFUGUHUI $.
 
+  ${
+    $d A e p q $.  $d G e p q $.  $d X e p q $.
+    $( A simple graph with one vertex has no edges.  (Contributed by AV,
+       18-Oct-2020.)  (Revised by AV, 21-Mar-2021.)  (Proof shortened by AV,
+       2-Apr-2021.) $)
+    usgr1vr $p |- ( ( A e. X /\ ( Vtx ` G ) = { A } )
+                   -> ( G e. USGraph -> ( iEdg ` G ) = (/) ) ) $=
+      ( ve vp vq wcel cfv wceq wa c0 cv wrex wfal adantl eqid eleqtrd elsni syl
+      ex cvtx csn cusgr ciedg cedg cupgr usgrupgr upgredg sylan simplrl simp-5r
+      simplrr eqtr4d wn simp-4r simpr simpllr eqeltrrd usgredgne neneqd syl2anc
+      cpr pm2.21fal rexlimdvva mpd inegd eq0rdv wb cuhgr usgruhgr uhgriedg0edg0
+      mpbid ) ACGZBUAHZAUBZIZJZBUCGZBUDHKIZVQVRJZBUEHZKIZVSVTDWAVTDLZWAGZVTWDJZ
+      WCELZFLZVBZIZFVNMEVNMZNVTBUFGZWDWJVRWKVQBUGOWCWABVNEFVNPWAPZUHUIWEWINEFVN
+      VNWEWFVNGZWGVNGZJZJZWINWPWIJZWFWGIZWQWFAWGWQWFVOGWFAIWQWFVNVOWEWMWNWIUJVM
+      VPVRWDWOWIUKZQWFARSWQWGVOGWGAIWQWGVNVOWEWMWNWIULWSQWGARSUMWQVRWHWAGZWRUNV
+      QVRWDWOWIUOWQWCWHWAWPWIUPVTWDWOWIUQURVRWTJWFWGWABWFWGWLUSUTVAVCTVDVEVFVGV
+      RWBVSVHZVQVRBVIGXABVJBVKSOVLT $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
