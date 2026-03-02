@@ -197426,6 +197426,20 @@ $)
       RWBVSVHZVQVRBVIGXABVJBVKSOVLT $.
   $}
 
+  $( Lemma for usgrexmpledg : all "edges" are different.  (Contributed by
+     Alexander van der Vekens, 15-Aug-2017.) $)
+  usgrexmpldifpr $p |- ( ( { 0 , 1 } =/= { 1 , 2 } /\ { 0 , 1 } =/= { 2 , 0 }
+                /\ { 0 , 1 } =/= { 0 , 3 } ) /\ ( { 1 , 2 } =/= { 2 , 0 }
+                /\ { 1 , 2 } =/= { 0 , 3 } /\ { 2 , 0 } =/= { 0 , 3 } ) ) $=
+    ( cc0 c1 cpr c2 wne c3 w3a cz wcel wa wo 0z 1z pm3.2i 1ne0 orci prneimg mp2
+    2z cn necomi 2ne0 1ne2 olci 3nn 1re 1lt3 ltneii 3pm3.2i 2re 2lt3 ) ABCZBDCZ
+    EZULDACZEZULAFCZEZGUMUOEZUMUQEZUOUQEZGUNUPURAHIZBHIZJZVCDHIZJZJABEZADEZJZBB
+    EBDEZJZKUNVDVFVBVCLMNZVCVEMSNZNVIVKVGVHBAOUADAUBUANPABBDHHHHQRVDVEVBJZJVHAA
+    EZJZVJBAEZJZKUPVDVNVLVEVBSLNZNVRVPVJVQUCONZUDABDAHHHHQRVDVBFTIZJZJVOAFEJZVQ
+    BFEZJZKURVDWBVLVBWALUENZNWEWCVQWDOBFUFUGUHNZUDABAFHHHTQRUIUSUTVAVFVNJVRDDED
+    AEZJZKUSVFVNVMVSNVRWIVTPBDDAHHHHQRVFWBJWEWHDFEZJZKUTVFWBVMWFNWEWKWGPBDAFHHH
+    TQRVNWBJWKWCKVAVNWBVSWFNWKWCWHWJUBDFUJUKUHNPDAAFHHHTQRUIN $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
