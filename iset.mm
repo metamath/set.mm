@@ -37347,6 +37347,12 @@ $)
       ( wss wcel cvv ssexg syl2anc ) ABCGCDHBIHFEBCDJK $.
   $}
 
+  $( The superclass of a proper class is a proper class.  (Contributed by AV,
+     27-Dec-2020.) $)
+  prcssprc $p |- ( ( A C_ B /\ A e/ _V ) -> B e/ _V ) $=
+    ( wss cvv wnel wcel ssexg ex nelcon3d imp ) ABCZADEBDEKBDADKBDFADFABDGHIJ
+    $.
+
   $( Existence of a difference.  (Contributed by NM, 26-May-1998.) $)
   difexg $p |- ( A e. V -> ( A \ B ) e. _V ) $=
     ( cdif wss wcel cvv difss ssexg mpan ) ABDZAEACFKGFABHKACIJ $.
