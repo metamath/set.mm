@@ -43766,6 +43766,15 @@ $)
     EFZABGZABHZIZIZJUBKEZSKEABLRTKEUAKEUCABCDMTKNUAKNOSUBKPQ $.
 
   ${
+    xpexd.1 $e |- ( ph -> A e. V ) $.
+    xpexd.2 $e |- ( ph -> B e. W ) $.
+    $( The Cartesian product of two sets is a set.  (Contributed by Glauco
+       Siliprandi, 26-Jun-2021.) $)
+    xpexd $p |- ( ph -> ( A X. B ) e. _V ) $=
+      ( wcel cxp cvv xpexg syl2anc ) ABDHCEHBCIJHFGBCDEKL $.
+  $}
+
+  ${
     xpex.1 $e |- A e. _V $.
     xpex.2 $e |- B e. _V $.
     $( The cross product of two sets is a set.  Proposition 6.2 of
