@@ -59271,6 +59271,18 @@ $)
   $}
 
   ${
+    $d x y A $.  $d x y B $.  $d x y ph $.
+    opabex2.1 $e |- ( ph -> A e. V ) $.
+    opabex2.2 $e |- ( ph -> B e. W ) $.
+    opabex2.3 $e |- ( ( ph /\ ps ) -> x e. A ) $.
+    opabex2.4 $e |- ( ( ph /\ ps ) -> y e. B ) $.
+    $( Condition for an operation to be a set.  (Contributed by Thierry Arnoux,
+       25-Jun-2019.) $)
+    opabex2 $p |- ( ph -> { <. x , y >. | ps } e. _V ) $=
+      ( copab cxp cvv xpexd opabssxpd ssexd ) ABCDMEFNOAEFGHIJPABCDEFKLQR $.
+  $}
+
+  ${
     $d x y z u A $.  $d x y z u B $.  $d x y z u C $.
     $( Define the cross product of three classes.  Compare ~ df-xp .
        (Contributed by FL, 6-Nov-2013.)  (Proof shortened by Mario Carneiro,
