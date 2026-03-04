@@ -59283,6 +59283,19 @@ $)
   $}
 
   ${
+    $d x y $.  $d ph x $.
+    $( An ordered-pair class abstraction which does not depend on the first
+       abstraction variable is a proper class.  There must be, however, at
+       least one set which satisfies the restricting wff.  (Contributed by AV,
+       27-Dec-2020.) $)
+    opabn1stprc $p |- ( E. y ph -> { <. x , y >. | ph } e/ _V ) $=
+      ( wex copab cvv wcel wn wnel cdm cv wa vex biantrur opabbii dmeqi wral id
+      wceq ralrimivw dmopab3 sylib eqtrid vprc a1i eqneltrd dmexg df-nel sylibr
+      nsyl ) ACDZABCEZFGZHULFIUKULJZFGUMUKUNFFUKUNBKFGZALZBCEZJZFULUQAUPBCUOABM
+      NOPUKUKBFQURFSUKUKBFUKRTABCFUAUBUCFFGHUKUDUEUFULFUGUJULFUHUI $.
+  $}
+
+  ${
     $d x y z u A $.  $d x y z u B $.  $d x y z u C $.
     $( Define the cross product of three classes.  Compare ~ df-xp .
        (Contributed by FL, 6-Nov-2013.)  (Proof shortened by Mario Carneiro,
