@@ -42969,6 +42969,21 @@ $)
     ( cop cxp wcel opelxp1 syl ) ABGZCGDEHZFHILMIADILCMFJABDEJK $.
 
   ${
+    $d A x z $.  $d A y $.  $d B x $.  $d B y z $.  $d ph x $.  $d ph y z $.
+    $d ps z $.
+    opabssxpd.x $e |- ( ( ph /\ ps ) -> x e. A ) $.
+    opabssxpd.y $e |- ( ( ph /\ ps ) -> y e. B ) $.
+    $( An ordered-pair class abstraction is a subset of a Cartesian product.
+       Formerly part of proof for ~ opabex2 .  (Contributed by AV,
+       26-Nov-2021.) $)
+    opabssxpd $p |- ( ph -> { <. x , y >. | ps } C_ ( A X. B ) ) $=
+      ( vz copab cv cop wceq wa wex cab cxp df-opab wcel simprl opelxpd adantrl
+      eqeltrd ex exlimdvv abssdv eqsstrid ) ABCDJIKZCKZDKZLZMZBNZDOCOZIPEFQZBCD
+      IRAUNIUOAUMUHUOSZCDAUMUPAUMNUHUKUOAULBTABUKUOSULABNUIUJEFGHUAUBUCUDUEUFUG
+      $.
+  $}
+
+  ${
     $d x y z A $.  $d x y z B $.  $d y z ph $.  $d x ps $.
     rabxp.1 $e |- ( x = <. y , z >. -> ( ph <-> ps ) ) $.
     $( Membership in a class builder restricted to a cross product.
