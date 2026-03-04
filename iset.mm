@@ -197518,6 +197518,16 @@ $)
       $.
   $}
 
+  ${
+    $d e v $.
+    $( The class of simple graphs is a proper class (and therefore, because of
+       ~ prcssprc , the classes of multigraphs, pseudographs and hypergraphs
+       are proper classes, too).  (Contributed by AV, 27-Dec-2020.) $)
+    usgrprc $p |- USGraph e/ _V $=
+      ( ve vv c0 cv copab cusgr wss wnel eqid griedg0ssusgr griedg0prc prcssprc
+      wf cvv mp2an ) CCADMBAEZFGPNHFNHBPAPIZJBPAQKPFLO $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
