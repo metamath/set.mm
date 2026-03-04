@@ -197489,6 +197489,17 @@ $)
     AEZJZKUSVFVNVMVSNVRWIVTPBDDAHHHHQRVFWBJWEWHDFEZJZKUTVFWBVMWFNWEWKWGPBDAFHHH
     TQRVNWBJWKWCKVAVNWBVSWFNWKWCWHWJUBDFUJUKUHNPDAAFHHHTQRUIN $.
 
+  ${
+    $d e v $.
+    griedg0prc.u $e |- U = { <. v , e >. | e : (/) --> (/) } $.
+    $( The class of empty graphs (represented as ordered pairs) is a proper
+       class.  (Contributed by AV, 27-Dec-2020.) $)
+    griedg0prc $p |- U e/ _V $=
+      ( cvv wnel c0 cv wf copab wex feq1 f0 ceqsexv2d opabn1stprc ax-mp wceq wb
+      0ex neleq1 mpbir ) BEFZGGCHZIZACJZEFZUDCKUFUDGGGICGSGGUCGLGMNUDACOPBUEQUB
+      UFRDBUEETPUA $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
