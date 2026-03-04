@@ -199631,6 +199631,36 @@ $)
 
 
 $(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Closed walks on a vertex of a fixed length as words
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $c ClWWalksNOn $.
+
+  $( Extend class notation with closed walks (in an undirected graph) anchored
+     at a fixed vertex and of a fixed length as word over the set of
+     vertices. $)
+  cclwwlknon $a class ClWWalksNOn $.
+
+  ${
+    $d g n v w $.
+    $( Define the set of all closed walks a graph ` g ` , anchored at a fixed
+       vertex ` v ` (i.e., a walk starting and ending at the fixed vertex
+       ` v ` , also called "a closed walk on vertex ` v ` ") and having a fixed
+       length ` n ` as words over the set of vertices.  Such a word corresponds
+       to the sequence v=p(0) p(1) ... p(n-1) of the vertices in a closed walk
+       p(0) e(f(1)) p(1) e(f(2)) ... p(n-1) e(f(n)) p(n)=p(0)=v .  The set
+       ` ( ( v ( ClWWalksNOn `` g ) n ) ` corresponds to the set of "walks from
+       v to v of length n" in a statement of [Huneke] p. 2.  (Contributed by
+       AV, 24-Feb-2022.) $)
+    df-clwwlknon $a |- ClWWalksNOn = ( g e. _V
+                    |-> ( v e. ( Vtx ` g ) , n e. NN0
+                          |-> { w e. ( n ClWWalksN g ) | ( w ` 0 ) = v } ) ) $.
+  $}
+
+
+$(
 ###############################################################################
   GUIDES AND MISCELLANEA
 ###############################################################################
@@ -201910,6 +201940,9 @@ htmldef "ClWWalks" as 'ClWWalks';
 htmldef "ClWWalksN" as ' ClWWalksN ';
   althtmldef "ClWWalksN" as ' ClWWalksN ';
   latexdef "ClWWalksN" as "\mathrm{ClWWalksN}";
+htmldef "ClWWalksNOn" as 'ClWWalksNOn';
+  althtmldef "ClWWalksNOn" as 'ClWWalksNOn';
+  latexdef "ClWWalksNOn" as "\mathrm{ClWWalksNOn}";
 
 /* htmldef, althtmldef, latexdef for mathboxes */
 /* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
