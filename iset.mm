@@ -197498,6 +197498,18 @@ $)
       ( cvv wnel c0 cv wf copab wex feq1 f0 ceqsexv2d opabn1stprc ax-mp wceq wb
       0ex neleq1 mpbir ) BEFZGGCHZIZACJZEFZUDCKUFUDGGGICGSGGUCGLGMNUDACOPBUEQUB
       UFRDBUEETPUA $.
+
+    $d e g v $.  $d U g $.
+    $( The class of all simple graphs is a superclass of the class of empty
+       graphs represented as ordered pairs.  (Contributed by AV,
+       27-Dec-2020.) $)
+    griedg0ssusgr $p |- U C_ USGraph $=
+      ( vg cusgr cv wcel cop wceq c0 wf wex copab eleq2i elopab bitri cvv vex
+      wa opex a1i ciedg cfv opiedgfvi f0bi biimpi eqtrid usgr0e adantl wb eleq1
+      adantr mpbird exlimivv sylbi ssriv ) EBFEGZBHZURAGZCGZIZJZKKVALZTZCMAMZUR
+      FHZUSURVDACNZHVFBVHURDOVDACURPQVEVGACVEVGVBFHZVDVIVCVDVBRVBRHVDUTVAASZCSZ
+      UAUBVDVBUCUDVAKVAUTVJVKUEVDVAKJVAKUFUGUHUIUJVCVGVIUKVDURVBFULUMUNUOUPUQ
+      $.
   $}
 
 
