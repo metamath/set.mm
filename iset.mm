@@ -59989,6 +59989,23 @@ $)
       JKL $.
   $}
 
+  ${
+    $d A r x y $.  $d A z $.  $d B r x y $.  $d B w $.  $d C r $.  $d D r $.
+    $d D s $.  $d F s $.
+    elmpoex.f $e |- F = ( x e. A , y e. B |-> C ) $.
+    $( If a maps-to operation is inhabited, the first class it is defined with
+       is inhabited.  (Contributed by Jim Kingdon, 4-Mar-2026.) $)
+    elmpom $p |- ( D e. F -> E. z z e. A ) $=
+      ( vw vr vs wcel cv wex wa cfv cdm wceq cop c1st coprab df-mpo eqtri dmeqi
+      cxp cmpo dmoprabss eqsstri c2nd 2ndexg wrel wfun mpofun funrel ax-mp mpan
+      1st2nd eleq1d ibi opeq2 elabd wb 1stexg eldm2g mpbird sselid elex2 sylibr
+      cvv syl xpm simpld ) GHMZCNDMCOZJNEMJOZVNKNZDEUFZMKOZVOVPPVNGUAQZVRMVSVNH
+      RZVRVTWAANDMBNEMPVQFSZPABKUBZRVRHWCHABDEFUGWCIABKDEFUCUDUEWBABKDEUHUIVNVT
+      WAMZVTLNZTZHMZLOZVNWGVTGUJQZTZHMZLWIGHUKVNWKVNGWJHHULZVNGWJSHUMWLABDEFHIU
+      NHUOUPGHURUQUSUTWEWISWFWJHWEWIVTVAUSVBVNVTVJMWDWHVCGHVDLVTHVJVEVKVFVGKVTV
+      RVHVKCJKDEVLVIVM $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
