@@ -199676,6 +199676,24 @@ $)
                           |-> { w e. ( n ClWWalksN g ) | ( w ` 0 ) = v } ) ) $.
   $}
 
+  ${
+    $d G g n v w s x $.
+    $( ` ( ClWWalksNOn `` G ) ` is an operator mapping a vertex ` v ` and a
+       nonnegative integer ` n ` to the set of closed walks on ` v ` of length
+       ` n ` as words over the set of vertices in a graph ` G ` .  (Contributed
+       by AV, 25-Feb-2022.)  (Proof shortened by AV, 2-Mar-2024.) $)
+    clwwlknonmpo $p |- ( ClWWalksNOn ` G ) = ( v e. ( Vtx ` G ) , n e. NN0
+                            |-> { w e. ( n ClWWalksN G ) | ( w ` 0 ) = v } ) $=
+      ( vx vg vs cclwwlknon cfv cvtx cn0 cv wceq cclwwlkn co crab cmpo wcel cvv
+      mptrcl cc0 df-clwwlknon wex eqid elmpom cxp c1st cbs df-vtx exlimiv fveq2
+      cif eqidd oveq2 rabeqdv mpoeq123dv id vtxex nn0ex mpoexga sylancl fvmptd3
+      syl eleq2d pm5.21nii eqriv ) EDHIZBCDJIZKUAALIBLMZACLZDNOZPZQZELZVGRDSRZV
+      NVMRZFSBCFLZJIZKVIAVJVQNOZPZQZHVNDABFCUBZTVPGLZVHRZGUCVOBCGVHKVLVNVMVMUDU
+      EWDVOGFSVQSSUFRVQUGIVQUHIULJWCDFUITUJVCVOVGVMVNVOFDWAVMSHSWBVQDMZBCVRKVTV
+      HKVLVQDJUKWEKUMWEVIAVSVKVQDVJNUNUOUPVOUQVOVHSRKSRVMSRDSURUSBCVHKVLSSUTVAV
+      BVDVEVF $.
+  $}
+
 
 $(
 ###############################################################################
