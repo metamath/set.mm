@@ -199742,6 +199742,24 @@ $)
       VHGPZVMFVIKVOVIGARJKVHGARUIAUHTUJVKVMFKUKULUMVMFUNTUOUPUQUR $.
   $}
 
+  $( The concatenation of two words representing closed walks on a vertex ` X `
+     represents a closed walk on vertex ` X ` .  The resulting walk is a
+     "double loop", starting at vertex ` X ` , coming back to ` X ` by the
+     first walk, following the second walk and finally coming back to ` X `
+     again.  (Contributed by AV, 24-Apr-2022.) $)
+  clwwlknonccat $p |- ( ( A e. ( X ( ClWWalksNOn ` G ) M )
+                          /\ B e. ( X ( ClWWalksNOn ` G ) N ) )
+                      -> ( A ++ B ) e. ( X ( ClWWalksNOn ` G ) ( M + N ) ) ) $=
+    ( cclwwlkn co wcel cc0 cfv wceq simpl adantr adantl simpr eqtrd isclwwlknon
+    wa clt cconcat caddc cclwwlknon eqcomd clwwlknccat syl3anc cvtx cword chash
+    eqid clwwlknwrd cn clwwlknnn clwwlknlen nngt0 breq2 syl5ibrcom sylc ccatfv0
+    wbr jca anbi12i 3imtr4i ) ADCGHIZJAKZFLZSZBECGHIZJBKZFLZSZSZABUAHZDEUBHZCGH
+    IZJVMKZFLZSAFDCUCKZHIZBFEVRHIZSVMFVNVRHIVLVOVQVLVDVHVEVILVOVGVDVKVDVFMNVKVH
+    VGVHVJMOVLVEFVIVGVFVKVDVFPNZVKFVILVGVKVIFVHVJPUDOQABCDEUEUFVLVPVEFVLACUGKZU
+    HZIZBWCIZJAUIKZTUTZVPVELVGWDVKVDWDVFCDWBAWBUJZUKNNVKWEVGVHWEVJCEWBBWHUKNOVG
+    WGVKVDWGVFVDDULIZWFDLZWGCDAUMCDAUNWIWGWJJDTUTDUOWFDJTUPUQURNNABWBUSUFWAQVAV
+    SVGVTVKCDAFRCEBFRVBCVNVMFRVC $.
+
 
 $(
 ###############################################################################
