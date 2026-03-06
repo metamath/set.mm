@@ -199728,6 +199728,20 @@ $)
       ) FEGZHZDIFCHZDIECBAJKDBALHKQCIRSDFQCMNEABDOP $.
   $}
 
+  ${
+    $d G n v w x $.  $d X n v w x $.
+    $( There is no word over the set of vertices representing a closed walk on
+       vertex ` X ` of length ` 0 ` in a graph ` G ` .  (Contributed by AV,
+       17-Feb-2022.)  (Revised by AV, 25-Feb-2022.) $)
+    clwwlk0on0 $p |- ( X ( ClWWalksNOn ` G ) 0 ) = (/) $=
+      ( vx vv vn vw cc0 cclwwlknon cfv co c0 cv wcel cvtx cn0 wceq clwwlknonmpo
+      cclwwlkn crab eqtrdi elmpocl1 noel pm2.21i 0nn0 wa eqeq2 rabbidv clwwlkn0
+      oveq1 rabeqdv 0ex rabex ovmpo rab0 mpan2 eleq2d pm5.21nii eqriv ) CBGAHIZ
+      JZKCLZUTMBANIZMZVAKMZDEVBOGFLIZDLZPZFELZARJZSZBGUSVAFDEAQZUAVDVCVAUBUCVCU
+      TKVAVCGOMZUTKPUDVCVLUEUTVEBPZFKSZKDEBGVBOVJVNUSVMFVISVFBPVGVMFVIVFBVEUFUG
+      VHGPZVMFVIKVOVIGARJKVHGARUIAUHTUJVKVMFKUKULUMVMFUNTUOUPUQUR $.
+  $}
+
 
 $(
 ###############################################################################
