@@ -13231,6 +13231,7 @@
 "snatpsubN" is used by "pclfinclN".
 "snatpsubN" is used by "pointpsubN".
 "snexALT" is used by "p0exALT".
+"snexOLD" is used by "prexOLD".
 "spancl" is used by "elspancl".
 "spancl" is used by "shatomistici".
 "spancl" is used by "shsupcl".
@@ -18049,6 +18050,7 @@ New usage of "opabid" is discouraged (2 uses).
 New usage of "opelcn" is discouraged (1 uses).
 New usage of "opelopab4" is discouraged (0 uses).
 New usage of "opelreal" is discouraged (8 uses).
+New usage of "opexOLD" is discouraged (0 uses).
 New usage of "opidon2OLD" is discouraged (1 uses).
 New usage of "opidonOLD" is discouraged (2 uses).
 New usage of "opnmblALT" is discouraged (0 uses).
@@ -18358,6 +18360,7 @@ New usage of "prcdnq" is discouraged (14 uses).
 New usage of "prclisacycgr" is discouraged (0 uses).
 New usage of "precofvalALT" is discouraged (0 uses).
 New usage of "preleqALT" is discouraged (0 uses).
+New usage of "prexOLD" is discouraged (0 uses).
 New usage of "prfiALT" is discouraged (0 uses).
 New usage of "prlem934" is discouraged (3 uses).
 New usage of "prlem936" is discouraged (1 uses).
@@ -18790,6 +18793,7 @@ New usage of "sn-wcdeq" is discouraged (0 uses).
 New usage of "snatpsubN" is discouraged (3 uses).
 New usage of "snelpwrVD" is discouraged (0 uses).
 New usage of "snexALT" is discouraged (1 uses).
+New usage of "snexOLD" is discouraged (1 uses).
 New usage of "snssiALT" is discouraged (0 uses).
 New usage of "snssiALTVD" is discouraged (0 uses).
 New usage of "snssl" is discouraged (0 uses).
@@ -20508,6 +20512,7 @@ Proof modification of "onfrALTlem4VD" is discouraged (116 steps).
 Proof modification of "onfrALTlem5" is discouraged (320 steps).
 Proof modification of "onfrALTlem5VD" is discouraged (320 steps).
 Proof modification of "opelopab4" is discouraged (69 steps).
+Proof modification of "opexOLD" is discouraged (31 steps).
 Proof modification of "opidon2OLD" is discouraged (80 steps).
 Proof modification of "opidonOLD" is discouraged (198 steps).
 Proof modification of "opnmblALT" is discouraged (332 steps).
@@ -20538,6 +20543,7 @@ Proof modification of "pm3.48ALT" is discouraged (18 steps).
 Proof modification of "postcposALT" is discouraged (163 steps).
 Proof modification of "precofvalALT" is discouraged (723 steps).
 Proof modification of "preleqALT" is discouraged (115 steps).
+Proof modification of "prexOLD" is discouraged (89 steps).
 Proof modification of "prfiALT" is discouraged (30 steps).
 Proof modification of "prmgaplcm" is discouraged (247 steps).
 Proof modification of "prmgapprmo" is discouraged (387 steps).
@@ -20708,6 +20714,7 @@ Proof modification of "sn-exelALT" is discouraged (52 steps).
 Proof modification of "sn-isghm" is discouraged (432 steps).
 Proof modification of "snelpwrVD" is discouraged (37 steps).
 Proof modification of "snexALT" is discouraged (48 steps).
+Proof modification of "snexOLD" is discouraged (25 steps).
 Proof modification of "snssiALT" is discouraged (40 steps).
 Proof modification of "snssiALTVD" is discouraged (64 steps).
 Proof modification of "snssl" is discouraged (18 steps).
