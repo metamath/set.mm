@@ -199694,6 +199694,29 @@ $)
       BVDVEVF $.
   $}
 
+  ${
+    $d G n v w x $.  $d N n v w x $.  $d X v g n w x $.
+    $( The set of closed walks on vertex ` X ` of length ` N ` in a graph ` G `
+       as words over the set of vertices.  (Contributed by Alexander van der
+       Vekens, 14-Sep-2018.)  (Revised by AV, 28-May-2021.)  (Revised by AV,
+       24-Mar-2022.) $)
+    clwwlknon $p |- ( X ( ClWWalksNOn ` G ) N )
+                    = { w e. ( N ClWWalksN G ) | ( w ` 0 ) = X } $=
+      ( vx vv vn vg cfv co cc0 cv wceq cclwwlkn crab wcel cn0 cvv cclwwlk syl
+      cclwwlknon cvtx clwwlknonmpo elmpocl fveq1 eqeq1d elrab simprbi cword wne
+      wa c0 w3a elrabi clwwlkclwwlkn eqid clwwlkbp 3syl simp2d fstwrdne syl2anc
+      simp3d eqeltrrd cn clwwlknnn nnnn0d jca chash wal clwwlkex elv rabex gen2
+      simpr 1vgrex adantr df-clwwlkn mpofvex mp3an2i rabexg eqeq2 rabbidv oveq1
+      rabeqdv ovmpog mpd3an3 eleq2d pm5.21nii eqriv ) EDCBUAIZJZKALZIZDMZACBNJZ
+      OZELZWKPDBUBIZPZCQPZUKZWQWPPZFGWRQWMFLZMZAGLZBNJZOZDCWJWQAFGBUCZUDXBWSWTX
+      BKWQIZDWRXBWQWOPZXIDMZWNXKAWQWOWLWQMWMXIDKWLWQUEUFUGUHXBWQWRUIPZWQULUJZXI
+      WRPXBBRPZXLXMXBXJWQBSIPXNXLXMUMWNAWQWOUNZBCWQUOBWRWQWRUPZUQURZUSXBXNXLXMX
+      QVBWRWQUTVAVCXBCXBXJCVDPXOBCWQVETVFVGXAWKWPWQWSWTWPRPZWKWPMXAWORPZXRWLVHI
+      XEMZAHLZSIZOZRPZHVIGVIXAWTXNXSYDGHXTAYBYBRPHYARVJVKVLVMWSWTVNWSXNWTBDWRXP
+      VOVPGHQRYCCBNRQRAHGVQVRVSWNAWORVTTFGDCWRQXGWPWJWNAXFORXCDMXDWNAXFXCDWMWAW
+      BXECMWNAXFWOXECBNWCWDXHWEWFWGWHWI $.
+  $}
+
 
 $(
 ###############################################################################
