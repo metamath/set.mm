@@ -199717,6 +199717,17 @@ $)
       BXECMWNAXFWOXECBNWCWDXHWEWFWGWHWI $.
   $}
 
+  ${
+    $d N w $.  $d G w $.  $d W w $.  $d X w $.
+    $( A word over the set of vertices representing a closed walk on vertex
+       ` X ` of length ` N ` in a graph ` G ` .  (Contributed by AV,
+       25-Feb-2022.)  (Revised by AV, 24-Mar-2022.) $)
+    isclwwlknon $p |- ( W e. ( X ( ClWWalksNOn ` G ) N )
+                        <-> ( W e. ( N ClWWalksN G ) /\ ( W ` 0 ) = X ) ) $=
+      ( vw cc0 cv cfv wceq cclwwlkn co cclwwlknon fveq1 eqeq1d clwwlknon elrab2
+      ) FEGZHZDIFCHZDIECBAJKDBALHKQCIRSDFQCMNEABDOP $.
+  $}
+
 
 $(
 ###############################################################################
