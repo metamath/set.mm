@@ -67512,6 +67512,37 @@ $)
   $}
 
   ${
+    $d A f $.  $d B f $.  $d C f $.
+    $( If a set is dominated by one, then any two of its elements are equal.
+       (Contributed by Jim Kingdon, 23-Apr-2025.) $)
+    1dom1el $p |- ( ( A ~<_ 1o /\ B e. A /\ C e. A ) -> B = C ) $=
+      ( vf c1o cdom wbr wcel w3a cv wf1 wceq wex brdomi 3ad2ant1 ffvelcdmd el1o
+      cfv c0 sylib wa wf adantl simpl2 simpl3 eqtr4d wi simpr f1veqaeq syl12anc
+      f1f mpd exlimddv ) AEFGZBAHZCAHZIZAEDJZKZBCLZDUNUOUSDMUPAEDNOUQUSUAZBURRZ
+      CURRZLZUTVAVBSVCVAVBEHVBSLVAAEBURUSAEURUBUQAEURUKUCZUNUOUPUSUDZPVBQTVAVCE
+      HVCSLVAAECURVEUNUOUPUSUEZPVCQTUFVAUSUOUPVDUTUGUQUSUHVFVGAEBCURUIUJULUM $.
+  $}
+
+  ${
+    $d ph u v y $.  $d u v x y $.
+    $( Two ways to express "at most one".  (Contributed by Stefan O'Rear,
+       28-Oct-2014.) $)
+    modom $p |- ( E* x ph <-> { x | ph } ~<_ 1o ) $=
+      ( vu vv vy c1o cdom cvv wcel c0 cv wa weq wsb df-clab wal nfv nfcv nfs1v
+      wi wmo cab wbr 1oex 0lt1o 2a1i wceq wb anbi12i mo3 nfan nfim nfal sbequ12
+      eqidd anbi1d equequ1 imbi12d albidv spcgf elv sylbi sbequ anbi2d biimtrid
+      equequ2 syl imp 2thd ex dom2d mpi nfab1 nfbr simpl abid ad2antrl ad2antll
+      biimpri 1dom1el syl3anc alrimiv alrimi sylibr impbii ) ABUAZABUBZFGUCZWFF
+      HIWHUDWFCDWGFJJHWFCKZWGIZJFIUEUFWFWJDKZWGIZLZJJUGZCDMZUHWFWMLZWNWOWPJUOWF
+      WMWOWMABCNZABDNZLZWFWOWJWQWLWRACBOADBOUIWFWQABENZLZCEMZTZEPZWSWOTZWFAWTLZ
+      BEMZTZEPZBPZXDABEAEQUJZXJXDTCXIXDBWIHBWIRXCBEXAXBBWQWTBABCSABESUKXBBQULUM
+      BCMZXHXCEXLXFXAXGXBXLAWQWTABCUNUPBCEUQURUSUTVAVBXDXETDXCXEEWKHEWKRXEEQEDM
+      ZXAWSXBWOXMWTWRWQAEDBVCVDEDCVFURUTVAVGVEVHVIVJVKVLWHXJWFWHXIBBWGFGABVMBGR
+      BFRVNWHXHEWHXFXGWHXFLWHBKZWGIZEKZWGIZXGWHXFVOAXOWHWTXOAABVPVSVQWTXQWHAXQW
+      TAEBOVSVRWGXNXPVTWAVJWBWCXKWDWE $.
+  $}
+
+  ${
     $d A x y $.
     $( A set that has at least 2 different members dominates ordinal 2.
        (Contributed by BTernaryTau, 30-Dec-2024.) $)
@@ -205148,18 +205179,6 @@ $(
   The sizes of sets
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
-
-  ${
-    $d A f $.  $d B f $.  $d C f $.
-    $( If a set is dominated by one, then any two of its elements are equal.
-       (Contributed by Jim Kingdon, 23-Apr-2025.) $)
-    1dom1el $p |- ( ( A ~<_ 1o /\ B e. A /\ C e. A ) -> B = C ) $=
-      ( vf c1o cdom wbr wcel w3a cv wf1 wceq wex brdomi 3ad2ant1 ffvelcdmd el1o
-      cfv c0 sylib wa wf adantl simpl2 simpl3 eqtr4d wi simpr f1veqaeq syl12anc
-      f1f mpd exlimddv ) AEFGZBAHZCAHZIZAEDJZKZBCLZDUNUOUSDMUPAEDNOUQUSUAZBURRZ
-      CURRZLZUTVAVBSVCVAVBEHVBSLVAAEBURUSAEURUBUQAEURUKUCZUNUOUPUSUDZPVBQTVAVCE
-      HVCSLVAAECURVEUNUOUPUSUEZPVCQTUFVAUSUOUPVDUTUGUQUSUHVFVGAEBCURUIUJULUM $.
-  $}
 
   $( Any subset of ordinal one being an element of ordinal two is equivalent to
      excluded middle.  A variation of ~ exmid01 which more directly illustrates
