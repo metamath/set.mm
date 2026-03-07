@@ -5586,6 +5586,7 @@
 "dtruALT2" is used by "nfnid".
 "dvadiaN" is used by "diarnN".
 "dveel1" is used by "distel".
+"dveel1" is used by "mh-setindnd".
 "dveel2" is used by "axc14".
 "dveeq1" is used by "axc11n".
 "dveeq1" is used by "nfeqf".
@@ -10134,6 +10135,7 @@
 "naecoms" is used by "axnulg".
 "naecoms" is used by "axpowndlem2".
 "naecoms" is used by "eujustALT".
+"naecoms" is used by "mh-setindnd".
 "naecoms" is used by "nfcvf2".
 "naecoms" is used by "sb9".
 "naecoms" is used by "wl-eudf".
@@ -10253,6 +10255,7 @@
 "nfeqf" is used by "wl-nfeqfb".
 "nfeqf" is used by "wl-sbalnae".
 "nfeqf1" is used by "dveeq1".
+"nfeqf1" is used by "mh-setindnd".
 "nfeqf1" is used by "nfiotad".
 "nfeqf1" is used by "nfmod2".
 "nfeqf1" is used by "sbal2".
@@ -10265,6 +10268,7 @@
 "nfeqf2" is used by "bj-dvelimdv1".
 "nfeqf2" is used by "copsexg".
 "nfeqf2" is used by "dveeq2".
+"nfeqf2" is used by "mh-setindnd".
 "nfeqf2" is used by "nfeqf1".
 "nfeqf2" is used by "sb4b".
 "nfeqf2" is used by "sbal1".
@@ -10316,6 +10320,7 @@
 "nfnae" is used by "dfid3".
 "nfnae" is used by "distel".
 "nfnae" is used by "dvelimf".
+"nfnae" is used by "mh-setindnd".
 "nfnae" is used by "nfabd2".
 "nfnae" is used by "nfald2".
 "nfnae" is used by "nfriotad".
@@ -16057,7 +16062,7 @@ New usage of "dummylink" is discouraged (0 uses).
 New usage of "dvadiaN" is discouraged (1 uses).
 New usage of "dvcnp2OLD" is discouraged (0 uses).
 New usage of "dvcobrOLD" is discouraged (0 uses).
-New usage of "dveel1" is discouraged (1 uses).
+New usage of "dveel1" is discouraged (2 uses).
 New usage of "dveel2" is discouraged (1 uses).
 New usage of "dveel2ALT" is discouraged (0 uses).
 New usage of "dveeq1" is discouraged (2 uses).
@@ -17587,6 +17592,7 @@ New usage of "merlem7" is discouraged (1 uses).
 New usage of "merlem8" is discouraged (1 uses).
 New usage of "merlem9" is discouraged (1 uses).
 New usage of "mgmplusgiopALT" is discouraged (1 uses).
+New usage of "mh-setindnd" is discouraged (0 uses).
 New usage of "minimp-ax1" is discouraged (1 uses).
 New usage of "minimp-ax2" is discouraged (1 uses).
 New usage of "minimp-ax2c" is discouraged (1 uses).
@@ -17661,7 +17667,7 @@ New usage of "mulrndx" is discouraged (11 uses).
 New usage of "mulsrpr" is discouraged (9 uses).
 New usage of "mxidlprmALT" is discouraged (0 uses).
 New usage of "n0lpligALT" is discouraged (0 uses).
-New usage of "naecoms" is discouraged (8 uses).
+New usage of "naecoms" is discouraged (9 uses).
 New usage of "naecoms-o" is discouraged (1 uses).
 New usage of "natded" is discouraged (0 uses).
 New usage of "nd1" is discouraged (5 uses).
@@ -17689,8 +17695,8 @@ New usage of "nfcvf2" is discouraged (16 uses).
 New usage of "nfdifOLD" is discouraged (0 uses).
 New usage of "nfdisj" is discouraged (0 uses).
 New usage of "nfeqf" is discouraged (9 uses).
-New usage of "nfeqf1" is discouraged (6 uses).
-New usage of "nfeqf2" is discouraged (15 uses).
+New usage of "nfeqf1" is discouraged (7 uses).
+New usage of "nfeqf2" is discouraged (16 uses).
 New usage of "nfequid-o" is discouraged (0 uses).
 New usage of "nfeu" is discouraged (2 uses).
 New usage of "nfeu1ALT" is discouraged (0 uses).
@@ -17708,7 +17714,7 @@ New usage of "nfixp" is discouraged (0 uses).
 New usage of "nfmo" is discouraged (3 uses).
 New usage of "nfmod" is discouraged (1 uses).
 New usage of "nfmod2" is discouraged (5 uses).
-New usage of "nfnae" is discouraged (44 uses).
+New usage of "nfnae" is discouraged (45 uses).
 New usage of "nfopdALT" is discouraged (0 uses).
 New usage of "nfra2" is discouraged (1 uses).
 New usage of "nfrab" is discouraged (2 uses).
