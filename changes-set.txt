@@ -346,6 +346,8 @@ Date      Old       New         Notes
 27-Feb-26 2no       2fno
 27-Feb-26 3no       3fno
 27-Feb-26 4no       4fno
+25-Feb-26 nfexhe    [same]      Moved from SN's mathbox to main set.mm
+25-Feb-25 nfexa2    [same]      Moved from SN's mathbox to main set.mm
 21-Feb-26 om2       [same]      Moved from RP's mathbox to main set.mm
 19-Feb-26 unifi3    [same]      Moved from TA's mathbox to main set.mm
 19-Feb-26 imafi2    [same]      Moved from TA's mathbox to main set.mm
