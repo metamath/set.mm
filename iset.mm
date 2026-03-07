@@ -67543,6 +67543,15 @@ $)
   $}
 
   ${
+    $d x A $.
+    $( Two ways to express "at most one".  (Contributed by Mario Carneiro,
+       24-Dec-2016.) $)
+    modom2 $p |- ( E* x x e. A <-> A ~<_ 1o ) $=
+      ( cv wcel wmo cab c1o cdom wbr modom abid2 breq1i bitri ) ACBDZAENAFZGHIB
+      GHINAJOBGHABKLM $.
+  $}
+
+  ${
     $d A x y $.
     $( A set that has at least 2 different members dominates ordinal 2.
        (Contributed by BTernaryTau, 30-Dec-2024.) $)
