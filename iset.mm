@@ -107152,6 +107152,17 @@ $)
 
   $( Extending a half-open integer range by an unordered pair at the end.
      (Contributed by Alexander van der Vekens, 22-Sep-2018.) $)
+  fzosplitpr $p |- ( B e. ( ZZ>= ` A ) ->
+      ( A ..^ ( B + 2 ) ) = ( ( A ..^ B ) u. { B , ( B + 1 ) } ) ) $=
+    ( cuz cfv wcel c2 caddc co cfzo csn cun cpr wceq df-2 a1i oveq2d fzosplitsn
+    c1 cc 3eqtrd eluzelcn 1cnd add32r syl3anc eqtrd peano2uz uneq1d unass df-pr
+    syl eqcomi uneq2d ) BACDZEZABFGHZIHABRGHZRGHZIHZAUPIHZUPJZKZABIHZBUPLZKZUNU
+    OUQAIUNUOBRRGHZGHZUQUNFVEBGFVEMUNNOPUNBSERSEZVGVFUQMABUAUNUBZVHBRRUCUDUEPUN
+    UPUMEURVAMABUFAUPQUJUNVAVBBJZKZUTKZVBVIUTKZKZVDUNUSVJUTABQUGVKVMMUNVBVIUTUH
+    OUNVLVCVBVLVCMUNVCVLBUPUIUKOULTT $.
+
+  $( Extending a half-open integer range by an unordered pair at the end.
+     (Contributed by Alexander van der Vekens, 22-Sep-2018.) $)
   fzosplitprm1 $p |- ( ( A e. ZZ /\ B e. ZZ /\ A < B ) ->
       ( A ..^ ( B + 1 ) ) = ( ( A ..^ ( B - 1 ) ) u. { ( B - 1 ) , B } ) ) $=
     ( cz wcel wbr c1 caddc co cfzo csn cun wceq cle cr zre syl3anbrc fzosplitsn
