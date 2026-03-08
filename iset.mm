@@ -199818,6 +199818,22 @@ $)
     clwwlknon2 $p |- ( X C 2 ) = { w e. ( 2 ClWWalksN G ) | ( w ` 0 ) = X } $=
       ( c2 co cclwwlknon cfv cc0 cv wceq cclwwlkn crab oveqi clwwlknon eqtri )
       DFBGDFCHIZGJAKIDLAFCMGNBRDFEOACFDPQ $.
+
+    clwwlknon2x.v $e |- V = ( Vtx ` G ) $.
+    clwwlknon2x.e $e |- E = ( Edg ` G ) $.
+    $( The set of closed walks on vertex ` X ` of length ` 2 ` in a graph ` G `
+       as words over the set of vertices, definition of ` ClWWalksN ` expanded.
+       (Contributed by Alexander van der Vekens, 19-Sep-2018.)  (Revised by AV,
+       25-Mar-2022.) $)
+    clwwlknon2x $p |- ( X C 2 ) = { w e. Word V | ( ( # ` w ) = 2
+                      /\ { ( w ` 0 ) , ( w ` 1 ) } e. E /\ ( w ` 0 ) = X ) } $=
+      ( c2 co cfv wceq crab wcel w3a cword wa anbi1i bitri cv cclwwlkn chash c1
+      cc0 cpr clwwlknon2 cvtx cedg clwwlkn2 3anan12 eqcomi wrdeqi eleq2i df-3an
+      anass anbi2i bitr2i anbi12i rabbia2 eqtri ) FJBKUEAUAZLZFMZAJDUBKZNVBUCLJ
+      MZVCUDVBLUFZCOZVDPZAEQZNABDFGUGVDVIAVEVJVBVEOZVDRVFVBDUHLZQZOZVGDUILZOZPZ
+      VDRZVBVJOZVIRZVKVQVDDVBUJSVRVNVFVPRZRZVDRZVTVQWBVDVFVNVPUKSWCVNWAVDRZRVTV
+      NWAVDUPVNVSWDVIVMVJVBVLEEVLHULUMUNVIVFVHRZVDRWDVFVHVDUOWEWAVDVHVPVFCVOVGI
+      UNUQSURUSTTTUTVA $.
   $}
 
 
