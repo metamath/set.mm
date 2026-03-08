@@ -199860,6 +199860,29 @@ $)
       KWCVLRVTVGUOZSVTVGUOUIUQWGWBVKEWHURUPJABCDEGHIUSUTVA $.
   $}
 
+  $( Lemma 1 for ~ clwwlknonex2 :  Transformation of a special half-open
+     integer range into a union of a smaller half-open integer range and an
+     unordered pair.  This Lemma would not hold for ` N = 2 ` , i.e.,
+     ` ( # `` W ) = 0 ` , because ` ( 0 ..^ ( ( ( # `` W ) + 2 ) - 1 ) ) `
+     ` = ( 0 ..^ ( ( 0 + 2 ) - 1 ) ) = ( 0 ..^ 1 ) = { 0 } `
+     ` =/= { -u 1 , 0 } = ( (/) u. { -u 1 , 0 } ) `
+     ` = ( ( 0 ..^ ( 0 - 1 ) ) u. { ( 0 - 1 ) , 0 } ) `
+     ` = ( ( 0 ..^ ( ( # `` W ) - 1 ) ) `
+     ` u. { ( ( # `` W ) - 1 ) , ( # `` W ) } ) ` .  (Contributed by AV,
+     22-Sep-2018.)  (Revised by AV, 26-Jan-2022.) $)
+  clwwlknonex2lem1 $p |- ( ( N e. ( ZZ>= ` 3 ) /\ ( # ` W ) = ( N - 2 ) )
+                            -> ( 0 ..^ ( ( ( # ` W ) + 2 ) - 1 ) )
+                               = ( ( 0 ..^ ( ( # ` W ) - 1 ) )
+                                   u. { ( ( # ` W ) - 1 ) , ( # ` W ) } ) ) $=
+    ( c3 cuz cfv wcel c2 cmin co wceq cc0 caddc c1 cfzo cpr cun 2cnd adantr cn0
+    cc chash wa eluzelcn subcld eleq1 adantl mpbird 1cnd addsubd oveq1 uznn0sub
+    oveq2d subsub4d 2p1e3 oveq2i eqtrdi nn0uz eqcomi 3eltr4d eqeltrd fzosplitpr
+    wb a1i syl npcand preq2d uneq2d 3eqtrd ) ACDEFZBUAEZAGHIZJZUBZKVJGLIMHIZNIK
+    VJMHIZGLIZNIZKVONIZVOVOMLIZOZPZVRVOVJOZPVMVNVPKNVMVJGMVMVJTFZVKTFZVIWDVLVIA
+    GCAUCZVIQZUDRVLWCWDVBVIVJVKTUEUFUGZVMQVMUHZUIULVMVOKDEZFVQWAJVMVOVKMHIZWIVL
+    VOWJJVIVJVKMHUJUFVIWJWIFVLVIACHIZSWJWICAUKVIWJAGMLIZHIWKVIAGMWEWFVIUHUMWLCA
+    HUNUOUPWISJVISWIUQURVCUSRUTKVOVAVDVMVTWBVRVMVSVJVOVMVJMWGWHVEVFVGVH $.
+
 
 $(
 ###############################################################################
