@@ -23990,6 +23990,25 @@ $)
   $}
 
   ${
+    $d x ph $.
+    rabbidva2.1 $e |- ( ph -> ( ( x e. A /\ ps ) <-> ( x e. B /\ ch ) ) ) $.
+    $( Equivalent wff's yield equal restricted class abstractions.
+       (Contributed by Thierry Arnoux, 4-Feb-2017.) $)
+    rabbidva2 $p |- ( ph -> { x e. A | ps } = { x e. B | ch } ) $=
+      ( cv wcel wa cab crab abbidv df-rab 3eqtr4g ) ADHZEIBJZDKPFICJZDKBDELCDFL
+      AQRDGMBDENCDFNO $.
+  $}
+
+  ${
+    rabbia2.1 $e |- ( ( x e. A /\ ps ) <-> ( x e. B /\ ch ) ) $.
+    $( Equivalent wff's yield equal restricted class abstractions.
+       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    rabbia2 $p |- { x e. A | ps } = { x e. B | ch } $=
+      ( crab wceq wtru cv wcel wa wb a1i rabbidva2 mptru ) ACDGBCEGHIABCDECJZDK
+      ALQEKBLMIFNOP $.
+  $}
+
+  ${
     rabbiia.1 $e |- ( x e. A -> ( ph <-> ps ) ) $.
     $( Equivalent wff's yield equal restricted class abstractions (inference
        form).  (Contributed by NM, 22-May-1999.) $)
@@ -24005,16 +24024,6 @@ $)
        1-Nov-2019.) $)
     rabbii $p |- { x e. A | ph } = { x e. A | ps } $=
       ( wb cv wcel a1i rabbiia ) ABCDABFCGDHEIJ $.
-  $}
-
-  ${
-    $d x ph $.
-    rabbidva2.1 $e |- ( ph -> ( ( x e. A /\ ps ) <-> ( x e. B /\ ch ) ) ) $.
-    $( Equivalent wff's yield equal restricted class abstractions.
-       (Contributed by Thierry Arnoux, 4-Feb-2017.) $)
-    rabbidva2 $p |- ( ph -> { x e. A | ps } = { x e. B | ch } ) $=
-      ( cv wcel wa cab crab abbidv df-rab 3eqtr4g ) ADHZEIBJZDKPFICJZDKBDELCDFL
-      AQRDGMBDENCDFNO $.
   $}
 
   ${
