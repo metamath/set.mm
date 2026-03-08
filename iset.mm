@@ -199834,6 +199834,19 @@ $)
       VDRZVBVJOZVIRZVKVQVDDVBUJSVRVNVFVPRZRZVDRZVTVQWBVDVFVNVPUKSWCVNWAVDRZRVTV
       NWAVDUPVNVSWDVIVMVJVBVLEEVLHULUMUNVIVFVHRZVDRWDVFVHVDUOWEWAVDVHVPVFCVOVGI
       UNUQSURUSTTTUTVA $.
+
+    $d E w $.  $d V w $.  $d Y w $.
+    $( Sufficient conditions of a doubleton word to represent a closed walk on
+       vertex ` X ` of length ` 2 ` .  (Contributed by AV, 11-May-2022.) $)
+    s2elclwwlknon2 $p |- ( ( X e. V /\ Y e. V /\ { X , Y } e. E )
+                           -> <" X Y "> e. ( X C 2 ) ) $=
+      ( vw wcel cpr w3a chash cfv c2 wceq cc0 c1 3adant3 cs2 cword co s2leng wa
+      s2cl s2fv0g s2fv1g preq12d eqcomd biimp3a 3jca cv fveqeq2 fveq1 3anbi123d
+      eleq1d eqeq1d clwwlknon2x elrab2 sylanbrc ) EDKZFDKZEFLZBKZMZEFUAZDUBZKZV
+      GNOPQZRVGOZSVGOZLZBKZVKEQZMZVGEPAUCZKVBVCVIVEEFDUFTVFVJVNVOVBVCVJVEEFDDUD
+      TVBVCVEVNVBVCUEZVDVMBVRVMVDVRVKEVLFEFDDUGZEFDDUHUIUJUQUKVBVCVOVEVSTULJUMZ
+      NOPQZRVTOZSVTOZLZBKZWBEQZMVPJVGVHVQVTVGQZWAVJWEVNWFVOVTVGPNUNWGWDVMBWGWBV
+      KWCVLRVTVGUOZSVTVGUOUIUQWGWBVKEWHURUPJABCDEGHIUSUTVA $.
   $}
 
 
