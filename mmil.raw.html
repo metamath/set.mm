@@ -1011,6 +1011,13 @@ middle by ~ ssfiexmid ).</p>
 </tr>
 
 <tr>
+  <td>is of size zero</td>
+  <td>` A ~~ (/) `</td>
+  <td>for equivalent formulations, see ~ en0 , ~ eq0 ,
+  ~ notm0 , ~ ss0b , and ~ dom0</td>
+</tr>
+
+<tr>
   <td>is of size one</td>
   <td>` A ~~ 1o `</td>
   <td>for equivalent formulations, see ~ en1 , ~ en1bg and ~ euen1b</td>
@@ -17043,6 +17050,101 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>uhgr0vsize0</td>
+  <td>~ uhgr0vsize0en</td>
+  <td>changes how we express that a set has zero elements</td>
+</tr>
+
+<tr>
+  <td>uhgr0edgfi</td>
+  <td>~ uhgr0enedgfi</td>
+  <td>changes how we express that a set has zero elements</td>
+</tr>
+
+<tr>
+  <td>uspgr1e</td>
+  <td>~ uspgr1edc</td>
+  <td>adds decidability condition</td>
+</tr>
+
+<tr>
+  <td>uspgr1eop</td>
+  <td>~ uspgr1eopdc</td>
+  <td>adds decidability condition</td>
+</tr>
+
+<tr>
+  <td>uspgr1ewop</td>
+  <td>~ uspgr1ewopdc</td>
+</tr>
+
+<tr>
+  <td>uspgr1v1eop</td>
+  <td><i>none</i></td>
+  <td>should follow from ~ uspgr1eopdc if a decidability
+  condition is added</td>
+</tr>
+
+<tr>
+  <td>uspgr2v1e2w</td>
+  <td><i>none</i></td>
+  <td>likely provable from ~ uspgr1ewopdc if a
+  decidability condition is added</td>
+</tr>
+
+<tr>
+  <td>lfuhgr1v0e</td>
+  <td><i>none</i></td>
+  <td>probably could be proved with some changes, but
+  the multigraph case might be easier than the hypergraph
+  case</td>
+</tr>
+
+<tr>
+  <td>usgr1v</td>
+  <td><i>none</i></td>
+  <td>if ` A ` is a set, see ~ usgr1vr and ~ usgr0e</td>
+</tr>
+
+<tr>
+  <td>usgr1v0edg</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses usgr1v</td>
+</tr>
+
+<tr>
+  <td>usgrexmplef</td>
+  <td><i>none</i></td>
+  <td>Would need changes to how we express that
+  a set has two elements.  Also, the set.mm proof
+  uses s4f1o .</td>
+</tr>
+
+<tr>
+  <td>usgrexmpllem</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses s4cli</td>
+</tr>
+
+<tr>
+  <td>usgrexmplvtx</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses usgrexmpllem</td>
+</tr>
+
+<tr>
+  <td>usgrexmpledg</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses usgrexmpllem and s4f1o</td>
+</tr>
+
+<tr>
+  <td>usgrexmpl</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses usgrexmplef and s4cli</td>
+</tr>
+
+<tr>
   <td>vtxdgval , vtxdgfival</td>
   <td>~ vtxdgfifival</td>
   <td>adds several finiteness conditions</td>
@@ -17529,7 +17631,7 @@ intuitionistic and it is lightly used in set.mm</TD>
   set.mm proof: ccatw2s1p1 , WWalksN , clwwisshclwws , clwwisshclwwsn ,
   clwwlknfi , clwwlkel , wwlksext2clwwlk , wwlksubclwwlk ,
   clwwnisshclwwsn , clwwlknscsh , cyclShift , fusgrhashclwwlkn ,
-  clwwlkndivn , df-frgr</td>
+  clwwlkndivn , FinUSGraph , vtxdgfusgrf , df-frgr</td>
 </tr>
 
 <tr>
