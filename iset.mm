@@ -118729,6 +118729,30 @@ $)
     DBGZEBGZJZJZCDKLMZUFGZULANOMZUOHIZSUQUOEKLMIESUGUKUPUIULBCDPQUJUKULRUNURUHN
     OMZUQUGUKURUSSUIULBCDBTQUIUSUQSUGUMUHANOUAUBUCEUQBUOUDUE $.
 
+  ${
+    ccat2s1fvwd.w $e |- ( ph -> W e. Word V ) $.
+    ccat2s1fvwd.i $e |- ( ph -> I e. NN0 ) $.
+    ccat2s1fvwd.1 $e |- ( ph -> I < ( # ` W ) ) $.
+    ccat2s1fvwd.x $e |- ( ph -> X e. A ) $.
+    ccat2s1fvwd.y $e |- ( ph -> Y e. B ) $.
+    $( Extract a symbol of a word from the concatenation of the word with two
+       single symbols.  (Contributed by AV, 22-Sep-2018.)  (Revised by AV,
+       13-Jan-2020.)  (Proof shortened by AV, 1-May-2020.)  (Revised by AV,
+       28-Jan-2024.) $)
+    ccat2s1fvwd $p |- ( ph
+        -> ( ( ( W ++ <" X "> ) ++ <" Y "> ) ` I ) = ( W ` I ) ) $=
+      ( cconcat co cfv cvv wcel syl3anc cc0 cs1 cword wceq wrdv syl elexd s1cld
+      ccatass fveq1d chash cfzo ccatws1cl syl2anc cn0 clt wbr cn simp2 3ad2ant1
+      w3a lencl wa cle nn0ge0 adantl cr nn0re nn0red adantr lelttr mpand 3impia
+      wi 0red elnnnn0b sylanbrc simp3 elfzo0 syl3anbrc ccatval1 eqtrd ) ADFGUAZ
+      NOHUAZNOZPDFWBWCNOZNOZPZDFPZADWDWFAFQUBZRZWBWIRZWCWIRWDWFUCAFEUBRZWJIEFUD
+      UEAGQAGBLUFUGZAHQAHCMUFZUGQFWBWCUHSUIAWLWEWIRZDTFUJPZUKORZWGWHUCIAWKHQRWO
+      WMWNQWBHULUMAWLDUNRZDWPUOUPZWQIJKWLWRWSUTZWRWPUQRZWSWQWLWRWSURWTWPUNRZTWP
+      UOUPZXAWLWRXBWSEFVAZUSWLWRWSXCWLWRVBZTDVCUPZWSXCWRXFWLDVDVEXETVFRDVFRZWPV
+      FRZXFWSVBXCVMXEVNWRXGWLDVGVEWLXHWRWLWPXDVHVITDWPVJSVKVLWPVOVPWLWRWSVQDWPV
+      RVSSEQFWEDVTSWA $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
