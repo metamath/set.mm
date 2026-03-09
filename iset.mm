@@ -37347,6 +37347,12 @@ $)
       ( wss wcel cvv ssexg syl2anc ) ABCGCDHBIHFEBCDJK $.
   $}
 
+  $( The superclass of a proper class is a proper class.  (Contributed by AV,
+     27-Dec-2020.) $)
+  prcssprc $p |- ( ( A C_ B /\ A e/ _V ) -> B e/ _V ) $=
+    ( wss cvv wnel wcel ssexg ex nelcon3d imp ) ABCZADEBDEKBDADKBDFADFABDGHIJ
+    $.
+
   $( Existence of a difference.  (Contributed by NM, 26-May-1998.) $)
   difexg $p |- ( A e. V -> ( A \ B ) e. _V ) $=
     ( cdif wss wcel cvv difss ssexg mpan ) ABDZAEACFKGFABHKACIJ $.
@@ -42969,6 +42975,21 @@ $)
     ( cop cxp wcel opelxp1 syl ) ABGZCGDEHZFHILMIADILCMFJABDEJK $.
 
   ${
+    $d A x z $.  $d A y $.  $d B x $.  $d B y z $.  $d ph x $.  $d ph y z $.
+    $d ps z $.
+    opabssxpd.x $e |- ( ( ph /\ ps ) -> x e. A ) $.
+    opabssxpd.y $e |- ( ( ph /\ ps ) -> y e. B ) $.
+    $( An ordered-pair class abstraction is a subset of a Cartesian product.
+       Formerly part of proof for ~ opabex2 .  (Contributed by AV,
+       26-Nov-2021.) $)
+    opabssxpd $p |- ( ph -> { <. x , y >. | ps } C_ ( A X. B ) ) $=
+      ( vz copab cv cop wceq wa wex cab cxp df-opab wcel simprl opelxpd adantrl
+      eqeltrd ex exlimdvv abssdv eqsstrid ) ABCDJIKZCKZDKZLZMZBNZDOCOZIPEFQZBCD
+      IRAUNIUOAUMUHUOSZCDAUMUPAUMNUHUKUOAULBTABUKUOSULABNUIUJEFGHUAUBUCUDUEUFUG
+      $.
+  $}
+
+  ${
     $d x y z A $.  $d x y z B $.  $d y z ph $.  $d x ps $.
     rabxp.1 $e |- ( x = <. y , z >. -> ( ph <-> ps ) ) $.
     $( Membership in a class builder restricted to a cross product.
@@ -43764,6 +43785,15 @@ $)
   xpexg $p |- ( ( A e. V /\ B e. W ) -> ( A X. B ) e. _V ) $=
     ( wcel wa cxp cun cpw wss cvv xpsspw unexg pwexg 3syl ssexg sylancr ) ACEBD
     EFZABGZABHZIZIZJUBKEZSKEABLRTKEUAKEUCABCDMTKNUAKNOSUBKPQ $.
+
+  ${
+    xpexd.1 $e |- ( ph -> A e. V ) $.
+    xpexd.2 $e |- ( ph -> B e. W ) $.
+    $( The Cartesian product of two sets is a set.  (Contributed by Glauco
+       Siliprandi, 26-Jun-2021.) $)
+    xpexd $p |- ( ph -> ( A X. B ) e. _V ) $=
+      ( wcel cxp cvv xpexg syl2anc ) ABDHCEHBCIJHFGBCDEKL $.
+  $}
 
   ${
     xpex.1 $e |- A e. _V $.
@@ -59244,6 +59274,31 @@ $)
       WBWNWJVTVEVPVHVNUNUJWNBVKABDMUKZULUMKUOUOUPVSVMCDELMVSLTVSMTVJVLCVJCTWGUQ
       VJVLDVJDTVKCLDWMURUQWHWNPVRVJBVLWHVOVGWNVQVIVNVFGUSVPVHHUSUTWNBVKWHVLWOWI
       VAVBVCVD $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y ph $.
+    opabex2.1 $e |- ( ph -> A e. V ) $.
+    opabex2.2 $e |- ( ph -> B e. W ) $.
+    opabex2.3 $e |- ( ( ph /\ ps ) -> x e. A ) $.
+    opabex2.4 $e |- ( ( ph /\ ps ) -> y e. B ) $.
+    $( Condition for an operation to be a set.  (Contributed by Thierry Arnoux,
+       25-Jun-2019.) $)
+    opabex2 $p |- ( ph -> { <. x , y >. | ps } e. _V ) $=
+      ( copab cxp cvv xpexd opabssxpd ssexd ) ABCDMEFNOAEFGHIJPABCDEFKLQR $.
+  $}
+
+  ${
+    $d x y $.  $d ph x $.
+    $( An ordered-pair class abstraction which does not depend on the first
+       abstraction variable is a proper class.  There must be, however, at
+       least one set which satisfies the restricting wff.  (Contributed by AV,
+       27-Dec-2020.) $)
+    opabn1stprc $p |- ( E. y ph -> { <. x , y >. | ph } e/ _V ) $=
+      ( wex copab cvv wcel wn wnel cdm cv wa vex biantrur opabbii dmeqi wral id
+      wceq ralrimivw dmopab3 sylib eqtrid vprc a1i eqneltrd dmexg df-nel sylibr
+      nsyl ) ACDZABCEZFGZHULFIUKULJZFGUMUKUNFFUKUNBKFGZALZBCEZJZFULUQAUPBCUOABM
+      NOPUKUKBFQURFSUKUKBFUKRTABCFUAUBUCFFGHUKUDUEUFULFUGUJULFUHUI $.
   $}
 
   ${
@@ -197216,6 +197271,261 @@ $)
       LMUQIURUSVDWEWJWGCUTRSAWAWGWEWEVTCACDEGHJKLMVAZAVTCWLVBAWEVCVESAVRTOZVSWF
       UOADTOZEVFOZCGOWMADHVGUKWNKDHVHRWOAEVIVJPVFJVKVLVMMECDTGVFVOVNBTVTVRWCWCV
       PVTVPVQRS $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Examples for graphs
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d G x $.
+    usgr0e.g $e |- ( ph -> G e. W ) $.
+    usgr0e.e $e |- ( ph -> ( iEdg ` G ) = (/) ) $.
+    $( The empty graph, with vertices but no edges, is a simple graph.
+       (Contributed by Alexander van der Vekens, 10-Aug-2017.)  (Revised by AV,
+       16-Oct-2020.)  (Proof shortened by AV, 25-Nov-2020.) $)
+    usgr0e $p |- ( ph -> G e. USGraph ) $=
+      ( vx cusgr wcel ciedg cfv cdm cv c2o cen wbr cvtx cpw crab wf1 eqid f10d
+      wb isusgren syl mpbird ) ABGHZBIJZKFLMNOFBPJZQRZUGSZAUIUGEUAABCHUFUJUBDFC
+      UGBUHUHTUGTUCUDUE $.
+  $}
+
+  $( The null graph, with no vertices, is a simple graph iff the edge function
+     is empty.  (Contributed by Alexander van der Vekens, 30-Sep-2017.)
+     (Revised by AV, 16-Oct-2020.) $)
+  usgr0vb $p |- ( ( G e. W /\ ( Vtx ` G ) = (/) )
+                -> ( G e. USGraph <-> ( iEdg ` G ) = (/) ) ) $=
+    ( wcel cvtx c0 wceq wa cusgr ciedg cuhgr usgruhgr uhgr0vb imbitrid wi simpl
+    cfv simpr usgr0e ex adantr impbid ) ABCZADPEFZGZAHCZAIPEFZUEAJCUDUFAKABLMUB
+    UFUENUCUBUFUEUBUFGABUBUFOUBUFQRSTUA $.
+
+  ${
+    uhgr0v0e.v $e |- V = ( Vtx ` G ) $.
+    uhgr0v0e.e $e |- E = ( Edg ` G ) $.
+    $( The null graph, with no vertices, has no edges.  (Contributed by AV,
+       21-Oct-2020.) $)
+    uhgr0v0e $p |- ( ( G e. UHGraph /\ V = (/) ) -> E = (/) ) $=
+      ( cuhgr wcel c0 wceq wa ciedg cfv cvtx wi eqeq1i uhgr0vb biimtrid pm2.43a
+      biimpd ex imp wb cedg uhgriedg0edg0 bitrid adantr mpbird ) BFGZCHIZJAHIZB
+      KLHIZUHUIUKUIUHUKUIBMLZHIZUHUHUKNZCULHDOUHUMUNUHUMJUHUKBFPSTQRUAUHUJUKUBU
+      IUJBUCLZHIUHUKAUOHEOBUDUEUFUG $.
+
+    $( The size of a hypergraph with no vertices (the null graph) is 0.
+       (Contributed by Alexander van der Vekens, 5-Jan-2018.)  (Revised by AV,
+       7-Nov-2020.) $)
+    uhgr0vsize0en $p |- ( ( G e. UHGraph /\ V ~~ (/) ) -> E ~~ (/) ) $=
+      ( cuhgr wcel c0 cen wbr wa wceq en0 uhgr0v0e sylan2b sylibr ) BFGZCHIJZKA
+      HLZAHIJRQCHLSCMABCDENOAMP $.
+  $}
+
+  $( A graph of order 0 (i.e. with 0 vertices) has a finite set of edges.
+     (Contributed by Alexander van der Vekens, 5-Jan-2018.)  (Revised by AV,
+     10-Jan-2020.)  (Revised by AV, 8-Jun-2021.) $)
+  uhgr0enedgfi $p |- ( ( G e. UHGraph /\ ( Vtx ` G ) ~~ (/) )
+                     -> ( Edg ` G ) e. Fin ) $=
+    ( cuhgr wcel cvtx cfv c0 cen wbr cedg cfn wceq eqid uhgr0vsize0en en0 sylib
+    wa 0fi eqeltrdi ) ABCADEZFGHPZAIEZFJTUAFGHUAFKUAASSLUALMUANOQR $.
+
+  $( The null graph, with no vertices, is a simple graph.  (Contributed by AV,
+     1-Nov-2020.) $)
+  usgr0v $p |- ( ( G e. W /\ ( Vtx ` G ) = (/) /\ ( iEdg ` G ) = (/) )
+                 -> G e. USGraph ) $=
+    ( wcel cvtx cfv c0 wceq cusgr ciedg usgr0vb biimp3ar ) ABCADEFGAHCAIEFGABJK
+    $.
+
+  $( The null graph, with no vertices, represented by a hypergraph, is a simple
+     graph.  (Contributed by AV, 5-Dec-2020.) $)
+  uhgr0vusgr $p |- ( ( G e. UHGraph /\ ( Vtx ` G ) = (/) ) -> G e. USGraph ) $=
+    ( cuhgr wcel cvtx cfv c0 wceq wa simpl cedg ciedg uhgr0v0e wb uhgriedg0edg0
+    eqid adantr mpbid usgr0e ) ABCZADEZFGZHZABSUAIUBAJEZFGZAKEFGZUCATTOUCOLSUDU
+    EMUAANPQR $.
+
+  $( The null graph represented by an empty set is a simple graph.
+     (Contributed by AV, 16-Oct-2020.) $)
+  usgr0 $p |- (/) e. USGraph $=
+    ( vx c0 cusgr wcel cdm cv c2o cen wbr cpw crab wf1 f10 wceq ax-mp mpbir cvv
+    wb cfv eqcomi dm0 f1eq2 0ex cvtx vtxval0 ciedg iedgval0 isusgren ) BCDZBEZA
+    FGHIABJKZBLZULBUKBLZUKMUJBNULUMRUAUJBUKBUBOPBQDUIULRUCAQBBBBUDSBUETBUFSBUGT
+    UHOP $.
+
+  ${
+    $d B x $.  $d C x $.  $d G x $.
+    uspgr1e.v $e |- V = ( Vtx ` G ) $.
+    uspgr1e.a $e |- ( ph -> A e. X ) $.
+    uspgr1e.b $e |- ( ph -> B e. V ) $.
+    uspgr1e.c $e |- ( ph -> C e. V ) $.
+    uspgr1e.e $e |- ( ph -> ( iEdg ` G ) = { <. A , { B , C } >. } ) $.
+    ${
+      uspgr1edc.dc $e |- ( ph -> DECID B = C ) $.
+      $( A simple pseudograph with one edge.  (Contributed by Alexander van der
+         Vekens, 10-Aug-2017.)  (Revised by AV, 16-Oct-2020.)  (Revised by AV,
+         21-Mar-2021.)  (Proof shortened by AV, 17-Apr-2021.) $)
+      uspgr1edc $p |- ( ph -> G e. USPGraph ) $=
+        ( vx wcel wf1 csn cvv syl2anc mpbird cuspgr ciedg cfv cdm cv c1o cen wo
+        wbr c2o cvtx cpw cpr cop wss prexg snidg syl f1sng prssd sseqtrdi elpwg
+        crab wb upgr1elem1 f1ss wceq f1dm f1eq2 3syl dmeqd f1eq123d 1vgrex eqid
+        eqidd isuspgren ) AEUAOZEUBUCZUDZNUEZUFUGUIVTUJUGUIUHZNEUKUCZULZVCZVRPZ
+        AWEBCDUMZUNQZUDZWDWGPZAWIBQZWDWGPZAWJWFQZWGPZWLWDUOWKABGOWFWLOZWMIAWFRO
+        ZWNACFOZDFOWOJKCDFFUPSZWFRUQURBWFGWLUSSZANCDWCFFAWFWCOZWFWBUOZAWFFWBACD
+        FJKUTHVAAWOWSWTVDWQWFWBRVBURTJKMVEWJWLWDWGVFSAWJWANRVCZWGPZWHWJVGWIWKVD
+        AWMWLXAUOXBWRANCDRFFWQJKMVEWJWLXAWGVFSWJXAWGVHWHWJWDWGVIVJTAVSWHWDWDVRW
+        GLAVRWGLVKAWDVOVLTAWPEROVQWEVDJECFHVMNRVREWBWBVNVRVNVPVJT $.
+    $}
+
+    usgr1e.e $e |- ( ph -> B =/= C ) $.
+    $( A simple graph with one edge (with additional assumption that
+       ` B =/= C ` since otherwise the edge is a loop!).  (Contributed by
+       Alexander van der Vekens, 10-Aug-2017.)  (Revised by AV,
+       18-Oct-2020.) $)
+    usgr1e $p |- ( ph -> G e. USGraph ) $=
+      ( vx cuspgr wcel c2o cen wceq syl cv wbr cedg cfv wral cusgr wne wdc olcd
+      wo dcne sylibr uspgr1edc cpr csn wb pr2ne syl2anc mpbird cvv prexg ralsng
+      breq1 ciedg crn cop edgvalg rneqd 3eqtrd raleqtrrdv usgruspgrben sylanbrc
+      rnsnopg ) AEOPZNUAZQRUBZNEUCUDZUEEUFPABCDEFGHIJKLACDSZCDUGZUJVRUHAVSVRMUI
+      CDUKULUMZAVPNCDUNZUOZVQAVPNWBUEZWAQRUBZAWDVSMACFPZDFPZWDVSUPJKCDFFUQURUSA
+      WAUTPZWCWDUPAWEWFWGJKCDFFVAURVPWDNWAUTVOWAQRVCVBTUSAVQEVDUDZVEZBWAVFUOZVE
+      ZWBAVNVQWISVTEOVGTAWHWJLVHABGPWKWBSIBWAGVMTVIVJNEVKVL $.
+  $}
+
+  $( The empty graph, with vertices but no edges, is a simple graph.
+     (Contributed by Alexander van der Vekens, 10-Aug-2017.)  (Revised by AV,
+     16-Oct-2020.) $)
+  usgr0eop $p |- ( V e. W -> <. V , (/) >. e. USGraph ) $=
+    ( wcel c0 cop cvv 0ex opexg mpan2 ciedg cfv wceq opiedgfv usgr0e ) ABCZADEZ
+    FODFCZPFCGADBFHIOQPJKDLGDABFMIN $.
+
+  ${
+    uspgr1eopdc.v $e |- ( ph -> V e. W ) $.
+    uspgr1eopdc.a $e |- ( ph -> A e. X ) $.
+    uspgr1eopdc.b $e |- ( ph -> B e. V ) $.
+    uspgr1eopdc.c $e |- ( ph -> C e. V ) $.
+    uspgr1eopdc.dc $e |- ( ph -> DECID B = C ) $.
+    $( A simple pseudograph with (at least) two vertices and one edge.
+       (Contributed by Alexander van der Vekens, 10-Aug-2017.)  (Revised by AV,
+       16-Oct-2020.) $)
+    uspgr1eopdc $p |- ( ph
+        -> <. V , { <. A , { B , C } >. } >. e. USPGraph ) $=
+      ( cpr cop cfv wcel cvv wceq syl2anc eleqtrrd csn cvtx prexg opexg opvtxfv
+      eqid snexg syl ciedg opiedgfv uspgr1edc ) ABCDEBCDMZNZUAZNZUOUBOZGUPUFIAC
+      EUPJAEFPZUNQPZUPERHAUMQPZURABGPULQPZUSIACEPDEPUTJKCDEEUCSBULGQUDSUMQUGUHZ
+      UNEFQUESZTADEUPKVBTAUQURUOUIOUNRHVAUNEFQUJSLUK $.
+  $}
+
+  ${
+    uspgr1ewopdc.v $e |- ( ph -> V e. W ) $.
+    uspgr1ewopdc.a $e |- ( ph -> A e. V ) $.
+    uspgr1ewopdc.b $e |- ( ph -> B e. V ) $.
+    uspgr1ewopdc.dc $e |- ( ph -> DECID A = B ) $.
+    $( A simple pseudograph with (at least) two vertices and one edge
+       represented by a singleton word.  (Contributed by AV, 9-Jan-2021.) $)
+    uspgr1ewopdc $p |- ( ph -> <. V , <" { A , B } "> >. e. USPGraph ) $=
+      ( cpr cs1 cop cc0 csn cuspgr cvv wcel wceq prexg syl2anc s1val syl opeq2d
+      c0ex a1i uspgr1eopdc eqeltrd ) ADBCJZKZLDMUHLNZLOAUIUJDAUHPQZUIUJRABDQCDQ
+      UKGHBCDDSTUHPUAUBUCAMBCDEPFMPQAUDUEGHIUFUG $.
+  $}
+
+  $( A simple graph with (at least) two different vertices and one edge.  If
+     the two vertices were not different, the edge would be a loop.
+     (Contributed by Alexander van der Vekens, 10-Aug-2017.)  (Revised by AV,
+     18-Oct-2020.) $)
+  usgr1eop $p |- ( ( ( V e. W /\ A e. X ) /\ ( B e. V /\ C e. V ) )
+            -> ( B =/= C -> <. V , { <. A , { B , C } >. } >. e. USGraph ) ) $=
+    ( wcel wa wne cpr cop csn cusgr cvtx cfv cvv wceq adantr syl2anc eleqtrrd
+    simpllr simplrl simpll simplr prexg adantl opexg snexg opvtxfv simprr ciedg
+    eqid syl opiedgfv simpr usgr1e ex ) DEGZAFGZHZBDGZCDGZHZHZBCIZDABCJZKZLZKZM
+    GVDVEHZABCVIVINOZFVKULURUSVCVEUAVJBDVKUTVAVBVEUBVJURVHPGZVKDQZVDURVEURUSVCU
+    CZRZVDVLVEVDVGPGZVLVDUSVFPGZVPURUSVCUDVCVQUTBCDDUEUFAVFFPUGSVGPUHUMZRZVHDEP
+    UIZSTVDCVKGVEVDCDVKUTVAVBUJVDURVLVMVNVRVTSTRVJURVLVIUKOVHQVOVSVHDEPUNSVDVEU
+    OUPUQ $.
+
+  $( A simple graph with two vertices and one edge represented by a singleton
+     word.  (Contributed by AV, 9-Jan-2021.) $)
+  usgr2v1e2w $p |- ( ( A e. X /\ B e. Y /\ A =/= B )
+                     -> <. { A , B } , <" { A , B } "> >. e. USGraph ) $=
+    ( wcel wne w3a cpr cs1 cop cc0 csn cusgr cvv wceq prexg 3adant3 s1val syl
+    wa opeq2d c0ex a1i prid1g 3ad2ant1 prid2g 3ad2ant2 simp3 usgr1eop syl221anc
+    3impia eqeltrd ) ACEZBDEZABFZGZABHZUQIZJUQKUQJLZJZMUPURUSUQUPUQNEZURUSOUMUN
+    VAUOABCDPQZUQNRSUAUPVAKNEZAUQEZBUQEZUOUTMEZVBVCUPUBUCUMUNVDUOABCUDUEUNUMVEU
+    OABDUFUGUMUNUOUHVAVCTVDVETUOVFKABUQNNUIUKUJUL $.
+
+  $( A class without edges is a simple graph.  Since ` ran F = (/) ` does not
+     generally imply ` Fun F ` , but ` Fun ( iEdg `` G ) ` is required for
+     ` G ` to be a simple graph, however, this must be provided as assertion.
+     (Contributed by AV, 18-Oct-2020.) $)
+  edg0usgr $p |- ( ( G e. W /\ ( Edg ` G ) = (/) /\ Fun ( iEdg ` G ) )
+                   -> G e. USGraph ) $=
+    ( wcel cedg cfv wceq ciedg wfun cusgr crn edgvalg eqeq1d wrel funrel relrn0
+    c0 wi wb bicomd syl wa simpr simpl usgr0e ex biimtrdi com13 sylbid 3imp ) A
+    BCZADEZPFZAGEZHZAICZUJULUMJZPFZUNUOQUJUKUPPABKLUNUQUJUOUNUQUMPFZUJUOQUNUMMZ
+    UQURRUMNUSURUQUMOSTURUJUOURUJUAABURUJUBURUJUCUDUEUFUGUHUI $.
+
+  ${
+    $d A e p q $.  $d G e p q $.  $d X e p q $.
+    $( A simple graph with one vertex has no edges.  (Contributed by AV,
+       18-Oct-2020.)  (Revised by AV, 21-Mar-2021.)  (Proof shortened by AV,
+       2-Apr-2021.) $)
+    usgr1vr $p |- ( ( A e. X /\ ( Vtx ` G ) = { A } )
+                   -> ( G e. USGraph -> ( iEdg ` G ) = (/) ) ) $=
+      ( ve vp vq wcel cfv wceq wa c0 cv wrex wfal adantl eqid eleqtrd elsni syl
+      ex cvtx csn cusgr ciedg cedg cupgr usgrupgr upgredg sylan simplrl simp-5r
+      simplrr eqtr4d wn simp-4r simpr simpllr eqeltrrd usgredgne neneqd syl2anc
+      cpr pm2.21fal rexlimdvva mpd inegd eq0rdv wb cuhgr usgruhgr uhgriedg0edg0
+      mpbid ) ACGZBUAHZAUBZIZJZBUCGZBUDHKIZVQVRJZBUEHZKIZVSVTDWAVTDLZWAGZVTWDJZ
+      WCELZFLZVBZIZFVNMEVNMZNVTBUFGZWDWJVRWKVQBUGOWCWABVNEFVNPWAPZUHUIWEWINEFVN
+      VNWEWFVNGZWGVNGZJZJZWINWPWIJZWFWGIZWQWFAWGWQWFVOGWFAIWQWFVNVOWEWMWNWIUJVM
+      VPVRWDWOWIUKZQWFARSWQWGVOGWGAIWQWGVNVOWEWMWNWIULWSQWGARSUMWQVRWHWAGZWRUNV
+      QVRWDWOWIUOWQWCWHWAWPWIUPVTWDWOWIUQURVRWTJWFWGWABWFWGWLUSUTVAVCTVDVEVFVGV
+      RWBVSVHZVQVRBVIGXABVJBVKSOVLT $.
+  $}
+
+  $( Lemma for usgrexmpledg : all "edges" are different.  (Contributed by
+     Alexander van der Vekens, 15-Aug-2017.) $)
+  usgrexmpldifpr $p |- ( ( { 0 , 1 } =/= { 1 , 2 } /\ { 0 , 1 } =/= { 2 , 0 }
+                /\ { 0 , 1 } =/= { 0 , 3 } ) /\ ( { 1 , 2 } =/= { 2 , 0 }
+                /\ { 1 , 2 } =/= { 0 , 3 } /\ { 2 , 0 } =/= { 0 , 3 } ) ) $=
+    ( cc0 c1 cpr c2 wne c3 w3a cz wcel wa wo 0z 1z pm3.2i 1ne0 orci prneimg mp2
+    2z cn necomi 2ne0 1ne2 olci 3nn 1re 1lt3 ltneii 3pm3.2i 2re 2lt3 ) ABCZBDCZ
+    EZULDACZEZULAFCZEZGUMUOEZUMUQEZUOUQEZGUNUPURAHIZBHIZJZVCDHIZJZJABEZADEZJZBB
+    EBDEZJZKUNVDVFVBVCLMNZVCVEMSNZNVIVKVGVHBAOUADAUBUANPABBDHHHHQRVDVEVBJZJVHAA
+    EZJZVJBAEZJZKUPVDVNVLVEVBSLNZNVRVPVJVQUCONZUDABDAHHHHQRVDVBFTIZJZJVOAFEJZVQ
+    BFEZJZKURVDWBVLVBWALUENZNWEWCVQWDOBFUFUGUHNZUDABAFHHHTQRUIUSUTVAVFVNJVRDDED
+    AEZJZKUSVFVNVMVSNVRWIVTPBDDAHHHHQRVFWBJWEWHDFEZJZKUTVFWBVMWFNWEWKWGPBDAFHHH
+    TQRVNWBJWKWCKVAVNWBVSWFNWKWCWHWJUBDFUJUKUHNPDAAFHHHTQRUIN $.
+
+  ${
+    $d e v $.
+    griedg0prc.u $e |- U = { <. v , e >. | e : (/) --> (/) } $.
+    $( The class of empty graphs (represented as ordered pairs) is a proper
+       class.  (Contributed by AV, 27-Dec-2020.) $)
+    griedg0prc $p |- U e/ _V $=
+      ( cvv wnel c0 cv wf copab wex feq1 f0 ceqsexv2d opabn1stprc ax-mp wceq wb
+      0ex neleq1 mpbir ) BEFZGGCHZIZACJZEFZUDCKUFUDGGGICGSGGUCGLGMNUDACOPBUEQUB
+      UFRDBUEETPUA $.
+
+    $d e g v $.  $d U g $.
+    $( The class of all simple graphs is a superclass of the class of empty
+       graphs represented as ordered pairs.  (Contributed by AV,
+       27-Dec-2020.) $)
+    griedg0ssusgr $p |- U C_ USGraph $=
+      ( vg cusgr cv wcel cop wceq c0 wf wex copab eleq2i elopab bitri cvv vex
+      wa opex a1i ciedg cfv opiedgfvi f0bi biimpi eqtrid usgr0e adantl wb eleq1
+      adantr mpbird exlimivv sylbi ssriv ) EBFEGZBHZURAGZCGZIZJZKKVALZTZCMAMZUR
+      FHZUSURVDACNZHVFBVHURDOVDACURPQVEVGACVEVGVBFHZVDVIVCVDVBRVBRHVDUTVAASZCSZ
+      UAUBVDVBUCUDVAKVAUTVJVKUEVDVAKJVAKUFUGUHUIUJVCVGVIUKVDURVBFULUMUNUOUPUQ
+      $.
+  $}
+
+  ${
+    $d e v $.
+    $( The class of simple graphs is a proper class (and therefore, because of
+       ~ prcssprc , the classes of multigraphs, pseudographs and hypergraphs
+       are proper classes, too).  (Contributed by AV, 27-Dec-2020.) $)
+    usgrprc $p |- USGraph e/ _V $=
+      ( ve vv c0 cv copab cusgr wss wnel eqid griedg0ssusgr griedg0prc prcssprc
+      wf cvv mp2an ) CCADMBAEZFGPNHFNHBPAPIZJBPAQKPFLO $.
   $}
 
 
