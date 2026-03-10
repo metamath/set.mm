@@ -118718,6 +118718,21 @@ $)
     BDVBUSPBARZUSBAQSURUOUTUNDKKUPTNDZVCUSPUOUQUAURUSBVDUBURUPUCDZVEUOUPUDDZUQV
     FBAUEVFVGUQJUPUFUGUHUPUIUJBBAUTKUKULUM $.
 
+  $( Extract the symbol of the first singleton word of a word concatenated with
+     this singleton word and another singleton word.  (Contributed by Alexander
+     van der Vekens, 22-Sep-2018.)  (Proof shortened by AV, 1-May-2020.)
+     (Revised by AV, 1-May-2020.)  (Revised by AV, 29-Jan-2024.) $)
+  ccatw2s1p1g $p |- ( ( ( W e. Word V /\ ( # ` W ) = N )
+                      /\ ( X e. V /\ Y e. V ) )
+                     -> ( ( ( W ++ <" X "> ) ++ <" Y "> ) ` N ) = X ) $=
+    ( cword wcel chash cfv wceq wa cs1 cconcat co cc0 ccatws1cl ad2ant2r adantr
+    cfzo syl3anc simprr c1 caddc lencl fzonn0p1 simpr eqcomd ccatws1leng oveq2d
+    cn0 syl 3eltr4d ccats1val1g simpll simprl ccats1val2 eqtrd ) CBFZGZCHIZAJZK
+    ZDBGZEBGZKZKZACDLMNZELMNIZAVGIZDVFVGURGZVDAOVGHIZSNZGVHVIJUSVCVJVAVDBCDPQVB
+    VCVDUAVFUTOUTUBUCNZSNZAVLVBUTVNGZVEUSVOVAUSUTUJGVOBCUDUTUEUKRRVBAUTJZVEVBUT
+    AUSVAUFUGRZVFVKVMOSUSVCVKVMJVAVDBCDBUHQUIULEABVGBUMTVFUSVCVPVIDJUSVAVEUNVBV
+    CVDUOVQDABCUPTUQ $.
+
   $( Extract the second of two single symbols concatenated with a word.
      (Contributed by Alexander van der Vekens, 22-Sep-2018.)  (Proof shortened
      by AV, 1-May-2020.) $)
