@@ -199841,6 +199841,33 @@ $)
       VHGPZVMFVIKVOVIGARJKVHGARUIAUHTUJVKVMFKUKULUMVMFUNTUOUPUQUR $.
   $}
 
+  ${
+    $d G i $.  $d W i $.
+    clwwlknonel.v $e |- V = ( Vtx ` G ) $.
+    clwwlknonel.e $e |- E = ( Edg ` G ) $.
+    $( Characterization of a word over the set of vertices representing a
+       closed walk on vertex ` X ` of (nonzero) length ` N ` in a graph ` G ` .
+       This theorem would not hold for ` N = 0 ` if ` W = X = (/) ` .
+       (Contributed by Alexander van der Vekens, 20-Sep-2018.)  (Revised by AV,
+       28-May-2021.)  (Revised by AV, 24-Mar-2022.) $)
+    clwwlknonel $p |- ( N =/= 0 -> ( W e. ( X ( ClWWalksNOn ` G ) N )
+                     <-> ( ( W e. Word V /\ A. i e. ( 0 ..^ ( ( # ` W ) - 1 ) )
+                                     { ( W ` i ) , ( W ` ( i + 1 ) ) } e. E
+                             /\ { ( lastS ` W ) , ( W ` 0 ) } e. E )
+                           /\ ( # ` W ) = N /\ ( W ` 0 ) = X ) ) ) $=
+      ( cc0 wne cfv wcel chash wceq wa co w3a c0 cn0 cclwwlk cword cv caddc cpr
+      c1 cmin cfzo wral cclwwlknon wb isclwwlk simpl fveq2 eqtrdi adantl eqtr3d
+      clsw hash0 necon3d impcom biantrud bicomd 3anbi1d bitrid expimpd pm5.32rd
+      a1d cclwwlkn isclwwlknon clwwlknnn nnnn0d simpr cvv clwwlkbp simp2d lencl
+      ex syl adantr eqeltrrd isclwwlkng pm5.21nii anbi1i 3bitri 3anass 3bitr4g
+      anass ) DJKZFCUALMZFNLZDOZJFLZGOZPZPZFEUBMZAUCZFLWRUFUDQFLUEBMAJWKUFUGQUH
+      QUIZFURLWMUEBMZRZWOPFGDCUJLQMZXAWLWNRWIWOWJXAWIWLWNWJXAUKZWIWLPZXCWNWJWQF
+      SKZPZWSWTRXDXAABCEFHIULXDXFWQWSWTXDWQXFXDXEWQWLWIXEWLFSDJWLFSOZDJOWLXGPWK
+      DJWLXGUMXGWKJOWLXGWKSNLJFSNUNUSUOUPUQVRUTVAVBVCVDVEVHVFVGXBFDCVIQMZWNPWJW
+      LPZWNPWPCDFGVJXHXIWNXHDTMXIXHDCDFVKVLXIWKDTWJWLVMWJWKTMZWLWJWQXJWJCVNMWQX
+      ECEFHVOVPEFVQVSVTWACDFWBWCWDWJWLWNWHWEXAWLWNWFWG $.
+  $}
+
   $( The concatenation of two words representing closed walks on a vertex ` X `
      represents a closed walk on vertex ` X ` .  The resulting walk is a
      "double loop", starting at vertex ` X ` , coming back to ` X ` by the
