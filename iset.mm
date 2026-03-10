@@ -118651,6 +118651,18 @@ $)
     ( cword wcel cs1 cconcat co ccatws1cl stoic3 ) BAEZFCAFBCGHIZLFDAFMDGHILFAB
     CJAMDJK $.
 
+  $( The length of the concatenation of a word with two singleton words.
+     (Contributed by Alexander van der Vekens, 22-Sep-2018.)  (Revised by AV,
+     5-Mar-2022.) $)
+  ccatw2s1leng $p |- ( ( W e. Word V /\ X e. V /\ Y e. V )
+      -> ( # ` ( ( W ++ <" X "> ) ++ <" Y "> ) ) = ( ( # ` W ) + 2 ) ) $=
+    ( cword wcel w3a cs1 cconcat co chash cfv c1 caddc c2 wceq 3ad2ant1 syl2anc
+    cvv ccatws1leng wrdv simp2 elexd ccatws1cl simp3 3adant3 oveq1d lencl nn0cn
+    cn0 cc add1p1 3syl 3eqtrd ) BAEFZCAFZDAFZGZBCHIJZDHIJKLZUSKLZMNJZBKLZMNJZMN
+    JZVCONJZURUSSEZFZUQUTVBPURBVGFZCSFVHUOUPVIUQABUAQURCAUOUPUQUBUCSBCUDRUOUPUQ
+    UESUSDATRURVAVDMNUOUPVAVDPUQABCATUFUGUOUPVEVFPZUQUOVCUJFVCUKFVJABUHVCUIVCUL
+    UMQUN $.
+
   $( Value of a symbol in the left half of a word concatenated with a single
      symbol.  (Contributed by Alexander van der Vekens, 5-Aug-2018.)  (Revised
      by JJ, 20-Jan-2024.) $)
