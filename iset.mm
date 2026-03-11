@@ -200109,6 +200109,24 @@ $)
       YDUWAUOUURUUQYDUWAUUQYDUVHYHOUIQZCUUJYHOUIXDYDCXEKOXEKUWBCTUECXFXHCOXIXJX
       KXLWJWKUTWLVHWFXMXNXOXPXSYEYGYLUUHUQZYIYDYBUWCYCYDCXQKUWCCXTJABCDYKHIXRVB
       UTYAXG $.
+
+    $( Extending a closed walk ` W ` on vertex ` X ` by an additional edge
+       (forth and back) results in a closed walk on vertex ` X ` .
+       (Contributed by AV, 17-Apr-2022.) $)
+    clwwlknonex2e $p |- ( ( ( X e. V /\ Y e. V /\ N e. ( ZZ>= ` 3 ) )
+                            /\ { X , Y } e. E
+                            /\ W e. ( X ( ClWWalksNOn ` G ) ( N - 2 ) ) )
+                          -> ( ( W ++ <" X "> ) ++ <" Y "> )
+                             e. ( X ( ClWWalksNOn ` G ) N ) ) $=
+      ( wcel cfv w3a co cs1 cconcat cclwwlkn cc0 wceq wa isclwwlknon c3 cuz cpr
+      c2 cmin cclwwlknon clwwlknonex2 cword chash clt wbr cclwwlk isclwwlkn cvv
+      wi c0 wne clwwlkbp simp2d clwwlkgt0 jca adantr sylbi ad2antrl ccat2s1fstg
+      simpl1 simpl2 syl12anc simprr eqtrd ex biimtrid a1d 3imp sylanbrc ) FDJZG
+      DJZCUAUBKJZLZFGUCAJZEFCUDUEMZBUFKZMJZLEFNOMGNOMZCBPMJQWDKZFRZWDFCWBMJABCD
+      EFGHIUGVSVTWCWFVSWCWFUOVTWCEWABPMJZQEKZFRZSZVSWFBWAEFTVSWJWFVSWJSZWEWHFWK
+      EDUHJZQEUIKZUJUKZSZVPVQWEWHRWGWOVSWIWGEBULKJZWMWARZSWOBWAEUMWPWOWQWPWLWNW
+      PBUNJWLEUPUQBDEHURUSBEUTVAVBVCVDVPVQVRWJVFVPVQVRWJVGDDDEFGVEVHVSWGWIVIVJV
+      KVLVMVNBCWDFTVO $.
   $}
 
 
