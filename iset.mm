@@ -198065,6 +198065,20 @@ $)
     $}
   $}
 
+  ${
+    1loopgruspgr.v $e |- ( ph -> ( Vtx ` G ) = V ) $.
+    1loopgruspgr.a $e |- ( ph -> A e. X ) $.
+    1loopgruspgr.n $e |- ( ph -> N e. V ) $.
+    1loopgruspgr.i $e |- ( ph -> ( iEdg ` G ) = { <. A , { N } >. } ) $.
+    $( A graph with one edge which is a loop is a simple pseudograph.
+       (Contributed by AV, 21-Feb-2021.) $)
+    1loopgruspgr $p |- ( ph -> G e. USPGraph ) $=
+      ( cvtx cfv eqid eleqtrrd ciedg csn cop cpr wceq a1i dfsn2 sneqd eqtrd wdc
+      opeq2d wn wo orci df-dc mpbir uspgr1edc ) ABDDCCKLZFULMHADEULIGNZUMACOLBD
+      PZQZPBDDRZQZPJAUOUQAUNUPBUNUPSADUATUEUBUCDDSZUDZAUSURURUFZUGURUTDMUHURUIU
+      JTUK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
