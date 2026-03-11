@@ -195152,6 +195152,18 @@ $)
   $}
 
   ${
+    $d G g $.  $d G u w x $.
+    $( The edges of a graph.  (Contributed by AV, 1-Jan-2020.)  (Revised by AV,
+       13-Oct-2020.)  (Revised by AV, 8-Dec-2021.) $)
+    edgval $p |- ( Edg ` G ) = ran ( iEdg ` G ) $=
+      ( vx vg vw vu cedg cfv ciedg crn cv wcel cvv df-edg mptrcl cop wex elrn2g
+      ibi elex2 exlimiv cxp c2nd cedgf cif df-iedg 3syl edgvalg pm5.21nii eqriv
+      eleq2d ) BAFGZAHGZIZBJZUKKALKZUNUMKZCLCJZHGIFUNACMNUPDJUNOZULKZDPZEJZULKZ
+      EPZUOUPUTDUNULUMQRUSVCDEURULSTVBUOECLUQLLUAKUQUBGUQUCGUDHVAACUENTUFUOUKUM
+      UNALUGUJUHUI $.
+  $}
+
+  ${
     iedgedg.e $e |- E = ( iEdg ` G ) $.
     $( An indexed edge is an edge.  (Contributed by AV, 19-Dec-2021.) $)
     iedgedgg $p |- ( ( G e. V /\ Fun E /\ I e. dom E )
