@@ -118809,6 +118809,16 @@ $)
       RVSSEQFWEDVTSWA $.
   $}
 
+  $( The first symbol of the concatenation of a word with two single symbols.
+     (Contributed by Alexander van der Vekens, 22-Sep-2018.)  (Revised by AV,
+     28-Jan-2024.) $)
+  ccat2s1fstg $p |- ( ( ( W e. Word V /\ 0 < ( # ` W ) )
+      /\ ( X e. A /\ Y e. B ) )
+      -> ( ( ( W ++ <" X "> ) ++ <" Y "> ) ` 0 ) = ( W ` 0 ) ) $=
+    ( cword wcel cc0 chash cfv clt wbr wa cvv wrdv ad2antrr cn0 0nn0 a1i simplr
+    simprl simprr ccat2s1fvwd ) DCGHZIDJKLMZNZEAHZFBHZNZNZABIODEFUEDOGHUFUJCDPQ
+    IRHUKSTUEUFUJUAUGUHUIUBUGUHUIUCUD $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
