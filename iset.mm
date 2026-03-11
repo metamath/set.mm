@@ -32927,6 +32927,21 @@ $)
   $}
 
   ${
+    $d A x y $.  $d ph y $.  $d ps x y $.
+    rabsnif.f $e |- ( x = A -> ( ph <-> ps ) ) $.
+    $( A restricted class abstraction restricted to a singleton is either the
+       empty set or the singleton itself.  (Contributed by AV, 12-Apr-2019.)
+       (Proof shortened by AV, 21-Jul-2019.) $)
+    rabsnif $p |- { x e. { A } | ph } = if ( ps , { A } , (/) ) $=
+      ( vy csn crab c0 cif cv wcel cvv wceq wex elrabi 19.8ad sylibr wa wn noel
+      elsni syl intnan a1i wo elif biimpi ecased simpl2im wsbc rabsnifsb sbcieg
+      isset ifbid eqtrid eleq2d pm5.21nii eqriv ) FACDGZHZBUTIJZFKZVALZDMLZVCVB
+      LZVDVCDNZFOZVEVDVGFVDVCUTLZVGACVCUTPVCDUBZUCQFDUNZRVFVHVEVFVGFVFBVIVGVFBV
+      ISZBTZVCILZSZVOTVFVNVMVCUAUDUEVFVLVOUFBVCUTIUGUHUIVJUJQVKRVEVAVBVCVEVAACD
+      UKZUTIJVBACDULVEVPBUTIABCDMEUMUOUPUQURUS $.
+  $}
+
+  ${
     $d x A $.
     rabrsndc.1 $e |- A e. _V $.
     rabrsndc.2 $e |- DECID ph $.
