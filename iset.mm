@@ -100429,11 +100429,47 @@ $)
   elnn0uz $p |- ( N e. NN0 <-> N e. ( ZZ>= ` 0 ) ) $=
     ( cn0 cc0 cuz cfv nn0uz eleq2i ) BCDEAFG $.
 
+  $( 5 is an integer greater than or equal to 3.  (Contributed by AV,
+     7-Sep-2025.) $)
+  5eluz3 $p |- 5 e. ( ZZ>= ` 3 ) $=
+    ( c5 c3 cuz cfv wcel cz cle wbr 5nn nnzi 3re 5re 3lt5 ltleii eluz2 mpbir3an
+    3z ) ABCDEBFEAFEBAGHQAIJBAKLMNBAOP $.
+
+  $( An integer in the upper set of integers starting at 3 is element of the
+     upper set of integers starting at 2.  (Contributed by Alexander van der
+     Vekens, 17-Sep-2018.) $)
+  uzuzle23 $p |- ( A e. ( ZZ>= ` 3 ) -> A e. ( ZZ>= ` 2 ) ) $=
+    ( c2 cz wcel c3 cle wbr cuz cfv wi 2z 2re 3re 2lt3 ltleii eluzuzle mp2an )
+    BCDBEFGAEHIDABHIDJKBELMNOEBAPQ $.
+
+  $( An integer greater than or equal to 4 is an integer greater than or equal
+     to 2.  (Contributed by AV, 30-May-2023.) $)
+  uzuzle24 $p |- ( X e. ( ZZ>= ` 4 ) -> X e. ( ZZ>= ` 2 ) ) $=
+    ( c2 cz wcel c4 cle wbr cuz cfv wi 2z 2re 4re 2lt4 ltleii eluzuzle mp2an )
+    BCDBEFGAEHIDABHIDJKBELMNOEBAPQ $.
+
+  $( An integer greater than or equal to 4 is an integer greater than or equal
+     to 3.  (Contributed by AV, 5-Sep-2025.) $)
+  uzuzle34 $p |- ( X e. ( ZZ>= ` 4 ) -> X e. ( ZZ>= ` 3 ) ) $=
+    ( c3 cz wcel c4 cle wbr cuz cfv wi 3z 3re 4re 3lt4 ltleii eluzuzle mp2an )
+    BCDBEFGAEHIDABHIDJKBELMNOEBAPQ $.
+
+  $( An integer greater than or equal to 5 is an integer greater than or equal
+     to 3.  (Contributed by AV, 15-Nov-2025.) $)
+  uzuzle35 $p |- ( A e. ( ZZ>= ` 5 ) -> A e. ( ZZ>= ` 3 ) ) $=
+    ( c5 cuz cfv c3 wcel wss 5eluz3 uzss ax-mp sseli ) BCDZECDZABMFLMGHEBIJK $.
+
   $( An integer is greater than or equal to 2 is a positive integer.
      (Contributed by AV, 3-Nov-2018.) $)
   eluz2nn $p |- ( A e. ( ZZ>= ` 2 ) -> A e. NN ) $=
     ( c2 cuz cfv wcel c1 cn cz cle wbr wi 1z 1le2 eluzuzle mp2an nnuz eleqtrrdi
     ) ABCDEZAFCDZGFHEFBIJRASEKLMBFANOPQ $.
+
+  $( An integer greater than or equal to 3 is a positive integer.  (Contributed
+     by Alexander van der Vekens, 17-Sep-2018.)  (Proof shortened by AV,
+     30-Nov-2025.) $)
+  eluz3nn $p |- ( N e. ( ZZ>= ` 3 ) -> N e. NN ) $=
+    ( c3 cuz cfv wcel c2 cn uzuzle23 eluz2nn syl ) ABCDEAFCDEAGEAHAIJ $.
 
   $( An integer greater than or equal to 4 is an integer greater than or equal
      to 2.  (Contributed by AV, 30-May-2023.) $)
@@ -100456,13 +100492,6 @@ $)
      25-May-2020.) $)
   eluz2n0 $p |- ( N e. ( ZZ>= ` 2 ) -> N =/= 0 ) $=
     ( c2 cuz cfv wcel eluz2nn nnne0d ) ABCDEAAFG $.
-
-  $( An integer in the upper set of integers starting at 3 is element of the
-     upper set of integers starting at 2.  (Contributed by Alexander van der
-     Vekens, 17-Sep-2018.) $)
-  uzuzle23 $p |- ( A e. ( ZZ>= ` 3 ) -> A e. ( ZZ>= ` 2 ) ) $=
-    ( c2 cz wcel c3 cle wbr cuz cfv wi 2z 2re 3re 2lt3 ltleii eluzuzle mp2an )
-    BCDBEFGAEHIDABHIDJKBELMNOEBAPQ $.
 
   $( If an integer is greater than 3, then it is a positive integer.
      (Contributed by Alexander van der Vekens, 17-Sep-2018.) $)
