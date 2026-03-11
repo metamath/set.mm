@@ -198089,6 +198089,13 @@ $)
       opeq2d wn wo orci df-dc mpbir uspgr1edc ) ABDDCCKLZFULMHADEULIGNZUMACOLBD
       PZQZPBDDRZQZPJAUOUQAUNUPBUNUPSADUATUEUBUCDDSZUDZAUSURURUFZUGURUTDMUHURUIU
       JTUK $.
+
+    $( The set of edges in a graph (simple pseudograph) with one edge which is
+       a loop is a singleton of a singleton.  (Contributed by AV, 17-Dec-2020.)
+       (Revised by AV, 21-Feb-2021.) $)
+    1loopgredg $p |- ( ph -> ( Edg ` G ) = { { N } } ) $=
+      ( cedg cfv ciedg crn csn cop wceq edgval a1i rneqd wcel rnsnopg 3eqtrd
+      syl ) ACKLZCMLZNZBDOZPOZNZUHOZUEUGQACRSAUFUIJTABFUAUJUKQHBUHFUBUDUC $.
   $}
 
 
