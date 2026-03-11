@@ -18794,6 +18794,7 @@ New usage of "snatpsubN" is discouraged (3 uses).
 New usage of "snelpwrVD" is discouraged (0 uses).
 New usage of "snexALT" is discouraged (1 uses).
 New usage of "snexOLD" is discouraged (1 uses).
+New usage of "snexgALT" is discouraged (0 uses).
 New usage of "snssiALT" is discouraged (0 uses).
 New usage of "snssiALTVD" is discouraged (0 uses).
 New usage of "snssl" is discouraged (0 uses).
@@ -20715,6 +20716,7 @@ Proof modification of "sn-isghm" is discouraged (432 steps).
 Proof modification of "snelpwrVD" is discouraged (37 steps).
 Proof modification of "snexALT" is discouraged (48 steps).
 Proof modification of "snexOLD" is discouraged (25 steps).
+Proof modification of "snexgALT" is discouraged (22 steps).
 Proof modification of "snssiALT" is discouraged (40 steps).
 Proof modification of "snssiALTVD" is discouraged (64 steps).
 Proof modification of "snssl" is discouraged (18 steps).
