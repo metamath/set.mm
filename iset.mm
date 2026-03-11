@@ -200127,6 +200127,28 @@ $)
       KVLVMVNBCWDFTVO $.
   $}
 
+  ${
+    $d G w x y $.  $d N w x y $.  $d V x y $.  $d G i x y $.  $d N i $.
+    clwwlknun.v $e |- V = ( Vtx ` G ) $.
+    $( The set of closed walks of fixed length ` N ` in a simple graph ` G ` is
+       the union of the closed walks of the fixed length ` N ` on each of the
+       vertices of graph ` G ` .  (Contributed by Alexander van der Vekens,
+       7-Oct-2018.)  (Revised by AV, 28-May-2021.)  (Revised by AV,
+       3-Mar-2022.)  (Proof shortened by AV, 28-Mar-2022.) $)
+    clwwlknun $p |- ( G e. USGraph
+              -> ( N ClWWalksN G ) = U_ x e. V ( x ( ClWWalksNOn ` G ) N ) ) $=
+      ( vy vi cusgr wcel co cv cfv wrex cc0 wceq wa c1 cpr ex simpr isclwwlknon
+      cclwwlkn cclwwlknon ciun eliun simpl rexlimivw cword chash cedg cmin cfzo
+      rexbii caddc wral clsw w3a clwwlknp anim2i wi usgrpredgv syl6com 3ad2ant3
+      eqid impcom eqcomd biantrud bicomd rspcedv adantld impbid2 bitrid bitr2id
+      mpcom eqrdv ) BHIZFCBUBJZADAKZCBUCLJZUDZFKZVTIWAVSIZADMZVPWAVQIZAWADVSUEW
+      CWDNWALZVROZPZADMZVPWDWBWGADBCWAVRUAUMVPWHWDWGWDADWDWFUFUGVPWDWHVPWADUHIW
+      AUILCOPZGKZWALWJQUNJWALRBUJLZIGNCQUKJULJUOZWAUPLZWERWKIZUQZPZVPWDPWHWDWOV
+      PGWKBCDWAEWKVDZURUSWPWDWHVPWPWGWDAWEDWOVPWEDIZWNWIVPWRUTWLVPWNWMDIZWRPZWR
+      VPWNWTWKBWMWEDWQEVASWSWRTVBVCVEWPVRWEOZPZWDWGXBWFWDXBVRWEWPXATVFVGVHVIVJV
+      NSVKVLVMVO $.
+  $}
+
 
 $(
 ###############################################################################
