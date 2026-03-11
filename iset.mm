@@ -199919,17 +199919,15 @@ $)
                                      { ( W ` i ) , ( W ` ( i + 1 ) ) } e. E
                              /\ { ( lastS ` W ) , ( W ` 0 ) } e. E )
                            /\ ( # ` W ) = N /\ ( W ` 0 ) = X ) ) ) $=
-      ( cc0 wne cfv wcel chash wceq wa co w3a c0 cn0 cclwwlk cword cv caddc cpr
-      c1 cmin cfzo wral cclwwlknon wb isclwwlk simpl fveq2 eqtrdi adantl eqtr3d
-      clsw hash0 necon3d impcom biantrud bicomd 3anbi1d bitrid expimpd pm5.32rd
-      a1d cclwwlkn isclwwlknon clwwlknnn nnnn0d simpr cvv clwwlkbp simp2d lencl
-      ex syl adantr eqeltrrd isclwwlkng pm5.21nii anbi1i 3bitri 3anass 3bitr4g
-      anass ) DJKZFCUALMZFNLZDOZJFLZGOZPZPZFEUBMZAUCZFLWRUFUDQFLUEBMAJWKUFUGQUH
-      QUIZFURLWMUEBMZRZWOPFGDCUJLQMZXAWLWNRWIWOWJXAWIWLWNWJXAUKZWIWLPZXCWNWJWQF
-      SKZPZWSWTRXDXAABCEFHIULXDXFWQWSWTXDWQXFXDXEWQWLWIXEWLFSDJWLFSOZDJOWLXGPWK
-      DJWLXGUMXGWKJOWLXGWKSNLJFSNUNUSUOUPUQVRUTVAVBVCVDVEVHVFVGXBFDCVIQMZWNPWJW
-      LPZWNPWPCDFGVJXHXIWNXHDTMXIXHDCDFVKVLXIWKDTWJWLVMWJWKTMZWLWJWQXJWJCVNMWQX
-      ECEFHVOVPEFVQVSVTWACDFWBWCWDWJWLWNWHWEXAWLWNWFWG $.
+      ( cc0 wne cfv wcel chash wceq wa c1 co w3a c0 cclwwlk cword cv caddc cmin
+      cpr cfzo wral clsw cclwwlknon wb isclwwlk simpl fveq2 hash0 eqtrdi adantl
+      eqtr3d necon3d impcom biantrud bicomd 3anbi1d bitrid a1d expimpd pm5.32rd
+      ex cclwwlkn isclwwlknon isclwwlkn anbi1i anass 3bitri 3anass 3bitr4g ) DJ
+      KZFCUALMZFNLZDOZJFLZGOZPZPZFEUBMZAUCZFLWFQUDRFLUFBMAJVSQUERUGRUHZFUILWAUF
+      BMZSZWCPFGDCUJLRMZWIVTWBSVQWCVRWIVQVTWBVRWIUKZVQVTPZWKWBVRWEFTKZPZWGWHSWL
+      WIABCEFHIULWLWNWEWGWHWLWEWNWLWMWEVTVQWMVTFTDJVTFTOZDJOVTWOPVSDJVTWOUMWOVS
+      JOVTWOVSTNLJFTNUNUOUPUQURVHUSUTVAVBVCVDVEVFVGWJFDCVIRMZWBPVRVTPZWBPWDCDFG
+      VJWPWQWBCDFVKVLVRVTWBVMVNWIVTWBVOVP $.
   $}
 
   $( The concatenation of two words representing closed walks on a vertex ` X `
