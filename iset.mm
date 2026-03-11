@@ -32911,6 +32911,22 @@ $)
   $}
 
   ${
+    $d x y A $.  $d y ph $.
+    $( A restricted class abstraction restricted to a singleton is either the
+       empty set or the singleton itself.  (Contributed by AV, 21-Jul-2019.) $)
+    rabsnifsb $p |- { x e. { A } | ph }
+                    = if ( [. A / x ]. ph , { A } , (/) ) $=
+      ( vy cv csn wcel wa cab wsbc c0 wn wo wi syl imdistani nfan eleq1w anbi1d
+      nfv crab cif wceq elsni sbceq1a biimpd orcd biimprd pm2.21i adantr impbii
+      noel jaoi abbii nfsbc1v nfn weq orbi12d cbvabw eqtri df-rab df-if 3eqtr4i
+      nfor ) BEZCFZGZAHZBIZDEZVFGZABCJZHZVJKGZVLLZHZMZDIZABVFUAVLVFKUBVIVGVLHZV
+      EKGZVOHZMZBIVRVHWBBVHWBVHVSWAVGAVLVGVECUCZAVLNVECUDZWCAVLABCUEZUFOPUGVSVH
+      WAVGVLAVGWCVLANWDWCAVLWEUHOPVTVHVOVTVHVEULUIUJUMUKUNWBVQBDWBDTVMVPBVKVLBV
+      KBTABCUOZQVNVOBVNBTVLBWFUPQVDBDUQZVSVMWAVPWGVGVKVLBDVFRSWGVTVNVOBDKRSURUS
+      UTABVFVAVLDVFKVBVC $.
+  $}
+
+  ${
     $d x A $.
     rabrsndc.1 $e |- A e. _V $.
     rabrsndc.2 $e |- DECID ph $.
