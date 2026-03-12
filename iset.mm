@@ -116614,6 +116614,12 @@ $)
     ZAUIIJZAKIJZUGFUJUHFUJRUGUJFGLCZUJFRMGLNOPQSUGUIBCZUKULTUNUOMGLUAOAUIUBUCUL
     UMTUGUIKAIKUIUDPUEQUF $.
 
+  $( A set equinumerous to the ordinal one has size 1 .  (Contributed by Jim
+     Kingdon, 11-Mar-2026.) $)
+  en1hash $p |- ( A ~~ 1o -> ( # ` A ) = 1 ) $=
+    ( c1o cen wbr chash cfv c1 wceq cfn wcel wb com 1onn nnfi ax-mp enfi mpbiri
+    fihashen1 syl ibir ) ABCDZAEFGHZUAAIJZUBUAKUAUCBIJZBLJUDMBNOABPQARST $.
+
   $( A function on a finite set is equinumerous to its domain.  (Contributed by
      Mario Carneiro, 12-Mar-2015.)  (Intuitionized by Jim Kingdon,
      24-Feb-2022.) $)
