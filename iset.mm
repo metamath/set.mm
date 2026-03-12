@@ -198133,6 +198133,31 @@ $)
     1loopgredg $p |- ( ph -> ( Edg ` G ) = { { N } } ) $=
       ( cedg cfv ciedg crn csn cop wceq edgval a1i rneqd wcel rnsnopg 3eqtrd
       syl ) ACKLZCMLZNZBDOZPOZNZUHOZUEUGQACRSAUFUIJTABFUAUJUKQHBUHFUBUDUC $.
+
+    $d A a e $.  $d G a e $.  $d N a e $.  $d V a e $.  $d X a e $.
+    $d ph a e $.
+    1loopgrvd2fi.fi $e |- ( ph -> V e. Fin ) $.
+    $( The vertex degree of a one-edge graph, case 4: an edge from a vertex to
+       itself contributes two to the vertex's degree.  I. e. in a graph (simple
+       pseudograph) with one edge which is a loop, the vertex connected with
+       itself by the loop has degree 2.  (Contributed by Mario Carneiro,
+       12-Mar-2015.)  (Revised by Alexander van der Vekens, 22-Dec-2017.)
+       (Revised by AV, 21-Feb-2021.) $)
+    1loopgrvd2fi $p |- ( ph -> ( ( VtxDeg ` G ) ` N ) = 2 ) $=
+      ( ve va cfv wcel csn wceq c1 eqid syl cv cedg crab chash caddc co c2 cvtx
+      cvtxdg ciedg cdm cfn cop dmeqd snexg dmsnopg eqtrd snfig eqeltrd eleqtrrd
+      cvv 1loopgruspgr vtxduspgrfvedgfi c1o cen wbr wex c0 eqeq2d spcegv mpisyl
+      sneq snidg iftrued eqeq1d exbidv mpbird 1loopgredg rabeqdv rabsnif eqtrdi
+      cif eleq2 en1 sylibr en1hash iftruei eqeq1i exbii eqeq1 oveq12d 1p1e2 a1i
+      3eqtrd ) ADCUINZNDLUAZOZLCUBNZUCZUDNZWPDPZQZLWRUCZUDNZUEUFRRUEUFZUGAWODLW
+      RCCUHNZXFSWRSACUJNZUKZBPZULAXHBXAUMPZUKZXIAXGXJJUNAXAVAOZXKXIQADEOZXLIDEU
+      OTZBXAVAUPTUQABFOXIULOHBFURTUSAXFEULGKUSADEXFIGUTABCDEFGHIJVBWOSVCAWTRXDR
+      UEAWSVDVEVFZWTRQAWSMUAZPZQZMVGZXOAXSDXAOZXAPZVHWBZXQQZMVGZAYDYAXQQZMVGZAX
+      LYAYAQZYFXNYASYEYGMXAVAXPXAQXQYAYAXPXAVLVIVJVKZAYCYEMAYBYAXQAXTYAVHAXMXTI
+      DEVMTVNVOVPVQAXRYCMAWSYBXQAWSWQLYAUCYBAWQLWRYAABCDEFGHIJVRZVSWQXTLXAWPXAD
+      WCVTWAVOVPVQMWSWDWEWSWFTAXCVDVEVFZXDRQAXCXQQZMVGZYJAYLXAXAQZYAVHWBZXQQZMV
+      GZAYFYPYHYOYEMYNYAXQYMYAVHXASWGWHWIWEAYKYOMAXCYNXQAXCXBLYAUCYNAXBLWRYAYIV
+      SXBYMLXAWPXAXAWJVTWAVOVPVQMXCWDWEXCWFTWKXEUGQAWLWMWN $.
   $}
 
 
