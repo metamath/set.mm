@@ -198158,6 +198158,23 @@ $)
       WCVTWAVOVPVQMWSWDWEWSWFTAXCVDVEVFZXDRQAXCXQQZMVGZYJAYLXAXAQZYAVHWBZXQQZMV
       GZAYFYPYHYOYEMYNYAXQYMYAVHXASWGWHWIWEAYKYOMAXCYNXQAXCXBLYAUCYNAXBLWRYAYIV
       SXBYMLXAWPXAXAWJVTWAVOVPVQMXCWDWEXCWFTWKXEUGQAWLWMWN $.
+
+    $d A i $.  $d G i $.  $d K i $.  $d N i $.  $d ph i $.
+    1loopgrvd0.k $e |- ( ph -> K e. ( V \ { N } ) ) $.
+    $( The vertex degree of a one-edge graph, case 1 (for a loop): a loop at a
+       vertex other than the given vertex contributes nothing to the vertex
+       degree.  (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by AV,
+       21-Feb-2021.) $)
+    1loopgrvd0fi $p |- ( ph -> ( ( VtxDeg ` G ) ` K ) = 0 ) $=
+      ( vi cfv wceq wcel csn cvv syl cvtxdg cc0 cv ciedg cdm wrex eldifbd snexg
+      wn fvsng syl2anc eleq2d mtbird dmeqd dmsnopg eqtrd fveq1d rexeqbidv fveq2
+      cop wb rexsng bitrd cvtx eqid snfig eqeltrd eldifad eleqtrrd cuspgr cupgr
+      cfn 1loopgruspgr uspgrupgr vtxd0nedgbfi mpbird ) ADCUAOZOUBPDNUCZCUDOZOZQ
+      ZNVSUEZUFZUIAWCDBBERZUTRZOZQZAWGDWDQADFWDMUGAWFWDDABGQZWDSQZWFWDPIAEFQWIJ
+      EFUHTZBWDGSUJUKULUMAWCDVRWEOZQZNBRZUFZWGAWAWLNWBWMAWBWEUEZWMAVSWEKUNAWIWO
+      WMPWJBWDSUOTUPZAVTWKDAVRVSWEKUQULURAWHWNWGVAIWLWGNBGVRBPWKWFDVRBWEUSULVBT
+      VCUMAVQDNCVSCVDOZWQVEVSVEVQVEAWBWMVLWPAWHWMVLQIBGVFTVGAWQFVLHLVGADFWQADFW
+      DMVHHVIACVJQCVKQABCEFGHIJKVMCVNTVOVP $.
   $}
 
 
