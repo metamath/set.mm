@@ -198177,6 +198177,33 @@ $)
       DMVHHVIACVJQCVKQABCEFGHIJKVMCVNTVOVP $.
   $}
 
+  ${
+    $d A x $.  $d D x $.  $d G x $.
+    1hevtxdg0.i $e |- ( ph -> ( iEdg ` G ) = { <. A , E >. } ) $.
+    1hevtxdg0.v $e |- ( ph -> ( Vtx ` G ) = V ) $.
+    1hevtxdg0.a $e |- ( ph -> A e. X ) $.
+    1hevtxdg0.d $e |- ( ph -> D e. V ) $.
+    ${
+      1hextxdg0fi.fi $e |- ( ph -> V e. Fin ) $.
+      1hextxdg0fi.p $e |- ( ph -> G e. UPGraph ) $.
+      1hevtxdg0.e $e |- ( ph -> E e. Y ) $.
+      1hevtxdg0.n $e |- ( ph -> D e/ E ) $.
+      $( The vertex degree of vertex ` D ` in a finite pseudograph ` G ` with
+         only one edge ` E ` is 0 if ` D ` is not incident with the edge
+         ` E ` .  (Contributed by AV, 2-Mar-2021.)  (Revised by Jim Kingdon,
+         13-Mar-2026.) $)
+      1hevtxdg0fi $p |- ( ph -> ( ( VtxDeg ` G ) ` D ) = 0 ) $=
+        ( vx cfv wceq wcel cvtxdg cc0 cv ciedg cdm wrex wn wral csn wnel df-nel
+        sylib cop fveq1d fvsng syl2anc eqtrd neleqtrrd eleq2d notbid ralsng syl
+        wb fveq2 mpbird dmeqd dmsnopg raleqtrrdv ralnex cvtx eqid snfig eqeltrd
+        cfn eleqtrrd vtxd0nedgbfi ) ACEUARZRUBSCQUCZEUDRZRZTZQVSUEZUFUGZAWAUGZQ
+        WBUHWCAWDQBUIZWBAWDQWEUHZCBVSRZTZUGZAWGDCACDUJCDTUGPCDUKULAWGBBDUMUIZRZ
+        DABVSWJIUNABGTZDHTZWKDSKOBDGHUOUPUQURAWLWFWIVCKWDWIQBGVRBSZWAWHWNVTWGCV
+        RBVSVDUSUTVAVBVEAWBWJUEZWEAVSWJIVFAWMWOWESOBDHVGVBUQZVHWAQWBVIULAVQCQEV
+        SEVJRZWQVKVSVKVQVKAWBWEVNWPAWLWEVNTKBGVLVBVMAWQFVNJMVMACFWQLJVONVPVE $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
