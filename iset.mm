@@ -200297,6 +200297,47 @@ $)
 
 
 $(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Eulerian paths and the Konigsberg Bridge problem
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Eulerian paths
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  According to Wikipedia ("Eulerian path",  9-Mar-2021,
+  ~ https://en.wikipedia.org/wiki/Eulerian_path ): "In graph theory, an
+   _Eulerian trail_ (or _Eulerian path_) is a trail in a finite graph that
+   visits every edge exactly once (allowing for revisiting vertices).
+   Similarly, an _Eulerian circuit_ or _Eulerian cycle_ is an Eulerian trail
+   that starts and ends on the same vertex.  ... The term _Eulerian graph_ has
+   two common meanings in graph theory.  One meaning is a graph with an
+   Eulerian circuit, and the other is a graph with every vertex of even degree.
+   These definitions coincide for connected graphs.  ... A graph that has an
+   Eulerian trail but not an Eulerian circuit is called _semi-Eulerian_."
+
+$)
+
+  $c EulerPaths $.
+
+  $( Extend class notation with Eulerian paths. $)
+  ceupth $a class EulerPaths $.
+
+  ${
+    $d f g p $.
+    $( Define the set of all Eulerian paths on an arbitrary graph.
+       (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by AV,
+       18-Feb-2021.) $)
+    df-eupth $a |- EulerPaths = ( g e. _V |-> { <. f , p >. |
+                 ( f ( Trails ` g ) p
+                   /\ f : ( 0 ..^ ( # ` f ) ) -onto-> dom ( iEdg ` g ) ) } ) $.
+  $}
+
+
+$(
 ###############################################################################
   GUIDES AND MISCELLANEA
 ###############################################################################
@@ -202579,6 +202620,9 @@ htmldef "ClWWalksN" as ' ClWWalksN ';
 htmldef "ClWWalksNOn" as 'ClWWalksNOn';
   althtmldef "ClWWalksNOn" as 'ClWWalksNOn';
   latexdef "ClWWalksNOn" as "\mathrm{ClWWalksNOn}";
+htmldef "EulerPaths" as "EulerPaths";
+  althtmldef "EulerPaths" as "EulerPaths";
+  latexdef "EulerPaths" as "\mathrm{EulerPaths}";
 
 /* htmldef, althtmldef, latexdef for mathboxes */
 /* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
