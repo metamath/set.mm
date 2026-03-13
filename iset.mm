@@ -200334,6 +200334,14 @@ $)
     df-eupth $a |- EulerPaths = ( g e. _V |-> { <. f , p >. |
                  ( f ( Trails ` g ) p
                    /\ f : ( 0 ..^ ( # ` f ) ) -onto-> dom ( iEdg ` g ) ) } ) $.
+
+    $( The set ` ( EulerPaths `` G ) ` of all Eulerian paths on ` G ` is a set
+       of pairs by our definition of an Eulerian path, and so is a relation.
+       (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by AV,
+       18-Feb-2021.) $)
+    releupth $p |- Rel ( EulerPaths ` G ) $=
+      ( vf vp vg cv ctrls cfv wbr cc0 chash cfzo co ciedg cdm wfo wa cvv ceupth
+      df-eupth relmptopab ) BEZCEDEZFGHIUAJGKLUBMGNUAOPDBCQARBDCST $.
   $}
 
 
