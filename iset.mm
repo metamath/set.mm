@@ -199301,6 +199301,16 @@ $)
     ( ctrls cfv wbr cwlks ccnv wfun istrl simplbi ) BACDEFBACGEFBHIABCJK $.
 
   ${
+    $d G f p $.
+    $( The class of trails on a graph is a set.  (Contributed by Jim Kingdon,
+       14-Mar-2026.) $)
+    trlsex $p |- ( G e. V -> ( Trails ` G ) e. _V ) $=
+      ( vf vp wcel ctrls cfv cwlks cvv wlkex cv ccnv wfun copab trlsfvalg simpl
+      wbr wa ssopab2i opabss sstri eqsstrdi ssexd ) ABEZAFGZAHGZIABJUDUECKZDKUF
+      QZUGLMZRZCDNZUFCABDOUKUHCDNUFUJUHCDUHUIPSCDUFTUAUBUC $.
+  $}
+
+  ${
     trlf1.i $e |- I = ( iEdg ` G ) $.
     $( The enumeration ` F ` of a trail ` <. F , P >. ` is injective.
        (Contributed by AV, 20-Feb-2021.)  (Proof shortened by AV,
