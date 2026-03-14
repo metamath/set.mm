@@ -1045,6 +1045,13 @@ middle by ~ ssfiexmid ).</p>
 </tr>
 
 <tr>
+  <td>has at most one element</td>
+  <td>` A ~<_ 1o `</td>
+  <td>to relate to ` E* ` see ~ modom
+  and ~ modom2</td>
+</tr>
+
+<tr>
   <td>dominated by ` _om `</td>
   <td>` A ~<_ _om `</td>
   <td>implies subcountable by ~ domomsubct</td>
@@ -9854,9 +9861,8 @@ or not.</TD>
 
 <tr>
   <td>ccatw2s1len</td>
-  <td><i>none</i></td>
-  <td>Presumably would be provable with set existence conditions
-  added.</td>
+  <td>~ ccatw2s1leng</td>
+  <td>adds set existence conditions</td>
 </tr>
 
 <tr>
@@ -9886,20 +9892,20 @@ or not.</TD>
 
 <tr>
   <td>ccatw2s1p1</td>
-  <td><i>none</i></td>
-  <td>would need an additional set existence condition</td>
+  <td>~ ccatw2s1p1g</td>
+  <td>adds a set existence condition</td>
 </tr>
 
 <tr>
   <td>ccat2s1fvw</td>
-  <td><i>none</i></td>
-  <td>would need additional set existence conditions</td>
+  <td>~ ccat2s1fvwd</td>
+  <td>adds set existence conditions</td>
 </tr>
 
 <tr>
   <td>ccat2s1fst</td>
-  <td><i>none</i></td>
-  <td>would need additional set existence conditions</td>
+  <td>~ ccat2s1fstg</td>
+  <td>adds set existence conditions</td>
 </tr>
 
 <tr>
@@ -17467,11 +17473,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>isclwwlkn</td>
-  <td>~ isclwwlkng</td>
-</tr>
-
-<tr>
   <td>clwwlkneq0</td>
   <td><i>none</i></td>
   <td>would appear to be provable but the set.mm
@@ -17609,6 +17610,79 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>clwwlknon0</td>
+  <td><i>none</i></td>
+  <td>presumably provable</td>
+</tr>
+
+<tr>
+  <td>clwwlknonfin</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses clwwlknfi</td>
+</tr>
+
+<tr>
+  <td>clwwlknon1</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof would apparently work with
+  small changes</td>
+</tr>
+
+<tr>
+  <td>clwwlknon1loop</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses clwwlknon1</td>
+</tr>
+
+<tr>
+  <td>clwwlknon1nloop</td>
+  <td><i>none</i></td>
+  <td>presumably provable although the set.mm
+  proof won't work as-is</td>
+</tr>
+
+<tr>
+  <td>clwwlknon1sn</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses clwwlknon1nloop and
+  clwwlknon1loop</td>
+</tr>
+
+<tr>
+  <td>clwwlknon1le1</td>
+  <td><i>none</i></td>
+  <td>would apparently need to use ` ~<_ 1o ` in
+  place of ` # ` and ` <_ 1 `; the set.mm proof would
+  not work as-is</td>
+</tr>
+
+<tr>
+  <td>clwwlknon2num</td>
+  <td><i>none</i></td>
+  <td>may be feasible once we define RegUSGraph</td>
+</tr>
+
+<tr>
+  <td>clwwlknonwwlknonb</td>
+  <td><i>none</i></td>
+  <td>may be feasible if we define WWalksNOn</td>
+</tr>
+
+<tr>
+  <td>clwwlknondisj</td>
+  <td><i>none</i></td>
+  <td>would appear to need decidable equality on
+  the set of vertexes or something else which
+  replaces disjor and orri</td>
+</tr>
+
+<tr>
+  <td>clwwlkvbij</td>
+  <td><i>none</i></td>
+  <td>may be feasible once iset.mm has WWalksN</td>
+</tr>
+
+<tr>
   <td>df-eupth</td>
   <td><i>none</i></td>
   <td>depends on Trails ( df-trls )</td>
@@ -17619,7 +17693,7 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>we don't have a complete list of what this proof depends on,
   but here's a partial list of (direct or indirect) dependencies of the
-  set.mm proof: ClWWalksNOn including clwwlknonccat ,
+  set.mm proof:
   EulerPaths ( df-eupth ), various VtxDeg theorems, eulerpath</td>
 </tr>
 
@@ -17628,10 +17702,12 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>we don't have a complete list of what this proof depends on,
   but here's a partial list of (direct or indirect) dependencies of the
-  set.mm proof: ccatw2s1p1 , WWalksN , clwwisshclwws , clwwisshclwwsn ,
+  set.mm proof: RegUSGraph , WWalksN , clwwisshclwws ,
+  clwwisshclwwsn ,
   clwwlknfi , clwwlkel , wwlksext2clwwlk , wwlksubclwwlk ,
   clwwnisshclwwsn , clwwlknscsh , cyclShift , fusgrhashclwwlkn ,
-  clwwlkndivn , FinUSGraph , vtxdgfusgrf , df-frgr</td>
+  clwwlkndivn , clwwlknonfin , clwwlknonel , clwwlknon2num ,
+  FinUSGraph , vtxdgfusgrf , clwwlknondisj , clwwlkvbij , df-frgr</td>
 </tr>
 
 <tr>
@@ -18226,6 +18302,15 @@ http://www.humanities.mcmaster.ca/~~hitchckd/peculiarities.pdf</A>
 <I>Homotopy Type Theory: Univalent Foundations of Mathematics</I>,
 <A HREF="https://homotopytypetheory.org/book"
 >https://homotopytypetheory.org/book</A>, first edition.</LI>
+
+<LI>
+<A NAME="Huneke"></A> [Huneke] Huneke, Craig L.,
+&quot;The Friendship Theorem&quot; <I>American Mathematical Monthly</I>
+109:192-194 (2002); available at <A
+HREF="https://www.researchgate.net/publication/268313555_The_Friendship_Theorem">
+https://www.researchgate.net/publication/268313555_The_Friendship_Theorem</A>
+(retrieved 30 Dec 2017).
+</LI>
 
 <LI><A NAME="Jech"></A> [Jech] Jech, Thomas, <I>Set Theory,</I>
 Academic Press, San Diego (1978) [QA248.J42].</LI>
