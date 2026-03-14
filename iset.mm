@@ -200354,6 +200354,23 @@ $)
       df-eupth relmptopab ) BEZCEDEZFGHIUAJGKLUBMGNUAOPDBCQARBDCST $.
   $}
 
+  ${
+    $d G f g p $.  $d I g $.
+    eupths.i $e |- I = ( iEdg ` G ) $.
+    $( The Eulerian paths on the graph ` G ` .  (Contributed by AV,
+       18-Feb-2021.)  (Revised by AV, 29-Oct-2021.) $)
+    eupthsg $p |- ( G e. V
+        -> ( EulerPaths ` G ) = { <. f , p >. | ( f ( Trails ` G ) p
+          /\ f : ( 0 ..^ ( # ` f ) ) -onto-> dom I ) } ) $=
+      ( vg wcel cv ctrls cfv wbr ciedg cdm wfo wa copab cvv wceq fveq2 cc0 cfzo
+      chash co ceupth df-eupth breqd wb eqtr4di dmeqd syl anbi12d opabbidv elex
+      foeq3 trlsex wss simpl ssopab2i opabss sstri a1i ssexd fvmptd3 ) BDHZGBAI
+      ZEIZGIZJKZLZUAVFUCKUBUDZVHMKZNZVFOZPZAEQVFVGBJKZLZVKCNZVFOZPZAEQZRUERAGEU
+      FVHBSZVOVTAEWBVJVQVNVSWBVIVPVFVGVHBJTUGWBVMVRSVNVSUHWBVLCWBVLBMKCVHBMTFUI
+      UJVMVRVKVFUOUKULUMBDUNVEWAVPRBDUPWAVPUQVEWAVQAEQVPVTVQAEVQVSURUSAEVPUTVAV
+      BVCVD $.
+  $}
+
 
 $(
 ###############################################################################
