@@ -200385,6 +200385,31 @@ $)
       VMUPUQ $.
   $}
 
+  ${
+    $d G f g p $.  $d I g $.  $d F f p $.  $d I f p $.  $d P f p $.
+    iseupth.i $e |- I = ( iEdg ` G ) $.
+    $( The property " ` <. F , P >. ` is an Eulerian path on the graph ` G ` ".
+       An Eulerian path is defined as bijection ` F ` from the edges to a set
+       ` 0 ... ( N - 1 ) ` and a function ` P : ( 0 ... N ) --> V ` into the
+       vertices such that for each ` 0 <_ k < N ` , ` F ( k ) ` is an edge from
+       ` P ( k ) ` to ` P ( k + 1 ) ` .  (Since the edges are undirected and
+       there are possibly many edges between any two given vertices, we need to
+       list both the edges and the vertices of the path separately.)
+       (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by Mario
+       Carneiro, 3-May-2015.)  (Revised by AV, 18-Feb-2021.)  (Revised by AV,
+       30-Oct-2021.) $)
+    iseupth $p |- ( F ( EulerPaths ` G ) P <-> ( F ( Trails ` G ) P
+                                /\ F : ( 0 ..^ ( # ` F ) ) -onto-> dom I ) ) $=
+      ( vf vp ceupth cfv wbr cvv wcel cc0 chash cfzo co wfo wa cv wceq 3ad2ant1
+      w3a ctrls cdm eupthv trlsv adantr copab df-br eupthsg eleq2d bitrid breq1
+      cop wb fveq2 oveq2d eqidd foeq123d anbi12d breq2 anbi1d opelopabg 3adant1
+      id bitrd pm5.21nii ) BACHIZJZCKLZBKLZAKLZUBZBACUCIZJZMBNIZOPZDUDZBQZRZABC
+      UEVOVMVSABCUFUGVMVIBAUNZFSZGSZVNJZMWBNIZOPZVRWBQZRZFGUHZLZVTVIWAVHLVMWJBA
+      VHUIVMVHWIWAVJVKVHWITVLFCDKGEUJUAUKULVKVLWJVTUOVJWHBWCVNJZVSRVTFGBAKKWBBT
+      ZWDWKWGVSWBBWCVNUMWLWFVQVRVRWBBWLVEWLWEVPMOWBBNUPUQWLVRURUSUTWCATWKVOVSWC
+      ABVNVAVBVCVDVFVG $.
+  $}
+
 
 $(
 ###############################################################################
