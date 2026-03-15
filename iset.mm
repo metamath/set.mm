@@ -200371,6 +200371,20 @@ $)
       BVCVD $.
   $}
 
+  ${
+    $d G f p $.  $d f g p $.
+    $( The classes involved in a Eulerian path are sets.  (Contributed by Jim
+       Kingdon, 13-Mar-2026.) $)
+    eupthv $p |- ( F ( EulerPaths ` G ) P
+        -> ( G e. _V /\ F e. _V /\ P e. _V ) ) $=
+      ( vg vf vp ceupth cfv wbr cvv wcel cop cv ctrls ciedg cdm wfo copab syl
+      wa df-br cc0 chash cfzo df-eupth mptrcl sylbi wceq eqid eupthsg breqd ibi
+      co brabv simpld simprd 3jca ) BACGHZIZCJKZBJKZAJKZUSBALZURKUTBAURUADJEMZF
+      MZDMZNHIUBVDUCHUDUMZVFOHPVDQTEFRGVCCEDFUEUFUGZUSVAVBUSBAVDVECNHIVGCOHZPVD
+      QTZEFRZIZVAVBTUSVLUSURVKBAUSUTURVKUHVHECVIJFVIUIUJSUKULVJEFBAUNSZUOUSVAVB
+      VMUPUQ $.
+  $}
+
 
 $(
 ###############################################################################
