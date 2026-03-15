@@ -200441,6 +200441,16 @@ $)
                      -> F : ( 0 ..^ ( # ` F ) ) -1-1-onto-> dom I ) $=
       ( ceupth cfv wbr cwlks cc0 chash cfzo co cdm wf1o eupthi simprd ) BACFGHB
       ACIGHJBKGLMDNBOABCDEPQ $.
+
+    $( Any graph with an Eulerian path is of finite size, i.e. with a finite
+       number of edges.  (Contributed by Mario Carneiro, 7-Apr-2015.)  (Revised
+       by AV, 18-Feb-2021.) $)
+    eupthfi $p |- ( F ( EulerPaths ` G ) P -> dom I e. Fin ) $=
+      ( ceupth cfv wbr cc0 chash cfzo co cfn wcel cdm cen cz 0z ctrls syl2anc
+      cwlks cn0 wfo iseupth simplbi trliswlk wlkcl 3syl fzofig sylancr eupthf1o
+      nn0zd wf1o f1oeng ensymd enfii ) BACFGHZIBJGZKLZMNZDOZUSPHVAMNUQIQNURQNUT
+      RUQURUQBACSGHZBACUAGHURUBNUQVBUSVABUCABCDEUDUEABCUFABCUGUHULIURUIUJZUQUSV
+      AUQUTUSVABUMUSVAPHVCABCDEUKUSVAMBUNTUOVAUSUPT $.
   $}
 
 
