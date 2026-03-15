@@ -200451,6 +200451,19 @@ $)
       nn0zd wf1o f1oeng ensymd enfii ) BACFGHZIBJGZKLZMNZDOZUSPHVAMNUQIQNURQNUT
       RUQURUQBACSGHZBACUAGHURUBNUQVBUSVABUCABCDEUDUEABCUFABCUGUHULIURUIUJZUQUSV
       AUQUTUSVABUMUSVAPHVCABCDEUKUSVAMBUNTUOVAUSUPT $.
+
+    $d F k $.  $d G k $.  $d I k $.  $d N k $.  $d P k $.
+    $( The ` N ` -th edge in an eulerian path is the edge having ` P ( N ) `
+       and ` P ( N + 1 ) ` as endpoints .  (Contributed by Mario Carneiro,
+       12-Mar-2015.)  (Revised by AV, 18-Feb-2021.) $)
+    eupthseg $p |- ( ( F ( EulerPaths ` G ) P /\ N e. ( 0 ..^ ( # ` F ) ) ) ->
+      { ( P ` N ) , ( P ` ( N + 1 ) ) } C_ ( I ` ( F ` N ) ) ) $=
+      ( vk ceupth cfv wbr cc0 chash cfzo co wcel c1 caddc cpr wss cvv cwlks cdm
+      cv wral wi wf1o eupthi simpld wlkv simp1d wlkvtxeledgg mpancom wceq fveq2
+      fvoveq1 preq12d 2fveq3 sseq12d rspccv 3syl imp ) BACHIJZEKBLIMNZOZEAIZEPQ
+      NAIZRZEBIDIZSZVBBACUAIJZGUCZAIZVKPQNAIZRZVKBIDIZSZGVCUDZVDVIUEVBVJVCDUBBU
+      FABCDFUGUHCTOZVJVQVJVRBTOATOABCUIUJAGBCDTFUKULVPVIGEVCVKEUMZVNVGVOVHVSVLV
+      EVMVFVKEAUNVKEPAQUOUPVKEDBUQURUSUTVA $.
   $}
 
 
