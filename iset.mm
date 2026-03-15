@@ -200408,6 +200408,23 @@ $)
       VHUIVMVHWIWAVJVKVHWITVLFCDKGEUJUAUKULVKVLWJVTUOVJWHBWCVNJZVSRVTFGBAKKWBBT
       ZWDWKWGVSWBBWCVNUMWLWFVQVRVRWBBWLVEWLWEVPMOWBBNUPUQWLVRURUSUTWCATWKVOVSWC
       ABVNVAVBVCVDVFVG $.
+
+    $( The property " ` <. F , P >. ` is an Eulerian path on the graph ` G ` ".
+       An Eulerian path is defined as bijection ` F ` from the edges to a set
+       ` 0 ... ( N - 1 ) ` and a function ` P : ( 0 ... N ) --> V ` into the
+       vertices such that for each ` 0 <_ k < N ` , ` F ( k ) ` is an edge from
+       ` P ( k ) ` to ` P ( k + 1 ) ` .  (Since the edges are undirected and
+       there are possibly many edges between any two given vertices, we need to
+       list both the edges and the vertices of the path separately.)
+       (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by Mario
+       Carneiro, 3-May-2015.)  (Revised by AV, 18-Feb-2021.)  (Revised by AV,
+       30-Oct-2021.) $)
+    iseupthf1o $p |- ( F ( EulerPaths ` G ) P <-> ( F ( Walks ` G ) P
+                            /\ F : ( 0 ..^ ( # ` F ) ) -1-1-onto-> dom I ) ) $=
+      ( ceupth cfv wbr ctrls cc0 chash cfzo co cdm wfo cwlks ccnv anbi2i 3bitri
+      wa wfun wf1o iseupth istrl anbi1i anass ancom dff1o3 bicomi ) BACFGHBACIG
+      HZJBKGLMZDNZBOZTZBACPGHZUMBQUAZTZTZUOUKULBUBZTABCDEUCUNUOUPTZUMTUOUPUMTZT
+      URUJUTUMABCUDUEUOUPUMUFVAUQUOUPUMUGRSUQUSUOUSUQUKULBUHUIRS $.
   $}
 
 
