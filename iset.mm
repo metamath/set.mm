@@ -200425,6 +200425,14 @@ $)
       wa wfun wf1o iseupth istrl anbi1i anass ancom dff1o3 bicomi ) BACFGHBACIG
       HZJBKGLMZDNZBOZTZBACPGHZUMBQUAZTZTZUOUKULBUBZTABCDEUCUNUOUPTZUMTUOUPUMTZT
       URUJUTUMABCUDUEUOUPUMUFVAUQUOUPUMUGRSUQUSUOUSUQUKULBUHUIRS $.
+
+    $( Properties of an Eulerian path.  (Contributed by Mario Carneiro,
+       12-Mar-2015.)  (Revised by AV, 18-Feb-2021.)  (Proof shortened by AV,
+       30-Oct-2021.) $)
+    eupthi $p |- ( F ( EulerPaths ` G ) P -> ( F ( Walks ` G ) P
+                            /\ F : ( 0 ..^ ( # ` F ) ) -1-1-onto-> dom I ) ) $=
+      ( ceupth cfv wbr cwlks cc0 chash cfzo co cdm wf1o wa iseupthf1o biimpi )
+      BACFGHBACIGHJBKGLMDNBOPABCDEQR $.
   $}
 
 
