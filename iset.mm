@@ -200493,6 +200493,30 @@ $)
     ( ceupth cfv wbr cwlks cc0 chash cfz co cvtx wf eupthiswlk eqid wlkp syl )
     BACDEFBACGEFHBIEJKCLEZAMABCNABCRROPQ $.
 
+  ${
+    eupth0.v $e |- V = ( Vtx ` G ) $.
+    eupth0.i $e |- I = ( iEdg ` G ) $.
+    eupthres.d $e |- ( ph -> F ( EulerPaths ` G ) P ) $.
+    eupthres.n $e |- ( ph -> N e. ( 0 ..^ ( # ` F ) ) ) $.
+    eupthres.e $e |- ( ph -> ( iEdg ` S ) = ( I |` ( F " ( 0 ..^ N ) ) ) ) $.
+    eupthres.h $e |- H = ( F prefix N ) $.
+    eupthres.q $e |- Q = ( P |` ( 0 ... N ) ) $.
+    eupthres.s $e |- ( Vtx ` S ) = V $.
+    $( The restriction ` <. H , Q >. ` of an Eulerian path ` <. F , P >. ` to
+       an initial segment of the path (of length ` N ` ) forms an Eulerian path
+       on the subgraph ` S ` consisting of the edges in the initial segment.
+       (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by Mario
+       Carneiro, 3-May-2015.)  (Revised by AV, 6-Mar-2021.)  Hypothesis revised
+       using the prefix operation.  (Revised by AV, 30-Nov-2022.) $)
+    eupthres $p |- ( ph -> H ( EulerPaths ` S ) Q ) $=
+      ( cfv wbr ceupth cwlks cc0 chash cfzo cima cres cdm wf1o ctrls eupthistrl
+      co trliswlk 3syl cvtx wceq a1i wlkres syl trlreslem ciedg eqid iseupthf1o
+      wa dmeqd f1oeq3d anbi2d bitrid mpbir2and ) AGCDUASTZGCDUBSTZUCGUDSUEULZHE
+      UCIUEULUFUGZUHZGUIZABCDEFGHIJKLAEBFUASTZEBFUJSTZEBFUBSTMBEFUKZBEFUMUNNDUO
+      SJUPARUQOPQURABEFGHIJKLAVPVQMVRUSNPUTVJVKVLDVASZUHZGUIZVDAVKVOVDCGDVSVSVB
+      VCAWAVOVKAVTVNVLGAVSVMOVEVFVGVHVI $.
+  $}
+
 
 $(
 ###############################################################################
