@@ -200433,6 +200433,14 @@ $)
                             /\ F : ( 0 ..^ ( # ` F ) ) -1-1-onto-> dom I ) ) $=
       ( ceupth cfv wbr cwlks cc0 chash cfzo co cdm wf1o wa iseupthf1o biimpi )
       BACFGHBACIGHJBKGLMDNBOPABCDEQR $.
+
+    $( The ` F ` function in an Eulerian path is a bijection from a half-open
+       range of nonnegative integers to the set of edges.  (Contributed by
+       Mario Carneiro, 12-Mar-2015.)  (Revised by AV, 18-Feb-2021.) $)
+    eupthf1o $p |- ( F ( EulerPaths ` G ) P
+                     -> F : ( 0 ..^ ( # ` F ) ) -1-1-onto-> dom I ) $=
+      ( ceupth cfv wbr cwlks cc0 chash cfzo co cdm wf1o eupthi simprd ) BACFGHB
+      ACIGHJBKGLMDNBOABCDEPQ $.
   $}
 
 
