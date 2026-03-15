@@ -200466,6 +200466,14 @@ $)
       EVMVFVKEAUNVKEPAQUOUPVKEDBUQURUSUTVA $.
   $}
 
+  $( An Eulerian path has length ` # ( F ) ` , which is an integer.
+     (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by AV,
+     18-Feb-2021.) $)
+  eupthcl $p |- ( F ( EulerPaths ` G ) P -> ( # ` F ) e. NN0 ) $=
+    ( ceupth cfv wbr cwlks cc0 chash cfzo co ciedg cdm wf1o wa wcel eqid eupthi
+    cn0 wlkcl adantr syl ) BACDEFBACGEFZHBIEZJKCLEZMBNZOUDSPZABCUEUEQRUCUGUFABC
+    TUAUB $.
+
 
 $(
 ###############################################################################
