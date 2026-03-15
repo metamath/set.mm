@@ -200480,6 +200480,11 @@ $)
     ( ceupth cfv wbr ctrls cc0 chash cfzo co ciedg cdm wfo eqid iseupth simplbi
     ) BACDEFBACGEFHBIEJKCLEZMBNABCRROPQ $.
 
+  $( An Eulerian path is a walk.  (Contributed by AV, 6-Apr-2021.) $)
+  eupthiswlk $p |- ( F ( EulerPaths ` G ) P -> F ( Walks ` G ) P ) $=
+    ( ceupth cfv wbr ctrls cwlks eupthistrl trliswlk syl ) BACDEFBACGEFBACHEFAB
+    CIABCJK $.
+
 
 $(
 ###############################################################################
