@@ -200485,6 +200485,14 @@ $)
     ( ceupth cfv wbr ctrls cwlks eupthistrl trliswlk syl ) BACDEFBACGEFBACHEFAB
     CIABCJK $.
 
+  $( The ` P ` function in an Eulerian path is a function from a finite
+     sequence of nonnegative integers to the vertices.  (Contributed by Mario
+     Carneiro, 12-Mar-2015.)  (Revised by AV, 18-Feb-2021.) $)
+  eupthpf $p |- ( F ( EulerPaths ` G ) P
+                  -> P : ( 0 ... ( # ` F ) ) --> ( Vtx ` G ) ) $=
+    ( ceupth cfv wbr cwlks cc0 chash cfz co cvtx wf eupthiswlk eqid wlkp syl )
+    BACDEFBACGEFHBIEJKCLEZAMABCNABCRROPQ $.
+
 
 $(
 ###############################################################################
