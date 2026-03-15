@@ -200474,6 +200474,12 @@ $)
     cn0 wlkcl adantr syl ) BACDEFBACGEFZHBIEZJKCLEZMBNZOUDSPZABCUEUEQRUCUGUFABC
     TUAUB $.
 
+  $( An Eulerian path is a trail.  (Contributed by Alexander van der Vekens,
+     24-Nov-2017.)  (Revised by AV, 18-Feb-2021.) $)
+  eupthistrl $p |- ( F ( EulerPaths ` G ) P -> F ( Trails ` G ) P ) $=
+    ( ceupth cfv wbr ctrls cc0 chash cfzo co ciedg cdm wfo eqid iseupth simplbi
+    ) BACDEFBACGEFHBIEJKCLEZMBNABCRROPQ $.
+
 
 $(
 ###############################################################################
