@@ -198183,8 +198183,8 @@ $)
     1hevtxdg0.v $e |- ( ph -> ( Vtx ` G ) = V ) $.
     1hevtxdg0.a $e |- ( ph -> A e. X ) $.
     1hevtxdg0.d $e |- ( ph -> D e. V ) $.
+    1hextxdg0fi.fi $e |- ( ph -> V e. Fin ) $.
     ${
-      1hextxdg0fi.fi $e |- ( ph -> V e. Fin ) $.
       1hextxdg0fi.p $e |- ( ph -> G e. UPGraph ) $.
       1hevtxdg0.e $e |- ( ph -> E e. Y ) $.
       1hevtxdg0.n $e |- ( ph -> D e/ E ) $.
@@ -198202,6 +198202,24 @@ $)
         RBVSVDUSUTVAVBVEAWBWJUEZWEAVSWJIVFAWMWOWESOBDHVGVBUQZVHWAQWBVIULAVQCQEV
         SEVJRZWQVKVSVKVQVKAWBWEVNWPAWLWEVNTKBGVLVBVMAWQFVNJMVMACFWQLJVONVPVE $.
     $}
+
+    $d E x $.
+    1hevtxdg1en.g $e |- ( ph -> G e. UMGraph ) $.
+    1hevtxdg1.e $e |- ( ph -> E e. ~P V ) $.
+    1hevtxdg1.n $e |- ( ph -> D e. E ) $.
+    1hevtxdg1en.l $e |- ( ph -> E ~~ 2o ) $.
+    $( The vertex degree of vertex ` D ` in a multigraph ` G ` with only one
+       edge ` E ` is 1 if ` D ` is incident with the edge ` E ` .  (Contributed
+       by AV, 2-Mar-2021.)  (Proof shortened by AV, 17-Apr-2021.) $)
+    1hevtxdg1en $p |- ( ph -> ( ( VtxDeg ` G ) ` D ) = 1 ) $=
+      ( vx cfv wcel chash cvtxdg cv ciedg cdm crab csn c1 cvtx eleqtrrd cfn cop
+      eqid dmeqd cpw wceq dmsnopg syl eqtrd snfig eqeltrd vtxdumgrfival rabeqdv
+      fveq2d c0 fveq2 eleq2d rabsnif fveq1d fvsng syl2anc iftrued eqtrid 3eqtrd
+      cif hashsng ) ACEUARZRCQUBZEUCRZRZSZQVRUDZUEZTRVTQBUFZUEZTRZUGAQWAVPCEVRE
+      UHRZWFULVRULWAULVPULMACFWFKIUIAWAWCUJAWABDUKUFZUDZWCAVRWGHUMADFUNZSZWHWCU
+      ONBDWIUPUQURZABGSZWCUJSJBGUSUQUTAWFFUJILUTVAAWBWDTAVTQWAWCWKVBVCAWEWCTRZU
+      GAWDWCTAWDCBVRRZSZWCVDVNWCVTWOQBVQBUOVSWNCVQBVRVEVFVGAWOWCVDACDWNOAWNBWGR
+      ZDABVRWGHVHAWLWJWPDUOJNBDGWIVIVJURUIVKVLVCAWLWMUGUOJBGVOUQURVM $.
   $}
 
 
