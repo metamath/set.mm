@@ -9494,8 +9494,15 @@ or not.</TD>
   <TD>Presumably not provable</TD>
 </TR>
 
+<tr>
+  <td>hash1snb</td>
+  <td>~ en1</td>
+  <td>can be connected to ` # ` using ~ en1hash
+  or ~ fihashen1</td>
+</tr>
+
 <TR>
-  <TD>hash1snb , euhash1 , hash1n0 , hashgt12el , hashgt12el2</TD>
+  <TD>euhash1 , hash1n0 , hashgt12el , hashgt12el2</TD>
   <TD><I>none</I></TD>
   <TD>Conjectured to be provable in the finite set case</TD>
 </TR>
@@ -16651,12 +16658,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>edgval</td>
-  <td>~ edgvalg , ~ edgopval , ~ edgstruct</td>
-  <td>add conditions on ` G `</td>
-</tr>
-
-<tr>
   <td>iedgedg</td>
   <td>~ iedgedgg</td>
   <td>adds set existence condition on ` G `</td>
@@ -17331,6 +17332,31 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>1loopgrnb0</td>
+  <td><i>none</i></td>
+  <td>may be feasible if we have NeighbVtx</td>
+</tr>
+
+<tr>
+  <td>1loopgrvd2</td>
+  <td>~ 1loopgrvd2fi</td>
+  <td>requires the set of vertexes to be finite</td>
+</tr>
+
+<tr>
+  <td>1loopgrvd0</td>
+  <td>~ 1loopgrvd0fi</td>
+  <td>requires the set of vertexes to be finite</td>
+</tr>
+
+<tr>
+  <td>1hevtxdg0</td>
+  <td>~ 1hevtxdg0fi</td>
+  <td>requires the graph to be a pseudograph with
+  a finite set of vertexes</td>
+</tr>
+
+<tr>
   <td>wlkpwrd</td>
   <td>~ wlkpwrdg</td>
 </tr>
@@ -17726,7 +17752,8 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>we don't have a complete list of what this proof depends on,
   but here's a partial list of (direct or indirect) dependencies of the
-  set.mm proof: RegUSGraph , WWalksN , clwwisshclwws ,
+  set.mm proof: RegUSGraph , fusgrn0degnn0 ,
+  WWalksN , clwwisshclwws ,
   clwwisshclwwsn ,
   clwwlknfi , clwwlkel , wwlksext2clwwlk , wwlksubclwwlk ,
   clwwnisshclwwsn , clwwlknscsh , cyclShift , fusgrhashclwwlkn ,

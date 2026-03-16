@@ -32911,6 +32911,37 @@ $)
   $}
 
   ${
+    $d x y A $.  $d y ph $.
+    $( A restricted class abstraction restricted to a singleton is either the
+       empty set or the singleton itself.  (Contributed by AV, 21-Jul-2019.) $)
+    rabsnifsb $p |- { x e. { A } | ph }
+                    = if ( [. A / x ]. ph , { A } , (/) ) $=
+      ( vy cv csn wcel wa cab wsbc c0 wn wo wi syl imdistani nfan eleq1w anbi1d
+      nfv crab cif wceq elsni sbceq1a biimpd orcd biimprd pm2.21i adantr impbii
+      noel jaoi abbii nfsbc1v nfn weq orbi12d cbvabw eqtri df-rab df-if 3eqtr4i
+      nfor ) BEZCFZGZAHZBIZDEZVFGZABCJZHZVJKGZVLLZHZMZDIZABVFUAVLVFKUBVIVGVLHZV
+      EKGZVOHZMZBIVRVHWBBVHWBVHVSWAVGAVLVGVECUCZAVLNVECUDZWCAVLABCUEZUFOPUGVSVH
+      WAVGVLAVGWCVLANWDWCAVLWEUHOPVTVHVOVTVHVEULUIUJUMUKUNWBVQBDWBDTVMVPBVKVLBV
+      KBTABCUOZQVNVOBVNBTVLBWFUPQVDBDUQZVSVMWAVPWGVGVKVLBDVFRSWGVTVNVOBDKRSURUS
+      UTABVFVAVLDVFKVBVC $.
+  $}
+
+  ${
+    $d A x y $.  $d ph y $.  $d ps x y $.
+    rabsnif.f $e |- ( x = A -> ( ph <-> ps ) ) $.
+    $( A restricted class abstraction restricted to a singleton is either the
+       empty set or the singleton itself.  (Contributed by AV, 12-Apr-2019.)
+       (Proof shortened by AV, 21-Jul-2019.) $)
+    rabsnif $p |- { x e. { A } | ph } = if ( ps , { A } , (/) ) $=
+      ( vy csn crab c0 cif cv wcel cvv wceq wex elrabi 19.8ad sylibr wa wn noel
+      elsni syl intnan a1i wo elif biimpi ecased simpl2im wsbc rabsnifsb sbcieg
+      isset ifbid eqtrid eleq2d pm5.21nii eqriv ) FACDGZHZBUTIJZFKZVALZDMLZVCVB
+      LZVDVCDNZFOZVEVDVGFVDVCUTLZVGACVCUTPVCDUBZUCQFDUNZRVFVHVEVFVGFVFBVIVGVFBV
+      ISZBTZVCILZSZVOTVFVNVMVCUAUDUEVFVLVOUFBVCUTIUGUHUIVJUJQVKRVEVAVBVCVEVAACD
+      UKZUTIJVBACDULVEVPBUTIABCDMEUMUOUPUQURUS $.
+  $}
+
+  ${
     $d x A $.
     rabrsndc.1 $e |- A e. _V $.
     rabrsndc.2 $e |- DECID ph $.
@@ -116583,6 +116614,12 @@ $)
     ZAUIIJZAKIJZUGFUJUHFUJRUGUJFGLCZUJFRMGLNOPQSUGUIBCZUKULTUNUOMGLUAOAUIUBUCUL
     UMTUGUIKAIKUIUDPUEQUF $.
 
+  $( A set equinumerous to the ordinal one has size 1 .  (Contributed by Jim
+     Kingdon, 11-Mar-2026.) $)
+  en1hash $p |- ( A ~~ 1o -> ( # ` A ) = 1 ) $=
+    ( c1o cen wbr chash cfv c1 wceq cfn wcel wb com 1onn nnfi ax-mp enfi mpbiri
+    fihashen1 syl ibir ) ABCDZAEFGHZUAAIJZUBUAKUAUCBIJZBLJUDMBNOABPQARST $.
+
   $( A function on a finite set is equinumerous to its domain.  (Contributed by
      Mario Carneiro, 12-Mar-2015.)  (Intuitionized by Jim Kingdon,
      24-Feb-2022.) $)
@@ -195152,6 +195189,18 @@ $)
   $}
 
   ${
+    $d G g $.  $d G u w x $.
+    $( The edges of a graph.  (Contributed by AV, 1-Jan-2020.)  (Revised by AV,
+       13-Oct-2020.)  (Revised by AV, 8-Dec-2021.) $)
+    edgval $p |- ( Edg ` G ) = ran ( iEdg ` G ) $=
+      ( vx vg vw vu cedg cfv ciedg crn cv wcel cvv df-edg mptrcl cop wex elrn2g
+      ibi elex2 exlimiv cxp c2nd cedgf cif df-iedg 3syl edgvalg pm5.21nii eqriv
+      eleq2d ) BAFGZAHGZIZBJZUKKALKZUNUMKZCLCJZHGIFUNACMNUPDJUNOZULKZDPZEJZULKZ
+      EPZUOUPUTDUNULUMQRUSVCDEURULSTVBUOECLUQLLUAKUQUBGUQUCGUDHVAACUENTUFUOUKUM
+      UNALUGUJUHUI $.
+  $}
+
+  ${
     iedgedg.e $e |- E = ( iEdg ` G ) $.
     $( An indexed edge is an edge.  (Contributed by AV, 19-Dec-2021.) $)
     iedgedgg $p |- ( ( G e. V /\ Fun E /\ I e. dom E )
@@ -198062,6 +198111,96 @@ $)
         cumgr syl cuspgr usgruspgr vtxduspgrfvedgfilem eqtrd ) ACBPCOQFUAPZPROU
         MUBZSTPCDQRDESTPAOUNBCFUMGHUMUCUNUCNAFUDRZFUGRMFUEUHLJKUFACDOEFGHIJKLAU
         OFUIRMFUJUHUKUL $.
+    $}
+  $}
+
+  ${
+    1loopgruspgr.v $e |- ( ph -> ( Vtx ` G ) = V ) $.
+    1loopgruspgr.a $e |- ( ph -> A e. X ) $.
+    1loopgruspgr.n $e |- ( ph -> N e. V ) $.
+    1loopgruspgr.i $e |- ( ph -> ( iEdg ` G ) = { <. A , { N } >. } ) $.
+    $( A graph with one edge which is a loop is a simple pseudograph.
+       (Contributed by AV, 21-Feb-2021.) $)
+    1loopgruspgr $p |- ( ph -> G e. USPGraph ) $=
+      ( cvtx cfv eqid eleqtrrd ciedg csn cop cpr wceq a1i dfsn2 sneqd eqtrd wdc
+      opeq2d wn wo orci df-dc mpbir uspgr1edc ) ABDDCCKLZFULMHADEULIGNZUMACOLBD
+      PZQZPBDDRZQZPJAUOUQAUNUPBUNUPSADUATUEUBUCDDSZUDZAUSURURUFZUGURUTDMUHURUIU
+      JTUK $.
+
+    $( The set of edges in a graph (simple pseudograph) with one edge which is
+       a loop is a singleton of a singleton.  (Contributed by AV, 17-Dec-2020.)
+       (Revised by AV, 21-Feb-2021.) $)
+    1loopgredg $p |- ( ph -> ( Edg ` G ) = { { N } } ) $=
+      ( cedg cfv ciedg crn csn cop wceq edgval a1i rneqd wcel rnsnopg 3eqtrd
+      syl ) ACKLZCMLZNZBDOZPOZNZUHOZUEUGQACRSAUFUIJTABFUAUJUKQHBUHFUBUDUC $.
+
+    $d A a e $.  $d G a e $.  $d N a e $.  $d V a e $.  $d X a e $.
+    $d ph a e $.
+    1loopgrvd2fi.fi $e |- ( ph -> V e. Fin ) $.
+    $( The vertex degree of a one-edge graph, case 4: an edge from a vertex to
+       itself contributes two to the vertex's degree.  I. e. in a graph (simple
+       pseudograph) with one edge which is a loop, the vertex connected with
+       itself by the loop has degree 2.  (Contributed by Mario Carneiro,
+       12-Mar-2015.)  (Revised by Alexander van der Vekens, 22-Dec-2017.)
+       (Revised by AV, 21-Feb-2021.) $)
+    1loopgrvd2fi $p |- ( ph -> ( ( VtxDeg ` G ) ` N ) = 2 ) $=
+      ( ve va cfv wcel csn wceq c1 eqid syl cv cedg crab chash caddc co c2 cvtx
+      cvtxdg ciedg cdm cfn cop dmeqd snexg dmsnopg eqtrd snfig eqeltrd eleqtrrd
+      cvv 1loopgruspgr vtxduspgrfvedgfi c1o cen wbr wex c0 eqeq2d spcegv mpisyl
+      sneq snidg iftrued eqeq1d exbidv mpbird 1loopgredg rabeqdv rabsnif eqtrdi
+      cif eleq2 en1 sylibr en1hash iftruei eqeq1i exbii eqeq1 oveq12d 1p1e2 a1i
+      3eqtrd ) ADCUINZNDLUAZOZLCUBNZUCZUDNZWPDPZQZLWRUCZUDNZUEUFRRUEUFZUGAWODLW
+      RCCUHNZXFSWRSACUJNZUKZBPZULAXHBXAUMPZUKZXIAXGXJJUNAXAVAOZXKXIQADEOZXLIDEU
+      OTZBXAVAUPTUQABFOXIULOHBFURTUSAXFEULGKUSADEXFIGUTABCDEFGHIJVBWOSVCAWTRXDR
+      UEAWSVDVEVFZWTRQAWSMUAZPZQZMVGZXOAXSDXAOZXAPZVHWBZXQQZMVGZAYDYAXQQZMVGZAX
+      LYAYAQZYFXNYASYEYGMXAVAXPXAQXQYAYAXPXAVLVIVJVKZAYCYEMAYBYAXQAXTYAVHAXMXTI
+      DEVMTVNVOVPVQAXRYCMAWSYBXQAWSWQLYAUCYBAWQLWRYAABCDEFGHIJVRZVSWQXTLXAWPXAD
+      WCVTWAVOVPVQMWSWDWEWSWFTAXCVDVEVFZXDRQAXCXQQZMVGZYJAYLXAXAQZYAVHWBZXQQZMV
+      GZAYFYPYHYOYEMYNYAXQYMYAVHXASWGWHWIWEAYKYOMAXCYNXQAXCXBLYAUCYNAXBLWRYAYIV
+      SXBYMLXAWPXAXAWJVTWAVOVPVQMXCWDWEXCWFTWKXEUGQAWLWMWN $.
+
+    $d A i $.  $d G i $.  $d K i $.  $d N i $.  $d ph i $.
+    1loopgrvd0.k $e |- ( ph -> K e. ( V \ { N } ) ) $.
+    $( The vertex degree of a one-edge graph, case 1 (for a loop): a loop at a
+       vertex other than the given vertex contributes nothing to the vertex
+       degree.  (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by AV,
+       21-Feb-2021.) $)
+    1loopgrvd0fi $p |- ( ph -> ( ( VtxDeg ` G ) ` K ) = 0 ) $=
+      ( vi cfv wceq wcel csn cvv syl cvtxdg cc0 cv ciedg cdm wrex eldifbd snexg
+      wn fvsng syl2anc eleq2d mtbird dmeqd dmsnopg eqtrd fveq1d rexeqbidv fveq2
+      cop wb rexsng bitrd cvtx eqid snfig eqeltrd eldifad eleqtrrd cuspgr cupgr
+      cfn 1loopgruspgr uspgrupgr vtxd0nedgbfi mpbird ) ADCUAOZOUBPDNUCZCUDOZOZQ
+      ZNVSUEZUFZUIAWCDBBERZUTRZOZQZAWGDWDQADFWDMUGAWFWDDABGQZWDSQZWFWDPIAEFQWIJ
+      EFUHTZBWDGSUJUKULUMAWCDVRWEOZQZNBRZUFZWGAWAWLNWBWMAWBWEUEZWMAVSWEKUNAWIWO
+      WMPWJBWDSUOTUPZAVTWKDAVRVSWEKUQULURAWHWNWGVAIWLWGNBGVRBPWKWFDVRBWEUSULVBT
+      VCUMAVQDNCVSCVDOZWQVEVSVEVQVEAWBWMVLWPAWHWMVLQIBGVFTVGAWQFVLHLVGADFWQADFW
+      DMVHHVIACVJQCVKQABCEFGHIJKVMCVNTVOVP $.
+  $}
+
+  ${
+    $d A x $.  $d D x $.  $d G x $.
+    1hevtxdg0.i $e |- ( ph -> ( iEdg ` G ) = { <. A , E >. } ) $.
+    1hevtxdg0.v $e |- ( ph -> ( Vtx ` G ) = V ) $.
+    1hevtxdg0.a $e |- ( ph -> A e. X ) $.
+    1hevtxdg0.d $e |- ( ph -> D e. V ) $.
+    ${
+      1hextxdg0fi.fi $e |- ( ph -> V e. Fin ) $.
+      1hextxdg0fi.p $e |- ( ph -> G e. UPGraph ) $.
+      1hevtxdg0.e $e |- ( ph -> E e. Y ) $.
+      1hevtxdg0.n $e |- ( ph -> D e/ E ) $.
+      $( The vertex degree of vertex ` D ` in a finite pseudograph ` G ` with
+         only one edge ` E ` is 0 if ` D ` is not incident with the edge
+         ` E ` .  (Contributed by AV, 2-Mar-2021.)  (Revised by Jim Kingdon,
+         13-Mar-2026.) $)
+      1hevtxdg0fi $p |- ( ph -> ( ( VtxDeg ` G ) ` D ) = 0 ) $=
+        ( vx cfv wceq wcel cvtxdg cc0 cv ciedg cdm wrex wn wral csn wnel df-nel
+        sylib cop fveq1d fvsng syl2anc eqtrd neleqtrrd eleq2d notbid ralsng syl
+        wb fveq2 mpbird dmeqd dmsnopg raleqtrrdv ralnex cvtx eqid snfig eqeltrd
+        cfn eleqtrrd vtxd0nedgbfi ) ACEUARZRUBSCQUCZEUDRZRZTZQVSUEZUFUGZAWAUGZQ
+        WBUHWCAWDQBUIZWBAWDQWEUHZCBVSRZTZUGZAWGDCACDUJCDTUGPCDUKULAWGBBDUMUIZRZ
+        DABVSWJIUNABGTZDHTZWKDSKOBDGHUOUPUQURAWLWFWIVCKWDWIQBGVRBSZWAWHWNVTWGCV
+        RBVSVDUSUTVAVBVEAWBWJUEZWEAVSWJIVFAWMWOWESOBDHVGVBUQZVHWAQWBVIULAVQCQEV
+        SEVJRZWQVKVSVKVQVKAWBWEVNWPAWLWEVNTKBGVLVBVMAWQFVNJMVMACFWQLJVONVPVE $.
     $}
   $}
 
