@@ -23990,6 +23990,25 @@ $)
   $}
 
   ${
+    $d x ph $.
+    rabbidva2.1 $e |- ( ph -> ( ( x e. A /\ ps ) <-> ( x e. B /\ ch ) ) ) $.
+    $( Equivalent wff's yield equal restricted class abstractions.
+       (Contributed by Thierry Arnoux, 4-Feb-2017.) $)
+    rabbidva2 $p |- ( ph -> { x e. A | ps } = { x e. B | ch } ) $=
+      ( cv wcel wa cab crab abbidv df-rab 3eqtr4g ) ADHZEIBJZDKPFICJZDKBDELCDFL
+      AQRDGMBDENCDFNO $.
+  $}
+
+  ${
+    rabbia2.1 $e |- ( ( x e. A /\ ps ) <-> ( x e. B /\ ch ) ) $.
+    $( Equivalent wff's yield equal restricted class abstractions.
+       (Contributed by Glauco Siliprandi, 26-Jun-2021.) $)
+    rabbia2 $p |- { x e. A | ps } = { x e. B | ch } $=
+      ( crab wceq wtru cv wcel wa wb a1i rabbidva2 mptru ) ACDGBCEGHIABCDECJZDK
+      ALQEKBLMIFNOP $.
+  $}
+
+  ${
     rabbiia.1 $e |- ( x e. A -> ( ph <-> ps ) ) $.
     $( Equivalent wff's yield equal restricted class abstractions (inference
        form).  (Contributed by NM, 22-May-1999.) $)
@@ -24005,16 +24024,6 @@ $)
        1-Nov-2019.) $)
     rabbii $p |- { x e. A | ph } = { x e. A | ps } $=
       ( wb cv wcel a1i rabbiia ) ABCDABFCGDHEIJ $.
-  $}
-
-  ${
-    $d x ph $.
-    rabbidva2.1 $e |- ( ph -> ( ( x e. A /\ ps ) <-> ( x e. B /\ ch ) ) ) $.
-    $( Equivalent wff's yield equal restricted class abstractions.
-       (Contributed by Thierry Arnoux, 4-Feb-2017.) $)
-    rabbidva2 $p |- ( ph -> { x e. A | ps } = { x e. B | ch } ) $=
-      ( cv wcel wa cab crab abbidv df-rab 3eqtr4g ) ADHZEIBJZDKPFICJZDKBDELCDFL
-      AQRDGMBDENCDFNO $.
   $}
 
   ${
@@ -37347,6 +37356,12 @@ $)
       ( wss wcel cvv ssexg syl2anc ) ABCGCDHBIHFEBCDJK $.
   $}
 
+  $( The superclass of a proper class is a proper class.  (Contributed by AV,
+     27-Dec-2020.) $)
+  prcssprc $p |- ( ( A C_ B /\ A e/ _V ) -> B e/ _V ) $=
+    ( wss cvv wnel wcel ssexg ex nelcon3d imp ) ABCZADEBDEKBDADKBDFADFABDGHIJ
+    $.
+
   $( Existence of a difference.  (Contributed by NM, 26-May-1998.) $)
   difexg $p |- ( A e. V -> ( A \ B ) e. _V ) $=
     ( cdif wss wcel cvv difss ssexg mpan ) ABDZAEACFKGFABHKACIJ $.
@@ -42969,6 +42984,21 @@ $)
     ( cop cxp wcel opelxp1 syl ) ABGZCGDEHZFHILMIADILCMFJABDEJK $.
 
   ${
+    $d A x z $.  $d A y $.  $d B x $.  $d B y z $.  $d ph x $.  $d ph y z $.
+    $d ps z $.
+    opabssxpd.x $e |- ( ( ph /\ ps ) -> x e. A ) $.
+    opabssxpd.y $e |- ( ( ph /\ ps ) -> y e. B ) $.
+    $( An ordered-pair class abstraction is a subset of a Cartesian product.
+       Formerly part of proof for ~ opabex2 .  (Contributed by AV,
+       26-Nov-2021.) $)
+    opabssxpd $p |- ( ph -> { <. x , y >. | ps } C_ ( A X. B ) ) $=
+      ( vz copab cv cop wceq wa wex cab cxp df-opab wcel simprl opelxpd adantrl
+      eqeltrd ex exlimdvv abssdv eqsstrid ) ABCDJIKZCKZDKZLZMZBNZDOCOZIPEFQZBCD
+      IRAUNIUOAUMUHUOSZCDAUMUPAUMNUHUKUOAULBTABUKUOSULABNUIUJEFGHUAUBUCUDUEUFUG
+      $.
+  $}
+
+  ${
     $d x y z A $.  $d x y z B $.  $d y z ph $.  $d x ps $.
     rabxp.1 $e |- ( x = <. y , z >. -> ( ph <-> ps ) ) $.
     $( Membership in a class builder restricted to a cross product.
@@ -43764,6 +43794,15 @@ $)
   xpexg $p |- ( ( A e. V /\ B e. W ) -> ( A X. B ) e. _V ) $=
     ( wcel wa cxp cun cpw wss cvv xpsspw unexg pwexg 3syl ssexg sylancr ) ACEBD
     EFZABGZABHZIZIZJUBKEZSKEABLRTKEUAKEUCABCDMTKNUAKNOSUBKPQ $.
+
+  ${
+    xpexd.1 $e |- ( ph -> A e. V ) $.
+    xpexd.2 $e |- ( ph -> B e. W ) $.
+    $( The Cartesian product of two sets is a set.  (Contributed by Glauco
+       Siliprandi, 26-Jun-2021.) $)
+    xpexd $p |- ( ph -> ( A X. B ) e. _V ) $=
+      ( wcel cxp cvv xpexg syl2anc ) ABDHCEHBCIJHFGBCDEKL $.
+  $}
 
   ${
     xpex.1 $e |- A e. _V $.
@@ -51012,7 +51051,7 @@ $)
     $d B w $.  $d F w $.
     $( If a function value is inhabited, the function value is a set.
        (Contributed by Jim Kingdon, 30-Jan-2026.) $)
-    elfvex $p |- ( A e. ( F ` B ) -> ( F ` B ) e. _V ) $=
+    elfvfvex $p |- ( A e. ( F ` B ) -> ( F ` B ) e. _V ) $=
       ( vw cfv wcel wbr cio cvv df-fv weu eliotaeu eleq2s euiotaex syl eqeltrid
       cv ) ABCEZFZRBDQCGZDHZIDBCJZSTDKZUAIFUCAUARTDALUBMTDNOP $.
   $}
@@ -51022,9 +51061,9 @@ $)
     $( If a function value is inhabited, the argument is related to the
        function value.  (Contributed by Jim Kingdon, 31-Jan-2026.) $)
     fvmbr $p |- ( A e. ( F ` X ) -> X F ( F ` X ) ) $=
-      ( vw cfv wcel wbr cv cio wceq df-fv eqcomi cvv weu elfvex eliotaeu eleq2s
-      wb breq2 iota2 syl2anc mpbiri ) ACBEZFZCUCBGZCDHZBGZDIZUCJZUCUHDCBKZLUDUC
-      MFUGDNZUEUIRACBOUKAUHUCUGDAPUJQUGUEDUCMUFUCCBSTUAUB $.
+      ( vw cfv wcel wbr cv cio df-fv eqcomi cvv weu wb elfvfvex eliotaeu eleq2s
+      wceq breq2 iota2 syl2anc mpbiri ) ACBEZFZCUCBGZCDHZBGZDIZUCRZUCUHDCBJZKUD
+      UCLFUGDMZUEUINACBOUKAUHUCUGDAPUJQUGUEDUCLUFUCCBSTUAUB $.
   $}
 
   ${
@@ -59247,6 +59286,31 @@ $)
   $}
 
   ${
+    $d x y A $.  $d x y B $.  $d x y ph $.
+    opabex2.1 $e |- ( ph -> A e. V ) $.
+    opabex2.2 $e |- ( ph -> B e. W ) $.
+    opabex2.3 $e |- ( ( ph /\ ps ) -> x e. A ) $.
+    opabex2.4 $e |- ( ( ph /\ ps ) -> y e. B ) $.
+    $( Condition for an operation to be a set.  (Contributed by Thierry Arnoux,
+       25-Jun-2019.) $)
+    opabex2 $p |- ( ph -> { <. x , y >. | ps } e. _V ) $=
+      ( copab cxp cvv xpexd opabssxpd ssexd ) ABCDMEFNOAEFGHIJPABCDEFKLQR $.
+  $}
+
+  ${
+    $d x y $.  $d ph x $.
+    $( An ordered-pair class abstraction which does not depend on the first
+       abstraction variable is a proper class.  There must be, however, at
+       least one set which satisfies the restricting wff.  (Contributed by AV,
+       27-Dec-2020.) $)
+    opabn1stprc $p |- ( E. y ph -> { <. x , y >. | ph } e/ _V ) $=
+      ( wex copab cvv wcel wn wnel cdm cv wa vex biantrur opabbii dmeqi wral id
+      wceq ralrimivw dmopab3 sylib eqtrid vprc a1i eqneltrd dmexg df-nel sylibr
+      nsyl ) ACDZABCEZFGZHULFIUKULJZFGUMUKUNFFUKUNBKFGZALZBCEZJZFULUQAUPBCUOABM
+      NOPUKUKBFQURFSUKUKBFUKRTABCFUAUBUCFFGHUKUDUEUFULFUGUJULFUHUI $.
+  $}
+
+  ${
     $d x y z u A $.  $d x y z u B $.  $d x y z u C $.
     $( Define the cross product of three classes.  Compare ~ df-xp .
        (Contributed by FL, 6-Nov-2013.)  (Proof shortened by Mario Carneiro,
@@ -59932,6 +59996,23 @@ $)
     disjsnxp $p |- Disj_ j e. A ( { j } X. B ) $=
       ( cv csn cxp wdisj wtru sndisj a1i disjxp1 mptru ) CACDEZBFGHCAMBCAMGHCAI
       JKL $.
+  $}
+
+  ${
+    $d A r x y $.  $d A z $.  $d B r x y $.  $d B w $.  $d C r $.  $d D r $.
+    $d D s $.  $d F s $.
+    elmpoex.f $e |- F = ( x e. A , y e. B |-> C ) $.
+    $( If a maps-to operation is inhabited, the first class it is defined with
+       is inhabited.  (Contributed by Jim Kingdon, 4-Mar-2026.) $)
+    elmpom $p |- ( D e. F -> E. z z e. A ) $=
+      ( vw vr vs wcel cv wex wa cfv cdm wceq cop c1st coprab df-mpo eqtri dmeqi
+      cxp cmpo dmoprabss eqsstri c2nd 2ndexg wrel wfun mpofun funrel ax-mp mpan
+      1st2nd eleq1d ibi opeq2 elabd wb 1stexg eldm2g mpbird sselid elex2 sylibr
+      cvv syl xpm simpld ) GHMZCNDMCOZJNEMJOZVNKNZDEUFZMKOZVOVPPVNGUAQZVRMVSVNH
+      RZVRVTWAANDMBNEMPVQFSZPABKUBZRVRHWCHABDEFUGWCIABKDEFUCUDUEWBABKDEUHUIVNVT
+      WAMZVTLNZTZHMZLOZVNWGVTGUJQZTZHMZLWIGHUKVNWKVNGWJHHULZVNGWJSHUMWLABDEFHIU
+      NHUOUPGHURUQUSUTWEWISWFWJHWEWIVTVAUSVBVNVTVJMWDWHVCGHVDLVTHVJVEVKVFVGKVTV
+      RVHVKCJKDEVLVIVM $.
   $}
 
 
@@ -67440,6 +67521,46 @@ $)
   $}
 
   ${
+    $d A f $.  $d B f $.  $d C f $.
+    $( If a set is dominated by one, then any two of its elements are equal.
+       (Contributed by Jim Kingdon, 23-Apr-2025.) $)
+    1dom1el $p |- ( ( A ~<_ 1o /\ B e. A /\ C e. A ) -> B = C ) $=
+      ( vf c1o cdom wbr wcel w3a cv wf1 wceq wex brdomi 3ad2ant1 ffvelcdmd el1o
+      cfv c0 sylib wa wf adantl simpl2 simpl3 eqtr4d wi simpr f1veqaeq syl12anc
+      f1f mpd exlimddv ) AEFGZBAHZCAHZIZAEDJZKZBCLZDUNUOUSDMUPAEDNOUQUSUAZBURRZ
+      CURRZLZUTVAVBSVCVAVBEHVBSLVAAEBURUSAEURUBUQAEURUKUCZUNUOUPUSUDZPVBQTVAVCE
+      HVCSLVAAECURVEUNUOUPUSUEZPVCQTUFVAUSUOUPVDUTUGUQUSUHVFVGAEBCURUIUJULUM $.
+  $}
+
+  ${
+    $d ph u v y $.  $d u v x y $.
+    $( Two ways to express "at most one".  (Contributed by Stefan O'Rear,
+       28-Oct-2014.) $)
+    modom $p |- ( E* x ph <-> { x | ph } ~<_ 1o ) $=
+      ( vu vv vy c1o cdom cvv wcel c0 cv wa weq wsb df-clab wal nfv nfcv nfs1v
+      wi wmo cab wbr 1oex 0lt1o 2a1i wceq wb anbi12i mo3 nfan nfim nfal sbequ12
+      eqidd anbi1d equequ1 imbi12d albidv spcgf elv sylbi sbequ anbi2d biimtrid
+      equequ2 syl imp 2thd ex dom2d mpi nfab1 nfbr simpl abid ad2antrl ad2antll
+      biimpri 1dom1el syl3anc alrimiv alrimi sylibr impbii ) ABUAZABUBZFGUCZWFF
+      HIWHUDWFCDWGFJJHWFCKZWGIZJFIUEUFWFWJDKZWGIZLZJJUGZCDMZUHWFWMLZWNWOWPJUOWF
+      WMWOWMABCNZABDNZLZWFWOWJWQWLWRACBOADBOUIWFWQABENZLZCEMZTZEPZWSWOTZWFAWTLZ
+      BEMZTZEPZBPZXDABEAEQUJZXJXDTCXIXDBWIHBWIRXCBEXAXBBWQWTBABCSABESUKXBBQULUM
+      BCMZXHXCEXLXFXAXGXBXLAWQWTABCUNUPBCEUQURUSUTVAVBXDXETDXCXEEWKHEWKRXEEQEDM
+      ZXAWSXBWOXMWTWRWQAEDBVCVDEDCVFURUTVAVGVEVHVIVJVKVLWHXJWFWHXIBBWGFGABVMBGR
+      BFRVNWHXHEWHXFXGWHXFLWHBKZWGIZEKZWGIZXGWHXFVOAXOWHWTXOAABVPVSVQWTXQWHAXQW
+      TAEBOVSVRWGXNXPVTWAVJWBWCXKWDWE $.
+  $}
+
+  ${
+    $d x A $.
+    $( Two ways to express "at most one".  (Contributed by Mario Carneiro,
+       24-Dec-2016.) $)
+    modom2 $p |- ( E* x x e. A <-> A ~<_ 1o ) $=
+      ( cv wcel wmo cab c1o cdom wbr modom abid2 breq1i bitri ) ACBDZAENAFZGHIB
+      GHINAJOBGHABKLM $.
+  $}
+
+  ${
     $d A x y $.
     $( A set that has at least 2 different members dominates ordinal 2.
        (Contributed by BTernaryTau, 30-Dec-2024.) $)
@@ -68659,7 +68780,7 @@ $)
   $}
 
   $( The empty set is finite.  (Contributed by FL, 14-Jul-2008.) $)
-  0fin $p |- (/) e. Fin $=
+  0fi $p |- (/) e. Fin $=
     ( c0 com wcel cfn peano1 nnfi ax-mp ) ABCADCEAFG $.
 
   ${
@@ -69002,6 +69123,22 @@ $)
   $}
 
   ${
+    $d A x y $.  $d B x y $.
+    $( Equinumerosity of finite sets is decidable.  (Contributed by Jim
+       Kingdon, 10-Feb-2026.) $)
+    fidcen $p |- ( ( A e. Fin /\ B e. Fin ) -> DECID A ~~ B ) $=
+      ( vx vy cfn wcel wa cv cen wbr wdc wrex isfi biimpi wn wo simplrl simplrr
+      com entr adantr ad2antlr weq simprl nndceq syl2anc exmiddc simpr breqtrrd
+      syl ensymd syl2an2r ex sylan wb nneneq mpbid orim12d mpd sylibr rexlimddv
+      con3d df-dc ) AEFZBEFZGZACHZIJZABIJZKZCSVDVHCSLZVEVDVKCAMNUAVFVGSFZVHGZGZ
+      BDHZIJZVJDSVEVPDSLZVDVMVEVQDBMNUBVNVOSFZVPGZGZVIVIOZPZVJVTCDUCZWCOZPZWBVT
+      WCKZWEVTVLVRWFVFVLVHVSQZVNVRVPUDVGVOUEUFWCUGUJVTWCVIWDWAVTWCVIVTVHWCVGBIJ
+      ZVIVFVLVHVSRZVTWCGZBVGWJBVOVGIVNVRVPWCRVTWCUHUIUKAVGBTULUMVTVIWCVTVIWCVTV
+      IGZVGVOIJZWCWKWHVPWLVTVGAIJVIWHVTAVGWIUKVGABTUNVNVRVPVIRVGBVOTUFVTVLVIVRW
+      LWCUOWGVNVRVPVIQVGVOUPULUQUMVBURUSVIVCUTVAVA $.
+  $}
+
+  ${
     $d A x y $.  $d B x y $.  $d C y $.  $d R x y $.
     tridc.po $e |- ( ph -> R Po A ) $.
     tridc.tri $e |- ( ph
@@ -69113,6 +69250,50 @@ $)
         -> ( E. x e. A ph <-> -. A. x e. A -. ph ) ) $=
       ( cfn wcel wdc wral wa wrex wn wb finexdc dfrex2dc syl ) CDEAFBCGHABCIZFO
       AJBCGJKABCLABCMN $.
+  $}
+
+  ${
+    $d A u v w $.  $d B x y $.  $d X u v w $.  $d X x y $.  $d ph u v w $.
+    $d v y $.
+    elssdc.b $e |- ( ph -> A. x e. B A. y e. B DECID x = y ) $.
+    elssdc.x $e |- ( ph -> X e. B ) $.
+    elssdc.ss $e |- ( ph -> A C_ B ) $.
+    elssdc.a $e |- ( ph -> A e. Fin ) $.
+    $( Membership in a finite subset of a set with decidable equality is
+       decidable.  (Contributed by Jim Kingdon, 11-Feb-2026.) $)
+    elssdc $p |- ( ph -> DECID X e. A ) $=
+      ( vv cv wcel wdc wceq eleq2 dcbid wn wo wa vw vu csn cun noel df-dc mpbir
+      c0 olci a1i cfn cdif vsnid wb eleq1 adantl mpbiri elun2 orcd sylibr elun1
+      wss syl simpr elsni con3i ad2antlr sylanbrc elun sylnibr exmiddc mpjaodan
+      ioran olcd eqeq2 wral ralbidv rspcdva ad3antrrr simplrr eldifad sseldd ex
+      eqeq1 findcard2sd ) AFUALZMZNFUHMZNZFUBLZMZNZFWJKLZUCZUDZMZNZFDMZNUAUBKDW
+      FUHOWGWHWFUHFPQWFWJOWGWKWFWJFPQWFWOOWGWPWFWOFPQWFDOWGWRWFDFPQWIAWIWHWHRZS
+      WSWHFUEUIWHUFUGUJAWJUKMZTZWJDVBZWMDWJULMZTZTZWLWQXEWLTZFWMOZWQXGRZXFXGTZF
+      WNMZWQXIXJWMWNMZKUMXGXJXKUNXFFWMWNUOUPUQXJWPWPRZSZWQXJWPXLFWNWJURUSWPUFZU
+      TVCXFXHTZWKWQWKRZWKWQXOWKXMWQWKWPXLFWJWNVAUSXNUTUPXOXPTZXMWQXQXLWPXQWKXJS
+      ZWPXQXPXJRZXRRXOXPVDXHXSXFXPXJXGFWMVEVFVGWKXJVMVHFWJWNVIVJVNXNUTWLWKXPSXE
+      XHWKVKVGVLXFXGNZXGXHSXFFCLZOZNZXTCEWMYAWMOYBXGYAWMFVOQAYCCEVPZWTXDWLABLZY
+      AOZNZCEVPYDBEFYEFOZYGYCCEYHYFYBYEFYAWDQVQGHVRVSXFDEWMADEVBWTXDWLIVSXFWMDW
+      JXAXBXCWLVTWAWBVRXGVKVCVLWCJWE $.
+
+    ${
+      $d u x $.  $d u y $.
+      $( Decidability of equality between a finite subset of a set with
+         decidable equality, and a singleton whose element is an element of the
+         larger set.  (Contributed by Jim Kingdon, 15-Feb-2026.) $)
+      eqsndc $p |- ( ph -> DECID A = { X } ) $=
+        ( vu cen wbr wceq wdc wa cv c1o wcel syl csn wn wex simpr ensn1g adantr
+        entr syl2anc en1 sylib weq wral wss ad2antrr vsnid mpbiri adantl sseldd
+        eleq2 eqeq1 dcbid eqeq2 rspc2va syl21anc cvv sneqbg elv bitrdi exlimddv
+        wb mpbird wo cfn eqeng con3dimp olcd df-dc sylibr snfig fidcen mpjaodan
+        wi exmiddc ) ADFUAZLMZDWDNZOZWEUBZAWEPZDKQZUAZNZWGKWIDRLMZWLKUCWIWEWDRL
+        MZWMAWEUDAWNWEAFESZWNHFEUETUFDWDRUGUHKDUIUJWIWLPZWGWJFNZOZWPWJESWOBCUKZ
+        OZCEULBEULZWRWPDEWJADEUMWEWLIUNWLWJDSZWIWLXBWJWKSKUODWKWJUSUPUQURAWOWEW
+        LHUNAXAWEWLGUNWTWRKCUKZOBCWJFEEBKUKWSXCBQWJCQZUTVAXDFNXCWQXDFWJVBVAVCVD
+        WPWFWQWPWFWKWDNZWQWLWFXEVJWIDWKWDUTUQXEWQVJKWJFVEVFVGVHVAVKVIAWHPZWFWFU
+        BZVLWGXFXGWFAWFWEADVMSZWFWEWBJDWDVMVNTVOVPWFVQVRAWEOZWEWHVLAXHWDVMSZXIJ
+        AWOXJHFEVSTDWDVTUHWEWCTWA $.
+    $}
   $}
 
   ${
@@ -69601,21 +69782,21 @@ $)
        (Revised by Mario Carneiro, 12-Mar-2015.) $)
     xpfi $p |- ( ( A e. Fin /\ B e. Fin ) -> ( A X. B ) e. Fin ) $=
       ( vx vy vz vw cfn wcel cxp cv wi c0 csn wceq xpeq1 eleq1d imbi2d cvv cin
-      wa cdif 0xp 0fin eqeltri a1i wral wex eqeltrdi a1i13 difeq2d xpeq1d rspcv
-      sneq adantl pm2.27 ad2antlr cen wbr c2nd cres wf1o vex snex xpexg mpan id
-      2ndconst mp1i f1oen2g syl3anc enfii mpdan cun incom disjdif xpdisj1 ax-mp
-      eqtr3i unfidisj mp3an3 xpundir fidifsnid adantlr imbitrid mpan2d 3syld ex
-      eqtr3id exlimdv wo fin0or adantr mpjaod com23 findcard imp ) AGHBGHZABIZG
-      HZWQCJZBIZGHZKWQLBIZGHZKWQDJZEJZMZUAZBIZGHZKZWQXEBIZGHZKWQWSKCDEAWTLNZXBX
-      DWQXNXAXCGWTLBOPQWTXHNZXBXJWQXOXAXIGWTXHBOPQWTXENZXBXMWQXPXAXLGWTXEBOPQWT
-      ANZXBWSWQXQXAWRGWTABOPQXDWQXCLGBUBUCUDZUEXEGHZWQXKEXEUFZXMXSWQXTXMKZXSWQT
-      ZXELNZYAFJZXEHZFUGZYBYCXTXMYCXLXCGXELBOXRUHUIYBYEYAFYBYEYAYBYETZXTWQXEYDM
-      ZUAZBIZGHZKZYKXMYEXTYLKYBXKYLEYDXEXFYDNZXJYKWQYMXIYJGYMXHYIBYMXGYHXEXFYDU
-      MUJUKPQULUNWQYLYKKXSYEWQYKUOUPYGYKYHBIZGHZXMWQYOXSYEWQYNBUQURZYOWQYNRHZWQ
-      YNBUSYNUTZVAZYPYHRHWQYQYDFVBZVCYHBRGVDVEWQVFYDRHYSWQYTYDBRVGVHYNBYRRGVIVJ
-      YNBVKVLUPYKYOTYJYNVMZGHZYGXMYKYOYJYNSLNZUUBYIYHSZLNUUCYHYISUUDLYHYIVNYHXE
-      VOVRYIYHBBVPVQYJYNVSVTYGUUAXLGYGUUAYIYHVMZBIXLYIYHBWAYGUUEXEBXSYEUUEXENWQ
-      XEYDWBWCUKWHPWDWEWFWGWIXSYCYFWJWQFXEWKWLWMWGWNWOWP $.
+      wa cdif 0xp 0fi eqeltri a1i wral eqeltrdi a1i13 sneq difeq2d xpeq1d rspcv
+      wex adantl pm2.27 ad2antlr cen wbr c2nd cres wf1o vex snex xpexg 2ndconst
+      mpan id mp1i f1oen2g syl3anc enfii mpdan cun incom disjdif eqtr3i xpdisj1
+      ax-mp unfidisj mp3an3 xpundir fidifsnid adantlr eqtr3id imbitrid 3syld ex
+      mpan2d exlimdv wo fin0or adantr mpjaod com23 findcard imp ) AGHBGHZABIZGH
+      ZWQCJZBIZGHZKWQLBIZGHZKWQDJZEJZMZUAZBIZGHZKZWQXEBIZGHZKWQWSKCDEAWTLNZXBXD
+      WQXNXAXCGWTLBOPQWTXHNZXBXJWQXOXAXIGWTXHBOPQWTXENZXBXMWQXPXAXLGWTXEBOPQWTA
+      NZXBWSWQXQXAWRGWTABOPQXDWQXCLGBUBUCUDZUEXEGHZWQXKEXEUFZXMXSWQXTXMKZXSWQTZ
+      XELNZYAFJZXEHZFUMZYBYCXTXMYCXLXCGXELBOXRUGUHYBYEYAFYBYEYAYBYETZXTWQXEYDMZ
+      UAZBIZGHZKZYKXMYEXTYLKYBXKYLEYDXEXFYDNZXJYKWQYMXIYJGYMXHYIBYMXGYHXEXFYDUI
+      UJUKPQULUNWQYLYKKXSYEWQYKUOUPYGYKYHBIZGHZXMWQYOXSYEWQYNBUQURZYOWQYNRHZWQY
+      NBUSYNUTZVAZYPYHRHWQYQYDFVBZVCYHBRGVDVFWQVGYDRHYSWQYTYDBRVEVHYNBYRRGVIVJY
+      NBVKVLUPYKYOTYJYNVMZGHZYGXMYKYOYJYNSLNZUUBYIYHSZLNUUCYHYISUUDLYHYIVNYHXEV
+      OVPYIYHBBVQVRYJYNVSVTYGUUAXLGYGUUAYIYHVMZBIXLYIYHBWAYGUUEXEBXSYEUUEXENWQX
+      EYDWBWCUKWDPWEWHWFWGWIXSYCYFWJWQFXEWKWLWMWGWNWOWP $.
   $}
 
   $( The Cartesian product of three finite sets is a finite set.  (Contributed
@@ -69674,20 +69855,20 @@ $)
        property.  (Contributed by Jim Kingdon, 27-May-2022.) $)
     ssfirab $p |- ( ph -> { x e. A | ps } e. Fin ) $=
       ( vz cv crab cfn wcel c0 cun wceq rabeq eleq1d wa wn wral cvv vw csn rab0
-      vy 0fin eqeltri a1i wss cdif wsb rabun2 wsbc sbsbc wb ralsns ax-mp bitr4i
-      vex rabid2 sylbb2 adantl uneq2d simplr simprr ad2antrr elrabi nsyl unsnfi
-      eldifbd syl3anc eqeltrrd eqeltrid sbn rabeq0 un0 eqtrdi eqtrid eqeltrd wo
-      3bitr2ri wdc simplrr eldifad ad3antrrr nfs1v nfdc sbequ12 dcbid rspc sylc
-      exmiddc syl mpjaodan ex findcard2sd ) ABCUAHZIZJKBCLIZJKZBCUDHZIZJKZBCWTG
-      HZUBZMZIZJKZBCDIZJKUAUDGDWPLNWQWRJBCWPLOPWPWTNWQXAJBCWPWTOPWPXENWQXFJBCWP
-      XEOPWPDNWQXHJBCWPDOPWSAWRLJBCUCUEUFUGAWTJKZQZWTDUHZXCDWTUIKZQZQZXBXGXNXBQ
-      ZBCGUJZXGXPRZXOXPQZXFXABCXDIZMZJBCWTXDUKZXRXAXDMZXTJXRXDXSXAXPXDXSNZXOXPB
-      CXDSZYCXPBCXCULZYDBCGUMXCTKZYDYEUNGURZBCXCTUOUPUQBCXDUSUTVAVBXRXBYFXCXAKZ
-      RYBJKXNXBXPVCYFXRYGUGXRXCWTKYHXRXCDWTXNXLXBXPXJXKXLVDVEVIBCXCWTVFVGXAXCTV
-      HVJVKVLXOXQQZXFXAJYIXFXTXAYAYIXTXALMXAYIXSLXAXQXSLNZXOXQBRZCXDSZYJYLYKCXC
-      ULZYKCGUJXQYFYLYMUNYGYKCXCTUOUPYKCGUMBCGVMVTBCXDVNUTVAVBXAVOVPVQXNXBXQVCV
-      RXOXPWAZXPXQVSXOXCDKBWAZCDSZYNXOXCDWTXJXKXLXBWBWCAYPXIXMXBFWDYOYNCXCDXPCB
-      CGWEWFCHXCNBXPBCGWGWHWIWJXPWKWLWMWNEWO $.
+      vy 0fi eqeltri a1i wss cdif wsb rabun2 wsbc sbsbc vex ralsns ax-mp bitr4i
+      wb rabid2 sylbb2 adantl uneq2d simplr simprr ad2antrr eldifbd elrabi nsyl
+      unsnfi syl3anc eqeltrrd eqeltrid sbn rabeq0 un0 eqtrdi eqtrid eqeltrd wdc
+      3bitr2ri simplrr eldifad ad3antrrr nfs1v nfdc sbequ12 dcbid rspc sylc syl
+      wo exmiddc mpjaodan ex findcard2sd ) ABCUAHZIZJKBCLIZJKZBCUDHZIZJKZBCWTGH
+      ZUBZMZIZJKZBCDIZJKUAUDGDWPLNWQWRJBCWPLOPWPWTNWQXAJBCWPWTOPWPXENWQXFJBCWPX
+      EOPWPDNWQXHJBCWPDOPWSAWRLJBCUCUEUFUGAWTJKZQZWTDUHZXCDWTUIKZQZQZXBXGXNXBQZ
+      BCGUJZXGXPRZXOXPQZXFXABCXDIZMZJBCWTXDUKZXRXAXDMZXTJXRXDXSXAXPXDXSNZXOXPBC
+      XDSZYCXPBCXCULZYDBCGUMXCTKZYDYEURGUNZBCXCTUOUPUQBCXDUSUTVAVBXRXBYFXCXAKZR
+      YBJKXNXBXPVCYFXRYGUGXRXCWTKYHXRXCDWTXNXLXBXPXJXKXLVDVEVFBCXCWTVGVHXAXCTVI
+      VJVKVLXOXQQZXFXAJYIXFXTXAYAYIXTXALMXAYIXSLXAXQXSLNZXOXQBRZCXDSZYJYLYKCXCU
+      LZYKCGUJXQYFYLYMURYGYKCXCTUOUPYKCGUMBCGVMVTBCXDVNUTVAVBXAVOVPVQXNXBXQVCVR
+      XOXPVSZXPXQWKXOXCDKBVSZCDSZYNXOXCDWTXJXKXLXBWAWBAYPXIXMXBFWCYOYNCXCDXPCBC
+      GWDWECHXCNBXPBCGWFWGWHWIXPWLWJWMWNEWO $.
   $}
 
   ${
@@ -69753,17 +69934,17 @@ $)
        16-Nov-2014.)  (Revised by Mario Carneiro, 24-Jun-2015.) $)
     fnfi $p |- ( ( F Fn A /\ A e. Fin ) -> F e. Fin ) $=
       ( vw vy vz cfn wcel wa cres cv c0 csn cun reseq2 eleq1d syl2anc cvv simpr
-      wceq cdm wfn fnresdm adantr res0 0fin eqeltri a1i wss resundi cfv simp-4l
-      cdif simplrr eldifad fnressn uneq2d wn elexd funfvex funfni opexg eldifbd
-      cop cin wi opeldmg dmres eleq2i imbitrdi elin simplbi syl6 unsnfi syl3anc
-      mtod eqeltrd eqeltrid ex findcard2sd eqeltrrd ) BAUAZAFGZHZBAIZBFWAWDBSWB
-      ABUBUCWCBCJZIZFGBKIZFGZBDJZIZFGZBWIEJZLZMZIZFGZWDFGCDEAWEKSWFWGFWEKBNOWEW
-      ISWFWJFWEWIBNOWEWNSWFWOFWEWNBNOWEASWFWDFWEABNOWHWCWGKFBUDUEUFUGWCWIFGZHZW
-      IAUHZWLAWIULZGZHZHZWKWPXCWKHZWOWJBWMIZMZFBWIWMUIXDXFWJWLWLBUJZVCZLZMZFXDX
-      EXIWJXDWAWLAGZXEXISWAWBWQXBWKUKZXDWLAWIWRWSXAWKUMZUNZAWLBUOPUPXDWKXHQGZXH
-      WJGZUQXJFGXCWKRXDWLQGXGQGZXOXDWLWTXMURXDWAXKXQXLXNXQAWLBWLBUSUTPZWLXGQQVA
-      PXDXPWLWIGZXDWLAWIXMVBXDXPWLWIBTZVDZGZXSXDXPWLWJTZGZYBXDXKXQXPYDVEXNXRWLX
-      GWJAQVFPYCYAWLBWIVGVHVIYBXSWLXTGWLWIXTVJVKVLVOWJXHQVMVNVPVQVRWAWBRVSVT $.
+      wceq cdm wfn fnresdm adantr res0 0fi eqeltri a1i wss cdif resundi cfv cop
+      simp-4l simplrr eldifad fnressn uneq2d elexd funfvex funfni opexg eldifbd
+      wn wi opeldmg dmres eleq2i imbitrdi elin simplbi syl6 mtod unsnfi syl3anc
+      cin eqeltrd eqeltrid ex findcard2sd eqeltrrd ) BAUAZAFGZHZBAIZBFWAWDBSWBA
+      BUBUCWCBCJZIZFGBKIZFGZBDJZIZFGZBWIEJZLZMZIZFGZWDFGCDEAWEKSWFWGFWEKBNOWEWI
+      SWFWJFWEWIBNOWEWNSWFWOFWEWNBNOWEASWFWDFWEABNOWHWCWGKFBUDUEUFUGWCWIFGZHZWI
+      AUHZWLAWIUIZGZHZHZWKWPXCWKHZWOWJBWMIZMZFBWIWMUJXDXFWJWLWLBUKZULZLZMZFXDXE
+      XIWJXDWAWLAGZXEXISWAWBWQXBWKUMZXDWLAWIWRWSXAWKUNZUOZAWLBUPPUQXDWKXHQGZXHW
+      JGZVCXJFGXCWKRXDWLQGXGQGZXOXDWLWTXMURXDWAXKXQXLXNXQAWLBWLBUSUTPZWLXGQQVAP
+      XDXPWLWIGZXDWLAWIXMVBXDXPWLWIBTZVOZGZXSXDXPWLWJTZGZYBXDXKXQXPYDVDXNXRWLXG
+      WJAQVEPYCYAWLBWIVFVGVHYBXSWLXTGWLWIXTVIVJVKVLWJXHQVMVNVPVQVRWAWBRVSVT $.
   $}
 
   $( The domain of a finite function is finite.  (Contributed by Jim Kingdon,
@@ -69841,16 +70022,16 @@ $)
     iunfidisj $p |- ( ( A e. Fin /\ A. x e. A B e. Fin /\ Disj_ x e. A B )
         -> U_ x e. A B e. Fin ) $=
       ( vw vy vz cfn wcel wral cv ciun c0 cun iuneq1 eleq1d wss wa cin eqeltrid
-      wceq wdisj w3a csn 0iun 0fin eqeltri a1i iunxun simpr csb nfcsb1v csbeq1a
-      cdif cvv iunxsngf simplrr eldifad simpll2 nfel1 rspc sylc simpll3 simplrl
-      snssd wn eldifbd disjsn sylibr disjiun syl13anc unfidisj syl3anc ex simp1
-      elv findcard2d ) BGHZCGHZABIZABCUAZUBZADJZCKZGHALCKZGHZAEJZCKZGHZAWFFJZUC
-      ZMZCKZGHZABCKZGHDEFBWBLTWCWDGAWBLCNOWBWFTWCWGGAWBWFCNOWBWKTWCWLGAWBWKCNOW
-      BBTWCWNGAWBBCNOWEWAWDLGACUDUEUFUGWAWFBPZWIBWFUMHZQZQZWHWMWRWHQZWLWGAWJCKZ
-      MZGAWFWJCUHWSWHWTGHWGWTRLTZXAGHWRWHUIWSWTAWICUJZGWTXCTFAWICXCUNAWICUKZAWI
-      CULZUOVOWSWIBHVSXCGHZWSWIBWFWAWOWPWHUPZUQZVQVSVTWQWHURVRXFAWIBAXCGXDUSAJW
-      ITCXCGXEOUTVASWSVTWOWJBPWFWJRLTZXBVQVSVTWQWHVBWAWOWPWHVCWSWIBXHVDWSWIWFHV
-      EXIWSWIBWFXGVFWFWIVGVHABCWFWJVIVJWGWTVKVLSVMVQVSVTVNVP $.
+      wceq wdisj w3a csn 0iun 0fi eqeltri a1i cdif iunxun simpr csb cvv nfcsb1v
+      csbeq1a iunxsngf simplrr eldifad simpll2 nfel1 rspc simpll3 simplrl snssd
+      elv sylc wn eldifbd disjsn sylibr disjiun syl13anc unfidisj syl3anc simp1
+      ex findcard2d ) BGHZCGHZABIZABCUAZUBZADJZCKZGHALCKZGHZAEJZCKZGHZAWFFJZUCZ
+      MZCKZGHZABCKZGHDEFBWBLTWCWDGAWBLCNOWBWFTWCWGGAWBWFCNOWBWKTWCWLGAWBWKCNOWB
+      BTWCWNGAWBBCNOWEWAWDLGACUDUEUFUGWAWFBPZWIBWFUHHZQZQZWHWMWRWHQZWLWGAWJCKZM
+      ZGAWFWJCUIWSWHWTGHWGWTRLTZXAGHWRWHUJWSWTAWICUKZGWTXCTFAWICXCULAWICUMZAWIC
+      UNZUOVDWSWIBHVSXCGHZWSWIBWFWAWOWPWHUPZUQZVQVSVTWQWHURVRXFAWIBAXCGXDUSAJWI
+      TCXCGXEOUTVESWSVTWOWJBPWFWJRLTZXBVQVSVTWQWHVAWAWOWPWHVBWSWIBXHVCWSWIWFHVF
+      XIWSWIBWFXGVGWFWIVHVIABCWFWJVJVKWGWTVLVMSVOVQVSVTVNVP $.
   $}
 
   $( Any injection from one finite set to another of equal size must be a
@@ -69976,24 +70157,24 @@ $)
          (Contributed by Jim Kingdon, 19-Oct-2022.) $)
       fidcenumlemr $p |- ( ph -> A e. Fin ) $=
         ( cima cfn wceq syl wss wcel wa adantr cv wi c0 vw vk wfo ssid com csuc
-        foima anbi2d imaeq2 eleq1d imbi12d ima0 0fin eqeltri a1i cfv wn csn cun
-        sseq1 wfn simprl fofn simprr sucid sseldd fnsnfv syl2anc uneq2d imaeq2i
-        vex df-suc imaundi eqtri eqtr4di simpr snssd ssequn2 sylib sssucid sstr
-        eqtr3d mpan ad2antll simplr mp2and eqeltrd fof ffvelcdmd unsnfi syl3anc
-        eqeltrrd wdc wral simpll fidcenumlemrk mpjaodan exp31 finds mpcom mpan2
+        foima sseq1 anbi2d imaeq2 eleq1d imbi12d 0fi eqeltri a1i cfv wn csn cun
+        ima0 wfn simprl fofn simprr sseldd fnsnfv syl2anc uneq2d df-suc imaeq2i
+        vex sucid imaundi eqtri eqtr4di simpr snssd ssequn2 eqtr3d sssucid sstr
+        sylib mpan ad2antll simplr mp2and eqeltrd fof ffvelcdmd unsnfi eqeltrrd
+        syl3anc wdc wral simpll fidcenumlemrk mpjaodan exp31 finds mpcom mpan2
         wf ) AEFJZDKAFDEUCZXCDLHFDEUGMAFFNZXCKOZFUDFUEOZAXEPZXFAXGXEIQAUARZFNZP
         ZEXIJZKOZSATFNZPZETJZKOZSAUBRZFNZPZEXRJZKOZSZAXRUFZFNZPZEYDJZKOZSXHXFSU
-        AUBFXITLZXKXOXMXQYIXJXNAXITFUTUHYIXLXPKXITEUIUJUKXIXRLZXKXTXMYBYJXJXSAX
-        IXRFUTUHYJXLYAKXIXREUIUJUKXIYDLZXKYFXMYHYKXJYEAXIYDFUTUHYKXLYGKXIYDEUIU
-        JUKXIFLZXKXHXMXFYLXJXEAXIFFUTUHYLXLXCKXIFEUIUJUKXQXOXPTKEULUMUNUOXRUEOZ
+        AUBFXITLZXKXOXMXQYIXJXNAXITFUHUIYIXLXPKXITEUJUKULXIXRLZXKXTXMYBYJXJXSAX
+        IXRFUHUIYJXLYAKXIXREUJUKULXIYDLZXKYFXMYHYKXJYEAXIYDFUHUIYKXLYGKXIYDEUJU
+        KULXIFLZXKXHXMXFYLXJXEAXIFFUHUIYLXLXCKXIFEUJUKULXQXOXPTKEUTUMUNUOXRUEOZ
         YCYFYHYMYCPZYFPZXREUPZYAOZYHYQUQZYOYQPZYGYAKYSYAYPURZUSZYGYAYOUUAYGLZYQ
         YOUUAYAEXRURZJZUSZYGYOYTUUDYAYOEFVAZXRFOYTUUDLYOAUUFYNAYEVBZAXDUUFHFDEV
-        CMMYOYDFXRYNAYEVDXRYDOYOXRUBVKVEUOVFZFXREVGVHVIYGEXRUUCUSZJUUEYDUUIEXRV
-        LVJEXRUUCVMVNVOZQYSYTYANUUAYALYSYPYAYOYQVPVQYTYAVRVSWBYOYBYQYOAXSYBUUGY
+        CMMYOYDFXRYNAYEVDXRYDOYOXRUBVKVLUOVEZFXREVFVGVHYGEXRUUCUSZJUUEYDUUIEXRV
+        IVJEXRUUCVMVNVOZQYSYTYANUUAYALYSYPYAYOYQVPVQYTYAVRWBVSYOYBYQYOAXSYBUUGY
         EXSYNAXRYDNYEXSXRVTXRYDFWAWCWDZYMYCYFWEWFZQWGYOYRPZUUAYGKYOUUBYRUUJQUUM
         YBYPDOZYRUUAKOYOYBYRUULQYOUUNYRYOFDXREYOXDFDEXBYOAXDUUGHMZFDEWHMUUHWIZQ
-        YOYRVPYAYPDWJWKWLYOBCDEXRFYPYOABRCRLWMCDWNBDWNUUGGMUUOYMYCYFWOUUKUUPWPW
-        QWRWSWTXAWL $.
+        YOYRVPYAYPDWJWLWKYOBCDEXRFYPYOABRCRLWMCDWNBDWNUUGGMUUOYMYCYFWOUUKUUPWPW
+        QWRWSWTXAWK $.
     $}
   $}
 
@@ -99978,6 +100159,15 @@ $)
       QNTUAUBOPR $.
   $}
 
+  $( Membership in an earlier upper set of integers.  (Contributed by Thierry
+     Arnoux, 8-Oct-2018.) $)
+  eluzmn $p |- ( ( M e. ZZ /\ N e. NN0 ) -> M e. ( ZZ>= ` ( M - N ) ) ) $=
+    ( cz wcel cn0 wa cmin co cle wbr cuz simpl simpr nn0zd zsubcld caddc nn0red
+    cfv zred recnd readdcld cr nn0addge1 sylancom lesub1dd pncand breqtrd eluz2
+    syl3anbrc ) ACDZBEDZFZABGHZCDUJUMAIJAUMKRDULABUJUKLZULBUJUKMZNOUNULUMABPHZB
+    GHAIULAUPBULAUNSZULABUQULBUOQZUAURUJUKAUBDAUPIJUQABUCUDUEULABULAUQTULBURTUF
+    UGUMAUHUI $.
+
   ${
     eluz.1 $e |- M e. ZZ $.
     $( Membership in an upper set of integers.  (Contributed by NM,
@@ -100239,11 +100429,47 @@ $)
   elnn0uz $p |- ( N e. NN0 <-> N e. ( ZZ>= ` 0 ) ) $=
     ( cn0 cc0 cuz cfv nn0uz eleq2i ) BCDEAFG $.
 
+  $( 5 is an integer greater than or equal to 3.  (Contributed by AV,
+     7-Sep-2025.) $)
+  5eluz3 $p |- 5 e. ( ZZ>= ` 3 ) $=
+    ( c5 c3 cuz cfv wcel cz cle wbr 5nn nnzi 3re 5re 3lt5 ltleii eluz2 mpbir3an
+    3z ) ABCDEBFEAFEBAGHQAIJBAKLMNBAOP $.
+
+  $( An integer in the upper set of integers starting at 3 is element of the
+     upper set of integers starting at 2.  (Contributed by Alexander van der
+     Vekens, 17-Sep-2018.) $)
+  uzuzle23 $p |- ( A e. ( ZZ>= ` 3 ) -> A e. ( ZZ>= ` 2 ) ) $=
+    ( c2 cz wcel c3 cle wbr cuz cfv wi 2z 2re 3re 2lt3 ltleii eluzuzle mp2an )
+    BCDBEFGAEHIDABHIDJKBELMNOEBAPQ $.
+
+  $( An integer greater than or equal to 4 is an integer greater than or equal
+     to 2.  (Contributed by AV, 30-May-2023.) $)
+  uzuzle24 $p |- ( X e. ( ZZ>= ` 4 ) -> X e. ( ZZ>= ` 2 ) ) $=
+    ( c2 cz wcel c4 cle wbr cuz cfv wi 2z 2re 4re 2lt4 ltleii eluzuzle mp2an )
+    BCDBEFGAEHIDABHIDJKBELMNOEBAPQ $.
+
+  $( An integer greater than or equal to 4 is an integer greater than or equal
+     to 3.  (Contributed by AV, 5-Sep-2025.) $)
+  uzuzle34 $p |- ( X e. ( ZZ>= ` 4 ) -> X e. ( ZZ>= ` 3 ) ) $=
+    ( c3 cz wcel c4 cle wbr cuz cfv wi 3z 3re 4re 3lt4 ltleii eluzuzle mp2an )
+    BCDBEFGAEHIDABHIDJKBELMNOEBAPQ $.
+
+  $( An integer greater than or equal to 5 is an integer greater than or equal
+     to 3.  (Contributed by AV, 15-Nov-2025.) $)
+  uzuzle35 $p |- ( A e. ( ZZ>= ` 5 ) -> A e. ( ZZ>= ` 3 ) ) $=
+    ( c5 cuz cfv c3 wcel wss 5eluz3 uzss ax-mp sseli ) BCDZECDZABMFLMGHEBIJK $.
+
   $( An integer is greater than or equal to 2 is a positive integer.
      (Contributed by AV, 3-Nov-2018.) $)
   eluz2nn $p |- ( A e. ( ZZ>= ` 2 ) -> A e. NN ) $=
     ( c2 cuz cfv wcel c1 cn cz cle wbr wi 1z 1le2 eluzuzle mp2an nnuz eleqtrrdi
     ) ABCDEZAFCDZGFHEFBIJRASEKLMBFANOPQ $.
+
+  $( An integer greater than or equal to 3 is a positive integer.  (Contributed
+     by Alexander van der Vekens, 17-Sep-2018.)  (Proof shortened by AV,
+     30-Nov-2025.) $)
+  eluz3nn $p |- ( N e. ( ZZ>= ` 3 ) -> N e. NN ) $=
+    ( c3 cuz cfv wcel c2 cn uzuzle23 eluz2nn syl ) ABCDEAFCDEAGEAHAIJ $.
 
   $( An integer greater than or equal to 4 is an integer greater than or equal
      to 2.  (Contributed by AV, 30-May-2023.) $)
@@ -100266,13 +100492,6 @@ $)
      25-May-2020.) $)
   eluz2n0 $p |- ( N e. ( ZZ>= ` 2 ) -> N =/= 0 ) $=
     ( c2 cuz cfv wcel eluz2nn nnne0d ) ABCDEAAFG $.
-
-  $( An integer in the upper set of integers starting at 3 is element of the
-     upper set of integers starting at 2.  (Contributed by Alexander van der
-     Vekens, 17-Sep-2018.) $)
-  uzuzle23 $p |- ( A e. ( ZZ>= ` 3 ) -> A e. ( ZZ>= ` 2 ) ) $=
-    ( c2 cz wcel c3 cle wbr cuz cfv wi 2z 2re 3re 2lt3 ltleii eluzuzle mp2an )
-    BCDBEFGAEHIDABHIDJKBELMNOEBAPQ $.
 
   $( If an integer is greater than 3, then it is a positive integer.
      (Contributed by Alexander van der Vekens, 17-Sep-2018.) $)
@@ -106962,6 +107181,17 @@ $)
 
   $( Extending a half-open integer range by an unordered pair at the end.
      (Contributed by Alexander van der Vekens, 22-Sep-2018.) $)
+  fzosplitpr $p |- ( B e. ( ZZ>= ` A ) ->
+      ( A ..^ ( B + 2 ) ) = ( ( A ..^ B ) u. { B , ( B + 1 ) } ) ) $=
+    ( cuz cfv wcel c2 caddc co cfzo csn cun cpr wceq df-2 a1i oveq2d fzosplitsn
+    c1 cc 3eqtrd eluzelcn 1cnd add32r syl3anc eqtrd peano2uz uneq1d unass df-pr
+    syl eqcomi uneq2d ) BACDZEZABFGHZIHABRGHZRGHZIHZAUPIHZUPJZKZABIHZBUPLZKZUNU
+    OUQAIUNUOBRRGHZGHZUQUNFVEBGFVEMUNNOPUNBSERSEZVGVFUQMABUAUNUBZVHBRRUCUDUEPUN
+    UPUMEURVAMABUFAUPQUJUNVAVBBJZKZUTKZVBVIUTKZKZVDUNUSVJUTABQUGVKVMMUNVBVIUTUH
+    OUNVLVCVBVLVCMUNVCVLBUPUIUKOULTT $.
+
+  $( Extending a half-open integer range by an unordered pair at the end.
+     (Contributed by Alexander van der Vekens, 22-Sep-2018.) $)
   fzosplitprm1 $p |- ( ( A e. ZZ /\ B e. ZZ /\ A < B ) ->
       ( A ..^ ( B + 1 ) ) = ( ( A ..^ ( B - 1 ) ) u. { ( B - 1 ) , B } ) ) $=
     ( cz wcel wbr c1 caddc co cfzo csn cun wceq cle cr zre syl3anbrc fzosplitsn
@@ -110175,11 +110405,11 @@ $)
     ( vx cz wcel wa cle wbr cfz co cfn wn cuz cfv c1 caddc com cn0 syl c0 cfrec
     eluz cmin cv cmpt cc0 ccnv cen wf1o frechashgf1o peano2uz uznn0sub f1ocnvdm
     eqid sylancr nnfi frecfzen2 syl2anc biimtrrdi wceq clt wb zltnle ancoms fzn
-    enfii bitr3d 0fin eleq1 mpbiri biimtrdi wdc wo zdcle df-dc sylib mpjaod ) A
-    DEZBDEZFZABGHZABIJZKEZWALZVTWABAMNZEZWCABUBWFBOPJZAUCJZCDCUDOPJUEUFUAZUGNZK
-    EZWBWJUHHWCWFWJQEZWKWFQRWIUIWHREZWLCWIWIUNZUJWFWGWEEWMABUKAWGULSQRWHWIUMUOW
-    JUPSCWIABWNUQWBWJVFURUSVTWDWBTUTZWCVTBAVAHZWDWOVSVRWPWDVBBAVCVDABVEVGWOWCTK
-    EVHWBTKVIVJVKVTWAVLWAWDVMABVNWAVOVPVQ $.
+    enfii bitr3d 0fi eleq1 mpbiri biimtrdi wdc wo zdcle df-dc sylib mpjaod ) AD
+    EZBDEZFZABGHZABIJZKEZWALZVTWABAMNZEZWCABUBWFBOPJZAUCJZCDCUDOPJUEUFUAZUGNZKE
+    ZWBWJUHHWCWFWJQEZWKWFQRWIUIWHREZWLCWIWIUNZUJWFWGWEEWMABUKAWGULSQRWHWIUMUOWJ
+    UPSCWIABWNUQWBWJVFURUSVTWDWBTUTZWCVTBAVAHZWDWOVSVRWPWDVBBAVCVDABVEVGWOWCTKE
+    VHWBTKVIVJVKVTWAVLWAWDVMABVNWAVOVPVQ $.
 
   ${
     fzfigd.m $e |- ( ph -> M e. ZZ ) $.
@@ -116298,9 +116528,9 @@ $)
      26-Oct-2012.)  (Revised by Mario Carneiro, 27-Jul-2014.)  (Intuitionized
      by Jim Kingdon, 23-Feb-2022.) $)
   fihasheq0 $p |- ( A e. Fin -> ( ( # ` A ) = 0 <-> A = (/) ) ) $=
-    ( cfn wcel chash cfv c0 wceq cen wbr cc0 wb 0fin hashen mpan2 c1 cfz fveq2i
-    co fz10 cn0 0nn0 hashfz1 ax-mp eqtr3i eqeq2i en0 3bitr3g ) ABCZADEZFDEZGZAF
-    HIZUIJGAFGUHFBCUKULKLAFMNUJJUIOJPRZDEZUJJUMFDSQJTCUNJGUAJUBUCUDUEAUFUG $.
+    ( cfn wcel chash cfv c0 wceq cen wbr cc0 wb 0fi hashen mpan2 c1 cfz co fz10
+    fveq2i cn0 0nn0 hashfz1 ax-mp eqtr3i eqeq2i en0 3bitr3g ) ABCZADEZFDEZGZAFH
+    IZUIJGAFGUHFBCUKULKLAFMNUJJUIOJPQZDEZUJJUMFDRSJTCUNJGUAJUBUCUDUEAUFUG $.
 
   $( Two ways of saying a finite set is not empty.  Also, "A is inhabited"
      would be equivalent by ~ fin0 .  (Contributed by Alexander van der Vekens,
@@ -116323,8 +116553,8 @@ $)
   $( The empty set has size zero.  (Contributed by Mario Carneiro,
      8-Jul-2014.) $)
   hash0 $p |- ( # ` (/) ) = 0 $=
-    ( c0 chash cfv cc0 wceq eqid cfn wcel wb 0fin fihasheq0 ax-mp mpbir ) ABCDE
-    ZAAEZAFAGHNOIJAKLM $.
+    ( c0 chash cfv cc0 wceq eqid cfn wcel wb 0fi fihasheq0 ax-mp mpbir ) ABCDEZ
+    AAEZAFAGHNOIJAKLM $.
 
   ${
     hashelne0d.1 $e |- ( ph -> B e. A ) $.
@@ -116477,6 +116707,12 @@ $)
       XCVQSRWGXCVRRVSXBWIXEWJXFNXBWIXEHZWFYCXBWAWEFGZYGWFVPYAXBWNYHXMWEVQSAWEVR
       RVSXBWJXFHZWRYDXBWBWQFGZYIWRVPYBXBWTYJXNWQVQSBWQVRRVSVDVGVTVT $.
   $}
+
+  $( The cardinality of a finite nonempty set is greater than zero.
+     (Contributed by Thierry Arnoux, 2-Mar-2017.) $)
+  fihashgt0 $p |- ( ( A e. Fin /\ A =/= (/) ) -> 0 < ( # ` A ) ) $=
+    ( cfn wcel c0 wne wa chash cfv cn hashnncl biimpar nngt0d ) ABCZADEZFAGHZMO
+    ICNAJKL $.
 
   $( 1 is an element of the finite set of sequential nonnegative integers
      bounded by the size of a nonempty finite set.  (Contributed by AV,
@@ -118191,6 +118427,64 @@ $)
                      -> ( lastS ` ( W ++ (/) ) ) = ( lastS ` W ) ) $=
     ( cword wcel c0 cconcat co clsw ccatrid fveq2d ) BACDBEFGBHABIJ $.
 
+  ${
+    $d A x y $.  $d B x y $.  $d S x y $.
+    $( A concatenation of two arbitrary words is a word over an alphabet iff
+       the symbols of both words belong to the alphabet.  (Contributed by AV,
+       28-Feb-2021.) $)
+    ccatalpha $p |- ( ( A e. Word _V /\ B e. Word _V )
+            -> ( ( A ++ B ) e. Word S <-> ( A e. Word S /\ B e. Word S ) ) ) $=
+      ( vx vy cvv wcel wa cc0 chash cfv cfzo cmin wceq syl2an eleq1d syl adantr
+      co cz cword cconcat caddc cv cif cmpt cfn wrdfin ccatfvalfi wrdf cdm wfun
+      wf wfn funmpt a1i funfnd eqid fvexg adantlr simplr elfzoelz adantl simpll
+      lencl nn0zd zsubcld syl2anc ifexd dmmptd 0z cn0 nn0addcld sylancr eqeltrd
+      fzofig fihashfn fveq2d nn0addcl hashfzo0 3eqtrd oveq2d feq2d wral fmpt wi
+      simpl cuz wss nn0cn addcom nn0z anim1ci nn0pzuz fzoss2 sselda eleq1 fveq2
+      cc fvoveq1 ifbieq12d rspcv iftrue sylibd impancom ralrimiv syl2an2r simpr
+      iswrdsymb elincfzoext wb nn0cnd eleq2d mpbird clt wbr w3a nn0red readdcld
+      cn cr zred ancoms elfzole1 addge02 mpbid lensymd intn3an3d elfzo0 sylnibr
+      cle iffalsed zcnd pncan syl2anr biimpd sylbid syld jca ex biimtrrid syl5
+      ccatcl impbid1 ) AFUAZGZBUUEGZHZABUBSZCUAZGZAUUJGZBUUJGZHZUUHUUKDIAJKZBJK
+      ZUCSZLSZDUDZIUUOLSZGZUUSAKZUUSUUOMSZBKZUEZUFZUUJGZUUNUUHUUIUVFUUJUUFAUGGB
+      UGGUUIUVFNUUGFAUHFBUHDABUIOPUVGIUVFJKZLSZCUVFUMZUUHUUNCUVFUJUUHUVJUURCUVF
+      UMZUUNUUHUVIUURCUVFUUHUVHUUQILUUHUVHUVFUKZJKZUURJKZUUQUUHUVFUVLUNUVLUGGUV
+      HUVMNUUHUVFUVFULUUHDUURUVEUOUPUQUUHUVLUURUGUUHDUVFUURUVEFUVFURZUUHUUSUURG
+      ZHZUVAUVBUVDFFUUFUVPUVBFGUUGUUSAUUEUURUSUTUVQUUGUVCTGUVDFGUUFUUGUVPVAUVQU
+      USUUOUVPUUSTGUUHUUSIUUQVBVCUVQUUFUUOTGZUUFUUGUVPVDUUFUUOFAVEZVFQVGUVCBUUE
+      TUSVHVIVJZUUHITGUUQTGUURUGGVKUUHUUQUUHUUOUUPUUFUUOVLGZUUGUVSRZUUGUUPVLGZU
+      UFFBVEZVCVMVFIUUQVPVNVOUVLUVFVQVHUUHUVLUURJUVTVRUUHUUQVLGZUVNUUQNUUFUWAUW
+      CUWEUUGUVSUWDUUOUUPVSOUUQVTQWAWBWCUVKUVECGZDUURWDZUUHUUNDUURCUVEUVFUVOWEU
+      UHUWGUUNUUHUWGHZUULUUMUUHUUFUWGEUDZAKZCGZEUUTWDUULUUFUUGWGUWHUWKEUUTUUHUW
+      IUUTGZUWGUWKUUHUWLHZUWGUWLUWJUWIUUOMSBKZUEZCGZUWKUWMUWIUURGUWGUWPWFUUHUUT
+      UURUWIUUHUUQUUOWHKZGZUUTUURWIUUFUWAUWCUWRUUGUVSUWDUWAUWCHZUUQUUPUUOUCSZUW
+      QUWAUUOWSGZUUPWSGZUUQUWTNZUWCUUOWJUUPWJUUOUUPWKZOUWSUWCUVRHUWTUWQGUWAUVRU
+      WCUUOWLWMUUPUUOWNQVOOUUOIUUQWOQWPUWFUWPDUWIUURUUSUWINZUVEUWOCUXEUVAUWLUVB
+      UVDUWJUWNUUSUWIUUTWQUUSUWIAWRUUSUWIUUOBMWTXAPXBQUWMUWOUWJCUWLUWOUWJNUUHUW
+      LUWJUWNXCVCPXDXEXFECAXIXGUUHUUGUWGUWIBKZCGZEIUUPLSZWDUUMUUFUUGXHUWHUXGEUX
+      HUUHUWIUXHGZUWGUXGUUHUXIHZUWGUWIUUOUCSZUUTGZUXKAKZUXKUUOMSZBKZUEZCGZUXGUX
+      JUXKUURGZUWGUXQWFUXJUXRUXKIUWTLSZGZUXJUXIUWAUXTUUHUXIXHUUHUWAUXIUWBRUUOIU
+      UPUWIXJVHUUHUXRUXTXKUXIUUHUURUXSUXKUUHUUQUWTILUUFUXAUXBUXCUUGUUFUUOUVSXLZ
+      UUGUUPUWDXLUXDOWBXMRXNUWFUXQDUXKUURUUSUXKNZUVEUXPCUYBUVAUXLUVBUVDUXMUXOUU
+      SUXKUUTWQUUSUXKAWRUUSUXKUUOBMWTXAPXBQUXJUXQUXOCGZUXGUXJUXPUXOCUXJUXLUXMUX
+      OUXJUXKVLGZUUOXTGZUXKUUOXOXPZXQUXLUXJUYFUYDUYEUXJUUOUXKUUHUUOYAGZUXIUUFUY
+      GUUGUUFUUOUVSXRRZRUXIUUHUXKYAGUXIUUHHUWIUUOUXIUWIYAGZUUHUXIUWIUWIIUUPVBZY
+      BZRUUHUYGUXIUYHVCXSYCUXJIUWIYKXPZUUOUXKYKXPZUXIUYLUUHUWIIUUPYDVCUUHUYGUYI
+      UYLUYMXKUXIUYHUYKUUOUWIYEOYFYGYHUXKUUOYIYJYLPUXJUYCUXGUXJUXOUXFCUXJUXNUWI
+      BUXIUWIWSGUXAUXNUWINUUHUXIUWIUYJYMUUFUXAUUGUYARUWIUUOYNYOVRPYPYQYRXEXFECB
+      XIXGYSYTUUAYQUUBYQCABUUCUUD $.
+  $}
+
+  $( Reverse closure of a concatenation:  If the concatenation of two arbitrary
+     words is a word over an alphabet then the symbols of the first word belong
+     to the alphabet.  (Contributed by AV, 3-Mar-2021.) $)
+  ccatrcl1 $p |- ( ( A e. Word X /\ B e. Word Y
+                     /\ ( W = ( A ++ B ) /\ W e. Word S ) )
+                   -> A e. Word S ) $=
+    ( cword wcel cconcat co wceq wa eleq1 cvv wb wrdv ccatalpha sylan9bbr simpl
+    syl2an biimtrdi expimpd 3impia ) AEGHZBFGHZDABIJZKZDCGZHZLAUHHZUDUELZUGUIUJ
+    UKUGLUIUJBUHHZLZUJUGUIUFUHHZUKUMDUFUHMUDANGZHBUOHUNUMOUEEAPFBPABCQTRUJULSUA
+    UBUC $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -118370,12 +118664,33 @@ $)
     1cnd ) CBFGZDEGZAHGZIZCDJKLMSZANOLZPCMSZNOLZURPZUSAPZUPUQUTURUMUNUQUTPUOBCD
     EQRUAUMUOVAVBUBUNUMUOUCZUSANUMUSTGUOUMUSBCUDUEUFUOATGUMAUGUHVCULUIUJUK $.
 
+  $( The length of a word is the length of the word concatenated with a
+     singleton word minus 1.  (Contributed by AV, 28-Jun-2018.)  (Revised by
+     AV, 5-Mar-2022.) $)
+  wrdlenccats1lenm1g $p |- ( ( W e. Word V /\ S e. B )
+      -> ( ( # ` ( W ++ <" S "> ) ) - 1 ) = ( # ` W ) ) $=
+    ( cword wcel wa cs1 cconcat co chash cfv cmin caddc ccatws1leng oveq1d wceq
+    c1 cc lencl nn0cnd pncan1 syl adantr eqtrd ) DCEFZBAFZGZDBHIJKLZRMJDKLZRNJZ
+    RMJZUJUHUIUKRMCDBAOPUFULUJQZUGUFUJSFUMUFUJCDTUAUJUBUCUDUE $.
+
   $( The concatenation of a word with two singleton words is a word.
      (Contributed by Alexander van der Vekens, 22-Sep-2018.) $)
   ccatw2s1cl $p |- ( ( W e. Word V /\ X e. V /\ Y e. V )
                      -> ( ( W ++ <" X "> ) ++ <" Y "> ) e. Word V ) $=
     ( cword wcel cs1 cconcat co ccatws1cl stoic3 ) BAEZFCAFBCGHIZLFDAFMDGHILFAB
     CJAMDJK $.
+
+  $( The length of the concatenation of a word with two singleton words.
+     (Contributed by Alexander van der Vekens, 22-Sep-2018.)  (Revised by AV,
+     5-Mar-2022.) $)
+  ccatw2s1leng $p |- ( ( W e. Word V /\ X e. V /\ Y e. V )
+      -> ( # ` ( ( W ++ <" X "> ) ++ <" Y "> ) ) = ( ( # ` W ) + 2 ) ) $=
+    ( cword wcel w3a cs1 cconcat co chash cfv c1 caddc c2 wceq 3ad2ant1 syl2anc
+    cvv ccatws1leng wrdv simp2 elexd ccatws1cl simp3 3adant3 oveq1d lencl nn0cn
+    cn0 cc add1p1 3syl 3eqtrd ) BAEFZCAFZDAFZGZBCHIJZDHIJKLZUSKLZMNJZBKLZMNJZMN
+    JZVCONJZURUSSEZFZUQUTVBPURBVGFZCSFVHUOUPVIUQABUAQURCAUOUPUQUBUCSBCUDRUOUPUQ
+    UESUSDATRURVAVDMNUOUPVAVDPUQABCATUFUGUOUPVEVFPZUQUOVCUJFVCUKFVJABUHVCUIVCUL
+    UMQUN $.
 
   $( Value of a symbol in the left half of a word concatenated with a single
      symbol.  (Contributed by Alexander van der Vekens, 5-Aug-2018.)  (Revised
@@ -118444,6 +118759,21 @@ $)
     BDVBUSPBARZUSBAQSURUOUTUNDKKUPTNDZVCUSPUOUQUAURUSBVDUBURUPUCDZVEUOUPUDDZUQV
     FBAUEVFVGUQJUPUFUGUHUPUIUJBBAUTKUKULUM $.
 
+  $( Extract the symbol of the first singleton word of a word concatenated with
+     this singleton word and another singleton word.  (Contributed by Alexander
+     van der Vekens, 22-Sep-2018.)  (Proof shortened by AV, 1-May-2020.)
+     (Revised by AV, 1-May-2020.)  (Revised by AV, 29-Jan-2024.) $)
+  ccatw2s1p1g $p |- ( ( ( W e. Word V /\ ( # ` W ) = N )
+                      /\ ( X e. V /\ Y e. V ) )
+                     -> ( ( ( W ++ <" X "> ) ++ <" Y "> ) ` N ) = X ) $=
+    ( cword wcel chash cfv wceq wa cs1 cconcat co cc0 ccatws1cl ad2ant2r adantr
+    cfzo syl3anc simprr c1 caddc lencl fzonn0p1 simpr eqcomd ccatws1leng oveq2d
+    cn0 syl 3eltr4d ccats1val1g simpll simprl ccats1val2 eqtrd ) CBFZGZCHIZAJZK
+    ZDBGZEBGZKZKZACDLMNZELMNIZAVGIZDVFVGURGZVDAOVGHIZSNZGVHVIJUSVCVJVAVDBCDPQVB
+    VCVDUAVFUTOUTUBUCNZSNZAVLVBUTVNGZVEUSVOVAUSUTUJGVOBCUDUTUEUKRRVBAUTJZVEVBUT
+    AUSVAUFUGRZVFVKVMOSUSVCVKVMJVAVDBCDBUHQUIULEABVGBUMTVFUSVCVPVIDJUSVAVEUNVBV
+    CVDUOVQDABCUPTUQ $.
+
   $( Extract the second of two single symbols concatenated with a word.
      (Contributed by Alexander van der Vekens, 22-Sep-2018.)  (Proof shortened
      by AV, 1-May-2020.) $)
@@ -118454,6 +118784,40 @@ $)
     wceq ccatws1leng oveq1 ad2antlr eqtr2d ccats1val2 syl3anc ) CBFZGZCHIZASZJZ
     DBGZEBGZJZJZCDKLMZUFGZULANOMZUOHIZSUQUOEKLMIESUGUKUPUIULBCDPQUJUKULRUNURUHN
     OMZUQUGUKURUSSUIULBCDBTQUIUSUQSUGUMUHANOUAUBUCEUQBUOUDUE $.
+
+  ${
+    ccat2s1fvwd.w $e |- ( ph -> W e. Word V ) $.
+    ccat2s1fvwd.i $e |- ( ph -> I e. NN0 ) $.
+    ccat2s1fvwd.1 $e |- ( ph -> I < ( # ` W ) ) $.
+    ccat2s1fvwd.x $e |- ( ph -> X e. A ) $.
+    ccat2s1fvwd.y $e |- ( ph -> Y e. B ) $.
+    $( Extract a symbol of a word from the concatenation of the word with two
+       single symbols.  (Contributed by AV, 22-Sep-2018.)  (Revised by AV,
+       13-Jan-2020.)  (Proof shortened by AV, 1-May-2020.)  (Revised by AV,
+       28-Jan-2024.) $)
+    ccat2s1fvwd $p |- ( ph
+        -> ( ( ( W ++ <" X "> ) ++ <" Y "> ) ` I ) = ( W ` I ) ) $=
+      ( cconcat co cfv cvv wcel syl3anc cc0 cs1 cword wceq wrdv syl elexd s1cld
+      ccatass fveq1d chash cfzo ccatws1cl syl2anc cn0 clt wbr cn simp2 3ad2ant1
+      w3a lencl wa cle nn0ge0 adantl cr nn0re nn0red adantr lelttr mpand 3impia
+      wi 0red elnnnn0b sylanbrc simp3 elfzo0 syl3anbrc ccatval1 eqtrd ) ADFGUAZ
+      NOHUAZNOZPDFWBWCNOZNOZPZDFPZADWDWFAFQUBZRZWBWIRZWCWIRWDWFUCAFEUBRZWJIEFUD
+      UEAGQAGBLUFUGZAHQAHCMUFZUGQFWBWCUHSUIAWLWEWIRZDTFUJPZUKORZWGWHUCIAWKHQRWO
+      WMWNQWBHULUMAWLDUNRZDWPUOUPZWQIJKWLWRWSUTZWRWPUQRZWSWQWLWRWSURWTWPUNRZTWP
+      UOUPZXAWLWRXBWSEFVAZUSWLWRWSXCWLWRVBZTDVCUPZWSXCWRXFWLDVDVEXETVFRDVFRZWPV
+      FRZXFWSVBXCVMXEVNWRXGWLDVGVEWLXHWRWLWPXDVHVITDWPVJSVKVLWPVOVPWLWRWSVQDWPV
+      RVSSEQFWEDVTSWA $.
+  $}
+
+  $( The first symbol of the concatenation of a word with two single symbols.
+     (Contributed by Alexander van der Vekens, 22-Sep-2018.)  (Revised by AV,
+     28-Jan-2024.) $)
+  ccat2s1fstg $p |- ( ( ( W e. Word V /\ 0 < ( # ` W ) )
+      /\ ( X e. A /\ Y e. B ) )
+      -> ( ( ( W ++ <" X "> ) ++ <" Y "> ) ` 0 ) = ( W ` 0 ) ) $=
+    ( cword wcel cc0 chash cfv clt wbr wa cvv wrdv ad2antrr cn0 0nn0 a1i simplr
+    simprl simprr ccat2s1fvwd ) DCGHZIDJKLMZNZEAHZFBHZNZNZABIODEFUEDOGHUFUJCDPQ
+    IRHUKSTUEUFUJUAUGUHUIUBUGUHUIUCUD $.
 
 
 $(
@@ -120799,6 +121163,13 @@ $)
     simp2 s2cld chash s2leng simp3 s2fv1g 1nn0 wbr 1lt2 cats1fvd ) ADGZBEGZCFGZ
     HZABIZABCJKLEFCBABCMUPABNUPADUMUNUOOPUPBEUMUNUOUCZPUDUMUNUQUEQKRUOABDEUFSUR
     UMUNUOUGUMUNLUQQBRUOABDEUHSLUAGUPUITLKUBUJUPUKTUL $.
+
+  $( Extract the third symbol from a length 3 string.  (Contributed by Mario
+     Carneiro, 13-Jan-2017.) $)
+  s3fv2g $p |- ( ( A e. V /\ B e. W /\ C e. X ) -> ( <" A B C "> ` 2 ) = C ) $=
+    ( wcel w3a cs2 cs3 c2 df-s3 cvv simp1 elexd simp2 s2cld simp3 chash cfv
+    wceq s2leng 3adant3 cats1fvnd ) ADGZBEGZCFGZHZABIZABCJKFCABCLUHABMUHADUEUFU
+    GNOUHBEUEUFUGPOQUEUFUGRUEUFUISTKUAUGABDEUBUCUD $.
 
 
 $(
@@ -173968,9 +174339,9 @@ $)
          AV, 8-Jul-2019.) $)
       fczpsrbag $p |- ( I e. V -> ( x e. I |-> 0 ) e. D ) $=
         ( wcel cc0 cmpt cn0 wf ccnv cn cima cfn cv wa 0nn0 a1i c0 crab wn rgenw
-        fmpttd eqid mptpreima wceq wral 0nnn mpbir eqtri 0fin eqeltri mpbir2and
-        rabeq0 psrbag ) DEGZADHIZBGDJURKURLMNZOGZUQADHJHJGUQAPDGQRSUDUTUQUSTOUS
-        HMGZADUAZTADHMURURUEUFVBTUGVAUBZADUHVCADUIUCVAADUOUJUKULUMSBCURDEFUPUN
+        fmpttd eqid mptpreima wceq wral 0nnn rabeq0 mpbir 0fi eqeltri mpbir2and
+        eqtri psrbag ) DEGZADHIZBGDJURKURLMNZOGZUQADHJHJGUQAPDGQRSUDUTUQUSTOUSH
+        MGZADUAZTADHMURURUEUFVBTUGVAUBZADUHVCADUIUCVAADUJUKUOULUMSBCURDEFUPUN
         $.
     $}
 
@@ -197078,6 +197449,624 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Examples for graphs
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d G x $.
+    usgr0e.g $e |- ( ph -> G e. W ) $.
+    usgr0e.e $e |- ( ph -> ( iEdg ` G ) = (/) ) $.
+    $( The empty graph, with vertices but no edges, is a simple graph.
+       (Contributed by Alexander van der Vekens, 10-Aug-2017.)  (Revised by AV,
+       16-Oct-2020.)  (Proof shortened by AV, 25-Nov-2020.) $)
+    usgr0e $p |- ( ph -> G e. USGraph ) $=
+      ( vx cusgr wcel ciedg cfv cdm cv c2o cen wbr cvtx cpw crab wf1 eqid f10d
+      wb isusgren syl mpbird ) ABGHZBIJZKFLMNOFBPJZQRZUGSZAUIUGEUAABCHUFUJUBDFC
+      UGBUHUHTUGTUCUDUE $.
+  $}
+
+  $( The null graph, with no vertices, is a simple graph iff the edge function
+     is empty.  (Contributed by Alexander van der Vekens, 30-Sep-2017.)
+     (Revised by AV, 16-Oct-2020.) $)
+  usgr0vb $p |- ( ( G e. W /\ ( Vtx ` G ) = (/) )
+                -> ( G e. USGraph <-> ( iEdg ` G ) = (/) ) ) $=
+    ( wcel cvtx c0 wceq wa cusgr ciedg cuhgr usgruhgr uhgr0vb imbitrid wi simpl
+    cfv simpr usgr0e ex adantr impbid ) ABCZADPEFZGZAHCZAIPEFZUEAJCUDUFAKABLMUB
+    UFUENUCUBUFUEUBUFGABUBUFOUBUFQRSTUA $.
+
+  ${
+    uhgr0v0e.v $e |- V = ( Vtx ` G ) $.
+    uhgr0v0e.e $e |- E = ( Edg ` G ) $.
+    $( The null graph, with no vertices, has no edges.  (Contributed by AV,
+       21-Oct-2020.) $)
+    uhgr0v0e $p |- ( ( G e. UHGraph /\ V = (/) ) -> E = (/) ) $=
+      ( cuhgr wcel c0 wceq wa ciedg cfv cvtx wi eqeq1i uhgr0vb biimtrid pm2.43a
+      biimpd ex imp wb cedg uhgriedg0edg0 bitrid adantr mpbird ) BFGZCHIZJAHIZB
+      KLHIZUHUIUKUIUHUKUIBMLZHIZUHUHUKNZCULHDOUHUMUNUHUMJUHUKBFPSTQRUAUHUJUKUBU
+      IUJBUCLZHIUHUKAUOHEOBUDUEUFUG $.
+
+    $( The size of a hypergraph with no vertices (the null graph) is 0.
+       (Contributed by Alexander van der Vekens, 5-Jan-2018.)  (Revised by AV,
+       7-Nov-2020.) $)
+    uhgr0vsize0en $p |- ( ( G e. UHGraph /\ V ~~ (/) ) -> E ~~ (/) ) $=
+      ( cuhgr wcel c0 cen wbr wa wceq en0 uhgr0v0e sylan2b sylibr ) BFGZCHIJZKA
+      HLZAHIJRQCHLSCMABCDENOAMP $.
+  $}
+
+  $( A graph of order 0 (i.e. with 0 vertices) has a finite set of edges.
+     (Contributed by Alexander van der Vekens, 5-Jan-2018.)  (Revised by AV,
+     10-Jan-2020.)  (Revised by AV, 8-Jun-2021.) $)
+  uhgr0enedgfi $p |- ( ( G e. UHGraph /\ ( Vtx ` G ) ~~ (/) )
+                     -> ( Edg ` G ) e. Fin ) $=
+    ( cuhgr wcel cvtx cfv c0 cen wbr cedg cfn wceq eqid uhgr0vsize0en en0 sylib
+    wa 0fi eqeltrdi ) ABCADEZFGHPZAIEZFJTUAFGHUAFKUAASSLUALMUANOQR $.
+
+  $( The null graph, with no vertices, is a simple graph.  (Contributed by AV,
+     1-Nov-2020.) $)
+  usgr0v $p |- ( ( G e. W /\ ( Vtx ` G ) = (/) /\ ( iEdg ` G ) = (/) )
+                 -> G e. USGraph ) $=
+    ( wcel cvtx cfv c0 wceq cusgr ciedg usgr0vb biimp3ar ) ABCADEFGAHCAIEFGABJK
+    $.
+
+  $( The null graph, with no vertices, represented by a hypergraph, is a simple
+     graph.  (Contributed by AV, 5-Dec-2020.) $)
+  uhgr0vusgr $p |- ( ( G e. UHGraph /\ ( Vtx ` G ) = (/) ) -> G e. USGraph ) $=
+    ( cuhgr wcel cvtx cfv c0 wceq wa simpl cedg ciedg uhgr0v0e wb uhgriedg0edg0
+    eqid adantr mpbid usgr0e ) ABCZADEZFGZHZABSUAIUBAJEZFGZAKEFGZUCATTOUCOLSUDU
+    EMUAANPQR $.
+
+  $( The null graph represented by an empty set is a simple graph.
+     (Contributed by AV, 16-Oct-2020.) $)
+  usgr0 $p |- (/) e. USGraph $=
+    ( vx c0 cusgr wcel cdm cv c2o cen wbr cpw crab wf1 f10 wceq ax-mp mpbir cvv
+    wb cfv eqcomi dm0 f1eq2 0ex cvtx vtxval0 ciedg iedgval0 isusgren ) BCDZBEZA
+    FGHIABJKZBLZULBUKBLZUKMUJBNULUMRUAUJBUKBUBOPBQDUIULRUCAQBBBBUDSBUETBUFSBUGT
+    UHOP $.
+
+  ${
+    $d B x $.  $d C x $.  $d G x $.
+    uspgr1e.v $e |- V = ( Vtx ` G ) $.
+    uspgr1e.a $e |- ( ph -> A e. X ) $.
+    uspgr1e.b $e |- ( ph -> B e. V ) $.
+    uspgr1e.c $e |- ( ph -> C e. V ) $.
+    uspgr1e.e $e |- ( ph -> ( iEdg ` G ) = { <. A , { B , C } >. } ) $.
+    ${
+      uspgr1edc.dc $e |- ( ph -> DECID B = C ) $.
+      $( A simple pseudograph with one edge.  (Contributed by Alexander van der
+         Vekens, 10-Aug-2017.)  (Revised by AV, 16-Oct-2020.)  (Revised by AV,
+         21-Mar-2021.)  (Proof shortened by AV, 17-Apr-2021.) $)
+      uspgr1edc $p |- ( ph -> G e. USPGraph ) $=
+        ( vx wcel wf1 csn cvv syl2anc mpbird cuspgr ciedg cfv cdm cv c1o cen wo
+        wbr c2o cvtx cpw cpr cop wss prexg snidg syl f1sng prssd sseqtrdi elpwg
+        crab wb upgr1elem1 f1ss wceq f1dm f1eq2 3syl dmeqd f1eq123d 1vgrex eqid
+        eqidd isuspgren ) AEUAOZEUBUCZUDZNUEZUFUGUIVTUJUGUIUHZNEUKUCZULZVCZVRPZ
+        AWEBCDUMZUNQZUDZWDWGPZAWIBQZWDWGPZAWJWFQZWGPZWLWDUOWKABGOWFWLOZWMIAWFRO
+        ZWNACFOZDFOWOJKCDFFUPSZWFRUQURBWFGWLUSSZANCDWCFFAWFWCOZWFWBUOZAWFFWBACD
+        FJKUTHVAAWOWSWTVDWQWFWBRVBURTJKMVEWJWLWDWGVFSAWJWANRVCZWGPZWHWJVGWIWKVD
+        AWMWLXAUOXBWRANCDRFFWQJKMVEWJWLXAWGVFSWJXAWGVHWHWJWDWGVIVJTAVSWHWDWDVRW
+        GLAVRWGLVKAWDVOVLTAWPEROVQWEVDJECFHVMNRVREWBWBVNVRVNVPVJT $.
+    $}
+
+    usgr1e.e $e |- ( ph -> B =/= C ) $.
+    $( A simple graph with one edge (with additional assumption that
+       ` B =/= C ` since otherwise the edge is a loop!).  (Contributed by
+       Alexander van der Vekens, 10-Aug-2017.)  (Revised by AV,
+       18-Oct-2020.) $)
+    usgr1e $p |- ( ph -> G e. USGraph ) $=
+      ( vx cuspgr wcel c2o cen wceq syl cv wbr cedg cfv wral cusgr wne wdc olcd
+      wo dcne sylibr uspgr1edc cpr csn wb pr2ne syl2anc mpbird cvv prexg ralsng
+      breq1 ciedg crn cop edgvalg rneqd 3eqtrd raleqtrrdv usgruspgrben sylanbrc
+      rnsnopg ) AEOPZNUAZQRUBZNEUCUDZUEEUFPABCDEFGHIJKLACDSZCDUGZUJVRUHAVSVRMUI
+      CDUKULUMZAVPNCDUNZUOZVQAVPNWBUEZWAQRUBZAWDVSMACFPZDFPZWDVSUPJKCDFFUQURUSA
+      WAUTPZWCWDUPAWEWFWGJKCDFFVAURVPWDNWAUTVOWAQRVCVBTUSAVQEVDUDZVEZBWAVFUOZVE
+      ZWBAVNVQWISVTEOVGTAWHWJLVHABGPWKWBSIBWAGVMTVIVJNEVKVL $.
+  $}
+
+  $( The empty graph, with vertices but no edges, is a simple graph.
+     (Contributed by Alexander van der Vekens, 10-Aug-2017.)  (Revised by AV,
+     16-Oct-2020.) $)
+  usgr0eop $p |- ( V e. W -> <. V , (/) >. e. USGraph ) $=
+    ( wcel c0 cop cvv 0ex opexg mpan2 ciedg cfv wceq opiedgfv usgr0e ) ABCZADEZ
+    FODFCZPFCGADBFHIOQPJKDLGDABFMIN $.
+
+  ${
+    uspgr1eopdc.v $e |- ( ph -> V e. W ) $.
+    uspgr1eopdc.a $e |- ( ph -> A e. X ) $.
+    uspgr1eopdc.b $e |- ( ph -> B e. V ) $.
+    uspgr1eopdc.c $e |- ( ph -> C e. V ) $.
+    uspgr1eopdc.dc $e |- ( ph -> DECID B = C ) $.
+    $( A simple pseudograph with (at least) two vertices and one edge.
+       (Contributed by Alexander van der Vekens, 10-Aug-2017.)  (Revised by AV,
+       16-Oct-2020.) $)
+    uspgr1eopdc $p |- ( ph
+        -> <. V , { <. A , { B , C } >. } >. e. USPGraph ) $=
+      ( cpr cop cfv wcel cvv wceq syl2anc eleqtrrd csn cvtx prexg opexg opvtxfv
+      eqid snexg syl ciedg opiedgfv uspgr1edc ) ABCDEBCDMZNZUAZNZUOUBOZGUPUFIAC
+      EUPJAEFPZUNQPZUPERHAUMQPZURABGPULQPZUSIACEPDEPUTJKCDEEUCSBULGQUDSUMQUGUHZ
+      UNEFQUESZTADEUPKVBTAUQURUOUIOUNRHVAUNEFQUJSLUK $.
+  $}
+
+  ${
+    uspgr1ewopdc.v $e |- ( ph -> V e. W ) $.
+    uspgr1ewopdc.a $e |- ( ph -> A e. V ) $.
+    uspgr1ewopdc.b $e |- ( ph -> B e. V ) $.
+    uspgr1ewopdc.dc $e |- ( ph -> DECID A = B ) $.
+    $( A simple pseudograph with (at least) two vertices and one edge
+       represented by a singleton word.  (Contributed by AV, 9-Jan-2021.) $)
+    uspgr1ewopdc $p |- ( ph -> <. V , <" { A , B } "> >. e. USPGraph ) $=
+      ( cpr cs1 cop cc0 csn cuspgr cvv wcel wceq prexg syl2anc s1val syl opeq2d
+      c0ex a1i uspgr1eopdc eqeltrd ) ADBCJZKZLDMUHLNZLOAUIUJDAUHPQZUIUJRABDQCDQ
+      UKGHBCDDSTUHPUAUBUCAMBCDEPFMPQAUDUEGHIUFUG $.
+  $}
+
+  $( A simple graph with (at least) two different vertices and one edge.  If
+     the two vertices were not different, the edge would be a loop.
+     (Contributed by Alexander van der Vekens, 10-Aug-2017.)  (Revised by AV,
+     18-Oct-2020.) $)
+  usgr1eop $p |- ( ( ( V e. W /\ A e. X ) /\ ( B e. V /\ C e. V ) )
+            -> ( B =/= C -> <. V , { <. A , { B , C } >. } >. e. USGraph ) ) $=
+    ( wcel wa wne cpr cop csn cusgr cvtx cfv cvv wceq adantr syl2anc eleqtrrd
+    simpllr simplrl simpll simplr prexg adantl opexg snexg opvtxfv simprr ciedg
+    eqid syl opiedgfv simpr usgr1e ex ) DEGZAFGZHZBDGZCDGZHZHZBCIZDABCJZKZLZKZM
+    GVDVEHZABCVIVINOZFVKULURUSVCVEUAVJBDVKUTVAVBVEUBVJURVHPGZVKDQZVDURVEURUSVCU
+    CZRZVDVLVEVDVGPGZVLVDUSVFPGZVPURUSVCUDVCVQUTBCDDUEUFAVFFPUGSVGPUHUMZRZVHDEP
+    UIZSTVDCVKGVEVDCDVKUTVAVBUJVDURVLVMVNVRVTSTRVJURVLVIUKOVHQVOVSVHDEPUNSVDVEU
+    OUPUQ $.
+
+  $( A simple graph with two vertices and one edge represented by a singleton
+     word.  (Contributed by AV, 9-Jan-2021.) $)
+  usgr2v1e2w $p |- ( ( A e. X /\ B e. Y /\ A =/= B )
+                     -> <. { A , B } , <" { A , B } "> >. e. USGraph ) $=
+    ( wcel wne w3a cpr cs1 cop cc0 csn cusgr cvv wceq prexg 3adant3 s1val syl
+    wa opeq2d c0ex a1i prid1g 3ad2ant1 prid2g 3ad2ant2 simp3 usgr1eop syl221anc
+    3impia eqeltrd ) ACEZBDEZABFZGZABHZUQIZJUQKUQJLZJZMUPURUSUQUPUQNEZURUSOUMUN
+    VAUOABCDPQZUQNRSUAUPVAKNEZAUQEZBUQEZUOUTMEZVBVCUPUBUCUMUNVDUOABCUDUEUNUMVEU
+    OABDUFUGUMUNUOUHVAVCTVDVETUOVFKABUQNNUIUKUJUL $.
+
+  $( A class without edges is a simple graph.  Since ` ran F = (/) ` does not
+     generally imply ` Fun F ` , but ` Fun ( iEdg `` G ) ` is required for
+     ` G ` to be a simple graph, however, this must be provided as assertion.
+     (Contributed by AV, 18-Oct-2020.) $)
+  edg0usgr $p |- ( ( G e. W /\ ( Edg ` G ) = (/) /\ Fun ( iEdg ` G ) )
+                   -> G e. USGraph ) $=
+    ( wcel cedg cfv wceq ciedg wfun cusgr crn edgvalg eqeq1d wrel funrel relrn0
+    c0 wi wb bicomd syl wa simpr simpl usgr0e ex biimtrdi com13 sylbid 3imp ) A
+    BCZADEZPFZAGEZHZAICZUJULUMJZPFZUNUOQUJUKUPPABKLUNUQUJUOUNUQUMPFZUJUOQUNUMMZ
+    UQURRUMNUSURUQUMOSTURUJUOURUJUAABURUJUBURUJUCUDUEUFUGUHUI $.
+
+  ${
+    $d A e p q $.  $d G e p q $.  $d X e p q $.
+    $( A simple graph with one vertex has no edges.  (Contributed by AV,
+       18-Oct-2020.)  (Revised by AV, 21-Mar-2021.)  (Proof shortened by AV,
+       2-Apr-2021.) $)
+    usgr1vr $p |- ( ( A e. X /\ ( Vtx ` G ) = { A } )
+                   -> ( G e. USGraph -> ( iEdg ` G ) = (/) ) ) $=
+      ( ve vp vq wcel cfv wceq wa c0 cv wrex wfal adantl eqid eleqtrd elsni syl
+      ex cvtx csn cusgr ciedg cedg cupgr usgrupgr upgredg sylan simplrl simp-5r
+      simplrr eqtr4d wn simp-4r simpr simpllr eqeltrrd usgredgne neneqd syl2anc
+      cpr pm2.21fal rexlimdvva mpd inegd eq0rdv wb cuhgr usgruhgr uhgriedg0edg0
+      mpbid ) ACGZBUAHZAUBZIZJZBUCGZBUDHKIZVQVRJZBUEHZKIZVSVTDWAVTDLZWAGZVTWDJZ
+      WCELZFLZVBZIZFVNMEVNMZNVTBUFGZWDWJVRWKVQBUGOWCWABVNEFVNPWAPZUHUIWEWINEFVN
+      VNWEWFVNGZWGVNGZJZJZWINWPWIJZWFWGIZWQWFAWGWQWFVOGWFAIWQWFVNVOWEWMWNWIUJVM
+      VPVRWDWOWIUKZQWFARSWQWGVOGWGAIWQWGVNVOWEWMWNWIULWSQWGARSUMWQVRWHWAGZWRUNV
+      QVRWDWOWIUOWQWCWHWAWPWIUPVTWDWOWIUQURVRWTJWFWGWABWFWGWLUSUTVAVCTVDVEVFVGV
+      RWBVSVHZVQVRBVIGXABVJBVKSOVLT $.
+  $}
+
+  $( Lemma for usgrexmpledg : all "edges" are different.  (Contributed by
+     Alexander van der Vekens, 15-Aug-2017.) $)
+  usgrexmpldifpr $p |- ( ( { 0 , 1 } =/= { 1 , 2 } /\ { 0 , 1 } =/= { 2 , 0 }
+                /\ { 0 , 1 } =/= { 0 , 3 } ) /\ ( { 1 , 2 } =/= { 2 , 0 }
+                /\ { 1 , 2 } =/= { 0 , 3 } /\ { 2 , 0 } =/= { 0 , 3 } ) ) $=
+    ( cc0 c1 cpr c2 wne c3 w3a cz wcel wa wo 0z 1z pm3.2i 1ne0 orci prneimg mp2
+    2z cn necomi 2ne0 1ne2 olci 3nn 1re 1lt3 ltneii 3pm3.2i 2re 2lt3 ) ABCZBDCZ
+    EZULDACZEZULAFCZEZGUMUOEZUMUQEZUOUQEZGUNUPURAHIZBHIZJZVCDHIZJZJABEZADEZJZBB
+    EBDEZJZKUNVDVFVBVCLMNZVCVEMSNZNVIVKVGVHBAOUADAUBUANPABBDHHHHQRVDVEVBJZJVHAA
+    EZJZVJBAEZJZKUPVDVNVLVEVBSLNZNVRVPVJVQUCONZUDABDAHHHHQRVDVBFTIZJZJVOAFEJZVQ
+    BFEZJZKURVDWBVLVBWALUENZNWEWCVQWDOBFUFUGUHNZUDABAFHHHTQRUIUSUTVAVFVNJVRDDED
+    AEZJZKUSVFVNVMVSNVRWIVTPBDDAHHHHQRVFWBJWEWHDFEZJZKUTVFWBVMWFNWEWKWGPBDAFHHH
+    TQRVNWBJWKWCKVAVNWBVSWFNWKWCWHWJUBDFUJUKUHNPDAAFHHHTQRUIN $.
+
+  ${
+    $d e v $.
+    griedg0prc.u $e |- U = { <. v , e >. | e : (/) --> (/) } $.
+    $( The class of empty graphs (represented as ordered pairs) is a proper
+       class.  (Contributed by AV, 27-Dec-2020.) $)
+    griedg0prc $p |- U e/ _V $=
+      ( cvv wnel c0 cv wf copab wex feq1 f0 ceqsexv2d opabn1stprc ax-mp wceq wb
+      0ex neleq1 mpbir ) BEFZGGCHZIZACJZEFZUDCKUFUDGGGICGSGGUCGLGMNUDACOPBUEQUB
+      UFRDBUEETPUA $.
+
+    $d e g v $.  $d U g $.
+    $( The class of all simple graphs is a superclass of the class of empty
+       graphs represented as ordered pairs.  (Contributed by AV,
+       27-Dec-2020.) $)
+    griedg0ssusgr $p |- U C_ USGraph $=
+      ( vg cusgr cv wcel cop wceq c0 wf wex copab eleq2i elopab bitri cvv vex
+      wa opex a1i ciedg cfv opiedgfvi f0bi biimpi eqtrid usgr0e adantl wb eleq1
+      adantr mpbird exlimivv sylbi ssriv ) EBFEGZBHZURAGZCGZIZJZKKVALZTZCMAMZUR
+      FHZUSURVDACNZHVFBVHURDOVDACURPQVEVGACVEVGVBFHZVDVIVCVDVBRVBRHVDUTVAASZCSZ
+      UAUBVDVBUCUDVAKVAUTVJVKUEVDVAKJVAKUFUGUHUIUJVCVGVIUKVDURVBFULUMUNUOUPUQ
+      $.
+  $}
+
+  ${
+    $d e v $.
+    $( The class of simple graphs is a proper class (and therefore, because of
+       ~ prcssprc , the classes of multigraphs, pseudographs and hypergraphs
+       are proper classes, too).  (Contributed by AV, 27-Dec-2020.) $)
+    usgrprc $p |- USGraph e/ _V $=
+      ( ve vv c0 cv copab cusgr wss wnel eqid griedg0ssusgr griedg0prc prcssprc
+      wf cvv mp2an ) CCADMBAEZFGPNHFNHBPAPIZJBPAQKPFLO $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Vertex degree
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c VtxDeg $.
+
+  $( Extend class notation with the vertex degree function. $)
+  cvtxdg $a class VtxDeg $.
+
+  ${
+    $d e g u v x $.
+    $( Define the vertex degree function for a graph.  To be appropriate for
+       arbitrary hypergraphs, we have to double-count those edges that contain
+       ` u ` "twice" (i.e. self-loops), this being represented as a singleton
+       as the edge's value.  Since the degree of a vertex can be (positive)
+       infinity (if the graph containing the vertex is infinite), the extended
+       addition ` +e ` is used for the summation of the number of "ordinary"
+       edges" and the number of "loops".
+
+       Because we cannot in general show that an arbitrary set is either finite
+       or infinite (see ~ inffiexmid ), this definition is not as general as it
+       may appear.  But we keep it for consistency with the Metamath Proof
+       Explorer.  (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by
+       Alexander van der Vekens, 20-Dec-2017.)  (Revised by AV, 9-Dec-2020.) $)
+    df-vtxdg $a |- VtxDeg = ( g e. _V |-> [_ ( Vtx ` g ) / v ]_
+                                          [_ ( iEdg ` g ) / e ]_ ( u e. v |->
+                          ( ( # ` { x e. dom e | u e. ( e ` x ) } ) +e
+                            ( # ` { x e. dom e | ( e ` x ) = { u } } ) ) ) ) $.
+
+    $d A g x $.  $d G g u x $.  $d I g $.  $d V g u $.  $d W g $.
+    vtxdgfval.v $e |- V = ( Vtx ` G ) $.
+    vtxdgfval.i $e |- I = ( iEdg ` G ) $.
+    vtxdgfval.a $e |- A = dom I $.
+    $( The value of the vertex degree function.  (Contributed by Mario
+       Carneiro, 12-Mar-2015.)  (Revised by Alexander van der Vekens,
+       20-Dec-2017.)  (Revised by AV, 9-Dec-2020.) $)
+    vtxdgfval $p |- ( G e. W -> ( VtxDeg ` G ) = ( u e. V
+                          |-> ( ( # ` { x e. A | u e. ( I ` x ) } ) +e
+                                ( # ` { x e. A | ( I ` x ) = { u } } ) ) ) ) $=
+      ( vg vv wcel cv cfv crab chash wceq cxad cvv ve cvtx ciedg cdm csn co csb
+      cmpt cvtxdg df-vtxdg vtxex elv iedgex simpl fveq1 eleq2d rabeqbidv fveq2d
+      wa eqeq1d oveq12d adantl mpteq12dv csbie2 fveq2 eqtr4di dmeqd dmeqi eqtri
+      dmeq fveq1d eqtrid elex eqeltrid mptexd fvmptd2 ) DGMZKDLKNZUBOZUAVRUCOZB
+      LNZBNZANZUANZOZMZAWDUDZPZQOZWEWBUEZRZAWGPZQOZSUFZUHZUGUGZBFWBWCEOZMZACPZQ
+      OZWQWJRZACPZQOZSUFZUHZTUITALBUAKUJVQVRDRZUSWPBVSWBWCVTOZMZAVTUDZPZQOZXGWJ
+      RZAXIPZQOZSUFZUHZXELUAVSVTWOXPVSTMKVRTUKULVTTMKVRTUMULWAVSRZWDVTRZUSBWAWN
+      VSXOXQXRUNXRWNXORXQXRWIXKWMXNSXRWHXJQXRWFXHAWGXIWDVTVJZXRWEXGWBWCWDVTUOZU
+      PUQURXRWLXMQXRWKXLAWGXIXSXRWEXGWJXTUTUQURVAVBVCVDXFXPXERVQXFBVSXOFXDXFVSD
+      UBOZFVRDUBVEHVFXFXKWTXNXCSXFXJWSQXFXHWRAXICXFXIDUCOZUDZCXFVTYBVRDUCVEZVGC
+      EUDYCJEYBIVHVIVFZXFXGWQWBXFWCVTEXFVTYBEYDIVFVKZUPUQURXFXMXBQXFXLXAAXICYEX
+      FXGWQWJYFUTUQURVAVCVBVLDGVMVQBFXDTVQFYATHDGUKVNVOVP $.
+  $}
+
+  ${
+    $d A u r x $.  $d G u x $.  $d I u r x $.  $d U u r x p q $.
+    $d V u x p q $.  $d ph p q r $.
+    vtxdgval.v $e |- V = ( Vtx ` G ) $.
+    vtxdgval.i $e |- I = ( iEdg ` G ) $.
+    vtxdgval.a $e |- A = dom I $.
+    vtxdgfifival.a $e |- ( ph -> A e. Fin ) $.
+    vtxdgfifival.v $e |- ( ph -> V e. Fin ) $.
+    vtxdgfifival.u $e |- ( ph -> U e. V ) $.
+    vtxdgfifival.g $e |- ( ph -> G e. UPGraph ) $.
+    $( In a finite graph, the number of edges from a given vertex is finite.
+       (Contributed by Jim Kingdon, 16-Feb-2026.) $)
+    vtxedgfi $p |- ( ph -> { x e. A | U e. ( I ` x ) } e. Fin ) $=
+      ( vr vp vq cv wcel wral cfv wdc wa adantr simprl simprr fidceq ralrimivva
+      weq cfn syl3anc cupgr cdm wss eleq2i biimpi upgrss syl2an wfn c1o cen wbr
+      c2o cpw crab upgrfen ffnd fneq2i sylibr syl simpr upgrfi elssdc ralrimiva
+      wo fveq2 eleq2d dcbid cbvralv sylib ssfirab ) ADBRZFUAZSZBCKADORZFUAZSZUB
+      ZOCTWDUBZBCTAWHOCAWECSZUCZPQWFGDAPQUIUBZQGTPGTWJAWLPQGGAPRZGSZQRZGSZUCZUC
+      GUJSZWNWPWLAWRWQLUDAWNWPUEAWNWPUFGWMWOUGUKUHUDADGSWJMUDAEULSZWEFUMZSZWFGU
+      NWJNWJXACWTWEJUOUPFWEEGHIUQURWKWSFCUSZWJWFUJSAWSWJNUDZWKWSXBXCWSFWTUSXBWS
+      WTWBUTVAVBWBVCVAVBVOBGVDVEFBFEGHIVFVGCWTFJVHVIVJAWJVKCFWEEGHIVLUKVMVNWHWI
+      OBCOBUIZWGWDXDWFWCDWEWBFVPVQVRVSVTWA $.
+
+    $( In a finite graph, the number of loops from a given vertex is finite.
+       (Contributed by Jim Kingdon, 16-Feb-2026.) $)
+    vtxlpfi $p |- ( ph -> { x e. A | ( I ` x ) = { U } } e. Fin ) $=
+      ( vr vp vq cv wral wcel cfv csn wceq wdc wa weq cfn adantr simprl syl3anc
+      simprr fidceq ralrimivva cdm wss eleq2i biimpi upgrss wfn c1o cen wbr c2o
+      cupgr syl2an wo cpw crab upgrfen fneq2i sylibr syl simpr upgrfi ralrimiva
+      ffnd eqsndc fveqeq2 dcbid cbvralv sylib ssfirab ) ABRZFUADUBZUCZBCKAORZFU
+      AZWDUCZUDZOCSWEUDZBCSAWIOCAWFCTZUEZPQWGGDAPQUFUDZQGSPGSWKAWMPQGGAPRZGTZQR
+      ZGTZUEZUEGUGTZWOWQWMAWSWRLUHAWOWQUIAWOWQUKGWNWPULUJUMUHADGTWKMUHAEVDTZWFF
+      UNZTZWGGUOWKNWKXBCXAWFJUPUQFWFEGHIURVEWLWTFCUSZWKWGUGTAWTWKNUHZWLWTXCXDWT
+      FXAUSXCWTXAWCUTVAVBWCVCVAVBVFBGVGVHFBFEGHIVIVPCXAFJVJVKVLAWKVMCFWFEGHIVNU
+      JVQVOWIWJOBCOBUFWHWEWFWCWDFVRVSVTWAWB $.
+
+    $( The degree of a vertex for graphs with finite vertex and edge sets.
+       (Contributed by Jim Kingdon, 10-Feb-2026.) $)
+    vtxdgfifival $p |- ( ph
+        -> ( ( VtxDeg ` G ) ` U )
+          = ( ( # ` { x e. A | U e. ( I ` x ) } ) +
+          ( # ` { x e. A | ( I ` x ) = { U } } ) ) ) $=
+      ( vu cfv wcel crab chash wceq cvtxdg cv csn cxad co cmpt caddc cvv 1vgrex
+      vtxdgfval syl fveq1d cxr eqid eleq1 rabbidv fveq2d eqeq2d oveq12d cfn cn0
+      sneq vtxedgfi hashcl nn0red rexrd vtxlpfi xaddcld fvmptd3 rexaddd 3eqtrd
+      ) ADEUAPZPZDOGOUBZBUBFPZQZBCRZSPZVOVNUCZTZBCRZSPZUDUEZUFZPZDVOQZBCRZSPZVO
+      DUCZTZBCRZSPZUDUEZWHWLUGUEADGQZVMWETMWNDVLWDWNEUHQVLWDTEDGHUIBOCEFGUHHIJU
+      JUKULUKAODWCWMGWDUMWDUNVNDTZVRWHWBWLUDWOVQWGSWOVPWFBCVNDVOUOUPUQWOWAWKSWO
+      VTWJBCWOVSWIVOVNDVBURUPUQUSMAWHWLAWHAWHAWGUTQWHVAQABCDEFGHIJKLMNVCWGVDUKV
+      EZVFAWLAWLAWKUTQWLVAQABCDEFGHIJKLMNVGWKVDUKVEZVFVHVIAWHWLWPWQVJVK $.
+  $}
+
+  ${
+    $d G u x $.  $d W u x $.
+    $( The vertex degree expressed as operation.  (Contributed by AV,
+       12-Dec-2021.) $)
+    vtxdgop $p |- ( G e. W -> ( VtxDeg ` G )
+                              = ( ( Vtx ` G ) VtxDeg ( iEdg ` G ) ) ) $=
+      ( vu vx wcel cvtx cfv ciedg cvtxdg cv cdm crab chash wceq cxad co syl2anc
+      cmpt cvv eqid cop csn vtxex iedgex opexg vtxdgfval opvtxfv opiedgfv dmeqd
+      syl fveq1d eleq2d rabeqbidv fveq2d oveq12d mpteq12dv eqtrd df-ov 3eqtr4rd
+      eqeq1d a1i ) ABEZAFGZAHGZUAZIGZCVCCJZDJZVDGZEZDVDKZLZMGZVIVGUBZNZDVKLZMGZ
+      OPZRZVCVDIPZAIGVBVFCVEFGZVGVHVEHGZGZEZDWBKZLZMGZWCVNNZDWELZMGZOPZRZVSVBVE
+      SEZVFWLNVBVCSEZVDSEZWMABUCZABUDZVCVDSSUEQDCWEVEWBWASWATWBTWETUFUJVBCWAWKV
+      CVRVBWNWOWAVCNWPWQVDVCSSUGQVBWGVMWJVQOVBWFVLMVBWDVJDWEVKVBWBVDVBWNWOWBVDN
+      WPWQVDVCSSUHQZUIZVBWCVIVGVBVHWBVDWRUKZULUMUNVBWIVPMVBWHVODWEVKWSVBWCVIVNW
+      TUTUMUNUOUPUQVTVFNVBVCVDIURVADCVKAVDVCBVCTVDTVKTUFUS $.
+  $}
+
+  ${
+    $d G u x $.  $d V u x $.  $d W u $.  $d A x $.  $d I x $.  $d ph u $.
+    vtxdgf.v $e |- V = ( Vtx ` G ) $.
+    vtxdgfif.i $e |- I = ( iEdg ` G ) $.
+    vtxdgfif.a $e |- A = dom I $.
+    vtxdgfif.afi $e |- ( ph -> A e. Fin ) $.
+    vtxdgfif.v $e |- ( ph -> V e. Fin ) $.
+    vtxdgfif.g $e |- ( ph -> G e. UPGraph ) $.
+    $( In a finite graph, the vertex degree function is a function from
+       vertices to nonnegative integers.  (Contributed by Jim Kingdon,
+       17-Feb-2026.) $)
+    vtxdgfif $p |- ( ph -> ( VtxDeg ` G ) : V --> NN0 ) $=
+      ( vu vx cv cfv wcel cn0 syl cfn adantr crab chash csn wceq cxad co cvtxdg
+      cupgr cmpt vtxdgfval caddc simpr vtxedgfi hashcl nn0red vtxlpfi nn0addcld
+      wa rexaddd eqeltrd fmpt3d ) ALELNZMNDOZPMBUAZUBOZVCVBUCUDMBUAZUBOZUEUFZQC
+      UGOZACUHPZVILEVHUIUDKMLBCDEUHFGHUJRAVBEPZURZVHVEVGUKUFQVLVEVGVLVEVLVDSPVE
+      QPVLMBVBCDEFGHABSPVKITZAESPVKJTZAVKULZAVJVKKTZUMVDUNRZUOVLVGVLVFSPVGQPVLM
+      BVBCDEFGHVMVNVOVPUPVFUNRZUOUSVLVEVGVQVRUQUTVA $.
+  $}
+
+  ${
+    vtxdg0v.v $e |- V = ( Vtx ` G ) $.
+    $( The degree of a vertex in the null graph is zero (or anything else),
+       because there are no vertices.  (Contributed by AV, 11-Dec-2020.) $)
+    vtxdg0v $p |- ( ( G = (/) /\ U e. V ) -> ( ( VtxDeg ` G ) ` U ) = 0 ) $=
+      ( wceq wcel cvtxdg cfv cc0 cvtx eleq2i fveq2 vtxval0 eqtrdi eleq2d bitrid
+      c0 noel pm2.21i biimtrdi imp ) BQEZACFZABGHHIEZUBUCAQFZUDUCABJHZFUBUECUFA
+      DKUBUFQAUBUFQJHQBQJLMNOPUEUDARSTUA $.
+
+    $d U x $.  $d G x $.  $d I x $.  $d U x $.  $d V x $.
+    vtxdg0e.i $e |- I = ( iEdg ` G ) $.
+    vtxdgfi0e.u $e |- ( ph -> U e. V ) $.
+    vtxdgfi0e.i $e |- ( ph -> I = (/) ) $.
+    vtxdgfi0e.v $e |- ( ph -> V e. Fin ) $.
+    vtxdgfi0e.g $e |- ( ph -> G e. UPGraph ) $.
+    $( The degree of a vertex in an empty graph is zero, because there are no
+       edges.  This is the base case for the induction for calculating the
+       degree of a vertex, for example in a K&ouml;nigsberg graph.
+       (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by Alexander van
+       der Vekens, 20-Dec-2017.)  (Revised by AV, 11-Dec-2020.)  (Revised by
+       AV, 22-Mar-2021.) $)
+    vtxdgfi0e $p |- ( ph -> ( ( VtxDeg ` G ) ` U ) = 0 ) $=
+      ( vx cfv cdm crab chash caddc cc0 c0 eqtrdi cvtxdg wcel csn wceq eqid cfn
+      cv co dmeqd dm0 0fi eqeltrdi vtxdgfifival rabeqdv rab0 hash0 oveq12d 00id
+      fveq2d eqtrd ) ABCUAMMBLUGDMZUBZLDNZOZPMZVABUCUDZLVCOZPMZQUHZRALVCBCDEFGV
+      CUEAVCSUFAVCSNSADSIUIUJTZUKULJHKUMAVIRRQUHRAVERVHRQAVESPMZRAVDSPAVDVBLSOS
+      AVBLVCSVJUNVBLUOTUSUPTAVHVKRAVGSPAVGVFLSOSAVFLVCSVJUNVFLUOTUSUPTUQURTUT
+      $.
+  $}
+
+  ${
+    $d H u x $.  $d G u x $.  $d ph u x $.
+    vtxdeqd.g $e |- ( ph -> G e. X ) $.
+    vtxdeqd.h $e |- ( ph -> H e. Y ) $.
+    vtxdeqd.v $e |- ( ph -> ( Vtx ` H ) = ( Vtx ` G ) ) $.
+    vtxdeqd.i $e |- ( ph -> ( iEdg ` H ) = ( iEdg ` G ) ) $.
+    $( Equality theorem for the vertex degree:  If two graphs are structurally
+       equal, their vertex degree functions are equal.  (Contributed by AV,
+       26-Feb-2021.) $)
+    vtxdeqd $p |- ( ph -> ( VtxDeg ` H ) = ( VtxDeg ` G ) ) $=
+      ( vu vx cvtx cfv cv wcel crab chash wceq cxad eqid cdm csn co cmpt cvtxdg
+      ciedg dmeqd fveq1d eleq2d rabeqbidv fveq2d eqeq1d mpteq12dv vtxdgfval syl
+      oveq12d 3eqtr4d ) AJCLMZJNZKNZCUFMZMZOZKVAUAZPZQMZVBUSUBZRZKVDPZQMZSUCZUD
+      ZJBLMZUSUTBUFMZMZOZKVNUAZPZQMZVOVGRZKVQPZQMZSUCZUDZCUEMZBUEMZAJURVKVMWCHA
+      VFVSVJWBSAVEVRQAVCVPKVDVQAVAVNIUGZAVBVOUSAUTVAVNIUHZUIUJUKAVIWAQAVHVTKVDV
+      QWGAVBVOVGWHULUJUKUPUMACEOWEVLRGKJVDCVAUREURTVATVDTUNUOABDOWFWDRFKJVQBVNV
+      MDVMTVNTVQTUNUOUQ $.
+  $}
+
+  ${
+    $d G x $.  $d H x $.  $d I x $.  $d J x $.  $d N x $.  $d U x $.  $d V x $.
+    $d ph x $.
+    vtxdun.i $e |- I = ( iEdg ` G ) $.
+    vtxdun.j $e |- J = ( iEdg ` H ) $.
+    vtxdun.vg $e |- V = ( Vtx ` G ) $.
+    vtxdun.vh $e |- ( ph -> ( Vtx ` H ) = V ) $.
+    vtxdun.vu $e |- ( ph -> ( Vtx ` U ) = V ) $.
+    vtxdfifiun.v $e |- ( ph -> V e. Fin ) $.
+    vtxdfifiun.g $e |- ( ph -> G e. UPGraph ) $.
+    vtxdfifiun.h $e |- ( ph -> H e. UPGraph ) $.
+    vtxdun.d $e |- ( ph -> ( dom I i^i dom J ) = (/) ) $.
+    vtxdun.fi $e |- ( ph -> Fun I ) $.
+    vtxdun.fj $e |- ( ph -> Fun J ) $.
+    vtxdun.n $e |- ( ph -> N e. V ) $.
+    vtxdun.u $e |- ( ph -> ( iEdg ` U ) = ( I u. J ) ) $.
+    vtxdfiun.a $e |- ( ph -> dom I e. Fin ) $.
+    vtxdfiun.b $e |- ( ph -> dom J e. Fin ) $.
+    $( The degree of a vertex in the union of two pseudographs of finite size
+       on the same finite vertex set is the sum of the degrees of the vertex in
+       each pseudograph.  (Contributed by Mario Carneiro, 12-Mar-2015.)
+       (Revised by Alexander van der Vekens, 21-Jan-2018.)  (Revised by AV,
+       19-Feb-2021.) $)
+    vtxdfifiun $p |- ( ph -> ( ( VtxDeg ` U ) ` N )
+                     = ( ( ( VtxDeg ` G ) ` N ) + ( ( VtxDeg ` H ) ` N ) ) ) $=
+      ( vx cv ciedg cfv wcel cdm crab chash csn wceq caddc co cvtxdg cun wa cab
+      wo df-rab dmeqd dmun eqtrdi eleq2d elun bitrdi anbi1d andir abbidv eqtrid
+      unab eqcomi a1i fveq1d adantr wfn c0 funfnd anim1i fvun1 syl3anc rabbidva
+      cin eqtrd eqtr3id fvun2 uneq12d 3eqtrd fveq2d eqid vtxedgfi cvtx eleqtrrd
+      cfn eqeltrd wss ssrab2 ss2in mp2an sseqtrid ss0 syl hashun eqeq1d vtxlpfi
+      oveq12d cn0 hashcl nn0cnd unfidisj cvv 1vgrex upgrun vtxdgfifival 3eqtr4d
+      add4d ) AGUDUEZBUFUGZUGZUHZUDXSUIZUJZUKUGZXTGULZUMZUDYBUJZUKUGZUNUOZGXREU
+      GZUHZUDEUIZUJZUKUGZYJYEUMZUDYLUJZUKUGZUNUOZGXRFUGZUHZUDFUIZUJZUKUGZYSYEUM
+      ZUDUUAUJZUKUGZUNUOZUNUOZGBUPUGUGGCUPUGUGZGDUPUGUGZUNUOAYIYNUUCUNUOZYQUUFU
+      NUOZUNUOUUHAYDUUKYHUULUNAYDYMUUBUQZUKUGZUUKAYCUUMUKAYCXRYLUHZYAURZXRUUAUH
+      ZYAURZUTZUDUSZUUPUDUSZUURUDUSZUQZUUMAYCXRYBUHZYAURZUDUSUUTYAUDYBVAAUVEUUS
+      UDAUVEUUOUUQUTZYAURUUSAUVDUVFYAAUVDXRYLUUAUQZUHUVFAYBUVGXRAYBEFUQZUIUVGAX
+      SUVHUAVBEFVCVDZVEXRYLUUAVFVGZVHUUOUUQYAVIVGVJVKUUTUVCUMAUVCUUTUUPUURUDVLV
+      MVNAUVAYMUVBUUBAUVAYAUDYLUJYMYAUDYLVAAYAYKUDYLAUUOURZXTYJGUVKXTXRUVHUGZYJ
+      AXTUVLUMZUUOAXRXSUVHUAVOZVPUVKEYLVQZFUUAVQZYLUUAWDZVRUMZUUOURUVLYJUMAUVOU
+      UOAERVSZVPAUVPUUOAFSVSZVPAUVRUUOQVTYLUUAEFXRWAWBWEZVEWCWFAUVBYAUDUUAUJUUB
+      YAUDUUAVAAYAYTUDUUAAUUQURZXTYSGUWBXTUVLYSAUVMUUQUVNVPUWBUVOUVPUVRUUQURUVL
+      YSUMAUVOUUQUVSVPAUVPUUQUVTVPAUVRUUQQVTYLUUAEFXRWGWBWEZVEWCWFWHWIWJAYMWOUH
+      ZUUBWOUHZYMUUBWDZVRUMZUUNUUKUMAUDYLGCEHKIYLWKZUBNTOWLZAUDUUAGDFDWMUGZUWJW
+      KZJUUAWKZUCAUWJHWOLNWPZAGHUWJTLWNZPWLZAUWFVRWQUWGAUVQUWFVRYMYLWQUUBUUAWQU
+      WFUVQWQYKUDYLWRYTUDUUAWRYMYLUUBUUAWSWTQXAUWFXBXCYMUUBXDWBWEAYHYPUUEUQZUKU
+      GZUULAYGUWPUKAYGUUOYFURZUUQYFURZUTZUDUSZUWRUDUSZUWSUDUSZUQZUWPAYGUVDYFURZ
+      UDUSUXAYFUDYBVAAUXEUWTUDAUXEUVFYFURUWTAUVDUVFYFUVJVHUUOUUQYFVIVGVJVKUXAUX
+      DUMAUXDUXAUWRUWSUDVLVMVNAUXBYPUXCUUEAUXBYFUDYLUJYPYFUDYLVAAYFYOUDYLUVKXTY
+      JYEUWAXEWCWFAUXCYFUDUUAUJUUEYFUDUUAVAAYFUUDUDUUAUWBXTYSYEUWCXEWCWFWHWIWJA
+      YPWOUHZUUEWOUHZYPUUEWDZVRUMZUWQUULUMAUDYLGCEHKIUWHUBNTOXFZAUDUUAGDFUWJUWK
+      JUWLUCUWMUWNPXFZAUXHVRWQUXIAUVQUXHVRYPYLWQUUEUUAWQUXHUVQWQYOUDYLWRUUDUDUU
+      AWRYPYLUUEUUAWSWTQXAUXHXBXCYPUUEXDWBWEXGAYNUUCYQUUFAYNAUWDYNXHUHUWIYMXIXC
+      XJAUUCAUWEUUCXHUHUWOUUBXIXCXJAYQAUXFYQXHUHUXJYPXIXCXJAUUFAUXGUUFXHUHUXKUU
+      EXIXCXJXQWEAUDYBGBXSBWMUGZUXLWKZXSWKYBWKAYBUVGWOUVIAYLWOUHUUAWOUHUVRUVGWO
+      UHUBUCQYLUUAXKWBWPAUXLHWOMNWPAGHUXLTMWNZABEFCDHXLOPIJKLQAGUXLUHBXLUHUXNBG
+      UXLUXMXMXCMUAXNXOAUUIYRUUJUUGUNAUDYLGCEHKIUWHUBNTOXOAUDUUAGDFUWJUWKJUWLUC
+      UWMUWNPXOXGXP $.
+  $}
+
+  ${
+    $d A x y $.  $d G x $.  $d I u y $.  $d I x y $.  $d U u y $.  $d U x y $.
+    $d V x $.  $d ph y $.
+    vtxdlfgrval.v $e |- V = ( Vtx ` G ) $.
+    vtxdlfgrval.i $e |- I = ( iEdg ` G ) $.
+    vtxdlfgrval.a $e |- A = dom I $.
+    vtxdlfgrval.d $e |- D = ( VtxDeg ` G ) $.
+    vtxdumgrfival.g $e |- ( ph -> G e. UMGraph ) $.
+    vtxdumgrfival.u $e |- ( ph -> U e. V ) $.
+    vtxdumgrfival.a $e |- ( ph -> A e. Fin ) $.
+    vtxdumgrfival.v $e |- ( ph -> V e. Fin ) $.
+    $( The value of the vertex degree function for a finite multigraph.
+       (Contributed by Alexander van der Vekens, 20-Dec-2017.)  (Revised by AV,
+       23-Feb-2021.) $)
+    vtxdumgrfival $p |- ( ph
+        -> ( D ` U ) = ( # ` { x e. A | U e. ( I ` x ) } ) ) $=
+      ( vy cfv wceq c0 vu cv wcel crab chash caddc co cvtxdg fveq1i cumgr cupgr
+      csn cc0 umgrupgr syl vtxdgfifival eqtrid fveqeq2 cbvrabv wss c1o cen wral
+      wbr wi wex sneq eqeq2d spcegv en1 imbitrrdi ralrimivw ss2rab sylibr fveq2
+      breq1d c2o cdom cpw wf cdm umgrislfupgrdom sylib simprd feq2i lfgrnloopen
+      wa eqtr3id sseqtrd ss0 fveq2d hash0 eqtrdi oveq2d cfn cn0 vtxedgfi hashcl
+      eqid nn0cnd addridd 3eqtrd ) AEDRZEBUBZGRZUCBCUDZUERZXEEULZSZBCUDZUERZUFU
+      GZXGUMUFUGXGAXCEFUHRZRXLEDXMLUIABCEFGHIJKOPNAFUJUCZFUKUCZMFUNUOZUPUQAXKUM
+      XGUFAXKTUERUMAXJTUEAXJQUBZGRZXHSZQCUDZTXIXSBQCXDXQXHGURUSAXTTUTXTTSAXTXRV
+      AVBVDZQCUDZTAXSYAVEZQCVCXTYBUTAYCQCAXSXRUAUBZULZSZUAVFZYAAEHUCXSYGVENYFXS
+      UAEHYDESYEXHXRYDEVGVHVIUOUAXRVJVKVLXSYAQCVMVNAYBXEVAVBVDZBCUDZTYHYABQCXDX
+      QSXEXRVAVBXDXQGVOVPUSACVQXDVRVDBHVSUDZGVTZYITSAGWAZYJGVTZYKAXOYMAXNXOYMWG
+      MBFGHIJWBWCWDCYLYJGKWEVNBCYJFGHJKYJWSWFUOWHWIXTWJUOUQWKWLWMWNAXGAXGAXFWOU
+      CXGWPUCABCEFGHIJKOPNXPWQXFWRUOWTXAXB $.
+  $}
+
+  ${
+    $d G i $.  $d I i $.  $d U i $.  $d V i $.
+    vtxd0nedgb.v $e |- V = ( Vtx ` G ) $.
+    vtxd0nedgb.i $e |- I = ( iEdg ` G ) $.
+    vtxd0nedgb.d $e |- D = ( VtxDeg ` G ) $.
+    vtxd0nedgbfi.i $e |- ( ph -> dom I e. Fin ) $.
+    vtxd0nedgbfi.v $e |- ( ph -> V e. Fin ) $.
+    vtxd0nedgbfi.u $e |- ( ph -> U e. V ) $.
+    vtxd0nedgbfi.g $e |- ( ph -> G e. UPGraph ) $.
+    $( A vertex has degree 0 iff there is no edge incident with the vertex.
+       (Contributed by AV, 24-Dec-2020.)  (Revised by AV, 22-Mar-2021.) $)
+    vtxd0nedgbfi $p |- ( ph -> ( ( D ` U ) = 0
+                                     <-> -. E. i e. dom I U e. ( I ` i ) ) ) $=
+      ( cfv cc0 wceq wcel wn wb cv cdm crab chash csn caddc co wa cvtxdg fveq1i
+      wrex vtxdgfifival eqtrid eqeq1d cr cle wbr cfn cn0 vtxedgfi hashcl nn0red
+      eqid syl nn0ge0d vtxlpfi add20 syl22anc wo wral fihasheq0 anbi12d anbi12i
+      c0 rabeq0 ioran ralbii ralnex r19.26 3bitr3ri 3bitrd orcom wi snidg eleq2
+      a1i syl5ibrcom pm4.72 sylib bitr4id rexbidv notbid bitrd ) ACBOZPQCDUAFOZ
+      RZDFUBZUCZUDOZWOCUEZQZDWQUCZUDOZUFUGZPQZWSPQZXCPQZUHZWPDWQUKZSZAWNXDPAWNC
+      EUIOZOXDCBXKJUJADWQCEFGHIWQVCZKLMNULUMUNAWSUORPWSUPUQXCUORPXCUPUQXEXHTAWS
+      AWRURRZWSUSRADWQCEFGHIXLKLMNUTZWRVAVDZVBAWSXOVEAXCAXBURRZXCUSRADWQCEFGHIX
+      LKLMNVFZXBVAVDZVBAXCXRVEWSXCVGVHAXHWPXAVIZDWQUKZSZXJAXHWRVNQZXBVNQZUHZWPS
+      ZDWQVJZXASZDWQVJZUHZYAAXFYBXGYCAXMXFYBTXNWRVKVDAXPXGYCTXQXBVKVDVLYDYITAYB
+      YFYCYHWPDWQVOXADWQVOVMWFYIYATAXSSZDWQVJYEYGUHZDWQVJYAYIYJYKDWQWPXAVPVQXSD
+      WQVRYEYGDWQVSVTWFWAACGRZYAXJTMYLXTXIYLXSWPDWQYLXSXAWPVIZWPWPXAWBYLXAWPWCW
+      PYMTYLWPXACWTRCGWDWOWTCWEWGXAWPWHWIWJWKWLVDWMWA $.
+  $}
+
+  ${
+    $d E c e i $.  $d G c e i x $.  $d U c e i x $.  $d V c e i x $.
+    vtxdushgrfvedg.v $e |- V = ( Vtx ` G ) $.
+    vtxdushgrfvedg.e $e |- E = ( Edg ` G ) $.
+    vtxduspgrfvedgfi.fi $e |- ( ph -> dom ( iEdg ` G ) e. Fin ) $.
+    vtxduspgrfvedgfi.v $e |- ( ph -> V e. Fin ) $.
+    vtxduspgrfvedgfi.u $e |- ( ph -> U e. V ) $.
+    ${
+      vtxduspgrfvedgfi.g $e |- ( ph -> G e. USPGraph ) $.
+      $( Lemma for ~ vtxduspgrfvedgfi and ~ vtxdusgrfvedgfi .  (Contributed by
+         AV, 12-Dec-2020.)  (Proof shortened by AV, 5-May-2021.) $)
+      vtxduspgrfvedgfilem $p |- ( ph
+               -> ( # ` { i e. dom ( iEdg ` G ) | U e. ( ( iEdg ` G ) ` i ) } )
+                  = ( # ` { e e. E | U e. e } ) ) $=
+        ( vx vc cv cfv wcel crab eqid ciedg cdm cmpt cuspgr cupgr uspgrupgr syl
+        vtxedgfi cushgr wf1o uspgrushgr eleq2w cbvrabv ushgredgedg fihasheqf1od
+        syl2anc ) ABDPFUAQZQRDUQUBZSZBCPRZCESZNUSNPUQQUCZADURBFUQGHUQTZURTJKLAF
+        UDRZFUERMFUFUGUHAFUIRZBGRUSVAVBUJAVDVEMFUKUGLNUSVAODEVBFUQBGIVCHUSTUTBO
+        PRCOECOBULUMVBTUNUPUO $.
+
+      vtxdushgrfvedg.d $e |- D = ( VtxDeg ` G ) $.
+      $( The value of the vertex degree function for a simple pseudograph.
+         (Contributed by AV, 12-Dec-2020.)  (Proof shortened by AV,
+         5-May-2021.) $)
+      vtxduspgrfvedgfi $p |- ( ph -> ( D ` U ) = ( ( # ` { e e. E | U e. e } )
+        + ( # ` { e e. E | e = { U } } ) ) ) $=
+        ( vi cfv cv wcel crab chash vx vc cvtxdg ciedg cdm wceq caddc co fveq1i
+        csn a1i eqid cuspgr uspgrupgr syl vtxdgfifival vtxduspgrfvedgfilem cmpt
+        cupgr vtxlpfi cushgr wf1o uspgrushgr eqeq1 ushgredgedgloop fihasheqf1od
+        cbvrabv syl2anc oveq12d 3eqtrd ) ACBPZCFUCPZPZCOQFUDPZPZROVNUEZSTPZVOCU
+        JZUFOVPSZTPZUGUHCDQZRDESTPZWAVRUFZDESZTPZUGUHVKVMUFACBVLNUIUKAOVPCFVNGH
+        VNULZVPULZJKLAFUMRZFUSRMFUNUOZUPAVQWBVTWEUGACDOEFGHIJKLMUQAVSWDUAVSUAQV
+        NPURZAOVPCFVNGHWFWGJKLWIUTAFVARZCGRVSWDWJVBAWHWKMFVCUOLUAVSWDUBOEWJFVNC
+        GIWFVSULWCUBQZVRUFDUBEWAWLVRVDVGWJULVEVHVFVIVJ $.
+    $}
+
+    ${
+      vtxdusgrfvedgfi.g $e |- ( ph -> G e. USGraph ) $.
+      vtxdusgrfvedgfi.d $e |- D = ( VtxDeg ` G ) $.
+      $( The value of the vertex degree function for a simple graph.
+         (Contributed by AV, 12-Dec-2020.) $)
+      vtxdusgrfvedgfi $p |- ( ph
+                            -> ( D ` U ) = ( # ` { e e. E | U e. e } ) ) $=
+        ( vi cfv cv wcel crab chash ciedg cdm eqid cusgr usgrumgr vtxdumgrfival
+        cumgr syl cuspgr usgruspgr vtxduspgrfvedgfilem eqtrd ) ACBPCOQFUAPZPROU
+        MUBZSTPCDQRDESTPAOUNBCFUMGHUMUCUNUCNAFUDRZFUGRMFUEUHLJKUFACDOEFGHIJKLAU
+        OFUIRMFUJUHUKUL $.
+    $}
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Walks, paths and cycles
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -197479,15 +198468,15 @@ $)
       ( vx vy cfv wbr cv co wss cc0 wral cvv wcel wa adantl cwlks c1 caddc cfzo
       cpr chash crn wrex wlkv simp1d wlkvtxeledgg mpancom wi wex cvtx cfz wlkpg
       eqid adantr elfzofz ffvelcdmd prmg syl simp2d vex fvexg sylancl ad3antrrr
-      wf simplr simpr sseldd fvmbr breq1 elabd wb elfvex elrng 3syl mpbird wceq
-      exlimddv sseq2 rspcedvd ex ralimdva mpd ) DAEUAJKZCLZAJZWIUBUCMAJZUEZWIDJ
-      ZFJZNZCODUFJZUDMZPZWLBLZNZBFUGZUHZCWQPZEQRZWHWRWHXDDQRZAQRZADEUIZUJZACDEF
-      QGUKULXDWHWRXCUMXHXDWHSZWOXBCWQXIWIWQRZSZWOXBXKWOSZWTWOBWNXAXLHLZWLRZWNXA
-      RZHXKXNHUNZWOXKWJEUOJZRXPXKOWPUPMZXQWIAXIXRXQAVIXJADEXQQXQURUQUSXJWIXRRXI
-      WIOWPUTTVAHWJWKXQVBVCUSXLXNSZXOILZWNFKZIUNZXSYAWMWNFKZIWMXIWMQRZXJWOXNXIX
-      EWIQRYDWHXEXDWHXDXEXFXGVDTCVEWIDQQVFVGVHXSXMWNRZYCXSWLWNXMXKWOXNVJXLXNVKV
-      LZXMFWMVMVCXTWMWNFVNVOXSYEWNQRXOYBVPYFXMWMFVQIWNFQVRVSVTWBWSWNWAWTWOVPXLW
-      SWNWLWCTXKWOVKWDWEWFULWG $.
+      wf simplr simpr sseldd fvmbr breq1 elabd wb elfvfvex 3syl mpbird exlimddv
+      elrng wceq sseq2 rspcedvd ex ralimdva mpd ) DAEUAJKZCLZAJZWIUBUCMAJZUEZWI
+      DJZFJZNZCODUFJZUDMZPZWLBLZNZBFUGZUHZCWQPZEQRZWHWRWHXDDQRZAQRZADEUIZUJZACD
+      EFQGUKULXDWHWRXCUMXHXDWHSZWOXBCWQXIWIWQRZSZWOXBXKWOSZWTWOBWNXAXLHLZWLRZWN
+      XARZHXKXNHUNZWOXKWJEUOJZRXPXKOWPUPMZXQWIAXIXRXQAVIXJADEXQQXQURUQUSXJWIXRR
+      XIWIOWPUTTVAHWJWKXQVBVCUSXLXNSZXOILZWNFKZIUNZXSYAWMWNFKZIWMXIWMQRZXJWOXNX
+      IXEWIQRYDWHXEXDWHXDXEXFXGVDTCVEWIDQQVFVGVHXSXMWNRZYCXSWLWNXMXKWOXNVJXLXNV
+      KVLZXMFWMVMVCXTWMWNFVNVOXSYEWNQRXOYBVPYFXMWMFVQIWNFQWAVRVSVTWSWNWBWTWOVPX
+      LWSWNWLWCTXKWOVKWDWEWFULWG $.
 
     $( The vertices of a walk are connected by indexed edges.  (Contributed by
        Alexander van der Vekens, 22-Jul-2018.)  (Revised by AV, 2-Jan-2021.)
@@ -197498,14 +198487,14 @@ $)
       ( vx vy wcel cfv wbr wa cv co wss cc0 wral cvv cwlks caddc cpr chash cfzo
       c1 crn wrex wlkvtxeledgg wex cvtx cfz wf eqid wlkpg adantr elfzofz adantl
       ffvelcdmd prmg syl wlkvg simpld vex fvexg sylancl ad3antrrr simplr sseldd
-      simpr fvmbr breq1 elabd wb elfvex elrng 3syl exlimddv wceq sseq2 rspcedvd
-      mpbird ex ralimdva mpd ) EGKDAEUALMNZCOZALZWGUFUBPALZUCZWGDLZFLZQZCRDUDLZ
-      UEPZSWJBOZQZBFUGZUHZCWOSACDEFGHUIWFWMWSCWOWFWGWOKZNZWMWSXAWMNZWQWMBWLWRXB
-      IOZWJKZWLWRKZIXAXDIUJZWMXAWHEUKLZKXFXARWNULPZXGWGAWFXHXGAUMWTADEXGGXGUNUO
-      UPWTWGXHKWFWGRWNUQURUSIWHWIXGUTVAUPXBXDNZXEJOZWLFMZJUJZXIXKWKWLFMZJWKWFWK
-      TKZWTWMXDWFDTKZWGTKXNWFXOATKADEGVBVCCVDWGDTTVEVFVGXIXCWLKZXMXIWJWLXCXAWMX
-      DVHXBXDVJVIZXCFWKVKVAXJWKWLFVLVMXIXPWLTKXEXLVNXQXCWKFVOJWLFTVPVQWBVRWPWLV
-      SWQWMVNXBWPWLWJVTURXAWMVJWAWCWDWE $.
+      simpr fvmbr breq1 elabd wb elfvfvex elrng 3syl mpbird exlimddv wceq sseq2
+      rspcedvd ex ralimdva mpd ) EGKDAEUALMNZCOZALZWGUFUBPALZUCZWGDLZFLZQZCRDUD
+      LZUEPZSWJBOZQZBFUGZUHZCWOSACDEFGHUIWFWMWSCWOWFWGWOKZNZWMWSXAWMNZWQWMBWLWR
+      XBIOZWJKZWLWRKZIXAXDIUJZWMXAWHEUKLZKXFXARWNULPZXGWGAWFXHXGAUMWTADEXGGXGUN
+      UOUPWTWGXHKWFWGRWNUQURUSIWHWIXGUTVAUPXBXDNZXEJOZWLFMZJUJZXIXKWKWLFMZJWKWF
+      WKTKZWTWMXDWFDTKZWGTKXNWFXOATKADEGVBVCCVDWGDTTVEVFVGXIXCWLKZXMXIWJWLXCXAW
+      MXDVHXBXDVJVIZXCFWKVKVAXJWKWLFVLVMXIXPWLTKXEXLVNXQXCWKFVOJWLFTVPVQVRVSWPW
+      LVTWQWMVNXBWPWLWJWAURXAWMVJWBWCWDWE $.
   $}
 
   ${
@@ -198221,6 +199210,950 @@ $)
       AGCDUASTGUBUCZGCDUDSTABCDEFGHIJKLAEBFUDSTEBFUASTMBEFUEUFNPQORUGAUHGUMSUIU
       JZHEUHIUIUJUKULUNZGUOVFVGGUPZVEABEFGHIJKLMNOUQVFVGGURVHVFVGGUSVEVFVGGUTVA
       VBCGDVCVD $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Closed walks as words
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Closed walks as words
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $c ClWWalks $.
+
+  $( Extend class notation with closed walks (in an undirected graph) as word
+     over the set of vertices. $)
+  cclwwlk $a class ClWWalks $.
+
+  ${
+    $d g i w $.
+    $( Define the set of all closed walks (in an undirected graph) as words
+       over the set of vertices.  Such a word corresponds to the sequence p(0)
+       p(1) ... p(n-1) of the vertices in a closed walk p(0) e(f(1)) p(1)
+       e(f(2)) ... p(n-1) e(f(n)) p(n)=p(0) as defined elsewhere.  Notice that
+       the word does not contain the terminating vertex p(n) of the walk,
+       because it is always equal to the first vertex of the closed walk.
+       (Contributed by Alexander van der Vekens, 20-Mar-2018.)  (Revised by AV,
+       24-Apr-2021.) $)
+    df-clwwlk $a |- ClWWalks = ( g e. _V |-> { w e. Word ( Vtx ` g ) |
+                     ( w =/= (/) /\ A. i e. ( 0 ..^ ( ( # ` w ) - 1 ) )
+                               { ( w ` i ) , ( w ` ( i + 1 ) ) } e. ( Edg ` g )
+                       /\ { ( lastS ` w ) , ( w ` 0 ) } e. ( Edg ` g ) ) } ) $.
+  $}
+
+  ${
+    $d E g $.  $d G g i w $.  $d V g w $.
+    clwwlk.v $e |- V = ( Vtx ` G ) $.
+    clwwlk.e $e |- E = ( Edg ` G ) $.
+    $( The set of closed walks (in an undirected graph) as words over the set
+       of vertices.  (Contributed by Alexander van der Vekens, 20-Mar-2018.)
+       (Revised by AV, 24-Apr-2021.) $)
+    clwwlkg $p |- ( G e. W ->
+        ( ClWWalks ` G ) = { w e. Word V | ( w =/= (/)
+          /\ A. i e. ( 0 ..^ ( ( # ` w ) - 1 ) )
+            { ( w ` i ) , ( w ` ( i + 1 ) ) } e. E
+          /\ { ( lastS ` w ) , ( w ` 0 ) } e. E ) } ) $=
+      ( vg wcel cv cfv c1 co cpr cedg cc0 cvtx cvv wceq c0 wne caddc chash cmin
+      cfzo wral clsw w3a cword cclwwlk df-clwwlk fveq2 eqtr4di wrdeq syl eleq2d
+      crab ralbidv 3anbi23d rabeqbidv elex vtxex eqeltrid wrdexg rabexg fvmptd3
+      3syl ) DFJZIDAKZUAUBZBKZVJLVLMUCNVJLOZIKZPLZJZBQVJUDLMUENUFNZUGZVJUHLQVJL
+      OZVOJZUIZAVNRLZUJZURVKVMCJZBVQUGZVSCJZUIZAEUJZURZSUKSAIBULVNDTZWAWGAWCWHW
+      JWBETWCWHTWJWBDRLZEVNDRUMGUNWBEUOUPWJVRWEVTWFVKWJVPWDBVQWJVOCVMWJVODPLCVN
+      DPUMHUNZUQUSWJVOCVSWLUQUTVADFVBVIESJWHSJWISJVIEWKSGDFVCVDESVEWGAWHSVFVHVG
+      $.
+
+    $d E w $.  $d W i w $.
+    $( Properties of a word to represent a closed walk (in an undirected
+       graph).  (Contributed by Alexander van der Vekens, 20-Mar-2018.)
+       (Revised by AV, 24-Apr-2021.) $)
+    isclwwlk $p |- ( W e. ( ClWWalks ` G ) <-> ( ( W e. Word V /\ W =/= (/) )
+                                 /\ A. i e. ( 0 ..^ ( ( # ` W ) - 1 ) )
+                                    { ( W ` i ) , ( W ` ( i + 1 ) ) } e. E
+                                 /\ { ( lastS ` W ) , ( W ` 0 ) } e. E ) ) $=
+      ( vg vw cfv wcel c0 cv c1 co cpr cc0 chash w3a wa cclwwlk cword wne caddc
+      cmin cfzo wral clsw cvv cedg cvtx df-clwwlk mptrcl fstwrdne syl 3ad2antr1
+      crab 1vgrex clwwlkg eleq2d neeq1 fveq2 oveq1d oveq2d fveq1 preq12d eleq1d
+      raleqbidv 3anbi123d elrab bitrdi 3anass anass bicomi anbi2i 3bitri bitr4i
+      wceq pm5.21nii ) ECUAJZKZEDUBZKZELUCZAMZEJZWENUDOZEJZPZBKZAQERJZNUEOZUFOZ
+      UGZEUHJZQEJZPZBKZSZTZWCWDTZWNWRSZWACUIKZWTHUIIMZLUCZWEXDJZWGXDJZPZHMZUJJZ
+      KAQXDRJZNUEOZUFOZUGXDUHJZQXDJZPZXJKSIXIUKJUBUQUAECIHAULUMWCWNWDXCWRXAWPDK
+      XCDEUNCWPDFURUOUPXCWAEXEXHBKZAXMUGZXPBKZSZIWBUQZKWTXCVTYAEIABCDUIFGUSUTXT
+      WSIEWBXDEVRZXEWDXRWNXSWRXDELVAYBXQWJAXMWMYBXLWLQUFYBXKWKNUEXDERVBVCVDYBXH
+      WIBYBXFWFXGWHWEXDEVEWGXDEVEVFVGVHYBXPWQBYBXNWOXOWPXDEUHVBQXDEVEVFVGVIVJVK
+      VSXBXAWNWRTZTWCWDYCTZTWTXAWNWRVLWCWDYCVMYDWSWCWSYDWDWNWRVLVNVOVPVQ $.
+  $}
+
+  ${
+    $d G i $.  $d W i $.  $d g i w $.
+    clwwlkbp.v $e |- V = ( Vtx ` G ) $.
+    $( Basic properties of a closed walk (in an undirected graph) as word.
+       (Contributed by Alexander van der Vekens, 15-Mar-2018.)  (Revised by AV,
+       24-Apr-2021.) $)
+    clwwlkbp $p |- ( W e. ( ClWWalks ` G )
+                      -> ( G e. _V /\ W e. Word V /\ W =/= (/) ) ) $=
+      ( vg vw vi cclwwlk cfv wcel cvv cword c0 wne w3a cv c1 co cpr cc0 wa cedg
+      caddc chash cmin cfzo wral clsw cvtx crab df-clwwlk eqid isclwwlk simp1bi
+      mptrcl 3anass sylanbrc ) CAHIJZAKJZCBLJZCMNZUAZUSUTVAOEKFPZMNGPZVCIVDQUCR
+      ZVCISEPZUBIZJGTVCUDIQUERUFRUGVCUHITVCISVGJOFVFUIILUJHCAFEGUKUOURVBVDCIVEC
+      ISAUBIZJGTCUDIQUERUFRUGCUHITCISVHJGVHABCDVHULUMUNUSUTVAUPUQ $.
+  $}
+
+  $( There is no empty closed walk (i.e. a closed walk without any edge)
+     represented by a word of vertices.  (Contributed by Alexander van der
+     Vekens, 15-Sep-2018.)  (Revised by AV, 24-Apr-2021.) $)
+  clwwlkgt0 $p |- ( W e. ( ClWWalks ` G ) -> 0 < ( # ` W ) ) $=
+    ( cclwwlk cfv wcel cvv cvtx cword c0 wne w3a cc0 chash clt eqid clwwlkbp wa
+    wbr lennncl nngt0d 3adant1 syl ) BACDEAFEZBAGDZHEZBIJZKLBMDZNRZAUDBUDOPUEUF
+    UHUCUEUFQUGUDBSTUAUB $.
+
+  ${
+    $d G i w $.
+    $( Closed walks (represented by words) are words.  (Contributed by
+       Alexander van der Vekens, 25-Mar-2018.)  (Revised by AV,
+       25-Apr-2021.) $)
+    clwwlksswrd $p |- ( ClWWalks ` G ) C_ Word ( Vtx ` G ) $=
+      ( vw vi cclwwlk cfv cvtx cword cv wcel c0 wne wa c1 caddc co cpr cedg cc0
+      chash eqid cmin cfzo wral clsw isclwwlk simp1bi simpld ssriv ) BADEZAFEZG
+      ZBHZUIIZULUKIZULJKZUMUNUOLCHZULEUPMNOULEPAQEZICRULSEMUAOUBOUCULUDERULEPUQ
+      ICUQAUJULUJTUQTUEUFUGUH $.
+  $}
+
+  ${
+    $( Existence of the set of closed walks (represented by words).
+       (Contributed by Jim Kingdon, 21-Feb-2026.) $)
+    clwwlkex $p |- ( G e. V -> ( ClWWalks ` G ) e. _V ) $=
+      ( wcel cclwwlk cfv cvtx cword wss cvv clwwlksswrd vtxex syl ssexg sylancr
+      wrdexg ) ABCZADEZAFEZGZHSICZQICAJPRICTABKRIOLQSIMN $.
+  $}
+
+  ${
+    $d G i $.  $d W i $.
+    $( A closed walk of length 1 is a loop.  (Contributed by AV,
+       24-Apr-2021.) $)
+    clwwlk1loop $p |- ( ( W e. ( ClWWalks ` G ) /\ ( # ` W ) = 1 )
+                         -> { ( W ` 0 ) , ( W ` 0 ) } e. ( Edg ` G ) ) $=
+      ( vi cclwwlk cfv wcel chash c1 wceq cc0 cpr cedg cvtx cword c0 wa co eqid
+      wi imp wne cv caddc cmin cfzo wral clsw w3a isclwwlk preq1d eleq1d biimpd
+      lsw1 ex com23 adantr 3adant2 sylbi ) BADEFZBGEZHIZJBEZVBKZALEZFZUSBAMEZNF
+      ZBOUAZPZCUBZBEVJHUCQBEKVDFCJUTHUDQUEQUFZBUGEZVBKZVDFZUHVAVESZCVDAVFBVFRVD
+      RUIVIVNVOVKVIVNVOVGVNVOSVHVGVAVNVEVGVAVNVESVGVAPZVNVEVPVMVCVDVPVLVBVBVFBU
+      MUJUKULUNUOUPTUQURT $.
+  $}
+
+  ${
+    $d A i j $.  $d B i j $.  $d G i j $.
+    $( Lemma for ~ clwwlkccat : index ` j ` is shifted up by ` ( # `` A ) ` ,
+       and the case ` i = ( ( # `` A ) - 1 ) ` is covered by the "bridge"
+       ` { ( lastS `` A ) , ( B `` 0 ) } = { ( lastS `` A ) , ( A `` 0 ) } `
+       ` e. ( Edg `` G ) ` .  (Contributed by AV, 23-Apr-2022.) $)
+    clwwlkccatlem $p |- ( ( ( ( A e. Word ( Vtx ` G ) /\ A =/= (/) )
+                            /\ A. i e. ( 0 ..^ ( ( # ` A ) - 1 ) )
+                               { ( A ` i ) , ( A ` ( i + 1 ) ) } e. ( Edg ` G )
+                            /\ { ( lastS ` A ) , ( A ` 0 ) } e. ( Edg ` G ) )
+                          /\ ( ( B e. Word ( Vtx ` G ) /\ B =/= (/) )
+                            /\ A. j e. ( 0 ..^ ( ( # ` B ) - 1 ) )
+                               { ( B ` j ) , ( B ` ( j + 1 ) ) } e. ( Edg ` G )
+                            /\ { ( lastS ` B ) , ( B ` 0 ) } e. ( Edg ` G ) )
+                          /\ ( A ` 0 ) = ( B ` 0 ) )
+     -> A. i e. ( 0 ..^ ( ( # ` ( A ++ B ) ) - 1 ) )
+        { ( ( A ++ B ) ` i ) , ( ( A ++ B ) ` ( i + 1 ) ) } e. ( Edg ` G ) ) $=
+      ( cfv wcel wa c1 caddc co cpr cc0 cfzo wceq wi cz syl adantr cuz cword c0
+      cvtx wne cedg chash cmin wral clsw w3a cconcat cun csn simplll simplr wss
+      cv lencl nn0zd fzossrbm1 ad2antrr ccatval1 syl3anc elfzom1elp1fzo preq12d
+      sselda sylan eleq1d biimprd ralimdva impancom 3adant3 com12 impcom simprl
+      3ad2ant1 simpll simprr ccatval1lsw cc nn0cnd npcan1 ad2antrl fveq2d eqtrd
+      ccatval21sw simpr eqtr4d exbiri com23 expimpd 3adant2 3imp peano2zm fveq2
+      wb fvoveq1 ralunsn mpbird 0z cn lennncl 0p1e1 fveq2i eleq2i elnnuz bitr4i
+      jca fzosplitsnm1 sylancr raleqdv anim1ci fzosubel3 rspcv 3syl simp-4l cn0
+      sylibr nn0addcl syl2an 1nn0 eluzmn sylancl 1cnd addsubassd eleqtrd fzoss2
+      ccatval2 oveq2d eleq2d ad3antrrr fzoss1 sseld sylbird imp zaddcl elfzoelz
+      simpl 1zzd elfzomelpfzo mpbid zcnd adantl addsubd sylibrd ralrimiv expcom
+      exp31 com24 ralunb sylanbrc ccatlen oveq1d ad2ant2r elnn0uz sylib nnm1nn0
+      fzoun 3ad2antr1 3ad2antl1 raleqtrrdv ) AEUCFZUAZGZAUBUDZHZCUQZAFZUVGIJKZA
+      FZLZEUEFZGZCMAUFFZIUGKZNKZUHZAUIFZMAFZLZUVLGZUJZBUVCGZBUBUDZHZDUQZBFZUWFI
+      JKBFZLZUVLGZDMBUFFZIUGKZNKZUHZBUIFMBFZLUVLGZUJZUVSUWOOZUJZUVGABUKKZFZUVIU
+      WTFZLZUVLGZCMUVNNKZUVNUVNUWLJKZNKZULZMUWTUFFZIUGKZNKZUWSUXDCUXEUHZUXDCUXG
+      UHZUXDCUXHUHUWSUXLUXDCUVPUVOUMULZUHZUWSUXOUXDCUVPUHZUVOUWTFZUVOIJKZUWTFZL
+      ZUVLGZHZUWSUXPUYAUWBUWQUXPUWRUWQUWBUXPUWEUWNUWBUXPPZUWPUWCUYCUWDUWBUWCUXP
+      UVFUVQUWCUXPPUWAUVFUWCUVQUXPUVFUWCHZUVMUXDCUVPUYDUVGUVPGZHZUXDUVMUYFUXCUV
+      KUVLUYFUXAUVHUXBUVJUYFUVDUWCUVGUXEGUXAUVHOUVDUVEUWCUYEUNZUVFUWCUYEUOZUYDU
+      VPUXEUVGUVDUVPUXEUPZUVEUWCUVDUVNQGZUYIUVDUVNUVBAURZUSZUVNUTRVAVFUVBUVBABU
+      VGVBVCUYFUVDUWCUVIUXEGZUXBUVJOUYGUYHUYDUYJUYEUYMUVDUYJUVEUWCUYLVAUVGUVNVD
+      VGUVBUVBABUVIVBVCVEVHVIVJVKVLVMSVPVNVLUWBUWQUWRUYAUVFUWAUWQUWRUYAPZPUVQUW
+      QUVFUWAHZUYNUWEUWNUYOUYNPUWPUWEUVFUWAUYNUWEUVFHZUWRUWAUYAUYPUWRUYAUWAUYPU
+      WRHZUXTUVTUVLUYQUXQUVRUXSUVSUYPUXQUVROZUWRUYPUVDUWCUVEUYRUWEUVDUVEVOZUWCU
+      WDUVFVQZUWEUVDUVEVRABUVBVSVCSUYQUXSUWOUVSUYPUXSUWOOUWRUYPUXSUVNUWTFZUWOUY
+      PUXRUVNUWTUVDUXRUVNOZUWEUVEUVDUVNVTGZVUBUVDUVNUYKWAZUVNWBRWCWDUYPUVDUWCUW
+      DVUAUWOOUYSUYTUWCUWDUVFUOABUVBWFVCWESUYPUWRWGWHVEVHWIWJWKVPVMWLWMXHUWSUVO
+      QGZUXOUYBWPUWBUWQVUEUWRUVFUVQVUEUWAUVDVUEUVEUVDUYJVUEUYLUVNWNRSVPVPUXDUYA
+      CUVPUVOQUVGUVOOZUXCUXTUVLVUFUXAUXQUXBUXSUVGUVOUWTWOUVGUVOIUWTJWQVEVHWRRWS
+      UWBUWQUXLUXOWPZUWRUVFUVQVUGUWAUVFUXDCUXEUXNUVFMQGUVNMIJKZTFZGZUXEUXNOWTUV
+      FUVNXAGZVUJUVBAXBVUJUVNITFZGVUKVUIVULUVNVUHITXCXDXEUVNXFXGXRMUVNXIXJXKVPV
+      PWSUWBUWQUWRUXMUVFUVQUWQUWRUXMPZPUWAUWQUVFVUMUWEUWNUVFVUMPZUWPUWEUWNVUNUW
+      EUWRUVFUWNUXMUWEUVFUWRUWNUXMPZUVFUWEUWRVUOPUVFUWEHZUWRUWNUXMVUPUWRHZUWNHU
+      XDCUXGVUQUVGUXGGZUWNUXDVUQVURHZUWNUVGUVNUGKZBFZVUTIJKZBFZLZUVLGZUXDVUSVUR
+      UWLQGZHVUTUWMGUWNVVEPVUQVVFVURVUPVVFUWRUWCVVFUVFUWDUWCUWKQGZVVFUWCUWKUVBB
+      URZUSZUWKWNRWCSXLUVGUVNUWLXMUWJVVEDVUTUWMUWFVUTOZUWIVVDUVLVVJUWGVVAUWHVVC
+      UWFVUTBWOUWFVUTIBJWQVEVHXNXOVUSUXCVVDUVLVUSUXAVVAUXBVVCVUSUVDUWCUVGUVNUVN
+      UWKJKZNKZGUXAVVAOUVDUVEUWEUWRVURXPZVUPUWCUWRVURUVFUWCUWDVOVAZVUQUXGVVLUVG
+      VUPUXGVVLUPZUWRVUPVVKUXFTFZGVVOVUPVVKVVKIUGKZTFZVVPVUPVVKQGZIXQGZVVKVVRGU
+      VFUVNXQGZUWKXQGZVVSUWEUVDVWAUVEUYKSUWCVWBUWDVVHSVWAVWBHVVKUVNUWKXSUSXTYAV
+      VKIYBYCVUPVVQUXFTVUPUVNUWKIUVDVUCUVEUWEVUDVAZUWCUWKVTGUVFUWDUWCUWKVVHWAWC
+      VUPYDYEZWDYFUXFUVNVVKYGRSVFUVBABUVGYHVCVUSUXBUVIUVNUGKZBFZVVCVUSUVDUWCUVI
+      VVLGZUXBVWFOVVMVVNVUSUVGUVOVVQNKZGZVWGVUQVURVWIVUQVURUVGUVNVVQNKZGZVWIVUP
+      VWKVURWPUWRVUPVWJUXGUVGVUPVVQUXFUVNNVWDYIYJSVUQVWJVWHUVGVUQUVNUVOTFGZVWJV
+      WHUPUVDVWLUVEUWEUWRUVDUYJVVTVWLUYLYAUVNIYBYCYKUVNUVOVVQYLRYMYNYOVUQUYJVVS
+      HZUVGQGZIQGZHVWIVWGWPVURVUPVWMUWRUVFUYJVVGVWMUWEUVDUYJUVEUYLSUWCVVGUWDVVI
+      SUYJVVGHUYJVVSUYJVVGYRUVNUWKYPXHXTSVURVWNVWOUVGUVNUXFYQZVURYSXHUVGIUVNVVK
+      YTXTUUAUVBABUVIYHVCVUSVWEVVBBVUSUVGIUVNVURUVGVTGVUQVURUVGVWPUUBUUCVUSYDVU
+      PVUCUWRVURVWCVAUUDWDWEVEVHUUEVKUUFUUHUUGWJUUIYOVLVMVPWMUXDCUXEUXGUUJUUKUW
+      BUWQUXKUXHOZUWRUVFUVQUWQVWQUWAUVFUWNUWEVWQUWPVUPUXKMUXFNKZUXHVUPUXJUXFMNV
+      UPUXJVVQUXFUVDUWCUXJVVQOUVEUWDUVDUWCHUXIVVKIUGUVBUVBABUULUUMUUNVWDWEYIUVF
+      UVNMTFGZUWLXQGZVWRUXHOUWEUVDVWSUVEUVDVWAVWSUYKUVNUUOUUPSUWEUWKXAGVWTUVBBX
+      BUWKUUQRMUVNUWLUURXTWEUUSUUTVLUVA $.
+
+    $( The concatenation of two words representing closed walks anchored at the
+       same vertex represents a closed walk.  The resulting walk is a "double
+       loop", starting at the common vertex, coming back to the common vertex
+       by the first walk, following the second walk and finally coming back to
+       the common vertex again.  (Contributed by AV, 23-Apr-2022.) $)
+    clwwlkccat $p |- ( ( A e. ( ClWWalks ` G ) /\ B e. ( ClWWalks ` G )
+                         /\ ( A ` 0 ) = ( B ` 0 ) )
+                       -> ( A ++ B ) e. ( ClWWalks ` G ) ) $=
+      ( vi vj cfv wcel c0 wne wa c1 co cpr cc0 chash cmin cfzo wral w3a wceq cv
+      cvtx cword caddc cedg clsw cconcat cclwwlk simp1l ccatcl wb ccat0 adantlr
+      simpr biimtrdi necon3d impr 3ad2antr1 3ad2antl1 jca 3adant3 clwwlkccatlem
+      syl2an simpl1l simpr1l simpr1r lswccatn0lsw syl3anc clt wbr cfn fihashgt0
+      wrdfin sylan 3ad2ant1 adantr ccatfv0 simp3 eqtrd preq12d simp23 3jca eqid
+      eqeltrd isclwwlk biid 3anbi123i 3imtr4i ) ACUBFZUCZGZAHIZJZDUAZAFWNKUDLZA
+      FMCUEFZGDNAOFZKPLQLRZAUFFNAFZMWPGZSZBWJGZBHIZJZEUAZBFXEKUDLBFMWPGENBOFKPL
+      QLRZBUFFZNBFZMZWPGZSZWSXHTZSZABUGLZWJGZXNHIZJZWNXNFWOXNFMWPGDNXNOFKPLQLRZ
+      XNUFFZNXNFZMZWPGZSACUHFZGZBYCGZXLSXNYCGXMXQXRYBXAXKXQXLXAXKJZXOXPXAWKXBXO
+      XKWKWLWRWTUIXBXCXFXJUIWIABUJVCWMWRXKXPWTWMXFXDXPXJWMXBXCXPWMXBJZXNHBHYGXN
+      HTZAHTZBHTZJZYJWKXBYHYKUKWLWIWIABULUMYIYJUNUOUPUQURUSUTVAABDECVBXMYAXIWPX
+      MXSXGXTXHXAXKXSXGTZXLYFWKXBXCYLWKWLWRWTXKVDZXBXCXFXJXAVEZXBXCXFXJXAVFABWI
+      VGVHVAXMXTWSXHXAXKXTWSTZXLYFWKXBNWQVIVJZYOYMYNXAYPXKWMWRYPWTWKAVKGWLYPWIA
+      VMAVLVNVOVPABWIVQVHVAXAXKXLVRVSVTXAXDXFXJXLWAWDWBYDXAYEXKXLXLDWPCWIAWIWCZ
+      WPWCZWEEWPCWIBYQYRWEXLWFWGDWPCWIXNYQYRWEWH $.
+  $}
+
+  $( A closed walk in a multigraph has a length of at least 2 (because it
+     cannot have a loop).  (Contributed by Alexander van der Vekens,
+     16-Sep-2018.)  (Revised by AV, 24-Apr-2021.) $)
+  umgrclwwlkge2 $p |- ( G e. UMGraph -> ( P e. ( ClWWalks ` G )
+                                           -> 2 <_ ( # ` P ) ) ) $=
+    ( cumgr wcel cclwwlk cfv c2 wa cc0 wne c1 w3a c0 eqid adantl wi wceq syl cz
+    expcom chash cle wbr cn0 cvv cword clwwlkbp lencl 3ad2ant2 cfn wb fihasheq0
+    cvtx wrdfin bicomd necon3bid biimpd a1i 3imp wn wo nn0zd 1z sylancl exmiddc
+    zdceq cedg clwwlk1loop umgredgne eqneqall mpsyl syl6 com23 imp4c neqne jaoi
+    wdc cpr a1d mpcom 3jca mpdan nn0n0n1ge2 ex ) BCDZABEFDZGAUAFZUBUCZWEWFHZWGU
+    DDZWGIJZWGKJZLZWHWIBUEDZABUMFZUFDZAMJZLZWMWFWRWEBWOAWONUGOWIWRHZWJWKWLWRWJW
+    IWPWNWJWQWOAUHUIOZWRWKWIWNWPWQWKWPWQWKPPWNWPWQWKWPAMWGIWPWGIQZAMQZWPAUJDXAX
+    BUKWOAUNAULRUOUPUQURUSOWGKQZXCUTZVAZWSWLWSXCVQZXEWSWGSDKSDXFWSWGWTVBVCWGKVF
+    VDXCVERXCWSWLPXDXCWEWFWRWLXCWFWEWRWLPZXCWFIAFZXHVRBVGFZDZWEXGPWFXCXJBAVHTWE
+    XJXGXHXHQWEXJHXHXHJXGXHNXIBXHXHXINVIXGXHXHVJVKTVLVMVNXDWLWSWGKVOVSVPVTWAWBW
+    GWCRWD $.
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Closed walks of a fixed length as words
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $c ClWWalksN $.
+
+  $( Extend class notation with closed walks (in an undirected graph) of a
+     fixed length as word over the set of vertices. $)
+  cclwwlkn $a class ClWWalksN $.
+
+  ${
+    $d g n w $.
+    $( Define the set of all closed walks of a fixed length ` n ` as words over
+       the set of vertices in a graph ` g ` .  If ` 0 < n ` , such a word
+       corresponds to the sequence p(0) p(1) ... p(n-1) of the vertices in a
+       closed walk p(0) e(f(1)) p(1) e(f(2)) ... p(n-1) e(f(n)) p(n)=p(0) .
+       For ` n = 0 ` , the set is empty, see ~ clwwlkn0 .  (Contributed by
+       Alexander van der Vekens, 20-Mar-2018.)  (Revised by AV, 24-Apr-2021.)
+       (Revised by AV, 22-Mar-2022.) $)
+    df-clwwlkn $a |- ClWWalksN = ( n e. NN0 , g e. _V |->
+                                 { w e. ( ClWWalks ` g ) | ( # ` w ) = n } ) $.
+  $}
+
+  ${
+    $d G g n w $.  $d N g n w $.
+    $( The set of closed walks of a fixed length ` N ` as words over the set of
+       vertices in a graph ` G ` .  (Contributed by Alexander van der Vekens,
+       20-Mar-2018.)  (Revised by AV, 24-Apr-2021.)  (Revised by AV,
+       22-Mar-2022.) $)
+    clwwlkng $p |- ( ( N e. NN0 /\ G e. V ) ->
+        ( N ClWWalksN G ) = { w e. ( ClWWalks ` G ) | ( # ` w ) = N } ) $=
+      ( vn vg cn0 wcel wa cvv cv chash cfv wceq cclwwlk crab cclwwlkn co adantl
+      simpl elex eqid clwwlkex rabexd fveq2 adantr rabeqbidv df-clwwlkn ovmpoga
+      wb eqeq2 syl3anc ) CGHZBDHZIZUMBJHZAKLMZCNZABOMZPZJHCBQRUTNUMUNTUNUPUMBDU
+      ASUOURAUSUTJUTUBUNUSJHUMBDUCSUDEFCBGJUQEKZNZAFKZOMZPUTQJVACNZVCBNZIVBURAV
+      DUSVFVDUSNVEVCBOUESVEVBURUJVFVACUQUKUFUGAFEUHUIUL $.
+  $}
+
+  ${
+    $d G w $.  $d N w $.  $d W w $.  $d g n w $.
+    $( A word over the set of vertices representing a closed walk of a fixed
+       length.  (Contributed by Alexander van der Vekens, 15-Mar-2018.)
+       (Revised by AV, 24-Apr-2021.)  (Revised by AV, 22-Mar-2022.) $)
+    isclwwlkng $p |- ( N e. NN0 -> ( W e. ( N ClWWalksN G )
+        <-> ( W e. ( ClWWalks ` G ) /\ ( # ` W ) = N ) ) ) $=
+      ( vn vg vw cn0 wcel cvv cclwwlkn co cclwwlk cfv chash wceq wa wi crab a1i
+      cv df-clwwlkn elmpocl2 cvtx cword c0 eqid clwwlkbp simp1d adantr clwwlkng
+      wne wb eleq2d fveqeq2 elrab bitrdi ex pm5.21ndd ) BGHZAIHZCBAJKZHZCALMZHZ
+      CNMBOZPZVBUTQUSDEGIFTZNMZDTOFETLMRBAJCFEDUAUBSVFUTQUSVDUTVEVDUTCAUCMZUDHC
+      UEUKAVICVIUFUGUHUISUSUTVBVFULUSUTPZVBCVHBOZFVCRZHVFVJVAVLCFABIUJUMVKVEFCV
+      CVGCBNUNUOUPUQUR $.
+  $}
+
+  ${
+    $d g n w $.
+    $( A word over the set of vertices representing a closed walk of a fixed
+       length.  (Contributed by Jim Kingdon, 22-Feb-2026.) $)
+    isclwwlkni $p |- ( W e. ( N ClWWalksN G )
+        -> ( W e. ( ClWWalks ` G ) /\ ( # ` W ) = N ) ) $=
+      ( vn vg vw cclwwlkn co wcel cclwwlk cfv chash wa cn0 wb cvv cv df-clwwlkn
+      wceq crab elmpocl1 isclwwlkng syl ibi ) CBAGHIZCAJKICLKBSMZUEBNIUEUFODENP
+      FQLKDQSFEQJKTBAGCFEDRUAABCUBUCUD $.
+  $}
+
+  ${
+    $d G w $.  $d G x $.  $d g n w $.
+    $( There is no closed walk of length 0 (i.e. a closed walk without any
+       edge) represented by a word of vertices.  (Contributed by Alexander van
+       der Vekens, 15-Sep-2018.)  (Revised by AV, 24-Apr-2021.) $)
+    clwwlkn0 $p |- ( 0 ClWWalksN G ) = (/) $=
+      ( vx vn vg vw cc0 cclwwlkn co c0 wcel cvv cn0 chash cfv wceq cclwwlk crab
+      cv clt wbr df-clwwlkn elmpocl2 noel pm2.21i 0nn0 clwwlkng mpan rabeq0 0re
+      ltnri breq2 mtbiri clwwlkgt0 nsyl3 mprgbir eqtrdi eleq2d pm5.21nii eqriv
+      wn ) BFAGHZIBRZVAJAKJZVBIJZCDLKERZMNZCROEDRPNQFAGVBEDCUAUBVDVCVBUCUDVCVAI
+      VBVCVAVFFOZEAPNZQZIFLJVCVAVIOUEEAFKUFUGVIIOVGUTEVHVGEVHUHVGFVFSTZVEVHJVGV
+      JFFSTFUIUJVFFFSUKULAVEUMUNUOUPUQURUS $.
+  $}
+
+  $( A closed walk of a fixed length as word is a closed walk (in an undirected
+     graph) as word.  (Contributed by Alexander van der Vekens, 15-Mar-2018.)
+     (Revised by AV, 24-Apr-2021.)  (Proof shortened by AV, 22-Mar-2022.) $)
+  clwwlkclwwlkn $p |- ( W e. ( N ClWWalksN G ) -> W e. ( ClWWalks ` G ) ) $=
+    ( cclwwlkn co wcel cclwwlk cfv chash wceq isclwwlkni simpld ) CBADEFCAGHFCI
+    HBJABCKL $.
+
+  ${
+    $d G w $.  $d N w $.
+    $( The closed walks of a fixed length as words are closed walks (in an
+       undirected graph) as words.  (Contributed by Alexander van der Vekens,
+       15-Mar-2018.)  (Revised by AV, 12-Apr-2021.) $)
+    clwwlksclwwlkn $p |- ( N ClWWalksN G ) C_ ( ClWWalks ` G ) $=
+      ( vw cclwwlkn co cclwwlk cfv cv clwwlkclwwlkn ssriv ) CBADEAFGABCHIJ $.
+  $}
+
+  $( The length of a word representing a closed walk of a fixed length is this
+     fixed length.  (Contributed by AV, 22-Mar-2022.) $)
+  clwwlknlen $p |- ( W e. ( N ClWWalksN G ) -> ( # ` W ) = N ) $=
+    ( cclwwlkn co wcel cclwwlk cfv chash wceq isclwwlkni simprd ) CBADEFCAGHFCI
+    HBJABCKL $.
+
+  ${
+    $d g n w $.
+    $( The length of a closed walk of a fixed length as word is a positive
+       integer.  (Contributed by AV, 22-Mar-2022.) $)
+    clwwlknnn $p |- ( W e. ( N ClWWalksN G ) -> N e. NN ) $=
+      ( vn vg vw cclwwlkn co wcel cn cc0 wceq c0 noel clwwlkn0 eleq2i mtbir cn0
+      cv cfv oveq1 eleq2d mtbiri con2i wo cvv chash cclwwlk df-clwwlkn elmpocl1
+      crab elnn0 sylib ecased ) CBAGHZIZBJIZBKLZURUPURUPCKAGHZIZUTCMICNUSMCAOPQ
+      URUOUSCBKAGUAUBUCUDUPBRIUQURUEDERUFFSUGTDSLFESUHTUKBAGCFEDUIUJBULUMUN $.
+  $}
+
+  ${
+    $d G w $.  $d N w $.  $d W w $.
+    $( A word over the set of vertices representing a closed walk of a fixed
+       length.  (Contributed by Alexander van der Vekens, 15-Mar-2018.)
+       (Revised by AV, 24-Apr-2021.)  (Revised by AV, 22-Mar-2022.) $)
+    isclwwlkn $p |- ( W e. ( N ClWWalksN G )
+                      <-> ( W e. ( ClWWalks ` G ) /\ ( # ` W ) = N ) ) $=
+      ( cclwwlkn co wcel cn0 cclwwlk cfv chash wceq clwwlknnn nnnn0d simpr cvtx
+      wa cword cvv c0 wne eqid clwwlkbp simp2d lencl adantr eqeltrrd isclwwlkng
+      syl pm5.21nii ) CBADEFZBGFCAHIFZCJIZBKZPZUJBABCLMUNULBGUKUMNUKULGFZUMUKCA
+      OIZQFZUOUKARFUQCSTAUPCUPUAUBUCUPCUDUHUEUFABCUGUI $.
+  $}
+
+  ${
+    clwwlknwrd.v $e |- V = ( Vtx ` G ) $.
+    $( A closed walk of a fixed length as word is a word over the vertices.
+       (Contributed by AV, 30-Apr-2021.) $)
+    clwwlknwrd $p |- ( W e. ( N ClWWalksN G ) -> W e. Word V ) $=
+      ( cclwwlkn co wcel cclwwlk cfv chash wceq wa cword isclwwlkni c0 clwwlkbp
+      cvv wne simp2d adantr syl ) DBAFGHDAIJHZDKJBLZMDCNHZABDOUCUEUDUCARHUEDPSA
+      CDEQTUAUB $.
+
+    $( Basic properties of a closed walk of a fixed length as word.
+       (Contributed by AV, 30-Apr-2021.)  (Proof shortened by AV,
+       22-Mar-2022.) $)
+    clwwlknbp $p |- ( W e. ( N ClWWalksN G )
+                      -> ( W e. Word V /\ ( # ` W ) = N ) ) $=
+      ( cclwwlkn co wcel cword chash cfv wceq clwwlknwrd clwwlknlen jca ) DBAFG
+      HDCIHDJKBLABCDEMABDNO $.
+  $}
+
+  ${
+    $d G i $.  $d W i $.
+    isclwwlknx.v $e |- V = ( Vtx ` G ) $.
+    isclwwlknx.e $e |- E = ( Edg ` G ) $.
+    $( Characterization of a word representing a closed walk of a fixed length,
+       definition of ` ClWWalks ` expanded.  (Contributed by AV, 25-Apr-2021.)
+       (Proof shortened by AV, 22-Mar-2022.) $)
+    isclwwlknx $p |- ( N e. NN -> ( W e. ( N ClWWalksN G )
+                  <-> ( ( W e. Word V /\ A. i e. ( 0 ..^ ( ( # ` W ) - 1 ) )
+                                         { ( W ` i ) , ( W ` ( i + 1 ) ) } e. E
+                          /\ { ( lastS ` W ) , ( W ` 0 ) } e. E )
+                        /\ ( # ` W ) = N ) ) ) $=
+      ( cn wcel cfv c1 co cpr cc0 wa w3a wb 3anass anbi1i cword c0 wne cv caddc
+      chash cmin cfzo wral clsw wceq cclwwlkn eleq1 len0nnbi biimprcd biimtrrdi
+      wi impcom imp biantrurd bicomd pm5.32da pm5.32rd cclwwlk nnnn0 isclwwlkng
+      ex cn0 syl isclwwlk anass 3bitri bitrdi a1i 3bitr4d ) DIJZFEUAJZFUBUCZAUD
+      ZFKVSLUEMFKNBJAOFUFKZLUGMUHMUIZFUJKOFKNBJZPZPZPZVTDUKZPZVQWCPZWFPZFDCULMJ
+      ZVQWAWBQZWFPZVPWFWEWHVPWFWEWHRVPWFPZVQWDWCWMVQPZWCWDWNVRWCWMVQVRWFVPVQVRU
+      QZWFVPVTIJZWOVTDIUMVQVRWPEFUNUOUPURUSUTVAVBVGVCVPWJFCVDKJZWFPZWGVPDVHJWJW
+      RRDVECDFVFVIWQWEWFWQVQVRPZWAWBQWSWCPWEABCEFGHVJWSWAWBSVQVRWCVKVLTVMWLWIRV
+      PWKWHWFVQWAWBSTVNVO $.
+
+    $d N i $.
+    $( Properties of a set being a closed walk (represented by a word).
+       (Contributed by Alexander van der Vekens, 17-Jun-2018.)  (Revised by AV,
+       24-Apr-2021.)  (Proof shortened by AV, 23-Mar-2022.) $)
+    clwwlknp $p |- ( W e. ( N ClWWalksN G )
+     -> ( ( W e. Word V /\ ( # ` W ) = N )
+          /\ A. i e. ( 0 ..^ ( N - 1 ) ) { ( W ` i ) , ( W ` ( i + 1 ) ) } e. E
+          /\ { ( lastS ` W ) , ( W ` 0 ) } e. E ) ) $=
+      ( co wcel cfv wa c1 cpr cc0 cmin cfzo wral w3a adantr cclwwlkn cword wceq
+      chash cv caddc clwwlknbp simpr clwwlknnn isclwwlknx 3simpc biimtrdi mpcom
+      clsw cn wb oveq1 oveq2d raleqdv anbi1d ad2antll mpbid mpdan 3anass sylibr
+      jca ) FDCUAIJZFEUBJZFUDKZDUCZLZAUEZFKVLMUFIFKNBJZAODMPIZQIZRZFUNKOFKNBJZL
+      ZLZVKVPVQSVGVKVSCDEFGUGVGVKLZVKVRVGVKUHVTVMAOVIMPIZQIZRZVQLZVRVGWDVKDUOJZ
+      VGWDCDFUIWEVGVHWCVQSZVJLWDABCDEFGHUJWFWDVJVHWCVQUKTULUMTVJWDVRUPVGVHVJWCV
+      PVQVJVMAWBVOVJWAVNOQVIDMPUQURUSUTVAVBVFVCVKVPVQVDVE $.
+  $}
+
+  ${
+    $d G i $.  $d W i $.
+    $( A closed walk of length 1 represented as word is a word consisting of 1
+       symbol representing a vertex connected to itself by (at least) one edge,
+       that is, a loop.  (Contributed by AV, 24-Apr-2021.)  (Revised by AV,
+       11-Feb-2022.) $)
+    clwwlkn1 $p |- ( W e. ( 1 ClWWalksN G ) <-> ( ( # ` W ) = 1
+                /\ W e. Word ( Vtx ` G ) /\ { ( W ` 0 ) } e. ( Edg ` G ) ) ) $=
+      ( vi c1 co wcel cfv cpr cc0 cmin cfzo wral w3a wceq wa eqid 3anass eqtrdi
+      wb c0 cclwwlkn cvtx cword cv caddc cedg chash csn cn 1nn isclwwlknx ax-mp
+      clsw ral0 oveq1 oveq2d fzo0 raleqdv adantr mpbiri biantrurd ancoms preq1d
+      1m1e0 dfsn2 eqtr4di eleq1d bitr3d pm5.32da bitrid pm5.32ri bitr2i 3bitri
+      lsw1 ancom ) BDAUAEFZBAUBGZUCFZCUDZBGVSDUEEBGHAUFGZFZCIBUGGZDJEZKEZLZBUMG
+      ZIBGZHZVTFZMZWBDNZOZVRWGUHZVTFZOZWKOZWKVRWNMZDUIFVPWLSUJCVTADVQBVQPVTPUKU
+      LWKWJWOWJVRWEWIOZOWKWOVRWEWIQWKVRWRWNWKVROZWIWRWNWSWEWIWSWEWACTLZWACUNWKW
+      EWTSVRWKWACWDTWKWDIIKETWKWCIIKWKWCDDJEIWBDDJUOVDRUPIUQRURUSUTVAWSWHWMVTWS
+      WHWGWGHWMWSWFWGWGVRWKWFWGNVQBVNVBVCWGVEVFVGVHVIVJVKWQWKWOOWPWKVRWNQWKWOVO
+      VLVM $.
+  $}
+
+  $( The singleton word consisting of a vertex ` V ` represents a closed walk
+     of length 1 iff there is a loop at vertex ` V ` .  (Contributed by AV,
+     11-Feb-2022.) $)
+  loopclwwlkn1b $p |- ( V e. ( Vtx ` G )
+              -> ( { V } e. ( Edg ` G ) <-> <" V "> e. ( 1 ClWWalksN G ) ) ) $=
+    ( cs1 c1 cclwwlkn co wcel chash cfv wceq cvtx cword cc0 cedg clwwlkn1 sneqd
+    csn w3a eleq1d adantr s1fv biimpcd 3ad2ant3 com12 s1leng s1cl eqcomd biimpa
+    wi wa 3jca ex impbid bitr2id ) BCZDAEFGUOHIDJZUOAKIZLGZMUOIZQZANIZGZRZBUQGZ
+    BQZVAGZAUOOVDVCVFVCVDVFVBUPVDVFUIURVDVBVFVDUTVEVAVDUSBBUQUAZPSUBUCUDVDVFVCV
+    DVFUJUPURVBVDUPVFBUQUETVDURVFBUQUFTVDVFVBVDVEUTVAVDBUSVDUSBVGUGPSUHUKULUMUN
+    $.
+
+  ${
+    $d G v $.  $d W v $.
+    $( A word represents a closed walk of length 1 iff this word is a singleton
+       word consisting of a vertex with an attached loop.  (Contributed by AV,
+       11-Feb-2022.) $)
+    clwwlkn1loopb $p |- ( W e. ( 1 ClWWalksN G )
+           <-> E. v e. ( Vtx ` G ) ( W = <" v "> /\ { v } e. ( Edg ` G ) ) ) $=
+      ( c1 cclwwlkn wcel chash cfv wceq cc0 csn w3a wa wrex sneqd eleq1d biimpd
+      wi imp adantr co cvtx cword cedg cv cs1 clwwlkn1 wrdl1exs1 fveq1 sylan9eq
+      s1fv ex com13 ancld reximdva syl5com expcom 3imp s1leng s1cl 3jca adantrl
+      eqcomd wb fveqeq2 eleq1 3anbi123d ad2antrl mpbird rexlimiva impbii bitri
+      ) CDBEUAFCGHDIZCBUBHZUCZFZJCHZKZBUDHZFZLZCAUEZUFZIZWBKZVSFZMZAVNNZBCUGWAW
+      HVMVPVTWHVPVMVTWHRVPVMMWDAVNNVTWHVNCAUHVTWDWGAVNVTWBVNFZMWDWFVTWIWDWFRWDW
+      IVTWFWDWIVTWFRWDWIMZVTWFWJVRWEVSWJVQWBWDWIVQJWCHZWBJCWCUIZWBVNUKZUJOPQULU
+      MSUNUOUPUQURWGWAAVNWIWGMWAWCGHDIZWCVOFZWKKZVSFZLZWIWFWRWDWIWFMWNWOWQWIWNW
+      FWBVNUSTWIWOWFWBVNUTTWIWFWQWIWFWQWIWEWPVSWIWBWKWIWKWBWMVCOPQSVAVBWDWAWRVD
+      WIWFWDVMWNVPWOVTWQCWCDGVECWCVOVFWDVRWPVSWDVQWKWLOPVGVHVIVJVKVL $.
+  $}
+
+  ${
+    $d G i $.  $d W i $.
+    $( A closed walk of length 2 represented as word is a word consisting of 2
+       symbols representing (not necessarily different) vertices connected by
+       (at least) one edge.  (Contributed by Alexander van der Vekens,
+       19-Sep-2018.)  (Revised by AV, 25-Apr-2021.) $)
+    clwwlkn2 $p |- ( W e. ( 2 ClWWalksN G ) <-> ( ( # ` W ) = 2
+                             /\ W e. Word ( Vtx ` G )
+                             /\ { ( W ` 0 ) , ( W ` 1 ) } e. ( Edg ` G ) ) ) $=
+      ( vi c2 co wcel cfv c1 cpr cc0 cmin cfzo wral w3a wceq eqid 3anass eqtrdi
+      wa eleq1d cclwwlkn cvtx cword cv caddc cedg chash cn 2nn isclwwlknx ax-mp
+      clsw wb csn oveq1 2m1e1 oveq2d fzo01 adantr raleqdv fveq2 fv0p1e1 preq12d
+      ralsn bitrdi prcom lswwrd fveq2d sylan9eqr preq2d eqtrid anbi12d pm5.32da
+      c0ex anidm bitrid pm5.32ri ancom bitr2i 3bitri ) BDAUAEFZBAUBGZUCFZCUDZBG
+      ZWDHUEEBGZIZAUFGZFZCJBUGGZHKEZLEZMZBULGZJBGZIZWHFZNZWJDOZSZWCWOHBGZIZWHFZ
+      SZWSSZWSWCXCNZDUHFWAWTUMUICWHADWBBWBPWHPUJUKWSWRXDWRWCWMWQSZSWSXDWCWMWQQW
+      SWCXGXCWSWCSZXGXCXCSXCXHWMXCWQXCXHWMWICJUNZMXCXHWICWLXIWSWLXIOWCWSWLJHLEX
+      IWSWKHJLWSWKDHKEHWJDHKUOUPRZUQURRUSUTWIXCCJVNWDJOZWGXBWHXKWEWOWFXAWDJBVAB
+      WDVBVCTVDVEXHWPXBWHXHWPWOWNIXBWNWOVFXHWNXAWOWCWSWNWKBGXAWBBVGWSWKHBXJVHVI
+      VJVKTVLXCVOVEVMVPVQXFWSXDSXEWSWCXCQWSXDVRVSVT $.
+  $}
+
+  ${
+    $d E i $.  $d G i $.  $d N i $.  $d W i $.  $d Z i $.
+    clwwlkext2edg.v $e |- V = ( Vtx ` G ) $.
+    clwwlkext2edg.e $e |- E = ( Edg ` G ) $.
+    $( If a word concatenated with a vertex represents a closed walk (in a
+       graph), there is an edge between this vertex and the last vertex of the
+       word, and between this vertex and the first vertex of the word.
+       (Contributed by Alexander van der Vekens, 3-Oct-2018.)  (Revised by AV,
+       27-Apr-2021.)  (Proof shortened by AV, 22-Mar-2022.) $)
+    clwwlkext2edg $p |- ( ( ( W e. Word V /\ Z e. V /\ N e. ( ZZ>= ` 2 ) )
+                             /\ ( W ++ <" Z "> ) e. ( N ClWWalksN G ) )
+                           -> ( { ( lastS ` W ) , Z } e. E
+                                /\ { Z , ( W ` 0 ) } e. E ) ) $=
+      ( co wcel c2 cfv cc0 wa wi c1 cmin wceq adantr ex vi cs1 cconcat cclwwlkn
+      cword cuz w3a clsw cpr cn clwwlknnn caddc chash cfzo isclwwlknx ige2m2fzo
+      cv wral 3ad2ant3 oveq1 oveq2d eleq2d adantl mpbird fvoveq1 preq12d eleq1d
+      wb fveq2 syl wrdlenccats1lenm1g eqcomd sylan9eq 3adant3 eluzelcn subsub4d
+      rspcv 1cnd a1i eqtr2d syld imp fveq2d c0 wne simpl1 s1cl 3ad2ant2 clt wbr
+      1p1e2 cz cle eluz2 cr zre 1red 2re simpl 1lt2 simpr ltletrd posdifd mpbid
+      3imp sylbi ad2antlr breq2 cfn wrdfin fihashneq0 3adantl2 3jca ccatval1lsw
+      id eqtrd 2m1e1 2cnd subsubd eqeq2 syl5ibrcom ccatws1ls sylibd com13 imp31
+      lswccats1 ccatfv0 syl3anc impcom biimpcd impl jca biimtrdi mpcom ) EFUBZU
+      CIZCBUDIJZEDUEZJZFDJZCKUFLJZUGZEUHLZFUIZAJZFMELZUIZAJZNZCUJJZYQUUBUUIOZBC
+      YPUKUUJYQYPYRJZUAUQZYPLZUUMPULIYPLZUIZAJZUAMYPUMLZPQIZUNIZURZYPUHLZMYPLZU
+      IZAJZUGZUURCRZNZUUKUAABCDYPGHUOUVHUUBUUIUVHUUBNUUEUUHUVFUVGUUBUUEUVAUULUV
+      GUUBUUEOOUVEUUBUVGUVAUUEUUBUVGUVAUUEOUUBUVGNZUVACKQIZYPLZUVJPULIZYPLZUIZA
+      JZUUEUVIUVJUUTJZUVAUVOOUVIUVPUVJMCPQIZUNIZJZUUBUVSUVGUUAYSUVSYTCUPUSSUVGU
+      VPUVSVHUUBUVGUUTUVRUVJUVGUUSUVQMUNUURCPQUTZVAVBVCVDUUQUVOUAUVJUUTUUMUVJRZ
+      UUPUVNAUWAUUNUVKUUOUVMUUMUVJYPVIUUMUVJPYPULVEVFVGVQVJUVIUVNUUDAUVIUVKUUCU
+      VMFUVIUVKEUMLZPQIZYPLZUUCUVIUVJUWCYPUUBUVGUVJUWCRZUUBUVGUWBUVQRZUWEYSYTUV
+      GUWFOUUAYSYTNZUVGUWFUWGUVGUWBUUSUVQUWGUUSUWBDFDEVKVLUVTVMTVNZUUBUWFUWEUUB
+      UWFUVJUVQPQIZUWCUUAYSUVJUWIRYTUUAUWICPPULIZQIUVJUUACPPKCVOZUUAVRZUWLVPUUA
+      UWJKCQUWJKRUUAWKVSVAVTUSUWFUWCUWIUWBUVQPQUTVLVMTWAWBWCUVIYSYOYRJZEWDWEZUG
+      ZUWDUUCRUUBUVGUWOUUBUVGUWFUWOUWHUUBUWFUWOUUBUWFNZYSUWMUWNYSYTUUAUWFWFZUUB
+      UWMUWFYTYSUWMUUAFDWGWHSZYSUUAUWFUWNYTYSUUANZUWFNZMUWBWIWJZUWNUWTUXAMUVQWI
+      WJZUUAUXBYSUWFUUAKWLJZCWLJZKCWMWJZUGUXBKCWNUXCUXDUXEUXBUXDUXEUXBOZOUXCUXD
+      CWOJZUXFCWPUXGUXEUXBUXGUXENZPCWIWJZUXBUXHPKCUXHWQKWOJUXHWRVSUXGUXEWSPKWIW
+      JUXHWTVSUXGUXEXAXBUXGUXIUXBVHUXEUXGPCUXGWQUXGXOXCSXDTVJVSXEXFZXGUWFUXAUXB
+      VHZUWSUWBUVQMWIXHZVCVDUWSUXAUWNVHZUWFYSUXMUUAYSEXIJUXMDEXJEXKVJSSXDXLXMTW
+      AWBEYODXNVJXPUVIUVMUWBYPLZFUVIUVLUWBYPUUBUVGUVLUWBRZUUBUVGUWFUXOUWHUUBUXO
+      UWFUVLUVQRZUUAYSUXPYTUUAUVQCKPQIZQIUVLUUAPUXQCQUUAUXQPUXQPRUUAXQVSVLVAUUA
+      CKPUWKUUAXRUWLXSVTUSUWBUVQUVLXTYAWAWBWCUVIUWGUXNFRUUBUWGUVGYSYTUWGUUAUWGX
+      OVNZSDEFYBVJXPVFVGYCTYDWHYEUVFUVGUUBUUHUVEUULUVGUUBNZUUHOUVAUXSUVEUUHUXSU
+      VDUUGAUUBUVGUVDUUGRZUUBUVGUWFUXTUWHUUBUWFUXTUWPUVBFUVCUUFUWPUWGUVBFRUUBUW
+      GUWFUXRSFDEYFVJUWPYSUWMUXAUVCUUFRUWQUWRUWPUXAUXBUUBUXBUWFUUAYSUXBYTUXJUSS
+      UWFUXKUUBUXLVCVDEYODYGYHVFTWAYIVGYJUSYKYLTYMYNYI $.
+  $}
+
+  $( The concatenation of two words representing closed walks anchored at the
+     same vertex represents a closed walk with a length which is the sum of the
+     lengths of the two walks.  The resulting walk is a "double loop", starting
+     at the common vertex, coming back to the common vertex by the first walk,
+     following the second walk and finally coming back to the common vertex
+     again.  (Contributed by AV, 24-Apr-2022.) $)
+  clwwlknccat $p |- ( ( A e. ( M ClWWalksN G ) /\ B e. ( N ClWWalksN G )
+                        /\ ( A ` 0 ) = ( B ` 0 ) )
+                      -> ( A ++ B ) e. ( ( M + N ) ClWWalksN G ) ) $=
+    ( cclwwlkn co wcel cc0 cfv wceq caddc chash wa isclwwlkni syl3an clwwlknwrd
+    simpl clwwlknlen cn0 w3a cconcat cclwwlk clwwlkccat cvtx cword eqid ccatlen
+    syl2an oveqan12d eqtrd 3adant3 clwwlknnn nnnn0d 3ad2ant1 3ad2ant2 nn0addcld
+    id wb isclwwlkng syl mpbir2and ) ADCFGHZBECFGHZIAJIBJKZUAZABUBGZDELGZCFGHZV
+    GCUCJZHZVGMJZVHKZVCAVJHZAMJZDKZNZVDBVJHZBMJZEKZNZVEVEVKCDAOCEBOVEURZVQVNWAV
+    RVEVEVKVNVPRVRVTRWBABCUDPPVCVDVMVEVCVDNVLVOVSLGZVHVCACUEJZUFZHBWEHVLWCKVDCD
+    WDAWDUGZQCEWDBWFQWDWDABUHUIVCVDVODVSELCDASCEBSUJUKULVFVHTHVIVKVMNUSVFDEVCVD
+    DTHVEVCDCDAUMUNUOVDVCETHVEVDECEBUMUNUPUQCVHVGUTVAVB $.
+
+  ${
+    $d G i $.  $d N i $.  $d W i $.
+    $( If a word represents a closed walk of length at least 2 in a multigraph,
+       the first two symbols of the word must be different.  (Contributed by
+       Alexander van der Vekens, 17-Jun-2018.)  (Revised by AV,
+       30-Apr-2021.) $)
+    umgr2cwwk2dif $p |- ( ( G e. UMGraph /\ N e. ( ZZ>= ` 2 )
+                            /\ W e. ( N ClWWalksN G ) )
+                          -> ( W ` 1 ) =/= ( W ` 0 ) ) $=
+      ( vi cclwwlkn co wcel c2 cuz cfv cumgr c1 cc0 wceq wa caddc cpr wi adantl
+      eqid wne cvtx cword chash cedg cmin cfzo wral clsw clwwlknp simpr uz2m1nn
+      cv cn lbfzo0 sylibr fveq2 oveq1 0p1e1 eqtrdi fveq2d preq12d eleq1d rspcdv
+      w3a com12 3ad2ant2 imp adantr umgredgne necomd syl2anc exp31 syl 3imp31 )
+      CBAEFGZBHIJGZAKGZLCJZMCJZUAZVPCAUBJZUCGCUDJBNOZDUMZCJZWDLPFZCJZQZAUEJZGZD
+      MBLUFFZUGFZUHZCUIJVTQWIGZVEZVQVRWARRDWIABWBCWBTWITZUJWOVQVRWAWOVQOZVROVRV
+      TVSQZWIGZWAWQVRUKWQWSVRWOVQWSWMWCVQWSRWNVQWMWSVQWJWSDMWLVQWKUNGMWLGBULWKU
+      OUPVQWDMNZOZWHWRWIXAWEVTWGVSWTWEVTNVQWDMCUQSXAWFLCXAWFMLPFZLWTWFXBNVQWDML
+      PURSUSUTVAVBVCVDVFVGVHVIVRWSOVTVSWIAVTVSWPVJVKVLVMVNVO $.
+
+    $( If a word represents a closed walk of length at least 2 in a undirected
+       simple graph, there must be a symbol different from the first symbol of
+       the word.  (Contributed by Alexander van der Vekens, 17-Jun-2018.)
+       (Revised by AV, 30-Apr-2021.) $)
+    umgr2cwwkdifex $p |- ( ( G e. UMGraph /\ N e. ( ZZ>= ` 2 )
+                            /\ W e. ( N ClWWalksN G ) )
+                          -> E. i e. ( 0 ..^ N ) ( W ` i ) =/= ( W ` 0 ) ) $=
+      ( cumgr wcel c2 cuz cfv cclwwlkn co w3a cv cc0 wne c1 cfzo cn wa wceq clt
+      wbr eluz2b2 1nn0 simpl simpr elfzo0 syl3anbrc sylbi 3ad2ant2 fveq2 adantl
+      cn0 a1i neeq1d umgr2cwwk2dif rspcedvd ) BEFZCGHIFZDCBJKFZLZAMZDIZNDIZOPDI
+      ZVDOAPNCQKZUSURPVFFZUTUSCRFZPCUAUBZSZVGCUCVJPUMFZVHVIVGVKVJUDUNVHVIUEVHVI
+      UFPCUGUHUIUJVAVBPTZSVCVEVDVLVCVETVAVBPDUKULUOBCDUPUQ $.
+  $}
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Closed walks on a vertex of a fixed length as words
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $c ClWWalksNOn $.
+
+  $( Extend class notation with closed walks (in an undirected graph) anchored
+     at a fixed vertex and of a fixed length as word over the set of
+     vertices. $)
+  cclwwlknon $a class ClWWalksNOn $.
+
+  ${
+    $d g n v w $.
+    $( Define the set of all closed walks a graph ` g ` , anchored at a fixed
+       vertex ` v ` (i.e., a walk starting and ending at the fixed vertex
+       ` v ` , also called "a closed walk on vertex ` v ` ") and having a fixed
+       length ` n ` as words over the set of vertices.  Such a word corresponds
+       to the sequence v=p(0) p(1) ... p(n-1) of the vertices in a closed walk
+       p(0) e(f(1)) p(1) e(f(2)) ... p(n-1) e(f(n)) p(n)=p(0)=v .  The set
+       ` ( ( v ( ClWWalksNOn `` g ) n ) ` corresponds to the set of "walks from
+       v to v of length n" in a statement of [Huneke] p. 2.  (Contributed by
+       AV, 24-Feb-2022.) $)
+    df-clwwlknon $a |- ClWWalksNOn = ( g e. _V
+                    |-> ( v e. ( Vtx ` g ) , n e. NN0
+                          |-> { w e. ( n ClWWalksN g ) | ( w ` 0 ) = v } ) ) $.
+  $}
+
+  ${
+    $d G g n v w s x $.
+    $( ` ( ClWWalksNOn `` G ) ` is an operator mapping a vertex ` v ` and a
+       nonnegative integer ` n ` to the set of closed walks on ` v ` of length
+       ` n ` as words over the set of vertices in a graph ` G ` .  (Contributed
+       by AV, 25-Feb-2022.)  (Proof shortened by AV, 2-Mar-2024.) $)
+    clwwlknonmpo $p |- ( ClWWalksNOn ` G ) = ( v e. ( Vtx ` G ) , n e. NN0
+                            |-> { w e. ( n ClWWalksN G ) | ( w ` 0 ) = v } ) $=
+      ( vx vg vs cclwwlknon cfv cvtx cn0 cv wceq cclwwlkn co crab cmpo wcel cvv
+      mptrcl cc0 df-clwwlknon wex eqid elmpom cxp c1st cbs df-vtx exlimiv fveq2
+      cif eqidd oveq2 rabeqdv mpoeq123dv id vtxex nn0ex mpoexga sylancl fvmptd3
+      syl eleq2d pm5.21nii eqriv ) EDHIZBCDJIZKUAALIBLMZACLZDNOZPZQZELZVGRDSRZV
+      NVMRZFSBCFLZJIZKVIAVJVQNOZPZQZHVNDABFCUBZTVPGLZVHRZGUCVOBCGVHKVLVNVMVMUDU
+      EWDVOGFSVQSSUFRVQUGIVQUHIULJWCDFUITUJVCVOVGVMVNVOFDWAVMSHSWBVQDMZBCVRKVTV
+      HKVLVQDJUKWEKUMWEVIAVSVKVQDVJNUNUOUPVOUQVOVHSRKSRVMSRDSURUSBCVHKVLSSUTVAV
+      BVDVEVF $.
+  $}
+
+  ${
+    $d G n v w x $.  $d N n v w x $.  $d X v g n w x $.
+    $( The set of closed walks on vertex ` X ` of length ` N ` in a graph ` G `
+       as words over the set of vertices.  (Contributed by Alexander van der
+       Vekens, 14-Sep-2018.)  (Revised by AV, 28-May-2021.)  (Revised by AV,
+       24-Mar-2022.) $)
+    clwwlknon $p |- ( X ( ClWWalksNOn ` G ) N )
+                    = { w e. ( N ClWWalksN G ) | ( w ` 0 ) = X } $=
+      ( vx vv vn vg cfv co cc0 cv wceq cclwwlkn crab wcel cn0 cvv cclwwlk syl
+      cclwwlknon cvtx clwwlknonmpo elmpocl fveq1 eqeq1d elrab simprbi cword wne
+      wa c0 w3a elrabi clwwlkclwwlkn eqid clwwlkbp 3syl simp2d fstwrdne syl2anc
+      simp3d eqeltrrd cn clwwlknnn nnnn0d jca chash wal clwwlkex elv rabex gen2
+      simpr 1vgrex adantr df-clwwlkn mpofvex mp3an2i rabexg eqeq2 rabbidv oveq1
+      rabeqdv ovmpog mpd3an3 eleq2d pm5.21nii eqriv ) EDCBUAIZJZKALZIZDMZACBNJZ
+      OZELZWKPDBUBIZPZCQPZUKZWQWPPZFGWRQWMFLZMZAGLZBNJZOZDCWJWQAFGBUCZUDXBWSWTX
+      BKWQIZDWRXBWQWOPZXIDMZWNXKAWQWOWLWQMWMXIDKWLWQUEUFUGUHXBWQWRUIPZWQULUJZXI
+      WRPXBBRPZXLXMXBXJWQBSIPXNXLXMUMWNAWQWOUNZBCWQUOBWRWQWRUPZUQURZUSXBXNXLXMX
+      QVBWRWQUTVAVCXBCXBXJCVDPXOBCWQVETVFVGXAWKWPWQWSWTWPRPZWKWPMXAWORPZXRWLVHI
+      XEMZAHLZSIZOZRPZHVIGVIXAWTXNXSYDGHXTAYBYBRPHYARVJVKVLVMWSWTVNWSXNWTBDWRXP
+      VOVPGHQRYCCBNRQRAHGVQVRVSWNAWORVTTFGDCWRQXGWPWJWNAXFORXCDMXDWNAXFXCDWMWAW
+      BXECMWNAXFWOXECBNWCWDXHWEWFWGWHWI $.
+  $}
+
+  ${
+    $d N w $.  $d G w $.  $d W w $.  $d X w $.
+    $( A word over the set of vertices representing a closed walk on vertex
+       ` X ` of length ` N ` in a graph ` G ` .  (Contributed by AV,
+       25-Feb-2022.)  (Revised by AV, 24-Mar-2022.) $)
+    isclwwlknon $p |- ( W e. ( X ( ClWWalksNOn ` G ) N )
+                        <-> ( W e. ( N ClWWalksN G ) /\ ( W ` 0 ) = X ) ) $=
+      ( vw cc0 cv cfv wceq cclwwlkn co cclwwlknon fveq1 eqeq1d clwwlknon elrab2
+      ) FEGZHZDIFCHZDIECBAJKDBALHKQCIRSDFQCMNEABDOP $.
+  $}
+
+  ${
+    $d G n v w x $.  $d X n v w x $.
+    $( There is no word over the set of vertices representing a closed walk on
+       vertex ` X ` of length ` 0 ` in a graph ` G ` .  (Contributed by AV,
+       17-Feb-2022.)  (Revised by AV, 25-Feb-2022.) $)
+    clwwlk0on0 $p |- ( X ( ClWWalksNOn ` G ) 0 ) = (/) $=
+      ( vx vv vn vw cc0 cclwwlknon cfv co c0 cv wcel cvtx cn0 wceq clwwlknonmpo
+      cclwwlkn crab eqtrdi elmpocl1 noel pm2.21i 0nn0 wa eqeq2 rabbidv clwwlkn0
+      oveq1 rabeqdv 0ex rabex ovmpo rab0 mpan2 eleq2d pm5.21nii eqriv ) CBGAHIZ
+      JZKCLZUTMBANIZMZVAKMZDEVBOGFLIZDLZPZFELZARJZSZBGUSVAFDEAQZUAVDVCVAUBUCVCU
+      TKVAVCGOMZUTKPUDVCVLUEUTVEBPZFKSZKDEBGVBOVJVNUSVMFVISVFBPVGVMFVIVFBVEUFUG
+      VHGPZVMFVIKVOVIGARJKVHGARUIAUHTUJVKVMFKUKULUMVMFUNTUOUPUQUR $.
+  $}
+
+  ${
+    $d G i $.  $d W i $.
+    clwwlknonel.v $e |- V = ( Vtx ` G ) $.
+    clwwlknonel.e $e |- E = ( Edg ` G ) $.
+    $( Characterization of a word over the set of vertices representing a
+       closed walk on vertex ` X ` of (nonzero) length ` N ` in a graph ` G ` .
+       This theorem would not hold for ` N = 0 ` if ` W = X = (/) ` .
+       (Contributed by Alexander van der Vekens, 20-Sep-2018.)  (Revised by AV,
+       28-May-2021.)  (Revised by AV, 24-Mar-2022.) $)
+    clwwlknonel $p |- ( N =/= 0 -> ( W e. ( X ( ClWWalksNOn ` G ) N )
+                     <-> ( ( W e. Word V /\ A. i e. ( 0 ..^ ( ( # ` W ) - 1 ) )
+                                     { ( W ` i ) , ( W ` ( i + 1 ) ) } e. E
+                             /\ { ( lastS ` W ) , ( W ` 0 ) } e. E )
+                           /\ ( # ` W ) = N /\ ( W ` 0 ) = X ) ) ) $=
+      ( cc0 wne cfv wcel chash wceq wa c1 co w3a c0 cclwwlk cword cv caddc cmin
+      cpr cfzo wral clsw cclwwlknon wb isclwwlk simpl fveq2 hash0 eqtrdi adantl
+      eqtr3d necon3d impcom biantrud bicomd 3anbi1d bitrid a1d expimpd pm5.32rd
+      ex cclwwlkn isclwwlknon isclwwlkn anbi1i anass 3bitri 3anass 3bitr4g ) DJ
+      KZFCUALMZFNLZDOZJFLZGOZPZPZFEUBMZAUCZFLWFQUDRFLUFBMAJVSQUERUGRUHZFUILWAUF
+      BMZSZWCPFGDCUJLRMZWIVTWBSVQWCVRWIVQVTWBVRWIUKZVQVTPZWKWBVRWEFTKZPZWGWHSWL
+      WIABCEFHIULWLWNWEWGWHWLWEWNWLWMWEVTVQWMVTFTDJVTFTOZDJOVTWOPVSDJVTWOUMWOVS
+      JOVTWOVSTNLJFTNUNUOUPUQURVHUSUTVAVBVCVDVEVFVGWJFDCVIRMZWBPVRVTPZWBPWDCDFG
+      VJWPWQWBCDFVKVLVRVTWBVMVNWIVTWBVOVP $.
+  $}
+
+  $( The concatenation of two words representing closed walks on a vertex ` X `
+     represents a closed walk on vertex ` X ` .  The resulting walk is a
+     "double loop", starting at vertex ` X ` , coming back to ` X ` by the
+     first walk, following the second walk and finally coming back to ` X `
+     again.  (Contributed by AV, 24-Apr-2022.) $)
+  clwwlknonccat $p |- ( ( A e. ( X ( ClWWalksNOn ` G ) M )
+                          /\ B e. ( X ( ClWWalksNOn ` G ) N ) )
+                      -> ( A ++ B ) e. ( X ( ClWWalksNOn ` G ) ( M + N ) ) ) $=
+    ( cclwwlkn co wcel cc0 cfv wceq simpl adantr adantl simpr eqtrd isclwwlknon
+    wa clt cconcat caddc cclwwlknon eqcomd clwwlknccat syl3anc cvtx cword chash
+    eqid clwwlknwrd cn clwwlknnn clwwlknlen nngt0 breq2 syl5ibrcom sylc ccatfv0
+    wbr jca anbi12i 3imtr4i ) ADCGHIZJAKZFLZSZBECGHIZJBKZFLZSZSZABUAHZDEUBHZCGH
+    IZJVMKZFLZSAFDCUCKZHIZBFEVRHIZSVMFVNVRHIVLVOVQVLVDVHVEVILVOVGVDVKVDVFMNVKVH
+    VGVHVJMOVLVEFVIVGVFVKVDVFPNZVKFVILVGVKVIFVHVJPUDOQABCDEUEUFVLVPVEFVLACUGKZU
+    HZIZBWCIZJAUIKZTUTZVPVELVGWDVKVDWDVFCDWBAWBUJZUKNNVKWEVGVHWEVJCEWBBWHUKNOVG
+    WGVKVDWGVFVDDULIZWFDLZWGCDAUMCDAUNWIWGWJJDTUTDUOWFDJTUPUQURNNABWBUSUFWAQVAV
+    SVGVTVKCDAFRCEBFRVBCVNVMFRVC $.
+
+  ${
+    $d G w $.  $d X w $.
+    clwwlknon2.c $e |- C = ( ClWWalksNOn ` G ) $.
+    $( The set of closed walks on vertex ` X ` of length ` 2 ` in a graph ` G `
+       as words over the set of vertices.  (Contributed by AV, 5-Mar-2022.)
+       (Revised by AV, 25-Mar-2022.) $)
+    clwwlknon2 $p |- ( X C 2 ) = { w e. ( 2 ClWWalksN G ) | ( w ` 0 ) = X } $=
+      ( c2 co cclwwlknon cfv cc0 cv wceq cclwwlkn crab oveqi clwwlknon eqtri )
+      DFBGDFCHIZGJAKIDLAFCMGNBRDFEOACFDPQ $.
+
+    clwwlknon2x.v $e |- V = ( Vtx ` G ) $.
+    clwwlknon2x.e $e |- E = ( Edg ` G ) $.
+    $( The set of closed walks on vertex ` X ` of length ` 2 ` in a graph ` G `
+       as words over the set of vertices, definition of ` ClWWalksN ` expanded.
+       (Contributed by Alexander van der Vekens, 19-Sep-2018.)  (Revised by AV,
+       25-Mar-2022.) $)
+    clwwlknon2x $p |- ( X C 2 ) = { w e. Word V | ( ( # ` w ) = 2
+                      /\ { ( w ` 0 ) , ( w ` 1 ) } e. E /\ ( w ` 0 ) = X ) } $=
+      ( c2 co cfv wceq crab wcel w3a cword wa anbi1i bitri cv cclwwlkn chash c1
+      cc0 cpr clwwlknon2 cvtx cedg clwwlkn2 3anan12 eqcomi wrdeqi eleq2i df-3an
+      anass anbi2i bitr2i anbi12i rabbia2 eqtri ) FJBKUEAUAZLZFMZAJDUBKZNVBUCLJ
+      MZVCUDVBLUFZCOZVDPZAEQZNABDFGUGVDVIAVEVJVBVEOZVDRVFVBDUHLZQZOZVGDUILZOZPZ
+      VDRZVBVJOZVIRZVKVQVDDVBUJSVRVNVFVPRZRZVDRZVTVQWBVDVFVNVPUKSWCVNWAVDRZRVTV
+      NWAVDUPVNVSWDVIVMVJVBVLEEVLHULUMUNVIVFVHRZVDRWDVFVHVDUOWEWAVDVHVPVFCVOVGI
+      UNUQSURUSTTTUTVA $.
+
+    $d E w $.  $d V w $.  $d Y w $.
+    $( Sufficient conditions of a doubleton word to represent a closed walk on
+       vertex ` X ` of length ` 2 ` .  (Contributed by AV, 11-May-2022.) $)
+    s2elclwwlknon2 $p |- ( ( X e. V /\ Y e. V /\ { X , Y } e. E )
+                           -> <" X Y "> e. ( X C 2 ) ) $=
+      ( vw wcel cpr w3a chash cfv c2 wceq cc0 c1 3adant3 cs2 cword co s2leng wa
+      s2cl s2fv0g s2fv1g preq12d eqcomd biimp3a 3jca cv fveqeq2 fveq1 3anbi123d
+      eleq1d eqeq1d clwwlknon2x elrab2 sylanbrc ) EDKZFDKZEFLZBKZMZEFUAZDUBZKZV
+      GNOPQZRVGOZSVGOZLZBKZVKEQZMZVGEPAUCZKVBVCVIVEEFDUFTVFVJVNVOVBVCVJVEEFDDUD
+      TVBVCVEVNVBVCUEZVDVMBVRVMVDVRVKEVLFEFDDUGZEFDDUHUIUJUQUKVBVCVOVEVSTULJUMZ
+      NOPQZRVTOZSVTOZLZBKZWBEQZMVPJVGVHVQVTVGQZWAVJWEVNWFVOVTVGPNUNWGWDVMBWGWBV
+      KWCVLRVTVGUOZSVTVGUOUIUQWGWBVKEWHURUPJABCDEGHIUSUTVA $.
+  $}
+
+  $( Lemma 1 for ~ clwwlknonex2 :  Transformation of a special half-open
+     integer range into a union of a smaller half-open integer range and an
+     unordered pair.  This Lemma would not hold for ` N = 2 ` , i.e.,
+     ` ( # `` W ) = 0 ` , because ` ( 0 ..^ ( ( ( # `` W ) + 2 ) - 1 ) ) `
+     ` = ( 0 ..^ ( ( 0 + 2 ) - 1 ) ) = ( 0 ..^ 1 ) = { 0 } `
+     ` =/= { -u 1 , 0 } = ( (/) u. { -u 1 , 0 } ) `
+     ` = ( ( 0 ..^ ( 0 - 1 ) ) u. { ( 0 - 1 ) , 0 } ) `
+     ` = ( ( 0 ..^ ( ( # `` W ) - 1 ) ) `
+     ` u. { ( ( # `` W ) - 1 ) , ( # `` W ) } ) ` .  (Contributed by AV,
+     22-Sep-2018.)  (Revised by AV, 26-Jan-2022.) $)
+  clwwlknonex2lem1 $p |- ( ( N e. ( ZZ>= ` 3 ) /\ ( # ` W ) = ( N - 2 ) )
+                            -> ( 0 ..^ ( ( ( # ` W ) + 2 ) - 1 ) )
+                               = ( ( 0 ..^ ( ( # ` W ) - 1 ) )
+                                   u. { ( ( # ` W ) - 1 ) , ( # ` W ) } ) ) $=
+    ( c3 cuz cfv wcel c2 cmin co wceq cc0 caddc c1 cfzo cpr cun 2cnd adantr cn0
+    cc chash wa eluzelcn subcld eleq1 adantl mpbird 1cnd addsubd oveq1 uznn0sub
+    oveq2d subsub4d 2p1e3 oveq2i eqtrdi nn0uz eqcomi 3eltr4d eqeltrd fzosplitpr
+    wb a1i syl npcand preq2d uneq2d 3eqtrd ) ACDEFZBUAEZAGHIZJZUBZKVJGLIMHIZNIK
+    VJMHIZGLIZNIZKVONIZVOVOMLIZOZPZVRVOVJOZPVMVNVPKNVMVJGMVMVJTFZVKTFZVIWDVLVIA
+    GCAUCZVIQZUDRVLWCWDVBVIVJVKTUEUFUGZVMQVMUHZUIULVMVOKDEZFVQWAJVMVOVKMHIZWIVL
+    VOWJJVIVJVKMHUJUFVIWJWIFVLVIACHIZSWJWICAUKVIWJAGMLIZHIWKVIAGMWEWFVIUHUMWLCA
+    HUNUOUPWISJVISWIUQURVCUSRUTKVOVAVDVMVTWBVRVMVSVJVOVMVJMWGWHVEVFVGVH $.
+
+  ${
+    $d E i $.  $d V i $.  $d W i $.  $d X i $.  $d Y i $.
+    clwwlknonex2.v $e |- V = ( Vtx ` G ) $.
+    clwwlknonex2.e $e |- E = ( Edg ` G ) $.
+    $( Lemma 2 for ~ clwwlknonex2 :  Transformation of a walk and two edges
+       into a walk extended by two vertices/edges.  (Contributed by AV,
+       22-Sep-2018.)  (Revised by AV, 27-Jan-2022.) $)
+    clwwlknonex2lem2 $p |- ( ( ( ( X e. V /\ Y e. V /\ N e. ( ZZ>= ` 3 ) )
+                   /\ ( ( W e. Word V /\ A. i e. ( 0 ..^ ( ( # ` W ) - 1 ) )
+                                         { ( W ` i ) , ( W ` ( i + 1 ) ) } e. E
+                   /\ { ( lastS ` W ) , ( W ` 0 ) } e. E )
+                   /\ ( # ` W ) = ( N - 2 ) /\ ( W ` 0 ) = X ) )
+                   /\ { X , Y } e. E )
+               -> A. i e. ( ( 0 ..^ ( ( # ` W ) - 1 ) )
+                            u. { ( ( # ` W ) - 1 ) , ( # ` W ) } )
+                  { ( ( ( W ++ <" X "> ) ++ <" Y "> ) ` i ) ,
+                    ( ( ( W ++ <" X "> ) ++ <" Y "> ) ` ( i + 1 ) ) } e. E ) $=
+      ( wcel cfv c1 co wceq wa wi adantr cn0 adantl c3 cuz w3a cword cv cpr cc0
+      caddc chash cmin cfzo wral clsw c2 cs1 cconcat cun simpl elfzonn0 clt wbr
+      lencl cn elfzo0 nn0re peano2rem syl 3jca ltm1d lttr expcomd sylc impancom
+      cr 3adant2 sylbi syl5com imp simplrl simplrr ccat2s1fvwd eqcomd peano2nn0
+      ltaddsubd biimprd adantlr preq12d eleq1d ralbidva biimpd 3adant3 3ad2ant1
+      1red mpan9 com12 a1dd imp31 ax-1 simpl1l oveq1 eluzelcn 2cnd subsub4d a1i
+      1cnd 2p1e3 oveq2d uznn0sub eqeltrd ancoms ex simp3d simpl2l simpl2r nn0cn
+      cc ax-1cn npcan sylancl fveq2d eqid ccatw2s1p1g mpanl2 eqtrd lswwrd com23
+      expcom exp520 com14 3ad2ant3 syld com25 3imp ccatw2s1p2 com13 simpr fveq2
+      impcom cz fvoveq1 wb nn0zd 1zzd zsubcld ralprg syl2anc mpbir2and sylanbrc
+      ralunb ) GEKZHEKZDUAUBLKZUCZFEUDKZAUEZFLZUUOMUHNZFLZUFZBKZAUGFUILZMUJNZUK
+      NZULZFUMLZUGFLZUFZBKZUCZUVADUNUJNZOZUVFGOZUCZPZGHUFZBKZPZUUOFGUOUPNHUOUPN
+      ZLZUUQUVRLZUFZBKZAUVCULZUWBAUVBUVAUFZULZUWBAUVCUWDUQULUUMUVMUVPUWCUUJUUKU
+      VMUVPUWCQQUULUUJUUKPZUVMUWCUVPUVMUWFUWCUVIUVKUWFUWCQZUVLUUNUVDUWGUVHUUNUW
+      FUVDUWCUUNUWFPZUVDUWCUWHUUTUWBAUVCUWHUUOUVCKZPZUUSUWABUWJUUPUVSUURUVTUWJU
+      VSUUPUWJEEUUOEFGHUWHUUNUWIUUNUWFURRZUWIUUOSKZUWHUUOUVBUSTZUWHUWIUUOUVAUTV
+      AZUUNUWIUWNQUWFUUNUVASKZUWIUWNEFVBZUWIUWLUVBVCKZUUOUVBUTVAZUCZUWOUWNQZUUO
+      UVBVDZUWLUWRUWTUWQUWLUWOUWRUWNUWLUWOPZUUOVNKZUVBVNKZUVAVNKZUCZUVBUVAUTVAZ
+      UWRUWNQUXBUXCUXDUXEUWLUXCUWOUUOVERZUWOUXDUWLUWOUXEUXDUVAVEZUVAVFVGTUWOUXE
+      UWLUXITZVHUWOUXGUWLUWOUVAUXIVITUXFUWRUXGUWNUUOUVBUVAVJVKVLVMVOVPVQRVRUUNU
+      UJUUKUWIVSZUUNUUJUUKUWIVTZWAWBUWJUVTUURUWJEEUUQEFGHUWKUWJUWLUUQSKUWMUUOWC
+      VGUUNUWIUUQUVAUTVAZUWFUUNUWOUWIUXMUWPUWIUWSUWOUXMQZUXAUWLUWRUXNUWQUWLUWOU
+      WRUXMUXBUXMUWRUXBUUOMUVAUXHUXBWMUXJWDWEVMVOVPWNWFUXKUXLWAWBWGWHWIWJVMWKWL
+      WOWPWKWQUVQUWEUVBUVRLZUVBMUHNZUVRLZUFZBKZUVAUVRLZUVAMUHNUVRLZUFZBKZUVNUVP
+      UXSUVMUUMUVPUXSQZUVIUVKUVLUUMUYDQZUUNUVHUVKUVLUYEQQUVDUUMUVKUVLUUNUVHPZUY
+      DUUMUVPUVLUYFUVKUXSUUMUVPUWFUVLUYFUVKUXSQZQQZUUJUUKUVPUWFQUULUWFUVPWRWKUU
+      LUUJUWFUYHQUUKUYFUWFUVLUULUYGUYFUWFUVLUULUVKUXSUYFUWFUVLUCZUULUVKPZPZUXRU
+      VBFLZGUFZBUYKUXOUYLUXQGUYKEEUVBEFGHUUNUVHUWFUVLUYJWSUYJUVBSKZUYIUVKUULUYN
+      UVKUULPUVBUVJMUJNZSUVKUVBUYOOUULUVAUVJMUJWTRUULUYOSKUVKUULUYODUNMUHNZUJNZ
+      SUULDUNMUADXAUULXBUULXEXCUULUYQDUAUJNSUULUYPUADUJUYPUAOUULXFXDXGUADXHXIXI
+      TXIXJZTUYKUUNUYNUXGUYIUYJUUNUYNUXGUCZUYFUWFUYJUYSQZUVLUUNUYTUVHUUNUYJUYSU
+      UNUYJPZUUNUYNUXGUUNUYJURUYJUYNUUNUYRTVUAUVAUUNUXEUYJUUNUWOUXEUWPUXIVGRVIV
+      HXKRWLVRXLUUJUUKUYFUVLUYJXMUUJUUKUYFUVLUYJXNWAUYIUXQGOUYJUYIUXQUXTGUYIUXP
+      UVAUVRUYFUWFUXPUVAOZUVLUUNVUBUVHUUNUWOVUBUWPUWOUVAXPKMXPKVUBUVAXOXQUVAMXR
+      XSVGRWLXTUYFUWFUXTGOZUVLUUNUWFVUCUVHUUNUVAUVAOZUWFVUCUVAYAZUVAEFGHYBYCZWF
+      WKYDRWGUYIUYMBKZUYJUYFUVLVUGUWFUUNUVHUVLVUGUUNUVLUVHVUGUVLUUNUVHVUGQUVLUU
+      NPZUVHVUGVUHUVGUYMBVUHUVEUYLUVFGUUNUVEUYLOUVLEFYETUVLUUNURWGWHWJYGYFWQVOR
+      XIYHYIYJYKYLYIVOYMYRVRUVQUYBUVOBUUMUVMUVPUYBUVOOZUUJUUKUVMUVPVUIQZQUULUVM
+      UWFVUJUVIUVKUWFVUJQZUVLUUNUVDVUKUVHUVPUWFUUNVUIUWFUUNVUIQQUVPUUNUWFVUIUWH
+      UXTGUYAHVUFUUNVUDUWFUYAHOVUEUVAEFGHYNYCWGYGXDYOWLWLWOWKWQUVNUVPYPXIUVNUWE
+      UXSUYCPUUAZUVPUVMVULUUMUVIUVKVULUVLUUNUVDVULUVHUUNUVBYSKUWOVULUUNUVAMUUNU
+      VAUWPUUBUUNUUCUUDUWPUWBUXSUYCAUVBUVAYSSUUOUVBOZUWAUXRBVUMUVSUXOUVTUXQUUOU
+      VBUVRYQUUOUVBMUVRUHYTWGWHUUOUVAOZUWAUYBBVUNUVSUXTUVTUYAUUOUVAUVRYQUUOUVAM
+      UVRUHYTWGWHUUEUUFWLWLTRUUGUWBAUVCUWDUUIUUH $.
+
+    $d G i $.
+    $( Extending a closed walk ` W ` on vertex ` X ` by an additional edge
+       (forth and back) results in a closed walk.  (Contributed by AV,
+       22-Sep-2018.)  (Revised by AV, 25-Feb-2022.)  (Proof shortened by AV,
+       28-Mar-2022.) $)
+    clwwlknonex2 $p |- ( ( ( X e. V /\ Y e. V /\ N e. ( ZZ>= ` 3 ) )
+                            /\ { X , Y } e. E
+                            /\ W e. ( X ( ClWWalksNOn ` G ) ( N - 2 ) ) )
+                   -> ( ( W ++ <" X "> ) ++ <" Y "> ) e. ( N ClWWalksN G ) ) $=
+      ( vi wcel cfv w3a cpr c2 cmin co c1 cc0 wceq cuz cclwwlknon cconcat cword
+      c3 cs1 cclwwlkn cv caddc chash cfzo wral clsw wa wi wne wb uz3m2nn nnne0d
+      3ad2ant3 clwwlknonel syl simpr11 simpll1 simpll2 syl3anc clwwlknonex2lem2
+      adantr ccatw2s1cl ccatw2s1leng oveq1d oveq2d simp3 simp2 clwwlknonex2lem1
+      cun anim12i raleqtrrdv simp11 ad2antlr ccatws1cl lswccats1 stoic3 clt wbr
+      eqtrd nngt0d breq2 imbitrrid 3ad2ant2 com12 imp ccat2s1fstg preq12d prcom
+      syl22anc eleq1i biimpi adantl preq2 eleq1d eqeltrd 3jca oveq1 cc eluzelcn
+      mpbird 2cn npcan sylancl sylan9eq ex jca exp31 sylbid com23 cn isclwwlknx
+      3imp eluz3nn 3ad2ant1 ) FDKZGDKZCUEUALKZMZFGNZAKZEFCOPQZBUBLQKZMEFUFUCQZG
+      UFUCQZCBUGQKZYKDUDZKZJUHZYKLYORUIQZYKLNAKZJSYKUJLZRPQZUKQZULZYKUMLZSYKLZN
+      ZAKZMZYRCTZUNZYEYGYIUUHYEYIYGUUHYEYIEYMKZYOELYPELNAKJSEUJLZRPQZUKQZULZEUM
+      LSELZNAKZMZUUJYHTZUUNFTZMZYGUUHUOYEYHSUPZYIUUSUQYDYBUUTYCYDYHCURZUSUTJABY
+      HDEFHIVAVBYEUUSYGUUHYEUUSUNZYGUNZUUFUUGUVCYNUUAUUEUVCUUIYBYCYNUVBUUIYGUUI
+      UUMUUOUUQUURYEVCVHZYBYCYDUUSYGVDZYBYCYDUUSYGVEZDEFGVIVFUVCYQJUULUUKUUJNVP
+      ZYTJABCDEFGHIVGUVCYTSUUJOUIQZRPQZUKQZUVGUVCYSUVISUKUVCYRUVHRPUVCUUIYBYCYR
+      UVHTUVDUVEUVFDEFGVJVFZVKVLUVCYDUUQUNZUVJUVGTUVBUVLYGYEYDUUSUUQYBYCYDVMUUP
+      UUQUURVNVQVHCEVOVBWFVRUVCUUDGUUNNZAUVCUUBGUUCUUNUVCUUIYBYCUUBGTZUUSUUIYEY
+      GUUIUUMUUOUUQUURVSVTZUVEUVFUUIYBYJYMKYCUVNDEFWAGDYJWBWCVFUVCUUISUUJWDWEZY
+      BYCUUCUUNTUVOUVBUVPYGYEUUSUVPYDYBUUSUVPUOYCUUSYDUVPUUQUUPYDUVPUOUURYDUVPU
+      UQSYHWDWEYDYHUVAWGUUJYHSWDWHWIWJWKUTWLVHUVEUVFDDDEFGWMWPWNUVCUVMAKZGFNZAK
+      ZYGUVSUVBYGUVSYFUVRAFGWOWQWRWSUUSUVQUVSUQZYEYGUURUUPUVTUUQUURUVMUVRAUUNFG
+      WTXAUTVTXGXBXCUVCYRUVHCUVKUVBUVHCTZYGYEUUSUWAYDYBUUSUWAUOYCUUSYDUWAUUQUUP
+      YDUWAUOUURUUQYDUWAUUQYDUVHYHOUIQZCUUJYHOUIXDYDCXEKOXEKUWBCTUECXFXHCOXIXJX
+      KXLWJWKUTWLVHWFXMXNXOXPXSYEYGYLUUHUQZYIYDYBUWCYCYDCXQKUWCCXTJABCDYKHIXRVB
+      UTYAXG $.
+
+    $( Extending a closed walk ` W ` on vertex ` X ` by an additional edge
+       (forth and back) results in a closed walk on vertex ` X ` .
+       (Contributed by AV, 17-Apr-2022.) $)
+    clwwlknonex2e $p |- ( ( ( X e. V /\ Y e. V /\ N e. ( ZZ>= ` 3 ) )
+                            /\ { X , Y } e. E
+                            /\ W e. ( X ( ClWWalksNOn ` G ) ( N - 2 ) ) )
+                          -> ( ( W ++ <" X "> ) ++ <" Y "> )
+                             e. ( X ( ClWWalksNOn ` G ) N ) ) $=
+      ( wcel cfv w3a co cs1 cconcat cclwwlkn cc0 wceq wa isclwwlknon c3 cuz cpr
+      c2 cmin cclwwlknon clwwlknonex2 cword chash clt wbr cclwwlk isclwwlkn cvv
+      wi c0 wne clwwlkbp simp2d clwwlkgt0 jca adantr sylbi ad2antrl ccat2s1fstg
+      simpl1 simpl2 syl12anc simprr eqtrd ex biimtrid a1d 3imp sylanbrc ) FDJZG
+      DJZCUAUBKJZLZFGUCAJZEFCUDUEMZBUFKZMJZLEFNOMGNOMZCBPMJQWDKZFRZWDFCWBMJABCD
+      EFGHIUGVSVTWCWFVSWCWFUOVTWCEWABPMJZQEKZFRZSZVSWFBWAEFTVSWJWFVSWJSZWEWHFWK
+      EDUHJZQEUIKZUJUKZSZVPVQWEWHRWGWOVSWIWGEBULKJZWMWARZSWOBWAEUMWPWOWQWPWLWNW
+      PBUNJWLEUPUQBDEHURUSBEUTVAVBVCVDVPVQVRWJVFVPVQVRWJVGDDDEFGVEVHVSWGWIVIVJV
+      KVLVMVNBCWDFTVO $.
+  $}
+
+  ${
+    $d G w x y $.  $d N w x y $.  $d V x y $.  $d G i x y $.  $d N i $.
+    clwwlknun.v $e |- V = ( Vtx ` G ) $.
+    $( The set of closed walks of fixed length ` N ` in a simple graph ` G ` is
+       the union of the closed walks of the fixed length ` N ` on each of the
+       vertices of graph ` G ` .  (Contributed by Alexander van der Vekens,
+       7-Oct-2018.)  (Revised by AV, 28-May-2021.)  (Revised by AV,
+       3-Mar-2022.)  (Proof shortened by AV, 28-Mar-2022.) $)
+    clwwlknun $p |- ( G e. USGraph
+              -> ( N ClWWalksN G ) = U_ x e. V ( x ( ClWWalksNOn ` G ) N ) ) $=
+      ( vy vi cusgr wcel co cv cfv wrex cc0 wceq wa c1 cpr ex simpr isclwwlknon
+      cclwwlkn cclwwlknon ciun eliun simpl rexlimivw cword chash cedg cmin cfzo
+      rexbii caddc wral clsw w3a clwwlknp anim2i wi usgrpredgv syl6com 3ad2ant3
+      eqid impcom eqcomd biantrud bicomd rspcedv adantld impbid2 bitrid bitr2id
+      mpcom eqrdv ) BHIZFCBUBJZADAKZCBUCLJZUDZFKZVTIWAVSIZADMZVPWAVQIZAWADVSUEW
+      CWDNWALZVROZPZADMZVPWDWBWGADBCWAVRUAUMVPWHWDWGWDADWDWFUFUGVPWDWHVPWADUHIW
+      AUILCOPZGKZWALWJQUNJWALRBUJLZIGNCQUKJULJUOZWAUPLZWERWKIZUQZPZVPWDPWHWDWOV
+      PGWKBCDWAEWKVDZURUSWPWDWHVPWPWGWDAWEDWOVPWEDIZWNWIVPWRUTWLVPWNWMDIZWRPZWR
+      VPWNWTWKBWMWEDWQEVASWSWRTVBVCVEWPVRWEOZPZWDWGXBWFWDXBVRWEWPXATVFVGVHVIVJV
+      NSVKVLVMVO $.
   $}
 
 
@@ -200489,12 +202422,24 @@ htmldef "USPGraph" as 'USPGraph';
 htmldef "USGraph" as 'USGraph';
   althtmldef "USGraph" as 'USGraph';
   latexdef "USGraph" as "\mathrm{USGraph}";
+htmldef "VtxDeg" as 'VtxDeg';
+  althtmldef "VtxDeg" as 'VtxDeg';
+  latexdef "VtxDeg" as "\mathrm{VtxDeg}";
 htmldef "Walks" as "Walks";
   althtmldef "Walks" as "Walks";
   latexdef "Walks" as "\mathrm{Walks}";
 htmldef "Trails" as "Trails";
   althtmldef "Trails" as "Trails";
   latexdef "Trails" as "\mathrm{Trails}";
+htmldef "ClWWalks" as 'ClWWalks';
+  althtmldef "ClWWalks" as 'ClWWalks';
+  latexdef "ClWWalks" as "\mathrm{ClWWalks}";
+htmldef "ClWWalksN" as ' ClWWalksN ';
+  althtmldef "ClWWalksN" as ' ClWWalksN ';
+  latexdef "ClWWalksN" as "\mathrm{ClWWalksN}";
+htmldef "ClWWalksNOn" as 'ClWWalksNOn';
+  althtmldef "ClWWalksNOn" as 'ClWWalksNOn';
+  latexdef "ClWWalksNOn" as "\mathrm{ClWWalksNOn}";
 
 /* htmldef, althtmldef, latexdef for mathboxes */
 /* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
@@ -203599,34 +205544,6 @@ $(
   The sizes of sets
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
-
-  ${
-    $d A f $.  $d B f $.  $d C f $.
-    $( If a set is dominated by one, then any two of its elements are equal.
-       (Contributed by Jim Kingdon, 23-Apr-2025.) $)
-    1dom1el $p |- ( ( A ~<_ 1o /\ B e. A /\ C e. A ) -> B = C ) $=
-      ( vf c1o cdom wbr wcel w3a cv wf1 wceq wex brdomi 3ad2ant1 ffvelcdmd el1o
-      cfv c0 sylib wa wf adantl simpl2 simpl3 eqtr4d wi simpr f1veqaeq syl12anc
-      f1f mpd exlimddv ) AEFGZBAHZCAHZIZAEDJZKZBCLZDUNUOUSDMUPAEDNOUQUSUAZBURRZ
-      CURRZLZUTVAVBSVCVAVBEHVBSLVAAEBURUSAEURUBUQAEURUKUCZUNUOUPUSUDZPVBQTVAVCE
-      HVCSLVAAECURVEUNUOUPUSUEZPVCQTUFVAUSUOUPVDUTUGUQUSUHVFVGAEBCURUIUJULUM $.
-  $}
-
-  ${
-    $d A x y $.  $d B x y $.
-    $( Equinumerosity of finite sets is decidable.  (Contributed by Jim
-       Kingdon, 10-Feb-2026.) $)
-    fidcen $p |- ( ( A e. Fin /\ B e. Fin ) -> DECID A ~~ B ) $=
-      ( vx vy cfn wcel wa cv cen wbr wdc wrex isfi biimpi wn wo simplrl simplrr
-      com entr adantr ad2antlr weq simprl nndceq syl2anc exmiddc simpr breqtrrd
-      syl ensymd syl2an2r ex sylan wb nneneq mpbid orim12d mpd sylibr rexlimddv
-      con3d df-dc ) AEFZBEFZGZACHZIJZABIJZKZCSVDVHCSLZVEVDVKCAMNUAVFVGSFZVHGZGZ
-      BDHZIJZVJDSVEVPDSLZVDVMVEVQDBMNUBVNVOSFZVPGZGZVIVIOZPZVJVTCDUCZWCOZPZWBVT
-      WCKZWEVTVLVRWFVFVLVHVSQZVNVRVPUDVGVOUEUFWCUGUJVTWCVIWDWAVTWCVIVTVHWCVGBIJ
-      ZVIVFVLVHVSRZVTWCGZBVGWJBVOVGIVNVRVPWCRVTWCUHUIUKAVGBTULUMVTVIWCVTVIWCVTV
-      IGZVGVOIJZWCWKWHVPWLVTVGAIJVIWHVTAVGWIUKVGABTUNVNVRVPVIRVGBVOTUFVTVLVIVRW
-      LWCUOWGVNVRVPVIQVGVOUPULUQUMVBURUSVIVCUTVAVA $.
-  $}
 
   $( Any subset of ordinal one being an element of ordinal two is equivalent to
      excluded middle.  A variation of ~ exmid01 which more directly illustrates

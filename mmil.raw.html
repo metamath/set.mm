@@ -1011,6 +1011,13 @@ middle by ~ ssfiexmid ).</p>
 </tr>
 
 <tr>
+  <td>is of size zero</td>
+  <td>` A ~~ (/) `</td>
+  <td>for equivalent formulations, see ~ en0 , ~ eq0 ,
+  ~ notm0 , ~ ss0b , and ~ dom0</td>
+</tr>
+
+<tr>
   <td>is of size one</td>
   <td>` A ~~ 1o `</td>
   <td>for equivalent formulations, see ~ en1 , ~ en1bg and ~ euen1b</td>
@@ -1035,6 +1042,13 @@ middle by ~ ssfiexmid ).</p>
   <td>` 2o ~<_ A `</td>
   <td>equivalent to having two distinct elements by
   ~ 2dom and ~ rex2dom</td>
+</tr>
+
+<tr>
+  <td>has at most one element</td>
+  <td>` A ~<_ 1o `</td>
+  <td>to relate to ` E* ` see ~ modom
+  and ~ modom2</td>
 </tr>
 
 <tr>
@@ -3448,7 +3462,7 @@ and is evaluated at a set</TD>
 </TR>
 
 <tr>
-  <td>~ elfvex</td>
+  <td>~ elfvfvex</td>
   <td>when a function value is inhabited</td>
 </tr>
 
@@ -5266,8 +5280,9 @@ that rabfi implies excluded middle</TD>
 <tr>
   <td>mptfi</td>
   <td><i>none</i></td>
-  <td>the set.mm proof depends on ssfi and additional conditions
-  would be needed to prove something like this</td>
+  <td>Additional conditions are needed. For some situations
+  ~ dmmptd plus ~ fundmeng might get you most of the way
+  there.</td>
 </tr>
 
 <TR>
@@ -9368,20 +9383,23 @@ or not.</TD>
 
 <TR>
   <TD>hashunx</TD>
-  <TD><I>none</I></TD>
-  <TD>It is not clear there would be any way to combine the finite
-  and infinite cases.</TD>
+  <TD>~ hashun</TD>
+  <TD>It is not clear there would be any way to go beyond the
+  finite case.</TD>
 </TR>
 
 <TR>
   <TD>hashge0</TD>
-  <TD>~ hashcl</TD>
-  <TD>It is not clear there would be any way to combine the finite
-  and infinite cases.</TD>
+  <TD>~ hashcl , ~ 0dom</TD>
 </TR>
 
 <tr>
-  <td>hashgt0 , hashge1</td>
+  <td>hashgt0</td>
+  <td>~ fihashgt0 , ~ hashnncl , ~ dom1oi</td>
+</tr>
+
+<tr>
+  <td>hashge1</td>
   <td>~ hashnncl , ~ dom1oi</td>
 </tr>
 
@@ -9514,8 +9532,10 @@ or not.</TD>
 <TR>
   <TD>hashfun</TD>
   <TD><I>none</I></TD>
-  <TD>Presumably provable but the set.mm proof relies on excluded
-  middle and undif.</TD>
+  <TD>The forward direction follows easily from ~ fihashfn plus
+  ~ fundmfi .  The reverse direction would appear to need decidable
+  equality, not of elements of ` F ` (which we have), but of
+  first elements of ordered pairs contained in ` F ` .</TD>
 </TR>
 
 <TR>
@@ -9774,18 +9794,6 @@ or not.</TD>
 </tr>
 
 <tr>
-  <td>ccatalpha</td>
-  <td><i>none</i></td>
-  <td>presumably provable but the set.mm proof uses mptfi and hashfun</td>
-</tr>
-
-<tr>
-  <td>ccatrcl1</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses ccatalpha</td>
-</tr>
-
-<tr>
   <td>ids1</td>
   <td>~ s1val , ~ s1prc</td>
   <td>it is likely not possible to combine the set and proper class
@@ -9824,7 +9832,7 @@ or not.</TD>
 <tr>
   <td>ccats1alpha</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses ccatalpha</td>
+  <td>may be possible now that we have ~ ccatalpha</td>
 </tr>
 
 <tr>
@@ -9841,9 +9849,7 @@ or not.</TD>
 
 <tr>
   <td>wrdlenccats1lenm1</td>
-  <td><i>none</i></td>
-  <td>Presumably would be provable with a set existence condition
-  added.</td>
+  <td>~ wrdlenccats1lenm1g</td>
 </tr>
 
 <tr>
@@ -9855,9 +9861,8 @@ or not.</TD>
 
 <tr>
   <td>ccatw2s1len</td>
-  <td><i>none</i></td>
-  <td>Presumably would be provable with set existence conditions
-  added.</td>
+  <td>~ ccatw2s1leng</td>
+  <td>adds set existence conditions</td>
 </tr>
 
 <tr>
@@ -9887,20 +9892,20 @@ or not.</TD>
 
 <tr>
   <td>ccatw2s1p1</td>
-  <td><i>none</i></td>
-  <td>would need an additional set existence condition</td>
+  <td>~ ccatw2s1p1g</td>
+  <td>adds a set existence condition</td>
 </tr>
 
 <tr>
   <td>ccat2s1fvw</td>
-  <td><i>none</i></td>
-  <td>would need additional set existence conditions</td>
+  <td>~ ccat2s1fvwd</td>
+  <td>adds set existence conditions</td>
 </tr>
 
 <tr>
   <td>ccat2s1fst</td>
-  <td><i>none</i></td>
-  <td>would need additional set existence conditions</td>
+  <td>~ ccat2s1fstg</td>
+  <td>adds set existence conditions</td>
 </tr>
 
 <tr>
@@ -10036,21 +10041,39 @@ or not.</TD>
 
 <tr>
   <td>s2cli</td>
-  <td>s2cl</td>
+  <td>~ s2cl , ~ s2cld</td>
   <td>requires set existence</td>
 </tr>
 
 <tr>
   <td>s3cli</td>
-  <td>s3cl</td>
+  <td>~ s3cl , ~ s3cld</td>
   <td>requires set existence</td>
 </tr>
 
 <tr>
-  <td>s4cli , s5cli , s6cli , s7cli , s8cli</td>
-  <td><i>none</i></td>
-  <td>would be possible to add analogues of ~ s2cl for length 4, 5,
-  6, 7, or 8 word constructors</td>
+  <td>s4cli</td>
+  <td>~ s4cld</td>
+</tr>
+
+<tr>
+  <td>s5cli</td>
+  <td>~ s5cld</td>
+</tr>
+
+<tr>
+  <td>s6cli</td>
+  <td>~ s6cld</td>
+</tr>
+
+<tr>
+  <td>s7cli</td>
+  <td>~ s7cld</td>
+</tr>
+
+<tr>
+  <td>s8cli</td>
+  <td>~ s8cld</td>
 </tr>
 
 <tr>
@@ -10086,6 +10109,12 @@ or not.</TD>
 <tr>
   <td>s3fv1</td>
   <td>~ s3fv1g</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s3fv2</td>
+  <td>~ s3fv2g</td>
   <td>adds set existence conditions</td>
 </tr>
 
@@ -17051,6 +17080,257 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>uhgr0vsize0</td>
+  <td>~ uhgr0vsize0en</td>
+  <td>changes how we express that a set has zero elements</td>
+</tr>
+
+<tr>
+  <td>uhgr0edgfi</td>
+  <td>~ uhgr0enedgfi</td>
+  <td>changes how we express that a set has zero elements</td>
+</tr>
+
+<tr>
+  <td>uspgr1e</td>
+  <td>~ uspgr1edc</td>
+  <td>adds decidability condition</td>
+</tr>
+
+<tr>
+  <td>uspgr1eop</td>
+  <td>~ uspgr1eopdc</td>
+  <td>adds decidability condition</td>
+</tr>
+
+<tr>
+  <td>uspgr1ewop</td>
+  <td>~ uspgr1ewopdc</td>
+</tr>
+
+<tr>
+  <td>uspgr1v1eop</td>
+  <td><i>none</i></td>
+  <td>should follow from ~ uspgr1eopdc if a decidability
+  condition is added</td>
+</tr>
+
+<tr>
+  <td>uspgr2v1e2w</td>
+  <td><i>none</i></td>
+  <td>likely provable from ~ uspgr1ewopdc if a
+  decidability condition is added</td>
+</tr>
+
+<tr>
+  <td>lfuhgr1v0e</td>
+  <td><i>none</i></td>
+  <td>probably could be proved with some changes, but
+  the multigraph case might be easier than the hypergraph
+  case</td>
+</tr>
+
+<tr>
+  <td>usgr1v</td>
+  <td><i>none</i></td>
+  <td>if ` A ` is a set, see ~ usgr1vr and ~ usgr0e</td>
+</tr>
+
+<tr>
+  <td>usgr1v0edg</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses usgr1v</td>
+</tr>
+
+<tr>
+  <td>usgrexmplef</td>
+  <td><i>none</i></td>
+  <td>Would need changes to how we express that
+  a set has two elements.  Also, the set.mm proof
+  uses s4f1o .</td>
+</tr>
+
+<tr>
+  <td>usgrexmpllem</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses s4cli</td>
+</tr>
+
+<tr>
+  <td>usgrexmplvtx</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses usgrexmpllem</td>
+</tr>
+
+<tr>
+  <td>usgrexmpledg</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses usgrexmpllem and s4f1o</td>
+</tr>
+
+<tr>
+  <td>usgrexmpl</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses usgrexmplef and s4cli</td>
+</tr>
+
+<tr>
+  <td>vtxdgval , vtxdgfival</td>
+  <td>~ vtxdgfifival</td>
+  <td>adds several finiteness conditions</td>
+</tr>
+
+<tr>
+  <td>vtxdgf</td>
+  <td>~ vtxdgfif</td>
+  <td>adds several finiteness conditions and changes
+  the codomain from ` NN0* ` to ` NN0 `</td>
+</tr>
+
+<tr>
+  <td>vtxdgelxnn0</td>
+  <td>~ vtxdgfif plus ~ ffvelcdmd</td>
+</tr>
+
+<tr>
+  <td>vtxdg0e</td>
+  <td>~ vtxdgfi0e</td>
+  <td>adds several finiteness conditions</td>
+</tr>
+
+<tr>
+  <td>vtxdgfisnn0</td>
+  <td>~ vtxdgfif plus ~ ffvelcdmd</td>
+</tr>
+
+<tr>
+  <td>vtxdgfisf</td>
+  <td>~ vtxdgfif</td>
+  <td>adds several finiteness conditions</td>
+</tr>
+
+<tr>
+  <td>vtxduhgr0e</td>
+  <td><i>none</i></td>
+  <td>presumably would require some modifications,
+  perhaps analogous to ~ vtxdgfi0e</td>
+</tr>
+
+<tr>
+  <td>vtxdlfuhgr1v</td>
+  <td><i>none</i></td>
+  <td>would require changes, but probably provable
+  in some form</td>
+</tr>
+
+<tr>
+  <td>vdumgr0</td>
+  <td><i>none</i></td>
+  <td>would appear to be provable with some changes</td>
+</tr>
+
+<tr>
+  <td>vtxdun , vtxdfiun , vtxduhgrun , vtxduhgrfiun</td>
+  <td>~ vtxdfifiun</td>
+  <td>adds finiteness conditions</td>
+</tr>
+
+<tr>
+  <td>vtxdlfgrval</td>
+  <td>~ vtxdumgrfival</td>
+  <td>To use a theorem like ~ vtxdgfifival we need to be
+  dealing with a pseudograph.  But a loop-free pseudograph
+  is just a multigraph. Also adds the usual conditions
+  that there are finitely many vertexes and finitely many
+  edges.</td>
+</tr>
+
+<tr>
+  <td>vtxdumgrval</td>
+  <td>~ vtxdumgrfival</td>
+  <td>adds finiteness conditions</td>
+</tr>
+
+<tr>
+  <td>vtxdusgrval</td>
+  <td>~ vtxdumgrfival (plus ~ usgrumgr )</td>
+</tr>
+
+<tr>
+  <td>vtxd0nedgb</td>
+  <td>~ vtxd0nedgbfi</td>
+  <td>adds finiteness conditions</td>
+</tr>
+
+<tr>
+  <td>vtxdushgrfvedglem</td>
+  <td>~ vtxduspgrfvedgfilem</td>
+  <td>adds finiteness conditions and changes hypergraph to
+  pseudograph</td>
+</tr>
+
+<tr>
+  <td>vtxdushgrfvedg</td>
+  <td>~ vtxduspgrfvedgfi</td>
+  <td>adds finiteness conditions and changes hypergraph to
+  pseudograph</td>
+</tr>
+
+<tr>
+  <td>vtxdusgrfvedg</td>
+  <td>~ vtxdusgrfvedgfi</td>
+  <td>adds finiteness conditions</td>
+</tr>
+
+<tr>
+  <td>vtxduhgr0nedg</td>
+  <td><i>none</i></td>
+  <td>presumably could be proved with changes similar to
+  those in ~ vtxd0nedgbfi</td>
+</tr>
+
+<tr>
+  <td>vtxdumgr0nedg</td>
+  <td><i>none</i></td>
+  <td>presumably could be proved with changes similar to
+  those in ~ vtxd0nedgbfi</td>
+</tr>
+
+<tr>
+  <td>vtxduhgr0edgnel</td>
+  <td><i>none</i></td>
+  <td>presumably could be proved with changes similar to
+  those in ~ vtxd0nedgbfi</td>
+</tr>
+
+<tr>
+  <td>vtxdusgr0edgnel</td>
+  <td><i>none</i></td>
+  <td>presumably could be proved with changes similar to
+  those in ~ vtxd0nedgbfi</td>
+</tr>
+
+<tr>
+  <td>vtxdgfusgrf</td>
+  <td><i>none</i></td>
+  <td>may be provable once we define FinUSGraph .  The question is
+  whether the FinUSGraph condition will suffice to use ~ vtxdgfif
+  in place of vtxdgfisf or whether we need something else.</td>
+</tr>
+
+<tr>
+  <td>vtxdgfusgr</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses vtxdgfusgrf</td>
+</tr>
+
+<tr>
+  <td>fusgrn0degnn0</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses vtxdgfusgr</td>
+</tr>
+
+<tr>
   <td>wlkpwrd</td>
   <td>~ wlkpwrdg</td>
 </tr>
@@ -17141,6 +17421,292 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>clwwlk</td>
+  <td>~ clwwlkg</td>
+</tr>
+
+<tr>
+  <td>clwlkclwwlk and lemmas</td>
+  <td><i>none</i></td>
+  <td>presumably provable using proofs similar to the
+  set.mm proofs (once ClWalks is defined)</td>
+</tr>
+
+<tr>
+  <td>clwlkclwwlk2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses clwlkclwwlk</td>
+</tr>
+
+<tr>
+  <td>clwlkclwwlkf</td>
+  <td><i>none</i></td>
+  <td>presumably provable using proofs similar to the
+  set.mm proofs (once ClWalks is defined)</td>
+</tr>
+
+<tr>
+  <td>clwlkclwwlkfo</td>
+  <td><i>none</i></td>
+  <td>presumably provable using proofs similar to the
+  set.mm proofs (once ClWalks is defined)</td>
+</tr>
+
+<tr>
+  <td>clwlkclwwlkf1</td>
+  <td><i>none</i></td>
+  <td>presumably provable using proofs similar to the
+  set.mm proofs (once ClWalks is defined)</td>
+</tr>
+
+<tr>
+  <td>clwlkclwwlkf1o</td>
+  <td><i>none</i></td>
+  <td>presumably provable using proofs similar to the
+  set.mm proofs (once ClWalks is defined)</td>
+</tr>
+
+<tr>
+  <td>clwlkclwwlken</td>
+  <td><i>none</i></td>
+  <td>may be possible once ClWalks is defined</td>
+</tr>
+
+<tr>
+  <td>clwwisshclwws and lemmas</td>
+  <td><i>none</i></td>
+  <td>may be possible once cyclShift is defined</td>
+</tr>
+
+<tr>
+  <td>clwwisshclwwsn</td>
+  <td><i>none</i></td>
+  <td>may be possible once cyclShift is defined</td>
+</tr>
+
+<tr>
+  <td>erclwwlk (and nearby theorems using the same equivalence
+  relation)</td>
+  <td><i>none</i></td>
+  <td>may be possible once cyclShift is defined</td>
+</tr>
+
+<tr>
+  <td>clwwlkn</td>
+  <td>~ clwwlkng</td>
+</tr>
+
+<tr>
+  <td>clwwlkneq0</td>
+  <td><i>none</i></td>
+  <td>would appear to be provable but the set.mm
+  proof does not work as-is</td>
+</tr>
+
+<tr>
+  <td>clwwlknwwlksn</td>
+  <td><i>none</i></td>
+  <td>presumably provable once we have the WWalksN
+  syntax and theorems</td>
+</tr>
+
+<tr>
+  <td>clwwlknlbonbgr1</td>
+  <td><i>none</i></td>
+  <td>presumably provable once we have the NeighbVtx
+  syntax and theorems</td>
+</tr>
+
+<tr>
+  <td>clwwlkinwwlk</td>
+  <td><i>none</i></td>
+  <td>presumably provable (perhaps with small changes)
+  once we have the WWalksN syntax and theorems</td>
+</tr>
+
+<tr>
+  <td>clwwlknfi</td>
+  <td><i>none</i></td>
+  <td>would appear to need additional decidability
+  conditions</td>
+</tr>
+
+<tr>
+  <td>clwwlkel , clwwlkf , clwwlkfv , clwwlkf1 ,
+  clwwlkfo , clwwlkf1o</td>
+  <td><i>none</i></td>
+  <td>may be provable once we have the WWalksN
+  syntax and theorems</td>
+</tr>
+
+<tr>
+  <td>clwwlken</td>
+  <td><i>none</i></td>
+  <td>may be provable once we have the WWalksN
+  syntax and theorems</td>
+</tr>
+
+<tr>
+  <td>clwwlknwwlkncl</td>
+  <td><i>none</i></td>
+  <td>may be provable once we have the WWalksN
+  syntax and theorems</td>
+</tr>
+
+<tr>
+  <td>clwwlkwwlksb</td>
+  <td><i>none</i></td>
+  <td>may be provable once we have the WWalks
+  syntax and theorems</td>
+</tr>
+
+<tr>
+  <td>clwwlknwwlksnb</td>
+  <td><i>none</i></td>
+  <td>may be provable once we have the WWalksN
+  syntax and theorems</td>
+</tr>
+
+<tr>
+  <td>wwlksext2clwwlk</td>
+  <td><i>none</i></td>
+  <td>may be provable once we have the WWalksN
+  syntax and theorems</td>
+</tr>
+
+<tr>
+  <td>wwlksubclwwlk</td>
+  <td><i>none</i></td>
+  <td>may be provable once we have the WWalksN
+  syntax and theorems</td>
+</tr>
+
+<tr>
+  <td>clwwnisshclwwsn</td>
+  <td><i>none</i></td>
+  <td>may be provable once we have the cyclShift
+  syntax and theorems</td>
+</tr>
+
+<tr>
+  <td>clwwlknscsh</td>
+  <td><i>none</i></td>
+  <td>may be provable once we have the cyclShift
+  syntax and theorems</td>
+</tr>
+
+<tr>
+  <td>erclwwlknrel , erclwwlkneqi , erclwwlkneqlen ,
+  erclwwlknref , erclwwlknsym , erclwwlkntr , erclwwlkn ,
+  qerclwwlknfi , hashclwwlkn0 , eclclwwlkn1 , eleclclwwlkn ,
+  hashecclwwlkn1 , umgrhashecclwwlk , fusgrhashclwwlkn</td>
+  <td><i>none</i></td>
+  <td>may be provable once we have the cyclShift
+  syntax and theorems</td>
+</tr>
+
+<tr>
+  <td>clwwlkndivn</td>
+  <td><i>none</i></td>
+  <td>may be provable once we have the FinUSGraph
+  syntax and theorems</td>
+</tr>
+
+<tr>
+  <td>clwlknf1oclwwlkn including lemmas</td>
+  <td><i>none</i></td>
+  <td>may be provable once we have the ClWalks
+  syntax and theorems</td>
+</tr>
+
+<tr>
+  <td>clwlkssizeeq</td>
+  <td><i>none</i></td>
+  <td>may be provable once we have the ClWalks
+  syntax and theorems</td>
+</tr>
+
+<tr>
+  <td>clwlksndivn</td>
+  <td><i>none</i></td>
+  <td>may be provable once we have the ClWalks
+  syntax and theorems</td>
+</tr>
+
+<tr>
+  <td>clwwlknon0</td>
+  <td><i>none</i></td>
+  <td>presumably provable</td>
+</tr>
+
+<tr>
+  <td>clwwlknonfin</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses clwwlknfi</td>
+</tr>
+
+<tr>
+  <td>clwwlknon1</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof would apparently work with
+  small changes</td>
+</tr>
+
+<tr>
+  <td>clwwlknon1loop</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses clwwlknon1</td>
+</tr>
+
+<tr>
+  <td>clwwlknon1nloop</td>
+  <td><i>none</i></td>
+  <td>presumably provable although the set.mm
+  proof won't work as-is</td>
+</tr>
+
+<tr>
+  <td>clwwlknon1sn</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses clwwlknon1nloop and
+  clwwlknon1loop</td>
+</tr>
+
+<tr>
+  <td>clwwlknon1le1</td>
+  <td><i>none</i></td>
+  <td>would apparently need to use ` ~<_ 1o ` in
+  place of ` # ` and ` <_ 1 `; the set.mm proof would
+  not work as-is</td>
+</tr>
+
+<tr>
+  <td>clwwlknon2num</td>
+  <td><i>none</i></td>
+  <td>may be feasible once we define RegUSGraph</td>
+</tr>
+
+<tr>
+  <td>clwwlknonwwlknonb</td>
+  <td><i>none</i></td>
+  <td>may be feasible if we define WWalksNOn</td>
+</tr>
+
+<tr>
+  <td>clwwlknondisj</td>
+  <td><i>none</i></td>
+  <td>would appear to need decidable equality on
+  the set of vertexes or something else which
+  replaces disjor and orri</td>
+</tr>
+
+<tr>
+  <td>clwwlkvbij</td>
+  <td><i>none</i></td>
+  <td>may be feasible once iset.mm has WWalksN</td>
+</tr>
+
+<tr>
   <td>df-eupth</td>
   <td><i>none</i></td>
   <td>depends on Trails ( df-trls )</td>
@@ -17151,8 +17717,21 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>we don't have a complete list of what this proof depends on,
   but here's a partial list of (direct or indirect) dependencies of the
-  set.mm proof: EulerPaths ( df-eupth ), VtxDeg ( df-vtxdg ) ,
-  eulerpath , ccatalpha , ccatrcl1</td>
+  set.mm proof:
+  EulerPaths ( df-eupth ), various VtxDeg theorems, eulerpath</td>
+</tr>
+
+<tr>
+  <td>friendship</td>
+  <td><i>none</i></td>
+  <td>we don't have a complete list of what this proof depends on,
+  but here's a partial list of (direct or indirect) dependencies of the
+  set.mm proof: RegUSGraph , WWalksN , clwwisshclwws ,
+  clwwisshclwwsn ,
+  clwwlknfi , clwwlkel , wwlksext2clwwlk , wwlksubclwwlk ,
+  clwwnisshclwwsn , clwwlknscsh , cyclShift , fusgrhashclwwlkn ,
+  clwwlkndivn , clwwlknonfin , clwwlknonel , clwwlknon2num ,
+  FinUSGraph , vtxdgfusgrf , clwwlknondisj , clwwlkvbij , df-frgr</td>
 </tr>
 
 <tr>
@@ -17747,6 +18326,15 @@ http://www.humanities.mcmaster.ca/~~hitchckd/peculiarities.pdf</A>
 <I>Homotopy Type Theory: Univalent Foundations of Mathematics</I>,
 <A HREF="https://homotopytypetheory.org/book"
 >https://homotopytypetheory.org/book</A>, first edition.</LI>
+
+<LI>
+<A NAME="Huneke"></A> [Huneke] Huneke, Craig L.,
+&quot;The Friendship Theorem&quot; <I>American Mathematical Monthly</I>
+109:192-194 (2002); available at <A
+HREF="https://www.researchgate.net/publication/268313555_The_Friendship_Theorem">
+https://www.researchgate.net/publication/268313555_The_Friendship_Theorem</A>
+(retrieved 30 Dec 2017).
+</LI>
 
 <LI><A NAME="Jech"></A> [Jech] Jech, Thomas, <I>Set Theory,</I>
 Academic Press, San Diego (1978) [QA248.J42].</LI>
