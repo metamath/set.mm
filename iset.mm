@@ -196031,6 +196031,28 @@ $)
   $}
 
   ${
+    $d E u v $.  $d K u v $.  $d V u v $.  $d ph u v $.
+    upgr1een.k $e |- ( ph -> K e. X ) $.
+    upgr1een.v $e |- ( ph -> V e. Y ) $.
+    upgr1een.e $e |- ( ph -> E e. ~P V ) $.
+    upgr1een.2o $e |- ( ph -> E ~~ 2o ) $.
+    $( A graph with one non-loop edge is a pseudograph.  Variation of
+       ~ upgr1edc for a different way of specifying a graph with one edge.
+       (Contributed by Jim Kingdon, 18-Mar-2026.) $)
+    upgr1een $p |- ( ph -> <. V , { <. K , E >. } >. e. UPGraph ) $=
+      ( vu vv wceq cop wcel c2o cen adantr cvv syl2anc cv cpr wex csn cupgr wbr
+      en2 syl wa cvtx cfv wss elpwid vex prid1 simpr eleqtrrid sseldd cpw opexg
+      eqid snexg opvtxfv eleqtrrd prid2 wne wo wdc eqbrtrrd wb pr2ne el2v sylib
+      olcd dcne sylibr ciedg opiedgfv opeq2d sneqd eqtrd upgr1edc exlimdvv mpd
+      ex ) ABKUAZLUAZUBZMZLUCKUCZDCBNZUDZNZUEOZABPQUFZWJJKLBUGUHAWIWNKLAWIWNAWI
+      UIZCWFWGWMWMUJUKZEWQVAACEOZWIGRWPWFDWQWPBDWFABDULWIABDIUMRZWPWFWHBWFWGKUN
+      UOAWIUPZUQURAWQDMZWIADFOZWLSOZXAHAWKSOZXCAWRBDUSZOXDGICBEXEUTTWKSVBUHZWLD
+      FSVCTRZVDWPWGDWQWPBDWGWSWPWGWHBWFWGLUNVEWTUQURXGVDWPWFWGMZWFWGVFZVGXHVHWP
+      XIXHWPWHPQUFZXIWPBWHPQWTAWOWIJRVIXJXIVJKLWFWGSSVKVLVMVNWFWGVOVPWPWMVQUKZW
+      LCWHNZUDAXKWLMZWIAXBXCXMHXFWLDFSVRTRWPWKXLWPBWHCWTVSVTWAWBWEWCWD $.
+  $}
+
+  ${
     upgrun.g $e |- ( ph -> G e. UPGraph ) $.
     upgrun.h $e |- ( ph -> H e. UPGraph ) $.
     upgrun.e $e |- E = ( iEdg ` G ) $.
@@ -198278,25 +198300,16 @@ $)
       p1evtxdeqfilem $p |- ( ph -> ( ( VtxDeg ` F ) ` U )
                       = ( ( ( VtxDeg ` G ) ` U )
                        + ( ( VtxDeg ` <. V , { <. K , E >. } >. ) ` U ) ) ) $=
-        ( vu vv cop csn ciedg cfv eqid cvv wcel cvtx wceq cfn elexd opexg snexg
-        syl2anc syl opvtxfv cpr wex cupgr c2o cen wbr en2 adantr wss elpwid vex
-        cv wa prid1 simpr eleqtrrid sseldd eleqtrrd prid2 wne wo eqbrtrrd pr2ne
-        wdc wb el2v sylib olcd dcne sylibr opiedgfv opeq2d sneqd eqtrd upgr1edc
-        ex exlimdvv mpd cdm cin c0 dmsnopg ineq2d eqcomd dmeqd wn df-nel disjsn
-        wnel 3eqtr3d wfun funsng funeqd mpbid cun uneq2d snfig eqeltrd eqeltrrd
-        vtxdfifiun ) ADEHGCUGZUHZUGZFYEUIUJZBHLYFUKKAHULUMZYDULUMZYEUNUJZHUOZAH
-        UPSUQZAYCULUMZYHAGIUMZCJUMZYLPUDGCIJURUTYCULUSVAZYDHULULVBUTNSTACUEVNZU
-        FVNZVCZUOZUFVDUEVDZYEVEUMZACVFVGVHZYTUCUEUFCVIVAAYSUUAUEUFAYSUUAAYSVOZG
-        YPYQYEYIIYIUKAYMYSPVJUUCYPHYIUUCCHYPACHVKYSACHUBVLVJZUUCYPYRCYPYQUEVMVP
-        AYSVQZVRVSAYJYSAHUPUMZYHYJSYOYDHUPULVBUTVJZVTUUCYQHYIUUCCHYQUUDUUCYQYRC
-        YPYQUFVMWAUUEVRVSUUGVTUUCYPYQUOZYPYQWBZWCUUHWFUUCUUIUUHUUCYRVFVGVHZUUIU
-        UCCYRVFVGUUEAUUBYSUCVJWDUUJUUIWGUEUFYPYQULULWEWHWIWJYPYQWKWLUUCYFYDGYRU
-        GZUHAYFYDUOZYSAUUFYHUULSYOYDHUPULWMUTVJUUCYCUUKUUCCYRGUUEWNWOWPWQWRWSWT
-        AFXAZYDXAZXBUUMGUHZXBZUUMYFXAZXBXCAUUNUUOUUMAYNUUNUUOUOUDGCJXDVAZXEAUUN
-        UUQUUMAYDYFAYFYDAYGYHUULYKYOYDHULULWMUTXFZXGZXEAGUUMUMXHZUUPXCUOAGUUMXK
-        UVAQGUUMXIWIUUMGXJWLXLMAYDXMZYFXMAYMYNUVBPUDGCIJXNUTAYDYFUUSXOXPRADUIUJ
-        FYDXQFYFXQOAYDYFFUUSXRWPUAAUUNUUQUPUUTAUUNUUOUPUURAYMUUOUPUMPGIXSVAXTYA
-        YB $.
+        ( cop csn ciedg cfv eqid cvv wcel cvtx wceq cfn elexd opexg syl2anc syl
+        snexg opvtxfv upgr1een cdm c0 dmsnopg ineq2d opiedgfv eqcomd dmeqd wnel
+        cin wn df-nel sylib disjsn sylibr 3eqtr3d wfun funsng funeqd cun uneq2d
+        mpbid eqtrd snfig eqeltrd eqeltrrd vtxdfifiun ) ADEHGCUEZUFZUEZFWJUGUHZ
+        BHLWKUIKAHUJUKZWIUJUKZWJULUHHUMAHUNSUOZAWHUJUKZWMAGIUKZCJUKZWOPUDGCIJUP
+        UQWHUJUSURZWIHUJUJUTUQNSTACGHIUNPSUBUCVAAFVBZWIVBZVJWSGUFZVJZWSWKVBZVJV
+        CAWTXAWSAWQWTXAUMUDGCJVDURZVEAWTXCWSAWIWKAWKWIAWLWMWKWIUMWNWRWIHUJUJVFU
+        QVGZVHZVEAGWSUKVKZXBVCUMAGWSVIXGQGWSVLVMWSGVNVOVPMAWIVQZWKVQAWPWQXHPUDG
+        CIJVRUQAWIWKXEVSWBRADUGUHFWIVTFWKVTOAWIWKFXEWAWCUAAWTXCUNXFAWTXAUNXDAWP
+        XAUNUKPGIWDURWEWFWG $.
     $}
   $}
 
