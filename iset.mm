@@ -198222,6 +198222,31 @@ $)
       ZDABVRWGHVHAWLWJWPDUOJNBDGWIVIVJURUIVKVLVCAWLWMUGUOJBGVOUQURVM $.
   $}
 
+  ${
+    1hegrvtxdg1.a $e |- ( ph -> A e. X ) $.
+    1hegrvtxdg1.b $e |- ( ph -> B e. V ) $.
+    1hegrvtxdg1.c $e |- ( ph -> C e. V ) $.
+    1hegrvtxdg1.n $e |- ( ph -> B =/= C ) $.
+    1hegrvtxdg1.x $e |- ( ph -> E e. ~P V ) $.
+    1hegrvtxdg1.i $e |- ( ph -> ( iEdg ` G ) = { <. A , E >. } ) $.
+    1hegrvtxdg1.e $e |- ( ph -> { B , C } C_ E ) $.
+    1hegrvtxdg1.v $e |- ( ph -> ( Vtx ` G ) = V ) $.
+    1hegrvtxdg1fi.fi $e |- ( ph -> V e. Fin ) $.
+    1hegrvtxdg1fi.m $e |- ( ph -> G e. UMGraph ) $.
+    $( The vertex degree of a multigraph with one edge, case 2: an edge from
+       the given vertex to some other vertex contributes one to the vertex's
+       degree.  (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by
+       Alexander van der Vekens, 22-Dec-2017.)  (Revised by AV,
+       23-Feb-2021.) $)
+    1hegrvtxdg1fi $p |- ( ph -> ( ( VtxDeg ` G ) ` B ) = 1 ) $=
+      ( wcel cfv cpr prid1g syl sseldd ciedg c2o cen cop csn fveq1d cpw syl2anc
+      wceq fvsng eqtrd cumgr cdm wbr snidg dmeqd dmsnopg eleqtrrd cvtx eqbrtrrd
+      eqid umgredg2en 1hevtxdg1en ) ABCEFGHNPIJQRMACDUAZECOACGSCVHSJCDGUBUCUDAB
+      FUETZTZEUFUGAVJBBEUHUIZTZEABVIVKNUJABHSZEGUKZSZVLEUMIMBEHVNUNULUOAFUPSBVI
+      UQZSVJUFUGURRABBUIZVPAVMBVQSIBHUSUCAVPVKUQZVQAVIVKNUTAVOVRVQUMMBEVNVAUCUO
+      VBVIFFVCTZBVSVEVIVEVFULVDVG $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
