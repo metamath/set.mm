@@ -198256,6 +198256,50 @@ $)
       AOUBPQRUC $.
   $}
 
+  ${
+    p1evtxdeq.v $e |- V = ( Vtx ` G ) $.
+    p1evtxdeq.i $e |- I = ( iEdg ` G ) $.
+    p1evtxdeq.f $e |- ( ph -> Fun I ) $.
+    p1evtxdeq.fv $e |- ( ph -> ( Vtx ` F ) = V ) $.
+    p1evtxdeq.fi $e |- ( ph -> ( iEdg ` F ) = ( I u. { <. K , E >. } ) ) $.
+    p1evtxdeq.k $e |- ( ph -> K e. X ) $.
+    p1evtxdeq.d $e |- ( ph -> K e/ dom I ) $.
+    p1evtxdeq.u $e |- ( ph -> U e. V ) $.
+    p1evtxdeqfi.vfi $e |- ( ph -> V e. Fin ) $.
+    p1evtxdeqfi.u $e |- ( ph -> G e. UPGraph ) $.
+    p1evtxdeqfi.ifi $e |- ( ph -> dom I e. Fin ) $.
+    p1evtxdeqfi.e $e |- ( ph -> E e. ~P V ) $.
+    p1evtxdeqfi.2o $e |- ( ph -> E ~~ 2o ) $.
+    ${
+      $d E u v $.  $d K u v $.  $d V u v $.  $d ph u v $.
+      p1evtxdeq.e $e |- ( ph -> E e. Y ) $.
+      $( Lemma for ~ p1evtxdeqfi and ~ p1evtxdp1fi .  (Contributed by AV,
+         3-Mar-2021.) $)
+      p1evtxdeqfilem $p |- ( ph -> ( ( VtxDeg ` F ) ` U )
+                      = ( ( ( VtxDeg ` G ) ` U )
+                       + ( ( VtxDeg ` <. V , { <. K , E >. } >. ) ` U ) ) ) $=
+        ( vu vv cop csn ciedg cfv eqid cvv wcel cvtx wceq cfn elexd opexg snexg
+        syl2anc syl opvtxfv cpr wex cupgr c2o cen wbr en2 adantr wss elpwid vex
+        cv wa prid1 simpr eleqtrrid sseldd eleqtrrd prid2 wne wo eqbrtrrd pr2ne
+        wdc wb el2v sylib olcd dcne sylibr opiedgfv opeq2d sneqd eqtrd upgr1edc
+        ex exlimdvv mpd cdm cin c0 dmsnopg ineq2d eqcomd dmeqd wn df-nel disjsn
+        wnel 3eqtr3d wfun funsng funeqd mpbid cun uneq2d snfig eqeltrd eqeltrrd
+        vtxdfifiun ) ADEHGCUGZUHZUGZFYEUIUJZBHLYFUKKAHULUMZYDULUMZYEUNUJZHUOZAH
+        UPSUQZAYCULUMZYHAGIUMZCJUMZYLPUDGCIJURUTYCULUSVAZYDHULULVBUTNSTACUEVNZU
+        FVNZVCZUOZUFVDUEVDZYEVEUMZACVFVGVHZYTUCUEUFCVIVAAYSUUAUEUFAYSUUAAYSVOZG
+        YPYQYEYIIYIUKAYMYSPVJUUCYPHYIUUCCHYPACHVKYSACHUBVLVJZUUCYPYRCYPYQUEVMVP
+        AYSVQZVRVSAYJYSAHUPUMZYHYJSYOYDHUPULVBUTVJZVTUUCYQHYIUUCCHYQUUDUUCYQYRC
+        YPYQUFVMWAUUEVRVSUUGVTUUCYPYQUOZYPYQWBZWCUUHWFUUCUUIUUHUUCYRVFVGVHZUUIU
+        UCCYRVFVGUUEAUUBYSUCVJWDUUJUUIWGUEUFYPYQULULWEWHWIWJYPYQWKWLUUCYFYDGYRU
+        GZUHAYFYDUOZYSAUUFYHUULSYOYDHUPULWMUTVJUUCYCUUKUUCCYRGUUEWNWOWPWQWRWSWT
+        AFXAZYDXAZXBUUMGUHZXBZUUMYFXAZXBXCAUUNUUOUUMAYNUUNUUOUOUDGCJXDVAZXEAUUN
+        UUQUUMAYDYFAYFYDAYGYHUULYKYOYDHULULWMUTXFZXGZXEAGUUMUMXHZUUPXCUOAGUUMXK
+        UVAQGUUMXIWIUUMGXJWLXLMAYDXMZYFXMAYMYNUVBPUDGCIJXNUTAYDYFUUSXOXPRADUIUJ
+        FYDXQFYFXQOAYDYFFUUSXRWPUAAUUNUUQUPUUTAUUNUUOUPUURAYMUUOUPUMPGIXSVAXTYA
+        YB $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
