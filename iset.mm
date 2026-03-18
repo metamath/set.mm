@@ -198245,6 +198245,15 @@ $)
       FUETZTZEUFUGAVJBBEUHUIZTZEABVIVKNUJABHSZEGUKZSZVLEUMIMBEHVNUNULUOAFUPSBVI
       UQZSVJUFUGURRABBUIZVPAVMBVQSIBHUSUCAVPVKUQZVQAVIVKNUTAVOVRVQUMMBEVNVAUCUO
       VBVIFFVCTZBVSVEVIVEVFULVDVG $.
+
+    $( The vertex degree of a graph with one hyperedge, case 3: an edge from
+       some other vertex to the given vertex contributes one to the vertex's
+       degree.  (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by
+       Alexander van der Vekens, 22-Dec-2017.)  (Revised by AV,
+       23-Feb-2021.) $)
+    1hegrvtxdg1rfi $p |- ( ph -> ( ( VtxDeg ` G ) ` C ) = 1 ) $=
+      ( necomd cpr prcom eqsstrid 1hegrvtxdg1fi ) ABDCEFGHIKJACDLSMNADCTCDTEDCU
+      AOUBPQRUC $.
   $}
 
 
