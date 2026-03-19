@@ -198339,6 +198339,19 @@ $)
         FVBPRSACGHIUSPSUBUCVGUDUEVHVJAVTAVTAHVKBVSAFVLZEFHKLWKVMUASTVNRVOVPVQVR
         $.
     $}
+
+    p1evtxdp1.n $e |- ( ph -> U e. E ) $.
+    $( If an edge ` E ` (not being a loop) which contains vertex ` U ` is added
+       to a graph ` G ` (yielding a graph ` F ` ), the degree of ` U ` is
+       increased by 1.  (Contributed by AV, 3-Mar-2021.) $)
+    p1evtxdp1fi $p |- ( ph -> ( ( VtxDeg ` F ) ` U )
+                          = ( ( ( VtxDeg ` G ) ` U ) + 1 ) ) $=
+      ( cvtxdg cfv cop csn caddc co c1 cpw p1evtxdeqfilem wcel ciedg wceq elexd
+      cvv cfn opexg syl2anc snexg syl opiedgfv cvtx umgr1een 1hevtxdg1en oveq2d
+      opvtxfv eqtrd ) ABDUDUEUEBEUDUEUEZBHGCUFZUGZUFZUDUEUEZUHUIVJUJUHUIABCDEFG
+      HIHUKZJKLMNOPQRSTUAUBUAULAVNUJVJUHAGBCVMHIAHUQUMZVLUQUMZVMUNUEVLUOAHURRUP
+      ZAVKUQUMZVQAGIUMCVOUMVSOUAGCIVOUSUTVKUQVAVBZVLHUQUQVCUTAVPVQVMVDUEHUOVRVT
+      VLHUQUQVHUTOQRACGHIURORUAUBVEUAUCUBVFVGVI $.
   $}
 
 
