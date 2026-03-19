@@ -3853,7 +3853,11 @@ operation, as these are just a few examples).</TD>
 <tr>
   <td>fvmptopab</td>
   <td><i>none</i></td>
-  <td>the set.mm proof is not intuitionistic</td>
+  <td>The condition that ` Z ` is a set would seem to be
+  removable with ~ pm5.21nii , ~ mptrcl , and the like.
+  The condition that ` ( F `` Z ) ` is a set (or something
+  else to replace opabresex2 in the set.mm proof) might be
+  removable, but it isn't quite as clear.</td>
 </tr>
 
 <tr>
@@ -17421,6 +17425,18 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>redwlk</td>
+  <td><i>none</i></td>
+  <td>presumably provable</td>
+</tr>
+
+<tr>
+  <td>wlkp1</td>
+  <td><i>none</i></td>
+  <td>likely provable</td>
+</tr>
+
+<tr>
   <td>trlsfval</td>
   <td>~ trlsfvalg</td>
 </tr>
@@ -17733,9 +17749,48 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>df-eupth</td>
+  <td>eupths</td>
+  <td>~ eupthsg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>upgriseupth</td>
   <td><i>none</i></td>
-  <td>depends on Trails ( df-trls )</td>
+  <td>would likely need additional conditions, such as
+  decidable equality for vertexes and some way of
+  ensuring that ` F ` is finite</td>
+</tr>
+
+<tr>
+  <td>upgreupthi</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses upgriseupth</td>
+</tr>
+
+<tr>
+  <td>upgreupthseg</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses upgreupthi</td>
+</tr>
+
+<tr>
+  <td>eupth0</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses is0wlk</td>
+</tr>
+
+<tr>
+  <td>eupthp1</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses wlkp1</td>
+</tr>
+
+<tr>
+  <td>eupth2eucrct</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses eupthp1 and some wlkp1
+  lemmas</td>
 </tr>
 
 <tr>
@@ -17744,7 +17799,7 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>we don't have a complete list of what this proof depends on,
   but here's a partial list of (direct or indirect) dependencies of the
   set.mm proof:
-  EulerPaths ( df-eupth ), various VtxDeg theorems, eulerpath</td>
+  various VtxDeg theorems, eulerpath</td>
 </tr>
 
 <tr>
