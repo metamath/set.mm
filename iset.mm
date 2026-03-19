@@ -198310,6 +198310,21 @@ $)
         QVGZVHZVEAGWSUKVKZXBVCUMAGWSVIXGQGWSVLVMWSGVNVOVPMAWIVQZWKVQAWPWQXHPUDG
         CIJVRUQAWIWKXEVSWBRADUGUHFWIVTFWKVTOAWIWKFXEWAWCUAAWTXCUNXFAWTXAUNXDAWP
         XAUNUKPGIWDURWEWFWG $.
+
+      p1evtxdeq.n $e |- ( ph -> U e/ E ) $.
+      $( If an edge ` E ` which does not contain vertex ` U ` is added to a
+         graph ` G ` (yielding a graph ` F ` ), the degree of ` U ` is the same
+         in both graphs.  (Contributed by AV, 2-Mar-2021.) $)
+      p1evtxdeqfi $p |- ( ph -> ( ( VtxDeg ` F ) ` U )
+                            = ( ( VtxDeg ` G ) ` U ) ) $=
+        ( cvtxdg cfv cop csn caddc cc0 p1evtxdeqfilem cvv wcel ciedg wceq elexd
+        co cfn cpw opexg syl2anc syl opiedgfv cvtx opvtxfv upgr1een 1hevtxdg0fi
+        snexg oveq2d cn0 cdm eqid vtxdgfif ffvelcdmd nn0cnd addridd 3eqtrd ) AB
+        DUFUGUGBEUFUGZUGZBHGCUHZUIZUHZUFUGUGZUJURVTUKUJURVTABCDEFGHIJKLMNOPQRST
+        UAUBUCUDULAWDUKVTUJAGBCWCHIJAHUMUNZWBUMUNZWCUOUGWBUPAHUSSUQZAWAUMUNZWFA
+        GIUNCHUTZUNWHPUBGCIWIVAVBWAUMVIVCZWBHUMUMVDVBAWEWFWCVEUGHUPWGWJWBHUMUMV
+        FVBPRSACGHIUSPSUBUCVGUDUEVHVJAVTAVTAHVKBVSAFVLZEFHKLWKVMUASTVNRVOVPVQVR
+        $.
     $}
   $}
 
