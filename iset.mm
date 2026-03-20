@@ -198416,6 +198416,18 @@ $)
           WKAXMXNXBXFTKQDIHWLVNAXBUNULUMZDIWOZAIDRWPAXMXNXSXTWCKQDIHHWQVNWEAXMD
           XBTKDIHWRVAWSAXACUCUDNWTVP $.
       $}
+
+      vdegp1cid.f $e |- ( ph -> ( iEdg ` F ) = ( I ++ <" { X , U } "> ) ) $.
+      $( The induction step for a vertex degree calculation, for example in the
+         K&ouml;nigsberg graph.  If the degree of ` U ` in the edge set ` E `
+         is ` P ` , then adding ` { X , U } ` to the edge set, where
+         ` X =/= U ` , yields degree ` P + 1 ` .  (Contributed by Mario
+         Carneiro, 12-Mar-2015.)  (Revised by Mario Carneiro, 28-Feb-2016.)
+         (Revised by AV, 3-Mar-2021.) $)
+      vdegp1cid $p |- ( ph -> ( ( VtxDeg ` F ) ` U ) = ( P + 1 ) ) $=
+        ( cconcat ciedg cfv cpr cs1 co wceq prcom ax-mp oveq2i eqtrdi vdegp1bid
+        s1eq ) ABCDEFGHIJKLMNOPQRAEUAUBGIDUCZUDZTUEGDIUCZUDZTUESUNUPGTUMUOUFUNU
+        PUFIDUGUMUOULUHUIUJUK $.
     $}
   $}
 
