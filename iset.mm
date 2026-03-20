@@ -198354,6 +198354,44 @@ $)
       VLHUQUQVHUTOQRACGHIURORUAUBVEUAUCUBVFVGVI $.
   $}
 
+  ${
+    $d x U $.  $d x V $.  $d x X $.  $d x Y $.  $d G x $.
+    vdegp1ai.vg $e |- V = ( Vtx ` G ) $.
+    vdegp1aid.u $e |- ( ph -> U e. V ) $.
+    vdegp1ai.i $e |- I = ( iEdg ` G ) $.
+    vdegp1aid.w $e |- ( ph
+      -> I e. Word { x e. ~P V | ( x ~~ 1o \/ x ~~ 2o ) } ) $.
+    vdegp1aid.d $e |- ( ph -> ( ( VtxDeg ` G ) ` U ) = P ) $.
+    vdegp1aid.vf $e |- ( ph -> ( Vtx ` F ) = V ) $.
+    vdegp1aid.fi $e |- ( ph -> V e. Fin ) $.
+    ${
+      vdegp1aid.x $e |- ( ph -> X e. V ) $.
+      vdegp1aid.xu $e |- ( ph -> X =/= U ) $.
+      vdegp1aid.y $e |- ( ph -> Y e. V ) $.
+      vdegp1aid.yu $e |- ( ph -> Y =/= U ) $.
+      vdegp1aid.xy $e |- ( ph -> X =/= Y ) $.
+      vdegp1aid.f $e |- ( ph -> ( iEdg ` F ) = ( I ++ <" { X , Y } "> ) ) $.
+      $( The induction step for a vertex degree calculation.  If the degree of
+         ` U ` in the edge set ` E ` is ` P ` , then adding ` { X , Y } ` to
+         the edge set, where ` X =/= U =/= Y ` , yields degree ` P ` as well.
+         (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by Mario
+         Carneiro, 28-Feb-2016.)  (Revised by AV, 3-Mar-2021.) $)
+      vdegp1aid $p |- ( ph -> ( ( VtxDeg ` F ) ` U ) = P ) $=
+        ( cvtxdg cfv cpr chash cn0 cvv cc0 cfzo co cv c1o cen wbr c2o cpw cword
+        wo crab wcel wf wrdf syl ffund ciedg cs1 cconcat cop csn cun wceq prexg
+        wrdv syl2anc cats1un eqtrd lencl wnel wrdlndm cupgr wb 1vgrex wrdupgren
+        cdm mpbird cfn wrdfin fundmfi prelpwi wne pr2ne wn neneqd neqcomd ioran
+        wfun sylanbrc elpri nsyl df-nel sylibr p1evtxdeqfi ) ADEUDUEUEDFUDUEUEC
+        ADIJUFZEFGGUGUEZHUHUIKMAUJXFUKULZBUMZUNUOUPXHUQUOUPUTBHURZVAZGAGXJUSVBZ
+        XGXJGVCNXJGVDVEVFZPAEVGUEGXEVHVIULZGXFXEVJVKVLZUCAGUIUSVBZXEUIVBZXMXNVM
+        AXKXONXJGVOVEAIHVBZJHVBZXPRTIJHHVNVPZGXEUIVQVPVRAXKXFUHVBNXJGVSVEAXKXFG
+        WFZVTNXJGWAVELQAFWBVBZXKNAFUIVBZXKYAXKWCAXQYBRFIHKWDVENBUIGFHXJKMWEVPWG
+        AGWHVBZGWRXTWHVBAXKYCNXJGWIVEXLGWJVPAXQXRXEXIVBRTIJHWKVPAXEUQUOUPZIJWLZ
+        UBAXQXRYDYEWCRTIJHHWMVPWGXSADXEVBZWNDXEVTADIVMZDJVMZUTZYFAYGWNYHWNYIWNA
+        IDAIDSWOWPAJDAJDUAWOWPYGYHWQWSDIJWTXADXEXBXCXDOVR $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
