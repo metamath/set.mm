@@ -32911,6 +32911,37 @@ $)
   $}
 
   ${
+    $d x y A $.  $d y ph $.
+    $( A restricted class abstraction restricted to a singleton is either the
+       empty set or the singleton itself.  (Contributed by AV, 21-Jul-2019.) $)
+    rabsnifsb $p |- { x e. { A } | ph }
+                    = if ( [. A / x ]. ph , { A } , (/) ) $=
+      ( vy cv csn wcel wa cab wsbc c0 wn wo wi syl imdistani nfan eleq1w anbi1d
+      nfv crab cif wceq elsni sbceq1a biimpd orcd biimprd pm2.21i adantr impbii
+      noel jaoi abbii nfsbc1v nfn weq orbi12d cbvabw eqtri df-rab df-if 3eqtr4i
+      nfor ) BEZCFZGZAHZBIZDEZVFGZABCJZHZVJKGZVLLZHZMZDIZABVFUAVLVFKUBVIVGVLHZV
+      EKGZVOHZMZBIVRVHWBBVHWBVHVSWAVGAVLVGVECUCZAVLNVECUDZWCAVLABCUEZUFOPUGVSVH
+      WAVGVLAVGWCVLANWDWCAVLWEUHOPVTVHVOVTVHVEULUIUJUMUKUNWBVQBDWBDTVMVPBVKVLBV
+      KBTABCUOZQVNVOBVNBTVLBWFUPQVDBDUQZVSVMWAVPWGVGVKVLBDVFRSWGVTVNVOBDKRSURUS
+      UTABVFVAVLDVFKVBVC $.
+  $}
+
+  ${
+    $d A x y $.  $d ph y $.  $d ps x y $.
+    rabsnif.f $e |- ( x = A -> ( ph <-> ps ) ) $.
+    $( A restricted class abstraction restricted to a singleton is either the
+       empty set or the singleton itself.  (Contributed by AV, 12-Apr-2019.)
+       (Proof shortened by AV, 21-Jul-2019.) $)
+    rabsnif $p |- { x e. { A } | ph } = if ( ps , { A } , (/) ) $=
+      ( vy csn crab c0 cif cv wcel cvv wceq wex elrabi 19.8ad sylibr wa wn noel
+      elsni syl intnan a1i wo elif biimpi ecased simpl2im wsbc rabsnifsb sbcieg
+      isset ifbid eqtrid eleq2d pm5.21nii eqriv ) FACDGZHZBUTIJZFKZVALZDMLZVCVB
+      LZVDVCDNZFOZVEVDVGFVDVCUTLZVGACVCUTPVCDUBZUCQFDUNZRVFVHVEVFVGFVFBVIVGVFBV
+      ISZBTZVCILZSZVOTVFVNVMVCUAUDUEVFVLVOUFBVCUTIUGUHUIVJUJQVKRVEVAVBVCVEVAACD
+      UKZUTIJVBACDULVEVPBUTIABCDMEUMUOUPUQURUS $.
+  $}
+
+  ${
     $d x A $.
     rabrsndc.1 $e |- A e. _V $.
     rabrsndc.2 $e |- DECID ph $.
@@ -116583,6 +116614,12 @@ $)
     ZAUIIJZAKIJZUGFUJUHFUJRUGUJFGLCZUJFRMGLNOPQSUGUIBCZUKULTUNUOMGLUAOAUIUBUCUL
     UMTUGUIKAIKUIUDPUEQUF $.
 
+  $( A set equinumerous to the ordinal one has size 1 .  (Contributed by Jim
+     Kingdon, 11-Mar-2026.) $)
+  en1hash $p |- ( A ~~ 1o -> ( # ` A ) = 1 ) $=
+    ( c1o cen wbr chash cfv c1 wceq cfn wcel wb com 1onn nnfi ax-mp enfi mpbiri
+    fihashen1 syl ibir ) ABCDZAEFGHZUAAIJZUBUAKUAUCBIJZBLJUDMBNOABPQARST $.
+
   $( A function on a finite set is equinumerous to its domain.  (Contributed by
      Mario Carneiro, 12-Mar-2015.)  (Intuitionized by Jim Kingdon,
      24-Feb-2022.) $)
@@ -195152,6 +195189,18 @@ $)
   $}
 
   ${
+    $d G g $.  $d G u w x $.
+    $( The edges of a graph.  (Contributed by AV, 1-Jan-2020.)  (Revised by AV,
+       13-Oct-2020.)  (Revised by AV, 8-Dec-2021.) $)
+    edgval $p |- ( Edg ` G ) = ran ( iEdg ` G ) $=
+      ( vx vg vw vu cedg cfv ciedg crn cv wcel cvv df-edg mptrcl cop wex elrn2g
+      ibi elex2 exlimiv cxp c2nd cedgf cif df-iedg 3syl edgvalg pm5.21nii eqriv
+      eleq2d ) BAFGZAHGZIZBJZUKKALKZUNUMKZCLCJZHGIFUNACMNUPDJUNOZULKZDPZEJZULKZ
+      EPZUOUPUTDUNULUMQRUSVCDEURULSTVBUOECLUQLLUAKUQUBGUQUCGUDHVAACUENTUFUOUKUM
+      UNALUGUJUHUI $.
+  $}
+
+  ${
     iedgedg.e $e |- E = ( iEdg ` G ) $.
     $( An indexed edge is an edge.  (Contributed by AV, 19-Dec-2021.) $)
     iedgedgg $p |- ( ( G e. V /\ Fun E /\ I e. dom E )
@@ -198065,6 +198114,96 @@ $)
     $}
   $}
 
+  ${
+    1loopgruspgr.v $e |- ( ph -> ( Vtx ` G ) = V ) $.
+    1loopgruspgr.a $e |- ( ph -> A e. X ) $.
+    1loopgruspgr.n $e |- ( ph -> N e. V ) $.
+    1loopgruspgr.i $e |- ( ph -> ( iEdg ` G ) = { <. A , { N } >. } ) $.
+    $( A graph with one edge which is a loop is a simple pseudograph.
+       (Contributed by AV, 21-Feb-2021.) $)
+    1loopgruspgr $p |- ( ph -> G e. USPGraph ) $=
+      ( cvtx cfv eqid eleqtrrd ciedg csn cop cpr wceq a1i dfsn2 sneqd eqtrd wdc
+      opeq2d wn wo orci df-dc mpbir uspgr1edc ) ABDDCCKLZFULMHADEULIGNZUMACOLBD
+      PZQZPBDDRZQZPJAUOUQAUNUPBUNUPSADUATUEUBUCDDSZUDZAUSURURUFZUGURUTDMUHURUIU
+      JTUK $.
+
+    $( The set of edges in a graph (simple pseudograph) with one edge which is
+       a loop is a singleton of a singleton.  (Contributed by AV, 17-Dec-2020.)
+       (Revised by AV, 21-Feb-2021.) $)
+    1loopgredg $p |- ( ph -> ( Edg ` G ) = { { N } } ) $=
+      ( cedg cfv ciedg crn csn cop wceq edgval a1i rneqd wcel rnsnopg 3eqtrd
+      syl ) ACKLZCMLZNZBDOZPOZNZUHOZUEUGQACRSAUFUIJTABFUAUJUKQHBUHFUBUDUC $.
+
+    $d A a e $.  $d G a e $.  $d N a e $.  $d V a e $.  $d X a e $.
+    $d ph a e $.
+    1loopgrvd2fi.fi $e |- ( ph -> V e. Fin ) $.
+    $( The vertex degree of a one-edge graph, case 4: an edge from a vertex to
+       itself contributes two to the vertex's degree.  I. e. in a graph (simple
+       pseudograph) with one edge which is a loop, the vertex connected with
+       itself by the loop has degree 2.  (Contributed by Mario Carneiro,
+       12-Mar-2015.)  (Revised by Alexander van der Vekens, 22-Dec-2017.)
+       (Revised by AV, 21-Feb-2021.) $)
+    1loopgrvd2fi $p |- ( ph -> ( ( VtxDeg ` G ) ` N ) = 2 ) $=
+      ( ve va cfv wcel csn wceq c1 eqid syl cv cedg crab chash caddc co c2 cvtx
+      cvtxdg ciedg cdm cfn cop dmeqd snexg dmsnopg eqtrd snfig eqeltrd eleqtrrd
+      cvv 1loopgruspgr vtxduspgrfvedgfi c1o cen wbr wex c0 eqeq2d spcegv mpisyl
+      sneq snidg iftrued eqeq1d exbidv mpbird 1loopgredg rabeqdv rabsnif eqtrdi
+      cif eleq2 en1 sylibr en1hash iftruei eqeq1i exbii eqeq1 oveq12d 1p1e2 a1i
+      3eqtrd ) ADCUINZNDLUAZOZLCUBNZUCZUDNZWPDPZQZLWRUCZUDNZUEUFRRUEUFZUGAWODLW
+      RCCUHNZXFSWRSACUJNZUKZBPZULAXHBXAUMPZUKZXIAXGXJJUNAXAVAOZXKXIQADEOZXLIDEU
+      OTZBXAVAUPTUQABFOXIULOHBFURTUSAXFEULGKUSADEXFIGUTABCDEFGHIJVBWOSVCAWTRXDR
+      UEAWSVDVEVFZWTRQAWSMUAZPZQZMVGZXOAXSDXAOZXAPZVHWBZXQQZMVGZAYDYAXQQZMVGZAX
+      LYAYAQZYFXNYASYEYGMXAVAXPXAQXQYAYAXPXAVLVIVJVKZAYCYEMAYBYAXQAXTYAVHAXMXTI
+      DEVMTVNVOVPVQAXRYCMAWSYBXQAWSWQLYAUCYBAWQLWRYAABCDEFGHIJVRZVSWQXTLXAWPXAD
+      WCVTWAVOVPVQMWSWDWEWSWFTAXCVDVEVFZXDRQAXCXQQZMVGZYJAYLXAXAQZYAVHWBZXQQZMV
+      GZAYFYPYHYOYEMYNYAXQYMYAVHXASWGWHWIWEAYKYOMAXCYNXQAXCXBLYAUCYNAXBLWRYAYIV
+      SXBYMLXAWPXAXAWJVTWAVOVPVQMXCWDWEXCWFTWKXEUGQAWLWMWN $.
+
+    $d A i $.  $d G i $.  $d K i $.  $d N i $.  $d ph i $.
+    1loopgrvd0.k $e |- ( ph -> K e. ( V \ { N } ) ) $.
+    $( The vertex degree of a one-edge graph, case 1 (for a loop): a loop at a
+       vertex other than the given vertex contributes nothing to the vertex
+       degree.  (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by AV,
+       21-Feb-2021.) $)
+    1loopgrvd0fi $p |- ( ph -> ( ( VtxDeg ` G ) ` K ) = 0 ) $=
+      ( vi cfv wceq wcel csn cvv syl cvtxdg cc0 cv ciedg cdm wrex eldifbd snexg
+      wn fvsng syl2anc eleq2d mtbird dmeqd dmsnopg eqtrd fveq1d rexeqbidv fveq2
+      cop wb rexsng bitrd cvtx eqid snfig eqeltrd eldifad eleqtrrd cuspgr cupgr
+      cfn 1loopgruspgr uspgrupgr vtxd0nedgbfi mpbird ) ADCUAOZOUBPDNUCZCUDOZOZQ
+      ZNVSUEZUFZUIAWCDBBERZUTRZOZQZAWGDWDQADFWDMUGAWFWDDABGQZWDSQZWFWDPIAEFQWIJ
+      EFUHTZBWDGSUJUKULUMAWCDVRWEOZQZNBRZUFZWGAWAWLNWBWMAWBWEUEZWMAVSWEKUNAWIWO
+      WMPWJBWDSUOTUPZAVTWKDAVRVSWEKUQULURAWHWNWGVAIWLWGNBGVRBPWKWFDVRBWEUSULVBT
+      VCUMAVQDNCVSCVDOZWQVEVSVEVQVEAWBWMVLWPAWHWMVLQIBGVFTVGAWQFVLHLVGADFWQADFW
+      DMVHHVIACVJQCVKQABCEFGHIJKVMCVNTVOVP $.
+  $}
+
+  ${
+    $d A x $.  $d D x $.  $d G x $.
+    1hevtxdg0.i $e |- ( ph -> ( iEdg ` G ) = { <. A , E >. } ) $.
+    1hevtxdg0.v $e |- ( ph -> ( Vtx ` G ) = V ) $.
+    1hevtxdg0.a $e |- ( ph -> A e. X ) $.
+    1hevtxdg0.d $e |- ( ph -> D e. V ) $.
+    ${
+      1hextxdg0fi.fi $e |- ( ph -> V e. Fin ) $.
+      1hextxdg0fi.p $e |- ( ph -> G e. UPGraph ) $.
+      1hevtxdg0.e $e |- ( ph -> E e. Y ) $.
+      1hevtxdg0.n $e |- ( ph -> D e/ E ) $.
+      $( The vertex degree of vertex ` D ` in a finite pseudograph ` G ` with
+         only one edge ` E ` is 0 if ` D ` is not incident with the edge
+         ` E ` .  (Contributed by AV, 2-Mar-2021.)  (Revised by Jim Kingdon,
+         13-Mar-2026.) $)
+      1hevtxdg0fi $p |- ( ph -> ( ( VtxDeg ` G ) ` D ) = 0 ) $=
+        ( vx cfv wceq wcel cvtxdg cc0 cv ciedg cdm wrex wn wral csn wnel df-nel
+        sylib cop fveq1d fvsng syl2anc eqtrd neleqtrrd eleq2d notbid ralsng syl
+        wb fveq2 mpbird dmeqd dmsnopg raleqtrrdv ralnex cvtx eqid snfig eqeltrd
+        cfn eleqtrrd vtxd0nedgbfi ) ACEUARZRUBSCQUCZEUDRZRZTZQVSUEZUFUGZAWAUGZQ
+        WBUHWCAWDQBUIZWBAWDQWEUHZCBVSRZTZUGZAWGDCACDUJCDTUGPCDUKULAWGBBDUMUIZRZ
+        DABVSWJIUNABGTZDHTZWKDSKOBDGHUOUPUQURAWLWFWIVCKWDWIQBGVRBSZWAWHWNVTWGCV
+        RBVSVDUSUTVAVBVEAWBWJUEZWEAVSWJIVFAWMWOWESOBDHVGVBUQZVHWAQWBVIULAVQCQEV
+        SEVJRZWQVKVSVKVQVKAWBWEVNWPAWLWEVNTKBGVLVBVMAWQFVNJMVMACFWQLJVONVPVE $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -199162,6 +199301,16 @@ $)
     ( ctrls cfv wbr cwlks ccnv wfun istrl simplbi ) BACDEFBACGEFBHIABCJK $.
 
   ${
+    $d G f p $.
+    $( The class of trails on a graph is a set.  (Contributed by Jim Kingdon,
+       14-Mar-2026.) $)
+    trlsex $p |- ( G e. V -> ( Trails ` G ) e. _V ) $=
+      ( vf vp wcel ctrls cfv cwlks cvv wlkex cv ccnv wfun copab trlsfvalg simpl
+      wbr wa ssopab2i opabss sstri eqsstrdi ssexd ) ABEZAFGZAHGZIABJUDUECKZDKUF
+      QZUGLMZRZCDNZUFCABDOUKUHCDNUFUJUHCDUHUIPSCDUFTUAUBUC $.
+  $}
+
+  ${
     trlf1.i $e |- I = ( iEdg ` G ) $.
     $( The enumeration ` F ` of a trail ` <. F , P >. ` is injective.
        (Contributed by AV, 20-Feb-2021.)  (Proof shortened by AV,
@@ -199211,6 +199360,7 @@ $)
       JZHEUHIUIUJUKULUNZGUOVFVGGUPZVEABEFGHIJKLMNOUQVFVGGURVHVFVGGUSVEVFVGGUTVA
       VBCGDVCVD $.
   $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -200154,6 +200304,218 @@ $)
       PGWKBCDWAEWKVDZURUSWPWDWHVPWPWGWDAWEDWOVPWEDIZWNWIVPWRUTWLVPWNWMDIZWRPZWR
       VPWNWTWKBWMWEDWQEVASWSWRTVBVCVEWPVRWEOZPZWDWGXBWFWDXBVRWEWPXATVFVGVHVIVJV
       NSVKVLVMVO $.
+  $}
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Eulerian paths and the Konigsberg Bridge problem
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Eulerian paths
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  According to Wikipedia ("Eulerian path",  9-Mar-2021,
+  ~ https://en.wikipedia.org/wiki/Eulerian_path ): "In graph theory, an
+   _Eulerian trail_ (or _Eulerian path_) is a trail in a finite graph that
+   visits every edge exactly once (allowing for revisiting vertices).
+   Similarly, an _Eulerian circuit_ or _Eulerian cycle_ is an Eulerian trail
+   that starts and ends on the same vertex.  ... The term _Eulerian graph_ has
+   two common meanings in graph theory.  One meaning is a graph with an
+   Eulerian circuit, and the other is a graph with every vertex of even degree.
+   These definitions coincide for connected graphs.  ... A graph that has an
+   Eulerian trail but not an Eulerian circuit is called _semi-Eulerian_."
+
+$)
+
+  $c EulerPaths $.
+
+  $( Extend class notation with Eulerian paths. $)
+  ceupth $a class EulerPaths $.
+
+  ${
+    $d f g p $.
+    $( Define the set of all Eulerian paths on an arbitrary graph.
+       (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by AV,
+       18-Feb-2021.) $)
+    df-eupth $a |- EulerPaths = ( g e. _V |-> { <. f , p >. |
+                 ( f ( Trails ` g ) p
+                   /\ f : ( 0 ..^ ( # ` f ) ) -onto-> dom ( iEdg ` g ) ) } ) $.
+
+    $( The set ` ( EulerPaths `` G ) ` of all Eulerian paths on ` G ` is a set
+       of pairs by our definition of an Eulerian path, and so is a relation.
+       (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by AV,
+       18-Feb-2021.) $)
+    releupth $p |- Rel ( EulerPaths ` G ) $=
+      ( vf vp vg cv ctrls cfv wbr cc0 chash cfzo co ciedg cdm wfo wa cvv ceupth
+      df-eupth relmptopab ) BEZCEDEZFGHIUAJGKLUBMGNUAOPDBCQARBDCST $.
+  $}
+
+  ${
+    $d G f g p $.  $d I g $.
+    eupths.i $e |- I = ( iEdg ` G ) $.
+    $( The Eulerian paths on the graph ` G ` .  (Contributed by AV,
+       18-Feb-2021.)  (Revised by AV, 29-Oct-2021.) $)
+    eupthsg $p |- ( G e. V
+        -> ( EulerPaths ` G ) = { <. f , p >. | ( f ( Trails ` G ) p
+          /\ f : ( 0 ..^ ( # ` f ) ) -onto-> dom I ) } ) $=
+      ( vg wcel cv ctrls cfv wbr ciedg cdm wfo wa copab cvv wceq fveq2 cc0 cfzo
+      chash co ceupth df-eupth breqd wb eqtr4di dmeqd syl anbi12d opabbidv elex
+      foeq3 trlsex wss simpl ssopab2i opabss sstri a1i ssexd fvmptd3 ) BDHZGBAI
+      ZEIZGIZJKZLZUAVFUCKUBUDZVHMKZNZVFOZPZAEQVFVGBJKZLZVKCNZVFOZPZAEQZRUERAGEU
+      FVHBSZVOVTAEWBVJVQVNVSWBVIVPVFVGVHBJTUGWBVMVRSVNVSUHWBVLCWBVLBMKCVHBMTFUI
+      UJVMVRVKVFUOUKULUMBDUNVEWAVPRBDUPWAVPUQVEWAVQAEQVPVTVQAEVQVSURUSAEVPUTVAV
+      BVCVD $.
+  $}
+
+  ${
+    $d G f p $.  $d f g p $.
+    $( The classes involved in a Eulerian path are sets.  (Contributed by Jim
+       Kingdon, 13-Mar-2026.) $)
+    eupthv $p |- ( F ( EulerPaths ` G ) P
+        -> ( G e. _V /\ F e. _V /\ P e. _V ) ) $=
+      ( vg vf vp ceupth cfv wbr cvv wcel cop cv ctrls ciedg cdm wfo copab syl
+      wa df-br cc0 chash cfzo df-eupth mptrcl sylbi wceq eqid eupthsg breqd ibi
+      co brabv simpld simprd 3jca ) BACGHZIZCJKZBJKZAJKZUSBALZURKUTBAURUADJEMZF
+      MZDMZNHIUBVDUCHUDUMZVFOHPVDQTEFRGVCCEDFUEUFUGZUSVAVBUSBAVDVECNHIVGCOHZPVD
+      QTZEFRZIZVAVBTUSVLUSURVKBAUSUTURVKUHVHECVIJFVIUIUJSUKULVJEFBAUNSZUOUSVAVB
+      VMUPUQ $.
+  $}
+
+  ${
+    $d G f g p $.  $d I g $.  $d F f p $.  $d I f p $.  $d P f p $.
+    iseupth.i $e |- I = ( iEdg ` G ) $.
+    $( The property " ` <. F , P >. ` is an Eulerian path on the graph ` G ` ".
+       An Eulerian path is defined as bijection ` F ` from the edges to a set
+       ` 0 ... ( N - 1 ) ` and a function ` P : ( 0 ... N ) --> V ` into the
+       vertices such that for each ` 0 <_ k < N ` , ` F ( k ) ` is an edge from
+       ` P ( k ) ` to ` P ( k + 1 ) ` .  (Since the edges are undirected and
+       there are possibly many edges between any two given vertices, we need to
+       list both the edges and the vertices of the path separately.)
+       (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by Mario
+       Carneiro, 3-May-2015.)  (Revised by AV, 18-Feb-2021.)  (Revised by AV,
+       30-Oct-2021.) $)
+    iseupth $p |- ( F ( EulerPaths ` G ) P <-> ( F ( Trails ` G ) P
+                                /\ F : ( 0 ..^ ( # ` F ) ) -onto-> dom I ) ) $=
+      ( vf vp ceupth cfv wbr cvv wcel cc0 chash cfzo co wfo wa cv wceq 3ad2ant1
+      w3a ctrls cdm eupthv trlsv adantr copab df-br eupthsg eleq2d bitrid breq1
+      cop wb fveq2 oveq2d eqidd foeq123d anbi12d breq2 anbi1d opelopabg 3adant1
+      id bitrd pm5.21nii ) BACHIZJZCKLZBKLZAKLZUBZBACUCIZJZMBNIZOPZDUDZBQZRZABC
+      UEVOVMVSABCUFUGVMVIBAUNZFSZGSZVNJZMWBNIZOPZVRWBQZRZFGUHZLZVTVIWAVHLVMWJBA
+      VHUIVMVHWIWAVJVKVHWITVLFCDKGEUJUAUKULVKVLWJVTUOVJWHBWCVNJZVSRVTFGBAKKWBBT
+      ZWDWKWGVSWBBWCVNUMWLWFVQVRVRWBBWLVEWLWEVPMOWBBNUPUQWLVRURUSUTWCATWKVOVSWC
+      ABVNVAVBVCVDVFVG $.
+
+    $( The property " ` <. F , P >. ` is an Eulerian path on the graph ` G ` ".
+       An Eulerian path is defined as bijection ` F ` from the edges to a set
+       ` 0 ... ( N - 1 ) ` and a function ` P : ( 0 ... N ) --> V ` into the
+       vertices such that for each ` 0 <_ k < N ` , ` F ( k ) ` is an edge from
+       ` P ( k ) ` to ` P ( k + 1 ) ` .  (Since the edges are undirected and
+       there are possibly many edges between any two given vertices, we need to
+       list both the edges and the vertices of the path separately.)
+       (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by Mario
+       Carneiro, 3-May-2015.)  (Revised by AV, 18-Feb-2021.)  (Revised by AV,
+       30-Oct-2021.) $)
+    iseupthf1o $p |- ( F ( EulerPaths ` G ) P <-> ( F ( Walks ` G ) P
+                            /\ F : ( 0 ..^ ( # ` F ) ) -1-1-onto-> dom I ) ) $=
+      ( ceupth cfv wbr ctrls cc0 chash cfzo co cdm wfo cwlks ccnv anbi2i 3bitri
+      wa wfun wf1o iseupth istrl anbi1i anass ancom dff1o3 bicomi ) BACFGHBACIG
+      HZJBKGLMZDNZBOZTZBACPGHZUMBQUAZTZTZUOUKULBUBZTABCDEUCUNUOUPTZUMTUOUPUMTZT
+      URUJUTUMABCUDUEUOUPUMUFVAUQUOUPUMUGRSUQUSUOUSUQUKULBUHUIRS $.
+
+    $( Properties of an Eulerian path.  (Contributed by Mario Carneiro,
+       12-Mar-2015.)  (Revised by AV, 18-Feb-2021.)  (Proof shortened by AV,
+       30-Oct-2021.) $)
+    eupthi $p |- ( F ( EulerPaths ` G ) P -> ( F ( Walks ` G ) P
+                            /\ F : ( 0 ..^ ( # ` F ) ) -1-1-onto-> dom I ) ) $=
+      ( ceupth cfv wbr cwlks cc0 chash cfzo co cdm wf1o wa iseupthf1o biimpi )
+      BACFGHBACIGHJBKGLMDNBOPABCDEQR $.
+
+    $( The ` F ` function in an Eulerian path is a bijection from a half-open
+       range of nonnegative integers to the set of edges.  (Contributed by
+       Mario Carneiro, 12-Mar-2015.)  (Revised by AV, 18-Feb-2021.) $)
+    eupthf1o $p |- ( F ( EulerPaths ` G ) P
+                     -> F : ( 0 ..^ ( # ` F ) ) -1-1-onto-> dom I ) $=
+      ( ceupth cfv wbr cwlks cc0 chash cfzo co cdm wf1o eupthi simprd ) BACFGHB
+      ACIGHJBKGLMDNBOABCDEPQ $.
+
+    $( Any graph with an Eulerian path is of finite size, i.e. with a finite
+       number of edges.  (Contributed by Mario Carneiro, 7-Apr-2015.)  (Revised
+       by AV, 18-Feb-2021.) $)
+    eupthfi $p |- ( F ( EulerPaths ` G ) P -> dom I e. Fin ) $=
+      ( ceupth cfv wbr cc0 chash cfzo co cfn wcel cdm cen cz 0z ctrls syl2anc
+      cwlks cn0 wfo iseupth simplbi trliswlk wlkcl 3syl fzofig sylancr eupthf1o
+      nn0zd wf1o f1oeng ensymd enfii ) BACFGHZIBJGZKLZMNZDOZUSPHVAMNUQIQNURQNUT
+      RUQURUQBACSGHZBACUAGHURUBNUQVBUSVABUCABCDEUDUEABCUFABCUGUHULIURUIUJZUQUSV
+      AUQUTUSVABUMUSVAPHVCABCDEUKUSVAMBUNTUOVAUSUPT $.
+
+    $d F k $.  $d G k $.  $d I k $.  $d N k $.  $d P k $.
+    $( The ` N ` -th edge in an eulerian path is the edge having ` P ( N ) `
+       and ` P ( N + 1 ) ` as endpoints .  (Contributed by Mario Carneiro,
+       12-Mar-2015.)  (Revised by AV, 18-Feb-2021.) $)
+    eupthseg $p |- ( ( F ( EulerPaths ` G ) P /\ N e. ( 0 ..^ ( # ` F ) ) ) ->
+      { ( P ` N ) , ( P ` ( N + 1 ) ) } C_ ( I ` ( F ` N ) ) ) $=
+      ( vk ceupth cfv wbr cc0 chash cfzo co wcel c1 caddc cpr wss cvv cwlks cdm
+      cv wral wi wf1o eupthi simpld wlkv simp1d wlkvtxeledgg mpancom wceq fveq2
+      fvoveq1 preq12d 2fveq3 sseq12d rspccv 3syl imp ) BACHIJZEKBLIMNZOZEAIZEPQ
+      NAIZRZEBIDIZSZVBBACUAIJZGUCZAIZVKPQNAIZRZVKBIDIZSZGVCUDZVDVIUEVBVJVCDUBBU
+      FABCDFUGUHCTOZVJVQVJVRBTOATOABCUIUJAGBCDTFUKULVPVIGEVCVKEUMZVNVGVOVHVSVLV
+      EVMVFVKEAUNVKEPAQUOUPVKEDBUQURUSUTVA $.
+  $}
+
+  $( An Eulerian path has length ` # ( F ) ` , which is an integer.
+     (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by AV,
+     18-Feb-2021.) $)
+  eupthcl $p |- ( F ( EulerPaths ` G ) P -> ( # ` F ) e. NN0 ) $=
+    ( ceupth cfv wbr cwlks cc0 chash cfzo co ciedg cdm wf1o wa wcel eqid eupthi
+    cn0 wlkcl adantr syl ) BACDEFBACGEFZHBIEZJKCLEZMBNZOUDSPZABCUEUEQRUCUGUFABC
+    TUAUB $.
+
+  $( An Eulerian path is a trail.  (Contributed by Alexander van der Vekens,
+     24-Nov-2017.)  (Revised by AV, 18-Feb-2021.) $)
+  eupthistrl $p |- ( F ( EulerPaths ` G ) P -> F ( Trails ` G ) P ) $=
+    ( ceupth cfv wbr ctrls cc0 chash cfzo co ciedg cdm wfo eqid iseupth simplbi
+    ) BACDEFBACGEFHBIEJKCLEZMBNABCRROPQ $.
+
+  $( An Eulerian path is a walk.  (Contributed by AV, 6-Apr-2021.) $)
+  eupthiswlk $p |- ( F ( EulerPaths ` G ) P -> F ( Walks ` G ) P ) $=
+    ( ceupth cfv wbr ctrls cwlks eupthistrl trliswlk syl ) BACDEFBACGEFBACHEFAB
+    CIABCJK $.
+
+  $( The ` P ` function in an Eulerian path is a function from a finite
+     sequence of nonnegative integers to the vertices.  (Contributed by Mario
+     Carneiro, 12-Mar-2015.)  (Revised by AV, 18-Feb-2021.) $)
+  eupthpf $p |- ( F ( EulerPaths ` G ) P
+                  -> P : ( 0 ... ( # ` F ) ) --> ( Vtx ` G ) ) $=
+    ( ceupth cfv wbr cwlks cc0 chash cfz co cvtx wf eupthiswlk eqid wlkp syl )
+    BACDEFBACGEFHBIEJKCLEZAMABCNABCRROPQ $.
+
+  ${
+    eupth0.v $e |- V = ( Vtx ` G ) $.
+    eupth0.i $e |- I = ( iEdg ` G ) $.
+    eupthres.d $e |- ( ph -> F ( EulerPaths ` G ) P ) $.
+    eupthres.n $e |- ( ph -> N e. ( 0 ..^ ( # ` F ) ) ) $.
+    eupthres.e $e |- ( ph -> ( iEdg ` S ) = ( I |` ( F " ( 0 ..^ N ) ) ) ) $.
+    eupthres.h $e |- H = ( F prefix N ) $.
+    eupthres.q $e |- Q = ( P |` ( 0 ... N ) ) $.
+    eupthres.s $e |- ( Vtx ` S ) = V $.
+    $( The restriction ` <. H , Q >. ` of an Eulerian path ` <. F , P >. ` to
+       an initial segment of the path (of length ` N ` ) forms an Eulerian path
+       on the subgraph ` S ` consisting of the edges in the initial segment.
+       (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by Mario
+       Carneiro, 3-May-2015.)  (Revised by AV, 6-Mar-2021.)  Hypothesis revised
+       using the prefix operation.  (Revised by AV, 30-Nov-2022.) $)
+    eupthres $p |- ( ph -> H ( EulerPaths ` S ) Q ) $=
+      ( cfv wbr ceupth cwlks cc0 chash cfzo cima cres cdm wf1o ctrls eupthistrl
+      co trliswlk 3syl cvtx wceq a1i wlkres syl trlreslem ciedg eqid iseupthf1o
+      wa dmeqd f1oeq3d anbi2d bitrid mpbir2and ) AGCDUASTZGCDUBSTZUCGUDSUEULZHE
+      UCIUEULUFUGZUHZGUIZABCDEFGHIJKLAEBFUASTZEBFUJSTZEBFUBSTMBEFUKZBEFUMUNNDUO
+      SJUPARUQOPQURABEFGHIJKLAVPVQMVRUSNPUTVJVKVLDVASZUHZGUIZVDAVKVOVDCGDVSVSVB
+      VCAWAVOVKAVTVNVLGAVSVMOVEVFVGVHVI $.
   $}
 
 
@@ -202440,6 +202802,9 @@ htmldef "ClWWalksN" as ' ClWWalksN ';
 htmldef "ClWWalksNOn" as 'ClWWalksNOn';
   althtmldef "ClWWalksNOn" as 'ClWWalksNOn';
   latexdef "ClWWalksNOn" as "\mathrm{ClWWalksNOn}";
+htmldef "EulerPaths" as "EulerPaths";
+  althtmldef "EulerPaths" as "EulerPaths";
+  latexdef "EulerPaths" as "\mathrm{EulerPaths}";
 
 /* htmldef, althtmldef, latexdef for mathboxes */
 /* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
