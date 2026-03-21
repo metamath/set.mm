@@ -69944,6 +69944,20 @@ $)
   $}
 
   ${
+    $d w x y $.  $d x y z $.
+    $( Excluded middle is equivalent to any subset of a finite set being
+       finite.  Theorem 2.1 of [Bauer], p. 485.  (Contributed by Jim Kingdon,
+       20-Mar-2026.) $)
+    exmidssfi $p |- ( EXMID
+        <-> A. x A. y ( ( x e. Fin /\ y C_ x ) -> y e. Fin ) ) $=
+      ( vw vz wem cv cfn wcel wss wa wi wal wdc simprl simprr exmidexmid adantr
+      wral ralrimivw ssfidc syl3anc ex alrimivv c0 csn wceq wn ssfiexmidt df-dc
+      wo sylibr exmid1dc impbii ) EAFZGHZBFZUNIZJZUPGHZKZBLALZEUTABEURUSEURJZUO
+      UQCFUPHZMZCUNRUSEUOUQNEUOUQOVBVDCUNEVDURVCPQSCUNUPTUAUBUCVADVADFZUDUEZUFZ
+      MZVEVFIVAVGVGUGUJVHVGABUHVGUIUKQULUM $.
+  $}
+
+  ${
     $d A x y z $.  $d B x y z $.  $d S z $.  $d ph z $.
     opabfi.s $e |- S = { <. x , y >. | ( ( x e. A /\ y e. B ) /\ ps ) } $.
     opabfi.a $e |- ( ph -> A e. Fin ) $.
