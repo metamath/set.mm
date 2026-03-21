@@ -68697,6 +68697,36 @@ $)
   $}
 
   ${
+    $d ps n x y z $.
+    ssfilemd.1 $e |- ( ph -> { z e. { (/) } | ps } e. Fin ) $.
+    $( Lemma for ~ ssfiexmidt .  (Contributed by Jim Kingdon, 3-Feb-2022.) $)
+    ssfilemd $p |- ( ph -> ( ps \/ -. ps ) ) $=
+      ( vn vw vy vx c0 cv cen wbr com wo wcel sylib wceq wa wex syl csn crab wn
+      wrex cfn isfi 0elnn breq2 en0 bitrdi biimpac wral rabeq0 0ex snm r19.3rmv
+      ax-mp bitr4i olcd ensym elex2 enm syl2an biidd elrab simprbi orcd exlimiv
+      wb jaodan sylan2 ancoms rexlimiva ) ABCIUAZUBZEJZKLZEMUDZBBUCZNZAVOUEOVRD
+      EVOUFPVQVTEMVQVPMOZVTWAVQVPIQZIVPOZNVTVPUGVQWBVTWCVQWBRZVSBWDVOIQZVSWBVQW
+      EWBVQVOIKLWEVPIVOKUHVOUIUJUKWEVSCVNULZVSBCVNUMFJVNOFSVSWFVIFIUNUOVSCFVNUP
+      UQURPUSVQWCRGJZVOOZGSZVTVQVPVOKLHJVPOHSWIWCVOVPUTHIVPVAHGVPVOVBVCWHVTGWHB
+      VSWHWGVNOBBBCWGVNCJWGQBVDVEVFVGVHTVJVKVLVMT $.
+  $}
+
+  ${
+    $d ph x y z $.
+    $( If any subset of a finite set is finite, excluded middle follows.  One
+       direction of Theorem 2.1 of [Bauer], p. 485.  (Contributed by Jim
+       Kingdon, 19-May-2020.) $)
+    ssfiexmidt $p |- ( A. x A. y ( ( x e. Fin /\ y C_ x ) -> y e. Fin )
+        -> ( ph \/ -. ph ) ) $=
+      ( vz cv cfn wcel wss wa wi wal c0 csn crab p0ex wceq eleq1 sseq2 spcv cvv
+      anbi12d imbi1d albidv snfig ax-mp ssrab2 pm3.2i rabex sseq1 anbi2d mpisyl
+      0ex imbi12d ssfilemd ) BEZFGZCEZUOHZIZUQFGZJZCKZBKZADVCLMZFGZUQVDHZIZUTJZ
+      CKZVEADVDNZVDHZIZVJFGZVBVIBVDOUOVDPZVAVHCVNUSVGUTVNUPVEURVFUOVDFQUOVDUQRU
+      AUBUCSVEVKLTGVEULLTUDUEADVDUFUGVHVLVMJCVJADVDOUHUQVJPZVGVLUTVMVOVFVKVEUQV
+      JVDUIUJUQVJFQUMSUKUN $.
+  $}
+
+  ${
     $d ph x y $.
     infiexmid.1 $e |- ( x e. Fin -> ( x i^i y ) e. Fin ) $.
     $( If the intersection of any finite set and any other set is finite,
