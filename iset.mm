@@ -196031,6 +196031,41 @@ $)
   $}
 
   ${
+    $d E u v $.  $d K u v $.  $d V u v $.  $d ph u v $.
+    upgr1een.k $e |- ( ph -> K e. X ) $.
+    upgr1een.v $e |- ( ph -> V e. Y ) $.
+    upgr1een.e $e |- ( ph -> E e. ~P V ) $.
+    upgr1een.2o $e |- ( ph -> E ~~ 2o ) $.
+    $( A graph with one non-loop edge is a pseudograph.  Variation of
+       ~ upgr1edc for a different way of specifying a graph with one edge.
+       (Contributed by Jim Kingdon, 18-Mar-2026.) $)
+    upgr1een $p |- ( ph -> <. V , { <. K , E >. } >. e. UPGraph ) $=
+      ( vu vv wceq cop wcel c2o cen adantr cvv syl2anc cv cpr wex csn cupgr wbr
+      en2 syl wa cvtx cfv wss elpwid vex prid1 simpr eleqtrrid sseldd cpw opexg
+      eqid snexg opvtxfv eleqtrrd prid2 wne wo wdc eqbrtrrd wb pr2ne el2v sylib
+      olcd dcne sylibr ciedg opiedgfv opeq2d sneqd eqtrd upgr1edc exlimdvv mpd
+      ex ) ABKUAZLUAZUBZMZLUCKUCZDCBNZUDZNZUEOZABPQUFZWJJKLBUGUHAWIWNKLAWIWNAWI
+      UIZCWFWGWMWMUJUKZEWQVAACEOZWIGRWPWFDWQWPBDWFABDULWIABDIUMRZWPWFWHBWFWGKUN
+      UOAWIUPZUQURAWQDMZWIADFOZWLSOZXAHAWKSOZXCAWRBDUSZOXDGICBEXEUTTWKSVBUHZWLD
+      FSVCTRZVDWPWGDWQWPBDWGWSWPWGWHBWFWGLUNVEWTUQURXGVDWPWFWGMZWFWGVFZVGXHVHWP
+      XIXHWPWHPQUFZXIWPBWHPQWTAWOWIJRVIXJXIVJKLWFWGSSVKVLVMVNWFWGVOVPWPWMVQUKZW
+      LCWHNZUDAXKWLMZWIAXBXCXMHXFWLDFSVRTRWPWKXLWPBWHCWTVSVTWAWBWEWCWD $.
+
+    $d E x $.  $d K x $.  $d V x $.
+    $( A graph with one non-loop edge is a multigraph.  (Contributed by Jim
+       Kingdon, 18-Mar-2026.) $)
+    umgr1een $p |- ( ph -> <. V , { <. K , E >. } >. e. UMGraph ) $=
+      ( vx cop csn wcel c2o cen cvv wceq syl2anc syl cumgr ciedg cfv cdm cv wbr
+      cvtx cpw crab wf breq1 opexg snexg opvtxfv pweqd eleqtrrd elrabd opiedgfv
+      fsnd dmeqd dmsnopg eqtrd feq12d mpbird cupgr wb upgr1een eqid isumgren )
+      ADCBLZMZLZUANZVLUBUCZUDZKUEZOPUFZKVLUGUCZUHZUIZVNUJZAWACMZVTVKUJACBEVTGAV
+      QBOPUFKBVSVPBOPUKABDUHZVSIAVRDADFNZVKQNZVRDRHAVJQNZWEACENBWCNZWFGICBEWCUL
+      SVJQUMTZVKDFQUNSUOUPJUQUSAVOWBVTVNVKAWDWEVNVKRHWHVKDFQURSZAVOVKUDZWBAVNVK
+      WIUTAWGWJWBRICBWCVATVBVCVDAVLVENVMWAVFABCDEFGHIJVGKVEVNVLVRVRVHVNVHVITVD
+      $.
+  $}
+
+  ${
     upgrun.g $e |- ( ph -> G e. UPGraph ) $.
     upgrun.h $e |- ( ph -> H e. UPGraph ) $.
     upgrun.e $e |- E = ( iEdg ` G ) $.
@@ -198183,8 +198218,8 @@ $)
     1hevtxdg0.v $e |- ( ph -> ( Vtx ` G ) = V ) $.
     1hevtxdg0.a $e |- ( ph -> A e. X ) $.
     1hevtxdg0.d $e |- ( ph -> D e. V ) $.
+    1hextxdg0fi.fi $e |- ( ph -> V e. Fin ) $.
     ${
-      1hextxdg0fi.fi $e |- ( ph -> V e. Fin ) $.
       1hextxdg0fi.p $e |- ( ph -> G e. UPGraph ) $.
       1hevtxdg0.e $e |- ( ph -> E e. Y ) $.
       1hevtxdg0.n $e |- ( ph -> D e/ E ) $.
@@ -198201,6 +198236,198 @@ $)
         DABVSWJIUNABGTZDHTZWKDSKOBDGHUOUPUQURAWLWFWIVCKWDWIQBGVRBSZWAWHWNVTWGCV
         RBVSVDUSUTVAVBVEAWBWJUEZWEAVSWJIVFAWMWOWESOBDHVGVBUQZVHWAQWBVIULAVQCQEV
         SEVJRZWQVKVSVKVQVKAWBWEVNWPAWLWEVNTKBGVLVBVMAWQFVNJMVMACFWQLJVONVPVE $.
+    $}
+
+    $d E x $.
+    1hevtxdg1en.g $e |- ( ph -> G e. UMGraph ) $.
+    1hevtxdg1.e $e |- ( ph -> E e. ~P V ) $.
+    1hevtxdg1.n $e |- ( ph -> D e. E ) $.
+    1hevtxdg1en.l $e |- ( ph -> E ~~ 2o ) $.
+    $( The vertex degree of vertex ` D ` in a multigraph ` G ` with only one
+       edge ` E ` is 1 if ` D ` is incident with the edge ` E ` .  (Contributed
+       by AV, 2-Mar-2021.)  (Proof shortened by AV, 17-Apr-2021.) $)
+    1hevtxdg1en $p |- ( ph -> ( ( VtxDeg ` G ) ` D ) = 1 ) $=
+      ( vx cfv wcel chash cvtxdg cv ciedg cdm crab csn c1 cvtx eleqtrrd cfn cop
+      eqid dmeqd cpw wceq dmsnopg syl eqtrd snfig eqeltrd vtxdumgrfival rabeqdv
+      fveq2d c0 fveq2 eleq2d rabsnif fveq1d fvsng syl2anc iftrued eqtrid 3eqtrd
+      cif hashsng ) ACEUARZRCQUBZEUCRZRZSZQVRUDZUEZTRVTQBUFZUEZTRZUGAQWAVPCEVRE
+      UHRZWFULVRULWAULVPULMACFWFKIUIAWAWCUJAWABDUKUFZUDZWCAVRWGHUMADFUNZSZWHWCU
+      ONBDWIUPUQURZABGSZWCUJSJBGUSUQUTAWFFUJILUTVAAWBWDTAVTQWAWCWKVBVCAWEWCTRZU
+      GAWDWCTAWDCBVRRZSZWCVDVNWCVTWOQBVQBUOVSWNCVQBVRVEVFVGAWOWCVDACDWNOAWNBWGR
+      ZDABVRWGHVHAWLWJWPDUOJNBDGWIVIVJURUIVKVLVCAWLWMUGUOJBGVOUQURVM $.
+  $}
+
+  ${
+    1hegrvtxdg1.a $e |- ( ph -> A e. X ) $.
+    1hegrvtxdg1.b $e |- ( ph -> B e. V ) $.
+    1hegrvtxdg1.c $e |- ( ph -> C e. V ) $.
+    1hegrvtxdg1.n $e |- ( ph -> B =/= C ) $.
+    1hegrvtxdg1.x $e |- ( ph -> E e. ~P V ) $.
+    1hegrvtxdg1.i $e |- ( ph -> ( iEdg ` G ) = { <. A , E >. } ) $.
+    1hegrvtxdg1.e $e |- ( ph -> { B , C } C_ E ) $.
+    1hegrvtxdg1.v $e |- ( ph -> ( Vtx ` G ) = V ) $.
+    1hegrvtxdg1fi.fi $e |- ( ph -> V e. Fin ) $.
+    1hegrvtxdg1fi.m $e |- ( ph -> G e. UMGraph ) $.
+    $( The vertex degree of a multigraph with one edge, case 2: an edge from
+       the given vertex to some other vertex contributes one to the vertex's
+       degree.  (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by
+       Alexander van der Vekens, 22-Dec-2017.)  (Revised by AV,
+       23-Feb-2021.) $)
+    1hegrvtxdg1fi $p |- ( ph -> ( ( VtxDeg ` G ) ` B ) = 1 ) $=
+      ( wcel cfv cpr prid1g syl sseldd ciedg c2o cen cop csn fveq1d cpw syl2anc
+      wceq fvsng eqtrd cumgr cdm wbr snidg dmeqd dmsnopg eleqtrrd cvtx eqbrtrrd
+      eqid umgredg2en 1hevtxdg1en ) ABCEFGHNPIJQRMACDUAZECOACGSCVHSJCDGUBUCUDAB
+      FUETZTZEUFUGAVJBBEUHUIZTZEABVIVKNUJABHSZEGUKZSZVLEUMIMBEHVNUNULUOAFUPSBVI
+      UQZSVJUFUGURRABBUIZVPAVMBVQSIBHUSUCAVPVKUQZVQAVIVKNUTAVOVRVQUMMBEVNVAUCUO
+      VBVIFFVCTZBVSVEVIVEVFULVDVG $.
+
+    $( The vertex degree of a graph with one hyperedge, case 3: an edge from
+       some other vertex to the given vertex contributes one to the vertex's
+       degree.  (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by
+       Alexander van der Vekens, 22-Dec-2017.)  (Revised by AV,
+       23-Feb-2021.) $)
+    1hegrvtxdg1rfi $p |- ( ph -> ( ( VtxDeg ` G ) ` C ) = 1 ) $=
+      ( necomd cpr prcom eqsstrid 1hegrvtxdg1fi ) ABDCEFGHIKJACDLSMNADCTCDTEDCU
+      AOUBPQRUC $.
+  $}
+
+  ${
+    p1evtxdeq.v $e |- V = ( Vtx ` G ) $.
+    p1evtxdeq.i $e |- I = ( iEdg ` G ) $.
+    p1evtxdeq.f $e |- ( ph -> Fun I ) $.
+    p1evtxdeq.fv $e |- ( ph -> ( Vtx ` F ) = V ) $.
+    p1evtxdeq.fi $e |- ( ph -> ( iEdg ` F ) = ( I u. { <. K , E >. } ) ) $.
+    p1evtxdeq.k $e |- ( ph -> K e. X ) $.
+    p1evtxdeq.d $e |- ( ph -> K e/ dom I ) $.
+    p1evtxdeq.u $e |- ( ph -> U e. V ) $.
+    p1evtxdeqfi.vfi $e |- ( ph -> V e. Fin ) $.
+    p1evtxdeqfi.u $e |- ( ph -> G e. UPGraph ) $.
+    p1evtxdeqfi.ifi $e |- ( ph -> dom I e. Fin ) $.
+    p1evtxdeqfi.e $e |- ( ph -> E e. ~P V ) $.
+    p1evtxdeqfi.2o $e |- ( ph -> E ~~ 2o ) $.
+    ${
+      $d E u v $.  $d K u v $.  $d V u v $.  $d ph u v $.
+      p1evtxdeq.e $e |- ( ph -> E e. Y ) $.
+      $( Lemma for ~ p1evtxdeqfi and ~ p1evtxdp1fi .  (Contributed by AV,
+         3-Mar-2021.) $)
+      p1evtxdeqfilem $p |- ( ph -> ( ( VtxDeg ` F ) ` U )
+                      = ( ( ( VtxDeg ` G ) ` U )
+                       + ( ( VtxDeg ` <. V , { <. K , E >. } >. ) ` U ) ) ) $=
+        ( cop csn ciedg cfv eqid cvv wcel cvtx wceq cfn elexd opexg syl2anc syl
+        snexg opvtxfv upgr1een cdm c0 dmsnopg ineq2d opiedgfv eqcomd dmeqd wnel
+        cin wn df-nel sylib disjsn sylibr 3eqtr3d wfun funsng funeqd cun uneq2d
+        mpbid eqtrd snfig eqeltrd eqeltrrd vtxdfifiun ) ADEHGCUEZUFZUEZFWJUGUHZ
+        BHLWKUIKAHUJUKZWIUJUKZWJULUHHUMAHUNSUOZAWHUJUKZWMAGIUKZCJUKZWOPUDGCIJUP
+        UQWHUJUSURZWIHUJUJUTUQNSTACGHIUNPSUBUCVAAFVBZWIVBZVJWSGUFZVJZWSWKVBZVJV
+        CAWTXAWSAWQWTXAUMUDGCJVDURZVEAWTXCWSAWIWKAWKWIAWLWMWKWIUMWNWRWIHUJUJVFU
+        QVGZVHZVEAGWSUKVKZXBVCUMAGWSVIXGQGWSVLVMWSGVNVOVPMAWIVQZWKVQAWPWQXHPUDG
+        CIJVRUQAWIWKXEVSWBRADUGUHFWIVTFWKVTOAWIWKFXEWAWCUAAWTXCUNXFAWTXAUNXDAWP
+        XAUNUKPGIWDURWEWFWG $.
+
+      p1evtxdeq.n $e |- ( ph -> U e/ E ) $.
+      $( If an edge ` E ` which does not contain vertex ` U ` is added to a
+         graph ` G ` (yielding a graph ` F ` ), the degree of ` U ` is the same
+         in both graphs.  (Contributed by AV, 2-Mar-2021.) $)
+      p1evtxdeqfi $p |- ( ph -> ( ( VtxDeg ` F ) ` U )
+                            = ( ( VtxDeg ` G ) ` U ) ) $=
+        ( cvtxdg cfv cop csn caddc cc0 p1evtxdeqfilem cvv wcel ciedg wceq elexd
+        co cfn cpw opexg syl2anc syl opiedgfv cvtx opvtxfv upgr1een 1hevtxdg0fi
+        snexg oveq2d cn0 cdm eqid vtxdgfif ffvelcdmd nn0cnd addridd 3eqtrd ) AB
+        DUFUGUGBEUFUGZUGZBHGCUHZUIZUHZUFUGUGZUJURVTUKUJURVTABCDEFGHIJKLMNOPQRST
+        UAUBUCUDULAWDUKVTUJAGBCWCHIJAHUMUNZWBUMUNZWCUOUGWBUPAHUSSUQZAWAUMUNZWFA
+        GIUNCHUTZUNWHPUBGCIWIVAVBWAUMVIVCZWBHUMUMVDVBAWEWFWCVEUGHUPWGWJWBHUMUMV
+        FVBPRSACGHIUSPSUBUCVGUDUEVHVJAVTAVTAHVKBVSAFVLZEFHKLWKVMUASTVNRVOVPVQVR
+        $.
+    $}
+
+    p1evtxdp1.n $e |- ( ph -> U e. E ) $.
+    $( If an edge ` E ` (not being a loop) which contains vertex ` U ` is added
+       to a graph ` G ` (yielding a graph ` F ` ), the degree of ` U ` is
+       increased by 1.  (Contributed by AV, 3-Mar-2021.) $)
+    p1evtxdp1fi $p |- ( ph -> ( ( VtxDeg ` F ) ` U )
+                          = ( ( ( VtxDeg ` G ) ` U ) + 1 ) ) $=
+      ( cvtxdg cfv cop csn caddc co c1 cpw p1evtxdeqfilem wcel ciedg wceq elexd
+      cvv cfn opexg syl2anc snexg syl opiedgfv cvtx umgr1een 1hevtxdg1en oveq2d
+      opvtxfv eqtrd ) ABDUDUEUEBEUDUEUEZBHGCUFZUGZUFZUDUEUEZUHUIVJUJUHUIABCDEFG
+      HIHUKZJKLMNOPQRSTUAUBUAULAVNUJVJUHAGBCVMHIAHUQUMZVLUQUMZVMUNUEVLUOAHURRUP
+      ZAVKUQUMZVQAGIUMCVOUMVSOUAGCIVOUSUTVKUQVAVBZVLHUQUQVCUTAVPVQVMVDUEHUOVRVT
+      VLHUQUQVHUTOQRACGHIURORUAUBVEUAUCUBVFVGVI $.
+  $}
+
+  ${
+    $d x U $.  $d x V $.  $d x X $.  $d x Y $.  $d G x $.
+    vdegp1ai.vg $e |- V = ( Vtx ` G ) $.
+    vdegp1aid.u $e |- ( ph -> U e. V ) $.
+    vdegp1ai.i $e |- I = ( iEdg ` G ) $.
+    vdegp1aid.w $e |- ( ph
+      -> I e. Word { x e. ~P V | ( x ~~ 1o \/ x ~~ 2o ) } ) $.
+    vdegp1aid.d $e |- ( ph -> ( ( VtxDeg ` G ) ` U ) = P ) $.
+    vdegp1aid.vf $e |- ( ph -> ( Vtx ` F ) = V ) $.
+    vdegp1aid.fi $e |- ( ph -> V e. Fin ) $.
+    ${
+      vdegp1aid.x $e |- ( ph -> X e. V ) $.
+      vdegp1aid.xu $e |- ( ph -> X =/= U ) $.
+      vdegp1aid.y $e |- ( ph -> Y e. V ) $.
+      vdegp1aid.yu $e |- ( ph -> Y =/= U ) $.
+      vdegp1aid.xy $e |- ( ph -> X =/= Y ) $.
+      vdegp1aid.f $e |- ( ph -> ( iEdg ` F ) = ( I ++ <" { X , Y } "> ) ) $.
+      $( The induction step for a vertex degree calculation.  If the degree of
+         ` U ` in the edge set ` E ` is ` P ` , then adding ` { X , Y } ` to
+         the edge set, where ` X =/= U =/= Y ` , yields degree ` P ` as well.
+         (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by Mario
+         Carneiro, 28-Feb-2016.)  (Revised by AV, 3-Mar-2021.) $)
+      vdegp1aid $p |- ( ph -> ( ( VtxDeg ` F ) ` U ) = P ) $=
+        ( cvtxdg cfv cpr chash cn0 cvv cc0 cfzo co cv c1o cen wbr c2o cpw cword
+        wo crab wcel wf wrdf syl ffund ciedg cs1 cconcat cop csn cun wceq prexg
+        wrdv syl2anc cats1un eqtrd lencl wnel wrdlndm cupgr wb 1vgrex wrdupgren
+        cdm mpbird cfn wrdfin fundmfi prelpwi wne pr2ne wn neneqd neqcomd ioran
+        wfun sylanbrc elpri nsyl df-nel sylibr p1evtxdeqfi ) ADEUDUEUEDFUDUEUEC
+        ADIJUFZEFGGUGUEZHUHUIKMAUJXFUKULZBUMZUNUOUPXHUQUOUPUTBHURZVAZGAGXJUSVBZ
+        XGXJGVCNXJGVDVEVFZPAEVGUEGXEVHVIULZGXFXEVJVKVLZUCAGUIUSVBZXEUIVBZXMXNVM
+        AXKXONXJGVOVEAIHVBZJHVBZXPRTIJHHVNVPZGXEUIVQVPVRAXKXFUHVBNXJGVSVEAXKXFG
+        WFZVTNXJGWAVELQAFWBVBZXKNAFUIVBZXKYAXKWCAXQYBRFIHKWDVENBUIGFHXJKMWEVPWG
+        AGWHVBZGWRXTWHVBAXKYCNXJGWIVEXLGWJVPAXQXRXEXIVBRTIJHWKVPAXEUQUOUPZIJWLZ
+        UBAXQXRYDYEWCRTIJHHWMVPWGXSADXEVBZWNDXEVTADIVMZDJVMZUTZYFAYGWNYHWNYIWNA
+        IDAIDSWOWPAJDAJDUAWOWPYGYHWQWSDIJWTXADXEXBXCXDOVR $.
+    $}
+
+    ${
+      vdegp1bid.x $e |- ( ph -> X e. V ) $.
+      vdegp1bid.xu $e |- ( ph -> X =/= U ) $.
+      ${
+        vdegp1bid.f $e |- ( ph -> ( iEdg ` F ) = ( I ++ <" { U , X } "> ) ) $.
+        $( The induction step for a vertex degree calculation, for example in
+           the K&ouml;nigsberg graph.  If the degree of ` U ` in the edge set
+           ` E ` is ` P ` , then adding ` { U , X } ` to the edge set, where
+           ` X =/= U ` , yields degree ` P + 1 ` .  (Contributed by Mario
+           Carneiro, 12-Mar-2015.)  (Revised by Mario Carneiro, 28-Feb-2016.)
+           (Revised by AV, 3-Mar-2021.) $)
+        vdegp1bid $p |- ( ph -> ( ( VtxDeg ` F ) ` U ) = ( P + 1 ) ) $=
+          ( wcel cvtxdg cfv c1 caddc co cpr chash cn0 cc0 cv c1o cen wbr c2o wo
+          cfzo cpw crab cword wrdf syl ffund ciedg cs1 cconcat cop csn cun wceq
+          wf cvv wrdv prexg syl2anc cats1un eqtrd lencl cdm wnel wrdlndm 1vgrex
+          cupgr wb wrdupgren mpbird cfn wrddm cz fzofig sylancr eqeltrd prelpwi
+          0z nn0zd wne necomd pr2ne prid1g p1evtxdp1fi oveq1d ) ADEUAUBUBDFUAUB
+          UBZUCUDUECUCUDUEADDIUFZEFGGUGUBZHUHJLAUIXCUPUEZBUJZUKULUMXEUNULUMUOBH
+          UQZURZGAGXGUSTZXDXGGVJMXGGUTVAVBOAEVCUBGXBVDVEUEZGXCXBVFVGVHZSAGVKUST
+          ZXBVKTZXIXJVIAXHXKMXGGVLVAADHTZIHTZXLKQDIHHVMVNGXBVKVOVNVPAXHXCUHTMXG
+          GVQVAZAXHXCGVRZVSMXGGVTVAKPAFWBTZXHMAFVKTZXHXQXHWCAXMXRKFDHJWAVAMBVKG
+          FHXGJLWDVNWEAXPXDWFAXHXPXDVIMXGGWGVAAUIWHTXCWHTXDWFTWMAXCXOWNUIXCWIWJ
+          WKAXMXNXBXFTKQDIHWLVNAXBUNULUMZDIWOZAIDRWPAXMXNXSXTWCKQDIHHWQVNWEAXMD
+          XBTKDIHWRVAWSAXACUCUDNWTVP $.
+      $}
+
+      vdegp1cid.f $e |- ( ph -> ( iEdg ` F ) = ( I ++ <" { X , U } "> ) ) $.
+      $( The induction step for a vertex degree calculation, for example in the
+         K&ouml;nigsberg graph.  If the degree of ` U ` in the edge set ` E `
+         is ` P ` , then adding ` { X , U } ` to the edge set, where
+         ` X =/= U ` , yields degree ` P + 1 ` .  (Contributed by Mario
+         Carneiro, 12-Mar-2015.)  (Revised by Mario Carneiro, 28-Feb-2016.)
+         (Revised by AV, 3-Mar-2021.) $)
+      vdegp1cid $p |- ( ph -> ( ( VtxDeg ` F ) ` U ) = ( P + 1 ) ) $=
+        ( cconcat ciedg cfv cpr cs1 co wceq prcom ax-mp oveq2i eqtrdi vdegp1bid
+        s1eq ) ABCDEFGHIJKLMNOPQRAEUAUBGIDUCZUDZTUEGDIUCZUDZTUESUNUPGTUMUOUFUNU
+        PUFIDUGUMUOULUHUIUJUK $.
     $}
   $}
 

@@ -16847,8 +16847,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>upgr1e</td>
-  <td>~ upgr1edc</td>
-  <td>adds decidability condition</td>
+  <td>~ upgr1edc , ~ upgr1een</td>
+  <td>for several ways of specifying the single edge</td>
 </tr>
 
 <tr>
@@ -17361,6 +17361,266 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>1hevtxdg1</td>
+  <td>~ 1hevtxdg1en</td>
+  <td>requires the graph to be a multigraph with
+  a finite set of vertexes</td>
+</tr>
+
+<tr>
+  <td>1hegrvtxdg1</td>
+  <td>~ 1hegrvtxdg1fi</td>
+  <td>requires the graph to be a multigraph with
+  a finite set of vertexes</td>
+</tr>
+
+<tr>
+  <td>1hegrvtxdg1r</td>
+  <td>~ 1hegrvtxdg1rfi</td>
+  <td>requires the graph to be a multigraph with
+  a finite set of vertexes</td>
+</tr>
+
+<tr>
+  <td>1egrvtxdg1</td>
+  <td><i>none</i></td>
+  <td>apparently provable</td>
+</tr>
+
+<tr>
+  <td>1egrvtxdg1r</td>
+  <td><i>none</i></td>
+  <td>apparently provable</td>
+</tr>
+
+<tr>
+  <td>1egrvtxdg0</td>
+  <td><i>none</i></td>
+  <td>would seem to need some decidability added</td>
+</tr>
+
+<tr>
+  <td>p1evtxdeqlem</td>
+  <td>~ p1evtxdeqfilem</td>
+  <td>adds various conditions</td>
+</tr>
+
+<tr>
+  <td>p1evtxdeq</td>
+  <td>~ p1evtxdeqfi</td>
+  <td>adds various conditions</td>
+</tr>
+
+<tr>
+  <td>p1evtxdp1</td>
+  <td>~ p1evtxdp1fi</td>
+  <td>adds various conditions</td>
+</tr>
+
+<tr>
+  <td>uspgrloopvtx</td>
+  <td>~ opvtxfv</td>
+  <td>would be provable with set existence conditions added</td>
+</tr>
+
+<tr>
+  <td>uspgrloopvtxel</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses uspgrloopvtx</td>
+</tr>
+
+<tr>
+  <td>uspgrloopiedg</td>
+  <td>~ opiedgfv</td>
+  <td>would be provable with a set existence condition added</td>
+</tr>
+
+<tr>
+  <td>uspgrloopedg</td>
+  <td><i>none</i></td>
+  <td>would be provable with a set existence condition added</td>
+</tr>
+
+<tr>
+  <td>uspgrloopnb0</td>
+  <td><i>none</i></td>
+  <td>likely provable once we have NeighbVtx</td>
+</tr>
+
+<tr>
+  <td>uspgrloopvd2</td>
+  <td><i>none</i></td>
+  <td>apparently provable</td>
+</tr>
+
+<tr>
+  <td>umgr2v2evtx</td>
+  <td>~ opvtxfv</td>
+  <td>would be provable with set existence conditions added</td>
+</tr>
+
+<tr>
+  <td>umgr2v2evtxel</td>
+  <td><i>none</i></td>
+  <td>would be provable with set existence conditions added</td>
+</tr>
+
+<tr>
+  <td>umgr2v2eiedg</td>
+  <td><i>none</i></td>
+  <td>apparently provable</td>
+</tr>
+
+<tr>
+  <td>umgr2v2eedg</td>
+  <td><i>none</i></td>
+  <td>apparently provable</td>
+</tr>
+
+<tr>
+  <td>umgr2v2e</td>
+  <td><i>none</i></td>
+  <td>apparently provable</td>
+</tr>
+
+<tr>
+  <td>umgr2v2enb1</td>
+  <td><i>none</i></td>
+  <td>likely provable once we have NeighbVtx</td>
+</tr>
+
+<tr>
+  <td>umgr2v2evd2</td>
+  <td><i>none</i></td>
+  <td>apparently provable</td>
+</tr>
+
+<tr>
+  <td>hashnbusgrvd</td>
+  <td><i>none</i></td>
+  <td>likely provable once we have NeighbVtx and probably
+  with additional conditions such as finiteness</td>
+</tr>
+
+<tr>
+  <td>usgruvtxvdb</td>
+  <td><i>none</i></td>
+  <td>likely provable once we have FinUSGraph and UnivVtx</td>
+</tr>
+
+<tr>
+  <td>vdiscusgrb</td>
+  <td><i>none</i></td>
+  <td>presumably provable once we have ComplUSGraph</td>
+</tr>
+
+<tr>
+  <td>vdiscusgr</td>
+  <td><i>none</i></td>
+  <td>presumably provable once we have ComplUSGraph</td>
+</tr>
+
+<tr>
+  <td>vtxdusgradjvtx</td>
+  <td><i>none</i></td>
+  <td>would seem to need a finiteness condition</td>
+</tr>
+
+<tr>
+  <td>usgrvd0nedg</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses vtxdusgradjvtx</td>
+</tr>
+
+<tr>
+  <td>uhgrvd00</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses vtxduhgr0edgnel</td>
+</tr>
+
+<tr>
+  <td>usgrvd00</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses uhgrvd00</td>
+</tr>
+
+<tr>
+  <td>vdegp1ai</td>
+  <td>~ vdegp1aid</td>
+  <td>put in deduction form, adds conditions, and
+  changes how we say that a set has one or two
+  elements</td>
+</tr>
+
+<tr>
+  <td>vdegp1bi</td>
+  <td>~ vdegp1bid</td>
+  <td>put in deduction form, adds conditions, and
+  changes how we say that a set has one or two
+  elements</td>
+</tr>
+
+<tr>
+  <td>vdegp1ci</td>
+  <td>~ vdegp1cid</td>
+  <td>put in deduction form, adds conditions, and
+  changes how we say that a set has one or two
+  elements</td>
+</tr>
+
+<tr>
+  <td>vtxdginducedm1 and lemmas</td>
+  <td><i>none</i></td>
+  <td>probably provable with some changes</td>
+</tr>
+
+<tr>
+  <td>vtxdginducedm1fi</td>
+  <td><i>none</i></td>
+  <td>would likely need additional conditions (such as
+  the set of vertexes, as well as the set of edges,
+  being finite)</td>
+</tr>
+
+<tr>
+  <td>finsumvtxdg2sstep and lemmas</td>
+  <td><i>none</i></td>
+  <td>probably provable with some changes</td>
+</tr>
+
+<tr>
+  <td>finsumvtxdg2size</td>
+  <td><i>none</i></td>
+  <td>probably provable</td>
+</tr>
+
+<tr>
+  <td>fusgr1th</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses fusgrfupgrfs and
+  finsumvtxdg2size</td>
+</tr>
+
+<tr>
+  <td>finsumvtxdgeven</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses finsumvtxdg2size</td>
+</tr>
+
+<tr>
+  <td>vtxdgoddnumeven</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses sumodd , sumeven , and
+  finsumvtxdgeven</td>
+</tr>
+
+<tr>
+  <td>fusgrvtxdgonume</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses fusgrfupgrfs and vtxdgoddnumeven</td>
+</tr>
+
+<tr>
   <td>wlkpwrd</td>
   <td>~ wlkpwrdg</td>
 </tr>
@@ -17807,7 +18067,7 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>we don't have a complete list of what this proof depends on,
   but here's a partial list of (direct or indirect) dependencies of the
-  set.mm proof: RegUSGraph , fusgrn0degnn0 ,
+  set.mm proof: NeighbVtx , hashnbusgrvd , RegUSGraph , fusgrn0degnn0 ,
   WWalksN , clwwisshclwws ,
   clwwisshclwwsn ,
   clwwlknfi , clwwlkel , wwlksext2clwwlk , wwlksubclwwlk ,
