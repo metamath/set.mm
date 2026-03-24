@@ -202642,6 +202642,10 @@ htmldef "gsum" as " <IMG SRC='csigma.gif' WIDTH=11 HEIGHT=19 " +
     "ALT=' gsum' TITLE='gsum'><sub><i>g</i></sub> ";
   althtmldef "gsum" as " &Sigma;<sub><i>g</i></sub> ";
   latexdef "gsum" as "\sum_g";
+htmldef "gfsum" as " <IMG SRC='csigma.gif' WIDTH=11 HEIGHT=19 " +
+    "ALT=' gfsum' TITLE='gfsum'><sub><i>gf</i></sub> ";
+  althtmldef "gfsum" as " &Sigma;<sub><i>gf</i></sub> ";
+  latexdef "gfsum" as "\sum_gf";
 htmldef '"s' as " <IMG SRC='backquote.gif' WIDTH=7 HEIGHT=19 ALT=' " + '"' +
     "' TITLE='" + '"' + "'><sub><i>s</i></sub> ";
   althtmldef '"s' as ' &ldquo;<sub><i>s</i></sub> ';
@@ -208447,6 +208451,31 @@ $)
       ZXLXHXGWOLZXMXLMZXGBWOVKXEXNXOOXFPDXGCVFQVLVMRXJXGTWRVNVGLZXKDFSXJXGELZTX
       GFSZXIXPXHXQXIXHXGXGBWOVOZVPRXHXRXIXHXGXSVQRXHXIVRTVTLWRVTLXPXQXRXIWAOWBW
       RXAWCTWRXGWDUTWEXGWFWGWHXJDXJWIWJWKUKWLWMWN $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Finite group sum over unordered finite set
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c gfsum $.
+
+  $( Extend class notation to include finite group sum over unordered finite
+     set. $)
+  cgfsu $a class gfsum $.
+
+  ${
+    $d w f x g $.
+    $( Define the finite group sum (iterated sum) over an unordered finite set.
+       As currently defined, ~ df-igsum is indexed by consecutive integers, but
+       in the case of a commutative monoid, the order of the sum doesn't matter
+       and we can define a sum indexed by any finite set without needing to
+       specify an order.  (Contributed by Jim Kingdon, 23-Mar-2026.) $)
+    df-gfsum $a |- gfsum = ( w e. CMnd , f e. _V |-> ( iota x
+        ( dom f e. Fin /\ E. g ( g : ( 1 ... ( # ` dom f ) )
+        -1-1-onto-> dom f /\ x = ( w gsum ( f o. g ) ) ) ) ) ) $.
   $}
 
 $( (End of Jim Kingdon's mathbox.) $)
