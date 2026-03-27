@@ -208613,6 +208613,34 @@ $)
       YDXQXRAYPBEUOUUEUUDBYEUOLUUSUUDYPBECXSWJXOXT $.
   $}
 
+  ${
+    $d M j $.  $d N j $.  $d j ph $.
+    gsumgfsum.b $e |- B = ( Base ` G ) $.
+    gsumgfsum.g $e |- ( ph -> G e. CMnd ) $.
+    gsumgfsum.m $e |- ( ph -> M e. ZZ ) $.
+    gsumgfsum.n $e |- ( ph -> N e. ZZ ) $.
+    gsumgfsum.f $e |- ( ph -> F : ( M ... N ) --> B ) $.
+    $( On an integer range, ` gsum ` and ` gfsum ` agree.  (Contributed by Jim
+       Kingdon, 25-Mar-2026.) $)
+    gsumgfsum $p |- ( ph -> ( G gsum F ) = ( G gfsum F ) ) $=
+      ( vj cgsu co wceq c1 cfz wcel adantr c0 cle wbr cgfsu wn wa cmin caddc cv
+      cmpt ccom ccmn cuz cfv simpr eluz2 syl3anbrc eqid gsumgfsumlem cfn fzfigd
+      cz wf wf1o 1zzd zsubcld mptfzshft zcnd 1cnd pncan3d oveq1d mpteq1d hashfz
+      chash syl cc subadd23d eqtr2d oveq12d eqidd f1oeq123d gfsumval eqtr4d c0g
+      mpbid gfsum0 clt zltnle syl2anc mpbird fzn feq2d f0bi sylib oveq2d gsum0g
+      wb eqtrd 3eqtr4rd wdc wo zdcle exmiddc mpjaodan ) AEFUAUBZDCMNZDCUCNZOXDU
+      DZAXDUEZXEDCLPFPEUFNZUGNZQNZLUHXIUFNZUIZUJMNXFXHBXMLCDEFGADUKRZXDHSZXHEVA
+      RZFVARZXDFEULUMRZAXPXDISAXQXDJSZAXDUNEFUOUPZAEFQNZBCVBZXDKSZXMUQURXHYABCX
+      MDGXOYCAYAUSRXDAEFIJUTSXHEXIUGNZXJQNZYALYEXLUIZVCZPYAVMUMZQNZYAXMVCAYGXDA
+      LXIEFAPEAVDIVEIJVFSXHYEYIYAYAYFXMAYFXMOXDALYEXKXLAYDPXJQAEPAEIVGZAVHVIZVJ
+      VKSXHYDPXJYHQAYDPOXDYKSXHYHFEUFNPUGNZXJXHXRYHYLOXTEFVLVNXHFEPXHFXSVGAEVOR
+      XDYJSXHVHVPVQVRXHYAVSVTWDWAWBAXGUEZDTUCNZDWCUMZXFXEYMXNYNYOOAXNXGHSZDWEVN
+      YMCTDUCYMTBCVBZCTOYMYBYQAYBXGKSYMYATBCYMFEWFUBZYATOZYMYRXGAXGUNYMXQXPYRXG
+      WPAXQXGJSZAXPXGISZFEWGWHWIYMXPXQYRYSWPUUAYTEFWJWHWDWKWDCBWLWMZWNYMXEDTMNZ
+      YOYMCTDMUUBWNYMXNUUCYOOYPDUKYOYOUQWOVNWQWRAXDWSZXDXGWTAXPXQUUDIJEFXAWHXDX
+      BVNXC $.
+  $}
+
 $( (End of Jim Kingdon's mathbox.) $)
 
 
