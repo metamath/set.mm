@@ -208576,6 +208576,43 @@ $)
     f0 fz10 feq2i mpbir gsumgfsum1 gsum0g eqtr3d ) ABCZADEFADGFAHIZUGAJIZDAKUIL
     UGMKNCUGOPQKRFZUIDSZUGUKDUIDSUITUJDUIDUAUBUCPUDABUHUHLUEUF $.
 
+  ${
+    $d F k $.  $d M j k $.  $d N j k $.  $d S k $.  $d j k ph $.
+    gsumgfsumlem.b $e |- B = ( Base ` G ) $.
+    gsumgfsumlem.g $e |- ( ph -> G e. CMnd ) $.
+    gsumgfsumlem.m $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
+    gsumgfsumlem.f $e |- ( ph -> F : ( M ... N ) --> B ) $.
+    gsumgfsumlem.s $e |- S = ( j e. ( 1 ... ( N + ( 1 - M ) ) )
+      |-> ( j - ( 1 - M ) ) ) $.
+    $( Shifting the indexes of a group sum indexed by consecutive integers.
+       (Contributed by Jim Kingdon, 26-Mar-2026.) $)
+    gsumgfsumlem $p |- ( ph -> ( G gsum F ) = ( G gsum ( F o. S ) ) ) $=
+      ( cfv c1 co cvv wcel cz adantr vk cplusg cseq cmin ccom cgsu 1zzd eluzel2
+      caddc cuz syl zsubcld cv wa wf wceq wf1o cmpt eluzelz mptfzshft zcnd 1cnd
+      pncan3d oveq1d mpteq1d eqtr4id eqcomd eqidd f1oeq123d mpbird f1of zaddcld
+      cfz elfzelz adantl cle wbr zred 1red elfzle1 lesub2dd resubcld lesubadd2d
+      cr mpbid elfzle2 leadd1dd elfzd fvco3 syl2anc eqid oveq1 simpr wb fzaddel
+      fveq1d syl22anc fvmptd3 cc subcld pncand fveq2d ccmn plusgslid slotex cfn
+      eqtrd fzfigd fexd mptexg eqeltrid coexg seqshft2g seqeq1d gsumval2 eluzle
+      eluz2 syl3anbrc fco 3eqtr4d ) AHFUBNZEGUCNZHOGUDPZUIPZYAECUEZOUCZNZFEUFPF
+      YEUFPAYBYDYAYEGYCUIPZUCZNYGAYAUAEYEYCGHQQQKAOGAUGZAHGUJNRZGSRZKGHUHUKZULZ
+      AUAUMZGHVMPZRZUNZYOYCUIPZYENZYOENZYRYTYSCNZENZUUAYROYDVMPZYPCUOZYSUUDRYTU
+      UCUPAUUEYQAUUDYPCUQZUUEAUUFYHYDVMPZYPDUUGDUMZYCUDPZURZUQADYCGHYNYMAYKHSRZ
+      KGHUSUKZUTAUUDUUGYPYPCUUJACDUUDUUIURZUUJMADUUGUUDUUIAYHOYDVMAGOAGYMVAZAVB
+      ZVCZVDZVEVFZAUUGUUDUUQVGAYPVHVIVJUUDYPCVKUKZTYRYSOYDYRUGAYDSRZYQAHYCUULYN
+      VLZTYRYOYCYQYOSRZAYOGHVNZVOZAYCSRZYQYNTZVLZYROYOUDPYCVPVQOYSVPVQYRGYOOAGW
+      DRYQAGYMVRZTZYRYOUVDVRZYRVSZYQGYOVPVQAYOGHVTVOWAYROYOYCUVKUVJYROGUVKUVIWB
+      ZWCWEYRYOHYCUVJAHWDRYQAHUULVRZTUVLYQYOHVPVQAYOGHWFVOWGWHUUDYPYSECWIWJYRUU
+      BYOEYRUUBYSYCUDPZYOYRUUBYSUUJNUVNYRYSCUUJACUUJUPYQUURTWPYRDYSUUIUVNUUGUUJ
+      SUUJWKUUHYSYCUDWLYRYQYSUUGRZAYQWMYRYLUUKUVBUVEYQUVOWNAYLYQYMTAUUKYQUULTUV
+      DUVFYOYCGHWOWQWEYRYSYCUVGUVFULWRXGYRYOYCYQYOWSRAYQYOUVCVAVOAYCWSRYQAOGUUO
+      UUNWTTXAXGXBXGVGAFXCRYAQRJFUBXCXDXEUKAYPBXFELAGHYMUULXHXIZAEQRCQRZYEQRUVP
+      AUUDXFRZUVQAOYDYJUVAXHUVRCUUMQMDUUDUUIXFXJXKUKECQQXLWJXMAYDYIYFAYHOYAYEUU
+      PXNWPXGABYAEFGHXCIYAWKZJKLXOABYAYEFOYDXCIUVSJAOSRUUTOYDVPVQZYDOUJNRYJUVAA
+      OHUDPYCVPVQUVTAGHOUVHUVMAVSZAYKGHVPVQKGHXPUKWAAOHYCUWAUVMAOGUWAUVHWBWCWEO
+      YDXQXRAYPBEUOUUEUUDBYEUOLUUSUUDYPBECXSWJXOXT $.
+  $}
+
 $( (End of Jim Kingdon's mathbox.) $)
 
 
