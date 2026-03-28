@@ -200877,6 +200877,12 @@ $)
       UEZUFGDUEZVJFUEZUGUHZUFZAVJUIUJZVKUIUJZVMADUIUJZGUKDULUEUSUMZUJVNAEUIUJZV
       PBUIUJZADBEUNUEUOVRVPVSUPQBDEUQUTZUROGDUIVQVAVBZAFUIUJVNVOAFEUDUEZUIMAVRW
       BUIUJAVRVPVSVTVCEUIVDUTVEWAVJFUIUIVAVBVJVKUIUIVFVBAVIVLUBVGVH $.
+
+    $( Lemma for ~ trlsegvdeg .  (Contributed by AV, 21-Feb-2021.) $)
+    trlsegvdeglem4 $p |- ( ph -> dom ( iEdg ` X ) = ( ( F " ( 0 ..^ N ) )
+                                                       i^i dom I ) ) $=
+      ( ciedg cfv cdm cc0 cfzo co cima cres cin dmeqd dmres eqtrdi ) AIUDUEZUFF
+      DUGGUHUIUJZUKZUFUQFUFULAUPURUAUMFUQUNUO $.
   $}
 
 
