@@ -48452,6 +48452,14 @@ $)
     ( cres wss wfun wi resss funss ax-mp ) BACZBDBEJEFBAGJBHI $.
 
   ${
+    funresd.1 $e |- ( ph -> Fun F ) $.
+    $( A restriction of a function is a function.  (Contributed by Glauco
+       Siliprandi, 2-Jan-2022.) $)
+    funresd $p |- ( ph -> Fun ( F |` A ) ) $=
+      ( wfun cres funres syl ) ACECBFEDBCGH $.
+  $}
+
+  ${
     $d x y F $.  $d x y G $.
     $( The restriction of a function to the domain of a subclass equals the
        subclass.  (Contributed by NM, 15-Aug-1994.) $)
