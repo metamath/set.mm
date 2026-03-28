@@ -200833,6 +200833,22 @@ $)
       BDCFUETACEVPJUPVEVF $.
   $}
 
+  ${
+    trlsegvdeg.v $e |- V = ( Vtx ` G ) $.
+    trlsegvdeg.i $e |- I = ( iEdg ` G ) $.
+    trlsegvdeg.f $e |- ( ph -> Fun I ) $.
+    trlsegvdeg.n $e |- ( ph -> N e. ( 0 ..^ ( # ` F ) ) ) $.
+    trlsegvdeg.u $e |- ( ph -> U e. V ) $.
+    trlsegvdeg.w $e |- ( ph -> F ( Trails ` G ) P ) $.
+    $( Lemma for ~ trlsegvdeg .  (Contributed by AV, 20-Feb-2021.) $)
+    trlsegvdeglem1 $p |- ( ph -> ( ( P ` N ) e. V
+                                /\ ( P ` ( N + 1 ) ) e. V ) ) $=
+      ( cc0 cfv co wcel wa wbr chash cfzo c1 caddc ctrls cwlks trliswlk wlkpvtx
+      wi cfz elfzofz impel fzofzp1 jca ex 3syl mpd ) AGODUAPZUBQRZGBPHRZGUCUDQZ
+      BPHRZSZLADBEUEPTDBEUFPTZUSVCUINBDEUGVDUSVCVDUSSUTVBVDGOURUJQZRUTUSBDEGHIU
+      HGOURUKULVDVAVERVBUSBDEVAHIUHOURGUMULUNUOUPUQ $.
+  $}
+
 
 $(
 ###############################################################################
