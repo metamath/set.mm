@@ -18207,7 +18207,7 @@ $)
     camestres.min $e |- A. x ( ch -> -. ps ) $.
     $( "Camestres", one of the syllogisms of Aristotelian logic.  All ` ph ` is
        ` ps ` , and no ` ch ` is ` ps ` , therefore no ` ch ` is ` ph ` .  In
-       Aristotelian notation, AEE-2:  PaM and SeM therefore SeP.  (Contributed
+       Aristotelian notation, AEE-2:  PaM and SeM therefore SeP. (Contributed
        by David A. Wheeler, 28-Aug-2016.)  (Revised by David A. Wheeler,
        2-Sep-2016.) $)
     camestres $p |- A. x ( ch -> -. ph ) $=
@@ -18251,9 +18251,9 @@ $)
     cesaro.e $e |- E. x ch $.
     $( "Cesaro", one of the syllogisms of Aristotelian logic.  No ` ph ` is
        ` ps ` , all ` ch ` is ` ps ` , and ` ch ` exist, therefore some ` ch `
-       is not ` ph ` .  In Aristotelian notation, EAO-2:  PeM and SaM
-       therefore SoP.  (Contributed by David A. Wheeler, 28-Aug-2016.)
-       (Revised by David A. Wheeler, 2-Sep-2016.) $)
+       is not ` ph ` .  In Aristotelian notation, EAO-2:  PeM and SaM therefore
+       SoP. (Contributed by David A. Wheeler, 28-Aug-2016.)  (Revised by David
+       A. Wheeler, 2-Sep-2016.) $)
     cesaro $p |- E. x ( ch /\ -. ph ) $=
       ( wn wa wi spi nsyl3 ancli eximii ) CCAHZIDGCOABCABHJDEKCBJDFKLMN $.
   $}
@@ -18378,7 +18378,7 @@ $)
     calemes.min $e |- A. x ( ps -> -. ch ) $.
     $( "Calemes", one of the syllogisms of Aristotelian logic.  All ` ph ` is
        ` ps ` , and no ` ps ` is ` ch ` , therefore no ` ch ` is ` ph ` .  In
-       Aristotelian notation, AEE-4:  PaM and MeS therefore SeP.  (Contributed
+       Aristotelian notation, AEE-4:  PaM and MeS therefore SeP. (Contributed
        by David A. Wheeler, 28-Aug-2016.)  (Revised by David A. Wheeler,
        2-Sep-2016.) $)
     calemes $p |- A. x ( ch -> -. ph ) $=
@@ -18408,8 +18408,8 @@ $)
     $( "Fresison", one of the syllogisms of Aristotelian logic.  No ` ph ` is
        ` ps ` (PeM), and some ` ps ` is ` ch ` (MiS), therefore some ` ch ` is
        not ` ph ` (SoP).  In Aristotelian notation, EIO-4:  PeM and MiS
-       therefore SoP.  (Contributed by David A. Wheeler, 28-Aug-2016.)
-       (Revised by David A. Wheeler, 2-Sep-2016.) $)
+       therefore SoP. (Contributed by David A. Wheeler, 28-Aug-2016.)  (Revised
+       by David A. Wheeler, 2-Sep-2016.) $)
     fresison $p |- E. x ( ch /\ -. ph ) $=
       ( wa wn simpr wi spi con2i adantr jca eximii ) BCGZCAHZGDFPCQBCIBQCABABHJ
       DEKLMNO $.
@@ -18424,8 +18424,8 @@ $)
     calemos.e $e |- E. x ch $.
     $( "Calemos", one of the syllogisms of Aristotelian logic.  All ` ph ` is
        ` ps ` (PaM), no ` ps ` is ` ch ` (MeS), and ` ch ` exist, therefore
-       some ` ch ` is not ` ph ` (SoP).   In Aristotelian notation, AEO-4:  PaM
-       and MeS therefore SoP.  (Contributed by David A. Wheeler, 28-Aug-2016.)
+       some ` ch ` is not ` ph ` (SoP).  In Aristotelian notation, AEO-4:  PaM
+       and MeS therefore SoP. (Contributed by David A. Wheeler, 28-Aug-2016.)
        (Revised by David A. Wheeler, 2-Sep-2016.) $)
     calemos $p |- E. x ( ch /\ -. ph ) $=
       ( wn wa wi spi con2i nsyl ancli eximii ) CCAHZIDGCPCBABCBCHJDFKLABJDEKMNO
@@ -18441,9 +18441,9 @@ $)
     fesapo.e $e |- E. x ps $.
     $( "Fesapo", one of the syllogisms of Aristotelian logic.  No ` ph ` is
        ` ps ` , all ` ps ` is ` ch ` , and ` ps ` exist, therefore some ` ch `
-       is not ` ph ` .  In Aristotelian notation, EAO-4:  PeM and MaS
-       therefore SoP.  (Contributed by David A. Wheeler, 28-Aug-2016.)
-       (Revised by David A. Wheeler, 2-Sep-2016.) $)
+       is not ` ph ` .  In Aristotelian notation, EAO-4:  PeM and MaS therefore
+       SoP. (Contributed by David A. Wheeler, 28-Aug-2016.)  (Revised by David
+       A. Wheeler, 2-Sep-2016.) $)
     fesapo $p |- E. x ( ch /\ -. ph ) $=
       ( wn wa wi spi con2i jca eximii ) BCAHZIDGBCOBCJDFKABABHJDEKLMN $.
   $}
