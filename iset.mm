@@ -200797,6 +200797,25 @@ $)
     CBEMZKUIUGCFIZKZULMZULUGCFUHNUQJULUROUPUGCPQUQULRSTUMUJUNUKUOUJUNOUMUNUJABU
     AUBUCCABDUDUEUF $.
 
+  ${
+    eupth2lem2dc.1 $e |- ( ph -> B e. X ) $.
+    eupth2lem2dc.dc $e |- ( ph -> DECID A = B ) $.
+    eupth2lem2dc.bc $e |- ( ph -> B =/= C ) $.
+    eupth2lem2dc.bu $e |- ( ph -> B = U ) $.
+    $( Lemma for ~ eupth2 .  (Contributed by Mario Carneiro, 8-Apr-2015.) $)
+    eupth2lem2dc $p |- ( ph ->
+     ( -. U e. if ( A = B , (/) , { A , B } ) <->
+          U e. if ( A = C , (/) , { A , C } ) ) ) $=
+      ( wceq c0 cpr cif wcel wne wo wa wb syl wn eqidd olcd biantrud eupth2lem1
+      wdc 3bitr2d a1d necon1bbiddc neeq1 syl5ibcom pm4.71rd eqcom ancom 3bitr4g
+      eleq1d mpd neneqd biorf orcom bitrdi anbi1d bitrd biancomd bitr3d 3bitrd
+      ) AEBCKZLBCMNZOZUAZVGBDPZCBKZCDKZQZRZEBDKLBDMNZOZAVGUFZVJVGSHAVIBCABCPZVI
+      SVRAVSVSVLCCKZQZRZCVHOZVIAWAVSAVTVLACUBUCUDACFOZWCWBSGBCCFUETACEVHJUPUGUH
+      UIUQAVGVKVNAVGVLVKRZVNVKRAVLVKVLRVGWEAVLVKACDPVLVKICBDUJUKULBCUMVLVKUNUOA
+      VLVNVKAVLVMVLQZVNAVMUAVLWFSACDIURVMVLUSTVMVLUTVAVBVCVDACVPOZVOVQAWDWGVOSG
+      BDCFUETACEVPJUPVEVF $.
+  $}
+
 
 $(
 ###############################################################################
