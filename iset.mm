@@ -200789,6 +200789,14 @@ $)
       VCAWAVOVKAVTVNVLGAVSVMOVEVFVGVHVI $.
   $}
 
+  $( Lemma for ~ eupth2 .  (Contributed by Mario Carneiro, 8-Apr-2015.) $)
+  eupth2lem1 $p |- ( U e. V -> ( U e. if ( A = B , (/) , { A , B } ) <->
+      ( A =/= B /\ ( U = A \/ U = B ) ) ) ) $=
+    ( wceq c0 cpr cif wcel wn wa wne wo elif wb noel intnan biorf ax-mp bitr4i
+    df-ne bicomi a1i elprg anbi12d bitrid ) CABEZFABGZHIZUGJZCUHIZKZCDIZABLZCAE
+    CBEMZKUIUGCFIZKZULMZULUGCFUHNUQJULUROUPUGCPQUQULRSTUMUJUNUKUOUJUNOUMUNUJABU
+    AUBUCCABDUDUEUF $.
+
 
 $(
 ###############################################################################
