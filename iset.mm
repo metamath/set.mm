@@ -200869,6 +200869,14 @@ $)
     trlsegvdeglem2 $p |- ( ph -> Fun ( iEdg ` X ) ) $=
       ( ciedg cfv wfun cc0 cfzo co cima cres funresd funeqd mpbird ) AIUDUEZUFF
       DUGGUHUIUJZUKZUFAUPFNULAUOUQUAUMUN $.
+
+    $( Lemma for ~ trlsegvdeg .  (Contributed by AV, 20-Feb-2021.) $)
+    trlsegvdeglem3 $p |- ( ph -> Fun ( iEdg ` Y ) ) $=
+      ( ciedg cfv wfun cop csn cvv wcel cc0 chash co ctrls wbr w3a trlsv simp2d
+      cfzo syl fvexg syl2anc simp1d iedgex eqeltrid funsng funeqd mpbird ) AJUD
+      UEZUFGDUEZVJFUEZUGUHZUFZAVJUIUJZVKUIUJZVMADUIUJZGUKDULUEUSUMZUJVNAEUIUJZV
+      PBUIUJZADBEUNUEUOVRVPVSUPQBDEUQUTZUROGDUIVQVAVBZAFUIUJVNVOAFEUDUEZUIMAVRW
+      BUIUJAVRVPVSVTVCEUIVDUTVEWAVJFUIUIVAVBVJVKUIUIVFVBAVIVLUBVGVH $.
   $}
 
 
