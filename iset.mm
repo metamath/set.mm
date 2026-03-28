@@ -200883,6 +200883,14 @@ $)
                                                        i^i dom I ) ) $=
       ( ciedg cfv cdm cc0 cfzo co cima cres cin dmeqd dmres eqtrdi ) AIUDUEZUFF
       DUGGUHUIUJZUKZUFUQFUFULAUPURUAUMFUQUNUO $.
+
+    $( Lemma for ~ trlsegvdeg .  (Contributed by AV, 21-Feb-2021.) $)
+    trlsegvdeglem5 $p |- ( ph -> dom ( iEdg ` Y ) = { ( F ` N ) } ) $=
+      ( ciedg cfv cdm cop csn dmeqd cvv wcel wceq ctrls wbr trlsv simp1d iedgex
+      w3a syl eqeltrid cc0 chash cfzo co simp2d fvexg syl2anc dmsnopg eqtrd ) A
+      JUDUEZUFGDUEZVKFUEZUGUHZUFZVKUHZAVJVMUBUIAVLUJUKZVNVOULAFUJUKVKUJUKZVPAFE
+      UDUEZUJMAEUJUKZVRUJUKAVSDUJUKZBUJUKZADBEUMUEUNVSVTWAURQBDEUOUSZUPEUJUQUSU
+      TAVTGVADVBUEVCVDZUKVQAVSVTWAWBVEOGDUJWCVFVGVKFUJUJVFVGVKVLUJVHUSVI $.
   $}
 
 
