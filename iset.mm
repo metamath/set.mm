@@ -199364,6 +199364,15 @@ $)
     $.
 
   ${
+    wlkpvtx.v $e |- V = ( Vtx ` G ) $.
+    $( A walk connects vertices.  (Contributed by AV, 22-Feb-2021.) $)
+    wlkpvtx $p |- ( F ( Walks ` G ) P
+                      -> ( N e. ( 0 ... ( # ` F ) ) -> ( P ` N ) e. V ) ) $=
+      ( cwlks cfv wbr cc0 chash cfz co wf wcel wi wlkp ffvelcdm ex syl ) BACGHI
+      JBKHLMZEANZDUAOZDAHEOZPABCEFQUBUCUDUAEDARST $.
+  $}
+
+  ${
     $d E k $.  $d F k $.  $d P k $.
     $( Lemma for theorems for walks of length 2.  (Contributed by Alexander van
        der Vekens, 1-Feb-2018.) $)
