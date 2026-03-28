@@ -200855,6 +200855,20 @@ $)
       wi cfz elfzofz impel fzofzp1 jca ex 3syl mpd ) AGODUAPZUBQRZGBPHRZGUCUDQZ
       BPHRZSZLADBEUEPTDBEUFPTZUSVCUINBDEUGVDUSVCVDUSSUTVBVDGOURUJQZRUTUSBDEGHIU
       HGOURUKULVDVAVERVBUSBDEVAHIUHOURGUMULUNUOUPUQ $.
+
+    trlsegvdeg.vx $e |- ( ph -> ( Vtx ` X ) = V ) $.
+    trlsegvdeg.vy $e |- ( ph -> ( Vtx ` Y ) = V ) $.
+    trlsegvdeg.vz $e |- ( ph -> ( Vtx ` Z ) = V ) $.
+    trlsegvdeg.ix $e |- ( ph -> ( iEdg ` X )
+                                = ( I |` ( F " ( 0 ..^ N ) ) ) ) $.
+    trlsegvdeg.iy $e |- ( ph -> ( iEdg ` Y )
+                                = { <. ( F ` N ) , ( I ` ( F ` N ) ) >. } ) $.
+    trlsegvdeg.iz $e |- ( ph -> ( iEdg ` Z )
+                                = ( I |` ( F " ( 0 ... N ) ) ) ) $.
+    $( Lemma for ~ trlsegvdeg .  (Contributed by AV, 20-Feb-2021.) $)
+    trlsegvdeglem2 $p |- ( ph -> Fun ( iEdg ` X ) ) $=
+      ( ciedg cfv wfun cc0 cfzo co cima cres funresd funeqd mpbird ) AIUDUEZUFF
+      DUGGUHUIUJZUKZUFAUPFNULAUOUQUAUMUN $.
   $}
 
 
