@@ -18056,7 +18056,7 @@ $(
   _Aristotle's Modal Syllogistic_ by Marko Malink, Harvard
   University Press, November 2013.  We do not treat them further here.
 
-  Aristotelean logic is essentially the forerunner of predicate calculus
+  Aristotelian logic is essentially the forerunner of predicate calculus
   (as well as set theory since it discusses membership in groups),
   while Stoic logic is essentially the forerunner of propositional calculus.
 $)
@@ -18206,8 +18206,8 @@ $)
     $( Minor premise for Camestres $)
     camestres.min $e |- A. x ( ch -> -. ps ) $.
     $( "Camestres", one of the syllogisms of Aristotelian logic.  All ` ph ` is
-       ` ps ` , and no ` ch ` is ` ps ` , therefore no ` ch ` is ` ph ` .  (In
-       Aristotelian notation, AEE-2:  PaM and SeM therefore SeP.) (Contributed
+       ` ps ` , and no ` ch ` is ` ps ` , therefore no ` ch ` is ` ph ` .  In
+       Aristotelian notation, AEE-2:  PaM and SeM therefore SeP.  (Contributed
        by David A. Wheeler, 28-Aug-2016.)  (Revised by David A. Wheeler,
        2-Sep-2016.) $)
     camestres $p |- A. x ( ch -> -. ph ) $=
@@ -18251,8 +18251,8 @@ $)
     cesaro.e $e |- E. x ch $.
     $( "Cesaro", one of the syllogisms of Aristotelian logic.  No ` ph ` is
        ` ps ` , all ` ch ` is ` ps ` , and ` ch ` exist, therefore some ` ch `
-       is not ` ph ` .  (In Aristotelian notation, EAO-2:  PeM and SaM
-       therefore SoP.) (Contributed by David A. Wheeler, 28-Aug-2016.)
+       is not ` ph ` .  In Aristotelian notation, EAO-2:  PeM and SaM
+       therefore SoP.  (Contributed by David A. Wheeler, 28-Aug-2016.)
        (Revised by David A. Wheeler, 2-Sep-2016.) $)
     cesaro $p |- E. x ( ch /\ -. ph ) $=
       ( wn wa wi spi nsyl3 ancli eximii ) CCAHZIDGCOABCABHJDEKCBJDFKLMN $.
@@ -18377,8 +18377,8 @@ $)
     $( Minor premise for  $)
     calemes.min $e |- A. x ( ps -> -. ch ) $.
     $( "Calemes", one of the syllogisms of Aristotelian logic.  All ` ph ` is
-       ` ps ` , and no ` ps ` is ` ch ` , therefore no ` ch ` is ` ph ` .  (In
-       Aristotelian notation, AEE-4:  PaM and MeS therefore SeP.) (Contributed
+       ` ps ` , and no ` ps ` is ` ch ` , therefore no ` ch ` is ` ph ` .  In
+       Aristotelian notation, AEE-4:  PaM and MeS therefore SeP.  (Contributed
        by David A. Wheeler, 28-Aug-2016.)  (Revised by David A. Wheeler,
        2-Sep-2016.) $)
     calemes $p |- A. x ( ch -> -. ph ) $=
@@ -18407,8 +18407,8 @@ $)
     fresison.min $e |- E. x ( ps /\ ch ) $.
     $( "Fresison", one of the syllogisms of Aristotelian logic.  No ` ph ` is
        ` ps ` (PeM), and some ` ps ` is ` ch ` (MiS), therefore some ` ch ` is
-       not ` ph ` (SoP).  (In Aristotelian notation, EIO-4:  PeM and MiS
-       therefore SoP.) (Contributed by David A. Wheeler, 28-Aug-2016.)
+       not ` ph ` (SoP).  In Aristotelian notation, EIO-4:  PeM and MiS
+       therefore SoP.  (Contributed by David A. Wheeler, 28-Aug-2016.)
        (Revised by David A. Wheeler, 2-Sep-2016.) $)
     fresison $p |- E. x ( ch /\ -. ph ) $=
       ( wa wn simpr wi spi con2i adantr jca eximii ) BCGZCAHZGDFPCQBCIBQCABABHJ
@@ -18424,8 +18424,8 @@ $)
     calemos.e $e |- E. x ch $.
     $( "Calemos", one of the syllogisms of Aristotelian logic.  All ` ph ` is
        ` ps ` (PaM), no ` ps ` is ` ch ` (MeS), and ` ch ` exist, therefore
-       some ` ch ` is not ` ph ` (SoP).  (In Aristotelian notation, AEO-4:  PaM
-       and MeS therefore SoP.) (Contributed by David A. Wheeler, 28-Aug-2016.)
+       some ` ch ` is not ` ph ` (SoP).   In Aristotelian notation, AEO-4:  PaM
+       and MeS therefore SoP.  (Contributed by David A. Wheeler, 28-Aug-2016.)
        (Revised by David A. Wheeler, 2-Sep-2016.) $)
     calemos $p |- E. x ( ch /\ -. ph ) $=
       ( wn wa wi spi con2i nsyl ancli eximii ) CCAHZIDGCPCBABCBCHJDFKLABJDEKMNO
@@ -18441,8 +18441,8 @@ $)
     fesapo.e $e |- E. x ps $.
     $( "Fesapo", one of the syllogisms of Aristotelian logic.  No ` ph ` is
        ` ps ` , all ` ps ` is ` ch ` , and ` ps ` exist, therefore some ` ch `
-       is not ` ph ` .  (In Aristotelian notation, EAO-4:  PeM and MaS
-       therefore SoP.) (Contributed by David A. Wheeler, 28-Aug-2016.)
+       is not ` ph ` .  In Aristotelian notation, EAO-4:  PeM and MaS
+       therefore SoP.  (Contributed by David A. Wheeler, 28-Aug-2016.)
        (Revised by David A. Wheeler, 2-Sep-2016.) $)
     fesapo $p |- E. x ( ch /\ -. ph ) $=
       ( wn wa wi spi con2i jca eximii ) BCAHZIDGBCOBCJDFKABABHJDEKLMN $.
@@ -169655,7 +169655,7 @@ $)
       ( clmod wcel cgrp co wceq lmodgrp grppncan syl3an1 ) FJKFLKAEKBEKABCMBDMA
       NFOECFDABGHIPQ $.
 
-    $( Cancellation law for vector subtraction (Contributed by NM,
+    $( Cancellation law for vector subtraction.  (Contributed by NM,
        19-Apr-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
     lmodvnpcan $p |- ( ( W e. LMod /\ A e. V /\ B e. V ) ->
                        ( ( A .- B ) .+ B ) = A ) $=
@@ -191386,7 +191386,7 @@ $)
     $( The Legendre symbol is equivalent to ` a ^ ( ( p - 1 ) / 2 ) ` ,
        ` mod p ` .  This theorem is also called "Euler's criterion", see
        theorem 9.2 in [ApostolNT] p. 180, or a representation of Euler's
-       criterion using the Legendre symbol, (Contributed by Mario Carneiro,
+       criterion using the Legendre symbol.  (Contributed by Mario Carneiro,
        4-Feb-2015.) $)
     lgsvalmod $p |- ( ( A e. ZZ /\ P e. ( Prime \ { 2 } ) ) ->
       ( ( A /L P ) mod P ) = ( ( A ^ ( ( P - 1 ) / 2 ) ) mod P ) ) $=
