@@ -72566,8 +72566,8 @@ $)
        to be inhabited).  "Finitely enumerable" is defined as
        ` E. n e. _om E. f f : n -onto-> A ` per Definition 8.1.4 of
        [AczelRathjen], p. 71 and "countable" is defined as
-       ` E. g g : _om -onto-> ( A |_| 1o ) ` per [BauerSwan], p. 14:3.
-       (Contributed by Jim Kingdon, 13-Mar-2023.) $)
+       ` E. g g : _om -onto-> ( A |_| 1o ) ` per Definition on page 14:3 of
+       [BauerSwan], p. 3.  (Contributed by Jim Kingdon, 13-Mar-2023.) $)
     enumct $p |- ( E. n e. _om E. f f : n -onto-> A
         -> E. g g : _om -onto-> ( A |_| 1o ) ) $=
       ( vk vx cv wfo wex com c1o cdju wcel wa c0 wceq simpll wb adantl syl fo00
