@@ -199370,6 +199370,14 @@ $)
                       -> ( N e. ( 0 ... ( # ` F ) ) -> ( P ` N ) e. V ) ) $=
       ( cwlks cfv wbr cc0 chash cfz co wf wcel wi wlkp ffvelcdm ex syl ) BACGHI
       JBKHLMZEANZDUAOZDAHEOZPABCEFQUBUCUDUAEDARST $.
+
+    $( The endpoints of a walk are vertices.  (Contributed by AV,
+       31-Jan-2021.) $)
+    wlkepvtx $p |- ( F ( Walks ` G ) P
+                      -> ( ( P ` 0 ) e. V /\ ( P ` ( # ` F ) ) e. V ) ) $=
+      ( cwlks cfv wbr cc0 chash cfz co wf cn0 wcel wa wlkp wlkcl 0elfz ffvelcdm
+      sylan2 nn0fz0 sylan2b jca syl2anc ) BACFGHIBJGZKLZDAMZUFNOZIAGDOZUFAGDOZP
+      ABCDEQABCRUHUIPUJUKUIUHIUGOUJUFSUGDIATUAUIUHUFUGOUKUFUBUGDUFATUCUDUE $.
   $}
 
   ${
