@@ -19422,10 +19422,6 @@ Proof modification of "bj-aecomsv" is discouraged (18 steps).
 Proof modification of "bj-alcomexcom" is discouraged (45 steps).
 Proof modification of "bj-aleximiALT" is discouraged (25 steps).
 Proof modification of "bj-alextruim" is discouraged (48 steps).
-Proof modification of "bj-alimii" is discouraged (11 steps).
-Proof modification of "bj-almp" is discouraged (18 steps).
-Proof modification of "bj-almpi" is discouraged (29 steps).
-Proof modification of "bj-almpig" is discouraged (14 steps).
 Proof modification of "bj-ax12" is discouraged (72 steps).
 Proof modification of "bj-ax12ssb" is discouraged (54 steps).
 Proof modification of "bj-ax12v" is discouraged (17 steps).
@@ -19506,6 +19502,7 @@ Proof modification of "bj-df-ifc" is discouraged (60 steps).
 Proof modification of "bj-dfid2ALT" is discouraged (157 steps).
 Proof modification of "bj-dfif" is discouraged (39 steps).
 Proof modification of "bj-dfnnf3" is discouraged (34 steps).
+Proof modification of "bj-dfnul2" is discouraged (21 steps).
 Proof modification of "bj-disj2r" is discouraged (88 steps).
 Proof modification of "bj-disjsn01" is discouraged (18 steps).
 Proof modification of "bj-drnf2v" is discouraged (10 steps).
