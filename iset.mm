@@ -69868,6 +69868,13 @@ $)
       EYDWBWCUKWDPWEWHWFWGWIXSYCYFWJWQFXEWKWLWMWGWNWOWP $.
   $}
 
+  $( The image of a finite set under a one-to-one mapping is finite.
+     (Contributed by Jim Kingdon, 28-Mar-2026.) $)
+  imaf1fi $p |- ( ( F : A -1-1-> B /\ X C_ A /\ X e. Fin )
+      -> ( F " X ) e. Fin ) $=
+    ( wf1 wss cfn wcel w3a cima cen wbr simp3 f1imaeng enfii syl2anc ) ABCEZDAF
+    ZDGHZISCDJZDKLTGHQRSMABDCGNTDOP $.
+
   $( The Cartesian product of three finite sets is a finite set.  (Contributed
      by Alexander van der Vekens, 11-Mar-2018.) $)
   3xpfi $p |- ( V e. Fin -> ( ( V X. V ) X. V ) e. Fin ) $=
