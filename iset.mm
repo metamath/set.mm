@@ -197833,6 +197833,34 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Subgraphs
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c SubGraph $.
+
+  $( Extend class notation with subgraphs. $)
+  csubgr $a class SubGraph $.
+
+  ${
+    $d s g $.
+    $( Define the class of the subgraph relation.  A class ` s ` is a
+       _subgraph_ of a class ` g ` (the _supergraph_ of ` s ` ) if its vertices
+       are also vertices of ` g ` , and its edges are also edges of ` g ` ,
+       connecting vertices of ` s ` only (see section I.1 in [Bollobas] p. 2 or
+       section 1.1 in [Diestel] p. 4).  The second condition is ensured by the
+       requirement that the edge function of ` s ` is a restriction of the edge
+       function of ` g ` having only vertices of ` s ` in its range.  Note that
+       the domains of the edge functions of the subgraph and the supergraph
+       should be compatible.  (Contributed by AV, 16-Nov-2020.) $)
+    df-subgr $a |- SubGraph = { <. s , g >. | ( ( Vtx ` s ) C_ ( Vtx ` g )
+                         /\ ( iEdg ` s ) = ( ( iEdg ` g ) |` dom ( iEdg ` s ) )
+                         /\ ( Edg ` s ) C_ ~P ( Vtx ` s ) ) } $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Vertex degree
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -203059,6 +203087,9 @@ htmldef "USPGraph" as 'USPGraph';
 htmldef "USGraph" as 'USGraph';
   althtmldef "USGraph" as 'USGraph';
   latexdef "USGraph" as "\mathrm{USGraph}";
+htmldef "SubGraph" as ' SubGraph ';
+  althtmldef "SubGraph" as ' SubGraph ';
+  latexdef "SubGraph" as "\mathrm{SubGraph}";
 htmldef "VtxDeg" as 'VtxDeg';
   althtmldef "VtxDeg" as 'VtxDeg';
   latexdef "VtxDeg" as "\mathrm{VtxDeg}";
