@@ -197955,6 +197955,20 @@ $)
       KULVNEUMUQUNUOPUPURUSUT $.
   $}
 
+  $( An empty graph consisting of a subset of vertices of a graph (and having
+     no edges) is a subgraph of the graph.  (Contributed by AV, 17-Nov-2020.)
+     (Proof shortened by AV, 17-Dec-2020.) $)
+  egrsubgr $p |- ( ( ( G e. W /\ S e. U ) /\ ( Vtx ` S ) C_ ( Vtx ` G )
+                     /\ ( Fun ( iEdg ` S ) /\ ( Edg ` S ) = (/) ) )
+                   -> S SubGraph G ) $=
+    ( wcel wa cvtx cfv wss ciedg wfun cedg c0 wceq w3a csubgr cdm cres wb eqid
+    wbr cpw simp2 edg0iedg0g adantll res0 eqcomi id dmeq eqtrdi reseq2d 3eqtr4a
+    dm0 biimtrdi impr 3adant2 0ss sseq1 mpbiri adantl 3ad2ant3 issubgr 3ad2ant1
+    mpbir3and ) CDEZABEZFZAGHZCGHZIZAJHZKZALHZMNZFZOACPUAZVJVKCJHZVKQZRZNZVMVHU
+    BZIZVGVJVOUCVGVOVTVJVGVLVNVTVGVLFVNVKMNZVTVFVLVNWCSVEVMAVKBVKTZVMTZUDUEWCMV
+    QMRZVKVSWFMVQUFUGWCUHWCVRMVQWCVRMQMVKMUIUMUJUKULUNUOUPVOVGWBVJVNWBVLVNWBMWA
+    IWAUQVMMWAURUSUTVAVGVJVPVJVTWBOSVOVIVQABVMCVKVHDVHTVITWDVQTWEVBVCVD $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
