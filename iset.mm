@@ -197978,6 +197978,17 @@ $)
     IZUAZVAVEVGUTNVDVBDKDVCDVBUBUCVBUDUEVFNUFURDOCUSVHUKUGUTVBDODADDBDGHDUHPUTS
     DRHZDQPVBSDULHVITDTDDUIVIDQUJUMUNUOUPUQ $.
 
+  $( The null graph (as hypergraph) is a subgraph of all graphs.  (Contributed
+     by AV, 17-Nov-2020.)  (Proof shortened by AV, 28-Nov-2020.) $)
+  0uhgrsubgr $p |- ( ( G e. W /\ S e. UHGraph /\ ( Vtx ` S ) = (/) )
+                     -> S SubGraph G ) $=
+    ( wcel cuhgr cvtx cfv c0 wceq w3a wss ciedg wfun cedg csubgr wbr 3simpa crn
+    wa wi 0ss sseq1 mpbiri 3ad2ant3 eqid uhgrfun 3ad2ant2 edgval uhgr0vb eqtrdi
+    rneq rn0 biimtrdi ex pm2.43a a1i 3imp eqtrid egrsubgr syl112anc ) BCDZAEDZA
+    FGZHIZJZVAVBSVCBFGZKZALGZMZANGZHIABOPVAVBVDQVDVAVGVBVDVGHVFKVFUAVCHVFUBUCUD
+    VBVAVIVDVHAVHUEUFUGVEVJVHRZHAUHVAVBVDVKHIZVBVDVLTTVAVDVBVLVBVDVBVLTVBVDSVBV
+    HHIZVLAEUIVMVKHRHVHHUKULUJUMUNUOUPUQURAEBCUSUT $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
