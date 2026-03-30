@@ -197907,6 +197907,15 @@ $)
       ( cvv wcel wa csubgr wbr wss cdm cres cpw subgrv wi issubgr biimpd ancoms
       wceq w3a mpcom ) CMNZEMNZOCEPQZGARFBFSTUGDGUARUHZCEUBUKUJULUMUCUKUJOULUMA
       BCMDEFGMHIJKLUDUEUFUI $.
+
+    $( The properties of a subgraph:  If ` S ` is a subgraph of ` G ` , its
+       vertices are also vertices of ` G ` , and its edges are also edges of
+       ` G ` , connecting vertices of the subgraph only.  (Contributed by AV,
+       19-Nov-2020.) $)
+    subgrprop2 $p |- ( S SubGraph G -> ( V C_ A /\ I C_ B /\ E C_ ~P V ) ) $=
+      ( csubgr wbr wss cdm cres wceq cpw w3a subgrprop resss mpbiri 3anim2i syl
+      sseq1 ) CEMNGAOZFBFPZQZRZDGSOZTUGFBOZUKTABCDEFGHIJKLUAUJULUGUKUJULUIBOBUH
+      UBFUIBUFUCUDUE $.
   $}
 
 
