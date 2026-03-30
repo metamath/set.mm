@@ -197864,6 +197864,11 @@ $)
       df-subgr ) ACZDEZBCZDEFQGEZSGETHIJQKERLFMABNBAPO $.
   $}
 
+  $( If a class is a subgraph of another class, both classes are sets.
+     (Contributed by AV, 16-Nov-2020.) $)
+  subgrv $p |- ( S SubGraph G -> ( S e. _V /\ G e. _V ) ) $=
+    ( csubgr relsubgr brrelex12i ) ABCDE $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
