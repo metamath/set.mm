@@ -198012,6 +198012,15 @@ $)
     ( cuhgr wcel ciedg cfv wfun csubgr wbr eqid uhgrfun subgrfun sylan ) BCDBEF
     ZGABHIAEFGNBNJKABLM $.
 
+  $( An element of the domain of the edge function of a subgraph is an element
+     of the domain of the edge function of the supergraph.  (Contributed by AV,
+     20-Nov-2020.) $)
+  subgreldmiedg $p |- ( ( S SubGraph G /\ X e. dom ( iEdg ` S ) )
+                        -> X e. dom ( iEdg ` G ) ) $=
+    ( csubgr wbr cfv cdm wcel cvtx wss cedg cpw w3a wi eqid subgrprop2 3ad2ant2
+    ciedg dmss sseld syl imp ) ABDEZCARFZGZHZCBRFZGZHZUCAIFZBIFZJZUDUGJZAKFZUJL
+    JZMZUFUINUKUGAUNBUDUJUJOUKOUDOUGOUNOPUPUEUHCUMULUEUHJUOUDUGSQTUAUB $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
