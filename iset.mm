@@ -197918,6 +197918,26 @@ $)
       UBFUIBUFUCUDUE $.
   $}
 
+  ${
+    $d S e $.  $d V e $.
+    uhgrissubgr.v $e |- V = ( Vtx ` S ) $.
+    uhgrissubgr.a $e |- A = ( Vtx ` G ) $.
+    uhgrissubgr.i $e |- I = ( iEdg ` S ) $.
+    uhgrissubgr.b $e |- B = ( iEdg ` G ) $.
+    $( The property of a hypergraph to be a subgraph.  (Contributed by AV,
+       19-Nov-2020.) $)
+    uhgrissubgr $p |- ( ( G e. W /\ Fun B /\ S e. UHGraph )
+                        -> ( S SubGraph G <-> ( V C_ A /\ I C_ B ) ) ) $=
+      ( ve wcel cuhgr w3a wss wa cfv cpw wceq wfun csubgr wbr subgrprop2 3simpa
+      cedg eqid syl cres simprl simp2 simpr funssres syl2an eqcomd cvtx edguhgr
+      cdm cv ex pweqi eleq2i imbitrrdi ssrdv 3ad2ant3 adantr wb issubgr 3adant2
+      mpbir3and impbid2 ) DGMZBUAZCNMZOZCDUBUCZFAPZEBPZQZVPVQVRCUFRZFSZPZOVSABC
+      VTDEFHIJKVTUGZUDVQVRWBUEUHVOVSVPVOVSQZVPVQEBEURUIZTZWBVOVQVRUJWDWEEVOVMVR
+      WEETVSVLVMVNUKVQVRULBEUMUNUOVOWBVSVNVLWBVMVNLVTWAVNLUSZVTMZWGCUPRZSZMZWGW
+      AMVNWHWKWGCUQUTWAWJWGFWIHVAVBVCVDVEVFVOVPVQWFWBOVGZVSVLVNWLVMABCNVTDEFGHI
+      JKWCVHVIVFVJUTVK $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
