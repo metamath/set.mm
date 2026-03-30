@@ -197969,6 +197969,15 @@ $)
     QMRZVKVSWFMVQUFUGWCUHWCVRMVQWCVRMQMVKMUIUMUJUKULUNUOUPVOVGWBVJVNWBVLVNWBMWA
     IWAUQVMMWAURUSUTVAVGVJVPVJVTWBOSVOVIVQABVMCVKVHDVHTVITWDVQTWEVBVCVD $.
 
+  $( The null graph (represented by an empty set) is a subgraph of all graphs.
+     (Contributed by AV, 17-Nov-2020.) $)
+  0grsubgr $p |- ( G e. W -> (/) SubGraph G ) $=
+    ( wcel c0 csubgr wbr cvtx cfv wss cdm cres wceq cpw 0ss cvv eqcomi iedgval0
+    ciedg eqid crn w3a dm0 reseq2i res0 eqtr2i 3pm3.2i 0ex vtxval0 edgval rneqi
+    wb cedg rn0 3eqtrri issubgr mpan2 mpbiri ) ABCZDAEFZDAGHZIZDARHZDJZKZLZDDMZ
+    IZUAZVAVEVGUTNVDVBDKDVCDVBUBUCVBUDUEVFNUFURDOCUSVHUKUGUTVBDODADDBDGHDUHPUTS
+    DRHZDQPVBSDULHVITDTDDUIVIDQUJUMUNUOUPUQ $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
