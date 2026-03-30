@@ -197989,6 +197989,13 @@ $)
     VBVAVIVDVHAVHUEUFUGVEVJVHRZHAUHVAVBVDVKHIZVBVDVLTTVAVDVBVLVBVDVBVLTVBVDSVBV
     HHIZVLAEUIVMVKHRHVHHUKULUJUMUNUOUPUQURAEBCUSUT $.
 
+  $( A hypergraph is a subgraph of itself.  (Contributed by AV, 17-Nov-2020.)
+     (Proof shortened by AV, 21-Nov-2020.) $)
+  uhgrsubgrself $p |- ( G e. UHGraph -> G SubGraph G ) $=
+    ( cuhgr wcel csubgr wbr cvtx cfv wss ciedg wa ssid pm3.2i wfun eqid uhgrfun
+    wb id uhgrissubgr mpd3an23 mpbiri ) ABCZAADEZAFGZUCHZAIGZUEHZJZUDUFUCKUEKLU
+    AUEMUAUBUGPUEAUENZOUAQUCUEAAUEUCBUCNZUIUHUHRST $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
