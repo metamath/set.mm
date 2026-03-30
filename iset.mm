@@ -197938,6 +197938,23 @@ $)
       JKWCVHVIVFVJUTVK $.
   $}
 
+  ${
+    subgrprop3.v $e |- V = ( Vtx ` S ) $.
+    subgrprop3.a $e |- A = ( Vtx ` G ) $.
+    subgrprop3.e $e |- E = ( Edg ` S ) $.
+    subgrprop3.b $e |- B = ( Edg ` G ) $.
+    $( The properties of a subgraph:  If ` S ` is a subgraph of ` G ` , its
+       vertices are also vertices of ` G ` , and its edges are also edges of
+       ` G ` .  (Contributed by AV, 19-Nov-2020.) $)
+    subgrprop3 $p |- ( S SubGraph G -> ( V C_ A /\ E C_ B ) ) $=
+      ( wss ciedg cfv wa eqid syl crn cvv wcel cedg wbr cpw w3a subgrprop2 rnss
+      csubgr 3simpa simprl ad2antll wb subgrv wceq edgval eqtrid sseq12d adantr
+      a1i mpbird jca mpdan ) CEUFUAZFAKZCLMZELMZKZNZVBDBKZNVAVBVEDFUBKZUCVFAVDC
+      DEVCFGHVCOVDOIUDVBVEVHUGPVAVFNZVBVGVAVBVEUHVIVGVCQZVDQZKZVEVLVAVBVCVDUEUI
+      VAVGVLUJZVFVACRSERSNZVMCEUKVNDVJBVKVNDCTMZVJIVOVJULVNCUMUQUNVNBETMZVKJVPV
+      KULVNEUMUQUNUOPUPURUSUT $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
