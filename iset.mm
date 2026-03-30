@@ -197856,6 +197856,12 @@ $)
     df-subgr $a |- SubGraph = { <. s , g >. | ( ( Vtx ` s ) C_ ( Vtx ` g )
                          /\ ( iEdg ` s ) = ( ( iEdg ` g ) |` dom ( iEdg ` s ) )
                          /\ ( Edg ` s ) C_ ~P ( Vtx ` s ) ) } $.
+
+    $( The class of the subgraph relation is a relation.  (Contributed by AV,
+       16-Nov-2020.) $)
+    relsubgr $p |- Rel SubGraph $=
+      ( vs vg cv cvtx cfv wss ciedg cdm cres wceq cedg cpw w3a csubgr relopabiv
+      df-subgr ) ACZDEZBCZDEFQGEZSGETHIJQKERLFMABNBAPO $.
   $}
 
 
