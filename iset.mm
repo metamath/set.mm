@@ -197996,6 +197996,14 @@ $)
     wb id uhgrissubgr mpd3an23 mpbiri ) ABCZAADEZAFGZUCHZAIGZUEHZJZUDUFUCKUEKLU
     AUEMUAUBUGPUEAUENZOUAQUCUEAAUEUCBUCNZUIUHUHRST $.
 
+  $( The edge function of a subgraph of a graph whose edge function is actually
+     a function is a function.  (Contributed by AV, 20-Nov-2020.) $)
+  subgrfun $p |- ( ( Fun ( iEdg ` G ) /\ S SubGraph G )
+                   -> Fun ( iEdg ` S ) ) $=
+    ( csubgr wbr ciedg cfv wfun cvtx wss cedg cpw w3a subgrprop2 funss 3ad2ant2
+    wi eqid syl impcom ) ABCDZBEFZGZAEFZGZTAHFZBHFZIZUCUAIZAJFZUEKIZLUBUDPZUFUA
+    AUIBUCUEUEQUFQUCQUAQUIQMUHUGUKUJUCUANORS $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
