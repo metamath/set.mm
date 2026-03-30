@@ -197900,6 +197900,13 @@ $)
       OZBPZCDOZQZCFRSZHATZGBGUAZUBZUCZEHUDTZQZVEGBTZVIQUTVBVDVJUEVAABCDEFGHIJKL
       MNUFUGVCVHVKVEVIVCVHVKVHVKVGBTBVFUHGVGBUIUJVAUTVKVHUKVBVAVKVHVAVKULVGGBGU
       MUNUOUPUQURUS $.
+
+    $( The properties of a subgraph.  (Contributed by AV, 19-Nov-2020.) $)
+    subgrprop $p |- ( S SubGraph G
+                      -> ( V C_ A /\ I = ( B |` dom I ) /\ E C_ ~P V ) ) $=
+      ( cvv wcel wa csubgr wbr wss cdm cres cpw subgrv wi issubgr biimpd ancoms
+      wceq w3a mpcom ) CMNZEMNZOCEPQZGARFBFSTUGDGUARUHZCEUBUKUJULUMUCUKUJOULUMA
+      BCMDEFGMHIJKLUDUEUFUI $.
   $}
 
 
