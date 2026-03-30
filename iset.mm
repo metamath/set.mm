@@ -198021,6 +198021,29 @@ $)
     ciedg dmss sseld syl imp ) ABDEZCARFZGZHZCBRFZGZHZUCAIFZBIFZJZUDUGJZAKFZUJL
     JZMZUFUINUKUGAUNBUDUJUJOUKOUDOUGOUNOPUPUEUHCUMULUEUHJUOUDUGSQTUAUB $.
 
+  ${
+    $d G j $.  $d I j s $.  $d V s $.  $d X j s $.  $d j ph $.
+    subgruhgredgd.v $e |- V = ( Vtx ` S ) $.
+    subgruhgredgd.i $e |- I = ( iEdg ` S ) $.
+    subgruhgredgd.g $e |- ( ph -> G e. UHGraph ) $.
+    subgruhgredgd.s $e |- ( ph -> S SubGraph G ) $.
+    subgruhgredgd.x $e |- ( ph -> X e. dom I ) $.
+    $( An edge of a subgraph of a hypergraph is an inhabited subset of its
+       vertices.  (Contributed by AV, 17-Nov-2020.)  (Revised by AV,
+       21-Nov-2020.) $)
+    subgruhgredgdm $p |- ( ph -> ( I ` X ) e. { s e. ~P V | E. j j e. s } ) $=
+      ( wcel wex cfv wss eqid cdm syl2anc cpw wceq eleq2 exbidv cedg cvtx ciedg
+      cv csubgr wbr w3a subgrprop2 syl simp3d crn wfun cuhgr subgruhgrfun dmeqi
+      eleqtrdi wa fveq1i fvelrn eqeltrid edgval eleqtrrdi sseldd uhgrfun funfnd
+      subgreldmiedg uhgrm syl3anc simp2d funssfv eqcomd eleq2d mpbird elrabd
+      wfn ) ACUHZHUHZNZCOVTGEPZNZCOZHWCFUAZWAWCUBWBWDCWAWCVTUCUDABUEPZWFWCAFDUF
+      PZQZEDUGPZQZWGWFQZABDUIUJZWIWKWLUKLWHWJBWGDEFIWHRJWJRZWGRULUMZUNAWCBUGPZU
+      OZWGAWPUPZGWPSZNZWCWQNADUQNZWMWRKLBDURTAGESZWSMEWPJUSUTZWRWTVAWCGWPPWQGEW
+      PJVBGWPVCVDTBVEVFVGAWEVTGWJPZNZCOZAXAWJWJSZVSGXGNZXFKAWJAXAWJUPZKWJDWNVHU
+      MZVIAWMWTXHLXCBDGVJTXGCWJGDWNVKVLAWDXECAWCXDVTAXIWKGXBNZWCXDUBXJAWIWKWLWO
+      VMMXIWKXKUKXDWCGWJEVNVOVLVPUDVQVR $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
