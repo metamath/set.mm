@@ -197869,6 +197869,29 @@ $)
   subgrv $p |- ( S SubGraph G -> ( S e. _V /\ G e. _V ) ) $=
     ( csubgr relsubgr brrelex12i ) ABCDE $.
 
+  ${
+    $d G s g $.  $d S s g $.
+    issubgr.v $e |- V = ( Vtx ` S ) $.
+    issubgr.a $e |- A = ( Vtx ` G ) $.
+    issubgr.i $e |- I = ( iEdg ` S ) $.
+    issubgr.b $e |- B = ( iEdg ` G ) $.
+    issubgr.e $e |- E = ( Edg ` S ) $.
+    $( The property of a set to be a subgraph of another set.  (Contributed by
+       AV, 16-Nov-2020.) $)
+    issubgr $p |- ( ( G e. W /\ S e. U ) -> ( S SubGraph G
+                       <-> ( V C_ A /\ I = ( B |` dom I ) /\ E C_ ~P V ) ) ) $=
+      ( cvtx cfv wss ciedg wceq fveq2 vs vg wcel wa csubgr wbr cdm cres cpw w3a
+      cedg wb cv adantr sseq12d dmeqd reseq12d eqeq12d pweqd 3anbi123d df-subgr
+      adantl brabga ancoms sseq12i dmeqi reseq12i eqeq12i 3anbi123i bitr4di
+      pweqi ) FIUCZCDUCZUDCFUEUFZCOPZFOPZQZCRPZFRPZVRUGZUHZSZCUKPZVOUIZQZUJZHAQ
+      ZGBGUGZUHZSZEHUIZQZUJVMVLVNWFULUAUMZOPZUBUMZOPZQZWMRPZWORPZWRUGZUHZSZWMUK
+      PZWNUIZQZUJWFUAUBCFUEDIWMCSZWOFSZUDZWQVQXBWBXEWEXHWNVOWPVPXFWNVOSXGWMCOTZ
+      UNXGWPVPSXFWOFOTVBUOXHWRVRXAWAXFWRVRSXGWMCRTZUNXHWSVSWTVTXGWSVSSXFWOFRTVB
+      XFWTVTSXGXFWRVRXJUPUNUQURXFXEWEULXGXFXCWCXDWDWMCUKTXFWNVOXIUSUOUNUTUBUAVA
+      VCVDWGVQWJWBWLWEHVOAVPJKVEGVRWIWALBVSWHVTMGVRLVFVGVHEWCWKWDNHVOJVKVEVIVJ
+      $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
