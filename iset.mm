@@ -198044,6 +198044,26 @@ $)
       VMMXIWKXKUKXDWCGWJEVNVOVLVPUDVQVR $.
   $}
 
+  ${
+    $d I e j s $.  $d V e s $.  $d X e j s $.  $d G j $.  $d S j $.
+    subumgredg2.v $e |- V = ( Vtx ` S ) $.
+    subumgredg2.i $e |- I = ( iEdg ` S ) $.
+    $( An edge of a subgraph of a multigraph connects exactly two different
+       vertices.  (Contributed by AV, 26-Nov-2020.) $)
+    subumgredg2en $p |- ( ( S SubGraph G /\ G e. UMGraph /\ X e. dom I )
+                      -> ( I ` X ) e. { e e. ~P V | e ~~ 2o } ) $=
+      ( vj vs wbr wcel cdm w3a cv c2o cen cfv wss eqid cumgr cpw breq1 wex crab
+      csubgr cuhgr umgruhgr 3ad2ant2 simp1 simp3 subgruhgredgdm elrabi syl wfun
+      ciedg wceq uhgrfun cvtx subgrprop2 simp2d 3ad2ant1 funssfv eqcomd syl3anc
+      cedg simp2 wi dmeqi eleq2i subgreldmiedg biimtrid 3imp umgredg2en syl2anc
+      ex a1d eqbrtrd elrabd ) ACUFKZCUALZFDMZLZNZBOZPQKFDRZPQKBWFEUBZWEWFPQUCWD
+      WFIOJOLIUDZJWGUELWFWGLWDAICDEFJGHWAVTCUGLZWCCUHZUIVTWAWCUJVTWAWCUKZULWHJW
+      FWGUMUNWDWFFCUPRZRZPQWDWLUOZDWLSZWCWFWMUQWAVTWNWCWAWIWNWJWLCWLTZURUNUIVTW
+      AWOWCVTAUSRZCUSRZSWOAVFRZWQUBSWRWLAWSCDWQWQTWRTZHWPWSTUTVAVBWKWNWOWCNWMWF
+      FWLDVCVDVEWDWAFWLMLZWMPQKVTWAWCVGVTWAWCXAVTWCXAVHWAWCFAUPRZMZLZVTXAWBXCFD
+      XBHVIVJVTXDXAACFVKVPVLVQVMWLCWRFWTWPVNVOVRVS $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
