@@ -198004,6 +198004,14 @@ $)
     wi eqid syl impcom ) ABCDZBEFZGZAEFZGZTAHFZBHFZIZUCUAIZAJFZUEKIZLUBUDPZUFUA
     AUIBUCUEUEQUFQUCQUAQUIQMUHUGUKUJUCUANORS $.
 
+  $( The edge function of a subgraph of a hypergraph is a function.
+     (Contributed by AV, 16-Nov-2020.)  (Proof shortened by AV,
+     20-Nov-2020.) $)
+  subgruhgrfun $p |- ( ( G e. UHGraph /\ S SubGraph G )
+                       -> Fun ( iEdg ` S ) ) $=
+    ( cuhgr wcel ciedg cfv wfun csubgr wbr eqid uhgrfun subgrfun sylan ) BCDBEF
+    ZGABHIAEFGNBNJKABLM $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
