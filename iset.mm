@@ -200821,7 +200821,7 @@ $)
       VCAWAVOVKAVTVNVLGAVSVMOVEVFVGVHVI $.
   $}
 
-  $( Lemma for ~ eupth2 .  (Contributed by Mario Carneiro, 8-Apr-2015.) $)
+  $( Lemma for eupth2 .  (Contributed by Mario Carneiro, 8-Apr-2015.) $)
   eupth2lem1 $p |- ( U e. V -> ( U e. if ( A = B , (/) , { A , B } ) <->
       ( A =/= B /\ ( U = A \/ U = B ) ) ) ) $=
     ( wceq c0 cpr cif wcel wn wa wne wo elif wb noel intnan biorf ax-mp bitr4i
@@ -200834,7 +200834,7 @@ $)
     eupth2lem2dc.dc $e |- ( ph -> DECID A = B ) $.
     eupth2lem2dc.bc $e |- ( ph -> B =/= C ) $.
     eupth2lem2dc.bu $e |- ( ph -> B = U ) $.
-    $( Lemma for ~ eupth2 .  (Contributed by Mario Carneiro, 8-Apr-2015.) $)
+    $( Lemma for eupth2 .  (Contributed by Mario Carneiro, 8-Apr-2015.) $)
     eupth2lem2dc $p |- ( ph ->
      ( -. U e. if ( A = B , (/) , { A , B } ) <->
           U e. if ( A = C , (/) , { A , C } ) ) ) $=
@@ -200855,7 +200855,7 @@ $)
     trlsegvdeg.n $e |- ( ph -> N e. ( 0 ..^ ( # ` F ) ) ) $.
     trlsegvdeg.u $e |- ( ph -> U e. V ) $.
     trlsegvdeg.w $e |- ( ph -> F ( Trails ` G ) P ) $.
-    $( Lemma for ~ trlsegvdeg .  (Contributed by AV, 20-Feb-2021.) $)
+    $( Lemma for trlsegvdeg .  (Contributed by AV, 20-Feb-2021.) $)
     trlsegvdeglem1 $p |- ( ph -> ( ( P ` N ) e. V
                                 /\ ( P ` ( N + 1 ) ) e. V ) ) $=
       ( cc0 cfv co wcel wa wbr chash cfzo c1 caddc ctrls cwlks trliswlk wlkpvtx
@@ -200872,12 +200872,12 @@ $)
                                 = { <. ( F ` N ) , ( I ` ( F ` N ) ) >. } ) $.
     trlsegvdeg.iz $e |- ( ph -> ( iEdg ` Z )
                                 = ( I |` ( F " ( 0 ... N ) ) ) ) $.
-    $( Lemma for ~ trlsegvdeg .  (Contributed by AV, 20-Feb-2021.) $)
+    $( Lemma for trlsegvdeg .  (Contributed by AV, 20-Feb-2021.) $)
     trlsegvdeglem2 $p |- ( ph -> Fun ( iEdg ` X ) ) $=
       ( ciedg cfv wfun cc0 cfzo co cima cres funresd funeqd mpbird ) AIUDUEZUFF
       DUGGUHUIUJZUKZUFAUPFNULAUOUQUAUMUN $.
 
-    $( Lemma for ~ trlsegvdeg .  (Contributed by AV, 20-Feb-2021.) $)
+    $( Lemma for trlsegvdeg .  (Contributed by AV, 20-Feb-2021.) $)
     trlsegvdeglem3 $p |- ( ph -> Fun ( iEdg ` Y ) ) $=
       ( ciedg cfv wfun cop csn cvv wcel cc0 chash co ctrls wbr w3a trlsv simp2d
       cfzo syl fvexg syl2anc simp1d iedgex eqeltrid funsng funeqd mpbird ) AJUD
@@ -200885,13 +200885,13 @@ $)
       PBUIUJZADBEUNUEUOVRVPVSUPQBDEUQUTZUROGDUIVQVAVBZAFUIUJVNVOAFEUDUEZUIMAVRW
       BUIUJAVRVPVSVTVCEUIVDUTVEWAVJFUIUIVAVBVJVKUIUIVFVBAVIVLUBVGVH $.
 
-    $( Lemma for ~ trlsegvdeg .  (Contributed by AV, 21-Feb-2021.) $)
+    $( Lemma for trlsegvdeg .  (Contributed by AV, 21-Feb-2021.) $)
     trlsegvdeglem4 $p |- ( ph -> dom ( iEdg ` X ) = ( ( F " ( 0 ..^ N ) )
                                                        i^i dom I ) ) $=
       ( ciedg cfv cdm cc0 cfzo co cima cres cin dmeqd dmres eqtrdi ) AIUDUEZUFF
       DUGGUHUIUJZUKZUFUQFUFULAUPURUAUMFUQUNUO $.
 
-    $( Lemma for ~ trlsegvdeg .  (Contributed by AV, 21-Feb-2021.) $)
+    $( Lemma for trlsegvdeg .  (Contributed by AV, 21-Feb-2021.) $)
     trlsegvdeglem5 $p |- ( ph -> dom ( iEdg ` Y ) = { ( F ` N ) } ) $=
       ( ciedg cfv cdm cop csn dmeqd cvv wcel wceq ctrls wbr trlsv simp1d iedgex
       w3a syl eqeltrid cc0 chash cfzo co simp2d fvexg syl2anc dmsnopg eqtrd ) A
@@ -200899,7 +200899,7 @@ $)
       UDUEZUJMAEUJUKZVRUJUKAVSDUJUKZBUJUKZADBEUMUEUNVSVTWAURQBDEUOUSZUPEUJUQUSU
       TAVTGVADVBUEVCVDZUKVQAVSVTWAWBVEOGDUJWCVFVGVKFUJUJVFVGVKVLUJVHUSVI $.
 
-    $( Lemma for ~ trlsegvdeg .  (Contributed by AV, 21-Feb-2021.) $)
+    $( Lemma for trlsegvdeg .  (Contributed by AV, 21-Feb-2021.) $)
     trlsegvdeglem6 $p |- ( ph -> dom ( iEdg ` X ) e. Fin ) $=
       ( ciedg cfv cdm cc0 cfzo co cima cfn cin trlsegvdeglem4 wss wceq chash wf
       wf1 ctrls wbr trlf1 syl f1f fimassd dfss2 sylib eqtrd cuz cz cle elfzoelz
@@ -200910,7 +200910,7 @@ $)
       IVIVLZGWIVJUTZWOAGWJVLZWPOGUGWIVKVBZAWSWQOGUGWIVMVBAWSWROGWIVNVBGWIWBVOGU
       GWIVPVBAUGVIVLWPWNVQWTUGGVRVSWJWGDWEVTWAWC $.
 
-    $( Lemma for ~ trlsegvdeg .  (Contributed by AV, 21-Feb-2021.) $)
+    $( Lemma for trlsegvdeg .  (Contributed by AV, 21-Feb-2021.) $)
     trlsegvdeglem7 $p |- ( ph -> dom ( iEdg ` Y ) e. Fin ) $=
       ( ciedg cfv cdm csn cfn trlsegvdeglem5 wcel cc0 chash co ctrls wbr wf1 wf
       cfzo trlf1 f1f 3syl ffvelcdmd snfig syl eqeltrd ) AJUDUEUFGDUEZUGZUHABCDE
