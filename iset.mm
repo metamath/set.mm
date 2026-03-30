@@ -197890,6 +197890,16 @@ $)
       XFWTVTSXGXFWRVRXJUPUNUQURXFXEWEULXGXFXCWCXDWDWMCUKTXFWNVOXIUSUOUNUTUBUAVA
       VCVDWGVQWJWBWLWEHVOAVPJKVEGVRWIWALBVSWHVTMGVRLVFVGVHEWCWKWDNHVOJVKVEVIVJ
       $.
+
+    $( The property of a set to be a subgraph of a set whose edge function is
+       actually a function.  (Contributed by AV, 20-Nov-2020.) $)
+    issubgr2 $p |- ( ( G e. W /\ Fun B /\ S e. U ) -> ( S SubGraph G
+                       <-> ( V C_ A /\ I C_ B /\ E C_ ~P V ) ) ) $=
+      ( wcel wfun w3a csubgr wbr wss cdm cres wceq cpw wb issubgr 3adant2 resss
+      sseq1 mpbiri wi wa funssres eqcomd ex 3ad2ant2 impbid2 3anbi2d bitrd ) FI
+      OZBPZCDOZQZCFRSZHATZGBGUAZUBZUCZEHUDTZQZVEGBTZVIQUTVBVDVJUEVAABCDEFGHIJKL
+      MNUFUGVCVHVKVEVIVCVHVKVHVKVGBTBVFUHGVGBUIUJVAUTVKVHUKVBVAVKVHVAVKULVGGBGU
+      MUNUOUPUQURUS $.
   $}
 
 
