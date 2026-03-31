@@ -4676,6 +4676,14 @@ $)
   simpll $p |- ( ( ( ph /\ ps ) /\ ch ) -> ph ) $=
     ( id ad2antrr ) AABCADE $.
 
+  ${
+    simplld.1 $e |- ( ph -> ( ( ps /\ ch ) /\ th ) ) $.
+    $( Deduction form of ~ simpll , eliminating a double conjunct.
+       (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
+    simplld $p |- ( ph -> ps ) $=
+      ( wa simpld ) ABCABCFDEGG $.
+  $}
+
   $( Simplification of a conjunction.  (Contributed by NM, 20-Mar-2007.) $)
   simplr $p |- ( ( ( ph /\ ps ) /\ ch ) -> ps ) $=
     ( id ad2antlr ) BBACBDE $.
