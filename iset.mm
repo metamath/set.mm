@@ -198064,6 +198064,22 @@ $)
       XBHVIVJVTXDXAACFVKVPVLVQVMWLCWRFWTWPVNVOVRVS $.
   $}
 
+  ${
+    $d G x j $.  $d S x s j $.
+    $( A subgraph of a hypergraph is a hypergraph.  (Contributed by AV,
+       16-Nov-2020.)  (Proof shortened by AV, 21-Nov-2020.) $)
+    subuhgr $p |- ( ( G e. UHGraph /\ S SubGraph G ) -> S e. UHGraph ) $=
+      ( vj vs vx cuhgr wcel csubgr wbr cvtx cfv wss ciedg cedg cpw eqid cvv syl
+      wa cv w3a subgrprop2 cdm wex crab wfn crn wfun subgruhgrfun ancoms adantl
+      wi wf funfnd wral simplrr simplrl simpr subgruhgredgdm ralrimiva fnfvrnss
+      syl2anc df-f sylanbrc wb subgrv simpld isuhgrm ad2antrl mpbird ex anabsi8
+      ) BFGZABHIZAFGZVNAJKZBJKZLAMKZBMKZLANKZVPOZLUAZVNVMSZVOULVQVSAVTBVRVPVPPZ
+      VQPVRPZVSPVTPUBWBWCVOWBWCSZVOVRUCZCTDTGCUDDWAUEZVRUMZWFVRWGUFZVRUGWHLZWIW
+      FVRWCVRUHZWBVMVNWLABUIUJUKUNZWFWJETZVRKWHGZEWGUOWKWMWFWOEWGWFWNWGGZSACBVR
+      VPWNDWDWEWBVNVMWPUPWBVNVMWPUQWFWPURUSUTEWGWHVRVAVBWGWHVRVCVDVNVOWIVEZWBVM
+      VNAQGZWQVNWRBQGABVFVGQCVRAVPDWDWEVHRVIVJVKRVL $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
