@@ -198255,6 +198255,19 @@ $)
       ) AENOZCEPQCNOMABCDEFGHIJKLAUDEROMESTUACEUBUC $.
   $}
 
+  ${
+    uhgrspanop.v $e |- V = ( Vtx ` G ) $.
+    uhgrspanop.e $e |- E = ( iEdg ` G ) $.
+    $( A spanning subgraph of a hypergraph represented by an ordered pair is a
+       hypergraph.  (Contributed by Alexander van der Vekens, 27-Dec-2017.)
+       (Revised by AV, 11-Oct-2020.) $)
+    uhgrspanop $p |- ( G e. UHGraph -> <. V , ( E |` A ) >. e. UHGraph ) $=
+      ( cuhgr wcel cres cop cvv cvtx vtxex eqeltrid ciedg iedgex resexg syl2anc
+      cfv wceq syl opexg opvtxfv opiedgfv id uhgrspan ) CGHZADBAIZJZBCDKEFUGDKH
+      ZUHKHZUIKHUGDCLSKECGMNZUGBKHUKUGBCOSKFCGPNBAKQUAZDUHKKUBRUGUJUKUILSDTULUM
+      UHDKKUCRUGUJUKUIOSUHTULUMUHDKKUDRUGUEUF $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
