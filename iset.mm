@@ -198133,6 +198133,20 @@ $)
       UCYTUUHQPUUQWGVBWHWIWJFYCYKXJWKWLYCYKXJWOWMYKYHVAYLYIWNCDXGEWPYKYHYCXJWQW
       RWSXEXFYIWNZXPXDXEAWTGZBWTGZKUURABXAUUSUURUUTCWTXJAXGXRXTXBVIVPVMWHWDVPXC
       $.
+
+    $( A subgraph of a multigraph is a multigraph.  (Contributed by AV,
+       26-Nov-2020.) $)
+    subumgr $p |- ( ( G e. UMGraph /\ S SubGraph G ) -> S e. UMGraph ) $=
+      ( ve vx cumgr wcel csubgr wbr cvtx cfv wss ciedg cedg cpw w3a wa eqid cvv
+      cv syl wi subgrprop2 cdm c2o cen crab wfn crn cuhgr umgruhgr subgruhgrfun
+      wf sylan ancoms funfnd adantl simplrl simplrr simpr subumgredg2en syl3anc
+      wfun wral ralrimiva fnfvrnss syl2anc df-f sylanbrc subgrv simpld isumgren
+      wb ad2antrl mpbird ex anabsi8 ) BEFZABGHZAEFZVRAIJZBIJZKALJZBLJZKAMJZVTNZ
+      KOZVRVQPZVSUAWAWCAWDBWBVTVTQZWAQWBQZWCQWDQUBWFWGVSWFWGPZVSWBUCZCSUDUEHCWE
+      UFZWBULZWJWBWKUGZWBUHWLKZWMWGWNWFWGWBVQVRWBVBZVQBUIFVRWPBUJABUKUMUNUOUPZW
+      JWNDSZWBJWLFZDWKVCWOWQWJWSDWKWJWRWKFZPVRVQWTWSWFVRVQWTUQWFVRVQWTURWJWTUSA
+      CBWBVTWRWHWIUTVAVDDWKWLWBVEVFWKWLWBVGVHVRVSWMVLZWFVQVRARFZXAVRXBBRFABVIVJ
+      CRWBAVTWHWIVKTVMVNVOTVP $.
   $}
 
 
