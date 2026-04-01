@@ -198202,6 +198202,22 @@ $)
         OVPXKXRXLFUDZPZXSAXRYBSXJAWOYAXLAWNFKVQVGVAAYBXSSZXJAXLTPZYCADTPXATPYDA
         DEUFOZTIAXIYETPMEUMVRUTVSNVTXADTTWAWCXLFTWBUTVAWDURWEWPXBWOWFWGWHWIWJWK
         $.
+
+      $( A spanning subgraph ` S ` of a hypergraph ` G ` is actually a subgraph
+         of ` G ` .  A subgraph ` S ` of a graph ` G ` which has the same
+         vertices as ` G ` and is obtained by removing some edges of ` G ` is
+         called a _spanning subgraph_ (see section I.1 in [Bollobas] p. 2 and
+         section 1.1 in [Diestel] p. 4).  Formally, the edges are "removed" by
+         restricting the edge function of the original graph by an arbitrary
+         class (which actually needs not to be a subset of the domain of the
+         edge function).  (Contributed by AV, 18-Nov-2020.)  (Proof shortened
+         by AV, 21-Nov-2020.) $)
+      uhgrspansubgr $p |- ( ph -> S SubGraph G ) $=
+        ( csubgr wbr cfv wss cuhgr wcel eqid cvtx ciedg cedg ssid sseqtrid cres
+        cpw resss eqsstrdi uhgrspansubgrlem w3a wb uhgrfun syl issubgr2 syl3anc
+        wfun mpbir3and ) ACENOZCUAPZFQZCUBPZDQZCUCPZUTUGQZAUTUTFUTUDKUEAVBDBUFD
+        LDBUHUIABCDEFGHIJKLMUJAERSZDUQZCGSUSVAVCVEUKULMAVFVGMDEIUMUNJFDCGVDEVBU
+        TRUTTHVBTIVDTUOUPUR $.
     $}
   $}
 
