@@ -198175,6 +198175,36 @@ $)
       ABWEWFCRWQAWNXEXGWGQVDPWHWIQWJ $.
   $}
 
+  ${
+    uhgrspan.v $e |- V = ( Vtx ` G ) $.
+    uhgrspan.e $e |- E = ( iEdg ` G ) $.
+    uhgrspan.s $e |- ( ph -> S e. W ) $.
+    uhgrspan.q $e |- ( ph -> ( Vtx ` S ) = V ) $.
+    uhgrspan.r $e |- ( ph -> ( iEdg ` S ) = ( E |` A ) ) $.
+    ${
+      $d S e i $.  $d ph e i $.
+      uhgrspan.g $e |- ( ph -> G e. UHGraph ) $.
+      $( Lemma for ~ uhgrspansubgr :  The edges of the graph ` S ` obtained by
+         removing some edges of a hypergraph ` G ` are subsets of its vertices
+         (a spanning subgraph, see comment for ~ uhgrspansubgr .  (Contributed
+         by AV, 18-Nov-2020.) $)
+      uhgrspansubgrlem $p |- ( ph -> ( Edg ` S ) C_ ~P ( Vtx ` S ) ) $=
+        ( vi cfv wcel cdm wfun wb cvv ve cedg cvtx cpw cv ciedg crn edgval wceq
+        eleq2i wrex cres cuhgr uhgrfun funres 3syl funeqd mpbird elrnrexdmb syl
+        adantr fveq1d cin dmeqd dmres eqtrdi eleq2d elinel1 biimtrdi imp fvresd
+        eqtrd wss elinel2 uhgrss syl2an2r pweqd iedgex eqeltrid vex fvexg elpwg
+        sylancl bitrd eqeltrd eleq1 syl5ibrcom rexlimdva sylbid biimtrid ssrdv
+        wa ) AUACUBOZCUCOZUDZUAUEZWMPWPCUFOZUGZPZAWPWOPZWMWRWPCUHUJAWSWPNUEZWQO
+        ZUIZNWQQZUKZWTAWQRZWSXESAXFDBULZRZAEUMPZDRXHMDEIUNBDUOUPAWQXGLUQURNWQWP
+        USUTAXCWTNXDAXAXDPZWLZWTXCXBWOPXKXBXADOZWOXKXBXAXGOXLXKXAWQXGAWQXGUIXJL
+        VAVBXKXABDAXJXABPZAXJXABDQZVCZPZXMAXDXOXAAXDXGQXOAWQXGLVDDBVEVFVGZXABXN
+        VHVIVJVKVLXKXLWOPZXLFVMZAXIXJXAXNPZXSMAXJXTAXJXPXTXQXABXNVNVIVJDXAEFHIV
+        OVPXKXRXLFUDZPZXSAXRYBSXJAWOYAXLAWNFKVQVGVAAYBXSSZXJAXLTPZYCADTPXATPYDA
+        DEUFOZTIAXIYETPMEUMVRUTVSNVTXADTTWAWCXLFTWBUTVAWDURWEWPXBWOWFWGWHWIWJWK
+        $.
+    $}
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
