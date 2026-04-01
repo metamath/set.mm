@@ -198266,6 +198266,16 @@ $)
       cfv wceq syl opexg opvtxfv opiedgfv id uhgrspan ) CGHZADBAIZJZBCDKEFUGDKH
       ZUHKHZUIKHUGDCLSKECGMNZUGBKHUKUGBCOSKFCGPNBAKQUAZDUHKKUBRUGUJUKUILSDTULUM
       UHDKKUCRUGUJUKUIOSUHTULUMUHDKKUDRUGUEUF $.
+
+    $d A g $.  $d E g $.  $d G g $.  $d V g $.
+    $( A spanning subgraph of a pseudograph represented by an ordered pair is a
+       pseudograph.  (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by
+       AV, 13-Oct-2020.) $)
+    upgrspanop $p |- ( G e. UPGraph -> <. V , ( E |` A ) >. e. UPGraph ) $=
+      ( vg cupgr wcel cvv cres cv cvtx cfv wceq ciedg wa wi vex eqeltrid simprl
+      a1i simprr simpl upgrspan ex alrimiv vtxex iedgex resexg syl gropeld ) CH
+      IZHJGBAKZDJUMGLZMNDOZUOPNUNOZQZUOHIZRGUMURUSUMURQZAUOBCDJEFUOJIUTGSUBUMUP
+      UQUAUMUPUQUCUMURUDUEUFUGUMDCMNJECHUHTUMBJIUNJIUMBCPNJFCHUITBAJUJUKUL $.
   $}
 
 
