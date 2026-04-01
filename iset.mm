@@ -198245,6 +198245,14 @@ $)
         ( cumgr wcel csubgr wbr cuhgr umgruhgr syl uhgrspansubgr subumgr
         syl2anc ) AENOZCEPQCNOMABCDEFGHIJKLAUDEROMESTUACEUBUC $.
     $}
+
+    usgrspan.g $e |- ( ph -> G e. USGraph ) $.
+    $( A spanning subgraph ` S ` of a simple graph ` G ` is a simple graph.
+       (Contributed by AV, 15-Oct-2020.)  (Revised by AV, 16-Oct-2020.)  (Proof
+       shortened by AV, 18-Nov-2020.) $)
+    usgrspan $p |- ( ph -> S e. USGraph ) $=
+      ( cusgr wcel csubgr wbr cuhgr usgruhgr syl uhgrspansubgr subusgr syl2anc
+      ) AENOZCEPQCNOMABCDEFGHIJKLAUDEROMESTUACEUBUC $.
   $}
 
 
