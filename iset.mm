@@ -198284,6 +198284,15 @@ $)
       a1i simprr simpl umgrspan ex alrimiv vtxex iedgex resexg syl gropeld ) CH
       IZHJGBAKZDJUMGLZMNDOZUOPNUNOZQZUOHIZRGUMURUSUMURQZAUOBCDJEFUOJIUTGSUBUMUP
       UQUAUMUPUQUCUMURUDUEUFUGUMDCMNJECHUHTUMBJIUNJIUMBCPNJFCHUITBAJUJUKUL $.
+
+    $( A spanning subgraph of a simple graph represented by an ordered pair is
+       a simple graph.  (Contributed by Alexander van der Vekens, 10-Aug-2017.)
+       (Revised by AV, 16-Oct-2020.) $)
+    usgrspanop $p |- ( G e. USGraph -> <. V , ( E |` A ) >. e. USGraph ) $=
+      ( vg cusgr wcel cvv cres cv cvtx cfv wceq ciedg wa wi vex eqeltrid simprl
+      a1i simprr simpl usgrspan ex alrimiv vtxex iedgex resexg syl gropeld ) CH
+      IZHJGBAKZDJUMGLZMNDOZUOPNUNOZQZUOHIZRGUMURUSUMURQZAUOBCDJEFUOJIUTGSUBUMUP
+      UQUAUMUPUQUCUMURUDUEUFUGUMDCMNJECHUHTUMBJIUNJIUMBCPNJFCHUITBAJUJUKUL $.
   $}
 
 
