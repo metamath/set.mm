@@ -198218,6 +198218,13 @@ $)
         wfun mpbir3and ) ACENOZCUAPZFQZCUBPZDQZCUCPZUTUGQZAUTUTFUTUDKUEAVBDBUFD
         LDBUHUIABCDEFGHIJKLMUJAERSZDUQZCGSUSVAVCVEUKULMAVFVGMDEIUMUNJFDCGVDEVBU
         TRUTTHVBTIVDTUOUPUR $.
+
+      $( A spanning subgraph ` S ` of a hypergraph ` G ` is a hypergraph.
+         (Contributed by AV, 11-Oct-2020.)  (Proof shortened by AV,
+         18-Nov-2020.) $)
+      uhgrspan $p |- ( ph -> S e. UHGraph ) $=
+        ( cuhgr wcel csubgr wbr uhgrspansubgr subuhgr syl2anc ) AENOCEPQCNOMABC
+        DEFGHIJKLMRCEST $.
     $}
   $}
 
