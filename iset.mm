@@ -198236,6 +198236,15 @@ $)
         ( cupgr wcel csubgr wbr cuhgr upgruhgr syl uhgrspansubgr subupgr
         syl2anc ) AENOZCEPQCNOMABCDEFGHIJKLAUDEROMESTUACEUBUC $.
     $}
+
+    ${
+      umgrspan.g $e |- ( ph -> G e. UMGraph ) $.
+      $( A spanning subgraph ` S ` of a multigraph ` G ` is a multigraph.
+         (Contributed by AV, 27-Nov-2020.) $)
+      umgrspan $p |- ( ph -> S e. UMGraph ) $=
+        ( cumgr wcel csubgr wbr cuhgr umgruhgr syl uhgrspansubgr subumgr
+        syl2anc ) AENOZCEPQCNOMABCDEFGHIJKLAUDEROMESTUACEUBUC $.
+    $}
   $}
 
 
