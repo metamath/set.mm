@@ -198276,6 +198276,14 @@ $)
       a1i simprr simpl upgrspan ex alrimiv vtxex iedgex resexg syl gropeld ) CH
       IZHJGBAKZDJUMGLZMNDOZUOPNUNOZQZUOHIZRGUMURUSUMURQZAUOBCDJEFUOJIUTGSUBUMUP
       UQUAUMUPUQUCUMURUDUEUFUGUMDCMNJECHUHTUMBJIUNJIUMBCPNJFCHUITBAJUJUKUL $.
+
+    $( A spanning subgraph of a multigraph represented by an ordered pair is a
+       multigraph.  (Contributed by AV, 27-Nov-2020.) $)
+    umgrspanop $p |- ( G e. UMGraph -> <. V , ( E |` A ) >. e. UMGraph ) $=
+      ( vg cumgr wcel cvv cres cv cvtx cfv wceq ciedg wa wi vex eqeltrid simprl
+      a1i simprr simpl umgrspan ex alrimiv vtxex iedgex resexg syl gropeld ) CH
+      IZHJGBAKZDJUMGLZMNDOZUOPNUNOZQZUOHIZRGUMURUSUMURQZAUOBCDJEFUOJIUTGSUBUMUP
+      UQUAUMUPUQUCUMURUDUEUFUGUMDCMNJECHUHTUMBJIUNJIUMBCPNJFCHUITBAJUJUKUL $.
   $}
 
 
