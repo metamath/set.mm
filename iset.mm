@@ -50574,6 +50574,13 @@ $)
     ccnv coeq1 sylan9req ) BDZABEZCFABGZHZTBPZEZCUCESABUCEZEZAIUAHZEUDUBSUEUGAB
     JKUDUFABUCLMAUANOTCUCQR $.
 
+  $( A subset of an injective function is injective.  (Contributed by AV,
+     20-Nov-2020.) $)
+  f1ssf1 $p |- ( ( Fun F /\ Fun `' F /\ G C_ F ) -> Fun `' G ) $=
+    ( wfun ccnv wss wi cdm cres funssres funres11 cnveq funeqd imbitrrid eqcoms
+    wa wceq syl ex com23 3imp ) ACZADCZBAEZBDZCZUAUCUBUEUAUCUBUEFZUAUCOABGZHZBP
+    UFABIUFBUHUBUEBUHPZUHDZCUGAJUIUDUJBUHKLMNQRST $.
+
   ${
     $d x F $.  $d x A $.  $d x B $.
     f11o.1 $e |- F e. _V $.
