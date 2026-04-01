@@ -198226,6 +198226,16 @@ $)
         ( cuhgr wcel csubgr wbr uhgrspansubgr subuhgr syl2anc ) AENOCEPQCNOMABC
         DEFGHIJKLMRCEST $.
     $}
+
+    ${
+      upgrspan.g $e |- ( ph -> G e. UPGraph ) $.
+      $( A spanning subgraph ` S ` of a pseudograph ` G ` is a pseudograph.
+         (Contributed by AV, 11-Oct-2020.)  (Proof shortened by AV,
+         18-Nov-2020.) $)
+      upgrspan $p |- ( ph -> S e. UPGraph ) $=
+        ( cupgr wcel csubgr wbr cuhgr upgruhgr syl uhgrspansubgr subupgr
+        syl2anc ) AENOZCEPQCNOMABCDEFGHIJKLAUDEROMESTUACEUBUC $.
+    $}
   $}
 
 
