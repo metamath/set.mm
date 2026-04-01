@@ -74028,6 +74028,20 @@ $)
     ( cpr c2o cen wbr cvv wcel pr2cv1 pr2cv2 jca ) ABCDEFAGHBGHABIABJK $.
 
   ${
+    $d V s $.  $d j s x $.
+    $( The set of subsets of a given set with one or two elements can be
+       expressed as elements of the power set or as inhabited elements of the
+       power set.  (Contributed by Jim Kingdon, 31-Mar-2026.) $)
+    sspw1or2 $p |-
+        { x e. { s e. ~P V | E. j j e. s } | ( x ~~ 1o \/ x ~~ 2o ) }
+        = { x e. ~P V | ( x ~~ 1o \/ x ~~ 2o ) } $=
+      ( cv c1o cen wbr c2o wo wel wex cpw crab wcel wa weq elequ2 exbidv elrab
+      anbi1i en1m en2m jaoi biantrud pm5.32ri bitr4i rabbia2 ) AEZFGHZUIIGHZJZU
+      LABDKZBLZDCMZNZUOUIUPOZULPUIUOOZBAKZBLZPZULPURULPUQVAULUNUTDUIUODAQUMUSBD
+      ABRSTUAULURVAULUTURUJUTUKBUIUBBUIUCUDUEUFUGUH $.
+  $}
+
+  ${
     $d A r s $.  $d A z $.  $d ph x $.  $d s x $.
     exmidonfinlem.a $e |- A
       = { { x e. { (/) } | ph } , { x e. { (/) } | -. ph } } $.
