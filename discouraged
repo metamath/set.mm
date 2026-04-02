@@ -14603,6 +14603,7 @@ New usage of "axmulrcl" is discouraged (0 uses).
 New usage of "axnul" is discouraged (0 uses).
 New usage of "axnulALT" is discouraged (0 uses).
 New usage of "axnulALT2" is discouraged (0 uses).
+New usage of "axnulALT3" is discouraged (0 uses).
 New usage of "axnulg" is discouraged (0 uses).
 New usage of "axpjcl" is discouraged (7 uses).
 New usage of "axpjpj" is discouraged (8 uses).
@@ -14612,6 +14613,7 @@ New usage of "axpowndlem3" is discouraged (1 uses).
 New usage of "axpowndlem4" is discouraged (1 uses).
 New usage of "axpr" is discouraged (0 uses).
 New usage of "axprALT" is discouraged (0 uses).
+New usage of "axprALT2" is discouraged (0 uses).
 New usage of "axprOLD" is discouraged (0 uses).
 New usage of "axpre-ltadd" is discouraged (0 uses).
 New usage of "axpre-lttri" is discouraged (0 uses).
@@ -19383,8 +19385,10 @@ Proof modification of "axc711toc7" is discouraged (37 steps).
 Proof modification of "axfrege8" is discouraged (31 steps).
 Proof modification of "axnul" is discouraged (36 steps).
 Proof modification of "axnulALT" is discouraged (95 steps).
-Proof modification of "axnulALT2" is discouraged (57 steps).
+Proof modification of "axnulALT2" is discouraged (77 steps).
+Proof modification of "axnulALT3" is discouraged (57 steps).
 Proof modification of "axprALT" is discouraged (67 steps).
+Proof modification of "axprALT2" is discouraged (473 steps).
 Proof modification of "axprOLD" is discouraged (122 steps).
 Proof modification of "axprlem3OLD" is discouraged (152 steps).
 Proof modification of "axprlem4OLD" is discouraged (149 steps).
