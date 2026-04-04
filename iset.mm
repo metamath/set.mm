@@ -128442,6 +128442,18 @@ $)
   $}
 
   ${
+    $d A f $.
+    $( A finite set can be enumerated by integers starting at one.
+       (Contributed by Jim Kingdon, 4-Apr-2026.) $)
+    fzf1o $p |- ( A e. Fin -> E. f f : ( 1 ... ( # ` A ) ) -1-1-onto-> A ) $=
+      ( cfn wcel c0 wceq c1 chash cfv cfz co cv wf1o wex cn wa eqidd cc0 eqtrdi
+      f1o0 simpr fveq2d hash0 oveq2d fz10 f1oeq123d mpbiri 0ex f1oeq1 spcev syl
+      simprr fz1f1o mpjaodan ) ACDZAEFZGAHIZJKZABLZMZBNZUQODZVAPUOUPPZURAEMZVAV
+      CVDEEEMTVCUREAEEEVCEQVCURGRJKEVCUQRGJVCUQEHIRVCAEHUOUPUAZUBUCSUDUESVEUFUG
+      UTVDBEUHURAUSEUIUJUKUOVBVAULABUMUN $.
+  $}
+
+  ${
     nnf1o.mn $e |- ( ph -> ( M e. NN /\ N e. NN ) ) $.
     nnf1o.m $e |- ( ph -> F : ( 1 ... M ) -1-1-onto-> A ) $.
     nnf1o.n $e |- ( ph -> G : ( 1 ... N ) -1-1-onto-> A ) $.
