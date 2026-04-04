@@ -4676,9 +4676,25 @@ $)
   simpll $p |- ( ( ( ph /\ ps ) /\ ch ) -> ph ) $=
     ( id ad2antrr ) AABCADE $.
 
+  ${
+    simplld.1 $e |- ( ph -> ( ( ps /\ ch ) /\ th ) ) $.
+    $( Deduction form of ~ simpll , eliminating a double conjunct.
+       (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
+    simplld $p |- ( ph -> ps ) $=
+      ( wa simpld ) ABCABCFDEGG $.
+  $}
+
   $( Simplification of a conjunction.  (Contributed by NM, 20-Mar-2007.) $)
   simplr $p |- ( ( ( ph /\ ps ) /\ ch ) -> ps ) $=
     ( id ad2antlr ) BBACBDE $.
+
+  ${
+    simplrd.1 $e |- ( ph -> ( ( ps /\ ch ) /\ th ) ) $.
+    $( Deduction eliminating a double conjunct.  (Contributed by Glauco
+       Siliprandi, 11-Dec-2019.) $)
+    simplrd $p |- ( ph -> ch ) $=
+      ( wa simpld simprd ) ABCABCFDEGH $.
+  $}
 
   $( Simplification of a conjunction.  (Contributed by NM, 21-Mar-2007.) $)
   simprl $p |- ( ( ph /\ ( ps /\ ch ) ) -> ps ) $=
@@ -50566,6 +50582,13 @@ $)
     ccnv coeq1 sylan9req ) BDZABEZCFABGZHZTBPZEZCUCESABUCEZEZAIUAHZEUDUBSUEUGAB
     JKUDUFABUCLMAUANOTCUCQR $.
 
+  $( A subset of an injective function is injective.  (Contributed by AV,
+     20-Nov-2020.) $)
+  f1ssf1 $p |- ( ( Fun F /\ Fun `' F /\ G C_ F ) -> Fun `' G ) $=
+    ( wfun ccnv wss wi cdm cres funssres funres11 cnveq funeqd imbitrrid eqcoms
+    wa wceq syl ex com23 3imp ) ACZADCZBAEZBDZCZUAUCUBUEUAUCUBUEFZUAUCOABGZHZBP
+    UFABIUFBUHUBUEBUHPZUHDZCUGAJUIUDUJBUHKLMNQRST $.
+
   ${
     $d x F $.  $d x A $.  $d x B $.
     f11o.1 $e |- F e. _V $.
@@ -74025,6 +74048,20 @@ $)
      sets.  (Contributed by RP, 8-Oct-2023.) $)
   pr2cv $p |- ( { A , B } ~~ 2o -> ( A e. _V /\ B e. _V ) ) $=
     ( cpr c2o cen wbr cvv wcel pr2cv1 pr2cv2 jca ) ABCDEFAGHBGHABIABJK $.
+
+  ${
+    $d V s $.  $d j s x $.
+    $( The set of subsets of a given set with one or two elements can be
+       expressed as elements of the power set or as inhabited elements of the
+       power set.  (Contributed by Jim Kingdon, 31-Mar-2026.) $)
+    sspw1or2 $p |-
+        { x e. { s e. ~P V | E. j j e. s } | ( x ~~ 1o \/ x ~~ 2o ) }
+        = { x e. ~P V | ( x ~~ 1o \/ x ~~ 2o ) } $=
+      ( cv c1o cen wbr c2o wo wel wex cpw crab wcel wa weq elequ2 exbidv elrab
+      anbi1i en1m en2m jaoi biantrud pm5.32ri bitr4i rabbia2 ) AEZFGHZUIIGHZJZU
+      LABDKZBLZDCMZNZUOUIUPOZULPUIUOOZBAKZBLZPZULPURULPUQVAULUNUTDUIUODAQUMUSBD
+      ABRSTUAULURVAULUTURUJUTUKBUIUBBUIUCUDUEUFUGUH $.
+  $}
 
   ${
     $d A r s $.  $d A z $.  $d ph x $.  $d s x $.
@@ -197848,6 +197885,434 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Subgraphs
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c SubGraph $.
+
+  $( Extend class notation with subgraphs. $)
+  csubgr $a class SubGraph $.
+
+  ${
+    $d s g $.
+    $( Define the class of the subgraph relation.  A class ` s ` is a
+       _subgraph_ of a class ` g ` (the _supergraph_ of ` s ` ) if its vertices
+       are also vertices of ` g ` , and its edges are also edges of ` g ` ,
+       connecting vertices of ` s ` only (see section I.1 in [Bollobas] p. 2 or
+       section 1.1 in [Diestel] p. 4).  The second condition is ensured by the
+       requirement that the edge function of ` s ` is a restriction of the edge
+       function of ` g ` having only vertices of ` s ` in its range.  Note that
+       the domains of the edge functions of the subgraph and the supergraph
+       should be compatible.  (Contributed by AV, 16-Nov-2020.) $)
+    df-subgr $a |- SubGraph = { <. s , g >. | ( ( Vtx ` s ) C_ ( Vtx ` g )
+                         /\ ( iEdg ` s ) = ( ( iEdg ` g ) |` dom ( iEdg ` s ) )
+                         /\ ( Edg ` s ) C_ ~P ( Vtx ` s ) ) } $.
+
+    $( The class of the subgraph relation is a relation.  (Contributed by AV,
+       16-Nov-2020.) $)
+    relsubgr $p |- Rel SubGraph $=
+      ( vs vg cv cvtx cfv wss ciedg cdm cres wceq cedg cpw w3a csubgr relopabiv
+      df-subgr ) ACZDEZBCZDEFQGEZSGETHIJQKERLFMABNBAPO $.
+  $}
+
+  $( If a class is a subgraph of another class, both classes are sets.
+     (Contributed by AV, 16-Nov-2020.) $)
+  subgrv $p |- ( S SubGraph G -> ( S e. _V /\ G e. _V ) ) $=
+    ( csubgr relsubgr brrelex12i ) ABCDE $.
+
+  ${
+    $d G s g $.  $d S s g $.
+    issubgr.v $e |- V = ( Vtx ` S ) $.
+    issubgr.a $e |- A = ( Vtx ` G ) $.
+    issubgr.i $e |- I = ( iEdg ` S ) $.
+    issubgr.b $e |- B = ( iEdg ` G ) $.
+    issubgr.e $e |- E = ( Edg ` S ) $.
+    $( The property of a set to be a subgraph of another set.  (Contributed by
+       AV, 16-Nov-2020.) $)
+    issubgr $p |- ( ( G e. W /\ S e. U ) -> ( S SubGraph G
+                       <-> ( V C_ A /\ I = ( B |` dom I ) /\ E C_ ~P V ) ) ) $=
+      ( cvtx cfv wss ciedg wceq fveq2 vs vg wcel wa csubgr wbr cdm cres cpw w3a
+      cedg wb cv adantr sseq12d dmeqd reseq12d eqeq12d pweqd 3anbi123d df-subgr
+      adantl brabga ancoms sseq12i dmeqi reseq12i eqeq12i 3anbi123i bitr4di
+      pweqi ) FIUCZCDUCZUDCFUEUFZCOPZFOPZQZCRPZFRPZVRUGZUHZSZCUKPZVOUIZQZUJZHAQ
+      ZGBGUGZUHZSZEHUIZQZUJVMVLVNWFULUAUMZOPZUBUMZOPZQZWMRPZWORPZWRUGZUHZSZWMUK
+      PZWNUIZQZUJWFUAUBCFUEDIWMCSZWOFSZUDZWQVQXBWBXEWEXHWNVOWPVPXFWNVOSXGWMCOTZ
+      UNXGWPVPSXFWOFOTVBUOXHWRVRXAWAXFWRVRSXGWMCRTZUNXHWSVSWTVTXGWSVSSXFWOFRTVB
+      XFWTVTSXGXFWRVRXJUPUNUQURXFXEWEULXGXFXCWCXDWDWMCUKTXFWNVOXIUSUOUNUTUBUAVA
+      VCVDWGVQWJWBWLWEHVOAVPJKVEGVRWIWALBVSWHVTMGVRLVFVGVHEWCWKWDNHVOJVKVEVIVJ
+      $.
+
+    $( The property of a set to be a subgraph of a set whose edge function is
+       actually a function.  (Contributed by AV, 20-Nov-2020.) $)
+    issubgr2 $p |- ( ( G e. W /\ Fun B /\ S e. U ) -> ( S SubGraph G
+                       <-> ( V C_ A /\ I C_ B /\ E C_ ~P V ) ) ) $=
+      ( wcel wfun w3a csubgr wbr wss cdm cres wceq cpw wb issubgr 3adant2 resss
+      sseq1 mpbiri wi wa funssres eqcomd ex 3ad2ant2 impbid2 3anbi2d bitrd ) FI
+      OZBPZCDOZQZCFRSZHATZGBGUAZUBZUCZEHUDTZQZVEGBTZVIQUTVBVDVJUEVAABCDEFGHIJKL
+      MNUFUGVCVHVKVEVIVCVHVKVHVKVGBTBVFUHGVGBUIUJVAUTVKVHUKVBVAVKVHVAVKULVGGBGU
+      MUNUOUPUQURUS $.
+
+    $( The properties of a subgraph.  (Contributed by AV, 19-Nov-2020.) $)
+    subgrprop $p |- ( S SubGraph G
+                      -> ( V C_ A /\ I = ( B |` dom I ) /\ E C_ ~P V ) ) $=
+      ( cvv wcel wa csubgr wbr wss cdm cres cpw subgrv wi issubgr biimpd ancoms
+      wceq w3a mpcom ) CMNZEMNZOCEPQZGARFBFSTUGDGUARUHZCEUBUKUJULUMUCUKUJOULUMA
+      BCMDEFGMHIJKLUDUEUFUI $.
+
+    $( The properties of a subgraph:  If ` S ` is a subgraph of ` G ` , its
+       vertices are also vertices of ` G ` , and its edges are also edges of
+       ` G ` , connecting vertices of the subgraph only.  (Contributed by AV,
+       19-Nov-2020.) $)
+    subgrprop2 $p |- ( S SubGraph G -> ( V C_ A /\ I C_ B /\ E C_ ~P V ) ) $=
+      ( csubgr wbr wss cdm cres wceq cpw w3a subgrprop resss mpbiri 3anim2i syl
+      sseq1 ) CEMNGAOZFBFPZQZRZDGSOZTUGFBOZUKTABCDEFGHIJKLUAUJULUGUKUJULUIBOBUH
+      UBFUIBUFUCUDUE $.
+  $}
+
+  ${
+    $d S e $.  $d V e $.
+    uhgrissubgr.v $e |- V = ( Vtx ` S ) $.
+    uhgrissubgr.a $e |- A = ( Vtx ` G ) $.
+    uhgrissubgr.i $e |- I = ( iEdg ` S ) $.
+    uhgrissubgr.b $e |- B = ( iEdg ` G ) $.
+    $( The property of a hypergraph to be a subgraph.  (Contributed by AV,
+       19-Nov-2020.) $)
+    uhgrissubgr $p |- ( ( G e. W /\ Fun B /\ S e. UHGraph )
+                        -> ( S SubGraph G <-> ( V C_ A /\ I C_ B ) ) ) $=
+      ( ve wcel cuhgr w3a wss wa cfv cpw wceq wfun csubgr wbr subgrprop2 3simpa
+      cedg eqid syl cres simprl simp2 simpr funssres syl2an eqcomd cvtx edguhgr
+      cdm cv ex pweqi eleq2i imbitrrdi ssrdv 3ad2ant3 adantr wb issubgr 3adant2
+      mpbir3and impbid2 ) DGMZBUAZCNMZOZCDUBUCZFAPZEBPZQZVPVQVRCUFRZFSZPZOVSABC
+      VTDEFHIJKVTUGZUDVQVRWBUEUHVOVSVPVOVSQZVPVQEBEURUIZTZWBVOVQVRUJWDWEEVOVMVR
+      WEETVSVLVMVNUKVQVRULBEUMUNUOVOWBVSVNVLWBVMVNLVTWAVNLUSZVTMZWGCUPRZSZMZWGW
+      AMVNWHWKWGCUQUTWAWJWGFWIHVAVBVCVDVEVFVOVPVQWFWBOVGZVSVLVNWLVMABCNVTDEFGHI
+      JKWCVHVIVFVJUTVK $.
+  $}
+
+  ${
+    subgrprop3.v $e |- V = ( Vtx ` S ) $.
+    subgrprop3.a $e |- A = ( Vtx ` G ) $.
+    subgrprop3.e $e |- E = ( Edg ` S ) $.
+    subgrprop3.b $e |- B = ( Edg ` G ) $.
+    $( The properties of a subgraph:  If ` S ` is a subgraph of ` G ` , its
+       vertices are also vertices of ` G ` , and its edges are also edges of
+       ` G ` .  (Contributed by AV, 19-Nov-2020.) $)
+    subgrprop3 $p |- ( S SubGraph G -> ( V C_ A /\ E C_ B ) ) $=
+      ( wss ciedg cfv wa eqid syl crn cvv wcel cedg wbr cpw w3a subgrprop2 rnss
+      csubgr 3simpa simprl ad2antll wb subgrv wceq edgval eqtrid sseq12d adantr
+      a1i mpbird jca mpdan ) CEUFUAZFAKZCLMZELMZKZNZVBDBKZNVAVBVEDFUBKZUCVFAVDC
+      DEVCFGHVCOVDOIUDVBVEVHUGPVAVFNZVBVGVAVBVEUHVIVGVCQZVDQZKZVEVLVAVBVCVDUEUI
+      VAVGVLUJZVFVACRSERSNZVMCEUKVNDVJBVKVNDCTMZVJIVOVJULVNCUMUQUNVNBETMZVKJVPV
+      KULVNEUMUQUNUOPUPURUSUT $.
+  $}
+
+  $( An empty graph consisting of a subset of vertices of a graph (and having
+     no edges) is a subgraph of the graph.  (Contributed by AV, 17-Nov-2020.)
+     (Proof shortened by AV, 17-Dec-2020.) $)
+  egrsubgr $p |- ( ( ( G e. W /\ S e. U ) /\ ( Vtx ` S ) C_ ( Vtx ` G )
+                     /\ ( Fun ( iEdg ` S ) /\ ( Edg ` S ) = (/) ) )
+                   -> S SubGraph G ) $=
+    ( wcel wa cvtx cfv wss ciedg wfun cedg c0 wceq w3a csubgr cdm cres wb eqid
+    wbr cpw simp2 edg0iedg0g adantll res0 eqcomi id dmeq eqtrdi reseq2d 3eqtr4a
+    dm0 biimtrdi impr 3adant2 0ss sseq1 mpbiri adantl 3ad2ant3 issubgr 3ad2ant1
+    mpbir3and ) CDEZABEZFZAGHZCGHZIZAJHZKZALHZMNZFZOACPUAZVJVKCJHZVKQZRZNZVMVHU
+    BZIZVGVJVOUCVGVOVTVJVGVLVNVTVGVLFVNVKMNZVTVFVLVNWCSVEVMAVKBVKTZVMTZUDUEWCMV
+    QMRZVKVSWFMVQUFUGWCUHWCVRMVQWCVRMQMVKMUIUMUJUKULUNUOUPVOVGWBVJVNWBVLVNWBMWA
+    IWAUQVMMWAURUSUTVAVGVJVPVJVTWBOSVOVIVQABVMCVKVHDVHTVITWDVQTWEVBVCVD $.
+
+  $( The null graph (represented by an empty set) is a subgraph of all graphs.
+     (Contributed by AV, 17-Nov-2020.) $)
+  0grsubgr $p |- ( G e. W -> (/) SubGraph G ) $=
+    ( wcel c0 csubgr wbr cvtx cfv wss cdm cres wceq cpw 0ss cvv eqcomi iedgval0
+    ciedg eqid crn w3a dm0 reseq2i res0 eqtr2i 3pm3.2i 0ex vtxval0 edgval rneqi
+    wb cedg rn0 3eqtrri issubgr mpan2 mpbiri ) ABCZDAEFZDAGHZIZDARHZDJZKZLZDDMZ
+    IZUAZVAVEVGUTNVDVBDKDVCDVBUBUCVBUDUEVFNUFURDOCUSVHUKUGUTVBDODADDBDGHDUHPUTS
+    DRHZDQPVBSDULHVITDTDDUIVIDQUJUMUNUOUPUQ $.
+
+  $( The null graph (as hypergraph) is a subgraph of all graphs.  (Contributed
+     by AV, 17-Nov-2020.)  (Proof shortened by AV, 28-Nov-2020.) $)
+  0uhgrsubgr $p |- ( ( G e. W /\ S e. UHGraph /\ ( Vtx ` S ) = (/) )
+                     -> S SubGraph G ) $=
+    ( wcel cuhgr cvtx cfv c0 wceq w3a wss ciedg wfun cedg csubgr wbr 3simpa crn
+    wa wi 0ss sseq1 mpbiri 3ad2ant3 eqid uhgrfun 3ad2ant2 edgval uhgr0vb eqtrdi
+    rneq rn0 biimtrdi ex pm2.43a a1i 3imp eqtrid egrsubgr syl112anc ) BCDZAEDZA
+    FGZHIZJZVAVBSVCBFGZKZALGZMZANGZHIABOPVAVBVDQVDVAVGVBVDVGHVFKVFUAVCHVFUBUCUD
+    VBVAVIVDVHAVHUEUFUGVEVJVHRZHAUHVAVBVDVKHIZVBVDVLTTVAVDVBVLVBVDVBVLTVBVDSVBV
+    HHIZVLAEUIVMVKHRHVHHUKULUJUMUNUOUPUQURAEBCUSUT $.
+
+  $( A hypergraph is a subgraph of itself.  (Contributed by AV, 17-Nov-2020.)
+     (Proof shortened by AV, 21-Nov-2020.) $)
+  uhgrsubgrself $p |- ( G e. UHGraph -> G SubGraph G ) $=
+    ( cuhgr wcel csubgr wbr cvtx cfv wss ciedg wa ssid pm3.2i wfun eqid uhgrfun
+    wb id uhgrissubgr mpd3an23 mpbiri ) ABCZAADEZAFGZUCHZAIGZUEHZJZUDUFUCKUEKLU
+    AUEMUAUBUGPUEAUENZOUAQUCUEAAUEUCBUCNZUIUHUHRST $.
+
+  $( The edge function of a subgraph of a graph whose edge function is actually
+     a function is a function.  (Contributed by AV, 20-Nov-2020.) $)
+  subgrfun $p |- ( ( Fun ( iEdg ` G ) /\ S SubGraph G )
+                   -> Fun ( iEdg ` S ) ) $=
+    ( csubgr wbr ciedg cfv wfun cvtx wss cedg cpw w3a subgrprop2 funss 3ad2ant2
+    wi eqid syl impcom ) ABCDZBEFZGZAEFZGZTAHFZBHFZIZUCUAIZAJFZUEKIZLUBUDPZUFUA
+    AUIBUCUEUEQUFQUCQUAQUIQMUHUGUKUJUCUANORS $.
+
+  $( The edge function of a subgraph of a hypergraph is a function.
+     (Contributed by AV, 16-Nov-2020.)  (Proof shortened by AV,
+     20-Nov-2020.) $)
+  subgruhgrfun $p |- ( ( G e. UHGraph /\ S SubGraph G )
+                       -> Fun ( iEdg ` S ) ) $=
+    ( cuhgr wcel ciedg cfv wfun csubgr wbr eqid uhgrfun subgrfun sylan ) BCDBEF
+    ZGABHIAEFGNBNJKABLM $.
+
+  $( An element of the domain of the edge function of a subgraph is an element
+     of the domain of the edge function of the supergraph.  (Contributed by AV,
+     20-Nov-2020.) $)
+  subgreldmiedg $p |- ( ( S SubGraph G /\ X e. dom ( iEdg ` S ) )
+                        -> X e. dom ( iEdg ` G ) ) $=
+    ( csubgr wbr cfv cdm wcel cvtx wss cedg cpw w3a wi eqid subgrprop2 3ad2ant2
+    ciedg dmss sseld syl imp ) ABDEZCARFZGZHZCBRFZGZHZUCAIFZBIFZJZUDUGJZAKFZUJL
+    JZMZUFUINUKUGAUNBUDUJUJOUKOUDOUGOUNOPUPUEUHCUMULUEUHJUOUDUGSQTUAUB $.
+
+  ${
+    $d G j $.  $d I j s $.  $d V s $.  $d X j s $.  $d j ph $.
+    subgruhgredgd.v $e |- V = ( Vtx ` S ) $.
+    subgruhgredgd.i $e |- I = ( iEdg ` S ) $.
+    subgruhgredgd.g $e |- ( ph -> G e. UHGraph ) $.
+    subgruhgredgd.s $e |- ( ph -> S SubGraph G ) $.
+    subgruhgredgd.x $e |- ( ph -> X e. dom I ) $.
+    $( An edge of a subgraph of a hypergraph is an inhabited subset of its
+       vertices.  (Contributed by AV, 17-Nov-2020.)  (Revised by AV,
+       21-Nov-2020.) $)
+    subgruhgredgdm $p |- ( ph -> ( I ` X ) e. { s e. ~P V | E. j j e. s } ) $=
+      ( wcel wex cfv wss eqid cdm syl2anc cpw wceq eleq2 exbidv cedg cvtx ciedg
+      cv csubgr wbr w3a subgrprop2 syl simp3d crn wfun cuhgr subgruhgrfun dmeqi
+      eleqtrdi wa fveq1i fvelrn eqeltrid edgval eleqtrrdi sseldd uhgrfun funfnd
+      subgreldmiedg uhgrm syl3anc simp2d funssfv eqcomd eleq2d mpbird elrabd
+      wfn ) ACUHZHUHZNZCOVTGEPZNZCOZHWCFUAZWAWCUBWBWDCWAWCVTUCUDABUEPZWFWCAFDUF
+      PZQZEDUGPZQZWGWFQZABDUIUJZWIWKWLUKLWHWJBWGDEFIWHRJWJRZWGRULUMZUNAWCBUGPZU
+      OZWGAWPUPZGWPSZNZWCWQNADUQNZWMWRKLBDURTAGESZWSMEWPJUSUTZWRWTVAWCGWPPWQGEW
+      PJVBGWPVCVDTBVEVFVGAWEVTGWJPZNZCOZAXAWJWJSZVSGXGNZXFKAWJAXAWJUPZKWJDWNVHU
+      MZVIAWMWTXHLXCBDGVJTXGCWJGDWNVKVLAWDXECAWCXDVTAXIWKGXBNZWCXDUBXJAWIWKWLWO
+      VMMXIWKXKUKXDWCGWJEVNVOVLVPUDVQVR $.
+  $}
+
+  ${
+    $d I e j s $.  $d V e s $.  $d X e j s $.  $d G j $.  $d S j $.
+    subumgredg2.v $e |- V = ( Vtx ` S ) $.
+    subumgredg2.i $e |- I = ( iEdg ` S ) $.
+    $( An edge of a subgraph of a multigraph connects exactly two different
+       vertices.  (Contributed by AV, 26-Nov-2020.) $)
+    subumgredg2en $p |- ( ( S SubGraph G /\ G e. UMGraph /\ X e. dom I )
+                      -> ( I ` X ) e. { e e. ~P V | e ~~ 2o } ) $=
+      ( vj vs wbr wcel cdm w3a cv c2o cen cfv wss eqid cumgr cpw breq1 wex crab
+      csubgr cuhgr umgruhgr 3ad2ant2 simp1 simp3 subgruhgredgdm elrabi syl wfun
+      ciedg wceq uhgrfun cvtx subgrprop2 simp2d 3ad2ant1 funssfv eqcomd syl3anc
+      cedg simp2 wi dmeqi eleq2i subgreldmiedg biimtrid 3imp umgredg2en syl2anc
+      ex a1d eqbrtrd elrabd ) ACUFKZCUALZFDMZLZNZBOZPQKFDRZPQKBWFEUBZWEWFPQUCWD
+      WFIOJOLIUDZJWGUELWFWGLWDAICDEFJGHWAVTCUGLZWCCUHZUIVTWAWCUJVTWAWCUKZULWHJW
+      FWGUMUNWDWFFCUPRZRZPQWDWLUOZDWLSZWCWFWMUQWAVTWNWCWAWIWNWJWLCWLTZURUNUIVTW
+      AWOWCVTAUSRZCUSRZSWOAVFRZWQUBSWRWLAWSCDWQWQTWRTZHWPWSTUTVAVBWKWNWOWCNWMWF
+      FWLDVCVDVEWDWAFWLMLZWMPQKVTWAWCVGVTWAWCXAVTWCXAVHWAWCFAUPRZMZLZVTXAWBXCFD
+      XBHVIVJVTXDXAACFVKVPVLVQVMWLCWRFWTWPVNVOVRVS $.
+  $}
+
+  ${
+    $d G x j $.  $d S x s j $.
+    $( A subgraph of a hypergraph is a hypergraph.  (Contributed by AV,
+       16-Nov-2020.)  (Proof shortened by AV, 21-Nov-2020.) $)
+    subuhgr $p |- ( ( G e. UHGraph /\ S SubGraph G ) -> S e. UHGraph ) $=
+      ( vj vs vx cuhgr wcel csubgr wbr cvtx cfv wss ciedg cedg cpw eqid cvv syl
+      wa cv w3a subgrprop2 cdm wex crab wfn crn wfun subgruhgrfun ancoms adantl
+      wi wf funfnd wral simplrr simplrl simpr subgruhgredgdm ralrimiva fnfvrnss
+      syl2anc df-f sylanbrc wb subgrv simpld isuhgrm ad2antrl mpbird ex anabsi8
+      ) BFGZABHIZAFGZVNAJKZBJKZLAMKZBMKZLANKZVPOZLUAZVNVMSZVOULVQVSAVTBVRVPVPPZ
+      VQPVRPZVSPVTPUBWBWCVOWBWCSZVOVRUCZCTDTGCUDDWAUEZVRUMZWFVRWGUFZVRUGWHLZWIW
+      FVRWCVRUHZWBVMVNWLABUIUJUKUNZWFWJETZVRKWHGZEWGUOWKWMWFWOEWGWFWNWGGZSACBVR
+      VPWNDWDWEWBVNVMWPUPWBVNVMWPUQWFWPURUSUTEWGWHVRVAVBWGWHVRVCVDVNVOWIVEZWBVM
+      VNAQGZWQVNWRBQGABVFVGQCVRAVPDWDWEVHRVIVJVKRVL $.
+
+    $d G x j $.  $d S e x j s $.
+    $( A subgraph of a pseudograph is a pseudograph.  (Contributed by AV,
+       16-Nov-2020.)  (Proof shortened by AV, 21-Nov-2020.) $)
+    subupgr $p |- ( ( G e. UPGraph /\ S SubGraph G ) -> S e. UPGraph ) $=
+      ( ve vj vs vx wcel wbr cfv wss wa wi eqid cv c1o cen c2o wo crab adantl
+      cupgr csubgr cvtx ciedg cedg cpw w3a subgrprop2 cdm wf wex wfn wfun cuhgr
+      upgruhgr subgruhgrfun sylan ancoms funfnd wral wceq orbi12d anim2i ancomd
+      crn breq1 anim1i simpl adantr simpr subgruhgredgdm subgreldmiedg ad2antrl
+      simplld uhgrfun syl upgr1or2 syl3anc expcom ad2antll syld simpll2 funssfv
+      ex imp eqcomd breq1d mpbird elrabd ralrimiva fnfvrnss syl2anc sylanbrc wb
+      df-f sspw1or2 feq3 ax-mp sylib cvv subgrv isupgren anabsi8 ) BUAGZABUBHZA
+      UAGZXEAUCIZBUCIZJZAUDIZBUDIZJZAUEIZXGUFZJZUGZXEXDKZXFLXHXKAXMBXJXGXGMZXHM
+      ZXJMZXKMZXMMUHXPXQXFXPXQKZXFXJUIZCNZOPHZYDQPHZRZCXNSZXJUJZYBYCYGCDNENGDUK
+      EXNSZSZXJUJZYIYBXJYCULZXJVEYKJZYLXQYMXPXQXJXDXEXJUMZXDBUNGZXEYOBUOZABUPUQ
+      URUSTZYBYMFNZXJIZYKGZFYCUTYNYRYBUUAFYCYBYSYCGZKZYGYTOPHZYTQPHZRZCYTYJYDYT
+      VAYEUUDYFUUEYDYTOPVFYDYTQPVFVBUUCADBXJXGYSEXRXTUUCYPXEUUBYBYPXEKUUBYBXEYP
+      XQXEYPKXPXDYPXEYQVCTVDVGVNYBXEUUBXQXEXPXEXDVHTVIYBUUBVJZVKUUCUUFYSXKIZOPH
+      ZUUHQPHZRZYBUUBUUKYBUUBYSXKUIZGZUUKXEUUBUUMLXPXDXEUUBUUMABYSVLWDVMXDUUMUU
+      KLXPXEUUMXDUUKUUMXDKXDXKUULULZUUMUUKUUMXDVJXDUUNUUMXDXKXDYPXKUMZYQXKBYAVO
+      VPZUSTUUMXDVHUULXKYSBXHXSYAVQVRVSVTWAWEUUCUUDUUIUUEUUJUUCYTUUHOPUUCUUHYTU
+      UCUUOXLUUBUUHYTVAYBUUOUUBXDUUOXPXEUUPVTVIXIXLXOXQUUBWBUUGYSXKXJWCVRWFZWGU
+      UCYTUUHQPUUQWGVBWHWIWJFYCYKXJWKWLYCYKXJWOWMYKYHVAYLYIWNCDXGEWPYKYHYCXJWQW
+      RWSXEXFYIWNZXPXDXEAWTGZBWTGZKUURABXAUUSUURUUTCWTXJAXGXRXTXBVIVPVMWHWDVPXC
+      $.
+
+    $( A subgraph of a multigraph is a multigraph.  (Contributed by AV,
+       26-Nov-2020.) $)
+    subumgr $p |- ( ( G e. UMGraph /\ S SubGraph G ) -> S e. UMGraph ) $=
+      ( ve vx cumgr wcel csubgr wbr cvtx cfv wss ciedg cedg cpw w3a wa eqid cvv
+      cv syl wi subgrprop2 cdm c2o cen crab wfn crn cuhgr umgruhgr subgruhgrfun
+      wf sylan ancoms funfnd adantl simplrl simplrr simpr subumgredg2en syl3anc
+      wfun wral ralrimiva fnfvrnss syl2anc df-f sylanbrc subgrv simpld isumgren
+      wb ad2antrl mpbird ex anabsi8 ) BEFZABGHZAEFZVRAIJZBIJZKALJZBLJZKAMJZVTNZ
+      KOZVRVQPZVSUAWAWCAWDBWBVTVTQZWAQWBQZWCQWDQUBWFWGVSWFWGPZVSWBUCZCSUDUEHCWE
+      UFZWBULZWJWBWKUGZWBUHWLKZWMWGWNWFWGWBVQVRWBVBZVQBUIFVRWPBUJABUKUMUNUOUPZW
+      JWNDSZWBJWLFZDWKVCWOWQWJWSDWKWJWRWKFZPVRVQWTWSWFVRVQWTUQWFVRVQWTURWJWTUSA
+      CBWBVTWRWHWIUTVAVDDWKWLWBVEVFWKWLWBVGVHVRVSWMVLZWFVQVRARFZXAVRXBBRFABVIVJ
+      CRWBAVTWHWIVKTVMVNVOTVP $.
+
+    $d G e $.  $d G y $.
+    $( A subgraph of a simple graph is a simple graph.  (Contributed by AV,
+       16-Nov-2020.)  (Proof shortened by AV, 27-Nov-2020.) $)
+    subusgr $p |- ( ( G e. USGraph /\ S SubGraph G ) -> S e. USGraph ) $=
+      ( ve vx vy cusgr wcel wbr cvtx cfv wss ciedg cpw eqid wfun adantl syl cvv
+      wa cv csubgr cedg w3a wi subgrprop2 cdm c2o cen crab wf1 wf wfn crn cuhgr
+      ccnv usgruhgr subgruhgrfun sylan ancoms funfnd wral cumgr usgrumgr adantr
+      simplrl simpr subumgredg2en syl3anc ralrimiva fnfvrnss syl2anc df-f simp2
+      sylanbrc usgrfen df-f1 ffun anim1i sylbi anim12ci df-3an sylibr f1ssf1 wb
+      subgrv simpld isusgren mpbird ex anabsi8 ) BFGZABUAHZAFGZWLAIJZBIJZKZALJZ
+      BLJZKZAUBJZWNMZKZUCZWLWKSZWMUDWOWRAWTBWQWNWNNZWONZWQNZWRNZWTNUEXCXDWMXCXD
+      SZWMWQUFZCTUGUHHCXAUIZWQUJZXIXJXKWQUKZWQUOOZXLXIWQXJULZWQUMXKKZXMXDXOXCXD
+      WQWKWLWQOZWKBUNGWLXQBUPABUQURUSUTPZXIXODTZWQJXKGZDXJVAXPXRXIXTDXJXIXSXJGZ
+      SWLBVBGZYAXTXCWLWKYAVEXIYBYAXDYBXCWKYBWLBVCPPVDXIYAVFACBWQWNXSXEXGVGVHVID
+      XJXKWQVJVKXJXKWQVLVNXIWROZWRUOOZWSUCZXNXIYCYDSZWSSYEXCWSXDYFWPWSXBVMWKYFW
+      LWKWRUFZETUGUHHEWOMUIZWRUJZYFEWRBWOXFXHVOYIYGYHWRUKZYDSYFYGYHWRVPYJYCYDYG
+      YHWRVQVRVSQPVTYCYDWSWAWBWRWQWCQXJXKWQVPVNXDWMXLWDZXCWLYKWKWLARGZYKWLYLBRG
+      ABWEWFCRWQAWNXEXGWGQVDPWHWIQWJ $.
+  $}
+
+  ${
+    uhgrspan.v $e |- V = ( Vtx ` G ) $.
+    uhgrspan.e $e |- E = ( iEdg ` G ) $.
+    uhgrspan.s $e |- ( ph -> S e. W ) $.
+    uhgrspan.q $e |- ( ph -> ( Vtx ` S ) = V ) $.
+    uhgrspan.r $e |- ( ph -> ( iEdg ` S ) = ( E |` A ) ) $.
+    ${
+      $d S e i $.  $d ph e i $.
+      uhgrspan.g $e |- ( ph -> G e. UHGraph ) $.
+      $( Lemma for ~ uhgrspansubgr :  The edges of the graph ` S ` obtained by
+         removing some edges of a hypergraph ` G ` are subsets of its vertices
+         (a spanning subgraph, see comment for ~ uhgrspansubgr .  (Contributed
+         by AV, 18-Nov-2020.) $)
+      uhgrspansubgrlem $p |- ( ph -> ( Edg ` S ) C_ ~P ( Vtx ` S ) ) $=
+        ( vi cfv wcel cdm wfun wb cvv ve cedg cvtx cpw cv ciedg crn edgval wceq
+        eleq2i wrex cres cuhgr uhgrfun funres 3syl funeqd mpbird elrnrexdmb syl
+        adantr fveq1d cin dmeqd dmres eqtrdi eleq2d elinel1 biimtrdi imp fvresd
+        eqtrd wss elinel2 uhgrss syl2an2r pweqd iedgex eqeltrid vex fvexg elpwg
+        sylancl bitrd eqeltrd eleq1 syl5ibrcom rexlimdva sylbid biimtrid ssrdv
+        wa ) AUACUBOZCUCOZUDZUAUEZWMPWPCUFOZUGZPZAWPWOPZWMWRWPCUHUJAWSWPNUEZWQO
+        ZUIZNWQQZUKZWTAWQRZWSXESAXFDBULZRZAEUMPZDRXHMDEIUNBDUOUPAWQXGLUQURNWQWP
+        USUTAXCWTNXDAXAXDPZWLZWTXCXBWOPXKXBXADOZWOXKXBXAXGOXLXKXAWQXGAWQXGUIXJL
+        VAVBXKXABDAXJXABPZAXJXABDQZVCZPZXMAXDXOXAAXDXGQXOAWQXGLVDDBVEVFVGZXABXN
+        VHVIVJVKVLXKXLWOPZXLFVMZAXIXJXAXNPZXSMAXJXTAXJXPXTXQXABXNVNVIVJDXAEFHIV
+        OVPXKXRXLFUDZPZXSAXRYBSXJAWOYAXLAWNFKVQVGVAAYBXSSZXJAXLTPZYCADTPXATPYDA
+        DEUFOZTIAXIYETPMEUMVRUTVSNVTXADTTWAWCXLFTWBUTVAWDURWEWPXBWOWFWGWHWIWJWK
+        $.
+
+      $( A spanning subgraph ` S ` of a hypergraph ` G ` is actually a subgraph
+         of ` G ` .  A subgraph ` S ` of a graph ` G ` which has the same
+         vertices as ` G ` and is obtained by removing some edges of ` G ` is
+         called a _spanning subgraph_ (see section I.1 in [Bollobas] p. 2 and
+         section 1.1 in [Diestel] p. 4).  Formally, the edges are "removed" by
+         restricting the edge function of the original graph by an arbitrary
+         class (which actually needs not to be a subset of the domain of the
+         edge function).  (Contributed by AV, 18-Nov-2020.)  (Proof shortened
+         by AV, 21-Nov-2020.) $)
+      uhgrspansubgr $p |- ( ph -> S SubGraph G ) $=
+        ( csubgr wbr cfv wss cuhgr wcel eqid cvtx ciedg cedg ssid sseqtrid cres
+        cpw resss eqsstrdi uhgrspansubgrlem w3a wb uhgrfun syl issubgr2 syl3anc
+        wfun mpbir3and ) ACENOZCUAPZFQZCUBPZDQZCUCPZUTUGQZAUTUTFUTUDKUEAVBDBUFD
+        LDBUHUIABCDEFGHIJKLMUJAERSZDUQZCGSUSVAVCVEUKULMAVFVGMDEIUMUNJFDCGVDEVBU
+        TRUTTHVBTIVDTUOUPUR $.
+
+      $( A spanning subgraph ` S ` of a hypergraph ` G ` is a hypergraph.
+         (Contributed by AV, 11-Oct-2020.)  (Proof shortened by AV,
+         18-Nov-2020.) $)
+      uhgrspan $p |- ( ph -> S e. UHGraph ) $=
+        ( cuhgr wcel csubgr wbr uhgrspansubgr subuhgr syl2anc ) AENOCEPQCNOMABC
+        DEFGHIJKLMRCEST $.
+    $}
+
+    ${
+      upgrspan.g $e |- ( ph -> G e. UPGraph ) $.
+      $( A spanning subgraph ` S ` of a pseudograph ` G ` is a pseudograph.
+         (Contributed by AV, 11-Oct-2020.)  (Proof shortened by AV,
+         18-Nov-2020.) $)
+      upgrspan $p |- ( ph -> S e. UPGraph ) $=
+        ( cupgr wcel csubgr wbr cuhgr upgruhgr syl uhgrspansubgr subupgr
+        syl2anc ) AENOZCEPQCNOMABCDEFGHIJKLAUDEROMESTUACEUBUC $.
+    $}
+
+    ${
+      umgrspan.g $e |- ( ph -> G e. UMGraph ) $.
+      $( A spanning subgraph ` S ` of a multigraph ` G ` is a multigraph.
+         (Contributed by AV, 27-Nov-2020.) $)
+      umgrspan $p |- ( ph -> S e. UMGraph ) $=
+        ( cumgr wcel csubgr wbr cuhgr umgruhgr syl uhgrspansubgr subumgr
+        syl2anc ) AENOZCEPQCNOMABCDEFGHIJKLAUDEROMESTUACEUBUC $.
+    $}
+
+    usgrspan.g $e |- ( ph -> G e. USGraph ) $.
+    $( A spanning subgraph ` S ` of a simple graph ` G ` is a simple graph.
+       (Contributed by AV, 15-Oct-2020.)  (Revised by AV, 16-Oct-2020.)  (Proof
+       shortened by AV, 18-Nov-2020.) $)
+    usgrspan $p |- ( ph -> S e. USGraph ) $=
+      ( cusgr wcel csubgr wbr cuhgr usgruhgr syl uhgrspansubgr subusgr syl2anc
+      ) AENOZCEPQCNOMABCDEFGHIJKLAUDEROMESTUACEUBUC $.
+  $}
+
+  ${
+    uhgrspanop.v $e |- V = ( Vtx ` G ) $.
+    uhgrspanop.e $e |- E = ( iEdg ` G ) $.
+    $( A spanning subgraph of a hypergraph represented by an ordered pair is a
+       hypergraph.  (Contributed by Alexander van der Vekens, 27-Dec-2017.)
+       (Revised by AV, 11-Oct-2020.) $)
+    uhgrspanop $p |- ( G e. UHGraph -> <. V , ( E |` A ) >. e. UHGraph ) $=
+      ( cuhgr wcel cres cop cvv cvtx vtxex eqeltrid ciedg iedgex resexg syl2anc
+      cfv wceq syl opexg opvtxfv opiedgfv id uhgrspan ) CGHZADBAIZJZBCDKEFUGDKH
+      ZUHKHZUIKHUGDCLSKECGMNZUGBKHUKUGBCOSKFCGPNBAKQUAZDUHKKUBRUGUJUKUILSDTULUM
+      UHDKKUCRUGUJUKUIOSUHTULUMUHDKKUDRUGUEUF $.
+
+    $d A g $.  $d E g $.  $d G g $.  $d V g $.
+    $( A spanning subgraph of a pseudograph represented by an ordered pair is a
+       pseudograph.  (Contributed by Mario Carneiro, 12-Mar-2015.)  (Revised by
+       AV, 13-Oct-2020.) $)
+    upgrspanop $p |- ( G e. UPGraph -> <. V , ( E |` A ) >. e. UPGraph ) $=
+      ( vg cupgr wcel cvv cres cv cvtx cfv wceq ciedg wa wi vex eqeltrid simprl
+      a1i simprr simpl upgrspan ex alrimiv vtxex iedgex resexg syl gropeld ) CH
+      IZHJGBAKZDJUMGLZMNDOZUOPNUNOZQZUOHIZRGUMURUSUMURQZAUOBCDJEFUOJIUTGSUBUMUP
+      UQUAUMUPUQUCUMURUDUEUFUGUMDCMNJECHUHTUMBJIUNJIUMBCPNJFCHUITBAJUJUKUL $.
+
+    $( A spanning subgraph of a multigraph represented by an ordered pair is a
+       multigraph.  (Contributed by AV, 27-Nov-2020.) $)
+    umgrspanop $p |- ( G e. UMGraph -> <. V , ( E |` A ) >. e. UMGraph ) $=
+      ( vg cumgr wcel cvv cres cv cvtx cfv wceq ciedg wa wi vex eqeltrid simprl
+      a1i simprr simpl umgrspan ex alrimiv vtxex iedgex resexg syl gropeld ) CH
+      IZHJGBAKZDJUMGLZMNDOZUOPNUNOZQZUOHIZRGUMURUSUMURQZAUOBCDJEFUOJIUTGSUBUMUP
+      UQUAUMUPUQUCUMURUDUEUFUGUMDCMNJECHUHTUMBJIUNJIUMBCPNJFCHUITBAJUJUKUL $.
+
+    $( A spanning subgraph of a simple graph represented by an ordered pair is
+       a simple graph.  (Contributed by Alexander van der Vekens, 10-Aug-2017.)
+       (Revised by AV, 16-Oct-2020.) $)
+    usgrspanop $p |- ( G e. USGraph -> <. V , ( E |` A ) >. e. USGraph ) $=
+      ( vg cusgr wcel cvv cres cv cvtx cfv wceq ciedg wa wi vex eqeltrid simprl
+      a1i simprr simpl usgrspan ex alrimiv vtxex iedgex resexg syl gropeld ) CH
+      IZHJGBAKZDJUMGLZMNDOZUOPNUNOZQZUOHIZRGUMURUSUMURQZAUOBCDJEFUOJIUTGSUBUMUP
+      UQUAUMUPUQUCUMURUDUEUFUGUMDCMNJECHUHTUMBJIUNJIUMBCPNJFCHUITBAJUJUKUL $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Vertex degree
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -203188,6 +203653,9 @@ htmldef "USPGraph" as 'USPGraph';
 htmldef "USGraph" as 'USGraph';
   althtmldef "USGraph" as 'USGraph';
   latexdef "USGraph" as "\mathrm{USGraph}";
+htmldef "SubGraph" as ' SubGraph ';
+  althtmldef "SubGraph" as ' SubGraph ';
+  latexdef "SubGraph" as "\mathrm{SubGraph}";
 htmldef "VtxDeg" as 'VtxDeg';
   althtmldef "VtxDeg" as 'VtxDeg';
   latexdef "VtxDeg" as "\mathrm{VtxDeg}";
