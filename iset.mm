@@ -48452,6 +48452,14 @@ $)
     ( cres wss wfun wi resss funss ax-mp ) BACZBDBEJEFBAGJBHI $.
 
   ${
+    funresd.1 $e |- ( ph -> Fun F ) $.
+    $( A restriction of a function is a function.  (Contributed by Glauco
+       Siliprandi, 2-Jan-2022.) $)
+    funresd $p |- ( ph -> Fun ( F |` A ) ) $=
+      ( wfun cres funres syl ) ACECBFEDBCGH $.
+  $}
+
+  ${
     $d x y F $.  $d x y G $.
     $( The restriction of a function to the domain of a subclass equals the
        subclass.  (Contributed by NM, 15-Aug-1994.) $)
@@ -69860,6 +69868,13 @@ $)
       EYDWBWCUKWDPWEWHWFWGWIXSYCYFWJWQFXEWKWLWMWGWNWOWP $.
   $}
 
+  $( The image of a finite set under a one-to-one mapping is finite.
+     (Contributed by Jim Kingdon, 28-Mar-2026.) $)
+  imaf1fi $p |- ( ( F : A -1-1-> B /\ X C_ A /\ X e. Fin )
+      -> ( F " X ) e. Fin ) $=
+    ( wf1 wss cfn wcel w3a cima cen wbr simp3 f1imaeng enfii syl2anc ) ABCEZDAF
+    ZDGHZISCDJZDKLTGHQRSMABDCGNTDOP $.
+
   $( The Cartesian product of three finite sets is a finite set.  (Contributed
      by Alexander van der Vekens, 11-Mar-2018.) $)
   3xpfi $p |- ( V e. Fin -> ( ( V X. V ) X. V ) e. Fin ) $=
@@ -72566,8 +72581,8 @@ $)
        to be inhabited).  "Finitely enumerable" is defined as
        ` E. n e. _om E. f f : n -onto-> A ` per Definition 8.1.4 of
        [AczelRathjen], p. 71 and "countable" is defined as
-       ` E. g g : _om -onto-> ( A |_| 1o ) ` per [BauerSwan], p. 14:3.
-       (Contributed by Jim Kingdon, 13-Mar-2023.) $)
+       ` E. g g : _om -onto-> ( A |_| 1o ) ` per Definition on page 14:3 of
+       [BauerSwan], p. 3.  (Contributed by Jim Kingdon, 13-Mar-2023.) $)
     enumct $p |- ( E. n e. _om E. f f : n -onto-> A
         -> E. g g : _om -onto-> ( A |_| 1o ) ) $=
       ( vk vx cv wfo wex com c1o cdju wcel wa c0 wceq simpll wb adantl syl fo00
@@ -199364,6 +199379,23 @@ $)
     $.
 
   ${
+    wlkpvtx.v $e |- V = ( Vtx ` G ) $.
+    $( A walk connects vertices.  (Contributed by AV, 22-Feb-2021.) $)
+    wlkpvtx $p |- ( F ( Walks ` G ) P
+                      -> ( N e. ( 0 ... ( # ` F ) ) -> ( P ` N ) e. V ) ) $=
+      ( cwlks cfv wbr cc0 chash cfz co wf wcel wi wlkp ffvelcdm ex syl ) BACGHI
+      JBKHLMZEANZDUAOZDAHEOZPABCEFQUBUCUDUAEDARST $.
+
+    $( The endpoints of a walk are vertices.  (Contributed by AV,
+       31-Jan-2021.) $)
+    wlkepvtx $p |- ( F ( Walks ` G ) P
+                      -> ( ( P ` 0 ) e. V /\ ( P ` ( # ` F ) ) e. V ) ) $=
+      ( cwlks cfv wbr cc0 chash cfz co wf cn0 wcel wa wlkp wlkcl 0elfz ffvelcdm
+      sylan2 nn0fz0 sylan2b jca syl2anc ) BACFGHIBJGZKLZDAMZUFNOZIAGDOZUFAGDOZP
+      ABCDEQABCRUHUIPUJUKUIUHIUGOUJUFSUGDIATUAUIUHUFUGOUKUFUBUGDUFATUCUDUE $.
+  $}
+
+  ${
     $d E k $.  $d F k $.  $d P k $.
     $( Lemma for theorems for walks of length 2.  (Contributed by Alexander van
        der Vekens, 1-Feb-2018.) $)
@@ -200787,6 +200819,103 @@ $)
       UCIUEULUFUGZUHZGUIZABCDEFGHIJKLAEBFUASTZEBFUJSTZEBFUBSTMBEFUKZBEFUMUNNDUO
       SJUPARUQOPQURABEFGHIJKLAVPVQMVRUSNPUTVJVKVLDVASZUHZGUIZVDAVKVOVDCGDVSVSVB
       VCAWAVOVKAVTVNVLGAVSVMOVEVFVGVHVI $.
+  $}
+
+  $( Lemma for eupth2 .  (Contributed by Mario Carneiro, 8-Apr-2015.) $)
+  eupth2lem1 $p |- ( U e. V -> ( U e. if ( A = B , (/) , { A , B } ) <->
+      ( A =/= B /\ ( U = A \/ U = B ) ) ) ) $=
+    ( wceq c0 cpr cif wcel wn wa wne wo elif wb noel intnan biorf ax-mp bitr4i
+    df-ne bicomi a1i elprg anbi12d bitrid ) CABEZFABGZHIZUGJZCUHIZKZCDIZABLZCAE
+    CBEMZKUIUGCFIZKZULMZULUGCFUHNUQJULUROUPUGCPQUQULRSTUMUJUNUKUOUJUNOUMUNUJABU
+    AUBUCCABDUDUEUF $.
+
+  ${
+    eupth2lem2dc.1 $e |- ( ph -> B e. X ) $.
+    eupth2lem2dc.dc $e |- ( ph -> DECID A = B ) $.
+    eupth2lem2dc.bc $e |- ( ph -> B =/= C ) $.
+    eupth2lem2dc.bu $e |- ( ph -> B = U ) $.
+    $( Lemma for eupth2 .  (Contributed by Mario Carneiro, 8-Apr-2015.) $)
+    eupth2lem2dc $p |- ( ph ->
+     ( -. U e. if ( A = B , (/) , { A , B } ) <->
+          U e. if ( A = C , (/) , { A , C } ) ) ) $=
+      ( wceq c0 cpr cif wcel wne wo wa wb syl wn eqidd olcd biantrud eupth2lem1
+      wdc 3bitr2d a1d necon1bbiddc neeq1 syl5ibcom pm4.71rd eqcom ancom 3bitr4g
+      eleq1d mpd neneqd biorf orcom bitrdi anbi1d bitrd biancomd bitr3d 3bitrd
+      ) AEBCKZLBCMNZOZUAZVGBDPZCBKZCDKZQZRZEBDKLBDMNZOZAVGUFZVJVGSHAVIBCABCPZVI
+      SVRAVSVSVLCCKZQZRZCVHOZVIAWAVSAVTVLACUBUCUDACFOZWCWBSGBCCFUETACEVHJUPUGUH
+      UIUQAVGVKVNAVGVLVKRZVNVKRAVLVKVLRVGWEAVLVKACDPVLVKICBDUJUKULBCUMVLVKUNUOA
+      VLVNVKAVLVMVLQZVNAVMUAVLWFSACDIURVMVLUSTVMVLUTVAVBVCVDACVPOZVOVQAWDWGVOSG
+      BDCFUETACEVPJUPVEVF $.
+  $}
+
+  ${
+    trlsegvdeg.v $e |- V = ( Vtx ` G ) $.
+    trlsegvdeg.i $e |- I = ( iEdg ` G ) $.
+    trlsegvdeg.f $e |- ( ph -> Fun I ) $.
+    trlsegvdeg.n $e |- ( ph -> N e. ( 0 ..^ ( # ` F ) ) ) $.
+    trlsegvdeg.u $e |- ( ph -> U e. V ) $.
+    trlsegvdeg.w $e |- ( ph -> F ( Trails ` G ) P ) $.
+    $( Lemma for trlsegvdeg .  (Contributed by AV, 20-Feb-2021.) $)
+    trlsegvdeglem1 $p |- ( ph -> ( ( P ` N ) e. V
+                                /\ ( P ` ( N + 1 ) ) e. V ) ) $=
+      ( cc0 cfv co wcel wa wbr chash cfzo c1 caddc ctrls cwlks trliswlk wlkpvtx
+      wi cfz elfzofz impel fzofzp1 jca ex 3syl mpd ) AGODUAPZUBQRZGBPHRZGUCUDQZ
+      BPHRZSZLADBEUEPTDBEUFPTZUSVCUINBDEUGVDUSVCVDUSSUTVBVDGOURUJQZRUTUSBDEGHIU
+      HGOURUKULVDVAVERVBUSBDEVAHIUHOURGUMULUNUOUPUQ $.
+
+    trlsegvdeg.vx $e |- ( ph -> ( Vtx ` X ) = V ) $.
+    trlsegvdeg.vy $e |- ( ph -> ( Vtx ` Y ) = V ) $.
+    trlsegvdeg.vz $e |- ( ph -> ( Vtx ` Z ) = V ) $.
+    trlsegvdeg.ix $e |- ( ph -> ( iEdg ` X )
+                                = ( I |` ( F " ( 0 ..^ N ) ) ) ) $.
+    trlsegvdeg.iy $e |- ( ph -> ( iEdg ` Y )
+                                = { <. ( F ` N ) , ( I ` ( F ` N ) ) >. } ) $.
+    trlsegvdeg.iz $e |- ( ph -> ( iEdg ` Z )
+                                = ( I |` ( F " ( 0 ... N ) ) ) ) $.
+    $( Lemma for trlsegvdeg .  (Contributed by AV, 20-Feb-2021.) $)
+    trlsegvdeglem2 $p |- ( ph -> Fun ( iEdg ` X ) ) $=
+      ( ciedg cfv wfun cc0 cfzo co cima cres funresd funeqd mpbird ) AIUDUEZUFF
+      DUGGUHUIUJZUKZUFAUPFNULAUOUQUAUMUN $.
+
+    $( Lemma for trlsegvdeg .  (Contributed by AV, 20-Feb-2021.) $)
+    trlsegvdeglem3 $p |- ( ph -> Fun ( iEdg ` Y ) ) $=
+      ( ciedg cfv wfun cop csn cvv wcel cc0 chash co ctrls wbr w3a trlsv simp2d
+      cfzo syl fvexg syl2anc simp1d iedgex eqeltrid funsng funeqd mpbird ) AJUD
+      UEZUFGDUEZVJFUEZUGUHZUFZAVJUIUJZVKUIUJZVMADUIUJZGUKDULUEUSUMZUJVNAEUIUJZV
+      PBUIUJZADBEUNUEUOVRVPVSUPQBDEUQUTZUROGDUIVQVAVBZAFUIUJVNVOAFEUDUEZUIMAVRW
+      BUIUJAVRVPVSVTVCEUIVDUTVEWAVJFUIUIVAVBVJVKUIUIVFVBAVIVLUBVGVH $.
+
+    $( Lemma for trlsegvdeg .  (Contributed by AV, 21-Feb-2021.) $)
+    trlsegvdeglem4 $p |- ( ph -> dom ( iEdg ` X ) = ( ( F " ( 0 ..^ N ) )
+                                                       i^i dom I ) ) $=
+      ( ciedg cfv cdm cc0 cfzo co cima cres cin dmeqd dmres eqtrdi ) AIUDUEZUFF
+      DUGGUHUIUJZUKZUFUQFUFULAUPURUAUMFUQUNUO $.
+
+    $( Lemma for trlsegvdeg .  (Contributed by AV, 21-Feb-2021.) $)
+    trlsegvdeglem5 $p |- ( ph -> dom ( iEdg ` Y ) = { ( F ` N ) } ) $=
+      ( ciedg cfv cdm cop csn dmeqd cvv wcel wceq ctrls wbr trlsv simp1d iedgex
+      w3a syl eqeltrid cc0 chash cfzo co simp2d fvexg syl2anc dmsnopg eqtrd ) A
+      JUDUEZUFGDUEZVKFUEZUGUHZUFZVKUHZAVJVMUBUIAVLUJUKZVNVOULAFUJUKVKUJUKZVPAFE
+      UDUEZUJMAEUJUKZVRUJUKAVSDUJUKZBUJUKZADBEUMUEUNVSVTWAURQBDEUOUSZUPEUJUQUSU
+      TAVTGVADVBUEVCVDZUKVQAVSVTWAWBVEOGDUJWCVFVGVKFUJUJVFVGVKVLUJVHUSVI $.
+
+    $( Lemma for trlsegvdeg .  (Contributed by AV, 21-Feb-2021.) $)
+    trlsegvdeglem6 $p |- ( ph -> dom ( iEdg ` X ) e. Fin ) $=
+      ( ciedg cfv cdm cc0 cfzo co cima cfn cin trlsegvdeglem4 wss wceq chash wf
+      wf1 ctrls wbr trlf1 syl f1f fimassd dfss2 sylib eqtrd cuz cz cle elfzoelz
+      wcel elfzoel2 elfzo0le syl3anbrc fzoss2 0z fzofig sylancr imaf1fi syl3anc
+      eluz2 eqeltrd ) AIUDUEUFZDUGGUHUIZUJZUKAWDWFFUFZULZWFABCDEFGHIJKLMNOPQRST
+      UAUBUCUMAWFWGUNWHWFUOAUGDUPUEZUHUIZWGDWEAWJWGDURZWJWGDUQADBEUSUEUTWKQBDEF
+      MVAVBZWJWGDVCVBVDWFWGVEVFVGAWKWEWJUNZWEUKVLZWFUKVLWLAWIGVHUEVLZWMAGVIVLZW
+      IVIVLZGWIVJUTZWOAGWJVLZWPOGUGWIVKVBZAWSWQOGUGWIVMVBAWSWROGWIVNVBGWIWBVOGU
+      GWIVPVBAUGVIVLWPWNVQWTUGGVRVSWJWGDWEVTWAWC $.
+
+    $( Lemma for trlsegvdeg .  (Contributed by AV, 21-Feb-2021.) $)
+    trlsegvdeglem7 $p |- ( ph -> dom ( iEdg ` Y ) e. Fin ) $=
+      ( ciedg cfv cdm csn cfn trlsegvdeglem5 wcel cc0 chash co ctrls wbr wf1 wf
+      cfzo trlf1 f1f 3syl ffvelcdmd snfig syl eqeltrd ) AJUDUEUFGDUEZUGZUHABCDE
+      FGHIJKLMNOPQRSTUAUBUCUIAVFFUFZUJVGUHUJAUKDULUEURUMZVHGDADBEUNUEUOVIVHDUPV
+      IVHDUQQBDEFMUSVIVHDUTVAOVBVFVHVCVDVE $.
   $}
 
 
