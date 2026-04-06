@@ -17221,6 +17221,7 @@ New usage of "isssp" is discouraged (8 uses).
 New usage of "isst" is discouraged (4 uses).
 New usage of "issubgoilem" is discouraged (0 uses).
 New usage of "istrkg2d" is discouraged (2 uses).
+New usage of "istrkg2ldOLD" is discouraged (0 uses).
 New usage of "istrnN" is discouraged (0 uses).
 New usage of "isvcOLD" is discouraged (1 uses).
 New usage of "isvciOLD" is discouraged (3 uses).
@@ -18794,6 +18795,9 @@ New usage of "smfval" is discouraged (17 uses).
 New usage of "smgrpassOLD" is discouraged (1 uses).
 New usage of "smgrpismgmOLD" is discouraged (1 uses).
 New usage of "smgrpmgm" is discouraged (1 uses).
+New usage of "smndex1gbasOLD" is discouraged (0 uses).
+New usage of "smndex1gidOLD" is discouraged (0 uses).
+New usage of "smndex1igidOLD" is discouraged (0 uses).
 New usage of "sn-base0" is discouraged (0 uses).
 New usage of "sn-exelALT" is discouraged (0 uses).
 New usage of "sn-isghm" is discouraged (0 uses).
@@ -20365,6 +20369,7 @@ Proof modification of "isosctrlem1ALT" is discouraged (363 steps).
 Proof modification of "issgrpALT" is discouraged (53 steps).
 Proof modification of "issmgrpOLD" is discouraged (85 steps).
 Proof modification of "istrkg2d" is discouraged (439 steps).
+Proof modification of "istrkg2ldOLD" is discouraged (566 steps).
 Proof modification of "isvcOLD" is discouraged (170 steps).
 Proof modification of "isvciOLD" is discouraged (178 steps).
 Proof modification of "itgeq1fOLD" is discouraged (152 steps).
@@ -20737,6 +20742,9 @@ Proof modification of "simprimi" is discouraged (39 steps).
 Proof modification of "sineq0ALT" is discouraged (986 steps).
 Proof modification of "smgrpassOLD" is discouraged (54 steps).
 Proof modification of "smgrpismgmOLD" is discouraged (22 steps).
+Proof modification of "smndex1gbasOLD" is discouraged (130 steps).
+Proof modification of "smndex1gidOLD" is discouraged (256 steps).
+Proof modification of "smndex1igidOLD" is discouraged (172 steps).
 Proof modification of "sn-00id" is discouraged (47 steps).
 Proof modification of "sn-base0" is discouraged (4 steps).
 Proof modification of "sn-exelALT" is discouraged (52 steps).
