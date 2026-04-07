@@ -52822,6 +52822,18 @@ $)
       BUSWAWGVJVIVTBCUTVAVBVCVLWAVNVMAHIVLWAVNSDAVKHHCVEVFVDVGVH $.
   $}
 
+  ${
+    $d A a b $.  $d B a b $.  $d F a b $.
+    $( A function that maps a singleton to a class is the singleton of an
+       ordered pair.  (Contributed by Thierry Arnoux, 11-Jul-2020.) $)
+    fsn2g $p |- ( A e. V -> ( F : { A } --> B <->
+               ( ( F ` A ) e. B /\ F = { <. A , ( F ` A ) >. } ) ) ) $=
+      ( va cv csn wf cfv wcel cop wceq wa sneq feq2d fveq2 eleq1d opeq12d sneqd
+      id eqeq2d anbi12d vex fsn2 vtoclbg ) EFZGZBCHUFCIZBJZCUFUHKZGZLZMAGZBCHAC
+      IZBJZCAUNKZGZLZMEADUFALZUGUMBCUFANOUSUIUOULURUSUHUNBUFACPZQUSUKUQCUSUJUPU
+      SUFAUHUNUSTUTRSUAUBUFBCEUCUDUE $.
+  $}
+
   $( The cross product of two singletons.  (Contributed by Mario Carneiro,
      30-Apr-2015.) $)
   xpsng $p |- ( ( A e. V /\ B e. W ) ->
