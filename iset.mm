@@ -209364,6 +209364,33 @@ $)
       CNTUUKHVGFYOVKWOYRWOYPWOYS $.
   $}
 
+  ${
+    $d A w y z $.  $d B w y z $.  $d F w y z $.  $d G w y z $.  $d ph w y z $.
+    gfsumcl.b $e |- B = ( Base ` G ) $.
+    gfsumcl.z $e |- .0. = ( 0g ` G ) $.
+    gfsumcl.g $e |- ( ph -> G e. CMnd ) $.
+    gfsumcl.a $e |- ( ph -> A e. Fin ) $.
+    gfsumcl.f $e |- ( ph -> F : A --> B ) $.
+    $( Closure of a finite group sum.  (Contributed by Jim Kingdon,
+       8-Apr-2026.) $)
+    gfsumcl $p |- ( ph -> ( G gfsum F ) e. B ) $=
+      ( cres cgfsu co wceq oveq2d wcel c0 reseq2 eleq1d vw wfn ffnd fnresdm syl
+      vy vz csn cun res0 oveq2i ccmn c0g cfv gfsum0 eqtr4di eqtrid cmnd cmnmndd
+      cv mndidcl eqeltrd cfn wa wss cdif cplusg eqid ad2antrr wf simprl eldifad
+      simprr snssd unssd fssresd simplr eldifbd gfsump1 ad3antrrr ssun1 resabs1
+      adantr ax-mp simpr eqeltrid ssun2 vsnid sselii ffvelcdmd mndcl syl3anc ex
+      a1i findcard2sd eqeltrrd ) AEDBLZMNZEDMNCAWQDEMADBUBWQDOABCDKUCBDUDUEPAED
+      UAUTZLZMNZCQEDRLZMNZCQEDUFUTZLZMNZCQZEDXDUGUTZUHZUIZLZMNZCQZWRCQUAUFUGBWS
+      ROZXAXCCXNWTXBEMWSRDSPTWSXDOZXAXFCXOWTXEEMWSXDDSPTWSXJOZXAXLCXPWTXKEMWSXJ
+      DSPTWSBOZXAWRCXQWTWQEMWSBDSPTAXCFCAXCERMNZFXBREMDUJUKAEULQZXRFOIXSXREUMUN
+      FEUOHUPUEUQAEURQZFCQAEIUSZCEFGHVAUEVBAXDVCQZVDZXDBVEZXHBXDVFZQZVDZVDZXGXM
+      YHXGVDZXLEXKXDLZMNZXHXKUNZEVGUNZNZCYHXLYNOXGYHCYMXKEYEXDXHGYMVHZAXSYBYGIV
+      IYHBCXJDABCDVJYBYGKVIYHXDXIBYCYDYFVKYHXHBYHXHBXDYCYDYFVMZVLVNVOVPZAYBYGVQ
+      YPYHXHBXDYPVRVSWCYIXTYKCQYLCQZYNCQAXTYBYGXGYAVTYIYKXFCYJXEEMXDXJVEYJXEOXD
+      XIWADXDXJWBWDUKYHXGWEWFYHYRXGYHXJCXHXKYQXHXJQYHXIXJXHXIXDWGUGWHWIWNWJWCCY
+      MEYKYLGYOWKWLVBWMJWOWP $.
+  $}
+
 $( (End of Jim Kingdon's mathbox.) $)
 
 
