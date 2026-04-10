@@ -201439,6 +201439,43 @@ $)
       cfzo trlf1 f1f 3syl ffvelcdmd snfig syl eqeltrd ) AJUDUEUFGDUEZUGZUHABCDE
       FGHIJKLMNOPQRSTUAUBUCUIAVFFUFZUJVGUHUJAUKDULUEURUMZVHGDADBEUNUEUOVIVHDUPV
       IVHDUQQBDEFMUSVIVHDUTVAOVBVFVHVCVDVE $.
+
+    ${
+      trlsegvdegfi.g $e |- ( ph -> G e. UPGraph ) $.
+      trlsegvdegfi.v $e |- ( ph -> V e. Fin ) $.
+      $( If a trail in a graph ` G ` induces a subgraph ` Z ` with the vertices
+         ` V ` of ` G ` and the edges being the edges of the walk, and a
+         subgraph ` X ` with the vertices ` V ` of ` G ` and the edges being
+         the edges of the walk except the last one, and a subgraph ` Y ` with
+         the vertices ` V ` of ` G ` and one edges being the last edge of the
+         walk, then the vertex degree of any vertex ` U ` of ` G ` within ` Z `
+         is the sum of the vertex degree of ` U ` within ` X ` and the vertex
+         degree of ` U ` within ` Y ` .  Note that this theorem would not hold
+         for arbitrary walks (if the last edge was identical with a previous
+         edge, the degree of the vertices incident with this edge would not be
+         increased because of this edge).  (Contributed by Mario Carneiro,
+         8-Apr-2015.)  (Revised by AV, 20-Feb-2021.) $)
+      trlsegvdegfi $p |- ( ph -> ( ( VtxDeg ` Z ) ` U )
+          = ( ( ( VtxDeg ` X ) ` U ) + ( ( VtxDeg ` Y ) ` U ) ) ) $=
+        ( vg ciedg cfv cvtx eqid eqtr4d cfn eqeltrd cc0 cfzo cima wcel eleqtrrd
+        co cvv cxp c1st cbs cif df-vtx mptrcl syl upgrspan csn cop cres cdm wfn
+        cv wceq funfnd chash ctrls wbr wf1 trlf1 3syl ffvelcdmd fnressn syl2anc
+        wf f1f cin c0 trlsegvdeglem4 trlsegvdeglem5 ineq12d wn wa fzonel wss wb
+        cuz elfzouz2 fzoss2 f1elima syl3anc mtbiri intnanrd elin sylnibr disjsn
+        eqtrd trlsegvdeglem2 trlsegvdeglem3 cfz cun resunimafz0 uneq12d 3eqtr4d
+        sylibr trlsegvdeglem6 trlsegvdeglem7 vtxdfifiun ) AKIJIUGUHZJUGUHZCIUIU
+        HZXTUJYAUJYBUJAJUIUHZHYBSRUKAKUIUHHYBTRUKAYBHULRUEUMADUNGUOUSZUPZIFEHUT
+        LMACYBUQIUTUQACHYBPRURZUFUTUFVNZUTUTVAUQYGVBUHYGVCUHVDZUICIUFVEZVFVGRUA
+        UDVHAGDUHZVIZJFEHUTLMACYCUQJUTUQACHYCPSURUFUTYHUICJYIVFVGSAYAYJYJFUHVJV
+        IZFYKVKZUBAFFVLZVMYJYNUQZYMYLVOAFNVPAUNDVQUHZUOUSZYNGDADBEVRUHVSZYQYNDV
+        TZYQYNDWFQBDEFMWAZYQYNDWGWBZOWCYNYJFWDWEUKUDVHAXTVLZYAVLZWHYEYNWHZYKWHZ
+        WIAUUBUUDUUCYKABCDEFGHIJKLMNOPQRSTUAUBUCWJABCDEFGHIJKLMNOPQRSTUAUBUCWKW
+        LAYJUUDUQZWMUUEWIVOAYJYEUQZYOWNUUFAUUGYOAUUGGYDUQZUNGWOAYSGYQUQZYDYQWPZ
+        UUGUUHWQAYRYSQYTVGOAUUIYPGWRUHUQUUJOGUNYPWSGUNYPWTWBYQYNDGYDXAXBXCXDYJY
+        EYNXEXFUUDYJXGXPXHABCDEFGHIJKLMNOPQRSTUAUBUCXIABCDEFGHIJKLMNOPQRSTUAUBU
+        CXJYFAFDUNGXKUSUPVKFYEVKZYLXLKUGUHXTYAXLADFGNUUAOXMUCAXTUUKYAYLUAUBXNXO
+        ABCDEFGHIJKLMNOPQRSTUAUBUCXQABCDEFGHIJKLMNOPQRSTUAUBUCXRXS $.
+    $}
   $}
 
 
