@@ -92,6 +92,14 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+11-Apr-26 t1e1ALT     [same]      Moved from SN's mathbox to main set.mm
+11-Apr-26 nnadd1com   [same]      Moved from SN's mathbox to main set.mm
+11-Apr-26 nnaddcom    [same]      Moved from SN's mathbox to main set.mm
+11-Apr-26 nnaddcomli  [same]      Moved from SN's mathbox to main set.mm
+11-Apr-26 nnadddir    [same]      Moved from SN's mathbox to main set.mm
+11-Apr-26 nnmul1com   [same]      Moved from SN's mathbox to main set.mm
+11-Apr-26 nnmulcom    [same]      Moved from SN's mathbox to main set.mm
+11-Apr-26 zltp1led    [same]      Moved from MKU's mathbox to main set.mm
 11-Apr-26 df-ind      [same]      Moved from TA's mathbox to main set.mm
 11-Apr-26 indv        [same]      Moved from TA's mathbox to main set.mm
 11-Apr-26 indval      [same]      Moved from TA's mathbox to main set.mm
