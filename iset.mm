@@ -52822,6 +52822,18 @@ $)
       BUSWAWGVJVIVTBCUTVAVBVCVLWAVNVMAHIVLWAVNSDAVKHHCVEVFVDVGVH $.
   $}
 
+  ${
+    $d A a b $.  $d B a b $.  $d F a b $.
+    $( A function that maps a singleton to a class is the singleton of an
+       ordered pair.  (Contributed by Thierry Arnoux, 11-Jul-2020.) $)
+    fsn2g $p |- ( A e. V -> ( F : { A } --> B <->
+               ( ( F ` A ) e. B /\ F = { <. A , ( F ` A ) >. } ) ) ) $=
+      ( va cv csn wf cfv wcel cop wceq wa sneq feq2d fveq2 eleq1d opeq12d sneqd
+      id eqeq2d anbi12d vex fsn2 vtoclbg ) EFZGZBCHUFCIZBJZCUFUHKZGZLZMAGZBCHAC
+      IZBJZCAUNKZGZLZMEADUFALZUGUMBCUFANOUSUIUOULURUSUHUNBUFACPZQUSUKUQCUSUJUPU
+      SUFAUHUNUSTUTRSUAUBUFBCEUCUDUE $.
+  $}
+
   $( The cross product of two singletons.  (Contributed by Mario Carneiro,
      30-Apr-2015.) $)
   xpsng $p |- ( ( A e. V /\ B e. W ) ->
@@ -128442,6 +128454,18 @@ $)
   $}
 
   ${
+    $d A f $.
+    $( A finite set can be enumerated by integers starting at one.
+       (Contributed by Jim Kingdon, 4-Apr-2026.) $)
+    fzf1o $p |- ( A e. Fin -> E. f f : ( 1 ... ( # ` A ) ) -1-1-onto-> A ) $=
+      ( cfn wcel c0 wceq c1 chash cfv cfz co cv wf1o wex cn wa eqidd cc0 eqtrdi
+      f1o0 simpr fveq2d hash0 oveq2d fz10 f1oeq123d mpbiri 0ex f1oeq1 spcev syl
+      simprr fz1f1o mpjaodan ) ACDZAEFZGAHIZJKZABLZMZBNZUQODZVAPUOUPPZURAEMZVAV
+      CVDEEEMTVCUREAEEEVCEQVCURGRJKEVCUQRGJVCUQEHIRVCAEHUOUPUAZUBUCSUDUESVEUFUG
+      UTVDBEUHURAUSEUIUJUKUOVBVAULABUMUN $.
+  $}
+
+  ${
     nnf1o.mn $e |- ( ph -> ( M e. NN /\ N e. NN ) ) $.
     nnf1o.m $e |- ( ph -> F : ( 1 ... M ) -1-1-onto-> A ) $.
     nnf1o.n $e |- ( ph -> G : ( 1 ... N ) -1-1-onto-> A ) $.
@@ -163506,6 +163530,40 @@ $)
         VAUDSDCSZWBVQTIAGJUQKCVPEFGGDNHVPURZUSUTVBAVORDVPAVOVCRUBQRAVNVCRUBAGAG
         JVDVEVFVGVHVFAWDVRDTKCVPFDHWEVIUNVJ $.
     $}
+  $}
+
+  ${
+    $d F x $.  $d M x $.  $d N x $.  $d ph x $.
+    gsumsplit0.b $e |- B = ( Base ` G ) $.
+    gsumsplit0.p $e |- .+ = ( +g ` G ) $.
+    gsumsplit0.g $e |- ( ph -> G e. Mnd ) $.
+    gsumsplit0.m $e |- ( ph -> M e. ZZ ) $.
+    gsumsplit0.n $e |- ( ph -> N e. ( ZZ>= ` ( M - 1 ) ) ) $.
+    gsumsplit0.f $e |- ( ph -> F : ( M ... ( N + 1 ) ) --> B ) $.
+    $( Splitting off the rightmost summand of a group sum (even if it is the
+       only summand).  Similar to ~ gsumsplit1r except that ` N ` can equal
+       ` M - 1 ` .  (Contributed by Jim Kingdon, 4-Apr-2026.) $)
+    gsumsplit0 $p |- ( ph -> ( G gsum F )
+        = ( ( G gsum ( F |` ( M ... N ) ) ) .+ ( F ` ( N + 1 ) ) ) ) $=
+      ( vx co wceq cgsu wcel adantr cz c1 cmin cfz cres caddc cfv cuz wa oveq1d
+      simpr zcnd 1cnd npcand eqtrd fveq2d c0g c0 clt wbr ltm1d eqbrtrd peano2zm
+      zred wb syl eqeltrd syl2an2r mpbid reseq2d res0 eqtrdi oveq2d cmnd gsum0g
+      fzn eqid wf cle eqcomd eqle eluz2 syl3anbrc eluzfz2 ffvelcdmd mndlid cmpt
+      cr csn cop fzsn feq2d fsn2g simprd simpld fmptsn cv eqidd nfcv gsumfzsnfd
+      nfv 3eqtr4rd gsumsplit1r wo uzp1 eleq2d orbi2d mpjaodan ) AGFUAUBOZPZEDQO
+      ZEDFGUCOZUDZQOZGUAUEOZDUFZCOZPGFUGUFZRZAXIUHZXOFDUFZXPXJXSXNFDXSXNXHUAUEO
+      ZFXSGXHUAUEAXIUJZUIAYAFPXIAFUAAFKUKAULUMZSUNZUOXSXPEUPUFZXOCOZXOXSXMYEXOC
+      XSXMEUQQOZYEXSXLUQEQXSXLDUQUDUQXSXKUQDXSGFURUSZXKUQPZXSGXHFURYBAXHFURUSXI
+      AFAFKVCZUTSVAAFTRZXIGTRYHYIVDKXSGXHTYBAXHTRZXIAYKYLKFVBVESVFFGVOVGVHVIDVJ
+      VKVLXSEVMRZYGYEPAYMXIJSZEVMYEYEVPZVNVEUNUIAYMXIXOBRYFXOPJXSFXNUCOZBXNDAYP
+      BDVQZXIMSZXSXNXQRZXNYPRXSYKXNTRFXNVRUSZYSAYKXIKSZXSXNFTYDUUAVFAFWGRXIFXNP
+      YTYJXSXNFYDVSFXNVTVGFXNWAWBFXNWCVEWDBCEXOYEHIYOWEVGUNXSXJENFWHZXTWFZQOXTX
+      SDUUCEQXSDFXTWIWHZUUCXSXTBRZDUUDPZXSUUBBDVQZUUEUUFUHZXSYQUUGYRXSYPUUBBDXS
+      YPFFUCOZUUBXSXNFFUCYDVLAUUIUUBPZXIAYKUUJKFWJVESUNWKVHAUUGUUHVDZXIAYKUUKKF
+      BDTWLVESVHZWMAYKXIUUEUUDUUCPKXSUUEUUFUULWNZNFXTTBWOVGUNVLXSXTBXTNEFHYNUUA
+      UUMXSNWPFPUHXTWQXSNWTNXTWRWSUNXAAXRUHBCDEFGVMHIAYMXRJSAYKXRKSAXRUJAYQXRMS
+      XBAXIGYAUGUFZRZXCZXIXRXCAGXHUGUFRUUPLXHGXDVEAUUOXRXIAUUNXQGAYAFUGYCUOXEXF
+      VHXG $.
   $}
 
 
@@ -209236,6 +209294,101 @@ $)
       WPAXQXGJSZAXPXGISZFEWGWHWIYMXPXQYRYSWPUUAYTEFWJWHWDWKWDCBWLWMZWNYMXEDTMNZ
       YOYMCTDMUUBWNYMXNUUCYOOYPDUKYOYOUQWOVNWQWRAXDWSZXDXGWTAXPXQUUDIJEFXAWHXDX
       BVNXC $.
+  $}
+
+  ${
+    $d x A $.  $d k x B $.  $d k x C $.  $d k x G $.  $d k x M $.  $d k x V $.
+    gfsumsn.b $e |- B = ( Base ` G ) $.
+    gfsumsn.s $e |- ( k = M -> A = C ) $.
+    $( Group sum of a singleton.  (Contributed by Jim Kingdon, 2-Apr-2026.) $)
+    gfsumsn $p |- ( ( G e. CMnd /\ M e. V /\ C e. B ) ->
+        ( G gfsum ( k e. { M } |-> A ) ) = C ) $=
+      ( vx wcel csn cmpt co c1 cgsu wceq 3ad2ant2 cfz cz ccmn w3a cgfsu ccom cv
+      simp1 elsni syl adantl simpl3 eqeltrd fmpttd cfn snfig chash cfv wf1o cop
+      wa 1z simp2 f1osng sylancr fmptsn eqcomd hashsng oveq2d fzsn ax-mp eqtrdi
+      eqidd f1oeq123d mpbird gfsumval snidg adantr cofmpt eqid fvmptd3 mpteq2dv
+      simp3 eqtrd cmnmndd 1zzd nfv nfcv gsumfzsnfd 3eqtrd ) EUAKZFGKZCBKZUBZEDF
+      LZAMZUCNEWNJOLZFMZUDZPNEJWOCMZPNCWLWMBWNWPEHWIWJWKUFZWLDWMABWLDUEZWMKZUSA
+      CBXAACQZWLXAWTFQXBWTFUGIUHUIWIWJWKXAUJUKULZWJWIWMUMKWKFGUNRWLOWMUOUPZSNZW
+      MWPUQWOWMOFURLZUQZWLOTKZWJXGUTWIWJWKVAZOFTGVBVCWLXEWOWMWMWPXFWLXFWPWLXHWJ
+      XFWPQUTXIJOFTGVDVCVEWJWIXEWOQWKWJXEOOSNZWOWJXDOOSFGVFVGXHXJWOQUTOVHVIVJRW
+      LWMVKVLVMVNWLWQWREPWLWQJWOFWNUPZMWRWLJWOFWMBWNXCWLFWMKZJUEZWOKWJWIXLWKFGV
+      ORZVPVQWLJWOXKCWLDFACWMWNBWNVRIXNWIWJWKWAZVSVTWBVGWLCBCJEOHWLEWSWCWLWDXOW
+      LXMOQUSCVKWLJWEJCWFWGWH $.
+  $}
+
+  ${
+    $d .+ h $.  $d F h $.  $d G h $.  $d Y h $.  $d Z h $.  $d h ph $.
+    gfsump1.b $e |- B = ( Base ` G ) $.
+    gfsump1.p $e |- .+ = ( +g ` G ) $.
+    gfsump1.g $e |- ( ph -> G e. CMnd ) $.
+    gfsump1.f $e |- ( ph -> F : ( Y u. { Z } ) --> B ) $.
+    gfsump1.fi $e |- ( ph -> Y e. Fin ) $.
+    gfsump1.zv $e |- ( ph -> Z e. V ) $.
+    gfsump1.z $e |- ( ph -> -. Z e. Y ) $.
+    $( Splitting off one element from a finite group sum.  This would typically
+       used in a proof by induction.  (Contributed by Jim Kingdon,
+       3-Apr-2026.) $)
+    gfsump1 $p |- ( ph -> ( G gfsum F )
+        = ( ( G gfsum ( F |` Y ) ) .+ ( F ` Z ) ) ) $=
+      ( c1 co wceq wcel adantr vh chash cfv cfz cv wf1o cgfsu cfn wex fzf1o syl
+      cres wa caddc cop csn cun ccom cgsu wf wn unsnfi syl3anc cin c0 simpr cn0
+      hashcl peano2nn0 f1osng syl2anc fzp1disj a1i disjsn sylibr f1oun syl22anc
+      ccmn jca hashunsng sylc oveq2d cz cmin cuz 1z nn0uz 1m1e0 fveq2i eleqtrdi
+      cc0 eqtr4i fzsuc2 sylancr eqtrd f1oeq2d mpbird gfsumval cmnd cmnmndd 1zzd
+      f1of fco gsumsplit0 resco resundir incom eqtri wfn fnsng fnresdisj uneq2d
+      wb mpbii un0 eqtrdi eqtrid coeq2d f1ofn fnresdm adantl crn wss frnd cores
+      eqtr4d ssun1 fssresd nn0p1nn nnuz eluzfz2 fvco3 snidg fvun2 fvsng oveq12d
+      cn fveq2d exlimddv ) APGUBUCZUDQZGUAUEZUFZEDUGQZEDGULZUGQZHDUCZCQZRUAAGUH
+      SZUUCUAUIMGUAUJUKAUUCUMZUUDEDUUBYTPUNQZHUOUPZUQZURZUUAULZUSQZUUKUUNUCZCQZ
+      UUHUUJUUDEUUNUSQUURUUJGHUPZUQZBDUUMEIAEVRSUUCKTZAUUTBDUTZUUCLTZAUUTUHSZUU
+      CAUUIHFSZHGSVAZUVDMNOGHFVBVCTUUJPUUTUBUCZUDQZUUTUUMUFUUAUUKUPZUQZUUTUUMUF
+      ZUUJUUCUVIUUSUULUFZUUAUVIVDZVERZGUUSVDVERZUVKAUUCVFZAUVLUUCAUUKVGSZUVEUVL
+      AYTVGSZUVQAUUIUVRMGVHUKZYTVIUKZNUUKHVGFVJVKTUVNUUJPYTVLZVMZAUVOUUCAUVFUVO
+      OGHVNVOTUUAGUVIUUSUUBUULVPVQZUUJUVHUVJUUTUUMAUVHUVJRUUCAUVHPUUKUDQZUVJAUV
+      GUUKPUDAUVEUUIUVFUMUVGUUKRNAUUIUVFMOVSGHFVTWAWBAPWCSYTPPWDQZWEUCZSZUWDUVJ
+      RZWFAYTVGUWFUVSVGWKWEUCUWFWGUWEWKWEWHWIWLWJZPYTWMWNZWOTWPWQWRUUJBCUUNEPYT
+      IJAEWSSUUCAEKWTTUUJXAAUWGUUCUWITUUJUVBUWDUUTUUMUTZUWDBUUNUTUVCUUJUWDUUTUU
+      MUFZUWKUUJUWLUVKUWCUUJUWDUVJUUTUUMAUWHUUCUWJTWPWQUWDUUTUUMXBUKZUWDUUTBDUU
+      MXCVKXDWOUUJUUPUUFUUQUUGCUUJUUPEUUEUUBURZUSQUUFUUJUUOUWNEUSUUJUUODUUBURZU
+      WNUUJUUODUUBUUAULZURZUWOAUUOUWQRUUCAUUODUUMUUAULZURUWQDUUMUUAXEAUWRUWPDAU
+      WRUWPUULUUAULZUQZUWPUUBUULUUAXFAUWTUWPVEUQUWPAUWSVEUWPAUVIUUAVDZVERZUWSVE
+      RZUXAUVMVEUVIUUAXGUWAXHAUULUVIXIZUXBUXCXMAUVQUVEUXDUVTNUUKHVGFXJVKZUVIUUA
+      UULXKUKXNXLUWPXOXPXQXRXQTUUJUWPUUBDUUCUWPUUBRZAUUCUUBUUAXIZUXFUUAGUUBXSZU
+      UAUUBXTUKYAXRWOUUJUUBYBGYCUWNUWORUUJUUAGUUBUUCUUAGUUBUTAUUAGUUBXBYAYDDUUB
+      GYEUKYFWBUUJGBUUEUUBEIUVAAGBUUEUTUUCAUUTBGDLGUUTYCAGUUSYGVMYHTAUUIUUCMTUV
+      PWRYFUUJUUQUUKUUMUCZDUCZUUGUUJUWKUUKUWDSZUUQUXJRUWMAUXKUUCAUUKPWEUCZSUXKA
+      UUKYQUXLAUVRUUKYQSUVSYTYIUKYJWJPUUKYKUKTUWDUUTUUKDUUMYLVKUUJUXIHDUUJUXIUU
+      KUULUCZHUUJUXGUXDUVNUUKUVISZUMUXIUXMRUUCUXGAUXHYAAUXDUUCUXETUUJUVNUXNUWBU
+      UJUVQUXNAUVQUUCUVTTZUUKVGYMUKVSUUAUVIUUBUULUUKYNVCUUJUVQUVEUXMHRUXOAUVEUU
+      CNTUUKHVGFYOVKWOYRWOYPWOYS $.
+  $}
+
+  ${
+    $d A w y z $.  $d B w y z $.  $d F w y z $.  $d G w y z $.  $d ph w y z $.
+    gfsumcl.b $e |- B = ( Base ` G ) $.
+    gfsumcl.z $e |- .0. = ( 0g ` G ) $.
+    gfsumcl.g $e |- ( ph -> G e. CMnd ) $.
+    gfsumcl.a $e |- ( ph -> A e. Fin ) $.
+    gfsumcl.f $e |- ( ph -> F : A --> B ) $.
+    $( Closure of a finite group sum.  (Contributed by Jim Kingdon,
+       8-Apr-2026.) $)
+    gfsumcl $p |- ( ph -> ( G gfsum F ) e. B ) $=
+      ( cres cgfsu co wceq oveq2d wcel c0 reseq2 eleq1d vw wfn ffnd fnresdm syl
+      vy vz csn cun res0 oveq2i ccmn c0g cfv gfsum0 eqtr4di eqtrid cmnd cmnmndd
+      cv mndidcl eqeltrd cfn wa wss cdif cplusg eqid ad2antrr wf simprl eldifad
+      simprr snssd unssd fssresd simplr eldifbd gfsump1 ad3antrrr ssun1 resabs1
+      adantr ax-mp simpr eqeltrid ssun2 vsnid sselii ffvelcdmd mndcl syl3anc ex
+      a1i findcard2sd eqeltrrd ) AEDBLZMNZEDMNCAWQDEMADBUBWQDOABCDKUCBDUDUEPAED
+      UAUTZLZMNZCQEDRLZMNZCQEDUFUTZLZMNZCQZEDXDUGUTZUHZUIZLZMNZCQZWRCQUAUFUGBWS
+      ROZXAXCCXNWTXBEMWSRDSPTWSXDOZXAXFCXOWTXEEMWSXDDSPTWSXJOZXAXLCXPWTXKEMWSXJ
+      DSPTWSBOZXAWRCXQWTWQEMWSBDSPTAXCFCAXCERMNZFXBREMDUJUKAEULQZXRFOIXSXREUMUN
+      FEUOHUPUEUQAEURQZFCQAEIUSZCEFGHVAUEVBAXDVCQZVDZXDBVEZXHBXDVFZQZVDZVDZXGXM
+      YHXGVDZXLEXKXDLZMNZXHXKUNZEVGUNZNZCYHXLYNOXGYHCYMXKEYEXDXHGYMVHZAXSYBYGIV
+      IYHBCXJDABCDVJYBYGKVIYHXDXIBYCYDYFVKYHXHBYHXHBXDYCYDYFVMZVLVNVOVPZAYBYGVQ
+      YPYHXHBXDYPVRVSWCYIXTYKCQYLCQZYNCQAXTYBYGXGYAVTYIYKXFCYJXEEMXDXJVEYJXEOXD
+      XIWADXDXJWBWDUKYHXGWEWFYHYRXGYHXJCXHXKYQXHXJQYHXIXJXHXIXDWGUGWHWIWNWJWCCY
+      MEYKYLGYOWKWLVBWMJWOWP $.
   $}
 
 $( (End of Jim Kingdon's mathbox.) $)

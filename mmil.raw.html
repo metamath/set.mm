@@ -11802,10 +11802,18 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <tr>
-  <td>df-gsum</td>
+  <td rowspan="2">df-gsum</td>
   <td>~ df-igsum</td>
   <td>the set.mm definition would require more decidability than
-  we want to require in many cases</td>
+  we want to require in many cases. So we define ` gsum `
+  for sums indexed by consecutive integers...
+  </td>
+</tr>
+
+<tr>
+  <td>~ df-gfsum</td>
+  <td>... and an alternate syntax ` gfsum ` for sums indexed
+  by finite sets where the order does not matter</td>
 </tr>
 
 <TR>
@@ -12042,9 +12050,14 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>gsum0</td>
+  <td rowspan="2">gsum0</td>
   <td>~ gsum0g</td>
-  <td>adds set existence condition</td>
+  <td>for ` gsum ` , with added set existence condition</td>
+</tr>
+
+<tr>
+  <td>~ gfsum0</td>
+  <td>for ` gfsum `</td>
 </tr>
 
 <tr>
@@ -12349,11 +12362,14 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>gsumcl</td>
+  <td rowspan="2">gsumcl</td>
   <td>~ gsumfzcl</td>
-  <td>The group sum needs to be indexed by
-  consecutive integers. Also, we don't need
-  commutativity since the order is specified.</td>
+  <td>for ` gsum `</td>
+</tr>
+
+<tr>
+  <td>~ gfsumcl</td>
+  <td>for ` gfsum `</td>
 </tr>
 
 <tr>
@@ -12480,9 +12496,15 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>gsumsnd , gsumsnf , gsumsn</td>
+  <td>gsumsnd , gsumsnf</td>
   <td><i>none</i></td>
-  <td>should be possible with small changes (see ~ gsumfzsnfd )</td>
+  <td>these are variations on similar theorems - see
+  ~ gsumfzsnfd and ~ gfsumsn</td>
+</tr>
+
+<tr>
+  <td>gsumsn</td>
+  <td>~ gsumfzsnfd , ~ gfsumsn</td>
 </tr>
 
 <tr>
