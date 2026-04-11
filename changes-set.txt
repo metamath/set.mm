@@ -92,6 +92,8 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+11-Apr-26 muldivdid   [same]      Moved from TA's mathbox to main set.mm
+11-Apr-26 elfzod      [same]      Moved from GS's mathbox to main set.mm
 11-Apr-26 t1e1ALT     [same]      Moved from SN's mathbox to main set.mm
 11-Apr-26 nnadd1com   [same]      Moved from SN's mathbox to main set.mm
 11-Apr-26 nnaddcom    [same]      Moved from SN's mathbox to main set.mm
