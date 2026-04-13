@@ -201483,6 +201483,17 @@ $)
         c1st vtxdgfif ffvelcdmd ) AIUGUHZUICIUJUHAIUKUHZULZIVPVOVOUMVPUMVQUMABC
         DEFGHIJKLMNOPQRSTUAUBUCUNAVOHUORUEUPADURGUQUSUTIFEHVALMACVOVBIVAVBACHVO
         PRVCZUFVAUFVDZVAVAVEVBVSVLUHVSVFUHVGUGCIUFVHVIVJRUAUDVKVMVRVN $.
+
+      $( Lemma for ~ eupth2lem3 .  (Contributed by AV, 21-Feb-2021.) $)
+      eupth2lem3lem2fi $p |- ( ph -> ( ( VtxDeg ` Y ) ` U ) e. NN0 ) $=
+        ( cvtx cfv cn0 cvtxdg ciedg cdm eqid trlsegvdeglem7 cfn eqeltrd csn cvv
+        vg wcel eleqtrrd cxp c1st cbs cif df-vtx mptrcl syl cop cres wfn funfnd
+        cv wceq cc0 chash cfzo co ctrls wbr wf1 wf trlf1 3syl ffvelcdmd fnressn
+        f1f syl2anc eqtr4d upgrspan vtxdgfif ) AJUFUGZUHCJUIUGAJUJUGZUKZJWLWKWK
+        ULWLULWMULABCDEFGHIJKLMNOPQRSTUAUBUCUMAWKHUNSUEUOAGDUGZUPZJFEHUQLMACWKU
+        SJUQUSACHWKPSUTZURUQURVLZUQUQVAUSWQVBUGWQVCUGVDUFCJURVEVFVGSAWLWNWNFUGV
+        HUPZFWOVIZUBAFFUKZVJWNWTUSWSWRVMAFNVKAVNDVOUGVPVQZWTGDADBEVRUGVSXAWTDVT
+        XAWTDWAQBDEFMWBXAWTDWFWCOWDWTWNFWEWGWHUDWIWJWPWD $.
     $}
   $}
 
