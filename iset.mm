@@ -201546,6 +201546,18 @@ $)
     $}
 
     ${
+      eupth2lem3lem5.o $e |- ( ph -> { x e. V | -. 2 || ( ( VtxDeg ` X ) ` x ) } =
+          if ( ( P ` 0 ) = ( P ` N ) , (/) , { ( P ` 0 ) , ( P ` N ) } ) ) $.
+      eupth2lem3.e $e |- ( ph -> ( I ` ( F ` N ) )
+                                  = { ( P ` N ) , ( P ` ( N + 1 ) ) } ) $.
+      $( Lemma for ~ eupth2 .  (Contributed by AV, 25-Feb-2021.) $)
+      eupth2lem3lem5 $p |- ( ph -> ( I ` ( F ` N ) ) e. ~P V ) $=
+        ( cfv c1 caddc co cpr cpw wcel wa trlsegvdeglem1 prelpwi syl eqeltrd ) AH
+        EUGGUGHCUGZHUHUIUJCUGZUKZIULZUFAUSIUMUTIUMUNVAVBUMACDEFGHIMNOPQRUOUSUTIUP
+        UQUR $.
+    $}
+
+    ${
       eupth2lem3lem4fi.g $e |- ( ph -> G e. UMGraph ) $.
       eupth2lem3lem4fi.v $e |- ( ph -> V e. Fin ) $.
       $d U x $.  $d V x $.  $d X x $.
