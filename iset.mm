@@ -201678,6 +201678,40 @@ $)
         AUYIUWMVVTUYLVTZIUXCUWLYKYIZUXDUWCXMUWDVWAUXGUXRVWAVWJUXRVHVWGVWAUXCUWL
         UWKDIVWTVXAVWAUWKUWLAUWMVVTYLUWEUXIVVTYMYNUWFUWGXDYOYPYTUWHUWIUWJ $.
     $}
+
+    ${
+      $d U x $.  $d V x $.  $d X x $.
+      eupth2lem3lem7fi.g $e |- ( ph -> G e. UMGraph ) $.
+      eupth2lem3lem7fi.v $e |- ( ph -> V e. Fin ) $.
+      eupth2lem3lem7fi.o $e |- ( ph -> { x e. V | -. 2 || ( ( VtxDeg ` X ) ` x ) } =
+          if ( ( P ` 0 ) = ( P ` N ) , (/) , { ( P ` 0 ) , ( P ` N ) } ) ) $.
+      eupth2lem3lem7fi.e $e |- ( ph -> ( I ` ( F ` N ) )
+                                = { ( P ` N ) , ( P ` ( N + 1 ) ) } ) $.
+      $( Lemma for ~ eupth2lem3 :  Combining ~ trlsegvdegfi ,
+         ~ eupth2lem3lem3fi , ~ eupth2lem3lem4fi and ~ eupth2lem3lem6fi .
+         (Contributed by Mario Carneiro, 8-Apr-2015.)  (Revised by AV,
+         27-Feb-2021.) $)
+      eupth2lem3lem7fi $p |- ( ph -> ( -. 2 || ( ( VtxDeg ` Z ) ` U )
+                           <-> U e. if ( ( P ` 0 ) = ( P ` ( N + 1 ) ) , (/) ,
+                                       { ( P ` 0 ) , ( P ` ( N + 1 ) ) } ) ) ) $=
+        ( c2 cvtxdg cfv cdvds wbr wn caddc co cc0 c1 wceq c0 cpr cif wcel cumgr
+        cupgr umgrupgr syl trlsegvdegfi breq2d notbid wne wdc csn wss wif chash
+        wb cfn ctrls cwlks wf trliswlk wlkp 3syl cfzo elfzofz ffvelcdmd fzofzp1
+        fidceq syl3anc ifpprsnssdc syl2anc eupth2lem3lem3fi wa eupth2lem3lem4fi
+        cfz wo eupth2lem3lem5 3expa neanior eupth2lem3lem6fi sylan2br dcor sylc
+        adantr exmiddc mpjaodan dcne sylib bitrd ) AUIDLUJUKUKZULUMZUNUIDJUJUKU
+        KDKUJUKUKUOUPZULUMZUNZDUQCUKZHURUOUPZCUKZUSUTXPXRVAVBVCZAXLXNAXKXMUIULA
+        CDEFGHIJKLMNOPQRSTUAUBUCUDAFVDVCFVEVCUEFVFVGZUFVHVIVJAHCUKZXRUSZXOXSVQZ
+        YAXRVKZABCDEFGHIJKLMNOPQRSTUAUBUCUDXTUFUGAHEUKGUKZYAXRVAZUSYBVLZYBYEYAV
+        MUSYFYEVNVOUHAIVRVCZYAIVCZXRIVCZYGUFAUQEVPUKZWPUPZIHCAECFVSUKUMECFVTUKU
+        MYLICWARCEFWBCEFIMWCWDZAHUQYKWEUPVCZHYLVCPHUQYKWFVGWGZAYLIXQCYMAYNXQYLV
+        CPUQYKHWHVGWGZIYAXRWIWJZYAXRYEWKWLZWMAYDWNZDYAUSZDXRUSZWQZYCUUBUNZAYDUU
+        BYCABCDEFGHIJKLMNOPQRSTUAUBUCUDUEUFUGYRABCDEFGHIJKLMNOPQRSTUAUBUCUDUGUH
+        WRWOWSUUCYSDYAVKDXRVKWNZYCDYADXRWTAYDUUDYCABCDEFGHIJKLMNOPQRSTUAUBUCUDX
+        TUFUGUHXAWSXBYSUUBVLZUUBUUCWQYSYTVLZUUAVLZUUEAUUFYDAYHDIVCZYIUUFUFQYOID
+        YAWIWJXEAUUGYDAYHUUHYJUUGUFQYPIDXRWIWJXEYTUUAXCXDUUBXFVGXGAYGYBYDWQYQYA
+        XRXHXIXGXJ $.
+    $}
   $}
 
 
