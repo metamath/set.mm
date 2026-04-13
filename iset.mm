@@ -201494,6 +201494,55 @@ $)
         SJUQUSACHWKPSUTZURUQURVLZUQUQVAUSWQVBUGWQVCUGVDUFCJURVEVFVGSAWLWNWNFUGV
         HUPZFWOVIZUBAFFUKZVJWNWTUSWSWRVMAFNVKAVNDVOUGVPVQZWTGDADBEVRUGVSXAWTDVT
         XAWTDWAQBDEFMWBXAWTDWFWCOWDWTWNFWEWGWHUDWIWJWPWD $.
+
+      $d U x $.  $d V x $.  $d X x $.
+      eupth2lem3.o $e |- ( ph -> { x e. V | -. 2 || ( ( VtxDeg ` X ) ` x ) } =
+          if ( ( P ` 0 ) = ( P ` N ) , (/) , { ( P ` 0 ) , ( P ` N ) } ) ) $.
+      ${
+        eupth2lem3lem3.e $e |- ( ph -> if- ( ( P ` N ) = ( P ` ( N + 1 ) ) ,
+                                       ( I ` ( F ` N ) ) = { ( P ` N ) } ,
+                                       { ( P ` N ) , ( P ` ( N + 1 ) ) }
+                                       C_ ( I ` ( F ` N ) ) ) ) $.
+        $( Lemma for ~ eupth2lem3 , formerly part of proof of ~ eupth2lem3 :
+           If a loop ` { ( P `` N ) , ( P `` ( N + 1 ) ) } ` is added to a
+           trail, the degree of the vertices with odd degree remains odd
+           (regarding the subgraphs induced by the involved trails).
+           (Contributed by Mario Carneiro, 8-Apr-2015.)  (Revised by AV,
+           21-Feb-2021.) $)
+        eupth2lem3lem3fi $p |- ( ( ph /\ ( P ` N ) = ( P ` ( N + 1 ) ) )
+               -> ( -. 2 || ( ( ( VtxDeg ` X ) ` U ) + ( ( VtxDeg ` Y ) ` U ) )
+                    <-> U e. if ( ( P ` 0 ) = ( P ` ( N + 1 ) ) , (/) ,
+                                  { ( P ` 0 ) , ( P ` ( N + 1 ) ) } ) ) ) $=
+          ( cfv c1 caddc co wceq wa c2 cvtxdg cdvds wbr wn cc0 c0 cpr cif wb cv
+          wcel fveq2 breq2d notbid elrab3 eleq2d bitr3d adantr eupth2lem3lem1fi
+          crab syl cz a1i nn0zd eupth2lem3lem2fi wne z2even cvtx ad2antrr chash
+          2z cdm cfzo ctrls wf1 wf trlf1 f1f ffvelcdmd ciedg cop csn wss ifptru
+          3syl wif adantl mpbid eqcoms sylan9eq opeq2d sneqd eqtrd 1loopgrvd2fi
+          sneq cfn breqtrrid z0even trlsegvdeglem1 simpld anim1i eldifsn sylibr
+          cdif 1loopgrvd0fi wdc wo cfz cwlks trliswlk wlkp elfzofz syl3anc dcne
+          fidceq sylib mpjaodan dvdsadd2b syl112anc nn0cnd addcomd bitrd eqeq2d
+          simpr preq2d ifbieq2d 3bitr3d ) AHCUIZHUJUKULCUIZUMZUNZUODJUPUIZUIZUQ
+          URZUSZDUTCUIZUUCUMZVAUUKUUCVBZVCZVFZUOUUHDKUPUIUIZUKULZUQURZUSDUUKUUD
+          UMZVAUUKUUDVBZVCZVFAUUJUUOVDUUEADUOBVEZUUGUIZUQURZUSZBIVOZVFZUUJUUOAD
+          IVFZUVGUUJVDQUVEUUJBDIUVBDUMZUVDUUIUVIUVCUUHUOUQUVBDUUGVGVHVIVJVPAUVF
+          UUNDUGVKVLVMUUFUUIUURUUFUUIUOUUPUUHUKULZUQURZUURUUFUOVQVFZUUHVQVFZUUP
+          VQVFZUOUUPUQURZUUIUVKVDUVLUUFWFVRAUVMUUEAUUHACDEFGHIJKLMNOPQRSTUAUBUC
+          UDUEUFVNZVSVMAUVNUUEAUUPACDEFGHIJKLMNOPQRSTUAUBUCUDUEUFVTZVSVMUUFDUUC
+          UMZUVODUUCWAZUUFUVRUNZUOUOUUPUQWBUVTHEUIZKDIGWGZAKWCUIIUMZUUEUVRTWDAU
+          WAUWBVFZUUEUVRAUTEWEUIZWHULZUWBHEAECFWIUIURZUWFUWBEWJUWFUWBEWKRCEFGNW
+          LUWFUWBEWMWTPWNZWDAUVHUUEUVRQWDUVTKWOUIZUWAUWAGUIZWPZWQZUWADWQZWPZWQA
+          UWIUWLUMZUUEUVRUCWDUVTUWKUWNUVTUWJUWMUWAUUFUVRUWJUUCWQZUWMUUFUUEUWJUW
+          PUMZUUCUUDVBUWJWRZXAZUWQAUWSUUEUHVMUUEUWSUWQVDAUUEUWQUWRWSXBXCZUWPUWM
+          UMUUCDUUCDXJXDXEXFXGXHAIXKVFZUUEUVRUFWDXIXLUUFUVSUNZUOUTUUPUQXMUXBUWA
+          KDUUCIUWBAUWCUUEUVSTWDAUWDUUEUVSUWHWDAUUCIVFZUUEUVSAUXCUUDIVFACDEFGHI
+          MNOPQRXNXOWDUUFUWIUWAUWPWPZWQZUMUVSUUFUWIUWLUXEAUWOUUEUCVMUUFUWKUXDUU
+          FUWJUWPUWAUWTXFXGXHVMAUXAUUEUVSUFWDUXBUVHUVSUNDIUWPXSVFUUFUVHUVSAUVHU
+          UEQVMZXPDIUUCXQXRXTXLUUFUVRYAZUVRUVSYBUUFUXAUVHUXCUXGAUXAUUEUFVMUXFAU
+          XCUUEAUTUWEYCULZIHCAUWGECFYDUIURUXHICWKRCEFYECEFIMYFWTAHUWFVFHUXHVFPH
+          UTUWEYGVPWNVMIDUUCYJYHDUUCYIYKYLUOUUHUUPYMYNAUVKUURVDUUEAUVJUUQUOUQAU
+          UPUUHAUUPUVQYOAUUHUVPYOYPVHVMYQVIUUFUUNUVADUUFUULUUSUUMUUTVAUUFUUCUUD
+          UUKAUUEYSZYRUUFUUCUUDUUKUXIYTUUAVKUUB $.
+      $}
     $}
   $}
 
