@@ -201546,6 +201546,58 @@ $)
     $}
 
     ${
+      $d U x $.  $d V x $.  $d X x $.
+      eupth2lem3lem6fi.g $e |- ( ph -> G e. UPGraph ) $.
+      eupth2lem3lem6fi.v $e |- ( ph -> V e. Fin ) $.
+      eupth2lem3lem6fi.o $e |- ( ph -> { x e. V | -. 2 || ( ( VtxDeg ` X ) ` x ) } =
+          if ( ( P ` 0 ) = ( P ` N ) , (/) , { ( P ` 0 ) , ( P ` N ) } ) ) $.
+      eupth2lem3lem6fi.e $e |- ( ph -> ( I ` ( F ` N ) )
+                                = { ( P ` N ) , ( P ` ( N + 1 ) ) } ) $.
+      $( Formerly part of proof of ~ eupth2lem3 :  If an edge (not a loop) is
+         added to a trail, the degree of vertices not being end vertices of
+         this edge remains odd if it was odd before (regarding the subgraphs
+         induced by the involved trails).  Remark:  This seems to be not valid
+         for hyperedges joining more vertices than ` ( P `` 0 ) ` and
+         ` ( P `` N ) ` : if there is a third vertex in the edge, and this
+         vertex is already contained in the trail, then the degree of this
+         vertex could be affected by this edge!  (Contributed by Mario
+         Carneiro, 8-Apr-2015.)  (Revised by AV, 25-Feb-2021.) $)
+      eupth2lem3lem6fi $p |- ( ( ph /\ ( P ` N ) =/= ( P ` ( N + 1 ) )
+                            /\ ( U =/= ( P ` N ) /\ U =/= ( P ` ( N + 1 ) ) ) )
+        -> ( -. 2 || ( ( ( VtxDeg ` X ) ` U ) + ( ( VtxDeg ` Y ) ` U ) ) <->
+           U e. if ( ( P ` 0 ) = ( P ` ( N + 1 ) ) , (/) ,
+                   { ( P ` 0 ) , ( P ` ( N + 1 ) ) } ) ) ) $=
+        ( vg cfv c1 caddc co wne wa w3a c2 cvtxdg cdvds wbr wn cc0 wceq cpr cif
+        c0 wcel cdm cvv ciedg cop csn 3ad2ant1 cvtx chash cfzo ctrls wf1 wf f1f
+        trlf1 3syl ffvelcdmd cfn cupgr eleqtrrd cxp c1st cbs df-vtx mptrcl cres
+        cv syl wfn funfnd fnressn syl2anc eqtr4d upgrspan wfun funfvex wi simpl
+        wnel adantl nelprd df-nel sylibr neleq2 imbitrrid expd 3imp 1hevtxdg0fi
+        simpr oveq2d eupth2lem3lem1fi nn0cnd addridd eqtrd breq2d wb crab fveq2
+        notbid elrab3 eleq2d bitr3d 3ad2ant3 2thd neeq1 bibi12d syl5ibcom biorf
+        wo neneqd orcom bitrdi anbi2d eupth2lem1 pm5.32rd 3bitr3d 3bitr4d
+        3bitrd ) AHCUJZHUKULUMCUJZUNZDUUEUNZDUUFUNZUOZUPZUQDJURUJZUJZDKURUJUJZU
+        LUMZUSUTZVAUQUUMUSUTZVAZDVBCUJZUUEVCVFUUSUUEVDVEZVGZDUUSUUFVCVFUUSUUFVD
+        VEVGZUUKUUPUUQUUKUUOUUMUQUSUUKUUOUUMVBULUMZUUMUUKUUNVBUUMULUUKHEUJZDUVD
+        GUJZKIGVHZVIAUUGKVJUJZUVDUVEVKVLZVCUUJUCVMAUUGKVNUJZIVCUUJTVMAUUGUVDUVF
+        VGZUUJAVBEVOUJVPUMZUVFHEAECFVQUJUTUVKUVFEVRUVKUVFEVSRCEFGNWAUVKUVFEVTWB
+        PWCZVMAUUGDIVGZUUJQVMZAUUGIWDVGUUJUFVMAUUGKWEVGUUJAUVDVLZKGFIVIMNADUVIV
+        GKVIVGADIUVIQTWFUIVIUIWMZVIVIWGVGUVPWHUJUVPWIUJVEVNDKUIWJWKWNTAUVGUVHGU
+        VOWLZUCAGUVFWOUVJUVQUVHVCAGOWPUVLUVFUVDGWQWRWSUEWTVMAUUGUVEVIVGZUUJAGXA
+        UVJUVROUVLUVDGXBWRVMAUUGUUJDUVEXEZAUVEUUEUUFVDZVCZUUGUUJUVSXCXCUHUWAUUG
+        UUJUVSUUGUUJUOZUVSUWADUVTXEZUWBDUVTVGVAUWCUWBDUUEUUFUUJUUHUUGUUHUUIXDZX
+        FUUJUUIUUGUUHUUIXOZXFXGDUVTXHXIUVEUVTDXJXKXLWNXMXNXPAUUGUVCUUMVCUUJAUUM
+        AUUMACDEFGHIJKLMNOPQRSTUAUBUCUDUEUFXQXRXSVMXTYAYEAUUGUURUVAYBUUJADUQBWM
+        ZUULUJZUSUTZVAZBIYCZVGZUURUVAAUVMUWKUURYBQUWIUURBDIUWFDVCZUWHUUQUWLUWGU
+        UMUQUSUWFDUULYDYAYEYFWNAUWJUUTDUGYGYHVMUUKUUSUUEUNZDUUSVCZDUUEVCZYOZUOZ
+        UUSUUFUNZUWNDUUFVCZYOZUOZUVAUVBUUKUWMUWNUOUWRUWNUOUWQUXAUUKUWNUWMUWRUUK
+        UUHUUIYBUWNUWMUWRYBUUKUUHUUIUUJAUUHUUGUWDYIZUUJAUUIUUGUWEYIZYJUWNUUHUWM
+        UUIUWRDUUSUUEYKDUUSUUFYKYLYMUUAUUKUWNUWPUWMUUKUWNUWOUWNYOZUWPUUKUWOVAUW
+        NUXDYBUUKDUUEUXBYPUWOUWNYNWNUWOUWNYQYRYSUUKUWNUWTUWRUUKUWNUWSUWNYOZUWTU
+        UKUWSVAUWNUXEYBUUKDUUFUXCYPUWSUWNYNWNUWSUWNYQYRYSUUBUUKUVMUVAUWQYBUVNUU
+        SUUEDIYTWNUUKUVMUVBUXAYBUVNUUSUUFDIYTWNUUCUUD $.
+    $}
+
+    ${
       eupth2lem3lem5.o $e |- ( ph -> { x e. V | -. 2 || ( ( VtxDeg ` X ) ` x ) } =
           if ( ( P ` 0 ) = ( P ` N ) , (/) , { ( P ` 0 ) , ( P ` N ) } ) ) $.
       eupth2lem3.e $e |- ( ph -> ( I ` ( F ` N ) )
