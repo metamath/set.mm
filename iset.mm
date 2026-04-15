@@ -201791,6 +201791,25 @@ $)
         UUTIHEXDUVIUVBUVFUVCUVGUUTICXEUUTIUKCULXAXBXCAFXFUIZYCUVEUDYAXGAYOUVJNF
         XHVFAYBYCPYDVFCUDEFHMXIWBYEXJXK $.
     $}
+
+    $d ph x $.
+    $( Lemma for ~ eupth2fi (induction basis):  There are no vertices of odd
+       degree in an Eulerian path of length 0, having no edge and identical
+       endpoints (the single vertex of the Eulerian path).  Formerly part of
+       proof for ~ eupth2 .  (Contributed by Mario Carneiro, 8-Apr-2015.)
+       (Revised by AV, 26-Feb-2021.) $)
+    eupth2lembfi $p |- ( ph -> { x e. V | -. 2 || ( ( VtxDeg `
+                    <. V , ( I |` ( F " ( 0 ..^ 0 ) ) ) >. ) ` x ) } = (/) ) $=
+      ( cc0 cfv c0 wceq wcel cvv cfn c2 cv cfzo co cima cop cvtxdg cdvds wbr wn
+      cres wral crab wa z0even ciedg cvtx eqid elexd iedgex syl eqeltrid resexg
+      cumgr opvtxfv syl2anc eqcomd eleq2d biimpa opiedgfv imaeq2i eqtri reseq2i
+      fzo0 ima0 eqtrdi adantr eqeltrd cupgr opeq2i upgr0eop vtxdgfi0e breqtrrid
+      res0 notnotd ralrimiva rabeq0 sylibr ) AUABUBZGFDNNUCUDZUEZUKZUFZUGOOZUHU
+      IZUJZUJZBGULWPBGUMPQAWQBGAWIGRZUNZWOWSUANWNUHUOWSWIWMWMUPOZWMUQOZXAURWTUR
+      AWRWIXARAGXAWIAXAGAGSRZWLSRZXAGQAGTMUSZAFSRXCAFEUPOZSIAEVDRXESRJEVDUTVAVB
+      FWKSVCVAZWLGSSVEVFZVGVHVIAWTPQWRAWTWLPAXBXCWTWLQXDXFWLGSSVJVFWLFPUKPWKPFW
+      KDPUEPWJPDNVNVKDVOVLVMFWDVLZVPVQAXATRWRAXAGTXGMVRVQAWMVSRWRAWMGPUFZVSWLPG
+      XHVTAXBXIVSRXDGSWAVAVBVQWBWCWEWFWPBGWGWH $.
   $}
 
 
