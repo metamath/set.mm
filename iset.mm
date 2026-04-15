@@ -203843,6 +203843,103 @@ $( (End of Thierry Arnoux's mathbox.) $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Mathbox for Matthew House
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+  ${
+    $d f h n x y z $.  $d ph f k y z $.  $d A f k m n y z $.  $d F k n y z $.
+    $d H f k m n y z $.  $d P f k n y $.
+    depind.p $e |- ( ph -> P : NN0 --> _V ) $.
+    depind.0 $e |- ( ph -> A e. ( P ` 0 ) ) $.
+    depind.h $e |- ( ph ->
+        A. n e. NN0 ( H ` n ) : ( P ` n ) --> ( P ` ( n + 1 ) ) ) $.
+    ${
+      depindlem1.4 $e |- F = seq 0 ( ( x e. _V , h e. _V |-> ( h ` x ) ) ,
+          ( m e. NN0 |-> if ( m = 0 , A , ( H ` ( m - 1 ) ) ) ) ) $.
+      $( Lemma for ~ depind .  (Contributed by Matthew House, 14-Apr-2026.) $)
+      depindlem1 $p |- ( ph -> ( F : NN0 --> _V /\ ( F ` 0 ) = A /\
+          A. n e. NN0 ( F ` ( n + 1 ) ) = ( ( H ` n ) ` ( F ` n ) ) ) ) $=
+        ( cn0 cvv cc0 cfv wceq co wcel vy vz vk wf cv caddc wral cmpo cmin cmpt
+        c1 cif cseq nn0uz 0zd nn0ex mptex vex fvex a1i eqid mpofvexi seqf feq1i
+        wa sylibr fveq1i cuz seq3-1 eqtrid iftrue fvmptg sylancr eqtrd eleqtrdi
+        0nn0 simpr seq3p1 oveq1i 3eqtr4g fvoveq1 ifbieq2d nn0p1nn adantl nnnn0d
+        eqeq1 cn nnne0d neneqd iffalsed cc nn0cnd pncan1 syl fveq2d weq feq123d
+        fveq2 rspccva sylan ffvelcdmda fexd eqeltrd fvmptd3 fvexg syl2anc fveq1
+        oveq2d cbvmpov ovmpog syl3anc ralrimiva fveq12d eqeq12d cbvralvw 3jca )
+        ANOHUDZPHQZCRGUEZUKUFSZHQZXSHQZXSIQZQZRZGNUGZANOBEOOBUEZEUEZQZUHZFNFUEZ
+        PRZCYKUKUISIQZULZUJZPUMZUDXQAUAUBYJOYOPNUNAUOZUAUEZYOQOTZAYRNTVEYRYOOOF
+        NYNUPUQUAURZUSZUTYRUBUEZYJSOTZAYROTUUBOTVEZVEBEOOYIYRUUBYJYJVAYGYHOOEUR
+        BURUSYTUBURVBZUTZVCNOHYPMVDVFZAXRPYOQZCAXRPYPQUUHPHYPMVGAUAUBYJOYOPYQYS
+        AYRPVHQZTZVEUUAUTUUFVIVJAPNTCPDQZTUUHCRVPKFPYNCNUUKYOYLCYMVKYOVAZVLVMVN
+        AUCUEZUKUFSZHQZUUMHQZUUMIQZQZRZUCNUGYFAUUSUCNAUUMNTZVEZUUOUUPUUQYJSZUUR
+        UVAUUOUUPUUNYOQZYJSZUVBUVAUUNYPQUUMYPQZUVCYJSUUOUVDUVAUAUBYJOYOPUUMUVAU
+        UMNUUIAUUTVQZUNVOYSUVAUUJVEUUAUTUUCUVAUUDVEUUEUTVRUUNHYPMVGUUPUVEUVCYJU
+        UMHYPMVGVSVTUVAUVCUUQUUPYJUVAUVCUUNPRZCUUNUKUISZIQZULZUUQUVAFUUNYNUVJNY
+        OOUULYKUUNRYLUVGYMUVICYKUUNPWFYKUUNUKIUIWAWBUVAUUNUUTUUNWGTAUUMWCWDZWEU
+        VAUVJUUQOUVAUVJUVIUUQUVAUVGCUVIUVAUUNPUVAUUNUVKWHWIWJUVAUVHUUMIUVAUUMWK
+        TUVHUUMRUVAUUMUVFWLUUMWMWNWOVNZUVAUUMDQZUUNDQZOUUQAXSDQZXTDQZYCUDZGNUGU
+        UTUVMUVNUUQUDZLUVQUVRGUUMNGUCWPZUVOUVMUVPUVNYCUUQXSUUMIWRZXSUUMDWRXSUUM
+        UKDUFWAWQWSWTANOUUMDJXAXBZXCXDUVLVNXHVNUVAUUPOTZUUQOTZUUROTZUVBUURRANOU
+        UMHUUGXAZUWAUVAUWCUWBUWDUWAUWEUUPUUQOOXEXFUAUBUUPUUQOOYRUUBQZUURYJUUPUU
+        BQOYRUUPUUBWRUUPUUBUUQXGBEUAUBOOYIUWFYRYHQYGYRYHWRYRYHUUBXGXIXJXKVNXLYE
+        UUSGUCNUVSYAUUOYDUURXSUUMUKHUFWAUVSYBUUPYCUUQUVTXSUUMHWRXMXNXOVFXP $.
+
+      $( Lemma for ~ depind .  (Contributed by Matthew House, 14-Apr-2026.) $)
+      depindlem2 $p |- ( ph -> F e. X_ n e. NN0 ( P ` n ) ) $=
+        ( vk cn0 cfv cvv wcel cc0 fveq2 vy cv cixp wfn wral wf wceq c1 caddc co
+        depindlem1 simp1d nn0ex a1i fexd ffnd eleq12d imbi2d weq simp2d eqeltrd
+        wi wa simp3d fvoveq1 fveq12d eqeq12d rspccva sylan adantr feq123d exp31
+        ffvelcdmda com12 a2d nn0ind impcom ralrimiva elixp2 syl3anbrc eleqtrrdi
+        cbvixpv ) AHNONUBZDPZUCZGOGUBZDPZUCAHQRHOUDWCHPZWDRZNOUEHWERAOQQHAOQHUF
+        ZSHPZCUGZWFUHUIUJZHPZWFHPZWFIPZPZUGZGOUEZABCDEFGHIJKLMUKZULZOQRAUMUNUOA
+        OQHXAUPAWINOWCORZAWIAUAUBZHPZXCDPZRZVBAWKSDPZRZVBAWIVBZAWCUHUIUJZHPZXJD
+        PZRZVBXIUANWCXCSUGZXFXHAXNXDWKXEXGXCSHTXCSDTUQURUANUSZXFWIAXOXDWHXEWDXC
+        WCHTXCWCDTUQURZXCXJUGZXFXMAXQXDXKXEXLXCXJHTXCXJDTUQURXPAWKCXGAWJWLWSWTU
+        TKVAXBAWIXMAXBWIXMVBAXBWIXMAXBVCZWIVCXKWHWCIPZPZXLXRXKXTUGZWIAWSXBYAAWJ
+        WLWSWTVDWRYAGWCOGNUSZWNXKWQXTWFWCUHHUIVEYBWOWHWPXSWFWCITZWFWCHTVFVGVHVI
+        VJXRWDXLWHXSAWGWMDPZWPUFZGOUEXBWDXLXSUFZLYEYFGWCOYBWGWDYDXLWPXSYCWFWCDT
+        ZWFWCUHDUIVEVKVHVIVMVAVLVNVOVPVQVRNOWDHVSVTGNOWGWDYGWBWA $.
+
+      $( Lemma for ~ depind .  (Contributed by Matthew House, 14-Apr-2026.) $)
+      depindlem3 $p |- ( ph -> A. f e. X_ n e. NN0 ( P ` n )
+          ( ( ( f ` 0 ) = A /\ A. n e. NN0
+          ( f ` ( n + 1 ) ) = ( ( H ` n ) ` ( f ` n ) ) ) -> f = F ) ) $=
+        ( vk cc0 cfv wceq cn0 fveq2 vy cv c1 caddc co wral wa wi cixp wfn ixpfn
+        wcel ad2antlr cvv wf w3a depindlem1 ad2antrr simp1d ffnd eqeq12d imbi2d
+        weq simprl simp2d eqtr4d simplrr fvoveq1 fveq12d rspccva simp3d 3eqtr4d
+        sylan adantr exp31 com3r a2d nn0ind impcom eqfnfvd ex ralrimiva ) APEUB
+        ZQZCRZHUBZUCUDUEZWCQZWFWCQZWFJQZQZRZHSUFZUGZWCIRZUHEHSWFDQZUIZAWCWQULZU
+        GZWNWOWSWNUGZOSWCIWRWCSUJAWNHSWPWCUKUMWTSUNIWTSUNIUOZPIQZCRZWGIQZWFIQZW
+        JQZRZHSUFZAXAXCXHUPWRWNABCDFGHIJKLMNUQURZUSUTOUBZSULZWTXJWCQZXJIQZRZWTU
+        AUBZWCQZXOIQZRZUHWTWDXBRZUHWTXNUHZWTXJUCUDUEZWCQZYAIQZRZUHXTUAOXJXOPRZX
+        RXSWTYEXPWDXQXBXOPWCTXOPITVAVBUAOVCZXRXNWTYFXPXLXQXMXOXJWCTXOXJITVAVBZX
+        OYARZXRYDWTYHXPYBXQYCXOYAWCTXOYAITVAVBYGWTWDCXBWSWEWMVDWTXAXCXHXIVEVFXK
+        WTXNYDWTXNXKYDWTXNXKYDWTXNUGZXKUGXLXJJQZQZXMYJQZYBYCXNYKYLRWTXKXLXMYJTU
+        MYIWMXKYBYKRZWSWEWMXNVGWLYMHXJSHOVCZWHYBWKYKWFXJUCWCUDVHYNWIXLWJYJWFXJJ
+        TZWFXJWCTVIVAVJVMYIXHXKYCYLRZWTXHXNWTXAXCXHXIVKVNXGYPHXJSYNXDYCXFYLWFXJ
+        UCIUDVHYNXEXMWJYJYOWFXJITVIVAVJVMVLVOVPVQVRVSVTWAWB $.
+    $}
+
+    $( Theorem related to a dependently typed induction principle in type
+       theory.  (Contributed by Matthew House, 14-Apr-2026.) $)
+    depind $p |- ( ph -> E! f e. X_ n e. NN0 ( P ` n ) ( ( f ` 0 ) = A /\
+        A. n e. NN0 ( f ` ( n + 1 ) ) = ( ( H ` n ) ` ( f ` n ) ) ) ) $=
+      ( vx vh vm cvv cv cfv wceq co wral wa fveq1 cmpo cn0 cc0 c1 cmin cif cmpt
+      cseq cixp wcel caddc wi wreu eqid depindlem2 depindlem1 simp2d depindlem3
+      wf simp3d eqeq1d fveq2d eqeq12d ralbidv anbi12d eqreu syl121anc ) AJKMZVH
+      JNKNOUALUBZLNZUCZPBVJUDZUEQFOUFUGVKUHZEVIENZCOUIZUJVKVMOZBPZVNVLUKQZVMOZV
+      NVMOZVNFOZOZPZEVIRZVKDNZOZBPZVRWEOZVNWEOZWAOZPZEVIRZSZWEVMPZULDVORWMDVOUM
+      AJBCKLEVMFGHIVMUNZUOAVIVHVMUSZVQWDAJBCKLEVMFGHIWOUPZUQAWPVQWDWQUTAJBCDKLE
+      VMFGHIWOURWMVQWDSDVOVMWNWGVQWLWDWNWFVPBVKWEVMTVAWNWKWCEVIWNWHVSWJWBVRWEVM
+      TWNWIVTWAVNWEVMTVBVCVDVEVFVG $.
+  $}
+
+$( (End of Matthew House's mathbox.) $)
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Mathbox for BJ
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
