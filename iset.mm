@@ -201810,6 +201810,43 @@ $)
       FWKSVCVAZWLGSSVEVFZVGVHVIAWTPQWRAWTWLPAXBXCWTWLQXDXFWLGSSVJVFWLFPUKPWKPFW
       KDPUEPWJPDNVNVKDVOVLVMFWDVLZVPVQAXATRWRAXAGTXGMVRVQAWMVSRWRAWMGPUFZVSWLPG
       XHVTAXBXIVSRXDGSWAVAVBVQWBWCWEWFWPBGWGWH $.
+
+    $d F x y $.  $d I x y $.  $d P y $.  $d V x y $.  $d n x y $.  $d ph y $.
+    $( Lemma for ~ eupth2 (induction step):  The only vertices of odd degree in
+       a graph with an Eulerian path are the endpoints, and then only if the
+       endpoints are distinct, if the Eulerian path shortened by one edge has
+       this property.  Formerly part of proof for ~ eupth2 .  (Contributed by
+       Mario Carneiro, 8-Apr-2015.)  (Revised by AV, 26-Feb-2021.) $)
+    eupth2lemsfi $p |- ( ( ph /\ n e. NN0 ) -> ( ( n <_ ( # ` F ) -> { x e. V |
+          -. 2 || ( ( VtxDeg ` <. V , ( I |` ( F " ( 0 ..^ n ) ) ) >. ) ` x ) }
+             = if ( ( P ` 0 ) = ( P ` n ) , (/) , { ( P ` 0 ) , ( P ` n ) } ) )
+                       -> ( ( n + 1 ) <_ ( # ` F ) -> { x e. V | -. 2 ||
+          ( ( VtxDeg ` <. V , ( I |` ( F " ( 0 ..^ ( n + 1 ) ) ) ) >. ) ` x ) }
+                          = if ( ( P ` 0 ) = ( P ` ( n + 1 ) ) , (/) ,
+                                 { ( P ` 0 ) , ( P ` ( n + 1 ) ) } ) ) ) ) $=
+      ( wcel wa cfv wbr cc0 wceq vy cv cn0 chash cle c2 cfzo co cima cop cvtxdg
+      cres cdvds wn crab c0 cpr cif wi c1 caddc nn0re adantl lep1d peano2re syl
+      ceupth cwlks eupthiswlk wlkcl 3syl nn0red adantr letr syl3anc mpand fveq2
+      imim1d breq2d notbid elrab cumgr ad3antrrr wfun cfn simpr ad2antrr simprl
+      cr simplrr eupth2lem3fi pm5.32da cpw 0elpw a1i wss wlkepvtx simpld cfz wf
+      eqid wlkp cuz cz wb peano2nn0 nn0uz eleqtrdi nn0zd elfz5 mpbird ffvelcdmd
+      syl2anc prssd cvv prexg elpwg fidceq ifcldcd elpwid sseld pm4.71rd bitr4d
+      wdc bitrid eqrdv exp32 a2d syld ) ADUBZUCOZPZYJEUDQZUERZUFBUBZHGESYJUGUHU
+      IULUJZUKQQUMRUNBHUOSCQZYJCQZTUPYQYRUQURTZUSYJUTVAUHZYMUERZYSUSUUAUFYOHGES
+      YTUGUHUIULUJZUKQZQZUMRZUNZBHUOZYQYTCQZTZUPYQUUHUQZURZTZUSYLUUAYNYSYLYJYTU
+      ERZUUAYNYLYJYKYJWIOZAYJVBVCZVDYLUUNYTWIOZYMWIOZUUMUUAPYNUSUUOYLUUNUUPUUOY
+      JVEVFAUUQYKAYMAECFVGQRZECFVHQRZYMUCOZMCEFVIZCEFVJVKZVLVMYJYTYMVNVOVPVRYLU
+      UAYSUULYLUUAYSUULYLUUAYSPZPZUAUUGUUKUAUBZUUGOUVEHOZUFUVEUUCQZUMRZUNZPZUVD
+      UVEUUKOZUUFUVIBUVEHYOUVETZUUEUVHUVLUUDUVGUFUMYOUVEUUCVQVSVTWAUVDUVJUVFUVK
+      PUVKUVDUVFUVIUVKUVDUVFPBCUVEEFYPGYJHUUBIJAFWBOYKUVCUVFKWCAGWDYKUVCUVFLWCA
+      UURYKUVCUVFMWCAHWEOZYKUVCUVFNWCYPXAUUBXAYLYKUVCUVFAYKWFWGUVDUUAUVFYLUUAYS
+      WHZVMUVDUVFWFYLUUAYSUVFWJWKWLUVDUVKUVFUVDUUKHUVEUVDUUKHUVDUUIUPUUJHWMZUPU
+      VOOUVDHWNWOUVDUUJUVOOZUUJHWPZUVDYQUUHHAYQHOZYKUVCAUURUUSUVRMUVAUUSUVRYMCQ
+      HOCEFHIWQWRVKWGZUVDSYMWSUHZHYTCAUVTHCWTZYKUVCAUURUUSUWAMUVACEFHIXBVKWGUVD
+      YTUVTOZUUAUVNUVDYTSXCQZOYMXDOUWBUUAXEUVDYTUCUWCYLYTUCOZUVCYKUWDAYJXFVCVMX
+      GXHUVDYMAUUTYKUVCUVBWGXIYTSYMXJXMXKXLZXNUVDUUJXOOZUVPUVQXEUVDUVRUUHHOZUWF
+      UVSUWEYQUUHHHXPXMUUJHXOXQVFXKUVDUVMUVRUWGUUIYDAUVMYKUVCNWGUVSUWEHYQUUHXRV
+      OXSXTYAYBYCYEYFYGYHYI $.
   $}
 
 
