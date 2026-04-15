@@ -201488,7 +201488,7 @@ $)
         CXJYFAFDUNGXKUSUPVKFYEVKZYLXLKUGUHXTYAXLADFGNUUAOXMUCAXTUUKYAYLUAUBXNXO
         ABCDEFGHIJKLMNOPQRSTUAUBUCXQABCDEFGHIJKLMNOPQRSTUAUBUCXRXS $.
 
-      $( Lemma for ~ eupth2lem3 .  (Contributed by AV, 21-Feb-2021.) $)
+      $( Lemma for ~ eupth2lem3fi .  (Contributed by AV, 21-Feb-2021.) $)
       eupth2lem3lem1fi $p |- ( ph -> ( ( VtxDeg ` X ) ` U ) e. NN0 ) $=
         ( vg cvtx cfv cn0 cvtxdg ciedg cdm eqid trlsegvdeglem6 cfn eqeltrd cfzo
         cc0 co cima cvv wcel eleqtrrd cv cxp cbs cif df-vtx mptrcl syl upgrspan
@@ -201496,7 +201496,7 @@ $)
         DEFGHIJKLMNOPQRSTUAUBUCUNAVOHUORUEUPADURGUQUSUTIFEHVALMACVOVBIVAVBACHVO
         PRVCZUFVAUFVDZVAVAVEVBVSVLUHVSVFUHVGUGCIUFVHVIVJRUAUDVKVMVRVN $.
 
-      $( Lemma for ~ eupth2lem3 .  (Contributed by AV, 21-Feb-2021.) $)
+      $( Lemma for ~ eupth2lem3fi .  (Contributed by AV, 21-Feb-2021.) $)
       eupth2lem3lem2fi $p |- ( ph -> ( ( VtxDeg ` Y ) ` U ) e. NN0 ) $=
         ( cvtx cfv cn0 cvtxdg ciedg cdm eqid trlsegvdeglem7 cfn eqeltrd csn cvv
         vg wcel eleqtrrd cxp c1st cbs cif df-vtx mptrcl syl cop cres wfn funfnd
@@ -201515,12 +201515,11 @@ $)
                                        ( I ` ( F ` N ) ) = { ( P ` N ) } ,
                                        { ( P ` N ) , ( P ` ( N + 1 ) ) }
                                        C_ ( I ` ( F ` N ) ) ) ) $.
-        $( Lemma for ~ eupth2lem3 , formerly part of proof of ~ eupth2lem3 :
-           If a loop ` { ( P `` N ) , ( P `` ( N + 1 ) ) } ` is added to a
-           trail, the degree of the vertices with odd degree remains odd
-           (regarding the subgraphs induced by the involved trails).
-           (Contributed by Mario Carneiro, 8-Apr-2015.)  (Revised by AV,
-           21-Feb-2021.) $)
+        $( Lemma for ~ eupth2lem3fi .  If a loop
+           ` { ( P `` N ) , ( P `` ( N + 1 ) ) } ` is added to a trail, the
+           degree of the vertices with odd degree remains odd (regarding the
+           subgraphs induced by the involved trails).  (Contributed by Mario
+           Carneiro, 8-Apr-2015.)  (Revised by AV, 21-Feb-2021.) $)
         eupth2lem3lem3fi $p |- ( ( ph /\ ( P ` N ) = ( P ` ( N + 1 ) ) )
                -> ( -. 2 || ( ( ( VtxDeg ` X ) ` U ) + ( ( VtxDeg ` Y ) ` U ) )
                     <-> U e. if ( ( P ` 0 ) = ( P ` ( N + 1 ) ) , (/) ,
@@ -201561,19 +201560,19 @@ $)
       $d U x $.  $d V x $.  $d X x $.
       eupth2lem3lem6fi.g $e |- ( ph -> G e. UPGraph ) $.
       eupth2lem3lem6fi.v $e |- ( ph -> V e. Fin ) $.
-      eupth2lem3lem6fi.o $e |- ( ph -> { x e. V | -. 2 || ( ( VtxDeg ` X ) ` x ) } =
-          if ( ( P ` 0 ) = ( P ` N ) , (/) , { ( P ` 0 ) , ( P ` N ) } ) ) $.
+      eupth2lem3lem6fi.o $e |- ( ph ->
+        { x e. V | -. 2 || ( ( VtxDeg ` X ) ` x ) } =
+        if ( ( P ` 0 ) = ( P ` N ) , (/) , { ( P ` 0 ) , ( P ` N ) } ) ) $.
       eupth2lem3lem6fi.e $e |- ( ph -> ( I ` ( F ` N ) )
                                 = { ( P ` N ) , ( P ` ( N + 1 ) ) } ) $.
-      $( Formerly part of proof of ~ eupth2lem3 :  If an edge (not a loop) is
-         added to a trail, the degree of vertices not being end vertices of
-         this edge remains odd if it was odd before (regarding the subgraphs
-         induced by the involved trails).  Remark:  This seems to be not valid
-         for hyperedges joining more vertices than ` ( P `` 0 ) ` and
-         ` ( P `` N ) ` : if there is a third vertex in the edge, and this
-         vertex is already contained in the trail, then the degree of this
-         vertex could be affected by this edge!  (Contributed by Mario
-         Carneiro, 8-Apr-2015.)  (Revised by AV, 25-Feb-2021.) $)
+      $( If an edge (not a loop) is added to a trail, the degree of vertices
+         not being end vertices of this edge remains odd if it was odd before
+         (regarding the subgraphs induced by the involved trails).  Remark:
+         This seems to be not valid for hyperedges joining more vertices than
+         ` ( P `` 0 ) ` and ` ( P `` N ) ` : if there is a third vertex in the
+         edge, and this vertex is already contained in the trail, then the
+         degree of this vertex could be affected by this edge!  (Contributed by
+         Mario Carneiro, 8-Apr-2015.)  (Revised by AV, 25-Feb-2021.) $)
       eupth2lem3lem6fi $p |- ( ( ph /\ ( P ` N ) =/= ( P ` ( N + 1 ) )
                             /\ ( U =/= ( P ` N ) /\ U =/= ( P ` ( N + 1 ) ) ) )
         -> ( -. 2 || ( ( ( VtxDeg ` X ) ` U ) + ( ( VtxDeg ` Y ) ` U ) ) <->
@@ -201610,33 +201609,35 @@ $)
     $}
 
     ${
-      eupth2lem3lem5.o $e |- ( ph -> { x e. V | -. 2 || ( ( VtxDeg ` X ) ` x ) } =
-          if ( ( P ` 0 ) = ( P ` N ) , (/) , { ( P ` 0 ) , ( P ` N ) } ) ) $.
+      eupth2lem3lem5.o $e |- ( ph ->
+        { x e. V | -. 2 || ( ( VtxDeg ` X ) ` x ) } =
+        if ( ( P ` 0 ) = ( P ` N ) , (/) , { ( P ` 0 ) , ( P ` N ) } ) ) $.
       eupth2lem3.e $e |- ( ph -> ( I ` ( F ` N ) )
                                   = { ( P ` N ) , ( P ` ( N + 1 ) ) } ) $.
-      $( Lemma for ~ eupth2 .  (Contributed by AV, 25-Feb-2021.) $)
+      $( Lemma for ~ eupth2fi .  (Contributed by AV, 25-Feb-2021.) $)
       eupth2lem3lem5 $p |- ( ph -> ( I ` ( F ` N ) ) e. ~P V ) $=
-        ( cfv c1 caddc co cpr cpw wcel wa trlsegvdeglem1 prelpwi syl eqeltrd ) AH
-        EUGGUGHCUGZHUHUIUJCUGZUKZIULZUFAUSIUMUTIUMUNVAVBUMACDEFGHIMNOPQRUOUSUTIUP
-        UQUR $.
+        ( cfv c1 caddc co cpr cpw wcel wa trlsegvdeglem1 prelpwi syl eqeltrd )
+        AHEUGGUGHCUGZHUHUIUJCUGZUKZIULZUFAUSIUMUTIUMUNVAVBUMACDEFGHIMNOPQRUOUSU
+        TIUPUQUR $.
     $}
 
     ${
       eupth2lem3lem4fi.g $e |- ( ph -> G e. UMGraph ) $.
       eupth2lem3lem4fi.v $e |- ( ph -> V e. Fin ) $.
       $d U x $.  $d V x $.  $d X x $.
-      eupth2lem3lem4fi.o $e |- ( ph -> { x e. V | -. 2 || ( ( VtxDeg ` X ) ` x ) } =
-          if ( ( P ` 0 ) = ( P ` N ) , (/) , { ( P ` 0 ) , ( P ` N ) } ) ) $.
+      eupth2lem3lem4fi.o $e |- ( ph ->
+        { x e. V | -. 2 || ( ( VtxDeg ` X ) ` x ) } =
+        if ( ( P ` 0 ) = ( P ` N ) , (/) , { ( P ` 0 ) , ( P ` N ) } ) ) $.
       eupth2lem3lem4fi.e $e |- ( ph -> if- ( ( P ` N ) = ( P ` ( N + 1 ) ) ,
                                        ( I ` ( F ` N ) ) = { ( P ` N ) } ,
                                        { ( P ` N ) , ( P ` ( N + 1 ) ) }
                                        C_ ( I ` ( F ` N ) ) ) ) $.
       eupth2lem3lem4.i $e |- ( ph -> ( I ` ( F ` N ) ) e. ~P V ) $.
-      $( Lemma for ~ eupth2lem3 , formerly part of proof of ~ eupth2lem3 :  If
-         an edge (not a loop) is added to a trail, the degree of the end
-         vertices of this edge remains odd if it was odd before (regarding the
-         subgraphs induced by the involved trails).  (Contributed by Mario
-         Carneiro, 8-Apr-2015.)  (Revised by AV, 25-Feb-2021.) $)
+      $( Lemma for ~ eupth2lem3fi .  If an edge (not a loop) is added to a
+         trail, the degree of the end vertices of this edge remains odd if it
+         was odd before (regarding the subgraphs induced by the involved
+         trails).  (Contributed by Mario Carneiro, 8-Apr-2015.)  (Revised by
+         AV, 25-Feb-2021.) $)
       eupth2lem3lem4fi $p |- ( ( ph /\ ( P ` N ) =/= ( P ` ( N + 1 ) )
                             /\ ( U = ( P ` N ) \/ U = ( P ` ( N + 1 ) ) ) )
              -> ( -. 2 || ( ( ( VtxDeg ` X ) ` U ) + ( ( VtxDeg ` Y ) ` U ) )
@@ -201695,17 +201696,18 @@ $)
       $d U x $.  $d V x $.  $d X x $.
       eupth2lem3lem7fi.g $e |- ( ph -> G e. UMGraph ) $.
       eupth2lem3lem7fi.v $e |- ( ph -> V e. Fin ) $.
-      eupth2lem3lem7fi.o $e |- ( ph -> { x e. V | -. 2 || ( ( VtxDeg ` X ) ` x ) } =
-          if ( ( P ` 0 ) = ( P ` N ) , (/) , { ( P ` 0 ) , ( P ` N ) } ) ) $.
+      eupth2lem3lem7fi.o $e |- ( ph ->
+        { x e. V | -. 2 || ( ( VtxDeg ` X ) ` x ) } =
+        if ( ( P ` 0 ) = ( P ` N ) , (/) , { ( P ` 0 ) , ( P ` N ) } ) ) $.
       eupth2lem3lem7fi.e $e |- ( ph -> ( I ` ( F ` N ) )
                                 = { ( P ` N ) , ( P ` ( N + 1 ) ) } ) $.
-      $( Lemma for ~ eupth2lem3 :  Combining ~ trlsegvdegfi ,
+      $( Lemma for ~ eupth2lem3fi :  Combining ~ trlsegvdegfi ,
          ~ eupth2lem3lem3fi , ~ eupth2lem3lem4fi and ~ eupth2lem3lem6fi .
          (Contributed by Mario Carneiro, 8-Apr-2015.)  (Revised by AV,
          27-Feb-2021.) $)
       eupth2lem3lem7fi $p |- ( ph -> ( -. 2 || ( ( VtxDeg ` Z ) ` U )
-                           <-> U e. if ( ( P ` 0 ) = ( P ` ( N + 1 ) ) , (/) ,
-                                       { ( P ` 0 ) , ( P ` ( N + 1 ) ) } ) ) ) $=
+          <-> U e. if ( ( P ` 0 ) = ( P ` ( N + 1 ) ) , (/) ,
+          { ( P ` 0 ) , ( P ` ( N + 1 ) ) } ) ) ) $=
         ( c2 cvtxdg cfv cdvds wbr wn caddc co cc0 c1 wceq c0 cpr cif wcel cumgr
         cupgr umgrupgr syl trlsegvdegfi breq2d notbid wne wdc csn wss wif chash
         wb cfn ctrls cwlks wf trliswlk wlkp 3syl cfzo elfzofz ffvelcdmd fzofzp1
@@ -201733,10 +201735,9 @@ $)
     eupthvdres.f $e |- ( ph -> Fun I ) $.
     eupthvdres.p $e |- ( ph -> F ( EulerPaths ` G ) P ) $.
     eupthvdres.h $e |- H = <. V , ( I |` ( F " ( 0 ..^ ( # ` F ) ) ) ) >. $.
-    $( Formerly part of proof of ~ eupth2 :  The vertex degree remains the same
-       for all vertices if the edges are restricted to the edges of an Eulerian
-       path.  (Contributed by Mario Carneiro, 8-Apr-2015.)  (Revised by AV,
-       26-Feb-2021.) $)
+    $( The vertex degree remains the same for all vertices if the edges are
+       restricted to the edges of an Eulerian path.  (Contributed by Mario
+       Carneiro, 8-Apr-2015.)  (Revised by AV, 26-Feb-2021.) $)
     eupthvdres $p |- ( ph -> ( VtxDeg ` H ) = ( VtxDeg ` G ) ) $=
       ( cvv cfv wcel cvtx syl ciedg cc0 chash cfzo cima cres cop vtxex eqeltrid
       co iedgex resexg opexg syl2anc fveq2i wceq opvtxfv eqtrid eqtrdi opiedgfv
@@ -201765,7 +201766,7 @@ $)
       eupth2.u $e |- ( ph -> U e. V ) $.
       eupth2.o $e |- ( ph -> { x e. V | -. 2 || ( ( VtxDeg ` H ) ` x ) } =
         if ( ( P ` 0 ) = ( P ` N ) , (/) , { ( P ` 0 ) , ( P ` N ) } ) ) $.
-      $( Lemma for ~ eupth2 .  (Contributed by Mario Carneiro, 8-Apr-2015.)
+      $( Lemma for ~ eupth2fi .  (Contributed by Mario Carneiro, 8-Apr-2015.)
          (Revised by AV, 26-Feb-2021.) $)
       eupth2lem3fi $p |- ( ph -> ( -. 2 || ( ( VtxDeg ` X ) ` U )
                          <-> U e. if ( ( P ` 0 ) = ( P ` ( N + 1 ) ) , (/) ,
@@ -201795,9 +201796,8 @@ $)
     $d ph x $.
     $( Lemma for ~ eupth2fi (induction basis):  There are no vertices of odd
        degree in an Eulerian path of length 0, having no edge and identical
-       endpoints (the single vertex of the Eulerian path).  Formerly part of
-       proof for ~ eupth2 .  (Contributed by Mario Carneiro, 8-Apr-2015.)
-       (Revised by AV, 26-Feb-2021.) $)
+       endpoints (the single vertex of the Eulerian path).  (Contributed by
+       Mario Carneiro, 8-Apr-2015.)  (Revised by AV, 26-Feb-2021.) $)
     eupth2lembfi $p |- ( ph -> { x e. V | -. 2 || ( ( VtxDeg `
                     <. V , ( I |` ( F " ( 0 ..^ 0 ) ) ) >. ) ` x ) } = (/) ) $=
       ( cc0 cfv c0 wceq wcel cvv cfn c2 cv cfzo co cima cop cvtxdg cdvds wbr wn
@@ -201812,11 +201812,11 @@ $)
       XHVTAXBXIVSRXDGSWAVAVBVQWBWCWEWFWPBGWGWH $.
 
     $d F x y $.  $d I x y $.  $d P y $.  $d V x y $.  $d n x y $.  $d ph y $.
-    $( Lemma for ~ eupth2 (induction step):  The only vertices of odd degree in
-       a graph with an Eulerian path are the endpoints, and then only if the
+    $( Lemma for ~ eupth2fi (induction step):  The only vertices of odd degree
+       in a graph with an Eulerian path are the endpoints, and then only if the
        endpoints are distinct, if the Eulerian path shortened by one edge has
-       this property.  Formerly part of proof for ~ eupth2 .  (Contributed by
-       Mario Carneiro, 8-Apr-2015.)  (Revised by AV, 26-Feb-2021.) $)
+       this property.  (Contributed by Mario Carneiro, 8-Apr-2015.)  (Revised
+       by AV, 26-Feb-2021.) $)
     eupth2lemsfi $p |- ( ( ph /\ n e. NN0 ) -> ( ( n <_ ( # ` F ) -> { x e. V |
           -. 2 || ( ( VtxDeg ` <. V , ( I |` ( F " ( 0 ..^ n ) ) ) >. ) ` x ) }
              = if ( ( P ` 0 ) = ( P ` n ) , (/) , { ( P ` 0 ) , ( P ` n ) } ) )
