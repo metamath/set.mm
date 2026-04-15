@@ -91,9 +91,32 @@ proposed  syl6d     imtrdid
 make a github issue.)
 
 DONE:
-Date      Old       New         Notes
-22-Mar-26 bnj1142   ralrid      Moved from BNJ's mathbox to main set.mm
-16-Mar-26 rnmptssd  [same]      Moved from GS's mathbox to main set.mm
+Date      Old         New         Notes
+11-Apr-26 muldivdid   [same]      Moved from TA's mathbox to main set.mm
+11-Apr-26 elfzod      [same]      Moved from GS's mathbox to main set.mm
+11-Apr-26 t1e1ALT     [same]      Moved from SN's mathbox to main set.mm
+11-Apr-26 nnadd1com   [same]      Moved from SN's mathbox to main set.mm
+11-Apr-26 nnaddcom    [same]      Moved from SN's mathbox to main set.mm
+11-Apr-26 nnaddcomli  [same]      Moved from SN's mathbox to main set.mm
+11-Apr-26 nnadddir    [same]      Moved from SN's mathbox to main set.mm
+11-Apr-26 nnmul1com   [same]      Moved from SN's mathbox to main set.mm
+11-Apr-26 nnmulcom    [same]      Moved from SN's mathbox to main set.mm
+11-Apr-26 zltp1led    [same]      Moved from MKU's mathbox to main set.mm
+11-Apr-26 df-ind      [same]      Moved from TA's mathbox to main set.mm
+11-Apr-26 indv        [same]      Moved from TA's mathbox to main set.mm
+11-Apr-26 indval      [same]      Moved from TA's mathbox to main set.mm
+11-Apr-26 indval2     [same]      Moved from TA's mathbox to main set.mm
+11-Apr-26 indf        [same]      Moved from TA's mathbox to main set.mm
+11-Apr-26 indfval     [same]      Moved from TA's mathbox to main set.mm
+11-Apr-26 ind1        [same]      Moved from TA's mathbox to main set.mm
+11-Apr-26 ind0        [same]      Moved from TA's mathbox to main set.mm
+11-Apr-26 ind1a       [same]      Moved from TA's mathbox to main set.mm
+11-Apr-26 indconst0   [same]      Moved from TA's mathbox to main set.mm
+11-Apr-26 indconst1   [same]      Moved from TA's mathbox to main set.mm
+11-Apr-26 indpi1      [same]      Moved from TA's mathbox to main set.mm
+11-Apr-26 pr01ssre    [same]      Moved from TA's mathbox to main set.mm
+22-Mar-26 bnj1142     ralrid      Moved from BNJ's mathbox to main set.mm
+16-Mar-26 rnmptssd    [same]      Moved from GS's mathbox to main set.mm
 27-Feb-26 cslt        clts
 27-Feb-26 df-slt      df-lts
 27-Feb-26 sltval      ltsval
