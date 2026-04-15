@@ -201714,6 +201714,28 @@ $)
     $}
   $}
 
+  ${
+    eupthvdres.v $e |- V = ( Vtx ` G ) $.
+    eupthvdres.i $e |- I = ( iEdg ` G ) $.
+    eupthvdres.g $e |- ( ph -> G e. W ) $.
+    eupthvdres.f $e |- ( ph -> Fun I ) $.
+    eupthvdres.p $e |- ( ph -> F ( EulerPaths ` G ) P ) $.
+    eupthvdres.h $e |- H = <. V , ( I |` ( F " ( 0 ..^ ( # ` F ) ) ) ) >. $.
+    $( Formerly part of proof of ~ eupth2 :  The vertex degree remains the same
+       for all vertices if the edges are restricted to the edges of an Eulerian
+       path.  (Contributed by Mario Carneiro, 8-Apr-2015.)  (Revised by AV,
+       26-Feb-2021.) $)
+    eupthvdres $p |- ( ph -> ( VtxDeg ` H ) = ( VtxDeg ` G ) ) $=
+      ( cvv cfv wcel cvtx syl ciedg cc0 chash cfzo cima cres cop vtxex eqeltrid
+      co iedgex resexg opexg syl2anc fveq2i wceq opvtxfv eqtrid eqtrdi opiedgfv
+      cdm ceupth wbr wf1o wfo eupthf1o f1ofo 4syl reseq2d funfnd fnresdm 3eqtrd
+      foima wfn vtxdeqd ) ADEHOKAEGFCUACUBPUCUIZUDZUEZUFZONAGOQZVQOQZVROQAGDRPZ
+      OIADHQZWAOQKDHUGSUHZAFOQVTAFDTPZOJAWBWDOQKDHUJSUHFVPOUKSZGVQOOULUMUHAERPZ
+      GWAAWFVRRPZGEVRRNUNAVSVTWGGUOWCWEVQGOOUPUMUQIURAETPZFWDAWHVQFFUTZUEZFAWHV
+      RTPZVQEVRTNUNAVSVTWKVQUOWCWEVQGOOUSUMUQAVPWIFACBDVAPVBVOWICVCVOWICVDVPWIU
+      OMBCDFJVEVOWICVFVOWICVLVGVHAFWIVMWJFUOAFLVIWIFVJSVKJURVN $.
+  $}
+
 
 $(
 ###############################################################################
