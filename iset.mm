@@ -201748,6 +201748,51 @@ $)
       OMBCDFJVEVOWICVFVOWICVLVGVHAFWIVMWJFUOAFLVIWIFVJSVKJURVN $.
   $}
 
+  ${
+    eupth2.v $e |- V = ( Vtx ` G ) $.
+    eupth2.i $e |- I = ( iEdg ` G ) $.
+    eupth2fi.g $e |- ( ph -> G e. UMGraph ) $.
+    eupth2.f $e |- ( ph -> Fun I ) $.
+    eupth2.p $e |- ( ph -> F ( EulerPaths ` G ) P ) $.
+    eupth2fi.fi $e |- ( ph -> V e. Fin ) $.
+    ${
+      $d F k $.  $d G k $.  $d H x $.  $d I k $.  $d N k $.  $d P k $.
+      $d U x $.  $d V x $.
+      eupth2.h $e |- H = <. V , ( I |` ( F " ( 0 ..^ N ) ) ) >. $.
+      eupth2.x $e |- X = <. V , ( I |` ( F " ( 0 ..^ ( N + 1 ) ) ) ) >. $.
+      eupth2.n $e |- ( ph -> N e. NN0 ) $.
+      eupth2.l $e |- ( ph -> ( N + 1 ) <_ ( # ` F ) ) $.
+      eupth2.u $e |- ( ph -> U e. V ) $.
+      eupth2.o $e |- ( ph -> { x e. V | -. 2 || ( ( VtxDeg ` H ) ` x ) } =
+        if ( ( P ` 0 ) = ( P ` N ) , (/) , { ( P ` 0 ) , ( P ` N ) } ) ) $.
+      $( Lemma for ~ eupth2 .  (Contributed by Mario Carneiro, 8-Apr-2015.)
+         (Revised by AV, 26-Feb-2021.) $)
+      eupth2lem3fi $p |- ( ph -> ( -. 2 || ( ( VtxDeg ` X ) ` U )
+                         <-> U e. if ( ( P ` 0 ) = ( P ` ( N + 1 ) ) , (/) ,
+                                     { ( P ` 0 ) , ( P ` ( N + 1 ) ) } ) ) ) $=
+        ( vk cfv cop csn cn0 wcel chash c1 caddc co cle wbr cc0 cfzo eupthiswlk
+        cwlks wlkcl 3syl nn0p1elfzo syl3anc ctrls eupthistrl syl cvtx cima cres
+        ceupth fveq2i cvv wceq elexd ciedg cumgr iedgex eqeltrid resexg opvtxfv
+        cfn syl2anc eqtrid w3a eupthv simp2d fvexg opexg opiedgfv cfz cz fzval3
+        snexg nn0zd eqcomd imaeq2d reseq2d eqtrd cv cpr fvoveq1 preq12d eqeq12d
+        2fveq3 fveq2 cupgr wral umgrupgr upgrwlkedg rspcdva eupth2lem3lem7fi )
+        ABCDEFHIJGJIEUEZXLHUEZUFZUGZUFZKLMOAIUHUIZEUJUEZUHUIZIUKULUMZXRUNUOIUPX
+        RUQUMZUITAECFVJUEUOZECFUSUEUOZXSPCEFURZCEFUTVAUAIXRVBVCZUBAYBECFVDUEUOP
+        CEFVEVFAGVGUEJHEUPIUQUMVHZVIZUFZVGUEZJGYHVGRVKAJVLUIZYGVLUIZYIJVMAJWAQV
+        NZAHVLUIZYKAHFVOUEZVLMAFVPUIZYNVLUINFVPVQVFVRZHYFVLVSVFZYGJVLVLVTWBWCAY
+        JXOVLUIZXPVGUEJVMYLAXNVLUIZYRAXLVLUIZXMVLUIZYSAEVLUIZXQYTAFVLUIZUUBCVLU
+        IZAYBUUCUUBUUDWDPCEFWEVFWFTIEVLUHWGWBZAYMYTUUAYPUUEXLHVLVLWGWBXLXMVLVLW
+        HWBXNVLWMVFZXOJVLVLVTWBAKVGUEJHEUPXTUQUMZVHZVIZUFZVGUEZJKUUJVGSVKAYJUUI
+        VLUIZUUKJVMYLAYMUULYPHUUHVLVSVFZUUIJVLVLVTWBWCAGVOUEYHVOUEZYGGYHVORVKAY
+        JYKUUNYGVMYLYQYGJVLVLWIWBWCAYJYRXPVOUEXOVMYLUUFXOJVLVLWIWBAKVOUEZUUIHEU
+        PIWJUMZVHZVIAUUOUUJVOUEZUUIKUUJVOSVKAYJUULUURUUIVMYLUUMUUIJVLVLWIWBWCAU
+        UHUUQHAUUGUUPEAIWKUIZUUGUUPVMAITWNUUSUUPUUGUPIWLWOVFWPWQWRNQUCAUDWSZEUE
+        HUEZUUTCUEZUUTUKULUMCUEZWTZVMZXMICUEZXTCUEZWTZVMUDYAIUUTIVMZUVAXMUVDUVH
+        UUTIHEXDUVIUVBUVFUVCUVGUUTICXEUUTIUKCULXAXBXCAFXFUIZYCUVEUDYAXGAYOUVJNF
+        XHVFAYBYCPYDVFCUDEFHMXIWBYEXJXK $.
+    $}
+  $}
+
 
 $(
 ###############################################################################
