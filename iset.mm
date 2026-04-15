@@ -106729,6 +106729,18 @@ $)
     simp3 ) ACBDEZFZAGFZBQFZABHIZJZUKULUMUNUKACKLFZULACBMANZOUKCUJFUMACBPBRSACB
     TUAUOUPBUBFZUNUKUOULUPULUMUNUCUQSUMULURUNBUDUEULUMUNUIACBUFUGUH $.
 
+  $( A nonnegative integer increased by 1 which is less than or equal to
+     another integer is an element of a half-open range of integers.
+     (Contributed by AV, 27-Feb-2021.) $)
+  nn0p1elfzo $p |- ( ( K e. NN0 /\ N e. NN0 /\ ( K + 1 ) <_ N )
+                 -> K e. ( 0 ..^ N ) ) $=
+    ( cn0 wcel c1 caddc co cle wbr w3a cn clt cfzo nn0ltp1le wa simpr adantr cr
+    cc0 nn0re biimp3ar simpl1 nn0ge0 wi lelttr mp3an3an mpand elnnnn0b sylanbrc
+    0re imp 3adantl3 3jca mpdan elfzo0 sylibr ) ACDZBCDZAEFGBHIZJZUQBKDZABLIZJZ
+    ASBMGDUTVBVCUQURVBUSABNUAUTVBOUQVAVBUQURUSVBUBUQURVBVAUSUQUROZVBOURSBLIZVAV
+    DURVBUQURPQVDVBVEVDSAHIZVBVEUQVFURAUCQSRDUQARDURBRDVFVBOVEUDUJATBTSABUEUFUG
+    UKBUHUIULUTVBPUMUNABUOUP $.
+
   $( An integer between 1 and an upper bound of a half-open integer range is
      not 0 and between 0 and the upper bound of the half-open integer range.
      (Contributed by Alexander van der Vekens, 21-Mar-2018.) $)
