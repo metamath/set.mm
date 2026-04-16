@@ -201455,18 +201455,18 @@ $)
     ${
       trlsegvdegfi.g $e |- ( ph -> G e. UPGraph ) $.
       trlsegvdegfi.v $e |- ( ph -> V e. Fin ) $.
-      $( If a trail in a graph ` G ` induces a subgraph ` Z ` with the vertices
-         ` V ` of ` G ` and the edges being the edges of the walk, and a
-         subgraph ` X ` with the vertices ` V ` of ` G ` and the edges being
-         the edges of the walk except the last one, and a subgraph ` Y ` with
-         the vertices ` V ` of ` G ` and one edges being the last edge of the
-         walk, then the vertex degree of any vertex ` U ` of ` G ` within ` Z `
-         is the sum of the vertex degree of ` U ` within ` X ` and the vertex
-         degree of ` U ` within ` Y ` .  Note that this theorem would not hold
-         for arbitrary walks (if the last edge was identical with a previous
-         edge, the degree of the vertices incident with this edge would not be
-         increased because of this edge).  (Contributed by Mario Carneiro,
-         8-Apr-2015.)  (Revised by AV, 20-Feb-2021.) $)
+      $( The effect on vertex degree of adding one edge to a trail.  In the
+         following, a subgraph induced by a segment of a trail is called a
+         "subtrail":  For any subtrail ` Z ` of a trail ` <. F , P >. ` in a
+         pseudograph ` G ` which is composed of subtrails ` X ` and ` Y ` ,
+         where ` Y ` consists of a single edge, the vertex degree of any vertex
+         ` U ` within ` Z ` is the sum of the vertex degree of ` U ` within
+         ` X ` and the vertex degree of ` U ` within ` Y ` .  Note that this
+         theorem would not hold for arbitrary walks (if the last edge was
+         identical with a previous edge, the degree of the vertices incident
+         with this edge would not be increased because of this edge).
+         (Contributed by Mario Carneiro, 8-Apr-2015.)  (Revised by AV,
+         20-Feb-2021.) $)
       trlsegvdegfi $p |- ( ph -> ( ( VtxDeg ` Z ) ` U )
           = ( ( ( VtxDeg ` X ) ` U ) + ( ( VtxDeg ` Y ) ` U ) ) ) $=
         ( vg ciedg cfv cvtx eqid eqtr4d cfn eqeltrd cc0 cfzo cima wcel eleqtrrd
