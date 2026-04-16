@@ -14593,7 +14593,7 @@ New usage of "axnulALT" is discouraged (0 uses).
 New usage of "axnulALT2" is discouraged (0 uses).
 New usage of "axnulALT3" is discouraged (0 uses).
 New usage of "axnulg" is discouraged (0 uses).
-New usage of "axnultcoreg" is discouraged (0 uses).
+New usage of "axnulregtco" is discouraged (0 uses).
 New usage of "axpjcl" is discouraged (7 uses).
 New usage of "axpjpj" is discouraged (8 uses).
 New usage of "axpownd" is discouraged (2 uses).
@@ -19356,7 +19356,7 @@ Proof modification of "axnul" is discouraged (36 steps).
 Proof modification of "axnulALT" is discouraged (95 steps).
 Proof modification of "axnulALT2" is discouraged (77 steps).
 Proof modification of "axnulALT3" is discouraged (57 steps).
-Proof modification of "axnultcoreg" is discouraged (95 steps).
+Proof modification of "axnulregtco" is discouraged (95 steps).
 Proof modification of "axprALT" is discouraged (67 steps).
 Proof modification of "axprALT2" is discouraged (473 steps).
 Proof modification of "axprOLD" is discouraged (122 steps).
