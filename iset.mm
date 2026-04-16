@@ -106729,6 +106729,18 @@ $)
     simp3 ) ACBDEZFZAGFZBQFZABHIZJZUKULUMUNUKACKLFZULACBMANZOUKCUJFUMACBPBRSACB
     TUAUOUPBUBFZUNUKUOULUPULUMUNUCUQSUMULURUNBUDUEULUMUNUIACBUFUGUH $.
 
+  $( A nonnegative integer increased by 1 which is less than or equal to
+     another integer is an element of a half-open range of integers.
+     (Contributed by AV, 27-Feb-2021.) $)
+  nn0p1elfzo $p |- ( ( K e. NN0 /\ N e. NN0 /\ ( K + 1 ) <_ N )
+                 -> K e. ( 0 ..^ N ) ) $=
+    ( cn0 wcel c1 caddc co cle wbr w3a cn clt cfzo nn0ltp1le wa simpr adantr cr
+    cc0 nn0re biimp3ar simpl1 nn0ge0 wi lelttr mp3an3an mpand elnnnn0b sylanbrc
+    0re imp 3adantl3 3jca mpdan elfzo0 sylibr ) ACDZBCDZAEFGBHIZJZUQBKDZABLIZJZ
+    ASBMGDUTVBVCUQURVBUSABNUAUTVBOUQVAVBUQURUSVBUBUQURVBVAUSUQUROZVBOURSBLIZVAV
+    DURVBUQURPQVDVBVEVDSAHIZVBVEUQVFURAUCQSRDUQARDURBRDVFVBOVEUDUJATBTSABUEUFUG
+    UKBUHUIULUTVBPUMUNABUOUP $.
+
   $( An integer between 1 and an upper bound of a half-open integer range is
      not 0 and between 0 and the upper bound of the half-open integer range.
      (Contributed by Alexander van der Vekens, 21-Mar-2018.) $)
@@ -201439,6 +201451,436 @@ $)
       cfzo trlf1 f1f 3syl ffvelcdmd snfig syl eqeltrd ) AJUDUEUFGDUEZUGZUHABCDE
       FGHIJKLMNOPQRSTUAUBUCUIAVFFUFZUJVGUHUJAUKDULUEURUMZVHGDADBEUNUEUOVIVHDUPV
       IVHDUQQBDEFMUSVIVHDUTVAOVBVFVHVCVDVE $.
+
+    ${
+      trlsegvdegfi.g $e |- ( ph -> G e. UPGraph ) $.
+      trlsegvdegfi.v $e |- ( ph -> V e. Fin ) $.
+      $( The effect on vertex degree of adding one edge to a trail.  In the
+         following, a subgraph induced by a segment of a trail is called a
+         "subtrail":  For any subtrail ` Z ` of a trail ` <. F , P >. ` in a
+         pseudograph ` G ` which is composed of subtrails ` X ` and ` Y ` ,
+         where ` Y ` consists of a single edge, the vertex degree of any vertex
+         ` U ` within ` Z ` is the sum of the vertex degree of ` U ` within
+         ` X ` and the vertex degree of ` U ` within ` Y ` .  Note that this
+         theorem would not hold for arbitrary walks (if the last edge was
+         identical with a previous edge, the degree of the vertices incident
+         with this edge would not be increased because of this edge).
+         (Contributed by Mario Carneiro, 8-Apr-2015.)  (Revised by AV,
+         20-Feb-2021.) $)
+      trlsegvdegfi $p |- ( ph -> ( ( VtxDeg ` Z ) ` U )
+          = ( ( ( VtxDeg ` X ) ` U ) + ( ( VtxDeg ` Y ) ` U ) ) ) $=
+        ( vg ciedg cfv cvtx eqid eqtr4d cfn eqeltrd cc0 cfzo cima wcel eleqtrrd
+        co cvv cxp c1st cbs cif df-vtx mptrcl syl upgrspan csn cop cres cdm wfn
+        cv wceq funfnd chash ctrls wbr wf1 trlf1 3syl ffvelcdmd fnressn syl2anc
+        wf f1f cin c0 trlsegvdeglem4 trlsegvdeglem5 ineq12d wn wa fzonel wss wb
+        cuz elfzouz2 fzoss2 f1elima syl3anc mtbiri intnanrd elin sylnibr disjsn
+        eqtrd trlsegvdeglem2 trlsegvdeglem3 cfz cun resunimafz0 uneq12d 3eqtr4d
+        sylibr trlsegvdeglem6 trlsegvdeglem7 vtxdfifiun ) AKIJIUGUHZJUGUHZCIUIU
+        HZXTUJYAUJYBUJAJUIUHZHYBSRUKAKUIUHHYBTRUKAYBHULRUEUMADUNGUOUSZUPZIFEHUT
+        LMACYBUQIUTUQACHYBPRURZUFUTUFVNZUTUTVAUQYGVBUHYGVCUHVDZUICIUFVEZVFVGRUA
+        UDVHAGDUHZVIZJFEHUTLMACYCUQJUTUQACHYCPSURUFUTYHUICJYIVFVGSAYAYJYJFUHVJV
+        IZFYKVKZUBAFFVLZVMYJYNUQZYMYLVOAFNVPAUNDVQUHZUOUSZYNGDADBEVRUHVSZYQYNDV
+        TZYQYNDWFQBDEFMWAZYQYNDWGWBZOWCYNYJFWDWEUKUDVHAXTVLZYAVLZWHYEYNWHZYKWHZ
+        WIAUUBUUDUUCYKABCDEFGHIJKLMNOPQRSTUAUBUCWJABCDEFGHIJKLMNOPQRSTUAUBUCWKW
+        LAYJUUDUQZWMUUEWIVOAYJYEUQZYOWNUUFAUUGYOAUUGGYDUQZUNGWOAYSGYQUQZYDYQWPZ
+        UUGUUHWQAYRYSQYTVGOAUUIYPGWRUHUQUUJOGUNYPWSGUNYPWTWBYQYNDGYDXAXBXCXDYJY
+        EYNXEXFUUDYJXGXPXHABCDEFGHIJKLMNOPQRSTUAUBUCXIABCDEFGHIJKLMNOPQRSTUAUBU
+        CXJYFAFDUNGXKUSUPVKFYEVKZYLXLKUGUHXTYAXLADFGNUUAOXMUCAXTUUKYAYLUAUBXNXO
+        ABCDEFGHIJKLMNOPQRSTUAUBUCXQABCDEFGHIJKLMNOPQRSTUAUBUCXRXS $.
+
+      $( Lemma for ~ eupth2lem3fi .  (Contributed by AV, 21-Feb-2021.) $)
+      eupth2lem3lem1fi $p |- ( ph -> ( ( VtxDeg ` X ) ` U ) e. NN0 ) $=
+        ( vg cvtx cfv cn0 cvtxdg ciedg cdm eqid trlsegvdeglem6 cfn eqeltrd cfzo
+        cc0 co cima cvv wcel eleqtrrd cv cxp cbs cif df-vtx mptrcl syl upgrspan
+        c1st vtxdgfif ffvelcdmd ) AIUGUHZUICIUJUHAIUKUHZULZIVPVOVOUMVPUMVQUMABC
+        DEFGHIJKLMNOPQRSTUAUBUCUNAVOHUORUEUPADURGUQUSUTIFEHVALMACVOVBIVAVBACHVO
+        PRVCZUFVAUFVDZVAVAVEVBVSVLUHVSVFUHVGUGCIUFVHVIVJRUAUDVKVMVRVN $.
+
+      $( Lemma for ~ eupth2lem3fi .  (Contributed by AV, 21-Feb-2021.) $)
+      eupth2lem3lem2fi $p |- ( ph -> ( ( VtxDeg ` Y ) ` U ) e. NN0 ) $=
+        ( cvtx cfv cn0 cvtxdg ciedg cdm eqid trlsegvdeglem7 cfn eqeltrd csn cvv
+        vg wcel eleqtrrd cxp c1st cbs cif df-vtx mptrcl syl cop cres wfn funfnd
+        cv wceq cc0 chash cfzo co ctrls wbr wf1 wf trlf1 3syl ffvelcdmd fnressn
+        f1f syl2anc eqtr4d upgrspan vtxdgfif ) AJUFUGZUHCJUIUGAJUJUGZUKZJWLWKWK
+        ULWLULWMULABCDEFGHIJKLMNOPQRSTUAUBUCUMAWKHUNSUEUOAGDUGZUPZJFEHUQLMACWKU
+        SJUQUSACHWKPSUTZURUQURVLZUQUQVAUSWQVBUGWQVCUGVDUFCJURVEVFVGSAWLWNWNFUGV
+        HUPZFWOVIZUBAFFUKZVJWNWTUSWSWRVMAFNVKAVNDVOUGVPVQZWTGDADBEVRUGVSXAWTDVT
+        XAWTDWAQBDEFMWBXAWTDWFWCOWDWTWNFWEWGWHUDWIWJWPWD $.
+
+      $d U x $.  $d V x $.  $d X x $.
+      eupth2lem3.o $e |- ( ph -> { x e. V | -. 2 || ( ( VtxDeg ` X ) ` x ) } =
+          if ( ( P ` 0 ) = ( P ` N ) , (/) , { ( P ` 0 ) , ( P ` N ) } ) ) $.
+      ${
+        eupth2lem3lem3.e $e |- ( ph -> if- ( ( P ` N ) = ( P ` ( N + 1 ) ) ,
+                                       ( I ` ( F ` N ) ) = { ( P ` N ) } ,
+                                       { ( P ` N ) , ( P ` ( N + 1 ) ) }
+                                       C_ ( I ` ( F ` N ) ) ) ) $.
+        $( Lemma for ~ eupth2lem3fi .  If a loop
+           ` { ( P `` N ) , ( P `` ( N + 1 ) ) } ` is added to a trail, the
+           degree of the vertices with odd degree remains odd (regarding the
+           subgraphs induced by the involved trails).  (Contributed by Mario
+           Carneiro, 8-Apr-2015.)  (Revised by AV, 21-Feb-2021.) $)
+        eupth2lem3lem3fi $p |- ( ( ph /\ ( P ` N ) = ( P ` ( N + 1 ) ) )
+               -> ( -. 2 || ( ( ( VtxDeg ` X ) ` U ) + ( ( VtxDeg ` Y ) ` U ) )
+                    <-> U e. if ( ( P ` 0 ) = ( P ` ( N + 1 ) ) , (/) ,
+                                  { ( P ` 0 ) , ( P ` ( N + 1 ) ) } ) ) ) $=
+          ( cfv c1 caddc co wceq wa c2 cvtxdg cdvds wbr wn cc0 c0 cpr cif wb cv
+          wcel fveq2 breq2d notbid elrab3 eleq2d bitr3d adantr eupth2lem3lem1fi
+          crab syl cz a1i nn0zd eupth2lem3lem2fi wne z2even cvtx ad2antrr chash
+          2z cdm cfzo ctrls wf1 wf trlf1 f1f ffvelcdmd ciedg cop csn wss ifptru
+          3syl wif adantl mpbid eqcoms sylan9eq opeq2d sneqd eqtrd 1loopgrvd2fi
+          sneq cfn breqtrrid z0even trlsegvdeglem1 simpld anim1i eldifsn sylibr
+          cdif 1loopgrvd0fi wdc wo cfz cwlks trliswlk wlkp elfzofz syl3anc dcne
+          fidceq sylib mpjaodan dvdsadd2b syl112anc nn0cnd addcomd bitrd eqeq2d
+          simpr preq2d ifbieq2d 3bitr3d ) AHCUIZHUJUKULCUIZUMZUNZUODJUPUIZUIZUQ
+          URZUSZDUTCUIZUUCUMZVAUUKUUCVBZVCZVFZUOUUHDKUPUIUIZUKULZUQURZUSDUUKUUD
+          UMZVAUUKUUDVBZVCZVFAUUJUUOVDUUEADUOBVEZUUGUIZUQURZUSZBIVOZVFZUUJUUOAD
+          IVFZUVGUUJVDQUVEUUJBDIUVBDUMZUVDUUIUVIUVCUUHUOUQUVBDUUGVGVHVIVJVPAUVF
+          UUNDUGVKVLVMUUFUUIUURUUFUUIUOUUPUUHUKULZUQURZUURUUFUOVQVFZUUHVQVFZUUP
+          VQVFZUOUUPUQURZUUIUVKVDUVLUUFWFVRAUVMUUEAUUHACDEFGHIJKLMNOPQRSTUAUBUC
+          UDUEUFVNZVSVMAUVNUUEAUUPACDEFGHIJKLMNOPQRSTUAUBUCUDUEUFVTZVSVMUUFDUUC
+          UMZUVODUUCWAZUUFUVRUNZUOUOUUPUQWBUVTHEUIZKDIGWGZAKWCUIIUMZUUEUVRTWDAU
+          WAUWBVFZUUEUVRAUTEWEUIZWHULZUWBHEAECFWIUIURZUWFUWBEWJUWFUWBEWKRCEFGNW
+          LUWFUWBEWMWTPWNZWDAUVHUUEUVRQWDUVTKWOUIZUWAUWAGUIZWPZWQZUWADWQZWPZWQA
+          UWIUWLUMZUUEUVRUCWDUVTUWKUWNUVTUWJUWMUWAUUFUVRUWJUUCWQZUWMUUFUUEUWJUW
+          PUMZUUCUUDVBUWJWRZXAZUWQAUWSUUEUHVMUUEUWSUWQVDAUUEUWQUWRWSXBXCZUWPUWM
+          UMUUCDUUCDXJXDXEXFXGXHAIXKVFZUUEUVRUFWDXIXLUUFUVSUNZUOUTUUPUQXMUXBUWA
+          KDUUCIUWBAUWCUUEUVSTWDAUWDUUEUVSUWHWDAUUCIVFZUUEUVSAUXCUUDIVFACDEFGHI
+          MNOPQRXNXOWDUUFUWIUWAUWPWPZWQZUMUVSUUFUWIUWLUXEAUWOUUEUCVMUUFUWKUXDUU
+          FUWJUWPUWAUWTXFXGXHVMAUXAUUEUVSUFWDUXBUVHUVSUNDIUWPXSVFUUFUVHUVSAUVHU
+          UEQVMZXPDIUUCXQXRXTXLUUFUVRYAZUVRUVSYBUUFUXAUVHUXCUXGAUXAUUEUFVMUXFAU
+          XCUUEAUTUWEYCULZIHCAUWGECFYDUIURUXHICWKRCEFYECEFIMYFWTAHUWFVFHUXHVFPH
+          UTUWEYGVPWNVMIDUUCYJYHDUUCYIYKYLUOUUHUUPYMYNAUVKUURVDUUEAUVJUUQUOUQAU
+          UPUUHAUUPUVQYOAUUHUVPYOYPVHVMYQVIUUFUUNUVADUUFUULUUSUUMUUTVAUUFUUCUUD
+          UUKAUUEYSZYRUUFUUCUUDUUKUXIYTUUAVKUUB $.
+      $}
+    $}
+
+    ${
+      $d U x $.  $d V x $.  $d X x $.
+      eupth2lem3lem6fi.g $e |- ( ph -> G e. UPGraph ) $.
+      eupth2lem3lem6fi.v $e |- ( ph -> V e. Fin ) $.
+      eupth2lem3lem6fi.o $e |- ( ph ->
+        { x e. V | -. 2 || ( ( VtxDeg ` X ) ` x ) } =
+        if ( ( P ` 0 ) = ( P ` N ) , (/) , { ( P ` 0 ) , ( P ` N ) } ) ) $.
+      eupth2lem3lem6fi.e $e |- ( ph -> ( I ` ( F ` N ) )
+                                = { ( P ` N ) , ( P ` ( N + 1 ) ) } ) $.
+      $( If an edge (not a loop) is added to a trail, the degree of vertices
+         not being end vertices of this edge remains odd if it was odd before
+         (regarding the subgraphs induced by the involved trails).  Remark:
+         This seems to be not valid for hyperedges joining more vertices than
+         ` ( P `` 0 ) ` and ` ( P `` N ) ` : if there is a third vertex in the
+         edge, and this vertex is already contained in the trail, then the
+         degree of this vertex could be affected by this edge!  (Contributed by
+         Mario Carneiro, 8-Apr-2015.)  (Revised by AV, 25-Feb-2021.) $)
+      eupth2lem3lem6fi $p |- ( ( ph /\ ( P ` N ) =/= ( P ` ( N + 1 ) )
+                            /\ ( U =/= ( P ` N ) /\ U =/= ( P ` ( N + 1 ) ) ) )
+        -> ( -. 2 || ( ( ( VtxDeg ` X ) ` U ) + ( ( VtxDeg ` Y ) ` U ) ) <->
+           U e. if ( ( P ` 0 ) = ( P ` ( N + 1 ) ) , (/) ,
+                   { ( P ` 0 ) , ( P ` ( N + 1 ) ) } ) ) ) $=
+        ( vg cfv c1 caddc co wne wa w3a c2 cvtxdg cdvds wbr wn cc0 wceq cpr cif
+        c0 wcel cdm cvv ciedg cop csn 3ad2ant1 cvtx chash cfzo ctrls wf1 wf f1f
+        trlf1 3syl ffvelcdmd cfn cupgr eleqtrrd cxp c1st cbs df-vtx mptrcl cres
+        cv syl wfn funfnd fnressn syl2anc eqtr4d upgrspan wfun funfvex wi simpl
+        wnel adantl nelprd df-nel sylibr neleq2 imbitrrid expd 3imp 1hevtxdg0fi
+        simpr oveq2d eupth2lem3lem1fi nn0cnd addridd eqtrd breq2d wb crab fveq2
+        notbid elrab3 eleq2d bitr3d 3ad2ant3 2thd neeq1 bibi12d syl5ibcom biorf
+        wo neneqd orcom bitrdi anbi2d eupth2lem1 pm5.32rd 3bitr3d 3bitr4d
+        3bitrd ) AHCUJZHUKULUMCUJZUNZDUUEUNZDUUFUNZUOZUPZUQDJURUJZUJZDKURUJUJZU
+        LUMZUSUTZVAUQUUMUSUTZVAZDVBCUJZUUEVCVFUUSUUEVDVEZVGZDUUSUUFVCVFUUSUUFVD
+        VEVGZUUKUUPUUQUUKUUOUUMUQUSUUKUUOUUMVBULUMZUUMUUKUUNVBUUMULUUKHEUJZDUVD
+        GUJZKIGVHZVIAUUGKVJUJZUVDUVEVKVLZVCUUJUCVMAUUGKVNUJZIVCUUJTVMAUUGUVDUVF
+        VGZUUJAVBEVOUJVPUMZUVFHEAECFVQUJUTUVKUVFEVRUVKUVFEVSRCEFGNWAUVKUVFEVTWB
+        PWCZVMAUUGDIVGZUUJQVMZAUUGIWDVGUUJUFVMAUUGKWEVGUUJAUVDVLZKGFIVIMNADUVIV
+        GKVIVGADIUVIQTWFUIVIUIWMZVIVIWGVGUVPWHUJUVPWIUJVEVNDKUIWJWKWNTAUVGUVHGU
+        VOWLZUCAGUVFWOUVJUVQUVHVCAGOWPUVLUVFUVDGWQWRWSUEWTVMAUUGUVEVIVGZUUJAGXA
+        UVJUVROUVLUVDGXBWRVMAUUGUUJDUVEXEZAUVEUUEUUFVDZVCZUUGUUJUVSXCXCUHUWAUUG
+        UUJUVSUUGUUJUOZUVSUWADUVTXEZUWBDUVTVGVAUWCUWBDUUEUUFUUJUUHUUGUUHUUIXDZX
+        FUUJUUIUUGUUHUUIXOZXFXGDUVTXHXIUVEUVTDXJXKXLWNXMXNXPAUUGUVCUUMVCUUJAUUM
+        AUUMACDEFGHIJKLMNOPQRSTUAUBUCUDUEUFXQXRXSVMXTYAYEAUUGUURUVAYBUUJADUQBWM
+        ZUULUJZUSUTZVAZBIYCZVGZUURUVAAUVMUWKUURYBQUWIUURBDIUWFDVCZUWHUUQUWLUWGU
+        UMUQUSUWFDUULYDYAYEYFWNAUWJUUTDUGYGYHVMUUKUUSUUEUNZDUUSVCZDUUEVCZYOZUOZ
+        UUSUUFUNZUWNDUUFVCZYOZUOZUVAUVBUUKUWMUWNUOUWRUWNUOUWQUXAUUKUWNUWMUWRUUK
+        UUHUUIYBUWNUWMUWRYBUUKUUHUUIUUJAUUHUUGUWDYIZUUJAUUIUUGUWEYIZYJUWNUUHUWM
+        UUIUWRDUUSUUEYKDUUSUUFYKYLYMUUAUUKUWNUWPUWMUUKUWNUWOUWNYOZUWPUUKUWOVAUW
+        NUXDYBUUKDUUEUXBYPUWOUWNYNWNUWOUWNYQYRYSUUKUWNUWTUWRUUKUWNUWSUWNYOZUWTU
+        UKUWSVAUWNUXEYBUUKDUUFUXCYPUWSUWNYNWNUWSUWNYQYRYSUUBUUKUVMUVAUWQYBUVNUU
+        SUUEDIYTWNUUKUVMUVBUXAYBUVNUUSUUFDIYTWNUUCUUD $.
+    $}
+
+    ${
+      eupth2lem3lem5.o $e |- ( ph ->
+        { x e. V | -. 2 || ( ( VtxDeg ` X ) ` x ) } =
+        if ( ( P ` 0 ) = ( P ` N ) , (/) , { ( P ` 0 ) , ( P ` N ) } ) ) $.
+      eupth2lem3.e $e |- ( ph -> ( I ` ( F ` N ) )
+                                  = { ( P ` N ) , ( P ` ( N + 1 ) ) } ) $.
+      $( Lemma for ~ eupth2fi .  (Contributed by AV, 25-Feb-2021.) $)
+      eupth2lem3lem5 $p |- ( ph -> ( I ` ( F ` N ) ) e. ~P V ) $=
+        ( cfv c1 caddc co cpr cpw wcel wa trlsegvdeglem1 prelpwi syl eqeltrd )
+        AHEUGGUGHCUGZHUHUIUJCUGZUKZIULZUFAUSIUMUTIUMUNVAVBUMACDEFGHIMNOPQRUOUSU
+        TIUPUQUR $.
+    $}
+
+    ${
+      eupth2lem3lem4fi.g $e |- ( ph -> G e. UMGraph ) $.
+      eupth2lem3lem4fi.v $e |- ( ph -> V e. Fin ) $.
+      $d U x $.  $d V x $.  $d X x $.
+      eupth2lem3lem4fi.o $e |- ( ph ->
+        { x e. V | -. 2 || ( ( VtxDeg ` X ) ` x ) } =
+        if ( ( P ` 0 ) = ( P ` N ) , (/) , { ( P ` 0 ) , ( P ` N ) } ) ) $.
+      eupth2lem3lem4fi.e $e |- ( ph -> if- ( ( P ` N ) = ( P ` ( N + 1 ) ) ,
+                                       ( I ` ( F ` N ) ) = { ( P ` N ) } ,
+                                       { ( P ` N ) , ( P ` ( N + 1 ) ) }
+                                       C_ ( I ` ( F ` N ) ) ) ) $.
+      eupth2lem3lem4.i $e |- ( ph -> ( I ` ( F ` N ) ) e. ~P V ) $.
+      $( Lemma for ~ eupth2lem3fi .  If an edge (not a loop) is added to a
+         trail, the degree of the end vertices of this edge remains odd if it
+         was odd before (regarding the subgraphs induced by the involved
+         trails).  (Contributed by Mario Carneiro, 8-Apr-2015.)  (Revised by
+         AV, 25-Feb-2021.) $)
+      eupth2lem3lem4fi $p |- ( ( ph /\ ( P ` N ) =/= ( P ` ( N + 1 ) )
+                            /\ ( U = ( P ` N ) \/ U = ( P ` ( N + 1 ) ) ) )
+             -> ( -. 2 || ( ( ( VtxDeg ` X ) ` U ) + ( ( VtxDeg ` Y ) ` U ) )
+                  <-> U e. if ( ( P ` 0 ) = ( P ` ( N + 1 ) ) , (/) ,
+                                { ( P ` 0 ) , ( P ` ( N + 1 ) ) } ) ) ) $=
+        ( vg cfv c1 caddc co wne wceq wo c2 cvtxdg cdvds wbr wn cc0 c0 cpr wcel
+        cif wb wa wi cdm chash cfzo ctrls wf1 trlf1 f1f 3syl ffvelcdmd ad2antrr
+        wf trlsegvdeglem1 simprd neeq1 biimpcd adantl imp cpw ciedg cop csn wss
+        wif adantr df-ne ifpfal sylbi preq1 sseq1d biimtrdi cvtx cumgr eleqtrrd
+        mpd cfn cvv cv cxp c1st cbs df-vtx mptrcl syl wfn funfnd fnressn eqtr4d
+        cres syl2anc umgrspan 1hegrvtxdg1fi oveq2d breq2d notbid crab cz cn clt
+        syl3anc eleq2d fidceq simplr simpr eupth2lem2dc 3bitrd expcom ad3antrrr
+        a1i wdc eqcoms cupgr umgrupgr eupth2lem3lem1fi nn0zd 1lt2 ndvdsp1 con2d
+        2nn 1z n2dvds1 opoe mpanr12 ex impbid fveq2 elrab3 3bitr2d cfz trliswlk
+        cwlks wlkp elfzofz cuz elfzuz2 eluzfz1 simpld neeq2 1hegrvtxdg1rfi noel
+        preq2 iftrued mtbiri olcd df-dc sylibr dcor iffalsed elprg bitrd mpbird
+        sylc dcbid exmiddc mpjaodan necomd a1d con1biddc jaoi com12 3impia ) AH
+        CUKZHULUMUNCUKZUOZDUWKUPZDUWLUPZUQZURDJUSUKZUKZDKUSUKUKZUMUNZUTVAZVBZDV
+        CCUKZUWLUPZVDUXCUWLVEZVGZVFZVHZUWPAUWMVIZUXHUWNUXIUXHVJZUWOUXJUWKDUXIUW
+        KDUPZUXHUXIUXKVIZUXBURUWRULUMUNZUTVAZVBZDUXCUWKUPZVDUXCUWKVEVGZVFZVBZUX
+        GUXLUXAUXNUXLUWTUXMURUTUXLUWSULUWRUMUXLHEUKZDUWLUXTGUKZKIGVKZAUXTUYBVFZ
+        UWMUXKAVCEVLUKZVMUNZUYBHEAECFVNUKVAZUYEUYBEVOUYEUYBEWARCEFGNVPUYEUYBEVQ
+        VRPVSZVTADIVFZUWMUXKQVTAUWLIVFZUWMUXKAUWKIVFZUYIACDEFGHIMNOPQRWBZWCZVTU
+        XIUXKDUWLUOZUWMUXKUYMVJAUXKUWMUYMUWKDUWLWDWEWFWGAUYAIWHVFZUWMUXKUIVTAKW
+        IUKZUXTUYAWJWKZUPZUWMUXKUCVTUXIUXKDUWLVEZUYAWLZUXIUWKUWLUPZUYAUWKWKUPZU
+        WKUWLVEZUYAWLZWMZUXKUYSVJZAVUDUWMUHWNZUXIVUDVUCVUEUWMVUDVUCVHZAUWMUYTVB
+        VUGUWKUWLWOUYTVUAVUCWPWQWFZUXKVUCUYSUXKVUBUYRUYAUWKDUWLWRWSWEWTXDWGAKXA
+        UKZIUPZUWMUXKTVTAIXEVFZUWMUXKUFVTZAKXBVFZUWMUXKAUXTWKZKGFIXFMNADVUIVFKX
+        FVFADIVUIQTXCUJXFUJXGZXFXFXHVFVUOXIUKVUOXJUKVGXADKUJXKXLXMTAUYOUYPGVUNX
+        RZUCAGUYBXNUYCVUPUYPUPAGOXOUYGUYBUXTGXPXSXQUEXTZVTYAYBYCYDAUXOUXSVHZUWM
+        UXKAUXNUXRAUXNURUWRUTVAZVBZDURBXGZUWQUKZUTVAZVBZBIYEZVFZUXRAUXNVUTAVUSU
+        XNAUWRYFVFZURYGVFZULURYHVAZVUSUXOVJAUWRACDEFGHIJKLMNOPQRSTUAUBUCUDAFXBV
+        FFUUAVFUEFUUBXMUFUUCUUDZVVHAUUHYRVVIAUUEYRURUWRUUFYIUUGAVVGVUTUXNVJVVJV
+        VGVUTUXNVVGVUTVIULYFVFURULUTVAVBUXNUUIUUJUWRULUUKUULUUMXMUUNAUYHVVFVUTV
+        HQVVDVUTBDIVVADUPZVVCVUSVVKVVBUWRURUTVVADUWQUUOYCYDUUPXMAVVEUXQDUGYJUUQ
+        YDZVTUXLUXCUWKUWLDIAUYJUWMUXKAVCUYDUURUNZIHCAUYFECFUUTUKVAVVMICWARCEFUU
+        SCEFIMUVAVRZAHUYEVFHVVMVFZPHVCUYDUVBXMZVSVTZUXLVUKUXCIVFZUYJUXPYSVULAVV
+        RUWMUXKAVVMIVCCVVNAVVOUYDVCUVCUKVFVCVVMVFVVPHVCUYDUVDVCUYDUVEVRVSZVTVVQ
+        IUXCUWKYKYIAUWMUXKYLUXIUXKYMYNYOYPYTUXJUWLDUXIUWLDUPZUXHUXIVVTVIZUXBUXO
+        UXSUXGVWAUXAUXNVWAUWTUXMURUTVWAUWSULUWRUMVWAUXTUWKDUYAKIUYBAUYCUWMVVTUY
+        GVTAUYJUWMVVTAUYJUYIUYKUVFVTAUYHUWMVVTQVTUXIVVTUWKDUOZUWMVVTVWBVJAVVTUW
+        MVWBUWLDUWKUVGWEWFWGAUYNUWMVVTUIVTAUYQUWMVVTUCVTUXIVVTUWKDVEZUYAWLZUXIV
+        UDVVTVWDVJZVUFUXIVUDVUCVWEVUHVVTVUCVWDVVTVUBVWCUYAUWLDUWKUVJWSWEWTXDWGA
+        VUJUWMVVTTVTAVUKUWMVVTUFVTZAVUMUWMVVTVUQVTUVHYBYCYDAVURUWMVVTVVLVTVWAUX
+        GYSZUXSUXGVHVWAUXDVWGUXDVBZVWAUXDVIZUXGUXGVBZUQVWGVWIVWJUXGVWIUXGDVDVFD
+        UVIVWIUXFVDDVWIUXDVDUXEVWAUXDYMUVKYJUVLUVMUXGUVNUVOVWAVWHVIZVWGDUXCUPZU
+        WOUQZYSZVWKVWLYSZUWOYSZVWNAVWOUWMVVTVWHAVUKUYHVVRVWOUFQVVSIDUXCYKYIYQAV
+        WPUWMVVTVWHAVUKUYHUYIVWPUFQUYLIDUWLYKYIYQVWLUWOUVPUWAVWKUXGVWMVWKUXGDUX
+        EVFZVWMVWKUXFUXEDVWKUXDVDUXEVWAVWHYMUVQYJAVWQVWMVHZUWMVVTVWHAUYHVWRQDUX
+        CUWLIUVRXMYQUVSUWBUVTVWAUXDYSZUXDVWHUQVWAVUKVVRUYIVWSVWFAVVRUWMVVTVVSVT
+        AUYIUWMVVTUYLVTZIUXCUWLYKYIZUXDUWCXMUWDVWAUXGUXRVWAVWJUXRVHVWGVWAUXCUWL
+        UWKDIVWTVXAVWAUWKUWLAUWMVVTYLUWEUXIVVTYMYNUWFUWGXDYOYPYTUWHUWIUWJ $.
+    $}
+
+    ${
+      $d U x $.  $d V x $.  $d X x $.
+      eupth2lem3lem7fi.g $e |- ( ph -> G e. UMGraph ) $.
+      eupth2lem3lem7fi.v $e |- ( ph -> V e. Fin ) $.
+      eupth2lem3lem7fi.o $e |- ( ph ->
+        { x e. V | -. 2 || ( ( VtxDeg ` X ) ` x ) } =
+        if ( ( P ` 0 ) = ( P ` N ) , (/) , { ( P ` 0 ) , ( P ` N ) } ) ) $.
+      eupth2lem3lem7fi.e $e |- ( ph -> ( I ` ( F ` N ) )
+                                = { ( P ` N ) , ( P ` ( N + 1 ) ) } ) $.
+      $( Lemma for ~ eupth2lem3fi :  Combining ~ trlsegvdegfi ,
+         ~ eupth2lem3lem3fi , ~ eupth2lem3lem4fi and ~ eupth2lem3lem6fi .
+         (Contributed by Mario Carneiro, 8-Apr-2015.)  (Revised by AV,
+         27-Feb-2021.) $)
+      eupth2lem3lem7fi $p |- ( ph -> ( -. 2 || ( ( VtxDeg ` Z ) ` U )
+          <-> U e. if ( ( P ` 0 ) = ( P ` ( N + 1 ) ) , (/) ,
+          { ( P ` 0 ) , ( P ` ( N + 1 ) ) } ) ) ) $=
+        ( c2 cvtxdg cfv cdvds wbr wn caddc co cc0 c1 wceq c0 cpr cif wcel cumgr
+        cupgr umgrupgr syl trlsegvdegfi breq2d notbid wne wdc csn wss wif chash
+        wb cfn ctrls cwlks wf trliswlk wlkp 3syl cfzo elfzofz ffvelcdmd fzofzp1
+        fidceq syl3anc ifpprsnssdc syl2anc eupth2lem3lem3fi wa eupth2lem3lem4fi
+        cfz wo eupth2lem3lem5 3expa neanior eupth2lem3lem6fi sylan2br dcor sylc
+        adantr exmiddc mpjaodan dcne sylib bitrd ) AUIDLUJUKUKZULUMZUNUIDJUJUKU
+        KDKUJUKUKUOUPZULUMZUNZDUQCUKZHURUOUPZCUKZUSUTXPXRVAVBVCZAXLXNAXKXMUIULA
+        CDEFGHIJKLMNOPQRSTUAUBUCUDAFVDVCFVEVCUEFVFVGZUFVHVIVJAHCUKZXRUSZXOXSVQZ
+        YAXRVKZABCDEFGHIJKLMNOPQRSTUAUBUCUDXTUFUGAHEUKGUKZYAXRVAZUSYBVLZYBYEYAV
+        MUSYFYEVNVOUHAIVRVCZYAIVCZXRIVCZYGUFAUQEVPUKZWPUPZIHCAECFVSUKUMECFVTUKU
+        MYLICWARCEFWBCEFIMWCWDZAHUQYKWEUPVCZHYLVCPHUQYKWFVGWGZAYLIXQCYMAYNXQYLV
+        CPUQYKHWHVGWGZIYAXRWIWJZYAXRYEWKWLZWMAYDWNZDYAUSZDXRUSZWQZYCUUBUNZAYDUU
+        BYCABCDEFGHIJKLMNOPQRSTUAUBUCUDUEUFUGYRABCDEFGHIJKLMNOPQRSTUAUBUCUDUGUH
+        WRWOWSUUCYSDYAVKDXRVKWNZYCDYADXRWTAYDUUDYCABCDEFGHIJKLMNOPQRSTUAUBUCUDX
+        TUFUGUHXAWSXBYSUUBVLZUUBUUCWQYSYTVLZUUAVLZUUEAUUFYDAYHDIVCZYIUUFUFQYOID
+        YAWIWJXEAUUGYDAYHUUHYJUUGUFQYPIDXRWIWJXEYTUUAXCXDUUBXFVGXGAYGYBYDWQYQYA
+        XRXHXIXGXJ $.
+    $}
+  $}
+
+  ${
+    eupthvdres.v $e |- V = ( Vtx ` G ) $.
+    eupthvdres.i $e |- I = ( iEdg ` G ) $.
+    eupthvdres.g $e |- ( ph -> G e. W ) $.
+    eupthvdres.f $e |- ( ph -> Fun I ) $.
+    eupthvdres.p $e |- ( ph -> F ( EulerPaths ` G ) P ) $.
+    eupthvdres.h $e |- H = <. V , ( I |` ( F " ( 0 ..^ ( # ` F ) ) ) ) >. $.
+    $( The vertex degree remains the same for all vertices if the edges are
+       restricted to the edges of an Eulerian path.  (Contributed by Mario
+       Carneiro, 8-Apr-2015.)  (Revised by AV, 26-Feb-2021.) $)
+    eupthvdres $p |- ( ph -> ( VtxDeg ` H ) = ( VtxDeg ` G ) ) $=
+      ( cvv cfv wcel cvtx syl ciedg cc0 chash cfzo cima cres cop vtxex eqeltrid
+      co iedgex resexg opexg syl2anc fveq2i wceq opvtxfv eqtrid eqtrdi opiedgfv
+      cdm ceupth wbr wf1o wfo eupthf1o f1ofo 4syl reseq2d funfnd fnresdm 3eqtrd
+      foima wfn vtxdeqd ) ADEHOKAEGFCUACUBPUCUIZUDZUEZUFZONAGOQZVQOQZVROQAGDRPZ
+      OIADHQZWAOQKDHUGSUHZAFOQVTAFDTPZOJAWBWDOQKDHUJSUHFVPOUKSZGVQOOULUMUHAERPZ
+      GWAAWFVRRPZGEVRRNUNAVSVTWGGUOWCWEVQGOOUPUMUQIURAETPZFWDAWHVQFFUTZUEZFAWHV
+      RTPZVQEVRTNUNAVSVTWKVQUOWCWEVQGOOUSUMUQAVPWIFACBDVAPVBVOWICVCVOWICVDVPWIU
+      OMBCDFJVEVOWICVFVOWICVLVGVHAFWIVMWJFUOAFLVIWIFVJSVKJURVN $.
+  $}
+
+  ${
+    eupth2.v $e |- V = ( Vtx ` G ) $.
+    eupth2.i $e |- I = ( iEdg ` G ) $.
+    eupth2fi.g $e |- ( ph -> G e. UMGraph ) $.
+    eupth2.f $e |- ( ph -> Fun I ) $.
+    eupth2.p $e |- ( ph -> F ( EulerPaths ` G ) P ) $.
+    eupth2fi.fi $e |- ( ph -> V e. Fin ) $.
+    ${
+      $d F k $.  $d G k $.  $d H x $.  $d I k $.  $d N k $.  $d P k $.
+      $d U x $.  $d V x $.
+      eupth2.h $e |- H = <. V , ( I |` ( F " ( 0 ..^ N ) ) ) >. $.
+      eupth2.x $e |- X = <. V , ( I |` ( F " ( 0 ..^ ( N + 1 ) ) ) ) >. $.
+      eupth2.n $e |- ( ph -> N e. NN0 ) $.
+      eupth2.l $e |- ( ph -> ( N + 1 ) <_ ( # ` F ) ) $.
+      eupth2.u $e |- ( ph -> U e. V ) $.
+      eupth2.o $e |- ( ph -> { x e. V | -. 2 || ( ( VtxDeg ` H ) ` x ) } =
+        if ( ( P ` 0 ) = ( P ` N ) , (/) , { ( P ` 0 ) , ( P ` N ) } ) ) $.
+      $( Lemma for ~ eupth2fi .  (Contributed by Mario Carneiro, 8-Apr-2015.)
+         (Revised by AV, 26-Feb-2021.) $)
+      eupth2lem3fi $p |- ( ph -> ( -. 2 || ( ( VtxDeg ` X ) ` U )
+                         <-> U e. if ( ( P ` 0 ) = ( P ` ( N + 1 ) ) , (/) ,
+                                     { ( P ` 0 ) , ( P ` ( N + 1 ) ) } ) ) ) $=
+        ( vk cfv cop csn cn0 wcel chash c1 caddc co cle wbr cc0 cfzo eupthiswlk
+        cwlks wlkcl 3syl nn0p1elfzo syl3anc ctrls eupthistrl syl cvtx cima cres
+        ceupth fveq2i cvv wceq elexd ciedg cumgr iedgex eqeltrid resexg opvtxfv
+        cfn syl2anc eqtrid w3a eupthv simp2d fvexg opexg opiedgfv cfz cz fzval3
+        snexg nn0zd eqcomd imaeq2d reseq2d eqtrd cv cpr fvoveq1 preq12d eqeq12d
+        2fveq3 fveq2 cupgr wral umgrupgr upgrwlkedg rspcdva eupth2lem3lem7fi )
+        ABCDEFHIJGJIEUEZXLHUEZUFZUGZUFZKLMOAIUHUIZEUJUEZUHUIZIUKULUMZXRUNUOIUPX
+        RUQUMZUITAECFVJUEUOZECFUSUEUOZXSPCEFURZCEFUTVAUAIXRVBVCZUBAYBECFVDUEUOP
+        CEFVEVFAGVGUEJHEUPIUQUMVHZVIZUFZVGUEZJGYHVGRVKAJVLUIZYGVLUIZYIJVMAJWAQV
+        NZAHVLUIZYKAHFVOUEZVLMAFVPUIZYNVLUINFVPVQVFVRZHYFVLVSVFZYGJVLVLVTWBWCAY
+        JXOVLUIZXPVGUEJVMYLAXNVLUIZYRAXLVLUIZXMVLUIZYSAEVLUIZXQYTAFVLUIZUUBCVLU
+        IZAYBUUCUUBUUDWDPCEFWEVFWFTIEVLUHWGWBZAYMYTUUAYPUUEXLHVLVLWGWBXLXMVLVLW
+        HWBXNVLWMVFZXOJVLVLVTWBAKVGUEJHEUPXTUQUMZVHZVIZUFZVGUEZJKUUJVGSVKAYJUUI
+        VLUIZUUKJVMYLAYMUULYPHUUHVLVSVFZUUIJVLVLVTWBWCAGVOUEYHVOUEZYGGYHVORVKAY
+        JYKUUNYGVMYLYQYGJVLVLWIWBWCAYJYRXPVOUEXOVMYLUUFXOJVLVLWIWBAKVOUEZUUIHEU
+        PIWJUMZVHZVIAUUOUUJVOUEZUUIKUUJVOSVKAYJUULUURUUIVMYLUUMUUIJVLVLWIWBWCAU
+        UHUUQHAUUGUUPEAIWKUIZUUGUUPVMAITWNUUSUUPUUGUPIWLWOVFWPWQWRNQUCAUDWSZEUE
+        HUEZUUTCUEZUUTUKULUMCUEZWTZVMZXMICUEZXTCUEZWTZVMUDYAIUUTIVMZUVAXMUVDUVH
+        UUTIHEXDUVIUVBUVFUVCUVGUUTICXEUUTIUKCULXAXBXCAFXFUIZYCUVEUDYAXGAYOUVJNF
+        XHVFAYBYCPYDVFCUDEFHMXIWBYEXJXK $.
+    $}
+
+    $d ph x $.
+    $( Lemma for ~ eupth2fi (induction basis):  There are no vertices of odd
+       degree in an Eulerian path of length 0, having no edge and identical
+       endpoints (the single vertex of the Eulerian path).  (Contributed by
+       Mario Carneiro, 8-Apr-2015.)  (Revised by AV, 26-Feb-2021.) $)
+    eupth2lembfi $p |- ( ph -> { x e. V | -. 2 || ( ( VtxDeg `
+                    <. V , ( I |` ( F " ( 0 ..^ 0 ) ) ) >. ) ` x ) } = (/) ) $=
+      ( cc0 cfv c0 wceq wcel cvv cfn c2 cv cfzo co cima cop cvtxdg cdvds wbr wn
+      cres wral crab wa z0even ciedg cvtx eqid elexd iedgex syl eqeltrid resexg
+      cumgr opvtxfv syl2anc eqcomd eleq2d biimpa opiedgfv imaeq2i eqtri reseq2i
+      fzo0 ima0 eqtrdi adantr eqeltrd cupgr opeq2i upgr0eop vtxdgfi0e breqtrrid
+      res0 notnotd ralrimiva rabeq0 sylibr ) AUABUBZGFDNNUCUDZUEZUKZUFZUGOOZUHU
+      IZUJZUJZBGULWPBGUMPQAWQBGAWIGRZUNZWOWSUANWNUHUOWSWIWMWMUPOZWMUQOZXAURWTUR
+      AWRWIXARAGXAWIAXAGAGSRZWLSRZXAGQAGTMUSZAFSRXCAFEUPOZSIAEVDRXESRJEVDUTVAVB
+      FWKSVCVAZWLGSSVEVFZVGVHVIAWTPQWRAWTWLPAXBXCWTWLQXDXFWLGSSVJVFWLFPUKPWKPFW
+      KDPUEPWJPDNVNVKDVOVLVMFWDVLZVPVQAXATRWRAXAGTXGMVRVQAWMVSRWRAWMGPUFZVSWLPG
+      XHVTAXBXIVSRXDGSWAVAVBVQWBWCWEWFWPBGWGWH $.
+
+    $d F x y $.  $d I x y $.  $d P y $.  $d V x y $.  $d n x y $.  $d ph y $.
+    $( Lemma for ~ eupth2fi (induction step):  The only vertices of odd degree
+       in a graph with an Eulerian path are the endpoints, and then only if the
+       endpoints are distinct, if the Eulerian path shortened by one edge has
+       this property.  (Contributed by Mario Carneiro, 8-Apr-2015.)  (Revised
+       by AV, 26-Feb-2021.) $)
+    eupth2lemsfi $p |- ( ( ph /\ n e. NN0 ) -> ( ( n <_ ( # ` F ) -> { x e. V |
+          -. 2 || ( ( VtxDeg ` <. V , ( I |` ( F " ( 0 ..^ n ) ) ) >. ) ` x ) }
+             = if ( ( P ` 0 ) = ( P ` n ) , (/) , { ( P ` 0 ) , ( P ` n ) } ) )
+                       -> ( ( n + 1 ) <_ ( # ` F ) -> { x e. V | -. 2 ||
+          ( ( VtxDeg ` <. V , ( I |` ( F " ( 0 ..^ ( n + 1 ) ) ) ) >. ) ` x ) }
+                          = if ( ( P ` 0 ) = ( P ` ( n + 1 ) ) , (/) ,
+                                 { ( P ` 0 ) , ( P ` ( n + 1 ) ) } ) ) ) ) $=
+      ( wcel wa cfv wbr cc0 wceq vy cv cn0 chash cle c2 cfzo co cima cop cvtxdg
+      cres cdvds wn crab c0 cpr cif wi c1 caddc nn0re adantl lep1d peano2re syl
+      ceupth cwlks eupthiswlk wlkcl 3syl nn0red adantr letr syl3anc mpand fveq2
+      imim1d breq2d notbid elrab cumgr ad3antrrr wfun cfn simpr ad2antrr simprl
+      cr simplrr eupth2lem3fi pm5.32da cpw 0elpw a1i wss wlkepvtx simpld cfz wf
+      eqid wlkp cuz cz wb peano2nn0 nn0uz eleqtrdi nn0zd elfz5 mpbird ffvelcdmd
+      syl2anc prssd cvv prexg elpwg fidceq ifcldcd elpwid sseld pm4.71rd bitr4d
+      wdc bitrid eqrdv exp32 a2d syld ) ADUBZUCOZPZYJEUDQZUERZUFBUBZHGESYJUGUHU
+      IULUJZUKQQUMRUNBHUOSCQZYJCQZTUPYQYRUQURTZUSYJUTVAUHZYMUERZYSUSUUAUFYOHGES
+      YTUGUHUIULUJZUKQZQZUMRZUNZBHUOZYQYTCQZTZUPYQUUHUQZURZTZUSYLUUAYNYSYLYJYTU
+      ERZUUAYNYLYJYKYJWIOZAYJVBVCZVDYLUUNYTWIOZYMWIOZUUMUUAPYNUSUUOYLUUNUUPUUOY
+      JVEVFAUUQYKAYMAECFVGQRZECFVHQRZYMUCOZMCEFVIZCEFVJVKZVLVMYJYTYMVNVOVPVRYLU
+      UAYSUULYLUUAYSUULYLUUAYSPZPZUAUUGUUKUAUBZUUGOUVEHOZUFUVEUUCQZUMRZUNZPZUVD
+      UVEUUKOZUUFUVIBUVEHYOUVETZUUEUVHUVLUUDUVGUFUMYOUVEUUCVQVSVTWAUVDUVJUVFUVK
+      PUVKUVDUVFUVIUVKUVDUVFPBCUVEEFYPGYJHUUBIJAFWBOYKUVCUVFKWCAGWDYKUVCUVFLWCA
+      UURYKUVCUVFMWCAHWEOZYKUVCUVFNWCYPXAUUBXAYLYKUVCUVFAYKWFWGUVDUUAUVFYLUUAYS
+      WHZVMUVDUVFWFYLUUAYSUVFWJWKWLUVDUVKUVFUVDUUKHUVEUVDUUKHUVDUUIUPUUJHWMZUPU
+      VOOUVDHWNWOUVDUUJUVOOZUUJHWPZUVDYQUUHHAYQHOZYKUVCAUURUUSUVRMUVAUUSUVRYMCQ
+      HOCEFHIWQWRVKWGZUVDSYMWSUHZHYTCAUVTHCWTZYKUVCAUURUUSUWAMUVACEFHIXBVKWGUVD
+      YTUVTOZUUAUVNUVDYTSXCQZOYMXDOUWBUUAXEUVDYTUCUWCYLYTUCOZUVCYKUWDAYJXFVCVMX
+      GXHUVDYMAUUTYKUVCUVBWGXIYTSYMXJXMXKXLZXNUVDUUJXOOZUVPUVQXEUVDUVRUUHHOZUWF
+      UVSUWEYQUUHHHXPXMUUJHXOXQVFXKUVDUVMUVRUWGUUIYDAUVMYKUVCNWGUVSUWEHYQUUHXRV
+      OXSXTYAYBYCYEYFYGYHYI $.
+
+    $d F m n x $.  $d I m n $.  $d P m n $.  $d V m n $.  $d m n x ph $.
+    $( The only vertices of odd degree in a graph with an Eulerian path are the
+       endpoints, and then only if the endpoints are distinct.  (Contributed by
+       Mario Carneiro, 8-Apr-2015.)  (Revised by AV, 26-Feb-2021.) $)
+    eupth2fi $p |- ( ph -> { x e. V | -. 2 || ( ( VtxDeg ` G ) ` x ) }
+                         = if ( ( P ` 0 ) = ( P ` ( # ` F ) ) , (/) ,
+                                { ( P ` 0 ) , ( P ` ( # ` F ) ) } ) ) $=
+      ( c2 cc0 cfv cdvds wbr wceq c0 vm vn cv chash cfzo co cima cres cvtxdg wn
+      cop crab cpr cif cumgr eupthvdres fveq1d breq2d notbid rabbidv cn0 ceupth
+      eqid wcel cwlks eupthiswlk wlkcl 3syl nn0re leidd wi c1 caddc breq1 oveq2
+      imaeq2d reseq2d opeq2d fveq2d fveq2 eqeq2d preq2d ifbieq2d eqeq12d imbi2d
+      cle imbi12d eupth2lembfi iftruei eqtr4di a1d eupth2lemsfi expcom a2d mpid
+      nn0ind mpcom eqtr3d ) ANBUCZGFDODUDPZUEUFZUGZUHZUKZUIPZPZQRZUJZBGULZNWSEU
+      IPZPZQRZUJZBGULOCPZWTCPZSZTXNXOUMZUNZAXHXMBGAXGXLAXFXKNQAWSXEXJACDEXDFGUO
+      HIJKLXDVCUPUQURUSUTWTVAVDZAXIXRSZADCEVBPRDCEVEPRXSLCDEVFCDEVGVHXSAWTWTWFR
+      ZXTXSWTWTVIVJAUAUCZWTWFRZNWSGFDOYBUEUFZUGZUHZUKZUIPZPZQRZUJZBGULZXNYBCPZS
+      ZTXNYMUMZUNZSZVKZVKAOWTWFRZNWSGFDOOUEUFZUGZUHZUKZUIPZPZQRZUJZBGULZXNXNSZT
+      XNXNUMZUNZSZVKZVKAUBUCZWTWFRZNWSGFDOUUNUEUFZUGZUHZUKZUIPZPZQRZUJZBGULZXNU
+      UNCPZSZTXNUVEUMZUNZSZVKZVKAUUNVLVMUFZWTWFRZNWSGFDOUVKUEUFZUGZUHZUKZUIPZPZ
+      QRZUJZBGULZXNUVKCPZSZTXNUWBUMZUNZSZVKZVKAYAXTVKZVKUAUBWTYBOSZYRUUMAUWIYCY
+      SYQUULYBOWTWFVNUWIYLUUHYPUUKUWIYKUUGBGUWIYJUUFUWIYIUUENQUWIWSYHUUDUWIYGUU
+      CUIUWIYFUUBGUWIYEUUAFUWIYDYTDYBOOUEVOVPVQVRVSUQURUSUTUWIYNUUIYOUUJTUWIYMX
+      NXNYBOCVTZWAUWIYMXNXNUWJWBWCWDWGWEYBUUNSZYRUVJAUWKYCUUOYQUVIYBUUNWTWFVNUW
+      KYLUVDYPUVHUWKYKUVCBGUWKYJUVBUWKYIUVANQUWKWSYHUUTUWKYGUUSUIUWKYFUURGUWKYE
+      UUQFUWKYDUUPDYBUUNOUEVOVPVQVRVSUQURUSUTUWKYNUVFYOUVGTUWKYMUVEXNYBUUNCVTZW
+      AUWKYMUVEXNUWLWBWCWDWGWEYBUVKSZYRUWGAUWMYCUVLYQUWFYBUVKWTWFVNUWMYLUWAYPUW
+      EUWMYKUVTBGUWMYJUVSUWMYIUVRNQUWMWSYHUVQUWMYGUVPUIUWMYFUVOGUWMYEUVNFUWMYDU
+      VMDYBUVKOUEVOVPVQVRVSUQURUSUTUWMYNUWCYOUWDTUWMYMUWBXNYBUVKCVTZWAUWMYMUWBX
+      NUWNWBWCWDWGWEYBWTSZYRUWHAUWOYCYAYQXTYBWTWTWFVNUWOYLXIYPXRUWOYKXHBGUWOYJX
+      GUWOYIXFNQUWOWSYHXEUWOYGXDUIUWOYFXCGUWOYEXBFUWOYDXADYBWTOUEVOVPVQVRVSUQUR
+      USUTUWOYNXPYOXQTUWOYMXOXNYBWTCVTZWAUWOYMXOXNUWPWBWCWDWGWEAUULYSAUUHTUUKAB
+      CDEFGHIJKLMWHUUITUUJXNVCWIWJWKUUNVAVDZAUVJUWGAUWQUVJUWGVKABCUBDEFGHIJKLMW
+      LWMWNWPWOWQWR $.
   $}
 
 
