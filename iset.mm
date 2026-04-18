@@ -201948,6 +201948,22 @@ $)
       VCVDVEWIWMKZTZXFJWQXHWKWLVFZXFJNZXHWKWLWIXGVHVGWIXIXJVIZXGWIWKEGZWLEGZTZX
       KWICBDVJHIZXNWIWGXOXBBCDVKQBCDEFVLQZWKWLEEVSQVMVNMJVOVPVQWIWHXLXMWMVTXCWI
       XLXMXPVRWIXLXMXPWAEWKWLWBWCWDWE $.
+
+    ${
+      $d G f j p $.  $d V f p $.  $d G f p x $.
+      $( A multigraph with an Eulerian path has either zero or two vertices of
+         odd degree.  (Contributed by Mario Carneiro, 7-Apr-2015.)  (Revised by
+         AV, 26-Feb-2021.) $)
+      eulerpathum $p |- (
+        ( G e. UMGraph /\ E. j j e. ( EulerPaths ` G ) /\ V e. Fin ) ->
+        ( # ` { x e. V | -. 2 || ( ( VtxDeg ` G ) ` x ) } ) e. { 0 , 2 } ) $=
+        ( vf vp cumgr wcel cv ceupth cfv wex cfn c2 wbr sylib wa simpr exlimddv
+        w3a cdm cvtxdg cdvds wn crab chash cc0 cpr simp2 wrel wb releupth ax-mp
+        reldmm vex eldm simpll1 simpll3 eulerpathprum syl3anc ) CHIZBJCKLZIBMZD
+        NIZUAZFJZVCUBIZOAJCUCLLUDPUEADUFUGLUHOUIIZFVFVDVHFMZVBVDVEUJVCUKVDVJULC
+        UMBFVCUOUNQVFVHRZVGGJZVCPZVIGVKVHVMGMVFVHSGVGVCFUPUQQVKVMRVBVMVEVIVBVDV
+        EVHVMURVKVMSVBVDVEVHVMUSAVLVGCDEUTVATT $.
+    $}
   $}
 
 
