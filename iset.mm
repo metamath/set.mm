@@ -201883,6 +201883,28 @@ $)
       LWMWNWPWOWQWR $.
   $}
 
+  ${
+    $d F x $.  $d G x $.  $d P x $.  $d V x $.
+    eulerpathpr.v $e |- V = ( Vtx ` G ) $.
+    $( A graph with an Eulerian path has either zero or two vertices of odd
+       degree.  (Contributed by Mario Carneiro, 7-Apr-2015.)  (Revised by AV,
+       26-Feb-2021.) $)
+    eulerpathprum $p |- (
+      ( G e. UMGraph /\ F ( EulerPaths ` G ) P /\ V e. Fin ) ->
+      ( # ` { x e. V | -. 2 || ( ( VtxDeg ` G ) ` x ) } ) e. { 0 , 2 } ) $=
+      ( wcel cfv wbr c2 wn chash cc0 wceq c0 cpr syl fveq2 eleq1d wa ceupth cfn
+      cumgr w3a cv cvtxdg cdvds crab cif ciedg eqid simp1 wfun umgruhgr uhgrfun
+      cuhgr simp2 simp3 eupth2fi fveq2d hash0 c0ex prid1 eqeltri a1i wne neqned
+      simpr wb cwlks eupthiswlk wlkepvtx adantr mpbid 2ex prid2 eqeltrdi simpld
+      hashprg wdc simprd fidceq syl3anc ifbothdadc eqeltrd ) DUCGZCBDUAHIZEUBGZ
+      UDZJAUEDUFHHUGIKAEUHZLHMBHZCLHBHZNZOWKWLPZUIZLHZMJPZWIWJWOLWIABCDDUJHZEFW
+      RUKZWFWGWHULZWIDUPGZWRUMWIWFXAWTDUNQWRDWSUOQWFWGWHUQZWFWGWHURZUSUTWMOLHZW
+      QGZWNLHZWQGWPWQGWIOWNOWONXDWPWQOWOLRSWNWONXFWPWQWNWOLRSXEWIWMTXDMWQVAMJVB
+      VCVDVEWIWMKZTZXFJWQXHWKWLVFZXFJNZXHWKWLWIXGVHVGWIXIXJVIZXGWIWKEGZWLEGZTZX
+      KWICBDVJHIZXNWIWGXOXBBCDVKQBCDEFVLQZWKWLEEVSQVMVNMJVOVPVQWIWHXLXMWMVTXCWI
+      XLXMXPVRWIXLXMXPWAEWKWLWBWCWDWE $.
+  $}
+
 
 $(
 ###############################################################################
