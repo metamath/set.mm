@@ -117561,6 +117561,36 @@ $)
     VRVSVTWAUTZXCXDABCCVAVBVCWFWHVDULVCWEWJSTOPLWEWGSWITOWEVSWGSMZWRWEVOVPVSXEV
     EWPWQABDEVFVHVGWEVQWITMWSCFVIUOVJVKVLVMVN $.
 
+  ${
+    hashtpglem.a $e |- ( ph -> A e. U ) $.
+    hashtpglem.b $e |- ( ph -> B e. V ) $.
+    hashtpglem.c $e |- ( ph -> C e. W ) $.
+    hashtpglem.3 $e |- ( ph -> ( # ` { A , B , C } ) = 3 ) $.
+    $( Lemma for ~ hashtpg .  This is one of the three not-equal conclusions
+       required for the reverse direction.  (Contributed by Jim Kingdon,
+       18-Apr-2026.) $)
+    hashtpglem $p |- ( ph -> B =/= C ) $=
+      ( wceq ctp chash cfv c3 adantr wa c2 c1 2re 2lt3 ltneii neii simpr tpeq3d
+      cpr tpidm23 eqtr3di fveq2d wne ad2antrr 1re 1lt3 csn preq2d eqtrid eqtr4d
+      dfsn2 wcel hashsng eqtrd eqeq1d mtbiri pm2.65da neqned wb hashprg syl2anc
+      syl mpbid ) ACDACDLZBCDMZNOZPLZAVOVLKQAVLRZVOSPLSPSPUAUBUCUDVPVNSPVPVNBCU
+      GZNOZSVPVMVQNVPBCCMVMVQVPCDBCAVLUEUFBCUHUIZUJVPBCUKZVRSLZVPBCVPBCLZVOAVOV
+      LWBKULVPWBRZVOTPLTPTPUMUNUCUDWCVNTPWCVNBUOZNOZTWCVMWDNWCVMVQWDVPVMVQLWBVS
+      QWCWDBBUGVQBUSWCBCBVPWBUEUPUQURUJAWETLZVLWBABEUTZWFHBEVAVJULVBVCVDVEVFAVT
+      WAVGZVLAWGCFUTWHHIBCEFVHVIQVKVBVCVDVEVF $.
+  $}
+
+  $( The size of an unordered triple of three different elements.  (Contributed
+     by Alexander van der Vekens, 10-Nov-2017.)  (Revised by AV,
+     18-Sep-2021.) $)
+  hashtpg $p |- ( ( A e. U /\ B e. V /\ C e. W )
+    -> ( ( A =/= B /\ B =/= C /\ C =/= A ) <-> ( # ` { A , B , C } ) = 3 ) ) $=
+    ( wcel w3a wne ctp chash cfv c3 hashtpgim wa simpl3 tprot fveq2i hashtpglem
+    wceq simpl1 simpl2 simpr eqtrid eqtr3id 3jca ex impbid ) ADGZBEGZCFGZHZABIZ
+    BCIZCAIZHZABCJZKLZMTZABCDEFNULUSUPULUSOZUMUNUOUTCABFDEUIUJUKUSPZUIUJUKUSUAZ
+    UIUJUKUSUBZUTCABJZKLURMVDUQKCABQRULUSUCZUDSUTABCDEFVBVCVAVESUTBCAEFDVCVAVBU
+    TBCAJZKLURMUQVFKABCQRVEUESUFUGUH $.
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
