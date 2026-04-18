@@ -117546,6 +117546,21 @@ $)
       VNVRBVMUDSUABCVKVKVLBVMVFVMCBVGVHVISUAVKUCVJUQ $.
   $}
 
+  $( The size of an unordered triple of three different elements.  (Contributed
+     by Alexander van der Vekens, 10-Nov-2017.)  (Revised by AV, 18-Sep-2021.)
+     (Revised by Jim Kingdon, 17-Apr-2026.) $)
+  hashtpgim $p |- ( ( A e. U /\ B e. V /\ C e. W )
+    -> ( ( A =/= B /\ B =/= C /\ C =/= A ) -> ( # ` { A , B , C } ) = 3 ) ) $=
+    ( wcel w3a wne chash cfv c3 wceq cpr caddc co cfn c0 c2 c1 ctp wa csn df-tp
+    cun fveq2i cin simpl1 simpl2 simpr1 prfidisj syl3anc simpl3 snfig syl dfsn2
+    ineq2i simpr3 necomd simpr2 disjpr2 syl22anc eqtrid hashun wb hashprg mpbid
+    syl2anc hashsng oveq12d 2p1e3 eqtrdi eqtrd ex ) ADGZBEGZCFGZHZABIZBCIZCAIZH
+    ZABCUAZJKZLMVRWBUBZWDABNZJKZCUCZJKZOPZLWEWDWFWHUEZJKZWJWCWKJABCUDUFWEWFQGZW
+    HQGZWFWHUGZRMWLWJMWEVOVPVSWMVOVPVQWBUHZVOVPVQWBUIZVRVSVTWAUJZABDEUKULWEVQWN
+    VOVPVQWBUMZCFUNUOWEWOWFCCNZUGZRWHWTWFCUPUQWEACIZVTXBVTXARMWECAVRVSVTWAURUSZ
+    VRVSVTWAUTZXCXDABCCVAVBVCWFWHVDULVCWEWJSTOPLWEWGSWITOWEVSWGSMZWRWEVOVPVSXEV
+    EWPWQABDEVFVHVGWEVQWITMWSCFVIUOVJVKVLVMVN $.
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
