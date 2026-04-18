@@ -1530,7 +1530,6 @@
 "ax-mulf" is used by "cnfldmul".
 "ax-mulf" is used by "dfcnfldOLD".
 "ax-mulf" is used by "dvdsmulf1o".
-"ax-mulf" is used by "fsumdvdsmulOLD".
 "ax-mulf" is used by "mulcn".
 "ax-mulf" is used by "mulex".
 "ax-mulf" is used by "mulnzcnf".
@@ -9969,14 +9968,9 @@
 "mulclsr" is used by "sqgt0sr".
 "mulcmpblnr" is used by "mulsrmo".
 "mulcmpblnrlem" is used by "mulcmpblnr".
-"mulcn" is used by "cmvthOLD".
-"mulcn" is used by "cxpcnOLD".
 "mulcn" is used by "dipcn".
-"mulcn" is used by "dvfsumleOLD".
-"mulcn" is used by "dvfsumlem2OLD".
 "mulcn" is used by "efrlimOLD".
 "mulcn" is used by "ipasslem7".
-"mulcn" is used by "psercn2OLD".
 "mulcn" is used by "taylthlem2OLD".
 "mulcnsr" is used by "axcnre".
 "mulcnsr" is used by "axi2m1".
@@ -14435,7 +14429,7 @@ New usage of "ax-luk3" is discouraged (6 uses).
 New usage of "ax-mulass" is discouraged (1 uses).
 New usage of "ax-mulcl" is discouraged (1 uses).
 New usage of "ax-mulcom" is discouraged (1 uses).
-New usage of "ax-mulf" is discouraged (9 uses).
+New usage of "ax-mulf" is discouraged (8 uses).
 New usage of "ax-mulrcl" is discouraged (1 uses).
 New usage of "ax-pre-ltadd" is discouraged (1 uses).
 New usage of "ax-pre-lttri" is discouraged (1 uses).
@@ -15519,7 +15513,6 @@ New usage of "cmtcomlemN" is discouraged (1 uses).
 New usage of "cmtfvalN" is discouraged (1 uses).
 New usage of "cmtidN" is discouraged (1 uses).
 New usage of "cmtvalN" is discouraged (4 uses).
-New usage of "cmvthOLD" is discouraged (0 uses).
 New usage of "cnaddabl" is discouraged (2 uses).
 New usage of "cnaddabloOLD" is discouraged (5 uses).
 New usage of "cnaddablx" is discouraged (0 uses).
@@ -15641,7 +15634,6 @@ New usage of "cvr2N" is discouraged (1 uses).
 New usage of "cvrletrN" is discouraged (0 uses).
 New usage of "cvrnrefN" is discouraged (0 uses).
 New usage of "cvrval4N" is discouraged (0 uses).
-New usage of "cxpcnOLD" is discouraged (0 uses).
 New usage of "dalem31N" is discouraged (0 uses).
 New usage of "daraptiALT" is discouraged (0 uses).
 New usage of "dariiALT" is discouraged (0 uses).
@@ -16068,8 +16060,6 @@ New usage of "dvelimf-o" is discouraged (3 uses).
 New usage of "dvelimh" is discouraged (6 uses).
 New usage of "dvelimnf" is discouraged (3 uses).
 New usage of "dvelimv" is discouraged (4 uses).
-New usage of "dvfsumleOLD" is discouraged (0 uses).
-New usage of "dvfsumlem2OLD" is discouraged (0 uses).
 New usage of "dvh2dimatN" is discouraged (0 uses).
 New usage of "dvh3dim3N" is discouraged (0 uses).
 New usage of "dvh3dimatN" is discouraged (1 uses).
@@ -16474,7 +16464,6 @@ New usage of "fodomfibOLD" is discouraged (0 uses).
 New usage of "footexALT" is discouraged (0 uses).
 New usage of "frgrwopreglem5ALT" is discouraged (0 uses).
 New usage of "fsetprcnexALT" is discouraged (0 uses).
-New usage of "fsumdvdsmulOLD" is discouraged (0 uses).
 New usage of "fuco11bALT" is discouraged (0 uses).
 New usage of "fuco22natlem" is discouraged (1 uses).
 New usage of "funadj" is discouraged (4 uses).
@@ -17621,7 +17610,7 @@ New usage of "mulclprlem" is discouraged (1 uses).
 New usage of "mulclsr" is discouraged (11 uses).
 New usage of "mulcmpblnr" is discouraged (1 uses).
 New usage of "mulcmpblnrlem" is discouraged (1 uses).
-New usage of "mulcn" is discouraged (9 uses).
+New usage of "mulcn" is discouraged (4 uses).
 New usage of "mulcnsr" is discouraged (5 uses).
 New usage of "mulcnsrec" is discouraged (3 uses).
 New usage of "mulcomnq" is discouraged (15 uses).
@@ -18360,8 +18349,6 @@ New usage of "prstchomval" is discouraged (3 uses).
 New usage of "prstcnidlem" is discouraged (2 uses).
 New usage of "prstcval" is discouraged (2 uses).
 New usage of "prub" is discouraged (6 uses).
-New usage of "psercn2OLD" is discouraged (0 uses).
-New usage of "psraddclOLD" is discouraged (0 uses).
 New usage of "psslinpr" is discouraged (1 uses).
 New usage of "psubatN" is discouraged (0 uses).
 New usage of "psubcli2N" is discouraged (8 uses).
@@ -19657,7 +19644,6 @@ Proof modification of "cicerALT" is discouraged (57 steps).
 Proof modification of "cleljustALT" is discouraged (25 steps).
 Proof modification of "cleljustALT2" is discouraged (25 steps).
 Proof modification of "clmgmOLD" is discouraged (50 steps).
-Proof modification of "cmvthOLD" is discouraged (1136 steps).
 Proof modification of "cnaddabloOLD" is discouraged (65 steps).
 Proof modification of "cnaddcom" is discouraged (71 steps).
 Proof modification of "cncrngOLD" is discouraged (214 steps).
@@ -19716,7 +19702,6 @@ Proof modification of "currysetlem" is discouraged (49 steps).
 Proof modification of "currysetlem1" is discouraged (71 steps).
 Proof modification of "currysetlem2" is discouraged (20 steps).
 Proof modification of "currysetlem3" is discouraged (82 steps).
-Proof modification of "cxpcnOLD" is discouraged (298 steps).
 Proof modification of "daraptiALT" is discouraged (23 steps).
 Proof modification of "dariiALT" is discouraged (19 steps).
 Proof modification of "demoivreALT" is discouraged (1087 steps).
@@ -19778,8 +19763,6 @@ Proof modification of "dveeq1-o16" is discouraged (22 steps).
 Proof modification of "dveeq2-o" is discouraged (20 steps).
 Proof modification of "dveeq2ALT" is discouraged (14 steps).
 Proof modification of "dvelimf-o" is discouraged (129 steps).
-Proof modification of "dvfsumleOLD" is discouraged (1224 steps).
-Proof modification of "dvfsumlem2OLD" is discouraged (2595 steps).
 Proof modification of "dvply2gOLD" is discouraged (425 steps).
 Proof modification of "e00" is discouraged (7 steps).
 Proof modification of "e000" is discouraged (13 steps).
@@ -20214,7 +20197,6 @@ Proof modification of "frege97" is discouraged (106 steps).
 Proof modification of "frege98" is discouraged (116 steps).
 Proof modification of "frgrwopreglem5ALT" is discouraged (519 steps).
 Proof modification of "fsetprcnexALT" is discouraged (190 steps).
-Proof modification of "fsumdvdsmulOLD" is discouraged (538 steps).
 Proof modification of "fuco11bALT" is discouraged (199 steps).
 Proof modification of "funcrngcsetcALT" is discouraged (765 steps).
 Proof modification of "fundcmpsurinjALT" is discouraged (221 steps).
@@ -20538,8 +20520,6 @@ Proof modification of "problem5" is discouraged (133 steps).
 Proof modification of "prodeq1iOLD" is discouraged (19 steps).
 Proof modification of "prodeq2sdvOLD" is discouraged (16 steps).
 Proof modification of "prstchom2ALT" is discouraged (121 steps).
-Proof modification of "psercn2OLD" is discouraged (372 steps).
-Proof modification of "psraddclOLD" is discouraged (204 steps).
 Proof modification of "pweqALT" is discouraged (34 steps).
 Proof modification of "pwtrVD" is discouraged (110 steps).
 Proof modification of "pwtrrVD" is discouraged (110 steps).
