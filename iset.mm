@@ -174766,6 +174766,18 @@ $)
     $}
 
     ${
+      $d I x $.  $d G x $.  $d F x $.  $d D x $.  $d a b c $.
+      $( The support of a dominated bag is smaller than the dominating bag.
+         (Contributed by Mario Carneiro, 29-Dec-2014.)  Remove a sethood
+         antecedent.  (Revised by SN, 5-Aug-2024.) $)
+      psrbaglesupp $p |- ( ( F e. D /\ G : I --> NN0 /\ G oR <_ F )
+                                       -> ( `' G " NN ) C_ ( `' F " NN ) ) $=
+        ( cvv wcel cn0 wf cle cofr wbr w3a ccnv cn cima wss id psrbagf 3ad2ant1
+        ffnd fndmexd psrbaglesuppg mpancom ) EGHZCAHZEIDJZDCKLMZNDOPQCOPQRUGUHU
+        FUIUGECAUGSUGEICABCEFTUBUCUAABCDEGFUDUE $.
+    $}
+
+    ${
       $d F f $.  $d I f x $.
       $( A finite index set gives a simpler expression for finite bags.
          (Contributed by Jim Kingdon, 23-Nov-2025.) $)
