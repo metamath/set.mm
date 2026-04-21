@@ -174792,6 +174792,26 @@ $)
         WGQUPZUQURWJUSTWIWCWKWIWCWBCGZWKWMWIVMCUTZWCWNWKSVDVRWOVLWHVMLCVEQCWBJV
         MVATVBVCVFREVTVNVGVHRVOBVPVIVJVK $.
     $}
+
+    $d G f $.
+    ${
+      $d D x $.  $d F x $.  $d G x $.  $d I x $.
+      $( The set of finite bags is downward-closed.  (Contributed by Mario
+         Carneiro, 29-Dec-2014.)  Remove a sethood antecedent.  (Revised by SN,
+         5-Aug-2024.) $)
+      psrbaglecl $p |- ( ( F e. D /\ G : I --> NN0 /\ G oR <_ F )
+          -> G e. D ) $=
+        ( vx wcel cn0 wf ccnv cn cima cfn wdc wa cvv wb 3ad2ant1 syl cofr simp2
+        cle wbr w3a wss cv wral simp1 id psrbagf ffnd psrbag mpbid psrbaglesupp
+        fndmexd simprd cfv cz adantr wfn elpreima 3syl simprbda ffvelcdmd nn0zd
+        ffn elnndc mpbirand dcbid mpbird ralrimiva ssfidc syl3anc mpbir2and ) C
+        AHZEIDJZDCUCUAUDZUEZDAHZVQDKLMZNHZVPVQVRUBZVSCKLMZNHZWAWDUFGUGZWAHZOZGW
+        DUHWBVSEICJZWEVSVPWIWEPZVPVQVRUIVSEQHZVPWJRVPVQWKVRVPECAVPUJVPEICABCEFU
+        KZULUPSZABCEQFUMTUNUQABCDEFUOVSWHGWDVSWFWDHZPZWHWFDURZLHZOZWOWPUSHWRWOW
+        PWOEIWFDVSVQWNWCUTVSWNWFEHZWFCURLHZVSWICEVAWNWSWTPRVPVQWIVRWLSEICVGEWFL
+        CVBVCVDZVEVFWPVHTWOWGWQWOWGWSWQXAVSWGWSWQPRZWNVSVQDEVAXBWCEIDVGEWFLDVBV
+        CUTVIVJVKVLGWDWAVMVNVSWKVTVQWBPRWMABDEQFUMTVO $.
+    $}
   $}
 
   ${
