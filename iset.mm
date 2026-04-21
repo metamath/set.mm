@@ -53464,6 +53464,12 @@ $)
     GZHZIEZCIEZUFUHUGACJKUFCLZUIAMZQUGUKCARUMUNUGUKUNUGQUMUIBEZUKUGUNUOABUINOCU
     IBPSTUAUHUKULUHUJCICUBUCUDUE $.
 
+  $( The domain of a function is a set iff the function is a set.  (Contributed
+     by AV, 8-Aug-2024.) $)
+  fndmexb $p |- ( F Fn A -> ( A e. _V <-> F e. _V ) ) $=
+    ( wfn cvv wcel fnex ex wa simpr simpl fndmexd impbid ) BACZADEZBDEZMNOADBFG
+    MONMOHABDMOIMOJKGL $.
+
   $( If the domain of a function exists, so does the function.  Part of Theorem
      4.15(v) of [Monk1] p. 46.  This theorem is derived using the Axiom of
      Replacement in the form of ~ fnex .  (Note:  Any resemblance between
