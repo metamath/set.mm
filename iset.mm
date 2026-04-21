@@ -49916,6 +49916,15 @@ $)
       ( cvv wcel fabexg mp2an ) CIJDIJEIJFGABCDIIEHKL $.
   $}
 
+  ${
+    fndmexd.1 $e |- ( ph -> F e. V ) $.
+    fndmexd.2 $e |- ( ph -> F Fn D ) $.
+    $( If a function is a set, its domain is a set.  (Contributed by Rohan
+       Ridenour, 13-May-2024.) $)
+    fndmexd $p |- ( ph -> D e. _V ) $=
+      ( cdm cvv fndmd dmexd eqeltrrd ) ACGBHABCFIACDEJK $.
+  $}
+
   $( If a mapping is a set, its domain is a set.  (Contributed by NM,
      27-Aug-2006.)  (Proof shortened by Andrew Salmon, 17-Sep-2011.) $)
   dmfex $p |- ( ( F e. C /\ F : A --> B ) -> A e. _V ) $=
