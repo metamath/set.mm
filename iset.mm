@@ -202032,6 +202032,15 @@ $)
       WHILUJMUKRULILUMUNZUOSTVPWDOPAWBHKWIKWBOKQOWHKLUJMUPRKLUQURUTVAKLUMUNZVBS
       TVQWDOPAWBHLWIWHLWBORLVCVDZLHVKVESTVRWDOPAWBIKWJWKVLSTZWMVSWDOPAWBKLWKWLK
       LUQUTVFSTZWNVGVHFWGWDWAAWFWCDWBEVIVJVMVN $.
+
+    $( Each subset of the indexed edges of the K&ouml;nigsberg graph ` G ` is a
+       word over the pairs of vertices.  (Contributed by AV, 28-Feb-2021.) $)
+    konigsbergssiedgwpren $p |- ( ( A e. Word _V /\ B e. Word _V
+                                  /\ E = ( A ++ B ) )
+                                -> A e. Word { x e. ~P V | x ~~ 2o } ) $=
+      ( cconcat co wceq cvv cword wcel cv c2o cen wbr cpw crab wa jctr ccatrcl1
+      konigsbergiedgwen syl3an3 ) DBCJKLZBMNZOCUHOUGDAPQRSAFTUAZNZOZUBBUJOUGUKA
+      DEFGHIUEUCBCUIDMMUDUF $.
   $}
 
 
