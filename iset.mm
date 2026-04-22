@@ -117546,6 +117546,51 @@ $)
       VNVRBVMUDSUABCVKVKVLBVMVFVMCBVGVHVISUAVKUCVJUQ $.
   $}
 
+  $( The size of an unordered triple of three different elements.  (Contributed
+     by Alexander van der Vekens, 10-Nov-2017.)  (Revised by AV, 18-Sep-2021.)
+     (Revised by Jim Kingdon, 17-Apr-2026.) $)
+  hashtpgim $p |- ( ( A e. U /\ B e. V /\ C e. W )
+    -> ( ( A =/= B /\ B =/= C /\ C =/= A ) -> ( # ` { A , B , C } ) = 3 ) ) $=
+    ( wcel w3a wne chash cfv c3 wceq cpr caddc co cfn c0 c2 c1 ctp wa csn df-tp
+    cun fveq2i cin simpl1 simpl2 simpr1 prfidisj syl3anc simpl3 snfig syl dfsn2
+    ineq2i simpr3 necomd simpr2 disjpr2 syl22anc eqtrid hashun wb hashprg mpbid
+    syl2anc hashsng oveq12d 2p1e3 eqtrdi eqtrd ex ) ADGZBEGZCFGZHZABIZBCIZCAIZH
+    ZABCUAZJKZLMVRWBUBZWDABNZJKZCUCZJKZOPZLWEWDWFWHUEZJKZWJWCWKJABCUDUFWEWFQGZW
+    HQGZWFWHUGZRMWLWJMWEVOVPVSWMVOVPVQWBUHZVOVPVQWBUIZVRVSVTWAUJZABDEUKULWEVQWN
+    VOVPVQWBUMZCFUNUOWEWOWFCCNZUGZRWHWTWFCUPUQWEACIZVTXBVTXARMWECAVRVSVTWAURUSZ
+    VRVSVTWAUTZXCXDABCCVAVBVCWFWHVDULVCWEWJSTOPLWEWGSWITOWEVSWGSMZWRWEVOVPVSXEV
+    EWPWQABDEVFVHVGWEVQWITMWSCFVIUOVJVKVLVMVN $.
+
+  ${
+    hashtpglem.a $e |- ( ph -> A e. U ) $.
+    hashtpglem.b $e |- ( ph -> B e. V ) $.
+    hashtpglem.c $e |- ( ph -> C e. W ) $.
+    hashtpglem.3 $e |- ( ph -> ( # ` { A , B , C } ) = 3 ) $.
+    $( Lemma for ~ hashtpg .  This is one of the three not-equal conclusions
+       required for the reverse direction.  (Contributed by Jim Kingdon,
+       18-Apr-2026.) $)
+    hashtpglem $p |- ( ph -> B =/= C ) $=
+      ( wceq ctp chash cfv c3 adantr wa c2 c1 2re 2lt3 ltneii neii simpr tpeq3d
+      cpr tpidm23 eqtr3di fveq2d wne ad2antrr 1re 1lt3 csn preq2d eqtrid eqtr4d
+      dfsn2 wcel hashsng eqtrd eqeq1d mtbiri pm2.65da neqned wb hashprg syl2anc
+      syl mpbid ) ACDACDLZBCDMZNOZPLZAVOVLKQAVLRZVOSPLSPSPUAUBUCUDVPVNSPVPVNBCU
+      GZNOZSVPVMVQNVPBCCMVMVQVPCDBCAVLUEUFBCUHUIZUJVPBCUKZVRSLZVPBCVPBCLZVOAVOV
+      LWBKULVPWBRZVOTPLTPTPUMUNUCUDWCVNTPWCVNBUOZNOZTWCVMWDNWCVMVQWDVPVMVQLWBVS
+      QWCWDBBUGVQBUSWCBCBVPWBUEUPUQURUJAWETLZVLWBABEUTZWFHBEVAVJULVBVCVDVEVFAVT
+      WAVGZVLAWGCFUTWHHIBCEFVHVIQVKVBVCVDVEVF $.
+  $}
+
+  $( The size of an unordered triple of three different elements.  (Contributed
+     by Alexander van der Vekens, 10-Nov-2017.)  (Revised by AV,
+     18-Sep-2021.) $)
+  hashtpg $p |- ( ( A e. U /\ B e. V /\ C e. W )
+    -> ( ( A =/= B /\ B =/= C /\ C =/= A ) <-> ( # ` { A , B , C } ) = 3 ) ) $=
+    ( wcel w3a wne ctp chash cfv c3 hashtpgim wa simpl3 tprot fveq2i hashtpglem
+    wceq simpl1 simpl2 simpr eqtrid eqtr3id 3jca ex impbid ) ADGZBEGZCFGZHZABIZ
+    BCIZCAIZHZABCJZKLZMTZABCDEFNULUSUPULUSOZUMUNUOUTCABFDEUIUJUKUSPZUIUJUKUSUAZ
+    UIUJUKUSUBZUTCABJZKLURMVDUQKCABQRULUSUCZUDSUTABCDEFVBVCVAVESUTBCAEFDVCVAVBU
+    TBCAJZKLURMUQVFKABCQRVEUESUFUGUH $.
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
@@ -201881,6 +201926,44 @@ $)
       USUTUWOYNXPYOXQTUWOYMXOXNYBWTCVTZWAUWOYMXOXNUWPWBWCWDWGWEAUULYSAUUHTUUKAB
       CDEFGHIJKLMWHUUITUUJXNVCWIWJWKUUNVAVDZAUVJUWGAUWQUVJUWGVKABCUBDEFGHIJKLMW
       LWMWNWPWOWQWR $.
+  $}
+
+  ${
+    $d F x $.  $d G x $.  $d P x $.  $d V x $.
+    eulerpathpr.v $e |- V = ( Vtx ` G ) $.
+    $( A graph with an Eulerian path has either zero or two vertices of odd
+       degree.  (Contributed by Mario Carneiro, 7-Apr-2015.)  (Revised by AV,
+       26-Feb-2021.) $)
+    eulerpathprum $p |- (
+      ( G e. UMGraph /\ F ( EulerPaths ` G ) P /\ V e. Fin ) ->
+      ( # ` { x e. V | -. 2 || ( ( VtxDeg ` G ) ` x ) } ) e. { 0 , 2 } ) $=
+      ( wcel cfv wbr c2 wn chash cc0 wceq c0 cpr syl fveq2 eleq1d wa ceupth cfn
+      cumgr w3a cv cvtxdg cdvds crab cif ciedg eqid simp1 wfun umgruhgr uhgrfun
+      cuhgr simp2 simp3 eupth2fi fveq2d hash0 c0ex prid1 eqeltri a1i wne neqned
+      simpr wb cwlks eupthiswlk wlkepvtx adantr mpbid 2ex prid2 eqeltrdi simpld
+      hashprg wdc simprd fidceq syl3anc ifbothdadc eqeltrd ) DUCGZCBDUAHIZEUBGZ
+      UDZJAUEDUFHHUGIKAEUHZLHMBHZCLHBHZNZOWKWLPZUIZLHZMJPZWIWJWOLWIABCDDUJHZEFW
+      RUKZWFWGWHULZWIDUPGZWRUMWIWFXAWTDUNQWRDWSUOQWFWGWHUQZWFWGWHURZUSUTWMOLHZW
+      QGZWNLHZWQGWPWQGWIOWNOWONXDWPWQOWOLRSWNWONXFWPWQWNWOLRSXEWIWMTXDMWQVAMJVB
+      VCVDVEWIWMKZTZXFJWQXHWKWLVFZXFJNZXHWKWLWIXGVHVGWIXIXJVIZXGWIWKEGZWLEGZTZX
+      KWICBDVJHIZXNWIWGXOXBBCDVKQBCDEFVLQZWKWLEEVSQVMVNMJVOVPVQWIWHXLXMWMVTXCWI
+      XLXMXPVRWIXLXMXPWAEWKWLWBWCWDWE $.
+
+    ${
+      $d G f j p $.  $d V f p $.  $d G f p x $.
+      $( A multigraph with an Eulerian path has either zero or two vertices of
+         odd degree.  (Contributed by Mario Carneiro, 7-Apr-2015.)  (Revised by
+         AV, 26-Feb-2021.) $)
+      eulerpathum $p |- (
+        ( G e. UMGraph /\ E. j j e. ( EulerPaths ` G ) /\ V e. Fin ) ->
+        ( # ` { x e. V | -. 2 || ( ( VtxDeg ` G ) ` x ) } ) e. { 0 , 2 } ) $=
+        ( vf vp cumgr wcel cv ceupth cfv wex cfn c2 wbr sylib wa simpr exlimddv
+        w3a cdm cvtxdg cdvds wn crab chash cc0 cpr simp2 wrel wb releupth ax-mp
+        reldmm vex eldm simpll1 simpll3 eulerpathprum syl3anc ) CHIZBJCKLZIBMZD
+        NIZUAZFJZVCUBIZOAJCUCLLUDPUEADUFUGLUHOUIIZFVFVDVHFMZVBVDVEUJVCUKVDVJULC
+        UMBFVCUOUNQVFVHRZVGGJZVCPZVIGVKVHVMGMVFVHSGVGVCFUPUQQVKVMRVBVMVEVIVBVDV
+        EVHVMURVKVMSVBVDVEVHVMUSAVLVGCDEUTVATT $.
+    $}
   $}
 
 
