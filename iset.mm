@@ -201968,6 +201968,50 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  The K&ouml;nigsberg Bridge problem
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  According to Wikipedia ("Seven Bridges of K&ouml;nigsberg", 9-Mar-2021,
+  ~ https://en.wikipedia.org/wiki/Seven_Bridges_of_Koenigsberg ): "The Seven
+  Bridges of K&ouml;nigsberg is a historically notable problem in mathematics.
+  Its negative resolution by Leonhard Euler in 1736 laid the foundations of
+  graph theory and prefigured the idea of topology.  The city of
+  K&ouml;nigsberg in [[East] Prussia (now Kaliningrad, Russia) was set on both
+  sides of the Pregel River, and included two large islands - Kneiphof and
+  Lomse - which were connected to each other, or to the two mainland portions
+  of the city, by seven bridges.  The problem was to devise a walk through the
+  city that would cross each of those bridges once and only once.".  Euler
+  proved that the problem has no solution by applying Euler's theorem to the
+  K&ouml;nigsberg graph, which is obtained by replacing each land mass with an
+  abstract "vertex" or node, and each bridge with an abstract connection, an
+  "edge", which connects two land masses/vertices. The K&ouml;nigsberg graph
+  ` G ` is a multigraph consisting of 4 vertices and 7 edges, represented by
+  the following ordered pair: ` G = <. ( 0 ... 3 ) , <" { 0 , 1 } { 0 , 2 } `
+  ` { 0 , 3 } { 1 , 2 } { 1 , 2 } { 2 , 3 } { 2 , 3 } "> >. `, see
+  ~ konigsbergumgr . ~ konigsberg shows that the K&ouml;nigsberg graph has no
+  Eulerian path, thus the K&ouml;nigsberg Bridge problem has no solution.
+
+$)
+
+  ${
+    konigsberg.v $e |- V = ( 0 ... 3 ) $.
+    konigsberg.e $e |- E = <" { 0 , 1 } { 0 , 2 } { 0 , 3 }
+                              { 1 , 2 } { 1 , 2 } { 2 , 3 } { 2 , 3 } "> $.
+    konigsberg.g $e |- G = <. V , E >. $.
+    $( The set of vertices of the K&ouml;nigsberg graph ` G ` .  (Contributed
+       by AV, 28-Feb-2021.) $)
+    konigsbergvtx $p |- ( Vtx ` G ) = ( 0 ... 3 ) $=
+      ( cvtx cc0 c3 c1 cpr c2 cvv wcel cz 0z mp2an wtru prexg a1i cfv cfz eqtri
+      co cs7 cop opeq12i fveq2i cword wceq cfn 3z fzfig elexi 1z 2z s7cld mptru
+      opvtxfv ) BGUAHIUBUDZHJKZHLKZHIKZJLKZVDLIKZVEUEZUFZGUAZUTBVGGBCAUFVGFCUTA
+      VFDEUGUCUHUTMNVFMUIZNZVHUTUJUTUKHONZIONZUTUKNPULHIUMQUNVJRVAVBVCVDVDVEVEM
+      VAMNZRVKJONZVMPUOHJOOSQTVBMNZRVKLONZVOPUPHLOOSQTVCMNZRVKVLVQPULHIOOSQTVDM
+      NZRVNVPVRUOUPJLOOSQTZVSVEMNZRVPVLVTUPULLIOOSQTZWAUQURVFUTMVIUSQUC $.
+  $}
+
+
+$(
 ###############################################################################
   GUIDES AND MISCELLANEA
 ###############################################################################
