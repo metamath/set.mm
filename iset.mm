@@ -208476,6 +208476,24 @@ $)
       UQURUS $.
   $}
 
+  ${
+    $d x y $.
+    $( Excluded middle is equivalent to the form of contraposition which
+       removes negation.  Read an element of ` ~P 1o ` as being a truth value
+       and ` x = 1o ` being that ` x ` is true.  For a similar theorem, but
+       expressed in terms of formulas rather than subsets of ` 1o ` , see
+       ~ dcfromcon .  (Contributed by Jim Kingdon, 22-Apr-2026.) $)
+    exmidcon $p |- ( EXMID <-> A. x e. ~P 1o A. y e. ~P 1o (
+        ( -. y = 1o -> -. x = 1o ) -> ( x = 1o -> y = 1o ) ) ) $=
+      ( wem cv c1o wceq wn wi cpw wral wdc exmidexmid condc syl ralrimivw eqeq1
+      notbid imbi2d imbi1d imbi12d ralbidv id wcel 1oex pwid a1i rspcdva ax-in2
+      wa eqid adantr simpr mpd mpi expcom ralimi exmidnotnotr sylibr impbii ) C
+      BDEFZGZADZEFZGZHZVCUTHZHZBEIZJZAVHJZCVIAVHCVGBVHCUTKVGUTLUTVCMNOOVJVAEEFZ
+      GZHZVKUTHZHZBVHJZCVJVIVPAVHEVCVGVOBVHVCVEVMVFVNVCVDVLVAVCVCVKVBEEPZQRVCVC
+      VKUTVQSTUAVJUBEVHUCVJEUDUEUFUGVPVAGZUTHZBVHJCVOVSBVHVRVOUTVRVOUIZVKUTEUJV
+      TVMVNVRVMVOVAVLUHUKVRVOULUMUNUOUPBUQURNUS $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
