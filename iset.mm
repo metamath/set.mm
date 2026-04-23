@@ -121373,6 +121373,17 @@ $)
     wceq s2leng 3adant3 cats1fvnd ) ADGZBEGZCFGZHZABIZABCJKFCABCLUHABMUHADUEUFU
     GNOUHBEUEUFUGPOQUEUFUGRUEUFUISTKUAUGABDEUBUCUD $.
 
+  ${
+    s1s2d.a $e |- ( ph -> A e. V ) $.
+    s1s2d.b $e |- ( ph -> B e. W ) $.
+    s1s2d.c $e |- ( ph -> C e. X ) $.
+    $( Concatenation of fixed length strings.  (Contributed by Mario Carneiro,
+       26-Feb-2016.) $)
+    s1s2d $p |- ( ph -> <" A B C "> = ( <" A "> ++ <" B C "> ) ) $=
+      ( cs1 cs2 df-s2 wcel cword s1cl wrdv 3syl cconcat co wceq df-s3 cats1catd
+      cs3 cvv a1i ) ABKZBCLZBCDUDZCKZCDLGDCDMABENUGEONUGUEOZNHBEPEUGQRACFNUJFON
+      UJUKNICFPFUJQRJUIUHDKSTUAABCDUBUFUHUGUJSTUAABCMUFUC $.
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
