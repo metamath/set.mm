@@ -208458,6 +208458,24 @@ $)
       STAUAUBUC $.
   $}
 
+  ${
+    $d x y $.
+    $( Excluded middle is equivalent to double negation elimination.  Read an
+       element of ` ~P 1o ` as being a truth value and ` x = 1o ` being that
+       ` x ` is true.  For a similar theorem, but expressed in terms of
+       formulas rather than subsets of ` 1o ` , see ~ dcfromnotnotr .
+       (Contributed by Jim Kingdon, 22-Apr-2026.) $)
+    exmidnotnotr $p |- ( EXMID
+        <-> A. x e. ~P 1o ( -. -. x = 1o -> x = 1o ) ) $=
+      ( vy wem cv c1o wceq wn wi cpw wral wdc exmidexmid notnotrdc ralrimivw c0
+      syl wss wstab notbid df1o2 csn wa eqeq1 imbi12d simpl velpw sseq2i sylbbr
+      adantl rspcdva df-stab sylibr wb eqeq2i a1i stbid mpbid exmid1stab impbii
+      wcel ) CADZEFZGZGZVBHZAEIZJZCVEAVFCVBKVEVBLVBMPNVGBVGBDZOUAZQZUBZVHEFZRZV
+      HVIFZRVKVLGZGZVLHZVMVKVEVQAVFVHVAVHFZVDVPVBVLVRVCVOVRVBVLVAVHEUCZSSVSUDVG
+      VJUEVJVHVFUTZVGVTVHEQVJBEUFEVIVHTUGUHUIUJVLUKULVKVLVNVLVNUMVKEVIVHTUNUOUP
+      UQURUS $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
