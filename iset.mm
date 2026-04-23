@@ -121383,6 +121383,15 @@ $)
       ( cs1 cs2 df-s2 wcel cword s1cl wrdv 3syl cconcat co wceq df-s3 cats1catd
       cs3 cvv a1i ) ABKZBCLZBCDUDZCKZCDLGDCDMABENUGEONUGUEOZNHBEPEUGQRACFNUJFON
       UJUKNICFPFUJQRJUIUHDKSTUAABCDUBUFUHUGUJSTUAABCMUFUC $.
+
+    s1s3d.d $e |- ( ph -> D e. Y ) $.
+    $( Concatenation of fixed length strings.  (Contributed by Mario Carneiro,
+       26-Feb-2016.) $)
+    s1s3d $p |- ( ph -> <" A B C D "> = ( <" A "> ++ <" B C D "> ) ) $=
+      ( cs1 cs3 cs4 wcel cword cvv elexd cs2 df-s3 s1cl wrdv 3syl s2cld cconcat
+      co wceq df-s4 a1i s1s2d cats1catd ) ABNZBCDOZBCDEPZCDUACDEOIECDEUBABFQUNF
+      RQUNSRQJBFUCFUNUDUEACDSACGKTADHLTUFMUPUOENUGUHUIABCDEUJUKABCDFGHJKLULUM
+      $.
   $}
 
 $(
