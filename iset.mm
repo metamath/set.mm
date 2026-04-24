@@ -208494,6 +208494,23 @@ $)
       TVMVNVRVMVOVAVLUHUKVRVOULUMUNUOUPBUQURNUS $.
   $}
 
+  ${
+    $d x y $.
+    $( Excluded middle is equivalent to Peirce's law.  Read an element of
+       ` ~P 1o ` as being a truth value and ` x = 1o ` being that ` x ` is
+       true.  For a similar theorem, but expressed in terms of formulas rather
+       than subsets of ` 1o ` , see ~ dcfrompeirce .  (Contributed by Jim
+       Kingdon, 23-Apr-2026.) $)
+    exmidpeirce $p |- ( EXMID <-> A. x e. ~P 1o A. y e. ~P 1o
+        ( ( ( x = 1o -> y = 1o ) -> x = 1o ) -> x = 1o ) ) $=
+      ( wem cv c1o wceq wi cpw wral wdc exmidexmid peircedc syl ralrimivw wn c0
+      imbi1d imbi1i sylibr ralimi eqeq1 imbi2d id wcel 0elpw a1i rspcdva wb 1n0
+      nesymi mtt ax-mp jarl exmidnotnotr impbii ) CADEFZBDZEFZGZUPGZUPGZBEHZIZA
+      VBIZCVCAVBCVABVBCUPJVAUPKUPURLMNNVDUPOZUPGZUPGZAVBIZCVCVGAVBVCUPPEFZGZUPG
+      ZUPGZVGVCVAVLBVBPUQPFZUTVKUPVMUSVJUPVMURVIUPUQPEUAUBQQVCUCPVBUDVCEUEUFUGV
+      FVKUPVEVJUPVIOVEVJUHEPUIUJVIUPUKULRRSTVHVEOUPGZAVBICVGVNAVBVEUPUPUMTAUNSM
+      UO $.
+  $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
