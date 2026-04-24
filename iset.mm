@@ -121462,6 +121462,16 @@ $)
       df-s7 s4s2d cats1catd ) ABCDEUCBCDEHIUDZBCDEHIJUEZHIUFHIJUGGJHIJUHABCDEUI
       ABKPUJACLQUJADMRUJAENSUJUKAHIUIAHOTUJAIFUAUJULUBVBVAJUMUNUOUPABCDEHIJURUQ
       ABCDEFHIKLMNOPQRSTUAUSUT $.
+
+    s4s4d.h $e |- ( ph -> H e. R ) $.
+    $( Concatenation of fixed length strings.  (Contributed by Mario Carneiro,
+       26-Feb-2016.) $)
+    s4s4d $p |- ( ph ->
+        <" A B C D E F G H "> = ( <" A B C D "> ++ <" E F G H "> ) ) $=
+      ( cs4 cs7 cs8 cs3 df-s4 cvv elexd s4cld s3cld cconcat co wceq df-s8 s4s3d
+      cs1 a1i cats1catd ) ABCDEUFBCDEIJKUGZBCDEIJKLUHZIJKUIIJKLUFHLIJKLUJABCDEU
+      KABMRULACNSULADOTULAEPUAULUMAIJKUKAIQUBULAJFUCULAKGUDULUNUEVDVCLUTUOUPUQA
+      BCDEIJKLURVAABCDEFGIJKMNOPQRSTUAUBUCUDUSVB $.
   $}
 
 
