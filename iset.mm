@@ -121452,7 +121452,18 @@ $)
       cvv a1i cats1catd ) ABCDEUAZBCDEGUBZBCDEGHUCZGUDZGHUEFHGHUFABCDEUNABINTAC
       JOTADKPTAELQTUGAGUNAGMRTUHSUSURHUDUIUJUKABCDEGHULUOURUQUTUIUJUKABCDEGUMUO
       UP $.
+
+    s4s3d.g $e |- ( ph -> G e. Q ) $.
+    $( Concatenation of fixed length strings.  (Contributed by Mario Carneiro,
+       26-Feb-2016.) $)
+    s4s3d $p |- ( ph
+        -> <" A B C D E F G "> = ( <" A B C D "> ++ <" E F G "> ) ) $=
+      ( cs4 cs6 cs7 cs2 cs3 df-s3 cvv elexd s4cld s2cld cs1 cconcat co wceq a1i
+      df-s7 s4s2d cats1catd ) ABCDEUCBCDEHIUDZBCDEHIJUEZHIUFHIJUGGJHIJUHABCDEUI
+      ABKPUJACLQUJADMRUJAENSUJUKAHIUIAHOTUJAIFUAUJULUBVBVAJUMUNUOUPABCDEHIJURUQ
+      ABCDEFHIKLMNOPQRSTUAUSUT $.
   $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
