@@ -121431,6 +121431,19 @@ $)
       QABCDEIJKLURUTABCDEFGIJKMNOPQRSTUAUBUCUDUSVA $.
   $}
 
+  ${
+    s2s2d.a $e |- ( ph -> A e. V ) $.
+    s2s2d.b $e |- ( ph -> B e. W ) $.
+    s2s2d.c $e |- ( ph -> C e. X ) $.
+    s2s2d.d $e |- ( ph -> D e. Y ) $.
+    $( Concatenation of fixed length strings.  (Contributed by Mario Carneiro,
+       26-Feb-2016.) $)
+    s2s2d $p |- ( ph -> <" A B C D "> = ( <" A B "> ++ <" C D "> ) ) $=
+      ( cs2 cs1 cvv elexd cconcat co wceq cs3 cs4 df-s2 s2cld s1cld df-s4 df-s3
+      a1i cats1catd ) ABCNZBCDUAZBCDEUBZDOZDENIEDEUCABCPABFJQACGKQUDADPADHLQUEM
+      ULUKEORSTABCDEUFUHUKUJUMRSTABCDUGUHUI $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Elementary real and complex functions
