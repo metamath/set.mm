@@ -121463,6 +121463,16 @@ $)
       ABKPUJACLQUJADMRUJAENSUJUKAHIUIAHOTUJAIFUAUJULUBVBVAJUMUNUOUPABCDEHIJURUQ
       ABCDEFHIKLMNOPQRSTUAUSUT $.
 
+    $( Concatenation of fixed length strings.  (Contributed by AV,
+       1-Mar-2021.) $)
+    s3s4d $p |- ( ph
+        -> <" A B C D E F G "> = ( <" A B C "> ++ <" D E F G "> ) ) $=
+      ( cs2 cconcat co cs3 cs4 cs7 s2s2d eqcomd oveq1d cvv elexd s2cld cs1 wceq
+      s3cld df-s3 a1i s1s3d cats2catd s4s3d 3eqtr4rd ) ABCUCZDEUCUDUEZHIJUFZUDU
+      EBCDEUGZVFUDUEBCDUFZEHIJUGZUDUEBCDEHIJUHAVEVGVFUDAVGVEABCDEKLMNPQRSUIUJUK
+      AVHVDVIVFMNDEABCULABKPUMACLQUMUNAHIJULAHOTUMAIFUAUMAJGUBUMUQRSVHVDDUOUDUE
+      UPABCDURUSAEHIJNOFGSTUAUBUTVAABCDEFGHIJKLMNOPQRSTUAUBVBVC $.
+
     s4s4d.h $e |- ( ph -> H e. R ) $.
     $( Concatenation of fixed length strings.  (Contributed by Mario Carneiro,
        26-Feb-2016.) $)
