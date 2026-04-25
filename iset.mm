@@ -202405,6 +202405,32 @@ $)
       XJXKZRXLVTYSYMXMXNUUCJUUBUJUEZUUDUUAJUUBUJUWBUWCJHXGZXOZUUAJWCZUWBUWCUWFX
       EUWDXHXPHTNITNJTNUWGUWHXQXTXRXSHIJTTTYAYBYCYDUWEKIYEUNZUUBUJUEZUUDJUWIUUB
       UJYFYDKPNUUBPNUUDUWJXQYGUUBUUEUUBSNUWAYSYHWFWHKUUBYIQYJYKYL $.
+
+    $d G j $.
+    $( The K&ouml;nigsberg Bridge problem.  If ` G ` is the K&ouml;nigsberg
+       graph, i.e. a graph on four vertices ` 0 , 1 , 2 , 3 ` , with edges
+       ` { 0 , 1 } , { 0 , 2 } , { 0 , 3 } , { 1 , 2 } , { 1 , 2 } , `
+       ` { 2 , 3 } , { 2 , 3 } ` , then vertices ` 0 , 1 , 3 ` each have degree
+       three, and ` 2 ` has degree five, so there are four vertices of odd
+       degree and thus by ~ eulerpathum the graph cannot have an Eulerian path.
+       It is sufficient to show that there are 3 vertices of odd degree, since
+       a graph having an Eulerian path can only have 0 or 2 vertices of odd
+       degree.  This is Metamath 100 proof #54.  (Contributed by Mario
+       Carneiro, 11-Mar-2015.)  (Revised by Mario Carneiro, 28-Feb-2016.)
+       (Revised by AV, 9-Mar-2021.) $)
+    konigsberg $p |- ( EulerPaths ` G ) = (/) $=
+      ( cfv wcel c2 wbr cc0 cpr clt c3 mp2an cvv c1 wtru cn0 prexg vj vx ceupth
+      cv wex wn c0 wceq cvtxdg cdvds crab chash konigsberglem5 wo elpri 0re 2re
+      2pos ltnsymi ax-mp breq2 mtbiri ltnri jaoi syl mt2 cfn konigsbergumgr cfz
+      cumgr co cz 0z 3z fzfig eqeltri cvtx cop fveq2i cword elexi cs7 0nn0 1nn0
+      a1i 2nn0 3nn0 s7cld mptru opvtxfv eqtr2i eulerpathum mp3an13 notm0 mpbi
+      mto ) UAUDBUCGZHUAUEZUFWQUGUHWRIUBUDBUIGGUJJUFUBCUKULGZKILZHZXAIWSMJZUBAB
+      CDEFUMXAWSKUHZWSIUHZUNXBUFZWSKIUOXCXEXDXCXBIKMJZKIMJXFUFURKIUPUQUSUTWSKIM
+      VAVBXDXBIIMJIUQVCWSIIMVAVBVDVEVFBVJHWRCVGHXAABCDEFVHCKNVIVKZVGDKVLHNVLHXG
+      VGHVMVNKNVOOVPZUBUABCBVQGCAVRZVQGZCBXIVQFVSCPHAPVTZHXJCUHCVGXHWAAKQLZWTKN
+      LZQILZXNINLZXOWBZXKEXPXKHRXLWTXMXNXNXOXOPXLPHZRKSHZQSHZXQWCWDKQSSTOWEWTPH
+      ZRXRISHZXTWCWFKISSTOWEXMPHZRXRNSHZYBWCWGKNSSTOWEXNPHZRXSYAYDWDWFQISSTOWEZ
+      YEXOPHZRYAYCYFWFWGINSSTOWEZYGWHWIVPACPXKWJOWKWLWMWPUAWQWNWO $.
   $}
 
 
