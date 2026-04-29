@@ -13909,10 +13909,13 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>psrbagaddcl</td>
   <td><i>none</i></td>
-  <td>The set.mm proof uses ssfi and various theorems involving
-  the support of a function. The question is whether we have
-  enough decidability (for example via ~ elnndc ) to overcome
-  this.</td>
+  <td>Applying ~ psrbag , ~ psrbagf , and ~ off can reduce
+  the problem to showing that ` ( ``' ( F oF + G ) " NN ) `
+  is finite.  This seems doable but whether we would
+  define supp and finSupp (with suitable decidability
+  additions), modify the set.mm proof to not use those
+  notations, or change the approach more deeply, we'd
+  need to change something.</td>
 </tr>
 
 <tr>
