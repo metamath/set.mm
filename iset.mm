@@ -60202,6 +60202,18 @@ $)
       LGZUAZVKVNLZVJNVOVQVIVRVJVQVRVIVFDVLUCZVPVRVIRVCVDVSVEVCVSDUDUEUFVLVHDUGU
       HUIUJVQVRVJVNEVFVRVJRVNERUKZVPVFVNTGZVTVFVDVHTGWAVCVDVEULAUMVHDBTUNUOVNET
       UPUQURUSUTVAVB $.
+
+    $d F i $.
+    $( The value of the operation constructing the support of a function with a
+       given domain.  This version of ~ suppvalfn assumes ` F ` is a set rather
+       than its domain ` X ` , avoiding ~ ax-coll .  (Contributed by SN,
+       5-Aug-2024.) $)
+    suppvalfng $p |- ( ( F Fn X /\ F e. V /\ Z e. W )
+                    -> ( F supp Z ) = { i e. X | ( F ` i ) =/= Z } ) $=
+      ( wfn wcel w3a csupp co cv cfv wne cdm crab wfun wceq fnfun suppval1 fndm
+      syl3an1 3ad2ant1 rabeqdv eqtrd ) BEGZBCHZFDHZIZBFJKZALBMFNZABOZPZUKAEPUFB
+      QUGUHUJUMREBSACDBFTUBUIUKAULEUFUGULERUHEBUAUCUDUE $.
+    $( $j usage 'suppvalfng' avoids 'ax-coll'; $)
   $}
 
 
