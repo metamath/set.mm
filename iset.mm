@@ -60179,6 +60179,16 @@ $)
       SVGAVHJUKUMUL $.
   $}
 
+  ${
+    $d Z i $.
+    $( The support of the empty set is the empty set.  (Contributed by AV,
+       12-Apr-2019.) $)
+    supp0 $p |- ( Z e. W -> ( (/) supp Z ) = (/) ) $=
+      ( vi wcel c0 csupp co csn cima wne cdm crab cvv wceq 0ex suppval mpan dm0
+      cv rabeq mp1i rab0 a1i 3eqtrd ) BADZEBFGZECSHIBHJZCEKZLZUGCELZEEMDUEUFUIN
+      OCMAEBPQUHENUIUJNUERUGCUHETUAUJENUEUGCUBUCUD $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
