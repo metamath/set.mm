@@ -60112,6 +60112,47 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  The support of functions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  In this section, the support of functions is defined and corresponding
+  theorems are provided.  Since basic properties (see ~ suppval ) are based on
+  the Axiom of Union (usage of ~ dmexg ), these definition and theorems cannot
+  be provided earlier.  Until April 2019, the support of a function was
+  represented by the expression ` ( ``' R " ( _V \ { Z } ) ) ` (see
+  ~ suppimacnv ).  The theorems which are based on this representation and
+  which are provided in previous sections could be moved into this section to
+  have all related theorems in one section, although they do not depend on the
+  Axiom of Union.  This was possible because they are not used before.  The
+  current theorems differ from the original ones by requiring that the classes
+  representing the "function" (or its "domain") and the "zero element" are
+  sets.  Actually, this does not cause any problem (until now).
+
+$)
+
+  $c supp $.  $( Class for the support of a function. $)
+
+  $( Extend class definition to include the support of functions. $)
+  csupp $a class supp $.
+
+  ${
+    $d i x z $.
+    $( Define the support of a function against a "zero" value.  The support of
+       a function is the subset of its domain which is mapped to a value which
+       is not equal to a designed value called the zero value.  Note that this
+       definition uses not equal rather than being in terms of an apartness
+       relation ( ~ df-ap or any other apartness relation), and thus is
+       sometimes called "support" rather than "strong support".  It is
+       therefore probably most useful when the function has a codomain which
+       has decidable equality and contains the zero value.  (Contributed by AV,
+       31-Mar-2019.)  (Revised by AV, 6-Apr-2019.) $)
+    df-supp $a |- supp = ( x e. _V , z e. _V
+                           |-> { i e. dom x | ( x " { i } ) =/= { z } } ) $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Special maps-to operations
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
@@ -203745,6 +203786,9 @@ htmldef "2nd" as
     "<IMG SRC='_2nd.gif' WIDTH=21 HEIGHT=19 ALT=' 2nd' TITLE='2nd'>";
   althtmldef "2nd" as '2<SUP>nd</SUP> ';
   latexdef "2nd" as "2^\mathrm{nd}";
+htmldef "supp" as ' supp ';
+  althtmldef "supp" as ' supp ';
+  latexdef "supp" as "\mathrm{supp}";
 htmldef "tpos" as "tpos ";
   althtmldef "tpos" as 'tpos ';
   latexdef "tpos" as "\mathrm{tpos}";
