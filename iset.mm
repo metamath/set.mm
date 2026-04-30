@@ -60224,6 +60224,17 @@ $)
       fnex 3adant3 simp3 suppval1 syl3anc fndm rabeqdv eqtrd ) BEGZECHZFDHZIZBF
       JKZALBMFNZABOZPZUOAEPUMBQZBRHZULUNUQSUJUKURULEBUATUJUKUSULECBUBUCUJUKULUD
       ARDBFUEUFUMUOAUPEUJUKUPESULEBUGTUHUI $.
+
+    $d S i $.
+    $( An element of the support of a function with a given domain.  This
+       version of ~ elsuppfn assumes ` F ` is a set rather than its domain
+       ` X ` , avoiding ~ ax-coll .  (Contributed by SN, 5-Aug-2024.) $)
+    elsuppfng $p |- ( ( F Fn X /\ F e. V /\ Z e. W ) -> ( S e. ( F supp Z )
+                               <-> ( S e. X /\ ( F ` S ) =/= Z ) ) ) $=
+      ( vi wfn wcel w3a csupp co cv cfv wne crab wa suppvalfng eleq2d wceq
+      fveq2 neeq1d elrab bitrdi ) BEHBCIFDIJZABFKLZIAGMZBNZFOZGEPZIAEIABNZFOZQU
+      EUFUJAGBCDEFRSUIULGAEUGATUHUKFUGABUAUBUCUD $.
+    $( $j usage 'elsuppfng' avoids 'ax-coll'; $)
   $}
 
 
