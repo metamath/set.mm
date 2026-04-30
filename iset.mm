@@ -60150,6 +60150,20 @@ $)
                            |-> { i e. dom x | ( x " { i } ) =/= { z } } ) $.
   $}
 
+  ${
+    $d V x z $.  $d W x z $.  $d X i x z $.  $d Z i x z $.
+    $( The value of the operation constructing the support of a function.
+       (Contributed by AV, 31-Mar-2019.)  (Revised by AV, 6-Apr-2019.) $)
+    suppval $p |- ( ( X e. V /\ Z e. W )
+                -> ( X supp Z ) = { i e. dom X | ( X " { i } ) =/= { Z } } ) $=
+      ( vx vz wcel wa cvv cv csn cima wne cdm crab csupp wceq adantr adantl a1i
+      cmpo df-supp dmeq imaeq1 sneq neeq12d rabeqbidv elex dmexg rabexg ovmpod
+      syl ) DBHZECHZIZFGDEJJFKZAKLZMZGKZLZNZAUQOZPZDURMZELZNZADOZPZQJQFGJJVDUBR
+      UPFGAUCUAUQDRZUTERZIZVDVIRUPVLVBVGAVCVHVJVCVHRVKUQDUDSVLUSVEVAVFVJUSVERVK
+      UQDURUESVKVAVFRVJUTEUFTUGUHTUNDJHUODBUISUOEJHUNECUITUPVHJHZVIJHUNVMUODBUJ
+      SVGAVHJUKUMUL $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
