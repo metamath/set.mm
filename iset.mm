@@ -60189,6 +60189,21 @@ $)
       OCMAEBPQUHENUIUJNUERUGCUHETUAUJENUEUGCUBUCUD $.
   $}
 
+  ${
+    $d V i $.  $d W i $.  $d X i $.  $d Z i $.
+    $( The value of the operation constructing the support of a function.
+       (Contributed by AV, 6-Apr-2019.) $)
+    suppval1 $p |- ( ( Fun X /\ X e. V /\ Z e. W )
+                    -> ( X supp Z ) = { i e. dom X | ( X ` i ) =/= Z } ) $=
+      ( wfun wcel w3a csupp co cv csn cima wne cdm crab cfv wceq suppval cvv wa
+      3adant1 wfn funfn biimpi 3ad2ant1 fnsnfv sylan eqcomd neeq1d wb simp2 vex
+      fvexg sylancl sneqbg syl adantr necon3bid bitrd rabbidva eqtrd ) DFZDBGZE
+      CGZHZDEIJZDAKZLMZELZNZADOZPZVHDQZENZAVLPVDVEVGVMRVCABCDESUBVFVKVOAVLVFVHV
+      LGZUAZVKVNLZVJNVOVQVIVRVJVQVRVIVFDVLUCZVPVRVIRVCVDVSVEVCVSDUDUEUFVLVHDUGU
+      HUIUJVQVRVJVNEVFVRVJRVNERUKZVPVFVNTGZVTVFVDVHTGWAVCVDVEULAUMVHDBTUNUOVNET
+      UPUQURUSUTVAVB $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
