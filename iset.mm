@@ -60235,6 +60235,14 @@ $)
       fveq2 neeq1d elrab bitrdi ) BEHBCIFDIJZABFKLZIAGMZBNZFOZGEPZIAEIABNZFOZQU
       EUFUJAGBCDEFRSUIULGAEUGATUHUKFUGABUAUBUCUD $.
     $( $j usage 'elsuppfng' avoids 'ax-coll'; $)
+
+    $( An element of the support of a function with a given domain.
+       (Contributed by AV, 27-May-2019.) $)
+    elsuppfn $p |- ( ( F Fn X /\ X e. V /\ Z e. W ) -> ( S e. ( F supp Z )
+                               <-> ( S e. X /\ ( F ` S ) =/= Z ) ) ) $=
+      ( vi wfn wcel w3a csupp co cv cfv wne crab wa suppvalfn eleq2d wceq fveq2
+      neeq1d elrab bitrdi ) BEHECIFDIJZABFKLZIAGMZBNZFOZGEPZIAEIABNZFOZQUEUFUJA
+      GBCDEFRSUIULGAEUGATUHUKFUGABUAUBUCUD $.
   $}
 
 
