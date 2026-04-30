@@ -60214,6 +60214,16 @@ $)
       syl3an1 3ad2ant1 rabeqdv eqtrd ) BEGZBCHZFDHZIZBFJKZALBMFNZABOZPZUKAEPUFB
       QUGUHUJUMREBSACDBFTUBUIUKAULEUFUGULERUHEBUAUCUDUE $.
     $( $j usage 'suppvalfng' avoids 'ax-coll'; $)
+
+    $( The value of the operation constructing the support of a function with a
+       given domain.  (Contributed by Stefan O'Rear, 1-Feb-2015.)  (Revised by
+       AV, 22-Apr-2019.) $)
+    suppvalfn $p |- ( ( F Fn X /\ X e. V /\ Z e. W )
+                    -> ( F supp Z ) = { i e. X | ( F ` i ) =/= Z } ) $=
+      ( wfn wcel w3a csupp co cv cfv wne cdm crab wfun cvv wceq 3ad2ant1 fnfun
+      fnex 3adant3 simp3 suppval1 syl3anc fndm rabeqdv eqtrd ) BEGZECHZFDHZIZBF
+      JKZALBMFNZABOZPZUOAEPUMBQZBRHZULUNUQSUJUKURULEBUATUJUKUSULECBUBUCUJUKULUD
+      ARDBFUEUFUMUOAUPEUJUKUPESULEBUGTUHUI $.
   $}
 
 
