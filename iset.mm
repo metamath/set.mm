@@ -20289,6 +20289,21 @@ $)
   $}
 
   ${
+    $d ph y $.  $d ps y $.  $d x y $.
+    $( Equal class abstractions require equivalent formulas, and conversely.
+       (Contributed by NM, 25-Nov-2013.)  (Revised by Mario Carneiro,
+       11-Aug-2016.)  Remove dependency on ~ ax-8 and ~ df-clel (by avoiding
+       use of ~ cleqh ).  (Revised by BJ, 23-Jun-2019.)  Definitial form.
+       (Revised by Wolf Lammen, 23-Feb-2025.) $)
+    abbib $p |- ( { x | ph } = { x | ps } <-> A. x ( ph <-> ps ) ) $=
+      ( vy cab wceq cv wcel wal dfcleq nfsab1 nfbi nfv weq wsb df-clab sbequ12r
+      wb bitrid bibi12d cbvalv1 bitri ) ACEZBCEZFDGZUCHZUEUDHZRZDIABRZCIDUCUDJU
+      HUIDCUFUGCACDKBCDKLUIDMDCNZUFAUGBUFACDOUJAADCPADCQSUGBCDOUJBBDCPBDCQSTUAU
+      B $.
+    $( $j usage 'abbib' avoids 'ax-13' 'df-clel' ; $)
+  $}
+
+  ${
     $d x ph $.
     abbidv.1 $e |- ( ph -> ( ps <-> ch ) ) $.
     $( Equivalent wff's yield equal class abstractions (deduction form).
