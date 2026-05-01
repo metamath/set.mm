@@ -60245,6 +60245,24 @@ $)
       GBCDEFRSUIULGAEUGATUHUKFUGABUAUBUCUD $.
   $}
 
+  ${
+    $d B x y $.  $d F x y $.  $d X x y $.  $d Z x y $.
+    fvdifsuppst.1 $e |- ( ph -> F : A --> B ) $.
+    fvdifsupp.2 $e |- ( ph -> A e. V ) $.
+    fvdifsuppst.st $e |- ( ph -> A. x e. B A. y e. B STAB x = y ) $.
+    fvdifsuppst.3 $e |- ( ph -> Z e. B ) $.
+    fvdifsupp.4 $e |- ( ph -> X e. ( A \ ( F supp Z ) ) ) $.
+    $( Function value is zero outside of its support.  (Contributed by Thierry
+       Arnoux, 21-Jan-2024.) $)
+    fvdifsuppst $p |- ( ph -> ( F ` X ) = Z ) $=
+      ( wceq wn wcel wa wstab wi cfv csupp co eldifbd wne df-ne eldifad wb ffnd
+      elsuppfn syl3anc mpbirand biimprd biimtrrid mtod cv wral ffvelcdmd eqeq12
+      wfn stbid rspc2gv syl2anc mpd df-stab sylib ) AHFUAZIOZPZPZVHAVIHFIUBUCZQ
+      ZAHDVKNUDVIVGIUEZAVLVGIUFAVLVMAVLHDQZVMAHDVKNUGZAFDUTDGQIEQZVLVNVMRUHADEF
+      JUIKMHFGEDIUJUKULUMUNUOAVHSZVJVHTABUPZCUPZOZSZCEUQBEUQZVQLAVGEQVPWBVQTADE
+      HFJVOURMWAVQBCVGIEEVRVGOVSIORVTVHVRVGVSIUSVAVBVCVDVHVEVFVD $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
