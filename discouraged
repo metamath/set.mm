@@ -17921,6 +17921,7 @@ New usage of "nvcom" is discouraged (7 uses).
 New usage of "nvdi" is discouraged (6 uses).
 New usage of "nvdif" is discouraged (3 uses).
 New usage of "nvdir" is discouraged (7 uses).
+New usage of "nvelOLD" is discouraged (0 uses).
 New usage of "nvex" is discouraged (4 uses).
 New usage of "nvf" is discouraged (5 uses).
 New usage of "nvgcl" is discouraged (25 uses).
@@ -19078,6 +19079,7 @@ New usage of "vk15.4jVD" is discouraged (0 uses).
 New usage of "vmcn" is discouraged (1 uses).
 New usage of "vn0ALT" is discouraged (0 uses).
 New usage of "vnexOLD" is discouraged (0 uses).
+New usage of "vprcOLD" is discouraged (0 uses).
 New usage of "vscandx" is discouraged (14 uses).
 New usage of "vsfval" is discouraged (4 uses).
 New usage of "vtocl2gafOLD" is discouraged (0 uses).
@@ -20472,6 +20474,7 @@ Proof modification of "notnotrALTVD" is discouraged (34 steps).
 Proof modification of "notnotriALT" is discouraged (7 steps).
 Proof modification of "nrt2irr" is discouraged (453 steps).
 Proof modification of "nsnlpligALT" is discouraged (110 steps).
+Proof modification of "nvelOLD" is discouraged (11 steps).
 Proof modification of "nzrringOLD" is discouraged (22 steps).
 Proof modification of "odfvalALT" is discouraged (181 steps).
 Proof modification of "ondomon" is discouraged (276 steps).
@@ -20842,6 +20845,7 @@ Proof modification of "vk15.4j" is discouraged (217 steps).
 Proof modification of "vk15.4jVD" is discouraged (268 steps).
 Proof modification of "vn0ALT" is discouraged (6 steps).
 Proof modification of "vnexOLD" is discouraged (45 steps).
+Proof modification of "vprcOLD" is discouraged (15 steps).
 Proof modification of "vtocl2gafOLD" is discouraged (111 steps).
 Proof modification of "vtocl3gaOLD" is discouraged (110 steps).
 Proof modification of "vtocl3gafOLD" is discouraged (185 steps).
