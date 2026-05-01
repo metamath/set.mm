@@ -33442,6 +33442,12 @@ $)
     ( cv wne wa csn cdif wcel eldifsn anbi1i anass bitri rexbii2 ) ABEZDFZAGZBC
     DHIZCPSJZAGPCJZQGZAGUARGTUBAPCDKLUAQAMNO $.
 
+  $( A set is an element of the universal class excluding a singleton iff it is
+     not the singleton element.  (Contributed by AV, 7-Apr-2019.) $)
+  eldifvsn $p |- ( A e. V -> ( A e. ( _V \ { B } ) <-> A =/= B ) ) $=
+    ( wcel cvv csn cdif wne wa eldifsn elex biantrurd bitr4id ) ACDZAEBFGDAEDZA
+    BHZIPAEBJNOPACKLM $.
+
   ${
     $d x A $.  $d x B $.
     $( Characterization of the inclusion of a singleton in a class.
