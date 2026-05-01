@@ -60269,6 +60269,18 @@ $)
       HFJVOURMWAVQBCVGIEEVRVGOVSIORVTVHVRVGVSIUSVAVBVCVDVHVEVFVD $.
   $}
 
+  ${
+    $d R x y $.  $d Z x y $.
+    $( The support of functions "defined" by inverse images expressed by binary
+       relations.  (Contributed by AV, 7-Apr-2019.) $)
+    cnvimadfsn $p |- ( `' R " ( _V \ { Z } ) )
+                     = { x | E. y ( x R y /\ y =/= Z ) } $=
+      ( ccnv cvv csn cdif cima cv wcel cop wa wex cab wbr wne dfima3 wb vex elv
+      eldifvsn opelcnv df-br bitr4i anbi12ci exbii abbii eqtri ) CEZFDGHZIBJZUK
+      KZULAJZLUJKZMZBNZAOUNULCPZULDQZMZBNZAOBAUJUKRUQVAAUPUTBUMUSUOURUMUSSBULDF
+      UBUAUOUNULLCKURULUNCBTATUCUNULCUDUEUFUGUHUI $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
