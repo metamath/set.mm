@@ -60295,6 +60295,19 @@ $)
       UIVDVPVRVTUJUKVKMVFULUMUOVIABCDEUPVAVBVOVNTVCDVIVGAUQURUSUT $.
   $}
 
+  $( Two ways of writing the support of a function with known codomain.
+     (Contributed by Stefan O'Rear, 9-Jul-2015.)  (Revised by AV,
+     7-Jul-2019.) $)
+  fsuppeq $p |- ( ( I e. V /\ Z e. W ) -> ( F : I --> S
+                  -> ( F supp Z ) = ( `' F " ( S \ { Z } ) ) ) ) $=
+    ( wcel wa wf csupp co ccnv csn cdif cima wceq cvv adantl cin eqtrd wfn wfun
+    ffn fex expcom adantr imp simplr suppimacnvfn syl3anc ffun inpreima syl wss
+    wi cdm cnvimass fdm fimacnv eqtr4d sseqtrid sseqin2 sylib invdif imaeq2i ex
+    eqtr3di ) CDGZFEGZHZCABIZBFJKZBLZAFMZNZOZPVJVKHZVLVMQVNNZOZVPVQBCUAZBQGZVIV
+    LVSPVKVTVJCABUCRVJVKWAVHVKWAUOVIVKVHWACADBUDUEUFUGVHVIVKUHBQECFUIUJVKVSVPPV
+    JVKVMAVRSZOZVSVPVKWCVMAOZVSSZVSVKBUBWCWEPCABUKAVRBULUMVKVSWDUNWEVSPVKBUPZVS
+    WDBVRUQVKWFCWDCABURCABUSUTVAVSWDVBVCTWBVOVMAVNVDVEVGRTVF $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
