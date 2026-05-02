@@ -60356,6 +60356,16 @@ $)
       WJUOWKWL $.
   $}
 
+  $( If the function value for a given argument is not empty, the argument
+     belongs to the support of the function with the empty set as zero.
+     (Contributed by AV, 2-Jul-2019.)  (Revised by AV, 4-Apr-2020.) $)
+  fvn0elsupp $p |- ( ( ( B e. V /\ X e. B )
+                       /\ ( G Fn B /\ ( G ` X ) =/= (/) ) )
+                       -> X e. ( G supp (/) ) ) $=
+    ( wcel wa wfn cfv c0 wne csupp co simpr anim12i cvv simprl simpll 0ex a1i
+    wb elsuppfn syl3anc mpbird ) ACEZDAEZFZBAGZDBHIJZFZFZDBIKLEZUEUHFZUFUEUIUHU
+    DUEMUGUHMNUJUGUDIOEZUKULTUFUGUHPUDUEUIQUMUJRSDBCOAIUAUBUC $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
