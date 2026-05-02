@@ -60330,6 +60330,32 @@ $)
       ABFDCFGADHIAEJKLDKMZEANZOTEBCADPSETQR $.
   $}
 
+  ${
+    $d F x $.  $d X x $.  $d Z x $.
+    suppsnop.f $e |- F = { <. X , Y >. } $.
+    suppsnopdc.x $e |- ( ph -> X e. V ) $.
+    suppsnopdc.y $e |- ( ph -> Y e. W ) $.
+    suppsnopdc.z $e |- ( ph -> Z e. U ) $.
+    suppsnopdc.dc $e |- ( ph -> DECID Y = Z ) $.
+    $( The support of a singleton of an ordered pair.  (Contributed by AV,
+       12-Apr-2019.) $)
+    suppsnopdc $p |- ( ph
+                   -> ( F supp Z ) = if ( Y = Z , (/) , { X } ) ) $=
+      ( vx csn wne c0 wceq cvv wcel csupp co cv cima cdm crab cif wf w3a cop wa
+      wf1o f1osng f1of syl 3adant3 feq1i sylibr syl3anc snexg fexd suppval fdmd
+      syl2anc rabeqdv sneq imaeq2d neeq1d rabsnif eqtrdi cfv wfn snidg 3ad2ant1
+      wn ffnd fnsnfv eqcomd fveq1i fvsng eqtrid sneqd wb sneqbg 3ad2ant2 3bitrd
+      necon3abid ifbid wdc ifnotdc eqtrd 3eqtrd ) ACHUAUBZCNUCZOZUDZHOZPZNCUEZU
+      FZCFOZUDZWQPZXAQUGZGHRZQXAUGZACSTHBTZWMWTRAXAGOZSCAFDTZGETZXGXAXHCUHZJKLX
+      IXJXGUIZXAXHFGUJOZUHZXKXIXJXNXGXIXJUKXAXHXMULXNFGDEUMXAXHXMUNUOUPXAXHCXMI
+      UQURZUSAXIXASTJFDUTUOVALNSBCHVBVDAXIXJXGWTXDRJKLXLWTWRNXAUFXDXLWRNWSXAXLX
+      AXHCXOVCVEWRXCNFWNFRZWPXBWQXPWOXACWNFVFVGVHVIVJUSAXDXEVOZXAQUGZXFAXIXJXGX
+      DXRRJKLXLXCXQXAQXLXCFCVKZOZWQPXHWQPXQXLXBXTWQXLCXAVLZFXATZXBXTRXLXAXHCXOV
+      PXIXJYBXGFDVMVNYAYBUKXTXBXAFCVQVRVDVHXLXTXHWQXLXSGXLXSFXMVKZGFCXMIVSXIXJY
+      CGRXGFGDEVTUPWAWBVHXLXEXHWQXJXIXHWQRXEWCXGGHEWDWEWGWFWHUSAXEWIXRXFRMXEXAQ
+      WJUOWKWL $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
