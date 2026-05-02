@@ -52237,19 +52237,6 @@ $)
   $}
 
   ${
-    $d F x $.  $d A x $.
-    $( Existential quantification restricted to a support.  (Contributed by
-       Stefan O'Rear, 23-Mar-2015.) $)
-    rexsupp $p |- ( F Fn A -> ( E. x e. ( `' F " ( _V \ { Z } ) ) ph <->
-          E. x e. A ( ( F ` x ) =/= Z /\ ph ) ) ) $=
-      ( wfn cfv wne ccnv cvv csn cdif cima wcel elpreima eldifsn funfvex funfni
-      cv wa biantrurd bitr4id pm5.32da bitrd anbi1d anass bitrdi rexbidv2 ) DCF
-      ZABSZDGZEHZATZBDIJEKLZMZCUIUJUONZATUJCNZULTZATUQUMTUIUPURAUIUPUQUKUNNZTUR
-      CUJUNDOUIUQUSULUIUQTZUSUKJNZULTULUKJEPUTVAULVACUJDUJDQRUAUBUCUDUEUQULAUFU
-      GUH $.
-  $}
-
-  ${
     $d x F $.  $d x A $.  $d x B $.
     $( Preimage of a union.  (Contributed by Jeff Madsen, 2-Sep-2009.) $)
     unpreima $p |- ( Fun F -> ( `' F " ( A u. B ) )
@@ -60375,6 +60362,18 @@ $)
     simp1 0ex a1i elsuppfn syl3anc simpr biimtrdi impbid ) ACEZDAEZBAFZGZDBHIJZ
     DBIKLEZUIUJUKUMUNMUIUJUKUMUNABCDNOPULUNUJUMQZUMULUKUIIREZUNUOSUIUJUKTUIUJUK
     UAUPULUBUCDBCRAIUDUEUJUMUFUGUH $.
+
+  ${
+    $d F x $.  $d V x $.  $d W x $.  $d X x $.  $d Z x $.
+    $( Existential quantification restricted to a support.  (Contributed by
+       Stefan O'Rear, 23-Mar-2015.)  (Revised by AV, 27-May-2019.) $)
+    rexsupp $p |- ( ( F Fn X /\ X e. V /\ Z e. W )
+                    -> ( E. x e. ( F supp Z ) ph
+                         <-> E. x e. X ( ( F ` x ) =/= Z /\ ph ) ) ) $=
+      ( wfn wcel w3a cv cfv wne wa csupp co elsuppfn anbi1d anass bitrdi
+      rexbidv2 ) CFHFDIGEIJZABKZCLGMZANZBCGOPZFUBUCUFIZANUCFIZUDNZANUHUENUBUGUI
+      AUCCDEFGQRUHUDASTUA $.
+  $}
 
 
 $(
