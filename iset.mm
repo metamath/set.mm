@@ -60321,6 +60321,15 @@ $)
     JUTVAVBRTVC $.
   $( $j usage 'fsuppeqg' avoids 'ax-coll'; $)
 
+  ${
+    $d F i $.  $d Z i $.
+    $( The support of a function is a subset of the function's domain.
+       (Contributed by AV, 30-May-2019.) $)
+    suppssdmg $p |- ( ( F e. V /\ Z e. W ) -> ( F supp Z ) C_ dom F ) $=
+      ( vi wcel wa csupp co cv csn cima wne cdm crab suppval ssrab2 eqsstrdi )
+      ABFDCFGADHIAEJKLDKMZEANZOTEBCADPSETQR $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
