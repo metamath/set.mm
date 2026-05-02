@@ -49916,6 +49916,15 @@ $)
       ( cvv wcel fabexg mp2an ) CIJDIJEIJFGABCDIIEHKL $.
   $}
 
+  ${
+    fndmexd.1 $e |- ( ph -> F e. V ) $.
+    fndmexd.2 $e |- ( ph -> F Fn D ) $.
+    $( If a function is a set, its domain is a set.  (Contributed by Rohan
+       Ridenour, 13-May-2024.) $)
+    fndmexd $p |- ( ph -> D e. _V ) $=
+      ( cdm cvv fndmd dmexd eqeltrrd ) ACGBHABCFIACDEJK $.
+  $}
+
   $( If a mapping is a set, its domain is a set.  (Contributed by NM,
      27-Aug-2006.)  (Proof shortened by Andrew Salmon, 17-Sep-2011.) $)
   dmfex $p |- ( ( F e. C /\ F : A --> B ) -> A e. _V ) $=
@@ -53454,6 +53463,17 @@ $)
     wa df-fn sylan2 anassrs sylanb resdm eleq1d biimpa syl2anc ) CADZABEZQCFZCC
     GZHZIEZCIEZUFUHUGACJKUFCLZUIAMZQUGUKCARUMUNUGUKUNUGQUMUIBEZUKUGUNUOABUINOCU
     IBPSTUAUHUKULUHUJCICUBUCUDUE $.
+
+  $( The domain of a function is a set iff the function is a set.  (Contributed
+     by AV, 8-Aug-2024.) $)
+  fndmexb $p |- ( F Fn A -> ( A e. _V <-> F e. _V ) ) $=
+    ( wfn cvv wcel fnex ex wa simpr simpl fndmexd impbid ) BACZADEZBDEZMNOADBFG
+    MONMOHABDMOIMOJKGL $.
+
+  $( The domain of a function is a set iff the function is a set.  (Contributed
+     by AV, 8-Aug-2024.) $)
+  fdmexb $p |- ( F : A --> B -> ( A e. _V <-> F e. _V ) ) $=
+    ( wf wfn cvv wcel wb ffn fndmexb syl ) ABCDCAEAFGCFGHABCIACJK $.
 
   $( If the domain of a function exists, so does the function.  Part of Theorem
      4.15(v) of [Monk1] p. 46.  This theorem is derived using the Axiom of
@@ -174746,6 +174766,18 @@ $)
     $}
 
     ${
+      $d I x $.  $d G x $.  $d F x $.  $d D x $.  $d a b c $.
+      $( The support of a dominated bag is smaller than the dominating bag.
+         (Contributed by Mario Carneiro, 29-Dec-2014.)  Remove a sethood
+         antecedent.  (Revised by SN, 5-Aug-2024.) $)
+      psrbaglesupp $p |- ( ( F e. D /\ G : I --> NN0 /\ G oR <_ F )
+                                       -> ( `' G " NN ) C_ ( `' F " NN ) ) $=
+        ( cvv wcel cn0 wf cle cofr wbr w3a ccnv cn cima wss id psrbagf 3ad2ant1
+        ffnd fndmexd psrbaglesuppg mpancom ) EGHZCAHZEIDJZDCKLMZNDOPQCOPQRUGUHU
+        FUIUGECAUGSUGEICABCEFTUBUCUAABCDEGFUDUE $.
+    $}
+
+    ${
       $d F f $.  $d I f x $.
       $( A finite index set gives a simpler expression for finite bags.
          (Contributed by Jim Kingdon, 23-Nov-2025.) $)
@@ -174760,6 +174792,95 @@ $)
         WGQUPZUQURWJUSTWIWCWKWIWCWBCGZWKWMWIVMCUTZWCWNWKSVDVRWOVLWHVMLCVEQCWBJV
         MVATVBVCVFREVTVNVGVHRVOBVPVIVJVK $.
     $}
+
+    $d G f $.
+    ${
+      $d D x $.  $d F x $.  $d G x $.  $d I x $.
+      $( The set of finite bags is downward-closed.  (Contributed by Mario
+         Carneiro, 29-Dec-2014.)  Remove a sethood antecedent.  (Revised by SN,
+         5-Aug-2024.) $)
+      psrbaglecl $p |- ( ( F e. D /\ G : I --> NN0 /\ G oR <_ F )
+          -> G e. D ) $=
+        ( vx wcel cn0 wf ccnv cn cima cfn wdc wa cvv wb 3ad2ant1 syl cofr simp2
+        cle wbr w3a wss cv wral simp1 id psrbagf ffnd psrbag mpbid psrbaglesupp
+        fndmexd simprd cfv cz adantr wfn elpreima 3syl simprbda ffvelcdmd nn0zd
+        ffn elnndc mpbirand dcbid mpbird ralrimiva ssfidc syl3anc mpbir2and ) C
+        AHZEIDJZDCUCUAUDZUEZDAHZVQDKLMZNHZVPVQVRUBZVSCKLMZNHZWAWDUFGUGZWAHZOZGW
+        DUHWBVSEICJZWEVSVPWIWEPZVPVQVRUIVSEQHZVPWJRVPVQWKVRVPECAVPUJVPEICABCEFU
+        KZULUPSZABCEQFUMTUNUQABCDEFUOVSWHGWDVSWFWDHZPZWHWFDURZLHZOZWOWPUSHWRWOW
+        PWOEIWFDVSVQWNWCUTVSWNWFEHZWFCURLHZVSWICEVAWNWSWTPRVPVQWIVRWLSEICVGEWFL
+        CVBVCVDZVEVFWPVHTWOWGWQWOWGWSWQXAVSWGWSWQPRZWNVSVQDEVAXBWCEIDVGEWFLDVBV
+        CUTVIVJVKVLGWDWAVMVNVSWKVTVQWBPRWMABDEQFUMTVO $.
+    $}
+
+    ${
+      $d D x y j p q $.  $d F x y f j p q $.  $d G x y f j p q $.
+      $d I x f j p q $.
+      $( The analogue of the statement " ` 0 <_ G <_ F ` implies
+         ` 0 <_ F - G <_ F ` " for finite bags.  (Contributed by Mario
+         Carneiro, 29-Dec-2014.)  Remove a sethood antecedent.  (Revised by SN,
+         5-Aug-2024.) $)
+      psrbagcon $p |- ( ( F e. D /\ G : I --> NN0 /\ G oR <_ F )
+                   -> ( ( F oF - G ) e. D /\ ( F oF - G ) oR <_ F ) ) $=
+        ( vx vj wcel cn0 cle wbr cn cfv cvv wa nn0zd mpbid wb syl vp vq wf cofr
+        w3a cmin cof co ccnv cima cfn wfn cv wral simprl simprr zsubcld psrbagf
+        cz 3ad2ant1 simp2 id ffnd fndmexd inidm eqidd ffvelcdmda ofvalg ofrfval
+        off simp3 r19.21bi nn0sub syl2anc eqeltrd ralrimiva ffnfv wss wdc simp1
+        sylanbrc psrbag simprd cc0 nn0ge0d nn0red subge02d psrbaglesupp syl3anc
+        mpbird adantr simpr elpreima simpld ffvelcdmd elnndc mpbirand mpbir2and
+        dcbid ssfidc jca ) CAIZEJDUCZDCKUDZLZUEZCDUFUGUHZAIZXGCXDLZXFXHEJXGUCZX
+        GUIMUJZUKIZXFXGEULZGUMZXGNZJIZGEUNXJXFEUSXGXFUAUBEEEUFJJUSCDOOXFUAUMZJI
+        ZUBUMZJIZPPZXQXSYAXQXFXRXTUOQYAXSXFXRXTUPQUQXBXCEJCUCZXEABCEFURZUTZXBXC
+        XEVAZXBXCEOIZXEXBECAXBVBXBEJCYCVCZVDUTZYHEVEZVJVCZXFXPGEXFXNEIPZXOXNCNZ
+        XNDNZUFUHZJXFEEYLYMUFEUSCDOOXNXBXCCEULZXEYGUTZXFEJDYEVCZYHYHYIYKYLVFZYK
+        YMVFZYKYLYMYKYLXFEJXNCYDVGZQYKYMXFEJXNDYEVGZQUQVHZYKYMYLKLZYNJIZXFUUCGE
+        XFXEUUCGEUNXBXCXEVKXFGEEYMYLKEDCOOYQYPYHYHYIYSYRVIRVLYKYMJIYLJIUUCUUDSU
+        UAYTYMYLVMVNRVOVPGEJXGVQWAZXFCUIMUJZUKIZXKUUFVRZHUMZXKIZVSZHUUFUNXLXFYB
+        UUGXFXBYBUUGPZXBXCXEVTZXFYFXBUULSYHABCEOFWBTRWCXFXBXJXIUUHUUMUUEXFXIYNY
+        LKLZGEUNXFUUNGEYKWDYMKLUUNYKYMUUAWEYKYLYMYKYLYTWFYKYMUUAWFWGRVPXFGEEYNY
+        LKEXGCOOYJYPYHYHYIUUBYRVIWJZABCXGEFWHWIXFUUKHUUFXFUUIUUFIZPZUUKUUIXGNZM
+        IZVSZUUQUURUSIUUTUUQUURUUQEJUUIXGXFXJUUPUUEWKUUQUUIEIZUUICNMIZUUQUUPUVA
+        UVBPZXFUUPWLUUQYOUUPUVCSXFYOUUPYPWKEUUIMCWMTRWNZWOQUURWPTUUQUUJUUSUUQUU
+        JUVAUUSUVDXFUUJUVAUUSPSZUUPXFXMUVEYJEUUIMXGWMTWKWQWSWJVPHUUFXKWTWIXFYFX
+        HXJXLPSYHABXGEOFWBTWRUUOXA $.
+    $}
+
+    $d D x y $.  $d F x y $.  $d G x y $.  $d I x $.  $d X f $.  $d X y $.
+    psrbagconf1o.s $e |- S = { y e. D | y oR <_ F } $.
+    ${
+      $( The complement of a bag is a bag.  (Contributed by Mario Carneiro,
+         29-Dec-2014.)  Remove a sethood antecedent.  (Revised by SN,
+         6-Aug-2024.) $)
+      psrbagconcl $p |- ( ( F e. D /\ X e. S ) -> ( F oF - X ) e. S ) $=
+        ( wcel wa cmin cof co cle cofr wbr cn0 breq1 elrab2 simpl simpr psrbagf
+        wf cv sylib simpld syl simprd psrbagcon syl3anc sylibr ) EBJZGCJZKZEGLM
+        NZBJUPEOPZQZKZUPCJUOUMFRGUDZGEUQQZUSUMUNUAUOGBJZUTUOVBVAUOUNVBVAKUMUNUB
+        AUEZEUQQZVAAGBCVCGEUQSITUFZUGBDGFHUCUHUOVBVAVEUIBDEGFHUJUKVDURAUPBCVCUP
+        EUQSITUL $.
+    $}
+
+    $d D n x z $.  $d F f n x z $.  $d S n x z $.  $d I n x $.  $d x y z $.
+    $( Bag complementation is a bijection on the set of bags dominated by a
+       given bag ` F ` .  (Contributed by Mario Carneiro, 29-Dec-2014.)  Remove
+       a sethood antecedent.  (Revised by SN, 6-Aug-2024.) $)
+    psrbagconf1o $p |- ( F e. D ->
+      ( x e. S |-> ( F oF - x ) ) : S -1-1-onto-> S ) $=
+      ( vn wcel cmin wa cfv wceq cn0 wf psrbagf wfn ffnd vz cv cof co cmpt eqid
+      psrbagconcl wral wb adantr ffvelcdmda cle wbr ssrab3 sseli adantl adantrl
+      cofr syl simprl sselid cc nn0cn subsub23 syl3an syl3anc eqcom 3bitr4g cvv
+      cz fndmexd inidm eqidd nn0zd zsubcld ofvalg eqeq2d 3bitr4d eqfnfv syl2anc
+      ralbidva adantrr f1o2d ) FCKZAUADDFAUBZLUCZUDZFUAUBZWFUDZADWGUEZWJUFBCDEF
+      GWEHIUGZBCDEFGWHHIUGZWDWEDKZWHDKZMZMZJUBZWENZWQWINZOZJGUHZWQWHNZWQWGNZOZJ
+      GUHZWEWIOZWHWGOZWPWTXDJGWPWQGKMZWRWQFNZXBLUDZOZXBXIWRLUDZOZWTXDXHXJWROZXL
+      XBOZXKXMXHXIPKZXBPKZWRPKZXNXOUIZWPGPWQFWDGPFQWOCEFGHRZUJUKZWPGPWQWHWDWNGP
+      WHQZWMWDWNMZWHCKZYBWNYDWDDCWHBUBFULURUMBCDIUNZUOUPCEWHGHRUSZUQUKZWPGPWQWE
+      WPWECKGPWEQWPDCWEYEWDWMWNUTZVACEWEGHRUSZUKZXPXIVBKXQXBVBKXRWRVBKXSXIVCXBV
+      CWRVCXIXBWRVDVEVFWRXJVGXBXLVGVHXHWSXJWRWPGGXIXBLGVJFWHVIVIWQWDFGSWOWDGPFX
+      TTUJZWDWNWHGSZWMYCGPWHYFTUQZWPGWEDYHWPGPWEYITZVKZYOGVLZXHXIVMZXHXBVMXHXIX
+      BXHXIYAVNZXHXBYGVNVOVPVQXHXCXLXBWPGGXIWRLGVJFWEVIVIWQYKYNYOYOYPYQXHWRVMXH
+      XIWRYRXHWRYJVNVOVPVQVRWAWPWEGSWIGSXFXAUIYNWPGPWIWPWICKGPWIQWPDCWIYEWDWNWI
+      DKWMWLUQVACEWIGHRUSTJGWEWIVSVTWPYLWGGSZXGXEUIYMWDWMYSWNWDWMMZGPWGYTWGCKGP
+      WGQYTDCWGYEWKVACEWGGHRUSTWBJGWHWGVSVTVRWC $.
   $}
 
   ${

@@ -13907,46 +13907,52 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>psrbaglesupp</td>
-  <td>~ psrbaglesuppg</td>
-  <td>adds set existence condition</td>
-</tr>
-
-<tr>
-  <td>psrbaglecl</td>
-  <td><i>none</i></td>
-  <td>The set.mm proof uses ssfi . We might have enough
-  decidability (via ~ elnndc ) to overcome this.</td>
-</tr>
-
-<tr>
   <td>psrbagaddcl</td>
   <td><i>none</i></td>
-  <td>The set.mm proof uses ssfi and various theorems involving
-  the support of a function. The question is whether we have
-  enough decidability (for example via ~ elnndc ) to overcome
-  this.</td>
-</tr>
-
-<tr>
-  <td>psrbagcon</td>
-  <td><i>none</i></td>
-  <td>The set.mm proof uses ssfi . Perhaps a similar proof
-  would work but using ~ ssfidc (the decidability might be
-  somewhat similar to the proof of ~ psr1clfi ).</td>
+  <td>Applying ~ psrbag , ~ psrbagf , and ~ off can reduce
+  the problem to showing that ` ( ``' ( F oF + G ) " NN ) `
+  is finite.  This seems doable but whether we would
+  define supp and finSupp (with suitable decidability
+  additions), modify the set.mm proof to not use those
+  notations, or change the approach more deeply, we'd
+  need to change something.</td>
 </tr>
 
 <tr>
   <td>psrbaglefi</td>
   <td><i>none</i></td>
-  <td>The set.mm proof uses psrbaglecl and theorems involving
+  <td>The set.mm proof uses theorems involving
   the support of a function which we don't have</td>
 </tr>
 
 <tr>
-  <td>psrbagconcl</td>
+  <td>psrbagleadd1</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses psrbagcon</td>
+  <td>the set.mm proof uses psrbagaddcl</td>
+</tr>
+
+<tr>
+  <td>gsumbagdiaglem</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof would apparently work with
+  small changes</td>
+</tr>
+
+<tr>
+  <td>gsumbagdiag</td>
+  <td><i>none</i></td>
+  <td>Apparently would be provable if ` gsum ` is changed
+  to ` gfsum ` . We would seem to need a ` gfsum ` version
+  of gsumcom2 .</td>
+</tr>
+
+<tr>
+  <td>psrass1lem</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof uses suppssdm , 	suppssfifsupp ,
+  gsum2d2 , gsumf1o , psrbaglefi ,
+  gsumbagdiaglem , and gsumbagdiag . ` gsum ` would
+  presumably need to be changed to ` gfsum ` .</td>
 </tr>
 
 <tr>
