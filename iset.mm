@@ -60366,6 +60366,16 @@ $)
     wb elsuppfn syl3anc mpbird ) ACEZDAEZFZBAGZDBHIJZFZFZDBIKLEZUEUHFZUFUEUIUHU
     DUEMUGUHMNUJUGUDIOEZUKULTUFUGUHPUDUEUIQUMUJRSDBCOAIUAUBUC $.
 
+  $( The function value for a given argument is not empty iff the argument
+     belongs to the support of the function with the empty set as zero.
+     (Contributed by AV, 4-Apr-2020.) $)
+  fvn0elsuppb $p |- ( ( B e. V /\ X e. B /\ G Fn B )
+                      -> ( ( G ` X ) =/= (/) <-> X e. ( G supp (/) ) ) ) $=
+    ( wcel wfn w3a cfv c0 wne csupp co wi fvn0elsupp exp43 3imp wa cvv wb simp3
+    simp1 0ex a1i elsuppfn syl3anc simpr biimtrdi impbid ) ACEZDAEZBAFZGZDBHIJZ
+    DBIKLEZUIUJUKUMUNMUIUJUKUMUNABCDNOPULUNUJUMQZUMULUKUIIREZUNUOSUIUJUKTUIUJUK
+    UAUPULUBUCDBCRAIUDUEUJUMUFUGUH $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
