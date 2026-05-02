@@ -60141,7 +60141,7 @@ $(
   the Axiom of Union (usage of ~ dmexg ), these definition and theorems cannot
   be provided earlier.  Until April 2019, the support of a function was
   represented by the expression ` ( ``' R " ( _V \ { Z } ) ) ` (see
-  ~ suppimacnv ).  The theorems which are based on this representation and
+  ~ suppimacnvfn ).  The theorems which are based on this representation and
   which are provided in previous sections could be moved into this section to
   have all related theorems in one section, although they do not depend on the
   Axiom of Union.  This was possible because they are not used before.  The
@@ -60279,6 +60279,20 @@ $)
       eldifvsn opelcnv df-br bitr4i anbi12ci exbii abbii eqtri ) CEZFDGHZIBJZUK
       KZULAJZLUJKZMZBNZAOUNULCPZULDQZMZBNZAOBAUJUKRUQVAAUPUTBUMUSUOURUMUSSBULDF
       UBUAUOUNULLCKURULUNCBTATUCUNULCUDUEUFUGUHUI $.
+  $}
+
+  ${
+    $d F x $.  $d V x $.  $d W x $.  $d X x $.  $d Z x $.
+    $( Support sets of functions expressed by inverse images.  (Contributed by
+       AV, 31-Mar-2019.)  (Revised by AV, 7-Apr-2019.) $)
+    suppimacnvfn $p |- ( ( F Fn X /\ F e. V /\ Z e. W )
+                       -> ( F supp Z ) = ( `' F " ( _V \ { Z } ) ) ) $=
+      ( vx wfn wcel w3a csupp co ccnv cvv csn cdif cima cv cfv wa wb wceq simp2
+      wne vex fvexg sylancl elsng syl necon3bbid biantrurd bitr3d eldif bitr4di
+      wn anbi2d elsuppfng elpreima 3ad2ant1 3bitr4d eqrdv ) ADGZABHZECHZIZFAEJK
+      ZALMENZOZPZVDFQZDHZVIARZEUCZSVJVKVGHZSZVIVEHVIVHHZVDVLVMVJVDVLVKMHZVKVFHZ
+      UNZSZVMVDVRVLVSVDVQVKEVDVPVQVKEUATVDVBVIMHVPVAVBVCUBFUDVIABMUEUFZVKEMUGUH
+      UIVDVPVRVTUJUKVKMVFULUMUOVIABCDEUPVAVBVOVNTVCDVIVGAUQURUSUT $.
   $}
 
 
