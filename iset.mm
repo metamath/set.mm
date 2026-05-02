@@ -60308,6 +60308,19 @@ $)
     JVKVMAVRSZOZVSVPVKWCVMAOZVSSZVSVKBUBWCWEPCABUKAVRBULUMVKVSWDUNWEVSPVKBUPZVS
     WDBVRUQVKWFCWDCABURCABUSUTVAVSWDVBVCTWBVOVMAVNVDVEVGRTVF $.
 
+  $( Version of ~ fsuppeq avoiding ~ ax-coll by assuming ` F ` is a set rather
+     than its domain ` I ` .  (Contributed by SN, 30-Jul-2024.) $)
+  fsuppeqg $p |- ( ( F e. V /\ Z e. W ) -> ( F : I --> S
+                   -> ( F supp Z ) = ( `' F " ( S \ { Z } ) ) ) ) $=
+    ( wcel wa wf csupp co ccnv csn cdif cima wceq cvv adantl cin eqtrd wfn wfun
+    ffn simpll simplr suppimacnvfn syl3anc inpreima syl wss cdm cnvimass eqtr4d
+    ffun fdm fimacnv sseqtrid sseqin2 sylib invdif imaeq2i eqtr3di ex ) BDGZFEG
+    ZHZCABIZBFJKZBLZAFMZNZOZPVFVGHZVHVIQVJNZOZVLVMBCUAZVDVEVHVOPVGVPVFCABUCRVDV
+    EVGUDVDVEVGUEBDECFUFUGVGVOVLPVFVGVIAVNSZOZVOVLVGVRVIAOZVOSZVOVGBUBVRVTPCABU
+    NAVNBUHUIVGVOVSUJVTVOPVGBUKZVOVSBVNULVGWACVSCABUOCABUPUMUQVOVSURUSTVQVKVIAV
+    JUTVAVBRTVC $.
+  $( $j usage 'fsuppeqg' avoids 'ax-coll'; $)
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
