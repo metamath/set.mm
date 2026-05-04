@@ -60391,6 +60391,21 @@ $)
       AVBFCDBEVAVC $.
   $}
 
+  ${
+    $d A x $.  $d Z x $.
+    mptsuppdifd.f $e |- F = ( x e. A |-> B ) $.
+    mptsuppdifd.a $e |- ( ph -> A e. V ) $.
+    mptsuppdifd.z $e |- ( ph -> Z e. W ) $.
+    $( The support of a function in maps-to notation with a class difference.
+       (Contributed by AV, 28-May-2019.) $)
+    mptsuppdifd $p |- ( ph
+                        -> ( F supp Z ) = { x e. A | B e. ( _V \ { Z } ) } ) $=
+      ( csupp co ccnv cvv csn cdif cima wcel crab cdm wfn wceq wfun funmpt2 a1i
+      funfnd cmpt mptexd eqeltrid suppimacnvfn syl3anc mptpreima eqtrdi ) AEHLM
+      ZENOHPQZRZDUPSBCTAEEUAZUBEOSHGSUOUQUCAEEUDABCDEIUEUFUGAEBCDUHOIABCDFJUIUJ
+      KEOGURHUKULBCDUPEIUMUN $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
