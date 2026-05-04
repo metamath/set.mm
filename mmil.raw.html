@@ -986,7 +986,7 @@ as finiteness or countability spawn several concepts.  Although
 we need to list them in some order, beware of thinking of each
 category as including all smaller sets (for example the proposition
 that any subset of a finite set is finite is equivalent to excluded
-middle by ~ ssfiexmid ).</p>
+middle by ~ exmidssfi ).</p>
 
 <table border cellspacing=0 bgcolor="#EEFFFA">
 
@@ -5257,6 +5257,11 @@ that rabfi implies excluded middle</TD>
   <TD>Presumably precluded by an argument similar to ~ domfiexmid
   (the set.mm proof relies on domfi).</TD>
 </TR>
+
+<tr>
+  <td>imafi</td>
+  <td>~ imaf1fi</td>
+</tr>
 
 <TR>
   <TD ROWSPAN="2">iunfi</TD>
@@ -9674,9 +9679,9 @@ or not.</TD>
   <td>prprrab</td>
   <td><i>none</i></td>
   <td>apparently ` ( # `` x ) = 2 ` would need to be changed to
-  ` x ~~ 2o ` ; there is also the question of whether this theorem,
-  concerning non-empty subsets, would be as useful as a similar theorem
-  concerning inhabited subsets</td>
+  ` x ~~ 2o ` ; it would presumably be desirable to change non-empty
+  to inhabited as well.  For a similar theorem for sets which have
+  one or two elements, see ~ sspw1or2</td>
 </tr>
 
 <tr>
@@ -9731,6 +9736,14 @@ or not.</TD>
   <td>hashdmpropge2</td>
   <td>~ hashdmprop2dom</td>
   <td>changes how we specify that a set has at least two elements</td>
+</tr>
+
+<tr>
+  <td>hashtplei</td>
+  <td><i>none</i></td>
+  <td>Would need some decidability conditions or other changes.
+  One case is ~ hashtpgim . Some variations would want
+  ` { A , B , C } ~<_ 3o ` as the conclusion.</td>
 </tr>
 
 <tr>
@@ -10126,6 +10139,117 @@ or not.</TD>
 <tr>
   <td>s3fv2</td>
   <td>~ s3fv2g</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s3len , s4fv0 , s4fv1 , s4fv2 , s4fv3 , s4len , s5len ,
+  s6len , s7len , s8len , lsws2 , lsws3 , lsws4</td>
+  <td><i>none</i></td>
+  <td>apparently provable with set existence conditions
+  added</td>
+</tr>
+
+<tr>
+  <td>s2prop , s3tpop , s4prop , s3fn</td>
+  <td><i>none</i></td>
+  <td>apparently provable</td>
+</tr>
+
+<tr>
+  <td>funcnvs1</td>
+  <td><i>none</i></td>
+  <td>apparently provable with set existence conditions
+  added</td>
+</tr>
+
+<tr>
+  <td>funcnvs2 , funcnvs3 , funcnvs4 , s2f1o , f1oun2prg ,
+  s4f1o , s4dom , s2co , s3co</td>
+  <td><i>none</i></td>
+  <td>apparently provable</td>
+</tr>
+
+<tr>
+  <td>s0s1</td>
+  <td>~ s1cl plus ~ ccatlid</td>
+</tr>
+
+<tr>
+  <td>s1s2</td>
+  <td>~ s1s2d</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s1s3</td>
+  <td>~ s1s3d</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s1s4</td>
+  <td>~ s1s4d</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s1s5</td>
+  <td>~ s1s5d</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s1s6</td>
+  <td>~ s1s6d</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s1s7</td>
+  <td>~ s1s7d</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s2s2</td>
+  <td>~ s2s2d</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s4s2</td>
+  <td>~ s4s2d</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s4s3</td>
+  <td>~ s4s3d</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s4s4</td>
+  <td>~ s4s4d</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s3s4</td>
+  <td>~ s3s4d</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s2s5</td>
+  <td>~ s2s5d</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s5s2</td>
+  <td>~ s5s2d</td>
   <td>adds set existence conditions</td>
 </tr>
 
@@ -11797,10 +11921,18 @@ intuitionistic and it is lightly used in set.mm</TD>
 </TR>
 
 <tr>
-  <td>df-gsum</td>
+  <td rowspan="2">df-gsum</td>
   <td>~ df-igsum</td>
   <td>the set.mm definition would require more decidability than
-  we want to require in many cases</td>
+  we want to require in many cases. So we define ` gsum `
+  for sums indexed by consecutive integers...
+  </td>
+</tr>
+
+<tr>
+  <td>~ df-gfsum</td>
+  <td>... and an alternate syntax ` gfsum ` for sums indexed
+  by finite sets where the order does not matter</td>
 </tr>
 
 <TR>
@@ -12037,9 +12169,14 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>gsum0</td>
+  <td rowspan="2">gsum0</td>
   <td>~ gsum0g</td>
-  <td>adds set existence condition</td>
+  <td>for ` gsum ` , with added set existence condition</td>
+</tr>
+
+<tr>
+  <td>~ gfsum0</td>
+  <td>for ` gfsum `</td>
 </tr>
 
 <tr>
@@ -12344,11 +12481,14 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>gsumcl</td>
+  <td rowspan="2">gsumcl</td>
   <td>~ gsumfzcl</td>
-  <td>The group sum needs to be indexed by
-  consecutive integers. Also, we don't need
-  commutativity since the order is specified.</td>
+  <td>for ` gsum `</td>
+</tr>
+
+<tr>
+  <td>~ gfsumcl</td>
+  <td>for ` gfsum `</td>
 </tr>
 
 <tr>
@@ -12475,9 +12615,15 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>gsumsnd , gsumsnf , gsumsn</td>
+  <td>gsumsnd , gsumsnf</td>
   <td><i>none</i></td>
-  <td>should be possible with small changes (see ~ gsumfzsnfd )</td>
+  <td>these are variations on similar theorems - see
+  ~ gsumfzsnfd and ~ gfsumsn</td>
+</tr>
+
+<tr>
+  <td>gsumsn</td>
+  <td>~ gsumfzsnfd , ~ gfsumsn</td>
 </tr>
 
 <tr>
@@ -13761,46 +13907,52 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>psrbaglesupp</td>
-  <td>~ psrbaglesuppg</td>
-  <td>adds set existence condition</td>
-</tr>
-
-<tr>
-  <td>psrbaglecl</td>
-  <td><i>none</i></td>
-  <td>The set.mm proof uses ssfi . We might have enough
-  decidability (via ~ elnndc ) to overcome this.</td>
-</tr>
-
-<tr>
   <td>psrbagaddcl</td>
   <td><i>none</i></td>
-  <td>The set.mm proof uses ssfi and various theorems involving
-  the support of a function. The question is whether we have
-  enough decidability (for example via ~ elnndc ) to overcome
-  this.</td>
-</tr>
-
-<tr>
-  <td>psrbagcon</td>
-  <td><i>none</i></td>
-  <td>The set.mm proof uses ssfi . Perhaps a similar proof
-  would work but using ~ ssfidc (the decidability might be
-  somewhat similar to the proof of ~ psr1clfi ).</td>
+  <td>Applying ~ psrbag , ~ psrbagf , and ~ off can reduce
+  the problem to showing that ` ( ``' ( F oF + G ) " NN ) `
+  is finite.  This seems doable but whether we would
+  define supp and finSupp (with suitable decidability
+  additions), modify the set.mm proof to not use those
+  notations, or change the approach more deeply, we'd
+  need to change something.</td>
 </tr>
 
 <tr>
   <td>psrbaglefi</td>
   <td><i>none</i></td>
-  <td>The set.mm proof uses psrbaglecl and theorems involving
+  <td>The set.mm proof uses theorems involving
   the support of a function which we don't have</td>
 </tr>
 
 <tr>
-  <td>psrbagconcl</td>
+  <td>psrbagleadd1</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses psrbagcon</td>
+  <td>the set.mm proof uses psrbagaddcl</td>
+</tr>
+
+<tr>
+  <td>gsumbagdiaglem</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof would apparently work with
+  small changes</td>
+</tr>
+
+<tr>
+  <td>gsumbagdiag</td>
+  <td><i>none</i></td>
+  <td>Apparently would be provable if ` gsum ` is changed
+  to ` gfsum ` . We would seem to need a ` gfsum ` version
+  of gsumcom2 .</td>
+</tr>
+
+<tr>
+  <td>psrass1lem</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof uses suppssdm , 	suppssfifsupp ,
+  gsum2d2 , gsumf1o , psrbaglefi ,
+  gsumbagdiaglem , and gsumbagdiag . ` gsum ` would
+  presumably need to be changed to ` gfsum ` .</td>
 </tr>
 
 <tr>
@@ -16847,8 +16999,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>upgr1e</td>
-  <td>~ upgr1edc</td>
-  <td>adds decidability condition</td>
+  <td>~ upgr1edc , ~ upgr1een</td>
+  <td>for several ways of specifying the single edge</td>
 </tr>
 
 <tr>
@@ -17180,6 +17332,62 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>subgruhgredgd</td>
+  <td>~ subgruhgredgdm</td>
+  <td>changes nonempty to inhabited</td>
+</tr>
+
+<tr>
+  <td>subumgredg2</td>
+  <td>~ subumgredg2en</td>
+  <td>changes how we say that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>uhgrspan1 and lemmas</td>
+  <td><i>none</i></td>
+  <td>presumably provable, perhaps with finiteness
+  or decidability conditions</td>
+</tr>
+
+<tr>
+  <td>upgrres</td>
+  <td><i>none</i></td>
+  <td>would need some changes related to set size
+  and probably decidability</td>
+</tr>
+
+<tr>
+  <td>umgrres</td>
+  <td><i>none</i></td>
+  <td>may need some changes related to decidability</td>
+</tr>
+
+<tr>
+  <td>usgrres</td>
+  <td><i>none</i></td>
+  <td>may need some changes related to decidability</td>
+</tr>
+
+<tr>
+  <td>upgrres1 and lemmas</td>
+  <td><i>none</i></td>
+  <td>may need some changes related to decidability</td>
+</tr>
+
+<tr>
+  <td>umgrres1</td>
+  <td><i>none</i></td>
+  <td>may need some changes related to decidability</td>
+</tr>
+
+<tr>
+  <td>usgrres1</td>
+  <td><i>none</i></td>
+  <td>may need some changes related to decidability</td>
+</tr>
+
+<tr>
   <td>vtxdgval , vtxdgfival</td>
   <td>~ vtxdgfifival</td>
   <td>adds several finiteness conditions</td>
@@ -17358,6 +17566,266 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>~ 1hevtxdg0fi</td>
   <td>requires the graph to be a pseudograph with
   a finite set of vertexes</td>
+</tr>
+
+<tr>
+  <td>1hevtxdg1</td>
+  <td>~ 1hevtxdg1en</td>
+  <td>requires the graph to be a multigraph with
+  a finite set of vertexes</td>
+</tr>
+
+<tr>
+  <td>1hegrvtxdg1</td>
+  <td>~ 1hegrvtxdg1fi</td>
+  <td>requires the graph to be a multigraph with
+  a finite set of vertexes</td>
+</tr>
+
+<tr>
+  <td>1hegrvtxdg1r</td>
+  <td>~ 1hegrvtxdg1rfi</td>
+  <td>requires the graph to be a multigraph with
+  a finite set of vertexes</td>
+</tr>
+
+<tr>
+  <td>1egrvtxdg1</td>
+  <td><i>none</i></td>
+  <td>apparently provable</td>
+</tr>
+
+<tr>
+  <td>1egrvtxdg1r</td>
+  <td><i>none</i></td>
+  <td>apparently provable</td>
+</tr>
+
+<tr>
+  <td>1egrvtxdg0</td>
+  <td><i>none</i></td>
+  <td>would seem to need some decidability added</td>
+</tr>
+
+<tr>
+  <td>p1evtxdeqlem</td>
+  <td>~ p1evtxdeqfilem</td>
+  <td>adds various conditions</td>
+</tr>
+
+<tr>
+  <td>p1evtxdeq</td>
+  <td>~ p1evtxdeqfi</td>
+  <td>adds various conditions</td>
+</tr>
+
+<tr>
+  <td>p1evtxdp1</td>
+  <td>~ p1evtxdp1fi</td>
+  <td>adds various conditions</td>
+</tr>
+
+<tr>
+  <td>uspgrloopvtx</td>
+  <td>~ opvtxfv</td>
+  <td>would be provable with set existence conditions added</td>
+</tr>
+
+<tr>
+  <td>uspgrloopvtxel</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses uspgrloopvtx</td>
+</tr>
+
+<tr>
+  <td>uspgrloopiedg</td>
+  <td>~ opiedgfv</td>
+  <td>would be provable with a set existence condition added</td>
+</tr>
+
+<tr>
+  <td>uspgrloopedg</td>
+  <td><i>none</i></td>
+  <td>would be provable with a set existence condition added</td>
+</tr>
+
+<tr>
+  <td>uspgrloopnb0</td>
+  <td><i>none</i></td>
+  <td>likely provable once we have NeighbVtx</td>
+</tr>
+
+<tr>
+  <td>uspgrloopvd2</td>
+  <td><i>none</i></td>
+  <td>apparently provable</td>
+</tr>
+
+<tr>
+  <td>umgr2v2evtx</td>
+  <td>~ opvtxfv</td>
+  <td>would be provable with set existence conditions added</td>
+</tr>
+
+<tr>
+  <td>umgr2v2evtxel</td>
+  <td><i>none</i></td>
+  <td>would be provable with set existence conditions added</td>
+</tr>
+
+<tr>
+  <td>umgr2v2eiedg</td>
+  <td><i>none</i></td>
+  <td>apparently provable</td>
+</tr>
+
+<tr>
+  <td>umgr2v2eedg</td>
+  <td><i>none</i></td>
+  <td>apparently provable</td>
+</tr>
+
+<tr>
+  <td>umgr2v2e</td>
+  <td><i>none</i></td>
+  <td>apparently provable</td>
+</tr>
+
+<tr>
+  <td>umgr2v2enb1</td>
+  <td><i>none</i></td>
+  <td>likely provable once we have NeighbVtx</td>
+</tr>
+
+<tr>
+  <td>umgr2v2evd2</td>
+  <td><i>none</i></td>
+  <td>apparently provable</td>
+</tr>
+
+<tr>
+  <td>hashnbusgrvd</td>
+  <td><i>none</i></td>
+  <td>likely provable once we have NeighbVtx and probably
+  with additional conditions such as finiteness</td>
+</tr>
+
+<tr>
+  <td>usgruvtxvdb</td>
+  <td><i>none</i></td>
+  <td>likely provable once we have FinUSGraph and UnivVtx</td>
+</tr>
+
+<tr>
+  <td>vdiscusgrb</td>
+  <td><i>none</i></td>
+  <td>presumably provable once we have ComplUSGraph</td>
+</tr>
+
+<tr>
+  <td>vdiscusgr</td>
+  <td><i>none</i></td>
+  <td>presumably provable once we have ComplUSGraph</td>
+</tr>
+
+<tr>
+  <td>vtxdusgradjvtx</td>
+  <td><i>none</i></td>
+  <td>would seem to need a finiteness condition</td>
+</tr>
+
+<tr>
+  <td>usgrvd0nedg</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses vtxdusgradjvtx</td>
+</tr>
+
+<tr>
+  <td>uhgrvd00</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses vtxduhgr0edgnel</td>
+</tr>
+
+<tr>
+  <td>usgrvd00</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses uhgrvd00</td>
+</tr>
+
+<tr>
+  <td>vdegp1ai</td>
+  <td>~ vdegp1aid</td>
+  <td>put in deduction form, adds conditions, and
+  changes how we say that a set has one or two
+  elements</td>
+</tr>
+
+<tr>
+  <td>vdegp1bi</td>
+  <td>~ vdegp1bid</td>
+  <td>put in deduction form, adds conditions, and
+  changes how we say that a set has one or two
+  elements</td>
+</tr>
+
+<tr>
+  <td>vdegp1ci</td>
+  <td>~ vdegp1cid</td>
+  <td>put in deduction form, adds conditions, and
+  changes how we say that a set has one or two
+  elements</td>
+</tr>
+
+<tr>
+  <td>vtxdginducedm1 and lemmas</td>
+  <td><i>none</i></td>
+  <td>probably provable with some changes</td>
+</tr>
+
+<tr>
+  <td>vtxdginducedm1fi</td>
+  <td><i>none</i></td>
+  <td>would likely need additional conditions (such as
+  the set of vertexes, as well as the set of edges,
+  being finite)</td>
+</tr>
+
+<tr>
+  <td>finsumvtxdg2sstep and lemmas</td>
+  <td><i>none</i></td>
+  <td>probably provable with some changes</td>
+</tr>
+
+<tr>
+  <td>finsumvtxdg2size</td>
+  <td><i>none</i></td>
+  <td>probably provable</td>
+</tr>
+
+<tr>
+  <td>fusgr1th</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses fusgrfupgrfs and
+  finsumvtxdg2size</td>
+</tr>
+
+<tr>
+  <td>finsumvtxdgeven</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses finsumvtxdg2size</td>
+</tr>
+
+<tr>
+  <td>vtxdgoddnumeven</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses sumodd , sumeven , and
+  finsumvtxdgeven</td>
+</tr>
+
+<tr>
+  <td>fusgrvtxdgonume</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses fusgrfupgrfs and vtxdgoddnumeven</td>
 </tr>
 
 <tr>
@@ -17794,12 +18262,151 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>konigsberg</td>
+  <td>eupth2lem2</td>
+  <td>~ eupth2lem2dc</td>
+  <td>in deduction form and adds a decidability condition</td>
+</tr>
+
+<tr>
+  <td>trlsegvdeg</td>
+  <td>~ trlsegvdegfi</td>
+  <td>adds conditions that the set of vertexes is finite and
+  that ` G ` is a pseudograph</td>
+</tr>
+
+<tr>
+  <td>eupth2lem3lem1</td>
+  <td>~ eupth2lem3lem1fi</td>
+  <td>adds conditions that the set of vertexes is finite and
+  that ` G ` is a pseudograph</td>
+</tr>
+
+<tr>
+  <td>eupth2lem3lem2</td>
+  <td>~ eupth2lem3lem2fi</td>
+  <td>adds conditions that the set of vertexes is finite and
+  that ` G ` is a pseudograph</td>
+</tr>
+
+<tr>
+  <td>eupth2lem3lem3</td>
+  <td>~ eupth2lem3lem3fi</td>
+  <td>adds conditions that the set of vertexes is finite and
+  that ` G ` is a pseudograph</td>
+</tr>
+
+<tr>
+  <td>eupth2lem3lem4</td>
+  <td>~ eupth2lem3lem4fi</td>
+  <td>adds conditions that the set of vertexes is finite and
+  that ` G ` is a multigraph</td>
+</tr>
+
+<tr>
+  <td>eupth2lem3lem6</td>
+  <td>~ eupth2lem3lem6fi</td>
+  <td>adds conditions that the set of vertexes is finite and
+  that ` G ` is a pseudograph</td>
+</tr>
+
+<tr>
+  <td>eupth2lem3lem7</td>
+  <td>~ eupth2lem3lem7fi</td>
+  <td>adds conditions that the set of vertexes is finite and
+  that ` G ` is a multigraph</td>
+</tr>
+
+<tr>
+  <td>eupth2lem3</td>
+  <td>~ eupth2lem3fi</td>
+  <td>adds a condition that the set of vertexes is finite
+  and requires ` G ` to be a multigraph not just a
+  pseudograph</td>
+</tr>
+
+<tr>
+  <td>eupth2lemb</td>
+  <td>~ eupth2lembfi</td>
+  <td>adds a condition that the set of vertexes is finite
+  and requires ` G ` to be a multigraph not just a
+  pseudograph</td>
+</tr>
+
+<tr>
+  <td>eupth2lems</td>
+  <td>~ eupth2lemsfi</td>
+  <td>adds a condition that the set of vertexes is finite
+  and requires ` G ` to be a multigraph not just a
+  pseudograph</td>
+</tr>
+
+<tr>
+  <td>eupth2</td>
+  <td>~ eupth2fi</td>
+  <td>adds a condition that the set of vertexes is finite
+  and requires ` G ` to be a multigraph not just a
+  pseudograph</td>
+</tr>
+
+<tr>
+  <td>eulerpathpr</td>
+  <td>~ eulerpathprum</td>
+  <td>requires a multigraph with a finite set of vertexes
+  (not just a pseudograph with any set of vertexes)</td>
+</tr>
+
+<tr>
+  <td>eulerpath</td>
+  <td>~ eulerpathum</td>
+  <td>changes pseudograph to multigraph, requires set
+  of vertexes to be finite, and changes nonempty to
+  inhabited</td>
+</tr>
+
+<tr>
+  <td>eulercrct</td>
   <td><i>none</i></td>
-  <td>we don't have a complete list of what this proof depends on,
-  but here's a partial list of (direct or indirect) dependencies of the
-  set.mm proof:
-  various VtxDeg theorems, eulerpath</td>
+  <td>likely provable, with some changes, if we
+  have Circuits</td>
+</tr>
+
+<tr>
+  <td>eucrctshift</td>
+  <td><i>none</i></td>
+  <td>likely provable, with some changes, if we
+  have Circuits and cyclShift</td>
+</tr>
+
+<tr>
+  <td>eucrct2eupth1</td>
+  <td><i>none</i></td>
+  <td>likely provable, with some changes, if we
+  have Circuits</td>
+</tr>
+
+<tr>
+  <td>eucrct2eupth</td>
+  <td><i>none</i></td>
+  <td>likely provable, with some changes, if we
+  have cyclShift</td>
+</tr>
+
+<tr>
+  <td>konigsbergiedgw</td>
+  <td>~ konigsbergiedgwen</td>
+  <td>changes how we say that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>konigsbergssiedgwpr</td>
+  <td>~ konigsbergssiedgwpren</td>
+  <td>changes how we say that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>konigsbergssiedgw</td>
+  <td>~ konigsbergssiedgwen</td>
+  <td>changes how we say that a set has one or two elements</td>
 </tr>
 
 <tr>
@@ -17807,7 +18414,8 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>we don't have a complete list of what this proof depends on,
   but here's a partial list of (direct or indirect) dependencies of the
-  set.mm proof: RegUSGraph , fusgrn0degnn0 ,
+  set.mm proof: NeighbVtx , hashnbusgrvd , RegUSGraph , fusgrn0degnn0 ,
+  upgrres1lem1 , umgrres1lem , upgrres1lem2 , upgrres1lem3 , usgrres1 ,
   WWalksN , clwwisshclwws ,
   clwwisshclwwsn ,
   clwwlknfi , clwwlkel , wwlksext2clwwlk , wwlksubclwwlk ,
@@ -18024,12 +18632,6 @@ of Transcendental Numbers</td>
     feasible and may be easier than trying to adapt the set.mm use of
     finSupp and ` gsum ` . ~ fprodfac may be able to replace a
     portion of the wilthlem3 proof.</td>
-  </tr>
-
-  <tr>
-    <td>54. The Konigsberg Bridge Problem</td>
-    <td>Depends on graph theory definitions and theorems,
-    and words over a set, but nothing that looks difficult.</td>
   </tr>
 
   <tr>
