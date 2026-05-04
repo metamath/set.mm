@@ -60450,6 +60450,25 @@ $)
       JVKXOITGEHVMVNVQUKVRVB $.
   $}
 
+  ${
+    $d F x $.  $d G x $.  $d Z x $.  $d V x $.  $d f i z $.
+    $( The support of a function which is a subset of another function is a
+       subset of the support of this other function.  (Contributed by AV,
+       27-Jul-2019.) $)
+    funsssuppss $p |- ( ( Fun G /\ F C_ G /\ G e. V )
+                        -> ( F supp Z ) C_ ( G supp Z ) ) $=
+      ( vx vf vz vi wfun wss wcel w3a csupp co cv wa cvv cdm wceq adantr csn wi
+      cima wne crab df-supp elmpocl2 wfn cfv wral funss impcom funfnd funfn jca
+      biimpi 3adant3 dmss 3ad2ant2 dmexg 3ad2ant3 simpr 3jca 3expa eqeq1 biimpd
+      funssfv syl ralrimiva suppfnss sylc sylan2 sseldd ex ssrdv ) BIZABJZBCKZL
+      ZEADMNZBDMNZVSEOZVTKZWBWAKVSWCPVTWAWBWCVSDQKZVTWAJZFGQQFOZHOUAUCGOUAUDHWF
+      RUEADMWBFGHUFUGVSWDPZAARZUHZBBRZUHZPZWHWJJZWJQKZWDLZPWBBUIZDSZWBAUIZDSZUB
+      ZEWHUJZWEWGWLWOVSWLWDVPVQWLVRVPVQPZWIWKXBAVQVPAIABUKULUMVPWKVQVPWKBUNUPTU
+      OUQTWGWMWNWDVSWMWDVQVPWMVRABURUSTVSWNWDVRVPWNVQBCUTVATVSWDVBVCUOVSXAWDVPV
+      QXAVRXBWTEWHXBWBWHKZPWPWRSZWTVPVQXCXDWBBAVGVDXDWQWSWPWRDVEVFVHVIUQTEWHWJA
+      BQQDVJVKVLVSWCVBVMVNVO $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
