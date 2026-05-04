@@ -60404,6 +60404,15 @@ $)
       funfnd cmpt mptexd eqeltrid suppimacnvfn syl3anc mptpreima eqtrdi ) AEHLM
       ZENOHPQZRZDUPSBCTAEEUAZUBEOSHGSUOUQUCAEEUDABCDEIUEUFUGAEBCDUHOIABCDFJUIUJ
       KEOGURHUKULBCDUPEIUMUN $.
+
+    $d ph x $.
+    mptsuppd.b $e |- ( ( ph /\ x e. A ) -> B e. U ) $.
+    $( The support of a function in maps-to notation.  (Contributed by AV,
+       10-Apr-2019.)  (Revised by AV, 28-May-2019.) $)
+    mptsuppd $p |- ( ph -> ( F supp Z ) = { x e. A | B =/= Z } ) $=
+      ( csupp co cvv csn wcel crab wa cdif wne mptsuppdifd cv eldifsn biantrurd
+      elexd bitr4id rabbidva eqtrd ) AFINODPIQUARZBCSDIUBZBCSABCDFGHIJKLUCAUKUL
+      BCABUDCRTZUKDPRZULTULDPIUEUMUNULUMDEMUGUFUHUIUJ $.
   $}
 
 
