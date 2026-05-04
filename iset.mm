@@ -60426,6 +60426,30 @@ $)
       BCABUDCRTZUKDPRZULTULDPIUEUMUNULUMDEMUGUFUHUIUJ $.
   $}
 
+  ${
+    $d A x y $.  $d B y $.  $d F x y $.  $d G x y $.  $d V y $.  $d W y $.
+    $d Z x y $.
+    $( The support of a function which has the same zero values (in its domain)
+       as another function is a subset of the support of this other function.
+       (Contributed by AV, 30-Apr-2019.)  (Proof shortened by AV,
+       6-Jun-2022.) $)
+    suppfnss $p |- ( ( ( F Fn A /\ G Fn B ) /\ ( A C_ B /\ B e. V /\ Z e. W ) )
+                     -> ( A. x e. A ( ( G ` x ) = Z -> ( F ` x ) = Z )
+                          -> ( F supp Z ) C_ ( G supp Z ) ) ) $=
+      ( vy wfn wa wss wcel cv cfv wceq wi csupp ad2antrr cvv w3a wral co simpr1
+      wne cdm crab fndm ad2antlr 3sstr4d adantr wb eleq2d fveqeq2 imbi12d rspcv
+      weq biimtrdi com23 imp31 necon3d ex 3imp rabssrabd wfun fnfun simpl ssexg
+      3adant3 fnex syl2an simpr3 suppval1 syl3anc simpr simp2 sseq12d mpbird )
+      DBJZECJZKZBCLZCFMZHGMZUAZKZANZEOHPZWGDOHPZQZABUBZDHRUCZEHRUCZLZWFWKKZWNIN
+      ZDOZHUEZIDUFZUGZWPEOZHUEZIEUFZUGZLZWOWRXBIWSXCWFWSXCLWKWFBCWSXCWAWBWCWDUD
+      VSWSBPVTWEBDUHZSVTXCCPVSWECEUHUIUJUKWOWRWPWSMZXBWOXGWRXBWOXGWRXBQWOXGKXAH
+      WQHWFWKXGXAHPZWQHPZQZWFXGWKXJWFXGWPBMZWKXJQVSXGXKULVTWEVSWSBWPXFUMSWJXJAW
+      PBAIUQWHXHWIXIWGWPHEUNWGWPHDUNUOUPURUSUTVAVBUSVCVDWFWNXEULWKWFWLWTWMXDWFD
+      VEZDTMZWDWLWTPVSXLVTWEBDVFSWAVSBTMZXMWEVSVTVGWBWCXNWDBCFVHVIBTDVJVKWAWBWC
+      WDVLZITGDHVMVNWFEVEZETMZWDWMXDPVTXPVSWECEVFUIWAVTWCXQWEVSVTVOWBWCWDVPCFEV
+      JVKXOITGEHVMVNVQUKVRVB $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
