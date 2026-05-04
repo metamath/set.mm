@@ -60375,6 +60375,22 @@ $)
       AUCCDEFGQRUHUDASTUA $.
   $}
 
+  ${
+    $d B b $.  $d F b $.  $d V b $.  $d W b $.  $d Z b $.
+    $( The support of the restriction of a function is a subset of the support
+       of the function itself.  (Contributed by AV, 22-Apr-2019.) $)
+    ressuppss $p |- ( ( F e. V /\ Z e. W )
+                      -> ( ( F |` B ) supp Z ) C_ ( F supp Z ) ) $=
+      ( vb wcel wa csn cima wne cdm crab csupp cab eleq2s ad2antrl wceq adantld
+      co cv cin elinel2 dmres elinel1 wss snssi resima2 syl neeq1d biimpd mpcom
+      cres jca ex ss2abdv df-rab 3sstr4g cvv resexg suppval sylan 3sstr4d ) BCG
+      ZEDGZHZBAUMZFUAZIZJZEIZKZFVGLZMZBVIJZVKKZFBLZMZVGENTZBENTVFVHVMGZVLHZFOVH
+      VQGZVPHZFOVNVRVFWAWCFVFWAWCVFWAHZWBVPVTWBVFVLWBVHAVQUBZVMVHAVQUCBAUDZPQVH
+      AGZWDVPVTWGVFVLWGVHWEVMVHAVQUEWFPQWGWAVPVFWGVLVPVTWGVLVPWGVJVOVKWGVIAUFVJ
+      VORVHAUGBVIAUHUIUJUKSSULUNUOUPVLFVMUQVPFVQUQURVDVGUSGVEVSVNRBACUTFUSDVGEV
+      AVBFCDBEVAVC $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
