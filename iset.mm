@@ -29495,6 +29495,17 @@ $)
   $}
 
   ${
+    $d A x $.  $d B x $.  $d ph x $.
+    rabssrabd.1 $e |- ( ph -> A C_ B ) $.
+    rabssrabd.2 $e |- ( ( ph /\ ps /\ x e. A ) -> ch ) $.
+    $( Subclass of a restricted class abstraction.  (Contributed by AV,
+       4-Jun-2022.) $)
+    rabssrabd $p |- ( ph -> { x e. A | ps } C_ { x e. B | ch } ) $=
+      ( crab cv wcel wa w3a 3anan32 sylbir ex ss2rabdv wss rabss2 syl sstrd ) A
+      BDEICDEIZCDFIZABCDEADJEKZLZBCUEBLABUDMCABUDNHOPQAEFRUBUCRGCDEFSTUA $.
+  $}
+
+  ${
     $d V x $.
     $( If the restricting class of a restricted class abstraction is a subset
        of this restricted class abstraction, it is equal to this restricted
