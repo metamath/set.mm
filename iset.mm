@@ -60492,6 +60492,27 @@ $)
       IVLRUNUOUP $.
   $}
 
+  ${
+    $d k F $.  $d k ph $.  $d k x W $.  $d k Z $.  $d f i z $.  $d A x $.
+    suppss.f $e |- ( ph -> F : A --> B ) $.
+    suppss.n $e |- ( ( ph /\ k e. ( A \ W ) ) -> ( F ` k ) = Z ) $.
+    suppssdc.dc $e |- ( ph -> A. x e. A DECID x e. W ) $.
+    $( Show that the support of a function is contained in a set.  (Contributed
+       by Mario Carneiro, 19-Dec-2014.)  (Revised by AV, 28-May-2019.)  (Proof
+       shortened by SN, 5-Aug-2024.) $)
+    suppssdc $p |- ( ph -> ( F supp Z ) C_ W ) $=
+      ( vf vz vi csupp cv wcel cvv wa wi co csn wne cdm df-supp elmpocl cfv wfn
+      cima crab wb ffnd adantl simpll simplr elsuppfng syl3anc wdc eleq1w dcbid
+      wceq wral ad2antlr simpr rspcdva wn cdif adantll sylan2br expr necon1addc
+      eldif a1d mpd expimpd sylbid expcom com23 mpdi ssrdv ) AEFHOUAZGAEPZWAQZF
+      RQZHRQZSZWBGQZLMRRLPZNPUBUIMPUBUCNWHUDUJFHOWBLMNUEUFAWFWCWGWFAWCWGTWFASZW
+      CWBCQZWBFUGZHUCZSZWGWIFCUHZWDWEWCWMUKAWNWFACDFIULUMWDWEAUNWDWEAUOWBFRRCHU
+      PUQWIWJWLWGWIWJSZWGURZWLWGTWOBPZGQZURZWPBCWBWQWBVAWRWGBEGUSUTAWSBCVBWFWJK
+      VCWIWJVDVEWOWGWKHWOWGVFZWKHVAZTWPWIWJWTXAWJWTSWIWBCGVGQZXAWBCGVLAXBXAWFJV
+      HVIVJVMVKVNVOVPVQVRVSVT $.
+    $( $j usage 'suppssdc' avoids 'ax-coll'; $)
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
