@@ -45974,6 +45974,16 @@ $)
   $}
 
   ${
+    $d B x $.
+    $( A condition where the converse of ~ xpex holds as well.  Corollary
+       6.9(2) in [TakeutiZaring] p. 26.  (Contributed by Andrew Salmon,
+       13-Nov-2011.) $)
+    xpexcnvm $p |- ( ( E. x x e. B /\ ( A X. B ) e. _V ) -> A e. _V ) $=
+      ( cv wcel wex cxp cvv cdm dmexg dmxpm eleq1d imbitrid imp ) ADCEAFZBCGZHE
+      ZBHEZQPIZHEORPHJOSBHABCKLMN $.
+  $}
+
+  ${
     $d x y A $.
     $( Image under the identity relation.  Theorem 3.16(viii) of [Monk1] p. 38.
        (Contributed by NM, 30-Apr-1998.) $)
