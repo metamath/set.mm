@@ -205751,9 +205751,8 @@ $)
        the extension, in the True alternative, of the condition.  (Contributed
        by BJ, 16-Aug-2024.) $)
     if0ab $p |- if ( ph , A , (/) ) = { x e. A | ph } $=
-      ( cv wcel wa c0 wn wo cab cif crab noel intnanr biorfi bicomi abbii df-if
-      df-rab 3eqtr4i ) BDZCEAFZUAGEZAHZFZIZBJUBBJACGKABCLUFUBBUBUFUEUBUCUDUAMNO
-      PQABCGRABCST $.
+      ( c0 cif crab wn cun dfif6 rab0 uneq2i un0 3eqtri ) ACDEABCFZAGZBDFZHNDHN
+      ABCDIPDNOBJKNLM $.
   $}
 
   ${
