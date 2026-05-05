@@ -60513,6 +60513,28 @@ $)
     $( $j usage 'suppssdc' avoids 'ax-coll'; $)
   $}
 
+  ${
+    $d B u v $.  $d F u v $.  $d X u v $.  $d Z v $.
+    suppssr.f $e |- ( ph -> F : A --> B ) $.
+    suppssr.n $e |- ( ph -> ( F supp Z ) C_ W ) $.
+    suppssr.a $e |- ( ph -> A e. V ) $.
+    suppssrst.z $e |- ( ph -> Z e. B ) $.
+    suppssrst.st $e |- ( ph -> A. u e. B A. v e. B STAB u = v ) $.
+    $( A function is zero outside its support.  (Contributed by Mario Carneiro,
+       19-Dec-2014.)  (Revised by AV, 28-May-2019.) $)
+    suppssrst $p |- ( ( ph /\ X e. ( A \ W ) ) -> ( F ` X ) = Z ) $=
+      ( wcel wn wa wceq cvv cdif cfv eldif wne df-ne fexd fvexg sylan biantrurd
+      csn eldifsn bitr4di csupp co wfn wb elsuppfn syl3anc pm5.32da bitrd sseld
+      ffnd sylbird expdimp sylbid biimtrrid con3d wstab wi cv eqeq2 stbid eqeq1
+      wral ralbidv adantr ffvelcdmda rspcdva df-stab sylib syld impr sylan2b )
+      IDHUAPAIDPZIHPZQZRIFUBZJSZIDHUCAWDWFWHAWDRZWFWHQZQZWHWIWJWEWJWGJUDZWIWEWG
+      JUEWIWLWGTJUJUAPZWEWIWLWGTPZWLRWMWIWNWLAFTPWDWNADEGFKMUFIFTDUGUHUIWGTJUKU
+      LZAWDWMWEAWDWMRZIFJUMUNZPZWEAWRWDWLRZWPAFDUODGPJEPZWRWSUPADEFKVBMNIFGEDJU
+      QURAWDWLWMWOUSUTAWQHILVAVCVDVEVFVGWIWHVHZWKWHVIWIWGBVJZSZVHZXABEJXBJSXCWH
+      XBJWGVKVLWICVJZXBSZVHZBEVNZXDBEVNCEWGXEWGSZXGXDBEXIXFXCXEWGXBVMVLVOAXHCEV
+      NWDOVPADEIFKVQVRAWTWDNVPVRWHVSVTWAWBWC $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
