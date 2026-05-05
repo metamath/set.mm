@@ -60535,6 +60535,30 @@ $)
       NWDOVPADEIFKVQVRAWTWDNVPVRWHVSVTWAWBWC $.
   $}
 
+  ${
+    $d B u v $.  $d F u v $.  $d X u v $.  $d Z v $.
+    suppssrg.f $e |- ( ph -> F : A --> B ) $.
+    suppssrg.n $e |- ( ph -> ( F supp Z ) C_ W ) $.
+    suppssrg.a $e |- ( ph -> F e. V ) $.
+    suppssrgst.z $e |- ( ph -> Z e. B ) $.
+    suppssrgst.st $e |- ( ph -> A. u e. B A. v e. B STAB u = v ) $.
+    $( A function is zero outside its support.  Version of ~ suppssrst avoiding
+       ~ ax-coll by assuming ` F ` is a set rather than its domain ` A ` .
+       (Contributed by SN, 5-May-2024.) $)
+    suppssrgst $p |- ( ( ph /\ X e. ( A \ W ) ) -> ( F ` X ) = Z ) $=
+      ( wcel wn wa wceq cvv cfv eldif wne df-ne csn fvexg sylan eldifsn bitr4di
+      cdif biantrurd csupp co wfn ffnd elsuppfng syl3anc pm5.32da bitrd sylbird
+      wb sseld expdimp sylbid biimtrrid con3d wstab wi eqeq2 stbid wral ralbidv
+      cv eqeq1 adantr ffvelcdmda rspcdva df-stab sylib syld impr sylan2b ) IDHU
+      JPAIDPZIHPZQZRIFUAZJSZIDHUBAWCWEWGAWCRZWEWGQZQZWGWHWIWDWIWFJUCZWHWDWFJUDW
+      HWKWFTJUEUJPZWDWHWKWFTPZWKRWLWHWMWKAFGPZWCWMMIFGDUFUGUKWFTJUHUIZAWCWLWDAW
+      CWLRZIFJULUMZPZWDAWRWCWKRZWPAFDUNWNJEPZWRWSVAADEFKUOMNIFGEDJUPUQAWCWKWLWO
+      URUSAWQHILVBUTVCVDVEVFWHWGVGZWJWGVHWHWFBVMZSZVGZXABEJXBJSXCWGXBJWFVIVJWHC
+      VMZXBSZVGZBEVKZXDBEVKCEWFXEWFSZXGXDBEXIXFXCXEWFXBVNVJVLAXHCEVKWCOVOADEIFK
+      VPVQAWTWCNVOVQWGVRVSVTWAWB $.
+    $( $j usage 'suppssrgst' avoids 'ax-coll'; $)
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
