@@ -205748,18 +205748,30 @@ $)
     $d A x $.  $d ph x $.
     $( Expression of a conditional class as a class abstraction when the False
        alternative is the empty class: in that case, the conditional class is
-       the extension, in the True alternative, of the condition.
-
-       Remark: a consequence which could be formalized is the inclusion
-       ` |- if ( ph , A , (/) ) C_ A ` and therefore, using ~ elpwg ,
-       ` |- ( A e. V -> if ( ph , A , (/) ) e. ~P A ) ` , from which ~ fmelpw1o
-       could be derived, yielding an alternative proof.  (Contributed by BJ,
-       16-Aug-2024.) $)
+       the extension, in the True alternative, of the condition.  (Contributed
+       by BJ, 16-Aug-2024.) $)
     if0ab $p |- if ( ph , A , (/) ) = { x e. A | ph } $=
       ( cv wcel wa c0 wn wo cab cif crab noel intnanr biorfi bicomi abbii df-if
       df-rab 3eqtr4i ) BDZCEAFZUAGEZAHZFZIZBJUBBJACGKABCLUFUBBUBUFUEUBUCUDUAMNO
       PQABCGRABCST $.
   $}
+
+  ${
+    $d A x $.  $d ph x $.
+    $( A conditional class with the False alternative being sent to the empty
+       class is equal to the class corresponding to the True alternative.
+       (Contributed by BJ, 5-May-2026.) $)
+    if0ss $p |- if ( ph , A , (/) ) C_ A $=
+      ( vx c0 cif if0ab ssrab3 ) ACBABDEACBFG $.
+  $}
+
+  $( A conditional class with the False alternative being sent to the empty
+     class is an element of the powerset of the class corresponding to the True
+     alternative when that class is a set.  This statement does not require
+     ~ ax-un contrary to the general case ~ ifelpwung .  (Contributed by BJ,
+     5-May-2026.) $)
+  if0el $p |- ( A e. V -> if ( ph , A , (/) ) e. ~P A ) $=
+    ( wcel c0 cif cpw wss if0ss elpw2g mpbiri ) BCDABEFZBGDLBHABILBCJK $.
 
   ${
     $d x ph $.  $d x X $.  $d A x $.  $d F x $.
