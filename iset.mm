@@ -207043,16 +207043,18 @@ $)
 
   ${
     ax-bj-d0class.bd $e |- Bdd ph $.
-    $( Axiom for ` Delta0 ` -classical logic.  (Contributed by BJ,
-       2-Jan-2020.) $)
+    $( Axiom for ` Delta0 ` -classical logic.  (Contributed by BJ, 2-Jan-2020.)
+       New usage is discouraged since this statement is not intuitionnistic.
+       (New usage is discouraged.) $)
     ax-bj-d0cl $a |- DECID ph $.
   $}
 
   ${
     $d a x ph $.
     $( ` Delta0 ` -classical logic and separation implies classical logic.
-       (Contributed by BJ, 2-Jan-2020.)
-       (Proof modification is discouraged.) $)
+       (Contributed by BJ, 2-Jan-2020.)  (Proof modification is discouraged.)
+       New usage is discouraged since this statement is not intuitionnistic.
+       (New usage is discouraged.) $)
     bj-d0clsepcl $p |- DECID ph $=
       ( va vx wdc wex c0 cv wcel wb csn wel wal 0ex bj-snex zfauscl wceq anbi1d
       wa eleq1 eximii bibi12d spcv snid biantrur bicomi bibi2i exbii ax-bj-d0cl
@@ -207122,8 +207124,9 @@ $)
 
   ${
     $d x A $.  $d x B $.
-    $( If ` A ` is inductive and ` B ` is "inductive in ` A ` ", then
-       ` ( A i^i B ) ` is inductive.  (Contributed by BJ, 25-Oct-2020.) $)
+    $( If ` A ` is inductive and ` B ` is "inductive in ` A ` " (a condition
+       weaker than "inductive"), then ` ( A i^i B ) ` is inductive.
+       (Contributed by BJ, 25-Oct-2020.) $)
     bj-indind $p |- ( ( Ind A /\ ( (/) e. B /\
                 A. x e. A ( x e. B -> suc x e. B ) ) ) -> Ind ( A i^i B ) ) $=
       ( wind c0 wcel cv csuc wi wral wa cin df-bj-ind id biimpri wal syl df-ral
@@ -207497,7 +207500,7 @@ $)
   ${
     $d a x y A $.
     $( The set ` _om ` is transitive.  A natural number is included in
-       ` _om ` .  Constructive proof of ~ elnn .
+       ` _om ` .  Constructive proof of ~ elomssom .
 
        The idea is to use bounded induction with the formula ` x C_ _om ` .
        This formula, in a logic with terms, is bounded.  So in our logic

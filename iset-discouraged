@@ -77,6 +77,7 @@
 "ax-addf" is used by "cnfldplusf".
 "ax-addrcl" is used by "readdcl".
 "ax-arch" is used by "arch".
+"ax-bj-d0cl" is used by "bj-d0clsepcl".
 "ax-caucvg" is used by "caucvgre".
 "ax-cnex" is used by "cnex".
 "ax-cnre" is used by "cnre".
@@ -383,6 +384,7 @@ New usage of "ax-addcom" is discouraged (1 uses).
 New usage of "ax-addf" is discouraged (4 uses).
 New usage of "ax-addrcl" is discouraged (1 uses).
 New usage of "ax-arch" is discouraged (1 uses).
+New usage of "ax-bj-d0cl" is discouraged (1 uses).
 New usage of "ax-caucvg" is discouraged (1 uses).
 New usage of "ax-cnex" is discouraged (1 uses).
 New usage of "ax-cnre" is discouraged (1 uses).
@@ -447,6 +449,7 @@ New usage of "bj-axempty" is discouraged (0 uses).
 New usage of "bj-axempty2" is discouraged (0 uses).
 New usage of "bj-axemptylem" is discouraged (2 uses).
 New usage of "bj-charfundcALT" is discouraged (0 uses).
+New usage of "bj-d0clsepcl" is discouraged (0 uses).
 New usage of "bj-el2oss1o" is discouraged (0 uses).
 New usage of "bj-nn0sucALT" is discouraged (0 uses).
 New usage of "bj-nndcALT" is discouraged (0 uses).
