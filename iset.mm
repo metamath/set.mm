@@ -60479,6 +60479,19 @@ $)
       BQQDVJVKVLVSWCVBVMVNVO $.
   $}
 
+  ${
+    $d B x $.  $d Z x $.  $d Z y $.  $d f q z $.
+    $( The support of a constant function with value zero is empty.
+       (Contributed by AV, 30-Jun-2019.) $)
+    fczsupp0 $p |- ( ( B X. { Z } ) supp Z ) = (/) $=
+      ( vx vf vz vq csn cxp csupp co cv wcel cfv wceq cvv wne cdm simprd simpld
+      cima crab df-supp elmpocl wa wfn fnconstg syl elsuppfng syl3anc fvconst2g
+      wb ibi syl2anc neneqd pm2.65i nel0 ) CABGHZBIJZCKZURLZUSUQMZBNZUTBOLZUSAL
+      ZVBUTUQOLZVCDEOODKZFKGTEKGPFVFQUAUQBIUSDEFUBUCZRZUTVDVABPZUTVDVIUDZUTUQAU
+      EZVEVCUTVJUKUTVCVKVHABOUFUGUTVEVCVGSVHUSUQOOABUHUIULZSABUSOUJUMUTVABUTVDV
+      IVLRUNUOUP $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
