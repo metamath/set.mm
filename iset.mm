@@ -57831,23 +57831,6 @@ $)
   $}
 
   ${
-    $d ph x $.  $d Y x $.  $d Z x $.
-    suppssfv.a $e |- ( ph -> ( `' ( x e. D |-> A ) " ( _V \ { Y } ) ) C_ L ) $.
-    suppssfv.f $e |- ( ph -> ( F ` Y ) = Z ) $.
-    suppssfv.v $e |- ( ( ph /\ x e. D ) -> A e. V ) $.
-    $( Formula building theorem for support restriction, on a function which
-       preserves zero.  (Contributed by Stefan O'Rear, 9-Mar-2015.) $)
-    suppssfv $p |- ( ph -> ( `' ( x e. D |-> ( F ` A ) ) "
-            ( _V \ { Z } ) ) C_ L ) $=
-      ( cfv cmpt ccnv cvv csn cdif wcel wceq cima crab wne cv eldifsni elex syl
-      wa adantr wi fveq2 eqeq1d syl5ibrcom necon3d imp eldifsn sylanbrc ex syl5
-      ss2rabdv eqid mptpreima 3sstr4g sstrd ) ABDCEMZNZOPIQRZUAZBDCNZOPHQRZUAZF
-      AVEVGSZBDUBCVJSZBDUBVHVKAVLVMBDVLVEIUCZABUDDSZUHZVMVEPIUEVPVNVMVPVNUHCPSZ
-      CHUCZVMVPVQVNVPCGSVQLCGUFUGUIVPVNVRAVNVRUJVOACHVEIAVEITCHTZHEMZITKVSVEVTI
-      CHEUKULUMUNUIUOCPHUPUQURUSUTBDVEVGVFVFVAVBBDCVJVIVIVAVBVCJVD $.
-  $}
-
-  ${
     $d ph v $.  $d ph x $.  $d B v $.  $d O v $.  $d R v $.  $d Y v $.
     $d Y x $.  $d Z v $.  $d Z x $.
     suppssov1.s $e |- ( ph ->
@@ -60557,6 +60540,30 @@ $)
       VMZXBSZVGZBEVKZXDBEVKCEWFXEWFSZXGXDBEXIXFXCXEWFXBVNVJVLAXHCEVKWCOVOADEIFK
       VPVQAWTWCNVOVQWGVRVSVTWAWB $.
     $( $j usage 'suppssrgst' avoids 'ax-coll'; $)
+  $}
+
+  ${
+    $d ph x y $.  $d D x y $.  $d Y x $.  $d Z x y $.  $d A y $.  $d F y $.
+    $d L y $.  $d f i z $.
+    suppssfv.a $e |- ( ph -> ( ( x e. D |-> A ) supp Y ) C_ L ) $.
+    suppssfv.f $e |- ( ph -> ( F ` Y ) = Z ) $.
+    suppssfv.v $e |- ( ( ph /\ x e. D ) -> A e. V ) $.
+    suppssfv.y $e |- ( ph -> Y e. U ) $.
+    suppssfvg.d $e |- ( ph -> D e. W ) $.
+    $( Formula building theorem for support restriction, on a function which
+       preserves zero.  (Contributed by Stefan O'Rear, 9-Mar-2015.)  (Revised
+       by AV, 28-May-2019.) $)
+    suppssfvg $p |- ( ph -> ( ( x e. D |-> ( F ` A ) ) supp Z ) C_ L ) $=
+      ( cv wcel wa cvv vy vf vz vi cfv cmpt csupp wss adantr elexd csn cima wne
+      co crab df-supp elmpocl2 adantl simpl cdif eldifsni ad4ant23 wceq fveqeq2
+      cdm wi syl5ibrcom necon3d ad2antlr eldifsn sylanbrc ex syl5 ss2rabdv eqid
+      imp simpll simplr mptsuppdifd 3sstr4d sstrd syl21anc simpr sseldd ssrdv )
+      AUABDCFUEZUFZKUGUNZGAUAQZWHRZWIGRAWJSZWHGWIWKDTRZKTRZAWHGUHWKDIADIRWJPUIU
+      JWJWMAUBUCTTUBQZUDQUKULUCQUKUMUDWNVEUOWGKUGWIUBUCUDUPUQURAWJUSWLWMSZASZWH
+      BDCUFZJUGUNZGWPWFTKUKUTRZBDUOCTJUKUTRZBDUOWHWRWPWSWTBDWSWFKUMZWPBQDRZSZWT
+      WFTKVAXCXAWTXCXASCTRZCJUMZWTAXBXDWOXAAXBSCHNUJVBXCXAXEAXAXEVFWOXBACJWFKAW
+      FKVCCJVCJFUEKVCMCJKFVDVGVHVIVPCTJVJVKVLVMVNWPBDWFWGTTKWGVOWLWMAVQZWLWMAVR
+      VSWPBDCWQTEJWQVOXFAJERWOOURVSVTAWRGUHWOLURWAWBAWJWCWDVLWE $.
   $}
 
 
