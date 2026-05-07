@@ -60566,6 +60566,37 @@ $)
       VSWPBDCWQTEJWQVOXFAJERWOOURVSVTAWRGUHWOLURWAWBAWJWCWDVLWE $.
   $}
 
+  ${
+    $d A x y $.  $d B x $.  $d F x y $.  $d G x y $.  $d X x y $.  $d Z x y $.
+    $d ph x y $.  $d B u v $.  $d ph u v $.
+    suppofssd.1 $e |- ( ph -> A e. V ) $.
+    suppofssd.2 $e |- ( ph -> Z e. B ) $.
+    suppofssd.3 $e |- ( ph -> F : A --> B ) $.
+    suppofssd.4 $e |- ( ph -> G : A --> B ) $.
+    suppofss1dcl.cl $e |- ( ( ph /\ ( u e. B /\ v e. B ) )
+      -> ( u X v ) e. B ) $.
+
+    ${
+      $d F u v y $.  $d G v $.  $d X u v $.
+      suppofss1d.5 $e |- ( ( ph /\ x e. B ) -> ( Z X x ) = Z ) $.
+      $( Condition for the support of a function operation to be a subset of
+         the support of the left function term.  (Contributed by Thierry
+         Arnoux, 21-Jun-2019.) $)
+      suppofss1dcl $p |- ( ph -> ( ( F oF X G ) supp Z ) C_ ( F supp Z ) ) $=
+        ( wceq co wcel vy cv cfv cof wi wral csupp wss inidm eqidd oveq2 eleq1d
+        wa ffnd oveq1 ralbidv ralrimivva adantr ffvelcdmda rspcdva ofvalg simpr
+        oveq1d ralrimiva oveq2d eqeq1d rspcdv mpd 3eqtrd wfn off ssidd suppfnss
+        ex syl23anc ) AUAUBZGUCZKRZVPGHJUDSZUCZKRZUEZUAEUFZVSKUGSGKUGSUHZAWBUAE
+        AVPETZUMZVRWAWFVRUMZVTVQVPHUCZJSZKWHJSZKWFVTWIRVRAEEVQWHJEFGHIIVPAEFGNU
+        NZAEFHOUNLLEUIZWFVQUJWFWHUJWFVQCUBZJSZFTZWIFTCFWHWMWHRWNWIFWMWHVQJUKULW
+        FDUBZWMJSZFTZCFUFZWOCFUFDFVQWPVQRZWRWOCFWTWQWNFWPVQWMJUOULUPAWSDFUFWEAW
+        RDCFFPUQURAEFVPGNUSUTAEFVPHOUSZUTVAURWGVQKWHJWFVRVBVCWFWJKRZVRWFKBUBZJS
+        ZKRZBFUFZXBAXFWEAXEBFQVDURWFXEXBBWHFXAWFXCWHRZUMZXDWJKXHXCWHKJWFXGVBVEV
+        FVGVHURVIVNVDAVSEVJGEVJEEUHEITKFTWCWDUEAEFVSADCEEEJFFFGHIIPNOLLWLVKUNWK
+        AEVLLMUAEEVSGIFKVMVOVH $.
+    $}
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
