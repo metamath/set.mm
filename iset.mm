@@ -5709,6 +5709,11 @@ $)
   con2b $p |- ( ( ph -> -. ps ) <-> ( ps -> -. ph ) ) $=
     ( wn wi con2 impbii ) ABCDBACDABEBAEF $.
 
+  $( A conjunction with a negated conjunction.  (Contributed by AV,
+     8-Mar-2022.)  (Proof shortened by Wolf Lammen, 1-Apr-2022.) $)
+  annotanannot $p |- ( ( ph /\ -. ( ph /\ ps ) ) <-> ( ph /\ -. ps ) ) $=
+    ( wa wn ibar bicomd notbid pm5.32i ) AABCZDBDAIBABIABEFGH $.
+
   ${
     mtbi.1 $e |- -. ph $.
     mtbi.2 $e |- ( ph <-> ps ) $.
