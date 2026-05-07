@@ -60617,6 +60617,26 @@ $)
     $}
   $}
 
+  ${
+    $d F x $.  $d G x $.  $d V x $.  $d W x $.  $d Z x $.  $d f i z $.
+    $( The support of the composition of two functions is the inverse image by
+       the inner function of the support of the outer function.  (Contributed
+       by AV, 30-May-2019.)  (Revised by SN, 15-Sep-2023.) $)
+    suppcofn $p |- ( ( ( F e. V /\ G e. W ) /\ ( Fun F /\ Fun G ) ) ->
+                         ( ( F o. G ) supp Z ) = ( `' G " ( F supp Z ) ) ) $=
+      ( vf vz vi wcel wa wfun csupp ccnv cima cvv cv csn cdm wfn funfnd vx ccom
+      co wi wne crab df-supp elmpocl2 a1i cfv simprr elpreima syl simplbda cdif
+      wb ex funco adantl adantr coexg ad2antrr simpr suppimacnvfn syl3anc cnvco
+      wceq imaeq1i imaco simprl simplll imaeq2d eqtr4id 3eqtrd eleq2d pm5.21ndd
+      eqrdv ) ACIZBDIZJZAKZBKZJZJZUAABUBZELUCZBMZAELUCZNZWDEOIZUAPZWFIZWKWIIZWL
+      WJUDWDFGOOFPZHPQNGPQUEHWNRUFZWEELWKFGHUGZUHUIWDWMWJWDWMJWKBUJZWHIZWJWDWMW
+      KBRZIZWRWDBWSSWMWTWRJUPWDBVTWAWBUKTWSWKWHBULUMUNFGOOWOAELWQWPUHUMUQWDWJWL
+      WMUPWDWJJZWFWIWKXAWFWEMZOEQUOZNZWGAMZUBZXCNZWIXAWEWERZSZWEOIZWJWFXDVGWDXI
+      WJWDWEWCWEKVTABURUSTUTVTXJWCWJABCDVAVBWDWJVCZWEOOXHEVDVEXDXGVGXAXBXFXCABV
+      FVHUIXAXGWGXEXCNZNWIWGXEXCVIXAWHXLWGXAAARZSZVRWJWHXLVGWDXNWJWDAVTWAWBVJTU
+      TVRVSWCWJVKXKACOXMEVDVEVLVMVNVOUQVPVQ $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
