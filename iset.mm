@@ -60595,6 +60595,26 @@ $)
         FVGVHURVIVNVDAVSEVJGEVJEEUHEITKFTWCWDUEAEFVSADCEEEJFFFGHIIPNOLLWLVKUNWK
         AEVLLMUAEEVSGIFKVMVOVH $.
     $}
+
+    ${
+      $d F u v y $.  $d G v $.  $d X u v $.
+      suppofss2d.5 $e |- ( ( ph /\ x e. B ) -> ( x X Z ) = Z ) $.
+      $( Condition for the support of a function operation to be a subset of
+         the support of the right function term.  (Contributed by Thierry
+         Arnoux, 21-Jun-2019.) $)
+      suppofss2dcl $p |- ( ph -> ( ( F oF X G ) supp Z ) C_ ( G supp Z ) ) $=
+        ( wceq co wcel vy cv cfv cof wi wral csupp wss inidm eqidd oveq2 eleq1d
+        wa ffnd oveq1 ralbidv ralrimivva adantr ffvelcdmda rspcdva ofvalg simpr
+        oveq2d ralrimiva oveq1d eqeq1d rspcdv mpd 3eqtrd wfn off ssidd suppfnss
+        ex syl23anc ) AUAUBZHUCZKRZVPGHJUDSZUCZKRZUEZUAEUFZVSKUGSHKUGSUHZAWBUAE
+        AVPETZUMZVRWAWFVRUMZVTVPGUCZVQJSZWHKJSZKWFVTWIRVRAEEWHVQJEFGHIIVPAEFGNU
+        NAEFHOUNZLLEUIZWFWHUJWFVQUJWFWHCUBZJSZFTZWIFTCFVQWMVQRWNWIFWMVQWHJUKULW
+        FDUBZWMJSZFTZCFUFZWOCFUFDFWHWPWHRZWRWOCFWTWQWNFWPWHWMJUOULUPAWSDFUFWEAW
+        RDCFFPUQURAEFVPGNUSZUTAEFVPHOUSUTVAURWGVQKWHJWFVRVBVCWFWJKRZVRWFBUBZKJS
+        ZKRZBFUFZXBAXFWEAXEBFQVDURWFXEXBBWHFXAWFXCWHRZUMZXDWJKXHXCWHKJWFXGVBVEV
+        FVGVHURVIVNVDAVSEVJHEVJEEUHEITKFTWCWDUEAEFVSADCEEEJFFFGHIIPNOLLWLVKUNWK
+        AEVLLMUAEEVSHIFKVMVOVH $.
+    $}
   $}
 
 
