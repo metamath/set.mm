@@ -60659,6 +60659,16 @@ $)
     c0 ima0 ex ) ACFBDFGAHBHGGZAEIJZSKZABLEIJZSKUBUDUEBMZUCNZSABCDEOUDUGUFSNSUC
     SUFPUFTQRUA $.
 
+  $( The image of the support of the composition of two functions is the
+     support of the outer function.  (Contributed by AV, 30-May-2019.) $)
+  imacosuppfn $p |- ( ( ( F e. V /\ G e. W ) /\ ( Fun F /\ Fun G ) )
+                    -> ( ( Fun G /\ ( F supp Z ) C_ ran G )
+                         -> ( G " ( ( F o. G ) supp Z ) ) = ( F supp Z ) ) ) $=
+    ( wcel wa wfun csupp crn wss ccom cima wceq ccnv suppcofn imaeq2d cdm wfo
+    co funforn foimacnv sylanb sylan9eq ex ) ACFBDFGAHBHZGGZUFAEITZBJZKZGZBABLE
+    ITZMZUHNUGUKUMBBOUHMZMZUHUGULUNBABCDEPQUFBRZUIBSUJUOUHNBUAUPUIUHBUBUCUDUE
+    $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
