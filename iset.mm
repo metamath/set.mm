@@ -49741,6 +49741,15 @@ $)
     AIZEJBKZGZUKUFBCDLABELUOURUKUOURUHUJULURUHMUNULUPUQUHBADENOPUNUJULUIUMKUNUJ
     DEQUIUMCRSTUAUBUCACUGLUD $.
 
+  ${
+    fcod.1 $e |- ( ph -> F : B --> C ) $.
+    fcod.2 $e |- ( ph -> G : A --> B ) $.
+    $( Composition of two mappings.  (Contributed by Glauco Siliprandi,
+       26-Jun-2021.) $)
+    fcod $p |- ( ph -> ( F o. G ) : A --> C ) $=
+      ( wf ccom fco syl2anc ) ACDEIBCFIBDEFJIGHBCDEFKL $.
+  $}
+
   $( Functionality of a composition with weakened out of domain condition on
      the first argument.  (Contributed by Stefan O'Rear, 11-Mar-2015.) $)
   fco2 $p |- ( ( ( F |` B ) : B --> C /\ G : A --> B ) ->
