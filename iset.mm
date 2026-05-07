@@ -60651,6 +60651,14 @@ $)
       TVRVSWCWJVKXKACOXMEVDVEVLVMVNVOUQVPVQ $.
   $}
 
+  $( The support of the composition of two functions is empty if the support of
+     the outer function is empty.  (Contributed by AV, 30-May-2019.) $)
+  supp0cosupp0fn $p |- ( ( ( F e. V /\ G e. W ) /\ ( Fun F /\ Fun G ) )
+                  -> ( ( F supp Z ) = (/) -> ( ( F o. G ) supp Z ) = (/) ) ) $=
+    ( wcel wa wfun csupp co wceq ccom ccnv cima suppcofn imaeq2 eqtrdi sylan9eq
+    c0 ima0 ex ) ACFBDFGAHBHGGZAEIJZSKZABLEIJZSKUBUDUEBMZUCNZSABCDEOUDUGUFSNSUC
+    SUFPUFTQRUA $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
