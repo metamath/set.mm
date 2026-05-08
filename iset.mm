@@ -190774,6 +190774,51 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Pell equations
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Pell equations 1: A nontrivial solution always exists
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d a b c d e f g A $.  $d a b c d e f g B $.  $d a b c d e f g C $.
+    $d a b c d e f g D $.  $d a b c d e f g E $.  $d a b c d e f g F $.
+    $d a b c d e f g x $.  $d a b c d e f g y $.  $d a b c d e f g z $.
+    $d a b c d e f g ph $.
+
+    $( a bit of terminology - Pell field = Q[sqr d], Pell ring = Z[sqr d]
+       (algebraic integers in Pell field), Pell group = right branch of the
+       group of units in Pell ring - isomorphic to ZZ, Pell semigroup = Pell
+       group elements >= 1, resembles NN0 $)
+
+    $( Lemma for pellex .  Arithmetical core of pellexlem3, norm lower bound.
+       This begins Dirichlet's proof of the Pell equation solution existence;
+       the proof here follows theorem 62 of [vandenDries] p. 43.  (Contributed
+       by Stefan O'Rear, 14-Sep-2014.) $)
+    pellexlem1 $p |- ( ( ( D e. NN /\ A e. NN /\ B e. NN ) /\ -. ( sqrt ` D )
+        e. QQ ) -> ( ( A ^ 2 ) - ( D x. ( B ^ 2 ) ) ) =/= 0 ) $=
+      ( cn wcel w3a csqrt cfv cq c2 cexp co cc0 wne wceq nncn 3ad2ant2 3ad2ant3
+      cc wbr wn cmul cmin sqcld 3ad2ant1 mulcld subeq0ad cap nnap0 wb sqap0 syl
+      cdiv mpbird divmulap3d sqdivap fveq2d syl3anc cr redivclapd cle clt nnnn0
+      nnre nn0ge0d nngt0 divge0 syl22anc sqrtsqd eqtr3d nnq nnne0 eqeltrd fveq2
+      qdivcl eleq1d syl5ibcom sylbird sylbid necon3bd imp ) CDEZADEZBDEZFZCGHZI
+      EZUAAJKLZCBJKLZUBLZUCLZMNWEWGWKMWEWKMOWHWJOZWGWEWHWJWEAWCWBASEZWDAPQZUDZW
+      ECWIWBWCCSEWDCPUEZWEBWDWBBSEZWCBPRZUDZUFUGWEWLWHWIUMLZCOZWGWEWHCWIWOWPWSW
+      EWIMUHTZBMUHTZWDWBXCWCBUIRZWEWQXBXCUJWRBUKULUNUOWEWTGHZIEXAWGWEXEABUMLZIW
+      EXFJKLZGHZXEXFWEWMWQXCXHXEOWNWRXDWMWQXCFXGWTGABUPUQURWEXFWEABWCWBAUSEZWDA
+      VDQZWDWBBUSEZWCBVDRZXDUTWEXIMAVATZXKMBVBTZMXFVATXJWCWBXMWDWCAAVCVEQXLWDWB
+      XNWCBVFRABVGVHVIVJWEAIEZBIEZBMNZXFIEWCWBXOWDAVKQWDWBXPWCBVKRWDWBXQWCBVLRA
+      BVOURVMXAXEWFIWTCGVNVPVQVRVSVTWA $.
+  $}
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Basic number theory
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
