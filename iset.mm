@@ -12280,8 +12280,8 @@ $)
 
   $( Proof that ~ ax-i12 follows from ~ ax-bndl .  So that we can track which
      theorems rely on ~ ax-bndl , proofs should reference ~ ax12or rather than
-     this theorem.  (Contributed by Jim Kingdon, 17-Aug-2018.)  (New usage is
-     discouraged).  (Proof modification is discouraged.) $)
+     this theorem.  (Contributed by Jim Kingdon, 17-Aug-2018.)
+     (Proof modification is discouraged.)  (New usage is discouraged.) $)
   axi12 $p |- ( A. z z = x \/ ( A. z z = y \/
                  A. z ( x = y -> A. z x = y ) ) ) $=
     ( cv wceq wal wi wo ax-bndl sp orim2i ax-mp ) CDZADZECFZMBDZECFZNPEZRCFGCFZ
@@ -13357,21 +13357,22 @@ $)
       ( nfri 19.9h ) ABABCDE $.
   $}
 
-  $( One direction of theorem 19.6 of [Margaris] p. 89.  The converse holds
+  $( One direction of Theorem 19.6 of [Margaris] p. 89.  The converse holds
      given a decidability condition, as seen at ~ alexdc .  (Contributed by Jim
      Kingdon, 2-Jul-2018.) $)
   alexim $p |- ( A. x ph -> -. E. x -. ph ) $=
     ( wal wn wex wfal wi pm2.24 alimi exim syl nfv 19.9 imbitrdi dfnot sylibr )
     ABCZADZBEZFGSDQSFBEZFQRFGZBCSTGAUABAFHIRFBJKFBFBLMNSOP $.
 
-  $( One direction of Theorem 19.14 of [Margaris] p. 90.  In classical logic
-     the converse also holds.  (Contributed by Jim Kingdon, 15-Jul-2018.) $)
+  $( One direction of Theorem 19.14 of [Margaris] p. 90.  The converse holds in
+     classical but not in intuitionistic logic.  (Contributed by Jim Kingdon,
+     15-Jul-2018.) $)
   exnalim $p |- ( E. x -. ph -> -. A. x ph ) $=
     ( wal wn wex alexim con2i ) ABCADBEABFG $.
 
-  $( A transformation of quantifiers and logical connectives.  In classical
-     logic the converse also holds.  (Contributed by Jim Kingdon,
-     15-Jul-2018.) $)
+  $( A transformation of quantifiers and logical connectives.  The converse
+     holds in classical but not in intuitionistic logic.  (Contributed by Jim
+     Kingdon, 15-Jul-2018.) $)
   exanaliim $p |- ( E. x ( ph /\ -. ps ) -> -. A. x ( ph -> ps ) ) $=
     ( wn wa wex wi wal annimim eximi exnalim syl ) ABDEZCFABGZDZCFNCHDMOCABIJNC
     KL $.
@@ -13382,42 +13383,41 @@ $)
     ( wn wex wal exnalim alimi alnex sylib ) ADCEZBFACFZDZBFLBEDKMBACGHLBIJ $.
 
   $( The double negation of a universal quantification implies the universal
-     quantification of the double negation.  (Contributed by BJ,
-     24-Nov-2023.) $)
+     quantification of the double negation.  The converse holds in classical
+     but not in intuitionistic logic.  (Contributed by BJ, 24-Nov-2023.) $)
   nnal $p |- ( -. -. A. x ph -> A. x -. -. ph ) $=
     ( wal wn wex exnalim con3i alnex sylibr ) ABCDZDADZBEZDKDBCLJABFGKBHI $.
 
   ${
-    ax6blem.1 $e |- ( ph -> A. x ph ) $.
-    $( If ` x ` is not free in ` ph ` , it is not free in ` -. ph ` .  This
-       theorem doesn't use ~ ax6b compared to ~ hbnt .  (Contributed by GD,
-       27-Jan-2018.) $)
-    ax6blem $p |- ( -. ph -> A. x -. ph ) $=
+    hbn.1 $e |- ( ph -> A. x ph ) $.
+    $( If ` x ` is not free in ` ph ` , then it is not free in ` -. ph ` .
+       This theorem does not depend on ~ ax-ial , contrary to ~ hbn1 and
+       ~ hbnt .  (Contributed by NM, 5-Aug-1993.)  Remove dependency on
+       ~ ax-ial .  (Revised by GD, 27-Jan-2018.) $)
+    hbn $p |- ( -. ph -> A. x -. ph ) $=
       ( wn wex wal id exlimih con3i alnex sylibr ) ADZABEZDLBFMAAABCAGHIABJK $.
+    $( $j usage 'hbn' avoids 'ax-ial'; $)
   $}
 
-  $( Quantified Negation.  Axiom C5-2 of [Monk2] p. 113.
-
-     (Contributed by GD, 27-Jan-2018.) $)
-  ax6b $p |- ( -. A. x ph -> A. x -. A. x ph ) $=
-    ( wal ax-ial ax6blem ) ABCBABDE $.
-
-  $( ` x ` is not free in ` -. A. x ph ` .  (Contributed by NM, 5-Aug-1993.)
-     (Proof shortened by Wolf Lammen, 18-Aug-2014.) $)
+  $( Quantified Negation.  Axiom C5-2 of [Monk2] p. 113.  The setvar ` x ` is
+     not free in ` -. A. x ph ` .  (Contributed by NM, 5-Aug-1993.)  (Proof
+     shortened by Wolf Lammen, 18-Aug-2014.)  (Proof shortened by GD,
+     27-Jan-2018.) $)
   hbn1 $p |- ( -. A. x ph -> A. x -. A. x ph ) $=
-    ( ax6b ) ABC $.
+    ( wal ax-ial hbn ) ABCBABDE $.
 
-  $( Closed theorem version of bound-variable hypothesis builder ~ hbn .
-     (Contributed by NM, 5-Aug-1993.)  (Revised by NM, 2-Feb-2015.) $)
+  $( Closed form of bound-variable hypothesis builder ~ hbn .  (Contributed by
+     NM, 5-Aug-1993.)  (Revised by NM, 2-Feb-2015.) $)
   hbnt $p |- ( A. x ( ph -> A. x ph ) -> ( -. ph -> A. x -. ph ) ) $=
-    ( wn wal wi ax-4 con3i ax6b syl con3 al2imi syl5 ) ACZABDZCZBDZANEZBDMBDMOP
+    ( wn wal wi ax-4 con3i hbn1 syl con3 al2imi syl5 ) ACZABDZCZBDZANEZBDMBDMOP
     NAABFGABHIQOMBANJKL $.
 
   ${
-    hbn.1 $e |- ( ph -> A. x ph ) $.
-    $( If ` x ` is not free in ` ph ` , it is not free in ` -. ph ` .
-       (Contributed by NM, 5-Aug-1993.) $)
-    hbn $p |- ( -. ph -> A. x -. ph ) $=
+    hbnOLD.1 $e |- ( ph -> A. x ph ) $.
+    $( Obsolete proof of ~ hbn as of 2-May-2026.  (Contributed by NM,
+       5-Aug-1993.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    hbnOLD $p |- ( -. ph -> A. x -. ph ) $=
       ( wal wi wn hbnt mpg ) AABDEAFZIBDEBABGCH $.
   $}
 
