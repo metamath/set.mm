@@ -209119,6 +209119,87 @@ $)
       EUNVFVG $.
   $}
 
+  ${
+    $d A x $.  $d F x $.  $d G x $.
+    repiece.f $e |- ( ph -> F : ( -oo (,] 0 ) --> RR ) $.
+    repiece.g $e |- ( ph -> G : ( 0 [,) +oo ) --> RR ) $.
+    repiece.0 $e |- ( ph -> ( F ` 0 ) = ( G ` 0 ) ) $.
+    repiece.h $e |- H = ( x e. RR |-> ( ( ( F ` inf ( { x , 0 } , RR , < ) )
+      + ( G ` sup ( { x , 0 } , RR , < ) ) ) - ( F ` 0 ) ) ) $.
+    $( Lemma for ~ repiecele0 , ~ repiecege0 , and ~ repiecef .  The function
+       ` H ` is defined everywhere.  (Contributed by Jim Kingdon,
+       27-Apr-2026.) $)
+    repiecelem $p |- ( ( ph /\ A e. RR ) ->
+        ( ( ( F ` inf ( { A , 0 } , RR , < ) )
+        + ( G ` sup ( { A , 0 } , RR , < ) ) ) - ( F ` 0 ) ) e. RR ) $=
+      ( cr wcel cc0 clt cfv cmnf wbr 0re sylancl cpnf wa cpr cinf csup caddc co
+      wf adantr cle simpr mincl mnflt syl min2inf cxr w3a wb mnfxr elioc2 mp2an
+      cioc syl3anbrc ffvelcdmd maxcl maxle2 ltpnfd pnfxr elico2 readdcld mnflt0
+      cico 0xr ubioc1 mp3an a1i resubcld ) ACKLZUAZCMUBZKNUCZDOZVSKNUDZEOZUEUFM
+      DOVRWAWCVRPMVAUFZKVTDAWDKDUGVQGUHZVRVTKLZPVTNQZVTMUIQZVTWDLZVRVQMKLZWFAVQ
+      UJZRCMUKSZVRWFWGWLVTULUMVRVQWJWHWKRCMUNSPUOLZWJWIWFWGWHUPUQURRPMVTUSUTVBV
+      CVRMTVKUFZKWBEAWNKEUGVQHUHVRWBKLZMWBUIQZWBTNQZWBWNLZVRVQWJWOWKRCMVDSZVRVQ
+      WJWPWKRCMVESVRWBWSVFWJTUOLWRWOWPWQUPUQRVGMTWBVHUTVBVCVIVRWDKMDWEMWDLZVRWM
+      MUOLPMNQWTURVLVJPMVMVNVOVCVP $.
+
+    $( Piecewise definition on the reals agrees with the nonpositive part of
+       the definition.  See ~ repiecef for more on this construction.
+       (Contributed by Jim Kingdon, 27-Apr-2026.) $)
+    repiecele0 $p |- ( ( ph /\ A e. RR /\ A <_ 0 )
+        -> ( H ` A ) = ( F ` A ) ) $=
+      ( cr wcel cc0 wbr cfv clt caddc co cmin 0re cle w3a cpr cinf csup cv wceq
+      preq1 infeq1d fveq2d supeq1d oveq12d oveq1d repiecelem 3adant3 fvmptd3 wb
+      simp2 simp3 mingeb sylancl mpbid maxleb 3ad2ant1 eqtr4d cmnf wf mnflt syl
+      cioc mnfxr elioc2 mp2an syl3anbrc ffvelcdmd recnd cpnf cico maxle2 ltpnfd
+      cxr maxcl pnfxr elico2 eqeltrrd pncand 3eqtrd ) ACKLZCMUANZUBZCFOCMUCZKPU
+      DZDOZWKKPUEZEOZQRZMDOZSRZCDOZWQQRZWQSRWSWJBCBUFZMUCZKPUDZDOZXBKPUEZEOZQRZ
+      WQSRWRKFKJXACUGZXGWPWQSXHXDWMXFWOQXHXCWLDXHKXBWKPXACMUHZUIUJXHXEWNEXHKXBW
+      KPXIUKUJULUMAWHWIURZAWHWRKLWIABCDEFGHIJUNUOUPWJWPWTWQSWJWMWSWOWQQWJWLCDWJ
+      WIWLCUGZAWHWIUSZWJWHMKLZWIXKUQXJTCMUTVAVBUJWJWOMEOZWQWJWNMEWJWIWNMUGZXLWJ
+      WHXMWIXOUQXJTCMVCVAVBUJAWHWQXNUGWIIVDVEZULUMWJWSWQWJWSWJVFMVJRZKCDAWHXQKD
+      VGWIGVDWJWHVFCPNZWICXQLZXJWJWHXRXJCVHVIXLVFWALXMXSWHXRWIUBUQVKTVFMCVLVMVN
+      VOVPWJWQWJWOWQKXPWJMVQVRRZKWNEAWHXTKEVGWIHVDWJWNKLZMWNUANZWNVQPNZWNXTLZWJ
+      WHXMYAXJTCMWBVAZWJWHXMYBXJTCMVSVAWJWNYEVTXMVQWALYDYAYBYCUBUQTWCMVQWNWDVMV
+      NVOWEVPWFWG $.
+
+    $( Piecewise definition on the reals agrees with the nonnegative part of
+       the definition.  See ~ repiecef for more on this construction.
+       (Contributed by Jim Kingdon, 27-Apr-2026.) $)
+    repiecege0 $p |- ( ( ph /\ A e. RR /\ 0 <_ A )
+        -> ( H ` A ) = ( G ` A ) ) $=
+      ( cr wcel cc0 cfv clt caddc co cmin fveq2d cmnf cle wbr w3a cpr cinf csup
+      wceq preq1 infeq1d supeq1d oveq12d oveq1d simp2 repiecelem 3adant3 mincom
+      cv fvmptd3 simp3 wb 0re mingeb sylancr mpbid eqtr3id maxcom cioc 3ad2ant1
+      maxleb wf cxr mnfxr 0xr mnflt0 ubioc1 mp3an a1i ffvelcdmd recnd cpnf cico
+      ltpnfd pnfxr elico2 mp2an syl3anbrc pncan2d 3eqtrd ) ACKLZMCUAUBZUCZCFNCM
+      UDZKOUEZDNZWLKOUFZENZPQZMDNZRQZWRCENZPQZWRRQWTWKBCBUQZMUDZKOUEZDNZXCKOUFZ
+      ENZPQZWRRQWSKFKJXBCUGZXHWQWRRXIXEWNXGWPPXIXDWMDXIKXCWLOXBCMUHZUISXIXFWOEX
+      IKXCWLOXJUJSUKULAWIWJUMZAWIWSKLWJABCDEFGHIJUNUOURWKWQXAWRRWKWNWRWPWTPWKWM
+      MDWKWMMCUDZKOUEZMMCUPWKWJXMMUGZAWIWJUSZWKMKLZWIWJXNUTVAXKMCVBVCVDVESWKWOC
+      EWKWOXLKOUFZCMCVFWKWJXQCUGZXOWKXPWIWJXRUTVAXKMCVIVCVDVESUKULWKWRWTWKWRWKT
+      MVGQZKMDAWIXSKDVJWJGVHMXSLZWKTVKLMVKLTMOUBXTVLVMVNTMVOVPVQVRVSWKWTWKMVTWA
+      QZKCEAWIYAKEVJWJHVHWKWIWJCVTOUBZCYALZXKXOWKCXKWBXPVTVKLYCWIWJYBUCUTVAWCMV
+      TCWDWEWFVRVSWGWH $.
+
+    $d F x y $.  $d G y $.  $d ph y $.
+    $( Piecewise definition on the reals yields a function.  The function
+       agrees with ` F ` and ` G ` on their respective parts of the real line;
+       see ~ repiecele0 and ~ repiecege0 .  From an online post by James E
+       Hanson.  The construction was published in Mart&#xed;n H&#xf6;tzel
+       Escard&#xf3;, "Effective and sequential definition by cases on the reals
+       via infinite signed-digit numerals", Electronic Notes in Theoretical
+       Computer Science 10 (1998), page 2,
+       ~ https://martinescardo.github.io/papers/lexnew.pdf.  (Contributed by
+       Jim Kingdon, 27-Apr-2026.) $)
+    repiecef $p |- ( ph -> H : RR --> RR ) $=
+      ( vy cv cc0 cpr cr clt cinf cfv caddc co cmin csup wcel wral wf ralrimiva
+      repiecelem weq preq1 infeq1d fveq2d supeq1d oveq12d oveq1d eleq1d cbvralv
+      sylib fmpt ) ABKZLMZNOPZCQZUSNOUAZDQZRSZLCQZTSZNUBZBNUCZNNEUDAJKZLMZNOPZC
+      QZVJNOUAZDQZRSZVETSZNUBZJNUCVHAVQJNABVICDEFGHIUFUEVQVGJBNJBUGZVPVFNVRVOVD
+      VETVRVLVAVNVCRVRVKUTCVRNVJUSOVIURLUHZUIUJVRVMVBDVRNVJUSOVSUKUJULUMUNUOUPB
+      NNVFEIUQUP $.
+  $}
+
   $( Two ways of stating real number trichotomy.  (Contributed by Jim Kingdon,
      23-Aug-2023.) $)
   triap $p |- ( ( A e. RR /\ B e. RR ) -> ( ( A < B \/ A = B \/ B < A )
