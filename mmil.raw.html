@@ -18579,10 +18579,12 @@ of Transcendental Numbers</td>
 
   <tr>
     <td>38.  Arithmetic Mean/Geometric Mean</td>
-    <td>We have ~ amgm2 but assuming we want the version
-    for finite sets seen in set.mm, we can probably just
-    use ` sum_ ` ( ~ df-sumdc ) and ` prod_ ` ( ~ df-proddc )
-    notation rather than navigating constructive fields.
+    <td>We have ~ amgm2 but that's only for two values,
+    not a finite set as in set.mm's amgm .  To use a
+    group sum/product like that, we could use the ` gfsum `
+    ( ~ df-gfsum ) notation.  We could also make a version
+    using the ` sum_ ` ( ~ df-sumdc ) and ` prod_ `
+    ( ~ df-proddc ) notations.
     In set.mm the numbers being added/multiplied are
     nonnegative reals and we probably have to restrict
     to positive reals because the set.mm proof assumes
