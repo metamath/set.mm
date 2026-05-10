@@ -9041,6 +9041,7 @@
 "itvndx" is used by "slotsinbpsd".
 "itvndx" is used by "trkgstr".
 "iunconnlem2" is used by "iunconnALT".
+"iunopeqopOLD" is used by "funopsnOLD".
 "jaoded" is used by "suctrALT3".
 "joincomALT" is used by "joincom".
 "jplem1" is used by "jplem2".
@@ -16436,6 +16437,7 @@ New usage of "fundcmpsurinjALT" is discouraged (0 uses).
 New usage of "funop" is discouraged (2 uses).
 New usage of "funopg" is discouraged (0 uses).
 New usage of "funopsn" is discouraged (2 uses).
+New usage of "funopsnOLD" is discouraged (0 uses).
 New usage of "fvimacnvALT" is discouraged (0 uses).
 New usage of "fvprcALT" is discouraged (0 uses).
 New usage of "gen11" is discouraged (19 uses).
@@ -17143,6 +17145,7 @@ New usage of "itvndx" is discouraged (4 uses).
 New usage of "iunconnALT" is discouraged (0 uses).
 New usage of "iunconnlem2" is discouraged (1 uses).
 New usage of "iuneq12dOLD" is discouraged (0 uses).
+New usage of "iunopeqopOLD" is discouraged (1 uses).
 New usage of "iunssOLD" is discouraged (0 uses).
 New usage of "iunssfOLD" is discouraged (0 uses).
 New usage of "ivthALT" is discouraged (0 uses).
@@ -20124,6 +20127,7 @@ Proof modification of "fsetprcnexALT" is discouraged (190 steps).
 Proof modification of "fuco11bALT" is discouraged (199 steps).
 Proof modification of "funcrngcsetcALT" is discouraged (765 steps).
 Proof modification of "fundcmpsurinjALT" is discouraged (221 steps).
+Proof modification of "funopsnOLD" is discouraged (355 steps).
 Proof modification of "fvilbdRP" is discouraged (27 steps).
 Proof modification of "fvimacnvALT" is discouraged (102 steps).
 Proof modification of "fvprcALT" is discouraged (26 steps).
@@ -20237,6 +20241,7 @@ Proof modification of "itgeq1fOLD" is discouraged (152 steps).
 Proof modification of "iunconnALT" is discouraged (56 steps).
 Proof modification of "iunconnlem2" is discouraged (580 steps).
 Proof modification of "iuneq12dOLD" is discouraged (37 steps).
+Proof modification of "iunopeqopOLD" is discouraged (236 steps).
 Proof modification of "iunssOLD" is discouraged (84 steps).
 Proof modification of "iunssfOLD" is discouraged (89 steps).
 Proof modification of "ivthALT" is discouraged (1080 steps).
