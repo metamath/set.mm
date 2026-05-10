@@ -31812,7 +31812,27 @@ $)
       ( cv wcel wa cab wn cun wo crab cif unab df-rab uneq12i df-if 3eqtr4ri )
       BEZCFAGZBHZSDFAIZGZBHZJTUCKBHABCLZUBBDLZJACDMTUCBNUEUAUFUDABCOUBBDOPABCDQ
       R $.
+  $}
 
+  ${
+    $d A x $.  $d ph x $.
+    $( Expression of a conditional class as a class abstraction when the False
+       alternative is the empty class: in that case, the conditional class is
+       the extension, in the True alternative, of the condition.  (Contributed
+       by BJ, 16-Aug-2024.) $)
+    if0ab $p |- if ( ph , A , (/) ) = { x e. A | ph } $=
+      ( c0 cif crab wn cun dfif6 rab0 uneq2i un0 3eqtri ) ACDEABCFZAGZBDFZHNDHN
+      ABCDIPDNOBJKNLM $.
+
+    $( A conditional class with the False alternative being sent to the empty
+       class is included in the class corresponding to the True alternative.
+       (Contributed by BJ, 5-May-2026.) $)
+    if0ss $p |- if ( ph , A , (/) ) C_ A $=
+      ( vx c0 cif if0ab ssrab3 ) ACBABDEACBFG $.
+  $}
+
+  ${
+    $d x ph $.  $d x A $.  $d x B $.  $d x C $.
     $( Equality theorem for conditional operator.  (Contributed by NM,
        1-Sep-2004.)  (Revised by Mario Carneiro, 8-Sep-2013.) $)
     ifeq1 $p |- ( A = B -> if ( ph , A , C ) = if ( ph , B , C ) ) $=
@@ -37569,6 +37589,14 @@ $)
     elpwi2 $p |- A e. ~P B $=
       ( cpw wcel wss elexi elpw2 mpbir ) ABFGABHEABBCDIJK $.
   $}
+
+  $( A conditional class with the False alternative being sent to the empty
+     class is an element of the powerset of the class corresponding to the True
+     alternative when that class is a set.  This statement requires fewer
+     axioms than the general case ~ ifelpwung .  (Contributed by BJ,
+     5-May-2026.) $)
+  if0elpw $p |- ( A e. V -> if ( ph , A , (/) ) e. ~P A ) $=
+    ( wcel c0 cif cpw wss if0ss elpw2g mpbiri ) BCDABEFZBGDLBHABILBCJK $.
 
   ${
     $d A x y $.  $d V x y $.
@@ -74973,10 +75001,9 @@ $)
 
      As proved in ~ if0ab , the associated element of ` ~P 1o ` is the
      extension, in ` ~P 1o ` , of the formula ` ph ` .  (Contributed by BJ,
-     15-Aug-2024.) $)
+     15-Aug-2024.)  (Proof shortened by BJ, 5-May-2026.) $)
   fmelpw1o $p |- if ( ph , 1o , (/) ) e. ~P 1o $=
-    ( c1o c0 cif cun cpw 1oex 0ex ifelpwun un0 pweqi eleqtri ) ABCDBCEZFBFABCGH
-    IMBBJKL $.
+    ( c1o cvv wcel c0 cif cpw 1oex if0elpw ax-mp ) BCDABEFBGDHABCIJ $.
 
 
 $(
@@ -205745,23 +205772,6 @@ $)
   $}
 
   ${
-    $d A x $.  $d ph x $.
-    $( Expression of a conditional class as a class abstraction when the False
-       alternative is the empty class: in that case, the conditional class is
-       the extension, in the True alternative, of the condition.
-
-       Remark: a consequence which could be formalized is the inclusion
-       ` |- if ( ph , A , (/) ) C_ A ` and therefore, using ~ elpwg ,
-       ` |- ( A e. V -> if ( ph , A , (/) ) e. ~P A ) ` , from which ~ fmelpw1o
-       could be derived, yielding an alternative proof.  (Contributed by BJ,
-       16-Aug-2024.) $)
-    if0ab $p |- if ( ph , A , (/) ) = { x e. A | ph } $=
-      ( cv wcel wa c0 wn wo cab cif crab noel intnanr biorfi bicomi abbii df-if
-      df-rab 3eqtr4i ) BDZCEAFZUAGEZAHZFZIZBJUBBJACGKABCLUFUBBUBUFUEUBUCUDUAMNO
-      PQABCGRABCST $.
-  $}
-
-  ${
     $d x ph $.  $d x X $.  $d A x $.  $d F x $.
     bj-charfun.1 $e |- ( ph -> F = ( x e. X |-> if ( x e. A , 1o , (/) ) ) ) $.
     $( Properties of the characteristic function on the class ` X ` of the
@@ -207043,16 +207053,18 @@ $)
 
   ${
     ax-bj-d0class.bd $e |- Bdd ph $.
-    $( Axiom for ` Delta0 ` -classical logic.  (Contributed by BJ,
-       2-Jan-2020.) $)
+    $( Axiom for ` Delta0 ` -classical logic.  (Contributed by BJ, 2-Jan-2020.)
+       New usage is discouraged since this statement is not intuitionnistic.
+       (New usage is discouraged.) $)
     ax-bj-d0cl $a |- DECID ph $.
   $}
 
   ${
     $d a x ph $.
     $( ` Delta0 ` -classical logic and separation implies classical logic.
-       (Contributed by BJ, 2-Jan-2020.)
-       (Proof modification is discouraged.) $)
+       (Contributed by BJ, 2-Jan-2020.)  (Proof modification is discouraged.)
+       New usage is discouraged since this statement is not intuitionnistic.
+       (New usage is discouraged.) $)
     bj-d0clsepcl $p |- DECID ph $=
       ( va vx wdc wex c0 cv wcel wb csn wel wal 0ex bj-snex zfauscl wceq anbi1d
       wa eleq1 eximii bibi12d spcv snid biantrur bicomi bibi2i exbii ax-bj-d0cl
@@ -207122,8 +207134,9 @@ $)
 
   ${
     $d x A $.  $d x B $.
-    $( If ` A ` is inductive and ` B ` is "inductive in ` A ` ", then
-       ` ( A i^i B ) ` is inductive.  (Contributed by BJ, 25-Oct-2020.) $)
+    $( If ` A ` is inductive and ` B ` is "inductive in ` A ` " (a condition
+       weaker than "inductive"), then ` ( A i^i B ) ` is inductive.
+       (Contributed by BJ, 25-Oct-2020.) $)
     bj-indind $p |- ( ( Ind A /\ ( (/) e. B /\
                 A. x e. A ( x e. B -> suc x e. B ) ) ) -> Ind ( A i^i B ) ) $=
       ( wind c0 wcel cv csuc wi wral wa cin df-bj-ind id biimpri wal syl df-ral
@@ -207497,7 +207510,7 @@ $)
   ${
     $d a x y A $.
     $( The set ` _om ` is transitive.  A natural number is included in
-       ` _om ` .  Constructive proof of ~ elnn .
+       ` _om ` .  Constructive proof of ~ elomssom .
 
        The idea is to use bounded induction with the formula ` x C_ _om ` .
        This formula, in a logic with terms, is bounded.  So in our logic
