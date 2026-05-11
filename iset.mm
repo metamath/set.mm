@@ -169472,6 +169472,34 @@ $)
       OZPZEFCQZGRZFGRZUPUQUTVASUOABCDEFGHIJKUAUGURUTVAEGCQZGRZURUOEAOVCUOUPUQUB
       URDAELTMTZCQGRVDGRSMAUCLADLMABCDGHIJKUDUEUOUPUQUFUHABCEGIJKUIUJVAUSVBGFGE
       CUKULUMUN $.
+
+    ${
+      $d ph x y $.  $d E x $.  $d I x y $.  $d V x $.  $d Y x $.  $d .x. x y $.
+      $d .0. x y $.  $d B u $.  $d R u $.  $d X u $.
+      rrgsupp.i $e |- ( ph -> I e. V ) $.
+      rrgsupp.r $e |- ( ph -> R e. Ring ) $.
+      rrgsupp.x $e |- ( ph -> X e. E ) $.
+      rrgsupp.y $e |- ( ph -> Y : I --> B ) $.
+      $( Left multiplication by a left regular element does not change the
+         support set of a vector.  (Contributed by Stefan O'Rear, 28-Mar-2015.)
+         (Revised by AV, 20-Jul-2019.) $)
+      rrgsupp $p |- ( ph ->
+                 ( ( ( I X. { X } ) oF .x. Y ) supp .0. ) = ( Y supp .0. ) ) $=
+        ( vy wcel vx vu cv csn cxp cof co cfv wne crab csupp wa cmpt ffvelcdmda
+        wceq adantr fconstmpt a1i feqmptd offval2 fveq1d fveq2 oveq2d simpr crg
+        eqid wi isrrg sylib simpld ringcl syl3anc fvmptd3 eqtrd neeq1d rabbidva
+        wb rrgeq0 necon3bid wfn ralrimiva fnmpt fneq1d mpbird ring0cl suppvalfn
+        wral syl ffnd 3eqtr4d ) AUAUCZFHUDUEZIDUFUGZUHZJUIZUAFUJZWKIUHZJUIZUAFU
+        JZWMJUKUGZIJUKUGZAWPHWQDUGZJUIZUAFUJWSAWOXCUAFAWKFTZULZWNXBJXEWNWKSFHSU
+        CZIUHZDUGZUMZUHXBXEWKWMXIAWMXIUOXDASFHXGDWLIGEBOAHETZXFFTZQUPAFBXFIRUNZ
+        WLSFHUMUOASFHUQURASFBIRUSUTZUPVAXESWKXHXBFXIBXIVFZXFWKUOXGWQHDXFWKIVBVC
+        AXDVDXECVETZHBTZWQBTZXBBTAXOXDPUPZAXPXDAXPHUBUCZDUGJUOXSJUOVGUBBWGZAXJX
+        PXTULQUBBCDEHJKLMNVHVIVJZUPAFBWKIRUNZBCDHWQLMVKVLVMVNVOVPAXCWRUAFXEXBJW
+        QJXEXOXJXQXBJUOWQJUOVQXRAXJXDQUPYBBCDEHWQJKLMNVRVLVSVPVNAWMFVTZFGTZJBTZ
+        WTWPUOAYCXIFVTZAXHBTZSFWGYFAYGSFAXKULXOXPXGBTYGAXOXKPUPAXPXKYAUPXLBCDHX
+        GLMVKVLWASFXHXIBXNWBWHAFWMXIXMWCWDOAXOYEPBCJLNWEWHZUAWMGBFJWFVLAIFVTYDY
+        EXAWSUOAFBIRWIOYHUAIGBFJWFVLWJ $.
+    $}
   $}
 
   ${
