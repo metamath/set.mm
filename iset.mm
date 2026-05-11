@@ -98194,6 +98194,14 @@ $)
       ZEFBPEFACJBAPBDKACKZGALQMNO $.
   $}
 
+  $( Two ways to write the support of a function into ` NN0 ` .  (Contributed
+     by Mario Carneiro, 29-Dec-2014.)  (Revised by AV, 7-Jul-2019.) $)
+  fcdmnn0supp $p |- ( ( I e. V /\ F : I --> NN0 )
+                      -> ( F supp 0 ) = ( `' F " NN ) ) $=
+    ( wcel cn0 wf wa cc0 csupp co ccnv csn cdif cima cn wceq cvv c0ex fsuppeq
+    wi mpan2 imp dfn2 imaeq2i eqtr4di ) BCDZBEAFZGAHIJZAKZEHLMZNZUIONUFUGUHUKPZ
+    UFHQDUGULTREABCQHSUAUBOUJUIUCUDUE $.
+
   $( Two ways to write the support of a function on ` NN0 ` .  (Contributed by
      Mario Carneiro, 29-Dec-2014.) $)
   nn0supp $p |- ( F : I --> NN0 ->
