@@ -4760,6 +4760,9 @@
 "df-ch0" is used by "spansn0".
 "df-chj" is used by "sshjval".
 "df-chsup" is used by "hsupval".
+"df-cleq" is used by "dfcleq.equiv".
+"df-cleq" is used by "dfcleq.reflex".
+"df-cleq" is used by "wl-df.cleq".
 "df-cm" is used by "cmbr".
 "df-cnfld" is used by "cffldtocusgr".
 "df-cnfld" is used by "cnfldbas".
@@ -5100,6 +5103,7 @@
 "dfadj2" is used by "cnvadj".
 "dfadj2" is used by "dmadjss".
 "dfadj2" is used by "funadj".
+"dfcleq.reflex" is used by "eqid".
 "dfcnqs" is used by "axaddass".
 "dfcnqs" is used by "axdistr".
 "dfcnqs" is used by "axmulass".
@@ -15631,6 +15635,7 @@ New usage of "df-ch" is discouraged (1 uses).
 New usage of "df-ch0" is discouraged (8 uses).
 New usage of "df-chj" is discouraged (1 uses).
 New usage of "df-chsup" is discouraged (1 uses).
+New usage of "df-cleq" is discouraged (3 uses).
 New usage of "df-cm" is discouraged (1 uses).
 New usage of "df-cnfld" is discouraged (13 uses).
 New usage of "df-cnfn" is discouraged (2 uses).
@@ -15769,6 +15774,7 @@ New usage of "dfbi1ALT" is discouraged (0 uses).
 New usage of "dfbi1ALTa" is discouraged (0 uses).
 New usage of "dfbi1ALTb" is discouraged (0 uses).
 New usage of "dfch2" is discouraged (0 uses).
+New usage of "dfcleq.reflex" is discouraged (1 uses).
 New usage of "dfcnqs" is discouraged (4 uses).
 New usage of "dfdif3OLD" is discouraged (0 uses).
 New usage of "dfeu" is discouraged (0 uses).
@@ -16301,6 +16307,7 @@ New usage of "eq0rdvALT" is discouraged (0 uses).
 New usage of "eqeq1dALT" is discouraged (0 uses).
 New usage of "eqeqan12dALT" is discouraged (0 uses).
 New usage of "eqid1" is discouraged (0 uses).
+New usage of "eqidOLD" is discouraged (0 uses).
 New usage of "eqopab2b" is discouraged (1 uses).
 New usage of "eqoprab2b" is discouraged (1 uses).
 New usage of "eqresr" is discouraged (4 uses).
@@ -19900,6 +19907,7 @@ Proof modification of "eq0rdvALT" is discouraged (25 steps).
 Proof modification of "eqeq1dALT" is discouraged (62 steps).
 Proof modification of "eqeqan12dALT" is discouraged (23 steps).
 Proof modification of "eqid1" is discouraged (9 steps).
+Proof modification of "eqidOLD" is discouraged (9 steps).
 Proof modification of "eqsbc2VD" is discouraged (131 steps).
 Proof modification of "eqsndOLD" is discouraged (43 steps).
 Proof modification of "equcomi1" is discouraged (16 steps).
