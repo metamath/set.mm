@@ -5709,6 +5709,11 @@ $)
   con2b $p |- ( ( ph -> -. ps ) <-> ( ps -> -. ph ) ) $=
     ( wn wi con2 impbii ) ABCDBACDABEBAEF $.
 
+  $( A conjunction with a negated conjunction.  (Contributed by AV,
+     8-Mar-2022.)  (Proof shortened by Wolf Lammen, 1-Apr-2022.) $)
+  annotanannot $p |- ( ( ph /\ -. ( ph /\ ps ) ) <-> ( ph /\ -. ps ) ) $=
+    ( wa wn ibar bicomd notbid pm5.32i ) AABCZDBDAIBABIABEFGH $.
+
   ${
     mtbi.1 $e |- -. ph $.
     mtbi.2 $e |- ( ph <-> ps ) $.
@@ -20289,6 +20294,21 @@ $)
   $}
 
   ${
+    $d ph y $.  $d ps y $.  $d x y $.
+    $( Equal class abstractions require equivalent formulas, and conversely.
+       (Contributed by NM, 25-Nov-2013.)  (Revised by Mario Carneiro,
+       11-Aug-2016.)  Remove dependency on ~ ax-8 and ~ df-clel (by avoiding
+       use of ~ cleqh ).  (Revised by BJ, 23-Jun-2019.)  Definitial form.
+       (Revised by Wolf Lammen, 23-Feb-2025.) $)
+    abbib $p |- ( { x | ph } = { x | ps } <-> A. x ( ph <-> ps ) ) $=
+      ( vy cab wceq cv wcel wal dfcleq nfsab1 nfbi nfv weq wsb df-clab sbequ12r
+      wb bitrid bibi12d cbvalv1 bitri ) ACEZBCEZFDGZUCHZUEUDHZRZDIABRZCIDUCUDJU
+      HUIDCUFUGCACDKBCDKLUIDMDCNZUFAUGBUFACDOUJAADCPADCQSUGBCDOUJBBDCPBDCQSTUAU
+      B $.
+    $( $j usage 'abbib' avoids 'ax-13' 'df-clel' ; $)
+  $}
+
+  ${
     $d x ph $.
     abbidv.1 $e |- ( ph -> ( ps <-> ch ) ) $.
     $( Equivalent wff's yield equal class abstractions (deduction form).
@@ -29480,6 +29500,17 @@ $)
   $}
 
   ${
+    $d A x $.  $d B x $.  $d ph x $.
+    rabssrabd.1 $e |- ( ph -> A C_ B ) $.
+    rabssrabd.2 $e |- ( ( ph /\ ps /\ x e. A ) -> ch ) $.
+    $( Subclass of a restricted class abstraction.  (Contributed by AV,
+       4-Jun-2022.) $)
+    rabssrabd $p |- ( ph -> { x e. A | ps } C_ { x e. B | ch } ) $=
+      ( crab cv wcel wa w3a 3anan32 sylbir ex ss2rabdv wss rabss2 syl sstrd ) A
+      BDEICDEIZCDFIZABCDEADJEKZLZBCUEBLABUDMCABUDNHOPQAEFRUBUCRGCDEFSTUA $.
+  $}
+
+  ${
     $d V x $.
     $( If the restricting class of a restricted class abstraction is a subset
        of this restricted class abstraction, it is equal to this restricted
@@ -33446,6 +33477,12 @@ $)
       <-> E. x e. A ( x =/= B /\ ph ) ) $=
     ( cv wne wa csn cdif wcel eldifsn anbi1i anass bitri rexbii2 ) ABEZDFZAGZBC
     DHIZCPSJZAGPCJZQGZAGUARGTUBAPCDKLUAQAMNO $.
+
+  $( A set is an element of the universal class excluding a singleton iff it is
+     not the singleton element.  (Contributed by AV, 7-Apr-2019.) $)
+  eldifvsn $p |- ( A e. V -> ( A e. ( _V \ { B } ) <-> A =/= B ) ) $=
+    ( wcel cvv csn cdif wne wa eldifsn elex biantrurd bitr4id ) ACDZAEBFGDAEDZA
+    BHZIPAEBJNOPACKLM $.
 
   ${
     $d x A $.  $d x B $.
@@ -45970,6 +46007,16 @@ $)
   $}
 
   ${
+    $d B x $.
+    $( A condition where the converse of ~ xpex holds as well.  Corollary
+       6.9(2) in [TakeutiZaring] p. 26.  (Contributed by Andrew Salmon,
+       13-Nov-2011.) $)
+    xpexcnvm $p |- ( ( E. x x e. B /\ ( A X. B ) e. _V ) -> A e. _V ) $=
+      ( cv wcel wex cxp cvv cdm dmexg dmxpm eleq1d imbitrid imp ) ADCEAFZBCGZHE
+      ZBHEZQPIZHEORPHJOSBHABCKLMN $.
+  $}
+
+  ${
     $d x y A $.
     $( Image under the identity relation.  Theorem 3.16(viii) of [Monk1] p. 38.
        (Contributed by NM, 30-Apr-1998.) $)
@@ -49722,6 +49769,15 @@ $)
     AIZEJBKZGZUKUFBCDLABELUOURUKUOURUHUJULURUHMUNULUPUQUHBADENOPUNUJULUIUMKUNUJ
     DEQUIUMCRSTUAUBUCACUGLUD $.
 
+  ${
+    fcod.1 $e |- ( ph -> F : B --> C ) $.
+    fcod.2 $e |- ( ph -> G : A --> B ) $.
+    $( Composition of two mappings.  (Contributed by Glauco Siliprandi,
+       26-Jun-2021.) $)
+    fcod $p |- ( ph -> ( F o. G ) : A --> C ) $=
+      ( wf ccom fco syl2anc ) ACDEIBCFIBDEFJIGHBCDEFKL $.
+  $}
+
   $( Functionality of a composition with weakened out of domain condition on
      the first argument.  (Contributed by Stefan O'Rear, 11-Mar-2015.) $)
   fco2 $p |- ( ( ( F |` B ) : B --> C /\ G : A --> B ) ->
@@ -52241,19 +52297,6 @@ $)
       crab funfni biantrurd bitr4id rabbidva eqtrd ) DBEZDFGCHIZJAKZDLZUFMZABSU
       HCNZABSABUFDOUEUIUJABUEUGBMPZUIUHGMZUJPUJUHGCQUKULUJULBUGDUGDRTUAUBUCUD
       $.
-  $}
-
-  ${
-    $d F x $.  $d A x $.
-    $( Existential quantification restricted to a support.  (Contributed by
-       Stefan O'Rear, 23-Mar-2015.) $)
-    rexsupp $p |- ( F Fn A -> ( E. x e. ( `' F " ( _V \ { Z } ) ) ph <->
-          E. x e. A ( ( F ` x ) =/= Z /\ ph ) ) ) $=
-      ( wfn cfv wne ccnv cvv csn cdif cima wcel elpreima eldifsn funfvex funfni
-      cv wa biantrurd bitr4id pm5.32da bitrd anbi1d anass bitrdi rexbidv2 ) DCF
-      ZABSZDGZEHZATZBDIJEKLZMZCUIUJUONZATUJCNZULTZATUQUMTUIUPURAUIUPUQUKUNNZTUR
-      CUJUNDOUIUQUSULUIUQTZUSUKJNZULTULUKJEPUTVAULVACUJDUJDQRUAUBUCUDUEUQULAUFU
-      GUH $.
   $}
 
   ${
@@ -57830,23 +57873,6 @@ $)
   $}
 
   ${
-    $d ph x $.  $d Y x $.  $d Z x $.
-    suppssfv.a $e |- ( ph -> ( `' ( x e. D |-> A ) " ( _V \ { Y } ) ) C_ L ) $.
-    suppssfv.f $e |- ( ph -> ( F ` Y ) = Z ) $.
-    suppssfv.v $e |- ( ( ph /\ x e. D ) -> A e. V ) $.
-    $( Formula building theorem for support restriction, on a function which
-       preserves zero.  (Contributed by Stefan O'Rear, 9-Mar-2015.) $)
-    suppssfv $p |- ( ph -> ( `' ( x e. D |-> ( F ` A ) ) "
-            ( _V \ { Z } ) ) C_ L ) $=
-      ( cfv cmpt ccnv cvv csn cdif wcel wceq cima crab wne cv eldifsni elex syl
-      wa adantr wi fveq2 eqeq1d syl5ibrcom necon3d imp eldifsn sylanbrc ex syl5
-      ss2rabdv eqid mptpreima 3sstr4g sstrd ) ABDCEMZNZOPIQRZUAZBDCNZOPHQRZUAZF
-      AVEVGSZBDUBCVJSZBDUBVHVKAVLVMBDVLVEIUCZABUDDSZUHZVMVEPIUEVPVNVMVPVNUHCPSZ
-      CHUCZVMVPVQVNVPCGSVQLCGUFUGUIVPVNVRAVNVRUJVOACHVEIAVEITCHTZHEMZITKVSVEVTI
-      CHEUKULUMUNUIUOCPHUPUQURUSUTBDVEVGVFVFVAVBBDCVJVIVIVAVBVCJVD $.
-  $}
-
-  ${
     $d ph v $.  $d ph x $.  $d B v $.  $d O v $.  $d R v $.  $d Y v $.
     $d Y x $.  $d Z v $.  $d Z x $.
     suppssov1.s $e |- ( ph ->
@@ -60136,6 +60162,540 @@ $)
       NHUOUPGHURUQUSUTWEWISWFWJHWEWIVTVAUSVBVNVTVJMWDWHVCGHVDLVTHVJVEVKVFVGKVTV
       RVHVKCJKDEVLVIVM $.
   $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  The support of functions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  In this section, the support of functions is defined and corresponding
+  theorems are provided.  Since basic properties (see ~ suppval ) are based on
+  the Axiom of Union (usage of ~ dmexg ), these definition and theorems cannot
+  be provided earlier.  Until April 2019, the support of a function was
+  represented by the expression ` ( ``' R " ( _V \ { Z } ) ) ` (see
+  ~ suppimacnvfn ).  The theorems which are based on this representation and
+  which are provided in previous sections could be moved into this section to
+  have all related theorems in one section, although they do not depend on the
+  Axiom of Union.  This was possible because they are not used before.  The
+  current theorems differ from the original ones by requiring that the classes
+  representing the "function" (or its "domain") and the "zero element" are
+  sets.  Actually, this does not cause any problem (until now).
+
+$)
+
+  $c supp $.  $( Class for the support of a function. $)
+
+  $( Extend class definition to include the support of functions. $)
+  csupp $a class supp $.
+
+  ${
+    $d i x z $.
+    $( Define the support of a function against a "zero" value.  The support of
+       a function is the subset of its domain which is mapped to a value which
+       is not equal to a designed value called the zero value.  Note that this
+       definition uses not equal rather than being in terms of an apartness
+       relation ( ~ df-ap or any other apartness relation), and thus is
+       sometimes called "support" rather than "strong support".  It is
+       therefore probably most useful when the function has a codomain which
+       has decidable equality and contains the zero value.  (Contributed by AV,
+       31-Mar-2019.)  (Revised by AV, 6-Apr-2019.) $)
+    df-supp $a |- supp = ( x e. _V , z e. _V
+                           |-> { i e. dom x | ( x " { i } ) =/= { z } } ) $.
+  $}
+
+  ${
+    $d V x z $.  $d W x z $.  $d X i x z $.  $d Z i x z $.
+    $( The value of the operation constructing the support of a function.
+       (Contributed by AV, 31-Mar-2019.)  (Revised by AV, 6-Apr-2019.) $)
+    suppval $p |- ( ( X e. V /\ Z e. W )
+                -> ( X supp Z ) = { i e. dom X | ( X " { i } ) =/= { Z } } ) $=
+      ( vx vz wcel wa cvv cv csn cima wne cdm crab csupp wceq adantr adantl a1i
+      cmpo df-supp dmeq imaeq1 sneq neeq12d rabeqbidv elex dmexg rabexg ovmpod
+      syl ) DBHZECHZIZFGDEJJFKZAKLZMZGKZLZNZAUQOZPZDURMZELZNZADOZPZQJQFGJJVDUBR
+      UPFGAUCUAUQDRZUTERZIZVDVIRUPVLVBVGAVCVHVJVCVHRVKUQDUDSVLUSVEVAVFVJUSVERVK
+      UQDURUESVKVAVFRVJUTEUFTUGUHTUNDJHUODBUISUOEJHUNECUITUPVHJHZVIJHUNVMUODBUJ
+      SVGAVHJUKUMUL $.
+  $}
+
+  ${
+    $d Z i $.
+    $( The support of the empty set is the empty set.  (Contributed by AV,
+       12-Apr-2019.) $)
+    supp0 $p |- ( Z e. W -> ( (/) supp Z ) = (/) ) $=
+      ( vi wcel c0 csupp co csn cima wne cdm crab cvv wceq 0ex suppval mpan dm0
+      cv rabeq mp1i rab0 a1i 3eqtrd ) BADZEBFGZECSHIBHJZCEKZLZUGCELZEEMDUEUFUIN
+      OCMAEBPQUHENUIUJNUERUGCUHETUAUJENUEUGCUBUCUD $.
+  $}
+
+  ${
+    $d V i $.  $d W i $.  $d X i $.  $d Z i $.
+    $( The value of the operation constructing the support of a function.
+       (Contributed by AV, 6-Apr-2019.) $)
+    suppval1 $p |- ( ( Fun X /\ X e. V /\ Z e. W )
+                    -> ( X supp Z ) = { i e. dom X | ( X ` i ) =/= Z } ) $=
+      ( wfun wcel w3a csupp co cv csn cima wne cdm crab cfv wceq suppval cvv wa
+      3adant1 wfn funfn biimpi 3ad2ant1 fnsnfv sylan eqcomd neeq1d wb simp2 vex
+      fvexg sylancl sneqbg syl adantr necon3bid bitrd rabbidva eqtrd ) DFZDBGZE
+      CGZHZDEIJZDAKZLMZELZNZADOZPZVHDQZENZAVLPVDVEVGVMRVCABCDESUBVFVKVOAVLVFVHV
+      LGZUAZVKVNLZVJNVOVQVIVRVJVQVRVIVFDVLUCZVPVRVIRVCVDVSVEVCVSDUDUEUFVLVHDUGU
+      HUIUJVQVRVJVNEVFVRVJRVNERUKZVPVFVNTGZVTVFVDVHTGWAVCVDVEULAUMVHDBTUNUOVNET
+      UPUQURUSUTVAVB $.
+
+    $d F i $.
+    $( The value of the operation constructing the support of a function with a
+       given domain.  This version of ~ suppvalfn assumes ` F ` is a set rather
+       than its domain ` X ` , avoiding ~ ax-coll .  (Contributed by SN,
+       5-Aug-2024.) $)
+    suppvalfng $p |- ( ( F Fn X /\ F e. V /\ Z e. W )
+                    -> ( F supp Z ) = { i e. X | ( F ` i ) =/= Z } ) $=
+      ( wfn wcel w3a csupp co cv cfv wne cdm crab wfun wceq fnfun suppval1 fndm
+      syl3an1 3ad2ant1 rabeqdv eqtrd ) BEGZBCHZFDHZIZBFJKZALBMFNZABOZPZUKAEPUFB
+      QUGUHUJUMREBSACDBFTUBUIUKAULEUFUGULERUHEBUAUCUDUE $.
+    $( $j usage 'suppvalfng' avoids 'ax-coll'; $)
+
+    $( The value of the operation constructing the support of a function with a
+       given domain.  (Contributed by Stefan O'Rear, 1-Feb-2015.)  (Revised by
+       AV, 22-Apr-2019.) $)
+    suppvalfn $p |- ( ( F Fn X /\ X e. V /\ Z e. W )
+                    -> ( F supp Z ) = { i e. X | ( F ` i ) =/= Z } ) $=
+      ( wfn wcel w3a csupp co cv cfv wne cdm crab wfun cvv wceq 3ad2ant1 fnfun
+      fnex 3adant3 simp3 suppval1 syl3anc fndm rabeqdv eqtrd ) BEGZECHZFDHZIZBF
+      JKZALBMFNZABOZPZUOAEPUMBQZBRHZULUNUQSUJUKURULEBUATUJUKUSULECBUBUCUJUKULUD
+      ARDBFUEUFUMUOAUPEUJUKUPESULEBUGTUHUI $.
+
+    $d S i $.
+    $( An element of the support of a function with a given domain.  This
+       version of ~ elsuppfn assumes ` F ` is a set rather than its domain
+       ` X ` , avoiding ~ ax-coll .  (Contributed by SN, 5-Aug-2024.) $)
+    elsuppfng $p |- ( ( F Fn X /\ F e. V /\ Z e. W ) -> ( S e. ( F supp Z )
+                               <-> ( S e. X /\ ( F ` S ) =/= Z ) ) ) $=
+      ( vi wfn wcel w3a csupp co cv cfv wne crab wa suppvalfng eleq2d wceq
+      fveq2 neeq1d elrab bitrdi ) BEHBCIFDIJZABFKLZIAGMZBNZFOZGEPZIAEIABNZFOZQU
+      EUFUJAGBCDEFRSUIULGAEUGATUHUKFUGABUAUBUCUD $.
+    $( $j usage 'elsuppfng' avoids 'ax-coll'; $)
+
+    $( An element of the support of a function with a given domain.
+       (Contributed by AV, 27-May-2019.) $)
+    elsuppfn $p |- ( ( F Fn X /\ X e. V /\ Z e. W ) -> ( S e. ( F supp Z )
+                               <-> ( S e. X /\ ( F ` S ) =/= Z ) ) ) $=
+      ( vi wfn wcel w3a csupp co cv cfv wne crab wa suppvalfn eleq2d wceq fveq2
+      neeq1d elrab bitrdi ) BEHECIFDIJZABFKLZIAGMZBNZFOZGEPZIAEIABNZFOZQUEUFUJA
+      GBCDEFRSUIULGAEUGATUHUKFUGABUAUBUCUD $.
+  $}
+
+  ${
+    $d B x y $.  $d F x y $.  $d X x y $.  $d Z x y $.
+    fvdifsuppst.1 $e |- ( ph -> F : A --> B ) $.
+    fvdifsupp.2 $e |- ( ph -> A e. V ) $.
+    fvdifsuppst.st $e |- ( ph -> A. x e. B A. y e. B STAB x = y ) $.
+    fvdifsuppst.3 $e |- ( ph -> Z e. B ) $.
+    fvdifsupp.4 $e |- ( ph -> X e. ( A \ ( F supp Z ) ) ) $.
+    $( Function value is zero outside of its support.  (Contributed by Thierry
+       Arnoux, 21-Jan-2024.) $)
+    fvdifsuppst $p |- ( ph -> ( F ` X ) = Z ) $=
+      ( wceq wn wcel wa wstab wi cfv csupp co eldifbd wne df-ne eldifad wb ffnd
+      elsuppfn syl3anc mpbirand biimprd biimtrrid mtod cv wral ffvelcdmd eqeq12
+      wfn stbid rspc2gv syl2anc mpd df-stab sylib ) AHFUAZIOZPZPZVHAVIHFIUBUCZQ
+      ZAHDVKNUDVIVGIUEZAVLVGIUFAVLVMAVLHDQZVMAHDVKNUGZAFDUTDGQIEQZVLVNVMRUHADEF
+      JUIKMHFGEDIUJUKULUMUNUOAVHSZVJVHTABUPZCUPZOZSZCEUQBEUQZVQLAVGEQVPWBVQTADE
+      HFJVOURMWAVQBCVGIEEVRVGOVSIORVTVHVRVGVSIUSVAVBVCVDVHVEVFVD $.
+  $}
+
+  ${
+    $d R x y $.  $d Z x y $.
+    $( The support of functions "defined" by inverse images expressed by binary
+       relations.  (Contributed by AV, 7-Apr-2019.) $)
+    cnvimadfsn $p |- ( `' R " ( _V \ { Z } ) )
+                     = { x | E. y ( x R y /\ y =/= Z ) } $=
+      ( ccnv cvv csn cdif cima cv wcel cop wa wex cab wbr wne dfima3 wb vex elv
+      eldifvsn opelcnv df-br bitr4i anbi12ci exbii abbii eqtri ) CEZFDGHZIBJZUK
+      KZULAJZLUJKZMZBNZAOUNULCPZULDQZMZBNZAOBAUJUKRUQVAAUPUTBUMUSUOURUMUSSBULDF
+      UBUAUOUNULLCKURULUNCBTATUCUNULCUDUEUFUGUHUI $.
+  $}
+
+  ${
+    $d F x $.  $d V x $.  $d W x $.  $d X x $.  $d Z x $.
+    $( Support sets of functions expressed by inverse images.  (Contributed by
+       AV, 31-Mar-2019.)  (Revised by AV, 7-Apr-2019.) $)
+    suppimacnvfn $p |- ( ( F Fn X /\ F e. V /\ Z e. W )
+                       -> ( F supp Z ) = ( `' F " ( _V \ { Z } ) ) ) $=
+      ( vx wfn wcel w3a csupp co ccnv cvv csn cdif cima cv cfv wa wb wceq simp2
+      wne vex fvexg sylancl elsng syl necon3bbid biantrurd bitr3d eldif bitr4di
+      wn anbi2d elsuppfng elpreima 3ad2ant1 3bitr4d eqrdv ) ADGZABHZECHZIZFAEJK
+      ZALMENZOZPZVDFQZDHZVIARZEUCZSVJVKVGHZSZVIVEHVIVHHZVDVLVMVJVDVLVKMHZVKVFHZ
+      UNZSZVMVDVRVLVSVDVQVKEVDVPVQVKEUATVDVBVIMHVPVAVBVCUBFUDVIABMUEUFZVKEMUGUH
+      UIVDVPVRVTUJUKVKMVFULUMUOVIABCDEUPVAVBVOVNTVCDVIVGAUQURUSUT $.
+  $}
+
+  $( Two ways of writing the support of a function with known codomain.
+     (Contributed by Stefan O'Rear, 9-Jul-2015.)  (Revised by AV,
+     7-Jul-2019.) $)
+  fsuppeq $p |- ( ( I e. V /\ Z e. W ) -> ( F : I --> S
+                  -> ( F supp Z ) = ( `' F " ( S \ { Z } ) ) ) ) $=
+    ( wcel wa wf csupp co ccnv csn cdif cima wceq cvv adantl cin eqtrd wfn wfun
+    ffn fex expcom adantr imp simplr suppimacnvfn syl3anc ffun inpreima syl wss
+    wi cdm cnvimass fdm fimacnv eqtr4d sseqtrid sseqin2 sylib invdif imaeq2i ex
+    eqtr3di ) CDGZFEGZHZCABIZBFJKZBLZAFMZNZOZPVJVKHZVLVMQVNNZOZVPVQBCUAZBQGZVIV
+    LVSPVKVTVJCABUCRVJVKWAVHVKWAUOVIVKVHWACADBUDUEUFUGVHVIVKUHBQECFUIUJVKVSVPPV
+    JVKVMAVRSZOZVSVPVKWCVMAOZVSSZVSVKBUBWCWEPCABUKAVRBULUMVKVSWDUNWEVSPVKBUPZVS
+    WDBVRUQVKWFCWDCABURCABUSUTVAVSWDVBVCTWBVOVMAVNVDVEVGRTVF $.
+
+  $( Version of ~ fsuppeq avoiding ~ ax-coll by assuming ` F ` is a set rather
+     than its domain ` I ` .  (Contributed by SN, 30-Jul-2024.) $)
+  fsuppeqg $p |- ( ( F e. V /\ Z e. W ) -> ( F : I --> S
+                   -> ( F supp Z ) = ( `' F " ( S \ { Z } ) ) ) ) $=
+    ( wcel wa wf csupp co ccnv csn cdif cima wceq cvv adantl cin eqtrd wfn wfun
+    ffn simpll simplr suppimacnvfn syl3anc inpreima syl wss cdm cnvimass eqtr4d
+    ffun fdm fimacnv sseqtrid sseqin2 sylib invdif imaeq2i eqtr3di ex ) BDGZFEG
+    ZHZCABIZBFJKZBLZAFMZNZOZPVFVGHZVHVIQVJNZOZVLVMBCUAZVDVEVHVOPVGVPVFCABUCRVDV
+    EVGUDVDVEVGUEBDECFUFUGVGVOVLPVFVGVIAVNSZOZVOVLVGVRVIAOZVOSZVOVGBUBVRVTPCABU
+    NAVNBUHUIVGVOVSUJVTVOPVGBUKZVOVSBVNULVGWACVSCABUOCABUPUMUQVOVSURUSTVQVKVIAV
+    JUTVAVBRTVC $.
+  $( $j usage 'fsuppeqg' avoids 'ax-coll'; $)
+
+  ${
+    $d F i $.  $d Z i $.
+    $( The support of a function is a subset of the function's domain.
+       (Contributed by AV, 30-May-2019.) $)
+    suppssdmg $p |- ( ( F e. V /\ Z e. W ) -> ( F supp Z ) C_ dom F ) $=
+      ( vi wcel wa csupp co cv csn cima wne cdm crab suppval ssrab2 eqsstrdi )
+      ABFDCFGADHIAEJKLDKMZEANZOTEBCADPSETQR $.
+  $}
+
+  ${
+    $d F x $.  $d X x $.  $d Z x $.
+    suppsnop.f $e |- F = { <. X , Y >. } $.
+    suppsnopdc.x $e |- ( ph -> X e. V ) $.
+    suppsnopdc.y $e |- ( ph -> Y e. W ) $.
+    suppsnopdc.z $e |- ( ph -> Z e. U ) $.
+    suppsnopdc.dc $e |- ( ph -> DECID Y = Z ) $.
+    $( The support of a singleton of an ordered pair.  (Contributed by AV,
+       12-Apr-2019.) $)
+    suppsnopdc $p |- ( ph
+                   -> ( F supp Z ) = if ( Y = Z , (/) , { X } ) ) $=
+      ( vx csn wne c0 wceq cvv wcel csupp co cv cima cdm crab cif wf w3a cop wa
+      wf1o f1osng f1of syl 3adant3 feq1i sylibr syl3anc snexg fexd suppval fdmd
+      syl2anc rabeqdv sneq imaeq2d neeq1d rabsnif eqtrdi cfv wfn snidg 3ad2ant1
+      wn ffnd fnsnfv eqcomd fveq1i fvsng eqtrid sneqd wb sneqbg 3ad2ant2 3bitrd
+      necon3abid ifbid wdc ifnotdc eqtrd 3eqtrd ) ACHUAUBZCNUCZOZUDZHOZPZNCUEZU
+      FZCFOZUDZWQPZXAQUGZGHRZQXAUGZACSTHBTZWMWTRAXAGOZSCAFDTZGETZXGXAXHCUHZJKLX
+      IXJXGUIZXAXHFGUJOZUHZXKXIXJXNXGXIXJUKXAXHXMULXNFGDEUMXAXHXMUNUOUPXAXHCXMI
+      UQURZUSAXIXASTJFDUTUOVALNSBCHVBVDAXIXJXGWTXDRJKLXLWTWRNXAUFXDXLWRNWSXAXLX
+      AXHCXOVCVEWRXCNFWNFRZWPXBWQXPWOXACWNFVFVGVHVIVJUSAXDXEVOZXAQUGZXFAXIXJXGX
+      DXRRJKLXLXCXQXAQXLXCFCVKZOZWQPXHWQPXQXLXBXTWQXLCXAVLZFXATZXBXTRXLXAXHCXOV
+      PXIXJYBXGFDVMVNYAYBUKXTXBXAFCVQVRVDVHXLXTXHWQXLXSGXLXSFXMVKZGFCXMIVSXIXJY
+      CGRXGFGDEVTUPWAWBVHXLXEXHWQXJXIXHWQRXEWCXGGHEWDWEWGWFWHUSAXEWIXRXFRMXEXAQ
+      WJUOWKWL $.
+  $}
+
+  $( If the function value for a given argument is not empty, the argument
+     belongs to the support of the function with the empty set as zero.
+     (Contributed by AV, 2-Jul-2019.)  (Revised by AV, 4-Apr-2020.) $)
+  fvn0elsupp $p |- ( ( ( B e. V /\ X e. B )
+                       /\ ( G Fn B /\ ( G ` X ) =/= (/) ) )
+                       -> X e. ( G supp (/) ) ) $=
+    ( wcel wa wfn cfv c0 wne csupp co simpr anim12i cvv simprl simpll 0ex a1i
+    wb elsuppfn syl3anc mpbird ) ACEZDAEZFZBAGZDBHIJZFZFZDBIKLEZUEUHFZUFUEUIUHU
+    DUEMUGUHMNUJUGUDIOEZUKULTUFUGUHPUDUEUIQUMUJRSDBCOAIUAUBUC $.
+
+  $( The function value for a given argument is not empty iff the argument
+     belongs to the support of the function with the empty set as zero.
+     (Contributed by AV, 4-Apr-2020.) $)
+  fvn0elsuppb $p |- ( ( B e. V /\ X e. B /\ G Fn B )
+                      -> ( ( G ` X ) =/= (/) <-> X e. ( G supp (/) ) ) ) $=
+    ( wcel wfn w3a cfv c0 wne csupp co wi fvn0elsupp exp43 3imp wa cvv wb simp3
+    simp1 0ex a1i elsuppfn syl3anc simpr biimtrdi impbid ) ACEZDAEZBAFZGZDBHIJZ
+    DBIKLEZUIUJUKUMUNMUIUJUKUMUNABCDNOPULUNUJUMQZUMULUKUIIREZUNUOSUIUJUKTUIUJUK
+    UAUPULUBUCDBCRAIUDUEUJUMUFUGUH $.
+
+  ${
+    $d F x $.  $d V x $.  $d W x $.  $d X x $.  $d Z x $.
+    $( Existential quantification restricted to a support.  (Contributed by
+       Stefan O'Rear, 23-Mar-2015.)  (Revised by AV, 27-May-2019.) $)
+    rexsupp $p |- ( ( F Fn X /\ X e. V /\ Z e. W )
+                    -> ( E. x e. ( F supp Z ) ph
+                         <-> E. x e. X ( ( F ` x ) =/= Z /\ ph ) ) ) $=
+      ( wfn wcel w3a cv cfv wne wa csupp co elsuppfn anbi1d anass bitrdi
+      rexbidv2 ) CFHFDIGEIJZABKZCLGMZANZBCGOPZFUBUCUFIZANUCFIZUDNZANUHUENUBUGUI
+      AUCCDEFGQRUHUDASTUA $.
+  $}
+
+  ${
+    $d B b $.  $d F b $.  $d V b $.  $d W b $.  $d Z b $.
+    $( The support of the restriction of a function is a subset of the support
+       of the function itself.  (Contributed by AV, 22-Apr-2019.) $)
+    ressuppss $p |- ( ( F e. V /\ Z e. W )
+                      -> ( ( F |` B ) supp Z ) C_ ( F supp Z ) ) $=
+      ( vb wcel wa csn cima wne cdm crab csupp cab eleq2s ad2antrl wceq adantld
+      co cv cin elinel2 dmres elinel1 wss snssi resima2 syl neeq1d biimpd mpcom
+      cres jca ex ss2abdv df-rab 3sstr4g cvv resexg suppval sylan 3sstr4d ) BCG
+      ZEDGZHZBAUMZFUAZIZJZEIZKZFVGLZMZBVIJZVKKZFBLZMZVGENTZBENTVFVHVMGZVLHZFOVH
+      VQGZVPHZFOVNVRVFWAWCFVFWAWCVFWAHZWBVPVTWBVFVLWBVHAVQUBZVMVHAVQUCBAUDZPQVH
+      AGZWDVPVTWGVFVLWGVHWEVMVHAVQUEWFPQWGWAVPVFWGVLVPVTWGVLVPWGVJVOVKWGVIAUFVJ
+      VORVHAUGBVIAUHUIUJUKSSULUNUOUPVLFVMUQVPFVQUQURVDVGUSGVEVSVNRBACUTFUSDVGEV
+      AVBFCDBEVAVC $.
+  $}
+
+  ${
+    $d A x $.  $d Z x $.
+    mptsuppdifd.f $e |- F = ( x e. A |-> B ) $.
+    mptsuppdifd.a $e |- ( ph -> A e. V ) $.
+    mptsuppdifd.z $e |- ( ph -> Z e. W ) $.
+    $( The support of a function in maps-to notation with a class difference.
+       (Contributed by AV, 28-May-2019.) $)
+    mptsuppdifd $p |- ( ph
+                        -> ( F supp Z ) = { x e. A | B e. ( _V \ { Z } ) } ) $=
+      ( csupp co ccnv cvv csn cdif cima wcel crab cdm wfn wceq wfun funmpt2 a1i
+      funfnd cmpt mptexd eqeltrid suppimacnvfn syl3anc mptpreima eqtrdi ) AEHLM
+      ZENOHPQZRZDUPSBCTAEEUAZUBEOSHGSUOUQUCAEEUDABCDEIUEUFUGAEBCDUHOIABCDFJUIUJ
+      KEOGURHUKULBCDUPEIUMUN $.
+
+    $d ph x $.
+    mptsuppd.b $e |- ( ( ph /\ x e. A ) -> B e. U ) $.
+    $( The support of a function in maps-to notation.  (Contributed by AV,
+       10-Apr-2019.)  (Revised by AV, 28-May-2019.) $)
+    mptsuppd $p |- ( ph -> ( F supp Z ) = { x e. A | B =/= Z } ) $=
+      ( csupp co cvv csn wcel crab wa cdif wne mptsuppdifd cv eldifsn biantrurd
+      elexd bitr4id rabbidva eqtrd ) AFINODPIQUARZBCSDIUBZBCSABCDFGHIJKLUCAUKUL
+      BCABUDCRTZUKDPRZULTULDPIUEUMUNULUMDEMUGUFUHUIUJ $.
+  $}
+
+  ${
+    $d A x y $.  $d B y $.  $d F x y $.  $d G x y $.  $d V y $.  $d W y $.
+    $d Z x y $.
+    $( The support of a function which has the same zero values (in its domain)
+       as another function is a subset of the support of this other function.
+       (Contributed by AV, 30-Apr-2019.)  (Proof shortened by AV,
+       6-Jun-2022.) $)
+    suppfnss $p |- ( ( ( F Fn A /\ G Fn B ) /\ ( A C_ B /\ B e. V /\ Z e. W ) )
+                     -> ( A. x e. A ( ( G ` x ) = Z -> ( F ` x ) = Z )
+                          -> ( F supp Z ) C_ ( G supp Z ) ) ) $=
+      ( vy wfn wa wss wcel cv cfv wceq wi csupp ad2antrr cvv w3a wral co simpr1
+      wne cdm crab fndm ad2antlr 3sstr4d adantr wb eleq2d fveqeq2 imbi12d rspcv
+      weq biimtrdi com23 imp31 necon3d ex 3imp rabssrabd wfun fnfun simpl ssexg
+      3adant3 fnex syl2an simpr3 suppval1 syl3anc simpr simp2 sseq12d mpbird )
+      DBJZECJZKZBCLZCFMZHGMZUAZKZANZEOHPZWGDOHPZQZABUBZDHRUCZEHRUCZLZWFWKKZWNIN
+      ZDOZHUEZIDUFZUGZWPEOZHUEZIEUFZUGZLZWOWRXBIWSXCWFWSXCLWKWFBCWSXCWAWBWCWDUD
+      VSWSBPVTWEBDUHZSVTXCCPVSWECEUHUIUJUKWOWRWPWSMZXBWOXGWRXBWOXGWRXBQWOXGKXAH
+      WQHWFWKXGXAHPZWQHPZQZWFXGWKXJWFXGWPBMZWKXJQVSXGXKULVTWEVSWSBWPXFUMSWJXJAW
+      PBAIUQWHXHWIXIWGWPHEUNWGWPHDUNUOUPURUSUTVAVBUSVCVDWFWNXEULWKWFWLWTWMXDWFD
+      VEZDTMZWDWLWTPVSXLVTWEBDVFSWAVSBTMZXMWEVSVTVGWBWCXNWDBCFVHVIBTDVJVKWAWBWC
+      WDVLZITGDHVMVNWFEVEZETMZWDWMXDPVTXPVSWECEVFUIWAVTWCXQWEVSVTVOWBWCWDVPCFEV
+      JVKXOITGEHVMVNVQUKVRVB $.
+  $}
+
+  ${
+    $d F x $.  $d G x $.  $d Z x $.  $d V x $.  $d f i z $.
+    $( The support of a function which is a subset of another function is a
+       subset of the support of this other function.  (Contributed by AV,
+       27-Jul-2019.) $)
+    funsssuppss $p |- ( ( Fun G /\ F C_ G /\ G e. V )
+                        -> ( F supp Z ) C_ ( G supp Z ) ) $=
+      ( vx vf vz vi wfun wss wcel w3a csupp co cv wa cvv cdm wceq adantr csn wi
+      cima wne crab df-supp elmpocl2 wfn cfv wral funss impcom funfnd funfn jca
+      biimpi 3adant3 dmss 3ad2ant2 dmexg 3ad2ant3 simpr 3jca 3expa eqeq1 biimpd
+      funssfv syl ralrimiva suppfnss sylc sylan2 sseldd ex ssrdv ) BIZABJZBCKZL
+      ZEADMNZBDMNZVSEOZVTKZWBWAKVSWCPVTWAWBWCVSDQKZVTWAJZFGQQFOZHOUAUCGOUAUDHWF
+      RUEADMWBFGHUFUGVSWDPZAARZUHZBBRZUHZPZWHWJJZWJQKZWDLZPWBBUIZDSZWBAUIZDSZUB
+      ZEWHUJZWEWGWLWOVSWLWDVPVQWLVRVPVQPZWIWKXBAVQVPAIABUKULUMVPWKVQVPWKBUNUPTU
+      OUQTWGWMWNWDVSWMWDVQVPWMVRABURUSTVSWNWDVRVPWNVQBCUTVATVSWDVBVCUOVSXAWDVPV
+      QXAVRXBWTEWHXBWBWHKZPWPWRSZWTVPVQXCXDWBBAVGVDXDWQWSWPWRDVEVFVHVIUQTEWHWJA
+      BQQDVJVKVLVSWCVBVMVNVO $.
+  $}
+
+  ${
+    $d B x $.  $d Z x $.  $d Z y $.  $d f q z $.
+    $( The support of a constant function with value zero is empty.
+       (Contributed by AV, 30-Jun-2019.) $)
+    fczsupp0 $p |- ( ( B X. { Z } ) supp Z ) = (/) $=
+      ( vx vf vz vq csn cxp csupp co cv wcel cfv wceq cvv wne cdm simprd simpld
+      cima crab df-supp elmpocl wa wfn fnconstg syl elsuppfng syl3anc fvconst2g
+      wb ibi syl2anc neneqd pm2.65i nel0 ) CABGHZBIJZCKZURLZUSUQMZBNZUTBOLZUSAL
+      ZVBUTUQOLZVCDEOODKZFKGTEKGPFVFQUAUQBIUSDEFUBUCZRZUTVDVABPZUTVDVIUDZUTUQAU
+      EZVEVCUTVJUKUTVCVKVHABOUFUGUTVEVCVGSVHUSUQOOABUHUIULZSABUSOUJUMUTVABUTVDV
+      IVLRUNUOUP $.
+  $}
+
+  ${
+    $d k F $.  $d k ph $.  $d k x W $.  $d k Z $.  $d f i z $.  $d A x $.
+    suppss.f $e |- ( ph -> F : A --> B ) $.
+    suppss.n $e |- ( ( ph /\ k e. ( A \ W ) ) -> ( F ` k ) = Z ) $.
+    suppssdc.dc $e |- ( ph -> A. x e. A DECID x e. W ) $.
+    $( Show that the support of a function is contained in a set.  (Contributed
+       by Mario Carneiro, 19-Dec-2014.)  (Revised by AV, 28-May-2019.)  (Proof
+       shortened by SN, 5-Aug-2024.) $)
+    suppssdc $p |- ( ph -> ( F supp Z ) C_ W ) $=
+      ( vf vz vi csupp cv wcel cvv wa wi co csn wne cdm df-supp elmpocl cfv wfn
+      cima crab wb ffnd adantl simpll simplr elsuppfng syl3anc wdc eleq1w dcbid
+      wceq wral ad2antlr simpr rspcdva wn cdif adantll sylan2br expr necon1addc
+      eldif a1d mpd expimpd sylbid expcom com23 mpdi ssrdv ) AEFHOUAZGAEPZWAQZF
+      RQZHRQZSZWBGQZLMRRLPZNPUBUIMPUBUCNWHUDUJFHOWBLMNUEUFAWFWCWGWFAWCWGTWFASZW
+      CWBCQZWBFUGZHUCZSZWGWIFCUHZWDWEWCWMUKAWNWFACDFIULUMWDWEAUNWDWEAUOWBFRRCHU
+      PUQWIWJWLWGWIWJSZWGURZWLWGTWOBPZGQZURZWPBCWBWQWBVAWRWGBEGUSUTAWSBCVBWFWJK
+      VCWIWJVDVEWOWGWKHWOWGVFZWKHVAZTWPWIWJWTXAWJWTSWIWBCGVGQZXAWBCGVLAXBXAWFJV
+      HVIVJVMVKVNVOVPVQVRVSVT $.
+    $( $j usage 'suppssdc' avoids 'ax-coll'; $)
+  $}
+
+  ${
+    $d B u v $.  $d F u v $.  $d X u v $.  $d Z v $.
+    suppssr.f $e |- ( ph -> F : A --> B ) $.
+    suppssr.n $e |- ( ph -> ( F supp Z ) C_ W ) $.
+    suppssr.a $e |- ( ph -> A e. V ) $.
+    suppssrst.z $e |- ( ph -> Z e. B ) $.
+    suppssrst.st $e |- ( ph -> A. u e. B A. v e. B STAB u = v ) $.
+    $( A function is zero outside its support.  (Contributed by Mario Carneiro,
+       19-Dec-2014.)  (Revised by AV, 28-May-2019.) $)
+    suppssrst $p |- ( ( ph /\ X e. ( A \ W ) ) -> ( F ` X ) = Z ) $=
+      ( wcel wn wa wceq cvv cdif cfv eldif wne df-ne fexd fvexg sylan biantrurd
+      csn eldifsn bitr4di csupp co wfn wb elsuppfn syl3anc pm5.32da bitrd sseld
+      ffnd sylbird expdimp sylbid biimtrrid con3d wstab wi cv eqeq2 stbid eqeq1
+      wral ralbidv adantr ffvelcdmda rspcdva df-stab sylib syld impr sylan2b )
+      IDHUAPAIDPZIHPZQZRIFUBZJSZIDHUCAWDWFWHAWDRZWFWHQZQZWHWIWJWEWJWGJUDZWIWEWG
+      JUEWIWLWGTJUJUAPZWEWIWLWGTPZWLRWMWIWNWLAFTPWDWNADEGFKMUFIFTDUGUHUIWGTJUKU
+      LZAWDWMWEAWDWMRZIFJUMUNZPZWEAWRWDWLRZWPAFDUODGPJEPZWRWSUPADEFKVBMNIFGEDJU
+      QURAWDWLWMWOUSUTAWQHILVAVCVDVEVFVGWIWHVHZWKWHVIWIWGBVJZSZVHZXABEJXBJSXCWH
+      XBJWGVKVLWICVJZXBSZVHZBEVNZXDBEVNCEWGXEWGSZXGXDBEXIXFXCXEWGXBVMVLVOAXHCEV
+      NWDOVPADEIFKVQVRAWTWDNVPVRWHVSVTWAWBWC $.
+  $}
+
+  ${
+    $d B u v $.  $d F u v $.  $d X u v $.  $d Z v $.
+    suppssrg.f $e |- ( ph -> F : A --> B ) $.
+    suppssrg.n $e |- ( ph -> ( F supp Z ) C_ W ) $.
+    suppssrg.a $e |- ( ph -> F e. V ) $.
+    suppssrgst.z $e |- ( ph -> Z e. B ) $.
+    suppssrgst.st $e |- ( ph -> A. u e. B A. v e. B STAB u = v ) $.
+    $( A function is zero outside its support.  Version of ~ suppssrst avoiding
+       ~ ax-coll by assuming ` F ` is a set rather than its domain ` A ` .
+       (Contributed by SN, 5-May-2024.) $)
+    suppssrgst $p |- ( ( ph /\ X e. ( A \ W ) ) -> ( F ` X ) = Z ) $=
+      ( wcel wn wa wceq cvv cfv eldif wne df-ne csn fvexg sylan eldifsn bitr4di
+      cdif biantrurd csupp co wfn ffnd elsuppfng syl3anc pm5.32da bitrd sylbird
+      wb sseld expdimp sylbid biimtrrid con3d wstab wi eqeq2 stbid wral ralbidv
+      cv eqeq1 adantr ffvelcdmda rspcdva df-stab sylib syld impr sylan2b ) IDHU
+      JPAIDPZIHPZQZRIFUAZJSZIDHUBAWCWEWGAWCRZWEWGQZQZWGWHWIWDWIWFJUCZWHWDWFJUDW
+      HWKWFTJUEUJPZWDWHWKWFTPZWKRWLWHWMWKAFGPZWCWMMIFGDUFUGUKWFTJUHUIZAWCWLWDAW
+      CWLRZIFJULUMZPZWDAWRWCWKRZWPAFDUNWNJEPZWRWSVAADEFKUOMNIFGEDJUPUQAWCWKWLWO
+      URUSAWQHILVBUTVCVDVEVFWHWGVGZWJWGVHWHWFBVMZSZVGZXABEJXBJSXCWGXBJWFVIVJWHC
+      VMZXBSZVGZBEVKZXDBEVKCEWFXEWFSZXGXDBEXIXFXCXEWFXBVNVJVLAXHCEVKWCOVOADEIFK
+      VPVQAWTWCNVOVQWGVRVSVTWAWB $.
+    $( $j usage 'suppssrgst' avoids 'ax-coll'; $)
+  $}
+
+  ${
+    $d ph x y $.  $d D x y $.  $d Y x $.  $d Z x y $.  $d A y $.  $d F y $.
+    $d L y $.  $d f i z $.
+    suppssfv.a $e |- ( ph -> ( ( x e. D |-> A ) supp Y ) C_ L ) $.
+    suppssfv.f $e |- ( ph -> ( F ` Y ) = Z ) $.
+    suppssfv.v $e |- ( ( ph /\ x e. D ) -> A e. V ) $.
+    suppssfv.y $e |- ( ph -> Y e. U ) $.
+    suppssfvg.d $e |- ( ph -> D e. W ) $.
+    $( Formula building theorem for support restriction, on a function which
+       preserves zero.  (Contributed by Stefan O'Rear, 9-Mar-2015.)  (Revised
+       by AV, 28-May-2019.) $)
+    suppssfvg $p |- ( ph -> ( ( x e. D |-> ( F ` A ) ) supp Z ) C_ L ) $=
+      ( cv wcel wa cvv vy vf vz vi cfv cmpt csupp wss adantr elexd csn cima wne
+      co crab df-supp elmpocl2 adantl simpl cdif eldifsni ad4ant23 wceq fveqeq2
+      cdm wi syl5ibrcom necon3d ad2antlr eldifsn sylanbrc ex syl5 ss2rabdv eqid
+      imp simpll simplr mptsuppdifd 3sstr4d sstrd syl21anc simpr sseldd ssrdv )
+      AUABDCFUEZUFZKUGUNZGAUAQZWHRZWIGRAWJSZWHGWIWKDTRZKTRZAWHGUHWKDIADIRWJPUIU
+      JWJWMAUBUCTTUBQZUDQUKULUCQUKUMUDWNVEUOWGKUGWIUBUCUDUPUQURAWJUSWLWMSZASZWH
+      BDCUFZJUGUNZGWPWFTKUKUTRZBDUOCTJUKUTRZBDUOWHWRWPWSWTBDWSWFKUMZWPBQDRZSZWT
+      WFTKVAXCXAWTXCXASCTRZCJUMZWTAXBXDWOXAAXBSCHNUJVBXCXAXEAXAXEVFWOXBACJWFKAW
+      FKVCCJVCJFUEKVCMCJKFVDVGVHVIVPCTJVJVKVLVMVNWPBDWFWGTTKWGVOWLWMAVQZWLWMAVR
+      VSWPBDCWQTEJWQVOXFAJERWOOURVSVTAWRGUHWOLURWAWBAWJWCWDVLWE $.
+  $}
+
+  ${
+    $d A x y $.  $d B x $.  $d F x y $.  $d G x y $.  $d X x y $.  $d Z x y $.
+    $d ph x y $.  $d B u v $.  $d ph u v $.
+    suppofssd.1 $e |- ( ph -> A e. V ) $.
+    suppofssd.2 $e |- ( ph -> Z e. B ) $.
+    suppofssd.3 $e |- ( ph -> F : A --> B ) $.
+    suppofssd.4 $e |- ( ph -> G : A --> B ) $.
+    suppofss1dcl.cl $e |- ( ( ph /\ ( u e. B /\ v e. B ) )
+      -> ( u X v ) e. B ) $.
+
+    ${
+      $d F u v y $.  $d G v $.  $d X u v $.
+      suppofss1d.5 $e |- ( ( ph /\ x e. B ) -> ( Z X x ) = Z ) $.
+      $( Condition for the support of a function operation to be a subset of
+         the support of the left function term.  (Contributed by Thierry
+         Arnoux, 21-Jun-2019.) $)
+      suppofss1dcl $p |- ( ph -> ( ( F oF X G ) supp Z ) C_ ( F supp Z ) ) $=
+        ( wceq co wcel vy cv cfv cof wi wral csupp wss inidm eqidd oveq2 eleq1d
+        wa ffnd oveq1 ralbidv ralrimivva adantr ffvelcdmda rspcdva ofvalg simpr
+        oveq1d ralrimiva oveq2d eqeq1d rspcdv mpd 3eqtrd wfn off ssidd suppfnss
+        ex syl23anc ) AUAUBZGUCZKRZVPGHJUDSZUCZKRZUEZUAEUFZVSKUGSGKUGSUHZAWBUAE
+        AVPETZUMZVRWAWFVRUMZVTVQVPHUCZJSZKWHJSZKWFVTWIRVRAEEVQWHJEFGHIIVPAEFGNU
+        NZAEFHOUNLLEUIZWFVQUJWFWHUJWFVQCUBZJSZFTZWIFTCFWHWMWHRWNWIFWMWHVQJUKULW
+        FDUBZWMJSZFTZCFUFZWOCFUFDFVQWPVQRZWRWOCFWTWQWNFWPVQWMJUOULUPAWSDFUFWEAW
+        RDCFFPUQURAEFVPGNUSUTAEFVPHOUSZUTVAURWGVQKWHJWFVRVBVCWFWJKRZVRWFKBUBZJS
+        ZKRZBFUFZXBAXFWEAXEBFQVDURWFXEXBBWHFXAWFXCWHRZUMZXDWJKXHXCWHKJWFXGVBVEV
+        FVGVHURVIVNVDAVSEVJGEVJEEUHEITKFTWCWDUEAEFVSADCEEEJFFFGHIIPNOLLWLVKUNWK
+        AEVLLMUAEEVSGIFKVMVOVH $.
+    $}
+
+    ${
+      $d F u v y $.  $d G v $.  $d X u v $.
+      suppofss2d.5 $e |- ( ( ph /\ x e. B ) -> ( x X Z ) = Z ) $.
+      $( Condition for the support of a function operation to be a subset of
+         the support of the right function term.  (Contributed by Thierry
+         Arnoux, 21-Jun-2019.) $)
+      suppofss2dcl $p |- ( ph -> ( ( F oF X G ) supp Z ) C_ ( G supp Z ) ) $=
+        ( wceq co wcel vy cv cfv cof wi wral csupp wss inidm eqidd oveq2 eleq1d
+        wa ffnd oveq1 ralbidv ralrimivva adantr ffvelcdmda rspcdva ofvalg simpr
+        oveq2d ralrimiva oveq1d eqeq1d rspcdv mpd 3eqtrd wfn off ssidd suppfnss
+        ex syl23anc ) AUAUBZHUCZKRZVPGHJUDSZUCZKRZUEZUAEUFZVSKUGSHKUGSUHZAWBUAE
+        AVPETZUMZVRWAWFVRUMZVTVPGUCZVQJSZWHKJSZKWFVTWIRVRAEEWHVQJEFGHIIVPAEFGNU
+        NAEFHOUNZLLEUIZWFWHUJWFVQUJWFWHCUBZJSZFTZWIFTCFVQWMVQRWNWIFWMVQWHJUKULW
+        FDUBZWMJSZFTZCFUFZWOCFUFDFWHWPWHRZWRWOCFWTWQWNFWPWHWMJUOULUPAWSDFUFWEAW
+        RDCFFPUQURAEFVPGNUSZUTAEFVPHOUSUTVAURWGVQKWHJWFVRVBVCWFWJKRZVRWFBUBZKJS
+        ZKRZBFUFZXBAXFWEAXEBFQVDURWFXEXBBWHFXAWFXCWHRZUMZXDWJKXHXCWHKJWFXGVBVEV
+        FVGVHURVIVNVDAVSEVJHEVJEEUHEITKFTWCWDUEAEFVSADCEEEJFFFGHIIPNOLLWLVKUNWK
+        AEVLLMUAEEVSHIFKVMVOVH $.
+    $}
+  $}
+
+  ${
+    $d F x $.  $d G x $.  $d V x $.  $d W x $.  $d Z x $.  $d f i z $.
+    $( The support of the composition of two functions is the inverse image by
+       the inner function of the support of the outer function.  (Contributed
+       by AV, 30-May-2019.)  (Revised by SN, 15-Sep-2023.) $)
+    suppcofn $p |- ( ( ( F e. V /\ G e. W ) /\ ( Fun F /\ Fun G ) ) ->
+                         ( ( F o. G ) supp Z ) = ( `' G " ( F supp Z ) ) ) $=
+      ( vf vz vi wcel wa wfun csupp ccnv cima cvv cv csn cdm wfn funfnd vx ccom
+      co wi wne crab df-supp elmpocl2 a1i cfv simprr elpreima syl simplbda cdif
+      wb ex funco adantl adantr coexg ad2antrr simpr suppimacnvfn syl3anc cnvco
+      wceq imaeq1i imaco simprl simplll imaeq2d eqtr4id 3eqtrd eleq2d pm5.21ndd
+      eqrdv ) ACIZBDIZJZAKZBKZJZJZUAABUBZELUCZBMZAELUCZNZWDEOIZUAPZWFIZWKWIIZWL
+      WJUDWDFGOOFPZHPQNGPQUEHWNRUFZWEELWKFGHUGZUHUIWDWMWJWDWMJWKBUJZWHIZWJWDWMW
+      KBRZIZWRWDBWSSWMWTWRJUPWDBVTWAWBUKTWSWKWHBULUMUNFGOOWOAELWQWPUHUMUQWDWJWL
+      WMUPWDWJJZWFWIWKXAWFWEMZOEQUOZNZWGAMZUBZXCNZWIXAWEWERZSZWEOIZWJWFXDVGWDXI
+      WJWDWEWCWEKVTABURUSTUTVTXJWCWJABCDVAVBWDWJVCZWEOOXHEVDVEXDXGVGXAXBXFXCABV
+      FVHUIXAXGWGXEXCNZNWIWGXEXCVIXAWHXLWGXAAARZSZVRWJWHXLVGWDXNWJWDAVTWAWBVJTU
+      TVRVSWCWJVKXKACOXMEVDVEVLVMVNVOUQVPVQ $.
+  $}
+
+  $( The support of the composition of two functions is empty if the support of
+     the outer function is empty.  (Contributed by AV, 30-May-2019.) $)
+  supp0cosupp0fn $p |- ( ( ( F e. V /\ G e. W ) /\ ( Fun F /\ Fun G ) )
+                  -> ( ( F supp Z ) = (/) -> ( ( F o. G ) supp Z ) = (/) ) ) $=
+    ( wcel wa wfun csupp co wceq ccom ccnv cima suppcofn imaeq2 eqtrdi sylan9eq
+    c0 ima0 ex ) ACFBDFGAHBHGGZAEIJZSKZABLEIJZSKUBUDUEBMZUCNZSABCDEOUDUGUFSNSUC
+    SUFPUFTQRUA $.
+
+  $( The image of the support of the composition of two functions is the
+     support of the outer function.  (Contributed by AV, 30-May-2019.) $)
+  imacosuppfn $p |- ( ( ( F e. V /\ G e. W ) /\ ( Fun F /\ Fun G ) )
+                    -> ( ( Fun G /\ ( F supp Z ) C_ ran G )
+                         -> ( G " ( ( F o. G ) supp Z ) ) = ( F supp Z ) ) ) $=
+    ( wcel wa wfun csupp crn wss ccom cima wceq ccnv suppcofn imaeq2d cdm wfo
+    co funforn foimacnv sylanb sylan9eq ex ) ACFBDFGAHBHZGGZUFAEITZBJZKZGZBABLE
+    ITZMZUHNUGUKUMBBOUHMZMZUHUGULUNBABCDEPQUFBRZUIBSUJUOUHNBUAUPUIUHBUBUCUDUE
+    $.
 
 
 $(
@@ -203772,6 +204332,9 @@ htmldef "2nd" as
     "<IMG SRC='_2nd.gif' WIDTH=21 HEIGHT=19 ALT=' 2nd' TITLE='2nd'>";
   althtmldef "2nd" as '2<SUP>nd</SUP> ';
   latexdef "2nd" as "2^\mathrm{nd}";
+htmldef "supp" as ' supp ';
+  althtmldef "supp" as ' supp ';
+  latexdef "supp" as "\mathrm{supp}";
 htmldef "tpos" as "tpos ";
   althtmldef "tpos" as 'tpos ';
   latexdef "tpos" as "\mathrm{tpos}";

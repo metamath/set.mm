@@ -2040,6 +2040,12 @@ equivalent (in the absence of excluded middle).</TD>
 <TD>~ pm3.14 </TD>
 </TR>
 
+<tr>
+  <td>nabbib</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses exnal and xor3</td>
+</tr>
+
 <TR>
 <TD>nnel</TD>
 <TD><I>none</I></TD>
@@ -4293,8 +4299,8 @@ hasn't been a need for it.</TD>
 
 <tr>
   <td>xpexcnv</td>
-  <td><i>none</i></td>
-  <td>would be provable if nonempty is changed to inhabited</td>
+  <td>~ xpexcnvm</td>
+  <td>changes nonempty to inhabited</td>
 </tr>
 
 <TR>
@@ -4381,11 +4387,202 @@ hasn't been a need for it.</TD>
 </TR>
 
 <tr>
-  <td>df-supp</td>
+  <td>supp0prc</td>
   <td><i>none</i></td>
-  <td>Because the definition is in terms of whether values map to
-  values not equal to zero, it is not clear that it would work
-  well unless the range of the function has decidable equality.</td>
+  <td>The set.mm proof uses mpondm0</td>
+</tr>
+
+<tr>
+  <td rowspan="2">suppvalbr</td>
+  <td>~ suppvalfn</td>
+  <td>in the case of a function</td>
+</tr>
+
+<tr>
+  <td><i>in general</i></td>
+  <td>the set.mm proof uses nabbib</td>
+</tr>
+
+<tr>
+  <td>fvdifsupp</td>
+  <td>~ fvdifsuppst</td>
+  <td>adds condition for stable equality</td>
+</tr>
+
+<tr>
+  <td>suppimacnvss , suppimacnv</td>
+  <td>~ suppimacnvfn</td>
+  <td>adds condition that ` F ` is a function</td>
+</tr>
+
+<tr>
+  <td>suppssdm</td>
+  <td>~ suppssdmg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>suppsnop</td>
+  <td>~ suppsnopdc</td>
+  <td>adds decidability condition</td>
+</tr>
+
+<tr>
+  <td>snopsuppss</td>
+  <td><i>none</i></td>
+  <td>presumably provable with some changes, or just
+  use ~ suppssdmg plus ~ dmsnopg</td>
+</tr>
+
+<tr>
+  <td>suppun</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses suppimacnv and to use
+  ~ suppimacnvfn instead would seem to require
+  that ` F u. G ` is a function (which might be
+  useful, for example in proving fsuppunbi )</td>
+</tr>
+
+<tr>
+  <td>ressuppssdif</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses ianor and the converse of
+  ~ ssundifim</td>
+</tr>
+
+<tr>
+  <td>extmptsuppeq</td>
+  <td><i>none</i></td>
+  <td>apparently would need a condition that ` A `
+  is a decidable subset of ` B `</td>
+</tr>
+
+<tr>
+  <td>fnsuppres</td>
+  <td><i>none</i></td>
+  <td>at least using a proof close to the set.mm proof,
+  would need ` F ` to have a codomain which includes
+  ` Z ` and has stable equality</td>
+</tr>
+
+<tr>
+  <td>fnsuppeq0</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses fnsuppres</td>
+</tr>
+
+<tr>
+  <td>suppss</td>
+  <td>~ suppssdc</td>
+  <td>adds decidability condition</td>
+</tr>
+
+<tr>
+  <td>suppssr</td>
+  <td>~ suppssrst</td>
+  <td>adds condition for stable equality on the codomain
+  of the function (and that the zero is an element of
+  that codomain)</td>
+</tr>
+
+<tr>
+  <td>suppssrg</td>
+  <td>~ suppssrgst</td>
+  <td>adds condition for stable equality on the codomain
+  of the function (and that the zero is an element of
+  that codomain)</td>
+</tr>
+
+<tr>
+  <td>suppssov1</td>
+  <td><i>none</i></td>
+  <td>the current ~ suppssov1 , although similar in general
+  intent, is different enough that some adaptation will be
+  needed</td>
+</tr>
+
+<tr>
+  <td>suppssov2</td>
+  <td><i>none</i></td>
+  <td>if we get suppssov1 this should work with a similar
+  approach</td>
+</tr>
+
+<tr>
+  <td>suppssof1</td>
+  <td><i>none</i></td>
+  <td>the current ~ suppssof1 , although similar in general
+  intent, is different enough that some adaptation will be
+  needed</td>
+</tr>
+
+<tr>
+  <td>suppss2</td>
+  <td><i>none</i></td>
+  <td>apparently would need an added condition such
+  as ` A. x e. A DECID x e. W `</td>
+</tr>
+
+<tr>
+  <td>suppsssn</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses suppss2</td>
+</tr>
+
+<tr>
+  <td>suppssfv</td>
+  <td>~ suppssfvg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>suppofssd</td>
+  <td><i>none</i></td>
+  <td>Something along these lines should be possible but
+  the set.mm proof uses stable equality on ` B ` ,
+  fnfvof , and suppss .  It also seems like there may need
+  to be a closure or set existence condition on ` X ` .</td>
+</tr>
+
+<tr>
+  <td>suppofss1d</td>
+  <td>~ suppofss1dcl</td>
+  <td>adds closure hypothesis for ` X ` (if we wanted a
+  hypothesis that instead said ` X ` were a set, that would
+  probably suffice)</td>
+</tr>
+
+<tr>
+  <td>suppofss2d</td>
+  <td>~ suppofss2dcl</td>
+  <td>adds closure hypothesis for ` X ` (if we wanted a
+  hypothesis that instead said ` X ` were a set, that would
+  probably suffice)</td>
+</tr>
+
+<tr>
+  <td>suppco</td>
+  <td>~ suppcofn</td>
+  <td>adds condition that ` F ` and ` G ` are functions</td>
+</tr>
+
+<tr>
+  <td>suppcoss</td>
+  <td><i>none</i></td>
+  <td>apparently would need additional decidability
+  conditions</td>
+</tr>
+
+<tr>
+  <td>supp0cosupp0</td>
+  <td>~ supp0cosupp0fn</td>
+  <td>adds condition that ` F ` and ` G ` are functions</td>
+</tr>
+
+<tr>
+  <td>imacosupp</td>
+  <td>~ imacosuppfn</td>
+  <td>adds condition that ` F ` and ` G ` are functions</td>
 </tr>
 
 <tr>
@@ -13911,11 +14108,9 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>Applying ~ psrbag , ~ psrbagf , and ~ off can reduce
   the problem to showing that ` ( ``' ( F oF + G ) " NN ) `
-  is finite.  This seems doable but whether we would
-  define supp and finSupp (with suitable decidability
-  additions), modify the set.mm proof to not use those
-  notations, or change the approach more deeply, we'd
-  need to change something.</td>
+  is finite.  If staying close to the set.mm proof, we'd
+  need suppofssd , finSupp , fcdmnn0suppg , psrbagfsupp ,
+  and fsuppunfi (or suitable replacements).</td>
 </tr>
 
 <tr>
