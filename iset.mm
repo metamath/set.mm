@@ -191361,6 +191361,141 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Pell equations
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Pell equations 1: A nontrivial solution always exists
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d a b c d e f g A $.  $d a b c d e f g B $.  $d a b c d e f g C $.
+    $d a b c d e f g D $.  $d a b c d e f g E $.  $d a b c d e f g F $.
+    $d a b c d e f g x $.  $d a b c d e f g y $.  $d a b c d e f g z $.
+    $d a b c d e f g ph $.
+
+    $( a bit of terminology - Pell field = Q[sqr d], Pell ring = Z[sqr d]
+       (algebraic integers in Pell field), Pell group = right branch of the
+       group of units in Pell ring - isomorphic to ZZ, Pell semigroup = Pell
+       group elements >= 1, resembles NN0 $)
+
+    $( Lemma for pellex .  Arithmetical core of pellexlem3, norm lower bound.
+       This begins Dirichlet's proof of the Pell equation solution existence;
+       the proof here follows theorem 62 of [vandenDries] p. 43.  (Contributed
+       by Stefan O'Rear, 14-Sep-2014.) $)
+    pellexlem1 $p |- ( ( ( D e. NN /\ A e. NN /\ B e. NN ) /\ -. ( sqrt ` D )
+        e. QQ ) -> ( ( A ^ 2 ) - ( D x. ( B ^ 2 ) ) ) =/= 0 ) $=
+      ( cn wcel w3a csqrt cfv cq c2 cexp co cc0 wne wceq nncn 3ad2ant2 3ad2ant3
+      cc wbr wn cmul cmin sqcld 3ad2ant1 mulcld subeq0ad cap nnap0 wb sqap0 syl
+      cdiv mpbird divmulap3d sqdivap fveq2d syl3anc cr redivclapd cle clt nnnn0
+      nnre nn0ge0d nngt0 divge0 syl22anc sqrtsqd eqtr3d nnq nnne0 eqeltrd fveq2
+      qdivcl eleq1d syl5ibcom sylbird sylbid necon3bd imp ) CDEZADEZBDEZFZCGHZI
+      EZUAAJKLZCBJKLZUBLZUCLZMNWEWGWKMWEWKMOWHWJOZWGWEWHWJWEAWCWBASEZWDAPQZUDZW
+      ECWIWBWCCSEWDCPUEZWEBWDWBBSEZWCBPRZUDZUFUGWEWLWHWIUMLZCOZWGWEWHCWIWOWPWSW
+      EWIMUHTZBMUHTZWDWBXCWCBUIRZWEWQXBXCUJWRBUKULUNUOWEWTGHZIEXAWGWEXEABUMLZIW
+      EXFJKLZGHZXEXFWEWMWQXCXHXEOWNWRXDWMWQXCFXGWTGABUPUQURWEXFWEABWCWBAUSEZWDA
+      VDQZWDWBBUSEZWCBVDRZXDUTWEXIMAVATZXKMBVBTZMXFVATXJWCWBXMWDWCAAVCVEQXLWDWB
+      XNWCBVFRABVGVHVIVJWEAIEZBIEZBMNZXFIEWCWBXOWDAVKQWDWBXPWCBVKRWDWBXQWCBVLRA
+      BVOURVMXAXEWFIWTCGVNVPVQVRVSVTWA $.
+
+    $( Lemma for pellex .  Arithmetical core of pellexlem3, norm upper bound.
+       (Contributed by Stefan O'Rear, 14-Sep-2014.) $)
+    pellexlem2 $p |- ( ( ( D e. NN /\ A e. NN /\ B e. NN ) /\ ( abs ` ( ( A / B
+        ) - ( sqrt ` D ) ) ) < ( B ^ -u 2 ) ) -> ( abs ` ( ( A ^ 2 ) - ( D x. (
+        B ^ 2 ) ) ) ) < ( 1 + ( 2 x. ( sqrt ` D ) ) ) ) $=
+      ( wcel cdiv co cfv cabs c2 clt wbr cmul caddc c1 oveq2d cc cc0 recnd cle
+      cr cn w3a csqrt cmin cneg cexp simpl3 resqcld sqge0d absidd eqcomd simpl2
+      nnred nncnd sqcld simpl1 mulcld subcld cap nnap0d sqap0 biimpar absdivapd
+      wa syl2anc eqtr4d divcanap2d divsubdirapd sqdivapd wceq nn0ge0d remsqsqrt
+      abscld nnnn0d resqrtcld sqvald divcanap4d 3eqtr4rd oveq12d divclapd subsq
+      addcld nndivred resubcld mulcomd eqtrd 3eqtrd 3eqtr3d absmuld remulcld cz
+      fveq2d 2nn0 nn0negzi a1i reexpclzapd 2re readdcld simpr wb nngt0d divgt0d
+      1red sqrtgt0 addgt0d gt0ap0d absgt0ap biimpa ltmul1 mpbid sqgt0apd ltmul2
+      syl112anc expclzapd mulass syl3anc cn0 expnegap0 recidapd mullidd addcomd
+      oveq1d ppncan 2times syl abstrid 0le2 sqrtge0d mulge0d nnsqcld 0lt1 lerec
+      nnge1d syl22anc 1div1e1 breqtrdi eqbrtrd ltletrd ltled leadd1dd letrd ) C
+      UADZAUADZBUADZUBZABEFZCUCGZUDFZHGZBIUEZUFFZJKZVDZAIUFFZCBIUFFZLFZUDFZHGZU
+      UOUUHUUFUUGMFZLFZHGZLFZNIUUGLFZMFZJUUMUUOUURUUOEFZLFUUOUUQUUOEFZHGZLFUURU
+      VBUUMUVEUVGUUOLUUMUVEUURUUOHGZEFUVGUUMUUOUVHUUREUUMUVHUUOUUMUUOUUMBUUMBUU
+      BUUCUUDUULUGZUMZUHZUUMBUVJUIUJUKOUUMUUQUUOUUMUUNUUPUUMAUUMAUUBUUCUUDUULUL
+      ZUNZUOZUUMCUUOUUMCUUBUUCUUDUULUPZUNZUUMBUUMBUVIUNZUOZUQZURZUVRUUMBPDZBQUS
+      KZUUOQUSKZUVQUUMBUVIUTZUWAUWCUWBBVAVBVEZVCVFOUUMUURUUOUUMUURUUMUUQUVTVMRU
+      VRUWEVGUUMUVGUVAUUOLUUMUVFUUTHUUMUVFUUNUUOEFZUUPUUOEFZUDFUUFIUFFZUUGIUFFZ
+      UDFZUUTUUMUUNUUPUUOUVNUVSUVRUWEVHUUMUWFUWHUWGUWIUDUUMUWHUWFUUMABUVMUVQUWD
+      VIUKUUMUUGUUGLFZCUWIUWGUUMCTDZQCSKUWKCVJUUMCUVOUMZUUMCUUMCUVOVNVKZCVLVEUU
+      MUUGUUMUUGUUMCUWMUWNVOZRZVPUUMCUUOUVPUVRUWEVQVRVSUUMUWJUUSUUHLFZUUTUUMUUF
+      PDZUUGPDZUWJUWQVJUUMABUVMUVQUWDVTZUWPUUFUUGWAVEUUMUUSUUHUUMUUFUUGUWTUWPWB
+      ZUUMUUHUUMUUFUUGUUMABUUMAUVLUMZUVIWCZUWOWDZRZWEWFWGWLOWHUUMUVBUUOUUIUUSHG
+      ZLFZLFZUVDJUUMUVAUXGUUOLUUMUUHUUSUXEUXAWIOUUMUXHUUOUUKUXFLFZLFZUVDUUMUUOU
+      XGUVKUUMUUIUXFUUMUUHUXEVMZUUMUUSUXAVMZWJZWJUUMUUOUXIUVKUUMUUKUXFUUMBUUJUV
+      JUWDUUJWKDUUMIWMWNWOZWPZUXLWJZWJUUMNUVCUUMXCZUUMIUUGITDUUMWQWOZUWOWJZWRZU
+      UMUXGUXIJKZUXHUXJJKZUUMUULUYAUUEUULWSZUUMUUITDUUKTDUXFTDQUXFJKZUULUYAWTUX
+      KUXOUXLUUMUUSPDZUUSQUSKZUYDUXAUUMUUSUUMUUFUUGUXCUWOWRUUMUUFUUGUXCUWOUUMAB
+      UXBUVJUUMAUVLXAUUMBUVIXAXBUUMUWLQCJKQUUGJKUWMUUMCUVOXACXDVEXEXFUYEUYFUYDU
+      USXGXHVEUUIUUKUXFXIXMXJUUMUXGTDUXITDUUOTDZQUUOJKZUYAUYBWTUXMUXPUVKUUMBUVJ
+      UWDXKZUXGUXIUUOXLXMXJUUMUXJUXFUVDSUUMUXJUUOUUKLFZUXFLFZNUXFLFUXFUUMUUOPDZ
+      UUKPDZUXFPDZUXJUYKVJUVRUUMBUUJUVQUWDUXNXNUUMUXFUXLRZUYLUYMUYNUBUYKUXJUUOU
+      UKUXFXOUKXPUUMUYJNUXFLUUMUYJUUONUUOEFZLFNUUMUUKUYPUUOLUUMUWAUWBIXQDZUUKUY
+      PVJUVQUWDUYQUUMWMWOBIXRXPZOUUMUUOUVRUWEXSWFYBUUMUXFUYOXTWGUUMUXFUUHUVCMFZ
+      HGZUVDSUUMUUSUYSHUUMUUSUUGUUFMFZUUGUUGMFZUUHMFZUYSUUMUUFUUGUWTUWPYAUUMUWS
+      UWSUWRVUAVUCVJUWPUWPUWTUWSUWSUWRUBVUCVUAUUGUUGUUFYCUKXPUUMVUCUUHVUBMFUYSU
+      UMVUBUUHUUMUUGUUGUWPUWPWBUXEYAUUMVUBUVCUUHMUUMUWSVUBUVCVJUWPUWSUVCVUBUUGY
+      DUKYEOWFWGWLUUMUYTUUIUVCHGZMFZUVDUUMUYSUUMUYSUUMUUHUVCUXDUXSWRRVMUUMUUIVU
+      DUXKUUMUVCUUMUVCUXSRZVMWRUXTUUMUUHUVCUXEVUFYFUUMVUEUUIUVCMFUVDSUUMVUDUVCU
+      UIMUUMUVCUXSUUMIUUGUXRUWOQISKUUMYGWOUUMCUWMUWNYHYIUJOUUMUUINUVCUXKUXQUXSU
+      UMUUINUXKUXQUUMUUIUUKNUXKUXOUXQUYCUUMUUKUYPNSUYRUUMUYPNNEFZNSUUMNUUOSKZUY
+      PVUGSKZUUMUUOUUMBUVIYJYMUUMNTDQNJKZUYGUYHVUHVUIWTUXQVUJUUMYKWOUVKUYINUUOY
+      LYNXJYOYPYQYRYSYTYQUUAYQYQYRYQYQ $.
+
+    ${
+      $d D x y z $.
+      $( Lemma for pellex .  To each good rational approximation of
+         ` ( sqrt `` D ) ` , there exists a near-solution.  (Contributed by
+         Stefan O'Rear, 14-Sep-2014.) $)
+      pellexlem3 $p |- ( ( D e. NN /\ -. ( sqrt ` D ) e. QQ ) -> { x e. QQ |
+       ( 0 < x /\ ( abs ` ( x - ( sqrt ` D ) ) ) < ( ( denom ` x ) ^ -u 2 ) ) }
+          ~<_ { <. y , z >. | ( ( y e. NN /\ z e. NN ) /\ ( ( ( y ^ 2 ) - ( D
+          x. ( z ^ 2 ) ) ) =/= 0 /\ ( abs ` ( ( y ^ 2 ) - ( D x. ( z ^ 2 ) ) )
+          ) < ( 1 + ( 2 x. ( sqrt ` D ) ) ) ) ) } ) $=
+        ( cn wcel cfv cq wa cv c2 cexp co cmin cc0 cabs clt wbr cdenom wceq wne
+        va vb csqrt wn cmul c1 caddc copab cvv cneg crab cdom cxp nnex opabssxp
+        xpex ssexi cnumer cop breq2 fvoveq1 fveq2 oveq1d breq12d anbi12d simprl
+        elrab simprrl qgt0numnn syl2anc qdencl syl jca simpll simplr pellexlem1
+        syl31anc cdiv simprrr qeqnumdivden fveq2d breq1d mpbid pellexlem2 jca32
+        wb sylan2b cz qnumcl eleq1 anbi1d neeq1d anbi2d oveq2d opelopabg mpbird
+        oveq1 ssrab2 sselid simprr opthg adantr oveq12d 3eqtr4d opeq12d impbid1
+        ex sylbid dom2d mpi ) DEFZDUDGZHFUEZIZBJZEFZCJZEFZIZXPKLMZDXRKLMZUFMZNM
+        ZOUAZYDPGZUGKXMUFMUHMZQRZIZIZBCUIZUJFOAJZQRZYLXMNMPGZYLSGZKUKZLMZQRZIZA
+        HULZYKUMRYKEEUNEEUOUOUQYIBCEEUPURXOUBUCYTYKUBJZUSGZUUASGZUTZUCJZUSGZUUE
+        SGZUTZUJXOUUAYTFZUUDYKFZXOUUIIUUJUUBEFZUUCEFZIZUUBKLMZDUUCKLMZUFMZNMZOU
+        AZUUQPGZYGQRZIZIZUUIXOUUAHFZOUUAQRZUUAXMNMZPGZUUCYPLMZQRZIZIZUVBYSUVIAU
+        UAHYLUUATZYMUVDYRUVHYLUUAOQVAUVKYNUVFYQUVGQYLUUAXMPNVBUVKYOUUCYPLYLUUAS
+        VCVDVEVFVHZXOUVJIZUUMUURUUTUVMUUKUULUVMUVCUVDUUKXOUVCUVIVGZXOUVCUVDUVHV
+        IUUAVJVKZUVMUVCUULUVNUUAVLZVMZVNUVMXLUUKUULXNUURXLXNUVJVOZUVOUVQXLXNUVJ
+        VPUUBUUCDVQVRUVMXLUUKUULUUBUUCVSMZXMNMZPGZUVGQRZUUTUVRUVOUVQUVMUVHUWBXO
+        UVCUVDUVHVTUVMUVCUVHUWBWGUVNUVCUVFUWAUVGQUVCUVEUVTPUVCUUAUVSXMNUUAWAZVD
+        WBWCVMWDUUBUUCDWEVRWFWHUUIXOUVJUUJUVBWGZUVLUVMUVCUWDUVNUVCUUBWIFZUULUWD
+        UUAWJZUVPYJUUKXSIZUUNYCNMZOUAZUWHPGZYGQRZIZIUVBBCUUBUUCWIEXPUUBTZXTUWGY
+        IUWLUWMXQUUKXSXPUUBEWKWLUWMYEUWIYHUWKUWMYDUWHOUWMYAUUNYCNXPUUBKLWRVDZWM
+        UWMYFUWJYGQUWMYDUWHPUWNWBWCVFVFXRUUCTZUWGUUMUWLUVAUWOXSUULUUKXRUUCEWKWN
+        UWOUWIUURUWKUUTUWOUWHUUQOUWOYCUUPUUNNUWOYBUUODUFXRUUCKLWRWOWOZWMUWOUWJU
+        USYGQUWOUWHUUQPUWPWBWCVFVFWPVKVMWHWQXHXOUUIUUEYTFZIZUUDUUHTZUUAUUETZWGZ
+        XOUWRIZUVCUUEHFZUXAUXBYTHUUAYSAHWSZXOUUIUWQVGWTUXBYTHUUEUXDXOUUIUWQXAWT
+        UVCUXCIZUWSUWTUXEUWSUUBUUFTZUUCUUGTZIZUWTUVCUWSUXHWGZUXCUVCUWEUULUXIUWF
+        UVPUUBUUCUUFUUGWIEXBVKXCUXEUXHUWTUXEUXHIZUVSUUFUUGVSMZUUAUUEUXJUUBUUFUU
+        CUUGVSUXEUXFUXGVGUXEUXFUXGXAXDUXJUVCUUAUVSTUVCUXCUXHVOUWCVMUXJUXCUUEUXK
+        TUVCUXCUXHVPUUEWAVMXEXHXIUWTUUBUUFUUCUUGUUAUUEUSVCUUAUUESVCXFXGVKXHXJXK
+        $.
+    $}
+  $}
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Basic number theory
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)

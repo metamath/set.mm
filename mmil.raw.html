@@ -18634,6 +18634,52 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>~ apdiff</td>
 </tr>
 
+<tr>
+  <td>irrapx1 and lemmas</td>
+  <td><i>none</i></td>
+  <td>There are parts about the maximum of two real numbers
+  which should work (but with a change in notation).  There
+  are parts about modulus on real numbers which may need to
+  specify irrational numbers or something.  The use of
+  ctbnfien may be adaptable as the subset involved appears
+  to be a decidable subset.  Irrational presumably needs to
+  be expressed as being apart from any rational number.</td>
+</tr>
+
+<tr>
+  <td>pellexlem4</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof uses irrapx1 .  The use of
+  sbth can perhaps be replaced by ~ ctinf .</td>
+</tr>
+
+<tr>
+  <td>pellexlem5</td>
+  <td><i>none</i></td>
+  <td>We'll need to figure out whether there is a version
+  of fiphp3d which works (or a way to replace it).  There's
+  also work to be done on the floor functions (which
+  probably involve some theorems - ~ nonsq or something
+  along those lines - which let us divide into two cases
+  both of which work - for example ~ flqcl and ~ flapcl ).
+  There's a usage of sbth which will need to be looked into.</td>
+</tr>
+
+<tr>
+  <td>pellexlem6</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof would apparently work with small
+  changes</td>
+</tr>
+
+<tr>
+  <td>pellex</td>
+  <td><i>none</i></td>
+  <td>There are some needed changes around set size
+  and fphpd . The set.mm proof uses pellexlem5
+  and pellexlem6 .</td>
+</tr>
+
 </TABLE>
 
 <h2 style="border-top: 1px solid black; color: #006633; font-weight: bold; margin-top: 20px; padding-top: 10px; font-size: 100%">
@@ -18763,9 +18809,8 @@ of Transcendental Numbers</td>
 
   <tr>
     <td>35.  Taylor's Theorem</td>
-    <td>There are a number of things to develop before
-    this is ready to formalize but it seems like it might
-    be within reach.</td>
+    <td>The set.mm proof depends on df-tsms , df-flf, df-tayl ,
+    df-dvn , and df-dgr .</td>
   </tr>
 
   <tr>
@@ -18775,10 +18820,12 @@ of Transcendental Numbers</td>
 
   <tr>
     <td>38.  Arithmetic Mean/Geometric Mean</td>
-    <td>We have ~ amgm2 but assuming we want the version
-    for finite sets seen in set.mm, we can probably just
-    use ` sum_ ` ( ~ df-sumdc ) and ` prod_ ` ( ~ df-proddc )
-    notation rather than navigating constructive fields.
+    <td>We have ~ amgm2 but that's only for two values,
+    not a finite set as in set.mm's amgm .  To use a
+    group sum/product like that, we could use the ` gfsum `
+    ( ~ df-gfsum ) notation.  We could also make a version
+    using the ` sum_ ` ( ~ df-sumdc ) and ` prod_ `
+    ( ~ df-proddc ) notations.
     In set.mm the numbers being added/multiplied are
     nonnegative reals and we probably have to restrict
     to positive reals because the set.mm proof assumes
@@ -19344,6 +19391,13 @@ Springer-Verlag, New York, second edition (1982) [QA248.T136 1982].</LI>
 Formalization of Predicate Logic with Identity,&quot; <I>Archiv f&uuml;r
 Mathematische Logik und Grundlagenforschung,</I> 7:61-79 (1965)
 [QA.A673].</LI>
+
+<LI>
+<A NAME="vandenDries"></A> [vandenDries] van den Dries,  Lou,
+&quot;Recursion Theory Notes, Fall 2011,&quot; archived at <A
+HREF="https://web.archive.org/web/20221003183835/https://faculty.math.illinois.edu/~~vddries/recursion.pdf"
+>https://web.archive.org/web/20221003183835/https://faculty.math.illinois.edu/~~vddries/recursion.pdf</A>.
+</LI>
 
 <LI><A NAME="WhiteheadRussell"></A> [WhiteheadRussell] Whitehead, Alfred
 North, and Bertrand Russell, <I>Principia Mathematica to *56,</I>
