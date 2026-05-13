@@ -105430,6 +105430,23 @@ $)
     WDWLWDWKAWDXCXDWKDEQXGHCVHVIXIVATXRVJWDWLXNWMMWDWLHALJZXLKJXNWDHCAWDVMXPXSV
     KWDXTAXLKWDAXSURVGVLVNVLVOWDWHAWIBIWDAXSVPWDBAXQXSVQUSVR $.
 
+  $( A linear combination of two reals which lies in the interval between them.
+     Like ~ lincmb01cmp but generalized to require merely ` A <_ B ` not
+     ` A < B ` .  (Contributed by Jim Kingdon, 13-May-2026.) $)
+  lincmble $p |- ( ( ( A e. RR /\ B e. RR /\ A <_ B ) /\ T e. ( 0 [,] 1 ) )
+                    -> ( ( ( 1 - T ) x. A ) + ( T x. B ) ) e. ( A [,] B ) ) $=
+    ( cr wcel cle wbr w3a cc0 c1 cicc co cmul caddc 1red adantl remulcld oveq1d
+    recnd adddird wa cmin 0re 1re elicc2i simp1bi resubcld simpl1 readdcld 1cnd
+    mullidd 3eqtr3rd simp2bi lemul2ad leadd2dd eqbrtrd simp3bi subge0d leadd1dd
+    simpl2 npcand simpl3 mpbird 3eqtr3d breqtrd elicc2 3adant3 adantr mpbir3and
+    wb ) ADEZBDEZABFGZHZCIJKLEZUAZJCUBLZAMLZCBMLZNLZABKLEZVTDEZAVTFGZVTBFGZVPVR
+    VSVPVQAVPJCVPOVOCDEZVNVOWEICFGZCJFGZIJCUCUDUEZUFZPZUGZVKVLVMVOUHZQZVPCBWJVK
+    VLVMVOUTZQZUIVPAVRCAMLZNLZVTFVPVQCNLZAMLJAMLWQAVPWRJAMVPJCVPUJVPCWJSZVAZRVP
+    VQCAVPVQWKSZWSVPAWLSZTVPAXBUKULVPWPVSVRVPCAWJWLQWOWMVPABCWLWNWJVOWFVNVOWEWF
+    WGWHUMPVKVLVMVOVBZUNUOUPVPVTVQBMLZVSNLZBFVPVRXDVSWMVPVQBWKWNQWOVPABVQWLWNWK
+    VOIVQFGZVNVOXFWGVOWEWFWGWHUQVOJCVOOWIURVCPXCUNUSVPWRBMLJBMLXEBVPWRJBMWTRVPV
+    QCBXAWSVPBWNSZTVPBXGUKVDVEVNWAWBWCWDHVJZVOVKVLXHVMABVTVFVGVHVI $.
+
   ${
     $d x y A $.  $d x y B $.
     iccf1o.1 $e |- F = ( x e. ( 0 [,] 1 ) |->
