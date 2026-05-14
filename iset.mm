@@ -71174,6 +71174,15 @@ $)
       BKPBCLMN $.
   $}
 
+  ${
+    fsuppfund.1 $e |- ( ph -> F finSupp Z ) $.
+    $( A finitely supported function is a function.  (Contributed by SN,
+       8-Mar-2025.) $)
+    fsuppfund $p |- ( ph -> Fun F ) $=
+      ( cfsupp wbr wfun csupp co cfn wcel fsuppimp simpld syl ) ABCEFZBGZDOPBCH
+      IJKBCLMN $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
