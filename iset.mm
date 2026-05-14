@@ -71116,6 +71116,12 @@ $)
        to a given zero).  (Contributed by AV, 23-May-2019.) $)
     df-fsupp $a |- finSupp
                    = { <. r , z >. | ( Fun r /\ ( r supp z ) e. Fin ) } $.
+
+    $( The property of a function to be finitely supported is a relation.
+       (Contributed by AV, 7-Jun-2019.) $)
+    relfsupp $p |- Rel finSupp $=
+      ( vr vz cv wfun csupp co cfn wcel wa cfsupp df-fsupp relopabiv ) ACZDMBCE
+      FGHIABJBAKL $.
   $}
 
 
