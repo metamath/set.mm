@@ -16726,6 +16726,22 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td id="missing-amgmlem">scvxcvx , jensenlem1 ,
+  jensenlem2 , jensen , amgmlem</td>
+  <td><i>none</i></td>
+  <td>the set.mm proofs depend on cvxcl</td>
+</tr>
+
+<tr>
+  <td>amgm</td>
+  <td><i>none</i></td>
+  <td>This extends amgmlem from positive reals to
+  nonnegative reals. It seems unlikely that we'd
+  be able to do that in the absence of real number
+  trichotomy or something similar.</td>
+</tr>
+
+<tr>
   <td>basellem1</td>
   <td><i>none</i></td>
   <td>the set.mm proof should work with small changes</td>
@@ -18829,10 +18845,12 @@ of Transcendental Numbers</td>
 
   <tr>
     <td>38.  Arithmetic Mean/Geometric Mean</td>
-    <td>We have ~ amgm2 but that's only for two values,
-    not a finite set as in set.mm's amgm .  To use a
-    group sum/product like that, we could use the ` gfsum `
-    ( ~ df-gfsum ) notation.  We could also make a version
+    <td>We have ~ amgm2 ; for the version for finite sets
+    seen in set.mm see <a
+    href="#missing-amgmlem" >entry for theorem amgmlem
+    above</a> .  As for notation we could
+    use the ` gfsum ` ( ~ df-gfsum ) notation (roughly as
+    set.mm does). We could also make a version
     using the ` sum_ ` ( ~ df-sumdc ) and ` prod_ `
     ( ~ df-proddc ) notations.
     In set.mm the numbers being added/multiplied are
