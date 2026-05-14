@@ -71124,6 +71124,11 @@ $)
       FGHIABJBAKL $.
   $}
 
+  $( A proper class is never finitely supported.  (Contributed by AV,
+     7-Jun-2019.) $)
+  relprcnfsupp $p |- ( -. A e. _V -> -. A finSupp Z ) $=
+    ( cfsupp wbr cvv wcel relfsupp brrelex1i con3i ) ABCDAEFABCGHI $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
