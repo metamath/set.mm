@@ -71222,6 +71222,20 @@ $)
     fun0 0ex mp3an12 mpbird ) BACZDBEFZDBGHZICZUAUCDIABJKLDMDNCUAUBUDOQRDNABPST
     $.
 
+  ${
+    snopfsuppdc.x $e |- ( ph -> X e. V ) $.
+    snopfsuppdc.y $e |- ( ph -> Y e. W ) $.
+    snopfsuppdc.z $e |- ( ph -> Z e. U ) $.
+    snopfsuppdc.dc $e |- ( ph -> DECID Y = Z ) $.
+    $( A singleton containing an ordered pair is a finitely supported function.
+       (Contributed by AV, 19-Jul-2019.) $)
+    snopfsuppdc $p |- ( ph -> { <. X , Y >. } finSupp Z ) $=
+      ( cop csn cvv wcel opexg syl2anc syl c0 cfn snexg wfun funsng co wceq cif
+      csupp eqid suppsnopdc 0fi a1i snfig ifcldcd eqeltrd isfsuppd ) AEFLZMZNBG
+      AUPNOZUQNOAECOZFDOZURHIEFCDPQUPNUARJAUSUTUQUBHIEFCDUCQAUQGUGUDFGUEZSEMZUF
+      TABUQCDEFGUQUHHIJKUIAVASVBTSTOAUJUKAUSVBTOHECULRKUMUNUO $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
