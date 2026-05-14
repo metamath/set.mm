@@ -71159,6 +71159,12 @@ $)
     bicomd bitrd ) AEZABFZDCFZGADHIZUAADJKLFZMZUEUBUCUDUFNUAABCDOPUAUBUFUENUCUA
     UEUFUAUEQSRT $.
 
+  $( Implications of a class being a finitely supported function (in relation
+     to a given zero).  (Contributed by AV, 26-May-2019.) $)
+  fsuppimp $p |- ( R finSupp Z -> ( Fun R /\ ( R supp Z ) e. Fin ) ) $=
+    ( cvv wcel wa cfsupp wbr wfun csupp co cfn relfsupp brrelex12i biimpd mpcom
+    isfsupp ) ACDBCDEZABFGZAHABIJKDEZABFLMQRSACCBPNO $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
