@@ -71183,6 +71183,20 @@ $)
       IJKBCLMN $.
   $}
 
+  $( If two functions have the same support, one function is finitely supported
+     iff the other one is finitely supported.  (Contributed by AV,
+     30-Jun-2019.) $)
+  suppeqfsuppbi $p |- ( ( ( F e. U /\ Fun F ) /\ ( G e. V /\ Fun G ) )
+                        -> ( ( F supp Z ) = ( G supp Z )
+                             -> ( F finSupp Z <-> G finSupp Z ) ) ) $=
+    ( wcel wfun wa csupp co cfsupp wbr wb cvv relfsupp brrelex2i a1i cfn adantr
+    wi wceq simprlr simprll simpl funisfsupp syl3anc simpr adantl impcom bicomd
+    ex eleq1 sylan9bb bitr4d expl com12 pm5.21ndd ) BAFZBGZHZCDFZCGZHZHZBEIJZCE
+    IJZUAZBEKLZCEKLZMZVDVGHZENFZVHVIVHVLTVKBEKOPQVIVLTVKCEKOPQVLVKVJVLVDVGVJVLV
+    DHZVGHVHVERFZVIVMVHVNMZVGVMUSURVLVOVLURUSVCUBVLURUSVCUCVLVDUDBANEUEUFSVMVIV
+    FRFZVGVNVDVLVIVPMZVCVLVQTUTVCVLVQVCVLHVBVAVLVQVCVBVLVAVBUGSVCVAVLVAVBUDSVCV
+    LUGCDNEUEUFUKUHUIVGVNVPVEVFRULUJUMUNUOUPUQUK $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
