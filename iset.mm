@@ -71140,6 +71140,17 @@ $)
       FDTZMZUEUIUHUKULUEUIOUMUDAPQUNUGUJKUDAUFDIRSUAFEUBUC $.
   $}
 
+  ${
+    isfsuppd.r $e |- ( ph -> R e. V ) $.
+    isfsuppd.z $e |- ( ph -> Z e. W ) $.
+    isfsuppd.1 $e |- ( ph -> Fun R ) $.
+    isfsuppd.2 $e |- ( ph -> ( R supp Z ) e. Fin ) $.
+    $( Deduction form of ~ isfsupp .  (Contributed by SN, 29-Jul-2024.) $)
+    isfsuppd $p |- ( ph -> R finSupp Z ) $=
+      ( cfsupp wbr wfun csupp co cfn wcel wa wb isfsupp syl2anc mpbir2and ) ABE
+      JKZBLZBEMNOPZHIABCPEDPUBUCUDQRFGBCDESTUA $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
