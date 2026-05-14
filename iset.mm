@@ -71165,6 +71165,15 @@ $)
     ( cvv wcel wa cfsupp wbr wfun csupp co cfn relfsupp brrelex12i biimpd mpcom
     isfsupp ) ACDBCDEZABFGZAHABIJKDEZABFLMQRSACCBPNO $.
 
+  ${
+    fsuppimpd.f $e |- ( ph -> F finSupp Z ) $.
+    $( A finitely supported function is a function with a finite support.
+       (Contributed by AV, 6-Jun-2019.) $)
+    fsuppimpd $p |- ( ph -> ( F supp Z ) e. Fin ) $=
+      ( cfsupp wbr csupp co cfn wcel wfun fsuppimp simprd syl ) ABCEFZBCGHIJZDO
+      BKPBCLMN $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
