@@ -7563,13 +7563,17 @@ favor of theorems in deduction form.</TD>
 <TD>Presumably provable from ~ arch but unused in set.mm.</TD>
 </TR>
 
-<TR>
-<TD>frnnn0supp , frnnn0fsupp</TD>
-<TD>~ nn0supp </TD>
-<TD>iset.mm does not yet have either the notation, or in some
-cases the theorems, related to the support of a function or
-a fintely supported function.</TD>
-</TR>
+<tr>
+  <td>fcdmnn0fsupp</td>
+  <td>~ fcdmnn0supp</td>
+  <td>should be possible once we have finSupp</td>
+</tr>
+
+<tr>
+  <td>fcdmnn0fsuppg</td>
+  <td>~ fcdmnn0suppg</td>
+  <td>should be possible once we have finSupp</td>
+</tr>
 
 <TR>
 <TD>suprzcl</TD>
@@ -13257,13 +13261,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>rrgsupp</td>
-  <td><i>none</i></td>
-  <td>even if we have notation(s) for support, support theorems
-  will not necessarily behave as in set.mm</td>
-</tr>
-
-<tr>
   <td>isdomn5</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses excluded middle and it seems unlikely
@@ -14109,7 +14106,7 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>Applying ~ psrbag , ~ psrbagf , and ~ off can reduce
   the problem to showing that ` ( ``' ( F oF + G ) " NN ) `
   is finite.  If staying close to the set.mm proof, we'd
-  need suppofssd , finSupp , fcdmnn0suppg , psrbagfsupp ,
+  need suppofssd , finSupp , psrbagfsupp ,
   and fsuppunfi (or suitable replacements).</td>
 </tr>
 
@@ -18840,7 +18837,10 @@ of Transcendental Numbers</td>
 
   <tr>
     <td>45.  The Partition Theorem</td>
-    <td>The set.mm proof uses df-ind and supp .</td>
+    <td>The set.mm proof uses df-ind , indf1ofs, funisfsupp .
+    fcobijfs , indf1o , and perhaps others not yet present.
+    There may be enough decidability for the indicator
+    function usages to be adaptable.</td>
   </tr>
 
   <tr>
