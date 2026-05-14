@@ -71100,6 +71100,27 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Finitely supported functions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c finSupp $.  $( Class for predicate "finitely supported function". $)
+
+  $( Extend class definition to include the predicate to be a finitely
+     supported function. $)
+  cfsupp $a class finSupp $.
+
+  ${
+    $d r z $.
+    $( Define the property of a function to be finitely supported (in relation
+       to a given zero).  (Contributed by AV, 23-May-2019.) $)
+    df-fsupp $a |- finSupp
+                   = { <. r , z >. | ( Fun r /\ ( r supp z ) e. Fin ) } $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Finite intersections
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -204616,6 +204637,9 @@ htmldef "Fin" as
     "<IMG SRC='_fin.gif' WIDTH=21 HEIGHT=19 ALT=' Fin' TITLE='Fin'>";
   althtmldef "Fin" as 'Fin';
   latexdef "Fin" as "\mathrm{Fin}";
+htmldef "finSupp" as ' finSupp ';
+  althtmldef "finSupp" as ' finSupp ';
+  latexdef "finSupp" as "\mathrm{finSupp}";
 htmldef "iota_" as
     "<IMG SRC='_riotabar.gif' WIDTH=6 HEIGHT=19 ALT=' iota_' TITLE='iota_'>";
   althtmldef "iota_" as '<U>&#8489;</U>';
