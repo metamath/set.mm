@@ -71197,6 +71197,13 @@ $)
     FRFZVGVNVDVLVIVPMZVCVLVQTUTVCVLVQVCVLHVBVAVLVQVCVBVLVAVBUGSVCVAVLVAVBUDSVCV
     LUGCDNEUEUFUKUHUIVGVNVPVEVFRULUJUMUNUOUPUQUK $.
 
+  $( The cartesian product of two finitely supported functions is finite.
+     (Contributed by AV, 17-Jul-2019.) $)
+  fsuppxpfi $p |- ( ( F finSupp Z /\ G finSupp Z )
+                    -> ( ( F supp Z ) X. ( G supp Z ) ) e. Fin ) $=
+    ( cfsupp wbr csupp co cfn wcel cxp id fsuppimpd xpfi syl2an ) ACDEZACFGZHIB
+    CFGZHIPQJHIBCDEZOACOKLRBCRKLPQMN $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
