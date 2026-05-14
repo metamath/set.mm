@@ -71215,6 +71215,13 @@ $)
       NGAUKUJBOUJPGBEDQBUJRSUJEUAUBZTKAULUCTBEUDUEUFUGUH $.
   $}
 
+  $( The empty set is a finitely supported function.  (Contributed by AV,
+     19-Jul-2019.) $)
+  0fsupp $p |- ( Z e. V -> (/) finSupp Z ) $=
+    ( wcel c0 cfsupp wbr csupp co cfn supp0 0fi eqeltrdi wfun cvv wb funisfsupp
+    fun0 0ex mp3an12 mpbird ) BACZDBEFZDBGHZICZUAUCDIABJKLDMDNCUAUBUDOQRDNABPST
+    $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
