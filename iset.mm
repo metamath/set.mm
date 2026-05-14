@@ -71204,6 +71204,17 @@ $)
     ( cfsupp wbr csupp co cfn wcel cxp id fsuppimpd xpfi syl2an ) ACDEZACFGZHIB
     CFGZHIPQJHIBCDEZOACOKLRBCRKLPQMN $.
 
+  ${
+    fczfsuppd.b $e |- ( ph -> B e. V ) $.
+    fczfsuppd.z $e |- ( ph -> Z e. W ) $.
+    $( A constant function with value zero is finitely supported.  (Contributed
+       by AV, 30-Jun-2019.) $)
+    fczfsuppd $p |- ( ph -> ( B X. { Z } ) finSupp Z ) $=
+      ( csn cxp cvv wcel snexg syl xpexd wfn wfun fnconstg fnfun 3syl cfn csupp
+      co c0 fczsupp0 0fi eqeltri a1i isfsuppd ) ABEHZIZJDEABUICJFAEDKZUIJKGEDLM
+      NGAUKUJBOUJPGBEDQBUJRSUJEUAUBZTKAULUCTBEUDUEUFUGUH $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
