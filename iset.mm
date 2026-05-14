@@ -71151,6 +71151,14 @@ $)
       JKZBLZBEMNOPZHIABCPEDPUBUCUDQRFGBCDESTUA $.
   $}
 
+  $( The property of a function to be finitely supported (in relation to a
+     given zero).  (Contributed by AV, 23-May-2019.) $)
+  funisfsupp $p |- ( ( Fun R /\ R e. V /\ Z e. W )
+                     -> ( R finSupp Z <-> ( R supp Z ) e. Fin ) ) $=
+    ( wfun wcel w3a cfsupp wbr csupp co cfn wa wb isfsupp 3adant1 ibar 3ad2ant1
+    bicomd bitrd ) AEZABFZDCFZGADHIZUAADJKLFZMZUEUBUCUDUFNUAABCDOPUAUBUFUENUCUA
+    UEUFUAUEQSRT $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
