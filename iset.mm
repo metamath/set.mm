@@ -71236,6 +71236,16 @@ $)
       TABUQCDEFGUQUHHIJKUIAVASVBTSTOAUJUKAUSVBTOHECULRKUMUNUO $.
   $}
 
+  $( Two ways of saying that a function with known codomain is finitely
+     supported.  (Contributed by AV, 8-Jul-2019.) $)
+  ffsuppbi $p |- ( ( I e. V /\ Z e. W ) -> ( F : I --> S
+                 -> ( F finSupp Z <-> ( `' F " ( S \ { Z } ) ) e. Fin ) ) ) $=
+    ( wcel wa wf cfsupp wbr ccnv csn cdif cima cfn wb csupp cvv imp wfun adantl
+    co ffun wi fex expcom adantr simplr funisfsupp syl3anc fsuppeq eleq1d bitrd
+    wceq ex ) CDGZFEGZHZCABIZBFJKZBLAFMNOZPGZQUSUTHZVABFRUCZPGZVCVDBUAZBSGZURVA
+    VFQUTVGUSCABUDUBUSUTVHUQUTVHUEURUTUQVHCADBUFUGUHTUQURUTUIBSEFUJUKVDVEVBPUSU
+    TVEVBUOABCDEFULTUMUNUP $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
