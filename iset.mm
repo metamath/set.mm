@@ -71246,6 +71246,29 @@ $)
     VFQUTVGUSCABUDUBUSUTVHUQUTVHUEURUTUQVHCADBUFUGUHTUQURUTUIBSEFUJUKVDVEVBPUSU
     TVEVBUOABCDEFULTUMUNUP $.
 
+  ${
+    fsuppco.f $e |- ( ph -> F finSupp Z ) $.
+    fsuppco.g $e |- ( ph -> G : X -1-1-> Y ) $.
+    fsuppco.z $e |- ( ph -> Z e. W ) $.
+    fsuppco.v $e |- ( ph -> F e. V ) $.
+    fsuppcorn.g $e |- ( ph -> G e. U ) $.
+    fsuppcorn.rn $e |- ( ph -> ( F supp Z ) C_ ran G ) $.
+    $( The composition of a 1-1 function with a finitely supported function is
+       finitely supported.  The purpose of the ` ( F supp Z ) C_ ran G `
+       condition is to ensure we don't subset the support of the function in
+       such a way as to fun afoul of ~ exmidssfi .  (Other alternative
+       conditions might also be sufficient).  (Contributed by AV, 28-May-2019.)
+       (Revised by Jim Kingdon, 15-May-2026.) $)
+    fsuppcorn $p |- ( ph -> ( F o. G ) finSupp Z ) $=
+      ( wcel wfun syl syl2anc cfn ccom cvv ccnv wf1 simprbi cofunex2g fsuppfund
+      df-f1 f1fun funco csupp cima wceq suppcofn syl22anc cen wbr fsuppimpd crn
+      wf co wss wf1o f1cnv f1of1 f1imaeng syl3anc enfii eqeltrd isfsuppd ) ACDU
+      AZUBFIACEPZDUCZQZVKUBPMAGHDUDZVNKVOGHDUTVNGHDUHUERCDEUFSLACQZDQZVKQACIJUG
+      ZAVOVQKGHDUIRZCDUJSAVKIUKVAZVMCIUKVAZULZTAVLDBPVPVQVTWBUMMNVRVSCDEBIUNUOA
+      WATPZWBWAUPUQZWBTPACIJURZADUSZGVMUDZWAWFVBWCWDAWFGVMVCZWGAVOWHKGHDVDRWFGV
+      MVEROWEWFGWAVMTVFVGWBWAVHSVIVJ $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
