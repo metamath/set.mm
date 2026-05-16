@@ -426106,6 +426106,293 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Omnific integers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare a new constant. $)
+  $c Oz $.
+
+  $( Declare the syntax for the omnific integers. $)
+  coz $a class Oz $.
+
+  $( Define the omnific integers.  These are a generalization of the integers
+     for the surreals.  Much later we will prove that the surreals are the
+     spliting field for the ring of omnific integers.  Definiton from [Conway]
+     p. 45.  (Contributed by Scott Fenton, 15-May-2026.) $)
+  df-oz $a |- Oz = { x e. No | x = ( { ( x -s 1s ) } |s { ( x +s 1s ) } ) } $.
+
+  $( The cut involved in ~ df-oz makes sense.  (Contributed by Scott Fenton,
+     16-May-2026.) $)
+  ozcut $p |- ( A e. No -> { ( A -s 1s ) } <<s { ( A +s 1s ) } ) $=
+    ( csur c1s csubs co cadds 1no subscl mpan2 peano2no id ltsm1d ltsp1d ltstrd
+    wcel sltssn ) ABOZACDEZACFEZQCBORBOGACHIZAJZQRASTQKZUAQAUBLQAUBMNP $.
+
+  ${
+    ozcutd.1 $e |- ( ph -> A e. No ) $.
+    $( The cut involved in ~ df-oz makes sense.  (Contributed by Scott Fenton,
+       16-May-2026.) $)
+    ozcutd $p |- ( ph -> { ( A -s 1s ) } <<s { ( A +s 1s ) } ) $=
+      ( csur wcel c1s csubs co csn cadds cslts wbr ozcut syl ) ABDEBFGHIBFJHIKL
+      CBMN $.
+  $}
+
+  ${
+    $d A x $.
+    $( Membership in the omnific integers.  (Contributed by Scott Fenton,
+       15-May-2026.) $)
+    eloz $p |- ( A e. Oz <->
+    ( A e. No /\ A = ( { ( A -s 1s ) } |s { ( A +s 1s ) } ) ) ) $=
+      ( vx cv c1s csubs co csn cadds ccuts wceq csur coz id oveq1 sneqd oveq12d
+      eqeq12d df-oz elrab2 ) BCZTDEFZGZTDHFZGZIFZJAADEFZGZADHFZGZIFZJBAKLTAJZTA
+      UEUJUKMUKUBUGUDUIIUKUAUFTADENOUKUCUHTADHNOPQBRS $.
+  $}
+
+  $( An omnific integer is a surreal.  (Contributed by Scott Fenton,
+     15-May-2025.) $)
+  ozno $p |- ( A e. Oz -> A e. No ) $=
+    ( coz wcel csur c1s csubs co csn cadds ccuts wceq eloz simplbi ) ABCADCAAEF
+    GHAEIGHJGKALM $.
+
+  ${
+    oznod.1 $e |- ( ph -> A e. Oz ) $.
+    $( An omnific integer is a surreal.  (Contributed by Scott Fenton,
+       16-May-2026.) $)
+    oznod $p |- ( ph -> A e. No ) $=
+      ( coz wcel csur ozno syl ) ABDEBFECBGH $.
+  $}
+
+  ${
+    $( The omnific integers are closed under negation.  Theorem 30(ii) of
+       [Conway] p. 45.  (Contributed by Scott Fenton, 15-May-2026.) $)
+    oznegcl $p |- ( A e. Oz -> ( -us ` A ) e. Oz ) $=
+      ( csur wcel c1s csubs co csn cadds ccuts wceq cnegs cfv coz negscl adantr
+      wa cima 1no mpan2 eqtrd cslts wbr ozcut negsunif negsfn peano2no fnimasnd
+      simpr wfn a1i negsdi subsvald eqtr4d sneqd subscl id fveq2d ax-mp negnegs
+      oveq2i eqtrdi oveq12d jca eloz 3imtr4i ) ABCZAADEFZGZADHFZGZIFJZPZAKLZBCZ
+      VMVMDEFZGZVMDHFZGZIFZJZPAMCVMMCVLVNVTVFVNVKANZOVLVMKVJQZKVHQZIFZVSVLAVJVH
+      VFVHVJUAUBVKAUCOVFVKUHUDVFWDVSJVKVFWBVPWCVRIVFWBVIKLZGVPVFBVIKKBUIVFUEUJZ
+      AUFUGVFWEVOVFWEVMDKLZHFZVOVFDBCZWEWHJRADUKSVFVMDWAWIVFRUJZULUMUNTVFWCVGKL
+      ZGVRVFBVGKWFVFWIVGBCRADUOSUGVFWKVQVFWKVMWGKLZHFZVQVFWKAWGHFZKLZWMVFVGWNKV
+      FADVFUPWJULUQVFWGBCZWOWMJWIWPRDNURAWGUKSTWLDVMHWIWLDJRDUSURUTVAUNTVBOTVCA
+      VDVMVDVE $.
+  $}
+
+  $( Zero is an omnific integer.  Theorem 30(i) of [Conway] p. 45.
+     (Contributed by Scott Fenton, 15-May-2026.) $)
+  0oz $p |- 0s e. Oz $=
+    ( c0s wcel csur c1s co csn ccuts wceq 0no cnegs cfv 1no ax-mp wtru a1i clts
+    sneqi wbr 0lt1s sltssn csubs negsval2 eqcomi addslid oveq12i negscl ltnegsd
+    coz cadds mpbii neg0s breqtrdi cuteq0 mptru eqtr2i eloz mpbir2an ) AUHBACBZ
+    AADUAEZFZADUIEZFZGEZHIVCDJKZFZDFZGEZAUTVEVBVFGUSVDVDUSDCBZVDUSHLDUBMUCQVADV
+    HVADHLDUDMQUEVGAHNVEVFNVDAVDCBZNVHVILDUFMOURNIOZNVDAJKZAPNADPRZVDVKPRSNADVJ
+    VHNLOZUGUJUKULTNADVJVMVLNSOTUMUNUOAUPUQ $.
+
+  $( One is an omnific integer.  (Contributed by Scott Fenton, 15-May-2026.) $)
+  1oz $p |- 1s e. Oz $=
+    ( c1s coz wcel csur csubs co csn cadds ccuts wceq subsid ax-mp sneqi oveq1i
+    1no c0s wtru 0no a1i sltssn elexi snid clts wbr 0lt1s addscld ltsp1d cuteq1
+    mptru eqtr2i eloz mpbir2an ) ABCADCZAAAEFZGZAAHFZGZIFZJOURPGZUQIFZAUOUSUQIU
+    NPUMUNPJOAKLMNUTAJQUSUQPUSCQPPDRUAUBSQPAPDCQRSUMQOSZPAUCUDQUESTQAUPVAQAAVAV
+    AUFQAVAUGTUHUIUJAUKUL $.
+
+  ${
+    $d A x y z w $.  $d B x y z w $.
+    $( Omnific integers are closed under addition.  Part of Theorem 30(iii) of
+       [Conway] p. 45.  (Contributed by Scott Fenton, 15-May-2026.) $)
+    ozaddcl $p |- ( ( A e. Oz /\ B e. Oz ) -> ( A +s B ) e. Oz ) $=
+      ( vx vy csur wcel c1s csubs co csn cadds ccuts wceq wa wrex cab cun sneqd
+      df-sn ovex addscl ad2ant2r cv cslts ozcut ad2antrr ad2antrl simplr simprr
+      coz wbr addsunif unidm simpl 1no a1i addsubsd addsubsassd uneq12d eqtr3id
+      simpr adds32d addsassd oveq12d oveq1 eqeq2d rexsn uneq12i oveq12i eqtr2di
+      abbii eqtr4i oveq2 eqtrd jca eloz anbi12i 3imtr4i ) AEFZAAGHIZJZAGKIZJZLI
+      MZNZBEFZBBGHIZJZBGKIZJZLIMZNZNZABKIZEFZWNWNGHIZJZWNGKIZJZLIZMZNAUJFZBUJFZ
+      NWNUJFWMWOXAVSWFWOWDWKABUAUBWMWNCUCZDUCZBKIZMZDWAOZCPZXDAXEKIZMZDWHOZCPZQ
+      ZXGDWCOZCPZXKDWJOZCPZQZLIZWTWMCCCCABWCWJDWAWHDDDVSWAWCUDUKWDWLAUEUFWFWHWJ
+      UDUKWEWKBUEUGVSWDWLUHWEWFWKUIULWMWTVTBKIZJZAWGKIZJZQZWBBKIZJZAWIKIZJZQZLI
+      ZXTVSWFWTYKMWDWKVSWFNZWQYEWSYJLYLWQWQWQQYEWQUMYLWQYBWQYDYLWPYAYLABGVSWFUN
+      ZVSWFVAZGEFYLUOUPZUQRYLWPYCYLABGYMYNYOURRUSUTYLWSWSWSQYJWSUMYLWSYGWSYIYLW
+      RYFYLABGYMYNYOVBRYLWRYHYLABGYMYNYOVCRUSUTVDUBYEXNYJXSLYBXIYDXMYBXDYAMZCPX
+      ICYASXHYPCXGYPDVTAGHTXEVTMXFYAXDXEVTBKVEVFVGVKVLYDXDYCMZCPXMCYCSXLYQCXKYQ
+      DWGBGHTXEWGMXJYCXDXEWGAKVMVFVGVKVLVHYGXPYIXRYGXDYFMZCPXPCYFSXOYRCXGYRDWBA
+      GKTXEWBMXFYFXDXEWBBKVEVFVGVKVLYIXDYHMZCPXRCYHSXQYSCXKYSDWIBGKTXEWIMXJYHXD
+      XEWIAKVMVFVGVKVLVHVIVJVNVOXBWEXCWLAVPBVPVQWNVPVR $.
+
+    $( Omnific integers are closed under multiplication.  Part of Theorem
+       30(iii) of [Conway] p. 45.  (Contributed by Scott Fenton,
+       15-May-2026.) $)
+    ozmulcl $p |- ( ( A e. Oz /\ B e. Oz ) -> ( A x.s B ) e. Oz ) $=
+      ( vx vy vz wcel c1s csubs co csn cadds wceq wa wrex cab cun oveq2d eqeq2d
+      cmuls rexsn csur ccuts coz mulscl ad2ant2r cv cslts wbr ad2antrr ad2antrl
+      ozcut simplr simprr mulsunif2 id 1no a1i nncansd oveqan12d mulsrid eqtrdi
+      ax-mp sneqd pncan2s mpan2 uneq12d df-sn oveq2 oveq1d rexbidv bitri eqtr4i
+      ovex abbii oveq1 uneq12i unidm 3eqtr3g oveq12d eqtrd eloz anbi12i 3imtr4i
+      jca ) AUAFZAAGHIZJZAGKIZJZUBILZMZBUAFZBBGHIZJZBGKIZJZUBILZMZMZABSIZUAFZWT
+      WTGHIZJZWTGKIZJZUBIZLZMAUCFZBUCFZMWTUCFWSXAXGWEWLXAWJWQABUDUEWSWTCUFZWTAD
+      UFZHIZBEUFZHIZSIZHIZLZEWNNZDWGNZCOZXJWTXKAHIZXMBHIZSIZHIZLZEWPNZDWINZCOZP
+      ZXJWTXLYBSIZKIZLZEWPNZDWGNZCOZXJWTYAXNSIZKIZLZEWNNZDWINZCOZPZUBIZXFWSEDED
+      ABWIWPWGWNEDEDCCCCWEWGWIUGUHWJWRAUKUIWLWNWPUGUHWKWQBUKUJWEWJWRULWKWLWQUMU
+      NWEWLUUCXFLWJWQWEWLMZYIXCUUBXEUBUUDWTAWFHIZBWMHIZSIZHIZJZWTWHAHIZWOBHIZSI
+      ZHIZJZPXCXCPYIXCUUDUUIXCUUNXCUUDUUHXBUUDUUGGWTHUUDUUGGGSIZGWEWLUUEGUUFGSW
+      EAGWEUOGUAFZWEUPUQURZWLBGWLUOUUPWLUPUQURZUSUUPUUOGLUPGUTVBZVAQVCUUDUUMXBU
+      UDUULGWTHUUDUULUUOGWEWLUUJGUUKGSWEUUPUUJGLUPAGVDVEZWLUUPUUKGLUPBGVDVEZUSU
+      USVAQVCVFUUIXTUUNYHUUIXJUUHLZCOXTCUUHVGXSUVBCXSXJWTUUEXNSIZHIZLZEWNNZUVBX
+      RUVFDWFAGHVMZXKWFLZXQUVEEWNUVHXPUVDXJUVHXOUVCWTHUVHXLUUEXNSXKWFAHVHZVIQRV
+      JTUVEUVBEWMBGHVMZXMWMLZUVDUUHXJUVKUVCUUGWTHUVKXNUUFUUESXMWMBHVHZQQRTVKVNV
+      LUUNXJUUMLZCOYHCUUMVGYGUVMCYGXJWTUUJYBSIZHIZLZEWPNZUVMYFUVQDWHAGKVMZXKWHL
+      ZYEUVPEWPUVSYDUVOXJUVSYCUVNWTHUVSYAUUJYBSXKWHAHVOZVIQRVJTUVPUVMEWOBGKVMZX
+      MWOLZUVOUUMXJUWBUVNUULWTHUWBYBUUKUUJSXMWOBHVOZQQRTVKVNVLVPXCVQVRUUDWTUUEU
+      UKSIZKIZJZWTUUJUUFSIZKIZJZPXEXEPUUBXEUUDUWFXEUWIXEUUDUWEXDUUDUWDGWTKUUDUW
+      DUUOGWEWLUUEGUUKGSUUQUVAUSUUSVAQVCUUDUWHXDUUDUWGGWTKUUDUWGUUOGWEWLUUJGUUF
+      GSUUTUURUSUUSVAQVCVFUWFYOUWIUUAUWFXJUWELZCOYOCUWEVGYNUWJCYNXJWTUUEYBSIZKI
+      ZLZEWPNZUWJYMUWNDWFUVGUVHYLUWMEWPUVHYKUWLXJUVHYJUWKWTKUVHXLUUEYBSUVIVIQRV
+      JTUWMUWJEWOUWAUWBUWLUWEXJUWBUWKUWDWTKUWBYBUUKUUESUWCQQRTVKVNVLUWIXJUWHLZC
+      OUUACUWHVGYTUWOCYTXJWTUUJXNSIZKIZLZEWNNZUWOYSUWSDWHUVRUVSYRUWREWNUVSYQUWQ
+      XJUVSYPUWPWTKUVSYAUUJXNSUVTVIQRVJTUWRUWOEWMUVJUVKUWQUWHXJUVKUWPUWGWTKUVKX
+      NUUFUUJSUVLQQRTVKVNVLVPXEVQVRVSUEVTWDXHWKXIWRAWABWAWBWTWAWC $.
+  $}
+
+  $( The omnific integers are closed under subtraction.  (Contributed by Scott
+     Fenton, 16-May-2026.) $)
+  ozsubcl $p |- ( ( A e. Oz /\ B e. Oz ) -> ( A -s B ) e. Oz ) $=
+    ( coz wcel wa csubs co cnegs cadds csur ozno adantr adantl subsvald oznegcl
+    cfv ozaddcl sylan2 eqeltrd ) ACDZBCDZEZABFGABHPZIGZCUBABTAJDUAAKLUABJDTBKMN
+    UATUCCDUDCDBOAUCQRS $.
+
+  ${
+    ozcld.1 $e |- ( ph -> A e. Oz ) $.
+    $( The omnific integers are closed under negation.  Theorem 30(ii) of
+       [Conway] p. 45.  (Contributed by Scott Fenton, 16-May-2026.) $)
+    oznegcld $p |- ( ph -> ( -us ` A ) e. Oz ) $=
+      ( coz wcel cnegs cfv oznegcl syl ) ABDEBFGDECBHI $.
+
+    ozcld.2 $e |- ( ph -> B e. Oz ) $.
+    $( Omnific integers are closed under addition.  Part of Theorem 30(iii) of
+       [Conway] p. 45.  (Contributed by Scott Fenton, 16-May-2026.) $)
+    ozaddcld $p |- ( ph -> ( A +s B ) e. Oz ) $=
+      ( coz wcel cadds co ozaddcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+
+    $( Omnific integers are closed under multiplication.  Part of Theorem
+       30(iii) of [Conway] p. 45.  (Contributed by Scott Fenton,
+       16-May-2026.) $)
+    ozmulcld $p |- ( ph -> ( A x.s B ) e. Oz ) $=
+      ( coz wcel cmuls co ozmulcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+
+    $( The omnific integers are closed under subtraction.  (Contributed by
+       Scott Fenton, 16-May-2026.) $)
+    ozsubcld $p |- ( ph -> ( A -s B ) e. Oz ) $=
+      ( coz wcel csubs co ozsubcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+  $}
+
+  ${
+    $d A xL yR $.  $d B xL yR $.
+    $( Omnific integer ordering relationship.  (Contributed by Scott Fenton,
+       16-May-2026.) $)
+    ozltp1le $p |- ( ( A e. Oz /\ B e. Oz ) ->
+     ( A <s B <-> ( A +s 1s ) <_s B ) ) $=
+      ( vyr.sur vxl.sur coz wcel wa clts wbr c1s cadds co csn csur adantr oznod
+      syl ltsp1d ccuts wceq cles wral ozno adantl 1no a1i ltadds1d biimpa breq2
+      cv ovex ralsn sylibr wb breq1 ralsng biimpar simpll 1oz ozaddcld peano2no
+      csubs ltstrd sltssn simplr ozcutd eloz simprbi pncans sylancl sneqd eqtrd
+      oveq1d lesrecd mpbir2and simpr ltlestrd impbida ) AEFZBEFZGZABHIZAJKLZBUA
+      IZWAWBGZWDWCCUJZHIZCBJKLZMZUBZDUJZBHIZDAMZUBZWEWCWHHIZWJWAWBWOWAABJVSANFZ
+      VTAUCOVTBNFZVSBUCUDJNFZWAUEUFUGUHWGWOCWHBJKUKWFWHWCHUIULUMWAWNWBVSWNWBUNV
+      TWLWBDAEWKABHUOUPOUQWEWMWCJKLZMZBJVBLMZWIWCBDCWEAWSWEAVSVTWBURZPZWEWCNFZW
+      SNFWEWCWEAJXBJEFWEUSUFUTZPZWCVAQZWEAWCWSXCXFXGWEAXCRWEWCXFRVCVDWEBWEBVSVT
+      WBVEPVFWEWCWCJVBLZMZWTSLZWMWTSLWEWCEFZWCXJTZXEXKXDXLWCVGVHQWEXIWMWTSWEXHA
+      WEWPWRXHATXCUEAJVIVJVKVMVLWABXAWISLTZWBVTXMVSVTWQXMBVGVHUDOVNVOWAWDGZAWCB
+      XNAVSVTWDURPZXNWPXDXOAVAQXNBVSVTWDVEPXNAXORWAWDVPVQVR $.
+  $}
+
+  $( Omnific integer ordering relationship.  (Contributed by Scott Fenton,
+     16-May-2026.) $)
+  ozlem1lt $p |- ( ( A e. Oz /\ B e. Oz ) ->
+  ( A <_s B <-> ( A -s 1s ) <s B ) ) $=
+    ( coz wcel wa cles wbr c1s csubs co cadds clts wceq csur 1no npcans sylancl
+    ozno adantr breq1d bicomd wb 1oz ozsubcl mpan2 ozltp1le sylan bitr4d ) ACDZ
+    BCDZEZABFGZAHIJZHKJZBFGZUMBLGZUKUOULUKUNABFUIUNAMZUJUIANDHNDUQAROAHPQSTUAUI
+    UMCDZUJUPUOUBUIHCDURUCAHUDUEUMBUFUGUH $.
+
+  $( Omnific integer ordering relationship.  (Contributed by Scott Fenton,
+     16-May-2026.) $)
+  ozleltp1 $p |- ( ( A e. Oz /\ B e. Oz ) ->
+  ( A <_s B <-> A <s ( B +s 1s ) ) ) $=
+    ( coz wcel wa cles wbr c1s csubs co clts cadds ozlem1lt csur adantr 1no a1i
+    ozno adantl ltsubaddsd bitrd ) ACDZBCDZEZABFGAHIJBKGABHLJKGABMUDAHBUBANDUCA
+    ROHNDUDPQUCBNDUBBRSTUA $.
+
+  ${
+    ozorder.1 $e |- ( ph -> A e. Oz ) $.
+    ozorder.2 $e |- ( ph -> B e. Oz ) $.
+    $( Omnific integer ordering relationship.  (Contributed by Scott Fenton,
+       16-May-2026.) $)
+    ozltp1led $p |- ( ph -> ( A <s B <-> ( A +s 1s ) <_s B ) ) $=
+      ( coz wcel clts wbr c1s cadds co cles wb ozltp1le syl2anc ) ABFGCFGBCHIBJ
+      KLCMINDEBCOP $.
+
+    $( Omnific integer ordering relationship.  (Contributed by Scott Fenton,
+       16-May-2026.) $)
+    ozlem1ltd $p |- ( ph -> ( A <_s B <-> ( A -s 1s ) <s B ) ) $=
+      ( coz wcel cles wbr c1s csubs co clts wb ozlem1lt syl2anc ) ABFGCFGBCHIBJ
+      KLCMINDEBCOP $.
+
+    $( Omnific integer ordering relationship.  (Contributed by Scott Fenton,
+       16-May-2026.) $)
+    ozleltp1d $p |- ( ph -> ( A <_s B <-> A <s ( B +s 1s ) ) ) $=
+      ( coz wcel cles wbr c1s cadds co clts wb ozleltp1 syl2anc ) ABFGCFGBCHIBC
+      JKLMINDEBCOP $.
+  $}
+
+  ${
+    cutoz.1 $e |- ( ph -> A e. No ) $.
+    $( The cut of ` A -s 1s ` and ` A +s 1s ` always produces an omnific
+       integer.  (Contributed by Scott Fenton, 16-May-2026.) $)
+    cutoz $p |- ( ph -> ( { ( A -s 1s ) } |s { ( A +s 1s ) } ) e. Oz ) $=
+      (  ) ? $.
+  $}
+
+  $( Lemma for ~ nobtwnoz .  (Contributed by Scott Fenton, 16-May-2026.) $)
+  nobtwnozlem1 $p |- ( ( A e. No /\ ( B e. Oz /\ C e. Oz ) /\
+     ( B <_s A /\ A <s ( C +s 1s ) ) ) -> B <_s C ) $=
+    ( csur wcel coz wa cles wbr c1s cadds clts w3a simp2l ozno syl simp1 simp2r
+    co 1oz ozaddcl sylancl oznod simp3l simp3r leltstrd ozleltp1d mpbird ) ADEZ
+    BFEZCFEZGZBAHIZACJKSZLIZGZMZBCHIBUNLIUQBAUNUQUJBDEUIUJUKUPNZBOPUIULUPQUQUNU
+    QUKJFEUNFEUIUJUKUPRZTCJUAUBUCUIULUMUOUDUIULUMUOUEUFUQBCURUSUGUH $.
+
+  ${
+    $( Lemma for ~ nobtwnoz .  (Contributed by Scott Fenton, 16-May-2026.) $)
+    nobtwnozlem2 $p |- ( A e. No ->
+     E. x e. Oz ( A <_s x /\ x <s ( A +s 1s ) ) ) $=
+      (  ) ? $.
+  $}
+
+  ${
+    $d A x y $.
+    $( There is a unique greatest omnific integer less-than or equal to a
+       surreal number.  (Contributed by Scott Fenton, 15-May-2026.) $)
+    nobtwnoz $p |- ( A e. No ->
+    E! x e. Oz ( x <_s A /\ A <s ( x +s 1s ) ) ) $=
+      ( vy csur wcel cv cles wbr c1s cadds co clts wa coz cnegs cfv oznod mpbid
+      wrex wceq weq wi wral wreu oznegcl ad2antlr simprl simpll negscld lenegsd
+      simplr negnegs syl breqtrd csubs oveq1d 1no sylancl a1i subsvald 3eqtr4rd
+      negsdi simprr addscld ltnegsd eqbrtrd breq1 oveq1 breq2d anbi12d syl12anc
+      ltsubaddsd nobtwnozlem2 r19.29a simplrl simplrr simprll simprrr syl122anc
+      rspcev nobtwnozlem1 simprrl simprlr lestri3d mpbir2and ex ralrimivva reu4
+      negscl sylanbrc ) BDEZAFZBGHZBWLIJKZLHZMZANSZWPCFZBGHZBWRIJKZLHZMZMZACUAZ
+      UBZCNUCANUCWPANUDWKBOPZWRGHZWRXFIJKZLHZMZWQCNWKWRNEZMZXJMZWROPZNEZXNBGHZB
+      XNIJKZLHZWQXKXOWKXJWRUEUFXMXNXFOPZBGXMXGXNXSGHXLXGXIUGXMXFWRXMBWKXKXJUHZU
+      IZXMWRWKXKXJUKQZUJRXMWKXSBTXTBULUMZUNXMBIUOKZXNLHXRXMYDXHOPZXNLXMXSIOPZJK
+      ZBYFJKYEYDXMXSBYFJYCUPXMXFDEZIDEZYEYGTYAUQXFIVBURXMBIXTYIXMUQUSZUTVAXMXIY
+      EXNLHXLXGXIVCXMWRXHYBXMXFIYAYJVDVERVFXMBIXNXTYJXMWRYBUIVLRWPXPXRMAXNNWLXN
+      TZWMXPWOXRWLXNBGVGYKWNXQBLWLXNIJVHVIVJVTVKWKYHXJCNSBWICXFVMUMVNWKXEACNNWK
+      WLNEZXKMZMZXCXDYNXCMZXDWLWRGHZWRWLGHZYOWKYLXKWMXAYPWKYMXCUHZWKYLXKXCVOZWK
+      YLXKXCVPZYNWMWOXBVQYNWPWSXAVRBWLWRWAVSYOWKXKYLWSWOYQYRYTYSYNWPWSXAWBYNWMW
+      OXBWCBWRWLWAVSYOWLWRYOWLYSQYOWRYTQWDWEWFWGWPXBACNXDWMWSWOXAWLWRBGVGXDWNWT
+      BLWLWRIJVHVIVJWHWJ $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Surreal recursive sequences
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -427738,6 +428025,12 @@ $)
     PRSUIUSVBVFUSVBIZVAFGZJGZFVAMGZTZVEKVIVADCZVKVMLVIAUSVBUBUCVAUDSUSVKVELVBUS
     VJAJAUEUFUGVIVMFKTKVIVLKFVBVLKLZUSVBVAOCZVOVAQVPVNVOVAPRSUHUJFUKULUMUNUOUPU
     QUR $.
+
+  $( A surreal integer is an omnific integer.  (Contributed by Scott Fenton,
+     15-May-2026.) $)
+  zoz $p |- ( A e. ZZ_s -> A e. Oz ) $=
+    ( czs wcel csur c1s csubs csn cadds ccuts wceq coz zno zcuts eloz sylanbrc
+    co ) ABCADCAAEFPGAEHPGIPJAKCALAMANO $.
 
   ${
     $d x y z K $.
@@ -429722,11 +430015,17 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-  $( Declare a new constant. $)
-  $c RR_s $.
+  $( Declare new constants. $)
+  $c RR_s |_s |^s $.
 
   $( Declare the syntax for the surreal reals. $)
   creno $a class RR_s $.
+
+  $( Declare the syntax for the surreal floor function. $)
+  cfls $a class |_s $.
+
+  $( Declare the syntax for the surreal ceiling function. $)
+  cceils $a class |^s $.
 
   ${
     $d x y n $.
@@ -430252,10 +430551,9 @@ $)
       YGWDWNUULYGYHUUSUUTWGWHUULYJBUVAUUMWJWHWKXTXCYBYKSWLURUSUSWMWOWP $.
   $}
 
-
   ${
-    $( A real number is equal to the cut of the dyadics on either side of
-       it.  (Contributed by Scott Fenton, 14-Mar-2026.) $)
+    $( A real number is equal to the cut of the dyadics on either side of it.
+       (Contributed by Scott Fenton, 14-Mar-2026.) $)
     rez12cut $p |- ( A e. RR_s ->
     A = ( { x e. ZZ_s[1/2] | x <s A } |s { x e. ZZ_s[1/2] | A <s x } ) ) $=
       ( vy vn vi vz vw wcel cv cn0s wrex cnns clts wbr cz12s csur cvv cles wex
