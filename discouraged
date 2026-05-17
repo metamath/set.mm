@@ -5046,6 +5046,10 @@
 "df-rngo" is used by "relrngo".
 "df-rq" is used by "dmrecnq".
 "df-rq" is used by "recmulnq".
+"df-sb" is used by "dfsb.rename".
+"df-sb" is used by "sbi1".
+"df-sb" is used by "spsbe".
+"df-sb" is used by "stdpc4".
 "df-sca" is used by "scaid".
 "df-sca" is used by "scandx".
 "df-setrecs" is used by "nfsetrecs".
@@ -15737,6 +15741,7 @@ New usage of "df-ringcALTV" is discouraged (1 uses).
 New usage of "df-rngcALTV" is discouraged (1 uses).
 New usage of "df-rngo" is discouraged (2 uses).
 New usage of "df-rq" is discouraged (2 uses).
+New usage of "df-sb" is discouraged (4 uses).
 New usage of "df-sca" is discouraged (2 uses).
 New usage of "df-setrecs" is discouraged (5 uses).
 New usage of "df-sgrOLD" is discouraged (2 uses).
@@ -18575,7 +18580,6 @@ New usage of "sbievwOLD" is discouraged (0 uses).
 New usage of "sbn1ALT" is discouraged (0 uses).
 New usage of "sbralieALT" is discouraged (0 uses).
 New usage of "sbralieOLD" is discouraged (0 uses).
-New usage of "sbtALT" is discouraged (0 uses).
 New usage of "sbtT" is discouraged (0 uses).
 New usage of "sbtr" is discouraged (0 uses).
 New usage of "sbtrt" is discouraged (1 uses).
@@ -20575,7 +20579,6 @@ Proof modification of "sbn1ALT" is discouraged (41 steps).
 Proof modification of "sbralieALT" is discouraged (98 steps).
 Proof modification of "sbralieOLD" is discouraged (185 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
-Proof modification of "sbtALT" is discouraged (12 steps).
 Proof modification of "sbtT" is discouraged (7 steps).
 Proof modification of "scmateALT" is discouraged (236 steps).
 Proof modification of "selsALT" is discouraged (34 steps).
