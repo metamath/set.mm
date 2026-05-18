@@ -70773,6 +70773,23 @@ $)
     ( cpw cfn cin wcel wa wss elin elpwg pm5.32ri bitri ) ABCZDEFAMFZADFZGABHZO
     GAMDIONPABDJKL $.
 
+  ${
+    $d A u v w x $.  $d S u v w x $.
+    $( A finite subset of a finite set is a decidable subset.  (Contributed by
+       Jim Kingdon, 18-May-2026.) $)
+    fissfi $p |- ( ( S C_ A /\ A e. Fin /\ S e. Fin )
+        -> A. x e. A DECID x e. S ) $=
+      ( vw vu vv wss cfn wcel w3a cv wdc wa c0 csn cun wceq eleq2 dcbid ad4antr
+      wn wo noel olci df-dc mpbir a1i simpr simp2 simp-4r simp1 simplrr eldifad
+      cdif sseldd fidceq syl3anc velsn sylibr dcun simpl3 findcard2sd ralrimiva
+      dcbii ex ) CBGZBHIZCHIZJZAKZCIZLZABVIVJBIZMZVJDKZIZLVJNIZLZVJEKZIZLZVJVSF
+      KZOZPZIZLZVLDEFCVONQVPVQVONVJRSVOVSQVPVTVOVSVJRSVOWDQVPWEVOWDVJRSVOCQVPVK
+      VOCVJRSVRVNVRVQVQUAZUBWGVQVJUCUDVQUEUFUGVNVSHIZMZVSCGZWBCVSUNIZMZMZWAWFWM
+      WAMZVSWCVJWMWAUHWNVJWBQZLZVJWCIZLWNVGVMWBBIWPVIVGVMWHWLWAVFVGVHUITVIVMWHW
+      LWAUJWNCBWBVIVFVMWHWLWAVFVGVHUKTWNWBCVSWIWJWKWAULUMUOBVJWBUPUQWQWOAWBURVD
+      USUTVEVFVGVHVMVAVBVC $.
+  $}
+
   $( Any injection from one finite set to another of equal size must be a
      bijection.  (Contributed by Jeff Madsen, 5-Jun-2010.) $)
   f1finf1o $p |- ( ( A ~~ B /\ B e. Fin ) ->
