@@ -70767,6 +70767,12 @@ $)
       XIWSWIBWFXGVGWFWIVHVIABCWFWJVJVKWGWTVLVMSVOVQVSVTVNVP $.
   $}
 
+  $( Membership in a class of finite subsets.  (Contributed by Stefan O'Rear,
+     4-Apr-2015.)  (Revised by Mario Carneiro, 22-Aug-2015.) $)
+  elfpw $p |- ( A e. ( ~P B i^i Fin ) <-> ( A C_ B /\ A e. Fin ) ) $=
+    ( cpw cfn cin wcel wa wss elin elpwg pm5.32ri bitri ) ABCZDEFAMFZADFZGABHZO
+    GAMDIONPABDJKL $.
+
   $( Any injection from one finite set to another of equal size must be a
      bijection.  (Contributed by Jeff Madsen, 5-Jun-2010.) $)
   f1finf1o $p |- ( ( A ~~ B /\ B e. Fin ) ->
