@@ -209190,6 +209190,20 @@ $)
   $}
 
   ${
+    $d A x y $.
+    $( The number of finite subsets of a finite set.  (Contributed by Jim
+       Kingdon, 18-May-2026.) $)
+    2omapfi $p |- ( A e. Fin -> ( 2o ^m A ) ~~ ( ~P A i^i Fin ) ) $=
+      ( vy vx cfn wcel c2o cmap co cv wdc wral crab cen wbr cvv simpll ad2antlr
+      wa simpr syl3anc cpw cin 2omapen wceq eqid pwexg rabexd wss ssfidc fissfi
+      elpwi impbida rabbidva eqeng sylc dfin5 breqtrrdi entr syl2anc ) ADEZFAGH
+      ZBICIZEJBAKZCAUAZLZMNVEVDDUBZMNVAVFMNCBADUCUTVEVBDEZCVDLZVFMUTVEOEVEVHUDV
+      EVHMNUTVCCVDVEOVEUEADUFUGUTVCVGCVDUTVBVDEZRZVCVGVJVCRUTVBAUHZVCVGUTVIVCPV
+      IVKUTVCVBAUKZQVJVCSBAVBUITVJVGRVKUTVGVCVIVKUTVGVLQUTVIVGPVJVGSBAVBUJTULUM
+      VEVHOUNUOCVDDUPUQVAVEVFURUS $.
+  $}
+
+  ${
     $d A s u w y z $.  $d A s w x y z $.  $d V s u w y z $.
     pw1map.f $e |- F = ( s e. ( ~P 1o ^m A ) |->
       { z e. A | ( s ` z ) = 1o } ) $.
