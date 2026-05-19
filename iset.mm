@@ -20309,6 +20309,18 @@ $)
   $}
 
   ${
+    $d ph y $.  $d ps y $.  $d x y $.
+    $( Equivalent formulas yield equal class abstractions (closed form).  This
+       is the backward implication of ~ abbib , proved from fewer axioms, and
+       hence is independently named.  (Contributed by BJ and WL and SN,
+       20-Aug-2023.) $)
+    abbi $p |- ( A. x ( ph <-> ps ) -> { x | ph } = { x | ps } ) $=
+      ( vy wb wal cab wsb cv wcel spsbbi df-clab 3bitr4g eqrdv ) ABECFZDACGZBCG
+      ZOACDHBCDHDIZPJRQJABCDKADCLBDCLMN $.
+    $( $j usage 'abbi' avoids 'ax-i12' 'ax-bndl' 'ax-13' 'df-clel' ; $)
+  $}
+
+  ${
     $d x ph $.
     abbidv.1 $e |- ( ph -> ( ps <-> ch ) ) $.
     $( Equivalent wff's yield equal class abstractions (deduction form).
