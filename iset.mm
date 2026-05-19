@@ -20257,7 +20257,7 @@ $)
     $d ph y $.  $d ps y $.  $d x y $.
     $( Equivalent wff's correspond to equal class abstractions.  (Contributed
        by NM, 25-Nov-2013.)  (Revised by Mario Carneiro, 11-Aug-2016.) $)
-    abbi $p |- ( A. x ( ph <-> ps ) <-> { x | ph } = { x | ps } ) $=
+    abbibcom $p |- ( A. x ( ph <-> ps ) <-> { x | ph } = { x | ps } ) $=
       ( vy cab wceq wcel wal dfcleq nfsab1 nfbi nfv wsb df-clab sbequ12r bitrid
       cv wb bibi12d cbval bitr2i ) ACEZBCEZFDQZUBGZUDUCGZRZDHABRZCHDUBUCIUGUHDC
       UEUFCACDJBCDJKUHDLUDCQFZUEAUFBUEACDMUIAADCNADCOPUFBCDMUIBBDCNBDCOPSTUA $.
@@ -20277,7 +20277,7 @@ $)
     $( Equivalent wff's yield equal class abstractions (inference form).
        (Contributed by NM, 5-Aug-1993.) $)
     abbii $p |- { x | ph } = { x | ps } $=
-      ( wb cab wceq abbi mpgbi ) ABEACFBCFGCABCHDI $.
+      ( wb cab wceq abbibcom mpgbi ) ABEACFBCFGCABCHDI $.
 
     $( Theorem abbii is the congruence law for class abstraction. $)
     $( $j congruence 'abbii'; $)
@@ -20290,7 +20290,7 @@ $)
        (Contributed by NM, 5-Aug-1993.)  (Revised by Mario Carneiro,
        7-Oct-2016.) $)
     abbid $p |- ( ph -> { x | ps } = { x | ch } ) $=
-      ( wb wal cab wceq alrimi abbi sylib ) ABCGZDHBDICDIJANDEFKBCDLM $.
+      ( wb wal cab wceq alrimi abbibcom sylib ) ABCGZDHBDICDIJANDEFKBCDLM $.
   $}
 
   ${
@@ -23411,9 +23411,9 @@ $)
      Closed theorem form of ~ rabbidva .  (Contributed by NM, 25-Nov-2013.) $)
   rabbi $p |- ( A. x e. A ( ps <-> ch )
        <-> { x e. A | ps } = { x e. A | ch } ) $=
-    ( cv wcel wa wb wal wceq wral crab abbi wi df-ral pm5.32 albii bitri df-rab
-    cab eqeq12i 3bitr4i ) CEDFZAGZUCBGZHZCIZUDCTZUECTZJABHZCDKZACDLZBCDLZJUDUEC
-    MUKUCUJNZCIUGUJCDOUNUFCUCABPQRULUHUMUIACDSBCDSUAUB $.
+    ( cv wcel wa wb wal cab wceq wral abbibcom df-ral pm5.32 albii bitri df-rab
+    crab wi eqeq12i 3bitr4i ) CEDFZAGZUCBGZHZCIZUDCJZUECJZKABHZCDLZACDSZBCDSZKU
+    DUECMUKUCUJTZCIUGUJCDNUNUFCUCABOPQULUHUMUIACDRBCDRUAUB $.
 
   $( Swap with a membership relation in a restricted class abstraction.
      (Contributed by NM, 4-Jul-2005.) $)
@@ -27368,8 +27368,8 @@ $)
      by Giovanni Mascellani, 9-Apr-2018.) $)
   sbcbi2 $p |- ( A. x ( ph <-> ps ) ->
        ( [. A / x ]. ph <-> [. A / x ]. ps ) ) $=
-    ( wb wal cab wcel wsbc wceq abbi eleq2 sylbi df-sbc 3bitr4g ) ABECFZDACGZHZ
-    DBCGZHZACDIBCDIPQSJRTEABCKQSDLMACDNBCDNO $.
+    ( wb wal cab wcel wsbc wceq abbibcom eleq2 sylbi df-sbc 3bitr4g ) ABECFZDAC
+    GZHZDBCGZHZACDIBCDIPQSJRTEABCKQSDLMACDNBCDNO $.
 
   ${
     $d x z A $.  $d x y z $.  $d z ph $.
@@ -47847,9 +47847,9 @@ $)
     $( Alternate definition for descriptions.  Definition 8.18 in [Quine]
        p. 56.  (Contributed by Andrew Salmon, 30-Jun-2011.) $)
     dfiota2 $p |- ( iota x ph ) = U. { y | A. x ( ph <-> x = y ) } $=
-      ( cio cab cv csn wceq cuni wb wal df-iota df-sn eqeq2i abbi bitr4i unieqi
-      abbii eqtri ) ABDABEZCFZGZHZCEZIABFUAHZJBKZCEZIABCLUDUGUCUFCUCTUEBEZHUFUB
-      UHTBUAMNAUEBOPRQS $.
+      ( cio cab cv csn wceq cuni wal df-iota df-sn eqeq2i abbibcom bitr4i abbii
+      wb unieqi eqtri ) ABDABEZCFZGZHZCEZIABFUAHZQBJZCEZIABCKUDUGUCUFCUCTUEBEZH
+      UFUBUHTBUALMAUEBNOPRS $.
   $}
 
   ${
@@ -47947,16 +47947,17 @@ $)
     $( Equivalence theorem for descriptions.  (Contributed by Andrew Salmon,
        30-Jun-2011.) $)
     iotabi $p |- ( A. x ( ph <-> ps ) -> ( iota x ph ) = ( iota x ps ) ) $=
-      ( vz wb wal cab cv csn wceq cuni abbi biimpi eqeq1d abbidv unieqd df-iota
-      cio 3eqtr4g ) ABECFZACGZDHIZJZDGZKBCGZUBJZDGZKACRBCRTUDUGTUCUFDTUAUEUBTUA
-      UEJABCLMNOPACDQBCDQS $.
+      ( vz wb wal cab cv csn wceq cuni cio abbibcom biimpi eqeq1d abbidv unieqd
+      df-iota 3eqtr4g ) ABECFZACGZDHIZJZDGZKBCGZUBJZDGZKACLBCLTUDUGTUCUFDTUAUEU
+      BTUAUEJABCMNOPQACDRBCDRS $.
 
     $( Part of Theorem 8.17 in [Quine] p. 56.  This theorem serves as a lemma
        for the fundamental property of iota.  (Contributed by Andrew Salmon,
        11-Jul-2011.) $)
     uniabio $p |- ( A. x ( ph <-> x = y ) -> U. { x | ph } = y ) $=
-      ( cv wceq wb wal cab cuni csn abbi biimpi df-sn eqtr4di unieqd vex eqtrdi
-      unisn ) ABDCDZEZFBGZABHZISJZISUAUBUCUAUBTBHZUCUAUBUDEATBKLBSMNOSCPRQ $.
+      ( cv wceq wal cab cuni csn abbibcom biimpi df-sn eqtr4di unieqd vex unisn
+      wb eqtrdi ) ABDCDZEZQBFZABGZHSIZHSUAUBUCUAUBTBGZUCUAUBUDEATBJKBSLMNSCOPR
+      $.
 
     $( Theorem 8.19 in [Quine] p. 57.  This theorem is the fundamental property
        of iota.  (Contributed by Andrew Salmon, 11-Jul-2011.) $)
