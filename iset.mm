@@ -49913,6 +49913,26 @@ $)
     WCVDABUFLBANUGWABDOPQVNVHVQVIUIUHUJSSUOUPVJVKHZUTUOVHCHVIDHWDUPACTBDTVHCVID
     UKULUMUN $.
 
+  $( From the union of two functions with disjoint domains, either component
+     can be recovered by restriction.  (Contributed by Stefan O'Rear,
+     9-Oct-2014.)  (Revised by Jim Kingdon, 18-May-2026.) $)
+  fresaunres2disj $p |- ( ( F : A --> C /\ G : B --> C /\
+      ( A i^i B ) = (/) ) -> ( ( F u. G ) |` B ) = G ) $=
+    ( wf cin c0 wceq w3a cun cres resundir simp3 wfn ffn 3ad2ant1 fnresdisj syl
+    wb mpbid 3ad2ant2 fnresdm uneq12d eqtrid uncom un0 eqtri eqtrdi ) ACDFZBCEF
+    ZABGHIZJZDEKBLZHEKZEUMUNDBLZEBLZKUODEBMUMUPHUQEUMULUPHIZUJUKULNUMDAOZULURTU
+    JUKUSULACDPQABDRSUAUMEBOZUQEIUKUJUTULBCEPUBBEUCSUDUEUOEHKEHEUFEUGUHUI $.
+
+  $( From the union of two functions with disjoint domains, either component
+     can be recovered by restriction.  (Contributed by Mario Carneiro,
+     16-Feb-2015.)  (Revised by Jim Kingdon, 18-May-2026.) $)
+  fresaunres1disj $p |- ( ( F : A --> C /\ G : B --> C /\
+      ( A i^i B ) = (/) ) ->
+    ( ( F u. G ) |` A ) = F ) $=
+    ( wf cin c0 wceq w3a cres fresaunres2disj 3com12 incom eqeq1i 3anbi3i uncom
+    cun reseq1i 3imtr3i ) ACDFZBCEFZBAGZHIZJEDRZAKZDIZUAUBABGZHIZJDERZAKZDIUBUA
+    UDUGBACEDLMUDUIUAUBUCUHHBANOPUFUKDUEUJAEDQSOT $.
+
   $( Composition of a mapping and restricted identity.  (Contributed by NM,
      13-Dec-2003.)  (Proof shortened by Andrew Salmon, 17-Sep-2011.) $)
   fcoi1 $p |- ( F : A --> B -> ( F o. ( _I |` A ) ) = F ) $=
