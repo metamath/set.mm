@@ -66884,6 +66884,32 @@ $)
   $}
 
   ${
+    $d A f y $.  $d B f y $.  $d f ph y $.
+    mapsnd.1 $e |- ( ph -> A e. V ) $.
+    mapsnd.2 $e |- ( ph -> B e. W ) $.
+    $( The value of set exponentiation with a singleton exponent.  Theorem 98
+       of [Suppes] p. 89.  (Contributed by NM, 10-Dec-2003.)  (Revised by
+       Glauco Siliprandi, 24-Dec-2020.) $)
+    mapsnd $p |- ( ph -> ( A ^m { B } ) = { f | E. y e. A f = { <. B , y >. } }
+       ) $=
+      ( cv csn wceq wcel wf cvv syl wa wex cima mpbid wrex cmap co snexg elmapd
+      cop crn wbr weu wfn ffn snidg fneu syl2anr cab euabsn cdm imaeq2d imadmrn
+      imasng fdm eqtr3di sylan9req eqeq1d exbidv bitrid sseld vsnid eleq2 impel
+      frn mpbiri adantll ffrn feq3 syl5ibcom imp wb ad2antrr vex sylancl jca ex
+      fsng eximdv mpd df-rex sylibr w3a wf1o f1osng adantr f1oeq1 bicomd adantl
+      f1of 3adant2 wss snssi 3ad2ant2 fssd rexlimdv3a impbid bitrd eqabdv ) AEJ
+      ZDBJZUFKZLZBCUAZECDKZUBUCZAXFXLMXKCXFNZXJACXKXFFOHADGMZXKOMIDGUDPUEAXMXJA
+      XMXJAXMQZXGCMZXIQZBRZXJXOXFUGZXGKZLZBRZXRXODXGXFUHZBUIZYBXMXFXKUJDXKMZYDA
+      XKCXFUKAXNYEIDGULPBXKDXFUMUNYDYCBUOZXTLZBRXOYBYCBUPXOYGYABXOYFXSXTAXMYFXF
+      XKSZXSAXNYHYFLIBDGXFUTPXMXFXFUQZSYHXSXMYIXKXFXKCXFVAURXFUSVBVCVDVEVFTXOYA
+      XQBXOYAXQXOYAQZXPXIXMYAXPAXMXGXSMZXPYAXMXSCXGXKCXFVKVGYAYKXGXTMBVHXSXTXGV
+      IVLVJVMYJXKXTXFNZXIXMYAYLAXMYAYLXMXKXSXFNYAYLXKCXFVNXSXTXKXFVOVPVQVMYJXNX
+      GOMZYLXIVRAXNXMYAIVSBVTZDXGGOXFWDWATWBWCWEWFXIBCWGWHWCAXIXMBCAXPXIWIXKXTC
+      XFAXIYLXPAXIQZXKXTXFWJZYLYOXKXTXHWJZYPAYQXIAXNYMYQIYNDXGGOWKWAWLXIYQYPVRA
+      XIYPYQXKXTXFXHWMWNWOTXKXTXFWPPWQXPAXTCWRXIXGCWSWTXAXBXCXDXE $.
+  $}
+
+  ${
     $d f y A $.  $d f y B $.
     map0.1 $e |- A e. _V $.
     map0.2 $e |- B e. _V $.
