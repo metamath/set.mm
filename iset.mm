@@ -43925,6 +43925,14 @@ $)
       ( cvv wcel cxp xpexg mp2an ) AEFBEFABGEFCDABEEHI $.
   $}
 
+  ${
+    unexd.1 $e |- ( ph -> A e. V ) $.
+    unexd.2 $e |- ( ph -> B e. W ) $.
+    $( The union of two sets is a set.  (Contributed by SN, 16-Jul-2024.) $)
+    unexd $p |- ( ph -> ( A u. B ) e. _V ) $=
+      ( wcel cun cvv unexg syl2anc ) ABDHCEHBCIJHFGBCDEKL $.
+  $}
+
   $( The Cartesian square of a set is a set.  (Contributed by AV,
      13-Jan-2020.) $)
   sqxpexg $p |- ( A e. V -> ( A X. A ) e. _V ) $=
