@@ -68944,6 +68944,36 @@ $)
   $}
 
   ${
+    $d x y A $.  $d x y B $.  $d x y C $.  $d x y V $.  $d x y W $.
+    $d x y X $.
+    $( Equinumerosity law for set exponentiation of a disjoint union.  Exercise
+       4.45 of [Mendelson] p. 255.  (Contributed by NM, 23-Sep-2004.)  (Revised
+       by Mario Carneiro, 29-Apr-2015.) $)
+    mapunen $p |- ( ( ( A e. V /\ B e. W /\ C e. X ) /\ ( A i^i B ) = (/) ) ->
+                  ( C ^m ( A u. B ) ) ~~ ( ( C ^m A ) X. ( C ^m B ) ) ) $=
+      ( vx wcel wceq wa cun cmap co cres cop cvv fnmap elexd fnovex wf vy c0 cv
+      w3a cin cxp c1st cfv c2nd simpl3 simpl1 simpl2 unexd mp3an2i xpexd elmapi
+      wfn wss ssun1 fssres sylancl ssun2 opelxp elmapd anbi12d bitrid imbitrrid
+      jca xp1st adantl xp2nd simplr fun2d ex sylibrd wb 1st2nd2 fresaunres1disj
+      syl ad2antll adantrl syl3anc fresaunres2disj opeq12d eqtr4d reseq1 eqeq2d
+      syl5ibrcom ffn fnresdm 3syl ad2antrl eqcomd op1std op2ndd uneq12d resundi
+      vex resex eqtr4di impbid en3d ) ADHZBEHZCFHZUDZABUEUBIZJZGUACABKZLMZCALMZ
+      CBLMZUFZGUCZANZXNBNZOZUAUCZUGUHZXRUIUHZKZLPPUFUQZXHCPHZXIPHXJPHQXHCFXCXDX
+      EXGUJZRZXHABDEXCXDXEXGUKZXCXDXEXGULZUMZCXIPPLSUNXHXKXLPPYBXHYCAPHXKPHQYEX
+      HADYFRCAPPLSUNYBXHYCBPHXLPHQYEXHBEYGRCBPPLSUNUOXNXJHZXQXMHZXHACXOTZBCXPTZ
+      JZYIYKYLYIXICXNTZAXIURYKXNCXIUPZABUSXICAXNUTVAYIYNBXIURYLYOBAVBXICBXNUTVA
+      VHYJXOXKHZXPXLHZJXHYMXOXPXKXLVCXHYPYKYQYLXHCAXOFDYDYFVDXHCBXPFEYDYGVDVEVF
+      VGXHXRXMHZXICYATZYAXJHXHYRYSXHYRJZABCXSXTYTXSXKHZACXSTZYRUUAXHXRXKXLVIVJX
+      SCAUPVSZYTXTXLHZBCXTTZYRUUDXHXRXKXLVKVJXTCBUPVSZXFXGYRVLVMVNXHCXIYAFPYDYH
+      VDVOXHYIYRJZXNYAIZXRXQIZVPXHUUGJZUUHUUIUUJUUIUUHXRYAANZYABNZOZIUUJXRXSXTO
+      ZUUMYRXRUUNIXHYIXRXKXLVQVTUUJUUKXSUULXTUUJUUBUUEXGUUKXSIXHYRUUBYIUUCWAZXH
+      YRUUEYIUUFWAZXFXGUUGVLZABCXSXTVRWBUUJUUBUUEXGUULXTIUUOUUPUUQABCXSXTWCWBWD
+      WEUUHXQUUMXRUUHXOUUKXPUULXNYAAWFXNYABWFWDWGWHUUJUUHUUIXNXNXINZIUUJUURXNYI
+      UURXNIZXHYRYIYNXNXIUQUUSYOXICXNWIXIXNWJWKWLWMUUIYAUURXNUUIYAXOXPKUURUUIXS
+      XOXTXPXOXPXRXNAGWRZWSZXNBUUTWSZWNXOXPXRUVAUVBWOWPXNABWQWTWGWHXAVNXB $.
+  $}
+
+  ${
     $d x y z f A $.  $d x y z f B $.  $d x y z f C $.
     $( Equinumerosity of equinumerous subsets of a set.  (Contributed by NM,
        30-Sep-2004.)  (Revised by Mario Carneiro, 16-Nov-2014.) $)
