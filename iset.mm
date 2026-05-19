@@ -20517,6 +20517,34 @@ $)
        13-Feb-2025.) $)
     eqab $p |- ( A. x ( x e. A <-> ph ) -> A = { x | ph } ) $=
       ( cv wcel wb wal cab abid1 abbi eqtrid ) BDCEZAFBGCLBHABHBCILABJK $.
+
+    $( Equality of a class variable and a class abstraction (also called a
+       class builder).  Theorem 5.1 of [Quine] p. 34.  This theorem shows the
+       relationship between expressions with class abstractions and expressions
+       with class variables.  Note that ~ abbib and its relatives are among
+       those useful for converting theorems with class variables to equivalent
+       theorems with wff variables, by first substituting a class abstraction
+       for each class variable.
+
+       Class variables can always be eliminated from a theorem to result in an
+       equivalent theorem with wff variables, and vice-versa.  The idea is
+       roughly as follows.  To convert a theorem with a wff variable ` ph `
+       (that has a free variable ` x ` ) to a theorem with a class variable
+       ` A ` , we substitute ` x e. A ` for ` ph ` throughout and simplify,
+       where ` A ` is a new class variable not already in the wff.  An example
+       is the conversion of ~ zfauscl to ~ inex1 (look at the instance of
+       ~ zfauscl that occurs in the proof of ~ inex1 ).  Conversely, to convert
+       a theorem with a class variable ` A ` to one with ` ph ` , we substitute
+       ` { x | ph } ` for ` A ` throughout and simplify, where ` x ` and ` ph `
+       are new setvar and wff variables not already in the wff.  For more
+       information on class variables, see Quine pp. 15-21 and/or Takeuti and
+       Zaring pp. 10-13.
+
+       (Contributed by NM, 26-May-1993.)  (Proof shortened by Wolf Lammen,
+       12-Feb-2025.) $)
+    eqabb $p |- ( A = { x | ph } <-> A. x ( x e. A <-> ph ) ) $=
+      ( cab wceq cv wcel wb wal abid1 eqeq1i abbib bitri ) CABDZEBFCGZBDZNEOAHB
+      ICPNBCJKOABLM $.
   $}
 
 
