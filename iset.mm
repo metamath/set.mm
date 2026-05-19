@@ -20458,6 +20458,47 @@ $)
       ( cab wceq wtru cv wcel wb a1i eqabdv mptru ) CABEFGABCBHCIAJGDKLM $.
   $}
 
+  ${
+    $d x A $.
+    $( Every class is equal to a class abstraction (the class of sets belonging
+       to it).  Theorem 5.2 of [Quine] p. 35.  This is a generalization to
+       classes of ~ cvjust .  The proof does not rely on ~ cvjust , so ~ cvjust
+       could be proved as a special instance of it.  Note however that ~ abid1
+       necessarily relies on ~ df-clel , whereas ~ cvjust does not.
+
+       This theorem requires ~ ax-ext , ~ df-clab , ~ df-cleq , ~ df-clel , but
+       to prove that any specific class term not containing class variables is
+       a setvar or is equal to a class abstraction does not require these
+       $a-statements.  This last fact is a metatheorem, consequence of the fact
+       that the only $a-statements with typecode ` class ` are ~ cv , ~ cab ,
+       and statements corresponding to defined class constructors.
+
+       Note on the simultaneous presence in set.mm of this ~ abid1 and its
+       commuted form ~ abid2 :  It is rare that two forms so closely related
+       both appear in set.mm.  Indeed, such equalities are generally used in
+       later proofs as parts of transitive inferences, and with the many
+       variants of ~ eqtri (search for *eqtr*), it would be rare that either
+       one would shorten a proof compared to the other.  There is typically a
+       choice between what we call a "definitional form", where the shorter
+       expression is on the LHS (left-hand side), and a "computational form",
+       where the shorter expression is on the RHS (right-hand side).  An
+       example is ~ df-2 versus ~ 1p1e2 .  We do not need ~ 1p1e2 , but because
+       it occurs "naturally" in computations, it can be useful to have it
+       directly, together with a uniform set of 1-digit operations like
+       ~ 1p2e3 , etc.  In most cases, we do not need both a definitional and a
+       computational forms.  A definitional form would favor consistency with
+       genuine definitions, while a computational form is often more natural.
+       The situation is similar with biconditionals in propositional calculus:
+       see for instance ~ pm4.24 and ~ anidm , while other biconditionals
+       generally appear in a single form (either definitional, but more often
+       computational).  In the present case, the equality is important enough
+       that both ~ abid1 and ~ abid2 are in set.mm.
+
+       (Contributed by NM, 26-Dec-1993.)  (Revised by BJ, 10-Nov-2020.) $)
+    abid1 $p |- A = { x | x e. A } $=
+      ( cv wcel biid eqabi ) ACBDZABGEF $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
