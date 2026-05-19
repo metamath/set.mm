@@ -20547,6 +20547,15 @@ $)
       ICPNBCJKOABLM $.
   $}
 
+  ${
+    $d x A $.
+    $( Equality of a class variable and a class abstraction.  Commuted form of
+       ~ eqabb .  (Contributed by NM, 20-Aug-1993.) $)
+    eqabcb $p |- ( { x | ph } = A <-> A. x ( ph <-> x e. A ) ) $=
+      ( cab wceq cv wcel wb wal eqabb eqcom bicom albii 3bitr4i ) CABDZEBFCGZAH
+      ZBIOCEAPHZBIABCJOCKRQBAPLMN $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
