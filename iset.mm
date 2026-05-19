@@ -14023,6 +14023,15 @@ $)
   $}
 
   ${
+    $d x y $.  $d x ps $.
+    equsalvw.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Version of ~ equsex with two disjoint variable conditions.  (Contributed
+       by BJ, 31-May-2019.)  (Proof shortened by Wolf Lammen, 23-Oct-2023.) $)
+    equsexvw $p |- ( E. x ( x = y /\ ph ) <-> ps ) $=
+      ( ax-17 equsex ) ABCDBCFEG $.
+  $}
+
+  ${
     equsexd.1 $e |- ( ph -> A. x ph ) $.
     equsexd.2 $e |- ( ph -> ( ch -> A. x ch ) ) $.
     equsexd.3 $e |- ( ph -> ( x = y -> ( ps <-> ch ) ) ) $.
