@@ -20448,6 +20448,16 @@ $)
       ( cab cv wcel bicomd eqabdv eqcomd ) ADBCFABCDABCGDHEIJK $.
   $}
 
+  ${
+    $d x A $.
+    eqabi.1 $e |- ( x e. A <-> ph ) $.
+    $( Equality of a class variable and a class abstraction (inference form).
+       (Contributed by NM, 26-May-1993.)  (Revised by Wolf Lammen,
+       6-May-2023.) $)
+    eqabi $p |- A = { x | ph } $=
+      ( cab wceq wtru cv wcel wb a1i eqabdv mptru ) CABEFGABCBHCIAJGDKLM $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
