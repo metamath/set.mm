@@ -20556,6 +20556,14 @@ $)
       ZBIOCEAPHZBIABCJOCKRQBAPLMN $.
   $}
 
+  ${
+    eqabrd.1 $e |- ( ph -> A = { x | ps } ) $.
+    $( Equality of a class variable and a class abstraction (deduction form of
+       ~ eqabb ).  (Contributed by NM, 16-Nov-1995.) $)
+    eqabrd $p |- ( ph -> ( x e. A <-> ps ) ) $=
+      ( cv wcel cab eleq2d abid bitrdi ) ACFZDGLBCHZGBADMLEIBCJK $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
