@@ -49721,6 +49721,11 @@ $)
     ( wfn crn wss wa wf ssid biantru df-f bitr4i ) BACZLBDZMEZFAMBGNLMHIAMBJK
     $.
 
+  $( A function maps to its range.  (Contributed by Glauco Siliprandi,
+     3-Mar-2021.) $)
+  ffrn $p |- ( F : A --> B -> F : A --> ran F ) $=
+    ( wf wfn crn ffn dffn3 sylib ) ABCDCAEACFCDABCGACHI $.
+
   $( Expanding the codomain of a mapping.  (Contributed by NM, 10-May-1998.)
      (Proof shortened by Andrew Salmon, 17-Sep-2011.) $)
   fss $p |- ( ( F : A --> B /\ B C_ C ) -> F : A --> C ) $=
