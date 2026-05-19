@@ -20439,6 +20439,15 @@ $)
       ZACHDIZCFJZBCFJFHZDIZTQIARBCFEKSUACFDLMBFCNOP $.
   $}
 
+  ${
+    $d x A $.  $d ph x $.
+    eqabcdv.1 $e |- ( ph -> ( ps <-> x e. A ) ) $.
+    $( Deduction from a wff to a class abstraction.  (Contributed by NM,
+       9-Jul-1994.)  (Proof shortened by Wolf Lammen, 16-Nov-2019.) $)
+    eqabcdv $p |- ( ph -> { x | ps } = A ) $=
+      ( cab cv wcel bicomd eqabdv eqcomd ) ADBCFABCDABCGDHEIJK $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
