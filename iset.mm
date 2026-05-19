@@ -20511,6 +20511,14 @@ $)
       ( cv wcel biid eqabi ) ACBDZABGEF $.
   $}
 
+  ${
+    $d x A y $.  $d ph y $.
+    $( One direction of ~ eqabb .  (Contributed by Wolf Lammen,
+       13-Feb-2025.) $)
+    eqab $p |- ( A. x ( x e. A <-> ph ) -> A = { x | ph } ) $=
+      ( cv wcel wb wal cab abid1 abbi eqtrid ) BDCEZAFBGCLBHABHBCILABJK $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
