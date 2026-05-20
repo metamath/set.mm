@@ -68311,6 +68311,29 @@ $)
     BUAUDACHACSQMT $.
 
   ${
+    $d A w y z $.  $d B w y z $.  $d ph w y z $.
+    mapsnend.a $e |- ( ph -> A e. V ) $.
+    mapsnend.b $e |- ( ph -> B e. W ) $.
+    $( Set exponentiation to a singleton exponent is equinumerous to its base.
+       Exercise 4.43 of [Mendelson] p. 255.  (Contributed by NM, 17-Dec-2003.)
+       (Revised by Mario Carneiro, 15-Nov-2014.)  (Revised by Glauco
+       Siliprandi, 24-Dec-2020.) $)
+    mapsnend $p |- ( ph -> ( A ^m { B } ) ~~ A ) $=
+      ( vz vw vy csn cmap cv cvv wcel vex wceq wa wb a1i co cfv cop fnmap elexd
+      cxp wfn snexg syl fnovex mp3an2i fvexg sylancr a1d opexg sylancl wex wrex
+      mapsnd eqabrd anbi1d r19.41v bicomi df-rex 3bitrd sylan9eqr eqeq2d equcom
+      fveq1 fvsng bitrdi pm5.32da anbi2d anass ancom 3bitr2d exbidv opeq2 sneqd
+      eleq1w anbi12d equsexvw en2d ) AHIBCKZLUAZBCHMZUBZCIMZUCZKZNDNNLNNUFUGABN
+      OWDNOZWENOUDABDFUEACEOZWKGCEUHUIBWDNNLUJUKFAWGNOZWFWEOZAWFNOWLWMHPGCWFNEU
+      LUMUNAWJNOZWHBOZAWINOZWOAWLWHNOWQGIPCWHENUOUPWINUHUIUNAWNWHWGQZRZJMZBOZWF
+      CWTUCZKZQZWRRZRZJUQZWTWHQZXAXDRZRZJUQZWPWFWJQZRZAWSXDJBURZWRRZXEJBURZXGAW
+      NXNWRAXNHWEAJBCHDEFGUSUTVAXOXPSAXPXOXDWRJBVBVCTXPXGSAXEJBVDTVEAXFXJJAXFXA
+      XDXHRZRZXIXHRZXJAXEXQXAAXDWRXHAXDRZWRWHWTQXHXTWGWTWHXDAWGCXCUBZWTCWFXCVIA
+      WLWTNOYAWTQGJPCWTENVJUPVFVGIJVHVKVLVMXSXRSAXAXDXHVNTXSXJSAXIXHVOTVPVQXKXM
+      SAXIXMJIXHXAWPXDXLJIBVTXHXCWJWFXHXBWIWTWHCVRVSVGWAWBTVEWC $.
+  $}
+
+  ${
     $d w y z A $.  $d w y z B $.
     mapsnen.1 $e |- A e. _V $.
     mapsnen.2 $e |- B e. _V $.
