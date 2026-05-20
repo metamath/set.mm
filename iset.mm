@@ -67866,17 +67866,17 @@ $)
 
   ${
     $d x y A $.  $d x y B $.  $d y C $.  $d x D $.  $d x y ph $.
-    en2d.1 $e |- ( ph -> A e. _V ) $.
-    en2d.2 $e |- ( ph -> B e. _V ) $.
-    en2d.3 $e |- ( ph -> ( x e. A -> C e. _V ) ) $.
-    en2d.4 $e |- ( ph -> ( y e. B -> D e. _V ) ) $.
+    en2d.1 $e |- ( ph -> A e. V ) $.
+    en2d.2 $e |- ( ph -> B e. W ) $.
+    en2d.3 $e |- ( ph -> ( x e. A -> C e. X ) ) $.
+    en2d.4 $e |- ( ph -> ( y e. B -> D e. Y ) ) $.
     en2d.5 $e |- ( ph -> ( ( x e. A /\ y = C ) <-> ( y e. B /\ x = D ) ) ) $.
     $( Equinumerosity inference from an implicit one-to-one onto function.
        (Contributed by NM, 27-Jul-2004.)  (Revised by Mario Carneiro,
-       12-May-2014.) $)
+       12-May-2014.)  (Revised by AV, 4-Aug-2024.) $)
     en2d $p |- ( ph -> A ~~ B ) $=
-      ( cvv wcel cmpt wf1o cen wbr cv imp eqid f1od f1oen2g syl3anc ) ADMNEMNDE
-      BDFOZPDEQRHIABCDEFGUEMMUEUAABSDNFMNJTACSENGMNKTLUBDEUEMMUCUD $.
+      ( wcel cmpt cv imp wf1o cen wbr eqid f1od f1oen2g syl3anc ) ADHQEIQDEBDFR
+      ZUADEUBUCLMABCDEFGUHJKUHUDABSDQFJQNTACSEQGKQOTPUEDEUHHIUFUG $.
   $}
 
   ${
@@ -67905,8 +67905,8 @@ $)
     $( Equinumerosity inference from an implicit one-to-one onto function.
        (Contributed by NM, 4-Jan-2004.) $)
     en2i $p |- A ~~ B $=
-      ( cen wtru cvv wcel a1i cv wi wceq wa wbr wb en2d mptru ) CDLUAMABCDEFCNO
-      MGPDNOMHPAQZCOZENORMIPBQZDOZFNORMJPUFUGESTUHUEFSTUBMKPUCUD $.
+      ( cen wtru cvv wcel a1i cv wi wceq wa wbr wb en2d mptru ) CDLUAMABCDEFNNN
+      NCNOMGPDNOMHPAQZCOZENORMIPBQZDOZFNORMJPUFUGESTUHUEFSTUBMKPUCUD $.
   $}
 
   ${
@@ -68339,10 +68339,10 @@ $)
       ( vx vy wcel c1o cmap co c0 cxp cvv 1oex a1i cv 0ex p0ex wceq wa bitr2di
       wb csn wfn fnmap elex fnovex mp3an12i 2a1i xpexg mpan2 a1d el1o wf oveq1i
       df1o2 eleq2i elmapg mpan bitrid fconst2 anbi12d ancom en2d ) ABEZCDFAGHZF
-      IAIUAZJZGKKJUBFKEZVCAKEVDKEUCLABUDFAKKGUEUFVGVCLMVCCNZVDEZIKEOUGVCVFKEZDN
-      ZFEZVCVEKEZVJPAVEBKUHUIUJVCVLVHVFQZRVKIQZVIRVIVORVCVLVOVNVIVLVOTVCVKUKMVC
-      VIAVEVHULZVNVIVHVEAGHZEZVCVPVDVQVHFVEAGUNUMUOVMVCVRVPTPVEAVHKBUPUQURAIVHO
-      USSUTVOVIVASVB $.
+      IAIUAZJZKKKKGKKJUBFKEZVCAKEVDKEUCLABUDFAKKGUEUFVGVCLMVCCNZVDEZIKEOUGVCVFK
+      EZDNZFEZVCVEKEZVJPAVEBKUHUIUJVCVLVHVFQZRVKIQZVIRVIVORVCVLVOVNVIVLVOTVCVKU
+      KMVCVIAVEVHULZVNVIVHVEAGHZEZVCVPVDVQVHFVEAGUNUMUOVMVCVRVPTPVEAVHKBUPUQURA
+      IVHOUSSUTVOVIVASVB $.
 
     $( Two singletons are equinumerous.  (Contributed by NM, 9-Nov-2003.) $)
     en2sn $p |- ( ( A e. C /\ B e. D ) -> { A } ~~ { B } ) $=
