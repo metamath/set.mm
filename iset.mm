@@ -151041,6 +151041,48 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Bertrand's Ballot Problem
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d c M $.  $d c N $.  $d c O $.  $d i M $.  $d i N $.  $d i O $.  $d j M $.
+    $d j N $.  $d j O $.  $d k M $.  $d k N $.  $d k O $.
+
+    $( Two candidates A and B participate to an election,
+      where A receives ` M ` votes and B receives ` N ` votes.
+      Ballots are counted by picking ballot papers one by one,
+      and we're evaluating the probability that A is ahead throughout the count
+
+      We number the ballots picked using integers in ` ( 1 ... ( M + N ) ) ` .
+      We then characterize a counting ` c ` as the set of indices in the
+      counting sequence where A was picked.
+      Thus, for a counting ` c C_ ( 1 ... ( M + N ) ) ` :
+        "The ith ballot paper picked is for A" is expressed as ` i e. c `
+        "The ith ballot paper picked is for B" is expressed as ` -. i e. c `
+        "The number of ballot papers for A" is expressed as ` ( # ` c ) `
+    $)
+
+    ballotth.m $e |- M e. NN $.
+    ballotth.n $e |- N e. NN $.
+
+    $( ` O ` is the universe, all countings where A receives ` M ` votes
+       out of ` M + N ` $)
+    ballotfi.o $e |- O
+      = { c e. ( ~P ( 1 ... ( M + N ) ) i^i Fin ) | ( # ` c ) = M } $.
+    $( ` O ` is finite.  (Contributed by Jim Kingdon, 20-May-2026.) $)
+    ballotfilemofi $p |- O e. Fin $=
+      ( cv chash cfv wceq c1 co cfn wcel wtru cz cn mp2an nnzi cfz cpw cin crab
+      caddc 1z nnaddcl fzfig fipwfi mp1i wdc cn0 elinel2 hashcl syl nn0zd zdceq
+      wral sylancl rgen a1i ssfirab mptru eqeltri ) CDHZIJZAKZDLABUEMZUAMZUBZNU
+      CZUDZNGVLNOPVGDVKVINOZVKNOPLQOVHQOVMUFVHAROBROVHROEFABUGSTLVHUHSVIUIUJVGU
+      KZDVKURPVNDVKVEVKOZVFQOAQOVNVOVFVOVENOVFULOVEVJNUMVEUNUOUPAETVFAUQUSUTVAV
+      BVCVD $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Cardinality of real and complex number subsets
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
