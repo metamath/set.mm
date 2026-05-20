@@ -5498,17 +5498,208 @@ that rabfi implies excluded middle</TD>
   be one to one or some other condition.</TD>
 </TR>
 
-<tr>
-  <td>df-fsupp</td>
-  <td><i>none</i></td>
-  <td>the definition is in terms of df-supp</td>
-</tr>
-
 <TR>
   <TD>fisuppfi</TD>
   <TD>~ preimaf1ofi</TD>
   <TD>The set.mm proof of fisuppfi uses ssfi</TD>
 </TR>
+
+<tr>
+  <td>fidmfisupp</td>
+  <td><i>none</i></td>
+  <td>additional decidability conditions would apparently
+  be needed; the set.mm proof uses fisuppfi</td>
+</tr>
+
+<tr>
+  <td>finnzfsuppd</td>
+  <td><i>none</i></td>
+  <td>additional conditions would apparently be needed</td>
+</tr>
+
+<tr>
+  <td>fdmfisuppfi</td>
+  <td><i>none</i></td>
+  <td>additional conditions would apparently be needed</td>
+</tr>
+
+<tr>
+  <td>fdmfifsupp</td>
+  <td><i>none</i></td>
+  <td>additional conditions would apparently be needed</td>
+</tr>
+
+<tr>
+  <td>fsuppmptdm</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses fdmfifsupp</td>
+</tr>
+
+<tr>
+  <td>fndmfisuppfi</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses fdmfisuppfi</td>
+</tr>
+
+<tr>
+  <td>fndmfifsupp</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses fdmfifsupp</td>
+</tr>
+
+<tr>
+  <td>suppssfifsupp</td>
+  <td><i>none</i></td>
+  <td>although we could prove a modified version of this,
+  perhaps it is easier for proofs just to use
+  ~ ssfidc plus ~ funisfsupp</td>
+</tr>
+
+<tr>
+  <td>fsuppsssupp</td>
+  <td><i>none</i></td>
+  <td>we'd apparently need to be dealing with a decidable subset
+  or some other change to the theorem</td>
+</tr>
+
+<tr>
+  <td>fsuppsssuppgd</td>
+  <td><i>none</i></td>
+  <td>we'd apparently need to be dealing with a decidable subset
+  or some other change to the theorem</td>
+</tr>
+
+<tr>
+  <td>fsuppss</td>
+  <td><i>none</i></td>
+  <td>we'd apparently need to be dealing with a decidable subset
+  or some other change to the theorem</td>
+</tr>
+
+<tr>
+  <td>fsuppssov1</td>
+  <td><i>none</i></td>
+  <td>First step is perhaps to figure out
+  suppssov1 (get our version of suppssov1 similar to
+  the set.mm one and so on). The set.mm proof also
+  uses fsuppsssuppgd .</td>
+</tr>
+
+<tr>
+  <td>fsuppun</td>
+  <td><i>none</i></td>
+  <td>presumably needs additional conditions</td>
+</tr>
+
+<tr>
+  <td>fsuppunfi</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses unfi</td>
+</tr>
+
+<tr>
+  <td>fsuppunbi</td>
+  <td><i>none</i></td>
+  <td>presumably needs additional conditions</td>
+</tr>
+
+<tr>
+  <td>snopfsupp</td>
+  <td>~ snopfsuppdc</td>
+  <td>adds a decidability condition</td>
+</tr>
+
+<tr>
+  <td>funsnfsupp</td>
+  <td><i>none</i></td>
+  <td>would apparently be provable if ` DECID Y = Z ` were
+  added</td>
+</tr>
+
+<tr>
+  <td>fsuppres</td>
+  <td><i>none</i></td>
+  <td>presumably needs additional conditions</td>
+</tr>
+
+<tr>
+  <td>fmptssfisupp</td>
+  <td><i>none</i></td>
+  <td>presumably needs additional conditions</td>
+</tr>
+
+<tr>
+  <td>ressuppfi</td>
+  <td><i>none</i></td>
+  <td>although the set.mm proof will not work as-is, the
+  ` ( dom F \ B ) e. Fin ` condition may go a significant
+  part of the way towards making this provable</td>
+</tr>
+
+<tr>
+  <td>resfsupp</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses ressuppfi</td>
+</tr>
+
+<tr>
+  <td>resfifsupp</td>
+  <td><i>none</i></td>
+  <td>presumably needs additional conditions</td>
+</tr>
+
+<tr>
+  <td>fsuppmptif</td>
+  <td><i>none</i></td>
+  <td>presumably needs a condition like
+  ` A. k e. A DECID k e. D ` and perhaps others</td>
+</tr>
+
+<tr>
+  <td>sniffsupp</td>
+  <td><i>none</i></td>
+  <td>would apparently be provable with additional
+  conditions for decidability and/or set existence</td>
+</tr>
+
+<tr>
+  <td>fsuppcolem</td>
+  <td><i>none</i></td>
+  <td>not needed; see fsuppco</td>
+</tr>
+
+<tr>
+  <td>fsuppco</td>
+  <td>~ fsuppcorn</td>
+  <td>adds a set existence condition and more importantly
+  the ` ( F supp Z ) C_ ran G ` condition</td>
+</tr>
+
+<tr>
+  <td>fsuppco2</td>
+  <td><i>none</i></td>
+  <td>perhaps would need additional conditions such as
+  those at ~ fsuppcorn</td>
+</tr>
+
+<tr>
+  <td>fsuppcor</td>
+  <td><i>none</i></td>
+  <td>perhaps would need additional conditions such as
+  those at ~ fsuppcorn</td>
+</tr>
+
+<tr>
+  <td>mapfien and lemmas</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses fsuppcor and fsuppco</td>
+</tr>
+
+<tr>
+  <td>mapfien2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses mapfien and enfixsn</td>
+</tr>
 
 <tr>
   <td>intrnfi</td>
@@ -18652,6 +18843,17 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td id="missing-eulerpart">eulerpart</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof uses, directly or indirectly,
+  df-ind , indf1ofs, funisfsupp . fcobijfs , indf1o ,
+  mapfien , fsuppco and perhaps others.
+  There may be enough decidability for the indicator
+  function usages to be adaptable.</td>
+</td>
+</tr>
+
+<tr>
   <td>irrdiff</td>
   <td>~ apdiff</td>
 </tr>
@@ -18864,10 +19066,11 @@ of Transcendental Numbers</td>
 
   <tr>
     <td>45.  The Partition Theorem</td>
-    <td>The set.mm proof uses df-ind , indf1ofs, funisfsupp .
-    fcobijfs , indf1o , and perhaps others not yet present.
-    There may be enough decidability for the indicator
-    function usages to be adaptable.</td>
+    <td>The set.mm proof would need adaptation in areas
+    including use of the indicator function and various
+    theorems related to the support of a function.
+    See the <a href="#missing-eulerpart" >eulerpart entry
+    above</a> for more detailed notes.</td>
   </tr>
 
   <tr>

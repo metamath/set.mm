@@ -71100,6 +71100,178 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Finitely supported functions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c finSupp $.  $( Class for predicate "finitely supported function". $)
+
+  $( Extend class definition to include the predicate to be a finitely
+     supported function. $)
+  cfsupp $a class finSupp $.
+
+  ${
+    $d r z $.
+    $( Define the property of a function to be finitely supported (in relation
+       to a given zero).  (Contributed by AV, 23-May-2019.) $)
+    df-fsupp $a |- finSupp
+                   = { <. r , z >. | ( Fun r /\ ( r supp z ) e. Fin ) } $.
+
+    $( The property of a function to be finitely supported is a relation.
+       (Contributed by AV, 7-Jun-2019.) $)
+    relfsupp $p |- Rel finSupp $=
+      ( vr vz cv wfun csupp co cfn wcel wa cfsupp df-fsupp relopabiv ) ACZDMBCE
+      FGHIABJBAKL $.
+  $}
+
+  $( A proper class is never finitely supported.  (Contributed by AV,
+     7-Jun-2019.) $)
+  relprcnfsupp $p |- ( -. A e. _V -> -. A finSupp Z ) $=
+    ( cfsupp wbr cvv wcel relfsupp brrelex1i con3i ) ABCDAEFABCGHI $.
+
+  ${
+    $d R r z $.  $d Z r z $.
+    $( The property of a class to be a finitely supported function (in relation
+       to a given zero).  (Contributed by AV, 23-May-2019.) $)
+    isfsupp $p |- ( ( R e. V /\ Z e. W ) -> ( R finSupp Z
+                                    <-> ( Fun R /\ ( R supp Z ) e. Fin ) ) ) $=
+      ( vr vz cv wfun csupp co cfn wcel wa cfsupp wb funeq adantr oveq12 eleq1d
+      wceq anbi12d df-fsupp brabga ) EGZHZUDFGZIJZKLZMAHZADIJZKLZMEFADNBCUDATZU
+      FDTZMZUEUIUHUKULUEUIOUMUDAPQUNUGUJKUDAUFDIRSUAFEUBUC $.
+  $}
+
+  ${
+    isfsuppd.r $e |- ( ph -> R e. V ) $.
+    isfsuppd.z $e |- ( ph -> Z e. W ) $.
+    isfsuppd.1 $e |- ( ph -> Fun R ) $.
+    isfsuppd.2 $e |- ( ph -> ( R supp Z ) e. Fin ) $.
+    $( Deduction form of ~ isfsupp .  (Contributed by SN, 29-Jul-2024.) $)
+    isfsuppd $p |- ( ph -> R finSupp Z ) $=
+      ( cfsupp wbr wfun csupp co cfn wcel wa wb isfsupp syl2anc mpbir2and ) ABE
+      JKZBLZBEMNOPZHIABCPEDPUBUCUDQRFGBCDESTUA $.
+  $}
+
+  $( The property of a function to be finitely supported (in relation to a
+     given zero).  (Contributed by AV, 23-May-2019.) $)
+  funisfsupp $p |- ( ( Fun R /\ R e. V /\ Z e. W )
+                     -> ( R finSupp Z <-> ( R supp Z ) e. Fin ) ) $=
+    ( wfun wcel w3a cfsupp wbr csupp co cfn wa wb isfsupp 3adant1 ibar 3ad2ant1
+    bicomd bitrd ) AEZABFZDCFZGADHIZUAADJKLFZMZUEUBUCUDUFNUAABCDOPUAUBUFUENUCUA
+    UEUFUAUEQSRT $.
+
+  $( Implications of a class being a finitely supported function (in relation
+     to a given zero).  (Contributed by AV, 26-May-2019.) $)
+  fsuppimp $p |- ( R finSupp Z -> ( Fun R /\ ( R supp Z ) e. Fin ) ) $=
+    ( cvv wcel wa cfsupp wbr wfun csupp co cfn relfsupp brrelex12i biimpd mpcom
+    isfsupp ) ACDBCDEZABFGZAHABIJKDEZABFLMQRSACCBPNO $.
+
+  ${
+    fsuppimpd.f $e |- ( ph -> F finSupp Z ) $.
+    $( A finitely supported function is a function with a finite support.
+       (Contributed by AV, 6-Jun-2019.) $)
+    fsuppimpd $p |- ( ph -> ( F supp Z ) e. Fin ) $=
+      ( cfsupp wbr csupp co cfn wcel wfun fsuppimp simprd syl ) ABCEFZBCGHIJZDO
+      BKPBCLMN $.
+  $}
+
+  ${
+    fsuppfund.1 $e |- ( ph -> F finSupp Z ) $.
+    $( A finitely supported function is a function.  (Contributed by SN,
+       8-Mar-2025.) $)
+    fsuppfund $p |- ( ph -> Fun F ) $=
+      ( cfsupp wbr wfun csupp co cfn wcel fsuppimp simpld syl ) ABCEFZBGZDOPBCH
+      IJKBCLMN $.
+  $}
+
+  $( If two functions have the same support, one function is finitely supported
+     iff the other one is finitely supported.  (Contributed by AV,
+     30-Jun-2019.) $)
+  suppeqfsuppbi $p |- ( ( ( F e. U /\ Fun F ) /\ ( G e. V /\ Fun G ) )
+                        -> ( ( F supp Z ) = ( G supp Z )
+                             -> ( F finSupp Z <-> G finSupp Z ) ) ) $=
+    ( wcel wfun wa csupp co cfsupp wbr wb cvv relfsupp brrelex2i a1i cfn adantr
+    wi wceq simprlr simprll simpl funisfsupp syl3anc simpr adantl impcom bicomd
+    ex eleq1 sylan9bb bitr4d expl com12 pm5.21ndd ) BAFZBGZHZCDFZCGZHZHZBEIJZCE
+    IJZUAZBEKLZCEKLZMZVDVGHZENFZVHVIVHVLTVKBEKOPQVIVLTVKCEKOPQVLVKVJVLVDVGVJVLV
+    DHZVGHVHVERFZVIVMVHVNMZVGVMUSURVLVOVLURUSVCUBVLURUSVCUCVLVDUDBANEUEUFSVMVIV
+    FRFZVGVNVDVLVIVPMZVCVLVQTUTVCVLVQVCVLHVBVAVLVQVCVBVLVAVBUGSVCVAVLVAVBUDSVCV
+    LUGCDNEUEUFUKUHUIVGVNVPVEVFRULUJUMUNUOUPUQUK $.
+
+  $( The cartesian product of two finitely supported functions is finite.
+     (Contributed by AV, 17-Jul-2019.) $)
+  fsuppxpfi $p |- ( ( F finSupp Z /\ G finSupp Z )
+                    -> ( ( F supp Z ) X. ( G supp Z ) ) e. Fin ) $=
+    ( cfsupp wbr csupp co cfn wcel cxp id fsuppimpd xpfi syl2an ) ACDEZACFGZHIB
+    CFGZHIPQJHIBCDEZOACOKLRBCRKLPQMN $.
+
+  ${
+    fczfsuppd.b $e |- ( ph -> B e. V ) $.
+    fczfsuppd.z $e |- ( ph -> Z e. W ) $.
+    $( A constant function with value zero is finitely supported.  (Contributed
+       by AV, 30-Jun-2019.) $)
+    fczfsuppd $p |- ( ph -> ( B X. { Z } ) finSupp Z ) $=
+      ( csn cxp cvv wcel snexg syl xpexd wfn wfun fnconstg fnfun 3syl cfn csupp
+      co c0 fczsupp0 0fi eqeltri a1i isfsuppd ) ABEHZIZJDEABUICJFAEDKZUIJKGEDLM
+      NGAUKUJBOUJPGBEDQBUJRSUJEUAUBZTKAULUCTBEUDUEUFUGUH $.
+  $}
+
+  $( The empty set is a finitely supported function.  (Contributed by AV,
+     19-Jul-2019.) $)
+  0fsupp $p |- ( Z e. V -> (/) finSupp Z ) $=
+    ( wcel c0 cfsupp wbr csupp co cfn supp0 0fi eqeltrdi wfun cvv wb funisfsupp
+    fun0 0ex mp3an12 mpbird ) BACZDBEFZDBGHZICZUAUCDIABJKLDMDNCUAUBUDOQRDNABPST
+    $.
+
+  ${
+    snopfsuppdc.x $e |- ( ph -> X e. V ) $.
+    snopfsuppdc.y $e |- ( ph -> Y e. W ) $.
+    snopfsuppdc.z $e |- ( ph -> Z e. U ) $.
+    snopfsuppdc.dc $e |- ( ph -> DECID Y = Z ) $.
+    $( A singleton containing an ordered pair is a finitely supported function.
+       (Contributed by AV, 19-Jul-2019.) $)
+    snopfsuppdc $p |- ( ph -> { <. X , Y >. } finSupp Z ) $=
+      ( cop csn cvv wcel opexg syl2anc syl c0 cfn snexg wfun funsng co wceq cif
+      csupp eqid suppsnopdc 0fi a1i snfig ifcldcd eqeltrd isfsuppd ) AEFLZMZNBG
+      AUPNOZUQNOAECOZFDOZURHIEFCDPQUPNUARJAUSUTUQUBHIEFCDUCQAUQGUGUDFGUEZSEMZUF
+      TABUQCDEFGUQUHHIJKUIAVASVBTSTOAUJUKAUSVBTOHECULRKUMUNUO $.
+  $}
+
+  $( Two ways of saying that a function with known codomain is finitely
+     supported.  (Contributed by AV, 8-Jul-2019.) $)
+  ffsuppbi $p |- ( ( I e. V /\ Z e. W ) -> ( F : I --> S
+                 -> ( F finSupp Z <-> ( `' F " ( S \ { Z } ) ) e. Fin ) ) ) $=
+    ( wcel wa wf cfsupp wbr ccnv csn cdif cima cfn wb csupp cvv imp wfun adantl
+    co ffun wi fex expcom adantr simplr funisfsupp syl3anc fsuppeq eleq1d bitrd
+    wceq ex ) CDGZFEGZHZCABIZBFJKZBLAFMNOZPGZQUSUTHZVABFRUCZPGZVCVDBUAZBSGZURVA
+    VFQUTVGUSCABUDUBUSUTVHUQUTVHUEURUTUQVHCADBUFUGUHTUQURUTUIBSEFUJUKVDVEVBPUSU
+    TVEVBUOABCDEFULTUMUNUP $.
+
+  ${
+    fsuppco.f $e |- ( ph -> F finSupp Z ) $.
+    fsuppco.g $e |- ( ph -> G : X -1-1-> Y ) $.
+    fsuppco.z $e |- ( ph -> Z e. W ) $.
+    fsuppco.v $e |- ( ph -> F e. V ) $.
+    fsuppcorn.g $e |- ( ph -> G e. U ) $.
+    fsuppcorn.rn $e |- ( ph -> ( F supp Z ) C_ ran G ) $.
+    $( The composition of a 1-1 function with a finitely supported function is
+       finitely supported.  The purpose of the ` ( F supp Z ) C_ ran G `
+       condition is to ensure we don't subset the support of the function in
+       such a way as to fun afoul of ~ exmidssfi .  (Other alternative
+       conditions might also be sufficient).  (Contributed by AV, 28-May-2019.)
+       (Revised by Jim Kingdon, 15-May-2026.) $)
+    fsuppcorn $p |- ( ph -> ( F o. G ) finSupp Z ) $=
+      ( wcel wfun syl syl2anc cfn ccom cvv ccnv wf1 simprbi cofunex2g fsuppfund
+      df-f1 f1fun funco csupp cima wceq suppcofn syl22anc cen wbr fsuppimpd crn
+      wf co wss wf1o f1cnv f1of1 f1imaeng syl3anc enfii eqeltrd isfsuppd ) ACDU
+      AZUBFIACEPZDUCZQZVKUBPMAGHDUDZVNKVOGHDUTVNGHDUHUERCDEUFSLACQZDQZVKQACIJUG
+      ZAVOVQKGHDUIRZCDUJSAVKIUKVAZVMCIUKVAZULZTAVLDBPVPVQVTWBUMMNVRVSCDEBIUNUOA
+      WATPZWBWAUPUQZWBTPACIJURZADUSZGVMUDZWAWFVBWCWDAWFGVMVCZWGAVOWHKGHDVDRWFGV
+      MVEROWEWFGWAVMTVFVGWBWAVHSVIVJ $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Finite intersections
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -204628,6 +204800,9 @@ htmldef "Fin" as
     "<IMG SRC='_fin.gif' WIDTH=21 HEIGHT=19 ALT=' Fin' TITLE='Fin'>";
   althtmldef "Fin" as 'Fin';
   latexdef "Fin" as "\mathrm{Fin}";
+htmldef "finSupp" as ' finSupp ';
+  althtmldef "finSupp" as ' finSupp ';
+  latexdef "finSupp" as "\mathrm{finSupp}";
 htmldef "iota_" as
     "<IMG SRC='_riotabar.gif' WIDTH=6 HEIGHT=19 ALT=' iota_' TITLE='iota_'>";
   althtmldef "iota_" as '<U>&#8489;</U>';
