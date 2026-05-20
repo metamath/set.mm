@@ -71730,6 +71730,90 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  The sizes of sets
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d A s u w y z $.  $d A s w x y z $.  $d V s u w y z $.
+    2omap.f $e |- F = ( s e. ( 2o ^m A ) |-> { z e. A | ( s ` z ) = 1o } ) $.
+    $( Mapping between ` ( 2o ^m A ) ` and decidable subsets of ` A ` .
+       (Contributed by Jim Kingdon, 12-Nov-2025.) $)
+    2omap $p |- ( A e. V -> F : ( 2o ^m A ) -1-1-onto->
+        { x e. ~P A | A. y e. A DECID y e. x } ) $=
+      ( vw vu wcel c2o cv wdc c1o wceq c0 wa adantr simpr cmap co wral cpw crab
+      cfv cif cmpt eleq2 dcbid ralbidv wss ssrab2 elpw2g mpbiri 2ssom wf elmapi
+      com ad2antlr ffvelcdmd sselid 1onn nndceq sylancl wb adantl fveqeq2 elrab
+      bitr4di mpbid ralrimiva elrabd weq 1lt2o a1i 0lt2o elequ1 simplrr rspcdva
+      ibar ifcldcd fmpttd 2onn simpl elmapd mpbird sylan2b anbi2i simplr fveq1d
+      wn eqid ifbid simprrr ad2antrr fvmptd3 eqtrd iftrued 2thd nesymi iffalsed
+      1n0 eqeq1d mtbiri 2falsed exmiddc syl mpjaodan rabbidva elpwi dfss1 sylib
+      wo cin dfin5 eqtr3di ad2antrl simplrl simpll feqmptd eleq2d bitrdi biimpa
+      baibd eqtr4d mpbirand mtbid df2o3 eleqtrdi elpri ecased mpteq2dva impbida
+      cpr f1o2d ) DFKZGILDUAUBZBMZAMZKZNZBDUCZADUDZUEZCMZGMZUFZOPZCDUEZJDJMZIMZ
+      KZOQUGZUHZEHYQUUGYRKZRZUUCYSUUJKZNZBDUCAUUJUUDYTUUJPZUUBUUSBDUUTUUAUURYTU
+      UJYSUIUJUKYQUUJUUDKZUUPYQUVAUUJDULUUICDUMUUJDFUNUOSUUQUUSBDUUQYSDKZRZYSUU
+      GUFZOPZNZUUSUVCUVDUSKOUSKUVFUVCLUSUVDUPUVCDLYSUUGUUPDLUUGUQZYQUVBUUGLDURU
+      TUUQUVBTVAVBVCUVDOVDVEUVCUVEUURUVCUVEUVBUVERZUURUVBUVEUVHVFUUQUVBUVEWAVGU
+      UIUVECYSDUUFYSOUUGVHVIVJUJVKVLVMUULUUEKZYQUULUUDKZYSUULKZNZBDUCZRZUUOYRKZ
+      UUCUVMAUULUUDAIVNZUUBUVLBDUVPUUAUVKYTUULYSUIUJUKVIZYQUVNRZUVODLUUOUQUVRJD
+      UUNLUVRUUKDKZRZUUMOQLOLKZUVTVOVPQLKZUVTVQVPUVTUVLUUMNZBDUUKBJVNUVKUUMBJIV
+      RUJZYQUVJUVMUVSVSUVRUVSTVTWBWCUVRLDUUOUSFLUSKZUVRWDVPYQUVNWEWFWGWHUUPUVIR
+      YQUUPUVNRZUUGUUOPZUULUUJPZVFUVIUVNUUPUVQWIYQUWFRZUWGUWHUWIUWGRZUWHUUFUULK
+      ZCDUEZUUJPZUWJUWKUUICDUWJUUFDKZRZUWKUWKUUIVFUWKWLZUWOUWKRZUWKUUIUWOUWKTZU
+      WQUUHUWKOQUGZOUWOUUHUWSPZUWKUWOUUHUUFUUOUFUWSUWOUUFUUGUUOUWIUWGUWNWJWKUWO
+      JUUFUUNUWSDUUOLUUOWMJCVNUUMUWKOQJCIVRWNUWJUWNTZUWOUWKOQLUWAUWOVOVPUWBUWOV
+      QVPUWOUVLUWKNZBDUUFBCVNUVKUWKBCIVRUJUWIUVMUWGUWNYQUUPUVJUVMWOZWPUXAVTZWBW
+      QWRZSUWQUWKOQUWRWSWRWTUWOUWPRZUWKUUIUWOUWPTZUXFUUIQOPOQXCXAUXFUUHQOUXFUUH
+      UWSQUWOUWTUWPUXESUXFUWKOQUXGXBWRXDXEXFUWOUXBUWKUWPXNUXDUWKXGXHXIXJUWFUWHU
+      WMVFZYQUWGUVJUXHUUPUVMUVJUULUWLUUJUVJDUULXOZUULUWLUVJUULDULUXIUULPUULDXKU
+      ULDXLXMCDUULXPXQXDXRUTWGUWIUWHRZUUGJDUUKUUGUFZUHUUOUXJJDLUUGUXJUUPUVGYQUU
+      PUVNUWHXSUXJLDUUGUSFUWEUXJWDVPYQUWFUWHXTWFVKZYAUXJJDUXKUUNUXJUVSRZUUMUXKU
+      UNPUUMWLZUXMUUMRZUXKOUUNUXMUUMUXKOPZUXJUUMUVSUXPUXJUUMUUKUUJKZUVSUXPRZUXJ
+      UULUUJUUKUWIUWHTYBUUIUXPCUUKDUUFUUKOUUGVHVIZYCYEYDUXOUUMOQUXMUUMTWSYFUXMU
+      XNRZUXKQUUNUXTUXKQPZUXPUXTUUMUXPUXMUXNTZUXMUUMUXPVFUXNUXMUUMUVSUXPUXJUVST
+      ZUXMUUMUXQUXRUXMUULUUJUUKUWIUWHUVSWJYBUXSYCYGSYHUXMUYAUXPXNZUXNUXMUXKQOYO
+      ZKUYDUXMUXKLUYEUXMDLUUKUUGUXJUVGUVSUXLSUYCVAYIYJUXKQOYKXHSYLUXTUUMOQUYBXB
+      YFUXMUWCUUMUXNXNUXMUVLUWCBDUUKUWDUWIUVMUWHUVSUXCWPUYCVTUUMXGXHXIYMWRYNWHY
+      P $.
+  $}
+
+  ${
+    $d A s x y z $.  $d V s y z $.
+    $( Equinumerosity of ` ( 2o ^m A ) ` and the set of decidable subsets of
+       ` A ` .  (Contributed by Jim Kingdon, 14-Nov-2025.) $)
+    2omapen $p |- ( A e. V -> ( 2o ^m A ) ~~
+        { x e. ~P A | A. y e. A DECID y e. x } ) $=
+      ( vs vz wcel c2o cmap co cvv cv wdc wral cpw crab cfv c1o wceq cmpt fnmap
+      wf1o cen wbr cxp wfn 2onn elexi elex fnovex mp3an12i 2omap f1oeng syl2anc
+      com eqid ) CDGZHCIJZKGZURBLALGMBCNACOPZEURFLELQRSFCPTZUBURUTUCUDIKKUEUFHK
+      GUQCKGUSUAHUOUGUHCDUIHCKKIUJUKABFCVADEVAUPULURUTKVAUMUN $.
+  $}
+
+  ${
+    $d A x y $.
+    $( The number of finite subsets of a finite set.  (Contributed by Jim
+       Kingdon, 18-May-2026.) $)
+    2omapfi $p |- ( A e. Fin -> ( 2o ^m A ) ~~ ( ~P A i^i Fin ) ) $=
+      ( vy vx cfn wcel c2o cmap co cv wdc wral crab cen wbr cvv simpll ad2antlr
+      wa simpr syl3anc cpw cin 2omapen wceq eqid pwexg rabexd wss ssfidc fissfi
+      elpwi impbida rabbidva eqeng sylc dfin5 breqtrrdi entr syl2anc ) ADEZFAGH
+      ZBICIZEJBAKZCAUAZLZMNVEVDDUBZMNVAVFMNCBADUCUTVEVBDEZCVDLZVFMUTVEOEVEVHUDV
+      EVHMNUTVCCVDVEOVEUEADUFUGUTVCVGCVDUTVBVDEZRZVCVGVJVCRUTVBAUHZVCVGUTVIVCPV
+      IVKUTVCVBAUKZQVJVCSBAVBUITVJVGRVKUTVGVCVIVKUTVGVLQUTVIVGPVJVGSBAVBUJTULUM
+      VEVHOUNUOCVDDUPUQVAVEVFURUS $.
+  $}
+
+  $( The set of finite subsets of a finite set is finite.  (Contributed by Jim
+     Kingdon, 19-May-2026.) $)
+  fipwfi $p |- ( A e. Fin -> ( ~P A i^i Fin ) e. Fin ) $=
+    ( cfn wcel c2o cmap co cpw cin cen wbr 2onn nnfi ax-mp mapfi 2omapfi ensymd
+    com mpan enfii syl2anc ) ABCZDAEFZBCZAGBHZUBIJUDBCDBCZUAUCDQCUEKDLMDANRUAUB
+    UDAOPUDUBST $.
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Supremum and infimum
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -209395,76 +209479,6 @@ $)
       RWQWTWRWQWPTBJZWFWITBQXAFWFXAFORAFBRUSZCUTVAZFGVBVCVDVFWRWPPBJZWFWIPBQXDG
       WFXDTVPZBJZXAGSVQZGPXEBVGVHXFXGORATFBXBCTMKRVIVJVKVAXGFGSVQGXAFGSXCVLVMVN
       VOFGVRVSVDVFVTWAWBWCDEWFWGWDWE $.
-  $}
-
-  ${
-    $d A s u w y z $.  $d A s w x y z $.  $d V s u w y z $.
-    2omap.f $e |- F = ( s e. ( 2o ^m A ) |-> { z e. A | ( s ` z ) = 1o } ) $.
-    $( Mapping between ` ( 2o ^m A ) ` and decidable subsets of ` A ` .
-       (Contributed by Jim Kingdon, 12-Nov-2025.) $)
-    2omap $p |- ( A e. V -> F : ( 2o ^m A ) -1-1-onto->
-        { x e. ~P A | A. y e. A DECID y e. x } ) $=
-      ( vw vu wcel c2o cv wdc c1o wceq c0 wa adantr simpr cmap co wral cpw crab
-      cfv cif cmpt eleq2 dcbid ralbidv wss ssrab2 elpw2g mpbiri 2ssom wf elmapi
-      com ad2antlr ffvelcdmd sselid 1onn nndceq sylancl wb adantl fveqeq2 elrab
-      bitr4di mpbid ralrimiva elrabd weq 1lt2o a1i 0lt2o elequ1 simplrr rspcdva
-      ibar ifcldcd fmpttd 2onn simpl elmapd mpbird sylan2b anbi2i simplr fveq1d
-      wn eqid ifbid simprrr ad2antrr fvmptd3 eqtrd iftrued 2thd nesymi iffalsed
-      1n0 eqeq1d mtbiri 2falsed exmiddc syl mpjaodan rabbidva elpwi dfss1 sylib
-      wo cin dfin5 eqtr3di ad2antrl simplrl simpll feqmptd eleq2d bitrdi biimpa
-      baibd eqtr4d mpbirand mtbid df2o3 eleqtrdi elpri ecased mpteq2dva impbida
-      cpr f1o2d ) DFKZGILDUAUBZBMZAMZKZNZBDUCZADUDZUEZCMZGMZUFZOPZCDUEZJDJMZIMZ
-      KZOQUGZUHZEHYQUUGYRKZRZUUCYSUUJKZNZBDUCAUUJUUDYTUUJPZUUBUUSBDUUTUUAUURYTU
-      UJYSUIUJUKYQUUJUUDKZUUPYQUVAUUJDULUUICDUMUUJDFUNUOSUUQUUSBDUUQYSDKZRZYSUU
-      GUFZOPZNZUUSUVCUVDUSKOUSKUVFUVCLUSUVDUPUVCDLYSUUGUUPDLUUGUQZYQUVBUUGLDURU
-      TUUQUVBTVAVBVCUVDOVDVEUVCUVEUURUVCUVEUVBUVERZUURUVBUVEUVHVFUUQUVBUVEWAVGU
-      UIUVECYSDUUFYSOUUGVHVIVJUJVKVLVMUULUUEKZYQUULUUDKZYSUULKZNZBDUCZRZUUOYRKZ
-      UUCUVMAUULUUDAIVNZUUBUVLBDUVPUUAUVKYTUULYSUIUJUKVIZYQUVNRZUVODLUUOUQUVRJD
-      UUNLUVRUUKDKZRZUUMOQLOLKZUVTVOVPQLKZUVTVQVPUVTUVLUUMNZBDUUKBJVNUVKUUMBJIV
-      RUJZYQUVJUVMUVSVSUVRUVSTVTWBWCUVRLDUUOUSFLUSKZUVRWDVPYQUVNWEWFWGWHUUPUVIR
-      YQUUPUVNRZUUGUUOPZUULUUJPZVFUVIUVNUUPUVQWIYQUWFRZUWGUWHUWIUWGRZUWHUUFUULK
-      ZCDUEZUUJPZUWJUWKUUICDUWJUUFDKZRZUWKUWKUUIVFUWKWLZUWOUWKRZUWKUUIUWOUWKTZU
-      WQUUHUWKOQUGZOUWOUUHUWSPZUWKUWOUUHUUFUUOUFUWSUWOUUFUUGUUOUWIUWGUWNWJWKUWO
-      JUUFUUNUWSDUUOLUUOWMJCVNUUMUWKOQJCIVRWNUWJUWNTZUWOUWKOQLUWAUWOVOVPUWBUWOV
-      QVPUWOUVLUWKNZBDUUFBCVNUVKUWKBCIVRUJUWIUVMUWGUWNYQUUPUVJUVMWOZWPUXAVTZWBW
-      QWRZSUWQUWKOQUWRWSWRWTUWOUWPRZUWKUUIUWOUWPTZUXFUUIQOPOQXCXAUXFUUHQOUXFUUH
-      UWSQUWOUWTUWPUXESUXFUWKOQUXGXBWRXDXEXFUWOUXBUWKUWPXNUXDUWKXGXHXIXJUWFUWHU
-      WMVFZYQUWGUVJUXHUUPUVMUVJUULUWLUUJUVJDUULXOZUULUWLUVJUULDULUXIUULPUULDXKU
-      ULDXLXMCDUULXPXQXDXRUTWGUWIUWHRZUUGJDUUKUUGUFZUHUUOUXJJDLUUGUXJUUPUVGYQUU
-      PUVNUWHXSUXJLDUUGUSFUWEUXJWDVPYQUWFUWHXTWFVKZYAUXJJDUXKUUNUXJUVSRZUUMUXKU
-      UNPUUMWLZUXMUUMRZUXKOUUNUXMUUMUXKOPZUXJUUMUVSUXPUXJUUMUUKUUJKZUVSUXPRZUXJ
-      UULUUJUUKUWIUWHTYBUUIUXPCUUKDUUFUUKOUUGVHVIZYCYEYDUXOUUMOQUXMUUMTWSYFUXMU
-      XNRZUXKQUUNUXTUXKQPZUXPUXTUUMUXPUXMUXNTZUXMUUMUXPVFUXNUXMUUMUVSUXPUXJUVST
-      ZUXMUUMUXQUXRUXMUULUUJUUKUWIUWHUVSWJYBUXSYCYGSYHUXMUYAUXPXNZUXNUXMUXKQOYO
-      ZKUYDUXMUXKLUYEUXMDLUUKUUGUXJUVGUVSUXLSUYCVAYIYJUXKQOYKXHSYLUXTUUMOQUYBXB
-      YFUXMUWCUUMUXNXNUXMUVLUWCBDUUKUWDUWIUVMUWHUVSUXCWPUYCVTUUMXGXHXIYMWRYNWHY
-      P $.
-  $}
-
-  ${
-    $d A s x y z $.  $d V s y z $.
-    $( Equinumerosity of ` ( 2o ^m A ) ` and the set of decidable subsets of
-       ` A ` .  (Contributed by Jim Kingdon, 14-Nov-2025.) $)
-    2omapen $p |- ( A e. V -> ( 2o ^m A ) ~~
-        { x e. ~P A | A. y e. A DECID y e. x } ) $=
-      ( vs vz wcel c2o cmap co cvv cv wdc wral cpw crab cfv c1o wceq cmpt fnmap
-      wf1o cen wbr cxp wfn 2onn elexi elex fnovex mp3an12i 2omap f1oeng syl2anc
-      com eqid ) CDGZHCIJZKGZURBLALGMBCNACOPZEURFLELQRSFCPTZUBURUTUCUDIKKUEUFHK
-      GUQCKGUSUAHUOUGUHCDUIHCKKIUJUKABFCVADEVAUPULURUTKVAUMUN $.
-  $}
-
-  ${
-    $d A x y $.
-    $( The number of finite subsets of a finite set.  (Contributed by Jim
-       Kingdon, 18-May-2026.) $)
-    2omapfi $p |- ( A e. Fin -> ( 2o ^m A ) ~~ ( ~P A i^i Fin ) ) $=
-      ( vy vx cfn wcel c2o cmap co cv wdc wral crab cen wbr cvv simpll ad2antlr
-      wa simpr syl3anc cpw cin 2omapen wceq eqid pwexg rabexd wss ssfidc fissfi
-      elpwi impbida rabbidva eqeng sylc dfin5 breqtrrdi entr syl2anc ) ADEZFAGH
-      ZBICIZEJBAKZCAUAZLZMNVEVDDUBZMNVAVFMNCBADUCUTVEVBDEZCVDLZVFMUTVEOEVEVHUDV
-      EVHMNUTVCCVDVEOVEUEADUFUGUTVCVGCVDUTVBVDEZRZVCVGVJVCRUTVBAUHZVCVGUTVIVCPV
-      IVKUTVCVBAUKZQVJVCSBAVBUITVJVGRVKUTVGVCVIVKUTVGVLQUTVIVGPVJVGSBAVBUJTULUM
-      VEVHOUNUOCVDDUPUQVAVEVFURUS $.
   $}
 
   ${
