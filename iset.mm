@@ -71014,6 +71014,23 @@ $)
       XIWSWIBWFXGVGWFWIVHVIABCWFWJVJVKWGWTVLVMSVOVQVSVTVNVP $.
   $}
 
+  ${
+    $d A w y z $.  $d B w y z $.
+    $( Set exponentiation of finite sets is finite.  (Contributed by Jeff
+       Madsen, 19-Jun-2011.) $)
+    mapfi $p |- ( ( A e. Fin /\ B e. Fin ) -> ( A ^m B ) e. Fin ) $=
+      ( vw vy vz cfn wcel wa cv cmap co c0 csn oveq2 eleq1d cvv cen a1i syl2anc
+      wceq cun mapdm0 0ex snfig ax-mp eqeltrdi adantr wss cxp wbr simpr simp-4l
+      cdif vex mapsnend enfii xpfi cin wn simplrr eldifbd disjsn sylibr mapunen
+      snex syl31anc ex findcard2sd ) AFGZBFGZHZACIZJKZFGALJKZFGZADIZJKZFGZAVPEI
+      ZMZUAZJKZFGZABJKZFGCDEBVLLTVMVNFVLLAJNOVLVPTVMVQFVLVPAJNOVLWATVMWBFVLWAAJ
+      NOVLBTVMWDFVLBAJNOVIVOVJVIVNLMZFAFUBLPGWEFGUCLPUDUEUFUGVKVPFGZHZVPBUHZVSB
+      VPUMGZHZHZVRWCWKVRHZVQAVTJKZUIZFGZWBWNQUJZWCWLVRWMFGZWOWKVRUKWLVIWMAQUJWQ
+      VIVJWFWJVRULZWLAVSFPWRVSPGWLEUNZRUOWMAUPSVQWMUQSWLVPPGZVTPGZVIVPVTURLTZWP
+      WTWLDUNRXAWLVSWSVERWRWLVSVPGUSXBWLVSBVPWGWHWIVRUTVAVPVSVBVCVPVTAPPFVDVFWB
+      WNUPSVGVIVJUKVH $.
+  $}
+
   $( Membership in a class of finite subsets.  (Contributed by Stefan O'Rear,
      4-Apr-2015.)  (Revised by Mario Carneiro, 22-Aug-2015.) $)
   elfpw $p |- ( A e. ( ~P B i^i Fin ) <-> ( A C_ B /\ A e. Fin ) ) $=
