@@ -175566,6 +175566,15 @@ $)
       ( wcel cv ccnv cn cima cfn cn0 cmap co crab wf eleq2i elrabi elmapi syl
       sylbi ) CAFCBGHIJKFZBLDMNZOZFZDLCPZAUDCEQUECUCFUFUBBCUCRCLDSTUA $.
 
+    $( Finite bags have finite support.  (Contributed by Stefan O'Rear,
+       9-Mar-2015.)  (Revised by AV, 18-Jul-2019.)  Remove a sethood
+       antecedent.  (Revised by SN, 7-Aug-2024.) $)
+    psrbagfsupp $p |- ( F e. D -> F finSupp 0 ) $=
+      ( wcel cc0 cfsupp wbr ccnv cn cima cfn cn0 wf cvv wa id psrbagf ffnd wb
+      fndmexd psrbag biimpa mpancom simprd fcdmnn0fsuppg mpdan mpbird ) CAFZCGH
+      IZCJKLMFZUJDNCOZULDPFZUJUMULQZUJDCAUJRUJDNCABCDESZTUBUNUJUOABCDPEUCUDUEUF
+      UJUMUKULUAUPCDAUGUHUI $.
+
     ${
       $d n f x $.  $d I x $.  $d V x $.
       $( The constant function equal to zero is a finite bag.  (Contributed by
