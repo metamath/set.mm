@@ -175630,6 +175630,22 @@ $)
     $}
 
     ${
+      $d D m n $.  $d F f $.  $d F m n $.  $d G f $.  $d G m n $.  $d G y $.
+      $d I f $.  $d I m n $.
+      $( The sum of two finite bags is a finite bag.  (Contributed by Mario
+         Carneiro, 9-Jan-2015.)  Shorten proof and remove a sethood antecedent.
+         (Revised by SN, 7-Aug-2024.) $)
+      psrbagaddclfi $p |- ( ( F e. D /\ G e. D /\ I e. Fin )
+          -> ( F oF + G ) e. D ) $=
+        ( vm vn wcel cfn w3a caddc cof co cn0 wf cv psrbagf cvv 3ad2ant3 adantl
+        cmap wa nn0addcl 3ad2ant1 3ad2ant2 simp3 inidm off wb nn0ex elmapg mpan
+        mpbird wceq psrbagfi eleqtrrd ) CAIZDAIZEJIZKZCDLMNZOEUBNZAVAVBVCIZEOVB
+        PZVAGHEEELOOOCDJJGQZOIHQZOIUCVFVGLNOIVAVFVGUDUAURUSEOCPUTABCEFRUEUSUREO
+        DPUTABDEFRUFURUSUTUGZVHEUHUIUTURVDVEUJZUSOSIUTVIUKOEVBSJULUMTUNUTURAVCU
+        OUSABEFUPTUQ $.
+    $}
+
+    ${
       $d D x y j p q $.  $d F x y f j p q $.  $d G x y f j p q $.
       $d I x f j p q $.
       $( The analogue of the statement " ` 0 <_ G <_ F ` implies
