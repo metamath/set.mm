@@ -98369,6 +98369,14 @@ $)
     wi mpan2 imp dfn2 imaeq2i eqtr4di ) BCDZBEAFZGAHIJZAKZEHLMZNZUIONUFUGUHUKPZ
     UFHQDUGULTREABCQHSUAUBOUJUIUCUDUE $.
 
+  $( A function into ` NN0 ` is finitely supported iff its support is finite.
+     (Contributed by AV, 8-Jul-2019.) $)
+  fcdmnn0fsupp $p |- ( ( I e. V /\ F : I --> NN0 )
+                       -> ( F finSupp 0 <-> ( `' F " NN ) e. Fin ) ) $=
+    ( wcel cn0 wf wa cc0 cfsupp wbr ccnv csn cdif cima cfn cn wb cvv wi c0ex
+    ffsuppbi mpan2 imp dfn2 imaeq2i eleq1i bitr4di ) BCDZBEAFZGAHIJZAKZEHLMZNZO
+    DZUKPNZODUHUIUJUNQZUHHRDUIUPSTEABCRHUAUBUCUOUMOPULUKUDUEUFUG $.
+
   $( Version of ~ fcdmnn0supp avoiding ~ ax-coll by assuming ` F ` is a set
      rather than its domain ` I ` .  (Contributed by SN, 5-Aug-2024.) $)
   fcdmnn0suppg $p |- ( ( F e. V /\ F : I --> NN0 )
