@@ -98386,6 +98386,16 @@ $)
     UFHQDUGULTREABCQHSUAUBOUJUIUCUDUE $.
   $( $j usage 'fcdmnn0suppg' avoids 'ax-coll'; $)
 
+  $( Version of ~ fcdmnn0fsupp avoiding ~ ax-coll by assuming ` F ` is a set
+     rather than its domain ` I ` .  (Contributed by SN, 5-Aug-2024.) $)
+  fcdmnn0fsuppg $p |- ( ( F e. V /\ F : I --> NN0 )
+                        -> ( F finSupp 0 <-> ( `' F " NN ) e. Fin ) ) $=
+    ( wcel cn0 wf wa cc0 cfsupp wbr csupp co cfn ccnv cn cima wfun wb ffun cvv
+    simpl c0ex funisfsupp mp3an3 syl2an2 fcdmnn0suppg eleq1d bitrd ) ACDZBEAFZG
+    ZAHIJZAHKLZMDZANOPZMDUJAQZUIUIULUNRZBEASUIUJUAUPUIHTDUQUBACTHUCUDUEUKUMUOMA
+    BCUFUGUH $.
+  $( $j usage 'fcdmnn0fsuppg' avoids 'ax-coll'; $)
+
   $( Two ways to write the support of a function on ` NN0 ` .  (Contributed by
      Mario Carneiro, 29-Dec-2014.) $)
   nn0supp $p |- ( F : I --> NN0 ->
