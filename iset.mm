@@ -118374,6 +118374,24 @@ $)
     GCHIBQJBKLCMQABNBCOP $.
 
   ${
+    $d N x $.
+    $( Two ways to express the subsets of a class of a given size.  It might
+       seem that ` { x e. ~P A | ( # `` x ) = N } ` would suffice, but that
+       would require the converse of ~ hashcl or something similar.
+       (Contributed by Jim Kingdon, 22-May-2026.) $)
+    sseqn $p |- ( N e. NN0 -> { x e. ~P A | x ~~ ( 1 ... N ) }
+        = { x e. ( ~P A i^i Fin ) | ( # ` x ) = N } ) $=
+      ( cn0 wcel cv c1 cfz co cen wbr chash cfv wceq cpw cfn cin wa 1zzd simpll
+      nn0zd fzfigd enfii sylancom simpr hashen syl2anc mpbird hashfz1 syl eqtrd
+      wb jca simprr oveq2d isfinite4im ad2antrl eqbrtrrd ensymd pm5.32da anbi1i
+      impbida elin anass bitri bitr4di rabbidva2 ) CDEZAFZGCHIZJKZVILMZCNZABOZV
+      NPQZVHVIVNEZVKRVPVIPEZVMRZRZVIVOEZVMRZVHVPVKVRVHVPRZVKVRWBVKRZVQVMWBVKVJP
+      EZVQWCGCWCSWCCVHVPVKTZUAUBZVIVJUCUDZWCVLVJLMZCWCVLWHNZVKWBVKUEWCVQWDWIVKU
+      LWGWFVIVJUFUGUHWCVHWHCNWECUIUJUKUMWBVRRZVJVIWJGVLHIZVJVIJWJVLCGHWBVQVMUNU
+      OVQWKVIJKWBVMVIUPUQURUSVBUTWAVPVQRZVMRVSVTWLVMVIVNPVCVAVPVQVMVDVEVFVG $.
+  $}
+
+  ${
     $d f g h x y A $.  $d f g h x y B $.  $d f g h x y C $.  $d f g h x y D $.
     $( The number of bijections between two sets is a cardinal invariant.
        (Contributed by Mario Carneiro, 21-Jan-2015.) $)
