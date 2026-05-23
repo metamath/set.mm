@@ -32532,6 +32532,14 @@ $)
   $}
 
   ${
+    sspwd.1 $e |- ( ph -> A C_ B ) $.
+    $( The powerclass preserves inclusion (deduction form).  (Contributed by
+       BJ, 13-Apr-2024.) $)
+    sspwd $p |- ( ph -> ~P A C_ ~P B ) $=
+      ( wss cpw sspw syl ) ABCEBFCFEDBCGH $.
+  $}
+
+  ${
     $d y A $.  $d x y $.
     nfpw.1 $e |- F/_ x A $.
     $( Bound-variable hypothesis builder for power class.  (Contributed by NM,
