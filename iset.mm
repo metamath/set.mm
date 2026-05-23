@@ -32524,6 +32524,14 @@ $)
   $}
 
   ${
+    sspwi.1 $e |- A C_ B $.
+    $( The powerclass preserves inclusion (inference form).  (Contributed by
+       BJ, 13-Apr-2024.) $)
+    sspwi $p |- ~P A C_ ~P B $=
+      ( wss cpw sspw ax-mp ) ABDAEBEDCABFG $.
+  $}
+
+  ${
     $d y A $.  $d x y $.
     nfpw.1 $e |- F/_ x A $.
     $( Bound-variable hypothesis builder for power class.  (Contributed by NM,
