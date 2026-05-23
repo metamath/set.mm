@@ -30320,6 +30320,16 @@ $)
     ( cin incom eqeq1i ) ABDBADCABEF $.
 
   ${
+    ineqcomi.1 $e |- ( A i^i B ) = C $.
+    $( Two ways of expressing that two classes have a given intersection.
+       Inference form of ~ ineqcom .  Disjointness inference when ` C = (/) ` .
+       (Contributed by Peter Mazsa, 26-Mar-2017.)  (Proof shortened by SN,
+       20-Sep-2024.) $)
+    ineqcomi $p |- ( B i^i A ) = C $=
+      ( cin incom eqtri ) BAEABECBAFDG $.
+  $}
+
+  ${
     $d x A $.  $d x B $.  $d x C $.
     ineqri.1 $e |- ( ( x e. A /\ x e. B ) <-> x e. C ) $.
     $( Inference from membership to intersection.  (Contributed by NM,
