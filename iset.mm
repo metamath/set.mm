@@ -14023,6 +14023,15 @@ $)
   $}
 
   ${
+    $d x y $.  $d x ps $.
+    equsalvw.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Version of ~ equsex with two disjoint variable conditions.  (Contributed
+       by BJ, 31-May-2019.)  (Proof shortened by Wolf Lammen, 23-Oct-2023.) $)
+    equsexvw $p |- ( E. x ( x = y /\ ph ) <-> ps ) $=
+      ( ax-17 equsex ) ABCDBCFEG $.
+  $}
+
+  ${
     equsexd.1 $e |- ( ph -> A. x ph ) $.
     equsexd.2 $e |- ( ph -> ( ch -> A. x ch ) ) $.
     equsexd.3 $e |- ( ph -> ( x = y -> ( ps <-> ch ) ) ) $.
@@ -20257,7 +20266,7 @@ $)
     $d ph y $.  $d ps y $.  $d x y $.
     $( Equivalent wff's correspond to equal class abstractions.  (Contributed
        by NM, 25-Nov-2013.)  (Revised by Mario Carneiro, 11-Aug-2016.) $)
-    abbi $p |- ( A. x ( ph <-> ps ) <-> { x | ph } = { x | ps } ) $=
+    abbibcom $p |- ( A. x ( ph <-> ps ) <-> { x | ph } = { x | ps } ) $=
       ( vy cab wceq wcel wal dfcleq nfsab1 nfbi nfv wsb df-clab sbequ12r bitrid
       cv wb bibi12d cbval bitr2i ) ACEZBCEZFDQZUBGZUDUCGZRZDHABRZCHDUBUCIUGUHDC
       UEUFCACDJBCDJKUHDLUDCQFZUEAUFBUEACDMUIAADCNADCOPUFBCDMUIBBDCNBDCOPSTUA $.
@@ -20277,7 +20286,7 @@ $)
     $( Equivalent wff's yield equal class abstractions (inference form).
        (Contributed by NM, 5-Aug-1993.) $)
     abbii $p |- { x | ph } = { x | ps } $=
-      ( wb cab wceq abbi mpgbi ) ABEACFBCFGCABCHDI $.
+      ( wb cab wceq abbibcom mpgbi ) ABEACFBCFGCABCHDI $.
 
     $( Theorem abbii is the congruence law for class abstraction. $)
     $( $j congruence 'abbii'; $)
@@ -20290,7 +20299,7 @@ $)
        (Contributed by NM, 5-Aug-1993.)  (Revised by Mario Carneiro,
        7-Oct-2016.) $)
     abbid $p |- ( ph -> { x | ps } = { x | ch } ) $=
-      ( wb wal cab wceq alrimi abbi sylib ) ABCGZDHBDICDIJANDEFKBCDLM $.
+      ( wb wal cab wceq alrimi abbibcom sylib ) ABCGZDHBDICDIJANDEFKBCDLM $.
   $}
 
   ${
@@ -20306,6 +20315,18 @@ $)
       HUIDCUFUGCACDKBCDKLUIDMDCNZUFAUGBUFACDOUJAADCPADCQSUGBCDOUJBBDCPBDCQSTUAU
       B $.
     $( $j usage 'abbib' avoids 'ax-13' 'df-clel' ; $)
+  $}
+
+  ${
+    $d ph y $.  $d ps y $.  $d x y $.
+    $( Equivalent formulas yield equal class abstractions (closed form).  This
+       is the backward implication of ~ abbib , proved from fewer axioms, and
+       hence is independently named.  (Contributed by BJ and WL and SN,
+       20-Aug-2023.) $)
+    abbi $p |- ( A. x ( ph <-> ps ) -> { x | ph } = { x | ps } ) $=
+      ( vy wb wal cab wsb cv wcel spsbbi df-clab 3bitr4g eqrdv ) ABECFZDACGZBCG
+      ZOACDHBCDHDIZPJRQJABCDKADCLBDCLMN $.
+    $( $j usage 'abbi' avoids 'ax-i12' 'ax-bndl' 'ax-13' 'df-clel' ; $)
   $}
 
   ${
@@ -20437,6 +20458,119 @@ $)
     eqabdv $p |- ( ph -> A = { x | ps } ) $=
       ( vy cab cv wcel wsb sbbidv clelsb1 bicomi df-clab 3bitr4g eqrdv ) AFDBCG
       ZACHDIZCFJZBCFJFHZDIZTQIARBCFEKSUACFDLMBFCNOP $.
+  $}
+
+  ${
+    $d x A $.  $d ph x $.
+    eqabcdv.1 $e |- ( ph -> ( ps <-> x e. A ) ) $.
+    $( Deduction from a wff to a class abstraction.  (Contributed by NM,
+       9-Jul-1994.)  (Proof shortened by Wolf Lammen, 16-Nov-2019.) $)
+    eqabcdv $p |- ( ph -> { x | ps } = A ) $=
+      ( cab cv wcel bicomd eqabdv eqcomd ) ADBCFABCDABCGDHEIJK $.
+  $}
+
+  ${
+    $d x A $.
+    eqabi.1 $e |- ( x e. A <-> ph ) $.
+    $( Equality of a class variable and a class abstraction (inference form).
+       (Contributed by NM, 26-May-1993.)  (Revised by Wolf Lammen,
+       6-May-2023.) $)
+    eqabi $p |- A = { x | ph } $=
+      ( cab wceq wtru cv wcel wb a1i eqabdv mptru ) CABEFGABCBHCIAJGDKLM $.
+  $}
+
+  ${
+    $d x A $.
+    $( Every class is equal to a class abstraction (the class of sets belonging
+       to it).  Theorem 5.2 of [Quine] p. 35.  This is a generalization to
+       classes of ~ cvjust .  The proof does not rely on ~ cvjust , so ~ cvjust
+       could be proved as a special instance of it.  Note however that ~ abid1
+       necessarily relies on ~ df-clel , whereas ~ cvjust does not.
+
+       This theorem requires ~ ax-ext , ~ df-clab , ~ df-cleq , ~ df-clel , but
+       to prove that any specific class term not containing class variables is
+       a setvar or is equal to a class abstraction does not require these
+       $a-statements.  This last fact is a metatheorem, consequence of the fact
+       that the only $a-statements with typecode ` class ` are ~ cv , ~ cab ,
+       and statements corresponding to defined class constructors.
+
+       Note on the simultaneous presence in set.mm of this ~ abid1 and its
+       commuted form ~ abid2 :  It is rare that two forms so closely related
+       both appear in set.mm.  Indeed, such equalities are generally used in
+       later proofs as parts of transitive inferences, and with the many
+       variants of ~ eqtri (search for *eqtr*), it would be rare that either
+       one would shorten a proof compared to the other.  There is typically a
+       choice between what we call a "definitional form", where the shorter
+       expression is on the LHS (left-hand side), and a "computational form",
+       where the shorter expression is on the RHS (right-hand side).  An
+       example is ~ df-2 versus ~ 1p1e2 .  We do not need ~ 1p1e2 , but because
+       it occurs "naturally" in computations, it can be useful to have it
+       directly, together with a uniform set of 1-digit operations like
+       ~ 1p2e3 , etc.  In most cases, we do not need both a definitional and a
+       computational forms.  A definitional form would favor consistency with
+       genuine definitions, while a computational form is often more natural.
+       The situation is similar with biconditionals in propositional calculus:
+       see for instance ~ pm4.24 and ~ anidm , while other biconditionals
+       generally appear in a single form (either definitional, but more often
+       computational).  In the present case, the equality is important enough
+       that both ~ abid1 and ~ abid2 are in set.mm.
+
+       (Contributed by NM, 26-Dec-1993.)  (Revised by BJ, 10-Nov-2020.) $)
+    abid1 $p |- A = { x | x e. A } $=
+      ( cv wcel biid eqabi ) ACBDZABGEF $.
+  $}
+
+  ${
+    $d x A y $.  $d ph y $.
+    $( One direction of ~ eqabb .  (Contributed by Wolf Lammen,
+       13-Feb-2025.) $)
+    eqab $p |- ( A. x ( x e. A <-> ph ) -> A = { x | ph } ) $=
+      ( cv wcel wb wal cab abid1 abbi eqtrid ) BDCEZAFBGCLBHABHBCILABJK $.
+
+    $( Equality of a class variable and a class abstraction (also called a
+       class builder).  Theorem 5.1 of [Quine] p. 34.  This theorem shows the
+       relationship between expressions with class abstractions and expressions
+       with class variables.  Note that ~ abbib and its relatives are among
+       those useful for converting theorems with class variables to equivalent
+       theorems with wff variables, by first substituting a class abstraction
+       for each class variable.
+
+       Class variables can always be eliminated from a theorem to result in an
+       equivalent theorem with wff variables, and vice-versa.  The idea is
+       roughly as follows.  To convert a theorem with a wff variable ` ph `
+       (that has a free variable ` x ` ) to a theorem with a class variable
+       ` A ` , we substitute ` x e. A ` for ` ph ` throughout and simplify,
+       where ` A ` is a new class variable not already in the wff.  An example
+       is the conversion of ~ zfauscl to ~ inex1 (look at the instance of
+       ~ zfauscl that occurs in the proof of ~ inex1 ).  Conversely, to convert
+       a theorem with a class variable ` A ` to one with ` ph ` , we substitute
+       ` { x | ph } ` for ` A ` throughout and simplify, where ` x ` and ` ph `
+       are new setvar and wff variables not already in the wff.  For more
+       information on class variables, see Quine pp. 15-21 and/or Takeuti and
+       Zaring pp. 10-13.
+
+       (Contributed by NM, 26-May-1993.)  (Proof shortened by Wolf Lammen,
+       12-Feb-2025.) $)
+    eqabb $p |- ( A = { x | ph } <-> A. x ( x e. A <-> ph ) ) $=
+      ( cab wceq cv wcel wb wal abid1 eqeq1i abbib bitri ) CABDZEBFCGZBDZNEOAHB
+      ICPNBCJKOABLM $.
+  $}
+
+  ${
+    $d x A $.
+    $( Equality of a class variable and a class abstraction.  Commuted form of
+       ~ eqabb .  (Contributed by NM, 20-Aug-1993.) $)
+    eqabcb $p |- ( { x | ph } = A <-> A. x ( ph <-> x e. A ) ) $=
+      ( cab wceq cv wcel wb wal eqabb eqcom bicom albii 3bitr4i ) CABDZEBFCGZAH
+      ZBIOCEAPHZBIABCJOCKRQBAPLMN $.
+  $}
+
+  ${
+    eqabrd.1 $e |- ( ph -> A = { x | ps } ) $.
+    $( Equality of a class variable and a class abstraction (deduction form of
+       ~ eqabb ).  (Contributed by NM, 16-Nov-1995.) $)
+    eqabrd $p |- ( ph -> ( x e. A <-> ps ) ) $=
+      ( cv wcel cab eleq2d abid bitrdi ) ACFZDGLBCHZGBADMLEIBCJK $.
   $}
 
 
@@ -23351,9 +23485,9 @@ $)
      Closed theorem form of ~ rabbidva .  (Contributed by NM, 25-Nov-2013.) $)
   rabbi $p |- ( A. x e. A ( ps <-> ch )
        <-> { x e. A | ps } = { x e. A | ch } ) $=
-    ( cv wcel wa wb wal wceq wral crab abbi wi df-ral pm5.32 albii bitri df-rab
-    cab eqeq12i 3bitr4i ) CEDFZAGZUCBGZHZCIZUDCTZUECTZJABHZCDKZACDLZBCDLZJUDUEC
-    MUKUCUJNZCIUGUJCDOUNUFCUCABPQRULUHUMUIACDSBCDSUAUB $.
+    ( cv wcel wa wb wal cab wceq wral abbibcom df-ral pm5.32 albii bitri df-rab
+    crab wi eqeq12i 3bitr4i ) CEDFZAGZUCBGZHZCIZUDCJZUECJZKABHZCDLZACDSZBCDSZKU
+    DUECMUKUCUJTZCIUGUJCDNUNUFCUCABOPQULUHUMUIACDRBCDRUAUB $.
 
   $( Swap with a membership relation in a restricted class abstraction.
      (Contributed by NM, 4-Jul-2005.) $)
@@ -27308,8 +27442,8 @@ $)
      by Giovanni Mascellani, 9-Apr-2018.) $)
   sbcbi2 $p |- ( A. x ( ph <-> ps ) ->
        ( [. A / x ]. ph <-> [. A / x ]. ps ) ) $=
-    ( wb wal cab wcel wsbc wceq abbi eleq2 sylbi df-sbc 3bitr4g ) ABECFZDACGZHZ
-    DBCGZHZACDIBCDIPQSJRTEABCKQSDLMACDNBCDNO $.
+    ( wb wal cab wcel wsbc wceq abbibcom eleq2 sylbi df-sbc 3bitr4g ) ABECFZDAC
+    GZHZDBCGZHZACDIBCDIPQSJRTEABCKQSDLMACDNBCDNO $.
 
   ${
     $d x z A $.  $d x y z $.  $d z ph $.
@@ -43925,6 +44059,14 @@ $)
       ( cvv wcel cxp xpexg mp2an ) AEFBEFABGEFCDABEEHI $.
   $}
 
+  ${
+    unexd.1 $e |- ( ph -> A e. V ) $.
+    unexd.2 $e |- ( ph -> B e. W ) $.
+    $( The union of two sets is a set.  (Contributed by SN, 16-Jul-2024.) $)
+    unexd $p |- ( ph -> ( A u. B ) e. _V ) $=
+      ( wcel cun cvv unexg syl2anc ) ABDHCEHBCIJHFGBCDEKL $.
+  $}
+
   $( The Cartesian square of a set is a set.  (Contributed by AV,
      13-Jan-2020.) $)
   sqxpexg $p |- ( A e. V -> ( A X. A ) e. _V ) $=
@@ -47779,9 +47921,9 @@ $)
     $( Alternate definition for descriptions.  Definition 8.18 in [Quine]
        p. 56.  (Contributed by Andrew Salmon, 30-Jun-2011.) $)
     dfiota2 $p |- ( iota x ph ) = U. { y | A. x ( ph <-> x = y ) } $=
-      ( cio cab cv csn wceq cuni wb wal df-iota df-sn eqeq2i abbi bitr4i unieqi
-      abbii eqtri ) ABDABEZCFZGZHZCEZIABFUAHZJBKZCEZIABCLUDUGUCUFCUCTUEBEZHUFUB
-      UHTBUAMNAUEBOPRQS $.
+      ( cio cab cv csn wceq cuni wal df-iota df-sn eqeq2i abbibcom bitr4i abbii
+      wb unieqi eqtri ) ABDABEZCFZGZHZCEZIABFUAHZQBJZCEZIABCKUDUGUCUFCUCTUEBEZH
+      UFUBUHTBUALMAUEBNOPRS $.
   $}
 
   ${
@@ -47879,16 +48021,17 @@ $)
     $( Equivalence theorem for descriptions.  (Contributed by Andrew Salmon,
        30-Jun-2011.) $)
     iotabi $p |- ( A. x ( ph <-> ps ) -> ( iota x ph ) = ( iota x ps ) ) $=
-      ( vz wb wal cab cv csn wceq cuni abbi biimpi eqeq1d abbidv unieqd df-iota
-      cio 3eqtr4g ) ABECFZACGZDHIZJZDGZKBCGZUBJZDGZKACRBCRTUDUGTUCUFDTUAUEUBTUA
-      UEJABCLMNOPACDQBCDQS $.
+      ( vz wb wal cab cv csn wceq cuni cio abbibcom biimpi eqeq1d abbidv unieqd
+      df-iota 3eqtr4g ) ABECFZACGZDHIZJZDGZKBCGZUBJZDGZKACLBCLTUDUGTUCUFDTUAUEU
+      BTUAUEJABCMNOPQACDRBCDRS $.
 
     $( Part of Theorem 8.17 in [Quine] p. 56.  This theorem serves as a lemma
        for the fundamental property of iota.  (Contributed by Andrew Salmon,
        11-Jul-2011.) $)
     uniabio $p |- ( A. x ( ph <-> x = y ) -> U. { x | ph } = y ) $=
-      ( cv wceq wb wal cab cuni csn abbi biimpi df-sn eqtr4di unieqd vex eqtrdi
-      unisn ) ABDCDZEZFBGZABHZISJZISUAUBUCUAUBTBHZUCUAUBUDEATBKLBSMNOSCPRQ $.
+      ( cv wceq wal cab cuni csn abbibcom biimpi df-sn eqtr4di unieqd vex unisn
+      wb eqtrdi ) ABDCDZEZQBFZABGZHSIZHSUAUBUCUAUBTBGZUCUAUBUDEATBJKBSLMNSCOPR
+      $.
 
     $( Theorem 8.19 in [Quine] p. 57.  This theorem is the fundamental property
        of iota.  (Contributed by Andrew Salmon, 11-Jul-2011.) $)
@@ -49713,6 +49856,11 @@ $)
     ( wfn crn wss wa wf ssid biantru df-f bitr4i ) BACZLBDZMEZFAMBGNLMHIAMBJK
     $.
 
+  $( A function maps to its range.  (Contributed by Glauco Siliprandi,
+     3-Mar-2021.) $)
+  ffrn $p |- ( F : A --> B -> F : A --> ran F ) $=
+    ( wf wfn crn ffn dffn3 sylib ) ABCDCAEACFCDABCGACHI $.
+
   $( Expanding the codomain of a mapping.  (Contributed by NM, 10-May-1998.)
      (Proof shortened by Andrew Salmon, 17-Sep-2011.) $)
   fss $p |- ( ( F : A --> B /\ B C_ C ) -> F : A --> C ) $=
@@ -49912,6 +50060,26 @@ $)
     UQVBKZGZVHCUQVBRVSAMVTVHMABNVSACOPQVQDUQVDKZGZVIDUQVDRWABMWBVIMWABAFZVDKBUQ
     WCVDABUFLBANUGWABDOPQVNVHVQVIUIUHUJSSUOUPVJVKHZUTUOVHCHVIDHWDUPACTBDTVHCVID
     UKULUMUN $.
+
+  $( From the union of two functions with disjoint domains, either component
+     can be recovered by restriction.  (Contributed by Stefan O'Rear,
+     9-Oct-2014.)  (Revised by Jim Kingdon, 18-May-2026.) $)
+  fresaunres2disj $p |- ( ( F : A --> C /\ G : B --> C /\
+      ( A i^i B ) = (/) ) -> ( ( F u. G ) |` B ) = G ) $=
+    ( wf cin c0 wceq w3a cun cres resundir simp3 wfn ffn 3ad2ant1 fnresdisj syl
+    wb mpbid 3ad2ant2 fnresdm uneq12d eqtrid uncom un0 eqtri eqtrdi ) ACDFZBCEF
+    ZABGHIZJZDEKBLZHEKZEUMUNDBLZEBLZKUODEBMUMUPHUQEUMULUPHIZUJUKULNUMDAOZULURTU
+    JUKUSULACDPQABDRSUAUMEBOZUQEIUKUJUTULBCEPUBBEUCSUDUEUOEHKEHEUFEUGUHUI $.
+
+  $( From the union of two functions with disjoint domains, either component
+     can be recovered by restriction.  (Contributed by Mario Carneiro,
+     16-Feb-2015.)  (Revised by Jim Kingdon, 18-May-2026.) $)
+  fresaunres1disj $p |- ( ( F : A --> C /\ G : B --> C /\
+      ( A i^i B ) = (/) ) ->
+    ( ( F u. G ) |` A ) = F ) $=
+    ( wf cin c0 wceq w3a cres fresaunres2disj 3com12 incom eqeq1i 3anbi3i uncom
+    cun reseq1i 3imtr3i ) ACDFZBCEFZBAGZHIZJEDRZAKZDIZUAUBABGZHIZJDERZAKZDIUBUA
+    UDUGBACEDLMUDUIUAUBUCUHHBANOPUFUKDUEUJAEDQSOT $.
 
   $( Composition of a mapping and restricted identity.  (Contributed by NM,
      13-Dec-2003.)  (Proof shortened by Andrew Salmon, 17-Sep-2011.) $)
@@ -66851,6 +67019,32 @@ $)
   $}
 
   ${
+    $d A f y $.  $d B f y $.  $d f ph y $.
+    mapsnd.1 $e |- ( ph -> A e. V ) $.
+    mapsnd.2 $e |- ( ph -> B e. W ) $.
+    $( The value of set exponentiation with a singleton exponent.  Theorem 98
+       of [Suppes] p. 89.  (Contributed by NM, 10-Dec-2003.)  (Revised by
+       Glauco Siliprandi, 24-Dec-2020.) $)
+    mapsnd $p |- ( ph -> ( A ^m { B } ) = { f | E. y e. A f = { <. B , y >. } }
+       ) $=
+      ( cv csn wceq wcel wf cvv syl wa wex cima mpbid wrex cmap co snexg elmapd
+      cop crn wbr weu wfn ffn snidg fneu syl2anr cab euabsn cdm imaeq2d imadmrn
+      imasng fdm eqtr3di sylan9req eqeq1d exbidv bitrid sseld vsnid eleq2 impel
+      frn mpbiri adantll ffrn feq3 syl5ibcom imp wb ad2antrr vex sylancl jca ex
+      fsng eximdv mpd df-rex sylibr w3a wf1o f1osng adantr f1oeq1 bicomd adantl
+      f1of 3adant2 wss snssi 3ad2ant2 fssd rexlimdv3a impbid bitrd eqabdv ) AEJ
+      ZDBJZUFKZLZBCUAZECDKZUBUCZAXFXLMXKCXFNZXJACXKXFFOHADGMZXKOMIDGUDPUEAXMXJA
+      XMXJAXMQZXGCMZXIQZBRZXJXOXFUGZXGKZLZBRZXRXODXGXFUHZBUIZYBXMXFXKUJDXKMZYDA
+      XKCXFUKAXNYEIDGULPBXKDXFUMUNYDYCBUOZXTLZBRXOYBYCBUPXOYGYABXOYFXSXTAXMYFXF
+      XKSZXSAXNYHYFLIBDGXFUTPXMXFXFUQZSYHXSXMYIXKXFXKCXFVAURXFUSVBVCVDVEVFTXOYA
+      XQBXOYAXQXOYAQZXPXIXMYAXPAXMXGXSMZXPYAXMXSCXGXKCXFVKVGYAYKXGXTMBVHXSXTXGV
+      IVLVJVMYJXKXTXFNZXIXMYAYLAXMYAYLXMXKXSXFNYAYLXKCXFVNXSXTXKXFVOVPVQVMYJXNX
+      GOMZYLXIVRAXNXMYAIVSBVTZDXGGOXFWDWATWBWCWEWFXIBCWGWHWCAXIXMBCAXPXIWIXKXTC
+      XFAXIYLXPAXIQZXKXTXFWJZYLYOXKXTXHWJZYPAYQXIAXNYMYQIYNDXGGOWKWAWLXIYQYPVRA
+      XIYPYQXKXTXFXHWMWNWOTXKXTXFWPPWQXPAXTCWRXIXGCWSWTXAXBXCXDXE $.
+  $}
+
+  ${
     $d f y A $.  $d f y B $.
     map0.1 $e |- A e. _V $.
     map0.2 $e |- B e. _V $.
@@ -67672,17 +67866,17 @@ $)
 
   ${
     $d x y A $.  $d x y B $.  $d y C $.  $d x D $.  $d x y ph $.
-    en2d.1 $e |- ( ph -> A e. _V ) $.
-    en2d.2 $e |- ( ph -> B e. _V ) $.
-    en2d.3 $e |- ( ph -> ( x e. A -> C e. _V ) ) $.
-    en2d.4 $e |- ( ph -> ( y e. B -> D e. _V ) ) $.
+    en2d.1 $e |- ( ph -> A e. V ) $.
+    en2d.2 $e |- ( ph -> B e. W ) $.
+    en2d.3 $e |- ( ph -> ( x e. A -> C e. X ) ) $.
+    en2d.4 $e |- ( ph -> ( y e. B -> D e. Y ) ) $.
     en2d.5 $e |- ( ph -> ( ( x e. A /\ y = C ) <-> ( y e. B /\ x = D ) ) ) $.
     $( Equinumerosity inference from an implicit one-to-one onto function.
        (Contributed by NM, 27-Jul-2004.)  (Revised by Mario Carneiro,
-       12-May-2014.) $)
+       12-May-2014.)  (Revised by AV, 4-Aug-2024.) $)
     en2d $p |- ( ph -> A ~~ B ) $=
-      ( cvv wcel cmpt wf1o cen wbr cv imp eqid f1od f1oen2g syl3anc ) ADMNEMNDE
-      BDFOZPDEQRHIABCDEFGUEMMUEUAABSDNFMNJTACSENGMNKTLUBDEUEMMUCUD $.
+      ( wcel cmpt cv imp wf1o cen wbr eqid f1od f1oen2g syl3anc ) ADHQEIQDEBDFR
+      ZUADEUBUCLMABCDEFGUHJKUHUDABSDQFJQNTACSEQGKQOTPUEDEUHHIUFUG $.
   $}
 
   ${
@@ -67711,8 +67905,8 @@ $)
     $( Equinumerosity inference from an implicit one-to-one onto function.
        (Contributed by NM, 4-Jan-2004.) $)
     en2i $p |- A ~~ B $=
-      ( cen wtru cvv wcel a1i cv wi wceq wa wbr wb en2d mptru ) CDLUAMABCDEFCNO
-      MGPDNOMHPAQZCOZENORMIPBQZDOZFNORMJPUFUGESTUHUEFSTUBMKPUCUD $.
+      ( cen wtru cvv wcel a1i cv wi wceq wa wbr wb en2d mptru ) CDLUAMABCDEFNNN
+      NCNOMGPDNOMHPAQZCOZENORMIPBQZDOZFNORMJPUFUGESTUHUEFSTUBMKPUCUD $.
   $}
 
   ${
@@ -68117,6 +68311,29 @@ $)
     BUAUDACHACSQMT $.
 
   ${
+    $d A w y z $.  $d B w y z $.  $d ph w y z $.
+    mapsnend.a $e |- ( ph -> A e. V ) $.
+    mapsnend.b $e |- ( ph -> B e. W ) $.
+    $( Set exponentiation to a singleton exponent is equinumerous to its base.
+       Exercise 4.43 of [Mendelson] p. 255.  (Contributed by NM, 17-Dec-2003.)
+       (Revised by Mario Carneiro, 15-Nov-2014.)  (Revised by Glauco
+       Siliprandi, 24-Dec-2020.) $)
+    mapsnend $p |- ( ph -> ( A ^m { B } ) ~~ A ) $=
+      ( vz vw vy csn cmap cv cvv wcel vex wceq wa wb a1i co cfv cop fnmap elexd
+      cxp wfn snexg syl fnovex mp3an2i fvexg sylancr a1d opexg sylancl wex wrex
+      mapsnd eqabrd anbi1d r19.41v bicomi df-rex 3bitrd sylan9eqr eqeq2d equcom
+      fveq1 fvsng bitrdi pm5.32da anbi2d anass ancom 3bitr2d exbidv opeq2 sneqd
+      eleq1w anbi12d equsexvw en2d ) AHIBCKZLUAZBCHMZUBZCIMZUCZKZNDNNLNNUFUGABN
+      OWDNOZWENOUDABDFUEACEOZWKGCEUHUIBWDNNLUJUKFAWGNOZWFWEOZAWFNOWLWMHPGCWFNEU
+      LUMUNAWJNOZWHBOZAWINOZWOAWLWHNOWQGIPCWHENUOUPWINUHUIUNAWNWHWGQZRZJMZBOZWF
+      CWTUCZKZQZWRRZRZJUQZWTWHQZXAXDRZRZJUQZWPWFWJQZRZAWSXDJBURZWRRZXEJBURZXGAW
+      NXNWRAXNHWEAJBCHDEFGUSUTVAXOXPSAXPXOXDWRJBVBVCTXPXGSAXEJBVDTVEAXFXJJAXFXA
+      XDXHRZRZXIXHRZXJAXEXQXAAXDWRXHAXDRZWRWHWTQXHXTWGWTWHXDAWGCXCUBZWTCWFXCVIA
+      WLWTNOYAWTQGJPCWTENVJUPVFVGIJVHVKVLVMXSXRSAXAXDXHVNTXSXJSAXIXHVOTVPVQXKXM
+      SAXIXMJIXHXAWPXDXLJIBVTXHXCWJWFXHXBWIWTWHCVRVSVGWAWBTVEWC $.
+  $}
+
+  ${
     $d w y z A $.  $d w y z B $.
     mapsnen.1 $e |- A e. _V $.
     mapsnen.2 $e |- B e. _V $.
@@ -68145,10 +68362,10 @@ $)
       ( vx vy wcel c1o cmap co c0 cxp cvv 1oex a1i cv 0ex p0ex wceq wa bitr2di
       wb csn wfn fnmap elex fnovex mp3an12i 2a1i xpexg mpan2 a1d el1o wf oveq1i
       df1o2 eleq2i elmapg mpan bitrid fconst2 anbi12d ancom en2d ) ABEZCDFAGHZF
-      IAIUAZJZGKKJUBFKEZVCAKEVDKEUCLABUDFAKKGUEUFVGVCLMVCCNZVDEZIKEOUGVCVFKEZDN
-      ZFEZVCVEKEZVJPAVEBKUHUIUJVCVLVHVFQZRVKIQZVIRVIVORVCVLVOVNVIVLVOTVCVKUKMVC
-      VIAVEVHULZVNVIVHVEAGHZEZVCVPVDVQVHFVEAGUNUMUOVMVCVRVPTPVEAVHKBUPUQURAIVHO
-      USSUTVOVIVASVB $.
+      IAIUAZJZKKKKGKKJUBFKEZVCAKEVDKEUCLABUDFAKKGUEUFVGVCLMVCCNZVDEZIKEOUGVCVFK
+      EZDNZFEZVCVEKEZVJPAVEBKUHUIUJVCVLVHVFQZRVKIQZVIRVIVORVCVLVOVNVIVLVOTVCVKU
+      KMVCVIAVEVHULZVNVIVHVEAGHZEZVCVPVDVQVHFVEAGUNUMUOVMVCVRVPTPVEAVHKBUPUQURA
+      IVHOUSSUTVOVIVASVB $.
 
     $( Two singletons are equinumerous.  (Contributed by NM, 9-Nov-2003.) $)
     en2sn $p |- ( ( A e. C /\ B e. D ) -> { A } ~~ { B } ) $=
@@ -68913,6 +69130,36 @@ $)
       xpmapenlem ) GHIABCJCJKZGKZLZMLZNJCUEOLZNJCUCHKZMLZLZUCUHOLZLZPZNDEFJICUF
       IKZUDLZMLJIQZUEUOMUCUNUDRZSTJICUGUOOLUPUEUOOUQSTJICUMUNUILZUNUKLZPUPUJURU
       LUSUCUNUIRUCUNUKRUATUB $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.  $d x y V $.  $d x y W $.
+    $d x y X $.
+    $( Equinumerosity law for set exponentiation of a disjoint union.  Exercise
+       4.45 of [Mendelson] p. 255.  (Contributed by NM, 23-Sep-2004.)  (Revised
+       by Mario Carneiro, 29-Apr-2015.) $)
+    mapunen $p |- ( ( ( A e. V /\ B e. W /\ C e. X ) /\ ( A i^i B ) = (/) ) ->
+                  ( C ^m ( A u. B ) ) ~~ ( ( C ^m A ) X. ( C ^m B ) ) ) $=
+      ( vx wcel wceq wa cun cmap co cres cop cvv fnmap elexd fnovex wf vy c0 cv
+      w3a cin cxp c1st cfv c2nd simpl3 simpl1 simpl2 unexd mp3an2i xpexd elmapi
+      wfn wss ssun1 fssres sylancl ssun2 opelxp elmapd anbi12d bitrid imbitrrid
+      jca xp1st adantl xp2nd simplr fun2d ex sylibrd wb 1st2nd2 fresaunres1disj
+      syl ad2antll adantrl syl3anc fresaunres2disj opeq12d eqtr4d reseq1 eqeq2d
+      syl5ibrcom ffn fnresdm 3syl ad2antrl eqcomd op1std op2ndd uneq12d resundi
+      vex resex eqtr4di impbid en3d ) ADHZBEHZCFHZUDZABUEUBIZJZGUACABKZLMZCALMZ
+      CBLMZUFZGUCZANZXNBNZOZUAUCZUGUHZXRUIUHZKZLPPUFUQZXHCPHZXIPHXJPHQXHCFXCXDX
+      EXGUJZRZXHABDEXCXDXEXGUKZXCXDXEXGULZUMZCXIPPLSUNXHXKXLPPYBXHYCAPHXKPHQYEX
+      HADYFRCAPPLSUNYBXHYCBPHXLPHQYEXHBEYGRCBPPLSUNUOXNXJHZXQXMHZXHACXOTZBCXPTZ
+      JZYIYKYLYIXICXNTZAXIURYKXNCXIUPZABUSXICAXNUTVAYIYNBXIURYLYOBAVBXICBXNUTVA
+      VHYJXOXKHZXPXLHZJXHYMXOXPXKXLVCXHYPYKYQYLXHCAXOFDYDYFVDXHCBXPFEYDYGVDVEVF
+      VGXHXRXMHZXICYATZYAXJHXHYRYSXHYRJZABCXSXTYTXSXKHZACXSTZYRUUAXHXRXKXLVIVJX
+      SCAUPVSZYTXTXLHZBCXTTZYRUUDXHXRXKXLVKVJXTCBUPVSZXFXGYRVLVMVNXHCXIYAFPYDYH
+      VDVOXHYIYRJZXNYAIZXRXQIZVPXHUUGJZUUHUUIUUJUUIUUHXRYAANZYABNZOZIUUJXRXSXTO
+      ZUUMYRXRUUNIXHYIXRXKXLVQVTUUJUUKXSUULXTUUJUUBUUEXGUUKXSIXHYRUUBYIUUCWAZXH
+      YRUUEYIUUFWAZXFXGUUGVLZABCXSXTVRWBUUJUUBUUEXGUULXTIUUOUUPUUQABCXSXTWCWBWD
+      WEUUHXQUUMXRUUHXOUUKXPUULXNYAAWFXNYABWFWDWGWHUUJUUHUUIXNXNXINZIUUJUURXNYI
+      UURXNIZXHYRYIYNXNXIUQUUSYOXICXNWIXIXNWJWKWLWMUUIYAUURXNUUIYAXOXPKUURUUIXS
+      XOXTXPXOXPXRXNAGWRZWSZXNBUUTWSZWNXOXPXRUVAUVBWOWPXNABWQWTWGWHXAVNXB $.
   $}
 
   ${
@@ -70767,6 +71014,46 @@ $)
       XIWSWIBWFXGVGWFWIVHVIABCWFWJVJVKWGWTVLVMSVOVQVSVTVNVP $.
   $}
 
+  ${
+    $d A w y z $.  $d B w y z $.
+    $( Set exponentiation of finite sets is finite.  (Contributed by Jeff
+       Madsen, 19-Jun-2011.) $)
+    mapfi $p |- ( ( A e. Fin /\ B e. Fin ) -> ( A ^m B ) e. Fin ) $=
+      ( vw vy vz cfn wcel wa cv cmap co c0 csn oveq2 eleq1d cvv cen a1i syl2anc
+      wceq cun mapdm0 0ex snfig ax-mp eqeltrdi adantr wss cxp wbr simpr simp-4l
+      cdif vex mapsnend enfii xpfi cin wn simplrr eldifbd disjsn sylibr mapunen
+      snex syl31anc ex findcard2sd ) AFGZBFGZHZACIZJKZFGALJKZFGZADIZJKZFGZAVPEI
+      ZMZUAZJKZFGZABJKZFGCDEBVLLTVMVNFVLLAJNOVLVPTVMVQFVLVPAJNOVLWATVMWBFVLWAAJ
+      NOVLBTVMWDFVLBAJNOVIVOVJVIVNLMZFAFUBLPGWEFGUCLPUDUEUFUGVKVPFGZHZVPBUHZVSB
+      VPUMGZHZHZVRWCWKVRHZVQAVTJKZUIZFGZWBWNQUJZWCWLVRWMFGZWOWKVRUKWLVIWMAQUJWQ
+      VIVJWFWJVRULZWLAVSFPWRVSPGWLEUNZRUOWMAUPSVQWMUQSWLVPPGZVTPGZVIVPVTURLTZWP
+      WTWLDUNRXAWLVSWSVERWRWLVSVPGUSXBWLVSBVPWGWHWIVRUTVAVPVSVBVCVPVTAPPFVDVFWB
+      WNUPSVGVIVJUKVH $.
+  $}
+
+  $( Membership in a class of finite subsets.  (Contributed by Stefan O'Rear,
+     4-Apr-2015.)  (Revised by Mario Carneiro, 22-Aug-2015.) $)
+  elfpw $p |- ( A e. ( ~P B i^i Fin ) <-> ( A C_ B /\ A e. Fin ) ) $=
+    ( cpw cfn cin wcel wa wss elin elpwg pm5.32ri bitri ) ABCZDEFAMFZADFZGABHZO
+    GAMDIONPABDJKL $.
+
+  ${
+    $d A u v w x $.  $d S u v w x $.
+    $( A finite subset of a finite set is a decidable subset.  (Contributed by
+       Jim Kingdon, 18-May-2026.) $)
+    fissfi $p |- ( ( S C_ A /\ A e. Fin /\ S e. Fin )
+        -> A. x e. A DECID x e. S ) $=
+      ( vw vu vv wss cfn wcel w3a cv wdc wa c0 csn cun wceq eleq2 dcbid ad4antr
+      wn wo noel olci df-dc mpbir a1i simpr simp2 simp-4r simp1 simplrr eldifad
+      cdif sseldd fidceq syl3anc velsn sylibr dcun simpl3 findcard2sd ralrimiva
+      dcbii ex ) CBGZBHIZCHIZJZAKZCIZLZABVIVJBIZMZVJDKZIZLVJNIZLZVJEKZIZLZVJVSF
+      KZOZPZIZLZVLDEFCVONQVPVQVONVJRSVOVSQVPVTVOVSVJRSVOWDQVPWEVOWDVJRSVOCQVPVK
+      VOCVJRSVRVNVRVQVQUAZUBWGVQVJUCUDVQUEUFUGVNVSHIZMZVSCGZWBCVSUNIZMZMZWAWFWM
+      WAMZVSWCVJWMWAUHWNVJWBQZLZVJWCIZLWNVGVMWBBIWPVIVGVMWHWLWAVFVGVHUITVIVMWHW
+      LWAUJWNCBWBVIVFVMWHWLWAVFVGVHUKTWNWBCVSWIWJWKWAULUMUOBVJWBUPUQWQWOAWBURVD
+      USUTVEVFVGVHVMVAVBVC $.
+  $}
+
   $( Any injection from one finite set to another of equal size must be a
      bijection.  (Contributed by Jeff Madsen, 5-Jun-2010.) $)
   f1finf1o $p |- ( ( A ~~ B /\ B e. Fin ) ->
@@ -71439,6 +71726,90 @@ $)
       MVJWQBVTCWPBABVTUOUPBLVTOAWPABVTUQQURVFWNWPWNWPUSFABVTUTVAVBRSVCWCWOABVQW
       AVDRSVGVIVKVHVE $.
   $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  The sizes of sets
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d A s u w y z $.  $d A s w x y z $.  $d V s u w y z $.
+    2omap.f $e |- F = ( s e. ( 2o ^m A ) |-> { z e. A | ( s ` z ) = 1o } ) $.
+    $( Mapping between ` ( 2o ^m A ) ` and decidable subsets of ` A ` .
+       (Contributed by Jim Kingdon, 12-Nov-2025.) $)
+    2omap $p |- ( A e. V -> F : ( 2o ^m A ) -1-1-onto->
+        { x e. ~P A | A. y e. A DECID y e. x } ) $=
+      ( vw vu wcel c2o cv wdc c1o wceq c0 wa adantr simpr cmap co wral cpw crab
+      cfv cif cmpt eleq2 dcbid ralbidv wss ssrab2 elpw2g mpbiri 2ssom wf elmapi
+      com ad2antlr ffvelcdmd sselid 1onn nndceq sylancl wb adantl fveqeq2 elrab
+      bitr4di mpbid ralrimiva elrabd weq 1lt2o a1i 0lt2o elequ1 simplrr rspcdva
+      ibar ifcldcd fmpttd 2onn simpl elmapd mpbird sylan2b anbi2i simplr fveq1d
+      wn eqid ifbid simprrr ad2antrr fvmptd3 eqtrd iftrued 2thd nesymi iffalsed
+      1n0 eqeq1d mtbiri 2falsed exmiddc syl mpjaodan rabbidva elpwi dfss1 sylib
+      wo cin dfin5 eqtr3di ad2antrl simplrl simpll feqmptd eleq2d bitrdi biimpa
+      baibd eqtr4d mpbirand mtbid df2o3 eleqtrdi elpri ecased mpteq2dva impbida
+      cpr f1o2d ) DFKZGILDUAUBZBMZAMZKZNZBDUCZADUDZUEZCMZGMZUFZOPZCDUEZJDJMZIMZ
+      KZOQUGZUHZEHYQUUGYRKZRZUUCYSUUJKZNZBDUCAUUJUUDYTUUJPZUUBUUSBDUUTUUAUURYTU
+      UJYSUIUJUKYQUUJUUDKZUUPYQUVAUUJDULUUICDUMUUJDFUNUOSUUQUUSBDUUQYSDKZRZYSUU
+      GUFZOPZNZUUSUVCUVDUSKOUSKUVFUVCLUSUVDUPUVCDLYSUUGUUPDLUUGUQZYQUVBUUGLDURU
+      TUUQUVBTVAVBVCUVDOVDVEUVCUVEUURUVCUVEUVBUVERZUURUVBUVEUVHVFUUQUVBUVEWAVGU
+      UIUVECYSDUUFYSOUUGVHVIVJUJVKVLVMUULUUEKZYQUULUUDKZYSUULKZNZBDUCZRZUUOYRKZ
+      UUCUVMAUULUUDAIVNZUUBUVLBDUVPUUAUVKYTUULYSUIUJUKVIZYQUVNRZUVODLUUOUQUVRJD
+      UUNLUVRUUKDKZRZUUMOQLOLKZUVTVOVPQLKZUVTVQVPUVTUVLUUMNZBDUUKBJVNUVKUUMBJIV
+      RUJZYQUVJUVMUVSVSUVRUVSTVTWBWCUVRLDUUOUSFLUSKZUVRWDVPYQUVNWEWFWGWHUUPUVIR
+      YQUUPUVNRZUUGUUOPZUULUUJPZVFUVIUVNUUPUVQWIYQUWFRZUWGUWHUWIUWGRZUWHUUFUULK
+      ZCDUEZUUJPZUWJUWKUUICDUWJUUFDKZRZUWKUWKUUIVFUWKWLZUWOUWKRZUWKUUIUWOUWKTZU
+      WQUUHUWKOQUGZOUWOUUHUWSPZUWKUWOUUHUUFUUOUFUWSUWOUUFUUGUUOUWIUWGUWNWJWKUWO
+      JUUFUUNUWSDUUOLUUOWMJCVNUUMUWKOQJCIVRWNUWJUWNTZUWOUWKOQLUWAUWOVOVPUWBUWOV
+      QVPUWOUVLUWKNZBDUUFBCVNUVKUWKBCIVRUJUWIUVMUWGUWNYQUUPUVJUVMWOZWPUXAVTZWBW
+      QWRZSUWQUWKOQUWRWSWRWTUWOUWPRZUWKUUIUWOUWPTZUXFUUIQOPOQXCXAUXFUUHQOUXFUUH
+      UWSQUWOUWTUWPUXESUXFUWKOQUXGXBWRXDXEXFUWOUXBUWKUWPXNUXDUWKXGXHXIXJUWFUWHU
+      WMVFZYQUWGUVJUXHUUPUVMUVJUULUWLUUJUVJDUULXOZUULUWLUVJUULDULUXIUULPUULDXKU
+      ULDXLXMCDUULXPXQXDXRUTWGUWIUWHRZUUGJDUUKUUGUFZUHUUOUXJJDLUUGUXJUUPUVGYQUU
+      PUVNUWHXSUXJLDUUGUSFUWEUXJWDVPYQUWFUWHXTWFVKZYAUXJJDUXKUUNUXJUVSRZUUMUXKU
+      UNPUUMWLZUXMUUMRZUXKOUUNUXMUUMUXKOPZUXJUUMUVSUXPUXJUUMUUKUUJKZUVSUXPRZUXJ
+      UULUUJUUKUWIUWHTYBUUIUXPCUUKDUUFUUKOUUGVHVIZYCYEYDUXOUUMOQUXMUUMTWSYFUXMU
+      XNRZUXKQUUNUXTUXKQPZUXPUXTUUMUXPUXMUXNTZUXMUUMUXPVFUXNUXMUUMUVSUXPUXJUVST
+      ZUXMUUMUXQUXRUXMUULUUJUUKUWIUWHUVSWJYBUXSYCYGSYHUXMUYAUXPXNZUXNUXMUXKQOYO
+      ZKUYDUXMUXKLUYEUXMDLUUKUUGUXJUVGUVSUXLSUYCVAYIYJUXKQOYKXHSYLUXTUUMOQUYBXB
+      YFUXMUWCUUMUXNXNUXMUVLUWCBDUUKUWDUWIUVMUWHUVSUXCWPUYCVTUUMXGXHXIYMWRYNWHY
+      P $.
+  $}
+
+  ${
+    $d A s x y z $.  $d V s y z $.
+    $( Equinumerosity of ` ( 2o ^m A ) ` and the set of decidable subsets of
+       ` A ` .  (Contributed by Jim Kingdon, 14-Nov-2025.) $)
+    2omapen $p |- ( A e. V -> ( 2o ^m A ) ~~
+        { x e. ~P A | A. y e. A DECID y e. x } ) $=
+      ( vs vz wcel c2o cmap co cvv cv wdc wral cpw crab cfv c1o wceq cmpt fnmap
+      wf1o cen wbr cxp wfn 2onn elexi elex fnovex mp3an12i 2omap f1oeng syl2anc
+      com eqid ) CDGZHCIJZKGZURBLALGMBCNACOPZEURFLELQRSFCPTZUBURUTUCUDIKKUEUFHK
+      GUQCKGUSUAHUOUGUHCDUIHCKKIUJUKABFCVADEVAUPULURUTKVAUMUN $.
+  $}
+
+  ${
+    $d A x y $.
+    $( The number of finite subsets of a finite set.  (Contributed by Jim
+       Kingdon, 18-May-2026.) $)
+    2omapfi $p |- ( A e. Fin -> ( 2o ^m A ) ~~ ( ~P A i^i Fin ) ) $=
+      ( vy vx cfn wcel c2o cmap co cv wdc wral crab cen wbr cvv simpll ad2antlr
+      wa simpr syl3anc cpw cin 2omapen wceq eqid pwexg rabexd wss ssfidc fissfi
+      elpwi impbida rabbidva eqeng sylc dfin5 breqtrrdi entr syl2anc ) ADEZFAGH
+      ZBICIZEJBAKZCAUAZLZMNVEVDDUBZMNVAVFMNCBADUCUTVEVBDEZCVDLZVFMUTVEOEVEVHUDV
+      EVHMNUTVCCVDVEOVEUEADUFUGUTVCVGCVDUTVBVDEZRZVCVGVJVCRUTVBAUHZVCVGUTVIVCPV
+      IVKUTVCVBAUKZQVJVCSBAVBUITVJVGRVKUTVGVCVIVKUTVGVLQUTVIVGPVJVGSBAVBUJTULUM
+      VEVHOUNUOCVDDUPUQVAVEVFURUS $.
+  $}
+
+  $( The set of finite subsets of a finite set is finite.  (Contributed by Jim
+     Kingdon, 19-May-2026.) $)
+  fipwfi $p |- ( A e. Fin -> ( ~P A i^i Fin ) e. Fin ) $=
+    ( cfn wcel c2o cmap co cpw cin cen wbr 2onn nnfi ax-mp mapfi 2omapfi ensymd
+    com mpan enfii syl2anc ) ABCZDAEFZBCZAGBHZUBIJUDBCDBCZUAUCDQCUEKDLMDANRUAUB
+    UDAOPUDUBST $.
 
 
 $(
@@ -150670,6 +151041,48 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Bertrand's Ballot Problem
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d c M $.  $d c N $.  $d c O $.  $d i M $.  $d i N $.  $d i O $.  $d j M $.
+    $d j N $.  $d j O $.  $d k M $.  $d k N $.  $d k O $.
+
+    $( Two candidates A and B participate to an election,
+      where A receives ` M ` votes and B receives ` N ` votes.
+      Ballots are counted by picking ballot papers one by one,
+      and we're evaluating the probability that A is ahead throughout the count
+
+      We number the ballots picked using integers in ` ( 1 ... ( M + N ) ) ` .
+      We then characterize a counting ` c ` as the set of indices in the
+      counting sequence where A was picked.
+      Thus, for a counting ` c C_ ( 1 ... ( M + N ) ) ` :
+        "The ith ballot paper picked is for A" is expressed as ` i e. c `
+        "The ith ballot paper picked is for B" is expressed as ` -. i e. c `
+        "The number of ballot papers for A" is expressed as ` ( # ` c ) `
+    $)
+
+    ballotth.m $e |- M e. NN $.
+    ballotth.n $e |- N e. NN $.
+
+    $( ` O ` is the universe, all countings where A receives ` M ` votes
+       out of ` M + N ` $)
+    ballotfi.o $e |- O
+      = { c e. ( ~P ( 1 ... ( M + N ) ) i^i Fin ) | ( # ` c ) = M } $.
+    $( ` O ` is finite.  (Contributed by Jim Kingdon, 20-May-2026.) $)
+    ballotfilemofi $p |- O e. Fin $=
+      ( cv chash cfv wceq c1 co cfn wcel wtru cz cn mp2an nnzi cfz cpw cin crab
+      caddc 1z nnaddcl fzfig fipwfi mp1i wdc cn0 elinel2 hashcl syl nn0zd zdceq
+      wral sylancl rgen a1i ssfirab mptru eqeltri ) CDHZIJZAKZDLABUEMZUAMZUBZNU
+      CZUDZNGVLNOPVGDVKVINOZVKNOPLQOVHQOVMUFVHAROBROVHROEFABUGSTLVHUHSVIUIUJVGU
+      KZDVKURPVNDVKVEVKOZVFQOAQOVNVOVFVOVENOVFULOVEVJNUMVEUNUOUPAETVFAUQUSUTVAV
+      BVCVD $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Cardinality of real and complex number subsets
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -209108,62 +209521,6 @@ $)
       RWQWTWRWQWPTBJZWFWITBQXAFWFXAFORAFBRUSZCUTVAZFGVBVCVDVFWRWPPBJZWFWIPBQXDG
       WFXDTVPZBJZXAGSVQZGPXEBVGVHXFXGORATFBXBCTMKRVIVJVKVAXGFGSVQGXAFGSXCVLVMVN
       VOFGVRVSVDVFVTWAWBWCDEWFWGWDWE $.
-  $}
-
-  ${
-    $d A s u w y z $.  $d A s w x y z $.  $d V s u w y z $.
-    2omap.f $e |- F = ( s e. ( 2o ^m A ) |-> { z e. A | ( s ` z ) = 1o } ) $.
-    $( Mapping between ` ( 2o ^m A ) ` and decidable subsets of ` A ` .
-       (Contributed by Jim Kingdon, 12-Nov-2025.) $)
-    2omap $p |- ( A e. V -> F : ( 2o ^m A ) -1-1-onto->
-        { x e. ~P A | A. y e. A DECID y e. x } ) $=
-      ( vw vu wcel c2o cv wdc c1o wceq c0 wa adantr simpr cmap co wral cpw crab
-      cfv cif cmpt eleq2 dcbid ralbidv wss ssrab2 elpw2g mpbiri 2ssom wf elmapi
-      com ad2antlr ffvelcdmd sselid 1onn nndceq sylancl wb adantl fveqeq2 elrab
-      bitr4di mpbid ralrimiva elrabd weq 1lt2o a1i 0lt2o elequ1 simplrr rspcdva
-      ibar ifcldcd fmpttd 2onn simpl elmapd mpbird sylan2b anbi2i simplr fveq1d
-      wn eqid ifbid simprrr ad2antrr fvmptd3 eqtrd iftrued 2thd nesymi iffalsed
-      1n0 eqeq1d mtbiri 2falsed exmiddc syl mpjaodan rabbidva elpwi dfss1 sylib
-      wo cin dfin5 eqtr3di ad2antrl simplrl simpll feqmptd eleq2d bitrdi biimpa
-      baibd eqtr4d mpbirand mtbid df2o3 eleqtrdi elpri ecased mpteq2dva impbida
-      cpr f1o2d ) DFKZGILDUAUBZBMZAMZKZNZBDUCZADUDZUEZCMZGMZUFZOPZCDUEZJDJMZIMZ
-      KZOQUGZUHZEHYQUUGYRKZRZUUCYSUUJKZNZBDUCAUUJUUDYTUUJPZUUBUUSBDUUTUUAUURYTU
-      UJYSUIUJUKYQUUJUUDKZUUPYQUVAUUJDULUUICDUMUUJDFUNUOSUUQUUSBDUUQYSDKZRZYSUU
-      GUFZOPZNZUUSUVCUVDUSKOUSKUVFUVCLUSUVDUPUVCDLYSUUGUUPDLUUGUQZYQUVBUUGLDURU
-      TUUQUVBTVAVBVCUVDOVDVEUVCUVEUURUVCUVEUVBUVERZUURUVBUVEUVHVFUUQUVBUVEWAVGU
-      UIUVECYSDUUFYSOUUGVHVIVJUJVKVLVMUULUUEKZYQUULUUDKZYSUULKZNZBDUCZRZUUOYRKZ
-      UUCUVMAUULUUDAIVNZUUBUVLBDUVPUUAUVKYTUULYSUIUJUKVIZYQUVNRZUVODLUUOUQUVRJD
-      UUNLUVRUUKDKZRZUUMOQLOLKZUVTVOVPQLKZUVTVQVPUVTUVLUUMNZBDUUKBJVNUVKUUMBJIV
-      RUJZYQUVJUVMUVSVSUVRUVSTVTWBWCUVRLDUUOUSFLUSKZUVRWDVPYQUVNWEWFWGWHUUPUVIR
-      YQUUPUVNRZUUGUUOPZUULUUJPZVFUVIUVNUUPUVQWIYQUWFRZUWGUWHUWIUWGRZUWHUUFUULK
-      ZCDUEZUUJPZUWJUWKUUICDUWJUUFDKZRZUWKUWKUUIVFUWKWLZUWOUWKRZUWKUUIUWOUWKTZU
-      WQUUHUWKOQUGZOUWOUUHUWSPZUWKUWOUUHUUFUUOUFUWSUWOUUFUUGUUOUWIUWGUWNWJWKUWO
-      JUUFUUNUWSDUUOLUUOWMJCVNUUMUWKOQJCIVRWNUWJUWNTZUWOUWKOQLUWAUWOVOVPUWBUWOV
-      QVPUWOUVLUWKNZBDUUFBCVNUVKUWKBCIVRUJUWIUVMUWGUWNYQUUPUVJUVMWOZWPUXAVTZWBW
-      QWRZSUWQUWKOQUWRWSWRWTUWOUWPRZUWKUUIUWOUWPTZUXFUUIQOPOQXCXAUXFUUHQOUXFUUH
-      UWSQUWOUWTUWPUXESUXFUWKOQUXGXBWRXDXEXFUWOUXBUWKUWPXNUXDUWKXGXHXIXJUWFUWHU
-      WMVFZYQUWGUVJUXHUUPUVMUVJUULUWLUUJUVJDUULXOZUULUWLUVJUULDULUXIUULPUULDXKU
-      ULDXLXMCDUULXPXQXDXRUTWGUWIUWHRZUUGJDUUKUUGUFZUHUUOUXJJDLUUGUXJUUPUVGYQUU
-      PUVNUWHXSUXJLDUUGUSFUWEUXJWDVPYQUWFUWHXTWFVKZYAUXJJDUXKUUNUXJUVSRZUUMUXKU
-      UNPUUMWLZUXMUUMRZUXKOUUNUXMUUMUXKOPZUXJUUMUVSUXPUXJUUMUUKUUJKZUVSUXPRZUXJ
-      UULUUJUUKUWIUWHTYBUUIUXPCUUKDUUFUUKOUUGVHVIZYCYEYDUXOUUMOQUXMUUMTWSYFUXMU
-      XNRZUXKQUUNUXTUXKQPZUXPUXTUUMUXPUXMUXNTZUXMUUMUXPVFUXNUXMUUMUVSUXPUXJUVST
-      ZUXMUUMUXQUXRUXMUULUUJUUKUWIUWHUVSWJYBUXSYCYGSYHUXMUYAUXPXNZUXNUXMUXKQOYO
-      ZKUYDUXMUXKLUYEUXMDLUUKUUGUXJUVGUVSUXLSUYCVAYIYJUXKQOYKXHSYLUXTUUMOQUYBXB
-      YFUXMUWCUUMUXNXNUXMUVLUWCBDUUKUWDUWIUVMUWHUVSUXCWPUYCVTUUMXGXHXIYMWRYNWHY
-      P $.
-  $}
-
-  ${
-    $d A s x y z $.  $d V s y z $.
-    $( Equinumerosity of ` ( 2o ^m A ) ` and the set of decidable subsets of
-       ` A ` .  (Contributed by Jim Kingdon, 14-Nov-2025.) $)
-    2omapen $p |- ( A e. V -> ( 2o ^m A ) ~~
-        { x e. ~P A | A. y e. A DECID y e. x } ) $=
-      ( vs vz wcel c2o cmap co cvv cv wdc wral cpw crab cfv c1o wceq cmpt fnmap
-      wf1o cen wbr cxp wfn 2onn elexi elex fnovex mp3an12i 2omap f1oeng syl2anc
-      com eqid ) CDGZHCIJZKGZURBLALGMBCNACOPZEURFLELQRSFCPTZUBURUTUCUDIKKUEUFHK
-      GUQCKGUSUAHUOUGUHCDUIHCKKIUJUKABFCVADEVAUPULURUTKVAUMUN $.
   $}
 
   ${
