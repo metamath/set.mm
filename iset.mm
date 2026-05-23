@@ -37632,6 +37632,14 @@ $)
     ( cdif wss wcel cvv difss ssexg mpan ) ABDZAEACFKGFABHKACIJ $.
 
   ${
+    difexi.1 $e |- A e. _V $.
+    $( Existence of a difference, inference version of ~ difexg .  (Contributed
+       by Glauco Siliprandi, 3-Mar-2021.)  (Revised by AV, 26-Mar-2021.) $)
+    difexi $p |- ( A \ B ) e. _V $=
+      ( cvv wcel cdif difexg ax-mp ) ADEABFDECABDGH $.
+  $}
+
+  ${
     $d x A $.
     zfausab.1 $e |- A e. _V $.
     $( Separation Scheme (Aussonderung) in terms of a class abstraction.
