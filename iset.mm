@@ -32513,6 +32513,17 @@ $)
     ( cpw wcel elpwi sseld impcom ) BCDEZABEACEIBCABCFGH $.
 
   ${
+    $d A x $.  $d B x $.
+    $( The powerclass preserves inclusion.  See ~ sspwb for the biconditional
+       version.  (Contributed by NM, 13-Oct-1996.)  Extract forward implication
+       of ~ sspwb since it requires fewer axioms.  (Revised by BJ,
+       13-Apr-2024.) $)
+    sspw $p |- ( A C_ B -> ~P A C_ ~P B ) $=
+      ( vx wss cpw cv wcel sstr2 com12 velpw 3imtr4g ssrdv ) ABDZCAEZBEZMCFZADZ
+      PBDZPNGPOGQMRPABHICAJCBJKL $.
+  $}
+
+  ${
     $d y A $.  $d x y $.
     nfpw.1 $e |- F/_ x A $.
     $( Bound-variable hypothesis builder for power class.  (Contributed by NM,
