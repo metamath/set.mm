@@ -30311,6 +30311,14 @@ $)
       NMFOPHNABINBAIJK $.
   $}
 
+  $( Two ways of expressing that two classes have a given intersection.  This
+     is often used when that given intersection is the empty set, in which case
+     the statement displays two ways of expressing that two classes are
+     disjoint (when ` C = (/) ` : ` ( ( A i^i B ) = (/) <-> `
+     ` ( B i^i A ) = (/) ) ` ).  (Contributed by Peter Mazsa, 22-Mar-2017.) $)
+  ineqcom $p |- ( ( A i^i B ) = C <-> ( B i^i A ) = C ) $=
+    ( cin incom eqeq1i ) ABDBADCABEF $.
+
   ${
     $d x A $.  $d x B $.  $d x C $.
     ineqri.1 $e |- ( ( x e. A /\ x e. B ) <-> x e. C ) $.
