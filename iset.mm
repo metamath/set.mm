@@ -38434,6 +38434,11 @@ $)
       $.
   $}
 
+  $( A singleton built on a setvar is a set.  (Contributed by BJ,
+     15-Jan-2025.) $)
+  vsnex $p |- { x } e. _V $=
+    ( cv csn cpr cvv dfsn2 zfpair2 eqeltri ) ABZCIIDEIFAAGH $.
+
   ${
     $d x A $.  $d x y B $.  $d x W $.
     $( The Axiom of Pairing using class variables.  Theorem 7.13 of [Quine]
