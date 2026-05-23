@@ -118377,8 +118377,11 @@ $)
     $d N x $.
     $( Two ways to express the subsets of a class of a given size.  It might
        seem that ` { x e. ~P A | ( # `` x ) = N } ` would suffice, but that
-       would require the converse of ~ hashcl or something similar.
-       (Contributed by Jim Kingdon, 22-May-2026.) $)
+       would require the converse of ~ hashcl or something similar.  Although
+       each side of the equality would be well defined if we changed
+       ` N e. NN0 ` to ` N e. ZZ ` , they would give different results for the
+       (degenerate) case of a negative size, as shown at ~ ssenneg and
+       ~ sshashneg .  (Contributed by Jim Kingdon, 22-May-2026.) $)
     sseqn $p |- ( N e. NN0 -> { x e. ~P A | x ~~ ( 1 ... N ) }
         = { x e. ( ~P A i^i Fin ) | ( # ` x ) = N } ) $=
       ( cn0 wcel cv c1 cfz co cen wbr chash cfv wceq cpw cfn cin wa 1zzd simpll
@@ -118389,6 +118392,30 @@ $)
       EZVQWCGCWCSWCCVHVPVKTZUAUBZVIVJUCUDZWCVLVJLMZCWCVLWHNZVKWBVKUEWCVQWDWIVKU
       LWGWFVIVJUFUGUHWCVHWHCNWECUIUJUKUMWBVRRZVJVIWJGVLHIZVJVIJWJVLCGHWBVQVMUNU
       OVQWKVIJKWBVMVIUPUQURUSVBUTWAVPVQRZVMRVSVTWLVMVIVNPVCVAVPVQVMVDVEVFVG $.
+
+    $d A x $.
+    $( Subsets of a class of a negative size (a degenerate case).  Together
+       with ~ sshashneg this shows that ~ sseqn could not be extended beyond
+       ` N e. NN0 ` .  (Contributed by Jim Kingdon, 22-May-2026.) $)
+    ssenneg $p |- ( ( N e. ZZ /\ N < 0 )
+        -> { x e. ~P A | x ~~ ( 1 ... N ) } = { (/) } ) $=
+      ( cz wcel cc0 clt wbr wa cv c1 cfz co cen cpw crab c0 wceq csn cr zre a1i
+      adantr 0red 1red simpr 0lt1 lttrd wb 1z simpl sylancr mpbid breq2d bitrdi
+      fzn en0 rabbidv 0elpw rabsn ax-mp eqtrdi ) CDEZCFGHZIZAJZKCLMZNHZABOZPVFQ
+      RZAVIPZQSZVEVHVJAVIVEVHVFQNHVJVEVGQVFNVECKGHZVGQRZVECFKVCCTEVDCUAUCVEUDVE
+      UEVCVDUFFKGHVEUGUBUHVEKDEVCVMVNUIUJVCVDUKKCUPULUMUNVFUQUOURQVIEVKVLRBUSAV
+      IQUTVAVB $.
+
+    $( Subsets of a class of a negative size (a degenerate case).  Together
+       with ~ ssenneg this shows that ~ sseqn could not be extended beyond
+       ` N e. NN0 ` .  (Contributed by Jim Kingdon, 22-May-2026.) $)
+    sshashneg $p |- ( ( N e. ZZ /\ N < 0 )
+        -> { x e. ( ~P A i^i Fin ) | ( # ` x ) = N } = (/) ) $=
+      ( cz wcel cc0 clt wbr wa cv chash cfv wceq wn cpw cfn cin wral crab simpr
+      c0 cn0 elin2d hashcl syl nn0red nn0ge0d lensymd simpllr eqbrtrd ralrimiva
+      0red mtand rabeq0 sylibr ) CDEZCFGHZIZAJZKLZCMZNZABOZPQZRVAAVDSUAMURVBAVD
+      URUSVDEZIZVAUTFGHVFFUTVFULVFUTVFUSPEUTUBEVFVCPUSURVETUCUSUDUEZUFVFUTVGUGU
+      HVFVAIUTCFGVFVATUPUQVEVAUIUJUMUKVAAVDUNUO $.
   $}
 
   ${
