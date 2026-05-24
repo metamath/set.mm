@@ -1626,7 +1626,7 @@
 "axc11" is used by "ax6e2eq".
 "axc11" is used by "ax6e2eqVD".
 "axc11" is used by "axc11n11".
-"axc11" is used by "axsepg3".
+"axc11" is used by "axsepg2".
 "axc11" is used by "bj-hbaeb2".
 "axc11" is used by "dral1".
 "axc11" is used by "dral1ALT".
@@ -5562,7 +5562,7 @@
 "dveeq1-o" is used by "ax12inda2ALT".
 "dveeq2" is used by "axc15".
 "dveeq2" is used by "axnulg".
-"dveeq2" is used by "axsepg3".
+"dveeq2" is used by "axsepg2".
 "dveeq2-o" is used by "ax12el".
 "dveeq2-o" is used by "ax12eq".
 "dveeq2-o" is used by "ax12inda".
@@ -10084,7 +10084,7 @@
 "mulsrpr" is used by "recexsrlem".
 "naecoms" is used by "axnulg".
 "naecoms" is used by "axpowndlem2".
-"naecoms" is used by "axsepg3".
+"naecoms" is used by "axsepg2".
 "naecoms" is used by "axtcond".
 "naecoms" is used by "eujustALT".
 "naecoms" is used by "mh-setindnd".
@@ -10168,8 +10168,8 @@
 "nfcvf" is used by "axrepnd".
 "nfcvf" is used by "axrepndlem2".
 "nfcvf" is used by "axsepg2".
-"nfcvf" is used by "axsepg2ALT".
 "nfcvf" is used by "axsepg3".
+"nfcvf" is used by "axsepg3ALT".
 "nfcvf" is used by "axunnd".
 "nfcvf" is used by "axunndlem1".
 "nfcvf" is used by "bj-nfcsym".
@@ -10270,7 +10270,7 @@
 "nfnae" is used by "axrepnd".
 "nfnae" is used by "axrepndlem1".
 "nfnae" is used by "axrepndlem2".
-"nfnae" is used by "axsepg3".
+"nfnae" is used by "axsepg2".
 "nfnae" is used by "axtcond".
 "nfnae" is used by "axunnd".
 "nfnae" is used by "axunndlem1".
@@ -14589,8 +14589,8 @@ New usage of "axrnegex" is discouraged (0 uses).
 New usage of "axrrecex" is discouraged (0 uses).
 New usage of "axsep" is discouraged (0 uses).
 New usage of "axsepg2" is discouraged (0 uses).
-New usage of "axsepg2ALT" is discouraged (0 uses).
 New usage of "axsepg3" is discouraged (0 uses).
+New usage of "axsepg3ALT" is discouraged (0 uses).
 New usage of "axsepgfromrep" is discouraged (1 uses).
 New usage of "axtco" is discouraged (0 uses).
 New usage of "axtco1from2" is discouraged (0 uses).
@@ -19291,7 +19291,7 @@ Proof modification of "axprlem4OLD" is discouraged (149 steps).
 Proof modification of "axprlem5OLD" is discouraged (132 steps).
 Proof modification of "axrep4OLD" is discouraged (130 steps).
 Proof modification of "axrep6OLD" is discouraged (113 steps).
-Proof modification of "axsepg2ALT" is discouraged (170 steps).
+Proof modification of "axsepg3ALT" is discouraged (170 steps).
 Proof modification of "axtco1from2" is discouraged (154 steps).
 Proof modification of "axuntco" is discouraged (203 steps).
 Proof modification of "barbariALT" is discouraged (22 steps).
