@@ -212331,6 +212331,29 @@ $)
   $}
 
   ${
+    $d .0. k w y z $.  $d A k w y z $.  $d G k w y z $.
+    gfsumz.z $e |- .0. = ( 0g ` G ) $.
+    $( Value of a finite group sum over the zero element.  (Contributed by Jim
+       Kingdon, 24-May-2026.) $)
+    gfsumz $p |- ( ( G e. CMnd /\ A e. Fin ) ->
+      ( G gfsum ( k e. A |-> .0. ) ) = .0. ) $=
+      ( vz wcel wa cv cmpt cgfsu co wceq mpteq1 oveq2d eqeq1d cfv adantr eqid
+      c0 vw vy ccmn cfn csn cun c0g gfsum0 mpt0 oveq2i 3eqtr4g cdif cres cplusg
+      wss cbs simplll wf cmnd cmnmnd mndidcl fmpttd simplr simprr eldifbd ssun1
+      syl gfsump1 resmptd simpr eqtrd eqidd vsnid elun2 fvmptd3 ad4antr oveq12d
+      a1i mp1i mndlid syl2anc2 3eqtrd ex findcard2sd ) CUCGZAUDGZHZCBUAIZDJZKLZ
+      DMCBTDJZKLZDMZCBUBIZDJZKLZDMZCBWNFIZUEZUFZDJZKLZDMZCBADJZKLZDMUAUBFAWHTMZ
+      WJWLDXFWIWKCKBWHTDNOPWHWNMZWJWPDXGWIWOCKBWHWNDNOPWHWTMZWJXBDXHWIXACKBWHWT
+      DNOPWHAMZWJXEDXIWIXDCKBWHADNOPWEWMWFWECTKLCUGQWLDCUHWKTCKBDUIUJEUKRWGWNUD
+      GZHZWNAUOZWRAWNULZGZHZHZWQXCXPWQHZXBCXAWNUMZKLZWRXAQZCUNQZLZDDYALZDXPXBYB
+      MWQXPCUPQZYAXACXMWNWRYDSZYASZWEWFXJXOUQZXPWEWTYDXAURYGWEBWTDYDWEDYDGZBIZW
+      TGWECUSGZYHCUTZYDCDYEEVAZVGZRVBVGWGXJXOVCXKXLXNVDZXPWRAWNYNVEVHRXQXSDXTDY
+      AXQXSWPDXQXRWOCKXQBWTWNDWNWTUOXQWNWSVFVRVIOXPWQVJVKWEXTDMWFXJXOWQWEBWRDDW
+      TXAYDXASYIWRMDVLWRWSGWRWTGWEFVMWRWSWNVNVSYMVOVPVQXQYJYHYCDMWEYJWFXJXOWQYK
+      VPYLYDYACDDYEYFEVTWAWBWCWEWFVJWD $.
+  $}
+
+  ${
     $d A w y z $.  $d B w y z $.  $d F w y z $.  $d G w y z $.  $d ph w y z $.
     gfsumcl.b $e |- B = ( Base ` G ) $.
     gfsumcl.z $e |- .0. = ( 0g ` G ) $.
