@@ -1109,6 +1109,10 @@ middle by ~ exmidssfi ).</p>
   shown at ~ pw1mapen</li>
   <li>` ( 2o ^m A ) ` represents the number of decidable subsets of ` A `
   as shown at ~ 2omapen</li>
+  <li>we cannot show that any subset of a finite set is finite
+  (by ~ exmidssfi ) but we use ` ( ~P A i^i Fin ) ` for
+  the set of finite subsets of ` A ` in places like ~ sseqn
+  and ~ fipwfi</li>
 </ul>
 
 <HR NOSHADE SIZE=1><A NAME="intuitionize"></A><B><FONT
@@ -9980,8 +9984,9 @@ or not.</TD>
 
 <TR>
   <TD>hashbc</TD>
-  <TD><I>none</I></TD>
-  <TD>The set.mm proof uses pwfi and ssfi .</TD>
+  <TD>~ hashfibc</TD>
+  <TD>changes the notation for subsets of a given size
+  (see ~ sseqn for more on the notation)</TD>
 </TR>
 
 <TR>
@@ -19130,14 +19135,6 @@ of Transcendental Numbers</td>
     <td>There's a lot to figure out in terms of whether we
     can use complex numbers to represent the plane, and
     the complex logarithm in particular.</td>
-  </tr>
-
-  <tr>
-    <td>58.  Formula for the Number of Combinations</td>
-    <td>The set.mm proof is not especially long proof.
-    It may require a bit of a closer look given the uses
-    of subsets, but it seems like it might intuitionize
-    without much trouble.</td>
   </tr>
 
   <tr>
