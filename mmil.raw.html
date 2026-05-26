@@ -4039,6 +4039,12 @@ that we are evaluating functions within their domains.
 </tr>
 
 <tr>
+  <td>offun</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses offn</td>
+</tr>
+
+<tr>
   <td>ofc1</td>
   <td>~ ofc1g</td>
   <td>adds set existence condition</td>
@@ -7761,18 +7767,6 @@ favor of theorems in deduction form.</TD>
 <TD><I>none</I></TD>
 <TD>Presumably provable from ~ arch but unused in set.mm.</TD>
 </TR>
-
-<tr>
-  <td>fcdmnn0fsupp</td>
-  <td>~ fcdmnn0supp</td>
-  <td>should be possible once we have finSupp</td>
-</tr>
-
-<tr>
-  <td>fcdmnn0fsuppg</td>
-  <td>~ fcdmnn0suppg</td>
-  <td>should be possible once we have finSupp</td>
-</tr>
 
 <TR>
 <TD>suprzcl</TD>
@@ -13094,9 +13088,19 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>srgsummulcr , sgsummulcl</td>
+  <td>srgsummulcr</td>
   <td><i>none</i></td>
-  <td>depend on finSupp (df-fsupp)</td>
+  <td>to use ` gsum ` (via ~ gsumfzmhm2 ) would need to
+  be indexed by consecutive integers, or to use ` gfsum `
+  would need to be indexed by a finite set</td>
+</tr>
+
+<tr>
+  <td>sgsummulcl</td>
+  <td><i>none</i></td>
+  <td>to use ` gsum ` (via ~ gsumfzmhm2 ) would need to
+  be indexed by consecutive integers, or to use ` gfsum `
+  would need to be indexed by a finite set</td>
 </tr>
 
 <tr>
@@ -13616,7 +13620,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>lcomfsupp</td>
   <td><i>none</i></td>
-  <td>we do not have finSupp</td>
+  <td>the set.mm proof uses fnfvof , suppssr , suppss ,
+  and ssfi</td>
 </tr>
 
 <tr>
@@ -13628,14 +13633,21 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>gsumvsmul</td>
   <td><i>none</i></td>
-  <td>we do not have finSupp or the ` gsum ` theorems
-  used in the set.mm proof</td>
+  <td>to use ` gsum ` (via ~ gsumfzmhm2 ) would need to
+  be indexed by consecutive integers, or to use ` gfsum `
+  would need to be indexed by a finite set</td>
 </tr>
 
 <tr>
-  <td>mptscmfsupp0 , mptscmfsuppd</td>
+  <td>mptscmfsupp0</td>
   <td><i>none</i></td>
-  <td>we do not have finSupp</td>
+  <td>the set.mm proof uses suppssfifsupp</td>
+</tr>
+
+<tr>
+  <td>mptscmfsuppd</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses mptscmfsupp0</td>
 </tr>
 
 <tr>
@@ -14286,13 +14298,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>psrbagfsupp</td>
-  <td><i>none</i></td>
-  <td>we do not currently have finSupp and the whole finitely
-  supported concept is more limited without excluded middle</td>
-</tr>
-
-<tr>
   <td>snifpsrbag</td>
   <td><i>none</i></td>
   <td>we do not have some of the theorems used in this proof
@@ -14301,13 +14306,15 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>psrbagaddcl</td>
-  <td><i>none</i></td>
-  <td>Applying ~ psrbag , ~ psrbagf , and ~ off can reduce
-  the problem to showing that ` ( ``' ( F oF + G ) " NN ) `
-  is finite.  If staying close to the set.mm proof, we'd
-  need suppofssd , finSupp , psrbagfsupp ,
-  and fsuppunfi (or suitable replacements).</td>
+  <td rowspan="2">psrbagaddcl</td>
+  <td>~ psrbagaddclfi</td>
+  <td>for a finite index set</td>
+</tr>
+<tr>
+  <td><i>in general</i></td>
+  <td>the set.mm proof uses fsuppunfi and replacing it
+  would seem to need some additional condition (such as
+  the support of the two functions being disjoint).</td>
 </tr>
 
 <tr>

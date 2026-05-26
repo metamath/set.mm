@@ -98803,6 +98803,14 @@ $)
     wi mpan2 imp dfn2 imaeq2i eqtr4di ) BCDZBEAFZGAHIJZAKZEHLMZNZUIONUFUGUHUKPZ
     UFHQDUGULTREABCQHSUAUBOUJUIUCUDUE $.
 
+  $( A function into ` NN0 ` is finitely supported iff its support is finite.
+     (Contributed by AV, 8-Jul-2019.) $)
+  fcdmnn0fsupp $p |- ( ( I e. V /\ F : I --> NN0 )
+                       -> ( F finSupp 0 <-> ( `' F " NN ) e. Fin ) ) $=
+    ( wcel cn0 wf wa cc0 cfsupp wbr ccnv csn cdif cima cfn cn wb cvv wi c0ex
+    ffsuppbi mpan2 imp dfn2 imaeq2i eleq1i bitr4di ) BCDZBEAFZGAHIJZAKZEHLMZNZO
+    DZUKPNZODUHUIUJUNQZUHHRDUIUPSTEABCRHUAUBUCUOUMOPULUKUDUEUFUG $.
+
   $( Version of ~ fcdmnn0supp avoiding ~ ax-coll by assuming ` F ` is a set
      rather than its domain ` I ` .  (Contributed by SN, 5-Aug-2024.) $)
   fcdmnn0suppg $p |- ( ( F e. V /\ F : I --> NN0 )
@@ -98811,6 +98819,16 @@ $)
     wi mpan2 imp dfn2 imaeq2i eqtr4di ) ACDZBEAFZGAHIJZAKZEHLMZNZUIONUFUGUHUKPZ
     UFHQDUGULTREABCQHSUAUBOUJUIUCUDUE $.
   $( $j usage 'fcdmnn0suppg' avoids 'ax-coll'; $)
+
+  $( Version of ~ fcdmnn0fsupp avoiding ~ ax-coll by assuming ` F ` is a set
+     rather than its domain ` I ` .  (Contributed by SN, 5-Aug-2024.) $)
+  fcdmnn0fsuppg $p |- ( ( F e. V /\ F : I --> NN0 )
+                        -> ( F finSupp 0 <-> ( `' F " NN ) e. Fin ) ) $=
+    ( wcel cn0 wf wa cc0 cfsupp wbr csupp co cfn ccnv cn cima wfun wb ffun cvv
+    simpl c0ex funisfsupp mp3an3 syl2an2 fcdmnn0suppg eleq1d bitrd ) ACDZBEAFZG
+    ZAHIJZAHKLZMDZANOPZMDUJAQZUIUIULUNRZBEASUIUJUAUPUIHTDUQUBACTHUCUDUEUKUMUOMA
+    BCUFUGUH $.
+  $( $j usage 'fcdmnn0fsuppg' avoids 'ax-coll'; $)
 
   $( Two ways to write the support of a function on ` NN0 ` .  (Contributed by
      Mario Carneiro, 29-Dec-2014.) $)
@@ -176195,6 +176213,15 @@ $)
       ( wcel cv ccnv cn cima cfn cn0 cmap co crab wf eleq2i elrabi elmapi syl
       sylbi ) CAFCBGHIJKFZBLDMNZOZFZDLCPZAUDCEQUECUCFUFUBBCUCRCLDSTUA $.
 
+    $( Finite bags have finite support.  (Contributed by Stefan O'Rear,
+       9-Mar-2015.)  (Revised by AV, 18-Jul-2019.)  Remove a sethood
+       antecedent.  (Revised by SN, 7-Aug-2024.) $)
+    psrbagfsupp $p |- ( F e. D -> F finSupp 0 ) $=
+      ( wcel cc0 cfsupp wbr ccnv cn cima cfn cn0 wf cvv wa id psrbagf ffnd wb
+      fndmexd psrbag biimpa mpancom simprd fcdmnn0fsuppg mpdan mpbird ) CAFZCGH
+      IZCJKLMFZUJDNCOZULDPFZUJUMULQZUJDCAUJRUJDNCABCDESZTUBUNUJUOABCDPEUCUDUEUF
+      UJUMUKULUAUPCDAUGUHUI $.
+
     ${
       $d n f x $.  $d I x $.  $d V x $.
       $( The constant function equal to zero is a finite bag.  (Contributed by
@@ -176274,6 +176301,22 @@ $)
         PWOEIWFDVSVQWNWCUTVSWNWFEHZWFCURLHZVSWICEVAWNWSWTPRVPVQWIVRWLSEICVGEWFL
         CVBVCVDZVEVFWPVHTWOWGWQWOWGWSWQXAVSWGWSWQPRZWNVSVQDEVAXBWCEIDVGEWFLDVBV
         CUTVIVJVKVLGWDWAVMVNVSWKVTVQWBPRWMABDEQFUMTVO $.
+    $}
+
+    ${
+      $d D m n $.  $d F f $.  $d F m n $.  $d G f $.  $d G m n $.  $d G y $.
+      $d I f $.  $d I m n $.
+      $( The sum of two finite bags is a finite bag.  (Contributed by Mario
+         Carneiro, 9-Jan-2015.)  Shorten proof and remove a sethood antecedent.
+         (Revised by SN, 7-Aug-2024.) $)
+      psrbagaddclfi $p |- ( ( F e. D /\ G e. D /\ I e. Fin )
+          -> ( F oF + G ) e. D ) $=
+        ( vm vn wcel cfn w3a caddc cof co cn0 wf cv psrbagf cvv 3ad2ant3 adantl
+        cmap wa nn0addcl 3ad2ant1 3ad2ant2 simp3 inidm off wb nn0ex elmapg mpan
+        mpbird wceq psrbagfi eleqtrrd ) CAIZDAIZEJIZKZCDLMNZOEUBNZAVAVBVCIZEOVB
+        PZVAGHEEELOOOCDJJGQZOIHQZOIUCVFVGLNOIVAVFVGUDUAURUSEOCPUTABCEFRUEUSUREO
+        DPUTABDEFRUFURUSUTUGZVHEUHUIUTURVDVEUJZUSOSIUTVIUKOEVBSJULUMTUNUTURAVCU
+        OUSABEFUPTUQ $.
     $}
 
     ${
