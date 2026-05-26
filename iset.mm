@@ -176351,9 +176351,9 @@ $)
         HXJXLPSYHABXGEOFWBTWRUUOXA $.
     $}
 
-    $d D x y $.  $d F x y $.  $d G x y $.  $d I x $.  $d X f $.  $d X y $.
     psrbagconf1o.s $e |- S = { y e. D | y oR <_ F } $.
     ${
+      $d D x y $.  $d F x y $.  $d G x y $.  $d I x $.  $d X f $.  $d X y $.
       $( The complement of a bag is a bag.  (Contributed by Mario Carneiro,
          29-Dec-2014.)  Remove a sethood antecedent.  (Revised by SN,
          6-Aug-2024.) $)
@@ -176365,28 +176365,32 @@ $)
         EUQSITUL $.
     $}
 
-    $d D n x z $.  $d F f n x z $.  $d S n x z $.  $d I n x $.  $d x y z $.
-    $( Bag complementation is a bijection on the set of bags dominated by a
-       given bag ` F ` .  (Contributed by Mario Carneiro, 29-Dec-2014.)  Remove
-       a sethood antecedent.  (Revised by SN, 6-Aug-2024.) $)
-    psrbagconf1o $p |- ( F e. D ->
-      ( x e. S |-> ( F oF - x ) ) : S -1-1-onto-> S ) $=
-      ( vn wcel cmin wa cfv wceq cn0 wf psrbagf wfn ffnd vz cv cof co cmpt eqid
-      psrbagconcl wral wb adantr ffvelcdmda cle wbr ssrab3 sseli adantl adantrl
-      cofr syl simprl sselid cc nn0cn subsub23 syl3an syl3anc eqcom 3bitr4g cvv
-      cz fndmexd inidm eqidd nn0zd zsubcld ofvalg eqeq2d 3bitr4d eqfnfv syl2anc
-      ralbidva adantrr f1o2d ) FCKZAUADDFAUBZLUCZUDZFUAUBZWFUDZADWGUEZWJUFBCDEF
-      GWEHIUGZBCDEFGWHHIUGZWDWEDKZWHDKZMZMZJUBZWENZWQWINZOZJGUHZWQWHNZWQWGNZOZJ
-      GUHZWEWIOZWHWGOZWPWTXDJGWPWQGKMZWRWQFNZXBLUDZOZXBXIWRLUDZOZWTXDXHXJWROZXL
-      XBOZXKXMXHXIPKZXBPKZWRPKZXNXOUIZWPGPWQFWDGPFQWOCEFGHRZUJUKZWPGPWQWHWDWNGP
-      WHQZWMWDWNMZWHCKZYBWNYDWDDCWHBUBFULURUMBCDIUNZUOUPCEWHGHRUSZUQUKZWPGPWQWE
-      WPWECKGPWEQWPDCWEYEWDWMWNUTZVACEWEGHRUSZUKZXPXIVBKXQXBVBKXRWRVBKXSXIVCXBV
-      CWRVCXIXBWRVDVEVFWRXJVGXBXLVGVHXHWSXJWRWPGGXIXBLGVJFWHVIVIWQWDFGSWOWDGPFX
-      TTUJZWDWNWHGSZWMYCGPWHYFTUQZWPGWEDYHWPGPWEYITZVKZYOGVLZXHXIVMZXHXBVMXHXIX
-      BXHXIYAVNZXHXBYGVNVOVPVQXHXCXLXBWPGGXIWRLGVJFWEVIVIWQYKYNYOYOYPYQXHWRVMXH
-      XIWRYRXHWRYJVNVOVPVQVRWAWPWEGSWIGSXFXAUIYNWPGPWIWPWICKGPWIQWPDCWIYEWDWNWI
-      DKWMWLUQVACEWIGHRUSTJGWEWIVSVTWPYLWGGSZXGXEUIYMWDWMYSWNWDWMMZGPWGYTWGCKGP
-      WGQYTDCWGYEWKVACEWGGHRUSTWBJGWHWGVSVTVRWC $.
+    ${
+      $d D x y $.  $d F x y $.  $d G x y $.  $d I x $.  $d X f $.  $d X y $.
+      $d D n x z $.  $d F f n x z $.  $d S n x z $.  $d I n x $.  $d x y z $.
+      $( Bag complementation is a bijection on the set of bags dominated by a
+         given bag ` F ` .  (Contributed by Mario Carneiro, 29-Dec-2014.)
+         Remove a sethood antecedent.  (Revised by SN, 6-Aug-2024.) $)
+      psrbagconf1o $p |- ( F e. D ->
+        ( x e. S |-> ( F oF - x ) ) : S -1-1-onto-> S ) $=
+        ( vn wcel cmin wa cfv wceq cn0 wf psrbagf wfn ffnd vz cv co psrbagconcl
+        cof cmpt eqid wral wb adantr ffvelcdmda cle wbr ssrab3 sseli adantl syl
+        adantrl simprl sselid cc nn0cn subsub23 syl3an syl3anc eqcom 3bitr4g cz
+        cofr cvv fndmexd inidm eqidd nn0zd zsubcld ofvalg eqeq2d 3bitr4d eqfnfv
+        ralbidva syl2anc adantrr f1o2d ) FCKZAUADDFAUBZLUEZUCZFUAUBZWFUCZADWGUF
+        ZWJUGBCDEFGWEHIUDZBCDEFGWHHIUDZWDWEDKZWHDKZMZMZJUBZWENZWQWINZOZJGUHZWQW
+        HNZWQWGNZOZJGUHZWEWIOZWHWGOZWPWTXDJGWPWQGKMZWRWQFNZXBLUCZOZXBXIWRLUCZOZ
+        WTXDXHXJWROZXLXBOZXKXMXHXIPKZXBPKZWRPKZXNXOUIZWPGPWQFWDGPFQWOCEFGHRZUJU
+        KZWPGPWQWHWDWNGPWHQZWMWDWNMZWHCKZYBWNYDWDDCWHBUBFULVIUMBCDIUNZUOUPCEWHG
+        HRUQZURUKZWPGPWQWEWPWECKGPWEQWPDCWEYEWDWMWNUSZUTCEWEGHRUQZUKZXPXIVAKXQX
+        BVAKXRWRVAKXSXIVBXBVBWRVBXIXBWRVCVDVEWRXJVFXBXLVFVGXHWSXJWRWPGGXIXBLGVH
+        FWHVJVJWQWDFGSWOWDGPFXTTUJZWDWNWHGSZWMYCGPWHYFTURZWPGWEDYHWPGPWEYITZVKZ
+        YOGVLZXHXIVMZXHXBVMXHXIXBXHXIYAVNZXHXBYGVNVOVPVQXHXCXLXBWPGGXIWRLGVHFWE
+        VJVJWQYKYNYOYOYPYQXHWRVMXHXIWRYRXHWRYJVNVOVPVQVRVTWPWEGSWIGSXFXAUIYNWPG
+        PWIWPWICKGPWIQWPDCWIYEWDWNWIDKWMWLURUTCEWIGHRUQTJGWEWIVSWAWPYLWGGSZXGXE
+        UIYMWDWMYSWNWDWMMZGPWGYTWGCKGPWGQYTDCWGYEWKUTCEWGGHRUQTWBJGWHWGVSWAVRWC
+        $.
+    $}
   $}
 
   ${
