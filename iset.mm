@@ -151371,6 +151371,15 @@ $)
       CZUDZNGVLNOPVGDVKVINOZVKNOPLQOVHQOVMUFVHAROBROVHROEFABUGSTLVHUHSVIUIUJVGU
       KZDVKURPVNDVKVEVKOZVFQOAQOVNVOVFVOVENOVFULOVEVJNUMVEUNUOUPAETVFAUQUSUTVAV
       BVCVD $.
+
+    $( The size of the universe is a binomial coefficient.  (Contributed by
+       Thierry Arnoux, 23-Nov-2016.) $)
+    ballotfilem1 $p |- ( # ` O ) = ( ( M + N ) _C M ) $=
+      ( chash cfv cv wceq c1 co cfn cbc wcel cz nnzi mp2an cn caddc cfz cpw cin
+      crab fveq2i zaddcl fzfig hashfibc cn0 nnaddcl nnnn0i hashfz1 ax-mp oveq1i
+      1z 3eqtr2i ) CHIDJHIAKDLABUAMZUBMZUCNUDUEZHIZUSHIZAOMZURAOMCUTHGUFUSNPZAQ
+      PZVCVAKLQPURQPZVDUPVEBQPVFAERZBFRABUGSLURUHSVGDUSAUISVBURAOURUJPVBURKURAT
+      PBTPURTPEFABUKSULURUMUNUOUQ $.
   $}
 
 
