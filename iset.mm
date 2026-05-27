@@ -210834,7 +210834,8 @@ $)
       NNVFEIUQUP $.
   $}
 
-  $( Two ways of stating real number trichotomy.  (Contributed by Jim Kingdon,
+  $( Two ways of stating real number trichotomy.  See also ~ cndcap which is
+     similar but for complex number apartness.  (Contributed by Jim Kingdon,
      23-Aug-2023.) $)
   triap $p |- ( ( A e. RR /\ B e. RR ) -> ( ( A < B \/ A = B \/ B < A )
       <-> DECID A =//= B ) ) $=
