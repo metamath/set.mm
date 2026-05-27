@@ -151380,6 +151380,18 @@ $)
       1z 3eqtr2i ) CHIDJHIAKDLABUAMZUBMZUCNUDUEZHIZUSHIZAOMZURAOMCUTHGUFUSNPZAQ
       PZVCVAKLQPURQPZVDUPVEBQPVFAERZBFRABUGSLURUHSVGDUSAUISVBURAOURUJPVBURKURAT
       PBTPURTPEFABUKSULURUMUNUOUQ $.
+
+    ${
+      $d c d $.  $d d C $.  $d d M $.  $d d N $.
+      $( Elementhood in ` O ` .  (Contributed by Thierry Arnoux,
+         17-Apr-2017.) $)
+      ballotfilemelo $p |- ( C e. O <->
+          ( C C_ ( 1 ... ( M + N ) ) /\ C e. Fin /\ ( # ` C ) = M ) ) $=
+        ( vd c1 co cfn wcel chash cfv wceq wa cv fveqeq2 crab caddc cfz cpw cin
+        wss w3a elfpw anbi1i cbvrabv eqtri elrab2 df-3an 3bitr4i ) AJBCUAKUBKZU
+        CLUDZMZANOBPZQAUNUEZALMZQZUQQADMURUSUQUFUPUTUQAUNUGUHIRZNOBPZUQIAUODVAA
+        BNSDERZNOBPZEUOTVBIUOTHVDVBEIUOVCVABNSUIUJUKURUSUQULUM $.
+    $}
   $}
 
 
