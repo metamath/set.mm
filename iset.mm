@@ -23472,6 +23472,14 @@ $)
     ( cv wcel wa crab df-rab abeq2i ) BDCEAFBABCGABCHI $.
 
   ${
+    reqabi.1 $e |- A = { x e. B | ph } $.
+    $( Inference from equality of a class variable and a restricted class
+       abstraction.  (Contributed by NM, 16-Feb-2004.) $)
+    reqabi $p |- ( x e. A <-> ( x e. B /\ ph ) ) $=
+      ( cv wcel crab wa eleq2i rabid bitri ) BFZCGMABDHZGMDGAICNMEJABDKL $.
+  $}
+
+  ${
     $d x A $.
     $( An "identity" law for restricted class abstraction.  (Contributed by NM,
        9-Oct-2003.)  (Proof shortened by Andrew Salmon, 30-May-2011.) $)
