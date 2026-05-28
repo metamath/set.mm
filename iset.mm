@@ -170639,6 +170639,22 @@ $)
       RWLYRWCWLXEXFYQWDWLXEXFYQWEWLXEXFYQWFWGWHWIBCDWNWMWJWK $.
   $}
 
+  ${
+    $( If the relation given by ~ df-apr on a ring is an apartness relation,
+       then the ring is a nonzero ring.  (Contributed by Jim Kingdon,
+       27-May-2026.) $)
+    aprnzr $p |- ( ( R e. Ring /\ ( #r ` R ) Ap ( Base ` R ) )
+        -> R e. NzRing ) $=
+      ( crg wcel cbs cfv capr wap wa cur c0g wne cnzr simpl wceq wbr eqidd eqid
+      csg ad2antrr syl2anc co cui cgrp simpll ringgrpd ringsrg unitcld grpsubid
+      1unit simpr eqeltrrd aprval mpbird wn simplr papirr pm2.65da neqned isnzr
+      eqeltrd sylanbrc ) ABCZADEZAFEZGZHZVBAIEZAJEZKALCVBVEMVFVGVHVFVGVHNZVGVGV
+      DOZVFVIHZVJVGVGAREZUAZAUBEZCVKVMVHVNVKAUCCVGVCCZVMVHNVKAVBVEVIUDZUEVBVOVE
+      VIVBVCAVNVGVBVCPVBVNPAUFAVNVGVNQVGQZUIZUGSZVCAVLVGVHVCQVHQZVLQUHTVKVGVHVN
+      VFVIUJVBVGVNCVEVIVRSUKUTVKVCVDAVNVLVGVGVKVCPVKVDPVKVLPVKVNPVPVSVSULUMVKVE
+      VOVJUNVBVEVIUOVSVCVDVGUPTUQURAVGVHVQVTUSVA $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
