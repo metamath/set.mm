@@ -76193,6 +76193,17 @@ $)
       A. x e. A A. y e. A A. z e. A ( x R y -> ( x R z \/ y R z ) ) ) ) ) $.
   $}
 
+  ${
+    $d A x y z $.  $d R x y z $.  $d X x $.
+    $( An apartness is irreflexive.  (Contributed by Jim Kingdon,
+       27-May-2026.) $)
+    papirr $p |- ( ( R Ap A /\ X e. A ) -> -. X R X ) $=
+      ( vx vy vz wap wcel wa cv wbr wn wceq id breq12d notbid wral cxp wss wi
+      wo df-pap simplbi simprd adantr simpr rspcdva ) ABGZCAHZIDJZUJBKZLZCCBKZL
+      DACUJCMZUKUMUNUJCUJCBUNNZUOOPUHULDAQZUIUHBAARSZUPUHUQUPIUJEJZBKZURUJBKTEA
+      QDAQUSUJFJZBKURUTBKUATFAQEAQDAQIDEFABUBUCUDUEUHUIUFUG $.
+  $}
+
   $c TAp $.
 
   $( Tight apartness predicate symbol. $)
