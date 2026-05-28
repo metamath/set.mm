@@ -76204,6 +76204,22 @@ $)
       QDAQUSUJFJZBKURUTBKUATFAQEAQDAQIDEFABUBUCUDUEUHUIUFUG $.
   $}
 
+  ${
+    $d A x y z $.  $d R x y z $.  $d X x y $.  $d Y y $.
+    papsym.r $e |- ( ph -> R Ap A ) $.
+    papsym.x $e |- ( ph -> X e. A ) $.
+    papsym.y $e |- ( ph -> Y e. A ) $.
+    papsym.ap $e |- ( ph -> X R Y ) $.
+    $( An apartness is symmetric.  (Contributed by Jim Kingdon,
+       27-May-2026.) $)
+    papsym $p |- ( ph -> Y R X ) $=
+      ( vy vx vz wbr cv wi wceq breq2 breq1 wral wa imbi12d ralbidv cxp wss wap
+      wn wo df-pap sylib simprld rspcdva mpd ) ADECMZEDCMZIADJNZCMZUODCMZOZUMUN
+      OJBEUOEPUPUMUQUNUOEDCQUOEDCRUAAKNZUOCMZUOUSCMZOZJBSZURJBSKBDUSDPZVBURJBVD
+      UTUPVAUQUSDUOCRUSDUOCQUAUBACBBUCUDUSUSCMUFKBSTZVCKBSZUTUSLNZCMUOVGCMUGOLB
+      SJBSKBSZABCUEVEVFVHTTFKJLBCUHUIUJGUKHUKUL $.
+  $}
+
   $c TAp $.
 
   $( Tight apartness predicate symbol. $)
