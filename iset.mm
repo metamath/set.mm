@@ -170711,6 +170711,31 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Definition and basic properties
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c DivRing $.
+  $c Field $.
+
+  $( Extend class notation with class of all division rings. $)
+  cdr $a class DivRing $.
+
+  $( Class of fields. $)
+  cfield $a class Field $.
+
+  $( Define class of all division rings.  A division ring is a ring in which
+     the relation given by ~ df-apr is a tight apartness.  (Contributed by Jim
+     Kingdon, 29-May-2026.) $)
+  df-drngap $a |- DivRing = { r e. Ring | ( #r ` r ) TAp ( Base ` r ) } $.
+
+  $( A _field_ is a commutative division ring.  (Contributed by Mario Carneiro,
+     17-Jun-2015.) $)
+  df-field $a |- Field = ( DivRing i^i CRing ) $.
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Left modules
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -206301,6 +206326,13 @@ htmldef "RingSpan" as "RingSpan";
 htmldef "#r" as "#<sub>r</sub>";
   althtmldef "#r" as "#<sub>r</sub>";
   latexdef "#r" as "\mathrel{\neq\mathrel{\mkern -10mu}\neq_\mathrm{r}}";
+htmldef "DivRing" as
+  "<IMG SRC='_divring.gif' WIDTH=52 HEIGHT=19 ALT=' DivRing' TITLE='DivRing'>";
+  althtmldef "DivRing" as "DivRing";
+  latexdef "DivRing" as "\mathrm{DivRing}";
+htmldef "Field" as "Field";
+  althtmldef "Field" as "Field";
+  latexdef "Field" as "\mathrm{Field}";
 htmldef "LMod" as
     "<IMG SRC='_lmod.gif' WIDTH=36 HEIGHT=19 ALT=' LMod' TITLE='LMod'>";
   althtmldef "LMod" as "LMod";
