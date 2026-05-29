@@ -170734,6 +170734,18 @@ $)
      17-Jun-2015.) $)
   df-field $a |- Field = ( DivRing i^i CRing ) $.
 
+  ${
+    $d B r $.  $d R r $.  $d .# r $.
+    isdrng.b $e |- B = ( Base ` R ) $.
+    isdrngap.ap $e |- .# = ( #r ` R ) $.
+    $( The predicate "is a division ring".  (Contributed by Jim Kingdon,
+       29-May-2026.) $)
+    isdrngtap $p |- ( R e. DivRing <-> ( R e. Ring /\ .# TAp B ) ) $=
+      ( vr cv cbs cfv capr wtap crg cdr wceq wb fveq2 eqtr4di tapeq1 syl tapeq2
+      bitrd df-drngap elrab2 ) FGZHIZUDJIZKZABKZFCLMUDCNZUGUEBKZUHUIUFBNUGUJOUI
+      UFCJIBUDCJPEQUEUFBRSUIUEANUJUHOUIUECHIAUDCHPDQUEABTSUAFUBUC $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
