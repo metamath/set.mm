@@ -76248,6 +76248,15 @@ $)
   $}
 
   ${
+    $d A x y $.  $d R x y $.
+    $( A tight apartness is an apartness.  (Contributed by Jim Kingdon,
+       29-May-2026.) $)
+    tapap $p |- ( R TAp A -> R Ap A ) $=
+      ( vx vy wtap wap cv wbr wn weq wi wral df-tap simplbi ) ABEABFCGDGBHICDJK
+      DALCALCDABMN $.
+  $}
+
+  ${
     $d A x y z $.  $d R x y z $.
     $( Tight apartness with the apartness properties from ~ df-pap expanded.
        (Contributed by Jim Kingdon, 21-Feb-2025.) $)
