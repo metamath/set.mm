@@ -170794,6 +170794,19 @@ $)
       KULUQVANZUTURUQUSUTUMVHABCDEFGIHJUQVDVAVESUQUSUTUPTUNUO $.
   $}
 
+  ${
+    $d .# x y $.  $d .0. x y $.  $d B x y $.  $d R y $.
+    drngui.b $e |- B = ( Base ` R ) $.
+    drngui.z $e |- .0. = ( 0g ` R ) $.
+    drnguiap.ap $e |- .# = ( #r ` R ) $.
+    $( The set of units of a division ring.  (Contributed by Mario Carneiro,
+       2-Dec-2014.) $)
+    drnguiap $p |- ( R e. DivRing -> { x e. B | x .# .0. } = ( Unit ` R ) ) $=
+      ( vy cdr wcel cv wbr crab cui cfv wa breq1 elrab eqid drngunitap bitr4id
+      eqrdv ) DJKZIALZECMZABNZDOPZUDILZUGKUIBKUIECMZQUIUHKUFUJAUIBUEUIECRSBCDUH
+      UIEFUHTGHUAUBUC $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
