@@ -170828,6 +170828,11 @@ $)
   drnggrp $p |- ( R e. DivRing -> R e. Grp ) $=
     ( cdr wcel id drnggrpd ) ABCZAFDE $.
 
+  $( A field is a commutative division ring.  (Contributed by Mario Carneiro,
+     17-Jun-2015.) $)
+  isfld $p |- ( R e. Field <-> ( R e. DivRing /\ R e. CRing ) ) $=
+    ( cdr ccrg cfield df-field elin2 ) ABCDEF $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
