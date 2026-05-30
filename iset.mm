@@ -170840,6 +170840,13 @@ $)
       ( cfield wcel cdr ccrg isfld simplbi syl ) ABDEZBFEZCKLBGEBHIJ $.
   $}
 
+  ${
+    fldcrngd.1 $e |- ( ph -> R e. Field ) $.
+    $( A field is a commutative ring.  (Contributed by SN, 23-Nov-2024.) $)
+    fldcrngd $p |- ( ph -> R e. CRing ) $=
+      ( cfield wcel ccrg cdr isfld simprbi syl ) ABDEZBFEZCKBGELBHIJ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
