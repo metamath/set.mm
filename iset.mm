@@ -170816,6 +170816,11 @@ $)
     $( A division ring is a ring.  (Contributed by SN, 16-May-2024.) $)
     drngringd $p |- ( ph -> R e. Ring ) $=
       ( cdr wcel crg drngring syl ) ABDEBFECBGH $.
+
+    $( A division ring is a group (deduction form).  (Contributed by SN,
+       16-May-2024.) $)
+    drnggrpd $p |- ( ph -> R e. Grp ) $=
+      ( drngringd ringgrpd ) ABABCDE $.
   $}
 
 
