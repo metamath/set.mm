@@ -170811,6 +170811,13 @@ $)
   drngring $p |- ( R e. DivRing -> R e. Ring ) $=
     ( cdr wcel clring crg drnglring lringring syl ) ABCADCAECAFAGH $.
 
+  ${
+    drngringd.1 $e |- ( ph -> R e. DivRing ) $.
+    $( A division ring is a ring.  (Contributed by SN, 16-May-2024.) $)
+    drngringd $p |- ( ph -> R e. Ring ) $=
+      ( cdr wcel crg drngring syl ) ABDEBFECBGH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
