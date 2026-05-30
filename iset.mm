@@ -170755,6 +170755,13 @@ $)
       UFCJIBUDCJPEQUEUFBRSUIUEANUJUHOUIUECHIAUDCHPDQUEABTSUAFUBUC $.
   $}
 
+  $( A division ring is a local ring.  (Contributed by Jim Kingdon,
+     29-May-2026.) $)
+  drnglring $p |- ( R e. DivRing -> R e. LRing ) $=
+    ( cdr wcel cbs cfv capr wap crg wtap eqid isdrngtap tapap simplbiim simplbi
+    clring wb aprlring syl mpbird ) ABCZAOCZADEZAFEZGZTAHCZUBUCIZUDUBUCAUBJUCJK
+    ZUBUCLMTUEUAUDPTUEUFUGNAQRS $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
