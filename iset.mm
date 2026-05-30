@@ -170847,6 +170847,20 @@ $)
       ( cfield wcel ccrg cdr isfld simprbi syl ) ABDEZBFEZCKBGELBHIJ $.
   $}
 
+  ${
+    $d x B $.  $d x G $.  $d x R $.  $d x .0. $.
+    isdrng2.b $e |- B = ( Base ` R ) $.
+    isdrng2.z $e |- .0. = ( 0g ` R ) $.
+    isdrng2ap.ap $e |- .# = ( #r ` R ) $.
+    isdrng2ap.g $e |- G = ( ( mulGrp ` R ) |`s { x e. B | x .# .0. } ) $.
+    $( A division ring can equivalently be defined as a ring such that the
+       elements apart from zero form a group under multiplication (from which
+       it follows that this is the same group as the group of units).
+       (Contributed by Mario Carneiro, 2-Dec-2014.) $)
+    isdrng2ap $p |- ( R e. DivRing <-> ( R e. Ring /\ G e. Grp ) ) $=
+      (  ) ? $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
