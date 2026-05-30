@@ -170778,6 +170778,22 @@ $)
     clring wb aprlring syl mpbird ) ABCZAOCZADEZAFEZGZTAHCZUBUCIZUDUBUCAUBJUCJK
     ZUBUCLMTUEUAUDPTUEUFUGNAQRS $.
 
+  ${
+    drngunit.b $e |- B = ( Base ` R ) $.
+    drngunit.u $e |- U = ( Unit ` R ) $.
+    drngunit.z $e |- .0. = ( 0g ` R ) $.
+    drngunit.ap $e |- .# = ( #r ` R ) $.
+    $( Elementhood in the set of units when ` R ` is a division ring.
+       (Contributed by Mario Carneiro, 2-Dec-2014.) $)
+    drngunitap $p |- ( R e. DivRing ->
+        ( X e. U <-> ( X e. B /\ X .# .0. ) ) ) $=
+      ( cdr wcel wbr wa cfv wceq a1i syl adantr aprunit cbs cui csrg crg clring
+      drnglring lringring ringsrg simpr unitcld mpbird jca simprr mpbid impbida
+      simprl ) CKLZEDLZEALZEFBMZNZUQURNZUSUTVBACDEACUAOPVBGQDCUBOPVBHQUQCUCLZUR
+      UQCUDLZVCUQCUELVDCUFCUGRZCUHRSUQURUIZUJZVBUTURVFVBABCDEFGIHJUQVDURVESVGTU
+      KULUQVANZUTURUQUSUTUMVHABCDEFGIHJUQVDVAVESUQUSUTUPTUNUO $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
