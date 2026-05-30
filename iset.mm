@@ -170823,6 +170823,11 @@ $)
       ( drngringd ringgrpd ) ABABCDE $.
   $}
 
+  $( A division ring is a group (closed form).  (Contributed by NM,
+     8-Sep-2011.) $)
+  drnggrp $p |- ( R e. DivRing -> R e. Grp ) $=
+    ( cdr wcel id drnggrpd ) ABCZAFDE $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
