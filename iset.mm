@@ -170833,6 +170833,13 @@ $)
   isfld $p |- ( R e. Field <-> ( R e. DivRing /\ R e. CRing ) ) $=
     ( cdr ccrg cfield df-field elin2 ) ABCDEF $.
 
+  ${
+    flddrngd.1 $e |- ( ph -> R e. Field ) $.
+    $( A field is a division ring.  (Contributed by SN, 17-Jan-2025.) $)
+    flddrngd $p |- ( ph -> R e. DivRing ) $=
+      ( cfield wcel cdr ccrg isfld simplbi syl ) ABDEZBFEZCKLBGEBHIJ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
