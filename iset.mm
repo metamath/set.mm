@@ -170807,6 +170807,10 @@ $)
       UIEFUHTGHUAUBUC $.
   $}
 
+  $( A division ring is a ring.  (Contributed by NM, 8-Sep-2011.) $)
+  drngring $p |- ( R e. DivRing -> R e. Ring ) $=
+    ( cdr wcel clring crg drnglring lringring syl ) ABCADCAECAFAGH $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
