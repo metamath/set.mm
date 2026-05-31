@@ -170619,6 +170619,21 @@ $)
   $}
 
   ${
+    ringunitap.b $e |- B = ( Base ` R ) $.
+    ringunitap.u $e |- U = ( Unit ` R ) $.
+    ringunitap.z $e |- .0. = ( 0g ` R ) $.
+    ringunitap.ap $e |- .# = ( #r ` R ) $.
+    $( Elementhood in the set of units.  (Contributed by Jim Kingdon,
+       30-May-2026.) $)
+    ringunitap $p |- ( R e. Ring ->
+        ( X e. U <-> ( X e. B /\ X .# .0. ) ) ) $=
+      ( crg wcel wbr wa cbs cfv wceq a1i simpl aprunit cui ringsrg adantr simpr
+      csrg unitcld mpbird jca simprr simprl mpbid impbida ) CKLZEDLZEALZEFBMZNZ
+      UMUNNZUOUPURACDEACOPQURGRDCUAPQURHRUMCUELUNCUBUCUMUNUDZUFZURUPUNUSURABCDE
+      FGIHJUMUNSUTTUGUHUMUQNZUPUNUMUOUPUIVAABCDEFGIHJUMUQSUMUOUPUJTUKUL $.
+  $}
+
+  ${
     aprirr.b $e |- ( ph -> B = ( Base ` R ) ) $.
     aprirr.ap $e |- ( ph -> .# = ( #r ` R ) ) $.
     aprirr.r $e |- ( ph -> R e. Ring ) $.
