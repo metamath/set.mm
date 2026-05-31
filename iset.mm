@@ -170634,6 +170634,19 @@ $)
   $}
 
   ${
+    $d .# x y $.  $d .0. x y $.  $d B x y $.  $d R y $.
+    ringuiap.b $e |- B = ( Base ` R ) $.
+    ringuiap.z $e |- .0. = ( 0g ` R ) $.
+    ringuiap.ap $e |- .# = ( #r ` R ) $.
+    $( The set of units of a ring.  (Contributed by Jim Kingdon,
+       31-May-2026.) $)
+    ringuiap $p |- ( R e. Ring -> { x e. B | x .# .0. } = ( Unit ` R ) ) $=
+      ( vy crg wcel cv wbr crab cui cfv wa breq1 elrab eqid ringunitap bitr4id
+      eqrdv ) DJKZIALZECMZABNZDOPZUDILZUGKUIBKUIECMZQUIUHKUFUJAUIBUEUIECRSBCDUH
+      UIEFUHTGHUAUBUC $.
+  $}
+
+  ${
     aprirr.b $e |- ( ph -> B = ( Base ` R ) ) $.
     aprirr.ap $e |- ( ph -> .# = ( #r ` R ) ) $.
     aprirr.r $e |- ( ph -> R e. Ring ) $.
