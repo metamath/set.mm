@@ -14123,7 +14123,6 @@ New usage of "2logb9irrALT" is discouraged (0 uses).
 New usage of "2lplnm2N" is discouraged (0 uses).
 New usage of "2lplnmN" is discouraged (0 uses).
 New usage of "2moex" is discouraged (1 uses).
-New usage of "2mosOLD" is discouraged (0 uses).
 New usage of "2moswap" is discouraged (1 uses).
 New usage of "2onnALT" is discouraged (0 uses).
 New usage of "2pm13.193" is discouraged (3 uses).
@@ -16239,7 +16238,6 @@ New usage of "eleq2dALT" is discouraged (0 uses).
 New usage of "eleq2w2ALT" is discouraged (0 uses).
 New usage of "elex22VD" is discouraged (0 uses).
 New usage of "elex2VD" is discouraged (0 uses).
-New usage of "elexOLD" is discouraged (0 uses).
 New usage of "elfvmptrab1" is discouraged (0 uses).
 New usage of "elghomOLD" is discouraged (5 uses).
 New usage of "elghomlem1OLD" is discouraged (1 uses).
@@ -19037,12 +19035,7 @@ New usage of "vnexOLD" is discouraged (0 uses).
 New usage of "vprcOLD" is discouraged (0 uses).
 New usage of "vscandx" is discouraged (14 uses).
 New usage of "vsfval" is discouraged (4 uses).
-New usage of "vtocl2gafOLD" is discouraged (0 uses).
-New usage of "vtocl3gaOLD" is discouraged (0 uses).
-New usage of "vtocl3gafOLD" is discouraged (0 uses).
-New usage of "vtocl4gaOLD" is discouraged (0 uses).
 New usage of "vtoclOLD" is discouraged (0 uses).
-New usage of "vtocleOLD" is discouraged (0 uses).
 New usage of "vtxdusgr0edgnelALT" is discouraged (0 uses).
 New usage of "w-bnj13" is discouraged (5 uses).
 New usage of "w-bnj15" is discouraged (92 uses).
@@ -19147,7 +19140,6 @@ Proof modification of "2bornot2b" is discouraged (26 steps).
 Proof modification of "2cnALT" is discouraged (3 steps).
 Proof modification of "2irrexpqALT" is discouraged (90 steps).
 Proof modification of "2logb9irrALT" is discouraged (141 steps).
-Proof modification of "2mosOLD" is discouraged (121 steps).
 Proof modification of "2onnALT" is discouraged (16 steps).
 Proof modification of "2pm13.193" is discouraged (91 steps).
 Proof modification of "2pm13.193VD" is discouraged (223 steps).
@@ -19878,7 +19870,6 @@ Proof modification of "eleq2dALT" is discouraged (62 steps).
 Proof modification of "eleq2w2ALT" is discouraged (50 steps).
 Proof modification of "elex22VD" is discouraged (111 steps).
 Proof modification of "elex2VD" is discouraged (59 steps).
-Proof modification of "elexOLD" is discouraged (31 steps).
 Proof modification of "elghomOLD" is discouraged (117 steps).
 Proof modification of "elghomlem1OLD" is discouraged (232 steps).
 Proof modification of "elghomlem2OLD" is discouraged (195 steps).
@@ -20764,12 +20755,7 @@ Proof modification of "vk15.4jVD" is discouraged (268 steps).
 Proof modification of "vn0ALT" is discouraged (6 steps).
 Proof modification of "vnexOLD" is discouraged (45 steps).
 Proof modification of "vprcOLD" is discouraged (15 steps).
-Proof modification of "vtocl2gafOLD" is discouraged (111 steps).
-Proof modification of "vtocl3gaOLD" is discouraged (110 steps).
-Proof modification of "vtocl3gafOLD" is discouraged (185 steps).
-Proof modification of "vtocl4gaOLD" is discouraged (166 steps).
 Proof modification of "vtoclOLD" is discouraged (17 steps).
-Proof modification of "vtocleOLD" is discouraged (12 steps).
 Proof modification of "vtxdusgr0edgnelALT" is discouraged (94 steps).
 Proof modification of "wl-cases2-dnf" is discouraged (85 steps).
 Proof modification of "wl-dfclab" is discouraged (73 steps).
