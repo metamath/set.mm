@@ -76193,6 +76193,46 @@ $)
       A. x e. A A. y e. A A. z e. A ( x R y -> ( x R z \/ y R z ) ) ) ) ) $.
   $}
 
+  ${
+    $d A x y z $.  $d R x y z $.  $d X x $.
+    $( An apartness is irreflexive.  (Contributed by Jim Kingdon,
+       27-May-2026.) $)
+    papirr $p |- ( ( R Ap A /\ X e. A ) -> -. X R X ) $=
+      ( vx vy vz wap wcel wa cv wbr wn wceq id breq12d notbid wral cxp wss wi
+      wo df-pap simplbi simprd adantr simpr rspcdva ) ABGZCAHZIDJZUJBKZLZCCBKZL
+      DACUJCMZUKUMUNUJCUJCBUNNZUOOPUHULDAQZUIUHBAARSZUPUHUQUPIUJEJZBKZURUJBKTEA
+      QDAQUSUJFJZBKURUTBKUATFAQEAQDAQIDEFABUBUCUDUEUHUIUFUG $.
+  $}
+
+  ${
+    $d A x y z $.  $d R x y z $.  $d X x y $.  $d Y y $.
+    papsym.r $e |- ( ph -> R Ap A ) $.
+    papsym.x $e |- ( ph -> X e. A ) $.
+    papsym.y $e |- ( ph -> Y e. A ) $.
+    papsym.ap $e |- ( ph -> X R Y ) $.
+    $( An apartness is symmetric.  (Contributed by Jim Kingdon,
+       27-May-2026.) $)
+    papsym $p |- ( ph -> Y R X ) $=
+      ( vy vx vz wbr cv wi wceq breq2 breq1 wral wa imbi12d ralbidv cxp wss wap
+      wn wo df-pap sylib simprld rspcdva mpd ) ADECMZEDCMZIADJNZCMZUODCMZOZUMUN
+      OJBEUOEPUPUMUQUNUOEDCQUOEDCRUAAKNZUOCMZUOUSCMZOZJBSZURJBSKBDUSDPZVBURJBVD
+      UTUPVAUQUSDUOCRUSDUOCQUAUBACBBUCUDUSUSCMUFKBSTZVCKBSZUTUSLNZCMUOVGCMUGOLB
+      SJBSKBSZABCUEVEVFVHTTFKJLBCUHUIUJGUKHUKUL $.
+
+    $d X x y z $.  $d Y y z $.  $d Z z $.
+    papcotr.z $e |- ( ph -> Z e. A ) $.
+    $( An apartness is cotransitive.  (Contributed by Jim Kingdon,
+       28-May-2026.) $)
+    papcotr $p |- ( ph -> ( X R Z \/ Y R Z ) ) $=
+      ( vz vy vx wbr wo cv wi wceq wral orbi12d imbi2d imbi12d ralbidv 2ralbidv
+      breq2 breq1 orbi2d orbi1d cxp wss wn wap df-pap sylib simprrd rspcdva mpd
+      wa ) ADECOZDFCOZEFCOZPZJAUTDLQZCOZEVDCOZPZRZUTVCRLBFVDFSZVGVCUTVIVEVAVFVB
+      VDFDCUFVDFECUFUAUBADMQZCOZVEVJVDCOZPZRZLBTZVHLBTMBEVJESZVNVHLBVPVKUTVMVGV
+      JEDCUFVPVLVFVEVJEVDCUGUHUCUDANQZVJCOZVQVDCOZVLPZRZLBTMBTZVOMBTNBDVQDSZWAV
+      NMLBBWCVRVKVTVMVQDVJCUGWCVSVEVLVQDVDCUGUIUCUEACBBUJUKVQVQCOULNBTUSZVRVJVQ
+      CORMBTNBTZWBNBTZABCUMWDWEWFUSUSGNMLBCUNUOUPHUQIUQKUQUR $.
+  $}
+
   $c TAp $.
 
   $( Tight apartness predicate symbol. $)
@@ -170626,6 +170666,47 @@ $)
       IZVPXEAYNYOYNVMYOVMVNTVQVOWLXAXDWLWTBCWNWNWLXGNZWNWMAWPWRYPWNRYPWMRWLYLXG
       YMTWLXEXFVRWLXEXFVSVTWAWLXCBCDWNWNWNWLXEXFXBWNGZWBZNZWNWMAWPWRXBYSWNRYSWM
       RWLYRWCWLXEXFYQWDWLXEXFYQWEWLXEXFYQWFWGWHWIBCDWNWMWJWK $.
+  $}
+
+  ${
+    $( If the relation given by ~ df-apr on a ring is an apartness relation,
+       then the ring is a nonzero ring.  (Contributed by Jim Kingdon,
+       27-May-2026.) $)
+    aprnzr $p |- ( ( R e. Ring /\ ( #r ` R ) Ap ( Base ` R ) )
+        -> R e. NzRing ) $=
+      ( crg wcel cbs cfv capr wap wa cur c0g wne cnzr simpl wceq wbr eqidd eqid
+      csg ad2antrr syl2anc co cui cgrp simpll ringgrpd ringsrg unitcld grpsubid
+      1unit simpr eqeltrrd aprval mpbird wn simplr papirr pm2.65da neqned isnzr
+      eqeltrd sylanbrc ) ABCZADEZAFEZGZHZVBAIEZAJEZKALCVBVEMVFVGVHVFVGVHNZVGVGV
+      DOZVFVIHZVJVGVGAREZUAZAUBEZCVKVMVHVNVKAUCCVGVCCZVMVHNVKAVBVEVIUDZUEVBVOVE
+      VIVBVCAVNVGVBVCPVBVNPAUFAVNVGVNQVGQZUIZUGSZVCAVLVGVHVCQVHQZVLQUHTVKVGVHVN
+      VFVIUJVBVGVNCVEVIVRSUKUTVKVCVDAVNVLVGVGVKVCPVKVDPVKVLPVKVNPVPVSVSULUMVKVE
+      VOVJUNVBVEVIUOVSVCVDVGUPTUQURAVGVHVQVTUSVA $.
+  $}
+
+  ${
+    $d R x y $.
+    $( A ring is a local ring if and only if the relation given by ~ df-apr is
+       an apartness relation.  (Contributed by Jim Kingdon, 28-May-2026.) $)
+    aprlring $p |- ( R e. Ring
+        -> ( R e. LRing <-> ( #r ` R ) Ap ( Base ` R ) ) ) $=
+      ( vx vy wcel cfv wa cv co wceq wral wbr syl3anc oveq1d simpr adantr eqidd
+      eqid syl aprval eqeltrrd crg clring cbs capr wap aprap cnzr cplusg cur wo
+      cui aprnzr c0g csg simplll simplrl simplrr ringcom cgrp ringgrpd grppncan
+      wi 3eqtr3d ringidcl biimpa grpsubid1 syl2anc simpllr grpidcl papsym mpbid
+      olcd wb orcd 1unit eqeltrd mpbird papcotr mpjaodan ex ralrimivva sylanbrc
+      islring impbid2 ) AUADZAUBDZAUCEZAUDEZUEZAUFWEWIWFWEWIFZAUGDBGZCGZAUHEZHZ
+      AUIEZIZWKAUKEZDZWLWQDZUJZVBZCWGJBWGJWFAULWJXABCWGWGWJWKWGDZWLWGDZFZFZWPWT
+      XEWPFZWOWKWHKZWTAUMEZWKWHKZXFXGFZWSWRXJWOWKAUNEZHZWLWQXFXLWLIXGXFWNWKXKHW
+      LWKWMHZWKXKHZXLWLXFWNXMWKXKXFWEXBXCWNXMIWEWIXDWPUOZWJXBXCWPUPZWJXBXCWPUQZ
+      WGWMAWKWLWGQZWMQZURLMXFWNWOWKXKXEWPNMXFAUSDZXCXBXNWLIXFAXOUTZXQXPWGWMAXKW
+      LWKXRXSXKQZVALVCOXFXGXLWQDXFWGWHAWQXKWOWKXFWGPZXFWHPZXFXKPZXFWQPZXOXFWEWO
+      WGDZXOWGAWOXRWOQZVDRZXPSVETVLXFXIFZWRWSYJWKXHXKHZWKWQXFYKWKIZXIXFXTXBYLYA
+      XPWGAXKWKXHXRXHQZYBVFVGOYJWKXHWHKZYKWQDZYJWGWHXHWKXFWIXIWEWIXDWPVHZOXFXHW
+      GDZXIXFXTYQYAWGAXHXRYMVIRZOXFXBXIXPOXFXINVJXFYNYOVMXIXFWGWHAWQXKWKXHYCYDY
+      EYFXOXPYRSOVKTVNXFWGWHWOXHWKYPYIYRXFWOXHWHKWOXHXKHZWQDXFYSWOWQXFXTYGYSWOI
+      YAYIWGAXKWOXHXRYMYBVFVGXFWEWOWQDXOAWQWOWQQZYHVORVPXFWGWHAWQXKWOXHYCYDYEYF
+      XOYIYRSVQXPVRVSVTWABCWGWMAWQWOXRXSYHYTWCWBVTWD $.
   $}
 
 
