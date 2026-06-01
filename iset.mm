@@ -170762,6 +170762,31 @@ $)
       XOYIYRSVQXPVRVSVTWABCWGWMAWQWOXRXSYHYTWCWBVTWD $.
   $}
 
+  ${
+    $d x y r K $.  $d x y r L $.
+    aprprop.b $e |- ( Base ` K ) = ( Base ` L ) $.
+    aprprop.p $e |- ( +g ` K ) = ( +g ` L ) $.
+    aprprop.m $e |- ( .r ` K ) = ( .r ` L ) $.
+    $( If two structures have the same ring components (properties), ~ df-apr
+       generates the same relation for both of them.  (Contributed by Jim
+       Kingdon, 31-May-2026.) $)
+    aprprop $p |- ( K e. Ring -> ( #r ` K ) = ( #r ` L ) ) $=
+      ( vx vy crg wcel cbs cfv wa csg cui wceq a1i eleq2d anbi12d cvv fveq2 cxp
+      vr cv co copab capr cplusg ringprop biimpi grpsubpropdg oveqd eqidd cmulr
+      oveqdr unitpropdg eleq12d opabbidv df-apr elex wfn funfvex funfni sylancr
+      id basfn xpexd wss opabssxp ssexd fvmptd3 elexd eqeltrrid 3eqtr4d ) AHIZF
+      UCZAJKZIZGUCZVPIZLZVOVRAMKZUDZANKZIZLZFGUEZVOBJKZIZVRWGIZLZVOVRBMKZUDZBNK
+      ZIZLZFGUEZAUFKBUFKVNWEWOFGVNVTWJWDWNVNVQWHVSWIVNVPWGVOVPWGOVNCPZQVNVPWGVR
+      WQQRVNWBWLWCWMVNWAWKVOVRVNABHHWQAUGKBUGKOVNDPVNVDZVNBHIABCDEUHUIZUJUKVNFG
+      VPABVNVPULWQVNVTFGAUMKZBUMKZWTXAOVNEPUNWRWSUOUPRUQVNUBAVOUBUCZJKZIZVRXCIZ
+      LZVOVRXBMKZUDZXBNKZIZLZFGUEZWFSUFSFGUBURZXBAOZXKWEFGXNXFVTXJWDXNXDVQXEVSX
+      NXCVPVOXBAJTZQXNXCVPVRXOQRXNXHWBXIWCXNXGWAVOVRXBAMTUKXBANTUPRUQAHUSZVNWFV
+      PVPUAZSVNVPVPSSVNJSUTASIVPSIZVEXPXRSAJAJVAVBVCZXSVFWFXQVGVNWDFGVPVPVHPVIV
+      JVNUBBXLWPSUFSXMXBBOZXKWOFGXTXFWJXJWNXTXDWHXEWIXTXCWGVOXBBJTZQXTXCWGVRYAQ
+      RXTXHWLXIWMXTXGWKVOVRXBBMTUKXBBNTUPRUQVNBHWSVKVNWPWGWGUAZSVNWGWGSSVNWGVPS
+      CXSVLZYCVFWPYBVGVNWNFGWGWGVHPVIVJVM $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
