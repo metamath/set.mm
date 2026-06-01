@@ -170900,6 +170900,21 @@ $)
       ( cfield wcel ccrg cdr isfld simprbi syl ) ABDEZBFEZCKBGELBHIJ $.
   $}
 
+  ${
+    $d x y K $.  $d x y L $.
+    drngprop.b $e |- ( Base ` K ) = ( Base ` L ) $.
+    drngprop.p $e |- ( +g ` K ) = ( +g ` L ) $.
+    drngprop.m $e |- ( .r ` K ) = ( .r ` L ) $.
+    $( If two structures have the same ring components (properties), one is a
+       division ring iff the other one is.  (Contributed by Mario Carneiro,
+       11-Oct-2013.)  (Revised by Mario Carneiro, 28-Dec-2014.) $)
+    drngprop $p |- ( K e. DivRing <-> L e. DivRing ) $=
+      ( crg wcel cbs cfv capr wtap wa cdr wceq wb aprprop tapeq1 eqid isdrngtap
+      syl pm5.32i ringprop anbi1i bitri 3bitr4i ) AFGZAHIZAJIZKZLZBFGZUGBJIZKZL
+      ZAMGBMGUJUFUMLUNUFUIUMUFUHULNUIUMOABCDEPUGUHULQTUAUFUKUMABCDEUBUCUDUGUHAU
+      GRUHRSUGULBCULRSUE $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
