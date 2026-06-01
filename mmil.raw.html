@@ -1109,6 +1109,10 @@ middle by ~ exmidssfi ).</p>
   shown at ~ pw1mapen</li>
   <li>` ( 2o ^m A ) ` represents the number of decidable subsets of ` A `
   as shown at ~ 2omapen</li>
+  <li>we cannot show that any subset of a finite set is finite
+  (by ~ exmidssfi ) but we use ` ( ~P A i^i Fin ) ` for
+  the set of finite subsets of ` A ` in places like ~ sseqn
+  and ~ fipwfi</li>
 </ul>
 
 <HR NOSHADE SIZE=1><A NAME="intuitionize"></A><B><FONT
@@ -2039,6 +2043,12 @@ equivalent (in the absence of excluded middle).</TD>
 <TD>neorian</TD>
 <TD>~ pm3.14 </TD>
 </TR>
+
+<tr>
+  <td>nabbib</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses exnal and xor3</td>
+</tr>
 
 <TR>
 <TD>nnel</TD>
@@ -3406,10 +3416,18 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
   <TD>The set.mm proof relies on resasplit</TD>
 </TR>
 
+<tr>
+  <td>fresaunres2</td>
+  <td>~ fresaunres2disj</td>
+  <td>allowing the domains of the functions to overlap
+  would presumably involve some kind of added condition</td>
+</tr>
+
 <TR>
-  <TD>fresaunres2 , fresaunres1</TD>
-  <TD><I>none</I></TD>
-  <TD>The set.mm proof relies on resasplit</TD>
+  <TD>fresaunres1</TD>
+  <td>~ fresaunres1disj</td>
+  <td>allowing the domains of the functions to overlap
+  would presumably involve some kind of added condition</td>
 </TR>
 
 <TR>
@@ -4021,6 +4039,12 @@ that we are evaluating functions within their domains.
 </tr>
 
 <tr>
+  <td>offun</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses offn</td>
+</tr>
+
+<tr>
   <td>ofc1</td>
   <td>~ ofc1g</td>
   <td>adds set existence condition</td>
@@ -4293,8 +4317,8 @@ hasn't been a need for it.</TD>
 
 <tr>
   <td>xpexcnv</td>
-  <td><i>none</i></td>
-  <td>would be provable if nonempty is changed to inhabited</td>
+  <td>~ xpexcnvm</td>
+  <td>changes nonempty to inhabited</td>
 </tr>
 
 <TR>
@@ -4381,11 +4405,202 @@ hasn't been a need for it.</TD>
 </TR>
 
 <tr>
-  <td>df-supp</td>
+  <td>supp0prc</td>
   <td><i>none</i></td>
-  <td>Because the definition is in terms of whether values map to
-  values not equal to zero, it is not clear that it would work
-  well unless the range of the function has decidable equality.</td>
+  <td>The set.mm proof uses mpondm0</td>
+</tr>
+
+<tr>
+  <td rowspan="2">suppvalbr</td>
+  <td>~ suppvalfn</td>
+  <td>in the case of a function</td>
+</tr>
+
+<tr>
+  <td><i>in general</i></td>
+  <td>the set.mm proof uses nabbib</td>
+</tr>
+
+<tr>
+  <td>fvdifsupp</td>
+  <td>~ fvdifsuppst</td>
+  <td>adds condition for stable equality</td>
+</tr>
+
+<tr>
+  <td>suppimacnvss , suppimacnv</td>
+  <td>~ suppimacnvfn</td>
+  <td>adds condition that ` F ` is a function</td>
+</tr>
+
+<tr>
+  <td>suppssdm</td>
+  <td>~ suppssdmg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>suppsnop</td>
+  <td>~ suppsnopdc</td>
+  <td>adds decidability condition</td>
+</tr>
+
+<tr>
+  <td>snopsuppss</td>
+  <td><i>none</i></td>
+  <td>presumably provable with some changes, or just
+  use ~ suppssdmg plus ~ dmsnopg</td>
+</tr>
+
+<tr>
+  <td>suppun</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses suppimacnv and to use
+  ~ suppimacnvfn instead would seem to require
+  that ` F u. G ` is a function (which might be
+  useful, for example in proving fsuppunbi )</td>
+</tr>
+
+<tr>
+  <td>ressuppssdif</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses ianor and the converse of
+  ~ ssundifim</td>
+</tr>
+
+<tr>
+  <td>extmptsuppeq</td>
+  <td><i>none</i></td>
+  <td>apparently would need a condition that ` A `
+  is a decidable subset of ` B `</td>
+</tr>
+
+<tr>
+  <td>fnsuppres</td>
+  <td><i>none</i></td>
+  <td>at least using a proof close to the set.mm proof,
+  would need ` F ` to have a codomain which includes
+  ` Z ` and has stable equality</td>
+</tr>
+
+<tr>
+  <td>fnsuppeq0</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses fnsuppres</td>
+</tr>
+
+<tr>
+  <td>suppss</td>
+  <td>~ suppssdc</td>
+  <td>adds decidability condition</td>
+</tr>
+
+<tr>
+  <td>suppssr</td>
+  <td>~ suppssrst</td>
+  <td>adds condition for stable equality on the codomain
+  of the function (and that the zero is an element of
+  that codomain)</td>
+</tr>
+
+<tr>
+  <td>suppssrg</td>
+  <td>~ suppssrgst</td>
+  <td>adds condition for stable equality on the codomain
+  of the function (and that the zero is an element of
+  that codomain)</td>
+</tr>
+
+<tr>
+  <td>suppssov1</td>
+  <td><i>none</i></td>
+  <td>the current ~ suppssov1 , although similar in general
+  intent, is different enough that some adaptation will be
+  needed</td>
+</tr>
+
+<tr>
+  <td>suppssov2</td>
+  <td><i>none</i></td>
+  <td>if we get suppssov1 this should work with a similar
+  approach</td>
+</tr>
+
+<tr>
+  <td>suppssof1</td>
+  <td><i>none</i></td>
+  <td>the current ~ suppssof1 , although similar in general
+  intent, is different enough that some adaptation will be
+  needed</td>
+</tr>
+
+<tr>
+  <td>suppss2</td>
+  <td><i>none</i></td>
+  <td>apparently would need an added condition such
+  as ` A. x e. A DECID x e. W `</td>
+</tr>
+
+<tr>
+  <td>suppsssn</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses suppss2</td>
+</tr>
+
+<tr>
+  <td>suppssfv</td>
+  <td>~ suppssfvg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>suppofssd</td>
+  <td><i>none</i></td>
+  <td>Something along these lines should be possible but
+  the set.mm proof uses stable equality on ` B ` ,
+  fnfvof , and suppss .  It also seems like there may need
+  to be a closure or set existence condition on ` X ` .</td>
+</tr>
+
+<tr>
+  <td>suppofss1d</td>
+  <td>~ suppofss1dcl</td>
+  <td>adds closure hypothesis for ` X ` (if we wanted a
+  hypothesis that instead said ` X ` were a set, that would
+  probably suffice)</td>
+</tr>
+
+<tr>
+  <td>suppofss2d</td>
+  <td>~ suppofss2dcl</td>
+  <td>adds closure hypothesis for ` X ` (if we wanted a
+  hypothesis that instead said ` X ` were a set, that would
+  probably suffice)</td>
+</tr>
+
+<tr>
+  <td>suppco</td>
+  <td>~ suppcofn</td>
+  <td>adds condition that ` F ` and ` G ` are functions</td>
+</tr>
+
+<tr>
+  <td>suppcoss</td>
+  <td><i>none</i></td>
+  <td>apparently would need additional decidability
+  conditions</td>
+</tr>
+
+<tr>
+  <td>supp0cosupp0</td>
+  <td>~ supp0cosupp0fn</td>
+  <td>adds condition that ` F ` and ` G ` are functions</td>
+</tr>
+
+<tr>
+  <td>imacosupp</td>
+  <td>~ imacosuppfn</td>
+  <td>adds condition that ` F ` and ` G ` are functions</td>
 </tr>
 
 <tr>
@@ -4903,15 +5118,9 @@ by ~ exmidsbth </TD>
 </TR>
 
 <TR>
-  <TD>mapunen</TD>
-  <TD><I>none</I></TD>
-  <TD>The set.mm proof relies on fresaunres1 and fresaunres2 .</TD>
-</TR>
-
-<TR>
   <TD>map2xp</TD>
   <TD><I>none</I></TD>
-  <TD>The set.mm proof relies on mapunen</TD>
+  <TD>may be possible now that we have mapunen</TD>
 </TR>
 
 <TR>
@@ -5283,7 +5492,9 @@ that rabfi implies excluded middle</TD>
 <TR>
   <TD>pwfi</TD>
   <TD><I>none</I></TD>
-  <TD>Implies excluded middle per ~ pw1fin</TD>
+  <TD>Implies excluded middle per ~ pw1fin .
+  For the case of considering only finite subsets,
+  see ~ fipwfi .</TD>
 </TR>
 
 <tr>
@@ -5301,17 +5512,208 @@ that rabfi implies excluded middle</TD>
   be one to one or some other condition.</TD>
 </TR>
 
-<tr>
-  <td>df-fsupp</td>
-  <td><i>none</i></td>
-  <td>the definition is in terms of df-supp</td>
-</tr>
-
 <TR>
   <TD>fisuppfi</TD>
   <TD>~ preimaf1ofi</TD>
   <TD>The set.mm proof of fisuppfi uses ssfi</TD>
 </TR>
+
+<tr>
+  <td>fidmfisupp</td>
+  <td><i>none</i></td>
+  <td>additional decidability conditions would apparently
+  be needed; the set.mm proof uses fisuppfi</td>
+</tr>
+
+<tr>
+  <td>finnzfsuppd</td>
+  <td><i>none</i></td>
+  <td>additional conditions would apparently be needed</td>
+</tr>
+
+<tr>
+  <td>fdmfisuppfi</td>
+  <td><i>none</i></td>
+  <td>additional conditions would apparently be needed</td>
+</tr>
+
+<tr>
+  <td>fdmfifsupp</td>
+  <td><i>none</i></td>
+  <td>additional conditions would apparently be needed</td>
+</tr>
+
+<tr>
+  <td>fsuppmptdm</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses fdmfifsupp</td>
+</tr>
+
+<tr>
+  <td>fndmfisuppfi</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses fdmfisuppfi</td>
+</tr>
+
+<tr>
+  <td>fndmfifsupp</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses fdmfifsupp</td>
+</tr>
+
+<tr>
+  <td>suppssfifsupp</td>
+  <td><i>none</i></td>
+  <td>although we could prove a modified version of this,
+  perhaps it is easier for proofs just to use
+  ~ ssfidc plus ~ funisfsupp</td>
+</tr>
+
+<tr>
+  <td>fsuppsssupp</td>
+  <td><i>none</i></td>
+  <td>we'd apparently need to be dealing with a decidable subset
+  or some other change to the theorem</td>
+</tr>
+
+<tr>
+  <td>fsuppsssuppgd</td>
+  <td><i>none</i></td>
+  <td>we'd apparently need to be dealing with a decidable subset
+  or some other change to the theorem</td>
+</tr>
+
+<tr>
+  <td>fsuppss</td>
+  <td><i>none</i></td>
+  <td>we'd apparently need to be dealing with a decidable subset
+  or some other change to the theorem</td>
+</tr>
+
+<tr>
+  <td>fsuppssov1</td>
+  <td><i>none</i></td>
+  <td>First step is perhaps to figure out
+  suppssov1 (get our version of suppssov1 similar to
+  the set.mm one and so on). The set.mm proof also
+  uses fsuppsssuppgd .</td>
+</tr>
+
+<tr>
+  <td>fsuppun</td>
+  <td><i>none</i></td>
+  <td>presumably needs additional conditions</td>
+</tr>
+
+<tr>
+  <td>fsuppunfi</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses unfi</td>
+</tr>
+
+<tr>
+  <td>fsuppunbi</td>
+  <td><i>none</i></td>
+  <td>presumably needs additional conditions</td>
+</tr>
+
+<tr>
+  <td>snopfsupp</td>
+  <td>~ snopfsuppdc</td>
+  <td>adds a decidability condition</td>
+</tr>
+
+<tr>
+  <td>funsnfsupp</td>
+  <td><i>none</i></td>
+  <td>would apparently be provable if ` DECID Y = Z ` were
+  added</td>
+</tr>
+
+<tr>
+  <td>fsuppres</td>
+  <td><i>none</i></td>
+  <td>presumably needs additional conditions</td>
+</tr>
+
+<tr>
+  <td>fmptssfisupp</td>
+  <td><i>none</i></td>
+  <td>presumably needs additional conditions</td>
+</tr>
+
+<tr>
+  <td>ressuppfi</td>
+  <td><i>none</i></td>
+  <td>although the set.mm proof will not work as-is, the
+  ` ( dom F \ B ) e. Fin ` condition may go a significant
+  part of the way towards making this provable</td>
+</tr>
+
+<tr>
+  <td>resfsupp</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses ressuppfi</td>
+</tr>
+
+<tr>
+  <td>resfifsupp</td>
+  <td><i>none</i></td>
+  <td>presumably needs additional conditions</td>
+</tr>
+
+<tr>
+  <td>fsuppmptif</td>
+  <td><i>none</i></td>
+  <td>presumably needs a condition like
+  ` A. k e. A DECID k e. D ` and perhaps others</td>
+</tr>
+
+<tr>
+  <td>sniffsupp</td>
+  <td><i>none</i></td>
+  <td>would apparently be provable with additional
+  conditions for decidability and/or set existence</td>
+</tr>
+
+<tr>
+  <td>fsuppcolem</td>
+  <td><i>none</i></td>
+  <td>not needed; see fsuppco</td>
+</tr>
+
+<tr>
+  <td>fsuppco</td>
+  <td>~ fsuppcorn</td>
+  <td>adds a set existence condition and more importantly
+  the ` ( F supp Z ) C_ ran G ` condition</td>
+</tr>
+
+<tr>
+  <td>fsuppco2</td>
+  <td><i>none</i></td>
+  <td>perhaps would need additional conditions such as
+  those at ~ fsuppcorn</td>
+</tr>
+
+<tr>
+  <td>fsuppcor</td>
+  <td><i>none</i></td>
+  <td>perhaps would need additional conditions such as
+  those at ~ fsuppcorn</td>
+</tr>
+
+<tr>
+  <td>mapfien and lemmas</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses fsuppcor and fsuppco</td>
+</tr>
+
+<tr>
+  <td>mapfien2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses mapfien and enfixsn</td>
+</tr>
 
 <tr>
   <td>intrnfi</td>
@@ -5940,7 +6342,7 @@ that rabfi implies excluded middle</TD>
 <tr>
   <td>mapdjuen</td>
   <td><i>none</i></td>
-  <td>the set.mm proof relies on mapunen</td>
+  <TD>may be possible now that we have mapunen</TD>
 </tr>
 
 <tr>
@@ -7364,14 +7766,6 @@ favor of theorems in deduction form.</TD>
 <TD>nnunb</TD>
 <TD><I>none</I></TD>
 <TD>Presumably provable from ~ arch but unused in set.mm.</TD>
-</TR>
-
-<TR>
-<TD>frnnn0supp , frnnn0fsupp</TD>
-<TD>~ nn0supp </TD>
-<TD>iset.mm does not yet have either the notation, or in some
-cases the theorems, related to the support of a function or
-a fintely supported function.</TD>
 </TR>
 
 <TR>
@@ -9534,8 +9928,8 @@ or not.</TD>
 <TR>
   <TD>hashmap</TD>
   <TD><I>none</I></TD>
-  <TD>Probably provable but the set.mm proof uses mapunen ,
-  mapfi , and mapsnend</TD>
+  <TD>we may now have the theorems needed to prove this with
+  a proof similar to the set.mm proof</TD>
 </TR>
 
 <TR>
@@ -9584,8 +9978,9 @@ or not.</TD>
 
 <TR>
   <TD>hashbc</TD>
-  <TD><I>none</I></TD>
-  <TD>The set.mm proof uses pwfi and ssfi .</TD>
+  <TD>~ hashfibc</TD>
+  <TD>changes the notation for subsets of a given size
+  (see ~ sseqn for more on the notation)</TD>
 </TR>
 
 <TR>
@@ -10139,6 +10534,117 @@ or not.</TD>
 <tr>
   <td>s3fv2</td>
   <td>~ s3fv2g</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s3len , s4fv0 , s4fv1 , s4fv2 , s4fv3 , s4len , s5len ,
+  s6len , s7len , s8len , lsws2 , lsws3 , lsws4</td>
+  <td><i>none</i></td>
+  <td>apparently provable with set existence conditions
+  added</td>
+</tr>
+
+<tr>
+  <td>s2prop , s3tpop , s4prop , s3fn</td>
+  <td><i>none</i></td>
+  <td>apparently provable</td>
+</tr>
+
+<tr>
+  <td>funcnvs1</td>
+  <td><i>none</i></td>
+  <td>apparently provable with set existence conditions
+  added</td>
+</tr>
+
+<tr>
+  <td>funcnvs2 , funcnvs3 , funcnvs4 , s2f1o , f1oun2prg ,
+  s4f1o , s4dom , s2co , s3co</td>
+  <td><i>none</i></td>
+  <td>apparently provable</td>
+</tr>
+
+<tr>
+  <td>s0s1</td>
+  <td>~ s1cl plus ~ ccatlid</td>
+</tr>
+
+<tr>
+  <td>s1s2</td>
+  <td>~ s1s2d</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s1s3</td>
+  <td>~ s1s3d</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s1s4</td>
+  <td>~ s1s4d</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s1s5</td>
+  <td>~ s1s5d</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s1s6</td>
+  <td>~ s1s6d</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s1s7</td>
+  <td>~ s1s7d</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s2s2</td>
+  <td>~ s2s2d</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s4s2</td>
+  <td>~ s4s2d</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s4s3</td>
+  <td>~ s4s3d</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s4s4</td>
+  <td>~ s4s4d</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s3s4</td>
+  <td>~ s3s4d</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s2s5</td>
+  <td>~ s2s5d</td>
+  <td>adds set existence conditions</td>
+</tr>
+
+<tr>
+  <td>s5s2</td>
+  <td>~ s5s2d</td>
   <td>adds set existence conditions</td>
 </tr>
 
@@ -12138,10 +12644,14 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>gsumz</td>
+  <td rowspan="2">gsumz</td>
   <td>~ gsumfzz</td>
-  <td>the group sum needs to be indexed by
-  consecutive integers</td>
+  <td>when indexed by consecutive integers</td>
+</tr>
+
+<tr>
+  <td>~ gfsumz</td>
+  <td>when indexed by a finite set</td>
 </tr>
 
 <tr>
@@ -12582,9 +13092,19 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>srgsummulcr , sgsummulcl</td>
+  <td>srgsummulcr</td>
   <td><i>none</i></td>
-  <td>depend on finSupp (df-fsupp)</td>
+  <td>to use ` gsum ` (via ~ gsumfzmhm2 ) would need to
+  be indexed by consecutive integers, or to use ` gfsum `
+  would need to be indexed by a finite set</td>
+</tr>
+
+<tr>
+  <td>sgsummulcl</td>
+  <td><i>none</i></td>
+  <td>to use ` gsum ` (via ~ gsumfzmhm2 ) would need to
+  be indexed by consecutive integers, or to use ` gfsum `
+  would need to be indexed by a finite set</td>
 </tr>
 
 <tr>
@@ -12949,13 +13469,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>rrgsupp</td>
-  <td><i>none</i></td>
-  <td>even if we have notation(s) for support, support theorems
-  will not necessarily behave as in set.mm</td>
-</tr>
-
-<tr>
   <td>isdomn5</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses excluded middle and it seems unlikely
@@ -13111,7 +13624,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>lcomfsupp</td>
   <td><i>none</i></td>
-  <td>we do not have finSupp</td>
+  <td>the set.mm proof uses fnfvof , suppssr , suppss ,
+  and ssfi</td>
 </tr>
 
 <tr>
@@ -13123,14 +13637,21 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>gsumvsmul</td>
   <td><i>none</i></td>
-  <td>we do not have finSupp or the ` gsum ` theorems
-  used in the set.mm proof</td>
+  <td>to use ` gsum ` (via ~ gsumfzmhm2 ) would need to
+  be indexed by consecutive integers, or to use ` gfsum `
+  would need to be indexed by a finite set</td>
 </tr>
 
 <tr>
-  <td>mptscmfsupp0 , mptscmfsuppd</td>
+  <td>mptscmfsupp0</td>
   <td><i>none</i></td>
-  <td>we do not have finSupp</td>
+  <td>the set.mm proof uses suppssfifsupp</td>
+</tr>
+
+<tr>
+  <td>mptscmfsuppd</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses mptscmfsupp0</td>
 </tr>
 
 <tr>
@@ -13781,13 +14302,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>psrbagfsupp</td>
-  <td><i>none</i></td>
-  <td>we do not currently have finSupp and the whole finitely
-  supported concept is more limited without excluded middle</td>
-</tr>
-
-<tr>
   <td>snifpsrbag</td>
   <td><i>none</i></td>
   <td>we do not have some of the theorems used in this proof
@@ -13796,46 +14310,52 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>psrbaglesupp</td>
-  <td>~ psrbaglesuppg</td>
-  <td>adds set existence condition</td>
+  <td rowspan="2">psrbagaddcl</td>
+  <td>~ psrbagaddclfi</td>
+  <td>for a finite index set</td>
 </tr>
-
 <tr>
-  <td>psrbaglecl</td>
-  <td><i>none</i></td>
-  <td>The set.mm proof uses ssfi . We might have enough
-  decidability (via ~ elnndc ) to overcome this.</td>
-</tr>
-
-<tr>
-  <td>psrbagaddcl</td>
-  <td><i>none</i></td>
-  <td>The set.mm proof uses ssfi and various theorems involving
-  the support of a function. The question is whether we have
-  enough decidability (for example via ~ elnndc ) to overcome
-  this.</td>
-</tr>
-
-<tr>
-  <td>psrbagcon</td>
-  <td><i>none</i></td>
-  <td>The set.mm proof uses ssfi . Perhaps a similar proof
-  would work but using ~ ssfidc (the decidability might be
-  somewhat similar to the proof of ~ psr1clfi ).</td>
+  <td><i>in general</i></td>
+  <td>the set.mm proof uses fsuppunfi and replacing it
+  would seem to need some additional condition (such as
+  the support of the two functions being disjoint).</td>
 </tr>
 
 <tr>
   <td>psrbaglefi</td>
   <td><i>none</i></td>
-  <td>The set.mm proof uses psrbaglecl and theorems involving
+  <td>The set.mm proof uses theorems involving
   the support of a function which we don't have</td>
 </tr>
 
 <tr>
-  <td>psrbagconcl</td>
+  <td>psrbagleadd1</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses psrbagcon</td>
+  <td>the set.mm proof uses psrbagaddcl</td>
+</tr>
+
+<tr>
+  <td>gsumbagdiaglem</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof would apparently work with
+  small changes</td>
+</tr>
+
+<tr>
+  <td>gsumbagdiag</td>
+  <td><i>none</i></td>
+  <td>Apparently would be provable if ` gsum ` is changed
+  to ` gfsum ` . We would seem to need a ` gfsum ` version
+  of gsumcom2 .</td>
+</tr>
+
+<tr>
+  <td>psrass1lem</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof uses suppssdm , 	suppssfifsupp ,
+  gsum2d2 , gsumf1o , psrbaglefi ,
+  gsumbagdiaglem , and gsumbagdiag . ` gsum ` would
+  presumably need to be changed to ` gfsum ` .</td>
 </tr>
 
 <tr>
@@ -16405,6 +16925,31 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>cvxcl</td>
+  <td><i>none</i></td>
+  <td>The closest we have seems to be ~ lincmble .  The
+  big obstacle to proving cvxcl is that we don't know
+  which of ` X ` and ` Y ` are larger. set.mm solves
+  this via real number trichotomy</td>
+</tr>
+
+<tr>
+  <td id="missing-amgmlem">scvxcvx , jensenlem1 ,
+  jensenlem2 , jensen , amgmlem</td>
+  <td><i>none</i></td>
+  <td>the set.mm proofs depend on cvxcl</td>
+</tr>
+
+<tr>
+  <td>amgm</td>
+  <td><i>none</i></td>
+  <td>This extends amgmlem from positive reals to
+  nonnegative reals. It seems unlikely that we'd
+  be able to do that in the absence of real number
+  trichotomy or something similar.</td>
+</tr>
+
+<tr>
   <td>basellem1</td>
   <td><i>none</i></td>
   <td>the set.mm proof should work with small changes</td>
@@ -18275,11 +18820,21 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>konigsberg</td>
-  <td><i>none</i></td>
-  <td>we don't have a complete list of what this proof depends on,
-  but here's a partial list of (direct or indirect) dependencies of the
-  set.mm proof: eulerpath</td>
+  <td>konigsbergiedgw</td>
+  <td>~ konigsbergiedgwen</td>
+  <td>changes how we say that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>konigsbergssiedgwpr</td>
+  <td>~ konigsbergssiedgwpren</td>
+  <td>changes how we say that a set has two elements</td>
+</tr>
+
+<tr>
+  <td>konigsbergssiedgw</td>
+  <td>~ konigsbergssiedgwen</td>
+  <td>changes how we say that a set has one or two elements</td>
 </tr>
 
 <tr>
@@ -18308,8 +18863,73 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>ballotth</td>
+  <td><i>none</i></td>
+  <td>We expect to state this in terms of finite subsets
+  of an integer range (where set.mm uses subsets of that
+  integer range), as seen at ~ ballotfilemofi</td>
+</tr>
+
+<tr>
+  <td id="missing-eulerpart">eulerpart</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof uses, directly or indirectly,
+  df-ind , indf1ofs, funisfsupp . fcobijfs , indf1o ,
+  mapfien , fsuppco and perhaps others.
+  There may be enough decidability for the indicator
+  function usages to be adaptable.</td>
+</td>
+</tr>
+
+<tr>
   <td>irrdiff</td>
   <td>~ apdiff</td>
+</tr>
+
+<tr>
+  <td>irrapx1 and lemmas</td>
+  <td><i>none</i></td>
+  <td>There are parts about the maximum of two real numbers
+  which should work (but with a change in notation).  There
+  are parts about modulus on real numbers which may need to
+  specify irrational numbers or something.  The use of
+  ctbnfien may be adaptable as the subset involved appears
+  to be a decidable subset.  Irrational presumably needs to
+  be expressed as being apart from any rational number.</td>
+</tr>
+
+<tr>
+  <td>pellexlem4</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof uses irrapx1 .  The use of
+  sbth can perhaps be replaced by ~ ctinf .</td>
+</tr>
+
+<tr>
+  <td>pellexlem5</td>
+  <td><i>none</i></td>
+  <td>We'll need to figure out whether there is a version
+  of fiphp3d which works (or a way to replace it).  There's
+  also work to be done on the floor functions (which
+  probably involve some theorems - ~ nonsq or something
+  along those lines - which let us divide into two cases
+  both of which work - for example ~ flqcl and ~ flapcl ).
+  There's a usage of sbth which will need to be looked into.</td>
+</tr>
+
+<tr>
+  <td>pellexlem6</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof would apparently work with small
+  changes</td>
+</tr>
+
+<tr>
+  <td>pellex</td>
+  <td><i>none</i></td>
+  <td>There are some needed changes around set size
+  and fphpd . The set.mm proof uses pellexlem5
+  and pellexlem6 .</td>
 </tr>
 
 </TABLE>
@@ -18441,9 +19061,8 @@ of Transcendental Numbers</td>
 
   <tr>
     <td>35.  Taylor's Theorem</td>
-    <td>There are a number of things to develop before
-    this is ready to formalize but it seems like it might
-    be within reach.</td>
+    <td>The set.mm proof depends on df-tsms , df-flf, df-tayl ,
+    df-dvn , and df-dgr .</td>
   </tr>
 
   <tr>
@@ -18453,10 +19072,14 @@ of Transcendental Numbers</td>
 
   <tr>
     <td>38.  Arithmetic Mean/Geometric Mean</td>
-    <td>We have ~ amgm2 but assuming we want the version
-    for finite sets seen in set.mm, we can probably just
-    use ` sum_ ` ( ~ df-sumdc ) and ` prod_ ` ( ~ df-proddc )
-    notation rather than navigating constructive fields.
+    <td>We have ~ amgm2 ; for the version for finite sets
+    seen in set.mm see <a
+    href="#missing-amgmlem" >entry for theorem amgmlem
+    above</a> .  As for notation we could
+    use the ` gfsum ` ( ~ df-gfsum ) notation (roughly as
+    set.mm does). We could also make a version
+    using the ` sum_ ` ( ~ df-sumdc ) and ` prod_ `
+    ( ~ df-proddc ) notations.
     In set.mm the numbers being added/multiplied are
     nonnegative reals and we probably have to restrict
     to positive reals because the set.mm proof assumes
@@ -18471,7 +19094,11 @@ of Transcendental Numbers</td>
 
   <tr>
     <td>45.  The Partition Theorem</td>
-    <td>The set.mm proof uses df-ind and supp .</td>
+    <td>The set.mm proof would need adaptation in areas
+    including use of the indicator function and various
+    theorems related to the support of a function.
+    See the <a href="#missing-eulerpart" >eulerpart entry
+    above</a> for more detailed notes.</td>
   </tr>
 
   <tr>
@@ -18508,12 +19135,6 @@ of Transcendental Numbers</td>
   </tr>
 
   <tr>
-    <td>54. The Konigsberg Bridge Problem</td>
-    <td>Depends on graph theory definitions and theorems,
-    and words over a set, but nothing that looks difficult.</td>
-  </tr>
-
-  <tr>
     <td>55.  Product of Segments of Chords</td>
     <td>There's a lot to figure out in terms of whether we
     can use complex numbers to represent the plane, and
@@ -18525,14 +19146,6 @@ of Transcendental Numbers</td>
     <td>There's a lot to figure out in terms of whether we
     can use complex numbers to represent the plane, and
     the complex logarithm in particular.</td>
-  </tr>
-
-  <tr>
-    <td>58.  Formula for the Number of Combinations</td>
-    <td>The set.mm proof is not especially long proof.
-    It may require a bit of a closer look given the uses
-    of subsets, but it seems like it might intuitionize
-    without much trouble.</td>
   </tr>
 
   <tr>
@@ -19028,6 +19641,13 @@ Springer-Verlag, New York, second edition (1982) [QA248.T136 1982].</LI>
 Formalization of Predicate Logic with Identity,&quot; <I>Archiv f&uuml;r
 Mathematische Logik und Grundlagenforschung,</I> 7:61-79 (1965)
 [QA.A673].</LI>
+
+<LI>
+<A NAME="vandenDries"></A> [vandenDries] van den Dries,  Lou,
+&quot;Recursion Theory Notes, Fall 2011,&quot; archived at <A
+HREF="https://web.archive.org/web/20221003183835/https://faculty.math.illinois.edu/~~vddries/recursion.pdf"
+>https://web.archive.org/web/20221003183835/https://faculty.math.illinois.edu/~~vddries/recursion.pdf</A>.
+</LI>
 
 <LI><A NAME="WhiteheadRussell"></A> [WhiteheadRussell] Whitehead, Alfred
 North, and Bertrand Russell, <I>Principia Mathematica to *56,</I>
