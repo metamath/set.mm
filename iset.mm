@@ -170925,6 +170925,12 @@ $)
       ALABCEDMN $.
   $}
 
+  $( A division ring is a nonzero ring.  (Contributed by Stefan O'Rear,
+     24-Feb-2015.) $)
+  drngnzr $p |- ( R e. DivRing -> R e. NzRing ) $=
+    ( cdr wcel crg cur cfv c0g wne cnzr drngring eqid drngunz isnzr sylanbrc )
+    ABCADCAEFZAGFZHAICAJAOPPKZOKZLAOPRQMN $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
