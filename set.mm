@@ -426343,14 +426343,6 @@ $)
       JKLMINDEBCOP $.
   $}
 
-  ${
-    cutoz.1 $e |- ( ph -> A e. No ) $.
-    $( The cut of ` A -s 1s ` and ` A +s 1s ` always produces an omnific
-       integer.  (Contributed by Scott Fenton, 16-May-2026.) $)
-    cutoz $p |- ( ph -> ( { ( A -s 1s ) } |s { ( A +s 1s ) } ) e. Oz ) $=
-      (  ) ? $.
-  $}
-
   $( Lemma for ~ nobtwnoz .  (Contributed by Scott Fenton, 16-May-2026.) $)
   nobtwnozlem1 $p |- ( ( A e. No /\ ( B e. Oz /\ C e. Oz ) /\
      ( B <_s A /\ A <s ( C +s 1s ) ) ) -> B <_s C ) $=
