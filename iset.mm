@@ -170915,6 +170915,16 @@ $)
       GRUHRSUGULBCULRSUE $.
   $}
 
+  ${
+    drngunz.z $e |- .0. = ( 0g ` R ) $.
+    drngunz.u $e |- .1. = ( 1r ` R ) $.
+    $( A division ring's unity is different from its zero.  (Contributed by NM,
+       8-Sep-2011.) $)
+    drngunz $p |- ( R e. DivRing -> .1. =/= .0. ) $=
+      ( cdr wcel clring cnzr wne drnglring lringnzr nzrnz 3syl ) AFGAHGAIGBCJAK
+      ALABCEDMN $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
