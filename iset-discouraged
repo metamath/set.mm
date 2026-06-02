@@ -77,6 +77,7 @@
 "ax-addf" is used by "cnfldplusf".
 "ax-addrcl" is used by "readdcl".
 "ax-arch" is used by "arch".
+"ax-bj-d0cl" is used by "bj-d0clsepcl".
 "ax-caucvg" is used by "caucvgre".
 "ax-cnex" is used by "cnex".
 "ax-cnre" is used by "cnre".
@@ -383,6 +384,7 @@ New usage of "ax-addcom" is discouraged (1 uses).
 New usage of "ax-addf" is discouraged (4 uses).
 New usage of "ax-addrcl" is discouraged (1 uses).
 New usage of "ax-arch" is discouraged (1 uses).
+New usage of "ax-bj-d0cl" is discouraged (1 uses).
 New usage of "ax-caucvg" is discouraged (1 uses).
 New usage of "ax-cnex" is discouraged (1 uses).
 New usage of "ax-cnre" is discouraged (1 uses).
@@ -416,6 +418,7 @@ New usage of "axcaucvg" is discouraged (0 uses).
 New usage of "axcnex" is discouraged (1 uses).
 New usage of "axcnre" is discouraged (0 uses).
 New usage of "axdistr" is discouraged (0 uses).
+New usage of "axi12" is discouraged (0 uses).
 New usage of "axi2m1" is discouraged (0 uses).
 New usage of "axicn" is discouraged (0 uses).
 New usage of "axltirr" is discouraged (1 uses).
@@ -447,6 +450,7 @@ New usage of "bj-axempty" is discouraged (0 uses).
 New usage of "bj-axempty2" is discouraged (0 uses).
 New usage of "bj-axemptylem" is discouraged (2 uses).
 New usage of "bj-charfundcALT" is discouraged (0 uses).
+New usage of "bj-d0clsepcl" is discouraged (0 uses).
 New usage of "bj-el2oss1o" is discouraged (0 uses).
 New usage of "bj-nn0sucALT" is discouraged (0 uses).
 New usage of "bj-nndcALT" is discouraged (0 uses).
@@ -488,6 +492,7 @@ New usage of "fnexALT" is discouraged (0 uses).
 New usage of "fprodsplitdc" is discouraged (5 uses).
 New usage of "funop" is discouraged (1 uses).
 New usage of "funopsn" is discouraged (1 uses).
+New usage of "hbnOLD" is discouraged (0 uses).
 New usage of "hbs1" is discouraged (5 uses).
 New usage of "homndx" is discouraged (1 uses).
 New usage of "idALT" is discouraged (0 uses).
@@ -640,6 +645,7 @@ Proof modification of "dvelimALT" is discouraged (158 steps).
 Proof modification of "exmidfodomrlemrALT" is discouraged (714 steps).
 Proof modification of "findset" is discouraged (96 steps).
 Proof modification of "fnexALT" is discouraged (111 steps).
+Proof modification of "hbnOLD" is discouraged (17 steps).
 Proof modification of "idALT" is discouraged (26 steps).
 Proof modification of "idi" is discouraged (1 steps).
 Proof modification of "idref" is discouraged (97 steps).

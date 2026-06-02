@@ -92,9 +92,19 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+ 4-May-26 fvcod       [same]      Moved from GS's mathbox to main set.mm
+ 4-May-26 fsneq       [same]      Moved from GS's mathbox to main set.mm
+ 4-May-26 f1o2d2      mpof1o2d    Moved from SN's mathbox to main set.mm
+ 4-May-26 rimrcl1     [same]      Moved from SN's mathbox to main set.mm
+ 4-May-26 rimrcl2     [same]      Moved from SN's mathbox to main set.mm
+ 4-May-26 rimcnv      [same]      Moved from SN's mathbox to main set.mm
+ 4-May-26 ricsym      [same]      Moved from SN's mathbox to main set.mm
+ 4-May-26 psrbagres   [same]      Moved from SN's mathbox to main set.mm
+ 4-May-26 mplcrngd    [same]      Moved from SN's mathbox to main set.mm
+ 4-May-26 ~ evlscl to ~ selvmul : Moved from SN's mathbox to main set.mm
 11-Apr-26 muldivdid   [same]      Moved from TA's mathbox to main set.mm
 11-Apr-26 elfzod      [same]      Moved from GS's mathbox to main set.mm
-11-Apr-26 t1e1ALT     [same]      Moved from SN's mathbox to main set.mm
+11-Apr-26 1t1e1ALT    [same]      Moved from SN's mathbox to main set.mm
 11-Apr-26 nnadd1com   [same]      Moved from SN's mathbox to main set.mm
 11-Apr-26 nnaddcom    [same]      Moved from SN's mathbox to main set.mm
 11-Apr-26 nnaddcomli  [same]      Moved from SN's mathbox to main set.mm
