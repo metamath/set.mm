@@ -116196,6 +116196,21 @@ $)
     RWJIFZWKEFZUUIVRWRRQEFZWJIFUUKUULGWJIVLVNVRRQWJUUHYIYSOVMVRUUJWJWKEVRWJYSVK
     NVCNVRWJWKWLYSYTUUBVGVOTVA $.
 
+  $( If a real number equals its square, it must be 0 or 1.  (Contributed by
+     Jim Kingdon, 2-Jun-2026.) $)
+  resq01 $p |- ( A e. RR -> ( ( A ^ 2 ) = A <-> ( A = 0 \/ A = 1 ) ) ) $=
+    ( cr wcel c2 cexp co wceq cc0 c1 wo clt wi wa cdiv cmul simpll recnd eqtr3d
+    wbr mpbird cc sqval syl simpr simplr gt0ap0d divmulapd dividapd olcd muls1d
+    ex cmin mulcld subeq0bd eqtr2d 0cnd 1red sublt0d lt0ap0d divmulap3d div0apd
+    resubcld orcd 0lt1 0re 1re axltwlin mp3an12 mpi mpjaodan sq0 id 3eqtr4a sq1
+    oveq1 jaoi impbid1 ) ABCZADEFZAGZAHGZAIGZJZVRHAKSZVTWCLAIKSZVRWDMZVTWCWFVTM
+    ZWBWAWGAANFZAIWGWHAGAAOFZAGWGVSWIAWGAUACZVSWIGZWGAVRWDVTPZQZAUBZUCWFVTUDRWG
+    AAAWMWMWMWGAWLVRWDVTUEUFZUGTWGAWMWOUHRUIUKVRWEMZVTWCWPVTMZWAWBWQHAIULFZNFZA
+    HWQWSAGHAWROFZGWQWTWIAULFHWQAAWQAVRWEVTPZQZXBUJWQWIAWQAAXBXBUMWQVSWIAWQWJWK
+    XBWNUCWPVTUDRUNUOWQHAWRWQUPXBWQWRWQAIXAWQUQZVBZQZWQWRXDWQWRHKSWEVRWEVTUEWQA
+    IXAXCURTUSZUTTWQWRXEXFVARVCUKVRHIKSZWDWEJZVDHBCIBCVRXGXHLVEVFHIAVGVHVIVJWAV
+    TWBWAHDEFHVSAVKAHDEVOWAVLVMWBIDEFIVSAVNAIDEVOWBVLVMVPVQ $.
+
   $( An integer is even iff its square is even.  (Contributed by Mario
      Carneiro, 12-Sep-2015.) $)
   zesq $p |- ( N e. ZZ ->
