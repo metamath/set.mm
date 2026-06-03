@@ -76194,6 +76194,32 @@ $)
   $}
 
   ${
+    $d A x y z $.  $d R x y z $.  $d S x y z $.
+    $( Equality theorem for apartness predicate.  (Contributed by Jim Kingdon,
+       3-Jun-2026.) $)
+    papeq1 $p |- ( R = S -> ( R Ap A <-> S Ap A ) ) $=
+      ( vx vy vz wss cv wbr wn wral wa wi breq ralbidv anbi12d imbi12d 2ralbidv
+      wo wap wceq cxp sseq1 notbid orbi12d df-pap 3bitr4g ) BCUAZBAAUBZGZDHZUKB
+      IZJZDAKZLZUKEHZBIZUPUKBIZMZEAKDAKZUQUKFHZBIZUPVABIZSZMZFAKZEAKDAKZLZLCUIG
+      ZUKUKCIZJZDAKZLZUKUPCIZUPUKCIZMZEAKDAKZVNUKVACIZUPVACIZSZMZFAKZEAKDAKZLZL
+      ABTACTUHUOVMVHWDUHUJVIUNVLBCUIUCUHUMVKDAUHULVJUKUKBCNUDOPUHUTVQVGWCUHUSVP
+      DEAAUHUQVNURVOUKUPBCNZUPUKBCNQRUHVFWBDEAAUHVEWAFAUHUQVNVDVTWEUHVBVRVCVSUK
+      VABCNUPVABCNUEQORPPDEFABUFDEFACUFUG $.
+  $}
+
+  ${
+    $d R x y z $.  $d A x y z $.  $d B x y z $.
+    $( Equality theorem for apartness predicate.  (Contributed by Jim Kingdon,
+       3-Jun-2026.) $)
+    papeq2 $p |- ( A = B -> ( R Ap A <-> R Ap B ) ) $=
+      ( vx vy vz wceq cxp wss cv wbr wn wral wa wi wap raleq anbi12d raleqbi1dv
+      df-pap wo id sqxpeqd sseq2d 3bitr4g ) ABGZCAAHZIZDJZUICKLZDAMZNZUIEJZCKZU
+      MUICKOZEAMZDAMZUNUIFJZCKUMURCKUAOZFAMZEAMZDAMZNZNCBBHZIZUJDBMZNZUOEBMZDBM
+      ZUSFBMZEBMZDBMZNZNACPBCPUFULVGVCVMUFUHVEUKVFUFUGVDCUFABUFUBUCUDUJDABQRUFU
+      QVIVBVLUPVHDABUOEABQSVAVKDABUTVJEABUSFABQSSRRDEFACTDEFBCTUE $.
+  $}
+
+  ${
     $d A x y z $.  $d R x y z $.  $d X x $.
     $( An apartness is irreflexive.  (Contributed by Jim Kingdon,
        27-May-2026.) $)
@@ -204698,8 +204724,8 @@ $)
 
        <tr><th>Abbreviation</th><th>Mnenomic/Meaning</th><th>Source</th>
        <th>Expression</th><th>Syntax?</th><th>Example(s)</th></tr>
-       <tr><td>ap</td><td>apart</td><td> ~ df-pap , ~ df-ap </td>
-       <td> </td><td>Yes</td><td> ~ apadd1 , ~ apne </td></tr>
+       <tr><td>ap</td><td>apart</td><td> ~ df-ap </td>
+       <td>` =//= `</td><td>Yes</td><td> ~ apadd1 , ~ apne </td></tr>
 
        <tr><td>g</td><td>with "is a set" condition</td><td> </td><td> </td>
        <td>No</td><td> ~ 1stvalg , ~ brtposg , ~ setsmsbasg </td></tr>
@@ -204708,12 +204734,15 @@ $)
        <td> ` E. x x e. A ` </td>
        <td>No</td><td> ~ r19.2m , ~ negm , ~ ctm , ~ basmex </td></tr>
 
+       <tr><td>pap</td><td>apartness predicate</td><td> ~ df-pap </td>
+       <td>` Ap `</td><td>Yes</td><td> ~ papeq1 , ~ papirr </td></tr>
+
        <tr><td>seq3, sum3</td><td>recursive sequence</td>
        <td> ~ df-seqfrec </td>
        <td> </td><td>Yes</td><td> ~ seq3-1 , ~ fsum3 </td></tr>
 
        <tr><td>tap</td><td>tight apartness</td><td> ~ df-tap </td>
-       <td> </td><td>Yes</td><td> ~ df-tap </td></tr>
+       <td>` TAp `</td><td>Yes</td><td> ~ df-tap </td></tr>
 
        </table>
        </HTML>
