@@ -167804,6 +167804,19 @@ $)
     $}
 
     ${
+      $d R j $.  $d O j $.
+      $( Bidirectional form of ~ opprring .  (Contributed by Mario Carneiro,
+         6-Dec-2014.) $)
+      opprringb $p |- ( R e. Ring <-> O e. Ring ) $=
+        ( vj vf crg wcel cvv elex cur cfv cbs wex eqid ringidcl basm coppr wrel
+        cv cmulr syl wa cdm cnx ctpos cop csts cmpt mptrel df-oppr releqi mpbir
+        co eleq2i biimpi adantl relelfvdm sylancr exlimddv opprringbg pm5.21nii
+        elexd ) AFGAHGZBFGZAFIVDDSZBGZVCDVDBJKZBLKZGVFDMVHBVGVHNZVGNOVGVHDBVIPU
+        AVDVFUBZAQUCZVJQRZVEAQKZGZAVKGVLEHESZUDTKVOTKUEUFUGUMZUHZREHVPUIQVQEUJU
+        KULVFVNVDVFVNBVMVECUNUOUPVEAQUQURVBUSABHCUTVA $.
+    $}
+
+    ${
       $d V x y $.
       oppr0.2 $e |- .0. = ( 0g ` R ) $.
       $( Additive identity of an opposite ring.  (Contributed by Mario
