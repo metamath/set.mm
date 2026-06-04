@@ -171044,6 +171044,18 @@ $)
                                      /\ .* = { <. <. Z , Z >. , Z >. } ) ) ) $=
       ( crg wcel csrg cxp wfn csn wceq cop wa wb ringsrg srg1zr syl3anl1 ) CIJC
       KJBAALZMDUBMEAJAENOBEEPEPNZODUCOQRCSABCDEFGHTUA $.
+
+    $( The only (unital) ring with one element is the zero ring (at least if
+       its operations are internal binary operations).  Note:  The assumption
+       ` R e. Ring ` could be weakened to ` R e. Rng ` (see ~ df-rng ) (it
+       would be sufficient that the multiplication is closed).  (Contributed by
+       FL, 14-Feb-2010.)  (Revised by AV, 25-Jan-2020.) $)
+    rngen1zr $p |- ( ( ( R e. Ring /\ .+ Fn ( B X. B ) /\ .* Fn ( B X. B ) )
+           /\ Z e. B ) -> ( B ~~ 1o <-> ( .+ = { <. <. Z , Z >. , Z >. }
+                                     /\ .* = { <. <. Z , Z >. , Z >. } ) ) ) $=
+      ( crg wcel cxp wfn w3a wa c1o cen wbr csn wceq cop en1eqsnbi adantl bitrd
+      wb ring1zr ) CIJBAAKZLDUFLMZEAJZNAOPQZAERSZBEETETRZSDUKSNUHUIUJUDUGEAUAUB
+      ABCDEFGHUEUC $.
   $}
 
 
