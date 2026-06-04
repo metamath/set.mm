@@ -117672,6 +117672,26 @@ $)
       NOUAUBABPRUBST $.
   $}
 
+  $( The proportion of one binomial coefficient to another with ` N ` decreased
+     by 1.  (Contributed by Thierry Arnoux, 9-Nov-2016.) $)
+  bcm1n $p |- ( ( K e. ( 0 ... ( N - 1 ) ) /\ N e. NN ) ->
+    ( ( ( N - 1 ) _C K ) / ( N _C K ) ) = ( ( N - K ) / N ) ) $=
+    ( cc0 c1 cmin co cfz wcel cn cbc cdiv wceq cmul caddc cc zcnd adantr mpbird
+    wbr clt bcp1n nnz adantl 1cnd npcand oveq1d oveq12d oveq2d eqeq12d imbitrid
+    wa 3impia 3anidm13 crp cn0 cle elfznn0 simpr nnnn0d cz elfzelz zred elfzle2
+    wb zltlem1 syl2an ltled elfz2nn0 syl3anbrc bcrpcl syl rpcnd subcld cneg cap
+    negsubdi2d resubcld recnd addlidd breqtrrd 0red ltsubaddd eqbrtrrd divclapd
+    lt0ap0d negap0d rpap0d divmulap2d bccl2 nnap0d recdivapd 3eqtr3d ) ACBDEFZG
+    FHZBIHZUKZDBAJFZWMAJFZKFZKFDBBAEFZKFZKFWRWQKFWTBKFWPWSXADKWPWSXALWQWRXAMFZL
+    ZWNWOXCWNWOWNXCWNWMDNFZAJFZWRXDXDAEFZKFZMFZLWPXCAWMUAWPXEWQXHXBWPXDBAJWPBDW
+    OBOHWNWOBBUBZPUCZWPUDUEZUFWPXGXAWRMWPXDBXFWTKXKWPXDBAEXKUFUGUHUIUJULUMWPWQX
+    AWRWPWQWPACBGFHZWQUNHWPAUOHZBUOHABUPSXLWNXMWOAWMUQQWPBWNWOURZUSWPABWPAWNAUT
+    HZWOACWMVAZQVBZWPBWOBUTHZWNXIUCVBZWPABTSZAWMUPSZWNYAWOACWMVCQWNXOXRXTYAVDWO
+    XPXIABVEVFRZVGABVHVIZABVJVKVLZWPBWTXJWPBAXJWNAOHWOWNAXPPQZVMZWPABEFZVNWTCVO
+    WPABYEXJVPWPYGWPYGWPABXQXSVQZVRWPYGYHWPYGCTSACBNFZTSWPABYITYBWPBXJVSVTWPABC
+    XQXSWPWAWBRWEWFWCZWDWPWRWNWRUNHWOAWMVJQZVLZWPWRYKWGZWHRUHWPWQWRYDYLWPWQWPXL
+    WQIHYCABWIVKWJYMWKWPBWTXJYFWPBXNWJYJWKWL $.
+
   $( Compute the binomial coefficient " ` N ` choose 2 " from " ` ( N - 1 ) `
      choose 2 ":  (N-1) + ( (N-1) 2 ) = ( N 2 ).  (Contributed by Alexander van
      der Vekens, 7-Jan-2018.) $)
