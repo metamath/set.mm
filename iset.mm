@@ -151409,6 +151409,16 @@ $)
       PZVCVAKLQPURQPZVDUPVEBQPVFAERZBFRABUGSLURUHSVGDUSAUISVBURAOURUJPVBURKURAT
       PBTPURTPEFABUKSULURUMUNUOUQ $.
 
+    $( The size of the universe is at least one.  (Contributed by Jim Kingdon,
+       4-Jun-2026.) $)
+    ballotfilemonn $p |- ( # ` O ) e. NN $=
+      ( co cn cc0 wcel cz cle wbr wa pm3.2i ax-mp nnzi ltled a1i chash caddc 0z
+      cfv cbc ballotfilem1 cfz w3a nnaddcl 3pm3.2i 0red nnre nngt0 crp ltaddrpd
+      nnred nnrp elfz2 mpbir2an bccl2 eqeltri ) CUAUDABUBHZAUEHZIABCDEFGUFAJVBU
+      GHKZVCIKVDJLKZVBLKZALKZUHJAMNZAVBMNZOVEVFVGUCVBAIKZBIKZOVBIKZVJVKEFPABUIQ
+      ZRAERUJVHVIVJVHEVJJAVJUKAULZAUMSQVJVIEVJAVBVNVJVBVLVJVMTUPVJABVNBUNKZVJVK
+      VOFBUQQTUOSQPAJVBURUSAVBUTQVA $.
+
     ${
       $d c d $.  $d d C $.  $d d M $.  $d d N $.
       $( Elementhood in ` O ` .  (Contributed by Thierry Arnoux,
