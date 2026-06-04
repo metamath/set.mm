@@ -171029,6 +171029,23 @@ $)
       SWTBUUHWTQWKWL $.
   $}
 
+  ${
+    ring1zr.b $e |- B = ( Base ` R ) $.
+    ring1zr.p $e |- .+ = ( +g ` R ) $.
+    ring1zr.t $e |- .* = ( .r ` R ) $.
+    $( The only (unital) ring with a base set consisting of one element is the
+       zero ring (at least if its operations are internal binary operations).
+       Note:  The assumption ` R e. Ring ` could be weakened to ` R e. Rng `
+       (see ~ df-rng ) (it would be sufficient that the multiplication is
+       closed).  (Contributed by FL, 13-Feb-2010.)  (Revised by AV,
+       25-Jan-2020.)  (Proof shortened by AV, 7-Feb-2020.) $)
+    ring1zr $p |- ( ( ( R e. Ring /\ .+ Fn ( B X. B ) /\ .* Fn ( B X. B ) )
+           /\ Z e. B ) -> ( B = { Z } <-> ( .+ = { <. <. Z , Z >. , Z >. }
+                                     /\ .* = { <. <. Z , Z >. , Z >. } ) ) ) $=
+      ( crg wcel csrg cxp wfn csn wceq cop wa wb ringsrg srg1zr syl3anl1 ) CIJC
+      KJBAALZMDUBMEAJAENOBEEPEPNZODUCOQRCSABCDEFGHTUA $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
