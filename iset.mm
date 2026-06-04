@@ -169479,6 +169479,23 @@ $)
       GWNDWPFWMXNXOXPWISWJAXFYBXIWTXGQXKYCXMXGWNDWPGWMXNXOXPWISWJWKWL $.
   $}
 
+  ${
+    $d O x y $.  $d R x y $.
+    opprlring.1 $e |- O = ( oppR ` R ) $.
+    $( The opposite of a local ring is also a local ring.  (Contributed by NM,
+       18-Oct-2014.) $)
+    opprlring $p |- ( R e. LRing <-> O e. LRing ) $=
+      ( vx vy clring wcel crg lringring cnzr cv cplusg cfv co cur wceq cui wral
+      wo eqid opprringb sylibr wi cbs opprnzrbg opprbasg oppraddg oveqd eqeq12d
+      oppr1g eqidd coppr a1i opprunitd eleq2d orbi12d imbi12d raleqbidv anbi12d
+      wa id islring 3bitr4g pm5.21nii ) AFGZAHGZBFGZAIVGBHGVFBIABCUAUBVFAJGZDKZ
+      EKZALMZNZAOMZPZVIAQMZGZVJVOGZSZUCZEAUDMZRZDVTRZUTBJGZVIVJBLMZNZBOMZPZVIBQ
+      MZGZVJWHGZSZUCZEBUDMZRZDWMRZUTVEVGVFVHWCWBWOABHCUEVFWAWNDVTWMVTABHCVTTZUF
+      ZVFVSWLEVTWMWQVFVNWGVRWKVFVLWEVMWFVFVKWDVIVJVKABHCVKTZUGUHAVMBHCVMTZUJUIV
+      FVPWIVQWJVFVOWHVIVFABVOVFVOUKBAULMPVFCUMVFVAUNZUOVFVOWHVJWTUOUPUQURURUSDE
+      VTVKAVOVMWPWRWSVOTVBDEWMWDBWHWFWMTWDTWFTWHTVBVCVD $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
