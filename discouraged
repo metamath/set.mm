@@ -4554,8 +4554,6 @@
 "crngcALTV" is used by "rngcvalALTV".
 "csbnestg" is used by "csbco3g".
 "csbnestgf" is used by "csbnestg".
-"csbopabgALT" is used by "csbcnv".
-"csbopabgALT" is used by "csbcnvgALTOLD".
 "cvati" is used by "cvbr4i".
 "cvbr" is used by "cvbr2".
 "cvbr" is used by "cvcon3".
@@ -15575,7 +15573,6 @@ New usage of "csbima12gALTVD" is discouraged (0 uses).
 New usage of "csbingVD" is discouraged (0 uses).
 New usage of "csbnestg" is discouraged (1 uses).
 New usage of "csbnestgf" is discouraged (1 uses).
-New usage of "csbopabgALT" is discouraged (2 uses).
 New usage of "csbresgVD" is discouraged (0 uses).
 New usage of "csbrngVD" is discouraged (0 uses).
 New usage of "csbsngVD" is discouraged (0 uses).
@@ -19630,7 +19627,6 @@ Proof modification of "csbeq2gVD" is discouraged (61 steps).
 Proof modification of "csbfv12gALTVD" is discouraged (322 steps).
 Proof modification of "csbima12gALTVD" is discouraged (148 steps).
 Proof modification of "csbingVD" is discouraged (256 steps).
-Proof modification of "csbopabgALT" is discouraged (85 steps).
 Proof modification of "csbresgVD" is discouraged (195 steps).
 Proof modification of "csbrngVD" is discouraged (266 steps).
 Proof modification of "csbsngVD" is discouraged (204 steps).
