@@ -71855,8 +71855,9 @@ $)
 
   ${
     $d A x y $.
-    $( The number of finite subsets of a finite set.  (Contributed by Jim
-       Kingdon, 18-May-2026.) $)
+    $( The number of finite subsets of a finite set.  For a similar theorem
+       with set size expressed using ` # ` ( ~ df-ihash ), see ~ hashpwfi .
+       (Contributed by Jim Kingdon, 18-May-2026.) $)
     2omapfi $p |- ( A e. Fin -> ( 2o ^m A ) ~~ ( ~P A i^i Fin ) ) $=
       ( vy vx cfn wcel c2o cmap co cv wdc wral crab cen wbr cvv simpll ad2antlr
       wa simpr syl3anc cpw cin 2omapen wceq eqid pwexg rabexd wss ssfidc fissfi
@@ -118421,6 +118422,21 @@ $)
       UUIUVKXFUVOUVPVSUVNUVGUULAWHTWIOWMUUIYPXIYGUGWNGZJGUUKUUIYOUVQXIJUUHYOUVQ
       KZXFUUHUVRLCYDYJQWOWEWPOUUIXIYGXFXIWQEUUHUUCVKUUFYGWTEXFUUGYDUHWRXAUTPWSX
       BXCXDXE $.
+  $}
+
+  ${
+    $( The number of finite subsets of a finite set is two raised to the power
+       of the size of the set.  For a similar theorem with set size expressed
+       using equinumerosity, see ~ 2omapfi .  For the number of subsets (which
+       need not be finite) of a set, see ~ pw1mapen .  (Contributed by Jim
+       Kingdon, 5-Jun-2026.) $)
+    hashpwfi $p |- ( A e. Fin
+        -> ( # ` ( ~P A i^i Fin ) ) = ( 2 ^ ( # ` A ) ) ) $=
+      ( cfn wcel c2o cmap co chash cfv cpw cin c2 cexp wceq cen wbr 2omapfi com
+      wb 2onn mpan nnfi ax-mp mapfi fipwfi hashen syl2anc mpbird hashmap oveq1i
+      hash2 eqtrdi eqtr3d ) ABCZDAEFZGHZAIBJZGHZKAGHZLFZUMUOUQMZUNUPNOZAPUMUNBC
+      ZUPBCUTVARDBCZUMVBDQCVCSDUAUBZDAUCTAUDUNUPUEUFUGUMUODGHZURLFZUSVCUMUOVFMV
+      DDAUHTVEKURLUJUIUKUL $.
   $}
 
   ${
