@@ -18254,6 +18254,7 @@ New usage of "pm11.07" is discouraged (0 uses).
 New usage of "pm2.21ddALT" is discouraged (0 uses).
 New usage of "pm2.43bgbi" is discouraged (0 uses).
 New usage of "pm2.43cbi" is discouraged (2 uses).
+New usage of "pm2.65iOLD" is discouraged (0 uses).
 New usage of "pm3.48ALT" is discouraged (0 uses).
 New usage of "pmap1N" is discouraged (2 uses).
 New usage of "pmapglb2N" is discouraged (0 uses).
@@ -20435,6 +20436,7 @@ Proof modification of "plycjOLD" is discouraged (283 steps).
 Proof modification of "pm2.21ddALT" is discouraged (10 steps).
 Proof modification of "pm2.43bgbi" is discouraged (16 steps).
 Proof modification of "pm2.43cbi" is discouraged (34 steps).
+Proof modification of "pm2.65iOLD" is discouraged (12 steps).
 Proof modification of "pm3.48ALT" is discouraged (18 steps).
 Proof modification of "postcposALT" is discouraged (163 steps).
 Proof modification of "precofvalALT" is discouraged (723 steps).
