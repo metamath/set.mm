@@ -23472,6 +23472,14 @@ $)
     ( cv wcel wa crab df-rab abeq2i ) BDCEAFBABCGABCHI $.
 
   ${
+    reqabi.1 $e |- A = { x e. B | ph } $.
+    $( Inference from equality of a class variable and a restricted class
+       abstraction.  (Contributed by NM, 16-Feb-2004.) $)
+    reqabi $p |- ( x e. A <-> ( x e. B /\ ph ) ) $=
+      ( cv wcel crab wa eleq2i rabid bitri ) BFZCGMABDHZGMDGAICNMEJABDKL $.
+  $}
+
+  ${
     $d x A $.
     $( An "identity" law for restricted class abstraction.  (Contributed by NM,
        9-Oct-2003.)  (Proof shortened by Andrew Salmon, 30-May-2011.) $)
@@ -117664,6 +117672,26 @@ $)
       NOUAUBABPRUBST $.
   $}
 
+  $( The proportion of one binomial coefficient to another with ` N ` decreased
+     by 1.  (Contributed by Thierry Arnoux, 9-Nov-2016.) $)
+  bcm1n $p |- ( ( K e. ( 0 ... ( N - 1 ) ) /\ N e. NN ) ->
+    ( ( ( N - 1 ) _C K ) / ( N _C K ) ) = ( ( N - K ) / N ) ) $=
+    ( cc0 c1 cmin co cfz wcel cn cbc cdiv wceq cmul caddc cc zcnd adantr mpbird
+    wbr clt bcp1n nnz adantl 1cnd npcand oveq1d oveq12d oveq2d eqeq12d imbitrid
+    wa 3impia 3anidm13 crp cn0 cle elfznn0 simpr nnnn0d cz elfzelz zred elfzle2
+    wb zltlem1 syl2an ltled elfz2nn0 syl3anbrc bcrpcl syl rpcnd subcld cneg cap
+    negsubdi2d resubcld recnd addlidd breqtrrd 0red ltsubaddd eqbrtrrd divclapd
+    lt0ap0d negap0d rpap0d divmulap2d bccl2 nnap0d recdivapd 3eqtr3d ) ACBDEFZG
+    FHZBIHZUKZDBAJFZWMAJFZKFZKFDBBAEFZKFZKFWRWQKFWTBKFWPWSXADKWPWSXALWQWRXAMFZL
+    ZWNWOXCWNWOWNXCWNWMDNFZAJFZWRXDXDAEFZKFZMFZLWPXCAWMUAWPXEWQXHXBWPXDBAJWPBDW
+    OBOHWNWOBBUBZPUCZWPUDUEZUFWPXGXAWRMWPXDBXFWTKXKWPXDBAEXKUFUGUHUIUJULUMWPWQX
+    AWRWPWQWPACBGFHZWQUNHWPAUOHZBUOHABUPSXLWNXMWOAWMUQQWPBWNWOURZUSWPABWPAWNAUT
+    HZWOACWMVAZQVBZWPBWOBUTHZWNXIUCVBZWPABTSZAWMUPSZWNYAWOACWMVCQWNXOXRXTYAVDWO
+    XPXIABVEVFRZVGABVHVIZABVJVKVLZWPBWTXJWPBAXJWNAOHWOWNAXPPQZVMZWPABEFZVNWTCVO
+    WPABYEXJVPWPYGWPYGWPABXQXSVQZVRWPYGYHWPYGCTSACBNFZTSWPABYITYBWPBXJVSVTWPABC
+    XQXSWPWAWBRWEWFWCZWDWPWRWNWRUNHWOAWMVJQZVLZWPWRYKWGZWHRUHWPWQWRYDYLWPWQWPXL
+    WQIHYCABWIVKWJYMWKWPBWTXJYFWPBXNWJYJWKWL $.
+
   $( Compute the binomial coefficient " ` N ` choose 2 " from " ` ( N - 1 ) `
      choose 2 ":  (N-1) + ( (N-1) 2 ) = ( N 2 ).  (Contributed by Alexander van
      der Vekens, 7-Jan-2018.) $)
@@ -151371,6 +151399,97 @@ $)
       CZUDZNGVLNOPVGDVKVINOZVKNOPLQOVHQOVMUFVHAROBROVHROEFABUGSTLVHUHSVIUIUJVGU
       KZDVKURPVNDVKVEVKOZVFQOAQOVNVOVFVOVENOVFULOVEVJNUMVEUNUOUPAETVFAUQUSUTVAV
       BVCVD $.
+
+    $( The size of the universe is a binomial coefficient.  (Contributed by
+       Thierry Arnoux, 23-Nov-2016.) $)
+    ballotfilem1 $p |- ( # ` O ) = ( ( M + N ) _C M ) $=
+      ( chash cfv cv wceq c1 co cfn cbc wcel cz nnzi mp2an cn caddc cfz cpw cin
+      crab fveq2i zaddcl fzfig hashfibc cn0 nnaddcl nnnn0i hashfz1 ax-mp oveq1i
+      1z 3eqtr2i ) CHIDJHIAKDLABUAMZUBMZUCNUDUEZHIZUSHIZAOMZURAOMCUTHGUFUSNPZAQ
+      PZVCVAKLQPURQPZVDUPVEBQPVFAERZBFRABUGSLURUHSVGDUSAUISVBURAOURUJPVBURKURAT
+      PBTPURTPEFABUKSULURUMUNUOUQ $.
+
+    $( The size of the universe is at least one.  (Contributed by Jim Kingdon,
+       4-Jun-2026.) $)
+    ballotfilemonn $p |- ( # ` O ) e. NN $=
+      ( co cn cc0 wcel cz cle wbr wa pm3.2i ax-mp nnzi ltled a1i chash caddc 0z
+      cfv cbc ballotfilem1 cfz w3a nnaddcl 3pm3.2i 0red nnre nngt0 crp ltaddrpd
+      nnred nnrp elfz2 mpbir2an bccl2 eqeltri ) CUAUDABUBHZAUEHZIABCDEFGUFAJVBU
+      GHKZVCIKVDJLKZVBLKZALKZUHJAMNZAVBMNZOVEVFVGUCVBAIKZBIKZOVBIKZVJVKEFPABUIQ
+      ZRAERUJVHVIVJVHEVJJAVJUKAULZAUMSQVJVIEVJAVBVNVJVBVLVJVMTUPVJABVNBUNKZVJVK
+      VOFBUQQTUOSQPAJVBURUSAVBUTQVA $.
+
+    ${
+      $d c d $.  $d d C $.  $d d M $.  $d d N $.
+      $( Elementhood in ` O ` .  (Contributed by Thierry Arnoux,
+         17-Apr-2017.) $)
+      ballotfilemelo $p |- ( C e. O <->
+          ( C C_ ( 1 ... ( M + N ) ) /\ C e. Fin /\ ( # ` C ) = M ) ) $=
+        ( vd c1 co cfn wcel chash cfv wceq wa cv fveqeq2 crab caddc cfz cpw cin
+        wss w3a elfpw anbi1i cbvrabv eqtri elrab2 df-3an 3bitr4i ) AJBCUAKUBKZU
+        CLUDZMZANOBPZQAUNUEZALMZQZUQQADMURUSUQUFUPUTUQAUNUGUHIRZNOBPZUQIAUODVAA
+        BNSDERZNOBPZEUOTVBIUOTHVDVBEIUOVCVABNSUIUJUKURUSUQULUM $.
+    $}
+
+    $( Let ` P ` be the uniform discrete probability measure over ` O ` . $)
+    ballotfi.p $e |- P = ( x e. ( ~P O i^i Fin )
+      |-> ( ( # ` x ) / ( # ` O ) ) ) $.
+
+    ${
+      $d c i x O $.  $d M x y $.  $d N x y $.
+      $( The probability that the first vote picked in a count is a B.
+         (Contributed by Thierry Arnoux, 23-Nov-2016.) $)
+      ballotfilem2 $p |- ( P ` { c e. O | -. 1 e. c } ) = ( N / ( M + N ) ) $=
+        ( vi c1 wcel co cfn wceq mp2an wa c2 wbr vy cv crab cfv caddc cmin cdiv
+        wn cbc chash cpw cin ballotfilemofi ssrab2 elpwi2 wtru a1i wdc wral cfz
+        cz 1z cn nnaddcl nnzi fzfig fidceq mp3an1 cuz nnuz eleqtri eluzfz1 mp1i
+        rgen2 reqabi simplbi elin sylib simpld elpwid simprd elssdc dcn ssfirab
+        rgen mptru elini fveq2 oveq1d cr hashcl ax-mp ballotfilemonn nn0nndivcl
+        syl cn0 elexi fvmpt an32 wss 2eluzge1 fzss1 sspwi elinel1 elinel2 elind
+        sselid cle clt 1lt2 wb zltnle mpbi elfzle1 mto elelpwi ancom mtbi velpw
+        2z cab wi impbii 1p1e2 nnge1 1re nnrei letri oveq1i abid2 eqtr3i anbi1i
+        cneg cc nncni 2cn ax-1cn 3eqtri eqtri cc0 imnani jca wal ssab 1ex eleq1
+        eqid eqeq1 notbid imbi12d spcv simpr simplr eqeltrrd simpll pm2.65da ex
+        mt2i alrimiv bitr2i ssin wo 1le2 le2addi eqbrtrri readdcli eluz elfzp12
+        2re mpbir biimpi orcanai eleqtrdi ss2abi inab ineq1i 3sstr3i sstr mpan2
+        sylbi syl2anb sylan sylibr adantr 3bitr4i fveq2i hashfibc eluz1i hashfz
+        rabbia2 mpbir2an addcli subadd23 mp3an negsubdi2i negeqi oveq2i negsubi
+        2m1e1 ballotfilem1 oveq12i 0re crp nngt0i elrpii ltaddrp w3a 0z elfzm11
+        0le1 mpbir3an bcm1n pncan2 ) LFUBZMZUHZFEUCZBUDZCDUENZLUFNZCUINZUXSCUIN
+        ZUGNZUXSCUFNZUXSUGNZDUXSUGNUXRUXQUJUDZEUJUDZUGNZUYCUXQEUKZOULZMUXRUYHPU
+        XQUYIOUXQEOCDEFGHIUMZUXPFEUNUOUXQOMZUPUXPFEEOMUPUYKUQUXPURZFEUSUPUYMFEU
+        XNEMZUXOURUYMUYNAUAUXNLUXSUTNZLAUBZUAUBZPURZUAUYOUSAUYOUSUYNUYRAUAUYOUY
+        OUYOOMZUYPUYOMUYQUYOMUYRLVAMZUXSVAMZUYSVBUXSCVCMZDVCMZUXSVCMZGHCDVDQZVE
+        ZLUXSVFQUYOUYPUYQVGVHVNUQUXSLVIUDZMZLUYOMUYNUXSVCVUGVUEVJVKLUXSVLVMUYNU
+        XNUYOUYNUXNUYOUKZMZUXNOMZUYNUXNVUIOULZMZVUJVUKRUYNVUMUXNUJUDCPZVUNFEVUL
+        IVOZVPUXNVUIOVQVRZVSVTUYNVUJVUKVUPWAWBUXOWCWOWEUQWDWFZWGAUXQUYPUJUDZUYG
+        UGNUYHUYJBUYPUXQPVURUYFUYGUGUYPUXQUJWHWIJUYHWJUYFWPMZUYGVCMUYHWJMUYLVUS
+        VUQUXQWKWLCDEFGHIWMUYFUYGWNQWQWRWLUYFUYAUYGUYBUGVUNFSUXSUTNZUKZOULZUCZU
+        JUDZUYFUYAVVCUXQUJVUNUXPFVVBEVUMUXPRZVUNRVUMVUNRZUXPRUXNVVBMZVUNRUYNUXP
+        RVUMUXPVUNWSVVGVVEVUNVVGVVEVVGVUMUXPVVGVUIOUXNVVGVVAVUIUXNVUTUYOSVUGMVU
+        TUYOWTXASLUXSXBWLXCUXNVVAOXDZXGUXNVVAOXEXFVVGUXNVVAMZUXPVVHVVIUXOUXOVVI
+        RZVVIUXORVVJLVUTMZVVKSLXHTZLSXITZVVLUHZXJUYTSVAMZVVMVVNXKVBXTLSXLQXMLSU
+        XSXNXOLUXNVUTXPXOUXOVVIXQXRUUAWOUUBVVEVVAOUXNVVEUXNVUTWTZVVIVUMVUJUXPVV
+        PUXNVUIOXDVUJUXNUYOWTZUXNKUBZLPZUHZKYAZWTZVVPUXPFUYOXSVWBVVRUXNMZVVTYBZ
+        KUUCZUXPVVTKUXNUUDVWEUXPVWEUXOLLPZLUUGVWDUXOVWFUHZYBKLUUEVVSVWCUXOVVTVW
+        GVVRLUXNUUFVVSVVSVWFVVRLLUUHUUIUUJUUKUURUXPVWDKUXPVWCVVTUXPVWCRZVVSUXOV
+        WHVVSRVVRLUXNVWHVVSUULUXPVWCVVSUUMUUNUXPVWCVVSUUOUUPUUQUUSYCUUTVVQVWBRU
+        XNUYOVWAULZWTZVVPUXNUYOVWAUVAVWJVWIVUTWTVVPVVRUYOMZVVTRZKYAZVVRVUTMZKYA
+        VWIVUTVWLVWNKVWLVVRLLUENZUXSUTNZVUTVWKVVSVVRVWPMZVWKVVSVWQUVBZVUHVWKVWR
+        XKVUHLUXSXHTZLSXHTSUXSXHTZVWSUVCVWOSUXSXHYDLCXHTZLDXHTZVWOUXSXHTVUBVXAG
+        CYEWLZVUCVXBHDYEWLLLCDYFYFCGYGZDHYGZUVDQUVEZLSUXSYFUVICDVXDVXEUVFYHQUYT
+        VUAVUHVWSXKVBVUFLUXSUVGQUVJVVRLUXSUVHWLUVKUVLVWOSUXSUTYDYIUVMUVNVWKKYAZ
+        VWAULVWMVWIVWKVVTKUVOVXGUYOVWAKUYOYJUVPYKKVUTYJUVQUXNVWIVUTUVRUVSUVTUWA
+        UWBFVUTXSUWCVUMVUKUXPUXNVUIOXEUWDXFYCYLUYNVVFUXPVUOYLUWEUWJUWFVUTUJUDZC
+        UINZVVDUYAVUTOMZCVAMZVXIVVDPVVOVUAVXJXTVUFSUXSVFQCGVEZFVUTCUWGQVXHUXTCU
+        IVXHUXSLYMZUENZUXTVXHUXSSUFNLUENZUXSLSUFNZUENZVXNUXSSVIUDMZVXHVXOPVXRVU
+        AVWTVUFVXFSUXSXTUWHUWKSUXSUWIWLUXSYNMSYNMLYNMVXOVXQPCDCGYOZDHYOZUWLZYPY
+        QUXSSLUWMUWNVXPVXMUXSUESLUFNZYMVXPVXMSLYPYQUWOVYBLUWSUWPYKUWQYRUXSLVYAY
+        QUWRYSYIYKYKCDEFGHIUWTUXAYSCYTUXTUTNMZVUDUYCUYEPVYCVXKYTCXHTZCUXSXITZVX
+        LYTLXHTVXAVYDUXJVXCYTLCUXBYFVXDYHQCWJMDUXCMVYEVXDDVXEDHUXDUXECDUXFQYTVA
+        MVUAVYCVXKVYDVYEUXGXKUXHVUFCYTUXSUXIQUXKVUECUXSUXLQUYDDUXSUGCYNMDYNMUYD
+        DPVXSVXTCDUXMQYIYR $.
+    $}
   $}
 
 
