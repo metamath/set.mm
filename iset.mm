@@ -151615,6 +151615,14 @@ $)
         XGWBVEUPXNWSXJSWPXGWBUTUPURVAVBVCEUHWGVDVFVGVHWAGUKZWGWMUKAXOWDWJWFWLUG
         XOWCWISXOWBWHCWAGUBUDVOZVIUPXOWEWKSXOWBWHCXPVJUPURVKRAWJWLAWJAWIVLUIWJV
         PUIACGHIJKLMNQRVMWIVNVHVQAWLAWKVLUIWLVPUIACGHIJKLMNQRVRWKVNVHVQVSVT $.
+
+      $( ` ( F `` C ) ` has values in ` ZZ ` .  (Contributed by Thierry Arnoux,
+         23-Nov-2016.) $)
+      ballotfilemfelz $p |- ( ph -> ( ( F ` C ) ` J ) e. ZZ ) $=
+        ( cfv wcel c1 cfz co cin chash cdif cz ballotfilemfval ballotfilemcinfi
+        cmin cfn cn0 hashcl syl nn0zd ballotfilemdifcfi zsubcld eqeltrd ) AGCFS
+        SUAGUBUCZCUDZUESZUSCUFZUESZUJUCUGABCDEFGHIJKLMNOPQRUHAVAVCAVAAUTUKTVAUL
+        TACGHIJKLMNQRUIUTUMUNUOAVCAVBUKTVCULTACGHIJKLMNQRUPVBUMUNUOUQUR $.
     $}
   $}
 
