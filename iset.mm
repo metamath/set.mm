@@ -151500,6 +151500,19 @@ $)
           OZBVCVDDQZABFOXJXKXLVMKBDEFGHIJVEVFZVGURXCWJBWGWRWSWTWIVHVIVJVKCWJVLV
           NXFXDCWJMVOVPVQVRVSVTAXJXKXLXMWAWB $.
       $}
+
+      ${
+        $d ph x $.  $d C x $.  $d J x $.  $d N x $.  $d M x $.
+        ballotfilemc.j $e |- ( ph -> J e. ZZ ) $.
+        $( Lemma for ballotfi .  The portion of a particular element of ` O `
+           up to a specified integer is finite.  (Contributed by Jim Kingdon,
+           8-Jun-2026.) $)
+        ballotfilemcinfi $p |- ( ph -> ( ( 1 ... J ) i^i C ) e. Fin ) $=
+          ( vx c1 cfz co cfn wcel cv wdc wral cin 1zzd fzfigd wa adantr elfzelz
+          cz adantl ballotfilemcdc ralrimiva infidc syl2anc ) ANCOPZQRMSZBRTZMU
+          NUAUNBUBQRANCAUCLUDAUPMUNAUOUNRZUEBUODEFGHIJABFRUQKUFUQUOUHRAUONCUGUI
+          UJUKMUNBULUM $.
+      $}
     $}
 
     $( Let ` P ` be the uniform discrete probability measure over ` O ` . $)
