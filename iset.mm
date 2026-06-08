@@ -71863,8 +71863,9 @@ $)
 
   ${
     $d A x y $.
-    $( The number of finite subsets of a finite set.  (Contributed by Jim
-       Kingdon, 18-May-2026.) $)
+    $( The number of finite subsets of a finite set.  For a similar theorem
+       with set size expressed using ` # ` ( ~ df-ihash ), see ~ hashpwfi .
+       (Contributed by Jim Kingdon, 18-May-2026.) $)
     2omapfi $p |- ( A e. Fin -> ( 2o ^m A ) ~~ ( ~P A i^i Fin ) ) $=
       ( vy vx cfn wcel c2o cmap co cv wdc wral crab cen wbr cvv simpll ad2antlr
       wa simpr syl3anc cpw cin 2omapen wceq eqid pwexg rabexd wss ssfidc fissfi
@@ -118416,6 +118417,54 @@ $)
       BWISUUGUUPXFUVJUVKWJUVDUUTUUJBWKSWLWMWNUQWOUUGYJUUIKYCUUGYJYAWPRJZXLIJZUU
       IUUGUUBUVEYJUVQKUUSUVFUUBUVEEZYIUVPXLIUVBUVRYIUVPKWQUVCXRYDTWRVHPSUUGYAXL
       UUGUUBYAWSDUUSUUBYAXRUKUNVTUUGXFXLWSDUUTUUAVTXAWNWOWTXBXEXFXCXD $.
+  $}
+
+  ${
+    $d x y z B $.  $d x y z A $.
+    $( The size of the set exponential of two finite sets is the exponential of
+       their sizes.  (This is the original motivation behind the notation for
+       set exponentiation.)  (Contributed by Mario Carneiro, 5-Aug-2014.)
+       (Proof shortened by AV, 18-Jul-2022.) $)
+    hashmap $p |- ( ( A e. Fin /\ B e. Fin ) ->
+                   ( # ` ( A ^m B ) ) = ( ( # ` A ) ^ ( # ` B ) ) ) $=
+      ( vz cfn wcel cmap co chash cfv cexp wceq wi c0 fveq2d oveq2d eqeq12d cvv
+      oveq2 cmul syl2anc vx vy cv csn fveq2 imbi2d c1 hashcl nn0cnd exp0d hash0
+      cun cc0 oveq2i a1i mapdm0 0ex hashsng mp1i eqtrd 3eqtr4rd wn wa oveq1 cxp
+      cen wbr cin vsnex elex adantr simprr disjsn sylibr mapunen syl31anc simpl
+      vex wb simprl unsnfi syl3anc mapfi adantrr elv sylancl xpfi hashen mpbird
+      snfig hashxp mapsnend 3eqtrd caddc hashunsng adantl cc ad2antrl imbitrrid
+      cn0 expp1d expcom a2d findcard2s impcom ) BDEADEZABFGZHIZAHIZBHIZJGZKZXFA
+      UAUCZFGZHIZXIXMHIZJGZKZLXFAMFGZHIZXIMHIZJGZKZLXFAUBUCZFGZHIZXIYDHIZJGZKZL
+      XFAYDCUCZUDZULZFGZHIZXIYLHIZJGZKZLXFXLLUAUBCBXMMKZXRYCXFYRXOXTXQYBYRXNXSH
+      XMMAFRNYRXPYAXIJXMMHUEOPUFXMYDKZXRYIXFYSXOYFXQYHYSXNYEHXMYDAFRNYSXPYGXIJX
+      MYDHUEOPUFXMYLKZXRYQXFYTXOYNXQYPYTXNYMHXMYLAFRNYTXPYOXIJXMYLHUEOPUFXMBKZX
+      RXLXFUUAXOXHXQXKUUAXNXGHXMBAFRNUUAXPXJXIJXMBHUEOPUFXFXIUMJGZUGYBXTXFXIXFX
+      IAUHUIZUJYBUUBKXFYAUMXIJUKUNUOXFXTMUDZHIZUGXFXSUUDHADUPNMQEUUEUGKXFUQMQUR
+      USUTVAYDDEZYJYDEVBZVCZXFYIYQXFUUHYIYQLYIYQXFUUHVCZYFXISGZYHXISGZKYFYHXISV
+      DUUIYNUUJYPUUKUUIYNYEAYKFGZVEZHIZYFUULHIZSGZUUJUUIYNUUNKZYMUUMVFVGZUUIYDQ
+      EZYKQEZAQEZYDYKVHMKZUURUUSUUIUBVRUOUUTUUICVIUOXFUVAUUHADVJVKUUIUUGUVBXFUU
+      FUUGVLZYDYJVMVNYDYKAQQQVOVPUUIYMDEZUUMDEZUUQUURVSUUIXFYLDEZUVDXFUUHVQZUUI
+      UUFYJQEZUUGUVFXFUUFUUGVTUVHUUICVRUOZUVCYDYJQWAWBAYLWCTUUIYEDEZUULDEZUVEXF
+      UUFUVJUUGAYDWCWDZUUIXFYKDEZUVKUVGUVMCYJQWJWEAYKWCWFZYEUULWGTYMUUMWHTWIUUI
+      UVJUVKUUNUUPKUVLUVNYEUULWKTUUIUUOXIYFSUUIUUOXIKZUULAVFVGZUUIAYJDQUVGUVIWL
+      UUIUVKXFUVOUVPVSUVNUVGUULAWHTWIOWMUUIYPXIYGUGWNGZJGUUKUUIYOUVQXIJUUHYOUVQ
+      KZXFUUHUVRLCYDYJQWOWEWPOUUIXIYGXFXIWQEUUHUUCVKUUFYGWTEXFUUGYDUHWRXAUTPWSX
+      BXCXDXE $.
+  $}
+
+  ${
+    $( The number of finite subsets of a finite set is two raised to the power
+       of the size of the set.  For a similar theorem with set size expressed
+       using equinumerosity, see ~ 2omapfi .  For the number of subsets (which
+       need not be finite) of a set, see ~ pw1mapen .  (Contributed by Jim
+       Kingdon, 5-Jun-2026.) $)
+    hashpwfi $p |- ( A e. Fin
+        -> ( # ` ( ~P A i^i Fin ) ) = ( 2 ^ ( # ` A ) ) ) $=
+      ( cfn wcel c2o cmap co chash cfv cpw cin c2 cexp wceq cen wbr 2omapfi com
+      wb 2onn mpan nnfi ax-mp mapfi fipwfi hashen syl2anc mpbird hashmap oveq1i
+      hash2 eqtrdi eqtr3d ) ABCZDAEFZGHZAIBJZGHZKAGHZLFZUMUOUQMZUNUPNOZAPUMUNBC
+      ZUPBCUTVARDBCZUMVBDQCVCSDUAUBZDAUCTAUDUNUPUEUFUGUMUODGHZURLFZUSVCUMUOVFMV
+      DDAUHTVEKURLUJUIUKUL $.
   $}
 
   ${
