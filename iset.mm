@@ -106806,6 +106806,17 @@ $)
     HZJZUIUGKZJUFBUHEZUHUKQUFUGUHEZUMUFUGUEEZUNABLZAUGMNBAUGOPBAUGRNUFUJULUIUFU
     OUGSEUJULQUPAUGTUGUAUBUCUD $.
 
+  $( Split the last element of a finite set of sequential integers.  More
+     generic than ~ fzsuc .  (Contributed by Thierry Arnoux, 7-Nov-2016.) $)
+  fzspl $p |- ( N e. ( ZZ>= ` M ) ->
+                ( M ... N ) = ( ( M ... ( N - 1 ) ) u. { N } ) ) $=
+    ( cuz cfv wcel cfz co c1 cmin caddc cun csn wceq eluzelz zcnd npcand cz syl
+    1zzd eqtrd eleq1d ibir cle wbr eluzelre lem1d wa wb zsubcld eluz1 mpbir2and
+    fzsplit2 syl2anc oveq1d fzsn uneq2d ) BACDZEZABFGZABHIGZFGZUTHJGZBFGZKZVABL
+    ZKURVBUQEZBUTCDEZUSVDMURVFURVBBUQURBHURBABNZOURHURSZOPZUAUBURVGBQEZUTBUCUDZ
+    VHURBABUEUFURUTQEVGVKVLUGUHURBHVHVIUIUTBUJRUKUTABULUMURVCVEVAURVCBBFGZVEURV
+    BBBFVJUNURVKVMVEMVHBUORTUPT $.
+
   $( Join a predecessor to the beginning of a finite set of sequential
      integers.  (Contributed by AV, 24-Aug-2019.) $)
   fzpred $p |- ( N e. ( ZZ>= ` M )
