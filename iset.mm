@@ -151585,6 +151585,37 @@ $)
         MVUAVYCVXKVYDVYEUXGXKUXHVUFCYTUXSUXIQUXKVUECUXSUXLQUYDDUXSUGCYNMDYNMUYD
         DPVXSVXTCDUXMQYIYR $.
     $}
+
+    $d c i F $.  $d j F $.  $d k F $.
+    $( F is the difference between ballots for A and B among the ` i ` first
+      ballots picked in a given count ` c ` .
+      Those ballots for A are in ` c `, i.e. in ` ( ( 1 ... i ) i^i c ) ` .
+      Those ballots for B are out of ` c `, i.e. in ` ( ( 1 ... i ) \ c ) ` $)
+    ballotth.f $e |- F = ( c e. O |-> ( i e. ZZ |->
+      ( ( # ` ( ( 1 ... i ) i^i c ) ) - ( # ` ( ( 1 ... i ) \ c ) ) ) ) ) $.
+
+    $d i c $.  $d i C $.
+    ${
+      $d b O $.  $d b C $.  $d b c $.  $d b i $.  $d i J $.
+      ballotlemfval.c $e |- ( ph -> C e. O ) $.
+      ballotlemfval.j $e |- ( ph -> J e. ZZ ) $.
+
+      $d i ph $.
+      $( The value of ` F ` .  (Contributed by Thierry Arnoux, 23-Nov-2016.) $)
+      ballotfilemfval $p |- ( ph -> ( ( F ` C ) ` J ) =
+        ( ( # ` ( ( 1 ... J ) i^i C ) ) - ( # ` ( ( 1 ... J ) \ C ) ) ) ) $=
+        ( chash cfv vb c1 cv cfz co cdif cmin cz wcel cmpt wceq wa simpl ineq2d
+        cin fveq2d difeq2d oveq12d mpteq2dva difeq2 mpteq2dv cbvmptv eqtr4i zex
+        ineq2 mptex fvmpt syl ineq1d difeq1d adantl cfn ballotfilemcinfi hashcl
+        oveq2 cn0 nn0zd ballotfilemdifcfi zsubcld fvmptd ) AEGUBEUCZUDUEZCUOZST
+        ZWBCUFZSTZUGUEZUBGUDUEZCUOZSTZWHCUFZSTZUGUEZUHCFTZUHACJUIWNEUHWGUJZUKQU
+        ACEUHWBUAUCZUOZSTZWBWPUFZSTZUGUEZUJZWOJFWPCUKZEUHXAWGXCWAUHUIZULZWRWDWT
+        WFUGXEWQWCSXEWPCWBXCXDUMZUNUPXEWSWESXEWPCWBXFUQUPURUSFKJEUHWBKUCZUOZSTZ
+        WBXGUFZSTZUGUEZUJZUJUAJXBUJPUAKJXBXMWPXGUKZEUHXAXLXNWRXIWTXKUGXNWQXHSWP
+        XGWBVEUPXNWSXJSWPXGWBUTUPURVAVBVCEUHWGVDVFVGVHWAGUKZWGWMUKAXOWDWJWFWLUG
+        XOWCWISXOWBWHCWAGUBUDVOZVIUPXOWEWKSXOWBWHCXPVJUPURVKRAWJWLAWJAWIVLUIWJV
+        PUIACGHIJKLMNQRVMWIVNVHVQAWLAWKVLUIWLVPUIACGHIJKLMNQRVRWKVNVHVQVSVT $.
+    $}
   $}
 
 
