@@ -151480,6 +151480,28 @@ $)
         BNSDERZNOBPZEUOTVBIUOTHVDVBEIUOVCVABNSUIUJUKURUSUQULUM $.
     $}
 
+    ${
+      ballotfilemc.c $e |- ( ph -> C e. O ) $.
+      ${
+        $d C w y z $.  $d K w y z $.  $d ph w y z $.
+        ballotfilemcdc.dc $e |- ( ph -> K e. ZZ ) $.
+        $( Lemma for ballotfi .  It is decidable whether a given integer is an
+           element of a particular element of ` O ` .  (Contributed by Jim
+           Kingdon, 7-Jun-2026.) $)
+        ballotfilemcdc $p |- ( ph -> DECID K e. C ) $=
+          ( vz cv wcel wdc wceq eleq2 dcbid wa vw vy c0 csn cun wn wo noel olci
+          df-dc mpbir a1i cfn wss cdif simpr cz ad3antrrr c1 caddc co cfz chash
+          cfv ballotfilemelo sylib simp1d simplrr eldifad sseldd elfzelzd zdceq
+          w3a syl2anc vex elsn2 dcbii sylibr dcun ex simp2d findcard2sd ) ACUAN
+          ZOZPCUCOZPZCUBNZOZPZCWGMNZUDZUEZOZPZCBOZPUAUBMBWCUCQWDWEWCUCCRSWCWGQW
+          DWHWCWGCRSWCWLQWDWMWCWLCRSWCBQWDWOWCBCRSWFAWFWEWEUFZUGWPWECUHUIWEUJUK
+          ULAWGUMOZTZWGBUNZWJBWGUOOZTZTZWIWNXBWITZWGWKCXBWIUPXCCWJQZPZCWKOZPXCC
+          UQOZWJUQOXEAXGWQXAWILURXCWJUSDEUTVAZXCBUSXHVBVAZWJABXIUNZWQXAWIAXJBUM
+          OZBVCVDDQZABFOXJXKXLVMKBDEFGHIJVEVFZVGURXCWJBWGWRWSWTWIVHVIVJVKCWJVLV
+          NXFXDCWJMVOVPVQVRVSVTAXJXKXLXMWAWB $.
+      $}
+    $}
+
     $( Let ` P ` be the uniform discrete probability measure over ` O ` . $)
     ballotfi.p $e |- P = ( x e. ( ~P O i^i Fin )
       |-> ( ( # ` x ) / ( # ` O ) ) ) $.
