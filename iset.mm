@@ -151870,6 +151870,15 @@ $)
         WNXNTUCUHOWOXPVOWQUCWJVPUKWIWTUQBXDVQXEWKBVRVSWIXMWJWRFSWJWDOXMWJTWIWJW
         PVTWJWAWBXLWCXOGTZWIFWEOGWEOXQFJWFGKWFFGWGUKUMWHWCVM $.
     $}
+
+    $( ` ( F `` C ) ` always starts counting at 0 .  (Contributed by Thierry
+       Arnoux, 25-Nov-2016.) $)
+    ballotfilemfval0 $p |- ( C e. O -> ( ( F ` C ) ` 0 ) = 0 ) $=
+      ( cc0 cfv co chash c0 eqtri wcel c1 cfz cin cdif cmin 0zd ballotfilemfval
+      id fz10 ineq1i incom in0 3eqtr2i fveq2i hash0 difeq1i 0dif oveq12i eqtrdi
+      0m0e0 ) BHUAZOBEPPUBOUCQZBUDZRPZVCBUEZRPZUFQZOVBABCDEOFGHIJKLMNVBUIVBUGUH
+      VHOOUFQOVEOVGOUFVESRPZOVDSRVDSBUDBSUDSVCSBUJUKBSULBUMUNUOUPTVGVIOVFSRVFSB
+      UESVCSBUJUQBURTUOUPTUSVATUT $.
   $}
 
 
