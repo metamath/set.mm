@@ -151916,6 +151916,26 @@ $)
         ZSZTUBZDVBUGZJIUMVCQIUMPVLVCJQIVHURUHZVKVADVBVMVJUTRTVMUQVIUSVHURFULUIU
         JUKUNUOUP $.
     $}
+
+    ${
+      $d i j C $.  $d c i F $.  $d j F $.  $d j M $.  $d j N $.  $d j O $.
+      $( Elements of ` ( O \ E ) ` .  (Contributed by Thierry Arnoux,
+         7-Dec-2016.) $)
+      ballotfilemodife $p |- ( C e. ( O \ E ) <->
+        ( C e. O /\ E. i e. ( 1 ... ( M + N ) ) ( ( F ` C ) ` i ) <_ 0 ) ) $=
+        ( vj wcel cc0 cz cdif wn wa cv cfv cle wbr c1 caddc cfz wrex eldif wral
+        co clt ballotfileme baib weq fveq2 breq2d cbvralv bitrdi wb 0z fz1ssfz0
+        sseli simpl elfzelz adantl ballotfilemfelz sylan2 zltnle ralbidva bitrd
+        sylancr notbid cfn 1z nnzi zaddcl mp2an fzfig zdcle ralrimiva dfrex2fin
+        wdc sylancl bitr4d breq1d cbvrexv bitr4di pm5.32i bitri ) BIEUARBIRZBER
+        ZUBZUCWNDUDZBFUEZUEZSUFUGZDUHGHUIUNZUJUNZUKZUCBIEULWNWPXCWNWPQUDZWRUEZS
+        UFUGZQXBUKZXCWNWPXFUBZQXBUMZUBZXGWNWOXIWNWOSXEUOUGZQXBUMZXIWNWOSWSUOUGZ
+        DXBUMZXLWOWNXNABCDEFGHIJKLMNOPUPUQXMXKDQXBDQURZWSXESUOWQXDWRUSZUTVAVBWN
+        XKXHQXBWNXDXBRZUCZSTRZXETRZXKXHVCVDXQWNXDSXAUJUNZRZXTXBYAXDXAVEVFWNYBUC
+        ABCDFXDGHIJKLMNOWNYBVGYBXDTRWNXDSXAVHVIVJVKZSXEVLVOVMVNVPWNXBVQRZXFWFZQ
+        XBUMXGXJVCUHTRXATRZYDVRGTRHTRYFGKVSHLVSGHVTWAUHXAWBWAWNYEQXBXRXTXSYEYCV
+        DXESWCWGWDXFQXBWEVOWHWTXFDQXBXOWSXESUFXPWIWJWKWLWM $.
+    $}
   $}
 
 
