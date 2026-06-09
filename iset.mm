@@ -99665,6 +99665,16 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
     UBSUSVJURUCVCABAFUDUEUFVFVGVBVFURUGVHRZUNUHSVEUTVFVBVDVCUTVFMBAUIUJVKUKULUM
     UO $.
 
+  ${
+    $d A x y $.
+    $( Whether an integer is an element of a finite set of integers is
+       decidable.  (Contributed by Jim Kingdon, 8-Jun-2026.) $)
+    zfidc $p |- ( ( S C_ ZZ /\ A e. ZZ /\ S e. Fin ) -> DECID A e. S ) $=
+      ( vx vy cz wss wcel cfn w3a weq wdc wral cv zdceq rgen2 simp2 simp1 simp3
+      a1i elssdc ) BEFZAEGZBHGZIZCDBEACDJKZDELCELUDUECDEECMDMNOSUAUBUCPUAUBUCQU
+      AUBUCRT $.
+  $}
+
   $( Integer 'Less than' expressed in terms of 'less than or equal to'.  Also
      see ~ ltleap which is a similar result for real numbers.  (Contributed by
      Jim Kingdon, 14-Mar-2020.) $)
