@@ -151879,6 +151879,23 @@ $)
       0m0e0 ) BHUAZOBEPPUBOUCQZBUDZRPZVCBUEZRPZUFQZOVBABCDEOFGHIJKLMNVBUIVBUGUH
       VHOOUFQOVEOVGOUFVESRPZOVDSRVDSBUDBSUDSVCSBUJUKBSULBUMUNUOUPTVGVIOVFSRVFSB
       UESVCSBUJUQBURTUOUPTUSVATUT $.
+
+    $( E is the event where A is strictly ahead throughout the count. $)
+    ballotth.e $e |- E = { c e. O | A. i e. ( 1 ... ( M + N ) )
+      0 < ( ( F ` c ) ` i ) } $.
+
+    ${
+      $d c d $.  $d d i $.  $d d C $.  $d d F $.  $d d M $.  $d d N $.
+      $d d O $.
+      $( Elements of ` E ` .  (Contributed by Thierry Arnoux, 14-Dec-2016.) $)
+      ballotfileme $p |- ( C e. E <->
+        ( C e. O /\ A. i e. ( 1 ... ( M + N ) ) 0 < ( ( F ` C ) ` i ) ) ) $=
+        ( vd cc0 cfv clt cv wbr c1 caddc co cfz wral wceq fveq1d breq2d ralbidv
+        fveq2 crab cbvrabv eqtri elrab2 ) RDUAZQUAZFSZSZTUBZDUCGHUDUEUFUEZUGZRU
+        QBFSZSZTUBZDVBUGQBIEURBUHZVAVFDVBVGUTVERTVGUQUSVDURBFULUIUJUKERUQJUAZFS
+        ZSZTUBZDVBUGZJIUMVCQIUMPVLVCJQIVHURUHZVKVADVBVMVJUTRTVMUQVIUSVHURFULUIU
+        JUKUNUOUP $.
+    $}
   $}
 
 
