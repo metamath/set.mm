@@ -15568,6 +15568,15 @@ $)
   $}
 
   ${
+    $d x y $.  $d x ph $.
+    $( If a formula does not contain a variable ` x ` , then it is equivalent
+       to the corresponding prototype of substitution with a fresh variable
+       (see ~ sb6 ).  (Contributed by BJ, 23-Jul-2023.) $)
+    equsv $p |- ( A. x ( x = y -> ph ) <-> ph ) $=
+      ( weq wi wal wex 19.23v a9ev a1bi bitr4i ) BCDZAEBFLBGZAEALABHMABCIJK $.
+  $}
+
+  ${
     $d x ph $.
     sbbidv.1 $e |- ( ph -> ( ps <-> ch ) ) $.
     $( Deduction substituting both sides of a biconditional, with ` ph ` and
@@ -15641,6 +15650,17 @@ $)
     sbimv $p |- ( [ y / x ] ( ph -> ps )
                   <-> ( [ y / x ] ph -> [ y / x ] ps ) ) $=
       ( wi wsb sbi1v sbi2v impbii ) ABECDFACDFBCDFEABCDGABCDHI $.
+  $}
+
+  ${
+    $d x ph $.
+    $( Substitution for a variable not occurring in a proposition.  See ~ sbf
+       for a version without disjoint variable condition on ` x , ph ` .  If
+       one adds a disjoint variable condition on ` x , t ` , then ~ sbv can be
+       proved directly by chaining ~ equsv with ~ sb6 .  (Contributed by BJ,
+       22-Dec-2020.) $)
+    sbv $p |- ( [ t / x ] ph <-> ph ) $=
+      ( ax-17 sbh ) ABCABDE $.
   $}
 
   ${
