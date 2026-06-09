@@ -151851,6 +151851,25 @@ $)
         RWFWUPUYIVJUPAUYIUJHVSXAXBUFUYJUXOYMUYDUXPAVXDWUNTUYKEUYLUXQWOFUBUYMUXR
         UXSUXTUYHUYHFUYMUYLUYQUYRUYHUYKEUYEUYLUYAUYBUYCWO $.
     $}
+
+    ${
+      $d b c M $.  $d b C $.
+      $( ` ( F `` C ) ` finishes counting at ` ( M - N ) ` .  (Contributed by
+         Thierry Arnoux, 25-Nov-2016.) $)
+      ballotfilemfmpn $p |- ( C e. O ->
+                                     ( ( F ` C ) ` ( M + N ) ) = ( M - N ) ) $=
+        ( wcel co cfv chash cmin wceq vb caddc c1 cfz cin cdif id cz cn nnaddcl
+        mp2an nnzi a1i ballotfilemfval wss cpw cfn ssrab3 elin1d elpwid sseqin2
+        cv sseli sylib fveq2d cab crab rabssab eleq2s cbvabv elab2g mpbid eqtrd
+        fveqeq2 1z fzfig elin2d fihashssdif mp3an2i nnnn0i hashfz1 mp1i oveq12d
+        cn0 cc nncni pncan2 3eqtrd ) BHOZFGUBPZBEQQUCWJUDPZBUEZRQZWKBUFRQZSPFGS
+        PWIABCDEWJFGHIJKLMNWIUGWJUHOZWIWJFUIOGUIOWJUIOJKFGUJUKZULZUMUNWIWMFWNGS
+        WIWMBRQZFWIWLBRWIBWKUOZWLBTWIBWKWIWKUPZUQBHWTUQUEZBIVBZRQFTZIXAHLURVCZU
+        SUTZBWKVAVDVEWIBXCIVFZOZWRFTZXGBXCIXAVGZHXIXFBXCIXAVHVCLVIUAVBZRQFTZXHU
+        ABXFHXJBFRVNXCXKIUAXBXJFRVNVJVKVLZVMWIWNWKRQZWRSPZWJFSPZGWKUQOZWIBUQOWS
+        WNXNTUCUHOWOXPVOWQUCWJVPUKWIWTUQBXDVQXEWKBVRVSWIXMWJWRFSWJWDOXMWJTWIWJW
+        PVTWJWAWBXLWCXOGTZWIFWEOGWEOXQFJWFGKWFFGWGUKUMWHWCVM $.
+    $}
   $}
 
 
