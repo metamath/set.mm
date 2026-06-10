@@ -92,6 +92,8 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+ 6-Jun-26 csbopabgALT csbopabw
+ 2-Jun-26 nssrex      [same]      Moved from GS's mathbox to main set.mm
  4-May-26 fvcod       [same]      Moved from GS's mathbox to main set.mm
  4-May-26 fsneq       [same]      Moved from GS's mathbox to main set.mm
  4-May-26 f1o2d2      mpof1o2d    Moved from SN's mathbox to main set.mm

@@ -23472,6 +23472,14 @@ $)
     ( cv wcel wa crab df-rab abeq2i ) BDCEAFBABCGABCHI $.
 
   ${
+    reqabi.1 $e |- A = { x e. B | ph } $.
+    $( Inference from equality of a class variable and a restricted class
+       abstraction.  (Contributed by NM, 16-Feb-2004.) $)
+    reqabi $p |- ( x e. A <-> ( x e. B /\ ph ) ) $=
+      ( cv wcel crab wa eleq2i rabid bitri ) BFZCGMABDHZGMDGAICNMEJABDKL $.
+  $}
+
+  ${
     $d x A $.
     $( An "identity" law for restricted class abstraction.  (Contributed by NM,
        9-Oct-2003.)  (Proof shortened by Andrew Salmon, 30-May-2011.) $)
@@ -71855,8 +71863,9 @@ $)
 
   ${
     $d A x y $.
-    $( The number of finite subsets of a finite set.  (Contributed by Jim
-       Kingdon, 18-May-2026.) $)
+    $( The number of finite subsets of a finite set.  For a similar theorem
+       with set size expressed using ` # ` ( ~ df-ihash ), see ~ hashpwfi .
+       (Contributed by Jim Kingdon, 18-May-2026.) $)
     2omapfi $p |- ( A e. Fin -> ( 2o ^m A ) ~~ ( ~P A i^i Fin ) ) $=
       ( vy vx cfn wcel c2o cmap co cv wdc wral crab cen wbr cvv simpll ad2antlr
       wa simpr syl3anc cpw cin 2omapen wceq eqid pwexg rabexd wss ssfidc fissfi
@@ -117664,6 +117673,26 @@ $)
       NOUAUBABPRUBST $.
   $}
 
+  $( The proportion of one binomial coefficient to another with ` N ` decreased
+     by 1.  (Contributed by Thierry Arnoux, 9-Nov-2016.) $)
+  bcm1n $p |- ( ( K e. ( 0 ... ( N - 1 ) ) /\ N e. NN ) ->
+    ( ( ( N - 1 ) _C K ) / ( N _C K ) ) = ( ( N - K ) / N ) ) $=
+    ( cc0 c1 cmin co cfz wcel cn cbc cdiv wceq cmul caddc cc zcnd adantr mpbird
+    wbr clt bcp1n nnz adantl 1cnd npcand oveq1d oveq12d oveq2d eqeq12d imbitrid
+    wa 3impia 3anidm13 crp cn0 cle elfznn0 simpr nnnn0d cz elfzelz zred elfzle2
+    wb zltlem1 syl2an ltled elfz2nn0 syl3anbrc bcrpcl syl rpcnd subcld cneg cap
+    negsubdi2d resubcld recnd addlidd breqtrrd 0red ltsubaddd eqbrtrrd divclapd
+    lt0ap0d negap0d rpap0d divmulap2d bccl2 nnap0d recdivapd 3eqtr3d ) ACBDEFZG
+    FHZBIHZUKZDBAJFZWMAJFZKFZKFDBBAEFZKFZKFWRWQKFWTBKFWPWSXADKWPWSXALWQWRXAMFZL
+    ZWNWOXCWNWOWNXCWNWMDNFZAJFZWRXDXDAEFZKFZMFZLWPXCAWMUAWPXEWQXHXBWPXDBAJWPBDW
+    OBOHWNWOBBUBZPUCZWPUDUEZUFWPXGXAWRMWPXDBXFWTKXKWPXDBAEXKUFUGUHUIUJULUMWPWQX
+    AWRWPWQWPACBGFHZWQUNHWPAUOHZBUOHABUPSXLWNXMWOAWMUQQWPBWNWOURZUSWPABWPAWNAUT
+    HZWOACWMVAZQVBZWPBWOBUTHZWNXIUCVBZWPABTSZAWMUPSZWNYAWOACWMVCQWNXOXRXTYAVDWO
+    XPXIABVEVFRZVGABVHVIZABVJVKVLZWPBWTXJWPBAXJWNAOHWOWNAXPPQZVMZWPABEFZVNWTCVO
+    WPABYEXJVPWPYGWPYGWPABXQXSVQZVRWPYGYHWPYGCTSACBNFZTSWPABYITYBWPBXJVSVTWPABC
+    XQXSWPWAWBRWEWFWCZWDWPWRWNWRUNHWOAWMVJQZVLZWPWRYKWGZWHRUHWPWQWRYDYLWPWQWPXL
+    WQIHYCABWIVKWJYMWKWPBWTXJYFWPBXNWJYJWKWL $.
+
   $( Compute the binomial coefficient " ` N ` choose 2 " from " ` ( N - 1 ) `
      choose 2 ":  (N-1) + ( (N-1) 2 ) = ( N 2 ).  (Contributed by Alexander van
      der Vekens, 7-Jan-2018.) $)
@@ -118388,6 +118417,54 @@ $)
       BWISUUGUUPXFUVJUVKWJUVDUUTUUJBWKSWLWMWNUQWOUUGYJUUIKYCUUGYJYAWPRJZXLIJZUU
       IUUGUUBUVEYJUVQKUUSUVFUUBUVEEZYIUVPXLIUVBUVRYIUVPKWQUVCXRYDTWRVHPSUUGYAXL
       UUGUUBYAWSDUUSUUBYAXRUKUNVTUUGXFXLWSDUUTUUAVTXAWNWOWTXBXEXFXCXD $.
+  $}
+
+  ${
+    $d x y z B $.  $d x y z A $.
+    $( The size of the set exponential of two finite sets is the exponential of
+       their sizes.  (This is the original motivation behind the notation for
+       set exponentiation.)  (Contributed by Mario Carneiro, 5-Aug-2014.)
+       (Proof shortened by AV, 18-Jul-2022.) $)
+    hashmap $p |- ( ( A e. Fin /\ B e. Fin ) ->
+                   ( # ` ( A ^m B ) ) = ( ( # ` A ) ^ ( # ` B ) ) ) $=
+      ( vz cfn wcel cmap co chash cfv cexp wceq wi c0 fveq2d oveq2d eqeq12d cvv
+      oveq2 cmul syl2anc vx vy cv csn fveq2 imbi2d c1 hashcl nn0cnd exp0d hash0
+      cun cc0 oveq2i a1i mapdm0 0ex hashsng mp1i eqtrd 3eqtr4rd wn wa oveq1 cxp
+      cen wbr cin vsnex elex adantr simprr disjsn sylibr mapunen syl31anc simpl
+      vex wb simprl unsnfi syl3anc mapfi adantrr elv sylancl xpfi hashen mpbird
+      snfig hashxp mapsnend 3eqtrd caddc hashunsng adantl cc ad2antrl imbitrrid
+      cn0 expp1d expcom a2d findcard2s impcom ) BDEADEZABFGZHIZAHIZBHIZJGZKZXFA
+      UAUCZFGZHIZXIXMHIZJGZKZLXFAMFGZHIZXIMHIZJGZKZLXFAUBUCZFGZHIZXIYDHIZJGZKZL
+      XFAYDCUCZUDZULZFGZHIZXIYLHIZJGZKZLXFXLLUAUBCBXMMKZXRYCXFYRXOXTXQYBYRXNXSH
+      XMMAFRNYRXPYAXIJXMMHUEOPUFXMYDKZXRYIXFYSXOYFXQYHYSXNYEHXMYDAFRNYSXPYGXIJX
+      MYDHUEOPUFXMYLKZXRYQXFYTXOYNXQYPYTXNYMHXMYLAFRNYTXPYOXIJXMYLHUEOPUFXMBKZX
+      RXLXFUUAXOXHXQXKUUAXNXGHXMBAFRNUUAXPXJXIJXMBHUEOPUFXFXIUMJGZUGYBXTXFXIXFX
+      IAUHUIZUJYBUUBKXFYAUMXIJUKUNUOXFXTMUDZHIZUGXFXSUUDHADUPNMQEUUEUGKXFUQMQUR
+      USUTVAYDDEZYJYDEVBZVCZXFYIYQXFUUHYIYQLYIYQXFUUHVCZYFXISGZYHXISGZKYFYHXISV
+      DUUIYNUUJYPUUKUUIYNYEAYKFGZVEZHIZYFUULHIZSGZUUJUUIYNUUNKZYMUUMVFVGZUUIYDQ
+      EZYKQEZAQEZYDYKVHMKZUURUUSUUIUBVRUOUUTUUICVIUOXFUVAUUHADVJVKUUIUUGUVBXFUU
+      FUUGVLZYDYJVMVNYDYKAQQQVOVPUUIYMDEZUUMDEZUUQUURVSUUIXFYLDEZUVDXFUUHVQZUUI
+      UUFYJQEZUUGUVFXFUUFUUGVTUVHUUICVRUOZUVCYDYJQWAWBAYLWCTUUIYEDEZUULDEZUVEXF
+      UUFUVJUUGAYDWCWDZUUIXFYKDEZUVKUVGUVMCYJQWJWEAYKWCWFZYEUULWGTYMUUMWHTWIUUI
+      UVJUVKUUNUUPKUVLUVNYEUULWKTUUIUUOXIYFSUUIUUOXIKZUULAVFVGZUUIAYJDQUVGUVIWL
+      UUIUVKXFUVOUVPVSUVNUVGUULAWHTWIOWMUUIYPXIYGUGWNGZJGUUKUUIYOUVQXIJUUHYOUVQ
+      KZXFUUHUVRLCYDYJQWOWEWPOUUIXIYGXFXIWQEUUHUUCVKUUFYGWTEXFUUGYDUHWRXAUTPWSX
+      BXCXDXE $.
+  $}
+
+  ${
+    $( The number of finite subsets of a finite set is two raised to the power
+       of the size of the set.  For a similar theorem with set size expressed
+       using equinumerosity, see ~ 2omapfi .  For the number of subsets (which
+       need not be finite) of a set, see ~ pw1mapen .  (Contributed by Jim
+       Kingdon, 5-Jun-2026.) $)
+    hashpwfi $p |- ( A e. Fin
+        -> ( # ` ( ~P A i^i Fin ) ) = ( 2 ^ ( # ` A ) ) ) $=
+      ( cfn wcel c2o cmap co chash cfv cpw cin c2 cexp wceq cen wbr 2omapfi com
+      wb 2onn mpan nnfi ax-mp mapfi fipwfi hashen syl2anc mpbird hashmap oveq1i
+      hash2 eqtrdi eqtr3d ) ABCZDAEFZGHZAIBJZGHZKAGHZLFZUMUOUQMZUNUPNOZAPUMUNBC
+      ZUPBCUTVARDBCZUMVBDQCVCSDUAUBZDAUCTAUDUNUPUEUFUGUMUODGHZURLFZUSVCUMUOVFMV
+      DDAUHTVEKURLUJUIUKUL $.
   $}
 
   ${
@@ -151371,6 +151448,97 @@ $)
       CZUDZNGVLNOPVGDVKVINOZVKNOPLQOVHQOVMUFVHAROBROVHROEFABUGSTLVHUHSVIUIUJVGU
       KZDVKURPVNDVKVEVKOZVFQOAQOVNVOVFVOVENOVFULOVEVJNUMVEUNUOUPAETVFAUQUSUTVAV
       BVCVD $.
+
+    $( The size of the universe is a binomial coefficient.  (Contributed by
+       Thierry Arnoux, 23-Nov-2016.) $)
+    ballotfilem1 $p |- ( # ` O ) = ( ( M + N ) _C M ) $=
+      ( chash cfv cv wceq c1 co cfn cbc wcel cz nnzi mp2an cn caddc cfz cpw cin
+      crab fveq2i zaddcl fzfig hashfibc cn0 nnaddcl nnnn0i hashfz1 ax-mp oveq1i
+      1z 3eqtr2i ) CHIDJHIAKDLABUAMZUBMZUCNUDUEZHIZUSHIZAOMZURAOMCUTHGUFUSNPZAQ
+      PZVCVAKLQPURQPZVDUPVEBQPVFAERZBFRABUGSLURUHSVGDUSAUISVBURAOURUJPVBURKURAT
+      PBTPURTPEFABUKSULURUMUNUOUQ $.
+
+    $( The size of the universe is at least one.  (Contributed by Jim Kingdon,
+       4-Jun-2026.) $)
+    ballotfilemonn $p |- ( # ` O ) e. NN $=
+      ( co cn cc0 wcel cz cle wbr wa pm3.2i ax-mp nnzi ltled a1i chash caddc 0z
+      cfv cbc ballotfilem1 cfz w3a nnaddcl 3pm3.2i 0red nnre nngt0 crp ltaddrpd
+      nnred nnrp elfz2 mpbir2an bccl2 eqeltri ) CUAUDABUBHZAUEHZIABCDEFGUFAJVBU
+      GHKZVCIKVDJLKZVBLKZALKZUHJAMNZAVBMNZOVEVFVGUCVBAIKZBIKZOVBIKZVJVKEFPABUIQ
+      ZRAERUJVHVIVJVHEVJJAVJUKAULZAUMSQVJVIEVJAVBVNVJVBVLVJVMTUPVJABVNBUNKZVJVK
+      VOFBUQQTUOSQPAJVBURUSAVBUTQVA $.
+
+    ${
+      $d c d $.  $d d C $.  $d d M $.  $d d N $.
+      $( Elementhood in ` O ` .  (Contributed by Thierry Arnoux,
+         17-Apr-2017.) $)
+      ballotfilemelo $p |- ( C e. O <->
+          ( C C_ ( 1 ... ( M + N ) ) /\ C e. Fin /\ ( # ` C ) = M ) ) $=
+        ( vd c1 co cfn wcel chash cfv wceq wa cv fveqeq2 crab caddc cfz cpw cin
+        wss w3a elfpw anbi1i cbvrabv eqtri elrab2 df-3an 3bitr4i ) AJBCUAKUBKZU
+        CLUDZMZANOBPZQAUNUEZALMZQZUQQADMURUSUQUFUPUTUQAUNUGUHIRZNOBPZUQIAUODVAA
+        BNSDERZNOBPZEUOTVBIUOTHVDVBEIUOVCVABNSUIUJUKURUSUQULUM $.
+    $}
+
+    $( Let ` P ` be the uniform discrete probability measure over ` O ` . $)
+    ballotfi.p $e |- P = ( x e. ( ~P O i^i Fin )
+      |-> ( ( # ` x ) / ( # ` O ) ) ) $.
+
+    ${
+      $d c i x O $.  $d M x y $.  $d N x y $.
+      $( The probability that the first vote picked in a count is a B.
+         (Contributed by Thierry Arnoux, 23-Nov-2016.) $)
+      ballotfilem2 $p |- ( P ` { c e. O | -. 1 e. c } ) = ( N / ( M + N ) ) $=
+        ( vi c1 wcel co cfn wceq mp2an wa c2 wbr vy cv crab cfv caddc cmin cdiv
+        wn cbc chash cpw cin ballotfilemofi ssrab2 elpwi2 wtru a1i wdc wral cfz
+        cz 1z cn nnaddcl nnzi fzfig fidceq mp3an1 cuz nnuz eleqtri eluzfz1 mp1i
+        rgen2 reqabi simplbi elin sylib simpld elpwid simprd elssdc dcn ssfirab
+        rgen mptru elini fveq2 oveq1d cr hashcl ax-mp ballotfilemonn nn0nndivcl
+        syl cn0 elexi fvmpt an32 wss 2eluzge1 fzss1 sspwi elinel1 elinel2 elind
+        sselid cle clt 1lt2 wb zltnle mpbi elfzle1 mto elelpwi ancom mtbi velpw
+        2z cab wi impbii 1p1e2 nnge1 1re nnrei letri oveq1i abid2 eqtr3i anbi1i
+        cneg cc nncni 2cn ax-1cn 3eqtri eqtri cc0 imnani jca wal ssab 1ex eleq1
+        eqid eqeq1 notbid imbi12d spcv simpr simplr eqeltrrd simpll pm2.65da ex
+        mt2i alrimiv bitr2i ssin wo 1le2 le2addi eqbrtrri readdcli eluz elfzp12
+        2re mpbir biimpi orcanai eleqtrdi ss2abi inab ineq1i 3sstr3i sstr mpan2
+        sylbi syl2anb sylan sylibr adantr 3bitr4i fveq2i hashfibc eluz1i hashfz
+        rabbia2 mpbir2an addcli subadd23 mp3an negsubdi2i negeqi oveq2i negsubi
+        2m1e1 ballotfilem1 oveq12i 0re crp nngt0i elrpii ltaddrp w3a 0z elfzm11
+        0le1 mpbir3an bcm1n pncan2 ) LFUBZMZUHZFEUCZBUDZCDUENZLUFNZCUINZUXSCUIN
+        ZUGNZUXSCUFNZUXSUGNZDUXSUGNUXRUXQUJUDZEUJUDZUGNZUYCUXQEUKZOULZMUXRUYHPU
+        XQUYIOUXQEOCDEFGHIUMZUXPFEUNUOUXQOMZUPUXPFEEOMUPUYKUQUXPURZFEUSUPUYMFEU
+        XNEMZUXOURUYMUYNAUAUXNLUXSUTNZLAUBZUAUBZPURZUAUYOUSAUYOUSUYNUYRAUAUYOUY
+        OUYOOMZUYPUYOMUYQUYOMUYRLVAMZUXSVAMZUYSVBUXSCVCMZDVCMZUXSVCMZGHCDVDQZVE
+        ZLUXSVFQUYOUYPUYQVGVHVNUQUXSLVIUDZMZLUYOMUYNUXSVCVUGVUEVJVKLUXSVLVMUYNU
+        XNUYOUYNUXNUYOUKZMZUXNOMZUYNUXNVUIOULZMZVUJVUKRUYNVUMUXNUJUDCPZVUNFEVUL
+        IVOZVPUXNVUIOVQVRZVSVTUYNVUJVUKVUPWAWBUXOWCWOWEUQWDWFZWGAUXQUYPUJUDZUYG
+        UGNUYHUYJBUYPUXQPVURUYFUYGUGUYPUXQUJWHWIJUYHWJUYFWPMZUYGVCMUYHWJMUYLVUS
+        VUQUXQWKWLCDEFGHIWMUYFUYGWNQWQWRWLUYFUYAUYGUYBUGVUNFSUXSUTNZUKZOULZUCZU
+        JUDZUYFUYAVVCUXQUJVUNUXPFVVBEVUMUXPRZVUNRVUMVUNRZUXPRUXNVVBMZVUNRUYNUXP
+        RVUMUXPVUNWSVVGVVEVUNVVGVVEVVGVUMUXPVVGVUIOUXNVVGVVAVUIUXNVUTUYOSVUGMVU
+        TUYOWTXASLUXSXBWLXCUXNVVAOXDZXGUXNVVAOXEXFVVGUXNVVAMZUXPVVHVVIUXOUXOVVI
+        RZVVIUXORVVJLVUTMZVVKSLXHTZLSXITZVVLUHZXJUYTSVAMZVVMVVNXKVBXTLSXLQXMLSU
+        XSXNXOLUXNVUTXPXOUXOVVIXQXRUUAWOUUBVVEVVAOUXNVVEUXNVUTWTZVVIVUMVUJUXPVV
+        PUXNVUIOXDVUJUXNUYOWTZUXNKUBZLPZUHZKYAZWTZVVPUXPFUYOXSVWBVVRUXNMZVVTYBZ
+        KUUCZUXPVVTKUXNUUDVWEUXPVWEUXOLLPZLUUGVWDUXOVWFUHZYBKLUUEVVSVWCUXOVVTVW
+        GVVRLUXNUUFVVSVVSVWFVVRLLUUHUUIUUJUUKUURUXPVWDKUXPVWCVVTUXPVWCRZVVSUXOV
+        WHVVSRVVRLUXNVWHVVSUULUXPVWCVVSUUMUUNUXPVWCVVSUUOUUPUUQUUSYCUUTVVQVWBRU
+        XNUYOVWAULZWTZVVPUXNUYOVWAUVAVWJVWIVUTWTVVPVVRUYOMZVVTRZKYAZVVRVUTMZKYA
+        VWIVUTVWLVWNKVWLVVRLLUENZUXSUTNZVUTVWKVVSVVRVWPMZVWKVVSVWQUVBZVUHVWKVWR
+        XKVUHLUXSXHTZLSXHTSUXSXHTZVWSUVCVWOSUXSXHYDLCXHTZLDXHTZVWOUXSXHTVUBVXAG
+        CYEWLZVUCVXBHDYEWLLLCDYFYFCGYGZDHYGZUVDQUVEZLSUXSYFUVICDVXDVXEUVFYHQUYT
+        VUAVUHVWSXKVBVUFLUXSUVGQUVJVVRLUXSUVHWLUVKUVLVWOSUXSUTYDYIUVMUVNVWKKYAZ
+        VWAULVWMVWIVWKVVTKUVOVXGUYOVWAKUYOYJUVPYKKVUTYJUVQUXNVWIVUTUVRUVSUVTUWA
+        UWBFVUTXSUWCVUMVUKUXPUXNVUIOXEUWDXFYCYLUYNVVFUXPVUOYLUWEUWJUWFVUTUJUDZC
+        UINZVVDUYAVUTOMZCVAMZVXIVVDPVVOVUAVXJXTVUFSUXSVFQCGVEZFVUTCUWGQVXHUXTCU
+        IVXHUXSLYMZUENZUXTVXHUXSSUFNLUENZUXSLSUFNZUENZVXNUXSSVIUDMZVXHVXOPVXRVU
+        AVWTVUFVXFSUXSXTUWHUWKSUXSUWIWLUXSYNMSYNMLYNMVXOVXQPCDCGYOZDHYOZUWLZYPY
+        QUXSSLUWMUWNVXPVXMUXSUESLUFNZYMVXPVXMSLYPYQUWOVYBLUWSUWPYKUWQYRUXSLVYAY
+        QUWRYSYIYKYKCDEFGHIUWTUXAYSCYTUXTUTNMZVUDUYCUYEPVYCVXKYTCXHTZCUXSXITZVX
+        LYTLXHTVXAVYDUXJVXCYTLCUXBYFVXDYHQCWJMDUXCMVYEVXDDVXEDHUXDUXECDUXFQYTVA
+        MVUAVYCVXKVYDVYEUXGXKUXHVUFCYTUXSUXIQUXKVUECUXSUXLQUYDDUXSUGCYNMDYNMUYD
+        DPVXSVXTCDUXMQYIYR $.
+    $}
   $}
 
 
@@ -210915,7 +211083,8 @@ $)
       NNVFEIUQUP $.
   $}
 
-  $( Two ways of stating real number trichotomy.  (Contributed by Jim Kingdon,
+  $( Two ways of stating real number trichotomy.  See also ~ cndcap which is
+     similar but for complex number apartness.  (Contributed by Jim Kingdon,
      23-Aug-2023.) $)
   triap $p |- ( ( A e. RR /\ B e. RR ) -> ( ( A < B \/ A = B \/ B < A )
       <-> DECID A =//= B ) ) $=
@@ -211842,6 +212011,27 @@ $)
       WQVFHTZMZMZVGWMXGVEVKJFZKZWMDLVFVKVFGXHWLVKVFVEJOPXGVNXIDLICLVEVJVEGZVMXI
       DLXJVLXHVJVEVKJQPRVOXFVAXGVEVOWQXEUKVBSXGVFVOWQXEUMVBSXFVGWMVDVOWRURUSUTV
       C $.
+  $}
+
+  ${
+    $d u v w x y z $.
+    $( Real number trichotomy implies that if a product is zero, one of its
+       factors must be zero.  (Contributed by Jim Kingdon, 27-May-2026.) $)
+    trimul0or $p |- ( A. x e. RR A. y e. RR ( x < y \/ x = y \/ y < x )
+        -> A. u e. CC A. v e. CC ( ( u x. v ) = 0 -> ( u = 0 \/ v = 0 ) ) ) $=
+      ( vz vw cv wbr wceq wral cc0 wo cc wcel wa cap wn simpr adantr wdc clt cr
+      w3o co wi simprl ad3antrrr simplrr ad2antrr simpllr simplr mulap0d mulcld
+      cmul wb 0cn apti sylancl mpbid pm2.21dd mpbird olcd a1d breq1 dcbid breq2
+      cndcap biimpi r19.21bi 0cnd rspcdva ralrimiva exmiddc mpjaodan ralrimivva
+      ex syl orcd ) AGZBGZUAHVSVTIVTVSUAHUCBUBJAUBJZDGZCGZUNUDZKIZWBKIZWCKIZLZU
+      EZDCMMWAWBMNZWCMNZOZOZWBKPHZWIWNQZWMWNOZWCKPHZWIWQQZWPWQOZWEWHWSWEOZWDKPH
+      ZWHWTWBWCWMWJWNWQWEWAWJWKUFZUGZWPWKWQWEWAWJWKWNUHZUIZWMWNWQWEUJWPWQWEUKUL
+      WTWEXAQZWSWERWTWDMNKMNZWEXFUOWTWBWCXCXEUMUPWDKUQURUSUTVPWPWROZWHWEXHWGWFX
+      HWGWRWPWRRXHWKXGWGWRUOWPWKWRXDSUPWCKUQURVAVBVCWPWQTZWQWRLWPEGZKPHZTZXIEMW
+      CXJWCIXKWQXJWCKPVDVEWMXLEMJWNWMXLEMWMXJMNOZXJFGZPHZTZXLFMKXNKIXOXKXNKXJPV
+      FVEWMXPFMJZEMWAXQEMJZWLWAXRABEFVGVHSVIXMVJVKVLZSXDVKWQVMVQVNWMWOOZWHWEXTW
+      FWGXTWFWOWMWORXTWJXGWFWOUOWMWJWOXBSUPWBKUQURVAVRVCWMWNTZWNWOLWMXLYAEMWBXJ
+      WBIXKWNXJWBKPVDVEXSXBVKWNVMVQVNVO $.
   $}
 
   ${
