@@ -14279,6 +14279,12 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>df-psr</td>
+  <td>~ df-fpsr</td>
+  <td>changes ` gsum ` to ` gfsum `</td>
+</tr>
+
+<tr>
   <td>df-mvr</td>
   <td><i>none</i></td>
   <td>it appears that the set.mm definition might work (most theorems
@@ -14291,6 +14297,12 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>~ df-mplcoe</td>
   <td>our definition does not assume decidable equality for
   coefficients</td>
+</tr>
+
+<tr>
+  <td>psrval</td>
+  <td>~ psrvalf</td>
+  <td>changes ` gsum ` to ` gfsum `</td>
 </tr>
 
 <tr>
@@ -14384,12 +14396,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td id="missing-psrmulr">psrmulr</td>
   <td><i>none</i></td>
-  <td>although this theorem itself just extracts the multiplication
-  slot from the result of ~ psrval (analogous to ~ psrplusgg ),
-  the fundamental issue with ` mPwSer ` multiplication is that
-  the set.mm definition of that slot uses ` gsum ` on something
-  which is not a range of consecutive integers (as required by
-  ~ df-igsum )</td>
+  <td>now that we are using ` gfsum ` in ~ psrvalf we should
+  be able to adapt this theorem (analogous to ~ psrplusgg )</td>
 </tr>
 
 <tr>
