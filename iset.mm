@@ -152003,6 +152003,21 @@ $)
       STXAXCXPYDVQZXAXOXCYLWIZYAXAXOUBZYMXBXPYCRUFUGVQWIYNABCDFRGHIJKLMNOXAXOWB
       RUKQYNWCWDWEWFWJWGVSWHXMXRDRXKXFRVQZXIXQYOXHXPSTXFRXGWKVSWLWMWNXIDXKWOWPX
       DXAXLABCDEFGHIJKLMNOPWQWRWTWS $.
+
+    $( From now on, we assume that A wins the poll. $)
+    ballotth.mgtn $e |- N < M $.
+
+    $d i k E $.  $d k C $.
+    $( If A is not ahead throughout, there is a ` k ` where votes are tied.
+       (Contributed by Thierry Arnoux, 1-Dec-2016.) $)
+    ballotfilem5 $p |- ( C e. ( O \ E ) ->
+      E. k e. ( 1 ... ( M + N ) ) ( ( F ` C ) ` k ) = 0 ) $=
+      ( wcel co cdif caddc eldifi a1i nnaddcld cfv cc0 cle wbr ballotfilemodife
+      cn cv c1 cfz wrex simprbi cmin clt nnrei posdifi mpbi ballotfilemfmpn syl
+      wceq breqtrrid ballotfilemfc0 ) BJFUASZABCDEGHIUBTZHIJKLMNOPBJFUCZVGHIHUK
+      SVGLUDIUKSVGMUDUEVGBJSZDULBGUFZUFUGUHUIDUMVHUNTUOABCDFGHIJKLMNOPQUJUPVGUG
+      HIUQTZVHVKUFZURIHURUIUGVLURUIRIHIMUSHLUSUTVAVGVJVMVLVDVIABCDGHIJKLMNOPVBV
+      CVEVF $.
   $}
 
 
