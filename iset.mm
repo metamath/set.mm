@@ -152038,6 +152038,28 @@ $)
         WGVMEVNWJWFVLUDWJVIWEVKWDVJGUOUPUQURUSVAVBUKVHVCWAVHVCVDUKVTVHULVEVFVG
         $.
     $}
+
+    ${
+      $d C y z $.  $d E z $.  $d F y z $.  $d M y z $.  $d N y z $.  $d O z $.
+      $d k y z $.  $d i z $.
+      $( Properties of ` ( I `` C ) ` .  (Contributed by Thierry Arnoux,
+         12-Dec-2016.)  (Revised by AV, 6-Oct-2020.) $)
+      ballotfilemiex $p |- ( C e. ( O \ E )
+          -> ( ( I ` C ) e. ( 1 ... ( M + N ) )
+          /\ ( ( F ` C ) ` ( I ` C ) ) = 0 ) ) $=
+        ( vz vy cdif wcel cfv cv cc0 wceq c1 caddc co cfz crab clt ballotfilemi
+        wa cr cinf cn wss wdc wral wex ssrab2 fz1ssnn sstri a1i nnz adantl 1zzd
+        cz nnaddcl mp2an fzdcel syl3anc eldifi adantr ballotfilemfelz 0zd zdceq
+        syl2anc dcand fveqeq2 elrab dcbii sylibr ralrimiva ballotfilem5 nnmindc
+        nnzi wrex rabn0m eqeltrd sylib ) BKFUCUDZBHUEZEUFZBGUEZUEUGUHZEUIIJUJUK
+        ZULUKZUMZUDWPXAUDWPWRUEUGUHZUPWOWPXBUQUNURZXBABCDEFGHIJKLMNOPQRSTUOWOXB
+        USUTZUAUFZXBUDZVAZUAUSVBUBUFXBUDUBVCZXDXBUDXEWOXBXAUSWSEXAVDWTVEVFVGWOX
+        HUAUSWOXFUSUDZUPZXFXAUDZXFWRUEZUGUHZUPZVAXHXKXLXNXKXFVKUDZUIVKUDWTVKUDZ
+        XLVAXJXPWOXFVHVIZXKVJXQXKWTIUSUDJUSUDWTUSUDMNIJVLVMWJVGXFUIWTVNVOXKXMVK
+        UDUGVKUDXNVAXKABCDGXFIJKLMNOPQWOBKUDXJBKFVPVQXRVRXKVSXMUGVTWAWBXGXOWSXN
+        EXFXAWQXFUGWRWCWDWEWFWGWOWSEXAWKXIABCDEFGIJKLMNOPQRSWHWSEUBXAWLWFUAUBXB
+        WIVOWMWSXCEWPXAWQWPUGWRWCWDWN $.
+    $}
   $}
 
 
