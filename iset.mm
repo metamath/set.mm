@@ -152018,6 +152018,26 @@ $)
       SVGLUDIUKSVGMUDUEVGBJSZDULBGUFZUFUGUHUIDUMVHUNTUOABCDFGHIJKLMNOPQUJUPVGUG
       HIUQTZVHVKUFZURIHURUIUGVLURUIRIHIMUSHLUSUTVAVGVJVMVLVDVIABCDGHIJKLMNOPVBV
       CVEVF $.
+
+    $( Let I be the first time a tie is reached in a given count. $)
+    ballotth.i $e |- I = ( c e. ( O \ E ) |-> inf ( { k e. ( 1 ... ( M + N ) )
+      | ( ( F ` c ) ` k ) = 0 } , RR , < ) ) $.
+
+    $d I k $.  $d c d k $.  $d c i k E $.
+    ${
+      $d d C $.  $d d E $.  $d d F $.  $d d M $.  $d d N $.  $d d O $.
+      $( Value of ` I ` for a given counting ` C ` .  (Contributed by Thierry
+         Arnoux, 1-Dec-2016.)  (Revised by AV, 6-Oct-2020.) $)
+      ballotfilemi $p |- ( C e. ( O \ E ) -> ( I ` C ) = inf (
+       { k e. ( 1 ... ( M + N ) ) | ( ( F ` C ) ` k ) = 0 } , RR , < ) ) $=
+        ( vd cv cfv cc0 wceq c1 caddc co cfz crab cr clt cinf cdif fveq2 fveq1d
+        eqeq1d rabbidv infeq1d cmpt cbvmptv eqtri wcel reex infex2g ax-mp fvmpt
+        cvv ) UABEUBZUAUBZGUCZUCZUDUEZEUFIJUGUHUIUHZUJZUKULUMZVIBGUCZUCZUDUEZEV
+        NUJZUKULUMZKFUNZHVJBUEZUKVOVTULWCVMVSEVNWCVLVRUDWCVIVKVQVJBGUOUPUQURUSH
+        LWBVILUBZGUCZUCZUDUEZEVNUJZUKULUMZUTUAWBVPUTTLUAWBWIVPWDVJUEZUKWHVOULWJ
+        WGVMEVNWJWFVLUDWJVIWEVKWDVJGUOUPUQURUSVAVBUKVHVCWAVHVCVDUKVTVHULVEVFVG
+        $.
+    $}
   $}
 
 
