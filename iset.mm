@@ -152060,6 +152060,27 @@ $)
         EXFXAWQXFUGWRWCWDWEWFWGWOWSEXAWKXIABCDEFGIJKLMNOPQRSWHWSEUBXAWLWFUAUBXB
         WIVOWMWSXCEWPXAWQWPUGWRWCWDWN $.
     $}
+
+    $d c E $.  $d i I $.
+    ${
+      $d c k y z $.  $d y z C $.  $d y z F $.  $d y z M $.  $d y z N $.
+      $( The first tie cannot be reached at the first pick.  (Contributed by
+         Thierry Arnoux, 12-Mar-2017.) $)
+      ballotfilemi1 $p |- ( ( C e. ( O \ E ) /\ -. 1 e. C ) ->
+                                                           ( I ` C ) =/= 1 ) $=
+        ( cdif wcel c1 wn wa cfv wceq cc0 cmin co 0re 1re resubcli clt wbr 0lt1
+        cr wb ltsub23 mp3an 0m0e0 breq1i bitr2i mpbi gtneii nesymi caddc eldifi
+        wi 1nn a1i ballotfilemfp1 simpld imp fveq2i oveq1i ballotfilemfval0 syl
+        cn 1m1e0 adantr oveq1d 3eqtrrd eqeq1d mtbii cfz ballotfilemiex ad2antrr
+        simprd fveqeq2 adantl mpbid mtand neqned ) BKFUAUBZUCBUBZUDZUEZBHUFZUCW
+        RWSUCUGZUCBGUFZUFZUHUGZWRUHUCUIUJZUHUGXCUHXDXDUHUHUCUKULUMUHUCUNUOZXDUH
+        UNUOZUPXFUHUHUIUJZUCUNUOZXEUHUQUBZUCUQUBXIXFXHURUKULUKUHUCUHUSUTXGUHUCU
+        NVAVBVCVDVEVFWRXDXBUHWRXBUCUCUIUJZXAUFZUCUIUJZUHXAUFZUCUIUJZXDWOWQXBXLU
+        GZWOWQXOVIWPXBXKUCVGUJUGVIWOABCDGUCIJKLMNOPQBKFVHZUCVSUBWOVJVKVLVMVNXLX
+        NUGWRXKXMUCUIXJUHXAVTVOVPVKWRXMUHUCUIWOXMUHUGZWQWOBKUBXQXPABCDGIJKLMNOP
+        QVQVRWAWBWCWDWEWRWTUEWSXAUFUHUGZXCWOXRWQWTWOWSUCIJVGUJWFUJUBXRABCDEFGHI
+        JKLMNOPQRSTWGWIWHWTXRXCURWRWSUCUHXAWJWKWLWMWN $.
+    $}
   $}
 
 
