@@ -109096,6 +109096,25 @@ $)
         VJAWRWEBVKVLVMVNVSZVOAWDFCRUCSZKWEBXFXBXCWEVPAWDFCVQXDWDGVRVGJVTWAAODWH
         PXEWBXEWC $.
     $}
+
+    ${
+      $d A n $.  $d M n $.  $d N n $.  $d n ph $.
+      $( The infimum of a decidable inhabited subset of an integer range is a
+         lower bound for that set.  (Contributed by Jim Kingdon,
+         12-Jun-2026.) $)
+      infssfzledc $p |- ( ph -> inf ( S , RR , < ) <_ A ) $=
+        ( cr clt cinf cle wa cuz cfv crab wcel cz cv wbr cfz co elfzuz ad2antrl
+        elfzle2 simprr jca32 simprl simprrl wb eluzelz adantr wsbc nfcv elrabsf
+        eleq2i bitri sylib simpld elfzel2 eluz syl2anr elfzuzb sylanbrc simprrr
+        syl mpbird jca impbida rabbidva2 eqtrid infeq1d elfzel1 eleqtrd elfzelz
+        eqid wdc zdcle dcand infssuzledc eqbrtrd ) ADKLMEUAZGNUBZBOZEFPQZRZKLMC
+        NAKDWHLADBEFGUCUDZRZWHHABWFEWIWGAWDWISZBOZWDWGSZWFOZAWLOWMWEBWKWMABWDFG
+        UEUFWKWEABWDFGUGUFAWKBUHUIAWNOZWKBWOWMGWDPQSZWKAWMWFUJWOWPWEAWMWEBUKWNW
+        DTSZGTSZWPWEULAWMWQWFFWDUMUNACWISZWRAWSBECUOZACDSZWSWTOZIXACWJSXBDWJCHU
+        RBECWIEWIUPUQUSUTVAZCFGVBVHZWDGVCVDVIWDFGVEVFAWMWEBVGVJVKVLVMZVNAWFCWHE
+        FAWSFTSXCCFGVOVHWHVRACDWHIXEVPAWDFCUCUDSZOWEBXFWQWRWEVSAWDFCVQXDWDGVTVD
+        JWAWBWC $.
+    $}
   $}
 
   ${
