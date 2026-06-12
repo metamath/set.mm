@@ -109076,6 +109076,29 @@ $)
   $}
 
   ${
+    infssfzledc.s $e |- S = { n e. ( M ... N ) | ps } $.
+    infssfzledc.a $e |- ( ph -> A e. S ) $.
+    infssfzledc.dc $e |- ( ( ph /\ n e. ( M ... A ) ) -> DECID ps ) $.
+    ${
+      $d A n $.  $d M n $.  $d N n $.  $d n ph $.
+      $( The infimum of a decidable inhabited subset of an integer range is a
+         member of the set.  (Contributed by Jim Kingdon, 12-Jun-2026.) $)
+      infssfzcldc $p |- ( ph -> inf ( S , RR , < ) e. S ) $=
+        ( wa cuz cfv crab cr clt cinf cfz wcel cz cv cle co wsbc eleq2i elrabsf
+        wbr nfcv bitri sylib simpld elfzel1 eqid elfzuz ad2antrl elfzle2 simprr
+        syl jca32 simprl simprrl wb eluzelz adantr elfzel2 eluz syl2anr elfzuzb
+        mpbird sylanbrc simprrr jca impbida rabbidva2 eleqtrd wdc elfzelz zdcle
+        eqtrid dcand infssuzcldc infeq1d 3eltr4d ) AEUAZGUBUGZBKZEFLMZNZOPQWHDO
+        PQDAWFCWHEFACFGRUCZSZFTSAWJBECUDZACDSZWJWKKZIWLCBEWINZSWMDWNCHUEBECWIEW
+        IUHUFUIUJUKZCFGULURWHUMACDWHIADWNWHHABWFEWIWGAWDWISZBKZWDWGSZWFKZAWQKWR
+        WEBWPWRABWDFGUNUOWPWEABWDFGUPUOAWPBUQUSAWSKZWPBWTWRGWDLMSZWPAWRWFUTWTXA
+        WEAWRWEBVAWSWDTSZGTSZXAWEVBAWRXBWFFWDVCVDAWJXCWOCFGVEURZWDGVFVGVIWDFGVH
+        VJAWRWEBVKVLVMVNVSZVOAWDFCRUCSZKWEBXFXBXCWEVPAWDFCVQXDWDGVRVGJVTWAAODWH
+        PXEWBXEWC $.
+    $}
+  $}
+
+  ${
     $d A u v y z $.  $d A u x y z $.  $d B u v y z $.  $d ph u v z $.
     suprzubdc.ss $e |- ( ph -> A C_ ZZ ) $.
     suprzubdc.dc $e |- ( ph -> A. x e. ZZ DECID x e. A ) $.
