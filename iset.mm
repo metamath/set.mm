@@ -152167,6 +152167,33 @@ $)
           QMUTUSUFZUGZWHVEUFUJVEUFWIVFWKABCEHWGJKLNOPQRSVQBLUFVRWEWJBLGVGVJWJWG
           VEUFWFWGUQMVHVKVIVLWHUJVMVNVOVP $.
       $}
+
+      ${
+        $d j l k $.  $d C j l $.  $d E j $.  $d E j $.  $d I j $.  $d i l j $.
+        $d F l $.  $d N l $.  $d M l $.
+        $( ` ( I `` C ) ` is the first tie.  (Contributed by Thierry Arnoux,
+           1-Dec-2016.)  (Revised by AV, 6-Oct-2020.) $)
+        ballotfilemimin $p |- ( C e. ( O \ E ) ->
+          -. E. k e. ( 1 ... ( ( I ` C ) - 1 ) ) ( ( F ` C ) ` k ) = 0 ) $=
+          ( vj vl cdif wcel cv cfv cc0 wceq c1 cmin co cfz wrex clt wbr elfzle2
+          wa cle adantl cz elfzelz caddc ballotfilemiex simpld elfzelzd zltlem1
+          wb syl2anr mpbird adantr ad2antrr zred cuz 1zzd zsubcld nnaddcl mp2an
+          wss cn a1i nnred syl nnzd zlem1lt syl2anc mpbid ltled eluz fzss2 crab
+          sseld fveqeq2 elrab cinf ballotfilemi cbvrabv infeq1i eqtr4di eqbrtrd
+          cr ballotfilemsle sylan2br syland impl lensymd pm2.65da nrexdv sylnib
+          ex cbvrexv ) BKFUCUDZUAUEZBGUFZUFUGUHZUAUIBHUFZUIUJUKZULUKZUMEUEZXMUF
+          UGUHZEXQUMXKXNUAXQXKXLXQUDZUQZXNXLXOUNUOZYAYBXNYAYBXLXPURUOZXTYCXKXLU
+          IXPUPUSXTXLUTUDZXOUTUDZYBYCVGXKXLUIXPVAZXKXOUIIJVBUKZXKXOUIYGULUKZUDZ
+          XOXMUFUGUHABCDEFGHIJKLMNOPQRSTVCVDZVEZXLXOVFVHVIVJYAXNUQZXOXLYLXOXKYE
+          XTXNYKVKVLYLXLYAYDXNXTYDXKYFUSVJVLXKXTXNXOXLURUOZXKXTXLYHUDZXNYMXKXQY
+          HXLXKYGXPVMUFUDZXQYHVRXKYOXPYGURUOZXKXPYGXKXPXKXOUIYKXKVNVOZVLXKYGYGV
+          SUDZXKIVSUDJVSUDYRMNIJVPVQVTZWAXKXOYGURUOZXPYGUNUOZXKYIYTYJXOUIYGUPWB
+          XKYEYGUTUDZYTUUAVGYKXKYGYSWCZXOYGWDWEWFWGXKXPUTUDUUBYOYPVGYQUUCXPYGWH
+          WEVIXPUIYGWIWBWKXKYNXNUQZYMUUDXKXLUBUEZXMUFUGUHZUBYHWJZUDZYMUUFXNUBXL
+          YHUUEXLUGXMWLWMXKUUHUQXOUUGWTUNWNZXLURXKXOUUIUHUUHXKXOXSEYHWJZWTUNWNU
+          UIABCDEFGHIJKLMNOPQRSTWOWTUUGUUJUNUUFXSUBEYHUUEXRUGXMWLWPZWQWRVJABCUU
+          GDEFGHIJKXLLMNOPQRSTUUKXAWSXBXIXCXDXEXFXGXNXSUAEXQXLXRUGXMWLXJXH $.
+      $}
     $}
   $}
 
