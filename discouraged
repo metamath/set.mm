@@ -15318,6 +15318,7 @@ New usage of "ceqsalALT" is discouraged (0 uses).
 New usage of "ceqsalgALT" is discouraged (0 uses).
 New usage of "ceqsexv2dOLD" is discouraged (0 uses).
 New usage of "cflemOLD" is discouraged (0 uses).
+New usage of "cfonOLD" is discouraged (0 uses).
 New usage of "cgcdOLD" is discouraged (1 uses).
 New usage of "cghomOLD" is discouraged (13 uses).
 New usage of "ch0" is discouraged (3 uses).
@@ -18073,6 +18074,7 @@ New usage of "pclssidN" is discouraged (3 uses).
 New usage of "pclun2N" is discouraged (0 uses).
 New usage of "pclunN" is discouraged (1 uses).
 New usage of "pclvalN" is discouraged (6 uses).
+New usage of "peano3OLD" is discouraged (0 uses).
 New usage of "perpdragALT" is discouraged (0 uses).
 New usage of "pexmidALTN" is discouraged (0 uses).
 New usage of "pexmidN" is discouraged (0 uses).
@@ -18347,6 +18349,7 @@ New usage of "pweqALT" is discouraged (0 uses).
 New usage of "pwidgOLD" is discouraged (0 uses).
 New usage of "pwtrVD" is discouraged (0 uses).
 New usage of "pwtrrVD" is discouraged (0 uses).
+New usage of "pwuninelOLD" is discouraged (0 uses).
 New usage of "pythi" is discouraged (0 uses).
 New usage of "pzriprng1ALT" is discouraged (0 uses).
 New usage of "pzriprngALT" is discouraged (0 uses).
@@ -18534,6 +18537,7 @@ New usage of "rngosn3" is discouraged (1 uses).
 New usage of "rngosn4" is discouraged (1 uses).
 New usage of "rngosn6" is discouraged (1 uses).
 New usage of "rngoueqz" is discouraged (2 uses).
+New usage of "rninOLD" is discouraged (0 uses).
 New usage of "rspsbc2" is discouraged (2 uses).
 New usage of "rspsbc2VD" is discouraged (0 uses).
 New usage of "ruALT" is discouraged (0 uses).
@@ -18935,6 +18939,7 @@ New usage of "tendospcanN" is discouraged (1 uses).
 New usage of "tfr1ALT" is discouraged (0 uses).
 New usage of "tfr2ALT" is discouraged (0 uses).
 New usage of "tfr3ALT" is discouraged (0 uses).
+New usage of "tfrlem6OLD" is discouraged (0 uses).
 New usage of "thincmoALT" is discouraged (0 uses).
 New usage of "topnfbey" is discouraged (0 uses).
 New usage of "tpid3gVD" is discouraged (0 uses).
@@ -19625,6 +19630,7 @@ Proof modification of "ceqsalALT" is discouraged (23 steps).
 Proof modification of "ceqsalgALT" is discouraged (58 steps).
 Proof modification of "ceqsexv2dOLD" is discouraged (28 steps).
 Proof modification of "cflemOLD" is discouraged (136 steps).
+Proof modification of "cfonOLD" is discouraged (12 steps).
 Proof modification of "cgsex2gd" is discouraged (143 steps).
 Proof modification of "chordthmALT" is discouraged (440 steps).
 Proof modification of "cicerALT" is discouraged (57 steps).
@@ -20468,6 +20474,7 @@ Proof modification of "ordelordALT" is discouraged (128 steps).
 Proof modification of "ordelordALTVD" is discouraged (202 steps).
 Proof modification of "orim12dALT" is discouraged (34 steps).
 Proof modification of "p0exALT" is discouraged (2 steps).
+Proof modification of "peano3OLD" is discouraged (10 steps).
 Proof modification of "perfectALTV" is discouraged (528 steps).
 Proof modification of "perpdragALT" is discouraged (241 steps).
 Proof modification of "pige3ALT" is discouraged (1082 steps).
@@ -20498,6 +20505,7 @@ Proof modification of "pweqALT" is discouraged (34 steps).
 Proof modification of "pwidgOLD" is discouraged (17 steps).
 Proof modification of "pwtrVD" is discouraged (110 steps).
 Proof modification of "pwtrrVD" is discouraged (110 steps).
+Proof modification of "pwuninelOLD" is discouraged (22 steps).
 Proof modification of "pzriprng1ALT" is discouraged (534 steps).
 Proof modification of "pzriprngALT" is discouraged (150 steps).
 Proof modification of "qdiffALT" is discouraged (94 steps).
@@ -20571,6 +20579,7 @@ Proof modification of "rgen2a" is discouraged (81 steps).
 Proof modification of "rmoanimALT" is discouraged (93 steps).
 Proof modification of "rncoOLD" is discouraged (119 steps).
 Proof modification of "rngopidOLD" is discouraged (27 steps).
+Proof modification of "rninOLD" is discouraged (47 steps).
 Proof modification of "rntrclfv" is discouraged (46 steps).
 Proof modification of "rntrclfvRP" is discouraged (53 steps).
 Proof modification of "rp-frege3g" is discouraged (24 steps).
@@ -20714,6 +20723,7 @@ Proof modification of "tbwsyl" is discouraged (20 steps).
 Proof modification of "tfr1ALT" is discouraged (29 steps).
 Proof modification of "tfr2ALT" is discouraged (63 steps).
 Proof modification of "tfr3ALT" is discouraged (95 steps).
+Proof modification of "tfrlem6OLD" is discouraged (44 steps).
 Proof modification of "thincmoALT" is discouraged (93 steps).
 Proof modification of "topnfbey" is discouraged (75 steps).
 Proof modification of "toycom" is discouraged (142 steps).
