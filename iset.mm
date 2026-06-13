@@ -25668,6 +25668,18 @@ $)
   $}
 
   ${
+    $d A x $.  $d B x $.  $d ch x $.
+    rspcedvdw.s $e |- ( x = A -> ( ps <-> ch ) ) $.
+    rspcedvdw.1 $e |- ( ph -> A e. B ) $.
+    rspcedvdw.2 $e |- ( ph -> ch ) $.
+    $( Version of ~ rspcedvd where the implicit substitution hypothesis does
+       not have an antecedent, which also avoids a disjoint variable condition
+       on ` ph , x ` .  (Contributed by SN, 20-Aug-2024.) $)
+    rspcedvdw $p |- ( ph -> E. x e. B ps ) $=
+      ( wcel wrex rspcev syl2anc ) AEFJCBDFKHIBCDEFGLM $.
+  $}
+
+  ${
     $d x ph $.  $d x B $.  $d x A $.
     rspcime.1 $e |- ( ( ph /\ x = A ) -> ps ) $.
     rspcime.2 $e |- ( ph -> A e. B ) $.
