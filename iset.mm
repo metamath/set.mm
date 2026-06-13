@@ -152153,6 +152153,19 @@ $)
           VRUQZUQZFUFZVQUGZUHUIZVPDFULVSUBWBWAVPDUEVOWAUSWEVRFVPVTDWCVPUHVQUTUB
           VAVBWBWCULVPUOUNUEZUQZWDVGUEUHVGUEWEVCWGABCEHWCJKLMNOPQRVOBLUEWAWFBLG
           VHVDWFWCVGUEWBWCULVPVEVIVFVJWDUHVKVLVMVN $.
+
+        $d X i j k $.  $d S i k $.
+        $( The infimum of the set of zeroes of ` F ` is a lower bound.
+           (Contributed by Jim Kingdon, 12-Jun-2026.) $)
+        ballotfilemsle $p |- ( ( C e. ( O \ E ) /\ X e. S )
+            -> inf ( S , RR , < ) <_ X ) $=
+          ( vj cdif wcel wa cv cfv cc0 wceq cr clt cinf cle wbr c1 caddc co cfz
+          wrex ballotfilem5 adantr simplr cz wdc eldifi elfzelz ballotfilemfelz
+          ad3antrrr adantl 0z zdceq sylancl infssfzledc rexlimddv ) BLGUEUFZMDU
+          FZUGZUDUHZBHUIZUIUJUKZDULUMUNMUOUPUDUQJKURUSZUTUSZVQWBUDWDVAVRABCEUDG
+          HJKLNOPQRSTUAVBVCVSVTWDUFWBUGZUGZFUHZWAUIZUJUKZMDFUQWCUCVQVRWEVDWFWGU
+          QMUTUSUFZUGZWHVEUFUJVEUFWIVFWKABCEHWGJKLNOPQRSVQBLUFVRWEWJBLGVGVJWJWG
+          VEUFWFWGUQMVHVKVIVLWHUJVMVNVOVP $.
       $}
     $}
   $}
