@@ -152137,6 +152137,23 @@ $)
         VGUTWEWOUPUCUGWCWOUPUFZWDWCBKUBWSWRABCDGIJKLMNOPQVEVOVHVIVJVKVLWEWGUDWF
         WHUEUPUFZWJWCWTWDWGWCWFUCIJUGUHVPUHUBWTABCDEFGHIJKLMNOPQRSTVMVBVNWGWTWJ
         VQWEWFUCUPWHVRVSVTWAWB $.
+
+      $d k w y z $.  $d w C $.  $d w F $.  $d w M $.  $d w N $.
+      ${
+        $d S j $.  $d E j $.  $d C j $.  $d j k $.  $d i j $.
+        ballotfilemscl.s $e |- S = { k e. ( 1 ... ( M + N ) )
+          | ( ( F ` C ) ` k ) = 0 } $.
+        $( The set of zeroes of ` F ` has an infimum.  (Contributed by Jim
+           Kingdon, 12-Jun-2026.) $)
+        ballotfilemscl $p |- ( C e. ( O \ E ) -> inf ( S , RR , < ) e. S ) $=
+          ( vj cdif wcel cv cfv cc0 wceq cr clt c1 caddc co cfz ballotfilem5 wa
+          cinf simpr fveqeq2 elrab2 sylibr wdc ad2antrr elfzelz ballotfilemfelz
+          cz eldifi adantl 0z zdceq sylancl infssfzcldc rexlimddv ) BLGUDUEZUCU
+          FZBHUGZUGUHUIZDUJUKURDUEUCULJKUMUNZUOUNZABCEUCGHJKLMNOPQRSTUPVOVPVTUE
+          VRUQZUQZFUFZVQUGZUHUIZVPDFULVSUBWBWAVPDUEVOWAUSWEVRFVPVTDWCVPUHVQUTUB
+          VAVBWBWCULVPUOUNUEZUQZWDVGUEUHVGUEWEVCWGABCEHWCJKLMNOPQRVOBLUEWAWFBLG
+          VHVDWFWCVGUEWBWCULVPVEVIVFVJWDUHVKVLVMVN $.
+      $}
     $}
   $}
 
