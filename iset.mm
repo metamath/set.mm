@@ -152262,6 +152262,50 @@ $)
         ABCDGYBIJKLMNOPQXPYFXTYGVCUUMXSUCXPXSXHUBXTXPXSYPXAVCUUMXBXCXDXEXFXGXOX
         IXJXKXLXPYDVSXQXTABCDEFGHIJKLMNOPQRSTXMUMXN $.
     $}
+
+    $( For a given count ` c ` , ` S ` is the operation reflecting the index
+       in a count, before a tie is reached. $)
+    ballotth.s $e |- S = ( c e. ( O \ E ) |-> ( i e. ( 1 ... ( M + N ) ) |->
+                   if ( i <_ ( I ` c ) , ( ( ( I ` c ) + 1 ) - i ) , i ) ) ) $.
+
+    $d c I $.
+    ${
+      $d c d i k M $.  $d c d i k N $.  $d d E $.  $d d C $.  $d d I $.
+      $d d O $.
+      $( Value of ` S ` .  (Contributed by Thierry Arnoux, 12-Apr-2017.) $)
+      ballotfilemsval $p |- ( C e. ( O \ E ) ->
+        ( S ` C ) = ( i e. ( 1 ... ( M + N ) ) |->
+                   if ( i <_ ( I ` C ) , ( ( ( I ` C ) + 1 ) - i ) , i ) ) ) $=
+        ( vd c1 caddc co cfz cv cfv cle wbr cmin cif cmpt cdif wceq wcel fveq2d
+        wa simpl breq2d oveq1d ifbieq1d mpteq2dva cbvmptv eqtri cfn cz 1z mp2an
+        cn nnaddcl nnzi fzfig elexi mptex fvmpt ) UCBEUDJKUEUFZUGUFZEUHZUCUHZIU
+        IZUJUKZWBUDUEUFZVTULUFZVTUMZUNZEVSVTBIUIZUJUKZWHUDUEUFZVTULUFZVTUMZUNLG
+        UOZDWABUPZEVSWFWLWNVTVSUQZUSZWCWIWEWKVTWPWBWHVTUJWPWABIWNWOUTURZVAWPWDW
+        JVTULWPWBWHUDUEWQVBVBVCVDDMWMEVSVTMUHZIUIZUJUKZWSUDUEUFZVTULUFZVTUMZUNZ
+        UNUCWMWGUNUBMUCWMXDWGWRWAUPZEVSXCWFXEWOUSZWTWCXBWEVTXFWSWBVTUJXFWRWAIXE
+        WOUTURZVAXFXAWDVTULXFWSWBUDUEXGVBVBVCVDVEVFEVSWLVSVGUDVHUQVRVHUQVSVGUQV
+        IVRJVKUQKVKUQVRVKUQNOJKVLVJVMUDVRVNVJVOVPVQ $.
+
+      $d i j $.  $d j I $.  $d j C $.  $d j E $.  $d j F $.  $d j J $.
+      $d j F $.  $d j M $.  $d j N $.  $d j O $.
+      $( Value of ` S ` evaluated at ` J ` for a given counting ` C ` .
+         (Contributed by Thierry Arnoux, 12-Apr-2017.) $)
+      ballotfilemsv $p |- ( ( C e. ( O \ E ) /\ J e. ( 1 ... ( M + N ) ) ) ->
+        ( ( S ` C ) ` J ) =
+                     if ( J <_ ( I ` C ) , ( ( ( I ` C ) + 1 ) - J ) , J ) ) $=
+        ( vj cdif wcel c1 caddc co cfz wa cv cfv cle wbr cmin cif cvv cmpt wceq
+        ballotfilemsval breq1 oveq2 ifbieq12d eqtrdi adantr simpr breq1d oveq2d
+        id cbvmptv adantlr cc0 ballotfilemiex simpld elfzelzd ad2antrr peano2zd
+        cz zsubcld elexd wn elex ad2antlr wdc zdcle syl2anc ifcldadc fvmptd ) B
+        MGUEUFZJUGKLUHUIZUJUIZUFZUKZUDJUDULZBIUMZUNUOZWPUGUHUIZWOUPUIZWOUQZJWPU
+        NUOZWRJUPUIZJUQZWLBDUMZURWJXDUDWLWTUSZUTWMWJXDEWLEULZWPUNUOZWRXFUPUIZXF
+        UQZUSXEABCDEFGHIKLMNOPQRSTUAUBUCVAEUDWLXIWTXFWOUTZXGWQXHXFWSWOXFWOWPUNV
+        BXFWOWRUPVCXJVJVDVKVEVFWJWOJUTZWTXCUTWMWJXKUKZWQXAWSWOXBJXLWOJWPUNWJXKV
+        GZVHXLWOJWRUPXMVIXMVDVLWJWMVGZWNXAXBJURWNXAUKZXBVSXOWRJXOWPWJWPVSUFZWMX
+        AWJWPUGWKWJWPWLUFWPBHUMUMVMUTABCEFGHIKLMNOPQRSTUAUBVNVOVPZVQVRWNJVSUFZX
+        AWNJUGWKXNVPZVFVTWAWMJURUFWJXAWBJWLWCWDWNXRXPXAWEXSWJXPWMXQVFJWPWFWGWHW
+        I $.
+    $}
   $}
 
 
