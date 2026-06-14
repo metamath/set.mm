@@ -5048,8 +5048,6 @@
 "df-rngo" is used by "relrngo".
 "df-rq" is used by "dmrecnq".
 "df-rq" is used by "recmulnq".
-"df-sbALT" is used by "dfsbALT".
-"df-sbALT" is used by "rename-sbALT".
 "df-sca" is used by "scaid".
 "df-sca" is used by "scandx".
 "df-setrecs" is used by "nfsetrecs".
@@ -15772,7 +15770,6 @@ New usage of "df-ringcALTV" is discouraged (1 uses).
 New usage of "df-rngcALTV" is discouraged (1 uses).
 New usage of "df-rngo" is discouraged (2 uses).
 New usage of "df-rq" is discouraged (2 uses).
-New usage of "df-sbALT" is discouraged (2 uses).
 New usage of "df-sca" is discouraged (2 uses).
 New usage of "df-setrecs" is discouraged (5 uses).
 New usage of "df-sgrOLD" is discouraged (2 uses).
