@@ -12425,6 +12425,7 @@
 "relrngo" is used by "rngoablo2".
 "relrngo" is used by "rngoi".
 "relrngo" is used by "rngosn3".
+"rename-sbALT" is used by "dfsbALT".
 "retbwax2" is used by "merco1lem2".
 "retbwax2" is used by "merco1lem3".
 "retbwax2" is used by "retbwax3".
@@ -15814,6 +15815,7 @@ New usage of "dfpjop" is discouraged (4 uses).
 New usage of "dfsb1" is discouraged (3 uses).
 New usage of "dfsb2" is discouraged (1 uses).
 New usage of "dfsb3" is discouraged (0 uses).
+New usage of "dfsbALT" is discouraged (0 uses).
 New usage of "dfsn2ALT" is discouraged (0 uses).
 New usage of "dftru2" is discouraged (0 uses).
 New usage of "dfvd1imp" is discouraged (1 uses).
@@ -18430,6 +18432,7 @@ New usage of "relop" is discouraged (1 uses).
 New usage of "relopabVD" is discouraged (0 uses).
 New usage of "relopabiALT" is discouraged (0 uses).
 New usage of "relrngo" is discouraged (6 uses).
+New usage of "rename-sbALT" is discouraged (1 uses).
 New usage of "renegclALT" is discouraged (0 uses).
 New usage of "renicax" is discouraged (0 uses).
 New usage of "resfunexgALT" is discouraged (0 uses).
@@ -19683,6 +19686,7 @@ Proof modification of "dfdif3OLD" is discouraged (137 steps).
 Proof modification of "dfeu" is discouraged (35 steps).
 Proof modification of "dffr2ALT" is discouraged (64 steps).
 Proof modification of "dfmo2" is discouraged (44 steps).
+Proof modification of "dfsbALT" is discouraged (58 steps).
 Proof modification of "dfsn2ALT" is discouraged (30 steps).
 Proof modification of "dfvd1imp" is discouraged (10 steps).
 Proof modification of "dfvd1impr" is discouraged (10 steps).
@@ -20550,6 +20554,7 @@ Proof modification of "refsymrels3" is discouraged (56 steps).
 Proof modification of "reldmxpcALT" is discouraged (143 steps).
 Proof modification of "relopabVD" is discouraged (354 steps).
 Proof modification of "relopabiALT" is discouraged (74 steps).
+Proof modification of "rename-sbALT" is discouraged (41 steps).
 Proof modification of "renegcl" is discouraged (34 steps).
 Proof modification of "renegclALT" is discouraged (149 steps).
 Proof modification of "renicax" is discouraged (76 steps).
