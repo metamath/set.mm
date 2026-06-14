@@ -152306,6 +152306,19 @@ $)
         AWNJUGWKXNVPZVFVTWAWMJURUFWJXAWBJWLWCWDWNXRXPXAWEXSWJXPWMXQVFJWPWFWGWHW
         I $.
     $}
+
+    $( ` S ` maps values less than ` ( I `` C ) ` to values greater than 1.
+       (Contributed by Thierry Arnoux, 28-Apr-2017.) $)
+    ballotfilemsgt1 $p |- ( ( C e. ( O \ E ) /\ J e. ( 1 ... ( M + N ) )
+      /\ J < ( I ` C ) ) -> 1 < ( ( S ` C ) ` J ) ) $=
+      ( cdif wcel c1 caddc co cfz cfv clt wbr w3a cmin cz elfzelz 3ad2ant2 zred
+      cc0 wceq ballotfilemiex simpld elfzelzd 3ad2ant1 1red readdcld simp3 zcnd
+      1cnd pncand breqtrrd ltsub13d cle cif ballotfilemsv 3adant3 ltled iftrued
+      eqtrd ) BMGUDUEZJUFKLUGUHZUIUHZUEZJBIUJZUKULZUMZUFWDUFUGUHZJUNUHZJBDUJUJZ
+      UKWFJWGUFWFJWCVTJUOUEWEJUFWAUPUQURZWFWDUFWFWDVTWCWDUOUEWEVTWDUFWAVTWDWBUE
+      WDBHUJUJUSUTABCEFGHIKLMNOPQRSTUAUBVAVBVCVDZURZWFVEZVFWMWFJWDWGUFUNUHUKVTW
+      CWEVGZWFWDUFWFWDWKVHWFVIVJVKVLWFWIJWDVMULZWHJVNZWHVTWCWIWPUTWEABCDEFGHIJK
+      LMNOPQRSTUAUBUCVOVPWFWOWHJWFJWDWJWLWNVQVRVSVK $.
   $}
 
 
