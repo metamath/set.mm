@@ -103815,6 +103815,18 @@ $)
     ULPZQSUMUJUNDEZUKUOUPTUQUAVAUJULVBUKUJULTBAUJULUBULUSUJUTUCUDUEUJUKULUFBUNC
     UGUHUI $.
 
+  ${
+    ltesubnnd.1 $e |- ( ph -> M e. ZZ ) $.
+    ltesubnnd.2 $e |- ( ph -> N e. NN ) $.
+    $( Subtracting an integer number from another number decreases it.  See
+       ~ ltsubrpd .  (Contributed by Thierry Arnoux, 18-Apr-2017.) $)
+    ltesubnnd $p |- ( ph -> ( ( M + 1 ) - N ) <_ M ) $=
+      ( c1 caddc co cmin cle zcnd 1cnd nncnd addsubd clt wbr zred nnrpd cz wcel
+      ltsubrpd wb nnzd zsubcld zltp1le syl2anc mpbid eqbrtrd ) ABFGHCIHBCIHZFGH
+      ZBJABFCABDKALACEMNAUIBOPZUJBJPZABCABDQACERUAAUISTBSTUKULUBABCDACEUCUDDUIB
+      UEUFUGUH $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
