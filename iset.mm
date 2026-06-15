@@ -152546,6 +152546,21 @@ $)
       ULUMUPUMZVTVOUQZVRVOURZABCEFGHIJKLMNOPQRSTUAUBUCUNZUSUTVNVTVTVOVAZBVTVBZV
       SBURVNWAWDVNWAWBWCVCVTVTVOVGVDVNBMUFZWEBMHVEWFWEBVHUFBVIUOKURBKLMNOPQVFVJ
       VDVTVTBVOVKVLVM $.
+
+    $( Value of ` R ` evaluated at ` J ` .  (Contributed by Thierry Arnoux,
+       17-Apr-2017.) $)
+    ballotfilemrv $p |- ( ( C e. ( O \ E ) /\ J e. ( 1 ... ( M + N ) ) ) ->
+      ( J e. ( R ` C ) <->
+              if ( J <_ ( I ` C ) , ( ( ( I ` C ) + 1 ) - J ) , J ) e. C ) ) $=
+      ( cdif wcel c1 caddc co cfz wa cfv ccnv cima cle wbr cmin cif wfun cdm wb
+      wf1o simpl wceq ballotfilemsf1o simpld 3syl simpr f1odm eleqtrrd fvimacnv
+      f1ofun syl2anc ballotfilemsv eleq1d simprd imaeq1d ballotfilemrval eqtr4d
+      eleq2d syl 3bitr3rd ) BNHUFUGZKUHLMUIUJUKUJZUGZULZKBEUMZUMZBUGZKWHUNZBUOZ
+      UGZKBJUMZUPUQWNUHUIUJKURUJKUSZBUGKBDUMZUGZWGWHUTZKWHVAZUGWJWMVBWGWDWEWEWH
+      VCZWRWDWFVDZWDWTWKWHVEZABCEFGHIJLMNOPQRSTUAUBUCUDVFZVGZWEWEWHVMVHWGKWEWSW
+      DWFVIWGWDWTWSWEVEXAXDWEWEWHVJVHVKKBWHVLVNWGWIWOBABCEFGHIJKLMNOPQRSTUAUBUC
+      UDVOVPWGWDWMWQVBXAWDWLWPKWDWLWHBUOWPWDWKWHBWDWTXBXCVQVRABCDEFGHIJLMNOPQRS
+      TUAUBUCUDUEVSVTWAWBWC $.
   $}
 
 
