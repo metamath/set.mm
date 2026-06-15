@@ -152454,6 +152454,16 @@ $)
       SWDXOVHUEYCEWEWFYCXJXOYRXTXOVEUEZXAYAUUBWLZWGYCUUDYPXPWHUUEYQXOXHWIWKWJWN
       WOZVMXAEXCXRUTZXMXDXFUUGXMUMXAEUCXCXRXLYFXPXIXQXOXKXGYHXOXGXJURVFYGWPWQWF
       XSXAXEXNUUFWRWSWT $.
+
+    $( The image by ` S ` of the first tie pick is the first pick.
+       (Contributed by Thierry Arnoux, 14-Apr-2017.) $)
+    ballotfilemsi $p |- ( C e. ( O \ E ) -> ( ( S ` C ) ` ( I ` C ) ) = 1 ) $=
+      ( cdif wcel cfv cle wbr caddc cmin cif cfz wceq cc0 ballotfilemiex simpld
+      c1 co ballotfilemsv mpdan cr elfzelz zred syl leidd iftrued recnd pncan2d
+      1cnd 3eqtrd ) BLGUCUDZBIUEZBDUEUEZVKVKUFUGZVKUPUHUQVKUIUQZVKUJZVNUPVJVKUP
+      JKUHUQZUKUQUDZVLVOULVJVQVKBHUEUEUMULABCEFGHIJKLMNOPQRSTUAUNUOZABCDEFGHIVK
+      JKLMNOPQRSTUAUBURUSVJVMVNVKVJVKVJVQVKUTUDVRVQVKVKUPVPVAVBVCZVDVEVJVKUPVJV
+      KVSVFVJVHVGVI $.
   $}
 
 
