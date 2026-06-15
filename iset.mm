@@ -152571,6 +152571,18 @@ $)
       cif iftrue eleq1d 3ad2ant3 bitrd ) BNHUFUGZKUHLMUIUJUKUJUGZKBJULZUMUNZUOK
       BDULUGZVHVGUHUIUJKUPUJZKUTZBUGZVJBUGZVEVFVIVLUQVHABCDEFGHIJKLMNOPQRSTUAUB
       UCUDUEURUSVHVEVLVMUQVFVHVKVJBVHVJKVAVBVCVD $.
+
+    $( Value of ` R ` after the tie.  (Contributed by Thierry Arnoux,
+       11-Apr-2017.) $)
+    ballotfilemrv2 $p |- ( ( C e. ( O \ E ) /\ J e. ( 1 ... ( M + N ) ) /\
+      ( I ` C ) < J ) -> ( J e. ( R ` C ) <-> J e. C ) ) $=
+      ( cdif wcel c1 caddc co cfz cfv clt wbr w3a cle cmin cif wb ballotfilemrv
+      3adant3 wn cz cc0 ballotfilemiex simpld elfzelzd wa simpr zltnle syl2an2r
+      wceq biimp3a iffalsed eleq1d bitrd ) BNHUFUGZKUHLMUIUJZUKUJZUGZBJULZKUMUN
+      ZUOZKBDULUGZKWAUPUNZWAUHUIUJKUQUJZKURZBUGZKBUGVQVTWDWHUSWBABCDEFGHIJKLMNO
+      PQRSTUAUBUCUDUEUTVAWCWGKBWCWEWFKVQVTWBWEVBZVQWAVCUGVTKVCUGWBWIUSVQWAUHVRV
+      QWAVSUGWABIULULVDVLABCFGHIJLMNOPQRSTUAUBUCVEVFVGVQVTVHKUHVRVQVTVIVGWAKVJV
+      KVMVNVOVP $.
   $}
 
 
