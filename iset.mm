@@ -32467,6 +32467,44 @@ $)
     SUPVDALZVBKUSUPVDVFVBUPVCVFVBUOUMVCVFTUNUOVCVFACDUEUFUGPVBVCQRABUHSUIUKABCD
     ULUJ $.
 
+  ${
+    $d a x $.  $d x C $.  $d x X $.  $d x Y $.  $d x V $.  $d x W $.
+    $d x ps $.  $d x th $.
+    ifeqeqx.1 $e |- ( x = X -> A = C ) $.
+    ifeqeqx.2 $e |- ( x = Y -> B = a ) $.
+    ifeqeqx.3 $e |- ( x = X -> ( ch <-> th ) ) $.
+    ifeqeqx.4 $e |- ( x = Y -> ( ch <-> ps ) ) $.
+    ifeqeqx.5 $e |- ( ph -> a = C ) $.
+    ifeqeqx.6 $e |- ( ( ph /\ ps ) -> th ) $.
+    ifeqeqx.y $e |- ( ph -> Y e. V ) $.
+    ifeqeqx.x $e |- ( ph -> X e. W ) $.
+    ifeqeqxdc.dc $e |- ( ph -> DECID ps ) $.
+    $( An equality theorem tailored for ~ ballotfilemsf1o .  (Contributed by
+       Thierry Arnoux, 14-Apr-2017.) $)
+    ifeqeqxdc $p |- ( ( ph /\ x = if ( ps , X , Y ) )
+                                                  -> a = if ( ch , A , B ) ) $=
+      ( cv wceq cif wa eqeq2 csb simplr wsbc simpll simpr sbceq1a biimpd dfsbcq
+      sylc wi csbeq1 eqeq2d imbi12d wcel nfcvd csbiegf syl eqtr4d adantr eqcomd
+      a1d wn pm3.24 wb sbcieg anbi1d mtbiri pm2.21d anass1rs ifbothdadc csbeq1a
+      imp ex biimprd notbid nsyld anim2d mtoi expdimp wdc adantlr iftrued eqtrd
+      wo mpbird orcd df-dc sylibr ad2antrr iffalsed dcbid exmiddc mpjaodan ) CM
+      UCZFUDZXAGUDZXACFGUEZUDAEUCZBKLUEZUDZUFZFGFXDXAUGGXDXAUGXHCUFZXGXAEXFFUHZ
+      UDZXBAXGCUIZXIACEXFUJZXKAXGCUKXIXGCXMXLXHCULXGCXMCEXFUMZUNUPBCEKUJZXAEKFU
+      HZUDZUQCELUJZXAELFUHZUDZUQXMXKUQAKLKXFUDZXOXMXQXKCEKXFUOZYAXPXJXAEKXFFURU
+      SUTLXFUDZXRXMXTXKCELXFUOZYCXSXJXAELXFFURUSUTABUFZXQXOYEXPXAAXPXAUDBAXPHXA
+      AKJVAZXPHUDUAEKFHJYFEHVBNVCVDRVEVFVGVHABVIZUFZXRXTAXRYGXTAXRYGUFZXTAYIXTA
+      YIBYGUFZBVJZAXRBYGALIVAZXRBVKTCBELIQVLVDVMVNVOVSVPVTUBVQUPXGXBXKXGFXJXAEX
+      FFVRUSWAUPXHCVIZUFZXGXAEXFGUHZUDZXCAXGYMUIZYNAXMVIZYPAXGYMUKYNXGYMYRYQXHY
+      MULXGYMYRXGCXMXNWBUNUPBXOVIZXAEKGUHZUDZUQXRVIZXAELGUHZUDZUQYRYPUQAKLYAYSY
+      RUUAYPYAXOXMYBWBYAYTYOXAEKXFGURUSUTYCUUBYRUUDYPYCXRXMYDWBYCUUCYOXAELXFGUR
+      USUTABYSUUAABYSUFZUUAAUUEYJYKAYSYGBAYSDBAYSDVIAXODAYFXODVKUACDEKJPVLVDWBU
+      NABDSVTWCWDWEVOWFYHUUDUUBYHUUCXAAUUCXAUDZYGAYLUUFTELGXAIYLEXAVBOVCVDVFVGV
+      HUBVQUPXGXCYPXGGYOXAEXFGVRUSWAUPXHBCWGZYGXHBUFZCYMWKUUGUUHCYMUUHCDABDXGSW
+      HUUHXEKUDCDVKUUHXEXFKAXGBUIUUHBKLXHBULWIWJPVDWLWMCWNWOXHYGUFZUUGBWGZAUUJX
+      GYGUBWPUUICBUUIXELUDCBVKUUIXEXFLAXGYGUIUUIBKLXHYGULWQWJQVDWRWLABYGWKZXGAU
+      UJUUKUBBWSVDVFWTVQ $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
