@@ -152561,6 +152561,16 @@ $)
       DWFVIWGWDWTWSWEVEXAXDWEWEWHVJVHVKKBWHVLVNWGWIWOBABCEFGHIJKLMNOPQRSTUAUBUC
       UDVOVPWGWDWMWQVBXAWDWLWPKWDWLWHBUOWPWDWKWHBWDWTXBXCVQVRABCDEFGHIJLMNOPQRS
       TUAUBUCUDUEVSVTWAWBWC $.
+
+    $( Value of ` R ` before the tie.  (Contributed by Thierry Arnoux,
+       11-Apr-2017.) $)
+    ballotfilemrv1 $p |-
+          ( ( C e. ( O \ E ) /\ J e. ( 1 ... ( M + N ) ) /\ J <_ ( I ` C ) ) ->
+                     ( J e. ( R ` C ) <-> ( ( ( I ` C ) + 1 ) - J ) e. C ) ) $=
+      ( cdif wcel c1 caddc co cfz cfv cle wbr w3a cmin wb ballotfilemrv 3adant3
+      cif iftrue eleq1d 3ad2ant3 bitrd ) BNHUFUGZKUHLMUIUJUKUJUGZKBJULZUMUNZUOK
+      BDULUGZVHVGUHUIUJKUPUJZKUTZBUGZVJBUGZVEVFVIVLUQVHABCDEFGHIJKLMNOPQRSTUAUB
+      UCUDUEURUSVHVEVLVMUQVFVHVKVJBVHVJKVAVBVCVD $.
   $}
 
 
