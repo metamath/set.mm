@@ -58182,6 +58182,28 @@ $)
   $}
 
   ${
+    $d x y A $.  $d x y B $.  $d y C $.  $d x D $.  $d x y ph $.
+    f1o3d.1 $e |- ( ph -> F = ( x e. A |-> C ) ) $.
+    f1o3d.2 $e |- ( ( ph /\ x e. A ) -> C e. B ) $.
+    f1o3d.3 $e |- ( ( ph /\ y e. B ) -> D e. A ) $.
+    f1o3d.4 $e |- ( ( ph /\ ( x e. A /\ y e. B ) ) ->
+                    ( x = D <-> y = C ) ) $.
+    $( Describe an implicit one-to-one onto function.  (Contributed by Thierry
+       Arnoux, 23-Apr-2017.) $)
+    f1o3d $p |- ( ph -> ( F : A -1-1-onto-> B /\ `' F = ( y e. B |-> D ) ) ) $=
+      ( ccnv wceq wfn wcel syl wa copab wi wf1o cmpt wral ralrimiva eqid fneq1d
+      fnmpt mpbird cv eleq1a impr biimpar exp42 com34 imp32 jcai biimpa impbida
+      com23 opabbidv df-mpt eqtrdi cnveqd cnvopab a1i 3eqtr4d dff1o4 sylanbrc
+      jca ) ADEHUAZHMZCEGUBZNAHDOZVKEOZVJAVMBDFUBZDOZAFEPZBDUCVPAVQBDJUDBDFVOEV
+      OUEUGQADHVOIUFUHAVNVLEOZAGDPZCEUCVRAVSCEKUDCEGVLDVLUEUGQAEVKVLABUIZDPZCUI
+      ZFNZRZCBSZWBEPZVTGNZRZCBSZVKVLAWDWHCBAWDWHAWDRWFWGAWAWCWFAWARVQWCWFTJFEWB
+      UJQUKAWAWCWFWGTAWAWFWCWGAWAWFWCWGAWAWFRRZWGWCLULUMUNUOUPAWHRWAWCAWFWGWAAW
+      FRVSWGWATKGDVTUJQUKAWFWGWAWCTAWFWAWGWCAWAWFWGWCTAWAWFWGWCWJWGWCLUQUMUSUNU
+      OUPURUTAVKWDBCSZMWEAHWKAHVOWKIBCDFVAVBVCWDBCVDVBVLWINACBEGVAVEVFZUFUHDEHV
+      GVHWLVI $.
+  $}
+
+  ${
     $d ph v $.  $d ph x $.  $d B v $.  $d O v $.  $d R v $.  $d Y v $.
     $d Y x $.  $d Z v $.  $d Z x $.
     suppssov1.s $e |- ( ph ->
