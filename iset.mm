@@ -152515,6 +152515,26 @@ $)
       UGVLVOFVPWAWFVOVQVPUEZVHZVRWCVTWEVQWKVMVNVQUNVOWJURZUSWKVSWDVQUPWKVMVNUIU
       JWLVAVAVBVCVDVKVLWHWBUGVOABDEFGHIJKLMNOPQRSTUAUBUCVEVFVLVKWIWGUGVOACDEFGH
       IJKLMNOPQRSTUAUBUCVEVGVI $.
+
+    $( R is the operation reflecting the picks in a count, before a tie is
+       reached. $)
+    ballotth.r $e |- R = ( c e. ( O \ E ) |-> ( ( S ` c ) " c ) ) $.
+
+    $d i S $.  $d c S $.
+    ${
+      $d d E $.  $d d O $.  $d d C $.  $d d S $.  $d c d i I $.
+      $( Value of ` R ` .  (Contributed by Thierry Arnoux, 14-Apr-2017.) $)
+      ballotfilemrval $p |- ( C e. ( O \ E )
+            -> ( R ` C ) = ( ( S ` C ) " C ) ) $=
+        ( vd cdif wcel cv cfv cima cmpt wceq fveq2 id imaeq12d cbvmptv eqtri c1
+        cvv caddc co cfz cle wbr cif ballotfilemsval cfn cz 1z cn nnaddcl mp2an
+        cmin nnzi fzfig elexi mptex eqeltrdi imaexg syl fvmptd3 ) BMHUFZUGZUEBU
+        EUHZEUIZWDUJZBEUIZBUJZWBDUSDNWBNUHZEUIZWIUJZUKUEWBWFUKUDNUEWBWKWFWIWDUL
+        ZWJWEWIWDWIWDEUMWLUNUOUPUQWDBULZWEWGWDBWDBEUMWMUNUOWCUNWCWGUSUGWHUSUGWC
+        WGFURKLUTVAZVBVAZFUHZBJUIZVCVDWQURUTVAWPVMVAWPVEZUKUSABCEFGHIJKLMNOPQRS
+        TUAUBUCVFFWOWRWOVGURVHUGWNVHUGWOVGUGVIWNKVJUGLVJUGWNVJUGOPKLVKVLVNURWNV
+        OVLVPVQVRWGBUSVSVTWA $.
+    $}
   $}
 
 
