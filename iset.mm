@@ -152535,6 +152535,17 @@ $)
         TUAUBUCVFFWOWRWOVGURVHUGWNVHUGWOVGUGVIWNKVJUGLVJUGWNVJUGOPKLVKVLVNURWNV
         OVLVPVQVRWGBUSVSVTWA $.
     $}
+
+    $( The image of ` ( R `` C ) ` by ` ( S `` C ) ` .  (Contributed by Thierry
+       Arnoux, 21-Apr-2017.) $)
+    ballotfilemscr $p |- ( C e. ( O \ E ) -> ( ( S ` C ) " ( R ` C ) ) = C ) $=
+      ( cdif wcel cima ccnv ballotfilemrval imaeq2d c1 caddc co ballotfilemsf1o
+      cfv cfz wf1o wceq simprd imaeq1d wf1 wss simpld syl eldifi ballotfilemelo
+      f1of1 cfn chash simp1bi f1imacnv syl2anc 3eqtr2d ) BMHUEUFZBEUOZBDUOZUGVO
+      VOBUGZUGVOUHZVQUGZBVNVPVQVOABCDEFGHIJKLMNOPQRSTUAUBUCUDUIUJVNVRVOVQVNUKKL
+      ULUMUPUMZVTVOUQZVRVOURZABCEFGHIJKLMNOPQRSTUAUBUCUNZUSUTVNVTVTVOVAZBVTVBZV
+      SBURVNWAWDVNWAWBWCVCVTVTVOVGVDVNBMUFZWEBMHVEWFWEBVHUFBVIUOKURBKLMNOPQVFVJ
+      VDVTVTBVOVKVLVM $.
   $}
 
 
