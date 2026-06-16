@@ -151740,6 +151740,17 @@ $)
           DUFVEOPANCARLUGAVDBUHAVHMVDAVFVDPZSZVIVFBPZURZSZQVHVJVIVLVJVFTPZNTPCT
           PZVIQVIVNAVFNCUIUJZVJRAVOVILUKVFNCULUMVJVKQVLQVJBVFDEFGHIJABFPVIKUKVP
           UNVKUSUTUOVGVMVFVDBUPUQVAVBMVDVEVCUM $.
+
+        ballotfilemc.k $e |- ( ph -> K e. ZZ ) $.
+        $d K x $.
+        $( Lemma for ballotfi .  The portion of a counting representing votes
+           for A within a specified integer range is finite.  (Contributed by
+           Jim Kingdon, 15-Jun-2026.) $)
+        ballotfilemcinfz $p |- ( ph -> ( ( J ... K ) i^i C ) e. Fin ) $=
+          ( vx cfz co cfn wcel cv wdc wral cin fzfigd wa elfzelz ballotfilemcdc
+          adantr cz adantl ralrimiva infidc syl2anc ) ACDPQZRSOTZBSUAZOUNUBUNBU
+          CRSACDMNUDAUPOUNAUOUNSZUEBUOEFGHIJKABGSUQLUHUQUOUISAUOCDUFUJUGUKOUNBU
+          LUM $.
       $}
     $}
 
