@@ -106783,6 +106783,26 @@ $)
       CDUERUSUQBPGUTUQABUFTUGVACBVCVDUHUIUJULUK $.
   $}
 
+  ${
+    $d x K $.  $d x M $.  $d x N $.
+    $( Split a finite interval of integers into two parts.  (Contributed by
+       Thierry Arnoux, 2-May-2017.) $)
+    fzsplit3 $p |- ( K e. ( M ... N ) ->
+      ( M ... N ) = ( ( M ... ( K - 1 ) ) u. ( K ... N ) ) ) $=
+      ( vx cfz co wcel c1 wo wa wbr cz syl syl2anr cuz wb elfzuz elfzuz3 adantl
+      cfv cmin cun cv cle elfzelz peano2zm zlelttric 1zzd zsubcld elfz5 elfzuzb
+      clt rbaib eluz syl2an zlem1lt 3bitrd orbi12d mpbird caddc peano2uz npcand
+      zcnd 1cnd eleq1d adantr mpbid uztrn syl2an2r sylanbrc jaodan impbida elun
+      bitr4di eqrdv ) ABCEFZGZDVPBAHUAFZEFZACEFZUBZVQDUCZVPGZWBVSGZWBVTGZIZWBWA
+      GVQWCWFVQWCJZWFWBVRUDKZVRWBULKZIZWCWBLGZVRLGZWJVQWBBCUEZVQALGZWLABCUEZAUF
+      MWBVRUGNWGWDWHWEWIWCWBBOTZGZWLWDWHPVQWBBCQVQAHWOVQUHUIWBBVRUJNWGWEWBAOTZG
+      ZAWBUDKZWIWGCWBOTZGZWEWSPWCXBVQWBBCRSWEWSXBWBACUKUMMVQWNWKWSWTPWCWOWMAWBU
+      NUOVQWNWKWTWIPWCWOWMAWBUPUOUQURUSVQWDWCWEVQWDJZWQXBWCWDWQVQWBBVRQSVQCWRGW
+      DAXAGZXBABCRXCVRHUTFZXAGZXDXCVRXAGZXFWDXGVQWBBVRRSWBVRVAMVQXFXDPWDVQXEAXA
+      VQAHVQAWOVCVQVDVBVEVFVGACWBVHVIWBBCUKZVJVQWEJWQXBWCWEWSAWPGWQVQWBACQABCQA
+      WBBVHNWEXBVQWBACRSXHVJVKVLWBVSVTVMVNVO $.
+  $}
+
   $( 0-based and 1-based finite sets of sequential integers are equinumerous.
      (Contributed by Paul Chapman, 11-Apr-2009.) $)
   fz01en $p |- ( N e. ZZ -> ( 0 ... ( N - 1 ) ) ~~ ( 1 ... N ) ) $=
