@@ -152620,6 +152620,36 @@ $)
       VJXAWNWPWPWSVQZXGWNWTBVJVKWNXCXLXDWPWPWSVRVSWNXGXEXIXJVTWNWAWPWPBWSWMWBWC
       WDZWOBWEWLZWNWRXHKWNWRXHUNZXFXMWNWQXEXOXFWFXNXKWOBWGWLWHWNXGXEXIXJWIWJWOK
       LMNOPQVNWK $.
+
+    $d i R $.
+    ${
+      $d u v C $.  $d u v I $.  $d u v J $.  $d u v R $.  $d u v S $.
+      $d u v U $.  $d u v V $.
+      $( ` .^ ` is the difference of counts of elements of ` U ` in / out of
+         set ` V ` . $)
+      ballotlemg $e |- .^ = ( u e. O , v e. Fin |->
+                               ( ( # ` ( v i^i u ) ) - ( # ` ( v \ u ) ) ) ) $.
+      ${
+        $d O u v $.
+        ballotfilemgval.u $e |- ( ph -> U e. O ) $.
+        ballotfilemgval.j $e |- ( ph -> J e. ZZ ) $.
+        ballotfilemgval.k $e |- ( ph -> K e. ZZ ) $.
+        ballotfilemgval.fz $e |- ( ph -> V = ( J ... K ) ) $.
+        $( Expand the value of ` .^ ` .  (Contributed by Thierry Arnoux,
+           21-Apr-2017.)  (Revised by Jim Kingdon, 15-Jun-2026.) $)
+        ballotfilemgval $p |- ( ph
+            -> ( U .^ V ) = ( ( # ` ( V i^i U ) ) - ( # ` ( V \ U ) ) ) ) $=
+          ( wcel cfn cin chash cfv cdif cmin wceq cfz fzfigd eqeltrd cn0 ineq1d
+          co cz ballotfilemcinfz hashcl nn0zd difeq1d ballotfilemdifcfz zsubcld
+          syl cv ineq2 fveq2d difeq2 oveq12d ineq1 difeq1 ovmpog syl3anc ) AHSU
+          QTURUQTHUSZUTVAZTHVBZUTVAZVCVJZVKUQHTLVJWLVDUMATOPVEVJZURUPAOPUNUOVFV
+          GAWIWKAWIAWHURUQWIVHUQAWHWMHUSURATWMHUPVIAHOPQRSUAUBUCUDUMUNUOVLVGWHV
+          MVRVNAWKAWJURUQWKVHUQAWJWMHVBURATWMHUPVOAHOPQRSUAUBUCUDUMUNUOVPVGWJVM
+          VRVNVQDCHTSURCVSZDVSZUSZUTVAZWNWOVBZUTVAZVCVJWLLWNHUSZUTVAZWNHVBZUTVA
+          ZVCVJVKWOHVDZWQXAWSXCVCXDWPWTUTWOHWNVTWAXDWRXBUTWOHWNWBWAWCWNTVDZXAWI
+          XCWKVCXEWTWHUTWNTHWDWAXEXBWJUTWNTHWEWAWCULWFWG $.
+      $}
+    $}
   $}
 
 
