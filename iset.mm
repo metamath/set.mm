@@ -152649,8 +152649,9 @@ $)
          set ` V ` . $)
       ballotlemg $e |- .^ = ( u e. O , v e. Fin |->
                                ( ( # ` ( v i^i u ) ) - ( # ` ( v \ u ) ) ) ) $.
+      $d O u v $.
+
       ${
-        $d O u v $.
         ballotfilemgval.u $e |- ( ph -> U e. O ) $.
         ballotfilemgval.j $e |- ( ph -> J e. ZZ ) $.
         ballotfilemgval.k $e |- ( ph -> K e. ZZ ) $.
@@ -152671,7 +152672,7 @@ $)
       $}
 
       ${
-        $d u v U $.  $d u v O $.  $d u v K $.  $d u v L $.  $d L k $.
+        $d u v U $.  $d u v K $.  $d u v L $.  $d L k $.
         ballotfilemgun.1 $e |- ( ph -> U e. O ) $.
         ballotfilemgun.2 $e |- ( ph -> L e. ( J ... K ) ) $.
         $( A property of the defined ` .^ ` operator.  (Contributed by Thierry
@@ -152700,6 +152701,17 @@ $)
           KLMNOXFRSTXGUAUBUCUDUEUFUGUHUIUJUKULUMYRYTAXGXAXBABCDEFGHIJKLMNQPRSTX
           HUAUBUCUDUEUFUGUHUIUJUKULUMYSUUBAXHXAXBWOXE $.
       $}
+
+      $d i J $.
+      $( Express the value of ` ( F `` C ) ` in terms of ` .^ ` .  (Contributed
+         by Thierry Arnoux, 21-Apr-2017.) $)
+      ballotfilemfg $p |- ( ( C e. ( O \ E ) /\ J e. ( 0 ... ( M + N ) ) ) ->
+                                  ( ( F ` C ) ` J ) = ( C .^ ( 1 ... J ) ) ) $=
+        ( cdif wcel cc0 caddc co cfz wa cfv c1 chash cmin eldifi adantr elfzelz
+        cin cz adantl ballotfilemfval 1zzd eqidd ballotfilemgval eqtr4d ) DQJUJ
+        UKZNULOPUMUNZUOUNUKZUPZNDLUQUQURNUOUNZDVDUSUQVPDUJUSUQUTUNDVPKUNVOADEHL
+        NOPQRSTUAUBUCVLDQUKVNDQJVAVBZVNNVEUKVLNULVMVCVFZVGVOABCEFGDHIJKLMURNOPQ
+        VPRSTUAUBUCUDUEUFUGUHUIVQVOVHVRVOVPVIVJVK $.
     $}
   $}
 
