@@ -151721,18 +151721,18 @@ $)
       ${
         $d ph x $.  $d C x $.  $d J x $.  $d N x $.  $d M x $.
         ballotfilemc.j $e |- ( ph -> J e. ZZ ) $.
-        $( Lemma for ballotfi .  The portion of a particular element of ` O `
-           up to a specified integer is finite.  (Contributed by Jim Kingdon,
-           8-Jun-2026.) $)
+        $( Lemma for ballotfi .  The portion of a counting representing votes
+           for A up to a specified integer is finite.  (Contributed by Jim
+           Kingdon, 8-Jun-2026.) $)
         ballotfilemcinfi $p |- ( ph -> ( ( 1 ... J ) i^i C ) e. Fin ) $=
           ( vx c1 cfz co cfn wcel cv wdc wral cin 1zzd fzfigd wa adantr elfzelz
           cz adantl ballotfilemcdc ralrimiva infidc syl2anc ) ANCOPZQRMSZBRTZMU
           NUAUNBUBQRANCAUCLUDAUPMUNAUOUNRZUEBUODEFGHIJABFRUQKUFUQUOUHRAUONCUGUI
           UJUKMUNBULUM $.
 
-        $( Lemma for ballotfi .  The portion of an integer range which is not
-           part of a particular element of ` O ` is finite.  (Contributed by
-           Jim Kingdon, 8-Jun-2026.) $)
+        $( Lemma for ballotfi .  The portion of a counting representing votes
+           for B up to a specified integer is finite.  (Contributed by Jim
+           Kingdon, 8-Jun-2026.) $)
         ballotfilemdifcfi $p |- ( ph -> ( ( 1 ... J ) \ C ) e. Fin ) $=
           ( vx c1 cfn wcel wdc 1zzd wa cz cfz co cdif wss cv wral fzfigd difssd
           elfzelz adantl adantr fzdcel syl3anc ballotfilemcdc dcand eldif dcbii
