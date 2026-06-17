@@ -53997,6 +53997,22 @@ $)
   $}
 
   ${
+    $d x y z $.  $d y z A $.  $d y z F $.
+    dfimafnf.1 $e |- F/_ x A $.
+    dfimafnf.2 $e |- F/_ x F $.
+    $( Alternate definition of the image of a function.  (Contributed by Raph
+       Levien, 20-Nov-2006.)  (Revised by Thierry Arnoux, 24-Apr-2017.) $)
+    dfimafnf $p |- ( ( Fun F /\ A C_ dom F ) ->
+                  ( F " A ) = { y | E. x e. A y = ( F ` x ) } ) $=
+      ( vz wfun cdm wss wa cima cv cfv wceq wrex cab wbr wcel nfcv dfima2 eqcom
+      wb ssel funbrfvb bitr3id ex syl9r imp31 rexbidva abbidv eqtr4id nfeq2 nfv
+      nffv fveq2 eqeq2d cbvrexfw abbii eqtrdi ) DHZCDIZJZKZDCLZBMZGMZDNZOZGCPZB
+      QZVFAMZDNZOZACPZBQVDVEVGVFDRZGCPZBQVKGBDCUAVDVJVQBVDVIVPGCVAVCVGCSZVIVPUC
+      ZVCVRVGVBSZVAVSCVBVGUDVAVTVSVIVHVFOVAVTKVPVHVFUBVGVFDUEUFUGUHUIUJUKULVJVO
+      BVIVNGACGCTEAVFVHAVGDFAVGTUOUMVNGUNVGVLOVHVMVFVGVLDUPUQURUSUT $.
+  $}
+
+  ${
     resfvresima.f $e |- ( ph -> Fun F ) $.
     resfvresima.s $e |- ( ph -> S C_ dom F ) $.
     resfvresima.x $e |- ( ph -> X e. S ) $.
@@ -59017,6 +59033,61 @@ $)
     abexex $p |- { y | E. x ph } e. _V $=
       ( wrex cab wex cvv cv wcel wa df-rex pm4.71ri exbii bitr4i abbii abrexex2
       eqeltrri ) ABDHZCIABJZCIKUBUCCUBBLDMZANZBJUCABDOAUEBAUDFPQRSABCDEGTUA $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.  $d y C $.
+    elabreximd.1 $e |- F/ x ph $.
+    elabreximd.2 $e |- F/ x ch $.
+    elabreximd.3 $e |- ( A = B -> ( ch <-> ps ) ) $.
+    elabreximd.4 $e |- ( ph -> A e. V ) $.
+    elabreximd.5 $e |- ( ( ph /\ x e. C ) -> ps ) $.
+    $( Class substitution in an image set.  (Contributed by Thierry Arnoux,
+       30-Dec-2016.) $)
+    elabreximd $p |- ( ( ph /\ A e. { y | E. x e. C y = B } ) -> ch ) $=
+      ( cv wceq wrex cab wcel wa wb eqeq1 rexbidv elabg syl biimpa simpr adantr
+      biimpar syl2anc exp31 rexlimd imp syldan ) AFEOZGPZDHQZERSZFGPZDHQZCAURUT
+      AFISURUTUAMUQUTEFIUOFPUPUSDHUOFGUBUCUDUEUFAUTCAUSCDHJKADOHSZUSCAVATZUSTUS
+      BCVBUSUGVBBUSNUHUSCBLUIUJUKULUMUN $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.  $d x y C $.  $d x ch $.  $d x ph $.
+    elabreximdv.1 $e |- ( A = B -> ( ch <-> ps ) ) $.
+    elabreximdv.2 $e |- ( ph -> A e. V ) $.
+    elabreximdv.3 $e |- ( ( ph /\ x e. C ) -> ps ) $.
+    $( Class substitution in an image set.  (Contributed by Thierry Arnoux,
+       30-Dec-2016.) $)
+    elabreximdv $p |- ( ( ph /\ A e. { y | E. x e. C y = B } ) -> ch ) $=
+      ( nfv elabreximd ) ABCDEFGHIADMCDMJKLN $.
+  $}
+
+  ${
+    abrexss.1 $e |- F/_ x C $.
+    $d x y z $.  $d y z A $.  $d z C $.  $d y z B $.
+    $( A necessary condition for an image set to be a subset.  (Contributed by
+       Thierry Arnoux, 6-Feb-2017.) $)
+    abrexss $p |- ( A. x e. A B e. C -> { y | E. x e. A y = B } C_ C ) $=
+      ( vz wcel wral cv wceq wrex cab cvv nfra1 nfcri eleq1 vex a1i rspa ssrdv
+      elabreximd ex ) DEHZACIZGBJDKACLBMZEUEGJZUFHUGEHZUEUDUHABUGDCNUDACOAGEFPU
+      GDEQUGNHUEGRSUDACTUBUCUA $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.  $d y F $.
+    funimass4f.1 $e |- F/_ x A $.
+    funimass4f.2 $e |- F/_ x B $.
+    funimass4f.3 $e |- F/_ x F $.
+    $( use ~ ffnfvf $)
+    $( Membership relation for the values of a function whose image is a
+       subclass.  (Contributed by Thierry Arnoux, 24-Apr-2017.) $)
+    funimass4f $p |- ( ( Fun F /\ A C_ dom F ) ->
+                    ( ( F " A ) C_ B <-> A. x e. A ( F ` x ) e. B ) ) $=
+      ( vy wfun cdm wss wa cima cv cfv wcel wral nfss nfan wceq nffun funfvima2
+      nfdm nfima ssel sylan9 ralrimi cab dfimafnf adantr abrexss adantl eqsstrd
+      wrex impbida ) DIZBDJZKZLZDBMZCKZANZDOZCPZABQZUSVALVDABUSVAAUPURAADGUAABU
+      QEADGUCRSAUTCADBGEUDFRSUSVBBPVCUTPVAVDBVBDUBUTCVCUEUFUGUSVELUTHNVCTABUNHU
+      HZCUSUTVFTVEAHBDEGUIUJVEVFCKUSAHBVCCFUKULUMUO $.
   $}
 
   ${
