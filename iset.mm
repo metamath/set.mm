@@ -152913,6 +152913,18 @@ $)
         CUOAVNVIBCDEFGHIJKLMNOPQRSTUAUBUCUOUPURUSUTUDMVHVPVKVNVIUKZVOVJVNVIVNVI
         DVAVTVBVCVDVECVLUCVFUCVG $.
     $}
+
+    $( When the vote on the first tie is for A, the first vote is also for A on
+       the reverse counting.  (Contributed by Thierry Arnoux, 18-Apr-2017.) $)
+    ballotfilem1ri $p |- ( C e. ( O \ E ) ->
+                                     ( 1 e. ( R ` C ) <-> ( I ` C ) e. C ) ) $=
+      ( cdif wcel c1 cfv caddc co cmin cfz cle wbr wb cuz cn nnaddcl mp2an nnuz
+      eleqtri eluzfz1 mp1i cc0 ballotfilemiex simpld elfzle1 syl ballotfilemrv1
+      wceq mpd3an23 elfzelzd zcnd 1cnd pncand eleq1d bitrd ) BMHUEUFZUGBDUHUFZB
+      JUHZUGUIUJUGUKUJZBUFZVTBUFVRUGUGKLUIUJZULUJZUFZUGVTUMUNZVSWBUOWCUGUPUHZUF
+      WEVRWCUQWGKUQUFLUQUFWCUQUFOPKLURUSUTVAUGWCVBVCVRVTWDUFZWFVRWHVTBIUHUHVDVJ
+      ABCFGHIJKLMNOPQRSTUAUBVEVFZVTUGWCVGVHABCDEFGHIJUGKLMNOPQRSTUAUBUCUDVIVKVR
+      WAVTBVRVTUGVRVTVRVTUGWCWIVLVMVRVNVOVPVQ $.
   $}
 
 
