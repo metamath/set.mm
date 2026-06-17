@@ -170681,7 +170681,9 @@ $)
     aprunit.r $e |- ( ph -> R e. Ring ) $.
     aprunit.x $e |- ( ph -> X e. B ) $.
     $( The ~ df-apr relation with zero expresses whether a ring element is a
-       unit.  (Contributed by Jim Kingdon, 29-May-2026.) $)
+       unit.  That is, the difference of an element of a ring and zero is
+       invertible iff the element is a unit.  (Contributed by Jim Kingdon,
+       29-May-2026.) $)
     aprunit $p |- ( ph -> ( X .# .0. <-> X e. U ) ) $=
       ( wbr csg cfv co wcel wceq a1i cbs capr eqidd cui crg ring0cl aprval cgrp
       syl ringgrpd eqid grpsubid1 syl2anc eleq1d bitrd ) AFGCNFGDOPZQZERFERABCD
