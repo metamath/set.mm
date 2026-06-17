@@ -91618,6 +91618,13 @@ $)
     wceq ) AEFBEFGZCEFDEFGZGABHIZJZCDHIZJZRZUAUCRZBAHIZDCHIZRSUAEFUCEFUEUFKTABL
     CDLUAUCMNSTUBUGUDUHABOCDOPQ $.
 
+  $( Two complex numbers add up to zero iff they are each other's opposites.
+     (Contributed by Thierry Arnoux, 2-May-2017.) $)
+  addeq0 $p |- ( ( A e. CC /\ B e. CC ) -> ( ( A + B ) = 0 <-> A = -u B ) ) $=
+    ( cc wcel wa cc0 cmin co wceq caddc cneg simpr simpl subadd2d df-neg eqeq1i
+    0cnd eqcom bitr3i bitr3di ) ACDZBCDZEZFBGHZAIZABJHFIABKZIZUCFBAUCQUAUBLUAUB
+    MNUEUFAIUGUFUDABOPUFARST $.
+
   $( Cancellation law for addition and subtraction with 1.  (Contributed by
      Alexander van der Vekens, 3-Oct-2018.) $)
   pncan1 $p |- ( A e. CC -> ( ( A + 1 ) - 1 ) = A ) $=
