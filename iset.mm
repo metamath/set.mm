@@ -152881,6 +152881,28 @@ $)
         XAXTYBXSVFXAXTYBWGZXRXEULZUNUOZXSYDYEUNABCDEFGHIJXRKLMNOPQRSTUAUBUCUDWH
         WIXSXTYFXFYFGXRXHXDXRUNXEVQWJWKWNWLWOWPWQWRWS $.
     $}
+
+    $( due to x used in ballotlemirc $)
+    $d x c $.  $d x C $.  $d x F $.  $d x M $.  $d x N $.  $d c I $.  $d d S $.
+    ${
+      $d d i x k $.  $d d E $.  $d d I $.  $d d O $.
+      $( Lemma for ~ ballotfilemrinv .  (Contributed by Thierry Arnoux,
+         18-Apr-2017.) $)
+      ballotfilemrinv0 $p |- ( ( C e. ( O \ E ) /\ D = ( ( S ` C ) " C ) ) ->
+                             ( D e. ( O \ E ) /\ C = ( ( S ` D ) " D ) ) ) $=
+        ( cdif wcel cfv cima wceq wa ballotfilemrval adantr simpr ballotfilemrc
+        eqtr4d eqeltrrd ccnv c1 caddc co cfz wf1o ballotfilemsf1o simprd eqcomd
+        imaeq12d simpl ballotfilemirc fveq2d ballotfilemieq syl3anc imaeq1d wf1
+        eqtr3d wss simpld f1of1 3syl eldifi cfn ballotfilemelo simp1bi f1imacnv
+        chash syl2anc 3eqtr3rd jca ) BNIUFZUGZCBFUHZBUIZUJZUKZCWIUGZBCFUHZCUIZU
+        JWNBEUHZCWIWNWRWLCWJWRWLUJWMABDEFGHIJKLMNOPQRSTUAUBUCUDUEULUMWJWMUNZUPZ
+        WJWRWIUGWMABDEFGHIJKLMNOPQRSTUAUBUCUDUEUOUMUQZWNWKCUIWKURZWLUIZWQBWNWKX
+        BCWLWNXBWKWJXBWKUJZWMWJUSLMUTVAVBVAZXEWKVCZXDABDFGHIJKLMNOPQRSTUAUBUCUD
+        VDZVEUMVFWSVGWNWKWPCWNWJWOBKUHZCKUHZUJWKWPUJWJWMVHZXAWNWRKUHZXHXIWJXKXH
+        UJWMABDEFGHIJKLMNOPQRSTUAUBUCUDUEVIUMWNWRCKWTVJVOABCDFGHIJKLMNOPQRSTUAU
+        BUCUDVKVLVMWNXEXEWKVNZBXEVPZXCBUJWNWJXFXLXJWJXFXDXGVQXEXEWKVRVSWNWJBNUG
+        ZXMXJBNIVTXNXMBWAUGBWEUHLUJBLMNOPQRWBWCVSXEXEBWKWDWFWGWH $.
+    $}
   $}
 
 
