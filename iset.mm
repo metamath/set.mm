@@ -170708,12 +170708,15 @@ $)
 
   ${
     $d .# x y $.  $d .0. x y $.  $d B x y $.  $d R y $.
-    ringuiap.b $e |- B = ( Base ` R ) $.
-    ringuiap.z $e |- .0. = ( 0g ` R ) $.
-    ringuiap.ap $e |- .# = ( #r ` R ) $.
-    $( The set of units of a ring.  (Contributed by Jim Kingdon,
-       31-May-2026.) $)
-    ringuiap $p |- ( R e. Ring -> { x e. B | x .# .0. } = ( Unit ` R ) ) $=
+    ringunitsap0.b $e |- B = ( Base ` R ) $.
+    ringunitsap0.z $e |- .0. = ( 0g ` R ) $.
+    ringunitsap0.ap $e |- .# = ( #r ` R ) $.
+    $( The set of units of a ring.  If ` R ` is a local ring, ` .# ` is an
+       apartness and this theorem states that the units of a ring are those
+       elements apart from zero (see ~ aprlring ).  Given the definition of
+       ` #r ` this theorem holds even if ` .# ` is not an apartness, however.
+       (Contributed by Jim Kingdon, 31-May-2026.) $)
+    ringunitsap0 $p |- ( R e. Ring -> { x e. B | x .# .0. } = ( Unit ` R ) ) $=
       ( vy crg wcel cv wbr crab cui cfv wa breq1 elrab eqid ringunitap bitr4id
       eqrdv ) DJKZIALZECMZABNZDOPZUDILZUGKUIBKUIECMZQUIUHKUFUJAUIBUEUIECRSBCDUH
       UIEFUHTGHUAUBUC $.
