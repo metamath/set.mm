@@ -152799,10 +152799,9 @@ $)
       $d u v C $.  $d u v I $.  $d u v J $.  $d u v R $.  $d u v S $.
       $d w y z $.  $d c k y z $.  $d y z C $.  $d y z F $.  $d y z M $.
       $d y z N $.  $d k w y z $.  $d w C $.  $d w F $.  $d w M $.  $d w N $.
-      $d i J $.
+      $d i J $.  $d O u v $.
       ${
-        $d O u v $.  $d M q $.  $d N q $.  $d k q $.  $d C q $.  $d F q $.
-        $d i q $.
+        $d M q $.  $d N q $.  $d k q $.  $d C q $.  $d F q $.  $d i q $.
         $( Value of ` F ` for a reversed counting ` ( R `` C ) ` , before the
            first tie, cannot be zero.  (Contributed by Thierry Arnoux,
            25-Apr-2017.)  (Revised by AV, 6-Oct-2020.) $)
@@ -152844,6 +152843,17 @@ $)
           GHUHUGNYNUGXBZUHXBZYOYQUMUWSUWTUIYQUMUSVCYRZIJKLMNOPQRSTUAUBUCUDUEUXA
           YSYPYTUUAUUBWNUUC $.
       $}
+
+      $( Range of ` R ` .  (Contributed by Thierry Arnoux, 19-Apr-2017.) $)
+      ballotfilemrc $p |- ( C e. ( O \ E ) -> ( R ` C ) e. ( O \ E ) ) $=
+        ( vv vu cdif wcel cfv cv cc0 cle wbr c1 caddc co cfz wrex ballotfilemro
+        wceq fveq2 breq1d ballotfilemiex simpld chash cmin cmpo ballotfilemfrci
+        cfn cin eqid 0le0 eqbrtrdi rspcedvdw ballotfilemodife sylanbrc ) BMHUGZ
+        UHZBDUIZMUHFUJZVSIUIZUIZUKULUMZFUNKLUOUPUQUPZURVSVQUHABCDEFGHIJKLMNOPQR
+        STUAUBUCUDUSVRWCBJUIZWAUIZUKULUMFWEWDVTWEUTWBWFUKULVTWEWAVAVBVRWEWDUHWE
+        BIUIUIUKUTABCFGHIJKLMNOPQRSTUAUBVCVDVRWFUKUKULAUEUFBCDEFGHUFUEMVIUEUJZU
+        FUJZVJVEUIWGWHUGVEUIVFUPVGZIJKLMNOPQRSTUAUBUCUDWIVKVHVLVMVNAVSCFHIKLMNO
+        PQRSTVOVP $.
     $}
   $}
 
