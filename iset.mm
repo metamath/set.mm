@@ -170908,10 +170908,10 @@ $)
     ZUBUCLMTUEUAUDPTUEUFUGNAQRS $.
 
   ${
-    drngunit.b $e |- B = ( Base ` R ) $.
-    drngunit.u $e |- U = ( Unit ` R ) $.
-    drngunit.z $e |- .0. = ( 0g ` R ) $.
-    drngunit.ap $e |- .# = ( #r ` R ) $.
+    drngunitap.b $e |- B = ( Base ` R ) $.
+    drngunitap.u $e |- U = ( Unit ` R ) $.
+    drngunitap.z $e |- .0. = ( 0g ` R ) $.
+    drngunitap.ap $e |- .# = ( #r ` R ) $.
     $( Elementhood in the set of units when ` R ` is a division ring.
        (Contributed by Mario Carneiro, 2-Dec-2014.) $)
     drngunitap $p |- ( R e. DivRing ->
