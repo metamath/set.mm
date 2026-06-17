@@ -152855,6 +152855,32 @@ $)
         FUJZVJVEUIWGWHUGVEUIVFUPVGZIJKLMNOPQRSTUAUBUCUDWIVKVHVLVMVNAVSCFHIKLMNO
         PQRSTVOVP $.
     $}
+
+    $d k i R $.
+    ${
+      $d k x y $.  $d x y C $.  $d y E $.  $d x y F $.  $d y I $.  $d x y M $.
+      $d x y N $.  $d y O $.  $d y R $.  $d u v C $.  $d u v I $.  $d u v R $.
+      $d u v S $.  $d u v y $.  $d i y $.  $d O u v $.  $d E p q $.
+      $d O p q $.  $d k y p q $.  $d C p q $.  $d I p q $.  $d R p q $.
+      $d F p q $.  $d M p q $.  $d N p q $.
+      $( Applying ` R ` does not change first ties.  (Contributed by Thierry
+         Arnoux, 19-Apr-2017.)  (Revised by AV, 6-Oct-2020.) $)
+      ballotfilemirc $p |- ( C e. ( O \ E )
+          -> ( I ` ( R ` C ) ) = ( I ` C ) ) $=
+        ( vy vq vp vv vu cdif wcel cfv cv cc0 wceq c1 caddc co cfz crab cr cinf
+        ballotfilemrc ballotfilemi wa wn wb lttri3 adantl ballotfilemiex simpld
+        clt syl wbr elfzelzd zred fveqeq2 cfn chash cmin ballotfilemfrci elrabd
+        cin cmpo elrabi anim2i w3a ballotfilemfrcn0 neneqd elrab simprbi 3expia
+        eqid nsyl con2d imp sylancom infminti eqtrd ) BMHUJZUKZBDULZJULZGUMZXBI
+        ULZULUNUOZGUPKLUQURZUSURZUTZVAVLVBZBJULZXAXBWTUKXCXJUOABCDEFGHIJKLMNOPQ
+        RSTUAUBUCUDVCAXBCFGHIJKLMNOPQRSTUAUBVDVMXAUEUFUGVAXIXKVLUGUMZVAUKUFUMZV
+        AUKVEXLXMUOXLXMVLVNVFXMXLVLVNVFVEVGXAXLXMVHVIXAXKXAXKUPXGXAXKXHUKXKBIUL
+        ULUNUOABCFGHIJKLMNOPQRSTUAUBVJVKZVOVPXAXFXKXEULUNUOGXKXHXDXKUNXEVQXNAUH
+        UIBCDEFGHUIUHMVRUHUMZUIUMZWCVSULXOXPUJVSULVTURWDZIJKLMNOPQRSTUAUBUCUDXQ
+        WMWAWBXAUEUMZXIUKZXAXRXHUKZVEZXRXKVLVNZVFZXSXTXAXFGXRXHWEWFYAXSYCYAYBXS
+        XAXTYBXSVFXAXTYBWGZXRXEULZUNUOZXSYDYEUNABCDEFGHIJXRKLMNOPQRSTUAUBUCUDWH
+        WIXSXTYFXFYFGXRXHXDXRUNXEVQWJWKWNWLWOWPWQWRWS $.
+    $}
   $}
 
 
