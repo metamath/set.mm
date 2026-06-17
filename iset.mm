@@ -55055,6 +55055,29 @@ $)
       TVOVMVPVQVRVSVTWAIJABCDEFGWBWC $.
   $}
 
+  $( A different way to write ` F ` is a function.  (Contributed by Thierry
+     Arnoux, 7-Dec-2016.) $)
+  fdmrn $p |- ( Fun F <-> F : dom F --> ran F ) $=
+    ( cdm crn wf wfn wfun wss ssid df-f mpbiran2 wceq eqid df-fn bitr2i ) ABZAC
+    ZADZAOEZAFZQRPPGPHOPAIJRSOOKOLAOMJN $.
+
+  ${
+    rinvbij.1 $e |- Fun F $.
+    rinvbij.2 $e |- `' F = F $.
+    rinvbij.3a $e |- ( F " A ) C_ B $.
+    rinvbij.3b $e |- ( F " B ) C_ A $.
+    rinvbij.4a $e |- A C_ dom F $.
+    rinvbij.4b $e |- B C_ dom F $.
+    $( Sufficient conditions for the restriction of an involution to be a
+       bijection.  (Contributed by Thierry Arnoux, 7-Dec-2016.) $)
+    rinvf1o $p |- ( F |` A ) : A -1-1-onto-> B $=
+      ( cima cres wf1o cdm crn wf1 wss wfun mpbi mp2an wb wf fdmrn funeqi mpbir
+      ccnv df-f1 mpbir2an f1ores funimass3 imaeq1i sseqtri eqssi f1oeq3 ax-mp
+      wceq ) ACAJZCAKZLZABUQLZCMZCNZCOZAUTPURVBUTVACUAZCUEZQZCQZVCDCUBRVEVFDVDC
+      EUCUDUTVACUFUGHUTVAACUHSUPBUOURUSTUPBFBVDAJZUPCBJAPZBVGPZGVFBUTPVHVITDIBA
+      CUISRVDCAEUJUKULUPBAUQUMUNR $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
