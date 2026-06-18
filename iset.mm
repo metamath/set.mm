@@ -31378,12 +31378,12 @@ $)
   ${
     $d A x $.
     $( Law of excluded middle given decidability, in terms of restricted class
-       abstractions.  (Contributed by Jim Kingdon, 2-Aug-2018.) $)
-    rabxmdc $p |- ( A. x DECID ph ->
+       abstractions.  (Contributed by Jeff Madsen, 20-Jun-2011.)  (Revised by
+       Jim Kingdon, 17-Jun-2026.) $)
+    rabxmdc $p |- ( A. x e. A DECID ph ->
         A = ( { x e. A | ph } u. { x e. A | -. ph } ) ) $=
-      ( wdc wal wn wo crab cun wral wceq cv wcel wi exmiddc alimi df-ral sylibr
-      a1d rabid2 unrab eqtr4di ) ADZBEZCAAFZGZBCHZABCHUEBCHIUDUFBCJZCUGKUDBLCMZ
-      UFNZBEUHUCUJBUCUFUIAOSPUFBCQRUFBCTRAUEBCUAUB $.
+      ( wdc wral wn wo crab cun wceq exmiddc ralimi rabid2 sylibr unrab eqtr4di
+      ) ADZBCEZCAAFZGZBCHZABCHSBCHIRTBCECUAJQTBCAKLTBCMNASBCOP $.
 
     $( Law of noncontradiction, in terms of restricted class abstractions.
        (Contributed by Jeff Madsen, 20-Jun-2011.) $)
