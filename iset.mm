@@ -28895,6 +28895,14 @@ $)
     $( Equivalence for subclass relation, using bound-variable hypotheses
        instead of distinct variable conditions.  (Contributed by NM,
        3-Jul-1994.)  (Revised by Andrew Salmon, 27-Aug-2011.) $)
+    dfssf $p |- ( A C_ B <-> A. x ( x e. A -> x e. B ) ) $=
+      ( vz wss cv wcel wal ssalel nfcri nfim nfv weq eleq1 imbi12d cbval bitri
+      wi ) BCGFHZBIZUACIZTZFJAHZBIZUECIZTZAJFBCKUDUHFAUBUCAAFBDLAFCELMUHFNFAOUB
+      UFUCUGUAUEBPUAUECPQRS $.
+
+    $( Equivalence for subclass relation, using bound-variable hypotheses
+       instead of distinct variable conditions.  (Contributed by NM,
+       3-Jul-1994.)  (Revised by Andrew Salmon, 27-Aug-2011.) $)
     dfss2f $p |- ( A C_ B <-> A. x ( x e. A -> x e. B ) ) $=
       ( vz wss cv wcel wal ssalel nfcri nfim nfv weq eleq1 imbi12d cbval bitri
       wi ) BCGFHZBIZUACIZTZFJAHZBIZUECIZTZAJFBCKUDUHFAUBUCAAFBDLAFCELMUHFNFAOUB
