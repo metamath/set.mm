@@ -151792,7 +151792,7 @@ $)
 
     $( ` O ` is the universe, all countings where A receives ` M ` votes
        out of ` M + N ` $)
-    ballotfi.o $e |- O
+    ballotfilem.o $e |- O
       = { c e. ( ~P ( 1 ... ( M + N ) ) i^i Fin ) | ( # ` c ) = M } $.
     $( ` O ` is finite.  (Contributed by Jim Kingdon, 20-May-2026.) $)
     ballotfilemofi $p |- O e. Fin $=
@@ -151903,7 +151903,7 @@ $)
     $}
 
     $( Let ` P ` be the uniform discrete probability measure over ` O ` . $)
-    ballotfi.p $e |- P = ( x e. ( ~P O i^i Fin )
+    ballotfilem.p $e |- P = ( x e. ( ~P O i^i Fin )
       |-> ( ( # ` x ) / ( # ` O ) ) ) $.
 
     ${
@@ -153123,7 +153123,7 @@ $)
     $}
 
     $d x c $.  $d x E $.  $d x O $.
-    $( Lemma for ballotfi .  The result, with several additional hypotheses
+    $( Lemma for ~ ballotfi .  The result, with several additional hypotheses
        which are for use during the proof.  (Contributed by Thierry Arnoux,
        7-Dec-2016.) $)
     ballotfilemth $p |- ( P ` E ) = ( ( M - N ) / ( M + N ) ) $=
@@ -153169,6 +153169,41 @@ $)
       UJUVPKKUKUIZUJUIZUVTVUIVUTUVPUJKVURYRYOVVAUVTKKUJUIZUKUIUVTURUKUIUVTJKKKJ
       NYTZVURVURVURUVDVVBURUVTUKKVURUVEYOUVTJKVVCVURUVFUVGXNYIWLVULUEVUMUVRUJUV
       PVUQVUSXKUTKUVPYPVURVUQVUSYQUVHUVIYS $.
+  $}
+
+  ${
+    $d E c i k q r s $.  $d E c i k x $.  $d F c i k p q r s $.
+    $d F c i k x $.  $d M c i k p q r s $.  $d M c i k x $.
+    $d N c i k p q r s $.  $d N c i k x $.  $d O c i k q r s $.
+    $d O c i k x $.
+    ballotfi.m $e |- M e. NN $.
+    ballotfi.n $e |- N e. NN $.
+    ballotfi.o $e |- O
+      = { c e. ( ~P ( 1 ... ( M + N ) ) i^i Fin ) | ( # ` c ) = M } $.
+    ballotfi.p $e |- P = ( x e. ( ~P O i^i Fin )
+      |-> ( ( # ` x ) / ( # ` O ) ) ) $.
+    ballotfi.f $e |- F = ( c e. O |-> ( i e. ZZ |->
+      ( ( # ` ( ( 1 ... i ) i^i c ) ) - ( # ` ( ( 1 ... i ) \ c ) ) ) ) ) $.
+    ballotfi.e $e |- E = { c e. O | A. i e. ( 1 ... ( M + N ) )
+      0 < ( ( F ` c ) ` i ) } $.
+    ballotfi.mgtn $e |- N < M $.
+    $( Bertrand's ballot problem : the probability that A is ahead throughout
+       the counting.  The proof formalized here is a proof "by reflection", as
+       opposed to other known proofs "by induction" or "by permutation".  This
+       is Metamath 100 proof #30.  (Contributed by Thierry Arnoux, 7-Dec-2016.)
+       (Revised by Jim Kingdon, 17-Jun-2026.) $)
+    ballotfi $p |- ( P ` E ) = ( ( M - N ) / ( M + N ) ) $=
+      ( cv co cfv cmpt vr vs vq vp vk cdif caddc cfz cc0 wceq crab clt cinf cle
+      c1 wbr cmin cif cima fveq2 fveq1d rabbidv infeq1d cbvmptv fveqeq2 cbvrabv
+      cr eqeq1d infeq1i mpteq2i eqtri breq2d oveq1d ifbieq1d mpteq2dv ifbieq12d
+      breq1 oveq2 id eqid ballotfilemth ) ABIHDUFZIQZUAWBUBUOFGUGRUHRZUBQZUAQZU
+      CWBUDQZUCQZESZSZUIUJZUDWDUKZVGULUMZTZSZUNUPZWOUOUGRZWEUQRZWEURZTZTZSWCUST
+      ZXACUEDEWNFGHIJKLMNOPWNIWBWGWCESZSZUIUJZUDWDUKZVGULUMZTIWBUEQZXCSUIUJZUEW
+      DUKZVGULUMZTUCIWBWMXGWHWCUJZVGWLXFULXLWKXEUDWDXLWJXDUIXLWGWIXCWHWCEUTVAVH
+      VBVCVDIWBXGXKVGXFXJULXEXIUDUEWDWGXHUIXCVEVFVIVJVKXAIWBUBWDWEWCWNSZUNUPZXM
+      UOUGRZWEUQRZWEURZTZTIWBCWDCQZXMUNUPZXOXSUQRZXSURZTZTUAIWBWTXRWFWCUJZUBWDW
+      SXQYDWPXNWRXPWEYDWOXMWEUNWFWCWNUTZVLYDWQXOWEUQYDWOXMUOUGYEVMVMVNVOVDIWBXR
+      YCUBCWDXQYBWEXSUJZXNXTXPWEYAXSWEXSXMUNVQWEXSXOUQVRYFVSVPVDVJVKXBVTWA $.
   $}
 
 
