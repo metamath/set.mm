@@ -152273,6 +152273,19 @@ $)
     $}
 
     ${
+      $d E c $.
+      $( The set of countings where B got the first vote is finite.
+         (Contributed by Jim Kingdon, 17-Jun-2026.) $)
+      ballotfilembfi $p |- { c e. ( O \ E ) | -. 1 e. c } e. Fin $=
+        ( c1 cv wcel cfn wtru wn cdif wss ballotfilemofi ballotfilemefi cc0 cfv
+        crab clt wbr caddc co cfz wral ssrab3 diffifi mp3an a1i wdc eldifi 1zzd
+        ballotfilemcdc dcn syl rgen ssfirab mptru ) PIQZRZUAZIHDUBZUHSRTVJIVKVK
+        SRZTHSRDSRDHUCVLFGHIJKLUDABCDEFGHIJKLMNOUEUFCQVHEUGUGUIUJCPFGUKULUMULUN
+        IHDOUOHDUPUQURVJUSZIVKUNTVMIVKVHVKRZVIUSVMVNVHPFGHIJKLVHHDUTVNVAVBVIVCV
+        DVEURVFVG $.
+    $}
+
+    ${
       $d i j C $.  $d c i F $.  $d j F $.  $d j M $.  $d j N $.  $d j O $.
       $( Elements of ` ( O \ E ) ` .  (Contributed by Thierry Arnoux,
          7-Dec-2016.) $)
@@ -153093,16 +153106,12 @@ $)
          Thierry Arnoux, 7-Dec-2016.) $)
       ballotfilem8 $p |- ( # ` { c e. ( O \ E ) | 1 e. c } )
                      = ( # ` { c e. ( O \ E ) | -. 1 e. c } ) $=
-        ( c1 cv wcel cdif crab cfn chash cfv wceq ballotfilemafi ballotfilemofi
-        wn wtru wss ballotfilemefi cc0 clt wbr caddc co cfz wral ssrab3 diffifi
-        mp3an a1i wdc eldifi 1zzd ballotfilemcdc dcn syl rgen ssfirab mptru cen
-        cres wf1o ballotfilem7 cvv difexg ax-mp rabex f1oen hashen mpbiri mp2an
-        wa ) UDMUEZUFZMLGUGZUHZUIUFZWMUOZMWNUHZUIUFZWOUJUKWRUJUKULZABEGHJKLMNOP
-        QRSUMWSUPWQMWNWNUIUFZUPLUIUFZGUIUFGLUQXAJKLMNOPUNZABEGHJKLMNOPQRSURUSEU
-        EWLHUKUKUTVAEUDJKVBVCVDVCVEMLGSVFLGVGVHVIWQVJZMWNVEUPXDMWNWLWNUFZWMVJXD
-        XEWLUDJKLMNOPWLLGVKXEVLVMWMVNVOVPVIVQVRWPWSWKWTWOWRVSVAZWOWRCWOVTZWAXFA
-        BCDEFGHIJKLMNOPQRSTUAUBUCWBWOWRXGWMMWNXBWNWCUFXCLGUIWDWEWFWGWEWOWRWHWIW
-        J $.
+        ( c1 cv wcel cdif crab cfn chash cfv wceq ballotfilemafi ballotfilembfi
+        wn cen wbr cres wf1o ballotfilem7 cvv ballotfilemofi difexg ax-mp rabex
+        wa f1oen hashen mpbiri mp2an ) UDMUEUFZMLGUGZUHZUIUFZVKUOMVLUHZUIUFZVMU
+        JUKVOUJUKULZABEGHJKLMNOPQRSUMABEGHJKLMNOPQRSUNVNVPVFVQVMVOUPUQZVMVOCVMU
+        RZUSVRABCDEFGHIJKLMNOPQRSTUAUBUCUTVMVOVSVKMVLLUIUFVLVAUFJKLMNOPVBLGUIVC
+        VDVEVGVDVMVOVHVIVJ $.
     $}
   $}
 
