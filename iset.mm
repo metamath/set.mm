@@ -152245,6 +152245,21 @@ $)
     $}
 
     ${
+      $d F c i j $.  $d M j $.  $d N j $.  $d O j $.
+      $( ` E ` is finite.  (Contributed by Jim Kingdon, 17-Jun-2026.) $)
+      ballotfilemefi $p |- E e. Fin $=
+        ( vj cc0 c1 wcel cz cv cfv clt wbr caddc co cfz wral cfn ballotfilemofi
+        crab wtru a1i 1z cn nnaddcl mp2an nnzi fzfig wa 0z simpl elfzelz adantl
+        wdc ballotfilemfelz zdclt sylancr ralrimiva weq fveq2 breq2d dcbid dcfi
+        cbvralv sylib rgen ssfirab mptru eqeltri ) DQCUAZIUAZEUBZUBZUCUDZCRFGUE
+        UFZUGUFZUHZIHUKZUIOWIUISULWHIHHUISULFGHIJKLUJUMWHVEZIHUHULWJIHWBHSZWGUI
+        SZWEVEZCWGUHZWJRTSWFTSWLUNWFFUOSGUOSWFUOSJKFGUPUQURRWFUSUQWKQPUAZWCUBZU
+        CUDZVEZPWGUHWNWKWRPWGWKWOWGSZUTZQTSWPTSWRVAWTAWBBCEWOFGHIJKLMNWKWSVBWSW
+        OTSWKWORWFVCVDVFQWPVGVHVIWRWMPCWGPCVJZWQWEXAWPWDQUCWOWAWCVKVLVMVOVPWECW
+        GVNVHVQUMVRVSVT $.
+    $}
+
+    ${
       $d i j C $.  $d c i F $.  $d j F $.  $d j M $.  $d j N $.  $d j O $.
       $( Elements of ` ( O \ E ) ` .  (Contributed by Thierry Arnoux,
          7-Dec-2016.) $)
@@ -153065,22 +153080,16 @@ $)
          Thierry Arnoux, 7-Dec-2016.) $)
       ballotfilem8 $p |- ( # ` { c e. ( O \ E ) | 1 e. c } )
                      = ( # ` { c e. ( O \ E ) | -. 1 e. c } ) $=
-        ( vj c1 cv wcel cdif crab cfn wn chash cfv wceq wtru wss ballotfilemofi
-        cc0 clt wbr caddc co cfz wral a1i wdc cz 1z cn nnaddcl mp2an nnzi fzfig
-        wa 0z simpl elfzelz adantl ballotfilemfelz zdclt ralrimiva fveq2 breq2d
-        sylancr dcbid cbvralv sylib ssfirab mptru eqeltri ssrab3 diffifi eldifi
-        dcfi rgen 1zzd ballotfilemcdc dcn syl cen cres wf1o ballotfilem7 difexg
-        mp3an cvv ax-mp rabex f1oen hashen mpbiri ) UEMUFZUGZMLGUHZUIZUJUGZXMUK
-        ZMXNUIZUJUGZXOULUMXRULUMUNZXPUOXMMXNXNUJUGZUOLUJUGZGUJUGGLUPYAJKLMNOPUQ
-        ZGUREUFZXLHUMZUMZUSUTZEUEJKVAVBZVCVBZVDZMLUIZUJSYKUJUGUOYJMLYBUOYCVEYJV
-        FZMLVDUOYLMLXLLUGZYIUJUGZYGVFZEYIVDZYLUEVGUGYHVGUGYNVHYHJVIUGKVIUGYHVIU
-        GNOJKVJVKVLUEYHVMVKYMURUDUFZYEUMZUSUTZVFZUDYIVDYPYMYTUDYIYMYQYIUGZVNZUR
-        VGUGYRVGUGYTVOUUBAXLBEHYQJKLMNOPQRYMUUAVPUUAYQVGUGYMYQUEYHVQVRVSURYRVTW
-        DWAYTYOUDEYIYQYDUNZYSYGUUCYRYFURUSYQYDYEWBWCWEWFWGYGEYIWNWDWOVEWHWIWJYJ
-        MLGSWKLGWLXEVEZXMVFZMXNVDUOUUEMXNXLXNUGZXLUEJKLMNOPXLLGWMUUFWPWQZWOVEWH
-        WIXSUOXQMXNUUDXQVFZMXNVDUOUUHMXNUUFUUEUUHUUGXMWRWSWOVEWHWIXPXSVNXTXOXRW
-        TUTZXOXRCXOXAZXBUUIABCDEFGHIJKLMNOPQRSTUAUBUCXCXOXRUUJXMMXNYBXNXFUGYCLG
-        UJXDXGXHXIXGXOXRXJXKVK $.
+        ( c1 cv wcel cdif crab cfn chash cfv wceq ballotfilemofi ballotfilemefi
+        wn wtru wss cc0 clt wbr caddc co cfz wral ssrab3 diffifi a1i wdc eldifi
+        mp3an 1zzd ballotfilemcdc rgen ssfirab dcn syl wa cen cres ballotfilem7
+        mptru wf1o cvv difexg ax-mp rabex f1oen hashen mpbiri mp2an ) UDMUEZUFZ
+        MLGUGZUHZUIUFZWLUOZMWMUHZUIUFZWNUJUKWQUJUKULZWOUPWLMWMWMUIUFZUPLUIUFZGU
+        IUFGLUQWTJKLMNOPUMZABEGHJKLMNOPQRSUNUREUEWKHUKUKUSUTEUDJKVAVBVCVBVDMLGS
+        VELGVFVJVGZWLVHZMWMVDUPXDMWMWKWMUFZWKUDJKLMNOPWKLGVIXEVKVLZVMVGVNWAWRUP
+        WPMWMXCWPVHZMWMVDUPXGMWMXEXDXGXFWLVOVPVMVGVNWAWOWRVQWSWNWQVRUTZWNWQCWNV
+        SZWBXHABCDEFGHIJKLMNOPQRSTUAUBUCVTWNWQXIWLMWMXAWMWCUFXBLGUIWDWEWFWGWEWN
+        WQWHWIWJ $.
     $}
   $}
 
