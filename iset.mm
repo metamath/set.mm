@@ -152260,6 +152260,19 @@ $)
     $}
 
     ${
+      $d E c $.
+      $( The set of countings where A got the first vote, but does not stay
+         strictly ahead throughout, is finite.  (Contributed by Jim Kingdon,
+         17-Jun-2026.) $)
+      ballotfilemafi $p |- { c e. ( O \ E ) | 1 e. c } e. Fin $=
+        ( c1 cv wcel cfn wtru wss ballotfilemofi ballotfilemefi cc0 cfv clt wbr
+        cdif crab caddc co cfz wral ssrab3 diffifi mp3an a1i wdc ballotfilemcdc
+        eldifi 1zzd rgen ssfirab mptru ) PIQZRZIHDUHZUISRTVFIVGVGSRZTHSRDSRDHUA
+        VHFGHIJKLUBABCDEFGHIJKLMNOUCUDCQVEEUEUEUFUGCPFGUJUKULUKUMIHDOUNHDUOUPUQ
+        VFURZIVGUMTVIIVGVEVGRZVEPFGHIJKLVEHDUTVJVAUSVBUQVCVD $.
+    $}
+
+    ${
       $d i j C $.  $d c i F $.  $d j F $.  $d j M $.  $d j N $.  $d j O $.
       $( Elements of ` ( O \ E ) ` .  (Contributed by Thierry Arnoux,
          7-Dec-2016.) $)
@@ -153080,16 +153093,16 @@ $)
          Thierry Arnoux, 7-Dec-2016.) $)
       ballotfilem8 $p |- ( # ` { c e. ( O \ E ) | 1 e. c } )
                      = ( # ` { c e. ( O \ E ) | -. 1 e. c } ) $=
-        ( c1 cv wcel cdif crab cfn chash cfv wceq ballotfilemofi ballotfilemefi
-        wn wtru wss cc0 clt wbr caddc co cfz wral ssrab3 diffifi a1i wdc eldifi
-        mp3an 1zzd ballotfilemcdc rgen ssfirab dcn syl wa cen cres ballotfilem7
-        mptru wf1o cvv difexg ax-mp rabex f1oen hashen mpbiri mp2an ) UDMUEZUFZ
-        MLGUGZUHZUIUFZWLUOZMWMUHZUIUFZWNUJUKWQUJUKULZWOUPWLMWMWMUIUFZUPLUIUFZGU
-        IUFGLUQWTJKLMNOPUMZABEGHJKLMNOPQRSUNUREUEWKHUKUKUSUTEUDJKVAVBVCVBVDMLGS
-        VELGVFVJVGZWLVHZMWMVDUPXDMWMWKWMUFZWKUDJKLMNOPWKLGVIXEVKVLZVMVGVNWAWRUP
-        WPMWMXCWPVHZMWMVDUPXGMWMXEXDXGXFWLVOVPVMVGVNWAWOWRVQWSWNWQVRUTZWNWQCWNV
-        SZWBXHABCDEFGHIJKLMNOPQRSTUAUBUCVTWNWQXIWLMWMXAWMWCUFXBLGUIWDWEWFWGWEWN
-        WQWHWIWJ $.
+        ( c1 cv wcel cdif crab cfn chash cfv wceq ballotfilemafi ballotfilemofi
+        wn wtru wss ballotfilemefi cc0 clt wbr caddc co cfz wral ssrab3 diffifi
+        mp3an a1i wdc eldifi 1zzd ballotfilemcdc dcn syl rgen ssfirab mptru cen
+        cres wf1o ballotfilem7 cvv difexg ax-mp rabex f1oen hashen mpbiri mp2an
+        wa ) UDMUEZUFZMLGUGZUHZUIUFZWMUOZMWNUHZUIUFZWOUJUKWRUJUKULZABEGHJKLMNOP
+        QRSUMWSUPWQMWNWNUIUFZUPLUIUFZGUIUFGLUQXAJKLMNOPUNZABEGHJKLMNOPQRSURUSEU
+        EWLHUKUKUTVAEUDJKVBVCVDVCVEMLGSVFLGVGVHVIWQVJZMWNVEUPXDMWNWLWNUFZWMVJXD
+        XEWLUDJKLMNOPWLLGVKXEVLVMWMVNVOVPVIVQVRWPWSWKWTWOWRVSVAZWOWRCWOVTZWAXFA
+        BCDEFGHIJKLMNOPQRSTUAUBUCWBWOWRXGWMMWNXBWNWCUFXCLGUIWDWEWFWGWEWOWRWHWIW
+        J $.
     $}
   $}
 
