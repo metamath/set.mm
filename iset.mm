@@ -106634,6 +106634,14 @@ $)
       ( cfz co wcel cz elfzelz syl ) ABCDFGHBIHEBCDJK $.
   $}
 
+  ${
+    $d M x $.  $d N x $.
+    $( A finite sequence of integers is a set of integers.  (Contributed by
+       Glauco Siliprandi, 11-Dec-2019.) $)
+    fzssz $p |- ( M ... N ) C_ ZZ $=
+      ( vx cfz co cz cv elfzelz ssriv ) CABDEFCGABHI $.
+  $}
+
   $( A member of a finite set of sequential integer is greater than or equal to
      the lower bound.  (Contributed by NM, 6-Sep-2005.)  (Revised by Mario
      Carneiro, 28-Apr-2015.) $)
