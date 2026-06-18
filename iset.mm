@@ -153057,6 +153057,31 @@ $)
         ULXTYOUDXLUIZUGUUJYOYDUDXTXLYRVLUUNXMXTYOXKUDMXLYSVMVNVOVRVPYTXOUUAUOUU
         IUUKVTXRXOXLUUAXNMXLWAUUDXAZMXOXMCUUGUUFUUHXEXFXGUUEUUOXI $.
     $}
+
+    ${
+      $d c j $.
+      $( There are as many countings with ties starting with a ballot for ` A `
+         as there are starting with a ballot for ` B ` .  (Contributed by
+         Thierry Arnoux, 7-Dec-2016.) $)
+      ballotfilem8 $p |- ( # ` { c e. ( O \ E ) | 1 e. c } )
+                     = ( # ` { c e. ( O \ E ) | -. 1 e. c } ) $=
+        ( vj c1 cv wcel cdif crab cfn wn chash cfv wceq wtru wss ballotfilemofi
+        cc0 clt wbr caddc co cfz wral a1i wdc cz 1z cn nnaddcl mp2an nnzi fzfig
+        wa 0z simpl elfzelz adantl ballotfilemfelz zdclt ralrimiva fveq2 breq2d
+        sylancr dcbid cbvralv sylib ssfirab mptru eqeltri ssrab3 diffifi eldifi
+        dcfi rgen 1zzd ballotfilemcdc dcn syl cen cres wf1o ballotfilem7 difexg
+        mp3an cvv ax-mp rabex f1oen hashen mpbiri ) UEMUFZUGZMLGUHZUIZUJUGZXMUK
+        ZMXNUIZUJUGZXOULUMXRULUMUNZXPUOXMMXNXNUJUGZUOLUJUGZGUJUGGLUPYAJKLMNOPUQ
+        ZGUREUFZXLHUMZUMZUSUTZEUEJKVAVBZVCVBZVDZMLUIZUJSYKUJUGUOYJMLYBUOYCVEYJV
+        FZMLVDUOYLMLXLLUGZYIUJUGZYGVFZEYIVDZYLUEVGUGYHVGUGYNVHYHJVIUGKVIUGYHVIU
+        GNOJKVJVKVLUEYHVMVKYMURUDUFZYEUMZUSUTZVFZUDYIVDYPYMYTUDYIYMYQYIUGZVNZUR
+        VGUGYRVGUGYTVOUUBAXLBEHYQJKLMNOPQRYMUUAVPUUAYQVGUGYMYQUEYHVQVRVSURYRVTW
+        DWAYTYOUDEYIYQYDUNZYSYGUUCYRYFURUSYQYDYEWBWCWEWFWGYGEYIWNWDWOVEWHWIWJYJ
+        MLGSWKLGWLXEVEZXMVFZMXNVDUOUUEMXNXLXNUGZXLUEJKLMNOPXLLGWMUUFWPWQZWOVEWH
+        WIXSUOXQMXNUUDXQVFZMXNVDUOUUHMXNUUFUUEUUHUUGXMWRWSWOVEWHWIXPXSVNXTXOXRW
+        TUTZXOXRCXOXAZXBUUIABCDEFGHIJKLMNOPQRSTUAUBUCXCXOXRUUJXMMXNYBXNXFUGYCLG
+        UJXDXGXHXIXGXOXRXJXKVK $.
+    $}
   $}
 
 
