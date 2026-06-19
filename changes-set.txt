@@ -92,6 +92,9 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+19-Jun-26 ringen1zr   ringen1zr0
+19-Jun-26 srgen1zr    srgen1zr0
+19-Jun-26 rngen1zr    [same]      theorem revised
 16-Jun-26 resdmdfsn   [same]      Removed antecedent
 16-Jun-26 resindm     [same]      Removed antecedent
  6-Jun-26 csbopabgALT csbopabw
