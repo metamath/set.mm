@@ -76223,6 +76223,32 @@ $)
   $}
 
   ${
+    $d A x y z $.  $d R x y z $.  $d S x y z $.
+    $( Equality theorem for apartness predicate.  (Contributed by Jim Kingdon,
+       3-Jun-2026.) $)
+    papeq1 $p |- ( R = S -> ( R Ap A <-> S Ap A ) ) $=
+      ( vx vy vz wss cv wbr wn wral wa wi breq ralbidv anbi12d imbi12d 2ralbidv
+      wo wap wceq cxp sseq1 notbid orbi12d df-pap 3bitr4g ) BCUAZBAAUBZGZDHZUKB
+      IZJZDAKZLZUKEHZBIZUPUKBIZMZEAKDAKZUQUKFHZBIZUPVABIZSZMZFAKZEAKDAKZLZLCUIG
+      ZUKUKCIZJZDAKZLZUKUPCIZUPUKCIZMZEAKDAKZVNUKVACIZUPVACIZSZMZFAKZEAKDAKZLZL
+      ABTACTUHUOVMVHWDUHUJVIUNVLBCUIUCUHUMVKDAUHULVJUKUKBCNUDOPUHUTVQVGWCUHUSVP
+      DEAAUHUQVNURVOUKUPBCNZUPUKBCNQRUHVFWBDEAAUHVEWAFAUHUQVNVDVTWEUHVBVRVCVSUK
+      VABCNUPVABCNUEQORPPDEFABUFDEFACUFUG $.
+  $}
+
+  ${
+    $d R x y z $.  $d A x y z $.  $d B x y z $.
+    $( Equality theorem for apartness predicate.  (Contributed by Jim Kingdon,
+       3-Jun-2026.) $)
+    papeq2 $p |- ( A = B -> ( R Ap A <-> R Ap B ) ) $=
+      ( vx vy vz wceq cxp wss cv wbr wn wral wa wi wap raleq anbi12d raleqbi1dv
+      df-pap wo id sqxpeqd sseq2d 3bitr4g ) ABGZCAAHZIZDJZUICKLZDAMZNZUIEJZCKZU
+      MUICKOZEAMZDAMZUNUIFJZCKUMURCKUAOZFAMZEAMZDAMZNZNCBBHZIZUJDBMZNZUOEBMZDBM
+      ZUSFBMZEBMZDBMZNZNACPBCPUFULVGVCVMUFUHVEUKVFUFUGVDCUFABUFUBUCUDUJDABQRUFU
+      QVIVBVLUPVHDABUOEABQSVAVKDABUTVJEABUSFABQSSRRDEFACTDEFBCTUE $.
+  $}
+
+  ${
     $d A x y z $.  $d R x y z $.  $d X x $.
     $( An apartness is irreflexive.  (Contributed by Jim Kingdon,
        27-May-2026.) $)
@@ -76274,6 +76300,15 @@ $)
        Kingdon, 5-Feb-2025.) $)
     df-tap $a |- ( R TAp A <-> ( R Ap A /\
       A. x e. A A. y e. A ( -. x R y -> x = y ) ) ) $.
+  $}
+
+  ${
+    $d A x y $.  $d R x y $.
+    $( A tight apartness is an apartness.  (Contributed by Jim Kingdon,
+       29-May-2026.) $)
+    tapap $p |- ( R TAp A -> R Ap A ) $=
+      ( vx vy wtap wap cv wbr wn weq wi wral df-tap simplbi ) ABEABFCGDGBHICDJK
+      DALCALCDABMN $.
   $}
 
   ${
@@ -116236,6 +116271,21 @@ $)
     JVNVRQRWEYIVRVJZYROUGVRUUFWEWFEVRWEYRVKPVCPSVRWSWJWKEFZWLEFWNVRWRUUIWLEVRWR
     RWJIFZWKEFZUUIVRWRRQEFZWJIFUUKUULGWJIVLVNVRRQWJUUHYIYSOVMVRUUJWJWKEVRWJYSVK
     NVCNVRWJWKWLYSYTUUBVGVOTVA $.
+
+  $( If a real number equals its square, it must be 0 or 1.  (Contributed by
+     Jim Kingdon, 2-Jun-2026.) $)
+  resq01 $p |- ( A e. RR -> ( ( A ^ 2 ) = A <-> ( A = 0 \/ A = 1 ) ) ) $=
+    ( cr wcel c2 cexp co wceq cc0 c1 wo clt wi wa cdiv cmul simpll recnd eqtr3d
+    wbr mpbird cc sqval syl simpr simplr gt0ap0d divmulapd dividapd olcd muls1d
+    ex cmin mulcld subeq0bd eqtr2d 0cnd 1red sublt0d lt0ap0d divmulap3d div0apd
+    resubcld orcd 0lt1 0re 1re axltwlin mp3an12 mpi mpjaodan sq0 id 3eqtr4a sq1
+    oveq1 jaoi impbid1 ) ABCZADEFZAGZAHGZAIGZJZVRHAKSZVTWCLAIKSZVRWDMZVTWCWFVTM
+    ZWBWAWGAANFZAIWGWHAGAAOFZAGWGVSWIAWGAUACZVSWIGZWGAVRWDVTPZQZAUBZUCWFVTUDRWG
+    AAAWMWMWMWGAWLVRWDVTUEUFZUGTWGAWMWOUHRUIUKVRWEMZVTWCWPVTMZWAWBWQHAIULFZNFZA
+    HWQWSAGHAWROFZGWQWTWIAULFHWQAAWQAVRWEVTPZQZXBUJWQWIAWQAAXBXBUMWQVSWIAWQWJWK
+    XBWNUCWPVTUDRUNUOWQHAWRWQUPXBWQWRWQAIXAWQUQZVBZQZWQWRXDWQWRHKSWEVRWEVTUEWQA
+    IXAXCURTUSZUTTWQWRXEXFVARVCUKVRHIKSZWDWEJZVDHBCIBCVRXGXHLVEVFHIAVGVHVIVJWAV
+    TWBWAHDEFHVSAVKAHDEVOWAVLVMWBIDEFIVSAVNAIDEVOWBVLVMVPVQ $.
 
   $( An integer is even iff its square is even.  (Contributed by Mario
      Carneiro, 12-Sep-2015.) $)
@@ -168362,6 +168412,19 @@ $)
     $}
 
     ${
+      $d R j $.  $d O j $.
+      $( Bidirectional form of ~ opprring .  (Contributed by Mario Carneiro,
+         6-Dec-2014.) $)
+      opprringb $p |- ( R e. Ring <-> O e. Ring ) $=
+        ( vj vf crg wcel cvv elex cur cfv cbs wex eqid ringidcl basm coppr wrel
+        cv cmulr syl wa cdm cnx ctpos cop csts cmpt mptrel df-oppr releqi mpbir
+        co eleq2i biimpi adantl relelfvdm sylancr exlimddv opprringbg pm5.21nii
+        elexd ) AFGAHGZBFGZAFIVDDSZBGZVCDVDBJKZBLKZGVFDMVHBVGVHNZVGNOVGVHDBVIPU
+        AVDVFUBZAQUCZVJQRZVEAQKZGZAVKGVLEHESZUDTKVOTKUEUFUGUMZUHZREHVPUIQVQEUJU
+        KULVFVNVDVFVNBVMVECUNUOUPVEAQUQURVBUSABHCUTVA $.
+    $}
+
+    ${
       $d V x y $.
       oppr0.2 $e |- .0. = ( 0g ` R ) $.
       $( Additive identity of an opposite ring.  (Contributed by Mario
@@ -169998,6 +170061,23 @@ $)
       GWNDWPFWMXNXOXPWISWJAXFYBXIWTXGQXKYCXMXGWNDWPGWMXNXOXPWISWJWKWL $.
   $}
 
+  ${
+    $d O x y $.  $d R x y $.
+    opprlring.1 $e |- O = ( oppR ` R ) $.
+    $( The opposite of a local ring is also a local ring.  (Contributed by NM,
+       18-Oct-2014.) $)
+    opprlring $p |- ( R e. LRing <-> O e. LRing ) $=
+      ( vx vy clring wcel crg lringring cnzr cv cplusg cfv co cur wceq cui wral
+      wo eqid opprringb sylibr wi cbs opprnzrbg opprbasg oppraddg oveqd eqeq12d
+      oppr1g eqidd coppr a1i opprunitd eleq2d orbi12d imbi12d raleqbidv anbi12d
+      wa id islring 3bitr4g pm5.21nii ) AFGZAHGZBFGZAIVGBHGVFBIABCUAUBVFAJGZDKZ
+      EKZALMZNZAOMZPZVIAQMZGZVJVOGZSZUCZEAUDMZRZDVTRZUTBJGZVIVJBLMZNZBOMZPZVIBQ
+      MZGZVJWHGZSZUCZEBUDMZRZDWMRZUTVEVGVFVHWCWBWOABHCUEVFWAWNDVTWMVTABHCVTTZUF
+      ZVFVSWLEVTWMWQVFVNWGVRWKVFVLWEVMWFVFVKWDVIVJVKABHCVKTZUGUHAVMBHCVMTZUJUIV
+      FVPWIVQWJVFVOWHVIVFABVOVFVOUKBAULMPVFCUMVFVAUNZUOVFVOWHVJWTUOUPUQURURUSDE
+      VTVKAVOVMWPWRWSVOTVBDEWMWDBWHWFWMTWDTWFTWHTVBVCVD $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -171176,6 +171256,55 @@ $)
   $}
 
   ${
+    aprunit.b $e |- B = ( Base ` R ) $.
+    aprunit.0 $e |- .0. = ( 0g ` R ) $.
+    aprunit.u $e |- U = ( Unit ` R ) $.
+    aprunit.ap $e |- .# = ( #r ` R ) $.
+    aprunit.r $e |- ( ph -> R e. Ring ) $.
+    aprunit.x $e |- ( ph -> X e. B ) $.
+    $( The ~ df-apr relation with zero expresses whether a ring element is a
+       unit.  That is, the difference of an element of a ring and zero is
+       invertible iff the element is a unit.  (Contributed by Jim Kingdon,
+       29-May-2026.) $)
+    aprunit $p |- ( ph -> ( X .# .0. <-> X e. U ) ) $=
+      ( wbr csg cfv co wcel wceq a1i cbs capr eqidd cui crg ring0cl aprval cgrp
+      syl ringgrpd eqid grpsubid1 syl2anc eleq1d bitrd ) AFGCNFGDOPZQZERFERABCD
+      EUPFGBDUAPSAHTCDUBPSAKTAUPUCEDUDPSAJTLMADUERGBRLBDGHIUFUIUGAUQFEADUHRFBRU
+      QFSADLUJMBDUPFGHIUPUKULUMUNUO $.
+  $}
+
+  ${
+    ringunitap.b $e |- B = ( Base ` R ) $.
+    ringunitap.u $e |- U = ( Unit ` R ) $.
+    ringunitap.z $e |- .0. = ( 0g ` R ) $.
+    ringunitap.ap $e |- .# = ( #r ` R ) $.
+    $( Elementhood in the set of units.  (Contributed by Jim Kingdon,
+       30-May-2026.) $)
+    ringunitap $p |- ( R e. Ring ->
+        ( X e. U <-> ( X e. B /\ X .# .0. ) ) ) $=
+      ( crg wcel wbr wa cbs cfv wceq a1i simpl aprunit cui ringsrg adantr simpr
+      csrg unitcld mpbird jca simprr simprl mpbid impbida ) CKLZEDLZEALZEFBMZNZ
+      UMUNNZUOUPURACDEACOPQURGRDCUAPQURHRUMCUELUNCUBUCUMUNUDZUFZURUPUNUSURABCDE
+      FGIHJUMUNSUTTUGUHUMUQNZUPUNUMUOUPUIVAABCDEFGIHJUMUQSUMUOUPUJTUKUL $.
+  $}
+
+  ${
+    $d .# x y $.  $d .0. x y $.  $d B x y $.  $d R y $.
+    ringunitsap0.b $e |- B = ( Base ` R ) $.
+    ringunitsap0.z $e |- .0. = ( 0g ` R ) $.
+    ringunitsap0.ap $e |- .# = ( #r ` R ) $.
+    $( The set of units of a ring.  If ` R ` is a local ring, ` .# ` is an
+       apartness and this theorem states that the units of a ring are those
+       elements apart from zero (see ~ aprlring ).  Given the definition of
+       ` #r ` this theorem holds even if ` .# ` is not an apartness, however.
+       (Contributed by Jim Kingdon, 31-May-2026.) $)
+    ringunitsap0 $p |- ( R e. Ring -> { x e. B | x .# .0. } = ( Unit ` R ) ) $=
+      ( vy crg wcel cv wbr crab cui cfv wa breq1 elrab eqid ringunitap bitr4id
+      eqrdv ) DJKZIALZECMZABNZDOPZUDILZUGKUIBKUIECMZQUIUHKUFUJAUIBUEUIECRSBCDUH
+      UIEFUHTGHUAUBUC $.
+  $}
+
+  ${
     aprirr.b $e |- ( ph -> B = ( Base ` R ) ) $.
     aprirr.ap $e |- ( ph -> .# = ( #r ` R ) ) $.
     aprirr.r $e |- ( ph -> R e. Ring ) $.
@@ -171289,6 +171418,244 @@ $)
       EYFXOXPYRSOVKTVNXFWGWHWOXHWKYPYIYRXFWOXHWHKWOXHXKHZWQDXFYSWOWQXFXTYGYSWOI
       YAYIWGAXKWOXHXRYMYBVFVGXFWEWOWQDXOAWQWOWQQZYHVORVPXFWGWHAWQXKWOXHYCYDYEYF
       XOYIYRSVQXPVRVSVTWABCWGWMAWQWOXRXSYHYTWCWBVTWD $.
+  $}
+
+  ${
+    $d x y r K $.  $d x y r L $.
+    aprprop.b $e |- ( Base ` K ) = ( Base ` L ) $.
+    aprprop.p $e |- ( +g ` K ) = ( +g ` L ) $.
+    aprprop.m $e |- ( .r ` K ) = ( .r ` L ) $.
+    $( If two structures have the same ring components (properties), ~ df-apr
+       generates the same relation for both of them.  (Contributed by Jim
+       Kingdon, 31-May-2026.) $)
+    aprprop $p |- ( K e. Ring -> ( #r ` K ) = ( #r ` L ) ) $=
+      ( vx vy crg wcel cbs cfv wa csg cui wceq a1i eleq2d anbi12d cvv fveq2 cxp
+      vr cv co copab capr cplusg ringprop biimpi grpsubpropdg oveqd eqidd cmulr
+      oveqdr unitpropdg eleq12d opabbidv df-apr elex wfn funfvex funfni sylancr
+      id basfn xpexd wss opabssxp ssexd fvmptd3 elexd eqeltrrid 3eqtr4d ) AHIZF
+      UCZAJKZIZGUCZVPIZLZVOVRAMKZUDZANKZIZLZFGUEZVOBJKZIZVRWGIZLZVOVRBMKZUDZBNK
+      ZIZLZFGUEZAUFKBUFKVNWEWOFGVNVTWJWDWNVNVQWHVSWIVNVPWGVOVPWGOVNCPZQVNVPWGVR
+      WQQRVNWBWLWCWMVNWAWKVOVRVNABHHWQAUGKBUGKOVNDPVNVDZVNBHIABCDEUHUIZUJUKVNFG
+      VPABVNVPULWQVNVTFGAUMKZBUMKZWTXAOVNEPUNWRWSUOUPRUQVNUBAVOUBUCZJKZIZVRXCIZ
+      LZVOVRXBMKZUDZXBNKZIZLZFGUEZWFSUFSFGUBURZXBAOZXKWEFGXNXFVTXJWDXNXDVQXEVSX
+      NXCVPVOXBAJTZQXNXCVPVRXOQRXNXHWBXIWCXNXGWAVOVRXBAMTUKXBANTUPRUQAHUSZVNWFV
+      PVPUAZSVNVPVPSSVNJSUTASIVPSIZVEXPXRSAJAJVAVBVCZXSVFWFXQVGVNWDFGVPVPVHPVIV
+      JVNUBBXLWPSUFSXMXBBOZXKWOFGXTXFWJXJWNXTXDWHXEWIXTXCWGVOXBBJTZQXTXCWGVRYAQ
+      RXTXHWLXIWMXTXGWKVOVRXBBMTUKXBBNTUPRUQVNBHWSVKVNWPWGWGUAZSVNWGWGSSVNWGVPS
+      CXSVLZYCVFWPYBVGVNWNFGWGWGVHPVIVJVM $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Definition and basic properties
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c DivRing $.
+  $c Field $.
+
+  $( Extend class notation with class of all division rings. $)
+  cdr $a class DivRing $.
+
+  $( Class of fields. $)
+  cfield $a class Field $.
+
+  $( Define class of all division rings.  A division ring is a ring in which
+     the relation given by ~ df-apr is a tight apartness.  (Contributed by Jim
+     Kingdon, 29-May-2026.) $)
+  df-drngap $a |- DivRing = { r e. Ring | ( #r ` r ) TAp ( Base ` r ) } $.
+
+  $( A _field_ is a commutative division ring.  (Contributed by Mario Carneiro,
+     17-Jun-2015.) $)
+  df-field $a |- Field = ( DivRing i^i CRing ) $.
+
+  ${
+    $d B r $.  $d R r $.  $d .# r $.
+    isdrng.b $e |- B = ( Base ` R ) $.
+    isdrngap.ap $e |- .# = ( #r ` R ) $.
+    $( The predicate "is a division ring".  (Contributed by Jim Kingdon,
+       29-May-2026.) $)
+    isdrngtap $p |- ( R e. DivRing <-> ( R e. Ring /\ .# TAp B ) ) $=
+      ( vr cv cbs cfv capr wtap crg cdr wceq wb fveq2 eqtr4di tapeq1 syl tapeq2
+      bitrd df-drngap elrab2 ) FGZHIZUDJIZKZABKZFCLMUDCNZUGUEBKZUHUIUFBNUGUJOUI
+      UFCJIBUDCJPEQUEUFBRSUIUEANUJUHOUIUECHIAUDCHPDQUEABTSUAFUBUC $.
+  $}
+
+  $( A division ring is a local ring.  (Contributed by Jim Kingdon,
+     29-May-2026.) $)
+  drnglring $p |- ( R e. DivRing -> R e. LRing ) $=
+    ( cdr wcel cbs cfv capr wap crg wtap eqid isdrngtap tapap simplbiim simplbi
+    clring wb aprlring syl mpbird ) ABCZAOCZADEZAFEZGZTAHCZUBUCIZUDUBUCAUBJUCJK
+    ZUBUCLMTUEUAUDPTUEUFUGNAQRS $.
+
+  ${
+    drngunitap.b $e |- B = ( Base ` R ) $.
+    drngunitap.u $e |- U = ( Unit ` R ) $.
+    drngunitap.z $e |- .0. = ( 0g ` R ) $.
+    drngunitap.ap $e |- .# = ( #r ` R ) $.
+    $( Elementhood in the set of units when ` R ` is a division ring.
+       (Contributed by Mario Carneiro, 2-Dec-2014.) $)
+    drngunitap $p |- ( R e. DivRing ->
+        ( X e. U <-> ( X e. B /\ X .# .0. ) ) ) $=
+      ( cdr wcel wbr wa cfv wceq a1i syl adantr aprunit cbs cui csrg crg clring
+      drnglring lringring ringsrg simpr unitcld mpbird jca simprr mpbid impbida
+      simprl ) CKLZEDLZEALZEFBMZNZUQURNZUSUTVBACDEACUAOPVBGQDCUBOPVBHQUQCUCLZUR
+      UQCUDLZVCUQCUELVDCUFCUGRZCUHRSUQURUIZUJZVBUTURVFVBABCDEFGIHJUQVDURVESVGTU
+      KULUQVANZUTURUQUSUTUMVHABCDEFGIHJUQVDVAVESUQUSUTUPTUNUO $.
+  $}
+
+  ${
+    $d .# x y $.  $d .0. x y $.  $d B x y $.  $d R y $.
+    drngui.b $e |- B = ( Base ` R ) $.
+    drngui.z $e |- .0. = ( 0g ` R ) $.
+    drnguiap.ap $e |- .# = ( #r ` R ) $.
+    $( The set of units of a division ring.  (Contributed by Mario Carneiro,
+       2-Dec-2014.) $)
+    drnguiap $p |- ( R e. DivRing -> { x e. B | x .# .0. } = ( Unit ` R ) ) $=
+      ( vy cdr wcel cv wbr crab cui cfv wa breq1 elrab eqid drngunitap bitr4id
+      eqrdv ) DJKZIALZECMZABNZDOPZUDILZUGKUIBKUIECMZQUIUHKUFUJAUIBUEUIECRSBCDUH
+      UIEFUHTGHUAUBUC $.
+  $}
+
+  $( A division ring is a ring.  (Contributed by NM, 8-Sep-2011.) $)
+  drngring $p |- ( R e. DivRing -> R e. Ring ) $=
+    ( cdr wcel clring crg drnglring lringring syl ) ABCADCAECAFAGH $.
+
+  ${
+    drngringd.1 $e |- ( ph -> R e. DivRing ) $.
+    $( A division ring is a ring.  (Contributed by SN, 16-May-2024.) $)
+    drngringd $p |- ( ph -> R e. Ring ) $=
+      ( cdr wcel crg drngring syl ) ABDEBFECBGH $.
+
+    $( A division ring is a group (deduction form).  (Contributed by SN,
+       16-May-2024.) $)
+    drnggrpd $p |- ( ph -> R e. Grp ) $=
+      ( drngringd ringgrpd ) ABABCDE $.
+  $}
+
+  $( A division ring is a group (closed form).  (Contributed by NM,
+     8-Sep-2011.) $)
+  drnggrp $p |- ( R e. DivRing -> R e. Grp ) $=
+    ( cdr wcel id drnggrpd ) ABCZAFDE $.
+
+  $( A field is a commutative division ring.  (Contributed by Mario Carneiro,
+     17-Jun-2015.) $)
+  isfld $p |- ( R e. Field <-> ( R e. DivRing /\ R e. CRing ) ) $=
+    ( cdr ccrg cfield df-field elin2 ) ABCDEF $.
+
+  ${
+    flddrngd.1 $e |- ( ph -> R e. Field ) $.
+    $( A field is a division ring.  (Contributed by SN, 17-Jan-2025.) $)
+    flddrngd $p |- ( ph -> R e. DivRing ) $=
+      ( cfield wcel cdr ccrg isfld simplbi syl ) ABDEZBFEZCKLBGEBHIJ $.
+  $}
+
+  ${
+    fldcrngd.1 $e |- ( ph -> R e. Field ) $.
+    $( A field is a commutative ring.  (Contributed by SN, 23-Nov-2024.) $)
+    fldcrngd $p |- ( ph -> R e. CRing ) $=
+      ( cfield wcel ccrg cdr isfld simprbi syl ) ABDEZBFEZCKBGELBHIJ $.
+  $}
+
+  ${
+    $d x y K $.  $d x y L $.
+    drngprop.b $e |- ( Base ` K ) = ( Base ` L ) $.
+    drngprop.p $e |- ( +g ` K ) = ( +g ` L ) $.
+    drngprop.m $e |- ( .r ` K ) = ( .r ` L ) $.
+    $( If two structures have the same ring components (properties), one is a
+       division ring iff the other one is.  (Contributed by Mario Carneiro,
+       11-Oct-2013.)  (Revised by Mario Carneiro, 28-Dec-2014.) $)
+    drngprop $p |- ( K e. DivRing <-> L e. DivRing ) $=
+      ( crg wcel cbs cfv capr wtap wa cdr wceq wb aprprop tapeq1 eqid isdrngtap
+      syl pm5.32i ringprop anbi1i bitri 3bitr4i ) AFGZAHIZAJIZKZLZBFGZUGBJIZKZL
+      ZAMGBMGUJUFUMLUNUFUIUMUFUHULNUIUMOABCDEPUGUHULQTUAUFUKUMABCDEUBUCUDUGUHAU
+      GRUHRSUGULBCULRSUE $.
+  $}
+
+  ${
+    drngunz.z $e |- .0. = ( 0g ` R ) $.
+    drngunz.u $e |- .1. = ( 1r ` R ) $.
+    $( A division ring's unity is different from its zero.  (Contributed by NM,
+       8-Sep-2011.) $)
+    drngunz $p |- ( R e. DivRing -> .1. =/= .0. ) $=
+      ( cdr wcel clring cnzr wne drnglring lringnzr nzrnz 3syl ) AFGAHGAIGBCJAK
+      ALABCEDMN $.
+  $}
+
+  $( A division ring is a nonzero ring.  (Contributed by Stefan O'Rear,
+     24-Feb-2015.) $)
+  drngnzr $p |- ( R e. DivRing -> R e. NzRing ) $=
+    ( cdr wcel crg cur cfv c0g wne cnzr drngring eqid drngunz isnzr sylanbrc )
+    ABCADCAEFZAGFZHAICAJAOPPKZOKZLAOPRQMN $.
+
+  ${
+    $d O x y $.  $d R x y z $.
+    opprdrng.1 $e |- O = ( oppR ` R ) $.
+    $( The opposite of a division ring is also a division ring.  (Contributed
+       by NM, 18-Oct-2014.) $)
+    opprdrng $p |- ( R e. DivRing <-> O e. DivRing ) $=
+      ( vx vy crg wcel cbs cfv wtap wa wb a1i wap wceq wral eqid ad2antrr eqidd
+      co cdr simpl opprringb biimpri adantr cv wbr wn clring opprlring aprlring
+      capr wi sylbi opprbasg papeq2 syl bitr4d 3bitr3d csg cui cminusg oppraddg
+      cplusg opprnegg fveq1d simplr simpr syl2anc eleqtrd 3eqtr4d eleq1d simpll
+      oveq123d grpsubval aprval coppr id opprunitd sylib notbid imbi1d ralbidva
+      3bitr4d anbi12d df-tap 3bitr4g tapeq2 bitrd pm5.21nii isdrngtap 3bitr4i )
+      AFGZAHIZAULIZJZKZBFGZBHIZBULIZJZKZAUAGBUAGWQWMXBWMWPUBWRWMXAWMWRABCUCZUDU
+      EWMWMWRWPXAWMWRLWMXCMWMWPWNWTJZXAWMWNWONZDUFZEUFZWOUGZUHZXFXGOZUMZEWNPZDW
+      NPZKWNWTNZXFXGWTUGZUHZXJUMZEWNPZDWNPZKWPXDWMXEXNXMXSWMAUIGZBUIGZXEXNXTYAL
+      WMABCUJMAUKWMYAWSWTNZXNWMWRYAYBLXCBUKUNWMWNWSOZXNYBLWNABFCWNQZUOZWNWSWTUP
+      UQURUSWMXLXRDWNWMXFWNGZKZXKXQEWNYGXGWNGZKZXIXPXJYIXHXOYIXFXGAUTIZTZAVAIZG
+      XFXGBUTIZTZYLGXHXOYIYKYNYLYIXFXGAVBIZIZAVDIZTZXFXGBVBIZIZBVDIZTZYKYNYIXFX
+      FYPYTYQUUAWMYQUUAOYFYHYQABFCYQQZVCRYIXFSYIXGYOYSWMYOYSOYFYHAYOBFCYOQZVERV
+      FVNYIYFYHYKYROWMYFYHVGZYGYHVHZWNYQAYOYJXFXGYDUUCUUDYJQVOVIYIXFWSGXGWSGYNU
+      UBOYIXFWNWSUUEWMYCYFYHYERZVJYIXGWNWSUUFUUGVJWSUUABYSYMXFXGWSQZUUAQYSQYMQV
+      OVIVKVLYIWNWOAYLYJXFXGYIWNSYIWOSYIYJSYIYLSWMYFYHVMZUUEUUFVPYIWNWTBYLYMXFX
+      GUUGYIWTSYIYMSWMYLBVAIOYFYHWMABYLWMYLSBAVQIOWMCMWMVRVSRYIWMWRUUIXCVTUUEUU
+      FVPWDWAWBWCWCWEDEWNWOWFDEWNWTWFWGWMYCXDXALYEWNWSWTWHUQWIWEWJWNWOAYDWOQWKW
+      SWTBUUHWTQWKWL $.
+  $}
+
+  ${
+    ring1zr.b $e |- B = ( Base ` R ) $.
+    ring1zr.p $e |- .+ = ( +g ` R ) $.
+    ring1zr.t $e |- .* = ( .r ` R ) $.
+    $( The only (unital) ring with a base set consisting of one element is the
+       zero ring (at least if its operations are internal binary operations).
+       Note:  The assumption ` R e. Ring ` could be weakened to ` R e. Rng `
+       (see ~ df-rng ) (it would be sufficient that the multiplication is
+       closed).  (Contributed by FL, 13-Feb-2010.)  (Revised by AV,
+       25-Jan-2020.)  (Proof shortened by AV, 7-Feb-2020.) $)
+    ring1zr $p |- ( ( ( R e. Ring /\ .+ Fn ( B X. B ) /\ .* Fn ( B X. B ) )
+           /\ Z e. B ) -> ( B = { Z } <-> ( .+ = { <. <. Z , Z >. , Z >. }
+                                     /\ .* = { <. <. Z , Z >. , Z >. } ) ) ) $=
+      ( crg wcel csrg cxp wfn csn wceq cop wa wb ringsrg srg1zr syl3anl1 ) CIJC
+      KJBAALZMDUBMEAJAENOBEEPEPNZODUCOQRCSABCDEFGHTUA $.
+
+    $( The only (unital) ring with one element is the zero ring (at least if
+       its operations are internal binary operations).  Note:  The assumption
+       ` R e. Ring ` could be weakened to ` R e. Rng ` (see ~ df-rng ) (it
+       would be sufficient that the multiplication is closed).  (Contributed by
+       FL, 14-Feb-2010.)  (Revised by AV, 25-Jan-2020.) $)
+    rngen1zr $p |- ( ( ( R e. Ring /\ .+ Fn ( B X. B ) /\ .* Fn ( B X. B ) )
+           /\ Z e. B ) -> ( B ~~ 1o <-> ( .+ = { <. <. Z , Z >. , Z >. }
+                                     /\ .* = { <. <. Z , Z >. , Z >. } ) ) ) $=
+      ( crg wcel cxp wfn w3a wa c1o cen wbr csn wceq cop en1eqsnbi adantl bitrd
+      wb ring1zr ) CIJBAAKZLDUFLMZEAJZNAOPQZAERSZBEETETRZSDUKSNUHUIUJUDUGEAUAUB
+      ABCDEFGHUEUC $.
+
+    ringen1zr.0 $e |- Z = ( 0g ` R ) $.
+    $( The only unital ring with one element is the zero ring (at least if its
+       operations are internal binary operations).  Note:  The assumption
+       ` R e. Ring ` could be weakened to ` R e. Rng ` (it would be sufficient
+       that the multiplication is closed).  (Contributed by FL, 15-Feb-2010.)
+       (Revised by AV, 25-Jan-2020.) $)
+    ringen1zr $p |- ( ( R e. Ring /\ .+ Fn ( B X. B ) /\ .* Fn ( B X. B ) )
+                      -> ( B ~~ 1o <-> ( .+ = { <. <. Z , Z >. , Z >. }
+                                     /\ .* = { <. <. Z , Z >. , Z >. } ) ) ) $=
+      ( crg wcel cxp wfn w3a c1o cen wbr cop csn wceq ring0cl 3ad2ant1 rngen1zr
+      wa wb mpdan ) CJKZBAALZMZDUHMZNEAKZAOPQBEERERSZTDULTUDUEUGUIUKUJACEFIUAUB
+      ABCDEFGHUCUF $.
   $}
 
 
@@ -205030,8 +205397,8 @@ $)
 
        <tr><th>Abbreviation</th><th>Mnenomic/Meaning</th><th>Source</th>
        <th>Expression</th><th>Syntax?</th><th>Example(s)</th></tr>
-       <tr><td>ap</td><td>apart</td><td> ~ df-pap , ~ df-ap </td>
-       <td> </td><td>Yes</td><td> ~ apadd1 , ~ apne </td></tr>
+       <tr><td>ap</td><td>apart</td><td> ~ df-ap </td>
+       <td>` =//= `</td><td>Yes</td><td> ~ apadd1 , ~ apne </td></tr>
 
        <tr><td>g</td><td>with "is a set" condition</td><td> </td><td> </td>
        <td>No</td><td> ~ 1stvalg , ~ brtposg , ~ setsmsbasg </td></tr>
@@ -205040,12 +205407,15 @@ $)
        <td> ` E. x x e. A ` </td>
        <td>No</td><td> ~ r19.2m , ~ negm , ~ ctm , ~ basmex </td></tr>
 
+       <tr><td>pap</td><td>apartness predicate</td><td> ~ df-pap </td>
+       <td>` Ap `</td><td>Yes</td><td> ~ papeq1 , ~ papirr </td></tr>
+
        <tr><td>seq3, sum3</td><td>recursive sequence</td>
        <td> ~ df-seqfrec </td>
        <td> </td><td>Yes</td><td> ~ seq3-1 , ~ fsum3 </td></tr>
 
        <tr><td>tap</td><td>tight apartness</td><td> ~ df-tap </td>
-       <td> </td><td>Yes</td><td> ~ df-tap </td></tr>
+       <td>` TAp `</td><td>Yes</td><td> ~ df-tap </td></tr>
 
        </table>
        </HTML>
@@ -206883,6 +207253,13 @@ htmldef "RingSpan" as "RingSpan";
 htmldef "#r" as "#<sub>r</sub>";
   althtmldef "#r" as "#<sub>r</sub>";
   latexdef "#r" as "\mathrel{\neq\mathrel{\mkern -10mu}\neq_\mathrm{r}}";
+htmldef "DivRing" as
+  "<IMG SRC='_divring.gif' WIDTH=52 HEIGHT=19 ALT=' DivRing' TITLE='DivRing'>";
+  althtmldef "DivRing" as "DivRing";
+  latexdef "DivRing" as "\mathrm{DivRing}";
+htmldef "Field" as "Field";
+  althtmldef "Field" as "Field";
+  latexdef "Field" as "\mathrm{Field}";
 htmldef "LMod" as
     "<IMG SRC='_lmod.gif' WIDTH=36 HEIGHT=19 ALT=' LMod' TITLE='LMod'>";
   althtmldef "LMod" as "LMod";
