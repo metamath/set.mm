@@ -157313,13 +157313,10 @@ $)
       EVQZXFUVLWH $.
   $}
 
-  $c Xs_ ^s $.
+  $c Xs_ $.
 
   $( The function constructing structure products. $)
   cprds $a class Xs_ $.
-
-  $( The function constructing structure powers. $)
-  cpws $a class ^s $.
 
   ${
     $d a c d e f g h s r x v $.
@@ -157927,142 +157924,6 @@ $)
         GIJLMNOPADKTBGUCUQGUDQBGDUQKUQUFUGUHSUIBGFUJUHSUKABCDEUOGHIJKLMNOPQRUMU
         N $.
     $}
-  $}
-
-  ${
-    $d r i $.
-    $( Define a structure power, which is just a structure product where all
-       the factors are the same.  (Contributed by Mario Carneiro,
-       11-Jan-2015.) $)
-    df-pws $a |-
-        ^s = ( r e. _V , i e. _V |-> ( ( Scalar ` r ) Xs_ ( i X. { r } ) ) ) $.
-  $}
-
-  ${
-    $d i r F $.  $d i r I $.  $d i r R $.
-    pwsval.y $e |- Y = ( R ^s I ) $.
-    pwsval.f $e |- F = ( Scalar ` R ) $.
-    $( Value of a structure power.  (Contributed by Mario Carneiro,
-       11-Jan-2015.) $)
-    pwsval $p |- ( ( R e. V /\ I e. W ) -> Y = ( F Xs_ ( I X. { R } ) ) ) $=
-      ( vr vi wcel wa cpws co csn cprds cvv wceq adantr csca cxp adantl scaslid
-      elex cfv slotex eqeltrid simpr snexg xpexg syl2anc prdsex cv simpl fveq2d
-      eqtr4di id sneq xpeq12 syl2anr oveq12d df-pws ovmpoga syl3anc eqtrid ) AD
-      KZCEKZLZFACMNZBCAOZUAZPNZGVHAQKZCQKZVLQKZVIVLRVFVMVGADUDSVGVNVFCEUDUBVHBQ
-      KZVKQKZVOVFVPVGVFBATUEZQHATDUCUFUGSVHVGVJQKZVQVFVGUHVFVSVGADUISCVJEQUJUKV
-      KBQQULUKIJACQQIUMZTUEZJUMZVTOZUAZPNVLMQVTARZWBCRZLZWABWDVKPWGWAVRBWGVTATW
-      EWFUNUOHUPWFWFWCVJRWDVKRWEWFUQVTAURWBCWCVJUSUTVAJIVBVCVDVE $.
-  $}
-
-  ${
-    $d x I $.  $d x w R $.  $d x V $.  $d x W $.
-    pwsbas.y $e |- Y = ( R ^s I ) $.
-    pwsbas.f $e |- B = ( Base ` R ) $.
-    $( Base set of a structure power.  (Contributed by Mario Carneiro,
-       11-Jan-2015.) $)
-    pwsbas $p |- ( ( R e. V /\ I e. W ) -> ( B ^m I ) = ( Base ` Y ) ) $=
-      ( vx vw wcel wa cbs cfv co cmap eqid cvv adantr wceq csn cxp cprds pwsval
-      csca cixp fveq2d cv scaslid slotex simpr snexg xpexg syl2anc cdm wex snmg
-      dmxpm syl prdsbas wral fvconst2g ralrimiva ixpeq2 eqtrd wfn basfn funfvex
-      elex funfni sylancr ixpconstg oveq1i eqtr4di 3eqtrrd ) BDKZCEKZLZFMNBUENZ
-      CBUAZUBZUCOZMNZICBMNZUFZACPOZVRFWBMBVSCDEFGVSQUDUGVRWCICIUHZWANZMNZUFZWEV
-      RIWCWBWAVSCRRWBQVPVSRKVQBUEDUIUJSVRVQVTRKZWARKVPVQUKZVPWKVQBDULSCVTERUMUN
-      WCQVPWAUOCTZVQVPJUHVTKJUPWMJBDUQJCVTURUSSUTVRWIWDTZICVAZWJWETVPWOVQVPWNIC
-      VPWGCKLWHBMCBWGDVBUGVCSICWIWDVDUSVEVRWEWDCPOZWFVRVQWDRKZWEWPTWLVPWQVQVPMR
-      VFBRKWQVGBDVIWQRBMBMVHVJVKSICWDERVLUNAWDCPHVMVNVO $.
-
-    pwselbas.v $e |- V = ( Base ` Y ) $.
-    $( Membership in the base set of a structure product.  (Contributed by
-       Stefan O'Rear, 24-Jan-2015.) $)
-    pwselbasb $p |- ( ( R e. W /\ I e. Z ) -> ( X e. V <-> X : I --> B ) ) $=
-      ( wcel wa cmap co wf cbs cfv pwsbas cvv eqtr4di eleq2d basfn elex funfvex
-      wb wfn funfni sylancr eqeltrid elmapg sylan bitr3d ) BELZCHLZMZFACNOZLZFD
-      LCAFPZUPUQDFUPUQGQRDABCEHGIJSKUAUBUNATLUOURUSUFUNABQRZTJUNQTUGBTLUTTLZUCB
-      EUDVATBQBQUEUHUIUJACFTHUKULUM $.
-
-    pwselbas.r $e |- ( ph -> R e. W ) $.
-    pwselbas.i $e |- ( ph -> I e. Z ) $.
-    pwselbas.x $e |- ( ph -> X e. V ) $.
-    $( An element of a structure power is a function from the index set to the
-       base set of the structure.  (Contributed by Mario Carneiro,
-       11-Jan-2015.)  (Revised by Mario Carneiro, 5-Jun-2015.) $)
-    pwselbas $p |- ( ph -> X : I --> B ) $=
-      ( wcel wf wb pwselbasb syl2anc mpbid ) AGEPZDBGQZOACFPDIPUBUCRMNBCDEFGHIJ
-      KLSTUA $.
-  $}
-
-  ${
-    $d x .+ $.  $d x F $.  $d x G $.  $d x I $.  $d x ph $.  $d x .x. $.
-    $d x R $.  $d x W $.
-    pwsplusgval.y $e |- Y = ( R ^s I ) $.
-    pwsplusgval.b $e |- B = ( Base ` Y ) $.
-    pwsplusgval.r $e |- ( ph -> R e. V ) $.
-    pwsplusgval.i $e |- ( ph -> I e. W ) $.
-    pwsplusgval.f $e |- ( ph -> F e. B ) $.
-    pwsplusgval.g $e |- ( ph -> G e. B ) $.
-    ${
-      pwsplusgval.a $e |- .+ = ( +g ` R ) $.
-      pwsplusgval.p $e |- .+b = ( +g ` Y ) $.
-      $( Value of addition in a structure power.  (Contributed by Mario
-         Carneiro, 11-Jan-2015.) $)
-      pwsplusgval $p |- ( ph -> ( F .+b G ) = ( F oF .+ G ) ) $=
-        ( cfv vx csca csn cxp cprds co cplusg cv cmpt cof cbs eqid wcel scaslid
-        cvv slotex syl fnconstg wceq pwsval syl2anc fveq2d eleqtrd prdsplusgval
-        wfn eqtrid fvconst2g sylan eqtr4di oveqd mpteq2dva eqtrd fvexg pwselbas
-        wa feqmptd offval2 3eqtr4d ) AFGEUBTZHEUCUDZUEUFZUGTZUFZUAHUAUHZFTZWDGT
-        ZCUFZUIZFGDUFFGCUJUFAWCUAHWEWFWDVTTZUGTZUFZUIWHAUAWAUKTZWBVTVSFGHUOJWAW
-        AULWLULAEIUMZVSUOUMNEUBIUNUPUQOAWMVTHVENHEIURUQAFBWLPABKUKTWLMAKWAUKAWM
-        HJUMKWAUSNOEVSHIJKLVSULUTVAZVBVFZVCAGBWLQWOVCWBULVDAUAHWKWGAWDHUMZVOZWJ
-        CWEWFWQWJEUGTCWQWIEUGAWMWPWIEUSNHEWDIVGVHVBRVIVJVKVLADWBFGADKUGTWBSAKWA
-        UGWNVBVFVJAUAHWEWFCFGJUOUOOAFBUMWPWEUOUMPWDFBHVMVHAGBUMWPWFUOUMQWDGBHVM
-        VHAUAHEUKTZFAWREHBIFKJLWRULZMNOPVNVPAUAHWRGAWREHBIGKJLWSMNOQVNVPVQVR $.
-    $}
-
-    ${
-      pwsmulrval.a $e |- .x. = ( .r ` R ) $.
-      pwsmulrval.p $e |- .xb = ( .r ` Y ) $.
-      $( Value of multiplication in a structure power.  (Contributed by Mario
-         Carneiro, 11-Jan-2015.) $)
-      pwsmulrval $p |- ( ph -> ( F .xb G ) = ( F oF .x. G ) ) $=
-        ( cfv vx csca csn cxp cprds co cmulr cmpt cof cbs cvv eqid wcel scaslid
-        cv slotex syl fnconstg pwsval syl2anc fveq2d eqtrid eleqtrd prdsmulrval
-        wfn wceq wa fvconst2g sylan eqtr4di oveqd mpteq2dva eqtrd fvexg feqmptd
-        pwselbas offval2 3eqtr4d ) AFGCUBTZHCUCUDZUEUFZUGTZUFZUAHUAUOZFTZWDGTZE
-        UFZUHZFGDUFFGEUIUFAWCUAHWEWFWDVTTZUGTZUFZUHWHAUAWAUJTZVTVSWBFGHUKJWAWAU
-        LWLULACIUMZVSUKUMNCUBIUNUPUQOAWMVTHVENHCIURUQAFBWLPABKUJTWLMAKWAUJAWMHJ
-        UMKWAVFNOCVSHIJKLVSULUSUTZVAVBZVCAGBWLQWOVCWBULVDAUAHWKWGAWDHUMZVGZWJEW
-        EWFWQWJCUGTEWQWICUGAWMWPWICVFNHCWDIVHVIVARVJVKVLVMADWBFGADKUGTWBSAKWAUG
-        WNVAVBVKAUAHWEWFEFGJUKUKOAFBUMWPWEUKUMPWDFBHVNVIAGBUMWPWFUKUMQWDGBHVNVI
-        AUAHCUJTZFAWRCHBIFKJLWRULZMNOPVPVOAUAHWRGAWRCHBIGKJLWSMNOQVPVOVQVR $.
-    $}
-  $}
-
-  ${
-    pwsdiagel.y $e |- Y = ( R ^s I ) $.
-    pwsdiagel.b $e |- B = ( Base ` R ) $.
-    pwsdiagel.c $e |- C = ( Base ` Y ) $.
-    $( Membership of diagonal elements in the structure power base set.
-       (Contributed by Stefan O'Rear, 24-Jan-2015.) $)
-    pwsdiagel $p |- ( ( ( R e. V /\ I e. W ) /\ A e. B ) ->
-        ( I X. { A } ) e. C ) $=
-      ( wcel wa csn cxp wf fconst6g adantl wb pwselbasb adantr mpbird ) DFLEGLM
-      ZABLZMEANOZCLZEBUEPZUDUGUCEABQRUCUFUGSUDBDECFUEHGIJKTUAUB $.
-  $}
-
-  ${
-    $d Y x $.  $d R x $.  $d I x $.  $d B x $.  $d C x $.  $d W x $.
-    pwssnf1o.y $e |- Y = ( R ^s { I } ) $.
-    pwssnf1o.b $e |- B = ( Base ` R ) $.
-    pwssnf1o.f $e |- F = ( x e. B |-> ( { I } X. { x } ) ) $.
-    pwssnf1o.c $e |- C = ( Base ` Y ) $.
-    $( Triviality of singleton powers: set equipollence.  (Contributed by
-       Stefan O'Rear, 24-Jan-2015.) $)
-    pwssnf1o $p |- ( ( R e. V /\ I e. W ) -> F : B -1-1-onto-> C ) $=
-      ( wcel wa wf1o csn cvv cbs cfv cmap wfn basfn elex adantr funfvex sylancr
-      funfni eqeltrid mapsnf1o sylancom wceq snexg pwsbas sylan2 eqtr4id mpbird
-      co f1oeq3d ) DGNZFHNZOZBCEPBBFQZUAURZEPZUTVABRNVEVBBDSTZRKVBSRUBDRNZVFRNZ
-      UCUTVGVADGUDUEVHRDSDSUFUHUGUIABEFRHLUJUKVBCVDBEVBCISTZVDMVAUTVCRNVDVIULFH
-      UMBDVCGRIJKUNUOUPUSUQ $.
   $}
 
 
@@ -160676,29 +160537,6 @@ $)
   $}
 
   ${
-    $d x I $.  $d r x R $.  $d x V $.  $d r x .0. $.
-    pwsmnd.y $e |- Y = ( R ^s I ) $.
-    $( The structure power of a monoid is a monoid.  (Contributed by Mario
-       Carneiro, 11-Jan-2015.) $)
-    pwsmnd $p |- ( ( R e. Mnd /\ I e. V ) -> Y e. Mnd ) $=
-      ( cmnd wcel wa csca cfv csn cxp cprds co eqid pwsval simpr scaslid adantr
-      cvv slotex wf fconst6g prdsmndd eqeltrd ) AFGZBCGZHZDAIJZBAKLZMNZFAUIBFCD
-      EUIOPUHUJUIBTCUKUKOUFUGQUFUITGUGAIFRUASUFBFUJUBUGBAFUCSUDUE $.
-
-    pws0g.z $e |- .0. = ( 0g ` R ) $.
-    $( The identity in a structure power of a monoid.  (Contributed by Mario
-       Carneiro, 11-Jan-2015.) $)
-    pws0g $p |- ( ( R e. Mnd /\ I e. V ) -> ( I X. { .0. } ) = ( 0g ` Y ) ) $=
-      ( vx vr cmnd wcel c0g csn cxp csca cfv cvv eqid cmpt wceq wa ccom scaslid
-      cprds co simpr slotex adantr wf fconst6g prds0g fconstmpt cv ad2antrr a1i
-      elex fn0g dffn5im mp1i fveq2 eqtr4di fmptco eqtr4id pwsval fveq2d 3eqtr4d
-      wfn ) AJKZBCKZUAZLBAMNZUBZAOPZVKUDUEZLPBEMNZDLPVJVKVMBQCVNVNRVHVIUFVHVMQK
-      VIAOJUCUGUHVHBJVKUIVIBAJUJUHUKVJVOHBESVLHBEULVJHIBQAIUMZLPZEVKLVHAQKVIHUM
-      BKAJUPUNVKHBASTVJHBAULUOLQVGLIQVQSTVJUQIQLURUSVPATVQALPEVPALUTGVAVBVCVJDV
-      NLAVMBJCDFVMRVDVEVF $.
-  $}
-
-  ${
     $d p q x y .+ $.  $d a b p q u v w x y z ph $.  $d a b p q u v w x y z U $.
     $d p q u x .0. $.  $d p q u v w B $.  $d a b p q u x y z F $.  $d p q R $.
     $d a b p q x y z V $.
@@ -163075,59 +162913,6 @@ $)
       ZUGZKUHSZUEZAVOUHDUIZVPAVLCUJZVOVRUEZABCVNDEJFVLUKUKKVRLPVNULZAEHNUMAFIMU
       MORVRULVLULUNZUOADEFHIKLMNAFTDVETUPUQFUPDVEOUATUPUAUBURUSFTUPDUTVAVBVCAKT
       UJJCUJVSVMVQVFADEFHIKLMNOVDRAVSVTWBVGCVNKGJVLVPPWAVPULQVHVIVJ $.
-  $}
-
-  ${
-    $d x y G $.  $d x y M $.  $d x y R $.  $d x y X $.  $d x B $.  $d x F $.
-    $d x I $.  $d x N $.  $d x V $.
-    pwsgrp.y $e |- Y = ( R ^s I ) $.
-    $( A structure power of a group is a group.  (Contributed by Mario
-       Carneiro, 11-Jan-2015.) $)
-    pwsgrp $p |- ( ( R e. Grp /\ I e. V ) -> Y e. Grp ) $=
-      ( cgrp wcel wa csca cfv csn cxp cprds co eqid pwsval simpr scaslid adantr
-      cvv slotex wf fconst6g prdsgrpd eqeltrd ) AFGZBCGZHZDAIJZBAKLZMNZFAUIBFCD
-      EUIOPUHUJUIBTCUKUKOUFUGQUFUITGUGAIFRUASUFBFUJUBUGBAFUCSUDUE $.
-
-    pwsinvg.b $e |- B = ( Base ` Y ) $.
-    ${
-      pwsinvg.m $e |- M = ( invg ` R ) $.
-      pwsinvg.n $e |- N = ( invg ` Y ) $.
-      $( Negation in a group power.  (Contributed by Mario Carneiro,
-         11-Jan-2015.) $)
-      pwsinvg $p |- ( ( R e. Grp /\ I e. V /\ X e. B ) ->
-        ( N ` X ) = ( M o. X ) ) $=
-        ( vx vy cgrp wcel cfv cminusg cbs eqid w3a csca csn cxp cprds cmpt ccom
-        co cv cvv simp2 scaslid slotex 3ad2ant1 wf fconst6g wceq pwsval 3adant3
-        simp3 fveq2d eqtrid eleqtrd prdsinvgd wa simp1 fvconst2g eqtr4di fveq1d
-        sylan mpteq2dva eqtrd pwselbas ffvelcdmda feqmptd grpinvf fveq2 3eqtr4d
-        fmptco ) BOPZCFPZGAPZUAZGBUBQZCBUCUDZUEUHZRQZQZMCMUIZGQZDQZUFZGEQDGUGWC
-        WHMCWJWIWEQZRQZQZUFWLWCMWFSQZWEWDCWGUJFGWFWFTVTWAWBUKZVTWAWDUJPWBBUBOUL
-        UMUNVTWACOWEUOWBCBOUPUNWPTWGTWCGAWPVTWAWBUTZWCAHSQWPJWCHWFSVTWAHWFUQWBB
-        WDCOFHIWDTURUSZVAVBVCVDWCMCWOWKWCWICPZVEZWJWNDXAWNBRQDXAWMBRWCVTWTWMBUQ
-        VTWAWBVFZCBWIOVGVJVAKVHVIVKVLWCGEWGWCEHRQWGLWCHWFRWSVAVBVIWCMNCBSQZWJNU
-        IZDQWKGDWCCXCWIGWCXCBCAOGHFIXCTZJXBWQWRVMZVNWCMCXCGXFVOWCNXCXCDVTWAXCXC
-        DUOWBXCBDXEKVPUNVOXDWJDVQVSVR $.
-    $}
-
-    pwssub.m $e |- M = ( -g ` R ) $.
-    pwssub.n $e |- .- = ( -g ` Y ) $.
-    $( Subtraction in a group power.  (Contributed by Mario Carneiro,
-       12-Jan-2015.) $)
-    pwssub $p |- ( ( ( R e. Grp /\ I e. V ) /\ ( F e. B /\ G e. B ) ) ->
-        ( F .- G ) = ( F oF M G ) ) $=
-      ( vx cgrp wcel wa cfv co eqid vy cminusg cplusg cv cmpt cof simplr simpll
-      cbs simprl pwselbas ffvelcdmda wf grpinvf adantr simprr ffvelcdmd feqmptd
-      ad2antrr ccom wceq pwsinvg syl3anc fveq2 fmptco offval2 grpinvcl syl2an2r
-      eqtrd pwsgrp pwsplusgval grpsubval syl2anc mpteq2dva 3eqtr4d adantl ) BOP
-      ZEHPZQZCAPZDAPZQZQZCDIUBRZRZIUCRZSZNENUDZCRZWHDRZFSZUEZCDGSZCDFUFSWCCWEBU
-      CRZUFSNEWIWJBUBRZRZWNSZUEWGWLWCNEWIWPWNCWEHBUIRZWRVQVRWBUGZWCEWRWHCWCWRBE
-      AOCIHJWRTZKVQVRWBUHZWSVSVTWAUJZUKZULZWCWHEPZQZWRWRWJWOWCWRWRWOUMZXEVQXGVR
-      WBWRBWOWTWOTZUNUSZUOWCEWRWHDWCWRBEAODIHJWTKXAWSVSVTWAUPZUKZULZUQWCNEWRCXC
-      URZWCWEWODUTZNEWPUEWCVQVRWAWEXNVAXAWSXJABEWOWDHDIJKXHWDTZVBVCWCNUAEWRWJUA
-      UDZWORWPDWOXLWCNEWRDXKURZWCUAWRWRWOXIURXPWJWOVDVEVIVFWCAWNWFBCWEEOHIJKXAW
-      SXBVSIOPWBWAWEAPBEHIJVJXJAIWDDKXOVGVHWNTZWFTZVKWCNEWKWQXFWIWRPWJWRPWKWQVA
-      XDXLWRWNBWOFWIWJWTXRXHLVLVMVNVOWBWMWGVAVSAWFIWDGCDKXSXOMVLVPWCNEWIWJFCDHW
-      RWRWSXDXLXMXQVFVO $.
   $}
 
   ${
@@ -167412,6 +167197,230 @@ $)
       YPYHXHBXDYPVRVSWCYIXTYKCQYLCQZYNCQAXTYBYGXGYAVTYIYKXFCYJXEEMXDXJVEYJXEOXD
       XIWADXDXJWBWDUKYHXGWEWFYHYRXGYHXJCXHXKYQXHXJQYHXIXJXHXIXDWGUGWHWIWNWJWCCY
       MEYKYLGYOWKWLVBWMJWOWP $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Structure power
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c ^s $.
+
+  $( The function constructing structure powers. $)
+  cpws $a class ^s $.
+
+  ${
+    $d r i $.
+    $( Define a structure power, which is just a structure product where all
+       the factors are the same.  (Contributed by Mario Carneiro,
+       11-Jan-2015.) $)
+    df-pws $a |-
+        ^s = ( r e. _V , i e. _V |-> ( ( Scalar ` r ) Xs_ ( i X. { r } ) ) ) $.
+  $}
+
+  ${
+    $d i r F $.  $d i r I $.  $d i r R $.
+    pwsval.y $e |- Y = ( R ^s I ) $.
+    pwsval.f $e |- F = ( Scalar ` R ) $.
+    $( Value of a structure power.  (Contributed by Mario Carneiro,
+       11-Jan-2015.) $)
+    pwsval $p |- ( ( R e. V /\ I e. W ) -> Y = ( F Xs_ ( I X. { R } ) ) ) $=
+      ( vr vi wcel wa cpws co csn cprds cvv wceq adantr csca cxp adantl scaslid
+      elex cfv slotex eqeltrid simpr snexg xpexg syl2anc prdsex cv simpl fveq2d
+      eqtr4di id sneq xpeq12 syl2anr oveq12d df-pws ovmpoga syl3anc eqtrid ) AD
+      KZCEKZLZFACMNZBCAOZUAZPNZGVHAQKZCQKZVLQKZVIVLRVFVMVGADUDSVGVNVFCEUDUBVHBQ
+      KZVKQKZVOVFVPVGVFBATUEZQHATDUCUFUGSVHVGVJQKZVQVFVGUHVFVSVGADUISCVJEQUJUKV
+      KBQQULUKIJACQQIUMZTUEZJUMZVTOZUAZPNVLMQVTARZWBCRZLZWABWDVKPWGWAVRBWGVTATW
+      EWFUNUOHUPWFWFWCVJRWDVKRWEWFUQVTAURWBCWCVJUSUTVAJIVBVCVDVE $.
+  $}
+
+  ${
+    $d x I $.  $d x w R $.  $d x V $.  $d x W $.
+    pwsbas.y $e |- Y = ( R ^s I ) $.
+    pwsbas.f $e |- B = ( Base ` R ) $.
+    $( Base set of a structure power.  (Contributed by Mario Carneiro,
+       11-Jan-2015.) $)
+    pwsbas $p |- ( ( R e. V /\ I e. W ) -> ( B ^m I ) = ( Base ` Y ) ) $=
+      ( vx vw wcel wa cbs cfv co cmap eqid cvv adantr wceq csn cxp cprds pwsval
+      csca cixp fveq2d cv scaslid slotex simpr snexg xpexg syl2anc cdm wex snmg
+      dmxpm syl prdsbas wral fvconst2g ralrimiva ixpeq2 eqtrd wfn basfn funfvex
+      elex funfni sylancr ixpconstg oveq1i eqtr4di 3eqtrrd ) BDKZCEKZLZFMNBUENZ
+      CBUAZUBZUCOZMNZICBMNZUFZACPOZVRFWBMBVSCDEFGVSQUDUGVRWCICIUHZWANZMNZUFZWEV
+      RIWCWBWAVSCRRWBQVPVSRKVQBUEDUIUJSVRVQVTRKZWARKVPVQUKZVPWKVQBDULSCVTERUMUN
+      WCQVPWAUOCTZVQVPJUHVTKJUPWMJBDUQJCVTURUSSUTVRWIWDTZICVAZWJWETVPWOVQVPWNIC
+      VPWGCKLWHBMCBWGDVBUGVCSICWIWDVDUSVEVRWEWDCPOZWFVRVQWDRKZWEWPTWLVPWQVQVPMR
+      VFBRKWQVGBDVIWQRBMBMVHVJVKSICWDERVLUNAWDCPHVMVNVO $.
+
+    pwselbas.v $e |- V = ( Base ` Y ) $.
+    $( Membership in the base set of a structure product.  (Contributed by
+       Stefan O'Rear, 24-Jan-2015.) $)
+    pwselbasb $p |- ( ( R e. W /\ I e. Z ) -> ( X e. V <-> X : I --> B ) ) $=
+      ( wcel wa cmap co wf cbs cfv pwsbas cvv eqtr4di eleq2d basfn elex funfvex
+      wb wfn funfni sylancr eqeltrid elmapg sylan bitr3d ) BELZCHLZMZFACNOZLZFD
+      LCAFPZUPUQDFUPUQGQRDABCEHGIJSKUAUBUNATLUOURUSUFUNABQRZTJUNQTUGBTLUTTLZUCB
+      EUDVATBQBQUEUHUIUJACFTHUKULUM $.
+
+    pwselbas.r $e |- ( ph -> R e. W ) $.
+    pwselbas.i $e |- ( ph -> I e. Z ) $.
+    pwselbas.x $e |- ( ph -> X e. V ) $.
+    $( An element of a structure power is a function from the index set to the
+       base set of the structure.  (Contributed by Mario Carneiro,
+       11-Jan-2015.)  (Revised by Mario Carneiro, 5-Jun-2015.) $)
+    pwselbas $p |- ( ph -> X : I --> B ) $=
+      ( wcel wf wb pwselbasb syl2anc mpbid ) AGEPZDBGQZOACFPDIPUBUCRMNBCDEFGHIJ
+      KLSTUA $.
+  $}
+
+  ${
+    $d x .+ $.  $d x F $.  $d x G $.  $d x I $.  $d x ph $.  $d x .x. $.
+    $d x R $.  $d x W $.
+    pwsplusgval.y $e |- Y = ( R ^s I ) $.
+    pwsplusgval.b $e |- B = ( Base ` Y ) $.
+    pwsplusgval.r $e |- ( ph -> R e. V ) $.
+    pwsplusgval.i $e |- ( ph -> I e. W ) $.
+    pwsplusgval.f $e |- ( ph -> F e. B ) $.
+    pwsplusgval.g $e |- ( ph -> G e. B ) $.
+    ${
+      pwsplusgval.a $e |- .+ = ( +g ` R ) $.
+      pwsplusgval.p $e |- .+b = ( +g ` Y ) $.
+      $( Value of addition in a structure power.  (Contributed by Mario
+         Carneiro, 11-Jan-2015.) $)
+      pwsplusgval $p |- ( ph -> ( F .+b G ) = ( F oF .+ G ) ) $=
+        ( cfv vx csca csn cxp cprds co cplusg cv cmpt cof cbs eqid wcel scaslid
+        cvv slotex syl fnconstg wceq pwsval syl2anc fveq2d eleqtrd prdsplusgval
+        wfn eqtrid fvconst2g sylan eqtr4di oveqd mpteq2dva eqtrd fvexg pwselbas
+        wa feqmptd offval2 3eqtr4d ) AFGEUBTZHEUCUDZUEUFZUGTZUFZUAHUAUHZFTZWDGT
+        ZCUFZUIZFGDUFFGCUJUFAWCUAHWEWFWDVTTZUGTZUFZUIWHAUAWAUKTZWBVTVSFGHUOJWAW
+        AULWLULAEIUMZVSUOUMNEUBIUNUPUQOAWMVTHVENHEIURUQAFBWLPABKUKTWLMAKWAUKAWM
+        HJUMKWAUSNOEVSHIJKLVSULUTVAZVBVFZVCAGBWLQWOVCWBULVDAUAHWKWGAWDHUMZVOZWJ
+        CWEWFWQWJEUGTCWQWIEUGAWMWPWIEUSNHEWDIVGVHVBRVIVJVKVLADWBFGADKUGTWBSAKWA
+        UGWNVBVFVJAUAHWEWFCFGJUOUOOAFBUMWPWEUOUMPWDFBHVMVHAGBUMWPWFUOUMQWDGBHVM
+        VHAUAHEUKTZFAWREHBIFKJLWRULZMNOPVNVPAUAHWRGAWREHBIGKJLWSMNOQVNVPVQVR $.
+    $}
+
+    ${
+      pwsmulrval.a $e |- .x. = ( .r ` R ) $.
+      pwsmulrval.p $e |- .xb = ( .r ` Y ) $.
+      $( Value of multiplication in a structure power.  (Contributed by Mario
+         Carneiro, 11-Jan-2015.) $)
+      pwsmulrval $p |- ( ph -> ( F .xb G ) = ( F oF .x. G ) ) $=
+        ( cfv vx csca csn cxp cprds co cmulr cmpt cof cbs cvv eqid wcel scaslid
+        cv slotex syl fnconstg pwsval syl2anc fveq2d eqtrid eleqtrd prdsmulrval
+        wfn wceq wa fvconst2g sylan eqtr4di oveqd mpteq2dva eqtrd fvexg feqmptd
+        pwselbas offval2 3eqtr4d ) AFGCUBTZHCUCUDZUEUFZUGTZUFZUAHUAUOZFTZWDGTZE
+        UFZUHZFGDUFFGEUIUFAWCUAHWEWFWDVTTZUGTZUFZUHWHAUAWAUJTZVTVSWBFGHUKJWAWAU
+        LWLULACIUMZVSUKUMNCUBIUNUPUQOAWMVTHVENHCIURUQAFBWLPABKUJTWLMAKWAUJAWMHJ
+        UMKWAVFNOCVSHIJKLVSULUSUTZVAVBZVCAGBWLQWOVCWBULVDAUAHWKWGAWDHUMZVGZWJEW
+        EWFWQWJCUGTEWQWICUGAWMWPWICVFNHCWDIVHVIVARVJVKVLVMADWBFGADKUGTWBSAKWAUG
+        WNVAVBVKAUAHWEWFEFGJUKUKOAFBUMWPWEUKUMPWDFBHVNVIAGBUMWPWFUKUMQWDGBHVNVI
+        AUAHCUJTZFAWRCHBIFKJLWRULZMNOPVPVOAUAHWRGAWRCHBIGKJLWSMNOQVPVOVQVR $.
+    $}
+  $}
+
+  ${
+    pwsdiagel.y $e |- Y = ( R ^s I ) $.
+    pwsdiagel.b $e |- B = ( Base ` R ) $.
+    pwsdiagel.c $e |- C = ( Base ` Y ) $.
+    $( Membership of diagonal elements in the structure power base set.
+       (Contributed by Stefan O'Rear, 24-Jan-2015.) $)
+    pwsdiagel $p |- ( ( ( R e. V /\ I e. W ) /\ A e. B ) ->
+        ( I X. { A } ) e. C ) $=
+      ( wcel wa csn cxp wf fconst6g adantl wb pwselbasb adantr mpbird ) DFLEGLM
+      ZABLZMEANOZCLZEBUEPZUDUGUCEABQRUCUFUGSUDBDECFUEHGIJKTUAUB $.
+  $}
+
+  ${
+    $d Y x $.  $d R x $.  $d I x $.  $d B x $.  $d C x $.  $d W x $.
+    pwssnf1o.y $e |- Y = ( R ^s { I } ) $.
+    pwssnf1o.b $e |- B = ( Base ` R ) $.
+    pwssnf1o.f $e |- F = ( x e. B |-> ( { I } X. { x } ) ) $.
+    pwssnf1o.c $e |- C = ( Base ` Y ) $.
+    $( Triviality of singleton powers: set equipollence.  (Contributed by
+       Stefan O'Rear, 24-Jan-2015.) $)
+    pwssnf1o $p |- ( ( R e. V /\ I e. W ) -> F : B -1-1-onto-> C ) $=
+      ( wcel wa wf1o csn cvv cbs cfv cmap wfn basfn elex adantr funfvex sylancr
+      funfni eqeltrid mapsnf1o sylancom wceq snexg pwsbas sylan2 eqtr4id mpbird
+      co f1oeq3d ) DGNZFHNZOZBCEPBBFQZUAURZEPZUTVABRNVEVBBDSTZRKVBSRUBDRNZVFRNZ
+      UCUTVGVADGUDUEVHRDSDSUFUHUGUIABEFRHLUJUKVBCVDBEVBCISTZVDMVAUTVCRNVDVIULFH
+      UMBDVCGRIJKUNUOUPUSUQ $.
+  $}
+
+  ${
+    $d x I $.  $d r x R $.  $d x V $.  $d r x .0. $.
+    pwsmnd.y $e |- Y = ( R ^s I ) $.
+    $( The structure power of a monoid is a monoid.  (Contributed by Mario
+       Carneiro, 11-Jan-2015.) $)
+    pwsmnd $p |- ( ( R e. Mnd /\ I e. V ) -> Y e. Mnd ) $=
+      ( cmnd wcel wa csca cfv csn cxp cprds co eqid pwsval simpr scaslid adantr
+      cvv slotex wf fconst6g prdsmndd eqeltrd ) AFGZBCGZHZDAIJZBAKLZMNZFAUIBFCD
+      EUIOPUHUJUIBTCUKUKOUFUGQUFUITGUGAIFRUASUFBFUJUBUGBAFUCSUDUE $.
+
+    pws0g.z $e |- .0. = ( 0g ` R ) $.
+    $( The identity in a structure power of a monoid.  (Contributed by Mario
+       Carneiro, 11-Jan-2015.) $)
+    pws0g $p |- ( ( R e. Mnd /\ I e. V ) -> ( I X. { .0. } ) = ( 0g ` Y ) ) $=
+      ( vx vr cmnd wcel c0g csn cxp csca cfv cvv eqid cmpt wceq wa ccom scaslid
+      cprds co simpr slotex adantr wf fconst6g prds0g fconstmpt cv ad2antrr a1i
+      elex fn0g dffn5im mp1i fveq2 eqtr4di fmptco eqtr4id pwsval fveq2d 3eqtr4d
+      wfn ) AJKZBCKZUAZLBAMNZUBZAOPZVKUDUEZLPBEMNZDLPVJVKVMBQCVNVNRVHVIUFVHVMQK
+      VIAOJUCUGUHVHBJVKUIVIBAJUJUHUKVJVOHBESVLHBEULVJHIBQAIUMZLPZEVKLVHAQKVIHUM
+      BKAJUPUNVKHBASTVJHBAULUOLQVGLIQVQSTVJUQIQLURUSVPATVQALPEVPALUTGVAVBVCVJDV
+      NLAVMBJCDFVMRVDVEVF $.
+  $}
+
+  ${
+    $d x y G $.  $d x y M $.  $d x y R $.  $d x y X $.  $d x B $.  $d x F $.
+    $d x I $.  $d x N $.  $d x V $.
+    pwsgrp.y $e |- Y = ( R ^s I ) $.
+    $( A structure power of a group is a group.  (Contributed by Mario
+       Carneiro, 11-Jan-2015.) $)
+    pwsgrp $p |- ( ( R e. Grp /\ I e. V ) -> Y e. Grp ) $=
+      ( cgrp wcel wa csca cfv csn cxp cprds co eqid pwsval simpr scaslid adantr
+      cvv slotex wf fconst6g prdsgrpd eqeltrd ) AFGZBCGZHZDAIJZBAKLZMNZFAUIBFCD
+      EUIOPUHUJUIBTCUKUKOUFUGQUFUITGUGAIFRUASUFBFUJUBUGBAFUCSUDUE $.
+
+    pwsinvg.b $e |- B = ( Base ` Y ) $.
+    ${
+      pwsinvg.m $e |- M = ( invg ` R ) $.
+      pwsinvg.n $e |- N = ( invg ` Y ) $.
+      $( Negation in a group power.  (Contributed by Mario Carneiro,
+         11-Jan-2015.) $)
+      pwsinvg $p |- ( ( R e. Grp /\ I e. V /\ X e. B ) ->
+        ( N ` X ) = ( M o. X ) ) $=
+        ( vx vy cgrp wcel cfv cminusg cbs eqid w3a csca csn cxp cprds cmpt ccom
+        co cv cvv simp2 scaslid slotex 3ad2ant1 wf fconst6g wceq pwsval 3adant3
+        simp3 fveq2d eqtrid eleqtrd prdsinvgd wa simp1 fvconst2g eqtr4di fveq1d
+        sylan mpteq2dva eqtrd pwselbas ffvelcdmda feqmptd grpinvf fveq2 3eqtr4d
+        fmptco ) BOPZCFPZGAPZUAZGBUBQZCBUCUDZUEUHZRQZQZMCMUIZGQZDQZUFZGEQDGUGWC
+        WHMCWJWIWEQZRQZQZUFWLWCMWFSQZWEWDCWGUJFGWFWFTVTWAWBUKZVTWAWDUJPWBBUBOUL
+        UMUNVTWACOWEUOWBCBOUPUNWPTWGTWCGAWPVTWAWBUTZWCAHSQWPJWCHWFSVTWAHWFUQWBB
+        WDCOFHIWDTURUSZVAVBVCVDWCMCWOWKWCWICPZVEZWJWNDXAWNBRQDXAWMBRWCVTWTWMBUQ
+        VTWAWBVFZCBWIOVGVJVAKVHVIVKVLWCGEWGWCEHRQWGLWCHWFRWSVAVBVIWCMNCBSQZWJNU
+        IZDQWKGDWCCXCWIGWCXCBCAOGHFIXCTZJXBWQWRVMZVNWCMCXCGXFVOWCNXCXCDVTWAXCXC
+        DUOWBXCBDXEKVPUNVOXDWJDVQVSVR $.
+    $}
+
+    pwssub.m $e |- M = ( -g ` R ) $.
+    pwssub.n $e |- .- = ( -g ` Y ) $.
+    $( Subtraction in a group power.  (Contributed by Mario Carneiro,
+       12-Jan-2015.) $)
+    pwssub $p |- ( ( ( R e. Grp /\ I e. V ) /\ ( F e. B /\ G e. B ) ) ->
+        ( F .- G ) = ( F oF M G ) ) $=
+      ( vx cgrp wcel wa cfv co eqid vy cminusg cplusg cv cmpt cof simplr simpll
+      cbs simprl pwselbas ffvelcdmda wf grpinvf adantr simprr ffvelcdmd feqmptd
+      ad2antrr ccom wceq pwsinvg syl3anc fveq2 fmptco offval2 grpinvcl syl2an2r
+      eqtrd pwsgrp pwsplusgval grpsubval syl2anc mpteq2dva 3eqtr4d adantl ) BOP
+      ZEHPZQZCAPZDAPZQZQZCDIUBRZRZIUCRZSZNENUDZCRZWHDRZFSZUEZCDGSZCDFUFSWCCWEBU
+      CRZUFSNEWIWJBUBRZRZWNSZUEWGWLWCNEWIWPWNCWEHBUIRZWRVQVRWBUGZWCEWRWHCWCWRBE
+      AOCIHJWRTZKVQVRWBUHZWSVSVTWAUJZUKZULZWCWHEPZQZWRWRWJWOWCWRWRWOUMZXEVQXGVR
+      WBWRBWOWTWOTZUNUSZUOWCEWRWHDWCWRBEAODIHJWTKXAWSVSVTWAUPZUKZULZUQWCNEWRCXC
+      URZWCWEWODUTZNEWPUEWCVQVRWAWEXNVAXAWSXJABEWOWDHDIJKXHWDTZVBVCWCNUAEWRWJUA
+      UDZWORWPDWOXLWCNEWRDXKURZWCUAWRWRWOXIURXPWJWOVDVEVIVFWCAWNWFBCWEEOHIJKXAW
+      SXBVSIOPWBWAWEAPBEHIJVJXJAIWDDKXOVGVHWNTZWFTZVKWCNEWKWQXFWIWRPWJWRPWKWQVA
+      XDXLWRWNBWOFWIWJWTXRXHLVLVMVNVOWBWMWGVAVSAWFIWDGCDKXSXOMVLVPWCNEWIWJFCDHW
+      RWRWSXDXLXMXQVFVO $.
   $}
 
 
