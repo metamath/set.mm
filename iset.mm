@@ -157207,7 +157207,7 @@ $)
   $( Extend class notation with group identity element. $)
   c0g $a class 0g $.
 
-  $( Extend class notation to include finitely supported group sums. $)
+  $( Extend class notation to include group sums over finite sets. $)
   cgsu $a class gsum $.
 
   ${
@@ -157234,7 +157234,9 @@ $)
        sum of the elements, evaluated left-to-right, i.e.,
        ` ( ( F `` 1 ) + ( F `` 2 ) ) + ( F `` 3 ) ` , etc.
 
-       3.  This definition does not handle other cases.
+       3.  This definition does not handle other cases.  But see ~ df-gfsum for
+       the case where ` A ` is a finite set (which need not specify an order)
+       and ` G ` is a commutative monoid.
 
        (Contributed by FL, 5-Sep-2010.)  (Revised by Mario Carneiro,
        7-Dec-2014.)  (Revised by Jim Kingdon, 27-Jun-2025.) $)
@@ -167116,10 +167118,16 @@ $)
   ${
     $d w f x g $.
     $( Define the finite group sum (iterated sum) over an unordered finite set.
-       As currently defined, ~ df-igsum is indexed by consecutive integers, but
-       in the case of a commutative monoid, the order of the sum doesn't matter
-       and we can define a sum indexed by any finite set without needing to
-       specify an order.  (Contributed by Jim Kingdon, 23-Mar-2026.) $)
+
+       Given ` G gfsum F ` where ` F : A --> ( Base `` G ) ` , the set of
+       indices is ` A ` and the values are given by ` F ` at each index.  For
+       this notation, ` A ` is a finite set and ` G ` is a commutative monoid,
+       and the sum adds up these elements in some order (the sum does not
+       depend on the order).
+
+       For a sum indexed by consecutive integers (and thus defining an order
+       for the sum), see ~ df-igsum .  (Contributed by Jim Kingdon,
+       23-Mar-2026.) $)
     df-gfsum $a |- gfsum = ( w e. CMnd , f e. _V |-> ( iota x
         ( dom f e. Fin /\ E. g ( g : ( 1 ... ( # ` dom f ) )
         -1-1-onto-> dom f /\ x = ( w gsum ( f o. g ) ) ) ) ) ) $.
