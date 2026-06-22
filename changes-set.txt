@@ -92,6 +92,7 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+20-Jun-26 reldisjun   reldmun     Removed conjunct from antecedent
 16-Jun-26 resdmdfsn   [same]      Removed antecedent
 16-Jun-26 resindm     [same]      Removed antecedent
 16-Jun-26 sgncl       [same]      Moved from TA's mathbox to main set.mm
