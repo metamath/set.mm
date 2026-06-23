@@ -92,11 +92,30 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+20-Jun-26 reldisjun   reldmun     Removed conjunct from antecedent
 19-Jun-26 ringen1zr   ringen1zr0
 19-Jun-26 srgen1zr    srgen1zr0
 19-Jun-26 rngen1zr    [same]      theorem revised
+17-Jun-26 orim12da    [same]      Moved from TA's mathbox to main set.mm
+17-Jun-26 elrabrd     [same]      Moved from TA's mathbox to main set.mm
+17-Jun-26 n0limd      [same]      Moved from TA's mathbox to main set.mm
+17-Jun-26 brab2d      [same]      Moved from TA's mathbox to main set.mm
 16-Jun-26 resdmdfsn   [same]      Removed antecedent
 16-Jun-26 resindm     [same]      Removed antecedent
+16-Jun-26 sgncl       [same]      Moved from TA's mathbox to main set.mm
+16-Jun-26 sgnneg      [same]      Moved from TA's mathbox to main set.mm
+16-Jun-26 sgnclre     [same]      Moved from TA's mathbox to main set.mm
+16-Jun-26 sgn3da      [same]      Moved from TA's mathbox to main set.mm
+16-Jun-26 sgn0bi      [same]      Moved from TA's mathbox to main set.mm
+16-Jun-26 sgnnbi      [same]      Moved from TA's mathbox to main set.mm
+16-Jun-26 sgnpbi      [same]      Moved from TA's mathbox to main set.mm
+16-Jun-26 sgnsub      [same]      Moved from TA's mathbox to main set.mm
+16-Jun-26 sgnmul      [same]      Moved from TA's mathbox to main set.mm
+16-Jun-26 sgnmulrp2   [same]      Moved from TA's mathbox to main set.mm
+16-Jun-26 sgnmulsgn   [same]      Moved from TA's mathbox to main set.mm
+16-Jun-26 plymul02    [same]      Moved from TA's mathbox to main set.mm
+16-Jun-26 plymulx0    plyn0mulidp Moved from TA's mathbox to main set.mm
+16-Jun-26 plymulx     plymulidp   Moved from TA's mathbox to main set.mm
  6-Jun-26 csbopabgALT csbopabw
  2-Jun-26 nssrex      [same]      Moved from GS's mathbox to main set.mm
  4-May-26 fvcod       [same]      Moved from GS's mathbox to main set.mm
