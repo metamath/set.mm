@@ -25668,6 +25668,18 @@ $)
   $}
 
   ${
+    $d A x $.  $d B x $.  $d ch x $.
+    rspcedvdw.s $e |- ( x = A -> ( ps <-> ch ) ) $.
+    rspcedvdw.1 $e |- ( ph -> A e. B ) $.
+    rspcedvdw.2 $e |- ( ph -> ch ) $.
+    $( Version of ~ rspcedvd where the implicit substitution hypothesis does
+       not have an antecedent, which also avoids a disjoint variable condition
+       on ` ph , x ` .  (Contributed by SN, 20-Aug-2024.) $)
+    rspcedvdw $p |- ( ph -> E. x e. B ps ) $=
+      ( wcel wrex rspcev syl2anc ) AEFJCBDFKHIBCDEFGLM $.
+  $}
+
+  ${
     $d x ph $.  $d x B $.  $d x A $.
     rspcime.1 $e |- ( ( ph /\ x = A ) -> ps ) $.
     rspcime.2 $e |- ( ph -> A e. B ) $.
@@ -28883,6 +28895,14 @@ $)
     $( Equivalence for subclass relation, using bound-variable hypotheses
        instead of distinct variable conditions.  (Contributed by NM,
        3-Jul-1994.)  (Revised by Andrew Salmon, 27-Aug-2011.) $)
+    dfssf $p |- ( A C_ B <-> A. x ( x e. A -> x e. B ) ) $=
+      ( vz wss cv wcel wal ssalel nfcri nfim nfv weq eleq1 imbi12d cbval bitri
+      wi ) BCGFHZBIZUACIZTZFJAHZBIZUECIZTZAJFBCKUDUHFAUBUCAAFBDLAFCELMUHFNFAOUB
+      UFUCUGUAUEBPUAUECPQRS $.
+
+    $( Equivalence for subclass relation, using bound-variable hypotheses
+       instead of distinct variable conditions.  (Contributed by NM,
+       3-Jul-1994.)  (Revised by Andrew Salmon, 27-Aug-2011.) $)
     dfss2f $p |- ( A C_ B <-> A. x ( x e. A -> x e. B ) ) $=
       ( vz wss cv wcel wal ssalel nfcri nfim nfv weq eleq1 imbi12d cbval bitri
       wi ) BCGFHZBIZUACIZTZFJAHZBIZUECIZTZAJFBCKUDUHFAUBUCAAFBDLAFCELMUHFNFAOUB
@@ -31358,12 +31378,12 @@ $)
   ${
     $d A x $.
     $( Law of excluded middle given decidability, in terms of restricted class
-       abstractions.  (Contributed by Jim Kingdon, 2-Aug-2018.) $)
-    rabxmdc $p |- ( A. x DECID ph ->
+       abstractions.  (Contributed by Jeff Madsen, 20-Jun-2011.)  (Revised by
+       Jim Kingdon, 17-Jun-2026.) $)
+    rabxmdc $p |- ( A. x e. A DECID ph ->
         A = ( { x e. A | ph } u. { x e. A | -. ph } ) ) $=
-      ( wdc wal wn wo crab cun wral wceq cv wcel wi exmiddc alimi df-ral sylibr
-      a1d rabid2 unrab eqtr4di ) ADZBEZCAAFZGZBCHZABCHUEBCHIUDUFBCJZCUGKUDBLCMZ
-      UFNZBEUHUCUJBUCUFUIAOSPUFBCQRUFBCTRAUEBCUAUB $.
+      ( wdc wral wn wo crab cun wceq exmiddc ralimi rabid2 sylibr unrab eqtr4di
+      ) ADZBCEZCAAFZGZBCHZABCHSBCHIRTBCECUAJQTBCAKLTBCMNASBCOP $.
 
     $( Law of noncontradiction, in terms of restricted class abstractions.
        (Contributed by Jeff Madsen, 20-Jun-2011.) $)
@@ -32454,6 +32474,44 @@ $)
     JUOBUQCDNOUPVAUSVDUPVAABKUSUPVAABUPUTABUMUOUTATUNUMUOUTAACDUAUBUCPBUTQRABUD
     SUPVDALZVBKUSUPVDVFVBUPVCVFVBUOUMVCVFTUNUOVCVFACDUEUFUGPVBVCQRABUHSUIUKABCD
     ULUJ $.
+
+  ${
+    $d a x $.  $d x C $.  $d x X $.  $d x Y $.  $d x V $.  $d x W $.
+    $d x ps $.  $d x th $.
+    ifeqeqx.1 $e |- ( x = X -> A = C ) $.
+    ifeqeqx.2 $e |- ( x = Y -> B = a ) $.
+    ifeqeqx.3 $e |- ( x = X -> ( ch <-> th ) ) $.
+    ifeqeqx.4 $e |- ( x = Y -> ( ch <-> ps ) ) $.
+    ifeqeqx.5 $e |- ( ph -> a = C ) $.
+    ifeqeqx.6 $e |- ( ( ph /\ ps ) -> th ) $.
+    ifeqeqx.y $e |- ( ph -> Y e. V ) $.
+    ifeqeqx.x $e |- ( ph -> X e. W ) $.
+    ifeqeqxdc.dc $e |- ( ph -> DECID ps ) $.
+    $( An equality theorem tailored for ~ ballotfilemsf1o .  (Contributed by
+       Thierry Arnoux, 14-Apr-2017.) $)
+    ifeqeqxdc $p |- ( ( ph /\ x = if ( ps , X , Y ) )
+                                                  -> a = if ( ch , A , B ) ) $=
+      ( cv wceq cif wa eqeq2 csb simplr wsbc simpll simpr sbceq1a biimpd dfsbcq
+      sylc wi csbeq1 eqeq2d imbi12d wcel nfcvd csbiegf syl eqtr4d adantr eqcomd
+      a1d wn pm3.24 wb sbcieg anbi1d mtbiri pm2.21d anass1rs ifbothdadc csbeq1a
+      imp ex biimprd notbid nsyld anim2d mtoi expdimp wdc adantlr iftrued eqtrd
+      wo mpbird orcd df-dc sylibr ad2antrr iffalsed dcbid exmiddc mpjaodan ) CM
+      UCZFUDZXAGUDZXACFGUEZUDAEUCZBKLUEZUDZUFZFGFXDXAUGGXDXAUGXHCUFZXGXAEXFFUHZ
+      UDZXBAXGCUIZXIACEXFUJZXKAXGCUKXIXGCXMXLXHCULXGCXMCEXFUMZUNUPBCEKUJZXAEKFU
+      HZUDZUQCELUJZXAELFUHZUDZUQXMXKUQAKLKXFUDZXOXMXQXKCEKXFUOZYAXPXJXAEKXFFURU
+      SUTLXFUDZXRXMXTXKCELXFUOZYCXSXJXAELXFFURUSUTABUFZXQXOYEXPXAAXPXAUDBAXPHXA
+      AKJVAZXPHUDUAEKFHJYFEHVBNVCVDRVEVFVGVHABVIZUFZXRXTAXRYGXTAXRYGUFZXTAYIXTA
+      YIBYGUFZBVJZAXRBYGALIVAZXRBVKTCBELIQVLVDVMVNVOVSVPVTUBVQUPXGXBXKXGFXJXAEX
+      FFVRUSWAUPXHCVIZUFZXGXAEXFGUHZUDZXCAXGYMUIZYNAXMVIZYPAXGYMUKYNXGYMYRYQXHY
+      MULXGYMYRXGCXMXNWBUNUPBXOVIZXAEKGUHZUDZUQXRVIZXAELGUHZUDZUQYRYPUQAKLYAYSY
+      RUUAYPYAXOXMYBWBYAYTYOXAEKXFGURUSUTYCUUBYRUUDYPYCXRXMYDWBYCUUCYOXAELXFGUR
+      USUTABYSUUAABYSUFZUUAAUUEYJYKAYSYGBAYSDBAYSDVIAXODAYFXODVKUACDEKJPVLVDWBU
+      NABDSVTWCWDWEVOWFYHUUDUUBYHUUCXAAUUCXAUDZYGAYLUUFTELGXAIYLEXAVBOVCVDVFVGV
+      HUBVQUPXGXCYPXGGYOXAEXFGVRUSWAUPXHBCWGZYGXHBUFZCYMWKUUGUUHCYMUUHCDABDXGSW
+      HUUHXEKUDCDVKUUHXEXFKAXGBUIUUHBKLXHBULWIWJPVDWLWMCWNWOXHYGUFZUUGBWGZAUUJX
+      GYGUBWPUUICBUUIXELUDCBVKUUIXEXFLAXGYGUIUUIBKLXHYGULWQWJQVDWRWLABYGWKZXGAU
+      UJUUKUBBWSVDVFWTVQ $.
+  $}
 
 
 $(
@@ -53947,6 +54005,22 @@ $)
   $}
 
   ${
+    $d x y z $.  $d y z A $.  $d y z F $.
+    dfimafnf.1 $e |- F/_ x A $.
+    dfimafnf.2 $e |- F/_ x F $.
+    $( Alternate definition of the image of a function.  (Contributed by Raph
+       Levien, 20-Nov-2006.)  (Revised by Thierry Arnoux, 24-Apr-2017.) $)
+    dfimafnf $p |- ( ( Fun F /\ A C_ dom F ) ->
+                  ( F " A ) = { y | E. x e. A y = ( F ` x ) } ) $=
+      ( vz wfun cdm wss wa cima cv cfv wceq wrex cab wbr wcel nfcv dfima2 eqcom
+      wb ssel funbrfvb bitr3id ex syl9r imp31 rexbidva abbidv eqtr4id nfeq2 nfv
+      nffv fveq2 eqeq2d cbvrexfw abbii eqtrdi ) DHZCDIZJZKZDCLZBMZGMZDNZOZGCPZB
+      QZVFAMZDNZOZACPZBQVDVEVGVFDRZGCPZBQVKGBDCUAVDVJVQBVDVIVPGCVAVCVGCSZVIVPUC
+      ZVCVRVGVBSZVAVSCVBVGUDVAVTVSVIVHVFOVAVTKVPVHVFUBVGVFDUEUFUGUHUIUJUKULVJVO
+      BVIVNGACGCTEAVFVHAVGDFAVGTUOUMVNGUNVGVLOVHVMVFVGVLDUPUQURUSUT $.
+  $}
+
+  ${
     resfvresima.f $e |- ( ph -> Fun F ) $.
     resfvresima.s $e |- ( ph -> S C_ dom F ) $.
     resfvresima.x $e |- ( ph -> X e. S ) $.
@@ -54987,6 +55061,29 @@ $)
       FWDYAYBWOVIZWDCDWJGYHVFTVGYDWFWJXCXDEWDYCWMWNVJYDWGWEMZXCWFMZYDWEWGYESYDW
       DYAYKYLVKYFYGCDWFWEGVLTVOYDWKWIMZXDWJMZYDWIWKYISYDWDYBYMYNVKYFYJCDWJWIGVL
       TVOVMVPVQVRVSVTWAIJABCDEFGWBWC $.
+  $}
+
+  $( A different way to write ` F ` is a function.  (Contributed by Thierry
+     Arnoux, 7-Dec-2016.) $)
+  fdmrn $p |- ( Fun F <-> F : dom F --> ran F ) $=
+    ( cdm crn wf wfn wfun wss ssid df-f mpbiran2 wceq eqid df-fn bitr2i ) ABZAC
+    ZADZAOEZAFZQRPPGPHOPAIJRSOOKOLAOMJN $.
+
+  ${
+    rinvbij.1 $e |- Fun F $.
+    rinvbij.2 $e |- `' F = F $.
+    rinvbij.3a $e |- ( F " A ) C_ B $.
+    rinvbij.3b $e |- ( F " B ) C_ A $.
+    rinvbij.4a $e |- A C_ dom F $.
+    rinvbij.4b $e |- B C_ dom F $.
+    $( Sufficient conditions for the restriction of an involution to be a
+       bijection.  (Contributed by Thierry Arnoux, 7-Dec-2016.) $)
+    rinvf1o $p |- ( F |` A ) : A -1-1-onto-> B $=
+      ( cima cres wf1o cdm crn wf1 wss wfun mpbi mp2an wb wf fdmrn funeqi mpbir
+      ccnv df-f1 mpbir2an f1ores funimass3 imaeq1i sseqtri eqssi f1oeq3 ax-mp
+      wceq ) ACAJZCAKZLZABUQLZCMZCNZCOZAUTPURVBUTVACUAZCUEZQZCQZVCDCUBRVEVFDVDC
+      EUCUDUTVACUFUGHUTVAACUHSUPBUOURUSTUPBFBVDAJZUPCBJAPZBVGPZGVFBUTPVHVITDIBA
+      CUISRVDCAEUJUKULUPBAUQUMUNR $.
   $}
 
 
@@ -58132,6 +58229,28 @@ $)
   $}
 
   ${
+    $d x y A $.  $d x y B $.  $d y C $.  $d x D $.  $d x y ph $.
+    f1o3d.1 $e |- ( ph -> F = ( x e. A |-> C ) ) $.
+    f1o3d.2 $e |- ( ( ph /\ x e. A ) -> C e. B ) $.
+    f1o3d.3 $e |- ( ( ph /\ y e. B ) -> D e. A ) $.
+    f1o3d.4 $e |- ( ( ph /\ ( x e. A /\ y e. B ) ) ->
+                    ( x = D <-> y = C ) ) $.
+    $( Describe an implicit one-to-one onto function.  (Contributed by Thierry
+       Arnoux, 23-Apr-2017.) $)
+    f1o3d $p |- ( ph -> ( F : A -1-1-onto-> B /\ `' F = ( y e. B |-> D ) ) ) $=
+      ( ccnv wceq wfn wcel syl wa copab wi wf1o cmpt wral ralrimiva eqid fneq1d
+      fnmpt mpbird cv eleq1a impr biimpar exp42 com34 imp32 jcai biimpa impbida
+      com23 opabbidv df-mpt eqtrdi cnveqd cnvopab a1i 3eqtr4d dff1o4 sylanbrc
+      jca ) ADEHUAZHMZCEGUBZNAHDOZVKEOZVJAVMBDFUBZDOZAFEPZBDUCVPAVQBDJUDBDFVOEV
+      OUEUGQADHVOIUFUHAVNVLEOZAGDPZCEUCVRAVSCEKUDCEGVLDVLUEUGQAEVKVLABUIZDPZCUI
+      ZFNZRZCBSZWBEPZVTGNZRZCBSZVKVLAWDWHCBAWDWHAWDRWFWGAWAWCWFAWARVQWCWFTJFEWB
+      UJQUKAWAWCWFWGTAWAWFWCWGAWAWFWCWGAWAWFRRZWGWCLULUMUNUOUPAWHRWAWCAWFWGWAAW
+      FRVSWGWATKGDVTUJQUKAWFWGWAWCTAWFWAWGWCAWAWFWGWCTAWAWFWGWCWJWGWCLUQUMUSUNU
+      OUPURUTAVKWDBCSZMWEAHWKAHVOWKIBCDFVAVBVCWDBCVDVBVLWINACBEGVAVEVFZUFUHDEHV
+      GVHWLVI $.
+  $}
+
+  ${
     $d ph v $.  $d ph x $.  $d B v $.  $d O v $.  $d R v $.  $d Y v $.
     $d Y x $.  $d Z v $.  $d Z x $.
     suppssov1.s $e |- ( ph ->
@@ -58945,6 +59064,61 @@ $)
     abexex $p |- { y | E. x ph } e. _V $=
       ( wrex cab wex cvv cv wcel wa df-rex pm4.71ri exbii bitr4i abbii abrexex2
       eqeltrri ) ABDHZCIABJZCIKUBUCCUBBLDMZANZBJUCABDOAUEBAUDFPQRSABCDEGTUA $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.  $d y C $.
+    elabreximd.1 $e |- F/ x ph $.
+    elabreximd.2 $e |- F/ x ch $.
+    elabreximd.3 $e |- ( A = B -> ( ch <-> ps ) ) $.
+    elabreximd.4 $e |- ( ph -> A e. V ) $.
+    elabreximd.5 $e |- ( ( ph /\ x e. C ) -> ps ) $.
+    $( Class substitution in an image set.  (Contributed by Thierry Arnoux,
+       30-Dec-2016.) $)
+    elabreximd $p |- ( ( ph /\ A e. { y | E. x e. C y = B } ) -> ch ) $=
+      ( cv wceq wrex cab wcel wa wb eqeq1 rexbidv elabg syl biimpa simpr adantr
+      biimpar syl2anc exp31 rexlimd imp syldan ) AFEOZGPZDHQZERSZFGPZDHQZCAURUT
+      AFISURUTUAMUQUTEFIUOFPUPUSDHUOFGUBUCUDUEUFAUTCAUSCDHJKADOHSZUSCAVATZUSTUS
+      BCVBUSUGVBBUSNUHUSCBLUIUJUKULUMUN $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.  $d x y C $.  $d x ch $.  $d x ph $.
+    elabreximdv.1 $e |- ( A = B -> ( ch <-> ps ) ) $.
+    elabreximdv.2 $e |- ( ph -> A e. V ) $.
+    elabreximdv.3 $e |- ( ( ph /\ x e. C ) -> ps ) $.
+    $( Class substitution in an image set.  (Contributed by Thierry Arnoux,
+       30-Dec-2016.) $)
+    elabreximdv $p |- ( ( ph /\ A e. { y | E. x e. C y = B } ) -> ch ) $=
+      ( nfv elabreximd ) ABCDEFGHIADMCDMJKLN $.
+  $}
+
+  ${
+    abrexss.1 $e |- F/_ x C $.
+    $d x y z $.  $d y z A $.  $d z C $.  $d y z B $.
+    $( A necessary condition for an image set to be a subset.  (Contributed by
+       Thierry Arnoux, 6-Feb-2017.) $)
+    abrexss $p |- ( A. x e. A B e. C -> { y | E. x e. A y = B } C_ C ) $=
+      ( vz wcel wral cv wceq wrex cab cvv nfra1 nfcri eleq1 vex a1i rspa ssrdv
+      elabreximd ex ) DEHZACIZGBJDKACLBMZEUEGJZUFHUGEHZUEUDUHABUGDCNUDACOAGEFPU
+      GDEQUGNHUEGRSUDACTUBUCUA $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.  $d y F $.
+    funimass4f.1 $e |- F/_ x A $.
+    funimass4f.2 $e |- F/_ x B $.
+    funimass4f.3 $e |- F/_ x F $.
+    $( use ~ ffnfvf $)
+    $( Membership relation for the values of a function whose image is a
+       subclass.  (Contributed by Thierry Arnoux, 24-Apr-2017.) $)
+    funimass4f $p |- ( ( Fun F /\ A C_ dom F ) ->
+                    ( ( F " A ) C_ B <-> A. x e. A ( F ` x ) e. B ) ) $=
+      ( vy wfun cdm wss wa cima cv cfv wcel wral nfss nfan wceq nffun funfvima2
+      nfdm nfima ssel sylan9 ralrimi cab dfimafnf adantr abrexss adantl eqsstrd
+      wrex impbida ) DIZBDJZKZLZDBMZCKZANZDOZCPZABQZUSVALVDABUSVAAUPURAADGUAABU
+      QEADGUCRSAUTCADBGEUDFRSUSVBBPVCUTPVAVDBVBDUBUTCVCUEUFUGUSVELUTHNVCTABUNHU
+      HZCUSUTVFTVEAHBDEGUIUJVEVFCKUSAHBVCCFUKULUMUO $.
   $}
 
   ${
@@ -76223,6 +76397,32 @@ $)
   $}
 
   ${
+    $d A x y z $.  $d R x y z $.  $d S x y z $.
+    $( Equality theorem for apartness predicate.  (Contributed by Jim Kingdon,
+       3-Jun-2026.) $)
+    papeq1 $p |- ( R = S -> ( R Ap A <-> S Ap A ) ) $=
+      ( vx vy vz wss cv wbr wn wral wa wi breq ralbidv anbi12d imbi12d 2ralbidv
+      wo wap wceq cxp sseq1 notbid orbi12d df-pap 3bitr4g ) BCUAZBAAUBZGZDHZUKB
+      IZJZDAKZLZUKEHZBIZUPUKBIZMZEAKDAKZUQUKFHZBIZUPVABIZSZMZFAKZEAKDAKZLZLCUIG
+      ZUKUKCIZJZDAKZLZUKUPCIZUPUKCIZMZEAKDAKZVNUKVACIZUPVACIZSZMZFAKZEAKDAKZLZL
+      ABTACTUHUOVMVHWDUHUJVIUNVLBCUIUCUHUMVKDAUHULVJUKUKBCNUDOPUHUTVQVGWCUHUSVP
+      DEAAUHUQVNURVOUKUPBCNZUPUKBCNQRUHVFWBDEAAUHVEWAFAUHUQVNVDVTWEUHVBVRVCVSUK
+      VABCNUPVABCNUEQORPPDEFABUFDEFACUFUG $.
+  $}
+
+  ${
+    $d R x y z $.  $d A x y z $.  $d B x y z $.
+    $( Equality theorem for apartness predicate.  (Contributed by Jim Kingdon,
+       3-Jun-2026.) $)
+    papeq2 $p |- ( A = B -> ( R Ap A <-> R Ap B ) ) $=
+      ( vx vy vz wceq cxp wss cv wbr wn wral wa wi wap raleq anbi12d raleqbi1dv
+      df-pap wo id sqxpeqd sseq2d 3bitr4g ) ABGZCAAHZIZDJZUICKLZDAMZNZUIEJZCKZU
+      MUICKOZEAMZDAMZUNUIFJZCKUMURCKUAOZFAMZEAMZDAMZNZNCBBHZIZUJDBMZNZUOEBMZDBM
+      ZUSFBMZEBMZDBMZNZNACPBCPUFULVGVCVMUFUHVEUKVFUFUGVDCUFABUFUBUCUDUJDABQRUFU
+      QVIVBVLUPVHDABUOEABQSVAVKDABUTVJEABUSFABQSSRRDEFACTDEFBCTUE $.
+  $}
+
+  ${
     $d A x y z $.  $d R x y z $.  $d X x $.
     $( An apartness is irreflexive.  (Contributed by Jim Kingdon,
        27-May-2026.) $)
@@ -76274,6 +76474,15 @@ $)
        Kingdon, 5-Feb-2025.) $)
     df-tap $a |- ( R TAp A <-> ( R Ap A /\
       A. x e. A A. y e. A ( -. x R y -> x = y ) ) ) $.
+  $}
+
+  ${
+    $d A x y $.  $d R x y $.
+    $( A tight apartness is an apartness.  (Contributed by Jim Kingdon,
+       29-May-2026.) $)
+    tapap $p |- ( R TAp A -> R Ap A ) $=
+      ( vx vy wtap wap cv wbr wn weq wi wral df-tap simplbi ) ABEABFCGDGBHICDJK
+      DALCALCDABMN $.
   $}
 
   ${
@@ -91511,6 +91720,13 @@ $)
     wceq ) AEFBEFGZCEFDEFGZGABHIZJZCDHIZJZRZUAUCRZBAHIZDCHIZRSUAEFUCEFUEUFKTABL
     CDLUAUCMNSTUBUGUDUHABOCDOPQ $.
 
+  $( Two complex numbers add up to zero iff they are each other's opposites.
+     (Contributed by Thierry Arnoux, 2-May-2017.) $)
+  addeq0 $p |- ( ( A e. CC /\ B e. CC ) -> ( ( A + B ) = 0 <-> A = -u B ) ) $=
+    ( cc wcel wa cc0 cmin co wceq caddc cneg simpr simpl subadd2d df-neg eqeq1i
+    0cnd eqcom bitr3i bitr3di ) ACDZBCDZEZFBGHZAIZABJHFIABKZIZUCFBAUCQUAUBLUAUB
+    MNUEUFAIUGUFUDABOPUFARST $.
+
   $( Cancellation law for addition and subtraction with 1.  (Contributed by
      Alexander van der Vekens, 3-Oct-2018.) $)
   pncan1 $p |- ( A e. CC -> ( ( A + 1 ) - 1 ) = A ) $=
@@ -103768,6 +103984,18 @@ $)
     ULPZQSUMUJUNDEZUKUOUPTUQUAVAUJULVBUKUJULTBAUJULUBULUSUJUTUCUDUEUJUKULUFBUNC
     UGUHUI $.
 
+  ${
+    ltesubnnd.1 $e |- ( ph -> M e. ZZ ) $.
+    ltesubnnd.2 $e |- ( ph -> N e. NN ) $.
+    $( Subtracting an integer number from another number decreases it.  See
+       ~ ltsubrpd .  (Contributed by Thierry Arnoux, 18-Apr-2017.) $)
+    ltesubnnd $p |- ( ph -> ( ( M + 1 ) - N ) <_ M ) $=
+      ( c1 caddc co cmin cle zcnd 1cnd nncnd addsubd clt wbr zred nnrpd cz wcel
+      ltsubrpd wb nnzd zsubcld zltp1le syl2anc mpbid eqbrtrd ) ABFGHCIHBCIHZFGH
+      ZBJABFCABDKALACEMNAUIBOPZUJBJPZABCABDQACERUAAUISTBSTUKULUBABCDACEUCUDDUIB
+      UEUFUGUH $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -106414,6 +106642,14 @@ $)
       ( cfz co wcel cz elfzelz syl ) ABCDFGHBIHEBCDJK $.
   $}
 
+  ${
+    $d M x $.  $d N x $.
+    $( A finite sequence of integers is a set of integers.  (Contributed by
+       Glauco Siliprandi, 11-Dec-2019.) $)
+    fzssz $p |- ( M ... N ) C_ ZZ $=
+      ( vx cfz co cz cv elfzelz ssriv ) CABDEFCGABHI $.
+  $}
+
   $( A member of a finite set of sequential integer is greater than or equal to
      the lower bound.  (Contributed by NM, 6-Sep-2005.)  (Revised by Mario
      Carneiro, 28-Apr-2015.) $)
@@ -106662,6 +106898,26 @@ $)
       con2i ) BCFGZEABHIZCDHIZJZEKZUPLZUMURUQUNLZUQUOLZMZUMNZUQUNUOOVACBPGVBVAC
       UQBVACUTCQLUSUQCDUBRSZUTUQUALUSUTUQUQCDUCSRVABUSBQLUTUQABUDTSZUTCUQPGUSUQ
       CDUERUSUQBPGUTUQABUFTUGVACBVCVDUHUIUJULUK $.
+  $}
+
+  ${
+    $d x K $.  $d x M $.  $d x N $.
+    $( Split a finite interval of integers into two parts.  (Contributed by
+       Thierry Arnoux, 2-May-2017.) $)
+    fzsplit3 $p |- ( K e. ( M ... N ) ->
+      ( M ... N ) = ( ( M ... ( K - 1 ) ) u. ( K ... N ) ) ) $=
+      ( vx cfz co wcel c1 wo wa wbr cz syl syl2anr cuz wb elfzuz elfzuz3 adantl
+      cfv cmin cun cv cle elfzelz peano2zm zlelttric 1zzd zsubcld elfz5 elfzuzb
+      clt rbaib eluz syl2an zlem1lt 3bitrd orbi12d mpbird caddc peano2uz npcand
+      zcnd 1cnd eleq1d adantr mpbid uztrn syl2an2r sylanbrc jaodan impbida elun
+      bitr4di eqrdv ) ABCEFZGZDVPBAHUAFZEFZACEFZUBZVQDUCZVPGZWBVSGZWBVTGZIZWBWA
+      GVQWCWFVQWCJZWFWBVRUDKZVRWBULKZIZWCWBLGZVRLGZWJVQWBBCUEZVQALGZWLABCUEZAUF
+      MWBVRUGNWGWDWHWEWIWCWBBOTZGZWLWDWHPVQWBBCQVQAHWOVQUHUIWBBVRUJNWGWEWBAOTZG
+      ZAWBUDKZWIWGCWBOTZGZWEWSPWCXBVQWBBCRSWEWSXBWBACUKUMMVQWNWKWSWTPWCWOWMAWBU
+      NUOVQWNWKWTWIPWCWOWMAWBUPUOUQURUSVQWDWCWEVQWDJZWQXBWCWDWQVQWBBVRQSVQCWRGW
+      DAXAGZXBABCRXCVRHUTFZXAGZXDXCVRXAGZXFWDXGVQWBBVRRSWBVRVAMVQXFXDPWDVQXEAXA
+      VQAHVQAWOVCVQVDVBVEVFVGACWBVHVIWBBCUKZVJVQWEJWQXBWCWEWSAWPGWQVQWBACQABCQA
+      WBBVHNWEXBVQWBACRSXHVJVKVLWBVSVTVMVNVO $.
   $}
 
   $( 0-based and 1-based finite sets of sequential integers are equinumerous.
@@ -109037,6 +109293,48 @@ $)
         WPDWCWNUQUSUTWRWSWPTSZWQWTWODTWPWJVAVBWRWNVCSWSWTVDWRWNWOWQVEVFWNVGVHVI
         VJVLUNVMWEWMKWGPKWFPQWEKPVNKPVOZKQVOVPZXAKWHDKWGXBVQVRWCWGVKWDWHDWCWGUQ
         USVSVTWBWA $.
+    $}
+  $}
+
+  ${
+    infssfzledc.s $e |- S = { n e. ( M ... N ) | ps } $.
+    infssfzledc.a $e |- ( ph -> A e. S ) $.
+    infssfzledc.dc $e |- ( ( ph /\ n e. ( M ... A ) ) -> DECID ps ) $.
+    ${
+      $d A n $.  $d M n $.  $d N n $.  $d n ph $.
+      $( The infimum of a decidable inhabited subset of an integer range is a
+         member of the set.  (Contributed by Jim Kingdon, 12-Jun-2026.) $)
+      infssfzcldc $p |- ( ph -> inf ( S , RR , < ) e. S ) $=
+        ( wa cuz cfv crab cr clt cinf cfz wcel cz cv cle co wsbc eleq2i elrabsf
+        wbr nfcv bitri sylib simpld elfzel1 eqid elfzuz ad2antrl elfzle2 simprr
+        syl jca32 simprl simprrl wb eluzelz adantr elfzel2 eluz syl2anr elfzuzb
+        mpbird sylanbrc simprrr jca impbida rabbidva2 eleqtrd wdc elfzelz zdcle
+        eqtrid dcand infssuzcldc infeq1d 3eltr4d ) AEUAZGUBUGZBKZEFLMZNZOPQWHDO
+        PQDAWFCWHEFACFGRUCZSZFTSAWJBECUDZACDSZWJWKKZIWLCBEWINZSWMDWNCHUEBECWIEW
+        IUHUFUIUJUKZCFGULURWHUMACDWHIADWNWHHABWFEWIWGAWDWISZBKZWDWGSZWFKZAWQKWR
+        WEBWPWRABWDFGUNUOWPWEABWDFGUPUOAWPBUQUSAWSKZWPBWTWRGWDLMSZWPAWRWFUTWTXA
+        WEAWRWEBVAWSWDTSZGTSZXAWEVBAWRXBWFFWDVCVDAWJXCWOCFGVEURZWDGVFVGVIWDFGVH
+        VJAWRWEBVKVLVMVNVSZVOAWDFCRUCSZKWEBXFXBXCWEVPAWDFCVQXDWDGVRVGJVTWAAODWH
+        PXEWBXEWC $.
+    $}
+
+    ${
+      $d A n $.  $d M n $.  $d N n $.  $d n ph $.
+      $( The infimum of a decidable inhabited subset of an integer range is a
+         lower bound for that set.  (Contributed by Jim Kingdon,
+         12-Jun-2026.) $)
+      infssfzledc $p |- ( ph -> inf ( S , RR , < ) <_ A ) $=
+        ( cr clt cinf cle wa cuz cfv crab wcel cz cv wbr cfz co elfzuz ad2antrl
+        elfzle2 simprr jca32 simprl simprrl wb eluzelz adantr wsbc nfcv elrabsf
+        eleq2i bitri sylib simpld elfzel2 eluz syl2anr elfzuzb sylanbrc simprrr
+        syl mpbird jca impbida rabbidva2 eqtrid infeq1d elfzel1 eleqtrd elfzelz
+        eqid wdc zdcle dcand infssuzledc eqbrtrd ) ADKLMEUAZGNUBZBOZEFPQZRZKLMC
+        NAKDWHLADBEFGUCUDZRZWHHABWFEWIWGAWDWISZBOZWDWGSZWFOZAWLOWMWEBWKWMABWDFG
+        UEUFWKWEABWDFGUGUFAWKBUHUIAWNOZWKBWOWMGWDPQSZWKAWMWFUJWOWPWEAWMWEBUKWNW
+        DTSZGTSZWPWEULAWMWQWFFWDUMUNACWISZWRAWSBECUOZACDSZWSWTOZIXACWJSXBDWJCHU
+        RBECWIEWIUPUQUSUTVAZCFGVBVHZWDGVCVDVIWDFGVEVFAWMWEBVGVJVKVLVMZVNAWFCWHE
+        FAWSFTSXCCFGVOVHWHVRACDWHIXEVPAWDFCUCUDSZOWEBXFWQWRWEVSAWDFCVQXDWDGVTVD
+        JWAWBWC $.
     $}
   $}
 
@@ -116236,6 +116534,21 @@ $)
     JVNVRQRWEYIVRVJZYROUGVRUUFWEWFEVRWEYRVKPVCPSVRWSWJWKEFZWLEFWNVRWRUUIWLEVRWR
     RWJIFZWKEFZUUIVRWRRQEFZWJIFUUKUULGWJIVLVNVRRQWJUUHYIYSOVMVRUUJWJWKEVRWJYSVK
     NVCNVRWJWKWLYSYTUUBVGVOTVA $.
+
+  $( If a real number equals its square, it must be 0 or 1.  (Contributed by
+     Jim Kingdon, 2-Jun-2026.) $)
+  resq01 $p |- ( A e. RR -> ( ( A ^ 2 ) = A <-> ( A = 0 \/ A = 1 ) ) ) $=
+    ( cr wcel c2 cexp co wceq cc0 c1 wo clt wi wa cdiv cmul simpll recnd eqtr3d
+    wbr mpbird cc sqval syl simpr simplr gt0ap0d divmulapd dividapd olcd muls1d
+    ex cmin mulcld subeq0bd eqtr2d 0cnd 1red sublt0d lt0ap0d divmulap3d div0apd
+    resubcld orcd 0lt1 0re 1re axltwlin mp3an12 mpi mpjaodan sq0 id 3eqtr4a sq1
+    oveq1 jaoi impbid1 ) ABCZADEFZAGZAHGZAIGZJZVRHAKSZVTWCLAIKSZVRWDMZVTWCWFVTM
+    ZWBWAWGAANFZAIWGWHAGAAOFZAGWGVSWIAWGAUACZVSWIGZWGAVRWDVTPZQZAUBZUCWFVTUDRWG
+    AAAWMWMWMWGAWLVRWDVTUEUFZUGTWGAWMWOUHRUIUKVRWEMZVTWCWPVTMZWAWBWQHAIULFZNFZA
+    HWQWSAGHAWROFZGWQWTWIAULFHWQAAWQAVRWEVTPZQZXBUJWQWIAWQAAXBXBUMWQVSWIAWQWJWK
+    XBWNUCWPVTUDRUNUOWQHAWRWQUPXBWQWRWQAIXAWQUQZVBZQZWQWRXDWQWRHKSWEVRWEVTUEWQA
+    IXAXCURTUSZUTTWQWRXEXFVARVCUKVRHIKSZWDWEJZVDHBCIBCVRXGXHLVEVFHIAVGVHVIVJWAV
+    TWBWAHDEFHVSAVKAHDEVOWAVLVMWBIDEFIVSAVNAIDEVOWBVLVMVPVQ $.
 
   $( An integer is even iff its square is even.  (Contributed by Mario
      Carneiro, 12-Sep-2015.) $)
@@ -151479,7 +151792,7 @@ $)
 
     $( ` O ` is the universe, all countings where A receives ` M ` votes
        out of ` M + N ` $)
-    ballotfi.o $e |- O
+    ballotfilem.o $e |- O
       = { c e. ( ~P ( 1 ... ( M + N ) ) i^i Fin ) | ( # ` c ) = M } $.
     $( ` O ` is finite.  (Contributed by Jim Kingdon, 20-May-2026.) $)
     ballotfilemofi $p |- O e. Fin $=
@@ -151545,18 +151858,18 @@ $)
       ${
         $d ph x $.  $d C x $.  $d J x $.  $d N x $.  $d M x $.
         ballotfilemc.j $e |- ( ph -> J e. ZZ ) $.
-        $( Lemma for ballotfi .  The portion of a particular element of ` O `
-           up to a specified integer is finite.  (Contributed by Jim Kingdon,
-           8-Jun-2026.) $)
+        $( Lemma for ballotfi .  The portion of a counting representing votes
+           for A up to a specified integer is finite.  (Contributed by Jim
+           Kingdon, 8-Jun-2026.) $)
         ballotfilemcinfi $p |- ( ph -> ( ( 1 ... J ) i^i C ) e. Fin ) $=
           ( vx c1 cfz co cfn wcel cv wdc wral cin 1zzd fzfigd wa adantr elfzelz
           cz adantl ballotfilemcdc ralrimiva infidc syl2anc ) ANCOPZQRMSZBRTZMU
           NUAUNBUBQRANCAUCLUDAUPMUNAUOUNRZUEBUODEFGHIJABFRUQKUFUQUOUHRAUONCUGUI
           UJUKMUNBULUM $.
 
-        $( Lemma for ballotfi .  The portion of an integer range which is not
-           part of a particular element of ` O ` is finite.  (Contributed by
-           Jim Kingdon, 8-Jun-2026.) $)
+        $( Lemma for ballotfi .  The portion of a counting representing votes
+           for B up to a specified integer is finite.  (Contributed by Jim
+           Kingdon, 8-Jun-2026.) $)
         ballotfilemdifcfi $p |- ( ph -> ( ( 1 ... J ) \ C ) e. Fin ) $=
           ( vx c1 cfn wcel wdc 1zzd wa cz cfz co cdif wss cv wral fzfigd difssd
           elfzelz adantl adantr fzdcel syl3anc ballotfilemcdc dcand eldif dcbii
@@ -151564,11 +151877,33 @@ $)
           DUFVEOPANCARLUGAVDBUHAVHMVDAVFVDPZSZVIVFBPZURZSZQVHVJVIVLVJVFTPZNTPCT
           PZVIQVIVNAVFNCUIUJZVJRAVOVILUKVFNCULUMVJVKQVLQVJBVFDEFGHIJABFPVIKUKVP
           UNVKUSUTUOVGVMVFVDBUPUQVAVBMVDVEVCUM $.
+
+        ballotfilemc.k $e |- ( ph -> K e. ZZ ) $.
+        $d K x $.
+        $( Lemma for ballotfi .  The portion of a counting representing votes
+           for A within a specified integer range is finite.  (Contributed by
+           Jim Kingdon, 15-Jun-2026.) $)
+        ballotfilemcinfz $p |- ( ph -> ( ( J ... K ) i^i C ) e. Fin ) $=
+          ( vx cfz co cfn wcel cv wdc wral cin fzfigd wa elfzelz ballotfilemcdc
+          adantr cz adantl ralrimiva infidc syl2anc ) ACDPQZRSOTZBSUAZOUNUBUNBU
+          CRSACDMNUDAUPOUNAUOUNSZUEBUOEFGHIJKABGSUQLUHUQUOUISAUOCDUFUJUGUKOUNBU
+          LUM $.
+
+        $( Lemma for ballotfi .  The portion of a counting representing votes
+           for B within a specified integer range is finite.  (Contributed by
+           Jim Kingdon, 15-Jun-2026.) $)
+        ballotfilemdifcfz $p |- ( ph -> ( ( J ... K ) \ C ) e. Fin ) $=
+          ( vx cfn wcel wdc wa adantl cfz co cdif wss wral fzfigd difssd adantr
+          cv wn cz elfzelz ballotfilemcdc dcn syl ibar dcbid mpbid eldif sylibr
+          wb dcbii ralrimiva ssfidc syl3anc ) ACDUAUBZPQVFBUCZVFUDOUIZVGQZRZOVF
+          UEVGPQACDMNUFAVFBUGAVJOVFAVHVFQZSZVKVHBQZUJZSZRZVJVLVNRZVPVLVMRVQVLBV
+          HEFGHIJKABGQVKLUHVKVHUKQAVHCDULTUMVMUNUOVKVQVPVAAVKVNVOVKVNUPUQTURVIV
+          OVHVFBUSVBUTVCOVFVGVDVE $.
       $}
     $}
 
     $( Let ` P ` be the uniform discrete probability measure over ` O ` . $)
-    ballotfi.p $e |- P = ( x e. ( ~P O i^i Fin )
+    ballotfilem.p $e |- P = ( x e. ( ~P O i^i Fin )
       |-> ( ( # ` x ) / ( # ` O ) ) ) $.
 
     ${
@@ -151918,6 +152253,47 @@ $)
     $}
 
     ${
+      $d F c i j $.  $d M j $.  $d N j $.  $d O j $.
+      $( ` E ` is finite.  (Contributed by Jim Kingdon, 17-Jun-2026.) $)
+      ballotfilemefi $p |- E e. Fin $=
+        ( vj cc0 c1 wcel cz cv cfv clt wbr caddc co cfz wral cfn ballotfilemofi
+        crab wtru a1i 1z cn nnaddcl mp2an nnzi fzfig wa 0z simpl elfzelz adantl
+        wdc ballotfilemfelz zdclt sylancr ralrimiva weq fveq2 breq2d dcbid dcfi
+        cbvralv sylib rgen ssfirab mptru eqeltri ) DQCUAZIUAZEUBZUBZUCUDZCRFGUE
+        UFZUGUFZUHZIHUKZUIOWIUISULWHIHHUISULFGHIJKLUJUMWHVEZIHUHULWJIHWBHSZWGUI
+        SZWEVEZCWGUHZWJRTSWFTSWLUNWFFUOSGUOSWFUOSJKFGUPUQURRWFUSUQWKQPUAZWCUBZU
+        CUDZVEZPWGUHWNWKWRPWGWKWOWGSZUTZQTSWPTSWRVAWTAWBBCEWOFGHIJKLMNWKWSVBWSW
+        OTSWKWORWFVCVDVFQWPVGVHVIWRWMPCWGPCVJZWQWEXAWPWDQUCWOWAWCVKVLVMVOVPWECW
+        GVNVHVQUMVRVSVT $.
+    $}
+
+    ${
+      $d E c $.
+      $( The set of countings where A got the first vote, but does not stay
+         strictly ahead throughout, is finite.  (Contributed by Jim Kingdon,
+         17-Jun-2026.) $)
+      ballotfilemafi $p |- { c e. ( O \ E ) | 1 e. c } e. Fin $=
+        ( c1 cv wcel cfn wtru wss ballotfilemofi ballotfilemefi cc0 cfv clt wbr
+        cdif crab caddc co cfz wral ssrab3 diffifi mp3an a1i wdc ballotfilemcdc
+        eldifi 1zzd rgen ssfirab mptru ) PIQZRZIHDUHZUISRTVFIVGVGSRZTHSRDSRDHUA
+        VHFGHIJKLUBABCDEFGHIJKLMNOUCUDCQVEEUEUEUFUGCPFGUJUKULUKUMIHDOUNHDUOUPUQ
+        VFURZIVGUMTVIIVGVEVGRZVEPFGHIJKLVEHDUTVJVAUSVBUQVCVD $.
+    $}
+
+    ${
+      $d E c $.
+      $( The set of countings where B got the first vote is finite.
+         (Contributed by Jim Kingdon, 17-Jun-2026.) $)
+      ballotfilembfi $p |- { c e. ( O \ E ) | -. 1 e. c } e. Fin $=
+        ( c1 cv wcel cfn wtru wn cdif wss ballotfilemofi ballotfilemefi cc0 cfv
+        crab clt wbr caddc co cfz wral ssrab3 diffifi mp3an a1i wdc eldifi 1zzd
+        ballotfilemcdc dcn syl rgen ssfirab mptru ) PIQZRZUAZIHDUBZUHSRTVJIVKVK
+        SRZTHSRDSRDHUCVLFGHIJKLUDABCDEFGHIJKLMNOUEUFCQVHEUGUGUIUJCPFGUKULUMULUN
+        IHDOUOHDUPUQURVJUSZIVKUNTVMIVKVHVKRZVIUSVMVNVHPFGHIJKLVHHDUTVNVAVBVIVCV
+        DVEURVFVG $.
+    $}
+
+    ${
       $d i j C $.  $d c i F $.  $d j F $.  $d j M $.  $d j N $.  $d j O $.
       $( Elements of ` ( O \ E ) ` .  (Contributed by Thierry Arnoux,
          7-Dec-2016.) $)
@@ -151953,6 +152329,881 @@ $)
       STXAXCXPYDVQZXAXOXCYLWIZYAXAXOUBZYMXBXPYCRUFUGVQWIYNABCDFRGHIJKLMNOXAXOWB
       RUKQYNWCWDWEWFWJWGVSWHXMXRDRXKXFRVQZXIXQYOXHXPSTXFRXGWKVSWLWMWNXIDXKWOWPX
       DXAXLABCDEFGHIJKLMNOPWQWRWTWS $.
+
+    $( From now on, we assume that A wins the poll. $)
+    ballotth.mgtn $e |- N < M $.
+
+    $d i k E $.  $d k C $.
+    $( If A is not ahead throughout, there is a ` k ` where votes are tied.
+       (Contributed by Thierry Arnoux, 1-Dec-2016.) $)
+    ballotfilem5 $p |- ( C e. ( O \ E ) ->
+      E. k e. ( 1 ... ( M + N ) ) ( ( F ` C ) ` k ) = 0 ) $=
+      ( wcel co cdif caddc eldifi a1i nnaddcld cfv cc0 cle wbr ballotfilemodife
+      cn cv c1 cfz wrex simprbi cmin clt nnrei posdifi mpbi ballotfilemfmpn syl
+      wceq breqtrrid ballotfilemfc0 ) BJFUASZABCDEGHIUBTZHIJKLMNOPBJFUCZVGHIHUK
+      SVGLUDIUKSVGMUDUEVGBJSZDULBGUFZUFUGUHUIDUMVHUNTUOABCDFGHIJKLMNOPQUJUPVGUG
+      HIUQTZVHVKUFZURIHURUIUGVLURUIRIHIMUSHLUSUTVAVGVJVMVLVDVIABCDGHIJKLMNOPVBV
+      CVEVF $.
+
+    $( Let I be the first time a tie is reached in a given count. $)
+    ballotth.i $e |- I = ( c e. ( O \ E ) |-> inf ( { k e. ( 1 ... ( M + N ) )
+      | ( ( F ` c ) ` k ) = 0 } , RR , < ) ) $.
+
+    $d I k $.  $d c d k $.  $d c i k E $.
+    ${
+      $d d C $.  $d d E $.  $d d F $.  $d d M $.  $d d N $.  $d d O $.
+      $( Value of ` I ` for a given counting ` C ` .  (Contributed by Thierry
+         Arnoux, 1-Dec-2016.)  (Revised by AV, 6-Oct-2020.) $)
+      ballotfilemi $p |- ( C e. ( O \ E ) -> ( I ` C ) = inf (
+       { k e. ( 1 ... ( M + N ) ) | ( ( F ` C ) ` k ) = 0 } , RR , < ) ) $=
+        ( vd cv cfv cc0 wceq c1 caddc co cfz crab cr clt cinf cdif fveq2 fveq1d
+        eqeq1d rabbidv infeq1d cmpt cbvmptv eqtri wcel reex infex2g ax-mp fvmpt
+        cvv ) UABEUBZUAUBZGUCZUCZUDUEZEUFIJUGUHUIUHZUJZUKULUMZVIBGUCZUCZUDUEZEV
+        NUJZUKULUMZKFUNZHVJBUEZUKVOVTULWCVMVSEVNWCVLVRUDWCVIVKVQVJBGUOUPUQURUSH
+        LWBVILUBZGUCZUCZUDUEZEVNUJZUKULUMZUTUAWBVPUTTLUAWBWIVPWDVJUEZUKWHVOULWJ
+        WGVMEVNWJWFVLUDWJVIWEVKWDVJGUOUPUQURUSVAVBUKVHVCWAVHVCVDUKVTVHULVEVFVG
+        $.
+    $}
+
+    ${
+      $d C y z $.  $d E z $.  $d F y z $.  $d M y z $.  $d N y z $.  $d O z $.
+      $d k y z $.  $d i z $.
+      $( Properties of ` ( I `` C ) ` .  (Contributed by Thierry Arnoux,
+         12-Dec-2016.)  (Revised by AV, 6-Oct-2020.) $)
+      ballotfilemiex $p |- ( C e. ( O \ E )
+          -> ( ( I ` C ) e. ( 1 ... ( M + N ) )
+          /\ ( ( F ` C ) ` ( I ` C ) ) = 0 ) ) $=
+        ( vz vy cdif wcel cfv cv cc0 wceq c1 caddc co cfz crab clt ballotfilemi
+        wa cr cinf cn wss wdc wral wex ssrab2 fz1ssnn sstri a1i nnz adantl 1zzd
+        cz nnaddcl mp2an fzdcel syl3anc eldifi adantr ballotfilemfelz 0zd zdceq
+        syl2anc dcand fveqeq2 elrab dcbii sylibr ralrimiva ballotfilem5 nnmindc
+        nnzi wrex rabn0m eqeltrd sylib ) BKFUCUDZBHUEZEUFZBGUEZUEUGUHZEUIIJUJUK
+        ZULUKZUMZUDWPXAUDWPWRUEUGUHZUPWOWPXBUQUNURZXBABCDEFGHIJKLMNOPQRSTUOWOXB
+        USUTZUAUFZXBUDZVAZUAUSVBUBUFXBUDUBVCZXDXBUDXEWOXBXAUSWSEXAVDWTVEVFVGWOX
+        HUAUSWOXFUSUDZUPZXFXAUDZXFWRUEZUGUHZUPZVAXHXKXLXNXKXFVKUDZUIVKUDWTVKUDZ
+        XLVAXJXPWOXFVHVIZXKVJXQXKWTIUSUDJUSUDWTUSUDMNIJVLVMWJVGXFUIWTVNVOXKXMVK
+        UDUGVKUDXNVAXKABCDGXFIJKLMNOPQWOBKUDXJBKFVPVQXRVRXKVSXMUGVTWAWBXGXOWSXN
+        EXFXAWQXFUGWRWCWDWEWFWGWOWSEXAWKXIABCDEFGIJKLMNOPQRSWHWSEUBXAWLWFUAUBXB
+        WIVOWMWSXCEWPXAWQWPUGWRWCWDWN $.
+    $}
+
+    $d c E $.  $d i I $.
+    ${
+      $d c k y z $.  $d y z C $.  $d y z F $.  $d y z M $.  $d y z N $.
+      $( The first tie cannot be reached at the first pick.  (Contributed by
+         Thierry Arnoux, 12-Mar-2017.) $)
+      ballotfilemi1 $p |- ( ( C e. ( O \ E ) /\ -. 1 e. C ) ->
+                                                           ( I ` C ) =/= 1 ) $=
+        ( cdif wcel c1 wn wa cfv wceq cc0 cmin co 0re 1re resubcli clt wbr 0lt1
+        cr wb ltsub23 mp3an 0m0e0 breq1i bitr2i mpbi gtneii nesymi caddc eldifi
+        wi 1nn a1i ballotfilemfp1 simpld imp fveq2i oveq1i ballotfilemfval0 syl
+        cn 1m1e0 adantr oveq1d 3eqtrrd eqeq1d mtbii cfz ballotfilemiex ad2antrr
+        simprd fveqeq2 adantl mpbid mtand neqned ) BKFUAUBZUCBUBZUDZUEZBHUFZUCW
+        RWSUCUGZUCBGUFZUFZUHUGZWRUHUCUIUJZUHUGXCUHXDXDUHUHUCUKULUMUHUCUNUOZXDUH
+        UNUOZUPXFUHUHUIUJZUCUNUOZXEUHUQUBZUCUQUBXIXFXHURUKULUKUHUCUHUSUTXGUHUCU
+        NVAVBVCVDVEVFWRXDXBUHWRXBUCUCUIUJZXAUFZUCUIUJZUHXAUFZUCUIUJZXDWOWQXBXLU
+        GZWOWQXOVIWPXBXKUCVGUJUGVIWOABCDGUCIJKLMNOPQBKFVHZUCVSUBWOVJVKVLVMVNXLX
+        NUGWRXKXMUCUIXJUHXAVTVOVPVKWRXMUHUCUIWOXMUHUGZWQWOBKUBXQXPABCDGIJKLMNOP
+        QVQVRWAWBWCWDWEWRWTUEWSXAUFUHUGZXCWOXRWQWTWOWSUCIJVGUJWFUJUBXRABCDEFGHI
+        JKLMNOPQRSTWGWIWHWTXRXCURWRWSUCUHXAWJWKWLWMWN $.
+
+      $( The first tie cannot be reached at the first pick.  (Contributed by
+         Thierry Arnoux, 4-Apr-2017.) $)
+      ballotfilemii $p |- ( ( C e. ( O \ E ) /\ 1 e. C )
+          -> ( I ` C ) =/= 1 ) $=
+        ( cdif wcel c1 wa cfv wceq caddc co 1e0p1 1ne0 eqnetrri neii cmin wn wi
+        cc0 eldifi cn 1nn a1i ballotfilemfp1 simprd imp fveq2i ballotfilemfval0
+        1m1e0 oveq1i adantr oveq1d 3eqtrrd eqeq1d mtbii ballotfilemiex ad2antrr
+        syl cfz wb fveqeq2 adantl mpbid mtand neqned ) BKFUAUBZUCBUBZUDZBHUEZUC
+        WEWFUCUFZUCBGUEZUEZUPUFZWEUPUCUGUHZUPUFWJWKUPUCWKUPUIUJUKULWEWKWIUPWEWI
+        UCUCUMUHZWHUEZUCUGUHZUPWHUEZUCUGUHZWKWCWDWIWNUFZWCWDUNWIWMUCUMUHUFUOWDW
+        QUOWCABCDGUCIJKLMNOPQBKFUQZUCURUBWCUSUTVAVBVCWNWPUFWEWMWOUCUGWLUPWHVFVD
+        VGUTWEWOUPUCUGWCWOUPUFZWDWCBKUBWSWRABCDGIJKLMNOPQVEVOVHVIVJVKVLWEWGUDWF
+        WHUEUPUFZWJWCWTWDWGWCWFUCIJUGUHVPUHUBWTABCDEFGHIJKLMNOPQRSTVMVBVNWGWTWJ
+        VQWEWFUCUPWHVRVSVTWAWB $.
+
+      $d k w y z $.  $d w C $.  $d w F $.  $d w M $.  $d w N $.
+      ${
+        $d S j $.  $d E j $.  $d C j $.  $d j k $.  $d i j $.
+        ballotfilemscl.s $e |- S = { k e. ( 1 ... ( M + N ) )
+          | ( ( F ` C ) ` k ) = 0 } $.
+        $( The set of zeroes of ` F ` has an infimum.  (Contributed by Jim
+           Kingdon, 12-Jun-2026.) $)
+        ballotfilemscl $p |- ( C e. ( O \ E ) -> inf ( S , RR , < ) e. S ) $=
+          ( vj cdif wcel cv cfv cc0 wceq cr clt c1 caddc co cfz ballotfilem5 wa
+          cinf simpr fveqeq2 elrab2 sylibr wdc ad2antrr elfzelz ballotfilemfelz
+          cz eldifi adantl 0z zdceq sylancl infssfzcldc rexlimddv ) BLGUDUEZUCU
+          FZBHUGZUGUHUIZDUJUKURDUEUCULJKUMUNZUOUNZABCEUCGHJKLMNOPQRSTUPVOVPVTUE
+          VRUQZUQZFUFZVQUGZUHUIZVPDFULVSUBWBWAVPDUEVOWAUSWEVRFVPVTDWCVPUHVQUTUB
+          VAVBWBWCULVPUOUNUEZUQZWDVGUEUHVGUEWEVCWGABCEHWCJKLMNOPQRVOBLUEWAWFBLG
+          VHVDWFWCVGUEWBWCULVPVEVIVFVJWDUHVKVLVMVN $.
+
+        $d X i j k $.  $d S i k $.
+        $( The infimum of the set of zeroes of ` F ` is a lower bound.
+           (Contributed by Jim Kingdon, 12-Jun-2026.) $)
+        ballotfilemsle $p |- ( ( C e. ( O \ E ) /\ X e. S )
+            -> inf ( S , RR , < ) <_ X ) $=
+          ( vj cdif wcel wa cv cfv cc0 wceq cr clt cinf cle wbr c1 caddc co cfz
+          wrex ballotfilem5 adantr simplr cz wdc eldifi elfzelz ballotfilemfelz
+          ad3antrrr adantl 0z zdceq sylancl infssfzledc rexlimddv ) BLGUEUFZMDU
+          FZUGZUDUHZBHUIZUIUJUKZDULUMUNMUOUPUDUQJKURUSZUTUSZVQWBUDWDVAVRABCEUDG
+          HJKLNOPQRSTUAVBVCVSVTWDUFWBUGZUGZFUHZWAUIZUJUKZMDFUQWCUCVQVRWEVDWFWGU
+          QMUTUSUFZUGZWHVEUFUJVEUFWIVFWKABCEHWGJKLNOPQRSVQBLUFVRWEWJBLGVGVJWJWG
+          VEUFWFWGUQMVHVKVIVLWHUJVMVNVOVP $.
+      $}
+
+      ${
+        $d j l k $.  $d C j l $.  $d E j $.  $d E j $.  $d I j $.  $d i l j $.
+        $d F l $.  $d N l $.  $d M l $.
+        $( ` ( I `` C ) ` is the first tie.  (Contributed by Thierry Arnoux,
+           1-Dec-2016.)  (Revised by AV, 6-Oct-2020.) $)
+        ballotfilemimin $p |- ( C e. ( O \ E ) ->
+          -. E. k e. ( 1 ... ( ( I ` C ) - 1 ) ) ( ( F ` C ) ` k ) = 0 ) $=
+          ( vj vl cdif wcel cv cfv cc0 wceq c1 cmin co cfz wrex clt wbr elfzle2
+          wa cle adantl cz elfzelz caddc ballotfilemiex simpld elfzelzd zltlem1
+          wb syl2anr mpbird adantr ad2antrr zred cuz 1zzd zsubcld nnaddcl mp2an
+          wss cn a1i nnred syl nnzd zlem1lt syl2anc mpbid ltled eluz fzss2 crab
+          sseld fveqeq2 elrab cinf ballotfilemi cbvrabv infeq1i eqtr4di eqbrtrd
+          cr ballotfilemsle sylan2br syland impl lensymd pm2.65da nrexdv sylnib
+          ex cbvrexv ) BKFUCUDZUAUEZBGUFZUFUGUHZUAUIBHUFZUIUJUKZULUKZUMEUEZXMUF
+          UGUHZEXQUMXKXNUAXQXKXLXQUDZUQZXNXLXOUNUOZYAYBXNYAYBXLXPURUOZXTYCXKXLU
+          IXPUPUSXTXLUTUDZXOUTUDZYBYCVGXKXLUIXPVAZXKXOUIIJVBUKZXKXOUIYGULUKZUDZ
+          XOXMUFUGUHABCDEFGHIJKLMNOPQRSTVCVDZVEZXLXOVFVHVIVJYAXNUQZXOXLYLXOXKYE
+          XTXNYKVKVLYLXLYAYDXNXTYDXKYFUSVJVLXKXTXNXOXLURUOZXKXTXLYHUDZXNYMXKXQY
+          HXLXKYGXPVMUFUDZXQYHVRXKYOXPYGURUOZXKXPYGXKXPXKXOUIYKXKVNVOZVLXKYGYGV
+          SUDZXKIVSUDJVSUDYRMNIJVPVQVTZWAXKXOYGURUOZXPYGUNUOZXKYIYTYJXOUIYGUPWB
+          XKYEYGUTUDZYTUUAVGYKXKYGYSWCZXOYGWDWEWFWGXKXPUTUDUUBYOYPVGYQUUCXPYGWH
+          WEVIXPUIYGWIWBWKXKYNXNUQZYMUUDXKXLUBUEZXMUFUGUHZUBYHWJZUDZYMUUFXNUBXL
+          YHUUEXLUGXMWLWMXKUUHUQXOUUGWTUNWNZXLURXKXOUUIUHUUHXKXOXSEYHWJZWTUNWNU
+          UIABCDEFGHIJKLMNOPQRSTWOWTUUGUUJUNUUFXSUBEYHUUEXRUGXMWLWPZWQWRVJABCUU
+          GDEFGHIJKXLLMNOPQRSTUUKXAWSXBXIXCXDXEXFXGXNXSUAEXQXLXRUGXMWLXJXH $.
+      $}
+
+      $( If the first vote is for B, the vote on the first tie is for A.
+         (Contributed by Thierry Arnoux, 1-Dec-2016.) $)
+      ballotfilemic $p |- ( ( C e. ( O \ E ) /\ -. 1 e. C ) ->
+                                                            ( I ` C ) e. C ) $=
+        ( cdif c1 wn wa cfv wdc eldifi adantr cz caddc co cfz cn ballotfilemiex
+        wcel cc0 wceq simpld elfznn syl nnzd ballotfilemcdc cv cmin ad2antrr c2
+        wrex cuz wne ballotfilemi1 eluz2b3 sylanbrc uz2m1nn cle wbr elnnuz 3syl
+        biimpi eluzfz1 1nn a1i ballotfilemfp1 imp 1m1e0 fveq2i ballotfilemfval0
+        wi oveq1i oveq1d 3eqtrrd 0le1 cr wb 0re 1re mp2an mpbir eqbrtrrdi fveq2
+        suble0 breq1d rspcev syl2an2r clt 0lt1 1p0e1 simprd eqtr3d 1zzd zsubcld
+        ballotfilemfelz zcnd 1cnd subaddd mpbid eqtr3id breqtrid ballotfilemfc0
+        0cnd adantlr ballotfilemimin pm2.65da notnotrdc sylc ) BKFUAUOZUBBUOZUC
+        ZUDZBHUEZBUOZUFYJUCZUCYJYHBYIIJKLMNOYEBKUOZYGBKFUGZUHYEYIUIUOZYGYEYIYEY
+        IUBIJUJUKZULUKUOZYIUMUOZYEYPYIBGUEZUEZUPUQZABCDEFGHIJKLMNOPQRSTUNZURYIY
+        OUSUTZVAZUHVBYHYKEVCYRUEUPUQEUBYIUBVDUKZULUKZVGZYHYKUDABCDEGUUDIJKLMNOP
+        QYEYLYGYKYMVEYHUUDUMUOZYKYHYIVFVHUEUOZUUGYHYQYIUBVIUUHYEYQYGUUBUHABCDEF
+        GHIJKLMNOPQRSTVJYIVKVLYIVMUTZUHYHUBUUEUOZYKUBYRUEZUPVNVOZDVCZYRUEZUPVNV
+        OZDUUEVGYHUUGUUDUBVHUEUOZUUJUUIUUGUUPUUDVPVRUBUUDVSVQYHUULYKYHUUKUPUBVD
+        UKZUPVNYHUUKUBUBVDUKZYRUEZUBVDUKZUPYRUEZUBVDUKZUUQYEYGUUKUUTUQZYEYGUVCW
+        GYFUUKUUSUBUJUKUQWGYEABCDGUBIJKLMNOPQYMUBUMUOYEVTWAWBURWCUUTUVBUQYHUUSU
+        VAUBVDUURUPYRWDWEWHWAYHUVAUPUBVDYEUVAUPUQZYGYEYLUVDYMABCDGIJKLMNOPQWFUT
+        UHWIWJUUQUPVNVOZUPUBVNVOZWKUPWLUOUBWLUOUVEUVFWMWNWOUPUBWTWPWQWRUHUUOUUL
+        DUBUUEUUMUBUQUUNUUKUPVNUUMUBYRWSXAXBXCYEYKUPUUDYRUEZXDVOYGYEYKUDZUPUBUV
+        GXDXEUVHUBUBUPUJUKZUVGXFUVHUVGUBVDUKZUPUQUVIUVGUQUVHYSUVJUPYEYKYSUVJUQZ
+        YEYKUVKWGYJYSUVGUBUJUKUQWGYEABCDGYIIJKLMNOPQYMUUBWBURWCYEYTYKYEYPYTUUAX
+        GUHXHUVHUVGUBUPUVHUVGUVHABCDGUUDIJKLMNOPQYEYLYKYMUHUVHYIUBYEYNYKUUCUHUV
+        HXIXJXKXLUVHXMUVHXSXNXOXPXQXTXRYEUUFUCYGYKABCDEFGHIJKLMNOPQRSTYAVEYBYJY
+        CYD $.
+
+      $( If the first vote is for A, the vote on the first tie is for B.
+         (Contributed by Thierry Arnoux, 4-Apr-2017.) $)
+      ballotfilem1c $p |- ( ( C e. ( O \ E ) /\ 1 e. C ) ->
+                                                         -. ( I ` C ) e. C ) $=
+        ( cdif wcel c1 wa cfv cv cc0 wceq cmin co cfz eldifi ad2antrr cn c2 cuz
+        wne caddc ballotfilemiex simpld elfznn syl adantr ballotfilemii eluz2b3
+        wrex sylanbrc uz2m1nn cle fveq2 breq2d elnnuz biimpi eluzfz1 3syl 1e0p1
+        wbr breqtri wn wi 1nn a1i ballotfilemfp1 simprd imp 1m1e0 fveq2i oveq1i
+        0le1 ballotfilemfval0 oveq1d 3eqtrrd breqtrid rspcedvdw clt cneg df-neg
+        eqtr3d 0cnd 1cnd nnzd 1zzd zsubcld ballotfilemfelz zcnd subadd2d mpbird
+        cz neg1lt0 eqbrtrrdi adantlr ballotfilemfcc ballotfilemimin pm2.65da
+        eqtrid ) BKFUAUBZUCBUBZUDZBHUEZBUBZEUFBGUEZUEUGUHEUCXSUCUIUJZUKUJZVFZXR
+        XTUDZABCDEGYBIJKLMNOPQXPBKUBZXQXTBKFULZUMXRYBUNUBZXTXRXSUOUPUEUBZYHXRXS
+        UNUBZXSUCUQYIXPYJXQXPXSUCIJURUJZUKUJUBZYJXPYLXSYAUEZUGUHZABCDEFGHIJKLMN
+        OPQRSTUSZUTXSYKVAVBZVCABCDEFGHIJKLMNOPQRSTVDXSVEVGXSVHVBZVCYEUGDUFZYAUE
+        ZVIVQUGUCYAUEZVIVQZDUCYCYRUCUHYSYTUGVIYRUCYAVJVKXRUCYCUBZXTXRYHYBUCUPUE
+        UBZUUBYQYHUUCYBVLVMUCYBVNVOVCXRUUAXTXRUGUGUCURUJZYTVIUGUCUUDVIWIVPVRXRY
+        TUCUCUIUJZYAUEZUCURUJZUGYAUEZUCURUJZUUDXPXQYTUUGUHZXPXQVSYTUUFUCUIUJUHV
+        TXQUUJVTXPABCDGUCIJKLMNOPQYGUCUNUBXPWAWBWCWDWEUUGUUIUHXRUUFUUHUCURUUEUG
+        YAWFWGWHWBXRUUHUGUCURXPUUHUGUHZXQXPYFUUKYGABCDGIJKLMNOPQWJVBVCWKWLWMVCW
+        NXPXTYBYAUEZUGWOVQXQXPXTUDZUULUCWPZUGWOUUMUUNUGUCUIUJZUULUCWQUUMUUOUULU
+        HUULUCURUJZUGUHUUMYMUUPUGXPXTYMUUPUHZXPXTVSYMUULUCUIUJUHVTXTUUQVTXPABCD
+        GXSIJKLMNOPQYGYPWCWDWEXPYNXTXPYLYNYOWDVCWRUUMUGUCUULUUMWSUUMWTUUMUULUUM
+        ABCDGYBIJKLMNOPQXPYFXTYGVCUUMXSUCXPXSXHUBXTXPXSYPXAVCUUMXBXCXDXEXFXGXOX
+        IXJXKXLXPYDVSXQXTABCDEFGHIJKLMNOPQRSTXMUMXN $.
+    $}
+
+    $( For a given count ` c ` , ` S ` is the operation reflecting the index
+       in a count, before a tie is reached. $)
+    ballotth.s $e |- S = ( c e. ( O \ E ) |-> ( i e. ( 1 ... ( M + N ) ) |->
+                   if ( i <_ ( I ` c ) , ( ( ( I ` c ) + 1 ) - i ) , i ) ) ) $.
+
+    $d c I $.
+    ${
+      $d c d i k M $.  $d c d i k N $.  $d d E $.  $d d C $.  $d d I $.
+      $d d O $.
+      $( Value of ` S ` .  (Contributed by Thierry Arnoux, 12-Apr-2017.) $)
+      ballotfilemsval $p |- ( C e. ( O \ E ) ->
+        ( S ` C ) = ( i e. ( 1 ... ( M + N ) ) |->
+                   if ( i <_ ( I ` C ) , ( ( ( I ` C ) + 1 ) - i ) , i ) ) ) $=
+        ( vd c1 caddc co cfz cv cfv cle wbr cmin cif cmpt cdif wceq wcel fveq2d
+        wa simpl breq2d oveq1d ifbieq1d mpteq2dva cbvmptv eqtri cfn cz 1z mp2an
+        cn nnaddcl nnzi fzfig elexi mptex fvmpt ) UCBEUDJKUEUFZUGUFZEUHZUCUHZIU
+        IZUJUKZWBUDUEUFZVTULUFZVTUMZUNZEVSVTBIUIZUJUKZWHUDUEUFZVTULUFZVTUMZUNLG
+        UOZDWABUPZEVSWFWLWNVTVSUQZUSZWCWIWEWKVTWPWBWHVTUJWPWABIWNWOUTURZVAWPWDW
+        JVTULWPWBWHUDUEWQVBVBVCVDDMWMEVSVTMUHZIUIZUJUKZWSUDUEUFZVTULUFZVTUMZUNZ
+        UNUCWMWGUNUBMUCWMXDWGWRWAUPZEVSXCWFXEWOUSZWTWCXBWEVTXFWSWBVTUJXFWRWAIXE
+        WOUTURZVAXFXAWDVTULXFWSWBUDUEXGVBVBVCVDVEVFEVSWLVSVGUDVHUQVRVHUQVSVGUQV
+        IVRJVKUQKVKUQVRVKUQNOJKVLVJVMUDVRVNVJVOVPVQ $.
+
+      $d i j $.  $d j I $.  $d j C $.  $d j E $.  $d j F $.  $d j J $.
+      $d j F $.  $d j M $.  $d j N $.  $d j O $.
+      $( Value of ` S ` evaluated at ` J ` for a given counting ` C ` .
+         (Contributed by Thierry Arnoux, 12-Apr-2017.) $)
+      ballotfilemsv $p |- ( ( C e. ( O \ E ) /\ J e. ( 1 ... ( M + N ) ) ) ->
+        ( ( S ` C ) ` J ) =
+                     if ( J <_ ( I ` C ) , ( ( ( I ` C ) + 1 ) - J ) , J ) ) $=
+        ( vj cdif wcel c1 caddc co cfz wa cv cfv cle wbr cmin cif cvv cmpt wceq
+        ballotfilemsval breq1 oveq2 ifbieq12d eqtrdi adantr simpr breq1d oveq2d
+        id cbvmptv adantlr cc0 ballotfilemiex simpld elfzelzd ad2antrr peano2zd
+        cz zsubcld elexd wn elex ad2antlr wdc zdcle syl2anc ifcldadc fvmptd ) B
+        MGUEUFZJUGKLUHUIZUJUIZUFZUKZUDJUDULZBIUMZUNUOZWPUGUHUIZWOUPUIZWOUQZJWPU
+        NUOZWRJUPUIZJUQZWLBDUMZURWJXDUDWLWTUSZUTWMWJXDEWLEULZWPUNUOZWRXFUPUIZXF
+        UQZUSXEABCDEFGHIKLMNOPQRSTUAUBUCVAEUDWLXIWTXFWOUTZXGWQXHXFWSWOXFWOWPUNV
+        BXFWOWRUPVCXJVJVDVKVEVFWJWOJUTZWTXCUTWMWJXKUKZWQXAWSWOXBJXLWOJWPUNWJXKV
+        GZVHXLWOJWRUPXMVIXMVDVLWJWMVGZWNXAXBJURWNXAUKZXBVSXOWRJXOWPWJWPVSUFZWMX
+        AWJWPUGWKWJWPWLUFWPBHUMUMVMUTABCEFGHIKLMNOPQRSTUAUBVNVOVPZVQVRWNJVSUFZX
+        AWNJUGWKXNVPZVFVTWAWMJURUFWJXAWBJWLWCWDWNXRXPXAWEXSWJXPWMXQVFJWPWFWGWHW
+        I $.
+    $}
+
+    $( ` S ` maps values less than ` ( I `` C ) ` to values greater than 1.
+       (Contributed by Thierry Arnoux, 28-Apr-2017.) $)
+    ballotfilemsgt1 $p |- ( ( C e. ( O \ E ) /\ J e. ( 1 ... ( M + N ) )
+      /\ J < ( I ` C ) ) -> 1 < ( ( S ` C ) ` J ) ) $=
+      ( cdif wcel c1 caddc co cfz cfv clt wbr w3a cmin cz elfzelz 3ad2ant2 zred
+      cc0 wceq ballotfilemiex simpld elfzelzd 3ad2ant1 1red readdcld simp3 zcnd
+      1cnd pncand breqtrrd ltsub13d cle cif ballotfilemsv 3adant3 ltled iftrued
+      eqtrd ) BMGUDUEZJUFKLUGUHZUIUHZUEZJBIUJZUKULZUMZUFWDUFUGUHZJUNUHZJBDUJUJZ
+      UKWFJWGUFWFJWCVTJUOUEWEJUFWAUPUQURZWFWDUFWFWDVTWCWDUOUEWEVTWDUFWAVTWDWBUE
+      WDBHUJUJUSUTABCEFGHIKLMNOPQRSTUAUBVAVBVCVDZURZWFVEZVFWMWFJWDWGUFUNUHUKVTW
+      CWEVGZWFWDUFWFWDWKVHWFVIVJVKVLWFWIJWDVMULZWHJVNZWHVTWCWIWPUTWEABCDEFGHIJK
+      LMNOPQRSTUAUBUCVOVPWFWOWHJWFJWDWJWLWNVQVRVSVK $.
+
+    $( Domain of ` S ` for a given counting ` C ` .  (Contributed by Thierry
+       Arnoux, 12-Apr-2017.) $)
+    ballotfilemsdom $p |- ( ( C e. ( O \ E ) /\ J e. ( 1 ... ( M + N ) ) ) ->
+      ( ( S ` C ) ` J ) e. ( 1 ... ( M + N ) ) ) $=
+      ( cdif wcel c1 caddc co cfz wa cfv cle wbr cmin cif ballotfilemsv wss cc0
+      cz wceq ballotfilemiex simpld elfzelzd ad2antrr cn nnaddcl mp2an nnzi a1i
+      elfzle2 syl w3a cuz eluz2 fzss2 sylbir syl3anc simplr elfzle1 simpr elfzd
+      1zzd fzrev3i wb 1cnd zcnd addcomd oveq1d eleq1d mpbid sseldd wn wdc zdcle
+      elfzelz syl2anr ifcldadc eqeltrd ) BMGUDUEZJUFKLUGUHZUIUHZUEZUJZJBDUKUKJB
+      IUKZULUMZXDUFUGUHZJUNUHZJUOXAABCDEFGHIJKLMNOPQRSTUAUBUCUPXCXEXGJXAXCXEUJZ
+      UFXDUIUHZXAXGXHXDUSUEZWTUSUEZXDWTULUMZXIXAUQZWSXJXBXEWSXDUFWTWSXDXAUEZXDB
+      HUKUKURUTABCEFGHIKLMNOPQRSTUAUBVAVBZVCZVDZXKXHWTKVEUELVEUEWTVEUEOPKLVFVGV
+      HVIXHXNXLWSXNXBXEXOVDXDUFWTVJVKXJXKXLVLWTXDVMUKUEXMXDWTVNXDUFWTVOVPVQXHUF
+      XDUGUHZJUNUHZXIUEZXGXIUEZXHJXIUEXTXHJUFXDXHWBXQXHJUFWTWSXBXEVRZVCXHXBUFJU
+      LUMYBJUFWTVSVKXCXEVTWAJUFXDWCVKWSXTYAWDXBXEWSXSXGXIWSXRXFJUNWSUFXDWSWEWSX
+      DXPWFWGWHWIVDWJWKWSXBXEWLVRXBJUSUEXJXEWMWSJUFWTWOXPJXDWNWPWQWR $.
+
+    $( The range ` ( 1 ... ( I `` C ) ) ` is invariant under ` ( S `` C ) ` .
+       (Contributed by Thierry Arnoux, 28-Apr-2017.) $)
+    ballotfilemsel1i $p |- ( ( C e. ( O \ E ) /\ J e. ( 1 ... ( I ` C ) ) ) ->
+      ( ( S ` C ) ` J ) e. ( 1 ... ( I ` C ) ) ) $=
+      ( cdif wcel c1 cfv cfz co wa 1zzd cz caddc cc0 wceq ballotfilemiex simpld
+      elfzelzd adantr cuz wss cle wbr cn nnaddcl nnzi a1i elfzle2 syl syl3anbrc
+      mp2an eluz2 fzss2 sselda ballotfilemsdom syldan cmin adantl zred readdcld
+      elfzelz 1red zcnd 1cnd pncand breqtrrd lesubd ballotfilemsv iftrued eqtrd
+      cif elfznn ltesubnnd eqbrtrd elfzd ) BMGUDUEZJUFBIUGZUHUIZUEZUJZJBDUGUGZU
+      FWQWTUKWPWQULUEZWSWPWQUFKLUMUIZWPWQUFXCUHUIZUEZWQBHUGUGUNUOABCEFGHIKLMNOP
+      QRSTUAUBUPUQZURZUSZWTXAUFXCWPWSJXDUEZXAXDUEWPWRXDJWPXCWQUTUGUEZWRXDVAWPXB
+      XCULUEZWQXCVBVCZXJXGXKWPXCKVDUELVDUEXCVDUEOPKLVEVKVFVGWPXEXLXFWQUFXCVHVIW
+      QXCVLVJWQUFXCVMVIVNZABCDEFGHIJKLMNOPQRSTUAUBUCVOVPURWTUFWQUFUMUIZJVQUIZXA
+      VBWTJXNUFWTJWSJULUEWPJUFWQWAVRVSWTWQUFWTWQXHVSWTWBZVTXPWTJWQXNUFVQUIVBWSJ
+      WQVBVCZWPJUFWQVHVRZWTWQUFWTWQXHWCWTWDWEWFWGWTXAXQXOJWKZXOWPWSXIXAXSUOXMAB
+      CDEFGHIJKLMNOPQRSTUAUBUCWHVPWTXQXOJXRWIWJZWFWTXAXOWQVBXTWPWSXIXOWQVBVCXMW
+      PXIUJWQJWPXBXIXGUSXIJVDUEWPJXCWLVRWMVPWNWO $.
+
+    $d i j $.  $d j I $.  $d j C $.  $d j E $.  $d j F $.  $d j J $.  $d j F $.
+    $d j M $.  $d j N $.  $d j O $.
+    $( The defined ` S ` is a bijection, and an involution.  (Contributed by
+       Thierry Arnoux, 14-Apr-2017.) $)
+    ballotfilemsf1o $p |- ( C e. ( O \ E ) ->
+           ( ( S ` C ) : ( 1 ... ( M + N ) ) -1-1-onto-> ( 1 ... ( M + N ) ) /\
+          `' ( S ` C ) = ( S ` C ) ) ) $=
+      ( vj cdif wcel c1 caddc co cfz cfv wf1o ccnv wceq cle wbr ballotfilemsval
+      cv cmin cif cmpt wa ballotfilemsv ballotfilemsdom eqeltrrd cz oveq2 breq1
+      cvv id cc cc0 ballotfilemiex simpld elfzelz peano2zd zcnd adantr ad2antll
+      syl nncand eqcomd cn elfznn ltesubnnd vex a1i zsubcld wdc zdcle ifeqeqxdc
+      syl2anc ad2antrl simplrl impbida f1o3d ifbieq12d cbvmptv simprd 3eqtr4rd
+      jca ) BLGUDUEZUFJKUGUHZUIUHZXCBDUJZUKZXDULZXDUMXAXEXFUCXCUCUQZBIUJZUNUOZX
+      HUFUGUHZXGURUHZXGUSZUTZUMZXAEUCXCXCEUQZXHUNUOZXJXOURUHZXOUSZXLXDABCDEFGHI
+      JKLMNOPQRSTUAUBUPZXAXOXCUEZVAXOXDUJXRXCABCDEFGHIXOJKLMNOPQRSTUAUBVBABCDEF
+      GHIXOJKLMNOPQRSTUAUBVCVDXAXGXCUEZVAXGXDUJXLXCABCDEFGHIXGJKLMNOPQRSTUAUBVB
+      ABCDEFGHIXGJKLMNOPQRSTUAUBVCVDXAXTYAVAZVAZXOXLUMXGXRUMYCXIXPXKXHUNUOZEXQX
+      OXJXKURUHZVHVEXKXGUCXOXKXJURVFXOXGUMZVIZXOXKXHUNVGXOXGXHUNVGZYCYEXGYCXJXG
+      XAXJVJUEYBXAXJXAXHXCUEZXJVEUEZXAYIXHBHUJUJVKUMABCEFGHIJKLMNOPQRSTUAVLVMZY
+      IXHXHUFXBVNZVOVSZVPVQZYAXGVJUEXAXTYAXGXGUFXBVNZVPVRVTWAYCYDXIYCXHXGXAXHVE
+      UEZYBXAYIYPYKYLVSVQZYAXGWBUEXAXTXGXBWCVRWDVQXGVHUEYCUCWEWFYCXJXGXAYJYBYMV
+      QZYAXGVEUEZXAXTYOVRZWGYCYSYPXIWHYTYQXGXHWIWKWJYCXPXIXQXHUNUOUCXKXGXJXQURU
+      HZVHVEXQXOEXGXQXJURVFXGXOUMVIXGXQXHUNVGXGXOXHUNVGYCUUAXOYCXJXOYNXTXOVJUEX
+      AYAXTXOXOUFXBVNZVPWLVTWAYCXPVAZXHXOYCYPXPYQVQUUCXTXOWBUEXAXTYAXPWMXOXBWCV
+      SWDXOVHUEYCEWEWFYCXJXOYRXTXOVEUEZXAYAUUBWLZWGYCUUDYPXPWHUUEYQXOXHWIWKWJWN
+      WOZVMXAEXCXRUTZXMXDXFUUGXMUMXAEUCXCXRXLYFXPXIXQXOXKXGYHXOXGXJURVFYGWPWQWF
+      XSXAXEXNUUFWRWSWT $.
+
+    $( The image by ` S ` of the first tie pick is the first pick.
+       (Contributed by Thierry Arnoux, 14-Apr-2017.) $)
+    ballotfilemsi $p |- ( C e. ( O \ E ) -> ( ( S ` C ) ` ( I ` C ) ) = 1 ) $=
+      ( cdif wcel cfv cle wbr caddc cmin cif cfz wceq cc0 ballotfilemiex simpld
+      c1 co ballotfilemsv mpdan cr elfzelz zred syl leidd iftrued recnd pncan2d
+      1cnd 3eqtrd ) BLGUCUDZBIUEZBDUEUEZVKVKUFUGZVKUPUHUQVKUIUQZVKUJZVNUPVJVKUP
+      JKUHUQZUKUQUDZVLVOULVJVQVKBHUEUEUMULABCEFGHIJKLMNOPQRSTUAUNUOZABCDEFGHIVK
+      JKLMNOPQRSTUAUBURUSVJVMVNVKVJVKVJVQVKUTUDVRVQVKVKUPVPVAVBVCZVDVEVJVKUPVJV
+      KVSVFVJVHVGVI $.
+
+    $d j k $.  $d j S $.  $d k J $.  $d k S $.
+    $( The image by ` S ` of an interval before the first pick.  (Contributed
+       by Thierry Arnoux, 5-May-2017.) $)
+    ballotfilemsima $p |- ( ( C e. ( O \ E ) /\ J e. ( 1 ... ( I ` C ) ) ) ->
+         ( ( S ` C ) " ( 1 ... J ) ) = ( ( ( S ` C ) ` J ) ... ( I ` C ) ) ) $=
+      ( vj cdif wcel c1 cfv cfz co wa cima cz cv wss caddc imassrn wf1o wf ccnv
+      crn wceq ballotfilemsf1o simpld f1of frn sstrid fzssuz uzssz sstri sstrdi
+      3syl cuz adantr sselda elfzelz adantl wb wfn f1ofn syl cc0 ballotfilemiex
+      wrex elfzuz3 uztrn syl2anc fzss2 fvelimab cmin cle 1zzd nnzi zaddcl mp2an
+      wbr cif a1i elfzle1 elfzle2 letrd elfzd ballotfilemsv syldan simpr iftrue
+      zred oveq1d eleq2d ad2antrr zcnd pncand oveq2d ad2antlr peano2zd syl22anc
+      eqtrd 1cnd fzrev 3bitr2d risset cc adantlr addcld simplr subsub23 syl3anc
+      eqcom bitr3id simpll eqeq1d bitr4d rexbidva 3bitrd eqrdav ) BMGUEUFZJUGBI
+      UHZUIUJUFZUKZFBDUHZUGJUIUJZULZJYTUHZYQUIUJZUMYSUUBUMFUNZYPUUBUMUOYRYPUUBU
+      GKLUPUJZUIUJZUMYPUUBYTVAZUUGYTUUAUQYPUUGUUGYTURZUUGUUGYTUSUUHUUGUOYPUUIYT
+      UTYTVBABCDEFGHIKLMNOPQRSTUAUBUCVCVDZUUGUUGYTVEUUGUUGYTVFVLVGUUGUGVMUHUMUG
+      UUFVHUGVIVJVKVNVOUUEUUDUFZUUEUMUFZYSUUEUUCYQVPVQYSUULUKZUUEUUBUFZUDUNZYTU
+      HZUUEVBZUDUUAWDZUUKYSUUNUURVRZUULYSYTUUGVSZUUAUUGUOZUUSYPUUTYRYPUUIUUTUUJ
+      UUGUUGYTVTWAVNYSUUFJVMUHZUFZUVAYSUUFYQVMUHUFZYQUVBUFZUVCYSYQUUGUFZUVDYPUV
+      FYRYPUVFYQBHUHUHWBVBABCEFGHIKLMNOPQRSTUAUBWCVDZVNYQUGUUFWEWAYRUVEYPJUGYQW
+      EVQYQUUFJWFWGJUGUUFWHWAZUDUUGUUAUUEYTWIWGVNUUMUUKYQUGUPUJZUUEWJUJZUUAUFZU
+      UOUVJVBZUDUUAWDZUURUUMUUKUUEUVIJWJUJZYQUIUJZUFZUUEUVNUVIUGWJUJZUIUJZUFZUV
+      KYSUUKUVPVRUULYSUUDUVOUUEYSUUCUVNYQUIYSUUCJYQWKWPZUVNJWQZUVNYPYRJUUGUFUUC
+      UWAVBYSJUGUUFYSWLUUFUMUFZYSKUMUFLUMUFUWBKOWMLPWMKLWNWOWRZYRJUMUFZYPJUGYQV
+      PZVQZYRUGJWKWPYPJUGYQWSVQYSJYQUUFYSJUWFXGYSYQYPYQUMUFZYRYPUVFUWGUVGYQUGUU
+      FVPWAZVNXGYSUUFUWCXGYRUVTYPJUGYQWTZVQYPYQUUFWKWPZYRYPUVFUWJUVGYQUGUUFWTWA
+      VNXAXBABCDEFGHIJKLMNOPQRSTUAUBUCXCXDYSYRUVTUWAUVNVBYPYRXEUWIUVTUVNJXFVLXQ
+      XHXIVNUUMUVRUVOUUEUUMUVQYQUVNUIUUMYQUGUUMYQYPUWGYRUULUWHXJZXKUUMXRXLXMXIU
+      UMUGUMUFUWDUVIUMUFUULUVSUVKVRUUMWLYRUWDYPUULUWEXNUUMYQUWKXOYSUULXEUVIUUEU
+      GJXSXPXTUVKUVMVRUUMUDUVJUUAYAWRUUMUVLUUQUDUUAUUMUUOUUAUFZUKZUVLUVIUUOWJUJ
+      ZUUEVBZUUQUVLUVJUUOVBZUWMUWOUVJUUOYHUWMUVIYBUFUUEYBUFUUOYBUFUWPUWOVRUWMYQ
+      UGUWMYQYSUWLUWGUULYPUWGYRUWLUWHXJZYCXKUWMXRYDUWMUUEYSUULUWLYEXKUWMUUOUWLU
+      UOUMUFZUUMUUOUGJVPZVQXKUVIUUEUUOYFYGYIYSUWLUUQUWOVRUULYSUWLUKZUUPUWNUUEUW
+      TUUPUUOYQWKWPZUWNUUOWQZUWNUWTYPUUOUUGUFUUPUXBVBYPYRUWLYJYSUUAUUGUUOUVHVOA
+      BCDEFGHIUUOKLMNOPQRSTUAUBUCXCWGUWTUXAUXBUWNVBUWTUUOJYQUWTUUOUWLUWRYSUWSVQ
+      XGUWTJYRUWDYPUWLUWEXNXGUWTYQUWQXGUWLUUOJWKWPYSUUOUGJWTVQYRUVTYPUWLUWIXNXA
+      UXAUWNUUOXFWAXQYKYCYLYMYNYLYO $.
+
+    $d i k D $.
+    $( If two countings share the same first tie, they also have the same swap
+       function.  (Contributed by Thierry Arnoux, 18-Apr-2017.) $)
+    ballotfilemieq $p |- ( ( C e. ( O \ E ) /\ D e. ( O \ E ) /\
+      ( I ` C ) = ( I ` D ) ) -> ( S ` C ) = ( S ` D ) ) $=
+      ( cdif wcel cfv wceq w3a c1 caddc co cfz cv cle wbr cmin cif simpl breq2d
+      cmpt oveq1d ifbieq1d mpteq2dva 3ad2ant3 ballotfilemsval 3ad2ant1 3ad2ant2
+      wa 3eqtr4d ) BMHUDZUEZCVJUEZBJUFZCJUFZUGZUHFUIKLUJUKULUKZFUMZVMUNUOZVMUIU
+      JUKZVQUPUKZVQUQZUTZFVPVQVNUNUOZVNUIUJUKZVQUPUKZVQUQZUTZBEUFZCEUFZVOVKWBWG
+      UGVLVOFVPWAWFVOVQVPUEZVHZVRWCVTWEVQWKVMVNVQUNVOWJURZUSWKVSWDVQUPWKVMVNUIU
+      JWLVAVAVBVCVDVKVLWHWBUGVOABDEFGHIJKLMNOPQRSTUAUBUCVEVFVLVKWIWGUGVOACDEFGH
+      IJKLMNOPQRSTUAUBUCVEVGVI $.
+
+    $( R is the operation reflecting the picks in a count, before a tie is
+       reached. $)
+    ballotth.r $e |- R = ( c e. ( O \ E ) |-> ( ( S ` c ) " c ) ) $.
+
+    $d i S $.  $d c S $.
+    ${
+      $d d E $.  $d d O $.  $d d C $.  $d d S $.  $d c d i I $.
+      $( Value of ` R ` .  (Contributed by Thierry Arnoux, 14-Apr-2017.) $)
+      ballotfilemrval $p |- ( C e. ( O \ E )
+            -> ( R ` C ) = ( ( S ` C ) " C ) ) $=
+        ( vd cdif wcel cv cfv cima cmpt wceq fveq2 id imaeq12d cbvmptv eqtri c1
+        cvv caddc co cfz cle wbr cif ballotfilemsval cfn cz 1z cn nnaddcl mp2an
+        cmin nnzi fzfig elexi mptex eqeltrdi imaexg syl fvmptd3 ) BMHUFZUGZUEBU
+        EUHZEUIZWDUJZBEUIZBUJZWBDUSDNWBNUHZEUIZWIUJZUKUEWBWFUKUDNUEWBWKWFWIWDUL
+        ZWJWEWIWDWIWDEUMWLUNUOUPUQWDBULZWEWGWDBWDBEUMWMUNUOWCUNWCWGUSUGWHUSUGWC
+        WGFURKLUTVAZVBVAZFUHZBJUIZVCVDWQURUTVAWPVMVAWPVEZUKUSABCEFGHIJKLMNOPQRS
+        TUAUBUCVFFWOWRWOVGURVHUGWNVHUGWOVGUGVIWNKVJUGLVJUGWNVJUGOPKLVKVLVNURWNV
+        OVLVPVQVRWGBUSVSVTWA $.
+    $}
+
+    $( The image of ` ( R `` C ) ` by ` ( S `` C ) ` .  (Contributed by Thierry
+       Arnoux, 21-Apr-2017.) $)
+    ballotfilemscr $p |- ( C e. ( O \ E ) -> ( ( S ` C ) " ( R ` C ) ) = C ) $=
+      ( cdif wcel cima ccnv ballotfilemrval imaeq2d c1 caddc co ballotfilemsf1o
+      cfv cfz wf1o wceq simprd imaeq1d wf1 wss simpld syl eldifi ballotfilemelo
+      f1of1 cfn chash simp1bi f1imacnv syl2anc 3eqtr2d ) BMHUEUFZBEUOZBDUOZUGVO
+      VOBUGZUGVOUHZVQUGZBVNVPVQVOABCDEFGHIJKLMNOPQRSTUAUBUCUDUIUJVNVRVOVQVNUKKL
+      ULUMUPUMZVTVOUQZVRVOURZABCEFGHIJKLMNOPQRSTUAUBUCUNZUSUTVNVTVTVOVAZBVTVBZV
+      SBURVNWAWDVNWAWBWCVCVTVTVOVGVDVNBMUFZWEBMHVEWFWEBVHUFBVIUOKURBKLMNOPQVFVJ
+      VDVTVTBVOVKVLVM $.
+
+    $( Value of ` R ` evaluated at ` J ` .  (Contributed by Thierry Arnoux,
+       17-Apr-2017.) $)
+    ballotfilemrv $p |- ( ( C e. ( O \ E ) /\ J e. ( 1 ... ( M + N ) ) ) ->
+      ( J e. ( R ` C ) <->
+              if ( J <_ ( I ` C ) , ( ( ( I ` C ) + 1 ) - J ) , J ) e. C ) ) $=
+      ( cdif wcel c1 caddc co cfz wa cfv ccnv cima cle wbr cmin cif wfun cdm wb
+      wf1o simpl wceq ballotfilemsf1o simpld 3syl simpr f1odm eleqtrrd fvimacnv
+      f1ofun syl2anc ballotfilemsv eleq1d simprd imaeq1d ballotfilemrval eqtr4d
+      eleq2d syl 3bitr3rd ) BNHUFUGZKUHLMUIUJUKUJZUGZULZKBEUMZUMZBUGZKWHUNZBUOZ
+      UGZKBJUMZUPUQWNUHUIUJKURUJKUSZBUGKBDUMZUGZWGWHUTZKWHVAZUGWJWMVBWGWDWEWEWH
+      VCZWRWDWFVDZWDWTWKWHVEZABCEFGHIJLMNOPQRSTUAUBUCUDVFZVGZWEWEWHVMVHWGKWEWSW
+      DWFVIWGWDWTWSWEVEXAXDWEWEWHVJVHVKKBWHVLVNWGWIWOBABCEFGHIJKLMNOPQRSTUAUBUC
+      UDVOVPWGWDWMWQVBXAWDWLWPKWDWLWHBUOWPWDWKWHBWDWTXBXCVQVRABCDEFGHIJLMNOPQRS
+      TUAUBUCUDUEVSVTWAWBWC $.
+
+    $( Value of ` R ` before the tie.  (Contributed by Thierry Arnoux,
+       11-Apr-2017.) $)
+    ballotfilemrv1 $p |-
+          ( ( C e. ( O \ E ) /\ J e. ( 1 ... ( M + N ) ) /\ J <_ ( I ` C ) ) ->
+                     ( J e. ( R ` C ) <-> ( ( ( I ` C ) + 1 ) - J ) e. C ) ) $=
+      ( cdif wcel c1 caddc co cfz cfv cle wbr w3a cmin wb ballotfilemrv 3adant3
+      cif iftrue eleq1d 3ad2ant3 bitrd ) BNHUFUGZKUHLMUIUJUKUJUGZKBJULZUMUNZUOK
+      BDULUGZVHVGUHUIUJKUPUJZKUTZBUGZVJBUGZVEVFVIVLUQVHABCDEFGHIJKLMNOPQRSTUAUB
+      UCUDUEURUSVHVEVLVMUQVFVHVKVJBVHVJKVAVBVCVD $.
+
+    $( Value of ` R ` after the tie.  (Contributed by Thierry Arnoux,
+       11-Apr-2017.) $)
+    ballotfilemrv2 $p |- ( ( C e. ( O \ E ) /\ J e. ( 1 ... ( M + N ) ) /\
+      ( I ` C ) < J ) -> ( J e. ( R ` C ) <-> J e. C ) ) $=
+      ( cdif wcel c1 caddc co cfz cfv clt wbr w3a cle cmin cif wb ballotfilemrv
+      3adant3 wn cz cc0 ballotfilemiex simpld elfzelzd wa simpr zltnle syl2an2r
+      wceq biimp3a iffalsed eleq1d bitrd ) BNHUFUGZKUHLMUIUJZUKUJZUGZBJULZKUMUN
+      ZUOZKBDULUGZKWAUPUNZWAUHUIUJKUQUJZKURZBUGZKBUGVQVTWDWHUSWBABCDEFGHIJKLMNO
+      PQRSTUAUBUCUDUEUTVAWCWGKBWCWEWFKVQVTWBWEVBZVQWAVCUGVTKVCUGWBWIUSVQWAUHVRV
+      QWAVSUGWABIULULVDVLABCFGHIJLMNOPQRSTUAUBUCVEVFVGVQVTVHKUHVRVQVTVIVGWAKVJV
+      KVMVNVOVP $.
+
+    $( Range of ` R ` is included in ` O ` .  (Contributed by Thierry Arnoux,
+       17-Apr-2017.) $)
+    ballotfilemro $p |- ( C e. ( O \ E ) -> ( R ` C ) e. O ) $=
+      ( cdif wcel cfv c1 caddc co cfz wss cfn wceq cima ballotfilemrval imassrn
+      chash crn wf1o wfo ccnv ballotfilemsf1o simpld forn 3syl sseqtrid eqsstrd
+      f1ofo cen wbr w3a eldifi ballotfilemelo sylib simp2d wf1 f1of1 syl simp1d
+      id f1imaeng syl3anc eqbrtrd enfii wb hashen mpbird simp3d eqtrd syl3anbrc
+      syl2anc ) BMHUEZUFZBDUGZUHKLUIUJUKUJZULWOUMUFZWOURUGZKUNWOMUFWNWOBEUGZBUO
+      ZWPABCDEFGHIJKLMNOPQRSTUAUBUCUDUPZWNWSUSZWTWPWSBUQWNWPWPWSUTZWPWPWSVAXBWP
+      UNWNXCWSVBWSUNABCEFGHIJKLMNOPQRSTUAUBUCVCVDZWPWPWSVIWPWPWSVEVFVGVHWNBUMUF
+      ZWOBVJVKZWQWNBWPULZXEBURUGZKUNZWNBMUFXGXEXIVLBMHVMBKLMNOPQVNVOZVPZWNWOWTB
+      VJXAWNWPWPWSVQZXGWNWTBVJVKWNXCXLXDWPWPWSVRVSWNXGXEXIXJVTWNWAWPWPBWSWMWBWC
+      WDZWOBWEWLZWNWRXHKWNWRXHUNZXFXMWNWQXEXOXFWFXNXKWOBWGWLWHWNXGXEXIXJWIWJWOK
+      LMNOPQVNWK $.
+
+    $d i R $.
+    ${
+      $d u v C $.  $d u v I $.  $d u v J $.  $d u v R $.  $d u v S $.
+      $d u v U $.  $d u v V $.
+      $( ` .^ ` is the difference of counts of elements of ` U ` in / out of
+         set ` V ` . $)
+      ballotlemg $e |- .^ = ( u e. O , v e. Fin |->
+                               ( ( # ` ( v i^i u ) ) - ( # ` ( v \ u ) ) ) ) $.
+      $d O u v $.
+
+      ${
+        ballotfilemgval.u $e |- ( ph -> U e. O ) $.
+        ballotfilemgval.j $e |- ( ph -> J e. ZZ ) $.
+        ballotfilemgval.k $e |- ( ph -> K e. ZZ ) $.
+        ballotfilemgval.fz $e |- ( ph -> V = ( J ... K ) ) $.
+        $( Expand the value of ` .^ ` .  (Contributed by Thierry Arnoux,
+           21-Apr-2017.)  (Revised by Jim Kingdon, 15-Jun-2026.) $)
+        ballotfilemgval $p |- ( ph
+            -> ( U .^ V ) = ( ( # ` ( V i^i U ) ) - ( # ` ( V \ U ) ) ) ) $=
+          ( wcel cfn cin chash cfv cdif cmin wceq cfz fzfigd eqeltrd cn0 ineq1d
+          co cz ballotfilemcinfz hashcl nn0zd difeq1d ballotfilemdifcfz zsubcld
+          syl cv ineq2 fveq2d difeq2 oveq12d ineq1 difeq1 ovmpog syl3anc ) AHSU
+          QTURUQTHUSZUTVAZTHVBZUTVAZVCVJZVKUQHTLVJWLVDUMATOPVEVJZURUPAOPUNUOVFV
+          GAWIWKAWIAWHURUQWIVHUQAWHWMHUSURATWMHUPVIAHOPQRSUAUBUCUDUMUNUOVLVGWHV
+          MVRVNAWKAWJURUQWKVHUQAWJWMHVBURATWMHUPVOAHOPQRSUAUBUCUDUMUNUOVPVGWJVM
+          VRVNVQDCHTSURCVSZDVSZUSZUTVAZWNWOVBZUTVAZVCVJWLLWNHUSZUTVAZWNHVBZUTVA
+          ZVCVJVKWOHVDZWQXAWSXCVCXDWPWTUTWOHWNVTWAXDWRXBUTWOHWNWBWAWCWNTVDZXAWI
+          XCWKVCXEWTWHUTWNTHWDWAXEXBWJUTWNTHWEWAWCULWFWG $.
+      $}
+
+      ${
+        $d u v U $.  $d u v K $.  $d u v L $.  $d L k $.
+        ballotfilemgun.1 $e |- ( ph -> U e. O ) $.
+        ballotfilemgun.2 $e |- ( ph -> L e. ( J ... K ) ) $.
+        $( A property of the defined ` .^ ` operator.  (Contributed by Thierry
+           Arnoux, 26-Apr-2017.)  (Revised by Jim Kingdon, 15-Jun-2026.) $)
+        ballotfilemgun $p |- ( ph ->
+            ( U .^ ( J ... K ) )
+            = ( ( U .^ ( J ... ( L - 1 ) ) ) + ( U .^ ( L ... K ) ) ) ) $=
+          ( c1 cmin cfz cun cin chash cfv cdif caddc indir fveq2i cfn wcel wceq
+          co c0 elfzel1 syl elfzelzd peano2zm ballotfilemcinfz elfzel2 clt zred
+          cz wbr ltm1d fzdisj ineq1d inindir 0in 3eqtr3g hashun eqtrid difundir
+          syl3anc ballotfilemdifcfz difeq1d difindir 0dif oveq12d hashcl nn0cnd
+          cn0 addsub4d eqtrd eqidd ballotfilemgval fzsplit3 fveq2d 3eqtr4d ) AO
+          QUOUPVIZUQVIZQPUQVIZURZHUSZUTVAZXIHVBZUTVAZUPVIZXGHUSZUTVAZXGHVBZUTVA
+          ZUPVIZXHHUSZUTVAZXHHVBZUTVAZUPVIZVCVIZHOPUQVIZLVIZHXGLVIZHXHLVIZVCVIA
+          XNXPYAVCVIZXRYCVCVIZUPVIYEAXKYJXMYKUPAXKXOXTURZUTVAZYJXJYLUTXGXHHVDVE
+          AXOVFVGZXTVFVGZXOXTUSZVJVHYMYJVHAHOXFRSTUAUBUCUDUMAQYFVGZOVSVGUNQOPVK
+          VLZAQVSVGXFVSVGAQOPUNVMZQVNVLZVOZAHQPRSTUAUBUCUDUMYSAYQPVSVGUNQOPVPVL
+          ZVOZAXGXHUSZHUSVJHUSYPVJAUUDVJHAXFQVQVTUUDVJVHAQAQYSVRWAOXFQPWBVLZWCX
+          GXHHWDHWEWFXOXTWGWJWHAXMXQYBURZUTVAZYKXLUUFUTXGXHHWIVEAXQVFVGZYBVFVGZ
+          XQYBUSZVJVHUUGYKVHAHOXFRSTUAUBUCUDUMYRYTWKZAHQPRSTUAUBUCUDUMYSUUBWKZA
+          UUDHVBVJHVBUUJVJAUUDVJHUUEWLXGXHHWMHWNWFXQYBWGWJWHWOAXPYAXRYCAXPAYNXP
+          WRVGUUAXOWPVLWQAYAAYOYAWRVGUUCXTWPVLWQAXRAUUHXRWRVGUUKXQWPVLWQAYCAUUI
+          YCWRVGUULYBWPVLWQWSWTAYGYFHUSZUTVAZYFHVBZUTVAZUPVIXNABCDEFGHIJKLMNOPR
+          STYFUAUBUCUDUEUFUGUHUIUJUKULUMYRUUBAYFXAXBAUUNXKUUPXMUPAUUMXJUTAYFXIH
+          AYQYFXIVHUNQOPXCVLZWCXDAUUOXLUTAYFXIHUUQWLXDWOWTAYHXSYIYDVCABCDEFGHIJ
+          KLMNOXFRSTXGUAUBUCUDUEUFUGUHUIUJUKULUMYRYTAXGXAXBABCDEFGHIJKLMNQPRSTX
+          HUAUBUCUDUEUFUGUHUIUJUKULUMYSUUBAXHXAXBWOXE $.
+      $}
+
+      $d i J $.
+      $( Express the value of ` ( F `` C ) ` in terms of ` .^ ` .  (Contributed
+         by Thierry Arnoux, 21-Apr-2017.) $)
+      ballotfilemfg $p |- ( ( C e. ( O \ E ) /\ J e. ( 0 ... ( M + N ) ) ) ->
+                                  ( ( F ` C ) ` J ) = ( C .^ ( 1 ... J ) ) ) $=
+        ( cdif wcel cc0 caddc co cfz wa cfv c1 chash cmin eldifi adantr elfzelz
+        cin cz adantl ballotfilemfval 1zzd eqidd ballotfilemgval eqtr4d ) DQJUJ
+        UKZNULOPUMUNZUOUNUKZUPZNDLUQUQURNUOUNZDVDUSUQVPDUJUSUQUTUNDVPKUNVOADEHL
+        NOPQRSTUAUBUCVLDQUKVNDQJVAVBZVNNVEUKVLNULVMVCVFZVGVOABCEFGDHIJKLMURNOPQ
+        VPRSTUAUBUCUDUEUFUGUHUIVQVOVHVRVOVPVIVJVK $.
+
+      $( Express the value of ` ( F `` ( R `` C ) ) ` in terms of the newly
+         defined ` .^ ` .  (Contributed by Thierry Arnoux, 21-Apr-2017.) $)
+      ballotfilemfrc $p |- ( ( C e. ( O \ E ) /\ J e. ( 1 ... ( I ` C ) ) ) ->
+        ( ( F ` ( R ` C ) ) ` J ) =
+                              ( C .^ ( ( ( S ` C ) ` J ) ... ( I ` C ) ) ) ) $=
+        ( cdif wcel c1 cfv cfz co cin chash cmin cima cres ballotfilemro adantr
+        wa cz elfzelz adantl ballotfilemcinfi wf1 wss wf1o ccnv ballotfilemsf1o
+        caddc wceq f1of1 syl cuz cc0 ballotfilemiex elfzuz3 uztrn syl2anc fzss2
+        ssinss1 fihasheqf1od ballotfilemdifcfi ssdifssd oveq12d ballotfilemfval
+        simpld f1ores eldifi ballotfilemsel1i elfzelzd ballotfilemgval wfun wfo
+        eqidd dff1o3 simprbi imain ballotfilemsima ballotfilemscr ineq12d eqtrd
+        3syl fveq2d imadif difeq12d eqtr4d 3eqtr4d ) DQJUJUKZNULDMUMZUNUOUKZVCZ
+        ULNUNUOZDFUMZUPZUQUMZXPXQUJZUQUMZURUODGUMZXRUSZUQUMZYBXTUSZUQUMZURUOZNX
+        QLUMUMDNYBUMZXMUNUOZKUOZXOXSYDYAYFURXOXRYCYBXRUTZXOXQNOPQRSTUAXLXQQUKXN
+        ADEFGHIJLMOPQRSTUAUBUCUDUEUFUGUHVAVBZXNNVDUKXLNULXMVEVFZVGXOULOPVMUOZUN
+        UOZYOYBVHZXRYOVIZXRYCYKVJXLYPXNXLYOYOYBVJZYPXLYRYBVKZYBVNADEGHIJLMOPQRS
+        TUAUBUCUDUEUFUGVLWJZYOYOYBVOVPVBZXOXPYOVIZYQXOYNNVQUMZUKZUUBXOYNXMVQUMU
+        KZXMUUCUKZUUDXOXMYOUKZUUEXLUUGXNXLUUGXMDLUMUMVRVNADEHIJLMOPQRSTUAUBUCUD
+        UEUFVSWJVBZXMULYNVTVPXNUUFXLNULXMVTVFXMYNNWAWBNULYNWCVPZXPXQYOWDVPYOYOX
+        RYBWKWBWEXOXTYEYBXTUTZXOXQNOPQRSTUAYLYMWFXOYPXTYOVIXTYEUUJVJUUAXOXPYOXQ
+        UUIWGYOYOXTYBWKWBWEWHXOAXQEHLNOPQRSTUAUBUCYLYMWIXOYJYIDUPZUQUMZYIDUJZUQ
+        UMZURUOYGXOABCEFGDHIJKLMYHXMOPQYIRSTUAUBUCUDUEUFUGUHUIXLDQUKXNDQJWLVBXO
+        YHULXMADEGHIJLMNOPQRSTUAUBUCUDUEUFUGWMWNXOXMULYNUUHWNXOYIWRWOXOYDUULYFU
+        UNURXOYCUUKUQXOYCYBXPUSZYBXQUSZUPZUUKXLYCUUQVNZXNXLYRYSWPZUURYTYRYOYOYB
+        WQUUSYOYOYBWSWTZXPXQYBXAXFVBXOUUOYIUUPDADEGHIJLMNOPQRSTUAUBUCUDUEUFUGXB
+        ZXLUUPDVNXNADEFGHIJLMOPQRSTUAUBUCUDUEUFUGUHXCVBZXDXEXGXOYEUUMUQXOYEUUOU
+        UPUJZUUMXLYEUVCVNZXNXLYRUUSUVDYTUUTXPXQYBXHXFVBXOUUOYIUUPDUVAUVBXIXEXGW
+        HXJXK $.
+
+      $( Reverse counting preserves a tie at the first tie.  (Contributed by
+         Thierry Arnoux, 21-Apr-2017.) $)
+      ballotfilemfrci $p |- ( C e. ( O \ E ) ->
+                                     ( ( F ` ( R ` C ) ) ` ( I ` C ) ) = 0 ) $=
+        ( cdif wcel cfv c1 cfz cc0 wceq caddc cuz ballotfilemiex simpld eluzfz2
+        co elfzuz 3syl ballotfilemfrc mpdan ballotfilemsi oveq1d eqtrd fz1ssfz0
+        oveq2d sselid ballotfilemfg simprd 3eqtr2d ) DPJUIUJZDMUKZDFUKLUKUKZDUL
+        VPUMVAZKVAZVPDLUKUKZUNVOVQDVPDGUKUKZVPUMVAZKVAZVSVOVPVRUJZVQWCUOVOVPULN
+        OUPVAZUMVAZUJZVPULUQUKUJWDVOWGVTUNUOZADEHIJLMNOPQRSTUAUBUCUDUEURZUSZVPU
+        LWEVBULVPUTVCABCDEFGHIJKLMVPNOPQRSTUAUBUCUDUEUFUGUHVDVEVOWBVRDKVOWAULVP
+        UMADEGHIJLMNOPQRSTUAUBUCUDUEUFVFVGVJVHVOVPUNWEUMVAZUJVTVSUOVOWFWKVPWEVI
+        WJVKABCDEFGHIJKLMVPNOPQRSTUAUBUCUDUEUFUGUHVLVEVOWGWHWIVMVN $.
+
+      $( Value of ` F ` for a reverse counting ` ( R `` C ) ` .  (Contributed
+         by Thierry Arnoux, 27-Apr-2017.) $)
+      ballotfilemfrceq $p |- ( ( C e. ( O \ E ) /\ J e. ( 1 ... ( I ` C ) ) )
+        -> ( ( F ` C ) ` ( ( ( S ` C ) ` J ) - 1 ) )
+                                            = -u ( ( F ` ( R ` C ) ) ` J ) ) $=
+        ( cdif wcel c1 cfv cfz co wa cmin caddc cc0 wceq ballotfilemsel1i cz wb
+        cneg 1zzd ballotfilemiex adantr simpld elfzelzd cuz elfzuz3 fzss2 simpr
+        wss sseldd ballotfilemsdom syldan fzsubel syl22anc mpbid 1m1e0 eleqtrdi
+        3syl oveq1i cle wbr zsubcld cn nnaddcl nnzi a1i elfzle2 syl clt zlem1lt
+        mp2an syl2anc cr wi zred ltle sylbid mpd syl3anbrc sselda ballotfilemfg
+        eluz2 ballotfilemfrc eldifi ballotfilemgun fz1ssfz0 sseli sylan2 simprd
+        oveq12d eqtr3d 3eqtr2d cc ballotfilemfelz zcnd ballotfilemro addeq0 ) D
+        QJUJUKZNULDMUMZUNUOZUKZUPZNDGUMUMZULUQUOZDLUMZUMZNDFUMZLUMUMZURUOZUSUTZ
+        YKYMVDUTZYGYNDULYIUNUOKUOZDYHYDUNUOKUOZURUODYEKUOZUSYGYKYQYMYRURYCYFYIU
+        SOPURUOZUNUOZUKZYKYQUTYCYFYIUSYDULUQUOZUNUOZUKUUBYGYIULULUQUOZUUCUNUOZU
+        UDYGYHYEUKZYIUUFUKZADEGHIJLMNOPQRSTUAUBUCUDUEUFUGVAZYGULVBUKZYDVBUKZYHV
+        BUKUUJUUGUUHVCYGVEZYGYDULYTYGYDULYTUNUOZUKZYDYJUMZUSUTZYCUUNUUPUPYFADEH
+        IJLMOPQRSTUAUBUCUDUEUFVFZVGZVHZVIYGYHULYTYCYFNUUMUKYHUUMUKYGYEUUMNYGUUN
+        YTYDVJUMUKYEUUMVNUUSYDULYTVKYDULYTVLWCYCYFVMZVOADEGHIJLMNOPQRSTUAUBUCUD
+        UEUFUGVPVQVIZUULYHULULYDVRVSVTUUEUSUUCUNWAWDWBYCUUDUUAYIYCYTUUCVJUMUKZU
+        UDUUAVNYCUUCVBUKYTVBUKZUUCYTWEWFZUVBYCYDULYCYDULYTYCUUNUUPUUQVHZVIZYCVE
+        WGZUVCYCYTOWHUKPWHUKYTWHUKSTOPWIWPWJWKZYCYDYTWEWFZUVDYCUUNUVIUVEYDULYTW
+        LWMYCUVIUUCYTWNWFZUVDYCUUKUVCUVIUVJVCUVFUVHYDYTWOWQYCUUCWRUKYTWRUKUVJUV
+        DWSYCUUCUVGWTYCYTUVHWTUUCYTXAWQXBXCUUCYTXGXDUUCUSYTVLWMXEVQABCDEFGHIJKL
+        MYIOPQRSTUAUBUCUDUEUFUGUHUIXFVQABCDEFGHIJKLMNOPQRSTUAUBUCUDUEUFUGUHUIXH
+        XOYGABCEFGDHIJKLMULYDYHOPQRSTUAUBUCUDUEUFUGUHUIYCDQUKYFDQJXIVGZUUIXJYGU
+        UOYSUSYCYFUUNUUOYSUTZUUSUUNYCYDUUAUKUVLUUMUUAYDYTXKXLABCDEFGHIJKLMYDOPQ
+        RSTUAUBUCUDUEUFUGUHUIXFXMVQYGUUNUUPUURXNXPXQYGYKXRUKYMXRUKYOYPVCYGYKYGA
+        DEHLYIOPQRSTUAUBUCUVKYGYHULUVAUULWGXSXTYGYMYGAYLEHLNOPQRSTUAUBUCYCYLQUK
+        YFADEFGHIJLMOPQRSTUAUBUCUDUEUFUGUHYAVGYGNULYDUUTVIXSXTYKYMYBWQVT $.
+    $}
+
+    $d k S $.  $d k J $.
+    ${
+      $d u v C $.  $d u v I $.  $d u v J $.  $d u v R $.  $d u v S $.
+      $d w y z $.  $d c k y z $.  $d y z C $.  $d y z F $.  $d y z M $.
+      $d y z N $.  $d k w y z $.  $d w C $.  $d w F $.  $d w M $.  $d w N $.
+      $d i J $.  $d O u v $.
+      ${
+        $d M q $.  $d N q $.  $d k q $.  $d C q $.  $d F q $.  $d i q $.
+        $( Value of ` F ` for a reversed counting ` ( R `` C ) ` , before the
+           first tie, cannot be zero.  (Contributed by Thierry Arnoux,
+           25-Apr-2017.)  (Revised by AV, 6-Oct-2020.) $)
+        ballotfilemfrcn0 $p |- ( ( C e. ( O \ E )
+            /\ J e. ( 1 ... ( M + N ) )
+            /\ J < ( I ` C ) ) -> ( ( F ` ( R ` C ) ) ` J ) =/= 0 ) $=
+          ( vq vv vu cdif wcel caddc cfz cfv clt wbr w3a cc0 wne cmin wceq 1zzd
+          c1 co cz cn nnaddcl mp2an nnzi a1i wa ballotfilemsdom 3adant3 zsubcld
+          elfzelzd cle ballotfilemsgt1 biimpa syl21anc zred 1red resubcld simp1
+          zltlem1 ballotfilemiex simpld elfzelz 3syl 3ad2ant2 simp3 ltled elfzd
+          elfzle1 ballotfilemsel1i syl2anc elfzle2 syl zlem1lt mpbid letrd crab
+          wb cv cr cinf ballotfilemi breq2d 3ad2ant1 wn fveqeq2 cbvrabv infeq1i
+          ballotfilemscl eqeltrrid elrabi adantr eleq2i ballotfilemsle sylan2br
+          sylan eqbrtrrid lensymd mt2d sylnib mpnanrd neqned cneg ballotfilemro
+          ex elrab adantl ballotfilemfelz zcnd negeq0d cfn cin ballotfilemfrceq
+          chash cmpo eqid eqeq1d bitr4d necon3bid mpbird ) BNHUIUJZKVBLMUKVCZUL
+          VCZUJZKBJUMZUNUOZUPZKBDUMZIUMUMZUQURZKBEUMUMZVBUSVCZBIUMZUMZUQURZUUJU
+          UQUQUUJUUOUUFUJZUUQUQUTZUUJUUOVBUUEUUJVAZUUEVDUJUUJUUELVEUJMVEUJUUEVE
+          UJPQLMVFVGVHVIZUUJUUNVBUUDUUGUUNVDUJZUUIUUDUUGVJUUNVBUUEABCEFGHIJKLMN
+          OPQRSTUAUBUCUDVKVNVLZUVAVMUUJVBVDUJZUVCVBUUNUNUOZVBUUOVOUOZUVAUVDABCE
+          FGHIJKLMNOPQRSTUAUBUCUDVPUVEUVCVJUVFUVGVBUUNWCVQVRUUJUUOUUHUUEUUJUUNV
+          BUUJUUNUVDVSUUJVTWAZUUJUUHUUJUUDUUHUUFUJZUUHVDUJZUUDUUGUUIWBZUUDUVIUU
+          HUUPUMUQUTABCFGHIJLMNOPQRSTUAUBUCWDWEZUUHVBUUEWFWGZVSZUUJUUEUVBVSUUJU
+          UOUUHUVHUVNUUJUUNUUHVOUOZUUOUUHUNUOZUUJUUNVBUUHULVCZUJZUVOUUJUUDKUVQU
+          JZUVRUVKUUJKVBUUHUVAUVMUUGUUDKVDUJZUUIKVBUUEWFWHZUUGUUDVBKVOUOUUIKVBU
+          UEWLWHUUJKUUHUUJKUWAVSUVNUUDUUGUUIWIWJWKZABCEFGHIJKLMNOPQRSTUAUBUCUDW
+          MWNUUNVBUUHWOWPUUJUVCUVJUVOUVPXAUVDUVMUUNUUHWQWNWRZWJUUJUUDUVIUUHUUEV
+          OUOUVKUVLUUHVBUUEWOWGWSWKUUJUUOGXBZUUPUMUQUTZGUUFWTZUJZUUSUUTVJUUJUWG
+          UUOUWFXCUNXDZUNUOZUUJUVPUWIUWCUUDUUGUVPUWIXAUUIUUDUUHUWHUUOUNABCFGHIJ
+          LMNOPQRSTUAUBUCXEXFXGWRUUJUWGUWIXHUUJUWGVJUWHUUOUUJUUDUWGUWHXCUJUVKUU
+          DUWGVJZUWHUUDUWHVDUJUWGUUDUWHVBUUEUUDUWHUFXBZUUPUMUQUTZUFUUFWTZUJUWHU
+          UFUJUUDUWHUWMXCUNXDZUWMXCUWMUWFUNUWLUWEUFGUUFUWKUWDUQUUPXIXJZXKZABCUW
+          MFGHIJLMNOPQRSTUAUBUCUWOXLXMUWLUFUWHUUFXNWPVNXOVSXSUUJUUOXCUJUWGUVHXO
+          UUJUUDUWGUWHUUOVOUOUVKUWJUWHUWNUUOVOUWPUWGUUDUUOUWMUJUWNUUOVOUOUWMUWF
+          UUOUWOXPABCUWMFGHIJLMNUUOOPQRSTUAUBUCUWOXQXRXTXSYAYHYBUWEUUTGUUOUUFUW
+          DUUOUQUUPXIYIYCYDYEUUJUUDUVSUUMUURXAUVKUWBUUDUVSVJZUULUQUUQUQUWQUULUQ
+          UTUULYFZUQUTUUTUWQUULUWQUULUWQAUUKCFIKLMNOPQRSTUUDUUKNUJUVSABCDEFGHIJ
+          LMNOPQRSTUAUBUCUDUEYGXOUVSUVTUUDKVBUUHWFYJYKYLYMUWQUUQUWRUQAUGUHBCDEF
+          GHUHUGNYNUGXBZUHXBZYOYQUMUWSUWTUIYQUMUSVCYRZIJKLMNOPQRSTUAUBUCUDUEUXA
+          YSYPYTUUAUUBWNUUC $.
+      $}
+
+      $( Range of ` R ` .  (Contributed by Thierry Arnoux, 19-Apr-2017.) $)
+      ballotfilemrc $p |- ( C e. ( O \ E ) -> ( R ` C ) e. ( O \ E ) ) $=
+        ( vv vu cdif wcel cfv cv cc0 cle wbr c1 caddc co cfz wrex ballotfilemro
+        wceq fveq2 breq1d ballotfilemiex simpld chash cmin cmpo ballotfilemfrci
+        cfn cin eqid 0le0 eqbrtrdi rspcedvdw ballotfilemodife sylanbrc ) BMHUGZ
+        UHZBDUIZMUHFUJZVSIUIZUIZUKULUMZFUNKLUOUPUQUPZURVSVQUHABCDEFGHIJKLMNOPQR
+        STUAUBUCUDUSVRWCBJUIZWAUIZUKULUMFWEWDVTWEUTWBWFUKULVTWEWAVAVBVRWEWDUHWE
+        BIUIUIUKUTABCFGHIJKLMNOPQRSTUAUBVCVDVRWFUKUKULAUEUFBCDEFGHUFUEMVIUEUJZU
+        FUJZVJVEUIWGWHUGVEUIVFUPVGZIJKLMNOPQRSTUAUBUCUDWIVKVHVLVMVNAVSCFHIKLMNO
+        PQRSTVOVP $.
+    $}
+
+    $d k i R $.
+    ${
+      $d k x y $.  $d x y C $.  $d y E $.  $d x y F $.  $d y I $.  $d x y M $.
+      $d x y N $.  $d y O $.  $d y R $.  $d u v C $.  $d u v I $.  $d u v R $.
+      $d u v S $.  $d u v y $.  $d i y $.  $d O u v $.  $d E p q $.
+      $d O p q $.  $d k y p q $.  $d C p q $.  $d I p q $.  $d R p q $.
+      $d F p q $.  $d M p q $.  $d N p q $.
+      $( Applying ` R ` does not change first ties.  (Contributed by Thierry
+         Arnoux, 19-Apr-2017.)  (Revised by AV, 6-Oct-2020.) $)
+      ballotfilemirc $p |- ( C e. ( O \ E )
+          -> ( I ` ( R ` C ) ) = ( I ` C ) ) $=
+        ( vy vq vp vv vu cdif wcel cfv cv cc0 wceq c1 caddc co cfz crab cr cinf
+        ballotfilemrc ballotfilemi wa wn wb lttri3 adantl ballotfilemiex simpld
+        clt syl wbr elfzelzd zred fveqeq2 cfn chash cmin ballotfilemfrci elrabd
+        cin cmpo elrabi anim2i w3a ballotfilemfrcn0 neneqd elrab simprbi 3expia
+        eqid nsyl con2d imp sylancom infminti eqtrd ) BMHUJZUKZBDULZJULZGUMZXBI
+        ULZULUNUOZGUPKLUQURZUSURZUTZVAVLVBZBJULZXAXBWTUKXCXJUOABCDEFGHIJKLMNOPQ
+        RSTUAUBUCUDVCAXBCFGHIJKLMNOPQRSTUAUBVDVMXAUEUFUGVAXIXKVLUGUMZVAUKUFUMZV
+        AUKVEXLXMUOXLXMVLVNVFXMXLVLVNVFVEVGXAXLXMVHVIXAXKXAXKUPXGXAXKXHUKXKBIUL
+        ULUNUOABCFGHIJKLMNOPQRSTUAUBVJVKZVOVPXAXFXKXEULUNUOGXKXHXDXKUNXEVQXNAUH
+        UIBCDEFGHUIUHMVRUHUMZUIUMZWCVSULXOXPUJVSULVTURWDZIJKLMNOPQRSTUAUBUCUDXQ
+        WMWAWBXAUEUMZXIUKZXAXRXHUKZVEZXRXKVLVNZVFZXSXTXAXFGXRXHWEWFYAXSYCYAYBXS
+        XAXTYBXSVFXAXTYBWGZXRXEULZUNUOZXSYDYEUNABCDEFGHIJXRKLMNOPQRSTUAUBUCUDWH
+        WIXSXTYFXFYFGXRXHXDXRUNXEVQWJWKWNWLWOWPWQWRWS $.
+    $}
+
+    $( due to x used in ballotlemirc $)
+    $d x c $.  $d x C $.  $d x F $.  $d x M $.  $d x N $.  $d c I $.  $d d S $.
+    ${
+      $d d i x k $.  $d d E $.  $d d I $.  $d d O $.
+      $( Lemma for ~ ballotfilemrinv .  (Contributed by Thierry Arnoux,
+         18-Apr-2017.) $)
+      ballotfilemrinv0 $p |- ( ( C e. ( O \ E ) /\ D = ( ( S ` C ) " C ) ) ->
+                             ( D e. ( O \ E ) /\ C = ( ( S ` D ) " D ) ) ) $=
+        ( cdif wcel cfv cima wceq wa ballotfilemrval adantr simpr ballotfilemrc
+        eqtr4d eqeltrrd ccnv c1 caddc co cfz wf1o ballotfilemsf1o simprd eqcomd
+        imaeq12d simpl ballotfilemirc fveq2d ballotfilemieq syl3anc imaeq1d wf1
+        eqtr3d wss simpld f1of1 3syl eldifi cfn ballotfilemelo simp1bi f1imacnv
+        chash syl2anc 3eqtr3rd jca ) BNIUFZUGZCBFUHZBUIZUJZUKZCWIUGZBCFUHZCUIZU
+        JWNBEUHZCWIWNWRWLCWJWRWLUJWMABDEFGHIJKLMNOPQRSTUAUBUCUDUEULUMWJWMUNZUPZ
+        WJWRWIUGWMABDEFGHIJKLMNOPQRSTUAUBUCUDUEUOUMUQZWNWKCUIWKURZWLUIZWQBWNWKX
+        BCWLWNXBWKWJXBWKUJZWMWJUSLMUTVAVBVAZXEWKVCZXDABDFGHIJKLMNOPQRSTUAUBUCUD
+        VDZVEUMVFWSVGWNWKWPCWNWJWOBKUHZCKUHZUJWKWPUJWJWMVHZXAWNWRKUHZXHXIWJXKXH
+        UJWMABDEFGHIJKLMNOPQRSTUAUBUCUDUEVIUMWNWRCKWTVJVOABCDFGHIJKLMNOPQRSTUAU
+        BUCUDVKVLVMWNXEXEWKVNZBXEVPZXCBUJWNWJXFXLXJWJXFXDXGVQXEXEWKVRVSWNWJBNUG
+        ZXMXJBNIVTXNXMBWAUGBWEUHLUJBLMNOPQRWBWCVSXEXEBWKWDWFWGWH $.
+
+      $( ` R ` is its own inverse : it is an involution.  (Contributed by
+         Thierry Arnoux, 10-Apr-2017.) $)
+      ballotfilemrinv $p |- `' R = R $=
+        ( vd cdif cv cfv cima cmpt ccnv wceq wtru wa wb ballotfilemrinv0 impbii
+        wcel a1i mptcnv mptru fveq2 id imaeq12d cbvmptv eqtri cnveqi 3eqtr4i )
+        MLGUEZMUFZDUGZVIUHZUIZUJZVLCUJCVMUDVHUDUFZDUGZVNUHZUIZVLVMVQUKULMUDVHVK
+        VHVPVIVHUQVNVKUKUMZVNVHUQVIVPUKUMZUNULVRVSAVIVNBCDEFGHIJKLMNOPQRSTUAUBU
+        CUOAVNVIBCDEFGHIJKLMNOPQRSTUAUBUCUOUPURUSUTUDMVHVPVKVNVIUKZVOVJVNVIVNVI
+        DVAVTVBVCVDVECVLUCVFUCVG $.
+    $}
+
+    $( When the vote on the first tie is for A, the first vote is also for A on
+       the reverse counting.  (Contributed by Thierry Arnoux, 18-Apr-2017.) $)
+    ballotfilem1ri $p |- ( C e. ( O \ E ) ->
+                                     ( 1 e. ( R ` C ) <-> ( I ` C ) e. C ) ) $=
+      ( cdif wcel c1 cfv caddc co cmin cfz cle wbr wb cuz cn nnaddcl mp2an nnuz
+      eleqtri eluzfz1 mp1i cc0 ballotfilemiex simpld elfzle1 syl ballotfilemrv1
+      wceq mpd3an23 elfzelzd zcnd 1cnd pncand eleq1d bitrd ) BMHUEUFZUGBDUHUFZB
+      JUHZUGUIUJUGUKUJZBUFZVTBUFVRUGUGKLUIUJZULUJZUFZUGVTUMUNZVSWBUOWCUGUPUHZUF
+      WEVRWCUQWGKUQUFLUQUFWCUQUFOPKLURUSUTVAUGWCVBVCVRVTWDUFZWFVRWHVTBIUHUHVDVJ
+      ABCFGHIJKLMNOPQRSTUAUBVEVFZVTUGWCVGVHABCDEFGHIJUGKLMNOPQRSTUAUBUCUDVIVKVR
+      WAVTBVRVTUGVRVTVRVTUGWCWIVLVMVRVNVOVPVQ $.
+
+    $d x k i $.  $d c k $.
+    ${
+      $d b E $.  $d b c O $.  $d b R $.
+
+      $( ` R ` is a bijection between two subsets of ` ( O \ E ) ` : one where
+         a vote for A is picked first, and one where a vote for B is picked
+         first.  (Contributed by Thierry Arnoux, 12-Dec-2016.) $)
+      ballotfilem7 $p |- ( R |` { c e. ( O \ E ) | 1 e. c } ) :
+      { c e. ( O \ E ) | 1 e. c } -1-1-onto-> { c e. ( O \ E ) | -. 1 e. c } $=
+        ( vb c1 cv wcel cdif crab wn cfv cima funmpt2 ballotfilemrinv wss rabid
+        wral wa ballotfilemrc adantr ballotfilem1c ex ballotfilem1ri notbid imp
+        sylibrd jca sylbi rgen wceq eleq2 elrab cbvrabv eleq2i bitr3i mpbi wfun
+        ralbii cdm wb ssrab2 cvv caddc cfz cle wbr cmin cif cmpt ballotfilemofi
+        co cfn difexg ax-mp mptex eqeltri vex fvex imaex dmmpti sseqtrri nfrab1
+        nfmpt1 nfcxfr funimass4f mp2an mpbir ballotfilemic rinvf1o ) UEMUFZUGZM
+        LGUHZUIZXKUJZMXLUIZCMXLXJDUKZXJULZCUCUMZABCDEFGHIJKLMNOPQRSTUAUBUCUNCXM
+        ULXOUOZXJCUKZXOUGZMXMUQZXTXLUGZUEXTUGZUJZURZMXMUQYBYFMXMXJXMUGXJXLUGZXK
+        URZYFXKMXLUPYHYCYEYGYCXKAXJBCDEFGHIJKLMNOPQRSTUAUBUCUSZUTYGXKYEYGXKXJIU
+        KZXJUGZUJZYEYGXKYLAXJBEFGHIJKLMNOPQRSTUAVAVBYGYDYKAXJBCDEFGHIJKLMNOPQRS
+        TUAUBUCVCZVDVFVEVGVHVIYFYAMXMYFXTUEUDUFZUGZUJZUDXLUIZUGYAYPYEUDXTXLYNXT
+        VJYOYDYNXTUEVKZVDVLYQXOXTYPXNUDMXLYNXJVJYOXKYNXJUEVKZVDVMVNVOVRVPCVQZXM
+        CVSZUOXSYBVTXRXMXLUUAXKMXLWAMXLXQCXPXJXJDWBWBDMXLEUEJKWCWKWDWKEUFZYJWEW
+        FYJUEWCWKUUBWGWKUUBWHWIZWIWBUBMXLUUCLWLUGXLWBUGJKLMNOPWJLGWLWMWNWOWPMWQ
+        WRWSUCWTZXAZMXMXOCXKMXLXBZXNMXLXBZMCMXLXQWIUCMXLXQXCXDZXEXFXGCXOULXMUOZ
+        XTXMUGZMXOUQZYCYDURZMXOUQUUKUULMXOXJXOUGYGXNURZUULXNMXLUPUUMYCYDYGYCXNY
+        IUTYGXNYDYGXNYKYDYGXNYKAXJBEFGHIJKLMNOPQRSTUAXHVBYMVFVEVGVHVIUULUUJMXOU
+        ULXTYOUDXLUIZUGUUJYOYDUDXTXLYRVLUUNXMXTYOXKUDMXLYSVMVNVOVRVPYTXOUUAUOUU
+        IUUKVTXRXOXLUUAXNMXLWAUUDXAZMXOXMCUUGUUFUUHXEXFXGUUEUUOXI $.
+    $}
+
+    ${
+      $d c j $.
+      $( There are as many countings with ties starting with a ballot for ` A `
+         as there are starting with a ballot for ` B ` .  (Contributed by
+         Thierry Arnoux, 7-Dec-2016.) $)
+      ballotfilem8 $p |- ( # ` { c e. ( O \ E ) | 1 e. c } )
+                     = ( # ` { c e. ( O \ E ) | -. 1 e. c } ) $=
+        ( c1 cv wcel cdif crab cfn chash cfv wceq ballotfilemafi ballotfilembfi
+        wn cen wbr cres wf1o ballotfilem7 cvv ballotfilemofi difexg ax-mp rabex
+        wa f1oen hashen mpbiri mp2an ) UDMUEUFZMLGUGZUHZUIUFZVKUOMVLUHZUIUFZVMU
+        JUKVOUJUKULZABEGHJKLMNOPQRSUMABEGHJKLMNOPQRSUNVNVPVFVQVMVOUPUQZVMVOCVMU
+        RZUSVRABCDEFGHIJKLMNOPQRSTUAUBUCUTVMVOVSVKMVLLUIUFVLVAUFJKLMNOPVBLGUIVC
+        VDVEVGVDVMVOVHVIVJ $.
+    $}
+
+    $d x c $.  $d x E $.  $d x O $.
+    $( Lemma for ~ ballotfi .  The result, with several additional hypotheses
+       which are for use during the proof.  (Contributed by Thierry Arnoux,
+       7-Dec-2016.) $)
+    ballotfilemth $p |- ( P ` E ) = ( ( M - N ) / ( M + N ) ) $=
+      ( cfv c1 cdif chash cdiv co cmin caddc cmul cpw wcel cfn wceq wss cc0 clt
+      c2 cv wbr cfz wral ssrab3 ballotfilemefi elexi elpw mpbir cin elin oveq1d
+      wa fveq2 cr cn0 hashcl ax-mp ballotfilemonn nn0nndivcl mp2an fvmpt sylbir
+      cn ballotfilemofi fihashssdif eqcomi nn0cni diffifi subsub23i mpbi oveq1i
+      mp3an eqtr4i cc cap cbc ballotfilem1 cle nnnn0i nnrei nn0addge1i elfz2nn0
+      nnaddcl mpbir3an bccl2 nnap0i eqbrtri pm3.2i divsubdirap dividapi crab wn
+      3eqtri ballotfilem8 cun rabxmdc eldifi 1zzd ballotfilemcdc mprg fveq2i c0
+      wdc ballotfilemafi ballotfilembfi rabnc hashun eqtri ssrab2 elpwi2 anim1i
+      nfrab1 rabid oveq2i 2cn divassapi 2timesi 3eqtr2i nncni sylibr jca impbii
+      ballotfilem4 imdistani eldif simpr rabbia2 eqeltrri elini ballotfilem2 wi
+      dfssf 3imtr4i simprbi sylanbrc mpgbir difss rabss2 eqssi 3eqtr3i 3eqtr4ri
+      mulcli addsub4i subidi subcli addridi oveq12i 3eqtr3ri ) GBUDZUELGUFZUGUD
+      ZLUGUDZUHUIZUJUIZUEUTKJKUKUIZUHUIZULUIZUJUIZJKUJUIZUVPUHUIZUVJUVMUVLUJUIZ
+      UVMUHUIZUVMUVMUHUIZUVNUJUIZUVOUVJGUGUDZUVMUHUIZUWCGLUMZUNZGUOUNZUVJUWGUPZ
+      UWIGLUQZUREVAMVAZHUDUDUSVBEUEUVPVCUIVDMLGSVEZGLGUOABEGHJKLMNOPQRSVFZVGVHV
+      IUWOUWIUWJVMGUWHUOVJZUNUWKGUWHUOVKAGAVAZUGUDZUVMUHUIZUWGUWPBUWQGUPUWRUWFU
+      VMUHUWQGUGVNVLQUWGVOUWFVPUNZUVMWDUNZUWGVOUNUWJUWTUWOGVQVRZJKLMNOPVSZUWFUV
+      MVTWAVGWBWCWAUWBUWFUVMUHUVMUWFUJUIZUVLUPUWBUWFUPUVLUXDLUOUNZUWJUWLUVLUXDU
+      PJKLMNOPWEZUWOUWNLGWFWMWGUVMUWFUVLUVMUXEUVMVPUNUXFLVQVRWHZUWFUXBWHUVLUVKU
+      OUNZUVLVPUNUXEUWJUWLUXHUXFUWOUWNLGWIWMUVKVQVRWHZWJWKWLWNUVMWOUNZUVLWOUNUX
+      JUVMURWPVBZVMUWCUWEUPUXGUXIUXJUXKUXGUVMUVPJWQUIZURWPJKLMNOPWRUXLJURUVPVCU
+      IUNZUXLWDUNUXMJVPUNUVPVPUNJUVPWSVBJNWTUVPJWDUNKWDUNUVPWDUNNOJKXDWAZWTJKJN
+      XAKOWTXBJUVPXCXEJUVPXFVRXGXHZXIUVMUVLUVMXJWMUWDUEUVNUJUVMUXGUXOXKWLXNUVRU
+      VNUEUJUEUWMUNZMUVKXLZUGUDZUXPXMZMUVKXLZUGUDZUKUIZUVMUHUIUYAUYAUKUIZUVMUHU
+      IZUVNUVRUYBUYCUVMUHUXRUYAUYAUKABCDEFGHIJKLMNOPQRSTUAUBUCXOWLWLUVLUYBUVMUH
+      UVLUXQUXTXPZUGUDZUYBUVKUYEUGUXPYDUVKUYEUPMUVKUXPMUVKXQUWMUVKUNZUWMUEJKLMN
+      OPUWMLGXRZUYGXSXTYAYBUXQUOUNUXTUOUNZUXQUXTVJYCUPUYFUYBUPABEGHJKLMNOPQRSYE
+      ABEGHJKLMNOPQRSYFZUXPMUVKYGUXQUXTYHWMYIWLUVRUTUYAUVMUHUIZULUIUTUYAULUIZUV
+      MUHUIUYDUVQUYKUTULUXSMLXLZBUDZUYMUGUDZUVMUHUIZUVQUYKUYMUWPUNUYNUYPUPUYMUW
+      HUOUYMLUOUXFUXSMLYJYKUXTUYMUOUXSUXSMUVKLUYGUXSVMUWMLUNZUXSVMZUYGUYQUXSUYH
+      YLUYRUYGUXSUYRUYQUWMGUNXMZVMZUYGUYQUXSUYSAUWMBEGHJKLMNOPQRSUUDUUEZUWMLGUU
+      FZUUAUYQUXSUUGUUBUUCUUHUYJUUIZUUJAUYMUWSUYPUWPBUWQUYMUPUWRUYOUVMUHUWQUYMU
+      GVNVLQUYPVOUYOVPUNZUXAUYPVOUNUYMUOUNVUDVUCUYMVQVRUXCUYOUVMVTWAVGWBVRABJKL
+      MNOPQUUKUYOUYAUVMUHUYMUXTUGUYMUXTUYMUXTUQUWMUYMUNZUWMUXTUNZUULMMUYMUXTUXS
+      MLYMUXSMUVKYMUUMVUEUYGUXSVUFUYRUYTVUEUYGVUAUXSMLYNZVUBUUNVUEUYQUXSVUGUUOU
+      XSMUVKYNUUPUUQUVKLUQUXTUYMUQLGUURUXSMUVKLUUSVRUUTYBWLUVAYOUTUYAUVMYPUYAUY
+      IUYAVPUNUYJUXTVQVRWHZUXGUXOYQUYLUYCUVMUHUYAVUHYRWLYSUVBYOUVPUTKULUIZUJUIZ
+      UVPUHUIZUVPUVPUHUIZVUIUVPUHUIZUJUIZUWAUVSUVPWOUNZVUIWOUNVUOUVPURWPVBZVMVU
+      KVUNUPUVPUXNYTZUTKYPKOYTZUVCVUOVUPVUQUVPUXNXGZXIUVPVUIUVPXJWMVUJUVTUVPUHV
+      UJUVPKKUKUIZUJUIZUVTVUIVUTUVPUJKVURYRYOVVAUVTKKUJUIZUKUIUVTURUKUIUVTJKKKJ
+      NYTZVURVURVURUVDVVBURUVTUKKVURUVEYOUVTJKVVCVURUVFUVGXNYIWLVULUEVUMUVRUJUV
+      PVUQVUSXKUTKUVPYPVURVUQVUSYQUVHUVIYS $.
+  $}
+
+  ${
+    $d E c i k q r s $.  $d E c i k x $.  $d F c i k p q r s $.
+    $d F c i k x $.  $d M c i k p q r s $.  $d M c i k x $.
+    $d N c i k p q r s $.  $d N c i k x $.  $d O c i k q r s $.
+    $d O c i k x $.
+    ballotfi.m $e |- M e. NN $.
+    ballotfi.n $e |- N e. NN $.
+    ballotfi.o $e |- O
+      = { c e. ( ~P ( 1 ... ( M + N ) ) i^i Fin ) | ( # ` c ) = M } $.
+    ballotfi.p $e |- P = ( x e. ( ~P O i^i Fin )
+      |-> ( ( # ` x ) / ( # ` O ) ) ) $.
+    ballotfi.f $e |- F = ( c e. O |-> ( i e. ZZ |->
+      ( ( # ` ( ( 1 ... i ) i^i c ) ) - ( # ` ( ( 1 ... i ) \ c ) ) ) ) ) $.
+    ballotfi.e $e |- E = { c e. O | A. i e. ( 1 ... ( M + N ) )
+      0 < ( ( F ` c ) ` i ) } $.
+    ballotfi.mgtn $e |- N < M $.
+    $( Bertrand's ballot problem : the probability that A is ahead throughout
+       the counting.  The proof formalized here is a proof "by reflection", as
+       opposed to other known proofs "by induction" or "by permutation".  This
+       is Metamath 100 proof #30.  (Contributed by Thierry Arnoux, 7-Dec-2016.)
+       (Revised by Jim Kingdon, 17-Jun-2026.) $)
+    ballotfi $p |- ( P ` E ) = ( ( M - N ) / ( M + N ) ) $=
+      ( cv co cfv cmpt vr vs vq vp vk cdif caddc cfz cc0 wceq crab clt cinf cle
+      c1 wbr cmin cif cima fveq2 fveq1d rabbidv infeq1d cbvmptv fveqeq2 cbvrabv
+      cr eqeq1d infeq1i mpteq2i eqtri breq2d oveq1d ifbieq1d mpteq2dv ifbieq12d
+      breq1 oveq2 id eqid ballotfilemth ) ABIHDUFZIQZUAWBUBUOFGUGRUHRZUBQZUAQZU
+      CWBUDQZUCQZESZSZUIUJZUDWDUKZVGULUMZTZSZUNUPZWOUOUGRZWEUQRZWEURZTZTZSWCUST
+      ZXACUEDEWNFGHIJKLMNOPWNIWBWGWCESZSZUIUJZUDWDUKZVGULUMZTIWBUEQZXCSUIUJZUEW
+      DUKZVGULUMZTUCIWBWMXGWHWCUJZVGWLXFULXLWKXEUDWDXLWJXDUIXLWGWIXCWHWCEUTVAVH
+      VBVCVDIWBXGXKVGXFXJULXEXIUDUEWDWGXHUIXCVEVFVIVJVKXAIWBUBWDWEWCWNSZUNUPZXM
+      UOUGRZWEUQRZWEURZTZTIWBCWDCQZXMUNUPZXOXSUQRZXSURZTZTUAIWBWTXRWFWCUJZUBWDW
+      SXQYDWPXNWRXPWEYDWOXMWEUNWFWCWNUTZVLYDWQXOWEUQYDWOXMUOUGYEVMVMVNVOVDIWBXR
+      YCUBCWDXQYBWEXSUJZXNXTXPWEYAXSWEXSXMUNVQWEXSXOUQVRYFVSVPVDVJVKXBVTWA $.
   $}
 
 
@@ -168362,6 +169613,19 @@ $)
     $}
 
     ${
+      $d R j $.  $d O j $.
+      $( Bidirectional form of ~ opprring .  (Contributed by Mario Carneiro,
+         6-Dec-2014.) $)
+      opprringb $p |- ( R e. Ring <-> O e. Ring ) $=
+        ( vj vf crg wcel cvv elex cur cfv cbs wex eqid ringidcl basm coppr wrel
+        cv cmulr syl wa cdm cnx ctpos cop csts cmpt mptrel df-oppr releqi mpbir
+        co eleq2i biimpi adantl relelfvdm sylancr exlimddv opprringbg pm5.21nii
+        elexd ) AFGAHGZBFGZAFIVDDSZBGZVCDVDBJKZBLKZGVFDMVHBVGVHNZVGNOVGVHDBVIPU
+        AVDVFUBZAQUCZVJQRZVEAQKZGZAVKGVLEHESZUDTKVOTKUEUFUGUMZUHZREHVPUIQVQEUJU
+        KULVFVNVDVFVNBVMVECUNUOUPVEAQUQURVBUSABHCUTVA $.
+    $}
+
+    ${
       $d V x y $.
       oppr0.2 $e |- .0. = ( 0g ` R ) $.
       $( Additive identity of an opposite ring.  (Contributed by Mario
@@ -169998,6 +171262,23 @@ $)
       GWNDWPFWMXNXOXPWISWJAXFYBXIWTXGQXKYCXMXGWNDWPGWMXNXOXPWISWJWKWL $.
   $}
 
+  ${
+    $d O x y $.  $d R x y $.
+    opprlring.1 $e |- O = ( oppR ` R ) $.
+    $( The opposite of a local ring is also a local ring.  (Contributed by NM,
+       18-Oct-2014.) $)
+    opprlring $p |- ( R e. LRing <-> O e. LRing ) $=
+      ( vx vy clring wcel crg lringring cnzr cv cplusg cfv co cur wceq cui wral
+      wo eqid opprringb sylibr wi cbs opprnzrbg opprbasg oppraddg oveqd eqeq12d
+      oppr1g eqidd coppr a1i opprunitd eleq2d orbi12d imbi12d raleqbidv anbi12d
+      wa id islring 3bitr4g pm5.21nii ) AFGZAHGZBFGZAIVGBHGVFBIABCUAUBVFAJGZDKZ
+      EKZALMZNZAOMZPZVIAQMZGZVJVOGZSZUCZEAUDMZRZDVTRZUTBJGZVIVJBLMZNZBOMZPZVIBQ
+      MZGZVJWHGZSZUCZEBUDMZRZDWMRZUTVEVGVFVHWCWBWOABHCUEVFWAWNDVTWMVTABHCVTTZUF
+      ZVFVSWLEVTWMWQVFVNWGVRWKVFVLWEVMWFVFVKWDVIVJVKABHCVKTZUGUHAVMBHCVMTZUJUIV
+      FVPWIVQWJVFVOWHVIVFABVOVFVOUKBAULMPVFCUMVFVAUNZUOVFVOWHVJWTUOUPUQURURUSDE
+      VTVKAVOVMWPWRWSVOTVBDEWMWDBWHWFWMTWDTWFTWHTVBVCVD $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -171176,6 +172457,55 @@ $)
   $}
 
   ${
+    aprunit.b $e |- B = ( Base ` R ) $.
+    aprunit.0 $e |- .0. = ( 0g ` R ) $.
+    aprunit.u $e |- U = ( Unit ` R ) $.
+    aprunit.ap $e |- .# = ( #r ` R ) $.
+    aprunit.r $e |- ( ph -> R e. Ring ) $.
+    aprunit.x $e |- ( ph -> X e. B ) $.
+    $( The ~ df-apr relation with zero expresses whether a ring element is a
+       unit.  That is, the difference of an element of a ring and zero is
+       invertible iff the element is a unit.  (Contributed by Jim Kingdon,
+       29-May-2026.) $)
+    aprunit $p |- ( ph -> ( X .# .0. <-> X e. U ) ) $=
+      ( wbr csg cfv co wcel wceq a1i cbs capr eqidd cui crg ring0cl aprval cgrp
+      syl ringgrpd eqid grpsubid1 syl2anc eleq1d bitrd ) AFGCNFGDOPZQZERFERABCD
+      EUPFGBDUAPSAHTCDUBPSAKTAUPUCEDUDPSAJTLMADUERGBRLBDGHIUFUIUGAUQFEADUHRFBRU
+      QFSADLUJMBDUPFGHIUPUKULUMUNUO $.
+  $}
+
+  ${
+    ringunitap.b $e |- B = ( Base ` R ) $.
+    ringunitap.u $e |- U = ( Unit ` R ) $.
+    ringunitap.z $e |- .0. = ( 0g ` R ) $.
+    ringunitap.ap $e |- .# = ( #r ` R ) $.
+    $( Elementhood in the set of units.  (Contributed by Jim Kingdon,
+       30-May-2026.) $)
+    ringunitap $p |- ( R e. Ring ->
+        ( X e. U <-> ( X e. B /\ X .# .0. ) ) ) $=
+      ( crg wcel wbr wa cbs cfv wceq a1i simpl aprunit cui ringsrg adantr simpr
+      csrg unitcld mpbird jca simprr simprl mpbid impbida ) CKLZEDLZEALZEFBMZNZ
+      UMUNNZUOUPURACDEACOPQURGRDCUAPQURHRUMCUELUNCUBUCUMUNUDZUFZURUPUNUSURABCDE
+      FGIHJUMUNSUTTUGUHUMUQNZUPUNUMUOUPUIVAABCDEFGIHJUMUQSUMUOUPUJTUKUL $.
+  $}
+
+  ${
+    $d .# x y $.  $d .0. x y $.  $d B x y $.  $d R y $.
+    ringunitsap0.b $e |- B = ( Base ` R ) $.
+    ringunitsap0.z $e |- .0. = ( 0g ` R ) $.
+    ringunitsap0.ap $e |- .# = ( #r ` R ) $.
+    $( The set of units of a ring.  If ` R ` is a local ring, ` .# ` is an
+       apartness and this theorem states that the units of a ring are those
+       elements apart from zero (see ~ aprlring ).  Given the definition of
+       ` #r ` this theorem holds even if ` .# ` is not an apartness, however.
+       (Contributed by Jim Kingdon, 31-May-2026.) $)
+    ringunitsap0 $p |- ( R e. Ring -> { x e. B | x .# .0. } = ( Unit ` R ) ) $=
+      ( vy crg wcel cv wbr crab cui cfv wa breq1 elrab eqid ringunitap bitr4id
+      eqrdv ) DJKZIALZECMZABNZDOPZUDILZUGKUIBKUIECMZQUIUHKUFUJAUIBUEUIECRSBCDUH
+      UIEFUHTGHUAUBUC $.
+  $}
+
+  ${
     aprirr.b $e |- ( ph -> B = ( Base ` R ) ) $.
     aprirr.ap $e |- ( ph -> .# = ( #r ` R ) ) $.
     aprirr.r $e |- ( ph -> R e. Ring ) $.
@@ -171289,6 +172619,244 @@ $)
       EYFXOXPYRSOVKTVNXFWGWHWOXHWKYPYIYRXFWOXHWHKWOXHXKHZWQDXFYSWOWQXFXTYGYSWOI
       YAYIWGAXKWOXHXRYMYBVFVGXFWEWOWQDXOAWQWOWQQZYHVORVPXFWGWHAWQXKWOXHYCYDYEYF
       XOYIYRSVQXPVRVSVTWABCWGWMAWQWOXRXSYHYTWCWBVTWD $.
+  $}
+
+  ${
+    $d x y r K $.  $d x y r L $.
+    aprprop.b $e |- ( Base ` K ) = ( Base ` L ) $.
+    aprprop.p $e |- ( +g ` K ) = ( +g ` L ) $.
+    aprprop.m $e |- ( .r ` K ) = ( .r ` L ) $.
+    $( If two structures have the same ring components (properties), ~ df-apr
+       generates the same relation for both of them.  (Contributed by Jim
+       Kingdon, 31-May-2026.) $)
+    aprprop $p |- ( K e. Ring -> ( #r ` K ) = ( #r ` L ) ) $=
+      ( vx vy crg wcel cbs cfv wa csg cui wceq a1i eleq2d anbi12d cvv fveq2 cxp
+      vr cv co copab capr cplusg ringprop biimpi grpsubpropdg oveqd eqidd cmulr
+      oveqdr unitpropdg eleq12d opabbidv df-apr elex wfn funfvex funfni sylancr
+      id basfn xpexd wss opabssxp ssexd fvmptd3 elexd eqeltrrid 3eqtr4d ) AHIZF
+      UCZAJKZIZGUCZVPIZLZVOVRAMKZUDZANKZIZLZFGUEZVOBJKZIZVRWGIZLZVOVRBMKZUDZBNK
+      ZIZLZFGUEZAUFKBUFKVNWEWOFGVNVTWJWDWNVNVQWHVSWIVNVPWGVOVPWGOVNCPZQVNVPWGVR
+      WQQRVNWBWLWCWMVNWAWKVOVRVNABHHWQAUGKBUGKOVNDPVNVDZVNBHIABCDEUHUIZUJUKVNFG
+      VPABVNVPULWQVNVTFGAUMKZBUMKZWTXAOVNEPUNWRWSUOUPRUQVNUBAVOUBUCZJKZIZVRXCIZ
+      LZVOVRXBMKZUDZXBNKZIZLZFGUEZWFSUFSFGUBURZXBAOZXKWEFGXNXFVTXJWDXNXDVQXEVSX
+      NXCVPVOXBAJTZQXNXCVPVRXOQRXNXHWBXIWCXNXGWAVOVRXBAMTUKXBANTUPRUQAHUSZVNWFV
+      PVPUAZSVNVPVPSSVNJSUTASIVPSIZVEXPXRSAJAJVAVBVCZXSVFWFXQVGVNWDFGVPVPVHPVIV
+      JVNUBBXLWPSUFSXMXBBOZXKWOFGXTXFWJXJWNXTXDWHXEWIXTXCWGVOXBBJTZQXTXCWGVRYAQ
+      RXTXHWLXIWMXTXGWKVOVRXBBMTUKXBBNTUPRUQVNBHWSVKVNWPWGWGUAZSVNWGWGSSVNWGVPS
+      CXSVLZYCVFWPYBVGVNWNFGWGWGVHPVIVJVM $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Definition and basic properties
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c DivRing $.
+  $c Field $.
+
+  $( Extend class notation with class of all division rings. $)
+  cdr $a class DivRing $.
+
+  $( Class of fields. $)
+  cfield $a class Field $.
+
+  $( Define class of all division rings.  A division ring is a ring in which
+     the relation given by ~ df-apr is a tight apartness.  (Contributed by Jim
+     Kingdon, 29-May-2026.) $)
+  df-drngap $a |- DivRing = { r e. Ring | ( #r ` r ) TAp ( Base ` r ) } $.
+
+  $( A _field_ is a commutative division ring.  (Contributed by Mario Carneiro,
+     17-Jun-2015.) $)
+  df-field $a |- Field = ( DivRing i^i CRing ) $.
+
+  ${
+    $d B r $.  $d R r $.  $d .# r $.
+    isdrng.b $e |- B = ( Base ` R ) $.
+    isdrngap.ap $e |- .# = ( #r ` R ) $.
+    $( The predicate "is a division ring".  (Contributed by Jim Kingdon,
+       29-May-2026.) $)
+    isdrngtap $p |- ( R e. DivRing <-> ( R e. Ring /\ .# TAp B ) ) $=
+      ( vr cv cbs cfv capr wtap crg cdr wceq wb fveq2 eqtr4di tapeq1 syl tapeq2
+      bitrd df-drngap elrab2 ) FGZHIZUDJIZKZABKZFCLMUDCNZUGUEBKZUHUIUFBNUGUJOUI
+      UFCJIBUDCJPEQUEUFBRSUIUEANUJUHOUIUECHIAUDCHPDQUEABTSUAFUBUC $.
+  $}
+
+  $( A division ring is a local ring.  (Contributed by Jim Kingdon,
+     29-May-2026.) $)
+  drnglring $p |- ( R e. DivRing -> R e. LRing ) $=
+    ( cdr wcel cbs cfv capr wap crg wtap eqid isdrngtap tapap simplbiim simplbi
+    clring wb aprlring syl mpbird ) ABCZAOCZADEZAFEZGZTAHCZUBUCIZUDUBUCAUBJUCJK
+    ZUBUCLMTUEUAUDPTUEUFUGNAQRS $.
+
+  ${
+    drngunitap.b $e |- B = ( Base ` R ) $.
+    drngunitap.u $e |- U = ( Unit ` R ) $.
+    drngunitap.z $e |- .0. = ( 0g ` R ) $.
+    drngunitap.ap $e |- .# = ( #r ` R ) $.
+    $( Elementhood in the set of units when ` R ` is a division ring.
+       (Contributed by Mario Carneiro, 2-Dec-2014.) $)
+    drngunitap $p |- ( R e. DivRing ->
+        ( X e. U <-> ( X e. B /\ X .# .0. ) ) ) $=
+      ( cdr wcel wbr wa cfv wceq a1i syl adantr aprunit cbs cui csrg crg clring
+      drnglring lringring ringsrg simpr unitcld mpbird jca simprr mpbid impbida
+      simprl ) CKLZEDLZEALZEFBMZNZUQURNZUSUTVBACDEACUAOPVBGQDCUBOPVBHQUQCUCLZUR
+      UQCUDLZVCUQCUELVDCUFCUGRZCUHRSUQURUIZUJZVBUTURVFVBABCDEFGIHJUQVDURVESVGTU
+      KULUQVANZUTURUQUSUTUMVHABCDEFGIHJUQVDVAVESUQUSUTUPTUNUO $.
+  $}
+
+  ${
+    $d .# x y $.  $d .0. x y $.  $d B x y $.  $d R y $.
+    drngui.b $e |- B = ( Base ` R ) $.
+    drngui.z $e |- .0. = ( 0g ` R ) $.
+    drnguiap.ap $e |- .# = ( #r ` R ) $.
+    $( The set of units of a division ring.  (Contributed by Mario Carneiro,
+       2-Dec-2014.) $)
+    drnguiap $p |- ( R e. DivRing -> { x e. B | x .# .0. } = ( Unit ` R ) ) $=
+      ( vy cdr wcel cv wbr crab cui cfv wa breq1 elrab eqid drngunitap bitr4id
+      eqrdv ) DJKZIALZECMZABNZDOPZUDILZUGKUIBKUIECMZQUIUHKUFUJAUIBUEUIECRSBCDUH
+      UIEFUHTGHUAUBUC $.
+  $}
+
+  $( A division ring is a ring.  (Contributed by NM, 8-Sep-2011.) $)
+  drngring $p |- ( R e. DivRing -> R e. Ring ) $=
+    ( cdr wcel clring crg drnglring lringring syl ) ABCADCAECAFAGH $.
+
+  ${
+    drngringd.1 $e |- ( ph -> R e. DivRing ) $.
+    $( A division ring is a ring.  (Contributed by SN, 16-May-2024.) $)
+    drngringd $p |- ( ph -> R e. Ring ) $=
+      ( cdr wcel crg drngring syl ) ABDEBFECBGH $.
+
+    $( A division ring is a group (deduction form).  (Contributed by SN,
+       16-May-2024.) $)
+    drnggrpd $p |- ( ph -> R e. Grp ) $=
+      ( drngringd ringgrpd ) ABABCDE $.
+  $}
+
+  $( A division ring is a group (closed form).  (Contributed by NM,
+     8-Sep-2011.) $)
+  drnggrp $p |- ( R e. DivRing -> R e. Grp ) $=
+    ( cdr wcel id drnggrpd ) ABCZAFDE $.
+
+  $( A field is a commutative division ring.  (Contributed by Mario Carneiro,
+     17-Jun-2015.) $)
+  isfld $p |- ( R e. Field <-> ( R e. DivRing /\ R e. CRing ) ) $=
+    ( cdr ccrg cfield df-field elin2 ) ABCDEF $.
+
+  ${
+    flddrngd.1 $e |- ( ph -> R e. Field ) $.
+    $( A field is a division ring.  (Contributed by SN, 17-Jan-2025.) $)
+    flddrngd $p |- ( ph -> R e. DivRing ) $=
+      ( cfield wcel cdr ccrg isfld simplbi syl ) ABDEZBFEZCKLBGEBHIJ $.
+  $}
+
+  ${
+    fldcrngd.1 $e |- ( ph -> R e. Field ) $.
+    $( A field is a commutative ring.  (Contributed by SN, 23-Nov-2024.) $)
+    fldcrngd $p |- ( ph -> R e. CRing ) $=
+      ( cfield wcel ccrg cdr isfld simprbi syl ) ABDEZBFEZCKBGELBHIJ $.
+  $}
+
+  ${
+    $d x y K $.  $d x y L $.
+    drngprop.b $e |- ( Base ` K ) = ( Base ` L ) $.
+    drngprop.p $e |- ( +g ` K ) = ( +g ` L ) $.
+    drngprop.m $e |- ( .r ` K ) = ( .r ` L ) $.
+    $( If two structures have the same ring components (properties), one is a
+       division ring iff the other one is.  (Contributed by Mario Carneiro,
+       11-Oct-2013.)  (Revised by Mario Carneiro, 28-Dec-2014.) $)
+    drngprop $p |- ( K e. DivRing <-> L e. DivRing ) $=
+      ( crg wcel cbs cfv capr wtap wa cdr wceq wb aprprop tapeq1 eqid isdrngtap
+      syl pm5.32i ringprop anbi1i bitri 3bitr4i ) AFGZAHIZAJIZKZLZBFGZUGBJIZKZL
+      ZAMGBMGUJUFUMLUNUFUIUMUFUHULNUIUMOABCDEPUGUHULQTUAUFUKUMABCDEUBUCUDUGUHAU
+      GRUHRSUGULBCULRSUE $.
+  $}
+
+  ${
+    drngunz.z $e |- .0. = ( 0g ` R ) $.
+    drngunz.u $e |- .1. = ( 1r ` R ) $.
+    $( A division ring's unity is different from its zero.  (Contributed by NM,
+       8-Sep-2011.) $)
+    drngunz $p |- ( R e. DivRing -> .1. =/= .0. ) $=
+      ( cdr wcel clring cnzr wne drnglring lringnzr nzrnz 3syl ) AFGAHGAIGBCJAK
+      ALABCEDMN $.
+  $}
+
+  $( A division ring is a nonzero ring.  (Contributed by Stefan O'Rear,
+     24-Feb-2015.) $)
+  drngnzr $p |- ( R e. DivRing -> R e. NzRing ) $=
+    ( cdr wcel crg cur cfv c0g wne cnzr drngring eqid drngunz isnzr sylanbrc )
+    ABCADCAEFZAGFZHAICAJAOPPKZOKZLAOPRQMN $.
+
+  ${
+    $d O x y $.  $d R x y z $.
+    opprdrng.1 $e |- O = ( oppR ` R ) $.
+    $( The opposite of a division ring is also a division ring.  (Contributed
+       by NM, 18-Oct-2014.) $)
+    opprdrng $p |- ( R e. DivRing <-> O e. DivRing ) $=
+      ( vx vy crg wcel cbs cfv wtap wa wb a1i wap wceq wral eqid ad2antrr eqidd
+      co cdr simpl opprringb biimpri adantr cv wbr wn clring opprlring aprlring
+      capr wi sylbi opprbasg papeq2 syl bitr4d 3bitr3d csg cui cminusg oppraddg
+      cplusg opprnegg fveq1d simplr simpr syl2anc eleqtrd 3eqtr4d eleq1d simpll
+      oveq123d grpsubval aprval coppr id opprunitd sylib notbid imbi1d ralbidva
+      3bitr4d anbi12d df-tap 3bitr4g tapeq2 bitrd pm5.21nii isdrngtap 3bitr4i )
+      AFGZAHIZAULIZJZKZBFGZBHIZBULIZJZKZAUAGBUAGWQWMXBWMWPUBWRWMXAWMWRABCUCZUDU
+      EWMWMWRWPXAWMWRLWMXCMWMWPWNWTJZXAWMWNWONZDUFZEUFZWOUGZUHZXFXGOZUMZEWNPZDW
+      NPZKWNWTNZXFXGWTUGZUHZXJUMZEWNPZDWNPZKWPXDWMXEXNXMXSWMAUIGZBUIGZXEXNXTYAL
+      WMABCUJMAUKWMYAWSWTNZXNWMWRYAYBLXCBUKUNWMWNWSOZXNYBLWNABFCWNQZUOZWNWSWTUP
+      UQURUSWMXLXRDWNWMXFWNGZKZXKXQEWNYGXGWNGZKZXIXPXJYIXHXOYIXFXGAUTIZTZAVAIZG
+      XFXGBUTIZTZYLGXHXOYIYKYNYLYIXFXGAVBIZIZAVDIZTZXFXGBVBIZIZBVDIZTZYKYNYIXFX
+      FYPYTYQUUAWMYQUUAOYFYHYQABFCYQQZVCRYIXFSYIXGYOYSWMYOYSOYFYHAYOBFCYOQZVERV
+      FVNYIYFYHYKYROWMYFYHVGZYGYHVHZWNYQAYOYJXFXGYDUUCUUDYJQVOVIYIXFWSGXGWSGYNU
+      UBOYIXFWNWSUUEWMYCYFYHYERZVJYIXGWNWSUUFUUGVJWSUUABYSYMXFXGWSQZUUAQYSQYMQV
+      OVIVKVLYIWNWOAYLYJXFXGYIWNSYIWOSYIYJSYIYLSWMYFYHVMZUUEUUFVPYIWNWTBYLYMXFX
+      GUUGYIWTSYIYMSWMYLBVAIOYFYHWMABYLWMYLSBAVQIOWMCMWMVRVSRYIWMWRUUIXCVTUUEUU
+      FVPWDWAWBWCWCWEDEWNWOWFDEWNWTWFWGWMYCXDXALYEWNWSWTWHUQWIWEWJWNWOAYDWOQWKW
+      SWTBUUHWTQWKWL $.
+  $}
+
+  ${
+    ring1zr.b $e |- B = ( Base ` R ) $.
+    ring1zr.p $e |- .+ = ( +g ` R ) $.
+    ring1zr.t $e |- .* = ( .r ` R ) $.
+    $( The only (unital) ring with a base set consisting of one element is the
+       zero ring (at least if its operations are internal binary operations).
+       Note:  The assumption ` R e. Ring ` could be weakened to ` R e. Rng `
+       (see ~ df-rng ) (it would be sufficient that the multiplication is
+       closed).  (Contributed by FL, 13-Feb-2010.)  (Revised by AV,
+       25-Jan-2020.)  (Proof shortened by AV, 7-Feb-2020.) $)
+    ring1zr $p |- ( ( ( R e. Ring /\ .+ Fn ( B X. B ) /\ .* Fn ( B X. B ) )
+           /\ Z e. B ) -> ( B = { Z } <-> ( .+ = { <. <. Z , Z >. , Z >. }
+                                     /\ .* = { <. <. Z , Z >. , Z >. } ) ) ) $=
+      ( crg wcel csrg cxp wfn csn wceq cop wa wb ringsrg srg1zr syl3anl1 ) CIJC
+      KJBAALZMDUBMEAJAENOBEEPEPNZODUCOQRCSABCDEFGHTUA $.
+
+    $( The only (unital) ring with one element is the zero ring (at least if
+       its operations are internal binary operations).  Note:  The assumption
+       ` R e. Ring ` could be weakened to ` R e. Rng ` (see ~ df-rng ) (it
+       would be sufficient that the multiplication is closed).  (Contributed by
+       FL, 14-Feb-2010.)  (Revised by AV, 25-Jan-2020.) $)
+    rngen1zr $p |- ( ( ( R e. Ring /\ .+ Fn ( B X. B ) /\ .* Fn ( B X. B ) )
+           /\ Z e. B ) -> ( B ~~ 1o <-> ( .+ = { <. <. Z , Z >. , Z >. }
+                                     /\ .* = { <. <. Z , Z >. , Z >. } ) ) ) $=
+      ( crg wcel cxp wfn w3a wa c1o cen wbr csn wceq cop en1eqsnbi adantl bitrd
+      wb ring1zr ) CIJBAAKZLDUFLMZEAJZNAOPQZAERSZBEETETRZSDUKSNUHUIUJUDUGEAUAUB
+      ABCDEFGHUEUC $.
+
+    ringen1zr.0 $e |- Z = ( 0g ` R ) $.
+    $( The only unital ring with one element is the zero ring (at least if its
+       operations are internal binary operations).  Note:  The assumption
+       ` R e. Ring ` could be weakened to ` R e. Rng ` (it would be sufficient
+       that the multiplication is closed).  (Contributed by FL, 15-Feb-2010.)
+       (Revised by AV, 25-Jan-2020.) $)
+    ringen1zr $p |- ( ( R e. Ring /\ .+ Fn ( B X. B ) /\ .* Fn ( B X. B ) )
+                      -> ( B ~~ 1o <-> ( .+ = { <. <. Z , Z >. , Z >. }
+                                     /\ .* = { <. <. Z , Z >. , Z >. } ) ) ) $=
+      ( crg wcel cxp wfn w3a c1o cen wbr cop csn wceq ring0cl 3ad2ant1 rngen1zr
+      wa wb mpdan ) CJKZBAALZMZDUHMZNEAKZAOPQBEERERSZTDULTUDUEUGUIUKUJACEFIUAUB
+      ABCDEFGHUCUF $.
   $}
 
 
@@ -205030,8 +206598,8 @@ $)
 
        <tr><th>Abbreviation</th><th>Mnenomic/Meaning</th><th>Source</th>
        <th>Expression</th><th>Syntax?</th><th>Example(s)</th></tr>
-       <tr><td>ap</td><td>apart</td><td> ~ df-pap , ~ df-ap </td>
-       <td> </td><td>Yes</td><td> ~ apadd1 , ~ apne </td></tr>
+       <tr><td>ap</td><td>apart</td><td> ~ df-ap </td>
+       <td>` =//= `</td><td>Yes</td><td> ~ apadd1 , ~ apne </td></tr>
 
        <tr><td>g</td><td>with "is a set" condition</td><td> </td><td> </td>
        <td>No</td><td> ~ 1stvalg , ~ brtposg , ~ setsmsbasg </td></tr>
@@ -205040,12 +206608,15 @@ $)
        <td> ` E. x x e. A ` </td>
        <td>No</td><td> ~ r19.2m , ~ negm , ~ ctm , ~ basmex </td></tr>
 
+       <tr><td>pap</td><td>apartness predicate</td><td> ~ df-pap </td>
+       <td>` Ap `</td><td>Yes</td><td> ~ papeq1 , ~ papirr </td></tr>
+
        <tr><td>seq3, sum3</td><td>recursive sequence</td>
        <td> ~ df-seqfrec </td>
        <td> </td><td>Yes</td><td> ~ seq3-1 , ~ fsum3 </td></tr>
 
        <tr><td>tap</td><td>tight apartness</td><td> ~ df-tap </td>
-       <td> </td><td>Yes</td><td> ~ df-tap </td></tr>
+       <td>` TAp `</td><td>Yes</td><td> ~ df-tap </td></tr>
 
        </table>
        </HTML>
@@ -206883,6 +208454,13 @@ htmldef "RingSpan" as "RingSpan";
 htmldef "#r" as "#<sub>r</sub>";
   althtmldef "#r" as "#<sub>r</sub>";
   latexdef "#r" as "\mathrel{\neq\mathrel{\mkern -10mu}\neq_\mathrm{r}}";
+htmldef "DivRing" as
+  "<IMG SRC='_divring.gif' WIDTH=52 HEIGHT=19 ALT=' DivRing' TITLE='DivRing'>";
+  althtmldef "DivRing" as "DivRing";
+  latexdef "DivRing" as "\mathrm{DivRing}";
+htmldef "Field" as "Field";
+  althtmldef "Field" as "Field";
+  latexdef "Field" as "\mathrm{Field}";
 htmldef "LMod" as
     "<IMG SRC='_lmod.gif' WIDTH=36 HEIGHT=19 ALT=' LMod' TITLE='LMod'>";
   althtmldef "LMod" as "LMod";
