@@ -167769,6 +167769,61 @@ $)
       WKXDOVQVNAXFXGVJWMAGWAXEMVGVEVORVPSVR $.
   $}
 
+  ${
+    rng1zr.b $e |- B = ( Base ` R ) $.
+    rng1zr.p $e |- .+ = ( +g ` R ) $.
+    rng1zr.t $e |- .* = ( .r ` R ) $.
+    $( Lemma for ~ rng1zr and ~ srg1zr .  (Contributed by FL, 13-Feb-2010.)
+       (Revised by AV, 18-Jun-2026.) $)
+    rng1zrlem $p |- ( ( ( R e. Mgm /\ ( mulGrp ` R ) e. Mgm )
+                        /\ ( .+ Fn ( B X. B ) /\ .* Fn ( B X. B ) ) /\ Z e. B )
+                   -> ( B = { Z } <-> ( .+ = { <. <. Z , Z >. , Z >. }
+                                     /\ .* = { <. <. Z , Z >. , Z >. } ) ) ) $=
+      ( csn wceq wa cmgm wcel cfv cxp wfn cop wb mgmb1mgm1 eqid cmgp w3a pm4.24
+      simp1l simp2l syl3anc cplusg mgpbasg adantr 3ad2ant1 eqeq1d simp1r eleq2d
+      cbs biimpa 3adant2 mgpplusgg fneq1d biimpd adantld 3adant3 sqxpeqd fneq2d
+      simp3 imp mpbid eqcomd syl 3bitrd anbi12d bitrid ) AEIZJZVMVMKCLMZCUANZLM
+      ZKZBAAOZPZDVRPZKZEAMZUBZBEEQEQIZJZDWDJZKVMUCWCVMWEVMWFWCVNWBVSVMWERVNVPWA
+      WBUDZVQWAWBVDVQVSVTWBUEABCEFGSUFWCVMVOUNNZVLJZVOUGNZWDJZWFWCAWHVLVQWAAWHJ
+      ZWBVNWLVPACVOLVOTZFUHUIZUJZUKWCVPEWHMZWJWHWHOZPZWIWKRVNVPWAWBULVQWBWPWAVQ
+      WBWPVQAWHEWNUMUOUPWCWJVRPZWRVQWAWSWBVQWAWSVQVTWSVSVQVTWSVQVRDWJVNDWJJVPCD
+      VOLWMHUQZUIURUSUTVEVAWCVRWQWJWCAWHWOVBVCVFWHWJVOEWHTWJTSUFWCWJDWDWCVNWJDJ
+      WGVNDWJWTVGVHUKVIVJVK $.
+
+    $( The only ring with a base set consisting of one element is the zero ring
+       (at least if its operations are internal binary operations).
+       (Contributed by FL, 13-Feb-2010.)  (Revised by AV, 18-Jun-2026.) $)
+    rng1zr $p |- ( ( ( R e. Rng /\ .+ Fn ( B X. B ) /\ .* Fn ( B X. B ) )
+           /\ Z e. B ) -> ( B = { Z } <-> ( .+ = { <. <. Z , Z >. , Z >. }
+                                     /\ .* = { <. <. Z , Z >. , Z >. } ) ) ) $=
+      ( crng wcel cxp wfn w3a wa cmgm cmgp csn wceq cop adantr cfv rnggrp csgrp
+      wb grpmgmd rngmgp sgrpmgm syl jca 3ad2ant1 3simpc simpr rng1zrlem syl3anc
+      eqid ) CIJZBAAKZLZDUQLZMZEAJZNCOJZCPUAZOJZNZURUSNZVAAEQRBEESESQZRDVGRNUDU
+      TVEVAUPURVEUSUPVBVDUPCCUBUEUPVCUCJVDCVCVCUOUFVCUGUHUIUJTUTVFVAUPURUSUKTUT
+      VAULABCDEFGHUMUN $.
+
+    $( The only ring with one element is the zero ring (at least if its
+       operations are internal binary operations).  (Contributed by FL,
+       14-Feb-2010.)  (Revised by AV, 18-Jun-2026.) $)
+    rngen1zr $p |- ( ( ( R e. Rng /\ .+ Fn ( B X. B ) /\ .* Fn ( B X. B ) )
+           /\ Z e. B ) -> ( B ~~ 1o <-> ( .+ = { <. <. Z , Z >. , Z >. }
+                                     /\ .* = { <. <. Z , Z >. , Z >. } ) ) ) $=
+      ( crng wcel cxp wfn w3a wa c1o cen wbr csn wceq cop wb en1eqsnbi adantl
+      rng1zr bitrd ) CIJBAAKZLDUFLMZEAJZNAOPQZAERSZBEETETRZSDUKSNUHUIUJUAUGEAUB
+      UCABCDEFGHUDUE $.
+
+    rngen1zr0.0 $e |- .0. = ( 0g ` R ) $.
+    $( The only ring with one element is the zero ring (at least if its
+       operations are internal binary operations).  (Contributed by FL,
+       15-Feb-2010.)  (Revised by AV, 18-Jun-2026.) $)
+    rngen1zr0 $p |- ( ( R e. Rng /\ .+ Fn ( B X. B ) /\ .* Fn ( B X. B ) )
+               -> ( B ~~ 1o <-> ( .+ = { <. <. .0. , .0. >. , .0. >. }
+                               /\ .* = { <. <. .0. , .0. >. , .0. >. } ) ) ) $=
+      ( crng wcel cxp wfn w3a c1o cen wbr cop csn wceq rng0cl 3ad2ant1 rngen1zr
+      wa wb mpdan ) CJKZBAALZMZDUHMZNEAKZAOPQBEERERSZTDULTUDUEUGUIUKUJACEFIUAUB
+      ABCDEFGHUCUF $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -168188,26 +168243,22 @@ $)
     srg1zr.t $e |- .* = ( .r ` R ) $.
     $( The only semiring with a base set consisting of one element is the zero
        ring (at least if its operations are internal binary operations).
-       (Contributed by FL, 13-Feb-2010.)  (Revised by AV, 25-Jan-2020.) $)
+       (Contributed by FL, 13-Feb-2010.)  (Revised by AV, 25-Jan-2020.)  (Proof
+       shortened by AV, 19-Jun-2026.) $)
     srg1zr $p |- ( ( ( R e. SRing /\ .+ Fn ( B X. B ) /\ .* Fn ( B X. B ) )
            /\ Z e. B ) -> ( B = { Z } <-> ( .+ = { <. <. Z , Z >. , Z >. }
                                      /\ .* = { <. <. Z , Z >. , Z >. } ) ) ) $=
-      ( csn wceq wa csrg wcel cxp wfn cop cmgm adantr cfv eqid pm4.24 wb srgmnd
-      w3a cmnd 3ad2ant1 mndmgm syl simpl2 mgmb1mgm1 syl3anc cmgp cplusg mgpbasg
-      simpr cbs eqeq1d simpl1 srgmgp 3syl eleqtrd fneq1d biimpa 3adant2 sqxpeqd
-      mgpplusgg fneq2d mpbid eqcomd 3bitrd anbi12d bitrid ) AEIZJZVNVNKCLMZBAAN
-      ZOZDVPOZUDZEAMZKZBEEPEPIZJZDWBJZKVNUAWAVNWCVNWDWACQMZVTVQVNWCUBWACUEMZWEV
-      SWFVTVOVQWFVRCUCUFRCUGUHVSVTUOZVOVQVRVTUIABCEFGUJUKWAVNCULSZUPSZVMJZWHUMS
-      ZWBJZWDWAAWIVMVSAWIJZVTVOVQWMVRACWHLWHTZFUNUFRZUQWAWHQMZEWIMWKWIWINZOZWJW
-      LUBWAVOWHUEMWPVOVQVRVTURZCWHWNUSWHUGUTWAEAWIWGWOVAWAWKVPOZWRVSWTVTVOVRWTV
-      QVOVRWTVOVPDWKCDWHLWNHVFZVBVCVDRWAVPWQWKWAAWIWOVEVGVHWIWKWHEWITWKTUJUKWAW
-      KDWBWAVOWKDJWSVODWKXAVIUHUQVJVKVL $.
+      ( csrg wcel wfn wa cmgm csn wceq cop cmnd mndmgm syl adantr cxp wb srgmnd
+      w3a cmgp cfv eqid srgmgp jca 3ad2ant1 3simpc simpr rng1zrlem syl3anc ) CI
+      JZBAAUAZKZDUPKZUDZEAJZLCMJZCUEUFZMJZLZUQURLZUTAENOBEEPEPNZODVFOLUBUSVDUTU
+      OUQVDURUOVAVCUOCQJVACUCCRSUOVBQJVCCVBVBUGUHVBRSUIUJTUSVEUTUOUQURUKTUSUTUL
+      ABCDEFGHUMUN $.
 
-    srgen1zr.p $e |- Z = ( 0g ` R ) $.
+    srgen1zr0.p $e |- Z = ( 0g ` R ) $.
     $( The only semiring with one element is the zero ring (at least if its
        operations are internal binary operations).  (Contributed by FL,
        14-Feb-2010.)  (Revised by AV, 25-Jan-2020.) $)
-    srgen1zr $p |- ( ( R e. SRing /\ .+ Fn ( B X. B ) /\ .* Fn ( B X. B ) )
+    srgen1zr0 $p |- ( ( R e. SRing /\ .+ Fn ( B X. B ) /\ .* Fn ( B X. B ) )
                      -> ( B ~~ 1o <-> ( .+ = { <. <. Z , Z >. , Z >. }
                                      /\ .* = { <. <. Z , Z >. , Z >. } ) ) ) $=
       ( csrg wcel cxp wfn w3a c1o cop csn wceq wa wb cen wbr 3ad2ant1 en1eqsnbi
@@ -172821,11 +172872,10 @@ $)
     ring1zr.b $e |- B = ( Base ` R ) $.
     ring1zr.p $e |- .+ = ( +g ` R ) $.
     ring1zr.t $e |- .* = ( .r ` R ) $.
-    $( The only (unital) ring with a base set consisting of one element is the
+    $( The only unital ring with a base set consisting of one element is the
        zero ring (at least if its operations are internal binary operations).
-       Note:  The assumption ` R e. Ring ` could be weakened to ` R e. Rng `
-       (see ~ df-rng ) (it would be sufficient that the multiplication is
-       closed).  (Contributed by FL, 13-Feb-2010.)  (Revised by AV,
+       This holds already for nonunital rings, see ~ rng1zr , and semirings,
+       see ~ srg1zr .  (Contributed by FL, 13-Feb-2010.)  (Revised by AV,
        25-Jan-2020.)  (Proof shortened by AV, 7-Feb-2020.) $)
     ring1zr $p |- ( ( ( R e. Ring /\ .+ Fn ( B X. B ) /\ .* Fn ( B X. B ) )
            /\ Z e. B ) -> ( B = { Z } <-> ( .+ = { <. <. Z , Z >. , Z >. }
@@ -172833,30 +172883,17 @@ $)
       ( crg wcel csrg cxp wfn csn wceq cop wa wb ringsrg srg1zr syl3anl1 ) CIJC
       KJBAALZMDUBMEAJAENOBEEPEPNZODUCOQRCSABCDEFGHTUA $.
 
-    $( The only (unital) ring with one element is the zero ring (at least if
-       its operations are internal binary operations).  Note:  The assumption
-       ` R e. Ring ` could be weakened to ` R e. Rng ` (see ~ df-rng ) (it
-       would be sufficient that the multiplication is closed).  (Contributed by
-       FL, 14-Feb-2010.)  (Revised by AV, 25-Jan-2020.) $)
-    rngen1zr $p |- ( ( ( R e. Ring /\ .+ Fn ( B X. B ) /\ .* Fn ( B X. B ) )
-           /\ Z e. B ) -> ( B ~~ 1o <-> ( .+ = { <. <. Z , Z >. , Z >. }
-                                     /\ .* = { <. <. Z , Z >. , Z >. } ) ) ) $=
-      ( crg wcel cxp wfn w3a wa c1o cen wbr csn wceq cop en1eqsnbi adantl bitrd
-      wb ring1zr ) CIJBAAKZLDUFLMZEAJZNAOPQZAERSZBEETETRZSDUKSNUHUIUJUDUGEAUAUB
-      ABCDEFGHUEUC $.
-
-    ringen1zr.0 $e |- Z = ( 0g ` R ) $.
+    ringen1zr0.0 $e |- Z = ( 0g ` R ) $.
     $( The only unital ring with one element is the zero ring (at least if its
-       operations are internal binary operations).  Note:  The assumption
-       ` R e. Ring ` could be weakened to ` R e. Rng ` (it would be sufficient
-       that the multiplication is closed).  (Contributed by FL, 15-Feb-2010.)
-       (Revised by AV, 25-Jan-2020.) $)
-    ringen1zr $p |- ( ( R e. Ring /\ .+ Fn ( B X. B ) /\ .* Fn ( B X. B ) )
+       operations are internal binary operations).  This holds already for
+       nonunital rings, see ~ rngen1zr0 , and semirings, see ~ srgen1zr0 .
+       (Contributed by FL, 15-Feb-2010.)  (Revised by AV, 25-Jan-2020.)  (Proof
+       shortened by AV, 19-Jun-2026.) $)
+    ringen1zr0 $p |- ( ( R e. Ring /\ .+ Fn ( B X. B ) /\ .* Fn ( B X. B ) )
                       -> ( B ~~ 1o <-> ( .+ = { <. <. Z , Z >. , Z >. }
                                      /\ .* = { <. <. Z , Z >. , Z >. } ) ) ) $=
-      ( crg wcel cxp wfn w3a c1o cen wbr cop csn wceq ring0cl 3ad2ant1 rngen1zr
-      wa wb mpdan ) CJKZBAALZMZDUHMZNEAKZAOPQBEERERSZTDULTUDUEUGUIUKUJACEFIUAUB
-      ABCDEFGHUCUF $.
+      ( crg wcel crng cxp wfn c1o cen wbr cop csn wceq wa wb ringrng rngen1zr0
+      syl3an1 ) CJKCLKBAAMZNDUFNAOPQBEERERSZTDUGTUAUBCUCABCDEFGHIUDUE $.
   $}
 
 
