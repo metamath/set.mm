@@ -167403,7 +167403,7 @@ $)
     ${
       pwsinvg.m $e |- M = ( invg ` R ) $.
       pwsinvg.n $e |- N = ( invg ` Y ) $.
-      $( Negation in a group power.  (Contributed by Mario Carneiro,
+      $( Negation in a structure power.  (Contributed by Mario Carneiro,
          11-Jan-2015.) $)
       pwsinvg $p |- ( ( R e. Grp /\ I e. V /\ X e. B ) ->
         ( N ` X ) = ( M o. X ) ) $=
