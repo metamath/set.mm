@@ -166238,15 +166238,15 @@ $)
 
   ${
     $d F k $.  $d M j k $.  $d N j k $.  $d S k $.  $d j k ph $.
-    gsumgfsumlem.b $e |- B = ( Base ` G ) $.
-    gsumgfsumlem.g $e |- ( ph -> G e. CMnd ) $.
-    gsumgfsumlem.m $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
-    gsumgfsumlem.f $e |- ( ph -> F : ( M ... N ) --> B ) $.
-    gsumgfsumlem.s $e |- S = ( j e. ( 1 ... ( N + ( 1 - M ) ) )
+    gsumshift.b $e |- B = ( Base ` G ) $.
+    gsumshift.g $e |- ( ph -> G e. CMnd ) $.
+    gsumshift.m $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
+    gsumshift.f $e |- ( ph -> F : ( M ... N ) --> B ) $.
+    gsumshift.s $e |- S = ( j e. ( 1 ... ( N + ( 1 - M ) ) )
       |-> ( j - ( 1 - M ) ) ) $.
     $( Shifting the indexes of a group sum indexed by consecutive integers.
        (Contributed by Jim Kingdon, 26-Mar-2026.) $)
-    gsumgfsumlem $p |- ( ph -> ( G gsum F ) = ( G gsum ( F o. S ) ) ) $=
+    gsumshift $p |- ( ph -> ( G gsum F ) = ( G gsum ( F o. S ) ) ) $=
       ( cfv c1 co cvv wcel cz adantr vk cplusg cseq cmin ccom cgsu 1zzd eluzel2
       caddc cuz syl zsubcld cv wa wf wceq wf1o cmpt eluzelz mptfzshft zcnd 1cnd
       pncan3d oveq1d mpteq1d eqtr4id eqcomd eqidd f1oeq123d mpbird f1of zaddcld
@@ -166284,21 +166284,21 @@ $)
        Kingdon, 25-Mar-2026.) $)
     gsumgfsum $p |- ( ph -> ( G gsum F ) = ( G gfsum F ) ) $=
       ( vj cgsu co wceq c1 cfz wcel adantr c0 cle wbr cgfsu wn wa cmin caddc cv
-      cmpt ccom ccmn cuz cfv simpr eluz2 syl3anbrc eqid gsumgfsumlem cfn fzfigd
-      cz wf wf1o 1zzd zsubcld mptfzshft zcnd 1cnd pncan3d oveq1d mpteq1d hashfz
-      chash syl cc subadd23d eqtr2d oveq12d eqidd f1oeq123d gfsumval eqtr4d c0g
-      mpbid gfsum0 clt zltnle syl2anc mpbird fzn feq2d f0bi sylib oveq2d gsum0g
-      wb eqtrd 3eqtr4rd wdc wo zdcle exmiddc mpjaodan ) AEFUAUBZDCMNZDCUCNZOXDU
-      DZAXDUEZXEDCLPFPEUFNZUGNZQNZLUHXIUFNZUIZUJMNXFXHBXMLCDEFGADUKRZXDHSZXHEVA
-      RZFVARZXDFEULUMRZAXPXDISAXQXDJSZAXDUNEFUOUPZAEFQNZBCVBZXDKSZXMUQURXHYABCX
-      MDGXOYCAYAUSRXDAEFIJUTSXHEXIUGNZXJQNZYALYEXLUIZVCZPYAVMUMZQNZYAXMVCAYGXDA
-      LXIEFAPEAVDIVEIJVFSXHYEYIYAYAYFXMAYFXMOXDALYEXKXLAYDPXJQAEPAEIVGZAVHVIZVJ
-      VKSXHYDPXJYHQAYDPOXDYKSXHYHFEUFNPUGNZXJXHXRYHYLOXTEFVLVNXHFEPXHFXSVGAEVOR
-      XDYJSXHVHVPVQVRXHYAVSVTWDWAWBAXGUEZDTUCNZDWCUMZXFXEYMXNYNYOOAXNXGHSZDWEVN
-      YMCTDUCYMTBCVBZCTOYMYBYQAYBXGKSYMYATBCYMFEWFUBZYATOZYMYRXGAXGUNYMXQXPYRXG
-      WPAXQXGJSZAXPXGISZFEWGWHWIYMXPXQYRYSWPUUAYTEFWJWHWDWKWDCBWLWMZWNYMXEDTMNZ
-      YOYMCTDMUUBWNYMXNUUCYOOYPDUKYOYOUQWOVNWQWRAXDWSZXDXGWTAXPXQUUDIJEFXAWHXDX
-      BVNXC $.
+      cmpt ccom ccmn cz cuz cfv simpr eluz2 syl3anbrc eqid gsumshift cfn fzfigd
+      wf1o chash 1zzd zsubcld mptfzshft zcnd 1cnd pncan3d oveq1d mpteq1d hashfz
+      wf syl subadd23d eqtr2d oveq12d eqidd f1oeq123d mpbid gfsumval eqtr4d c0g
+      cc gfsum0 clt wb zltnle syl2anc mpbird fzn feq2d f0bi sylib oveq2d gsum0g
+      eqtrd 3eqtr4rd wdc wo zdcle exmiddc mpjaodan ) AEFUAUBZDCMNZDCUCNZOXDUDZA
+      XDUEZXEDCLPFPEUFNZUGNZQNZLUHXIUFNZUIZUJMNXFXHBXMLCDEFGADUKRZXDHSZXHEULRZF
+      ULRZXDFEUMUNRZAXPXDISAXQXDJSZAXDUOEFUPUQZAEFQNZBCVMZXDKSZXMURUSXHYABCXMDG
+      XOYCAYAUTRXDAEFIJVASXHEXIUGNZXJQNZYALYEXLUIZVBZPYAVCUNZQNZYAXMVBAYGXDALXI
+      EFAPEAVDIVEIJVFSXHYEYIYAYAYFXMAYFXMOXDALYEXKXLAYDPXJQAEPAEIVGZAVHVIZVJVKS
+      XHYDPXJYHQAYDPOXDYKSXHYHFEUFNPUGNZXJXHXRYHYLOXTEFVLVNXHFEPXHFXSVGAEWDRXDY
+      JSXHVHVOVPVQXHYAVRVSVTWAWBAXGUEZDTUCNZDWCUNZXFXEYMXNYNYOOAXNXGHSZDWEVNYMC
+      TDUCYMTBCVMZCTOYMYBYQAYBXGKSYMYATBCYMFEWFUBZYATOZYMYRXGAXGUOYMXQXPYRXGWGA
+      XQXGJSZAXPXGISZFEWHWIWJYMXPXQYRYSWGUUAYTEFWKWIVTWLVTCBWMWNZWOYMXEDTMNZYOY
+      MCTDMUUBWOYMXNUUCYOOYPDUKYOYOURWPVNWQWRAXDWSZXDXGWTAXPXQUUDIJEFXAWIXDXBVN
+      XC $.
   $}
 
   ${
