@@ -167422,7 +167422,7 @@ $)
 
     pwssub.m $e |- M = ( -g ` R ) $.
     pwssub.n $e |- .- = ( -g ` Y ) $.
-    $( Subtraction in a group power.  (Contributed by Mario Carneiro,
+    $( Subtraction in a structure power.  (Contributed by Mario Carneiro,
        12-Jan-2015.) $)
     pwssub $p |- ( ( ( R e. Grp /\ I e. V ) /\ ( F e. B /\ G e. B ) ) ->
         ( F .- G ) = ( F oF M G ) ) $=
