@@ -167272,8 +167272,8 @@ $)
       VFBRKWQVGBDVIWQRBMBMVHVJVKSICWDERVLUNAWDCPHVMVNVO $.
 
     pwselbas.v $e |- V = ( Base ` Y ) $.
-    $( Membership in the base set of a structure product.  (Contributed by
-       Stefan O'Rear, 24-Jan-2015.) $)
+    $( Membership in the base set of a structure power.  (Contributed by Stefan
+       O'Rear, 24-Jan-2015.) $)
     pwselbasb $p |- ( ( R e. W /\ I e. Z ) -> ( X e. V <-> X : I --> B ) ) $=
       ( wcel wa cmap co wf cbs cfv pwsbas cvv eqtr4di eleq2d basfn elex funfvex
       wb wfn funfni sylancr eqeltrid elmapg sylan bitr3d ) BELZCHLZMZFACNOZLZFD
