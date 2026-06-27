@@ -92,6 +92,7 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+17-Jun-26 bj-a1k      ax1w        Moved from BJ's mathbox to main set.mm
 20-Jun-26 reldisjun   reldmun     Removed conjunct from antecedent
 19-Jun-26 ringen1zr   ringen1zr0
 19-Jun-26 srgen1zr    srgen1zr0
