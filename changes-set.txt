@@ -92,6 +92,7 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+28-Jun-26 drnglidl1ne0 [same]     Moved from TA's mathbox to main set.mm
 28-Jun-26 pm4.71da    [same]      Moved from ZW's mathbox to main set.mm
 27-Jun-26 elringlsm   elmgplsm    Moved from TA's mathbox to main set.mm
 27-Jun-26 elringlsmd  elmgplsmd   Moved from TA's mathbox to main set.mm 
