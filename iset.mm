@@ -157195,6 +157195,7 @@ $)
   $c Xt_ $.
   $c 0g $.
   $c gsum $.
+  $c gzsum $.
 
   $( Extend class notation with a function that converts a basis to its
      corresponding topology. $)
@@ -157210,10 +157211,13 @@ $)
   $( Extend class notation to include group sums over finite sets. $)
   cgsu $a class gsum $.
 
+  $( Extend class notation to include group sums over integer ranges. $)
+  cgzsu $a class gzsum $.
+
   ${
     $d e f g m n o w x y $.
     $( Define group identity element.  Remark: this definition is required here
-       because the symbol ` 0g ` is already used in ~ df-igsum .  The related
+       because the symbol ` 0g ` is already used in ~ df-gzsum .  The related
        theorems will be provided later.  (Contributed by NM, 20-Aug-2011.) $)
     df-0g $a |- 0g = ( g e. _V |-> ( iota e ( e e. ( Base ` g ) /\
                   A. x e. ( Base ` g )
@@ -157221,7 +157225,7 @@ $)
 
     $( Define a finite group sum (also called "iterated sum") of a structure.
 
-       Given ` G gsum F ` where ` F : A --> ( Base `` G ) ` , the set of
+       Given ` G gzsum F ` where ` F : A --> ( Base `` G ) ` , the set of
        indices is ` A ` and the values are given by ` F ` at each index.  A
        group sum over a multiplicative group may be viewed as a product.  The
        definition is meaningful in different contexts, depending on the size of
@@ -157240,7 +157244,7 @@ $)
 
        (Contributed by FL, 5-Sep-2010.)  (Revised by Mario Carneiro,
        7-Dec-2014.)  (Revised by Jim Kingdon, 27-Jun-2025.) $)
-    df-igsum $a |- gsum = ( w e. _V , f e. _V |->
+    df-gzsum $a |- gzsum = ( w e. _V , f e. _V |->
        ( iota x ( ( dom f = (/) /\ x = ( 0g ` w ) )
          \/ E. m E. n e. ( ZZ>= ` m ) ( dom f = ( m ... n ) /\
          x = ( seq m ( ( +g ` w ) , f ) ` n ) ) ) ) ) $.
@@ -208806,6 +208810,10 @@ htmldef "gsum" as " <IMG SRC='csigma.gif' WIDTH=11 HEIGHT=19 " +
     "ALT=' gsum' TITLE='gsum'><sub><i>g</i></sub> ";
   althtmldef "gsum" as " &Sigma;<sub><i>g</i></sub> ";
   latexdef "gsum" as "\sum_g";
+htmldef "gzsum" as " <IMG SRC='csigma.gif' WIDTH=11 HEIGHT=19 " +
+    "ALT=' gzsum' TITLE='gzsum'><sub><i>gz</i></sub> ";
+  althtmldef "gzsum" as " &Sigma;<sub><i>gz</i></sub> ";
+  latexdef "gzsum" as "\sum_gz";
 htmldef "gfsum" as " <IMG SRC='csigma.gif' WIDTH=11 HEIGHT=19 " +
     "ALT=' gfsum' TITLE='gfsum'><sub><i>gf</i></sub> ";
   althtmldef "gfsum" as " &Sigma;<sub><i>gf</i></sub> ";

@@ -12320,9 +12320,9 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td rowspan="2">df-gsum</td>
-  <td>~ df-igsum</td>
+  <td>~ df-gzsum</td>
   <td>the set.mm definition would require more decidability than
-  we want to require in many cases. So we define ` gsum `
+  we want to require in many cases. So we define ` gzsum `
   for sums indexed by consecutive integers...
   </td>
 </tr>
@@ -12544,13 +12544,13 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>gsumvalx</td>
   <td>~ igsumvalx</td>
-  <td>reflects differences between df-gsum and ~ df-igsum</td>
+  <td>reflects differences between df-gsum and ~ df-gzsum</td>
 </tr>
 
 <tr>
   <td>gsumval</td>
   <td>~ igsumval , ~ gsumfzval</td>
-  <td>reflects differences between df-gsum and ~ df-igsum</td>
+  <td>reflects differences between df-gsum and ~ df-gzsum</td>
 </tr>
 
 <tr>
@@ -12563,7 +12563,7 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>gsumval1</td>
   <td><i>none</i></td>
   <td>would require different conditions but possibly not
-  relevant given ~ df-igsum</td>
+  relevant given ~ df-gzsum</td>
 </tr>
 
 <tr>
@@ -14575,12 +14575,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td id="missing-psrmulr">psrmulr</td>
   <td><i>none</i></td>
-  <td>although this theorem itself just extracts the multiplication
-  slot from the result of ~ psrval (analogous to ~ psrplusgg ),
-  the fundamental issue with ` mPwSer ` multiplication is that
-  the set.mm definition of that slot uses ` gsum ` on something
-  which is not a range of consecutive integers (as required by
-  ~ df-igsum )</td>
+  <td>presumably provable in this form or with small
+  changes, once ` gsum ` syntax uses ~ df-gfsum .</td>
 </tr>
 
 <tr>
