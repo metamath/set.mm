@@ -89739,6 +89739,15 @@ $)
       ( cr wcel wceq cle wbr wa wb letri3 syl2anc ) ABFGCFGBCHBCIJCBIJKLDEBCMN
       $.
 
+    ${
+      letrid.3 $e |- ( ph -> A <_ B ) $.
+      letrid.4 $e |- ( ph -> B <_ A ) $.
+      $( Tightness of real apartness.  (Contributed by Matthew House,
+         28-Jun-2026.) $)
+      letrid $p |- ( ph -> A = B ) $=
+        ( wceq cle wbr letri3d mpbir2and ) ABCHBCIZJCBMJFGABCDEKL $.
+    $}
+
     $( Equality in terms of 'less than or equal to', 'less than'.  (Contributed
        by NM, 7-Apr-2001.) $)
     eqleltd $p |- ( ph -> ( A = B <-> ( A <_ B /\ -. A < B ) ) ) $=
@@ -94406,6 +94415,18 @@ $)
       ( cc wcel cc0 cap wbr wa cmul co wceq wb pm3.2i mulcanap mp3an ) AHIBHICH
       IZCJKLZMCANOCBNOPABPQDEUAUBFGRABCST $.
   $}
+
+  $( A number is apart from zero iff its square is apart from zero.
+     (Contributed by Matthew House, 28-Jun-2026.) $)
+  msqap0 $p |- ( A e. CC -> ( ( A x. A ) =//= 0 <-> A =//= 0 ) ) $=
+    ( cc wcel cc0 cap wbr wa cmul co wb mulap0b anidms anidm bitr3di ) ABCZADZE
+    ZFZRGZAAHIPQFZROSTJAAKLRMN $.
+
+  $( A number is zero iff its square is zero.  (Contributed by Matthew House,
+     28-Jun-2026.) $)
+  msq0 $p |- ( A e. CC -> ( ( A x. A ) = 0 <-> A = 0 ) ) $=
+    ( cc wcel cmul co cc0 id mulcld 0cnd msqap0 apcon4bid ) ABCZAADEFZAMLAALGZN
+    HLIZNOAJK $.
 
   $( Property of numbers whose product equals their sum.  Equation 5 of
      [Kreyszig] p. 12.  (Contributed by NM, 13-Nov-2006.) $)
@@ -209316,6 +209337,148 @@ $)
       AJBCKLEVMFGHIVMUNZUOAVIVHVMUSZVQWDAJBCKLEVMFGHIWOUPZUQAWPVQWDWQUTAJBCDKLE
       VMFGHIWOURWMVQWDSDVOVMWNWGVQWLWDWNWFVPBVKWEVMTVAWNWKWCEVIWNWHVSWJWBVRWEVM
       TWNWIVTWAVNWEVMTVBVCVDVEVFVG $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    $( Alternative definition for ` <_ ` on real numbers.  (Contributed by
+       Matthew House, 29-Jun-2026.) $)
+    lealltlt1 $p |- ( ( A e. RR /\ B e. RR ) ->
+        ( A <_ B <-> A. x e. RR ( x < A -> x < B ) ) ) $=
+      ( cr wcel wa cle wbr cv clt wral w3a ltletr expcomd 3expib com3l ralrimdv
+      wi wn breq1 wceq imbi12d rspcv ltnr syl6ci adantl lenlt sylibrd impbid
+      con3 ) BDZEZCUKEZFZBCGHZAIZBJZHZUPCUQHZRZAUKKZUNUOUTAUKUPUKEZUNUOUTVBULUM
+      UOUTRVBULUMLURUOUSUPBCMNOPQUNVACBUQHZSZUOUMVAVDRULUMVAVCCCUQHZRZVESVDUTVF
+      ACUKUPCUAURVCUSVEUPCBUQTUPCCUQTUBUCCUDVCVEUJUEUFBCUGUHUI $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    $( Alternative definition for ` <_ ` on real numbers.  (Contributed by
+       Matthew House, 29-Jun-2026.) $)
+    lealltlt2 $p |- ( ( A e. RR /\ B e. RR ) ->
+        ( A <_ B <-> A. x e. RR ( B < x -> A < x ) ) ) $=
+      ( cr wcel wa cle wbr cv clt wi wral w3a lelttr expd 3expia com23 ralrimdv
+      wn breq2 wceq imbi12d rspcv ltnr con3 syl6ci adantr lenlt sylibrd impbid
+      ) BDZEZCUKEZFZBCGHZCAIZJZHZBUPUQHZKZAUKLZUNUOUTAUKUNUPUKEZUOUTULUMVBUOUTK
+      ULUMVBMUOURUSBCUPNOPQRUNVACBUQHZSZUOULVAVDKUMULVAVCBBUQHZKZVESVDUTVFABUKU
+      PBUAURVCUSVEUPBCUQTUPBBUQTUBUCBUDVCVEUEUFUGBCUHUIUJ $.
+  $}
+
+  ${
+    dichmul0orlem1.1 $e |- ( ph -> A e. RR ) $.
+    dichmul0orlem1.2 $e |- ( ph -> B e. RR ) $.
+    dichmul0orlem1.3 $e |- ( ph -> ( A x. B ) = 0 ) $.
+    dichmul0orlem1.4 $e |- ( ph -> 0 <_ A ) $.
+    dichmul0orlem1.5 $e |- ( ph -> A <_ B ) $.
+    $( Lemma for ~ dichmul0or .  (Contributed by Matthew House,
+       29-Jun-2026.) $)
+    dichmul0orlem1 $p |- ( ph -> A = 0 ) $=
+      ( cmul co cc0 wceq remulcld 0red cle lemul2ad breqtrd msqge0d letrid cc
+      wcel wb recnd msq0 syl mpbid ) ABBIZJZKZLZBUILZAUHUIABBDDMANAUHBCUGJUIOAB
+      CBDEDGHPFQABDRSABTUAUJUKUBABDUCBUDUEUF $.
+  $}
+
+  ${
+    dichmul0orlem2.1 $e |- ( ph -> A e. CC ) $.
+    dichmul0orlem2.2 $e |- ( ph -> B e. CC ) $.
+    dichmul0orlem2.3 $e |- ( ph -> ( A x. B ) = 0 ) $.
+    dichmul0orlem2.4 $e |- ( ph -> ( abs ` A ) <_ ( abs ` B ) ) $.
+    $( Lemma for ~ dichmul0or .  (Contributed by Matthew House,
+       29-Jun-2026.) $)
+    dichmul0orlem2 $p |- ( ph -> A = 0 ) $=
+      ( cabs cfv abscld co absmuld abs00bd eqtr3d absge0d dichmul0orlem1 abs00d
+      cmul cc0 ) ABDABHZIZCTIZABDJACEJABCRZKZTIUAUBUCKSABCDELAUDFMNABDOGPQ $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.
+    dichmul0orlem3.1 $e |- ( ph ->
+        A. x e. RR A. y e. RR ( x <_ y \/ y <_ x ) ) $.
+    dichmul0orlem3.2 $e |- ( ph -> A e. CC ) $.
+    dichmul0orlem3.3 $e |- ( ph -> B e. CC ) $.
+    dichmul0orlem3.4 $e |- ( ph -> ( A x. B ) = 0 ) $.
+    $( Lemma for ~ dichmul0or .  (Contributed by Matthew House,
+       29-Jun-2026.) $)
+    dichmul0orlem3 $p |- ( ph -> ( A = 0 \/ B = 0 ) ) $=
+      ( cfv wbr wceq wo wa wcel adantr co simpr dichmul0orlem2 cv cabs cle cmul
+      cc0 cc orcd mulcomd eqtr3d olcd cr wral abscld jca breq12 orbi12d rspc2gv
+      wb ancoms sylc mpjaodan ) ADUAZJZEVAJZUBZKZDUDZLZEVFLZMVCVBVDKZAVENZVGVHV
+      JDEADUEZOZVEGPAEVKOZVEHPADEUCZQZVFLVEIPAVERSUFAVINZVHVGVPEDAVMVIHPAVLVIGP
+      AEDVNQZVFLVIAVOVQVFADEGHUGIUHPAVIRSUIAVBUJZOZVCVROZNBTZCTZVDKZWBWAVDKZMZC
+      VRUKBVRUKVEVIMZAVSVTADGULAEHULUMFWEWFBCVBVCVRVRWAVBLZWBVCLZNWCVEWDVIWAVBW
+      BVCVDUNWHWGWDVIUQWBVCWAVBVDUNURUOUPUSUT $.
+  $}
+
+  ${
+    dichmul0orlem4.1 $e |- ( ph -> A e. RR ) $.
+    $( Lemma for ~ dichmul0or .  (Contributed by Matthew House,
+       29-Jun-2026.) $)
+    dichmul0orlem4 $p |- ( ph ->
+        ( ( ( abs ` A ) + A ) x. ( ( abs ` A ) - A ) ) = 0 ) $=
+      ( cabs cfv c2 cexp co cmin caddc cmul cc0 cc wcel wceq recnd abscld subsq
+      syl2anc sqcld cr absresq syl subeq0bd eqtr3d ) ABDEZFZGZHZBUGUHHZIZHZUFBJ
+      HUFBUKHKHZLAUFMZNBUNNULUMOAUFABABCPZQPZUOUFBRSAUIUJAUFUPTABUANUIUJOCBUBUC
+      UDUE $.
+  $}
+
+  ${
+    dichmul0orlem5.1 $e |- ( ph -> A e. RR ) $.
+    dichmul0orlem5.2 $e |- ( ph -> ( ( abs ` A ) + A ) = 0 ) $.
+    $( Lemma for ~ dichmul0or .  (Contributed by Matthew House,
+       29-Jun-2026.) $)
+    dichmul0orlem5 $p |- ( ph -> A <_ 0 ) $=
+      ( cc0 0red clt wbr cabs cfv caddc co wceq adantr wa wcel recnd abscld cap
+      cr simpr gt0ap0d cc wb absgt0ap syl mpbid addgt0d gt0ne0d neneqd pm2.65da
+      nltled ) ABEZCAFAUMBGZHZBIJZBKLZUMMZAURUODNAUOOZUQUMUSUQUSUPBUSBUSBABTPUO
+      CNZQZRUTUSBUMSHZUMUPUNHZUSBUTAUOUAZUBUSBUCPVBVCUDVABUEUFUGVDUHUIUJUKUL $.
+  $}
+
+  ${
+    dichmul0orlem6.1 $e |- ( ph -> A e. RR ) $.
+    dichmul0orlem6.2 $e |- ( ph -> ( ( abs ` A ) - A ) = 0 ) $.
+    $( Lemma for ~ dichmul0or .  (Contributed by Matthew House,
+       28-Jun-2026.) $)
+    dichmul0orlem6 $p |- ( ph -> 0 <_ A ) $=
+      ( cc0 0red clt wbr cabs cfv cneg caddc co wceq wa cmin wcel adantr recnd
+      cr abscld negsubd eqtrd renegcld simpr lt0ap0d cc absgt0ap mpbid lt0neg1d
+      cap wb syl biimpa addgt0d gt0ne0d neneqd pm2.65da nltled ) AEZBAFCABUTGZH
+      ZBIJZBKZLMZUTNAVBOZVEVCBPMZUTVFVCBVFVCVFBVFBABTQVBCRZSZUAZSVIUBAVGUTNVBDR
+      UCVFVEUTVFVEVFVCVDVJVFBVHUDVFBUTUKHZUTVCVAHZVFBVHAVBUEUFVFBUGQVKVLULVIBUH
+      UMUIAVBUTVDVAHABCUJUNUOUPUQURUS $.
+  $}
+
+  ${
+    $d A x y $.
+    dichmul0orlem7.1 $e |- ( ph ->
+        A. x e. CC A. y e. CC ( ( x x. y ) = 0 -> ( x = 0 \/ y = 0 ) ) ) $.
+    dichmul0orlem7.2 $e |- ( ph -> A e. RR ) $.
+    $( Lemma for ~ dichmul0or .  (Contributed by Matthew House,
+       28-Jun-2026.) $)
+    dichmul0orlem7 $p |- ( ph -> ( A <_ 0 \/ 0 <_ A ) ) $=
+      ( cabs co wceq wbr wo wa wcel adantr simpr cv wi wral recnd eqeq1d cfv cr
+      caddc cc0 cle cmin dichmul0orlem5 orcd dichmul0orlem6 olcd dichmul0orlem4
+      cmul cc abscld addcld subcld oveq12 simpl orbi12d imbi12d rspc2gv syl2anc
+      mp2d mpjaodan ) ADGUAZDUCHZUDZIZDVGUEZJZVGDVIJZKVEDUFHZVGIZAVHLZVJVKVNDAD
+      UBMZVHFNAVHOUGUHAVMLZVKVJVPDAVOVMFNAVMOUIUJABPZCPZULZHZVGIZVQVGIZVRVGIZKZ
+      QZCUMZRBWFRZVFVLVSHZVGIZVHVMKZEADFUKAVFWFMVLWFMWGWIWJQZQAVEDAVEADADFSZUNS
+      ZWLUOAVEDWMWLUPWEWKBCVFVLWFWFVQVFIZVRVLIZLZWAWIWDWJWPVTWHVGVQVFVRVLVSUQTW
+      PWBVHWCVMWPVQVFVGWNWOURTWPVRVLVGWNWOOTUSUTVAVBVCVD $.
+  $}
+
+  ${
+    $d v w x y z $.
+    $( Real number dichotomy is equivalent to the zero product principle for
+       complex numbers: if a product is zero, one of its factors must be zero.
+       (Contributed by Matthew House, 29-Jun-2026.) $)
+    dichmul0or $p |- ( A. x e. RR A. y e. RR ( x <_ y \/ y <_ x )
+        <-> A. z e. CC A. w e. CC ( ( z x. w ) = 0 -> ( z = 0 \/ w = 0 ) ) ) $=
+      ( vv cv cle wbr wo cr wral cmul co cc0 wceq wi cc wcel wa w3a simp1 simp3
+      simp2l simp2r dichmul0orlem3 3expia ralrimivva simpl simpr dichmul0orlem7
+      ralrimiva dich0 sylib impbii ) AFZBFZGZHUPUOUQHIBJZKAURKZCFZDFZLMNZOZUTVB
+      OVAVBOIZPZDQZKCVFKZUSVECDVFVFUSUTVFRZVAVFRZSZVCVDUSVJVCTABUTVAUSVJVCUAUSV
+      HVIVCUCUSVHVIVCUDUSVJVCUBUEUFUGVGEFZVBUQHVBVKUQHIZEURKUSVGVLEURVGVKURRZSC
+      DVKVGVMUHVGVMUIUJUKABEULUMUN $.
   $}
 
 $( (End of Matthew House's mathbox.) $)
