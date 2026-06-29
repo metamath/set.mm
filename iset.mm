@@ -158824,18 +158824,18 @@ $)
     $d f m n w x $.
     $( Iterated sum has a universal domain.  (Contributed by Jim Kingdon,
        28-Jun-2025.) $)
-    fngsum $p |- gsum Fn ( _V X. _V ) $=
+    fngzsum $p |- gzsum Fn ( _V X. _V ) $=
       ( vw vf vx vm vn cvv cv wceq c0g cfv wa wrex wex cab wcel eqeltrri ss2abi
-      simpr cz df-rex cdm c0 cfz cplusg cseq cuz cio cgsu df-igsum cun unab csn
-      co wo df-sn wfn fn0g vex funfvex funfni mp2an snex ssexi ab2rexex eluzel2
-      zex eluzelz jca anim12i anass sylib eximi sylbi 19.42v anbi2i sylibr unex
-      iotaexab ax-mp fnmpoi ) ABFFBGZUAZUBHZCGZAGZIJZHZKZWBDGZEGZUCUMHZWDWJWEUD
-      JWAWIUEJZHZKZEWIUFJZLZDMZUNZCUGZUHCABDEUIWRCNZFOWSFOWHCNZWQCNZUJWTFWHWQCU
-      KXAXBXAWGCNZWFULXCFCWFUOWFIFUPWEFOWFFOZUQAURXDFWEIWEIUSUTVAVBPWHWGCWCWGRQ
-      VCXBWMESLZDSLZCNDECSSWLVFVFVDWQXFCWQWISOZXEKZDMXFWPXHDWPXGWJSOZWMKZEMZKZX
-      HWPXGXJKZEMZXLWPWJWOOZWNKZEMXNWNEWOTXPXMEXPXGXIKZWMKXMXOXQWNWMXOXGXIWIWJV
-      EWIWJVGVHWKWMRVIXGXIWMVJVKVLVMXGXJEVNVKXEXKXGWMESTVOVPVLXEDSTVPQVCVQPWRCF
-      VRVSVT $.
+      simpr cz df-rex cdm c0 cfz co cplusg cseq cuz cio cgzsu df-gzsum cun unab
+      wo csn df-sn wfn fn0g vex funfvex funfni mp2an ssexi zex ab2rexex eluzel2
+      eluzelz jca anim12i anass sylib eximi sylbi 19.42v anbi2i sylibr iotaexab
+      snex unex ax-mp fnmpoi ) ABFFBGZUAZUBHZCGZAGZIJZHZKZWBDGZEGZUCUDHZWDWJWEU
+      EJWAWIUFJZHZKZEWIUGJZLZDMZUMZCUHZUICABDEUJWRCNZFOWSFOWHCNZWQCNZUKWTFWHWQC
+      ULXAXBXAWGCNZWFUNXCFCWFUOWFIFUPWEFOWFFOZUQAURXDFWEIWEIUSUTVAVQPWHWGCWCWGR
+      QVBXBWMESLZDSLZCNDECSSWLVCVCVDWQXFCWQWISOZXEKZDMXFWPXHDWPXGWJSOZWMKZEMZKZ
+      XHWPXGXJKZEMZXLWPWJWOOZWNKZEMXNWNEWOTXPXMEXPXGXIKZWMKXMXOXQWNWMXOXGXIWIWJ
+      VEWIWJVFVGWKWMRVHXGXIWMVIVJVKVLXGXJEVMVJXEXKXGWMESTVNVOVKXEDSTVOQVBVRPWRC
+      FVPVSVT $.
   $}
 
   ${
