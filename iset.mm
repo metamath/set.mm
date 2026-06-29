@@ -166526,6 +166526,35 @@ $)
       DARUEUFUGABCDEFGHIJKLMNOPQRUHUI $.
   $}
 
+  ${
+    $d A w y z $.  $d F w y z $.  $d G w y z $.  $d S w y z $.  $d ph w y z $.
+    gfsumsubmclfi.z $e |- .0. = ( 0g ` G ) $.
+    gfsumsubmclfi.g $e |- ( ph -> G e. CMnd ) $.
+    gfsumsubmclfi.a $e |- ( ph -> A e. Fin ) $.
+    gfsumsubmclfi.s $e |- ( ph -> S e. ( SubMnd ` G ) ) $.
+    gfsumsubmclfi.f $e |- ( ph -> F : A --> S ) $.
+    $( Closure of a group sum in a submonoid.  (Contributed by Mario Carneiro,
+       10-Jan-2015.)  (Revised by Mario Carneiro, 24-Apr-2016.)  (Revised by
+       AV, 3-Jun-2019.) $)
+    gfsumsubmclfi $p |- ( ph -> ( G gfsum F ) e. S ) $=
+      ( cres cgfsu co wceq oveq2d wcel c0 eleq1d cfv vw vy wfn ffnd fnresdm syl
+      vz cv csn cun reseq2 c0g ccmn gfsum0 res0 3eqtr4g csubmnd subm0cl eqeltrd
+      oveq2i cfn wa wss cdif ad3antrrr ssun1 resabs1 ax-mp simpr eqeltrid ssun2
+      cplusg vsnid sselii fvres ad2antrr simprr eldifad ffvelcdmd adantr submcl
+      wf eqid syl3anc cbs submss fssd simprl snssd unssd fssresd simplr eldifbd
+      wb gfsump1 mpbird ex findcard2sd eqeltrrd ) AEDBLZMNZEDMNCAWTDEMADBUCWTDO
+      ABCDKUDBDUEUFPAEDUAUHZLZMNZCQEDRLZMNZCQEDUBUHZLZMNZCQZEDXGUGUHZUIZUJZLZMN
+      ZCQZXACQUAUBUGBXBROZXDXFCXQXCXEEMXBRDUKPSXBXGOZXDXICXRXCXHEMXBXGDUKPSXBXM
+      OZXDXOCXSXCXNEMXBXMDUKPSXBBOZXDXACXTXCWTEMXBBDUKPSAXFFCAERMNZEULTZXFFAEUM
+      QZYAYBOHEUNUFXEREMDUOUTGUPACEUQTQZFCQJCEFGURUFUSAXGVAQZVBZXGBVCZXKBXGVDQZ
+      VBZVBZXJXPYJXJVBZXPEXNXGLZMNZXKXNTZEVLTZNZCQZYKYDYMCQYNCQZYQAYDYEYIXJJVEY
+      KYMXICYLXHEMXGXMVCYLXHOXGXLVFDXGXMVGVHUTYJXJVIVJYJYRXJYJYNXKDTZCXKXMQYNYS
+      OXLXMXKXLXGVKUGVMVNXKXMDVOVHYJBCXKDABCDWBYEYIKVPZYJXKBXGYFYGYHVQZVRZVSVJV
+      TYOCEYMYNYOWCZWAWDYJXPYQWNXJYJXOYPCYJEWETZYOXNEBXGXKUUDWCZUUCAYCYEYIHVPYJ
+      BUUDXMDYJBCUUDDYTACUUDVCZYEYIAYDUUFJUUDCEUUEWFUFVPWGYJXGXLBYFYGYHWHYJXKBU
+      UBWIWJWKAYEYIWLUUBYJXKBXGUUAWMWOSVTWPWQIWRWS $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
