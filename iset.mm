@@ -158809,15 +158809,6 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Iterated sums in a magma
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
-  The symbol ` gsum ` is mostly used in the context of abelian groups.
-  Therefore, it is usually called "group sum".  It can be defined, however, in
-  arbitrary magmas (then it should be called "iterated sum").  If the magma is
-  not required to be commutative or associative, then the order of the summands
-  and the order in which summations are done become important.  If the magma is
-  not unital, then one cannot define a meaningful empty sum.  See the comment
-  for ~ df-igsum .
-
 $)
 
   ${
