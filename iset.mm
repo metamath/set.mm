@@ -158982,31 +158982,31 @@ $)
   ${
     $d .+ m n x $.  $d .+ x y $.  $d B x y $.  $d F m n x $.  $d G m n x $.
     $d G x y $.  $d M m n x $.  $d N m n x $.  $d V x $.  $d m n ph x $.
-    gsumval2.b $e |- B = ( Base ` G ) $.
-    gsumval2.p $e |- .+ = ( +g ` G ) $.
-    gsumval2.g $e |- ( ph -> G e. V ) $.
-    gsumval2.n $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
-    gsumval2.f $e |- ( ph -> F : ( M ... N ) --> B ) $.
+    gzsumval2.b $e |- B = ( Base ` G ) $.
+    gzsumval2.p $e |- .+ = ( +g ` G ) $.
+    gzsumval2.g $e |- ( ph -> G e. V ) $.
+    gzsumval2.n $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
+    gzsumval2.f $e |- ( ph -> F : ( M ... N ) --> B ) $.
     $( Value of the group sum operation over a finite set of sequential
        integers.  (Contributed by Mario Carneiro, 7-Dec-2014.) $)
-    gsumval2 $p |- ( ph -> ( G gsum F ) = ( seq M ( .+ , F ) ` N ) ) $=
-      ( vx vm vn wceq cfv wa wcel cgsu co cfz c0 cv c0g cseq cuz wex wo cio cfn
-      wrex cz eluzel2 syl eluzelz fzfigd igsumval simprr simprl wb eqcom fzopth
-      eqid bitr3id adantr mpbid simpld seqeq1d simprd fveq12d rexlimiva exlimiv
-      eqtrd cvv elexd oveq2 eqeq2d fveq2 anbi12d eqidd simpr jca rspcedvd oveq1
-      adantl seqeq1 fveq1d rexeqbidv spcedv impbid2 eluzfz2 n0i intnanrd bitr3d
-      ex wn biorf iotabidv weu seqex fvexg sylancr eueq sylib eqeq1 iota2 mpbii
-      syl2anc 3eqtr2d ) AEDUAUBFGUCUBZUDQZNUEZEUFRZQZSZXLOUEZPUEZUCUBZQZXNXSCDX
-      RUGZRZQZSZPXRUHRZUMZOUIZUJZNUKXNGCDFUGZRZQZNUKZYKANXLBCOPDEHULXOIXOVEJKAF
-      GAGFUHRZTZFUNTLFGUOUPZAYOGUNTLFGUQUPURMUSAYLYINAYHYLYIAYHYLYGYLOYEYLPYFXS
-      YFTZYESZXNYCYKYQYAYDUTYRXSGYBYJYRXRFCDYRXRFQZXSGQZYRYAYSYTSZYQYAYDVAYQYAU
-      UAVBYEYAXTXLQYQUUAXTXLVCFGXRXSVDVFVGVHZVIVJYRYSYTUUBVKVLVOVMVNAYLYHAYLSZY
-      GXLFXSUCUBZQZXNXSYJRZQZSZPYNUMOFAFVPTYLAFUNYPVQVGUUCUUHXLXLQZYLSZPGYNAYOY
-      LLVGYTUUHUUJVBUUCYTUUEUUIUUGYLYTUUDXLXLXSGFUCVRVSYTUUFYKXNXSGYJVTVSWAWGUU
-      CUUIYLUUCXLWBAYLWCWDWEYSYEUUHPYFYNXRFUHVTYSYAUUEYDUUGYSXTUUDXLXRFXSUCWFVS
-      YSYCUUFXNYSXSYBYJCDXRFWHWIVSWAWJWKWQWLAXQWRYHYIVBAXMXPAGXLTZXMWRAYOUUKLFG
-      WMUPXLGWNUPWOXQYHWSUPWPWTAYKYKQZYMYKQZYKVEAYKVPTZYLNXAZUULUUMVBAYJVPTYOUU
-      NCDFXBLGYJVPYNXCXDZAUUNUUOUUPNYKXEXFYLUULNYKVPXNYKYKXGXHXJXIXK $.
+    gzsumval2 $p |- ( ph -> ( G gzsum F ) = ( seq M ( .+ , F ) ` N ) ) $=
+      ( vx vm vn wceq cfv wa wcel cgzsu co cfz c0 c0g cseq cuz wrex wex cio cfn
+      cv wo eqid cz eluzel2 syl eluzelz fzfigd gzsumval simprr simprl wb fzopth
+      eqcom bitr3id adantr mpbid simpld seqeq1d fveq12d eqtrd rexlimiva exlimiv
+      simprd cvv elexd oveq2 eqeq2d fveq2 anbi12d eqidd simpr jca seqeq1 fveq1d
+      rspcedvdw oveq1 rexeqbidv spcedv ex impbid2 wn eluzfz2 n0i intnanrd biorf
+      3syl bitr3d iotabidv weu seqex fvexg sylancr eueq sylib eqeq1 iota2 mpbii
+      syl2anc 3eqtr2d ) AEDUAUBFGUCUBZUDQZNULZEUERZQZSZXLOULZPULZUCUBZQZXNXSCDX
+      RUFZRZQZSZPXRUGRZUHZOUIZUMZNUJXNGCDFUFZRZQZNUJZYKANXLBCOPDEHUKXOIXOUNJKAF
+      GAGFUGRZTZFUOTLFGUPUQZAYOGUOTLFGURUQUSMUTAYLYINAYHYLYIAYHYLYGYLOYEYLPYFXS
+      YFTZYESZXNYCYKYQYAYDVAYRXSGYBYJYRXRFCDYRXRFQZXSGQZYRYAYSYTSZYQYAYDVBYQYAU
+      UAVCYEYAXTXLQYQUUAXTXLVEFGXRXSVDVFVGVHZVIVJYRYSYTUUBVOVKVLVMVNAYLYHAYLSZY
+      GXLFXSUCUBZQZXNXSYJRZQZSZPYNUHOFAFVPTYLAFUOYPVQVGUUCUUHXLXLQZYLSPGYNYTUUE
+      UUIUUGYLYTUUDXLXLXSGFUCVRVSYTUUFYKXNXSGYJVTVSWAAYOYLLVGUUCUUIYLUUCXLWBAYL
+      WCWDWGYSYEUUHPYFYNXRFUGVTYSYAUUEYDUUGYSXTUUDXLXRFXSUCWHVSYSYCUUFXNYSXSYBY
+      JCDXRFWEWFVSWAWIWJWKWLAXQWMYHYIVCAXMXPAYOGXLTXMWMLFGWNXLGWOWRWPXQYHWQUQWS
+      WTAYKYKQZYMYKQZYKUNAYKVPTZYLNXAZUUJUUKVCAYJVPTYOUULCDFXBLGYJVPYNXCXDZAUUL
+      UUMUUNNYKXEXFYLUUJNYKVPXNYKYKXGXHXJXIXK $.
   $}
 
   ${
