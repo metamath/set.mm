@@ -159037,29 +159037,6 @@ $)
   $}
 
   ${
-    $d .+ x y $.  $d F x y $.  $d M x y $.  $d ph x y $.
-    gsumprval.b $e |- B = ( Base ` G ) $.
-    gsumprval.p $e |- .+ = ( +g ` G ) $.
-    gsumprval.g $e |- ( ph -> G e. V ) $.
-    gsumprval.m $e |- ( ph -> M e. ZZ ) $.
-    gsumprval.n $e |- ( ph -> N = ( M + 1 ) ) $.
-    gsumprval.f $e |- ( ph -> F : { M , N } --> B ) $.
-    $( Value of the group sum operation over a pair of sequential integers.
-       (Contributed by AV, 14-Dec-2018.) $)
-    gsumprval $p |- ( ph -> ( G gsum F ) = ( ( F ` M ) .+ ( F ` N ) ) ) $=
-      ( vx co cfv wcel cz cvv vy cgsu caddc cseq cuz uzidd peano2uz syl cfz cpr
-      c1 wf wceq fzpr eqcomd preq2d eqtrd feq2d gsumval2 peano2zd eqeltrd prexg
-      mpbird cv syl2anc fexd vex fvexg sylancl adantr cplusg plusgslid eqeltrid
-      wa slotex a1i ovexg mp3an2i seq3p1 seq3-1 fveq2d oveq12d 3eqtrd ) AEDUBPF
-      UKUCPZCDFUDZQFWEQZWDDQZCPFDQZGDQZCPABCDEFWDHIJKAFFUEQZRWDWJRAFLUFZFFUGUHA
-      FWDUIPZBDULFGUJZBDULNAWLWMBDAWLFWDUJZWMAFSRZWLWNUMLFUNUHAWDGFAGWDMUOZUPUQ
-      URVCUSAOUACTDFFWKAOVDZDQTRZWQWJRADTRWQTRZWRAWMBTDNAWOGSRWMTRLAGWDSMAFLUTV
-      AFGSSVBVEVFOVGZWQDTTVHVIVJZAWQUAVDZCPTRZWSXBTRZVNWSACTRXDXCWTACEVKQZTJAEH
-      RXETRKEVKHVLVOUHVMXDAUAVGVPWQXBCTTTVQVRVJZVSAWFWHWGWICAOUACTDFLXAXFVTAWDG
-      DWPWAWBWC $.
-  $}
-
-  ${
     gsumpr12val.b $e |- B = ( Base ` G ) $.
     gsumpr12val.p $e |- .+ = ( +g ` G ) $.
     gsumpr12val.g $e |- ( ph -> G e. V ) $.
