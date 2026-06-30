@@ -158927,39 +158927,6 @@ $)
   $}
 
   ${
-    $d F m n s t $.  $d F m n x $.  $d G a b s t $.  $d G m n s t $.
-    $d G m n x $.  $d H a b s t $.  $d H m n s t $.  $d H m n x $.
-    $d a b ph s t $.  $d f ph $.  $d m n ph s t $.  $d ph x $.
-    gsumpropd2.f $e |- ( ph -> F e. V ) $.
-    gsumpropd2.g $e |- ( ph -> G e. W ) $.
-    gsumpropd2.h $e |- ( ph -> H e. X ) $.
-    gsumpropd2.b $e |- ( ph -> ( Base ` G ) = ( Base ` H ) ) $.
-    gsumpropd2.c $e |- ( ( ph /\ ( s e. ( Base ` G ) /\ t e. ( Base ` G ) ) )
-                                -> ( s ( +g ` G ) t ) e. ( Base ` G ) ) $.
-    gsumpropd2.e $e |- ( ( ph /\ ( s e. ( Base ` G ) /\ t e. ( Base ` G ) ) )
-                                -> ( s ( +g ` G ) t ) = ( s ( +g ` H ) t ) ) $.
-    gsumpropd2.n $e |- ( ph -> Fun F ) $.
-    gsumpropd2.r $e |- ( ph -> ran F C_ ( Base ` G ) ) $.
-    $( A stronger version of ~ gsumpropd , working for magma, where only the
-       closure of the addition operation on a common base is required, see
-       ~ gsummgmpropd .  (Contributed by Thierry Arnoux, 28-Jun-2017.) $)
-    gsumpropd2 $p |- ( ph -> ( G gsum F ) = ( H gsum F ) ) $=
-      ( cfv wa wcel vx vm vn cdm c0 wceq cv c0g cfz co cplusg cseq cuz wrex wex
-      wo cio cbs eqidd grpidpropdg eqeq2d anbi2d wb cvv simprl crn wss ad2antrr
-      cgsu simpr simplrr eleqtrrd fvelrn syl2anc sseldd adantr plusgslid slotex
-      wfun syl adantlr seqfeq4g anassrs pm5.32da rexbidva orbi12d iotabidv eqid
-      exbidv igsumvalx 3eqtr4d ) ACUDZUEUFZUAUGZDUHRZUFZSZWLUBUGZUCUGZUIUJZUFZW
-      NWSDUKRZCWRULRZUFZSZUCWRUMRZUNZUBUOZUPZUAUQWMWNEUHRZUFZSZXAWNWSEUKRZCWRUL
-      RZUFZSZUCXFUNZUBUOZUPZUAUQDCVIUJECVIUJAXIXSUAAWQXLXHXRAWPXKWMAWOXJWNAIBDU
-      RRZDEGHAXTUSMKLOUTVAVBAXGXQUBAXEXPUCXFAWSXFTZSXAXDXOAYAXAXDXOVCAYAXASZSZX
-      CXNWNYCIBXBXMXTCWRWSFVDVDAYAXAVEYCIUGZWTTZSZCVFZXTYDCRZAYGXTVGYBYEQVHYFCV
-      SZYDWLTYHYGTAYIYBYEPVHYFYDWTWLYCYEVJAYAXAYEVKVLYDCVMVNVOACFTYBJVPAXBVDTZY
-      BADGTYJKDUKGVQVRVTVPAXMVDTZYBAEHTYKLEUKHVQVRVTVPAYDXTTBUGZXTTSZYDYLXBUJZX
-      TTYBNWAAYMYNYDYLXMUJUFYBOWAWBVAWCWDWEWIWFWGAUAWLXTXBUBUCCDGFWOXTWHWOWHXBW
-      HKJAWLUSZWJAUAWLEURRZXMUBUCCEHFXJYPWHXJWHXMWHLJYOWJWK $.
-  $}
-
-  ${
     $d F s t $.  $d G s t $.  $d H s t $.  $d ph s t $.
     gsummgmpropd.f $e |- ( ph -> F e. V ) $.
     gsummgmpropd.g $e |- ( ph -> G e. W ) $.
