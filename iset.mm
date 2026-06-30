@@ -158950,43 +158950,43 @@ $)
     $d f m n x y z B $.  $d f m n x y z G $.  $d f m n x y z ph $.  $d x y S $.
     $d f m n z F $.  $d f m n x y z H $.  $d f m n x y z .+ $.  $d x y .0. $.
     $d y V $.
-    gsumress.b $e |- B = ( Base ` G ) $.
-    gsumress.o $e |- .+ = ( +g ` G ) $.
-    gsumress.h $e |- H = ( G |`s S ) $.
-    gsumress.g $e |- ( ph -> G e. V ) $.
-    gsumress.a $e |- ( ph -> A e. X ) $.
-    gsumress.s $e |- ( ph -> S C_ B ) $.
-    gsumress.f $e |- ( ph -> F : A --> S ) $.
-    gsumress.z $e |- ( ph -> .0. e. S ) $.
-    gsumress.c $e |- ( ( ph /\ x e. B ) ->
+    gzsumress.b $e |- B = ( Base ` G ) $.
+    gzsumress.o $e |- .+ = ( +g ` G ) $.
+    gzsumress.h $e |- H = ( G |`s S ) $.
+    gzsumress.g $e |- ( ph -> G e. V ) $.
+    gzsumress.a $e |- ( ph -> A e. X ) $.
+    gzsumress.s $e |- ( ph -> S C_ B ) $.
+    gzsumress.f $e |- ( ph -> F : A --> S ) $.
+    gzsumress.z $e |- ( ph -> .0. e. S ) $.
+    gzsumress.c $e |- ( ( ph /\ x e. B ) ->
       ( ( .0. .+ x ) = x /\ ( x .+ .0. ) = x ) ) $.
     $( The group sum in a substructure is the same as the group sum in the
        original structure.  The only requirement on the substructure is that it
        contain the identity element; neither ` G ` nor ` H ` need be groups.
        (Contributed by Mario Carneiro, 19-Dec-2014.)  (Revised by Mario
        Carneiro, 30-Apr-2015.) $)
-    gsumress $p |- ( ph -> ( G gsum F ) = ( H gsum F ) ) $=
-      ( vz vm vn vy c0 wceq cv c0g cfv wa cfz cseq cuz wrex wex cio cplusg cgsu
-      co wo csn wcel wral crab wss eqid mgmidsssn0 syl eqeq1d ovanraleqv sseldd
-      oveq1 ralrimiva elrabd elsni cbs cvv cress ressbas2d basmexd sselda basfn
-      a1i syldan wfn funfvex sylancr eqeltrd ressplusgd oveqd anbi12d raleqbidv
-      funfni eleqtrd eqtr3d eqeq2d anbi2d seqeq2d fveq1d rexbidv exbidv orbi12d
-      rabeqbidv iotabidv fssd igsumval wf feq3d mpbid 3eqtr4d ) ACUFUGZUBUHZHUI
-      UJZUGZUKZCUCUHZUDUHZULUTUGZXMXREGXQUMZUJZUGZUKZUDXQUNUJZUOZUCUPZVAZUBUQXL
-      XMIUIUJZUGZUKZXSXMXRIURUJZGXQUMZUJZUGZUKZUDYDUOZUCUPZVAZUBUQHGUSUTIGUSUTA
-      YGYRUBAXPYJYFYQAXOYIXLAXNYHXMALXNYHALXNVBZVCLXNUGAUEUHZBUHZEUTZUUAUGZUUAY
-      TEUTZUUAUGZUKZBDVDZUEDVEZYSLAHJVCUUHYSVFPUEBDEHUUHJXNMXNVGZNUUHVGVHVIAUUG
-      LUUAEUTZUUAUGZUUALEUTUUAUGUKZBDVDUELDUUCUUKBUUAYTUUAEDLYTLUGUUBUUJUUAYTLU
-      UAEVMVJZVKAFDLRTVLAUULBDUAVNVOVLLXNVPVIALYHVBZVCLYHUGAYTUUAYKUTZUUAUGZUUA
-      YTYKUTZUUAUGZUKZBIVQUJZVDZUEUUTVEZUUNLAIVRVCZUVBUUNVFALFIAFDIHJIHFVSUTUGA
-      OWDZDHVQUJUGAMWDPRVTZTWAZUEBUUTYKIUVBVRYHUUTVGZYHVGZYKVGZUVBVGVHVIALUUFBF
-      VDZUEFVEUVBAUVJUULBFVDUELFUUCUUKBUUAYTUUAEFLUUMVKTAUULBFAUUAFVCUUADVCUULA
-      FDUUARWBUAWEVNVOAUVJUVAUEFUUTUVEAUUFUUSBFUUTUVEAUUCUUPUUEUURAUUBUUOUUAAEY
-      KYTUUAAFEHIVRJUVDEHURUJUGANWDAFUUTVRUVEAVQVRWFUVCUUTVRVCZWCUVFUVKVRIVQIVQ
-      WGWNWHWIPWJZWKVJAUUDUUQUUAAEYKUUAYTUVLWKVJWLWMXDWOVLLYHVPVIWPWQWRAYEYPUCA
-      YCYOUDYDAYBYNXSAYAYMXMAXRXTYLAEYKGXQUVLWSWTWQWRXAXBXCXEAUBCDEUCUDGHJKXNMU
-      UINPQACFDGSRXFXGAUBCUUTYKUCUDGIVRKYHUVGUVHUVIUVFQACFGXHCUUTGXHSAFUUTGCUVE
-      XIXJXGXK $.
+    gzsumress $p |- ( ph -> ( G gzsum F ) = ( H gzsum F ) ) $=
+      ( vz vm vn vy c0 wceq cv c0g cfv wa cfz co cseq cuz wrex wex wo cio cgzsu
+      cplusg csn wcel wral crab wss eqid mgmidsssn0 syl oveq1 eqeq1d ovanraleqv
+      sseldd ralrimiva elrabd elsni cbs cvv a1i ressbas2d basmexd sselda syldan
+      cress wfn basfn funfvex funfni sylancr eqeltrd ressplusgd oveqd raleqbidv
+      anbi12d rabeqbidv eleqtrd eqtr3d eqeq2d anbi2d seqeq2d fveq1d exbidv fssd
+      rexbidv orbi12d iotabidv gzsumval wf feq3d mpbid 3eqtr4d ) ACUFUGZUBUHZHU
+      IUJZUGZUKZCUCUHZUDUHZULUMUGZXMXREGXQUNZUJZUGZUKZUDXQUOUJZUPZUCUQZURZUBUSX
+      LXMIUIUJZUGZUKZXSXMXRIVAUJZGXQUNZUJZUGZUKZUDYDUPZUCUQZURZUBUSHGUTUMIGUTUM
+      AYGYRUBAXPYJYFYQAXOYIXLAXNYHXMALXNYHALXNVBZVCLXNUGAUEUHZBUHZEUMZUUAUGZUUA
+      YTEUMZUUAUGZUKZBDVDZUEDVEZYSLAHJVCUUHYSVFPUEBDEHUUHJXNMXNVGZNUUHVGVHVIAUU
+      GLUUAEUMZUUAUGZUUALEUMUUAUGUKZBDVDUELDUUCUUKBUUAYTUUAEDLYTLUGUUBUUJUUAYTL
+      UUAEVJVKZVLAFDLRTVMAUULBDUAVNVOVMLXNVPVIALYHVBZVCLYHUGAYTUUAYKUMZUUAUGZUU
+      AYTYKUMZUUAUGZUKZBIVQUJZVDZUEUUTVEZUUNLAIVRVCZUVBUUNVFALFIAFDIHJIHFWDUMUG
+      AOVSZDHVQUJUGAMVSPRVTZTWAZUEBUUTYKIUVBVRYHUUTVGZYHVGZYKVGZUVBVGVHVIALUUFB
+      FVDZUEFVEUVBAUVJUULBFVDUELFUUCUUKBUUAYTUUAEFLUUMVLTAUULBFAUUAFVCUUADVCUUL
+      AFDUUARWBUAWCVNVOAUVJUVAUEFUUTUVEAUUFUUSBFUUTUVEAUUCUUPUUEUURAUUBUUOUUAAE
+      YKYTUUAAFEHIVRJUVDEHVAUJUGANVSAFUUTVRUVEAVQVRWEUVCUUTVRVCZWFUVFUVKVRIVQIV
+      QWGWHWIWJPWKZWLVKAUUDUUQUUAAEYKUUAYTUVLWLVKWNWMWOWPVMLYHVPVIWQWRWSAYEYPUC
+      AYCYOUDYDAYBYNXSAYAYMXMAXRXTYLAEYKGXQUVLWTXAWRWSXDXBXEXFAUBCDEUCUDGHJKXNM
+      UUINPQACFDGSRXCXGAUBCUUTYKUCUDGIVRKYHUVGUVHUVIUVFQACFGXHCUUTGXHSAFUUTGCUV
+      EXIXJXGXK $.
   $}
 
   ${
