@@ -158927,26 +158927,6 @@ $)
   $}
 
   ${
-    $d F s t $.  $d G s t $.  $d H s t $.  $d ph s t $.
-    gsummgmpropd.f $e |- ( ph -> F e. V ) $.
-    gsummgmpropd.g $e |- ( ph -> G e. W ) $.
-    gsummgmpropd.h $e |- ( ph -> H e. X ) $.
-    gsummgmpropd.b $e |- ( ph -> ( Base ` G ) = ( Base ` H ) ) $.
-    gsummgmpropd.m $e |- ( ph -> G e. Mgm ) $.
-    gsummgmpropd.e $e |- ( ( ph /\ ( s e. ( Base ` G ) /\ t e. ( Base ` G ) ) )
-                                -> ( s ( +g ` G ) t ) = ( s ( +g ` H ) t ) ) $.
-    gsummgmpropd.n $e |- ( ph -> Fun F ) $.
-    gsummgmpropd.r $e |- ( ph -> ran F C_ ( Base ` G ) ) $.
-    $( A stronger version of ~ gsumpropd if at least one of the involved
-       structures is a magma, see ~ gsumpropd2 .  (Contributed by AV,
-       31-Jan-2020.) $)
-    gsummgmpropd $p |- ( ph -> ( G gsum F ) = ( H gsum F ) ) $=
-      ( cv cfv wcel cbs wa cplusg co cmgm eqid mgmcl 3expib syl imp gsumpropd2
-      wi ) ABCDEFGHIJKLMAIRZDUASZTZBRZUNTZUBZUMUPDUCSZUDUNTZADUETZURUTULNVAUOUQ
-      UTUNDUMUPUSUNUFUSUFUGUHUIUJOPQUK $.
-  $}
-
-  ${
     $d f m n x y z B $.  $d f m n x y z G $.  $d f m n x y z ph $.  $d x y S $.
     $d f m n z F $.  $d f m n x y z H $.  $d f m n x y z .+ $.  $d x y .0. $.
     $d y V $.
