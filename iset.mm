@@ -158881,13 +158881,13 @@ $)
       $d .+ x $.  $d .0. x $.  $d F m n x $.  $d G m n x $.  $d m n ph x $.
       gsumval.a $e |- ( ph -> A e. X ) $.
       gsumval.f $e |- ( ph -> F : A --> B ) $.
-      $( Expand out the substitutions in ~ df-igsum .  (Contributed by Mario
+      $( Expand out the substitutions in ~ df-gzsum .  (Contributed by Mario
          Carneiro, 7-Dec-2014.) $)
-      igsumval $p |- ( ph -> ( G gsum F ) =
+      gzsumval $p |- ( ph -> ( G gzsum F ) =
            ( iota x ( ( A = (/) /\ x = .0. )
            \/ E. m E. n e. ( ZZ>= ` m )
               ( A = ( m ... n ) /\ x = ( seq m ( .+ , F ) ` n ) ) ) ) ) $=
-        ( cvv fexd fdmd igsumvalx ) ABCDEFGHIJSLMNOPACDKHRQTACDHRUAUB $.
+        ( cvv fexd fdmd gzsumvalx ) ABCDEFGHIJSLMNOPACDKHRQTACDHRUAUB $.
     $}
 
     ${
