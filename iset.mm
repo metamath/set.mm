@@ -160463,24 +160463,24 @@ $)
     $d x y S $.  $d x y G $.  $d x y j W $.
     $( Closure of the composite in any submonoid.  (Contributed by Stefan
        O'Rear, 15-Aug-2015.)  (Revised by Mario Carneiro, 1-Oct-2015.) $)
-    gsumwsubmcl $p |- ( ( S e. ( SubMnd ` G ) /\ W e. Word S ) ->
-        ( G gsum W ) e. S ) $=
-      ( vx vy vj cfv wcel wa c0 wceq cgsu co cmnd eqid syl ad2antrr cc0 cvv cv
-      csubmnd cword wne oveq2 adantl submrcl gsum0g eqtrd subm0cl eqeltrd chash
+    gzsumwsubmcl $p |- ( ( S e. ( SubMnd ` G ) /\ W e. Word S ) ->
+        ( G gzsum W ) e. S ) $=
+      ( vx vy vj cfv wcel wa c0 wceq cgzsu co cmnd eqid syl ad2antrr cc0 cvv cv
+      csubmnd cword wne oveq2 adantl submrcl gzsum0 eqtrd subm0cl eqeltrd chash
       c0g c1 cmin cplusg cseq cbs cn0 cn lennncl adantll nnm1nn0 nn0uz eleqtrdi
-      cuz cfz cfzo wf wrdf ad2antlr nnzd fzoval feq2d mpbid wss submss gsumval2
-      cz fssd fvexg ad4ant24 ffvelcdmda submcl 3expb ad4ant14 ssv simprl adantr
-      a1i plusgslid slotex simprr syl3anc seq3clss wo wex cfn wrdfin fin0or n0r
-      ovexg orim2i mpjaodan ) ABUAGHZCAUBZHZIZCJKZBCLMZAHCJUCZXGXHIZXIBULGZAXKX
-      IBJLMZXLXHXIXMKXGCJBLUDUEXDXMXLKZXFXHXDBNHZXNABUFZBNXLXLOZUGPQUHXDXLAHXFX
-      HABXLXQUIQUJXGXJIZXICUKGZUMUNMZBUOGZCRUPGAXRBUQGZYACBRXTNYBOZYAOZXDXOXFXJ
-      XPQZXRXTURRVEGZXRXSUSHZXTURHXFXJYGXDACUTVAZXSVBPVCVDZXRRXTVFMZAYBCXRRXSVG
-      MZACVHZYJACVHXFYLXDXJACVIVJXRYKYJACXRXSVRHYKYJKXRXSYHVKRXSVLPVMVNZXDAYBVO
-      XFXJYBABYCVPQVSVQXRDEYAASCRXTYIXFDTZYFHYNCGSHXDXJYNCXEYFVTWAXRYJAYNCYMWBX
-      DYNAHZETZAHZIYNYPYAMZAHZXFXJXDYOYQYSYAABYNYPYDWCWDWEASVOXRAWFWIXRYNSHZYPS
-      HZIZIZYTYASHZUUAYRSHXRYTUUAWGUUCXOUUDXRXOUUBYEWHBUONWJWKPXRYTUUAWLYNYPYAS
-      SSXAWMWNUJXFXHXJWOZXDXFXHFTCHFWPZWOZUUEXFCWQHUUGACWRFCWSPUUFXJXHFCWTXBPUE
-      XC $.
+      cuz cfz cfzo wf wrdf ad2antlr cz nnzd fzoval feq2d mpbid submss gzsumval2
+      wss fvexg ad4ant24 ffvelcdmda submcl 3expb ad4ant14 ssv a1i simprl adantr
+      fssd plusgslid slotex simprr ovexg syl3anc seq3clss wex cfn wrdfin fin0or
+      wo n0r orim2i mpjaodan ) ABUAGHZCAUBZHZIZCJKZBCLMZAHCJUCZXGXHIZXIBULGZAXK
+      XIBJLMZXLXHXIXMKXGCJBLUDUEXDXMXLKZXFXHXDBNHZXNABUFZBNXLXLOZUGPQUHXDXLAHXF
+      XHABXLXQUIQUJXGXJIZXICUKGZUMUNMZBUOGZCRUPGAXRBUQGZYACBRXTNYBOZYAOZXDXOXFX
+      JXPQZXRXTURRVEGZXRXSUSHZXTURHXFXJYGXDACUTVAZXSVBPVCVDZXRRXTVFMZAYBCXRRXSV
+      GMZACVHZYJACVHXFYLXDXJACVIVJXRYKYJACXRXSVKHYKYJKXRXSYHVLRXSVMPVNVOZXDAYBV
+      RXFXJYBABYCVPQWIVQXRDEYAASCRXTYIXFDTZYFHYNCGSHXDXJYNCXEYFVSVTXRYJAYNCYMWA
+      XDYNAHZETZAHZIYNYPYAMZAHZXFXJXDYOYQYSYAABYNYPYDWBWCWDASVRXRAWEWFXRYNSHZYP
+      SHZIZIZYTYASHZUUAYRSHXRYTUUAWGUUCXOUUDXRXOUUBYEWHBUONWJWKPXRYTUUAWLYNYPYA
+      SSSWMWNWOUJXFXHXJWTZXDXFXHFTCHFWPZWTZUUEXFCWQHUUGACWRFCWSPUUFXJXHFCXAXBPU
+      EXC $.
   $}
 
   ${
