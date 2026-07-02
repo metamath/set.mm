@@ -13940,6 +13940,7 @@
 "w-bnj19" is used by "bnj978".
 "watfvalN" is used by "watvalN".
 "watvalN" is used by "iswatN".
+"wl-def-form-old" is used by "wl-def-form-2026".
 "wl-def-form-old" is used by "wl-def-rename-def".
 "wl-impchain-a1-1" is used by "wl-impchain-a1-2".
 "wl-impchain-a1-2" is used by "wl-impchain-a1-3".
@@ -19079,7 +19080,8 @@ New usage of "watvalN" is discouraged (1 uses).
 New usage of "wl-def-case1" is discouraged (0 uses).
 New usage of "wl-def-case2" is discouraged (0 uses).
 New usage of "wl-def-context-comment" is discouraged (0 uses).
-New usage of "wl-def-form-old" is discouraged (1 uses).
+New usage of "wl-def-form-2026" is discouraged (0 uses).
+New usage of "wl-def-form-old" is discouraged (2 uses).
 New usage of "wl-def-intro" is discouraged (0 uses).
 New usage of "wl-def-rename-cbv" is discouraged (0 uses).
 New usage of "wl-def-rename-def" is discouraged (0 uses).
@@ -20833,6 +20835,7 @@ Proof modification of "vonf1owevOLD" is discouraged (574 steps).
 Proof modification of "vprcOLD" is discouraged (15 steps).
 Proof modification of "vtxdusgr0edgnelALT" is discouraged (94 steps).
 Proof modification of "wl-cases2-dnf" is discouraged (85 steps).
+Proof modification of "wl-def-form-2026" is discouraged (7 steps).
 Proof modification of "wl-def-form-old" is discouraged (14 steps).
 Proof modification of "wl-def-rename-cbv" is discouraged (19 steps).
 Proof modification of "wl-def-rename-def" is discouraged (16 steps).
