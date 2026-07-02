@@ -165804,27 +165804,27 @@ $)
   ${
     $d k x N $.  $d k x M $.  $d k x B $.  $d k C $.  $d x D $.  $d x E $.
     $d k ph $.  $d x G $.  $d x H $.  $d x X $.
-    gsummhm2.b $e |- B = ( Base ` G ) $.
-    gsummhm2.z $e |- .0. = ( 0g ` G ) $.
-    gsummhm2.g $e |- ( ph -> G e. CMnd ) $.
-    gsummhm2.h $e |- ( ph -> H e. Mnd ) $.
-    gsumfzmhm2.m $e |- ( ph -> M e. ZZ ) $.
-    gsumfzmhm2.n $e |- ( ph -> N e. ZZ ) $.
-    gsummhm2.k $e |- ( ph -> ( x e. B |-> C ) e. ( G MndHom H ) ) $.
-    gsumfzmhm2.f $e |- ( ( ph /\ k e. ( M ... N ) ) -> X e. B ) $.
-    gsummhm2.1 $e |- ( x = X -> C = D ) $.
-    gsumfzmhm2.2 $e |- ( x = ( G gsum ( k e. ( M ... N ) |-> X ) )
+    gzsummhm2.b $e |- B = ( Base ` G ) $.
+    gzsummhm2.z $e |- .0. = ( 0g ` G ) $.
+    gzsummhm2.g $e |- ( ph -> G e. CMnd ) $.
+    gzsummhm2.h $e |- ( ph -> H e. Mnd ) $.
+    gzsummhm2.m $e |- ( ph -> M e. ZZ ) $.
+    gzsummhm2.n $e |- ( ph -> N e. ZZ ) $.
+    gzsummhm2.k $e |- ( ph -> ( x e. B |-> C ) e. ( G MndHom H ) ) $.
+    gzsummhm2.f $e |- ( ( ph /\ k e. ( M ... N ) ) -> X e. B ) $.
+    gzsummhm2.1 $e |- ( x = X -> C = D ) $.
+    gzsummhm2.2 $e |- ( x = ( G gzsum ( k e. ( M ... N ) |-> X ) )
       -> C = E ) $.
     $( Apply a group homomorphism to a group sum, mapping version with implicit
        substitution.  (Contributed by Mario Carneiro, 5-May-2015.)  (Revised by
        AV, 6-Jun-2019.)  (Revised by Jim Kingdon, 9-Sep-2025.) $)
-    gsumfzmhm2 $p |- ( ph -> ( H gsum ( k e. ( M ... N ) |-> D ) ) = E ) $=
-      ( cmpt cfz co ccom cgsu cfv fmpttd gsumfzmhm eqidd fmptco oveq2d cbs eqid
-      cmnmndd gsumfzcl wcel cv wceq eleq1d wf wral cmhm mhmf syl sylibr rspcdva
-      fmpt fvmptd3 3eqtr3d ) AIBCDUDZFJKUEUFZLUDZUGZUHUFHVOUHUFZVMUIIFVNEUDZUHU
-      FGACVOHIVMJKMNOPQRSTAFVNLCUAUJZUKAVPVRIUHAFBVNCLDEVOVMUAAVOULAVMULUBUMUNA
-      BVQDGCVMIUOUIZVMUPZUCACVOHJKMNOAHPUQRSVSURZADVTUSZGVTUSBCVQBUTVQVADGVTUCV
-      BACVTVMVCZWCBCVDAVMHIVEUFUSWDTCVTHIVMNVTUPVFVGBCVTDVMWAVJVHWBVIVKVL $.
+    gzsummhm2 $p |- ( ph -> ( H gzsum ( k e. ( M ... N ) |-> D ) ) = E ) $=
+      ( cmpt cfz co ccom cgzsu cfv fmpttd gzsummhm eqidd fmptco oveq2d cbs eqid
+      cmnmndd gzsumcl wcel cv wceq eleq1d wf wral cmhm mhmf fmpt sylibr rspcdva
+      syl fvmptd3 3eqtr3d ) AIBCDUDZFJKUEUFZLUDZUGZUHUFHVOUHUFZVMUIIFVNEUDZUHUF
+      GACVOHIVMJKMNOPQRSTAFVNLCUAUJZUKAVPVRIUHAFBVNCLDEVOVMUAAVOULAVMULUBUMUNAB
+      VQDGCVMIUOUIZVMUPZUCACVOHJKMNOAHPUQRSVSURZADVTUSZGVTUSBCVQBUTVQVADGVTUCVB
+      ACVTVMVCZWCBCVDAVMHIVEUFUSWDTCVTHIVMNVTUPVFVJBCVTDVMWAVGVHWBVIVKVL $.
   $}
 
   ${
