@@ -165685,27 +165685,27 @@ $)
   ${
     $d F x y $.  $d G x y $.  $d M x y $.  $d N x y $.  $d S x y $.
     $d ph x y $.
-    gsumfzsubmcl.g $e |- ( ph -> G e. Mnd ) $.
-    gsumfzsubmcl.m $e |- ( ph -> M e. ZZ ) $.
-    gsumfzsubmcl.n $e |- ( ph -> N e. ZZ ) $.
-    gsumsubmcl.s $e |- ( ph -> S e. ( SubMnd ` G ) ) $.
-    gsumfzsubmcl.f $e |- ( ph -> F : ( M ... N ) --> S ) $.
+    gzsumsubmcl.g $e |- ( ph -> G e. Mnd ) $.
+    gzsumsubmcl.m $e |- ( ph -> M e. ZZ ) $.
+    gzsumsubmcl.n $e |- ( ph -> N e. ZZ ) $.
+    gzsumsubmcl.s $e |- ( ph -> S e. ( SubMnd ` G ) ) $.
+    gzsumsubmcl.f $e |- ( ph -> F : ( M ... N ) --> S ) $.
     $( Closure of a group sum in a submonoid.  (Contributed by Mario Carneiro,
        10-Jan-2015.)  (Revised by AV, 3-Jun-2019.)  (Revised by Jim Kingdon,
        30-Aug-2025.) $)
-    gsumfzsubmcl $p |- ( ph -> ( G gsum F ) e. S ) $=
-      ( co wcel wa cfv cmnd eqid syl adantr cvv vx clt wbr cgsu c0g cplusg cseq
-      vy cif wceq cbs cfz csubmnd wss submss fssd gsumfzval simpr iftrued eqtrd
-      wn subm0cl eqeltrd iffalsed cz cle zred nltled eluz2 syl3anbrc ffvelcdmda
-      cuz cv wf ad2antrr simprl simprr submcl syl3anc cfn fzfigd fexd plusgslid
-      slotex seqclg wdc wo zdclt syl2anc exmiddc mpjaodan ) AFEUBUCZDCUDLZBMWLV
-      AZAWLNZWMDUEOZBWOWMWLWPFDUFOZCEUGOZUIZWPAWMWSUJZWLADUKOZWQCDEFPWPXAQZWPQZ
-      WQQZGHIAEFULLZBXACKABDUMOMZBXAUNJXABDXBUORUPUQZSWOWLWPWRAWLURUSUTAWPBMZWL
-      AXFXHJBDWPXCVBRSVCAWNNZWMWRBXIWMWSWRAWTWNXGSXIWLWPWRAWNURZVDUTXIUAUHWQBCE
-      FTTXIEVEMZFVEMZEFVFUCFEVLOMAXKWNHSZAXLWNISZXIEFXIEXMVGXIFXNVGXJVHEFVIVJXI
-      XEBUAVMZCAXEBCVNWNKSZVKXIXOBMZUHVMZBMZNZNXFXQXSXOXRWQLBMAXFWNXTJVOXIXQXSV
-      PXIXQXSVQWQBDXOXRXDVRVSXIXEBVTCXPAXEVTMWNAEFHIWASWBAWQTMZWNADPMYAGDUFPWCW
-      DRSWEVCAWLWFZWLWNWGAXLXKYBIHFEWHWIWLWJRWK $.
+    gzsumsubmcl $p |- ( ph -> ( G gzsum F ) e. S ) $=
+      ( co wcel wa cfv cmnd eqid syl adantr cvv vx vy clt wbr cgzsu wn c0g cseq
+      cplusg cif wceq cbs cfz csubmnd wss submss gzsumfzval simpr iftrued eqtrd
+      fssd subm0cl eqeltrd iffalsed cz cle cuz zred nltled syl3anbrc ffvelcdmda
+      eluz2 cv wf ad2antrr simprl simprr submcl syl3anc fzfigd plusgslid slotex
+      cfn fexd seqclg wdc wo zdclt syl2anc exmiddc mpjaodan ) AFEUCUDZDCUELZBMW
+      LUFZAWLNZWMDUGOZBWOWMWLWPFDUIOZCEUHOZUJZWPAWMWSUKZWLADULOZWQCDEFPWPXAQZWP
+      QZWQQZGHIAEFUMLZBXACKABDUNOMZBXAUOJXABDXBUPRVAUQZSWOWLWPWRAWLURUSUTAWPBMZ
+      WLAXFXHJBDWPXCVBRSVCAWNNZWMWRBXIWMWSWRAWTWNXGSXIWLWPWRAWNURZVDUTXIUAUBWQB
+      CEFTTXIEVEMZFVEMZEFVFUDFEVGOMAXKWNHSZAXLWNISZXIEFXIEXMVHXIFXNVHXJVIEFVLVJ
+      XIXEBUAVMZCAXEBCVNWNKSZVKXIXOBMZUBVMZBMZNZNXFXQXSXOXRWQLBMAXFWNXTJVOXIXQX
+      SVPXIXQXSVQWQBDXOXRXDVRVSXIXEBWCCXPAXEWCMWNAEFHIVTSWDAWQTMZWNADPMYAGDUIPW
+      AWBRSWEVCAWLWFZWLWNWGAXLXKYBIHFEWHWIWLWJRWK $.
   $}
 
   ${
