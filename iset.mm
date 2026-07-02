@@ -162403,24 +162403,25 @@ $)
   ${
     $d B a b x i $.  $d F a b i $.  $d G a b i $.  $d N a b x i $.
     $d X a b x i $.
-    mulgnngsum.b $e |- B = ( Base ` G ) $.
-    mulgnngsum.t $e |- .x. = ( .g ` G ) $.
-    mulgnngsum.f $e |- F = ( x e. ( 1 ... N ) |-> X ) $.
+    mulgnngzsum.b $e |- B = ( Base ` G ) $.
+    mulgnngzsum.t $e |- .x. = ( .g ` G ) $.
+    mulgnngzsum.f $e |- F = ( x e. ( 1 ... N ) |-> X ) $.
     $( Group multiple (exponentiation) operation at a positive integer
        expressed by a group sum.  (Contributed by AV, 28-Dec-2023.) $)
-    mulgnngsum $p |- ( ( N e. NN /\ X e. B ) -> ( N .x. X ) = ( G gsum F ) ) $=
-      ( va cn wcel wa cfv c1 co cvv adantr cv vb vi cplusg cseq csn cgsu elnnuz
-      cxp cuz biimpi cfz cmpt eqidd simpr fvmptd elfznn fvconst2g syl2an eqtr4d
-      wceq a1i cfn 1zzd nnz fzfigd mptexg eqeltrid syl fvexg sylancl nnex snexg
-      cz vex xpexg sylancr basmex adantl plusgslid slotex simprr ovexg seq3fveq
-      mp3an2ani eqid fmptd gsumval2 mulgnn 3eqtr4rd ) FLMZGBMZNZFEUCOZDPUDOFWML
-      GUEZUHZPUDZOEDUFQFGCQWLKUAWMRUBDWOPFWJFPUIOZMZWKWJWRFUGUJSZWLUBTZPFUKQZMZ
-      NZWTDOGWTWOOZXCAWTGGXADBDAXAGULZUTXCJVAXCATZWTUTNGUMWLXBUNWLWKXBWJWKUNZSU
-      OWLWKWTLMXDGUTXBXGWTFUPLGWTBUQURUSWLKTZWQMZNZDRMZXHRMZXHDORMWLXKXIWLXAVBM
-      ZXKWLPFWLVCWJFVMMWKFVDSVEXMDXERJAXAGVBVFVGVHSKVNZXHDRRVIVJXJWORMZXLXHWOOR
-      MXJLRMWNRMZXOVKXJWKXPWLWKXIXGSGBVLVHLWNRRVOVPXNXHWORRVIVJXLWLWMRMZXLUATZR
-      MZNXSXHXRWMQRMXNWLERMZXQWKXTWJGBEHVQVRZEUCRVSVTVHWLXLXSWAXHXRWMRRRWBWDWCW
-      LBWMDEPFRHWMWEZYAWSWLAXAGBDWLWKXFXAMXGSJWFWGBWMWPCEFGHYBIWPWEWHWI $.
+    mulgnngzsum $p |- ( ( N e. NN /\ X e. B )
+        -> ( N .x. X ) = ( G gzsum F ) ) $=
+      ( va cn wcel wa cfv c1 co cvv adantr cv vb vi cplusg csn cxp cgzsu elnnuz
+      cseq cuz biimpi cfz wceq eqidd fvmptd2 elfznn fvconst2g syl2an eqtr4d cfn
+      simpr 1zzd cz nnz fzfigd cmpt mptexg eqeltrid syl vex fvexg sylancl snexg
+      nnex xpexg basmex adantl plusgslid slotex simprr ovexg mp3an2ani seq3fveq
+      sylancr eqid fmptd gzsumval2 mulgnn 3eqtr4rd ) FLMZGBMZNZFEUCOZDPUHOFWLLG
+      UDZUEZPUHZOEDUFQFGCQWKKUAWLRUBDWNPFWIFPUIOZMZWJWIWQFUGUJSZWKUBTZPFUKQZMZN
+      ZWSDOGWSWNOZXBAWSGGWTDBJXBATZWSULNGUMWKXAUTWKWJXAWIWJUTZSUNWKWJWSLMXCGULX
+      AXEWSFUOLGWSBUPUQURWKKTZWPMZNZDRMZXFRMZXFDORMWKXIXGWKWTUSMZXIWKPFWKVAWIFV
+      BMWJFVCSVDXKDAWTGVERJAWTGUSVFVGVHSKVIZXFDRRVJVKXHWNRMZXJXFWNORMXHLRMWMRMZ
+      XMVMXHWJXNWKWJXGXESGBVLVHLWMRRVNWCXLXFWNRRVJVKXJWKWLRMZXJUATZRMZNXQXFXPWL
+      QRMXLWKERMZXOWJXRWIGBEHVOVPZEUCRVQVRVHWKXJXQVSXFXPWLRRRVTWAWBWKBWLDEPFRHW
+      LWDZXSWRWKAWTGBDWKWJXDWTMXESJWEWFBWLWOCEFGHXTIWOWDWGWH $.
 
     $( Group multiple (exponentiation) operation at a nonnegative integer
        expressed by a group sum.  This corresponds to the definition in [Lang]
