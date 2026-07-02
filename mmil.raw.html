@@ -13077,11 +13077,16 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>gsumconst</td>
-  <td>~ gsumfzconst</td>
-  <td>requires that the series is indexed by consecutive integers
-  and has an element (if the latter condition is an issue, detect it
-  with something like ~ fzn and handle it with ~ gsum0g )</td>
+  <td rowspan="2">gsumconst</td>
+  <td>~ gzsumconst</td>
+  <td>for ` gzsum ` where the sum is over at least one element
+  (if the latter condition is an issue, detect it
+  with something like ~ fzn and handle it with ~ gzsum0 )</td>
+</tr>
+
+<tr>
+  <td>for ` gfsum `</td>
+  <td>should be provable with a ` G e. CMnd ` condition</td>
 </tr>
 
 <tr>
@@ -13090,13 +13095,6 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>requires that the series is indexed by consecutive integers
   and has an element (if the latter condition is an issue, detect it
   with something like ~ fzn and handle it with ~ gsum0g )</td>
-</tr>
-
-<tr>
-  <td>gsumconstf</td>
-  <td><i>none</i></td>
-  <td>it should be possible to adapt ~ gsumfzconst to a version with
-  a not-free-in hypothesis</td>
 </tr>
 
 <tr>
