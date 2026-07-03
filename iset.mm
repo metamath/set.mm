@@ -165995,17 +165995,18 @@ $)
   $}
 
   ${
-    gsumgfsum1.b $e |- B = ( Base ` G ) $.
-    gsumgfsum1.g $e |- ( ph -> G e. CMnd ) $.
-    gsumgfsum1.n $e |- ( ph -> N e. NN0 ) $.
-    gsumgfsum1.f $e |- ( ph -> F : ( 1 ... N ) --> B ) $.
+    gzsumgfsum1.b $e |- B = ( Base ` G ) $.
+    gzsumgfsum1.g $e |- ( ph -> G e. CMnd ) $.
+    gzsumgfsum1.n $e |- ( ph -> N e. NN0 ) $.
+    gzsumgfsum1.f $e |- ( ph -> F : ( 1 ... N ) --> B ) $.
     $( On an integer range starting at one, ` gsum ` and ` gfsum ` agree.
        (Contributed by Jim Kingdon, 25-Mar-2026.) $)
-    gsumgfsum1 $p |- ( ph -> ( G gsum F ) = ( G gfsum F ) ) $=
-      ( cgfsu co cid c1 cfz cres cgsu wf1o wceq syl oveq2d ccom 1zzd fzfigd cfv
-      nn0zd chash f1oi cn0 wcel hashfz1 f1oeq2d mpbiri gfsumval wf fcoi1 eqtr2d
-      ) ADCJKDCLMENKZOZUAZPKDCPKAUQBCURDFGIAMEAUBAEHUEUCAMUQUFUDZNKZUQURQUQUQUR
-      QUQUGAVAUQUQURAUTEMNAEUHUIUTERHEUJSTUKULUMAUSCDPAUQBCUNUSCRIUQBCUOSTUP $.
+    gzsumgfsum1 $p |- ( ph -> ( G gzsum F ) = ( G gfsum F ) ) $=
+      ( cgfsu co cid c1 cfz cres cgzsu wf1o wceq syl oveq2d ccom 1zzd nn0zd cfv
+      fzfigd chash f1oi cn0 wcel hashfz1 f1oeq2d mpbiri gfsumval fcoi1 eqtr2d
+      wf ) ADCJKDCLMENKZOZUAZPKDCPKAUQBCURDFGIAMEAUBAEHUCUEAMUQUFUDZNKZUQURQUQU
+      QURQUQUGAVAUQUQURAUTEMNAEUHUIUTERHEUJSTUKULUMAUSCDPAUQBCUPUSCRIUQBCUNSTUO
+      $.
   $}
 
   $( An empty finite group sum is the identity.  (Contributed by Jim Kingdon,
