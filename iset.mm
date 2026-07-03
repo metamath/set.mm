@@ -165910,11 +165910,11 @@ $)
        depend on the order).
 
        For a sum indexed by consecutive integers (and thus defining an order
-       for the sum), see ~ df-igsum .  (Contributed by Jim Kingdon,
+       for the sum), see ~ df-gzsum .  (Contributed by Jim Kingdon,
        23-Mar-2026.) $)
     df-gfsum $a |- gfsum = ( w e. CMnd , f e. _V |-> ( iota x
         ( dom f e. Fin /\ E. g ( g : ( 1 ... ( # ` dom f ) )
-        -1-1-onto-> dom f /\ x = ( w gsum ( f o. g ) ) ) ) ) ) $.
+        -1-1-onto-> dom f /\ x = ( w gzsum ( f o. g ) ) ) ) ) ) $.
   $}
 
   ${
