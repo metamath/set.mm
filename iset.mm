@@ -165886,6 +165886,43 @@ $)
       FVIXG $.
   $}
 
+  ${
+    $d F k $.  $d M j k $.  $d N j k $.  $d S k $.  $d j k ph $.
+    gzsumshift.b $e |- B = ( Base ` G ) $.
+    gzsumshift.g $e |- ( ph -> G e. CMnd ) $.
+    gzsumshift.m $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
+    gzsumshift.f $e |- ( ph -> F : ( M ... N ) --> B ) $.
+    gzsumshift.s $e |- S = ( j e. ( 1 ... ( N + ( 1 - M ) ) )
+      |-> ( j - ( 1 - M ) ) ) $.
+    $( Shifting the indexes of a group sum indexed by consecutive integers.
+       (Contributed by Jim Kingdon, 26-Mar-2026.) $)
+    gzsumshift $p |- ( ph -> ( G gzsum F ) = ( G gzsum ( F o. S ) ) ) $=
+      ( cfv c1 co cvv wcel cz adantr cplusg cseq cmin caddc ccom cgzsu 1zzd cuz
+      vk eluzel2 syl zsubcld cv cfz wa wf wceq wf1o cmpt eluzelz mptfzshft zcnd
+      1cnd pncan3d oveq1d mpteq1d eqtr4id eqcomd eqidd f1oeq123d mpbird zaddcld
+      f1of elfzelz adantl cle cr zred 1red elfzle1 lesub2dd resubcld lesubadd2d
+      wbr mpbid elfzle2 leadd1dd elfzd fvco3 syl2anc fveq1d eqid oveq1 simpr wb
+      fzaddel syl22anc fvmptd3 eqtrd subcld pncand fveq2d eqtr2d ccmn plusgslid
+      slotex cfn fzfigd fexd mptexg eqeltrid seqshft2g seqeq1d gzsumval2 eluzle
+      cc coexg eluz2 syl3anbrc fcod 3eqtr4d ) AHFUANZEGUBNZHOGUCPZUDPZYBECUEZOU
+      BZNZFEUFPFYFUFPAYCYEYBYFGYDUDPZUBZNYHAYBUIEYFYDGHQQQKAOGAUGZAHGUHNRZGSRZK
+      GHUJUKZULZAUIUMZGHUNPZRZUOZYPYDUDPZYFNZYTCNZENZYPENYSOYEUNPZYQCUPZYTUUDRU
+      UAUUCUQAUUEYRAUUDYQCURZUUEAUUFYIYEUNPZYQDUUGDUMZYDUCPZUSZURADYDGHYOYNAYLH
+      SRZKGHUTUKZVAAUUDUUGYQYQCUUJACDUUDUUIUSZUUJMADUUGUUDUUIAYIOYEUNAGOAGYNVBZ
+      AVCZVDZVEZVFVGZAUUGUUDUUQVHAYQVIVJVKUUDYQCVMUKZTYSYTOYEYSUGAYESRZYRAHYDUU
+      LYOVLZTYSYPYDYRYPSRZAYPGHVNZVOZAYDSRZYRYOTZVLZYSOYPUCPYDVPWDOYTVPWDYSGYPO
+      AGVQRYRAGYNVRZTZYSYPUVDVRZYSVSZYRGYPVPWDAYPGHVTVOWAYSOYPYDUVKUVJYSOGUVKUV
+      IWBZWCWEYSYPHYDUVJAHVQRYRAHUULVRZTUVLYRYPHVPWDAYPGHWFVOWGWHUUDYQYTECWIWJY
+      SUUBYPEYSUUBYTYDUCPZYPYSUUBYTUUJNUVNYSYTCUUJACUUJUQYRUURTWKYSDYTUUIUVNUUG
+      UUJSUUJWLUUHYTYDUCWMYSYRYTUUGRZAYRWNYSYMUUKUVBUVEYRUVOWOAYMYRYNTAUUKYRUUL
+      TUVDUVFYPYDGHWPWQWEYSYTYDUVGUVFULWRWSYSYPYDYRYPXPRAYRYPUVCVBVOAYDXPRYRAOG
+      UUOUUNWTTXAWSXBXCAFXDRYBQRJFUAXDXEXFUKAYQBXGELAGHYNUULXHXIZAEQRCQRZYFQRUV
+      PAUUDXGRZUVQAOYEYKUVAXHUVRCUUMQMDUUDUUIXGXJXKUKECQQXQWJXLAYEYJYGAYIOYBYFU
+      UPXMWKWSABYBEFGHXDIYBWLZJKLXNABYBYFFOYEXDIUVSJAOSRUUTOYEVPWDZYEOUHNRYKUVA
+      AOHUCPYDVPWDUVTAGHOUVHUVMAVSZAYLGHVPWDKGHXOUKWAAOHYDUWAUVMAOGUWAUVHWBWCWE
+      OYEXRXSAUUDYQBECLUUSXTXNYA $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -166015,43 +166052,6 @@ $)
     ( ccmn wcel c0 cgzsu co cgfsu c0g cfv cbs cc0 eqid id cn0 0nn0 a1i c1 wf f0
     cfz fz10 feq2i mpbir gzsumgfsum1 gzsum0 eqtr3d ) ABCZADEFADGFAHIZUGAJIZDAKU
     ILUGMKNCUGOPQKTFZUIDRZUGUKDUIDRUISUJDUIDUAUBUCPUDABUHUHLUEUF $.
-
-  ${
-    $d F k $.  $d M j k $.  $d N j k $.  $d S k $.  $d j k ph $.
-    gsumshift.b $e |- B = ( Base ` G ) $.
-    gsumshift.g $e |- ( ph -> G e. CMnd ) $.
-    gsumshift.m $e |- ( ph -> N e. ( ZZ>= ` M ) ) $.
-    gsumshift.f $e |- ( ph -> F : ( M ... N ) --> B ) $.
-    gsumshift.s $e |- S = ( j e. ( 1 ... ( N + ( 1 - M ) ) )
-      |-> ( j - ( 1 - M ) ) ) $.
-    $( Shifting the indexes of a group sum indexed by consecutive integers.
-       (Contributed by Jim Kingdon, 26-Mar-2026.) $)
-    gsumshift $p |- ( ph -> ( G gsum F ) = ( G gsum ( F o. S ) ) ) $=
-      ( cfv c1 co cvv wcel cz adantr vk cplusg cseq cmin ccom cgsu 1zzd eluzel2
-      caddc cuz syl zsubcld cv wa wf wceq wf1o cmpt eluzelz mptfzshft zcnd 1cnd
-      pncan3d oveq1d mpteq1d eqtr4id eqcomd eqidd f1oeq123d mpbird f1of zaddcld
-      cfz elfzelz adantl cle wbr zred 1red elfzle1 lesub2dd resubcld lesubadd2d
-      cr mpbid elfzle2 leadd1dd elfzd fvco3 syl2anc eqid oveq1 simpr wb fzaddel
-      fveq1d syl22anc fvmptd3 cc subcld pncand fveq2d ccmn plusgslid slotex cfn
-      eqtrd fzfigd fexd mptexg eqeltrid coexg seqshft2g seqeq1d gsumval2 eluzle
-      eluz2 syl3anbrc fco 3eqtr4d ) AHFUBNZEGUCNZHOGUDPZUIPZYAECUEZOUCZNZFEUFPF
-      YEUFPAYBYDYAYEGYCUIPZUCZNYGAYAUAEYEYCGHQQQKAOGAUGZAHGUJNRZGSRZKGHUHUKZULZ
-      AUAUMZGHVMPZRZUNZYOYCUIPZYENZYOENZYRYTYSCNZENZUUAYROYDVMPZYPCUOZYSUUDRYTU
-      UCUPAUUEYQAUUDYPCUQZUUEAUUFYHYDVMPZYPDUUGDUMZYCUDPZURZUQADYCGHYNYMAYKHSRZ
-      KGHUSUKZUTAUUDUUGYPYPCUUJACDUUDUUIURZUUJMADUUGUUDUUIAYHOYDVMAGOAGYMVAZAVB
-      ZVCZVDZVEVFZAUUGUUDUUQVGAYPVHVIVJUUDYPCVKUKZTYRYSOYDYRUGAYDSRZYQAHYCUULYN
-      VLZTYRYOYCYQYOSRZAYOGHVNZVOZAYCSRZYQYNTZVLZYROYOUDPYCVPVQOYSVPVQYRGYOOAGW
-      DRYQAGYMVRZTZYRYOUVDVRZYRVSZYQGYOVPVQAYOGHVTVOWAYROYOYCUVKUVJYROGUVKUVIWB
-      ZWCWEYRYOHYCUVJAHWDRYQAHUULVRZTUVLYQYOHVPVQAYOGHWFVOWGWHUUDYPYSECWIWJYRUU
-      BYOEYRUUBYSYCUDPZYOYRUUBYSUUJNUVNYRYSCUUJACUUJUPYQUURTWPYRDYSUUIUVNUUGUUJ
-      SUUJWKUUHYSYCUDWLYRYQYSUUGRZAYQWMYRYLUUKUVBUVEYQUVOWNAYLYQYMTAUUKYQUULTUV
-      DUVFYOYCGHWOWQWEYRYSYCUVGUVFULWRXGYRYOYCYQYOWSRAYQYOUVCVAVOAYCWSRYQAOGUUO
-      UUNWTTXAXGXBXGVGAFXCRYAQRJFUBXCXDXEUKAYPBXFELAGHYMUULXHXIZAEQRCQRZYEQRUVP
-      AUUDXFRZUVQAOYDYJUVAXHUVRCUUMQMDUUDUUIXFXJXKUKECQQXLWJXMAYDYIYFAYHOYAYEUU
-      PXNWPXGABYAEFGHXCIYAWKZJKLXOABYAYEFOYDXCIUVSJAOSRUUTOYDVPVQZYDOUJNRYJUVAA
-      OHUDPYCVPVQUVTAGHOUVHUVMAVSZAYKGHVPVQKGHXPUKWAAOHYCUWAUVMAOGUWAUVHWBWCWEO
-      YDXQXRAYPBEUOUUEUUDBYEUOLUUSUUDYPBECXSWJXOXT $.
-  $}
 
   ${
     $d M j $.  $d N j $.  $d j ph $.
