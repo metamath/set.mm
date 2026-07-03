@@ -165829,25 +165829,25 @@ $)
 
   ${
     $d k M $.
-    gsumsnd.b $e |- B = ( Base ` G ) $.
-    gsumsnd.g $e |- ( ph -> G e. Mnd ) $.
-    gsumfzsnd.m $e |- ( ph -> M e. ZZ ) $.
-    gsumsnd.c $e |- ( ph -> C e. B ) $.
-    gsumsnd.s $e |- ( ( ph /\ k = M ) -> A = C ) $.
+    gzsumsnd.b $e |- B = ( Base ` G ) $.
+    gzsumsnd.g $e |- ( ph -> G e. Mnd ) $.
+    gzsumsnd.m $e |- ( ph -> M e. ZZ ) $.
+    gzsumsnd.c $e |- ( ph -> C e. B ) $.
+    gzsumsnd.s $e |- ( ( ph /\ k = M ) -> A = C ) $.
     ${
-      gsumsnfd.p $e |- F/ k ph $.
-      gsumsnfd.c $e |- F/_ k C $.
+      gzsumsnfd.p $e |- F/ k ph $.
+      gzsumsnfd.c $e |- F/_ k C $.
       $( Group sum of a singleton, deduction form, using bound-variable
          hypotheses instead of distinct variable conditions.  (Contributed by
          Mario Carneiro, 19-Dec-2014.)  (Revised by Thierry Arnoux,
          28-Mar-2018.)  (Revised by AV, 11-Dec-2019.) $)
-      gsumfzsnfd $p |- ( ph -> ( G gsum ( k e. { M } |-> A ) ) = C ) $=
-        ( cmpt cgsu co c1 wcel wceq csn caddc cmg cfv cfz elsni sylan2 mpteq2da
-        cmin cv oveq2d cz fzsn syl mpteq1d cmnd uzidd eqid gsumfzconstf syl3anc
+      gzsumsnfd $p |- ( ph -> ( G gzsum ( k e. { M } |-> A ) ) = C ) $=
+        ( cmpt cgzsu co c1 wcel wceq csn cmin caddc cmg cfv cfz cv elsni sylan2
+        mpteq2da oveq2d cz fzsn syl mpteq1d cmnd uzidd eqid gzsumconstf syl3anc
         cuz 3eqtr2d cc0 zcnd subidd oveq1d 0p1e1 eqtrdi mulg1 3eqtrd ) AFEGUAZB
-        OZPQZGGUIQZRUBQZDFUCUDZQZRDVPQZDAVMFEVKDOZPQFEGGUEQZDOZPQZVQAVLVSFPAEVK
-        BDMEUJZVKSAWCGTBDTWCGUFLUGUHUKAWAVSFPAEVTVKDAGULSVTVKTJGUMUNUOUKAFUPSGG
-        VAUDSDCSZWBVQTIAGJUQKCVPEFGGDNHVPURZUSUTVBAVORDVPAVOVCRUBQRAVNVCRUBAGAG
+        OZPQZGGUBQZRUCQZDFUDUEZQZRDVPQZDAVMFEVKDOZPQFEGGUFQZDOZPQZVQAVLVSFPAEVK
+        BDMEUGZVKSAWCGTBDTWCGUHLUIUJUKAWAVSFPAEVTVKDAGULSVTVKTJGUMUNUOUKAFUPSGG
+        VAUESDCSZWBVQTIAGJUQKCVPEFGGDNHVPURZUSUTVBAVORDVPAVOVCRUCQRAVNVCRUCAGAG
         JVDVEVFVGVHVFAWDVRDTKCVPFDHWEVIUNVJ $.
     $}
   $}
