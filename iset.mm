@@ -160437,8 +160437,8 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   One important use of words is as formal composites in cases where order is
-  significant, using the general sum operator ~ df-igsum .  If order is not
-  significant, it is simpler to use families instead.
+  significant, using the ordered general sum operator ~ df-gzsum .  If order is
+  not significant, it is simpler to use families instead.
 
 $)
 
