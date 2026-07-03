@@ -165854,36 +165854,36 @@ $)
 
   ${
     $d F x $.  $d M x $.  $d N x $.  $d ph x $.
-    gsumsplit0.b $e |- B = ( Base ` G ) $.
-    gsumsplit0.p $e |- .+ = ( +g ` G ) $.
-    gsumsplit0.g $e |- ( ph -> G e. Mnd ) $.
-    gsumsplit0.m $e |- ( ph -> M e. ZZ ) $.
-    gsumsplit0.n $e |- ( ph -> N e. ( ZZ>= ` ( M - 1 ) ) ) $.
-    gsumsplit0.f $e |- ( ph -> F : ( M ... ( N + 1 ) ) --> B ) $.
+    gzsumsplit0.b $e |- B = ( Base ` G ) $.
+    gzsumsplit0.p $e |- .+ = ( +g ` G ) $.
+    gzsumsplit0.g $e |- ( ph -> G e. Mnd ) $.
+    gzsumsplit0.m $e |- ( ph -> M e. ZZ ) $.
+    gzsumsplit0.n $e |- ( ph -> N e. ( ZZ>= ` ( M - 1 ) ) ) $.
+    gzsumsplit0.f $e |- ( ph -> F : ( M ... ( N + 1 ) ) --> B ) $.
     $( Splitting off the rightmost summand of a group sum (even if it is the
        only summand).  Similar to ~ gzsumsplit1r except that ` N ` can equal
        ` M - 1 ` .  (Contributed by Jim Kingdon, 4-Apr-2026.) $)
-    gsumsplit0 $p |- ( ph -> ( G gsum F )
-        = ( ( G gsum ( F |` ( M ... N ) ) ) .+ ( F ` ( N + 1 ) ) ) ) $=
-      ( vx co wceq cgsu wcel adantr cz c1 cmin cfz cres caddc cfv cuz wa oveq1d
-      simpr zcnd 1cnd npcand eqtrd fveq2d c0g c0 clt wbr ltm1d eqbrtrd peano2zm
-      zred wb syl eqeltrd syl2an2r mpbid reseq2d res0 eqtrdi oveq2d cmnd gsum0g
-      fzn eqid wf cle eqcomd eqle eluz2 syl3anbrc eluzfz2 ffvelcdmd mndlid cmpt
-      cr csn cop fzsn feq2d fsn2g simprd simpld fmptsn cv eqidd nfcv gsumfzsnfd
-      nfv 3eqtr4rd gsumsplit1r wo uzp1 eleq2d orbi2d mpjaodan ) AGFUAUBOZPZEDQO
-      ZEDFGUCOZUDZQOZGUAUEOZDUFZCOZPGFUGUFZRZAXIUHZXOFDUFZXPXJXSXNFDXSXNXHUAUEO
-      ZFXSGXHUAUEAXIUJZUIAYAFPXIAFUAAFKUKAULUMZSUNZUOXSXPEUPUFZXOCOZXOXSXMYEXOC
-      XSXMEUQQOZYEXSXLUQEQXSXLDUQUDUQXSXKUQDXSGFURUSZXKUQPZXSGXHFURYBAXHFURUSXI
-      AFAFKVCZUTSVAAFTRZXIGTRYHYIVDKXSGXHTYBAXHTRZXIAYKYLKFVBVESVFFGVOVGVHVIDVJ
-      VKVLXSEVMRZYGYEPAYMXIJSZEVMYEYEVPZVNVEUNUIAYMXIXOBRYFXOPJXSFXNUCOZBXNDAYP
-      BDVQZXIMSZXSXNXQRZXNYPRXSYKXNTRFXNVRUSZYSAYKXIKSZXSXNFTYDUUAVFAFWGRXIFXNP
-      YTYJXSXNFYDVSFXNVTVGFXNWAWBFXNWCVEWDBCEXOYEHIYOWEVGUNXSXJENFWHZXTWFZQOXTX
-      SDUUCEQXSDFXTWIWHZUUCXSXTBRZDUUDPZXSUUBBDVQZUUEUUFUHZXSYQUUGYRXSYPUUBBDXS
-      YPFFUCOZUUBXSXNFFUCYDVLAUUIUUBPZXIAYKUUJKFWJVESUNWKVHAUUGUUHVDZXIAYKUUKKF
-      BDTWLVESVHZWMAYKXIUUEUUDUUCPKXSUUEUUFUULWNZNFXTTBWOVGUNVLXSXTBXTNEFHYNUUA
-      UUMXSNWPFPUHXTWQXSNWTNXTWRWSUNXAAXRUHBCDEFGVMHIAYMXRJSAYKXRKSAXRUJAYQXRMS
-      XBAXIGYAUGUFZRZXCZXIXRXCAGXHUGUFRUUPLXHGXDVEAUUOXRXIAUUNXQGAYAFUGYCUOXEXF
-      VHXG $.
+    gzsumsplit0 $p |- ( ph -> ( G gzsum F )
+        = ( ( G gzsum ( F |` ( M ... N ) ) ) .+ ( F ` ( N + 1 ) ) ) ) $=
+      ( vx co wceq cgzsu wcel adantr cz c1 cmin cfz cres caddc cfv cuz wa simpr
+      oveq1d zcnd 1cnd npcand eqtrd fveq2d c0g c0 clt wbr zred ltm1d eqbrtrd wb
+      peano2zm syl eqeltrd fzn syl2an2r mpbid reseq2d res0 eqtrdi oveq2d gzsum0
+      cmnd eqid wf cle eqcomd eqle eluz2 syl3anbrc eluzfz2 ffvelcdmd mndlid csn
+      cr cmpt cop fzsn feq2d fsn2g simprd simpld fmptsn cv eqidd nfcv gzsumsnfd
+      nfv 3eqtr4rd gzsumsplit1r wo uzp1 eleq2d orbi2d mpjaodan ) AGFUAUBOZPZEDQ
+      OZEDFGUCOZUDZQOZGUAUEOZDUFZCOZPGFUGUFZRZAXIUHZXOFDUFZXPXJXSXNFDXSXNXHUAUE
+      OZFXSGXHUAUEAXIUIZUJAYAFPXIAFUAAFKUKAULUMZSUNZUOXSXPEUPUFZXOCOZXOXSXMYEXO
+      CXSXMEUQQOZYEXSXLUQEQXSXLDUQUDUQXSXKUQDXSGFURUSZXKUQPZXSGXHFURYBAXHFURUSX
+      IAFAFKUTZVASVBAFTRZXIGTRYHYIVCKXSGXHTYBAXHTRZXIAYKYLKFVDVESVFFGVGVHVIVJDV
+      KVLVMXSEVORZYGYEPAYMXIJSZEVOYEYEVPZVNVEUNUJAYMXIXOBRYFXOPJXSFXNUCOZBXNDAY
+      PBDVQZXIMSZXSXNXQRZXNYPRXSYKXNTRFXNVRUSZYSAYKXIKSZXSXNFTYDUUAVFAFWGRXIFXN
+      PYTYJXSXNFYDVSFXNVTVHFXNWAWBFXNWCVEWDBCEXOYEHIYOWEVHUNXSXJENFWFZXTWHZQOXT
+      XSDUUCEQXSDFXTWIWFZUUCXSXTBRZDUUDPZXSUUBBDVQZUUEUUFUHZXSYQUUGYRXSYPUUBBDX
+      SYPFFUCOZUUBXSXNFFUCYDVMAUUIUUBPZXIAYKUUJKFWJVESUNWKVIAUUGUUHVCZXIAYKUUKK
+      FBDTWLVESVIZWMAYKXIUUEUUDUUCPKXSUUEUUFUULWNZNFXTTBWOVHUNVMXSXTBXTNEFHYNUU
+      AUUMXSNWPFPUHXTWQXSNWTNXTWRWSUNXAAXRUHBCDEFGVOHIAYMXRJSAYKXRKSAXRUIAYQXRM
+      SXBAXIGYAUGUFZRZXCZXIXRXCAGXHUGUFRUUPLXHGXDVEAUUOXRXIAUUNXQGAYAFUGYCUOXEX
+      FVIXG $.
   $}
 
 
