@@ -17227,7 +17227,6 @@ New usage of "isdilN" is discouraged (0 uses).
 New usage of "isdivrngo" is discouraged (2 uses).
 New usage of "isdmn" is discouraged (1 uses).
 New usage of "isdmn2" is discouraged (3 uses).
-New usage of "isdomn2OLD" is discouraged (0 uses).
 New usage of "isdrngdOLD" is discouraged (1 uses).
 New usage of "isdrngrdOLD" is discouraged (0 uses).
 New usage of "iseriALT" is discouraged (0 uses).
@@ -20409,7 +20408,6 @@ Proof modification of "iscmgmALT" is discouraged (57 steps).
 Proof modification of "iscsgrpALT" is discouraged (57 steps).
 Proof modification of "isdmn" is discouraged (6 steps).
 Proof modification of "isdmn2" is discouraged (38 steps).
-Proof modification of "isdomn2OLD" is discouraged (222 steps).
 Proof modification of "isdrngdOLD" is discouraged (603 steps).
 Proof modification of "isdrngrdOLD" is discouraged (334 steps).
 Proof modification of "iseqsetv-clel" is discouraged (26 steps).
