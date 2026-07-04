@@ -166027,16 +166027,16 @@ $)
   $}
 
   ${
-    gzsumgfsum1.b $e |- B = ( Base ` G ) $.
-    gzsumgfsum1.g $e |- ( ph -> G e. CMnd ) $.
-    gzsumgfsum1.n $e |- ( ph -> N e. NN0 ) $.
-    gzsumgfsum1.f $e |- ( ph -> F : ( 1 ... N ) --> B ) $.
-    $( On an integer range starting at one, ` gsum ` and ` gfsum ` agree.
+    gzsumgsum1.b $e |- B = ( Base ` G ) $.
+    gzsumgsum1.g $e |- ( ph -> G e. CMnd ) $.
+    gzsumgsum1.n $e |- ( ph -> N e. NN0 ) $.
+    gzsumgsum1.f $e |- ( ph -> F : ( 1 ... N ) --> B ) $.
+    $( On an integer range starting at one, ` gzsum ` and ` gsum ` agree.
        (Contributed by Jim Kingdon, 25-Mar-2026.) $)
-    gzsumgfsum1 $p |- ( ph -> ( G gzsum F ) = ( G gfsum F ) ) $=
-      ( cgfsu co cid c1 cfz cres cgzsu wf1o wceq syl oveq2d ccom 1zzd nn0zd cfv
-      fzfigd chash f1oi cn0 wcel hashfz1 f1oeq2d mpbiri gfsumval fcoi1 eqtr2d
-      wf ) ADCJKDCLMENKZOZUAZPKDCPKAUQBCURDFGIAMEAUBAEHUCUEAMUQUFUDZNKZUQURQUQU
+    gzsumgsum1 $p |- ( ph -> ( G gzsum F ) = ( G gsum F ) ) $=
+      ( cgsu co cid c1 cfz cres cgzsu wf1o wceq syl oveq2d ccom 1zzd fzfigd cfv
+      nn0zd chash f1oi cn0 wcel hashfz1 f1oeq2d mpbiri gsumvalfi fcoi1 eqtr2d
+      wf ) ADCJKDCLMENKZOZUAZPKDCPKAUQBCURDFGIAMEAUBAEHUEUCAMUQUFUDZNKZUQURQUQU
       QURQUQUGAVAUQUQURAUTEMNAEUHUIUTERHEUJSTUKULUMAUSCDPAUQBCUPUSCRIUQBCUNSTUO
       $.
   $}
