@@ -157194,7 +157194,6 @@ $)
   $c topGen $.
   $c Xt_ $.
   $c 0g $.
-  $c gsum $.
   $c gzsum $.
 
   $( Extend class notation with a function that converts a basis to its
@@ -157207,9 +157206,6 @@ $)
 
   $( Extend class notation with group identity element. $)
   c0g $a class 0g $.
-
-  $( Extend class notation to include group sums over finite sets. $)
-  cgsu $a class gsum $.
 
   $( Extend class notation to include group sums over integer ranges. $)
   cgzsu $a class gzsum $.
@@ -157238,9 +157234,9 @@ $)
        sum of the elements, evaluated left-to-right, i.e.,
        ` ( ( F `` 1 ) + ( F `` 2 ) ) + ( F `` 3 ) ` , etc.
 
-       3.  This definition does not handle other cases.  But see ~ df-gfsum for
-       the case where ` A ` is a finite set (which need not specify an order)
-       and ` G ` is a commutative monoid.
+       3.  This definition does not handle other cases.  But see ~ df-gsumfi
+       for the case where ` A ` is a finite set (which need not specify an
+       order) and ` G ` is a commutative monoid.
 
        (Contributed by FL, 5-Sep-2010.)  (Revised by Mario Carneiro,
        7-Dec-2014.)  (Revised by Jim Kingdon, 27-Jun-2025.) $)
@@ -165930,17 +165926,16 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-  $c gfsum $.
+  $c gsum $.
 
-  $( Extend class notation to include finite group sum over unordered finite
-     set. $)
-  cgfsu $a class gfsum $.
+  $( Extend class notation to include group sums over finite sets. $)
+  cgsu $a class gsum $.
 
   ${
     $d w f x g $.
     $( Define the finite group sum (iterated sum) over an unordered finite set.
 
-       Given ` G gfsum F ` where ` F : A --> ( Base `` G ) ` , the set of
+       Given ` G gsum F ` where ` F : A --> ( Base `` G ) ` , the set of
        indices is ` A ` and the values are given by ` F ` at each index.  For
        this notation, ` A ` is a finite set and ` G ` is a commutative monoid,
        and the sum adds up these elements in some order (the sum does not
@@ -165949,7 +165944,7 @@ $)
        For a sum indexed by consecutive integers (and thus defining an order
        for the sum), see ~ df-gzsum .  (Contributed by Jim Kingdon,
        23-Mar-2026.) $)
-    df-gfsum $a |- gfsum = ( w e. CMnd , f e. _V |-> ( iota x
+    df-gsumfi $a |- gsum = ( w e. CMnd , f e. _V |-> ( iota x
         ( dom f e. Fin /\ E. g ( g : ( 1 ... ( # ` dom f ) )
         -1-1-onto-> dom f /\ x = ( w gzsum ( f o. g ) ) ) ) ) ) $.
   $}
@@ -208589,10 +208584,6 @@ htmldef "gzsum" as " <IMG SRC='csigma.gif' WIDTH=11 HEIGHT=19 " +
     "ALT=' gzsum' TITLE='gzsum'><sub><i>gz</i></sub> ";
   althtmldef "gzsum" as " &Sigma;<sub><i>gz</i></sub> ";
   latexdef "gzsum" as "\sum_gz";
-htmldef "gfsum" as " <IMG SRC='csigma.gif' WIDTH=11 HEIGHT=19 " +
-    "ALT=' gfsum' TITLE='gfsum'><sub><i>gf</i></sub> ";
-  althtmldef "gfsum" as " &Sigma;<sub><i>gf</i></sub> ";
-  latexdef "gfsum" as "\sum_gf";
 htmldef '"s' as " <IMG SRC='backquote.gif' WIDTH=7 HEIGHT=19 ALT=' " + '"' +
     "' TITLE='" + '"' + "'><sub><i>s</i></sub> ";
   althtmldef '"s' as ' &ldquo;<sub><i>s</i></sub> ';
