@@ -166050,30 +166050,30 @@ $)
 
   ${
     $d M j $.  $d N j $.  $d j ph $.
-    gzsumgfsum.b $e |- B = ( Base ` G ) $.
-    gzsumgfsum.g $e |- ( ph -> G e. CMnd ) $.
-    gzsumgfsum.m $e |- ( ph -> M e. ZZ ) $.
-    gzsumgfsum.n $e |- ( ph -> N e. ZZ ) $.
-    gzsumgfsum.f $e |- ( ph -> F : ( M ... N ) --> B ) $.
-    $( On an integer range, ` gzsum ` and ` gfsum ` agree.  (Contributed by Jim
+    gzsumgsum.b $e |- B = ( Base ` G ) $.
+    gzsumgsum.g $e |- ( ph -> G e. CMnd ) $.
+    gzsumgsum.m $e |- ( ph -> M e. ZZ ) $.
+    gzsumgsum.n $e |- ( ph -> N e. ZZ ) $.
+    gzsumgsum.f $e |- ( ph -> F : ( M ... N ) --> B ) $.
+    $( On an integer range, ` gzsum ` and ` gsum ` agree.  (Contributed by Jim
        Kingdon, 25-Mar-2026.) $)
-    gzsumgfsum $p |- ( ph -> ( G gzsum F ) = ( G gfsum F ) ) $=
-      ( vj cgzsu co wceq c1 cfz wcel adantr c0 cle wbr cgfsu wn cmin caddc cmpt
-      wa cv ccom ccmn cz cuz cfv simpr eluz2 syl3anbrc wf gzsumshift cfn fzfigd
-      eqid wf1o chash 1zzd zsubcld mptfzshft zcnd pncan3d oveq1d mpteq1d hashfz
-      syl cc subadd23d eqtr2d oveq12d eqidd f1oeq123d mpbid gfsumval eqtr4d c0g
-      1cnd gfsum0 clt zltnle syl2anc mpbird fzn feq2d sylib oveq2d gzsum0 eqtrd
-      wb f0bi 3eqtr4rd wdc wo zdcle exmiddc mpjaodan ) AEFUAUBZDCMNZDCUCNZOXDUD
-      ZAXDUHZXEDCLPFPEUENZUFNZQNZLUIXIUENZUGZUJMNXFXHBXMLCDEFGADUKRZXDHSZXHEULR
-      ZFULRZXDFEUMUNRZAXPXDISAXQXDJSZAXDUOEFUPUQZAEFQNZBCURZXDKSZXMVBUSXHYABCXM
-      DGXOYCAYAUTRXDAEFIJVASXHEXIUFNZXJQNZYALYEXLUGZVCZPYAVDUNZQNZYAXMVCAYGXDAL
-      XIEFAPEAVEIVFIJVGSXHYEYIYAYAYFXMAYFXMOXDALYEXKXLAYDPXJQAEPAEIVHZAWDVIZVJV
-      KSXHYDPXJYHQAYDPOXDYKSXHYHFEUENPUFNZXJXHXRYHYLOXTEFVLVMXHFEPXHFXSVHAEVNRX
-      DYJSXHWDVOVPVQXHYAVRVSVTWAWBAXGUHZDTUCNZDWCUNZXFXEYMXNYNYOOAXNXGHSZDWEVMY
-      MCTDUCYMTBCURZCTOYMYBYQAYBXGKSYMYATBCYMFEWFUBZYATOZYMYRXGAXGUOYMXQXPYRXGW
-      PAXQXGJSZAXPXGISZFEWGWHWIYMXPXQYRYSWPUUAYTEFWJWHVTWKVTCBWQWLZWMYMXEDTMNZY
-      OYMCTDMUUBWMYMXNUUCYOOYPDUKYOYOVBWNVMWOWRAXDWSZXDXGWTAXPXQUUDIJEFXAWHXDXB
-      VMXC $.
+    gzsumgsum $p |- ( ph -> ( G gzsum F ) = ( G gsum F ) ) $=
+      ( vj cgzsu co wceq c1 cfz wcel adantr c0 cle wbr cgsu wn wa cmin caddc cv
+      cmpt ccom ccmn cz cuz cfv simpr eluz2 syl3anbrc wf eqid gzsumshift fzfigd
+      wf1o chash 1zzd zsubcld mptfzshft zcnd 1cnd pncan3d oveq1d mpteq1d hashfz
+      cfn syl subadd23d eqtr2d oveq12d eqidd f1oeq123d mpbid gsumvalfi gsum0cmn
+      cc eqtr4d c0g clt wb zltnle syl2anc mpbird feq2d f0bi sylib oveq2d gzsum0
+      fzn eqtrd 3eqtr4rd wdc wo zdcle exmiddc mpjaodan ) AEFUAUBZDCMNZDCUCNZOXD
+      UDZAXDUEZXEDCLPFPEUFNZUGNZQNZLUHXIUFNZUIZUJMNXFXHBXMLCDEFGADUKRZXDHSZXHEU
+      LRZFULRZXDFEUMUNRZAXPXDISAXQXDJSZAXDUOEFUPUQZAEFQNZBCURZXDKSZXMUSUTXHYABC
+      XMDGXOYCAYAVMRXDAEFIJVASXHEXIUGNZXJQNZYALYEXLUIZVBZPYAVCUNZQNZYAXMVBAYGXD
+      ALXIEFAPEAVDIVEIJVFSXHYEYIYAYAYFXMAYFXMOXDALYEXKXLAYDPXJQAEPAEIVGZAVHVIZV
+      JVKSXHYDPXJYHQAYDPOXDYKSXHYHFEUFNPUGNZXJXHXRYHYLOXTEFVLVNXHFEPXHFXSVGAEWC
+      RXDYJSXHVHVOVPVQXHYAVRVSVTWAWDAXGUEZDTUCNZDWEUNZXFXEYMXNYNYOOAXNXGHSZDWBV
+      NYMCTDUCYMTBCURZCTOYMYBYQAYBXGKSYMYATBCYMFEWFUBZYATOZYMYRXGAXGUOYMXQXPYRX
+      GWGAXQXGJSZAXPXGISZFEWHWIWJYMXPXQYRYSWGUUAYTEFWPWIVTWKVTCBWLWMZWNYMXEDTMN
+      ZYOYMCTDMUUBWNYMXNUUCYOOYPDUKYOYOUSWOVNWQWRAXDWSZXDXGWTAXPXQUUDIJEFXAWIXD
+      XBVNXC $.
   $}
 
   ${
