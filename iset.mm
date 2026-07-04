@@ -166088,18 +166088,18 @@ $)
     $( Group sum of a singleton.  (Contributed by Jim Kingdon, 2-Apr-2026.) $)
     gfsumsn $p |- ( ( G e. CMnd /\ M e. V /\ C e. B ) ->
         ( G gfsum ( k e. { M } |-> A ) ) = C ) $=
-      ( vx wcel csn cmpt co c1 cgsu wceq 3ad2ant2 cfz cz ccmn w3a cgfsu ccom cv
-      simp1 elsni syl adantl simpl3 eqeltrd fmpttd cfn snfig chash cfv wf1o cop
-      wa 1z simp2 f1osng sylancr fmptsn eqcomd hashsng oveq2d fzsn ax-mp eqtrdi
-      eqidd f1oeq123d mpbird gfsumval snidg adantr cofmpt eqid fvmptd3 mpteq2dv
-      simp3 eqtrd cmnmndd 1zzd nfv nfcv gsumfzsnfd 3eqtrd ) EUAKZFGKZCBKZUBZEDF
-      LZAMZUCNEWNJOLZFMZUDZPNEJWOCMZPNCWLWMBWNWPEHWIWJWKUFZWLDWMABWLDUEZWMKZUSA
-      CBXAACQZWLXAWTFQXBWTFUGIUHUIWIWJWKXAUJUKULZWJWIWMUMKWKFGUNRWLOWMUOUPZSNZW
-      MWPUQWOWMOFURLZUQZWLOTKZWJXGUTWIWJWKVAZOFTGVBVCWLXEWOWMWMWPXFWLXFWPWLXHWJ
-      XFWPQUTXIJOFTGVDVCVEWJWIXEWOQWKWJXEOOSNZWOWJXDOOSFGVFVGXHXJWOQUTOVHVIVJRW
-      LWMVKVLVMVNWLWQWREPWLWQJWOFWNUPZMWRWLJWOFWMBWNXCWLFWMKZJUEZWOKWJWIXLWKFGV
-      ORZVPVQWLJWOXKCWLDFACWMWNBWNVRIXNWIWJWKWAZVSVTWBVGWLCBCJEOHWLEWSWCWLWDXOW
-      LXMOQUSCVKWLJWEJCWFWGWH $.
+      ( vx wcel csn cmpt co c1 cgzsu wceq 3ad2ant2 cfz cz ccmn cgfsu ccom simp1
+      w3a cv wa elsni syl adantl simpl3 eqeltrd fmpttd cfn snfig chash cfv wf1o
+      cop 1z simp2 f1osng sylancr fmptsn eqcomd hashsng oveq2d fzsn ax-mp eqidd
+      eqtrdi f1oeq123d mpbird gfsumval snidg adantr eqid simp3 fvmptd3 mpteq2dv
+      cofmpt eqtrd cmnmndd 1zzd nfv nfcv gzsumsnfd 3eqtrd ) EUAKZFGKZCBKZUEZEDF
+      LZAMZUBNEWNJOLZFMZUCZPNEJWOCMZPNCWLWMBWNWPEHWIWJWKUDZWLDWMABWLDUFZWMKZUGA
+      CBXAACQZWLXAWTFQXBWTFUHIUIUJWIWJWKXAUKULUMZWJWIWMUNKWKFGUORWLOWMUPUQZSNZW
+      MWPURWOWMOFUSLZURZWLOTKZWJXGUTWIWJWKVAZOFTGVBVCWLXEWOWMWMWPXFWLXFWPWLXHWJ
+      XFWPQUTXIJOFTGVDVCVEWJWIXEWOQWKWJXEOOSNZWOWJXDOOSFGVFVGXHXJWOQUTOVHVIVKRW
+      LWMVJVLVMVNWLWQWREPWLWQJWOFWNUQZMWRWLJWOFWMBWNXCWLFWMKZJUFZWOKWJWIXLWKFGV
+      ORZVPWAWLJWOXKCWLDFACWMWNBWNVQIXNWIWJWKVRZVSVTWBVGWLCBCJEOHWLEWSWCWLWDXOW
+      LXMOQUGCVJWLJWEJCWFWGWH $.
   $}
 
   ${
