@@ -166043,10 +166043,10 @@ $)
 
   $( An empty finite group sum is the identity.  (Contributed by Jim Kingdon,
      26-Mar-2026.) $)
-  gfsum0 $p |- ( G e. CMnd -> ( G gfsum (/) ) = ( 0g ` G ) ) $=
-    ( ccmn wcel c0 cgzsu co cgfsu c0g cfv cbs cc0 eqid id cn0 0nn0 a1i c1 wf f0
-    cfz fz10 feq2i mpbir gzsumgfsum1 gzsum0 eqtr3d ) ABCZADEFADGFAHIZUGAJIZDAKU
-    ILUGMKNCUGOPQKTFZUIDRZUGUKDUIDRUISUJDUIDUAUBUCPUDABUHUHLUEUF $.
+  gsum0cmn $p |- ( G e. CMnd -> ( G gsum (/) ) = ( 0g ` G ) ) $=
+    ( ccmn wcel c0 cgzsu co cgsu c0g cfv cbs cc0 eqid id cn0 0nn0 a1i c1 cfz wf
+    f0 fz10 feq2i mpbir gzsumgsum1 gzsum0 eqtr3d ) ABCZADEFADGFAHIZUGAJIZDAKUIL
+    UGMKNCUGOPQKRFZUIDSZUGUKDUIDSUITUJDUIDUAUBUCPUDABUHUHLUEUF $.
 
   ${
     $d M j $.  $d N j $.  $d j ph $.
