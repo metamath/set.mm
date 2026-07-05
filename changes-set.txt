@@ -94,6 +94,27 @@ DONE:
 Date      Old         New         Notes
  2-Jul-26 ~ scotteqd to ~ scottrankd : Moved from RR's mathbox to main set.mm
  2-Jul-26 df-scott    [same]      Moved from RR's mathbox to main set.mm
+28-Jun-26 drnglidl1ne0 [same]     Moved from TA's mathbox to main set.mm
+28-Jun-26 pm4.71da    [same]      Moved from ZW's mathbox to main set.mm
+27-Jun-26 elringlsm   elmgplsm    Moved from TA's mathbox to main set.mm
+27-Jun-26 elringlsmd  elmgplsmd   Moved from TA's mathbox to main set.mm 
+27-Jun-26 rspsnid     [same]      Moved from TA's mathbox to main set.mm
+27-Jun-26 0ringidl    [same]      Moved from TA's mathbox to main set.mm
+27-Jun-26 ringdi22    [same]      Moved from TA's mathbox to main set.mm 
+27-Jun-26 qusxpid     [same]      Moved from TA's mathbox to main set.mm
+27-Jun-26 qustriv     [same]      Moved from TA's mathbox to main set.mm
+27-Jun-26 qustrivr    [same]      Moved from TA's mathbox to main set.mm 
+27-Jun-26 lidlmcld    [same]      Moved from TA's mathbox to main set.mm
+27-Jun-26 uniin1      [same]      Moved from TA's mathbox to main set.mm
+27-Jun-26 uniin2      [same]      Moved from TA's mathbox to main set.mm
+27-Jun-26 lsmidl      [same]      Moved from TA's mathbox to main set.mm 
+27-Jun-26 submcld     [same]      Moved from TA's mathbox to main set.mm
+27-Jun-26 subgcld     [same]      Moved from TA's mathbox to main set.mm
+27-Jun-26 ecxpid      [same]      Moved from TA's mathbox to main set.mm 
+27-Jun-26 qsxpid      [same]      Moved from TA's mathbox to main set.mm
+27-Jun-26 lsmidllsp   [same]      Moved from TA's mathbox to main set.mm
+27-Jun-26 lsmidl      [same]      Moved from TA's mathbox to main set.mm
+27-Jun-26 bj-a1k      ax1w        Moved from BJ's mathbox to main set.mm
 20-Jun-26 reldisjun   reldmun     Removed conjunct from antecedent
 19-Jun-26 ringen1zr   ringen1zr0
 19-Jun-26 srgen1zr    srgen1zr0
@@ -129,7 +150,8 @@ Date      Old         New         Notes
  4-May-26 ricsym      [same]      Moved from SN's mathbox to main set.mm
  4-May-26 psrbagres   [same]      Moved from SN's mathbox to main set.mm
  4-May-26 mplcrngd    [same]      Moved from SN's mathbox to main set.mm
- 4-May-26 ~ evlscl to ~ selvmul : Moved from SN's mathbox to main set.mm
+ 4-May-26 ---    ---              Move variable selection theorems
+                                  from SN's mathbox to main set.mm
 11-Apr-26 muldivdid   [same]      Moved from TA's mathbox to main set.mm
 11-Apr-26 elfzod      [same]      Moved from GS's mathbox to main set.mm
 11-Apr-26 1t1e1ALT    [same]      Moved from SN's mathbox to main set.mm
