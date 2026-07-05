@@ -166302,30 +166302,30 @@ $)
 
   ${
     $d A w y z $.  $d F w y z $.  $d G w y z $.  $d S w y z $.  $d ph w y z $.
-    gfsumsubmclfi.z $e |- .0. = ( 0g ` G ) $.
-    gfsumsubmclfi.g $e |- ( ph -> G e. CMnd ) $.
-    gfsumsubmclfi.a $e |- ( ph -> A e. Fin ) $.
-    gfsumsubmclfi.s $e |- ( ph -> S e. ( SubMnd ` G ) ) $.
-    gfsumsubmclfi.f $e |- ( ph -> F : A --> S ) $.
+    gsumsubmclfi.z $e |- .0. = ( 0g ` G ) $.
+    gsumsubmclfi.g $e |- ( ph -> G e. CMnd ) $.
+    gsumsubmclfi.a $e |- ( ph -> A e. Fin ) $.
+    gsumsubmclfi.s $e |- ( ph -> S e. ( SubMnd ` G ) ) $.
+    gsumsubmclfi.f $e |- ( ph -> F : A --> S ) $.
     $( Closure of a group sum in a submonoid.  (Contributed by Mario Carneiro,
        10-Jan-2015.)  (Revised by Mario Carneiro, 24-Apr-2016.)  (Revised by
        AV, 3-Jun-2019.) $)
-    gfsumsubmclfi $p |- ( ph -> ( G gfsum F ) e. S ) $=
-      ( cres cgfsu co wceq oveq2d wcel c0 eleq1d cfv vw vy wfn ffnd fnresdm syl
-      vz cv csn cun reseq2 c0g ccmn gfsum0 res0 3eqtr4g csubmnd subm0cl eqeltrd
-      oveq2i cfn wa wss cdif ad3antrrr ssun1 resabs1 ax-mp simpr eqeltrid ssun2
-      cplusg vsnid sselii fvres ad2antrr simprr eldifad ffvelcdmd adantr submcl
-      wf eqid syl3anc cbs submss fssd simprl snssd unssd fssresd simplr eldifbd
-      wb gfsump1 mpbird ex findcard2sd eqeltrrd ) AEDBLZMNZEDMNCAWTDEMADBUCWTDO
-      ABCDKUDBDUEUFPAEDUAUHZLZMNZCQEDRLZMNZCQEDUBUHZLZMNZCQZEDXGUGUHZUIZUJZLZMN
-      ZCQZXACQUAUBUGBXBROZXDXFCXQXCXEEMXBRDUKPSXBXGOZXDXICXRXCXHEMXBXGDUKPSXBXM
+    gsumsubmclfi $p |- ( ph -> ( G gsum F ) e. S ) $=
+      ( cres cgsu co wceq oveq2d wcel c0 eleq1d cfv vw vy vz wfn fnresdm syl cv
+      ffnd csn cun reseq2 c0g ccmn gsum0cmn res0 oveq2i 3eqtr4g csubmnd subm0cl
+      eqeltrd cfn wa wss cdif cplusg ad3antrrr ssun1 ax-mp simpr eqeltrid ssun2
+      resabs1 vsnid sselii fvres wf simprr eldifad ffvelcdmd adantr eqid submcl
+      ad2antrr syl3anc wb submss fssd simprl snssd unssd fssresd simplr eldifbd
+      cbs gsump1 mpbird ex findcard2sd eqeltrrd ) AEDBLZMNZEDMNCAWTDEMADBUDWTDO
+      ABCDKUHBDUEUFPAEDUAUGZLZMNZCQEDRLZMNZCQEDUBUGZLZMNZCQZEDXGUCUGZUIZUJZLZMN
+      ZCQZXACQUAUBUCBXBROZXDXFCXQXCXEEMXBRDUKPSXBXGOZXDXICXRXCXHEMXBXGDUKPSXBXM
       OZXDXOCXSXCXNEMXBXMDUKPSXBBOZXDXACXTXCWTEMXBBDUKPSAXFFCAERMNZEULTZXFFAEUM
-      QZYAYBOHEUNUFXEREMDUOUTGUPACEUQTQZFCQJCEFGURUFUSAXGVAQZVBZXGBVCZXKBXGVDQZ
-      VBZVBZXJXPYJXJVBZXPEXNXGLZMNZXKXNTZEVLTZNZCQZYKYDYMCQYNCQZYQAYDYEYIXJJVEY
-      KYMXICYLXHEMXGXMVCYLXHOXGXLVFDXGXMVGVHUTYJXJVIVJYJYRXJYJYNXKDTZCXKXMQYNYS
-      OXLXMXKXLXGVKUGVMVNXKXMDVOVHYJBCXKDABCDWBYEYIKVPZYJXKBXGYFYGYHVQZVRZVSVJV
-      TYOCEYMYNYOWCZWAWDYJXPYQWNXJYJXOYPCYJEWETZYOXNEBXGXKUUDWCZUUCAYCYEYIHVPYJ
-      BUUDXMDYJBCUUDDYTACUUDVCZYEYIAYDUUFJUUDCEUUEWFUFVPWGYJXGXLBYFYGYHWHYJXKBU
+      QZYAYBOHEUNUFXEREMDUOUPGUQACEURTQZFCQJCEFGUSUFUTAXGVAQZVBZXGBVCZXKBXGVDQZ
+      VBZVBZXJXPYJXJVBZXPEXNXGLZMNZXKXNTZEVETZNZCQZYKYDYMCQYNCQZYQAYDYEYIXJJVFY
+      KYMXICYLXHEMXGXMVCYLXHOXGXLVGDXGXMVLVHUPYJXJVIVJYJYRXJYJYNXKDTZCXKXMQYNYS
+      OXLXMXKXLXGVKUCVMVNXKXMDVOVHYJBCXKDABCDVPYEYIKWCZYJXKBXGYFYGYHVQZVRZVSVJV
+      TYOCEYMYNYOWAZWBWDYJXPYQWEXJYJXOYPCYJEWNTZYOXNEBXGXKUUDWAZUUCAYCYEYIHWCYJ
+      BUUDXMDYJBCUUDDYTACUUDVCZYEYIAYDUUFJUUDCEUUEWFUFWCWGYJXGXLBYFYGYHWHYJXKBU
       UBWIWJWKAYEYIWLUUBYJXKBXGUUAWMWOSVTWPWQIWRWS $.
   $}
 
