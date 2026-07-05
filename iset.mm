@@ -166293,11 +166293,11 @@ $)
 
     $( The sum of two group sums expressed as mappings with finite domain,
        using a function operation.  (Contributed by AV, 23-Jul-2019.) $)
-    gfsummptfidmadd2 $p |- ( ph ->
-      ( G gfsum ( F oF .+ H ) ) = ( ( G gfsum F ) .+ ( G gfsum H ) ) ) $=
-      ( co cgfsu cof cmpt cfn wceq a1i offval2 oveq2d gfsummptfidmadd eqtrd ) A
-      IHJGUASZTSIBCEFGSUBZTSIHTSIJTSGSAUJUKITABCEFGHJUCDDNOPHBCEUBUDAQUEJBCFUBU
-      DARUEUFUGABCDEFGHIJKLMNOPQRUHUI $.
+    gsummptfidmadd2 $p |- ( ph ->
+      ( G gsum ( F oF .+ H ) ) = ( ( G gsum F ) .+ ( G gsum H ) ) ) $=
+      ( co cgsu cof cmpt cfn wceq a1i offval2 oveq2d gsummptfidmadd eqtrd ) AIH
+      JGUASZTSIBCEFGSUBZTSIHTSIJTSGSAUJUKITABCEFGHJUCDDNOPHBCEUBUDAQUEJBCFUBUDA
+      RUEUFUGABCDEFGHIJKLMNOPQRUHUI $.
   $}
 
   ${
