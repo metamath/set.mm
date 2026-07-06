@@ -166329,6 +166329,30 @@ $)
       UBWIWJWKAYEYIWLUUBYJXKBXGUUAWMWOSVTWPWQIWRWS $.
   $}
 
+  ${
+    $d A f $.  $d F f $.  $d G f $.  $d H f $.  $d K f $.  $d f ph $.
+    gsummhm.b $e |- B = ( Base ` G ) $.
+    gsummhm.z $e |- .0. = ( 0g ` G ) $.
+    gsummhm.g $e |- ( ph -> G e. CMnd ) $.
+    gsummhmfi.h $e |- ( ph -> H e. CMnd ) $.
+    gsummhmfi.a $e |- ( ph -> A e. Fin ) $.
+    gsummhm.k $e |- ( ph -> K e. ( G MndHom H ) ) $.
+    gsummhm.f $e |- ( ph -> F : A --> B ) $.
+    $( Apply a group homomorphism to a group sum.  (Contributed by Mario
+       Carneiro, 15-Dec-2014.)  (Revised by Mario Carneiro, 24-Apr-2016.)
+       (Revised by AV, 6-Jun-2019.) $)
+    gsummhmfi $p |- ( ph -> ( H gsum ( K o. F ) ) = ( K ` ( G gsum F ) ) ) $=
+      ( vf cfv co wcel adantr chash cfz wf1o ccom cgsu wceq cen wbr isfinite4im
+      c1 cv wex cfn syl bren sylib wa cgzsu ccmn cmnmndd 1zzd cz cn0 nn0zd cmhm
+      hashcl wf f1of adantl fcod gzsummhm cbs eqid simpr gsumvalfi coass oveq2i
+      mhmf eqtrdi fveq2d 3eqtr4d exlimddv ) AUJBUAQZUBRZBPUKZUCZFGDUDZUERZEDUER
+      ZGQZUFPAWDBUGUHZWFPULABUMSZWKMBUIUNWDBPUOUPAWFUQZFGDWEUDZUDZURRZEWNURRZGQ
+      WHWJWMCWNEFGUJWCHIJAEUSSWFKTZWMFAFUSSWFLTZUTWMVAAWCVBSWFAWCAWLWCVCSMBVFUN
+      VDTAGEFVERSZWFNTWMWDBCDWEABCDVGWFOTZWFWDBWEVGAWDBWEVHVIVJVKWMWHFWGWEUDZUR
+      RWPWMBFVLQZWGWEFXCVMZWSABXCWGVGWFABCXCGDAWTCXCGVGNCXCEFGIXDVRUNOVJTAWLWFM
+      TZAWFVNZVOXBWOFURGDWEVPVQVSWMWIWQGWMBCDWEEIWRXAXEXFVOVTWAWB $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
