@@ -166353,6 +166353,30 @@ $)
       TZAWFVNZVOXBWOFURGDWEVPVQVSWMWIWQGWMBCDWEEIWRXAXEXFVOVTWAWB $.
   $}
 
+  ${
+    $d k x A $.  $d k x B $.  $d k C $.  $d x D $.  $d x E $.  $d k ph $.
+    $d x G $.  $d x H $.  $d x X $.
+    gsummhm2.b $e |- B = ( Base ` G ) $.
+    gsummhm2.z $e |- .0. = ( 0g ` G ) $.
+    gsummhm2.g $e |- ( ph -> G e. CMnd ) $.
+    gsummhm2.h $e |- ( ph -> H e. CMnd ) $.
+    gsummhm2fi.a $e |- ( ph -> A e. Fin ) $.
+    gsummhm2.k $e |- ( ph -> ( x e. B |-> C ) e. ( G MndHom H ) ) $.
+    gsummhm2.f $e |- ( ( ph /\ k e. A ) -> X e. B ) $.
+    gsummhm2.1 $e |- ( x = X -> C = D ) $.
+    gsummhm2.2 $e |- ( x = ( G gsum ( k e. A |-> X ) ) -> C = E ) $.
+    $( Apply a group homomorphism to a group sum, mapping version with implicit
+       substitution.  (Contributed by Mario Carneiro, 5-May-2015.)  (Revised by
+       AV, 6-Jun-2019.) $)
+    gsummhm2fi $p |- ( ph -> ( H gsum ( k e. A |-> D ) ) = E ) $=
+      ( cmpt ccom cgsu co cfv fmpttd gsummhmfi eqidd fmptco oveq2d cbs gsumclfi
+      eqid wcel cv wceq eleq1d wf wral cmhm mhmf sylibr rspcdva fvmptd3 3eqtr3d
+      syl fmpt ) AJBDEUBZGCKUBZUCZUDUEIVJUDUEZVIUFJGCFUBZUDUEHACDVJIJVILMNOPQRA
+      GCKDSUGZUHAVKVMJUDAGBCDKEFVJVISAVJUIAVIUITUJUKABVLEHDVIJULUFZVIUNZUAACDVJ
+      ILMNOQVNUMZAEVOUOZHVOUOBDVLBUPVLUQEHVOUAURADVOVIUSZVRBDUTAVIIJVAUEUOVSRDV
+      OIJVIMVOUNVBVGBDVOEVIVPVHVCVQVDVEVF $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
