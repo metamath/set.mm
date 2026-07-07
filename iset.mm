@@ -165221,6 +165221,24 @@ $)
   $}
 
   ${
+    $d H x y $.  $d ph x y $.
+    cmnsubm.s $e |- ( ph -> S e. ( SubMnd ` G ) ) $.
+    cmnsubm.g $e |- ( ph -> G e. CMnd ) $.
+    cmnsubm.h $e |- H = ( G |`s S ) $.
+    $( A submonoid of a commutative monoid is commutative.  (Contributed by Jim
+       Kingdon, 7-Jul-2026.) $)
+    cmnsubm $p |- ( ph -> H e. CMnd ) $=
+      ( vx vy wcel cv cplusg cfv co wceq cbs ccmn syl adantr eqid cmnd wral wss
+      csubmnd submmnd wa submbas submss eqsstrrd simprl sseldd simprr cmncom wb
+      syl3anc cress a1i eqidd ressplusgd oveqd mpbid ralrimivva iscmn sylanbrc
+      eqeq12d ) ADUAJZHKZIKZDLMZNZVHVGVINZOZIDPMZUBHVMUBDQJABCUDMZJZVFEBDCGUERA
+      VLHIVMVMAVGVMJZVHVMJZUFZUFZVGVHCLMZNZVHVGVTNZOZVLVSCQJZVGCPMZJVHWEJWCAWDV
+      RFSVSVMWEVGAVMWEUCVRAVMBWEAVOBVMOEBDCGUGRAVOBWEUCEWEBCWETZUHRUISZAVPVQUJU
+      KVSVMWEVHWGAVPVQULUKWEVTCVGVHWFVTTUMUOAWCVLUNVRAWAVJWBVKAVTVIVGVHABVTCDVN
+      QDCBUPNOAGUQAVTUREFUSZUTAVTVIVHVGWHUTVESVAVBHIVMVIDVMTVITVCVD $.
+  $}
+
+  ${
     $d A w $.  $d B w $.  $d .0. w $.  $d .+ w $.  $d ph w $.
     rinvmod.b $e |- B = ( Base ` G ) $.
     rinvmod.0 $e |- .0. = ( 0g ` G ) $.
