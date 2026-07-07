@@ -166428,6 +166428,36 @@ $)
       XHXKXLXMXIXJ $.
   $}
 
+  ${
+    $d .+ x $.  $d .0. x $.  $d A f x $.  $d B x $.  $d F f $.  $d G f x $.
+    $d H f x $.  $d S x $.  $d f ph x $.
+    gsumress.b $e |- B = ( Base ` G ) $.
+    gsumress.o $e |- .+ = ( +g ` G ) $.
+    gsumress.h $e |- H = ( G |`s S ) $.
+    gsumressfi.g $e |- ( ph -> G e. CMnd ) $.
+    gsumressfi.h $e |- ( ph -> H e. CMnd ) $.
+    gsumressfi.a $e |- ( ph -> A e. Fin ) $.
+    gsumress.s $e |- ( ph -> S C_ B ) $.
+    gsumress.f $e |- ( ph -> F : A --> S ) $.
+    gsumress.z $e |- ( ph -> .0. e. S ) $.
+    gsumress.c $e |- ( ( ph /\ x e. B ) ->
+      ( ( .0. .+ x ) = x /\ ( x .+ .0. ) = x ) ) $.
+    $( The group sum in a substructure is the same as the group sum in the
+       original structure.  (Contributed by Mario Carneiro, 19-Dec-2014.)
+       (Revised by Mario Carneiro, 30-Apr-2015.) $)
+    gsumressfi $p |- ( ph -> ( G gsum F ) = ( H gsum F ) ) $=
+      ( vf c1 chash cfv cfz wf1o cgsu wceq cen wbr wex cfn wcel isfinite4im syl
+      co cv bren sylib wa ccom cgzsu ccmn adantr cn0 hashcl nn0zd fzfigd wss wf
+      1zzd f1of adantl fcod adantlr gzsumress fssd simpr gsumvalfi cbs eqid a1i
+      cress ressbas2d feq3d mpbid 3eqtr4d exlimddv ) AUBCUCUDZUEUPZCUAUQZUFZHGU
+      GUPZIGUGUPZUHUAAWJCUIUJZWLUAUKACULUMZWOPCUNUOWJCUAURUSAWLUTZHGWKVAZVBUPIW
+      RVBUPWMWNWQBWJDEFWRHIVCULJKLMAHVCUMWLNVDZWQUBWIWQVKWQWIWQWPWIVEUMAWPWLPVD
+      ZCVFUOVGVHAFDVIWLQVDWQWJCFGWKACFGVJZWLRVDWLWJCWKVJAWJCWKVLVMVNAJFUMWLSVDA
+      BUQZDUMJXBEUPXBUHXBJEUPXBUHUTWLTVOVPWQCDGWKHKWSACDGVJWLACFDGRQVQVDWTAWLVR
+      ZVSWQCIVTUDZGWKIXDWAAIVCUMWLOVDACXDGVJZWLAXAXERAFXDGCAFDIHVCIHFWCUPUHAMWB
+      DHVTUDUHAKWBNQWDWEWFVDWTXCVSWGWH $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
