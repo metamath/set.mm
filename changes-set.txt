@@ -92,6 +92,8 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+ 7-Jul-26 hashpss     [same]      Moved from TA's mathbox to main set.mm
+ 7-Jul-26 ordpss      [same]      Moved from ATS's mathbox to main set.mm
  2-Jul-26 ~ scotteqd to ~ scottrankd : Moved from RR's mathbox to main set.mm
  2-Jul-26 df-scott    [same]      Moved from RR's mathbox to main set.mm
 28-Jun-26 drnglidl1ne0 [same]     Moved from TA's mathbox to main set.mm
