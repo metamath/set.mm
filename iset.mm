@@ -214579,27 +214579,6 @@ $)
   $}
 
   ${
-    $d u v w x y z $.
-    $( Real number trichotomy implies that if a product is zero, one of its
-       factors must be zero.  (Contributed by Jim Kingdon, 27-May-2026.) $)
-    trimul0or $p |- ( A. x e. RR A. y e. RR ( x < y \/ x = y \/ y < x )
-        -> A. u e. CC A. v e. CC ( ( u x. v ) = 0 -> ( u = 0 \/ v = 0 ) ) ) $=
-      ( vz vw cv wbr wceq wral cc0 wo cc wcel wa cap wn simpr adantr wdc clt cr
-      w3o co wi simprl ad3antrrr simplrr ad2antrr simpllr simplr mulap0d mulcld
-      cmul wb 0cn apti sylancl mpbid pm2.21dd mpbird olcd a1d breq1 dcbid breq2
-      cndcap biimpi r19.21bi 0cnd rspcdva ralrimiva exmiddc mpjaodan ralrimivva
-      ex syl orcd ) AGZBGZUAHVSVTIVTVSUAHUCBUBJAUBJZDGZCGZUNUDZKIZWBKIZWCKIZLZU
-      EZDCMMWAWBMNZWCMNZOZOZWBKPHZWIWNQZWMWNOZWCKPHZWIWQQZWPWQOZWEWHWSWEOZWDKPH
-      ZWHWTWBWCWMWJWNWQWEWAWJWKUFZUGZWPWKWQWEWAWJWKWNUHZUIZWMWNWQWEUJWPWQWEUKUL
-      WTWEXAQZWSWERWTWDMNKMNZWEXFUOWTWBWCXCXEUMUPWDKUQURUSUTVPWPWROZWHWEXHWGWFX
-      HWGWRWPWRRXHWKXGWGWRUOWPWKWRXDSUPWCKUQURVAVBVCWPWQTZWQWRLWPEGZKPHZTZXIEMW
-      CXJWCIXKWQXJWCKPVDVEWMXLEMJWNWMXLEMWMXJMNOZXJFGZPHZTZXLFMKXNKIXOXKXNKXJPV
-      FVEWMXPFMJZEMWAXQEMJZWLWAXRABEFVGVHSVIXMVJVKVLZSXDVKWQVMVQVNWMWOOZWHWEXTW
-      FWGXTWFWOWMWORXTWJXGWFWOUOWMWJWOXBSUPWBKUQURVAVRVCWMWNTZWNWOLWMXLYAEMWBXJ
-      WBIXKWNXJWBKPVDVEXSXBVKWNVMVQVNVO $.
-  $}
-
-  ${
     $d f u x $.  $d f x y $.  $d x y z $.
     $( Decidability of real number equality implies the existence of a certain
        non-constant function from real numbers to integers.  Variation of
