@@ -3635,6 +3635,29 @@ $)
   $}
 
   ${
+    birani.1 $e |- ( ph <-> ps ) $.
+    $( Inference adding a conjunct to the left-hand side of a biconditional.
+       (Contributed by Matthew House, 22-May-2026.) $)
+    birani $p |- ( ( ph /\ ch ) -> ps ) $=
+      ( biimpi adantr ) ABCABDEF $.
+
+    $( Inference adding a conjunct to the left-hand side of a biconditional.
+       (Contributed by Matthew House, 22-May-2026.) $)
+    bilani $p |- ( ( ch /\ ph ) -> ps ) $=
+      ( biimpi adantl ) ABCABDEF $.
+
+    $( Inference adding a conjunct to the right-hand side of a biconditional.
+       (Contributed by Matthew House, 22-May-2026.) $)
+    biranri $p |- ( ( ps /\ ch ) -> ph ) $=
+      ( biimpri adantr ) BACABDEF $.
+
+    $( Inference adding a conjunct to the right-hand side of a biconditional.
+       (Contributed by Matthew House, 22-May-2026.) $)
+    bilanri $p |- ( ( ch /\ ps ) -> ph ) $=
+      ( biimpri adantl ) BACABDEF $.
+  $}
+
+  ${
     simpl2im.1 $e |- ( ph -> ( ps /\ ch ) ) $.
     simpl2im.2 $e |- ( ch -> th ) $.
     $( Implication from an eliminated conjunct implied by the antecedent.
