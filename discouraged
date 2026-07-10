@@ -16039,9 +16039,6 @@ New usage of "distrnq" is discouraged (7 uses).
 New usage of "distrpi" is discouraged (5 uses).
 New usage of "distrpr" is discouraged (7 uses).
 New usage of "distrsr" is discouraged (3 uses).
-New usage of "div0OLD" is discouraged (0 uses).
-New usage of "div11OLD" is discouraged (0 uses).
-New usage of "dividOLD" is discouraged (0 uses).
 New usage of "divrngidl" is discouraged (2 uses).
 New usage of "divrngpr" is discouraged (1 uses).
 New usage of "djaclN" is discouraged (0 uses).
@@ -16436,7 +16433,6 @@ New usage of "eqopab2b" is discouraged (1 uses).
 New usage of "eqoprab2b" is discouraged (1 uses).
 New usage of "eqresr" is discouraged (4 uses).
 New usage of "eqsbc2VD" is discouraged (0 uses).
-New usage of "eqsndOLD" is discouraged (0 uses).
 New usage of "equcomi1" is discouraged (1 uses).
 New usage of "equid1" is discouraged (1 uses).
 New usage of "equid1ALT" is discouraged (0 uses).
@@ -16609,7 +16605,6 @@ New usage of "grothomex" is discouraged (0 uses).
 New usage of "grothpw" is discouraged (0 uses).
 New usage of "grothpwex" is discouraged (0 uses).
 New usage of "grpbasex" is discouraged (3 uses).
-New usage of "grpinv11OLD" is discouraged (0 uses).
 New usage of "grpinvfvalALT" is discouraged (0 uses).
 New usage of "grpo2inv" is discouraged (4 uses).
 New usage of "grpoass" is discouraged (16 uses).
@@ -18381,7 +18376,6 @@ New usage of "pl42lem4N" is discouraged (1 uses).
 New usage of "plendx" is discouraged (17 uses).
 New usage of "plpv" is discouraged (1 uses).
 New usage of "plusgndx" is discouraged (18 uses).
-New usage of "ply1idvr1OLD" is discouraged (0 uses).
 New usage of "plycjOLD" is discouraged (1 uses).
 New usage of "pm10.252" is discouraged (0 uses).
 New usage of "pm11.07" is discouraged (0 uses).
@@ -19841,9 +19835,6 @@ Proof modification of "dfvd3ir" is discouraged (19 steps).
 Proof modification of "dif1ennnALT" is discouraged (335 steps).
 Proof modification of "difidALT" is discouraged (14 steps).
 Proof modification of "dih2dimbALTN" is discouraged (450 steps).
-Proof modification of "div0OLD" is discouraged (41 steps).
-Proof modification of "div11OLD" is discouraged (119 steps).
-Proof modification of "dividOLD" is discouraged (31 steps).
 Proof modification of "divrngidl" is discouraged (417 steps).
 Proof modification of "divrngpr" is discouraged (91 steps).
 Proof modification of "dju1p1e2" is discouraged (72 steps).
@@ -20077,7 +20068,6 @@ Proof modification of "eqeq1dALT" is discouraged (62 steps).
 Proof modification of "eqeqan12dALT" is discouraged (23 steps).
 Proof modification of "eqid1" is discouraged (9 steps).
 Proof modification of "eqsbc2VD" is discouraged (131 steps).
-Proof modification of "eqsndOLD" is discouraged (43 steps).
 Proof modification of "equcomi1" is discouraged (16 steps).
 Proof modification of "equid1" is discouraged (50 steps).
 Proof modification of "equid1ALT" is discouraged (36 steps).
@@ -20320,7 +20310,6 @@ Proof modification of "ggen31" is discouraged (22 steps).
 Proof modification of "ghomidOLD" is discouraged (178 steps).
 Proof modification of "ghomlinOLD" is discouraged (161 steps).
 Proof modification of "gpg3nbgrvtx0ALT" is discouraged (293 steps).
-Proof modification of "grpinv11OLD" is discouraged (88 steps).
 Proof modification of "grpinvfvalALT" is discouraged (161 steps).
 Proof modification of "grposnOLD" is discouraged (291 steps).
 Proof modification of "grpsubfvalALT" is discouraged (176 steps).
@@ -20625,7 +20614,6 @@ Proof modification of "peano3OLD" is discouraged (10 steps).
 Proof modification of "perfectALTV" is discouraged (528 steps).
 Proof modification of "perpdragALT" is discouraged (241 steps).
 Proof modification of "pige3ALT" is discouraged (1082 steps).
-Proof modification of "ply1idvr1OLD" is discouraged (151 steps).
 Proof modification of "plycjOLD" is discouraged (283 steps).
 Proof modification of "pm2.21ddALT" is discouraged (10 steps).
 Proof modification of "pm2.43bgbi" is discouraged (16 steps).
