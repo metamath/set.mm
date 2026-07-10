@@ -94,7 +94,7 @@ DONE:
 Date      Old         New         Notes
  5-Jul-26 breq1dd     [same]      Moved from TA's mathbox to main set.mm
  5-Jul-26 breq2dd     [same]      Moved from TA's mathbox to main set.mm
- 5-Jul-26 ecase13d    [same]      Moved from TA's mathbox to main set.mm
+ 5-Jul-26 ecase13d    [same]      Moved from JGH's mathbox to main set.mm
  5-Jul-26 ecase33d    [same]      Moved from TA's mathbox to main set.mm
  5-Jul-26 13an22anass [same]      Moved from TA's mathbox to main set.mm
  5-Jul-26 elnelneqd   [same]      Moved from RR's mathbox to main set.mm
