@@ -137950,6 +137950,20 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Falling and Rising Factorial
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Show a particular set of finite integers is empty.  (Contributed by Scott
+     Fenton, 5-Jan-2018.) $)
+  risefall0lem $p |- ( 0 ... ( 0 - 1 ) ) = (/) $=
+    ( cc0 c1 cneg cfz co cmin c0 df-neg oveq2i clt wbr wceq neg1lt0 cz wb neg1z
+    wcel 0z fzn mp2an mpbi eqtr3i ) ABCZDEZAABFEZDEGUCUEADBHIUCAJKZUDGLZMANQUCN
+    QUFUGORPAUCSTUAUB $.
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Elementary trigonometry
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
