@@ -20607,6 +20607,13 @@ $)
     eqabbw $p |- ( A = { x | ph } <-> A. y ( y e. A <-> ps ) ) $=
       ( cab wceq cv wcel wb wal cbvabv eqeq2i eqabb bitri ) EACGZHEBDGZHDIEJBKD
       LQREABCDFMNBDEOP $.
+
+    $( Version of ~ eqabcb using implicit substitution, which requires fewer
+       axioms.  (Contributed by TM, 24-Jan-2026.) $)
+    eqabcbw $p |- ( { x | ph } = A <-> A. y ( ps <-> y e. A ) ) $=
+      ( cab wceq cv wcel wb wal eqabbw eqcom bicom albii 3bitr4i ) EACGZHDIEJZB
+      KZDLREHBSKZDLABCDEFMRENUATDBSOPQ $.
+    $( $j usage 'eqabcbw' avoids 'df-clel'; $)
   $}
 
   ${
