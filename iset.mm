@@ -67177,6 +67177,16 @@ $)
       UNAPFZUHUMPFUNUQUPABPUMRSTUAUBUCUMBAUDUEUFUG $.
   $}
 
+  ${
+    $d A f $.  $d B f $.
+    $( The value of the set exponentiation ` ( B ^m A ) ` is a subset of the
+       class of functions from ` A ` to ` B ` .  (Contributed by AV,
+       10-Aug-2024.) $)
+    mapssfsetg $p |- ( B e. V -> ( B ^m A ) C_ { f | f : A --> B } ) $=
+      ( wcel cv wf cab cmap co wceq wss mapfset eqimss2 syl ) BDEABCFGCHZBAIJZK
+      QPLABCDMQPNO $.
+  $}
+
   $( A mapping is a function with the appropriate domain.  (Contributed by AV,
      6-Apr-2019.) $)
   elmapfn $p |- ( A e. ( B ^m C ) -> A Fn C ) $=
