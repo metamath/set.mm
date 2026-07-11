@@ -67207,6 +67207,12 @@ $)
       DABCEZFZCGZABHZIZABDEZFZUDUBJUDUAKUDUCKABUDLTUECUDDMABSUDNODUBPQR $.
   $}
 
+  $( The set of functions from the empty set is the singleton containing the
+     empty set.  (Contributed by AV, 13-Sep-2024.) $)
+  fset0 $p |- { f | f : (/) --> B } = { (/) } $=
+    ( c0 cv wf cab wceq csn f0bi abbii df-sn eqtr4i ) CABDZEZBFMCGZBFCHNOBMAIJB
+    CKL $.
+
   $( A mapping is a function with the appropriate domain.  (Contributed by AV,
      6-Apr-2019.) $)
   elmapfn $p |- ( A e. ( B ^m C ) -> A Fn C ) $=
