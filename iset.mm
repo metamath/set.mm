@@ -31174,6 +31174,15 @@ $)
      variable, see ~ dfnul2 .  (Contributed by NM, 5-Aug-1993.) $)
   df-nul $a |- (/) = ( _V \ _V ) $.
 
+  $( Alternate definition of the empty class/set.  (Contributed by BJ,
+     30-Nov-2019.)  (Revised by GG, 3-Sep-2024.)  Prove directly from
+     definition to allow shortening ~ dfnul2 .  (Revised by BJ,
+     23-Sep-2024.) $)
+  dfnul4 $p |- (/) = { x | F. } $=
+    ( c0 cvv cdif cv wcel wn cab wfal df-nul df-dif pm3.24 bifal abbii 3eqtri
+    wa ) BCCDAECFZQGPZAHIAHJACCKRIARQLMNO $.
+  $( $j usage 'dfnul4' avoids 'df-clel' 'ax-13'; $)
+
   $( Alternate definition of the empty set.  Definition 5.14 of [TakeutiZaring]
      p. 20.  (Contributed by NM, 26-Dec-1996.) $)
   dfnul2 $p |- (/) = { x | -. x = x } $=
