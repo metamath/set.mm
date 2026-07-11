@@ -195547,6 +195547,48 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  The Birthday Problem
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    log2ublem1.1 $e |- ( ( ( 3 ^ 7 ) x. ( 5 x. 7 ) ) x. A ) <_ B $.
+    log2ublem1.2 $e |- A e. RR $.
+    log2ublem1.3 $e |- D e. NN0 $.
+    log2ublem1.4 $e |- E e. NN $.
+    log2ublem1.5 $e |- B e. NN0 $.
+    log2ublem1.6 $e |- F e. NN0 $.
+    log2ublem1.7 $e |- C = ( A + ( D / E ) ) $.
+    log2ublem1.8 $e |- ( B + F ) = G $.
+    log2ublem1.9 $e |- ( ( ( 3 ^ 7 ) x. ( 5 x. 7 ) ) x. D ) <_ ( E x. F ) $.
+    $( Lemma for ~ log2ublog2 .  The proof of ~ log2ublog2 , which is simply
+       the evaluation of ~ log2tlbndlog2 for ` N = 4 ` , takes the form of the
+       addition of five fractions and showing this is less than another
+       fraction.  We could just perform exact arithmetic on these fractions,
+       get a large rational number, and just multiply everything to verify the
+       claim, but as anyone who uses decimal numbers for this task knows, it is
+       often better to pick a common denominator ` d ` (usually a large power
+       of ` 1 0 ` ) and work with the closest approximations of the form
+       ` n / d ` for some integer ` n ` instead.  It turns out that for our
+       purposes it is sufficient to take ` d = ( 3 ^ 7 ) x. 5 x. 7 ` , which is
+       also nice because it shares many factors in common with the fractions in
+       question.  (Contributed by Mario Carneiro, 17-Apr-2015.) $)
+    log2ublem1 $p |- ( ( ( 3 ^ 7 ) x. ( 5 x. 7 ) ) x. C ) <_ G $=
+      ( c7 co cmul wcel c3 cexp c5 cdiv caddc cle wbr cn cn0 7nn0 nnexpcl mp2an
+      3nn 5nn 7nn nnmulcli nncni nn0cni nnap0i divassapi cr cc0 wa wb nn0expcli
+      clt 3nn0 5nn0 nn0mulcli nn0rei nnrei nngt0i ledivmul mp3an mpbir eqbrtrri
+      pm3.2i remulcli nndivre le2addi oveq2i recni adddii eqtr2i 3brtr3i ) UAQU
+      BRZUCQSRZSRZASRZWHDEUDRZSRZUERZBFUERZWHCSRZGUFWIBUFUGWKFUFUGWLWMUFUGHWHDS
+      RZEUDRZWKFUFWHDEWHWFWGUAUHTQUITWFUHTUMUJUAQUKULUCQUNUOUPUPZUQZDJUREKUQEKU
+      SUTWPFUFUGZWOEFSRUFUGZPWOVATFVATEVATZVBEVFUGZVCWSWTVDWOWHDWFWGUAQVGUJVEUC
+      QVHUJVIVIJVIVJFMVJZXAXBEKVKEKVLVQWOFEVMVNVOVPWIWKBFWHAWHWQVKZIVRWHWJXDDVA
+      TEUHTWJVATDJVJKDEVSULZVRBLVJXCVTULWNWHAWJUERZSRWLCXFWHSNWAWHAWJWRAIWBWJXE
+      WBWCWDOWE $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Pell equations
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
