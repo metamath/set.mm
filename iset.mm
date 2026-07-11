@@ -67197,6 +67197,16 @@ $)
       JUOAPJUNUPABPUKUAUBUCUDUEUF $.
   $}
 
+  ${
+    $d A f g $.  $d B f g $.
+    $( The class of all functions from ` A ` into ` B ` is a subclass of the
+       power class of the cartesion product of ` A ` and ` B ` .  (Contributed
+       by AV, 13-Sep-2024.) $)
+    fsetsspwxp $p |- { f | f : A --> B } C_ ~P ( A X. B ) $=
+      ( vg cv wf cab cxp cpw wss wcel fssxp vex feq1 elab velpw 3imtr4i ssriv )
+      DABCEZFZCGZABHZIZABDEZFZUDUBJUDUAKUDUCKABUDLTUECUDDMABSUDNODUBPQR $.
+  $}
+
   $( A mapping is a function with the appropriate domain.  (Contributed by AV,
      6-Apr-2019.) $)
   elmapfn $p |- ( A e. ( B ^m C ) -> A Fn C ) $=
