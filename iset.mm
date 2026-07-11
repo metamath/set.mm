@@ -67160,6 +67160,23 @@ $)
     ( cmap co wcel wf cvv wa wb elmapex elmapg syl ibi ) ABCDEFZCBAGZOBHFCHFIOP
     JABCKBCAHHLMN $.
 
+  ${
+    $d A f m $.  $d B f m $.  $d V m $.
+    $( If ` B ` is a set, the value of the set exponentiation ` ( B ^m A ) ` is
+       the class of all functions from ` A ` to ` B ` .  Generalisation of
+       ~ mapvalg to arbitrary domains.  Note that the class
+       ` { f | f : A --> B } ` can only contain set-functions, as opposed to
+       arbitrary class-functions.  When ` A ` is a proper class, there can be
+       no set-functions on it, so the above class is empty (see also
+       ~ fsetdmprc0 ), hence a set.  In this case, both sides of the equality
+       in this theorem are the empty set.  (Contributed by AV, 8-Aug-2024.) $)
+    mapfset $p |- ( B e. V -> { f | f : A --> B } = ( B ^m A ) ) $=
+      ( vm wcel cv wf cab cmap co vex feq1 elab wa cvv simpr dmfex mpan adantr
+      elmapd exbiri pm2.43b elmapi impbid1 bitrid eqrdv ) BDFZEABCGZHZCIZBAJKZE
+      GZUKFABUMHZUHUMULFZUJUNCUMELZABUIUMMNUHUNUOUHUNUOUNUHUOUNUNUHOBAUMDPUNUHQ
+      UNAPFZUHUMPFUNUQUPABPUMRSTUAUBUCUMBAUDUEUFUG $.
+  $}
+
   $( A mapping is a function with the appropriate domain.  (Contributed by AV,
      6-Apr-2019.) $)
   elmapfn $p |- ( A e. ( B ^m C ) -> A Fn C ) $=
