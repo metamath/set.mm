@@ -195793,6 +195793,24 @@ $)
       SVEUYGVUCVUIVVFVXSWYEYSVE $.
   $}
 
+  ${
+    $d f k n K $.  $d f k n N $.
+    birthday.s $e |- S = { f | f : ( 1 ... K ) --> ( 1 ... N ) } $.
+    birthday.t $e |- T = { f | f : ( 1 ... K ) -1-1-> ( 1 ... N ) } $.
+    $( Lemma for ~ birthdaylog2 .  (Contributed by Mario Carneiro,
+       17-Apr-2015.) $)
+    birthdaylem1g $p |- ( ( K e. NN0 /\ N e. NN )
+        -> ( T C_ S /\ S e. Fin /\ S =/= (/) ) ) $=
+      ( wcel wa cfn c0 wne c1 cfz co cab wceq cz adantl syl2anc cn0 wss wf1 f1f
+      cn cv ss2abi 3sstr4i a1i cmap 1zzd nnz fzfigd nn0z adantr mapvalg eqtr4id
+      wf mapfi eqeltrd elfz1end ne0i sylbi eqeq1d wb map0g simpl sylbid necon3d
+      biimtrdi mpd 3jca ) DUAHZEUEHZIZBAUBZAJHAKLZVPVOMDNOZMENOZCUFZUCZCPVRVSVT
+      URZCPZBAWAWBCVRVSVTUDUGGFUHUIVOAVSVRUJOZJVOAWCWDFVOVSJHZVRJHZWDWCQVOMEVOU
+      KZVNERHVMEULSUMZVOMDWGVMDRHVNDUNUOUMZVSVRJJCUPTUQZVOWEWFWDJHWHWIVSVRUSTUT
+      VOVSKLZVQVNWKVMVNEVSHWKEVAVSEVBVCSVOAKVSKVOAKQWDKQZVSKQZVOAWDKWJVDVOWLWMV
+      RKLZIZWMVOWEWFWLWOVEWHWIVSVRJJVFTWMWNVGVJVHVIVKVL $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
