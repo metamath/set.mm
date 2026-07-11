@@ -67185,6 +67185,16 @@ $)
     mapssfsetg $p |- ( B e. V -> ( B ^m A ) C_ { f | f : A --> B } ) $=
       ( wcel cv wf cab cmap co wceq wss mapfset eqimss2 syl ) BDEABCFGCHZBAIJZK
       QPLABCDMQPNO $.
+
+    $d A f m $.  $d B m $.
+    $( The value of the set exponentiation ` ( B ^m A ) ` is a superset of the
+       set of all functions from ` A ` onto ` B ` .  (Contributed by AV,
+       7-Aug-2024.) $)
+    mapfoss $p |- { f | f : A -onto-> B } C_ ( B ^m A ) $=
+      ( vm cv wfo cab cmap co wcel vex foeq1 elab wf fof cvv crn forn eqeltrrdi
+      rnex dmfex sylancr elmapd mpbird sylbi ssriv ) DABCEZFZCGZBAHIZDEZUIJABUK
+      FZUKUJJZUHULCUKDKZABUGUKLMULUMABUKNZABUKOZULBAUKPPULBUKQPABUKRUKUNTSULUKP
+      JUOAPJUNUPABPUKUAUBUCUDUEUF $.
   $}
 
   $( A mapping is a function with the appropriate domain.  (Contributed by AV,
