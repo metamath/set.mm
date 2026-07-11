@@ -20600,6 +20600,16 @@ $)
   $}
 
   ${
+    $d x y $.  $d y A $.  $d ph y $.  $d ps x $.
+    eqabbw.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Version of ~ eqabb using implicit substitution.  (Contributed by GG and
+       AV, 18-Sep-2024.) $)
+    eqabbw $p |- ( A = { x | ph } <-> A. y ( y e. A <-> ps ) ) $=
+      ( cab wceq cv wcel wb wal cbvabv eqeq2i eqabb bitri ) EACGZHEBDGZHDIEJBKD
+      LQREABCDFMNBDEOP $.
+  $}
+
+  ${
     $d x A $.
     $( Equality of a class variable and a class abstraction.  Commuted form of
        ~ eqabb .  (Contributed by NM, 20-Aug-1993.) $)
