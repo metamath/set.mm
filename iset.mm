@@ -67251,6 +67251,16 @@ $)
     ( c0 cv wf cab wceq csn f0bi abbii df-sn eqtr4i ) CABDZEZBFMCGZBFCHNOBMAIJB
     CKL $.
 
+  ${
+    $d A f g $.
+    $( The set of functions with a proper class as domain is empty.
+       (Contributed by AV, 22-Aug-2024.) $)
+    fsetdmprc0 $p |- ( A e/ _V -> { f | f Fn A } = (/) ) $=
+      ( vg cvv wnel cv wfn wn wal cab c0 wceq wcel df-nel vex a1i fndmexd con3i
+      id sylbi alrimiv fneq1 ab0w sylibr ) ADEZCFZAGZHZCIBFZAGZBJKLUEUHCUEADMZH
+      UHADNUGUKUGAUFDUFDMUGCOPUGSQRTUAUJUGBCAUIUFUBUCUD $.
+  $}
+
   $( A mapping is a function with the appropriate domain.  (Contributed by AV,
      6-Apr-2019.) $)
   elmapfn $p |- ( A e. ( B ^m C ) -> A Fn C ) $=
