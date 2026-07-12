@@ -29155,8 +29155,8 @@ $)
 
   ${
     $d A x $.
-    $( Any class is a subclass of the universal class.  (Contributed by NM,
-       31-Oct-1995.) $)
+    $( Any class is a subclass of the universal class.  Dual of ~ 0ss .
+       (Contributed by NM, 31-Oct-1995.) $)
     ssv $p |- A C_ _V $=
       ( vx cvv cv elex ssriv ) BACBDAEF $.
   $}
@@ -30811,9 +30811,9 @@ $)
     ( cin cun undi uncom ineq12i 3eqtr4i ) CABDZECAEZCBEZDJCEACEZBCEZDCABFJCGMK
     NLACGBCGHI $.
 
-  $( Equality of union and intersection implies equality of their arguments.
-     (Contributed by NM, 16-Apr-2006.)  (Proof shortened by Andrew Salmon,
-     26-Jun-2011.) $)
+  $( Equality of union and intersection is equivalent to equality of the
+     arguments.  (Contributed by NM, 16-Apr-2006.)  (Proof shortened by Andrew
+     Salmon, 26-Jun-2011.) $)
   uneqin $p |- ( ( A u. B ) = ( A i^i B ) <-> A = B ) $=
     ( cun cin wceq wss wa eqimss unss ssin sstr sylbir simpl anim12i syl sylibr
     eqss unidm inidm eqtr4i uneq2 ineq2 3eqtr3a impbii ) ABCZABDZEZABEZUGABFZBA
@@ -31394,43 +31394,46 @@ $)
 
   ${
     $d x A $.
-    $( The union of a class with the empty set is itself.  Theorem 24 of
-       [Suppes] p. 27.  (Contributed by NM, 5-Aug-1993.) $)
+    $( The union of a class with the empty set is itself.  Dual of ~ inv1 .
+       Theorem 24 of [Suppes] p. 27.  (Contributed by NM, 5-Aug-1993.) $)
     un0 $p |- ( A u. (/) ) = A $=
       ( vx c0 cv wcel wo noel biorfi bicomi uneqri ) BACABDZAEZLKCEZFMLKGHIJ $.
 
-    $( The intersection of a class with the empty set is the empty set.
-       Theorem 16 of [Suppes] p. 26.  (Contributed by NM, 5-Aug-1993.) $)
+    $( The intersection of a class with the empty set is the empty set.  Dual
+       of ~ unv .  Commuted form of ~ 0in .  Theorem 16 of [Suppes] p. 26.
+       (Contributed by NM, 5-Aug-1993.) $)
     in0 $p |- ( A i^i (/) ) = (/) $=
       ( vx c0 cv wcel wa noel bianfi bicomi ineqri ) BACCBDZCEZKAEZLFLMKGHIJ $.
   $}
 
-  $( The intersection of the empty set with a class is the empty set.
-     (Contributed by Glauco Siliprandi, 17-Aug-2020.) $)
+  $( The intersection of the empty set with a class is the empty set.  Commuted
+     form of ~ in0 .  (Contributed by Glauco Siliprandi, 17-Aug-2020.) $)
   0in $p |- ( (/) i^i A ) = (/) $=
     ( c0 cin incom in0 eqtri ) BACABCBBADAEF $.
 
-  $( The intersection of a class with the universal class is itself.  Exercise
-     4.10(k) of [Mendelson] p. 231.  (Contributed by NM, 17-May-1998.) $)
+  $( The intersection of a class with the universal class is itself.  Dual of
+     ~ un0 .  Exercise 4.10(k) of [Mendelson] p. 231.  (Contributed by NM,
+     17-May-1998.) $)
   inv1 $p |- ( A i^i _V ) = A $=
     ( cvv cin inss1 ssid ssv ssini eqssi ) ABCAABDAABAEAFGH $.
 
   $( The union of a class with the universal class is the universal class.
-     Exercise 4.10(l) of [Mendelson] p. 231.  (Contributed by NM,
-     17-May-1998.) $)
+     Dual of ~ in0 .  Exercise 4.10(l) of [Mendelson] p. 231.  (Contributed by
+     NM, 17-May-1998.) $)
   unv $p |- ( A u. _V ) = _V $=
     ( cvv cun ssv ssun2 eqssi ) ABCZBGDBAEF $.
 
   ${
     $d A x $.
-    $( The empty set is a subset of any class.  Part of Exercise 1 of
-       [TakeutiZaring] p. 22.  (Contributed by NM, 5-Aug-1993.) $)
+    $( The empty set is a subset of any class.  Dual of ~ ssv .  Part of
+       Exercise 1 of [TakeutiZaring] p. 22.  (Contributed by NM,
+       5-Aug-1993.) $)
     0ss $p |- (/) C_ A $=
       ( vx c0 cv wcel noel pm2.21i ssriv ) BCABDZCEIAEIFGH $.
   $}
 
-  $( Any subset of the empty set is empty.  Theorem 5 of [Suppes] p. 23 and its
-     converse.  (Contributed by NM, 17-Sep-2003.) $)
+  $( Any subset of the empty set is empty.  Dual of ~ vss .  Theorem 5 of
+     [Suppes] p. 23 and its converse.  (Contributed by NM, 17-Sep-2003.) $)
   ss0b $p |- ( A C_ (/) <-> A = (/) ) $=
     ( c0 wceq wss 0ss eqss mpbiran2 bicomi ) ABCZABDZIJBADAEABFGH $.
 
@@ -31448,6 +31451,27 @@ $)
      17-Feb-2007.) $)
   ssn0 $p |- ( ( A C_ B /\ A =/= (/) ) -> B =/= (/) ) $=
     ( wss c0 wne wceq sseq0 ex necon3d imp ) ABCZADEBDEKBDADKBDFADFABGHIJ $.
+
+  $( Two classes are both empty if and only if their union is empty.  Dual of
+     ~ vvin .  (Contributed by NM, 11-Aug-2004.) $)
+  un00 $p |- ( ( A = (/) /\ B = (/) ) <-> ( A u. B ) = (/) ) $=
+    ( c0 wceq wa cun uneq12 un0 eqtrdi wss ssun1 sseq2 mpbii sylib ssun2 impbii
+    ss0b jca ) ACDZBCDZEZABFZCDZUAUBCCFCACBCGCHIUCSTUCACJZSUCAUBJUDABKUBCALMAQN
+    UCBCJZTUCBUBJUEBAOUBCBLMBQNRP $.
+
+  $( Only the universal class has the universal class as a subclass.  Dual of
+     ~ ss0b .  (Contributed by NM, 17-Sep-2003.)  (Proof shortened by Andrew
+     Salmon, 26-Jun-2011.) $)
+  vss $p |- ( _V C_ A <-> A = _V ) $=
+    ( cvv wss wa wceq ssv biantrur eqss bitr4i ) BACZABCZJDABEKJAFGABHI $.
+
+  $( Two classes are both the universal class if and only if their intersection
+     is the universal class.  Dual of ~ un00 .  (Contributed by BJ,
+     12-Jul-2026.) $)
+  vvin $p |- ( ( A = _V /\ B = _V ) <-> ( A i^i B ) = _V ) $=
+    ( cvv wceq cin ineq12 inv1 eqtrdi wss inss1 sseq1 mpbii vss sylib inss2 jca
+    wa impbii ) ACDZBCDZQZABEZCDZUAUBCCECACBCFCGHUCSTUCCAIZSUCUBAIUDABJUBCAKLAM
+    NUCCBIZTUCUBBIUEABOUBCBKLBMNPR $.
 
   ${
     abf.1 $e |- -. ph $.
@@ -31477,19 +31501,6 @@ $)
       impbid1 abbidv fal abf eqtrdi eqtrid ) BEFZGZABCHDICFZABJZDKZLADBCMUFUIND
       KLUFUHNDUFUHNUFUHNUHUEUGABOPQUHRSTNDUAUBUCUD $.
   $}
-
-  $( Two classes are empty iff their union is empty.  (Contributed by NM,
-     11-Aug-2004.) $)
-  un00 $p |- ( ( A = (/) /\ B = (/) ) <-> ( A u. B ) = (/) ) $=
-    ( c0 wceq wa cun uneq12 un0 eqtrdi wss ssun1 sseq2 mpbii sylib ssun2 impbii
-    ss0b jca ) ACDZBCDZEZABFZCDZUAUBCCFCACBCGCHIUCSTUCACJZSUCAUBJUDABKUBCALMAQN
-    UCBCJZTUCBUBJUEBAOUBCBLMBQNRP $.
-
-  $( Only the universal class has the universal class as a subclass.
-     (Contributed by NM, 17-Sep-2003.)  (Proof shortened by Andrew Salmon,
-     26-Jun-2011.) $)
-  vss $p |- ( _V C_ A <-> A = _V ) $=
-    ( cvv wss wa wceq ssv biantrur eqss bitr4i ) BACZABCZJDABEKJAFGABHI $.
 
   ${
     $d x A $.  $d x B $.  $d x C $.
