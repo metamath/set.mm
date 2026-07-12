@@ -31396,6 +31396,18 @@ $)
       ABDLMUFUHBCUFCNUHUGUDBOZGBUEUIUGABDPQUDBCSRUCUGUETUAUB $.
   $}
 
+  ${
+    $d x y $.  $d ph y $.  $d ps x $.
+    ab0w.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( The class of sets verifying a property is the empty class if and only if
+       that property is a contradiction.  (Contributed by GG, 3-Oct-2024.) $)
+    ab0w $p |- ( { x | ph } = (/) <-> A. y -. ps ) $=
+      ( cab c0 wceq wfal wn wal dfnul4 eqeq2i cv wcel wsb df-clab bitri albii
+      wb sbv bibi2i eqabcbw nbfal 3bitr4i ) ACFZGHUFICFZHZBJZDKZGUGUFCLMBDNUGOZ
+      TZDKBITZDKUHUJULUMDUKIBUKICDPIIDCQICDUARUBSABCDUGEUCUIUMDBUDSUER $.
+    $( $j usage 'ab0w' avoids 'df-clel' 'ax-13'; $)
+  $}
+
   $( Any restricted class abstraction restricted to the empty set is empty.
      (Contributed by NM, 15-Oct-2003.)  (Proof shortened by Andrew Salmon,
      26-Jun-2011.) $)
