@@ -31141,7 +31141,7 @@ $(
 $)
 
   $( Declare the symbol for the empty or null set. $)
-  $c (/) $. $( null set $)
+  $c (/) $. $( empty set $)
 
   $( Extend class notation to include the empty set. $)
   c0 $a class (/) $.
@@ -31423,7 +31423,7 @@ $)
 
   ${
     $d A x $.
-    $( The null set is a subset of any class.  Part of Exercise 1 of
+    $( The empty set is a subset of any class.  Part of Exercise 1 of
        [TakeutiZaring] p. 22.  (Contributed by NM, 5-Aug-1993.) $)
     0ss $p |- (/) C_ A $=
       ( vx c0 cv wcel noel pm2.21i ssriv ) BCABDZCEIAEIFGH $.
@@ -37991,8 +37991,8 @@ $)
   0nep0 $p |- (/) =/= { (/) } $=
     ( c0 csn 0ex snnz necomi ) ABAACDE $.
 
-  $( Something cannot be equal to both the null set and the power set of the
-     null set.  (Contributed by NM, 30-Sep-2003.) $)
+  $( Something cannot be equal to both the empty set and the power set of the
+     empty set.  (Contributed by NM, 30-Sep-2003.) $)
   0inp0 $p |- ( A = (/) -> -. A = { (/) } ) $=
     ( c0 wceq csn wne 0nep0 neeq1 mpbiri neneqd ) ABCZABDZJAKEBKEFABKGHI $.
 
@@ -61832,7 +61832,7 @@ $)
 
   ${
     $d x y A $.  $d x y B $.  $d x y C $.  $d x y F $.
-    $( The null set is a strictly monotone ordinal function.  (Contributed by
+    $( The empty set is a strictly monotone ordinal function.  (Contributed by
        Andrew Salmon, 20-Nov-2011.) $)
     smo0 $p |- Smo (/) $=
       ( cid c0 cres wsmo ord0 iordsmo wceq wb res0 smoeq ax-mp mpbi ) ABCZDZBDZ

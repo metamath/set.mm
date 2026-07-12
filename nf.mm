@@ -31025,7 +31025,7 @@ $(
 $)
 
   $( Declare the symbol for the empty or null set. $)
-  $c (/) $. $( null set $)
+  $c (/) $. $( empty set $)
 
   $( Extend class notation to include the empty set. $)
   c0 $a class (/) $.
@@ -31224,7 +31224,7 @@ $)
 
   ${
     $d A x $.
-    $( The null set is a subset of any class.  Part of Exercise 1 of
+    $( The empty set is a subset of any class.  Part of Exercise 1 of
        [TakeutiZaring] p. 22.  (Contributed by NM, 5-Aug-1993.) $)
     0ss $p |- (/) C_ A $=
       ( vx c0 cv wcel noel pm2.21i ssriv ) BCABDZCEIAEIFGH $.
@@ -31282,7 +31282,7 @@ $)
   vss $p |- ( _V C_ A <-> A = _V ) $=
     ( cvv wss wa wceq ssv biantrur eqss bitr4i ) BACZABCZJDABEKJAFGABHI $.
 
-  $( The null set is a proper subset of any nonempty set.  (Contributed by NM,
+  $( The empty set is a proper subset of any nonempty set.  (Contributed by NM,
      27-Feb-1996.) $)
   0pss $p |- ( (/) C. A <-> A =/= (/) ) $=
     ( c0 wpss wne wss 0ss df-pss mpbiran necom bitri ) BACZBADZABDKBAELAFBAGHBA
@@ -56938,7 +56938,7 @@ $)
     frds.3 $e |- ( x = z -> ( ps <-> th ) ) $.
     frds.4 $e |- ( ph -> R Fr A ) $.
     frds.5 $e |- ( ph -> E. x e. A ps ) $.
-    $( Substitution schema verson of ~ frd .  (Contributed by SF,
+    $( Substitution schema version of ~ frd .  (Contributed by SF,
        19-Mar-2015.) $)
     frds $p |- ( ph -> E. y e. A ( ch /\ A. z e. A ( ( th /\ z R y ) -> z = y )
         ) ) $=
