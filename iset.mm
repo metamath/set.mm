@@ -7506,7 +7506,7 @@ $)
 
   $( The Inversion Axiom of the infinite-valued sentential logic (L-infinity)
      of Lukasiewicz, but where one of the propositions is decidable.  Using
-     ~ dfor2dc , we can see that this expresses "disjunction commutes."
+     ~ dfor2dc , we can see that this expresses "disjunction is commutative".
      Theorem *2.69 of [WhiteheadRussell] p. 108 (plus the decidability
      condition).  (Contributed by NM, 12-Aug-2004.) $)
   looinvdc $p |- ( DECID ph ->
@@ -18286,7 +18286,7 @@ $)
        ` ps ` , and some ` ch ` is not ` ps ` , therefore some ` ch ` is not
        ` ph ` .  (In Aristotelian notation, AOO-2:  PaM and SoM therefore SoP.)
        For example, "All informative things are useful", "Some websites are not
-       useful", therefore "Some websites are not informative."  (Contributed by
+       useful", therefore "Some websites are not informative".  (Contributed by
        David A. Wheeler, 28-Aug-2016.) $)
     baroco $p |- E. x ( ch /\ -. ph ) $=
       ( wn wa wi spi con3i anim2i eximii ) CBGZHCAGZHDFNOCABABIDEJKLM $.
@@ -87599,10 +87599,10 @@ $)
 
   ${
     $d A w x y z $.  $d B w z $.
-    $( Addition commutes.  Axiom for real and complex numbers, derived from set
-       theory.  This construction-dependent theorem should not be referenced
-       directly, nor should the proven axiom ~ ax-addcom be used later.
-       Instead, use ~ addcom .
+    $( Addition is commutative.  Axiom for real and complex numbers, derived
+       from set theory.  This construction-dependent theorem should not be
+       referenced directly, nor should the proven axiom ~ ax-addcom be used
+       later.  Instead, use ~ addcom .
 
        In the Metamath Proof Explorer this is not a complex number axiom but is
        instead proved from other axioms.  That proof relies on real number
@@ -88543,7 +88543,7 @@ $)
   ax-mulrcl $a |- ( ( A e. RR /\ B e. RR ) -> ( A x. B ) e. RR ) $.
   $( $j restatement 'ax-mulrcl' of 'axmulrcl'; $)
 
-  $( Addition commutes.  Axiom for real and complex numbers, justified by
+  $( Addition is commutative.  Axiom for real and complex numbers, justified by
      Theorem ~ axaddcom .  Proofs should normally use ~ addcom instead.
      (New usage is discouraged.)  (Contributed by Jim Kingdon, 17-Jan-2020.) $)
   ax-addcom $a |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) = ( B + A ) ) $.
@@ -89915,7 +89915,7 @@ $)
   peano2re $p |- ( A e. RR -> ( A + 1 ) e. RR ) $=
     ( cr wcel c1 caddc co 1re readdcl mpan2 ) ABCDBCADEFBCGADHI $.
 
-  $( Addition commutes.  (Contributed by Jim Kingdon, 17-Jan-2020.) $)
+  $( Addition is commutative.  (Contributed by Jim Kingdon, 17-Jan-2020.) $)
   addcom $p |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) = ( B + A ) ) $=
     ( ax-addcom ) ABC $.
 
@@ -89965,14 +89965,15 @@ $)
       ( cc wcel cc0 caddc co wceq addlid ax-mp ) ACDEAFGAHBAIJ $.
 
     mul.2 $e |- B e. CC $.
-    $( Addition commutes.  Based on ideas by Eric Schmidt.  (Contributed by
-       Scott Fenton, 3-Jan-2013.) $)
+    $( Addition is commutative.  Based on ideas by Eric Schmidt.  (Contributed
+       by Scott Fenton, 3-Jan-2013.) $)
     addcomi $p |- ( A + B ) = ( B + A ) $=
       ( cc wcel caddc co wceq addcom mp2an ) AEFBEFABGHBAGHICDABJK $.
 
     ${
       addcomli.2 $e |- ( A + B ) = C $.
-      $( Addition commutes.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+      $( Addition is commutative.  (Contributed by Mario Carneiro,
+         19-Apr-2015.) $)
       addcomli $p |- ( B + A ) = C $=
         ( caddc co addcomi eqtri ) BAGHABGHCBAEDIFJ $.
     $}
@@ -90010,8 +90011,9 @@ $)
       ( cc wcel cc0 caddc co wceq addlid syl ) ABDEFBGHBICBJK $.
 
     addcomd.2 $e |- ( ph -> B e. CC ) $.
-    $( Addition commutes.  Based on ideas by Eric Schmidt.  (Contributed by
-       Scott Fenton, 3-Jan-2013.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+    $( Addition is commutative.  Based on ideas by Eric Schmidt.  (Contributed
+       by Scott Fenton, 3-Jan-2013.)  (Revised by Mario Carneiro,
+       27-May-2016.) $)
     addcomd $p |- ( ph -> ( A + B ) = ( B + A ) ) $=
       ( cc wcel caddc co wceq addcom syl2anc ) ABFGCFGBCHICBHIJDEBCKL $.
 
