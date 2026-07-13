@@ -67259,6 +67259,13 @@ $)
       ( vg cvv wnel cv wfn wn wal cab c0 wceq wcel df-nel vex a1i fndmexd con3i
       id sylbi alrimiv fneq1 ab0w sylibr ) ADEZCFZAGZHZCIBFZAGZBJKLUEUHCUEADMZH
       UHADNUGUKUGAUFDUFDMUGCOPUGSQRTUAUJUGBCAUIUFUBUCUD $.
+
+    $d B f $.
+    $( The set of injections between two sets exists.  (Contributed by AV,
+       14-Aug-2024.) $)
+    f1setexg $p |- ( ( A e. V /\ B e. W ) -> { f | f : A -1-1-> B } e. _V ) $=
+      ( cv ccnv wfun wf1 cab wf wa df-f1 abbii fabexg ) CFZGHZCABDEABPIZCJRABPK
+      QLCABPMNO $.
   $}
 
   $( A mapping is a function with the appropriate domain.  (Contributed by AV,
