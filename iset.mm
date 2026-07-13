@@ -37835,6 +37835,13 @@ $)
   $}
 
   ${
+    difexd.1 $e |- ( ph -> A e. V ) $.
+    $( Existence of a difference.  (Contributed by SN, 16-Jul-2024.) $)
+    difexd $p |- ( ph -> ( A \ B ) e. _V ) $=
+      ( wcel cdif cvv difexg syl ) ABDFBCGHFEBCDIJ $.
+  $}
+
+  ${
     $d x A $.
     zfausab.1 $e |- A e. _V $.
     $( Separation Scheme (Aussonderung) in terms of a class abstraction.
