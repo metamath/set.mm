@@ -31017,6 +31017,20 @@ $)
       ACDJUEUGUFUIUGUEADCIKUFBCDHUHBCDRBDCILMNO $.
   $}
 
+  ${
+    $( A class abstraction with a conjunction is a subset of the class
+       abstraction with the left conjunct only.  (Contributed by AV,
+       7-Aug-2024.)  (Proof shortened by SN, 22-Aug-2024.) $)
+    abanssl $p |- { f | ( ph /\ ps ) } C_ { f | ph } $=
+      ( wa simpl ss2abi ) ABDACABEF $.
+
+    $( A class abstraction with a conjunction is a subset of the class
+       abstraction with the right conjunct only.  (Contributed by AV,
+       7-Aug-2024.)  (Proof shortened by SN, 22-Aug-2024.) $)
+    abanssr $p |- { f | ( ph /\ ps ) } C_ { f | ps } $=
+      ( wa simpr ss2abi ) ABDBCABEF $.
+  $}
+
   $( A class builder defined by a negation.  (Contributed by FL,
      18-Sep-2010.) $)
   notab $p |- { x | -. ph } = ( _V \ { x | ph } ) $=
