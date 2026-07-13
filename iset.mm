@@ -7506,7 +7506,7 @@ $)
 
   $( The Inversion Axiom of the infinite-valued sentential logic (L-infinity)
      of Lukasiewicz, but where one of the propositions is decidable.  Using
-     ~ dfor2dc , we can see that this expresses "disjunction commutes."
+     ~ dfor2dc , we can see that this expresses "disjunction is commutative".
      Theorem *2.69 of [WhiteheadRussell] p. 108 (plus the decidability
      condition).  (Contributed by NM, 12-Aug-2004.) $)
   looinvdc $p |- ( DECID ph ->
@@ -18286,7 +18286,7 @@ $)
        ` ps ` , and some ` ch ` is not ` ps ` , therefore some ` ch ` is not
        ` ph ` .  (In Aristotelian notation, AOO-2:  PaM and SoM therefore SoP.)
        For example, "All informative things are useful", "Some websites are not
-       useful", therefore "Some websites are not informative."  (Contributed by
+       useful", therefore "Some websites are not informative".  (Contributed by
        David A. Wheeler, 28-Aug-2016.) $)
     baroco $p |- E. x ( ch /\ -. ph ) $=
       ( wn wa wi spi con3i anim2i eximii ) CBGZHCAGZHDFNOCABABIDEJKLM $.
@@ -29155,8 +29155,8 @@ $)
 
   ${
     $d A x $.
-    $( Any class is a subclass of the universal class.  (Contributed by NM,
-       31-Oct-1995.) $)
+    $( Any class is a subclass of the universal class.  Dual of ~ 0ss .
+       (Contributed by NM, 31-Oct-1995.) $)
     ssv $p |- A C_ _V $=
       ( vx cvv cv elex ssriv ) BACBDAEF $.
   $}
@@ -30811,9 +30811,9 @@ $)
     ( cin cun undi uncom ineq12i 3eqtr4i ) CABDZECAEZCBEZDJCEACEZBCEZDCABFJCGMK
     NLACGBCGHI $.
 
-  $( Equality of union and intersection implies equality of their arguments.
-     (Contributed by NM, 16-Apr-2006.)  (Proof shortened by Andrew Salmon,
-     26-Jun-2011.) $)
+  $( Equality of union and intersection is equivalent to equality of the
+     arguments.  (Contributed by NM, 16-Apr-2006.)  (Proof shortened by Andrew
+     Salmon, 26-Jun-2011.) $)
   uneqin $p |- ( ( A u. B ) = ( A i^i B ) <-> A = B ) $=
     ( cun cin wceq wss wa eqimss unss ssin sstr sylbir simpl anim12i syl sylibr
     eqss unidm inidm eqtr4i uneq2 ineq2 3eqtr3a impbii ) ABCZABDZEZABEZUGABFZBA
@@ -31141,7 +31141,7 @@ $(
 $)
 
   $( Declare the symbol for the empty or null set. $)
-  $c (/) $. $( null set $)
+  $c (/) $. $( empty set $)
 
   $( Extend class notation to include the empty set. $)
   c0 $a class (/) $.
@@ -31394,43 +31394,46 @@ $)
 
   ${
     $d x A $.
-    $( The union of a class with the empty set is itself.  Theorem 24 of
-       [Suppes] p. 27.  (Contributed by NM, 5-Aug-1993.) $)
+    $( The union of a class with the empty set is itself.  Dual of ~ inv1 .
+       Theorem 24 of [Suppes] p. 27.  (Contributed by NM, 5-Aug-1993.) $)
     un0 $p |- ( A u. (/) ) = A $=
       ( vx c0 cv wcel wo noel biorfi bicomi uneqri ) BACABDZAEZLKCEZFMLKGHIJ $.
 
-    $( The intersection of a class with the empty set is the empty set.
-       Theorem 16 of [Suppes] p. 26.  (Contributed by NM, 5-Aug-1993.) $)
+    $( The intersection of a class with the empty set is the empty set.  Dual
+       of ~ unv .  Commuted form of ~ 0in .  Theorem 16 of [Suppes] p. 26.
+       (Contributed by NM, 5-Aug-1993.) $)
     in0 $p |- ( A i^i (/) ) = (/) $=
       ( vx c0 cv wcel wa noel bianfi bicomi ineqri ) BACCBDZCEZKAEZLFLMKGHIJ $.
   $}
 
-  $( The intersection of the empty set with a class is the empty set.
-     (Contributed by Glauco Siliprandi, 17-Aug-2020.) $)
+  $( The intersection of the empty set with a class is the empty set.  Commuted
+     form of ~ in0 .  (Contributed by Glauco Siliprandi, 17-Aug-2020.) $)
   0in $p |- ( (/) i^i A ) = (/) $=
     ( c0 cin incom in0 eqtri ) BACABCBBADAEF $.
 
-  $( The intersection of a class with the universal class is itself.  Exercise
-     4.10(k) of [Mendelson] p. 231.  (Contributed by NM, 17-May-1998.) $)
+  $( The intersection of a class with the universal class is itself.  Dual of
+     ~ un0 .  Exercise 4.10(k) of [Mendelson] p. 231.  (Contributed by NM,
+     17-May-1998.) $)
   inv1 $p |- ( A i^i _V ) = A $=
     ( cvv cin inss1 ssid ssv ssini eqssi ) ABCAABDAABAEAFGH $.
 
   $( The union of a class with the universal class is the universal class.
-     Exercise 4.10(l) of [Mendelson] p. 231.  (Contributed by NM,
-     17-May-1998.) $)
+     Dual of ~ in0 .  Exercise 4.10(l) of [Mendelson] p. 231.  (Contributed by
+     NM, 17-May-1998.) $)
   unv $p |- ( A u. _V ) = _V $=
     ( cvv cun ssv ssun2 eqssi ) ABCZBGDBAEF $.
 
   ${
     $d A x $.
-    $( The null set is a subset of any class.  Part of Exercise 1 of
-       [TakeutiZaring] p. 22.  (Contributed by NM, 5-Aug-1993.) $)
+    $( The empty set is a subset of any class.  Dual of ~ ssv .  Part of
+       Exercise 1 of [TakeutiZaring] p. 22.  (Contributed by NM,
+       5-Aug-1993.) $)
     0ss $p |- (/) C_ A $=
       ( vx c0 cv wcel noel pm2.21i ssriv ) BCABDZCEIAEIFGH $.
   $}
 
-  $( Any subset of the empty set is empty.  Theorem 5 of [Suppes] p. 23 and its
-     converse.  (Contributed by NM, 17-Sep-2003.) $)
+  $( Any subset of the empty set is empty.  Dual of ~ vss .  Theorem 5 of
+     [Suppes] p. 23 and its converse.  (Contributed by NM, 17-Sep-2003.) $)
   ss0b $p |- ( A C_ (/) <-> A = (/) ) $=
     ( c0 wceq wss 0ss eqss mpbiran2 bicomi ) ABCZABDZIJBADAEABFGH $.
 
@@ -31448,6 +31451,27 @@ $)
      17-Feb-2007.) $)
   ssn0 $p |- ( ( A C_ B /\ A =/= (/) ) -> B =/= (/) ) $=
     ( wss c0 wne wceq sseq0 ex necon3d imp ) ABCZADEBDEKBDADKBDFADFABGHIJ $.
+
+  $( Two classes are both empty if and only if their union is empty.  Dual of
+     ~ vvin .  (Contributed by NM, 11-Aug-2004.) $)
+  un00 $p |- ( ( A = (/) /\ B = (/) ) <-> ( A u. B ) = (/) ) $=
+    ( c0 wceq wa cun uneq12 un0 eqtrdi wss ssun1 sseq2 mpbii sylib ssun2 impbii
+    ss0b jca ) ACDZBCDZEZABFZCDZUAUBCCFCACBCGCHIUCSTUCACJZSUCAUBJUDABKUBCALMAQN
+    UCBCJZTUCBUBJUEBAOUBCBLMBQNRP $.
+
+  $( Only the universal class has the universal class as a subclass.  Dual of
+     ~ ss0b .  (Contributed by NM, 17-Sep-2003.)  (Proof shortened by Andrew
+     Salmon, 26-Jun-2011.) $)
+  vss $p |- ( _V C_ A <-> A = _V ) $=
+    ( cvv wss wa wceq ssv biantrur eqss bitr4i ) BACZABCZJDABEKJAFGABHI $.
+
+  $( Two classes are both the universal class if and only if their intersection
+     is the universal class.  Dual of ~ un00 .  (Contributed by BJ,
+     12-Jul-2026.) $)
+  vvin $p |- ( ( A = _V /\ B = _V ) <-> ( A i^i B ) = _V ) $=
+    ( cvv wceq cin ineq12 inv1 eqtrdi wss inss1 sseq1 mpbii vss sylib inss2 jca
+    wa impbii ) ACDZBCDZQZABEZCDZUAUBCCECACBCFCGHUCSTUCCAIZSUCUBAIUDABJUBCAKLAM
+    NUCCBIZTUCUBBIUEABOUBCBKLBMNPR $.
 
   ${
     abf.1 $e |- -. ph $.
@@ -31477,19 +31501,6 @@ $)
       impbid1 abbidv fal abf eqtrdi eqtrid ) BEFZGZABCHDICFZABJZDKZLADBCMUFUIND
       KLUFUHNDUFUHNUFUHNUHUEUGABOPQUHRSTNDUAUBUCUD $.
   $}
-
-  $( Two classes are empty iff their union is empty.  (Contributed by NM,
-     11-Aug-2004.) $)
-  un00 $p |- ( ( A = (/) /\ B = (/) ) <-> ( A u. B ) = (/) ) $=
-    ( c0 wceq wa cun uneq12 un0 eqtrdi wss ssun1 sseq2 mpbii sylib ssun2 impbii
-    ss0b jca ) ACDZBCDZEZABFZCDZUAUBCCFCACBCGCHIUCSTUCACJZSUCAUBJUDABKUBCALMAQN
-    UCBCJZTUCBUBJUEBAOUBCBLMBQNRP $.
-
-  $( Only the universal class has the universal class as a subclass.
-     (Contributed by NM, 17-Sep-2003.)  (Proof shortened by Andrew Salmon,
-     26-Jun-2011.) $)
-  vss $p |- ( _V C_ A <-> A = _V ) $=
-    ( cvv wss wa wceq ssv biantrur eqss bitr4i ) BACZABCZJDABEKJAFGABHI $.
 
   ${
     $d x A $.  $d x B $.  $d x C $.
@@ -37991,8 +38002,8 @@ $)
   0nep0 $p |- (/) =/= { (/) } $=
     ( c0 csn 0ex snnz necomi ) ABAACDE $.
 
-  $( Something cannot be equal to both the null set and the power set of the
-     null set.  (Contributed by NM, 30-Sep-2003.) $)
+  $( Something cannot be equal to both the empty set and the power set of the
+     empty set.  (Contributed by NM, 30-Sep-2003.) $)
   0inp0 $p |- ( A = (/) -> -. A = { (/) } ) $=
     ( c0 wceq csn wne 0nep0 neeq1 mpbiri neneqd ) ABCZABDZJAKEBKEFABKGHI $.
 
@@ -61832,7 +61843,7 @@ $)
 
   ${
     $d x y A $.  $d x y B $.  $d x y C $.  $d x y F $.
-    $( The null set is a strictly monotone ordinal function.  (Contributed by
+    $( The empty set is a strictly monotone ordinal function.  (Contributed by
        Andrew Salmon, 20-Nov-2011.) $)
     smo0 $p |- Smo (/) $=
       ( cid c0 cres wsmo ord0 iordsmo wceq wb res0 smoeq ax-mp mpbi ) ABCZDZBDZ
@@ -87599,10 +87610,10 @@ $)
 
   ${
     $d A w x y z $.  $d B w z $.
-    $( Addition commutes.  Axiom for real and complex numbers, derived from set
-       theory.  This construction-dependent theorem should not be referenced
-       directly, nor should the proven axiom ~ ax-addcom be used later.
-       Instead, use ~ addcom .
+    $( Addition is commutative.  Axiom for real and complex numbers, derived
+       from set theory.  This construction-dependent theorem should not be
+       referenced directly, nor should the proven axiom ~ ax-addcom be used
+       later.  Instead, use ~ addcom .
 
        In the Metamath Proof Explorer this is not a complex number axiom but is
        instead proved from other axioms.  That proof relies on real number
@@ -88543,7 +88554,7 @@ $)
   ax-mulrcl $a |- ( ( A e. RR /\ B e. RR ) -> ( A x. B ) e. RR ) $.
   $( $j restatement 'ax-mulrcl' of 'axmulrcl'; $)
 
-  $( Addition commutes.  Axiom for real and complex numbers, justified by
+  $( Addition is commutative.  Axiom for real and complex numbers, justified by
      Theorem ~ axaddcom .  Proofs should normally use ~ addcom instead.
      (New usage is discouraged.)  (Contributed by Jim Kingdon, 17-Jan-2020.) $)
   ax-addcom $a |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) = ( B + A ) ) $.
@@ -89915,7 +89926,7 @@ $)
   peano2re $p |- ( A e. RR -> ( A + 1 ) e. RR ) $=
     ( cr wcel c1 caddc co 1re readdcl mpan2 ) ABCDBCADEFBCGADHI $.
 
-  $( Addition commutes.  (Contributed by Jim Kingdon, 17-Jan-2020.) $)
+  $( Addition is commutative.  (Contributed by Jim Kingdon, 17-Jan-2020.) $)
   addcom $p |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) = ( B + A ) ) $=
     ( ax-addcom ) ABC $.
 
@@ -89965,14 +89976,15 @@ $)
       ( cc wcel cc0 caddc co wceq addlid ax-mp ) ACDEAFGAHBAIJ $.
 
     mul.2 $e |- B e. CC $.
-    $( Addition commutes.  Based on ideas by Eric Schmidt.  (Contributed by
-       Scott Fenton, 3-Jan-2013.) $)
+    $( Addition is commutative.  Based on ideas by Eric Schmidt.  (Contributed
+       by Scott Fenton, 3-Jan-2013.) $)
     addcomi $p |- ( A + B ) = ( B + A ) $=
       ( cc wcel caddc co wceq addcom mp2an ) AEFBEFABGHBAGHICDABJK $.
 
     ${
       addcomli.2 $e |- ( A + B ) = C $.
-      $( Addition commutes.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+      $( Addition is commutative.  (Contributed by Mario Carneiro,
+         19-Apr-2015.) $)
       addcomli $p |- ( B + A ) = C $=
         ( caddc co addcomi eqtri ) BAGHABGHCBAEDIFJ $.
     $}
@@ -90010,8 +90022,9 @@ $)
       ( cc wcel cc0 caddc co wceq addlid syl ) ABDEFBGHBICBJK $.
 
     addcomd.2 $e |- ( ph -> B e. CC ) $.
-    $( Addition commutes.  Based on ideas by Eric Schmidt.  (Contributed by
-       Scott Fenton, 3-Jan-2013.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+    $( Addition is commutative.  Based on ideas by Eric Schmidt.  (Contributed
+       by Scott Fenton, 3-Jan-2013.)  (Revised by Mario Carneiro,
+       27-May-2016.) $)
     addcomd $p |- ( ph -> ( A + B ) = ( B + A ) ) $=
       ( cc wcel caddc co wceq addcom syl2anc ) ABFGCFGBCHICBHIJDEBCKL $.
 
