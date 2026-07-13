@@ -52033,6 +52033,30 @@ $)
     OUEUDUIULUMIZUIUEUDBAGZHIZUHTUNUGUPUHUFUOHABPQRBADCESUAUBUC $.
 
   ${
+    fvun1d.1 $e |- ( ph -> F Fn A ) $.
+    fvun1d.2 $e |- ( ph -> G Fn B ) $.
+    fvun1d.3 $e |- ( ph -> ( A i^i B ) = (/) ) $.
+    fvun1d.4 $e |- ( ph -> X e. A ) $.
+    $( The value of a union when the argument is in the first domain, a
+       deduction version.  (Contributed by metakunt, 28-May-2024.) $)
+    fvun1d $p |- ( ph -> ( ( F u. G ) ` X ) = ( F ` X ) ) $=
+      ( wfn cin c0 wceq wcel wa w3a cun cfv jca 3jca fvun1 syl ) ADBKZECKZBCLMN
+      ZFBOZPZQFDERSFDSNAUDUEUHGHAUFUGIJTUABCDEFUBUC $.
+  $}
+
+  ${
+    fvun2d.1 $e |- ( ph -> F Fn A ) $.
+    fvun2d.2 $e |- ( ph -> G Fn B ) $.
+    fvun2d.3 $e |- ( ph -> ( A i^i B ) = (/) ) $.
+    fvun2d.4 $e |- ( ph -> X e. B ) $.
+    $( The value of a union when the argument is in the second domain, a
+       deduction version.  (Contributed by metakunt, 28-May-2024.) $)
+    fvun2d $p |- ( ph -> ( ( F u. G ) ` X ) = ( G ` X ) ) $=
+      ( wfn cin c0 wceq wcel wa w3a cun cfv jca 3jca fvun2 syl ) ADBKZECKZBCLMN
+      ZFCOZPZQFDERSFESNAUDUEUHGHAUFUGIJTUABCDEFUBUC $.
+  $}
+
+  ${
     $d x y A $.  $d x y F $.  $d x y G $.  $d x X $.
     $( Domains of a function composition.  (Contributed by NM, 27-Jan-1997.) $)
     dmfco $p |- ( ( Fun G /\ A e. dom G ) ->
