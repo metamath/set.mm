@@ -19253,6 +19253,7 @@ New usage of "xrge0tmdALT" is discouraged (0 uses).
 New usage of "zaddablx" is discouraged (0 uses).
 New usage of "zexALT" is discouraged (1 uses).
 New usage of "zfac" is discouraged (1 uses).
+New usage of "zfausclOLD" is discouraged (0 uses).
 New usage of "zfcndac" is discouraged (0 uses).
 New usage of "zfcndext" is discouraged (0 uses).
 New usage of "zfcndinf" is discouraged (0 uses).
@@ -21021,6 +21022,7 @@ Proof modification of "xp0OLD" is discouraged (20 steps).
 Proof modification of "xpexgALT" is discouraged (84 steps).
 Proof modification of "xrge0tmdALT" is discouraged (166 steps).
 Proof modification of "zexALT" is discouraged (34 steps).
+Proof modification of "zfausclOLD" is discouraged (62 steps).
 Proof modification of "zfcndac" is discouraged (256 steps).
 Proof modification of "zfcndext" is discouraged (19 steps).
 Proof modification of "zfcndinf" is discouraged (123 steps).
