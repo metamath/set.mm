@@ -1958,8 +1958,8 @@ $)
 
   $( The Inversion Axiom of the infinite-valued sentential logic (L-infinity)
      of Lukasiewicz.  Using ~ dfor2 , we can see that this essentially
-     expresses "disjunction commutes."  Theorem *2.69 of [WhiteheadRussell]
-     p. 108.  (Contributed by NM, 12-Aug-2004.) $)
+     expresses "disjunction is commutative".  Theorem *2.69 of
+     [WhiteheadRussell] p. 108.  (Contributed by NM, 12-Aug-2004.) $)
   looinv $p |- ( ( ( ph -> ps ) -> ps ) -> ( ( ps -> ph ) -> ph ) ) $=
     ( wi imim1 peirce syl6 ) ABCZBCBACGACAGBADABEF $.
 
@@ -9626,7 +9626,7 @@ $)
   nanan $p |- ( ( ph /\ ps ) <-> -. ( ph -/\ ps ) ) $=
     ( wnan wa df-nan con2bii ) ABCABDABEF $.
 
-  $( The 'nand' operator commutes.  (Contributed by Mario Carneiro,
+  $( The 'nand' operator is commutative.  (Contributed by Mario Carneiro,
      9-May-2015.) $)
   nancom $p |- ( ( ph -/\ ps ) <-> ( ps -/\ ph ) ) $=
     ( wa wn wnan ancom notbii df-nan 3bitr4i ) ABCZDBACZDABEBAEJKABFGABHBAHI $.
@@ -19494,7 +19494,7 @@ $)
        ` ps ` , and some ` ch ` is not ` ps ` , therefore some ` ch ` is not
        ` ph ` .  (In Aristotelian notation, AOO-2:  PaM and SoM therefore SoP.)
        For example, "All informative things are useful", "Some websites are not
-       useful", therefore "Some websites are not informative."  (Contributed by
+       useful", therefore "Some websites are not informative".  (Contributed by
        David A. Wheeler, 28-Aug-2016.) $)
     baroco $p |- E. x ( ch /\ -. ph ) $=
       ( wn wa wex wi spi con3i anim2i eximi ax-mp ) CBGZHZDICAGZHZDIFQSDPRCABAB
@@ -28632,7 +28632,7 @@ $)
 
   ${
     $d A x $.  $d B x $.
-    $( Anti-intersection commutes.  (Contributed by SF, 10-Jan-2015.) $)
+    $( Anti-intersection is commutative.  (Contributed by SF, 10-Jan-2015.) $)
     nincom $p |- ( A -i^i B ) = ( B -i^i A ) $=
       ( vx cnin cv wcel wnan nancom vex elnin 3bitr4i eqriv ) CABDZBADZCEZAFZOB
       FZGQPGOMFONFPQHOABCIZJOBARJKL $.
@@ -30966,7 +30966,7 @@ $)
       LABCDPQRTUAUJUKUFUGUHUKUFEUIUFCDUBUCUDUE $.
   $}
 
-  $( Symmetric difference commutes.  (Contributed by SF, 11-Jan-2015.) $)
+  $( Symmetric difference is commutative.  (Contributed by SF, 11-Jan-2015.) $)
   symdifcom $p |- ( A (+) B ) = ( B (+) A ) $=
     ( cdif cun csymdif uncom df-symdif 3eqtr4i ) ABCZBACZDJIDABEBAEIJFABGBAGH
     $.
@@ -31025,7 +31025,7 @@ $(
 $)
 
   $( Declare the symbol for the empty or null set. $)
-  $c (/) $. $( null set $)
+  $c (/) $. $( empty set $)
 
   $( Extend class notation to include the empty set. $)
   c0 $a class (/) $.
@@ -31224,7 +31224,7 @@ $)
 
   ${
     $d A x $.
-    $( The null set is a subset of any class.  Part of Exercise 1 of
+    $( The empty set is a subset of any class.  Part of Exercise 1 of
        [TakeutiZaring] p. 22.  (Contributed by NM, 5-Aug-1993.) $)
     0ss $p |- (/) C_ A $=
       ( vx c0 cv wcel noel pm2.21i ssriv ) BCABDZCEIAEIFGH $.
@@ -31282,7 +31282,7 @@ $)
   vss $p |- ( _V C_ A <-> A = _V ) $=
     ( cvv wss wa wceq ssv biantrur eqss bitr4i ) BACZABCZJDABEKJAFGABHI $.
 
-  $( The null set is a proper subset of any nonempty set.  (Contributed by NM,
+  $( The empty set is a proper subset of any nonempty set.  (Contributed by NM,
      27-Feb-1996.) $)
   0pss $p |- ( (/) C. A <-> A =/= (/) ) $=
     ( c0 wpss wne wss 0ss df-pss mpbiran necom bitri ) BACZBADZABDKBAELAFBAGHBA
@@ -38902,8 +38902,8 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k
 
   ${
     $d A x y z $.  $d B x y z $.
-    $( Cardinal sum commutes.  Theorem X.1.9 of [Rosser] p. 276.  (Contributed
-       by SF, 15-Jan-2015.) $)
+    $( Cardinal sum is commutative.  Theorem X.1.9 of [Rosser] p. 276.
+       (Contributed by SF, 15-Jan-2015.) $)
     addccom $p |- ( A +c B ) = ( B +c A ) $=
       ( vy vz vx cv cin c0 wceq cun wa wrex cab cplc incom eqeq1i uncom anbi12i
       eqeq2i df-addc 2rexbii rexcom bitri abbii 3eqtr4i ) CFZDFZGZHIZEFZUFUGJZI
@@ -56938,7 +56938,7 @@ $)
     frds.3 $e |- ( x = z -> ( ps <-> th ) ) $.
     frds.4 $e |- ( ph -> R Fr A ) $.
     frds.5 $e |- ( ph -> E. x e. A ps ) $.
-    $( Substitution schema verson of ~ frd .  (Contributed by SF,
+    $( Substitution schema version of ~ frd .  (Contributed by SF,
        19-Mar-2015.) $)
     frds $p |- ( ph -> E. y e. A ( ch /\ A. z e. A ( ( th /\ z R y ) -> z = y )
         ) ) $=
@@ -58711,7 +58711,7 @@ $)
   ${
     $d A x y z $.
     enpw1pw.1 $e |- A e. _V $.
-    $( Unit power class and power class commute within equivalence.  Theorem
+    $( Unit power class and power class commute up to equinumerosity.  Theorem
        XI.1.35 of [Rosser] p. 368.  (Contributed by SF, 26-Feb-2015.) $)
     enpw1pw $p |- ~P1 ~P A ~~ ~P ~P1 A $=
       ( vy vx vz cpw cpw1 cpw1fn wf1o wbr c1c wss ax-mp wceq cv wrex wa wex vex
@@ -59368,8 +59368,8 @@ $)
 
   ${
     $d A x $.  $d A y $.  $d B x $.  $d B y $.  $d x y $.
-    $( Cardinal multiplication commutes.  Theorem XI.2.28 of [Rosser] p. 378.
-       (Contributed by SF, 10-Mar-2015.) $)
+    $( Cardinal multiplication is commutative.  Theorem XI.2.28 of [Rosser]
+       p. 378.  (Contributed by SF, 10-Mar-2015.) $)
     muccom $p |- ( ( A e. NC /\ B e. NC ) -> ( A .c B ) = ( B .c A ) ) $=
       ( vx vy cncs wcel wa cv cnc wceq wex co elncs anbi12i eeanv cxp vex mucnc
       cmuc oveq12 bitr4i cen wbr xpcomen xpex eqnc mpbir 3eqtr4i ancoms 3eqtr4a
@@ -59606,7 +59606,7 @@ $)
 
   ${
     ncpwpw1.1 $e |- A e. _V $.
-    $( Power class and unit power class commute within cardinality.
+    $( Power class and unit power class commute up to equinumerosity.
        (Contributed by SF, 26-Feb-2015.) $)
     ncpwpw1 $p |- Nc ~P ~P1 A = Nc ~P1 ~P A $=
       ( cpw1 cpw cnc wceq cen wbr enpw1pw ensym mpbi pw1ex pwex eqnc mpbir ) AC

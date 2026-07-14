@@ -96,6 +96,8 @@ Date      Old         New         Notes
 14-Jul-26 pidlnz      [same]      Moved from TA's mathbox to main set.mm
 14-Jul-26 isdrng4     [same]      Moved from TA's mathbox to main set.mm
 14-Jul-26 ringinveu   [same]      Moved from TA's mathbox to main set.mm
+10-Jul-26 f1imadifssran ---       Deleted; redundant with imadifssran
+10-Jul-26 imadifssran [same]      Removed antecedent
  7-Jul-26 hashpss     [same]      Moved from TA's mathbox to main set.mm
  7-Jul-26 ordpss      [same]      Moved from ATS's mathbox to main set.mm
  5-Jul-26 breq1dd     [same]      Moved from TA's mathbox to main set.mm

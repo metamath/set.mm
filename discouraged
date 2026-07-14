@@ -14824,6 +14824,7 @@ New usage of "bj-sbidmOLD" is discouraged (0 uses).
 New usage of "bj-ssbid1ALT" is discouraged (0 uses).
 New usage of "bj-ssbid2ALT" is discouraged (0 uses).
 New usage of "bj-velpwALT" is discouraged (1 uses).
+New usage of "bj-vn0ALT" is discouraged (0 uses).
 New usage of "bj-vtoclgfALT" is discouraged (0 uses).
 New usage of "bj-xpima1snALT" is discouraged (0 uses).
 New usage of "blo3i" is discouraged (1 uses).
@@ -17157,6 +17158,7 @@ New usage of "iidn3" is discouraged (1 uses).
 New usage of "iin1" is discouraged (3 uses).
 New usage of "iin2" is discouraged (0 uses).
 New usage of "iin3" is discouraged (0 uses).
+New usage of "imadifssranOLD" is discouraged (0 uses).
 New usage of "imaelshi" is discouraged (1 uses).
 New usage of "imaeqsalvOLD" is discouraged (0 uses).
 New usage of "imaeqsexvOLD" is discouraged (1 uses).
@@ -19222,6 +19224,7 @@ New usage of "vk15.4j" is discouraged (0 uses).
 New usage of "vk15.4jVD" is discouraged (0 uses).
 New usage of "vmcn" is discouraged (1 uses).
 New usage of "vn0ALT" is discouraged (0 uses).
+New usage of "vn0OLD" is discouraged (0 uses).
 New usage of "vnexOLD" is discouraged (0 uses).
 New usage of "vonf1owevOLD" is discouraged (0 uses).
 New usage of "vprcOLD" is discouraged (0 uses).
@@ -19771,6 +19774,7 @@ Proof modification of "bj-vecssmod" is discouraged (18 steps).
 Proof modification of "bj-vecssmodel" is discouraged (5 steps).
 Proof modification of "bj-velpwALT" is discouraged (24 steps).
 Proof modification of "bj-vjust" is discouraged (22 steps).
+Proof modification of "bj-vn0ALT" is discouraged (91 steps).
 Proof modification of "bj-vtocl" is discouraged (12 steps).
 Proof modification of "bj-vtoclf" is discouraged (29 steps).
 Proof modification of "bj-vtoclg" is discouraged (22 steps).
@@ -20407,6 +20411,7 @@ Proof modification of "iidn3" is discouraged (8 steps).
 Proof modification of "iin1" is discouraged (1 steps).
 Proof modification of "iin2" is discouraged (1 steps).
 Proof modification of "iin3" is discouraged (1 steps).
+Proof modification of "imadifssranOLD" is discouraged (219 steps).
 Proof modification of "imaeqsalvOLD" is discouraged (61 steps).
 Proof modification of "imaeqsexvOLD" is discouraged (129 steps).
 Proof modification of "imbi12VD" is discouraged (121 steps).
@@ -21017,6 +21022,7 @@ Proof modification of "vfermltlALT" is discouraged (279 steps).
 Proof modification of "vk15.4j" is discouraged (217 steps).
 Proof modification of "vk15.4jVD" is discouraged (268 steps).
 Proof modification of "vn0ALT" is discouraged (6 steps).
+Proof modification of "vn0OLD" is discouraged (74 steps).
 Proof modification of "vnexOLD" is discouraged (45 steps).
 Proof modification of "vonf1owevOLD" is discouraged (574 steps).
 Proof modification of "vprcOLD" is discouraged (15 steps).
