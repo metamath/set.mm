@@ -72195,6 +72195,20 @@ $)
       TUQSVLDATUQURVOVNDEABCUSUTL $.
   $}
 
+  ${
+    $d A f g $.  $d B f g $.
+    $( The set of injections between two finite sets is finite.  (Contributed
+       by Jim Kingdon, 13-Jul-2026.) $)
+    f1setfi $p |- ( ( A e. Fin /\ B e. Fin )
+        -> { f | f : A -1-1-> B } e. Fin ) $=
+      ( vg cfn wcel wa cv wf cab wf1 wss wdc wral cmap wceq ancoms elab syl3anc
+      co mapvalg mapfi eqeltrrd f1f ss2abi a1i simpll simplr bilani fdcf1 f1eq1
+      vex feq1 dcbii sylibr ralrimiva ssfidc ) AEFZBEFZGZABCHZIZCJZEFABVAKZCJZV
+      CLZDHZVEFZMZDVCNVEEFUTBAOTZVCEUSURVJVCPBAEECUAQUSURVJEFBAUBQUCVFUTVDVBCAB
+      VAUDUEUFUTVIDVCUTVGVCFZGZABVGKZMZVIVLURUSABVGIZVNURUSVKUGURUSVKUHVKVOUTVB
+      VOCVGDULZABVAVGUMRUIABVGUJSVHVMVDVMCVGVPABVAVGUKRUNUOUPDVCVEUQS $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
