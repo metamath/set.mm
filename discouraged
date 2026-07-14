@@ -4891,6 +4891,7 @@
 "df-i" is used by "axi2m1".
 "df-i" is used by "axicn".
 "df-idl" is used by "idlval".
+"df-igen" is used by "igenval".
 "df-ims" is used by "imsval".
 "df-iop" is used by "dfiop2".
 "df-iop" is used by "hoid1i".
@@ -5478,8 +5479,10 @@
 "dmmulsr" is used by "distrsr".
 "dmmulsr" is used by "mulasssr".
 "dmmulsr" is used by "mulcomsr".
+"dmncan1" is used by "dmncan2".
 "dmncrng" is used by "dmncan2".
 "dmncrng" is used by "dmnrngo".
+"dmnnzd" is used by "dmncan1".
 "dmnrngo" is used by "dmncan1".
 "dmplp" is used by "addasspr".
 "dmplp" is used by "addcanpr".
@@ -8643,6 +8646,19 @@
 "ifhvhv0" is used by "spansn".
 "ifhvhv0" is used by "spansncv".
 "ifhvhv0" is used by "spansnj".
+"igenidl" is used by "igenval2".
+"igenidl" is used by "isfldidl".
+"igenidl" is used by "ispridlc".
+"igenmin" is used by "igenval2".
+"igenss" is used by "igenval2".
+"igenss" is used by "isfldidl".
+"igenss" is used by "ispridlc".
+"igenval" is used by "igenidl".
+"igenval" is used by "igenidl2".
+"igenval" is used by "igenmin".
+"igenval" is used by "igenss".
+"igenval" is used by "igenval2".
+"igenval2" is used by "prnc".
 "iidn3" is used by "trintALT".
 "iin1" is used by "sspwimp".
 "iin1" is used by "sspwimpcf".
@@ -8984,12 +9000,14 @@
 "isdmn2" is used by "dmncrng".
 "isdmn2" is used by "flddmn".
 "isdmn2" is used by "isdmn3".
+"isdmn3" is used by "dmnnzd".
 "isdrngdOLD" is used by "isdrngrdOLD".
 "isexid" is used by "exidres".
 "isexid" is used by "isexid2".
 "isexid" is used by "ismndo".
 "isexid" is used by "opidonOLD".
 "isexid2" is used by "exidu1".
+"isfldidl" is used by "isfldidl2".
 "isgrpda" is used by "isdrngo2".
 "isgrpix" is used by "cnaddablx".
 "isgrpix" is used by "zaddablx".
@@ -9066,6 +9084,8 @@
 "ispridl" is used by "pridlnr".
 "ispridl" is used by "smprngopr".
 "ispridl2" is used by "ispridlc".
+"ispridlc" is used by "isdmn3".
+"ispridlc" is used by "pridlc".
 "isprrngo" is used by "isdmn3".
 "isprrngo" is used by "prrngorngo".
 "isprrngo" is used by "smprngopr".
@@ -12317,6 +12337,8 @@
 "prcdnq" is used by "psslinpr".
 "prcdnq" is used by "reclem2pr".
 "prcdnq" is used by "suplem1pr".
+"pridlc" is used by "pridlc2".
+"pridlc2" is used by "pridlc3".
 "pridlval" is used by "ispridl".
 "prlem934" is used by "ltaddpr".
 "prlem934" is used by "ltexprlem7".
@@ -12330,6 +12352,8 @@
 "prn0" is used by "prlem936".
 "prn0" is used by "reclem2pr".
 "prn0" is used by "suplem1pr".
+"prnc" is used by "isfldidl".
+"prnc" is used by "ispridlc".
 "prnmadd" is used by "ltexprlem1".
 "prnmadd" is used by "ltexprlem7".
 "prnmax" is used by "1idpr".
@@ -15810,6 +15834,7 @@ New usage of "df-hst" is discouraged (1 uses).
 New usage of "df-hvsub" is discouraged (3 uses).
 New usage of "df-i" is discouraged (4 uses).
 New usage of "df-idl" is discouraged (1 uses).
+New usage of "df-igen" is discouraged (1 uses).
 New usage of "df-ims" is discouraged (1 uses).
 New usage of "df-iop" is discouraged (7 uses).
 New usage of "df-ip" is discouraged (2 uses).
@@ -16081,7 +16106,10 @@ New usage of "dmfexALT" is discouraged (0 uses).
 New usage of "dmmp" is discouraged (3 uses).
 New usage of "dmmulpi" is discouraged (6 uses).
 New usage of "dmmulsr" is discouraged (3 uses).
+New usage of "dmncan1" is discouraged (1 uses).
+New usage of "dmncan2" is discouraged (0 uses).
 New usage of "dmncrng" is discouraged (2 uses).
+New usage of "dmnnzd" is discouraged (1 uses).
 New usage of "dmnrngo" is discouraged (1 uses).
 New usage of "dmplp" is discouraged (9 uses).
 New usage of "dmrecnq" is discouraged (2 uses).
@@ -17119,6 +17147,12 @@ New usage of "idunop" is discouraged (1 uses).
 New usage of "ifchhv" is discouraged (22 uses).
 New usage of "ifhvhv0" is discouraged (48 uses).
 New usage of "ifpdfbiOLD" is discouraged (0 uses).
+New usage of "igenidl" is discouraged (3 uses).
+New usage of "igenidl2" is discouraged (0 uses).
+New usage of "igenmin" is discouraged (1 uses).
+New usage of "igenss" is discouraged (3 uses).
+New usage of "igenval" is discouraged (5 uses).
+New usage of "igenval2" is discouraged (1 uses).
 New usage of "iidn3" is discouraged (1 uses).
 New usage of "iin1" is discouraged (3 uses).
 New usage of "iin2" is discouraged (0 uses).
@@ -17222,11 +17256,14 @@ New usage of "isdilN" is discouraged (0 uses).
 New usage of "isdivrngo" is discouraged (2 uses).
 New usage of "isdmn" is discouraged (1 uses).
 New usage of "isdmn2" is discouraged (3 uses).
+New usage of "isdmn3" is discouraged (1 uses).
 New usage of "isdrngdOLD" is discouraged (1 uses).
 New usage of "isdrngrdOLD" is discouraged (0 uses).
 New usage of "iseriALT" is discouraged (0 uses).
 New usage of "isexid" is discouraged (4 uses).
 New usage of "isexid2" is discouraged (1 uses).
+New usage of "isfldidl" is discouraged (1 uses).
+New usage of "isfldidl2" is discouraged (0 uses).
 New usage of "isgrpda" is discouraged (1 uses).
 New usage of "isgrpix" is discouraged (2 uses).
 New usage of "isgrpo" is discouraged (6 uses).
@@ -17264,6 +17301,7 @@ New usage of "isphg" is discouraged (4 uses).
 New usage of "ispointN" is discouraged (2 uses).
 New usage of "ispridl" is discouraged (6 uses).
 New usage of "ispridl2" is discouraged (1 uses).
+New usage of "ispridlc" is discouraged (2 uses).
 New usage of "isprrngo" is discouraged (3 uses).
 New usage of "ispsubcl2N" is discouraged (0 uses).
 New usage of "ispsubclN" is discouraged (10 uses).
@@ -18429,6 +18467,9 @@ New usage of "preleqALT" is discouraged (0 uses).
 New usage of "prexOLD" is discouraged (0 uses).
 New usage of "prfiALT" is discouraged (0 uses).
 New usage of "pridl" is discouraged (0 uses).
+New usage of "pridlc" is discouraged (1 uses).
+New usage of "pridlc2" is discouraged (1 uses).
+New usage of "pridlc3" is discouraged (0 uses).
 New usage of "pridlidl" is discouraged (0 uses).
 New usage of "pridlnr" is discouraged (0 uses).
 New usage of "pridlval" is discouraged (1 uses).
@@ -18437,6 +18478,7 @@ New usage of "prlem936" is discouraged (1 uses).
 New usage of "prmgaplcm" is discouraged (0 uses).
 New usage of "prmgapprmo" is discouraged (0 uses).
 New usage of "prn0" is discouraged (8 uses).
+New usage of "prnc" is discouraged (2 uses).
 New usage of "prnmadd" is discouraged (2 uses).
 New usage of "prnmax" is discouraged (7 uses).
 New usage of "probfinmeasbALTV" is discouraged (0 uses).
@@ -19844,7 +19886,10 @@ Proof modification of "dm0rn0OLD" is discouraged (121 steps).
 Proof modification of "dmcossOLD" is discouraged (89 steps).
 Proof modification of "dmcosseqOLD" is discouraged (196 steps).
 Proof modification of "dmfexALT" is discouraged (25 steps).
+Proof modification of "dmncan1" is discouraged (305 steps).
+Proof modification of "dmncan2" is discouraged (130 steps).
 Proof modification of "dmncrng" is discouraged (12 steps).
+Proof modification of "dmnnzd" is discouraged (157 steps).
 Proof modification of "dmnrngo" is discouraged (14 steps).
 Proof modification of "dmtrclfvRP" is discouraged (46 steps).
 Proof modification of "dral1ALT" is discouraged (34 steps).
@@ -20352,6 +20397,12 @@ Proof modification of "idn2" is discouraged (7 steps).
 Proof modification of "idn3" is discouraged (15 steps).
 Proof modification of "idrefALT" is discouraged (126 steps).
 Proof modification of "ifpdfbiOLD" is discouraged (36 steps).
+Proof modification of "igenidl" is discouraged (88 steps).
+Proof modification of "igenidl2" is discouraged (62 steps).
+Proof modification of "igenmin" is discouraged (100 steps).
+Proof modification of "igenss" is discouraged (35 steps).
+Proof modification of "igenval" is discouraged (185 steps).
+Proof modification of "igenval2" is discouraged (209 steps).
 Proof modification of "iidn3" is discouraged (8 steps).
 Proof modification of "iin1" is discouraged (1 steps).
 Proof modification of "iin2" is discouraged (1 steps).
@@ -20397,12 +20448,15 @@ Proof modification of "iscmgmALT" is discouraged (57 steps).
 Proof modification of "iscsgrpALT" is discouraged (57 steps).
 Proof modification of "isdmn" is discouraged (6 steps).
 Proof modification of "isdmn2" is discouraged (38 steps).
+Proof modification of "isdmn3" is discouraged (316 steps).
 Proof modification of "isdrngdOLD" is discouraged (603 steps).
 Proof modification of "isdrngrdOLD" is discouraged (334 steps).
 Proof modification of "iseqsetv-clel" is discouraged (26 steps).
 Proof modification of "iseqsetv-cleq" is discouraged (27 steps).
 Proof modification of "iseqsetvlem" is discouraged (15 steps).
 Proof modification of "iseriALT" is discouraged (54 steps).
+Proof modification of "isfldidl" is discouraged (426 steps).
+Proof modification of "isfldidl2" is discouraged (112 steps).
 Proof modification of "isidl" is discouraged (195 steps).
 Proof modification of "isidlc" is discouraged (200 steps).
 Proof modification of "ismaxidl" is discouraged (123 steps).
@@ -20412,6 +20466,7 @@ Proof modification of "isofnALT" is discouraged (89 steps).
 Proof modification of "isosctrlem1ALT" is discouraged (363 steps).
 Proof modification of "ispridl" is discouraged (169 steps).
 Proof modification of "ispridl2" is discouraged (302 steps).
+Proof modification of "ispridlc" is discouraged (787 steps).
 Proof modification of "isprrngo" is discouraged (65 steps).
 Proof modification of "issgrpALT" is discouraged (53 steps).
 Proof modification of "issmgrpOLD" is discouraged (85 steps).
@@ -20626,11 +20681,15 @@ Proof modification of "preleqALT" is discouraged (115 steps).
 Proof modification of "prexOLD" is discouraged (89 steps).
 Proof modification of "prfiALT" is discouraged (30 steps).
 Proof modification of "pridl" is discouraged (185 steps).
+Proof modification of "pridlc" is discouraged (173 steps).
+Proof modification of "pridlc2" is discouraged (81 steps).
+Proof modification of "pridlc3" is discouraged (137 steps).
 Proof modification of "pridlidl" is discouraged (83 steps).
 Proof modification of "pridlnr" is discouraged (78 steps).
 Proof modification of "pridlval" is discouraged (193 steps).
 Proof modification of "prmgaplcm" is discouraged (247 steps).
 Proof modification of "prmgapprmo" is discouraged (387 steps).
+Proof modification of "prnc" is discouraged (1031 steps).
 Proof modification of "problem1" is discouraged (20 steps).
 Proof modification of "problem2" is discouraged (104 steps).
 Proof modification of "problem3" is discouraged (56 steps).
