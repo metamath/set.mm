@@ -72179,6 +72179,22 @@ $)
       AVDRSVGVIVKVHVE $.
   $}
 
+  ${
+    $d A x y $.  $d B x y $.  $d F x y $.
+    $( It is decidable whether a function from a finite set into another finite
+       set is one-to-one.  (Contributed by Jim Kingdon, 13-Jul-2026.) $)
+    fdcf1 $p |- ( ( A e. Fin /\ B e. Fin /\ F : A --> B )
+        -> DECID F : A -1-1-> B ) $=
+      ( vx vy cfn wcel cfv wceq wral wdc sylibr adantr ffvelcdmd fidceq syl3anc
+      cv wa ralrimiva dcfi wf w3a wi wf1 wn wo simp3 orcd df-dc simpll2 simpll3
+      simp1 simplr simpr dcim sylc syl2anc dcand dff13 dcbii ) AFGZBFGZABCUAZUB
+      ZVCDQZCHZEQZCHZIZVEVGIZUCZEAJZDAJZRZKABCUDZKVDVCVMVDVCVCUEZUFVCKVDVCVPVAV
+      BVCUGUHVCUILVDVAVLKZDAJVMKVAVBVCULZVDVQDAVDVEAGZRZVAVKKZEAJVQVDVAVSVRMZVT
+      WAEAVTVGAGZRZVIKZVJKZWAWDVBVFBGVHBGWEVAVBVCVSWCUJWDABVECVAVBVCVSWCUKZVDVS
+      WCUMZNWDABVGCWGVTWCUNZNBVFVHOPWDVAVSWCWFVTVAWCWBMWHWIAVEVGOPVIVJUOUPSVKEA
+      TUQSVLDATUQURVOVNDEABCUSUTL $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
