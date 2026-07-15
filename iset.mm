@@ -7506,7 +7506,7 @@ $)
 
   $( The Inversion Axiom of the infinite-valued sentential logic (L-infinity)
      of Lukasiewicz, but where one of the propositions is decidable.  Using
-     ~ dfor2dc , we can see that this expresses "disjunction commutes."
+     ~ dfor2dc , we can see that this expresses "disjunction is commutative".
      Theorem *2.69 of [WhiteheadRussell] p. 108 (plus the decidability
      condition).  (Contributed by NM, 12-Aug-2004.) $)
   looinvdc $p |- ( DECID ph ->
@@ -18286,7 +18286,7 @@ $)
        ` ps ` , and some ` ch ` is not ` ps ` , therefore some ` ch ` is not
        ` ph ` .  (In Aristotelian notation, AOO-2:  PaM and SoM therefore SoP.)
        For example, "All informative things are useful", "Some websites are not
-       useful", therefore "Some websites are not informative."  (Contributed by
+       useful", therefore "Some websites are not informative".  (Contributed by
        David A. Wheeler, 28-Aug-2016.) $)
     baroco $p |- E. x ( ch /\ -. ph ) $=
       ( wn wa wi spi con3i anim2i eximii ) CBGZHCAGZHDFNOCABABIDEJKLM $.
@@ -29155,8 +29155,8 @@ $)
 
   ${
     $d A x $.
-    $( Any class is a subclass of the universal class.  (Contributed by NM,
-       31-Oct-1995.) $)
+    $( Any class is a subclass of the universal class.  Dual of ~ 0ss .
+       (Contributed by NM, 31-Oct-1995.) $)
     ssv $p |- A C_ _V $=
       ( vx cvv cv elex ssriv ) BACBDAEF $.
   $}
@@ -30811,9 +30811,9 @@ $)
     ( cin cun undi uncom ineq12i 3eqtr4i ) CABDZECAEZCBEZDJCEACEZBCEZDCABFJCGMK
     NLACGBCGHI $.
 
-  $( Equality of union and intersection implies equality of their arguments.
-     (Contributed by NM, 16-Apr-2006.)  (Proof shortened by Andrew Salmon,
-     26-Jun-2011.) $)
+  $( Equality of union and intersection is equivalent to equality of the
+     arguments.  (Contributed by NM, 16-Apr-2006.)  (Proof shortened by Andrew
+     Salmon, 26-Jun-2011.) $)
   uneqin $p |- ( ( A u. B ) = ( A i^i B ) <-> A = B ) $=
     ( cun cin wceq wss wa eqimss unss ssin sstr sylbir simpl anim12i syl sylibr
     eqss unidm inidm eqtr4i uneq2 ineq2 3eqtr3a impbii ) ABCZABDZEZABEZUGABFZBA
@@ -31141,7 +31141,7 @@ $(
 $)
 
   $( Declare the symbol for the empty or null set. $)
-  $c (/) $. $( null set $)
+  $c (/) $. $( empty set $)
 
   $( Extend class notation to include the empty set. $)
   c0 $a class (/) $.
@@ -31394,43 +31394,46 @@ $)
 
   ${
     $d x A $.
-    $( The union of a class with the empty set is itself.  Theorem 24 of
-       [Suppes] p. 27.  (Contributed by NM, 5-Aug-1993.) $)
+    $( The union of a class with the empty set is itself.  Dual of ~ inv1 .
+       Theorem 24 of [Suppes] p. 27.  (Contributed by NM, 5-Aug-1993.) $)
     un0 $p |- ( A u. (/) ) = A $=
       ( vx c0 cv wcel wo noel biorfi bicomi uneqri ) BACABDZAEZLKCEZFMLKGHIJ $.
 
-    $( The intersection of a class with the empty set is the empty set.
-       Theorem 16 of [Suppes] p. 26.  (Contributed by NM, 5-Aug-1993.) $)
+    $( The intersection of a class with the empty set is the empty set.  Dual
+       of ~ unv .  Commuted form of ~ 0in .  Theorem 16 of [Suppes] p. 26.
+       (Contributed by NM, 5-Aug-1993.) $)
     in0 $p |- ( A i^i (/) ) = (/) $=
       ( vx c0 cv wcel wa noel bianfi bicomi ineqri ) BACCBDZCEZKAEZLFLMKGHIJ $.
   $}
 
-  $( The intersection of the empty set with a class is the empty set.
-     (Contributed by Glauco Siliprandi, 17-Aug-2020.) $)
+  $( The intersection of the empty set with a class is the empty set.  Commuted
+     form of ~ in0 .  (Contributed by Glauco Siliprandi, 17-Aug-2020.) $)
   0in $p |- ( (/) i^i A ) = (/) $=
     ( c0 cin incom in0 eqtri ) BACABCBBADAEF $.
 
-  $( The intersection of a class with the universal class is itself.  Exercise
-     4.10(k) of [Mendelson] p. 231.  (Contributed by NM, 17-May-1998.) $)
+  $( The intersection of a class with the universal class is itself.  Dual of
+     ~ un0 .  Exercise 4.10(k) of [Mendelson] p. 231.  (Contributed by NM,
+     17-May-1998.) $)
   inv1 $p |- ( A i^i _V ) = A $=
     ( cvv cin inss1 ssid ssv ssini eqssi ) ABCAABDAABAEAFGH $.
 
   $( The union of a class with the universal class is the universal class.
-     Exercise 4.10(l) of [Mendelson] p. 231.  (Contributed by NM,
-     17-May-1998.) $)
+     Dual of ~ in0 .  Exercise 4.10(l) of [Mendelson] p. 231.  (Contributed by
+     NM, 17-May-1998.) $)
   unv $p |- ( A u. _V ) = _V $=
     ( cvv cun ssv ssun2 eqssi ) ABCZBGDBAEF $.
 
   ${
     $d A x $.
-    $( The null set is a subset of any class.  Part of Exercise 1 of
-       [TakeutiZaring] p. 22.  (Contributed by NM, 5-Aug-1993.) $)
+    $( The empty set is a subset of any class.  Dual of ~ ssv .  Part of
+       Exercise 1 of [TakeutiZaring] p. 22.  (Contributed by NM,
+       5-Aug-1993.) $)
     0ss $p |- (/) C_ A $=
       ( vx c0 cv wcel noel pm2.21i ssriv ) BCABDZCEIAEIFGH $.
   $}
 
-  $( Any subset of the empty set is empty.  Theorem 5 of [Suppes] p. 23 and its
-     converse.  (Contributed by NM, 17-Sep-2003.) $)
+  $( Any subset of the empty set is empty.  Dual of ~ vss .  Theorem 5 of
+     [Suppes] p. 23 and its converse.  (Contributed by NM, 17-Sep-2003.) $)
   ss0b $p |- ( A C_ (/) <-> A = (/) ) $=
     ( c0 wceq wss 0ss eqss mpbiran2 bicomi ) ABCZABDZIJBADAEABFGH $.
 
@@ -31448,6 +31451,27 @@ $)
      17-Feb-2007.) $)
   ssn0 $p |- ( ( A C_ B /\ A =/= (/) ) -> B =/= (/) ) $=
     ( wss c0 wne wceq sseq0 ex necon3d imp ) ABCZADEBDEKBDADKBDFADFABGHIJ $.
+
+  $( Two classes are both empty if and only if their union is empty.  Dual of
+     ~ vvin .  (Contributed by NM, 11-Aug-2004.) $)
+  un00 $p |- ( ( A = (/) /\ B = (/) ) <-> ( A u. B ) = (/) ) $=
+    ( c0 wceq wa cun uneq12 un0 eqtrdi wss ssun1 sseq2 mpbii sylib ssun2 impbii
+    ss0b jca ) ACDZBCDZEZABFZCDZUAUBCCFCACBCGCHIUCSTUCACJZSUCAUBJUDABKUBCALMAQN
+    UCBCJZTUCBUBJUEBAOUBCBLMBQNRP $.
+
+  $( Only the universal class has the universal class as a subclass.  Dual of
+     ~ ss0b .  (Contributed by NM, 17-Sep-2003.)  (Proof shortened by Andrew
+     Salmon, 26-Jun-2011.) $)
+  vss $p |- ( _V C_ A <-> A = _V ) $=
+    ( cvv wss wa wceq ssv biantrur eqss bitr4i ) BACZABCZJDABEKJAFGABHI $.
+
+  $( Two classes are both the universal class if and only if their intersection
+     is the universal class.  Dual of ~ un00 .  (Contributed by BJ,
+     12-Jul-2026.) $)
+  vvin $p |- ( ( A = _V /\ B = _V ) <-> ( A i^i B ) = _V ) $=
+    ( cvv wceq cin ineq12 inv1 eqtrdi wss inss1 sseq1 mpbii vss sylib inss2 jca
+    wa impbii ) ACDZBCDZQZABEZCDZUAUBCCECACBCFCGHUCSTUCCAIZSUCUBAIUDABJUBCAKLAM
+    NUCCBIZTUCUBBIUEABOUBCBKLBMNPR $.
 
   ${
     abf.1 $e |- -. ph $.
@@ -31477,19 +31501,6 @@ $)
       impbid1 abbidv fal abf eqtrdi eqtrid ) BEFZGZABCHDICFZABJZDKZLADBCMUFUIND
       KLUFUHNDUFUHNUFUHNUHUEUGABOPQUHRSTNDUAUBUCUD $.
   $}
-
-  $( Two classes are empty iff their union is empty.  (Contributed by NM,
-     11-Aug-2004.) $)
-  un00 $p |- ( ( A = (/) /\ B = (/) ) <-> ( A u. B ) = (/) ) $=
-    ( c0 wceq wa cun uneq12 un0 eqtrdi wss ssun1 sseq2 mpbii sylib ssun2 impbii
-    ss0b jca ) ACDZBCDZEZABFZCDZUAUBCCFCACBCGCHIUCSTUCACJZSUCAUBJUDABKUBCALMAQN
-    UCBCJZTUCBUBJUEBAOUBCBLMBQNRP $.
-
-  $( Only the universal class has the universal class as a subclass.
-     (Contributed by NM, 17-Sep-2003.)  (Proof shortened by Andrew Salmon,
-     26-Jun-2011.) $)
-  vss $p |- ( _V C_ A <-> A = _V ) $=
-    ( cvv wss wa wceq ssv biantrur eqss bitr4i ) BACZABCZJDABEKJAFGABHI $.
 
   ${
     $d x A $.  $d x B $.  $d x C $.
@@ -37991,8 +38002,8 @@ $)
   0nep0 $p |- (/) =/= { (/) } $=
     ( c0 csn 0ex snnz necomi ) ABAACDE $.
 
-  $( Something cannot be equal to both the null set and the power set of the
-     null set.  (Contributed by NM, 30-Sep-2003.) $)
+  $( Something cannot be equal to both the empty set and the power set of the
+     empty set.  (Contributed by NM, 30-Sep-2003.) $)
   0inp0 $p |- ( A = (/) -> -. A = { (/) } ) $=
     ( c0 wceq csn wne 0nep0 neeq1 mpbiri neneqd ) ABCZABDZJAKEBKEFABKGHI $.
 
@@ -38032,7 +38043,7 @@ $)
     ( c0 cvv wcel cint wceq 0ex int0el ax-mp ) ABCBDAEFBGH $.
 
   ${
-    $d x y z A $.
+    $d x y A $.  $d y z A $.
     axpweq.1 $e |- A e. _V $.
     $( Two equivalent ways to express the Power Set Axiom.  Note that ~ ax-pow
        is not used by the proof.  (Contributed by NM, 22-Jun-2009.) $)
@@ -38043,6 +38054,7 @@ $)
       ULAIZFZHZAJZCBKCIDHLCMZBAKZLZBMZAJUMUQUMULULFZHZUQULGNUPVCAULGUNULOUOVBUL
       UNULPQRUAUPUMAULUOUBUCUDUPVAAUPULUNSZVAULUNAUEUFVDBIZDSZUSLZBMVABDUNUGVGU
       TBVFURUSCVEDUHUIUJTTUKT $.
+    $( $j usage 'axpweq' avoids 'ax-pow'; $)
   $}
 
 
@@ -40768,7 +40780,7 @@ $)
     ax-un $a |- E. y A. z ( E. w ( z e. w /\ w e. x ) -> z e. y ) $.
 
     $( Axiom of Union expressed with the fewest number of different variables.
-       (Contributed by NM, 14-Aug-2003.) $)
+       (Contributed by NM, 14-Aug-2003.)  (New usage is discouraged.) $)
     zfun $p |- E. x A. y ( E. x ( y e. x /\ x e. z ) -> y e. x ) $=
       ( vw wel wa wex wi wal ax-un weq elequ2 elequ1 anbi12d cbvexv albii exbii
       imbi1i mpbi ) BDEZDCEZFZDGZBAEZHZBIZAGUDACEZFZAGZUDHZBIZAGCABDJUFUKAUEUJB
@@ -40782,8 +40794,17 @@ $)
       ( wel wa wex ax-un bm1.3ii ) CDEDAEFDGBCABCDHI $.
 
     $( The Axiom of Union using the standard abbreviation for union.  Given any
-       set ` x ` , its union ` y ` exists.  (Contributed by NM, 4-Jun-2006.) $)
+       set ` x ` , its union ` y ` exists.  (Contributed by NM, 4-Jun-2006.)
+       (Proof shortened by BJ, 14-Jul-2026.) $)
     uniex2 $p |- E. y y = U. x $=
+      ( vz vw wel cv cuni wcel wb wal wceq wex wa axun2 eluni albii exbii mpbir
+      bibi2i dfcleq biimpri eximii ) CBEZCFZAFZGZHZIZCJZBFZUFKZBUIBLUCCDEDAEMDL
+      ZIZCJZBLABCDNUIUNBUHUMCUGULUCDUDUEOSPQRUKUICUJUFTUAUB $.
+
+    $( Obsolete version of ~ uniex2 as of 14-Jul-2026.  (Contributed by NM,
+       4-Jun-2006.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    uniex2OLD $p |- E. y y = U. x $=
       ( vz cv cuni wceq wex wcel wb wi wa zfun eluni imbi1i albii exbii bm1.3ii
       wal mpbir dfcleq ) BDZADZEZFZBGCDZUAHZUEUCHZICRZBGUGBCUGUFJZCRZBGUFUAUBHK
       BGZUFJZCRZBGBCALUJUMBUIULCUGUKUFBUEUBMNOPSQUDUHBCUAUCTPS $.
@@ -61832,7 +61853,7 @@ $)
 
   ${
     $d x y A $.  $d x y B $.  $d x y C $.  $d x y F $.
-    $( The null set is a strictly monotone ordinal function.  (Contributed by
+    $( The empty set is a strictly monotone ordinal function.  (Contributed by
        Andrew Salmon, 20-Nov-2011.) $)
     smo0 $p |- Smo (/) $=
       ( cid c0 cres wsmo ord0 iordsmo wceq wb res0 smoeq ax-mp mpbi ) ABCZDZBDZ
@@ -87599,10 +87620,10 @@ $)
 
   ${
     $d A w x y z $.  $d B w z $.
-    $( Addition commutes.  Axiom for real and complex numbers, derived from set
-       theory.  This construction-dependent theorem should not be referenced
-       directly, nor should the proven axiom ~ ax-addcom be used later.
-       Instead, use ~ addcom .
+    $( Addition is commutative.  Axiom for real and complex numbers, derived
+       from set theory.  This construction-dependent theorem should not be
+       referenced directly, nor should the proven axiom ~ ax-addcom be used
+       later.  Instead, use ~ addcom .
 
        In the Metamath Proof Explorer this is not a complex number axiom but is
        instead proved from other axioms.  That proof relies on real number
@@ -88543,7 +88564,7 @@ $)
   ax-mulrcl $a |- ( ( A e. RR /\ B e. RR ) -> ( A x. B ) e. RR ) $.
   $( $j restatement 'ax-mulrcl' of 'axmulrcl'; $)
 
-  $( Addition commutes.  Axiom for real and complex numbers, justified by
+  $( Addition is commutative.  Axiom for real and complex numbers, justified by
      Theorem ~ axaddcom .  Proofs should normally use ~ addcom instead.
      (New usage is discouraged.)  (Contributed by Jim Kingdon, 17-Jan-2020.) $)
   ax-addcom $a |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) = ( B + A ) ) $.
@@ -89915,7 +89936,7 @@ $)
   peano2re $p |- ( A e. RR -> ( A + 1 ) e. RR ) $=
     ( cr wcel c1 caddc co 1re readdcl mpan2 ) ABCDBCADEFBCGADHI $.
 
-  $( Addition commutes.  (Contributed by Jim Kingdon, 17-Jan-2020.) $)
+  $( Addition is commutative.  (Contributed by Jim Kingdon, 17-Jan-2020.) $)
   addcom $p |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) = ( B + A ) ) $=
     ( ax-addcom ) ABC $.
 
@@ -89965,14 +89986,15 @@ $)
       ( cc wcel cc0 caddc co wceq addlid ax-mp ) ACDEAFGAHBAIJ $.
 
     mul.2 $e |- B e. CC $.
-    $( Addition commutes.  Based on ideas by Eric Schmidt.  (Contributed by
-       Scott Fenton, 3-Jan-2013.) $)
+    $( Addition is commutative.  Based on ideas by Eric Schmidt.  (Contributed
+       by Scott Fenton, 3-Jan-2013.) $)
     addcomi $p |- ( A + B ) = ( B + A ) $=
       ( cc wcel caddc co wceq addcom mp2an ) AEFBEFABGHBAGHICDABJK $.
 
     ${
       addcomli.2 $e |- ( A + B ) = C $.
-      $( Addition commutes.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+      $( Addition is commutative.  (Contributed by Mario Carneiro,
+         19-Apr-2015.) $)
       addcomli $p |- ( B + A ) = C $=
         ( caddc co addcomi eqtri ) BAGHABGHCBAEDIFJ $.
     $}
@@ -90010,8 +90032,9 @@ $)
       ( cc wcel cc0 caddc co wceq addlid syl ) ABDEFBGHBICBJK $.
 
     addcomd.2 $e |- ( ph -> B e. CC ) $.
-    $( Addition commutes.  Based on ideas by Eric Schmidt.  (Contributed by
-       Scott Fenton, 3-Jan-2013.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+    $( Addition is commutative.  Based on ideas by Eric Schmidt.  (Contributed
+       by Scott Fenton, 3-Jan-2013.)  (Revised by Mario Carneiro,
+       27-May-2016.) $)
     addcomd $p |- ( ph -> ( A + B ) = ( B + A ) ) $=
       ( cc wcel caddc co wceq addcom syl2anc ) ABFGCFGBCHICBHIJDEBCKL $.
 
@@ -124323,6 +124346,38 @@ $)
     UKWDWFULVGAVTVLWALAUMAUNUOVGFVSHIZVSVSQIVJWCVGVSWFUPVGVNVJWGMVPVNVJVIVHHIZW
     GVNVQVJWHMPVHVIUQURFBCWEVNWHWGMVASFGVHUSUTVBRVGWBVSVSQVGVRVSWDWFVCTVDVETVF
     $.
+
+  $( If a complex number equals its square, it must be 0 or 1.  (Contributed by
+     NM, 6-Jun-2006.) $)
+  sq01 $p |- ( A e. CC -> ( ( A ^ 2 ) = A <-> ( A = 0 \/ A = 1 ) ) ) $=
+    ( cc wcel c2 cexp co wceq cc0 c1 cr wbr clt cmin adantr mulcld caddc ci a1i
+    cmul eqtrd wo wa simpr wb cim cfv cap cre cneg recl recnd muls1d negsubdi2d
+    imcl sqcld negcld replim oveq1d ax-icn binom2 syl2anc 3eqtr3d sqmuld oveq1i
+    wn i2 eqtrdi mulm1d oveq2d 2cnd add32d mul12d resqcld renegcld readdcld 2re
+    remulcld syl22anc mpbid simpld eqcomd mvlladdd negcon1ad 3eqtr2rd peano2rem
+    cru sqvald syl cdiv 1cnd mullidd simprd mulassd mulcanap2ad 2ap0 divmulap2d
+    eqtr4d mpbird halflt1 halfre 1red sublt0d mpbiri eqbrtrrd halfgt0 mul2lt0pn
+    breqtrid eqbrtrd 0red sqge0d lensymd pm2.65da 0cnd apti reim0b resq01 oveq1
+    ex sq0 id 3eqtr4a sq1 jaoi impbid1 ) ABCZADEFZAGZAHGZAIGZUAZYEYGYJYEYGUBZYG
+    YJYEYGUCZYKAJCZYGYJUDYKYMAUEUFZHGZYKYOYNHUGKZVEZYKYPYNDEFZHLKYKYPUBZYRAUHUF
+    ZYTIMFZSFZHLYKYRUUBGYPYKUUBYTYTSFZYTMFYTUUCMFZUIYRYKYTYTYKYTYEYTJCZYGAUJNZU
+    KZUUGULYKYTUUCUUGYKYTYTUUGUUGOUMYKYRUUDYKYNYKYNYEYNJCZYGAUNNZUKZUOZYKYRUIZY
+    TYTDEFZMFUUDYKUUMUULYTYKYTUUGUOZYKYRUUKUPZYKYTUUMUULPFZYKYTUUPGZYNDYTYNSFZS
+    FZGZYKYTQYNSFZPFZUUPQUUSSFZPFZGZUUQUUTUBZYKAUUPDYTUVASFZSFZPFZUVBUVDYKAUUMU
+    VHPFZUULPFZUVIYKAUVJUVADEFZPFZUVKYKYFUVBDEFZAUVMYEYFUVNGYGYEAUVBDEAUQZURNYL
+    YKYTBCZUVABCUVNUVMGUUGYKQYNQBCYKUSRZUUJOZYTUVAUTVAVBYKUVLUULUVJPYKUVLIUIZYR
+    SFZUULYKUVLQDEFZYRSFUVTYKQYNUVQUUJVCUWAUVSYRSVFVDVGYKYRUUKVHTVITYKUUMUVHUUL
+    UUNYKDUVGYKVJZYKYTUVAUUGUVROOUUOVKTYEAUVBGYGUVONYKUVHUVCUUPPYKUVHDQUURSFZSF
+    UVCYKUVGUWCDSYKYTQYNUUGUVQUUJVLVIYKDQUURUWBUVQYKYTYNUUGUUJOVLTVIVBYKUUEUUHU
+    UPJCUUSJCUVEUVFUDUUFUUIYKUUMUULYKYTUUFVMYKYRYKYNUUIVMVNVOYKDUURDJCZYKVPRYKY
+    TYNUUFUUIVQVQYTYNUUPUUSWFVRVSZVTWAWBYKUUMUUCYTMYKYTUUGWGVITWCWDNYSUUAYTYSUU
+    EUUAJCYKUUEYPUUFNZYTWEWHUWFYSIDWIFZIMFZUUAHLYSUWGYTIMYSUWGYTGIDYTSFZGYSIUWI
+    YNYSWJZYSUWIYSDYTUWDYSVPRUWFVQUKYKYNBCZYPUUJNYKYPUCYKIYNSFZUWIYNSFZGYPYKUWL
+    UUSUWMYKUWLYNUUSYKYNUUJWKYKUUQUUTUWEWLTYKDYTYNUWBUUGUUJWMWQNWNYSIYTDUWJYKUV
+    PYPUUGNYSVJDHUGKYSWORWPWRZURYKUWHHLKZYPYKUWOUWGILKWSYKUWGIUWGJCYKWTRYKXAXBX
+    CNXDYSHUWGYTLXEUWNXGXFXHYSHYRYSXIYSYNYKUUHYPUUINZVMYSYNUWPXJXKXLYKUWKHBCYOY
+    QUDUUJYKXMYNHXNVAWRYEYMYOUDYGAXONWRAXPWHVSXRYHYGYIYHHDEFHYFAXSAHDEXQYHXTYAY
+    IIDEFIYFAYBAIDEXQYIXTYAYCYD $.
 
   $( The real part of zero.  (Contributed by NM, 27-Jul-1999.) $)
   re0 $p |- ( Re ` 0 ) = 0 $=
@@ -211371,17 +211426,18 @@ $)
     bj-axun2 $p |- E. y A. z ( z e. y <-> E. w ( z e. w /\ w e. x ) ) $=
       ( wel wa wex cv wrex ax-bdel ax-bdex df-rex exancom bitri ax-un bdbm1.3ii
       bd0 ) CDEZDAEZFDGZBCRDAHZIZTRDACDJKUBSRFDGTRDUALSRDMNQABCDOP $.
+    $( $j usage 'bj-axun2' avoids 'ax-sep' 'ax-pow'; $)
   $}
 
   ${
-    $d x y z $.
+    $d x y z w $.
     $( ~ uniex2 from bounded separation.  (Contributed by BJ, 15-Oct-2019.)
        (Proof modification is discouraged.) $)
     bj-uniex2 $p |- E. y y = U. x $=
-      ( vz cv cuni wceq wex wel wcel wb wal bdcuni bdeli wi wa zfun eluni exbii
-      imbi1i mpbir albii bdbm1.3ii dfcleq ) BDZADZEZFZBGCBHZCDZUFIZJCKZBGUJBCCU
-      FALMUJUHNZCKZBGUHBAHOBGZUHNZCKZBGBCAPUMUPBULUOCUJUNUHBUIUEQSUARTUBUGUKBCU
-      DUFUCRT $.
+      ( vz vw cv cuni wceq wex wel wcel wb wa bj-axun2 eluni bibi2i albii exbii
+      wal mpbir dfcleq ) BEZAEZFZGZBHCBIZCEZUCJZKZCRZBHZUJUECDIDAILDHZKZCRZBHAB
+      CDMUIUMBUHULCUGUKUEDUFUBNOPQSUDUIBCUAUCTQS $.
+    $( $j usage 'bj-uniex2' avoids 'ax-sep' 'ax-pow'; $)
   $}
 
   ${
@@ -211392,6 +211448,7 @@ $)
     bj-uniex $p |- U. A e. _V $=
       ( vx vy cv cuni cvv wcel wceq unieq eleq1d bj-uniex2 issetri vtocl ) CEZF
       ZGHAFZGHCABOAIPQGOAJKDPCDLMN $.
+    $( $j usage 'bj-uniex' avoids 'ax-sep' 'ax-pow'; $)
   $}
 
   ${
@@ -211640,6 +211697,7 @@ $)
      (Contributed by BJ, 18-Nov-2019.)  (Proof modification is discouraged.) $)
   bj-peano2 $p |- ( A e. _om -> suc A e. _om ) $=
     ( com wind wcel csuc wi bj-omind bj-indsuc ax-mp ) BCABDAEBDFGBAHI $.
+    $( $j usage 'bj-peano2' avoids 'ax-sep' 'ax-pow' 'ax-setind' 'ax-iinf'; $)
 
   ${
     $d x A $.
@@ -211651,6 +211709,7 @@ $)
       ( com cin wcel c0 cv csuc wi wral wind bj-omind bj-indind mpan bj-omssind
       wa wss imp sylan2 inss2 sstrdi ex ) DBEZCFZGBFAHZBFUFIBFJADKQZDBRUEUGQDUD
       BUGUEUDLZDUDRZDLUGUHMADBNOUEUHUIUDCPSTDBUAUBUC $.
+    $( $j usage 'peano5set' avoids 'ax-sep' 'ax-pow' 'ax-setind' 'ax-iinf'; $)
   $}
 
 
@@ -211695,6 +211754,7 @@ $)
     bj-omex $p |- _om e. _V $=
       ( vx vy com cvv wcel cv wind wss wi wal wa wex ax-infvn bj-2inf mpbir ) C
       DEAFZGBFZGPQHIBJKALABMABNO $.
+    $( $j usage 'bj-omex' avoids 'ax-sep' 'ax-pow' 'ax-setind' 'ax-iinf'; $)
   $}
 
 
@@ -211717,6 +211777,7 @@ $)
         ( ( (/) e. A /\ A. x e. _om ( x e. A -> suc x e. A ) ) -> _om C_ A ) $=
       ( com cin cvv wcel c0 cv csuc wi wral wss bj-omex bdinex1 peano5set ax-mp
       wa ) DBEFGHBGAIZBGSJBGKADLRDBMKDBCNOABFPQ $.
+    $( $j usage 'bdpeano5' avoids 'ax-sep' 'ax-pow' 'ax-setind' 'ax-iinf'; $)
   $}
 
   ${
@@ -211729,6 +211790,7 @@ $)
       ( wcel c0 cv csuc com wral wss cin cvv bj-omex bj-inex mpan peano5set syl
       wi wa 3impib ) BCDZEBDZAFZBDUCGBDRAHIZHBJZUAHBKLDZUBUDSUERHLDUAUFMHBLCNOA
       BLPQT $.
+    $( $j usage 'speano5' avoids 'ax-sep' 'ax-pow' 'ax-setind' 'ax-iinf'; $)
   $}
 
 
@@ -211761,6 +211823,7 @@ $)
       ZGBDZAHZIBDZABJZSZBEKUJUPLZBEUJUKULUOMUQUJULUMBDUNNZAEJZSZEBFUPUJULUSLZUT
       UPULUSUKULUOOUOUKUSULUOURATUSUNABPURAEQRUAUBUTUJVALUJULUSUCUDUEABCUFUGUHU
       I $.
+    $( $j usage 'findset' avoids 'ax-sep' 'ax-pow' 'ax-setind' 'ax-iinf'; $)
   $}
 
   ${
@@ -211775,6 +211838,7 @@ $)
              ( ( A C_ _om /\ (/) e. A /\ A. x e. A suc x e. A ) -> A = _om ) $=
       ( cvv wcel com wss c0 cv csuc wral w3a wceq bj-omex bdssex 3ad2ant1 mpcom
       findset ) BDEZBFGZHBEZAIJBEABKZLBFMTUASUBBFCNOPABDRQ $.
+    $( $j usage 'bdfind' avoids 'ax-sep' 'ax-pow' 'ax-setind' 'ax-iinf'; $)
   $}
 
   ${
@@ -211799,6 +211863,8 @@ $)
       csuc imim12i bdcab bdpeano5 syl2an ssabral sylib ) BCDNZFOPZQOAEUAZUBZAEO
       PBRURSFUCZURSZUTUIZURSZNZFOPUSUQABERHUDKTUPVDFOVACDVCACEUTILUEADEVBJUTFUF
       UGMTUJUHFURAEGUKULUMAEOUNUO $.
+    $( $j usage 'bj-bdfindis' avoids 'ax-sep' 'ax-pow' 'ax-setind'
+       'ax-iinf'; $)
 
     bj-bdfindisg.nfa $e |- F/_ x A $.
     bj-bdfindisg.nfterm $e |- F/ x ta $.
@@ -211811,6 +211877,9 @@ $)
                 ( ( ps /\ A. y e. _om ( ch -> th ) ) -> ( A e. _om -> ta ) ) $=
       ( wi com wral wa wcel bj-bdfindis nfcv bj-rspg syl ) BCDSGTUAUBAFTUAHTUCE
       SABCDFGIJKLMNOUDAEFHTPFTUEQRUFUG $.
+    $( $j usage 'bj-bdfindisg' avoids 'ax-sep' 'ax-pow' 'ax-setind'
+       'ax-iinf'; $)
+
   $}
 
   ${
@@ -211828,6 +211897,8 @@ $)
       suceq ) AABBEZFZGZHZBIJABSGZABDKZABDEZFZGZHZDIJABIJULURBDIAUKDADLUKDLMUNU
       QBABDNZABUPOZMBDPZAUNUKUQABDUAVAABUJUPUIUOUHUBUCUDAUMUNUQBDCABSOUSUTUISQA
       UMABSRTABDUEUIUPQAUQABUPRTUFUG $.
+    $( $j usage 'bj-bdfindes' avoids 'ax-sep' 'ax-pow' 'ax-setind'
+       'ax-iinf'; $)
   $}
 
   ${
@@ -211912,6 +211983,7 @@ $)
     BPZEZVFVBPVCVDBAGZPZVIEVJVCVLVIUQVAVLUPUQVAVLUQVABUSDZVLUQVMVABUTDBCMUSUTBQ
     NBACRSTUAUPVAVIUQUPVAVIUPVAAUTDZVIUPAUSDVAVNACMUSUTAQUBABCRSTUCUGVLVHVIVKVB
     VDBAUDUEUFUHVDVEVBUIUJUKULUMABUNUO $.
+  $( $j usage 'bj-peano4' avoids 'ax-sep' 'ax-pow' 'ax-setind' 'ax-iinf'; $)
 
   ${
     $d a x y A $.
@@ -214544,27 +214616,6 @@ $)
       WQVFHTZMZMZVGWMXGVEVKJFZKZWMDLVFVKVFGXHWLVKVFVEJOPXGVNXIDLICLVEVJVEGZVMXI
       DLXJVLXHVJVEVKJQPRVOXFVAXGVEVOWQXEUKVBSXGVFVOWQXEUMVBSXFVGWMVDVOWRURUSUTV
       C $.
-  $}
-
-  ${
-    $d u v w x y z $.
-    $( Real number trichotomy implies that if a product is zero, one of its
-       factors must be zero.  (Contributed by Jim Kingdon, 27-May-2026.) $)
-    trimul0or $p |- ( A. x e. RR A. y e. RR ( x < y \/ x = y \/ y < x )
-        -> A. u e. CC A. v e. CC ( ( u x. v ) = 0 -> ( u = 0 \/ v = 0 ) ) ) $=
-      ( vz vw cv wbr wceq wral cc0 wo cc wcel wa cap wn simpr adantr wdc clt cr
-      w3o co wi simprl ad3antrrr simplrr ad2antrr simpllr simplr mulap0d mulcld
-      cmul wb 0cn apti sylancl mpbid pm2.21dd mpbird olcd a1d breq1 dcbid breq2
-      cndcap biimpi r19.21bi 0cnd rspcdva ralrimiva exmiddc mpjaodan ralrimivva
-      ex syl orcd ) AGZBGZUAHVSVTIVTVSUAHUCBUBJAUBJZDGZCGZUNUDZKIZWBKIZWCKIZLZU
-      EZDCMMWAWBMNZWCMNZOZOZWBKPHZWIWNQZWMWNOZWCKPHZWIWQQZWPWQOZWEWHWSWEOZWDKPH
-      ZWHWTWBWCWMWJWNWQWEWAWJWKUFZUGZWPWKWQWEWAWJWKWNUHZUIZWMWNWQWEUJWPWQWEUKUL
-      WTWEXAQZWSWERWTWDMNKMNZWEXFUOWTWBWCXCXEUMUPWDKUQURUSUTVPWPWROZWHWEXHWGWFX
-      HWGWRWPWRRXHWKXGWGWRUOWPWKWRXDSUPWCKUQURVAVBVCWPWQTZWQWRLWPEGZKPHZTZXIEMW
-      CXJWCIXKWQXJWCKPVDVEWMXLEMJWNWMXLEMWMXJMNOZXJFGZPHZTZXLFMKXNKIXOXKXNKXJPV
-      FVEWMXPFMJZEMWAXQEMJZWLWAXRABEFVGVHSVIXMVJVKVLZSXDVKWQVMVQVNWMWOOZWHWEXTW
-      FWGXTWFWOWMWORXTWJXGWFWOUOWMWJWOXBSUPWBKUQURVAVRVCWMWNTZWNWOLWMXLYAEMWBXJ
-      WBIXKWNXJWBKPVDVEXSXBVKWNVMVQVNVO $.
   $}
 
   ${
