@@ -38043,7 +38043,7 @@ $)
     ( c0 cvv wcel cint wceq 0ex int0el ax-mp ) ABCBDAEFBGH $.
 
   ${
-    $d x y z A $.
+    $d x y A $.  $d y z A $.
     axpweq.1 $e |- A e. _V $.
     $( Two equivalent ways to express the Power Set Axiom.  Note that ~ ax-pow
        is not used by the proof.  (Contributed by NM, 22-Jun-2009.) $)
@@ -38054,6 +38054,7 @@ $)
       ULAIZFZHZAJZCBKCIDHLCMZBAKZLZBMZAJUMUQUMULULFZHZUQULGNUPVCAULGUNULOUOVBUL
       UNULPQRUAUPUMAULUOUBUCUDUPVAAUPULUNSZVAULUNAUEUFVDBIZDSZUSLZBMVABDUNUGVGU
       TBVFURUSCVEDUHUIUJTTUKT $.
+    $( $j usage 'axpweq' avoids 'ax-pow'; $)
   $}
 
 
@@ -40779,7 +40780,7 @@ $)
     ax-un $a |- E. y A. z ( E. w ( z e. w /\ w e. x ) -> z e. y ) $.
 
     $( Axiom of Union expressed with the fewest number of different variables.
-       (Contributed by NM, 14-Aug-2003.) $)
+       (Contributed by NM, 14-Aug-2003.)  (New usage is discouraged.) $)
     zfun $p |- E. x A. y ( E. x ( y e. x /\ x e. z ) -> y e. x ) $=
       ( vw wel wa wex wi wal ax-un weq elequ2 elequ1 anbi12d cbvexv albii exbii
       imbi1i mpbi ) BDEZDCEZFZDGZBAEZHZBIZAGUDACEZFZAGZUDHZBIZAGCABDJUFUKAUEUJB
@@ -40793,8 +40794,17 @@ $)
       ( wel wa wex ax-un bm1.3ii ) CDEDAEFDGBCABCDHI $.
 
     $( The Axiom of Union using the standard abbreviation for union.  Given any
-       set ` x ` , its union ` y ` exists.  (Contributed by NM, 4-Jun-2006.) $)
+       set ` x ` , its union ` y ` exists.  (Contributed by NM, 4-Jun-2006.)
+       (Proof shortened by BJ, 14-Jul-2026.) $)
     uniex2 $p |- E. y y = U. x $=
+      ( vz vw wel cv cuni wcel wb wal wceq wex wa axun2 eluni albii exbii mpbir
+      bibi2i dfcleq biimpri eximii ) CBEZCFZAFZGZHZIZCJZBFZUFKZBUIBLUCCDEDAEMDL
+      ZIZCJZBLABCDNUIUNBUHUMCUGULUCDUDUEOSPQRUKUICUJUFTUAUB $.
+
+    $( Obsolete version of ~ uniex2 as of 14-Jul-2026.  (Contributed by NM,
+       4-Jun-2006.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    uniex2OLD $p |- E. y y = U. x $=
       ( vz cv cuni wceq wex wcel wb wi wa zfun eluni imbi1i albii exbii bm1.3ii
       wal mpbir dfcleq ) BDZADZEZFZBGCDZUAHZUEUCHZICRZBGUGBCUGUFJZCRZBGUFUAUBHK
       BGZUFJZCRZBGBCALUJUMBUIULCUGUKUFBUEUBMNOPSQUDUHBCUAUCTPS $.
@@ -211416,17 +211426,18 @@ $)
     bj-axun2 $p |- E. y A. z ( z e. y <-> E. w ( z e. w /\ w e. x ) ) $=
       ( wel wa wex cv wrex ax-bdel ax-bdex df-rex exancom bitri ax-un bdbm1.3ii
       bd0 ) CDEZDAEZFDGZBCRDAHZIZTRDACDJKUBSRFDGTRDUALSRDMNQABCDOP $.
+    $( $j usage 'bj-axun2' avoids 'ax-sep' 'ax-pow'; $)
   $}
 
   ${
-    $d x y z $.
+    $d x y z w $.
     $( ~ uniex2 from bounded separation.  (Contributed by BJ, 15-Oct-2019.)
        (Proof modification is discouraged.) $)
     bj-uniex2 $p |- E. y y = U. x $=
-      ( vz cv cuni wceq wex wel wcel wb wal bdcuni bdeli wi wa zfun eluni exbii
-      imbi1i mpbir albii bdbm1.3ii dfcleq ) BDZADZEZFZBGCBHZCDZUFIZJCKZBGUJBCCU
-      FALMUJUHNZCKZBGUHBAHOBGZUHNZCKZBGBCAPUMUPBULUOCUJUNUHBUIUEQSUARTUBUGUKBCU
-      DUFUCRT $.
+      ( vz vw cv cuni wceq wex wel wcel wb wa bj-axun2 eluni bibi2i albii exbii
+      wal mpbir dfcleq ) BEZAEZFZGZBHCBIZCEZUCJZKZCRZBHZUJUECDIDAILDHZKZCRZBHAB
+      CDMUIUMBUHULCUGUKUEDUFUBNOPQSUDUIBCUAUCTQS $.
+    $( $j usage 'bj-uniex2' avoids 'ax-sep' 'ax-pow'; $)
   $}
 
   ${
@@ -211437,6 +211448,7 @@ $)
     bj-uniex $p |- U. A e. _V $=
       ( vx vy cv cuni cvv wcel wceq unieq eleq1d bj-uniex2 issetri vtocl ) CEZF
       ZGHAFZGHCABOAIPQGOAJKDPCDLMN $.
+    $( $j usage 'bj-uniex' avoids 'ax-sep' 'ax-pow'; $)
   $}
 
   ${
@@ -211685,6 +211697,7 @@ $)
      (Contributed by BJ, 18-Nov-2019.)  (Proof modification is discouraged.) $)
   bj-peano2 $p |- ( A e. _om -> suc A e. _om ) $=
     ( com wind wcel csuc wi bj-omind bj-indsuc ax-mp ) BCABDAEBDFGBAHI $.
+    $( $j usage 'bj-peano2' avoids 'ax-sep' 'ax-pow' 'ax-setind' 'ax-iinf'; $)
 
   ${
     $d x A $.
@@ -211696,6 +211709,7 @@ $)
       ( com cin wcel c0 cv csuc wi wral wind bj-omind bj-indind mpan bj-omssind
       wa wss imp sylan2 inss2 sstrdi ex ) DBEZCFZGBFAHZBFUFIBFJADKQZDBRUEUGQDUD
       BUGUEUDLZDUDRZDLUGUHMADBNOUEUHUIUDCPSTDBUAUBUC $.
+    $( $j usage 'peano5set' avoids 'ax-sep' 'ax-pow' 'ax-setind' 'ax-iinf'; $)
   $}
 
 
@@ -211740,6 +211754,7 @@ $)
     bj-omex $p |- _om e. _V $=
       ( vx vy com cvv wcel cv wind wss wi wal wa wex ax-infvn bj-2inf mpbir ) C
       DEAFZGBFZGPQHIBJKALABMABNO $.
+    $( $j usage 'bj-omex' avoids 'ax-sep' 'ax-pow' 'ax-setind' 'ax-iinf'; $)
   $}
 
 
@@ -211762,6 +211777,7 @@ $)
         ( ( (/) e. A /\ A. x e. _om ( x e. A -> suc x e. A ) ) -> _om C_ A ) $=
       ( com cin cvv wcel c0 cv csuc wi wral wss bj-omex bdinex1 peano5set ax-mp
       wa ) DBEFGHBGAIZBGSJBGKADLRDBMKDBCNOABFPQ $.
+    $( $j usage 'bdpeano5' avoids 'ax-sep' 'ax-pow' 'ax-setind' 'ax-iinf'; $)
   $}
 
   ${
@@ -211774,6 +211790,7 @@ $)
       ( wcel c0 cv csuc com wral wss cin cvv bj-omex bj-inex mpan peano5set syl
       wi wa 3impib ) BCDZEBDZAFZBDUCGBDRAHIZHBJZUAHBKLDZUBUDSUERHLDUAUFMHBLCNOA
       BLPQT $.
+    $( $j usage 'speano5' avoids 'ax-sep' 'ax-pow' 'ax-setind' 'ax-iinf'; $)
   $}
 
 
@@ -211806,6 +211823,7 @@ $)
       ZGBDZAHZIBDZABJZSZBEKUJUPLZBEUJUKULUOMUQUJULUMBDUNNZAEJZSZEBFUPUJULUSLZUT
       UPULUSUKULUOOUOUKUSULUOURATUSUNABPURAEQRUAUBUTUJVALUJULUSUCUDUEABCUFUGUHU
       I $.
+    $( $j usage 'findset' avoids 'ax-sep' 'ax-pow' 'ax-setind' 'ax-iinf'; $)
   $}
 
   ${
@@ -211820,6 +211838,7 @@ $)
              ( ( A C_ _om /\ (/) e. A /\ A. x e. A suc x e. A ) -> A = _om ) $=
       ( cvv wcel com wss c0 cv csuc wral w3a wceq bj-omex bdssex 3ad2ant1 mpcom
       findset ) BDEZBFGZHBEZAIJBEABKZLBFMTUASUBBFCNOPABDRQ $.
+    $( $j usage 'bdfind' avoids 'ax-sep' 'ax-pow' 'ax-setind' 'ax-iinf'; $)
   $}
 
   ${
@@ -211844,6 +211863,8 @@ $)
       csuc imim12i bdcab bdpeano5 syl2an ssabral sylib ) BCDNZFOPZQOAEUAZUBZAEO
       PBRURSFUCZURSZUTUIZURSZNZFOPUSUQABERHUDKTUPVDFOVACDVCACEUTILUEADEVBJUTFUF
       UGMTUJUHFURAEGUKULUMAEOUNUO $.
+    $( $j usage 'bj-bdfindis' avoids 'ax-sep' 'ax-pow' 'ax-setind'
+       'ax-iinf'; $)
 
     bj-bdfindisg.nfa $e |- F/_ x A $.
     bj-bdfindisg.nfterm $e |- F/ x ta $.
@@ -211856,6 +211877,9 @@ $)
                 ( ( ps /\ A. y e. _om ( ch -> th ) ) -> ( A e. _om -> ta ) ) $=
       ( wi com wral wa wcel bj-bdfindis nfcv bj-rspg syl ) BCDSGTUAUBAFTUAHTUCE
       SABCDFGIJKLMNOUDAEFHTPFTUEQRUFUG $.
+    $( $j usage 'bj-bdfindisg' avoids 'ax-sep' 'ax-pow' 'ax-setind'
+       'ax-iinf'; $)
+
   $}
 
   ${
@@ -211873,6 +211897,8 @@ $)
       suceq ) AABBEZFZGZHZBIJABSGZABDKZABDEZFZGZHZDIJABIJULURBDIAUKDADLUKDLMUNU
       QBABDNZABUPOZMBDPZAUNUKUQABDUAVAABUJUPUIUOUHUBUCUDAUMUNUQBDCABSOUSUTUISQA
       UMABSRTABDUEUIUPQAUQABUPRTUFUG $.
+    $( $j usage 'bj-bdfindes' avoids 'ax-sep' 'ax-pow' 'ax-setind'
+       'ax-iinf'; $)
   $}
 
   ${
@@ -211957,6 +211983,7 @@ $)
     BPZEZVFVBPVCVDBAGZPZVIEVJVCVLVIUQVAVLUPUQVAVLUQVABUSDZVLUQVMVABUTDBCMUSUTBQ
     NBACRSTUAUPVAVIUQUPVAVIUPVAAUTDZVIUPAUSDVAVNACMUSUTAQUBABCRSTUCUGVLVHVIVKVB
     VDBAUDUEUFUHVDVEVBUIUJUKULUMABUNUO $.
+  $( $j usage 'bj-peano4' avoids 'ax-sep' 'ax-pow' 'ax-setind' 'ax-iinf'; $)
 
   ${
     $d a x y A $.
