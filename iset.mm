@@ -31206,8 +31206,7 @@ $)
   df-nul $a |- (/) = ( _V \ _V ) $.
 
   $( Alternate definition of the empty class/set.  (Contributed by BJ,
-     30-Nov-2019.)  (Revised by GG, 3-Sep-2024.)  Prove directly from
-     definition to allow shortening ~ dfnul2 .  (Revised by BJ,
+     30-Nov-2019.)  (Revised by GG, 3-Sep-2024.)  (Revised by BJ,
      23-Sep-2024.) $)
   dfnul4 $p |- (/) = { x | F. } $=
     ( c0 cvv cdif cv wcel wn cab wfal df-nul df-dif pm3.24 bifal abbii 3eqtri
