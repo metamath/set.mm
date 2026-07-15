@@ -119556,6 +119556,17 @@ $)
       UYEUYLXTDZUYLNWFWEZUYNYSVVRNKUYKUYEUYNVUKRVXBUYLUYKVXLUYNVXMRYTUYKUYNVXOU
       VDUYLUVSUVEWSYPPXPUVFUYKVXNVWCUYMUYNYSUYKUYLVXMYTUYKUVSVUKYCUYLUVSUVIYGUV
       GUVHUVJUVKYR $.
+
+    $( A factorial counts the number of bijections on a finite set.
+       (Contributed by Mario Carneiro, 21-Jan-2015.)  (Proof shortened by Mario
+       Carneiro, 17-Apr-2015.) $)
+    hashfac $p |- ( A e. Fin -> ( # ` { f | f : A -1-1-onto-> A } ) =
+      ( ! ` ( # ` A ) ) ) $=
+      ( cfn wcel wf1 cab chash cfv cfa cbc cmul wf1o wceq hashf1 anidms cen wbr
+      cv co c1 enrefg f1finf1o mpancom abbidv fveq2d cn0 hashcl bcnn syl oveq2d
+      wb faccld nncnd mulridd eqtrd 3eqtr3d ) ACDZAABRZEZBFZGHZAGHZIHZVBVBJSZKS
+      ZAAURLZBFZGHVCUQVAVEMAABNOUQUTVGGUQUSVFBAAPQUQUSVFUKACUAAAURUBUCUDUEUQVEV
+      CTKSVCUQVDTVCKUQVBUFDVDTMAUGZVBUHUIUJUQVCUQVCUQVBVHULUMUNUOUP $.
   $}
 
   $( Version of ~ isorel for strictly increasing functions on the reals.
