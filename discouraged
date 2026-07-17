@@ -17299,8 +17299,6 @@ New usage of "joincomALT" is discouraged (1 uses).
 New usage of "jpi" is discouraged (0 uses).
 New usage of "jplem1" is discouraged (1 uses).
 New usage of "jplem2" is discouraged (1 uses).
-New usage of "just1-df" is discouraged (0 uses).
-New usage of "justify-df" is discouraged (0 uses).
 New usage of "kbass1" is discouraged (0 uses).
 New usage of "kbass2" is discouraged (1 uses).
 New usage of "kbass3" is discouraged (0 uses).
@@ -18725,7 +18723,6 @@ New usage of "sbequ5" is discouraged (0 uses).
 New usage of "sbequ6" is discouraged (0 uses).
 New usage of "sbequ8" is discouraged (0 uses).
 New usage of "sbhb" is discouraged (0 uses).
-New usage of "sbi1ALT" is discouraged (0 uses).
 New usage of "sbid2" is discouraged (2 uses).
 New usage of "sbid2v" is discouraged (0 uses).
 New usage of "sbidm" is discouraged (0 uses).
@@ -18979,7 +18976,6 @@ New usage of "stcltr2i" is discouraged (1 uses).
 New usage of "stcltrlem1" is discouraged (1 uses).
 New usage of "stcltrlem2" is discouraged (1 uses).
 New usage of "stcltrthi" is discouraged (0 uses).
-New usage of "stdpc4ALT" is discouraged (0 uses).
 New usage of "stge0" is discouraged (1 uses).
 New usage of "stge1i" is discouraged (1 uses).
 New usage of "sthil" is discouraged (2 uses).
@@ -20436,7 +20432,6 @@ Proof modification of "jaoded" is discouraged (26 steps).
 Proof modification of "jath" is discouraged (318 steps).
 Proof modification of "jccil" is discouraged (10 steps).
 Proof modification of "joincomALT" is discouraged (83 steps).
-Proof modification of "justify-df" is discouraged (1 steps).
 Proof modification of "keridl" is discouraged (862 steps).
 Proof modification of "latmassOLD" is discouraged (309 steps).
 Proof modification of "lcmftp" is discouraged (1057 steps).
@@ -20773,7 +20768,6 @@ Proof modification of "sbcoreleleq" is discouraged (91 steps).
 Proof modification of "sbcoreleleqVD" is discouraged (176 steps).
 Proof modification of "sbcovOLD" is discouraged (32 steps).
 Proof modification of "sbcssgVD" is discouraged (229 steps).
-Proof modification of "sbi1ALT" is discouraged (85 steps).
 Proof modification of "sbievOLD" is discouraged (24 steps).
 Proof modification of "sbievwOLD" is discouraged (23 steps).
 Proof modification of "sbn1ALT" is discouraged (41 steps).
@@ -20833,7 +20827,6 @@ Proof modification of "ssralv2" is discouraged (83 steps).
 Proof modification of "ssralv2VD" is discouraged (147 steps).
 Proof modification of "sstrALT2" is discouraged (81 steps).
 Proof modification of "sstrALT2VD" is discouraged (84 steps).
-Proof modification of "stdpc4ALT" is discouraged (38 steps).
 Proof modification of "stdpc5t" is discouraged (23 steps).
 Proof modification of "sucidALT" is discouraged (28 steps).
 Proof modification of "sucidALTVD" is discouraged (28 steps).
