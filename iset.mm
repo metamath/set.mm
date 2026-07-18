@@ -3635,6 +3635,29 @@ $)
   $}
 
   ${
+    birani.1 $e |- ( ph <-> ps ) $.
+    $( Inference adding a conjunct to the left-hand side of a biconditional.
+       (Contributed by Matthew House, 22-May-2026.) $)
+    birani $p |- ( ( ph /\ ch ) -> ps ) $=
+      ( biimpi adantr ) ABCABDEF $.
+
+    $( Inference adding a conjunct to the left-hand side of a biconditional.
+       (Contributed by Matthew House, 22-May-2026.) $)
+    bilani $p |- ( ( ch /\ ph ) -> ps ) $=
+      ( biimpi adantl ) ABCABDEF $.
+
+    $( Inference adding a conjunct to the right-hand side of a biconditional.
+       (Contributed by Matthew House, 22-May-2026.) $)
+    biranri $p |- ( ( ps /\ ch ) -> ph ) $=
+      ( biimpri adantr ) BACABDEF $.
+
+    $( Inference adding a conjunct to the right-hand side of a biconditional.
+       (Contributed by Matthew House, 22-May-2026.) $)
+    bilanri $p |- ( ( ch /\ ps ) -> ph ) $=
+      ( biimpri adantl ) BACABDEF $.
+  $}
+
+  ${
     simpl2im.1 $e |- ( ph -> ( ps /\ ch ) ) $.
     simpl2im.2 $e |- ( ch -> th ) $.
     $( Implication from an eliminated conjunct implied by the antecedent.
@@ -20577,6 +20600,23 @@ $)
   $}
 
   ${
+    $d x y $.  $d y A $.  $d ph y $.  $d ps x $.
+    eqabbw.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Version of ~ eqabb using implicit substitution.  (Contributed by GG and
+       AV, 18-Sep-2024.) $)
+    eqabbw $p |- ( A = { x | ph } <-> A. y ( y e. A <-> ps ) ) $=
+      ( cab wceq cv wcel wb wal cbvabv eqeq2i eqabb bitri ) EACGZHEBDGZHDIEJBKD
+      LQREABCDFMNBDEOP $.
+
+    $( Version of ~ eqabcb using implicit substitution, which requires fewer
+       axioms.  (Contributed by TM, 24-Jan-2026.) $)
+    eqabcbw $p |- ( { x | ph } = A <-> A. y ( ps <-> y e. A ) ) $=
+      ( cab wceq cv wcel wb wal eqabbw eqcom bicom albii 3bitr4i ) EACGZHDIEJZB
+      KZDLREHBSKZDLABCDEFMRENUATDBSOPQ $.
+    $( $j usage 'eqabcbw' avoids 'df-clel'; $)
+  $}
+
+  ${
     $d x A $.
     $( Equality of a class variable and a class abstraction.  Commuted form of
        ~ eqabb .  (Contributed by NM, 20-Aug-1993.) $)
@@ -30977,6 +31017,20 @@ $)
       ACDJUEUGUFUIUGUEADCIKUFBCDHUHBCDRBDCILMNO $.
   $}
 
+  ${
+    $( A class abstraction with a conjunction is a subset of the class
+       abstraction with the left conjunct only.  (Contributed by AV,
+       7-Aug-2024.)  (Proof shortened by SN, 22-Aug-2024.) $)
+    abanssl $p |- { f | ( ph /\ ps ) } C_ { f | ph } $=
+      ( wa simpl ss2abi ) ABDACABEF $.
+
+    $( A class abstraction with a conjunction is a subset of the class
+       abstraction with the right conjunct only.  (Contributed by AV,
+       7-Aug-2024.)  (Proof shortened by SN, 22-Aug-2024.) $)
+    abanssr $p |- { f | ( ph /\ ps ) } C_ { f | ps } $=
+      ( wa simpr ss2abi ) ABDBCABEF $.
+  $}
+
   $( A class builder defined by a negation.  (Contributed by FL,
      18-Sep-2010.) $)
   notab $p |- { x | -. ph } = ( _V \ { x | ph } ) $=
@@ -31150,6 +31204,14 @@ $)
      p. 231.  For a more traditional definition, but requiring a dummy
      variable, see ~ dfnul2 .  (Contributed by NM, 5-Aug-1993.) $)
   df-nul $a |- (/) = ( _V \ _V ) $.
+
+  $( Alternate definition of the empty class/set.  (Contributed by BJ,
+     30-Nov-2019.)  (Revised by GG, 3-Sep-2024.)  (Revised by BJ,
+     23-Sep-2024.) $)
+  dfnul4 $p |- (/) = { x | F. } $=
+    ( c0 cvv cdif cv wcel wn cab wfal df-nul df-dif pm3.24 bifal abbii 3eqtri
+    wa ) BCCDAECFZQGPZAHIAHJACCKRIARQLMNO $.
+  $( $j usage 'dfnul4' avoids 'df-clel' 'ax-13'; $)
 
   $( Alternate definition of the empty set.  Definition 5.14 of [TakeutiZaring]
      p. 20.  (Contributed by NM, 26-Dec-1996.) $)
@@ -31345,6 +31407,18 @@ $)
       ( wrex cv wcel wa wex crab df-rex rabid exbii nfv cab df-rab eleq2i nfxfr
       nfsab1 eleq1 cbvex 3bitr2ri ) ABDEBFZDGAHZBIUCABDJZGZBICFZUEGZCIABDKUFUDB
       ABDLMUFUHBCUFCNUHUGUDBOZGBUEUIUGABDPQUDBCSRUCUGUETUAUB $.
+  $}
+
+  ${
+    $d x y $.  $d ph y $.  $d ps x $.
+    ab0w.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( The class of sets verifying a property is the empty class if and only if
+       that property is a contradiction.  (Contributed by GG, 3-Oct-2024.) $)
+    ab0w $p |- ( { x | ph } = (/) <-> A. y -. ps ) $=
+      ( cab c0 wceq wfal wn wal dfnul4 eqeq2i cv wcel wsb df-clab bitri albii
+      wb sbv bibi2i eqabcbw nbfal 3bitr4i ) ACFZGHUFICFZHZBJZDKZGUGUFCLMBDNUGOZ
+      TZDKBITZDKUHUJULUMDUKIBUKICDPIIDCQICDUARUBSABCDUGEUCUIUMDBUDSUER $.
+    $( $j usage 'ab0w' avoids 'df-clel' 'ax-13'; $)
   $}
 
   $( Any restricted class abstraction restricted to the empty set is empty.
@@ -37757,6 +37831,13 @@ $)
        by Glauco Siliprandi, 3-Mar-2021.)  (Revised by AV, 26-Mar-2021.) $)
     difexi $p |- ( A \ B ) e. _V $=
       ( cvv wcel cdif difexg ax-mp ) ADEABFDECABDGH $.
+  $}
+
+  ${
+    difexd.1 $e |- ( ph -> A e. V ) $.
+    $( Existence of a difference.  (Contributed by SN, 16-Jul-2024.) $)
+    difexd $p |- ( ph -> ( A \ B ) e. _V ) $=
+      ( wcel cdif cvv difexg syl ) ABDFBCGHFEBCDIJ $.
   $}
 
   ${
@@ -51959,6 +52040,30 @@ $)
     ( wfn cin c0 wceq wcel w3a cun cfv uncom fveq1i incom eqeq1i anbi1i fvun1
     wa syl3an3b 3com12 eqtrid ) CAFZDBFZABGZHIZEBJZTZKECDLZMEDCLZMZEDMZEUJUKCDN
     OUEUDUIULUMIZUIUEUDBAGZHIZUHTUNUGUPUHUFUOHABPQRBADCESUAUBUC $.
+
+  ${
+    fvun1d.1 $e |- ( ph -> F Fn A ) $.
+    fvun1d.2 $e |- ( ph -> G Fn B ) $.
+    fvun1d.3 $e |- ( ph -> ( A i^i B ) = (/) ) $.
+    fvun1d.4 $e |- ( ph -> X e. A ) $.
+    $( The value of a union when the argument is in the first domain, a
+       deduction version.  (Contributed by metakunt, 28-May-2024.) $)
+    fvun1d $p |- ( ph -> ( ( F u. G ) ` X ) = ( F ` X ) ) $=
+      ( wfn cin c0 wceq wcel wa w3a cun cfv jca 3jca fvun1 syl ) ADBKZECKZBCLMN
+      ZFBOZPZQFDERSFDSNAUDUEUHGHAUFUGIJTUABCDEFUBUC $.
+  $}
+
+  ${
+    fvun2d.1 $e |- ( ph -> F Fn A ) $.
+    fvun2d.2 $e |- ( ph -> G Fn B ) $.
+    fvun2d.3 $e |- ( ph -> ( A i^i B ) = (/) ) $.
+    fvun2d.4 $e |- ( ph -> X e. B ) $.
+    $( The value of a union when the argument is in the second domain, a
+       deduction version.  (Contributed by metakunt, 28-May-2024.) $)
+    fvun2d $p |- ( ph -> ( ( F u. G ) ` X ) = ( G ` X ) ) $=
+      ( wfn cin c0 wceq wcel wa w3a cun cfv jca 3jca fvun2 syl ) ADBKZECKZBCLMN
+      ZFCOZPZQFDERSFESNAUDUEUHGHAUFUGIJTUABCDEFUBUC $.
+  $}
 
   ${
     $d x y A $.  $d x y F $.  $d x y G $.  $d x X $.
@@ -67147,6 +67252,76 @@ $)
     ( cmap co wcel wf cvv wa wb elmapex elmapg syl ibi ) ABCDEFZCBAGZOBHFCHFIOP
     JABCKBCAHHLMN $.
 
+  ${
+    $d A f m $.  $d B f m $.  $d V m $.
+    $( If ` B ` is a set, the value of the set exponentiation ` ( B ^m A ) ` is
+       the class of all functions from ` A ` to ` B ` .  Generalisation of
+       ~ mapvalg to arbitrary domains.  Note that the class
+       ` { f | f : A --> B } ` can only contain set-functions, as opposed to
+       arbitrary class-functions.  When ` A ` is a proper class, there can be
+       no set-functions on it, so the above class is empty (see also
+       ~ fsetdmprc0 ), hence a set.  In this case, both sides of the equality
+       in this theorem are the empty set.  (Contributed by AV, 8-Aug-2024.) $)
+    mapfset $p |- ( B e. V -> { f | f : A --> B } = ( B ^m A ) ) $=
+      ( vm wcel cv wf cab cmap co vex feq1 elab wa cvv simpr dmfex mpan adantr
+      elmapd exbiri pm2.43b elmapi impbid1 bitrid eqrdv ) BDFZEABCGZHZCIZBAJKZE
+      GZUKFABUMHZUHUMULFZUJUNCUMELZABUIUMMNUHUNUOUHUNUOUNUHUOUNUNUHOBAUMDPUNUHQ
+      UNAPFZUHUMPFUNUQUPABPUMRSTUAUBUCUMBAUDUEUFUG $.
+  $}
+
+  ${
+    $d A f $.  $d B f $.
+    $( The value of the set exponentiation ` ( B ^m A ) ` is a subset of the
+       class of functions from ` A ` to ` B ` .  (Contributed by AV,
+       10-Aug-2024.) $)
+    mapssfsetg $p |- ( B e. V -> ( B ^m A ) C_ { f | f : A --> B } ) $=
+      ( wcel cv wf cab cmap co wceq wss mapfset eqimss2 syl ) BDEABCFGCHZBAIJZK
+      QPLABCDMQPNO $.
+
+    $d A f m $.  $d B m $.
+    $( The value of the set exponentiation ` ( B ^m A ) ` is a superset of the
+       set of all functions from ` A ` onto ` B ` .  (Contributed by AV,
+       7-Aug-2024.) $)
+    mapfoss $p |- { f | f : A -onto-> B } C_ ( B ^m A ) $=
+      ( vm cv wfo cab cmap co wcel vex foeq1 elab wf fof cvv crn forn eqeltrrdi
+      rnex dmfex sylancr elmapd mpbird sylbi ssriv ) DABCEZFZCGZBAHIZDEZUIJABUK
+      FZUKUJJZUHULCUKDKZABUGUKLMULUMABUKNZABUKOZULBAUKPPULBUKQPABUKRUKUNTSULUKP
+      JUOAPJUNUPABPUKUAUBUCUDUEUF $.
+  $}
+
+  ${
+    $d A f g $.  $d B f g $.
+    $( The class of all functions from ` A ` into ` B ` is a subclass of the
+       power class of the cartesion product of ` A ` and ` B ` .  (Contributed
+       by AV, 13-Sep-2024.) $)
+    fsetsspwxp $p |- { f | f : A --> B } C_ ~P ( A X. B ) $=
+      ( vg cv wf cab cxp cpw wss wcel fssxp vex feq1 elab velpw 3imtr4i ssriv )
+      DABCEZFZCGZABHZIZABDEZFZUDUBJUDUAKUDUCKABUDLTUECUDDMABSUDNODUBPQR $.
+  $}
+
+  $( The set of functions from the empty set is the singleton containing the
+     empty set.  (Contributed by AV, 13-Sep-2024.) $)
+  fset0 $p |- { f | f : (/) --> B } = { (/) } $=
+    ( c0 cv wf cab wceq csn f0bi abbii df-sn eqtr4i ) CABDZEZBFMCGZBFCHNOBMAIJB
+    CKL $.
+
+  ${
+    $d A f g $.
+    $( The set of functions with a proper class as domain is empty.
+       (Contributed by AV, 22-Aug-2024.) $)
+    fsetdmprc0 $p |- ( A e/ _V -> { f | f Fn A } = (/) ) $=
+      ( vg cvv wnel cv wfn wn wal cab c0 wceq wcel df-nel vex a1i fndmexd con3i
+      id sylbi alrimiv fneq1 ab0w sylibr ) ADEZCFZAGZHZCIBFZAGZBJKLUEUHCUEADMZH
+      UHADNUGUKUGAUFDUFDMUGCOPUGSQRTUAUJUGBCAUIUFUBUCUD $.
+
+    $d B f $.
+    $( The set of injections between two sets exists.  (Contributed by AV,
+       14-Aug-2024.) $)
+    f1setexg $p |- ( ( A e. V /\ B e. W ) -> { f | f : A -1-1-> B } e. _V ) $=
+      ( cv ccnv wfun wf1 cab wf wa df-f1 abbii fabexg ) CFZGHZCABDEABPIZCJRABPK
+      QLCABPMNO $.
+  $}
+
   $( A mapping is a function with the appropriate domain.  (Contributed by AV,
      6-Apr-2019.) $)
   elmapfn $p |- ( A e. ( B ^m C ) -> A Fn C ) $=
@@ -72011,6 +72186,36 @@ $)
       JZKZIWDWMVRWNWLVSUJWMABVTUNZIZWNIWMVTCHVKWQWMVTCVQWHWIWJVSUKULVIVKWGWKVSU
       MVJWQBVTCWPBABVTUOUPBLVTOAWPABVTUQQURVFWNWPWNWPUSFABVTUTVAVBRSVCWCWOABVQW
       AVDRSVGVIVKVHVE $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.  $d F x y $.
+    $( It is decidable whether a function from a finite set into another finite
+       set is one-to-one.  (Contributed by Jim Kingdon, 13-Jul-2026.) $)
+    fdcf1 $p |- ( ( A e. Fin /\ B e. Fin /\ F : A --> B )
+        -> DECID F : A -1-1-> B ) $=
+      ( vx vy cfn wcel cfv wceq wral wdc sylibr adantr ffvelcdmd fidceq syl3anc
+      cv wa ralrimiva dcfi wf w3a wi wf1 wn wo simp3 orcd df-dc simpll2 simpll3
+      simp1 simplr simpr dcim sylc syl2anc dcand dff13 dcbii ) AFGZBFGZABCUAZUB
+      ZVCDQZCHZEQZCHZIZVEVGIZUCZEAJZDAJZRZKABCUDZKVDVCVMVDVCVCUEZUFVCKVDVCVPVAV
+      BVCUGUHVCUILVDVAVLKZDAJVMKVAVBVCULZVDVQDAVDVEAGZRZVAVKKZEAJVQVDVAVSVRMZVT
+      WAEAVTVGAGZRZVIKZVJKZWAWDVBVFBGVHBGWEVAVBVCVSWCUJWDABVECVAVBVCVSWCUKZVDVS
+      WCUMZNWDABVGCWGVTWCUNZNBVFVHOPWDVAVSWCWFVTVAWCWBMWHWIAVEVGOPVIVJUOUPSVKEA
+      TUQSVLDATUQURVOVNDEABCUSUTL $.
+  $}
+
+  ${
+    $d A f g $.  $d B f g $.
+    $( The set of injections between two finite sets is finite.  (Contributed
+       by Jim Kingdon, 13-Jul-2026.) $)
+    f1setfi $p |- ( ( A e. Fin /\ B e. Fin )
+        -> { f | f : A -1-1-> B } e. Fin ) $=
+      ( vg cfn wcel wa cv wf cab wf1 wss wdc wral cmap wceq ancoms elab syl3anc
+      co mapvalg mapfi eqeltrrd f1f ss2abi a1i simpll simplr bilani fdcf1 f1eq1
+      vex feq1 dcbii sylibr ralrimiva ssfidc ) AEFZBEFZGZABCHZIZCJZEFABVAKZCJZV
+      CLZDHZVEFZMZDVCNVEEFUTBAOTZVCEUSURVJVCPBAEECUAQUSURVJEFBAUBQUCVFUTVDVBCAB
+      VAUDUEUFUTVIDVCUTVGVCFZGZABVGKZMZVIVLURUSABVGIZVNURUSVKUGURUSVKUHVKVOUTVB
+      VOCVGDULZABVAVGUMRUIABVGUJSVHVMVDVMCVGVPABVAVGUKRUNUOUPDVCVEUQS $.
   $}
 
 
@@ -119176,6 +119381,201 @@ $)
       UVJUVKUVAUVPWPACYQRVJACDXTYJYQXFXGUWCUUPYOBURZYMBURZUWGUWASXRUUPYAUVSUUQV
       MUVJUWSYIUVABDYOXHXIUWCUVBUWTYIUVAUVBUVJUVGWIBDYMXHVJABXQYOYMXMXGXJXBXKXL
       XNXOXP $.
+  $}
+
+  ${
+    $d a f g x y z $.  $d a f g x y A $.  $d a f g x y B $.  $d a f g x y ph $.
+    $d f g x y F $.
+    hashf1lem2.1 $e |- ( ph -> A e. Fin ) $.
+    hashf1lem2.2 $e |- ( ph -> B e. Fin ) $.
+    hashf1lem2.3 $e |- ( ph -> -. z e. A ) $.
+    hashf1lem2.4 $e |- ( ph -> ( ( # ` A ) + 1 ) <_ ( # ` B ) ) $.
+    ${
+      hashf1lem1.5 $e |- ( ph -> F : A -1-1-> B ) $.
+      $( Lemma for ~ hashf1 .  (Contributed by Mario Carneiro, 17-Apr-2015.)
+         (Proof shortened by AV, 14-Aug-2024.) $)
+      hashf1lem1 $p |- ( ph -> { f | ( ( f |` A ) = F /\
+         f : ( A u. { z } ) -1-1-> B ) } ~~ ( B \ ran F ) ) $=
+        ( vy wceq wa cfv cvv cfn wcel a1i syl vg vx cv cres csn cun wf1 cab crn
+        cop wn vex unsnfi syl3anc f1setexg syl2anc wss abanssr ssexd difexd weq
+        cdif reseq1 eqeq1d f1eq1 anbi12d elab f1f ad2antll ssun2 mpbir ffvelcdm
+        wf snss sylancl adantr cima df-ima simprl rneqd eqtrid eleq2d wb simprr
+        ssun1 f1elima bitr3d mtbird eldifd ex biimtrid c0 wf1o f1osn f1of ax-mp
+        cin eldifi adantl snssd fss sylancr disjsn sylibr fresaunres1disj f1oun
+        f1f1orn eldifn syl22anc f1of1 frnd unssd f1ss fexd opex unexg mpbir2and
+        snex elabg anbi1i wral simprlr f1fn adantrl f1ofn eqfnfv eqcomd simprll
+        fvres fveq1d sylan9eqr ad2antrr simpr fvun1d eqtr4d ralrimiva biantrurd
+        wfn fnsn fveq2 ralunb bitr4di cdm fsnunfv mp3an12i eqeq2d eqeq12d ralsn
+        fdmd eqcom 3bitr4g 3bitr2d en3d ) AUAUBEUCZCUDZFMZCBUCZUEZUFZDUUNUGZNZE
+        UHZDFUIZVBZUUQUAUCZOZFUUQUBUCZUJZUEZUFZPPAUVBUUTEUHZPAUUSQRZDQRUVKPRACQ
+        RUUQPRZUUQCRZUKZUVLGUVMABULZSICUUQPUMUNHUUSDEQQUOUPUVBUVKUQAUUPUUTEURSU
+        SADUVCQHUTUVEUVBRZUVECUDZFMZUUSDUVEUGZNZAUVFUVDRZUVAUWAEUVEUAULEUAVAZUU
+        PUVSUUTUVTUWCUUOUVRFUUNUVECVCVDUUSDUUNUVEVEVFVGZAUWAUWBAUWANZUVFDUVCUWE
+        UUSDUVEVMZUUQUUSRZUVFDRUVTUWFAUVSUUSDUVEVHVIUWGUURUUSUQUURCVJUUQUUSUVPV
+        NVKZUUSDUUQUVEVLVOUWEUVFUVCRZUVNAUVOUWAIVPUWEUVFUVECVQZRZUWIUVNUWEUWJUV
+        CUVFUWEUWJUVRUIUVCUVECVRUWEUVRFAUVSUVTVSVTWAWBUWEUVTUWGCUUSUQZUWKUVNWCA
+        UVSUVTWDUWGUWEUWHSUWLUWECUURWESUUSDUVEUUQCWFUNWGWHWIWJWKAUVGUVDRZUVJUVB
+        RZAUWMNZUWNUVJCUDZFMZUUSDUVJUGZUWOCDFVMZUURDUVIVMZCUURWQWLMZUWQAUWSUWMA
+        CDFUGZUWSKCDFVHTZVPZUWOUURUVGUEZUVIVMZUXEDUQUWTUURUXEUVIWMZUXFUUQUVGUVP
+        UBULZWNZUURUXEUVIWOWPUWOUVGDUWMUVGDRAUVGDUVCWRWSWTZUURUXEDUVIXAXBAUXAUW
+        MAUVOUXAICUUQXCXDZVPZCUURDFUVIXEUNUWOUUSUVCUXEUFZUVJUGZUXMDUQUWRUWOUUSU
+        XMUVJWMZUXNUWOCUVCFWMZUXGUXAUVCUXEWQWLMZUXOAUXPUWMAUXBUXPKCDFXGTVPUXGUW
+        OUXISUXLUWOUVGUVCRUKZUXQUWMUXRAUVGDUVCXHWSUVCUVGXCXDCUVCUURUXEFUVIXFXIZ
+        UUSUXMUVJXJTUWOUVCUXEDUWOCDFUXDXKUXJXLUUSUXMDUVJXMUPUWOUVJPRZUWNUWQUWRN
+        ZWCUWOFPRZUVIPRUXTAUYBUWMACDQFUXCGXNVPUVHUUQUVGUVPUXHXOXRFUVIPPXPVOUVAU
+        YAEUVJPUUNUVJMZUUPUWQUUTUWRUYCUUOUWPFUUNUVJCVCVDUUSDUUNUVJVEVFXSTXQWJUV
+        QUWMNUWAUWMNZAUVEUVJMZUVGUVFMZWCZUVQUWAUWMUWDXTAUYDUYGAUYDNZUYELUCZUVEO
+        ZUYIUVJOZMZLUUSYAZUYLLUURYAZUYFUYHUVEUUSYRZUVJUUSYRZUYEUYMWCUYHUVTUYOAU
+        VSUVTUWMYBUUSDUVEYCTUYHUXOUYPAUWMUXOUWAUXSYDUUSUXMUVJYETLUUSUVEUVJYFUPU
+        YHUYNUYLLCYAZUYNNUYMUYHUYQUYNUYHUYLLCUYHUYICRZNZUYJUYIFOZUYKUYRUYHUYJUY
+        IUVROZUYTUYRVUAUYJUYICUVEYIYGUYHUYIUVRFAUVSUVTUWMYHYJYKUYSCUURFUVIUYIUY
+        SUXBFCYRAUXBUYDUYRKYLCDFYCTUVIUURYRUYSUUQUVGUVPUXHYSSAUXAUYDUYRUXKYLUYH
+        UYRYMYNYOYPYQUYLLCUURUUAUUBUYHUVFUUQUVJOZMZUVFUVGMUYNUYFUYHVUBUVGUVFUVM
+        UVGPRUYHUUQFUUCZRZUKZVUBUVGMUVPUXHAVUFUYDAVUEUVNIAVUDCUUQACDFUXCUUIWBWH
+        VPFPPUUQUVGUUDUUEUUFUYLVUCLUUQUVPLBVAUYJUVFUYKVUBUYIUUQUVEYTUYIUUQUVJYT
+        UUGUUHUVGUVFUUJUUKUULWJWKUUM $.
+    $}
+
+    ${
+      $d A a f g x y $.  $d A a f w y $.  $d B a f g x y $.  $d B a f w y $.
+      $d F f g x y $.  $d a f g ph x y $.  $d a f g x y z $.  $d w y z $.
+      $( Lemma for ~ hashf1 .  (Contributed by Mario Carneiro, 17-Apr-2015.) $)
+      hashf1lem2 $p |- ( ph -> ( # ` { f | f : ( A u. { z } ) -1-1-> B } ) =
+        ( ( ( # ` B ) - ( # ` A ) ) x. ( # ` { f | f : A -1-1-> B } ) ) ) $=
+        ( cab wcel wa cfn chash cfv co cmul wceq c0 caddc vx vy va cres wf1 csn
+        vw cv cun cmin cc0 eleq2 anbi1d abbidv eleq1d wss noel pm2.21i biimtrdi
+        adantrd abssdv ss0 syl fveq2d hash0 eqtrdi fveq2 oveq2d eqeq12d anbi12d
+        nfab1 nfeq2 abbid f1eq1 cbvabv eqeq2i ssun1 mpan2 vex resex elab sylibr
+        f1ssres imbitrrid pm4.71rd bicomd sylbi intnanr abf 0fi eqeltri a1i cn0
+        hashcl nn0cnd subcld mul01d eqcomd jca cdif wo elun orbi2i bitri anbi1i
+        elsn andir abbii unab eqtr4i cin simprl simpll simprr eldifad sylib crn
+        cen wbr adantr wf1o f1f1orn adantl f1oen3g sylancr ensymd enfii syl2anc
+        cvv f1rn diffifi syl3anc wn c1 simpr wex eqtrid syl12anc hashun cc inab
+        hashf1lem1 simplll simpllr eldifbd simplrl snssd unssd simprlr eqeltrrd
+        cle abn0m exlimiv con3i notm0 unfidisj oveq1 fveq2i unssbd fihasheqf1od
+        eqeltrid snss wb hashen mpbird oveq12d disjdif undiffi 3eqtr2d mvlladdd
+        sylan2 wi hashunsng elv ad2antrl simprll 1cnd adddid mulridd 3eqtrd mpd
+        eqtrd ex f1setfi findcard2sd simprd ) AEUHZCUDZCDUWGUEZEJZKZCBUHZUFZUIZ
+        DUWGUEZLZEJZMKZUWOEJZNOZDNOZCNOZUJPZUWJNOZQPZRZAUWHUAUHZKZUWOLZEJZMKZUX
+        JNOZUXCUXGNOZQPZRZLUWHSKZUWOLZEJZMKZUKUXCUKQPZRZLUWHUBUHZKZUWOLZEJZMKZU
+        YENOZUXCUYBNOZQPZRZLZUWHUYBUCUHZUFZUIZKZUWOLZEJZMKZUYQNOZUXCUYNNOZQPZRZ
+        LZUWRUXFLUAUBUCUWJUXGSRZUXKUXSUXOUYAVUDUXJUXRMVUDUXIUXQEVUDUXHUXPUWOUXG
+        SUWHULZUMUNUOVUDUXLUKUXNUXTVUDUXLSNOZUKVUDUXJSNVUDUXJSUPUXJSRVUDUXIESVU
+        DUXHUWGSKZUWOVUDUXHUXPVUGVUEUXPVUGUWHUQZURUSUTVAUXJVBVCVDVEVFVUDUXMUKUX
+        CQVUDUXMVUFUKUXGSNVGVEVFVHVIVJUXGUYBRZUXKUYFUXOUYJVUIUXJUYEMVUIUXIUYDEV
+        UIUXHUYCUWOUXGUYBUWHULUMUNZUOVUIUXLUYGUXNUYIVUIUXJUYENVUJVDVUIUXMUYHUXC
+        QUXGUYBNVGVHVIVJUXGUYNRZUXKUYRUXOVUBVUKUXJUYQMVUKUXIUYPEVUKUXHUYOUWOUXG
+        UYNUWHULUMUNZUOVUKUXLUYSUXNVUAVUKUXJUYQNVULVDVUKUXMUYTUXCQUXGUYNNVGVHVI
+        VJUXGUWJRZUXKUWRUXOUXFVUMUXJUWQMVUMUXIUWPEEUXGUWJUWIEVKVLVUMUXHUWKUWOUX
+        GUWJUWHULUMVMUOVUMUXLUWTUXNUXEVUMUXJUWSNVUMUXGCDUYBUEZUBJZRZUXJUWSRUWJV
+        UOUXGUWIVUNEUBCDUWGUYBVNVOVPVUPUXIUWOEVUPUWOUXIVUPUWOUXHUWOUXHVUPUWHVUO
+        KZUWOCDUWHUEZVUQUWOCUWNUPVURCUWMVQUWNDCUWGWCVRVUNVURUBUWHUWGCEVSVTZCDUY
+        BUWHVNWAWBUXGVUOUWHULWDWEWFUNWGVDVUMUXMUXDUXCQUXGUWJNVGVHVIVJAUXSUYAUXS
+        AUXRSMUXQEUXPUWOVUHWHWIWJWKWLAUXTUKAUXCAUXAUXBAUXAADMKZUXAWMKGDWNVCWOAU
+        XBACMKZUXBWMKFCWNVCWOZWPZWQWRWSAUYBMKZLZUYBUWJUPZUYLUWJUYBWTKZLZLZUYKVU
+        CVVIUYKLZUYRVUBVVJUYQUYEUWHUYLRZUWOLZEJZUIZMUYQUYDVVLXAZEJVVNUYPVVOEUYP
+        UYCVVKXAZUWOLVVOUYOVVPUWOUYOUYCUWHUYMKZXAVVPUWHUYBUYMXBVVQVVKUYCUWHUYLV
+        USXFXCXDXEUYCVVKUWOXGXDXHUYDVVLEXIXJZVVJUYFVVMMKZUYEVVMXKZSRZVVNMKVVIUY
+        FUYJXLZVVIVVSUYKVVIACDUYLUEZVVSAVVDVVHXMVVIUYLUWJKZVWCVVIUYLUWJUYBVVEVV
+        FVVGXNZXOZUWIVWCEUYLUCVSZCDUWGUYLVNWAZXPAVWCLZDUYLXQZWTZMKZVVMVWKXRXSZV
+        VSVWIVUTVWJMKZVWJDUPZVWLAVUTVWCGXTZVWIVVAVWJCXRXSVWNAVVAVWCFXTZVWICVWJV
+        WIUYLYIKCVWJUYLYAZCVWJXRXSVWGVWCVWRACDUYLYBYCZCVWJUYLYIYDYEYFVWJCYGYHZV
+        WCVWOACDUYLYJYCZDVWJYKYLZVWIBCDEUYLVWQVWPAUWLCKYMVWCHXTAUXBYNTPUXAUUKXS
+        VWCIXTAVWCYOUUBZVVMVWKYGYHZYHXTZVVJAVVDUYLUYBKZYMZLZUYNUWJUPZVWAAVVDVVH
+        UYKUUCZVVJVVDVXGAVVDVVHUYKUUDVVIVXGUYKVVIUYLUWJUYBVWEUUEXTWSZVVJUYBUYMU
+        WJVVEVVFVVGUYKUUFVVJUYLUWJVVIVWDUYKVWFXTUUGUUHZAVXHVXILZLZVVTUYDVVLLZEJ
+        ZSUYDVVLEUUAVXNVXGVXPSRZAVVDVXGVXIUUIVXGUGUHVXPKUGYPZYMVXQVXRVXFVXRVXOE
+        YPVXFVXOEUGUULVXOVXFEVXOUWHUYLUYBUYDVVKUWOXLUYCUWOVVLXMUUJUUMWGUUNUGVXP
+        UUOXPVCYQYRZUYEVVMUUPYLUVAVVJUYJVUBVVIUYFUYJXNUYJVUBVVJUYGUXCTPZUYIUXCT
+        PZRUYGUYIUXCTUUQVVJUYSVXTVUAVYAVVJUYSUYGVVMNOZTPZVXTVVJUYSVVNNOZVYCUYQV
+        VNNVVRUURVVJUYFVVSVWAVYDVYCRVWBVXEVXSUYEVVMYSYLYQVVJVYBUXCUYGTVVJAVXHVX
+        IVYBUXCRZVXJVXKVXLVXMAVWCVYEVXMVWDVWCVXMUYMUWJUPVWDVXMUYBUYMUWJVXHVXIYO
+        UUSUYLUWJVWGUVBWBVWHXPVWIUXBVYBUXAAUXBYTKVWCVVBXTVWIVYBVWIVVSVYBWMKVXDV
+        VMWNVCWOVWIUXBVYBTPVWJNOZVWKNOZTPZVWJVWKUIZNOZUXAVWIUXBVYFVYBVYGTVWICVW
+        JUYLVWQVWSUUTVWIVYBVYGRZVWMVXCVWIVVSVWLVYKVWMUVCVXDVXBVVMVWKUVDYHUVEUVF
+        VWIVWNVWLVWJVWKXKSRZVYJVYHRVWTVXBVYLVWIVWJDUVGWLVWJVWKYSYLVWIVYIDNVWIDV
+        YIVWIVUTVWNVWODVYIRVWPVWTVXADVWJUVHYLWRVDUVIUVJUVKYRVHUWBVVJAVXHVXIVUAV
+        YARVXJVXKVXLVXNVUAUXCUYHYNTPZQPUYIUXCYNQPZTPVYAVXNUYTVYMUXCQVXHUYTVYMRZ
+        AVXIVXHVYOUVLUCUYBUYLYIUVMUVNUVOVHVXNUXCUYHYNAUXCYTKVXMVVCXTZVXNUYHVXNV
+        VDUYHWMKAVVDVXGVXIUVPUYBWNVCWOVXNUVQUVRVXNVYNUXCUYITVXNUXCVYPUVSVHUVTYR
+        VIWDUWAWSUWCAVVAVUTUWJMKFGCDEUWDYHUWEUWF $.
+    $}
+  $}
+
+  ${
+    $d f x y z A $.  $d f x y z w B $.
+    $( The permutation number ` | A | ! x. ( | B | _C | A | ) = `
+       ` | B | ! / ( | B | - | A | ) ! ` counts the number of injections from
+       ` A ` to ` B ` .  (Contributed by Mario Carneiro, 21-Jan-2015.) $)
+    hashf1 $p |- ( ( A e. Fin /\ B e. Fin ) ->
+      ( # ` { f | f : A -1-1-> B } ) =
+        ( ( ! ` ( # ` A ) ) x. ( ( # ` B ) _C ( # ` A ) ) ) ) $=
+      ( wcel chash cfv cfa cbc co cmul wceq wi c1 cc0 c0 oveq2d cn0 adantr cdiv
+      syl vx vy vz vw cfn cv wf1 cab csn cun f1eq2 wfn f1fn fn0 sylib f10 f1eq1
+      mpbiri impbii velsn bitr4i bitrdi eqabcdv fveq2d cvv hashsng ax-mp eqtrdi
+      fveq2 hash0 fac0 oveq12d eqeq12d imbi2d abbidv 2fveq3 hashcl bcn0 eqtr2di
+      0ex 1t1e1 wn caddc cle wbr clt cmin oveq2 simprl simpl simplrr hashf1lem2
+      simpr faccld nncnd ad2antrl peano2nn0 nn0sub2 syl3anc divclapd divcanap2d
+      wa nnap0d nn0cnd subcld cn cc npcan sylancl 1cnd subsub4d eqeltrd nn0p1nn
+      ax-1cn eqeltrrd eqtr4d hashunsng elv adantl cz nn0uz eleqtrdi nn0zd elfz5
+      cfz cuz syl2anc mpbird bcval2 divdivap1d 3eqtr4d peano2fzr elfzle2 facnn2
+      wb eqtrd wex imp wo nnzd oveq1d imbitrrid abn0m cdom f1domg breq1d simprr
+      vex a1i unsnfi fihashdom nnred nn0red lenltd 3bitr3d sylibd exlimdv con2d
+      biimtrid notm0 imbitrdi mul01d 3eqtr4a animorr bcval4 a1d mpjaodan expcom
+      zlelttric a2d findcard2s ) AUEDBUEDZABCUFZUGZCUHZEFZAEFZGFZBEFZUVQHIZJIZK
+      ZUVLUAUFZBUVMUGZCUHZEFZUWCEFZGFZUVSUWGHIZJIZKZLUVLMMUVSNHIZJIZKZLUVLUBUFZ
+      BUVMUGZCUHZEFZUWOEFZGFZUVSUWSHIZJIZKZLUVLUWOUCUFZUIUJZBUVMUGZCUHZEFZUXEEF
+      ZGFZUVSUXIHIZJIZKZLUVLUWBLUAUBUCAUWCOKZUWKUWNUVLUXNUWFMUWJUWMUXNUWFOUIZEF
+      ZMUXNUWEUXOEUXNUWDCUXOUXNUWDOBUVMUGZUVMUXODZUWCOBUVMUKUXQUVMOKZUXRUXQUXSU
+      XQUVMOULUXSOBUVMUMUVMUNUOUXSUXQOBOUGBUPOBUVMOUQURUSCOUTVAVBVCVDOVEDUXPMKV
+      TOVEVFVGVHUXNUWHMUWIUWLJUXNUWHNGFMUXNUWGNGUXNUWGOEFZNUWCOEVIVJVHZVDVKVHUX
+      NUWGNUVSHUYAPVLVMVNUWCUWOKZUWKUXCUVLUYBUWFUWRUWJUXBUYBUWEUWQEUYBUWDUWPCUW
+      CUWOBUVMUKVOVDUYBUWHUWTUWIUXAJUWCUWOGEVPUYBUWGUWSUVSHUWCUWOEVIPVLVMVNUWCU
+      XEKZUWKUXMUVLUYCUWFUXHUWJUXLUYCUWEUXGEUYCUWDUXFCUWCUXEBUVMUKVOVDUYCUWHUXJ
+      UWIUXKJUWCUXEGEVPUYCUWGUXIUVSHUWCUXEEVIPVLVMVNUWCAKZUWKUWBUVLUYDUWFUVPUWJ
+      UWAUYDUWEUVOEUYDUWDUVNCUWCABUVMUKVOVDUYDUWHUVRUWIUVTJUWCAGEVPUYDUWGUVQUVS
+      HUWCAEVIPVLVMVNUVLUWMMMJIMUVLUWLMMJUVLUVSQDZUWLMKBVQZUVSVRTPWAVSUWOUEDZUX
+      DUWODWBZXBZUVLUXCUXMUVLUYIUXCUXMLZUVLUYIXBZUWSMWCIZUVSWDWEZUYJUVSUYLWFWEZ
+      UXCUXMUYKUYMXBZUVSUWSWGIZUWRJIZUYPUXBJIZKUWRUXBUYPJWHUYOUXHUYQUXLUYRUYOUC
+      UWOBCUYKUYGUYMUVLUYGUYHWIZRUYKUVLUYMUVLUYIWJZRUVLUYGUYHUYMWKUYKUYMWMZWLUY
+      OUYLGFZUVSGFZUVSUYLWGIZGFZSIZVUBSIZJIZUYPVUFUYPSIZJIZUXLUYRUYOVUHVUFVUJUY
+      OVUFVUBUYOVUCVUEUYOVUCUYOUVSUYKUYEUYMUVLUYEUYIUYFRZRZWNWOZUYOVUEUYOVUDUYO
+      UYLQDZUYEUYMVUDQDUYOUWSQDZVUNUYKVUOUYMUYGVUOUVLUYHUWOVQWPZRZUWSWQTZVULVUA
+      UYLUVSWRWSZWNZWOZUYOVUEVUTXCZWTZUYOVUBUYOUYLVURWNZWOZUYOVUBVVDXCZXAUYOVUF
+      UYPVVCUYOUVSUWSUYOUVSVULXDZUYOUWSVUQXDZXEZUYOUYPUYOUYPMWGIZMWCIZUYPXFUYOU
+      YPXGDMXGDVVKUYPKVVIXNUYPMXHXIUYOVVJQDVVKXFDUYOVVJVUDQUYOUVSUWSMVVGVVHUYOX
+      JXKZVUSXLVVJXMTXOZXCZXAXPUYOUXJVUBUXKVUGJUYOUXIUYLGUYKUXIUYLKZUYMUYIVVOUV
+      LUYIVVOLUCUWOUXDVEXQXRXSZRZVDUYOUVSUYLHIZVUCVUEVUBJISIZUXKVUGUYOUYLNUVSYE
+      IZDZVVRVVSKUYOVWAUYMVUAUYOUYLNYFFZDUVSXTDZVWAUYMYOUYOUYLQVWBVURYAYBUYOUVS
+      VULYCUYLNUVSYDYGYHZUYLUVSYITUYOUXIUYLUVSHVVQPUYOVUCVUEVUBVUMVVAVVEVVBVVFY
+      JYKVLUYOUXBVUIUYPJUYOUXBUWTVUCUYPGFZSIZUWTSIZJIZVUIUYOUXAVWGUWTJUYOUXAVUC
+      VWEUWTJISIZVWGUYOUWSVVTDZUXAVWIKUYOUWSVWBDVWAVWJUYOUWSQVWBVUQYAYBVWDUWSNU
+      VSYLYGZUWSUVSYITUYOVUCVWEUWTVUMUYOVWEUYOUYPUYOVUOUYEUWSUVSWDWEZUYPQDVUQVU
+      LUYOVWJVWLVWKUWSNUVSYMTUWSUVSWRWSWNZWOZUYOUWTUYOUWSVUQWNZWOZUYOVWEVWMXCZU
+      YOUWTVWOXCZYJXPPUYOVWFVUCVUEUYPJIZSIVWHVUIUYOVWEVWSVUCSUYOVWEVVJGFZUYPJIZ
+      VWSUYOUYPXFDVWEVXAKVVMUYPYNTUYOVWTVUEUYPJUYOVVJVUDGVVLVDUUAYPPUYOVWFUWTUY
+      OVUCVWEVUMVWNVWQWTVWPVWRXAUYOVUCVUEUYPVUMVVAVVIVVBVVNYJYKYPPYKVMUUBUYKUYN
+      XBZUXMUXCVXBUXHUXJNJIZUXLVXBUXTNUXHVXCVJVXBUXGOEUYKUYNUXGOKZUYKUYNUDUFUXG
+      DUDYQZWBVXDUYKVXEUYNVXEUXFCYQUYKUYNWBZUXFCUDUUCUYKUXFVXFCUYKUXFUXEBUUDWEZ
+      VXFUVLUXFVXGLUYIUXEBUEUVMUUERUYKUXIUVSWDWEZUYMVXGVXFUYKUXIUYLUVSWDVVPUUFU
+      YKUXEUEDZUVLVXHVXGYOUYKUYGUXDVEDZUYHVXIUYSVXJUYKUCUUHUUIUVLUYGUYHUUGUWOUX
+      DVEUUJWSZUYTUXEBUUKYGUYKUYLUVSUYKUYLUYKVUOUYLXFDZVUPUWSXMTZUULUYKUVSVUKUU
+      MUUNUUOUUPUUQUUSUURUDUXGUUTUVAYRVDVXBUXJUYKUXJXGDUYNUYKUXJUYKUXIUYKVXIUXI
+      QDVXKUXEVQTWNWORUVBUVCVXBUXKNUXJJVXBUXKVVRNVXBUXIUYLUVSHUYKVVOUYNVVPRPVXB
+      UYEUYLXTDZUYLNWFWEZUYNYSVVRNKUYKUYEUYNVUKRVXBUYLUYKVXLUYNVXMRYTUYKUYNVXOU
+      VDUYLUVSUVEWSYPPXPUVFUYKVXNVWCUYMUYNYSUYKUYLVXMYTUYKUVSVUKYCUYLUVSUVIYGUV
+      GUVHUVJUVKYR $.
+
+    $( A factorial counts the number of bijections on a finite set.
+       (Contributed by Mario Carneiro, 21-Jan-2015.)  (Proof shortened by Mario
+       Carneiro, 17-Apr-2015.) $)
+    hashfac $p |- ( A e. Fin -> ( # ` { f | f : A -1-1-onto-> A } ) =
+      ( ! ` ( # ` A ) ) ) $=
+      ( cfn wcel wf1 cab chash cfv cfa cbc cmul wf1o wceq hashf1 anidms cen wbr
+      cv co c1 enrefg f1finf1o mpancom abbidv fveq2d cn0 hashcl bcnn syl oveq2d
+      wb faccld nncnd mulridd eqtrd 3eqtr3d ) ACDZAABRZEZBFZGHZAGHZIHZVBVBJSZKS
+      ZAAURLZBFZGHVCUQVAVEMAABNOUQUTVGGUQUSVFBAAPQUQUSVFUKACUAAAURUBUCUDUEUQVEV
+      CTKSVCUQVDTVCKUQVBUFDVDTMAUGZVBUHUIUJUQVCUQVCUQVBVHULUMUNUOUP $.
   $}
 
   $( Version of ~ isorel for strictly increasing functions on the reals.
