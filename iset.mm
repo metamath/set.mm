@@ -29701,8 +29701,9 @@ $)
       3sstr4g ) CDEZBFZCGZAHZBIZUADGZAHZBIZABCJABDJUBUEKZBLUCUFKZBLTUDUGEUHUIBU
       BUEAMNBCDOUCUFBPQABCRABDRS $.
 
-    $( Subclass relation for the restriction of a class abstraction.
-       (Contributed by NM, 31-Mar-1995.) $)
+    $( Subclass relation for the restriction of a class abstraction.  Prefer
+       using the more natural statement ~ ssrab2 .  (Contributed by NM,
+       31-Mar-1995.) $)
     ssab2 $p |- { x | ( x e. A /\ ph ) } C_ A $=
       ( cv wcel wa simpl abssi ) BDCEZAFBCIAGH $.
 
