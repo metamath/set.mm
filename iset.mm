@@ -20584,9 +20584,9 @@ $)
        (that has a free variable ` x ` ) to a theorem with a class variable
        ` A ` , we substitute ` x e. A ` for ` ph ` throughout and simplify,
        where ` A ` is a new class variable not already in the wff.  An example
-       is the conversion of ~ zfauscl to ~ inex1 (look at the instance of
-       ~ zfauscl that occurs in the proof of ~ inex1 ).  Conversely, to convert
-       a theorem with a class variable ` A ` to one with ` ph ` , we substitute
+       is the conversion of ~ sepgi to ~ inex1 (look at the instance of ~ sepgi
+       that occurs in the proof of ~ inex1 ).  Conversely, to convert a theorem
+       with a class variable ` A ` to one with ` ph ` , we substitute
        ` { x | ph } ` for ` A ` throughout and simplify, where ` x ` and ` ph `
        are new setvar and wff variables not already in the wff.  For more
        information on class variables, see Quine pp. 15-21 and/or Takeuti and
@@ -37573,7 +37573,18 @@ $)
        already exists.  This prevents Russell's paradox ~ ru .  In some texts,
        this scheme is called "Aussonderung" or the Subset Axiom.
 
-       (Contributed by NM, 11-Sep-2006.) $)
+       The variable ` x ` can occur in the formula ` ph ` , which in textbooks
+       is often written ` ph ( x ) ` .  To specify this in the Metamath
+       language, we _omit_ the distinct variable condition ($d) that ` x ` not
+       occur in ` ph ` .
+
+       For a version using a class variable, see ~ sepg , which requires the
+       axiom of extensionality as well as the axiom scheme of separation for
+       its derivation.
+
+       If we omit the requirement that ` y ` not occur in ` ph ` , we can
+       derive a contradiction (the ax-sep in set.mm).  (Contributed by NM,
+       11-Sep-2006.) $)
     ax-sep $a |- E. y A. x ( x e. y <-> ( x e. z /\ ph ) ) $.
   $}
 
@@ -37585,20 +37596,37 @@ $)
        derived from the more restrictive ~ ax-sep with no additional set theory
        axioms.  (Contributed by NM, 10-Dec-2006.)  (Proof shortened by Mario
        Carneiro, 17-Nov-2016.) $)
-    axsep2 $p |- E. y A. x ( x e. y <-> ( x e. z /\ ph ) ) $=
+    axsepg $p |- E. y A. x ( x e. y <-> ( x e. z /\ ph ) ) $=
       ( vw wel wa wb wal wex cv eleq2 anbi1d anabs5 bitrdi bibi2d albidv exbidv
       weq ax-sep chvarv ) BCFZBEFZBDFZAGZGZHZBIZCJUBUEHZBIZCJEDEDSZUHUJCUKUGUIB
       UKUFUEUBUKUFUDUEGUEUKUCUDUEEKDKBKLMUDANOPQRUEBCETUA $.
   $}
 
   ${
+    $d A x y z $.  $d ph y z $.
+    $( Version of the axiom of separation where the "containing set" is a class
+       variable and the sethood assumption is in the antecedent.  (Contributed
+       by NM, 21-Jun-1993.)  Put ~ sepgi in closed form.  (Revised by BJ,
+       2-Jul-2022.) $)
+    sepg $p |- ( A e. V -> E. y A. x ( x e. y <-> ( x e. A /\ ph ) ) ) $=
+      ( vz wel wa wb wal wex wcel wceq eleq2 anbi1d bibi2d albidv exbidv ax-sep
+      cv vtoclg ) BCGZBFGZAHZIZBJZCKUBBTZDLZAHZIZBJZCKFDEFTZDMZUFUKCUMUEUJBUMUD
+      UIUBUMUCUHAULDUGNOPQRABCFSUA $.
+  $}
+
+  ${
+    $d A x y $.  $d ph y $.
+    sepgi.1 $e |- A e. _V $.
+    $( Inference associated with ~ sepg .  (Contributed by NM, 21-Jun-1993.)
+       (Revised by BJ, 14-Jul-2026.) $)
+    sepgi $p |- E. y A. x ( x e. y <-> ( x e. A /\ ph ) ) $=
+      ( cvv wcel wel cv wa wb wal wex sepg ax-mp ) DFGBCHBIDGAJKBLCMEABCDFNO $.
+
     $d x y A z $.  $d y ph z $.
-    zfauscl.1 $e |- A e. _V $.
-    $( Separation Scheme (Aussonderung) using a class variable.  To derive this
-       from ~ ax-sep , we invoke the Axiom of Extensionality (indirectly via
-       ~ vtocl ), which is needed for the justification of class variable
-       notation.  (Contributed by NM, 5-Aug-1993.) $)
-    zfauscl $p |- E. y A. x ( x e. y <-> ( x e. A /\ ph ) ) $=
+    $( Obsolete version of ~ sepgi as of 14-Jul-2026.  (Contributed by NM,
+       21-Jun-1993.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    zfausclOLD $p |- E. y A. x ( x e. y <-> ( x e. A /\ ph ) ) $=
       ( vz cv wcel wa wb wal wex eleq2 anbi1d bibi2d albidv exbidv ax-sep vtocl
       wceq ) BGZCGHZUAFGZHZAIZJZBKZCLUBUADHZAIZJZBKZCLFDEUCDTZUGUKCULUFUJBULUEU
       IUBULUDUHAUCDUAMNOPQABCFRS $.
@@ -37757,9 +37785,9 @@ $)
     $( Separation Scheme (Aussonderung) using class notation.  Compare Exercise
        4 of [TakeutiZaring] p. 22.  (Contributed by NM, 5-Aug-1993.) $)
     inex1 $p |- ( A i^i B ) e. _V $=
-      ( vx vy cin cv wceq wex wcel wa wb zfauscl dfcleq elin bibi2i albii bitri
-      wal exbii mpbir issetri ) DABFZDGZUCHZDIEGZUDJZUFAJUFBJZKZLZESZDIUHEDACMU
-      EUKDUEUGUFUCJZLZESUKEUDUCNUMUJEULUIUGUFABOPQRTUAUB $.
+      ( vx vy cin cv wceq wex wcel wa wal sepgi dfcleq bibi2i albii bitri exbii
+      wb elin mpbir issetri ) DABFZDGZUCHZDIEGZUDJZUFAJUFBJZKZSZELZDIUHEDACMUEU
+      KDUEUGUFUCJZSZELUKEUDUCNUMUJEULUIUGUFABTOPQRUAUB $.
   $}
 
   ${
@@ -37842,11 +37870,11 @@ $)
 
   ${
     $d x A $.
-    zfausab.1 $e |- A e. _V $.
     $( Separation Scheme (Aussonderung) in terms of a class abstraction.
-       (Contributed by NM, 8-Jun-1994.) $)
-    zfausab $p |- { x | ( x e. A /\ ph ) } e. _V $=
-      ( cv wcel wa cab ssab2 ssexi ) BECFAGBHCDABCIJ $.
+       (Contributed by NM, 8-Jun-1994.)  Put in closed form.  (Revised by BJ,
+       18-Jul-2026.) $)
+    sepab $p |- ( A e. V -> { x | ( x e. A /\ ph ) } e. _V ) $=
+      ( wcel cv wa cab id wss ssab2 a1i ssexd ) CDEZBFCEAGBHZCDNIOCJNABCKLM $.
   $}
 
   ${
@@ -211612,10 +211640,10 @@ $)
 
   ${
     $d x y z A $.  $d y z ph $.
-    bdzfauscl.bd $e |- Bdd ph $.
-    $( Closed form of the version of ~ zfauscl for bounded formulas using
-       bounded separation.  (Contributed by BJ, 13-Nov-2019.) $)
-    bdzfauscl $p |- ( A e. V -> E. y A. x ( x e. y <-> ( x e. A /\ ph ) ) ) $=
+    bdsepg.bd $e |- Bdd ph $.
+    $( Version of ~ sepg for bounded formulas using bounded separation.
+       (Contributed by BJ, 13-Nov-2019.) $)
+    bdsepg $p |- ( A e. V -> E. y A. x ( x e. y <-> ( x e. A /\ ph ) ) ) $=
       ( vz wel wa wb wal wex cv wcel wceq eleq2 anbi1d bibi2d albidv exbidv
       bdsep1 vtoclg ) BCHZBGHZAIZJZBKZCLUCBMZDNZAIZJZBKZCLGDEGMZDOZUGULCUNUFUKB
       UNUEUJUCUNUDUIAUMDUHPQRSTABGCFUAUB $.
@@ -211706,10 +211734,10 @@ $)
     $( Bounded version of ~ inex1 .  (Contributed by BJ, 13-Nov-2019.)
        (Proof modification is discouraged.) $)
     bdinex1 $p |- ( A i^i B ) e. _V $=
-      ( vx vy cin cv wceq wex wel wcel wa wal cvv bdeli bdzfauscl ax-mp dfcleq
-      wb elin bibi2i albii bitri exbii mpbir issetri ) EABGZEHZUHIZEJFEKZFHZALU
-      LBLZMZTZFNZEJZAOLUQDUMFEAOFBCPQRUJUPEUJUKULUHLZTZFNUPFUIUHSUSUOFURUNUKULA
-      BUAUBUCUDUEUFUG $.
+      ( vx vy cin cv wceq wex wel wcel wa wb wal cvv bdeli bdsepg ax-mp dfcleq
+      elin bibi2i albii bitri exbii mpbir issetri ) EABGZEHZUHIZEJFEKZFHZALULBL
+      ZMZNZFOZEJZAPLUQDUMFEAPFBCQRSUJUPEUJUKULUHLZNZFOUPFUIUHTUSUOFURUNUKULABUA
+      UBUCUDUEUFUG $.
   $}
 
   ${
@@ -211977,11 +212005,11 @@ $)
        New usage is discouraged since this statement is not intuitionnistic.
        (New usage is discouraged.) $)
     bj-d0clsepcl $p |- DECID ph $=
-      ( va vx wdc wex c0 cv wcel wb csn wel wal 0ex bj-snex zfauscl wceq anbi1d
-      wa eleq1 eximii bibi12d spcv snid biantrur bicomi bibi2i exbii ax-bj-d0cl
-      mpbi bj-bd0el dcbiit mpbii bj-ex ax-mp ) ADZBEUOFBGZHZAIZUOBUQFFJZHZARZIZ
-      BEURBECBKZCGZUSHZARZIZCLVBBACBUSFMNOVGVBCFMVDFPZVCUQVFVAVDFUPSVHVEUTAVDFU
-      SSQUAUBTVBURBVAAUQAVAUTAFMUCUDUEUFUGUIURUQDUOUQBUJUHUQAUKULTUOBUMUN $.
+      ( va vx wdc wex c0 cv wcel wb csn wa wel wal 0ex bj-snex sepgi wceq eleq1
+      anbi1d eximii bibi12d spcv snid biantrur bicomi exbii bj-bd0el ax-bj-d0cl
+      bibi2i mpbi dcbiit mpbii bj-ex ax-mp ) ADZBEUOFBGZHZAIZUOBUQFFJZHZAKZIZBE
+      URBECBLZCGZUSHZAKZIZCMVBBACBUSFNOPVGVBCFNVDFQZVCUQVFVAVDFUPRVHVEUTAVDFUSR
+      SUAUBTVBURBVAAUQAVAUTAFNUCUDUEUIUFUJURUQDUOUQBUGUHUQAUKULTUOBUMUN $.
   $}
 
 
