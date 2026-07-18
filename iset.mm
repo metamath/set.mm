@@ -37871,8 +37871,8 @@ $)
   ${
     $d x A $.
     $( Separation Scheme (Aussonderung) in terms of a class abstraction.
-       (Contributed by NM, 8-Jun-1994.)  Put in closed form.  (Revised by BJ,
-       18-Jul-2026.) $)
+       Prefer using the more natural statement ~ rabexg .  (Contributed by NM,
+       8-Jun-1994.)  Put in closed form.  (Revised by BJ, 18-Jul-2026.) $)
     sepab $p |- ( A e. V -> { x | ( x e. A /\ ph ) } e. _V ) $=
       ( wcel cv wa cab id wss ssab2 a1i ssexd ) CDEZBFCEAGBHZCDNIOCJNABCKLM $.
   $}

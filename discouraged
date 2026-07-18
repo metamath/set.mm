@@ -18928,6 +18928,8 @@ New usage of "ss-ax8" is discouraged (0 uses).
 New usage of "ssdmd1" is discouraged (1 uses).
 New usage of "ssdmd2" is discouraged (0 uses).
 New usage of "sseliALT" is discouraged (0 uses).
+New usage of "ssexOLD" is discouraged (0 uses).
+New usage of "ssexgOLD" is discouraged (0 uses).
 New usage of "ssfiALT" is discouraged (0 uses).
 New usage of "sshhococi" is discouraged (0 uses).
 New usage of "sshjcl" is discouraged (2 uses).
@@ -20821,6 +20823,8 @@ Proof modification of "srgcom4" is discouraged (279 steps).
 Proof modification of "srgcom4lem" is discouraged (213 steps).
 Proof modification of "ss-ax8" is discouraged (243 steps).
 Proof modification of "sseliALT" is discouraged (152 steps).
+Proof modification of "ssexOLD" is discouraged (29 steps).
+Proof modification of "ssexgOLD" is discouraged (39 steps).
 Proof modification of "ssfiALT" is discouraged (222 steps).
 Proof modification of "ssinss1OLD" is discouraged (20 steps).
 Proof modification of "sspwimp" is discouraged (87 steps).
