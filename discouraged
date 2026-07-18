@@ -10394,8 +10394,6 @@
 "nfnae" is used by "wl-mo2tf".
 "nfnae" is used by "wl-sbalnae".
 "nfra2" is used by "ralcom2".
-"nfrab" is used by "elfvmptrab1".
-"nfrab" is used by "elovmporab1".
 "nfral" is used by "cbvral2".
 "nfral" is used by "eliuniincex".
 "nfral" is used by "nfiing".
@@ -17169,6 +17167,7 @@ New usage of "indthincALT" is discouraged (0 uses).
 New usage of "infn0ALT" is discouraged (0 uses).
 New usage of "infpssALT" is discouraged (0 uses).
 New usage of "inidl" is discouraged (0 uses).
+New usage of "inssdif0OLD" is discouraged (0 uses).
 New usage of "int2" is discouraged (3 uses).
 New usage of "int3" is discouraged (1 uses).
 New usage of "intidl" is discouraged (2 uses).
@@ -17782,7 +17781,7 @@ New usage of "nfmod2" is discouraged (5 uses).
 New usage of "nfnae" is discouraged (50 uses).
 New usage of "nfopdALT" is discouraged (0 uses).
 New usage of "nfra2" is discouraged (1 uses).
-New usage of "nfrab" is discouraged (2 uses).
+New usage of "nfrab" is discouraged (0 uses).
 New usage of "nfral" is discouraged (5 uses).
 New usage of "nfrald" is discouraged (2 uses).
 New usage of "nfreu" is discouraged (0 uses).
@@ -20401,6 +20400,7 @@ Proof modification of "infn0ALT" is discouraged (38 steps).
 Proof modification of "infpssALT" is discouraged (52 steps).
 Proof modification of "infregelb" is discouraged (185 steps).
 Proof modification of "inidl" is discouraged (77 steps).
+Proof modification of "inssdif0OLD" is discouraged (100 steps).
 Proof modification of "int2" is discouraged (14 steps).
 Proof modification of "int3" is discouraged (17 steps).
 Proof modification of "intidl" is discouraged (503 steps).
