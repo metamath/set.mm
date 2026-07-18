@@ -31222,7 +31222,7 @@ $)
   dfnul2 $p |- (/) = { x | -. x = x } $=
     ( c0 wfal cab weq wn dfnul4 equid notnoti bifal abbii eqtr4i ) BCADAAEZFZAD
     AGNCANMAHIJKL $.
-  $( $j usage 'dfnul4' avoids 'df-clel' 'ax-10' 'ax-i12' 'ax-bndl' 'ax-16'
+  $( $j usage 'dfnul2' avoids 'df-clel' 'ax-10' 'ax-i12' 'ax-bndl' 'ax-16'
      'ax-13'; $)
 
   $( Alternate definition of the empty set.  (Contributed by NM, 25-Mar-2004.)
@@ -31230,7 +31230,7 @@ $)
   dfnul3 $p |- (/) = { x e. A | -. x e. A } $=
     ( wfal cab cv wcel wn wa crab fal pm3.24 2false abbii dfnul4 df-rab 3eqtr4i
     c0 ) CADAEBFZRGZHZADQSABICTACTJRKLMANSABOP $.
-  $( $j usage 'dfnul4' avoids 'df-clel' 'ax-10' 'ax-i12' 'ax-bndl' 'ax-16'
+  $( $j usage 'dfnul3' avoids 'df-clel' 'ax-10' 'ax-i12' 'ax-bndl' 'ax-16'
      'ax-13'; $)
 
   $( The empty set has no elements.  Theorem 6.14 of [Quine] p. 44.
