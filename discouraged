@@ -4544,7 +4544,7 @@
 "con5i" is used by "vk15.4j".
 "con5i" is used by "vk15.4jVD".
 "copsexg" is used by "opabid".
-"cplem1OLD" is used by "cplem2".
+"cplem1OLD" is used by "cplem2OLD".
 "crhmsubcALTV" is used by "cringcatALTV".
 "cringcALTV" is used by "cringcatALTV".
 "cringcALTV" is used by "fldcALTV".
@@ -12890,6 +12890,7 @@
 "scott0OLD" is used by "scott0bOLD".
 "scott0OLD" is used by "scott0bsOLD".
 "scott0OLD" is used by "scott0f".
+"scottexOLD" is used by "cplem2OLD".
 "scottexOLD" is used by "scottex2OLD".
 "scottexOLD" is used by "scottexsOLD".
 "selsALT" is used by "elALT".
@@ -15698,6 +15699,7 @@ New usage of "copsexg" is discouraged (1 uses).
 New usage of "copsexgwOLD" is discouraged (0 uses).
 New usage of "counop" is discouraged (0 uses).
 New usage of "cplem1OLD" is discouraged (1 uses).
+New usage of "cplem2OLD" is discouraged (0 uses).
 New usage of "crhmsubcALTV" is discouraged (1 uses).
 New usage of "cringcALTV" is discouraged (9 uses).
 New usage of "cringcatALTV" is discouraged (0 uses).
@@ -18796,7 +18798,7 @@ New usage of "scott0OLD" is discouraged (5 uses).
 New usage of "scott0bOLD" is discouraged (0 uses).
 New usage of "scott0bsOLD" is discouraged (0 uses).
 New usage of "scottex2OLD" is discouraged (0 uses).
-New usage of "scottexOLD" is discouraged (2 uses).
+New usage of "scottexOLD" is discouraged (3 uses).
 New usage of "scottexsOLD" is discouraged (0 uses).
 New usage of "selsALT" is discouraged (1 uses).
 New usage of "sepexlem" is discouraged (1 uses).
@@ -19849,6 +19851,7 @@ Proof modification of "conventions-labels" is discouraged (1 steps).
 Proof modification of "copsex2gd" is discouraged (81 steps).
 Proof modification of "copsexgwOLD" is discouraged (338 steps).
 Proof modification of "cplem1OLD" is discouraged (130 steps).
+Proof modification of "cplem2OLD" is discouraged (94 steps).
 Proof modification of "csbcnvOLD" is discouraged (70 steps).
 Proof modification of "csbcnvgALTOLD" is discouraged (112 steps).
 Proof modification of "csbeq2gVD" is discouraged (61 steps).
