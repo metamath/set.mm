@@ -31206,25 +31206,32 @@ $)
   df-nul $a |- (/) = ( _V \ _V ) $.
 
   $( Alternate definition of the empty class/set.  (Contributed by BJ,
-     30-Nov-2019.)  (Revised by GG, 3-Sep-2024.)  (Revised by BJ,
-     23-Sep-2024.) $)
+     30-Nov-2019.)  Avoid ~ ax-13 , ~ df-clel .  (Revised by GG, 3-Sep-2024.)
+     Prove directly from definition to allow shortening ~ dfnul2 .  (Revised by
+     BJ, 23-Sep-2024.) $)
   dfnul4 $p |- (/) = { x | F. } $=
     ( c0 cvv cdif cv wcel wn cab wfal df-nul df-dif pm3.24 bifal abbii 3eqtri
     wa ) BCCDAECFZQGPZAHIAHJACCKRIARQLMNO $.
-  $( $j usage 'dfnul4' avoids 'df-clel' 'ax-13'; $)
+  $( $j usage 'dfnul4' avoids 'df-clel' 'ax-10' 'ax-i12' 'ax-bndl' 'ax-16'
+     'ax-13'; $)
 
   $( Alternate definition of the empty set.  Definition 5.14 of [TakeutiZaring]
-     p. 20.  (Contributed by NM, 26-Dec-1996.) $)
+     p. 20.  (Contributed by NM, 26-Dec-1996.)  Reduce axiom dependencies.
+     (Revised by Steven Nguyen, 3-May-2023.)  (Proof shortened by BJ,
+     23-Sep-2024.) $)
   dfnul2 $p |- (/) = { x | -. x = x } $=
-    ( cv wceq wn c0 wcel cdif wa df-nul eleq2i eldif pm3.24 eqid notnoti 2false
-    cvv 3bitri abbi2i ) ABZSCZDZAESEFSPPGZFSPFZUCDHZUAEUBSIJSPPKUDUAUCLTSMNOQR
-    $.
+    ( c0 wfal cab weq wn dfnul4 equid notnoti bifal abbii eqtr4i ) BCADAAEZFZAD
+    AGNCANMAHIJKL $.
+  $( $j usage 'dfnul2' avoids 'df-clel' 'ax-10' 'ax-i12' 'ax-bndl' 'ax-16'
+     'ax-13'; $)
 
-  $( Alternate definition of the empty set.  (Contributed by NM,
-     25-Mar-2004.) $)
+  $( Alternate definition of the empty set.  (Contributed by NM, 25-Mar-2004.)
+     (Proof shortened by BJ, 23-Sep-2024.) $)
   dfnul3 $p |- (/) = { x e. A | -. x e. A } $=
-    ( weq wn cv wcel wa c0 crab equid notnoti pm3.24 2false abbii dfnul2 df-rab
-    cab 3eqtr4i ) AACZDZAQAEBFZUADZGZAQHUBABITUCATUCSAJKUALMNAOUBABPR $.
+    ( wfal cab cv wcel wn wa crab fal pm3.24 2false abbii dfnul4 df-rab 3eqtr4i
+    c0 ) CADAEBFZRGZHZADQSABICTACTJRKLMANSABOP $.
+  $( $j usage 'dfnul3' avoids 'df-clel' 'ax-10' 'ax-i12' 'ax-bndl' 'ax-16'
+     'ax-13'; $)
 
   $( The empty set has no elements.  Theorem 6.14 of [Quine] p. 44.
      (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Mario Carneiro,
