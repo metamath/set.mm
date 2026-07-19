@@ -4544,6 +4544,7 @@
 "con5i" is used by "vk15.4j".
 "con5i" is used by "vk15.4jVD".
 "copsexg" is used by "opabid".
+"cplem1OLD" is used by "cplem2".
 "crhmsubcALTV" is used by "cringcatALTV".
 "cringcALTV" is used by "cringcatALTV".
 "cringcALTV" is used by "fldcALTV".
@@ -12884,7 +12885,7 @@
 "scandx" is used by "slotsdnscsi".
 "scandx" is used by "slotstnscsi".
 "scandx" is used by "vscandxnscandx".
-"scott0OLD" is used by "cplem1".
+"scott0OLD" is used by "cplem1OLD".
 "scott0OLD" is used by "karden".
 "scott0OLD" is used by "scott0bOLD".
 "scott0OLD" is used by "scott0bsOLD".
@@ -15696,6 +15697,7 @@ New usage of "conventions-labels" is discouraged (0 uses).
 New usage of "copsexg" is discouraged (1 uses).
 New usage of "copsexgwOLD" is discouraged (0 uses).
 New usage of "counop" is discouraged (0 uses).
+New usage of "cplem1OLD" is discouraged (1 uses).
 New usage of "crhmsubcALTV" is discouraged (1 uses).
 New usage of "cringcALTV" is discouraged (9 uses).
 New usage of "cringcatALTV" is discouraged (0 uses).
@@ -19846,6 +19848,7 @@ Proof modification of "conventions-comments" is discouraged (1 steps).
 Proof modification of "conventions-labels" is discouraged (1 steps).
 Proof modification of "copsex2gd" is discouraged (81 steps).
 Proof modification of "copsexgwOLD" is discouraged (338 steps).
+Proof modification of "cplem1OLD" is discouraged (130 steps).
 Proof modification of "csbcnvOLD" is discouraged (70 steps).
 Proof modification of "csbcnvgALTOLD" is discouraged (112 steps).
 Proof modification of "csbeq2gVD" is discouraged (61 steps).
