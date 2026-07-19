@@ -15254,7 +15254,6 @@ New usage of "cbvopab1g" is discouraged (1 uses).
 New usage of "cbvrab" is discouraged (0 uses).
 New usage of "cbvrabcsf" is discouraged (1 uses).
 New usage of "cbvrabv2" is discouraged (0 uses).
-New usage of "cbvrabwOLD" is discouraged (0 uses).
 New usage of "cbvral" is discouraged (4 uses).
 New usage of "cbvral2v" is discouraged (1 uses).
 New usage of "cbvral3v" is discouraged (0 uses).
@@ -18492,7 +18491,6 @@ New usage of "rabeqbidvaOLD" is discouraged (0 uses).
 New usage of "rabexgOLD" is discouraged (0 uses).
 New usage of "rabss2OLD" is discouraged (0 uses).
 New usage of "ralcom2" is discouraged (0 uses).
-New usage of "raleleqOLD" is discouraged (0 uses).
 New usage of "ralimaOLD" is discouraged (0 uses).
 New usage of "ralimd4vOLD" is discouraged (1 uses).
 New usage of "ralimd6vOLD" is discouraged (0 uses).
@@ -19757,7 +19755,6 @@ Proof modification of "cases2ALT" is discouraged (88 steps).
 Proof modification of "cayleyhamiltonALT" is discouraged (657 steps).
 Proof modification of "cbveuALT" is discouraged (48 steps).
 Proof modification of "cbvexsv" is discouraged (29 steps).
-Proof modification of "cbvrabwOLD" is discouraged (139 steps).
 Proof modification of "cbvralsvwOLD" is discouraged (20 steps).
 Proof modification of "ccat2s1fvwALT" is discouraged (116 steps).
 Proof modification of "ceqsalALT" is discouraged (23 steps).
@@ -20668,7 +20665,6 @@ Proof modification of "rab0OLD" is discouraged (33 steps).
 Proof modification of "rabeqbidvaOLD" is discouraged (28 steps).
 Proof modification of "rabexgOLD" is discouraged (21 steps).
 Proof modification of "rabss2OLD" is discouraged (66 steps).
-Proof modification of "raleleqOLD" is discouraged (26 steps).
 Proof modification of "ralimaOLD" is discouraged (68 steps).
 Proof modification of "ralimd4vOLD" is discouraged (29 steps).
 Proof modification of "ralimd6vOLD" is discouraged (33 steps).
