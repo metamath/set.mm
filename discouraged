@@ -12886,7 +12886,7 @@
 "scandx" is used by "vscandxnscandx".
 "scott0OLD" is used by "cplem1".
 "scott0OLD" is used by "karden".
-"scott0OLD" is used by "scott0b".
+"scott0OLD" is used by "scott0bOLD".
 "scott0OLD" is used by "scott0f".
 "scott0OLD" is used by "scott0s".
 "scott0OLD" is used by "scotteld".
@@ -18792,6 +18792,7 @@ New usage of "sbtrt" is discouraged (1 uses).
 New usage of "scandx" is discouraged (12 uses).
 New usage of "scmateALT" is discouraged (0 uses).
 New usage of "scott0OLD" is discouraged (6 uses).
+New usage of "scott0bOLD" is discouraged (0 uses).
 New usage of "scottex2OLD" is discouraged (0 uses).
 New usage of "scottexOLD" is discouraged (2 uses).
 New usage of "scottexsOLD" is discouraged (0 uses).
@@ -20853,6 +20854,7 @@ Proof modification of "sbtALT" is discouraged (12 steps).
 Proof modification of "sbtT" is discouraged (7 steps).
 Proof modification of "scmateALT" is discouraged (236 steps).
 Proof modification of "scott0OLD" is discouraged (323 steps).
+Proof modification of "scott0bOLD" is discouraged (37 steps).
 Proof modification of "scottex2OLD" is discouraged (27 steps).
 Proof modification of "scottexOLD" is discouraged (190 steps).
 Proof modification of "scottexsOLD" is discouraged (140 steps).
