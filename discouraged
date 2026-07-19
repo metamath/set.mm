@@ -12887,7 +12887,7 @@
 "scottexOLD" is used by "kardex".
 "scottexOLD" is used by "scottex2OLD".
 "scottexOLD" is used by "scottexf".
-"scottexOLD" is used by "scottexs".
+"scottexOLD" is used by "scottexsOLD".
 "selsALT" is used by "elALT".
 "sepexlem" is used by "sepex".
 "setrec1lem1" is used by "setrec1lem2".
@@ -18789,6 +18789,7 @@ New usage of "scandx" is discouraged (12 uses).
 New usage of "scmateALT" is discouraged (0 uses).
 New usage of "scottex2OLD" is discouraged (0 uses).
 New usage of "scottexOLD" is discouraged (5 uses).
+New usage of "scottexsOLD" is discouraged (0 uses).
 New usage of "selsALT" is discouraged (1 uses).
 New usage of "sepexlem" is discouraged (1 uses).
 New usage of "seq1hcau" is discouraged (0 uses).
@@ -20848,6 +20849,7 @@ Proof modification of "sbtT" is discouraged (7 steps).
 Proof modification of "scmateALT" is discouraged (236 steps).
 Proof modification of "scottex2OLD" is discouraged (27 steps).
 Proof modification of "scottexOLD" is discouraged (190 steps).
+Proof modification of "scottexsOLD" is discouraged (140 steps).
 Proof modification of "selsALT" is discouraged (34 steps).
 Proof modification of "sgrpplusgaopALT" is discouraged (82 steps).
 Proof modification of "sii" is discouraged (145 steps).
