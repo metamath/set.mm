@@ -12884,7 +12884,6 @@
 "scandx" is used by "slotstnscsi".
 "scandx" is used by "vscandxnscandx".
 "scottexOLD" is used by "scottex2OLD".
-"scottexOLD" is used by "scottexf".
 "scottexOLD" is used by "scottexsOLD".
 "selsALT" is used by "elALT".
 "sepexlem" is used by "sepex".
@@ -18786,7 +18785,7 @@ New usage of "sbtrt" is discouraged (1 uses).
 New usage of "scandx" is discouraged (12 uses).
 New usage of "scmateALT" is discouraged (0 uses).
 New usage of "scottex2OLD" is discouraged (0 uses).
-New usage of "scottexOLD" is discouraged (3 uses).
+New usage of "scottexOLD" is discouraged (2 uses).
 New usage of "scottexsOLD" is discouraged (0 uses).
 New usage of "selsALT" is discouraged (1 uses).
 New usage of "sepexlem" is discouraged (1 uses).
