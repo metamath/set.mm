@@ -9152,6 +9152,7 @@
 "joincomALT" is used by "joincom".
 "jplem1" is used by "jplem2".
 "jplem2" is used by "jpi".
+"kardenOLD" is used by "kardeng".
 "kbass2" is used by "kbass6".
 "kbass5" is used by "kbass6".
 "kbfval" is used by "kbmul".
@@ -12886,7 +12887,7 @@
 "scandx" is used by "slotstnscsi".
 "scandx" is used by "vscandxnscandx".
 "scott0OLD" is used by "cplem1OLD".
-"scott0OLD" is used by "karden".
+"scott0OLD" is used by "kardenOLD".
 "scott0OLD" is used by "scott0bOLD".
 "scott0OLD" is used by "scott0bsOLD".
 "scottexOLD" is used by "cplem2OLD".
@@ -17349,6 +17350,7 @@ New usage of "joincomALT" is discouraged (1 uses).
 New usage of "jpi" is discouraged (0 uses).
 New usage of "jplem1" is discouraged (1 uses).
 New usage of "jplem2" is discouraged (1 uses).
+New usage of "kardenOLD" is discouraged (1 uses).
 New usage of "kardexOLD" is discouraged (0 uses).
 New usage of "kbass1" is discouraged (0 uses).
 New usage of "kbass2" is discouraged (1 uses).
@@ -20511,6 +20513,7 @@ Proof modification of "jaoded" is discouraged (26 steps).
 Proof modification of "jath" is discouraged (318 steps).
 Proof modification of "jccil" is discouraged (10 steps).
 Proof modification of "joincomALT" is discouraged (83 steps).
+Proof modification of "kardenOLD" is discouraged (354 steps).
 Proof modification of "kardexOLD" is discouraged (88 steps).
 Proof modification of "keridl" is discouraged (862 steps).
 Proof modification of "latmassOLD" is discouraged (309 steps).
