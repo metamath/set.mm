@@ -209701,10 +209701,11 @@ htmldef "Ind" as "Ind ";
 /* End of BJ's mathbox */
 
 /* Mathbox of David A. Wheeler */
-htmldef "A!" as
-  "<IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 ALT=' A.' TITLE='A.'>!";
-  althtmldef "A!" as '&forall;!'; /* &#8704; */
-  latexdef "A!" as "\forall !";
+htmldef "AE" as
+  "<IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 ALT=' A.' TITLE='A.'>" +
+  "<IMG SRC='exists.gif' WIDTH=9 HEIGHT=19 ALT='E.' TITLE='E.'>";
+  althtmldef "AE" as '&forall;&exist;'; /* &#8704;&#8707; */
+  latexdef "AE" as "\forall\exists";
 /* End of David A. Wheeler's mathbox */
 
 /* End of typesetting definition section */
@@ -215465,8 +215466,8 @@ $(
   Allsome quantifier
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-  These are definitions and proofs involving an experimental
-  "allsome" quantifier (aka "all some").
+  These are definitions and proofs involving the "allsome"
+  quantifier (aka "all some").
 
   In informal language, statements like
   "All Martians are green" imply that there is at least one Martian.
@@ -215486,7 +215487,7 @@ $(
   The term "allsome" was chosen because it's short, easy to say, and
   clearly hints at the two concepts it combines.
 
-  I do not expect this to be used much in metamath, because in metamath
+  I do not expect this to be used much in Metamath, because in Metamath
   there's a general policy of avoiding the use of new definitions
   unless there are very strong reasons to do so.  Instead, my goal is to
   rigorously define this quantifier and demonstrate a few
@@ -215494,92 +215495,452 @@ $(
 
   The syntax allows two forms that look like they would be problematic,
   but they are fine.  When applied to a top-level implication we allow
-  ` A! x ( ph -> ps ) ` , and when restricted (applied to a class) we allow
-  ` A! x e. A ph ` .
+  ` AE x ( ph -> ps ) ` , and when restricted (applied to a class) we allow
+  ` AE x e. A ( ph -> ps ) ` .
   The first symbol after the setvar variable must
   always be ` e. ` if it is the form applied to a class, and since
   ` e. ` cannot begin a wff, it is unambiguous.
   The ` -> ` looks like it would be a problem because ` ph ` or ` ps `
   might include implications, but any implication arrow
   ` -> ` within any wff must be surrounded by parentheses, so only the
-  implication arrow of ` A! ` can follow the wff.
+  implication arrow of ` AE ` can follow the wff.
   The implication syntax would work fine without the parentheses, but
   I added the parentheses because it makes things clearer inside
   larger complex expressions, and it's also more consistent with
   the rest of the syntax.
 
+  Naming: "als" is allsome.  The form restricted to a class is prefixed with
+  "r", following the way set.mm names the restricted quantifiers it is built
+  from: ` A. ` gives ~ df-ral and ` E. ` gives ~ df-rex , so ~ df-als (the
+  general form) gives ~ df-rals (the restricted form).
+
+  Earlier versions of this material differed, so old references may not match.
+  They wrote the quantifier as an "inverted A" followed by an exclamation
+  point, and they named the general form df-alsi and the restricted form
+  df-alsc.  The symbol is now an "inverted A" followed by a "backwards E",
+  which more readers can correctly guess without being taught it.  The
+  restricted definition also changed, and the older one was a mistake; see
+  ~ df-rals for what was wrong with it.
+
+  This database is intuitionistic, so some of this material differs from its
+  counterpart in set.mm.  In particular, a class ` A ` being inhabited
+  ( ` E. x x e. A ` ) is a stronger claim here than its being nonempty
+  ( ` A =/= (/) ` ); see ~ n0r .  The allsome quantifier asserts that a witness
+  exists, which is the stronger notion, so where set.mm states a result using
+  ` A =/= (/) ` the corresponding result here uses inhabitedness instead.  Such
+  results are named with a trailing "m", following the convention of ~ r19.2m
+  and ~ abn0m .  Results of set.mm that rely on recovering a witness from
+  ` A =/= (/) ` are omitted, since that step is not available here.
+
   For more, see "The Allsome Quantifier" by David A. Wheeler at
   ~ https://dwheeler.com/essays/allsome.html
   I hope that others will eventually agree that allsome is awesome.
+
 $)
 
-  $c A! $. $( "inverted A" exclamation point (read: "all some"
+  $c AE $. $( "inverted A" followed by "backwards E" (read: "all some"
     or more briefly "allsome") $)
 
   $( Extend wff definition to include "all some" applied to a top-level
      implication, which means ` ps ` is true whenever ` ph ` is true, and there
-     is at least least one ` x ` where ` ph ` is true.  (Contributed by David
-     A. Wheeler, 20-Oct-2018.) $)
-  walsi $a wff A! x ( ph -> ps ) $.
+     is at least one ` x ` where ` ph ` is true.  (Contributed by David A.
+     Wheeler, 20-Oct-2018.)  (Revised by David A. Wheeler, 12-Jul-2026.) $)
+  wals $a wff AE x ( ph -> ps ) $.
 
   $( Extend wff definition to include "all some" applied to a class, which
-     means ` ph ` is true for all ` x ` in ` A ` , and there is at least one
-     ` x ` in ` A ` .  (Contributed by David A. Wheeler, 20-Oct-2018.) $)
-  walsc $a wff A! x e. A ph $.
+     means ` ps ` is true whenever ` ph ` is true for ` x ` in ` A ` , and
+     there is at least one ` x ` in ` A ` where ` ph ` is true.  (Contributed
+     by David A. Wheeler, 20-Oct-2018.)  (Revised by David A. Wheeler,
+     12-Jul-2026.) $)
+  wrals $a wff AE x e. A ( ph -> ps ) $.
+
+  $( Soundness of the two definitions that follow.  Definitions are required to
+     be eliminable and conservative (see the section comment for ~ df-bi ).
+     Both ~ df-als and ~ df-rals meet these requirements directly, and so
+     neither needs a justification theorem.
+
+     Each is stated as a biconditional whose left side is a new syntax
+     construct ( ~ wals or ~ wrals ) applied to distinct metavariables, and
+     whose right side uses only constructs introduced earlier ( ` A. ` , ` E. `
+     , ` /\ ` , ` -> ` , and the restricted quantifiers ~ df-ral and ~ df-rex
+     ).  Any occurrence of the new construct can therefore be replaced by the
+     right side, which is eliminability; conservativity follows, since a proof
+     of a statement not mentioning ` AE ` can have every use of the definition
+     replaced in this way.
+
+     Note in particular that every variable occurring on the right side already
+     occurs on the left side, so no dummy variable is introduced.  A
+     justification theorem is needed only when that fails, that is, when a
+     definition introduces a dummy variable and the choice of that variable
+     must be shown not to matter (as in ~ eujust for ~ df-eu ), or when the
+     definition cannot use ` <-> ` because it is defining ` <-> ` itself (as in
+     ~ biijust for ~ df-bi ).  Neither case arises here.  The restricted
+     quantifier definitions ~ df-ral and ~ df-rex have the same shape as these
+     and likewise need no justification. $)
 
   $( Define "all some" applied to a top-level implication, which means ` ps `
      is true whenever ` ph ` is true and there is at least one ` x ` where
      ` ph ` is true.  (Contributed by David A. Wheeler, 20-Oct-2018.) $)
-  df-alsi $a |- ( A! x ( ph -> ps ) <-> ( A. x ( ph -> ps ) /\ E. x ph ) ) $.
+  df-als $a |- ( AE x ( ph -> ps ) <-> ( A. x ( ph -> ps ) /\ E. x ph ) ) $.
 
-  $( Define "all some" applied to a class, which means ` ph ` is true for all
-     ` x ` in ` A ` and there is at least one ` x ` in ` A ` .  (Contributed by
-     David A. Wheeler, 20-Oct-2018.) $)
-  df-alsc $a |- ( A! x e. A ph <-> ( A. x e. A ph /\ E. x x e. A ) ) $.
+  $( Define "all some" applied to a class, which means ` ps ` is true whenever
+     ` ph ` is true for ` x ` in ` A ` , and there is at least one ` x ` in
+     ` A ` where ` ph ` is true.
 
-  $( There is an equivalence between the two "all some" forms.  (Contributed by
-     David A. Wheeler, 22-Oct-2018.) $)
-  alsconv $p |- ( A! x ( x e. A -> ph ) <-> A! x e. A ph ) $=
-    ( wral cv wcel wex wa wi walsc walsi df-ral anbi1i df-alsc df-alsi 3bitr4ri
-    wal ) ABCDZBECFZBGZHSAIBQZTHABCJSABKRUATABCLMABCNSABOP $.
+     An older definition of the "all some" quantifier when scoped to a class,
+     named df-alsc and now removed, instead applied a bare formula to the
+     members of a class, asserting only that the formula held throughout ` A `
+     and that ` A ` had at least one member.  I've now decided that that was a
+     mistake.  Its older existence conjunct did not require any member of ` A `
+     to satisfy the antecedent, so if the formula was itself an implication,
+     that inner implication could still be vacuously true, which is precisely
+     what the allsome quantifier exists to prevent.  For example, the older
+     definition meant that "among Martians, all tall ones are green" could be
+     considered true if there are Martians, but no tall Martians.  This version
+     of the definition instead ensures that claims of the form "among Martians,
+     all tall ones are green" can only be true if all tall Martians are green
+     _and_ that there is at least one tall Martian.  (Contributed by David A.
+     Wheeler, 20-Oct-2018.)  (Revised by David A. Wheeler, 12-Jul-2026.) $)
+  df-rals $a |- ( AE x e. A ( ph -> ps ) <->
+      ( A. x e. A ( ph -> ps ) /\ E. x e. A ph ) ) $.
+
+  $( The bounded "all some" form is the general form with the class membership
+     folded into the antecedent.  (Contributed by David A. Wheeler,
+     22-Oct-2018.)  (Revised by David A. Wheeler, 12-Jul-2026.) $)
+  dfrals2 $p |- ( AE x e. A ( ph -> ps ) <->
+      AE x ( ( x e. A /\ ph ) -> ps ) ) $=
+    ( wi wral wrex wa wcel wal wex wrals wals df-ral impexp albii bitr4i df-rex
+    cv anbi12i df-rals df-als 3bitr4i ) ABEZCDFZACDGZHCSDIZAHZBEZCJZUHCKZHABCDL
+    UHBCMUEUJUFUKUEUGUDEZCJUJUDCDNUIULCUGABOPQACDRTABCDUAUHBCUBUC $.
 
   ${
-    alsi1d.1 $e |- ( ph -> A! x ( ps -> ch ) ) $.
+    alsd.1 $e |- ( ph -> A. x ( ps -> ch ) ) $.
+    alsd.2 $e |- ( ph -> E. x ps ) $.
+    $( Introduction rule:  "all some" holds if the "for all" part holds and the
+       antecedent has a witness.  This is the converse of ~ als1d and ~ als2d
+       taken together, and is what lets an "all some" statement be proved
+       rather than merely taken apart.  (Contributed by David A. Wheeler,
+       12-Jul-2026.) $)
+    alsd $p |- ( ph -> AE x ( ps -> ch ) ) $=
+      ( wi wal wex wals df-als sylanbrc ) ABCGDHBDIBCDJEFBCDKL $.
+  $}
+
+  ${
+    ralsd.1 $e |- ( ph -> A. x e. A ( ps -> ch ) ) $.
+    ralsd.2 $e |- ( ph -> E. x e. A ps ) $.
+    $( Introduction rule for "all some" restricted to a class.  This is the
+       converse of ~ rals1d and ~ rals2d taken together.  (Contributed by David
+       A. Wheeler, 12-Jul-2026.) $)
+    ralsd $p |- ( ph -> AE x e. A ( ps -> ch ) ) $=
+      ( wi wral wrex wrals df-rals sylanbrc ) ABCHDEIBDEJBCDEKFGBCDELM $.
+  $}
+
+  ${
+    als1d.1 $e |- ( ph -> AE x ( ps -> ch ) ) $.
     $( Deduction rule:  Given "all some" applied to a top-level inference, you
        can extract the "for all" part.  (Contributed by David A. Wheeler,
        20-Oct-2018.) $)
-    alsi1d $p |- ( ph -> A. x ( ps -> ch ) ) $=
-      ( wi wal wex walsi wa df-alsi sylib simpld ) ABCFDGZBDHZABCDINOJEBCDKLM
-      $.
+    als1d $p |- ( ph -> A. x ( ps -> ch ) ) $=
+      ( wi wal wex wals wa df-als sylib simpld ) ABCFDGZBDHZABCDINOJEBCDKLM $.
   $}
 
   ${
-    alsi2d.1 $e |- ( ph -> A! x ( ps -> ch ) ) $.
+    als2d.1 $e |- ( ph -> AE x ( ps -> ch ) ) $.
     $( Deduction rule:  Given "all some" applied to a top-level inference, you
        can extract the "exists" part.  (Contributed by David A. Wheeler,
        20-Oct-2018.) $)
-    alsi2d $p |- ( ph -> E. x ps ) $=
-      ( wi wal wex walsi wa df-alsi sylib simprd ) ABCFDGZBDHZABCDINOJEBCDKLM
+    als2d $p |- ( ph -> E. x ps ) $=
+      ( wi wal wex wals wa df-als sylib simprd ) ABCFDGZBDHZABCDINOJEBCDKLM $.
+  $}
+
+  ${
+    rals1d.1 $e |- ( ph -> AE x e. A ( ps -> ch ) ) $.
+    $( Deduction rule:  Given "all some" applied to a class, you can extract
+       the "for all" part.  (Contributed by David A. Wheeler, 20-Oct-2018.)
+       (Revised by David A. Wheeler, 12-Jul-2026.) $)
+    rals1d $p |- ( ph -> A. x e. A ( ps -> ch ) ) $=
+      ( wi wral wrex wrals wa df-rals sylib simpld ) ABCGDEHZBDEIZABCDEJOPKFBCD
+      ELMN $.
+  $}
+
+  ${
+    rals2d.1 $e |- ( ph -> AE x e. A ( ps -> ch ) ) $.
+    $( Deduction rule:  Given "all some" applied to a class, you can extract
+       the "there exists" part.  Note that the witness must satisfy the
+       antecedent ` ps ` , not merely be a member of ` A ` .  (Contributed by
+       David A. Wheeler, 20-Oct-2018.)  (Revised by David A. Wheeler,
+       12-Jul-2026.) $)
+    rals2d $p |- ( ph -> E. x e. A ps ) $=
+      ( wi wral wrex wrals wa df-rals sylib simprd ) ABCGDEHZBDEIZABCDEJOPKFBCD
+      ELMN $.
+  $}
+
+  ${
+    $d A x $.
+    ralsn0d.1 $e |- ( ph -> AE x e. A ( ps -> ch ) ) $.
+    $( Deduction rule:  Given "all some" applied to a class, the class is not
+       the empty set.  (Contributed by David A. Wheeler, 23-Oct-2018.)
+       (Revised by David A. Wheeler, 12-Jul-2026.) $)
+    ralsn0d $p |- ( ph -> A =/= (/) ) $=
+      ( wrex c0 wne rals2d rexn0 syl ) ABDEGEHIABCDEFJBDEKL $.
+  $}
+
+  ${
+    $d x A $.
+    ralsmd.1 $e |- ( ph -> AE x e. A ( ps -> ch ) ) $.
+    $( Deduction rule:  Given "all some" applied to a class, the class is
+       inhabited.  This is stronger than ~ ralsn0d , which only concludes that
+       the class is nonempty; see ~ n0r .  (Contributed by David A. Wheeler,
+       20-Jul-2026.) $)
+    ralsmd $p |- ( ph -> E. x x e. A ) $=
+      ( wrex cv wcel wex rals2d rexm syl ) ABDEGDHEIDJABCDEFKBDELM $.
+  $}
+
+  $( The consequent of an "all some" is witnessed: if ` ps ` holds of every
+     ` x ` satisfying ` ph ` , and some ` x ` satisfies ` ph ` , then some
+     ` x ` satisfies ` ps ` .  This is the positive counterpart of
+     ~ als-no-surprise , and it is the property that ordinary "for all" with
+     implication lacks: from ` A. x ( ph -> ps ) ` alone nothing whatever
+     follows about ` ps ` , since nothing need satisfy ` ph ` .  It is the
+     allsome quantifier says what a speaker of "all Martians are green" usually
+     means.  (Contributed by David A. Wheeler, 12-Jul-2026.) $)
+  alsex $p |- ( AE x ( ph -> ps ) -> E. x ps ) $=
+    ( wals wi wal wex wa df-als exim imp sylbi ) ABCDABECFZACGZHBCGZABCIMNOABCJ
+    KL $.
+
+  $( The consequent of an "all some" restricted to a class is witnessed: some
+     member of ` A ` satisfying ` ph ` also satisfies ` ps ` .  Restricted
+     counterpart of ~ alsex .  (Contributed by David A. Wheeler,
+     12-Jul-2026.) $)
+  ralsex $p |- ( AE x e. A ( ph -> ps ) -> E. x e. A ps ) $=
+    ( wrals wi wral wrex wa df-rals rexim imp sylbi ) ABCDEABFCDGZACDHZIBCDHZAB
+    CDJNOPABCDKLM $.
+
+  ${
+    alsbii.1 $e |- ( ph <-> ch ) $.
+    alsbii.2 $e |- ( ps <-> th ) $.
+    $( Congruence: equivalents may be substituted inside an "all some".
+       (Contributed by David A. Wheeler, 12-Jul-2026.) $)
+    alsbii $p |- ( AE x ( ph -> ps ) <-> AE x ( ch -> th ) ) $=
+      ( wi wal wex wa wals imbi12i albii exbii anbi12i df-als 3bitr4i ) ABHZEIZ
+      AEJZKCDHZEIZCEJZKABELCDELTUCUAUDSUBEACBDFGMNACEFOPABEQCDEQR $.
+  $}
+
+  ${
+    ralsbii.1 $e |- ( ph <-> ch ) $.
+    ralsbii.2 $e |- ( ps <-> th ) $.
+    $( Congruence for "all some" restricted to a class.  (Contributed by David
+       A. Wheeler, 12-Jul-2026.) $)
+    ralsbii $p |- ( AE x e. A ( ph -> ps ) <-> AE x e. A ( ch -> th ) ) $=
+      ( wi wral wrex wa wrals imbi12i ralbii rexbii anbi12i df-rals 3bitr4i ) A
+      BIZEFJZAEFKZLCDIZEFJZCEFKZLABEFMCDEFMUAUDUBUETUCEFACBDGHNOACEFGPQABEFRCDE
+      FRS $.
+  $}
+
+  ${
+    alsbid.1 $e |- F/ x ph $.
+    alsbid.2 $e |- ( ph -> ( ps <-> th ) ) $.
+    alsbid.3 $e |- ( ph -> ( ch <-> ta ) ) $.
+    $( Deduction form of ~ alsbii .  (Contributed by David A. Wheeler,
+       12-Jul-2026.) $)
+    alsbid $p |- ( ph -> ( AE x ( ps -> ch ) <-> AE x ( th -> ta ) ) ) $=
+      ( wi wal wex wa wals imbi12d albid exbid anbi12d df-als 3bitr4g ) ABCJZFK
+      ZBFLZMDEJZFKZDFLZMBCFNDEFNAUBUEUCUFAUAUDFGABDCEHIOPABDFGHQRBCFSDEFST $.
+  $}
+
+  ${
+    nfals.1 $e |- F/ x ph $.
+    nfals.2 $e |- F/ x ps $.
+    $( Bound-variable hypothesis builder for "all some".  (Contributed by David
+       A. Wheeler, 12-Jul-2026.) $)
+    nfals $p |- F/ x AE y ( ph -> ps ) $=
+      ( wals wi wal wex wa df-als nfim nfal nfex nfan nfxfr ) ABDGABHZDIZADJZKC
+      ABDLSTCRCDABCEFMNACDEOPQ $.
+  $}
+
+  ${
+    $d x y $.
+    nfrals.1 $e |- F/_ x A $.
+    nfrals.2 $e |- F/ x ph $.
+    nfrals.3 $e |- F/ x ps $.
+    $( Bound-variable hypothesis builder for "all some" restricted to a class.
+       (Contributed by David A. Wheeler, 12-Jul-2026.) $)
+    nfrals $p |- F/ x AE y e. A ( ph -> ps ) $=
+      ( wrals wi wral wrex wa df-rals nfim nfralw nfrexw nfan nfxfr ) ABDEIABJZ
+      DEKZADELZMCABDENUAUBCTCDEFABCGHOPACDEFGQRS $.
+  $}
+
+  ${
+    $d x y $.  $d x ch $.  $d x th $.  $d y ph $.  $d y ps $.
+    cbvals.1 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    cbvals.2 $e |- ( x = y -> ( ps <-> th ) ) $.
+    $( Rule used to change bound variables, using implicit substitution.
+       (Contributed by David A. Wheeler, 12-Jul-2026.) $)
+    cbvals $p |- ( AE x ( ph -> ps ) <-> AE y ( ch -> th ) ) $=
+      ( wi wal wex wa wals weq imbi12d cbvalvw cbvexvw anbi12i df-als 3bitr4i )
+      ABIZEJZAEKZLCDIZFJZCFKZLABEMCDFMUBUEUCUFUAUDEFEFNACBDGHOPACEFGQRABESCDFST
+      $.
+  $}
+
+  $( Demonstrate that there is never a "surprise" when using the allsome
+     quantifier, that is, it is never possible for the consequent to be both
+     always true and always false.  This uses the definition of ~ df-als : the
+     universal parts give ` A. x -. ph ` , which contradicts the witness that
+     the allsome quantifier supplies.  Ordinary "for all" with implication has
+     no such property, since ` A. x ( ph -> ps ) ` and ` A. x ( ph -> -. ps ) `
+     can both hold when nothing satisfies ` ph ` .  (Contributed by David A.
+     Wheeler, 27-Oct-2018.)  (Revised by David A. Wheeler, 20-Jul-2026.) $)
+  als-no-surprise $p |- -. ( AE x ( ph -> ps ) /\ AE x ( ph -> -. ps ) ) $=
+    ( wals wn wa wex simpl wi wal df-als simprbi syl simplbi anim12i pm2.65 imp
+    19.26 alimi alnex biimpi sylbir pm2.65i ) ABCDZABEZCDZFZACGZUGUDUHUDUFHUDAB
+    IZCJZUHABCKZLMUGUJAUEIZCJZFZUHEZUDUJUFUMUDUJUHUKNUFUMUHAUECKNOUNUIULFZCJZUO
+    UIULCRUQAEZCJZUOUPURCUIULURABPQSUSUOACTUAMUBMUC $.
+
+  $( Demonstrate that there is never a "surprise" when using the allsome
+     quantifier restricted to a class, that is, it is never possible for the
+     consequent to be both always true and always false of the members of ` A `
+     that satisfy the antecedent.  This is the restricted counterpart of
+     ~ als-no-surprise , and follows from it by ~ dfrals2 .  Note that this
+     holds without any assumption that ` A ` is inhabited; that is the point of
+     allsome, since the corresponding claim for the ordinary restricted "for
+     all" fails when nothing in ` A ` satisfies ` ph ` .  (Contributed by David
+     A. Wheeler, 12-Jul-2026.) $)
+  rals-no-surprise $p |- -. ( AE x e. A ( ph -> ps ) /\
+      AE x e. A ( ph -> -. ps ) ) $=
+    ( wrals wn wa cv wcel wals als-no-surprise dfrals2 anbi12i mtbir ) ABCDEZAB
+    FZCDEZGCHDIAGZBCJZRPCJZGRBCKOSQTABCDLAPCDLMN $.
+
+  $( If the universal part of a restricted "all some" statement holds, then the
+     statement reduces to the existence of a member of ` A ` satisfying its
+     antecedent.  This is the restricted counterpart of ~ ralals .
+     (Contributed by Peter Mazsa and David A. Wheeler, 20-Jul-2026.) $)
+  ralrals $p |- ( A. x e. A ( ph -> ps ) ->
+      ( AE x e. A ( ph -> ps ) <-> E. x e. A ph ) ) $=
+    ( wrals wi wral wrex wa df-rals ibar bicomd bitrid ) ABCDEABFCDGZACDHZIZNOA
+    BCDJNOPNOKLM $.
+
+  $( If a member of ` A ` satisfying the antecedent exists, then a restricted
+     "all some" statement reduces to its universal part.  This is the
+     restricted counterpart of ~ rexals .  (Contributed by Peter Mazsa and
+     David A. Wheeler, 20-Jul-2026.) $)
+  rexrals $p |- ( E. x e. A ph ->
+      ( AE x e. A ( ph -> ps ) <-> A. x e. A ( ph -> ps ) ) ) $=
+    ( wrals wi wral wrex wa df-rals iba bicomd bitrid ) ABCDEABFCDGZACDHZIZONAB
+    CDJONPONKLM $.
+
+  $( An "all some" statement conjoined with the claim that at most one ` x `
+     satisfies its antecedent is equivalent to the universal part conjoined
+     with the claim that exactly one ` x ` satisfies the antecedent.  The "all
+     some" quantifier supplies the existence of such an ` x ` and ` E* x ph `
+     supplies the at-most-one part, so together they yield ` E! x ph ` .
+     (Contributed by Peter Mazsa and David A. Wheeler, 20-Jul-2026.) $)
+  alsanmo $p |- ( ( AE x ( ph -> ps ) /\ E* x ph ) <->
+      ( A. x ( ph -> ps ) /\ E! x ph ) ) $=
+    ( wals wmo wa wi wal wex weu df-als anbi1i anass eu5 bicomi anbi2i 3bitri )
+    ABCDZACEZFABGCHZACIZFZSFTUASFZFTACJZFRUBSABCKLTUASMUCUDTUDUCACNOPQ $.
+
+  $( An "all some" statement restricted to a class, conjoined with the claim
+     that at most one ` x ` in ` A ` satisfies its antecedent, is equivalent to
+     the universal part conjoined with the claim that exactly one ` x ` in
+     ` A ` satisfies the antecedent.  This is the restricted counterpart of
+     ~ alsanmo .  (Contributed by Peter Mazsa and David A. Wheeler,
+     20-Jul-2026.) $)
+  ralsanmo $p |- ( ( AE x e. A ( ph -> ps ) /\ E* x e. A ph ) <->
+      ( A. x e. A ( ph -> ps ) /\ E! x e. A ph ) ) $=
+    ( wrals wrmo wa wi wral wrex wreu df-rals anbi1i anass bicomi anbi2i 3bitri
+    reu5 ) ABCDEZACDFZGABHCDIZACDJZGZTGUAUBTGZGUAACDKZGSUCTABCDLMUAUBTNUDUEUAUE
+    UDACDROPQ $.
+
+  ${
+    $d x A $.
+    $( The general "all some" quantifier with class membership as its
+       antecedent holds if and only if ` ph ` holds for every ` x ` in ` A `
+       and some ` x ` in ` A ` satisfies ` ph ` .  (Contributed by Peter Mazsa,
+       27-Nov-2018.)  (Revised by David A. Wheeler, 20-Jul-2026.) $)
+    alsralrex $p |- ( AE x ( x e. A -> ph ) <->
+        ( A. x e. A ph /\ E. x e. A ph ) ) $=
+      ( cv wcel wals wral wex wa wrex wi wal df-als df-ral bicomi anbi1i r19.2m
+      bitri expcom rexm a1i impbid pm5.32i ) BDCEZABFZABCGZUDBHZIZUFABCJZIUEUDA
+      KBLZUGIUHUDABMUJUFUGUFUJABCNOPRUFUGUIUFUGUIUGUFUIABBCQSUIUGKUFABCTUAUBUCR
       $.
   $}
 
   ${
-    alsc1d.1 $e |- ( ph -> A! x e. A ps ) $.
-    $( Deduction rule:  Given "all some" applied to a class, you can extract
-       the "for all" part.  (Contributed by David A. Wheeler, 20-Oct-2018.) $)
-    alsc1d $p |- ( ph -> A. x e. A ps ) $=
-      ( wral cv wcel wex walsc wa df-alsc sylib simpld ) ABCDFZCGDHCIZABCDJOPKE
-      BCDLMN $.
+    $d x A $.
+    $( The general "all some" quantifier with class membership as its
+       antecedent holds if and only if ` ph ` holds for every ` x ` in ` A `
+       and ` A ` is inhabited.  This is the intuitionistic form of what set.mm
+       states using ` A =/= (/) ` ; see the section comment.  (Contributed by
+       Peter Mazsa, 28-Nov-2018.)  (Revised by David A. Wheeler,
+       20-Jul-2026.) $)
+    alsraln0m $p |- ( AE x ( x e. A -> ph ) <->
+        ( A. x e. A ph /\ E. x x e. A ) ) $=
+      ( cv wcel wals wi wal wex wa wral df-als df-ral bicomi anbi1i bitri ) BDC
+      EZABFQAGBHZQBIZJABCKZSJQABLRTSTRABCMNOP $.
   $}
 
   ${
-    alsc2d.1 $e |- ( ph -> A! x e. A ps ) $.
-    $( Deduction rule:  Given "all some" applied to a class, you can extract
-       the "there exists" part.  (Contributed by David A. Wheeler,
-       20-Oct-2018.) $)
-    alsc2d $p |- ( ph -> E. x x e. A ) $=
-      ( wral cv wcel wex walsc wa df-alsc sylib simprd ) ABCDFZCGDHCIZABCDJOPKE
-      BCDLMN $.
+    $d x A $.
+    $( If ` ph ` holds for every ` x ` in ` A ` , then the general "all some"
+       quantifier with class membership as its antecedent reduces to the
+       assertion that some ` x ` in ` A ` satisfies ` ph ` .  See ~ ralrals for
+       the restricted counterpart.  (Contributed by Peter Mazsa, 19-Dec-2018.)
+       (Revised by David A. Wheeler, 15-Jul-2026.) $)
+    ralals $p |- ( A. x e. A ph ->
+        ( AE x ( x e. A -> ph ) <-> E. x e. A ph ) ) $=
+      ( cv wcel wals wral wrex wa alsralrex ibar bicomd bitrid ) BDCEABFABCGZAB
+      CHZIZNOABCJNOPNOKLM $.
+  $}
+
+  ${
+    $d x A $.
+    $( If some ` x ` in ` A ` satisfies ` ph ` , then the general "all some"
+       quantifier with class membership as its antecedent reduces to the
+       assertion that ` ph ` holds for every ` x ` in ` A ` .  See ~ rexrals
+       for the restricted counterpart.  (Contributed by Peter Mazsa,
+       19-Dec-2018.)  (Revised by David A. Wheeler, 15-Jul-2026.) $)
+    rexals $p |- ( E. x e. A ph ->
+        ( AE x ( x e. A -> ph ) <-> A. x e. A ph ) ) $=
+      ( cv wcel wals wral wrex wa alsralrex iba bicomd bitrid ) BDCEABFABCGZABC
+      HZIZONABCJONPONKLM $.
+  $}
+
+  ${
+    $d x A $.
+    $( If ` A ` is inhabited, then the general "all some" quantifier with class
+       membership as its antecedent reduces to the assertion that ` ph ` holds
+       for every ` x ` in ` A ` .  (Contributed by Peter Mazsa, 19-Dec-2018.)
+       (Revised by David A. Wheeler, 20-Jul-2026.) $)
+    n0alsm $p |- ( E. x x e. A ->
+        ( AE x ( x e. A -> ph ) <-> A. x e. A ph ) ) $=
+      ( cv wcel wals wral wex alsraln0m rbaib ) BDCEZABFABCGKBHABCIJ $.
+  $}
+
+  ${
+    $d x A $.  $d x y B $.
+    $( Nested general "all some" quantifiers with class membership as their
+       antecedents: ` ph ` holds for every ` x ` in ` A ` and every ` y ` in
+       ` B ` , and both ` A ` and ` B ` are inhabited.  (Contributed by Peter
+       Mazsa, 28-May-2019.)  (Revised by David A. Wheeler, 20-Jul-2026.) $)
+    2alsraln0m $p |- ( AE x ( x e. A -> AE y ( y e. B -> ph ) ) <->
+        ( A. x e. A A. y e. B ph /\ ( E. x x e. A /\ E. y y e. B ) ) ) $=
+      ( cv wcel wals wral wex wa alsraln0m alsbii bitri r19.27mv pm5.32ri anass
+      biid ancom anbi2i ) BFDGZCFEGZACHZBHZACEIZBDIZUBCJZKZUABJZKZUFUIUGKZKZUDU
+      EUGKZBDIZUIKZUJUDUAUMBHUOUAUCUAUMBUARACELMUMBDLNUIUNUHUEUGBDOPNUJUFUGUIKZ
+      KULUFUGUIQUPUKUFUGUISTNN $.
+  $}
+
+  ${
+    $d x y A $.
+    $( Nested general "all some" quantifiers with class membership as their
+       antecedents, for the same class ` A ` : ` ph ` holds for every ` x ` and
+       every ` y ` in ` A ` , and ` A ` is inhabited.  (Contributed by Peter
+       Mazsa, 28-May-2019.)  (Revised by David A. Wheeler, 20-Jul-2026.) $)
+    2alsraln0idm $p |- ( AE x ( x e. A -> AE y ( y e. A -> ph ) ) <->
+        ( A. x e. A A. y e. A ph /\ E. x x e. A ) ) $=
+      ( cv wcel wals wral wex wa 2alsraln0m eleq1w cbvexvw anbi2i anidm bitri )
+      BEDFZCEDFZACGBGACDHBDHZQBIZRCIZJZJSTJABCDDKUBTSUBTTJTUATTRQCBCBDLMNTOPNP
+      $.
   $}
 
 $( (End of David A. Wheeler's mathbox.) $)
