@@ -4967,6 +4967,24 @@ middle in its proof.</TD>
 <TD>Unused in set.mm.</TD>
 </TR>
 
+<tr>
+  <td>mapssfset</td>
+  <td>~ mapssfsetg</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>fsetex</td>
+  <td>~ mapex</td>
+  <td>adds set existence condition</td>
+</tr>
+
+<tr>
+  <td>f1setex</td>
+  <td>~ f1setexg</td>
+  <td>adds set existence condition</td>
+</tr>
+
 <TR>
   <TD>ralxpmap</TD>
   <TD><I>none</I></TD>
@@ -7155,7 +7173,8 @@ favor of theorems in deduction form.</TD>
 <TD>ltlecasei</TD>
 <TD><I>none</I></TD>
 <TD>Would need one of the analytic omniscience
-principles</TD>
+principles. For integers or rational numbers, see
+~ zlelttric or ~ qlelttric (combined with ~ mpjaodan ).</TD>
 </TR>
 
 <TR>
@@ -9979,19 +9998,6 @@ or not.</TD>
 </TR>
 
 <TR>
-  <TD>hashf1</TD>
-  <TD><I>none</I></TD>
-  <TD>The set.mm proof uses ssfi , excluded middle, abn0 , diffi
-  and perhaps other theorems we don't have.</TD>
-</TR>
-
-<TR>
-  <TD>hashfac</TD>
-  <TD><I>none</I></TD>
-  <TD>The set.mm proof uses hashf1 .</TD>
-</TR>
-
-<TR>
   <TD>leiso</TD>
   <TD><I>none</I></TD>
   <TD>The set.mm proof uses isocnv3 .</TD>
@@ -12312,16 +12318,16 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td rowspan="2">df-gsum</td>
-  <td>~ df-igsum</td>
+  <td>~ df-gzsum</td>
   <td>the set.mm definition would require more decidability than
-  we want to require in many cases. So we define ` gsum `
+  we want to require in many cases. So we define ` gzsum `
   for sums indexed by consecutive integers...
   </td>
 </tr>
 
 <tr>
-  <td>~ df-gfsum</td>
-  <td>... and an alternate syntax ` gfsum ` for sums indexed
+  <td>~ df-gsumfi</td>
+  <td>... and an alternate syntax ` gsum ` for sums indexed
   by finite sets where the order does not matter</td>
 </tr>
 
@@ -12535,45 +12541,110 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>gsumvalx</td>
-  <td>~ igsumvalx</td>
-  <td>reflects differences between df-gsum and ~ df-igsum</td>
+  <td>~ gzsumvalx</td>
+  <td>reflects differences between df-gsum and ~ df-gzsum</td>
 </tr>
 
 <tr>
   <td>gsumval</td>
-  <td>~ igsumval , ~ gsumfzval</td>
-  <td>reflects differences between df-gsum and ~ df-igsum</td>
+  <td>~ gzsumval , ~ gzsumfzval</td>
+  <td>reflects differences between df-gsum and ~ df-gzsum</td>
+</tr>
+
+<tr>
+  <td>gsumpropd</td>
+  <td><i>none</i></td>
+  <td>something along these lines is presumably provable</td>
 </tr>
 
 <tr>
   <td>gsumpropd2lem</td>
   <td><i>none</i></td>
-  <td>not needed; ~ gsumpropd2 is proved another way</td>
+  <td>if we bring back gsumpropd2 it is likely to be
+  proved another way</td>
+</tr>
+
+<tr>
+  <td>gsumpropd2</td>
+  <td><i>none</i></td>
+  <td>something along these lines is presumably provable</td>
+</tr>
+
+<tr>
+  <td>gsummgmpropd</td>
+  <td><i>none</i></td>
+  <td>something along these lines is presumably provable</td>
+</tr>
+
+<tr>
+  <td rowspan="2">gsumress</td>
+  <td>~ gzsumress</td>
+  <td>for ` gzsum `</td>
+</tr>
+
+<tr>
+  <td>~ gsumressfi</td>
+  <td>requires that ` A ` is finite and that ` G ` and
+  ` H ` are commutative monoids</td>
 </tr>
 
 <tr>
   <td>gsumval1</td>
   <td><i>none</i></td>
   <td>would require different conditions but possibly not
-  relevant given ~ df-igsum</td>
+  relevant given ~ df-gzsum</td>
 </tr>
 
 <tr>
   <td rowspan="2">gsum0</td>
-  <td>~ gsum0g</td>
-  <td>for ` gsum ` , with added set existence condition</td>
+  <td>~ gzsum0</td>
+  <td>for ` gzsum ` , with added set existence condition</td>
 </tr>
 
 <tr>
-  <td>~ gfsum0</td>
-  <td>for ` gfsum `</td>
+  <td>~ gsum0cmn</td>
+  <td>for ` gsum `</td>
 </tr>
 
 <tr>
   <td>gsumval2a</td>
-  <td>~ gsumval2</td>
-  <td>this is just ~ gsumval2 with additional hypotheses, so is
+  <td>~ gzsumval2</td>
+  <td>this is just gsumval2 with additional hypotheses, so is
   not needed</td>
+</tr>
+
+<tr>
+  <td rowspan="2">gsumval2</td>
+  <td>~ gzsumval2</td>
+  <td>for ` gzsum `</td>
+</tr>
+
+<tr>
+  <td><i>for ` gsum `</i></td>
+  <td>should be possible with a ` G e. CMnd ` condition</td>
+</tr>
+
+<tr>
+  <td rowspan="2">gsumsplit1r</td>
+  <td>~ gzsumsplit1r</td>
+  <td>for ` gzsum `</td>
+</tr>
+
+<tr>
+  <td><i>for ` gsum `</i></td>
+  <td>should be possible with a ` G e. CMnd ` condition</td>
+</tr>
+
+<tr>
+  <td>gsumprval</td>
+  <td><i>none</i></td>
+  <td>something along these lines is presumably provable</td>
+</tr>
+
+<tr>
+  <td>gsumpr12val</td>
+  <td><i>none</i></td>
+  <td>something along these lines is presumably provable</td>
 </tr>
 
 <tr>
@@ -12639,14 +12710,35 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td rowspan="2">gsumz</td>
-  <td>~ gsumfzz</td>
-  <td>when indexed by consecutive integers</td>
+  <td>gsumsubm</td>
+  <td>~ gsumsubmfi</td>
+  <td>adds conditions that ` A ` is finite and ` G `
+  is commutative</td>
 </tr>
 
 <tr>
-  <td>~ gfsumz</td>
-  <td>when indexed by a finite set</td>
+  <td>gsumz</td>
+  <td>~ gsumzfi</td>
+  <td>requires that ` G ` is commutative and ` A ` is
+  finite</td>
+</tr>
+
+<tr>
+  <td>gsumwsubmcl</td>
+  <td>~ gzsumwsubmcl</td>
+  <td>changes ` gsum ` to `gzsum `</td>
+</tr>
+
+<tr>
+  <td>gsumwcl</td>
+  <td>~ gzsumwcl</td>
+  <td>changes ` gsum ` to `gzsum `</td>
+</tr>
+
+<tr>
+  <td>gsumwmhm</td>
+  <td>~ gzsumwmhm</td>
+  <td>changes ` gsum ` to `gzsum `</td>
 </tr>
 
 <tr>
@@ -12868,7 +12960,7 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>gsumval3a , gsumval3eu , gsumval3lem1 , gsumval3lem2 ,
   gsumval3 , gsumcllem , gsumzres , gsumzcl2 , gsumzcl ,
   gsumzf1o , gsumres , gsumcl2</td>
-  <td>~ gsumval2 , ~ gsumfzval</td>
+  <td>~ gzsumval2 , ~ gzsumfzval</td>
   <td>these are all in terms of support which we could
   define but which would require additional conditions
   for example decidable equality of group elements</td>
@@ -12876,71 +12968,88 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td rowspan="2">gsumcl</td>
-  <td>~ gsumfzcl</td>
+  <td>~ gzsumcl</td>
+  <td>for ` gzsum `</td>
+</tr>
+
+<tr>
+  <td>~ gsumclfi</td>
+  <td>For ` gsum ` . Changes finitely supported to finite.</td>
+</tr>
+
+<tr>
+  <td rowspan="2">mulgnngsum</td>
+  <td>~ mulgnngzsum</td>
+  <td>for ` gzsum `</td>
+</tr>
+
+<tr>
   <td>for ` gsum `</td>
+  <td>presumably provable with ` G e. CMnd ` condition
+  added</td>
 </tr>
 
 <tr>
-  <td>~ gfsumcl</td>
-  <td>for ` gfsum `</td>
+  <td rowspan="2" >mulgnn0gsum</td>
+  <td>~ mulgnn0gzsum</td>
+  <td>for ` gzsum `</td>
 </tr>
 
 <tr>
-  <td>gsumf1o</td>
-  <td>~ gsumfzreidx</td>
-  <td>since gsumf1o sums a set indexed by
-  an arbitrary finite set rather than consecutive
-  integers, it won't work as-is as long as ` gsum `
-  is defined with ~ df-igsum</td>
+  <td>for ` gsum `</td>
+  <td>presumably provable with ` G e. CMnd ` condition
+  added</td>
+</tr>
+
+<tr>
+  <td rowspan="2">gsumf1o</td>
+  <td>~ gzsumreidx</td>
+  <td>for ` gzsum `</td>
+</tr>
+
+<tr>
+  <td>~ gsumf1ofi</td>
+  <td>For ` gsum ` . Changes finitely supported to finite.</td>
 </tr>
 
 <tr>
   <td>gsumreidx</td>
-  <td>~ gsumfzreidx</td>
+  <td>~ gzsumreidx</td>
   <td>requires that ` M ` and ` N ` are integers</td>
 </tr>
 
 <tr>
-  <td>gsumzsubmcl , gsumsubmcl</td>
-  <td>~ gsumfzsubmcl</td>
-  <td>The group sum needs to be indexed by
-  consecutive integers. Also, we don't need
-  commutativity since the order is specified.</td>
+  <td>gsumzsubmcl</td>
+  <td><i>none</i></td>
+  <td>see gsumsubmcl for current closest theorems</td>
+</tr>
+
+<tr>
+  <td rowspan="2">gsumsubmcl</td>
+  <td>~ gzsumsubmcl</td>
+  <td>for ` gzsum `</td>
+</tr>
+
+<tr>
+  <td>~ gsumsubmclfi</td>
+  <td>changes finitely supported to finite</td>
 </tr>
 
 <tr>
   <td>gsumsubgcl</td>
-  <td><i>none</i></td>
-  <td>at least at present, just use ~ gsumfzsubmcl although it
-  wouldn't be hard to add a version for groups rather than monoids</td>
+  <td>~ gzsumsubmcl , ~ gsumsubmclfi</td>
 </tr>
 
 <tr>
   <td>gsumzaddlem , gsumzadd , gsumadd</td>
   <td><i>none</i></td>
-  <td>should be possible to prove versions indexed by
-  consecutive integers.</td>
+  <td>similar idea as ~ gsummptfidmadd</td>
 </tr>
 
 <tr>
   <td>gsummptfsadd</td>
   <td><i>none</i></td>
-  <td>should be possible (for sums indexed by consecutive integers)
-  given a theorem similar to gsumadd</td>
-</tr>
-
-<tr>
-  <td>gsummptfidmadd</td>
-  <td>~ gsumfzmptfidmadd</td>
-  <td>The group sum needs to be indexed by
-  consecutive integers.</td>
-</tr>
-
-<tr>
-  <td>gsummptfidmadd2</td>
-  <td>~ gsumfzmptfidmadd2</td>
-  <td>The group sum needs to be indexed by
-  consecutive integers.</td>
+  <td>similar idea as ~ gsummptfidmadd</td>
 </tr>
 
 <tr>
@@ -12959,26 +13068,29 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>gsumconst</td>
-  <td>~ gsumfzconst</td>
-  <td>requires that the series is indexed by consecutive integers
-  and has an element (if the latter condition is an issue, detect it
-  with something like ~ fzn and handle it with ~ gsum0g )</td>
+  <td rowspan="2">gsumconst</td>
+  <td>~ gzsumconst</td>
+  <td>for ` gzsum ` where the sum is over at least one element
+  (if the latter condition is an issue, detect it
+  with something like ~ fzn and handle it with ~ gzsum0 )</td>
 </tr>
 
 <tr>
-  <td>gsumconstf</td>
-  <td>~ gsumfzconstf</td>
-  <td>requires that the series is indexed by consecutive integers
-  and has an element (if the latter condition is an issue, detect it
-  with something like ~ fzn and handle it with ~ gsum0g )</td>
+  <td>~ gsumconstcmn</td>
+  <td>adds a ` G e. CMnd ` condition</td>
 </tr>
 
 <tr>
-  <td>gsumconstf</td>
-  <td><i>none</i></td>
-  <td>it should be possible to adapt ~ gsumfzconst to a version with
-  a not-free-in hypothesis</td>
+  <td rowspan="2">gsumconstf</td>
+  <td>~ gzsumconstf</td>
+  <td>for ` gzsum ` where the sum is over at least one element
+  (if the latter condition is an issue, detect it
+  with something like ~ fzn and handle it with ~ gzsum0 )</td>
+</tr>
+
+<tr>
+  <td>for ` gsum `</td>
+  <td>should be provable with a ` G e. CMnd ` condition</td>
 </tr>
 
 <tr>
@@ -12989,22 +13101,32 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>gsummhm</td>
-  <td>~ gsumfzmhm</td>
-  <td>The group sum needs to be indexed by
-  consecutive integers.</td>
+  <td rowspan="2">gsummhm</td>
+  <td>~ gzsummhm</td>
+  <td>for ` gzsum `</td>
 </tr>
 
 <tr>
-  <td>gsummhm2</td>
-  <td>~ gsumfzmhm2</td>
-  <td>The group sum needs to be indexed by
-  consecutive integers.</td>
+  <td>~ gsummhmfi</td>
+  <td>changes finitely supported to finite and requires that
+  ` H ` is commutative</td>
+</tr>
+
+<tr>
+  <td rowspan="2">gsummhm2</td>
+  <td>~ gzsummhm2</td>
+  <td>for ` gzsum `</td>
+</tr>
+
+<tr>
+  <td>~ gsummhm2fi</td>
+  <td>changes finitely supported to finite and requires that
+  ` H ` is commutative</td>
 </tr>
 
 <tr>
   <td>gsumsnfd</td>
-  <td>~ gsumfzsnfd</td>
+  <td>~ gzsumsnfd</td>
   <td>The group sum needs to be indexed by an integer</td>
 </tr>
 
@@ -13012,12 +13134,12 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>gsumsnd , gsumsnf</td>
   <td><i>none</i></td>
   <td>these are variations on similar theorems - see
-  ~ gsumfzsnfd and ~ gfsumsn</td>
+  ~ gzsumsnfd and ~ gsumsncmn</td>
 </tr>
 
 <tr>
   <td>gsumsn</td>
-  <td>~ gsumfzsnfd , ~ gfsumsn</td>
+  <td>~ gzsumsnfd , ~ gsumsncmn</td>
 </tr>
 
 <tr>
@@ -13089,16 +13211,16 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>srgsummulcr</td>
   <td><i>none</i></td>
-  <td>to use ` gsum ` (via ~ gsumfzmhm2 ) would need to
-  be indexed by consecutive integers, or to use ` gfsum `
+  <td>to use ` gzsum ` (via ~ gzsummhm2 ) would need to
+  be indexed by consecutive integers, or to use ` gsum `
   would need to be indexed by a finite set</td>
 </tr>
 
 <tr>
   <td>sgsummulcl</td>
   <td><i>none</i></td>
-  <td>to use ` gsum ` (via ~ gsumfzmhm2 ) would need to
-  be indexed by consecutive integers, or to use ` gfsum `
+  <td>to use ` gzsum ` (via ~ gzsummhm2 ) would need to
+  be indexed by consecutive integers, or to use ` gsum `
   would need to be indexed by a finite set</td>
 </tr>
 
@@ -13796,8 +13918,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>gsumvsmul</td>
   <td><i>none</i></td>
-  <td>to use ` gsum ` (via ~ gsumfzmhm2 ) would need to
-  be indexed by consecutive integers, or to use ` gfsum `
+  <td>to use ` gzsum ` (via ~ gzsummhm2 ) would need to
+  be indexed by consecutive integers, or to use ` gsum `
   would need to be indexed by a finite set</td>
 </tr>
 
@@ -14272,12 +14394,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>gsumfsum</td>
-  <td>~ gsumfzfsum</td>
-  <td>requires the sums to be indexed by consecutive integers</td>
-</tr>
-
-<tr>
   <td>zringlpirlem1 , zringlpirlem2 , zringlpirlem3 , zringlpir ,
   zringndrg , zringcyg</td>
   <td><i>none</i></td>
@@ -14503,9 +14619,9 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>gsumbagdiag</td>
   <td><i>none</i></td>
-  <td>Apparently would be provable if ` gsum ` is changed
-  to ` gfsum ` . We would seem to need a ` gfsum ` version
-  of gsumcom2 .</td>
+  <td>Apparently would be provable now that ` gsum ` is
+  defined via ~ df-gsumfi . We would seem to need a
+  ` gsum ` version of gsumcom2 .</td>
 </tr>
 
 <tr>
@@ -14513,8 +14629,7 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>The set.mm proof uses suppssdm , 	suppssfifsupp ,
   gsum2d2 , gsumf1o , psrbaglefi ,
-  gsumbagdiaglem , and gsumbagdiag . ` gsum ` would
-  presumably need to be changed to ` gfsum ` .</td>
+  gsumbagdiaglem , and gsumbagdiag .</td>
 </tr>
 
 <tr>
@@ -14545,12 +14660,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td id="missing-psrmulr">psrmulr</td>
   <td><i>none</i></td>
-  <td>although this theorem itself just extracts the multiplication
-  slot from the result of ~ psrval (analogous to ~ psrplusgg ),
-  the fundamental issue with ` mPwSer ` multiplication is that
-  the set.mm definition of that slot uses ` gsum ` on something
-  which is not a range of consecutive integers (as required by
-  ~ df-igsum )</td>
+  <td>presumably provable in this form or with small
+  changes, now that we have ` gsum ` using ~ df-gsumfi .</td>
 </tr>
 
 <tr>
@@ -16617,16 +16728,6 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>may be possible if more group theorems and notation
   are available</td>
-</tr>
-
-<tr>
-  <td>logfac</td>
-  <td><i>none</i></td>
-  <td>Should be provable.  Because of the way seqhomo is used in the
-  set.mm proof, it may be necessary to special-case ` N = 1 ` and
-  start the main proof with two, or prove an analogue of ~ seq3homo
-  which allows using ` RR+ ` on one side of the equation and ` RR `
-  on the other.</td>
 </tr>
 
 <tr>
@@ -19235,7 +19336,7 @@ of Transcendental Numbers</td>
     seen in set.mm see <a
     href="#missing-amgmlem" >entry for theorem amgmlem
     above</a> .  As for notation we could
-    use the ` gfsum ` ( ~ df-gfsum ) notation (roughly as
+    use the ` gsum ` ( ~ df-gsumfi ) notation (roughly as
     set.mm does). We could also make a version
     using the ` sum_ ` ( ~ df-sumdc ) and ` prod_ `
     ( ~ df-proddc ) notations.
