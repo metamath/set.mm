@@ -29701,8 +29701,9 @@ $)
       3sstr4g ) CDEZBFZCGZAHZBIZUADGZAHZBIZABCJABDJUBUEKZBLUCUFKZBLTUDUGEUHUIBU
       BUEAMNBCDOUCUFBPQABCRABDRS $.
 
-    $( Subclass relation for the restriction of a class abstraction.
-       (Contributed by NM, 31-Mar-1995.) $)
+    $( Subclass relation for the restriction of a class abstraction.  Prefer
+       using the more natural statement ~ ssrab2 .  (Contributed by NM,
+       31-Mar-1995.) $)
     ssab2 $p |- { x | ( x e. A /\ ph ) } C_ A $=
       ( cv wcel wa simpl abssi ) BDCEZAFBCIAGH $.
 
@@ -31523,10 +31524,16 @@ $)
   ss0 $p |- ( A C_ (/) -> A = (/) ) $=
     ( c0 wss wceq ss0b biimpi ) ABCABDAEF $.
 
+  $( The only subclass of the empty class is itself.  (Contributed by NM,
+     7-Mar-2007.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.)  Strengthen
+     ~ sseq0 to a biconditional.  (Revised by BJ, 19-Jul-2026.) $)
+  sseq0b $p |- ( A = (/) -> ( B C_ A <-> B = (/) ) ) $=
+    ( c0 wceq wss sseq2 ss0b bitrdi ) ACDBAEBCEBCDACBFBGH $.
+
   $( A subclass of an empty class is empty.  (Contributed by NM, 7-Mar-2007.)
      (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
   sseq0 $p |- ( ( A C_ B /\ B = (/) ) -> A = (/) ) $=
-    ( c0 wceq wss sseq2 ss0 biimtrdi impcom ) BCDZABEZACDZJKACELBCAFAGHI $.
+    ( c0 wceq wss sseq0b biimpac ) BCDABEACDBAFG $.
 
   $( A class with a nonempty subclass is nonempty.  (Contributed by NM,
      17-Feb-2007.) $)
@@ -31726,12 +31733,18 @@ $)
       $.
   $}
 
+  $( Intersection, subclass, and difference relationship.  The converse holds
+     in classical logic but not in intuitionistic logic.  (Contributed by Jim
+     Kingdon, 3-Aug-2018.)  (Proof shortened by BJ, 18-Jul-2026.) $)
+  inssdif0im $p |- ( ( A i^i B ) C_ C -> ( A i^i ( B \ C ) ) = (/) ) $=
+    ( cin wss cdif c0 indif2 ssdif0im eqtrid ) ABDZCEABCFDKCFGABCHKCIJ $.
+
   ${
     $d x A $.  $d x B $.  $d x C $.
-    $( Intersection, subclass, and difference relationship.  In classical logic
-       the converse would also hold.  (Contributed by Jim Kingdon,
-       3-Aug-2018.) $)
-    inssdif0im $p |- ( ( A i^i B ) C_ C -> ( A i^i ( B \ C ) ) = (/) ) $=
+    $( Obsolete version of ~ inssdif0im as of 18-Jul-2026.  (Contributed by Jim
+       Kingdon, 3-Aug-2018.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    inssdif0imOLD $p |- ( ( A i^i B ) C_ C -> ( A i^i ( B \ C ) ) = (/) ) $=
       ( vx cv cin wcel wi wal cdif wn c0 wceq wa elin imbi1i imanim sylbi eldif
       wss anbi2i anass 3bitr4ri sylnib alimi ssalel eq0 3imtr4i ) DEZABFZGZUICG
       ZHZDIUIABCJZFZGZKZDIUJCTUOLMUMUQDUMUIAGZUIBGZNZULKZNZUPUMUTULHVBKUKUTULUI
@@ -31767,13 +31780,19 @@ $)
   0dif $p |- ( (/) \ A ) = (/) $=
     ( c0 cdif wss wceq difss ss0 ax-mp ) BACZBDIBEBAFIGH $.
 
+  $( A class and its relative complement are disjoint.  (Contributed by NM,
+     24-Mar-1998.)  Generalize from ~ disjdif .  (Revised by BJ,
+     19-Jul-2026.) $)
+  disjdifg $p |- ( A C_ B -> ( A i^i ( C \ B ) ) = (/) ) $=
+    ( wss cin cdif c0 wceq ssinss1 inssdif0im syl ) ABDACEBDACBFEGHACBIACBJK $.
+
   $( A class and its relative complement are disjoint.  Theorem 38 of [Suppes]
      p. 29.  (Contributed by NM, 24-Mar-1998.) $)
   disjdif $p |- ( A i^i ( B \ A ) ) = (/) $=
-    ( cin wss cdif c0 wceq inss1 inssdif0im ax-mp ) ABCADABAECFGABHABAIJ $.
+    ( wss cdif cin c0 wceq ssid disjdifg ax-mp ) AACABADEFGAHAABIJ $.
 
-  $( A class and its relative complement are disjoint.  (Contributed by Thierry
-     Arnoux, 29-Nov-2023.) $)
+  $( A class and its relative complement are disjoint.  Commuted form of
+     ~ disjdif .  (Contributed by Thierry Arnoux, 29-Nov-2023.) $)
   disjdifr $p |- ( ( B \ A ) i^i A ) = (/) $=
     ( cdif c0 disjdif ineqcomi ) ABACDABEF $.
 
@@ -37878,8 +37897,8 @@ $)
   ${
     $d x A $.
     $( Separation Scheme (Aussonderung) in terms of a class abstraction.
-       (Contributed by NM, 8-Jun-1994.)  Put in closed form.  (Revised by BJ,
-       18-Jul-2026.) $)
+       Prefer using the more natural statement ~ rabexg .  (Contributed by NM,
+       8-Jun-1994.)  Put in closed form.  (Revised by BJ, 18-Jul-2026.) $)
     sepab $p |- ( A e. V -> { x | ( x e. A /\ ph ) } e. _V ) $=
       ( wcel cv wa cab id wss ssab2 a1i ssexd ) CDEZBFCEAGBHZCDNIOCJNABCKLM $.
   $}
