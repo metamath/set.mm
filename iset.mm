@@ -195921,6 +195921,52 @@ $)
       ZAYLUVAZUVOVVIUWFUVOBAUVBZAYSIZVVIABCDEFGUVCZUVDTUVOVVHVVIRZUWFUVOVVKVVMU
       VOVVJVVKVVIVVLUVEAUVGVSTVGZWFVUKUVRVVNXQUVFYDVUKUWEVUKUWDUVOVUGUWFVUJTUVH
       UVIYMUVOUXGUWTUVPUWFUVJVVGVVBDEUVKVFUVL $.
+
+    ${
+      birthday.k $e |- K = ; 2 3 $.
+      birthday.n $e |- N = ; ; 3 6 5 $.
+      birthdaylog2.log2cnv $e |- seq 0 ( + , ( k e. NN0 |-> ( 2 /
+        ( ( 3 x. ( ( 2 x. k ) + 1 ) ) x. ( 9 ^ k ) ) ) ) ) ~~> ( log ` 2 ) $.
+      $( The Birthday Problem.  There is a more than even chance that out of 23
+         people in a room, at least two of them have the same birthday.
+         Mathematically, this is asserting that for ` K = 2 3 ` and
+         ` N = 3 6 5 ` , fewer than half of the set of all functions from
+         ` 1 ... K ` to ` 1 ... N ` are injective.
+
+         The presence of the hypothesis giving a series which converges to
+         ` ( log `` 2 ) ` is a temporary measure until it can be proved as
+         log2cnv .
+
+         Although this is Metamath 100 proof #93, we cannot consider it proved
+         until we prove the missing log2cnv piece (or prove the theorem another
+         way which does not require it).  (Contributed by Mario Carneiro,
+         17-Apr-2015.) $)
+      birthdaylog2 $p |- ( ( # ` T ) / ( # ` S ) ) < ( 1 / 2 ) $=
+        ( cdiv co c2 c1 wcel c3 2nn0 mp2an cr cfv cexp cmin cneg ce cle wbr clt
+        chash cn0 cn cdc 3nn0 deccl eqeltri c6 c5 6nn0 5nn decnncl birthdaylem3
+        clog log2ublog2 cmul nn0cni sqvali mulridi eqcomi oveq12i ax-1cn subdii
+        eqtr4i oveq1i subcli 2cn 2ap0 divassapi 1nn0 caddc eqid decsuc mvrraddi
+        2p1e3 wceq 11multnc divmulapi mpbir eqtri 3p2e5 decaddi decmul2c 3eqtri
+        breqtrri crp 2rp relogcl ax-mp 5nn0 nn0rei nndivre ltnegi mpbi renegcli
+        wb cc recni efneg reeflog oveq2i breqtri cfn cfz cv wf1 cab nn0zi fzfig
+        eflt cz nnzi f1setfi hashcl c0 wne birthdaylem1g simp3i simp2i hashnncl
+        wss w3a reefcl halfre lelttri ) BUIUAZAUIUAZLMZENUBMZEUCMZNLMZFLMZUDZUE
+        UAZUFUGZUUBONLMZUHUGYPUUDUHUGEUJPZFUKPZUUCENQULZUJINQRUMUNUOZFQUPULZUQU
+        LZUKJUUIUQQUPUMURUNUSUTUOZABCEFGHVASUUBNVBUAZUDZUEUAZUUDUHUUAUUMUHUGZUU
+        BUUNUHUGZUULYTUHUGUUOUULNUQULZQULZUUJLMYTUHDKVCYSUURFUUJLYSEEOUCMZVDMZN
+        LMEUUSNLMZVDMUURYRUUTNLYREEVDMZEOVDMZUCMUUTYQUVBEUVCUCEEUUHVEZVFUVCEEUV
+        DVGZVHVIEEOUVDUVDVJVKVLVMEUUSNUVDEOUVDVJVNVOVPVQOOUUQQENUVAUUHVRVRUVANN
+        ULZNLMZOOULZUUSUVFNLEUVFOUVFNNRRUNVEZVJEUUGUVFOVSMINNQUVFRRWCUVFVTWAVLW
+        BVMUVGUVHWDNUVHVDMUVFWDNRWEUVFNUVHUVIVOUVHOOVRVRUNVEVPWFWGWHUMRNQUQUVCN
+        RUMRUVCEUUGUVEIWHZWIWJUVJWKWLZJVIWMUULYTNWNPZUULTPWONWPWQZYSTPUUFYTTPYS
+        YSUURUJUVKUUQQNUQRWRUNUMUNUOWSUUKYSFWTSZXAXBUUATPZUUMTPUUOUUPXDYTUVNXCZ
+        UULUVMXCUUAUUMXRSXBUUNOUULUEUAZLMZUUDUULXEPUUNUVRWDUULUVMXFUULXGWQUVQNO
+        LUVLUVQNWDWONXHWQXIWHXJYPUUBUUDYNTPYOUKPZYPTPYNBXKPYNUJPBOEXLMZOFXLMZCX
+        MXNCXOZXKHUVTXKPZUWAXKPZUWBXKPOXSPZEXSPUWCOVRXPZEUUHXPOEXQSUWEFXSPUWDUW
+        FFUUKXTOFXQSUVTUWACYASUOBYBWQWSUVSAYCYDZBAYIZAXKPZUWGUUEUUFUWHUWIUWGYJU
+        UHUUKABCEFGHYESZYFUWIUVSUWGXDUWHUWIUWGUWJYGAYHWQWGYNYOWTSUVOUUBTPUVPUUA
+        YKWQYLYMS $.
+    $}
   $}
 
 
