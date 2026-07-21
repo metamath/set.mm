@@ -215588,19 +215588,21 @@ $)
      ` A ` where ` ph ` is true.
 
      An older definition of the "all some" quantifier when scoped to a class,
-     named df-alsc and now removed, instead applied a bare formula to the
-     members of a class, asserting only that the formula held throughout ` A `
-     and that ` A ` had at least one member.  I've now decided that that was a
-     mistake.  Its older existence conjunct did not require any member of ` A `
-     to satisfy the antecedent, so if the formula was itself an implication,
-     that inner implication could still be vacuously true, which is precisely
-     what the allsome quantifier exists to prevent.  For example, the older
-     definition meant that "among Martians, all tall ones are green" could be
-     considered true if there are Martians, but no tall Martians.  This version
-     of the definition instead ensures that claims of the form "among Martians,
-     all tall ones are green" can only be true if all tall Martians are green
-     _and_ that there is at least one tall Martian.  (Contributed by David A.
-     Wheeler, 20-Oct-2018.)  (Revised by David A. Wheeler, 12-Jul-2026.) $)
+     named df-alsc and now removed, instead applied a bare formula ` ph ` to
+     the members of a class, asserting only
+     ` ( A. x e. A ph /\ E. x x e. A ) ` , that is, that the formula held
+     throughout ` A ` and that ` A ` had at least one member.  I've now decided
+     that that was a mistake.  Its older existence conjunct ` E. x x e. A ` did
+     not require any member of ` A ` to satisfy the antecedent, so if the
+     formula was itself an implication, that inner implication could still be
+     vacuously true, which is precisely what the allsome quantifier exists to
+     prevent.  For example, the older definition meant that "among Martians,
+     all tall ones are green" could be considered true if there are Martians,
+     but no tall Martians.  This version of the definition instead ensures that
+     claims of the form "among Martians, all tall ones are green" can only be
+     true if all tall Martians are green _and_ that there is at least one tall
+     Martian.  (Contributed by David A. Wheeler, 20-Oct-2018.)  (Revised by
+     David A. Wheeler, 12-Jul-2026.) $)
   df-rals $a |- ( AE x e. A ( ph -> ps ) <->
       ( A. x e. A ( ph -> ps ) /\ E. x e. A ph ) ) $.
 
