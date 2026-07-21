@@ -179150,6 +179150,61 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Associative algebras
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Definition and basic properties
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c AssAlg $. $( Associative algebra $)
+  $c AlgSpan $. $( Algebraic span $)
+  $c algSc $.
+
+  $( Associative algebra. $)
+  casa $a class AssAlg $.
+
+  $( Algebraic span function. $)
+  casp $a class AlgSpan $.
+
+  $( Class of algebra scalar lifting function. $)
+  cascl $a class algSc $.
+
+  ${
+    $d f r s t w x y $.
+    $( Definition of an associative algebra.  An associative algebra is a set
+       equipped with a left-module structure on a ring, coupled with a
+       multiplicative internal operation on the vectors of the module that is
+       associative and distributive for the additive structure of the
+       left-module (so giving the vectors a ring structure) and that is also
+       bilinear under the scalar product.  (Contributed by Mario Carneiro,
+       29-Dec-2014.)  (Revised by SN, 2-Mar-2025.) $)
+    df-assa $a |- AssAlg = { w e. ( LMod i^i Ring )
+      | [. ( Scalar ` w ) / f ].
+        A. r e. ( Base ` f ) A. x e. ( Base ` w )
+        A. y e. ( Base ` w ) [. ( .s ` w ) / s ]. [. ( .r ` w ) / t ].
+      ( ( ( r s x ) t y ) = ( r s ( x t y ) ) /\
+        ( x t ( r s y ) ) = ( r s ( x t y ) ) ) } $.
+
+    $( Define the algebraic span of a set of vectors in an algebra.
+       (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+    df-asp $a |- AlgSpan = ( w e. AssAlg |-> ( s e. ~P ( Base ` w ) |->
+      |^| { t e. ( ( SubRing ` w ) i^i ( LSubSp ` w ) ) | s C_ t } ) ) $.
+
+    $( Every unital algebra contains a canonical homomorphic image of its ring
+       of scalars as scalar multiples of the unity element.  This names the
+       homomorphism.  (Contributed by Mario Carneiro, 8-Mar-2015.) $)
+    df-ascl $a |- algSc = ( w e. _V |-> ( x e. ( Base ` ( Scalar ` w ) ) |->
+            ( x ( .s ` w ) ( 1r ` w ) ) ) ) $.
+  $}
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Abstract multivariate polynomials
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
@@ -209514,6 +209569,15 @@ htmldef "Z/nZ" as "&#8484;/<i>n</i>&#8484;";
   althtmldef "Z/nZ" as "&#8484;/<i>n</i>&#8484;";
     /* 2-Jan-2016 reverted sans-serif */
   latexdef "Z/nZ" as "\mathrm{Z/nZ}";
+htmldef "AssAlg" as "AssAlg";
+  althtmldef "AssAlg" as "AssAlg";
+  latexdef "AssAlg" as "\mathrm{AssAlg}";
+htmldef "AlgSpan" as "AlgSpan";
+  althtmldef "AlgSpan" as "AlgSpan";
+  latexdef "AlgSpan" as "\mathrm{AlgSpan}";
+htmldef "algSc" as "algSc";
+  althtmldef "algSc" as "algSc";
+  latexdef "algSc" as "\mathrm{algSc}";
 htmldef "mPwSer" as " mPwSer ";
   althtmldef "mPwSer" as " mPwSer ";
   latexdef "mPwSer" as "\mathrm{mPwSer}";
