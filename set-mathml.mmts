@@ -1685,6 +1685,7 @@ $s class PrimRoots $: <mi href="df-primroots.html">PrimRoots</mi> $.
 
 $( Steven Nguyen $)
 $s class -R $: <msub href="df-resub.html"><mo>-</mo> <mi>&Ropf;</mi></msub> $.
+$s class /R $: <msub href="df-rediv.html"><mo>/</mo> <mi>&Ropf;</mi></msub> $.
 $s class PrjSp $: <mi href="df-prjsp.html">&Popf;&ropf;&oopf;&jopf;</mi> $.
 $s class PrjSpn $: <msub href="df-prjspn.html"><mi>&Popf;&ropf;&oopf;&jopf;</mi> <mi>n</mi></msub> $.
 $s class PrjCrv $: <mi href="df-prjcrv.html">PrjCrv</mi> $.
