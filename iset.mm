@@ -179584,6 +179584,18 @@ $)
       IIVJVKJVJXTWLWLXADXBCXTXBGUHOCWRGUHVIKVJXTWLVNXTXAGUGODWRGUGVILVJVLVOWPVP
       WPAFWMRWPFYARJWPTRVQERQYARQZWDWPEXMRIGSRVRVSVTYBRETETWAWBWCVTWEWFWGWHWIWJ
       $.
+
+    ${
+      asclvald.x $e |- ( ph -> X e. K ) $.
+      asclvald.l $e |- ( ph -> W e. LMod ) $.
+      asclvald.r $e |- ( ph -> W e. Ring ) $.
+      $( Value of a mapped algebra scalar.  (Contributed by Mario Carneiro,
+         8-Mar-2015.) $)
+      asclvald $p |- ( ph -> ( A ` X ) = ( X .x. .1. ) ) $=
+        ( vx cv co wcel cbs cfv asclfval oveq1 eqid crg ringidcl syl lmodvscld
+        fvmptd3 ) AQHQRZDCSHDCSFBGUAUBZQBCDEFGIJKLMUCUKHDCUDNAHCEFULGDULUEZJLKO
+        NAGUFTDULTPULGDUMMUGUHUIUJ $.
+    $}
   $}
 
 
