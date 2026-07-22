@@ -179202,6 +179202,41 @@ $)
             ( x ( .s ` w ) ( 1r ` w ) ) ) ) $.
   $}
 
+  ${
+    $d r x y A $.  $d f r w B $.  $d f r w F $.  $d f r w x y V $.  $d x y X $.
+    $d f r s t w x y .x. $.  $d f r s t w x y .X. $.  $d f r s t w x y W $.
+    $d y Y $.
+    isassa.v $e |- V = ( Base ` W ) $.
+    isassa.f $e |- F = ( Scalar ` W ) $.
+    isassa.b $e |- B = ( Base ` F ) $.
+    isassa.s $e |- .x. = ( .s ` W ) $.
+    isassa.t $e |- .X. = ( .r ` W ) $.
+    $( The properties of an associative algebra.  (Contributed by Mario
+       Carneiro, 29-Dec-2014.)  (Revised by SN, 2-Mar-2025.) $)
+    isassa $p |- ( W e. AssAlg <-> ( ( W e. LMod /\ W e. Ring )
+                   /\ A. r e. B A. x e. V A. y e. V
+      ( ( ( r .x. x ) .X. y ) = ( r .x. ( x .X. y ) ) /\
+        ( x .X. ( r .x. y ) ) = ( r .x. ( x .X. y ) ) ) ) ) $=
+      ( vt co wceq cfv cbs wral vs vf vw casa wcel clmod crg cin cv cmulr cvsca
+      wsbc csca fveq2 sbceq1d sbceqbid raleqbidv ralbidv df-assa elrab2 scaslid
+      wa cvv slotex raleqdv sbcieg syl fveq2i eqtr2i a1i eqcomi vscaslid eqeq2i
+      biimpri oveqd oveq1d eqeq12d oveq2d anbi12d sbcbidv mulrslid pm5.32i elin
+      wb bitrd anbi1i 3bitri ) HUDUEHUFUGUHZUEZIUIZAUIZUAUIZPZBUIZOUIZPZWJWKWNW
+      OPZWLPZQZWKWJWNWLPZWOPZWRQZVBZOHUJRZULZUAHUKRZULZBHSRZTZAXHTZIUBUIZSRZTZU
+      BHUMRZULZVBWIWJWKDPZWNEPZWJWKWNEPZDPZQZWKWJWNDPZEPZXSQZVBZBGTZAGTZICTZVBH
+      UFUEHUGUEVBZYGVBXCOUCUIZUJRZULZUAYIUKRZULZBYISRZTZAYNTZIXLTZUBYIUMRZULXOU
+      CHWHUDYIHQZYQXMUBYRXNYIHUMUNYSYPXJIXLYSYOXIAYNXHYIHSUNZYSYMXGBYNXHYTYSYKX
+      EUAYLXFYIHUKUNYSXCOYJXDYIHUJUNUOUPUQUQURUPABUCOUBUAIUSUTWIXOYGWIXOXJIXNSR
+      ZTZYGWIXNVCUEXOUUBWDHUMWHVAVDXMUUBUBXNVCXKXNQXJIXLUUAXKXNSUNVEVFVGWIXJYFI
+      UUACUUACQWICFSRUUALFXNSKVHVIVJWIXIYEAXHGXHGQWIGXHJVKVJZWIXGYDBXHGUUCWIXGX
+      PWNWOPZWJWQDPZQZWKYAWOPZUUEQZVBZOXDULZYDWIXFVCUEXGUUJWDHUKWHVLVDXEUUJUAXF
+      VCWLXFQZXCUUIOXDUUKWSUUFXBUUHUUKWPUUDWRUUEUUKWMXPWNWOUUKWLDWJWKWLDQUUKDXF
+      WLMVMVNZVOVPUUKWLDWJWQUULVOZVQUUKXAUUGWRUUEUUKWTYAWKWOUUKWLDWJWNUULVOVRUU
+      MVQVSVTVFVGWIXDVCUEUUJYDWDHUJWHWAVDUUIYDOXDVCWOXDQZUUFXTUUHYCUUNUUDXQUUEX
+      SUUNWOEXPWNWOEQUUNEXDWONVMVNZVOUUNWQXRWJDUUNWOEWKWNUUOVOVRZVQUUNUUGYBUUEX
+      SUUNWOEWKYAUUOVOUUPVQVSVFVGWEUQUQUQWEWBWIYHYGHUFUGWCWFWG $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
