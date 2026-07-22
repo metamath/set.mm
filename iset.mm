@@ -174166,6 +174166,20 @@ $)
   $}
 
   ${
+    lmodvscld.v $e |- V = ( Base ` W ) $.
+    lmodvscld.f $e |- F = ( Scalar ` W ) $.
+    lmodvscld.s $e |- .x. = ( .s ` W ) $.
+    lmodvscld.k $e |- K = ( Base ` F ) $.
+    lmodvscld.w $e |- ( ph -> W e. LMod ) $.
+    lmodvscld.r $e |- ( ph -> R e. K ) $.
+    lmodvscld.x $e |- ( ph -> X e. V ) $.
+    $( Closure of scalar product for a left module.  (Contributed by SN,
+       15-Mar-2025.) $)
+    lmodvscld $p |- ( ph -> ( R .x. X ) e. V ) $=
+      ( clmod wcel co lmodvscl syl3anc ) AGPQBEQHFQBHCRFQMNOBCDEFGHIJKLST $.
+  $}
+
+  ${
     $d w x y B $.  $d w x y K $.  $d w x y .x. $.  $d w x y W $.  $d x y X $.
     $d x y Y $.  $d V x y $.
     scaffval.b $e |- B = ( Base ` W ) $.
