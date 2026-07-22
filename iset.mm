@@ -54094,6 +54094,18 @@ $)
   $}
 
   ${
+    $d A w x z $.  $d A x y $.  $d B w z $.  $d C w $.
+    $( If a function given by maps-to notation is inhabited, then the class it
+       is defined on is inhabited.  (Contributed by Jim Kingdon,
+       22-Jul-2026.) $)
+    mptmex $p |- ( C e. ( x e. A |-> B ) -> E. y y e. A ) $=
+      ( vz vw cmpt wcel cv wex wceq copab elex2 opabm sylib df-mpt eleq2s simpl
+      wa exlimiv eximi syl eleq1w cbvexv ) EACDHZIZAJCIZAKZBJCIZBKUGUHFJDLZTZFK
+      ZAKZUIUNEULAFMZUFEUOIGJUOIGKUNGEUONULAFGOPAFCDQRUMUHAULUHFUHUKSUAUBUCUHUJ
+      ABABCUDUEP $.
+  $}
+
+  ${
     $d x y A $.  $d x ph $.
     mptrabex.1 $e |- A e. _V $.
     $( If the domain of a function given by maps-to notation is a class
