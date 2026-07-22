@@ -179250,6 +179250,13 @@ $)
       WOTUNUTHQZWDWKWGWMWPWBWHWCWJWPWAVLVBDUTHACUOULWPVDWIACUTHVBDSUMZTWPWFWLWC
       WJUTHWEDSWQTUNVBIQZWKVPWMVSWRWHVMWJVOVBIVLDUOWRWIVNACVBIHDUOUMZTWRWLVRWJV
       OWRWEVQHDVBIACUOUMWSTUNUPUQ $.
+
+    $( Left-associative property of an associative algebra.  (Contributed by
+       Mario Carneiro, 29-Dec-2014.) $)
+    assaass $p |- ( ( W e. AssAlg /\ ( A e. B /\ X e. V /\ Y e. V ) ) ->
+      ( ( A .x. X ) .X. Y ) = ( A .x. ( X .X. Y ) ) ) $=
+      ( casa wcel w3a wa co wceq assalem simpld ) GOPABPHFPIFPQRAHCSIDSAHIDSCSZ
+      THAICSDSUCTABCDEFGHIJKLMNUAUB $.
   $}
 
 
