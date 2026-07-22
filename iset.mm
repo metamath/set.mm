@@ -179285,6 +179285,14 @@ $)
       TUAUB $.
   $}
 
+  ${
+    assasca.f $e |- F = ( Scalar ` W ) $.
+    $( The scalars of an associative algebra form a ring.  (Contributed by
+       Mario Carneiro, 7-Jan-2015.)  (Revised by SN, 2-Mar-2025.) $)
+    assasca $p |- ( W e. AssAlg -> F e. Ring ) $=
+      ( casa wcel clmod crg assalmod lmodring syl ) BDEBFEAGEBHABCIJ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
