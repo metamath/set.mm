@@ -179529,6 +179529,17 @@ $)
         GVIUNVGVHUFUGVDCVJJVMVDVFVCGCVIVECBUHVDVGVHCVBCVGJZVCVBDUBJVNDUICDFUJST
         VBCVHJZVCVBDUKJVODULVHCDFVLUMSTUOVBVCUPUQHCVJURSHDVJUSUTVA $.
     $}
+
+    $( Span preserves subset ordering.  (Contributed by Mario Carneiro,
+       7-Jan-2015.) $)
+    aspss $p |- ( ( W e. AssAlg /\ S C_ V /\ T C_ S ) ->
+      ( A ` T ) C_ ( A ` S ) ) $=
+      ( vt casa wcel wss w3a cv csubrg cfv crab cint syl wceq aspval clss wa wi
+      cin simpl3 sstr2 ss2rabdv intss simp1 simp3 simp2 syl2anc 3adant3 3sstr4d
+      sstrd eqid ) EIJZBDKZCBKZLZCHMZKZHENOEUAOZUDZPZQZBVAKZHVDPZQZCAOZBAOZUTVH
+      VEKVFVIKUTVGVBHVDUTVAVDJZUBUSVGVBUCUQURUSVLUECBVAUFRUGVHVEUHRUTUQCDKVJVFS
+      UQURUSUIUTCBDUQURUSUJUQURUSUKUOHACVCDEFGVCUPZTULUQURVKVISUSHABVCDEFGVMTUM
+      UN $.
   $}
 
 
