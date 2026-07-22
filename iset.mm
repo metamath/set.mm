@@ -179515,6 +179515,20 @@ $)
         ZKZBCKZNZBAMZBIOPIUNCQZRSZBUQUMBDPZURUTTUMUOUPUCUOUMVAUPBDEGUDUAIABCDEF
         GHUBUEUQBUSKZUTBTUQUOUPUFVBUMUOUPUGBUNCUHUIIBUSUJUKUL $.
     $}
+
+    ${
+      $d S w $.
+      $( The algebraic span of a set of vectors is a subring of the algebra.
+         (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+      aspsubrg $p |- ( ( W e. AssAlg /\ S C_ V ) ->
+        ( A ` S ) e. ( SubRing ` W ) ) $=
+        ( vt vw casa wcel wss wa cfv cv csubrg clss cin crab syl adantr wex crg
+        cint eqid aspval inss1 sstri sseq2 assaring subrgid clmod assalmod lss1
+        ssrab2 elind simpr elrabd elex2 subrgintm sylancr eqeltrd ) DIJZBCKZLZB
+        AMBGNZKZGDOMZDPMZQZRZUCZVGGABVHCDEFVHUDZUEVDVJVGKHNVJJHUAZVKVGJVJVIVGVF
+        GVIUNVGVHUFUGVDCVJJVMVDVFVCGCVIVECBUHVDVGVHCVBCVGJZVCVBDUBJVNDUICDFUJST
+        VBCVHJZVCVBDUKJVODULVHCDFVLUMSTUOVBVCUPUQHCVJURSHDVJUSUTVA $.
+    $}
   $}
 
 
