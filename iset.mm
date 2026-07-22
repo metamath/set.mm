@@ -169572,6 +169572,18 @@ $)
   $}
 
   ${
+    ringcld.b $e |- B = ( Base ` R ) $.
+    ringcld.t $e |- .x. = ( .r ` R ) $.
+    ringcld.r $e |- ( ph -> R e. Ring ) $.
+    ringcld.x $e |- ( ph -> X e. B ) $.
+    ringcld.y $e |- ( ph -> Y e. B ) $.
+    $( Closure of the multiplication operation of a ring.  (Contributed by SN,
+       29-Jul-2024.) $)
+    ringcld $p |- ( ph -> ( X .x. Y ) e. B ) $=
+      ( crg wcel co ringcl syl3anc ) ACLMEBMFBMEFDNBMIJKBCDEFGHOP $.
+  $}
+
+  ${
     ringdi.b $e |- B = ( Base ` R ) $.
     ringdi.p $e |- .+ = ( +g ` R ) $.
     ringdi.t $e |- .x. = ( .r ` R ) $.
