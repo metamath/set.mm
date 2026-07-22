@@ -179407,6 +179407,21 @@ $)
       WFWHWMWJWNVQWFVAVQAWLWGVNAWLVBVLVOAWLDWLRZVDQZVCVQAWLWIWSVCVEVFZVLWOWQVPW
       EVSVTWAVRWLDWGWIWRWBVSRZWCWDVGVHVIVQWKWOWGWEWIVTTWATWPPZWTVLWOXBVPWEVSVTW
       AVRWLDWGWIWRWBXAWCWDVJVHVIVK $.
+
+    issubassa.v $e |- V = ( Base ` W ) $.
+    issubassa.o $e |- .1. = ( 1r ` W ) $.
+    $( The subalgebras of an associative algebra are exactly the subrings
+       (under the ring multiplication) that are simultaneously subspaces (under
+       the scalar multiplication from the vector space).  (Contributed by Mario
+       Carneiro, 7-Jan-2015.) $)
+    issubassa $p |- ( ( W e. AssAlg /\ .1. e. A /\ A C_ V ) ->
+      ( S e. AssAlg <-> ( A e. ( SubRing ` W ) /\ A e. L ) ) ) $=
+      ( casa wcel wss wa crg assaring adantl jca clmod assalmod csubrg cress co
+      w3a cfv simpl1 syl eqeltrrid simpl3 simpl2 issubrg syl21anbrc islss3 3syl
+      wb mpbir2and issubassa3 3ad2antl1 impbida ) FKLZCALZAEMZUDZBKLZAFUAUELZAD
+      LZNZVCVDNZVEVFVHFOLZFAUBUCZOLVBVANVEVHUTVIUTVAVBVDUFZFPUGVHVJBOGVDBOLVCBP
+      QUHVHVBVAUTVAVBVDUIZUTVAVBVDUJRAEFCIJUKULVHVFVBBSLZVLVDVMVCBTQVHUTFSLVFVB
+      VMNUOVKFTDAEFBGIHUMUNUPRUTVAVGVDVBABDFGHUQURUS $.
   $}
 
 
