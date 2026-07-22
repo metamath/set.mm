@@ -179305,6 +179305,31 @@ $)
       ( casa wcel clmod crg assalmod lmodring syl ) BDEBFEAGEBHABCIJ $.
   $}
 
+  ${
+    assa2ass.v $e |- V = ( Base ` W ) $.
+    assa2ass.f $e |- F = ( Scalar ` W ) $.
+    assa2ass.b $e |- B = ( Base ` F ) $.
+    assa2ass.m $e |- .* = ( .r ` F ) $.
+    assa2ass.s $e |- .x. = ( .s ` W ) $.
+    assa2ass.t $e |- .X. = ( .r ` W ) $.
+    $( Left- and right-associative property of an associative algebra.  Notice
+       that the scalars are commuted!  (Contributed by AV, 14-Aug-2019.)
+       (Proof shortened by Zhi Wang, 11-Sep-2025.) $)
+    assa2ass $p |- ( ( W e. AssAlg /\ ( A e. B /\ C e. B )
+                    /\ ( X e. V /\ Y e. V ) ) ->
+      ( ( A .x. X ) .X. ( C .x. Y ) ) = ( ( C .* A ) .x. ( X .X. Y ) ) ) $=
+      ( wcel wa co casa wceq simp1 simpr 3ad2ant2 clmod assalmod simpl lmodvscl
+      w3a syl3an 3ad2ant3 assaassr syl13anc assaass eqcomd lmodvsass oveq1d crg
+      3ad2ant1 assasca adantr adantl ringcld 3adant3 eqtrd 3eqtrd ) IUARZABRZCB
+      RZSZJHRZKHRZSZUJZAJDTZCKDTETZCVPKETDTZCVPDTZKETZCAGTZJKETDTZVOVHVJVPHRZVM
+      VQVRUBVHVKVNUCZVKVHVJVNVIVJUDZUEZVHIUFRZVKVIVNVLWCIUGZVIVJUHZVLVMUHZADFBH
+      IJLMPNUIUKZVNVHVMVKVLVMUDULZCBDEFHIVPKLMNPQUMUNVOVHVJWCVMVRVTUBWDWFWKWLVH
+      VJWCVMUJSVTVRCBDEFHIVPKLMNPQUOUPUNVOVTWAJDTZKETZWBVOWGVJVIVLVTWNUBVHVKWGV
+      NWHUTWFVKVHVIVNWIUEVNVHVLVKWJULZWGVJVIVLUJSZVSWMKEWPWMVSCADGFBHIJLMPNOUQU
+      PURUNVOVHWABRZVLVMWNWBUBWDVHVKWQVNVHVKSBFGCANOVHFUSRVKFIMVAVBVKVJVHWEVCVK
+      VIVHWIVCVDVEWOWLWABDEFHIJKLMNPQUOUNVFVG $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
