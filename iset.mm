@@ -179361,6 +179361,33 @@ $)
       EFHIJKLMNPQUOUNVEVF $.
   $}
 
+  ${
+    $d r x y B $.  $d r x y ph $.  $d x y V $.  $d r x y W $.
+    isassad.v $e |- ( ph -> V = ( Base ` W ) ) $.
+    isassad.f $e |- ( ph -> F = ( Scalar ` W ) ) $.
+    isassad.b $e |- ( ph -> B = ( Base ` F ) ) $.
+    isassad.s $e |- ( ph -> .x. = ( .s ` W ) ) $.
+    isassad.t $e |- ( ph -> .X. = ( .r ` W ) ) $.
+    isassad.1 $e |- ( ph -> W e. LMod ) $.
+    isassad.2 $e |- ( ph -> W e. Ring ) $.
+    isassad.4 $e |- ( ( ph /\ ( r e. B /\ x e. V /\ y e. V ) ) ->
+      ( ( r .x. x ) .X. y ) = ( r .x. ( x .X. y ) ) ) $.
+    isassad.5 $e |- ( ( ph /\ ( r e. B /\ x e. V /\ y e. V ) ) ->
+      ( x .X. ( r .x. y ) ) = ( r .x. ( x .X. y ) ) ) $.
+    $( Sufficient condition for being an associative algebra.  (Contributed by
+       Mario Carneiro, 5-Dec-2014.)  (Revised by SN, 2-Mar-2025.) $)
+    isassad $p |- ( ph -> W e. AssAlg ) $=
+      ( co clmod wcel crg wa cv cvsca cfv cmulr wceq cbs wral csca casa jca w3a
+      ralrimivvva fveq2d eqtrd oveqd eqidd eqeq12d anbi12d raleqbidv mpbid eqid
+      oveq123d isassa sylanbrc ) AIUAUBZIUCUBZUDJUEZBUEZIUFUGZTZCUEZIUHUGZTZVKV
+      LVOVPTZVMTZUIZVLVKVOVMTZVPTZVSUIZUDZCIUJUGZUKZBWEUKZJIULUGZUJUGZUKZIUMUBA
+      VIVJPQUNAVKVLETZVOFTZVKVLVOFTZETZUIZVLVKVOETZFTZWNUIZUDZCHUKZBHUKZJDUKWJA
+      WSJBCDHHAVKDUBVLHUBVOHUBUOUDWOWRRSUNUPAXAWGJDWIADGUJUGWIMAGWHUJLUQURAWTWF
+      BHWEKAWSWDCHWEKAWOVTWRWCAWLVQWNVSAWKVNVOVOFVPOAEVMVKVLNUSAVOUTVFAVKVKWMVR
+      EVMNAVKUTAFVPVLVOOUSVFZVAAWQWBWNVSAVLVLWPWAFVPOAVLUTAEVMVKVONUSVFXBVAVBVC
+      VCVCVDBCWIVMVPWHWEIJWEVEWHVEWIVEVMVEVPVEVGVH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
