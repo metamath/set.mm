@@ -179470,6 +179470,31 @@ $)
       LWOWP $.
   $}
 
+  ${
+    $d s t w L $.  $d s t S $.  $d t T $.  $d s t w V $.  $d s t w W $.
+    aspval.a $e |- A = ( AlgSpan ` W ) $.
+    aspval.v $e |- V = ( Base ` W ) $.
+    ${
+      aspval.l $e |- L = ( LSubSp ` W ) $.
+      $( Value of the algebraic closure operation inside an associative
+         algebra.  (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+      aspval $p |- ( ( W e. AssAlg /\ S C_ V ) -> ( A ` S ) =
+        |^| { t e. ( ( SubRing ` W ) i^i L ) | S C_ t } ) $=
+        ( vs vw casa wcel wss cfv cv csubrg cbs cvv syl cpw crab cint cmpt wceq
+        wa cin casp df-asp fveq2 eqtr4di pweqd ineq12d rabeqdv inteqd mpteq12dv
+        clss id basfn elex funfvex funfni sylancr eqeltrid pwexd mptexd fvmptd3
+        eqtrid fveq1d adantr eqid sseq1 rabbidv wb elpw2g biimpar wrex assaring
+        wfn crg subrgid clmod assalmod lss1 elind sseq2 rspcev sylan intexrabim
+        eqtrd ) FLMZCENZUFZCBOZCJEUAZJPZAPZNZAFQOZDUGZUBZUCZUDZOZCWQNZAWTUBZUCZ
+        WKWNXDUEWLWKCBXCWKBFUHOXCGWKKFJKPZROZUAZWRAXHQOZXHUQOZUGZUBZUCZUDXCLUHS
+        KAJUIXHFUEZJXJXOWOXBXPXIEXPXIFROZEXHFRUJHUKULXPXNXAXPWRAXMWTXPXKWSXLDXH
+        FQUJXPXLFUQODXHFUQUJIUKUMUNUOUPWKURWKJWOXBSWKESWKEXQSHWKRSVSFSMXQSMZUSF
+        LUTXRSFRFRVAVBVCVDZVEVFVGVHVIVJWMJCXBXGWOXCSXCVKWPCUEZXAXFXTWRXEAWTWPCW
+        QVLVMUOWKCWOMZWLWKESMYAWLVNXSCESVOTVPWMXEAWTVQZXGSMWKEWTMWLYBWKWSDEWKFV
+        TMEWSMFVREFHWATWKFWBMEDMFWCDEFHIWDTWEXEWLAEWTWQECWFWGWHXEAWTWITVGWJ $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
