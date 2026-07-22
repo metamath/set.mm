@@ -179540,6 +179540,12 @@ $)
       VEKVFVIKUTVGVBHVDUTVAVDJZUBUSVGVBUCUQURUSVLUECBVAUFRUGVHVEUHRUTUQCDKVJVFS
       UQURUSUIUTCBDUQURUSUJUQURUSUKUOHACVCDEFGVCUPZTULUQURVKVISUSHABVCDEFGVMTUM
       UN $.
+
+    $( A set of vectors is a subset of its span.  (Contributed by Mario
+       Carneiro, 7-Jan-2015.) $)
+    aspssid $p |- ( ( W e. AssAlg /\ S C_ V ) -> S C_ ( A ` S ) ) $=
+      ( vt casa wcel wss wa cv csubrg cfv clss cin crab cint ssintub eqid
+      aspval sseqtrrid ) DHIBCJKBGLJGDMNDONZPZQRBBANGBUDSGABUCCDEFUCTUAUB $.
   $}
 
 
