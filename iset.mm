@@ -179388,6 +179388,27 @@ $)
       VCVCVDBCWIVMVPWHWEIJWEVEWHVEWIVEVMVEVPVEVGVH $.
   $}
 
+  ${
+    $d x y z A $.  $d x y z L $.  $d x y z S $.  $d x y z W $.
+    issubassa.s $e |- S = ( W |`s A ) $.
+    issubassa.l $e |- L = ( LSubSp ` W ) $.
+    $( A subring that is also a subspace is a subalgebra.  The key theorem is
+       ~ islss3 .  (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+    issubassa3 $p |- ( ( W e. AssAlg /\ ( A e. ( SubRing ` W ) /\ A e. L ) ) ->
+      S e. AssAlg ) $=
+      ( vy vz vx casa wcel cfv wa csca cbs wceq ad2antrl eqid cv co cvsca cmulr
+      csubrg subrgbas ressscag adantrr eqidd ressvscag simprl ressmulrg syl2anc
+      simpl clmod assalmod simpr lsslmod syl2an crg subrgring w3a idd wss sseld
+      subrgss 3anim123d imp assaass adantlr syldan assaassr isassad ) DJKZADUCL
+      ZKZACKZMZMZGHDNLZOLZDUALZDUBLZVRABIVNABOLPVLVOADBEUDQVLVNVRBNLPVOAVRDBVMJ
+      EVRRZUEUFVQVSUGVLVNVTBUALPVOAVTDBVMJEVTRZUHUFVQVNVLWABUBLPVLVNVOUIVLVPULA
+      DBWAVMJEWARZUJUKVLDUMKVOBUMKVPDUNVNVOUOCADBEFUPUQVNBURKVLVOADBEUSQVQISZVS
+      KZGSZAKZHSZAKZUTZWFWGDOLZKZWIWLKZUTZWEWGVTTWIWATWEWGWIWATVTTZPZVQWKWOVQWF
+      WFWHWMWJWNVQWFVAVQAWLWGVNAWLVBVLVOAWLDWLRZVDQZVCVQAWLWIWSVCVEVFZVLWOWQVPW
+      EVSVTWAVRWLDWGWIWRWBVSRZWCWDVGVHVIVQWKWOWGWEWIVTTWATWPPZWTVLWOXBVPWEVSVTW
+      AVRWLDWGWIWRWBXAWCWDVJVHVIVK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
