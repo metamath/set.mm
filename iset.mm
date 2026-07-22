@@ -179257,6 +179257,13 @@ $)
       ( ( A .x. X ) .X. Y ) = ( A .x. ( X .X. Y ) ) ) $=
       ( casa wcel w3a wa co wceq assalem simpld ) GOPABPHFPIFPQRAHCSIDSAHIDSCSZ
       THAICSDSUCTABCDEFGHIJKLMNUAUB $.
+
+    $( Right-associative property of an associative algebra.  (Contributed by
+       Mario Carneiro, 29-Dec-2014.) $)
+    assaassr $p |- ( ( W e. AssAlg /\ ( A e. B /\ X e. V /\ Y e. V ) ) ->
+      ( X .X. ( A .x. Y ) ) = ( A .x. ( X .X. Y ) ) ) $=
+      ( casa wcel w3a wa co wceq assalem simprd ) GOPABPHFPIFPQRAHCSIDSAHIDSCSZ
+      THAICSDSUCTABCDEFGHIJKLMNUAUB $.
   $}
 
 
