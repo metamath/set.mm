@@ -179560,6 +179560,32 @@ $)
       aspval sseqtrrid ) DHIBCJKBGLJGDMNDONZPZQRBBANGBUDSGABUCCDEFUCTUAUB $.
   $}
 
+  ${
+    $d .1. q x $.  $d .1. w x $.  $d .x. q x $.  $d .x. w x $.  $d F j k $.
+    $d K j x $.  $d K q x $.  $d K w x $.  $d W k $.  $d W q x $.  $d W w x $.
+    $d X x $.
+    asclfval.a $e |- A = ( algSc ` W ) $.
+    asclfval.f $e |- F = ( Scalar ` W ) $.
+    asclfval.k $e |- K = ( Base ` F ) $.
+    asclfval.s $e |- .x. = ( .s ` W ) $.
+    asclfval.o $e |- .1. = ( 1r ` W ) $.
+    $( Function value of the algebra scalar lifting function.  (Contributed by
+       Mario Carneiro, 8-Mar-2015.) $)
+    asclfval $p |- A = ( x e. K |-> ( x .x. .1. ) ) $=
+      ( vw vj cfv cv wcel cvv csca cbs vq vk vu cascl co cmpt cur cvsca df-ascl
+      mptrcl wex mptmex basm exlimiv cdm wrel cslot mptrel df-slot releqi mpbir
+      scaid relelfvdm mpan eleq2s elexd 3syl wceq fveq2 eqtr4di fveq2d oveq123d
+      cnx eqidd mpteq12dv id wfn scaslid slotex eqeltrid funfvex funfni sylancr
+      basfn mptexd fvmptd3 eleq2d pm5.21nii eqriv eqtri ) BGUDOZAFAPZDCUEZUFZHU
+      AWKWNUAPZWKQGRQZWOWNQZMRAMPZSOZTOZWLWRUGOZWRUHOZUEZUFZUDWOGAMUIZUJWQNPZFQ
+      ZNUKUBPZEQZUBUKZWPANFWMWOULXGXJNXFFUBEJUMUNXJGSUOZXIGXKQZUBXLXHGSOZESUPZX
+      HXMQXLXNVMSOZUQZUPZXQUCRXOUCPOZUFZUPUCRXRURXPXSUCXOUSUTVASXPVBUTVAXHGSVCV
+      DIVEUNVFVGWPWKWNWOWPMGXDWNRUDRXEWRGVHZAWTXCFWMXTWTETOZFXTWSETXTWSXMEWRGSV
+      IIVJVKJVJXTWLWLXADXBCXTXBGUHOCWRGUHVIKVJXTWLVNXTXAGUGODWRGUGVILVJVLVOWPVP
+      WPAFWMRWPFYARJWPTRVQERQYARQZWDWPEXMRIGSRVRVSVTYBRETETWAWBWCVTWEWFWGWHWIWJ
+      $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
