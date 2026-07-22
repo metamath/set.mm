@@ -179492,6 +179492,19 @@ $)
         LUTXRSFRFRVAVBVCVDZVEVFVGVHVIVJWMJCXBXGWOXCSXCVKWPCUEZXAXFXTWRXEAWTWPCW
         QVLVMUOWKCWOMZWLWKESMYAWLVNXSCESVOTVPWMXEAWTVQZXGSMWKEWTMWLYBWKWSDEWKFV
         TMEWSMFVREFHWATWKFWBMEDMFWCDEFHIWDTWEXEWLAEWTWQECWFWGWHXEAWTWITVGWJ $.
+
+      ${
+        $d L t x $.  $d S t x $.  $d V t x $.  $d W t x $.
+        $( The algebraic span of a set of vectors is a vector subspace.
+           (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+        asplss $p |- ( ( W e. AssAlg /\ S C_ V ) -> ( A ` S ) e. L ) $=
+          ( vt vx casa wcel wss wa cfv cv csubrg cin adantr syl crab cint clmod
+          aspval wex assalmod ssrab2 inss2 sstri a1i sseq2 crg assaring subrgid
+          lss1 elind simpr elrabd elex2 lssintclm syl3anc eqeltrd ) EKLZBDMZNZB
+          AOBIPZMZIEQOZCRZUAZUBZCIABCDEFGHUDVEEUCLZVJCMZJPVJLJUEZVKCLVCVLVDEUFZ
+          SVMVEVJVICVGIVIUGVHCUHUIUJVEDVJLVNVEVGVDIDVIVFDBUKVCDVILVDVCVHCDVCEUL
+          LDVHLEUMDEGUNTVCVLDCLVOCDEGHUOTUPSVCVDUQURJDVJUSTJVJCEHUTVAVB $.
+      $}
     $}
   $}
 
