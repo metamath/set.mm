@@ -179266,6 +179266,17 @@ $)
       THAICSDSUCTABCDEFGHIJKLMNUAUB $.
   $}
 
+  ${
+    $d x y z W $.
+    $( An associative algebra is a left module.  (Contributed by Mario
+       Carneiro, 5-Dec-2014.) $)
+    assalmod $p |- ( W e. AssAlg -> W e. LMod ) $=
+      ( vz vx vy casa wcel clmod crg wa cv cvsca cfv co wceq cbs wral csca eqid
+      cmulr isassa simplbi simpld ) AEFZAGFZAHFZUCUDUEIBJZCJZAKLZMDJZASLZMUFUGU
+      IUJMUHMZNUGUFUIUHMUJMUKNIDAOLZPCULPBAQLZOLZPCDUNUHUJUMULABULRUMRUNRUHRUJR
+      TUAUB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
