@@ -179424,6 +179424,52 @@ $)
       VMNUOVKFTDAEFBGIHUMUNUPRUTVAVGVDVBABDFGHUQURUS $.
   $}
 
+  ${
+    $d r w x y z K $.  $d r w x y z L $.  $d r w x y z P $.  $d r w x y z ph $.
+    $d w x y z B $.
+    assapropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    assapropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    assapropd.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    assapropd.4 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( .r ` K ) y ) = ( x ( .r ` L ) y ) ) $.
+    assapropd.5 $e |- ( ph -> F = ( Scalar ` K ) ) $.
+    assapropd.6 $e |- ( ph -> F = ( Scalar ` L ) ) $.
+    assapropd.7 $e |- P = ( Base ` F ) $.
+    assapropd.8 $e |- ( ( ph /\ ( x e. P /\ y e. B ) ) ->
+      ( x ( .s ` K ) y ) = ( x ( .s ` L ) y ) ) $.
+    $( If two structures have the same components (properties), one is an
+       associative algebra iff the other one is.  (Contributed by Mario
+       Carneiro, 8-Feb-2015.) $)
+    assapropd $p |- ( ph -> ( K e. AssAlg <-> L e. AssAlg ) ) $=
+      ( wcel co wceq wral vr vz vw clmod wa casa wi assalmod assaring lmodpropd
+      crg jca a1i imbitrrid ringpropd jcad wb cv cvsca cfv cmulr anbi12d adantr
+      cbs csca simpll simplrl simprl fveq2d eqtrid syl eleqtrd simprrl lmodvscl
+      syl3anc eleqtrrd simprrr oveqrspc2v syl12anc oveq1d eqtrd simplrr ringcld
+      eqid eqeq12d anassrs 2ralbidva ralbidva raleqdv raleqbidv 3bitr3d 3bitr4g
+      oveq2d isassa ex pm5.21ndd ) AGUDQZGUKQZUEZGUFQZHUFQZWTWSUGAWTWQWRGUHGUIU
+      LUMAXAWQWRXAWQAHUDQZHUHABCDEFGHIJKMNOPUJZUNXAWRAHUKQZHUIABCDGHIJKLUOZUNUP
+      AWSWTXAUQAWSUEZWSUAURZUBURZGUSUTZRZUCURZGVAUTZRZXGXHXKXLRZXIRZSZXHXGXKXIR
+      ZXLRZXOSZUEZUCGVDUTZTZUBYATZUAGVEUTZVDUTZTZUEXBXDUEZXGXHHUSUTZRZXKHVAUTZR
+      ZXGXHXKYJRZYHRZSZXHXGXKYHRZYJRZYMSZUEZUCHVDUTZTZUBYSTZUAHVEUTZVDUTZTZUEWT
+      XAXFWSYGYFUUDAWSYGUQWSAWQXBWRXDXCXEVBVCXFXTUCDTZUBDTZUAETYRUCDTZUBDTZUAET
+      YFUUDXFUUFUUHUAEXFXGEQZUEXTYRUBUCDDXFUUIXHDQZXKDQZUEZXTYRUQXFUUIUULUEZUEZ
+      XPYNXSYQUUNXMYKXOYMUUNXMXJXKYJRZYKUUNAXJDQUUKXMUUOSAWSUUMVFZUUNXJYADUUNWQ
+      XGYEQZXHYAQXJYAQAWQWRUUMVGZUUNXGEYEXFUUIUULVHZUUNAEYESZUUPAEFVDUTZYEOAFYD
+      VDMVIVJZVKVLZUUNXHDYAXFUUIUUJUUKVMZUUNADYASZUUPIVKZVLZXGXIYDYEYAGXHYAWDZY
+      DWDZXIWDZYEWDZVNVOUVFVPXFUUIUUJUUKVQZABCDDXLYJXJXKLVRVSUUNXJYIXKYJUUNAUUI
+      UUJXJYISUUPUUSUVDABCEDXIYHXGXHPVRVSVTWAUUNXOXGXNYHRZYMUUNAUUIXNDQXOUVMSUU
+      PUUSUUNXNYADUUNYAGXLXHXKUVHXLWDZAWQWRUUMWBUVGUUNXKDYAUVLUVFVLZWCUVFVPABCE
+      DXIYHXGXNPVRVSUUNXNYLXGYHUUNAUUJUUKXNYLSUUPUVDUVLABCDDXLYJXHXKLVRVSWMWAZW
+      EUUNXRYPXOYMUUNXRXHXQYJRZYPUUNAUUJXQDQXRUVQSUUPUVDUUNXQYADUUNWQUUQXKYAQXQ
+      YAQUURUVCUVOXGXIYDYEYAGXKUVHUVIUVJUVKVNVOUVFVPABCDDXLYJXHXQLVRVSUUNXQYOXH
+      YJUUNAUUIUUKXQYOSUUPUUSUVLABCEDXIYHXGXKPVRVSWMWAUVPWEVBWFWGWHXFUUFYCUAEYE
+      AUUTWSUVBVCXFUUEYBUBDYAAUVEWSIVCZXFXTUCDYAUVRWIWJWJXFUUHUUAUAEUUCAEUUCSWS
+      AEUVAUUCOAFUUBVDNVIVJVCXFUUGYTUBDYSADYSSWSJVCZXFYRUCDYSUVSWIWJWJWKVBUBUCY
+      EXIXLYDYAGUAUVHUVIUVKUVJUVNWNUBUCUUCYHYJUUBYSHUAYSWDUUBWDUUCWDYHWDYJWDWNW
+      LWOWP $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
