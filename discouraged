@@ -12889,7 +12889,7 @@
 "scott0OLD" is used by "kardenOLD".
 "scott0OLD" is used by "scott0bOLD".
 "scott0OLD" is used by "scott0bsOLD".
-"scott0bsOLD" is used by "hta".
+"scott0bsOLD" is used by "htaOLD".
 "scottexOLD" is used by "cplem2OLD".
 "scottexOLD" is used by "kardexOLD".
 "scottexOLD" is used by "scottex2OLD".
@@ -17058,6 +17058,7 @@ New usage of "hsupss" is discouraged (1 uses).
 New usage of "hsupunss" is discouraged (1 uses).
 New usage of "hsupval" is discouraged (6 uses).
 New usage of "hsupval2" is discouraged (1 uses).
+New usage of "htaOLD" is discouraged (0 uses).
 New usage of "htth" is discouraged (1 uses).
 New usage of "htthlem" is discouraged (1 uses).
 New usage of "hv2neg" is discouraged (2 uses).
@@ -20400,6 +20401,7 @@ Proof modification of "hbra2VD" is discouraged (26 steps).
 Proof modification of "helloworld" is discouraged (29 steps).
 Proof modification of "hhssbnOLD" is discouraged (39 steps).
 Proof modification of "hirstL-ax3" is discouraged (34 steps).
+Proof modification of "htaOLD" is discouraged (106 steps).
 Proof modification of "icccmpALT" is discouraged (71 steps).
 Proof modification of "id1" is discouraged (2 steps).
 Proof modification of "idALT" is discouraged (26 steps).
