@@ -209725,6 +209725,11 @@ htmldef "AE" as
   "<IMG SRC='exists.gif' WIDTH=9 HEIGHT=19 ALT='E.' TITLE='E.'>";
   althtmldef "AE" as '&forall;&exist;'; /* &#8704;&#8707; */
   latexdef "AE" as "\forall\exists";
+htmldef "AE!" as
+  "<IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 ALT=' A.' TITLE='A.'>" +
+  "<IMG SRC='_e1.gif' WIDTH=12 HEIGHT=19 ALT='E!' TITLE='E!'>";
+  althtmldef "AE!" as '&forall;&exist;!'; /* &#8704;&#8707;! */
+  latexdef "AE!" as "\forall\exists{!}";
 /* End of David A. Wheeler's mathbox */
 
 /* End of typesetting definition section */
@@ -215963,5 +215968,296 @@ $)
       BEDFZCEDFZACGBGACDHBDHZQBIZRCIZJZJSTJABCDDKUBTSUBTTJTUATTRQCBCBDLMNTOPNP
       $.
   $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Allsome one quantifier
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  These are definitions and proofs involving the "allsome one" quantifier,
+  which extends the "allsome" quantifier of the previous section in the same
+  way that ` E! ` ( ~ df-eu ) extends ` E. ` .
+
+  Some systems extend "there exists" by appending a character to it.  If a
+  system provides such an extension, it should provide it for allsome as well:
+  append the same character, let it modify allsome's existence conjunct, and
+  change nothing else.  Appending "!" gives "allsome one", so
+  ` AE! x ( ph -> ps ) ` means that ` ps ` is true whenever ` ph ` is true and
+  that exactly one ` x ` satisfies ` ph ` .
+
+  This is what the English word "the" usually does.  "The king is hungry"
+  claims that a king exists, that there is only one, and that he is hungry, and
+  the form ` AE! x ( ph -> ps ) ` claims exactly that kind of statement
+  (specifically when ` ph ` means ` x ` is a king and ` ps ` means ` x ` is
+  hungry).  English says all of that in a single phrase, and the first two have
+  a dedicated word ("the") for the construct.  Many other languages have their
+  own dedicated way of saying this.  Languages reserve that kind of compression
+  for what their speakers need constantly, which is a good reason for a formal
+  notation to be able to say it just as directly, rather than spelling it out
+  afresh as a conjunction of two quantified formulas every time it comes up.
+  Russell analyzed such _definite descriptions_ with this apparatus in "On
+  Denoting", where his example of a phrase that appears to refer to someone but
+  in fact denotes no one at all is "the present King of France", item (1) of
+  [Russell1905] p. 479, France being a republic that has no king.  Write "the
+  king is hungry" as ` A. x ( ph -> ps ) ` instead and only the last of those
+  three claims survives.  The existence claim is silently gone, since that
+  formula is vacuously true when there is no king, and the uniqueness claim is
+  silently gone as well, since that formula holds just the same when there are
+  five kings.  Russell reached the opposite verdict for the same example,
+  remarking that every proposition of the form "the present King of France ..."
+  is false, [Russell1905] p. 482.  The reason to care is the reason that
+  motivates allsome, only more so.
+
+  Note that this is not merely a way of writing ` E! x ( ph /\ ps ) ` .
+  Reading ` ph ` as "is a king" and ` ps ` as "is hungry",
+  ` E! x ( ph /\ ps ) ` says that there is exactly one hungry king, whereas
+  ` AE! x ( ph -> ps ) ` says that there is exactly one king and that he is
+  hungry.  The first is true in a region with five kings exactly one of whom
+  is hungry; the second is false there.  Uniqueness attaches to the
+  antecedent, not to the conjunction.  See ~ dfalseu2 for the exact
+  relationship between the two and ~ alseueu for the one direction that does
+  hold.
+
+  Naming: "alseu" is allsome ("als", as in ~ df-als ) extended with "exactly
+  one" ("eu", as in ~ df-eu ).  The form restricted to a class is prefixed
+  with "r", following ~ df-rals and ~ df-reu , giving ~ df-ralseu .
+
+  This database is intuitionistic, but nothing in this section depends on
+  excluded middle, so every statement here has the same form as its counterpart
+  in set.mm.  That is unlike the allsome section above, where results that
+  recover a witness from ` A =/= (/) ` are omitted or restated in terms of
+  inhabitedness.
+
+  Soundness: ~ df-alseu and ~ df-ralseu are eliminable and conservative
+  directly, so neither needs a justification theorem.  Definitions are required
+  to be eliminable and conservative; see the section comment for ~ df-bi .
+  Each is a biconditional whose left side is a new syntax construct
+  ( ~ walseu or ~ wralseu ) applied to distinct metavariables, and whose right
+  side uses only constructs introduced earlier ( ` A. ` , ` E! ` , ` /\ ` ,
+  ` -> ` , and the restricted quantifiers ~ df-ral and ~ df-reu ), so any
+  occurrence of the new construct can be replaced by the right side, which is
+  eliminability.  Conservativity follows, since a proof of a statement not
+  mentioning ` AE! ` can have every use of the definition replaced in this way.
+  Every variable occurring on the right side already occurs on the left side,
+  so no dummy variable is introduced, and introducing a dummy variable whose
+  choice must be shown not to matter is the only circumstance here that would
+  call for a justification theorem.
+
+  For more, see "The Allsome Quantifier" by David A. Wheeler at
+  ~ https://dwheeler.com/essays/allsome.html
+
+$)
+
+  $c AE! $. $( "inverted A" followed by "backwards E" followed by an
+    exclamation point (read: "all some one") $)
+
+  $( Extend wff definition to include "all some one" applied to a top-level
+     implication, which means ` ps ` is true whenever ` ph ` is true, and
+     exactly one ` x ` satisfies ` ph ` .  (Contributed by David A. Wheeler,
+     22-Jul-2026.) $)
+  walseu $a wff AE! x ( ph -> ps ) $.
+
+  $( Extend wff definition to include "all some one" applied to a class, which
+     means ` ps ` is true whenever ` ph ` is true for ` x ` in ` A ` , and
+     exactly one ` x ` in ` A ` satisfies ` ph ` .  (Contributed by David A.
+     Wheeler, 22-Jul-2026.) $)
+  wralseu $a wff AE! x e. A ( ph -> ps ) $.
+
+  $( Define "all some one" applied to a top-level implication, which means
+     ` ps ` is true whenever ` ph ` is true and exactly one ` x ` satisfies
+     ` ph ` .  (Contributed by David A. Wheeler, 22-Jul-2026.) $)
+  df-alseu $a |- ( AE! x ( ph -> ps ) <-> ( A. x ( ph -> ps ) /\ E! x ph ) ) $.
+
+  $( Define "all some one" applied to a class, which means ` ps ` is true
+     whenever ` ph ` is true for ` x ` in ` A ` , and exactly one ` x ` in
+     ` A ` satisfies ` ph ` .  (Contributed by David A. Wheeler,
+     22-Jul-2026.) $)
+  df-ralseu $a |- ( AE! x e. A ( ph -> ps ) <->
+      ( A. x e. A ( ph -> ps ) /\ E! x e. A ph ) ) $.
+
+  $( The bounded "all some one" form is the general form with the class
+     membership folded into the antecedent.  This is the "all some one"
+     counterpart of ~ dfrals2 .  (Contributed by David A. Wheeler,
+     22-Jul-2026.) $)
+  dfralseu2 $p |- ( AE! x e. A ( ph -> ps ) <->
+      AE! x ( ( x e. A /\ ph ) -> ps ) ) $=
+    ( wi wral wreu wa cv wcel wal weu wralseu walseu df-ral impexp albii bitr4i
+    df-reu anbi12i df-ralseu df-alseu 3bitr4i ) ABEZCDFZACDGZHCIDJZAHZBEZCKZUHC
+    LZHABCDMUHBCNUEUJUFUKUEUGUDEZCKUJUDCDOUIULCUGABPQRACDSTABCDUAUHBCUBUC $.
+
+  $( "All some one" implies "all some": requiring exactly one witness is
+     stronger than requiring at least one.  Any consequence of an allsome
+     statement is therefore a consequence of the corresponding "all some one"
+     statement, which is how ~ alseu-no-surprise is proved.  (Contributed by
+     David A. Wheeler, 22-Jul-2026.) $)
+  alseuals $p |- ( AE! x ( ph -> ps ) -> AE x ( ph -> ps ) ) $=
+    ( wi wal weu wa wex walseu wals euex anim2i df-alseu df-als 3imtr4i ) ABDCE
+    ZACFZGPACHZGABCIABCJQRPACKLABCMABCNO $.
+
+  $( "All some one" restricted to a class implies "all some" restricted to that
+     class.  Restricted counterpart of ~ alseuals .  (Contributed by David A.
+     Wheeler, 22-Jul-2026.) $)
+  ralseurals $p |- ( AE! x e. A ( ph -> ps ) ->
+      AE x e. A ( ph -> ps ) ) $=
+    ( wi wral wreu wrex wralseu wrals reurex anim2i df-ralseu df-rals 3imtr4i
+    wa ) ABECDFZACDGZPQACDHZPABCDIABCDJRSQACDKLABCDMABCDNO $.
+
+  ${
+    alseud.1 $e |- ( ph -> A. x ( ps -> ch ) ) $.
+    alseud.2 $e |- ( ph -> E! x ps ) $.
+    $( Introduction rule:  "all some one" holds if the "for all" part holds and
+       the antecedent has exactly one witness.  This is the converse of
+       ~ alseu1d and ~ alseu2d taken together.  (Contributed by David A.
+       Wheeler, 22-Jul-2026.) $)
+    alseud $p |- ( ph -> AE! x ( ps -> ch ) ) $=
+      ( wi wal weu walseu df-alseu sylanbrc ) ABCGDHBDIBCDJEFBCDKL $.
+  $}
+
+  ${
+    ralseud.1 $e |- ( ph -> A. x e. A ( ps -> ch ) ) $.
+    ralseud.2 $e |- ( ph -> E! x e. A ps ) $.
+    $( Introduction rule for "all some one" restricted to a class.  This is the
+       converse of ~ ralseu1d and ~ ralseu2d taken together.  (Contributed by
+       David A. Wheeler, 22-Jul-2026.) $)
+    ralseud $p |- ( ph -> AE! x e. A ( ps -> ch ) ) $=
+      ( wi wral wreu wralseu df-ralseu sylanbrc ) ABCHDEIBDEJBCDEKFGBCDELM $.
+  $}
+
+  ${
+    alseu1d.1 $e |- ( ph -> AE! x ( ps -> ch ) ) $.
+    $( Deduction rule:  Given "all some one" applied to a top-level inference,
+       you can extract the "for all" part.  (Contributed by David A. Wheeler,
+       22-Jul-2026.) $)
+    alseu1d $p |- ( ph -> A. x ( ps -> ch ) ) $=
+      ( wi wal weu walseu wa df-alseu sylib simpld ) ABCFDGZBDHZABCDINOJEBCDKLM
+      $.
+  $}
+
+  ${
+    alseu2d.1 $e |- ( ph -> AE! x ( ps -> ch ) ) $.
+    $( Deduction rule:  Given "all some one" applied to a top-level inference,
+       you can extract the "exactly one" part.  (Contributed by David A.
+       Wheeler, 22-Jul-2026.) $)
+    alseu2d $p |- ( ph -> E! x ps ) $=
+      ( wi wal weu walseu wa df-alseu sylib simprd ) ABCFDGZBDHZABCDINOJEBCDKLM
+      $.
+  $}
+
+  ${
+    ralseu1d.1 $e |- ( ph -> AE! x e. A ( ps -> ch ) ) $.
+    $( Deduction rule:  Given "all some one" applied to a class, you can
+       extract the "for all" part.  (Contributed by David A. Wheeler,
+       22-Jul-2026.) $)
+    ralseu1d $p |- ( ph -> A. x e. A ( ps -> ch ) ) $=
+      ( wi wral wreu wralseu wa df-ralseu sylib simpld ) ABCGDEHZBDEIZABCDEJOPK
+      FBCDELMN $.
+  $}
+
+  ${
+    ralseu2d.1 $e |- ( ph -> AE! x e. A ( ps -> ch ) ) $.
+    $( Deduction rule:  Given "all some one" applied to a class, you can
+       extract the "exactly one" part.  Note that the witness must satisfy the
+       antecedent ` ps ` , not merely be a member of ` A ` .  (Contributed by
+       David A. Wheeler, 22-Jul-2026.) $)
+    ralseu2d $p |- ( ph -> E! x e. A ps ) $=
+      ( wi wral wreu wralseu wa df-ralseu sylib simprd ) ABCGDEHZBDEIZABCDEJOPK
+      FBCDELMN $.
+  $}
+
+  ${
+    alseubii.1 $e |- ( ph <-> ch ) $.
+    alseubii.2 $e |- ( ps <-> th ) $.
+    $( Congruence: equivalents may be substituted inside an "all some one".
+       This is the "all some one" counterpart of ~ alsbii .  (Contributed by
+       David A. Wheeler, 22-Jul-2026.) $)
+    alseubii $p |- ( AE! x ( ph -> ps ) <-> AE! x ( ch -> th ) ) $=
+      ( wi wal weu wa walseu imbi12i albii eubii anbi12i df-alseu 3bitr4i ) ABH
+      ZEIZAEJZKCDHZEIZCEJZKABELCDELTUCUAUDSUBEACBDFGMNACEFOPABEQCDEQR $.
+  $}
+
+  ${
+    ralseubii.1 $e |- ( ph <-> ch ) $.
+    ralseubii.2 $e |- ( ps <-> th ) $.
+    $( Congruence for "all some one" restricted to a class.  This is the "all
+       some one" counterpart of ~ ralsbii .  (Contributed by David A. Wheeler,
+       22-Jul-2026.) $)
+    ralseubii $p |- ( AE! x e. A ( ph -> ps ) <->
+        AE! x e. A ( ch -> th ) ) $=
+      ( wi wral wreu wa wralseu imbi12i ralbii reubii anbi12i df-ralseu 3bitr4i
+      ) ABIZEFJZAEFKZLCDIZEFJZCEFKZLABEFMCDEFMUAUDUBUETUCEFACBDGHNOACEFGPQABEFR
+      CDEFRS $.
+  $}
+
+  ${
+    nfalseu.1 $e |- F/ x ph $.
+    nfalseu.2 $e |- F/ x ps $.
+    $( Bound-variable hypothesis builder for "all some one".  This is the "all
+       some one" counterpart of ~ nfals .  Unlike the set.mm version of this
+       theorem, no disjoint variable condition is needed, because ~ nfeu here
+       does not require one.  (Contributed by David A. Wheeler,
+       22-Jul-2026.) $)
+    nfalseu $p |- F/ x AE! y ( ph -> ps ) $=
+      ( walseu wi wal weu wa df-alseu nfim nfal nfeu nfan nfxfr ) ABDGABHZDIZAD
+      JZKCABDLSTCRCDABCEFMNACDEOPQ $.
+  $}
+
+  ${
+    $d x y $.
+    nfralseu.1 $e |- F/_ x A $.
+    nfralseu.2 $e |- F/ x ph $.
+    nfralseu.3 $e |- F/ x ps $.
+    $( Bound-variable hypothesis builder for "all some one" restricted to a
+       class.  This is the "all some one" counterpart of ~ nfrals .
+       (Contributed by David A. Wheeler, 22-Jul-2026.) $)
+    nfralseu $p |- F/ x AE! y e. A ( ph -> ps ) $=
+      ( wralseu wi wral wreu wa df-ralseu nfim nfralw nfreuw nfan nfxfr ) ABDEI
+      ABJZDEKZADELZMCABDENUAUBCTCDEFABCGHOPACDEFGQRS $.
+  $}
+
+  $( An "all some one" statement is equivalent to its universal part conjoined
+     with the claim that exactly one ` x ` satisfies both ` ph ` and ` ps ` .
+     In other words, given ` A. x ( ph -> ps ) ` , requiring exactly one ` x `
+     to satisfy ` ph ` , which is what ~ df-alseu requires, and requiring
+     exactly one ` x ` to satisfy ` ( ph /\ ps ) ` come to the same thing.
+     Read ` ph ` as "is a king" and ` ps ` as "is hungry": if every king is
+     hungry, then "there is exactly one king" and "there is exactly one hungry
+     king" say the same thing, so either of them, together with "every king is
+     hungry", gives "the king is hungry".
+
+     The universal conjunct is what makes that work, and it cannot be dropped.
+     ` E! x ( ph /\ ps ) ` on its own is strictly weaker than
+     ` AE! x ( ph -> ps ) ` , since it is satisfied when many things are ` ph `
+     and just one of those is ` ps ` , as in a region with five kings exactly
+     one of whom is hungry; see ~ alseueu for the one direction that does hold
+     without it.  Uniqueness attaches to the antecedent, not to the
+     conjunction.  Russell's analysis of a definite description is built the
+     same way: its uniqueness clause constrains the description predicate
+     alone, while the predication is a separate conjunct.  See his worked
+     example of "the father of Charles II was executed", [Russell1905] p. 482.
+     (Contributed by David A. Wheeler, 22-Jul-2026.) $)
+  dfalseu2 $p |- ( AE! x ( ph -> ps ) <->
+      ( A. x ( ph -> ps ) /\ E! x ( ph /\ ps ) ) ) $=
+    ( walseu wi wal weu wa df-alseu nfa1 wb sp pm4.71 sylib eubid pm5.32i bitri
+    ) ABCDABEZCFZACGZHSABHZCGZHABCISTUBSAUACRCJSRAUAKRCLABMNOPQ $.
+
+  $( "The ` ph ` is ` ps ` " implies that exactly one thing is both ` ph ` and
+     ` ps ` .  This is the half of ~ dfalseu2 that drops the universal
+     conjunct; it does not reverse, so ` E! x ( ph /\ ps ) ` cannot be used in
+     place of an "all some one" statement.  (Contributed by David A. Wheeler,
+     22-Jul-2026.) $)
+  alseueu $p |- ( AE! x ( ph -> ps ) -> E! x ( ph /\ ps ) ) $=
+    ( walseu wi wal wa weu dfalseu2 simprbi ) ABCDABECFABGCHABCIJ $.
+
+  $( Demonstrate that there is never a "surprise" when using the "all some one"
+     quantifier, that is, it is never possible for the consequent to be both
+     always true and always false.  This follows from ~ als-no-surprise by
+     ~ alseuals .  See ~ als-no-surprise for why ordinary "for all" with
+     implication has no such property.  (Contributed by David A. Wheeler,
+     22-Jul-2026.) $)
+  alseu-no-surprise $p |- -. ( AE! x ( ph -> ps ) /\
+      AE! x ( ph -> -. ps ) ) $=
+    ( walseu wn wa wals als-no-surprise alseuals anim12i mto ) ABCDZABEZCDZFABC
+    GZAMCGZFABCHLONPABCIAMCIJK $.
+
 
 $( (End of David A. Wheeler's mathbox.) $)
