@@ -179275,6 +179275,14 @@ $)
       cmulr isassa simplbi simpld ) AEFZAGFZAHFZUCUDUEIBJZCJZAKLZMDJZASLZMUFUGU
       IUJMUHMZNUGUFUIUHMUJMUKNIDAOLZPCULPBAQLZOLZPCDUNUHUJUMULABULRUMRUNRUHRUJR
       TUAUB $.
+
+    $( An associative algebra is a ring.  (Contributed by Mario Carneiro,
+       5-Dec-2014.) $)
+    assaring $p |- ( W e. AssAlg -> W e. Ring ) $=
+      ( vz vx vy casa wcel clmod crg wa cv cvsca cfv co wceq cbs wral csca eqid
+      cmulr isassa simplbi simprd ) AEFZAGFZAHFZUCUDUEIBJZCJZAKLZMDJZASLZMUFUGU
+      IUJMUHMZNUGUFUIUHMUJMUKNIDAOLZPCULPBAQLZOLZPCDUNUHUJUMULABULRUMRUNRUHRUJR
+      TUAUB $.
   $}
 
 
