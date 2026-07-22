@@ -179505,6 +179505,15 @@ $)
           SVMVEVJVICVGIVIUGVHCUHUIUJVEDVJLVNVEVGVDIDVIVFDBUKVCDVILVDVCVHCDVCEUL
           LDVHLEUMDEGUNTVCVLDCLVOCDEGHUOTUPSVCVDUQURJDVJUSTJVJCEHUTVAVB $.
       $}
+
+      $( The algebraic span of a subalgebra is itself.  (Contributed by Mario
+         Carneiro, 7-Jan-2015.) $)
+      aspid $p |- ( ( W e. AssAlg /\ S e. ( SubRing ` W ) /\ S e. L ) ->
+        ( A ` S ) = S ) $=
+        ( vt casa wcel csubrg cfv w3a cv wss cin crab cint wceq 3ad2ant2 aspval
+        simp1 subrgss syl2anc wa 3simpc elin sylibr intmin syl eqtrd ) EJKZBELM
+        ZKZBCKZNZBAMZBIOPIUNCQZRSZBUQUMBDPZURUTTUMUOUPUCUOUMVAUPBDEGUDUAIABCDEF
+        GHUBUEUQBUSKZUTBTUQUOUPUFVBUMUOUPUGBUNCUHUIIBUSUJUKUL $.
     $}
   $}
 
