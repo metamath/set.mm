@@ -179827,6 +179827,18 @@ $)
       EFCLSKZASDMNKTUAUBABDGIOSDCEFHPQR $.
   $}
 
+  ${
+    rnasclassa.a $e |- A = ( algSc ` W ) $.
+    rnasclassa.u $e |- U = ( W |`s ran A ) $.
+    rnasclassa.w $e |- ( ph -> W e. AssAlg ) $.
+    $( The scalar multiples of the unit vector form a subalgebra of the
+       vectors.  (Contributed by SN, 16-Nov-2023.) $)
+    rnasclassa $p |- ( ph -> U e. AssAlg ) $=
+      ( crn wss casa wcel ssidd csubrg cfv wi rnasclsubrg clss eqid issubassa2
+      wa issubassa3 expr sylbird syl2anc mpd ) ABHZUFIZCJKZAUFLADJKZUFDMNKZUGUH
+      OGABDEGPUIUJTUGUFDQNZKZUHBUFUKDEUKRZSUIUJULUHUFCUKDFUMUAUBUCUDUE $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
