@@ -179854,6 +179854,31 @@ $)
       VCVAVBDVFRVARVBRVDRVCRTUL $.
   $}
 
+  ${
+    $d x y z K $.  $d x y z L $.  $d x y z P $.  $d x y z ph $.  $d x y W $.
+    $d z F $.  $d z G $.
+    asclpropd.f $e |- F = ( Scalar ` K ) $.
+    asclpropd.g $e |- G = ( Scalar ` L ) $.
+    asclpropd.1 $e |- ( ph -> P = ( Base ` F ) ) $.
+    asclpropd.2 $e |- ( ph -> P = ( Base ` G ) ) $.
+    asclpropd.3 $e |- ( ( ph /\ ( x e. P /\ y e. W ) ) ->
+      ( x ( .s ` K ) y ) = ( x ( .s ` L ) y ) ) $.
+    asclpropd.4 $e |- ( ph -> ( 1r ` K ) = ( 1r ` L ) ) $.
+    asclpropd.5 $e |- ( ph -> ( 1r ` K ) e. W ) $.
+    $( If two structures have the same components (properties), one is an
+       associative algebra iff the other one is.  The last hypotheses on ` 1r `
+       can be discharged either by letting ` W = _V ` (if strong equality is
+       known on ` .s ` ) or assuming ` K ` is a ring.  (Contributed by Mario
+       Carneiro, 5-Jul-2015.) $)
+    asclpropd $p |- ( ph -> ( algSc ` K ) = ( algSc ` L ) ) $=
+      ( vz cfv cmpt eqid cbs cv cur cvsca co cascl wcel wceq oveqrspc2v anassrs
+      wa mpidan oveq2d adantr eqtrd mpteq2dva mpteq1d 3eqtr3d asclfval 3eqtr4g
+      ) AQEUARZQUBZGUCRZGUDRZUEZSZQFUARZVBHUCRZHUDRZUEZSZGUFRZHUFRZAQDVESQDVJSV
+      FVKAQDVEVJAVBDUGZUKVEVBVCVIUEZVJAVNVCIUGZVEVOUHZPAVNVPVQABCDIVDVIVBVCNUIU
+      JULAVOVJUHVNAVCVHVBVIOUMUNUOUPAQDVAVELUQAQDVGVJMUQURQVLVDVCEVAGVLTJVATVDT
+      VCTUSQVMVIVHFVGHVMTKVGTVITVHTUSUT $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
