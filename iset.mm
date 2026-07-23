@@ -179804,6 +179804,16 @@ $)
       HKWCZWFWJWEWQYDWRXGCXCBXFXPDGHXSXTXRYBFVTWDOWAWB $.
   $}
 
+  ${
+    rnasclsubrg.c $e |- C = ( algSc ` W ) $.
+    rnasclsubrg.w $e |- ( ph -> W e. AssAlg ) $.
+    $( The scalar multiples of the unit vector form a subring of the vectors.
+       (Contributed by SN, 5-Nov-2023.) $)
+    rnasclsubrg $p |- ( ph -> ran C e. ( SubRing ` W ) ) $=
+      ( casa wcel csca cfv crh co crn csubrg eqid asclrhm rnrhmsubrg 3syl ) ACF
+      GBCHIZCJKGBLCMIGEBRCDRNOBRCPQ $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
