@@ -175859,14 +175859,14 @@ $)
   $}
 
   ${
-    lspsnel5a.s $e |- S = ( LSubSp ` W ) $.
-    lspsnel5a.n $e |- N = ( LSpan ` W ) $.
-    lspsnel5a.w $e |- ( ph -> W e. LMod ) $.
-    lspsnel5a.a $e |- ( ph -> U e. S ) $.
-    lspsnel5a.x $e |- ( ph -> X e. U ) $.
+    ellspsn5.s $e |- S = ( LSubSp ` W ) $.
+    ellspsn5.n $e |- N = ( LSpan ` W ) $.
+    ellspsn5.w $e |- ( ph -> W e. LMod ) $.
+    ellspsn5.a $e |- ( ph -> U e. S ) $.
+    ellspsn5.x $e |- ( ph -> X e. U ) $.
     $( Relationship between a vector and the 1-dim (or 0-dim) subspace it
        generates.  (Contributed by NM, 20-Feb-2015.) $)
-    lspsnel5a $p |- ( ph -> ( N ` { X } ) C_ U ) $=
+    ellspsn5 $p |- ( ph -> ( N ` { X } ) C_ U ) $=
       ( wcel csn cfv wss cbs eqid clmod lsselg syl3anc ellspsn5b mpbid ) AFCLZF
       MDNCOKABCDEPNZEFUDQZGHIJAERLCBLUCFUDLIJKRBCUDEFUEGSTUAUB $.
   $}
@@ -175916,12 +175916,12 @@ $)
        (Contributed by NM, 3-Feb-2015.) $)
     lssats2 $p |- ( ph -> U = U_ x e. U ( N ` { x } ) ) $=
       ( vy cv csn cfv wcel wa simpr clmod adantr syl2anc ciun wrex eqid syl3anc
-      cbs lsselg lspsnid sneq fveq2d eleq2d rspcev ex lspsnel5a sseld rexlimdva
-      weq impbid eliun bitr4di eqrdv ) AKDBDBLZMZENZUAZAKLZDOZVEVCOZBDUBZVEVDOA
-      VFVHAVFVHAVFPZVFVEVEMZENZOZVHAVFQZVIFROZVEFUENZOZVLAVNVFISZVIVNDCOZVFVPVQ
-      AVRVFJSVMRCDVOFVEVOUCZGUFUDEVOFVEVSHUGTVGVLBVEDBKUPZVCVKVEVTVBVJEVAVEUHUI
-      UJUKTULAVGVFBDAVADOZPZVCDVEWBCDEFVAGHAVNWAISAVRWAJSAWAQUMUNUOUQBVEDVCURUS
-      UT $.
+      cbs lsselg lspsnid weq sneq fveq2d eleq2d rspcev ellspsn5 sseld rexlimdva
+      ex impbid eliun bitr4di eqrdv ) AKDBDBLZMZENZUAZAKLZDOZVEVCOZBDUBZVEVDOAV
+      FVHAVFVHAVFPZVFVEVEMZENZOZVHAVFQZVIFROZVEFUENZOZVLAVNVFISZVIVNDCOZVFVPVQA
+      VRVFJSVMRCDVOFVEVOUCZGUFUDEVOFVEVSHUGTVGVLBVEDBKUHZVCVKVEVTVBVJEVAVEUIUJU
+      KULTUPAVGVFBDAVADOZPZVCDVEWBCDEFVAGHAVNWAISAVRWAJSAWAQUMUNUOUQBVEDVCURUSU
+      T $.
   $}
 
   ${
@@ -175955,13 +175955,13 @@ $)
         -> ( N ` { X } ) = { v | E. k e. K v = ( k .x. X ) } ) $=
       ( wcel wa cfv cv wceq adantr clmod csn wrex cab clss eqid simpl lss1d cur
       co lmod1cl lmodvs1 eqcomd oveq1 rspceeqv syl2an2r wb eqeq1 rexbidv adantl
-      elabg mpbird lspsnel5a wi lspsncl simpr lspsnid syl22anc eleq1a rexlimdva
-      lssvscl syl abssdv eqssd ) HUAOZIGOZPZIUBFQZARZCRZIBUJZSZCEUCZAUDZVQHUEQZ
-      WDFHIWEUFZNVOVPUGZAWEBCDEGHILJMKWFUHVQIWDOZIWASZCEUCZVODUIQZEOVPIWKIBUJZS
-      WJWKDEHJKWKUFZUKVQWLIBWKDGHILJMWMULUMCWKEWAWLIVTWKIBUNUOUPVPWHWJUQVOWCWJA
-      IGVSISWBWICEVSIWAURUSVAUTVBVCVQWCAVRVQWBVSVROZCEVQVTEOZPZWAVROZWBWNVDWPVO
-      VRWEOZWOIVROZWQVQVOWOWGTVQWRWOWEFGHILWFNVETVQWOVFVQWSWOFGHILNVGTEWEBVRDHV
-      TIJMKWFVKVHWAVRVSVIVLVJVMVN $.
+      elabg mpbird ellspsn5 wi lspsncl simpr lspsnid lssvscl syl22anc rexlimdva
+      eleq1a syl abssdv eqssd ) HUAOZIGOZPZIUBFQZARZCRZIBUJZSZCEUCZAUDZVQHUEQZW
+      DFHIWEUFZNVOVPUGZAWEBCDEGHILJMKWFUHVQIWDOZIWASZCEUCZVODUIQZEOVPIWKIBUJZSW
+      JWKDEHJKWKUFZUKVQWLIBWKDGHILJMWMULUMCWKEWAWLIVTWKIBUNUOUPVPWHWJUQVOWCWJAI
+      GVSISWBWICEVSIWAURUSVAUTVBVCVQWCAVRVQWBVSVROZCEVQVTEOZPZWAVROZWBWNVDWPVOV
+      RWEOZWOIVROZWQVQVOWOWGTVQWRWOWEFGHILWFNVETVQWOVFVQWSWOFGHILNVGTEWEBVRDHVT
+      IJMKWFVHVIWAVRVSVKVLVJVMVN $.
 
     $( Member of span of the singleton of a vector.  (Contributed by NM,
        22-Feb-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
@@ -175979,9 +175979,9 @@ $)
     lspsnvsi $p |- ( ( W e. LMod /\ R e. K /\ X e. V )
         -> ( N ` { ( R .x. X ) } ) C_ ( N ` { X } ) ) $=
       ( clmod wcel w3a clss cfv csn co eqid simp1 wss simp3 snssd lspcl syl2anc
-      simp2 lspsneli lspsnel5a ) GNOZADOZHFOZPZGQRZHSZERZEGAHBTUOUAZMUKULUMUBZU
-      NUKUPFUCUQUOOUSUNHFUKULUMUDZUEUOUPEFGKURMUFUGUNABCDEFGHKLIJMUSUKULUMUHUTU
-      IUJ $.
+      simp2 lspsneli ellspsn5 ) GNOZADOZHFOZPZGQRZHSZERZEGAHBTUOUAZMUKULUMUBZUN
+      UKUPFUCUQUOOUSUNHFUKULUMUDZUEUOUPEFGKURMUFUGUNABCDEFGHKLIJMUSUKULUMUHUTUI
+      UJ $.
   $}
 
   ${
