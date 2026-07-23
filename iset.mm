@@ -179736,6 +179736,21 @@ $)
       PVCVDVE $.
   $}
 
+  ${
+    asclinvg.a $e |- A = ( algSc ` W ) $.
+    asclinvg.r $e |- R = ( Scalar ` W ) $.
+    asclinvg.k $e |- B = ( Base ` R ) $.
+    asclinvg.i $e |- I = ( invg ` R ) $.
+    asclinvg.j $e |- J = ( invg ` W ) $.
+    $( The group inverse (negation) of a lifted scalar is the lifted negation
+       of the scalar.  (Contributed by AV, 2-Sep-2019.) $)
+    asclinvg $p |- ( ( W e. LMod /\ W e. Ring /\ C e. B )
+                     -> ( J ` ( A ` C ) ) = ( A ` ( I ` C ) ) ) $=
+      ( clmod wcel crg w3a cghm co cfv wceq simp2 simp1 asclghm simp3 wa ghminv
+      eqcomd syl2anc ) GMNZGONZCBNZPZADGQRNZUKCASFSZCESASZTULADGHIUIUJUKUAUIUJU
+      KUBUCUIUJUKUDUMUKUEUOUNBDGAEFCJKLUFUGUH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
