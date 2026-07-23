@@ -179751,6 +179751,19 @@ $)
       KUBUCUIUJUKUDUMUKUEUOUNBDGAEFCJKLUFUGUH $.
   $}
 
+  ${
+    $d x y A $.  $d x y F $.  $d x y W $.
+    asclrhm.a $e |- A = ( algSc ` W ) $.
+    asclrhm.f $e |- F = ( Scalar ` W ) $.
+    $( The algebra scalar lifting function is a ring homomorphism.
+       (Contributed by Mario Carneiro, 8-Mar-2015.) $)
+    asclrhm $p |- ( W e. AssAlg -> A e. ( F RingHom W ) ) $=
+      ( vx vy casa wcel cbs cfv cmulr cur assasca assaring assalmod ascl1 cv co
+      eqid wceq ascldimul 3expb asclghm isrhm2d ) CHIZFGBJKZBCBLKZCLKZBMKZACMKZ
+      UGTZUJTUKTUHTZUITZBCENCOZUFABCDECPZUOQUFFRZUGIGRZUGIUQURUHSAKUQAKURAKUISU
+      AAUQURUHUIBUGCDEULUNUMUBUCUFABCDEUOUPUDUE $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
