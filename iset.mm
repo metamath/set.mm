@@ -179646,6 +179646,20 @@ $)
       QBVTVSCVDDVNEFVFWMWLWJWHWPTUSUTVA $.
   $}
 
+  ${
+    asclelbas.a $e |- A = ( algSc ` W ) $.
+    asclelbas.f $e |- F = ( Scalar ` W ) $.
+    asclelbas.b $e |- B = ( Base ` F ) $.
+    asclelbas.w $e |- ( ph -> W e. AssAlg ) $.
+    asclelbas.c $e |- ( ph -> C e. B ) $.
+    $( Lifted scalars are in the base set of the algebra.  (Contributed by Zhi
+       Wang, 11-Sep-2025.)  (Proof shortened by Thierry Arnoux,
+       22-Sep-2025.) $)
+    asclelbas $p |- ( ph -> ( A ` C ) e. ( Base ` W ) ) $=
+      ( cbs cfv casa wcel crg assaring syl clmod assalmod eqid asclf ffvelcdmd
+      ) ACFLMZDBABUDECFGHAFNOZFPOJFQRAUEFSOJFTRIUDUAUBKUC $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
