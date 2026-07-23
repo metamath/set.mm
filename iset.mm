@@ -179660,6 +179660,21 @@ $)
       ) ACFLMZDBABUDECFGHAFNOZFPOJFQRAUEFSOJFTRIUDUAUBKUC $.
   $}
 
+  ${
+    ascl0.a $e |- A = ( algSc ` W ) $.
+    ascl0.f $e |- F = ( Scalar ` W ) $.
+    ascl0.l $e |- ( ph -> W e. LMod ) $.
+    ascl0.r $e |- ( ph -> W e. Ring ) $.
+    $( The scalar 0 embedded into a left module corresponds to the 0 of the
+       left module if the left module is also a ring.  (Contributed by AV,
+       31-Jul-2019.) $)
+    ascl0 $p |- ( ph -> ( A ` ( 0g ` F ) ) = ( 0g ` W ) ) $=
+      ( c0g cfv cur cvsca co cbs eqid clmod wcel cgrp lmodfgrp grpidcl asclvald
+      3syl wceq crg ringidcl syl lmod0vs syl2anc eqtrd ) ACIJZBJUJDKJZDLJZMZDIJ
+      ZABULUKCCNJZDUJEFUOOZULOZUKOZADPQZCRQUJUOQGCDFSUOCUJUPUJOZTUBGHUAAUSUKDNJ
+      ZQZUMUNUCGADUDQVBHVADUKVAOZURUEUFULCUJVADUKUNVCFUQUTUNOUGUHUI $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
