@@ -179814,6 +179814,19 @@ $)
       GBCHIZCJKGBLCMIGEBRCDRNOBRCPQ $.
   $}
 
+  ${
+    rnasclmulcl.c $e |- C = ( algSc ` W ) $.
+    rnasclmulcl.x $e |- .X. = ( .r ` W ) $.
+    rnasclmulcl.w $e |- ( ph -> W e. AssAlg ) $.
+    $( (Vector) multiplication is closed for scalar multiples of the unit
+       vector.  (Contributed by SN, 5-Nov-2023.) $)
+    rnasclmulcl $p |- ( ( ph /\
+        ( X e. ran C /\ Y e. ran C ) ) ->
+                ( X .X. Y ) e. ran C ) $=
+      ( crn wcel co csubrg cfv rnasclsubrg subrgmcl syl3an1 3expb ) AEBJZKZFSKZ
+      EFCLSKZASDMNKTUAUBABDGIOSDCEFHPQR $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
