@@ -179614,6 +179614,25 @@ $)
       SUQEUNVAUNRZUHTUIUJKDUPBUQKBUOUNCDEFGHVBVDUKULT $.
   $}
 
+  ${
+    $d x y A $.  $d x B $.  $d x y F $.  $d x K $.  $d x y ph $.  $d x y W $.
+    asclf.a $e |- A = ( algSc ` W ) $.
+    asclf.f $e |- F = ( Scalar ` W ) $.
+    asclf.r $e |- ( ph -> W e. Ring ) $.
+    asclf.l $e |- ( ph -> W e. LMod ) $.
+    ${
+      asclf.k $e |- K = ( Base ` F ) $.
+      asclf.b $e |- B = ( Base ` W ) $.
+      $( The algebra scalar lifting function is a function into the base set.
+         (Contributed by Mario Carneiro, 4-Jul-2015.) $)
+      asclf $p |- ( ph -> A : K --> B ) $=
+        ( vx cv cur cfv cvsca wcel adantr eqid co clmod simpr ringidcl lmodvscl
+        wa crg syl syl3anc asclfval fmptd ) AMEMNZFOPZFQPZUAZCBAULERZUFFUBRZUPU
+        MCRZUOCRAUQUPJSAUPUCAURUPAFUGRURICFUMLUMTZUDUHSULUNDECFUMLHUNTZKUEUIMBU
+        NUMDEFGHKUTUSUJUK $.
+    $}
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
