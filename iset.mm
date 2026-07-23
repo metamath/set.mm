@@ -179598,6 +179598,22 @@ $)
     $}
   $}
 
+  ${
+    $d K x $.  $d W x $.  $d ph x $.
+    asclfn.a $e |- A = ( algSc ` W ) $.
+    asclfn.f $e |- F = ( Scalar ` W ) $.
+    asclfn.k $e |- K = ( Base ` F ) $.
+    asclfnd.l $e |- ( ph -> W e. LMod ) $.
+    asclfnd.r $e |- ( ph -> W e. Ring ) $.
+    $( Functionality of the algebra scalar lifting function.  (Contributed by
+       Mario Carneiro, 9-Mar-2015.) $)
+    asclfnd $p |- ( ph -> A Fn K ) $=
+      ( vx cv cur cfv cvsca co wcel eqid adantr syl cbs wral wfn wa clmod simpr
+      crg ringidcl lmodvscld ralrimiva asclfval fnmpt ) AKLZEMNZEONZPZEUANZQZKD
+      UBBDUCAURKDAUMDQZUDZUMUOCDUQEUNUQRZGUORZHAEUEQUSISAUSUFUTEUGQZUNUQQAVCUSJ
+      SUQEUNVAUNRZUHTUIUJKDUPBUQKBUOUNCDEFGHVBVDUKULT $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
