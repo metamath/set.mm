@@ -179684,6 +179684,25 @@ $)
       UHUQNZUNSUDUIUGCUQDUHUSFUMUPUAUEUF $.
   $}
 
+  ${
+    asclmul1.a $e |- A = ( algSc ` W ) $.
+    asclmul1.f $e |- F = ( Scalar ` W ) $.
+    asclmul1.k $e |- K = ( Base ` F ) $.
+    asclmul1.v $e |- V = ( Base ` W ) $.
+    asclmul1.t $e |- .X. = ( .r ` W ) $.
+    asclmul1.s $e |- .x. = ( .s ` W ) $.
+    $( Left multiplication by a lifted scalar is the same as the scalar
+       operation.  (Contributed by Mario Carneiro, 9-Mar-2015.) $)
+    asclmul1 $p |- ( ( W e. AssAlg /\ R e. K /\ X e. V ) ->
+        ( ( A ` R ) .X. X ) = ( R .x. X ) ) $=
+      ( wcel cfv co 3ad2ant1 wceq casa w3a cur eqid simp2 assalmod crg assaring
+      clmod asclvald simp1 ringidcl syl simp3 assaass syl13anc ringlidm syl2anc
+      oveq1d oveq2d 3eqtrd ) HUAPZBFPZIGPZUBZBAQZIDRBHUCQZCRZIDRZBVGIDRZCRZBICR
+      VEVFVHIDVEACVGEFHBJKLOVGUDZVBVCVDUEZVBVCHUIPVDHUFSVBVCHUGPZVDHUHSZUJUSVEV
+      BVCVGGPZVDVIVKTVBVCVDUKVMVEVNVPVOGHVGMVLULUMVBVCVDUNZBFCDEGHVGIMKLONUOUPV
+      EVJIBCVEVNVDVJITVOVQGHDVGIMNVLUQURUTVA $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
