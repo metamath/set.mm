@@ -179764,6 +179764,21 @@ $)
       AAUQURUHUIBUGCDEULUNUMUBUCUFABCDEUOUPUDUE $.
   $}
 
+  ${
+    $d N x y $.  $d .1. x y $.  $d W x y $.
+    rnascl.a $e |- A = ( algSc ` W ) $.
+    rnascl.o $e |- .1. = ( 1r ` W ) $.
+    rnascl.n $e |- N = ( LSpan ` W ) $.
+    $( The set of lifted scalars is also interpretable as the span of the
+       identity.  (Contributed by Mario Carneiro, 9-Mar-2015.) $)
+    rnascl $p |- ( W e. AssAlg -> ran A = ( N ` { .1. } ) ) $=
+      ( vx vy casa wcel crn cv cvsca cfv co wceq csca cbs eqid cab csn asclfval
+      wrex rnmpt clmod assalmod crg assaring ringidcl syl lspsn syl2anc eqtr4id
+      ) DJKZALHMIMBDNOZPZQIDROZSOZUDHUAZBUBCOZIHUSUQAIAUPBURUSDEURTZUSTZUPTZFUC
+      UEUODUFKBDSOZKZVAUTQDUGUODUHKVFDUIVEDBVETZFUJUKHUPIURUSCVEDBVBVCVGVDGULUM
+      UN $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
