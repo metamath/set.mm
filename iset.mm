@@ -175851,10 +175851,10 @@ $)
       UKULAUPUKKSZAUQUKLSZAUKUAZRBCEFGHIUBTUOUPUQUKUNURUSUTBCDFGIJUCTUDAULUNUKA
       ULQGUMMZUNUKAUPULVAKDEFGHJUFUEUMCGUGUHUIUJ $.
 
-    lspsnel5.x $e |- ( ph -> X e. V ) $.
+    ellspsn5b.x $e |- ( ph -> X e. V ) $.
     $( Relationship between a vector and the 1-dim (or 0-dim) subspace it
        generates.  (Contributed by NM, 8-Aug-2014.) $)
-    lspsnel5 $p |- ( ph -> ( X e. U <-> ( N ` { X } ) C_ U ) ) $=
+    ellspsn5b $p |- ( ph -> ( X e. U <-> ( N ` { X } ) C_ U ) ) $=
       ( wcel csn cfv wss ellspsn6 mpbirand ) AGCNGENGODPCQMABCDEFGHIJKLRS $.
   $}
 
@@ -175867,8 +175867,8 @@ $)
     $( Relationship between a vector and the 1-dim (or 0-dim) subspace it
        generates.  (Contributed by NM, 20-Feb-2015.) $)
     lspsnel5a $p |- ( ph -> ( N ` { X } ) C_ U ) $=
-      ( wcel csn cfv wss cbs eqid clmod lsselg syl3anc lspsnel5 mpbid ) AFCLZFM
-      DNCOKABCDEPNZEFUDQZGHIJAERLCBLUCFUDLIJKRBCUDEFUEGSTUAUB $.
+      ( wcel csn cfv wss cbs eqid clmod lsselg syl3anc ellspsn5b mpbid ) AFCLZF
+      MDNCOKABCDEPNZEFUDQZGHIJAERLCBLUCFUDLIJKRBCUDEFUEGSTUAUB $.
   $}
 
   ${
@@ -175881,8 +175881,8 @@ $)
        NM, 14-May-2015.) $)
     lspprid1 $p |- ( ph -> X e. ( N ` { X , Y } ) ) $=
       ( cpr cfv wcel csn wss clmod prssd snsspr1 a1i lspss syl3anc clss lspprcl
-      eqid lspsnel5 mpbird ) AEEFLZBMZNEOZBMUIPZADQNUHCPUJUHPZUKIAEFCJKRULAEFST
-      UJUHBCDGHUAUBADUCMZUIBCDEGUMUEZHIAUMBCDEFGUNHIJKUDJUFUG $.
+      eqid ellspsn5b mpbird ) AEEFLZBMZNEOZBMUIPZADQNUHCPUJUHPZUKIAEFCJKRULAEFS
+      TUJUHBCDGHUAUBADUCMZUIBCDEGUMUEZHIAUMBCDEFGUNHIJKUDJUFUG $.
 
     $( A member of a pair of vectors belongs to their span.  (Contributed by
        NM, 14-May-2015.) $)
@@ -175999,9 +175999,10 @@ $)
        (Contributed by NM, 7-Jun-2015.) $)
     lspsnss2 $p |- ( ph ->
  ( ( N ` { X } ) C_ ( N ` { Y } ) <-> E. k e. K X = ( k .x. Y ) ) ) $=
-      ( cfv wcel csn wss cv co wceq wrex clss clmod lspsncl syl2anc lspsnel5 wb
-      eqid ellspsn bitr3d ) AIJUAFSZTZIUAFSUPUBIDUCJCUDUEDEUFZAHUGSZUPFGHIKUSUM
-      ZOPAHUHTZJGTZUPUSTPRUSFGHJKUTOUIUJQUKAVAVBUQURULPRCIDBEFGHJLMKNOUNUJUO $.
+      ( cfv wcel csn wss cv wceq wrex clss eqid clmod lspsncl syl2anc ellspsn5b
+      co wb ellspsn bitr3d ) AIJUAFSZTZIUAFSUPUBIDUCJCULUDDEUEZAHUFSZUPFGHIKUSU
+      GZOPAHUHTZJGTZUPUSTPRUSFGHJKUTOUIUJQUKAVAVBUQURUMPRCIDBEFGHJLMKNOUNUJUO
+      $.
   $}
 
   ${
