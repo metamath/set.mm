@@ -179673,6 +179673,15 @@ $)
       3syl wceq crg ringidcl syl lmod0vs syl2anc eqtrd ) ACIJZBJUJDKJZDLJZMZDIJ
       ZABULUKCCNJZDUJEFUOOZULOZUKOZADPQZCRQUJUOQGCDFSUOCUJUPUJOZTUBGHUAAUSUKDNJ
       ZQZUMUNUCGADUDQVBHVADUKVAOZURUEUFULCUJVADUKUNVCFUQUTUNOUGUHUI $.
+
+    $( The scalar 1 embedded into a left module corresponds to the 1 of the
+       left module if the left module is also a ring.  (Contributed by AV,
+       31-Jul-2019.) $)
+    ascl1 $p |- ( ph -> ( A ` ( 1r ` F ) ) = ( 1r ` W ) ) $=
+      ( cur cfv cvsca co cbs eqid clmod wcel crg lmodring ringidcl 3syl lmodvs1
+      asclvald wceq syl syl2anc eqtrd ) ACIJZBJUGDIJZDKJZLZUHABUIUHCCMJZDUGEFUK
+      NZUINZUHNZADOPZCQPUGUKPGCDFRUKCUGULUGNZSTGHUBAUOUHDMJZPZUJUHUCGADQPURHUQD
+      UHUQNZUNSUDUIUGCUQDUHUSFUMUPUAUEUF $.
   $}
 
 
