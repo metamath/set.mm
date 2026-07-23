@@ -179714,6 +179714,28 @@ $)
       VDVMVCVIIUKVNVPGHDVFIMNVKURUSTUT $.
   $}
 
+  ${
+    ascldimul.a $e |- A = ( algSc ` W ) $.
+    ascldimul.f $e |- F = ( Scalar ` W ) $.
+    ascldimul.k $e |- K = ( Base ` F ) $.
+    ascldimul.t $e |- .X. = ( .r ` W ) $.
+    ascldimul.s $e |- .x. = ( .r ` F ) $.
+    $( The algebra scalar lifting function distributes over multiplication.
+       (Contributed by Mario Carneiro, 8-Mar-2015.)  (Proof shortened by SN,
+       5-Nov-2023.) $)
+    ascldimul $p |- ( ( W e. AssAlg /\ R e. K /\ S e. K ) ->
+        ( A ` ( R .x. S ) ) = ( ( A ` R ) .X. ( A ` S ) ) ) $=
+      ( wcel co cfv wceq 3ad2ant1 crg eqid casa w3a cur cvsca clmod simp2 simp3
+      cbs assalmod assaring ringidcl lmodvsass syl13anc assasca ringcl asclvald
+      syl3an1 asclf ffvelcdmda 3adant2 asclmul1 syld3an3 oveq2d eqtrd 3eqtr4d
+      syl ) HUANZBGNZCGNZUBZBCDOZHUCPZHUDPZOZBCVLVMOZVMOZVKAPBAPCAPZEOZVJHUENZV
+      HVIVLHUHPZNZVNVPQVGVHVSVIHUIZRZVGVHVIUFVGVHVIUGZVJHSNZWAVGVHWEVIHUJZRZVTH
+      VLVTTZVLTZUKVFBCVMDFGVTHVLWHJVMTZKMULUMVJAVMVLFGHVKIJKWJWIVGFSNVHVIVKGNFH
+      JUNGFDBCKMUOUQWCWGUPVJVRBVQVMOZVPVGVHVIVQVTNZVRWKQVGVIWLVHVGGVTCAVGAVTFGH
+      IJWFWBKWHURUSUTABVMEFGVTHVQIJKWHLWJVAVBVJVQVOBVMVJAVMVLFGHCIJKWJWIWDWCWGU
+      PVCVDVE $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
