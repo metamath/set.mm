@@ -179780,6 +179780,30 @@ $)
       UN $.
   $}
 
+  ${
+    $d x y A $.  $d x y L $.  $d x y S $.  $d x y W $.
+    issubassa2.a $e |- A = ( algSc ` W ) $.
+    issubassa2.l $e |- L = ( LSubSp ` W ) $.
+    $( A subring of a unital algebra is a subspace and thus a subalgebra iff it
+       contains all scalar multiples of the identity.  (Contributed by Mario
+       Carneiro, 9-Mar-2015.) $)
+    issubassa2 $p |- ( ( W e. AssAlg /\ S e. ( SubRing ` W ) ) ->
+        ( S e. L <-> ran A C_ S ) ) $=
+      ( vx vy wcel cfv wa wss wceq eqid ad2antrr ad2antlr cv co wral cbs csubrg
+      casa crn cur csn clspn rnascl clmod assalmod simpr subrg1cl eqsstrd csubg
+      ellspsn5 cvsca csca subrgsubg cmulr simplll simprl subrgss sselda adantrl
+      asclmul1 syl3anc simpllr simplr wfn crg assaring asclfnd fnfvelrn adantrr
+      sylan sseldd simprr subrgmcl eqeltrrd ralrimivva islss4 mpbir2and impbida
+      wb syl ) DUBIZBDUAJIZKZBCIZAUCZBLZWGWHKZWIDUDJZUEDUFJZJZBWEWIWNMWFWHAWLWM
+      DEWLNZWMNZUGOWKCBWMDWLFWPWEDUHIZWFWHDUIZOWGWHUJWFWLBIWEWHBDWLWOUKPUNULWGW
+      JKZWHBDUMJIZGQZHQZDUOJZRZBIZHBSGDUPJZTJZSZWFWTWEWJBDUQPWSXEGHXGBWSXAXGIZX
+      BBIZKZKZXAAJZXBDURJZRZXDBXLWEXIXBDTJZIZXOXDMWEWFWJXKUSWSXIXJUTWSXJXQXIWSB
+      XPXBWFBXPLWEWJBXPDXPNZVAPVBVCAXAXCXNXFXGXPDXBEXFNZXGNZXRXNNZXCNZVDVEXLWFX
+      MBIZXJXOBIWEWFWJXKVFWSXIYCXJWSXIKWIBXMWGWJXIVGWSAXGVHXIXMWIIWSAXFXGDEXSXT
+      WEWQWFWJWROWEDVIIWFWJDVJOVKXGXAAVLVNVOVMWSXIXJVPBDXNXMXBYAVQVEVRVSWEWHWTX
+      HKWCZWFWJWEWQYDWRXGCXCBXFXPDGHXSXTXRYBFVTWDOWAWB $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
