@@ -179701,6 +179701,17 @@ $)
       VEVFVHIDVEACVGEFHBJKLOVGUDZVBVCVDUEZVBVCHUIPVDHUFSVBVCHUGPZVDHUHSZUJUSVEV
       BVCVGGPZVDVIVKTVBVCVDUKVMVEVNVPVOGHVGMVLULUMVBVCVDUNZBFCDEGHVGIMKLONUOUPV
       EVJIBCVEVNVDVJITVOVQGHDVGIMNVLUQURUTVA $.
+
+    $( Right multiplication by a lifted scalar is the same as the scalar
+       operation.  (Contributed by Mario Carneiro, 9-Mar-2015.) $)
+    asclmul2 $p |- ( ( W e. AssAlg /\ R e. K /\ X e. V ) ->
+        ( X .X. ( A ` R ) ) = ( R .x. X ) ) $=
+      ( wcel cfv co 3ad2ant1 oveq2d casa w3a eqid simp2 clmod assalmod assaring
+      cur crg asclvald wceq simp1 simp3 ringidcl syl assaassr syl13anc ringridm
+      syl2anc 3eqtrd ) HUAPZBFPZIGPZUBZIBAQZDRIBHUHQZCRZDRZBIVFDRZCRZBICRVDVEVG
+      IDVDACVFEFHBJKLOVFUCZVAVBVCUDZVAVBHUEPVCHUFSVAVBHUIPZVCHUGSZUJTVDVAVBVCVF
+      GPZVHVJUKVAVBVCULVLVAVBVCUMZVDVMVOVNGHVFMVKUNUOBFCDEGHIVFMKLONUPUQVDVIIBC
+      VDVMVCVIIUKVNVPGHDVFIMNVKURUSTUT $.
   $}
 
 
