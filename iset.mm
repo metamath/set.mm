@@ -179839,6 +179839,21 @@ $)
       OGABDEGPUIUJTUGUFDQNZKZUHBUFUKDEUKRZSUIUJULUHUFCUKDFUMUAUBUCUDUE $.
   $}
 
+  ${
+    $d S x $.  $d W x $.  $d X x $.
+    ressascl.a $e |- A = ( algSc ` W ) $.
+    ressascl.x $e |- X = ( W |`s S ) $.
+    $( The lifting of scalars is invariant between subalgebras and
+       superalgebras.  (Contributed by Mario Carneiro, 9-Mar-2015.) $)
+    ressascl $p |- ( S e. ( SubRing ` W ) -> A = ( algSc ` X ) ) $=
+      ( vx cfv wcel csca cbs cur cvsca co cmpt crg wceq eqid mpancom asclfval
+      csubrg cv cascl subrgrcl ressscag fveq2d ressvscag eqidd subrg1 mpteq12dv
+      oveq123d 3eqtr4g ) BCUAHZIZGCJHZKHZGUBZCLHZCMHZNZOGDJHZKHZUQDLHZDMHZNZOAD
+      UCHZUNGUPUTVBVEUNUOVAKCPIZUNUOVAQBCUDZBUOCDUMPFUORZUESUFUNUQUQURVCUSVDVGU
+      NUSVDQVHBUSCDUMPFUSRZUGSUNUQUHBCDURFURRZUIUKUJGAUSURUOUPCEVIUPRVJVKTGVFVD
+      VCVAVBDVFRVARVBRVDRVCRTUL $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
