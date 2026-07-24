@@ -168106,6 +168106,20 @@ $)
       ( wcel cnx cplusg cfv cop csts co cvv wceq cmulr mulrslid slotex eqeltrid
       plusgslid setsslid mpdan mgpvalg fveq2d eqtr4d ) ADGZBAHIJBKLMZIJZCIJUFBN
       GBUHOUFBAPJNFAPDQRSDBINATUAUBUFCUGIABCDEFUCUDUE $.
+
+    ${
+      $d .x. x $.  $d M j $.  $d M x $.  $d R j $.
+      $( Value of the group operation of the multiplication group.
+         (Contributed by Mario Carneiro, 21-Dec-2014.) $)
+      mgpplusg $p |- .x. = ( +g ` M ) $=
+        ( vx vj cplusg cfv cv wcel cvv cmulr cdm wrel wfun ax-mp relelfvdm mpan
+        cmgp cnx cslot df-slot funmpt2 mulridx funeqi mpbir funrel elexd eleq2s
+        wex plusgslid slotm wfn fnmgp fnrel exlimiv mgpplusgg eleq2d pm5.21nii
+        syl eqriv ) FBCHIZFJZBKALKZVDVCKZVEVDAMIZBVDVGKZAMNZMOZVHAVIKMPZVJVKUAM
+        IZUBZPFLVLVDIVMFVLUCUDMVMUEUFUGMUHQVDAMRSUIEUJVFGJZCKZGUKVEVDGHCULUMVOV
+        EGVEVNATIZCVNVPKZATNZTOZVQAVRKTLUNVSUOLTUPQVNATRSUIDUJUQVAVEBVCVDABCLDE
+        URUSUTVB $.
+    $}
   $}
 
   ${
