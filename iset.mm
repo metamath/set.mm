@@ -156208,6 +156208,18 @@ $)
   $}
 
   ${
+    $d G j $.
+    slotm.e $e |- ( E = Slot ( E ` ndx ) /\ ( E ` ndx ) e. NN ) $.
+    $( A structure with an inhabited slot is inhabited.  (Contributed by Jim
+       Kingdon, 24-Jul-2026.) $)
+    slotm $p |- ( A e. ( E ` G ) -> E. j j e. G ) $=
+      ( cfv wcel cnx cv wex id cdm cslot wceq cn simpli wrel cvv wfn slotslfn
+      fnrel ax-mp relelfvdm mpan simpri a1i strnfvnd eleqtrd elfvm syl ) ADCFZG
+      ZAHCFZDFZGBIDGBJULAUKUNULKULDCUMCLZCUMMNZUMOGZEPCQZULDUOGCRSURCETRCUAUBAD
+      CUCUDUQULUPUQEUEUFUGUHAUMBDUIUJ $.
+  $}
+
+  ${
     $d A j $.  $d B j $.  $d S j $.  $d X j $.  $d Y j $.
     elbasov.o $e |- Rel dom O $.
     relelbasov.r $e |- Rel O $.
