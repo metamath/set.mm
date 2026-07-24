@@ -179908,6 +179908,29 @@ $)
       VCTUSQVMVIVHFVGHVMTKVGTVITVHTUSUT $.
   $}
 
+  ${
+    assamulgscm.v $e |- V = ( Base ` W ) $.
+    assamulgscm.f $e |- F = ( Scalar ` W ) $.
+    assamulgscm.b $e |- B = ( Base ` F ) $.
+    assamulgscm.s $e |- .x. = ( .s ` W ) $.
+    assamulgscm.g $e |- G = ( mulGrp ` F ) $.
+    assamulgscm.p $e |- .^ = ( .g ` G ) $.
+    assamulgscm.h $e |- H = ( mulGrp ` W ) $.
+    assamulgscm.e $e |- E = ( .g ` H ) $.
+    $( Lemma 1 for ~ assamulgscm (induction base).  (Contributed by AV,
+       26-Aug-2019.) $)
+    assamulgscmlem1 $p |- ( ( ( A e. B /\ X e. V ) /\ W e. AssAlg )
+                     -> ( 0 E ( A .x. X ) ) = ( ( 0 .^ A ) .x. ( 0 E X ) ) ) $=
+      ( wcel wa casa cur cfv cc0 wceq clmod assalmod crg assaring eqid ringidcl
+      co lmodvs1 eqcomd syl2anc adantl simpll simplr lmodvscl syl3anc ringidval
+      syl mgpbas mulg0 oveq12d 3eqtr4d ) ABTZKITZUAZJUBTZUAZJUCUDZFUCUDZVMCUMZU
+      EAKCUMZDUMZUEAEUMZUEKDUMZCUMVKVMVOUFZVJVKJUGTZVMITZVTJUHZVKJUITWBJUJIJVML
+      VMUKZULVCWAWBUAVOVMCVNFIJVMLMOVNUKZUNUOUPUQVLVPITZVQVMUFVLWAVHVIWFVKWAVJW
+      CUQVHVIVKURZVHVIVKUSZACFBIJKLMONUTVAIDHVPVMIJHRLVDZJVMHRWDVBZSVEVCVLVRVNV
+      SVMCVLVHVRVNUFWGBEGAVNBFGPNVDFVNGPWEVBQVEVCVLVIVSVMUFWHIDHKVMWIWJSVEVCVFV
+      G $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
