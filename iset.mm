@@ -180003,6 +180003,25 @@ $)
       JKLMNOPQRSTUTWIUCUDVQWNWTUBABCDEFGHJKLMNOPQRSTVAVFVBVCVDVE $.
   $}
 
+  ${
+    asclmulg.a $e |- A = ( algSc ` W ) $.
+    asclmulg.f $e |- F = ( Scalar ` W ) $.
+    asclmulg.k $e |- K = ( Base ` F ) $.
+    asclmulg.m $e |- .^ = ( .g ` W ) $.
+    asclmulg.t $e |- .* = ( .g ` F ) $.
+    $( Apply group multiplication to the algebra scalars.  (Contributed by
+       Thierry Arnoux, 24-Jul-2024.) $)
+    asclmulg $p |- ( ( W e. AssAlg /\ N e. NN0 /\ X e. K ) -> ( A ` ( N .* X )
+       ) = ( N .^ ( A ` X ) ) ) $=
+      ( casa wcel cfv co 3ad2ant1 eqid asclvald cn0 w3a cur cvsca wceq assalmod
+      clmod cbs simp3 simp2 crg assaring ringidcl lmodvsmmulgdi syl13anc oveq2d
+      syl cgrp assasca ringgrpd nn0zd mulgcld 3eqtr4rd ) GNOZFUAOZHEOZUBZFHGUCP
+      ZGUDPZQZBQZFHDQZVHVIQZFHAPZBQVLAPVGGUGOZVFVEVHGUHPZOZVKVMUEVDVEVOVFGUFRZV
+      DVEVFUIZVDVEVFUJZVDVEVQVFVDGUKOZVQGULZVPGVHVPSZVHSZUMUQRHVIDBCEFVPGVHWCJV
+      ISZKLMUNUOVGVNVJFBVGAVIVHCEGHIJKWEWDVSVRVDVEWAVFWBRZTUPVGAVIVHCEGVLIJKWEW
+      DVGEDCFHKMVDVECUROVFVDCCGJUSUTRVGFVTVAVSVBVRWFTVC $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
