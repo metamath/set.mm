@@ -168119,6 +168119,18 @@ $)
         cmulr basendxnplusgndx cslot cn plusgslid simpri setsslnid eqid mgpvalg
         mpdan fveq2d eqtr4d eqtrid ) BDGZABHIZCHIZFUMUNBJKIZBTIZLMNZHIZUOUMUQOG
         UNUSPBTDQRDUQUPHOBSUAKUPUBPUPUCGUDUEUFUIUMCURHBUQCDEUQUGUHUJUKUL $.
+
+      ${
+        $d B x $.  $d M w $.  $d M x $.  $d R w $.
+        $( Base set of the multiplication group.  (Contributed by Mario
+           Carneiro, 21-Dec-2014.)  (Revised by Mario Carneiro, 5-Oct-2015.) $)
+        mgpbas $p |- B = ( Base ` M ) $=
+          ( vx vw cbs cfv cv wcel cvv basmex cmgp cdm wex eqid basm wrel wfn
+          fnmgp fnrel ax-mp relelfvdm mpan eleq2s exlimiv syl mgpbasg pm5.21nii
+          elexd eleq2d eqriv ) FACHIZFJZAKBLKZUOUNKZUOABEMUQBNOZUQGJZCKZGPBURKZ
+          UOUNGCUNQRUTVAGVAUSBNIZCNSZUSVBKVANLTVCUALNUBUCUSBNUDUEDUFUGUHUKUPAUN
+          UOABCLDEUIULUJUM $.
+      $}
     $}
 
     ${
