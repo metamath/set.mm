@@ -168835,6 +168835,23 @@ $)
       ( wcel cur cfv cmgp c0g cvv wceq elex ccom df-ur fveq1i wfn fnmgp fvco2
       mpan eqtrid syl fveq2i 3eqtr4g ) ADGZAHIZAJIZKIZBCKIUFALGZUGUIMADNUJUGAKJ
       OZIZUIAHUKPQJLRUJULUIMSLKJATUAUBUCFCUHKEUDUE $.
+
+    ${
+      $d .1. x $.  $d G w $.  $d G x $.  $d G y z $.  $d R w $.  $d R y $.
+      $( The value of the unity element of a ring.  (Contributed by NM,
+         27-Aug-2011.)  (Revised by Mario Carneiro, 27-Dec-2014.) $)
+      ringidval $p |- .1. = ( 0g ` G ) $=
+        ( vy vz vw c0g cfv cv wcel cvv cur cdm wrel cmgp relelfvdm mpan syl cbs
+        vx ccom relco df-ur releqi mpbir elexd eleq2s wex cplusg co wceq wa weu
+        wral cio wfn fn0g fnrel eqid grpidvalg eleq2d ibi eliotaeu euex exsimpl
+        ax-mp basm fnmgp exlimiv ringidvalg pm5.21nii eqriv ) UBBCIJZUBKZBLAMLZ
+        VPVOLZVQVPANJZBVPVSLZANOZNPZVTAWALWBIQUCZPIQUDNWCUEUFUGVPANRSUHEUIVRFKZ
+        CUAJZLZFUJZVQVRWFWDGKZCUKJZULWHUMWHWDWIULWHUMUNGWEUPZUNZFUJZWGVRWKFUOZW
+        LVRVPWKFUQZLZWMVRWOVRVOWNVPVRCMLVOWNUMVRCIOZIPZVRCWPLIMURWQUSMIUTVHVPCI
+        RSUHGWEWIFCMVOWEVAZWIVAVOVAVBTVCVDWKFVPVETWKFVFTWFWJFVGTWFVQFWFAQOZWFHK
+        ZCLZHUJAWSLZWDWEHCWRVIXAXBHXBWTAQJZCQPZWTXCLXBQMURXDVJMQUTVHWTAQRSDUIVK
+        TUHVKTVQBVOVPABCMDEVLVCVMVN $.
+    $}
   $}
 
   ${
