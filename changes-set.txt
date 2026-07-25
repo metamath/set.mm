@@ -92,6 +92,7 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+23-Jul-26 risefall0lem fz00m1
 18-Jul-26 notzfauscl  notsep      Example where no separation is possible
 18-Jul-26 zfauscl     sepgi       Inference associated with sepg
 14-Jul-26 drngidl     [same]      Moved from TA's mathbox to main set.mm
