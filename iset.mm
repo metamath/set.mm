@@ -213450,6 +213450,26 @@ $)
       UO $.
   $}
 
+  ${
+    $d A x y $.
+    $( A proposition is double negation stable if and only if it is equivalent
+       to a negated proposition.  Here by "proposition" we mean a subset of a
+       singleton (which is a choice which allows us to quantify over them).
+       Posed as an exercise online by Yannick Forster.  (Contributed by Jim
+       Kingdon, 24-Jul-2026.) $)
+    stnot $p |- ( A e. ~P 1o -> ( ( -. -. A = 1o -> A = 1o )
+        <-> E. y e. ~P 1o ( A = 1o <-> -. y = 1o ) ) ) $=
+      ( vx vw c1o cpw wcel wceq wn wi cv wb wrex wa crab notbid a1i simpr c0 ex
+      eqeq1 bibi2d cvv 1oex ssrab2 elpwi2 notnot impbid2 rabid2 eqcom wex 0lt1o
+      wral elex2 r19.3rmv mp2b 3bitr4ri adantr bitrd rspcedvdw simplr notnotnot
+      mtbid sylib mpbird rexlimdva2 impbid ) BEFZGZBEHZIZIZVJJZVJAKZEHZIZLZAVHM
+      ZVIVMVRVIVMNZVQVJVKCEOZEHZIZLAVTVHVNVTHZVPWBVJWCVOWAVNVTEUAPUBVTVHGVSVTEU
+      CUDVKCEUEUFQVSVJVLWBVSVJVLVJUGVIVMRUHVIVLWBLVMVIVKWAVKWALVIEVTHVKCEUMZWAV
+      KVKCEUIVTEUJSEGDKEGDUKVKWDLULDSEUNVKCDEUOUPUQQPURUSUTTVIVQVMAVHVIVNVHGNZV
+      QNZVLVJWFVLNZVJVPWGVPIZIVPWGVKWHWFVLRWGVJVPWEVQVLVAZPVCVOVBVDWIVETVFVG $.
+  $}
+
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Omniscience of NN+oo
