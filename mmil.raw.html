@@ -16826,7 +16826,32 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>logtayl , logtaylsum , logtayl2</td>
+  <td>logtayllem</td>
+  <td><i>none</i></td>
+  <td>the complex case would need to be limited/avoided
+  (see ~ df-relog comment) but even for the real case,
+  (a) as we adapt the proof of logtayl, need to figure
+  out why logtayllem adds an extra zero value to the
+  start of the sequence, (b) the set.mm proof uses
+  cvgcmpce which presumably would need to be replaced
+  by ~ cvgcmp2n or some variation on that theme</td>
+</tr>
+
+<tr>
+  <td>logtayl</td>
+  <td><i>none</i></td>
+  <td>the complex case would need to be limited/avoided
+  (see ~ df-relog comment) but even for the real case,
+  the set.mm proof uses radcnvcl , radcnvle , psercn
+  pserdv2 (a different approach may be needed here) and various
+  logarithm theorems (perhaps these can be adapted to
+  versions for real numbers rather than complex
+  numbers).  The set.mm proof also uses dvmptsub and
+  dvmptres , dvmptco , dvmptneg , and dv11cn .</td>
+</tr>
+
+<tr>
+  <td>logtaylsum , logtayl2</td>
   <td><i>none</i></td>
   <td>see ~ df-relog comment for discussion of complex logarithms</td>
 </tr>
@@ -17211,6 +17236,48 @@ intuitionistic and it is lightly used in set.mm</TD>
   quartlem3 , quartlem4 , quart</td>
   <td><i>none</i></td>
   <td>depends on quad2 and cubic</td>
+</tr>
+
+<tr>
+  <td>log2cnv</td>
+  <td><i>none</i></td>
+  <td>Presumably provable. It is possible the set.mm proof
+  can be adapted (perhaps expanding the arctan definition
+  and removing the complex numbers, if that is feasible),
+  or perhaps another approach is needed.</td>
+</tr>
+
+<tr>
+  <td>log2tlbnd</td>
+  <td>~ log2tlbndlog2</td>
+  <td>once log2cnv is proved we'll be able to prove
+  log2tlbnd without changes</td>
+</tr>
+
+<tr>
+  <td>log2ub</td>
+  <td>~ log2ublog2</td>
+  <td>once log2cnv is proved we'll be able to prove
+  log2ub without changes</td>
+</tr>
+
+<tr>
+  <td>log2le1</td>
+  <td><i>none</i></td>
+  <td>should be provable if log2cnv is proved</td>
+</tr>
+
+<tr>
+  <td>birthdaylem1</td>
+  <td>~ birthdaylem1g</td>
+  <td>adds ` ( K e. NN0 /\ N e. NN ) ` condition</td>
+</tr>
+
+<tr>
+  <td>birthday</td>
+  <td>~ birthdaylog2</td>
+  <td>once log2cnv is proved we'll be able to prove
+  birthday without changes</td>
 </tr>
 
 <tr>
@@ -19571,7 +19638,8 @@ of the inverse prime series</td>
 
   <tr>
     <td>93.  The Birthday Problem</td>
-    <td>Would appear to be intuitionizable.</td>
+    <td>As described at ~ birthdaylog2 we have a partial
+    proof with missing pieces.</td>
   </tr>
 
   <tr>
