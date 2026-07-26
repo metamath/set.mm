@@ -54094,6 +54094,18 @@ $)
   $}
 
   ${
+    $d A w x z $.  $d A x y $.  $d B w z $.  $d C w $.
+    $( If a function given by maps-to notation is inhabited, then the class it
+       is defined on is inhabited.  (Contributed by Jim Kingdon,
+       22-Jul-2026.) $)
+    mptmex $p |- ( C e. ( x e. A |-> B ) -> E. y y e. A ) $=
+      ( vz vw cmpt wcel cv wex wceq copab elex2 opabm sylib df-mpt eleq2s simpl
+      wa exlimiv eximi syl eleq1w cbvexv ) EACDHZIZAJCIZAKZBJCIZBKUGUHFJDLZTZFK
+      ZAKZUIUNEULAFMZUFEUOIGJUOIGKUNGEUONULAFGOPAFCDQRUMUHAULUHFUHUKSUAUBUCUHUJ
+      ABABCUDUEP $.
+  $}
+
+  ${
     $d x y A $.  $d x ph $.
     mptrabex.1 $e |- A e. _V $.
     $( If the domain of a function given by maps-to notation is a class
@@ -156196,6 +156208,18 @@ $)
   $}
 
   ${
+    $d G j $.
+    slotm.e $e |- ( E = Slot ( E ` ndx ) /\ ( E ` ndx ) e. NN ) $.
+    $( A structure with an inhabited slot is inhabited.  (Contributed by Jim
+       Kingdon, 24-Jul-2026.) $)
+    slotm $p |- ( A e. ( E ` G ) -> E. j j e. G ) $=
+      ( cfv wcel cnx cv wex id cdm cslot wceq cn simpli wrel cvv wfn slotslfn
+      fnrel ax-mp relelfvdm mpan simpri a1i strnfvnd eleqtrd elfvm syl ) ADCFZG
+      ZAHCFZDFZGBIDGBJULAUKUNULKULDCUMCLZCUMMNZUMOGZEPCQZULDUOGCRSURCETRCUAUBAD
+      CUCUDUQULUPUQEUEUFUGUHAUMBDUIUJ $.
+  $}
+
+  ${
     $d A j $.  $d B j $.  $d S j $.  $d X j $.  $d Y j $.
     elbasov.o $e |- Rel dom O $.
     relelbasov.r $e |- Rel O $.
@@ -168082,6 +168106,20 @@ $)
       ( wcel cnx cplusg cfv cop csts co cvv wceq cmulr mulrslid slotex eqeltrid
       plusgslid setsslid mpdan mgpvalg fveq2d eqtr4d ) ADGZBAHIJBKLMZIJZCIJUFBN
       GBUHOUFBAPJNFAPDQRSDBINATUAUBUFCUGIABCDEFUCUDUE $.
+
+    ${
+      $d .x. x $.  $d M j $.  $d M x $.  $d R j $.
+      $( Value of the group operation of the multiplication group.
+         (Contributed by Mario Carneiro, 21-Dec-2014.) $)
+      mgpplusg $p |- .x. = ( +g ` M ) $=
+        ( vx vj cplusg cfv cv wcel cvv cmulr cdm wrel wfun ax-mp relelfvdm mpan
+        cmgp cnx cslot df-slot funmpt2 mulridx funeqi mpbir funrel elexd eleq2s
+        wex plusgslid slotm wfn fnmgp fnrel exlimiv mgpplusgg eleq2d pm5.21nii
+        syl eqriv ) FBCHIZFJZBKALKZVDVCKZVEVDAMIZBVDVGKZAMNZMOZVHAVIKMPZVJVKUAM
+        IZUBZPFLVLVDIVMFVLUCUDMVMUEUFUGMUHQVDAMRSUIEUJVFGJZCKZGUKVEVDGHCULUMVOV
+        EGVEVNATIZCVNVPKZATNZTOZVQAVRKTLUNVSUOLTUPQVNATRSUIDUJUQVAVEBVCVDABCLDE
+        URUSUTVB $.
+    $}
   $}
 
   ${
@@ -168107,6 +168145,18 @@ $)
         cmulr basendxnplusgndx cslot cn plusgslid simpri setsslnid eqid mgpvalg
         mpdan fveq2d eqtr4d eqtrid ) BDGZABHIZCHIZFUMUNBJKIZBTIZLMNZHIZUOUMUQOG
         UNUSPBTDQRDUQUPHOBSUAKUPUBPUPUCGUDUEUFUIUMCURHBUQCDEUQUGUHUJUKUL $.
+
+      ${
+        $d B x $.  $d M w $.  $d M x $.  $d R w $.
+        $( Base set of the multiplication group.  (Contributed by Mario
+           Carneiro, 21-Dec-2014.)  (Revised by Mario Carneiro, 5-Oct-2015.) $)
+        mgpbas $p |- B = ( Base ` M ) $=
+          ( vx vw cbs cfv cv wcel cvv basmex cmgp cdm wex eqid basm wrel wfn
+          fnmgp fnrel ax-mp relelfvdm mpan eleq2s exlimiv syl mgpbasg pm5.21nii
+          elexd eleq2d eqriv ) FACHIZFJZAKBLKZUOUNKZUOABEMUQBNOZUQGJZCKZGPBURKZ
+          UOUNGCUNQRUTVAGVAUSBNIZCNSZUSVBKVANLTVCUALNUBUCUSBNUDUEDUFUGUHUKUPAUN
+          UOABCLDEUIULUJUM $.
+      $}
     $}
 
     ${
@@ -168823,6 +168873,23 @@ $)
       ( wcel cur cfv cmgp c0g cvv wceq elex ccom df-ur fveq1i wfn fnmgp fvco2
       mpan eqtrid syl fveq2i 3eqtr4g ) ADGZAHIZAJIZKIZBCKIUFALGZUGUIMADNUJUGAKJ
       OZIZUIAHUKPQJLRUJULUIMSLKJATUAUBUCFCUHKEUDUE $.
+
+    ${
+      $d .1. x $.  $d G w $.  $d G x $.  $d G y z $.  $d R w $.  $d R y $.
+      $( The value of the unity element of a ring.  (Contributed by NM,
+         27-Aug-2011.)  (Revised by Mario Carneiro, 27-Dec-2014.) $)
+      ringidval $p |- .1. = ( 0g ` G ) $=
+        ( vy vz vw c0g cfv cv wcel cvv cur cdm wrel cmgp relelfvdm mpan syl cbs
+        vx ccom relco df-ur releqi mpbir elexd eleq2s wex cplusg co wceq wa weu
+        wral cio wfn fn0g fnrel eqid grpidvalg eleq2d ibi eliotaeu euex exsimpl
+        ax-mp basm fnmgp exlimiv ringidvalg pm5.21nii eqriv ) UBBCIJZUBKZBLAMLZ
+        VPVOLZVQVPANJZBVPVSLZANOZNPZVTAWALWBIQUCZPIQUDNWCUEUFUGVPANRSUHEUIVRFKZ
+        CUAJZLZFUJZVQVRWFWDGKZCUKJZULWHUMWHWDWIULWHUMUNGWEUPZUNZFUJZWGVRWKFUOZW
+        LVRVPWKFUQZLZWMVRWOVRVOWNVPVRCMLVOWNUMVRCIOZIPZVRCWPLIMURWQUSMIUTVHVPCI
+        RSUHGWEWIFCMVOWEVAZWIVAVOVAVBTVCVDWKFVPVETWKFVFTWFWJFVGTWFVQFWFAQOZWFHK
+        ZCLZHUJAWSLZWDWEHCWRVIXAXBHXBWTAQJZCQPZWTXCLXBQMURXDVJMQUTVHWTAQRSDUIVK
+        TUHVKTVQBVOVPABCMDEVLVCVMVN $.
+    $}
   $}
 
   ${
@@ -169569,6 +169636,18 @@ $)
       RLZURUQVGKZURLZMZAVFUMPZNZBVMOZUPVFUDIVODVFVFQZUBABVMVGVFVMQVGQUERUPVEVNB
       COZVOUPVDVNBCUPVCVLACVMCDVFHVPFUFZUPUTVIVBVKUPUSVHURUPEVGUQURDEVFHVPGUGZS
       TUPVAVJURUPEVGURUQVSSTUHUIUJUPCVMLVQVOUKVRVNBCVMULRUNUO $.
+  $}
+
+  ${
+    ringcld.b $e |- B = ( Base ` R ) $.
+    ringcld.t $e |- .x. = ( .r ` R ) $.
+    ringcld.r $e |- ( ph -> R e. Ring ) $.
+    ringcld.x $e |- ( ph -> X e. B ) $.
+    ringcld.y $e |- ( ph -> Y e. B ) $.
+    $( Closure of the multiplication operation of a ring.  (Contributed by SN,
+       29-Jul-2024.) $)
+    ringcld $p |- ( ph -> ( X .x. Y ) e. B ) $=
+      ( crg wcel co ringcl syl3anc ) ACLMEBMFBMEFDNBMIJKBCDEFGHOP $.
   $}
 
   ${
@@ -174154,6 +174233,20 @@ $)
   $}
 
   ${
+    lmodvscld.v $e |- V = ( Base ` W ) $.
+    lmodvscld.f $e |- F = ( Scalar ` W ) $.
+    lmodvscld.s $e |- .x. = ( .s ` W ) $.
+    lmodvscld.k $e |- K = ( Base ` F ) $.
+    lmodvscld.w $e |- ( ph -> W e. LMod ) $.
+    lmodvscld.r $e |- ( ph -> R e. K ) $.
+    lmodvscld.x $e |- ( ph -> X e. V ) $.
+    $( Closure of scalar product for a left module.  (Contributed by SN,
+       15-Mar-2025.) $)
+    lmodvscld $p |- ( ph -> ( R .x. X ) e. V ) $=
+      ( clmod wcel co lmodvscl syl3anc ) AGPQBEQHFQBHCRFQMNOBCDEFGHIJKLST $.
+  $}
+
+  ${
     $d w x y B $.  $d w x y K $.  $d w x y .x. $.  $d w x y W $.  $d x y X $.
     $d x y Y $.  $d V x y $.
     scaffval.b $e |- B = ( Base ` W ) $.
@@ -175763,13 +175856,13 @@ $)
       ( wcel clmod csn wss cfv snssi lspssp syl3an3 ) EBHDIHBAHEJZBKPCLBKEBMAPB
       CDFGNO $.
 
-    lspsnel3.w $e |- ( ph -> W e. LMod ) $.
-    lspsnel3.u $e |- ( ph -> U e. S ) $.
-    lspsnel3.x $e |- ( ph -> X e. U ) $.
-    lspsnel3.y $e |- ( ph -> Y e. ( N ` { X } ) ) $.
+    ellspsn3.w $e |- ( ph -> W e. LMod ) $.
+    ellspsn3.u $e |- ( ph -> U e. S ) $.
+    ellspsn3.x $e |- ( ph -> X e. U ) $.
+    ellspsn3.y $e |- ( ph -> Y e. ( N ` { X } ) ) $.
     $( A member of the span of the singleton of a vector is a member of a
        subspace containing the vector.  (Contributed by NM, 4-Jul-2014.) $)
-    lspsnel3 $p |- ( ph -> Y e. U ) $=
+    ellspsn3 $p |- ( ph -> Y e. U ) $=
       ( csn cfv clmod wcel wss lspsnss syl3anc sseldd ) AFNDOZCGAEPQCBQFCQUBCRJ
       KLBCDEFHISTMUA $.
   $}
@@ -175799,38 +175892,38 @@ $)
   $}
 
   ${
-    lspsnel5.v $e |- V = ( Base ` W ) $.
-    lspsnel5.s $e |- S = ( LSubSp ` W ) $.
-    lspsnel5.n $e |- N = ( LSpan ` W ) $.
-    lspsnel5.w $e |- ( ph -> W e. LMod ) $.
-    lspsnel5.a $e |- ( ph -> U e. S ) $.
+    ellspsn5b.v $e |- V = ( Base ` W ) $.
+    ellspsn5b.s $e |- S = ( LSubSp ` W ) $.
+    ellspsn5b.n $e |- N = ( LSpan ` W ) $.
+    ellspsn5b.w $e |- ( ph -> W e. LMod ) $.
+    ellspsn5b.a $e |- ( ph -> U e. S ) $.
     $( Relationship between a vector and the 1-dim (or 0-dim) subspace it
        generates.  (Contributed by NM, 8-Aug-2014.)  (Revised by Mario
        Carneiro, 8-Jan-2015.) $)
-    lspsnel6 $p |- ( ph -> ( X e. U <-> ( X e. V /\ ( N ` { X } ) C_ U ) ) ) $=
+    ellspsn6 $p |- ( ph -> ( X e. U <-> ( X e. V /\ ( N ` { X } ) C_ U ) ) ) $=
       ( wcel csn cfv wss wa clmod adantr syl3anc simpr lsselg lspsnss jca sylan
       lspsnid ssel syl5com impr impbida ) AGCMZGEMZGNDOZCPZQAUKQZULUNUOFRMZCBMZ
       UKULAUPUKKSZAUQUKLSZAUKUAZRBCEFGHIUBTUOUPUQUKUNURUSUTBCDFGIJUCTUDAULUNUKA
       ULQGUMMZUNUKAUPULVAKDEFGHJUFUEUMCGUGUHUIUJ $.
 
-    lspsnel5.x $e |- ( ph -> X e. V ) $.
+    ellspsn5b.x $e |- ( ph -> X e. V ) $.
     $( Relationship between a vector and the 1-dim (or 0-dim) subspace it
        generates.  (Contributed by NM, 8-Aug-2014.) $)
-    lspsnel5 $p |- ( ph -> ( X e. U <-> ( N ` { X } ) C_ U ) ) $=
-      ( wcel csn cfv wss lspsnel6 mpbirand ) AGCNGENGODPCQMABCDEFGHIJKLRS $.
+    ellspsn5b $p |- ( ph -> ( X e. U <-> ( N ` { X } ) C_ U ) ) $=
+      ( wcel csn cfv wss ellspsn6 mpbirand ) AGCNGENGODPCQMABCDEFGHIJKLRS $.
   $}
 
   ${
-    lspsnel5a.s $e |- S = ( LSubSp ` W ) $.
-    lspsnel5a.n $e |- N = ( LSpan ` W ) $.
-    lspsnel5a.w $e |- ( ph -> W e. LMod ) $.
-    lspsnel5a.a $e |- ( ph -> U e. S ) $.
-    lspsnel5a.x $e |- ( ph -> X e. U ) $.
+    ellspsn5.s $e |- S = ( LSubSp ` W ) $.
+    ellspsn5.n $e |- N = ( LSpan ` W ) $.
+    ellspsn5.w $e |- ( ph -> W e. LMod ) $.
+    ellspsn5.a $e |- ( ph -> U e. S ) $.
+    ellspsn5.x $e |- ( ph -> X e. U ) $.
     $( Relationship between a vector and the 1-dim (or 0-dim) subspace it
        generates.  (Contributed by NM, 20-Feb-2015.) $)
-    lspsnel5a $p |- ( ph -> ( N ` { X } ) C_ U ) $=
-      ( wcel csn cfv wss cbs eqid clmod lsselg syl3anc lspsnel5 mpbid ) AFCLZFM
-      DNCOKABCDEPNZEFUDQZGHIJAERLCBLUCFUDLIJKRBCUDEFUEGSTUAUB $.
+    ellspsn5 $p |- ( ph -> ( N ` { X } ) C_ U ) $=
+      ( wcel csn cfv wss cbs eqid clmod lsselg syl3anc ellspsn5b mpbid ) AFCLZF
+      MDNCOKABCDEPNZEFUDQZGHIJAERLCBLUCFUDLIJKRBCUDEFUEGSTUAUB $.
   $}
 
   ${
@@ -175843,8 +175936,8 @@ $)
        NM, 14-May-2015.) $)
     lspprid1 $p |- ( ph -> X e. ( N ` { X , Y } ) ) $=
       ( cpr cfv wcel csn wss clmod prssd snsspr1 a1i lspss syl3anc clss lspprcl
-      eqid lspsnel5 mpbird ) AEEFLZBMZNEOZBMUIPZADQNUHCPUJUHPZUKIAEFCJKRULAEFST
-      UJUHBCDGHUAUBADUCMZUIBCDEGUMUEZHIAUMBCDEFGUNHIJKUDJUFUG $.
+      eqid ellspsn5b mpbird ) AEEFLZBMZNEOZBMUIPZADQNUHCPUJUHPZUKIAEFCJKRULAEFS
+      TUJUHBCDGHUAUBADUCMZUIBCDEGUMUEZHIAUMBCDEFGUNHIJKUDJUFUG $.
 
     $( A member of a pair of vectors belongs to their span.  (Contributed by
        NM, 14-May-2015.) $)
@@ -175878,12 +175971,12 @@ $)
        (Contributed by NM, 3-Feb-2015.) $)
     lssats2 $p |- ( ph -> U = U_ x e. U ( N ` { x } ) ) $=
       ( vy cv csn cfv wcel wa simpr clmod adantr syl2anc ciun wrex eqid syl3anc
-      cbs lsselg lspsnid sneq fveq2d eleq2d rspcev ex lspsnel5a sseld rexlimdva
-      weq impbid eliun bitr4di eqrdv ) AKDBDBLZMZENZUAZAKLZDOZVEVCOZBDUBZVEVDOA
-      VFVHAVFVHAVFPZVFVEVEMZENZOZVHAVFQZVIFROZVEFUENZOZVLAVNVFISZVIVNDCOZVFVPVQ
-      AVRVFJSVMRCDVOFVEVOUCZGUFUDEVOFVEVSHUGTVGVLBVEDBKUPZVCVKVEVTVBVJEVAVEUHUI
-      UJUKTULAVGVFBDAVADOZPZVCDVEWBCDEFVAGHAVNWAISAVRWAJSAWAQUMUNUOUQBVEDVCURUS
-      UT $.
+      cbs lsselg lspsnid weq sneq fveq2d eleq2d rspcev ellspsn5 sseld rexlimdva
+      ex impbid eliun bitr4di eqrdv ) AKDBDBLZMZENZUAZAKLZDOZVEVCOZBDUBZVEVDOAV
+      FVHAVFVHAVFPZVFVEVEMZENZOZVHAVFQZVIFROZVEFUENZOZVLAVNVFISZVIVNDCOZVFVPVQA
+      VRVFJSVMRCDVOFVEVOUCZGUFUDEVOFVEVSHUGTVGVLBVEDBKUHZVCVKVEVTVBVJEVAVEUIUJU
+      KULTUPAVGVFBDAVADOZPZVCDVEWBCDEFVAGHAVNWAISAVRWAJSAWAQUMUNUOUQBVEDVCURUSU
+      T $.
   $}
 
   ${
@@ -175917,13 +176010,13 @@ $)
         -> ( N ` { X } ) = { v | E. k e. K v = ( k .x. X ) } ) $=
       ( wcel wa cfv cv wceq adantr clmod csn wrex cab clss eqid simpl lss1d cur
       co lmod1cl lmodvs1 eqcomd oveq1 rspceeqv syl2an2r wb eqeq1 rexbidv adantl
-      elabg mpbird lspsnel5a wi lspsncl simpr lspsnid syl22anc eleq1a rexlimdva
-      lssvscl syl abssdv eqssd ) HUAOZIGOZPZIUBFQZARZCRZIBUJZSZCEUCZAUDZVQHUEQZ
-      WDFHIWEUFZNVOVPUGZAWEBCDEGHILJMKWFUHVQIWDOZIWASZCEUCZVODUIQZEOVPIWKIBUJZS
-      WJWKDEHJKWKUFZUKVQWLIBWKDGHILJMWMULUMCWKEWAWLIVTWKIBUNUOUPVPWHWJUQVOWCWJA
-      IGVSISWBWICEVSIWAURUSVAUTVBVCVQWCAVRVQWBVSVROZCEVQVTEOZPZWAVROZWBWNVDWPVO
-      VRWEOZWOIVROZWQVQVOWOWGTVQWRWOWEFGHILWFNVETVQWOVFVQWSWOFGHILNVGTEWEBVRDHV
-      TIJMKWFVKVHWAVRVSVIVLVJVMVN $.
+      elabg mpbird ellspsn5 wi lspsncl simpr lspsnid lssvscl syl22anc rexlimdva
+      eleq1a syl abssdv eqssd ) HUAOZIGOZPZIUBFQZARZCRZIBUJZSZCEUCZAUDZVQHUEQZW
+      DFHIWEUFZNVOVPUGZAWEBCDEGHILJMKWFUHVQIWDOZIWASZCEUCZVODUIQZEOVPIWKIBUJZSW
+      JWKDEHJKWKUFZUKVQWLIBWKDGHILJMWMULUMCWKEWAWLIVTWKIBUNUOUPVPWHWJUQVOWCWJAI
+      GVSISWBWICEVSIWAURUSVAUTVBVCVQWCAVRVQWBVSVROZCEVQVTEOZPZWAVROZWBWNVDWPVOV
+      RWEOZWOIVROZWQVQVOWOWGTVQWRWOWEFGHILWFNVETVQWOVFVQWSWOFGHILNVGTEWEBVRDHVT
+      IJMKWFVHVIWAVRVSVKVLVJVMVN $.
 
     $( Member of span of the singleton of a vector.  (Contributed by NM,
        22-Feb-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
@@ -175941,9 +176034,9 @@ $)
     lspsnvsi $p |- ( ( W e. LMod /\ R e. K /\ X e. V )
         -> ( N ` { ( R .x. X ) } ) C_ ( N ` { X } ) ) $=
       ( clmod wcel w3a clss cfv csn co eqid simp1 wss simp3 snssd lspcl syl2anc
-      simp2 lspsneli lspsnel5a ) GNOZADOZHFOZPZGQRZHSZERZEGAHBTUOUAZMUKULUMUBZU
-      NUKUPFUCUQUOOUSUNHFUKULUMUDZUEUOUPEFGKURMUFUGUNABCDEFGHKLIJMUSUKULUMUHUTU
-      IUJ $.
+      simp2 lspsneli ellspsn5 ) GNOZADOZHFOZPZGQRZHSZERZEGAHBTUOUAZMUKULUMUBZUN
+      UKUPFUCUQUOOUSUNHFUKULUMUDZUEUOUPEFGKURMUFUGUNABCDEFGHKLIJMUSUKULUMUHUTUI
+      UJ $.
   $}
 
   ${
@@ -175961,9 +176054,10 @@ $)
        (Contributed by NM, 7-Jun-2015.) $)
     lspsnss2 $p |- ( ph ->
  ( ( N ` { X } ) C_ ( N ` { Y } ) <-> E. k e. K X = ( k .x. Y ) ) ) $=
-      ( cfv wcel csn wss cv co wceq wrex clss clmod lspsncl syl2anc lspsnel5 wb
-      eqid ellspsn bitr3d ) AIJUAFSZTZIUAFSUPUBIDUCJCUDUEDEUFZAHUGSZUPFGHIKUSUM
-      ZOPAHUHTZJGTZUPUSTPRUSFGHJKUTOUIUJQUKAVAVBUQURULPRCIDBEFGHJLMKNOUNUJUO $.
+      ( cfv wcel csn wss cv wceq wrex clss eqid clmod lspsncl syl2anc ellspsn5b
+      co wb ellspsn bitr3d ) AIJUAFSZTZIUAFSUPUBIDUCJCULUDDEUEZAHUFSZUPFGHIKUSU
+      GZOPAHUHTZJGTZUPUSTPRUSFGHJKUTOUIUJQUKAVAVBUQURUMPRCIDBEFGHJLMKNOUNUJUO
+      $.
   $}
 
   ${
@@ -179146,6 +179240,787 @@ $(
   applies to any vector space.
 
 $)
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Associative algebras
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Definition and basic properties
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c AssAlg $. $( Associative algebra $)
+  $c AlgSpan $. $( Algebraic span $)
+  $c algSc $.
+
+  $( Associative algebra. $)
+  casa $a class AssAlg $.
+
+  $( Algebraic span function. $)
+  casp $a class AlgSpan $.
+
+  $( Class of algebra scalar lifting function. $)
+  cascl $a class algSc $.
+
+  ${
+    $d f r s t w x y $.
+    $( Definition of an associative algebra.  An associative algebra is a set
+       equipped with a left-module structure on a ring, coupled with a
+       multiplicative internal operation on the vectors of the module that is
+       associative and distributive for the additive structure of the
+       left-module (so giving the vectors a ring structure) and that is also
+       bilinear under the scalar product.  (Contributed by Mario Carneiro,
+       29-Dec-2014.)  (Revised by SN, 2-Mar-2025.) $)
+    df-assa $a |- AssAlg = { w e. ( LMod i^i Ring )
+      | [. ( Scalar ` w ) / f ].
+        A. r e. ( Base ` f ) A. x e. ( Base ` w )
+        A. y e. ( Base ` w ) [. ( .s ` w ) / s ]. [. ( .r ` w ) / t ].
+      ( ( ( r s x ) t y ) = ( r s ( x t y ) ) /\
+        ( x t ( r s y ) ) = ( r s ( x t y ) ) ) } $.
+
+    $( Define the algebraic span of a set of vectors in an algebra.
+       (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+    df-asp $a |- AlgSpan = ( w e. AssAlg |-> ( s e. ~P ( Base ` w ) |->
+      |^| { t e. ( ( SubRing ` w ) i^i ( LSubSp ` w ) ) | s C_ t } ) ) $.
+
+    $( Every unital algebra contains a canonical homomorphic image of its ring
+       of scalars as scalar multiples of the unity element.  This names the
+       homomorphism.  (Contributed by Mario Carneiro, 8-Mar-2015.) $)
+    df-ascl $a |- algSc = ( w e. _V |-> ( x e. ( Base ` ( Scalar ` w ) ) |->
+            ( x ( .s ` w ) ( 1r ` w ) ) ) ) $.
+  $}
+
+  ${
+    $d r x y A $.  $d f r w B $.  $d f r w F $.  $d f r w x y V $.  $d x y X $.
+    $d f r s t w x y .x. $.  $d f r s t w x y .X. $.  $d f r s t w x y W $.
+    $d y Y $.
+    isassa.v $e |- V = ( Base ` W ) $.
+    isassa.f $e |- F = ( Scalar ` W ) $.
+    isassa.b $e |- B = ( Base ` F ) $.
+    isassa.s $e |- .x. = ( .s ` W ) $.
+    isassa.t $e |- .X. = ( .r ` W ) $.
+    $( The properties of an associative algebra.  (Contributed by Mario
+       Carneiro, 29-Dec-2014.)  (Revised by SN, 2-Mar-2025.) $)
+    isassa $p |- ( W e. AssAlg <-> ( ( W e. LMod /\ W e. Ring )
+                   /\ A. r e. B A. x e. V A. y e. V
+      ( ( ( r .x. x ) .X. y ) = ( r .x. ( x .X. y ) ) /\
+        ( x .X. ( r .x. y ) ) = ( r .x. ( x .X. y ) ) ) ) ) $=
+      ( vt co wceq cfv cbs wral vs vf vw casa wcel clmod crg cin cv cmulr cvsca
+      wsbc csca fveq2 sbceq1d sbceqbid raleqbidv ralbidv df-assa elrab2 scaslid
+      wa cvv slotex raleqdv sbcieg syl fveq2i eqtr2i a1i eqcomi vscaslid eqeq2i
+      biimpri oveqd oveq1d eqeq12d oveq2d anbi12d sbcbidv mulrslid pm5.32i elin
+      wb bitrd anbi1i 3bitri ) HUDUEHUFUGUHZUEZIUIZAUIZUAUIZPZBUIZOUIZPZWJWKWNW
+      OPZWLPZQZWKWJWNWLPZWOPZWRQZVBZOHUJRZULZUAHUKRZULZBHSRZTZAXHTZIUBUIZSRZTZU
+      BHUMRZULZVBWIWJWKDPZWNEPZWJWKWNEPZDPZQZWKWJWNDPZEPZXSQZVBZBGTZAGTZICTZVBH
+      UFUEHUGUEVBZYGVBXCOUCUIZUJRZULZUAYIUKRZULZBYISRZTZAYNTZIXLTZUBYIUMRZULXOU
+      CHWHUDYIHQZYQXMUBYRXNYIHUMUNYSYPXJIXLYSYOXIAYNXHYIHSUNZYSYMXGBYNXHYTYSYKX
+      EUAYLXFYIHUKUNYSXCOYJXDYIHUJUNUOUPUQUQURUPABUCOUBUAIUSUTWIXOYGWIXOXJIXNSR
+      ZTZYGWIXNVCUEXOUUBWDHUMWHVAVDXMUUBUBXNVCXKXNQXJIXLUUAXKXNSUNVEVFVGWIXJYFI
+      UUACUUACQWICFSRUUALFXNSKVHVIVJWIXIYEAXHGXHGQWIGXHJVKVJZWIXGYDBXHGUUCWIXGX
+      PWNWOPZWJWQDPZQZWKYAWOPZUUEQZVBZOXDULZYDWIXFVCUEXGUUJWDHUKWHVLVDXEUUJUAXF
+      VCWLXFQZXCUUIOXDUUKWSUUFXBUUHUUKWPUUDWRUUEUUKWMXPWNWOUUKWLDWJWKWLDQUUKDXF
+      WLMVMVNZVOVPUUKWLDWJWQUULVOZVQUUKXAUUGWRUUEUUKWTYAWKWOUUKWLDWJWNUULVOVRUU
+      MVQVSVTVFVGWIXDVCUEUUJYDWDHUJWHWAVDUUIYDOXDVCWOXDQZUUFXTUUHYCUUNUUDXQUUEX
+      SUUNWOEXPWNWOEQUUNEXDWONVMVNZVOUUNWQXRWJDUUNWOEWKWNUUOVOVRZVQUUNUUGYBUUEX
+      SUUNWOEWKYAUUOVOUUPVQVSVFVGWEUQUQUQWEWBWIYHYGHUFUGWCWFWG $.
+
+    $( The properties of an associative algebra.  (Contributed by Mario
+       Carneiro, 29-Dec-2014.) $)
+    assalem $p |- ( ( W e. AssAlg /\ ( A e. B /\ X e. V /\ Y e. V ) ) ->
+      ( ( ( A .x. X ) .X. Y ) = ( A .x. ( X .X. Y ) ) /\
+        ( X .X. ( A .x. Y ) ) = ( A .x. ( X .X. Y ) ) ) ) $=
+      ( wcel co wceq wa oveq1 eqeq12d vr vx vy casa cv w3a clmod isassa simprbi
+      wral crg oveq1d oveq2d anbi12d oveq2 rspc3v mpan9 ) GUDOZUAUEZUBUEZCPZUCU
+      EZDPZUSUTVBDPZCPZQZUTUSVBCPZDPZVEQZRZUCFUJUBFUJUABUJZABOHFOIFOUFAHCPZIDPZ
+      AHIDPZCPZQZHAICPZDPZVOQZRZURGUGOGUKORVKUBUCBCDEFGUAJKLMNUHUIVJVTAUTCPZVBD
+      PZAVDCPZQZUTAVBCPZDPZWCQZRVLVBDPZAHVBDPZCPZQZHWEDPZWJQZRUAUBUCAHIBFFUSAQZ
+      VFWDVIWGWNVCWBVEWCWNVAWAVBDUSAUTCSULUSAVDCSZTWNVHWFVEWCWNVGWEUTDUSAVBCSUM
+      WOTUNUTHQZWDWKWGWMWPWBWHWCWJWPWAVLVBDUTHACUOULWPVDWIACUTHVBDSUMZTWPWFWLWC
+      WJUTHWEDSWQTUNVBIQZWKVPWMVSWRWHVMWJVOVBIVLDUOWRWIVNACVBIHDUOUMZTWRWLVRWJV
+      OWRWEVQHDVBIACUOUMWSTUNUPUQ $.
+
+    $( Left-associative property of an associative algebra.  (Contributed by
+       Mario Carneiro, 29-Dec-2014.) $)
+    assaass $p |- ( ( W e. AssAlg /\ ( A e. B /\ X e. V /\ Y e. V ) ) ->
+      ( ( A .x. X ) .X. Y ) = ( A .x. ( X .X. Y ) ) ) $=
+      ( casa wcel w3a wa co wceq assalem simpld ) GOPABPHFPIFPQRAHCSIDSAHIDSCSZ
+      THAICSDSUCTABCDEFGHIJKLMNUAUB $.
+
+    $( Right-associative property of an associative algebra.  (Contributed by
+       Mario Carneiro, 29-Dec-2014.) $)
+    assaassr $p |- ( ( W e. AssAlg /\ ( A e. B /\ X e. V /\ Y e. V ) ) ->
+      ( X .X. ( A .x. Y ) ) = ( A .x. ( X .X. Y ) ) ) $=
+      ( casa wcel w3a wa co wceq assalem simprd ) GOPABPHFPIFPQRAHCSIDSAHIDSCSZ
+      THAICSDSUCTABCDEFGHIJKLMNUAUB $.
+  $}
+
+  ${
+    $d x y z W $.
+    $( An associative algebra is a left module.  (Contributed by Mario
+       Carneiro, 5-Dec-2014.) $)
+    assalmod $p |- ( W e. AssAlg -> W e. LMod ) $=
+      ( vz vx vy casa wcel clmod crg wa cv cvsca cfv co wceq cbs wral csca eqid
+      cmulr isassa simplbi simpld ) AEFZAGFZAHFZUCUDUEIBJZCJZAKLZMDJZASLZMUFUGU
+      IUJMUHMZNUGUFUIUHMUJMUKNIDAOLZPCULPBAQLZOLZPCDUNUHUJUMULABULRUMRUNRUHRUJR
+      TUAUB $.
+
+    $( An associative algebra is a ring.  (Contributed by Mario Carneiro,
+       5-Dec-2014.) $)
+    assaring $p |- ( W e. AssAlg -> W e. Ring ) $=
+      ( vz vx vy casa wcel clmod crg wa cv cvsca cfv co wceq cbs wral csca eqid
+      cmulr isassa simplbi simprd ) AEFZAGFZAHFZUCUDUEIBJZCJZAKLZMDJZASLZMUFUGU
+      IUJMUHMZNUGUFUIUHMUJMUKNIDAOLZPCULPBAQLZOLZPCDUNUHUJUMULABULRUMRUNRUHRUJR
+      TUAUB $.
+  $}
+
+  ${
+    assasca.f $e |- F = ( Scalar ` W ) $.
+    $( The scalars of an associative algebra form a ring.  (Contributed by
+       Mario Carneiro, 7-Jan-2015.)  (Revised by SN, 2-Mar-2025.) $)
+    assasca $p |- ( W e. AssAlg -> F e. Ring ) $=
+      ( casa wcel clmod crg assalmod lmodring syl ) BDEBFEAGEBHABCIJ $.
+  $}
+
+  ${
+    assa2ass.v $e |- V = ( Base ` W ) $.
+    assa2ass.f $e |- F = ( Scalar ` W ) $.
+    assa2ass.b $e |- B = ( Base ` F ) $.
+    assa2ass.m $e |- .* = ( .r ` F ) $.
+    assa2ass.s $e |- .x. = ( .s ` W ) $.
+    assa2ass.t $e |- .X. = ( .r ` W ) $.
+    $( Left- and right-associative property of an associative algebra.  Notice
+       that the scalars are commuted!  (Contributed by AV, 14-Aug-2019.)
+       (Proof shortened by Zhi Wang, 11-Sep-2025.) $)
+    assa2ass $p |- ( ( W e. AssAlg /\ ( A e. B /\ C e. B )
+                    /\ ( X e. V /\ Y e. V ) ) ->
+      ( ( A .x. X ) .X. ( C .x. Y ) ) = ( ( C .* A ) .x. ( X .X. Y ) ) ) $=
+      ( wcel wa co casa wceq simp1 simpr 3ad2ant2 clmod assalmod simpl lmodvscl
+      w3a syl3an 3ad2ant3 assaassr syl13anc assaass eqcomd lmodvsass oveq1d crg
+      3ad2ant1 assasca adantr adantl ringcld 3adant3 eqtrd 3eqtrd ) IUARZABRZCB
+      RZSZJHRZKHRZSZUJZAJDTZCKDTETZCVPKETDTZCVPDTZKETZCAGTZJKETDTZVOVHVJVPHRZVM
+      VQVRUBVHVKVNUCZVKVHVJVNVIVJUDZUEZVHIUFRZVKVIVNVLWCIUGZVIVJUHZVLVMUHZADFBH
+      IJLMPNUIUKZVNVHVMVKVLVMUDULZCBDEFHIVPKLMNPQUMUNVOVHVJWCVMVRVTUBWDWFWKWLVH
+      VJWCVMUJSVTVRCBDEFHIVPKLMNPQUOUPUNVOVTWAJDTZKETZWBVOWGVJVIVLVTWNUBVHVKWGV
+      NWHUTWFVKVHVIVNWIUEVNVHVLVKWJULZWGVJVIVLUJSZVSWMKEWPWMVSCADGFBHIJLMPNOUQU
+      PURUNVOVHWABRZVLVMWNWBUBWDVHVKWQVNVHVKSBFGCANOVHFUSRVKFIMVAVBVKVJVHWEVCVK
+      VIVHWIVCVDVEWOWLWABDEFHIJKLMNPQUOUNVFVG $.
+
+    $( Left- and right-associative property of an associative algebra.  Notice
+       that the scalars are not commuted!  (Contributed by Zhi Wang,
+       11-Sep-2025.) $)
+    assa2ass2 $p |- ( ( W e. AssAlg /\ ( A e. B /\ C e. B )
+                    /\ ( X e. V /\ Y e. V ) ) ->
+      ( ( A .x. X ) .X. ( C .x. Y ) ) = ( ( A .* C ) .x. ( X .X. Y ) ) ) $=
+      ( wcel wa co casa wceq simp1 simpl 3ad2ant2 3ad2ant3 clmod assalmod simpr
+      w3a 3ad2ant1 lmodvscld assaass syl13anc assaassr eqcomd lmodvsass assasca
+      oveq2d crg adantr adantl ringcld 3adant3 eqtrd 3eqtrd ) IUARZABRZCBRZSZJH
+      RZKHRZSZUJZAJDTCKDTZETZAJVOETDTZJAVODTZETZACGTZJKETDTZVNVGVHVKVOHRZVPVQUB
+      VGVJVMUCZVJVGVHVMVHVIUDZUEZVMVGVKVJVKVLUDUFZVNCDFBHIKLMPNVGVJIUGRZVMIUHUK
+      ZVJVGVIVMVHVIUIZUEZVMVGVLVJVKVLUIUFZULZABDEFHIJVOLMNPQUMUNVNVGVHVKWBVQVSU
+      BWCWEWFWLVGVHVKWBUJSVSVQABDEFHIJVOLMNPQUOUPUNVNVSJVTKDTZETZWAVNWGVHVIVLVS
+      WNUBWHWEWJWKWGVHVIVLUJSZVRWMJEWOWMVRACDGFBHIKLMPNOUQUPUSUNVNVGVTBRZVKVLWN
+      WAUBWCVGVJWPVMVGVJSBFGACNOVGFUTRVJFIMURVAVJVHVGWDVBVJVIVGWIVBVCVDWFWKVTBD
+      EFHIJKLMNPQUOUNVEVF $.
+  $}
+
+  ${
+    $d r x y B $.  $d r x y ph $.  $d x y V $.  $d r x y W $.
+    isassad.v $e |- ( ph -> V = ( Base ` W ) ) $.
+    isassad.f $e |- ( ph -> F = ( Scalar ` W ) ) $.
+    isassad.b $e |- ( ph -> B = ( Base ` F ) ) $.
+    isassad.s $e |- ( ph -> .x. = ( .s ` W ) ) $.
+    isassad.t $e |- ( ph -> .X. = ( .r ` W ) ) $.
+    isassad.1 $e |- ( ph -> W e. LMod ) $.
+    isassad.2 $e |- ( ph -> W e. Ring ) $.
+    isassad.4 $e |- ( ( ph /\ ( r e. B /\ x e. V /\ y e. V ) ) ->
+      ( ( r .x. x ) .X. y ) = ( r .x. ( x .X. y ) ) ) $.
+    isassad.5 $e |- ( ( ph /\ ( r e. B /\ x e. V /\ y e. V ) ) ->
+      ( x .X. ( r .x. y ) ) = ( r .x. ( x .X. y ) ) ) $.
+    $( Sufficient condition for being an associative algebra.  (Contributed by
+       Mario Carneiro, 5-Dec-2014.)  (Revised by SN, 2-Mar-2025.) $)
+    isassad $p |- ( ph -> W e. AssAlg ) $=
+      ( co clmod wcel crg wa cv cvsca cfv cmulr wceq cbs wral csca casa jca w3a
+      ralrimivvva fveq2d eqtrd oveqd eqidd eqeq12d anbi12d raleqbidv mpbid eqid
+      oveq123d isassa sylanbrc ) AIUAUBZIUCUBZUDJUEZBUEZIUFUGZTZCUEZIUHUGZTZVKV
+      LVOVPTZVMTZUIZVLVKVOVMTZVPTZVSUIZUDZCIUJUGZUKZBWEUKZJIULUGZUJUGZUKZIUMUBA
+      VIVJPQUNAVKVLETZVOFTZVKVLVOFTZETZUIZVLVKVOETZFTZWNUIZUDZCHUKZBHUKZJDUKWJA
+      WSJBCDHHAVKDUBVLHUBVOHUBUOUDWOWRRSUNUPAXAWGJDWIADGUJUGWIMAGWHUJLUQURAWTWF
+      BHWEKAWSWDCHWEKAWOVTWRWCAWLVQWNVSAWKVNVOVOFVPOAEVMVKVLNUSAVOUTVFAVKVKWMVR
+      EVMNAVKUTAFVPVLVOOUSVFZVAAWQWBWNVSAVLVLWPWAFVPOAVLUTAEVMVKVONUSVFXBVAVBVC
+      VCVCVDBCWIVMVPWHWEIJWEVEWHVEWIVEVMVEVPVEVGVH $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z L $.  $d x y z S $.  $d x y z W $.
+    issubassa.s $e |- S = ( W |`s A ) $.
+    issubassa.l $e |- L = ( LSubSp ` W ) $.
+    $( A subring that is also a subspace is a subalgebra.  The key theorem is
+       ~ islss3 .  (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+    issubassa3 $p |- ( ( W e. AssAlg /\ ( A e. ( SubRing ` W ) /\ A e. L ) ) ->
+      S e. AssAlg ) $=
+      ( vy vz vx casa wcel cfv wa csca cbs wceq ad2antrl eqid cv co cvsca cmulr
+      csubrg subrgbas ressscag adantrr eqidd ressvscag simprl ressmulrg syl2anc
+      simpl clmod assalmod simpr lsslmod syl2an crg subrgring w3a idd wss sseld
+      subrgss 3anim123d imp assaass adantlr syldan assaassr isassad ) DJKZADUCL
+      ZKZACKZMZMZGHDNLZOLZDUALZDUBLZVRABIVNABOLPVLVOADBEUDQVLVNVRBNLPVOAVRDBVMJ
+      EVRRZUEUFVQVSUGVLVNVTBUALPVOAVTDBVMJEVTRZUHUFVQVNVLWABUBLPVLVNVOUIVLVPULA
+      DBWAVMJEWARZUJUKVLDUMKVOBUMKVPDUNVNVOUOCADBEFUPUQVNBURKVLVOADBEUSQVQISZVS
+      KZGSZAKZHSZAKZUTZWFWGDOLZKZWIWLKZUTZWEWGVTTWIWATWEWGWIWATVTTZPZVQWKWOVQWF
+      WFWHWMWJWNVQWFVAVQAWLWGVNAWLVBVLVOAWLDWLRZVDQZVCVQAWLWIWSVCVEVFZVLWOWQVPW
+      EVSVTWAVRWLDWGWIWRWBVSRZWCWDVGVHVIVQWKWOWGWEWIVTTWATWPPZWTVLWOXBVPWEVSVTW
+      AVRWLDWGWIWRWBXAWCWDVJVHVIVK $.
+
+    issubassa.v $e |- V = ( Base ` W ) $.
+    issubassa.o $e |- .1. = ( 1r ` W ) $.
+    $( The subalgebras of an associative algebra are exactly the subrings
+       (under the ring multiplication) that are simultaneously subspaces (under
+       the scalar multiplication from the vector space).  (Contributed by Mario
+       Carneiro, 7-Jan-2015.) $)
+    issubassa $p |- ( ( W e. AssAlg /\ .1. e. A /\ A C_ V ) ->
+      ( S e. AssAlg <-> ( A e. ( SubRing ` W ) /\ A e. L ) ) ) $=
+      ( casa wcel wss wa crg assaring adantl jca clmod assalmod csubrg cress co
+      w3a cfv simpl1 syl eqeltrrid simpl3 simpl2 issubrg syl21anbrc islss3 3syl
+      wb mpbir2and issubassa3 3ad2antl1 impbida ) FKLZCALZAEMZUDZBKLZAFUAUELZAD
+      LZNZVCVDNZVEVFVHFOLZFAUBUCZOLVBVANVEVHUTVIUTVAVBVDUFZFPUGVHVJBOGVDBOLVCBP
+      QUHVHVBVAUTVAVBVDUIZUTVAVBVDUJRAEFCIJUKULVHVFVBBSLZVLVDVMVCBTQVHUTFSLVFVB
+      VMNUOVKFTDAEFBGIHUMUNUPRUTVAVGVDVBABDFGHUQURUS $.
+  $}
+
+  ${
+    $d r w x y z K $.  $d r w x y z L $.  $d r w x y z P $.  $d r w x y z ph $.
+    $d w x y z B $.
+    assapropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    assapropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    assapropd.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    assapropd.4 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( .r ` K ) y ) = ( x ( .r ` L ) y ) ) $.
+    assapropd.5 $e |- ( ph -> F = ( Scalar ` K ) ) $.
+    assapropd.6 $e |- ( ph -> F = ( Scalar ` L ) ) $.
+    assapropd.7 $e |- P = ( Base ` F ) $.
+    assapropd.8 $e |- ( ( ph /\ ( x e. P /\ y e. B ) ) ->
+      ( x ( .s ` K ) y ) = ( x ( .s ` L ) y ) ) $.
+    $( If two structures have the same components (properties), one is an
+       associative algebra iff the other one is.  (Contributed by Mario
+       Carneiro, 8-Feb-2015.) $)
+    assapropd $p |- ( ph -> ( K e. AssAlg <-> L e. AssAlg ) ) $=
+      ( wcel co wceq wral vr vz vw clmod wa casa wi assalmod assaring lmodpropd
+      crg jca a1i imbitrrid ringpropd jcad wb cv cvsca cfv cmulr anbi12d adantr
+      cbs csca simpll simplrl simprl fveq2d eqtrid syl eleqtrd simprrl lmodvscl
+      syl3anc eleqtrrd simprrr oveqrspc2v syl12anc oveq1d eqtrd simplrr ringcld
+      eqid eqeq12d anassrs 2ralbidva ralbidva raleqdv raleqbidv 3bitr3d 3bitr4g
+      oveq2d isassa ex pm5.21ndd ) AGUDQZGUKQZUEZGUFQZHUFQZWTWSUGAWTWQWRGUHGUIU
+      LUMAXAWQWRXAWQAHUDQZHUHABCDEFGHIJKMNOPUJZUNXAWRAHUKQZHUIABCDGHIJKLUOZUNUP
+      AWSWTXAUQAWSUEZWSUAURZUBURZGUSUTZRZUCURZGVAUTZRZXGXHXKXLRZXIRZSZXHXGXKXIR
+      ZXLRZXOSZUEZUCGVDUTZTZUBYATZUAGVEUTZVDUTZTZUEXBXDUEZXGXHHUSUTZRZXKHVAUTZR
+      ZXGXHXKYJRZYHRZSZXHXGXKYHRZYJRZYMSZUEZUCHVDUTZTZUBYSTZUAHVEUTZVDUTZTZUEWT
+      XAXFWSYGYFUUDAWSYGUQWSAWQXBWRXDXCXEVBVCXFXTUCDTZUBDTZUAETYRUCDTZUBDTZUAET
+      YFUUDXFUUFUUHUAEXFXGEQZUEXTYRUBUCDDXFUUIXHDQZXKDQZUEZXTYRUQXFUUIUULUEZUEZ
+      XPYNXSYQUUNXMYKXOYMUUNXMXJXKYJRZYKUUNAXJDQUUKXMUUOSAWSUUMVFZUUNXJYADUUNWQ
+      XGYEQZXHYAQXJYAQAWQWRUUMVGZUUNXGEYEXFUUIUULVHZUUNAEYESZUUPAEFVDUTZYEOAFYD
+      VDMVIVJZVKVLZUUNXHDYAXFUUIUUJUUKVMZUUNADYASZUUPIVKZVLZXGXIYDYEYAGXHYAWDZY
+      DWDZXIWDZYEWDZVNVOUVFVPXFUUIUUJUUKVQZABCDDXLYJXJXKLVRVSUUNXJYIXKYJUUNAUUI
+      UUJXJYISUUPUUSUVDABCEDXIYHXGXHPVRVSVTWAUUNXOXGXNYHRZYMUUNAUUIXNDQXOUVMSUU
+      PUUSUUNXNYADUUNYAGXLXHXKUVHXLWDZAWQWRUUMWBUVGUUNXKDYAUVLUVFVLZWCUVFVPABCE
+      DXIYHXGXNPVRVSUUNXNYLXGYHUUNAUUJUUKXNYLSUUPUVDUVLABCDDXLYJXHXKLVRVSWMWAZW
+      EUUNXRYPXOYMUUNXRXHXQYJRZYPUUNAUUJXQDQXRUVQSUUPUVDUUNXQYADUUNWQUUQXKYAQXQ
+      YAQUURUVCUVOXGXIYDYEYAGXKUVHUVIUVJUVKVNVOUVFVPABCDDXLYJXHXQLVRVSUUNXQYOXH
+      YJUUNAUUIUUKXQYOSUUPUUSUVLABCEDXIYHXGXKPVRVSWMWAUVPWEVBWFWGWHXFUUFYCUAEYE
+      AUUTWSUVBVCXFUUEYBUBDYAAUVEWSIVCZXFXTUCDYAUVRWIWJWJXFUUHUUAUAEUUCAEUUCSWS
+      AEUVAUUCOAFUUBVDNVIVJVCXFUUGYTUBDYSADYSSWSJVCZXFYRUCDYSUVSWIWJWJWKVBUBUCY
+      EXIXLYDYAGUAUVHUVIUVKUVJUVNWNUBUCUUCYHYJUUBYSHUAYSWDUUBWDUUCWDYHWDYJWDWNW
+      LWOWP $.
+  $}
+
+  ${
+    $d s t w L $.  $d s t S $.  $d t T $.  $d s t w V $.  $d s t w W $.
+    aspval.a $e |- A = ( AlgSpan ` W ) $.
+    aspval.v $e |- V = ( Base ` W ) $.
+    ${
+      aspval.l $e |- L = ( LSubSp ` W ) $.
+      $( Value of the algebraic closure operation inside an associative
+         algebra.  (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+      aspval $p |- ( ( W e. AssAlg /\ S C_ V ) -> ( A ` S ) =
+        |^| { t e. ( ( SubRing ` W ) i^i L ) | S C_ t } ) $=
+        ( vs vw casa wcel wss cfv cv csubrg cbs cvv syl cpw crab cint cmpt wceq
+        wa cin casp df-asp fveq2 eqtr4di pweqd ineq12d rabeqdv inteqd mpteq12dv
+        clss id basfn elex funfvex funfni sylancr eqeltrid pwexd mptexd fvmptd3
+        eqtrid fveq1d adantr eqid sseq1 rabbidv wb elpw2g biimpar wrex assaring
+        wfn crg subrgid clmod assalmod lss1 elind sseq2 rspcev sylan intexrabim
+        eqtrd ) FLMZCENZUFZCBOZCJEUAZJPZAPZNZAFQOZDUGZUBZUCZUDZOZCWQNZAWTUBZUCZ
+        WKWNXDUEWLWKCBXCWKBFUHOXCGWKKFJKPZROZUAZWRAXHQOZXHUQOZUGZUBZUCZUDXCLUHS
+        KAJUIXHFUEZJXJXOWOXBXPXIEXPXIFROZEXHFRUJHUKULXPXNXAXPWRAXMWTXPXKWSXLDXH
+        FQUJXPXLFUQODXHFUQUJIUKUMUNUOUPWKURWKJWOXBSWKESWKEXQSHWKRSVSFSMXQSMZUSF
+        LUTXRSFRFRVAVBVCVDZVEVFVGVHVIVJWMJCXBXGWOXCSXCVKWPCUEZXAXFXTWRXEAWTWPCW
+        QVLVMUOWKCWOMZWLWKESMYAWLVNXSCESVOTVPWMXEAWTVQZXGSMWKEWTMWLYBWKWSDEWKFV
+        TMEWSMFVREFHWATWKFWBMEDMFWCDEFHIWDTWEXEWLAEWTWQECWFWGWHXEAWTWITVGWJ $.
+
+      ${
+        $d L t x $.  $d S t x $.  $d V t x $.  $d W t x $.
+        $( The algebraic span of a set of vectors is a vector subspace.
+           (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+        asplss $p |- ( ( W e. AssAlg /\ S C_ V ) -> ( A ` S ) e. L ) $=
+          ( vt vx casa wcel wss wa cfv cv csubrg cin adantr syl crab cint clmod
+          aspval wex assalmod ssrab2 inss2 sstri a1i sseq2 crg assaring subrgid
+          lss1 elind simpr elrabd elex2 lssintclm syl3anc eqeltrd ) EKLZBDMZNZB
+          AOBIPZMZIEQOZCRZUAZUBZCIABCDEFGHUDVEEUCLZVJCMZJPVJLJUEZVKCLVCVLVDEUFZ
+          SVMVEVJVICVGIVIUGVHCUHUIUJVEDVJLVNVEVGVDIDVIVFDBUKVCDVILVDVCVHCDVCEUL
+          LDVHLEUMDEGUNTVCVLDCLVOCDEGHUOTUPSVCVDUQURJDVJUSTJVJCEHUTVAVB $.
+      $}
+
+      $( The algebraic span of a subalgebra is itself.  (Contributed by Mario
+         Carneiro, 7-Jan-2015.) $)
+      aspid $p |- ( ( W e. AssAlg /\ S e. ( SubRing ` W ) /\ S e. L ) ->
+        ( A ` S ) = S ) $=
+        ( vt casa wcel csubrg cfv w3a cv wss cin crab cint wceq 3ad2ant2 aspval
+        simp1 subrgss syl2anc wa 3simpc elin sylibr intmin syl eqtrd ) EJKZBELM
+        ZKZBCKZNZBAMZBIOPIUNCQZRSZBUQUMBDPZURUTTUMUOUPUCUOUMVAUPBDEGUDUAIABCDEF
+        GHUBUEUQBUSKZUTBTUQUOUPUFVBUMUOUPUGBUNCUHUIIBUSUJUKUL $.
+    $}
+
+    ${
+      $d S w $.
+      $( The algebraic span of a set of vectors is a subring of the algebra.
+         (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+      aspsubrg $p |- ( ( W e. AssAlg /\ S C_ V ) ->
+        ( A ` S ) e. ( SubRing ` W ) ) $=
+        ( vt vw casa wcel wss wa cfv cv csubrg clss cin crab syl adantr wex crg
+        cint eqid aspval inss1 sstri sseq2 assaring subrgid clmod assalmod lss1
+        ssrab2 elind simpr elrabd elex2 subrgintm sylancr eqeltrd ) DIJZBCKZLZB
+        AMBGNZKZGDOMZDPMZQZRZUCZVGGABVHCDEFVHUDZUEVDVJVGKHNVJJHUAZVKVGJVJVIVGVF
+        GVIUNVGVHUFUGVDCVJJVMVDVFVCGCVIVECBUHVDVGVHCVBCVGJZVCVBDUBJVNDUICDFUJST
+        VBCVHJZVCVBDUKJVODULVHCDFVLUMSTUOVBVCUPUQHCVJURSHDVJUSUTVA $.
+    $}
+
+    $( Span preserves subset ordering.  (Contributed by Mario Carneiro,
+       7-Jan-2015.) $)
+    aspss $p |- ( ( W e. AssAlg /\ S C_ V /\ T C_ S ) ->
+      ( A ` T ) C_ ( A ` S ) ) $=
+      ( vt casa wcel wss w3a cv csubrg cfv crab cint syl wceq aspval clss wa wi
+      cin simpl3 sstr2 ss2rabdv intss simp1 simp3 simp2 syl2anc 3adant3 3sstr4d
+      sstrd eqid ) EIJZBDKZCBKZLZCHMZKZHENOEUAOZUDZPZQZBVAKZHVDPZQZCAOZBAOZUTVH
+      VEKVFVIKUTVGVBHVDUTVAVDJZUBUSVGVBUCUQURUSVLUECBVAUFRUGVHVEUHRUTUQCDKVJVFS
+      UQURUSUIUTCBDUQURUSUJUQURUSUKUOHACVCDEFGVCUPZTULUQURVKVISUSHABVCDEFGVMTUM
+      UN $.
+
+    $( A set of vectors is a subset of its span.  (Contributed by Mario
+       Carneiro, 7-Jan-2015.) $)
+    aspssid $p |- ( ( W e. AssAlg /\ S C_ V ) -> S C_ ( A ` S ) ) $=
+      ( vt casa wcel wss wa cv csubrg cfv clss cin crab cint ssintub eqid
+      aspval sseqtrrid ) DHIBCJKBGLJGDMNDONZPZQRBBANGBUDSGABUCCDEFUCTUAUB $.
+  $}
+
+  ${
+    $d .1. q x $.  $d .1. w x $.  $d .x. q x $.  $d .x. w x $.  $d F j k $.
+    $d K j x $.  $d K q x $.  $d K w x $.  $d W k $.  $d W q x $.  $d W w x $.
+    $d X x $.
+    asclfval.a $e |- A = ( algSc ` W ) $.
+    asclfval.f $e |- F = ( Scalar ` W ) $.
+    asclfval.k $e |- K = ( Base ` F ) $.
+    asclfval.s $e |- .x. = ( .s ` W ) $.
+    asclfval.o $e |- .1. = ( 1r ` W ) $.
+    $( Function value of the algebra scalar lifting function.  (Contributed by
+       Mario Carneiro, 8-Mar-2015.) $)
+    asclfval $p |- A = ( x e. K |-> ( x .x. .1. ) ) $=
+      ( vw vj cfv cv wcel cvv csca cbs vq vk vu cascl co cmpt cur cvsca df-ascl
+      mptrcl wex mptmex basm exlimiv cdm wrel cslot mptrel df-slot releqi mpbir
+      scaid relelfvdm mpan eleq2s elexd 3syl wceq fveq2 eqtr4di fveq2d oveq123d
+      cnx eqidd mpteq12dv id wfn scaslid slotex eqeltrid funfvex funfni sylancr
+      basfn mptexd fvmptd3 eleq2d pm5.21nii eqriv eqtri ) BGUDOZAFAPZDCUEZUFZHU
+      AWKWNUAPZWKQGRQZWOWNQZMRAMPZSOZTOZWLWRUGOZWRUHOZUEZUFZUDWOGAMUIZUJWQNPZFQ
+      ZNUKUBPZEQZUBUKZWPANFWMWOULXGXJNXFFUBEJUMUNXJGSUOZXIGXKQZUBXLXHGSOZESUPZX
+      HXMQXLXNVMSOZUQZUPZXQUCRXOUCPOZUFZUPUCRXRURXPXSUCXOUSUTVASXPVBUTVAXHGSVCV
+      DIVEUNVFVGWPWKWNWOWPMGXDWNRUDRXEWRGVHZAWTXCFWMXTWTETOZFXTWSETXTWSXMEWRGSV
+      IIVJVKJVJXTWLWLXADXBCXTXBGUHOCWRGUHVIKVJXTWLVNXTXAGUGODWRGUGVILVJVLVOWPVP
+      WPAFWMRWPFYARJWPTRVQERQYARQZWDWPEXMRIGSRVRVSVTYBRETETWAWBWCVTWEWFWGWHWIWJ
+      $.
+
+    ${
+      asclvald.x $e |- ( ph -> X e. K ) $.
+      asclvald.l $e |- ( ph -> W e. LMod ) $.
+      asclvald.r $e |- ( ph -> W e. Ring ) $.
+      $( Value of a mapped algebra scalar.  (Contributed by Mario Carneiro,
+         8-Mar-2015.) $)
+      asclvald $p |- ( ph -> ( A ` X ) = ( X .x. .1. ) ) $=
+        ( vx cv co wcel cbs cfv asclfval oveq1 eqid crg ringidcl syl lmodvscld
+        fvmptd3 ) AQHQRZDCSHDCSFBGUAUBZQBCDEFGIJKLMUCUKHDCUDNAHCEFULGDULUEZJLKO
+        NAGUFTDULTPULGDUMMUGUHUIUJ $.
+    $}
+  $}
+
+  ${
+    $d K x $.  $d W x $.  $d ph x $.
+    asclfn.a $e |- A = ( algSc ` W ) $.
+    asclfn.f $e |- F = ( Scalar ` W ) $.
+    asclfn.k $e |- K = ( Base ` F ) $.
+    asclfnd.l $e |- ( ph -> W e. LMod ) $.
+    asclfnd.r $e |- ( ph -> W e. Ring ) $.
+    $( Functionality of the algebra scalar lifting function.  (Contributed by
+       Mario Carneiro, 9-Mar-2015.) $)
+    asclfnd $p |- ( ph -> A Fn K ) $=
+      ( vx cv cur cfv cvsca co wcel eqid adantr syl cbs wral wfn wa clmod simpr
+      crg ringidcl lmodvscld ralrimiva asclfval fnmpt ) AKLZEMNZEONZPZEUANZQZKD
+      UBBDUCAURKDAUMDQZUDZUMUOCDUQEUNUQRZGUORZHAEUEQUSISAUSUFUTEUGQZUNUQQAVCUSJ
+      SUQEUNVAUNRZUHTUIUJKDUPBUQKBUOUNCDEFGHVBVDUKULT $.
+  $}
+
+  ${
+    $d x y A $.  $d x B $.  $d x y F $.  $d x K $.  $d x y ph $.  $d x y W $.
+    asclf.a $e |- A = ( algSc ` W ) $.
+    asclf.f $e |- F = ( Scalar ` W ) $.
+    asclf.r $e |- ( ph -> W e. Ring ) $.
+    asclf.l $e |- ( ph -> W e. LMod ) $.
+    ${
+      asclf.k $e |- K = ( Base ` F ) $.
+      asclf.b $e |- B = ( Base ` W ) $.
+      $( The algebra scalar lifting function is a function into the base set.
+         (Contributed by Mario Carneiro, 4-Jul-2015.) $)
+      asclf $p |- ( ph -> A : K --> B ) $=
+        ( vx cv cur cfv cvsca wcel adantr eqid co clmod simpr ringidcl lmodvscl
+        wa crg syl syl3anc asclfval fmptd ) AMEMNZFOPZFQPZUAZCBAULERZUFFUBRZUPU
+        MCRZUOCRAUQUPJSAUPUCAURUPAFUGRURICFUMLUMTZUDUHSULUNDECFUMLHUNTZKUEUIMBU
+        NUMDEFGHKUTUSUJUK $.
+    $}
+
+    $( The algebra scalar lifting function is a group homomorphism.
+       (Contributed by Mario Carneiro, 4-Jul-2015.) $)
+    asclghm $p |- ( ph -> A e. ( F GrpHom W ) ) $=
+      ( vx vy cplusg cfv cbs eqid wcel crg syl co adantr asclvald lmodring wceq
+      clmod ringgrpd asclf cv wa cur cvsca simprl simprr ringidcl syl13anc cgrp
+      lmodvsdir grpcl 3expb sylan oveq12d 3eqtr4d isghmd ) AIJCKLZDKLZCDBCMLZDM
+      LZVDNZVENZVBNZVCNZACADUCOZCPOHCDFUAQUDZADGUDABVECVDDEFGHVFVGUEAIUFZVDOZJU
+      FZVDOZUGZUGZVLVNVBRZDUHLZDUILZRZVLVSVTRZVNVSVTRZVCRZVRBLVLBLZVNBLZVCRVQVJ
+      VMVOVSVEOZWAWDUBAVJVPHSZAVMVOUJZAVMVOUKZAWGVPADPOZWGGVEDVSVGVSNZULQSVCVBV
+      LVNVTCVDVEDVSVGVIFVTNZVFVHUOUMVQBVTVSCVDDVREFVFWMWLACUNOZVPVRVDOZVKWNVMVO
+      WOVDVBCVLVNVFVHUPUQURWHAWKVPGSZTVQWEWBWFWCVCVQBVTVSCVDDVLEFVFWMWLWIWHWPTV
+      QBVTVSCVDDVNEFVFWMWLWJWHWPTUSUTVA $.
+  $}
+
+  ${
+    asclelbas.a $e |- A = ( algSc ` W ) $.
+    asclelbas.f $e |- F = ( Scalar ` W ) $.
+    asclelbas.b $e |- B = ( Base ` F ) $.
+    asclelbas.w $e |- ( ph -> W e. AssAlg ) $.
+    asclelbas.c $e |- ( ph -> C e. B ) $.
+    $( Lifted scalars are in the base set of the algebra.  (Contributed by Zhi
+       Wang, 11-Sep-2025.)  (Proof shortened by Thierry Arnoux,
+       22-Sep-2025.) $)
+    asclelbas $p |- ( ph -> ( A ` C ) e. ( Base ` W ) ) $=
+      ( cbs cfv casa wcel crg assaring syl clmod assalmod eqid asclf ffvelcdmd
+      ) ACFLMZDBABUDECFGHAFNOZFPOJFQRAUEFSOJFTRIUDUAUBKUC $.
+  $}
+
+  ${
+    ascl0.a $e |- A = ( algSc ` W ) $.
+    ascl0.f $e |- F = ( Scalar ` W ) $.
+    ascl0.l $e |- ( ph -> W e. LMod ) $.
+    ascl0.r $e |- ( ph -> W e. Ring ) $.
+    $( The scalar 0 embedded into a left module corresponds to the 0 of the
+       left module if the left module is also a ring.  (Contributed by AV,
+       31-Jul-2019.) $)
+    ascl0 $p |- ( ph -> ( A ` ( 0g ` F ) ) = ( 0g ` W ) ) $=
+      ( c0g cfv cur cvsca co cbs eqid clmod wcel cgrp lmodfgrp grpidcl asclvald
+      3syl wceq crg ringidcl syl lmod0vs syl2anc eqtrd ) ACIJZBJUJDKJZDLJZMZDIJ
+      ZABULUKCCNJZDUJEFUOOZULOZUKOZADPQZCRQUJUOQGCDFSUOCUJUPUJOZTUBGHUAAUSUKDNJ
+      ZQZUMUNUCGADUDQVBHVADUKVAOZURUEUFULCUJVADUKUNVCFUQUTUNOUGUHUI $.
+
+    $( The scalar 1 embedded into a left module corresponds to the 1 of the
+       left module if the left module is also a ring.  (Contributed by AV,
+       31-Jul-2019.) $)
+    ascl1 $p |- ( ph -> ( A ` ( 1r ` F ) ) = ( 1r ` W ) ) $=
+      ( cur cfv cvsca co cbs eqid clmod wcel crg lmodring ringidcl 3syl lmodvs1
+      asclvald wceq syl syl2anc eqtrd ) ACIJZBJUGDIJZDKJZLZUHABUIUHCCMJZDUGEFUK
+      NZUINZUHNZADOPZCQPUGUKPGCDFRUKCUGULUGNZSTGHUBAUOUHDMJZPZUJUHUCGADQPURHUQD
+      UHUQNZUNSUDUIUGCUQDUHUSFUMUPUAUEUF $.
+  $}
+
+  ${
+    asclmul1.a $e |- A = ( algSc ` W ) $.
+    asclmul1.f $e |- F = ( Scalar ` W ) $.
+    asclmul1.k $e |- K = ( Base ` F ) $.
+    asclmul1.v $e |- V = ( Base ` W ) $.
+    asclmul1.t $e |- .X. = ( .r ` W ) $.
+    asclmul1.s $e |- .x. = ( .s ` W ) $.
+    $( Left multiplication by a lifted scalar is the same as the scalar
+       operation.  (Contributed by Mario Carneiro, 9-Mar-2015.) $)
+    asclmul1 $p |- ( ( W e. AssAlg /\ R e. K /\ X e. V ) ->
+        ( ( A ` R ) .X. X ) = ( R .x. X ) ) $=
+      ( wcel cfv co 3ad2ant1 wceq casa w3a cur eqid simp2 assalmod crg assaring
+      clmod asclvald simp1 ringidcl syl simp3 assaass syl13anc ringlidm syl2anc
+      oveq1d oveq2d 3eqtrd ) HUAPZBFPZIGPZUBZBAQZIDRBHUCQZCRZIDRZBVGIDRZCRZBICR
+      VEVFVHIDVEACVGEFHBJKLOVGUDZVBVCVDUEZVBVCHUIPVDHUFSVBVCHUGPZVDHUHSZUJUSVEV
+      BVCVGGPZVDVIVKTVBVCVDUKVMVEVNVPVOGHVGMVLULUMVBVCVDUNZBFCDEGHVGIMKLONUOUPV
+      EVJIBCVEVNVDVJITVOVQGHDVGIMNVLUQURUTVA $.
+
+    $( Right multiplication by a lifted scalar is the same as the scalar
+       operation.  (Contributed by Mario Carneiro, 9-Mar-2015.) $)
+    asclmul2 $p |- ( ( W e. AssAlg /\ R e. K /\ X e. V ) ->
+        ( X .X. ( A ` R ) ) = ( R .x. X ) ) $=
+      ( wcel cfv co 3ad2ant1 oveq2d casa w3a eqid simp2 clmod assalmod assaring
+      cur crg asclvald wceq simp1 simp3 ringidcl syl assaassr syl13anc ringridm
+      syl2anc 3eqtrd ) HUAPZBFPZIGPZUBZIBAQZDRIBHUHQZCRZDRZBIVFDRZCRZBICRVDVEVG
+      IDVDACVFEFHBJKLOVFUCZVAVBVCUDZVAVBHUEPVCHUFSVAVBHUIPZVCHUGSZUJTVDVAVBVCVF
+      GPZVHVJUKVAVBVCULVLVAVBVCUMZVDVMVOVNGHVFMVKUNUOBFCDEGHIVFMKLONUPUQVDVIIBC
+      VDVMVCVIIUKVNVPGHDVFIMNVKURUSTUT $.
+  $}
+
+  ${
+    ascldimul.a $e |- A = ( algSc ` W ) $.
+    ascldimul.f $e |- F = ( Scalar ` W ) $.
+    ascldimul.k $e |- K = ( Base ` F ) $.
+    ascldimul.t $e |- .X. = ( .r ` W ) $.
+    ascldimul.s $e |- .x. = ( .r ` F ) $.
+    $( The algebra scalar lifting function distributes over multiplication.
+       (Contributed by Mario Carneiro, 8-Mar-2015.)  (Proof shortened by SN,
+       5-Nov-2023.) $)
+    ascldimul $p |- ( ( W e. AssAlg /\ R e. K /\ S e. K ) ->
+        ( A ` ( R .x. S ) ) = ( ( A ` R ) .X. ( A ` S ) ) ) $=
+      ( wcel co cfv wceq 3ad2ant1 crg eqid casa w3a cur cvsca clmod simp2 simp3
+      cbs assalmod assaring ringidcl lmodvsass syl13anc assasca ringcl asclvald
+      syl3an1 asclf ffvelcdmda 3adant2 asclmul1 syld3an3 oveq2d eqtrd 3eqtr4d
+      syl ) HUANZBGNZCGNZUBZBCDOZHUCPZHUDPZOZBCVLVMOZVMOZVKAPBAPCAPZEOZVJHUENZV
+      HVIVLHUHPZNZVNVPQVGVHVSVIHUIZRZVGVHVIUFVGVHVIUGZVJHSNZWAVGVHWEVIHUJZRZVTH
+      VLVTTZVLTZUKVFBCVMDFGVTHVLWHJVMTZKMULUMVJAVMVLFGHVKIJKWJWIVGFSNVHVIVKGNFH
+      JUNGFDBCKMUOUQWCWGUPVJVRBVQVMOZVPVGVHVIVQVTNZVRWKQVGVIWLVHVGGVTCAVGAVTFGH
+      IJWFWBKWHURUSUTABVMEFGVTHVQIJKWHLWJVAVBVJVQVOBVMVJAVMVLFGHCIJKWJWIWDWCWGU
+      PVCVDVE $.
+  $}
+
+  ${
+    asclinvg.a $e |- A = ( algSc ` W ) $.
+    asclinvg.r $e |- R = ( Scalar ` W ) $.
+    asclinvg.k $e |- B = ( Base ` R ) $.
+    asclinvg.i $e |- I = ( invg ` R ) $.
+    asclinvg.j $e |- J = ( invg ` W ) $.
+    $( The group inverse (negation) of a lifted scalar is the lifted negation
+       of the scalar.  (Contributed by AV, 2-Sep-2019.) $)
+    asclinvg $p |- ( ( W e. LMod /\ W e. Ring /\ C e. B )
+                     -> ( J ` ( A ` C ) ) = ( A ` ( I ` C ) ) ) $=
+      ( clmod wcel crg w3a cghm co cfv wceq simp2 simp1 asclghm simp3 wa ghminv
+      eqcomd syl2anc ) GMNZGONZCBNZPZADGQRNZUKCASFSZCESASZTULADGHIUIUJUKUAUIUJU
+      KUBUCUIUJUKUDUMUKUEUOUNBDGAEFCJKLUFUGUH $.
+  $}
+
+  ${
+    $d x y A $.  $d x y F $.  $d x y W $.
+    asclrhm.a $e |- A = ( algSc ` W ) $.
+    asclrhm.f $e |- F = ( Scalar ` W ) $.
+    $( The algebra scalar lifting function is a ring homomorphism.
+       (Contributed by Mario Carneiro, 8-Mar-2015.) $)
+    asclrhm $p |- ( W e. AssAlg -> A e. ( F RingHom W ) ) $=
+      ( vx vy casa wcel cbs cfv cmulr cur assasca assaring assalmod ascl1 cv co
+      eqid wceq ascldimul 3expb asclghm isrhm2d ) CHIZFGBJKZBCBLKZCLKZBMKZACMKZ
+      UGTZUJTUKTUHTZUITZBCENCOZUFABCDECPZUOQUFFRZUGIGRZUGIUQURUHSAKUQAKURAKUISU
+      AAUQURUHUIBUGCDEULUNUMUBUCUFABCDEUOUPUDUE $.
+  $}
+
+  ${
+    $d N x y $.  $d .1. x y $.  $d W x y $.
+    rnascl.a $e |- A = ( algSc ` W ) $.
+    rnascl.o $e |- .1. = ( 1r ` W ) $.
+    rnascl.n $e |- N = ( LSpan ` W ) $.
+    $( The set of lifted scalars is also interpretable as the span of the
+       identity.  (Contributed by Mario Carneiro, 9-Mar-2015.) $)
+    rnascl $p |- ( W e. AssAlg -> ran A = ( N ` { .1. } ) ) $=
+      ( vx vy casa wcel crn cv cvsca cfv co wceq csca cbs eqid cab csn asclfval
+      wrex rnmpt clmod assalmod crg assaring ringidcl syl lspsn syl2anc eqtr4id
+      ) DJKZALHMIMBDNOZPZQIDROZSOZUDHUAZBUBCOZIHUSUQAIAUPBURUSDEURTZUSTZUPTZFUC
+      UEUODUFKBDSOZKZVAUTQDUGUODUHKVFDUIVEDBVETZFUJUKHUPIURUSCVEDBVBVCVGVDGULUM
+      UN $.
+  $}
+
+  ${
+    $d x y A $.  $d x y L $.  $d x y S $.  $d x y W $.
+    issubassa2.a $e |- A = ( algSc ` W ) $.
+    issubassa2.l $e |- L = ( LSubSp ` W ) $.
+    $( A subring of a unital algebra is a subspace and thus a subalgebra iff it
+       contains all scalar multiples of the identity.  (Contributed by Mario
+       Carneiro, 9-Mar-2015.) $)
+    issubassa2 $p |- ( ( W e. AssAlg /\ S e. ( SubRing ` W ) ) ->
+        ( S e. L <-> ran A C_ S ) ) $=
+      ( vx vy wcel cfv wa wss wceq eqid ad2antrr ad2antlr cv co wral cbs csubrg
+      casa crn cur csn clspn rnascl clmod assalmod simpr subrg1cl eqsstrd csubg
+      ellspsn5 cvsca csca subrgsubg cmulr simplll simprl subrgss sselda adantrl
+      asclmul1 syl3anc simpllr simplr wfn crg assaring asclfnd fnfvelrn adantrr
+      sylan sseldd simprr subrgmcl eqeltrrd ralrimivva islss4 mpbir2and impbida
+      wb syl ) DUBIZBDUAJIZKZBCIZAUCZBLZWGWHKZWIDUDJZUEDUFJZJZBWEWIWNMWFWHAWLWM
+      DEWLNZWMNZUGOWKCBWMDWLFWPWEDUHIZWFWHDUIZOWGWHUJWFWLBIWEWHBDWLWOUKPUNULWGW
+      JKZWHBDUMJIZGQZHQZDUOJZRZBIZHBSGDUPJZTJZSZWFWTWEWJBDUQPWSXEGHXGBWSXAXGIZX
+      BBIZKZKZXAAJZXBDURJZRZXDBXLWEXIXBDTJZIZXOXDMWEWFWJXKUSWSXIXJUTWSXJXQXIWSB
+      XPXBWFBXPLWEWJBXPDXPNZVAPVBVCAXAXCXNXFXGXPDXBEXFNZXGNZXRXNNZXCNZVDVEXLWFX
+      MBIZXJXOBIWEWFWJXKVFWSXIYCXJWSXIKWIBXMWGWJXIVGWSAXGVHXIXMWIIWSAXFXGDEXSXT
+      WEWQWFWJWROWEDVIIWFWJDVJOVKXGXAAVLVNVOVMWSXIXJVPBDXNXMXBYAVQVEVRVSWEWHWTX
+      HKWCZWFWJWEWQYDWRXGCXCBXFXPDGHXSXTXRYBFVTWDOWAWB $.
+  $}
+
+  ${
+    rnasclsubrg.c $e |- C = ( algSc ` W ) $.
+    rnasclsubrg.w $e |- ( ph -> W e. AssAlg ) $.
+    $( The scalar multiples of the unit vector form a subring of the vectors.
+       (Contributed by SN, 5-Nov-2023.) $)
+    rnasclsubrg $p |- ( ph -> ran C e. ( SubRing ` W ) ) $=
+      ( casa wcel csca cfv crh co crn csubrg eqid asclrhm rnrhmsubrg 3syl ) ACF
+      GBCHIZCJKGBLCMIGEBRCDRNOBRCPQ $.
+  $}
+
+  ${
+    rnasclmulcl.c $e |- C = ( algSc ` W ) $.
+    rnasclmulcl.x $e |- .X. = ( .r ` W ) $.
+    rnasclmulcl.w $e |- ( ph -> W e. AssAlg ) $.
+    $( (Vector) multiplication is closed for scalar multiples of the unit
+       vector.  (Contributed by SN, 5-Nov-2023.) $)
+    rnasclmulcl $p |- ( ( ph /\
+        ( X e. ran C /\ Y e. ran C ) ) ->
+                ( X .X. Y ) e. ran C ) $=
+      ( crn wcel co csubrg cfv rnasclsubrg subrgmcl syl3an1 3expb ) AEBJZKZFSKZ
+      EFCLSKZASDMNKTUAUBABDGIOSDCEFHPQR $.
+  $}
+
+  ${
+    rnasclassa.a $e |- A = ( algSc ` W ) $.
+    rnasclassa.u $e |- U = ( W |`s ran A ) $.
+    rnasclassa.w $e |- ( ph -> W e. AssAlg ) $.
+    $( The scalar multiples of the unit vector form a subalgebra of the
+       vectors.  (Contributed by SN, 16-Nov-2023.) $)
+    rnasclassa $p |- ( ph -> U e. AssAlg ) $=
+      ( crn wss casa wcel ssidd csubrg cfv wi rnasclsubrg clss eqid issubassa2
+      wa issubassa3 expr sylbird syl2anc mpd ) ABHZUFIZCJKZAUFLADJKZUFDMNKZUGUH
+      OGABDEGPUIUJTUGUFDQNZKZUHBUFUKDEUKRZSUIUJULUHUFCUKDFUMUAUBUCUDUE $.
+  $}
+
+  ${
+    $d S x $.  $d W x $.  $d X x $.
+    ressascl.a $e |- A = ( algSc ` W ) $.
+    ressascl.x $e |- X = ( W |`s S ) $.
+    $( The lifting of scalars is invariant between subalgebras and
+       superalgebras.  (Contributed by Mario Carneiro, 9-Mar-2015.) $)
+    ressascl $p |- ( S e. ( SubRing ` W ) -> A = ( algSc ` X ) ) $=
+      ( vx cfv wcel csca cbs cur cvsca co cmpt crg wceq eqid mpancom asclfval
+      csubrg cv cascl subrgrcl ressscag fveq2d ressvscag eqidd subrg1 mpteq12dv
+      oveq123d 3eqtr4g ) BCUAHZIZGCJHZKHZGUBZCLHZCMHZNZOGDJHZKHZUQDLHZDMHZNZOAD
+      UCHZUNGUPUTVBVEUNUOVAKCPIZUNUOVAQBCUDZBUOCDUMPFUORZUESUFUNUQUQURVCUSVDVGU
+      NUSVDQVHBUSCDUMPFUSRZUGSUNUQUHBCDURFURRZUIUKUJGAUSURUOUPCEVIUPRVJVKTGVFVD
+      VCVAVBDVFRVARVBRVDRVCRTUL $.
+  $}
+
+  ${
+    $d x y z K $.  $d x y z L $.  $d x y z P $.  $d x y z ph $.  $d x y W $.
+    $d z F $.  $d z G $.
+    asclpropd.f $e |- F = ( Scalar ` K ) $.
+    asclpropd.g $e |- G = ( Scalar ` L ) $.
+    asclpropd.1 $e |- ( ph -> P = ( Base ` F ) ) $.
+    asclpropd.2 $e |- ( ph -> P = ( Base ` G ) ) $.
+    asclpropd.3 $e |- ( ( ph /\ ( x e. P /\ y e. W ) ) ->
+      ( x ( .s ` K ) y ) = ( x ( .s ` L ) y ) ) $.
+    asclpropd.4 $e |- ( ph -> ( 1r ` K ) = ( 1r ` L ) ) $.
+    asclpropd.5 $e |- ( ph -> ( 1r ` K ) e. W ) $.
+    $( If two structures have the same components (properties), one is an
+       associative algebra iff the other one is.  The last hypotheses on ` 1r `
+       can be discharged either by letting ` W = _V ` (if strong equality is
+       known on ` .s ` ) or assuming ` K ` is a ring.  (Contributed by Mario
+       Carneiro, 5-Jul-2015.) $)
+    asclpropd $p |- ( ph -> ( algSc ` K ) = ( algSc ` L ) ) $=
+      ( vz cfv cmpt eqid cbs cv cur cvsca co cascl wcel wceq oveqrspc2v anassrs
+      wa mpidan oveq2d adantr eqtrd mpteq2dva mpteq1d 3eqtr3d asclfval 3eqtr4g
+      ) AQEUARZQUBZGUCRZGUDRZUEZSZQFUARZVBHUCRZHUDRZUEZSZGUFRZHUFRZAQDVESQDVJSV
+      FVKAQDVEVJAVBDUGZUKVEVBVCVIUEZVJAVNVCIUGZVEVOUHZPAVNVPVQABCDIVDVIVBVCNUIU
+      JULAVOVJUHVNAVCVHVBVIOUMUNUOUPAQDVAVELUQAQDVGVJMUQURQVLVDVCEVAGVLTJVATVDT
+      VCTUSQVMVIVHFVGHVMTKVGTVITVHTUSUT $.
+  $}
+
+  ${
+    assamulgscm.v $e |- V = ( Base ` W ) $.
+    assamulgscm.f $e |- F = ( Scalar ` W ) $.
+    assamulgscm.b $e |- B = ( Base ` F ) $.
+    assamulgscm.s $e |- .x. = ( .s ` W ) $.
+    assamulgscm.g $e |- G = ( mulGrp ` F ) $.
+    assamulgscm.p $e |- .^ = ( .g ` G ) $.
+    assamulgscm.h $e |- H = ( mulGrp ` W ) $.
+    assamulgscm.e $e |- E = ( .g ` H ) $.
+    $( Lemma 1 for ~ assamulgscm (induction base).  (Contributed by AV,
+       26-Aug-2019.) $)
+    assamulgscmlem1 $p |- ( ( ( A e. B /\ X e. V ) /\ W e. AssAlg )
+                     -> ( 0 E ( A .x. X ) ) = ( ( 0 .^ A ) .x. ( 0 E X ) ) ) $=
+      ( wcel wa casa cur cfv cc0 wceq clmod assalmod crg assaring eqid ringidcl
+      co lmodvs1 eqcomd syl2anc adantl simpll simplr lmodvscl syl3anc ringidval
+      syl mgpbas mulg0 oveq12d 3eqtr4d ) ABTZKITZUAZJUBTZUAZJUCUDZFUCUDZVMCUMZU
+      EAKCUMZDUMZUEAEUMZUEKDUMZCUMVKVMVOUFZVJVKJUGTZVMITZVTJUHZVKJUITWBJUJIJVML
+      VMUKZULVCWAWBUAVOVMCVNFIJVMLMOVNUKZUNUOUPUQVLVPITZVQVMUFVLWAVHVIWFVKWAVJW
+      CUQVHVIVKURZVHVIVKUSZACFBIJKLMONUTVAIDHVPVMIJHRLVDZJVMHRWDVBZSVEVCVLVRVNV
+      SVMCVLVHVRVNUFWGBEGAVNBFGPNVDFVNGPWEVBQVEVCVLVIVSVMUFWHIDHKVMWIWJSVEVCVFV
+      G $.
+
+    $( Lemma for ~ assamulgscm (induction step).  (Contributed by AV,
+       26-Aug-2019.) $)
+    assamulgscmlem2 $p |- ( y e. NN0 -> ( ( ( A e. B /\ X e. V )
+       /\ W e. AssAlg ) -> ( ( y E ( A .x. X ) ) = ( ( y .^ A ) .x. ( y E X ) )
+                     -> ( ( y + 1 ) E ( A .x. X ) )
+                        = ( ( ( y + 1 ) .^ A ) .x. ( ( y + 1 ) E X ) ) ) ) ) $=
+      ( cv cn0 wcel wa casa co wceq c1 caddc cmulr cfv crg assaring ringmgp syl
+      cmnd adantl adantr simpll clmod assalmod simplr lmodvscl syl3anc mgpplusg
+      mgpbas eqid mulgnn0p1 oveq1 cbs simprr eqcomi fveq2i assasca simpl wi a1i
+      csca eqtrdi eleq2d biimpcd imp mulgnn0cld simprlr assaass syl13anc oveq2d
+      assaassr eqcomd peano2nn0 w3a lmodvsass 3eqtrd simprll fveq2d oveqd eqtrd
+      oveq1d sylan9eqr exp31 ) AUAZUBUCZBCUCZLJUCZUDZKUEUCZUDZXABLDUFZEUFZXABFU
+      FZXALEUFZDUFZUGZXAUHUIUFZXHEUFZXNBFUFZXNLEUFZDUFZUGXBXGUDZXMUDZXOXIXHKUJU
+      KZUFZXRXTIUPUCZXBXHJUCZXOYBUGXSYCXMXGYCXBXFYCXEXFKULUCYCKUMKISUNUOUQUQZUR
+      XBXGXMUSXSYDXMXGYDXBXGKUTUCZXCXDYDXFYFXEKVAUQZXCXDXFUSXCXDXFVBBDGCJKLMNPO
+      VCVDUQZURJYAEIXAXHJKISMVFZTKYAISYAVGZVEZVHVDXMXSYBXLXHYAUFZXRXIXLXHYAVIXS
+      YLXJXKXHYAUFZDUFZXJBKVRUKZUJUKZUFZXQDUFZXRXSXFXJYOVJUKZUCZXKJUCZYDYLYNUGX
+      BXEXFVKZXSYSFHXABYSGHQYOGVJGYONVLVMVFRXGHUPUCZXBXFUUCXEXFGULUCUUCGKNVNGHQ
+      UNUOUQUQZXBXGVOZXGBYSUCZXBXEXFUUFXCXFUUFVPXDXFXCUUFXFCYSBXFCGVJUKZYSCUUGU
+      GXFOVQGYOVJNVMVSVTWAURWBUQZWCZXSJEIXALYITYEUUEXBXCXDXFWDZWCZYHXJYSDYAYOJK
+      XKXHMYOVGZYSVGZPYJWEWFXSYNXJBXKLYAUFZDUFZDUFXJBXQDUFZDUFZYRXSYMUUOXJDXSXF
+      UUFUUAXDYMUUOUGUUBUUHUUKUUJBYSDYAYOJKXKLMUULUUMPYJWHWFWGXSUUOUUPXJDXSUUNX
+      QBDXSXQUUNXSYCXBXDXQUUNUGYEUUEUUJJYAEIXALYITYKVHVDWIWGWGXSYFYTUUFXQJUCZUU
+      QYRUGXGYFXBYGUQUUIUUHXSJEIXNLYITYEXBXNUBUCXGXAWJURUUJWCYFYTUUFUURWKUDYRUU
+      QXJBDYPYOYSJKXQMUULPUUMYPVGWLWIWFWMXSYQXPXQDXSXPYQXSXPXJBGUJUKZUFZYQXSUUC
+      XBXCXPUUTUGUUDUUEXBXCXDXFWNCUUSFHXABCGHQOVFRGUUSHQUUSVGVEVHVDXSUUSYPXJBXS
+      GYOUJGYOUGXSNVQWOWPWQWIWRWMWSWQWT $.
+
+    $d A x y $.  $d B x y $.  $d E x y $.  $d N x y $.  $d V x y $.
+    $d W x y $.  $d X x y $.  $d .x. x y $.  $d .^ x y $.
+    $( Exponentiation of a scalar multiplication in an associative algebra:
+       ` ( a .x. X ) ^ N = ( a ^ N ) .X. ( X ^ N ) ` .  (Contributed by AV,
+       26-Aug-2019.) $)
+    assamulgscm $p |- ( ( W e. AssAlg /\ ( N e. NN0 /\ A e. B /\ X e. V ) )
+       -> ( N E ( A .x. X ) ) = ( ( N .^ A ) .x. ( N E X ) ) ) $=
+      ( vx vy cn0 wcel w3a casa co wceq wi wa cv c1 caddc oveq1 oveq12d eqeq12d
+      cc0 imbi2d weq assamulgscmlem1 assamulgscmlem2 nn0ind exp4c 3imp impcom
+      a2d ) IUCUDZABUDZLJUDZUEKUFUDZIALCUGZDUGZIAEUGZILDUGZCUGZUHZVGVHVIVJVPUIV
+      GVHVIVJVPVHVIUJVJUJZUAUKZVKDUGZVRAEUGZVRLDUGZCUGZUHZUIVQUQVKDUGZUQAEUGZUQ
+      LDUGZCUGZUHZUIVQUBUKZVKDUGZWIAEUGZWILDUGZCUGZUHZUIVQWIULUMUGZVKDUGZWOAEUG
+      ZWOLDUGZCUGZUHZUIVQVPUIUAUBIVRUQUHZWCWHVQXAVSWDWBWGVRUQVKDUNXAVTWEWAWFCVR
+      UQAEUNVRUQLDUNUOUPURUAUBUSZWCWNVQXBVSWJWBWMVRWIVKDUNXBVTWKWAWLCVRWIAEUNVR
+      WILDUNUOUPURVRWOUHZWCWTVQXCVSWPWBWSVRWOVKDUNXCVTWQWAWRCVRWOAEUNVRWOLDUNUO
+      UPURVRIUHZWCVPVQXDVSVLWBVOVRIVKDUNXDVTVMWAVNCVRIAEUNVRILDUNUOUPURABCDEFGH
+      JKLMNOPQRSTUTWIUCUDVQWNWTUBABCDEFGHJKLMNOPQRSTVAVFVBVCVDVE $.
+  $}
+
+  ${
+    asclmulg.a $e |- A = ( algSc ` W ) $.
+    asclmulg.f $e |- F = ( Scalar ` W ) $.
+    asclmulg.k $e |- K = ( Base ` F ) $.
+    asclmulg.m $e |- .^ = ( .g ` W ) $.
+    asclmulg.t $e |- .* = ( .g ` F ) $.
+    $( Apply group multiplication to the algebra scalars.  (Contributed by
+       Thierry Arnoux, 24-Jul-2024.) $)
+    asclmulg $p |- ( ( W e. AssAlg /\ N e. NN0 /\ X e. K ) -> ( A ` ( N .* X )
+       ) = ( N .^ ( A ` X ) ) ) $=
+      ( casa wcel cfv co 3ad2ant1 eqid asclvald cn0 w3a cur cvsca wceq assalmod
+      clmod cbs simp3 simp2 crg assaring ringidcl lmodvsmmulgdi syl13anc oveq2d
+      syl cgrp assasca ringgrpd nn0zd mulgcld 3eqtr4rd ) GNOZFUAOZHEOZUBZFHGUCP
+      ZGUDPZQZBQZFHDQZVHVIQZFHAPZBQVLAPVGGUGOZVFVEVHGUHPZOZVKVMUEVDVEVOVFGUFRZV
+      DVEVFUIZVDVEVFUJZVDVEVQVFVDGUKOZVQGULZVPGVHVPSZVHSZUMUQRHVIDBCEFVPGVHWCJV
+      ISZKLMUNUOVGVNVJFBVGAVIVHCEGHIJKWEWDVSVRVDVEWAVFWBRZTUPVGAVIVHCEGVLIJKWEW
+      DVGEDCFHKMVDVECUROVFVDCCGJUSUTRVGFVTVAVSVBVRWFTVC $.
+  $}
 
 
 $(
@@ -209514,6 +210389,15 @@ htmldef "Z/nZ" as "&#8484;/<i>n</i>&#8484;";
   althtmldef "Z/nZ" as "&#8484;/<i>n</i>&#8484;";
     /* 2-Jan-2016 reverted sans-serif */
   latexdef "Z/nZ" as "\mathrm{Z/nZ}";
+htmldef "AssAlg" as "AssAlg";
+  althtmldef "AssAlg" as "AssAlg";
+  latexdef "AssAlg" as "\mathrm{AssAlg}";
+htmldef "AlgSpan" as "AlgSpan";
+  althtmldef "AlgSpan" as "AlgSpan";
+  latexdef "AlgSpan" as "\mathrm{AlgSpan}";
+htmldef "algSc" as "algSc";
+  althtmldef "algSc" as "algSc";
+  latexdef "algSc" as "\mathrm{algSc}";
 htmldef "mPwSer" as " mPwSer ";
   althtmldef "mPwSer" as " mPwSer ";
   latexdef "mPwSer" as "\mathrm{mPwSer}";
