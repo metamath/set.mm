@@ -211315,6 +211315,12 @@ htmldef "Ind" as "Ind ";
   latexdef "Ind" as "\mathrm{Ind}";
 /* End of BJ's mathbox */
 
+/* Mathbox of Jim Kingdon */
+htmldef "WEXMID" as "<SMALL>WEXMID</SMALL>";
+  althtmldef "WEXMID" as "<SMALL>WEXMID</SMALL>";
+  latexdef "WEXMID" as "\mathrm{WEXMID}";
+/* End of Jim Kingdon's mathbox */
+
 /* Mathbox of David A. Wheeler */
 htmldef "AE" as
   "<IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 ALT=' A.' TITLE='A.'>" +
@@ -215077,6 +215083,70 @@ $)
       CUDVKCEUEUFQVSVJVLWBVSVJVLVJUGVIVMRUHVIVLWBLVMVIVKWAVKWALVIEVTHVKCEUMZWAV
       KVKCEUIVTEUJSEGDKEGDUKVKWDLULDSEUNVKCDEUOUPUQQPURUSUTTVIVQVMAVHVIVNVHGNZV
       QNZVLVJWFVLNZVJVPWGVPIZIVPWGVKWHWFVLRWGVJVPWEVQVLVAZPVCVOVBVDWIVETVFVG $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Weak excluded middle
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c WEXMID $.
+
+  $( Formula for an abbreviation of weak excluded middle. $)
+  wwem $a wff WEXMID $.
+
+  $( Weak excluded middle is the principle that any negated proposition is
+     decidable.  (Contributed by Jim Kingdon, 30-Jul-2026.) $)
+  df-wexmid $a |- ( WEXMID <-> A. p e. ~P 1o ( -. p = 1o \/ -. -. p = 1o ) ) $.
+
+  ${
+    $d ph x y $.
+    $( Weak excluded middle expressed using ` WEXMID ` implies decidability of
+       a negated proposition.  (Contributed by Jim Kingdon, 30-Jul-2026.) $)
+    wexmiddc $p |- ( WEXMID -> DECID -. ph ) $=
+      ( vy vx wwem wn wo wdc c1o crab wceq cv cpw wral df-wexmid wcel wi notbid
+      cvv 1oex notbii ssrab2 elpwi2 eqeq1 orbi12d rspcv ax-mp sylbi sylib df-dc
+      rabid1o orbi12i sylibr ) DAEZUMEZFZUMGDABHIZHJZEZUREZFZUODCKZHJZEZVCEZFZC
+      HLZMZUTCNUPVFOVGUTPUPHRSABHUAUBVEUTCUPVFVAUPJZVCURVDUSVHVBUQVAUPHUCQZVHVC
+      URVIQUDUEUFUGURUMUSUNUQAABUJTZURUMVJTUKUHUMUIUL $.
+  $}
+
+  ${
+    $d j ph z $.  $d ph y z $.  $d x y $.
+    $( Lemma for ~ wexmiddiffi .  The reverse direction, using different
+       notation.  (Contributed by Jim Kingdon, 29-Jul-2026.) $)
+    wexmiddiffilem $p |- ( A. x A. y ( x e. Fin -> ( x \ y ) e. Fin )
+        -> ( -. ph \/ -. -. ph ) ) $=
+      ( vz vj vw cv cfn wcel cdif wi wal wn c0 wceq wex wo p0ex eleq1d 0ex crab
+      csn eleq1 difeq1 imbi12d albidv spcv cvv snfig ax-mp difeq2 imbi2d mpisyl
+      rabex fin0or notm0 snm wral wb r19.3rmv rabeq0 sylbb2 difeq2d dif0 eqtrdi
+      eleq2d exbidv mpbiri con3i sylbir eldifi wa eldifn sylnib mpnanrd exlimiv
+      biidd elrab orim12i 3syl orcomd ) BGZHIZWBCGZJZHIZKZCLZBLZAMZMZWJWINUBZAD
+      WLUAZJZHIZWNNOZEGZWNIZEPZQWKWJQWIWLHIZWLWDJZHIZKZCLZWTWOWHXDBWLRWBWLOZWGX
+      CCXEWCWTWFXBWBWLHUCXEWEXAHWBWLWDUDSUEUFUGNUHIWTTNUHUIUJXCWTWOKCWMADWLRUNW
+      DWMOZXBWOWTXFXAWNHWDWMWLUKSULUGUMEWNUOWPWKWSWJWPWSMWKEWNUPWJWSWJWSWQWLIZE
+      PENTUQWJWRXGEWJWNWLWQWJWNWLNJWLWJWMNWLWJWJDWLURZWMNOFGWLIFPWJXHUSFNTUQWJD
+      FWLUTUJADWLVAVBVCWLVDVEVFVGVHVIVJWRWJEWRXGAWQWLWMVKWRWQWMIXGAVLWQWLWMVMAA
+      DWQWLDGWQOAVQVRVNVOVPVSVTWA $.
+  $}
+
+  ${
+    $d p x y z $.
+    $( Being able to subtract an arbitrary set from a finite set and get a
+       finite set is equivalent to weak excluded middle.  By adding additional
+       conditions we can get a theorem which does not need weak excluded
+       middle, at ~ diffifi .  (Contributed by Jim Kingdon, 29-Jul-2026.) $)
+    wexmiddiffi $p |- ( WEXMID
+        <-> A. x A. y ( x e. Fin -> ( x \ y ) e. Fin ) ) $=
+      ( vz vp wwem cv cfn wcel cdif wi wal wa wss wdc wral simpr wn sylibr c1o
+      wo difssd animorrl df-dc wexmiddc ad2antrr dcand ralrimiva ssfidc syl3anc
+      eldif dcbii alrimivv wceq cpw wexmiddiffilem ralrimivw df-wexmid impbii
+      ex ) EAFZGHZUTBFZIZGHZJZBKAKZEVEABEVAVDEVALZVAVCUTMCFZVCHZNZCUTOVDEVAPVGU
+      TVBUAVGVJCUTVGVHUTHZLZVKVHVBHZQZLZNVJVLVKVNVLVKVKQZTVKNVGVKVPUBVKUCREVNNV
+      AVKVMUDUEUFVIVOVHUTVBUJUKRUGCUTVCUHUIUSULVFDFSUMZQZVRQTZDSUNZOEVFVSDVTVQA
+      BUOUPDUQRUR $.
   $}
 
 
