@@ -214987,6 +214987,15 @@ $)
   $}
 
   ${
+    $d x ph $.
+    $( Converting between propositions and corresponding subsets of a
+       singleton.  (Contributed by Jim Kingdon, 31-Jul-2026.) $)
+    rabid1o $p |- ( { x e. 1o | ph } = 1o <-> ph ) $=
+      ( vy c1o wral crab wceq c0 wcel cv wex wb 0lt1o elex2 r19.3rmv mp2b eqcom
+      rabid2 3bitr2ri ) AABDEZDABDFZGUADGHDICJDICKATLMCHDNABCDOPABDRDUAQS $.
+  $}
+
+  ${
     $d x y $.
     $( The powerset of ` 1o ` having decidable equality is equivalent to
        excluded middle.  (Contributed by Jim Kingdon, 12-Feb-2026.) $)
