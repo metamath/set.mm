@@ -29701,8 +29701,9 @@ $)
       3sstr4g ) CDEZBFZCGZAHZBIZUADGZAHZBIZABCJABDJUBUEKZBLUCUFKZBLTUDUGEUHUIBU
       BUEAMNBCDOUCUFBPQABCRABDRS $.
 
-    $( Subclass relation for the restriction of a class abstraction.
-       (Contributed by NM, 31-Mar-1995.) $)
+    $( Subclass relation for the restriction of a class abstraction.  Prefer
+       using the more natural statement ~ ssrab2 .  (Contributed by NM,
+       31-Mar-1995.) $)
     ssab2 $p |- { x | ( x e. A /\ ph ) } C_ A $=
       ( cv wcel wa simpl abssi ) BDCEZAFBCIAGH $.
 
@@ -31523,10 +31524,16 @@ $)
   ss0 $p |- ( A C_ (/) -> A = (/) ) $=
     ( c0 wss wceq ss0b biimpi ) ABCABDAEF $.
 
+  $( The only subclass of the empty class is itself.  (Contributed by NM,
+     7-Mar-2007.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.)  Strengthen
+     ~ sseq0 to a biconditional.  (Revised by BJ, 19-Jul-2026.) $)
+  sseq0b $p |- ( A = (/) -> ( B C_ A <-> B = (/) ) ) $=
+    ( c0 wceq wss sseq2 ss0b bitrdi ) ACDBAEBCEBCDACBFBGH $.
+
   $( A subclass of an empty class is empty.  (Contributed by NM, 7-Mar-2007.)
      (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
   sseq0 $p |- ( ( A C_ B /\ B = (/) ) -> A = (/) ) $=
-    ( c0 wceq wss sseq2 ss0 biimtrdi impcom ) BCDZABEZACDZJKACELBCAFAGHI $.
+    ( c0 wceq wss sseq0b biimpac ) BCDABEACDBAFG $.
 
   $( A class with a nonempty subclass is nonempty.  (Contributed by NM,
      17-Feb-2007.) $)
@@ -31726,12 +31733,18 @@ $)
       $.
   $}
 
+  $( Intersection, subclass, and difference relationship.  The converse holds
+     in classical logic but not in intuitionistic logic.  (Contributed by Jim
+     Kingdon, 3-Aug-2018.)  (Proof shortened by BJ, 18-Jul-2026.) $)
+  inssdif0im $p |- ( ( A i^i B ) C_ C -> ( A i^i ( B \ C ) ) = (/) ) $=
+    ( cin wss cdif c0 indif2 ssdif0im eqtrid ) ABDZCEABCFDKCFGABCHKCIJ $.
+
   ${
     $d x A $.  $d x B $.  $d x C $.
-    $( Intersection, subclass, and difference relationship.  In classical logic
-       the converse would also hold.  (Contributed by Jim Kingdon,
-       3-Aug-2018.) $)
-    inssdif0im $p |- ( ( A i^i B ) C_ C -> ( A i^i ( B \ C ) ) = (/) ) $=
+    $( Obsolete version of ~ inssdif0im as of 18-Jul-2026.  (Contributed by Jim
+       Kingdon, 3-Aug-2018.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    inssdif0imOLD $p |- ( ( A i^i B ) C_ C -> ( A i^i ( B \ C ) ) = (/) ) $=
       ( vx cv cin wcel wi wal cdif wn c0 wceq wa elin imbi1i imanim sylbi eldif
       wss anbi2i anass 3bitr4ri sylnib alimi ssalel eq0 3imtr4i ) DEZABFZGZUICG
       ZHZDIUIABCJZFZGZKZDIUJCTUOLMUMUQDUMUIAGZUIBGZNZULKZNZUPUMUTULHVBKUKUTULUI
@@ -31767,13 +31780,19 @@ $)
   0dif $p |- ( (/) \ A ) = (/) $=
     ( c0 cdif wss wceq difss ss0 ax-mp ) BACZBDIBEBAFIGH $.
 
+  $( A class and its relative complement are disjoint.  (Contributed by NM,
+     24-Mar-1998.)  Generalize from ~ disjdif .  (Revised by BJ,
+     19-Jul-2026.) $)
+  disjdifg $p |- ( A C_ B -> ( A i^i ( C \ B ) ) = (/) ) $=
+    ( wss cin cdif c0 wceq ssinss1 inssdif0im syl ) ABDACEBDACBFEGHACBIACBJK $.
+
   $( A class and its relative complement are disjoint.  Theorem 38 of [Suppes]
      p. 29.  (Contributed by NM, 24-Mar-1998.) $)
   disjdif $p |- ( A i^i ( B \ A ) ) = (/) $=
-    ( cin wss cdif c0 wceq inss1 inssdif0im ax-mp ) ABCADABAECFGABHABAIJ $.
+    ( wss cdif cin c0 wceq ssid disjdifg ax-mp ) AACABADEFGAHAABIJ $.
 
-  $( A class and its relative complement are disjoint.  (Contributed by Thierry
-     Arnoux, 29-Nov-2023.) $)
+  $( A class and its relative complement are disjoint.  Commuted form of
+     ~ disjdif .  (Contributed by Thierry Arnoux, 29-Nov-2023.) $)
   disjdifr $p |- ( ( B \ A ) i^i A ) = (/) $=
     ( cdif c0 disjdif ineqcomi ) ABACDABEF $.
 
@@ -37878,8 +37897,8 @@ $)
   ${
     $d x A $.
     $( Separation Scheme (Aussonderung) in terms of a class abstraction.
-       (Contributed by NM, 8-Jun-1994.)  Put in closed form.  (Revised by BJ,
-       18-Jul-2026.) $)
+       Prefer using the more natural statement ~ rabexg .  (Contributed by NM,
+       8-Jun-1994.)  Put in closed form.  (Revised by BJ, 18-Jul-2026.) $)
     sepab $p |- ( A e. V -> { x | ( x e. A /\ ph ) } e. _V ) $=
       ( wcel cv wa cab id wss ssab2 a1i ssexd ) CDEZBFCEAGBHZCDNIOCJNABCKLM $.
   $}
@@ -54072,6 +54091,18 @@ $)
        Glauco Siliprandi, 24-Dec-2020.) $)
     mptexd $p |- ( ph -> ( x e. A |-> B ) e. _V ) $=
       ( wcel cmpt cvv mptexg syl ) ACEGBCDHIGFBCDEJK $.
+  $}
+
+  ${
+    $d A w x z $.  $d A x y $.  $d B w z $.  $d C w $.
+    $( If a function given by maps-to notation is inhabited, then the class it
+       is defined on is inhabited.  (Contributed by Jim Kingdon,
+       22-Jul-2026.) $)
+    mptmex $p |- ( C e. ( x e. A |-> B ) -> E. y y e. A ) $=
+      ( vz vw cmpt wcel cv wex wceq copab elex2 opabm sylib df-mpt eleq2s simpl
+      wa exlimiv eximi syl eleq1w cbvexv ) EACDHZIZAJCIZAKZBJCIZBKUGUHFJDLZTZFK
+      ZAKZUIUNEULAFMZUFEUOIGJUOIGKUNGEUONULAFGOPAFCDQRUMUHAULUHFUHUKSUAUBUCUHUJ
+      ABABCUDUEP $.
   $}
 
   ${
@@ -107113,6 +107144,13 @@ $)
     ( cc0 c1 clt wbr cfz co c0 wceq 0lt1 cz wcel wb 1z 0z fzn mp2an mpbi ) ABCD
     ZBAEFGHZIBJKAJKRSLMNBAOPQ $.
 
+  $( There are no integers between 0 and minus 1.  (Contributed by Scott
+     Fenton, 5-Jan-2018.) $)
+  fz00m1 $p |- ( 0 ... ( 0 - 1 ) ) = (/) $=
+    ( cc0 c1 cneg cfz co cmin c0 df-neg oveq2i clt wbr wceq neg1lt0 cz wb neg1z
+    wcel 0z fzn mp2an mpbi eqtr3i ) ABCZDEZAABFEZDEGUCUEADBHIUCAJKZUDGLZMANQUCN
+    QUFUGORPAUCSTUAUB $.
+
   $( Membership of an integer greater than L decreased by ( L - M ) in an M
      based finite set of sequential integers.  (Contributed by Alexander van
      der Vekens, 14-Sep-2018.) $)
@@ -156177,6 +156215,18 @@ $)
   $}
 
   ${
+    $d G j $.
+    slotm.e $e |- ( E = Slot ( E ` ndx ) /\ ( E ` ndx ) e. NN ) $.
+    $( A structure with an inhabited slot is inhabited.  (Contributed by Jim
+       Kingdon, 24-Jul-2026.) $)
+    slotm $p |- ( A e. ( E ` G ) -> E. j j e. G ) $=
+      ( cfv wcel cnx cv wex id cdm cslot wceq cn simpli wrel cvv wfn slotslfn
+      fnrel ax-mp relelfvdm mpan simpri a1i strnfvnd eleqtrd elfvm syl ) ADCFZG
+      ZAHCFZDFZGBIDGBJULAUKUNULKULDCUMCLZCUMMNZUMOGZEPCQZULDUOGCRSURCETRCUAUBAD
+      CUCUDUQULUPUQEUEUFUGUHAUMBDUIUJ $.
+  $}
+
+  ${
     $d A j $.  $d B j $.  $d S j $.  $d X j $.  $d Y j $.
     elbasov.o $e |- Rel dom O $.
     relelbasov.r $e |- Rel O $.
@@ -168063,6 +168113,20 @@ $)
       ( wcel cnx cplusg cfv cop csts co cvv wceq cmulr mulrslid slotex eqeltrid
       plusgslid setsslid mpdan mgpvalg fveq2d eqtr4d ) ADGZBAHIJBKLMZIJZCIJUFBN
       GBUHOUFBAPJNFAPDQRSDBINATUAUBUFCUGIABCDEFUCUDUE $.
+
+    ${
+      $d .x. x $.  $d M j $.  $d M x $.  $d R j $.
+      $( Value of the group operation of the multiplication group.
+         (Contributed by Mario Carneiro, 21-Dec-2014.) $)
+      mgpplusg $p |- .x. = ( +g ` M ) $=
+        ( vx vj cplusg cfv cv wcel cvv cmulr cdm wrel wfun ax-mp relelfvdm mpan
+        cmgp cnx cslot df-slot funmpt2 mulridx funeqi mpbir funrel elexd eleq2s
+        wex plusgslid slotm wfn fnmgp fnrel exlimiv mgpplusgg eleq2d pm5.21nii
+        syl eqriv ) FBCHIZFJZBKALKZVDVCKZVEVDAMIZBVDVGKZAMNZMOZVHAVIKMPZVJVKUAM
+        IZUBZPFLVLVDIVMFVLUCUDMVMUEUFUGMUHQVDAMRSUIEUJVFGJZCKZGUKVEVDGHCULUMVOV
+        EGVEVNATIZCVNVPKZATNZTOZVQAVRKTLUNVSUOLTUPQVNATRSUIDUJUQVAVEBVCVDABCLDE
+        URUSUTVB $.
+    $}
   $}
 
   ${
@@ -168088,6 +168152,18 @@ $)
         cmulr basendxnplusgndx cslot cn plusgslid simpri setsslnid eqid mgpvalg
         mpdan fveq2d eqtr4d eqtrid ) BDGZABHIZCHIZFUMUNBJKIZBTIZLMNZHIZUOUMUQOG
         UNUSPBTDQRDUQUPHOBSUAKUPUBPUPUCGUDUEUFUIUMCURHBUQCDEUQUGUHUJUKUL $.
+
+      ${
+        $d B x $.  $d M w $.  $d M x $.  $d R w $.
+        $( Base set of the multiplication group.  (Contributed by Mario
+           Carneiro, 21-Dec-2014.)  (Revised by Mario Carneiro, 5-Oct-2015.) $)
+        mgpbas $p |- B = ( Base ` M ) $=
+          ( vx vw cbs cfv cv wcel cvv basmex cmgp cdm wex eqid basm wrel wfn
+          fnmgp fnrel ax-mp relelfvdm mpan eleq2s exlimiv syl mgpbasg pm5.21nii
+          elexd eleq2d eqriv ) FACHIZFJZAKBLKZUOUNKZUOABEMUQBNOZUQGJZCKZGPBURKZ
+          UOUNGCUNQRUTVAGVAUSBNIZCNSZUSVBKVANLTVCUALNUBUCUSBNUDUEDUFUGUHUKUPAUN
+          UOABCLDEUIULUJUM $.
+      $}
     $}
 
     ${
@@ -168804,6 +168880,23 @@ $)
       ( wcel cur cfv cmgp c0g cvv wceq elex ccom df-ur fveq1i wfn fnmgp fvco2
       mpan eqtrid syl fveq2i 3eqtr4g ) ADGZAHIZAJIZKIZBCKIUFALGZUGUIMADNUJUGAKJ
       OZIZUIAHUKPQJLRUJULUIMSLKJATUAUBUCFCUHKEUDUE $.
+
+    ${
+      $d .1. x $.  $d G w $.  $d G x $.  $d G y z $.  $d R w $.  $d R y $.
+      $( The value of the unity element of a ring.  (Contributed by NM,
+         27-Aug-2011.)  (Revised by Mario Carneiro, 27-Dec-2014.) $)
+      ringidval $p |- .1. = ( 0g ` G ) $=
+        ( vy vz vw c0g cfv cv wcel cvv cur cdm wrel cmgp relelfvdm mpan syl cbs
+        vx ccom relco df-ur releqi mpbir elexd eleq2s wex cplusg co wceq wa weu
+        wral cio wfn fn0g fnrel eqid grpidvalg eleq2d ibi eliotaeu euex exsimpl
+        ax-mp basm fnmgp exlimiv ringidvalg pm5.21nii eqriv ) UBBCIJZUBKZBLAMLZ
+        VPVOLZVQVPANJZBVPVSLZANOZNPZVTAWALWBIQUCZPIQUDNWCUEUFUGVPANRSUHEUIVRFKZ
+        CUAJZLZFUJZVQVRWFWDGKZCUKJZULWHUMWHWDWIULWHUMUNGWEUPZUNZFUJZWGVRWKFUOZW
+        LVRVPWKFUQZLZWMVRWOVRVOWNVPVRCMLVOWNUMVRCIOZIPZVRCWPLIMURWQUSMIUTVHVPCI
+        RSUHGWEWIFCMVOWEVAZWIVAVOVAVBTVCVDWKFVPVETWKFVFTWFWJFVGTWFVQFWFAQOZWFHK
+        ZCLZHUJAWSLZWDWEHCWRVIXAXBHXBWTAQJZCQPZWTXCLXBQMURXDVJMQUTVHWTAQRSDUIVK
+        TUHVKTVQBVOVPABCMDEVLVCVMVN $.
+    $}
   $}
 
   ${
@@ -169550,6 +169643,18 @@ $)
       RLZURUQVGKZURLZMZAVFUMPZNZBVMOZUPVFUDIVODVFVFQZUBABVMVGVFVMQVGQUERUPVEVNB
       COZVOUPVDVNBCUPVCVLACVMCDVFHVPFUFZUPUTVIVBVKUPUSVHURUPEVGUQURDEVFHVPGUGZS
       TUPVAVJURUPEVGURUQVSSTUHUIUJUPCVMLVQVOUKVRVNBCVMULRUNUO $.
+  $}
+
+  ${
+    ringcld.b $e |- B = ( Base ` R ) $.
+    ringcld.t $e |- .x. = ( .r ` R ) $.
+    ringcld.r $e |- ( ph -> R e. Ring ) $.
+    ringcld.x $e |- ( ph -> X e. B ) $.
+    ringcld.y $e |- ( ph -> Y e. B ) $.
+    $( Closure of the multiplication operation of a ring.  (Contributed by SN,
+       29-Jul-2024.) $)
+    ringcld $p |- ( ph -> ( X .x. Y ) e. B ) $=
+      ( crg wcel co ringcl syl3anc ) ACLMEBMFBMEFDNBMIJKBCDEFGHOP $.
   $}
 
   ${
@@ -174135,6 +174240,20 @@ $)
   $}
 
   ${
+    lmodvscld.v $e |- V = ( Base ` W ) $.
+    lmodvscld.f $e |- F = ( Scalar ` W ) $.
+    lmodvscld.s $e |- .x. = ( .s ` W ) $.
+    lmodvscld.k $e |- K = ( Base ` F ) $.
+    lmodvscld.w $e |- ( ph -> W e. LMod ) $.
+    lmodvscld.r $e |- ( ph -> R e. K ) $.
+    lmodvscld.x $e |- ( ph -> X e. V ) $.
+    $( Closure of scalar product for a left module.  (Contributed by SN,
+       15-Mar-2025.) $)
+    lmodvscld $p |- ( ph -> ( R .x. X ) e. V ) $=
+      ( clmod wcel co lmodvscl syl3anc ) AGPQBEQHFQBHCRFQMNOBCDEFGHIJKLST $.
+  $}
+
+  ${
     $d w x y B $.  $d w x y K $.  $d w x y .x. $.  $d w x y W $.  $d x y X $.
     $d x y Y $.  $d V x y $.
     scaffval.b $e |- B = ( Base ` W ) $.
@@ -175744,13 +175863,13 @@ $)
       ( wcel clmod csn wss cfv snssi lspssp syl3an3 ) EBHDIHBAHEJZBKPCLBKEBMAPB
       CDFGNO $.
 
-    lspsnel3.w $e |- ( ph -> W e. LMod ) $.
-    lspsnel3.u $e |- ( ph -> U e. S ) $.
-    lspsnel3.x $e |- ( ph -> X e. U ) $.
-    lspsnel3.y $e |- ( ph -> Y e. ( N ` { X } ) ) $.
+    ellspsn3.w $e |- ( ph -> W e. LMod ) $.
+    ellspsn3.u $e |- ( ph -> U e. S ) $.
+    ellspsn3.x $e |- ( ph -> X e. U ) $.
+    ellspsn3.y $e |- ( ph -> Y e. ( N ` { X } ) ) $.
     $( A member of the span of the singleton of a vector is a member of a
        subspace containing the vector.  (Contributed by NM, 4-Jul-2014.) $)
-    lspsnel3 $p |- ( ph -> Y e. U ) $=
+    ellspsn3 $p |- ( ph -> Y e. U ) $=
       ( csn cfv clmod wcel wss lspsnss syl3anc sseldd ) AFNDOZCGAEPQCBQFCQUBCRJ
       KLBCDEFHISTMUA $.
   $}
@@ -175780,38 +175899,38 @@ $)
   $}
 
   ${
-    lspsnel5.v $e |- V = ( Base ` W ) $.
-    lspsnel5.s $e |- S = ( LSubSp ` W ) $.
-    lspsnel5.n $e |- N = ( LSpan ` W ) $.
-    lspsnel5.w $e |- ( ph -> W e. LMod ) $.
-    lspsnel5.a $e |- ( ph -> U e. S ) $.
+    ellspsn5b.v $e |- V = ( Base ` W ) $.
+    ellspsn5b.s $e |- S = ( LSubSp ` W ) $.
+    ellspsn5b.n $e |- N = ( LSpan ` W ) $.
+    ellspsn5b.w $e |- ( ph -> W e. LMod ) $.
+    ellspsn5b.a $e |- ( ph -> U e. S ) $.
     $( Relationship between a vector and the 1-dim (or 0-dim) subspace it
        generates.  (Contributed by NM, 8-Aug-2014.)  (Revised by Mario
        Carneiro, 8-Jan-2015.) $)
-    lspsnel6 $p |- ( ph -> ( X e. U <-> ( X e. V /\ ( N ` { X } ) C_ U ) ) ) $=
+    ellspsn6 $p |- ( ph -> ( X e. U <-> ( X e. V /\ ( N ` { X } ) C_ U ) ) ) $=
       ( wcel csn cfv wss wa clmod adantr syl3anc simpr lsselg lspsnss jca sylan
       lspsnid ssel syl5com impr impbida ) AGCMZGEMZGNDOZCPZQAUKQZULUNUOFRMZCBMZ
       UKULAUPUKKSZAUQUKLSZAUKUAZRBCEFGHIUBTUOUPUQUKUNURUSUTBCDFGIJUCTUDAULUNUKA
       ULQGUMMZUNUKAUPULVAKDEFGHJUFUEUMCGUGUHUIUJ $.
 
-    lspsnel5.x $e |- ( ph -> X e. V ) $.
+    ellspsn5b.x $e |- ( ph -> X e. V ) $.
     $( Relationship between a vector and the 1-dim (or 0-dim) subspace it
        generates.  (Contributed by NM, 8-Aug-2014.) $)
-    lspsnel5 $p |- ( ph -> ( X e. U <-> ( N ` { X } ) C_ U ) ) $=
-      ( wcel csn cfv wss lspsnel6 mpbirand ) AGCNGENGODPCQMABCDEFGHIJKLRS $.
+    ellspsn5b $p |- ( ph -> ( X e. U <-> ( N ` { X } ) C_ U ) ) $=
+      ( wcel csn cfv wss ellspsn6 mpbirand ) AGCNGENGODPCQMABCDEFGHIJKLRS $.
   $}
 
   ${
-    lspsnel5a.s $e |- S = ( LSubSp ` W ) $.
-    lspsnel5a.n $e |- N = ( LSpan ` W ) $.
-    lspsnel5a.w $e |- ( ph -> W e. LMod ) $.
-    lspsnel5a.a $e |- ( ph -> U e. S ) $.
-    lspsnel5a.x $e |- ( ph -> X e. U ) $.
+    ellspsn5.s $e |- S = ( LSubSp ` W ) $.
+    ellspsn5.n $e |- N = ( LSpan ` W ) $.
+    ellspsn5.w $e |- ( ph -> W e. LMod ) $.
+    ellspsn5.a $e |- ( ph -> U e. S ) $.
+    ellspsn5.x $e |- ( ph -> X e. U ) $.
     $( Relationship between a vector and the 1-dim (or 0-dim) subspace it
        generates.  (Contributed by NM, 20-Feb-2015.) $)
-    lspsnel5a $p |- ( ph -> ( N ` { X } ) C_ U ) $=
-      ( wcel csn cfv wss cbs eqid clmod lsselg syl3anc lspsnel5 mpbid ) AFCLZFM
-      DNCOKABCDEPNZEFUDQZGHIJAERLCBLUCFUDLIJKRBCUDEFUEGSTUAUB $.
+    ellspsn5 $p |- ( ph -> ( N ` { X } ) C_ U ) $=
+      ( wcel csn cfv wss cbs eqid clmod lsselg syl3anc ellspsn5b mpbid ) AFCLZF
+      MDNCOKABCDEPNZEFUDQZGHIJAERLCBLUCFUDLIJKRBCUDEFUEGSTUAUB $.
   $}
 
   ${
@@ -175824,8 +175943,8 @@ $)
        NM, 14-May-2015.) $)
     lspprid1 $p |- ( ph -> X e. ( N ` { X , Y } ) ) $=
       ( cpr cfv wcel csn wss clmod prssd snsspr1 a1i lspss syl3anc clss lspprcl
-      eqid lspsnel5 mpbird ) AEEFLZBMZNEOZBMUIPZADQNUHCPUJUHPZUKIAEFCJKRULAEFST
-      UJUHBCDGHUAUBADUCMZUIBCDEGUMUEZHIAUMBCDEFGUNHIJKUDJUFUG $.
+      eqid ellspsn5b mpbird ) AEEFLZBMZNEOZBMUIPZADQNUHCPUJUHPZUKIAEFCJKRULAEFS
+      TUJUHBCDGHUAUBADUCMZUIBCDEGUMUEZHIAUMBCDEFGUNHIJKUDJUFUG $.
 
     $( A member of a pair of vectors belongs to their span.  (Contributed by
        NM, 14-May-2015.) $)
@@ -175859,12 +175978,12 @@ $)
        (Contributed by NM, 3-Feb-2015.) $)
     lssats2 $p |- ( ph -> U = U_ x e. U ( N ` { x } ) ) $=
       ( vy cv csn cfv wcel wa simpr clmod adantr syl2anc ciun wrex eqid syl3anc
-      cbs lsselg lspsnid sneq fveq2d eleq2d rspcev ex lspsnel5a sseld rexlimdva
-      weq impbid eliun bitr4di eqrdv ) AKDBDBLZMZENZUAZAKLZDOZVEVCOZBDUBZVEVDOA
-      VFVHAVFVHAVFPZVFVEVEMZENZOZVHAVFQZVIFROZVEFUENZOZVLAVNVFISZVIVNDCOZVFVPVQ
-      AVRVFJSVMRCDVOFVEVOUCZGUFUDEVOFVEVSHUGTVGVLBVEDBKUPZVCVKVEVTVBVJEVAVEUHUI
-      UJUKTULAVGVFBDAVADOZPZVCDVEWBCDEFVAGHAVNWAISAVRWAJSAWAQUMUNUOUQBVEDVCURUS
-      UT $.
+      cbs lsselg lspsnid weq sneq fveq2d eleq2d rspcev ellspsn5 sseld rexlimdva
+      ex impbid eliun bitr4di eqrdv ) AKDBDBLZMZENZUAZAKLZDOZVEVCOZBDUBZVEVDOAV
+      FVHAVFVHAVFPZVFVEVEMZENZOZVHAVFQZVIFROZVEFUENZOZVLAVNVFISZVIVNDCOZVFVPVQA
+      VRVFJSVMRCDVOFVEVOUCZGUFUDEVOFVEVSHUGTVGVLBVEDBKUHZVCVKVEVTVBVJEVAVEUIUJU
+      KULTUPAVGVFBDAVADOZPZVCDVEWBCDEFVAGHAVNWAISAVRWAJSAWAQUMUNUOUQBVEDVCURUSU
+      T $.
   $}
 
   ${
@@ -175898,13 +176017,13 @@ $)
         -> ( N ` { X } ) = { v | E. k e. K v = ( k .x. X ) } ) $=
       ( wcel wa cfv cv wceq adantr clmod csn wrex cab clss eqid simpl lss1d cur
       co lmod1cl lmodvs1 eqcomd oveq1 rspceeqv syl2an2r wb eqeq1 rexbidv adantl
-      elabg mpbird lspsnel5a wi lspsncl simpr lspsnid syl22anc eleq1a rexlimdva
-      lssvscl syl abssdv eqssd ) HUAOZIGOZPZIUBFQZARZCRZIBUJZSZCEUCZAUDZVQHUEQZ
-      WDFHIWEUFZNVOVPUGZAWEBCDEGHILJMKWFUHVQIWDOZIWASZCEUCZVODUIQZEOVPIWKIBUJZS
-      WJWKDEHJKWKUFZUKVQWLIBWKDGHILJMWMULUMCWKEWAWLIVTWKIBUNUOUPVPWHWJUQVOWCWJA
-      IGVSISWBWICEVSIWAURUSVAUTVBVCVQWCAVRVQWBVSVROZCEVQVTEOZPZWAVROZWBWNVDWPVO
-      VRWEOZWOIVROZWQVQVOWOWGTVQWRWOWEFGHILWFNVETVQWOVFVQWSWOFGHILNVGTEWEBVRDHV
-      TIJMKWFVKVHWAVRVSVIVLVJVMVN $.
+      elabg mpbird ellspsn5 wi lspsncl simpr lspsnid lssvscl syl22anc rexlimdva
+      eleq1a syl abssdv eqssd ) HUAOZIGOZPZIUBFQZARZCRZIBUJZSZCEUCZAUDZVQHUEQZW
+      DFHIWEUFZNVOVPUGZAWEBCDEGHILJMKWFUHVQIWDOZIWASZCEUCZVODUIQZEOVPIWKIBUJZSW
+      JWKDEHJKWKUFZUKVQWLIBWKDGHILJMWMULUMCWKEWAWLIVTWKIBUNUOUPVPWHWJUQVOWCWJAI
+      GVSISWBWICEVSIWAURUSVAUTVBVCVQWCAVRVQWBVSVROZCEVQVTEOZPZWAVROZWBWNVDWPVOV
+      RWEOZWOIVROZWQVQVOWOWGTVQWRWOWEFGHILWFNVETVQWOVFVQWSWOFGHILNVGTEWEBVRDHVT
+      IJMKWFVHVIWAVRVSVKVLVJVMVN $.
 
     $( Member of span of the singleton of a vector.  (Contributed by NM,
        22-Feb-2014.)  (Revised by Mario Carneiro, 19-Jun-2014.) $)
@@ -175922,9 +176041,9 @@ $)
     lspsnvsi $p |- ( ( W e. LMod /\ R e. K /\ X e. V )
         -> ( N ` { ( R .x. X ) } ) C_ ( N ` { X } ) ) $=
       ( clmod wcel w3a clss cfv csn co eqid simp1 wss simp3 snssd lspcl syl2anc
-      simp2 lspsneli lspsnel5a ) GNOZADOZHFOZPZGQRZHSZERZEGAHBTUOUAZMUKULUMUBZU
-      NUKUPFUCUQUOOUSUNHFUKULUMUDZUEUOUPEFGKURMUFUGUNABCDEFGHKLIJMUSUKULUMUHUTU
-      IUJ $.
+      simp2 lspsneli ellspsn5 ) GNOZADOZHFOZPZGQRZHSZERZEGAHBTUOUAZMUKULUMUBZUN
+      UKUPFUCUQUOOUSUNHFUKULUMUDZUEUOUPEFGKURMUFUGUNABCDEFGHKLIJMUSUKULUMUHUTUI
+      UJ $.
   $}
 
   ${
@@ -175942,9 +176061,10 @@ $)
        (Contributed by NM, 7-Jun-2015.) $)
     lspsnss2 $p |- ( ph ->
  ( ( N ` { X } ) C_ ( N ` { Y } ) <-> E. k e. K X = ( k .x. Y ) ) ) $=
-      ( cfv wcel csn wss cv co wceq wrex clss clmod lspsncl syl2anc lspsnel5 wb
-      eqid ellspsn bitr3d ) AIJUAFSZTZIUAFSUPUBIDUCJCUDUEDEUFZAHUGSZUPFGHIKUSUM
-      ZOPAHUHTZJGTZUPUSTPRUSFGHJKUTOUIUJQUKAVAVBUQURULPRCIDBEFGHJLMKNOUNUJUO $.
+      ( cfv wcel csn wss cv wceq wrex clss eqid clmod lspsncl syl2anc ellspsn5b
+      co wb ellspsn bitr3d ) AIJUAFSZTZIUAFSUPUBIDUCJCULUDDEUEZAHUFSZUPFGHIKUSU
+      GZOPAHUHTZJGTZUPUSTPRUSFGHJKUTOUIUJQUKAVAVBUQURUMPRCIDBEFGHJLMKNOUNUJUO
+      $.
   $}
 
   ${
@@ -179127,6 +179247,787 @@ $(
   applies to any vector space.
 
 $)
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Associative algebras
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Definition and basic properties
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c AssAlg $. $( Associative algebra $)
+  $c AlgSpan $. $( Algebraic span $)
+  $c algSc $.
+
+  $( Associative algebra. $)
+  casa $a class AssAlg $.
+
+  $( Algebraic span function. $)
+  casp $a class AlgSpan $.
+
+  $( Class of algebra scalar lifting function. $)
+  cascl $a class algSc $.
+
+  ${
+    $d f r s t w x y $.
+    $( Definition of an associative algebra.  An associative algebra is a set
+       equipped with a left-module structure on a ring, coupled with a
+       multiplicative internal operation on the vectors of the module that is
+       associative and distributive for the additive structure of the
+       left-module (so giving the vectors a ring structure) and that is also
+       bilinear under the scalar product.  (Contributed by Mario Carneiro,
+       29-Dec-2014.)  (Revised by SN, 2-Mar-2025.) $)
+    df-assa $a |- AssAlg = { w e. ( LMod i^i Ring )
+      | [. ( Scalar ` w ) / f ].
+        A. r e. ( Base ` f ) A. x e. ( Base ` w )
+        A. y e. ( Base ` w ) [. ( .s ` w ) / s ]. [. ( .r ` w ) / t ].
+      ( ( ( r s x ) t y ) = ( r s ( x t y ) ) /\
+        ( x t ( r s y ) ) = ( r s ( x t y ) ) ) } $.
+
+    $( Define the algebraic span of a set of vectors in an algebra.
+       (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+    df-asp $a |- AlgSpan = ( w e. AssAlg |-> ( s e. ~P ( Base ` w ) |->
+      |^| { t e. ( ( SubRing ` w ) i^i ( LSubSp ` w ) ) | s C_ t } ) ) $.
+
+    $( Every unital algebra contains a canonical homomorphic image of its ring
+       of scalars as scalar multiples of the unity element.  This names the
+       homomorphism.  (Contributed by Mario Carneiro, 8-Mar-2015.) $)
+    df-ascl $a |- algSc = ( w e. _V |-> ( x e. ( Base ` ( Scalar ` w ) ) |->
+            ( x ( .s ` w ) ( 1r ` w ) ) ) ) $.
+  $}
+
+  ${
+    $d r x y A $.  $d f r w B $.  $d f r w F $.  $d f r w x y V $.  $d x y X $.
+    $d f r s t w x y .x. $.  $d f r s t w x y .X. $.  $d f r s t w x y W $.
+    $d y Y $.
+    isassa.v $e |- V = ( Base ` W ) $.
+    isassa.f $e |- F = ( Scalar ` W ) $.
+    isassa.b $e |- B = ( Base ` F ) $.
+    isassa.s $e |- .x. = ( .s ` W ) $.
+    isassa.t $e |- .X. = ( .r ` W ) $.
+    $( The properties of an associative algebra.  (Contributed by Mario
+       Carneiro, 29-Dec-2014.)  (Revised by SN, 2-Mar-2025.) $)
+    isassa $p |- ( W e. AssAlg <-> ( ( W e. LMod /\ W e. Ring )
+                   /\ A. r e. B A. x e. V A. y e. V
+      ( ( ( r .x. x ) .X. y ) = ( r .x. ( x .X. y ) ) /\
+        ( x .X. ( r .x. y ) ) = ( r .x. ( x .X. y ) ) ) ) ) $=
+      ( vt co wceq cfv cbs wral vs vf vw casa wcel clmod crg cin cv cmulr cvsca
+      wsbc csca fveq2 sbceq1d sbceqbid raleqbidv ralbidv df-assa elrab2 scaslid
+      wa cvv slotex raleqdv sbcieg syl fveq2i eqtr2i a1i eqcomi vscaslid eqeq2i
+      biimpri oveqd oveq1d eqeq12d oveq2d anbi12d sbcbidv mulrslid pm5.32i elin
+      wb bitrd anbi1i 3bitri ) HUDUEHUFUGUHZUEZIUIZAUIZUAUIZPZBUIZOUIZPZWJWKWNW
+      OPZWLPZQZWKWJWNWLPZWOPZWRQZVBZOHUJRZULZUAHUKRZULZBHSRZTZAXHTZIUBUIZSRZTZU
+      BHUMRZULZVBWIWJWKDPZWNEPZWJWKWNEPZDPZQZWKWJWNDPZEPZXSQZVBZBGTZAGTZICTZVBH
+      UFUEHUGUEVBZYGVBXCOUCUIZUJRZULZUAYIUKRZULZBYISRZTZAYNTZIXLTZUBYIUMRZULXOU
+      CHWHUDYIHQZYQXMUBYRXNYIHUMUNYSYPXJIXLYSYOXIAYNXHYIHSUNZYSYMXGBYNXHYTYSYKX
+      EUAYLXFYIHUKUNYSXCOYJXDYIHUJUNUOUPUQUQURUPABUCOUBUAIUSUTWIXOYGWIXOXJIXNSR
+      ZTZYGWIXNVCUEXOUUBWDHUMWHVAVDXMUUBUBXNVCXKXNQXJIXLUUAXKXNSUNVEVFVGWIXJYFI
+      UUACUUACQWICFSRUUALFXNSKVHVIVJWIXIYEAXHGXHGQWIGXHJVKVJZWIXGYDBXHGUUCWIXGX
+      PWNWOPZWJWQDPZQZWKYAWOPZUUEQZVBZOXDULZYDWIXFVCUEXGUUJWDHUKWHVLVDXEUUJUAXF
+      VCWLXFQZXCUUIOXDUUKWSUUFXBUUHUUKWPUUDWRUUEUUKWMXPWNWOUUKWLDWJWKWLDQUUKDXF
+      WLMVMVNZVOVPUUKWLDWJWQUULVOZVQUUKXAUUGWRUUEUUKWTYAWKWOUUKWLDWJWNUULVOVRUU
+      MVQVSVTVFVGWIXDVCUEUUJYDWDHUJWHWAVDUUIYDOXDVCWOXDQZUUFXTUUHYCUUNUUDXQUUEX
+      SUUNWOEXPWNWOEQUUNEXDWONVMVNZVOUUNWQXRWJDUUNWOEWKWNUUOVOVRZVQUUNUUGYBUUEX
+      SUUNWOEWKYAUUOVOUUPVQVSVFVGWEUQUQUQWEWBWIYHYGHUFUGWCWFWG $.
+
+    $( The properties of an associative algebra.  (Contributed by Mario
+       Carneiro, 29-Dec-2014.) $)
+    assalem $p |- ( ( W e. AssAlg /\ ( A e. B /\ X e. V /\ Y e. V ) ) ->
+      ( ( ( A .x. X ) .X. Y ) = ( A .x. ( X .X. Y ) ) /\
+        ( X .X. ( A .x. Y ) ) = ( A .x. ( X .X. Y ) ) ) ) $=
+      ( wcel co wceq wa oveq1 eqeq12d vr vx vy casa cv w3a clmod isassa simprbi
+      wral crg oveq1d oveq2d anbi12d oveq2 rspc3v mpan9 ) GUDOZUAUEZUBUEZCPZUCU
+      EZDPZUSUTVBDPZCPZQZUTUSVBCPZDPZVEQZRZUCFUJUBFUJUABUJZABOHFOIFOUFAHCPZIDPZ
+      AHIDPZCPZQZHAICPZDPZVOQZRZURGUGOGUKORVKUBUCBCDEFGUAJKLMNUHUIVJVTAUTCPZVBD
+      PZAVDCPZQZUTAVBCPZDPZWCQZRVLVBDPZAHVBDPZCPZQZHWEDPZWJQZRUAUBUCAHIBFFUSAQZ
+      VFWDVIWGWNVCWBVEWCWNVAWAVBDUSAUTCSULUSAVDCSZTWNVHWFVEWCWNVGWEUTDUSAVBCSUM
+      WOTUNUTHQZWDWKWGWMWPWBWHWCWJWPWAVLVBDUTHACUOULWPVDWIACUTHVBDSUMZTWPWFWLWC
+      WJUTHWEDSWQTUNVBIQZWKVPWMVSWRWHVMWJVOVBIVLDUOWRWIVNACVBIHDUOUMZTWRWLVRWJV
+      OWRWEVQHDVBIACUOUMWSTUNUPUQ $.
+
+    $( Left-associative property of an associative algebra.  (Contributed by
+       Mario Carneiro, 29-Dec-2014.) $)
+    assaass $p |- ( ( W e. AssAlg /\ ( A e. B /\ X e. V /\ Y e. V ) ) ->
+      ( ( A .x. X ) .X. Y ) = ( A .x. ( X .X. Y ) ) ) $=
+      ( casa wcel w3a wa co wceq assalem simpld ) GOPABPHFPIFPQRAHCSIDSAHIDSCSZ
+      THAICSDSUCTABCDEFGHIJKLMNUAUB $.
+
+    $( Right-associative property of an associative algebra.  (Contributed by
+       Mario Carneiro, 29-Dec-2014.) $)
+    assaassr $p |- ( ( W e. AssAlg /\ ( A e. B /\ X e. V /\ Y e. V ) ) ->
+      ( X .X. ( A .x. Y ) ) = ( A .x. ( X .X. Y ) ) ) $=
+      ( casa wcel w3a wa co wceq assalem simprd ) GOPABPHFPIFPQRAHCSIDSAHIDSCSZ
+      THAICSDSUCTABCDEFGHIJKLMNUAUB $.
+  $}
+
+  ${
+    $d x y z W $.
+    $( An associative algebra is a left module.  (Contributed by Mario
+       Carneiro, 5-Dec-2014.) $)
+    assalmod $p |- ( W e. AssAlg -> W e. LMod ) $=
+      ( vz vx vy casa wcel clmod crg wa cv cvsca cfv co wceq cbs wral csca eqid
+      cmulr isassa simplbi simpld ) AEFZAGFZAHFZUCUDUEIBJZCJZAKLZMDJZASLZMUFUGU
+      IUJMUHMZNUGUFUIUHMUJMUKNIDAOLZPCULPBAQLZOLZPCDUNUHUJUMULABULRUMRUNRUHRUJR
+      TUAUB $.
+
+    $( An associative algebra is a ring.  (Contributed by Mario Carneiro,
+       5-Dec-2014.) $)
+    assaring $p |- ( W e. AssAlg -> W e. Ring ) $=
+      ( vz vx vy casa wcel clmod crg wa cv cvsca cfv co wceq cbs wral csca eqid
+      cmulr isassa simplbi simprd ) AEFZAGFZAHFZUCUDUEIBJZCJZAKLZMDJZASLZMUFUGU
+      IUJMUHMZNUGUFUIUHMUJMUKNIDAOLZPCULPBAQLZOLZPCDUNUHUJUMULABULRUMRUNRUHRUJR
+      TUAUB $.
+  $}
+
+  ${
+    assasca.f $e |- F = ( Scalar ` W ) $.
+    $( The scalars of an associative algebra form a ring.  (Contributed by
+       Mario Carneiro, 7-Jan-2015.)  (Revised by SN, 2-Mar-2025.) $)
+    assasca $p |- ( W e. AssAlg -> F e. Ring ) $=
+      ( casa wcel clmod crg assalmod lmodring syl ) BDEBFEAGEBHABCIJ $.
+  $}
+
+  ${
+    assa2ass.v $e |- V = ( Base ` W ) $.
+    assa2ass.f $e |- F = ( Scalar ` W ) $.
+    assa2ass.b $e |- B = ( Base ` F ) $.
+    assa2ass.m $e |- .* = ( .r ` F ) $.
+    assa2ass.s $e |- .x. = ( .s ` W ) $.
+    assa2ass.t $e |- .X. = ( .r ` W ) $.
+    $( Left- and right-associative property of an associative algebra.  Notice
+       that the scalars are commuted!  (Contributed by AV, 14-Aug-2019.)
+       (Proof shortened by Zhi Wang, 11-Sep-2025.) $)
+    assa2ass $p |- ( ( W e. AssAlg /\ ( A e. B /\ C e. B )
+                    /\ ( X e. V /\ Y e. V ) ) ->
+      ( ( A .x. X ) .X. ( C .x. Y ) ) = ( ( C .* A ) .x. ( X .X. Y ) ) ) $=
+      ( wcel wa co casa wceq simp1 simpr 3ad2ant2 clmod assalmod simpl lmodvscl
+      w3a syl3an 3ad2ant3 assaassr syl13anc assaass eqcomd lmodvsass oveq1d crg
+      3ad2ant1 assasca adantr adantl ringcld 3adant3 eqtrd 3eqtrd ) IUARZABRZCB
+      RZSZJHRZKHRZSZUJZAJDTZCKDTETZCVPKETDTZCVPDTZKETZCAGTZJKETDTZVOVHVJVPHRZVM
+      VQVRUBVHVKVNUCZVKVHVJVNVIVJUDZUEZVHIUFRZVKVIVNVLWCIUGZVIVJUHZVLVMUHZADFBH
+      IJLMPNUIUKZVNVHVMVKVLVMUDULZCBDEFHIVPKLMNPQUMUNVOVHVJWCVMVRVTUBWDWFWKWLVH
+      VJWCVMUJSVTVRCBDEFHIVPKLMNPQUOUPUNVOVTWAJDTZKETZWBVOWGVJVIVLVTWNUBVHVKWGV
+      NWHUTWFVKVHVIVNWIUEVNVHVLVKWJULZWGVJVIVLUJSZVSWMKEWPWMVSCADGFBHIJLMPNOUQU
+      PURUNVOVHWABRZVLVMWNWBUBWDVHVKWQVNVHVKSBFGCANOVHFUSRVKFIMVAVBVKVJVHWEVCVK
+      VIVHWIVCVDVEWOWLWABDEFHIJKLMNPQUOUNVFVG $.
+
+    $( Left- and right-associative property of an associative algebra.  Notice
+       that the scalars are not commuted!  (Contributed by Zhi Wang,
+       11-Sep-2025.) $)
+    assa2ass2 $p |- ( ( W e. AssAlg /\ ( A e. B /\ C e. B )
+                    /\ ( X e. V /\ Y e. V ) ) ->
+      ( ( A .x. X ) .X. ( C .x. Y ) ) = ( ( A .* C ) .x. ( X .X. Y ) ) ) $=
+      ( wcel wa co casa wceq simp1 simpl 3ad2ant2 3ad2ant3 clmod assalmod simpr
+      w3a 3ad2ant1 lmodvscld assaass syl13anc assaassr eqcomd lmodvsass assasca
+      oveq2d crg adantr adantl ringcld 3adant3 eqtrd 3eqtrd ) IUARZABRZCBRZSZJH
+      RZKHRZSZUJZAJDTCKDTZETZAJVOETDTZJAVODTZETZACGTZJKETDTZVNVGVHVKVOHRZVPVQUB
+      VGVJVMUCZVJVGVHVMVHVIUDZUEZVMVGVKVJVKVLUDUFZVNCDFBHIKLMPNVGVJIUGRZVMIUHUK
+      ZVJVGVIVMVHVIUIZUEZVMVGVLVJVKVLUIUFZULZABDEFHIJVOLMNPQUMUNVNVGVHVKWBVQVSU
+      BWCWEWFWLVGVHVKWBUJSVSVQABDEFHIJVOLMNPQUOUPUNVNVSJVTKDTZETZWAVNWGVHVIVLVS
+      WNUBWHWEWJWKWGVHVIVLUJSZVRWMJEWOWMVRACDGFBHIKLMPNOUQUPUSUNVNVGVTBRZVKVLWN
+      WAUBWCVGVJWPVMVGVJSBFGACNOVGFUTRVJFIMURVAVJVHVGWDVBVJVIVGWIVBVCVDWFWKVTBD
+      EFHIJKLMNPQUOUNVEVF $.
+  $}
+
+  ${
+    $d r x y B $.  $d r x y ph $.  $d x y V $.  $d r x y W $.
+    isassad.v $e |- ( ph -> V = ( Base ` W ) ) $.
+    isassad.f $e |- ( ph -> F = ( Scalar ` W ) ) $.
+    isassad.b $e |- ( ph -> B = ( Base ` F ) ) $.
+    isassad.s $e |- ( ph -> .x. = ( .s ` W ) ) $.
+    isassad.t $e |- ( ph -> .X. = ( .r ` W ) ) $.
+    isassad.1 $e |- ( ph -> W e. LMod ) $.
+    isassad.2 $e |- ( ph -> W e. Ring ) $.
+    isassad.4 $e |- ( ( ph /\ ( r e. B /\ x e. V /\ y e. V ) ) ->
+      ( ( r .x. x ) .X. y ) = ( r .x. ( x .X. y ) ) ) $.
+    isassad.5 $e |- ( ( ph /\ ( r e. B /\ x e. V /\ y e. V ) ) ->
+      ( x .X. ( r .x. y ) ) = ( r .x. ( x .X. y ) ) ) $.
+    $( Sufficient condition for being an associative algebra.  (Contributed by
+       Mario Carneiro, 5-Dec-2014.)  (Revised by SN, 2-Mar-2025.) $)
+    isassad $p |- ( ph -> W e. AssAlg ) $=
+      ( co clmod wcel crg wa cv cvsca cfv cmulr wceq cbs wral csca casa jca w3a
+      ralrimivvva fveq2d eqtrd oveqd eqidd eqeq12d anbi12d raleqbidv mpbid eqid
+      oveq123d isassa sylanbrc ) AIUAUBZIUCUBZUDJUEZBUEZIUFUGZTZCUEZIUHUGZTZVKV
+      LVOVPTZVMTZUIZVLVKVOVMTZVPTZVSUIZUDZCIUJUGZUKZBWEUKZJIULUGZUJUGZUKZIUMUBA
+      VIVJPQUNAVKVLETZVOFTZVKVLVOFTZETZUIZVLVKVOETZFTZWNUIZUDZCHUKZBHUKZJDUKWJA
+      WSJBCDHHAVKDUBVLHUBVOHUBUOUDWOWRRSUNUPAXAWGJDWIADGUJUGWIMAGWHUJLUQURAWTWF
+      BHWEKAWSWDCHWEKAWOVTWRWCAWLVQWNVSAWKVNVOVOFVPOAEVMVKVLNUSAVOUTVFAVKVKWMVR
+      EVMNAVKUTAFVPVLVOOUSVFZVAAWQWBWNVSAVLVLWPWAFVPOAVLUTAEVMVKVONUSVFXBVAVBVC
+      VCVCVDBCWIVMVPWHWEIJWEVEWHVEWIVEVMVEVPVEVGVH $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z L $.  $d x y z S $.  $d x y z W $.
+    issubassa.s $e |- S = ( W |`s A ) $.
+    issubassa.l $e |- L = ( LSubSp ` W ) $.
+    $( A subring that is also a subspace is a subalgebra.  The key theorem is
+       ~ islss3 .  (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+    issubassa3 $p |- ( ( W e. AssAlg /\ ( A e. ( SubRing ` W ) /\ A e. L ) ) ->
+      S e. AssAlg ) $=
+      ( vy vz vx casa wcel cfv wa csca cbs wceq ad2antrl eqid cv co cvsca cmulr
+      csubrg subrgbas ressscag adantrr eqidd ressvscag simprl ressmulrg syl2anc
+      simpl clmod assalmod simpr lsslmod syl2an crg subrgring w3a idd wss sseld
+      subrgss 3anim123d imp assaass adantlr syldan assaassr isassad ) DJKZADUCL
+      ZKZACKZMZMZGHDNLZOLZDUALZDUBLZVRABIVNABOLPVLVOADBEUDQVLVNVRBNLPVOAVRDBVMJ
+      EVRRZUEUFVQVSUGVLVNVTBUALPVOAVTDBVMJEVTRZUHUFVQVNVLWABUBLPVLVNVOUIVLVPULA
+      DBWAVMJEWARZUJUKVLDUMKVOBUMKVPDUNVNVOUOCADBEFUPUQVNBURKVLVOADBEUSQVQISZVS
+      KZGSZAKZHSZAKZUTZWFWGDOLZKZWIWLKZUTZWEWGVTTWIWATWEWGWIWATVTTZPZVQWKWOVQWF
+      WFWHWMWJWNVQWFVAVQAWLWGVNAWLVBVLVOAWLDWLRZVDQZVCVQAWLWIWSVCVEVFZVLWOWQVPW
+      EVSVTWAVRWLDWGWIWRWBVSRZWCWDVGVHVIVQWKWOWGWEWIVTTWATWPPZWTVLWOXBVPWEVSVTW
+      AVRWLDWGWIWRWBXAWCWDVJVHVIVK $.
+
+    issubassa.v $e |- V = ( Base ` W ) $.
+    issubassa.o $e |- .1. = ( 1r ` W ) $.
+    $( The subalgebras of an associative algebra are exactly the subrings
+       (under the ring multiplication) that are simultaneously subspaces (under
+       the scalar multiplication from the vector space).  (Contributed by Mario
+       Carneiro, 7-Jan-2015.) $)
+    issubassa $p |- ( ( W e. AssAlg /\ .1. e. A /\ A C_ V ) ->
+      ( S e. AssAlg <-> ( A e. ( SubRing ` W ) /\ A e. L ) ) ) $=
+      ( casa wcel wss wa crg assaring adantl jca clmod assalmod csubrg cress co
+      w3a cfv simpl1 syl eqeltrrid simpl3 simpl2 issubrg syl21anbrc islss3 3syl
+      wb mpbir2and issubassa3 3ad2antl1 impbida ) FKLZCALZAEMZUDZBKLZAFUAUELZAD
+      LZNZVCVDNZVEVFVHFOLZFAUBUCZOLVBVANVEVHUTVIUTVAVBVDUFZFPUGVHVJBOGVDBOLVCBP
+      QUHVHVBVAUTVAVBVDUIZUTVAVBVDUJRAEFCIJUKULVHVFVBBSLZVLVDVMVCBTQVHUTFSLVFVB
+      VMNUOVKFTDAEFBGIHUMUNUPRUTVAVGVDVBABDFGHUQURUS $.
+  $}
+
+  ${
+    $d r w x y z K $.  $d r w x y z L $.  $d r w x y z P $.  $d r w x y z ph $.
+    $d w x y z B $.
+    assapropd.1 $e |- ( ph -> B = ( Base ` K ) ) $.
+    assapropd.2 $e |- ( ph -> B = ( Base ` L ) ) $.
+    assapropd.3 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( +g ` K ) y ) = ( x ( +g ` L ) y ) ) $.
+    assapropd.4 $e |- ( ( ph /\ ( x e. B /\ y e. B ) ) ->
+      ( x ( .r ` K ) y ) = ( x ( .r ` L ) y ) ) $.
+    assapropd.5 $e |- ( ph -> F = ( Scalar ` K ) ) $.
+    assapropd.6 $e |- ( ph -> F = ( Scalar ` L ) ) $.
+    assapropd.7 $e |- P = ( Base ` F ) $.
+    assapropd.8 $e |- ( ( ph /\ ( x e. P /\ y e. B ) ) ->
+      ( x ( .s ` K ) y ) = ( x ( .s ` L ) y ) ) $.
+    $( If two structures have the same components (properties), one is an
+       associative algebra iff the other one is.  (Contributed by Mario
+       Carneiro, 8-Feb-2015.) $)
+    assapropd $p |- ( ph -> ( K e. AssAlg <-> L e. AssAlg ) ) $=
+      ( wcel co wceq wral vr vz vw clmod wa casa wi assalmod assaring lmodpropd
+      crg jca a1i imbitrrid ringpropd jcad wb cv cvsca cfv cmulr anbi12d adantr
+      cbs csca simpll simplrl simprl fveq2d eqtrid syl eleqtrd simprrl lmodvscl
+      syl3anc eleqtrrd simprrr oveqrspc2v syl12anc oveq1d eqtrd simplrr ringcld
+      eqid eqeq12d anassrs 2ralbidva ralbidva raleqdv raleqbidv 3bitr3d 3bitr4g
+      oveq2d isassa ex pm5.21ndd ) AGUDQZGUKQZUEZGUFQZHUFQZWTWSUGAWTWQWRGUHGUIU
+      LUMAXAWQWRXAWQAHUDQZHUHABCDEFGHIJKMNOPUJZUNXAWRAHUKQZHUIABCDGHIJKLUOZUNUP
+      AWSWTXAUQAWSUEZWSUAURZUBURZGUSUTZRZUCURZGVAUTZRZXGXHXKXLRZXIRZSZXHXGXKXIR
+      ZXLRZXOSZUEZUCGVDUTZTZUBYATZUAGVEUTZVDUTZTZUEXBXDUEZXGXHHUSUTZRZXKHVAUTZR
+      ZXGXHXKYJRZYHRZSZXHXGXKYHRZYJRZYMSZUEZUCHVDUTZTZUBYSTZUAHVEUTZVDUTZTZUEWT
+      XAXFWSYGYFUUDAWSYGUQWSAWQXBWRXDXCXEVBVCXFXTUCDTZUBDTZUAETYRUCDTZUBDTZUAET
+      YFUUDXFUUFUUHUAEXFXGEQZUEXTYRUBUCDDXFUUIXHDQZXKDQZUEZXTYRUQXFUUIUULUEZUEZ
+      XPYNXSYQUUNXMYKXOYMUUNXMXJXKYJRZYKUUNAXJDQUUKXMUUOSAWSUUMVFZUUNXJYADUUNWQ
+      XGYEQZXHYAQXJYAQAWQWRUUMVGZUUNXGEYEXFUUIUULVHZUUNAEYESZUUPAEFVDUTZYEOAFYD
+      VDMVIVJZVKVLZUUNXHDYAXFUUIUUJUUKVMZUUNADYASZUUPIVKZVLZXGXIYDYEYAGXHYAWDZY
+      DWDZXIWDZYEWDZVNVOUVFVPXFUUIUUJUUKVQZABCDDXLYJXJXKLVRVSUUNXJYIXKYJUUNAUUI
+      UUJXJYISUUPUUSUVDABCEDXIYHXGXHPVRVSVTWAUUNXOXGXNYHRZYMUUNAUUIXNDQXOUVMSUU
+      PUUSUUNXNYADUUNYAGXLXHXKUVHXLWDZAWQWRUUMWBUVGUUNXKDYAUVLUVFVLZWCUVFVPABCE
+      DXIYHXGXNPVRVSUUNXNYLXGYHUUNAUUJUUKXNYLSUUPUVDUVLABCDDXLYJXHXKLVRVSWMWAZW
+      EUUNXRYPXOYMUUNXRXHXQYJRZYPUUNAUUJXQDQXRUVQSUUPUVDUUNXQYADUUNWQUUQXKYAQXQ
+      YAQUURUVCUVOXGXIYDYEYAGXKUVHUVIUVJUVKVNVOUVFVPABCDDXLYJXHXQLVRVSUUNXQYOXH
+      YJUUNAUUIUUKXQYOSUUPUUSUVLABCEDXIYHXGXKPVRVSWMWAUVPWEVBWFWGWHXFUUFYCUAEYE
+      AUUTWSUVBVCXFUUEYBUBDYAAUVEWSIVCZXFXTUCDYAUVRWIWJWJXFUUHUUAUAEUUCAEUUCSWS
+      AEUVAUUCOAFUUBVDNVIVJVCXFUUGYTUBDYSADYSSWSJVCZXFYRUCDYSUVSWIWJWJWKVBUBUCY
+      EXIXLYDYAGUAUVHUVIUVKUVJUVNWNUBUCUUCYHYJUUBYSHUAYSWDUUBWDUUCWDYHWDYJWDWNW
+      LWOWP $.
+  $}
+
+  ${
+    $d s t w L $.  $d s t S $.  $d t T $.  $d s t w V $.  $d s t w W $.
+    aspval.a $e |- A = ( AlgSpan ` W ) $.
+    aspval.v $e |- V = ( Base ` W ) $.
+    ${
+      aspval.l $e |- L = ( LSubSp ` W ) $.
+      $( Value of the algebraic closure operation inside an associative
+         algebra.  (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+      aspval $p |- ( ( W e. AssAlg /\ S C_ V ) -> ( A ` S ) =
+        |^| { t e. ( ( SubRing ` W ) i^i L ) | S C_ t } ) $=
+        ( vs vw casa wcel wss cfv cv csubrg cbs cvv syl cpw crab cint cmpt wceq
+        wa cin casp df-asp fveq2 eqtr4di pweqd ineq12d rabeqdv inteqd mpteq12dv
+        clss id basfn elex funfvex funfni sylancr eqeltrid pwexd mptexd fvmptd3
+        eqtrid fveq1d adantr eqid sseq1 rabbidv wb elpw2g biimpar wrex assaring
+        wfn crg subrgid clmod assalmod lss1 elind sseq2 rspcev sylan intexrabim
+        eqtrd ) FLMZCENZUFZCBOZCJEUAZJPZAPZNZAFQOZDUGZUBZUCZUDZOZCWQNZAWTUBZUCZ
+        WKWNXDUEWLWKCBXCWKBFUHOXCGWKKFJKPZROZUAZWRAXHQOZXHUQOZUGZUBZUCZUDXCLUHS
+        KAJUIXHFUEZJXJXOWOXBXPXIEXPXIFROZEXHFRUJHUKULXPXNXAXPWRAXMWTXPXKWSXLDXH
+        FQUJXPXLFUQODXHFUQUJIUKUMUNUOUPWKURWKJWOXBSWKESWKEXQSHWKRSVSFSMXQSMZUSF
+        LUTXRSFRFRVAVBVCVDZVEVFVGVHVIVJWMJCXBXGWOXCSXCVKWPCUEZXAXFXTWRXEAWTWPCW
+        QVLVMUOWKCWOMZWLWKESMYAWLVNXSCESVOTVPWMXEAWTVQZXGSMWKEWTMWLYBWKWSDEWKFV
+        TMEWSMFVREFHWATWKFWBMEDMFWCDEFHIWDTWEXEWLAEWTWQECWFWGWHXEAWTWITVGWJ $.
+
+      ${
+        $d L t x $.  $d S t x $.  $d V t x $.  $d W t x $.
+        $( The algebraic span of a set of vectors is a vector subspace.
+           (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+        asplss $p |- ( ( W e. AssAlg /\ S C_ V ) -> ( A ` S ) e. L ) $=
+          ( vt vx casa wcel wss wa cfv cv csubrg cin adantr syl crab cint clmod
+          aspval wex assalmod ssrab2 inss2 sstri a1i sseq2 crg assaring subrgid
+          lss1 elind simpr elrabd elex2 lssintclm syl3anc eqeltrd ) EKLZBDMZNZB
+          AOBIPZMZIEQOZCRZUAZUBZCIABCDEFGHUDVEEUCLZVJCMZJPVJLJUEZVKCLVCVLVDEUFZ
+          SVMVEVJVICVGIVIUGVHCUHUIUJVEDVJLVNVEVGVDIDVIVFDBUKVCDVILVDVCVHCDVCEUL
+          LDVHLEUMDEGUNTVCVLDCLVOCDEGHUOTUPSVCVDUQURJDVJUSTJVJCEHUTVAVB $.
+      $}
+
+      $( The algebraic span of a subalgebra is itself.  (Contributed by Mario
+         Carneiro, 7-Jan-2015.) $)
+      aspid $p |- ( ( W e. AssAlg /\ S e. ( SubRing ` W ) /\ S e. L ) ->
+        ( A ` S ) = S ) $=
+        ( vt casa wcel csubrg cfv w3a cv wss cin crab cint wceq 3ad2ant2 aspval
+        simp1 subrgss syl2anc wa 3simpc elin sylibr intmin syl eqtrd ) EJKZBELM
+        ZKZBCKZNZBAMZBIOPIUNCQZRSZBUQUMBDPZURUTTUMUOUPUCUOUMVAUPBDEGUDUAIABCDEF
+        GHUBUEUQBUSKZUTBTUQUOUPUFVBUMUOUPUGBUNCUHUIIBUSUJUKUL $.
+    $}
+
+    ${
+      $d S w $.
+      $( The algebraic span of a set of vectors is a subring of the algebra.
+         (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+      aspsubrg $p |- ( ( W e. AssAlg /\ S C_ V ) ->
+        ( A ` S ) e. ( SubRing ` W ) ) $=
+        ( vt vw casa wcel wss wa cfv cv csubrg clss cin crab syl adantr wex crg
+        cint eqid aspval inss1 sstri sseq2 assaring subrgid clmod assalmod lss1
+        ssrab2 elind simpr elrabd elex2 subrgintm sylancr eqeltrd ) DIJZBCKZLZB
+        AMBGNZKZGDOMZDPMZQZRZUCZVGGABVHCDEFVHUDZUEVDVJVGKHNVJJHUAZVKVGJVJVIVGVF
+        GVIUNVGVHUFUGVDCVJJVMVDVFVCGCVIVECBUHVDVGVHCVBCVGJZVCVBDUBJVNDUICDFUJST
+        VBCVHJZVCVBDUKJVODULVHCDFVLUMSTUOVBVCUPUQHCVJURSHDVJUSUTVA $.
+    $}
+
+    $( Span preserves subset ordering.  (Contributed by Mario Carneiro,
+       7-Jan-2015.) $)
+    aspss $p |- ( ( W e. AssAlg /\ S C_ V /\ T C_ S ) ->
+      ( A ` T ) C_ ( A ` S ) ) $=
+      ( vt casa wcel wss w3a cv csubrg cfv crab cint syl wceq aspval clss wa wi
+      cin simpl3 sstr2 ss2rabdv intss simp1 simp3 simp2 syl2anc 3adant3 3sstr4d
+      sstrd eqid ) EIJZBDKZCBKZLZCHMZKZHENOEUAOZUDZPZQZBVAKZHVDPZQZCAOZBAOZUTVH
+      VEKVFVIKUTVGVBHVDUTVAVDJZUBUSVGVBUCUQURUSVLUECBVAUFRUGVHVEUHRUTUQCDKVJVFS
+      UQURUSUIUTCBDUQURUSUJUQURUSUKUOHACVCDEFGVCUPZTULUQURVKVISUSHABVCDEFGVMTUM
+      UN $.
+
+    $( A set of vectors is a subset of its span.  (Contributed by Mario
+       Carneiro, 7-Jan-2015.) $)
+    aspssid $p |- ( ( W e. AssAlg /\ S C_ V ) -> S C_ ( A ` S ) ) $=
+      ( vt casa wcel wss wa cv csubrg cfv clss cin crab cint ssintub eqid
+      aspval sseqtrrid ) DHIBCJKBGLJGDMNDONZPZQRBBANGBUDSGABUCCDEFUCTUAUB $.
+  $}
+
+  ${
+    $d .1. q x $.  $d .1. w x $.  $d .x. q x $.  $d .x. w x $.  $d F j k $.
+    $d K j x $.  $d K q x $.  $d K w x $.  $d W k $.  $d W q x $.  $d W w x $.
+    $d X x $.
+    asclfval.a $e |- A = ( algSc ` W ) $.
+    asclfval.f $e |- F = ( Scalar ` W ) $.
+    asclfval.k $e |- K = ( Base ` F ) $.
+    asclfval.s $e |- .x. = ( .s ` W ) $.
+    asclfval.o $e |- .1. = ( 1r ` W ) $.
+    $( Function value of the algebra scalar lifting function.  (Contributed by
+       Mario Carneiro, 8-Mar-2015.) $)
+    asclfval $p |- A = ( x e. K |-> ( x .x. .1. ) ) $=
+      ( vw vj cfv cv wcel cvv csca cbs vq vk vu cascl co cmpt cur cvsca df-ascl
+      mptrcl wex mptmex basm exlimiv cdm wrel cslot mptrel df-slot releqi mpbir
+      scaid relelfvdm mpan eleq2s elexd 3syl wceq fveq2 eqtr4di fveq2d oveq123d
+      cnx eqidd mpteq12dv id wfn scaslid slotex eqeltrid funfvex funfni sylancr
+      basfn mptexd fvmptd3 eleq2d pm5.21nii eqriv eqtri ) BGUDOZAFAPZDCUEZUFZHU
+      AWKWNUAPZWKQGRQZWOWNQZMRAMPZSOZTOZWLWRUGOZWRUHOZUEZUFZUDWOGAMUIZUJWQNPZFQ
+      ZNUKUBPZEQZUBUKZWPANFWMWOULXGXJNXFFUBEJUMUNXJGSUOZXIGXKQZUBXLXHGSOZESUPZX
+      HXMQXLXNVMSOZUQZUPZXQUCRXOUCPOZUFZUPUCRXRURXPXSUCXOUSUTVASXPVBUTVAXHGSVCV
+      DIVEUNVFVGWPWKWNWOWPMGXDWNRUDRXEWRGVHZAWTXCFWMXTWTETOZFXTWSETXTWSXMEWRGSV
+      IIVJVKJVJXTWLWLXADXBCXTXBGUHOCWRGUHVIKVJXTWLVNXTXAGUGODWRGUGVILVJVLVOWPVP
+      WPAFWMRWPFYARJWPTRVQERQYARQZWDWPEXMRIGSRVRVSVTYBRETETWAWBWCVTWEWFWGWHWIWJ
+      $.
+
+    ${
+      asclvald.x $e |- ( ph -> X e. K ) $.
+      asclvald.l $e |- ( ph -> W e. LMod ) $.
+      asclvald.r $e |- ( ph -> W e. Ring ) $.
+      $( Value of a mapped algebra scalar.  (Contributed by Mario Carneiro,
+         8-Mar-2015.) $)
+      asclvald $p |- ( ph -> ( A ` X ) = ( X .x. .1. ) ) $=
+        ( vx cv co wcel cbs cfv asclfval oveq1 eqid crg ringidcl syl lmodvscld
+        fvmptd3 ) AQHQRZDCSHDCSFBGUAUBZQBCDEFGIJKLMUCUKHDCUDNAHCEFULGDULUEZJLKO
+        NAGUFTDULTPULGDUMMUGUHUIUJ $.
+    $}
+  $}
+
+  ${
+    $d K x $.  $d W x $.  $d ph x $.
+    asclfn.a $e |- A = ( algSc ` W ) $.
+    asclfn.f $e |- F = ( Scalar ` W ) $.
+    asclfn.k $e |- K = ( Base ` F ) $.
+    asclfnd.l $e |- ( ph -> W e. LMod ) $.
+    asclfnd.r $e |- ( ph -> W e. Ring ) $.
+    $( Functionality of the algebra scalar lifting function.  (Contributed by
+       Mario Carneiro, 9-Mar-2015.) $)
+    asclfnd $p |- ( ph -> A Fn K ) $=
+      ( vx cv cur cfv cvsca co wcel eqid adantr syl cbs wral wfn wa clmod simpr
+      crg ringidcl lmodvscld ralrimiva asclfval fnmpt ) AKLZEMNZEONZPZEUANZQZKD
+      UBBDUCAURKDAUMDQZUDZUMUOCDUQEUNUQRZGUORZHAEUEQUSISAUSUFUTEUGQZUNUQQAVCUSJ
+      SUQEUNVAUNRZUHTUIUJKDUPBUQKBUOUNCDEFGHVBVDUKULT $.
+  $}
+
+  ${
+    $d x y A $.  $d x B $.  $d x y F $.  $d x K $.  $d x y ph $.  $d x y W $.
+    asclf.a $e |- A = ( algSc ` W ) $.
+    asclf.f $e |- F = ( Scalar ` W ) $.
+    asclf.r $e |- ( ph -> W e. Ring ) $.
+    asclf.l $e |- ( ph -> W e. LMod ) $.
+    ${
+      asclf.k $e |- K = ( Base ` F ) $.
+      asclf.b $e |- B = ( Base ` W ) $.
+      $( The algebra scalar lifting function is a function into the base set.
+         (Contributed by Mario Carneiro, 4-Jul-2015.) $)
+      asclf $p |- ( ph -> A : K --> B ) $=
+        ( vx cv cur cfv cvsca wcel adantr eqid co clmod simpr ringidcl lmodvscl
+        wa crg syl syl3anc asclfval fmptd ) AMEMNZFOPZFQPZUAZCBAULERZUFFUBRZUPU
+        MCRZUOCRAUQUPJSAUPUCAURUPAFUGRURICFUMLUMTZUDUHSULUNDECFUMLHUNTZKUEUIMBU
+        NUMDEFGHKUTUSUJUK $.
+    $}
+
+    $( The algebra scalar lifting function is a group homomorphism.
+       (Contributed by Mario Carneiro, 4-Jul-2015.) $)
+    asclghm $p |- ( ph -> A e. ( F GrpHom W ) ) $=
+      ( vx vy cplusg cfv cbs eqid wcel crg syl co adantr asclvald lmodring wceq
+      clmod ringgrpd asclf cv wa cur cvsca simprl simprr ringidcl syl13anc cgrp
+      lmodvsdir grpcl 3expb sylan oveq12d 3eqtr4d isghmd ) AIJCKLZDKLZCDBCMLZDM
+      LZVDNZVENZVBNZVCNZACADUCOZCPOHCDFUAQUDZADGUDABVECVDDEFGHVFVGUEAIUFZVDOZJU
+      FZVDOZUGZUGZVLVNVBRZDUHLZDUILZRZVLVSVTRZVNVSVTRZVCRZVRBLVLBLZVNBLZVCRVQVJ
+      VMVOVSVEOZWAWDUBAVJVPHSZAVMVOUJZAVMVOUKZAWGVPADPOZWGGVEDVSVGVSNZULQSVCVBV
+      LVNVTCVDVEDVSVGVIFVTNZVFVHUOUMVQBVTVSCVDDVREFVFWMWLACUNOZVPVRVDOZVKWNVMVO
+      WOVDVBCVLVNVFVHUPUQURWHAWKVPGSZTVQWEWBWFWCVCVQBVTVSCVDDVLEFVFWMWLWIWHWPTV
+      QBVTVSCVDDVNEFVFWMWLWJWHWPTUSUTVA $.
+  $}
+
+  ${
+    asclelbas.a $e |- A = ( algSc ` W ) $.
+    asclelbas.f $e |- F = ( Scalar ` W ) $.
+    asclelbas.b $e |- B = ( Base ` F ) $.
+    asclelbas.w $e |- ( ph -> W e. AssAlg ) $.
+    asclelbas.c $e |- ( ph -> C e. B ) $.
+    $( Lifted scalars are in the base set of the algebra.  (Contributed by Zhi
+       Wang, 11-Sep-2025.)  (Proof shortened by Thierry Arnoux,
+       22-Sep-2025.) $)
+    asclelbas $p |- ( ph -> ( A ` C ) e. ( Base ` W ) ) $=
+      ( cbs cfv casa wcel crg assaring syl clmod assalmod eqid asclf ffvelcdmd
+      ) ACFLMZDBABUDECFGHAFNOZFPOJFQRAUEFSOJFTRIUDUAUBKUC $.
+  $}
+
+  ${
+    ascl0.a $e |- A = ( algSc ` W ) $.
+    ascl0.f $e |- F = ( Scalar ` W ) $.
+    ascl0.l $e |- ( ph -> W e. LMod ) $.
+    ascl0.r $e |- ( ph -> W e. Ring ) $.
+    $( The scalar 0 embedded into a left module corresponds to the 0 of the
+       left module if the left module is also a ring.  (Contributed by AV,
+       31-Jul-2019.) $)
+    ascl0 $p |- ( ph -> ( A ` ( 0g ` F ) ) = ( 0g ` W ) ) $=
+      ( c0g cfv cur cvsca co cbs eqid clmod wcel cgrp lmodfgrp grpidcl asclvald
+      3syl wceq crg ringidcl syl lmod0vs syl2anc eqtrd ) ACIJZBJUJDKJZDLJZMZDIJ
+      ZABULUKCCNJZDUJEFUOOZULOZUKOZADPQZCRQUJUOQGCDFSUOCUJUPUJOZTUBGHUAAUSUKDNJ
+      ZQZUMUNUCGADUDQVBHVADUKVAOZURUEUFULCUJVADUKUNVCFUQUTUNOUGUHUI $.
+
+    $( The scalar 1 embedded into a left module corresponds to the 1 of the
+       left module if the left module is also a ring.  (Contributed by AV,
+       31-Jul-2019.) $)
+    ascl1 $p |- ( ph -> ( A ` ( 1r ` F ) ) = ( 1r ` W ) ) $=
+      ( cur cfv cvsca co cbs eqid clmod wcel crg lmodring ringidcl 3syl lmodvs1
+      asclvald wceq syl syl2anc eqtrd ) ACIJZBJUGDIJZDKJZLZUHABUIUHCCMJZDUGEFUK
+      NZUINZUHNZADOPZCQPUGUKPGCDFRUKCUGULUGNZSTGHUBAUOUHDMJZPZUJUHUCGADQPURHUQD
+      UHUQNZUNSUDUIUGCUQDUHUSFUMUPUAUEUF $.
+  $}
+
+  ${
+    asclmul1.a $e |- A = ( algSc ` W ) $.
+    asclmul1.f $e |- F = ( Scalar ` W ) $.
+    asclmul1.k $e |- K = ( Base ` F ) $.
+    asclmul1.v $e |- V = ( Base ` W ) $.
+    asclmul1.t $e |- .X. = ( .r ` W ) $.
+    asclmul1.s $e |- .x. = ( .s ` W ) $.
+    $( Left multiplication by a lifted scalar is the same as the scalar
+       operation.  (Contributed by Mario Carneiro, 9-Mar-2015.) $)
+    asclmul1 $p |- ( ( W e. AssAlg /\ R e. K /\ X e. V ) ->
+        ( ( A ` R ) .X. X ) = ( R .x. X ) ) $=
+      ( wcel cfv co 3ad2ant1 wceq casa w3a cur eqid simp2 assalmod crg assaring
+      clmod asclvald simp1 ringidcl syl simp3 assaass syl13anc ringlidm syl2anc
+      oveq1d oveq2d 3eqtrd ) HUAPZBFPZIGPZUBZBAQZIDRBHUCQZCRZIDRZBVGIDRZCRZBICR
+      VEVFVHIDVEACVGEFHBJKLOVGUDZVBVCVDUEZVBVCHUIPVDHUFSVBVCHUGPZVDHUHSZUJUSVEV
+      BVCVGGPZVDVIVKTVBVCVDUKVMVEVNVPVOGHVGMVLULUMVBVCVDUNZBFCDEGHVGIMKLONUOUPV
+      EVJIBCVEVNVDVJITVOVQGHDVGIMNVLUQURUTVA $.
+
+    $( Right multiplication by a lifted scalar is the same as the scalar
+       operation.  (Contributed by Mario Carneiro, 9-Mar-2015.) $)
+    asclmul2 $p |- ( ( W e. AssAlg /\ R e. K /\ X e. V ) ->
+        ( X .X. ( A ` R ) ) = ( R .x. X ) ) $=
+      ( wcel cfv co 3ad2ant1 oveq2d casa w3a eqid simp2 clmod assalmod assaring
+      cur crg asclvald wceq simp1 simp3 ringidcl syl assaassr syl13anc ringridm
+      syl2anc 3eqtrd ) HUAPZBFPZIGPZUBZIBAQZDRIBHUHQZCRZDRZBIVFDRZCRZBICRVDVEVG
+      IDVDACVFEFHBJKLOVFUCZVAVBVCUDZVAVBHUEPVCHUFSVAVBHUIPZVCHUGSZUJTVDVAVBVCVF
+      GPZVHVJUKVAVBVCULVLVAVBVCUMZVDVMVOVNGHVFMVKUNUOBFCDEGHIVFMKLONUPUQVDVIIBC
+      VDVMVCVIIUKVNVPGHDVFIMNVKURUSTUT $.
+  $}
+
+  ${
+    ascldimul.a $e |- A = ( algSc ` W ) $.
+    ascldimul.f $e |- F = ( Scalar ` W ) $.
+    ascldimul.k $e |- K = ( Base ` F ) $.
+    ascldimul.t $e |- .X. = ( .r ` W ) $.
+    ascldimul.s $e |- .x. = ( .r ` F ) $.
+    $( The algebra scalar lifting function distributes over multiplication.
+       (Contributed by Mario Carneiro, 8-Mar-2015.)  (Proof shortened by SN,
+       5-Nov-2023.) $)
+    ascldimul $p |- ( ( W e. AssAlg /\ R e. K /\ S e. K ) ->
+        ( A ` ( R .x. S ) ) = ( ( A ` R ) .X. ( A ` S ) ) ) $=
+      ( wcel co cfv wceq 3ad2ant1 crg eqid casa w3a cur cvsca clmod simp2 simp3
+      cbs assalmod assaring ringidcl lmodvsass syl13anc assasca ringcl asclvald
+      syl3an1 asclf ffvelcdmda 3adant2 asclmul1 syld3an3 oveq2d eqtrd 3eqtr4d
+      syl ) HUANZBGNZCGNZUBZBCDOZHUCPZHUDPZOZBCVLVMOZVMOZVKAPBAPCAPZEOZVJHUENZV
+      HVIVLHUHPZNZVNVPQVGVHVSVIHUIZRZVGVHVIUFVGVHVIUGZVJHSNZWAVGVHWEVIHUJZRZVTH
+      VLVTTZVLTZUKVFBCVMDFGVTHVLWHJVMTZKMULUMVJAVMVLFGHVKIJKWJWIVGFSNVHVIVKGNFH
+      JUNGFDBCKMUOUQWCWGUPVJVRBVQVMOZVPVGVHVIVQVTNZVRWKQVGVIWLVHVGGVTCAVGAVTFGH
+      IJWFWBKWHURUSUTABVMEFGVTHVQIJKWHLWJVAVBVJVQVOBVMVJAVMVLFGHCIJKWJWIWDWCWGU
+      PVCVDVE $.
+  $}
+
+  ${
+    asclinvg.a $e |- A = ( algSc ` W ) $.
+    asclinvg.r $e |- R = ( Scalar ` W ) $.
+    asclinvg.k $e |- B = ( Base ` R ) $.
+    asclinvg.i $e |- I = ( invg ` R ) $.
+    asclinvg.j $e |- J = ( invg ` W ) $.
+    $( The group inverse (negation) of a lifted scalar is the lifted negation
+       of the scalar.  (Contributed by AV, 2-Sep-2019.) $)
+    asclinvg $p |- ( ( W e. LMod /\ W e. Ring /\ C e. B )
+                     -> ( J ` ( A ` C ) ) = ( A ` ( I ` C ) ) ) $=
+      ( clmod wcel crg w3a cghm co cfv wceq simp2 simp1 asclghm simp3 wa ghminv
+      eqcomd syl2anc ) GMNZGONZCBNZPZADGQRNZUKCASFSZCESASZTULADGHIUIUJUKUAUIUJU
+      KUBUCUIUJUKUDUMUKUEUOUNBDGAEFCJKLUFUGUH $.
+  $}
+
+  ${
+    $d x y A $.  $d x y F $.  $d x y W $.
+    asclrhm.a $e |- A = ( algSc ` W ) $.
+    asclrhm.f $e |- F = ( Scalar ` W ) $.
+    $( The algebra scalar lifting function is a ring homomorphism.
+       (Contributed by Mario Carneiro, 8-Mar-2015.) $)
+    asclrhm $p |- ( W e. AssAlg -> A e. ( F RingHom W ) ) $=
+      ( vx vy casa wcel cbs cfv cmulr cur assasca assaring assalmod ascl1 cv co
+      eqid wceq ascldimul 3expb asclghm isrhm2d ) CHIZFGBJKZBCBLKZCLKZBMKZACMKZ
+      UGTZUJTUKTUHTZUITZBCENCOZUFABCDECPZUOQUFFRZUGIGRZUGIUQURUHSAKUQAKURAKUISU
+      AAUQURUHUIBUGCDEULUNUMUBUCUFABCDEUOUPUDUE $.
+  $}
+
+  ${
+    $d N x y $.  $d .1. x y $.  $d W x y $.
+    rnascl.a $e |- A = ( algSc ` W ) $.
+    rnascl.o $e |- .1. = ( 1r ` W ) $.
+    rnascl.n $e |- N = ( LSpan ` W ) $.
+    $( The set of lifted scalars is also interpretable as the span of the
+       identity.  (Contributed by Mario Carneiro, 9-Mar-2015.) $)
+    rnascl $p |- ( W e. AssAlg -> ran A = ( N ` { .1. } ) ) $=
+      ( vx vy casa wcel crn cv cvsca cfv co wceq csca cbs eqid cab csn asclfval
+      wrex rnmpt clmod assalmod crg assaring ringidcl syl lspsn syl2anc eqtr4id
+      ) DJKZALHMIMBDNOZPZQIDROZSOZUDHUAZBUBCOZIHUSUQAIAUPBURUSDEURTZUSTZUPTZFUC
+      UEUODUFKBDSOZKZVAUTQDUGUODUHKVFDUIVEDBVETZFUJUKHUPIURUSCVEDBVBVCVGVDGULUM
+      UN $.
+  $}
+
+  ${
+    $d x y A $.  $d x y L $.  $d x y S $.  $d x y W $.
+    issubassa2.a $e |- A = ( algSc ` W ) $.
+    issubassa2.l $e |- L = ( LSubSp ` W ) $.
+    $( A subring of a unital algebra is a subspace and thus a subalgebra iff it
+       contains all scalar multiples of the identity.  (Contributed by Mario
+       Carneiro, 9-Mar-2015.) $)
+    issubassa2 $p |- ( ( W e. AssAlg /\ S e. ( SubRing ` W ) ) ->
+        ( S e. L <-> ran A C_ S ) ) $=
+      ( vx vy wcel cfv wa wss wceq eqid ad2antrr ad2antlr cv co wral cbs csubrg
+      casa crn cur csn clspn rnascl clmod assalmod simpr subrg1cl eqsstrd csubg
+      ellspsn5 cvsca csca subrgsubg cmulr simplll simprl subrgss sselda adantrl
+      asclmul1 syl3anc simpllr simplr wfn crg assaring asclfnd fnfvelrn adantrr
+      sylan sseldd simprr subrgmcl eqeltrrd ralrimivva islss4 mpbir2and impbida
+      wb syl ) DUBIZBDUAJIZKZBCIZAUCZBLZWGWHKZWIDUDJZUEDUFJZJZBWEWIWNMWFWHAWLWM
+      DEWLNZWMNZUGOWKCBWMDWLFWPWEDUHIZWFWHDUIZOWGWHUJWFWLBIWEWHBDWLWOUKPUNULWGW
+      JKZWHBDUMJIZGQZHQZDUOJZRZBIZHBSGDUPJZTJZSZWFWTWEWJBDUQPWSXEGHXGBWSXAXGIZX
+      BBIZKZKZXAAJZXBDURJZRZXDBXLWEXIXBDTJZIZXOXDMWEWFWJXKUSWSXIXJUTWSXJXQXIWSB
+      XPXBWFBXPLWEWJBXPDXPNZVAPVBVCAXAXCXNXFXGXPDXBEXFNZXGNZXRXNNZXCNZVDVEXLWFX
+      MBIZXJXOBIWEWFWJXKVFWSXIYCXJWSXIKWIBXMWGWJXIVGWSAXGVHXIXMWIIWSAXFXGDEXSXT
+      WEWQWFWJWROWEDVIIWFWJDVJOVKXGXAAVLVNVOVMWSXIXJVPBDXNXMXBYAVQVEVRVSWEWHWTX
+      HKWCZWFWJWEWQYDWRXGCXCBXFXPDGHXSXTXRYBFVTWDOWAWB $.
+  $}
+
+  ${
+    rnasclsubrg.c $e |- C = ( algSc ` W ) $.
+    rnasclsubrg.w $e |- ( ph -> W e. AssAlg ) $.
+    $( The scalar multiples of the unit vector form a subring of the vectors.
+       (Contributed by SN, 5-Nov-2023.) $)
+    rnasclsubrg $p |- ( ph -> ran C e. ( SubRing ` W ) ) $=
+      ( casa wcel csca cfv crh co crn csubrg eqid asclrhm rnrhmsubrg 3syl ) ACF
+      GBCHIZCJKGBLCMIGEBRCDRNOBRCPQ $.
+  $}
+
+  ${
+    rnasclmulcl.c $e |- C = ( algSc ` W ) $.
+    rnasclmulcl.x $e |- .X. = ( .r ` W ) $.
+    rnasclmulcl.w $e |- ( ph -> W e. AssAlg ) $.
+    $( (Vector) multiplication is closed for scalar multiples of the unit
+       vector.  (Contributed by SN, 5-Nov-2023.) $)
+    rnasclmulcl $p |- ( ( ph /\
+        ( X e. ran C /\ Y e. ran C ) ) ->
+                ( X .X. Y ) e. ran C ) $=
+      ( crn wcel co csubrg cfv rnasclsubrg subrgmcl syl3an1 3expb ) AEBJZKZFSKZ
+      EFCLSKZASDMNKTUAUBABDGIOSDCEFHPQR $.
+  $}
+
+  ${
+    rnasclassa.a $e |- A = ( algSc ` W ) $.
+    rnasclassa.u $e |- U = ( W |`s ran A ) $.
+    rnasclassa.w $e |- ( ph -> W e. AssAlg ) $.
+    $( The scalar multiples of the unit vector form a subalgebra of the
+       vectors.  (Contributed by SN, 16-Nov-2023.) $)
+    rnasclassa $p |- ( ph -> U e. AssAlg ) $=
+      ( crn wss casa wcel ssidd csubrg cfv wi rnasclsubrg clss eqid issubassa2
+      wa issubassa3 expr sylbird syl2anc mpd ) ABHZUFIZCJKZAUFLADJKZUFDMNKZUGUH
+      OGABDEGPUIUJTUGUFDQNZKZUHBUFUKDEUKRZSUIUJULUHUFCUKDFUMUAUBUCUDUE $.
+  $}
+
+  ${
+    $d S x $.  $d W x $.  $d X x $.
+    ressascl.a $e |- A = ( algSc ` W ) $.
+    ressascl.x $e |- X = ( W |`s S ) $.
+    $( The lifting of scalars is invariant between subalgebras and
+       superalgebras.  (Contributed by Mario Carneiro, 9-Mar-2015.) $)
+    ressascl $p |- ( S e. ( SubRing ` W ) -> A = ( algSc ` X ) ) $=
+      ( vx cfv wcel csca cbs cur cvsca co cmpt crg wceq eqid mpancom asclfval
+      csubrg cv cascl subrgrcl ressscag fveq2d ressvscag eqidd subrg1 mpteq12dv
+      oveq123d 3eqtr4g ) BCUAHZIZGCJHZKHZGUBZCLHZCMHZNZOGDJHZKHZUQDLHZDMHZNZOAD
+      UCHZUNGUPUTVBVEUNUOVAKCPIZUNUOVAQBCUDZBUOCDUMPFUORZUESUFUNUQUQURVCUSVDVGU
+      NUSVDQVHBUSCDUMPFUSRZUGSUNUQUHBCDURFURRZUIUKUJGAUSURUOUPCEVIUPRVJVKTGVFVD
+      VCVAVBDVFRVARVBRVDRVCRTUL $.
+  $}
+
+  ${
+    $d x y z K $.  $d x y z L $.  $d x y z P $.  $d x y z ph $.  $d x y W $.
+    $d z F $.  $d z G $.
+    asclpropd.f $e |- F = ( Scalar ` K ) $.
+    asclpropd.g $e |- G = ( Scalar ` L ) $.
+    asclpropd.1 $e |- ( ph -> P = ( Base ` F ) ) $.
+    asclpropd.2 $e |- ( ph -> P = ( Base ` G ) ) $.
+    asclpropd.3 $e |- ( ( ph /\ ( x e. P /\ y e. W ) ) ->
+      ( x ( .s ` K ) y ) = ( x ( .s ` L ) y ) ) $.
+    asclpropd.4 $e |- ( ph -> ( 1r ` K ) = ( 1r ` L ) ) $.
+    asclpropd.5 $e |- ( ph -> ( 1r ` K ) e. W ) $.
+    $( If two structures have the same components (properties), one is an
+       associative algebra iff the other one is.  The last hypotheses on ` 1r `
+       can be discharged either by letting ` W = _V ` (if strong equality is
+       known on ` .s ` ) or assuming ` K ` is a ring.  (Contributed by Mario
+       Carneiro, 5-Jul-2015.) $)
+    asclpropd $p |- ( ph -> ( algSc ` K ) = ( algSc ` L ) ) $=
+      ( vz cfv cmpt eqid cbs cv cur cvsca co cascl wcel wceq oveqrspc2v anassrs
+      wa mpidan oveq2d adantr eqtrd mpteq2dva mpteq1d 3eqtr3d asclfval 3eqtr4g
+      ) AQEUARZQUBZGUCRZGUDRZUEZSZQFUARZVBHUCRZHUDRZUEZSZGUFRZHUFRZAQDVESQDVJSV
+      FVKAQDVEVJAVBDUGZUKVEVBVCVIUEZVJAVNVCIUGZVEVOUHZPAVNVPVQABCDIVDVIVBVCNUIU
+      JULAVOVJUHVNAVCVHVBVIOUMUNUOUPAQDVAVELUQAQDVGVJMUQURQVLVDVCEVAGVLTJVATVDT
+      VCTUSQVMVIVHFVGHVMTKVGTVITVHTUSUT $.
+  $}
+
+  ${
+    assamulgscm.v $e |- V = ( Base ` W ) $.
+    assamulgscm.f $e |- F = ( Scalar ` W ) $.
+    assamulgscm.b $e |- B = ( Base ` F ) $.
+    assamulgscm.s $e |- .x. = ( .s ` W ) $.
+    assamulgscm.g $e |- G = ( mulGrp ` F ) $.
+    assamulgscm.p $e |- .^ = ( .g ` G ) $.
+    assamulgscm.h $e |- H = ( mulGrp ` W ) $.
+    assamulgscm.e $e |- E = ( .g ` H ) $.
+    $( Lemma 1 for ~ assamulgscm (induction base).  (Contributed by AV,
+       26-Aug-2019.) $)
+    assamulgscmlem1 $p |- ( ( ( A e. B /\ X e. V ) /\ W e. AssAlg )
+                     -> ( 0 E ( A .x. X ) ) = ( ( 0 .^ A ) .x. ( 0 E X ) ) ) $=
+      ( wcel wa casa cur cfv cc0 wceq clmod assalmod crg assaring eqid ringidcl
+      co lmodvs1 eqcomd syl2anc adantl simpll simplr lmodvscl syl3anc ringidval
+      syl mgpbas mulg0 oveq12d 3eqtr4d ) ABTZKITZUAZJUBTZUAZJUCUDZFUCUDZVMCUMZU
+      EAKCUMZDUMZUEAEUMZUEKDUMZCUMVKVMVOUFZVJVKJUGTZVMITZVTJUHZVKJUITWBJUJIJVML
+      VMUKZULVCWAWBUAVOVMCVNFIJVMLMOVNUKZUNUOUPUQVLVPITZVQVMUFVLWAVHVIWFVKWAVJW
+      CUQVHVIVKURZVHVIVKUSZACFBIJKLMONUTVAIDHVPVMIJHRLVDZJVMHRWDVBZSVEVCVLVRVNV
+      SVMCVLVHVRVNUFWGBEGAVNBFGPNVDFVNGPWEVBQVEVCVLVIVSVMUFWHIDHKVMWIWJSVEVCVFV
+      G $.
+
+    $( Lemma for ~ assamulgscm (induction step).  (Contributed by AV,
+       26-Aug-2019.) $)
+    assamulgscmlem2 $p |- ( y e. NN0 -> ( ( ( A e. B /\ X e. V )
+       /\ W e. AssAlg ) -> ( ( y E ( A .x. X ) ) = ( ( y .^ A ) .x. ( y E X ) )
+                     -> ( ( y + 1 ) E ( A .x. X ) )
+                        = ( ( ( y + 1 ) .^ A ) .x. ( ( y + 1 ) E X ) ) ) ) ) $=
+      ( cv cn0 wcel wa casa co wceq c1 caddc cmulr cfv crg assaring ringmgp syl
+      cmnd adantl adantr simpll clmod assalmod simplr lmodvscl syl3anc mgpplusg
+      mgpbas eqid mulgnn0p1 oveq1 cbs simprr eqcomi fveq2i assasca simpl wi a1i
+      csca eqtrdi eleq2d biimpcd imp mulgnn0cld simprlr assaass syl13anc oveq2d
+      assaassr eqcomd peano2nn0 w3a lmodvsass 3eqtrd simprll fveq2d oveqd eqtrd
+      oveq1d sylan9eqr exp31 ) AUAZUBUCZBCUCZLJUCZUDZKUEUCZUDZXABLDUFZEUFZXABFU
+      FZXALEUFZDUFZUGZXAUHUIUFZXHEUFZXNBFUFZXNLEUFZDUFZUGXBXGUDZXMUDZXOXIXHKUJU
+      KZUFZXRXTIUPUCZXBXHJUCZXOYBUGXSYCXMXGYCXBXFYCXEXFKULUCYCKUMKISUNUOUQUQZUR
+      XBXGXMUSXSYDXMXGYDXBXGKUTUCZXCXDYDXFYFXEKVAUQZXCXDXFUSXCXDXFVBBDGCJKLMNPO
+      VCVDUQZURJYAEIXAXHJKISMVFZTKYAISYAVGZVEZVHVDXMXSYBXLXHYAUFZXRXIXLXHYAVIXS
+      YLXJXKXHYAUFZDUFZXJBKVRUKZUJUKZUFZXQDUFZXRXSXFXJYOVJUKZUCZXKJUCZYDYLYNUGX
+      BXEXFVKZXSYSFHXABYSGHQYOGVJGYONVLVMVFRXGHUPUCZXBXFUUCXEXFGULUCUUCGKNVNGHQ
+      UNUOUQUQZXBXGVOZXGBYSUCZXBXEXFUUFXCXFUUFVPXDXFXCUUFXFCYSBXFCGVJUKZYSCUUGU
+      GXFOVQGYOVJNVMVSVTWAURWBUQZWCZXSJEIXALYITYEUUEXBXCXDXFWDZWCZYHXJYSDYAYOJK
+      XKXHMYOVGZYSVGZPYJWEWFXSYNXJBXKLYAUFZDUFZDUFXJBXQDUFZDUFZYRXSYMUUOXJDXSXF
+      UUFUUAXDYMUUOUGUUBUUHUUKUUJBYSDYAYOJKXKLMUULUUMPYJWHWFWGXSUUOUUPXJDXSUUNX
+      QBDXSXQUUNXSYCXBXDXQUUNUGYEUUEUUJJYAEIXALYITYKVHVDWIWGWGXSYFYTUUFXQJUCZUU
+      QYRUGXGYFXBYGUQUUIUUHXSJEIXNLYITYEXBXNUBUCXGXAWJURUUJWCYFYTUUFUURWKUDYRUU
+      QXJBDYPYOYSJKXQMUULPUUMYPVGWLWIWFWMXSYQXPXQDXSXPYQXSXPXJBGUJUKZUFZYQXSUUC
+      XBXCXPUUTUGUUDUUEXBXCXDXFWNCUUSFHXABCGHQOVFRGUUSHQUUSVGVEVHVDXSUUSYPXJBXS
+      GYOUJGYOUGXSNVQWOWPWQWIWRWMWSWQWT $.
+
+    $d A x y $.  $d B x y $.  $d E x y $.  $d N x y $.  $d V x y $.
+    $d W x y $.  $d X x y $.  $d .x. x y $.  $d .^ x y $.
+    $( Exponentiation of a scalar multiplication in an associative algebra:
+       ` ( a .x. X ) ^ N = ( a ^ N ) .X. ( X ^ N ) ` .  (Contributed by AV,
+       26-Aug-2019.) $)
+    assamulgscm $p |- ( ( W e. AssAlg /\ ( N e. NN0 /\ A e. B /\ X e. V ) )
+       -> ( N E ( A .x. X ) ) = ( ( N .^ A ) .x. ( N E X ) ) ) $=
+      ( vx vy cn0 wcel w3a casa co wceq wi wa cv c1 caddc oveq1 oveq12d eqeq12d
+      cc0 imbi2d weq assamulgscmlem1 assamulgscmlem2 nn0ind exp4c 3imp impcom
+      a2d ) IUCUDZABUDZLJUDZUEKUFUDZIALCUGZDUGZIAEUGZILDUGZCUGZUHZVGVHVIVJVPUIV
+      GVHVIVJVPVHVIUJVJUJZUAUKZVKDUGZVRAEUGZVRLDUGZCUGZUHZUIVQUQVKDUGZUQAEUGZUQ
+      LDUGZCUGZUHZUIVQUBUKZVKDUGZWIAEUGZWILDUGZCUGZUHZUIVQWIULUMUGZVKDUGZWOAEUG
+      ZWOLDUGZCUGZUHZUIVQVPUIUAUBIVRUQUHZWCWHVQXAVSWDWBWGVRUQVKDUNXAVTWEWAWFCVR
+      UQAEUNVRUQLDUNUOUPURUAUBUSZWCWNVQXBVSWJWBWMVRWIVKDUNXBVTWKWAWLCVRWIAEUNVR
+      WILDUNUOUPURVRWOUHZWCWTVQXCVSWPWBWSVRWOVKDUNXCVTWQWAWRCVRWOAEUNVRWOLDUNUO
+      UPURVRIUHZWCVPVQXDVSVLWBVOVRIVKDUNXDVTVMWAVNCVRIAEUNVRILDUNUOUPURABCDEFGH
+      JKLMNOPQRSTUTWIUCUDVQWNWTUBABCDEFGHJKLMNOPQRSTVAVFVBVCVDVE $.
+  $}
+
+  ${
+    asclmulg.a $e |- A = ( algSc ` W ) $.
+    asclmulg.f $e |- F = ( Scalar ` W ) $.
+    asclmulg.k $e |- K = ( Base ` F ) $.
+    asclmulg.m $e |- .^ = ( .g ` W ) $.
+    asclmulg.t $e |- .* = ( .g ` F ) $.
+    $( Apply group multiplication to the algebra scalars.  (Contributed by
+       Thierry Arnoux, 24-Jul-2024.) $)
+    asclmulg $p |- ( ( W e. AssAlg /\ N e. NN0 /\ X e. K ) -> ( A ` ( N .* X )
+       ) = ( N .^ ( A ` X ) ) ) $=
+      ( casa wcel cfv co 3ad2ant1 eqid asclvald cn0 w3a cur cvsca wceq assalmod
+      clmod cbs simp3 simp2 crg assaring ringidcl lmodvsmmulgdi syl13anc oveq2d
+      syl cgrp assasca ringgrpd nn0zd mulgcld 3eqtr4rd ) GNOZFUAOZHEOZUBZFHGUCP
+      ZGUDPZQZBQZFHDQZVHVIQZFHAPZBQVLAPVGGUGOZVFVEVHGUHPZOZVKVMUEVDVEVOVFGUFRZV
+      DVEVFUIZVDVEVFUJZVDVEVQVFVDGUKOZVQGULZVPGVHVPSZVHSZUMUQRHVIDBCEFVPGVHWCJV
+      ISZKLMUNUOVGVNVJFBVGAVIVHCEGHIJKWEWDVSVRVDVEWAVFWBRZTUPVGAVIVHCEGVLIJKWEW
+      DVGEDCFHKMVDVECUROVFVDCCGJUSUTRVGFVTVAVSVBVRWFTVC $.
+  $}
 
 
 $(
@@ -195451,6 +196352,512 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Logarithms (cont.)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d k n N $.
+    log2tlbnd.log2cnv $e |- seq 0 ( + , ( k e. NN0 |-> ( 2 /
+      ( ( 3 x. ( ( 2 x. k ) + 1 ) ) x. ( 9 ^ k ) ) ) ) ) ~~> ( log ` 2 ) $.
+    $( Bound the error term in the series of the hypothesis.  The presence of
+       the hypothesis here is a temporary measure until it can be proved as
+       log2cnv .  (Contributed by Mario Carneiro, 7-Apr-2015.) $)
+    log2tlbndlog2 $p |- ( N e. NN0
+      -> ( ( log ` 2 ) - sum_ n e. ( 0 ... ( N - 1 ) )
+      ( 2 / ( ( 3 x. ( ( 2 x. n ) + 1 ) ) x. ( 9 ^ n ) ) ) ) e. ( 0 [,]
+       ( 3 / ( ( 4 x. ( ( 2 x. N ) + 1 ) ) x. ( 9 ^ N ) ) ) ) ) $=
+      ( cn0 wcel c2 cc0 c1 co c3 cmul c9 cdiv cc cr cn a1i wbr c8 clog cfv cmin
+      cfz cv caddc cexp csu cuz c4 cicc 0zd cz nn0z peano2zm syl fzfigd elfznn0
+      wa 2re 3nn 2nn0 nn0mulcl sylancr nn0p1nn nnmulcl nnexpcl nnmulcld nndivre
+      simpr 9nn recnd sylan2 cmpt eqid oveq2 oveq2d oveq12d id crp 3rp remulcld
+      wceq nn0re cle 0le2 rpmulcld 9re 9pos fvmptd3 syldan cseq cli seqex ax-mp
+      2rp nn0uz adantl eqeltrd mpbid isumclim eqtr3d clt nngt0d adantr rpdivcld
+      nnred nnrpd rpred mp2an 9cn exprecapd mpan nncnd nnap0d divdivap1d nn0red
+      cap wb lemul2 syl112anc 3re cvv 8nn 0re oveq1i ax-1cn eqtr3i 8cn divclapi
+      2cnd divap0i breqtrd eqtr4d 3cn 4cn 2cn 4ap0 3ap0 2ap0 eluznn0 rerpdivcld
+      fsumcl oveq1d nn0ge0 mulge0d ge0p1rpd elrpii rpexpcl relogcl elexi breldm
+      mp1i iserex isumrecl isumsplit mvrladdd divge0 syl22anc isumge0 nn0mulcld
+      cdm cq znq qre reexpcld gt0ap0ii divrecapd 3eqtr2d eqtrd 1red eluzle 2pos
+      1z leadd1dd 3pos lemul1 lediv2 syl222anc recni cabs recgt0ii ltleii absid
+      1lt9 recgt1i simpri eqbrtri geolim2 pm3.2i divsubdirap mp3an 9m1e8 nnap0i
+      dividapi divdiv32apd recdivap mp4an eqtrid 3eqtrd expcl isermulc2 breldmg
+      mp3an2i isumle divdivdivapi 3t3e9 4t2e8 oveq12i eqtri oveq2i divmuldivapd
+      divcanap2i mulassd mulap0d 3eqtr4a w3a 4nn elicc2 mpbir3and ) CEFZGUAUBZH
+      CIUCJZUDJZGKGBUEZLJZIUFJZLJZMUYEUGJZLJZNJZBUHZUCJCUIUBZUYKBUHZHKUJGCLJZIU
+      FJZLJZMCUGJZLJZNJZUKJZUYAUYBUYLUYNUYAUYDUYKBUYAHUYCUYAULZUYACUMFUYCUMFCUN
+      ZCUOUPUQUYEUYDFUYAUYEEFZUYKOFUYEUYCURUYAVUDUSZUYKVUEGPFZUYJQFUYKPFZUTVUEU
+      YHUYIVUEKQFZUYGQFZUYHQFZVAVUEUYFEFZVUIVUEGEFZVUDVUKVBUYAVUDVJZGUYEVCZVDUY
+      FVEUPZKUYGVFVDZVUEMQFZVUDUYIQFZVKVUMMUYEVGZVDZVHZGUYJVIVDZVLZVMUUCUYAUYNU
+      YAUYKBAEGKGAUEZLJZIUFJZLJZMVVDUGJZLJZNJZVNZCUYMUYMVOZVUCUYAUYEUYMFZUSZVUD
+      UYEVVKUBZUYKWCZUYECUUAZVUDAUYEVVJUYKEVVKPVVKVOVVDUYEWCZVVIUYJGNVVRVVGUYHV
+      VHUYILVVRVVFUYGKLVVRVVEUYFIUFVVDUYEGLVPUUDVQVVDUYEMUGVPVRVQVUDVSZVUDGUYJV
+      UFVUDUTRZVUDUYHUYIVUDKUYGKVTFZVUDWARVUDUYFVUDGUYEVVTUYEWDZWBVUDGUYEVVTVWB
+      HGWESZVUDWFRUYEUUEUUFUUGWGVUDMVTFZUYEUMFZUYIVTFMWHWIUUHZUYEUNZMUYEUUIVDWG
+      UUBWJZUPZUYAVVMVUDVUGVVQVVBWKZUYAUFVVKHWLZWMUVBZFZUFVVKCWLVWLFVWKUYBWMSZV
+      WMUYADVWKUYBWMUFVVKHWNUYBPGVTFZUYBPFWPGUUJWOUUKUULUUMZUYABVVKHCEWQUYAVSZV
+      UEVVOUYKOVUDVVPUYAVWHWRZVVCWSUUNWTZUUOZVLUYAEUYKBUHUYBUYLUYNUFJUYAUYKUYBB
+      VVKHEWQVUBVWRVVCVWNUYADRXAUYAUYKBVVKHCUYMEWQVVLVWQVWRVVCVWPUUPXBUUQUYAUYN
+      VUAFZUYNPFZHUYNWESZUYNUYTWESZVWTUYAUYKBVVKCUYMVVLVUCVWIVWJVWSUYAVVMVUDHUY
+      KWESZVVQVUEVUFVWCUYJPFZHUYJXCSZVXEVUFVUEUTRVWCVUEWFRVUEUYJVVAXGZVUEUYJVVA
+      XDZGUYJUURUUSWKUUTUYAUYNUYMGKUYPLJZUYILJZNJZBUHUYTWEUYAUYKVXLBVVKAEGVXJNJ
+      ZIMNJZVVDUGJZLJZVNZCUYMVVLVUCVWIVWJUYAVVMVUDUYEVXQUBZVXLWCVVQVUEVXRVXMVXN
+      UYEUGJZLJZVXLVUEAUYEVXPVXTEVXQPVXQVOVVRVXOVXSVXMLVVDUYEVXNUGVPZVQVUMVUEVX
+      MVXSVUEVXMVUEGVXJVWOVUEWPRVUEKUYPVWAVUEWARUYAUYPVTFVUDUYAUYPUYAUYOEFZUYPQ
+      FZUYAGCVULUYAVBRVWQUVAUYOVEZUPXHXEWGXFXIVUDVXSPFUYAVUDVXNUYEVXNPFZVUDVXNU
+      VCFZVYEIUMFVUQVYFUVNVKIMUVDXJVXNUVEWOZRVVSUVFZWRWBWJZVUEVXTVXMIUYINJZLJVX
+      MUYINJVXLVUEVXSVYJVXMLVUEMUYEMOFZVUEXKRMHXRSZVUEMWHWIUVGZRVUDVWEUYAVWGWRX
+      LVQVUEVXMUYIUYAVXMOFVUDUYAVXMUYAVUFVXJQFZVXMPFUTUYAVUHVYCVYNVAUYAVYBVYCVU
+      LUYAVYBVBGCVCXMZVYDUPZKUYPVFVDZGVXJVIVDZVLZXEVUEUYIVUTXNZVUEUYIVUTXOZUVHV
+      UEGVXJUYIVUEYKVUEVXJUYAVYNVUDVYQXEZXNVYTVUEVXJWUBXOWUAXPUVIUVJWKZUYAVVMVU
+      DVXLPFZVVQVUEVUFVXKQFZWUDUTVUEVXJUYIWUBVUTVHZGVXKVIVDWKZVVNVXKUYJWESZUYKV
+      XLWESZVVNVXJUYHWESZWUHVVNUYPUYGWESZWUJVVNUYOUYFIVVNUYOUYAVYBVVMVYOXEXQVVN
+      UYFVVNVULVUDVUKVBVVQVUNVDXQVVNUVKVVNCUYEWESZUYOUYFWESZVVMWULUYACUYEUVLWRV
+      VNCPFZUYEPFVUFHGXCSZWULWUMXSUYAWUNVVMCWDXEVVNUYEVVQXQVUFVVNUTRZWUOVVNUVMR
+      ZCUYEGXTYAWTUVOVVNUYPPFUYGPFKPFZHKXCSZWUKWUJXSVVNUYPUYAVYCVVMVYPXEXGVVNUY
+      GUYAVVMVUDVUIVVQVUOWKXGWURVVNYBRWUSVVNUVPRUYPUYGKXTYAWTVVNVXJPFUYHPFUYIPF
+      HUYIXCSWUJWUHXSVVNVXJUYAVYNVVMVYQXEXGVVNUYHUYAVVMVUDVUJVVQVUPWKXGVVNUYIVV
+      NVUQVUDVURVKVVQVUSVDZXGVVNUYIWUTXDVXJUYHUYIUVQYAWTVVNVXKPFHVXKXCSVXFVXGVU
+      FWUOWUHWUIXSVVNVXKUYAVVMVUDWUEVVQWUFWKZXGVVNVXKWVAXDUYAVVMVUDVXFVVQVXHWKU
+      YAVVMVUDVXGVVQVXIWKWUPWUQVXKUYJGUVRUVSWTVWSUFVXQCWLZYCFUYAVXMMTUYRLJZNJZL
+      JZPFWVBWVEWMSWVBVWLFUFVXQCWNUYAVXMWVDVYRUYAWVDUYAMWVCVWDUYAVWFRUYATUYRUYA
+      TTQFUYAYDRXHUYAUYRVUQUYAUYRQFVKMCVGXMZXHWGXFXIWBUYAWVDVXMBAEVXOVNZVXQCUYM
+      VVLVUCVYSUYAUFWVGCWLVXNCUGJZIVXNUCJZNJZWVDWMUYAVXNBWVGCVXNOFZUYAVXNVYGUVT
+      ZRVXNUWAUBZIXCSUYAWVMVXNIXCVYEHVXNWESWVMVXNWCVYGHVXNYEVYGMWHWIUWBUWCVXNUW
+      DXJHVXNXCSZVXNIXCSZMPFIMXCSWVNWVOUSWHUWEMUWFXJUWGUWHRVWQVVNVUDUYEWVGUBZVX
+      SWCVVQVUDAUYEVXOVXSEWVGPWVGVOVYAVVSVYHWJUPZUWIUYAWVJIUYRNJZTMNJZNJIWVSNJZ
+      UYRNJZWVDUYAWVHWVRWVIWVSNUYAMCVYKUYAXKRZVYLUYAVYMRVUCXLWVIWVSWCUYAMMNJZVX
+      NUCJZWVIWVSWWCIVXNUCMXKVYMUWOYFMIUCJZMNJZWWDWVSVYKIOFZVYKVYLUSWWFWWDWCXKY
+      GVYKVYLXKVYMUWJMIMUWKUWLWWETMNUWMYFYHYHRVRUYAIUYRWVSWWGUYAYGRUYAUYRWVFXNZ
+      WVSOFUYATMYIXKVYMYJRUYAUYRWVFXOZWVSHXRSUYATMYIXKTYDUWNZVYMYLRUWPUYAWWAMTN
+      JZUYRNJZWVDWVTWWKUYRNTOFZTHXRSZVYKVYLWVTWWKWCYIWWJXKVYMTMUWQUWRYFUYAMTUYR
+      WWBWWMUYAYIRWWHWWNUYAWWJRWWIXPZUWSUWTYMVVNWVPVXSOWVQVVNWVKVUDVXSOFWVLVVQV
+      XNUYEUXAVDWSVVNVXRVXTVXMWVPLJUYAVVMVUDVXRVXTWCVVQVYIWKVVNWVPVXSVXMLWVQVQY
+      NUXBZWVBWVEYCPWMUXCUXDUXEUYAVXLUYTBVXQCUYMVVLVUCWUCVVNVXLWUGVLUYAWVBWVEUY
+      TWMWWPUYAGKNJZWWKLJZUYPUYRLJZNJZKUJNJZWWSNJZWVEUYTWWRWXAWWSNWWQWXAWWQNJZL
+      JWWRWXAWXCWWKWWQLWXCKKLJZUJGLJZNJWWKKUJGKYOYPYQYOYRYSYTUXFWXDMWXETNUXGUXH
+      UXIUXJUXKWXAWWQKUJYOYPYRYJGKYQYOYSYJZGKYQYOYTYSYLUXMYHYFUYAWWQUYPNJZWWLLJ
+      WVEWWTUYAWXGVXMWWLWVDLUYAGKUYPUYAYKKOFUYAYORZUYAUYPVYPXNZKHXRSUYAYSRUYAUY
+      PVYPXOZXPWWOVRUYAWWQUYPWWKUYRWWQOFUYAWXFRWXIWWKOFUYAMTXKYIWWJYJRWWHWXJWWI
+      UXLXBUYAUYTKUJWWSLJZNJWXBUYAUYSWXKKNUYAUJUYPUYRUJOFUYAYPRZWXIWWHUXNVQUYAK
+      UJWWSWXHWXLUYAWWSUYAUYPUYRVYPWVFVHXNUJHXRSUYAYRRUYAUYPUYRWXIWWHWXJWWIUXOX
+      PYNUXPYMXAYMUYAHPFUYTPFZVXAVXBVXCVXDUXQXSYEUYAWURUYSQFWXMYBUYAUYQUYRUYAUJ
+      QFVYCUYQQFUXRVYPUJUYPVFVDWVFVHKUYSVIVDHUYTUYNUXSVDUXTWS $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  The Birthday Problem
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    log2ublem1.1 $e |- ( ( ( 3 ^ 7 ) x. ( 5 x. 7 ) ) x. A ) <_ B $.
+    log2ublem1.2 $e |- A e. RR $.
+    log2ublem1.3 $e |- D e. NN0 $.
+    log2ublem1.4 $e |- E e. NN $.
+    log2ublem1.5 $e |- B e. NN0 $.
+    log2ublem1.6 $e |- F e. NN0 $.
+    log2ublem1.7 $e |- C = ( A + ( D / E ) ) $.
+    log2ublem1.8 $e |- ( B + F ) = G $.
+    log2ublem1.9 $e |- ( ( ( 3 ^ 7 ) x. ( 5 x. 7 ) ) x. D ) <_ ( E x. F ) $.
+    $( Lemma for ~ log2ublog2 .  The proof of ~ log2ublog2 , which is simply
+       the evaluation of ~ log2tlbndlog2 for ` N = 4 ` , takes the form of the
+       addition of five fractions and showing this is less than another
+       fraction.  We could just perform exact arithmetic on these fractions,
+       get a large rational number, and just multiply everything to verify the
+       claim, but as anyone who uses decimal numbers for this task knows, it is
+       often better to pick a common denominator ` d ` (usually a large power
+       of ` 1 0 ` ) and work with the closest approximations of the form
+       ` n / d ` for some integer ` n ` instead.  It turns out that for our
+       purposes it is sufficient to take ` d = ( 3 ^ 7 ) x. 5 x. 7 ` , which is
+       also nice because it shares many factors in common with the fractions in
+       question.  (Contributed by Mario Carneiro, 17-Apr-2015.) $)
+    log2ublem1 $p |- ( ( ( 3 ^ 7 ) x. ( 5 x. 7 ) ) x. C ) <_ G $=
+      ( c7 co cmul wcel c3 cexp c5 cdiv caddc cle wbr cn cn0 7nn0 nnexpcl mp2an
+      3nn 5nn 7nn nnmulcli nncni nn0cni nnap0i divassapi cr cc0 wa wb nn0expcli
+      clt 3nn0 5nn0 nn0mulcli nn0rei nnrei nngt0i ledivmul mp3an mpbir eqbrtrri
+      pm3.2i remulcli nndivre le2addi oveq2i recni adddii eqtr2i 3brtr3i ) UAQU
+      BRZUCQSRZSRZASRZWHDEUDRZSRZUERZBFUERZWHCSRZGUFWIBUFUGWKFUFUGWLWMUFUGHWHDS
+      RZEUDRZWKFUFWHDEWHWFWGUAUHTQUITWFUHTUMUJUAQUKULUCQUNUOUPUPZUQZDJUREKUQEKU
+      SUTWPFUFUGZWOEFSRUFUGZPWOVATFVATEVATZVBEVFUGZVCWSWTVDWOWHDWFWGUAQVGUJVEUC
+      QVHUJVIVIJVIVJFMVJZXAXBEKVKEKVLVQWOFEVMVNVOVPWIWKBFWHAWHWQVKZIVRWHWJXDDVA
+      TEUHTWJVATDJVJKDEVSULZVRBLVJXCVTULWNWHAWJUERZSRWLCXFWHSNWAWHAWJWRAIWBWJXE
+      WBWCWDOWE $.
+  $}
+
+  ${
+    $d n K $.  $d n N $.
+    log2ublem2.1 $e |- ( ( ( 3 ^ 7 ) x. ( 5 x. 7 ) ) x. sum_ n e. ( 0 ... K )
+      ( 2 / ( ( 3 x. ( ( 2 x. n ) + 1 ) ) x. ( 9 ^ n ) ) ) ) <_ ( 2 x. B ) $.
+    log2ublem2.2 $e |- B e. NN0 $.
+    log2ublem2.3 $e |- F e. NN0 $.
+    log2ublem2.4 $e |- N e. NN0 $.
+    log2ublem2.5 $e |- ( N - 1 ) = K $.
+    log2ublem2.6 $e |- ( B + F ) = G $.
+    log2ublem2.7 $e |- M e. NN0 $.
+    log2ublem2.8 $e |- ( M + N ) = 3 $.
+    log2ublem2.9 $e |- ( ( 5 x. 7 ) x. ( 9 ^ M ) ) =
+      ( ( ( 2 x. N ) + 1 ) x. F ) $.
+    $( Lemma for ~ log2ublog2 .  (Contributed by Mario Carneiro,
+       17-Apr-2015.) $)
+    log2ublem2 $p |- ( ( ( 3 ^ 7 ) x. ( 5 x. 7 ) ) x. sum_ n e. ( 0 ... N )
+      ( 2 / ( ( 3 x. ( ( 2 x. n ) + 1 ) ) x. ( 9 ^ n ) ) ) ) <_ ( 2 x. G ) $=
+      ( co c2 c3 cmul cc0 cfz cv c1 caddc c9 cexp cdiv csu cr wcel wtru cz cmin
+      0zd nn0zi peano2zm ax-mp eqeltrri a1i fzfigd wa cn0 elfznn0 adantl cn 2re
+      3nn 2nn0 nn0mulcl mpan nn0p1nn syl nnmulcl sylancr nnexpcl nnmulcld mptru
+      9nn nndivre fsumrecl nn0mulcli nnmulcli mp2an cuz cfv nn0uz eleqtri recnd
+      wceq cc oveq2 oveq1d oveq2d oveq12d fsumm1 oveq2i oveq1i eqtri 2cn nn0cni
+      sumeq1i adddii eqtr3i c7 c5 cle 7nn nnnn0i 5nn nnrei remulcli leidi nncni
+      mulcomi addcomi expadd mp3an mul12i 3eqtri c6 df-7 3cn expp1 expmul 3t2e6
+      6nn0 sq3 3eqtr3i mulassi mul32i mulcli 3eqtr4i breqtri log2ublem1 ) UAEUB
+      QZRSRBUCZTQZUDUEQZTQZUFYQUGQZTQZUHQZBUIZRATQZUAGUBQZUUCBUIZRSRGTQZUDUEQZT
+      QZUFGUGQZTQZRCTQZRDTQZHUUDUJUKULYPUUCBULUAEULUOEUMUKULGUDUNQZEUMLGUMUKUUO
+      UMUKGKUPGUQURUSUTVAULYQYPUKZVBYQVCUKZUUCUJUKZUUPUUQULYQEVDVEUUQRUJUKUUBVF
+      UKUURVGUUQYTUUAUUQSVFUKZYSVFUKZYTVFUKVHUUQYRVCUKZUUTRVCUKZUUQUVAVIRYQVJVK
+      YRVLVMSYSVNVOUFVFUKZUUQUUAVFUKVSUFYQVPVKVQRUUBVTVOZVMWAVRVIUUJUUKSUUIVHUU
+      HVCUKUUIVFUKRGVIKWBUUHVLURZWCUVCGVCUKZUUKVFUKVSKUFGVPWDZWCZRAVIIWBRCVIJWB
+      UUGUAUUOUBQZUUCBUIZRUULUHQZUEQZUUDUVKUEQUUGUVLWJULUUCUVKBUAGGUAWEWFZUKULG
+      VCUVMKWGWHUTULYQUUFUKZVBUUQUUCWKUKUVNUUQULYQGVDVEUUQUUCUVDWIVMYQGWJZUUBUU
+      LRUHUVOYTUUJUUAUUKTUVOYSUUISTUVOYRUUHUDUEYQGRTWLWMWNYQGUFUGWLWOWNWPVRUVJU
+      UDUVKUEUVIYPUUCBUUOEUAUBLWQXBWRWSRACUEQZTQUUEUUMUEQUUNRACWTAIXACJXAZXCUVP
+      DRTMWQXDSXEUGQZXFXETQZTQZRTQZUWAUULUUMTQZXGUWAUVTRUVTUVRUVSUUSXEVCUKUVRVF
+      UKVHXEXHXISXEVPWDZXFXEXJXHWCZWCXKVGXLXMRUVTTQRUULCTQZTQUWAUWBUVTUWERTSUFS
+      UGQZUVSTQZTQZSUUKUUICTQZTQZTQZUVTUWEUWGUWJSTUWGUUKUVSUFFUGQZTQZTQZUWJUWGU
+      VSUWFTQUVSUUKUWLTQZTQUWNUWFUVSUWFUVCSVCUKZUWFVFUKVSSVHXIZUFSVPWDXNZUVSUWD
+      XNZXOUWFUWOUVSTUWFUFGFUEQZUGQZUWOSUWTUFUGFGUEQSUWTOFGFNXAGKXAXPXDWQUFWKUK
+      UVFFVCUKZUXAUWOWJUFVSXNKNUFGFXQXRWSWQUVSUUKUWLUWSUUKUVGXNZUWLUVCUXBUWLVFU
+      KVSNUFFVPWDXNXSXTUWMUWIUUKTPWQWSWQUVTSUWFTQZUVSTQUWHUVRUXDUVSTUVRSYAUDUEQ
+      ZUGQZUWFSTQZUXDXEUXESUGYBWQUXFSYAUGQZSTQZUXGSWKUKZYAVCUKUXFUXIWJYCYGSYAYD
+      WDUXHUWFSTSRSTQZUGQZSRUGQZSUGQZUXHUWFUXJUVBUWPUXLUXNWJYCVIUWQSRSYEXRUXKYA
+      SUGUXKSRTQYARSWTYCXOYFWSWQUXMUFSUGYHWRYIWRWSUWFSUWRYCXOXTWRSUWFUVSYCUWRUW
+      SYJWSUWESUUKTQZUUITQZCTQUXOUWITQUWKUULUXPCTSUUIUUKYCUUIUVEXNZUXCYKWRUXOUU
+      ICSUUKYCUXCYLUXQUVQYJSUUKUWIYCUXCUUICUXQUVQYLYJXTYMWQUVTRUVRUVSUVRUWCXNUW
+      SYLWTXOUULRCUULUVHXNWTUVQXSYMYNYO $.
+  $}
+
+  $( Lemma for ~ log2ublog2 .  In decimal, this is a proof that the first four
+     terms of the series for ` log 2 ` is less than ` 5 3 0 5 6 / 7 6 5 4 5 ` .
+     (Contributed by Mario Carneiro, 17-Apr-2015.)  (Proof shortened by AV,
+     15-Sep-2021.) $)
+  log2ublem3 $p |- ( ( ( 3 ^ 7 ) x. ( 5 x. 7 ) ) x. sum_ n e. ( 0 ... 3 )
+    ( 2 / ( ( 3 x. ( ( 2 x. n ) + 1 ) ) x. ( 9 ^ n ) ) ) ) <_
+     ; ; ; ; 5 3 0 5 6 $=
+    ( c3 c7 co c5 cmul cc0 c2 c1 caddc c9 c6 cdc 2nn0 5nn0 deccl 1nn0 eqid 3nn0
+    c4 cexp cfz cv cdiv csu c8 cmin 0le0 c0 fz00m1 sumeq1i sum0 eqtri oveq2i cc
+    cle wcel cn0 3cn 7nn0 expcl mp2an 5cn 7cn mulcli mul01i 3brtr4i 0nn0 nn0cni
+    2cn addlidi addridi mullidi oveq1i 0p1e1 nn0mulcli 9nn0 2p1e3 8nn0 wceq 9cn
+    1p1e2 exp1 ax-mp 9t9e81 numexpp1 8cn 9t8e72 mulcomli 7t5e35 7p3e10 addcomli
+    decmul1 ax-1cn 3p1e4 4nn0 7t3e21 4cn 4p1e5 decaddi decmac dec0h 3t2e6 6p1e7
+    oveq12i 5t2e10 decsuc 9t3e27 decaddci decmul1c decmul2c 3eqtr4ri log2ublem2
+    decma2c 7p4e11 9t5e45 1m1e0 6nn0 5p1e6 9p5e14 decadd 5p5e10 decaddc2 sqvali
+    3t3e9 mulassi 3eqtr2i mul12i 6p3e9 mulridi eqtr4i 3eqtri 2m1e1 6p6e12 1p2e3
+    df-3 9t7e63 df-5 2t2e4 3m1e2 5p3e8 mulcomi exp0 df-7 00id 6cn 6t2e12 dec10p
+    3eqtr4i 8t2e16 breqtri ) BCUADZECFDZFDZGBUBDHBHAUCZFDIJDFDKUUOUADFDUDDZAUEF
+    DHHLMZEMZHMZUFMZFDEBMZGMZEMZLMUPUUSBMZAEUUTHGBUUQTMZLMZGMZALBMZUVDIIHHEMZEM
+    ZIMZEMZAKTMZEMZUVGGHIGAUVLUVLGIUGDZBGGGUUNGUVOUBDZUUPAUEZFDZHGFDZUPUHUVRUUN
+    GFDGUVQGUUNFUVQUIUUPAUEGUVPUIUUPAUJUKUUPAULUMUNUUNUULUUMBUOUQCURUQUULUOUQUS
+    UTBCVAVBECVCVDVEZVEVFUMHVJVFZVGVHUVKEUVJIUVIEHENOPZOPZQPZOPZVHUVORUVLUVLUWE
+    VIZVKSBUSVLIUVLFDUVLUVSIJDZUVLFDUUMKBUADZFDUVLUWFVMUWGIUVLFUWGGIJDZIUVSGIJU
+    WAVNVOUMVNCHMZKUVKEUUMBIMZUWHECOUTVPZCHUTNPVQKUWJKMHBVQNVRUFIUWJKKKHUADZVQV
+    SQKUFIMZIHVQQWBKIUADZKFDKKFDZUWNUWOKKFKUOUQZUWOKVTWAKWCWDZVNWEUMWFVQKUFUWJW
+    AWGWHWIKWAVMWMWFOBISQPCHBIUUMUVJICUWJUWKUTNSQUWJRUWKRUWLQUTBEIGCUVIEBUUMBCJ
+    DSOQVHCEBEMZVDVCWJWIZCBIGMZVDUSWKWLUTOSBCFDZIBJDZJDUXBTJDUVIUXCTUXBJBITUSWN
+    WOWLZUNHIEUXBTNQWPCBHIMVDUSWQWIZTIEWRWNWSWLZWTUMUUMGJDUWSGJDUWSUUMUWSGJUWTV
+    NUWSUWSBESOPVIVLUMXABEGIHCIIUUMISOVHQUWTIQXBZNQQBHFDZUWIJDLIJDZCUXHLUWIIJXC
+    VOXEXDUMIGIEHFDZQVHVOXFXGXAXNBEUWKEKTUUMVQSOUWTOWPHCIBBKFDZTNUTWPKBHCMWAUSX
+    HWIZVRQXOXIKETEMWAVCXPWIXJXKXLXMUWEUVMEKTVQWPPZOPQXQUVKEUVMEUVFUVLUVNUWDOUX
+    MOUVLRUVNRUVEELUVKUVMJDUUQTHLNXRPZWPPZOXSUVJIKTUVEEUVKUVMUWCQVQWPUVKRUVMRUV
+    IETUUQUVJKUWBOVQUVJRHELUVINOXSUVIRXGWPKEITMWAVCXTWLXIUXFYAXGYBYCNVRUUMUWMFD
+    UUMBUXKFDZFDZBUVNFDZHIFDZIJDZUVNFDUWMUXPUUMFUWMUWPBBFDZKFDUXPKWAYDUYAKKFYEV
+    NBBKUSUSWAYFYGUNUXQBUUMUXKFDZFDUXRUUMBUXKUVTUSBKUSWAVEYHUYBUVNBFHCUVMEUUMHT
+    MZUXKUWLNUTUXLOHTNWPPBEHTHKTIUUMUYCSONWPUWTUYCRNWPQUXHHIJDZJDLBJDKUXHLUYDBJ
+    XCVRXEYIUMIGTUXJTQVHWPXFTWRVKWTXABEUYCECBUUMUTSOUWTOSHITUXBBNQSUXEUXDWTUWTX
+    JXKUNUMBUXTUVNFBUYDUXTYPUXSHIJHVJYJVNYKVNYLXMUVFGUVELUXOXRPZVHPLBXRSPNYMUVF
+    GLBUUSBUVGUVHUYEVHXRSUVGRUVHRUVELHUURUVFLUXOXRXRUVFRUUQTEUVEUXNWPWSUVERXGNY
+    NXIBUSVKZYAQYOUUMUWOFDUUMKFDZEUVHFDZHHFDZIJDZUVHFDUWOKUUMFUWRUNUYGECKFDZFDU
+    YHECKVCVDWAYFUYKUVHEFKCUVHWAVDYQWIUNUMEUYJUVHFETIJDZUYJYRUYITIJYSVNZYKVNYLX
+    MUUSBUURHUUQEUXNOPZNPZSPOSYTUUSBUFUVDEUYOSOUVDREBUFVCUSUUAWLWTVHUYFCEFDZIFD
+    UYPUUMKGUADZFDHBFDZIJDZEFDUYPCEVDVCVEYJUUMUYPUYQIFECVCVDUUBUWQUYQIVTWAKUUCW
+    DXEUYSCEFUYSUXICUYRLIJBHLUSVJXCWIVNUUDYKVNUUIXMUUSUFUVCLHIUUTNUYOVSUUTRXRQU
+    URHGIHUVBEGUUSIUYNNVHQUUSRUXGNOVHUUQEGGHUVAGIUURGGJDZUXNOVHVHUURRUYTGGGMUUE
+    GVHXBUMNVHQHLGIHEBIUUQUWINXRVHQUUQRUWIIGIMVOUXGUMNSQUYIUWIJDUYLEUYITUWIIJYS
+    VOXEWSUMIHBHLFDQNVRLHIHMUUFVJUUGWIXGXNHEFDZGJDUXAGJDUXAVUAUXAGJEHUXAVCVJXFW
+    IVNGUUHUMXNUYJUYLEGEMUYMWSEOXBYLXNUFHILMWGVJUUJWIXKUUK $.
+
+  ${
+    $d k n $.
+    log2ublog2.log2cnv $e |- seq 0 ( + , ( k e. NN0 |-> ( 2 /
+      ( ( 3 x. ( ( 2 x. k ) + 1 ) ) x. ( 9 ^ k ) ) ) ) ) ~~> ( log ` 2 ) $.
+    $( ` log 2 ` is less than ` 2 5 3 / 3 6 5 ` .  If written in decimal, this
+       is because ` log 2 = ` 0.693147... is less than 253/365 = 0.693151... ,
+       so this is a very tight bound, at five decimal places.  The presence of
+       the hypothesis here is a temporary measure until it can be proved as
+       log2cnv .  (Contributed by Mario Carneiro, 7-Apr-2015.)  (Proof
+       shortened by AV, 16-Sep-2021.) $)
+    log2ublog2 $p |- ( log ` 2 ) < ( ; ; 2 5 3 / ; ; 3 6 5 ) $=
+      ( c2 cc0 c3 co cmul c1 caddc c4 c5 cdc c6 wcel 2nn0 3nn0 deccl 1nn0 7nn0
+      c7 vn clog cfv cfz cv c9 cexp cdiv csu cle wbr clt cmin cr w3a oveq2i cn0
+      cicc 4nn0 ax-mp cn nnmulcli 9nn nnexpcl mp2an nndivre mpbi wa 3nn sylancr
+      wtru 5nn0 0nn0 6nn0 eqid 6p1e7 decsuc 5nn 7nn nnrei declt 7t5e35 mulcomli
+      7cn 5cn c8 4cn 2cn 4t2e8 oveq1i eqtri 9cn 3brtr4i wb nngt0i nncni mulcomi
+      3eqtr3i wceq mp3an mulcli mulridi nn0rei pm3.2i 8nn0 9nn0 ax-1cn addcomli
+      3cn 5p1e6 decaddi decaddci nn0cni addridi 1p2e3 7t3e21 6cn decmac addlidi
+      mul02i dec0h 7t7e49 4p1e5 5t3e15 5p2e7 decmul1c 3t2e6 2t2e4 oveq12i 4p3e7
+      decmul2c 7t2e14 1p1e2 decadd decma2c decmul1 nn0mulcli mulassi lelttri
+      8cn sumeq1i log2tlbndlog2 eqeltrri 0re 3re 4nn 1nn numnncl elicc2i simp3i
+      4m1e3 crp 2rp relogcl 0zd cz 3z a1i fzfigd 2re elfznn0 adantl nn0p1nn syl
+      nn0mulcl nnmulcl nnmulcld fsumrecl mptru lesubadd2i log2ublem3 5lt6 8p1e9
+      6nn 9t4e36 ltleii lemul2i mul32i df-8 cc expmul eqtr3i expp1 sq3 readdcli
+      log2ublem1 1lt10 6lt7 decltc 9p4e13 5p3e8 3p1e4 6p5e11 9p7e16 3t3e9 decma
+      lemuldiv2 00id 3exp3 8p4e12 4p4e8 numexp2x 6p2e8 decrmanc 9t3e27 numexpp1
+      7p3e10 decaddc2 2p2e4 5t2e10 7p6e13 8t2e16 6p4e10 decaddci2 8t5e40 8t3e24
+      2p1e3 decrmac mullidi nn0expcli ltmul1ii 3brtr3i decnncl lt2mul2div mp4an
+      7p4e11 ) CUBUCZDEUDFZCECUAUEZGFZHIFZGFZUFUYIUGFZGFZUHFZUAUIZEJCJGFZHIFZGF
+      ZUFJUGFZGFZUHFZIFZUJUKZVUCCKLZELZEMLZKLZUHFZULUKZUYGVUIULUKUYGUYPUMFZVUBU
+      JUKZVUDVUKUNNZDVUKUJUKZVULVUKDVUBURFZNVUMVUNVULUOUYGDJHUMFZUDFZUYOUAUIZUM
+      FZVUKVUOVURUYPUYGUMVUQUYHUYOUAVUPEDUDUUKUPUUAUPJUQNZVUSVUONUSAUAJBUUBUTUU
+      CDVUBVUKUUDEUNNVUAVANVUBUNNUUEUYSUYTJUYRUUFJHCOUSUUGUUHVBZUFVANZVUTUYTVAN
+      VCUSUFJVDVEZVBZEVUAVFVEZUUIVGUUJUYGUYPVUBCUULNUYGUNNUUMCUUNUTZUYPUNNVKUYH
+      UYOUAVKDEVKUUOEUUPNVKUUQUURUUSVKUYIUYHNZVHZCUNNUYNVANUYOUNNUUTVVHUYLUYMVV
+      HEVANZUYKVANZUYLVANVIVVHUYJUQNZVVJVVHCUQNZUYIUQNZVVKOVVGVVMVKUYIEUVAUVBZC
+      UYIUVEVJUYJUVCUVDEUYKUVFVJVVHVVBVVMUYMVANVCVVNUFUYIVDVJUVGCUYNVFVJUVHUVIZ
+      VVEUVJVGVUCKELZDLZKLZTLZETUGFZKTGFZGFZUHFZUJUKZVWCVUIULUKZVUJVWBVUCGFVVSU
+      JUKZVWDUYPVVRMLZVUCEVUAHVVSUAUVKVVOPVVDVVRMVVQKVVPDKEVLPQZVMQZVLQZVNQRVUC
+      VOVVRMTVWGVWJVNVPVWGVOVQUYTVWAGFZUYTUYSGFZVWBEGFZVUAHGFZUJVWAUYSUJUKZVWKV
+      WLUJUKZVWAUYSVWAKTVRVSVBZVTZUYSVVAVTZEKLZVUGVWAUYSULEKMPVLUVNUVLWATKVWTWD
+      WEWBWCZUYSJUFGFVUGUYRUFJGUYRWFHIFUFUYQWFHIJCWFWGWHWIWCWJUVMWKUPUFJVUGWLWG
+      UVOWCWKWMUVPDUYTULUKVWOVWPWNUYTVVCWOVWAUYSUYTVWRVWSUYTVVCVTUVQUTVGVWMVVTE
+      GFZVWAGFVWKVVTVWAEVVTVVITUQNZVVTVANVISETVDVEZWPZVWAVWQWPZXIUVRVXBUYTVWAGE
+      THIFZUGFZECUGFZJUGFZVXBUYTEUYQUGFZVXHVXJUYQVXGEUGJCGFWFUYQVXGWIJCWGWHWQUV
+      SWRUPEUVTNZVVLVUTVXKVXJWSXIOUSECJUWAWTUWBVXLVXCVXHVXBWSXISETUWCVEVXIUFJUG
+      UWDWJWRWJWKVWNVWLHGFVWLVUAVWLHGUYSUYTUYSVVAWPZUYTVVCWPZWQWJVWLUYTUYSVXNVX
+      MXAXBWKWMUWFVUCUNNVVSUNNZVWBUNNZDVWBULUKZVHZVWFVWDWNUYPVUBVVOVVEUWEZVVSVV
+      RTVWJSQZXCZVXPVXQVWBVVTVWAVXDVWQVBZVTVWBVYBWOXDZVUCVVSVWBUWQWTVGVVSVUHGFZ
+      VUFVWBGFZULUKZVWEVVSTELZGFZKGFZVUFVVTGFZTGFZKGFZVYDVYEULVYHVYKULUKVYIVYLU
+      LUKEWFLZTLZELZHLZMLZHLVYPTLZTLVYHVYKULVYQVYRHTVYPMVYOHVYNEVYMTEWFPXEQSQPQ
+      RQZVNQVYPTVYSSQRSUWGVYPMTVYSVNVSUWHWAUWITEVYQHVVSHKLZUFLZHLZTLZVYGVXTSPVY
+      GVOZRWUBTWUAHVYTUFHKRVLQZXFQZRQZSQVVRTWUBTTVYPMKVVSWUCVWJSWUGSVVSVOZWUCVO
+      SVNVLVVQKWUAMTVYOHJVVRWUBKIFVWIVLWUFVNVVRVOZWUAHMWUBKWUFRVLWUBVOKHMWEXGXJ
+      XHXKSRUSVVPDHMLZETVYNEDVVQWUAJIFVWHVMHMRVNQZPVVQVOZVYTUFEWUJWUAJWUEXFUSWU
+      AVOHKMVYTRVLXJVYTVOVQPUWJXLSPVMKEHMTVYMTCVVPWUJDIFVLPRVNVVPVOZWUJWUJWUKXM
+      XNSSOVWAHCIFZIFVWAEIFZVYMWUNEVWAIXOUPEKWFVWAEPVLPVXAUWKXKZWKCHTETGFZMORVN
+      TECHLZWDXIXPWCZMHTXQXGVPXHXKXRDTGFZEIFDEIFZDELZWUTDEITWDXTWJWVAEWVBEXIXSZ
+      EPYAWKZWKXREKHJVWAMPVLVNVXAUWLRMKHHLZXQWEUWMXHXLXRJUFMKTTGFTUSXFSYBYCVNUW
+      NXLXRVVRTWUCHECVVSPVWJSWUHROVVQKDCEWUBTHVVRCVWIVLVMOWUICOYAZPSRVVPDDHEWUA
+      HDVVQDHIFZVWHVMVMRWULWVGHDHLZHXGXSZHRYAZWKZPRVMKEDDEVYTUFVVPDDIFZVLPVMVMW
+      UMWVLDDDLUWRDVMYAWKPKEGFZDIFVYTDIFVYTWVMVYTDIYDWJVYTVYTWUEXMXNWKEEGFZDIFU
+      FDIFUFWVNUFDIUWOWJUFWLXNWKUWPDEGFZHIFWVGWVHWVODHIEXIXTWJWVKWKXRHKTWVMCRVL
+      OYDYEXKXRXPYFYKKKLZELZELZHLZHVYRTTVYJSWVRHWVQEWVPEKKVLVLQZPQZPQZRQRWURWFL
+      ZTWVSHVUFHTLZTLZVVTVUEECKOVLQZPQZWURWFCHORQZXEQSEWWCTLMTPVNVPTCLZUFWWCTEC
+      EMUGFPTCSOQXFEWWIUFLCTLZEMPPECMXIWHYGWCZUWSCTWWIUFWWJHWFLZWWJCTOSQOSWWJVO
+      ZXFHWFRXEQCTHWFCTCCWWJWWLOSRXEWWMWWLVOOOOCCGFZWUNIFJEIFTWWNJWUNEIYHXOYIYJ
+      WKHJCCTCGFWFRUSXEYLYMOWFJHCLYTWGUWTXHXLXRCTWWLUFTJWWJSOSWWMXFUSHJWFCTGFZJ
+      RUSUSTCHJLWDWHYLWCZUXAXKYBYFYKUXBSOTCEWURWFWWICSOOWWIVOPXPCEGFZCIFMCIFWFW
+      WQMCIWWKWJUXCWKUXDUXEYFUXFRWWDTHTRSQZSQWURWFWWDTVUFWVRHCDLZELZWWCWWEWWHXE
+      WWRSWWCVOWWEVOWWGRWWSECDOVMQZPQCHCCLZDVUFWVQEVUEWURWWDWWTIFORCCOOQVMWURVO
+      HTWWSEWXBWWDWWTRSWXAPWWDVOWWTVOCHCHWWSIFORYMDHCDCHHWWSVMROVMWVJWWSVOCWHXS
+      ZHXGXNYNVQUXGUXHWWGPWWFVUEEJTCWVPEHVUFWXBVUEIFWWFPUSSVUFVOZCCCKJTWXBVUEOO
+      OVLWXBVOVUEVOZUXIKCTWEWHYEXHYNOPRCKDKCKKHVUEJHIFZOVLVMVLWXEWXFKDKLYCKVLYA
+      WKOVLRWWNWVGIFWXFKWWNJWVGHIYHWVIYIYCWKHDKKCGFKRVMVLUXJKWEXSXKXRECGFZTIFMT
+      IFHELZWXGMTIYGWJTMWXHWDXQUXKXHWKXRVUFHGFZDIFVUFDIFVUFWXIVUFDIVUFVUFWWGXMZ
+      XBWJVUFWXJXNWKYOVUEEDTWFWWTHEVUFTWWFPVMSWXDTSYAXERPCKDEWFWWSEJVUEWVAOVLVM
+      PWXEWVDXEPUSCWFGFZDJIFZIFWXKJIFWWSWXLJWXKIJWGXSUPHMCWXKJRVNUSWFCWUJYTWHUX
+      LWCYMUXMUXNWKJDEKWFGFEUSVMPWFKJDLYTWEUXOWCWVCXKXRCJHEEWFGFTOUSSWFECJLYTXI
+      UXPWCUXQRTJWVEWDWGUYFXHXLXRYOVUEEWWEHTCVUFSWWFPWXDROCKTWWDTEVUECOVLOWXESS
+      PHJTWWOERUSPWWPYJXKEKTVWACPVLOVXAYEXKZUXRWUSYFYKSWVRHVYPTTWVSSWWBRWVSVOSW
+      VQEVYOHTCWVRSWWAPWVRVOROWVPEDCTVYNECWVQCWVTPVMOWVQVOWVFSPOKKDCTVYMTEWVPDC
+      IFZVLVLVMOWVPVOWXNCDCLWXCWVFWKSSPVWAWVAIFWUOVYMWVAEVWAIWVCUPWUPWKWXMXRCHE
+      WUQCOROWUSXOXKXRWUSYFTWDUXSZYPWXOYPWMVYHVYKKVYHVVSVYGVXTTESPQZYQXCVYKVYJT
+      VUFVVTWWGETPSUXTYQSYQXCKVRVTKVRWOUYAVGVYIVVSVYGKGFZGFVYDVVSVYGKVVSVXTXMVY
+      GWXPXMWEYRWXQVUHVVSGTEVUGKKHVYGVLSPWUDVLREKMTKGFZPVLXJWBVQKEVYTWEXIYDWCYF
+      UPWKVYLVYJWXRGFZVYEVYJTKVUFVVTWXJVXEXAWDWEYRWXSVYJVWAGFVYEWXRVWAVYJGTKWDW
+      EWQUPVUFVVTVWAWXJVXEVXFYRWKWKUYBVXOVUHUNNZDVUHULUKZVHVUFUNNZVXRVYFVWEWNVY
+      AWXTWYAVUHVUGKEMPVNQVRUYCZVTVUHWYCWOXDVUFWWGXCZVYCVVSVUHVUFVWBUYDUYEVGVUC
+      VWCVUIVXSVXOVWBVANVWCUNNVYAVYBVVSVWBVFVEWYBVUHVANVUIUNNWYDWYCVUFVUHVFVEZY
+      SVEUYGVUCVUIVVFVXSWYEYSVE $.
+  $}
+
+  ${
+    $d f k n K $.  $d f k n N $.
+    birthday.s $e |- S = { f | f : ( 1 ... K ) --> ( 1 ... N ) } $.
+    birthday.t $e |- T = { f | f : ( 1 ... K ) -1-1-> ( 1 ... N ) } $.
+    $( Lemma for ~ birthdaylog2 .  (Contributed by Mario Carneiro,
+       17-Apr-2015.) $)
+    birthdaylem1g $p |- ( ( K e. NN0 /\ N e. NN )
+        -> ( T C_ S /\ S e. Fin /\ S =/= (/) ) ) $=
+      ( wcel wa cfn c0 wne c1 cfz co cab wceq cz adantl syl2anc cn0 wss wf1 f1f
+      cn cv ss2abi 3sstr4i a1i cmap 1zzd nnz fzfigd nn0z adantr mapvalg eqtr4id
+      wf mapfi eqeltrd elfz1end ne0i sylbi eqeq1d wb map0g simpl sylbid necon3d
+      biimtrdi mpd 3jca ) DUAHZEUEHZIZBAUBZAJHAKLZVPVOMDNOZMENOZCUFZUCZCPVRVSVT
+      URZCPZBAWAWBCVRVSVTUDUGGFUHUIVOAVSVRUJOZJVOAWCWDFVOVSJHZVRJHZWDWCQVOMEVOU
+      KZVNERHVMEULSUMZVOMDWGVMDRHVNDUNUOUMZVSVRJJCUPTUQZVOWEWFWDJHWHWIVSVRUSTUT
+      VOVSKLZVQVNWKVMVNEVSHWKEVAVSEVBVCSVOAKVSKVOAKQWDKQZVSKQZVOAWDKWJVDVOWLWMV
+      RKLZIZWMVOWEWFWLWOVEWHWIVSVRJJVFTWMWNVGVJVHVIVKVL $.
+
+    $( For general ` N ` and ` K ` , count the fraction of injective functions
+       from ` 1 ... K ` to ` 1 ... N ` .  (Contributed by Mario Carneiro,
+       7-May-2015.) $)
+    birthdaylem2 $p |- ( ( N e. NN /\ K e. ( 0 ... N ) ) ->
+      ( ( # ` T ) / ( # ` S ) ) =
+      ( exp ` sum_ k e. ( 0 ... ( K - 1 ) ) ( log ` ( 1 - ( k / N ) ) ) ) ) $=
+      ( vn wcel cc0 cfz co cfv cdiv cmin c1 ce wceq syl cn chash caddc clog csu
+      wa cv cmul cfa cbc wf1 cab fveq2i cfn cz elfzelz adantl fzfigd nnz adantr
+      1zzd hashf1 syl2anc eqtrid cn0 elfznn0 hashfz1 fveq2d nnnn0 oveq12d nncnd
+      faccld fznn0sub nnap0d divclapd divcanap2d bcval2 divdivap1d eqtr4d nn0zd
+      oveq2d cc elfznn nnrp relogcld recnd fsumcl efsub clt wbr c0 nn0red ltp1d
+      cin fzdisj cun cle fznn0sub2 elfzle2 cuz wb simpr eleqtrdi ad2antrr elfz5
+      nnuz mpbird fzsplit eqtrdi uneq1d uncom eqtri oveq1d 1e0p1 eqtr4di eqtr2d
+      fz10 un0 wo elnn0 sylib mpjaodan fsumsplit peano2zd nn0p1nn elfzuz eluznn
+      syl2an nnrpd reeflogd logfac eqtr3d 3eqtr4d 3eqtrd cexp crp nn0cnd ax-1cn
+      eqtrd cen pncan2d cmap wf mapvalg eqtr4id hashmap reexplog mulcld syl2anr
+      relogdiv syldan sumeq2dv rpdivcld fvoveq1 fsumrev nncn 1cnd subsubd subcl
+      subidd sylancl nncand cap nnap0 divsubdirapd sumeq12rdv fsumsub fsumconst
+      dividapd syl3anc addcom sylancr pncan3d breqtrd hashen 3eqtr3rd 3eqtr2d
+      fzen ) FUAJZEKFLMZJZUFZBUBNZAUBNZOMFEPMZQUCMZFLMZIUGZUDNZIUEZRNZEFUDNZUHM
+      ZRNZOMZUWJUWMPMZRNZKEQPMZLMZQDUGZFOMZPMZUDNZDUEZRNUWBUWCUWKUWDUWNOUWBUWCQ
+      ELMZUBNZUINZQFLMZUBNZUXFUJMZUHMZEUINZFEUJMZUHMZUWKUWBUWCUXEUXHCUGZUKCULZU
+      BNZUXKBUXPUBHUMUWBUXEUNJZUXHUNJZUXQUXKSUWBQEUWBVAZUWAEUOJZUVSEKFUPUQZURZU
+      WBQFUXTUVSFUOJZUWAFUSZUTZURZUXEUXHCVBVCVDUWBUXGUXLUXJUXMUHUWBUXFEUIUWBEVE
+      JZUXFESUWAUYHUVSEFVFUQZEVGTZVHUWBUXIFUXFEUJUVSUXIFSZUWAUVSFVEJZUYKFVIZFVG
+      TUTZUYJVJVJUWBUXLFUINZUWEUINZOMZUXLOMZUHMUYQUXNUWKUWBUYQUXLUWBUYOUYPUWBUY
+      OUWBFUVSUYLUWAUYMUTZVLZVKZUWBUYPUWBUWEUWAUWEVEJZUVSEKFVMUQZVLZVKZUWBUYPVU
+      DVNZVOUWBUXLUWBEUYIVLZVKZUWBUXLVUGVNZVPUWBUXMUYRUXLUHUWBUXMUYOUYPUXLUHMOM
+      ZUYRUWAUXMVUJSUVSEFVQUQUWBUYOUYPUXLVUAVUEVUHVUFVUIVRVSWAUWBUXHUWIIUEZQUWE
+      LMZUWIIUEZPMZRNZVUKRNZVUMRNZOMZUWKUYQUWBVUKWBJVUMWBJVUOVURSUWBUXHUWIIUWBQ
+      FUXTUWBFUYSVTZURZUWBUWHUXHJZUFUWHUAJZUWIWBJZVVAVVBUWBUWHFWCUQVVBUWIVVBUWH
+      UWHWDZWEWFZTZWGUWBVULUWIIUWBQUWEUXTUWBUWEVUCVTZURUWBUWHVULJZUFVVBVVCVVHVV
+      BUWBUWHUWEWCUQVVETWGZVUKVUMWHVCUWBUWJVUNRUWBVUNVUMUWJUCMZVUMPMUWJUWBVUKVV
+      JVUMPUWBVULUWGUWIUXHIUWBUWEUWFWIWJVULUWGWNWKSUWBUWEUWBUWEVUCWLWMQUWEUWFFW
+      OTUWBUWEUAJZUXHVULUWGWPZSZUWEKSZUWBVVKUFZUWEUXHJZVVMVVOVVPUWEFWQWJZUWBVVQ
+      VVKUWBUWEUVTJZVVQUWAVVRUVSEFWRUQUWEKFWSTUTVVOUWEQWTNZJUYDVVPVVQXAVVOUWEUA
+      VVSUWBVVKXBXFXCUVSUYDUWAVVKUYEXDUWEQFXEVCXGUWEQFXHTUWBVVNUFZVVLWKUWGWPZUX
+      HVVTVULWKUWGVVTVULQKLMWKVVTUWEKQLUWBVVNXBZWAXQXIXJVVTVWAUWGUXHVWAUWGWKWPU
+      WGWKUWGXKUWGXRXLVVTUWFQFLVVTUWFKQUCMQVVTUWEKQUCVWBXMXNXOXMVDXPUWBVUBVVKVV
+      NXSVUCUWEXTYAYBVUTVVFYCXMUWBVUMUWJVVIUWBUWGUWIIUWBUWFFUWBUWEVVGYDZVUSURZU
+      WBUWHUWGJZUFZVVBVVCUWBUWFUAJZUWHUWFWTNJVVBVWEUWBVUBVWGVUCUWEYETUWHUWFFYFU
+      WHUWFYGYHZVVETZWGZUUAXPVHUWBUYOVUPUYPVUQOUWBUYOUDNZRNUYOVUPUWBUYOUWBUYOUY
+      TYIYJUWBVWKVUKRUWBUYLVWKVUKSUYSIFYKTVHYLUWBUYPUDNZRNUYPVUQUWBUYPUWBUYPVUD
+      YIYJUWBVWLVUMRUWBVUBVWLVUMSVUCIUWEYKTVHYLVJYMYMYNUWBUWDUXIUXFYOMZFEYOMZUW
+      NUWBUWDUXHUXEUUBMZUBNZVWMUWBAVWOUBUWBAUXEUXHUXOUUCCULZVWOGUWBUXSUXRVWOVWQ
+      SUYGUYCUXHUXEUNUNCUUDVCUUEVHUWBUXSUXRVWPVWMSUYGUYCUXHUXEUUFVCYSUWBUXIFUXF
+      EYOUYNUYJVJUWBFYPJZUYAVWNUWNSUVSVWRUWAFWDUTZUYBFEUUGVCYNVJUWBUWJWBJUWMWBJ
+      UWQUWOSVWJUWBEUWLUWBEUYIYQZUWBUWLUWBFVWSWEWFZUUHUWJUWMWHVCUWBUWPUXDRUWBUW
+      GUWHFOMZUDNZIUEZUWGUWIUWLPMZIUEZUXDUWPUWBUWGVXCVXEIUWBVWEVVBVXCVXESZVWHVV
+      BUWHYPJVWRVXGUWBVVDVWSUWHFUUJUUIUUKUULUWBVXDFFPMZFUWFPMZLMZFUWTPMZFOMZUDN
+      ZDUEUXDUWBVXCVXMIDFUWFFUYFVWCUYFVWFVXCVWFVXBVWFUWHFVWFUWHVWHYIUWBVWRVWEVW
+      SUTUUMWEWFUWHVXKFUDOUUNUUOUWBVXJUWSVXMUXCDUWBVXHKVXIUWRLUWBFUVSFWBJZUWAFU
+      UPUTZUUTUWBFFUWRPMZPMVXIUWRUWBVXPUWFFPUWBFEQVXOVWTUWBUUQUURWAUWBFUWRVXOUW
+      BEWBJQWBJZUWRWBJVWTYREQUUSUVAUVBYLVJUWBUWTUWSJZUFZVXLUXBUDVXSVXLFFOMZUXAP
+      MUXBVXSFUWTFUWBVXNVXRVXOUTZVXSUWTVXRUWTVEJUWBUWTUWRVFUQYQVYAUVSFKUVCWJUWA
+      VXRFUVDXDZUVEVXSVXTQUXAPVXSFVYAVYBUVIXMYSVHUVFYSUWBVXFUWJUWGUWLIUEZPMUWPU
+      WBUWGUWIUWLIVWDVWIUWBUWLWBJZVWEVXAUTUVGUWBVYCUWMUWJPUWBVYCUWGUBNZUWLUHMZU
+      WMUWBUWGUNJZVYDVYCVYFSVWDVXAUWGUWLIUVHVCUWBVYEEUWLUHUWBUXFVYEEUWBUXFVYESZ
+      UXEUWGYTWJZUWBUXEQUWEUCMZEUWEUCMZLMZUWGYTUWBQUOJUYAUWEUOJUXEVYLYTWJUXTUYB
+      VVGUWEQEUVRUVJUWBVYJUWFVYKFLUWBVXQUWEWBJVYJUWFSYRUWBUWEVUCYQQUWEUVKUVLUWB
+      EFVWTVXOUVMVJUVNUWBUXRVYGVYHVYIXAUYCVWDUXEUWGUVOVCXGUYJYLXMYSWAYSUVPVHUVQ
+      $.
+
+    $d K w $.  $d N f w $.
+    $( For general ` N ` and ` K ` , upper-bound the fraction of injective
+       functions from ` 1 ... K ` to ` 1 ... N ` .  (Contributed by Mario
+       Carneiro, 17-Apr-2015.) $)
+    birthdaylem3 $p |- ( ( K e. NN0 /\ N e. NN ) -> ( ( # ` T ) / ( # ` S ) )
+        <_
+      ( exp ` -u ( ( ( ( K ^ 2 ) - K ) / 2 ) / N ) ) ) $=
+      ( vk wcel cle wbr cfv cdiv co clt cc0 c1 wb cr adantr vw cn wa chash cexp
+      cn0 c2 cmin cneg ce cfz cv clog csu wceq simplr simpr cuz cz simpll nn0uz
+      eleqtrdi nnz ad2antlr elfz5 syl2anc mpbird birthdaylem2 0zd nn0z peano2zm
+      3syl fzfigd crp elfznn0 adantl nn0red peano2rem syl nnred elfzle2 ltletrd
+      cmul ltm1d lelttrd nncnd breqtrrd 1red nngt0d ltdivmul syl112anc nndivred
+      mulridd 1re difrp sylancl mpbid relogcld renegcld elfzle1 divge0 syl22anc
+      eflegeo reefcld efgt0 rpregt0d syl21anc reeflogd recnd efneg 3brtr4d efle
+      lerec2 cc fsumle fsumneg nnap0d fsumdivapc arisum2 oveq1d eqtr3d fsumrecl
+      negeqd eqtrd breqtrd nn0re resqcld resubcld rehalfcld nndivre sylancom c0
+      eqbrtrd wf1 cab wex wn notnotd cfn hashfz1 cdom abn0m 1zzd brdomg bitr4id
+      nnnn0 breqan12d nnre lenlt syl2an 3bitr3d bitrd mtbird notm0 sylib eqtrid
+      fihashdom fveq2d hash0 eqtrdi wne wss birthdaylem1g simp3d simp2d div0apd
+      hashnncl rpefcld rpge0d wo zlelttric mpjaodan ) DUFIZEUBIZUCZDEJKZBUDLZAU
+      DLZMNZDUGUENZDUHNZUGMNZEMNZUIZUJLZJKEDOKZUVOUVPUCZUVSPDQUHNZUKNZQHULZEMNZ
+      UHNZUMLZHUNZUJLZUWEJUWGUVNDPEUKNIZUVSUWOUOUVMUVNUVPUPZUWGUWPUVPUVOUVPUQZU
+      WGDPURLZIEUSIZUWPUVPRUWGDUFUWSUVMUVNUVPUTZVAVBUVNUWTUVMUVPEVCZVDDPEVEVFVG
+      ABCHDEFGVHVFUWGUWNUWDJKZUWOUWEJKZUWGUWNUWIUWKUIZHUNZUWDJUWGUWIUWMUXEHUWGP
+      UWHUWGVIUWGUVMDUSIZUWHUSIUXADVJZDVKVLVMZUWGUWJUWIIZUCZUWLUXKUWKQOKZUWLVNI
+      ZUXKUXLUWJEQWCNZOKZUXKUWJEUXNOUXKUWJUWHEUXKUWJUXJUWJUFIUWGUWJUWHVOVPVQZUW
+      GUWHSIZUXJUWGDSIZUXQUWGDUXAVQZDVRVSZTUXKEUWGUVNUXJUWQTZVTZUXJUWJUWHJKUWGU
+      WJPUWHWAVPUWGUWHEOKUXJUWGUWHDEUXTUXSUWGEUWQVTUWGDUXSWDUWRWBTWEUXKEUXKEUYA
+      WFWMWGUXKUWJSIZQSIZESIZPEOKZUXLUXORUXPUXKWHUYBUXKEUYAWIZUWJQEWJWKVGZUXKUW
+      KSIZUYDUXLUXMRUXKUWJEUXPUYAWLZWNUWKQWOWPWQZWRZUXKUWKUYJWSZUXKUWMUXEJKZUWM
+      UJLZUXEUJLZJKZUXKUWLQUWKUJLZMNZUYOUYPJUXKUYRQUWLMNJKZUWLUYSJKZUXKUWKUYJUX
+      KUYCPUWJJKZUYEUYFPUWKJKUXPUXJVUBUWGUWJPUWHWTVPUYBUYGUWJEXAXBUYHXCUXKUYRSI
+      PUYROKZUWLSIPUWLOKUCUYTVUARUXKUWKUYJXDUXKUYIVUCUYJUWKXEVSUXKUWLUYKXFUYRUW
+      LXMXGWQUXKUWLUYKXHUXKUWKXNIUYPUYSUOUXKUWKUYJXIZUWKXJVSXKUXKUWMSIUXESIUYNU
+      YQRUYLUYMUWMUXEXLVFVGXOUWGUXFUWIUWKHUNZUIUWDUWGUWIUWKHUXIVUDXPUWGVUEUWCUW
+      GUWIUWJHUNZEMNVUEUWCUWGUWIUWJEHUXIUWGEUWQWFUXKUWJUXPXIUWGEUWQXQXRUWGVUFUW
+      BEMUWGUVMVUFUWBUOUXAHDXSVSXTYAYCYDYEUWGUWNSIUWDSIZUXCUXDRUWGUWIUWMHUXIUYL
+      YBUVOVUGUVPUVOUWCUVMUVNUWBSIUWCSIUVOUWAUVOUVTDUVODUVMUXRUVNDYFZTZYGVUIYHY
+      IUWBEYJYKWSZTUWNUWDXLVFWQYMUVOUWFUCZUVSPUWEJVUKUVSPUVRMNPVUKUVQPUVRMVUKUV
+      QYLUDLPVUKBYLUDVUKBQDUKNZQEUKNZCULYNZCYOZYLGVUKUAULVUOIUAYPZYQVUOYLUOVUKV
+      UPUWFYQZVUKUWFUVOUWFUQYRUVOVUPVUQRUWFUVOVUPVULVUMUUAKZVUQUVOVUPVUNCYPZVUR
+      VUNCUAUUBUVOVUMYSIZVURVUSRUVOQEUVOUUCZUVNUWTUVMUXBVPZVMZVULVUMYSCUUDVSUUE
+      UVOVULUDLZVUMUDLZJKZUVPVURVUQUVMUVNVVDDVVEEJDYTUVNEUFIVVEEUOEUUFEYTVSUUGU
+      VOVULYSIVUTVVFVURRUVOQDVVAUVMUXGUVNUXHTZVMVVCVULVUMUUQVFUVMUXRUYEUVPVUQRU
+      VNVUHEUUHDEUUIUUJUUKUULTUUMUAVUOUUNUUOUUPUURUUSUUTXTVUKUVRVUKUVRVUKUVRUBI
+      ZAYLUVAZUVOVVIUWFUVOBAUVBZAYSIZVVIABCDEFGUVCZUVDTUVOVVHVVIRZUWFUVOVVKVVMU
+      VOVVJVVKVVIVVLUVEAUVGVSTVGZWFVUKUVRVVNXQUVFYDVUKUWEVUKUWDUVOVUGUWFVUJTUVH
+      UVIYMUVOUXGUWTUVPUWFUVJVVGVVBDEUVKVFUVL $.
+
+    ${
+      birthday.k $e |- K = ; 2 3 $.
+      birthday.n $e |- N = ; ; 3 6 5 $.
+      birthdaylog2.log2cnv $e |- seq 0 ( + , ( k e. NN0 |-> ( 2 /
+        ( ( 3 x. ( ( 2 x. k ) + 1 ) ) x. ( 9 ^ k ) ) ) ) ) ~~> ( log ` 2 ) $.
+      $( The Birthday Problem.  There is a more than even chance that out of 23
+         people in a room, at least two of them have the same birthday.
+         Mathematically, this is asserting that for ` K = 2 3 ` and
+         ` N = 3 6 5 ` , fewer than half of the set of all functions from
+         ` 1 ... K ` to ` 1 ... N ` are injective.
+
+         The presence of the hypothesis giving a series which converges to
+         ` ( log `` 2 ) ` is a temporary measure until it can be proved as
+         log2cnv .
+
+         Although this is Metamath 100 proof #93, we cannot consider it proved
+         until we prove the missing log2cnv piece (or prove the theorem another
+         way which does not require it).  (Contributed by Mario Carneiro,
+         17-Apr-2015.) $)
+      birthdaylog2 $p |- ( ( # ` T ) / ( # ` S ) ) < ( 1 / 2 ) $=
+        ( cdiv co c2 c1 wcel c3 2nn0 mp2an cr cfv cexp cmin cneg ce cle wbr clt
+        chash cn0 cn cdc 3nn0 deccl eqeltri c6 c5 6nn0 5nn decnncl birthdaylem3
+        clog log2ublog2 cmul nn0cni sqvali mulridi eqcomi oveq12i ax-1cn subdii
+        eqtr4i oveq1i subcli 2cn 2ap0 divassapi 1nn0 caddc eqid decsuc mvrraddi
+        2p1e3 wceq 11multnc divmulapi mpbir eqtri 3p2e5 decaddi decmul2c 3eqtri
+        breqtrri crp 2rp relogcl ax-mp 5nn0 nn0rei nndivre ltnegi mpbi renegcli
+        wb cc recni efneg reeflog oveq2i breqtri cfn cfz cv wf1 cab nn0zi fzfig
+        eflt cz nnzi f1setfi hashcl c0 wne birthdaylem1g simp3i simp2i hashnncl
+        wss w3a reefcl halfre lelttri ) BUIUAZAUIUAZLMZENUBMZEUCMZNLMZFLMZUDZUE
+        UAZUFUGZUUBONLMZUHUGYPUUDUHUGEUJPZFUKPZUUCENQULZUJINQRUMUNUOZFQUPULZUQU
+        LZUKJUUIUQQUPUMURUNUSUTUOZABCEFGHVASUUBNVBUAZUDZUEUAZUUDUHUUAUUMUHUGZUU
+        BUUNUHUGZUULYTUHUGUUOUULNUQULZQULZUUJLMYTUHDKVCYSUURFUUJLYSEEOUCMZVDMZN
+        LMEUUSNLMZVDMUURYRUUTNLYREEVDMZEOVDMZUCMUUTYQUVBEUVCUCEEUUHVEZVFUVCEEUV
+        DVGZVHVIEEOUVDUVDVJVKVLVMEUUSNUVDEOUVDVJVNVOVPVQOOUUQQENUVAUUHVRVRUVANN
+        ULZNLMZOOULZUUSUVFNLEUVFOUVFNNRRUNVEZVJEUUGUVFOVSMINNQUVFRRWCUVFVTWAVLW
+        BVMUVGUVHWDNUVHVDMUVFWDNRWEUVFNUVHUVIVOUVHOOVRVRUNVEVPWFWGWHUMRNQUQUVCN
+        RUMRUVCEUUGUVEIWHZWIWJUVJWKWLZJVIWMUULYTNWNPZUULTPWONWPWQZYSTPUUFYTTPYS
+        YSUURUJUVKUUQQNUQRWRUNUMUNUOWSUUKYSFWTSZXAXBUUATPZUUMTPUUOUUPXDYTUVNXCZ
+        UULUVMXCUUAUUMXRSXBUUNOUULUEUAZLMZUUDUULXEPUUNUVRWDUULUVMXFUULXGWQUVQNO
+        LUVLUVQNWDWONXHWQXIWHXJYPUUBUUDYNTPYOUKPZYPTPYNBXKPYNUJPBOEXLMZOFXLMZCX
+        MXNCXOZXKHUVTXKPZUWAXKPZUWBXKPOXSPZEXSPUWCOVRXPZEUUHXPOEXQSUWEFXSPUWDUW
+        FFUUKXTOFXQSUVTUWACYASUOBYBWQWSUVSAYCYDZBAYIZAXKPZUWGUUEUUFUWHUWIUWGYJU
+        UHUUKABCEFGHYESZYFUWIUVSUWGXDUWHUWIUWGUWJYGAYHWQWGYNYOWTSUVOUUBTPUVPUUA
+        YKWQYLYMS $.
+    $}
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Pell equations
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -209495,6 +210902,15 @@ htmldef "Z/nZ" as "&#8484;/<i>n</i>&#8484;";
   althtmldef "Z/nZ" as "&#8484;/<i>n</i>&#8484;";
     /* 2-Jan-2016 reverted sans-serif */
   latexdef "Z/nZ" as "\mathrm{Z/nZ}";
+htmldef "AssAlg" as "AssAlg";
+  althtmldef "AssAlg" as "AssAlg";
+  latexdef "AssAlg" as "\mathrm{AssAlg}";
+htmldef "AlgSpan" as "AlgSpan";
+  althtmldef "AlgSpan" as "AlgSpan";
+  latexdef "AlgSpan" as "\mathrm{AlgSpan}";
+htmldef "algSc" as "algSc";
+  althtmldef "algSc" as "algSc";
+  latexdef "algSc" as "\mathrm{algSc}";
 htmldef "mPwSer" as " mPwSer ";
   althtmldef "mPwSer" as " mPwSer ";
   latexdef "mPwSer" as "\mathrm{mPwSer}";
@@ -209701,10 +211117,11 @@ htmldef "Ind" as "Ind ";
 /* End of BJ's mathbox */
 
 /* Mathbox of David A. Wheeler */
-htmldef "A!" as
-  "<IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 ALT=' A.' TITLE='A.'>!";
-  althtmldef "A!" as '&forall;!'; /* &#8704; */
-  latexdef "A!" as "\forall !";
+htmldef "AE" as
+  "<IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 ALT=' A.' TITLE='A.'>" +
+  "<IMG SRC='exists.gif' WIDTH=9 HEIGHT=19 ALT='E.' TITLE='E.'>";
+  althtmldef "AE" as '&forall;&exist;'; /* &#8704;&#8707; */
+  latexdef "AE" as "\forall\exists";
 /* End of David A. Wheeler's mathbox */
 
 /* End of typesetting definition section */
@@ -215465,8 +216882,8 @@ $(
   Allsome quantifier
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-  These are definitions and proofs involving an experimental
-  "allsome" quantifier (aka "all some").
+  These are definitions and proofs involving the "allsome"
+  quantifier (aka "all some").
 
   In informal language, statements like
   "All Martians are green" imply that there is at least one Martian.
@@ -215486,7 +216903,7 @@ $(
   The term "allsome" was chosen because it's short, easy to say, and
   clearly hints at the two concepts it combines.
 
-  I do not expect this to be used much in metamath, because in metamath
+  I do not expect this to be used much in Metamath, because in Metamath
   there's a general policy of avoiding the use of new definitions
   unless there are very strong reasons to do so.  Instead, my goal is to
   rigorously define this quantifier and demonstrate a few
@@ -215494,92 +216911,454 @@ $(
 
   The syntax allows two forms that look like they would be problematic,
   but they are fine.  When applied to a top-level implication we allow
-  ` A! x ( ph -> ps ) ` , and when restricted (applied to a class) we allow
-  ` A! x e. A ph ` .
+  ` AE x ( ph -> ps ) ` , and when restricted (applied to a class) we allow
+  ` AE x e. A ( ph -> ps ) ` .
   The first symbol after the setvar variable must
   always be ` e. ` if it is the form applied to a class, and since
   ` e. ` cannot begin a wff, it is unambiguous.
   The ` -> ` looks like it would be a problem because ` ph ` or ` ps `
   might include implications, but any implication arrow
   ` -> ` within any wff must be surrounded by parentheses, so only the
-  implication arrow of ` A! ` can follow the wff.
+  implication arrow of ` AE ` can follow the wff.
   The implication syntax would work fine without the parentheses, but
   I added the parentheses because it makes things clearer inside
   larger complex expressions, and it's also more consistent with
   the rest of the syntax.
 
+  Naming: "als" is allsome.  The form restricted to a class is prefixed with
+  "r", following the way set.mm names the restricted quantifiers it is built
+  from: ` A. ` gives ~ df-ral and ` E. ` gives ~ df-rex , so ~ df-als (the
+  general form) gives ~ df-rals (the restricted form).
+
+  Earlier versions of this material differed, so old references may not match.
+  They wrote the quantifier as an "inverted A" followed by an exclamation
+  point, and they named the general form df-alsi and the restricted form
+  df-alsc.  The symbol is now an "inverted A" followed by a "backwards E",
+  which more readers can correctly guess without being taught it.  The
+  restricted definition also changed, and the older one was a mistake; see
+  ~ df-rals for what was wrong with it.
+
+  This database is intuitionistic, so some of this material differs from its
+  counterpart in set.mm.  In particular, a class ` A ` being inhabited
+  ( ` E. x x e. A ` ) is a stronger claim here than its being nonempty
+  ( ` A =/= (/) ` ); see ~ n0r .  The allsome quantifier asserts that a witness
+  exists, which is the stronger notion, so where set.mm states a result using
+  ` A =/= (/) ` the corresponding result here uses inhabitedness instead.  Such
+  results are named with a trailing "m", following the convention of ~ r19.2m
+  and ~ abn0m .  Results of set.mm that rely on recovering a witness from
+  ` A =/= (/) ` are omitted, since that step is not available here.
+
   For more, see "The Allsome Quantifier" by David A. Wheeler at
   ~ https://dwheeler.com/essays/allsome.html
   I hope that others will eventually agree that allsome is awesome.
+
 $)
 
-  $c A! $. $( "inverted A" exclamation point (read: "all some"
+  $c AE $. $( "inverted A" followed by "backwards E" (read: "all some"
     or more briefly "allsome") $)
 
   $( Extend wff definition to include "all some" applied to a top-level
      implication, which means ` ps ` is true whenever ` ph ` is true, and there
-     is at least least one ` x ` where ` ph ` is true.  (Contributed by David
-     A. Wheeler, 20-Oct-2018.) $)
-  walsi $a wff A! x ( ph -> ps ) $.
+     is at least one ` x ` where ` ph ` is true.  (Contributed by David A.
+     Wheeler, 20-Oct-2018.)  (Revised by David A. Wheeler, 12-Jul-2026.) $)
+  wals $a wff AE x ( ph -> ps ) $.
 
   $( Extend wff definition to include "all some" applied to a class, which
-     means ` ph ` is true for all ` x ` in ` A ` , and there is at least one
-     ` x ` in ` A ` .  (Contributed by David A. Wheeler, 20-Oct-2018.) $)
-  walsc $a wff A! x e. A ph $.
+     means ` ps ` is true whenever ` ph ` is true for ` x ` in ` A ` , and
+     there is at least one ` x ` in ` A ` where ` ph ` is true.  (Contributed
+     by David A. Wheeler, 20-Oct-2018.)  (Revised by David A. Wheeler,
+     12-Jul-2026.) $)
+  wrals $a wff AE x e. A ( ph -> ps ) $.
+
+  $( Soundness of the two definitions that follow.  Definitions are required to
+     be eliminable and conservative (see the section comment for ~ df-bi ).
+     Both ~ df-als and ~ df-rals meet these requirements directly, and so
+     neither needs a justification theorem.
+
+     Each is stated as a biconditional whose left side is a new syntax
+     construct ( ~ wals or ~ wrals ) applied to distinct metavariables, and
+     whose right side uses only constructs introduced earlier ( ` A. ` , ` E. `
+     , ` /\ ` , ` -> ` , and the restricted quantifiers ~ df-ral and ~ df-rex
+     ).  Any occurrence of the new construct can therefore be replaced by the
+     right side, which is eliminability; conservativity follows, since a proof
+     of a statement not mentioning ` AE ` can have every use of the definition
+     replaced in this way.
+
+     Note in particular that every variable occurring on the right side already
+     occurs on the left side, so no dummy variable is introduced.  A
+     justification theorem is needed only when that fails, that is, when a
+     definition introduces a dummy variable and the choice of that variable
+     must be shown not to matter (as in ~ eujust for ~ df-eu ), or when the
+     definition cannot use ` <-> ` because it is defining ` <-> ` itself (as in
+     ~ biijust for ~ df-bi ).  Neither case arises here.  The restricted
+     quantifier definitions ~ df-ral and ~ df-rex have the same shape as these
+     and likewise need no justification. $)
 
   $( Define "all some" applied to a top-level implication, which means ` ps `
      is true whenever ` ph ` is true and there is at least one ` x ` where
      ` ph ` is true.  (Contributed by David A. Wheeler, 20-Oct-2018.) $)
-  df-alsi $a |- ( A! x ( ph -> ps ) <-> ( A. x ( ph -> ps ) /\ E. x ph ) ) $.
+  df-als $a |- ( AE x ( ph -> ps ) <-> ( A. x ( ph -> ps ) /\ E. x ph ) ) $.
 
-  $( Define "all some" applied to a class, which means ` ph ` is true for all
-     ` x ` in ` A ` and there is at least one ` x ` in ` A ` .  (Contributed by
-     David A. Wheeler, 20-Oct-2018.) $)
-  df-alsc $a |- ( A! x e. A ph <-> ( A. x e. A ph /\ E. x x e. A ) ) $.
+  $( Define "all some" applied to a class, which means ` ps ` is true whenever
+     ` ph ` is true for ` x ` in ` A ` , and there is at least one ` x ` in
+     ` A ` where ` ph ` is true.
 
-  $( There is an equivalence between the two "all some" forms.  (Contributed by
-     David A. Wheeler, 22-Oct-2018.) $)
-  alsconv $p |- ( A! x ( x e. A -> ph ) <-> A! x e. A ph ) $=
-    ( wral cv wcel wex wa wi walsc walsi df-ral anbi1i df-alsc df-alsi 3bitr4ri
-    wal ) ABCDZBECFZBGZHSAIBQZTHABCJSABKRUATABCLMABCNSABOP $.
+     An older definition of the "all some" quantifier when scoped to a class,
+     named df-alsc and now removed, instead applied a bare formula ` ph ` to
+     the members of a class, asserting only
+     ` ( A. x e. A ph /\ E. x x e. A ) ` , that is, that the formula held
+     throughout ` A ` and that ` A ` had at least one member.  I've now decided
+     that that was a mistake.  Its older existence conjunct ` E. x x e. A ` did
+     not require any member of ` A ` to satisfy the antecedent, so if the
+     formula was itself an implication, that inner implication could still be
+     vacuously true, which is precisely what the allsome quantifier exists to
+     prevent.  For example, the older definition meant that "among Martians,
+     all tall ones are green" could be considered true if there are Martians,
+     but no tall Martians.  This version of the definition instead ensures that
+     claims of the form "among Martians, all tall ones are green" can only be
+     true if all tall Martians are green _and_ that there is at least one tall
+     Martian.  (Contributed by David A. Wheeler, 20-Oct-2018.)  (Revised by
+     David A. Wheeler, 12-Jul-2026.) $)
+  df-rals $a |- ( AE x e. A ( ph -> ps ) <->
+      ( A. x e. A ( ph -> ps ) /\ E. x e. A ph ) ) $.
+
+  $( The bounded "all some" form is the general form with the class membership
+     folded into the antecedent.  (Contributed by David A. Wheeler,
+     22-Oct-2018.)  (Revised by David A. Wheeler, 12-Jul-2026.) $)
+  dfrals2 $p |- ( AE x e. A ( ph -> ps ) <->
+      AE x ( ( x e. A /\ ph ) -> ps ) ) $=
+    ( wi wral wrex wa wcel wal wex wrals wals df-ral impexp albii bitr4i df-rex
+    cv anbi12i df-rals df-als 3bitr4i ) ABEZCDFZACDGZHCSDIZAHZBEZCJZUHCKZHABCDL
+    UHBCMUEUJUFUKUEUGUDEZCJUJUDCDNUIULCUGABOPQACDRTABCDUAUHBCUBUC $.
 
   ${
-    alsi1d.1 $e |- ( ph -> A! x ( ps -> ch ) ) $.
+    alsd.1 $e |- ( ph -> A. x ( ps -> ch ) ) $.
+    alsd.2 $e |- ( ph -> E. x ps ) $.
+    $( Introduction rule:  "all some" holds if the "for all" part holds and the
+       antecedent has a witness.  This is the converse of ~ als1d and ~ als2d
+       taken together, and is what lets an "all some" statement be proved
+       rather than merely taken apart.  (Contributed by David A. Wheeler,
+       12-Jul-2026.) $)
+    alsd $p |- ( ph -> AE x ( ps -> ch ) ) $=
+      ( wi wal wex wals df-als sylanbrc ) ABCGDHBDIBCDJEFBCDKL $.
+  $}
+
+  ${
+    ralsd.1 $e |- ( ph -> A. x e. A ( ps -> ch ) ) $.
+    ralsd.2 $e |- ( ph -> E. x e. A ps ) $.
+    $( Introduction rule for "all some" restricted to a class.  This is the
+       converse of ~ rals1d and ~ rals2d taken together.  (Contributed by David
+       A. Wheeler, 12-Jul-2026.) $)
+    ralsd $p |- ( ph -> AE x e. A ( ps -> ch ) ) $=
+      ( wi wral wrex wrals df-rals sylanbrc ) ABCHDEIBDEJBCDEKFGBCDELM $.
+  $}
+
+  ${
+    als1d.1 $e |- ( ph -> AE x ( ps -> ch ) ) $.
     $( Deduction rule:  Given "all some" applied to a top-level inference, you
        can extract the "for all" part.  (Contributed by David A. Wheeler,
        20-Oct-2018.) $)
-    alsi1d $p |- ( ph -> A. x ( ps -> ch ) ) $=
-      ( wi wal wex walsi wa df-alsi sylib simpld ) ABCFDGZBDHZABCDINOJEBCDKLM
-      $.
+    als1d $p |- ( ph -> A. x ( ps -> ch ) ) $=
+      ( wi wal wex wals wa df-als sylib simpld ) ABCFDGZBDHZABCDINOJEBCDKLM $.
   $}
 
   ${
-    alsi2d.1 $e |- ( ph -> A! x ( ps -> ch ) ) $.
+    als2d.1 $e |- ( ph -> AE x ( ps -> ch ) ) $.
     $( Deduction rule:  Given "all some" applied to a top-level inference, you
        can extract the "exists" part.  (Contributed by David A. Wheeler,
        20-Oct-2018.) $)
-    alsi2d $p |- ( ph -> E. x ps ) $=
-      ( wi wal wex walsi wa df-alsi sylib simprd ) ABCFDGZBDHZABCDINOJEBCDKLM
+    als2d $p |- ( ph -> E. x ps ) $=
+      ( wi wal wex wals wa df-als sylib simprd ) ABCFDGZBDHZABCDINOJEBCDKLM $.
+  $}
+
+  ${
+    rals1d.1 $e |- ( ph -> AE x e. A ( ps -> ch ) ) $.
+    $( Deduction rule:  Given "all some" applied to a class, you can extract
+       the "for all" part.  (Contributed by David A. Wheeler, 20-Oct-2018.)
+       (Revised by David A. Wheeler, 12-Jul-2026.) $)
+    rals1d $p |- ( ph -> A. x e. A ( ps -> ch ) ) $=
+      ( wi wral wrex wrals wa df-rals sylib simpld ) ABCGDEHZBDEIZABCDEJOPKFBCD
+      ELMN $.
+  $}
+
+  ${
+    rals2d.1 $e |- ( ph -> AE x e. A ( ps -> ch ) ) $.
+    $( Deduction rule:  Given "all some" applied to a class, you can extract
+       the "there exists" part.  Note that the witness must satisfy the
+       antecedent ` ps ` , not merely be a member of ` A ` .  (Contributed by
+       David A. Wheeler, 20-Oct-2018.)  (Revised by David A. Wheeler,
+       12-Jul-2026.) $)
+    rals2d $p |- ( ph -> E. x e. A ps ) $=
+      ( wi wral wrex wrals wa df-rals sylib simprd ) ABCGDEHZBDEIZABCDEJOPKFBCD
+      ELMN $.
+  $}
+
+  ${
+    $d A x $.
+    ralsn0d.1 $e |- ( ph -> AE x e. A ( ps -> ch ) ) $.
+    $( Deduction rule:  Given "all some" applied to a class, the class is not
+       the empty set.  (Contributed by David A. Wheeler, 23-Oct-2018.)
+       (Revised by David A. Wheeler, 12-Jul-2026.) $)
+    ralsn0d $p |- ( ph -> A =/= (/) ) $=
+      ( wrex c0 wne rals2d rexn0 syl ) ABDEGEHIABCDEFJBDEKL $.
+  $}
+
+  ${
+    $d x A $.
+    ralsmd.1 $e |- ( ph -> AE x e. A ( ps -> ch ) ) $.
+    $( Deduction rule:  Given "all some" applied to a class, the class is
+       inhabited.  This is stronger than ~ ralsn0d , which only concludes that
+       the class is nonempty; see ~ n0r .  (Contributed by David A. Wheeler,
+       20-Jul-2026.) $)
+    ralsmd $p |- ( ph -> E. x x e. A ) $=
+      ( wrex cv wcel wex rals2d rexm syl ) ABDEGDHEIDJABCDEFKBDELM $.
+  $}
+
+  $( The consequent of an "all some" is witnessed: if ` ps ` holds of every
+     ` x ` satisfying ` ph ` , and some ` x ` satisfies ` ph ` , then some
+     ` x ` satisfies ` ps ` .  This is the positive counterpart of
+     ~ als-no-surprise , and it is the property that ordinary "for all" with
+     implication lacks: from ` A. x ( ph -> ps ) ` alone nothing whatever
+     follows about ` ps ` , since nothing need satisfy ` ph ` .  It is the
+     allsome quantifier says what a speaker of "all Martians are green" usually
+     means.  (Contributed by David A. Wheeler, 12-Jul-2026.) $)
+  alsex $p |- ( AE x ( ph -> ps ) -> E. x ps ) $=
+    ( wals wi wal wex wa df-als exim imp sylbi ) ABCDABECFZACGZHBCGZABCIMNOABCJ
+    KL $.
+
+  $( The consequent of an "all some" restricted to a class is witnessed: some
+     member of ` A ` satisfying ` ph ` also satisfies ` ps ` .  Restricted
+     counterpart of ~ alsex .  (Contributed by David A. Wheeler,
+     12-Jul-2026.) $)
+  ralsex $p |- ( AE x e. A ( ph -> ps ) -> E. x e. A ps ) $=
+    ( wrals wi wral wrex wa df-rals rexim imp sylbi ) ABCDEABFCDGZACDHZIBCDHZAB
+    CDJNOPABCDKLM $.
+
+  ${
+    alsbii.1 $e |- ( ph <-> ch ) $.
+    alsbii.2 $e |- ( ps <-> th ) $.
+    $( Congruence: equivalents may be substituted inside an "all some".
+       (Contributed by David A. Wheeler, 12-Jul-2026.) $)
+    alsbii $p |- ( AE x ( ph -> ps ) <-> AE x ( ch -> th ) ) $=
+      ( wi wal wex wa wals imbi12i albii exbii anbi12i df-als 3bitr4i ) ABHZEIZ
+      AEJZKCDHZEIZCEJZKABELCDELTUCUAUDSUBEACBDFGMNACEFOPABEQCDEQR $.
+  $}
+
+  ${
+    ralsbii.1 $e |- ( ph <-> ch ) $.
+    ralsbii.2 $e |- ( ps <-> th ) $.
+    $( Congruence for "all some" restricted to a class.  (Contributed by David
+       A. Wheeler, 12-Jul-2026.) $)
+    ralsbii $p |- ( AE x e. A ( ph -> ps ) <-> AE x e. A ( ch -> th ) ) $=
+      ( wi wral wrex wa wrals imbi12i ralbii rexbii anbi12i df-rals 3bitr4i ) A
+      BIZEFJZAEFKZLCDIZEFJZCEFKZLABEFMCDEFMUAUDUBUETUCEFACBDGHNOACEFGPQABEFRCDE
+      FRS $.
+  $}
+
+  ${
+    alsbid.1 $e |- F/ x ph $.
+    alsbid.2 $e |- ( ph -> ( ps <-> th ) ) $.
+    alsbid.3 $e |- ( ph -> ( ch <-> ta ) ) $.
+    $( Deduction form of ~ alsbii .  (Contributed by David A. Wheeler,
+       12-Jul-2026.) $)
+    alsbid $p |- ( ph -> ( AE x ( ps -> ch ) <-> AE x ( th -> ta ) ) ) $=
+      ( wi wal wex wa wals imbi12d albid exbid anbi12d df-als 3bitr4g ) ABCJZFK
+      ZBFLZMDEJZFKZDFLZMBCFNDEFNAUBUEUCUFAUAUDFGABDCEHIOPABDFGHQRBCFSDEFST $.
+  $}
+
+  ${
+    nfals.1 $e |- F/ x ph $.
+    nfals.2 $e |- F/ x ps $.
+    $( Bound-variable hypothesis builder for "all some".  (Contributed by David
+       A. Wheeler, 12-Jul-2026.) $)
+    nfals $p |- F/ x AE y ( ph -> ps ) $=
+      ( wals wi wal wex wa df-als nfim nfal nfex nfan nfxfr ) ABDGABHZDIZADJZKC
+      ABDLSTCRCDABCEFMNACDEOPQ $.
+  $}
+
+  ${
+    $d x y $.
+    nfrals.1 $e |- F/_ x A $.
+    nfrals.2 $e |- F/ x ph $.
+    nfrals.3 $e |- F/ x ps $.
+    $( Bound-variable hypothesis builder for "all some" restricted to a class.
+       (Contributed by David A. Wheeler, 12-Jul-2026.) $)
+    nfrals $p |- F/ x AE y e. A ( ph -> ps ) $=
+      ( wrals wi wral wrex wa df-rals nfim nfralw nfrexw nfan nfxfr ) ABDEIABJZ
+      DEKZADELZMCABDENUAUBCTCDEFABCGHOPACDEFGQRS $.
+  $}
+
+  ${
+    $d x y $.  $d x ch $.  $d x th $.  $d y ph $.  $d y ps $.
+    cbvals.1 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    cbvals.2 $e |- ( x = y -> ( ps <-> th ) ) $.
+    $( Rule used to change bound variables, using implicit substitution.
+       (Contributed by David A. Wheeler, 12-Jul-2026.) $)
+    cbvals $p |- ( AE x ( ph -> ps ) <-> AE y ( ch -> th ) ) $=
+      ( wi wal wex wa wals weq imbi12d cbvalvw cbvexvw anbi12i df-als 3bitr4i )
+      ABIZEJZAEKZLCDIZFJZCFKZLABEMCDFMUBUEUCUFUAUDEFEFNACBDGHOPACEFGQRABESCDFST
+      $.
+  $}
+
+  $( Demonstrate that there is never a "surprise" when using the allsome
+     quantifier, that is, it is never possible for the consequent to be both
+     always true and always false.  This uses the definition of ~ df-als : the
+     universal parts give ` A. x -. ph ` , which contradicts the witness that
+     the allsome quantifier supplies.  Ordinary "for all" with implication has
+     no such property, since ` A. x ( ph -> ps ) ` and ` A. x ( ph -> -. ps ) `
+     can both hold when nothing satisfies ` ph ` .  (Contributed by David A.
+     Wheeler, 27-Oct-2018.)  (Revised by David A. Wheeler, 20-Jul-2026.) $)
+  als-no-surprise $p |- -. ( AE x ( ph -> ps ) /\ AE x ( ph -> -. ps ) ) $=
+    ( wals wn wa wex simpl wi wal df-als simprbi syl simplbi anim12i pm2.65 imp
+    19.26 alimi alnex biimpi sylbir pm2.65i ) ABCDZABEZCDZFZACGZUGUDUHUDUFHUDAB
+    IZCJZUHABCKZLMUGUJAUEIZCJZFZUHEZUDUJUFUMUDUJUHUKNUFUMUHAUECKNOUNUIULFZCJZUO
+    UIULCRUQAEZCJZUOUPURCUIULURABPQSUSUOACTUAMUBMUC $.
+
+  $( Demonstrate that there is never a "surprise" when using the allsome
+     quantifier restricted to a class, that is, it is never possible for the
+     consequent to be both always true and always false of the members of ` A `
+     that satisfy the antecedent.  This is the restricted counterpart of
+     ~ als-no-surprise , and follows from it by ~ dfrals2 .  Note that this
+     holds without any assumption that ` A ` is inhabited; that is the point of
+     allsome, since the corresponding claim for the ordinary restricted "for
+     all" fails when nothing in ` A ` satisfies ` ph ` .  (Contributed by David
+     A. Wheeler, 12-Jul-2026.) $)
+  rals-no-surprise $p |- -. ( AE x e. A ( ph -> ps ) /\
+      AE x e. A ( ph -> -. ps ) ) $=
+    ( wrals wn wa cv wcel wals als-no-surprise dfrals2 anbi12i mtbir ) ABCDEZAB
+    FZCDEZGCHDIAGZBCJZRPCJZGRBCKOSQTABCDLAPCDLMN $.
+
+  $( If the universal part of a restricted "all some" statement holds, then the
+     statement reduces to the existence of a member of ` A ` satisfying its
+     antecedent.  This is the restricted counterpart of ~ ralals .
+     (Contributed by Peter Mazsa and David A. Wheeler, 20-Jul-2026.) $)
+  ralrals $p |- ( A. x e. A ( ph -> ps ) ->
+      ( AE x e. A ( ph -> ps ) <-> E. x e. A ph ) ) $=
+    ( wrals wi wral wrex wa df-rals ibar bicomd bitrid ) ABCDEABFCDGZACDHZIZNOA
+    BCDJNOPNOKLM $.
+
+  $( If a member of ` A ` satisfying the antecedent exists, then a restricted
+     "all some" statement reduces to its universal part.  This is the
+     restricted counterpart of ~ rexals .  (Contributed by Peter Mazsa and
+     David A. Wheeler, 20-Jul-2026.) $)
+  rexrals $p |- ( E. x e. A ph ->
+      ( AE x e. A ( ph -> ps ) <-> A. x e. A ( ph -> ps ) ) ) $=
+    ( wrals wi wral wrex wa df-rals iba bicomd bitrid ) ABCDEABFCDGZACDHZIZONAB
+    CDJONPONKLM $.
+
+  $( An "all some" statement conjoined with the claim that at most one ` x `
+     satisfies its antecedent is equivalent to the universal part conjoined
+     with the claim that exactly one ` x ` satisfies the antecedent.  The "all
+     some" quantifier supplies the existence of such an ` x ` and ` E* x ph `
+     supplies the at-most-one part, so together they yield ` E! x ph ` .
+     (Contributed by Peter Mazsa and David A. Wheeler, 20-Jul-2026.) $)
+  alsanmo $p |- ( ( AE x ( ph -> ps ) /\ E* x ph ) <->
+      ( A. x ( ph -> ps ) /\ E! x ph ) ) $=
+    ( wals wmo wa wi wal wex weu df-als anbi1i anass eu5 bicomi anbi2i 3bitri )
+    ABCDZACEZFABGCHZACIZFZSFTUASFZFTACJZFRUBSABCKLTUASMUCUDTUDUCACNOPQ $.
+
+  $( An "all some" statement restricted to a class, conjoined with the claim
+     that at most one ` x ` in ` A ` satisfies its antecedent, is equivalent to
+     the universal part conjoined with the claim that exactly one ` x ` in
+     ` A ` satisfies the antecedent.  This is the restricted counterpart of
+     ~ alsanmo .  (Contributed by Peter Mazsa and David A. Wheeler,
+     20-Jul-2026.) $)
+  ralsanmo $p |- ( ( AE x e. A ( ph -> ps ) /\ E* x e. A ph ) <->
+      ( A. x e. A ( ph -> ps ) /\ E! x e. A ph ) ) $=
+    ( wrals wrmo wa wi wral wrex wreu df-rals anbi1i anass bicomi anbi2i 3bitri
+    reu5 ) ABCDEZACDFZGABHCDIZACDJZGZTGUAUBTGZGUAACDKZGSUCTABCDLMUAUBTNUDUEUAUE
+    UDACDROPQ $.
+
+  ${
+    $d x A $.
+    $( The general "all some" quantifier with class membership as its
+       antecedent holds if and only if ` ph ` holds for every ` x ` in ` A `
+       and some ` x ` in ` A ` satisfies ` ph ` .  (Contributed by Peter Mazsa,
+       27-Nov-2018.)  (Revised by David A. Wheeler, 20-Jul-2026.) $)
+    alsralrex $p |- ( AE x ( x e. A -> ph ) <->
+        ( A. x e. A ph /\ E. x e. A ph ) ) $=
+      ( cv wcel wals wral wex wa wrex wi wal df-als df-ral bicomi anbi1i r19.2m
+      bitri expcom rexm a1i impbid pm5.32i ) BDCEZABFZABCGZUDBHZIZUFABCJZIUEUDA
+      KBLZUGIUHUDABMUJUFUGUFUJABCNOPRUFUGUIUFUGUIUGUFUIABBCQSUIUGKUFABCTUAUBUCR
       $.
   $}
 
   ${
-    alsc1d.1 $e |- ( ph -> A! x e. A ps ) $.
-    $( Deduction rule:  Given "all some" applied to a class, you can extract
-       the "for all" part.  (Contributed by David A. Wheeler, 20-Oct-2018.) $)
-    alsc1d $p |- ( ph -> A. x e. A ps ) $=
-      ( wral cv wcel wex walsc wa df-alsc sylib simpld ) ABCDFZCGDHCIZABCDJOPKE
-      BCDLMN $.
+    $d x A $.
+    $( The general "all some" quantifier with class membership as its
+       antecedent holds if and only if ` ph ` holds for every ` x ` in ` A `
+       and ` A ` is inhabited.  This is the intuitionistic form of what set.mm
+       states using ` A =/= (/) ` ; see the section comment.  (Contributed by
+       Peter Mazsa, 28-Nov-2018.)  (Revised by David A. Wheeler,
+       20-Jul-2026.) $)
+    alsraln0m $p |- ( AE x ( x e. A -> ph ) <->
+        ( A. x e. A ph /\ E. x x e. A ) ) $=
+      ( cv wcel wals wi wal wex wa wral df-als df-ral bicomi anbi1i bitri ) BDC
+      EZABFQAGBHZQBIZJABCKZSJQABLRTSTRABCMNOP $.
   $}
 
   ${
-    alsc2d.1 $e |- ( ph -> A! x e. A ps ) $.
-    $( Deduction rule:  Given "all some" applied to a class, you can extract
-       the "there exists" part.  (Contributed by David A. Wheeler,
-       20-Oct-2018.) $)
-    alsc2d $p |- ( ph -> E. x x e. A ) $=
-      ( wral cv wcel wex walsc wa df-alsc sylib simprd ) ABCDFZCGDHCIZABCDJOPKE
-      BCDLMN $.
+    $d x A $.
+    $( If ` ph ` holds for every ` x ` in ` A ` , then the general "all some"
+       quantifier with class membership as its antecedent reduces to the
+       assertion that some ` x ` in ` A ` satisfies ` ph ` .  See ~ ralrals for
+       the restricted counterpart.  (Contributed by Peter Mazsa, 19-Dec-2018.)
+       (Revised by David A. Wheeler, 15-Jul-2026.) $)
+    ralals $p |- ( A. x e. A ph ->
+        ( AE x ( x e. A -> ph ) <-> E. x e. A ph ) ) $=
+      ( cv wcel wals wral wrex wa alsralrex ibar bicomd bitrid ) BDCEABFABCGZAB
+      CHZIZNOABCJNOPNOKLM $.
+  $}
+
+  ${
+    $d x A $.
+    $( If some ` x ` in ` A ` satisfies ` ph ` , then the general "all some"
+       quantifier with class membership as its antecedent reduces to the
+       assertion that ` ph ` holds for every ` x ` in ` A ` .  See ~ rexrals
+       for the restricted counterpart.  (Contributed by Peter Mazsa,
+       19-Dec-2018.)  (Revised by David A. Wheeler, 15-Jul-2026.) $)
+    rexals $p |- ( E. x e. A ph ->
+        ( AE x ( x e. A -> ph ) <-> A. x e. A ph ) ) $=
+      ( cv wcel wals wral wrex wa alsralrex iba bicomd bitrid ) BDCEABFABCGZABC
+      HZIZONABCJONPONKLM $.
+  $}
+
+  ${
+    $d x A $.
+    $( If ` A ` is inhabited, then the general "all some" quantifier with class
+       membership as its antecedent reduces to the assertion that ` ph ` holds
+       for every ` x ` in ` A ` .  (Contributed by Peter Mazsa, 19-Dec-2018.)
+       (Revised by David A. Wheeler, 20-Jul-2026.) $)
+    n0alsm $p |- ( E. x x e. A ->
+        ( AE x ( x e. A -> ph ) <-> A. x e. A ph ) ) $=
+      ( cv wcel wals wral wex alsraln0m rbaib ) BDCEZABFABCGKBHABCIJ $.
+  $}
+
+  ${
+    $d x A $.  $d x y B $.
+    $( Nested general "all some" quantifiers with class membership as their
+       antecedents: ` ph ` holds for every ` x ` in ` A ` and every ` y ` in
+       ` B ` , and both ` A ` and ` B ` are inhabited.  (Contributed by Peter
+       Mazsa, 28-May-2019.)  (Revised by David A. Wheeler, 20-Jul-2026.) $)
+    2alsraln0m $p |- ( AE x ( x e. A -> AE y ( y e. B -> ph ) ) <->
+        ( A. x e. A A. y e. B ph /\ ( E. x x e. A /\ E. y y e. B ) ) ) $=
+      ( cv wcel wals wral wex wa alsraln0m alsbii bitri r19.27mv pm5.32ri anass
+      biid ancom anbi2i ) BFDGZCFEGZACHZBHZACEIZBDIZUBCJZKZUABJZKZUFUIUGKZKZUDU
+      EUGKZBDIZUIKZUJUDUAUMBHUOUAUCUAUMBUARACELMUMBDLNUIUNUHUEUGBDOPNUJUFUGUIKZ
+      KULUFUGUIQUPUKUFUGUISTNN $.
+  $}
+
+  ${
+    $d x y A $.
+    $( Nested general "all some" quantifiers with class membership as their
+       antecedents, for the same class ` A ` : ` ph ` holds for every ` x ` and
+       every ` y ` in ` A ` , and ` A ` is inhabited.  (Contributed by Peter
+       Mazsa, 28-May-2019.)  (Revised by David A. Wheeler, 20-Jul-2026.) $)
+    2alsraln0idm $p |- ( AE x ( x e. A -> AE y ( y e. A -> ph ) ) <->
+        ( A. x e. A A. y e. A ph /\ E. x x e. A ) ) $=
+      ( cv wcel wals wral wex wa 2alsraln0m eleq1w cbvexvw anbi2i anidm bitri )
+      BEDFZCEDFZACGBGACDHBDHZQBIZRCIZJZJSTJABCDDKUBTSUBTTJTUATTRQCBCBDLMNTOPNP
+      $.
   $}
 
 $( (End of David A. Wheeler's mathbox.) $)

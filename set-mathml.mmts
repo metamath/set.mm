@@ -1479,8 +1479,8 @@ $s class cot $: <mi href="df-cot.html">cot</mi> $.
 $s class sgn $: <mi href="df-sgn.html">sgn</mi> $.
 $s class logb $: <mi href="df-logb.html">logb</mi> $.
 $s class log_ $: <mi href="df-log_.html">log_</mi> $.
-$s wff A! x ( ph -> ps ) $: <mrow> <mo href="df-alsi.html">&forall;!</mo> #x# <mfenced mathcolor=#0D0 separators="">#ph# <mo mathcolor=#0D0>&rarr;</mo> #ps#</mfenced> </mrow> $.
-$s wff A! x e. A ph $: <mrow> <mo href="df-alsc.html">&forall;!</mo> #x# <mo href="df-reu.html">&isin;</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
+$s wff AE x ( ph -> ps ) $: <mrow> <mo href="df-als.html">&forall;&exist;</mo> #x# <mfenced mathcolor=#0D0 separators="">#ph# <mo mathcolor=#0D0>&rarr;</mo> #ps#</mfenced> </mrow> $.
+$s wff AE x e. A ( ph -> ps ) $: <mrow> <mo href="df-rals.html">&forall;&exist;</mo> #x# <mo href="df-rals.html">&isin;</mo> #A# <mspace width=.4em /> <mfenced mathcolor=#0D0 separators="">#ph# <mo mathcolor=#0D0>&rarr;</mo> #ps#</mfenced> </mrow> $.
 $s wff A Reflexive B $: <mrow>#A# <mo href="df-reflexive.html">Reflexive</mo> #B#</mrow> $.
 $s wff A Irreflexive B $: <mrow>#A# <mo href="df-irreflexive.html">Irreflexive</mo> #B#</mrow> $.
 
@@ -1685,6 +1685,7 @@ $s class PrimRoots $: <mi href="df-primroots.html">PrimRoots</mi> $.
 
 $( Steven Nguyen $)
 $s class -R $: <msub href="df-resub.html"><mo>-</mo> <mi>&Ropf;</mi></msub> $.
+$s class /R $: <msub href="df-rediv.html"><mo>/</mo> <mi>&Ropf;</mi></msub> $.
 $s class PrjSp $: <mi href="df-prjsp.html">&Popf;&ropf;&oopf;&jopf;</mi> $.
 $s class PrjSpn $: <msub href="df-prjspn.html"><mi>&Popf;&ropf;&oopf;&jopf;</mi> <mi>n</mi></msub> $.
 $s class PrjCrv $: <mi href="df-prjcrv.html">PrjCrv</mi> $.

@@ -342,6 +342,7 @@
 "4syl" is used by "ddemeas".
 "4syl" is used by "dfac12lem2".
 "4syl" is used by "dfac12r".
+"4syl" is used by "dfscott3".
 "4syl" is used by "dgrub".
 "4syl" is used by "dia2dimlem9".
 "4syl" is used by "diblsmopel".
@@ -10467,8 +10468,6 @@
 "nfnae" is used by "wl-mo2tf".
 "nfnae" is used by "wl-sbalnae".
 "nfra2" is used by "ralcom2".
-"nfrab" is used by "elfvmptrab1".
-"nfrab" is used by "elovmporab1".
 "nfral" is used by "cbvral2".
 "nfral" is used by "eliuniincex".
 "nfral" is used by "nfiing".
@@ -14380,7 +14379,7 @@ New usage of "4atex2-0aOLDN" is discouraged (1 uses).
 New usage of "4atex2-0bOLDN" is discouraged (0 uses).
 New usage of "4atex2-0cOLDN" is discouraged (0 uses).
 New usage of "4ipval2" is discouraged (2 uses).
-New usage of "4syl" is discouraged (301 uses).
+New usage of "4syl" is discouraged (302 uses).
 New usage of "5oai" is discouraged (0 uses).
 New usage of "5oalem1" is discouraged (1 uses).
 New usage of "5oalem2" is discouraged (2 uses).
@@ -17295,6 +17294,7 @@ New usage of "indthincALT" is discouraged (0 uses).
 New usage of "infn0ALT" is discouraged (0 uses).
 New usage of "infpssALT" is discouraged (0 uses).
 New usage of "inidl" is discouraged (0 uses).
+New usage of "inssdif0OLD" is discouraged (0 uses).
 New usage of "int2" is discouraged (3 uses).
 New usage of "int3" is discouraged (1 uses).
 New usage of "intidl" is discouraged (2 uses).
@@ -17441,8 +17441,6 @@ New usage of "joincomALT" is discouraged (1 uses).
 New usage of "jpi" is discouraged (0 uses).
 New usage of "jplem1" is discouraged (1 uses).
 New usage of "jplem2" is discouraged (1 uses).
-New usage of "just1-df" is discouraged (0 uses).
-New usage of "justify-df" is discouraged (0 uses).
 New usage of "kbass1" is discouraged (0 uses).
 New usage of "kbass2" is discouraged (1 uses).
 New usage of "kbass3" is discouraged (0 uses).
@@ -17923,7 +17921,7 @@ New usage of "nfmod2" is discouraged (5 uses).
 New usage of "nfnae" is discouraged (50 uses).
 New usage of "nfopdALT" is discouraged (0 uses).
 New usage of "nfra2" is discouraged (1 uses).
-New usage of "nfrab" is discouraged (2 uses).
+New usage of "nfrab" is discouraged (0 uses).
 New usage of "nfral" is discouraged (5 uses).
 New usage of "nfrald" is discouraged (2 uses).
 New usage of "nfreu" is discouraged (0 uses).
@@ -18889,7 +18887,6 @@ New usage of "sbequ5" is discouraged (0 uses).
 New usage of "sbequ6" is discouraged (0 uses).
 New usage of "sbequ8" is discouraged (0 uses).
 New usage of "sbhb" is discouraged (0 uses).
-New usage of "sbi1ALT" is discouraged (0 uses).
 New usage of "sbid2" is discouraged (2 uses).
 New usage of "sbid2v" is discouraged (0 uses).
 New usage of "sbidm" is discouraged (0 uses).
@@ -19091,6 +19088,8 @@ New usage of "ss-ax8" is discouraged (0 uses).
 New usage of "ssdmd1" is discouraged (1 uses).
 New usage of "ssdmd2" is discouraged (0 uses).
 New usage of "sseliALT" is discouraged (0 uses).
+New usage of "ssexOLD" is discouraged (0 uses).
+New usage of "ssexgOLD" is discouraged (0 uses).
 New usage of "ssfiALT" is discouraged (0 uses).
 New usage of "sshhococi" is discouraged (0 uses).
 New usage of "sshjcl" is discouraged (2 uses).
@@ -19143,7 +19142,6 @@ New usage of "stcltr2i" is discouraged (1 uses).
 New usage of "stcltrlem1" is discouraged (1 uses).
 New usage of "stcltrlem2" is discouraged (1 uses).
 New usage of "stcltrthi" is discouraged (0 uses).
-New usage of "stdpc4ALT" is discouraged (0 uses).
 New usage of "stge0" is discouraged (1 uses).
 New usage of "stge1i" is discouraged (1 uses).
 New usage of "sthil" is discouraged (2 uses).
@@ -20581,6 +20579,7 @@ Proof modification of "infn0ALT" is discouraged (38 steps).
 Proof modification of "infpssALT" is discouraged (52 steps).
 Proof modification of "infregelb" is discouraged (185 steps).
 Proof modification of "inidl" is discouraged (77 steps).
+Proof modification of "inssdif0OLD" is discouraged (100 steps).
 Proof modification of "int2" is discouraged (14 steps).
 Proof modification of "int3" is discouraged (17 steps).
 Proof modification of "intidl" is discouraged (503 steps).
@@ -20639,7 +20638,6 @@ Proof modification of "jaoded" is discouraged (26 steps).
 Proof modification of "jath" is discouraged (318 steps).
 Proof modification of "jccil" is discouraged (10 steps).
 Proof modification of "joincomALT" is discouraged (83 steps).
-Proof modification of "justify-df" is discouraged (1 steps).
 Proof modification of "keridl" is discouraged (862 steps).
 Proof modification of "latmassOLD" is discouraged (309 steps).
 Proof modification of "lcmftp" is discouraged (1057 steps).
@@ -20998,7 +20996,6 @@ Proof modification of "sbcoreleleq" is discouraged (91 steps).
 Proof modification of "sbcoreleleqVD" is discouraged (176 steps).
 Proof modification of "sbcovOLD" is discouraged (32 steps).
 Proof modification of "sbcssgVD" is discouraged (229 steps).
-Proof modification of "sbi1ALT" is discouraged (85 steps).
 Proof modification of "sbievOLD" is discouraged (24 steps).
 Proof modification of "sbievwOLD" is discouraged (23 steps).
 Proof modification of "sbn1ALT" is discouraged (41 steps).
@@ -21043,6 +21040,8 @@ Proof modification of "srgcom4" is discouraged (279 steps).
 Proof modification of "srgcom4lem" is discouraged (213 steps).
 Proof modification of "ss-ax8" is discouraged (243 steps).
 Proof modification of "sseliALT" is discouraged (152 steps).
+Proof modification of "ssexOLD" is discouraged (29 steps).
+Proof modification of "ssexgOLD" is discouraged (39 steps).
 Proof modification of "ssfiALT" is discouraged (222 steps).
 Proof modification of "ssinss1OLD" is discouraged (20 steps).
 Proof modification of "sspwimp" is discouraged (87 steps).
@@ -21058,7 +21057,6 @@ Proof modification of "ssralv2" is discouraged (83 steps).
 Proof modification of "ssralv2VD" is discouraged (147 steps).
 Proof modification of "sstrALT2" is discouraged (81 steps).
 Proof modification of "sstrALT2VD" is discouraged (84 steps).
-Proof modification of "stdpc4ALT" is discouraged (38 steps).
 Proof modification of "stdpc5t" is discouraged (23 steps).
 Proof modification of "sucidALT" is discouraged (28 steps).
 Proof modification of "sucidALTVD" is discouraged (28 steps).
