@@ -215149,6 +215149,44 @@ $)
       BUOUPDUQRUR $.
   $}
 
+  ${
+    $d j ph x $.
+    $( Lemma for ~ wexmiddifxylem .  Showing weak excluded middle given a
+       suitable finite set.  (Contributed by Jim Kingdon, 1-Aug-2026.) $)
+    wexmiddifxylem $p |- ( ( { 1o } \ { { x e. 1o | ph } } ) e. Fin
+        -> DECID -. ph ) $=
+      ( vj vw c1o csn crab cdif wcel wn wo c0 cv wex snm ax-mp elsni sylnib syl
+      wceq cfn wdc fin0or notm0 1oex wral 0ex df1o2 eleq2i exbii mpbir r19.3rmv
+      wb rabeq0 sylbb2 sneqd difeq2d 1n0 nesymi mto eqtrdi eleq2d exbidv mpbiri
+      difsn con3i sylbir eldifn velsn eldifi eqeq1d mtbid neqcomd rabid1o df-dc
+      exlimiv orim12i orcomd sylibr ) EFZABEGZFZHZUAIZAJZWEJZKWEUBWDWFWEWDWCLTZ
+      CMZWCIZCNZKWFWEKCWCUCWGWFWJWEWGWJJWFCWCUDWEWJWEWJWHVTIZCNCEUEOWEWIWKCWEWC
+      VTWHWEWCVTLFZHZVTWEWBWLVTWEWALWEWEBEUFZWALTDMZEIZDNZWEWNUMWQWOWLIZDNDLUGO
+      WPWRDEWLWOUHUIUJUKWEBDEULPABEUNUOUPUQLVTIZJWMVTTWSLETELURUSLEQUTLVTVEPVAV
+      BVCVDVFVGWIWECWIWAETAWIEWAWIWHWATZEWATWIWHWBIWTWHVTWBVHCWAVIRWIWHEWAWIWKW
+      HETWHVTWBVJWHEQSVKVLVMABVNRVPVQSVRWEVOVS $.
+  $}
+
+  ${
+    $d p x y $.  $d p y z $.
+    $( Being able to subtract an arbitrary finite set from a finite set and get
+       a finite set is equivalent to weak excluded middle.  By adding
+       additional conditions we can get a theorem which does not need weak
+       excluded middle, at ~ diffifi .  (Contributed by Jim Kingdon,
+       1-Aug-2026.) $)
+    wexmiddifxy $p |- ( WEXMID
+        <-> A. x A. y ( ( x e. Fin /\ y e. Fin ) -> ( x \ y ) e. Fin ) ) $=
+      ( vp vz wwem cv cfn wcel wa cdif wi wal c1o wceq csn 1oex snex eleq1 cvv
+      wn wexmiddiffi pm3.41 2alimi sylbi cpw wral crab wdc anbi1d difeq1 eleq1d
+      imbi12d albidv spcv snfig ax-mp rabex pm3.2i anbi2d difeq2 wexmiddifxylem
+      wo mpisyl exmiddc 3syl ralrimivw df-wexmid sylibr impbii ) EAFZGHZBFZGHZI
+      ZVJVLJZGHZKZBLZALZEVKVPKZBLALVSABUAVTVQABVKVMVPUBUCUDVSCFMNZTZWBTVBZCMUEZ
+      UFEVSWCCWDVSMOZWADMUGZOZJZGHZWBUHWCVSWEGHZVMIZWEVLJZGHZKZBLZWJWGGHZIZWIVR
+      WOAWEMPQVJWENZVQWNBWRVNWKVPWMWRVKWJVMVJWEGRUIWRVOWLGVJWEVLUJUKULUMUNWJWPM
+      SHWJPMSUOUPWFSHWPWADMPUQZWFSUOUPURWNWQWIKBWGWFWSQVLWGNZWKWQWMWIWTVMWPWJVL
+      WGGRUSWTWLWHGVLWGWEUTUKULUNVCWADVAWBVDVEVFCVGVHVI $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
