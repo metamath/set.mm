@@ -92,6 +92,11 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+24-Jul-26 rimco       [same]      Moved from SN's mathbox to main set.mm
+24-Jul-26 rictr       [same]      Moved from SN's mathbox to main set.mm
+23-Jul-26 risefall0lem fz00m1
+20-Jul-26 orsird      [same]      Moved from GM's mathbox to main set.mm
+20-Jul-26 orsild      [same]      Moved from GM's mathbox to main set.mm
 18-Jul-26 notzfauscl  notsep      Example where no separation is possible
 18-Jul-26 zfauscl     sepgi       Inference associated with sepg
 14-Jul-26 drngidl     [same]      Moved from TA's mathbox to main set.mm

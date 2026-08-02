@@ -1481,6 +1481,8 @@ $s class logb $: <mi href="df-logb.html">logb</mi> $.
 $s class log_ $: <mi href="df-log_.html">log_</mi> $.
 $s wff AE x ( ph -> ps ) $: <mrow> <mo href="df-als.html">&forall;&exist;</mo> #x# <mfenced mathcolor=#0D0 separators="">#ph# <mo mathcolor=#0D0>&rarr;</mo> #ps#</mfenced> </mrow> $.
 $s wff AE x e. A ( ph -> ps ) $: <mrow> <mo href="df-rals.html">&forall;&exist;</mo> #x# <mo href="df-rals.html">&isin;</mo> #A# <mspace width=.4em /> <mfenced mathcolor=#0D0 separators="">#ph# <mo mathcolor=#0D0>&rarr;</mo> #ps#</mfenced> </mrow> $.
+$s wff AE! x ( ph -> ps ) $: <mrow> <mo href="df-alseu.html">&forall;&exist;!</mo> #x# <mfenced mathcolor=#0D0 separators="">#ph# <mo mathcolor=#0D0>&rarr;</mo> #ps#</mfenced> </mrow> $.
+$s wff AE! x e. A ( ph -> ps ) $: <mrow> <mo href="df-ralseu.html">&forall;&exist;!</mo> #x# <mo href="df-ralseu.html">&isin;</mo> #A# <mspace width=.4em /> <mfenced mathcolor=#0D0 separators="">#ph# <mo mathcolor=#0D0>&rarr;</mo> #ps#</mfenced> </mrow> $.
 $s wff A Reflexive B $: <mrow>#A# <mo href="df-reflexive.html">Reflexive</mo> #B#</mrow> $.
 $s wff A Irreflexive B $: <mrow>#A# <mo href="df-irreflexive.html">Irreflexive</mo> #B#</mrow> $.
 

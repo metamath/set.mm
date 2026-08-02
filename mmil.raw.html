@@ -13156,16 +13156,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>mgpplusg</td>
-  <td>~ mgpplusgg</td>
-</tr>
-
-<tr>
-  <td>mgpbas</td>
-  <td>~ mgpbasg</td>
-</tr>
-
-<tr>
   <td>mgpsca</td>
   <td>~ mgpscag</td>
 </tr>
@@ -13196,11 +13186,6 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>xpsrngd</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses prdsrngd</td>
-</tr>
-
-<tr>
-  <td>ringidval</td>
-  <td>~ ringidvalg</td>
 </tr>
 
 <tr>
@@ -14553,6 +14538,50 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td><i>none</i></td>
   <td>We'll need a slot for lt as the set.mm mechanism of
   defining lt in terms of ` le ` will not work (per ~ ltlenmkv ).</td>
+</tr>
+
+<tr>
+  <td>sraassab</td>
+  <td><i>none</i></td>
+  <td>presumably provable if we define Cntr</td>
+</tr>
+
+<tr>
+  <td>sraassa</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses sraassab</td>
+</tr>
+
+<tr>
+  <td>rlmassa</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses sraassa</td>
+</tr>
+
+<tr>
+  <td>asclval</td>
+  <td>~ asclvald</td>
+  <td>requires that ` W ` is a left module and a ring</td>
+</tr>
+
+<tr>
+  <td>asclfn</td>
+  <td>~ asclfnd</td>
+  <td>requires that ` W ` is a left module and a ring</td>
+</tr>
+
+<tr>
+  <td>aspval2</td>
+  <td><i>none</i></td>
+  <td>may be possible if we have mrCls syntax</td>
+</tr>
+
+<tr>
+  <td>zlmassa</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof uses zlmlmod . It also uses zlmbas
+  in a way which might not be possible to replace with
+  ~ zlmbasg .</td>
 </tr>
 
 <tr>
@@ -16797,7 +16826,32 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>logtayl , logtaylsum , logtayl2</td>
+  <td>logtayllem</td>
+  <td><i>none</i></td>
+  <td>the complex case would need to be limited/avoided
+  (see ~ df-relog comment) but even for the real case,
+  (a) as we adapt the proof of logtayl, need to figure
+  out why logtayllem adds an extra zero value to the
+  start of the sequence, (b) the set.mm proof uses
+  cvgcmpce which presumably would need to be replaced
+  by ~ cvgcmp2n or some variation on that theme</td>
+</tr>
+
+<tr>
+  <td>logtayl</td>
+  <td><i>none</i></td>
+  <td>the complex case would need to be limited/avoided
+  (see ~ df-relog comment) but even for the real case,
+  the set.mm proof uses radcnvcl , radcnvle , psercn
+  pserdv2 (a different approach may be needed here) and various
+  logarithm theorems (perhaps these can be adapted to
+  versions for real numbers rather than complex
+  numbers).  The set.mm proof also uses dvmptsub and
+  dvmptres , dvmptco , dvmptneg , and dv11cn .</td>
+</tr>
+
+<tr>
+  <td>logtaylsum , logtayl2</td>
   <td><i>none</i></td>
   <td>see ~ df-relog comment for discussion of complex logarithms</td>
 </tr>
@@ -17182,6 +17236,48 @@ intuitionistic and it is lightly used in set.mm</TD>
   quartlem3 , quartlem4 , quart</td>
   <td><i>none</i></td>
   <td>depends on quad2 and cubic</td>
+</tr>
+
+<tr>
+  <td>log2cnv</td>
+  <td><i>none</i></td>
+  <td>Presumably provable. It is possible the set.mm proof
+  can be adapted (perhaps expanding the arctan definition
+  and removing the complex numbers, if that is feasible),
+  or perhaps another approach is needed.</td>
+</tr>
+
+<tr>
+  <td>log2tlbnd</td>
+  <td>~ log2tlbndlog2</td>
+  <td>once log2cnv is proved we'll be able to prove
+  log2tlbnd without changes</td>
+</tr>
+
+<tr>
+  <td>log2ub</td>
+  <td>~ log2ublog2</td>
+  <td>once log2cnv is proved we'll be able to prove
+  log2ub without changes</td>
+</tr>
+
+<tr>
+  <td>log2le1</td>
+  <td><i>none</i></td>
+  <td>should be provable if log2cnv is proved</td>
+</tr>
+
+<tr>
+  <td>birthdaylem1</td>
+  <td>~ birthdaylem1g</td>
+  <td>adds ` ( K e. NN0 /\ N e. NN ) ` condition</td>
+</tr>
+
+<tr>
+  <td>birthday</td>
+  <td>~ birthdaylog2</td>
+  <td>once log2cnv is proved we'll be able to prove
+  birthday without changes</td>
 </tr>
 
 <tr>
@@ -19542,7 +19638,8 @@ of the inverse prime series</td>
 
   <tr>
     <td>93.  The Birthday Problem</td>
-    <td>Would appear to be intuitionizable.</td>
+    <td>As described at ~ birthdaylog2 we have a partial
+    proof with missing pieces.</td>
   </tr>
 
   <tr>
@@ -19877,6 +19974,13 @@ Analysis,</I> McGraw-Hill, New York, second edition (1964) [QA300.R916
 and Its Logic,</I> Harvard University Press, Cambridge, Massachusetts,
 revised edition (1969) [QA248.Q7 1969].</LI>
 
+<LI><A NAME="Russell1905"></A> [Russell1905] Russell, Bertrand,
+&quot;On Denoting,&quot; <I>Mind,</I> New Series, Vol. 14, No. 56,
+October 1905, pp. 479-493; available at <A
+HREF="https://en.wikisource.org/wiki/On_Denoting"
+>https://en.wikisource.org/wiki/On_Denoting</A>
+(retrieved 22-Jul-2026).
+</LI>
 <LI><A NAME="Sanford"></A> [Sanford] Sanford, David H., <I>If P, then Q:
 Conditionals and the Foundations of Reasoning</I>, 2nd ed., Routledge
 Taylor &amp; Francis Group (2003); ISBN 0-415-28369-8; available at <A
