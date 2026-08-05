@@ -97388,6 +97388,42 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Indicator Functions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  According to Wikipedia ( ~ https://en.wikipedia.org/wiki/Indicator_function ,
+  "Indicator function", 11-Apr-2026): "In mathematics, an _indicator function_
+  or a _characteristic function_ of a subset of a set is a function that maps
+  elements of the subset to one, and all other elements to zero.  That is, if
+  ` A ` is a subset of some set ` X `, then the indicator function of ` A ` is
+  the function ` _Ind `_A defined by ` _Ind `_A ( x ) = 1 if ` x e. A `, and
+  ` _Ind `_A ( x ) = 0 otherwise."
+
+  See also definition in [Lang2] p. 3: "The _characteristic function_ of a
+  subset S' of S is the function ` ch ` such that ` ch `(x) = 1 if ` x e. S `'
+  and ` ch `(x) = 0 if ` x e/ S `'".
+$)
+
+  $c _Ind $.
+
+  $( Extend class notation with the indicator function generator. $)
+  cind $a class _Ind $.
+
+  ${
+    $d a o x $.
+    $( Define the indicator function generator.  It generates an indicator
+       function ` ( ( _Ind `` O ) `` A ) ` for a given domain ` O ` and a given
+       subset ` A ` of the domain, see ~ indval .  In contrast to the
+       definitions and notations in Wikipedia and [Lang2] p. 3, the domain and
+       the subset are always mentioned explicitly.  (Contributed by Thierry
+       Arnoux, 20-Jan-2017.) $)
+    df-ind $a |- _Ind = ( o e. _V |-> ( a e. ~P o |->
+                                    ( x e. o |-> if ( x e. a , 1 , 0 ) ) ) ) $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
   Integer sets
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -210302,6 +210338,9 @@ htmldef "=//=" as ' # ';
 htmldef "#RR" as ' #<SUB>&#8477;</SUB> ';
   althtmldef "#RR" as ' #<SUB>&#8477;</SUB> ';
   latexdef "#RR" as "\neq\mathrel{\mkern -10mu}\neq_\mathbb{R}";
+htmldef "_Ind" as "&#x1D7ED;";
+  althtmldef "_Ind" as "&#x1D7ED;";
+  latexdef "_Ind" as "\pmb{1}";
 htmldef "NN" as "<IMG SRC='bbn.gif' WIDTH=12 HEIGHT=19 ALT=' NN' TITLE='NN'>";
   althtmldef "NN" as '&#8469;'; /* &Nopf; */
     /* 2-Jan-2016 reverted sans-serif */
