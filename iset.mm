@@ -97422,6 +97422,17 @@ $)
                                     ( x e. o |-> if ( x e. a , 1 , 0 ) ) ) ) $.
   $}
 
+  ${
+    $d a o x O $.  $d a o V $.
+    $( Value of the indicator function generator with domain ` O ` .
+       (Contributed by Thierry Arnoux, 23-Aug-2017.) $)
+    indv $p |- ( O e. V ->
+     ( _Ind ` O ) = ( a e. ~P O |-> ( x e. O |-> if ( x e. a , 1 , 0 ) ) ) ) $=
+      ( vo wcel cv cpw c1 cc0 cif cmpt cvv cind df-ind wceq pweq mpteq12dv elex
+      mpteq1 pwexg mptexg 3syl fvmptd3 ) BCFZEBDEGZHZAUFAGDGFIJKZLZLDBHZABUHLZL
+      ZMNMAEDOUFBPDUGUIUJUKUFBQAUFBUHTRBCSZUEBMFUJMFULMFUMBMUADUJUKMUBUCUD $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
