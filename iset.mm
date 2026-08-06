@@ -32709,6 +32709,15 @@ $)
       OINABJNBDKLM $.
   $}
 
+  ${
+    elpwd.1 $e |- ( ph -> A e. V ) $.
+    elpwd.2 $e |- ( ph -> A C_ B ) $.
+    $( Membership in a power class.  (Contributed by Glauco Siliprandi,
+       11-Oct-2020.) $)
+    elpwd $p |- ( ph -> A e. ~P B ) $=
+      ( cpw wcel wss wb elpwg syl mpbird ) ABCGHZBCIZFABDHNOJEBCDKLM $.
+  $}
+
   $( Subset relation implied by membership in a power class.  (Contributed by
      NM, 17-Feb-2007.) $)
   elpwi $p |- ( A e. ~P B -> A C_ B ) $=
