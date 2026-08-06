@@ -97440,6 +97440,19 @@ $)
       ( vo wcel cv cpw c1 cc0 cif cmpt cvv cind df-ind wceq pweq mpteq12dv elex
       mpteq1 pwexg mptexg 3syl fvmptd3 ) BCFZEBDEGZHZAUFAGDGFIJKZLZLDBHZABUHLZL
       ZMNMAEDOUFBPDUGUIUJUKUFBQAUFBUHTRBCSZUEBMFUJMFULMFUMBMUADUJUKMUBUCUD $.
+
+    $d a x A $.
+    $( Value of the indicator function generator for a set ` A ` and a domain
+       ` O ` , i.e., an indicator function for a given domain ` O ` and a given
+       subset ` A ` of the domain.  (Contributed by Thierry Arnoux,
+       2-Feb-2017.) $)
+    indval $p |- ( ( O e. V /\ A C_ O ) ->
+               ( ( _Ind ` O ) ` A ) = ( x e. O |-> if ( x e. A , 1 , 0 ) ) ) $=
+      ( va wcel wss wa cv c1 cc0 cif cmpt cpw cind cfv cvv wceq indv adantr
+      eleq2 ifbid mpteq2dv adantl ssexg ancoms simpr elpwd mptexg fvmptd ) CDFZ
+      BCGZHZEBACAIZEIZFZJKLZMZACUNBFZJKLZMZCNZCOPZQUKVCEVBURMRULACDESTUOBRZURVA
+      RUMVDACUQUTVDUPUSJKUOBUNUAUBUCUDUMBCQULUKBQFBCDUEUFUKULUGUHUKVAQFULACUTDU
+      ITUJ $.
   $}
 
 
