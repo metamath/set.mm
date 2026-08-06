@@ -530,7 +530,8 @@
 "4syl" is used by "rpvmasumlem".
 "4syl" is used by "rrexttps".
 "4syl" is used by "scmatsgrp1".
-"4syl" is used by "scott0".
+"4syl" is used by "scott0OLD".
+"4syl" is used by "scott0b".
 "4syl" is used by "sdclem2".
 "4syl" is used by "sdomsdomcard".
 "4syl" is used by "serf0".
@@ -4543,6 +4544,7 @@
 "con5i" is used by "vk15.4j".
 "con5i" is used by "vk15.4jVD".
 "copsexg" is used by "opabid".
+"cplem1OLD" is used by "cplem2OLD".
 "crhmsubcALTV" is used by "cringcatALTV".
 "cringcALTV" is used by "cringcatALTV".
 "cringcALTV" is used by "fldcALTV".
@@ -12965,6 +12967,16 @@
 "scandx" is used by "slotsdnscsi".
 "scandx" is used by "slotstnscsi".
 "scandx" is used by "vscandxnscandx".
+"scott0OLD" is used by "cplem1OLD".
+"scott0OLD" is used by "kardenOLD".
+"scott0OLD" is used by "scott0bOLD".
+"scott0OLD" is used by "scott0bsOLD".
+"scott0bsOLD" is used by "htaOLD".
+"scottexOLD" is used by "cplem2OLD".
+"scottexOLD" is used by "kardexOLD".
+"scottexOLD" is used by "scottex2OLD".
+"scottexOLD" is used by "scottexsOLD".
+"scottexsOLD" is used by "htaOLD".
 "selsALT" is used by "elALT".
 "sepexlem" is used by "sepex".
 "setrec1lem1" is used by "setrec1lem2".
@@ -14379,7 +14391,7 @@ New usage of "4atex2-0aOLDN" is discouraged (1 uses).
 New usage of "4atex2-0bOLDN" is discouraged (0 uses).
 New usage of "4atex2-0cOLDN" is discouraged (0 uses).
 New usage of "4ipval2" is discouraged (2 uses).
-New usage of "4syl" is discouraged (302 uses).
+New usage of "4syl" is discouraged (303 uses).
 New usage of "5oai" is discouraged (0 uses).
 New usage of "5oalem1" is discouraged (1 uses).
 New usage of "5oalem2" is discouraged (2 uses).
@@ -15769,6 +15781,8 @@ New usage of "conventions-labels" is discouraged (0 uses).
 New usage of "copsexg" is discouraged (1 uses).
 New usage of "copsexgwOLD" is discouraged (0 uses).
 New usage of "counop" is discouraged (0 uses).
+New usage of "cplem1OLD" is discouraged (1 uses).
+New usage of "cplem2OLD" is discouraged (0 uses).
 New usage of "crhmsubcALTV" is discouraged (1 uses).
 New usage of "cringcALTV" is discouraged (9 uses).
 New usage of "cringcatALTV" is discouraged (0 uses).
@@ -17137,6 +17151,7 @@ New usage of "hsupss" is discouraged (1 uses).
 New usage of "hsupunss" is discouraged (1 uses).
 New usage of "hsupval" is discouraged (6 uses).
 New usage of "hsupval2" is discouraged (1 uses).
+New usage of "htaOLD" is discouraged (0 uses).
 New usage of "htth" is discouraged (1 uses).
 New usage of "htthlem" is discouraged (1 uses).
 New usage of "hv2neg" is discouraged (2 uses).
@@ -17440,6 +17455,8 @@ New usage of "joincomALT" is discouraged (1 uses).
 New usage of "jpi" is discouraged (0 uses).
 New usage of "jplem1" is discouraged (1 uses).
 New usage of "jplem2" is discouraged (1 uses).
+New usage of "kardenOLD" is discouraged (0 uses).
+New usage of "kardexOLD" is discouraged (0 uses).
 New usage of "kbass1" is discouraged (0 uses).
 New usage of "kbass2" is discouraged (1 uses).
 New usage of "kbass3" is discouraged (0 uses).
@@ -18903,6 +18920,12 @@ New usage of "sbtr" is discouraged (0 uses).
 New usage of "sbtrt" is discouraged (1 uses).
 New usage of "scandx" is discouraged (12 uses).
 New usage of "scmateALT" is discouraged (0 uses).
+New usage of "scott0OLD" is discouraged (4 uses).
+New usage of "scott0bOLD" is discouraged (0 uses).
+New usage of "scott0bsOLD" is discouraged (1 uses).
+New usage of "scottex2OLD" is discouraged (0 uses).
+New usage of "scottexOLD" is discouraged (4 uses).
+New usage of "scottexsOLD" is discouraged (1 uses).
 New usage of "selsALT" is discouraged (1 uses).
 New usage of "sepexlem" is discouraged (1 uses).
 New usage of "seq1hcau" is discouraged (0 uses).
@@ -19948,6 +19971,8 @@ Proof modification of "conventions-comments" is discouraged (1 steps).
 Proof modification of "conventions-labels" is discouraged (1 steps).
 Proof modification of "copsex2gd" is discouraged (81 steps).
 Proof modification of "copsexgwOLD" is discouraged (338 steps).
+Proof modification of "cplem1OLD" is discouraged (130 steps).
+Proof modification of "cplem2OLD" is discouraged (94 steps).
 Proof modification of "crngm23" is discouraged (126 steps).
 Proof modification of "crngm4" is discouraged (236 steps).
 Proof modification of "crngocom" is discouraged (112 steps).
@@ -20504,6 +20529,7 @@ Proof modification of "hbra2VD" is discouraged (26 steps).
 Proof modification of "helloworld" is discouraged (29 steps).
 Proof modification of "hhssbnOLD" is discouraged (39 steps).
 Proof modification of "hirstL-ax3" is discouraged (34 steps).
+Proof modification of "htaOLD" is discouraged (106 steps).
 Proof modification of "icccmpALT" is discouraged (71 steps).
 Proof modification of "id1" is discouraged (2 steps).
 Proof modification of "idALT" is discouraged (26 steps).
@@ -20631,6 +20657,8 @@ Proof modification of "jaoded" is discouraged (26 steps).
 Proof modification of "jath" is discouraged (318 steps).
 Proof modification of "jccil" is discouraged (10 steps).
 Proof modification of "joincomALT" is discouraged (83 steps).
+Proof modification of "kardenOLD" is discouraged (354 steps).
+Proof modification of "kardexOLD" is discouraged (88 steps).
 Proof modification of "keridl" is discouraged (862 steps).
 Proof modification of "latmassOLD" is discouraged (309 steps).
 Proof modification of "lcmftp" is discouraged (1057 steps).
@@ -20998,6 +21026,12 @@ Proof modification of "sbsbc" is discouraged (21 steps).
 Proof modification of "sbtALT" is discouraged (12 steps).
 Proof modification of "sbtT" is discouraged (7 steps).
 Proof modification of "scmateALT" is discouraged (236 steps).
+Proof modification of "scott0OLD" is discouraged (323 steps).
+Proof modification of "scott0bOLD" is discouraged (37 steps).
+Proof modification of "scott0bsOLD" is discouraged (168 steps).
+Proof modification of "scottex2OLD" is discouraged (27 steps).
+Proof modification of "scottexOLD" is discouraged (190 steps).
+Proof modification of "scottexsOLD" is discouraged (140 steps).
 Proof modification of "selsALT" is discouraged (34 steps).
 Proof modification of "sgrpplusgaopALT" is discouraged (82 steps).
 Proof modification of "sii" is discouraged (145 steps).
