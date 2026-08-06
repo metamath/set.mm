@@ -52468,6 +52468,18 @@ $)
   $}
 
   ${
+    $d ph x $.  $d A x $.  $d C x $.  $d D x $.
+    fvmptd4.1 $e |- ( x = A -> B = C ) $.
+    fvmptd4.2 $e |- ( ph -> F = ( x e. D |-> B ) ) $.
+    fvmptd4.3 $e |- ( ph -> A e. D ) $.
+    fvmptd4.4 $e |- ( ph -> C e. V ) $.
+    $( Deduction version of ~ fvmpt (where the substitution hypothesis does not
+       have the antecedent ` ph ` ).  (Contributed by SN, 26-Jul-2024.) $)
+    fvmptd4 $p |- ( ph -> ( F ` A ) = C ) $=
+      ( cv wceq adantl fvmptd ) ABCDEFGHJBMCNDENAIOKLP $.
+  $}
+
+  ${
     $d M x y $.  $d V x $.  $d X x y $.  $d Y y $.  $d m y $.
     elfvmptrab1.f $e |- F = ( x e. V |-> { y e. [_ x / m ]_ M | ph } ) $.
     elfvmptrab1.v $e |- ( X e. V -> [_ X / m ]_ M e. _V ) $.
