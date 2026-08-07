@@ -51675,6 +51675,17 @@ $)
   $}
 
   ${
+    $d A x $.  $d F x $.
+    $( The value of a relation outside its domain is the empty set.
+       (Contributed by Jim Kingdon, 6-Aug-2026.) $)
+    relndmfv $p |- ( ( Rel F /\ -. A e. dom F ) -> ( F ` A ) = (/) ) $=
+      ( vx wrel cdm wcel wn wa cfv c0 cvv cv relelfvdm elexd adantlr ex wi noel
+      pm2.21i a1i wb wceq simpr simplr ndmfvg syl2anc eleq2d pm5.21ndd eqrdv )
+      BDZABEZFGZHZCABIZJUMAKFZCLZUNFZUPJFZUMUQUOUJUQUOULUJUQHAUKUPABMNOPURUOQUM
+      URUOUPRSTUMUOUQURUAUMUOHZUNJUPUSUOULUNJUBUMUOUCUJULUOUDABUEUFUGPUHUI $.
+  $}
+
+  ${
     $d B k x $.  $d F j k x $.
     $( If a function value has a member, the function is inhabited.
        (Contributed by Jim Kingdon, 14-Jun-2025.) $)
