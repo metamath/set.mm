@@ -33669,6 +33669,13 @@ $)
       ( cpr prid1 prcom eleqtri ) BBADABDBACEBAFG $.
   $}
 
+  $( Membership of a conditional operator in an unordered pair.  (Contributed
+     by NM, 17-Jun-2007.) $)
+  ifprdc $p |- ( ( A e. C /\ B e. D /\ DECID ph )
+      -> if ( ph , A , B ) e. { A , B } ) $=
+    ( wcel wdc w3a cpr prid1g 3ad2ant1 prid2g 3ad2ant2 simp3 ifcldcd ) BDFZCEFZ
+    AGZHABCBCIZPQBSFRBCDJKQPCSFRBCELMPQRNO $.
+
   $( An unordered pair is a singleton or a subset of itself.  This theorem is
      helpful to convert theorems about walks in arbitrary graphs into theorems
      about walks in pseudographs.  (Contributed by AV, 27-Feb-2021.) $)
