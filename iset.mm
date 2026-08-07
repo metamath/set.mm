@@ -97497,6 +97497,19 @@ $)
       BCGZHZEBACAIZEIZFZJKLZMZACUNBFZJKLZMZCNZCOPZQUKVCEVBURMRULACDESTUOBRZURVA
       RUMVDACUQUTVDUPUSJKUOBUNUAUBUCUDUMBCQULUKBQFBCDUEUFUKULUGUHUKVAQFULACUTDU
       ITUJ $.
+
+    $d O j z $.  $d A z $.
+    $( The indicator function generator does not generate a (meaningful)
+       indicator function for a class which is not a subset of the domain.
+       (Contributed by AV, 11-Apr-2026.) $)
+    indval0 $p |- ( -. A C_ O -> ( ( _Ind ` O ) ` A ) = (/) ) $=
+      ( vz vj vo va vx wn cind cfv c0 cvv wcel cv wi cpw cmpt syl a1i wceq noel
+      wss wex elfvm c1 cc0 cif df-ind mptrcl exlimiv pm2.21i indv fveq1d adantr
+      wb elpwi con3i adantl eqid fvmptndm eqtrd eleq2d expcom pm5.21ndd eqrdv
+      wa ) ABUBZHZCABIJZJZKVHBLMZCNZVJMZVLKMZVMVKOVHVMDNZVIMZDUCVKVLADVIUDVPVKD
+      ELFENZPGVQGNFNMUEUFUGZQQIVOBGEFUHUIUJRSVNVKOVHVNVKVLUAUKSVKVHVMVNUOVKVHVF
+      ZVJKVLVSVJAFBPZGBVRQZQZJZKVKVJWCTVHVKAVIWBGBLFULUMUNVSAVTMZHZWCKTVHWEVKWD
+      VGABUPUQURFVTWAWBAWBUSUTRVAVBVCVDVE $.
   $}
 
 
