@@ -52535,6 +52535,16 @@ $)
   $}
 
   ${
+    $d A x y $.  $d B y $.
+    fvmptndm.1 $e |- F = ( x e. A |-> B ) $.
+    $( Value of a function given by the maps-to notation, outside of its
+       domain.  (Contributed by AV, 31-Dec-2020.) $)
+    fvmptndm $p |- ( -. X e. A -> ( F ` X ) = (/) ) $=
+      ( vy cv wceq cmpt wcel wa copab df-mpt eqtri fvopab4ndm ) GHCIZAGBEDDABCJ
+      AHBKQLAGMFAGBCNOP $.
+  $}
+
+  ${
     $d A x y $.  $d ps x y $.  $d B y $.  $d C x y $.
     fvopab6.1 $e |- F = { <. x , y >. | ( ph /\ y = B ) } $.
     fvopab6.2 $e |- ( x = A -> ( ph <-> ps ) ) $.
