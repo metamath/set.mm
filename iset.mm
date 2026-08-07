@@ -97532,6 +97532,18 @@ $)
       VDAEBUEUFUPUQVAVHUGVBVHUHUIVDLMTTUJUKLMUNULUO $.
   $}
 
+  ${
+    $d x A $.  $d x O $.  $d x V $.  $d x X $.
+    $( Value of the indicator function.  (Contributed by Thierry Arnoux,
+       13-Aug-2017.) $)
+    indfval $p |- ( ( O e. V /\ A C_ O /\ X e. O ) ->
+      ( ( ( _Ind ` O ) ` A ) ` X ) = if ( X e. A , 1 , 0 ) ) $=
+      ( vx wcel wss w3a cv c1 cc0 cif cind cfv cvv cmpt wceq indval cr elexi wa
+      3adant3 simpr eleq1d ifbid simp3 1re 0re ifex a1i fvmptd ) BCFZABGZDBFZHZ
+      EDEIZAFZJKLZDAFZJKLZBABMNNZOULUMVAEBURPQUNEABCRUBUOUPDQZUAZUQUSJKVCUPDAUO
+      VBUCUDUEULUMUNUFUTOFUOUSJKJSUGTKSUHTUIUJUK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
