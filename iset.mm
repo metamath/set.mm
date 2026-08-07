@@ -97519,6 +97519,19 @@ $)
       VGABUPUQURFVTWAWBAWBUSUTRVAVBVCVDVE $.
   $}
 
+  ${
+    $d x y A $.  $d x y O $.  $d y V $.
+    $( An indicator function as a function with domain and codomain.
+       (Contributed by Thierry Arnoux, 13-Aug-2017.) $)
+    indfdc $p |- ( ( O e. V /\ A C_ O /\ A. x e. O DECID x e. A ) ->
+                                    ( ( _Ind ` O ) ` A ) : O --> { 0 , 1 } ) $=
+      ( vy wcel wss cv wdc wral w3a c1 cc0 cif cpr cind cfv cmpt wceq cr indval
+      3adant3 wa 1red eleq1w dcbid simpl3 simpr rspcdva ifprdc syl3anc eleqtrdi
+      0red prcom fmpt3d ) CDFZBCGZAHZBFZIZACJZKZECEHZBFZLMNZMLOZBCPQQZUPUQVGECV
+      ERSVAEBCDUAUBVBVCCFZUCZVELMOZVFVILTFMTFVDIZVEVJFVIUDVIUMVIUTVKACVCURVCSUS
+      VDAEBUEUFUPUQVAVHUGVBVHUHUIVDLMTTUJUKLMUNULUO $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
