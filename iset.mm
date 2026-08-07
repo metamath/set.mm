@@ -97544,6 +97544,14 @@ $)
       VBUCUDUEULUMUNUFUTOFUOUSJKJSUGTKSUHTUIUJUK $.
   $}
 
+  $( Value of the indicator function where it is ` 1 ` .  (Contributed by
+     Thierry Arnoux, 14-Aug-2017.) $)
+  ind1 $p |- ( ( O e. V /\ A C_ O /\ X e. A ) ->
+                                          ( ( ( _Ind ` O ) ` A ) ` X ) = 1 ) $=
+    ( wcel wss w3a cind cfv c1 cc0 cif wceq simp2 simp3 sseldd indfval syld3an3
+    iftrue 3ad2ant3 eqtrd ) BCEZABFZDAEZGZDABHIIIZUDJKLZJUBUCUDDBEUFUGMUEABDUBU
+    CUDNUBUCUDOPABCDQRUDUBUGJMUCUDJKSTUA $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
