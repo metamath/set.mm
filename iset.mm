@@ -97552,6 +97552,14 @@ $)
     iftrue 3ad2ant3 eqtrd ) BCEZABFZDAEZGZDABHIIIZUDJKLZJUBUCUDDBEUFUGMUEABDUBU
     CUDNUBUCUDOPABCDQRUDUBUGJMUCUDJKSTUA $.
 
+  $( Value of the indicator function where it is ` 0 ` .  (Contributed by
+     Thierry Arnoux, 14-Aug-2017.) $)
+  ind0 $p |- ( ( O e. V /\ A C_ O /\ X e. ( O \ A ) ) ->
+                                          ( ( ( _Ind ` O ) ` A ) ` X ) = 0 ) $=
+    ( wcel wss cdif w3a cind cfv c1 cc0 wceq eldifi indfval syl3an3 wn 3ad2ant3
+    cif eldifn iffalsed eqtrd ) BCEZABFZDBAGEZHZDABIJJJZDAEZKLSZLUEUCUDDBEUGUIM
+    DBANABCDOPUFUHKLUEUCUHQUDDBATRUAUB $.
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
