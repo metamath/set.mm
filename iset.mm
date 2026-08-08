@@ -97571,6 +97571,17 @@ $)
       AUBVBUPDZUOUTADUCVCVBELVANEUTUDUEVBEESTUFUGUHUIUJESDURUSUMTAESUQUKULUN $.
   $}
 
+  ${
+    $d O x $.  $d V x $.
+    $( Indicator of the whole set.  (Contributed by Thierry Arnoux,
+       25-Jan-2026.) $)
+    indconst1 $p |- ( O e. V -> ( ( _Ind ` O ) ` O ) = ( O X. { 1 } ) ) $=
+      ( vx wcel c1 csn cind cfv wf cxp wceq cv cc0 cif wss cmpt ssid indval 1re
+      cr mpan2 wa simpr iftrued elexi elsn2 sylibr fmpt3d fconst2g ax-mp sylib
+      wb ) ABDZAEFZAAGHHZIZUOAUNJKZUMCACLADZEMNZUNUOUMAAOUOCAUSPKAQCAABRUAUMURU
+      BZUSEKUSUNDUTUREMUMURUCUDUSEETSUEUFUGUHETDUPUQULSAETUOUIUJUK $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
