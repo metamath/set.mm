@@ -97560,6 +97560,17 @@ $)
     cif eldifn iffalsed eqtrd ) BCEZABFZDBAGEZHZDABIJJJZDAEZKLSZLUEUCUDDBEUGUIM
     DBANABCDOPUFUHKLUEUCUHQUDDBATRUAUB $.
 
+  ${
+    $d O y $.  $d V y $.
+    $( Indicator of the empty set.  (Contributed by Thierry Arnoux,
+       25-Jan-2026.) $)
+    indconst0 $p |- ( O e. V -> ( ( _Ind ` O ) ` (/) ) = ( O X. { 0 } ) ) $=
+      ( vy wcel cc0 csn c0 cind cfv wf cxp wceq cv c1 cif wss cmpt 0ss cr 0re
+      indval mpan2 wa noel iffalsei elexi elsn2 mpbir a1i fmpt3d fconst2g ax-mp
+      wb sylib ) ABDZAEFZGAHIIZJZUQAUPKLZUOCACMZGDZNEOZUPUQUOGAPUQCAVBQLARCGABU
+      AUBVBUPDZUOUTADUCVCVBELVANEUTUDUEVBEESTUFUGUHUIUJESDURUSUMTAESUQUKULUN $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
