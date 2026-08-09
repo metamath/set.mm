@@ -12579,6 +12579,7 @@
 "reglogleb" is used by "pellfund14".
 "reglogltb" is used by "pellfund14".
 "reglogmul" is used by "pellfund14".
+"relcnvtrgOLD" is used by "relcnvtrOLD".
 "relop" is used by "funopg".
 "relrngo" is used by "iscrngo2".
 "relrngo" is used by "isdrngo1".
@@ -18703,6 +18704,8 @@ New usage of "reglogexpbas" is discouraged (1 uses).
 New usage of "reglogleb" is discouraged (1 uses).
 New usage of "reglogltb" is discouraged (1 uses).
 New usage of "reglogmul" is discouraged (1 uses).
+New usage of "relcnvtrOLD" is discouraged (0 uses).
+New usage of "relcnvtrgOLD" is discouraged (1 uses).
 New usage of "reldisjunOLD" is discouraged (0 uses).
 New usage of "reldmxpcALT" is discouraged (0 uses).
 New usage of "relop" is discouraged (1 uses).
@@ -20925,6 +20928,8 @@ Proof modification of "re2luk2" is discouraged (88 steps).
 Proof modification of "re2luk3" is discouraged (59 steps).
 Proof modification of "reexALT" is discouraged (19 steps).
 Proof modification of "refsymrels3" is discouraged (56 steps).
+Proof modification of "relcnvtrOLD" is discouraged (25 steps).
+Proof modification of "relcnvtrgOLD" is discouraged (123 steps).
 Proof modification of "reldisjunOLD" is discouraged (58 steps).
 Proof modification of "reldmxpcALT" is discouraged (143 steps).
 Proof modification of "relopabVD" is discouraged (354 steps).
