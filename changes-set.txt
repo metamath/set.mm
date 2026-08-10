@@ -92,6 +92,8 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+ 8-Aug-26 relcnvtr    ---         Deleted; redundant with relcnvtrg
+ 8-Aug-26 relcnvtrg   ---         Antecedent removed
 27-Jul-26 scottexs    ---         Deleted; use scottex with a class
                                   abstraction instead
 27-Jul-26 hta         [same]      New hypothesis uses the Scott operation
