@@ -92,6 +92,18 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+ 8-Aug-26 relcnvtr    ---         Deleted; redundant with relcnvtrg
+ 8-Aug-26 relcnvtrg   ---         Antecedent removed
+27-Jul-26 scottexs    ---         Deleted; use scottex with a class
+                                  abstraction instead
+27-Jul-26 hta         [same]      New hypothesis uses the Scott operation
+27-Jul-26 scott0s     scott0bs    New assertion uses the Scott operation
+27-Jul-26 karden      [same]      New hypotheses use the Scott operation
+27-Jul-26 kardex      [same]      New assertion uses the Scott operation
+27-Jul-26 cplem1      [same]      New hypothesis uses the Scott operation
+27-Jul-26 scott0i     scott0      Moved from BTT's mathbox to main
+27-Jul-26 scott0      scott0b     Merged with previous scott0b
+27-Jul-26 scottex     [same]      Merged with scottex2
 24-Jul-26 rimco       [same]      Moved from SN's mathbox to main set.mm
 24-Jul-26 rictr       [same]      Moved from SN's mathbox to main set.mm
 23-Jul-26 risefall0lem fz00m1
@@ -114,7 +126,8 @@ Date      Old         New         Notes
  5-Jul-26 13an22anass [same]      Moved from TA's mathbox to main set.mm
  5-Jul-26 elnelneqd   [same]      Moved from RR's mathbox to main set.mm
  5-Jul-26 elnelneq2d  [same]      Moved from RR's mathbox to main set.mm
- 2-Jul-26 ~ scotteqd to ~ scottrankd : Moved from RR's mathbox to main set.mm
+ 2-Jul-26 ---         ---         Move Scott's trick operation theorems
+                                  from RR's mathbox to main set.mm
  2-Jul-26 df-scott    [same]      Moved from RR's mathbox to main set.mm
 28-Jun-26 drnglidl1ne0 [same]     Moved from TA's mathbox to main set.mm
 28-Jun-26 pm4.71da    [same]      Moved from ZW's mathbox to main set.mm
@@ -172,7 +185,7 @@ Date      Old         New         Notes
  4-May-26 ricsym      [same]      Moved from SN's mathbox to main set.mm
  4-May-26 psrbagres   [same]      Moved from SN's mathbox to main set.mm
  4-May-26 mplcrngd    [same]      Moved from SN's mathbox to main set.mm
- 4-May-26 ---    ---              Move variable selection theorems
+ 4-May-26 ---         ---         Move variable selection theorems
                                   from SN's mathbox to main set.mm
 11-Apr-26 muldivdid   [same]      Moved from TA's mathbox to main set.mm
 11-Apr-26 elfzod      [same]      Moved from GS's mathbox to main set.mm
@@ -797,7 +810,7 @@ Date      Old         New         Notes
  1-May-25 imaexd    [same]      Moved from TA's mathbox to main set.mm
 30-Apr-25 idomrootle [same]     Moved from SO's mathbox to main set.mm
 30-Apr-25 ply1ascl0 [same]      Moved from TA's mathbox to main set.mm
-30-Apr-25 hashf1dmcdm [same]    Moved from BT's mathbox to main set.mm
+30-Apr-25 hashf1dmcdm [same]    Moved from BTT's mathbox to main set.mm
 30-Apr-25 sotrd     [same]      Moved from SF's mathbox to main set.mm
 30-Apr-25 iscnrm3lem3 4anpull2  Moved from ZW's mathbox to main set.mm
 25-Apr-25 mon1pid   [same]      Moved from SO's mathbox to main set.mm
@@ -935,8 +948,8 @@ Date      Old         New         Notes
 27-Feb-25 elnelall  pm2.24nel
 25-Feb-25 eqimssd   [same]      Moved from SN's mathbox to main set.mm
 25-Feb-25 eqimss2d  eqimsscd    Moved from SN's mathbox to main set.mm
-25-Feb-25 hashfundm [same]      Moved from BT's mathbox to main set.mm
-25-Feb-25 hashf1dmrn [same]     Moved from BT's mathbox to main set.mm
+25-Feb-25 hashfundm [same]      Moved from BTT's mathbox to main set.mm
+25-Feb-25 hashf1dmrn [same]     Moved from BTT's mathbox to main set.mm
 25-Feb-25 ressbasssg [same]     Moved from SN's mathbox to main set.mm
 25-Feb-25 ressbasss2 [same]     Moved from SN's mathbox to main set.mm
 25-Feb-25 resrhm2b  [same]      Moved from SN's mathbox to main set.mm
