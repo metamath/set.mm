@@ -195221,6 +195221,14 @@ $)
     ( ceu clog cfv c1 wceq ce df-e eqcomi crp wcel cr epr relogeftb mp2an mpbir
     wb 1re ) ABCDEZDFCZAEZASGHAIJDKJRTPLQADMNO $.
 
+  $( Apartness and the real natural logarithm.  (Contributed by Jim Kingdon,
+     14-Aug-2026.) $)
+  reaplog $p |- ( ( A e. RR+ /\ B e. RR+ ) ->
+      ( A =//= B <-> ( log ` A ) =//= ( log ` B ) ) ) $=
+    ( crp wcel wa clog cfv cap ce cr wb relogcl reapef syl2an reeflog breqan12d
+    wbr bitr2d ) ACDZBCDZEAFGZBFGZHQZUAIGZUBIGZHQZABHQSUAJDUBJDUCUFKTALBLUAUBMN
+    STUDAUEBHAOBOPR $.
+
   ${
     relogoprlem.1 $e |- ( ( ( log ` A ) e. CC /\ ( log ` B ) e. CC ) ->
                         ( exp ` ( ( log ` A ) F ( log ` B ) ) ) =
