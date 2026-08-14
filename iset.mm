@@ -194063,6 +194063,18 @@ $)
     wb 3bitr4d ) ACDZBCDZEZABFGZBAFGZHAIJZBIJZFGZUFUEFGZHZABKGUEUFKGZUBUCUGUDUH
     ABLUATUDUHRBALMNABOTUECDUFCDUJUIRUAAPBPUEUFOQS $.
 
+  $( If the exponential of a number is apart from one plus that number, the
+     number is apart from zero.  To some extent can be thought of as the
+     converse of ~ efgt1p .  (Contributed by Jim Kingdon, 13-Aug-2026.) $)
+  efap1p $p |- ( ( A e. RR /\ ( 1 + A ) =//= ( exp ` A ) ) -> A =//= 0 ) $=
+    ( cr wcel c1 caddc co ce cfv cap wbr wa cc0 simpr ad2antrr recnd a1i wb 0re
+    1cnd cc id addcomd wceq 0p1e1 3brtr4d 1red reapadd1 mpbird reapef mpan2 ef0
+    syl3anc breq2i bitrdi wo wi readdcld reefcl apcotr imp mpjaodan ) ABCZDAEFZ
+    AGHZIJZKZVCDIJZALIJZVDDIJZVFVGKZVHADEFZLDEFZIJZVJVCDVKVLIVFVGMVJADVJAVBVBVE
+    VGVBUAZNZOVJSUBVLDUCVJUDPUEVJVBLBCZDBCVHVMQVOVPVJRPVJUFALDUGULUHVFVIKVHVIVF
+    VIMVBVHVIQVEVIVBVHVDLGHZIJZVIVBVPVHVRQRALUIUJVQDVDIUKUMUNNUHVBVEVGVIUOZVBVC
+    TCVDTCDTCVEVSUPVBVCVBDAVBUFVNUQOVBVDAUROVBSVCVDDUSULUTVA $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
