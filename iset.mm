@@ -195503,6 +195503,17 @@ $)
     UUJYFUUKXDXAXEUGZUVIUVKUVMUVIUVKBAUHUIWPWKWSXGUVHUVJVNXMXGABYEYPWQMRWTRUIWR
     $.
 
+  $( The ` log x / x ` function is strictly decreasing on the reals greater
+     than ` _e ` .  (Contributed by Mario Carneiro, 3-May-2016.) $)
+  logdivle $p |- ( ( ( A e. RR /\ _e <_ A ) /\ ( B e. RR /\ _e <_ B ) ) ->
+                 ( A <_ B <-> ( ( log ` B ) / B ) <_ ( ( log ` A ) / A ) ) ) $=
+    ( cr wcel ceu cle wbr wa clt wn clog cfv cdiv co lenltd crp cc0 a1i ltletrd
+    elrpd logdivlt ancoms notbid simpll simprl 0red ere epos simprr relogcl syl
+    wb rerpdivcld simplr 3bitr4d ) ACDZEAFGZHZBCDZEBFGZHZHZBAIGZJAKLZAMNZBKLZBM
+    NZIGZJABFGVGVEFGVBVCVHVAURVCVHULBAUAUBUCVBABUPUQVAUDZURUSUTUEZOVBVGVEVBVFBV
+    BBPDVFCDVBBVJVBQEBVBUFZECDVBUGRZVJQEIGVBUHRZURUSUTUISTZBUJUKVNUMVBVDAVBAPDV
+    DCDVBAVIVBQEAVKVLVIVMUPUQVAUNSTZAUJUKVOUMOUO $.
+
   ${
     $d n x y A $.  $d n y B $.  $d k n m N $.
     $( The logarithm of a factorial can be expressed as a finite sum of logs.
