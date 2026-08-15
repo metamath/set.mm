@@ -197866,6 +197866,22 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Bertrand's postulate
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Value of the central binomial coefficient.  (Contributed by Mario
+     Carneiro, 13-Mar-2014.) $)
+  bcctr $p |- ( N e. NN0 -> ( ( 2 x. N ) _C N ) = ( ( ! ` ( 2 x. N ) ) /
+                ( ( ! ` N ) x. ( ! ` N ) ) ) ) $=
+    ( cn0 wcel c2 cmul co cbc cfa cfv cmin cdiv cc0 cfz wceq fzctr bcval2 nn0cn
+    syl 2timesd mvrladdd fveq2d oveq1d oveq2d eqtrd ) ABCZDAEFZAGFZUFHIZUFAJFZH
+    IZAHIZEFZKFZUHUKUKEFZKFUEALUFMFCUGUMNAOAUFPRUEULUNUHKUEUJUKUKEUEUIAHUEUFAAA
+    QZUOUEAUOSTUAUBUCUD $.
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Quadratic residues and the Legendre symbol
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
