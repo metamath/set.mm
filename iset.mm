@@ -197879,6 +197879,26 @@ $)
     IZAHIZEFZKFZUHUKUKEFZKFUEALUFMFCUGUMNAOAUFPRUEULUNUHKUEUJUKUKEUEUIAHUEUFAAA
     QZUOUEAUOSTUAUBUCUD $.
 
+  ${
+    $d k N $.  $d k P $.
+    $( Prime count of a central binomial coefficient.  (Contributed by Mario
+       Carneiro, 12-Mar-2014.) $)
+    pcbcctr $p |- ( ( N e. NN /\ P e. Prime ) ->
+      ( P pCnt ( ( 2 x. N ) _C N ) ) = sum_ k e. ( 1 ... ( 2 x. N ) )
+        ( ( |_ ` ( ( 2 x. N ) / ( P ^ k ) ) ) -
+          ( 2 x. ( |_ ` ( N / ( P ^ k ) ) ) ) ) ) $=
+      ( cn wcel wa c2 cmul co cfz cdiv cfl cfv cmin csu wceq adantr cn0 2timesd
+      caddc cprime cbc cpc c1 cv cexp cc0 2nn nnmulcl mpan nnnn0 fzctr syl pcbc
+      simpr syl3anc nncn mvrladdd fvoveq1d oveq1d ad2antrr cz nnz adantl elfznn
+      cq prmnn nnnn0d nnexpcl syl2an syl2anc flqcld zcnd eqtr4d oveq2d sumeq2dv
+      znq eqtrd ) CDEZAUAEZFZAGCHIZCUBIUCIZUDWBJIZWBABUEZUFIZKILMZWBCNIZWFKILMZ
+      CWFKIZLMZTIZNIZBOZWDWGGWKHIZNIZBOWAWBDEZCUGWBJIEZVTWCWNPVSWQVTGDEVSWQUHGC
+      UIUJQVSWRVTVSCREWRCUKCULUMQVSVTUOABCWBUNUPWAWDWMWPBWAWEWDEZFZWLWOWGNWTWLW
+      KWKTIZWOVSWLXAPVTWSVSWIWKWKTVSWHCWFLKVSWBCCCUQZXBVSCXBSURUSUTVAWTWKWTWKWT
+      WJWTCVBEZWFDEZWJVFEVSXCVTWSCVCVAWAADEZWEREXDWSVTXEVSAVGVDWSWEWEWBVEVHAWEV
+      IVJCWFVQVKVLVMSVNVOVPVR $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
