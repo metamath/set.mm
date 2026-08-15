@@ -197976,6 +197976,22 @@ $)
       LUNEUWDUVQUWAYTUVGUWELAUVHUVIUVJ $.
   $}
 
+  $( The binomial coefficient takes its maximum value at the center.
+     (Contributed by Mario Carneiro, 5-Mar-2014.) $)
+  bcmax $p |- ( ( N e. NN0 /\ K e. ZZ ) ->
+                   ( ( 2 x. N ) _C K ) <_ ( ( 2 x. N ) _C N ) ) $=
+    ( cn0 wcel cz wa cuz cfv c2 co cbc cle wbr 2nn0 simpll sylancr simpr cc syl
+    syl2anc cmul cdiv nn0mulcl nn0re leidd wceq nn0cn cc0 cap divcanap3 mp3an23
+    2cn 2ap0 breqtrrd bcmono syl3anc cmin simplr bccmpl caddc nn0red recnd zred
+    2timesd eluzle adantl leadd2dd eqbrtrd lesubaddd mpbird wb nn0zd zsubcld wo
+    eluz nn0z adantr uztric mpjaodan ) BCDZAEDZFZBAGHDZIBUAJZAKJZWDBKJZLMZABGHD
+    ZWBWCFZWDCDZWCBWDIUBJZLMZWGWIICDZVTWJNVTWAWCOZIBUCZPWBWCQWIVTWLWNVTBBWKLVTB
+    BUDUEVTBRDZWKBUFZBUGWPIRDIUHUIMWQULUMBIUJUKSUNZSABWDUOUPWBWHFZWEWDWDAUQJZKJ
+    ZWFLWSWJWAWEXAUFWSWMVTWJNVTWAWHOZWOPZVTWAWHURZAWDUSTWSWJBWTGHDZWLXAWFLMXCWS
+    XEWTBLMZWSXFWDBAUTJZLMWSWDBBUTJXGLWSBWSBWSBXBVAZVBVDWSBABXHWSAXDVCZXHWHBALM
+    WBBAVEVFVGVHWSWDABWSWDXCVAXIXHVIVJWSWTEDBEDZXEXFVKWSWDAWSWDXCVLXDVMWSBXBVLW
+    TBVOTVJWSVTWLXBWRSWTBWDUOUPVHWBWAXJWCWHVNVTWAQVTXJWABVPVQABVRTVS $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
