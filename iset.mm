@@ -98593,6 +98593,10 @@ $)
   3t2e6 $p |- ( 3 x. 2 ) = 6 $=
     ( c3 c2 cmul co caddc c6 3cn times2i 3p3e6 eqtri ) ABCDAAEDFAGHIJ $.
 
+  $( 2 times 3 equals 6.  (Contributed by Umit Teoman Dogan, 10-Jun-2026.) $)
+  2t3e6 $p |- ( 2 x. 3 ) = 6 $=
+    ( c3 c2 c6 3cn 2cn 3t2e6 mulcomli ) ABCDEFG $.
+
   $( 3 times 3 equals 9.  (Contributed by NM, 11-May-2004.) $)
   3t3e9 $p |- ( 3 x. 3 ) = 9 $=
     ( c3 cmul co c2 c1 caddc c9 df-3 oveq2i 3cn 2cn ax-1cn adddii 3t2e6 oveq12i
