@@ -93506,6 +93506,21 @@ $)
         ( cle wbr cmin co lesub2d mpbid ) ABCIJDCKLDBKLIJHABCDEFGMN $.
     $}
 
+    ${
+      lesub3d.x $e |- ( ph -> X e. RR ) $.
+      lesub3d.g $e |- ( ph -> ( X + C ) <_ A ) $.
+      lesub3d.l $e |- ( ph -> B <_ X ) $.
+      $( The result of subtracting a number less than or equal to an
+         intermediate number from a number greater than or equal to a third
+         number increased by the intermediate number is greater than or equal
+         to the third number.  (Contributed by AV, 13-Aug-2020.) $)
+      lesub3d $p |- ( ph -> C <_ ( A - B ) ) $=
+        ( caddc co cle wbr cmin readdcld recnd cr wcel addcomd leadd1dd eqbrtrd
+        letrd wb leaddsub syl3anc mpbid ) ADCLMZBNOZDBCPMNOZAUIEDLMZBADCHGQAEDI
+        HQFAUICDLMULNADCADHRACGRUAACEDGIHKUBUCJUDADSTCSTBSTUJUKUEHGFDCBUFUGUH
+        $.
+    $}
+
     lt2addd.4 $e |- ( ph -> D e. RR ) $.
     ${
       le2addd.5 $e |- ( ph -> A <_ C ) $.
