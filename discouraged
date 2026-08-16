@@ -16449,6 +16449,7 @@ New usage of "eigvalfval" is discouraged (1 uses).
 New usage of "eigvalval" is discouraged (2 uses).
 New usage of "eigvec1" is discouraged (2 uses).
 New usage of "eigvecval" is discouraged (1 uses).
+New usage of "el.OLD" is discouraged (0 uses).
 New usage of "el021old" is discouraged (2 uses).
 New usage of "el0321old" is discouraged (1 uses).
 New usage of "el1" is discouraged (3 uses).
@@ -16458,7 +16459,6 @@ New usage of "el2122old" is discouraged (1 uses).
 New usage of "elALT" is discouraged (0 uses).
 New usage of "elALT2" is discouraged (2 uses).
 New usage of "elALTtco" is discouraged (0 uses).
-New usage of "elOLD" is discouraged (0 uses).
 New usage of "ela" is discouraged (3 uses).
 New usage of "elabgtOLD" is discouraged (0 uses).
 New usage of "elat2" is discouraged (4 uses).
@@ -20212,6 +20212,7 @@ Proof modification of "eelTTT" is discouraged (50 steps).
 Proof modification of "eexinst01" is discouraged (15 steps).
 Proof modification of "eexinst11" is discouraged (19 steps).
 Proof modification of "efne0OLD" is discouraged (67 steps).
+Proof modification of "el.OLD" is discouraged (55 steps).
 Proof modification of "el021old" is discouraged (18 steps).
 Proof modification of "el0321old" is discouraged (20 steps).
 Proof modification of "el1" is discouraged (12 steps).
@@ -20221,7 +20222,6 @@ Proof modification of "el2122old" is discouraged (25 steps).
 Proof modification of "elALT" is discouraged (16 steps).
 Proof modification of "elALT2" is discouraged (48 steps).
 Proof modification of "elALTtco" is discouraged (30 steps).
-Proof modification of "elOLD" is discouraged (55 steps).
 Proof modification of "elabgtOLD" is discouraged (128 steps).
 Proof modification of "eleq2dALT" is discouraged (62 steps).
 Proof modification of "eleq2w2ALT" is discouraged (50 steps).
