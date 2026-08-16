@@ -6886,6 +6886,9 @@
 "h2hva" is used by "hhva".
 "h2hvs" is used by "h2hmetdval".
 "h2hvs" is used by "hhvs".
+"had0OLD" is used by "hadifpOLD".
+"had1OLD" is used by "had0OLD".
+"had1OLD" is used by "hadifpOLD".
 "halfnq" is used by "nsmallnq".
 "hatomic" is used by "atomli".
 "hatomici" is used by "atcvat4i".
@@ -16813,6 +16816,9 @@ New usage of "h2hnm" is discouraged (2 uses).
 New usage of "h2hsm" is discouraged (9 uses).
 New usage of "h2hva" is discouraged (9 uses).
 New usage of "h2hvs" is discouraged (2 uses).
+New usage of "had0OLD" is discouraged (1 uses).
+New usage of "had1OLD" is discouraged (2 uses).
+New usage of "hadifpOLD" is discouraged (0 uses).
 New usage of "halfnq" is discouraged (1 uses).
 New usage of "hatomic" is discouraged (1 uses).
 New usage of "hatomici" is discouraged (6 uses).
@@ -18902,6 +18908,7 @@ New usage of "sbel2x" is discouraged (0 uses).
 New usage of "sbequ5" is discouraged (0 uses).
 New usage of "sbequ6" is discouraged (0 uses).
 New usage of "sbequ8" is discouraged (0 uses).
+New usage of "sbequiOLD" is discouraged (0 uses).
 New usage of "sbhb" is discouraged (0 uses).
 New usage of "sbid2" is discouraged (2 uses).
 New usage of "sbid2v" is discouraged (0 uses).
@@ -19711,7 +19718,7 @@ Proof modification of "bj-axdd2" is discouraged (28 steps).
 Proof modification of "bj-axdd2ALT" is discouraged (8 steps).
 Proof modification of "bj-axnul" is discouraged (54 steps).
 Proof modification of "bj-axreprepsep" is discouraged (332 steps).
-Proof modification of "bj-axseprep" is discouraged (544 steps).
+Proof modification of "bj-axseprep" is discouraged (550 steps).
 Proof modification of "bj-axsn" is discouraged (12 steps).
 Proof modification of "bj-axtd" is discouraged (26 steps).
 Proof modification of "bj-bibibi" is discouraged (34 steps).
@@ -20514,6 +20521,9 @@ Proof modification of "gpg3nbgrvtx0ALT" is discouraged (293 steps).
 Proof modification of "grpinvfvalALT" is discouraged (161 steps).
 Proof modification of "grposnOLD" is discouraged (291 steps).
 Proof modification of "grpsubfvalALT" is discouraged (176 steps).
+Proof modification of "had0OLD" is discouraged (45 steps).
+Proof modification of "had1OLD" is discouraged (38 steps).
+Proof modification of "hadifpOLD" is discouraged (20 steps).
 Proof modification of "hashge3el3dif" is discouraged (229 steps).
 Proof modification of "hba1-o" is discouraged (34 steps).
 Proof modification of "hbae-o" is discouraged (85 steps).
@@ -21017,6 +21027,7 @@ Proof modification of "sbcoreleleq" is discouraged (91 steps).
 Proof modification of "sbcoreleleqVD" is discouraged (176 steps).
 Proof modification of "sbcovOLD" is discouraged (32 steps).
 Proof modification of "sbcssgVD" is discouraged (229 steps).
+Proof modification of "sbequiOLD" is discouraged (17 steps).
 Proof modification of "sbievOLD" is discouraged (24 steps).
 Proof modification of "sbievwOLD" is discouraged (23 steps).
 Proof modification of "sbn1ALT" is discouraged (41 steps).
