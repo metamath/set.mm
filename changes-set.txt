@@ -92,6 +92,7 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+15-Aug=26 fmptdF      fmptdf2     Avoids clash with fmptdf
  8-Aug-26 relcnvtr    ---         Deleted; redundant with relcnvtrg
  8-Aug-26 relcnvtrg   ---         Antecedent removed
 27-Jul-26 scottexs    ---         Deleted; use scottex with a class
