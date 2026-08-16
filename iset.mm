@@ -194063,6 +194063,18 @@ $)
     wb 3bitr4d ) ACDZBCDZEZABFGZBAFGZHAIJZBIJZFGZUFUEFGZHZABKGUEUFKGZUBUCUGUDUH
     ABLUATUDUHRBALMNABOTUECDUFCDUJUIRUAAPBPUEUFOQS $.
 
+  $( If the exponential of a number is apart from one plus that number, the
+     number is apart from zero.  To some extent can be thought of as the
+     converse of ~ efgt1p .  (Contributed by Jim Kingdon, 13-Aug-2026.) $)
+  efap1p $p |- ( ( A e. RR /\ ( 1 + A ) =//= ( exp ` A ) ) -> A =//= 0 ) $=
+    ( cr wcel c1 caddc co ce cfv cap wbr wa cc0 simpr ad2antrr recnd a1i wb 0re
+    1cnd cc id addcomd wceq 0p1e1 3brtr4d 1red reapadd1 mpbird reapef mpan2 ef0
+    syl3anc breq2i bitrdi wo wi readdcld reefcl apcotr imp mpjaodan ) ABCZDAEFZ
+    AGHZIJZKZVCDIJZALIJZVDDIJZVFVGKZVHADEFZLDEFZIJZVJVCDVKVLIVFVGMVJADVJAVBVBVE
+    VGVBUAZNZOVJSUBVLDUCVJUDPUEVJVBLBCZDBCVHVMQVOVPVJRPVJUFALDUGULUHVFVIKVHVIVF
+    VIMVBVHVIQVEVIVBVHVDLGHZIJZVIVBVPVHVRQRALUIUJVQDVDIUKUMUNNUHVBVEVGVIUOZVBVC
+    TCVDTCDTCVEVSUPVBVCVBDAVBUFVNUQOVBVDAUROVBSVCVDDUSULUTVA $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -195221,6 +195233,14 @@ $)
     ( ceu clog cfv c1 wceq ce df-e eqcomi crp wcel cr epr relogeftb mp2an mpbir
     wb 1re ) ABCDEZDFCZAEZASGHAIJDKJRTPLQADMNO $.
 
+  $( Apartness and the real natural logarithm.  (Contributed by Jim Kingdon,
+     14-Aug-2026.) $)
+  reaplog $p |- ( ( A e. RR+ /\ B e. RR+ ) ->
+      ( A =//= B <-> ( log ` A ) =//= ( log ` B ) ) ) $=
+    ( crp wcel wa clog cfv cap ce cr wb relogcl reapef syl2an reeflog breqan12d
+    wbr bitr2d ) ACDZBCDZEAFGZBFGZHQZUAIGZUBIGZHQZABHQSUAJDUBJDUCUFKTALBLUAUBMN
+    STUDAUEBHAOBOPR $.
+
   ${
     relogoprlem.1 $e |- ( ( ( log ` A ) e. CC /\ ( log ` B ) e. CC ) ->
                         ( exp ` ( ( log ` A ) F ( log ` B ) ) ) =
@@ -195454,6 +195474,45 @@ $)
   loglt1b $p |- ( A e. RR+ -> ( ( log ` A ) < 1 <-> A < _e ) ) $=
     ( crp wcel ceu clt wbr clog cfv c1 wb epr logltb mpan2 wceq loge a1i breq2d
     bitr2d ) ABCZADEFZAGHZDGHZEFZUAIEFSDBCTUCJKADLMSUBIUAEUBINSOPQR $.
+
+  $( The ` log x / x ` function is strictly decreasing on the reals greater
+     than ` _e ` .  (Contributed by Mario Carneiro, 14-Mar-2014.) $)
+  logdivlt $p |- ( ( ( A e. RR /\ _e <_ A ) /\ ( B e. RR /\ _e <_ B ) ) ->
+                   ( A < B <-> ( ( log ` B ) / B ) < ( ( log ` A ) / A ) ) ) $=
+    ( wcel ceu wbr wa clt co cap c1 cmul cc adantr cc0 a1i ltletrd elrpd mpbird
+    recnd c2 cr cle clog cfv cdiv wi w3a logdivlti ex 3expa adantrr simpll 0red
+    an32s ere epos simpllr relogcld mulridd simpr simprl simprr ad2antrr simplr
+    1cnd 1red 2re 1lt2 c3 egt2lt3 simpli lttrd crp wb loggt0b gt0ap0d apdivmuld
+    syl eqbrtrrd simplrr reaplog syl2anc rerpdivcld lt2mul2divd mulcomd breqtrd
+    mpbid wo ltapd apcotr syl3anc mpjaodan apsym wn ltnsymd con3d lenltd impbid
+    mpd leltapd ) AUACZDAUBEZFZBUACZDBUBEZFZFZABGEZBUCUDZBUEHZAUCUDZAUEHZGEZXCX
+    DXHXMUFZXEXAXDXBXNXAXDXBXNXAXDXBUGXHXMABUHUIUJUNUKXGXMXHXGXMFZXHBAIEZXOABIE
+    ZXPXOXIXKUEHZJIEZXQBAUEHZJIEZXOXSFZXQXKXIIEZYBXKJKHZXKXIIYBXKXOXKLCXSXOXKXO
+    AXOAXGXAXMXAXBXFULZMZXONDAXOUMZDUACZXOUOOZYFNDGEZXOUPOZXAXBXFXMUQPQZURZSZMZ
+    USYBXSYDXIIEXOXSUTYBXIXKJXGXILCXMXSXGXIXGBXGBXCXDXEVAZXGNDBXGUMZYHXGUOOZYPY
+    JXGUPOZXCXDXEVBPQURSVCYOYBVEXGXKNIEXMXSXGXKXGAXGAYEXGNDAYQYRYEYSXAXBXFVDZPZ
+    QZURXGNXKGEZJAGEZXGJTAXGVFTUACXGVGOZYEJTGEXGVHOXGTDAUUEYRYETDGEZXGUUFDVIGEV
+    JVKOYTPVLXGAVMCZUUCUUDVNUUBAVOVRRZVPVCVQWGVSYBUUGBVMCZXQYCVNXOUUGXSYLMXOUUI
+    XSXOBXGXDXMYPMZXONDBYGYIUUJYKXCXDXEXMVTZPQZMABWAWBRXOYAFZAJKHZABIUUMAUUMAXO
+    XAYAYFMSZUSUUMYAUUNBIEXOYAUTUUMBAJXOBLCZYAXOBUUJSZMUUOUUMVEXGANIEXMYAXGAYEU
+    UAVPVCVQWGVSXOXRXTIEZXSYAWHZXOXRXTXOXIXKXOBUULURZXOXKYMXGUUCXMUUHMQZWCZXOBA
+    UUJYLWCZXOXIAKHZBXKKHZGEXRXTGEXOUVDXKBKHZUVEGXOUVDUVFGEXMXGXMUTZXOXIAXKBUUT
+    YLYMUULWDRXOXKBYNUUQWEWFXOXIABXKUUTYLUUJUVAWDWGWIXOXRLCXTLCJLCUURUUSUFXOXRU
+    VBSXOXTUVCSXOVEXRXTJWJWKWSWLXOALCUUPXQXPVNXOAYFSUUQABWMWBWGXOABYFUUJXOABUBE
+    ZBAGEZWNZXOXLXJGEZWNZUVJXOXJXLXOXIBUUTUULWCXOXKAYMYLWCUVGWOXOXDXAXEUVLUVJUF
+    UUJYFUUKXDXAXEUGZUVIUVKUVMUVIUVKBAUHUIWPWKWSXGUVHUVJVNXMXGABYEYPWQMRWTRUIWR
+    $.
+
+  $( The ` log x / x ` function is decreasing on the reals greater than
+     ` _e ` .  (Contributed by Mario Carneiro, 3-May-2016.) $)
+  logdivle $p |- ( ( ( A e. RR /\ _e <_ A ) /\ ( B e. RR /\ _e <_ B ) ) ->
+                 ( A <_ B <-> ( ( log ` B ) / B ) <_ ( ( log ` A ) / A ) ) ) $=
+    ( cr wcel ceu cle wbr wa clt wn clog cfv cdiv co lenltd crp cc0 a1i ltletrd
+    elrpd logdivlt ancoms notbid simpll simprl 0red ere epos simprr relogcl syl
+    wb rerpdivcld simplr 3bitr4d ) ACDZEAFGZHZBCDZEBFGZHZHZBAIGZJAKLZAMNZBKLZBM
+    NZIGZJABFGVGVEFGVBVCVHVAURVCVHULBAUAUBUCVBABUPUQVAUDZURUSUTUEZOVBVGVEVBVFBV
+    BBPDVFCDVBBVJVBQEBVBUFZECDVBUGRZVJQEIGVBUHRZURUSUTUISTZBUJUKVNUMVBVDAVBAPDV
+    DCDVBAVIVBQEAVKVLVIVMUPUQVAUNSTZAUJUKVOUMOUO $.
 
   ${
     $d n x y A $.  $d n y B $.  $d k n m N $.
