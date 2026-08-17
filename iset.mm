@@ -32709,6 +32709,15 @@ $)
       OINABJNBDKLM $.
   $}
 
+  ${
+    elpwd.1 $e |- ( ph -> A e. V ) $.
+    elpwd.2 $e |- ( ph -> A C_ B ) $.
+    $( Membership in a power class.  (Contributed by Glauco Siliprandi,
+       11-Oct-2020.) $)
+    elpwd $p |- ( ph -> A e. ~P B ) $=
+      ( cpw wcel wss wb elpwg syl mpbird ) ABCGHZBCIZFABDHNOJEBCDKLM $.
+  $}
+
   $( Subset relation implied by membership in a power class.  (Contributed by
      NM, 17-Feb-2007.) $)
   elpwi $p |- ( A e. ~P B -> A C_ B ) $=
@@ -33659,6 +33668,13 @@ $)
     prid2 $p |- B e. { A , B } $=
       ( cpr prid1 prcom eleqtri ) BBADABDBACEBAFG $.
   $}
+
+  $( Membership of a conditional operator in an unordered pair.  (Contributed
+     by NM, 17-Jun-2007.) $)
+  ifprdc $p |- ( ( A e. C /\ B e. D /\ DECID ph )
+      -> if ( ph , A , B ) e. { A , B } ) $=
+    ( wcel wdc w3a cpr prid1g 3ad2ant1 prid2g 3ad2ant2 simp3 ifcldcd ) BDFZCEFZ
+    AGZHABCBCIZPQBSFRBCDJKQPCSFRBCELMPQRNO $.
 
   $( An unordered pair is a singleton or a subset of itself.  This theorem is
      helpful to convert theorems about walks in arbitrary graphs into theorems
@@ -51666,6 +51682,17 @@ $)
   $}
 
   ${
+    $d A x $.  $d F x $.
+    $( The value of a relation outside its domain is the empty set.
+       (Contributed by Jim Kingdon, 6-Aug-2026.) $)
+    relndmfv $p |- ( ( Rel F /\ -. A e. dom F ) -> ( F ` A ) = (/) ) $=
+      ( vx wrel cdm wcel wn wa cfv c0 cvv cv relelfvdm elexd adantlr ex wi noel
+      pm2.21i a1i wb wceq simpr simplr ndmfvg syl2anc eleq2d pm5.21ndd eqrdv )
+      BDZABEZFGZHZCABIZJUMAKFZCLZUNFZUPJFZUMUQUOUJUQUOULUJUQHAUKUPABMNOPURUOQUM
+      URUOUPRSTUMUOUQURUAUMUOHZUNJUPUSUOULUNJUBUMUOUCUJULUOUDABUEUFUGPUHUI $.
+  $}
+
+  ${
     $d B k x $.  $d F j k x $.
     $( If a function value has a member, the function is inhabited.
        (Contributed by Jim Kingdon, 14-Jun-2025.) $)
@@ -52459,6 +52486,18 @@ $)
   $}
 
   ${
+    $d ph x $.  $d A x $.  $d C x $.  $d D x $.
+    fvmptd4.1 $e |- ( x = A -> B = C ) $.
+    fvmptd4.2 $e |- ( ph -> F = ( x e. D |-> B ) ) $.
+    fvmptd4.3 $e |- ( ph -> A e. D ) $.
+    fvmptd4.4 $e |- ( ph -> C e. V ) $.
+    $( Deduction version of ~ fvmpt (where the substitution hypothesis does not
+       have the antecedent ` ph ` ).  (Contributed by SN, 26-Jul-2024.) $)
+    fvmptd4 $p |- ( ph -> ( F ` A ) = C ) $=
+      ( cv wceq adantl fvmptd ) ABCDEFGHJBMCNDENAIOKLP $.
+  $}
+
+  ${
     $d M x y $.  $d V x $.  $d X x y $.  $d Y y $.  $d m y $.
     elfvmptrab1.f $e |- F = ( x e. V |-> { y e. [_ x / m ]_ M | ph } ) $.
     elfvmptrab1.v $e |- ( X e. V -> [_ X / m ]_ M e. _V ) $.
@@ -52489,6 +52528,27 @@ $)
       eqcomd cvv eqeltrd elfvmptrab1 eleq2d biimpd imdistani ) HGDLMGFMZHKGENZM
       ZOULHEMZOABCKDEFGHDBFACEPZQBFACKBUAZENZPZQIBFUPUSUQFMZEURRUPUSRUTUREKUQEF
       SUEACEURUBTUCUDULUMEUFKGEFSZJUGUHULUNUOULUNUOULUMEHVAUIUJUKT $.
+  $}
+
+  ${
+    $d x y A $.
+    fvopab4ndm.1 $e |- F = { <. x , y >. | ( x e. A /\ ph ) } $.
+    $( Value of a function given by an ordered-pair class abstraction, outside
+       of its domain.  (Contributed by NM, 28-Mar-2008.) $)
+    fvopab4ndm $p |- ( -. B e. A -> ( F ` B ) = (/) ) $=
+      ( cdm wcel cfv c0 wceq cv wa copab dmeqi dmopabss eqsstri sseli wrel mpan
+      wn relopabiv relndmfv nsyl5 ) EFHZIZEDIEFJKLZUFDEUFBMDIANZBCOZHDFUJGPABCD
+      QRSFTUGUBUHUIBCFGUCEFUDUAUE $.
+  $}
+
+  ${
+    $d A x y $.  $d B y $.
+    fvmptndm.1 $e |- F = ( x e. A |-> B ) $.
+    $( Value of a function given by the maps-to notation, outside of its
+       domain.  (Contributed by AV, 31-Dec-2020.) $)
+    fvmptndm $p |- ( -. X e. A -> ( F ` X ) = (/) ) $=
+      ( vy cv wceq cmpt wcel wa copab df-mpt eqtri fvopab4ndm ) GHCIZAGBEDDABCJ
+      AHBKQLAGMFAGBCNOP $.
   $}
 
   ${
@@ -97384,6 +97444,142 @@ $)
       VPHGZVKWCTVKAHCWDUQZWGVNUPZWGVPVNWIWGWCTVKAHVLCWDURZUSUTWGVNWLVAVFWGVMVOL
       QVMVNRQVLVSKWGVMVNVKAHVLBWBURZWLVBVKAAVMVNRAHBCDDVLVKAHBWBUQWJWEWEWFWHWKW
       GVMVNWMWLVCVDVEVG $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Indicator Functions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  According to Wikipedia ( ~ https://en.wikipedia.org/wiki/Indicator_function ,
+  "Indicator function", 11-Apr-2026): "In mathematics, an _indicator function_
+  or a _characteristic function_ of a subset of a set is a function that maps
+  elements of the subset to one, and all other elements to zero.  That is, if
+  ` A ` is a subset of some set ` X `, then the indicator function of ` A ` is
+  the function ` _Ind `_A defined by ` _Ind `_A ( x ) = 1 if ` x e. A `, and
+  ` _Ind `_A ( x ) = 0 otherwise."
+
+  See also definition in [Lang2] p. 3: "The _characteristic function_ of a
+  subset S' of S is the function ` ch ` such that ` ch `(x) = 1 if ` x e. S `'
+  and ` ch `(x) = 0 if ` x e/ S `'".
+$)
+
+  $c _Ind $.
+
+  $( Extend class notation with the indicator function generator. $)
+  cind $a class _Ind $.
+
+  ${
+    $d a o x $.
+    $( Define the indicator function generator.  It generates an indicator
+       function ` ( ( _Ind `` O ) `` A ) ` for a given domain ` O ` and a given
+       subset ` A ` of the domain, see ~ indval .  In contrast to the
+       definitions and notations in Wikipedia and [Lang2] p. 3, the domain and
+       the subset are always mentioned explicitly.  (Contributed by Thierry
+       Arnoux, 20-Jan-2017.) $)
+    df-ind $a |- _Ind = ( o e. _V |-> ( a e. ~P o |->
+                                    ( x e. o |-> if ( x e. a , 1 , 0 ) ) ) ) $.
+  $}
+
+  ${
+    $d a o x O $.  $d a o V $.
+    $( Value of the indicator function generator with domain ` O ` .
+       (Contributed by Thierry Arnoux, 23-Aug-2017.) $)
+    indv $p |- ( O e. V ->
+     ( _Ind ` O ) = ( a e. ~P O |-> ( x e. O |-> if ( x e. a , 1 , 0 ) ) ) ) $=
+      ( vo wcel cv cpw c1 cc0 cif cmpt cvv cind df-ind wceq pweq mpteq12dv elex
+      mpteq1 pwexg mptexg 3syl fvmptd3 ) BCFZEBDEGZHZAUFAGDGFIJKZLZLDBHZABUHLZL
+      ZMNMAEDOUFBPDUGUIUJUKUFBQAUFBUHTRBCSZUEBMFUJMFULMFUMBMUADUJUKMUBUCUD $.
+
+    $d a x A $.
+    $( Value of the indicator function generator for a set ` A ` and a domain
+       ` O ` , i.e., an indicator function for a given domain ` O ` and a given
+       subset ` A ` of the domain.  (Contributed by Thierry Arnoux,
+       2-Feb-2017.) $)
+    indval $p |- ( ( O e. V /\ A C_ O ) ->
+               ( ( _Ind ` O ) ` A ) = ( x e. O |-> if ( x e. A , 1 , 0 ) ) ) $=
+      ( va wcel wss wa cv c1 cc0 cif cmpt cpw cind cfv cvv wceq indv adantr
+      eleq2 ifbid mpteq2dv adantl ssexg ancoms simpr elpwd mptexg fvmptd ) CDFZ
+      BCGZHZEBACAIZEIZFZJKLZMZACUNBFZJKLZMZCNZCOPZQUKVCEVBURMRULACDESTUOBRZURVA
+      RUMVDACUQUTVDUPUSJKUOBUNUAUBUCUDUMBCQULUKBQFBCDUEUFUKULUGUHUKVAQFULACUTDU
+      ITUJ $.
+
+    $d O j z $.  $d A z $.
+    $( The indicator function generator does not generate a (meaningful)
+       indicator function for a class which is not a subset of the domain.
+       (Contributed by AV, 11-Apr-2026.) $)
+    indval0 $p |- ( -. A C_ O -> ( ( _Ind ` O ) ` A ) = (/) ) $=
+      ( vz vj vo va vx wn cind cfv c0 cvv wcel cv wi cpw cmpt syl a1i wceq noel
+      wss wex elfvm c1 cc0 cif df-ind mptrcl exlimiv pm2.21i indv fveq1d adantr
+      wb elpwi con3i adantl eqid fvmptndm eqtrd eleq2d expcom pm5.21ndd eqrdv
+      wa ) ABUBZHZCABIJZJZKVHBLMZCNZVJMZVLKMZVMVKOVHVMDNZVIMZDUCVKVLADVIUDVPVKD
+      ELFENZPGVQGNFNMUEUFUGZQQIVOBGEFUHUIUJRSVNVKOVHVNVKVLUAUKSVKVHVMVNUOVKVHVF
+      ZVJKVLVSVJAFBPZGBVRQZQZJZKVKVJWCTVHVKAVIWBGBLFULUMUNVSAVTMZHZWCKTVHWEVKWD
+      VGABUPUQURFVTWAWBAWBUSUTRVAVBVCVDVE $.
+  $}
+
+  ${
+    $d x y A $.  $d x y O $.  $d y V $.
+    $( An indicator function as a function with domain and codomain.
+       (Contributed by Thierry Arnoux, 13-Aug-2017.) $)
+    indfdc $p |- ( ( O e. V /\ A C_ O /\ A. x e. O DECID x e. A ) ->
+                                    ( ( _Ind ` O ) ` A ) : O --> { 0 , 1 } ) $=
+      ( vy wcel wss cv wdc wral w3a c1 cc0 cif cpr cind cfv cmpt wceq cr indval
+      3adant3 wa 1red eleq1w dcbid simpl3 simpr rspcdva ifprdc syl3anc eleqtrdi
+      0red prcom fmpt3d ) CDFZBCGZAHZBFZIZACJZKZECEHZBFZLMNZMLOZBCPQQZUPUQVGECV
+      ERSVAEBCDUAUBVBVCCFZUCZVELMOZVFVILTFMTFVDIZVEVJFVIUDVIUMVIUTVKACVCURVCSUS
+      VDAEBUEUFUPUQVAVHUGVBVHUHUIVDLMTTUJUKLMUNULUO $.
+  $}
+
+  ${
+    $d x A $.  $d x O $.  $d x V $.  $d x X $.
+    $( Value of the indicator function.  (Contributed by Thierry Arnoux,
+       13-Aug-2017.) $)
+    indfval $p |- ( ( O e. V /\ A C_ O /\ X e. O ) ->
+      ( ( ( _Ind ` O ) ` A ) ` X ) = if ( X e. A , 1 , 0 ) ) $=
+      ( vx wcel wss w3a cv c1 cc0 cif cind cfv cvv cmpt wceq indval cr elexi wa
+      3adant3 simpr eleq1d ifbid simp3 1re 0re ifex a1i fvmptd ) BCFZABGZDBFZHZ
+      EDEIZAFZJKLZDAFZJKLZBABMNNZOULUMVAEBURPQUNEABCRUBUOUPDQZUAZUQUSJKVCUPDAUO
+      VBUCUDUEULUMUNUFUTOFUOUSJKJSUGTKSUHTUIUJUK $.
+  $}
+
+  $( Value of the indicator function where it is ` 1 ` .  (Contributed by
+     Thierry Arnoux, 14-Aug-2017.) $)
+  ind1 $p |- ( ( O e. V /\ A C_ O /\ X e. A ) ->
+                                          ( ( ( _Ind ` O ) ` A ) ` X ) = 1 ) $=
+    ( wcel wss w3a cind cfv c1 cc0 cif wceq simp2 simp3 sseldd indfval syld3an3
+    iftrue 3ad2ant3 eqtrd ) BCEZABFZDAEZGZDABHIIIZUDJKLZJUBUCUDDBEUFUGMUEABDUBU
+    CUDNUBUCUDOPABCDQRUDUBUGJMUCUDJKSTUA $.
+
+  $( Value of the indicator function where it is ` 0 ` .  (Contributed by
+     Thierry Arnoux, 14-Aug-2017.) $)
+  ind0 $p |- ( ( O e. V /\ A C_ O /\ X e. ( O \ A ) ) ->
+                                          ( ( ( _Ind ` O ) ` A ) ` X ) = 0 ) $=
+    ( wcel wss cdif w3a cind cfv c1 cc0 wceq eldifi indfval syl3an3 wn 3ad2ant3
+    cif eldifn iffalsed eqtrd ) BCEZABFZDBAGEZHZDABIJJJZDAEZKLSZLUEUCUDDBEUGUIM
+    DBANABCDOPUFUHKLUEUCUHQUDDBATRUAUB $.
+
+  ${
+    $d O y $.  $d V y $.
+    $( Indicator of the empty set.  (Contributed by Thierry Arnoux,
+       25-Jan-2026.) $)
+    indconst0 $p |- ( O e. V -> ( ( _Ind ` O ) ` (/) ) = ( O X. { 0 } ) ) $=
+      ( vy wcel cc0 csn c0 cind cfv wf cxp wceq cv c1 cif wss cmpt 0ss cr 0re
+      indval mpan2 wa noel iffalsei elexi elsn2 mpbir a1i fmpt3d fconst2g ax-mp
+      wb sylib ) ABDZAEFZGAHIIZJZUQAUPKLZUOCACMZGDZNEOZUPUQUOGAPUQCAVBQLARCGABU
+      AUBVBUPDZUOUTADUCVCVBELVANEUTUDUEVBEESTUFUGUHUIUJESDURUSUMTAESUQUKULUN $.
+  $}
+
+  ${
+    $d O x $.  $d V x $.
+    $( Indicator of the whole set.  (Contributed by Thierry Arnoux,
+       25-Jan-2026.) $)
+    indconst1 $p |- ( O e. V -> ( ( _Ind ` O ) ` O ) = ( O X. { 1 } ) ) $=
+      ( vx wcel c1 csn cind cfv wf cxp wceq cv cc0 cif wss cmpt ssid indval 1re
+      cr mpan2 wa simpr iftrued elexi elsn2 sylibr fmpt3d fconst2g ax-mp sylib
+      wb ) ABDZAEFZAAGHHZIZUOAUNJKZUMCACLADZEMNZUNUOUMAAOUOCAUSPKAQCAABRUAUMURU
+      BZUSEKUSUNDUTUREMUMURUCUDUSEETSUEUFUGUHETDUPUQULSAETUOUIUJUK $.
   $}
 
 
@@ -193867,6 +194063,18 @@ $)
     wb 3bitr4d ) ACDZBCDZEZABFGZBAFGZHAIJZBIJZFGZUFUEFGZHZABKGUEUFKGZUBUCUGUDUH
     ABLUATUDUHRBALMNABOTUECDUFCDUJUIRUAAPBPUEUFOQS $.
 
+  $( If the exponential of a number is apart from one plus that number, the
+     number is apart from zero.  To some extent can be thought of as the
+     converse of ~ efgt1p .  (Contributed by Jim Kingdon, 13-Aug-2026.) $)
+  efap1p $p |- ( ( A e. RR /\ ( 1 + A ) =//= ( exp ` A ) ) -> A =//= 0 ) $=
+    ( cr wcel c1 caddc co ce cfv cap wbr wa cc0 simpr ad2antrr recnd a1i wb 0re
+    1cnd cc id addcomd wceq 0p1e1 3brtr4d 1red reapadd1 mpbird reapef mpan2 ef0
+    syl3anc breq2i bitrdi wo wi readdcld reefcl apcotr imp mpjaodan ) ABCZDAEFZ
+    AGHZIJZKZVCDIJZALIJZVDDIJZVFVGKZVHADEFZLDEFZIJZVJVCDVKVLIVFVGMVJADVJAVBVBVE
+    VGVBUAZNZOVJSUBVLDUCVJUDPUEVJVBLBCZDBCVHVMQVOVPVJRPVJUFALDUGULUHVFVIKVHVIVF
+    VIMVBVHVIQVEVIVBVHVDLGHZIJZVIVBVPVHVRQRALUIUJVQDVDIUKUMUNNUHVBVEVGVIUOZVBVC
+    TCVDTCDTCVEVSUPVBVCVBDAVBUFVNUQOVBVDAUROVBSVCVDDUSULUTVA $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -195025,6 +195233,14 @@ $)
     ( ceu clog cfv c1 wceq ce df-e eqcomi crp wcel cr epr relogeftb mp2an mpbir
     wb 1re ) ABCDEZDFCZAEZASGHAIJDKJRTPLQADMNO $.
 
+  $( Apartness and the real natural logarithm.  (Contributed by Jim Kingdon,
+     14-Aug-2026.) $)
+  reaplog $p |- ( ( A e. RR+ /\ B e. RR+ ) ->
+      ( A =//= B <-> ( log ` A ) =//= ( log ` B ) ) ) $=
+    ( crp wcel wa clog cfv cap ce cr wb relogcl reapef syl2an reeflog breqan12d
+    wbr bitr2d ) ACDZBCDZEAFGZBFGZHQZUAIGZUBIGZHQZABHQSUAJDUBJDUCUFKTALBLUAUBMN
+    STUDAUEBHAOBOPR $.
+
   ${
     relogoprlem.1 $e |- ( ( ( log ` A ) e. CC /\ ( log ` B ) e. CC ) ->
                         ( exp ` ( ( log ` A ) F ( log ` B ) ) ) =
@@ -195258,6 +195474,45 @@ $)
   loglt1b $p |- ( A e. RR+ -> ( ( log ` A ) < 1 <-> A < _e ) ) $=
     ( crp wcel ceu clt wbr clog cfv c1 wb epr logltb mpan2 wceq loge a1i breq2d
     bitr2d ) ABCZADEFZAGHZDGHZEFZUAIEFSDBCTUCJKADLMSUBIUAEUBINSOPQR $.
+
+  $( The ` log x / x ` function is strictly decreasing on the reals greater
+     than ` _e ` .  (Contributed by Mario Carneiro, 14-Mar-2014.) $)
+  logdivlt $p |- ( ( ( A e. RR /\ _e <_ A ) /\ ( B e. RR /\ _e <_ B ) ) ->
+                   ( A < B <-> ( ( log ` B ) / B ) < ( ( log ` A ) / A ) ) ) $=
+    ( wcel ceu wbr wa clt co cap c1 cmul cc adantr cc0 a1i ltletrd elrpd mpbird
+    recnd c2 cr cle clog cfv cdiv wi w3a logdivlti ex 3expa adantrr simpll 0red
+    an32s ere epos simpllr relogcld mulridd simpr simprl simprr ad2antrr simplr
+    1cnd 1red 2re 1lt2 c3 egt2lt3 simpli lttrd crp wb loggt0b gt0ap0d apdivmuld
+    syl eqbrtrrd simplrr reaplog syl2anc rerpdivcld lt2mul2divd mulcomd breqtrd
+    mpbid wo ltapd apcotr syl3anc mpjaodan apsym wn ltnsymd con3d lenltd impbid
+    mpd leltapd ) AUACZDAUBEZFZBUACZDBUBEZFZFZABGEZBUCUDZBUEHZAUCUDZAUEHZGEZXCX
+    DXHXMUFZXEXAXDXBXNXAXDXBXNXAXDXBUGXHXMABUHUIUJUNUKXGXMXHXGXMFZXHBAIEZXOABIE
+    ZXPXOXIXKUEHZJIEZXQBAUEHZJIEZXOXSFZXQXKXIIEZYBXKJKHZXKXIIYBXKXOXKLCXSXOXKXO
+    AXOAXGXAXMXAXBXFULZMZXONDAXOUMZDUACZXOUOOZYFNDGEZXOUPOZXAXBXFXMUQPQZURZSZMZ
+    USYBXSYDXIIEXOXSUTYBXIXKJXGXILCXMXSXGXIXGBXGBXCXDXEVAZXGNDBXGUMZYHXGUOOZYPY
+    JXGUPOZXCXDXEVBPQURSVCYOYBVEXGXKNIEXMXSXGXKXGAXGAYEXGNDAYQYRYEYSXAXBXFVDZPZ
+    QZURXGNXKGEZJAGEZXGJTAXGVFTUACXGVGOZYEJTGEXGVHOXGTDAUUEYRYETDGEZXGUUFDVIGEV
+    JVKOYTPVLXGAVMCZUUCUUDVNUUBAVOVRRZVPVCVQWGVSYBUUGBVMCZXQYCVNXOUUGXSYLMXOUUI
+    XSXOBXGXDXMYPMZXONDBYGYIUUJYKXCXDXEXMVTZPQZMABWAWBRXOYAFZAJKHZABIUUMAUUMAXO
+    XAYAYFMSZUSUUMYAUUNBIEXOYAUTUUMBAJXOBLCZYAXOBUUJSZMUUOUUMVEXGANIEXMYAXGAYEU
+    UAVPVCVQWGVSXOXRXTIEZXSYAWHZXOXRXTXOXIXKXOBUULURZXOXKYMXGUUCXMUUHMQZWCZXOBA
+    UUJYLWCZXOXIAKHZBXKKHZGEXRXTGEXOUVDXKBKHZUVEGXOUVDUVFGEXMXGXMUTZXOXIAXKBUUT
+    YLYMUULWDRXOXKBYNUUQWEWFXOXIABXKUUTYLUUJUVAWDWGWIXOXRLCXTLCJLCUURUUSUFXOXRU
+    VBSXOXTUVCSXOVEXRXTJWJWKWSWLXOALCUUPXQXPVNXOAYFSUUQABWMWBWGXOABYFUUJXOABUBE
+    ZBAGEZWNZXOXLXJGEZWNZUVJXOXJXLXOXIBUUTUULWCXOXKAYMYLWCUVGWOXOXDXAXEUVLUVJUF
+    UUJYFUUKXDXAXEUGZUVIUVKUVMUVIUVKBAUHUIWPWKWSXGUVHUVJVNXMXGABYEYPWQMRWTRUIWR
+    $.
+
+  $( The ` log x / x ` function is decreasing on the reals greater than
+     ` _e ` .  (Contributed by Mario Carneiro, 3-May-2016.) $)
+  logdivle $p |- ( ( ( A e. RR /\ _e <_ A ) /\ ( B e. RR /\ _e <_ B ) ) ->
+                 ( A <_ B <-> ( ( log ` B ) / B ) <_ ( ( log ` A ) / A ) ) ) $=
+    ( cr wcel ceu cle wbr wa clt wn clog cfv cdiv co lenltd crp cc0 a1i ltletrd
+    elrpd logdivlt ancoms notbid simpll simprl 0red ere epos simprr relogcl syl
+    wb rerpdivcld simplr 3bitr4d ) ACDZEAFGZHZBCDZEBFGZHZHZBAIGZJAKLZAMNZBKLZBM
+    NZIGZJABFGVGVEFGVBVCVHVAURVCVHULBAUAUBUCVBABUPUQVAUDZURUSUTUEZOVBVGVEVBVFBV
+    BBPDVFCDVBBVJVBQEBVBUFZECDVBUGRZVJQEIGVBUHRZURUSUTUISTZBUJUKVNUMVBVDAVBAPDV
+    DCDVBAVIVBQEAVKVLVIVMUPUQVAUNSTZAUJUKVOUMOUO $.
 
   ${
     $d n x y A $.  $d n y B $.  $d k n m N $.
@@ -210302,6 +210557,9 @@ htmldef "=//=" as ' # ';
 htmldef "#RR" as ' #<SUB>&#8477;</SUB> ';
   althtmldef "#RR" as ' #<SUB>&#8477;</SUB> ';
   latexdef "#RR" as "\neq\mathrel{\mkern -10mu}\neq_\mathbb{R}";
+htmldef "_Ind" as "&#x1D7ED;";
+  althtmldef "_Ind" as "&#x1D7ED;";
+  latexdef "_Ind" as "\pmb{1}";
 htmldef "NN" as "<IMG SRC='bbn.gif' WIDTH=12 HEIGHT=19 ALT=' NN' TITLE='NN'>";
   althtmldef "NN" as '&#8469;'; /* &Nopf; */
     /* 2-Jan-2016 reverted sans-serif */
@@ -211115,6 +211373,12 @@ htmldef "Ind" as "Ind ";
   althtmldef "Ind" as "Ind ";
   latexdef "Ind" as "\mathrm{Ind}";
 /* End of BJ's mathbox */
+
+/* Mathbox of Jim Kingdon */
+htmldef "WEXMID" as "<SMALL>WEXMID</SMALL>";
+  althtmldef "WEXMID" as "<SMALL>WEXMID</SMALL>";
+  latexdef "WEXMID" as "\mathrm{WEXMID}";
+/* End of Jim Kingdon's mathbox */
 
 /* Mathbox of David A. Wheeler */
 htmldef "AE" as
@@ -214788,6 +215052,15 @@ $)
   $}
 
   ${
+    $d x ph $.
+    $( Converting between propositions and corresponding subsets of a
+       singleton.  (Contributed by Jim Kingdon, 31-Jul-2026.) $)
+    rabid1o $p |- ( { x e. 1o | ph } = 1o <-> ph ) $=
+      ( vy c1o wral crab wceq c0 wcel cv wex wb 0lt1o elex2 r19.3rmv mp2b eqcom
+      rabid2 3bitr2ri ) AABDEZDABDFZGUADGHDICJDICKATLMCHDNABCDOPABDRDUAQS $.
+  $}
+
+  ${
     $d x y $.
     $( The powerset of ` 1o ` having decidable equality is equivalent to
        excluded middle.  (Contributed by Jim Kingdon, 12-Feb-2026.) $)
@@ -214869,6 +215142,108 @@ $)
       CUDVKCEUEUFQVSVJVLWBVSVJVLVJUGVIVMRUHVIVLWBLVMVIVKWAVKWALVIEVTHVKCEUMZWAV
       KVKCEUIVTEUJSEGDKEGDUKVKWDLULDSEUNVKCDEUOUPUQQPURUSUTTVIVQVMAVHVIVNVHGNZV
       QNZVLVJWFVLNZVJVPWGVPIZIVPWGVKWHWFVLRWGVJVPWEVQVLVAZPVCVOVBVDWIVETVFVG $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Weak excluded middle
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c WEXMID $.
+
+  $( Formula for an abbreviation of weak excluded middle. $)
+  wwem $a wff WEXMID $.
+
+  $( Weak excluded middle is the principle that any negated proposition is
+     decidable.  (Contributed by Jim Kingdon, 30-Jul-2026.) $)
+  df-wexmid $a |- ( WEXMID <-> A. p e. ~P 1o ( -. p = 1o \/ -. -. p = 1o ) ) $.
+
+  ${
+    $d ph x y $.
+    $( Weak excluded middle expressed using ` WEXMID ` implies decidability of
+       a negated proposition.  (Contributed by Jim Kingdon, 30-Jul-2026.) $)
+    wexmiddc $p |- ( WEXMID -> DECID -. ph ) $=
+      ( vy vx wwem wn wo wdc c1o crab wceq cv cpw wral df-wexmid wcel wi notbid
+      cvv 1oex notbii ssrab2 elpwi2 eqeq1 orbi12d rspcv ax-mp sylbi sylib df-dc
+      rabid1o orbi12i sylibr ) DAEZUMEZFZUMGDABHIZHJZEZUREZFZUODCKZHJZEZVCEZFZC
+      HLZMZUTCNUPVFOVGUTPUPHRSABHUAUBVEUTCUPVFVAUPJZVCURVDUSVHVBUQVAUPHUCQZVHVC
+      URVIQUDUEUFUGURUMUSUNUQAABUJTZURUMVJTUKUHUMUIUL $.
+  $}
+
+  ${
+    $d j ph z $.  $d ph y z $.  $d x y $.
+    $( Lemma for ~ wexmiddiffi .  The reverse direction, using different
+       notation.  (Contributed by Jim Kingdon, 29-Jul-2026.) $)
+    wexmiddiffilem $p |- ( A. x A. y ( x e. Fin -> ( x \ y ) e. Fin )
+        -> ( -. ph \/ -. -. ph ) ) $=
+      ( vz vj vw cv cfn wcel cdif wi wal wn c0 wceq wex wo p0ex eleq1d 0ex crab
+      csn eleq1 difeq1 imbi12d albidv spcv cvv snfig ax-mp difeq2 imbi2d mpisyl
+      rabex fin0or notm0 snm wral wb r19.3rmv rabeq0 sylbb2 difeq2d dif0 eqtrdi
+      eleq2d exbidv mpbiri con3i sylbir eldifi wa eldifn sylnib mpnanrd exlimiv
+      biidd elrab orim12i 3syl orcomd ) BGZHIZWBCGZJZHIZKZCLZBLZAMZMZWJWINUBZAD
+      WLUAZJZHIZWNNOZEGZWNIZEPZQWKWJQWIWLHIZWLWDJZHIZKZCLZWTWOWHXDBWLRWBWLOZWGX
+      CCXEWCWTWFXBWBWLHUCXEWEXAHWBWLWDUDSUEUFUGNUHIWTTNUHUIUJXCWTWOKCWMADWLRUNW
+      DWMOZXBWOWTXFXAWNHWDWMWLUKSULUGUMEWNUOWPWKWSWJWPWSMWKEWNUPWJWSWJWSWQWLIZE
+      PENTUQWJWRXGEWJWNWLWQWJWNWLNJWLWJWMNWLWJWJDWLURZWMNOFGWLIFPWJXHUSFNTUQWJD
+      FWLUTUJADWLVAVBVCWLVDVEVFVGVHVIVJWRWJEWRXGAWQWLWMVKWRWQWMIXGAVLWQWLWMVMAA
+      DWQWLDGWQOAVQVRVNVOVPVSVTWA $.
+  $}
+
+  ${
+    $d p x y z $.
+    $( Being able to subtract an arbitrary set from a finite set and get a
+       finite set is equivalent to weak excluded middle.  By adding additional
+       conditions we can get a theorem which does not need weak excluded
+       middle, at ~ diffifi .  (Contributed by Jim Kingdon, 29-Jul-2026.) $)
+    wexmiddiffi $p |- ( WEXMID
+        <-> A. x A. y ( x e. Fin -> ( x \ y ) e. Fin ) ) $=
+      ( vz vp wwem cv cfn wcel cdif wi wal wa wss wdc wral simpr wn sylibr c1o
+      wo difssd animorrl df-dc wexmiddc ad2antrr dcand ralrimiva ssfidc syl3anc
+      eldif dcbii alrimivv wceq cpw wexmiddiffilem ralrimivw df-wexmid impbii
+      ex ) EAFZGHZUTBFZIZGHZJZBKAKZEVEABEVAVDEVALZVAVCUTMCFZVCHZNZCUTOVDEVAPVGU
+      TVBUAVGVJCUTVGVHUTHZLZVKVHVBHZQZLZNVJVLVKVNVLVKVKQZTVKNVGVKVPUBVKUCREVNNV
+      AVKVMUDUEUFVIVOVHUTVBUJUKRUGCUTVCUHUIUSULVFDFSUMZQZVRQTZDSUNZOEVFVSDVTVQA
+      BUOUPDUQRUR $.
+  $}
+
+  ${
+    $d j ph x $.
+    $( Lemma for ~ wexmiddifxylem .  Showing weak excluded middle given a
+       suitable finite set.  (Contributed by Jim Kingdon, 1-Aug-2026.) $)
+    wexmiddifxylem $p |- ( ( { 1o } \ { { x e. 1o | ph } } ) e. Fin
+        -> DECID -. ph ) $=
+      ( vj vw c1o csn crab cdif wcel wn wo c0 cv wex snm ax-mp elsni sylnib syl
+      wceq cfn wdc fin0or notm0 1oex wral 0ex df1o2 eleq2i exbii mpbir r19.3rmv
+      wb rabeq0 sylbb2 sneqd difeq2d 1n0 nesymi mto eqtrdi eleq2d exbidv mpbiri
+      difsn con3i sylbir eldifn velsn eldifi eqeq1d mtbid neqcomd rabid1o df-dc
+      exlimiv orim12i orcomd sylibr ) EFZABEGZFZHZUAIZAJZWEJZKWEUBWDWFWEWDWCLTZ
+      CMZWCIZCNZKWFWEKCWCUCWGWFWJWEWGWJJWFCWCUDWEWJWEWJWHVTIZCNCEUEOWEWIWKCWEWC
+      VTWHWEWCVTLFZHZVTWEWBWLVTWEWALWEWEBEUFZWALTDMZEIZDNZWEWNUMWQWOWLIZDNDLUGO
+      WPWRDEWLWOUHUIUJUKWEBDEULPABEUNUOUPUQLVTIZJWMVTTWSLETELURUSLEQUTLVTVEPVAV
+      BVCVDVFVGWIWECWIWAETAWIEWAWIWHWATZEWATWIWHWBIWTWHVTWBVHCWAVIRWIWHEWAWIWKW
+      HETWHVTWBVJWHEQSVKVLVMABVNRVPVQSVRWEVOVS $.
+  $}
+
+  ${
+    $d p x y $.  $d p y z $.
+    $( Being able to subtract an arbitrary finite set from a finite set and get
+       a finite set is equivalent to weak excluded middle.  By adding
+       additional conditions we can get a theorem which does not need weak
+       excluded middle, at ~ diffifi .  (Contributed by Jim Kingdon,
+       1-Aug-2026.) $)
+    wexmiddifxy $p |- ( WEXMID
+        <-> A. x A. y ( ( x e. Fin /\ y e. Fin ) -> ( x \ y ) e. Fin ) ) $=
+      ( vp vz wwem cv cfn wcel wa cdif wi wal c1o wceq csn 1oex snex eleq1 cvv
+      wn wexmiddiffi pm3.41 2alimi sylbi cpw wral crab wdc anbi1d difeq1 eleq1d
+      imbi12d albidv spcv snfig ax-mp rabex pm3.2i anbi2d difeq2 wexmiddifxylem
+      wo mpisyl exmiddc 3syl ralrimivw df-wexmid sylibr impbii ) EAFZGHZBFZGHZI
+      ZVJVLJZGHZKZBLZALZEVKVPKZBLALVSABUAVTVQABVKVMVPUBUCUDVSCFMNZTZWBTVBZCMUEZ
+      UFEVSWCCWDVSMOZWADMUGZOZJZGHZWBUHWCVSWEGHZVMIZWEVLJZGHZKZBLZWJWGGHZIZWIVR
+      WOAWEMPQVJWENZVQWNBWRVNWKVPWMWRVKWJVMVJWEGRUIWRVOWLGVJWEVLUJUKULUMUNWJWPM
+      SHWJPMSUOUPWFSHWPWADMPUQZWFSUOUPURWNWQWIKBWGWFWSQVLWGNZWKWQWMWIWTVMWPWJVL
+      WGGRUSWTWLWHGVLWGWEUTUKULUNVCWADVAWBVDVEVFCVGVHVI $.
   $}
 
 
