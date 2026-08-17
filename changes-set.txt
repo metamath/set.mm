@@ -92,6 +92,20 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+15-Aug-26 srcmpltd    [same]      Moved from BTT's mathbox to main set.mm
+15-Aug-26 prsrcmpltd  [same]      Moved from BTT's mathbox to main set.mm
+15-Aug-26 dff15       [same]      Moved from BTT's mathbox to main set.mm
+15-Aug-26 f1resveqaeq [same]      Moved from BTT's mathbox to main set.mm
+15-Aug-26 f1resrcmplf1dlem [same]  Moved from BTT's mathbox to main set.mm
+15-Aug-26 f1resrcmplf1d [same]    Moved from BTT's mathbox to main set.mm
+15-Aug-26 funen1cnv   [same]      Moved from BTT's mathbox to main set.mm
+15-Aug-26 f1resfz0f1d [same]      Moved from BTT's mathbox to main set.mm
+15-Aug-26 s1f1        [same]      Moved from TA's mathbox to main set.mm
+15-Aug-26 ccatf1      [same]      Moved from TA's mathbox to main set.mm
+15-Aug-26 swrdrn3     [same]      Moved from TA's mathbox to main set.mm
+15-Aug-26 swrdf1      [same]      Moved from TA's mathbox to main set.mm
+15-Aug-26 revpfxsfxrev [same]     Moved from BTT's mathbox to main set.mm
+15-Aug-26 swrdrevpfx [same]       Moved from BTT's mathbox to main set.mm
 15-Aug=26 fmptdF      fmptdf2     Avoids clash with fmptdf
  8-Aug-26 relcnvtr    ---         Deleted; redundant with relcnvtrg
  8-Aug-26 relcnvtrg   ---         Antecedent removed
