@@ -146654,6 +146654,53 @@ $)
     wcel ax-mp ) ABCZDEZQFDGOHRQFDQFORIJRQDOKQDLMNP $.
 
   ${
+    $d A w $.  $d N k m w $.  $d B k m w $.  $d ph k m w $.
+    pwbdvdslemn.n $e |- ( ph -> N e. NN ) $.
+    pwbdvdslemn.a $e |- ( ph -> A e. NN ) $.
+    pwbdvdslemn.dvds $e |- ( ph -> -. ( B ^ A ) || N ) $.
+    pwbdvdslemn.b $e |- ( ph -> B e. NN ) $.
+    $( Lemma for ~ pwbdvds .  If a natural number has some power of a base
+       which does not divide it, there is a highest power of the base which
+       does divide it.  (Contributed by Jim Kingdon, 14-Nov-2021.)  (Revised by
+       Jim Kingdon, 17-Aug-2026.) $)
+    pwbdvdslemn $p |- ( ph ->
+        E. m e. NN0 ( ( B ^ m ) || N /\ -. ( B ^ ( m + 1 ) ) || N ) ) $=
+      ( cexp co cdvds wbr wn c1 wa wcel wceq breq1d cc0 vw vk cv caddc cn0 wrex
+      cn adantr wi oveq2 notbid anbi2d imbi1d oveq1 oveq2d anbi12d a1i cc nncnd
+      0nn0 exp0d cz nnzd 1dvds syl eqbrtrd simpr 0p1e1 oveq2i sylnibr rspcedvdw
+      breq1i jca simpll nnnn0d simplrr adantllr simprl simpllr mpd wdc ad2antrl
+      anim1i nnnn0 ad2antrr nnexpcld syl2anc exmiddc mpjaodan exp31 nnind mpcom
+      wo dvdsdc mpdan ) ACBJKZELMZNZCDUCZJKZELMZCWSOUDKZJKZELMZNZPZDUEUFZHBUGQZ
+      AWRPZXGAXHWRGUHACUAUCZJKZELMZNZPZXGUIACOJKZELMZNZPZXGUIACUBUCZJKZELMZNZPZ
+      XGUIZACXSOUDKZJKZELMZNZPZXGUIXIXGUIUAUBBXJORZXNXRXGYJXMXQAYJXLXPYJXKXOELX
+      JOCJUJSUKULUMXJXSRZXNYCXGYKXMYBAYKXLYAYKXKXTELXJXSCJUJSUKULUMXJYERZXNYIXG
+      YLXMYHAYLXLYGYLXKYFELXJYECJUJSUKULUMXJBRZXNXIXGYMXMWRAYMXLWQYMXKWPELXJBCJ
+      UJSUKULUMXRXFCTJKZELMZCTOUDKZJKZELMZNZPDTUEWSTRZXAYOXEYSYTWTYNELWSTCJUJSY
+      TXDYRYTXCYQELYTXBYPCJWSTOUDUNUOSUKUPTUEQXRUTUQXRYOYSXRYNOELXRCACURQXQACIU
+      SUHVAXREVBQZOELMXREAEUGQZXQFUHVCEVDVEVFXRXPYRAXQVGYQXOELYPOCJVHVIVLVJVMVK
+      XSUGQZYDYIXGUUCYDPZYIPZYAXGYBUUCYIYAXGYDUUCYIPZYAPZXFYAYHPDXSUEWSXSRZXAYA
+      XEYHUUHWTXTELWSXSCJUJSUUHXDYGUUHXCYFELUUHXBYECJWSXSOUDUNUOSUKUPUUGXSUUCYI
+      YAVNVOUUGYAYHUUFYAVGUUCAYHYAVPVMVKVQUUEYBPYCXGUUEAYBUUDAYHVRWCUUCYDYIYBVS
+      VTUUEYAWAZYAYBWMUUEXTUGQUUAUUIUUECXSACUGQUUDYHIWBUUCXSUEQYDYIXSWDWEWFUUEE
+      AUUBUUDYHFWBVCXTEWNWGYAWHVEWIWJWKWLWO $.
+  $}
+
+  ${
+    $d N m $.  $d B m $.
+    $( A natural number has a highest power of a base which divides it.
+       (Contributed by Jim Kingdon, 16-Nov-2021.)  (Revised by Jim Kingdon,
+       18-Aug-2026.) $)
+    pwbdvds $p |- ( ( N e. NN /\ B e. ( ZZ>= ` 2 ) ) ->
+        E. m e. NN0 ( ( B ^ m ) || N /\ -. ( B ^ ( m + 1 ) ) || N ) ) $=
+      ( cn wcel c2 cuz cfv wa simpl cexp co c1 cmin cfz cdvds wbr nnzd syl2anc
+      cz wn eluz2nn adantl nnnn0d nnexpcld 1zzd zsubcld nnge1d clt cle bernneq3
+      cn0 simpr wb zltlem1 mpbid elfzd fzm1ndvds pwbdvdslemn ) CDEZAFGHEZIZCABC
+      UTVAJZVCVBACKLZDECMVDMNLZOLEVDCPQUAVBACVAADEUTAUBUCZVBCVCUDZUEZVBCMVEVBUF
+      ZVBVDMVBVDVHRZVIUGVBCVCRZVBCVCUHVBCVDUIQZCVEUJQZVBVACULEVLUTVAUMVGACUKSVB
+      CTEVDTEVLVMUNVKVJCVDUOSUPUQVDCURSVFUS $.
+  $}
+
+  ${
     $d A w $.  $d N k m w $.
     $( Lemma for ~ pw2dvds .  If a natural number has some power of two which
        does not divide it, there is a highest power of two which does divide
