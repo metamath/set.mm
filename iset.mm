@@ -146742,6 +146742,37 @@ $)
   $}
 
   ${
+    $d A z $.  $d B z $.  $d Y z $.
+    nnmaxpwlemxy.x $e |- ( ph -> X e. NN ) $.
+    nnmaxpwlemxy.b $e |- ( ph -> B e. ( ZZ>= ` 2 ) ) $.
+    nnmaxpwlemxy.bx $e |- ( ph -> -. B || X ) $.
+    nnmaxpwlemxy.y $e |- ( ph -> Y e. NN0 ) $.
+    nnmaxpwlemxy.ayx $e |- ( ph -> A = ( ( B ^ Y ) x. X ) ) $.
+    $( Lemma for ~ nnmaxpw .  Another way of stating that decomposing a natural
+       number into a power of a base and a number not divisible by that base is
+       unique.  (Contributed by Jim Kingdon, 16-Nov-2021.)  (Revised by Jim
+       Kingdon, 18-Aug-2026.) $)
+    nnmaxpwlemxy $p |- ( ph ->
+          ( X = ( A / ( B ^ ( iota_ z e. NN0 ( ( B ^ z ) || A
+            /\ -. ( B ^ ( z + 1 ) ) || A ) ) ) )
+          /\ Y = ( iota_ z e. NN0 ( ( B ^ z ) || A
+            /\ -. ( B ^ ( z + 1 ) ) || A ) ) ) ) $=
+      ( cexp co cdvds wbr cn0 wceq wcel cz cmul cv c1 caddc wn wa crio cdiv cuz
+      c2 cfv cn eluz2nn syl nnzd nnexpcld nnmulcld eqeltrd nncnd mulcomd eqtr2d
+      dvds0lem syl31anc breq2d cc0 wne nnne0d dvdscmulr syl112anc mtbird expp1d
+      wb bitrd breq1d wreu pwbdvdseu syl2anc oveq2 oveq2d notbid anbi12d riota2
+      oveq1 mpbi2and nnap0d eqcomd oveq1d mvllmulapd jca ) AECDDBUAZLMZCNOZDWIU
+      BUCMZLMZCNOZUDZUEZBPUFZLMZUGMQFWQQAWRECAWRADWQADUIUHUJRZDUKRHDULUMZAWQFPA
+      DFLMZCNOZDFUBUCMZLMZCNOZUDZWQFQZAESRZXASRZCSREXATMZCQXBAEGUNZAXAADFWTJUOZ
+      UNZACACXAETMZUKKAXAEXLGUPUQZUNACXNXJKAXAEAXAXLURAEGURZUSUTEXACVAVBAXEXADT
+      MZCNOZAXRDENOZIAXRXQXNNOZXSACXNXQNKVCADSRXHXIXAVDVEXTXSVKADWTUNXKXMAXAXLV
+      FXADEVGVHVLVIAXDXQCNADFADWTURJVJVMVIAFPRWPBPVNZXBXFUEZXGVKJACUKRWSYAXOHDB
+      CVOVPWPYBBPFWIFQZWKXBWOXFYCWJXACNWIFDLVQVMYCWNXEYCWMXDCNYCWLXCDLWIFUBUCWB
+      VRVMVSVTWAVPWCZJUQUOZURXPAWRYEWDACXNWRETMKAXAWRETAFWQDLAWQFYDWEZVRWFUTWGY
+      FWH $.
+  $}
+
+  ${
     $d A w $.  $d N k m w $.
     $( Lemma for ~ pw2dvds .  If a natural number has some power of two which
        does not divide it, there is a highest power of two which does divide
