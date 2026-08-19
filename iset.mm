@@ -146805,6 +146805,25 @@ $)
   $}
 
   ${
+    $d A z $.  $d B z $.
+    $( Lemma for ~ nnmaxpw .  Removing the powers of a base from a natural
+       number produces a number not divisible by that base.  (Contributed by
+       Jim Kingdon, 16-Nov-2021.)  (Revised by Jim Kingdon, 19-Aug-2026.) $)
+    nnmaxpwlemnfac $p |- ( ( A e. NN /\ B e. ( ZZ>= ` 2 ) ) -> -. B ||
+        ( A / ( B ^ ( iota_ z e. NN0 ( ( B ^ z ) || A /\
+        -. ( B ^ ( z + 1 ) ) || A ) ) ) ) ) $=
+      ( cn wcel c2 cuz wa cexp co cdvds wbr c1 caddc cn0 cmul nncnd mtbid nnzd
+      cz cfv cv crio cdiv nnmaxpwlemndvds eluz2nn adantl wreu pwbdvdseu riotacl
+      wn syl expp1d breq1d simpl nnap0d divcanap2d eqcomd breq2d nnmaxpwlemdvds
+      nnexpcld cc0 wne wb nndivdvds biimpa syl21anc nnne0d dvdscmulr syl112anc
+      bitrd ) BDEZCFGUAEZHZCCAUBZIJBKLCVOMNJIJBKLUKHZAOUCZIJZCPJZBKLZCBVRUDJZKL
+      ZVNCVQMNJIJZBKLVTABCUEVNWCVSBKVNCVQVNCVMCDEVLCUFUGZQVNVPAOUHVQOECABUIVPAO
+      UJULZUMUNRVNVTVSVRWAPJZKLZWBVNBWFVSKVNWFBVNBVRVNBVLVMUOZQVNVRVNCVQWDWEVAZ
+      QVNVRWIUPUQURUSVNCTEWATEVRTEVRVBVCWGWBVDVNCWDSVNWAVNVLVRDEZVRBKLZWADEZWHW
+      IABCUTVLWJHWKWLBVRVEVFVGSVNVRWISVNVRWIVHVRCWAVIVJVKR $.
+  $}
+
+  ${
     $d A w $.  $d N k m w $.
     $( Lemma for ~ pw2dvds .  If a natural number has some power of two which
        does not divide it, there is a highest power of two which does divide
