@@ -146723,6 +146723,25 @@ $)
   $}
 
   ${
+    $d N m x $.  $d B m x $.
+    $( A natural number has a unique highest power of a base which divides it.
+       (Contributed by Jim Kingdon, 16-Nov-2021.)  (Revised by Jim Kingdon,
+       18-Aug-2026.) $)
+    pwbdvdseu $p |- ( ( N e. NN /\ B e. ( ZZ>= ` 2 ) ) ->
+        E! m e. NN0 ( ( B ^ m ) || N /\ -. ( B ^ ( m + 1 ) ) || N ) ) $=
+      ( vx cn wcel wa cv cexp co cdvds wbr caddc cn0 wral nn0red pwbdvdseulemle
+      c1 wn breq1d c2 cuz cfv wrex wrmo wreu pwbdvds wi simplrl simplrr simplll
+      weq eluz2nn ad3antlr simprll simprrr simprrl simprlr letrid ex ralrimivva
+      oveq2 oveq1 oveq2d notbid anbi12d rmo4 sylibr reu5 sylanbrc ) CEFZAUAUBUC
+      FZGZABHZIJZCKLZAVNRMJZIJZCKLZSZGZBNUDWABNUEZWABNUFABCUGVMWAADHZIJZCKLZAWC
+      RMJZIJZCKLZSZGZGZBDULZUHZDNOBNOWBVMWMBDNNVMVNNFZWCNFZGZGZWKWLWQWKGZVNWCWR
+      VNVMWNWOWKUIZPWRWCVMWNWOWKUJZPWRVNWCACVKVLWPWKUKZWSWTVLAEFVKWPWKAUMUNZWQV
+      PVTWJUOWQWAWEWIUPQWRWCVNACXAWTWSXBWQWAWEWIUQWQVPVTWJURQUSUTVAWAWJBDNWLVPW
+      EVTWIWLVOWDCKVNWCAIVBTWLVSWHWLVRWGCKWLVQWFAIVNWCRMVCVDTVEVFVGVHWABNVIVJ
+      $.
+  $}
+
+  ${
     $d A w $.  $d N k m w $.
     $( Lemma for ~ pw2dvds .  If a natural number has some power of two which
        does not divide it, there is a highest power of two which does divide
