@@ -146773,6 +146773,22 @@ $)
   $}
 
   ${
+    $d A z $.  $d B z $.
+    $( Lemma for ~ nnmaxpw .  A natural number is divisible by the highest
+       power of a base which divides it.  (Contributed by Jim Kingdon,
+       17-Nov-2021.)  (Revised by Jim Kingdon, 19-Aug-2026.) $)
+    nnmaxpwlemdvds $p |- ( ( A e. NN /\ B e. ( ZZ>= ` 2 ) )
+        -> ( B ^ ( iota_ z e. NN0
+        ( ( B ^ z ) || A /\ -. ( B ^ ( z + 1 ) ) || A ) ) ) || A ) $=
+      ( cn wcel c2 cuz cfv wa cv cexp co cdvds wbr c1 caddc wn cn0 wrex nfcv wb
+      crio pwbdvds nfv nfriota1 nfov nfbr wceq wreu pwbdvdseu riota1 syl biimpa
+      oveq2d simprrl eqbrtrd exp32 rexlimd mpd ) BDECFGHEIZCAJZKLZBMNZCVAOPLKLB
+      MNQZIZARSCVEARUBZKLZBMNZCABUCUTVEVHARUTAUDAVGBMACVFKACTAKTVEARUEUFAMTABTU
+      GUTVAREZVEVHUTVIVEIZIZVGVBBMVKVFVACKUTVJVFVAUHZUTVEARUIVJVLUACABUJVEARUKU
+      LUMUNUTVIVCVDUOUPUQURUS $.
+  $}
+
+  ${
     $d A w $.  $d N k m w $.
     $( Lemma for ~ pw2dvds .  If a natural number has some power of two which
        does not divide it, there is a highest power of two which does divide
