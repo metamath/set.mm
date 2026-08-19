@@ -146701,6 +146701,28 @@ $)
   $}
 
   ${
+    pwbdvdseulemle.n $e |- ( ph -> N e. NN ) $.
+    pwbdvdseulemle.a $e |- ( ph -> A e. NN0 ) $.
+    pwbdvdseulemle.b $e |- ( ph -> B e. NN0 ) $.
+    pwbdvdseulemle.p $e |- ( ph -> P e. NN ) $.
+    pwbdvdseulemle.2a $e |- ( ph -> ( P ^ A ) || N ) $.
+    pwbdvdseulemle.n2b $e |- ( ph -> -. ( P ^ ( B + 1 ) ) || N ) $.
+    $( Lemma for ~ pwbdvdseu .  Powers of a base which do and do not divide a
+       natural number.  (Contributed by Jim Kingdon, 17-Nov-2021.)  (Revised by
+       Jim Kingdon, 18-Aug-2026.) $)
+    pwbdvdseulemle $p |- ( ph -> A <_ B ) $=
+      ( wbr co cexp cdvds wcel adantr cn0 cz nnzd nn0red clt c1 caddc cmin cmul
+      wa cc nncnd cle peano2nn0 syl simpr wb nn0ltp1le syl2an2r nn0sub2 syl3anc
+      mpbid expaddd nn0cnd pncan3d oveq2d eqbrtrd eqbrtrrd wi nnexpcld muldvds1
+      cn mpd mtand nltled ) ABCABGUAACHUAACBUBLZDCUCUDMZNMZEOLZKAVMUGZVODBVNUEM
+      ZNMZUFMZEOLZVPVQDVNVRUDMZNMZVTEOVQDVNVRADUHPVMADIUIQVQVNRPZBRPZVNBUJLZVRR
+      PVQCRPZWDAWGVMHQCUKULZAWEVMGQZVQVMWFAVMUMAWGVMWEVMWFUNHWICBUOUPUSVNBUQURZ
+      WHUTVQWCDBNMZEOVQWBBDNVQVNBVQVNWHVAVQBWIVAVBVCAWKEOLVMJQVDVEVQVOSPVSSPESP
+      WAVPVFVQVOVQDVNADVIPVMIQZWHVGTVQVSVQDVRWLWJVGTVQEAEVIPVMFQTVOVSEVHURVJVKV
+      L $.
+  $}
+
+  ${
     $d A w $.  $d N k m w $.
     $( Lemma for ~ pw2dvds .  If a natural number has some power of two which
        does not divide it, there is a highest power of two which does divide
