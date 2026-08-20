@@ -110522,8 +110522,8 @@ $)
     $d A x $.
     $( The floor (greatest integer) function yields an integer when applied to
        a rational (closure law).  For a similar closure law for real numbers
-       apart from any integer, see ~ flapcl .  (Contributed by Jim Kingdon,
-       8-Oct-2021.) $)
+       which are either rational or irrational, see ~ flapcl .  (Contributed by
+       Jim Kingdon, 8-Oct-2021.) $)
     flqcl $p |- ( A e. QQ -> ( |_ ` A ) e. ZZ ) $=
       ( vx cq wcel cfl cfv cv cle wbr c1 caddc co clt wa cz crio wceq qre syl
       cr flval wreu qbtwnz riotacl eqeltrd ) ACDZAEFZBGZAHIAUHJKLMINZBOPZOUFATD
@@ -110551,10 +110551,22 @@ $)
        a real number apart from any integer.  For example, an irrational number
        (see for example ~ sqrt2irrap ) would satisfy this condition.
        (Contributed by Jim Kingdon, 11-May-2022.) $)
-    flapcl $p |- ( ( A e. RR /\ A. n e. ZZ A =//= n ) -> ( |_ ` A ) e. ZZ ) $=
+    flapclz $p |- ( ( A e. RR /\ A. n e. ZZ A =//= n ) -> ( |_ ` A ) e. ZZ ) $=
       ( vx cr wcel cv cap wbr cz wral wa cfl cfv cle c1 caddc co clt crio wceq
       flval adantr wreu apbtwnz riotacl syl eqeltrd ) ADEZABFGHBIJZKZALMZCFZANH
       AULOPQRHKZCISZIUHUKUNTUICAUAUBUJUMCIUCUNIECABUDUMCIUEUFUG $.
+  $}
+
+  ${
+    $d A q $.
+    $( The floor (greatest integer) function yields an integer when applied to
+       a number which is either rational or irrational.  (Contributed by Jim
+       Kingdon, 20-Aug-2026.) $)
+    flapcl $p |- ( ( A e. QQ \/ ( A e. RR /\ A. q e. QQ A =//= q ) )
+        -> ( |_ ` A ) e. ZZ ) $=
+      ( cq wcel cfl cfv cz cr cv cap wbr wral wa flqcl wss wi zssq ssralv ax-mp
+      flapclz sylan2 jaoi ) ACDAEFGDZAHDZABIJKZBCLZMANUFUDUEBGLZUCGCOUFUGPQUEBG
+      CRSABTUAUB $.
   $}
 
   ${
