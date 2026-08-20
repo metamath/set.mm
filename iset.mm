@@ -110583,6 +110583,21 @@ $)
   $}
 
   ${
+    $d A q x $.
+    $( A basic property of the floor (greatest integer) function.  (Contributed
+       by Jim Kingdon, 20-Aug-2026.) $)
+    flaplelt $p |- ( ( A e. QQ \/ ( A e. RR /\ A. q e. QQ A =//= q ) ) ->
+        ( ( |_ ` A ) <_ A /\ A < ( ( |_ ` A ) + 1 ) ) ) $=
+      ( vx cq wcel cr cv cap wbr wral wa wo cle c1 caddc co clt cz wceq jaoi wb
+      cfl cfv crio qre simpl flval eqcomd syl wreu flapcl qbtwnz wi zssq ssralv
+      wss ax-mp apbtwnz sylan2 breq1 oveq1 breq2d anbi12d riota2 syl2anc mpbird
+      ) ADEZAFEZABGHIZBDJZKZLZAUBUCZAMIZAVMNOPZQIZKZCGZAMIZAVRNOPZQIZKZCRUDZVMS
+      ZVLVHWDVGVHVKAUEVHVJUFTVHVMWCCAUGUHUIVLVMREWBCRUJZVQWDUAABUKVGWEVKCAULVJV
+      HVIBRJZWERDUPVJWFUMUNVIBRDUOUQCABURUSTWBVQCRVMVRVMSZVSVNWAVPVRVMAMUTWGVTV
+      OAQVRVMNOVAVBVCVDVEVF $.
+  $}
+
+  ${
     flqcld.1 $e |- ( ph -> A e. QQ ) $.
     $( The floor (greatest integer) function is an integer (closure law).
        (Contributed by Jim Kingdon, 8-Oct-2021.) $)
