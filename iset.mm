@@ -146853,6 +146853,29 @@ $)
   $}
 
   ${
+    $d a x y z $.  $d a F $.  $d a x y J $.  $d B a x y z $.
+    nnmaxpw.j $e |- J = { z e. NN | -. B || z } $.
+    nnmaxpw.f $e |- F = ( x e. J , y e. NN0 |-> ( ( B ^ y ) x. x ) ) $.
+    $( The function ` F ` that decomposes a number into its "odd" and "even"
+       parts, which is to say the largest power of a base and largest divisor
+       of the number not divisible by that base, is a bijection from pairs of a
+       nonnegative integer and a number not divisible by that base to positive
+       integers.  (Contributed by Thierry Arnoux, 15-Aug-2017.)  (Revised by
+       Jim Kingdon, 19-Aug-2026.) $)
+    nnmaxpw $p |- ( B e. ( ZZ>= ` 2 ) -> F : ( J X. NN0 ) -1-1-onto-> NN ) $=
+      ( va wcel cn0 cv cexp co cn cdvds wbr wn wa wceq c2 cuz cfv cmul c1 caddc
+      crio cc cr eluz2nn adantr nncnd simprr expcld breq2 notbid elrab2 simplbi
+      cdiv ad2antrl mulcld simpl nnnn0d adantl pwbdvdseu riotacl syl nn0nndivcl
+      wreu nnexpcld syl2anc jca ancoms anbi1i nnmaxpwlemparts bitrid f1od2 ) DU
+      AUBUCJZABIFKDBLZMNZALZUDNZOEILZDDCLZMNWCPQDWDUEUFNMNWCPQRSZCKUGZMNZUSNZWF
+      UHUIKHVRWAFJZVSKJZSZSZVTWAWLDVSWLDVRDOJZWKDUJZUKULVRWIWJUMUNWLWAWIWAOJZVR
+      WJWIWODWAPQZRZDWDPQZRWQCWAOFWDWATWRWPWDWADPUOUPGUQZURUTULVAWCOJZVRWHUIJZW
+      FKJZSWTVRSZXAXBXCWCKJWGOJXAXCWCWTVRVBVCXCDWFVRWMWTWNVDXCWECKVIXBDCWCVEWEC
+      KVFVGZVJWCWGVHVKXDVLVMWKWCWBTZSWOWQSZWJSZXESVRWTWAWHTVSWFTSSWKXGXEWIXFWJW
+      SVNVNCWCDWAVSVOVPVQ $.
+  $}
+
+  ${
     $d A w $.  $d N k m w $.
     $( Lemma for ~ pw2dvds .  If a natural number has some power of two which
        does not divide it, there is a highest power of two which does divide
