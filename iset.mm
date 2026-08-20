@@ -110639,6 +110639,21 @@ $)
     FTBAVAUGRSUQUPUSEDUTVBUKVFVIBUSUHUIUJUQUTUSAGHZURUOVJUPAULOUQVDUSPDVEUTVJFU
     RQVGUQUSVITVHBUSAUMRSUN $.
 
+  ${
+    $d A q $.
+    $( The floor function value is the greatest integer less than or equal to
+       its argument.  (Contributed by Jim Kingdon, 8-Oct-2021.) $)
+    flapge $p |- ( ( ( A e. QQ \/ ( A e. RR /\ A. q e. QQ A =//= q ) )
+        /\ B e. ZZ ) -> ( B <_ A <-> B <_ ( |_ ` A ) ) ) $=
+      ( cq wcel cr cv cap wbr wral wa wo cz cle clt adantr zred syl3anc mpan2d
+      wi cfl cfv c1 caddc co flaplelt simprd simpr qre simpl jaoi flapcl lelttr
+      peano2zd wb zleltp1 syl2anc sylibrd simpld letr impbid ) ADEZAFEZACGHICDJ
+      ZKZLZBMEZKZBANIZBAUAUBZNIZVHVIBVJUCUDUEZOIZVKVHVIAVLOIZVMVFVNVGVFVJANIZVN
+      ACUFZUGPVHBFEZVCVLFEVIVNKVMTVHBVFVGUHZQZVFVCVGVBVCVEAUIVCVDUJUKPZVHVLVHVJ
+      VFVJMEZVGACULPZUNQBAVLUMRSVHVGWAVKVMUOVRWBBVJUPUQURVHVKVOVIVFVOVGVFVOVNVP
+      USPVHVQVJFEVCVKVOKVITVSVHVJWBQVTBVJAUTRSVA $.
+  $}
+
   $( The floor function value is less than the next integer.  (Contributed by
      Jim Kingdon, 8-Oct-2021.) $)
   flqlt $p |- ( ( A e. QQ /\ B e. ZZ ) -> ( A < B <-> ( |_ ` A ) < B ) ) $=
