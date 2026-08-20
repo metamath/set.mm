@@ -146824,6 +146824,35 @@ $)
   $}
 
   ${
+    $d A z $.  $d Y z $.  $d B z $.
+
+    $( Lemma for ~ nnmaxpw .  Decomposing a number into parts.  (Contributed by
+       Jim Kingdon, 16-Nov-2021.)  (Revised by Jim Kingdon, 19-Aug-2026.) $)
+    nnmaxpwlemparts $p |- ( B e. ( ZZ>= ` 2 )
+        -> ( ( ( ( X e. NN /\ -. B || X ) /\ Y e. NN0 )
+        /\ A = ( ( B ^ Y ) x. X ) )
+        <-> ( A e. NN /\ ( X = ( A / ( B ^
+          ( iota_ z e. NN0 ( ( B ^ z ) || A /\ -. ( B ^ ( z + 1 ) ) || A ) ) )
+          ) /\ Y =
+          ( iota_ z e. NN0 ( ( B ^ z ) || A /\ -. ( B ^ ( z + 1 ) ) || A ) ) )
+        ) ) ) $=
+      ( wcel cn cdvds wbr wn wa cn0 cexp cmul wceq adantl eqeltrd simpl syl2anc
+      co c2 cuz cfv cv c1 caddc crio cdiv simprr eluz2nn adantr simprlr simplll
+      nnexpcld nnmulcld simpllr nnmaxpwlemxy jca simprl simpr nnmaxpwlemdvds wb
+      simprrl wreu pwbdvdseu syl nndivdvds mpbid syl21anc nnmaxpwlemnfac notbid
+      riotacl breq2 mpbird simprrr oveq2d oveq12d nncnd nnap0d divcanap2d jca31
+      eqtr2d impbida ) CUAUBUCFZDGFZCDHIZJZKZELFZKZBCEMTZDNTZOZKZBGFZDBCCAUDZMT
+      BHICWPUEUFTMTBHIJKZALUGZMTZUHTZOZEWROZKZKZWDWNKZWOXCXEBWLGWDWJWMUIZXEWKDX
+      ECEWDCGFZWNCUJZUKWDWHWIWMULZUNWNWEWDWEWGWIWMUMPZUOQXEABCDEXJWDWNRWNWGWDWE
+      WGWIWMUPPXIXFUQURWDXDKZWHWIWMXKWEWGXKWOWDXAWEWDWOXCUSZWDXDRZWDWOXAXBVCZWO
+      WDKZXAKDWTGXOXAUTXOWTGFZXAXOWSBHIZXPABCVAXOWOWSGFZXQXPVBWOWDRXOCWRWDXGWOX
+      HPXOWQALVDWRLFZCABVEWQALVLVFZUNZBWSVGSVHUKQVIXKWGCWTHIZJZXKWOWDYCXLXMABCV
+      JSXKXAWGYCVBXNXAWFYBDWTCHVMVKVFVNURXKEWRLWDWOXAXBVOZXKWOWDXSXLXMXTSQXKWLW
+      SWTNTBXKWKWSDWTNXKEWRCMYDVPXNVQXKBWSXKBXLVRXKWSXKWOWDXRXLXMYASZVRXKWSYEVS
+      VTWBWAWC $.
+  $}
+
+  ${
     $d A w $.  $d N k m w $.
     $( Lemma for ~ pw2dvds .  If a natural number has some power of two which
        does not divide it, there is a highest power of two which does divide
