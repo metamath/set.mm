@@ -92,6 +92,23 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+19-Aug-26 0nn0m1nnn0  [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 lfuhgr      [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 lfuhgr2     [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 lfuhgr3     [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 pfxwlk      [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 revwlk      [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 swrdwlk     [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 pthhashvtx  [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 spthcycl    [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 subgrwlk    [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 subgrtrl    [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 subgrpth    [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 subgrcycl   [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 loop1cycl   [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 2cycld      [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 umgr2cycllem [same]     Moved from BTT's mathbox to main set.mm
+19-Aug-26 umgr2cycl   [same]      Moved from BTT's mathbox to main set.mm
 15-Aug-26 srcmpltd    [same]      Moved from BTT's mathbox to main set.mm
 15-Aug-26 prsrcmpltd  [same]      Moved from BTT's mathbox to main set.mm
 15-Aug-26 dff15       [same]      Moved from BTT's mathbox to main set.mm
