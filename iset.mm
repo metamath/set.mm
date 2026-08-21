@@ -86,6 +86,7 @@ DAW David A. Wheeler
 JY  Jonathan Yan
 FZ  Fan Zheng
 JEH James E. Hanson
+TB  Taylor Barrella
 
 HTML code for accented names:
   BJ Beno&icirc;t Jubin
@@ -196667,6 +196668,100 @@ $)
       PVJBLVIUGRVMALVLUHRVOSLUISULGSLGUMSVBQUNUOWFVQVKWCVFWANHZLGZOCDVFVGFFVRVF
       TZVTVKWCWCWEWHWIVSVJBLVRVFVIJUPUQWIWCURWIWDWGLVRVFWANUSUTVAWAVGTZVKVKWCVN
       WHVPWJVKURWJWBVMALWAVGVLJUPUQWJWGVOLWAVGVFNVCUTVAVDVE $.
+  $}
+
+  ${
+    zprmlogbaplem1.b $e |- ( ph -> B e. Prime ) $.
+    zprmlogbaplem1.m $e |- ( ph -> M e. NN ) $.
+    zprmlogbaplem1.j $e |- ( ph -> -. B || M ) $.
+    zprmlogbaplem1.a $e |- ( ph -> A e. NN0 ) $.
+    $( Lemma for ~ zprmlogbap .  Rearranging an expression involving
+       logarithms.  (Contributed by Jim Kingdon, 20-Aug-2026.) $)
+    zprmlogbaplem1 $p |- ( ph -> ( B logb ( ( B ^ A ) x. M ) )
+        = ( A + ( B logb M ) ) ) $=
+      ( cexp co cmul clogb caddc crp wcel c1 wbr wceq syl nnrpd cprime cn prmnn
+      cap 1red nnred clt prmgt1 nnexpcld rprelogbmul syl22anc c2 cuz cfv prmuz2
+      gtapd cz nn0zd nnlogbexp syl2anc oveq1d eqtrd ) ACCBIJZDKJLJZCVCLJZCDLJZM
+      JZBVFMJACNOCPUDQVCNODNOVDVGRACACUAOZCUBOECUCSZTAPCAUEACVIUFAVHPCUGQECUHSU
+      PAVCACBVIHUITADFTVCCDUJUKAVEBVFMACULUMUNOZBUQOVEBRAVHVJECUOSABHURCBUSUTVA
+      VB $.
+
+    $d A q $.  $d B q $.  $d M q $.  $d X q $.  $d ph q $.
+    zprmlogbaplem2.x $e |- X = ( ( B ^ A ) x. M ) $.
+    $( Lemma for ~ zprmlogbap .  The logarithm is either rational or
+       irrational.  (Contributed by Jim Kingdon, 20-Aug-2026.) $)
+    zprmlogbaplem2 $p |- ( ph
+        -> ( ( B logb X ) e. QQ \/ (
+        ( B logb X ) e. RR /\ A. q e. QQ ( B logb X ) =//= q ) ) ) $=
+      ( c1 wceq wcel clogb co cq wbr wa adantr c2 cuz cfv wo cr cv cap elnn1uz2
+      wral cn sylib caddc cc0 cexp cmul oveq2i zprmlogbaplem1 eqtrid crp cprime
+      oveq2 prmnn syl nnrpd nnred prmgt1 gtapd rplogb1 syl2anc sylan9eqr oveq2d
+      1red clt cc nn0cnd addridd 3eqtrd cz nn0zd zq eqeltrd ex prmuz2 relogbzcl
+      recnd comraddd cgcd simpr nnzd gcdcomd cdvds wn coprm mpbid logbgcd1irrap
+      wb eqtrd anassrs ralrimiva syl21anc irraddap simpld simprd breq1d ralbidv
+      mpbird jca orim12d mpd ) ADLMZDUAUBUCZNZUDZCEOPZQNZXNUENZXNFUFZUGRZFQUIZS
+      ZUDADUJNXMHDUHUKAXJXOXLXTAXJXOAXJSZXNBQYAXNBCDOPZULPZBUMULPBAXNYCMXJAXNCC
+      BUNPDUOPZOPYCEYDCOKUPABCDGHIJUQURZTYAYBUMBULXJAYBCLOPZUMDLCOVAACUSNCLUGRY
+      FUMMACACUTNZCUJNGCVBVCZVDALCAVLACYHVEAYGLCVMRGCVFVCVGCVHVIVJVKYABABVNNXJA
+      BJVOZTVPVQABQNZXJABVRNYJABJVSBVTVCZTWAWBAXLXTAXLSZXPXSYLXNYBBULPZUEAXNYMM
+      XLAXNBYBYIAYBACXKNZDUSNYBUENZAYGYNGCWCVCZADHVDCDWDVIZWEYEWFZTYLYMUENZYMXQ
+      UGRZFQUIZYLYOYBXQUGRZFQUIZYJYSUUASAYOXLYQTYLXLYNDCWGPZLMZUUCAXLWHAYNXLYPT
+      AUUEXLAUUDCDWGPZLADCADHWIZACYHWIWJACDWKRWLZUUFLMZIAYGDVRNUUHUUIWPGUUGCDWM
+      VIWNWQTXLYNSZUUESUUBFQUUJUUEXQQNUUBCXQDWOWRWSWTAYJXLYKTYBBFXAWTZXBWAYLXSU
+      UAYLYSUUAUUKXCAXSUUAWPXLAXRYTFQAXNYMXQUGYRXDXETXFXGWBXHXI $.
+  $}
+
+  ${
+    $d B a m $.  $d B x y z $.  $d F a m $.  $d F x y z $.  $d J x y $.
+    $d X a m $.  $d X x y z $.
+    zprmlogbaplem3.j $e |- J = { z e. NN | -. B || z } $.
+    zprmlogbaplem3.f $e |- F = ( x e. J , y e. NN0 |-> ( ( B ^ y ) x. x ) ) $.
+    $( Lemma for ~ zprmlogbap .  Decomposing a natural number into a power of a
+       base and a factor not divisible by that base.  (Contributed by Jim
+       Kingdon, 20-Aug-2026.) $)
+    zprmlogbaplem3 $p |- ( ( X e. NN /\ B e. Prime )
+        -> E. m e. NN E. a e. NN0 ( -. B || m
+        /\ X = ( ( B ^ a ) x. m ) ) ) $=
+      ( cn wcel wa cfv cn0 cdvds co cmul wceq cprime ccnv c1st c2nd wbr wn cexp
+      cv wrex cop cxp wf1o c2 cuz prmuz2 nnmaxpw syl simpl f1ocnvdm elxp6 sylib
+      syl2an2 simprd simpld breq2 notbid elrab2 df-ov eqtr4di f1ocnvfv2 nnexpcl
+      fveq2d prmnn nnmulcld oveq1d ovmpog syl3anc 3eqtr3d eqeq2d anbi12d anbi2d
+      oveq2 rspc2ev syl112anc ) HLMZDUAMZNZHFUBOZUCOZLMZWHUDOZPMZDWIQUEZUFZHDWK
+      UGRZWISRZTZDEUHZQUEZUFZHDIUHZUGRZWRSRZTZNZIPUIELUIWGWJWNWGWIGMZWJWNNWGXFW
+      LWGWHWIWKUJZTZXFWLNZWGWHGPUKZMZXHXINWFXJLFULZWEWEXKWFDUMUNOMXLDUOABCDFGJK
+      UPUQZWEWFURZXJLHFUSVBWHGPUTVAZVCZVDZDCUHZQUEZUFWNCWILGXRWITXSWMXRWIDQVEVF
+      JVGVAZVDZWGXFWLXPVCZWGWJWNXTVCWGWHFOZWIWKFRZHWPWGYCXGFOYDWGWHXGFWGXHXIXOV
+      DVLWIWKFVHVIWFXLWEWEYCHTXMXNXJLHFVJVBWGXFWLWPLMYDWPTXQYBWGWOWIWFDLMWEWLWO
+      LMDVMYBDWKVKVBYAVNABWIWKGPDBUHZUGRZAUHZSRWPFYFWISRLYGWIYFSWBYEWKTYFWOWISY
+      EWKDUGWBVOKVPVQVRXEWNWQNWNHXBWISRZTZNEIWIWKLPWRWITZWTWNXDYIYJWSWMWRWIDQVE
+      VFYJXCYHHWRWIXBSWBVSVTXAWKTZYIWQWNYKYHWPHYKXBWOWISXAWKDUGWBVOVSWAWCWD $.
+  $}
+
+  ${
+    $d B a m q $.  $d B a m t u v $.  $d B t u v x y z $.  $d X a m q $.
+    $d X x y z $.
+    $( The logarithm of a natural number to a prime base is either rational or
+       irrational.
+
+       The proof decomposes ` X ` into ` m e. NN ` and ` a e. NN0 ` such that
+       ` X = ( ( B ^ a ) x. m ) ` (using ~ nnmaxpw ).  If ` m = 1 ` the
+       logarithm is ` a ` , which is rational.  If ` 1 < m ` then we can apply
+       ~ logbgcd1irrap to show that the logarithm is irrational.  (Contributed
+       by Jim Kingdon and Taylor Barrella, 20-Aug-2026.) $)
+    zprmlogbap $p |- ( ( X e. NN /\ B e. Prime )
+        -> ( ( B logb X ) e. QQ \/ (
+        ( B logb X ) e. RR /\ A. q e. QQ ( B logb X ) =//= q ) ) ) $=
+      ( vm va vy vz vv vt cn wcel wa cv cdvds wbr cexp co cmul cn0 cq vx cprime
+      vu wn wceq wrex clogb cr cap wral wo crab cmpo breq2 notbid cbvrabv oveq2
+      oveq1d cbvmpov zprmlogbaplem3 simpllr simplrl simplrr eqid zprmlogbaplem2
+      weq simprl simprr oveq2d eleq1d breq1d ralbidv anbi12d orbi12d rexlimdvva
+      mpbird ex mpd ) BJKZAUBKZLZADMZNOUDZBAEMZPQWBRQZUEZLZESUFDJUFABUGQZTKZWHU
+      HKZWHCMZUIOZCTUJZLZUKZUAFGADUCHAIMZNOZUDZIJULZSAHMZPQZUCMZRQZUMWSBEWRAGMZ
+      NOZUDIGJIGVFWQXEWPXDANUNUOUPUCHUAFWSSXCAFMZPQZUAMZRQXAXHRQXBXHXARUQHFVFXA
+      XGXHRWTXFAPUQURUSUTWAWGWODEJSWAWBJKZWDSKZLZLZWGWOXLWGLZWOAWEUGQZTKZXNUHKZ
+      XNWKUIOZCTUJZLZUKXMWDAWBWECVSVTXKWGVAWAXIXJWGVBXLWCWFVGWAXIXJWGVCWEVDVEXM
+      WIXOWNXSXMWHXNTXMBWEAUGXLWCWFVHVIZVJXMWJXPWMXRXMWHXNUHXTVJXMWLXQCTXMWHXNW
+      KUIXTVKVLVMVNVPVQVOVR $.
   $}
 
 
