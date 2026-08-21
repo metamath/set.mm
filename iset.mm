@@ -103578,8 +103578,8 @@ $)
   nnrecq $p |- ( A e. NN -> ( 1 / A ) e. QQ ) $=
     ( c1 cz wcel cn cdiv co cq 1z znq mpan ) BCDAEDBAFGHDIBAJK $.
 
-  $( The sum of an irrational number and a rational number is irrational.
-     (Contributed by NM, 7-Nov-2008.) $)
+  $( The sum of a real which is not rational and a rational number is not
+     rational.  (Contributed by NM, 7-Nov-2008.) $)
   irradd $p |- ( ( A e. ( RR \ QQ ) /\ B e. QQ )
                 -> ( A + B ) e. ( RR \ QQ ) ) $=
     ( cr cq cdif wcel wa caddc co wn eldif qre readdcl sylan2 adantlr wi qsubcl
@@ -103588,6 +103588,22 @@ $)
     ZURVCACDKVGURGUTVBVDURUTVFURVDBCFUTBLABMNOVDVFURVBVDURVFVBVDURVFVBPVDURGZVA
     VEVHVAUSBRIZDFZVEURVAVJPVDVAURVJUSBQSUAVHVIADVDATFBTFVIAUBURAUKBUCABUDUEUFU
     GUHULUIUJUMUNUSCDKUO $.
+
+  ${
+    $d A q r $.  $d B q r $.
+    $( The sum of an irrational number and a rational number is irrational.
+       (Contributed by Jim Kingdon, 20-Aug-2026.) $)
+    irraddap $p |- ( ( ( A e. RR /\ A. q e. QQ A =//= q ) /\ B e. QQ )
+        -> ( ( A + B ) e. RR /\ A. q e. QQ ( A + B ) =//= q ) ) $=
+      ( vr cr wcel cv cap wbr cq wral wa caddc simpll qre adantl readdcld breq2
+      co syl cmin simpllr simpr simplr syl2anc rspcdva simplll reapadd1 syl3anc
+      qsubcl wb mpbid cc qcn recnd npcand breqtrd ralrimiva cbvralv sylib jca )
+      AEFZACGZHIZCJKZLZBJFZLZABMSZEFVIVCHIZCJKZVHABVBVEVGNVGBEFZVFBOZPQVHVIDGZH
+      IZDJKVKVHVODJVHVNJFZLZVIVNBUASZBMSZVNHVQAVRHIZVIVSHIZVQVDVTCJVRVCVRAHRVBV
+      EVGVPUBVQVPVGVRJFZVHVPUCVFVGVPUDZVNBUJUEZUFVQVBVREFZVLVTWAUKVBVEVGVPUGVQW
+      BWEWDVROTVQVGVLWCVMTZAVRBUHUIULVQVNBVPVNUMFVHVNUNPVQBWFUOUPUQURVOVJDCJVNV
+      CVIHRUSUTVA $.
+  $}
 
   $( The product of a real which is not rational with a nonzero rational is not
      rational.  Note that by "not rational" we mean the negation of "is
