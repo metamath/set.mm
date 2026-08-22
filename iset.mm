@@ -198290,6 +198290,31 @@ $)
       BXODSWJXSWSXNTYFVSVTWAWBWCXCWSCDWDQWEWF $.
   $}
 
+  ${
+    $d p N $.  $d p P $.
+    bpos1.1 $e |- ( E. p e. Prime ( N < p /\ p <_ ( 2 x. N ) ) -> ph ) $.
+    bpos1.2 $e |- ( N e. ( ZZ>= ` P ) -> ph ) $.
+    bpos1.3 $e |- P e. Prime $.
+    bpos1.4 $e |- A e. NN0 $.
+    bpos1.5 $e |- ( A x. 2 ) = B $.
+    bpos1.6 $e |- A < P $.
+    bpos1.7 $e |- ( P < B \/ P = B ) $.
+    $( Lemma for bpos1 .  (Contributed by Mario Carneiro, 12-Mar-2014.) $)
+    bpos1lem $p |- ( N e. ( ZZ>= ` A ) -> ph ) $=
+      ( wcel cle wbr clt sylancr c2 cr cuz cfv cz wb cprime cn prmnn ax-mp nnzi
+      eluzelz eluz biimtrrdi wa cv cmul wrex nnrei a1i nn0rei remulcli eqeltrri
+      co 2re eluzelre remulcl wceq cn0 2nn0 nn0mulcli nn0zi zleloe mp2an nn0cni
+      wo mpbir 2cn mulcomli eluzle cc0 2pos pm3.2i lemul2 mp3an13 syl eqbrtrrid
+      mpbid letrd anim2i breq2 breq1 anbi12d rspcev expcom zlelttric mpjaod ) E
+      BUAUBNZDEOPZAEDQPZWPWQEDUAUBNZAWPDUCNZEUCNZWSWQUDDDUENZDUFNIDUGUHZUIZBEUJ
+      ZDEUKRHULWRWPAWRWPUMZEFUNZQPZXGSEUOVBZOPZUMZFUEUPZAXFXBWRDXIOPZUMZXLIWPXM
+      WRWPDCXIDTNWPDXCUQURCTNWPBSUOVBZCTKBSBJUSZVCUTVAURWPSTNZETNZXITNVCBEVDZSE
+      VERDCOPZWPXTDCQPDCVFVNZMWTCUCNXTYAUDXDCXOCVGKBSJVHVIVAVJDCVKVLVOURWPCSBUO
+      VBZXIOBSCBJVMVPKVQWPBEOPZYBXIOPZBEVRWPXRYCYDUDZXSBTNXRXQVSSQPZUMYEXPXQYFV
+      CVTWABESWBWCWDWFWEWGWHXKXNFDUEXGDVFXHWRXJXMXGDEQWIXGDXIOWJWKWLRGWDWMWPWTX
+      AWQWRVNXDXEDEWNRWO $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
