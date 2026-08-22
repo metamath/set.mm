@@ -17877,10 +17877,13 @@ New usage of "minvecolem4c" is discouraged (1 uses).
 New usage of "minvecolem5" is discouraged (1 uses).
 New usage of "minvecolem6" is discouraged (1 uses).
 New usage of "minvecolem7" is discouraged (1 uses).
+New usage of "mndfoOLD" is discouraged (0 uses).
+New usage of "mndideuOLD" is discouraged (0 uses).
 New usage of "mndoisexid" is discouraged (2 uses).
 New usage of "mndoismgmOLD" is discouraged (3 uses).
 New usage of "mndoissmgrpOLD" is discouraged (1 uses).
 New usage of "mndomgmid" is discouraged (3 uses).
+New usage of "mndpfoOLD" is discouraged (0 uses).
 New usage of "mndtcbasval" is discouraged (2 uses).
 New usage of "mndtcob" is discouraged (2 uses).
 New usage of "mndtcval" is discouraged (3 uses).
@@ -20810,10 +20813,13 @@ Proof modification of "minimp-ax2" is discouraged (62 steps).
 Proof modification of "minimp-ax2c" is discouraged (272 steps).
 Proof modification of "minimp-pm2.43" is discouraged (40 steps).
 Proof modification of "minimp-syllsimp" is discouraged (261 steps).
+Proof modification of "mndfoOLD" is discouraged (60 steps).
+Proof modification of "mndideuOLD" is discouraged (50 steps).
 Proof modification of "mndoisexid" is discouraged (14 steps).
 Proof modification of "mndoismgmOLD" is discouraged (14 steps).
 Proof modification of "mndoissmgrpOLD" is discouraged (22 steps).
 Proof modification of "mndomgmid" is discouraged (11 steps).
+Proof modification of "mndpfoOLD" is discouraged (152 steps).
 Proof modification of "moabexOLD" is discouraged (65 steps).
 Proof modification of "mobidvALT" is discouraged (48 steps).
 Proof modification of "mof0ALT" is discouraged (67 steps).
