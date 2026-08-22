@@ -198270,6 +198270,26 @@ $)
       XGUWFUXGUXJYGYIYJUXIVWLUXKUWGUWHUWIUWJYLUWK $.
   $}
 
+  ${
+    $d A q $.  $d B q $.  $d N q $.
+    $( Convert a bound on a power to a bound on the exponent.  (Contributed by
+       Mario Carneiro, 11-Mar-2014.)  (Revised by Jim Kingdon, 21-Aug-2026.) $)
+    prmefexple $p |- ( ( A e. Prime /\ N e. ZZ /\ B e. NN ) ->
+        ( ( A ^ N ) <_ B <-> N <_ ( |_ ` ( ( log ` B ) / ( log ` A ) ) ) ) ) $=
+      ( vq wcel cn co cle wbr clog cfv ce crp wceq syl nnrpd syl2anc cr cq cap
+      cprime cz cexp cmul cdiv simp1 prmnn simp2 reexplog simp3 reeflogd eqcomd
+      w3a cfl breq12d wb zred nnred c2 cuz c1 prmuz2 eluz2gt1 rplogcld remulcld
+      clt rpred relogcld efle lemuldivd cv wa clogb zprmlogbap relogbval eleq1d
+      wral wo breq1d ralbidv anbi12d orbi12d mpbid flapge bitrd 3bitr2d ) AUAEZ
+      CUBEZBFEZUMZACUCGZBHICAJKZUDGZLKZBJKZLKZHIZWMWOHIZCWOWLUEGZUNKHIZWJWKWNBW
+      PHWJAMEWHWKWNNWJAWJWGAFEWGWHWIUFZAUGOZPWGWHWIUHZACUIQWJWPBWJBWJBWGWHWIUJZ
+      PZUKULUOWJWMREWOREWRWQUPWJCWLWJCXCUQZWJWLWJAWJAXBURWJAUSUTKEZVAAVFIWJWGXG
+      XAAVBOZAVCOVDZVGVEWJBXEVHZWMWOVIQWJWRCWSHIZWTWJCWOWLXFXJXIVJWJWSSEZWSREZW
+      SDVKZTIZDSVQZVLZVRZWHXKWTUPWJABVMGZSEZXSREZXSXNTIZDSVQZVLZVRZXRWJWIWGYEXD
+      XAABDVNQWJXTXLYDXQWJXSWSSWJXGBMEXSWSNXHXEABVOQZVPWJYAXMYCXPWJXSWSRYFVPWJY
+      BXODSWJXSWSXNTYFVSVTWAWBWCXCWSCDWDQWEWF $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
