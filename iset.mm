@@ -152635,6 +152635,14 @@ $)
   10nprm $p |- -. ; 1 0 e. Prime $=
     ( c1 cc0 1nn 0nn0 c2 2cn mul02i dec2nprm ) ABBCDEFGH $.
 
+  $( 11 is a prime number.  (Contributed by Mario Carneiro, 18-Feb-2014.)
+     (Revised by Mario Carneiro, 20-Apr-2015.) $)
+  11prm $p |- ; 1 1 e. Prime $=
+    ( c1 cdc 1nn0 1nn decnncl 1lt10 declti cc0 0nn0 c2 mul02i 1e0p1 dec2dvds c3
+    2cn 3nn 3nn0 co caddc c9 cmul 3t3e9 oveq1i 9p2e11 eqtri 2lt3 ndvdsi c5 2nn0
+    2nn 5nn0 1lt2 decltc prmlem1 ) AABZAACDEAAADCCFGAHHACIJOKLMNUONJPQUJNNUARZJ
+    SRTJSRUOUPTJSUBUCUDUEUFUGAJAUHCUICUKFULUMUN $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
