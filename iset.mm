@@ -196717,8 +196717,8 @@ $)
     zprmlogbaplem3.j $e |- J = { z e. NN | -. B || z } $.
     zprmlogbaplem3.f $e |- F = ( x e. J , y e. NN0 |-> ( ( B ^ y ) x. x ) ) $.
     $( Lemma for ~ zprmlogbap .  Decomposing a natural number into a power of a
-       base and a factor not divisible by that base.  (Contributed by Jim
-       Kingdon, 20-Aug-2026.) $)
+       prime base and a factor not divisible by that prime.  (Contributed by
+       Jim Kingdon, 20-Aug-2026.) $)
     zprmlogbaplem3 $p |- ( ( X e. NN /\ B e. Prime )
         -> E. m e. NN E. a e. NN0 ( -. B || m
         /\ X = ( ( B ^ a ) x. m ) ) ) $=
