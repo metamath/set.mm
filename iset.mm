@@ -98607,6 +98607,10 @@ $)
   4t2e8 $p |- ( 4 x. 2 ) = 8 $=
     ( c4 c2 cmul co caddc c8 4cn times2i 4p4e8 eqtri ) ABCDAAEDFAGHIJ $.
 
+  $( 2 times 4 equals 8.  (Contributed by Umit Teoman Dogan, 10-Jun-2026.) $)
+  2t4e8 $p |- ( 2 x. 4 ) = 8 $=
+    ( c4 c2 c8 4cn 2cn 4t2e8 mulcomli ) ABCDEFG $.
+
   $( 2 times 0 equals 0.  (Contributed by David A. Wheeler, 8-Dec-2018.) $)
   2t0e0 $p |- ( 2 x. 0 ) = 0 $=
     ( c2 2cn mul01i ) ABC $.
