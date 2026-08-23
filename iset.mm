@@ -152561,6 +152561,32 @@ $)
       UMXFXHXQUPXDBXEUQUSXB $.
   $}
 
+  ${
+    $d N x $.
+    prmlem1.n $e |- N e. NN $.
+    prmlem1.gt $e |- 1 < N $.
+    prmlem1.2 $e |- -. 2 || N $.
+    prmlem1.3 $e |- -. 3 || N $.
+    ${
+      prmlem1a.x $e |- ( ( -. 2 || 5 /\ x e. ( ZZ>= ` 5 ) ) ->
+        ( ( x e. ( Prime \ { 2 } ) /\ ( x ^ 2 ) <_ N ) -> -. x || N ) ) $.
+      $( A quick proof skeleton to show that the numbers less than 25 are
+         prime, by trial division.  (Contributed by Mario Carneiro,
+         18-Feb-2014.) $)
+      prmlem1a $p |- N e. Prime $=
+        ( cprime wcel c2 cuz cfv wbr cdvds wn wi cn c1 mpbir2an c3 cv cexp wral
+        co cle clt eluz2b2 wceq wne breq1 notbid imbi2d syl5ibrcom prmnn adantr
+        2a1i wa csn cdif eldifsn n2dvds1 3p2e5 prmlem0 1nprm pm2.21i 1p2e3 mpan
+        c5 a1i nnuz eleq2s expd biimtrrid mpcom ex wdc wo cz prmz zdceq sylancl
+        2z dcne sylib mpjaod rgen isprm5 ) BHIBJKLIZAUAZJUBUDBUEMZWIBNMZOZPZAHU
+        CWHBQIRBUFMCDBUGSWMAHWIHIZWIJUHZWMWIJUIZWNWMWOWJJBNMZOZPWNWJWREUPWOWLWR
+        WJWOWKWQWIJBNUJUKULUMWNWPWMWIQIZWNWPUQZWMWNWSWPWIUNUOWTWIHJURUSIZWSWMWI
+        HJUTWSXAWJWLXAWJUQWLPZWIRKLZQJRNMOWIXCIXBVAARTBATVHBGTBNMOTHIFVIVBVCRHI
+        RBNMOVDVEVFVCVGVJVKVLVMVNVOWNWOVPZWOWPVQWNWIVRIJVRIXDWIVSWBWIJVTWAWIJWC
+        WDWEWFABWGS $.
+    $}
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
