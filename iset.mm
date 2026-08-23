@@ -152601,6 +152601,14 @@ $)
       WEWDTIXAHWDVMWDVNVOAWGVPVQVRVSVTWBWC $.
   $}
 
+  $( 5 is a prime number.  (Contributed by Mario Carneiro, 18-Feb-2014.)
+     (Revised by Mario Carneiro, 20-Apr-2015.) $)
+  5prm $p |- 5 e. Prime $=
+    ( c5 5nn 1lt5 c2 c1 2nn 2nn0 cmul co caddc c4 2t2e4 oveq1i df-5 eqtr4i 1lt2
+    1nn ndvdsi c3 5nn0 3nn 1nn0 3t1e3 3p2e5 eqtri 2lt3 5lt10 declti prmlem1 ) A
+    BCDADEFGQDDHIZEJIKEJIAUJKEJLMNOPRSAEDUAUBFSEHIZDJISDJIAUKSDJUCMUDUEUFRDAAFT
+    TUGUHUI $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
