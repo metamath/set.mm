@@ -152651,6 +152651,14 @@ $)
     2p1e3 3lt10 1lt2 decltc prmlem1 ) ABCZABDEFABAGHDIJAAKBDDKOLMNBUOPAEQGAKBBP
     RSDTUJPBAKCUAUBUCUDUEUFUGAKBUHDTHUIUKULUMUN $.
 
+  $( 17 is a prime number.  (Contributed by Mario Carneiro, 18-Feb-2014.)
+     (Revised by Mario Carneiro, 20-Apr-2015.) $)
+  17prm $p |- ; 1 7 e. Prime $=
+    ( c1 c7 cdc 1nn0 7nn decnncl 1nn 7nn0 1lt10 declti c3 c6 3nn0 df-7 dec2dvds
+    3t2e6 c5 c2 5nn0 2nn0 3nn 2nn cmul co 5cn 3cn 5t3e15 mulcomli 5p2e7 decaddi
+    2lt3 ndvdsi 7lt10 1lt2 decltc prmlem1 ) ABCZABDEFABAGHDIJAKLBDMPNOKUQQRUASU
+    BAQBKQUCUDRDSTQKAQCUEUFUGUHUIUJUKULARBQDTHSUMUNUOUP $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
