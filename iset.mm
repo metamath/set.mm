@@ -152609,6 +152609,10 @@ $)
     BCDADEFGQDDHIZEJIKEJIAUJKEJLMNOPRSAEDUAUBFSEHIZDJISDJIAUKSDJUCMUDUEUFRDAAFT
     TUGUHUI $.
 
+  $( 6 is not a prime number.  (Contributed by Mario Carneiro, 18-Feb-2014.) $)
+  6nprm $p |- -. 6 e. Prime $=
+    ( c3 c2 c6 3nn 2nn 1lt3 1lt2 3t2e6 nprmi ) ABCDEFGHI $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
