@@ -579962,6 +579962,21 @@ $)
     $.
 
   ${
+    $d A x y $.
+    $( If the empty set is an element of the input class, then the Scott's
+       trick set is the singleton of the empty set.  (Contributed by
+       BTernaryTau, 23-Aug-2026.) $)
+    0elscott $p |- ( (/) e. A -> Scott A = { (/) } ) $=
+      ( vx vy c0 wcel cscott wceq csn wss wo cv crnk cfv wral fveq2 sseq2d ss0b
+      wi con0 0elon onrankid mpbi sseq2i rankeq0 3bitr4i bitrdi rspcv ralrimivw
+      vex crab df-scott sseq1i rabsssn bitri sylibr sssn sylib elscottn0 neneqd
+      orcnd ) DAEZAFZDGZVBDHZGZVAVBVDIZVCVEJVABKZLMZCKZLMZIZCANZVGDGZRZBANZVFVA
+      VNBAVKVMCDAVIDGZVKVHDLMZIZVMVPVJVQVHVIDLOPVHDIVHDGVRVMVHQVQDVHDSEVQDGTDUA
+      UBUCVGBUIUDUEUFUGUHVFVLBAUJZVDIVOVBVSVDBCAUKULVLBADUMUNUOVBDUPUQVAVBDDAUR
+      USUT $.
+  $}
+
+  ${
     $d A x $.
     $( The rank of a nonempty Scott's trick set.  (Contributed by BTernaryTau,
        8-Jul-2026.) $)
