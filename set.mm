@@ -579987,6 +579987,16 @@ $)
     cr1 con0 ax-mp sylibr ) ABCBDZEFAEFZGZHZSUAOFHZABIUAPCUCUBJTAKLSUABMNQR $.
 
   ${
+    $d A x y $.
+    $( The Scott operation is idempotent.  (Contributed by BTernaryTau,
+       23-Aug-2026.) $)
+    scottidm $p |- Scott Scott A = Scott A $=
+      ( vx vy cscott scottss cv wcel crnk cfv wss wral elscott ssralv simplbiim
+      wa wi ax-mp ancli sylibr ssriv eqssi ) ADZDZUBUBEBUBUCBFZUBGZUEUDHICFHIJZ
+      CUBKZOUDUCGUEUGUEUDAGUFCAKZUGCUDALUBAJUHUGPAEUFCUBAMQNRCUDUBLSTUA $.
+  $}
+
+  ${
     $d f w x $.  $d f v x $.  $d f w y z $.
     $( Axiom of Choice equivalent: every set can be mapped one-to-one into the
        ordinals.  (Contributed by BTernaryTau, 16-Sep-2026.) $)
