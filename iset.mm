@@ -152585,6 +152585,20 @@ $)
         RBNMOVDVEVFVCVGVJVKVLVMVNVOWNWOVPZWOWPVQWNWIVRIJVRIXDWIVSWBWIJVTWAWIJWC
         WDWEWFABWGS $.
     $}
+
+    prmlem1.lt $e |- N < ; 2 5 $.
+    $( A quick proof skeleton to show that the numbers less than 25 are prime,
+       by trial division.  (Contributed by Mario Carneiro, 18-Feb-2014.) $)
+    prmlem1 $p |- N e. Prime $=
+      ( vx c5 wcel c2 cexp co cle wbr wa cdvds wn clt cr cz cuz cfv cprime cdif
+      cv csn wi eluzelre resqcld eluzle cc0 5nn0 nn0ge0i le2sq2 mpanl12 syl2anc
+      5re nnrei resqcli w3a cdc 5cn sqvali 5t5e25 eqtri breqtrri ltletr mp3an12
+      cmul mpani sylc wb eluzelz zsqcl syl zltnle sylancr mpbid pm2.21d adantld
+      nnzi adantl prmlem1a ) GABCDEGUEZHUAUBIZWDUCJUFUDIZWDJKLZAMNZOWDAPNQZUGJH
+      PNQWEWHWIWFWEWHWIWEAWGRNZWHQZWEWGSIZHJKLZWGMNZWJWEWDHWDUHZUIWEWDSIZHWDMNZ
+      WNWOHWDUJHSIUKHMNWPWQOWNUQHULUMHWDUNUOUPASIZWMSIZWLWNWJUGABURHUQUSWRWSWLU
+      TAWMRNWNWJAJHVAZWMRFWMHHVILWTHVBVCVDVEVFAWMWGVGVJVHVKWEATIWGTIZWJWKVLABWA
+      WEWDTIXAHWDVMWDVNVOAWGVPVQVRVSVTWBWC $.
   $}
 
 
