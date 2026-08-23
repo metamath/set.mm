@@ -579906,7 +579906,7 @@ $)
   ${
     $d A x $.  $d B x $.  $d C x $.
     $( Relationship between the ranks of an element in a Scott's trick set and
-       an element in the input set.  (Contributed by BTernaryTau,
+       an element in the input class.  (Contributed by BTernaryTau,
        3-Jul-2026.) $)
     elscottrankss $p |- ( ( A e. Scott B /\ C e. B ) ->
         ( rank ` A ) C_ ( rank ` C ) ) $=
@@ -579915,8 +579915,8 @@ $)
       ACGQOPR $.
   $}
 
-  $( If a member of the input set has the same rank as a member of the Scott's
-     trick set, then it is also a member of the Scott's trick set.
+  $( If a member of the input class has the same rank as a member of the
+     Scott's trick set, then it is also a member of the Scott's trick set.
      (Contributed by BTernaryTau, 10-Jul-2026.) $)
   scottrankeqel $p |- ( ( A e. Scott B /\ C e. B /\
       ( rank ` C ) = ( rank ` A ) ) -> C e. Scott B ) $=
@@ -579924,7 +579924,7 @@ $)
     cfv w3a wb elscott2 baib 3ad2ant2 mpbird ) ABDZEZCBEZCFOZAFOZGZPZCUBEZUEFBH
     IZGZUHUFUJGZUKUCUDULUGABJKUGUCULUKUDUEUFUJLMNUDUCUIUKQUGUIUDUKCBRSTUA $.
 
-  $( If a member of the input set is not a member of the Scott's trick set,
+  $( If a member of the input class is not a member of the Scott's trick set,
      then its rank is greater than the rank of a member of the Scott's trick
      set.  (Contributed by BTernaryTau, 10-Jul-2026.) $)
   nelscottrankgt $p |- ( ( A e. Scott B /\ C e. B /\ -. C e. Scott B ) ->
