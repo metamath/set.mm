@@ -579955,6 +579955,12 @@ $)
       cv crab ) ADEBOFGCOFGHCAIBAPZDEAJZDEBCAKRQDBCALMN $.
   $}
 
+  $( If the input class has elements, then the Scott's trick set is not empty.
+     (Contributed by BTernaryTau, 23-Aug-2026.) $)
+  elscottn0 $p |- ( A e. B -> Scott B =/= (/) ) $=
+    ( wcel c0 wne cscott ne0i scott0b necon3bii sylib ) ABCBDEBFZDEBAGBDKDBHIJ
+    $.
+
   ${
     $d A x $.
     $( The rank of a nonempty Scott's trick set.  (Contributed by BTernaryTau,
