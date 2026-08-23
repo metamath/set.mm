@@ -152298,6 +152298,34 @@ $)
   $}
 
   ${
+    mod2xnegi.1 $e |- A e. NN $.
+    mod2xnegi.2 $e |- B e. NN0 $.
+    mod2xnegi.3 $e |- D e. ZZ $.
+    mod2xnegi.4 $e |- K e. NN $.
+    mod2xnegi.5 $e |- M e. NN0 $.
+    mod2xnegi.6 $e |- L e. NN0 $.
+    mod2xnegi.10 $e |- ( ( A ^ B ) mod N ) = ( L mod N ) $.
+    mod2xnegi.7 $e |- ( 2 x. B ) = E $.
+    mod2xnegi.8 $e |- ( L + K ) = N $.
+    mod2xnegi.9 $e |- ( ( D x. N ) + M ) = ( K x. K ) $.
+    $( Version of ~ mod2xi with a negative mod value.  (Contributed by Mario
+       Carneiro, 21-Feb-2014.) $)
+    mod2xnegi $p |- ( ( A ^ E ) mod N ) = ( M mod N ) $=
+      ( caddc co cmin cn cn0 wcel nn0nnaddcl mp2an eqeltrri cz zaddcl nn0addcli
+      nnzi nnnn0i nn0zi zsubcl cmul nncni cc ax-mp addcli subdiri oveq1i mulcli
+      nn0cni addsubi oveq2i adddii oveq12i adddiri addassi eqtr2i eqtr3i mulsub
+      zcn mulcomi wceq mp4an subadd2i mpbir 3eqtr2i mod2xi ) ABHCSTZEESTZUATZDF
+      GHFESTZHUBQFUCUDEUBUDWDUBUDNLFEUEUFUGZIJWAUHUDZWBUHUDWCUHUDHUHUDCUHUDZWFH
+      WEUKKHCUIUFWBEEELULZWHUJUMWAWBUNUFNMOPWCHUOTZGSTWAHUOTZWBHUOTZUATZGSTWJGS
+      TZWKUATZFFUOTZWIWLGSWAWBHHCHWEUPZWGCUQUDKCVMURZUSZEEELUPZWSUSZWPUTVAWJGWK
+      WAHWRWPVBGMVCZWBHWTWPVBVDHHUOTZEEUOTZSTZHEUOTZXESTZUATZWNWOXBCHUOTZGSTZST
+      ZHWBUOTZUATXGWNXJXDXKXFUAXIXCXBSRVEHEEWPWSWSVFVGXJWMXKWKUAWMXBXHSTZGSTXJW
+      JXLGSHCHWPWQWPVHVAXBXHGHHWPWPVBCHWQWPVBXAVIVJHWBWPWTVNVGVKHEUATZXMUOTZXGW
+      OHUQUDZEUQUDZXOXPXNXGVOWPWSWPWSHEHEVLVPXMFXMFUOXMFVOWDHVOQHEFWPWSFNVCVQVR
+      ZXQVGVKVKVSVT $.
+  $}
+
+  ${
     modsubi.1 $e |- N e. NN $.
     modsubi.2 $e |- A e. NN $.
     modsubi.3 $e |- B e. NN0 $.
