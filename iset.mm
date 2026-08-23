@@ -152529,6 +152529,41 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Specific prime numbers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d N x $.
+    prmlem0.1 $e |- ( ( -. 2 || M /\ x e. ( ZZ>= ` M ) ) ->
+            ( ( x e. ( Prime \ { 2 } ) /\ ( x ^ 2 ) <_ N ) -> -. x || N ) ) $.
+    prmlem0.2 $e |- ( K e. Prime -> -. K || N ) $.
+    prmlem0.3 $e |- ( K + 2 ) = M $.
+    $( Lemma for ~ prmlem1 and ~ prmlem2 .  (Contributed by Mario Carneiro,
+       18-Feb-2014.) $)
+    prmlem0 $p |- ( ( -. 2 || K /\ x e. ( ZZ>= ` K ) ) ->
+            ( ( x e. ( Prime \ { 2 } ) /\ ( x ^ 2 ) <_ N ) -> -. x || N ) ) $=
+      ( c2 cdvds wbr wn cuz cfv wcel wa cprime co wi c1 caddc cv wceq cdif cexp
+      csn cle eldifi eleq1 breq1 notbid imbi12d mpbiri syl5 adantrd a1i wo uzp1
+      wb adantl eldifsn cz eluzel2 simpl 1z n2dvds1 opoe mpanr12 syl2anc adantr
+      wne 2z uzid mp1i dvdsprm sylan mpbid eqcomd a1d necon3ad expimpd biimtrid
+      sylbid ex zcnd ax-1cn addass mp3an23 syl 1p1e2 oveq2i eqtri eqtrdi fveq2d
+      cc eleq2d dvdsaddr sylancr breq2i bitrdi mtbid jaod mpjaod ) HBIJZKZAUAZB
+      LMNZOZXEBUBZXEPHUEZUCZNZXEHUDQDUFJZOXEDIJZKZRZXEBSTQZLMNZXHXORXGXHXKXNXLX
+      KXEPNZXHXNXEPXIUGXHXRXNRBPNZBDIJZKZRFXHXRXSXNYAXEBPUHXHXMXTXEBDIUIUJUKULU
+      MUNUOXQXEXPUBZXEXPSTQZLMZNZUPXGXOXPXEUQXGYBXOYEXGYBXOXGYBOZXKXNXLYFXKXPXJ
+      NZXNYBXKYGURXGXEXPXJUHUSXGYGXNRYBYGXPPNZXPHVJZOXGXNXPPHUTXGYHYIXNXGYHOZXM
+      XPHYJXPHUBXMYJHXPYJHXPIJZHXPUBZXGYKYHXGBVANZXDYKXFYMXDBXEVBUSZXDXFVCZYMXD
+      OSVANHSIJKYKVDVEBSVFVGVHVIXGHHLMNZYHYKYLURHVANZYPXGVKHVLVMXPHVNVOVPVQVRVS
+      VTWAVIWBUNWCXGYEXECLMZNZXOXGYDYRXEXGYCCLXGYCBSSTQZTQZCXGBWNNZYCUUAUBZXGBY
+      NWDUUBSWNNZUUDUUCWEWEBSSWFWGWHUUABHTQZCYTHBTWIWJGWKWLWMWOXGHCIJZKZYSXORXG
+      XCUUFYOXGXCHUUEIJZUUFXGYQYMXCUUHURVKYNHBWPWQUUECHIGWRWSWTUUGYSXOEWCWHWBXA
+      UMXFXHXQUPXDBXEUQUSXB $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Bertrand's Ballot Problem
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
