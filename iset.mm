@@ -101273,6 +101273,11 @@ $)
       JIKABLABPMCDNO $.
   $}
 
+  $( 11 is a positive integer.  (Contributed by Umit Teoman Dogan,
+     10-Jun-2026.) $)
+  11nn $p |- ; 1 1 e. NN $=
+    ( c1 1nn0 1nn decnncl ) AABCD $.
+
   ${
     dec0u.1 $e |- A e. NN0 $.
     $( Add a zero in the units place.  (Contributed by Mario Carneiro,
