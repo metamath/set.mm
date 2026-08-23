@@ -152625,6 +152625,10 @@ $)
   8nprm $p |- -. 8 e. Prime $=
     ( c4 c2 c8 4nn 2nn 1lt4 1lt2 4t2e8 nprmi ) ABCDEFGHI $.
 
+  $( 9 is not a prime number.  (Contributed by Mario Carneiro, 18-Feb-2014.) $)
+  9nprm $p |- -. 9 e. Prime $=
+    ( c3 c9 3nn 1lt3 3t3e9 nprmi ) AABCCDDEF $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
