@@ -152629,6 +152629,12 @@ $)
   9nprm $p |- -. 9 e. Prime $=
     ( c3 c9 3nn 1lt3 3t3e9 nprmi ) AABCCDDEF $.
 
+  $( 10 is not a prime number.  (Contributed by Mario Carneiro, 18-Feb-2014.)
+     (Revised by AV, 6-Sep-2021.)  (Proof shortened by Umit Teoman Dogan,
+     10-Jun-2026.) $)
+  10nprm $p |- -. ; 1 0 e. Prime $=
+    ( c1 cc0 1nn 0nn0 c2 2cn mul02i dec2nprm ) ABBCDEFGH $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
