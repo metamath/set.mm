@@ -152667,6 +152667,14 @@ $)
     ndvdsi c2 c5 2nn0 5nn0 9lt10 1lt2 decltc prmlem1 ) ABCZABDEFABAGHDIJAKLBDMP
     NOQUTRASTGALBQRUAUBDUCUDRQALCUEUFUGUHUIUJUKAULBUMDUNHUOUPUQURUS $.
 
+  $( 23 is a prime number.  (Contributed by Mario Carneiro, 18-Feb-2014.)
+     (Revised by Mario Carneiro, 20-Apr-2015.) $)
+  23prm $p |- ; 2 3 e. Prime $=
+    ( c2 c3 cdc 2nn0 3nn decnncl c1 2nn 3nn0 1nn0 1lt10 declti mullidi dec2dvds
+    nncni df-3 c7 7nn0 cmul co 7cn 7t3e21 mulcomli 1p2e3 decaddi 2lt3 ndvdsi c5
+    5nn 3lt5 declt prmlem1 ) ABCZABDEFABGHIJKLAGABDJAAHOMPNBUMQAERHAGBBQSTADJDQ
+    BAGCUABEOUBUCUDUEUFUGABUHDIUIUJUKUL $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
