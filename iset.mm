@@ -152621,6 +152621,10 @@ $)
     EFGHIDEJKZFLKMFLKZAUJMFLNOPRQSEADFTUAIEDJKZFLKUKAULMFLUBOPRUCSDUDAGUEUFUGUH
     UI $.
 
+  $( 8 is not a prime number.  (Contributed by Mario Carneiro, 18-Feb-2014.) $)
+  8nprm $p |- -. 8 e. Prime $=
+    ( c4 c2 c8 4nn 2nn 1lt4 1lt2 4t2e8 nprmi ) ABCDEFGHI $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
