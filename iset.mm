@@ -198272,8 +198272,9 @@ $)
 
   ${
     $d A q $.  $d B q $.  $d N q $.
-    $( Convert a bound on a power to a bound on the exponent.  (Contributed by
-       Mario Carneiro, 11-Mar-2014.)  (Revised by Jim Kingdon, 21-Aug-2026.) $)
+    $( Convert a bound on a power of a prime to a bound on the exponent.
+       (Contributed by Mario Carneiro, 11-Mar-2014.)  (Revised by Jim Kingdon,
+       21-Aug-2026.) $)
     prmefexple $p |- ( ( A e. Prime /\ N e. ZZ /\ B e. NN ) ->
         ( ( A ^ N ) <_ B <-> N <_ ( |_ ` ( ( log ` B ) / ( log ` A ) ) ) ) ) $=
       ( vq wcel cn co cle wbr clog cfv ce crp wceq syl nnrpd syl2anc cr cq cap
