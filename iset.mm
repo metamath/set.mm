@@ -101242,6 +101242,26 @@ $)
       ABEFGHIZAJIBHIKABLABRFGMNOCDPQ $.
   $}
 
+  $( 11 is a nonnegative integer.  (Contributed by Umit Teoman Dogan,
+     10-Jun-2026.) $)
+  11nn0 $p |- ; 1 1 e. NN0 $=
+    ( c1 1nn0 deccl ) AABBC $.
+
+  $( 12 is a nonnegative integer.  (Contributed by Umit Teoman Dogan,
+     10-Jun-2026.) $)
+  12nn0 $p |- ; 1 2 e. NN0 $=
+    ( c1 c2 1nn0 2nn0 deccl ) ABCDE $.
+
+  $( 16 is a nonnegative integer.  (Contributed by Umit Teoman Dogan,
+     10-Jun-2026.) $)
+  16nn0 $p |- ; 1 6 e. NN0 $=
+    ( c1 c6 1nn0 6nn0 deccl ) ABCDE $.
+
+  $( 25 is a nonnegative integer.  (Contributed by Umit Teoman Dogan,
+     10-Jun-2026.) $)
+  25nn0 $p |- ; 2 5 e. NN0 $=
+    ( c2 c5 2nn0 5nn0 deccl ) ABCDE $.
+
   $( 10 is a positive integer.  (Contributed by NM, 8-Nov-2012.)  (Revised by
      AV, 6-Sep-2021.) $)
   10nn $p |- ; 1 0 e. NN $=
