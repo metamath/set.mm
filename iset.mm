@@ -152613,6 +152613,14 @@ $)
   6nprm $p |- -. 6 e. Prime $=
     ( c3 c2 c6 3nn 2nn 1lt3 1lt2 3t2e6 nprmi ) ABCDEFGHI $.
 
+  $( 7 is a prime number.  (Contributed by Mario Carneiro, 18-Feb-2014.)
+     (Revised by Mario Carneiro, 20-Apr-2015.) $)
+  7prm $p |- 7 e. Prime $=
+    ( c7 7nn 1lt7 c2 c3 c1 2nn 3nn0 1nn cmul co caddc c6 2t3e6 oveq1i df-7 1lt2
+    eqtr4i ndvdsi 3nn 2nn0 3t2e6 1lt3 c5 5nn0 7nn0 7lt10 declti prmlem1 ) ABCDA
+    EFGHIDEJKZFLKMFLKZAUJMFLNOPRQSEADFTUAIEDJKZFLKUKAULMFLUBOPRUCSDUDAGUEUFUGUH
+    UI $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
