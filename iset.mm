@@ -152643,6 +152643,14 @@ $)
     2nn 5nn0 1lt2 decltc prmlem1 ) AABZAACDEAAADCCFGAHHACIJOKLMNUONJPQUJNNUARZJ
     SRTJSRUOUPTJSUBUCUDUEUFUGAJAUHCUICUKFULUMUN $.
 
+  $( 13 is a prime number.  (Contributed by Mario Carneiro, 18-Feb-2014.)
+     (Revised by Mario Carneiro, 20-Apr-2015.) $)
+  13prm $p |- ; 1 3 e. Prime $=
+    ( c1 c3 cdc 1nn0 3nn decnncl 1nn 3nn0 1lt10 declti c2 mullidi df-3 dec2dvds
+    2cn c4 4nn0 cmul co 2nn0 4cn 3cn 4t3e12 mulcomli decsuc 1lt3 ndvdsi c5 5nn0
+    2p1e3 3lt10 1lt2 decltc prmlem1 ) ABCZABDEFABAGHDIJAAKBDDKOLMNBUOPAEQGAKBBP
+    RSDTUJPBAKCUAUBUCUDUEUFUGAKBUHDTHUIUKULUMUN $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
