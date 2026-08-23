@@ -152659,6 +152659,14 @@ $)
     2lt3 ndvdsi 7lt10 1lt2 decltc prmlem1 ) ABCZABDEFABAGHDIJAKLBDMPNOKUQQRUASU
     BAQBKQUCUDRDSTQKAQCUEUFUGUHUIUJUKULARBQDTHSUMUNUOUP $.
 
+  $( 19 is a prime number.  (Contributed by Mario Carneiro, 18-Feb-2014.)
+     (Revised by Mario Carneiro, 20-Apr-2015.) $)
+  19prm $p |- ; 1 9 e. Prime $=
+    ( c1 c9 cdc 1nn0 9nn decnncl 1nn 9nn0 1lt10 declti c4 c8 4nn0 df-9 dec2dvds
+    4t2e8 c3 c6 3nn 6nn0 cmul co 8nn0 8p1e9 6cn 3cn 6t3e18 mulcomli decsuc 1lt3
+    ndvdsi c2 c5 2nn0 5nn0 9lt10 1lt2 decltc prmlem1 ) ABCZABDEFABAGHDIJAKLBDMP
+    NOQUTRASTGALBQRUAUBDUCUDRQALCUEUFUGUHUIUJUKAULBUMDUNHUOUPUQURUS $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
