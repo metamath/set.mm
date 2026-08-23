@@ -152943,6 +152943,43 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Very large primes
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    1259prm.1 $e |- N = ; ; ; 1 2 5 9 $.
+    $( Lemma for ~ 1259prm .  Calculate a power mod.  In decimal, we calculate
+       ` 2 ^ 1 6 = 5 2 N + 6 8 == 6 8 ` and ` 2 ^ 1 7 == 6 8 x. 2 = 1 3 6 ` in
+       this lemma.  (Contributed by Mario Carneiro, 22-Feb-2014.)  (Revised by
+       Mario Carneiro, 20-Apr-2015.)  (Proof shortened by AV, 16-Sep-2021.) $)
+    1259lem1 $p |- ( ( 2 ^ ; 1 7 ) mod N ) = ( ; ; 1 3 6 mod N ) $=
+      ( c2 c1 c6 cdc cc0 c8 c3 c5 1nn0 2nn0 5nn0 6nn0 8nn0 co eqid cmul caddc
+      c4 c7 c9 cn deccl 9nn decnncl eqeltri 0z 3nn0 cexp nn0zi nn0expcli nn0cni
+      2nn cmo 2cn 8t2e16 mulcomli 9nn0 4nn0 7nn0 dec0h 4cn addlidi oveq1i 4p1e5
+      0nn0 eqtri 7cn 6cn 7p6e13 addcomli decaddc 2p1e3 5cn 6p5e11 10nn0 mulridi
+      dec10p 1p0e1 oveq12i 5p1e6 3p2e5 3eqtri decmac 5t2e10 00id decma2c 5t5e25
+      3cn 2t2e4 decsuc decaddi decrmac 9cn 9t5e45 9t2e18 8p8e16 decaddci 2exp16
+      5p2e7 1p1e2 numexp2x 3eqtr2i mod2xi 6p1e7 mul02i decmul1c 3eqtr4i modxp1i
+      nncni 6t2e12 ) CDEFZGDUAFEHFZDIFZEFZAADCFZJFZUBFUCBXRUBXQJDCKLUDZMUDZUEUF
+      UGZUNDEKNUDUHEHNOUDZXOEDIKUIUDNUDZCHJCFZXMCHUJPZXNAYAUNOYDJCMLUDZUKCHLOUL
+      YBYEAUOPQHCXMHOUMUPUQURZYDARPXNSPEJFZJFZIFZEFCXMUJPYEYERPZXRUBEHYDYJETUAF
+      ZAXNXTUSNOBXNQZYFNTUAUTVAUDXQJJIYDYIICEFZXREYLSPXSMMUIXRQGETUAJIEYLVGNUTV
+      AENVBYLQGTSPZDSPTDSPZJYOTDSTVCVDVEVFVHUIUAEXOVIVJVKVLVMYFUICELNUDDCIDYDYH
+      JDGFZXQJYNSPKLUIKXQQGJCEIDJYNVGMLNJMVBZYNQGCSPZDSPCDSPIYSCDSCUPVDVEVNVHKE
+      JDDFVJVOVPVLVMYFMVQJCDIDEJGYDIYQSPMLKUIYDQZYQIXOYQVQUMWJIVSVLKMVGJDRPZDGS
+      PZSPJDSPEUUAJUUBDSJVOVRVTWAWBVHCDRPZISPCISPJGJFZUUCCISCUPVRVEICJWJUPWCVLY
+      RWDWEJCGDCYQJGYDDMLVGKYTDKVBLMVGJCRPZGGSPZSPYQGSPYQUUEYQUUFGSWFWGWAGVSVHC
+      CRPZDSPYPJUUDUUGTDSWKVEVFYRWDWEWHJCJYNIDYDIMLUIYTMUIKCJEJJRPLMWBWIWLDGICJ
+      RPIKVGUIJCYQVOUPWFURIWJVDWMWNWHJCUBYLECYDHMLOYTUSNLTJUAJUBRPCUTMLUBJTJFWO
+      VOWPURXAWMDHECCUBRPHKOOUBCDHFWOUPWQURXBNWRWSWNWHWTCYKYEHXMLOYGYEQYKQXCXDX
+      EDEUAXMKNXFXMQWLGXPSPXPGARPZXPSPXNCRPXPXPYCUMVDUUHGXPSAAYAXKXGVEEHXOECDXN
+      LNOYMNKDCIECRPKLVNXLWLUQXHXIXJ $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Bertrand's Ballot Problem
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
