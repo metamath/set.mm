@@ -152675,6 +152675,67 @@ $)
     5nn 3lt5 declt prmlem1 ) ABCZABDEFABGHIJKLAGABDJAAHOMPNBUMQAERHAGBBQSTADJDQ
     BAGCUABEOUBUCUDUEUFUGABUHDIUIUJUKUL $.
 
+  ${
+    $d x N $.
+    prmlem2.n $e |- N e. NN $.
+    prmlem2.lt $e |- N < ; ; 8 4 1 $.
+    prmlem2.gt $e |- 1 < N $.
+    prmlem2.2 $e |- -. 2 || N $.
+    prmlem2.3 $e |- -. 3 || N $.
+    prmlem2.5 $e |- -. 5 || N $.
+    prmlem2.7 $e |- -. 7 || N $.
+    prmlem2.11 $e |- -. ; 1 1 || N $.
+    prmlem2.13 $e |- -. ; 1 3 || N $.
+    prmlem2.17 $e |- -. ; 1 7 || N $.
+    prmlem2.19 $e |- -. ; 1 9 || N $.
+    prmlem2.23 $e |- -. ; 2 3 || N $.
+    $( Our last proving session got as far as 25 because we started with the
+       two "bootstrap" primes 2 and 3, and the next prime is 5, so knowing that
+       2 and 3 are prime and 4 is not allows to cover the numbers less than
+       ` 5 ^ 2 = 2 5 ` .  Additionally, nonprimes are "easy", so we can extend
+       this range of known prime/nonprimes all the way until 29, which is the
+       first prime larger than 25.  Thus, in this lemma we extend another
+       blanket out to ` 2 9 ^ 2 = 8 4 1 ` , from which we can prove even more
+       primes.  If we wanted, we could keep doing this, but the goal is
+       Bertrand's postulate, and for that we only need a few large primes - we
+       don't need to find them all, as we have been doing thus far.  So after
+       this blanket runs out, we'll have to switch to another method (see
+       ~ 1259prm ).
+
+       As a side note, you can see the pattern of the primes in the indentation
+       pattern of this lemma!  (Contributed by Mario Carneiro, 18-Feb-2014.)
+       (Proof shortened by Mario Carneiro, 20-Apr-2015.) $)
+    prmlem2 $p |- N e. Prime $=
+      ( c5 c9 c1 c2 wcel wbr 2nn0 vx c7 cdc c3 cuz cfv cprime csn cdif cexp cle
+      cv co wa cdvds wn wi clt cr eluzelre resqcld eluzle cc0 9nn0 deccl nn0rei
+      nn0ge0i le2sq2 mpanl12 syl2anc nnrei resqcli w3a c8 c4 cmul nn0cni sqvali
+      c6 eqid 1nn0 6nn0 5nn0 8nn0 caddc 2timesi 2p2e4 oveq1i 4p1e5 eqtri 9p9e18
+      decaddc 5p2e7 7p1e8 8p6e14 9t2e18 1p1e2 8p8e16 decaddci decmul2c decmul1c
+      4nn0 9t9e81 breqtrri ltletr mpani mp3an12 sylc cz wb eluzelz zsqcl zltnle
+      nnzi syl sylancr mpbid pm2.21d adantld adantl 9nn 3nn 1lt9 9t3e27 pm2.21i
+      1lt3 nprmi 7nn0 7p2e9 decaddi prmlem0 5nn 1lt5 5t5e25 a1i 3p2e5 7nn 1p2e3
+      3nn0 9p2e11 1lt7 7t3e21 5t3e15 9nprm prmlem1a ) UAABDEFUANUBAUAUBOAUAOPPU
+      CZAUAUUFPUDUCZAUAUUGPNUCZAUAUUHPUBUCZAUAUUIPOUCZAUAUUJQPUCZAUAUUKQUDUCZAU
+      AUULQNUCZAUAUUMQUBUCZAUAUUNQOUCZAUAULZUUOUEUFRZUUPUGQUHUIRZUUPQUJUMZAUKSZ
+      UNUUPAUOSUPZUQQUUOUOSUPUUQUUTUVAUURUUQUUTUVAUUQAUUSURSZUUTUPZUUQUUSUSRZUU
+      OQUJUMZUUSUKSZUVBUUQUUPUUOUUPUTZVAUUQUUPUSRZUUOUUPUKSZUVFUVGUUOUUPVBUUOUS
+      RVCUUOUKSUVHUVIUNUVFUUOQOTVDVEZVFZUUOUVJVGUUOUUPVHVIVJAUSRZUVEUSRZUVDUVFU
+      VBUQABVKUUOUVKVLUVLUVMUVDVMAUVEURSUVFUVBAVNVOUCZPUCZUVEURCUVEUUOUUOVPUMUV
+      OUUOUUOUVJVQZVRQOUVNPUUOQVSUCZUUOUVJTVDUUOVTZWAQVSTWBVENVNQVSVNVOQUUOVPUM
+      ZUVQWCWDTWBUVSUUOUUOWEUMNVNUCUUOUVPWFQOQONVNUUOUUOTVDTVDUVRUVRQQWEUMZPWEU
+      MVOPWEUMNUVTVOPWEWGWHWIWJWDWKWLWJUVQVTNQWEUMZPWEUMUBPWEUMVNUWAUBPWEWMWHWN
+      WJXBWOWLQOUVQPOVNUUOVDTVDUVRWAWDPVNVSQOQVPUMVNWAWDWDWPWQWBWRWSXCWTXAWJXDA
+      UVEUUSXEXFXGXHUUQAXIRUUSXIRZUVBUVCXJABXNUUQUUPXIRUWBUUOUUPXKUUPXLXOAUUSXM
+      XPXQXRXSXTUUNUGRUUNAUOSUPOUDUUNYAYBYCYFYDYGYEQUBOUUNQTYHTUUNVTYIYJYKUUMUG
+      RUUMAUOSUPNNUUMYLYLYMYMYNYGYEQNUBUUMQTWCTUUMVTWMYJYKUULAUOSUPUULUGRMYOQUD
+      NUULQTYSTUULVTYPYJYKUUKUGRUUKAUOSUPUBUDUUKYQYBUUAYFUUBYGYEQPUDUUKQTWATUUK
+      VTYRYJYKUUJAUOSUPUUJUGRLYOPOPQUUJQWAVDTUUJVTWQWAYTWSYKUUIAUOSUPUUIUGRKYOP
+      UBOUUIQWAYHTUUIVTYIYJYKUUHUGRUUHAUOSUPNUDUUHYLYBYMYFUUCYGYEPNUBUUHQWAWCTU
+      UHVTWMYJYKUUGAUOSUPUUGUGRJYOPUDNUUGQWAYSTUUGVTYPYJYKUUFAUOSUPUUFUGRIYOPPU
+      DUUFQWAWATUUFVTYRYJYKOUGROAUOSUPUUDYEYTYKUBAUOSUPUBUGRHYOYIYKNAUOSUPNUGRG
+      YOWMYKUUE $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
