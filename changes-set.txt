@@ -258,12 +258,13 @@ Date      Old         New         Notes
 13-Aug-26 idl0cl      rng2idl0    Moved from JM's mathbox to main set.mm
 13-Aug-26 rngoidl     2idl1       Moved from JM's mathbox to main set.mm
 13-Aug-26 0idl        2idl0       Moved from JM's mathbox to main set.mm
+13-Aug-26 1idl        2idl1el     Moved from JM's mathbox to main set.mm
 13-Aug-26 0rngo       0ring01eqbi2 Moved from JM's mathbox to main set.mm
 13-Aug-26 divrngidl   drngnidl    Moved from JM's mathbox to main set.mm
 13-Aug-26 intidl      intlidl     Moved from JM's mathbox to TA's mathbox
 13-Aug-26 inidl       inlidl      Moved from JM's mathbox to TA's mathbox
 13-Aug-26 unichnidl   unichnlidl  Moved from JM's mathbox to main set.mm
-13-Aug-26 keridl      kerlidl     Moved from JM's mathbox to main set.mm
+13-Aug-26 keridl      ker2idl     Moved from JM's mathbox to main set.mm
 13-Aug-26 pridlval    prmidlval   Moved from JM's mathbox to main set.mm
 13-Aug-26 ispridl     isprmidl    Moved from JM's mathbox to main set.mm
 13-Aug-26 pridlidl    prmidlidl   Moved from JM's mathbox to main set.mm
@@ -293,7 +294,7 @@ Date      Old         New         Notes
 13-Aug-26 igenss      rspssid     Moved from JM's mathbox to main set.mm
 13-Aug-26 igenidl     rspcl       Moved from JM's mathbox to main set.mm
 13-Aug-26 igenmin     rspssp      Moved from JM's mathbox to main set.mm
-13-Aug-26 igenidl2    rspidlid    Moved from JM's mathbox to main set.mm
+13-Aug-26 igenidl2    rsp2idlid   Moved from JM's mathbox to main set.mm
 13-Aug-26 igenval2    rspprop     Moved from JM's mathbox to main set.mm
 13-Aug-26 prnc        rspsn0      Moved from JM's mathbox to main set.mm
 13-Aug-26 isfldidl    isfieldidl  Moved from JM's mathbox to main set.mm
