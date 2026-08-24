@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # Rewrap Metamath comments without the metamath C program.
+# Vincent Gonzalez <vincegonzalez@me.com>
 # SPDX-License-Identifier: CC0-1.0
 #
 # scripts/rewrap runs "write source /rewrap" through metamath, which also runs
@@ -32,7 +33,11 @@ PROOF_DISCOURAGED = "(Proof modification is discouraged.)"
 USAGE_DISCOURAGED = "(New usage is discouraged.)"
 
 COMMENT = re.compile(r"\$\(.*?\$\)", re.S)
-STATEMENT = re.compile(r"\s*[A-Za-z0-9_.\-]+\s+\$[ap]\s")
+# A file inclusion may sit between a comment and the statement it
+# describes; metamath resolves inclusions before parsing, so skip over
+# them rather than reading "$[" as a label.
+STATEMENT = re.compile(r"(?:\s*\$\[.*?\$\])*\s*[A-Za-z0-9_.\-]+\s+\$[ap]\s",
+                       re.S)
 
 
 def space_surround(s, ch, subscript_exception=False):
