@@ -166,7 +166,7 @@ Date      Old         New         Notes
 13-Aug-26 df-rngo     df-ring     Moved from JM's mathbox to main set.mm
 13-Aug-26 isrngo      dfring2     Moved from JM's mathbox to main set.mm
 13-Aug-26 isrngod     isringd     Moved from JM's mathbox to main set.mm
-13-Aug-26 rngoi       dfring2     Moved from JM's mathbox to main set.mm
+13-Aug-26 rngoi       ringprops   Moved from JM's mathbox to main set.mm
 13-Aug-26 rngocl      ringcl      Moved from JM's mathbox to main set.mm
 13-Aug-26 rngoid      ringid      Moved from JM's mathbox to main set.mm
 13-Aug-26 rngoideu    ringideu    Moved from JM's mathbox to main set.mm
