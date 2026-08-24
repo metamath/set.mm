@@ -230,7 +230,7 @@ Date      Old         New         Notes
 13-Aug-26 rngoisohom  rimrhm      Moved from JM's mathbox to main set.mm
 13-Aug-26 rngoisocnv  rimcnv      Moved from JM's mathbox to main set.mm
 13-Aug-26 rngoisoco   rimco       Moved from JM's mathbox to main set.mm
-13-Aug-26 df-risc     df-ric      Moved from JM's mathbox to main set.mm
+13-Aug-26 df-risc     dfric2      Moved from JM's mathbox to main set.mm
 13-Aug-26 isriscg     isbrric2    Moved from JM's mathbox to main set.mm
 13-Aug-26 isrisc      isbrric2    Moved from JM's mathbox to main set.mm
 13-Aug-26 risc        brric2      Moved from JM's mathbox to main set.mm
@@ -255,6 +255,7 @@ Date      Old         New         Notes
 13-Aug-26 idlval      2idlval     Moved from JM's mathbox to main set.mm
 13-Aug-26 isidl       df2idl2     Moved from JM's mathbox to main set.mm
 13-Aug-26 isidlc      df2idl2crng Moved from JM's mathbox to main set.mm
+13-Aug-26 idl0cl      rng2idl0    Moved from JM's mathbox to main set.mm
 13-Aug-26 rngoidl     2idl1       Moved from JM's mathbox to main set.mm
 13-Aug-26 0idl        2idl0       Moved from JM's mathbox to main set.mm
 13-Aug-26 0rngo       0ring01eqbi2 Moved from JM's mathbox to main set.mm
