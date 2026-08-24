@@ -3,10 +3,10 @@
 # Vincent Gonzalez <vincegonzalez@me.com>
 # SPDX-License-Identifier: CC0-1.0
 #
-# scripts/rewrap runs "write source /rewrap" through metamath, which also runs
-# "save proof */compressed/fast" and reindents proof bodies.  This does only the
-# comment filling, so it is enough when a change touches comments and not
-# proofs.  Change a proof and you still need the executable.
+# scripts/rewrap runs "write source /rewrap" through the metamath executable,
+# which also runs "save proof */compressed/fast" and reindents proof bodies.
+# This does only the comment filling, so it is enough when a change touches
+# comments and not proofs.  Change a proof and you still need the executable.
 #
 #   rewrap-comments.py set.mm --check      report comments that need rewrapping
 #   rewrap-comments.py set.mm --in-place   rewrap them
@@ -14,6 +14,11 @@
 # Comments it does not model are left untouched and their labels printed: those
 # containing <HTML>, those not attached to a $a or $p, and those holding a run
 # too long to break (a ~ reference followed by a long URL).
+#
+# It also differs from the metamath executable in one respect: file inclusions
+# are not resolved.  The executable parses after resolving them; this reads a
+# single file, so a comment in an included file is checked only if the tool is
+# run on that file as well.  No database in this repository uses inclusions.
 #
 # The rules below are transcribed from rewrapComment() in mmpars.c and the
 # line-breaking loop of printLongLine() in mminou.c.
@@ -33,9 +38,9 @@ PROOF_DISCOURAGED = "(Proof modification is discouraged.)"
 USAGE_DISCOURAGED = "(New usage is discouraged.)"
 
 COMMENT = re.compile(r"\$\(.*?\$\)", re.S)
-# A file inclusion may sit between a comment and the statement it
-# describes; metamath resolves inclusions before parsing, so skip over
-# them rather than reading "$[" as a label.
+# A file inclusion may sit between a comment and the statement it describes.
+# The metamath executable resolves inclusions before parsing, so step over
+# them here rather than reading "$[" as a label.
 STATEMENT = re.compile(r"(?:\s*\$\[.*?\$\])*\s*[A-Za-z0-9_.\-]+\s+\$[ap]\s",
                        re.S)
 
@@ -187,8 +192,9 @@ def modelled(block, indent, following, width=WIDTH):
     if "<HTML>" in block:
         return False
     if not STATEMENT.match(following):
-        # The rewrapping in outputStatement() sits inside the $a/$p case, so a
-        # comment not attached to a statement is never reflowed by metamath.
+        # The rewrapping in outputStatement() sits inside the $a/$p case, so
+        # a comment not attached to a statement is never reflowed by the
+        # metamath executable.
         return False
     budget = width - indent - 3
     for run in normalize(block).split(" "):
@@ -227,7 +233,8 @@ def process(text):
 
 def main():
     ap = argparse.ArgumentParser(
-        description="Rewrap Metamath comments without the metamath program.")
+        description="Rewrap Metamath comments without the metamath "
+                    "executable.")
     ap.add_argument("database")
     ap.add_argument("--check", action="store_true",
                     help="exit 1 if any comment needs rewrapping")
