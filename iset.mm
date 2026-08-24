@@ -86,6 +86,7 @@ DAW David A. Wheeler
 JY  Jonathan Yan
 FZ  Fan Zheng
 JEH James E. Hanson
+TB  Taylor Barrella
 
 HTML code for accented names:
   BJ Beno&icirc;t Jubin
@@ -103578,8 +103579,8 @@ $)
   nnrecq $p |- ( A e. NN -> ( 1 / A ) e. QQ ) $=
     ( c1 cz wcel cn cdiv co cq 1z znq mpan ) BCDAEDBAFGHDIBAJK $.
 
-  $( The sum of an irrational number and a rational number is irrational.
-     (Contributed by NM, 7-Nov-2008.) $)
+  $( The sum of a real which is not rational and a rational number is not
+     rational.  (Contributed by NM, 7-Nov-2008.) $)
   irradd $p |- ( ( A e. ( RR \ QQ ) /\ B e. QQ )
                 -> ( A + B ) e. ( RR \ QQ ) ) $=
     ( cr cq cdif wcel wa caddc co wn eldif qre readdcl sylan2 adantlr wi qsubcl
@@ -103588,6 +103589,22 @@ $)
     ZURVCACDKVGURGUTVBVDURUTVFURVDBCFUTBLABMNOVDVFURVBVDURVFVBVDURVFVBPVDURGZVA
     VEVHVAUSBRIZDFZVEURVAVJPVDVAURVJUSBQSUAVHVIADVDATFBTFVIAUBURAUKBUCABUDUEUFU
     GUHULUIUJUMUNUSCDKUO $.
+
+  ${
+    $d A q r $.  $d B q r $.
+    $( The sum of an irrational number and a rational number is irrational.
+       (Contributed by Jim Kingdon, 20-Aug-2026.) $)
+    irraddap $p |- ( ( ( A e. RR /\ A. q e. QQ A =//= q ) /\ B e. QQ )
+        -> ( ( A + B ) e. RR /\ A. q e. QQ ( A + B ) =//= q ) ) $=
+      ( vr cr wcel cv cap wbr cq wral wa caddc simpll qre adantl readdcld breq2
+      co syl cmin simpllr simpr simplr syl2anc rspcdva simplll reapadd1 syl3anc
+      qsubcl wb mpbid cc qcn recnd npcand breqtrd ralrimiva cbvralv sylib jca )
+      AEFZACGZHIZCJKZLZBJFZLZABMSZEFVIVCHIZCJKZVHABVBVEVGNVGBEFZVFBOZPQVHVIDGZH
+      IZDJKVKVHVODJVHVNJFZLZVIVNBUASZBMSZVNHVQAVRHIZVIVSHIZVQVDVTCJVRVCVRAHRVBV
+      EVGVPUBVQVPVGVRJFZVHVPUCVFVGVPUDZVNBUJUEZUFVQVBVREFZVLVTWAUKVBVEVGVPUGVQW
+      BWEWDVROTVQVGVLWCVMTZAVRBUHUIULVQVNBVPVNUMFVHVNUNPVQBWFUOUPUQURVOVJDCJVNV
+      CVIHRUSUTVA $.
+  $}
 
   $( The product of a real which is not rational with a nonzero rational is not
      rational.  Note that by "not rational" we mean the negation of "is
@@ -110522,8 +110539,8 @@ $)
     $d A x $.
     $( The floor (greatest integer) function yields an integer when applied to
        a rational (closure law).  For a similar closure law for real numbers
-       apart from any integer, see ~ flapcl .  (Contributed by Jim Kingdon,
-       8-Oct-2021.) $)
+       which are either rational or irrational, see ~ flapcl .  (Contributed by
+       Jim Kingdon, 8-Oct-2021.) $)
     flqcl $p |- ( A e. QQ -> ( |_ ` A ) e. ZZ ) $=
       ( vx cq wcel cfl cfv cv cle wbr c1 caddc co clt wa cz crio wceq qre syl
       cr flval wreu qbtwnz riotacl eqeltrd ) ACDZAEFZBGZAHIAUHJKLMINZBOPZOUFATD
@@ -110551,10 +110568,22 @@ $)
        a real number apart from any integer.  For example, an irrational number
        (see for example ~ sqrt2irrap ) would satisfy this condition.
        (Contributed by Jim Kingdon, 11-May-2022.) $)
-    flapcl $p |- ( ( A e. RR /\ A. n e. ZZ A =//= n ) -> ( |_ ` A ) e. ZZ ) $=
+    flapclz $p |- ( ( A e. RR /\ A. n e. ZZ A =//= n ) -> ( |_ ` A ) e. ZZ ) $=
       ( vx cr wcel cv cap wbr cz wral wa cfl cfv cle c1 caddc co clt crio wceq
       flval adantr wreu apbtwnz riotacl syl eqeltrd ) ADEZABFGHBIJZKZALMZCFZANH
       AULOPQRHKZCISZIUHUKUNTUICAUAUBUJUMCIUCUNIECABUDUMCIUEUFUG $.
+  $}
+
+  ${
+    $d A q $.
+    $( The floor (greatest integer) function yields an integer when applied to
+       a number which is either rational or irrational.  (Contributed by Jim
+       Kingdon, 20-Aug-2026.) $)
+    flapcl $p |- ( ( A e. QQ \/ ( A e. RR /\ A. q e. QQ A =//= q ) )
+        -> ( |_ ` A ) e. ZZ ) $=
+      ( cq wcel cfl cfv cz cr cv cap wbr wral wa flqcl wss wi zssq ssralv ax-mp
+      flapclz sylan2 jaoi ) ACDAEFGDZAHDZABIJKZBCLZMANUFUDUEBGLZUCGCOUFUGPQUEBG
+      CRSABTUAUB $.
   $}
 
   ${
@@ -110568,6 +110597,21 @@ $)
       wb mpbird ) ACDZAEFZAGHZAUOIJKZLHZMZBNZAGHZAUTIJKZLHZMZBOPZUOQZUNATDZVFAR
       VGUOVEBASUAUBUNUOODVDBOUCUSVFULAUDBAUEVDUSBOUOUTUOQZVAUPVCURUTUOAGUFVHVBU
       QALUTUOIJUGUHUIUJUKUM $.
+  $}
+
+  ${
+    $d A q x $.
+    $( A basic property of the floor (greatest integer) function.  (Contributed
+       by Jim Kingdon, 20-Aug-2026.) $)
+    flaplelt $p |- ( ( A e. QQ \/ ( A e. RR /\ A. q e. QQ A =//= q ) ) ->
+        ( ( |_ ` A ) <_ A /\ A < ( ( |_ ` A ) + 1 ) ) ) $=
+      ( vx cq wcel cr cv cap wbr wral wa wo cle c1 caddc co clt cz wceq jaoi wb
+      cfl cfv crio qre simpl flval eqcomd syl wreu flapcl qbtwnz wi zssq ssralv
+      wss ax-mp apbtwnz sylan2 breq1 oveq1 breq2d anbi12d riota2 syl2anc mpbird
+      ) ADEZAFEZABGHIZBDJZKZLZAUBUCZAMIZAVMNOPZQIZKZCGZAMIZAVRNOPZQIZKZCRUDZVMS
+      ZVLVHWDVGVHVKAUEVHVJUFTVHVMWCCAUGUHUIVLVMREWBCRUJZVQWDUAABUKVGWEVKCAULVJV
+      HVIBRJZWERDUPVJWFUMUNVIBRDUOUQCABURUSTWBVQCRVMVRVMSZVSVNWAVPVRVMAMUTWGVTV
+      OAQVRVMNOVAVBVCVDVEVF $.
   $}
 
   ${
@@ -110611,6 +110655,21 @@ $)
     OVCUPAUAOUQBPDZAPDZVAPDURVCFVBQUQBUOUPUBZTZUOVEUPAUCOZUQVAUQUSUQAUOUPUDUEZU
     FTBAVAUGRSUQUPUSEDUTVBUKVFVIBUSUHUIUJUQUTUSAGHZURUOVJUPAULOUQVDUSPDVEUTVJFU
     RQVGUQUSVITVHBUSAUMRSUN $.
+
+  ${
+    $d A q $.
+    $( The floor function value is the greatest integer less than or equal to
+       its argument.  (Contributed by Jim Kingdon, 8-Oct-2021.) $)
+    flapge $p |- ( ( ( A e. QQ \/ ( A e. RR /\ A. q e. QQ A =//= q ) )
+        /\ B e. ZZ ) -> ( B <_ A <-> B <_ ( |_ ` A ) ) ) $=
+      ( cq wcel cr cv cap wbr wral wa wo cz cle clt adantr zred syl3anc mpan2d
+      wi cfl cfv c1 caddc co flaplelt simprd simpr qre simpl jaoi flapcl lelttr
+      peano2zd wb zleltp1 syl2anc sylibrd simpld letr impbid ) ADEZAFEZACGHICDJ
+      ZKZLZBMEZKZBANIZBAUAUBZNIZVHVIBVJUCUDUEZOIZVKVHVIAVLOIZVMVFVNVGVFVJANIZVN
+      ACUFZUGPVHBFEZVCVLFEVIVNKVMTVHBVFVGUHZQZVFVCVGVBVCVEAUIVCVDUJUKPZVHVLVHVJ
+      VFVJMEZVGACULPZUNQBAVLUMRSVHVGWAVKVMUOVRWBBVJUPUQURVHVKVOVIVFVOVGVFVOVNVP
+      USPVHVQVJFEVCVKVOKVITVSVHVJWBQVTBVJAUTRSVA $.
+  $}
 
   $( The floor function value is less than the next integer.  (Contributed by
      Jim Kingdon, 8-Oct-2021.) $)
@@ -146654,181 +146713,225 @@ $)
     wcel ax-mp ) ABCZDEZQFDGOHRQFDQFORIJRQDOKQDLMNP $.
 
   ${
-    $d A w $.  $d N k m w $.
-    $( Lemma for ~ pw2dvds .  If a natural number has some power of two which
-       does not divide it, there is a highest power of two which does divide
-       it.  (Contributed by Jim Kingdon, 14-Nov-2021.) $)
-    pw2dvdslemn $p |- ( ( N e. NN /\ A e. NN /\ -. ( 2 ^ A ) || N ) ->
-        E. m e. NN0 ( ( 2 ^ m ) || N /\ -. ( 2 ^ ( m + 1 ) ) || N ) ) $=
-      ( cn wcel c2 cexp co cdvds wbr wn wa c1 caddc cn0 oveq2 breq1d notbid cc0
-      wceq vw vk w3a cv wrex 3simpb wi anbi2d imbi1d 0nn0 a1i wb oveq2d anbi12d
-      oveq1 adantl 2cnd exp0d cz simpl nnzd 1dvds syl simpr 0p1e1 oveq2i breq1i
-      eqbrtrd sylnibr jca rspcedvd simpll nnnn0d simplrr adantllr simprl anim1i
-      simpllr mpd wdc 2nn nnexpcl sylancr dvdsdc syl2anc exmiddc mpjaodan exp31
-      wo nnind 3ad2ant2 ) CDEZADEZFAGHZCIJZKZUCWLWPLZFBUDZGHZCIJZFWRMNHZGHZCIJZ
-      KZLZBOUEZWLWMWPUFWMWLWQXFUGZWPWLFUAUDZGHZCIJZKZLZXFUGWLFMGHZCIJZKZLZXFUGW
-      LFUBUDZGHZCIJZKZLZXFUGZWLFXQMNHZGHZCIJZKZLZXFUGXGUAUBAXHMTZXLXPXFYHXKXOWL
-      YHXJXNYHXIXMCIXHMFGPQRUHUIXHXQTZXLYAXFYIXKXTWLYIXJXSYIXIXRCIXHXQFGPQRUHUI
-      XHYCTZXLYGXFYJXKYFWLYJXJYEYJXIYDCIXHYCFGPQRUHUIXHATZXLWQXFYKXKWPWLYKXJWOY
-      KXIWNCIXHAFGPQRUHUIXPXEFSGHZCIJZFSMNHZGHZCIJZKZLZBSOSOEXPUJUKWRSTZXEYRULX
-      PYSWTYMXDYQYSWSYLCIWRSFGPQYSXCYPYSXBYOCIYSXAYNFGWRSMNUOUMQRUNUPXPYMYQXPYL
-      MCIXPFXPUQURXPCUSEZMCIJXPCWLXOUTVACVBVCVHXPXNYPWLXOVDYOXMCIYNMFGVEVFVGVIV
-      JVKXQDEZYBYGXFUUAYBLZYGLZXSXFXTUUAYGXSXFYBUUAYGLZXSLZXEXSYFLZBXQOUUEXQUUA
-      YGXSVLVMWRXQTZXEUUFULUUEUUGWTXSXDYFUUGWSXRCIWRXQFGPQUUGXCYEUUGXBYDCIUUGXA
-      YCFGWRXQMNUOUMQRUNUPUUEXSYFUUDXSVDUUAWLYFXSVNVJVKVOUUCXTLYAXFUUCWLXTUUBWL
-      YFVPZVQUUAYBYGXTVRVSUUCXSVTZXSXTWIUUCXRDEZYTUUIUUCFDEXQOEUUJWAUUCXQUUAYBY
-      GVLVMFXQWBWCUUCCUUHVAXRCWDWEXSWFVCWGWHWJWKVS $.
+    $d A w $.  $d N k m w $.  $d B k m w $.  $d ph k m w $.
+    pwbdvdslemn.n $e |- ( ph -> N e. NN ) $.
+    pwbdvdslemn.a $e |- ( ph -> A e. NN ) $.
+    pwbdvdslemn.b $e |- ( ph -> B e. NN ) $.
+    pwbdvdslemn.dvds $e |- ( ph -> -. ( B ^ A ) || N ) $.
+    $( Lemma for ~ pwbdvds .  If a natural number has some power of a base
+       which does not divide it, there is a highest power of the base which
+       does divide it.  (Contributed by Jim Kingdon, 14-Nov-2021.)  (Revised by
+       Jim Kingdon, 17-Aug-2026.) $)
+    pwbdvdslemn $p |- ( ph ->
+        E. m e. NN0 ( ( B ^ m ) || N /\ -. ( B ^ ( m + 1 ) ) || N ) ) $=
+      ( cexp co cdvds wbr wn c1 wa wcel wceq breq1d cc0 vw vk cv caddc cn0 wrex
+      cn adantr wi oveq2 notbid anbi2d imbi1d oveq1 oveq2d anbi12d a1i cc nncnd
+      0nn0 exp0d cz nnzd 1dvds syl eqbrtrd simpr 0p1e1 oveq2i sylnibr rspcedvdw
+      breq1i jca simpll nnnn0d simplrr adantllr simprl simpllr mpd wdc ad2antrl
+      anim1i nnnn0 ad2antrr nnexpcld syl2anc exmiddc mpjaodan exp31 nnind mpcom
+      wo dvdsdc mpdan ) ACBJKZELMZNZCDUCZJKZELMZCWSOUDKZJKZELMZNZPZDUEUFZIBUGQZ
+      AWRPZXGAXHWRGUHACUAUCZJKZELMZNZPZXGUIACOJKZELMZNZPZXGUIACUBUCZJKZELMZNZPZ
+      XGUIZACXSOUDKZJKZELMZNZPZXGUIXIXGUIUAUBBXJORZXNXRXGYJXMXQAYJXLXPYJXKXOELX
+      JOCJUJSUKULUMXJXSRZXNYCXGYKXMYBAYKXLYAYKXKXTELXJXSCJUJSUKULUMXJYERZXNYIXG
+      YLXMYHAYLXLYGYLXKYFELXJYECJUJSUKULUMXJBRZXNXIXGYMXMWRAYMXLWQYMXKWPELXJBCJ
+      UJSUKULUMXRXFCTJKZELMZCTOUDKZJKZELMZNZPDTUEWSTRZXAYOXEYSYTWTYNELWSTCJUJSY
+      TXDYRYTXCYQELYTXBYPCJWSTOUDUNUOSUKUPTUEQXRUTUQXRYOYSXRYNOELXRCACURQXQACHU
+      SUHVAXREVBQZOELMXREAEUGQZXQFUHVCEVDVEVFXRXPYRAXQVGYQXOELYPOCJVHVIVLVJVMVK
+      XSUGQZYDYIXGUUCYDPZYIPZYAXGYBUUCYIYAXGYDUUCYIPZYAPZXFYAYHPDXSUEWSXSRZXAYA
+      XEYHUUHWTXTELWSXSCJUJSUUHXDYGUUHXCYFELUUHXBYECJWSXSOUDUNUOSUKUPUUGXSUUCYI
+      YAVNVOUUGYAYHUUFYAVGUUCAYHYAVPVMVKVQUUEYBPYCXGUUEAYBUUDAYHVRWCUUCYDYIYBVS
+      VTUUEYAWAZYAYBWMUUEXTUGQUUAUUIUUECXSACUGQUUDYHHWBUUCXSUEQYDYIXSWDWEWFUUEE
+      AUUBUUDYHFWBVCXTEWNWGYAWHVEWIWJWKWLWO $.
   $}
 
   ${
-    $d N m $.
-    $( A natural number has a highest power of two which divides it.
-       (Contributed by Jim Kingdon, 14-Nov-2021.) $)
-    pw2dvds $p |- ( N e. NN ->
-        E. m e. NN0 ( ( 2 ^ m ) || N /\ -. ( 2 ^ ( m + 1 ) ) || N ) ) $=
-      ( cn wcel c2 co cdvds wbr wn cv c1 caddc wa cn0 sylancr cz cle 2z syl2anc
-      cexp wrex id cmin cfz 2nn nnnn0 nnexpcl 1zzd zexpcl zsubcld nnz nnge1 clt
-      cuz cfv uzid ax-mp bernneq3 wb mpbid elfz4 syl32anc fzm1ndvds pw2dvdslemn
-      zltlem1 mpd3an23 ) BCDZVGEBTFZBGHIZEAJZTFBGHEVJKLFTFBGHIMANUAVGUBVGVHCDZB
-      KVHKUCFZUDFDZVIVGECDBNDZVKUEBUFZEBUGOVGKPDVLPDBPDZKBQHBVLQHZVMVGUHZVGVHKV
-      GEPDZVNVHPDZRVOEBUIOZVRUJBUKZBULVGBVHUMHZVQVGEEUNUODZVNWCVSWDREUPUQVOEBUR
-      OVGVPVTWCVQUSWBWABVHVESUTBKVLVAVBVHBVCSBABVDVF $.
+    $d N m $.  $d B m $.
+    $( A natural number has a highest power of a base which divides it.
+       (Contributed by Jim Kingdon, 16-Nov-2021.)  (Revised by Jim Kingdon,
+       18-Aug-2026.) $)
+    pwbdvds $p |- ( ( N e. NN /\ B e. ( ZZ>= ` 2 ) ) ->
+        E. m e. NN0 ( ( B ^ m ) || N /\ -. ( B ^ ( m + 1 ) ) || N ) ) $=
+      ( cn wcel c2 cuz cfv wa simpl eluz2nn adantl cexp co c1 cmin nnzd syl2anc
+      wbr cz cfz cdvds wn nnnn0d nnexpcld 1zzd zsubcld nnge1d clt cle cn0 simpr
+      bernneq3 wb zltlem1 mpbid elfzd fzm1ndvds pwbdvdslemn ) CDEZAFGHEZIZCABCU
+      TVAJZVCVAADEUTAKLZVBACMNZDECOVEOPNZUANEVECUBSUCVBACVDVBCVCUDZUEZVBCOVFVBU
+      FZVBVEOVBVEVHQZVIUGVBCVCQZVBCVCUHVBCVEUISZCVFUJSZVBVACUKEVLUTVAULVGACUMRV
+      BCTEVETEVLVMUNVKVJCVEUORUPUQVECURRUS $.
   $}
 
   ${
-    pw2dvdseulemle.n $e |- ( ph -> N e. NN ) $.
-    pw2dvdseulemle.a $e |- ( ph -> A e. NN0 ) $.
-    pw2dvdseulemle.b $e |- ( ph -> B e. NN0 ) $.
-    pw2dvdseulemle.2a $e |- ( ph -> ( 2 ^ A ) || N ) $.
-    pw2dvdseulemle.n2b $e |- ( ph -> -. ( 2 ^ ( B + 1 ) ) || N ) $.
-    $( Lemma for ~ pw2dvdseu .  Powers of two which do and do not divide a
-       natural number.  (Contributed by Jim Kingdon, 17-Nov-2021.) $)
-    pw2dvdseulemle $p |- ( ph -> A <_ B ) $=
-      ( nn0red wbr c2 co cexp cdvds cn0 wcel adantr cz nnzd clt caddc cmin cmul
-      c1 wa 2cnd cle peano2nn0 simpr wb nn0ltp1le syl2anc mpbid nn0sub2 syl3anc
-      syl expaddd nn0cnd pncan3d oveq2d eqbrtrd eqbrtrrd wi cn 2nn a1i nnexpcld
-      muldvds1 mpd mtand nltled ) ABCABFJACGJACBUAKZLCUEUBMZNMZDOKZIAVMUFZVOLBV
-      NUCMZNMZUDMZDOKZVPVQLVNVRUBMZNMZVTDOVQLVNVRVQUGVQVNPQZBPQZVNBUHKZVRPQVQCP
-      QZWDAWGVMGRZCUIUQZAWEVMFRZVQVMWFAVMUJVQWGWEVMWFUKWHWJCBULUMUNVNBUOUPZWIUR
-      VQWCLBNMZDOVQWBBLNVQVNBVQVNWIUSVQBWJUSUTVAAWLDOKVMHRVBVCVQVOSQVSSQDSQWAVP
-      VDVQVOVQLVNLVEQVQVFVGZWIVHTVQVSVQLVRWMWKVHTVQDADVEQVMERTVOVSDVIUPVJVKVL
+    pwbdvdseulemle.n $e |- ( ph -> N e. NN ) $.
+    pwbdvdseulemle.a $e |- ( ph -> A e. NN0 ) $.
+    pwbdvdseulemle.b $e |- ( ph -> B e. NN0 ) $.
+    pwbdvdseulemle.p $e |- ( ph -> P e. NN ) $.
+    pwbdvdseulemle.2a $e |- ( ph -> ( P ^ A ) || N ) $.
+    pwbdvdseulemle.n2b $e |- ( ph -> -. ( P ^ ( B + 1 ) ) || N ) $.
+    $( Lemma for ~ pwbdvdseu .  Powers of a base which do and do not divide a
+       natural number.  (Contributed by Jim Kingdon, 17-Nov-2021.)  (Revised by
+       Jim Kingdon, 18-Aug-2026.) $)
+    pwbdvdseulemle $p |- ( ph -> A <_ B ) $=
+      ( wbr co cexp cdvds wcel adantr cn0 cz nnzd nn0red clt c1 caddc cmin cmul
+      wa cc nncnd cle peano2nn0 syl simpr wb nn0ltp1le syl2an2r nn0sub2 syl3anc
+      mpbid expaddd nn0cnd pncan3d oveq2d eqbrtrd eqbrtrrd wi nnexpcld muldvds1
+      cn mpd mtand nltled ) ABCABGUAACHUAACBUBLZDCUCUDMZNMZEOLZKAVMUGZVODBVNUEM
+      ZNMZUFMZEOLZVPVQDVNVRUDMZNMZVTEOVQDVNVRADUHPVMADIUIQVQVNRPZBRPZVNBUJLZVRR
+      PVQCRPZWDAWGVMHQCUKULZAWEVMGQZVQVMWFAVMUMAWGVMWEVMWFUNHWICBUOUPUSVNBUQURZ
+      WHUTVQWCDBNMZEOVQWBBDNVQVNBVQVNWHVAVQBWIVAVBVCAWKEOLVMJQVDVEVQVOSPVSSPESP
+      WAVPVFVQVOVQDVNADVIPVMIQZWHVGTVQVSVQDVRWLWJVGTVQEAEVIPVMFQTVOVSEVHURVJVKV
+      L $.
+  $}
+
+  ${
+    $d N m x $.  $d B m x $.
+    $( A natural number has a unique highest power of a base which divides it.
+       (Contributed by Jim Kingdon, 16-Nov-2021.)  (Revised by Jim Kingdon,
+       18-Aug-2026.) $)
+    pwbdvdseu $p |- ( ( N e. NN /\ B e. ( ZZ>= ` 2 ) ) ->
+        E! m e. NN0 ( ( B ^ m ) || N /\ -. ( B ^ ( m + 1 ) ) || N ) ) $=
+      ( vx cn wcel wa cv cexp co cdvds wbr caddc cn0 wral nn0red pwbdvdseulemle
+      c1 wn breq1d c2 cuz cfv wrex wrmo wreu pwbdvds wi simplrl simplrr simplll
+      weq eluz2nn ad3antlr simprll simprrr simprrl simprlr letrid ex ralrimivva
+      oveq2 oveq1 oveq2d notbid anbi12d rmo4 sylibr reu5 sylanbrc ) CEFZAUAUBUC
+      FZGZABHZIJZCKLZAVNRMJZIJZCKLZSZGZBNUDWABNUEZWABNUFABCUGVMWAADHZIJZCKLZAWC
+      RMJZIJZCKLZSZGZGZBDULZUHZDNOBNOWBVMWMBDNNVMVNNFZWCNFZGZGZWKWLWQWKGZVNWCWR
+      VNVMWNWOWKUIZPWRWCVMWNWOWKUJZPWRVNWCACVKVLWPWKUKZWSWTVLAEFVKWPWKAUMUNZWQV
+      PVTWJUOWQWAWEWIUPQWRWCVNACXAWTWSXBWQWAWEWIUQWQVPVTWJURQUSUTVAWAWJBDNWLVPW
+      EVTWIWLVOWDCKVNWCAIVBTWLVSWHWLVRWGCKWLVQWFAIVNWCRMVCVDTVEVFVGVHWABNVIVJ
       $.
   $}
 
   ${
-    $d N m x $.
-    $( A natural number has a unique highest power of two which divides it.
-       (Contributed by Jim Kingdon, 16-Nov-2021.) $)
-    pw2dvdseu $p |- ( N e. NN ->
-        E! m e. NN0 ( ( 2 ^ m ) || N /\ -. ( 2 ^ ( m + 1 ) ) || N ) ) $=
-      ( vx wcel c2 cv cexp co cdvds wbr c1 caddc wn cn0 wral cle pw2dvdseulemle
-      wa nn0red breq1d cn wrex wrmo wreu pw2dvds weq wi simplrl simplrr simprll
-      simpll simprrr simprrl simprlr mpbir2and ex ralrimivva oveq2 oveq1 oveq2d
-      letri3d notbid anbi12d rmo4 sylibr reu5 sylanbrc ) BUADZEAFZGHZBIJZEVIKLH
-      ZGHZBIJZMZRZANUBVPANUCZVPANUDABUEVHVPECFZGHZBIJZEVRKLHZGHZBIJZMZRZRZACUFZ
-      UGZCNOANOVQVHWHACNNVHVINDZVRNDZRZRZWFWGWLWFRZWGVIVRPJVRVIPJWMVIVRBVHWKWFU
-      KZVHWIWJWFUHZVHWIWJWFUIZWLVKVOWEUJWLVPVTWDULQWMVRVIBWNWPWOWLVPVTWDUMWLVKV
-      OWEUNQWMVIVRWMVIWOSWMVRWPSVAUOUPUQVPWEACNWGVKVTVOWDWGVJVSBIVIVREGURTWGVNW
-      CWGVMWBBIWGVLWAEGVIVRKLUSUTTVBVCVDVEVPANVFVG $.
+    $d A z $.  $d B z $.  $d Y z $.
+    nnmaxpwlemxy.x $e |- ( ph -> X e. NN ) $.
+    nnmaxpwlemxy.b $e |- ( ph -> B e. ( ZZ>= ` 2 ) ) $.
+    nnmaxpwlemxy.bx $e |- ( ph -> -. B || X ) $.
+    nnmaxpwlemxy.y $e |- ( ph -> Y e. NN0 ) $.
+    nnmaxpwlemxy.ayx $e |- ( ph -> A = ( ( B ^ Y ) x. X ) ) $.
+    $( Lemma for ~ nnmaxpw .  Another way of stating that decomposing a natural
+       number into a power of a base and a number not divisible by that base is
+       unique.  (Contributed by Jim Kingdon, 16-Nov-2021.)  (Revised by Jim
+       Kingdon, 18-Aug-2026.) $)
+    nnmaxpwlemxy $p |- ( ph ->
+          ( X = ( A / ( B ^ ( iota_ z e. NN0 ( ( B ^ z ) || A
+            /\ -. ( B ^ ( z + 1 ) ) || A ) ) ) )
+          /\ Y = ( iota_ z e. NN0 ( ( B ^ z ) || A
+            /\ -. ( B ^ ( z + 1 ) ) || A ) ) ) ) $=
+      ( cexp co cdvds wbr cn0 wceq wcel cz cmul cv c1 caddc wn wa crio cdiv cuz
+      c2 cfv cn eluz2nn syl nnzd nnexpcld nnmulcld eqeltrd nncnd mulcomd eqtr2d
+      dvds0lem syl31anc breq2d cc0 wne nnne0d dvdscmulr syl112anc mtbird expp1d
+      wb bitrd breq1d wreu pwbdvdseu syl2anc oveq2 oveq2d notbid anbi12d riota2
+      oveq1 mpbi2and nnap0d eqcomd oveq1d mvllmulapd jca ) AECDDBUAZLMZCNOZDWIU
+      BUCMZLMZCNOZUDZUEZBPUFZLMZUGMQFWQQAWRECAWRADWQADUIUHUJRZDUKRHDULUMZAWQFPA
+      DFLMZCNOZDFUBUCMZLMZCNOZUDZWQFQZAESRZXASRZCSREXATMZCQXBAEGUNZAXAADFWTJUOZ
+      UNZACACXAETMZUKKAXAEXLGUPUQZUNACXNXJKAXAEAXAXLURAEGURZUSUTEXACVAVBAXEXADT
+      MZCNOZAXRDENOZIAXRXQXNNOZXSACXNXQNKVCADSRXHXIXAVDVEXTXSVKADWTUNXKXMAXAXLV
+      FXADEVGVHVLVIAXDXQCNADFADWTURJVJVMVIAFPRWPBPVNZXBXFUEZXGVKJACUKRWSYAXOHDB
+      CVOVPWPYBBPFWIFQZWKXBWOXFYCWJXACNWIFDLVQVMYCWNXEYCWMXDCNYCWLXCDLWIFUBUCWB
+      VRVMVSVTWAVPWCZJUQUOZURXPAWRYEWDACXNWRETMKAXAWRETAFWQDLAWQFYDWEZVRWFUTWGY
+      FWH $.
   $}
 
   ${
-    $d A z $.  $d Y z $.
-    $( Lemma for ~ oddpwdc .  Another way of stating that decomposing a natural
-       number into a power of two and an odd number is unique.  (Contributed by
-       Jim Kingdon, 16-Nov-2021.) $)
-    oddpwdclemxy $p |- ( ( ( ( X e. NN /\ -. 2 || X ) /\ Y e. NN0 )
-        /\ A = ( ( 2 ^ Y ) x. X ) ) ->
-          ( X = ( A / ( 2 ^ ( iota_ z e. NN0 ( ( 2 ^ z ) || A
-            /\ -. ( 2 ^ ( z + 1 ) ) || A ) ) ) )
-          /\ Y = ( iota_ z e. NN0 ( ( 2 ^ z ) || A
-            /\ -. ( 2 ^ ( z + 1 ) ) || A ) ) ) ) $=
-      ( cn wcel c2 cdvds wbr wn wa cn0 cexp co cmul wceq c1 cz nnzd nncnd caddc
-      cv crio cdiv 2nn a1i simplll simplr nnexpcld simpr eqeltrd mulcomd eqtr2d
-      nnmulcld dvds0lem simpllr breq2d cc0 wne nnne0d dvdscmulr syl112anc bitrd
-      syl31anc wb mtbird expp1d breq1d wreu pw2dvdseu oveq2 oveq1 oveq2d notbid
-      syl anbi12d riota2 syl2anc mpbi2and nnap0d eqcomd oveq1d mvllmulapd jca )
-      CEFZGCHIZJZKZDLFZKZBGDMNZCONZPZKZCBGGAUBZMNZBHIZGWOQUANZMNZBHIZJZKZALUCZM
-      NZUDNPDXCPWNXDCBWNXDWNGXCGEFWNUEUFZWNXCDLWNWKBHIZGDQUANZMNZBHIZJZXCDPZWNC
-      RFZWKRFZBRFCWKONZBPXFWNCWEWGWIWMUGZSZWNWKWNGDXEWHWIWMUHZUIZSZWNBWNBWLEWJW
-      MUJZWNWKCXRXOUNUKZSWNBWLXNXTWNWKCWNWKXRTWNCXOTZULUMCWKBUOVDWNXIWKGONZBHIZ
-      WNYDWFWEWGWIWMUPWNYDYCWLHIZWFWNBWLYCHXTUQWNGRFXLXMWKURUSYEWFVEWNGXESXPXSW
-      NWKXRUTWKGCVAVBVCVFWNXHYCBHWNGDWNGXETXQVGVHVFWNWIXBALVIZXFXJKZXKVEXQWNBEF
-      YFYAABVJVOXBYGALDWODPZWQXFXAXJYHWPWKBHWODGMVKVHYHWTXIYHWSXHBHYHWRXGGMWODQ
-      UAVLVMVHVNVPVQVRVSZXQUKUIZTYBWNXDYJVTWNBWLXDCONXTWNWKXDCOWNDXCGMWNXCDYIWA
-      ZVMWBUMWCYKWD $.
+    $d A z $.  $d B z $.
+    $( Lemma for ~ nnmaxpw .  A natural number is divisible by the highest
+       power of a base which divides it.  (Contributed by Jim Kingdon,
+       17-Nov-2021.)  (Revised by Jim Kingdon, 19-Aug-2026.) $)
+    nnmaxpwlemdvds $p |- ( ( A e. NN /\ B e. ( ZZ>= ` 2 ) )
+        -> ( B ^ ( iota_ z e. NN0
+        ( ( B ^ z ) || A /\ -. ( B ^ ( z + 1 ) ) || A ) ) ) || A ) $=
+      ( cn wcel c2 cuz cfv wa cv cexp co cdvds wbr c1 caddc wn cn0 wrex nfcv wb
+      crio pwbdvds nfv nfriota1 nfov nfbr wceq wreu pwbdvdseu riota1 syl biimpa
+      oveq2d simprrl eqbrtrd exp32 rexlimd mpd ) BDECFGHEIZCAJZKLZBMNZCVAOPLKLB
+      MNQZIZARSCVEARUBZKLZBMNZCABUCUTVEVHARUTAUDAVGBMACVFKACTAKTVEARUEUFAMTABTU
+      GUTVAREZVEVHUTVIVEIZIZVGVBBMVKVFVACKUTVJVFVAUHZUTVEARUIVJVLUACABUJVEARUKU
+      LUMUNUTVIVCVDUOUPUQURUS $.
   $}
 
   ${
-    $d A z $.
-    $( Lemma for ~ oddpwdc .  A natural number is divisible by the highest
-       power of two which divides it.  (Contributed by Jim Kingdon,
-       17-Nov-2021.) $)
-    oddpwdclemdvds $p |- ( A e. NN -> ( 2 ^ ( iota_ z e. NN0
-        ( ( 2 ^ z ) || A /\ -. ( 2 ^ ( z + 1 ) ) || A ) ) ) || A ) $=
-      ( cn wcel c2 cv cexp co cdvds wbr c1 caddc cn0 wrex crio pw2dvds nfv nfcv
-      wn wa nfriota1 nfov nfbr wceq wreu wb pw2dvdseu riota1 syl biimpa simprrl
-      oveq2d eqbrtrd exp32 rexlimd mpd ) BCDZEAFZGHZBIJZEURKLHGHBIJSZTZAMNEVBAM
-      OZGHZBIJZABPUQVBVEAMUQAQAVDBIAEVCGAERAGRVBAMUAUBAIRABRUCUQURMDZVBVEUQVFVB
-      TZTZVDUSBIVHVCUREGUQVGVCURUDZUQVBAMUEVGVIUFABUGVBAMUHUIUJULUQVFUTVAUKUMUN
-      UOUP $.
+    $d A z $.  $d B z $.
+    $( Lemma for ~ nnmaxpw .  A natural number is not divisible by one more
+       than the highest power of a base which divides it.  (Contributed by Jim
+       Kingdon, 17-Nov-2021.)  (Revised by Jim Kingdon, 19-Aug-2026.) $)
+    nnmaxpwlemndvds $p |- ( ( A e. NN /\ B e. ( ZZ>= ` 2 ) )
+        -> -. ( B ^ ( ( iota_ z e. NN0
+        ( ( B ^ z ) || A /\ -. ( B ^ ( z + 1 ) ) || A ) ) + 1 ) ) || A ) $=
+      ( cn wcel c2 cuz cfv wa cv cexp co cdvds wbr c1 caddc wn cn0 nfcv nfov wb
+      wrex crio pwbdvds nfv nfriota1 nfbr nfn wceq wreu pwbdvdseu riota1 biimpa
+      syl oveq1d oveq2d simprrr eqnbrtrd exp32 rexlimd mpd ) BDECFGHEIZCAJZKLBM
+      NZCVCOPLZKLZBMNQZIZARUBCVHARUCZOPLZKLZBMNZQZCABUDVBVHVMARVBAUEVLAAVKBMACV
+      JKACSAKSAVIOPVHARUFAPSAOSTTAMSABSUGUHVBVCREZVHVMVBVNVHIZIZVKVFBMVPVJVECKV
+      PVIVCOPVBVOVIVCUIZVBVHARUJVOVQUACABUKVHARULUNUMUOUPVBVNVDVGUQURUSUTVA $.
   $}
 
   ${
-    $d A z $.
-    $( Lemma for ~ oddpwdc .  A natural number is not divisible by one more
-       than the highest power of two which divides it.  (Contributed by Jim
-       Kingdon, 17-Nov-2021.) $)
-    oddpwdclemndvds $p |- ( A e. NN -> -. ( 2 ^ ( ( iota_ z e. NN0
-        ( ( 2 ^ z ) || A /\ -. ( 2 ^ ( z + 1 ) ) || A ) ) + 1 ) ) || A ) $=
-      ( cn wcel c2 cv cexp co cdvds wbr c1 caddc wn wrex crio pw2dvds nfcv nfov
-      wa cn0 nfv nfriota1 nfbr nfn simprrr wceq wreu wb pw2dvdseu riota1 biimpa
-      syl oveq1d oveq2d breq1d mtbird exp32 rexlimd mpd ) BCDZEAFZGHBIJZEVAKLHZ
-      GHZBIJZMZSZATNEVGATOZKLHZGHZBIJZMZABPUTVGVLATUTAUAVKAAVJBIAEVIGAEQAGQAVHK
-      LVGATUBALQAKQRRAIQABQUCUDUTVATDZVGVLUTVMVGSZSZVKVEUTVMVBVFUEVOVJVDBIVOVIV
-      CEGVOVHVAKLUTVNVHVAUFZUTVGATUGVNVPUHABUIVGATUJULUKUMUNUOUPUQURUS $.
+    $d A z $.  $d B z $.
+    $( Lemma for ~ nnmaxpw .  Removing the powers of a base from a natural
+       number produces a number not divisible by that base.  (Contributed by
+       Jim Kingdon, 16-Nov-2021.)  (Revised by Jim Kingdon, 19-Aug-2026.) $)
+    nnmaxpwlemnfac $p |- ( ( A e. NN /\ B e. ( ZZ>= ` 2 ) ) -> -. B ||
+        ( A / ( B ^ ( iota_ z e. NN0 ( ( B ^ z ) || A /\
+        -. ( B ^ ( z + 1 ) ) || A ) ) ) ) ) $=
+      ( cn wcel c2 cuz wa cexp co cdvds wbr c1 caddc cn0 cmul nncnd mtbid nnzd
+      cz cfv cv crio cdiv nnmaxpwlemndvds eluz2nn adantl wreu pwbdvdseu riotacl
+      wn syl expp1d breq1d simpl nnap0d divcanap2d eqcomd breq2d nnmaxpwlemdvds
+      nnexpcld cc0 wne wb nndivdvds biimpa syl21anc nnne0d dvdscmulr syl112anc
+      bitrd ) BDEZCFGUAEZHZCCAUBZIJBKLCVOMNJIJBKLUKHZAOUCZIJZCPJZBKLZCBVRUDJZKL
+      ZVNCVQMNJIJZBKLVTABCUEVNWCVSBKVNCVQVNCVMCDEVLCUFUGZQVNVPAOUHVQOECABUIVPAO
+      UJULZUMUNRVNVTVSVRWAPJZKLZWBVNBWFVSKVNWFBVNBVRVNBVLVMUOZQVNVRVNCVQWDWEVAZ
+      QVNVRWIUPUQURUSVNCTEWATEVRTEVRVBVCWGWBVDVNCWDSVNWAVNVLVRDEZVRBKLZWADEZWHW
+      IABCUTVLWJHWKWLBVRVEVFVGSVNVRWISVNVRWIVHVRCWAVIVJVKR $.
   $}
 
   ${
-    $d A z $.
-    $( Lemma for ~ oddpwdc .  Removing the powers of two from a natural number
-       produces an odd number.  (Contributed by Jim Kingdon, 16-Nov-2021.) $)
-    oddpwdclemodd $p |- ( A e. NN -> -. 2 ||
-        ( A / ( 2 ^ ( iota_ z e. NN0 ( ( 2 ^ z ) || A /\
-        -. ( 2 ^ ( z + 1 ) ) || A ) ) ) ) ) $=
-      ( cn wcel c2 cv cexp co cdvds wbr c1 caddc wn wa cn0 crio cmul mtbid nnzd
-      cz cdiv oddpwdclemndvds wceq 2cn wreu pw2dvdseu riotacl syl expp1 sylancr
-      cc breq1d nncn 2nn a1i nnexpcld nncnd nnap0d divcanap2d eqcomd breq2d cc0
-      wb id oddpwdclemdvds nndivdvds biimpa syl21anc nnne0d dvdscmulr syl112anc
-      wne bitrd ) BCDZEEAFZGHBIJEVOKLHGHBIJMNZAOPZGHZEQHZBIJZEBVRUAHZIJZVNEVQKL
-      HGHZBIJVTABUBVNWCVSBIVNEUKDVQODZWCVSUCUDVNVPAOUEWDABUFVPAOUGUHZEVQUIUJULR
-      VNVTVSVRWAQHZIJZWBVNBWFVSIVNWFBVNBVRBUMVNVRVNEVQECDVNUNUOZWEUPZUQVNVRWIUR
-      USUTVAVNETDWATDVRTDVRVBVLWGWBVCVNEWHSVNWAVNVNVRCDZVRBIJZWACDZVNVDWIABVEVN
-      WJNWKWLBVRVFVGVHSVNVRWISVNVRWIVIVREWAVJVKVMR $.
-  $}
+    $d A z $.  $d Y z $.  $d B z $.
 
-  ${
-    $d A z $.  $d Y z $.
-    $( Lemma for ~ oddpwdc .  Decomposing a number into odd and even parts.
-       (Contributed by Jim Kingdon, 16-Nov-2021.) $)
-    oddpwdclemdc $p |- ( ( ( ( X e. NN /\ -. 2 || X ) /\ Y e. NN0 )
-        /\ A = ( ( 2 ^ Y ) x. X ) )
-        <-> ( A e. NN /\ ( X = ( A / ( 2 ^
-          ( iota_ z e. NN0 ( ( 2 ^ z ) || A /\ -. ( 2 ^ ( z + 1 ) ) || A ) ) )
+    $( Lemma for ~ nnmaxpw .  Decomposing a number into parts.  (Contributed by
+       Jim Kingdon, 16-Nov-2021.)  (Revised by Jim Kingdon, 19-Aug-2026.) $)
+    nnmaxpwlemparts $p |- ( B e. ( ZZ>= ` 2 )
+        -> ( ( ( ( X e. NN /\ -. B || X ) /\ Y e. NN0 )
+        /\ A = ( ( B ^ Y ) x. X ) )
+        <-> ( A e. NN /\ ( X = ( A / ( B ^
+          ( iota_ z e. NN0 ( ( B ^ z ) || A /\ -. ( B ^ ( z + 1 ) ) || A ) ) )
           ) /\ Y =
-          ( iota_ z e. NN0 ( ( 2 ^ z ) || A /\ -. ( 2 ^ ( z + 1 ) ) || A ) ) )
-        ) ) $=
-      ( cn wcel c2 cdvds wbr wn wa cn0 cexp cmul wceq simpr 2nn eqeltrd adantr
-      co cv c1 caddc crio a1i simplr nnexpcld simplll nnmulcld oddpwdclemxy jca
-      cdiv oddpwdclemdvds wb wreu pw2dvdseu riotacl syl nndivdvds mpdan adantrr
-      mpbid oddpwdclemodd breq2 notbid mpbird simprr oveq2d oveq12d simpl nncnd
-      ad2antrl nnap0d divcanap2d eqtr2d jca31 impbii ) CEFZGCHIZJZKZDLFZKZBGDMT
-      ZCNTZOZKZBEFZCBGGAUAZMTBHIGWIUBUCTMTBHIJKZALUDZMTZULTZOZDWKOZKZKZWGWHWPWG
-      BWEEWCWFPWGWDCWGGDGEFZWGQUEWAWBWFUFUGVRVTWBWFUHUIRABCDUJUKWQWAWBWFWQVRVTW
-      HWNVRWOWHWNKCWMEWHWNPZWHWMEFZWNWHWLBHIZWTABUMWHWLEFZXAWTUNWHGWKWRWHQUEWHW
-      JALUOWKLFZABUPWJALUQURZUGZBWLUSUTVBSRVAWQVTGWMHIZJZWHXGWPABVCSWNVTXGUNWHW
-      OWNVSXFCWMGHVDVEVLVFUKWQDWKLWHWNWOVGZWHXCWPXDSRWQWEWLWMNTBWQWDWLCWMNWQDWK
-      GMXHVHWHWNWNWOWSVAVIWQBWLWQBWHWPVJVKWQWLWHXBWPXESZVKWQWLXIVMVNVOVPVQ $.
+          ( iota_ z e. NN0 ( ( B ^ z ) || A /\ -. ( B ^ ( z + 1 ) ) || A ) ) )
+        ) ) ) $=
+      ( wcel cn cdvds wbr wn wa cn0 cexp cmul wceq adantl eqeltrd simpl syl2anc
+      co c2 cuz cfv cv c1 caddc crio cdiv simprr eluz2nn adantr simprlr simplll
+      nnexpcld nnmulcld simpllr nnmaxpwlemxy jca simprl simpr nnmaxpwlemdvds wb
+      simprrl wreu pwbdvdseu syl nndivdvds mpbid syl21anc nnmaxpwlemnfac notbid
+      riotacl breq2 mpbird simprrr oveq2d oveq12d nncnd nnap0d divcanap2d jca31
+      eqtr2d impbida ) CUAUBUCFZDGFZCDHIZJZKZELFZKZBCEMTZDNTZOZKZBGFZDBCCAUDZMT
+      BHICWPUEUFTMTBHIJKZALUGZMTZUHTZOZEWROZKZKZWDWNKZWOXCXEBWLGWDWJWMUIZXEWKDX
+      ECEWDCGFZWNCUJZUKWDWHWIWMULZUNWNWEWDWEWGWIWMUMPZUOQXEABCDEXJWDWNRWNWGWDWE
+      WGWIWMUPPXIXFUQURWDXDKZWHWIWMXKWEWGXKWOWDXAWEWDWOXCUSZWDXDRZWDWOXAXBVCZWO
+      WDKZXAKDWTGXOXAUTXOWTGFZXAXOWSBHIZXPABCVAXOWOWSGFZXQXPVBWOWDRXOCWRWDXGWOX
+      HPXOWQALVDWRLFZCABVEWQALVLVFZUNZBWSVGSVHUKQVIXKWGCWTHIZJZXKWOWDYCXLXMABCV
+      JSXKXAWGYCVBXNXAWFYBDWTCHVMVKVFVNURXKEWRLWDWOXAXBVOZXKWOWDXSXLXMXTSQXKWLW
+      SWTNTBXKWKWSDWTNXKEWRCMYDVPXNVQXKBWSXKBXLVRXKWSXKWOWDXRXLXMYASZVRXKWSYEVS
+      VTWBWAWC $.
+  $}
+
+  ${
+    $d a x y z $.  $d a F $.  $d a x y J $.  $d B a x y z $.
+    nnmaxpw.j $e |- J = { z e. NN | -. B || z } $.
+    nnmaxpw.f $e |- F = ( x e. J , y e. NN0 |-> ( ( B ^ y ) x. x ) ) $.
+    $( The function ` F ` that decomposes a number into its "odd" and "even"
+       parts, which is to say the largest power of a base and largest divisor
+       of the number not divisible by that base, is a bijection from pairs of a
+       nonnegative integer and a number not divisible by that base to positive
+       integers.  (Contributed by Thierry Arnoux, 15-Aug-2017.)  (Revised by
+       Jim Kingdon, 19-Aug-2026.) $)
+    nnmaxpw $p |- ( B e. ( ZZ>= ` 2 ) -> F : ( J X. NN0 ) -1-1-onto-> NN ) $=
+      ( va wcel cn0 cv cexp co cn cdvds wbr wn wa wceq c2 cuz cfv cmul c1 caddc
+      crio cc cr eluz2nn adantr nncnd simprr expcld breq2 notbid elrab2 simplbi
+      cdiv ad2antrl mulcld simpl nnnn0d adantl pwbdvdseu riotacl syl nn0nndivcl
+      wreu nnexpcld syl2anc jca ancoms anbi1i nnmaxpwlemparts bitrid f1od2 ) DU
+      AUBUCJZABIFKDBLZMNZALZUDNZOEILZDDCLZMNWCPQDWDUEUFNMNWCPQRSZCKUGZMNZUSNZWF
+      UHUIKHVRWAFJZVSKJZSZSZVTWAWLDVSWLDVRDOJZWKDUJZUKULVRWIWJUMUNWLWAWIWAOJZVR
+      WJWIWODWAPQZRZDWDPQZRWQCWAOFWDWATWRWPWDWADPUOUPGUQZURUTULVAWCOJZVRWHUIJZW
+      FKJZSWTVRSZXAXBXCWCKJWGOJXAXCWCWTVRVBVCXCDWFVRWMWTWNVDXCWECKVIXBDCWCVEWEC
+      KVFVGZVJWCWGVHVKXDVLVMWKWCWBTZSWOWQSZWJSZXESVRWTWAWHTVSWFTSSWKXGXEWIXFWJW
+      SVNVNCWCDWAVSVOVPVQ $.
   $}
 
   ${
@@ -146841,16 +146944,8 @@ $)
        odd number to positive integers.  (Contributed by Thierry Arnoux,
        15-Aug-2017.) $)
     oddpwdc $p |- F : ( J X. NN0 ) -1-1-onto-> NN $=
-      ( cn0 cn wtru c2 cv cexp co cdvds wbr wn wa wcel wceq va cxp wf1o cmul c1
-      caddc crio cdiv cc cr 2cnd simpr expcld breq2 notbid elrab2 simplbi nncnd
-      adantr mulcld adantl nnnn0 2nn wreu pw2dvdseu riotacl syl nnexpcl sylancr
-      nn0nndivcl syl2anc jca wb anbi1i oddpwdclemdc bitri a1i f1od2 mptru ) EHU
-      BIDUCJABUAEHKBLZMNZALZUDNZIDUALZKKCLZMNWDOPKWEUEUFNMNWDOPQRZCHUGZMNZUHNZW
-      GUIUJHGWBESZVTHSZRZWCUISJWLWAWBWLKVTWLUKWJWKULUMWLWBWJWBISZWKWJWMKWBOPZQZ
-      KWEOPZQWOCWBIEWEWBTWPWNWEWBKOUNUOFUPZUQUSURUTVAWDISZWIUJSZWGHSZRJWRWSWTWR
-      WDHSWHISZWSWDVBWRKISWTXAVCWRWFCHVDWTCWDVEWFCHVFVGZKWGVHVIWDWHVJVKXBVLVAWL
-      WDWCTZRZWRWBWITVTWGTRRZVMJXDWMWORZWKRZXCRXEWLXGXCWJXFWKWQVNVNCWDWBVTVOVPV
-      QVRVS $.
+      ( c2 cz wcel cuz cfv cn0 cxp cn wf1o 2z uzid nnmaxpw mp2b ) HIJHHKLJEMNOD
+      PQHRABCHDEFGST $.
 
     ${
       $d A x y z $.  $d F x y z $.  $d J x y $.
@@ -196575,6 +196670,100 @@ $)
       WHVPWJVKURWJWBVMALWAVGVLJUPUQWJWGVOLWAVGVFNVCUTVAVDVE $.
   $}
 
+  ${
+    zprmlogbaplem1.b $e |- ( ph -> B e. Prime ) $.
+    zprmlogbaplem1.m $e |- ( ph -> M e. NN ) $.
+    zprmlogbaplem1.j $e |- ( ph -> -. B || M ) $.
+    zprmlogbaplem1.a $e |- ( ph -> A e. NN0 ) $.
+    $( Lemma for ~ zprmlogbap .  Rearranging an expression involving
+       logarithms.  (Contributed by Jim Kingdon, 20-Aug-2026.) $)
+    zprmlogbaplem1 $p |- ( ph -> ( B logb ( ( B ^ A ) x. M ) )
+        = ( A + ( B logb M ) ) ) $=
+      ( cexp co cmul clogb caddc crp wcel c1 wbr wceq syl nnrpd cprime cn prmnn
+      cap 1red nnred clt prmgt1 nnexpcld rprelogbmul syl22anc c2 cuz cfv prmuz2
+      gtapd cz nn0zd nnlogbexp syl2anc oveq1d eqtrd ) ACCBIJZDKJLJZCVCLJZCDLJZM
+      JZBVFMJACNOCPUDQVCNODNOVDVGRACACUAOZCUBOECUCSZTAPCAUEACVIUFAVHPCUGQECUHSU
+      PAVCACBVIHUITADFTVCCDUJUKAVEBVFMACULUMUNOZBUQOVEBRAVHVJECUOSABHURCBUSUTVA
+      VB $.
+
+    $d A q $.  $d B q $.  $d M q $.  $d X q $.  $d ph q $.
+    zprmlogbaplem2.x $e |- X = ( ( B ^ A ) x. M ) $.
+    $( Lemma for ~ zprmlogbap .  The logarithm is either rational or
+       irrational.  (Contributed by Jim Kingdon, 20-Aug-2026.) $)
+    zprmlogbaplem2 $p |- ( ph
+        -> ( ( B logb X ) e. QQ \/ (
+        ( B logb X ) e. RR /\ A. q e. QQ ( B logb X ) =//= q ) ) ) $=
+      ( c1 wceq wcel clogb co cq wbr wa adantr c2 cuz cfv wo cr cv cap elnn1uz2
+      wral cn sylib caddc cc0 cexp cmul oveq2i zprmlogbaplem1 eqtrid crp cprime
+      oveq2 prmnn syl nnrpd nnred prmgt1 gtapd rplogb1 syl2anc sylan9eqr oveq2d
+      1red clt cc nn0cnd addridd 3eqtrd cz nn0zd zq eqeltrd ex prmuz2 relogbzcl
+      recnd comraddd cgcd simpr nnzd gcdcomd cdvds wn coprm mpbid logbgcd1irrap
+      wb eqtrd anassrs ralrimiva syl21anc irraddap simpld simprd breq1d ralbidv
+      mpbird jca orim12d mpd ) ADLMZDUAUBUCZNZUDZCEOPZQNZXNUENZXNFUFZUGRZFQUIZS
+      ZUDADUJNXMHDUHUKAXJXOXLXTAXJXOAXJSZXNBQYAXNBCDOPZULPZBUMULPBAXNYCMXJAXNCC
+      BUNPDUOPZOPYCEYDCOKUPABCDGHIJUQURZTYAYBUMBULXJAYBCLOPZUMDLCOVAACUSNCLUGRY
+      FUMMACACUTNZCUJNGCVBVCZVDALCAVLACYHVEAYGLCVMRGCVFVCVGCVHVIVJVKYABABVNNXJA
+      BJVOZTVPVQABQNZXJABVRNYJABJVSBVTVCZTWAWBAXLXTAXLSZXPXSYLXNYBBULPZUEAXNYMM
+      XLAXNBYBYIAYBACXKNZDUSNYBUENZAYGYNGCWCVCZADHVDCDWDVIZWEYEWFZTYLYMUENZYMXQ
+      UGRZFQUIZYLYOYBXQUGRZFQUIZYJYSUUASAYOXLYQTYLXLYNDCWGPZLMZUUCAXLWHAYNXLYPT
+      AUUEXLAUUDCDWGPZLADCADHWIZACYHWIWJACDWKRWLZUUFLMZIAYGDVRNUUHUUIWPGUUGCDWM
+      VIWNWQTXLYNSZUUESUUBFQUUJUUEXQQNUUBCXQDWOWRWSWTAYJXLYKTYBBFXAWTZXBWAYLXSU
+      UAYLYSUUAUUKXCAXSUUAWPXLAXRYTFQAXNYMXQUGYRXDXETXFXGWBXHXI $.
+  $}
+
+  ${
+    $d B a m $.  $d B x y z $.  $d F a m $.  $d F x y z $.  $d J x y $.
+    $d X a m $.  $d X x y z $.
+    zprmlogbaplem3.j $e |- J = { z e. NN | -. B || z } $.
+    zprmlogbaplem3.f $e |- F = ( x e. J , y e. NN0 |-> ( ( B ^ y ) x. x ) ) $.
+    $( Lemma for ~ zprmlogbap .  Decomposing a natural number into a power of a
+       prime base and a factor not divisible by that prime.  (Contributed by
+       Jim Kingdon, 20-Aug-2026.) $)
+    zprmlogbaplem3 $p |- ( ( X e. NN /\ B e. Prime )
+        -> E. m e. NN E. a e. NN0 ( -. B || m
+        /\ X = ( ( B ^ a ) x. m ) ) ) $=
+      ( cn wcel wa cfv cn0 cdvds co cmul wceq cprime ccnv c1st c2nd wbr wn cexp
+      cv wrex cop cxp wf1o c2 cuz prmuz2 nnmaxpw syl simpl f1ocnvdm elxp6 sylib
+      syl2an2 simprd simpld breq2 notbid elrab2 df-ov eqtr4di f1ocnvfv2 nnexpcl
+      fveq2d prmnn nnmulcld oveq1d ovmpog syl3anc 3eqtr3d eqeq2d anbi12d anbi2d
+      oveq2 rspc2ev syl112anc ) HLMZDUAMZNZHFUBOZUCOZLMZWHUDOZPMZDWIQUEZUFZHDWK
+      UGRZWISRZTZDEUHZQUEZUFZHDIUHZUGRZWRSRZTZNZIPUIELUIWGWJWNWGWIGMZWJWNNWGXFW
+      LWGWHWIWKUJZTZXFWLNZWGWHGPUKZMZXHXINWFXJLFULZWEWEXKWFDUMUNOMXLDUOABCDFGJK
+      UPUQZWEWFURZXJLHFUSVBWHGPUTVAZVCZVDZDCUHZQUEZUFWNCWILGXRWITXSWMXRWIDQVEVF
+      JVGVAZVDZWGXFWLXPVCZWGWJWNXTVCWGWHFOZWIWKFRZHWPWGYCXGFOYDWGWHXGFWGXHXIXOV
+      DVLWIWKFVHVIWFXLWEWEYCHTXMXNXJLHFVJVBWGXFWLWPLMYDWPTXQYBWGWOWIWFDLMWEWLWO
+      LMDVMYBDWKVKVBYAVNABWIWKGPDBUHZUGRZAUHZSRWPFYFWISRLYGWIYFSWBYEWKTYFWOWISY
+      EWKDUGWBVOKVPVQVRXEWNWQNWNHXBWISRZTZNEIWIWKLPWRWITZWTWNXDYIYJWSWMWRWIDQVE
+      VFYJXCYHHWRWIXBSWBVSVTXAWKTZYIWQWNYKYHWPHYKXBWOWISXAWKDUGWBVOVSWAWCWD $.
+  $}
+
+  ${
+    $d B a m q $.  $d B a m t u v $.  $d B t u v x y z $.  $d X a m q $.
+    $d X x y z $.
+    $( The logarithm of a natural number to a prime base is either rational or
+       irrational.
+
+       The proof decomposes ` X ` into ` m e. NN ` and ` a e. NN0 ` such that
+       ` X = ( ( B ^ a ) x. m ) ` (using ~ nnmaxpw ).  If ` m = 1 ` the
+       logarithm is ` a ` , which is rational.  If ` 1 < m ` then we can apply
+       ~ logbgcd1irrap to show that the logarithm is irrational.  (Contributed
+       by Jim Kingdon and Taylor Barrella, 20-Aug-2026.) $)
+    zprmlogbap $p |- ( ( X e. NN /\ B e. Prime )
+        -> ( ( B logb X ) e. QQ \/ (
+        ( B logb X ) e. RR /\ A. q e. QQ ( B logb X ) =//= q ) ) ) $=
+      ( vm va vy vz vv vt cn wcel wa cv cdvds wbr cexp co cmul cn0 cq vx cprime
+      vu wn wceq wrex clogb cr cap wral wo crab cmpo breq2 notbid cbvrabv oveq2
+      oveq1d cbvmpov zprmlogbaplem3 simpllr simplrl simplrr eqid zprmlogbaplem2
+      weq simprl simprr oveq2d eleq1d breq1d ralbidv anbi12d orbi12d rexlimdvva
+      mpbird ex mpd ) BJKZAUBKZLZADMZNOUDZBAEMZPQWBRQZUEZLZESUFDJUFABUGQZTKZWHU
+      HKZWHCMZUIOZCTUJZLZUKZUAFGADUCHAIMZNOZUDZIJULZSAHMZPQZUCMZRQZUMWSBEWRAGMZ
+      NOZUDIGJIGVFWQXEWPXDANUNUOUPUCHUAFWSSXCAFMZPQZUAMZRQXAXHRQXBXHXARUQHFVFXA
+      XGXHRWTXFAPUQURUSUTWAWGWODEJSWAWBJKZWDSKZLZLZWGWOXLWGLZWOAWEUGQZTKZXNUHKZ
+      XNWKUIOZCTUJZLZUKXMWDAWBWECVSVTXKWGVAWAXIXJWGVBXLWCWFVGWAXIXJWGVCWEVDVEXM
+      WIXOWNXSXMWHXNTXMBWEAUGXLWCWFVHVIZVJXMWJXPWMXRXMWHXNUHXTVJXMWLXQCTXMWHXNW
+      KUIXTVKVLVMVNVPVQVOVR $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -198079,6 +198268,133 @@ $)
       UXHUXGVWHUXHVWHVWOUXGSRZUXHXRRXSVWHUXGVXGYFZBUXGXTYAYBVXHYCYDVWHUXCVWKVXB
       VWHVWKVXJYDUWDVWHUXKVWHUXJSRZUXGVLRUXKSRVWHUYMVYRVYTURVYSFUXGUWEYAVWHUXGV
       XGUWFUXGUXJYGYIYJUXIVWLUXKUWGUWHUWIUWJYLUWK $.
+  $}
+
+  ${
+    $d A q $.  $d B q $.  $d N q $.
+    $( Convert a bound on a power of a prime to a bound on the exponent.
+       (Contributed by Mario Carneiro, 11-Mar-2014.)  (Revised by Jim Kingdon,
+       21-Aug-2026.) $)
+    prmefexple $p |- ( ( A e. Prime /\ N e. ZZ /\ B e. NN ) ->
+        ( ( A ^ N ) <_ B <-> N <_ ( |_ ` ( ( log ` B ) / ( log ` A ) ) ) ) ) $=
+      ( vq wcel cn co cle wbr clog cfv ce crp wceq syl nnrpd syl2anc cr cq cap
+      cprime cz cexp cmul cdiv simp1 prmnn simp2 reexplog simp3 reeflogd eqcomd
+      w3a cfl breq12d wb zred nnred c2 cuz c1 prmuz2 eluz2gt1 rplogcld remulcld
+      clt rpred relogcld efle lemuldivd cv wa clogb zprmlogbap relogbval eleq1d
+      wral wo breq1d ralbidv anbi12d orbi12d mpbid flapge bitrd 3bitr2d ) AUAEZ
+      CUBEZBFEZUMZACUCGZBHICAJKZUDGZLKZBJKZLKZHIZWMWOHIZCWOWLUEGZUNKHIZWJWKWNBW
+      PHWJAMEWHWKWNNWJAWJWGAFEWGWHWIUFZAUGOZPWGWHWIUHZACUIQWJWPBWJBWJBWGWHWIUJZ
+      PZUKULUOWJWMREWOREWRWQUPWJCWLWJCXCUQZWJWLWJAWJAXBURWJAUSUTKEZVAAVFIWJWGXG
+      XAAVBOZAVCOVDZVGVEWJBXEVHZWMWOVIQWJWRCWSHIZWTWJCWOWLXFXJXIVJWJWSSEZWSREZW
+      SDVKZTIZDSVQZVLZVRZWHXKWTUPWJABVMGZSEZXSREZXSXNTIZDSVQZVLZVRZXRWJWIWGYEXD
+      XAABDVNQWJXTXLYDXQWJXSWSSWJXGBMEXSWSNXHXEABVOQZVPWJYAXMYCXPWJXSWSRYFVPWJY
+      BXODSWJXSWSXNTYFVSVTWAWBWCXCWSCDWDQWEWF $.
+  $}
+
+  ${
+    $d p N $.  $d p P $.
+    bpos1.1 $e |- ( E. p e. Prime ( N < p /\ p <_ ( 2 x. N ) ) -> ph ) $.
+    bpos1.2 $e |- ( N e. ( ZZ>= ` P ) -> ph ) $.
+    bpos1.3 $e |- P e. Prime $.
+    bpos1.4 $e |- A e. NN0 $.
+    bpos1.5 $e |- ( A x. 2 ) = B $.
+    bpos1.6 $e |- A < P $.
+    bpos1.7 $e |- ( P < B \/ P = B ) $.
+    $( Lemma for bpos1 .  (Contributed by Mario Carneiro, 12-Mar-2014.) $)
+    bpos1lem $p |- ( N e. ( ZZ>= ` A ) -> ph ) $=
+      ( wcel cle wbr clt sylancr c2 cr cuz cfv cz wb cprime cn prmnn ax-mp nnzi
+      eluzelz eluz biimtrrdi wa cv cmul wrex nnrei a1i nn0rei remulcli eqeltrri
+      co 2re eluzelre remulcl wceq cn0 2nn0 nn0mulcli nn0zi zleloe mp2an nn0cni
+      wo mpbir 2cn mulcomli eluzle cc0 2pos pm3.2i lemul2 mp3an13 syl eqbrtrrid
+      mpbid letrd anim2i breq2 breq1 anbi12d rspcev expcom zlelttric mpjaod ) E
+      BUAUBNZDEOPZAEDQPZWPWQEDUAUBNZAWPDUCNZEUCNZWSWQUDDDUENZDUFNIDUGUHZUIZBEUJ
+      ZDEUKRHULWRWPAWRWPUMZEFUNZQPZXGSEUOVBZOPZUMZFUEUPZAXFXBWRDXIOPZUMZXLIWPXM
+      WRWPDCXIDTNWPDXCUQURCTNWPBSUOVBZCTKBSBJUSZVCUTVAURWPSTNZETNZXITNVCBEVDZSE
+      VERDCOPZWPXTDCQPDCVFVNZMWTCUCNXTYAUDXDCXOCVGKBSJVHVIVAVJDCVKVLVOURWPCSBUO
+      VBZXIOBSCBJVMVPKVQWPBEOPZYBXIOPZBEVRWPXRYCYDUDZXSBTNXRXQVSSQPZUMYEXPXQYFV
+      CVTWABESWBWCWDWFWEWGWHXKXNFDUEXGDVFXHWRXJXMXGDEQWIXGDXIOWJWKWLRGWDWMWPWTX
+      AWQWRVNXDXEDEWNRWO $.
+  $}
+
+  ${
+    $d k u q N $.  $d k u q P $.
+    $( An upper bound on the prime powers dividing a central binomial
+       coefficient.  (Contributed by Mario Carneiro, 9-Mar-2014.) $)
+    bposlem1 $p |- ( ( N e. NN /\ P e. Prime ) ->
+                      ( P ^ ( P pCnt ( ( 2 x. N ) _C N ) ) ) <_ ( 2 x. N ) ) $=
+      ( vq wcel wa c2 cmul co cle wbr cfv c1 cmin cc0 cz adantr syl2anc cr clt
+      wb vk vu cn cprime cbc cpc cexp clog cdiv cfl cfz cv csu cif 1zzd a1i nnz
+      2z zmulcld fzfigd prmnn ad2antlr elfznn adantl nnnn0d nnexpcld znq flqcld
+      cq simpll nnzd zmulcl sylancr zsubcld zred 1red 0red wdc cap wo clogb 2nn
+      wral nnmulcl mpan simpr zprmlogbap cuz wceq prmuz2 nnrpd relogbval eleq1d
+      crp breq1d ralbidv anbi12d orbi12d mpbid flapcl fzdcel syl3anc ifcldcd wn
+      syl caddc ad2antrr rpdivcl syl2an rpred 2re sylancl remulcl mpbird pm3.2i
+      cc recnd oveq12d breq2d elfzelz prmefexple rpge0d adantrr nnred syl112anc
+      nnrp ltdivmul bitrd impr 0p1e1 breqtrrdi 0z flqbi mpbir2and eqtrdi eqcomd
+      rplogcld ce cn0 3brtr4d resubcld flqle lesub1dd resubcl flqltp1 ltsubaddd
+      2pos ltmul2 mp3an3 ltsub2dd 2cnd nncn nncnd nnap0d divassapd muls1d nncan
+      1re 2cn breqtrd lelttrd df-2 breqtrdi 1z zleltp1 iftrue syl5ibrcom nnge1d
+      eqtrd biantrurd elfz 3bitr4rd notbid zltnle bitr4d nngt0d mulridd biimprd
+      nnre ltaddrp2d 2timesd breqtrrd wi lttr mpand oveq2d 2t0e0 0m0e0 eqbrtrdi
+      sylibrd 0le0 expr sylbid iffalse mpbidi exmiddc mpjaod fsumle pcbcctr cfn
+      chash wss 1lt2 2t1e2 lemul2a syl31anc eqbrtrrid ltletrd eluz2gt1 rpdivcld
+      0le2 nnge1 flaplelt simpld bernneq3 ltled reeflogd reexplog relogcld efle
+      remulcld ledivmul2d letrd eluz ralrimiva sumhashdc flapge elnn0z sylanbrc
+      fzss2 hashfz1 eqtr2d nnnn0 fzctr bccl2 3syl pccld nn0zd ) BUCDZAUDDZEZAAF
+      BGHZBUEHZUFHZUGHVUBIJZVUDVUBUHKZAUHKZUIHZUJKZIJZVUALVUBUKHZVUBAUAULZUGHZU
+      IHZUJKZFBVUMUIHZUJKZGHZMHZUAUMVUKVULLVUIUKHZDZLNUNZUAUMZVUDVUIIVUAVUKVUSV
+      VBUAVUALVUBVUAUOVUAFBFODZVUAURUPUYSBODZUYTBUQPUSZUTZVUAVULVUKDZEZVUSVVIVU
+      OVURVVIVUNVVIVUBODZVUMUCDZVUNVIDZVUAVVJVVHVVFPZVVIAVULUYTAUCDZUYSVVHAVAZV
+      BVVIVULVVHVULUCDVUAVULVUBVCVDZVEVFZVUBVUMVGQZVHZVVIVVDVUQODVURODURVVIVUPV
+      VIVVEVVKVUPVIDZVVIBUYSUYTVVHVJZVKVVQBVUMVGQZVHZFVUQVLVMZVNZVOZVVIVVALNRVV
+      IVPZVVIVQVVIVULODZLODZVUIODZVVAVRZVVIVULVVPVKZVVIUOZVUAVWJVVHVUAVUHVIDZVU
+      HRDZVUHCULZVSJZCVIWCZEZVTZVWJVUAAVUBWAHZVIDZVXARDZVXAVWPVSJZCVIWCZEZVTZVW
+      TVUAVUBUCDZUYTVXGUYSVXHUYTFUCDUYSVXHWBFBWDWEZPZUYSUYTWFZAVUBCWGQVUAVXBVWN
+      VXFVWSVUAVXAVUHVIVUAAFWHKDZVUBWNDZVXAVUHWIUYTVXLUYSAWJVDZVUAVUBVXJWKZAVUB
+      WLQZWMVUAVXCVWOVXEVWRVUAVXAVUHRVXPWMVUAVXDVWQCVIVUAVXAVUHVWPVSVXPWOWPWQWR
+      WSZVUHCWTXEZPZVULLVUIXAXBZXCVVIVVAVUSVVBIJZVVAXDZVVIVYAVVAVUSLIJZVVIVYCVU
+      SLLXFHZSJZVVIVUSFVYDSVVIVUSVUNVURMHZFVWFVVIVUNVURVVIVUNVVIVXHVVKVUNWNDZUY
+      SVXHUYTVVHVXIXGZVVQVXHVXMVUMWNDZVYGVVKVUBYFVUMYFZVUBVUMXHXIQZXJZVVIVURVWD
+      VOZUUAFRDZVVIXKUPVVIVUOVUNVURVVIVUOVVSVOVYLVYMVVIVVLVUOVUNIJVVRVUNUUBXEUU
+      CVVIVYFVUNFVUPLMHZGHZMHZFSVVIVYPVURVUNVVIVYNVYORDZVYPRDXKVVIVUPRDZLRDZVYR
+      VVIVUPVVIUYSVVKVUPWNDZVWAVVQUYSBWNDVYIWUAVVKBYFZVYJBVUMXHXIQZXJZUURVUPLUU
+      DXLZFVYOXMVMVYMVYLVVIVYOVUQSJZVYPVURSJZVVIWUFVUPVUQLXFHSJZVVIVVTWUHVWBVUP
+      UUEXEVVIVUPLVUQWUDVWGVVIVUQVWCVOZUUFXNVVIVYRVUQRDZWUFWUGTZWUEWUIVYRWUJVYN
+      NFSJZEWUKVYNWULXKUUGXOVYOVUQFUUHUUIQWSUUJVVIVYQFVUPGHZWUMFMHZMHZFVVIVUNWU
+      MVYPWUNMVVIFBVUMVVIUUKZUYSBXPDUYTVVHBUULZXGVVIVUMVVQUUMZVVIVUMVVQUUNUUOVV
+      IFVUPWUPVVIVUPWUDXQUUPXRVVIWUMXPDFXPDWUOFWIVVIWUMVVIVYNVYSWUMRDXKWUDFVUPX
+      MVMXQUUSWUMFUUQXLUVIUUTUVAUVBUVCVVIVUSODVWIVYCVYETVWEUVDVUSLUVEXLXNVVAVVB
+      LVUSIVVALNUVFXSUVGVYBVUSNIJZVYAVVIVVIVYBVUBVUMSJZWUSVVIVYBVUMVUBIJZXDZWUT
+      VVIVVAWVAVVIVULVUIIJZLVULIJZWVCEZWVAVVAVVIWVDWVCVVIVULVVPUVHUVJVVIUYTVWHV
+      XHWVAWVCTVUAUYTVVHVXKPVVHVWHVUAVULLVUBXTVDVYHAVUBVULYAXBVVIVWHVWIVWJVVAWV
+      ETVWLVWMVXSVULLVUIUVKXBUVLUVMVVIVVJVUMODWUTWVBTVVMVVIVUMVVQVKVUBVUMUVNQUV
+      OVUAVVHWUTWUSVUAVVHWUTEEZVUSNNIWVFVUSNNMHNWVFVUONVURNMWVFVUONWIZNVUNIJZVU
+      NNLXFHZSJZVUAVVHWVHWUTVVIVUNVYKYBYCWVFVUNLWVISVUAVVHWUTVUNLSJZVVIWVKWUTVV
+      IWVKVUBVUMLGHZSJZWUTVVIVUBRDZVYTVUMRDZNVUMSJZWVKWVMTVUAWVNVVHVUAVUBVXJYDZ
+      PZVWGVVIVUMVVQYDZVVIVUMVVQUVPZVUBLVUMYGYEVVIWVLVUMVUBSVVIVUMWURUVQZXSYHUV
+      RYIYJYKWVFVVLNODZWVGWVHWVJETVUAVVHVVLWUTVVRYCYLVUNNYMXLYNWVFVURFNGHNWVFVU
+      QNFGWVFVUQNWIZNVUPIJZVUPWVISJZVUAVVHWWDWUTVVIVUPWUCYBYCWVFVUPLWVISVUAVVHW
+      UTVUPLSJZVVIWUTBVUMSJZWWFVVIBVUBSJZWUTWWGUYSWWHUYTVVHUYSBBBXFHVUBSUYSBBBU
+      VSZWUBUVTUYSBWUQUWAUWBXGVVIBRDZWVNWVOWWHWUTEWWGUWCUYSWWJUYTVVHWWIXGZWVRWV
+      SBVUBVUMUWDXBUWEVVIWWFBWVLSJZWWGVVIWWJVYTWVOWVPWWFWWLTWWKVWGWVSWVTBLVUMYG
+      YEVVIWVLVUMBSWWAXSYHUWJYIYJYKWVFVVTWWBWWCWWDWWEETVUAVVHVVTWUTVWBYCYLVUPNY
+      MXLYNUWFUWGYOXRUWHYOUWKUWIUWLUWMVYBNVVBVUSIVYBVVBNVVALNUWNYPXSUWOVVIVWKVV
+      AVYBVTVXTVVAUWPXEUWQUWRAUABUWSVUAVVCVUTUXAKZVUIVUAVUKUWTDVUTVUKUXBZUBULZV
+      UTDVRZUBVUKWCVVCWWMWIVVGVUAVUBVUIWHKDZWWNVUAWWQVUIVUBIJZVUAVUIVUHVUBVUAVU
+      IVXRVOVUAVUHVUAVUFVUGVUAVUBWVQVUALFVUBVUAVPZVYNVUAXKUPWVQLFSJVUAUXCUPVUAF
+      FLGHZVUBIUXDVUAVYTWWJVYNNFIJZEZLBIJZWWTVUBIJWWSUYSWWJUYTWWIPWXBVUAVYNWXAX
+      KUXKXOUPUYSWXCUYTBUXLPLBFUXEUXFUXGUXHYQVUAAVUAAUYTVVNUYSVVOVDZYDVUAVXLLAS
+      JVXNAUXIXEYQZUXJZXJWVQVUAVUIVUHIJZVUHVUILXFHSJZVUAVWTWXGWXHEVXQVUHCUXMXEU
+      XNVUAVUHVUBIJVUFVUBVUGGHZIJZVUAWXJVUFYRKZWXIYRKZIJZVUAVUBAVUBUGHZWXKWXLIV
+      UAVUBWXNWVQVUAWXNVUAAVUBWXDVUAVUBVXJVEZVFYDVUAVXLVUBYSDVUBWXNSJVXNWXOAVUB
+      UXOQUXPVUAVUBVXOUXQVUAWXNWXLVUAAWNDVVJWXNWXLWIVUAAWXDWKVUAVUBVXJVKZAVUBUX
+      RQYPYTVUAVUFRDWXIRDWXJWXMTVUAVUBVXOUXSZVUAVUBVUGWVQVUAVUGWXEXJUYAVUFWXIUX
+      TQXNVUAVUFVUBVUGWXQWVQWXEUYBXNUYCVUAVWJVVJWWQWWRTVXRWXPVUIVUBUYDQXNVUILVU
+      BUYJXEVUAWWPUBVUKVUAWWOVUKDZEZWWOODZVWIVWJWWPWXRWXTVUAWWOLVUBXTVDWXSUOVUA
+      VWJWXRVXRPWWOLVUIXAXBUYEUBVUTVUKUAUYFXBVUAVUIYSDZWWMVUIWIVUAVWJNVUIIJZWYA
+      VXRVUANVUHIJZWYBVUAVUHWXFYBVUAVWTWWBWYCWYBTVXQYLVUHNCUYGXLWSVUIUYHUYIVUIU
+      YKXEUYLYTVUAUYTVUDODVXHVUEVUJTVXKVUAVUDVUAAVUCVXKUYSVUCUCDZUYTUYSBYSDBNVU
+      BUKHDWYDBUYMBUYNBVUBUYOUYPPUYQUYRVXJAVUBVUDYAXBXN $.
   $}
 
 

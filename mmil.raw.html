@@ -8317,12 +8317,12 @@ proof is not intuitionistic and it is lightly used in set.mm.</TD>
 
 <TR>
   <TD>flcl , reflcl , flcld</TD>
-  <TD>~ flqcl , ~ flqcld</TD>
+  <TD>~ flqcl , ~ flapcl , ~ flqcld</TD>
 </TR>
 
 <TR>
   <TD>fllelt</TD>
-  <TD>~ flqlelt</TD>
+  <TD>~ flqlelt , ~ flaplelt</TD>
 </TR>
 
 <TR>
@@ -8347,7 +8347,7 @@ proof is not intuitionistic and it is lightly used in set.mm.</TD>
 
 <TR>
   <TD>flge</TD>
-  <TD>~ flqge</TD>
+  <TD>~ flqge , ~ flapge</TD>
 </TR>
 
 <TR>
@@ -17399,21 +17399,16 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>efexple</td>
-  <td><i>none</i></td>
-  <td>Would need analogues to ~ flqcl and ~ flqge but
-  for ratios of logarithms. The case we need for bposlem1
-  is where is ` A ` is a prime number and ` B ` is a
-  natural number. Presumably provable from ~ oddpwdc
-  (if generalized from 2 to an arbitrary prime) and
-  ~ logbgcd1irraplemap .</td>
+  <td>~ prmefexple</td>
+  <td>requires ` A ` to be a prime number and ` B ` to be a natural
+  number</td>
 </tr>
 
 <tr>
-  <td>bposlem1</td>
+  <td>bpos1</td>
   <td><i>none</i></td>
-  <td>it would seem to be possible to adapt the set.mm
-  proof if we have efexple and resolve the issues
-  described there around the floor function</td>
+  <td>the set.mm proof should work with small changes once
+  we have 83prm , 5prm , etc</td>
 </tr>
 
 <tr>
