@@ -147373,6 +147373,26 @@ $)
       TWAVEVJVQVIVTWAAVFVGQVH $.
   $}
 
+  ${
+    $d N q r $.
+    $( A nonnegative integer is a perfect square or not.  This is similar to
+       ~ nn0sqdc but expresses the idea of being a perfect square as having a
+       rational number which, when squared, gives the original number.
+       (Contributed by Jim Kingdon, 25-Aug-2026.) $)
+    nn0sqdcq $p |- ( N e. NN0 -> DECID E. q e. QQ N = ( q ^ 2 ) ) $=
+      ( vr cn0 wcel cv c2 cexp co wceq cq wrex wn wo wdc syl oveq1 cfv cz csqrt
+      nn0sqdc exmiddc wss wi nn0ssq ssrexv mp1i eqeq2d cbvrexv cabs cc0 cle wbr
+      wa simprr fveq2d cr qre absred eqtr4d qabscl eqeltrd nn0sqrtelqelz syldan
+      ad2antrl eqeltrrd recnd absge0d elnn0z absresq rspcedvdw rexlimdvaa con3d
+      sylanbrc biimtrid orim12d mpd df-dc sylibr ) ADEZABFZGHIZJZBKLZWDMZNZWDOV
+      TWCBDLZWGMZNZWFVTWGOWIABUAWGUBPVTWGWDWHWEDKUCWGWDUDVTUEWCBDKUFUGVTWDWGWDA
+      CFZGHIZJZCKLVTWGWCWLBCKWAWJJWBWKAWAWJGHQUHUIVTWLWGCKVTWJKEZWLUNZUNZWCAWJU
+      JRZGHIZJBWPDWAWPJWBWQAWAWPGHQUHWOWPSEUKWPULUMWPDEWOATRZWPSWOWRWKTRWPWOAWK
+      TVTWMWLUOZUPWOWJWMWJUQEZVTWLWJURVEZUSUTZVTWNWRKEWRSEWOWRWPKXBWMWPKEVTWLWJ
+      VAVEVBAVCVDVFWOWJWOWJXAVGVHWPVIVNWOAWKWQWSWOWTWQWKJXAWJVJPUTVKVLVOVMVPVQW
+      DVRVS $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
