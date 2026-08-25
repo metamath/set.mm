@@ -152627,8 +152627,7 @@ $)
     ${
       prmlem1a.x $e |- ( ( -. 2 || 5 /\ x e. ( ZZ>= ` 5 ) ) ->
         ( ( x e. ( Prime \ { 2 } ) /\ ( x ^ 2 ) <_ N ) -> -. x || N ) ) $.
-      $( A quick proof skeleton to show that the numbers less than 25 are
-         prime, by trial division.  (Contributed by Mario Carneiro,
+      $( Lemma for ~ prmlem1 and ~ prmlem2 .  (Contributed by Mario Carneiro,
          18-Feb-2014.) $)
       prmlem1a $p |- N e. Prime $=
         ( cprime wcel c2 cuz cfv wbr cdvds wn wi cn c1 mpbir2an c3 cv cexp wral
