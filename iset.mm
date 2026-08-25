@@ -147393,6 +147393,30 @@ $)
       DVRVS $.
   $}
 
+  ${
+    $d A q $.
+    $( The square root of a nonnegative integer is either rational or
+       irrational.  (Contributed by Jim Kingdon, 24-Aug-2026.) $)
+    sqrtrirr $p |- ( A e. NN0 -> ( ( sqrt ` A ) e. QQ \/
+        ( ( sqrt ` A ) e. RR /\ A. q e. QQ ( sqrt ` A ) =//= q ) ) ) $=
+      ( wcel c2 cexp co wceq cq wo csqrt cfv cr cap wbr wa cc0 cle wb ad3antrrr
+      ad3antlr cn0 cv wrex wral wdc nn0sqdcq exmiddc syl cabs simprr fveq2d qre
+      wn ad2antrl absred eqtr4d qabscl eqeltrd rexlimdvaa ralnex clt wne simplr
+      neqned cz nn0z zq qsqcl qapne syl2anc mpbird nn0re nn0ge0 resqrtth breq1d
+      resqrtcld sqrtge0d simpr sq11ap syl22anc mpbid ltletrd gtapd 0z qlelttric
+      0red ax-mp mpan ad2antlr mpjaodan ralimdva jctild biimtrrid orim12d mpd
+      ex ) AUACZABUBZDEFZGZBHUCZXAUMZIZAJKZHCZXDLCZXDWRMNZBHUDZOZIWQXAUEXCABUFX
+      AUGUHWQXAXEXBXIWQWTXEBHWQWRHCZWTOOZXDWRUIKZHXKXDWSJKXLXKAWSJWQXJWTUJUKXKW
+      RXJWRLCZWQWTWRULZUNUOUPXJXLHCWQWTWRUQUNURUSXBWTUMZBHUDZWQXIWTBHUTWQXPXHXF
+      WQXOXGBHWQXJOZXOXGXQXOOZPWRQNZXGWRPVANZXRXSOZXDDEFZWSMNZXGYAYCAWSMNZYAYDA
+      WSVBZYAAWSXQXOXSVCVDYAAHCZWSHCZYDYERWQYFXJXOXSWQAVECYFAVFAVGUHSXJYGWQXOXS
+      WRVHTAWSVIVJVKWQYCYDRXJXOXSWQYBAWSMWQALCPAQNYBAGAVLZAVMZAVNVJVOSVKYAXFPXD
+      QNZXMXSYCXGRWQXFXJXOXSWQAYHYIVPZSWQYJXJXOXSWQAYHYIVQZSXJXMWQXOXSXNTXRXSVR
+      XDWRVSVTWAXRXTOZWRXDXJXMWQXOXTXNTZWQXFXJXOXTYKSZYMWRPXDYNYMWFYOXRXTVRWQYJ
+      XJXOXTYLSWBWCXJXSXTIZWQXOPHCZXJYPPVECYQWDPVGWGPWRWEWHWIWJWPWKYKWLWMWNWO
+      $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
