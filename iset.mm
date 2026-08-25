@@ -152596,7 +152596,7 @@ $)
             ( ( x e. ( Prime \ { 2 } ) /\ ( x ^ 2 ) <_ N ) -> -. x || N ) ) $.
     prmlem0.2 $e |- ( K e. Prime -> -. K || N ) $.
     prmlem0.3 $e |- ( K + 2 ) = M $.
-    $( Lemma for ~ prmlem1 and ~ prmlem2 .  (Contributed by Mario Carneiro,
+    $( Lemma for ~ prmlem1a and ~ prmlem2 .  (Contributed by Mario Carneiro,
        18-Feb-2014.) $)
     prmlem0 $p |- ( ( -. 2 || K /\ x e. ( ZZ>= ` K ) ) ->
             ( ( x e. ( Prime \ { 2 } ) /\ ( x ^ 2 ) <_ N ) -> -. x || N ) ) $=
