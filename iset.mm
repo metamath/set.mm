@@ -117659,6 +117659,22 @@ $)
     BUHUIUJUL $.
 
   ${
+    $d N q $.
+    $( A nonnegative integer is a perfect square or not.  (Contributed by Jim
+       Kingdon, 25-Aug-2026.) $)
+    nn0sqdc $p |- ( N e. NN0 -> DECID E. q e. NN0 N = ( q ^ 2 ) ) $=
+      ( cn0 wcel cv c2 co cc0 wrex wdc 0zd nn0z cz wa syl wb simpr ad2antlr cle
+      wbr cexp wceq cfz elfzelz adantl zsqcl zdceq syl2an2r exfzdc wss fz0ssnn0
+      rexss ax-mp wi a1i idd ad2antrr nn0ge0 zzlesq breqtrrd jca 2thd pm5.21ndd
+      elfzd ex rexbidva bitrid dcbid mpbid ) ACDZABEZFUAGZUBZBHAUCGZIZJVMBCIZJV
+      JVMBHAVJKALZVJAMDZVKVNDZVLMDZVMJVQVJVSNVKMDZVTVSWAVJVKHAUDUEVKUFOAVLUGUHU
+      IVJVOVPVOVSVMNZBCIZVJVPVNCUJVOWCPAUKVMBVNCULUMVJWBVMBCVJVKCDZNZVMWBVMWBVM
+      UNWEVSVMQUOWEVMUPWEVMWBVMPWEVMNZWBVMWFVSVMWFVKHAWFKVJVRWDVMVQUQWDWAVJVMVK
+      LRZWDHVKSTVJVMVKURRWFVKVLASWFWAVKVLSTWGVKUSOWEVMQZUTVDWHVAWHVBVEVCVFVGVHV
+      I $.
+  $}
+
+  ${
     $d A k m p $.  $d A k m w $.  $d M m $.  $d N m w $.
     $( Special case of ~ ltexp2 which we use here because we haven't yet
        defined ~ df-rpcxp which is used in the current proof of ~ ltexp2 .
