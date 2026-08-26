@@ -127308,6 +127308,12 @@ $)
       ( cq wcel cabs cfv wceq cneg wo qabsor syl ) ABDEBFGZBHMBIHJCBKL $.
   $}
 
+  $( The absolute value of a rational number is a rational number.
+     (Contributed by Jim Kingdon, 25-Aug-2026.) $)
+  qabscl $p |- ( A e. QQ -> ( abs ` A ) e. QQ ) $=
+    ( cq wcel cabs cfv wceq cneg wa simpr eqeltrd qnegcl adantr qabsor mpjaodan
+    simpl ) ABCZADEZAFZQBCQAGZFZPRHQABPRIPROJPTHQSBPTIPSBCTAKLJAMN $.
+
   $( Absolute value of a real number.  (Contributed by NM, 17-Mar-2005.) $)
   absre $p |- ( A e. RR -> ( abs ` A ) = ( sqrt ` ( A ^ 2 ) ) ) $=
     ( cr wcel cabs cfv ccj cmul co csqrt c2 cexp cc wceq recn absval syl sqvald
