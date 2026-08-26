@@ -16221,6 +16221,7 @@ New usage of "dmadjrnb" is discouraged (2 uses).
 New usage of "dmadjss" is discouraged (1 uses).
 New usage of "dmcossOLD" is discouraged (0 uses).
 New usage of "dmcosseqOLD" is discouraged (0 uses).
+New usage of "dmctOLD" is discouraged (0 uses).
 New usage of "dmdbr" is discouraged (5 uses).
 New usage of "dmdbr2" is discouraged (3 uses).
 New usage of "dmdbr3" is discouraged (1 uses).
@@ -16703,6 +16704,7 @@ New usage of "fldcrngo" is discouraged (2 uses).
 New usage of "flddivrng" is discouraged (2 uses).
 New usage of "flddmn" is discouraged (0 uses).
 New usage of "fldhmsubcALTV" is discouraged (0 uses).
+New usage of "fnctOLD" is discouraged (0 uses).
 New usage of "fnexALT" is discouraged (0 uses).
 New usage of "fnrndomgOLD" is discouraged (0 uses).
 New usage of "fnsnbOLD" is discouraged (0 uses).
@@ -20092,6 +20094,7 @@ Proof modification of "djuexALT" is discouraged (51 steps).
 Proof modification of "dm0rn0OLD" is discouraged (121 steps).
 Proof modification of "dmcossOLD" is discouraged (89 steps).
 Proof modification of "dmcosseqOLD" is discouraged (196 steps).
+Proof modification of "dmctOLD" is discouraged (139 steps).
 Proof modification of "dmfexALT" is discouraged (25 steps).
 Proof modification of "dmncan1" is discouraged (305 steps).
 Proof modification of "dmncan2" is discouraged (130 steps).
@@ -20383,6 +20386,7 @@ Proof modification of "fldcrngo" is discouraged (65 steps).
 Proof modification of "flddivrng" is discouraged (14 steps).
 Proof modification of "flddmn" is discouraged (29 steps).
 Proof modification of "fldlring" is discouraged (55 steps).
+Proof modification of "fnctOLD" is discouraged (200 steps).
 Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "fnrndomgOLD" is discouraged (24 steps).
 Proof modification of "fnsnbOLD" is discouraged (110 steps).
