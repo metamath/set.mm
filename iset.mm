@@ -198257,13 +198257,22 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
+  $c ppi $.
   $c sigma $.
+
+  $( Extend class notation with the prime-counting function pi. $)
+  cppi $a class ppi $.
 
   $( Extend class notation with the divisor function. $)
   csgm $a class sigma $.
 
   ${
     $d x n k p $.
+    $( Define the prime &pi; function, which counts the number of primes less
+       than or equal to ` x ` , see definition in [ApostolNT] p. 8.
+       (Contributed by Mario Carneiro, 15-Sep-2014.) $)
+    df-ppi $a |- ppi = ( x e. RR |-> ( # ` ( ( 0 [,] x ) i^i Prime ) ) ) $.
+
     $( Define the sum of positive divisors function ` ( x sigma n ) ` , which
        is the sum of the xth powers of the positive integer divisors of n, see
        definition in [ApostolNT] p. 38.  For ` x = 0 ` , ` ( x sigma n ) `
@@ -212709,6 +212718,9 @@ htmldef "^c" as
     "<IMG SRC='subc.gif' WIDTH=6 HEIGHT=19 ALT='c' TITLE='c'> ";
   althtmldef "^c" as "&uarr;<SUB>&#x1D450;</SUB>";
   latexdef "^c" as "\uparrow_c";
+htmldef "ppi" as "<U>&pi;</U>";
+  althtmldef "ppi" as "<U>&pi;</U>";
+  latexdef "ppi" as "\pi";
 htmldef "sigma" as
     " <IMG SRC='sigma.gif' WIDTH=10 HEIGHT=19 ALT=' sigma' TITLE='sigma'> ";
   althtmldef "sigma" as " &sigma; ";
