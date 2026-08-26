@@ -198269,8 +198269,11 @@ $)
   ${
     $d x n k p $.
     $( Define the prime &pi; function, which counts the number of primes less
-       than or equal to ` x ` , see definition in [ApostolNT] p. 8.
-       (Contributed by Mario Carneiro, 15-Sep-2014.) $)
+       than or equal to ` x ` , see definition in [ApostolNT] p. 8.  Most often
+       ` x ` will be an integer, but many of our theorems support rational
+       numbers (for example at ~ ppiqsval ), and the definition would also work
+       for cases such as numbers known to be irrational.  (Contributed by Mario
+       Carneiro, 15-Sep-2014.) $)
     df-ppi $a |- ppi = ( x e. RR |-> ( # ` ( ( 0 [,] x ) i^i Prime ) ) ) $.
 
     $( Define the sum of positive divisors function ` ( x sigma n ) ` , which
@@ -198281,6 +198284,25 @@ $)
        Mario Carneiro, 22-Sep-2014.) $)
     df-sgm $a |- sigma = ( x e. CC , n e. NN |->
        sum_ k e. { p e. NN | p || n } ( k ^c x ) ) $.
+  $}
+
+  ${
+    $d k n p q s x y z A $.  $d p K $.  $d p x M $.  $d p N $.  $d s x S $.
+    $d k n p x y z B $.  $d p P $.
+    $( The set of primes less than ` A ` expressed using a finite set of
+       integers.  (Contributed by Mario Carneiro, 22-Sep-2014.) $)
+    ppiqsval $p |- ( A e. QQ ->
+      ( ( 0 [,] A ) i^i Prime ) = ( ( 2 ... ( |_ ` A ) ) i^i Prime ) ) $=
+      ( vx wcel cc0 cicc co cprime cin c2 cfv cuz syl cz cle wbr adantr sylancr
+      cr wb 0re cq cfl cfz cv wa simpr elin2d prmuz2 prmz w3a elin1d qre elicc2
+      flqcl mpbid simp3d flqge syldan eluz2 syl3anbrc elfzuzb sylanbrc elind ex
+      ssrdv wceq 2z fzval2 inss1 wss a1i 0le2 flqle iccss sstrid eqsstrd ssrind
+      syl22anc eqssd ) AUACZDAEFZGHZIAUBJZUCFZGHZVTBWBWEVTBUDZWBCZWFWECVTWGUEZW
+      DGWFWHWFIKJCZWCWFKJCZWFWDCWHWFGCZWIWHWAGWFVTWGUFZUGZWFUHLWHWFMCZWCMCZWFWC
+      NOZWJWHWKWNWMWFUILZVTWOWGAUNZPWHWFANOZWPWHWFRCZDWFNOZWSWHWFWACZWTXAWSUJZW
+      HWAGWFWLUKWHDRCZARCZXBXCSTVTXEWGAULZPDAWFUMQUOUPVTWGWNWSWPSWQAWFUQURUOWFW
+      CUSUTWFIWCVAVBWMVCVDVEVTWDWAGVTWDIWCEFZMHZWAVTIMCWOWDXHVFVGWRIWCVHQVTXHXG
+      WAXGMVIVTXDXEDINOZWCANOXGWAVJXDVTTVKXFXIVTVLVKAVMDAIWCVNVRVOVPVQVS $.
   $}
 
   ${
