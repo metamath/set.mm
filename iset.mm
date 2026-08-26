@@ -198527,7 +198527,7 @@ $)
     bpos.3 $e |- F = ( n e. NN |->
             if ( n e. Prime , ( n ^ ( n pCnt ( ( 2 x. N ) _C N ) ) ) , 1 ) ) $.
     bpos.4 $e |- K = ( |_ ` ( ( 2 x. N ) / 3 ) ) $.
-    $( Lemma for ~ bpos .  Since the binomial coefficient does not have any
+    $( Lemma for bpos .  Since the binomial coefficient does not have any
        primes in the range ` ( 2 N / 3 , N ] ` or ` ( 2 N , +oo ) ` by
        ~ bposlem2 and ~ prmfac1 , respectively, and it does not have any in the
        range ` ( N , 2 N ] ` by hypothesis, the product of the primes up
@@ -198576,7 +198576,7 @@ $)
 
     $d N q $.
     bpos.5 $e |- M = ( |_ ` ( sqrt ` ( 2 x. N ) ) ) $.
-    $( Lemma for ~ bpos .  (Contributed by Mario Carneiro, 13-Mar-2014.) $)
+    $( Lemma for bpos .  (Contributed by Mario Carneiro, 13-Mar-2014.) $)
     bposlem4 $p |- ( ph -> M e. ( 3 ... K ) ) $=
       ( co c3 wcel cle wbr cr c5 c9 vq c2 cmul csqrt cfv cfl cdiv cfz cuz cz cq
       cv cap wa wo cn0 cn 2nn 5nn eluznn sylancr nnmulcl nnnn0d sqrtrirr flapcl
