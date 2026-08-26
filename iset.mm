@@ -198303,6 +198303,17 @@ $)
       HWAGWFWLUKWHDRCZARCZXBXCSTVTXEWGAULZPDAWFUMQUOUPVTWGWNWSWPSWQAWFUQURUOWFW
       CUSUTWFIWCVAVBWMVCVDVEVTWDWAGVTWDIWCEFZMHZWAVTIMCWOWDXHVFVGWRIWCVHQVTXHXG
       WAXGMVIVTXDXEDINOZWCANOXGWAVJXDVTTVKXFXIVTVLVKAVMDAIWCVNVRVOVPVQVS $.
+
+    $( The set of primes less than ` A ` expressed using a finite set of
+       integers.  (Contributed by Mario Carneiro, 22-Sep-2014.) $)
+    ppiqsval2 $p |- ( ( A e. QQ /\ 2 e. ( ZZ>= ` M ) ) ->
+      ( ( 0 [,] A ) i^i Prime ) = ( ( M ... ( |_ ` A ) ) i^i Prime ) ) $=
+      ( vx cq wcel c2 cuz cfv wa cc0 cicc co cprime cin cfl cfz ppiqsval adantr
+      wceq syl wss fzss1 adantl ssrind elin bilani simprd prmuz2 simpld elfzuz3
+      cv elfzuzb sylanbrc elind eqelssd eqtrd ) ADEZFBGHEZIZJAKLMNZFAOHZPLZMNZB
+      VAPLZMNZUQUTVCSURAQRUSCVCVEUSVBVDMURVBVDUAUQFBVAUBUCUDUSCUKZVEEZIZVBMVFVH
+      VFFGHEZVAVFGHEZVFVBEVHVFMEZVIVHVFVDEZVKVGVLVKIUSVFVDMUEUFZUGZVFUHTVHVLVJV
+      HVLVKVMUIVFBVAUJTVFFVAULUMVNUNUOUP $.
   $}
 
   ${
