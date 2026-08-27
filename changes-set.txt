@@ -133,7 +133,7 @@ Date      Old         New         Notes
 13-Aug-26 rngopidOLD  mgmidprnd   Moved from JM's mathbox to main set.mm
 13-Aug-26 opidon2OLD  mgmfod      Moved from JM's mathbox to main set.mm
 13-Aug-26 exidu1      mgmideud    Moved from JM's mathbox to main set.mm
-13-Aug-26 idrval      grpidval    Moved from JM's mathbox to main set.mm
+13-Aug-26 idrval      idvalriota  Moved from JM's mathbox to main set.mm
 13-Aug-26 iorlid      mgmidcl     Moved from JM's mathbox to main set.mm
 13-Aug-26 cmpidelt    mgmlrid     Moved from JM's mathbox to main set.mm
 13-Aug-26 df-sgrOLD   df-sgrp     Moved from JM's mathbox to main set.mm
@@ -163,7 +163,7 @@ Date      Old         New         Notes
 13-Aug-26 ghomco      ghmco       Moved from JM's mathbox to main set.mm
 13-Aug-26 ghomdiv     ghmsub      Moved from JM's mathbox to main set.mm
 13-Aug-26 grpokerinj  kerf1ghm    Moved from JM's mathbox to main set.mm
-13-Aug-26 df-rngo     df-ring     Moved from JM's mathbox to main set.mm
+13-Aug-26 df-rngo     dfring3     Moved from JM's mathbox to main set.mm
 13-Aug-26 isrngo      dfring2     Moved from JM's mathbox to main set.mm
 13-Aug-26 isrngod     isringd     Moved from JM's mathbox to main set.mm
 13-Aug-26 rngoi       ringprops   Moved from JM's mathbox to main set.mm
@@ -177,7 +177,7 @@ Date      Old         New         Notes
 13-Aug-26 rngoablo    ringabl     Moved from JM's mathbox to main set.mm
 13-Aug-26 rngoablo2   ringabl     Moved from JM's mathbox to main set.mm
 13-Aug-26 rngogrpo    ringgrp     Moved from JM's mathbox to main set.mm
-13-Aug-26 rngone0     ringidcl    Moved from JM's mathbox to main set.mm
+13-Aug-26 rngone0     ringbn0     Moved from JM's mathbox to main set.mm
 13-Aug-26 rngogcl     ringacl     Moved from JM's mathbox to main set.mm
 13-Aug-26 rngocom     ringcom     Moved from JM's mathbox to main set.mm
 13-Aug-26 rngo0cl     ring0cl     Moved from JM's mathbox to main set.mm
@@ -201,7 +201,7 @@ Date      Old         New         Notes
 13-Aug-26 zerdivemp1x ringinvnzdiv Moved from JM's mathbox to main set.mm
 13-Aug-26 df-drngo    df-drng     Moved from JM's mathbox to main set.mm
 13-Aug-26 isdivrngo   isdrng2     Moved from JM's mathbox to main set.mm
-13-Aug-26 drngoi      drngring    Moved from JM's mathbox to main set.mm
+13-Aug-26 drngoi      drngprops   Moved from JM's mathbox to main set.mm
 13-Aug-26 gidsn       mnd1id      Moved from JM's mathbox to main set.mm
 13-Aug-26 zrdivrng    zrdrng      Moved from JM's mathbox to main set.mm
 13-Aug-26 dvrunz      drngunz     Moved from JM's mathbox to main set.mm
