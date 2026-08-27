@@ -14424,6 +14424,7 @@ New usage of "4atex2-0aOLDN" is discouraged (1 uses).
 New usage of "4atex2-0bOLDN" is discouraged (0 uses).
 New usage of "4atex2-0cOLDN" is discouraged (0 uses).
 New usage of "4ipval2" is discouraged (2 uses).
+New usage of "4p4e8ALT" is discouraged (0 uses).
 New usage of "4syl" is discouraged (303 uses).
 New usage of "5oai" is discouraged (0 uses).
 New usage of "5oalem1" is discouraged (1 uses).
@@ -15800,6 +15801,7 @@ New usage of "cnvbraval" is discouraged (1 uses).
 New usage of "cnvcnvssOLD" is discouraged (0 uses).
 New usage of "cnvfiALT" is discouraged (0 uses).
 New usage of "cnvunop" is discouraged (2 uses).
+New usage of "cnvxpOLD" is discouraged (0 uses).
 New usage of "coecjOLD" is discouraged (0 uses).
 New usage of "com3rgbi" is discouraged (1 uses).
 New usage of "con3ALT" is discouraged (0 uses).
@@ -16221,6 +16223,7 @@ New usage of "dmadjrnb" is discouraged (2 uses).
 New usage of "dmadjss" is discouraged (1 uses).
 New usage of "dmcossOLD" is discouraged (0 uses).
 New usage of "dmcosseqOLD" is discouraged (0 uses).
+New usage of "dmctOLD" is discouraged (0 uses).
 New usage of "dmdbr" is discouraged (5 uses).
 New usage of "dmdbr2" is discouraged (3 uses).
 New usage of "dmdbr3" is discouraged (1 uses).
@@ -16703,6 +16706,7 @@ New usage of "fldcrngo" is discouraged (2 uses).
 New usage of "flddivrng" is discouraged (2 uses).
 New usage of "flddmn" is discouraged (0 uses).
 New usage of "fldhmsubcALTV" is discouraged (0 uses).
+New usage of "fnctOLD" is discouraged (0 uses).
 New usage of "fnexALT" is discouraged (0 uses).
 New usage of "fnrndomgOLD" is discouraged (0 uses).
 New usage of "fnsnbOLD" is discouraged (0 uses).
@@ -19570,6 +19574,7 @@ Proof modification of "3orel2OLD" is discouraged (32 steps).
 Proof modification of "3ornot23" is discouraged (28 steps).
 Proof modification of "3ornot23VD" is discouraged (74 steps).
 Proof modification of "4anpull2OLD" is discouraged (55 steps).
+Proof modification of "4p4e8ALT" is discouraged (47 steps).
 Proof modification of "9p10ne21fool" is discouraged (33 steps).
 Proof modification of "9t11e99OLD" is discouraged (95 steps).
 Proof modification of "a1ii" is discouraged (1 steps).
@@ -20016,6 +20021,7 @@ Proof modification of "cnncvsmulassdemo" is discouraged (95 steps).
 Proof modification of "cnv0OLD" is discouraged (59 steps).
 Proof modification of "cnvcnvssOLD" is discouraged (15 steps).
 Proof modification of "cnvfiALT" is discouraged (46 steps).
+Proof modification of "cnvxpOLD" is discouraged (59 steps).
 Proof modification of "coecjOLD" is discouraged (263 steps).
 Proof modification of "com3rgbi" is discouraged (35 steps).
 Proof modification of "con3ALT" is discouraged (54 steps).
@@ -20092,6 +20098,7 @@ Proof modification of "djuexALT" is discouraged (51 steps).
 Proof modification of "dm0rn0OLD" is discouraged (121 steps).
 Proof modification of "dmcossOLD" is discouraged (89 steps).
 Proof modification of "dmcosseqOLD" is discouraged (196 steps).
+Proof modification of "dmctOLD" is discouraged (139 steps).
 Proof modification of "dmfexALT" is discouraged (25 steps).
 Proof modification of "dmncan1" is discouraged (305 steps).
 Proof modification of "dmncan2" is discouraged (130 steps).
@@ -20383,6 +20390,7 @@ Proof modification of "fldcrngo" is discouraged (65 steps).
 Proof modification of "flddivrng" is discouraged (14 steps).
 Proof modification of "flddmn" is discouraged (29 steps).
 Proof modification of "fldlring" is discouraged (55 steps).
+Proof modification of "fnctOLD" is discouraged (200 steps).
 Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "fnrndomgOLD" is discouraged (24 steps).
 Proof modification of "fnsnbOLD" is discouraged (110 steps).
