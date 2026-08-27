@@ -198354,6 +198354,15 @@ $)
       syl cfl eqtrd ppiqsval flid oveq2d ineq1d fveq2d ) ABCZADEZFAGHIJZKEZLAMH
       ZIJZKEUFANCZUGUIOAPZAQRUFUHUKKUFUHLASEZMHZIJZUKUFULUHUPOUMAUARUFUOUJIUFUN
       ALMAUBUCUDTUET $.
+
+    $( Value of the prime-counting function pi.  (Contributed by Mario
+       Carneiro, 22-Sep-2014.) $)
+    ppival2g $p |- ( ( A e. ZZ /\ 2 e. ( ZZ>= ` M ) ) ->
+      ( ppi ` A ) = ( # ` ( ( M ... A ) i^i Prime ) ) ) $=
+      ( cz wcel c2 cuz cfv wa cppi cc0 cicc co cprime cin chash cfz wceq adantr
+      cq eqtrd zq ppiqval syl cfl ppiqsval2 sylan flid oveq2d ineq1d fveq2d ) A
+      CDZEBFGDZHZAIGZJAKLMNZOGZBAPLZMNZOGUMASDZUNUPQUKUSULAUAZRAUBUCUMUOUROUMUO
+      BAUDGZPLZMNZURUKUSULUOVCQUTABUEUFUKVCURQULUKVBUQMUKVAABPAUGUHUIRTUJT $.
   $}
 
   ${
