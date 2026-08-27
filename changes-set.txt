@@ -92,6 +92,18 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+27-Aug-26 fmpodg      [same]      Moved from ZW's mathbox to main set.mm
+27-Aug-26 fmpod       [same]      Moved from ZW's mathbox to main set.mm
+27-Aug-26 cureq       [same]      Moved from BL's mathbox to main set.mm
+27-Aug-26 curf        [same]      Moved from BL's mathbox to main set.mm
+27-Aug-26 uncf        [same]      Moved from BL's mathbox to main set.mm
+27-Aug-26 curfv       [same]      Moved from BL's mathbox to main set.mm
+27-Aug-26 uncov       [same]      Moved from BL's mathbox to main set.mm
+27-Aug-26 lindsdom    [same]      Moved from BL's mathbox to main set.mm
+27-Aug-26 lindsenlbs  [same]      Moved from BL's mathbox to main set.mm
+27-Aug-26 matunitlindflem1 [same] Moved from BL's mathbox to main set.mm
+27-Aug-26 matunitlindflem2 [same] Moved from BL's mathbox to main set.mm
+27-Aug-26 matunitlindf [same]     Moved from BL's mathbox to main set.mm
 19-Aug-26 abrexct     [same]      Moved from TA's mathbox to main set.mm
 19-Aug-26 0nn0m1nnn0  [same]      Moved from BTT's mathbox to main set.mm
 19-Aug-26 lfuhgr      [same]      Moved from BTT's mathbox to main set.mm
