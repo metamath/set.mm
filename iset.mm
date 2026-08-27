@@ -198337,6 +198337,14 @@ $)
       OULVEBMDUBUCABUDUEVBVICVCVBVGVCEZTZVGMEZVGAKLZTZPVIVMVNVOVMVGDEZVNPVLVQVB
       VGAUFZUGVGUHUIVLVQAUJEVOPVBVRVJVGAUKUMUNVHVPVEVOBVGMVDVGAKUOUPUQURUSCVCVF
       UTVA $.
+
+    $( Value of the prime-counting function pi.  (Contributed by Mario
+       Carneiro, 15-Sep-2014.) $)
+    ppiqval $p |- ( A e. QQ ->
+      ( ppi ` A ) = ( # ` ( ( 0 [,] A ) i^i Prime ) ) ) $=
+      ( vx cq wcel cc0 cv cicc co cprime cin chash cfv cr cppi cn0 df-ppi oveq2
+      wceq ineq1d fveq2d qre cfn ppiqfi hashcl syl fvmptd3 ) ACDZBAEBFZGHZIJZKL
+      EAGHZIJZKLZMNOBPUHARZUJULKUNUIUKIUHAEGQSTAUAUGULUBDUMODAUCULUDUEUF $.
   $}
 
   ${
