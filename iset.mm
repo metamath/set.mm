@@ -198326,6 +198326,17 @@ $)
       VOVMVRVODZOZWCVRGDZOZKVTWDWCWEWDVRLDZWAVNLDZWCKWCWGVMVRIVNUIZPWAWDMNVMWHW
       CWBUJVRIVNUKQWDVRUNDZWEKWCWJVMWCWGEVRRTWJWIWCEIVRWCUOIVEDWCUPNWCVRWIUQEIR
       TWCURNVRIVNUSUTVRVAVBPVRVCVFVDVSWFVRVOGVGVHVIVJBVOVPVKQVL $.
+
+    $( The set of prime divisors of a number is a finite set.  (Contributed by
+       Mario Carneiro, 7-Apr-2016.) $)
+    prmdvdsfi $p |- ( A e. NN -> { p e. Prime | p || A } e. Fin ) $=
+      ( vx cn wcel c1 cfz co cfn cv cdvds wbr cprime crab wss wdc wral 1zzd nnz
+      wa fzfigd rabss2 ax-mp dvdsssfz1 sstrid elfznn adantl prmdc syl cz dvdsdc
+      prmssnn syl2anr dcand breq1 elrab dcbii sylibr ralrimiva ssfidc syl3anc )
+      ADEZFAGHZIEBJZAKLZBMNZVCOCJZVFEZPZCVCQVFIEVBFAVBRASZUAVBVFVEBDNZVCMDOVFVK
+      OULVEBMDUBUCABUDUEVBVICVCVBVGVCEZTZVGMEZVGAKLZTZPVIVMVNVOVMVGDEZVNPVLVQVB
+      VGAUFZUGVGUHUIVLVQAUJEVOPVBVRVJVGAUKUMUNVHVPVEVOBVGMVDVGAKUOUPUQURUSCVCVF
+      UTVA $.
   $}
 
   ${
