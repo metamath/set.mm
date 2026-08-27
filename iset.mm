@@ -198314,6 +198314,18 @@ $)
       VAPLZMNZUQUTVCSURAQRUSCVCVEUSVBVDMURVBVDUAUQFBVAUBUCUDUSCUKZVEEZIZVBMVFVH
       VFFGHEZVAVFGHEZVFVBEVHVFMEZVIVHVFVDEZVKVGVLVKIUSVFVDMUEUFZUGZVFUHTVHVLVJV
       HVLVKVMUIVFBVAUJTVFFVAULUMVNUNUOUP $.
+
+    $( The set of primes less than ` A ` is a finite set.  (Contributed by
+       Mario Carneiro, 15-Sep-2014.) $)
+    ppiqfi $p |- ( A e. QQ -> ( ( 0 [,] A ) i^i Prime ) e. Fin ) $=
+      ( vx cq wcel cc0 co cprime cin c2 cfn wdc cz 2z a1i wa adantl syl3anc clt
+      cicc wbr cfl cfv cfz ppiqsval wss wral flqcl fzfigd elfzelz adantr fzdcel
+      cv inss1 cn 0red 2re zred 2pos elfzle1 ltletrd elnnz sylanbrc prmdc dcand
+      cr syl elin dcbii sylibr ralrimiva ssfidc eqeltrd ) ACDZEASFGHIAUAUBZUCFZ
+      GHZJAUDVMVOJDVPVOUEZBULZVPDZKZBVOUFVPJDVMIVNILDZVMMNAUGZUHVQVMVOGUMNVMVTB
+      VOVMVRVODZOZWCVRGDZOZKVTWDWCWEWDVRLDZWAVNLDZWCKWCWGVMVRIVNUIZPWAWDMNVMWHW
+      CWBUJVRIVNUKQWDVRUNDZWEKWCWJVMWCWGEVRRTWJWIWCEIVRWCUOIVEDWCUPNWCVRWIUQEIR
+      TWCURNVRIVNUSUTVRVAVBPVRVCVFVDVSWFVRVOGVGVHVIVJBVOVPVKQVL $.
   $}
 
   ${
