@@ -198363,6 +198363,12 @@ $)
       cq eqtrd zq ppiqval syl cfl ppiqsval2 sylan flid oveq2d ineq1d fveq2d ) A
       CDZEBFGDZHZAIGZJAKLMNZOGZBAPLZMNZOGUMASDZUNUPQUKUSULAUAZRAUBUCUMUOUROUMUO
       BAUDGZPLZMNZURUKUSULUOVCQUTABUEUFUKVCURQULUKVBUQMUKVAABPAUGUHUIRTUJT $.
+
+    $( Rational closure of the prime-counting function pi.  (Contributed by
+       Mario Carneiro, 15-Sep-2014.) $)
+    ppiqcl $p |- ( A e. QQ -> ( ppi ` A ) e. NN0 ) $=
+      ( cq wcel cppi cfv cc0 cicc co cprime cin chash cn0 ppiqval ppiqfi hashcl
+      cfn syl eqeltrd ) ABCZADEFAGHIJZKEZLAMSTPCUALCANTOQR $.
   $}
 
   ${
