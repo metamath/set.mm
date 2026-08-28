@@ -198566,6 +198566,21 @@ $)
     FUGGUHTUIUJTT $.
 
   ${
+    ppi1i.m $e |- M e. NN0 $.
+    ppi1i.n $e |- N = ( M + 1 ) $.
+    ppi1i.p $e |- ( ppi ` M ) = K $.
+    ${
+      ppi1i.1 $e |- N e. Prime $.
+      $( Inference form of ~ ppiprm .  (Contributed by Mario Carneiro,
+         21-Sep-2014.) $)
+      ppi1i $p |- ( ppi ` N ) = ( K + 1 ) $=
+        ( cppi cfv c1 caddc co fveq2i cz wcel cprime wceq nn0zi eqeltrri ppiprm
+        mp2an oveq1i 3eqtri ) CHIBJKLZHIZBHIZJKLZAJKLCUDHEMBNOUDPOUEUGQBDRCUDPE
+        GSBTUAUFAJKFUBUC $.
+    $}
+  $}
+
+  ${
     $d m n x A $.  $d m n x P $.
     dvdsppwf1o.f $e |- F = ( n e. ( 0 ... A ) |-> ( P ^ n ) ) $.
     $( A bijection between the divisors of a prime power and the integers less
