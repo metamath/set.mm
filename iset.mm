@@ -198506,6 +198506,18 @@ $)
     WEVIRSTQUIUJVQVJKCVSUMVSVTUNVIUOVJUPVSUQURUSSVHVNDEZIEZVKVOVHWIVJIVHWFWIVJU
     TOAFVDVAVBVHVNBCZWJVOUTVHWDWKWGAFPVAVNVCSVEVHVLVPFGAVCVFVG $.
 
+  $( The prime-counting function ` ppi ` is weakly increasing.  (Contributed by
+     Mario Carneiro, 19-Sep-2014.) $)
+  ppiqwordi $p |- ( ( A e. QQ /\ B e. QQ /\ A <_ B ) ->
+    ( ppi ` A ) <_ ( ppi ` B ) ) $=
+    ( cq wcel cle wbr cc0 cicc co cprime cin chash cfv cppi cfn ppiqfi 3ad2ant2
+    wss cr 3ad2ant1 w3a cdom 0red qre 0le0 a1i simp3 iccss syl22anc ssrind sylc
+    ssdomg wb fihashdom syl2anc mpbird wceq ppiqval 3brtr4d ) ACDZBCDZABEFZUAZG
+    AHIZJKZLMZGBHIZJKZLMZANMZBNMZEVCVFVIEFZVEVHUBFZVCVHODZVEVHRVMVAUTVNVBBPQZVC
+    VDVGJVCGSDBSDZGGEFZVBVDVGRVCUCVAUTVPVBBUDQVQVCUEUFUTVAVBUGGBGAUHUIUJVEVHOUL
+    UKVCVEODZVNVLVMUMUTVAVRVBAPTVOVEVHUNUOUPUTVAVJVFUQVBAURTVAUTVKVIUQVBBURQUS
+    $.
+
   ${
     $d m n x A $.  $d m n x P $.
     dvdsppwf1o.f $e |- F = ( n e. ( 0 ... A ) |-> ( P ^ n ) ) $.
