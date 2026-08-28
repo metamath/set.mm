@@ -198478,6 +198478,13 @@ $)
       AWIRWK $.
   $}
 
+  $( The prime-counting function ` ppi ` does not change off the integers.
+     (Contributed by Mario Carneiro, 18-Sep-2014.) $)
+  ppiqfl $p |- ( A e. QQ -> ( ppi ` ( |_ ` A ) ) = ( ppi ` A ) ) $=
+    ( cq wcel cc0 cicc co cprime cin chash cfv c2 cfl cfz cppi ppiqsval ppiqval
+    fveq2d cz wceq flqcl ppival2 syl 3eqtr4rd ) ABCZDAEFGHZIJKALJZMFGHZIJZANJUF
+    NJZUDUEUGIAOQAPUDUFRCUIUHSATUFUAUBUC $.
+
   ${
     $d m n x A $.  $d m n x P $.
     dvdsppwf1o.f $e |- F = ( n e. ( 0 ... A ) |-> ( P ^ n ) ) $.
