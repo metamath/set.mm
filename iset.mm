@@ -198602,6 +198602,13 @@ $)
     ( c3 cppi cfv c1 caddc co c2 2nn0 df-3 ppi2 3prm ppi1i df-2 eqtr4i ) ABCDDE
     FGDGAHIJKLMN $.
 
+  $( Closure of the prime-counting function ` ppi ` in the positive integers.
+     (Contributed by Mario Carneiro, 21-Sep-2014.) $)
+  ppiqnncl $p |- ( ( A e. QQ /\ 2 <_ A ) -> ( ppi ` A ) e. NN ) $=
+    ( cq wcel c2 cle wbr wa cppi cfv cz c1 cn ppiqcl adantr nn0zd ppi2 2z ax-mp
+    cn0 zq ppiqwordi mp3an1 eqbrtrrid elnnz1 sylanbrc ) ABCZDAEFZGZAHIZJCKUIEFU
+    ILCUHUIUFUISCUGAMNOUHKDHIZUIEPDBCZUFUGUJUIEFDJCUKQDTRDAUAUBUCUIUDUE $.
+
   ${
     $d m n x A $.  $d m n x P $.
     dvdsppwf1o.f $e |- F = ( n e. ( 0 ... A ) |-> ( P ^ n ) ) $.
