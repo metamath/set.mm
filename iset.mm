@@ -198609,6 +198609,20 @@ $)
     cn0 zq ppiqwordi mp3an1 eqbrtrrid elnnz1 sylanbrc ) ABCZDAEFZGZAHIZJCKUIEFU
     ILCUHUIUFUISCUGAMNOUHKDHIZUIEPDBCZUFUGUJUIEFDJCUKQDTRDAUAUBUCUIUDUE $.
 
+  $( The prime-counting function ` ppi ` is zero iff its argument is less than
+     ` 2 ` .  (Contributed by Mario Carneiro, 22-Sep-2014.) $)
+  ppiqeq0 $p |- ( A e. QQ -> ( ( ppi ` A ) = 0 <-> A < 2 ) ) $=
+    ( cq wcel cppi cfv cc0 wceq c2 clt wbr wn wi cz 2z zq ax-mp cle wb adantr
+    c1 wdc qdclt mpan2 wne cr 2re qre lenlt sylancr wa ppiqnncl nnne0d ex df-ne
+    sylbird imbitrdi condc sylc cfl flqcl syl 1z a1i caddc co flqlt biimpa df-2
+    breqtrdi zleltp1 sylancl mpbird ppiqwordi syl3anc ppiqfl 3brtr3d cn0 ppiqcl
+    ppi1 nn0le0eq0 mpbid impbid ) ABCZADEZFGZAHIJZWCWFUAZWFKZWEKZLWEWFLWCHBCZWG
+    HMCZWJNHOPAHUBUCWCWHWDFUDZWIWCWHHAQJZWLWCHUECAUECWMWHRUFAUGHAUHUIWCWMWLWCWM
+    UJWDAUKULUMUOWDFUNUPWFWEUQURWCWFWEWCWFUJZWDFQJZWEWNAUSEZDEZTDEZWDFQWNWPBCZT
+    BCZWPTQJZWQWRQJWCWSWFWCWPMCZWSAUTZWPOVASWTWNTMCZWTVBTOPVCWNXAWPTTVDVEZIJZWN
+    WPHXEIWCWFWPHIJZWCWKWFXGRNAHVFUCVGVHVIWNXBXDXAXFRWCXBWFXCSVBWPTVJVKVLWPTVMV
+    NWCWQWDGWFAVOSWRFGWNVSVCVPWNWDVQCZWOWERWCXHWFAVRSWDVTVAWAUMWB $.
+
   ${
     $d m n x A $.  $d m n x P $.
     dvdsppwf1o.f $e |- F = ( n e. ( 0 ... A ) |-> ( P ^ n ) ) $.
