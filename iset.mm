@@ -198578,6 +198578,16 @@ $)
         mp2an oveq1i 3eqtri ) CHIBJKLZHIZBHIZJKLZAJKLCUDHEMBNOUDPOUEUGQBDRCUDPE
         GSBTUAUFAJKFUBUC $.
     $}
+
+    ${
+      ppi2i.1 $e |- -. N e. Prime $.
+      $( Inference form of ~ ppinprm .  (Contributed by Mario Carneiro,
+         21-Sep-2014.) $)
+      ppi2i $p |- ( ppi ` N ) = K $=
+        ( cppi cfv c1 caddc co fveq2i cz wcel cprime wn wceq nn0zi eleq1i mp2an
+        mtbi ppinprm 3eqtri ) CHIBJKLZHIZBHIZACUEHEMBNOUEPOZQUFUGRBDSCPOUHGCUEP
+        ETUBBUCUAFUD $.
+    $}
   $}
 
   ${
