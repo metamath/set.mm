@@ -128980,6 +128980,15 @@ $)
     UHGDUFAJZBJZABKLUGMUHHRZMAHRZMBHRZEZUEUNUFUOANBNOUGMGDUIUJUMUPPUGSUEUIUFUKQ
     UFUJUEULTMABUAUBUCUD $.
 
+  $( The minumum of two integers is an integer.  (Contributed by Jim Kingdon,
+     27-Aug-2026.) $)
+  zmincl $p |- ( ( A e. ZZ /\ B e. ZZ )
+      -> inf ( { A , B } , RR , < ) e. ZZ ) $=
+    ( cz wcel wa cpr cr clt cinf simpr simpll eqeltrd simplr wo cle wbr zletric
+    wceq wb zre minclpr syl2an mpbird elpri syl mpjaodan ) ACDZBCDZEZABFZGHIZAR
+    ZUKCDUKBRZUIULEUKACUIULJUGUHULKLUIUMEUKBCUIUMJUGUHUMMLUIUKUJDZULUMNUIUNABOP
+    BAOPNZABQUGAGDBGDUNUOSUHATBTABUAUBUCUKABUDUEUF $.
+
   $( Lemma for ~ bdtri .  (Contributed by Steven Nguyen and Jim Kingdon,
      17-May-2023.) $)
   bdtrilem $p |- ( ( ( A e. RR /\ 0 <_ A ) /\ ( B e. RR /\ 0 <_ B )
