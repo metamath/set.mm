@@ -198494,6 +198494,18 @@ $)
     fveq2d cz wceq flqcl ppival2 syl 3eqtr4rd ) ABCZDAEFGHZIJKALJZMFGHZIJZANJUF
     NJZUDUEUGIAOQAPUDUFRCUIUHSATUFUAUBUC $.
 
+  $( The prime-counting function ` ppi ` cannot locally increase faster than
+     the identity function.  (Contributed by Mario Carneiro, 21-Sep-2014.) $)
+  ppiqp1le $p |- ( A e. QQ -> ( ppi ` ( A + 1 ) ) <_ ( ( ppi ` A ) + 1 ) ) $=
+    ( cq wcel cfl cfv c1 caddc co cppi cle cz wa cn0 zq 1z qaddcl adantr ppiqcl
+    syl nn0red flqcl cprime wn ax-mp sylancl ppiprm eqled ppinprm lep1d eqbrtrd
+    wbr cr wdc wo peano2z prmdcz exmiddc 3syl mpjaodan wceq mpan2 fveq2d ppiqfl
+    flqaddz eqtr3d oveq1d 3brtr3d ) ABCZADEZFGHZIEZVIIEZFGHZAFGHZIEZAIEZFGHJVHV
+    IKCZVKVMJUKZAUAVQVJUBCZVRVSUCZVQVSLZVKVMWAVKWAVJBCZVKMCVQWBVSVQVIBCZFBCZWBV
+    INZFKCZWDOFNUDZVIFPUEQVJRSTVIUFUGVQVTLZVKVLVMJVIUHWHVLVQVLULCVTVQVLVQWCVLMC
+    WEVIRSTQUIUJVQVJKCVSUMVSVTUNVIUOVJUPVSUQURUSSVHVNDEZIEZVKVOVHWIVJIVHWFWIVJU
+    TOAFVDVAVBVHVNBCZWJVOUTVHWDWKWGAFPVAVNVCSVEVHVLVPFGAVCVFVG $.
+
   ${
     $d m n x A $.  $d m n x P $.
     dvdsppwf1o.f $e |- F = ( n e. ( 0 ... A ) |-> ( P ^ n ) ) $.
