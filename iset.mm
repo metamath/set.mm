@@ -198557,6 +198557,14 @@ $)
       XBEUUPXLXCOXDXGXQXGUUBXQXBEUVEXPXCOXDXEXF $.
   $}
 
+  $( The prime-counting function ` ppi ` at ` 1 ` .  (Contributed by Mario
+     Carneiro, 21-Sep-2014.) $)
+  ppi1 $p |- ( ppi ` 1 ) = 0 $=
+    ( c1 cppi cfv c2 cfz co cprime cin chash cc0 cz wcel wceq ppival2 ax-mp clt
+    1z c0 wbr eqtri 1lt2 wb 2z fzn mp2an mpbi ineq1i 0in fveq2i hash0 ) ABCZDAE
+    FZGHZICZJAKLZUKUNMQANOUNRICJUMRIUMRGHRULRGADPSZULRMZUADKLUOUPUQUBUCQDAUDUEU
+    FUGGUHTUIUJTT $.
+
   ${
     $d m n x A $.  $d m n x P $.
     dvdsppwf1o.f $e |- F = ( n e. ( 0 ... A ) |-> ( P ^ n ) ) $.
