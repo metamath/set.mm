@@ -89945,6 +89945,15 @@ $)
     EIJK $.
 
   ${
+    eqled.1 $e |- ( ph -> A e. RR ) $.
+    eqled.2 $e |- ( ph -> A = B ) $.
+    $( Equality implies 'less than or equal to'.  (Contributed by Glauco
+       Siliprandi, 11-Dec-2019.) $)
+    eqled $p |- ( ph -> A <_ B ) $=
+      ( cr wcel wceq cle wbr eqle syl2anc ) ABFGBCHBCIJDEBCKL $.
+  $}
+
+  ${
     lt.1 $e |- A e. RR $.
     $( 'Less than' is irreflexive.  (Contributed by NM, 18-Aug-1999.) $)
     ltnri $p |- -. A < A $=
