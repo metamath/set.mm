@@ -198590,6 +198590,12 @@ $)
     $}
   $}
 
+  $( The prime-counting function ` ppi ` at ` 2 ` .  (Contributed by Mario
+     Carneiro, 21-Sep-2014.) $)
+  ppi2 $p |- ( ppi ` 2 ) = 1 $=
+    ( c2 cppi cfv cc0 c1 caddc co 1nn0 df-2 ppi1 2prm ppi1i 1e0p1 eqtr4i ) ABCD
+    EFGEDEAHIJKLMN $.
+
   ${
     $d m n x A $.  $d m n x P $.
     dvdsppwf1o.f $e |- F = ( n e. ( 0 ... A ) |-> ( P ^ n ) ) $.
