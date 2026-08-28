@@ -198528,6 +198528,36 @@ $)
     $.
 
   ${
+    $d M x $.  $d N x $.
+
+    $( The difference of the prime-counting function ` ppi ` at two points
+       counts the number of primes in an interval.  (Contributed by Mario
+       Carneiro, 21-Sep-2014.) $)
+    ppidif $p |- ( N e. ( ZZ>= ` M ) -> ( ( ppi ` N ) - ( ppi ` M ) ) =
+      ( # ` ( ( ( M + 1 ) ... N ) i^i Prime ) ) ) $=
+      ( vx cfv wcel cmin co c2 cr cprime cin chash cz wceq syl cfn c0 wa sylibr
+      wdc cuz cppi cpr clt cinf cfz c1 caddc cun eluzelz cle wbr eluzel2 zmincl
+      sylancl a1i zred min2inf eluz2 syl3anbrc ppival2g syl2anc min1inf elfzuzb
+      2z 2re id sylanbrc fzsplit ineq1d indir eqtrdi fveq2d wss cv fzfigd inss1
+      wral wn animorrl df-dc elfzelz adantl prmdcz dcand dcbii ralrimiva ssfidc
+      elin syl3anc peano2zd orc ltp1d fzdisj inindir 0in 3eqtr3g hashun oveq12d
+      wo 3eqtrd cn0 hashcl nn0cnd pncan2d eqtrd ) BAUADEZBUBDZAUBDZFGAHUCIUDUEZ
+      AUFGZJKZLDZAUGUHGZBUFGZJKZLDZUHGZXMFGXQXGXHXRXIXMFXGXHXJBUFGZJKZLDZXLXPUI
+      ZLDZXRXGBMEHXJUADZEZXHYANABUJZXGXJMEZHMEZXJHUKULZYEXGAMEZYHYGABUMZVEAHUNU
+      OZYHXGVEUPXGAIEZHIEZYIXGAYKUQZVFAHURUOXJHUSUTZBXJVAVBXGXTYBLXGXTXKXOUIZJK
+      YBXGXSYQJXGAXSEZXSYQNXGAYDEZXGYRXGYGYJXJAUKULZYSYLYKXGYMYNYTYOVFAHVCUOXJA
+      USUTXGVGAXJBVDVHAXJBVIOVJXKXOJVKVLVMXGXLPEZXPPEZXLXPKZQNYCXRNXGXKPEXLXKVN
+      ZCVOZXLEZTZCXKVRUUAXGXJAYLYKVPUUDXGXKJVQUPXGUUGCXKXGUUEXKEZRZUUHUUEJEZRZT
+      UUGUUIUUHUUJUUIUUHUUHVSZWTUUHTXGUUHUULVTUUHWASUUIUUEMEZUUJTZUUHUUMXGUUEXJ
+      AWBWCUUEWDZOWEUUFUUKUUEXKJWIWFSWGCXKXLWHWJZXGXOPEXPXOVNZUUEXPEZTZCXOVRUUB
+      XGXNBXGAYKWKYFVPUUQXGXOJVQUPXGUUSCXOXGUUEXOEZRZUUTUUJRZTUUSUVAUUTUUJUUTUU
+      TTZXGUUTUUTUUTVSZWTUVCUUTUVDWLUUTWASWCUUTUUNXGUUTUUMUUNUUEXNBWBUUOOWCWEUU
+      RUVBUUEXOJWIWFSWGCXOXPWHWJZXGXKXOKZJKQJKUUCQXGUVFQJXGAXNUDULUVFQNXGAYOWMX
+      JAXNBWNOVJXKXOJWOJWPWQXLXPWRWJXAXGYJYEXIXMNYKYPAXJVAVBWSXGXMXQXGXMXGUUAXM
+      XBEUUPXLXCOXDXGXQXGUUBXQXBEUVEXPXCOXDXEXF $.
+  $}
+
+  ${
     $d m n x A $.  $d m n x P $.
     dvdsppwf1o.f $e |- F = ( n e. ( 0 ... A ) |-> ( P ^ n ) ) $.
     $( A bijection between the divisors of a prime power and the integers less
