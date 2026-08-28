@@ -198458,6 +198458,24 @@ $)
       NJRMDZUUQTDXOUUSXMXNWKURXNWLPWMTERMUUPXBUUOERWNWOWPWQJAWRWSWTXQXSHXAXCXPU
       ULXSXRXPXSHUFUULXSNXPXNHXMXOXDXEXSHXFXGXHXIXJXIXPYEYBEFXMYEYBNXOAWDQXKXL
       $.
+
+    $( The prime-counting function ` ppi ` at a non-prime.  (Contributed by
+       Mario Carneiro, 19-Sep-2014.) $)
+    ppinprm $p |- ( ( A e. ZZ /\ -. ( A + 1 ) e. Prime ) ->
+      ( ppi ` ( A + 1 ) ) = ( ppi ` A ) ) $=
+      ( vx cz wcel c1 co cprime wn wa c2 cfz cin chash cfv cppi cmin cuz adantr
+      wceq cn caddc cv csn simprr elin2d simprl nelne2 syl2anc velsn necon3bbii
+      wne sylibr cun wo elin1d 2z zcn ax-1cn pncan sylancl elfzuz2 uz2m1nn 3syl
+      cc eqeltrrd nnuz 2m1e1 fveq2i eqtr4i eleqtrdi fzsuc2 sylancr eleqtrd elun
+      sylib ecased elind expr ssrdv uzid peano2uz fzss2 ssrin 4syl eqssd fveq2d
+      wss peano2z ppival2 syl 3eqtr4d ) ACDZAEUAFZGDHZIZJWMKFZGLZMNZJAKFZGLZMNZ
+      WMONZAONZWOWQWTMWOWQWTWOBWQWTWLWNBUBZWQDZXDWTDWLWNXEIZIZWSGXDXGXDWSDZXDWM
+      UCZDZXGXDWMUKZXJHXGXDGDWNXKXGWPGXDWLWNXEUDZUEZWLWNXEUFXDWMGUGUHXJXDWMBWMU
+      IUJULXGXDWSXIUMZDXHXJUNXGXDWPXNXGWPGXDXLUOZXGJCDAJEPFZQNZDWPXNSUPXGATXQXG
+      WMEPFZATXGAVDDZEVDDXRASWLXSXFAUQRURAEUSUTXGXDWPDWMJQNDXRTDXOXDJWMVAWMVBVC
+      VETEQNXQVFXPEQVGVHVIVJJAVKVLVMXDWSXIVNVOVPXMVQVRVSWOAAQNZDZWMXTDWSWPWGWTW
+      QWGWLYAWNAVTRAAWAAJWMWBWSWPGWCWDWEWFWOWMCDZXBWRSWLYBWNAWHRWMWIWJWLXCXASWN
+      AWIRWK $.
   $}
 
   ${
