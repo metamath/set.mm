@@ -152312,7 +152312,8 @@ $)
     mod2xnegi.7 $e |- ( 2 x. B ) = E $.
     mod2xnegi.8 $e |- ( L + K ) = N $.
     mod2xnegi.9 $e |- ( ( D x. N ) + M ) = ( K x. K ) $.
-    $( Version of ~ mod2xi with a negative mod value.  (Contributed by Mario
+    $( Version of ~ mod2xi where ` A ^ B ` does not equal ` K ` (mod ` N ` )
+       but instead the negative of ` K ` (mod ` N ` ).  (Contributed by Mario
        Carneiro, 21-Feb-2014.) $)
     mod2xnegi $p |- ( ( A ^ E ) mod N ) = ( M mod N ) $=
       ( caddc co cmin cn cn0 wcel nn0nnaddcl mp2an eqeltrri cz zaddcl nn0addcli
