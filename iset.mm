@@ -146223,6 +146223,12 @@ $)
       GVTWCEWFVGRVHWCVIVJVTWOWQWPVKWCAVLSWDVMQVNWEBWGVQSVOWJWIBAVPVRVS $.
   $}
 
+  $( Primality is decidable.  (Contributed by Jim Kingdon, 27-Aug-2026.) $)
+  prmdcz $p |- ( N e. ZZ -> DECID N e. Prime ) $=
+    ( cz wcel cn cprime wdc wn prmdc adantl wa wo prmnn con3i olcd df-dc sylibr
+    elnndc exmiddc syl mpjaodan ) ABCZADCZAECZFZUBGZUBUDUAAHIUAUEJZUCUCGZKUDUFU
+    GUCUEUGUAUCUBALMINUCOPUAUBFUBUEKAQUBRST $.
+
   ${
     $d P x $.
     $( A prime number is an integer greater than or equal to 2.  (Contributed
