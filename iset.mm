@@ -198907,6 +198907,38 @@ $)
       EGDVBVCVG $.
   $}
 
+  ${
+    ppiublem1.1 $e |- ( N <_ 6 /\ ( ( P e. Prime /\ 4 <_ P ) ->
+      ( ( P mod 6 ) e. ( N ... 5 ) -> ( P mod 6 ) e. { 1 , 5 } ) ) ) $.
+    ppiublem1.2 $e |- M e. NN0 $.
+    ppiublem1.3 $e |- N = ( M + 1 ) $.
+    ppiublem1.4 $e |- ( 2 || M \/ 3 || M \/ M e. { 1 , 5 } ) $.
+    $( Lemma for ~ ppiub .  (Contributed by Mario Carneiro, 12-Mar-2014.) $)
+    ppiublem1 $p |- ( M <_ 6 /\ ( ( P e. Prime /\ 4 <_ P ) ->
+      ( ( P mod 6 ) e. ( M ... 5 ) -> ( P mod 6 ) e. { 1 , 5 } ) ) ) $=
+      ( c6 cle wbr wcel c4 co c5 wi wb cz c2 cdvds c3 cprime cmo cfz cpr simpli
+      wa caddc df-6 3brtr3i nn0rei 5re 1re leadd1i mpbir 6re ltleii letri mp2an
+      c1 5lt6 wceq wo cuz cfv nn0zi 5nn eluz2 mpbir3an elfzp12 ax-mp w3o cn 2nn
+      nnzi 6nn prmz adantr w3a cmul 3z 2z dvdsmul2 3t2e6 breqtri mpan2 mp3an12i
+      dvdsmod uzid simpl dvdsprm sylancr bitrd simpr breq2 syl5ibrcom clt wn 4z
+      2lt4 zltnle mpbi pm2.21i syl6 sylbid imbi1d syl5ibcom com3r dvdsmul1 df-3
+      3nn peano2uz eqeltri 3lt4 eleq1a a1d 3jaoi oveq1i eleq2i simpri biimtrrid
+      jaod biimtrid pm3.2i ) BHIJZAUAKZLAIJZUFZAHUBMZBNUCMKZYHUSNUDZKZOOBNIJZNH
+      IJYDYLBUSUGMZNUSUGMZIJCHYMYNICHIJZYGYHCNUCMZKZYKOOZDUEFUHUIBNUSBEUJZUKULU
+      MUNZNHUKUOUTUPBNHYSUKUOUQURYIYHBVAZYHYMNUCMZKZVBZYGYKNBVCVDKZYIUUDPUUEBQK
+      NQKYLBEVENVFVNYTBNVGVHYHBNVIVJYGUUAYKUUCRBSJZTBSJZBYJKZVKYGUUAYKOZOZGUUFU
+      UJUUGUUHYGUUAUUFYKYGRYHSJZYKOUUAUUFYKOYGUUKRAVAZYKYGUUKRASJZUULRVLKZHVLKZ
+      YGAQKZUUKUUMPZVMVOYEUUPYFAVPVQZUUNUUOUUPVRRHSJUUQRTRVSMZHSTQKZRQKZRUUSSJV
+      TWATRWBURWCWDRAHWGWEWFYGRRVCVDZKZYEUUMUULPUVAUVCWARWHVJZYEYFWIZARWJWKWLYG
+      UULLRIJZYKYGUVFUULYFYEYFWMZRALIWNWOUVFYKRLWPJZUVFWQZWSUVALQKZUVHUVIPWAWRR
+      LWTURXAXBXCXDUUAUUKUUFYKYHBRSWNXEXFXGYGUUAUUGYKYGTYHSJZYKOUUAUUGYKOYGUVKT
+      AVAZYKYGUVKTASJZUVLTVLKZUUOYGUUPUVKUVMPZXJVOUURUVNUUOUUPVRTHSJUVOTUUSHSUU
+      TUVATUUSSJVTWATRXHURWCWDTAHWGWEWFYGTUVBKYEUVMUVLPTRUSUGMZUVBXIUVCUVPUVBKU
+      VDRRXKVJXLUVEATWJWKWLYGUVLLTIJZYKYGUVQUVLYFUVGTALIWNWOUVQYKTLWPJZUVQWQZXM
+      UUTUVJUVRUVSPVTWRTLWTURXAXBXCXDUUAUVKUUGYKYHBTSWNXEXFXGUUHUUIYGBYJYHXNXOX
+      PVJUUCYQYGYKYPUUBYHCYMNUCFXQXRYOYRDXSXTYAYBYC $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
