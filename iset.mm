@@ -198939,6 +198939,22 @@ $)
       PVJUUCYQYGYKYPUUBYHCYMNUCFXQXRYOYRDXSXTYAYBYC $.
   $}
 
+  $( A prime greater than ` 3 ` does not divide ` 2 ` or ` 3 ` , so its residue
+     ` mod 6 ` is ` 1 ` or ` 5 ` .  (Contributed by Mario Carneiro,
+     12-Mar-2014.) $)
+  ppiublem2 $p |- ( ( P e. Prime /\ 4 <_ P ) -> ( P mod 6 ) e. { 1 , 5 } ) $=
+    ( wcel c4 cle wbr c6 co cc0 c5 cfz c1 cz cn wi c2 c3 cdvds ppiublem1 3mix1i
+    c0 cprime cmo cpr cmin prmz adantr 6nn zmodfz sylancl 6m1e5 oveq2i eleqtrdi
+    wa 6re leidi noel pm2.21i clt wceq 5lt6 wb nnzi 5nn fzn mp2an eleq2s pm3.2i
+    mpbi a1i 5nn0 df-6 elexi prid2 3mix3i 4nn0 df-5 z4even 3nn0 3z iddvds ax-mp
+    df-4 3mix2i 2nn0 df-3 z2even 1nn0 df-2 1ex prid1 0nn0 1e0p1 z0even simpri
+    mpd ) AUABZCADEZUMZAFUBGZHIJGZBZWSKIUCZBZWRWSHFKUDGZJGZWTWRALBZFMBWSXEBWPXF
+    WQAUEUFUGAFUHUIXDIHJUJUKULHFDEWRXAXCNNAHKAKOAOPAPCACIAIFFFDEWRWSFIJGZBXCNZN
+    FUNUOXHWRXCWSTXGWSTBXCWSUPUQIFUREZXGTUSZUTFLBILBXIXJVAFUGVBIVCVBFIVDVEVHVFV
+    IVGVJVKIXBBOIQEPIQEKIIMVCVLVMVNRVOVPOCQEPCQECXBBVQSRVRWBPPQEZOPQEPXBBPLBXKV
+    SPVTWAWCRWDWEOOQEPOQEOXBBWFSRWGWHKXBBOKQEPKQEKIWIWJVNRWKWLOHQEPHQEHXBBWMSRW
+    NWO $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
