@@ -198624,6 +198624,29 @@ $)
     NWCWQWDGWFAVOSWRFGWNVSVCVPWNWDVQCZWOWERWCXHWFAVRSWDVTVAWAUMWB $.
 
   ${
+    $d A w $.  $d k w $.
+    $( The prime-counting function ` ppi ` is strictly less than the identity.
+       (Contributed by Mario Carneiro, 22-Sep-2014.) $)
+    ppiqltx $p |- ( ( A e. QQ /\ 0 < A ) -> ( ppi ` A ) < A ) $=
+      ( cq wcel cc0 clt wbr wa cfv cppi wceq ad2antrr simpr cr c1 fveq2 breq12d
+      cn0 id syl adantr vw vk cfl cn ppiqcl nn0red nnred qre ppiqfl cv caddc co
+      ppi1 0lt1 eqbrtri nnq cz 1z zq ax-mp qaddcl sylancl peano2re cle ppiqp1le
+      nnre 1red ltadd1dd lelttrd ex nnind eqbrtrrd flqle ltletrd fveq2d c2 2pos
+      wb 0z ppiqeq0 mp2b mpbir eqtrdi eqtr3d simplr eqbrtrd wo flqge0nn0 syldan
+      0red ltled elnn0 sylib mpjaodan ) ABCZDAEFZGZAUCHZUDCZAIHZAEFWRDJZWQWSGZW
+      TWRAXBWTWOWTQCWPWSAUEKUFXBWRWQWSLZUGWOAMCZWPWSAUHZKXBWRIHZWTWREWOXFWTJZWP
+      WSAUIZKXBWSXFWREFZXCUAUJZIHZXJEFNIHZNEFUBUJZIHZXMEFZXMNUKULZIHZXPEFZXIUAU
+      BWRXJNJZXKXLXJNEXJNIOXSRPXJXMJZXKXNXJXMEXJXMIOXTRPXJXPJZXKXQXJXPEXJXPIOYA
+      RPXJWRJZXKXFXJWREXJWRIOYBRPXLDNEUMUNUOXMUDCZXOXRYCXOGZXQXNNUKULZXPYDXQYCX
+      QQCZXOYCXPBCZYFYCXMBCZNBCZYGXMUPZNUQCYIURNUSUTXMNVAVBXPUESTUFYDXNMCYEMCYD
+      XNYCXNQCZXOYCYHYKYJXMUESTUFZXNVCSYDXMMCZXPMCYCYMXOXMVFTZXMVCSYCXQYEVDFZXO
+      YCYHYOYJXMVESTYDXNXMNYLYNYDVGYCXOLVHVIVJVKSVLWOWRAVDFWPWSAVMKVNWQXAGZWTDA
+      EYPXFWTDWOXGWPXAXHKYPXFDIHZDYPWRDIWQXALVOYQDJZDVPEFZVQDUQCDBCYRYSVRVSDUSD
+      VTWAWBWCWDWOWPXAWEWFWQWRQCZWSXAWGWOWPDAVDFYTWQDAWQWJWOXDWPXETWOWPLWKAWHWI
+      WRWLWMWN $.
+  $}
+
+  ${
     $d m n x A $.  $d m n x P $.
     dvdsppwf1o.f $e |- F = ( n e. ( 0 ... A ) |-> ( P ^ n ) ) $.
     $( A bijection between the divisors of a prime power and the integers less
