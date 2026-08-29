@@ -14,6 +14,8 @@ The ones WITH "Notes" may have to be processed manually.
 
 PROPOSED:
 Date      Old       New         Notes
+proposed  prmlem2   prmlt841
+proposed  prmlem1   prmlt25
 proposed  odcl2     odfi
 proposed  finodsubmsubg fiodsubmsubg
 proposed  finsubmsubg fisubmsubg
