@@ -14,6 +14,8 @@ The ones WITH "Notes" may have to be processed manually.
 
 PROPOSED:
 Date      Old       New         Notes
+proposed  prmlem2   prmlt841
+proposed  prmlem1   prmlt25
 proposed  odcl2     odfi
 proposed  finodsubmsubg fiodsubmsubg
 proposed  finsubmsubg fisubmsubg
@@ -104,6 +106,7 @@ Date      Old         New         Notes
 27-Aug-26 matunitlindflem1 [same] Moved from BL's mathbox to main set.mm
 27-Aug-26 matunitlindflem2 [same] Moved from BL's mathbox to main set.mm
 27-Aug-26 matunitlindf [same]     Moved from BL's mathbox to main set.mm
+23-Aug-26 elmaprd     [same]      Moved from TA's mathbox to main set.mm
 19-Aug-26 abrexct     [same]      Moved from TA's mathbox to main set.mm
 19-Aug-26 0nn0m1nnn0  [same]      Moved from BTT's mathbox to main set.mm
 19-Aug-26 lfuhgr      [same]      Moved from BTT's mathbox to main set.mm
