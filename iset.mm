@@ -199532,6 +199532,32 @@ $)
   $}
 
   ${
+    $d p N $.
+    $( Bertrand's postulate, checked numerically for ` N <_ 6 4 ` , using the
+       prime sequence ` 2 , 3 , 5 , 7 , 1 3 , 2 3 , 4 3 , 8 3 ` .  (Contributed
+       by Mario Carneiro, 12-Mar-2014.)  (Proof shortened by Mario Carneiro,
+       20-Apr-2015.)  (Proof shortened by AV, 15-Sep-2021.) $)
+    bpos1 $p |- ( ( N e. NN /\ N <_ ; 6 4 ) ->
+                  E. p e. Prime ( N < p /\ p <_ ( 2 x. N ) ) ) $=
+      ( wcel c6 c4 cdc wbr clt c2 c1 c3 c7 c8 6nn0 4nn0 3nn0 2nn0 wceq bpos1lem
+      orci cn cle cv cmul co wa cprime wrex cuz cfv wi elnnuz ax-1 c5 cc0 wn cr
+      deccl nn0rei 8nn0 eluzelre 4lt10 6lt8 decltc eluzle ltletrd cz wb eluzelz
+      a1i nn0zi sylancr mpbid pm2.21d 83prm eqid 4t2e8 3t2e6 decmul1 3lt10 4lt8
+      zltnle 6nn 3lt6 declt 43prm 2t2e4 2lt4 23prm 1nn0 mullidi 1lt2 13prm 7nn0
+      2cn 7t2e14 1nn 7lt10 declti 4nn 3lt4 7prm 5nn0 5t2e10 5lt7 5prm 3lt5 5lt6
+      3prm 2lt3 2prm olci sylbi imp ) AUACZADEFZUBGZABUCZHGXRIAUDUEUBGUFBUGUHZX
+      OAJUIUJCXQXSUKZAULXTJIIABXSXQUMZXTIEKABYAXTKDUNABYAXTUNJUOFZLABYAXTLJEFZJ
+      KFZABYAXTYDIDFZIKFZABYAXTYFEDFZEKFZABYAXTYHMDFZMKFZABYAAYJUIUJCZXQXSYKXPA
+      HGZXQUPZYKXPYJAXPUQCYKXPDENOURZUSVJYJUQCYKYJMKUTPURUSVJYJAVAXPYJHGYKDMEKN
+      UTOPVBVCVDVJYJAVEVFYKXPVGCAVGCYLYMVHXPYNVKYJAVIXPAWBVLVMVNVOEKOPUREKMDIYH
+      QOPYHVPNVQVRVSEMKKOUTPPVTWAVDYJYIHGYJYIRMKDUTPWCWDWETSWFIKQPURIKEDIYFQQPY
+      FVPNWGVRVSIEKKQOPPVTWHVDYHYGHGYHYGREKDOPWCWDWETSWIJKWJPURJKIDIYDQWJPYDVPN
+      IWOWKZVRVSJIKKWJQPPVTWLVDYFYEHGYFYERIKDQPWCWDWETSWMWNWPJKLWQPWNWRWSYDYCHG
+      YDYCRJKEWJPWTXAWETSXBXCXDXELYBHGLYBRWRTSXFPVRXGUNDHGUNDRXHTSXIQWGXJKEHGKE
+      RXATSXKWJYOWLIIRIIHGIVPXLSXMXN $.
+  $}
+
+  ${
     $d k u q N $.  $d k u q P $.
     $( An upper bound on the prime powers dividing a central binomial
        coefficient.  (Contributed by Mario Carneiro, 9-Mar-2014.) $)
