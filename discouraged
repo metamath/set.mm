@@ -633,6 +633,8 @@
 "abshicom" is used by "bcs3".
 "ac2" is used by "ac3".
 "ac3" is used by "axac2".
+"ad11antr" is used by "simp-12l".
+"ad11antr" is used by "simp-12r".
 "addassnq" is used by "addasspr".
 "addassnq" is used by "ltaddnq".
 "addassnq" is used by "ltexprlem7".
@@ -1772,6 +1774,8 @@
 "bafval" is used by "nvzcl".
 "bafval" is used by "phpar".
 "bafval" is used by "sspba".
+"basendx" is used by "angmgmbas".
+"basendx" is used by "angmgmlem".
 "basendx" is used by "basendxltdsndx".
 "basendx" is used by "basendxltedgfndx".
 "basendx" is used by "basendxltplendx".
@@ -12255,6 +12259,8 @@
 "pl42lem2N" is used by "pl42lem4N".
 "pl42lem3N" is used by "pl42lem4N".
 "pl42lem4N" is used by "pl42N".
+"plendx" is used by "angmgmbas".
+"plendx" is used by "angmgmlem".
 "plendx" is used by "basendxltplendx".
 "plendx" is used by "cnfldstr".
 "plendx" is used by "idlsrgstr".
@@ -12273,6 +12279,8 @@
 "plendx" is used by "slotsdifplendx2".
 "plendx" is used by "slotsdifunifndx".
 "plpv" is used by "addcompr".
+"plusgndx" is used by "angmgmbas".
+"plusgndx" is used by "angmgmlem".
 "plusgndx" is used by "basendxltplusgndx".
 "plusgndx" is used by "dsndxnplusgndx".
 "plusgndx" is used by "grpbasex".
@@ -14456,6 +14464,7 @@ New usage of "abshicom" is discouraged (1 uses).
 New usage of "abvALT" is discouraged (0 uses).
 New usage of "ac2" is discouraged (1 uses).
 New usage of "ac3" is discouraged (1 uses).
+New usage of "ad11antr" is discouraged (2 uses).
 New usage of "ad5ant124OLD" is discouraged (0 uses).
 New usage of "ad5ant125OLD" is discouraged (0 uses).
 New usage of "ad5ant134OLD" is discouraged (0 uses).
@@ -14882,7 +14891,7 @@ New usage of "baerlem5bmN" is discouraged (0 uses).
 New usage of "bafval" is discouraged (38 uses).
 New usage of "barbariALT" is discouraged (0 uses).
 New usage of "barocoALT" is discouraged (0 uses).
-New usage of "basendx" is discouraged (27 uses).
+New usage of "basendx" is discouraged (29 uses).
 New usage of "baseval" is discouraged (0 uses).
 New usage of "bcs" is discouraged (6 uses).
 New usage of "bcs2" is discouraged (2 uses).
@@ -18583,9 +18592,9 @@ New usage of "pl42lem1N" is discouraged (1 uses).
 New usage of "pl42lem2N" is discouraged (1 uses).
 New usage of "pl42lem3N" is discouraged (1 uses).
 New usage of "pl42lem4N" is discouraged (1 uses).
-New usage of "plendx" is discouraged (17 uses).
+New usage of "plendx" is discouraged (19 uses).
 New usage of "plpv" is discouraged (1 uses).
-New usage of "plusgndx" is discouraged (18 uses).
+New usage of "plusgndx" is discouraged (20 uses).
 New usage of "plycjOLD" is discouraged (1 uses).
 New usage of "pm10.252" is discouraged (0 uses).
 New usage of "pm11.07" is discouraged (0 uses).
@@ -19086,6 +19095,8 @@ New usage of "sii" is discouraged (2 uses).
 New usage of "siii" is discouraged (2 uses).
 New usage of "siilem1" is discouraged (1 uses).
 New usage of "siilem2" is discouraged (1 uses).
+New usage of "simp-12l" is discouraged (0 uses).
+New usage of "simp-12r" is discouraged (0 uses).
 New usage of "simplbi2VD" is discouraged (0 uses).
 New usage of "simplbi2comtVD" is discouraged (0 uses).
 New usage of "simprimi" is discouraged (1 uses).
