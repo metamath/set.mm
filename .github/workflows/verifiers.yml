@@ -133,6 +133,10 @@ jobs:
       - run: scripts/check-theorem-list set.mm
       - run: echo 'Checking for iset.mm theorem list'
       - run: scripts/check-theorem-list iset.mm
+      # Labels differing only in case overwrite each other's web pages on
+      # case-insensitive file systems.  See set.mm pull request #5438.
+      - run: scripts/check-case-collisions set.mm
+      - run: scripts/check-case-collisions iset.mm
       # The following checks are arbitrarily included in the metamath job.
       - run: echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" set.mm
       - run: echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" iset.mm

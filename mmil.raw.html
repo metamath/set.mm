@@ -2534,8 +2534,8 @@ favor of theorems in deduction form.</TD>
 
 <TR>
   <TD>ifpr</TD>
-  <TD><I>none</I></TD>
-  <TD>Should be provable if the condition is decidable.</TD>
+  <TD>~ ifprdc</TD>
+  <td>adds decidability condition</td>
 </TR>
 
 <tr>
@@ -3537,7 +3537,7 @@ and is evaluated at a set</TD>
 
 <TR>
 <TD>ndmfv</TD>
-<TD>~ ndmfvg </TD>
+<TD>~ ndmfvg , ~ relndmfv</TD>
 <TD>The ` -. A e. _V ` case is ~ fvprc .</TD>
 </TR>
 
@@ -7774,6 +7774,37 @@ favor of theorems in deduction form.</TD>
   <td>presumably provable</td>
 </tr>
 
+<tr>
+  <td>indval2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses undif and apparently additional
+  conditions would be needed</td>
+</tr>
+
+<tr>
+  <td>indf</td>
+  <td>~ indfdc</td>
+  <td>requires that the subset is decidable</td>
+</tr>
+
+<tr>
+  <td>fvindre</td>
+  <td><i>none</i></td>
+  <td>see ~ indfdc</td>
+</tr>
+
+<tr>
+  <td>ind1a</td>
+  <td><i>none</i></td>
+  <td>seems provable if ` A ` is a decidable subset of ` O `</td>
+</tr>
+
+<tr>
+  <td>indpi1</td>
+  <td><i>none</i></td>
+  <td>seems provable if ` A ` is a decidable subset of ` O `</td>
+</tr>
+
 <TR>
 <TD>df-nn</TD>
 <TD>~ dfnn2 </TD>
@@ -8286,12 +8317,12 @@ proof is not intuitionistic and it is lightly used in set.mm.</TD>
 
 <TR>
   <TD>flcl , reflcl , flcld</TD>
-  <TD>~ flqcl , ~ flqcld</TD>
+  <TD>~ flqcl , ~ flapcl , ~ flqcld</TD>
 </TR>
 
 <TR>
   <TD>fllelt</TD>
-  <TD>~ flqlelt</TD>
+  <TD>~ flqlelt , ~ flaplelt</TD>
 </TR>
 
 <TR>
@@ -8316,7 +8347,7 @@ proof is not intuitionistic and it is lightly used in set.mm.</TD>
 
 <TR>
   <TD>flge</TD>
-  <TD>~ flqge</TD>
+  <TD>~ flqge , ~ flapge</TD>
 </TR>
 
 <TR>
@@ -11775,6 +11806,13 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>4sqlem13</td>
   <td>~ 4sqlem13m</td>
   <td>changes not empty to inhabited</td>
+</tr>
+
+<tr>
+  <td>2503prm , 4001prm</td>
+  <td><i>none</i></td>
+  <td>presumably provable; ~ 1259prm needed only small
+  changes from the set.mm proof</td>
 </tr>
 
 <TR>
@@ -16774,18 +16812,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>logdivlt</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses real number trichotomy</td>
-</tr>
-
-<tr>
-  <td>logdivle</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses logdivlt</td>
-</tr>
-
-<tr>
   <td>dvrelog</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses dvres3 and dvcnvre</td>
@@ -17379,6 +17405,29 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>efexple</td>
+  <td>~ prmefexple</td>
+  <td>requires ` A ` to be a prime number and ` B ` to be a natural
+  number</td>
+</tr>
+
+<tr>
+  <td>bpos1</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof should work with small changes once
+  we have 83prm , 5prm , etc</td>
+</tr>
+
+<tr>
+  <td>bposlem5</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof uses df-ppi (the prime counting
+  function), ppicl , ppi1 , ppiprm , ppinprm , and ppiub .
+  It should be possible to replace the use of excluded
+  middle with ~ prmdc</td>
+</tr>
+
+<tr>
   <td>lgsfval</td>
   <td>~ lgsfvalg</td>
   <td>adds ` A e. ZZ ` and ` N e. NN ` conditions</td>
@@ -17454,6 +17503,23 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td id="missing-2sq">2sq</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses 2sqlem11</td>
+</tr>
+
+<tr>
+  <td>dirith2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses ssfi , rplogsum , o1const
+  (and other theorems for big O notation) , and some
+  set size logic (bren2 and others) which would need
+  to use ~ ctinf or ~ unbendc or something else
+  instead</td>
+</tr>
+
+<tr>
+  <td id="missing-dirith">dirith</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof would seem to work if we have
+  dirith2</td>
 </tr>
 
 <tr>
@@ -19233,11 +19299,19 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>eulerpartgbij</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof uses fimacnvinrn2 ,
+  indf1ofs , fcobijfs , f1opwfi , bitsf1o ,
+  resf1o , and perhaps others.</td>
+</tr>
+
+<tr>
   <td id="missing-eulerpart">eulerpart</td>
   <td><i>none</i></td>
   <td>The set.mm proof uses, directly or indirectly,
-  df-ind , indf1ofs, funisfsupp . fcobijfs , indf1o ,
-  mapfien , fsuppco and perhaps others.
+  indf1ofs, fcobijfs , indf1o ,
+  mapfien , fsuppco and others.
   There may be enough decidability for the indicator
   function usages to be adaptable.</td>
 </td>
@@ -19464,10 +19538,9 @@ of Transcendental Numbers</td>
 
   <tr>
     <td>48.  Dirichlet's Theorem</td>
-    <td>Whether this is a copy-paste from set.mm or something
-    which needs a lot of intuitionizing is not immediately
-    clear.  There are several additional notations or concepts
-    which would need to be developed.</td>
+    <td>This would appear to be within reach but see
+    <a href="#missing-dirith">entry for theorem dirith above</a>
+    for more detailed notes.</td>
   </tr>
 
   <tr>
@@ -19662,7 +19735,9 @@ of the inverse prime series</td>
 
   <tr>
     <td>98.  Bertrand's Postulate</td>
-    <td>This is a long proof.  It uses logdivlt .</td>
+    <td>We would appear to have the obvious prerequisites such
+    as ` pCnt ` ( ~ df-pc ), ` log ` ( ~ df-relog ), and
+    ~ logdivlt .</td>
   </tr>
 </table>
 
@@ -19896,6 +19971,12 @@ Graduate Texts in Mathematics, Springer-Verlag New York (2002)
 [QA154.3.L3].
 </LI>
 
+<LI>
+<A NAME="Lang2"></A> [Lang2] Serge Lang, <I>Real and Functional Analysis</I>,
+3rd edition, Graduate Texts in Mathematics, Springer-Verlag New York (1993)
+[QA300.L274].
+</LI>
+
 <LI><A NAME="Levy"></A> [Levy] Levy, Azriel, <I>Basic Set Theory</I>,
 Dover Publications, Mineola, N.Y. (2002) [QA248.L398 2002]. </LI>
 
@@ -19974,6 +20055,13 @@ Analysis,</I> McGraw-Hill, New York, second edition (1964) [QA300.R916
 and Its Logic,</I> Harvard University Press, Cambridge, Massachusetts,
 revised edition (1969) [QA248.Q7 1969].</LI>
 
+<LI><A NAME="Russell1905"></A> [Russell1905] Russell, Bertrand,
+&quot;On Denoting,&quot; <I>Mind,</I> New Series, Vol. 14, No. 56,
+October 1905, pp. 479-493; available at <A
+HREF="https://en.wikisource.org/wiki/On_Denoting"
+>https://en.wikisource.org/wiki/On_Denoting</A>
+(retrieved 22-Jul-2026).
+</LI>
 <LI><A NAME="Sanford"></A> [Sanford] Sanford, David H., <I>If P, then Q:
 Conditionals and the Foundations of Reasoning</I>, 2nd ed., Routledge
 Taylor &amp; Francis Group (2003); ISBN 0-415-28369-8; available at <A

@@ -14,6 +14,8 @@ The ones WITH "Notes" may have to be processed manually.
 
 PROPOSED:
 Date      Old       New         Notes
+proposed  prmlem2   prmlt841
+proposed  prmlem1   prmlt25
 proposed  odcl2     odfi
 proposed  finodsubmsubg fiodsubmsubg
 proposed  finsubmsubg fisubmsubg
@@ -92,6 +94,73 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+27-Aug-26 fmpodg      [same]      Moved from ZW's mathbox to main set.mm
+27-Aug-26 fmpod       [same]      Moved from ZW's mathbox to main set.mm
+27-Aug-26 cureq       [same]      Moved from BL's mathbox to main set.mm
+27-Aug-26 curf        [same]      Moved from BL's mathbox to main set.mm
+27-Aug-26 uncf        [same]      Moved from BL's mathbox to main set.mm
+27-Aug-26 curfv       [same]      Moved from BL's mathbox to main set.mm
+27-Aug-26 uncov       [same]      Moved from BL's mathbox to main set.mm
+27-Aug-26 lindsdom    [same]      Moved from BL's mathbox to main set.mm
+27-Aug-26 lindsenlbs  [same]      Moved from BL's mathbox to main set.mm
+27-Aug-26 matunitlindflem1 [same] Moved from BL's mathbox to main set.mm
+27-Aug-26 matunitlindflem2 [same] Moved from BL's mathbox to main set.mm
+27-Aug-26 matunitlindf [same]     Moved from BL's mathbox to main set.mm
+26-Aug-26 cacycgr     [same]      Moved from BTT's mathbox to main set.mm
+26-Aug-26 df-acycgr   [same]      Moved from BTT's mathbox to main set.mm
+26-Aug-26 dfacycgr1   [same]      Moved from BTT's mathbox to main set.mm
+26-Aug-26 isacycgr    [same]      Moved from BTT's mathbox to main set.mm
+26-Aug-26 isacycgr1   [same]      Moved from BTT's mathbox to main set.mm
+26-Aug-26 acycgrcycl  [same]      Moved from BTT's mathbox to main set.mm
+23-Aug-26 elmaprd     [same]      Moved from TA's mathbox to main set.mm
+19-Aug-26 abrexct     [same]      Moved from TA's mathbox to main set.mm
+19-Aug-26 0nn0m1nnn0  [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 lfuhgr      [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 lfuhgr2     [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 lfuhgr3     [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 pfxwlk      [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 revwlk      [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 swrdwlk     [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 pthhashvtx  [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 spthcycl    [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 subgrwlk    [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 subgrtrl    [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 subgrpth    [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 subgrcycl   [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 loop1cycl   [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 2cycld      [same]      Moved from BTT's mathbox to main set.mm
+19-Aug-26 umgr2cycllem [same]     Moved from BTT's mathbox to main set.mm
+19-Aug-26 umgr2cycl   [same]      Moved from BTT's mathbox to main set.mm
+18-Aug-26 ovn0ssdmfun [same]      Moved from AV's mathbox to main set.mm
+15-Aug-26 srcmpltd    [same]      Moved from BTT's mathbox to main set.mm
+15-Aug-26 prsrcmpltd  [same]      Moved from BTT's mathbox to main set.mm
+15-Aug-26 dff15       [same]      Moved from BTT's mathbox to main set.mm
+15-Aug-26 f1resveqaeq [same]      Moved from BTT's mathbox to main set.mm
+15-Aug-26 f1resrcmplf1dlem [same] Moved from BTT's mathbox to main set.mm
+15-Aug-26 f1resrcmplf1d [same]    Moved from BTT's mathbox to main set.mm
+15-Aug-26 funen1cnv   [same]      Moved from BTT's mathbox to main set.mm
+15-Aug-26 f1resfz0f1d [same]      Moved from BTT's mathbox to main set.mm
+15-Aug-26 s1f1        [same]      Moved from TA's mathbox to main set.mm
+15-Aug-26 ccatf1      [same]      Moved from TA's mathbox to main set.mm
+15-Aug-26 swrdrn3     [same]      Moved from TA's mathbox to main set.mm
+15-Aug-26 swrdf1      [same]      Moved from TA's mathbox to main set.mm
+15-Aug-26 revpfxsfxrev [same]     Moved from BTT's mathbox to main set.mm
+15-Aug-26 swrdrevpfx [same]       Moved from BTT's mathbox to main set.mm
+15-Aug=26 fmptdF      fmptdf2     Avoids clash with fmptdf
+ 8-Aug-26 relcnvtr    ---         Deleted; redundant with relcnvtrg
+ 8-Aug-26 relcnvtrg   ---         Antecedent removed
+27-Jul-26 scottexs    ---         Deleted; use scottex with a class
+                                  abstraction instead
+27-Jul-26 hta         [same]      New hypothesis uses the Scott operation
+27-Jul-26 scott0s     scott0bs    New assertion uses the Scott operation
+27-Jul-26 karden      [same]      New hypotheses use the Scott operation
+27-Jul-26 kardex      [same]      New assertion uses the Scott operation
+27-Jul-26 cplem1      [same]      New hypothesis uses the Scott operation
+27-Jul-26 scott0i     scott0      Moved from BTT's mathbox to main
+27-Jul-26 scott0      scott0b     Merged with previous scott0b
+27-Jul-26 scottex     [same]      Merged with scottex2
+24-Jul-26 rimco       [same]      Moved from SN's mathbox to main set.mm
+24-Jul-26 rictr       [same]      Moved from SN's mathbox to main set.mm
 23-Jul-26 risefall0lem fz00m1
 20-Jul-26 orsird      [same]      Moved from GM's mathbox to main set.mm
 20-Jul-26 orsild      [same]      Moved from GM's mathbox to main set.mm
@@ -112,7 +181,8 @@ Date      Old         New         Notes
  5-Jul-26 13an22anass [same]      Moved from TA's mathbox to main set.mm
  5-Jul-26 elnelneqd   [same]      Moved from RR's mathbox to main set.mm
  5-Jul-26 elnelneq2d  [same]      Moved from RR's mathbox to main set.mm
- 2-Jul-26 ~ scotteqd to ~ scottrankd : Moved from RR's mathbox to main set.mm
+ 2-Jul-26 ---         ---         Move Scott's trick operation theorems
+                                  from RR's mathbox to main set.mm
  2-Jul-26 df-scott    [same]      Moved from RR's mathbox to main set.mm
 28-Jun-26 drnglidl1ne0 [same]     Moved from TA's mathbox to main set.mm
 28-Jun-26 pm4.71da    [same]      Moved from ZW's mathbox to main set.mm
@@ -170,7 +240,7 @@ Date      Old         New         Notes
  4-May-26 ricsym      [same]      Moved from SN's mathbox to main set.mm
  4-May-26 psrbagres   [same]      Moved from SN's mathbox to main set.mm
  4-May-26 mplcrngd    [same]      Moved from SN's mathbox to main set.mm
- 4-May-26 ---    ---              Move variable selection theorems
+ 4-May-26 ---         ---         Move variable selection theorems
                                   from SN's mathbox to main set.mm
 11-Apr-26 muldivdid   [same]      Moved from TA's mathbox to main set.mm
 11-Apr-26 elfzod      [same]      Moved from GS's mathbox to main set.mm
@@ -795,7 +865,7 @@ Date      Old         New         Notes
  1-May-25 imaexd    [same]      Moved from TA's mathbox to main set.mm
 30-Apr-25 idomrootle [same]     Moved from SO's mathbox to main set.mm
 30-Apr-25 ply1ascl0 [same]      Moved from TA's mathbox to main set.mm
-30-Apr-25 hashf1dmcdm [same]    Moved from BT's mathbox to main set.mm
+30-Apr-25 hashf1dmcdm [same]    Moved from BTT's mathbox to main set.mm
 30-Apr-25 sotrd     [same]      Moved from SF's mathbox to main set.mm
 30-Apr-25 iscnrm3lem3 4anpull2  Moved from ZW's mathbox to main set.mm
 25-Apr-25 mon1pid   [same]      Moved from SO's mathbox to main set.mm
@@ -933,8 +1003,8 @@ Date      Old         New         Notes
 27-Feb-25 elnelall  pm2.24nel
 25-Feb-25 eqimssd   [same]      Moved from SN's mathbox to main set.mm
 25-Feb-25 eqimss2d  eqimsscd    Moved from SN's mathbox to main set.mm
-25-Feb-25 hashfundm [same]      Moved from BT's mathbox to main set.mm
-25-Feb-25 hashf1dmrn [same]     Moved from BT's mathbox to main set.mm
+25-Feb-25 hashfundm [same]      Moved from BTT's mathbox to main set.mm
+25-Feb-25 hashf1dmrn [same]     Moved from BTT's mathbox to main set.mm
 25-Feb-25 ressbasssg [same]     Moved from SN's mathbox to main set.mm
 25-Feb-25 ressbasss2 [same]     Moved from SN's mathbox to main set.mm
 25-Feb-25 resrhm2b  [same]      Moved from SN's mathbox to main set.mm
