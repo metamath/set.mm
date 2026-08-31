@@ -106,6 +106,12 @@ Date      Old         New         Notes
 27-Aug-26 matunitlindflem1 [same] Moved from BL's mathbox to main set.mm
 27-Aug-26 matunitlindflem2 [same] Moved from BL's mathbox to main set.mm
 27-Aug-26 matunitlindf [same]     Moved from BL's mathbox to main set.mm
+26-Aug-26 cacycgr     [same]      Moved from BTT's mathbox to main set.mm
+26-Aug-26 df-acycgr   [same]      Moved from BTT's mathbox to main set.mm
+26-Aug-26 dfacycgr1   [same]      Moved from BTT's mathbox to main set.mm
+26-Aug-26 isacycgr    [same]      Moved from BTT's mathbox to main set.mm
+26-Aug-26 isacycgr1   [same]      Moved from BTT's mathbox to main set.mm
+26-Aug-26 acycgrcycl  [same]      Moved from BTT's mathbox to main set.mm
 23-Aug-26 elmaprd     [same]      Moved from TA's mathbox to main set.mm
 19-Aug-26 abrexct     [same]      Moved from TA's mathbox to main set.mm
 19-Aug-26 0nn0m1nnn0  [same]      Moved from BTT's mathbox to main set.mm
