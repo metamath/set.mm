@@ -15410,7 +15410,6 @@ New usage of "cbvral3v" is discouraged (0 uses).
 New usage of "cbvralcsf" is discouraged (2 uses).
 New usage of "cbvralf" is discouraged (2 uses).
 New usage of "cbvralsv" is discouraged (0 uses).
-New usage of "cbvralsvwOLD" is discouraged (0 uses).
 New usage of "cbvralv" is discouraged (2 uses).
 New usage of "cbvralv2" is discouraged (1 uses).
 New usage of "cbvreu" is discouraged (2 uses).
@@ -18954,7 +18953,6 @@ New usage of "sbcom" is discouraged (0 uses).
 New usage of "sbcom3" is discouraged (3 uses).
 New usage of "sbcoreleleq" is discouraged (2 uses).
 New usage of "sbcoreleleqVD" is discouraged (0 uses).
-New usage of "sbcovOLD" is discouraged (0 uses).
 New usage of "sbcssgVD" is discouraged (0 uses).
 New usage of "sbel2x" is discouraged (0 uses).
 New usage of "sbequ5" is discouraged (0 uses).
@@ -18968,8 +18966,6 @@ New usage of "sbidm" is discouraged (0 uses).
 New usage of "sbie" is discouraged (18 uses).
 New usage of "sbied" is discouraged (3 uses).
 New usage of "sbiedv" is discouraged (1 uses).
-New usage of "sbievOLD" is discouraged (0 uses).
-New usage of "sbievwOLD" is discouraged (0 uses).
 New usage of "sbn1ALT" is discouraged (0 uses).
 New usage of "sbralieALT" is discouraged (0 uses).
 New usage of "sbralieOLD" is discouraged (0 uses).
@@ -19997,7 +19993,6 @@ Proof modification of "cases2ALT" is discouraged (88 steps).
 Proof modification of "cayleyhamiltonALT" is discouraged (657 steps).
 Proof modification of "cbveuALT" is discouraged (48 steps).
 Proof modification of "cbvexsv" is discouraged (29 steps).
-Proof modification of "cbvralsvwOLD" is discouraged (20 steps).
 Proof modification of "ccat2s1fvwALT" is discouraged (116 steps).
 Proof modification of "ceqsalALT" is discouraged (23 steps).
 Proof modification of "ceqsalgALT" is discouraged (58 steps).
@@ -21154,11 +21149,8 @@ Proof modification of "sbco4OLD" is discouraged (79 steps).
 Proof modification of "sbco4lemOLD" is discouraged (66 steps).
 Proof modification of "sbcoreleleq" is discouraged (91 steps).
 Proof modification of "sbcoreleleqVD" is discouraged (176 steps).
-Proof modification of "sbcovOLD" is discouraged (32 steps).
 Proof modification of "sbcssgVD" is discouraged (229 steps).
 Proof modification of "sbequiOLD" is discouraged (17 steps).
-Proof modification of "sbievOLD" is discouraged (24 steps).
-Proof modification of "sbievwOLD" is discouraged (23 steps).
 Proof modification of "sbn1ALT" is discouraged (41 steps).
 Proof modification of "sbralieALT" is discouraged (98 steps).
 Proof modification of "sbralieOLD" is discouraged (185 steps).
