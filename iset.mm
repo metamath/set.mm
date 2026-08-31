@@ -89945,6 +89945,15 @@ $)
     EIJK $.
 
   ${
+    eqled.1 $e |- ( ph -> A e. RR ) $.
+    eqled.2 $e |- ( ph -> A = B ) $.
+    $( Equality implies 'less than or equal to'.  (Contributed by Glauco
+       Siliprandi, 11-Dec-2019.) $)
+    eqled $p |- ( ph -> A <_ B ) $=
+      ( cr wcel wceq cle wbr eqle syl2anc ) ABFGBCHBCIJDEBCKL $.
+  $}
+
+  ${
     lt.1 $e |- A e. RR $.
     $( 'Less than' is irreflexive.  (Contributed by NM, 18-Aug-1999.) $)
     ltnri $p |- -. A < A $=
@@ -128971,6 +128980,15 @@ $)
     UHGDUFAJZBJZABKLUGMUHHRZMAHRZMBHRZEZUEUNUFUOANBNOUGMGDUIUJUMUPPUGSUEUIUFUKQ
     UFUJUEULTMABUAUBUCUD $.
 
+  $( The minumum of two integers is an integer.  (Contributed by Jim Kingdon,
+     27-Aug-2026.) $)
+  zmincl $p |- ( ( A e. ZZ /\ B e. ZZ )
+      -> inf ( { A , B } , RR , < ) e. ZZ ) $=
+    ( cz wcel wa cpr cr clt cinf simpr simpll eqeltrd simplr wo cle wbr zletric
+    wceq wb zre minclpr syl2an mpbird elpri syl mpjaodan ) ACDZBCDZEZABFZGHIZAR
+    ZUKCDUKBRZUIULEUKACUIULJUGUHULKLUIUMEUKBCUIUMJUGUHUMMLUIUKUJDZULUMNUIUNABOP
+    BAOPNZABQUGAGDBGDUNUOSUHATBTABUAUBUCUKABUDUEUF $.
+
   $( Lemma for ~ bdtri .  (Contributed by Steven Nguyen and Jim Kingdon,
      17-May-2023.) $)
   bdtrilem $p |- ( ( ( A e. RR /\ 0 <_ A ) /\ ( B e. RR /\ 0 <_ B )
@@ -146222,6 +146240,12 @@ $)
       WSWRWCODZIWCTGWTWQXAVTWCEWFVARZWRIEWCWRVBEVFDWRVCPWRWCXBVDIETGWRVEPWQEWCT
       GVTWCEWFVGRVHWCVIVJVTWOWQWPVKWCAVLSWDVMQVNWEBWGVQSVOWJWIBAVPVRVS $.
   $}
+
+  $( Primality is decidable.  (Contributed by Jim Kingdon, 27-Aug-2026.) $)
+  prmdcz $p |- ( N e. ZZ -> DECID N e. Prime ) $=
+    ( cz wcel cn cprime wdc wn prmdc adantl wa wo prmnn con3i olcd df-dc sylibr
+    elnndc exmiddc syl mpjaodan ) ABCZADCZAECZFZUBGZUBUDUAAHIUAUEJZUCUCGZKUDUFU
+    GUCUEUGUAUCUBALMINUCOPUAUBFUBUEKAQUBRST $.
 
   ${
     $d P x $.
@@ -198257,13 +198281,25 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
+  $c ppi $.
   $c sigma $.
+
+  $( Extend class notation with the prime-counting function pi. $)
+  cppi $a class ppi $.
 
   $( Extend class notation with the divisor function. $)
   csgm $a class sigma $.
 
   ${
     $d x n k p $.
+    $( Define the prime &pi; function, which counts the number of primes less
+       than or equal to ` x ` , see definition in [ApostolNT] p. 8.  Most often
+       ` x ` will be an integer, but many of our theorems support rational
+       numbers (for example at ~ ppiqsval ), and the definition would also work
+       for cases such as numbers known to be irrational.  (Contributed by Mario
+       Carneiro, 15-Sep-2014.) $)
+    df-ppi $a |- ppi = ( x e. RR |-> ( # ` ( ( 0 [,] x ) i^i Prime ) ) ) $.
+
     $( Define the sum of positive divisors function ` ( x sigma n ) ` , which
        is the sum of the xth powers of the positive integer divisors of n, see
        definition in [ApostolNT] p. 38.  For ` x = 0 ` , ` ( x sigma n ) `
@@ -198272,6 +198308,91 @@ $)
        Mario Carneiro, 22-Sep-2014.) $)
     df-sgm $a |- sigma = ( x e. CC , n e. NN |->
        sum_ k e. { p e. NN | p || n } ( k ^c x ) ) $.
+  $}
+
+  ${
+    $d k n p q s x y z A $.  $d p K $.  $d p x M $.  $d p N $.  $d s x S $.
+    $d k n p x y z B $.  $d p P $.
+    $( The set of primes less than ` A ` expressed using a finite set of
+       integers.  (Contributed by Mario Carneiro, 22-Sep-2014.) $)
+    ppiqsval $p |- ( A e. QQ ->
+      ( ( 0 [,] A ) i^i Prime ) = ( ( 2 ... ( |_ ` A ) ) i^i Prime ) ) $=
+      ( vx wcel cc0 cicc co cprime cin c2 cfv cuz syl cz cle wbr adantr sylancr
+      cr wb 0re cq cfl cfz cv wa simpr elin2d prmuz2 prmz w3a elin1d qre elicc2
+      flqcl mpbid simp3d flqge syldan eluz2 syl3anbrc elfzuzb sylanbrc elind ex
+      ssrdv wceq 2z fzval2 inss1 wss a1i 0le2 flqle iccss sstrid eqsstrd ssrind
+      syl22anc eqssd ) AUACZDAEFZGHZIAUBJZUCFZGHZVTBWBWEVTBUDZWBCZWFWECVTWGUEZW
+      DGWFWHWFIKJCZWCWFKJCZWFWDCWHWFGCZWIWHWAGWFVTWGUFZUGZWFUHLWHWFMCZWCMCZWFWC
+      NOZWJWHWKWNWMWFUILZVTWOWGAUNZPWHWFANOZWPWHWFRCZDWFNOZWSWHWFWACZWTXAWSUJZW
+      HWAGWFWLUKWHDRCZARCZXBXCSTVTXEWGAULZPDAWFUMQUOUPVTWGWNWSWPSWQAWFUQURUOWFW
+      CUSUTWFIWCVAVBWMVCVDVEVTWDWAGVTWDIWCEFZMHZWAVTIMCWOWDXHVFVGWRIWCVHQVTXHXG
+      WAXGMVIVTXDXEDINOZWCANOXGWAVJXDVTTVKXFXIVTVLVKAVMDAIWCVNVRVOVPVQVS $.
+
+    $( The set of primes less than ` A ` expressed using a finite set of
+       integers.  (Contributed by Mario Carneiro, 22-Sep-2014.) $)
+    ppiqsval2 $p |- ( ( A e. QQ /\ 2 e. ( ZZ>= ` M ) ) ->
+      ( ( 0 [,] A ) i^i Prime ) = ( ( M ... ( |_ ` A ) ) i^i Prime ) ) $=
+      ( vx cq wcel c2 cuz cfv wa cc0 cicc co cprime cin cfl cfz ppiqsval adantr
+      wceq syl wss fzss1 adantl ssrind elin bilani simprd prmuz2 simpld elfzuz3
+      cv elfzuzb sylanbrc elind eqelssd eqtrd ) ADEZFBGHEZIZJAKLMNZFAOHZPLZMNZB
+      VAPLZMNZUQUTVCSURAQRUSCVCVEUSVBVDMURVBVDUAUQFBVAUBUCUDUSCUKZVEEZIZVBMVFVH
+      VFFGHEZVAVFGHEZVFVBEVHVFMEZVIVHVFVDEZVKVGVLVKIUSVFVDMUEUFZUGZVFUHTVHVLVJV
+      HVLVKVMUIVFBVAUJTVFFVAULUMVNUNUOUP $.
+
+    $( The set of primes less than ` A ` is a finite set.  (Contributed by
+       Mario Carneiro, 15-Sep-2014.) $)
+    ppiqfi $p |- ( A e. QQ -> ( ( 0 [,] A ) i^i Prime ) e. Fin ) $=
+      ( vx cq wcel cc0 co cprime cin c2 cfn wdc cz 2z a1i wa adantl syl3anc clt
+      cicc wbr cfl cfv cfz ppiqsval wss wral flqcl fzfigd elfzelz adantr fzdcel
+      cv inss1 cn 0red 2re zred 2pos elfzle1 ltletrd elnnz sylanbrc prmdc dcand
+      cr syl elin dcbii sylibr ralrimiva ssfidc eqeltrd ) ACDZEASFGHIAUAUBZUCFZ
+      GHZJAUDVMVOJDVPVOUEZBULZVPDZKZBVOUFVPJDVMIVNILDZVMMNAUGZUHVQVMVOGUMNVMVTB
+      VOVMVRVODZOZWCVRGDZOZKVTWDWCWEWDVRLDZWAVNLDZWCKWCWGVMVRIVNUIZPWAWDMNVMWHW
+      CWBUJVRIVNUKQWDVRUNDZWEKWCWJVMWCWGEVRRTWJWIWCEIVRWCUOIVEDWCUPNWCVRWIUQEIR
+      TWCURNVRIVNUSUTVRVAVBPVRVCVFVDVSWFVRVOGVGVHVIVJBVOVPVKQVL $.
+
+    $( The set of prime divisors of a number is a finite set.  (Contributed by
+       Mario Carneiro, 7-Apr-2016.) $)
+    prmdvdsfi $p |- ( A e. NN -> { p e. Prime | p || A } e. Fin ) $=
+      ( vx cn wcel c1 cfz co cfn cv cdvds wbr cprime crab wss wdc wral 1zzd nnz
+      wa fzfigd rabss2 ax-mp dvdsssfz1 sstrid elfznn adantl prmdc syl cz dvdsdc
+      prmssnn syl2anr dcand breq1 elrab dcbii sylibr ralrimiva ssfidc syl3anc )
+      ADEZFAGHZIEBJZAKLZBMNZVCOCJZVFEZPZCVCQVFIEVBFAVBRASZUAVBVFVEBDNZVCMDOVFVK
+      OULVEBMDUBUCABUDUEVBVICVCVBVGVCEZTZVGMEZVGAKLZTZPVIVMVNVOVMVGDEZVNPVLVQVB
+      VGAUFZUGVGUHUIVLVQAUJEVOPVBVRVJVGAUKUMUNVHVPVEVOBVGMVDVGAKUOUPUQURUSCVCVF
+      UTVA $.
+
+    $( Value of the prime-counting function pi.  (Contributed by Mario
+       Carneiro, 15-Sep-2014.) $)
+    ppiqval $p |- ( A e. QQ ->
+      ( ppi ` A ) = ( # ` ( ( 0 [,] A ) i^i Prime ) ) ) $=
+      ( vx cq wcel cc0 cv cicc co cprime cin chash cfv cr cppi cn0 df-ppi oveq2
+      wceq ineq1d fveq2d qre cfn ppiqfi hashcl syl fvmptd3 ) ACDZBAEBFZGHZIJZKL
+      EAGHZIJZKLZMNOBPUHARZUJULKUNUIUKIUHAEGQSTAUAUGULUBDUMODAUCULUDUEUF $.
+
+    $( Value of the prime-counting function pi.  (Contributed by Mario
+       Carneiro, 18-Sep-2014.) $)
+    ppival2 $p |- ( A e. ZZ ->
+      ( ppi ` A ) = ( # ` ( ( 2 ... A ) i^i Prime ) ) ) $=
+      ( cz wcel cppi cfv cc0 cicc co cprime cin chash c2 cfz cq wceq zq ppiqval
+      syl cfl eqtrd ppiqsval flid oveq2d ineq1d fveq2d ) ABCZADEZFAGHIJZKEZLAMH
+      ZIJZKEUFANCZUGUIOAPZAQRUFUHUKKUFUHLASEZMHZIJZUKUFULUHUPOUMAUARUFUOUJIUFUN
+      ALMAUBUCUDTUET $.
+
+    $( Value of the prime-counting function pi.  (Contributed by Mario
+       Carneiro, 22-Sep-2014.) $)
+    ppival2g $p |- ( ( A e. ZZ /\ 2 e. ( ZZ>= ` M ) ) ->
+      ( ppi ` A ) = ( # ` ( ( M ... A ) i^i Prime ) ) ) $=
+      ( cz wcel c2 cuz cfv wa cppi cc0 cicc co cprime cin chash cfz wceq adantr
+      cq eqtrd zq ppiqval syl cfl ppiqsval2 sylan flid oveq2d ineq1d fveq2d ) A
+      CDZEBFGDZHZAIGZJAKLMNZOGZBAPLZMNZOGUMASDZUNUPQUKUSULAUAZRAUBUCUMUOUROUMUO
+      BAUDGZPLZMNZURUKUSULUOVCQUTABUEUFUKVCURQULUKVBUQMUKVAABPAUGUHUIRTUJT $.
+
+    $( Rational closure of the prime-counting function pi.  (Contributed by
+       Mario Carneiro, 15-Sep-2014.) $)
+    ppiqcl $p |- ( A e. QQ -> ( ppi ` A ) e. NN0 ) $=
+      ( cq wcel cppi cfv cc0 cicc co cprime cin chash cn0 ppiqval ppiqfi hashcl
+      cfn syl eqeltrd ) ABCZADEFAGHIJZKEZLAMSTPCUALCANTOQR $.
   $}
 
   ${
@@ -198332,6 +198453,197 @@ $)
       VJVLVRQAUAABDCUBUCVKVRTFUDVRUEMVRGFVKVOVQDVJVOULFVICBUFRZVKVPVOFZHZVQVTVP
       GFVIVQGFVKVNCVPGUGVIVJUHVPAUIUJZUMUKVKVRVKVOVQDVSVJVOUNUOZVIVJVNCGUPZWCVJ
       BBLMZWDVJBTFWEBUQBURSVNWECBGVMBBLUSUTVAVNCGVBSRWAVQWBVEVCVDVRVFVGVH $.
+
+    $( The prime-counting function ` ppi ` at a prime.  (Contributed by Mario
+       Carneiro, 19-Sep-2014.) $)
+    ppiprm $p |- ( ( A e. ZZ /\ ( A + 1 ) e. Prime ) ->
+      ( ppi ` ( A + 1 ) ) = ( ( ppi ` A ) + 1 ) ) $=
+      ( vx cz wcel c1 caddc co cprime wa c2 cin cun cfv wceq wdc syl adantr cuz
+      chash cn cfz csn cppi cfn wn wss cv wral 2z a1i simpl fzfigd inss1 wo orc
+      df-dc sylibr adantl elfzelz prmdcz dcand elin dcbii ralrimiva syl3anc cle
+      ssfidc wbr clt cr zre ltp1d wb peano2z zltnle syldan elinel1 elfzle2 nsyl
+      mpbid wi hashunsng mp2and ppival2 cmin cc zcn ax-1cn pncan sylancl prmuz2
+      uz2m1nn eqeltrrd 2m1e1 fveq2i eqtr4i eleqtrdi fzsuc2 sylancr ineq1d indir
+      nnuz eqtrdi simpr snssd dfss2 sylib uneq2d eqtrd fveq2d oveq1d 3eqtr4d )
+      ACDZAEFGZHDZIZJAUAGZHKZXNUBZLZSMZXRSMZEFGZXNUCMZAUCMZEFGXPXRUDDZXNXRDZUEZ
+      YAYCNZXPXQUDDXRXQUFZBUGZXRDZOZBXQUHYFXPJAJCDZXPUIUJXMXOUKULYJXPXQHUMUJXPY
+      MBXQXPYKXQDZIZYOYKHDZIZOYMYPYOYQYOYOOZXPYOYOYOUEZUNYSYOYTUOYOUPUQURYOYQOZ
+      XPYOYKCDUUAYKJAUSYKUTPURVAYLYRYKXQHVBVCUQVDBXQXRVGVEXPXNAVFVHZYGXPAXNVIVH
+      ZUUBUEZXPAXMAVJDXOAVKQVLXMXOXNCDZUUCUUDVMXMUUEXOAVNZQZAXNVOVPVTYGXNXQDUUB
+      XNXQHVQXNJAVRPVSXMYFYHIYIWAZXOXMUUEUUHUUFXRXNCWBPQWCXPYDJXNUAGZHKZSMZYAXP
+      UUEYDUUKNUUGXNWDPXPUUJXTSXPUUJXRXSHKZLZXTXPUUJXQXSLZHKUUMXPUUIUUNHXPYNAJE
+      WEGZRMZDUUIUUNNUIXPATUUPXPXNEWEGZATXPAWFDZEWFDUUQANXMUURXOAWGQWHAEWIWJXPX
+      NJRMDZUUQTDXOUUSXMXNWKURXNWLPWMTERMUUPXBUUOERWNWOWPWQJAWRWSWTXQXSHXAXCXPU
+      ULXSXRXPXSHUFUULXSNXPXNHXMXOXDXEXSHXFXGXHXIXJXIXPYEYBEFXMYEYBNXOAWDQXKXL
+      $.
+
+    $( The prime-counting function ` ppi ` at a non-prime.  (Contributed by
+       Mario Carneiro, 19-Sep-2014.) $)
+    ppinprm $p |- ( ( A e. ZZ /\ -. ( A + 1 ) e. Prime ) ->
+      ( ppi ` ( A + 1 ) ) = ( ppi ` A ) ) $=
+      ( vx cz wcel c1 co cprime wn wa c2 cfz cin chash cfv cppi cmin cuz adantr
+      wceq cn caddc cv csn simprr elin2d simprl nelne2 syl2anc velsn necon3bbii
+      wne sylibr cun wo elin1d 2z zcn ax-1cn pncan sylancl elfzuz2 uz2m1nn 3syl
+      cc eqeltrrd nnuz 2m1e1 fveq2i eqtr4i eleqtrdi fzsuc2 sylancr eleqtrd elun
+      sylib ecased elind expr ssrdv uzid peano2uz fzss2 ssrin 4syl eqssd fveq2d
+      wss peano2z ppival2 syl 3eqtr4d ) ACDZAEUAFZGDHZIZJWMKFZGLZMNZJAKFZGLZMNZ
+      WMONZAONZWOWQWTMWOWQWTWOBWQWTWLWNBUBZWQDZXDWTDWLWNXEIZIZWSGXDXGXDWSDZXDWM
+      UCZDZXGXDWMUKZXJHXGXDGDWNXKXGWPGXDWLWNXEUDZUEZWLWNXEUFXDWMGUGUHXJXDWMBWMU
+      IUJULXGXDWSXIUMZDXHXJUNXGXDWPXNXGWPGXDXLUOZXGJCDAJEPFZQNZDWPXNSUPXGATXQXG
+      WMEPFZATXGAVDDZEVDDXRASWLXSXFAUQRURAEUSUTXGXDWPDWMJQNDXRTDXOXDJWMVAWMVBVC
+      VETEQNXQVFXPEQVGVHVIVJJAVKVLVMXDWSXIVNVOVPXMVQVRVSWOAAQNZDZWMXTDWSWPWGWTW
+      QWGWLYAWNAVTRAAWAAJWMWBWSWPGWCWDWEWFWOWMCDZXBWRSWLYBWNAWHRWMWIWJWLXCXASWN
+      AWIRWK $.
+  $}
+
+  $( The prime-counting function ` ppi ` does not change off the integers.
+     (Contributed by Mario Carneiro, 18-Sep-2014.) $)
+  ppiqfl $p |- ( A e. QQ -> ( ppi ` ( |_ ` A ) ) = ( ppi ` A ) ) $=
+    ( cq wcel cc0 cicc co cprime cin chash cfv c2 cfl cfz cppi ppiqsval ppiqval
+    fveq2d cz wceq flqcl ppival2 syl 3eqtr4rd ) ABCZDAEFGHZIJKALJZMFGHZIJZANJUF
+    NJZUDUEUGIAOQAPUDUFRCUIUHSATUFUAUBUC $.
+
+  $( The prime-counting function ` ppi ` cannot locally increase faster than
+     the identity function.  (Contributed by Mario Carneiro, 21-Sep-2014.) $)
+  ppiqp1le $p |- ( A e. QQ -> ( ppi ` ( A + 1 ) ) <_ ( ( ppi ` A ) + 1 ) ) $=
+    ( cq wcel cfl cfv c1 caddc co cppi cle cz wa cn0 zq 1z qaddcl adantr ppiqcl
+    syl nn0red flqcl cprime wn ax-mp sylancl ppiprm eqled ppinprm lep1d eqbrtrd
+    wbr cr wdc wo peano2z prmdcz exmiddc 3syl mpjaodan wceq mpan2 fveq2d ppiqfl
+    flqaddz eqtr3d oveq1d 3brtr3d ) ABCZADEZFGHZIEZVIIEZFGHZAFGHZIEZAIEZFGHJVHV
+    IKCZVKVMJUKZAUAVQVJUBCZVRVSUCZVQVSLZVKVMWAVKWAVJBCZVKMCVQWBVSVQVIBCZFBCZWBV
+    INZFKCZWDOFNUDZVIFPUEQVJRSTVIUFUGVQVTLZVKVLVMJVIUHWHVLVQVLULCVTVQVLVQWCVLMC
+    WEVIRSTQUIUJVQVJKCVSUMVSVTUNVIUOVJUPVSUQURUSSVHVNDEZIEZVKVOVHWIVJIVHWFWIVJU
+    TOAFVDVAVBVHVNBCZWJVOUTVHWDWKWGAFPVAVNVCSVEVHVLVPFGAVCVFVG $.
+
+  $( The prime-counting function ` ppi ` is weakly increasing.  (Contributed by
+     Mario Carneiro, 19-Sep-2014.) $)
+  ppiqwordi $p |- ( ( A e. QQ /\ B e. QQ /\ A <_ B ) ->
+    ( ppi ` A ) <_ ( ppi ` B ) ) $=
+    ( cq wcel cle wbr cc0 cicc co cprime cin chash cfv cppi cfn ppiqfi 3ad2ant2
+    wss cr 3ad2ant1 w3a cdom 0red qre 0le0 a1i simp3 iccss syl22anc ssrind sylc
+    ssdomg wb fihashdom syl2anc mpbird wceq ppiqval 3brtr4d ) ACDZBCDZABEFZUAZG
+    AHIZJKZLMZGBHIZJKZLMZANMZBNMZEVCVFVIEFZVEVHUBFZVCVHODZVEVHRVMVAUTVNVBBPQZVC
+    VDVGJVCGSDBSDZGGEFZVBVDVGRVCUCVAUTVPVBBUDQVQVCUEUFUTVAVBUGGBGAUHUIUJVEVHOUL
+    UKVCVEODZVNVLVMUMUTVAVRVBAPTVOVEVHUNUOUPUTVAVJVFUQVBAURTVAUTVKVIUQVBBURQUS
+    $.
+
+  ${
+    $d M x $.  $d N x $.
+
+    $( The difference of the prime-counting function ` ppi ` at two points
+       counts the number of primes in an interval.  (Contributed by Mario
+       Carneiro, 21-Sep-2014.) $)
+    ppidif $p |- ( N e. ( ZZ>= ` M ) -> ( ( ppi ` N ) - ( ppi ` M ) ) =
+      ( # ` ( ( ( M + 1 ) ... N ) i^i Prime ) ) ) $=
+      ( vx cfv wcel cmin co c2 cr cprime cin chash cz wceq syl cfn c0 wa sylibr
+      wdc cuz cppi cpr clt cinf cfz c1 caddc cun eluzelz cle wbr eluzel2 zmincl
+      sylancl a1i zred min2inf eluz2 syl3anbrc ppival2g syl2anc min1inf elfzuzb
+      2z 2re id sylanbrc fzsplit ineq1d indir eqtrdi fveq2d wss cv fzfigd inss1
+      wral wn animorrl df-dc elfzelz adantl prmdcz dcand dcbii ralrimiva ssfidc
+      elin syl3anc peano2zd orc ltp1d fzdisj inindir 0in 3eqtr3g hashun oveq12d
+      wo 3eqtrd cn0 hashcl nn0cnd pncan2d eqtrd ) BAUADEZBUBDZAUBDZFGAHUCIUDUEZ
+      AUFGZJKZLDZAUGUHGZBUFGZJKZLDZUHGZXMFGXQXGXHXRXIXMFXGXHXJBUFGZJKZLDZXLXPUI
+      ZLDZXRXGBMEHXJUADZEZXHYANABUJZXGXJMEZHMEZXJHUKULZYEXGAMEZYHYGABUMZVEAHUNU
+      OZYHXGVEUPXGAIEZHIEZYIXGAYKUQZVFAHURUOXJHUSUTZBXJVAVBXGXTYBLXGXTXKXOUIZJK
+      YBXGXSYQJXGAXSEZXSYQNXGAYDEZXGYRXGYGYJXJAUKULZYSYLYKXGYMYNYTYOVFAHVCUOXJA
+      USUTXGVGAXJBVDVHAXJBVIOVJXKXOJVKVLVMXGXLPEZXPPEZXLXPKZQNYCXRNXGXKPEXLXKVN
+      ZCVOZXLEZTZCXKVRUUAXGXJAYLYKVPUUDXGXKJVQUPXGUUGCXKXGUUEXKEZRZUUHUUEJEZRZT
+      UUGUUIUUHUUJUUIUUHUUHVSZWTUUHTXGUUHUULVTUUHWASUUIUUEMEZUUJTZUUHUUMXGUUEXJ
+      AWBWCUUEWDZOWEUUFUUKUUEXKJWIWFSWGCXKXLWHWJZXGXOPEXPXOVNZUUEXPEZTZCXOVRUUB
+      XGXNBXGAYKWKYFVPUUQXGXOJVQUPXGUUSCXOXGUUEXOEZRZUUTUUJRZTUUSUVAUUTUUJUUTUU
+      TTZXGUUTUUTUUTVSZWTUVCUUTUVDWLUUTWASWCUUTUUNXGUUTUUMUUNUUEXNBWBUUOOWCWEUU
+      RUVBUUEXOJWIWFSWGCXOXPWHWJZXGXKXOKZJKQJKUUCQXGUVFQJXGAXNUDULUVFQNXGAYOWMX
+      JAXNBWNOVJXKXOJWOJWPWQXLXPWRWJXAXGYJYEXIXMNYKYPAXJVAVBWSXGXMXQXGXMXGUUAXM
+      XBEUUPXLXCOXDXGXQXGUUBXQXBEUVEXPXCOXDXEXF $.
+  $}
+
+  $( The prime-counting function ` ppi ` at ` 1 ` .  (Contributed by Mario
+     Carneiro, 21-Sep-2014.) $)
+  ppi1 $p |- ( ppi ` 1 ) = 0 $=
+    ( c1 cppi cfv c2 cfz co cprime cin chash cc0 cz wcel wceq ppival2 ax-mp clt
+    1z c0 wbr eqtri 1lt2 wb 2z fzn mp2an mpbi ineq1i 0in fveq2i hash0 ) ABCZDAE
+    FZGHZICZJAKLZUKUNMQANOUNRICJUMRIUMRGHRULRGADPSZULRMZUADKLUOUPUQUBUCQDAUDUEU
+    FUGGUHTUIUJTT $.
+
+  ${
+    ppi1i.m $e |- M e. NN0 $.
+    ppi1i.n $e |- N = ( M + 1 ) $.
+    ppi1i.p $e |- ( ppi ` M ) = K $.
+    ${
+      ppi1i.1 $e |- N e. Prime $.
+      $( Inference form of ~ ppiprm .  (Contributed by Mario Carneiro,
+         21-Sep-2014.) $)
+      ppi1i $p |- ( ppi ` N ) = ( K + 1 ) $=
+        ( cppi cfv c1 caddc co fveq2i cz wcel cprime wceq nn0zi eqeltrri ppiprm
+        mp2an oveq1i 3eqtri ) CHIBJKLZHIZBHIZJKLZAJKLCUDHEMBNOUDPOUEUGQBDRCUDPE
+        GSBTUAUFAJKFUBUC $.
+    $}
+
+    ${
+      ppi2i.1 $e |- -. N e. Prime $.
+      $( Inference form of ~ ppinprm .  (Contributed by Mario Carneiro,
+         21-Sep-2014.) $)
+      ppi2i $p |- ( ppi ` N ) = K $=
+        ( cppi cfv c1 caddc co fveq2i cz wcel cprime wn wceq nn0zi eleq1i mp2an
+        mtbi ppinprm 3eqtri ) CHIBJKLZHIZBHIZACUEHEMBNOUEPOZQUFUGRBDSCPOUHGCUEP
+        ETUBBUCUAFUD $.
+    $}
+  $}
+
+  $( The prime-counting function ` ppi ` at ` 2 ` .  (Contributed by Mario
+     Carneiro, 21-Sep-2014.) $)
+  ppi2 $p |- ( ppi ` 2 ) = 1 $=
+    ( c2 cppi cfv cc0 c1 caddc co 1nn0 df-2 ppi1 2prm ppi1i 1e0p1 eqtr4i ) ABCD
+    EFGEDEAHIJKLMN $.
+
+  $( The prime-counting function ` ppi ` at ` 3 ` .  (Contributed by Mario
+     Carneiro, 21-Sep-2014.) $)
+  ppi3 $p |- ( ppi ` 3 ) = 2 $=
+    ( c3 cppi cfv c1 caddc co c2 2nn0 df-3 ppi2 3prm ppi1i df-2 eqtr4i ) ABCDDE
+    FGDGAHIJKLMN $.
+
+  $( Closure of the prime-counting function ` ppi ` in the positive integers.
+     (Contributed by Mario Carneiro, 21-Sep-2014.) $)
+  ppiqnncl $p |- ( ( A e. QQ /\ 2 <_ A ) -> ( ppi ` A ) e. NN ) $=
+    ( cq wcel c2 cle wbr wa cppi cfv cz c1 cn ppiqcl adantr nn0zd ppi2 2z ax-mp
+    cn0 zq ppiqwordi mp3an1 eqbrtrrid elnnz1 sylanbrc ) ABCZDAEFZGZAHIZJCKUIEFU
+    ILCUHUIUFUISCUGAMNOUHKDHIZUIEPDBCZUFUGUJUIEFDJCUKQDTRDAUAUBUCUIUDUE $.
+
+  $( The prime-counting function ` ppi ` is zero iff its argument is less than
+     ` 2 ` .  (Contributed by Mario Carneiro, 22-Sep-2014.) $)
+  ppiqeq0 $p |- ( A e. QQ -> ( ( ppi ` A ) = 0 <-> A < 2 ) ) $=
+    ( cq wcel cppi cfv cc0 wceq c2 clt wbr wn wi cz 2z zq ax-mp cle wb adantr
+    c1 wdc qdclt mpan2 wne cr 2re qre lenlt sylancr wa ppiqnncl nnne0d ex df-ne
+    sylbird imbitrdi condc sylc cfl flqcl syl 1z a1i caddc co flqlt biimpa df-2
+    breqtrdi zleltp1 sylancl mpbird ppiqwordi syl3anc ppiqfl 3brtr3d cn0 ppiqcl
+    ppi1 nn0le0eq0 mpbid impbid ) ABCZADEZFGZAHIJZWCWFUAZWFKZWEKZLWEWFLWCHBCZWG
+    HMCZWJNHOPAHUBUCWCWHWDFUDZWIWCWHHAQJZWLWCHUECAUECWMWHRUFAUGHAUHUIWCWMWLWCWM
+    UJWDAUKULUMUOWDFUNUPWFWEUQURWCWFWEWCWFUJZWDFQJZWEWNAUSEZDEZTDEZWDFQWNWPBCZT
+    BCZWPTQJZWQWRQJWCWSWFWCWPMCZWSAUTZWPOVASWTWNTMCZWTVBTOPVCWNXAWPTTVDVEZIJZWN
+    WPHXEIWCWFWPHIJZWCWKWFXGRNAHVFUCVGVHVIWNXBXDXAXFRWCXBWFXCSVBWPTVJVKVLWPTVMV
+    NWCWQWDGWFAVOSWRFGWNVSVCVPWNWDVQCZWOWERWCXHWFAVRSWDVTVAWAUMWB $.
+
+  ${
+    $d A w $.  $d k w $.
+    $( The prime-counting function ` ppi ` is strictly less than the identity.
+       (Contributed by Mario Carneiro, 22-Sep-2014.) $)
+    ppiqltx $p |- ( ( A e. QQ /\ 0 < A ) -> ( ppi ` A ) < A ) $=
+      ( cq wcel cc0 clt wbr wa cfv cppi wceq ad2antrr simpr cr c1 fveq2 breq12d
+      cn0 id syl adantr vw vk cfl cn ppiqcl nn0red nnred qre ppiqfl cv caddc co
+      ppi1 0lt1 eqbrtri nnq cz 1z zq ax-mp qaddcl sylancl peano2re cle ppiqp1le
+      nnre 1red ltadd1dd lelttrd ex nnind eqbrtrrd flqle ltletrd fveq2d c2 2pos
+      wb 0z ppiqeq0 mp2b mpbir eqtrdi eqtr3d simplr eqbrtrd wo flqge0nn0 syldan
+      0red ltled elnn0 sylib mpjaodan ) ABCZDAEFZGZAUCHZUDCZAIHZAEFWRDJZWQWSGZW
+      TWRAXBWTWOWTQCWPWSAUEKUFXBWRWQWSLZUGWOAMCZWPWSAUHZKXBWRIHZWTWREWOXFWTJZWP
+      WSAUIZKXBWSXFWREFZXCUAUJZIHZXJEFNIHZNEFUBUJZIHZXMEFZXMNUKULZIHZXPEFZXIUAU
+      BWRXJNJZXKXLXJNEXJNIOXSRPXJXMJZXKXNXJXMEXJXMIOXTRPXJXPJZXKXQXJXPEXJXPIOYA
+      RPXJWRJZXKXFXJWREXJWRIOYBRPXLDNEUMUNUOXMUDCZXOXRYCXOGZXQXNNUKULZXPYDXQYCX
+      QQCZXOYCXPBCZYFYCXMBCZNBCZYGXMUPZNUQCYIURNUSUTXMNVAVBXPUESTUFYDXNMCYEMCYD
+      XNYCXNQCZXOYCYHYKYJXMUESTUFZXNVCSYDXMMCZXPMCYCYMXOXMVFTZXMVCSYCXQYEVDFZXO
+      YCYHYOYJXMVESTYDXNXMNYLYNYDVGYCXOLVHVIVJVKSVLWOWRAVDFWPWSAVMKVNWQXAGZWTDA
+      EYPXFWTDWOXGWPXAXHKYPXFDIHZDYPWRDIWQXALVOYQDJZDVPEFZVQDUQCDBCYRYSVRVSDUSD
+      VTWAWBWCWDWOWPXAWEWFWQWRQCZWSXAWGWOWPDAVDFYTWQDAWQWJWOXDWPXETWOWPLWKAWHWI
+      WRWLWMWN $.
   $}
 
   ${
@@ -198593,6 +198905,159 @@ $)
       DVQVMWQVQIHWTWSUPTXDWBVMWTWBIHWQXBUQTVHVLXCUNVQWBAVDURUSWGWMAQUTVAVMWJVSW
       KWDSVHVLVIWJVSKWOABEDVBVCVHVLVJWKWDKWPACFDVBVCVEVHVLWEIHWLWIKVMBCWOWPVFAW
       EGDVBVCVG $.
+  $}
+
+  ${
+    ppiublem1.1 $e |- ( N <_ 6 /\ ( ( P e. Prime /\ 4 <_ P ) ->
+      ( ( P mod 6 ) e. ( N ... 5 ) -> ( P mod 6 ) e. { 1 , 5 } ) ) ) $.
+    ppiublem1.2 $e |- M e. NN0 $.
+    ppiublem1.3 $e |- N = ( M + 1 ) $.
+    ppiublem1.4 $e |- ( 2 || M \/ 3 || M \/ M e. { 1 , 5 } ) $.
+    $( Lemma for ~ ppiqub .  (Contributed by Mario Carneiro, 12-Mar-2014.) $)
+    ppiublem1 $p |- ( M <_ 6 /\ ( ( P e. Prime /\ 4 <_ P ) ->
+      ( ( P mod 6 ) e. ( M ... 5 ) -> ( P mod 6 ) e. { 1 , 5 } ) ) ) $=
+      ( c6 cle wbr wcel c4 co c5 wi wb cz c2 cdvds c3 cprime cmo cfz cpr simpli
+      wa caddc df-6 3brtr3i nn0rei 5re 1re leadd1i mpbir 6re ltleii letri mp2an
+      c1 5lt6 wceq wo cuz cfv nn0zi 5nn eluz2 mpbir3an elfzp12 ax-mp w3o cn 2nn
+      nnzi 6nn prmz adantr w3a cmul 3z 2z dvdsmul2 3t2e6 breqtri mpan2 mp3an12i
+      dvdsmod uzid simpl dvdsprm sylancr bitrd simpr breq2 syl5ibrcom clt wn 4z
+      2lt4 zltnle mpbi pm2.21i syl6 sylbid imbi1d syl5ibcom com3r dvdsmul1 df-3
+      3nn peano2uz eqeltri 3lt4 eleq1a a1d 3jaoi oveq1i eleq2i simpri biimtrrid
+      jaod biimtrid pm3.2i ) BHIJZAUAKZLAIJZUFZAHUBMZBNUCMKZYHUSNUDZKZOOBNIJZNH
+      IJYDYLBUSUGMZNUSUGMZIJCHYMYNICHIJZYGYHCNUCMZKZYKOOZDUEFUHUIBNUSBEUJZUKULU
+      MUNZNHUKUOUTUPBNHYSUKUOUQURYIYHBVAZYHYMNUCMZKZVBZYGYKNBVCVDKZYIUUDPUUEBQK
+      NQKYLBEVENVFVNYTBNVGVHYHBNVIVJYGUUAYKUUCRBSJZTBSJZBYJKZVKYGUUAYKOZOZGUUFU
+      UJUUGUUHYGUUAUUFYKYGRYHSJZYKOUUAUUFYKOYGUUKRAVAZYKYGUUKRASJZUULRVLKZHVLKZ
+      YGAQKZUUKUUMPZVMVOYEUUPYFAVPVQZUUNUUOUUPVRRHSJUUQRTRVSMZHSTQKZRQKZRUUSSJV
+      TWATRWBURWCWDRAHWGWEWFYGRRVCVDZKZYEUUMUULPUVAUVCWARWHVJZYEYFWIZARWJWKWLYG
+      UULLRIJZYKYGUVFUULYFYEYFWMZRALIWNWOUVFYKRLWPJZUVFWQZWSUVALQKZUVHUVIPWAWRR
+      LWTURXAXBXCXDUUAUUKUUFYKYHBRSWNXEXFXGYGUUAUUGYKYGTYHSJZYKOUUAUUGYKOYGUVKT
+      AVAZYKYGUVKTASJZUVLTVLKZUUOYGUUPUVKUVMPZXJVOUURUVNUUOUUPVRTHSJUVOTUUSHSUU
+      TUVATUUSSJVTWATRXHURWCWDTAHWGWEWFYGTUVBKYEUVMUVLPTRUSUGMZUVBXIUVCUVPUVBKU
+      VDRRXKVJXLUVEATWJWKWLYGUVLLTIJZYKYGUVQUVLYFUVGTALIWNWOUVQYKTLWPJZUVQWQZXM
+      UUTUVJUVRUVSPVTWRTLWTURXAXBXCXDUUAUVKUUGYKYHBTSWNXEXFXGUUHUUIYGBYJYHXNXOX
+      PVJUUCYQYGYKYPUUBYHCYMNUCFXQXRYOYRDXSXTYAYBYC $.
+  $}
+
+  $( A prime greater than ` 3 ` does not divide ` 2 ` or ` 3 ` , so its residue
+     ` mod 6 ` is ` 1 ` or ` 5 ` .  (Contributed by Mario Carneiro,
+     12-Mar-2014.) $)
+  ppiublem2 $p |- ( ( P e. Prime /\ 4 <_ P ) -> ( P mod 6 ) e. { 1 , 5 } ) $=
+    ( wcel c4 cle wbr c6 co cc0 c5 cfz c1 cz cn wi c2 c3 cdvds ppiublem1 3mix1i
+    c0 cprime cmo cpr cmin prmz adantr 6nn zmodfz sylancl 6m1e5 oveq2i eleqtrdi
+    wa 6re leidi noel pm2.21i clt wceq 5lt6 wb nnzi 5nn fzn mp2an eleq2s pm3.2i
+    mpbi a1i 5nn0 df-6 elexi prid2 3mix3i 4nn0 df-5 z4even 3nn0 3z iddvds ax-mp
+    df-4 3mix2i 2nn0 df-3 z2even 1nn0 df-2 1ex prid1 0nn0 1e0p1 z0even simpri
+    mpd ) AUABZCADEZUMZAFUBGZHIJGZBZWSKIUCZBZWRWSHFKUDGZJGZWTWRALBZFMBWSXEBWPXF
+    WQAUEUFUGAFUHUIXDIHJUJUKULHFDEWRXAXCNNAHKAKOAOPAPCACIAIFFFDEWRWSFIJGZBXCNZN
+    FUNUOXHWRXCWSTXGWSTBXCWSUPUQIFUREZXGTUSZUTFLBILBXIXJVAFUGVBIVCVBFIVDVEVHVFV
+    IVGVJVKIXBBOIQEPIQEKIIMVCVLVMVNRVOVPOCQEPCQECXBBVQSRVRWBPPQEZOPQEPXBBPLBXKV
+    SPVTWAWCRWDWEOOQEPOQEOXBBWFSRWGWHKXBBOKQEPKQEKIWIWJVNRWKWLOHQEPHQEHXBBWMSRW
+    NWO $.
+
+  ${
+    $d k x N $.
+    $( An upper bound on the prime-counting function ` ppi ` , which counts the
+       number of primes less than ` N ` .  (Contributed by Mario Carneiro,
+       13-Mar-2014.) $)
+    ppiqub $p |- ( ( N e. QQ /\ 0 <_ N ) ->
+                  ( ppi ` N ) <_ ( ( N / 3 ) + 2 ) ) $=
+      ( vk wcel cc0 cle wbr c3 cfv cdiv co c2 caddc cmin c6 c1 c5 a1i wceq syl
+      cr vx cq wa cppi cv cmo c4 cfl cfz crab nn0red adantr 2re resubcl sylancl
+      chash cfn cn0 wss wdc wral cz 4z ssrab2 wn wo sylibr cn elfzelz 6nn zdceq
+      1z 5nn wb elprg mpbird dcand elrab dcbii ralrimiva ssfidc syl3anc nndivre
+      qre cprime cin ppi3 oveq12d cuz oveq1i fveq2i syl2anc znq flqcld peano2re
+      zred 5re flqle lesub1dd clt 6re 6pos lediv1 syl112anc mpbid letrd rabbiia
+      3z eqtr4i c0 eqeq1d 1re ax-mp eqtri eqtrid cdvds nnq modqid mp4an moddvds
+      zq eqeq2i 4m1e3 2cn ax-1cn 0re ltleii cmul pm3.2i mp2an oveq2i eqtrd cneg
+      6cn 5cn 3cn cc cap recnd sylancr cpr ppiqcl fzfigd animorrl adantl zmodcl
+      flqcl df-dc nn0zd nnzi dcor dcbid oveq1 eleq1d hashcl ppiqfl flqge biimpa
+      sylc 3nn mpan2 eluz2 syl3anbrc ppidif df-4 ineq1i eqtr4di eqtr3d dfin5 wi
+      cdom elfzle1 ppiublem2 expcom ss2rabi eqsstri ssdomg inss1 elin fihashdom
+      mpisyl prmdcz eqbrtrd peano2zm zsubcld peano2rem leadd1dd le2addd zmodcld
+      1red cun unrab inrab rabeq0 wne 1lt5 ltneii eqtr2 necon3ai mprgbir hashun
+      0le1 1lt6 mp3an13 bitr3id eleqtrrdi hashdvds mvrraddi gt0ap0ii redivclapi
+      1zzd df-3 divgt0ii mulridi breqtrri ltdivmul mp3an mpbir 1e0p1 breqtri 2z
+      2pos 2lt6 flqbi mpbir2an zcnd subid1d 5pos negsubdi2i 3p2e5 pncan2 eqtr3i
+      0z 5lt6 negeqi 3eqtr2i divnegap lenegi mpbi ltnegi 1pneg1e0 neg1cn qnegcl
+      neg0 addcomi neg1z subneg 2timesd df-6 addsub4 mpanr12 oveq1d divsubdirap
+      mulcl mp3an23 2t3e6 3ap0 2ap0 divcanap5 eqtr3id dividapi divdirap 3eqtr3d
+      mp3an3 npcan addassd 3brtr4d lesubaddd adantlr ad2antrr readdcl ppiqwordi
+      mp3an2 breqtrdi simpr 3pos divge0 syl22anc addge02 simpl qletric mpjaodan
+      3re ) AUBCZDAEFZUCZGAEFZAUDHZAGIJZKLJZEFZAGEFZVWDVWGVWKVWEVWDVWGUCZVWHKMJ
+      ZVWIEFVWKVWMVWNBUEZNUFJZOPUUAZCZBUGAUHHZUIJZUJZUPHZVWIVWMVWHTCZKTCZVWNTCV
+      WDVXCVWGVWDVWHAUUBUKZULZUMVWHKUNUOVWDVXBTCVWGVWDVXBVWDVXAUQCZVXBURCVWDVWT
+      UQCZVXAVWTUSZUAUEZVXACZUTZUAVWTVAVXGVWDUGVWSUGVBCZVWDVCQAUUGZUUCZVXIVWDVW
+      RBVWTVDQVWDVXLUAVWTVWDVXJVWTCZUCZVXPVXJNUFJZVWQCZUCZUTVXLVXQVXPVXSVXQVXPV
+      XPVEZVFVXPUTVWDVXPVYAUUDVXPUUHVGZVXQVXSUTVXRORZVXRPRZVFZUTZVXQVYCUTZVYDUT
+      ZVYFVXQVXRVBCZOVBCZVYGVXQVXRVXQVXJVBCZNVHCZVXRURCZVXPVYKVWDVXJUGVWSVIUUEZ
+      VJVXJNUUFUOZUUIZVLVXROVKUOZVXQVYIPVBCZVYHVYPPVMUUJZVXRPVKUOZVYCVYDUUKUUSV
+      XQVXSVYEVXQVYMVXSVYEVNVYOVXROPURVOSUULVPVQVXKVXTVWRVXSBVXJVWTVWOVXJRZVWPV
+      XRVWQVWOVXJNUFUUMZUUNVRVSVGVTUAVWTVXAWAWBZVXAUUOSUKULVWDVWITCZVWGVWDATCZG
+      VHCWUDAWDZUUTAGWCUOZULZVWMVWNVWTWEWFZUPHZVXBEVWMVWSUDHZGUDHZMJZVWNWUJVWMW
+      UKVWHWULKMVWDWUKVWHRVWGAUUPULWULKRVWMWGQWHVWMWUMGOLJZVWSUIJZWEWFZUPHZWUJV
+      WMVWSGWIHZCZWUMWUQRVWMGVBCZVWSVBCZGVWSEFZWUSWUTVWMXHQVWDWVAVWGVXNULZVWDVW
+      GWVBVWDWUTVWGWVBVNXHAGUUQUVAUURGVWSUVBUVCZGVWSUVDSWUIWUPUPVWTWUOWEUGWUNVW
+      SUIUVEWJUVFWKUVGUVHVWDWUJVXBEFZVWGVWDWVEWUIVXAUVKFZVWDVXGWUIVXAUSWVFWUCWU
+      IVWOWECZBVWTUJVXABVWTWEUVIWVGVWRBVWTVWOVWTCZUGVWOEFZWVGVWRUVJVWOUGVWSUVLW
+      VGWVIVWRVWOUVMUVNSUVOUVPWUIVXAUQUVQUWAVWDWUIUQCZVXGWVEWVFVNVWDVXHWUIVWTUS
+      ZVXJWUICZUTZUAVWTVAWVJVXOWVKVWDVWTWEUVRQVWDWVMUAVWTVXQVXPVXJWECZUCZUTWVMV
+      XQVXPWVNVYBVXQVYKWVNUTVYNVXJUWBSVQWVLWVOVXJVWTWEUVSVSVGVTUAVWTWUIWAWBWUCW
+      UIVXAUVTWLVPULUWCVWMVWSOMJZNIJZUHHZVWSPMJZNIJZUHHZOLJZLJZAOMJZNIJZAPMJZNI
+      JZOLJZLJZVXBVWIEVWMWVRWWBWWEWWHVWMWVRVWMWVQVWMWVPVBCZVYLWVQUBCZVWMWVAWWJW
+      VCVWSUWDSZVJWVPNWMUOZWNZWPZVWMWWATCWWBTCVWMWWAVWMWVTVWMWVSVBCVYLWVTUBCZVW
+      MVWSPWVCVYRVWMVYSQZUWEVJWVSNWMUOZWNZWPZWWAWOSVWMWWDTCZVYLWWETCVWDWXAVWGVW
+      DWUEWXAWUFAUWFSULZVJWWDNWCUOZVWMWWGTCZWWHTCVWMWWFTCZVYLWXDVWMWUEPTCZWXEVW
+      DWUEVWGWUFULZWQAPUNUOZVJWWFNWCUOZWWGWOSVWMWVRWVQWWEWWOVWMWWKWVQTCWWMWVQWD
+      SWXCVWMWWKWVRWVQEFWWMWVQWRSVWMWVPWWDEFZWVQWWEEFZVWMVWSAOVWMVWSWVCWPZWXGVW
+      MUWJZVWDVWSAEFVWGAWRULZWSVWMWVPTCWXANTCZDNWTFZWXJWXKVNVWMWVPWWLWPWXBWXOVW
+      MXAQZWXPVWMXBQZWVPWWDNXCXDXEXFVWMWWAWWGOWWTWXIWXMVWMWWAWVTWWGWWTVWMWVSTCZ
+      VYLWVTTCVWMVWSTCWXFWXSWXLWQVWSPUNUOZVJWVSNWCUOWXIVWMWWPWWAWVTEFWWRWVTWRSV
+      WMWVSWWFEFZWVTWWGEFZVWMVWSAPWXLWXGWXFVWMWQQWXNWSVWMWXSWXEWXOWXPWYAWYBVNWX
+      TWXHWXQWXRWVSWWFNXCXDXEXFUWGUWHVWMVXBVWPORZBVWTUJZUPHZVWPPRZBVWTUJZUPHZLJ
+      ZWWCVWDVXBWYIRVWGVWDVXBWYDWYGUWKZUPHZWYIVXAWYJUPVXAWYCWYFVFZBVWTUJWYJVWRW
+      YLBVWTWVHVWPURCVWRWYLVNWVHVWONVWOUGVWSVIZVYLWVHVJQUWIVWPOPURVOSXGWYCWYFBV
+      WTUWLXIWKVWDWYDUQCZWYGUQCZWYDWYGWFZXJRZWYKWYIRVWDVXHWYDVWTUSZVXJWYDCZUTZU
+      AVWTVAWYNVXOWYRVWDWYCBVWTVDQVWDWYTUAVWTVXQVXPVYCUCZUTWYTVXQVXPVYCVYBVYQVQ
+      WYSXUAWYCVYCBVXJVWTWUAVWPVXROWUBXKVRVSVGVTUAVWTWYDWAWBVWDVXHWYGVWTUSZVXJW
+      YGCZUTZUAVWTVAWYOVXOXUBVWDWYFBVWTVDQVWDXUDUAVWTVXQVXPVYDUCZUTXUDVXQVXPVYD
+      VYBVYTVQXUCXUEWYFVYDBVXJVWTWUAVWPVXRPWUBXKVRVSVGVTUAVWTWYGWAWBWYQVWDWYPWY
+      CWYFUCZBVWTUJZXJWYCWYFBVWTUWMXUGXJRXUFVEZBVWTXUFBVWTUWNXUHWVHOPUWOXUHOPXL
+      UWPUWQXUFOPVWPOPUWRUWSXMQUWTXNQWYDWYGUXAWBXOULVWMWYEWVRWYHWWBLVWMWYEWVRUG
+      OMJZOMJZNIJZUHHZMJZWVRVWMWYENVWOOMJXPFZBVWTUJZUPHXUMWYDXUOUPWYCXUNBVWTWVH
+      VWOVBCZWYCXUNVNWYMWYCVWPONUFJZRZXUPXUNXUQOVWPOUBCZNUBCZDOEFONWTFXUQORVYJX
+      USVLOYAXMVYLXUTVJNXQXMZUXBUXCONXRXSYBVYLXUPVYJXURXUNVNVJVLVWOONXTUXDUXESX
+      GWKVWMBUGVWSONVYLVWMVJQZVXMVWMVCQZVWMVWSWURXUIWIHWVDXUIGWIYCWKUXFZVWMUXKU
+      XGXOVWMXUMWVRDMJWVRXULDWVRMXULKNIJZUHHZDXUKXVEUHXUJKNIXUIKOYDYEXUIGKOLJYC
+      UXLXNUXHWJWKXVFDRZDXVEEFZXVEDOLJZWTFZDXVEYFKNUMXANXAXBUXIZUXJZKNUMXAUYBXB
+      UXMZYGXVEOXVIWTXVEOWTFZKNOYHJZWTFZKNXVOWTUYCNYNUXNUXOVXDOTCWXOWXPUCXVNXVP
+      VNUMXLWXOWXPXAXBYIKONUXPUXQUXRZUXSUXTXVEUBCZDVBCXVGXVHXVJUCVNKVBCVYLXVRUY
+      AVJKNWMYJZUYMXVEDUYDYJUYEXNYKVWMWVRVWMWVRWWNUYFUYGXOYLVWMWYHWWAXUIPMJZNIJ
+      ZUHHZMJZWWBVWMWYHNVWOPMJXPFZBVWTUJZUPHXWCWYGXWEUPWYFXWDBVWTWVHXUPWYFXWDVN
+      WYMWYFVWPPNUFJZRZXUPXWDXWFPVWPPUBCZXUTDPEFPNWTFXWFPRPVHCXWHVMPXQXMXVADPYF
+      WQUYHYGUYNPNXRXSYBVYLXUPVYRXWGXWDVNVJVYSVWOPNXTUXDUXESXGWKVWMBUGVWSPNXVBX
+      VCXVDWWQUXGXOVWMXWCWWAOYMZMJZWWBXWBXWIWWAMXWBXVEYMZUHHZXWIXWAXWKUHXWAKYMZ
+      NIJZXWKXVTXWMNIXVTGPMJPGMJZYMXWMXUIGPMYCWJPGYOYPUYIXWOKGKLJZGMJZXWOKXWPPG
+      MUYJWJGYQCZKYQCZXWQKRYPYDGKUYKYJUYLUYOUYPWJXWSNYQCZNDYRFZXWKXWNRYDYNXVKKN
+      UYQUXQXIWKXWLXWIRZXWIXWKEFZXWKXWIOLJZWTFZXVEOEFXXCXVEOXVLXLXVQYGXVEOXVLXL
+      UYRUYSXWKDYMZXXDWTDXVEWTFXWKXXFWTFXVMDXVEYFXVLUYTUYSXXFOXWILJZXXDXXFDXXGV
+      UDVUAXIXWIOVUBYEVUEXIUXTXWKUBCZXWIVBCXXBXXCXXEUCVNXVRXXHXVSXVEVUCXMVUFXWK
+      XWIUYDYJUYEXNYKVWMWWAYQCOYQCZXWJWWBRVWMWWAWWSUYFYEWWAOVUGUOXOYLWHYLVWMVWI
+      OMJZOLJZWWEWWGLJZOLJVWIWWIVWMXXJXXLOLVWMKAYHJZNMJZNIJZWWDWWFLJZNIJZXXJXXL
+      VWMXXNXXPNIVWMXXNAALJZOPLJZMJZXXPVWMXXMXXRNXXSMVWMAVWMAWXGYSZVUHNXXSRVWMN
+      POLJXXSVUIPOYOYEVUEXNQWHVWMAYQCZXYBXXTXXPRZXYAXYAXYBXYBUCXXIPYQCXYCYEYOAA
+      OPVUJVUKWLYLVULVWMXXOXXMNIJZNNIJZMJZXXJVWMXXMYQCZXXOXYFRZVWMXWSXYBXYGYDXY
+      AKAVUNYTXYGXWTXWTXXAUCZXYHYNXWTXXAYNXVKYIZXXMNNVUMVUOSVWMXYDVWIXYEOMVWMXY
+      DXXMKGYHJZIJZVWIXYKNXXMIVUPYKVWMXYBXYLVWIRZXYAXYBXWRGDYRFZUCXWSKDYRFZUCXY
+      MXWRXYNYPVUQYIXWSXYOYDVURYIAGKVUSVUOSVUTXYEORVWMNYNXVKVVAQWHYLVWMWWDYQCZW
+      WFYQCZXXQXXLRZVWMWWDWXBYSVWMWWFWXHYSXYPXYQXYIXYRXYJWWDWWFNVVBVVDWLVVCVULV
+      WMVWIYQCXXIXXKVWIRVWMVWIWUHYSYEVWIOVVEUOVWMWWEWWGOVWMWWEWXCYSVWMWWGWXIYSX
+      XIVWMYEQVVFVVCVVGXFVWMVWHKVWIVXFVXDVWMUMQWUHVVHXEVVIVWFVWLUCZVWHKVWJVWDVX
+      CVWEVWLVXEVVJVXDXYSUMQXYSWUDVXDVWJTCVWDWUDVWEVWLWUGVVJZUMVWIKVVKUOXYSVWHW
+      ULKEVWDVWLVWHWULEFZVWEVWDGUBCZVWLYUAWUTYUBXHGYAXMZAGVVLVVMVVIWGVVNXYSDVWI
+      EFZKVWJEFZVWFYUDVWLVWFWUEVWEGTCZDGWTFZYUDVWDWUEVWEWUFULVWDVWEVVOYUFVWFVWC
+      QYUGVWFVVPQAGVVQVVRULXYSVXDWUDYUDYUEVNUMXYTKVWIVVSYTXEXFVWFYUBVWDVWGVWLVF
+      YUCVWDVWEVVTGAVWAYTVWB $.
   $}
 
 
@@ -212709,6 +213174,9 @@ htmldef "^c" as
     "<IMG SRC='subc.gif' WIDTH=6 HEIGHT=19 ALT='c' TITLE='c'> ";
   althtmldef "^c" as "&uarr;<SUB>&#x1D450;</SUB>";
   latexdef "^c" as "\uparrow_c";
+htmldef "ppi" as "<U>&pi;</U>";
+  althtmldef "ppi" as "<U>&pi;</U>";
+  latexdef "ppi" as "\pi";
 htmldef "sigma" as
     " <IMG SRC='sigma.gif' WIDTH=10 HEIGHT=19 ALT=' sigma' TITLE='sigma'> ";
   althtmldef "sigma" as " &sigma; ";
