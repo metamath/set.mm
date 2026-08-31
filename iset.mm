@@ -198281,8 +198281,12 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
+  $c theta $.
   $c ppi $.
   $c sigma $.
+
+  $( Extend class notation with the first Chebyshev function. $)
+  ccht $a class theta $.
 
   $( Extend class notation with the prime-counting function pi. $)
   cppi $a class ppi $.
@@ -198292,6 +198296,17 @@ $)
 
   ${
     $d x n k p $.
+    $( Define the first Chebyshev function, which adds up the logarithms of all
+       primes less than ` x ` , see definition in [ApostolNT] p. 75.  The
+       symbol used to represent this function is sometimes the variant greek
+       letter theta shown here and sometimes the greek letter psi, &psi;;
+       however, this notation can also refer to the second Chebyshev function,
+       which adds up the logarithms of prime powers instead.  See
+       ~ https://en.wikipedia.org/wiki/Chebyshev_function for a discussion of
+       the two functions.  (Contributed by Mario Carneiro, 15-Sep-2014.) $)
+    df-cht $a |- theta = ( x e. RR |->
+      sum_ p e. ( ( 0 [,] x ) i^i Prime ) ( log ` p ) ) $.
+
     $( Define the prime &pi; function, which counts the number of primes less
        than or equal to ` x ` , see definition in [ApostolNT] p. 8.  Most often
        ` x ` will be an integer, but many of our theorems support rational
@@ -213284,6 +213299,10 @@ htmldef "^c" as
     "<IMG SRC='subc.gif' WIDTH=6 HEIGHT=19 ALT='c' TITLE='c'> ";
   althtmldef "^c" as "&uarr;<SUB>&#x1D450;</SUB>";
   latexdef "^c" as "\uparrow_c";
+htmldef "theta" as
+    "<IMG SRC='theta.gif' WIDTH=8 HEIGHT=19 ALT=' theta' TITLE='theta'>";
+  althtmldef "theta" as "&theta;";
+  latexdef "theta" as "\theta";
 htmldef "ppi" as "<U>&pi;</U>";
   althtmldef "ppi" as "<U>&pi;</U>";
   latexdef "ppi" as "\pi";
