@@ -198326,6 +198326,27 @@ $)
   $}
 
   ${
+    $d k x y z A $.  $d x y z B $.  $d k y z ph $.
+    efnnfsumcl.1 $e |- ( ph -> A e. Fin ) $.
+    efnnfsumcl.2 $e |- ( ( ph /\ k e. A ) -> B e. RR ) $.
+    efnnfsumcl.3 $e |- ( ( ph /\ k e. A ) -> ( exp ` B ) e. NN ) $.
+    $( Finite sum closure in the log-integers.  (Contributed by Mario Carneiro,
+       7-Apr-2016.) $)
+    efnnfsumcl $p |- ( ph -> ( exp ` sum_ k e. A B ) e. NN ) $=
+      ( vx cv ce cfv cn wcel cr cc wa wceq fveq2 eleq1d cc0 csu crab wss ssrab2
+      vy vz ax-resscn sstri a1i caddc co elrab simpll readdcld cmul recnd efadd
+      simprl syl2anc nnmulcl ad2ant2l eqeltrd elrabd syl2anb adantl 0re 1nn ef0
+      c1 eqtrdi mpbir2an fsumcllem simprbi syl ) ABCDUAZHIZJKZLMZHNUBZMZVOJKZLM
+      ZAUEUFBCVSDVSOUCAVSNOVRHNUDUGUHUIUEIZVSMZUFIZVSMZPWCWEUJUKZVSMZAWDWCNMZWC
+      JKZLMZPZWENMZWEJKZLMZPZWHWFVRWKHWCNVPWCQVQWJLVPWCJRSULVRWOHWENVPWEQVQWNLV
+      PWEJRSULWLWPPZVRWGJKZLMHWGNVPWGQVQWRLVPWGJRSWQWCWEWIWKWPUMZWLWMWOURZUNWQW
+      RWJWNUOUKZLWQWCOMWEOMWRXAQWQWCWSUPWQWEWTUPWCWEUQUSWKWOXALMWIWMWJWNUTVAVBV
+      CVDVEEADIBMPVRCJKZLMHCNVPCQVQXBLVPCJRSFGVCTVSMZAXCTNMVILMZVFVGVRXDHTNVPTQ
+      ZVQVILXEVQTJKVIVPTJRVHVJSULVKUIVLVTVONMWBVRWBHVONVPVOQVQWALVPVOJRSULVMVN
+      $.
+  $}
+
+  ${
     $d k n p q s x y z A $.  $d p K $.  $d p x M $.  $d p N $.  $d s x S $.
     $d k n p x y z B $.  $d p P $.
     $( The set of primes less than ` A ` expressed using a finite set of
