@@ -16697,6 +16697,7 @@ New usage of "fh2" is discouraged (3 uses).
 New usage of "fh2i" is discouraged (1 uses).
 New usage of "fh3i" is discouraged (1 uses).
 New usage of "fh4i" is discouraged (0 uses).
+New usage of "fimactOLD" is discouraged (0 uses).
 New usage of "fimadmfoALT" is discouraged (0 uses).
 New usage of "fineqvacALT" is discouraged (0 uses).
 New usage of "fldcALTV" is discouraged (0 uses).
@@ -20380,6 +20381,7 @@ Proof modification of "falimtru" is discouraged (6 steps).
 Proof modification of "falseral0OLD" is discouraged (76 steps).
 Proof modification of "festinoALT" is discouraged (24 steps).
 Proof modification of "ffunOLD" is discouraged (17 steps).
+Proof modification of "fimactOLD" is discouraged (43 steps).
 Proof modification of "fimadmfoALT" is discouraged (108 steps).
 Proof modification of "fineqvacALT" is discouraged (40 steps).
 Proof modification of "fldcrngo" is discouraged (65 steps).
