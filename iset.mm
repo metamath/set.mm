@@ -198426,6 +198426,16 @@ $)
       nnrpd ) ACDZAEFZGFHAIJZKLZBMZNFZBRZGFOUJUKUPGABPQUJUMUOBASUJUNUMDZUAZUNUR
       UNURUNKDUNODURULKUNUJUQUBUCUNUDUEZUIZUFURUOGFUNOURUNUTUGUSTUHT $.
 
+    $( The Chebyshev function is always positive.  (Contributed by Mario
+       Carneiro, 15-Sep-2014.) $)
+    chtqge0 $p |- ( A e. QQ -> 0 <_ ( theta ` A ) ) $=
+      ( vp cq wcel cc0 cicc co cprime cin cv clog cfv csu ccht cle ppiqfi wa cn
+      c1 clt wbr c2 cuz simpr elin2d prmuz2 eluz2b2 sylib simpld nnrpd relogcld
+      syl nnred simprd rplogcld rpge0d fsumge0 chtqval breqtrrd ) ACDZEEAFGZHIZ
+      BJZKLZBMANLOUTVBVDBAPUTVCVBDZQZVCVFVCVFVCRDZSVCTUAZVFVCUBUCLDZVGVHQVFVCHD
+      VIVFVAHVCUTVEUDUEVCUFULVCUGUHZUIZUJUKVFVDVFVCVFVCVKUMVFVGVHVJUNUOUPUQABUR
+      US $.
+
     $( Value of the prime-counting function pi.  (Contributed by Mario
        Carneiro, 15-Sep-2014.) $)
     ppiqval $p |- ( A e. QQ ->
