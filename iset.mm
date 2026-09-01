@@ -198417,6 +198417,15 @@ $)
       VBUPUTJUOAFHRTUAAUBUNVAUSBAUCUNURVAEZUDZURVDURVDURJEURUEEVDUTJURUNVCUFUGU
       RUHUIUJUKULUM $.
 
+    $( The Chebyshev function is closed in the log-integers.  (Contributed by
+       Mario Carneiro, 22-Sep-2014.)  (Revised by Mario Carneiro,
+       7-Apr-2016.) $)
+    efchtqcl $p |- ( A e. QQ -> ( exp ` ( theta ` A ) ) e. NN ) $=
+      ( vp cq wcel ccht cfv ce cc0 cicc co cprime cin cv clog cn chtqval fveq2d
+      csu ppiqfi eqeltrd wa simpr elin2d prmnn syl relogcld reeflogd efnnfsumcl
+      nnrpd ) ACDZAEFZGFHAIJZKLZBMZNFZBRZGFOUJUKUPGABPQUJUMUOBASUJUNUMDZUAZUNUR
+      UNURUNKDUNODURULKUNUJUQUBUCUNUDUEZUIZUFURUOGFUNOURUNUTUGUSTUHT $.
+
     $( Value of the prime-counting function pi.  (Contributed by Mario
        Carneiro, 15-Sep-2014.) $)
     ppiqval $p |- ( A e. QQ ->
