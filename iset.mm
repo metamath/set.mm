@@ -198398,6 +198398,15 @@ $)
       VGAUFZUGVGUHUIVLVQAUJEVOPVBVRVJVGAUKUMUNVHVPVEVOBVGMVDVGAKUOUPUQURUSCVCVF
       UTVA $.
 
+    $( Rational closure of the Chebyshev function.  (Contributed by Mario
+       Carneiro, 15-Sep-2014.) $)
+    chtqcl $p |- ( A e. QQ -> ( theta ` A ) e. RR ) $=
+      ( vy vx cq wcel ccht cfv cc0 cicc co cprime cin cv clog csu cr wceq oveq2
+      df-cht ineq1d sumeq1d qre ppiqfi wa simpr elin2d prmnn syl nnrpd relogcld
+      cn fsumrecl fvmptd3 eqeltrd ) ADEZAFGHAIJZKLZBMZNGZBOZPUOCAHCMZIJZKLZUSBO
+      UTPFPCBSVAAQZVCUQUSBVDVBUPKVAAHIRTUAAUBUOUQUSBAUCUOURUQEZUDZURVFURVFURKEU
+      RUKEVFUPKURUOVEUEUFURUGUHUIUJULZUMVGUN $.
+
     $( Value of the prime-counting function pi.  (Contributed by Mario
        Carneiro, 15-Sep-2014.) $)
     ppiqval $p |- ( A e. QQ ->
