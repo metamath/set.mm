@@ -198407,6 +198407,16 @@ $)
       UTPFPCBSVAAQZVCUQUSBVDVBUPKVAAHIRTUAAUBUOUQUSBAUCUOURUQEZUDZURVFURVFURKEU
       RUKEVFUPKURUOVEUEUFURUGUHUIUJULZUMVGUN $.
 
+    $( Value of the Chebyshev function.  (Contributed by Mario Carneiro,
+       15-Sep-2014.) $)
+    chtqval $p |- ( A e. QQ -> ( theta ` A ) =
+      sum_ p e. ( ( 0 [,] A ) i^i Prime ) ( log ` p ) ) $=
+      ( vx cq wcel cc0 cv cicc co cprime cin clog cfv cr ccht df-cht wceq oveq2
+      csu ineq1d sumeq1d qre ppiqfi wa cn simpr elin2d prmnn syl nnrpd relogcld
+      fsumrecl fvmptd3 ) ADEZCAFCGZHIZJKZBGZLMZBSFAHIZJKZUSBSNONCBPUOAQZUQVAUSB
+      VBUPUTJUOAFHRTUAAUBUNVAUSBAUCUNURVAEZUDZURVDURVDURJEURUEEVDUTJURUNVCUFUGU
+      RUHUIUJUKULUM $.
+
     $( Value of the prime-counting function pi.  (Contributed by Mario
        Carneiro, 15-Sep-2014.) $)
     ppiqval $p |- ( A e. QQ ->
