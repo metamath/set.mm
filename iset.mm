@@ -198628,6 +198628,20 @@ $)
       XDWJYBXTHWKWLWMXFXOXTHXFXNXDMNXFXDDEZXNXDPXCUUBXEAWNQZXDWOTWPWQXFXRYBHXFX
       QAMNXCXQAPXEAWOQWPWQRXFXDWREZXGXPPXFUUBUUDUUCXDXATZXDXBTXFAWREZXJXSPXCUUF
       XEAXAQZAXBTRWSXFUUDXLXIPUUEXDBWTTXFUUFXMXKPUUGABWTTR $.
+
+    $( The Chebyshev function is weakly increasing.  (Contributed by Mario
+       Carneiro, 22-Sep-2014.) $)
+    chtqwordi $p |- ( ( A e. QQ /\ B e. QQ /\ A <_ B ) ->
+      ( theta ` A ) <_ ( theta ` B ) ) $=
+      ( vp cq wcel cle wbr cc0 cicc cprime cin cfv csu ccht cfn ppiqfi 3ad2ant2
+      co wa cr w3a cv clog cn c1 clt cuz simpr elin2d prmuz2 syl eluz2b2 simpld
+      c2 sylib nnred simprd rplogcld rpred rpge0d wss 0red qre 0le0 simp3 iccss
+      a1i syl22anc ssrind 3ad2ant1 fsumlessfi wceq chtqval 3brtr4d ) ADEZBDEZAB
+      FGZUAZHAIRZJKZCUBZUCLZCMZHBIRZJKZWBCMZANLZBNLZFVRWEWBVTCVPVOWEOEVQBPQVRWA
+      WEEZSZWBWJWAWJWAWJWAUDEZUEWAUFGZWJWAUNUGLEZWKWLSWJWAJEWMWJWDJWAVRWIUHUIWA
+      UJUKWAULUOZUMUPWJWKWLWNUQURZUSWJWBWOUTVRVSWDJVRHTEBTEZHHFGZVQVSWDVAVRVBVP
+      VOWPVQBVCQWQVRVDVGVOVPVQVEHBHAVFVHVIVOVPVTOEVQAPVJVKVOVPWGWCVLVQACVMVJVPV
+      OWHWFVLVQBCVMQVN $.
   $}
 
   $( The prime-counting function ` ppi ` does not change off the integers.
