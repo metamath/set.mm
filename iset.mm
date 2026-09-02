@@ -198528,6 +198528,15 @@ $)
       GFVIVQGFVKVNCVPGUGVIVJUHVPAUIUJZUMUKVKVRVKVOVQDVSVJVOUNUOZVIVJVNCGUPZWCVJ
       BBLMZWDVJBTFWEBUQBURSVNWECBGVMBBLUSUTVAVNCGVBSRWAVQWBVEVCVDVRVFVGVH $.
 
+    $( The Chebyshev function does not change off the integers.  (Contributed
+       by Mario Carneiro, 22-Sep-2014.) $)
+    chtqfl $p |- ( A e. QQ -> ( theta ` ( |_ ` A ) ) = ( theta ` A ) ) $=
+      ( vp cq wcel cc0 cfl cfv cicc co cprime cin csu ccht c2 cfz wceq ppiqsval
+      syl 3eqtr4d chtqval cv clog flqidm oveq2d ineq1d cz flqcl zq sumeq1d ) AC
+      DZEAFGZHIJKZBUAUBGZBLZEAHIJKZUMBLUKMGZAMGUJULUOUMBUJNUKFGZOIZJKZNUKOIZJKU
+      LUOUJURUTJUJUQUKNOAUCUDUEUJUKCDZULUSPUJUKUFDVAAUGUKUHRZUKQRAQSUIUJVAUPUNP
+      VBUKBTRABTS $.
+
     $( The prime-counting function ` ppi ` at a prime.  (Contributed by Mario
        Carneiro, 19-Sep-2014.) $)
     ppiprm $p |- ( ( A e. ZZ /\ ( A + 1 ) e. Prime ) ->
