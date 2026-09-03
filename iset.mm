@@ -198834,6 +198834,14 @@ $)
     ( c3 cppi cfv c1 caddc co c2 2nn0 df-3 ppi2 3prm ppi1i df-2 eqtr4i ) ABCDDE
     FGDGAHIJKLMN $.
 
+  $( The Chebyshev function at ` 2 ` .  (Contributed by Mario Carneiro,
+     22-Sep-2014.) $)
+  cht2 $p |- ( theta ` 2 ) = ( log ` 2 ) $=
+    ( c2 ccht c1 caddc co clog df-2 fveq2i cz wcel cprime wceq 1z 2prm eqeltrri
+    cfv chtprm mp2an cc0 cht1 eqcomi oveq12i crp cr relogcl ax-mp recni addlidi
+    2rp eqtr3i 3eqtri ) ABPCCDEZBPZCBPZULFPZDEZAFPZAULBGHCIJULKJUMUPLMAULKGNOCQ
+    RSUQDEUPUQSUNUQUODUNSTUAAULFGHUBUQUQAUCJUQUDJUIAUEUFUGUHUJUK $.
+
   $( Closure of the prime-counting function ` ppi ` in the positive integers.
      (Contributed by Mario Carneiro, 21-Sep-2014.) $)
   ppiqnncl $p |- ( ( A e. QQ /\ 2 <_ A ) -> ( ppi ` A ) e. NN ) $=
