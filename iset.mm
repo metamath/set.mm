@@ -198788,6 +198788,15 @@ $)
     FZGHZICZJAKLZUKUNMQANOUNRICJUMRIUMRGHRULRGADPSZULRMZUADKLUOUPUQUBUCQDAUDUEU
     FUGGUHTUIUJTT $.
 
+  $( The Chebyshev function at ` 1 ` .  (Contributed by Mario Carneiro,
+     22-Sep-2014.) $)
+  cht1 $p |- ( theta ` 1 ) = 0 $=
+    ( vp c1 ccht cfv cc0 cicc co cprime cin cv csu c0 wcel wceq cz 1z ax-mp cfz
+    c2 3eqtri clog cq zq chtqval cfl ppiqsval flid oveq2i clt wbr 1lt2 wb mp2an
+    2z fzn mpbi eqtri ineq1i 0in sumeq1i sum0 ) BCDZEBFGHIZAJUADZAKZLVDAKEBUBMZ
+    VBVENBOMZVFPBUCQZBAUDQVCLVDAVCSBUEDZRGZHIZLHILVFVCVKNVHBUFQVJLHVJSBRGZLVIBS
+    RVGVIBNPBUGQUHBSUIUJZVLLNZUKSOMVGVMVNULUNPSBUOUMUPUQURHUSTUTVDAVAT $.
+
   ${
     ppi1i.m $e |- M e. NN0 $.
     ppi1i.n $e |- N = ( M + 1 ) $.
