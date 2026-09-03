@@ -17274,6 +17274,7 @@ New usage of "hvsubsub4" is discouraged (3 uses).
 New usage of "hvsubsub4i" is discouraged (2 uses).
 New usage of "hvsubval" is discouraged (24 uses).
 New usage of "hvsubvali" is discouraged (13 uses).
+New usage of "iaaOLD" is discouraged (0 uses).
 New usage of "icccmpALT" is discouraged (0 uses).
 New usage of "id1" is discouraged (0 uses).
 New usage of "idALT" is discouraged (1 uses).
@@ -20611,6 +20612,7 @@ Proof modification of "helloworld" is discouraged (29 steps).
 Proof modification of "hhssbnOLD" is discouraged (39 steps).
 Proof modification of "hirstL-ax3" is discouraged (34 steps).
 Proof modification of "htaOLD" is discouraged (106 steps).
+Proof modification of "iaaOLD" is discouraged (311 steps).
 Proof modification of "icccmpALT" is discouraged (71 steps).
 Proof modification of "id1" is discouraged (2 steps).
 Proof modification of "idALT" is discouraged (26 steps).
