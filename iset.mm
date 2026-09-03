@@ -198842,6 +198842,15 @@ $)
     2rp eqtr3i 3eqtri ) ABPCCDEZBPZCBPZULFPZDEZAFPZAULBGHCIJULKJUMUPLMAULKGNOCQ
     RSUQDEUPUQSUNUQUODUNSTUAAULFGHUBUQUQAUCJUQUDJUIAUEUFUGUHUJUK $.
 
+  $( The Chebyshev function at ` 3 ` .  (Contributed by Mario Carneiro,
+     22-Sep-2014.) $)
+  cht3 $p |- ( theta ` 3 ) = ( log ` 6 ) $=
+    ( c3 ccht cfv c2 c1 caddc co clog c6 df-3 fveq2i cz wcel cprime 2z eqeltrri
+    wceq 3prm mp2an crp chtprm cmul 2rp 3rp relogmul 2t3e6 cht2 eqcomi 3eqtr3ri
+    oveq12i 3eqtri ) ABCDEFGZBCZDBCZULHCZFGZIHCZAULBJKDLMULNMUMUPQOAULNJRPDUASD
+    AUBGZHCZDHCZAHCZFGZUQUPDTMATMUSVBQUCUDDAUESURIHUFKUTUNVAUOFUNUTUGUHAULHJKUJ
+    UIUK $.
+
   $( Closure of the prime-counting function ` ppi ` in the positive integers.
      (Contributed by Mario Carneiro, 21-Sep-2014.) $)
   ppiqnncl $p |- ( ( A e. QQ /\ 2 <_ A ) -> ( ppi ` A ) e. NN ) $=
