@@ -198858,6 +198858,15 @@ $)
     cn0 zq ppiqwordi mp3an1 eqbrtrrid elnnz1 sylanbrc ) ABCZDAEFZGZAHIZJCKUIEFU
     ILCUHUIUFUISCUGAMNOUHKDHIZUIEPDBCZUFUGUJUIEFDJCUKQDTRDAUAUBUCUIUDUE $.
 
+  $( Closure of the Chebyshev function in the positive reals.  (Contributed by
+     Mario Carneiro, 22-Sep-2014.) $)
+  chtqrpcl $p |- ( ( A e. QQ /\ 2 <_ A ) -> ( theta ` A ) e. RR+ ) $=
+    ( cq wcel c2 cle wbr wa ccht cfv cr chtqcl adantr cc0 clog 0red crp clt 2re
+    c1 mp1i 1lt2 rplogcl mp2an rpre rpgt0 cht2 cz 2z chtqwordi mp3an1 eqbrtrrid
+    zq ax-mp ltletrd elrpd ) ABCZDAEFZGZAHIZUPUSJCUQAKLZURMDNIZUSUROVAPCZVAJCUR
+    DJCSDQFVBRUADUBUCZVAUDTUTVBMVAQFURVCVAUETURVADHIZUSEUFDBCZUPUQVDUSEFDUGCVEU
+    HDULUMDAUIUJUKUNUO $.
+
   $( The prime-counting function ` ppi ` is zero iff its argument is less than
      ` 2 ` .  (Contributed by Mario Carneiro, 22-Sep-2014.) $)
   ppiqeq0 $p |- ( A e. QQ -> ( ( ppi ` A ) = 0 <-> A < 2 ) ) $=
