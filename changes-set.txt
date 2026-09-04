@@ -94,6 +94,7 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+04-Sep-26 df-bj-mpt3  df-mpt3     Moved from BJ's mathbox to main set.mm
 27-Aug-26 fmpodg      [same]      Moved from ZW's mathbox to main set.mm
 27-Aug-26 fmpod       [same]      Moved from ZW's mathbox to main set.mm
 27-Aug-26 cureq       [same]      Moved from BL's mathbox to main set.mm
