@@ -199356,6 +199356,25 @@ $)
       YUCVWDVWEVVTGAVWAYTVWB $.
   $}
 
+  ${
+    $d A p $.
+    $( Upper bound on the ` theta ` function.  (Contributed by Mario Carneiro,
+       22-Sep-2014.) $)
+    chtqleppi $p |- ( ( A e. QQ /\ 0 < A ) ->
+      ( theta ` A ) <_ ( ( ppi ` A ) x. ( log ` A ) ) ) $=
+      ( vp wcel cc0 wbr wa co cprime clog cfv csu cle adantr simpr syl relogcld
+      cmul cr ce wceq cq clt cicc cin cv ccht cppi ppiqfi cn elin2d prmnn nnrpd
+      cfn qre elrpd w3a elin1d 0re elicc2 sylancr biimpa syldan simp3d reeflogd
+      wb 3brtr4d efle syl2anc mpbird fsumle chtqval chash ppiqval oveq1d cc crp
+      relogcl recnd fsumconst eqtr4d ) AUACZDAUBEZFZDAUCGZHUDZBUEZIJZBKZWEAIJZB
+      KZAUFJZAUGJZWIQGZLWCWEWGWIBWAWEUMCZWBAUHMZWCWFWECZFZWFWQWFWQWFHCWFUICWQWD
+      HWFWCWPNZUJWFUKOULZPZWCWIRCZWPWCAWCAWAARCZWBAUNMZWAWBNUOZPMZWQWGWILEZWGSJ
+      ZWISJZLEZWQWFAXGXHLWQWFRCZDWFLEZWFALEZWCWPWFWDCZXJXKXLUPZWQWDHWFWRUQWCXMX
+      NWCDRCXBXMXNVEURXCDAWFUSUTVAVBVCWQWFWSVDWCXHATWPWCAXDVDMVFWQWGRCXAXFXIVEW
+      TXEWGWIVGVHVIVJWAWKWHTWBABVKMWCWMWEVLJZWIQGZWJWCWLXOWIQWAWLXOTWBAVMMVNWCW
+      NWIVOCZWJXPTWOWCAVPCZXQXDXRWIAVQVROWEWIBVSVHVTVF $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
