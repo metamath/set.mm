@@ -72345,6 +72345,20 @@ $)
       VOCVGDULZABVAVGUMRUIABVGUJSVHVMVDVMCVGVPABVAVGUKRUNUOUPDVCVEUQS $.
   $}
 
+  ${
+    $d A x $.  $d F x $.  $d G x $.  $d R x $.  $d ph x $.
+    ofrfidc.f $e |- ( ph -> F Fn A ) $.
+    ofrfidc.g $e |- ( ph -> G Fn A ) $.
+    ofrfidc.dc $e |- ( ph -> A. x e. A DECID ( F ` x ) R ( G ` x ) ) $.
+    ofrfidc.fi $e |- ( ph -> A e. Fin ) $.
+    $( Decidability of a relation applied to two functions.  (Contributed by
+       Jim Kingdon, 6-Sep-2026.) $)
+    ofrfidc $p |- ( ph -> DECID F oR R G ) $=
+      ( cofr wbr wdc cv cfv wral cfn wcel dcfi eqidd syl2anc inidm dcbid mpbird
+      wa ofrfval ) AEFDKLZMBNZEOZUHFOZDLZBCPZMZACQRUKMBCPUMJIUKBCSUAAUGULABCCUI
+      UJDCEFQQGHJJCUBAUHCRUEZUITUNUJTUFUCUD $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
