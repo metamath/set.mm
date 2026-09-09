@@ -128860,6 +128860,32 @@ $)
       WNVHYHYEWNWNWANMWBWCWFWDWECBAWTXAXOWGWPBEWHWIOWJWK $.
   $}
 
+  ${
+    $d A u v w x y $.  $d F r u v w x y $.  $d ph u v w x y $.
+    fiidxsupcl.f $e |- ( ph -> F : A --> ZZ ) $.
+    fiidxsupcl.fi $e |- ( ph -> A e. Fin ) $.
+    $( A set of integers indexed by a finite set has an upper bound.
+       (Contributed by Jim Kingdon, 8-Sep-2026.) $)
+    fiidxsupcl $p |- ( ph -> E. x e. ZZ A. y e. A ( F ` y ) <_ x ) $=
+      ( vr cv cle wbr wral cz wrex c0 wceq wcel wa syl2anc zred vw vu cfv raleq
+      vv csn cun rexbidv c1 1z ral0 brralrspcev mp2an a1i cfn wss cdif cpr csup
+      cr clt simprl wf ad3antrrr simplrr eldifad ffvelcdmd zmaxcl simplr sseldd
+      ad5antr simpllr ad2antrr simprr maxcl simpr maxle1 letrd ex ralimdva impr
+      maxle2 cvv fveq2 breq1d ralunsn sylanbrc rexlimdvaa breq2 ralbidv cbvrexv
+      wb elv imbitrrdi findcard2sd ) ACIZEUCZBIZJKZCUAIZLZBMNWSCOLZBMNZWSCUBIZL
+      ZBMNZWSCXDUEIZUFUGZLZBMNZWSCDLZBMNUAUBUEDWTOPXAXBBMWSCWTOUDUHWTXDPXAXEBMW
+      SCWTXDUDUHWTXHPXAXIBMWSCWTXHUDUHWTDPXAXKBMWSCWTDUDUHXCAUIMQWQUIJKZCOLXCUJ
+      XLCUKBCWQUIJMOULUMUNAXDUOQZRZXDDUPZXGDXDUQQZRZRZXFWQHIZJKZCXHLZHMNZXJXRXE
+      YBBMXRWRMQZXERZRZWRXGEUCZURUTVAUSZMQZWQYGJKZCXHLZYBYEYCYFMQYHXRYCXEVBZYED
+      MXGEADMEVCZXMXQYDFVDYEXGDXDXNXOXPYDVEVFVGZWRYFVHSYEYICXDLZYFYGJKZYJXRYCXE
+      YNXRYCRZWSYICXDYPWPXDQZRZWSYIYRWSRZWQWRYGYSWQYSDMWPEAYLXMXQYCYQWSFVKYSXDD
+      WPXRXOYCYQWSXNXOXPVBVDYPYQWSVIVJVGTYSWRXRYCYQWSVLTZYSWRUTQZYFUTQZYGUTQYTX
+      RUUBYCYQWSXRYFXRDMXGEAYLXMXQFVMXRXGDXDXNXOXPVNVFVGTVDZWRYFVOSYRWSVPYSUUAU
+      UBWRYGJKYTUUCWRYFVQSVRVSVTWAYEUUAUUBYOYEWRYKTYEYFYMTWRYFWBSYJYNYORWLUEYIY
+      OCXDXGWCWPXGPWQYFYGJWPXGEWDWEWFWMWGHCWQYGJMXHULSWHXIYABHMWRXSPWSXTCXHWRXS
+      WQJWIWJWKWNGWO $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
