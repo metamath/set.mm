@@ -110731,6 +110731,25 @@ $)
     ZUGUHUKABMNUFUEBCDZUMUIOBSZABPQUGUJCDZUOUNULOUGUJEDUQUGAUEUFTRUJSUAUFUOUEUP
     UBUJBPUCUD $.
 
+  ${
+    $d A q $.  $d B q $.
+    $( The floor function value is less than the next integer.  (Contributed by
+       NM, 24-Feb-2005.)  (Revised by Jim Kingdon, 9-Sep-2026.) $)
+    flaplt $p |- ( ( ( A e. QQ \/ ( A e. RR /\ A. q e. QQ A =//= q ) )
+      /\ B e. ZZ ) -> ( A < B <-> ( |_ ` A ) < B ) ) $=
+      ( cq wcel cz clt wbr wb cr cap wa simpr olcs ad2antrr zred adantr cle syl
+      simplr cfl cfv cv flqlt flapcl simpll c1 caddc co flaplelt simpld lelttrd
+      wral ltnsymd peano2re simprd lttrd zleltp1 syl2anc mpbird lensymd 2falsed
+      2thd wo breq2 zq rspcdva reaplt mpbid mpjaodan jaoian ) ADEZBFEZABGHZAUAU
+      BZBGHZIZAJEZACUCZKHZCDUMZLZABUDWBVMLZVNVQBAGHZWCVNLZVNVPWCVNMZWEVOABWEVOW
+      BVOFEZVMVNVLWBWGACUENZOPWCVRVNVRWAVMUFZQWCBJEZVNWCBWBVMMZPZQWBVOARHZVMVNW
+      BWMAVOUGUHUIZGHZVLWBWMWOLZACUJNZUKOWFULVCWCWDLZVNVPWRBAWCWJWDWLQZWCVRWDWI
+      QZWCWDMZUNWRBVOWSWBVOJEZVMWDWBVOWHPZOWRBVORHZBWNGHZWRBAWNWSWTWBWNJEZVMWDW
+      BXBXFXCVOUOSOXAWRWMWOWBWPVMWDWQOUPUQWRVMWGXDXEIWBVMWDTWBWGVMWDWHOBVOURUSU
+      TVAVBWCABKHZVNWDVDZWCVTXGCDBVSBAKVEVRWAVMTWCVMBDEWKBVFSVGWCVRWJXGXHIWIWLA
+      BVHUSVIVJVK $.
+  $}
+
   $( An integer is its own floor.  (Contributed by NM, 15-Nov-2004.) $)
   flid $p |- ( A e. ZZ -> ( |_ ` A ) = A ) $=
     ( cz wcel cfl cfv wceq cle wbr cq zq flqle syl leidd wb flqge mpancom mpbid
