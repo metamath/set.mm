@@ -200860,6 +200860,32 @@ $)
       SXXPXUJXWGVWFVCYUTYQYIVWEVWGAVXKVWLWVAWUMWUTXUTVWIXNXFVWJVWK $.
   $}
 
+  ${
+    $d n p x N $.
+    $( Bertrand's postulate: there is a prime between ` N ` and ` 2 N ` for
+       every positive integer ` N ` .  This proof follows Erd&#337;s's method,
+       for the most part, but with some refinements due to Shigenori Tochiori
+       to save us some calculations of large primes.  See
+       ~ http://en.wikipedia.org/wiki/Proof_of_Bertrand%27s_postulate for an
+       overview of the proof strategy.  This is Metamath 100 proof #98.
+       (Contributed by Mario Carneiro, 14-Mar-2014.) $)
+    bpos $p |- ( N e. NN -> E. p e. Prime ( N < p /\ p <_ ( 2 x. N ) ) ) $=
+      ( vx vn cn wcel c4 cle wbr cv c2 cmul co wa cprime wrex cfv cdiv wdc cz
+      c6 cdc clt bpos1 wn csqrt crp clog cmpt c9 caddc eqid simpll simplr simpr
+      bposlem9 pm2.65da wi c1 cfz nnz peano2zd 2z zmulcld elfzelz prmdcz adantl
+      a1i syl exfzdc ancom rexbii2 dcbii sylibr elfz2 wb prmz syl2an3an bitr4id
+      w3a ibar prmnn nnltp1le sylan2 anbi1d bitr4d dcbid mpbid notnotrdc adantr
+      rexbidva mpd wo 6nn0 4nn0 deccl nn0zi zlelttric sylancl mpjaodan ) AEFZAU
+      AGUBZHIZABJZUCIZXDKALMZHIZNZBOPZXBAUCIZABUDXAXJNZXIUEZUEZXIXKXLXIXKXLNXIC
+      DDEKUFQDJZUFQCUGCJZUHQXORMUIZQLMUJGRMXNKRMXPQLMUKMKUHQKXNLMUFQRMUKMUIZXPA
+      BXQULXPULXAXJXLUMXAXJXLUNXKXLUOZUPXRUQXAXMXIURZXJXAXISZXSXAXDAUSUKMZXFUTM
+      ZFZBOPZSZXTXAXDOFZBYBPZSYEXAYFBYAXFXAAAVAZVBZXAKAKTFXAVCVHYHVDZYCYFSZXAYC
+      XDTFZYKXDYAXFVEXDVFVIVGVJYDYGYCYFBOYBYFYCVKVLVMVNXAYDXIXAYCXHBOXAYFNZYCYA
+      XDHIZXGNZXHYMYCYATFZXFTFZYLVTZYONZYOXDYAXFVOXAYPYQYFYLYOYSVPYIYJXDVQYRYOW
+      AVRVSYMXEYNXGYFXAXDEFXEYNVPXDWBAXDWCWDWEWFWKWGWHXIWIVIWJWLXAATFXBTFXCXJWM
+      YHXBUAGWNWOWPWQAXBWRWSWT $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
