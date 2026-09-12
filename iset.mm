@@ -181748,6 +181748,29 @@ $)
   $}
 
   ${
+    $d D x y $.  $d I f y $.  $d ph x $.  $d f k y $.  $d k x $.  $d R x $.
+    $d f x $.
+    rhmpsrlem1.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+    rhmpsrlem1.r $e |- ( ph -> R e. Ring ) $.
+    rhmpsrlem2.i $e |- ( ph -> I e. Fin ) $.
+    rhmpsrlem1.x $e |- ( ph -> X : D --> ( Base ` R ) ) $.
+    rhmpsrlem1.y $e |- ( ph -> Y : D --> ( Base ` R ) ) $.
+    $( Lemma for rhmpsr et al.  (Contributed by SN, 8-Feb-2025.) $)
+    rhmpsrfilem2 $p |- ( ( ph /\ k e. D ) ->
+      ( R gsum ( x e. { y e. D | y oR <_ k } |->
+        ( ( X ` x ) ( .r ` R ) ( Y ` ( k oF - x ) ) ) ) ) e. ( Base ` R ) ) $=
+      ( cv wcel wa wbr cfv cle cofr crab cbs cmin cof co cmpt c0g eqid ringcmnd
+      cmulr adantr cfn simpr psrbaglefifi syl2anc crg ad2antrr wf elrabi adantl
+      ccmn ffvelcdmd cn0 psrbagf syl breq1 elrab simprbi syl3anc simpld ringcld
+      psrbagcon fmpttd gsumclfi ) AGPZDQZRZCPZVQUAUBZSZCDUCZEUDTZBWCBPZITZVQWEU
+      EUFUGZJTZEULTZUGZUHEEUITZWDUJZWKUJAEVCQVRAELUKUMVSVRHUNQZWCUNQAVRUOZAWMVR
+      MUMCDFVQHKUPUQVSBWCWJWDVSWEWCQZRZWDEWIWFWHWLWIUJAEURQVRWOLUSWPDWDWEIADWDI
+      UTVRWONUSWOWEDQZVSWBCWEDVAVBZVDWPDWDWGJADWDJUTVRWOOUSWPWGDQZWGVQWASZWPVRH
+      VEWEUTZWEVQWASZWSWTRVSVRWOWNUMWPWQXAWRDFWEHKVFVGWOXBVSWOWQXBWBXBCWEDVTWEV
+      QWAVHVIVJVBDFVQWEHKVNVKVLVDVMVOVP $.
+  $}
+
+  ${
     $d .x. f g k x $.  $d B f g k x $.  $d D f g k x y $.  $d F f g k x $.
     $d G f g k x $.  $d I f g h k x y $.  $d R f g k x $.  $d V f g k x $.
     $d W f g k x $.  $d X k x y $.  $d f g k ph x $.
