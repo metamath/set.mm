@@ -181851,6 +181851,33 @@ $)
   $}
 
   ${
+    $d k x B $.  $d k x ph $.  $d k x R $.  $d k x X $.  $d k x Y $.
+    $d k x y D $.  $d f k x y I $.
+    psrmulcl.s $e |- S = ( I mPwSer R ) $.
+    psrmulcl.b $e |- B = ( Base ` S ) $.
+    psrmulcl.t $e |- .x. = ( .r ` S ) $.
+    psrmulcl.r $e |- ( ph -> R e. Ring ) $.
+    psrmulclfi.i $e |- ( ph -> I e. Fin ) $.
+    psrmulcl.x $e |- ( ph -> X e. B ) $.
+    psrmulcl.y $e |- ( ph -> Y e. B ) $.
+    ${
+      psrmulcl.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+      $( Closure of the power series multiplication operation.  (Contributed by
+         Mario Carneiro, 29-Dec-2014.) $)
+      psrmulclfilem $p |- ( ph -> ( X .x. Y ) e. B ) $=
+        ( wcel cvv vk vx vy cv cle cofr wbr crab cfv cmin cof co cmulr cmpt cbs
+        cgsu cmap eqid psrelbas rhmpsrfilem2 fmpttd wfn basfn crg elexd funfvex
+        wf funfni sylancr ccnv cn cima cfn cn0 cxp fnmap fnovex mp3an12i rabexd
+        nn0ex elmapd mpbird psrmulfval psrbasg 3eltr4d ) AUACDUBUCUDUAUDZUEUFUG
+        UCCUHUBUDZIUIWFWGUJUKULJUIDUMUIZULUNUPULZUNZDUOUIZCUQULZIJFULBAWJWLSCWK
+        WJVGAUACWIWKAUBUCCDGUAHIJRNOABCDEGHWKIKWKURZRLPUSABCDEGHWKJKWMRLQUSUTVA
+        AWKCWJTTAUOTVBDTSWKTSZVCADVDNVEWNTDUODUOVFVHVIAGUDVJVKVLVMSGVNHUQULZCTR
+        UQTTVOVBVNTSAHTSWOTSVPVTAHVMOVEVNHTTUQVQVRVSWAWBAUBUCBCDEFWHGUAIJHKLWHU
+        RMRPQWCABCDEGHWKVMVDKWMRLONWDWE $.
+    $}
+  $}
+
+  ${
     $d x .0. $.  $d r s t x y z ph $.  $d r s t x y z R $.  $d r s t x y z S $.
     $d x D $.  $d f x y z I $.  $d x y N $.  $d x y X $.
     psrgrp.s $e |- S = ( I mPwSer R ) $.
