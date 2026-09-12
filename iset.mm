@@ -181875,6 +181875,12 @@ $)
         UQTTVOVBVNTSAHTSWOTSVPVTAHVMOVEVNHTTUQVQVRVSWAWBAUBUCBCDEFWHGUAIJHKLWHU
         RMRPQWCABCDEGHWKVMVDKWMRLONWDWE $.
     $}
+
+    $( Closure of the power series multiplication operation.  (Contributed by
+       Mario Carneiro, 29-Dec-2014.) $)
+    psrmulclfi $p |- ( ph -> ( X .x. Y ) e. B ) $=
+      ( vf cv ccnv cn cima cfn wcel cn0 cmap co crab eqid psrmulclfilem ) ABPQR
+      STUAUBPUCFUDUEUFZCDEPFGHIJKLMNOUIUGUH $.
   $}
 
   ${
