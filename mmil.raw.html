@@ -11918,6 +11918,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 <TR>
   <TD>strfv</TD>
   <TD>~ strslfv</TD>
+  <td>if you need something in closed or deduction
+  form, see ~ strslfv3</td>
 </TR>
 
 <TR>
@@ -14730,29 +14732,24 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td id="missing-psrmulr">psrmulr</td>
-  <td><i>none</i></td>
-  <td>presumably provable in this form or with small
-  changes, now that we have ` gsum ` using ~ df-gsumfi .</td>
+  <td>psrmulr</td>
+  <td>~ psrmulrg</td>
+  <td>adds set existence conditions</td>
 </tr>
 
 <tr>
   <td>psrmulfval</td>
   <td><i>none</i></td>
-  <td>this theorem in particular is a simple consequence of
-  psrmulr ( ` F e. B ` should take care of the set existence, as
-  in ~ psradd ), but see the <a href="#missing-psrmulr">psrmulr
-  entry</a> for thoughts on what ` mPwSer ` multiplication should
-  expand to</td>
+  <td>should be a simple consequence of
+  ~ psrmulrg ( ` F e. B ` should take care of the set existence, as
+  in ~ psradd )</td>
 </tr>
 
 <tr>
   <td>psrmulval</td>
   <td><i>none</i></td>
-  <td>this theorem in particular is a simple consequence of
-  psrmulfval , but see the <a href="#missing-psrmulr">psrmulr
-  entry</a> for thoughts on what ` mPwSer ` multiplication should
-  expand to</td>
+  <td>should be a simple consequence of
+  psrmulfval</td>
 </tr>
 
 <tr>
@@ -14764,7 +14761,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>psrsca</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses psrmulr</td>
+  <td>should be possible now that we have ~ psrmulrg</td>
 </tr>
 
 <tr>
@@ -14807,11 +14804,11 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>psrlidm</td>
   <td><i>none</i></td>
-  <td>this is where we really would need a functioning definition
-  of ` mPwSer ` multiplication (as discussed at the <a
-  href="#missing-psrmulr">psrmulr entry</a>), in particular how to
-  handle the parts of the set.mm proof which use gsumres and gsumsn .
-  The set.mm proof also uses psrbagcon .  There are some ` if `
+  <td>May be feasible now that we have ~ psrmulrg
+  and ~ psrbagcon . The set.mm proof uses gsumres (we
+  probably want something similar but which changes
+  finitely supported to finite) and gsumsn (probably replace
+  with ~ gsumsncmn ).  There are some ` if `
   expressions in the set.mm proof but it isn't clear they are
   being used in a way that needs decidability (if they do,
   see the similar portion of the ~ psr1clfi proof).</td>

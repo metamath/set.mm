@@ -181748,6 +181748,44 @@ $)
   $}
 
   ${
+    $d .x. f g k x $.  $d B f g k x $.  $d D f g k x y $.  $d F f g k x $.
+    $d G f g k x $.  $d I f g h k x y $.  $d R f g k x $.  $d V f g k x $.
+    $d W f g k x $.  $d X k x y $.  $d f g k ph x $.
+    psrmulr.s $e |- S = ( I mPwSer R ) $.
+    psrmulr.b $e |- B = ( Base ` S ) $.
+    psrmulr.m $e |- .x. = ( .r ` R ) $.
+    psrmulr.t $e |- .xb = ( .r ` S ) $.
+    psrmulr.d $e |- D = { h e. ( NN0 ^m I ) | ( `' h " NN ) e. Fin } $.
+    $( The multiplication operation of the multivariate power series structure.
+       (Contributed by Mario Carneiro, 28-Dec-2014.)  (Revised by Mario
+       Carneiro, 2-Oct-2015.)  (Proof shortened by AV, 2-Mar-2024.) $)
+    psrmulrg $p |- ( ( I e. V /\ R e. W ) ->
+        .xb = ( f e. B , g e. B |-> ( k e. D |->
+            ( R gsum ( x e. { y e. D | y oR <_ k } |->
+            ( ( f ` x ) .x. ( g ` ( k oF - x ) ) ) ) ) ) ) ) $=
+      ( wcel wa cv cle cofr wbr crab cfv cmin cof co cmpt cgsu cmpo cnx cbs cop
+      cplusg cmulr ctp csca cvsca csn cxp cts ctopn cpt cun cvv c1 c9 cres eqid
+      simpl simpr psrbasg eqidd psrval psrplusgg opeq2d tpeq2d uneq1d wfn basfn
+      eqtr4d cmps fnpsr elexd fnovex mp3an2i eqeltrid funfvex sylancr plusgslid
+      funfni slotex syl mpoexga syl2anc ccnv cn cima cfn cn0 fnmap nn0ex rabexd
+      cmap a1i topnfn snexg xpexd ptex psrvalstrd mulrslid wss snsstp3 strslfv3
+      ssun1 sstri ) MNUAZEOUAZUBZGIJCCLDEABUCLUCZUDUEUFBDUGAUCZIUCZUHYDYEUIUJUK
+      JUCUHHUKULUMUKULZUNZUOUPUHCUQZUOURUHZFURUHZUQZUOUSUHYHUQZUTZUOVAUHEUQUOVB
+      UHAIEUPUHZCDYEVCVDYFHUJUKZUNZUQUOVEUHDEVFUHZVCZVDZVGUHZUQUTZVHZFUSVIVJVKU
+      QYCFYIYJEURUHZUJCCVDVLZUQZYMUTZUUBVHUUCYCABCDUUDUUEEFYQHYHIJKLMUUAYOYRNOP
+      YOVMZUUDVMZRYRVMTYCCDEFKMYONOPUUHTQYAYBVNZYAYBVOZVPUUEVMYHVMYQVMYCUUAVQUU
+      JUUKVRYCYNUUGUUBYCYLUUFYIYMYCYKUUEYJCUUDYKEFMNOPQUUIYKVMVSVTWAWBWEYCCVIYK
+      VIEYQYHUUAOVIVIVIYCCFUPUHZVIQYCUPVIWCZFVIUAZUULVIUAZWDYCFMEWFUKZVIPWFVIVI
+      VDZWCYCMVIUAZEVIUAZUUPVIUAWGYCMNUUJWHZYCEOUUKWHZMEVIVIWFWIWJWKZUUOVIFUPFU
+      PWLWOWMWKZYCUUNYKVIUAUVBFURVIWNWPWQYCCVIUAZUVDYHVIUAUVCUVCIJCCYGVIVIWRWSZ
+      UUKYCYOVIUAZUVDYQVIUAYCUUMUUSUVFWDUVAUVFVIEUPEUPWLWOWMUVCAIYOCYPVIVIWRWSY
+      CYTVIUAUUAVIUAYCDYSVIVIYCKUCWTXAXBXCUAKXDMXHUKZDVITXHUUQWCYCXDVIUAZUURUVG
+      VIUAXEUVHYCXFXIUUTXDMVIVIXHWIWJXGYCYRVIUAZYSVIUAYCVFVIWCUUSUVIXJUVAUVIVIE
+      VFEVFWLWOWMYRVIXKWQXLYTVIXMWQXNXOYMVCZUUCXPYCUVJYNUUCYIYLYMXQYNUUBXSXTXIU
+      VESXR $.
+  $}
+
+  ${
     $d x .0. $.  $d r s t x y z ph $.  $d r s t x y z R $.  $d r s t x y z S $.
     $d x D $.  $d f x y z I $.  $d x y N $.  $d x y X $.
     psrgrp.s $e |- S = ( I mPwSer R ) $.
