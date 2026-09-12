@@ -181801,6 +181801,30 @@ $)
       WTXFXOWSXEFUNXOBWKWRXDXMXNWNXBWQXCIWLWMLVJWOWPMVJVLVMVNVMVOTUAAKEXFUOAJUD
       VPWCVQVRUPJVSNWDULZEUOSWDXKVCVSUOUPAXHXPUOUPVTWAAXHXIXLWBVSNUOUOWDWEWFWGW
       HWI $.
+
+    ${
+      $d F f $.  $d X h $.
+      psrmulval.r $e |- ( ph -> X e. D ) $.
+      psrmulvalfi.fi $e |- ( ph -> I e. Fin ) $.
+      psrmulvalfi.ring $e |- ( ph -> R e. Ring ) $.
+      $( The multiplication operation of the multivariate power series
+         structure.  (Contributed by Mario Carneiro, 28-Dec-2014.) $)
+      psrmulvalfi $p |- ( ph -> ( ( F .xb G ) ` X ) =
+              ( R gsum ( k e. { y e. D | y oR <_ X } |->
+              ( ( F ` k ) .x. ( G ` ( X oF - k ) ) ) ) ) ) $=
+        ( vx cv cle cofr wbr crab cfv cmin cof cmpt cgsu cbs wceq breq2 rabbidv
+        fvoveq1 oveq2d mpteq12dv psrmulfval c0g eqid ringcmnd wcel psrbaglefifi
+        co cfn syl2anc wa crg adantr cn0 cmap psrelbasfi elrabi adantl psrbagfi
+        syl eleqtrd ffvelcdmd psrbagconcl sylan ringcld fmpttd gsumclfi fvmptd4
+        wf ) AUENEJBUFZUEUFZUGUHZUIZBDUJZJUFZKUKZWLWPULUMZVILUKZHVIZUNZUOVIEJWK
+        NWMUIZBDUJZWQNWPWRVIZLUKZHVIZUNZUOVIDKLGVIEUPUKZWLNUQZXAXGEUOXIJWOWTXCX
+        FXIWNXBBDWLNWKWMURUSXIWSXEWQHWLNWPLWRUTVAVBVAAJBCDEFGHIUEKLMOPQRSTUAVCU
+        BAXCXHXGEEVDUKZXHVEZXJVEAEUDVFANDVGZMVJVGZXCVJVGUBUCBDINMSVHVKAJXCXFXHA
+        WPXCVGZVLZXHEHWQXEXKQAEVMVGXNUDVNXOVOMVPVIZXHWPKAXPXHKWJXNACEFMXHKOXKUC
+        PTVQVNXOWPDXPXNWPDVGAXBBWPDVRVSADXPUQZXNAXMXQUCDIMSVTWAVNZWBWCXOXPXHXDL
+        AXPXHLWJXNACEFMXHLOXKUCPUAVQVNXOXDDXPXOXDXCVGZXDDVGAXLXNXSUBBDXCINMWPSX
+        CVEWDWEXBBXDDVRWAXRWBWCWFWGWHWI $.
+    $}
   $}
 
   ${
