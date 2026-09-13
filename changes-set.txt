@@ -94,6 +94,23 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+14-Sep-26 mndtcbas    mndtcbaseu  (in ZW's mathbox)
+14-Sep-26 mndtcbas2   mndtcobeq   (in ZW's mathbox)
+14-Sep-26 termccd     termccatd   (in ZW's mathbox)
+14-Sep-26 thincc      thinccat    (in ZW's mathbox)
+14-Sep-26 thinccd     thinccatd   (in ZW's mathbox)
+14-Sep-26 opnneieqv   opnneibid   (in ZW's mathbox)
+14-Sep-26 opnneieqvv  opnneibid2  (in ZW's mathbox)
+14-Sep-26 opncldeqv   opncldbid   (in ZW's mathbox)
+14-Sep-26 fvconstr    ovconstbrd  (in ZW's mathbox)
+14-Sep-26 fvconstr2   elovconstbrd (in ZW's mathbox)
+14-Sep-26 fvconstrn0  ovconstbrn0d (in ZW's mathbox)
+14-Sep-26 intxp       intxpd      (in ZW's mathbox)
+14-Sep-26 pm5.32dra   pm5.32dar   (in ZW's mathbox)
+14-Sep-26 pm5.32dav   pm5.32rda   (in ZW's mathbox)
+14-Sep-26 logic2      imbi12d3    (in ZW's mathbox)
+14-Sep-26 logic1      imbi12d2    (in ZW's mathbox)
+14-Sep-26 logic1a     imbi12d2a   (in ZW's mathbox)
 30-Aug-26 iunpreima   [same]      Moved from TA's mathbox to main set.mm
 27-Aug-26 fmpodg      [same]      Moved from ZW's mathbox to main set.mm
 27-Aug-26 fmpod       [same]      Moved from ZW's mathbox to main set.mm
