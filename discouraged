@@ -19330,6 +19330,7 @@ New usage of "truniALT" is discouraged (0 uses).
 New usage of "truniALTVD" is discouraged (0 uses).
 New usage of "tsetndx" is discouraged (18 uses).
 New usage of "tz6.12-2OLD" is discouraged (0 uses).
+New usage of "tz7.48lemOLD" is discouraged (0 uses).
 New usage of "ubth" is discouraged (1 uses).
 New usage of "ubthlem1" is discouraged (1 uses).
 New usage of "ubthlem2" is discouraged (1 uses).
@@ -21289,6 +21290,7 @@ Proof modification of "truimtru" is discouraged (6 steps).
 Proof modification of "truniALT" is discouraged (183 steps).
 Proof modification of "truniALTVD" is discouraged (220 steps).
 Proof modification of "tz6.12-2OLD" is discouraged (23 steps).
+Proof modification of "tz7.48lemOLD" is discouraged (610 steps).
 Proof modification of "umgr2adedgwlkonALT" is discouraged (294 steps).
 Proof modification of "un0.1" is discouraged (21 steps).
 Proof modification of "un01" is discouraged (18 steps).
