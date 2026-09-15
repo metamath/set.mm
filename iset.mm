@@ -166689,6 +166689,35 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Centralizers and centers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c Cntr $.
+  $c Cntz $.
+
+  $( Syntax for the centralizer of a set in a monoid. $)
+  ccntz $a class Cntz $.
+
+  $( Syntax for the centralizer of a monoid. $)
+  ccntr $a class Cntr $.
+
+  ${
+    $d m s x y $.
+    $( Define the _centralizer_ of a subset of a magma, which is the set of
+       elements each of which commutes with each element of the given subset.
+       (Contributed by Stefan O'Rear, 5-Sep-2015.) $)
+    df-cntz $a |- Cntz = ( m e. _V |-> ( s e. ~P ( Base ` m ) |-> { x e.
+      ( Base ` m ) | A. y e. s ( x ( +g ` m ) y ) = ( y ( +g ` m ) x ) } ) ) $.
+
+    $( Define the _center_ of a magma, which is the elements that commute with
+       all others.  (Contributed by Stefan O'Rear, 5-Sep-2015.) $)
+    df-cntr $a |- Cntr = ( m e. _V |-> ( ( Cntz ` m ) ` ( Base ` m ) ) ) $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Abelian groups
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -214145,6 +214174,12 @@ htmldef "GrpHom" as
    " <IMG SRC='_grphom.gif' WIDTH=54 HEIGHT=19 ALT=' GrpHom' TITLE='GrpHom'> ";
   althtmldef "GrpHom" as " GrpHom ";
   latexdef "GrpHom" as "\mathrm{GrpHom}";
+htmldef "Cntr" as "Cntr";
+  althtmldef "Cntr" as "Cntr";
+  latexdef "Cntr" as "\mathrm{Cntr}";
+htmldef "Cntz" as "Cntz";
+  althtmldef "Cntz" as "Cntz";
+  latexdef "Cntz" as "\mathrm{Cntz}";
 htmldef "CMnd" as "CMnd";
   althtmldef "CMnd" as "CMnd";
   latexdef "CMnd" as "\mathrm{CMnd}";
