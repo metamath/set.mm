@@ -200658,8 +200658,8 @@ $)
         VTVXFVXGYQUSUTUUO $.
     $}
 
-    $( Lemma for ~ bpos .  Evaluate ` F ( 6 4 ) ` and show it is less than
-       ` log 2 ` .  (Contributed by Mario Carneiro, 14-Mar-2014.) $)
+    $( Lemma for ~ bpos .  Show that ` F ( 6 4 ) ` is less than ` log 2 ` .
+       (Contributed by Mario Carneiro, 14-Mar-2014.) $)
     bposlem8 $p |- ( ( F ` ; 6 4 ) e. RR /\ ( F ` ; 6 4 ) < ( log ` 2 ) ) $=
       ( c4 wcel c2 clt wbr c3 cdiv co c5 cmul caddc c1 c8 wceq c6 cdc cfv csqrt
       cr clog c9 cexp cn 4nn fveq2 8cn eqtri fveq2i cc0 cle 0re 8re 8pos ltleii
