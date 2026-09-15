@@ -200598,8 +200598,9 @@ $)
       bposlem7.4 $e |- ( ph -> B e. NN ) $.
       bposlem7.5 $e |- ( ph -> ( _e ^ 2 ) <_ A ) $.
       bposlem7.6 $e |- ( ph -> ( _e ^ 2 ) <_ B ) $.
-      $( Lemma for ~ bpos .  The function ` F ` is decreasing.  (Contributed by
-         Mario Carneiro, 13-Mar-2014.) $)
+      $( Lemma for ~ bpos .  The function ` F ` is strictly decreasing for
+         arguments greater than 7.  (Contributed by Mario Carneiro,
+         13-Mar-2014.) $)
       bposlem7 $p |- ( ph -> ( A < B -> ( F ` B ) < ( F ` A ) ) ) $=
         ( clt wbr c2 co crp cr wcel csqrt cmul c9 c4 cdiv caddc clog wa cexp cv
         cfv wceq fveq2 id oveq12d rpsqrtcld relogcld rerpdivcld fvmptd3 breq12d
