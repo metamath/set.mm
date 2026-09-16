@@ -157416,6 +157416,17 @@ $)
     ZOABCDPUHUFUISEZUKOEZULOEUFUGQUMUHRTUGUNUFAUJDUAUBUIUKBCOSUCUDUE $.
 
   ${
+    $d w x $.
+    ressmex.r $e |- R = ( W |`s A ) $.
+    $( If a structure restriction is inhabited, the structure is a set and so
+       is the class it is restricted to.  (Contributed by Jim Kingdon,
+       16-Sep-2026.) $)
+    ressmex $p |- ( X e. R -> ( W e. _V /\ A e. _V ) ) $=
+      ( vw vx cvv wcel wa cress co cv cnx cbs cfv cin cop csts df-iress elmpocl
+      eleq2s ) CHIAHIJDCAKLBFGHHFMZNOPGMUCOPQRSLCAKDGFTUAEUB $.
+  $}
+
+  ${
     $d a w A $.  $d a w B $.  $d a w W $.
     ressbas.r $e |- R = ( W |`s A ) $.
     ressbas.b $e |- B = ( Base ` W ) $.
