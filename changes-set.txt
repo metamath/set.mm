@@ -113,7 +113,7 @@ Date      Old         New         Notes
 16-Sep-26 gcdle2d     [same]      Moved from SN's mathbox to main set.mm
 16-Sep-26 gcdle1d     [same]      Moved from SN's mathbox to main set.mm
 16-Sep-26 mvrrsubd    [same]      Moved from SN's mathbox to main set.mm
-16-Sep-26 laddrotrd   [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 laddrotrd   mvlladdcd   Moved from SN's mathbox to main set.mm
 30-Aug-26 iunpreima   [same]      Moved from TA's mathbox to main set.mm
 27-Aug-26 fmpodg      [same]      Moved from ZW's mathbox to main set.mm
 27-Aug-26 fmpod       [same]      Moved from ZW's mathbox to main set.mm
