@@ -166799,6 +166799,15 @@ $)
           A. y e. S ( X .+ y ) = ( y .+ X ) ) ) $=
       ( wss cfv wcel cv co wceq wral elcntz baibd ) DBKFDGLMFBMFANZCOTFCOPADQAF
       BCDEGHIJRS $.
+
+    $( Special substitution for the centralizer of a singleton.  (Contributed
+       by Stefan O'Rear, 5-Sep-2015.) $)
+    cntzsnval $p |- ( Y e. B -> ( Z ` { Y } ) =
+          { x e. B | ( x .+ Y ) = ( Y .+ x ) } ) $=
+      ( vy wcel csn cfv cv co wceq wral crab wss snssi cntzval syl oveq2 ralsng
+      oveq1 eqeq12d rabbidv eqtrd ) EBKZELZFMZANZJNZCOZUMULCOZPZJUJQZABRZULECOZ
+      EULCOZPZABRUIUJBSUKURPEBTAJBCUJDFGHIUAUBUIUQVAABUPVAJEBUMEPUNUSUOUTUMEULC
+      UCUMEULCUEUFUDUGUH $.
   $}
 
 
