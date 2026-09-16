@@ -166783,6 +166783,15 @@ $)
         XBVAQWCABCDFRGMHIJVDVEWTEXCSZWCWJWCVFWTCRSXDWCUSWTCFTNZRHWTTRVGWJXERSZV
         HWJWCVIXFRFTFTVJVKVLWBZECRVMUOVNWTWHACWIRWIVOXGVPVQVRVSVTWA $.
     $}
+
+    $( Elementhood in the centralizer.  (Contributed by Mario Carneiro,
+       22-Sep-2015.) $)
+    elcntz $p |- ( S C_ B -> ( A e. ( Z ` S ) <-> ( A e. B /\
+            A. y e. S ( A .+ y ) = ( y .+ A ) ) ) ) $=
+      ( vx wss cfv wcel cv co wceq wral crab wa eleq2d oveq1 oveq2 elrab bitrdi
+      cntzval eqeq12d ralbidv ) ECLZBEGMZNBKOZAOZDPZULUKDPZQZAERZKCSZNBCNBULDPZ
+      ULBDPZQZAERZTUIUJUQBKACDEFGHIJUFUAUPVAKBCUKBQZUOUTAEVBUMURUNUSUKBULDUBUKB
+      ULDUCUGUHUDUE $.
   $}
 
 
