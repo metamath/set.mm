@@ -166816,6 +166816,14 @@ $)
       ( vx wcel csn cfv cv co wceq crab wa cntzsnval eleq2d oveq1 oveq2 eqeq12d
       elrab bitrdi ) EAKZDELFMZKDJNZEBOZEUHBOZPZJAQZKDAKDEBOZEDBOZPZRUFUGULDJAB
       CEFGHISTUKUOJDAUHDPUIUMUJUNUHDEBUAUHDEBUBUCUDUE $.
+
+    $( A centralizer expression for two sets elementwise commuting.
+       (Contributed by Stefan O'Rear, 5-Sep-2015.) $)
+    sscntz $p |- ( ( S C_ B /\ T C_ B ) -> ( S C_ ( Z ` T ) <->
+          A. x e. S A. y e. T ( x .+ y ) = ( y .+ x ) ) ) $=
+      ( wss cfv cv co wceq wral wa crab cntzval sseq2d ssrab bitrdi ibar bicomd
+      sylan9bbr ) FCLZEFHMZLZECLZANZBNZDOULUKDOPBFQZAEQZRZUJUNUGUIEUMACSZLUOUGU
+      HUPEABCDFGHIJKTUAUMACEUBUCUJUNUOUJUNUDUEUF $.
   $}
 
 
