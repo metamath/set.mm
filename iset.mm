@@ -166715,6 +166715,21 @@ $)
     df-cntr $a |- Cntr = ( m e. _V |-> ( ( Cntz ` m ) ` ( Base ` m ) ) ) $.
   $}
 
+  ${
+    $d M m s x y $.
+    cntzex.z $e |- Z = ( Cntz ` M ) $.
+    $( Set existence of the centralizer.  (Contributed by Jim Kingdon,
+       15-Sep-2026.) $)
+    cntzex $p |- ( M e. V -> Z e. _V ) $=
+      ( vs vx vy vm wcel ccntz cfv cvv cbs cpw cv cplusg co wceq wral crab cmpt
+      df-cntz fveq2 pweqd oveqd eqeq12d ralbidv rabeqbidv mpteq12dv wfn funfvex
+      elex basfn funfni sylancr pwexd mptexd fvmptd3 eqeltrd eqeltrid ) ABIZCAJ
+      KZLDVAVBEAMKZNZFOZGOZAPKZQZVFVEVGQZRZGEOZSZFVCTZUAZLVAHAEHOZMKZNZVEVFVOPK
+      ZQZVFVEVRQZRZGVKSZFVPTZUAVNLJLFGHEUBVOARZEVQWCVDVMWDVPVCVOAMUCZUDWDWBVLFV
+      PVCWEWDWAVJGVKWDVSVHVTVIWDVRVGVEVFVOAPUCZUEWDVRVGVFVEWFUEUFUGUHUIABULZVAE
+      VDVMLVAVCLVAMLUJALIVCLIZUMWGWHLAMAMUKUNUOUPUQZURWIUSUT $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
