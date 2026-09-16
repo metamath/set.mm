@@ -166844,6 +166844,17 @@ $)
         DUNZGUOUQUPKWBWEWFWFUNURUSEUTZVJBWAOVJWHJWBVPVQWDRVQVPWDRSLVSTKAUHZUIZU
         TJWBWIVAVJEWJVJVKEWJSVTKLAWDCPEJFWGGUOUQVBVCDBEVDVEVFVHVI $.
     $}
+
+    ${
+      $d B x $.  $d M x y $.  $d S x y $.  $d Z x $.
+      $( The centralizer is unconditionally a subset.  (Contributed by Stefan
+         O'Rear, 6-Sep-2015.) $)
+      cntzssv $p |- ( Z ` S ) C_ B $=
+        ( vx vy cfv cv wcel cplusg co wceq wral crab cvv wss cntzrcl eqid ssriv
+        cntzval simpl2im ssrab2 eqsstrdi id sseldd ) GBDIZAGJZUHKZUHAUIUJUHUIHJ
+        ZCLIZMUKUIULMNHBOZGAPZAUJCQKBARUHUNNABCUIDEFSGHAULBCDEULTFUBUCUMGAUDUEU
+        JUFUGUA $.
+    $}
   $}
 
 
