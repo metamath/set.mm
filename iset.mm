@@ -166730,6 +166730,24 @@ $)
       VDVMLVAVCLVAMLUJALIVCLIZUMWGWHLAMAMUKUNUOUPUQZURWIUSUT $.
   $}
 
+  ${
+    $d B k $.  $d B m $.  $d M j $.  $d M k $.  $d M m $.  $d Z j $.  $d Z k $.
+    $d Z m $.  $d m s x y $.
+    cntrval.b $e |- B = ( Base ` M ) $.
+    cntrval.z $e |- Z = ( Cntz ` M ) $.
+    $( Substitute definition of the center.  (Contributed by Stefan O'Rear,
+       5-Sep-2015.) $)
+    cntrval $p |- ( Z ` B ) = ( Cntr ` M ) $=
+      ( vk vj vm vs vx vy cfv ccntr cv wcel cvv ccntz cbs co wceq wex elfvm cpw
+      cplusg wral crab cmpt df-cntz mptrcl eleq2s exlimiv df-cntr fveq2 eqtr4di
+      syl fveq12d cntzex wfn basfn funfvex funfni mpan eqeltrid syl2anc fvmptd3
+      id fvexg eqcomd eleq2d pm5.21nii eqriv ) FACLZBMLZFNZVLOZBPOZVNVMOVOGNZCO
+      ZGUAVPVNAGCUBVRVPGVPVQBQLZCHPIHNZRLZUCJNZKNZVTUDLZSWCWBWDSTKINUEJWAUFUGQV
+      QBJKHIUHUIEUJUKUOHPWAVTQLZLZMVNBHULZUIVPVLVMVNVPVMVLVPHBWFVLPMPWGVTBTZWAA
+      WECWHWEVSCVTBQUMEUNWHWABRLZAVTBRUMDUNUPVPVFVPCPOAPOVLPOBPCEUQVPAWIPDRPURV
+      PWIPOZUSWJPBRBRUTVAVBVCACPPVGVDVEVHVIVJVK $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
