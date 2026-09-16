@@ -166870,6 +166870,20 @@ $)
       AABCFVCGHUEUBUCUFUPUTIEBUMENUNURUOUSUMEDAUGUMEDAUHUIUJUK $.
   $}
 
+  ${
+    $d .+ y $.  $d A y $.  $d B y $.  $d M y $.
+    elcntr.b $e |- B = ( Base ` M ) $.
+    elcntr.p $e |- .+ = ( +g ` M ) $.
+    elcntr.z $e |- Z = ( Cntr ` M ) $.
+    $( Elementhood in the center of a magma.  (Contributed by SN,
+       21-Mar-2025.) $)
+    elcntr $p |- ( A e. Z <->
+                 ( A e. B /\ A. y e. B ( A .+ y ) = ( y .+ A ) ) ) $=
+      ( wcel ccntz cfv cv co wceq wral wa ccntr eqid cntrval eqtr4i eleq2i ssid
+      wss wb elcntz ax-mp bitri ) BFJBCEKLZLZJZBCJBAMZDNULBDNOACPQZFUJBFERLUJIC
+      EUIGUISZTUAUBCCUDUKUMUECUCABCDCEUIGHUNUFUGUH $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
