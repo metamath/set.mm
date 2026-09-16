@@ -166792,6 +166792,13 @@ $)
       cntzval eqeq12d ralbidv ) ECLZBEGMZNBKOZAOZDPZULUKDPZQZAERZKCSZNBCNBULDPZ
       ULBDPZQZAERZTUIUJUQBKACDEFGHIJUFUAUPVAKBCUKBQZUOUTAEVBUMURUNUSUKBULDUBUKB
       ULDUCUGUHUDUE $.
+
+    $( Membership in a centralizer.  (Contributed by Stefan O'Rear,
+       6-Sep-2015.) $)
+    cntzel $p |- ( ( S C_ B /\ X e. B ) -> ( X e. ( Z ` S ) <->
+          A. y e. S ( X .+ y ) = ( y .+ X ) ) ) $=
+      ( wss cfv wcel cv co wceq wral elcntz baibd ) DBKFDGLMFBMFANZCOTFCOPADQAF
+      BCDEGHIJRS $.
   $}
 
 
