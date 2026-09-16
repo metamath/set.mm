@@ -166884,6 +166884,15 @@ $)
       EUIGUISZTUAUBCCUDUKUMUECUCABCDCEUIGHUNUFUGUH $.
   $}
 
+  ${
+    cntrss.1 $e |- B = ( Base ` M ) $.
+    $( The center is a subset of the base field.  (Contributed by Thierry
+       Arnoux, 21-Aug-2023.) $)
+    cntrss $p |- ( Cntr ` M ) C_ B $=
+      ( ccntr cfv ccntz eqid cntrval cntzssv eqsstrri ) BDEABFEZEAABKCKGZHAABKC
+      LIJ $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
