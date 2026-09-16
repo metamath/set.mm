@@ -166826,6 +166826,26 @@ $)
       HUPEABCDFGHIJKTUAUMACEUBUCUJUNUOUJUNUDUEUF $.
   $}
 
+  ${
+    cntzrcl.b $e |- B = ( Base ` M ) $.
+    cntzrcl.z $e |- Z = ( Cntz ` M ) $.
+    ${
+      $d M j $.  $d m x y s z M $.  $d x y s B $.  $d x y S $.  $d x Z $.
+      $d Z j $.  $d y X $.
+      $( Reverse closure for elements of the centralizer.  (Contributed by
+         Stefan O'Rear, 6-Sep-2015.) $)
+      cntzrcl $p |- ( X e. ( Z ` S ) -> ( M e. _V /\ S C_ B ) ) $=
+        ( vj vm vs vx vy vz cfv wcel cvv cv co wceq wral wss elfvm ccntz cplusg
+        wex cbs cpw crab cmpt df-cntz mptrcl eleq2s exlimiv eqid cntzfval dmeqd
+        syl dmmptss eqsstrdi wrel mptrel releqd mpbiri relelfvdm mpancom sseldd
+        cdm elpwid jca ) DBENOZCPOZBAUAVJHQZEOZHUEVKDBHEUBVMVKHVKVLCUCNEIPJIQZU
+        FNZUGKQZLQZVNUDNZRVQVPVRRSLJQZTKVOUHUIUCVLCKLIJUJUKGULUMUQZVJBAVJEVGZAU
+        GZBVJWAKWBVQMQZCUDNZRWCVQWDRSMVPTLAUHZUIZVGWBVJEWFVJVKEWFSVTLMAWDCPEKFW
+        DUNZGUOUQUPKWBWEWFWFUNURUSEUTZVJBWAOVJWHJWBVPVQWDRVQVPWDRSLVSTKAUHZUIZU
+        TJWBWIVAVJEWJVJVKEWJSVTKLAWDCPEJFWGGUOUQVBVCDBEVDVEVFVHVI $.
+    $}
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
