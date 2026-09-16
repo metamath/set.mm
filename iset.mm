@@ -166857,6 +166857,19 @@ $)
     $}
   $}
 
+  ${
+    $d y M $.  $d y .+ $.  $d y S $.  $d y X $.  $d y Y $.
+    cntzi.p $e |- .+ = ( +g ` M ) $.
+    cntzi.z $e |- Z = ( Cntz ` M ) $.
+    $( Membership in a centralizer (inference).  (Contributed by Stefan O'Rear,
+       6-Sep-2015.)  (Revised by Mario Carneiro, 22-Sep-2015.) $)
+    cntzi $p |- ( ( X e. ( Z ` S ) /\ Y e. S ) -> ( X .+ Y ) = ( Y .+ X ) ) $=
+      ( vy cfv wcel cv co wceq wral cbs cvv wss wa wb cntzrcl simpl2im simplbda
+      eqid elcntz anidms oveq2 oveq1 eqeq12d rspccva sylan ) DBFJKZDILZAMZUMDAM
+      ZNZIBOZEBKDEAMZEDAMZNZULUQULULDCPJZKZUQULCQKBVARULVBUQSTVABCDFVAUDZHUAIDV
+      AABCFVCGHUEUBUCUFUPUTIEBUMENUNURUOUSUMEDAUGUMEDAUHUIUJUK $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
