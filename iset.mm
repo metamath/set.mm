@@ -166808,6 +166808,14 @@ $)
       oveq1 eqeq12d rabbidv eqtrd ) EBKZELZFMZANZJNZCOZUMULCOZPZJUJQZABRZULECOZ
       EULCOZPZABRUIUJBSUKURPEBTAJBCUJDFGHIUAUBUIUQVAABUPVAJEBUMEPUNUSUOUTUMEULC
       UCUMEULCUEUFUDUGUH $.
+
+    $( Value of the centralizer of a singleton.  (Contributed by Mario
+       Carneiro, 25-Apr-2016.) $)
+    elcntzsn $p |- ( Y e. B -> ( X e. ( Z ` { Y } ) <->
+      ( X e. B /\ ( X .+ Y ) = ( Y .+ X ) ) ) ) $=
+      ( vx wcel csn cfv cv co wceq crab wa cntzsnval eleq2d oveq1 oveq2 eqeq12d
+      elrab bitrdi ) EAKZDELFMZKDJNZEBOZEUHBOZPZJAQZKDAKDEBOZEDBOZPZRUFUGULDJAB
+      CEFGHISTUKUOJDAUHDPUIUMUJUNUHDEBUAUHDEBUBUCUDUE $.
   $}
 
 
