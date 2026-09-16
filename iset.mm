@@ -166748,6 +166748,25 @@ $)
       PWIPOZUSWJPBRBRUTVAVBVCACPPVGVDVEVHVIVJVK $.
   $}
 
+  ${
+    $d m s x y .+ $.  $d x y A $.  $d m s x B $.  $d m s x y M $.  $d x y T $.
+    $d s x y S $.  $d x y X $.  $d x y Y $.
+    cntzfval.b $e |- B = ( Base ` M ) $.
+    cntzfval.p $e |- .+ = ( +g ` M ) $.
+    cntzfval.z $e |- Z = ( Cntz ` M ) $.
+    $( First level substitution for a centralizer.  (Contributed by Stefan
+       O'Rear, 5-Sep-2015.) $)
+    cntzfval $p |- ( M e. V -> Z = ( s e. ~P B |->
+            { x e. B | A. y e. s ( x .+ y ) = ( y .+ x ) } ) ) $=
+      ( vm wcel cfv cv co wceq cbs cplusg cvv ccntz cpw wral crab df-cntz fveq2
+      cmpt eqtr4di pweqd oveqd eqeq12d ralbidv rabeqbidv mpteq12dv elex funfvex
+      wfn basfn funfni sylancr eqeltrid pwexd mptexd fvmptd3 eqtrid ) EFMZGEUAN
+      HCUBZAOZBOZDPZVIVHDPZQZBHOZUCZACUDZUGZKVFLEHLOZRNZUBZVHVIVQSNZPZVIVHVTPZQ
+      ZBVMUCZAVRUDZUGVPTUATABLHUEVQEQZHVSWEVGVOWFVRCWFVRERNZCVQERUFIUHZUIWFWDVN
+      AVRCWHWFWCVLBVMWFWAVJWBVKWFVTDVHVIWFVTESNDVQESUFJUHZUJWFVTDVIVHWIUJUKULUM
+      UNEFUOZVFHVGVOTVFCTVFCWGTIVFRTUQETMWGTMZURWJWKTERERUPUSUTVAVBVCVDVE $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
