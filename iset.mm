@@ -166765,6 +166765,24 @@ $)
       ZBVMUCZAVRUDZUGVPTUATABLHUEVQEQZHVSWEVGVOWFVRCWFVRERNZCVQERUFIUHZUIWFWDVN
       AVRCWHWFWCVLBVMWFWAVJWBVKWFVTDVHVIWFVTESNDVQESUFJUHZUJWFVTDVIVHWIUJUKULUM
       UNEFUOZVFHVGVOTVFCTVFCWGTIVFRTUQETMWGTMZURWJWKTERERUPUSUTVAVBVCVDVE $.
+
+    ${
+      $d .+ w x y $.  $d B w x $.  $d S w x y $.  $d Z j w $.  $d M j $.
+      $( Definition substitution for a centralizer.  (Contributed by Stefan
+         O'Rear, 5-Sep-2015.) $)
+      cntzval $p |- ( S C_ B -> ( Z ` S ) = { x e. B |
+              A. y e. S ( x .+ y ) = ( y .+ x ) } ) $=
+        ( vj vm vs cfv cv co wceq cvv wcel cbs vw wss wral crab wex elfvm ccntz
+        wi cpw cplusg df-cntz mptrcl eleq2s exlimiv syl a1i elrabi basmex wb wa
+        cmpt raleq rabbidv cntzfval adantr simpr wfn basfn simpl funfvex funfni
+        sylancr elpw2g mpbird eqid rabexd fvmptd4 eleq2d expcom pm5.21ndd eqrdv
+        eqeltrid ) ECUBZUAEGNZAOZBOZDPWFWEDPQZBEUCZACUDZWCFRSZUAOZWDSZWKWISZWLW
+        JUHWCWLKOZGSZKUEWJWKEKGUFWOWJKWJWNFUGNGLRMLOZTNZUIWEWFWPUJNZPWFWEWRPQBM
+        OZUCAWQUDVAUGWNFABLMUKULJUMUNUOUPWMWJUHWCWMWKCSWJWHAWKCUQWKCFHURUOUPWJW
+        CWLWMUSWJWCUTZWDWIWKWTMEWGBWSUCZACUDZWICUIZGRWSEQXAWHACWGBWSEVBVCWJGMXC
+        XBVAQWCABCDFRGMHIJVDVEWTEXCSZWCWJWCVFWTCRSXDWCUSWTCFTNZRHWTTRVGWJXERSZV
+        HWJWCVIXFRFTFTVJVKVLWBZECRVMUOVNWTWHACWIRWIVOXGVPVQVRVSVTWA $.
+    $}
   $}
 
 
