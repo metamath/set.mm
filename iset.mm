@@ -166893,6 +166893,17 @@ $)
       LIJ $.
   $}
 
+  ${
+    cntri.b $e |- B = ( Base ` M ) $.
+    cntri.p $e |- .+ = ( +g ` M ) $.
+    cntri.z $e |- Z = ( Cntr ` M ) $.
+    $( Defining property of the center of a group.  (Contributed by Mario
+       Carneiro, 22-Sep-2015.) $)
+    cntri $p |- ( ( X e. Z /\ Y e. B ) -> ( X .+ Y ) = ( Y .+ X ) ) $=
+      ( wcel ccntz cfv co wceq ccntr eqid cntrval eqtr4i eleq2i cntzi sylanb )
+      DFJDACKLZLZJEAJDEBMEDBMNFUCDFCOLUCIACUBGUBPZQRSBACDEUBHUDTUA $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
