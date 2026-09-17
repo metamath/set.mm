@@ -167101,6 +167101,13 @@ $)
       WBRZUFDUGUHVGVPVQUIZVJVOAVIVHWBVJRZWFUJUMUNVSAVAIZVIVOIVPWAVIPVEWIVFVRBAU
       OSVSBVOVIVEBVOJVFVRVOBAWEUPSWDQWGVOVJAVLVIVHWEWHVLRZUQURUSWDVBUTEFVJBAVLV
       OWEWHWJVCVD $.
+
+    $( The center of a group is a normal subgroup.  (Contributed by Stefan
+       O'Rear, 6-Sep-2015.) $)
+    cntrnsg $p |- ( M e. Grp -> Z e. ( NrmSGrp ` M ) ) $=
+      ( cgrp wcel csubg cfv wss cnsg cbs ccntz ccntr eqid cntrval ssid cntzsubg
+      eqtr4i mpan2 eqeltrid cntrsubgnsg sylancl ) ADEZBAFGZEBBHBAIGEUBBAJGZAKGZ
+      GZUCBALGUFCUDAUEUDMZUEMZNQUBUDUDHUFUCEUDOUDUDAUEUGUHPRSBOABBCTUA $.
   $}
 
 
