@@ -166925,6 +166925,35 @@ $)
       DFJDACKLZLZJEAJDEBMEDBMNFUCDFCOLUCIACUBGUBPZQRSBACDEUBHUDTUA $.
   $}
 
+  ${
+    $d x y w A $.  $d y w G $.  $d y w H $.  $d x y S $.  $d x y V $.
+    $d x Y $.  $d x Z $.
+    resscntz.p $e |- H = ( G |`s A ) $.
+    resscntz.z $e |- Z = ( Cntz ` G ) $.
+    resscntz.y $e |- Y = ( Cntz ` H ) $.
+    $( Centralizer in a substructure.  (Contributed by Mario Carneiro,
+       3-Oct-2015.) $)
+    resscntz $p |- ( ( A e. V /\ S C_ A ) ->
+      ( Y ` S ) = ( ( Z ` S ) i^i A ) ) $=
+      ( vw vy wcel wss wa cfv cvv syl wb co vx cin cv wex cntzm ressmex exlimiv
+      wi simpld a1i simpr elin1d eqid cntzrcl ex simprd cress wceq eqidd simpll
+      cbs ressbasssd sylan9ssr elinel1 cplusg wral elin ressbasd eleq2d bitr3id
+      oveqd eqeq12d ralbidv anbi12d anass bitr3di adantlr simpllr simplr sseq2d
+      ressplusgd bitrid mpbi2and elcntz biancomi adantl anbi2d 3bitr4d impancom
+      ssin adantr pm5.21ndd eqrdv ) AEMZBANZOZUABFPZBGPZAUBZWPCQMZUAUCZWQMZXAWS
+      MZXBWTUHWPXBWTAQMZXBKUCZDMZKUDWTXDOZKBDXAFJUEXFXGKADCXEHUFUGRUIUJWPXCWTWP
+      XCOZWTBCVAPZNZXHXAWRMZWTXJOXHWRAXAWPXCUKULXIBCXAGXIUMZIUNZRUIUOWPWTXBXCSZ
+      WPWTOZXJXBXCXOXBXJXBXOBDVAPZXIXBDQMBXPNZXPBDXAFXPUMZJUNUPXOAXIDECQDCAUQTU
+      RXOHUJZXOXIUSZWPWTUKZWNWOWTUTZVBVCUOXCXJUHXOXCXKXJXAWRAVDXKWTXJXMUPRUJWPX
+      JWTXNWPXJOZWTXNYCWTOZXAXPMZXALUCZDVEPZTZYFXAYGTZURZLBVFZOZXAAMZXAXIMZXAYF
+      CVEPZTZYFXAYOTZURZLBVFZOZOZXBXCWPWTYLUUASXJXOYMYNOZYSOYLUUAXOUUBYEYSYKUUB
+      XAAXIUBZMXOYEXAAXIVGXOUUCXPXAXOAXIDECQXSXTYAYBVHZVIVJXOYRYJLBXOYPYHYQYIXO
+      YOYGXAYFXOAYOCDEQXSXOYOUSYBYAWAZVKXOYOYGYFXAUUEVKVLVMVNYMYNYSVOVPVQYDXQXB
+      YLSYDWOXJXQWNWOXJWTVRWPXJWTVSWOXJOBUUCNZYDXQBAXIWJWPWTUUFXQSXJXOUUCXPBUUD
+      VTVQWBWCLXAXPYGBDFXRYGUMJWDRYCXCUUASWTXCYMXKOYCUUAXCYMXKXAWRAVGWEYCXKYTYM
+      XJXKYTSWPLXAXIYOBCGXLYOUMIWDWFWGWBWKWHUOWIWLUOWLWM $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
