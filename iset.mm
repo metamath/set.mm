@@ -166978,6 +166978,20 @@ $)
       VIVJVK $.
   $}
 
+  ${
+    $d x y z B $.  $d x y z M $.  $d x y z S $.  $d x y T $.  $d x y z Z $.
+    cntzrec.b $e |- B = ( Base ` M ) $.
+    cntzrec.z $e |- Z = ( Cntz ` M ) $.
+    $( Centralizers reverse the subset relation.  (Contributed by Mario
+       Carneiro, 3-Oct-2015.) $)
+    cntz2ss $p |- ( ( S C_ B /\ T C_ S ) -> ( Z ` S ) C_ ( Z ` T ) ) $=
+      ( vx vy wss wa cfv cv cplusg co wceq wral wcel eqid cntzi ssralv ralrimiv
+      ralrimiva wi adantl syl5 wb cntzssv sstr ancoms sscntz sylancr mpbird ) B
+      AJZCBJZKZBELZCELJZHMZIMZDNLZOUTUSVAOPZICQZHUQQZUPVCHUQUSUQRZVBIBQZUPVCVEV
+      BIBVABDUSUTEVASZGTUCUOVFVCUDUNVBICBUAUEUFUBUPUQAJCAJZURVDUGABDEFGUHUOUNVH
+      CBAUIUJHIAVAUQCDEFVGGUKULUM $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
