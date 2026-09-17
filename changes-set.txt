@@ -94,6 +94,7 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+16-Sep-26 df-bj-mpt3  df-mpt3     Moved from BJ's mathbox to main set.mm
  8-Sep-26 r1omfi      hffi        Moved from BTT's mathbox to main set.mm
  8-Sep-26 hfelhf      [same]      Moved from SF's mathbox to main set.mm
  8-Sep-26 rankelg     [same]      Moved from SF's mathbox to main set.mm
