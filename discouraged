@@ -12487,7 +12487,6 @@
 "psubspi2N" is used by "pclfinclN".
 "qexALT" is used by "reexALT".
 "r1omfi" is used by "fineqvr1ombregs".
-"r1omfi" is used by "r1omhf".
 "ralimd4vOLD" is used by "ralimd6vOLD".
 "ralimdvvOLD" is used by "ralimd4vOLD".
 "ralimdvvOLD" is used by "ralimd6vOLD".
@@ -18704,7 +18703,7 @@ New usage of "quantgodelALT" is discouraged (0 uses).
 New usage of "quoremnn0ALT" is discouraged (0 uses).
 New usage of "r19.3rzvOLD" is discouraged (0 uses).
 New usage of "r1omALT" is discouraged (0 uses).
-New usage of "r1omfi" is discouraged (2 uses).
+New usage of "r1omfi" is discouraged (1 uses).
 New usage of "r1pwALT" is discouraged (0 uses).
 New usage of "rab0OLD" is discouraged (0 uses).
 New usage of "rabss2OLD" is discouraged (0 uses).
