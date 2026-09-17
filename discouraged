@@ -16931,6 +16931,7 @@ New usage of "hdmapval3lemN" is discouraged (1 uses).
 New usage of "helch" is discouraged (20 uses).
 New usage of "helloworld" is discouraged (0 uses).
 New usage of "helsh" is discouraged (10 uses).
+New usage of "hfelhfOLD" is discouraged (0 uses).
 New usage of "hfmmval" is discouraged (3 uses).
 New usage of "hfmval" is discouraged (2 uses).
 New usage of "hfsmval" is discouraged (1 uses).
@@ -20616,6 +20617,7 @@ Proof modification of "hbnae-o" is discouraged (11 steps).
 Proof modification of "hbntal" is discouraged (48 steps).
 Proof modification of "hbra2VD" is discouraged (26 steps).
 Proof modification of "helloworld" is discouraged (29 steps).
+Proof modification of "hfelhfOLD" is discouraged (65 steps).
 Proof modification of "hhssbnOLD" is discouraged (39 steps).
 Proof modification of "hirstL-ax3" is discouraged (34 steps).
 Proof modification of "htaOLD" is discouraged (106 steps).
