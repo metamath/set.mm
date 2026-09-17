@@ -166869,6 +166869,16 @@ $)
   $}
 
   ${
+    $d M w $.
+    cntzm.z $e |- Z = ( Cntz ` M ) $.
+    $( If the centralizer of a subset of a magma has an element, the magma is
+       inhabited.  (Contributed by Jim Kingdon, 16-Sep-2026.) $)
+    cntzm $p |- ( X e. ( Z ` S ) -> E. w w e. M ) $=
+      ( cfv wcel cbs cv wex eqid cntzssv sseli basm syl ) DBEGZHDCIGZHAJCHAKQRD
+      RBCERLZFMNDRACSOP $.
+  $}
+
+  ${
     $d y M $.  $d y .+ $.  $d y S $.  $d y X $.  $d y Y $.
     cntzi.p $e |- .+ = ( +g ` M ) $.
     cntzi.z $e |- Z = ( Cntz ` M ) $.
