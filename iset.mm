@@ -181748,6 +181748,142 @@ $)
   $}
 
   ${
+    $d D x y $.  $d I f y $.  $d ph x $.  $d f k y $.  $d k x $.  $d R x $.
+    $d f x $.
+    rhmpsrlem1.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+    rhmpsrlem1.r $e |- ( ph -> R e. Ring ) $.
+    rhmpsrlem2.i $e |- ( ph -> I e. Fin ) $.
+    rhmpsrlem1.x $e |- ( ph -> X : D --> ( Base ` R ) ) $.
+    rhmpsrlem1.y $e |- ( ph -> Y : D --> ( Base ` R ) ) $.
+    $( Lemma for rhmpsr et al.  (Contributed by SN, 8-Feb-2025.) $)
+    rhmpsrfilem2 $p |- ( ( ph /\ k e. D ) ->
+      ( R gsum ( x e. { y e. D | y oR <_ k } |->
+        ( ( X ` x ) ( .r ` R ) ( Y ` ( k oF - x ) ) ) ) ) e. ( Base ` R ) ) $=
+      ( cv wcel wa wbr cfv cle cofr crab cbs cmin cof co cmpt c0g eqid ringcmnd
+      cmulr adantr cfn simpr psrbaglefifi syl2anc crg ad2antrr wf elrabi adantl
+      ccmn ffvelcdmd cn0 psrbagf syl breq1 elrab simprbi syl3anc simpld ringcld
+      psrbagcon fmpttd gsumclfi ) AGPZDQZRZCPZVQUAUBZSZCDUCZEUDTZBWCBPZITZVQWEU
+      EUFUGZJTZEULTZUGZUHEEUITZWDUJZWKUJAEVCQVRAELUKUMVSVRHUNQZWCUNQAVRUOZAWMVR
+      MUMCDFVQHKUPUQVSBWCWJWDVSWEWCQZRZWDEWIWFWHWLWIUJAEURQVRWOLUSWPDWDWEIADWDI
+      UTVRWONUSWOWEDQZVSWBCWEDVAVBZVDWPDWDWGJADWDJUTVRWOOUSWPWGDQZWGVQWASZWPVRH
+      VEWEUTZWEVQWASZWSWTRVSVRWOWNUMWPWQXAWRDFWEHKVFVGWOXBVSWOWQXBWBXBCWEDVTWEV
+      QWAVHVIVJVBDFVQWEHKVNVKVLVDVMVOVP $.
+  $}
+
+  ${
+    $d .x. f g k x $.  $d B f g k x $.  $d D f g k x y $.  $d F f g k x $.
+    $d G f g k x $.  $d I f g h k x y $.  $d R f g k x $.  $d V f g k x $.
+    $d W f g k x $.  $d X k x y $.  $d f g k ph x $.
+    psrmulr.s $e |- S = ( I mPwSer R ) $.
+    psrmulr.b $e |- B = ( Base ` S ) $.
+    psrmulr.m $e |- .x. = ( .r ` R ) $.
+    psrmulr.t $e |- .xb = ( .r ` S ) $.
+    psrmulr.d $e |- D = { h e. ( NN0 ^m I ) | ( `' h " NN ) e. Fin } $.
+    $( The multiplication operation of the multivariate power series structure.
+       (Contributed by Mario Carneiro, 28-Dec-2014.)  (Revised by Mario
+       Carneiro, 2-Oct-2015.)  (Proof shortened by AV, 2-Mar-2024.) $)
+    psrmulrg $p |- ( ( I e. V /\ R e. W ) ->
+        .xb = ( f e. B , g e. B |-> ( k e. D |->
+            ( R gsum ( x e. { y e. D | y oR <_ k } |->
+            ( ( f ` x ) .x. ( g ` ( k oF - x ) ) ) ) ) ) ) ) $=
+      ( wcel wa cv cle cofr wbr crab cfv cmin cof co cmpt cgsu cmpo cnx cbs cop
+      cplusg cmulr ctp csca cvsca csn cxp cts ctopn cpt cun cvv c1 c9 cres eqid
+      simpl simpr psrbasg eqidd psrval psrplusgg opeq2d tpeq2d uneq1d wfn basfn
+      eqtr4d cmps fnpsr elexd fnovex mp3an2i eqeltrid funfvex sylancr plusgslid
+      funfni slotex syl mpoexga syl2anc ccnv cn cima cfn cn0 fnmap nn0ex rabexd
+      cmap a1i topnfn snexg xpexd ptex psrvalstrd mulrslid wss snsstp3 strslfv3
+      ssun1 sstri ) MNUAZEOUAZUBZGIJCCLDEABUCLUCZUDUEUFBDUGAUCZIUCZUHYDYEUIUJUK
+      JUCUHHUKULUMUKULZUNZUOUPUHCUQZUOURUHZFURUHZUQZUOUSUHYHUQZUTZUOVAUHEUQUOVB
+      UHAIEUPUHZCDYEVCVDYFHUJUKZUNZUQUOVEUHDEVFUHZVCZVDZVGUHZUQUTZVHZFUSVIVJVKU
+      QYCFYIYJEURUHZUJCCVDVLZUQZYMUTZUUBVHUUCYCABCDUUDUUEEFYQHYHIJKLMUUAYOYRNOP
+      YOVMZUUDVMZRYRVMTYCCDEFKMYONOPUUHTQYAYBVNZYAYBVOZVPUUEVMYHVMYQVMYCUUAVQUU
+      JUUKVRYCYNUUGUUBYCYLUUFYIYMYCYKUUEYJCUUDYKEFMNOPQUUIYKVMVSVTWAWBWEYCCVIYK
+      VIEYQYHUUAOVIVIVIYCCFUPUHZVIQYCUPVIWCZFVIUAZUULVIUAZWDYCFMEWFUKZVIPWFVIVI
+      VDZWCYCMVIUAZEVIUAZUUPVIUAWGYCMNUUJWHZYCEOUUKWHZMEVIVIWFWIWJWKZUUOVIFUPFU
+      PWLWOWMWKZYCUUNYKVIUAUVBFURVIWNWPWQYCCVIUAZUVDYHVIUAUVCUVCIJCCYGVIVIWRWSZ
+      UUKYCYOVIUAZUVDYQVIUAYCUUMUUSUVFWDUVAUVFVIEUPEUPWLWOWMUVCAIYOCYPVIVIWRWSY
+      CYTVIUAUUAVIUAYCDYSVIVIYCKUCWTXAXBXCUAKXDMXHUKZDVITXHUUQWCYCXDVIUAZUURUVG
+      VIUAXEUVHYCXFXIUUTXDMVIVIXHWIWJXGYCYRVIUAZYSVIUAYCVFVIWCUUSUVIXJUVAUVIVIE
+      VFEVFWLWOWMYRVIXKWQXLYTVIXMWQXNXOYMVCZUUCXPYCUVJYNUUCYIYLYMXQYNUUBXSXTXIU
+      VESXR $.
+
+    psrmulfval.i $e |- ( ph -> F e. B ) $.
+    psrmulfval.r $e |- ( ph -> G e. B ) $.
+    $( The multiplication operation of the multivariate power series structure.
+       (Contributed by Mario Carneiro, 28-Dec-2014.) $)
+    psrmulfval $p |- ( ph -> ( F .xb G ) = ( k e. D |->
+            ( R gsum ( x e. { y e. D | y oR <_ k } |->
+            ( ( F ` x ) .x. ( G ` ( k oF - x ) ) ) ) ) ) ) $=
+      ( vf vg cv cle cofr wbr crab cfv cmin cof co cmpt cgsu cvv wcel cmpo wceq
+      wa cmps reldmpsr cxp wfn wrel fnpsr fnrel ax-mp relelbasov psrmulrg fveq1
+      syl oveqan12d mpteq2dv oveq2d adantl ccnv cima cfn cn0 fnmap nn0ex simpld
+      cn cmap fnovex mp3an12i rabexd mptexd ovmpod ) AUBUCLMDDKEFBCUDKUDZUEUFUG
+      CEUHZBUDZUBUDZUIZWJWLUJUKULZUCUDZUIZIULZUMZUNULZUMZKEFBWKWLLUIZWOMUIZIULZ
+      UMZUNULZUMZHUOANUOUPZFUOUPZUSZHUBUCDDXAUQURALDUPXJTLDGUTNFVAUTUOUOVBZVCUT
+      VDVEXKUTVFVGOPVHVKZBCDEFGHIUBUCJKNUOUOOPQRSVIVKWMLURZWPMURZUSZXAXGURAXOKE
+      WTXFXOWSXEFUNXOBWKWRXDXMXNWNXBWQXCIWLWMLVJWOWPMVJVLVMVNVMVOTUAAKEXFUOAJUD
+      VPWCVQVRUPJVSNWDULZEUOSWDXKVCVSUOUPAXHXPUOUPVTWAAXHXIXLWBVSNUOUOWDWEWFWGW
+      HWI $.
+
+    ${
+      $d F f $.  $d X h $.
+      psrmulval.r $e |- ( ph -> X e. D ) $.
+      psrmulvalfi.fi $e |- ( ph -> I e. Fin ) $.
+      psrmulvalfi.ring $e |- ( ph -> R e. Ring ) $.
+      $( The multiplication operation of the multivariate power series
+         structure.  (Contributed by Mario Carneiro, 28-Dec-2014.) $)
+      psrmulvalfi $p |- ( ph -> ( ( F .xb G ) ` X ) =
+              ( R gsum ( k e. { y e. D | y oR <_ X } |->
+              ( ( F ` k ) .x. ( G ` ( X oF - k ) ) ) ) ) ) $=
+        ( vx cv cle cofr wbr crab cfv cmin cof cmpt cgsu cbs wceq breq2 rabbidv
+        fvoveq1 oveq2d mpteq12dv psrmulfval c0g eqid ringcmnd wcel psrbaglefifi
+        co cfn syl2anc wa crg adantr cn0 cmap psrelbasfi elrabi adantl psrbagfi
+        syl eleqtrd ffvelcdmd psrbagconcl sylan ringcld fmpttd gsumclfi fvmptd4
+        wf ) AUENEJBUFZUEUFZUGUHZUIZBDUJZJUFZKUKZWLWPULUMZVILUKZHVIZUNZUOVIEJWK
+        NWMUIZBDUJZWQNWPWRVIZLUKZHVIZUNZUOVIDKLGVIEUPUKZWLNUQZXAXGEUOXIJWOWTXCX
+        FXIWNXBBDWLNWKWMURUSXIWSXEWQHWLNWPLWRUTVAVBVAAJBCDEFGHIUEKLMOPQRSTUAVCU
+        BAXCXHXGEEVDUKZXHVEZXJVEAEUDVFANDVGZMVJVGZXCVJVGUBUCBDINMSVHVKAJXCXFXHA
+        WPXCVGZVLZXHEHWQXEXKQAEVMVGXNUDVNXOVOMVPVIZXHWPKAXPXHKWJXNACEFMXHKOXKUC
+        PTVQVNXOWPDXPXNWPDVGAXBBWPDVRVSADXPUQZXNAXMXQUCDIMSVTWAVNZWBWCXOXPXHXDL
+        AXPXHLWJXNACEFMXHLOXKUCPUAVQVNXOXDDXPXOXDXCVGZXDDVGAXLXNXSUBBDXCINMWPSX
+        CVEWDWEXBBXDDVRWAXRWBWCWFWGWHWI $.
+    $}
+  $}
+
+  ${
+    $d k x B $.  $d k x ph $.  $d k x R $.  $d k x X $.  $d k x Y $.
+    $d k x y D $.  $d f k x y I $.
+    psrmulcl.s $e |- S = ( I mPwSer R ) $.
+    psrmulcl.b $e |- B = ( Base ` S ) $.
+    psrmulcl.t $e |- .x. = ( .r ` S ) $.
+    psrmulcl.r $e |- ( ph -> R e. Ring ) $.
+    psrmulclfi.i $e |- ( ph -> I e. Fin ) $.
+    psrmulcl.x $e |- ( ph -> X e. B ) $.
+    psrmulcl.y $e |- ( ph -> Y e. B ) $.
+    ${
+      psrmulcl.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+      $( Closure of the power series multiplication operation.  (Contributed by
+         Mario Carneiro, 29-Dec-2014.) $)
+      psrmulclfilem $p |- ( ph -> ( X .x. Y ) e. B ) $=
+        ( wcel cvv vk vx vy cv cle cofr wbr crab cfv cmin cof co cmulr cmpt cbs
+        cgsu cmap eqid psrelbas rhmpsrfilem2 fmpttd wfn basfn crg elexd funfvex
+        wf funfni sylancr ccnv cn cima cfn cn0 cxp fnmap fnovex mp3an12i rabexd
+        nn0ex elmapd mpbird psrmulfval psrbasg 3eltr4d ) AUACDUBUCUDUAUDZUEUFUG
+        UCCUHUBUDZIUIWFWGUJUKULJUIDUMUIZULUNUPULZUNZDUOUIZCUQULZIJFULBAWJWLSCWK
+        WJVGAUACWIWKAUBUCCDGUAHIJRNOABCDEGHWKIKWKURZRLPUSABCDEGHWKJKWMRLQUSUTVA
+        AWKCWJTTAUOTVBDTSWKTSZVCADVDNVEWNTDUODUOVFVHVIAGUDVJVKVLVMSGVNHUQULZCTR
+        UQTTVOVBVNTSAHTSWOTSVPVTAHVMOVEVNHTTUQVQVRVSWAWBAUBUCBCDEFWHGUAIJHKLWHU
+        RMRPQWCABCDEGHWKVMVDKWMRLONWDWE $.
+    $}
+
+    $( Closure of the power series multiplication operation.  (Contributed by
+       Mario Carneiro, 29-Dec-2014.) $)
+    psrmulclfi $p |- ( ph -> ( X .x. Y ) e. B ) $=
+      ( vf cv ccnv cn cima cfn wcel cn0 cmap co crab eqid psrmulclfilem ) ABPQR
+      STUAUBPUCFUDUEUFZCDEPFGHIJKLMNOUIUGUH $.
+  $}
+
+  ${
     $d x .0. $.  $d r s t x y z ph $.  $d r s t x y z R $.  $d r s t x y z S $.
     $d x D $.  $d f x y z I $.  $d x y N $.  $d x y X $.
     psrgrp.s $e |- S = ( I mPwSer R ) $.
