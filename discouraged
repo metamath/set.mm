@@ -6446,6 +6446,7 @@
 "flddivrng" is used by "isfld2".
 "flddivrng" is used by "isfldidl".
 "fuco22natlem" is used by "fuco22nat".
+"fuconuniqlemlem" is used by "fuconuniqlem".
 "funadj" is used by "adj1".
 "funadj" is used by "adj1o".
 "funadj" is used by "adjeq".
@@ -16724,6 +16725,7 @@ New usage of "frgrwopreglem5ALT" is discouraged (0 uses).
 New usage of "fsetprcnexALT" is discouraged (0 uses).
 New usage of "fuco11bALT" is discouraged (0 uses).
 New usage of "fuco22natlem" is discouraged (1 uses).
+New usage of "fuconuniqlemlem" is discouraged (1 uses).
 New usage of "funadj" is discouraged (4 uses).
 New usage of "funcnvadj" is discouraged (1 uses).
 New usage of "funcringcsetcALTV" is discouraged (0 uses).
