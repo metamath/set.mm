@@ -167044,6 +167044,18 @@ $)
       BGWDCWHYBVRVSVT $.
   $}
 
+  ${
+    $d x y A $.  $d x y F $.  $d x y G $.  $d x y H $.  $d x y S $.  $d x T $.
+    $d x Y $.  $d x Z $.
+    cntzmhm.z $e |- Z = ( Cntz ` G ) $.
+    $( If the elements of ` S ` commute, the elements of a subset ` T ` also
+       commute.  (Contributed by Mario Carneiro, 25-Apr-2016.) $)
+    cntzidss $p |- ( ( S C_ ( Z ` S ) /\ T C_ S ) -> T C_ ( Z ` T ) ) $=
+      ( cfv wss wa simpr simpl cbs eqid cntzssv sstrdi cntz2ss sylancom sstrd )
+      AADFZGZBAGZHZBABDFZSTIUAARUBSTJZSTACKFZGRUBGUAARUDUCUDACDUDLZEMNUDABCDUEE
+      OPQQ $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
