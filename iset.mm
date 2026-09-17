@@ -167085,6 +167085,24 @@ $)
       AVECUPUSUT $.
   $}
 
+  ${
+    $d x y M $.  $d x y X $.  $d x y Z $.
+    cntrnsg.z $e |- Z = ( Cntr ` M ) $.
+    $( A central subgroup is normal.  (Contributed by Stefan O'Rear,
+       6-Sep-2015.) $)
+    cntrsubgnsg $p |- ( ( X e. ( SubGrp ` M ) /\ X C_ Z ) ->
+        X e. ( NrmSGrp ` M ) ) $=
+      ( vx vy csubg cfv wcel wss wa cv cplusg co wral wceq sseldd eqid ad2antrr
+      csg simpl ccntz simplr simprr ccntr cntrval eqtr4i eleqtrrdi simprl cntzi
+      cbs cnsg syl2anc oveq1d subgrcl subgss grppncan syl3anc eqtr3d ralrimivva
+      cgrp eqeltrd isnsg3 sylanbrc ) BAGHIZBCJZKZVEELZFLZAMHZNZVHATHZNZBIZFBOEA
+      UKHZOBAULHIVEVFUAVGVNEFVOBVGVHVOIZVIBIZKZKZVMVIBVSVIVHVJNZVHVLNZVMVIVSVTV
+      KVHVLVSVIVOAUBHZHZIVPVTVKPVSVICWCVSBCVIVEVFVRUCVGVPVQUDZQWCAUEHCVOAWBVORZ
+      WBRZUFDUGUHVGVPVQUIZVJVOAVIVHWBVJRZWFUJUMUNVSAVAIZVIVOIVPWAVIPVEWIVFVRBAU
+      OSVSBVOVIVEBVOJVFVRVOBAWEUPSWDQWGVOVJAVLVIVHWEWHVLRZUQURUSWDVBUTEFVJBAVLV
+      OWEWHWJVCVD $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
