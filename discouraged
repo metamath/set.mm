@@ -4542,6 +4542,7 @@
 "cnvbraval" is used by "bracnlnval".
 "cnvunop" is used by "unopadj2".
 "cnvunop" is used by "unoplin".
+"cofu1stfixlem" is used by "cofu1stfix".
 "com3rgbi" is used by "impexpdcom".
 "con5" is used by "con5i".
 "con5i" is used by "vk15.4j".
@@ -6446,7 +6447,12 @@
 "flddivrng" is used by "isfld2".
 "flddivrng" is used by "isfldidl".
 "fuco22natlem" is used by "fuco22nat".
+"fucoaltnelem" is used by "fucoaltne".
+"fucoaltvallem" is used by "fucoaltval".
+"fucoiscomplem" is used by "fucoiscomp".
 "fuconuniqlemlem" is used by "fuconuniqlem".
+"fuconuniqvalslem" is used by "fuconuniqvals".
+"fucorididlem" is used by "fucoridid".
 "funadj" is used by "adj1".
 "funadj" is used by "adj1o".
 "funadj" is used by "adjeq".
@@ -15811,6 +15817,7 @@ New usage of "cnvfiALT" is discouraged (0 uses).
 New usage of "cnvunop" is discouraged (2 uses).
 New usage of "cnvxpOLD" is discouraged (0 uses).
 New usage of "coecjOLD" is discouraged (0 uses).
+New usage of "cofu1stfixlem" is discouraged (1 uses).
 New usage of "com3rgbi" is discouraged (1 uses).
 New usage of "con3ALT" is discouraged (0 uses).
 New usage of "con3ALT2" is discouraged (0 uses).
@@ -16725,7 +16732,12 @@ New usage of "frgrwopreglem5ALT" is discouraged (0 uses).
 New usage of "fsetprcnexALT" is discouraged (0 uses).
 New usage of "fuco11bALT" is discouraged (0 uses).
 New usage of "fuco22natlem" is discouraged (1 uses).
+New usage of "fucoaltnelem" is discouraged (1 uses).
+New usage of "fucoaltvallem" is discouraged (1 uses).
+New usage of "fucoiscomplem" is discouraged (1 uses).
 New usage of "fuconuniqlemlem" is discouraged (1 uses).
+New usage of "fuconuniqvalslem" is discouraged (1 uses).
+New usage of "fucorididlem" is discouraged (1 uses).
 New usage of "funadj" is discouraged (4 uses).
 New usage of "funcnvadj" is discouraged (1 uses).
 New usage of "funcringcsetcALTV" is discouraged (0 uses).
