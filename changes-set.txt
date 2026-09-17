@@ -96,7 +96,7 @@ DONE:
 Date      Old         New         Notes
 16-Sep-26 nna4b4nsq   [same]      Moved from SN's mathbox to main set.mm
 16-Sep-26 flt4lem*    [same]      Moved from SN's mathbox to main set.mm
-16-Sep-26 flt4lem     [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 flt4lem     exp4sqsq    Moved from SN's mathbox to main set.mm
 16-Sep-26 fltne       [same]      Moved from SN's mathbox to main set.mm
 16-Sep-26 fltabcoprm  [same]      Moved from SN's mathbox to main set.mm
 16-Sep-26 fltbccoprm  [same]      Moved from SN's mathbox to main set.mm
