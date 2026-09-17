@@ -166954,6 +166954,30 @@ $)
       XJXKYTSWPLXAXIYOBCGXLYOUMIWDWFWGWBWKWHUOWIWLUOWLWM $.
   $}
 
+  ${
+    $d B x y z $.  $d C x y z $.  $d M x y z $.  $d S x y z $.  $d Z x y z $.
+    cntzsgrpcl.b $e |- B = ( Base ` M ) $.
+    cntzsgrpcl.z $e |- Z = ( Cntz ` M ) $.
+    cntzsgrpcl.c $e |- C = ( Z ` S ) $.
+    $( Centralizers are closed under the semigroup operation.  (Contributed by
+       AV, 17-Feb-2025.) $)
+    cntzsgrpcl $p |- ( ( M e. Smgrp /\ S C_ B )
+                       -> A. y e. C A. z e. C ( y ( +g ` M ) z ) e. C ) $=
+      ( vx wcel wa cv co wceq adantr sgrpass syl13anc eleq2i csgrp wss cfv wral
+      cplusg simpll cntzssv eqsstri simprl sselid simprr sgrpcl syl3anc adantlr
+      simpr sselda cntzi sylanb sylan oveq2d oveq1d 3eqtr2d 3eqtrd ralrimiva wb
+      eqid elcntz bitrid ad2antlr mpbir2and ralrimivva ) FUALZECUBZMZANZBNZFUEU
+      CZOZDLZABDDVNVODLZVPDLZMZMZVSVRCLZVRKNZVQOZWEVRVQOZPZKEUDZWCVLVOCLZVPCLZW
+      DVLVMWBUFZWCDCVODEGUCZCJCEFGHIUGUHZVNVTWAUIZUJZWCDCVPWNVNVTWAUKZUJZCFVOVP
+      VQHVQVFZULUMWCWHKEWCWEELZMZWFVOVPWEVQOZVQOZWEVOVQOZVPVQOZWGXAVLWJWKWECLZW
+      FXCPWCVLWTWLQZWCWJWTWPQZWCWKWTWRQZVNWTXFWBVNECWEVLVMUOUPUNZCFVOVPVQWEHWSR
+      SXAXCVOWEVPVQOZVQOZVOWEVQOZVPVQOZXEXAXBXKVOVQWCWAWTXBXKPZWQWAVPWMLWTXODWM
+      VPJTVQEFVPWEGWSIUQURUSUTXAVLWJXFWKXNXLPXGXHXJXICFVOWEVQVPHWSRSXAXMXDVPVQW
+      CVTWTXMXDPZWOVTVOWMLWTXPDWMVOJTVQEFVOWEGWSIUQURUSVAVBXAVLXFWJWKXEWGPXGXJX
+      HXICFWEVOVQVPHWSRSVCVDVMVSWDWIMZVEVLWBVSVRWMLVMXQDWMVRJTKVRCVQEFGHWSIVGVH
+      VIVJVK $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
