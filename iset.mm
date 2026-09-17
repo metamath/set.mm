@@ -167054,6 +167054,24 @@ $)
       ( cfv wss wa simpr simpl cbs eqid cntzssv sstrdi cntz2ss sylancom sstrd )
       AADFZGZBAGZHZBABDFZSTIUAARUBSTJZSTACKFZGRUBGUAARUDUCUDACDUDLZEMNUDABCDUEE
       OPQQ $.
+
+    cntzmhm.y $e |- Y = ( Cntz ` H ) $.
+    $( Centralizers in a monoid are preserved by monoid homomorphisms.
+       (Contributed by Mario Carneiro, 24-Apr-2016.) $)
+    cntzmhm $p |- ( ( F e. ( G MndHom H ) /\ A e. ( Z ` S ) ) ->
+      ( F ` A ) e. ( Y ` ( F " S ) ) ) $=
+      ( vy vx co wcel cfv wa cbs cv cplusg wceq eqid cmhm cima wf cntzssv sseli
+      wral ffvelcdm syl2an cntzi adantll fveq2d simpll ad2antlr cvv wss cntzrcl
+      mhmf adantl simprd sselda mhmlin syl3anc 3eqtr3d ralrimiva wb adantr ffnd
+      wfn oveq2 oveq1 eqeq12d ralima syl2anc mpbird crn imassrn frnd sstrid syl
+      elcntz mpbir2and ) CDEUALMZABGNZMZOZACNZCBUBZFNMZWFEPNZMZWFJQZERNZLZWKWFW
+      LLZSZJWGUFZWBDPNZWICUCZAWQMZWJWDWQWIDECWQTZWITZUQZWCWQAWQBDGWTHUDUEZWQWIA
+      CUGUHWEWPWFKQZCNZWLLZXEWFWLLZSZKBUFZWEXHKBWEXDBMZOZAXDDRNZLZCNZXDAXLLZCNZ
+      XFXGXKXMXOCWDXJXMXOSWBXLBDAXDGXLTZHUIUJUKXKWBWSXDWQMZXNXFSWBWDXJULZWDWSWB
+      XJXCUMZWEBWQXDWEDUNMZBWQUOZWDYAYBOWBWQBDAGWTHUPURUSZUTZWQXLWLDECAXDWTXQWL
+      TZVAVBXKWBXRWSXPXGSXSYDXTWQXLWLDECXDAWTXQYEVAVBVCVDWECWQVHYBWPXIVEWEWQWIC
+      WBWRWDXBVFZVGYCWOXHJKWQBCWKXESWMXFWNXGWKXEWFWLVIWKXEWFWLVJVKVLVMVNWEWGWIU
+      OWHWJWPOVEWEWGCVOWICBVPWEWQWICYFVQVRJWFWIWLWGEFXAYEIVTVSWA $.
   $}
 
 
