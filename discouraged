@@ -16934,6 +16934,7 @@ New usage of "helsh" is discouraged (10 uses).
 New usage of "hfelhfOLD" is discouraged (0 uses).
 New usage of "hfmmval" is discouraged (3 uses).
 New usage of "hfmval" is discouraged (2 uses).
+New usage of "hfpwOLD" is discouraged (0 uses).
 New usage of "hfsmval" is discouraged (1 uses).
 New usage of "hfsnOLD" is discouraged (0 uses).
 New usage of "hfsval" is discouraged (0 uses).
@@ -20621,6 +20622,7 @@ Proof modification of "hbntal" is discouraged (48 steps).
 Proof modification of "hbra2VD" is discouraged (26 steps).
 Proof modification of "helloworld" is discouraged (29 steps).
 Proof modification of "hfelhfOLD" is discouraged (65 steps).
+Proof modification of "hfpwOLD" is discouraged (54 steps).
 Proof modification of "hfsnOLD" is discouraged (44 steps).
 Proof modification of "hfunOLD" is discouraged (162 steps).
 Proof modification of "hfuniOLD" is discouraged (93 steps).
