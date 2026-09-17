@@ -167072,6 +167072,17 @@ $)
       TZVAVBXKWBXRWSXPXGSXSYDXTWQXLWLDECXDAWTXQYEVAVBVCVDWECWQVHYBWPXIVEWEWQWIC
       WBWRWDXBVFZVGYCWOXHJKWQBCWKXESWMXFWNXGWKXEWFWLVIWKXEWFWLVJVKVLVMVNWEWGWIU
       OWHWJWPOVEWEWGCVOWICBVPWEWQWICYFVQVRJWFWIWLWGEFXAYEIVTVSWA $.
+
+    $( Centralizers in a monoid are preserved by monoid homomorphisms.
+       (Contributed by Mario Carneiro, 24-Apr-2016.) $)
+    cntzmhm2 $p |- ( ( F e. ( G MndHom H ) /\ S C_ ( Z ` T ) ) ->
+      ( F " S ) C_ ( Y ` ( F " T ) ) ) $=
+      ( vx cmhm co wcel cfv wss wa cima wral cbs eqid cv ralrimiva ssralv mpan9
+      cntzmhm wfun cdm wb mhmf adantr ffund simpr cntzssv sstrdi fdmd funimass4
+      wf sseqtrrd syl2anc mpbird ) CDEKLMZABGNZOZPZCAQCBQFNZOZJUAZCNVEMZJARZVAV
+      HJVBRVCVIVAVHJVBVGBCDEFGHIUEUBVHJAVBUCUDVDCUFACUGZOVFVIUHVDDSNZESNZCVAVKV
+      LCUQVCVKVLDECVKTZVLTUIUJZUKVDAVKVJVDAVBVKVAVCULVKBDGVMHUMUNVDVKVLCVNUOURJ
+      AVECUPUSUT $.
   $}
 
 
