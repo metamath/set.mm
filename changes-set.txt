@@ -114,6 +114,24 @@ Date      Old         New         Notes
 16-Sep-26 gcdle1d     [same]      Moved from SN's mathbox to main set.mm
 16-Sep-26 mvrrsubd    [same]      Moved from SN's mathbox to main set.mm
 16-Sep-26 laddrotrd   mvlladdcd   Moved from SN's mathbox to main set.mm
+16-Sep-26 df-bj-mpt3  df-mpt3     Moved from BJ's mathbox to main set.mm
+ 8-Sep-26 r1omfi      hffi        Moved from BTT's mathbox to main set.mm
+ 8-Sep-26 hfelhf      [same]      Moved from SF's mathbox to main set.mm
+ 8-Sep-26 rankelg     [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 rankpwg     [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 rankung     [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 ranksng     [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 chf         [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 df-hf       [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 elhf        [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 elhf2       [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 elhf2g      [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 0hf         [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 hfun        [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 hfsn        [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 hfadj       [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 hfuni       [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 hfpw        [same]      Moved from SF's mathbox to main set.mm
 30-Aug-26 iunpreima   [same]      Moved from TA's mathbox to main set.mm
 27-Aug-26 fmpodg      [same]      Moved from ZW's mathbox to main set.mm
 27-Aug-26 fmpod       [same]      Moved from ZW's mathbox to main set.mm
