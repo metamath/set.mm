@@ -197311,6 +197311,21 @@ $)
     ITURUSUDUSVJURBUEZOVHAVABUFUGUTVECDZBUHDZVIVFTUSURVJVLVKAVAUIUJUSVMURBUKOVE
     BULUMUNURVDATUSAUOUPUQ $.
 
+  $( Generalize ~ rpcxpmul2 to negative integers.  (Contributed by Mario
+     Carneiro, 23-Apr-2015.) $)
+  rpcxpmul2z $p |- ( ( A e. RR+ /\ B e. CC /\ C e. ZZ ) ->
+      ( A ^c ( B x. C ) ) = ( ( A ^c B ) ^ C ) ) $=
+    ( crp wcel cc cmul co ccxp cexp wceq cn0 cneg wa rpcxpmul2 adantr c1 oveq2d
+    cdiv mulcld cz cr wo elznn0 wi 3expia simpll simplr simprr syl3anc mulneg2d
+    simprl recnd negeqd negnegd eqtrd negcld rpcxpneg syl2anc cc0 cap rpcncxpcl
+    eqtr3d cxpap0 expineg2 syl22anc 3eqtr4d expr jaod expimpd biimtrid 3impia
+    wbr ) ADEZBFEZCUAEZABCGHZIHZABIHZCJHZKZVPCUBEZCLEZCMZLEZUCZNVNVONZWACUDWGWB
+    WFWAWGWBNWCWAWEWGWCWAUEWBVNVOWCWAABCOUFPWGWBWEWAWGWBWENZNZQABWDGHZIHZSHZQVS
+    WDJHZSHZVRVTWIWKWMQSWIVNVOWEWKWMKVNVOWHUGZVNVOWHUHZWGWBWEUIZABWDOUJRWIAWJMZ
+    IHZVRWLWIWRVQAIWIWRVQMZMVQWIWJWTWIBCWPWICWGWBWEULUMZUKUNWIVQWIBCWPXATUOUPRW
+    IVNWJFEWSWLKWOWIBWDWPWICXAUQTAWJURUSVCWIVSFEZVSUTVAVMZCFEWEVTWNKWGXBWHABVBP
+    WGXCWHABVDPXAWQVSCVEVFVGVHVIVJVKVL $.
+
   $( Absolute value of a power, when the base is real.  (Contributed by Mario
      Carneiro, 15-Sep-2014.) $)
   abscxp $p |- ( ( A e. RR+ /\ B e. CC ) ->
