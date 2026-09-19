@@ -94,6 +94,26 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+16-Sep-26 nna4b4nsq   [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 flt4lem*    [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 flt4lem     exp4sqsq    Moved from SN's mathbox to main set.mm
+16-Sep-26 fltne       [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 fltabcoprm  [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 fltbccoprm  [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 fltaccoprm  [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 fltabcoprmex [same]     Moved from SN's mathbox to main set.mm
+16-Sep-26 fltdvdsabdvdsc [same]   Moved from SN's mathbox to main set.mm
+16-Sep-26 flt0        [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 fltdiv      [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 infdesc     [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 posqsqznn   [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 dvdsexpnn   [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 dvdsexpad   [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 gcdnn0id    [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 gcdle2d     [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 gcdle1d     [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 mvrrsubd    [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 laddrotrd   mvlladdcd   Moved from SN's mathbox to main set.mm
 16-Sep-26 df-bj-mpt3  df-mpt3     Moved from BJ's mathbox to main set.mm
  8-Sep-26 r1omfi      hffi        Moved from BTT's mathbox to main set.mm
  8-Sep-26 hfelhf      [same]      Moved from SF's mathbox to main set.mm
