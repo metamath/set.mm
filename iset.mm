@@ -196692,6 +196692,15 @@ $)
     ( cpi cneg cxr wcel cr cioc co wss pire renegcli rexri iocssre mp2an ) ABZC
     DAEDNAFGEHNAIJKINALM $.
 
+  $( Property of an ` N ` -th root of unity.  (Contributed by Mario Carneiro,
+     23-Apr-2015.) $)
+  root1idef $p |- ( N e. NN
+      -> ( ( exp ` ( ( _i x. ( 2 x. _pi ) ) / N ) ) ^ N ) = 1 ) $=
+    ( cn wcel ci c2 cpi cmul co cdiv ce cfv cexp c1 wceq ax-icn 2cn picn mulcli
+    cc cz a1i nncn nnap0 divclapd efexp syl2anc divcanap2d fveq2d eqtrdi eqtr3d
+    nnz ef2pi ) ABCZADEFGHZGHZAIHZGHZJKZUPJKALHZMUMUPSCATCURUSNUMUOAUOSCUMDUNOE
+    FPQRRUAZAUBZAUCZUDAUKUPAUEUFUMURUOJKMUMUQUOJUMUOAUTVAVBUGUHULUIUJ $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
