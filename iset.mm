@@ -197326,6 +197326,17 @@ $)
     IVNWJFEWSWLKWOWIBWDWPWICXAUQTAWJURUSVCWIVSFEZVSUTVAVMZCFEWEVTWNKWGXBWHABVBP
     WGXCWHABVDPXAWQVSCVEVFVGVHVIVJVKVL $.
 
+  ${
+    rpcxpmul2zd.a $e |- ( ph -> A e. RR+ ) $.
+    rpcxpmul2zd.b $e |- ( ph -> B e. CC ) $.
+    rpcxpmul2zd.c $e |- ( ph -> C e. ZZ ) $.
+    $( Generalize ~ rpcxpmul2 to negative integers.  (Contributed by Mario
+       Carneiro, 30-May-2016.) $)
+    rpcxpmul2zd $p |- ( ph -> ( A ^c ( B x. C ) ) = ( ( A ^c B ) ^ C ) ) $=
+      ( crp wcel cc cz cmul co ccxp cexp wceq rpcxpmul2z syl3anc ) ABHICJIDKIBC
+      DLMNMBCNMDOMPEFGBCDQR $.
+  $}
+
   $( Absolute value of a power, when the base is real.  (Contributed by Mario
      Carneiro, 15-Sep-2014.) $)
   abscxp $p |- ( ( A e. RR+ /\ B e. CC ) ->
