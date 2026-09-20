@@ -219320,6 +219320,19 @@ $)
     ( vx cr cc0 c1 cioo co cv ce cfv caddc cdiv cmpt wf1o cen wbr eqid iooref1o
     reex f1oen ax-mp ensymi ) BCDEFZBUBABDDAGHIJFKFLZMBUBNOAUCUCPQBUBUCRSTUA $.
 
+  ${
+    $d q x y $.
+    $( The rational and irrational numbers are disjoint.  Here irrational means
+       apart from any rational number.  (Contributed by Jim Kingdon,
+       18-Sep-2026.) $)
+    rirrdisj $p |- ( QQ i^i { x e. RR | A. q e. QQ x =//= q } ) = (/) $=
+      ( vy cq cv cap wbr wral cr crab cin c0 wceq wcel wn disj cc qcn apirr syl
+      breq2 rspcv mtod wb qre breq1 ralbidv elrab3 mtbird mprgbir ) DAEZBEZFGZB
+      DHZAIJZKLMCEZUONZOCDCDUOPUPDNZUQUPULFGZBDHZURUTUPUPFGZURUPQNVAOUPRUPSTUSV
+      ABUPDULUPUPFUAUBUCURUPINUQUTUDUPUEUNUTAUPIUKUPMUMUSBDUKUPULFUFUGUHTUIUJ
+      $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
