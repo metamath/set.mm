@@ -157416,6 +157416,17 @@ $)
     ZOABCDPUHUFUISEZUKOEZULOEUFUGQUMUHRTUGUNUFAUJDUAUBUIUKBCOSUCUDUE $.
 
   ${
+    $d w x $.
+    ressmex.r $e |- R = ( W |`s A ) $.
+    $( If a structure restriction is inhabited, the structure is a set and so
+       is the class it is restricted to.  (Contributed by Jim Kingdon,
+       16-Sep-2026.) $)
+    ressmex $p |- ( X e. R -> ( W e. _V /\ A e. _V ) ) $=
+      ( vw vx cvv wcel wa cress co cv cnx cbs cfv cin cop csts df-iress elmpocl
+      eleq2s ) CHIAHIJDCAKLBFGHHFMZNOPGMUCOPQRSLCAKDGFTUAEUB $.
+  $}
+
+  ${
     $d a w A $.  $d a w B $.  $d a w W $.
     ressbas.r $e |- R = ( W |`s A ) $.
     ressbas.b $e |- B = ( Base ` W ) $.
@@ -166684,6 +166695,419 @@ $)
       AUCZFGUDPZRZSHQRZIQRZSZUTHIUDPZRZSUTUORZUTUPRZAUSVEVBVGAUQVCURVDABCDFHJLN
       UEABCEGIKMOUEUFAVAVFUTABCDEFGHIJKLMNOUITUFVHUSVBVHUQURFGUTUGFGUTUHUJUSUOV
       AUTFGUKTULVIVEVGVIVCVDHIUTUGHIUTUHUJVEUPVFUTHIUKTULUMUN $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Centralizers and centers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c Cntr $.
+  $c Cntz $.
+
+  $( Syntax for the centralizer of a set in a monoid. $)
+  ccntz $a class Cntz $.
+
+  $( Syntax for the centralizer of a monoid. $)
+  ccntr $a class Cntr $.
+
+  ${
+    $d m s x y $.
+    $( Define the _centralizer_ of a subset of a magma, which is the set of
+       elements each of which commutes with each element of the given subset.
+       (Contributed by Stefan O'Rear, 5-Sep-2015.) $)
+    df-cntz $a |- Cntz = ( m e. _V |-> ( s e. ~P ( Base ` m ) |-> { x e.
+      ( Base ` m ) | A. y e. s ( x ( +g ` m ) y ) = ( y ( +g ` m ) x ) } ) ) $.
+
+    $( Define the _center_ of a magma, which is the elements that commute with
+       all others.  (Contributed by Stefan O'Rear, 5-Sep-2015.) $)
+    df-cntr $a |- Cntr = ( m e. _V |-> ( ( Cntz ` m ) ` ( Base ` m ) ) ) $.
+  $}
+
+  ${
+    $d M m s x y $.
+    cntzex.z $e |- Z = ( Cntz ` M ) $.
+    $( Set existence of the centralizer.  (Contributed by Jim Kingdon,
+       15-Sep-2026.) $)
+    cntzex $p |- ( M e. V -> Z e. _V ) $=
+      ( vs vx vy vm wcel ccntz cfv cvv cbs cpw cv cplusg co wceq wral crab cmpt
+      df-cntz fveq2 pweqd oveqd eqeq12d ralbidv rabeqbidv mpteq12dv wfn funfvex
+      elex basfn funfni sylancr pwexd mptexd fvmptd3 eqeltrd eqeltrid ) ABIZCAJ
+      KZLDVAVBEAMKZNZFOZGOZAPKZQZVFVEVGQZRZGEOZSZFVCTZUAZLVAHAEHOZMKZNZVEVFVOPK
+      ZQZVFVEVRQZRZGVKSZFVPTZUAVNLJLFGHEUBVOARZEVQWCVDVMWDVPVCVOAMUCZUDWDWBVLFV
+      PVCWEWDWAVJGVKWDVSVHVTVIWDVRVGVEVFVOAPUCZUEWDVRVGVFVEWFUEUFUGUHUIABULZVAE
+      VDVMLVAVCLVAMLUJALIVCLIZUMWGWHLAMAMUKUNUOUPUQZURWIUSUT $.
+  $}
+
+  ${
+    $d B k $.  $d B m $.  $d M j $.  $d M k $.  $d M m $.  $d Z j $.  $d Z k $.
+    $d Z m $.  $d m s x y $.
+    cntrval.b $e |- B = ( Base ` M ) $.
+    cntrval.z $e |- Z = ( Cntz ` M ) $.
+    $( Substitute definition of the center.  (Contributed by Stefan O'Rear,
+       5-Sep-2015.) $)
+    cntrval $p |- ( Z ` B ) = ( Cntr ` M ) $=
+      ( vk vj vm vs vx vy cfv ccntr cv wcel cvv ccntz cbs co wceq wex elfvm cpw
+      cplusg wral crab cmpt df-cntz mptrcl eleq2s exlimiv df-cntr fveq2 eqtr4di
+      syl fveq12d cntzex wfn basfn funfvex funfni mpan eqeltrid syl2anc fvmptd3
+      id fvexg eqcomd eleq2d pm5.21nii eqriv ) FACLZBMLZFNZVLOZBPOZVNVMOVOGNZCO
+      ZGUAVPVNAGCUBVRVPGVPVQBQLZCHPIHNZRLZUCJNZKNZVTUDLZSWCWBWDSTKINUEJWAUFUGQV
+      QBJKHIUHUIEUJUKUOHPWAVTQLZLZMVNBHULZUIVPVLVMVNVPVMVLVPHBWFVLPMPWGVTBTZWAA
+      WECWHWEVSCVTBQUMEUNWHWABRLZAVTBRUMDUNUPVPVFVPCPOAPOVLPOBPCEUQVPAWIPDRPURV
+      PWIPOZUSWJPBRBRUTVAVBVCACPPVGVDVEVHVIVJVK $.
+  $}
+
+  ${
+    $d m s x y .+ $.  $d x y A $.  $d m s x B $.  $d m s x y M $.  $d x y T $.
+    $d s x y S $.  $d x y X $.  $d x y Y $.
+    cntzfval.b $e |- B = ( Base ` M ) $.
+    cntzfval.p $e |- .+ = ( +g ` M ) $.
+    cntzfval.z $e |- Z = ( Cntz ` M ) $.
+    $( First level substitution for a centralizer.  (Contributed by Stefan
+       O'Rear, 5-Sep-2015.) $)
+    cntzfval $p |- ( M e. V -> Z = ( s e. ~P B |->
+            { x e. B | A. y e. s ( x .+ y ) = ( y .+ x ) } ) ) $=
+      ( vm wcel cfv cv co wceq cbs cplusg cvv ccntz cpw wral crab df-cntz fveq2
+      cmpt eqtr4di pweqd oveqd eqeq12d ralbidv rabeqbidv mpteq12dv elex funfvex
+      wfn basfn funfni sylancr eqeltrid pwexd mptexd fvmptd3 eqtrid ) EFMZGEUAN
+      HCUBZAOZBOZDPZVIVHDPZQZBHOZUCZACUDZUGZKVFLEHLOZRNZUBZVHVIVQSNZPZVIVHVTPZQ
+      ZBVMUCZAVRUDZUGVPTUATABLHUEVQEQZHVSWEVGVOWFVRCWFVRERNZCVQERUFIUHZUIWFWDVN
+      AVRCWHWFWCVLBVMWFWAVJWBVKWFVTDVHVIWFVTESNDVQESUFJUHZUJWFVTDVIVHWIUJUKULUM
+      UNEFUOZVFHVGVOTVFCTVFCWGTIVFRTUQETMWGTMZURWJWKTERERUPUSUTVAVBVCVDVE $.
+
+    ${
+      $d .+ w x y $.  $d B w x $.  $d S w x y $.  $d Z j w $.  $d M j $.
+      $( Definition substitution for a centralizer.  (Contributed by Stefan
+         O'Rear, 5-Sep-2015.) $)
+      cntzval $p |- ( S C_ B -> ( Z ` S ) = { x e. B |
+              A. y e. S ( x .+ y ) = ( y .+ x ) } ) $=
+        ( vj vm vs cfv cv co wceq cvv wcel cbs vw wss wral crab wex elfvm ccntz
+        wi cpw cplusg df-cntz mptrcl eleq2s exlimiv syl a1i elrabi basmex wb wa
+        cmpt raleq rabbidv cntzfval adantr simpr wfn basfn simpl funfvex funfni
+        sylancr elpw2g mpbird eqid rabexd fvmptd4 eleq2d expcom pm5.21ndd eqrdv
+        eqeltrid ) ECUBZUAEGNZAOZBOZDPWFWEDPQZBEUCZACUDZWCFRSZUAOZWDSZWKWISZWLW
+        JUHWCWLKOZGSZKUEWJWKEKGUFWOWJKWJWNFUGNGLRMLOZTNZUIWEWFWPUJNZPWFWEWRPQBM
+        OZUCAWQUDVAUGWNFABLMUKULJUMUNUOUPWMWJUHWCWMWKCSWJWHAWKCUQWKCFHURUOUPWJW
+        CWLWMUSWJWCUTZWDWIWKWTMEWGBWSUCZACUDZWICUIZGRWSEQXAWHACWGBWSEVBVCWJGMXC
+        XBVAQWCABCDFRGMHIJVDVEWTEXCSZWCWJWCVFWTCRSXDWCUSWTCFTNZRHWTTRVGWJXERSZV
+        HWJWCVIXFRFTFTVJVKVLWBZECRVMUOVNWTWHACWIRWIVOXGVPVQVRVSVTWA $.
+    $}
+
+    $( Elementhood in the centralizer.  (Contributed by Mario Carneiro,
+       22-Sep-2015.) $)
+    elcntz $p |- ( S C_ B -> ( A e. ( Z ` S ) <-> ( A e. B /\
+            A. y e. S ( A .+ y ) = ( y .+ A ) ) ) ) $=
+      ( vx wss cfv wcel cv co wceq wral crab wa eleq2d oveq1 oveq2 elrab bitrdi
+      cntzval eqeq12d ralbidv ) ECLZBEGMZNBKOZAOZDPZULUKDPZQZAERZKCSZNBCNBULDPZ
+      ULBDPZQZAERZTUIUJUQBKACDEFGHIJUFUAUPVAKBCUKBQZUOUTAEVBUMURUNUSUKBULDUBUKB
+      ULDUCUGUHUDUE $.
+
+    $( Membership in a centralizer.  (Contributed by Stefan O'Rear,
+       6-Sep-2015.) $)
+    cntzel $p |- ( ( S C_ B /\ X e. B ) -> ( X e. ( Z ` S ) <->
+          A. y e. S ( X .+ y ) = ( y .+ X ) ) ) $=
+      ( wss cfv wcel cv co wceq wral elcntz baibd ) DBKFDGLMFBMFANZCOTFCOPADQAF
+      BCDEGHIJRS $.
+
+    $( Special substitution for the centralizer of a singleton.  (Contributed
+       by Stefan O'Rear, 5-Sep-2015.) $)
+    cntzsnval $p |- ( Y e. B -> ( Z ` { Y } ) =
+          { x e. B | ( x .+ Y ) = ( Y .+ x ) } ) $=
+      ( vy wcel csn cfv cv co wceq wral crab wss snssi cntzval syl oveq2 ralsng
+      oveq1 eqeq12d rabbidv eqtrd ) EBKZELZFMZANZJNZCOZUMULCOZPZJUJQZABRZULECOZ
+      EULCOZPZABRUIUJBSUKURPEBTAJBCUJDFGHIUAUBUIUQVAABUPVAJEBUMEPUNUSUOUTUMEULC
+      UCUMEULCUEUFUDUGUH $.
+
+    $( Value of the centralizer of a singleton.  (Contributed by Mario
+       Carneiro, 25-Apr-2016.) $)
+    elcntzsn $p |- ( Y e. B -> ( X e. ( Z ` { Y } ) <->
+      ( X e. B /\ ( X .+ Y ) = ( Y .+ X ) ) ) ) $=
+      ( vx wcel csn cfv cv co wceq crab wa cntzsnval eleq2d oveq1 oveq2 eqeq12d
+      elrab bitrdi ) EAKZDELFMZKDJNZEBOZEUHBOZPZJAQZKDAKDEBOZEDBOZPZRUFUGULDJAB
+      CEFGHISTUKUOJDAUHDPUIUMUJUNUHDEBUAUHDEBUBUCUDUE $.
+
+    $( A centralizer expression for two sets elementwise commuting.
+       (Contributed by Stefan O'Rear, 5-Sep-2015.) $)
+    sscntz $p |- ( ( S C_ B /\ T C_ B ) -> ( S C_ ( Z ` T ) <->
+          A. x e. S A. y e. T ( x .+ y ) = ( y .+ x ) ) ) $=
+      ( wss cfv cv co wceq wral wa crab cntzval sseq2d ssrab bitrdi ibar bicomd
+      sylan9bbr ) FCLZEFHMZLZECLZANZBNZDOULUKDOPBFQZAEQZRZUJUNUGUIEUMACSZLUOUGU
+      HUPEABCDFGHIJKTUAUMACEUBUCUJUNUOUJUNUDUEUF $.
+  $}
+
+  ${
+    cntzrcl.b $e |- B = ( Base ` M ) $.
+    cntzrcl.z $e |- Z = ( Cntz ` M ) $.
+    ${
+      $d M j $.  $d m x y s z M $.  $d x y s B $.  $d x y S $.  $d x Z $.
+      $d Z j $.  $d y X $.
+      $( Reverse closure for elements of the centralizer.  (Contributed by
+         Stefan O'Rear, 6-Sep-2015.) $)
+      cntzrcl $p |- ( X e. ( Z ` S ) -> ( M e. _V /\ S C_ B ) ) $=
+        ( vj vm vs vx vy vz cfv wcel cvv cv co wceq wral wss elfvm ccntz cplusg
+        wex cbs cpw crab cmpt df-cntz mptrcl eleq2s exlimiv eqid cntzfval dmeqd
+        syl dmmptss eqsstrdi wrel mptrel releqd mpbiri relelfvdm mpancom sseldd
+        cdm elpwid jca ) DBENOZCPOZBAUAVJHQZEOZHUEVKDBHEUBVMVKHVKVLCUCNEIPJIQZU
+        FNZUGKQZLQZVNUDNZRVQVPVRRSLJQZTKVOUHUIUCVLCKLIJUJUKGULUMUQZVJBAVJEVGZAU
+        GZBVJWAKWBVQMQZCUDNZRWCVQWDRSMVPTLAUHZUIZVGWBVJEWFVJVKEWFSVTLMAWDCPEKFW
+        DUNZGUOUQUPKWBWEWFWFUNURUSEUTZVJBWAOVJWHJWBVPVQWDRVQVPWDRSLVSTKAUHZUIZU
+        TJWBWIVAVJEWJVJVKEWJSVTKLAWDCPEJFWGGUOUQVBVCDBEVDVEVFVHVI $.
+    $}
+
+    ${
+      $d B x $.  $d M x y $.  $d S x y $.  $d Z x $.
+      $( The centralizer is unconditionally a subset.  (Contributed by Stefan
+         O'Rear, 6-Sep-2015.) $)
+      cntzssv $p |- ( Z ` S ) C_ B $=
+        ( vx vy cfv cv wcel cplusg co wceq wral crab cvv wss cntzrcl eqid ssriv
+        cntzval simpl2im ssrab2 eqsstrdi id sseldd ) GBDIZAGJZUHKZUHAUIUJUHUIHJ
+        ZCLIZMUKUIULMNHBOZGAPZAUJCQKBARUHUNNABCUIDEFSGHAULBCDEULTFUBUCUMGAUDUEU
+        JUFUGUA $.
+    $}
+  $}
+
+  ${
+    $d M w $.
+    cntzm.z $e |- Z = ( Cntz ` M ) $.
+    $( If the centralizer of a subset of a magma has an element, the magma is
+       inhabited.  (Contributed by Jim Kingdon, 16-Sep-2026.) $)
+    cntzm $p |- ( X e. ( Z ` S ) -> E. w w e. M ) $=
+      ( cfv wcel cbs cv wex eqid cntzssv sseli basm syl ) DBEGZHDCIGZHAJCHAKQRD
+      RBCERLZFMNDRACSOP $.
+  $}
+
+  ${
+    $d y M $.  $d y .+ $.  $d y S $.  $d y X $.  $d y Y $.
+    cntzi.p $e |- .+ = ( +g ` M ) $.
+    cntzi.z $e |- Z = ( Cntz ` M ) $.
+    $( Membership in a centralizer (inference).  (Contributed by Stefan O'Rear,
+       6-Sep-2015.)  (Revised by Mario Carneiro, 22-Sep-2015.) $)
+    cntzi $p |- ( ( X e. ( Z ` S ) /\ Y e. S ) -> ( X .+ Y ) = ( Y .+ X ) ) $=
+      ( vy cfv wcel cv co wceq wral cbs cvv wss wa wb cntzrcl simpl2im simplbda
+      eqid elcntz anidms oveq2 oveq1 eqeq12d rspccva sylan ) DBFJKZDILZAMZUMDAM
+      ZNZIBOZEBKDEAMZEDAMZNZULUQULULDCPJZKZUQULCQKBVARULVBUQSTVABCDFVAUDZHUAIDV
+      AABCFVCGHUEUBUCUFUPUTIEBUMENUNURUOUSUMEDAUGUMEDAUHUIUJUK $.
+  $}
+
+  ${
+    $d .+ y $.  $d A y $.  $d B y $.  $d M y $.
+    elcntr.b $e |- B = ( Base ` M ) $.
+    elcntr.p $e |- .+ = ( +g ` M ) $.
+    elcntr.z $e |- Z = ( Cntr ` M ) $.
+    $( Elementhood in the center of a magma.  (Contributed by SN,
+       21-Mar-2025.) $)
+    elcntr $p |- ( A e. Z <->
+                 ( A e. B /\ A. y e. B ( A .+ y ) = ( y .+ A ) ) ) $=
+      ( wcel ccntz cfv cv co wceq wral wa ccntr eqid cntrval eqtr4i eleq2i ssid
+      wss wb elcntz ax-mp bitri ) BFJBCEKLZLZJZBCJBAMZDNULBDNOACPQZFUJBFERLUJIC
+      EUIGUISZTUAUBCCUDUKUMUECUCABCDCEUIGHUNUFUGUH $.
+  $}
+
+  ${
+    cntrss.1 $e |- B = ( Base ` M ) $.
+    $( The center is a subset of the base field.  (Contributed by Thierry
+       Arnoux, 21-Aug-2023.) $)
+    cntrss $p |- ( Cntr ` M ) C_ B $=
+      ( ccntr cfv ccntz eqid cntrval cntzssv eqsstrri ) BDEABFEZEAABKCKGZHAABKC
+      LIJ $.
+  $}
+
+  ${
+    cntri.b $e |- B = ( Base ` M ) $.
+    cntri.p $e |- .+ = ( +g ` M ) $.
+    cntri.z $e |- Z = ( Cntr ` M ) $.
+    $( Defining property of the center of a magma.  (Contributed by Mario
+       Carneiro, 22-Sep-2015.) $)
+    cntri $p |- ( ( X e. Z /\ Y e. B ) -> ( X .+ Y ) = ( Y .+ X ) ) $=
+      ( wcel ccntz cfv co wceq ccntr eqid cntrval eqtr4i eleq2i cntzi sylanb )
+      DFJDACKLZLZJEAJDEBMEDBMNFUCDFCOLUCIACUBGUBPZQRSBACDEUBHUDTUA $.
+  $}
+
+  ${
+    $d x y w A $.  $d y w G $.  $d y w H $.  $d x y S $.  $d x y V $.
+    $d x Y $.  $d x Z $.
+    resscntz.p $e |- H = ( G |`s A ) $.
+    resscntz.z $e |- Z = ( Cntz ` G ) $.
+    resscntz.y $e |- Y = ( Cntz ` H ) $.
+    $( Centralizer in a substructure.  (Contributed by Mario Carneiro,
+       3-Oct-2015.) $)
+    resscntz $p |- ( ( A e. V /\ S C_ A ) ->
+      ( Y ` S ) = ( ( Z ` S ) i^i A ) ) $=
+      ( vw vy wcel wss wa cfv cvv syl wb co vx cin cv wex cntzm ressmex exlimiv
+      wi simpld a1i simpr elin1d eqid cntzrcl ex simprd cress wceq eqidd simpll
+      cbs ressbasssd sylan9ssr elinel1 cplusg wral elin ressbasd eleq2d bitr3id
+      oveqd eqeq12d ralbidv anbi12d anass bitr3di adantlr simpllr simplr sseq2d
+      ressplusgd bitrid mpbi2and elcntz biancomi adantl anbi2d 3bitr4d impancom
+      ssin adantr pm5.21ndd eqrdv ) AEMZBANZOZUABFPZBGPZAUBZWPCQMZUAUCZWQMZXAWS
+      MZXBWTUHWPXBWTAQMZXBKUCZDMZKUDWTXDOZKBDXAFJUEXFXGKADCXEHUFUGRUIUJWPXCWTWP
+      XCOZWTBCVAPZNZXHXAWRMZWTXJOXHWRAXAWPXCUKULXIBCXAGXIUMZIUNZRUIUOWPWTXBXCSZ
+      WPWTOZXJXBXCXOXBXJXBXOBDVAPZXIXBDQMBXPNZXPBDXAFXPUMZJUNUPXOAXIDECQDCAUQTU
+      RXOHUJZXOXIUSZWPWTUKZWNWOWTUTZVBVCUOXCXJUHXOXCXKXJXAWRAVDXKWTXJXMUPRUJWPX
+      JWTXNWPXJOZWTXNYCWTOZXAXPMZXALUCZDVEPZTZYFXAYGTZURZLBVFZOZXAAMZXAXIMZXAYF
+      CVEPZTZYFXAYOTZURZLBVFZOZOZXBXCWPWTYLUUASXJXOYMYNOZYSOYLUUAXOUUBYEYSYKUUB
+      XAAXIUBZMXOYEXAAXIVGXOUUCXPXAXOAXIDECQXSXTYAYBVHZVIVJXOYRYJLBXOYPYHYQYIXO
+      YOYGXAYFXOAYOCDEQXSXOYOUSYBYAWAZVKXOYOYGYFXAUUEVKVLVMVNYMYNYSVOVPVQYDXQXB
+      YLSYDWOXJXQWNWOXJWTVRWPXJWTVSWOXJOBUUCNZYDXQBAXIWJWPWTUUFXQSXJXOUUCXPBUUD
+      VTVQWBWCLXAXPYGBDFXRYGUMJWDRYCXCUUASWTXCYMXKOYCUUAXCYMXKXAWRAVGWEYCXKYTYM
+      XJXKYTSWPLXAXIYOBCGXLYOUMIWDWFWGWBWKWHUOWIWLUOWLWM $.
+  $}
+
+  ${
+    $d B x y z $.  $d C x y z $.  $d M x y z $.  $d S x y z $.  $d Z x y z $.
+    cntzsgrpcl.b $e |- B = ( Base ` M ) $.
+    cntzsgrpcl.z $e |- Z = ( Cntz ` M ) $.
+    cntzsgrpcl.c $e |- C = ( Z ` S ) $.
+    $( Centralizers are closed under the semigroup operation.  (Contributed by
+       AV, 17-Feb-2025.) $)
+    cntzsgrpcl $p |- ( ( M e. Smgrp /\ S C_ B )
+                       -> A. y e. C A. z e. C ( y ( +g ` M ) z ) e. C ) $=
+      ( vx wcel wa cv co wceq adantr sgrpass syl13anc eleq2i csgrp wss cfv wral
+      cplusg simpll cntzssv eqsstri simprl sselid simprr sgrpcl syl3anc adantlr
+      simpr sselda cntzi sylanb sylan oveq2d oveq1d 3eqtr2d 3eqtrd ralrimiva wb
+      eqid elcntz bitrid ad2antlr mpbir2and ralrimivva ) FUALZECUBZMZANZBNZFUEU
+      CZOZDLZABDDVNVODLZVPDLZMZMZVSVRCLZVRKNZVQOZWEVRVQOZPZKEUDZWCVLVOCLZVPCLZW
+      DVLVMWBUFZWCDCVODEGUCZCJCEFGHIUGUHZVNVTWAUIZUJZWCDCVPWNVNVTWAUKZUJZCFVOVP
+      VQHVQVFZULUMWCWHKEWCWEELZMZWFVOVPWEVQOZVQOZWEVOVQOZVPVQOZWGXAVLWJWKWECLZW
+      FXCPWCVLWTWLQZWCWJWTWPQZWCWKWTWRQZVNWTXFWBVNECWEVLVMUOUPUNZCFVOVPVQWEHWSR
+      SXAXCVOWEVPVQOZVQOZVOWEVQOZVPVQOZXEXAXBXKVOVQWCWAWTXBXKPZWQWAVPWMLWTXODWM
+      VPJTVQEFVPWEGWSIUQURUSUTXAVLWJXFWKXNXLPXGXHXJXICFVOWEVQVPHWSRSXAXMXDVPVQW
+      CVTWTXMXDPZWOVTVOWMLWTXPDWMVOJTVQEFVOWEGWSIUQURUSVAVBXAVLXFWJWKXEWGPXGXJX
+      HXICFWEVOVQVPHWSRSVCVDVMVSWDWIMZVEVLWBVSVRWMLVMXQDWMVRJTKVRCVQEFGHWSIVGVH
+      VIVJVK $.
+  $}
+
+  ${
+    $d x y z B $.  $d x y z M $.  $d x y z S $.  $d x y T $.  $d x y z Z $.
+    cntzrec.b $e |- B = ( Base ` M ) $.
+    cntzrec.z $e |- Z = ( Cntz ` M ) $.
+    $( Centralizers reverse the subset relation.  (Contributed by Mario
+       Carneiro, 3-Oct-2015.) $)
+    cntz2ss $p |- ( ( S C_ B /\ T C_ S ) -> ( Z ` S ) C_ ( Z ` T ) ) $=
+      ( vx vy wss wa cfv cv cplusg co wceq wral wcel eqid cntzi ssralv ralrimiv
+      ralrimiva wi adantl syl5 wb cntzssv sstr ancoms sscntz sylancr mpbird ) B
+      AJZCBJZKZBELZCELJZHMZIMZDNLZOUTUSVAOPZICQZHUQQZUPVCHUQUSUQRZVBIBQZUPVCVEV
+      BIBVABDUSUTEVASZGTUCUOVFVCUDUNVBICBUAUEUFUBUPUQAJCAJZURVDUGABDEFGUHUOUNVH
+      CBAUIUJHIAVAUQCDEFVGGUKULUM $.
+
+    $( Reciprocity relationship for centralizers.  (Contributed by Stefan
+       O'Rear, 5-Sep-2015.) $)
+    cntzrec $p |- ( ( S C_ B /\ T C_ B ) ->
+        ( S C_ ( Z ` T ) <-> T C_ ( Z ` S ) ) ) $=
+      ( vx vy wss wa cv cplusg cfv co wceq wral wb ralcom sscntz eqcom a1i eqid
+      2ralbii bitri ancoms 3bitr4d ) BAJZCAJZKZHLZILZDMNZOZULUKUMOZPZICQHBQZUOU
+      NPZHBQICQZBCENJCBENJZUQUSRUJUQUPHBQICQUSUPHIBCSUPURIHCBUNUOUAUDUEUBHIAUMB
+      CDEFUMUCZGTUIUHUTUSRIHAUMCBDEFVAGTUFUG $.
+
+    $( Centralizers in a monoid are submonoids.  (Contributed by Stefan O'Rear,
+       6-Sep-2015.)  (Revised by Mario Carneiro, 19-Apr-2016.) $)
+    cntzsubm $p |- ( ( M e. Mnd /\ S C_ B ) -> ( Z ` S ) e. ( SubMnd ` M ) ) $=
+      ( vy vz vx wcel wa cfv cv co wral wceq adantr wb mndass syl13anc cmnd wss
+      csubmnd c0g cplusg cntzssv a1i mndidcl simpll simpr sselda mndlid syl2anc
+      eqid mndrid eqtr4d ralrimiva elcntz adantl mpbir2and simprl sselid simprr
+      mndcl syl3anc adantlr cntzi sylan oveq2d oveq1d 3eqtr2d 3eqtrd ralrimivva
+      ad2antlr w3a issubm mpbir3and ) CUAJZBAUBZKZBDLZCUCLJZWAAUBZCUDLZWAJZGMZH
+      MZCUELZNZWAJZHWAOGWAOZWCVTABCDEFUFZUGVTWEWDAJZWDIMZWHNZWNWDWHNZPZIBOZVRWM
+      VSACWDEWDUNZUHQVTWQIBVTWNBJZKZWOWNWPXAVRWNAJZWOWNPVRVSWTUIZVTBAWNVRVSUJUK
+      ZAWHCWNWDEWHUNZWSULUMXAVRXBWPWNPXCXDAWHCWNWDEXEWSUOUMUPUQVSWEWMWRKRVRIWDA
+      WHBCDEXEFURUSUTVTWJGHWAWAVTWFWAJZWGWAJZKZKZWJWIAJZWIWNWHNZWNWIWHNZPZIBOZX
+      IVRWFAJZWGAJZXJVRVSXHUIZXIWAAWFWLVTXFXGVAZVBZXIWAAWGWLVTXFXGVCZVBZAWHCWFW
+      GEXEVDVEXIXMIBXIWTKZXKWFWGWNWHNZWHNZWNWFWHNZWGWHNZXLYBVRXOXPXBXKYDPXIVRWT
+      XQQZXIXOWTXSQZXIXPWTYAQZVTWTXBXHXDVFZAWHCWFWGWNEXESTYBYDWFWNWGWHNZWHNZWFW
+      NWHNZWGWHNZYFYBYCYKWFWHXIXGWTYCYKPXTWHBCWGWNDXEFVGVHVIYBVRXOXBXPYNYLPYGYH
+      YJYIAWHCWFWNWGEXESTYBYMYEWGWHXIXFWTYMYEPXRWHBCWFWNDXEFVGVHVJVKYBVRXBXOXPY
+      FXLPYGYJYHYIAWHCWNWFWGEXESTVLUQVSWJXJXNKRVRXHIWIAWHBCDEXEFURVNUTVMVRWBWCW
+      EWKVORVSGHAWHWACWDEWSXEVPQVQ $.
+
+    $( Centralizers in a group are subgroups.  (Contributed by Stefan O'Rear,
+       6-Sep-2015.) $)
+    cntzsubg $p |- ( ( M e. Grp /\ S C_ B ) -> ( Z ` S ) e. ( SubGrp ` M ) ) $=
+      ( vx vy wcel wa cfv wceq eqid syl2anc grpcl grpass syl13anc oveq2d eqtr4d
+      co cgrp wss csubg csubmnd cminusg wral cmnd grpmnd cntzsubm cplusg simpll
+      sylan cntzssv simprl sselid grpinvcl ssel2 ad2ant2l syl3anc adantl oveq1d
+      cv cntzi grprinv grprid eqtrd grplinv grplid 3eqtr3d anassrs ralrimiva wb
+      c0g simplr simpr cntzel mpbird issubg3 adantr mpbir2and ) CUAIZBAUBZJZBDK
+      ZCUCKIZWDCUDKIZGVBZCUEKZKZWDIZGWDUFZWACUGIWBWFCUHABCDEFUIULWCWJGWDWCWGWDI
+      ZJZWJWIHVBZCUJKZTZWNWIWOTZLZHBUFZWMWRHBWCWLWNBIZWRWCWLWTJZJZWPWGWIWOTZWOT
+      ZWIWGWOTZWQWOTZWPWQXBXDWIWGWNWOTZWIWOTZWOTZXFXBXDWIWNWGWOTZWIWOTZWOTZXIXB
+      XDWIWNXCWOTZWOTZXLXBWAWIAIZWNAIZXCAIZXDXNLWAWBXAUKZXBWAWGAIZXOXRXBWDAWGAB
+      CDEFUMZWCWLWTUNUOZACWHWGEWHMZUPZNZWBWTXPWAWLBAWNUQURZXBWAXSXOXQXRYAYDAWOC
+      WGWIEWOMZOUSAWOCWIWNXCEYFPQXBXKXMWIWOXBWAXPXSXOXKXMLXRYEYAYDAWOCWNWGWIEYF
+      PQRSXBXHXKWIWOXBXGXJWIWOXAXGXJLWCWOBCWGWNDYFFVCUTVARSXBXFWIWGWQWOTZWOTZXI
+      XBWAXOXSWQAIZXFYHLXRYDYAXBWAXPXOYIXRYEYDAWOCWNWIEYFOUSZAWOCWIWGWQEYFPQXBX
+      HYGWIWOXBWAXSXPXOXHYGLXRYAYEYDAWOCWGWNWIEYFPQRSSXBXDWPCVMKZWOTZWPXBXCYKWP
+      WOXBWAXSXCYKLXRYAAWOCWHWGYKEYFYKMZYBVDNRXBWAWPAIZYLWPLXRXBWAXOXPYNXRYDYEA
+      WOCWIWNEYFOUSAWOCWPYKEYFYMVENVFXBXFYKWQWOTZWQXBXEYKWQWOXBWAXSXEYKLXRYAAWO
+      CWHWGYKEYFYMYBVGNVAXBWAYIYOWQLXRYJAWOCWQYKEYFYMVHNVFVIVJVKWMWBXOWJWSVLWAW
+      BWLVNWMWAXSXOWAWBWLUKWMWDAWGXTWCWLVOUOYCNHAWOBCWIDEYFFVPNVQVKWAWEWFWKJVLW
+      BGWDCWHYBVRVSVT $.
+  $}
+
+  ${
+    $d x y A $.  $d x y F $.  $d x y G $.  $d x y H $.  $d x y S $.  $d x T $.
+    $d x Y $.  $d x Z $.
+    cntzmhm.z $e |- Z = ( Cntz ` G ) $.
+    $( If the elements of ` S ` commute, the elements of a subset ` T ` also
+       commute.  (Contributed by Mario Carneiro, 25-Apr-2016.) $)
+    cntzidss $p |- ( ( S C_ ( Z ` S ) /\ T C_ S ) -> T C_ ( Z ` T ) ) $=
+      ( cfv wss wa simpr simpl cbs eqid cntzssv sstrdi cntz2ss sylancom sstrd )
+      AADFZGZBAGZHZBABDFZSTIUAARUBSTJZSTACKFZGRUBGUAARUDUCUDACDUDLZEMNUDABCDUEE
+      OPQQ $.
+
+    cntzmhm.y $e |- Y = ( Cntz ` H ) $.
+    $( Centralizers in a monoid are preserved by monoid homomorphisms.
+       (Contributed by Mario Carneiro, 24-Apr-2016.) $)
+    cntzmhm $p |- ( ( F e. ( G MndHom H ) /\ A e. ( Z ` S ) ) ->
+      ( F ` A ) e. ( Y ` ( F " S ) ) ) $=
+      ( vy vx co wcel cfv wa cbs cv cplusg wceq eqid cmhm cima wf cntzssv sseli
+      wral ffvelcdm syl2an cntzi adantll fveq2d simpll ad2antlr cvv wss cntzrcl
+      mhmf adantl simprd sselda mhmlin syl3anc 3eqtr3d ralrimiva wb adantr ffnd
+      wfn oveq2 oveq1 eqeq12d ralima syl2anc mpbird crn imassrn frnd sstrid syl
+      elcntz mpbir2and ) CDEUALMZABGNZMZOZACNZCBUBZFNMZWFEPNZMZWFJQZERNZLZWKWFW
+      LLZSZJWGUFZWBDPNZWICUCZAWQMZWJWDWQWIDECWQTZWITZUQZWCWQAWQBDGWTHUDUEZWQWIA
+      CUGUHWEWPWFKQZCNZWLLZXEWFWLLZSZKBUFZWEXHKBWEXDBMZOZAXDDRNZLZCNZXDAXLLZCNZ
+      XFXGXKXMXOCWDXJXMXOSWBXLBDAXDGXLTZHUIUJUKXKWBWSXDWQMZXNXFSWBWDXJULZWDWSWB
+      XJXCUMZWEBWQXDWEDUNMZBWQUOZWDYAYBOWBWQBDAGWTHUPURUSZUTZWQXLWLDECAXDWTXQWL
+      TZVAVBXKWBXRWSXPXGSXSYDXTWQXLWLDECXDAWTXQYEVAVBVCVDWECWQVHYBWPXIVEWEWQWIC
+      WBWRWDXBVFZVGYCWOXHJKWQBCWKXESWMXFWNXGWKXEWFWLVIWKXEWFWLVJVKVLVMVNWEWGWIU
+      OWHWJWPOVEWEWGCVOWICBVPWEWQWICYFVQVRJWFWIWLWGEFXAYEIVTVSWA $.
+
+    $( Centralizers in a monoid are preserved by monoid homomorphisms.
+       (Contributed by Mario Carneiro, 24-Apr-2016.) $)
+    cntzmhm2 $p |- ( ( F e. ( G MndHom H ) /\ S C_ ( Z ` T ) ) ->
+      ( F " S ) C_ ( Y ` ( F " T ) ) ) $=
+      ( vx cmhm co wcel cfv wss wa cima wral cbs eqid cv ralrimiva ssralv mpan9
+      cntzmhm wfun cdm wb mhmf adantr ffund simpr cntzssv sstrdi fdmd funimass4
+      wf sseqtrrd syl2anc mpbird ) CDEKLMZABGNZOZPZCAQCBQFNZOZJUAZCNVEMZJARZVAV
+      HJVBRVCVIVAVHJVBVGBCDEFGHIUEUBVHJAVBUCUDVDCUFACUGZOVFVIUHVDDSNZESNZCVAVKV
+      LCUQVCVKVLDECVKTZVLTUIUJZUKVDAVKVJVDAVBVKVAVCULVKBDGVMHUMUNVDVKVLCVNUOURJ
+      AVECUPUSUT $.
+  $}
+
+  ${
+    $d x y M $.  $d x y X $.  $d x y Z $.
+    cntrnsg.z $e |- Z = ( Cntr ` M ) $.
+    $( A central subgroup is normal.  (Contributed by Stefan O'Rear,
+       6-Sep-2015.) $)
+    cntrsubgnsg $p |- ( ( X e. ( SubGrp ` M ) /\ X C_ Z ) ->
+        X e. ( NrmSGrp ` M ) ) $=
+      ( vx vy csubg cfv wcel wss wa cv cplusg co wral wceq sseldd eqid ad2antrr
+      csg simpl ccntz simplr simprr ccntr cntrval eqtr4i eleqtrrdi simprl cntzi
+      cbs cnsg syl2anc oveq1d subgrcl subgss grppncan syl3anc eqtr3d ralrimivva
+      cgrp eqeltrd isnsg3 sylanbrc ) BAGHIZBCJZKZVEELZFLZAMHZNZVHATHZNZBIZFBOEA
+      UKHZOBAULHIVEVFUAVGVNEFVOBVGVHVOIZVIBIZKZKZVMVIBVSVIVHVJNZVHVLNZVMVIVSVTV
+      KVHVLVSVIVOAUBHZHZIVPVTVKPVSVICWCVSBCVIVEVFVRUCVGVPVQUDZQWCAUEHCVOAWBVORZ
+      WBRZUFDUGUHVGVPVQUIZVJVOAVIVHWBVJRZWFUJUMUNVSAVAIZVIVOIVPWAVIPVEWIVFVRBAU
+      OSVSBVOVIVEBVOJVFVRVOBAWEUPSWDQWGVOVJAVLVIVHWEWHVLRZUQURUSWDVBUTEFVJBAVLV
+      OWEWHWJVCVD $.
+
+    $( The center of a group is a normal subgroup.  (Contributed by Stefan
+       O'Rear, 6-Sep-2015.) $)
+    cntrnsg $p |- ( M e. Grp -> Z e. ( NrmSGrp ` M ) ) $=
+      ( cgrp wcel csubg cfv wss cnsg cbs ccntz ccntr eqid cntrval ssid cntzsubg
+      eqtr4i mpan2 eqeltrid cntrsubgnsg sylancl ) ADEZBAFGZEBBHBAIGEUBBAJGZAKGZ
+      GZUCBALGUFCUDAUEUDMZUEMZNQUBUDUDHUFUCEUDOUDUDAUEUGUHPRSBOABBCTUA $.
   $}
 
 
@@ -214145,6 +214569,12 @@ htmldef "GrpHom" as
    " <IMG SRC='_grphom.gif' WIDTH=54 HEIGHT=19 ALT=' GrpHom' TITLE='GrpHom'> ";
   althtmldef "GrpHom" as " GrpHom ";
   latexdef "GrpHom" as "\mathrm{GrpHom}";
+htmldef "Cntr" as "Cntr";
+  althtmldef "Cntr" as "Cntr";
+  latexdef "Cntr" as "\mathrm{Cntr}";
+htmldef "Cntz" as "Cntz";
+  althtmldef "Cntz" as "Cntz";
+  latexdef "Cntz" as "\mathrm{Cntz}";
 htmldef "CMnd" as "CMnd";
   althtmldef "CMnd" as "CMnd";
   latexdef "CMnd" as "\mathrm{CMnd}";
