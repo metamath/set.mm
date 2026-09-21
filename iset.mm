@@ -110731,6 +110731,25 @@ $)
     ZUGUHUKABMNUFUEBCDZUMUIOBSZABPQUGUJCDZUOUNULOUGUJEDUQUGAUEUFTRUJSUAUFUOUEUP
     UBUJBPUCUD $.
 
+  ${
+    $d A q $.  $d B q $.
+    $( The floor function value is less than the next integer.  (Contributed by
+       NM, 24-Feb-2005.)  (Revised by Jim Kingdon, 9-Sep-2026.) $)
+    flaplt $p |- ( ( ( A e. QQ \/ ( A e. RR /\ A. q e. QQ A =//= q ) )
+      /\ B e. ZZ ) -> ( A < B <-> ( |_ ` A ) < B ) ) $=
+      ( cq wcel cz clt wbr wb cr cap wa simpr olcs ad2antrr zred adantr cle syl
+      simplr cfl cfv cv flqlt flapcl simpll c1 caddc co flaplelt simpld lelttrd
+      wral ltnsymd peano2re simprd lttrd zleltp1 syl2anc mpbird lensymd 2falsed
+      2thd wo breq2 zq rspcdva reaplt mpbid mpjaodan jaoian ) ADEZBFEZABGHZAUAU
+      BZBGHZIZAJEZACUCZKHZCDUMZLZABUDWBVMLZVNVQBAGHZWCVNLZVNVPWCVNMZWEVOABWEVOW
+      BVOFEZVMVNVLWBWGACUENZOPWCVRVNVRWAVMUFZQWCBJEZVNWCBWBVMMZPZQWBVOARHZVMVNW
+      BWMAVOUGUHUIZGHZVLWBWMWOLZACUJNZUKOWFULVCWCWDLZVNVPWRBAWCWJWDWLQZWCVRWDWI
+      QZWCWDMZUNWRBVOWSWBVOJEZVMWDWBVOWHPZOWRBVORHZBWNGHZWRBAWNWSWTWBWNJEZVMWDW
+      BXBXFXCVOUOSOXAWRWMWOWBWPVMWDWQOUPUQWRVMWGXDXEIWBVMWDTWBWGVMWDWHOBVOURUSU
+      TVAVBWCABKHZVNWDVDZWCVTXGCDBVSBAKVEVRWAVMTWCVMBDEWKBVFSVGWCVRWJXGXHIWIWLA
+      BVHUSVIVJVK $.
+  $}
+
   $( An integer is its own floor.  (Contributed by NM, 15-Nov-2004.) $)
   flid $p |- ( A e. ZZ -> ( |_ ` A ) = A ) $=
     ( cz wcel cfl cfv wceq cle wbr cq zq flqle syl leidd wb flqge mpancom mpbid
@@ -157397,6 +157416,17 @@ $)
     ZOABCDPUHUFUISEZUKOEZULOEUFUGQUMUHRTUGUNUFAUJDUAUBUIUKBCOSUCUDUE $.
 
   ${
+    $d w x $.
+    ressmex.r $e |- R = ( W |`s A ) $.
+    $( If a structure restriction is inhabited, the structure is a set and so
+       is the class it is restricted to.  (Contributed by Jim Kingdon,
+       16-Sep-2026.) $)
+    ressmex $p |- ( X e. R -> ( W e. _V /\ A e. _V ) ) $=
+      ( vw vx cvv wcel wa cress co cv cnx cbs cfv cin cop csts df-iress elmpocl
+      eleq2s ) CHIAHIJDCAKLBFGHHFMZNOPGMUCOPQRSLCAKDGFTUAEUB $.
+  $}
+
+  ${
     $d a w A $.  $d a w B $.  $d a w W $.
     ressbas.r $e |- R = ( W |`s A ) $.
     ressbas.b $e |- B = ( Base ` W ) $.
@@ -166665,6 +166695,419 @@ $)
       AUCZFGUDPZRZSHQRZIQRZSZUTHIUDPZRZSUTUORZUTUPRZAUSVEVBVGAUQVCURVDABCDFHJLN
       UEABCEGIKMOUEUFAVAVFUTABCDEFGHIJKLMNOUITUFVHUSVBVHUQURFGUTUGFGUTUHUJUSUOV
       AUTFGUKTULVIVEVGVIVCVDHIUTUGHIUTUHUJVEUPVFUTHIUKTULUMUN $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Centralizers and centers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c Cntr $.
+  $c Cntz $.
+
+  $( Syntax for the centralizer of a set in a monoid. $)
+  ccntz $a class Cntz $.
+
+  $( Syntax for the centralizer of a monoid. $)
+  ccntr $a class Cntr $.
+
+  ${
+    $d m s x y $.
+    $( Define the _centralizer_ of a subset of a magma, which is the set of
+       elements each of which commutes with each element of the given subset.
+       (Contributed by Stefan O'Rear, 5-Sep-2015.) $)
+    df-cntz $a |- Cntz = ( m e. _V |-> ( s e. ~P ( Base ` m ) |-> { x e.
+      ( Base ` m ) | A. y e. s ( x ( +g ` m ) y ) = ( y ( +g ` m ) x ) } ) ) $.
+
+    $( Define the _center_ of a magma, which is the elements that commute with
+       all others.  (Contributed by Stefan O'Rear, 5-Sep-2015.) $)
+    df-cntr $a |- Cntr = ( m e. _V |-> ( ( Cntz ` m ) ` ( Base ` m ) ) ) $.
+  $}
+
+  ${
+    $d M m s x y $.
+    cntzex.z $e |- Z = ( Cntz ` M ) $.
+    $( Set existence of the centralizer.  (Contributed by Jim Kingdon,
+       15-Sep-2026.) $)
+    cntzex $p |- ( M e. V -> Z e. _V ) $=
+      ( vs vx vy vm wcel ccntz cfv cvv cbs cpw cv cplusg co wceq wral crab cmpt
+      df-cntz fveq2 pweqd oveqd eqeq12d ralbidv rabeqbidv mpteq12dv wfn funfvex
+      elex basfn funfni sylancr pwexd mptexd fvmptd3 eqeltrd eqeltrid ) ABIZCAJ
+      KZLDVAVBEAMKZNZFOZGOZAPKZQZVFVEVGQZRZGEOZSZFVCTZUAZLVAHAEHOZMKZNZVEVFVOPK
+      ZQZVFVEVRQZRZGVKSZFVPTZUAVNLJLFGHEUBVOARZEVQWCVDVMWDVPVCVOAMUCZUDWDWBVLFV
+      PVCWEWDWAVJGVKWDVSVHVTVIWDVRVGVEVFVOAPUCZUEWDVRVGVFVEWFUEUFUGUHUIABULZVAE
+      VDVMLVAVCLVAMLUJALIVCLIZUMWGWHLAMAMUKUNUOUPUQZURWIUSUT $.
+  $}
+
+  ${
+    $d B k $.  $d B m $.  $d M j $.  $d M k $.  $d M m $.  $d Z j $.  $d Z k $.
+    $d Z m $.  $d m s x y $.
+    cntrval.b $e |- B = ( Base ` M ) $.
+    cntrval.z $e |- Z = ( Cntz ` M ) $.
+    $( Substitute definition of the center.  (Contributed by Stefan O'Rear,
+       5-Sep-2015.) $)
+    cntrval $p |- ( Z ` B ) = ( Cntr ` M ) $=
+      ( vk vj vm vs vx vy cfv ccntr cv wcel cvv ccntz cbs co wceq wex elfvm cpw
+      cplusg wral crab cmpt df-cntz mptrcl eleq2s exlimiv df-cntr fveq2 eqtr4di
+      syl fveq12d cntzex wfn basfn funfvex funfni mpan eqeltrid syl2anc fvmptd3
+      id fvexg eqcomd eleq2d pm5.21nii eqriv ) FACLZBMLZFNZVLOZBPOZVNVMOVOGNZCO
+      ZGUAVPVNAGCUBVRVPGVPVQBQLZCHPIHNZRLZUCJNZKNZVTUDLZSWCWBWDSTKINUEJWAUFUGQV
+      QBJKHIUHUIEUJUKUOHPWAVTQLZLZMVNBHULZUIVPVLVMVNVPVMVLVPHBWFVLPMPWGVTBTZWAA
+      WECWHWEVSCVTBQUMEUNWHWABRLZAVTBRUMDUNUPVPVFVPCPOAPOVLPOBPCEUQVPAWIPDRPURV
+      PWIPOZUSWJPBRBRUTVAVBVCACPPVGVDVEVHVIVJVK $.
+  $}
+
+  ${
+    $d m s x y .+ $.  $d x y A $.  $d m s x B $.  $d m s x y M $.  $d x y T $.
+    $d s x y S $.  $d x y X $.  $d x y Y $.
+    cntzfval.b $e |- B = ( Base ` M ) $.
+    cntzfval.p $e |- .+ = ( +g ` M ) $.
+    cntzfval.z $e |- Z = ( Cntz ` M ) $.
+    $( First level substitution for a centralizer.  (Contributed by Stefan
+       O'Rear, 5-Sep-2015.) $)
+    cntzfval $p |- ( M e. V -> Z = ( s e. ~P B |->
+            { x e. B | A. y e. s ( x .+ y ) = ( y .+ x ) } ) ) $=
+      ( vm wcel cfv cv co wceq cbs cplusg cvv ccntz cpw wral crab df-cntz fveq2
+      cmpt eqtr4di pweqd oveqd eqeq12d ralbidv rabeqbidv mpteq12dv elex funfvex
+      wfn basfn funfni sylancr eqeltrid pwexd mptexd fvmptd3 eqtrid ) EFMZGEUAN
+      HCUBZAOZBOZDPZVIVHDPZQZBHOZUCZACUDZUGZKVFLEHLOZRNZUBZVHVIVQSNZPZVIVHVTPZQ
+      ZBVMUCZAVRUDZUGVPTUATABLHUEVQEQZHVSWEVGVOWFVRCWFVRERNZCVQERUFIUHZUIWFWDVN
+      AVRCWHWFWCVLBVMWFWAVJWBVKWFVTDVHVIWFVTESNDVQESUFJUHZUJWFVTDVIVHWIUJUKULUM
+      UNEFUOZVFHVGVOTVFCTVFCWGTIVFRTUQETMWGTMZURWJWKTERERUPUSUTVAVBVCVDVE $.
+
+    ${
+      $d .+ w x y $.  $d B w x $.  $d S w x y $.  $d Z j w $.  $d M j $.
+      $( Definition substitution for a centralizer.  (Contributed by Stefan
+         O'Rear, 5-Sep-2015.) $)
+      cntzval $p |- ( S C_ B -> ( Z ` S ) = { x e. B |
+              A. y e. S ( x .+ y ) = ( y .+ x ) } ) $=
+        ( vj vm vs cfv cv co wceq cvv wcel cbs vw wss wral crab wex elfvm ccntz
+        wi cpw cplusg df-cntz mptrcl eleq2s exlimiv syl a1i elrabi basmex wb wa
+        cmpt raleq rabbidv cntzfval adantr simpr wfn basfn simpl funfvex funfni
+        sylancr elpw2g mpbird eqid rabexd fvmptd4 eleq2d expcom pm5.21ndd eqrdv
+        eqeltrid ) ECUBZUAEGNZAOZBOZDPWFWEDPQZBEUCZACUDZWCFRSZUAOZWDSZWKWISZWLW
+        JUHWCWLKOZGSZKUEWJWKEKGUFWOWJKWJWNFUGNGLRMLOZTNZUIWEWFWPUJNZPWFWEWRPQBM
+        OZUCAWQUDVAUGWNFABLMUKULJUMUNUOUPWMWJUHWCWMWKCSWJWHAWKCUQWKCFHURUOUPWJW
+        CWLWMUSWJWCUTZWDWIWKWTMEWGBWSUCZACUDZWICUIZGRWSEQXAWHACWGBWSEVBVCWJGMXC
+        XBVAQWCABCDFRGMHIJVDVEWTEXCSZWCWJWCVFWTCRSXDWCUSWTCFTNZRHWTTRVGWJXERSZV
+        HWJWCVIXFRFTFTVJVKVLWBZECRVMUOVNWTWHACWIRWIVOXGVPVQVRVSVTWA $.
+    $}
+
+    $( Elementhood in the centralizer.  (Contributed by Mario Carneiro,
+       22-Sep-2015.) $)
+    elcntz $p |- ( S C_ B -> ( A e. ( Z ` S ) <-> ( A e. B /\
+            A. y e. S ( A .+ y ) = ( y .+ A ) ) ) ) $=
+      ( vx wss cfv wcel cv co wceq wral crab wa eleq2d oveq1 oveq2 elrab bitrdi
+      cntzval eqeq12d ralbidv ) ECLZBEGMZNBKOZAOZDPZULUKDPZQZAERZKCSZNBCNBULDPZ
+      ULBDPZQZAERZTUIUJUQBKACDEFGHIJUFUAUPVAKBCUKBQZUOUTAEVBUMURUNUSUKBULDUBUKB
+      ULDUCUGUHUDUE $.
+
+    $( Membership in a centralizer.  (Contributed by Stefan O'Rear,
+       6-Sep-2015.) $)
+    cntzel $p |- ( ( S C_ B /\ X e. B ) -> ( X e. ( Z ` S ) <->
+          A. y e. S ( X .+ y ) = ( y .+ X ) ) ) $=
+      ( wss cfv wcel cv co wceq wral elcntz baibd ) DBKFDGLMFBMFANZCOTFCOPADQAF
+      BCDEGHIJRS $.
+
+    $( Special substitution for the centralizer of a singleton.  (Contributed
+       by Stefan O'Rear, 5-Sep-2015.) $)
+    cntzsnval $p |- ( Y e. B -> ( Z ` { Y } ) =
+          { x e. B | ( x .+ Y ) = ( Y .+ x ) } ) $=
+      ( vy wcel csn cfv cv co wceq wral crab wss snssi cntzval syl oveq2 ralsng
+      oveq1 eqeq12d rabbidv eqtrd ) EBKZELZFMZANZJNZCOZUMULCOZPZJUJQZABRZULECOZ
+      EULCOZPZABRUIUJBSUKURPEBTAJBCUJDFGHIUAUBUIUQVAABUPVAJEBUMEPUNUSUOUTUMEULC
+      UCUMEULCUEUFUDUGUH $.
+
+    $( Value of the centralizer of a singleton.  (Contributed by Mario
+       Carneiro, 25-Apr-2016.) $)
+    elcntzsn $p |- ( Y e. B -> ( X e. ( Z ` { Y } ) <->
+      ( X e. B /\ ( X .+ Y ) = ( Y .+ X ) ) ) ) $=
+      ( vx wcel csn cfv cv co wceq crab wa cntzsnval eleq2d oveq1 oveq2 eqeq12d
+      elrab bitrdi ) EAKZDELFMZKDJNZEBOZEUHBOZPZJAQZKDAKDEBOZEDBOZPZRUFUGULDJAB
+      CEFGHISTUKUOJDAUHDPUIUMUJUNUHDEBUAUHDEBUBUCUDUE $.
+
+    $( A centralizer expression for two sets elementwise commuting.
+       (Contributed by Stefan O'Rear, 5-Sep-2015.) $)
+    sscntz $p |- ( ( S C_ B /\ T C_ B ) -> ( S C_ ( Z ` T ) <->
+          A. x e. S A. y e. T ( x .+ y ) = ( y .+ x ) ) ) $=
+      ( wss cfv cv co wceq wral wa crab cntzval sseq2d ssrab bitrdi ibar bicomd
+      sylan9bbr ) FCLZEFHMZLZECLZANZBNZDOULUKDOPBFQZAEQZRZUJUNUGUIEUMACSZLUOUGU
+      HUPEABCDFGHIJKTUAUMACEUBUCUJUNUOUJUNUDUEUF $.
+  $}
+
+  ${
+    cntzrcl.b $e |- B = ( Base ` M ) $.
+    cntzrcl.z $e |- Z = ( Cntz ` M ) $.
+    ${
+      $d M j $.  $d m x y s z M $.  $d x y s B $.  $d x y S $.  $d x Z $.
+      $d Z j $.  $d y X $.
+      $( Reverse closure for elements of the centralizer.  (Contributed by
+         Stefan O'Rear, 6-Sep-2015.) $)
+      cntzrcl $p |- ( X e. ( Z ` S ) -> ( M e. _V /\ S C_ B ) ) $=
+        ( vj vm vs vx vy vz cfv wcel cvv cv co wceq wral wss elfvm ccntz cplusg
+        wex cbs cpw crab cmpt df-cntz mptrcl eleq2s exlimiv eqid cntzfval dmeqd
+        syl dmmptss eqsstrdi wrel mptrel releqd mpbiri relelfvdm mpancom sseldd
+        cdm elpwid jca ) DBENOZCPOZBAUAVJHQZEOZHUEVKDBHEUBVMVKHVKVLCUCNEIPJIQZU
+        FNZUGKQZLQZVNUDNZRVQVPVRRSLJQZTKVOUHUIUCVLCKLIJUJUKGULUMUQZVJBAVJEVGZAU
+        GZBVJWAKWBVQMQZCUDNZRWCVQWDRSMVPTLAUHZUIZVGWBVJEWFVJVKEWFSVTLMAWDCPEKFW
+        DUNZGUOUQUPKWBWEWFWFUNURUSEUTZVJBWAOVJWHJWBVPVQWDRVQVPWDRSLVSTKAUHZUIZU
+        TJWBWIVAVJEWJVJVKEWJSVTKLAWDCPEJFWGGUOUQVBVCDBEVDVEVFVHVI $.
+    $}
+
+    ${
+      $d B x $.  $d M x y $.  $d S x y $.  $d Z x $.
+      $( The centralizer is unconditionally a subset.  (Contributed by Stefan
+         O'Rear, 6-Sep-2015.) $)
+      cntzssv $p |- ( Z ` S ) C_ B $=
+        ( vx vy cfv cv wcel cplusg co wceq wral crab cvv wss cntzrcl eqid ssriv
+        cntzval simpl2im ssrab2 eqsstrdi id sseldd ) GBDIZAGJZUHKZUHAUIUJUHUIHJ
+        ZCLIZMUKUIULMNHBOZGAPZAUJCQKBARUHUNNABCUIDEFSGHAULBCDEULTFUBUCUMGAUDUEU
+        JUFUGUA $.
+    $}
+  $}
+
+  ${
+    $d M w $.
+    cntzm.z $e |- Z = ( Cntz ` M ) $.
+    $( If the centralizer of a subset of a magma has an element, the magma is
+       inhabited.  (Contributed by Jim Kingdon, 16-Sep-2026.) $)
+    cntzm $p |- ( X e. ( Z ` S ) -> E. w w e. M ) $=
+      ( cfv wcel cbs cv wex eqid cntzssv sseli basm syl ) DBEGZHDCIGZHAJCHAKQRD
+      RBCERLZFMNDRACSOP $.
+  $}
+
+  ${
+    $d y M $.  $d y .+ $.  $d y S $.  $d y X $.  $d y Y $.
+    cntzi.p $e |- .+ = ( +g ` M ) $.
+    cntzi.z $e |- Z = ( Cntz ` M ) $.
+    $( Membership in a centralizer (inference).  (Contributed by Stefan O'Rear,
+       6-Sep-2015.)  (Revised by Mario Carneiro, 22-Sep-2015.) $)
+    cntzi $p |- ( ( X e. ( Z ` S ) /\ Y e. S ) -> ( X .+ Y ) = ( Y .+ X ) ) $=
+      ( vy cfv wcel cv co wceq wral cbs cvv wss wa wb cntzrcl simpl2im simplbda
+      eqid elcntz anidms oveq2 oveq1 eqeq12d rspccva sylan ) DBFJKZDILZAMZUMDAM
+      ZNZIBOZEBKDEAMZEDAMZNZULUQULULDCPJZKZUQULCQKBVARULVBUQSTVABCDFVAUDZHUAIDV
+      AABCFVCGHUEUBUCUFUPUTIEBUMENUNURUOUSUMEDAUGUMEDAUHUIUJUK $.
+  $}
+
+  ${
+    $d .+ y $.  $d A y $.  $d B y $.  $d M y $.
+    elcntr.b $e |- B = ( Base ` M ) $.
+    elcntr.p $e |- .+ = ( +g ` M ) $.
+    elcntr.z $e |- Z = ( Cntr ` M ) $.
+    $( Elementhood in the center of a magma.  (Contributed by SN,
+       21-Mar-2025.) $)
+    elcntr $p |- ( A e. Z <->
+                 ( A e. B /\ A. y e. B ( A .+ y ) = ( y .+ A ) ) ) $=
+      ( wcel ccntz cfv cv co wceq wral wa ccntr eqid cntrval eqtr4i eleq2i ssid
+      wss wb elcntz ax-mp bitri ) BFJBCEKLZLZJZBCJBAMZDNULBDNOACPQZFUJBFERLUJIC
+      EUIGUISZTUAUBCCUDUKUMUECUCABCDCEUIGHUNUFUGUH $.
+  $}
+
+  ${
+    cntrss.1 $e |- B = ( Base ` M ) $.
+    $( The center is a subset of the base field.  (Contributed by Thierry
+       Arnoux, 21-Aug-2023.) $)
+    cntrss $p |- ( Cntr ` M ) C_ B $=
+      ( ccntr cfv ccntz eqid cntrval cntzssv eqsstrri ) BDEABFEZEAABKCKGZHAABKC
+      LIJ $.
+  $}
+
+  ${
+    cntri.b $e |- B = ( Base ` M ) $.
+    cntri.p $e |- .+ = ( +g ` M ) $.
+    cntri.z $e |- Z = ( Cntr ` M ) $.
+    $( Defining property of the center of a magma.  (Contributed by Mario
+       Carneiro, 22-Sep-2015.) $)
+    cntri $p |- ( ( X e. Z /\ Y e. B ) -> ( X .+ Y ) = ( Y .+ X ) ) $=
+      ( wcel ccntz cfv co wceq ccntr eqid cntrval eqtr4i eleq2i cntzi sylanb )
+      DFJDACKLZLZJEAJDEBMEDBMNFUCDFCOLUCIACUBGUBPZQRSBACDEUBHUDTUA $.
+  $}
+
+  ${
+    $d x y w A $.  $d y w G $.  $d y w H $.  $d x y S $.  $d x y V $.
+    $d x Y $.  $d x Z $.
+    resscntz.p $e |- H = ( G |`s A ) $.
+    resscntz.z $e |- Z = ( Cntz ` G ) $.
+    resscntz.y $e |- Y = ( Cntz ` H ) $.
+    $( Centralizer in a substructure.  (Contributed by Mario Carneiro,
+       3-Oct-2015.) $)
+    resscntz $p |- ( ( A e. V /\ S C_ A ) ->
+      ( Y ` S ) = ( ( Z ` S ) i^i A ) ) $=
+      ( vw vy wcel wss wa cfv cvv syl wb co vx cin cv wex cntzm ressmex exlimiv
+      wi simpld a1i simpr elin1d eqid cntzrcl ex simprd cress wceq eqidd simpll
+      cbs ressbasssd sylan9ssr elinel1 cplusg wral elin ressbasd eleq2d bitr3id
+      oveqd eqeq12d ralbidv anbi12d anass bitr3di adantlr simpllr simplr sseq2d
+      ressplusgd bitrid mpbi2and elcntz biancomi adantl anbi2d 3bitr4d impancom
+      ssin adantr pm5.21ndd eqrdv ) AEMZBANZOZUABFPZBGPZAUBZWPCQMZUAUCZWQMZXAWS
+      MZXBWTUHWPXBWTAQMZXBKUCZDMZKUDWTXDOZKBDXAFJUEXFXGKADCXEHUFUGRUIUJWPXCWTWP
+      XCOZWTBCVAPZNZXHXAWRMZWTXJOXHWRAXAWPXCUKULXIBCXAGXIUMZIUNZRUIUOWPWTXBXCSZ
+      WPWTOZXJXBXCXOXBXJXBXOBDVAPZXIXBDQMBXPNZXPBDXAFXPUMZJUNUPXOAXIDECQDCAUQTU
+      RXOHUJZXOXIUSZWPWTUKZWNWOWTUTZVBVCUOXCXJUHXOXCXKXJXAWRAVDXKWTXJXMUPRUJWPX
+      JWTXNWPXJOZWTXNYCWTOZXAXPMZXALUCZDVEPZTZYFXAYGTZURZLBVFZOZXAAMZXAXIMZXAYF
+      CVEPZTZYFXAYOTZURZLBVFZOZOZXBXCWPWTYLUUASXJXOYMYNOZYSOYLUUAXOUUBYEYSYKUUB
+      XAAXIUBZMXOYEXAAXIVGXOUUCXPXAXOAXIDECQXSXTYAYBVHZVIVJXOYRYJLBXOYPYHYQYIXO
+      YOYGXAYFXOAYOCDEQXSXOYOUSYBYAWAZVKXOYOYGYFXAUUEVKVLVMVNYMYNYSVOVPVQYDXQXB
+      YLSYDWOXJXQWNWOXJWTVRWPXJWTVSWOXJOBUUCNZYDXQBAXIWJWPWTUUFXQSXJXOUUCXPBUUD
+      VTVQWBWCLXAXPYGBDFXRYGUMJWDRYCXCUUASWTXCYMXKOYCUUAXCYMXKXAWRAVGWEYCXKYTYM
+      XJXKYTSWPLXAXIYOBCGXLYOUMIWDWFWGWBWKWHUOWIWLUOWLWM $.
+  $}
+
+  ${
+    $d B x y z $.  $d C x y z $.  $d M x y z $.  $d S x y z $.  $d Z x y z $.
+    cntzsgrpcl.b $e |- B = ( Base ` M ) $.
+    cntzsgrpcl.z $e |- Z = ( Cntz ` M ) $.
+    cntzsgrpcl.c $e |- C = ( Z ` S ) $.
+    $( Centralizers are closed under the semigroup operation.  (Contributed by
+       AV, 17-Feb-2025.) $)
+    cntzsgrpcl $p |- ( ( M e. Smgrp /\ S C_ B )
+                       -> A. y e. C A. z e. C ( y ( +g ` M ) z ) e. C ) $=
+      ( vx wcel wa cv co wceq adantr sgrpass syl13anc eleq2i csgrp wss cfv wral
+      cplusg simpll cntzssv eqsstri simprl sselid simprr sgrpcl syl3anc adantlr
+      simpr sselda cntzi sylanb sylan oveq2d oveq1d 3eqtr2d 3eqtrd ralrimiva wb
+      eqid elcntz bitrid ad2antlr mpbir2and ralrimivva ) FUALZECUBZMZANZBNZFUEU
+      CZOZDLZABDDVNVODLZVPDLZMZMZVSVRCLZVRKNZVQOZWEVRVQOZPZKEUDZWCVLVOCLZVPCLZW
+      DVLVMWBUFZWCDCVODEGUCZCJCEFGHIUGUHZVNVTWAUIZUJZWCDCVPWNVNVTWAUKZUJZCFVOVP
+      VQHVQVFZULUMWCWHKEWCWEELZMZWFVOVPWEVQOZVQOZWEVOVQOZVPVQOZWGXAVLWJWKWECLZW
+      FXCPWCVLWTWLQZWCWJWTWPQZWCWKWTWRQZVNWTXFWBVNECWEVLVMUOUPUNZCFVOVPVQWEHWSR
+      SXAXCVOWEVPVQOZVQOZVOWEVQOZVPVQOZXEXAXBXKVOVQWCWAWTXBXKPZWQWAVPWMLWTXODWM
+      VPJTVQEFVPWEGWSIUQURUSUTXAVLWJXFWKXNXLPXGXHXJXICFVOWEVQVPHWSRSXAXMXDVPVQW
+      CVTWTXMXDPZWOVTVOWMLWTXPDWMVOJTVQEFVOWEGWSIUQURUSVAVBXAVLXFWJWKXEWGPXGXJX
+      HXICFWEVOVQVPHWSRSVCVDVMVSWDWIMZVEVLWBVSVRWMLVMXQDWMVRJTKVRCVQEFGHWSIVGVH
+      VIVJVK $.
+  $}
+
+  ${
+    $d x y z B $.  $d x y z M $.  $d x y z S $.  $d x y T $.  $d x y z Z $.
+    cntzrec.b $e |- B = ( Base ` M ) $.
+    cntzrec.z $e |- Z = ( Cntz ` M ) $.
+    $( Centralizers reverse the subset relation.  (Contributed by Mario
+       Carneiro, 3-Oct-2015.) $)
+    cntz2ss $p |- ( ( S C_ B /\ T C_ S ) -> ( Z ` S ) C_ ( Z ` T ) ) $=
+      ( vx vy wss wa cfv cv cplusg co wceq wral wcel eqid cntzi ssralv ralrimiv
+      ralrimiva wi adantl syl5 wb cntzssv sstr ancoms sscntz sylancr mpbird ) B
+      AJZCBJZKZBELZCELJZHMZIMZDNLZOUTUSVAOPZICQZHUQQZUPVCHUQUSUQRZVBIBQZUPVCVEV
+      BIBVABDUSUTEVASZGTUCUOVFVCUDUNVBICBUAUEUFUBUPUQAJCAJZURVDUGABDEFGUHUOUNVH
+      CBAUIUJHIAVAUQCDEFVGGUKULUM $.
+
+    $( Reciprocity relationship for centralizers.  (Contributed by Stefan
+       O'Rear, 5-Sep-2015.) $)
+    cntzrec $p |- ( ( S C_ B /\ T C_ B ) ->
+        ( S C_ ( Z ` T ) <-> T C_ ( Z ` S ) ) ) $=
+      ( vx vy wss wa cv cplusg cfv co wceq wral wb ralcom sscntz eqcom a1i eqid
+      2ralbii bitri ancoms 3bitr4d ) BAJZCAJZKZHLZILZDMNZOZULUKUMOZPZICQHBQZUOU
+      NPZHBQICQZBCENJCBENJZUQUSRUJUQUPHBQICQUSUPHIBCSUPURIHCBUNUOUAUDUEUBHIAUMB
+      CDEFUMUCZGTUIUHUTUSRIHAUMCBDEFVAGTUFUG $.
+
+    $( Centralizers in a monoid are submonoids.  (Contributed by Stefan O'Rear,
+       6-Sep-2015.)  (Revised by Mario Carneiro, 19-Apr-2016.) $)
+    cntzsubm $p |- ( ( M e. Mnd /\ S C_ B ) -> ( Z ` S ) e. ( SubMnd ` M ) ) $=
+      ( vy vz vx wcel wa cfv cv co wral wceq adantr wb mndass syl13anc cmnd wss
+      csubmnd c0g cplusg cntzssv a1i mndidcl simpll simpr sselda mndlid syl2anc
+      eqid mndrid eqtr4d ralrimiva elcntz adantl mpbir2and simprl sselid simprr
+      mndcl syl3anc adantlr cntzi sylan oveq2d oveq1d 3eqtr2d 3eqtrd ralrimivva
+      ad2antlr w3a issubm mpbir3and ) CUAJZBAUBZKZBDLZCUCLJZWAAUBZCUDLZWAJZGMZH
+      MZCUELZNZWAJZHWAOGWAOZWCVTABCDEFUFZUGVTWEWDAJZWDIMZWHNZWNWDWHNZPZIBOZVRWM
+      VSACWDEWDUNZUHQVTWQIBVTWNBJZKZWOWNWPXAVRWNAJZWOWNPVRVSWTUIZVTBAWNVRVSUJUK
+      ZAWHCWNWDEWHUNZWSULUMXAVRXBWPWNPXCXDAWHCWNWDEXEWSUOUMUPUQVSWEWMWRKRVRIWDA
+      WHBCDEXEFURUSUTVTWJGHWAWAVTWFWAJZWGWAJZKZKZWJWIAJZWIWNWHNZWNWIWHNZPZIBOZX
+      IVRWFAJZWGAJZXJVRVSXHUIZXIWAAWFWLVTXFXGVAZVBZXIWAAWGWLVTXFXGVCZVBZAWHCWFW
+      GEXEVDVEXIXMIBXIWTKZXKWFWGWNWHNZWHNZWNWFWHNZWGWHNZXLYBVRXOXPXBXKYDPXIVRWT
+      XQQZXIXOWTXSQZXIXPWTYAQZVTWTXBXHXDVFZAWHCWFWGWNEXESTYBYDWFWNWGWHNZWHNZWFW
+      NWHNZWGWHNZYFYBYCYKWFWHXIXGWTYCYKPXTWHBCWGWNDXEFVGVHVIYBVRXOXBXPYNYLPYGYH
+      YJYIAWHCWFWNWGEXESTYBYMYEWGWHXIXFWTYMYEPXRWHBCWFWNDXEFVGVHVJVKYBVRXBXOXPY
+      FXLPYGYJYHYIAWHCWNWFWGEXESTVLUQVSWJXJXNKRVRXHIWIAWHBCDEXEFURVNUTVMVRWBWCW
+      EWKVORVSGHAWHWACWDEWSXEVPQVQ $.
+
+    $( Centralizers in a group are subgroups.  (Contributed by Stefan O'Rear,
+       6-Sep-2015.) $)
+    cntzsubg $p |- ( ( M e. Grp /\ S C_ B ) -> ( Z ` S ) e. ( SubGrp ` M ) ) $=
+      ( vx vy wcel wa cfv wceq eqid syl2anc grpcl grpass syl13anc oveq2d eqtr4d
+      co cgrp wss csubg csubmnd cminusg wral cmnd grpmnd cntzsubm cplusg simpll
+      sylan cntzssv simprl sselid grpinvcl ssel2 ad2ant2l syl3anc adantl oveq1d
+      cv cntzi grprinv grprid eqtrd grplinv grplid 3eqtr3d anassrs ralrimiva wb
+      c0g simplr simpr cntzel mpbird issubg3 adantr mpbir2and ) CUAIZBAUBZJZBDK
+      ZCUCKIZWDCUDKIZGVBZCUEKZKZWDIZGWDUFZWACUGIWBWFCUHABCDEFUIULWCWJGWDWCWGWDI
+      ZJZWJWIHVBZCUJKZTZWNWIWOTZLZHBUFZWMWRHBWCWLWNBIZWRWCWLWTJZJZWPWGWIWOTZWOT
+      ZWIWGWOTZWQWOTZWPWQXBXDWIWGWNWOTZWIWOTZWOTZXFXBXDWIWNWGWOTZWIWOTZWOTZXIXB
+      XDWIWNXCWOTZWOTZXLXBWAWIAIZWNAIZXCAIZXDXNLWAWBXAUKZXBWAWGAIZXOXRXBWDAWGAB
+      CDEFUMZWCWLWTUNUOZACWHWGEWHMZUPZNZWBWTXPWAWLBAWNUQURZXBWAXSXOXQXRYAYDAWOC
+      WGWIEWOMZOUSAWOCWIWNXCEYFPQXBXKXMWIWOXBWAXPXSXOXKXMLXRYEYAYDAWOCWNWGWIEYF
+      PQRSXBXHXKWIWOXBXGXJWIWOXAXGXJLWCWOBCWGWNDYFFVCUTVARSXBXFWIWGWQWOTZWOTZXI
+      XBWAXOXSWQAIZXFYHLXRYDYAXBWAXPXOYIXRYEYDAWOCWNWIEYFOUSZAWOCWIWGWQEYFPQXBX
+      HYGWIWOXBWAXSXPXOXHYGLXRYAYEYDAWOCWGWNWIEYFPQRSSXBXDWPCVMKZWOTZWPXBXCYKWP
+      WOXBWAXSXCYKLXRYAAWOCWHWGYKEYFYKMZYBVDNRXBWAWPAIZYLWPLXRXBWAXOXPYNXRYDYEA
+      WOCWIWNEYFOUSAWOCWPYKEYFYMVENVFXBXFYKWQWOTZWQXBXEYKWQWOXBWAXSXEYKLXRYAAWO
+      CWHWGYKEYFYMYBVGNVAXBWAYIYOWQLXRYJAWOCWQYKEYFYMVHNVFVIVJVKWMWBXOWJWSVLWAW
+      BWLVNWMWAXSXOWAWBWLUKWMWDAWGXTWCWLVOUOYCNHAWOBCWIDEYFFVPNVQVKWAWEWFWKJVLW
+      BGWDCWHYBVRVSVT $.
+  $}
+
+  ${
+    $d x y A $.  $d x y F $.  $d x y G $.  $d x y H $.  $d x y S $.  $d x T $.
+    $d x Y $.  $d x Z $.
+    cntzmhm.z $e |- Z = ( Cntz ` G ) $.
+    $( If the elements of ` S ` commute, the elements of a subset ` T ` also
+       commute.  (Contributed by Mario Carneiro, 25-Apr-2016.) $)
+    cntzidss $p |- ( ( S C_ ( Z ` S ) /\ T C_ S ) -> T C_ ( Z ` T ) ) $=
+      ( cfv wss wa simpr simpl cbs eqid cntzssv sstrdi cntz2ss sylancom sstrd )
+      AADFZGZBAGZHZBABDFZSTIUAARUBSTJZSTACKFZGRUBGUAARUDUCUDACDUDLZEMNUDABCDUEE
+      OPQQ $.
+
+    cntzmhm.y $e |- Y = ( Cntz ` H ) $.
+    $( Centralizers in a monoid are preserved by monoid homomorphisms.
+       (Contributed by Mario Carneiro, 24-Apr-2016.) $)
+    cntzmhm $p |- ( ( F e. ( G MndHom H ) /\ A e. ( Z ` S ) ) ->
+      ( F ` A ) e. ( Y ` ( F " S ) ) ) $=
+      ( vy vx co wcel cfv wa cbs cv cplusg wceq eqid cmhm cima wf cntzssv sseli
+      wral ffvelcdm syl2an cntzi adantll fveq2d simpll ad2antlr cvv wss cntzrcl
+      mhmf adantl simprd sselda mhmlin syl3anc 3eqtr3d ralrimiva wb adantr ffnd
+      wfn oveq2 oveq1 eqeq12d ralima syl2anc mpbird crn imassrn frnd sstrid syl
+      elcntz mpbir2and ) CDEUALMZABGNZMZOZACNZCBUBZFNMZWFEPNZMZWFJQZERNZLZWKWFW
+      LLZSZJWGUFZWBDPNZWICUCZAWQMZWJWDWQWIDECWQTZWITZUQZWCWQAWQBDGWTHUDUEZWQWIA
+      CUGUHWEWPWFKQZCNZWLLZXEWFWLLZSZKBUFZWEXHKBWEXDBMZOZAXDDRNZLZCNZXDAXLLZCNZ
+      XFXGXKXMXOCWDXJXMXOSWBXLBDAXDGXLTZHUIUJUKXKWBWSXDWQMZXNXFSWBWDXJULZWDWSWB
+      XJXCUMZWEBWQXDWEDUNMZBWQUOZWDYAYBOWBWQBDAGWTHUPURUSZUTZWQXLWLDECAXDWTXQWL
+      TZVAVBXKWBXRWSXPXGSXSYDXTWQXLWLDECXDAWTXQYEVAVBVCVDWECWQVHYBWPXIVEWEWQWIC
+      WBWRWDXBVFZVGYCWOXHJKWQBCWKXESWMXFWNXGWKXEWFWLVIWKXEWFWLVJVKVLVMVNWEWGWIU
+      OWHWJWPOVEWEWGCVOWICBVPWEWQWICYFVQVRJWFWIWLWGEFXAYEIVTVSWA $.
+
+    $( Centralizers in a monoid are preserved by monoid homomorphisms.
+       (Contributed by Mario Carneiro, 24-Apr-2016.) $)
+    cntzmhm2 $p |- ( ( F e. ( G MndHom H ) /\ S C_ ( Z ` T ) ) ->
+      ( F " S ) C_ ( Y ` ( F " T ) ) ) $=
+      ( vx cmhm co wcel cfv wss wa cima wral cbs eqid cv ralrimiva ssralv mpan9
+      cntzmhm wfun cdm wb mhmf adantr ffund simpr cntzssv sstrdi fdmd funimass4
+      wf sseqtrrd syl2anc mpbird ) CDEKLMZABGNZOZPZCAQCBQFNZOZJUAZCNVEMZJARZVAV
+      HJVBRVCVIVAVHJVBVGBCDEFGHIUEUBVHJAVBUCUDVDCUFACUGZOVFVIUHVDDSNZESNZCVAVKV
+      LCUQVCVKVLDECVKTZVLTUIUJZUKVDAVKVJVDAVBVKVAVCULVKBDGVMHUMUNVDVKVLCVNUOURJ
+      AVECUPUSUT $.
+  $}
+
+  ${
+    $d x y M $.  $d x y X $.  $d x y Z $.
+    cntrnsg.z $e |- Z = ( Cntr ` M ) $.
+    $( A central subgroup is normal.  (Contributed by Stefan O'Rear,
+       6-Sep-2015.) $)
+    cntrsubgnsg $p |- ( ( X e. ( SubGrp ` M ) /\ X C_ Z ) ->
+        X e. ( NrmSGrp ` M ) ) $=
+      ( vx vy csubg cfv wcel wss wa cv cplusg co wral wceq sseldd eqid ad2antrr
+      csg simpl ccntz simplr simprr ccntr cntrval eqtr4i eleqtrrdi simprl cntzi
+      cbs cnsg syl2anc oveq1d subgrcl subgss grppncan syl3anc eqtr3d ralrimivva
+      cgrp eqeltrd isnsg3 sylanbrc ) BAGHIZBCJZKZVEELZFLZAMHZNZVHATHZNZBIZFBOEA
+      UKHZOBAULHIVEVFUAVGVNEFVOBVGVHVOIZVIBIZKZKZVMVIBVSVIVHVJNZVHVLNZVMVIVSVTV
+      KVHVLVSVIVOAUBHZHZIVPVTVKPVSVICWCVSBCVIVEVFVRUCVGVPVQUDZQWCAUEHCVOAWBVORZ
+      WBRZUFDUGUHVGVPVQUIZVJVOAVIVHWBVJRZWFUJUMUNVSAVAIZVIVOIVPWAVIPVEWIVFVRBAU
+      OSVSBVOVIVEBVOJVFVRVOBAWEUPSWDQWGVOVJAVLVIVHWEWHVLRZUQURUSWDVBUTEFVJBAVLV
+      OWEWHWJVCVD $.
+
+    $( The center of a group is a normal subgroup.  (Contributed by Stefan
+       O'Rear, 6-Sep-2015.) $)
+    cntrnsg $p |- ( M e. Grp -> Z e. ( NrmSGrp ` M ) ) $=
+      ( cgrp wcel csubg cfv wss cnsg cbs ccntz ccntr eqid cntrval ssid cntzsubg
+      eqtr4i mpan2 eqeltrid cntrsubgnsg sylancl ) ADEZBAFGZEBBHBAIGEUBBAJGZAKGZ
+      GZUCBALGUFCUDAUEUDMZUEMZNQUBUDUDHUFUCEUDOUDUDAUEUGUHPRSBOABBCTUA $.
   $}
 
 
@@ -181726,6 +182169,142 @@ $)
       STTVAZVBUKTRAFTRZXEVCVDAXGDTRZAGBRXGXHUOMGBEVFFDVEVFXFVBVFVQVGXFVFVHVIIJV
       JVKVLZUKFTTSVMVNWLOWMTVOVKZXJWNVPVRAWKWNWJTTAQTVBXHWKTRZVSADUNLVTXKTDQDQW
       AWBWCXJWDWEABWICDEFGHIJXCKMNWHABWNDEOFWKTUNIXBXDJXILWFWG $.
+  $}
+
+  ${
+    $d D x y $.  $d I f y $.  $d ph x $.  $d f k y $.  $d k x $.  $d R x $.
+    $d f x $.
+    rhmpsrlem1.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+    rhmpsrlem1.r $e |- ( ph -> R e. Ring ) $.
+    rhmpsrlem2.i $e |- ( ph -> I e. Fin ) $.
+    rhmpsrlem1.x $e |- ( ph -> X : D --> ( Base ` R ) ) $.
+    rhmpsrlem1.y $e |- ( ph -> Y : D --> ( Base ` R ) ) $.
+    $( Lemma for rhmpsr et al.  (Contributed by SN, 8-Feb-2025.) $)
+    rhmpsrfilem2 $p |- ( ( ph /\ k e. D ) ->
+      ( R gsum ( x e. { y e. D | y oR <_ k } |->
+        ( ( X ` x ) ( .r ` R ) ( Y ` ( k oF - x ) ) ) ) ) e. ( Base ` R ) ) $=
+      ( cv wcel wa wbr cfv cle cofr crab cbs cmin cof co cmpt c0g eqid ringcmnd
+      cmulr adantr cfn simpr psrbaglefifi syl2anc crg ad2antrr wf elrabi adantl
+      ccmn ffvelcdmd cn0 psrbagf syl breq1 elrab simprbi syl3anc simpld ringcld
+      psrbagcon fmpttd gsumclfi ) AGPZDQZRZCPZVQUAUBZSZCDUCZEUDTZBWCBPZITZVQWEU
+      EUFUGZJTZEULTZUGZUHEEUITZWDUJZWKUJAEVCQVRAELUKUMVSVRHUNQZWCUNQAVRUOZAWMVR
+      MUMCDFVQHKUPUQVSBWCWJWDVSWEWCQZRZWDEWIWFWHWLWIUJAEURQVRWOLUSWPDWDWEIADWDI
+      UTVRWONUSWOWEDQZVSWBCWEDVAVBZVDWPDWDWGJADWDJUTVRWOOUSWPWGDQZWGVQWASZWPVRH
+      VEWEUTZWEVQWASZWSWTRVSVRWOWNUMWPWQXAWRDFWEHKVFVGWOXBVSWOWQXBWBXBCWEDVTWEV
+      QWAVHVIVJVBDFVQWEHKVNVKVLVDVMVOVP $.
+  $}
+
+  ${
+    $d .x. f g k x $.  $d B f g k x $.  $d D f g k x y $.  $d F f g k x $.
+    $d G f g k x $.  $d I f g h k x y $.  $d R f g k x $.  $d V f g k x $.
+    $d W f g k x $.  $d X k x y $.  $d f g k ph x $.
+    psrmulr.s $e |- S = ( I mPwSer R ) $.
+    psrmulr.b $e |- B = ( Base ` S ) $.
+    psrmulr.m $e |- .x. = ( .r ` R ) $.
+    psrmulr.t $e |- .xb = ( .r ` S ) $.
+    psrmulr.d $e |- D = { h e. ( NN0 ^m I ) | ( `' h " NN ) e. Fin } $.
+    $( The multiplication operation of the multivariate power series structure.
+       (Contributed by Mario Carneiro, 28-Dec-2014.)  (Revised by Mario
+       Carneiro, 2-Oct-2015.)  (Proof shortened by AV, 2-Mar-2024.) $)
+    psrmulrg $p |- ( ( I e. V /\ R e. W ) ->
+        .xb = ( f e. B , g e. B |-> ( k e. D |->
+            ( R gsum ( x e. { y e. D | y oR <_ k } |->
+            ( ( f ` x ) .x. ( g ` ( k oF - x ) ) ) ) ) ) ) ) $=
+      ( wcel wa cv cle cofr wbr crab cfv cmin cof co cmpt cgsu cmpo cnx cbs cop
+      cplusg cmulr ctp csca cvsca csn cxp cts ctopn cpt cun cvv c1 c9 cres eqid
+      simpl simpr psrbasg eqidd psrval psrplusgg opeq2d tpeq2d uneq1d wfn basfn
+      eqtr4d cmps fnpsr elexd fnovex mp3an2i eqeltrid funfvex sylancr plusgslid
+      funfni slotex syl mpoexga syl2anc ccnv cn cima cfn cn0 fnmap nn0ex rabexd
+      cmap a1i topnfn snexg xpexd ptex psrvalstrd mulrslid wss snsstp3 strslfv3
+      ssun1 sstri ) MNUAZEOUAZUBZGIJCCLDEABUCLUCZUDUEUFBDUGAUCZIUCZUHYDYEUIUJUK
+      JUCUHHUKULUMUKULZUNZUOUPUHCUQZUOURUHZFURUHZUQZUOUSUHYHUQZUTZUOVAUHEUQUOVB
+      UHAIEUPUHZCDYEVCVDYFHUJUKZUNZUQUOVEUHDEVFUHZVCZVDZVGUHZUQUTZVHZFUSVIVJVKU
+      QYCFYIYJEURUHZUJCCVDVLZUQZYMUTZUUBVHUUCYCABCDUUDUUEEFYQHYHIJKLMUUAYOYRNOP
+      YOVMZUUDVMZRYRVMTYCCDEFKMYONOPUUHTQYAYBVNZYAYBVOZVPUUEVMYHVMYQVMYCUUAVQUU
+      JUUKVRYCYNUUGUUBYCYLUUFYIYMYCYKUUEYJCUUDYKEFMNOPQUUIYKVMVSVTWAWBWEYCCVIYK
+      VIEYQYHUUAOVIVIVIYCCFUPUHZVIQYCUPVIWCZFVIUAZUULVIUAZWDYCFMEWFUKZVIPWFVIVI
+      VDZWCYCMVIUAZEVIUAZUUPVIUAWGYCMNUUJWHZYCEOUUKWHZMEVIVIWFWIWJWKZUUOVIFUPFU
+      PWLWOWMWKZYCUUNYKVIUAUVBFURVIWNWPWQYCCVIUAZUVDYHVIUAUVCUVCIJCCYGVIVIWRWSZ
+      UUKYCYOVIUAZUVDYQVIUAYCUUMUUSUVFWDUVAUVFVIEUPEUPWLWOWMUVCAIYOCYPVIVIWRWSY
+      CYTVIUAUUAVIUAYCDYSVIVIYCKUCWTXAXBXCUAKXDMXHUKZDVITXHUUQWCYCXDVIUAZUURUVG
+      VIUAXEUVHYCXFXIUUTXDMVIVIXHWIWJXGYCYRVIUAZYSVIUAYCVFVIWCUUSUVIXJUVAUVIVIE
+      VFEVFWLWOWMYRVIXKWQXLYTVIXMWQXNXOYMVCZUUCXPYCUVJYNUUCYIYLYMXQYNUUBXSXTXIU
+      VESXR $.
+
+    psrmulfval.i $e |- ( ph -> F e. B ) $.
+    psrmulfval.r $e |- ( ph -> G e. B ) $.
+    $( The multiplication operation of the multivariate power series structure.
+       (Contributed by Mario Carneiro, 28-Dec-2014.) $)
+    psrmulfval $p |- ( ph -> ( F .xb G ) = ( k e. D |->
+            ( R gsum ( x e. { y e. D | y oR <_ k } |->
+            ( ( F ` x ) .x. ( G ` ( k oF - x ) ) ) ) ) ) ) $=
+      ( vf vg cv cle cofr wbr crab cfv cmin cof co cmpt cgsu cvv wcel cmpo wceq
+      wa cmps reldmpsr cxp wfn wrel fnpsr fnrel ax-mp relelbasov psrmulrg fveq1
+      syl oveqan12d mpteq2dv oveq2d adantl ccnv cima cfn cn0 fnmap nn0ex simpld
+      cn cmap fnovex mp3an12i rabexd mptexd ovmpod ) AUBUCLMDDKEFBCUDKUDZUEUFUG
+      CEUHZBUDZUBUDZUIZWJWLUJUKULZUCUDZUIZIULZUMZUNULZUMZKEFBWKWLLUIZWOMUIZIULZ
+      UMZUNULZUMZHUOANUOUPZFUOUPZUSZHUBUCDDXAUQURALDUPXJTLDGUTNFVAUTUOUOVBZVCUT
+      VDVEXKUTVFVGOPVHVKZBCDEFGHIUBUCJKNUOUOOPQRSVIVKWMLURZWPMURZUSZXAXGURAXOKE
+      WTXFXOWSXEFUNXOBWKWRXDXMXNWNXBWQXCIWLWMLVJWOWPMVJVLVMVNVMVOTUAAKEXFUOAJUD
+      VPWCVQVRUPJVSNWDULZEUOSWDXKVCVSUOUPAXHXPUOUPVTWAAXHXIXLWBVSNUOUOWDWEWFWGW
+      HWI $.
+
+    ${
+      $d F f $.  $d X h $.
+      psrmulval.r $e |- ( ph -> X e. D ) $.
+      psrmulvalfi.fi $e |- ( ph -> I e. Fin ) $.
+      psrmulvalfi.ring $e |- ( ph -> R e. Ring ) $.
+      $( The multiplication operation of the multivariate power series
+         structure.  (Contributed by Mario Carneiro, 28-Dec-2014.) $)
+      psrmulvalfi $p |- ( ph -> ( ( F .xb G ) ` X ) =
+              ( R gsum ( k e. { y e. D | y oR <_ X } |->
+              ( ( F ` k ) .x. ( G ` ( X oF - k ) ) ) ) ) ) $=
+        ( vx cv cle cofr wbr crab cfv cmin cof cmpt cgsu cbs wceq breq2 rabbidv
+        fvoveq1 oveq2d mpteq12dv psrmulfval c0g eqid ringcmnd wcel psrbaglefifi
+        co cfn syl2anc wa crg adantr cn0 cmap psrelbasfi elrabi adantl psrbagfi
+        syl eleqtrd ffvelcdmd psrbagconcl sylan ringcld fmpttd gsumclfi fvmptd4
+        wf ) AUENEJBUFZUEUFZUGUHZUIZBDUJZJUFZKUKZWLWPULUMZVILUKZHVIZUNZUOVIEJWK
+        NWMUIZBDUJZWQNWPWRVIZLUKZHVIZUNZUOVIDKLGVIEUPUKZWLNUQZXAXGEUOXIJWOWTXCX
+        FXIWNXBBDWLNWKWMURUSXIWSXEWQHWLNWPLWRUTVAVBVAAJBCDEFGHIUEKLMOPQRSTUAVCU
+        BAXCXHXGEEVDUKZXHVEZXJVEAEUDVFANDVGZMVJVGZXCVJVGUBUCBDINMSVHVKAJXCXFXHA
+        WPXCVGZVLZXHEHWQXEXKQAEVMVGXNUDVNXOVOMVPVIZXHWPKAXPXHKWJXNACEFMXHKOXKUC
+        PTVQVNXOWPDXPXNWPDVGAXBBWPDVRVSADXPUQZXNAXMXQUCDIMSVTWAVNZWBWCXOXPXHXDL
+        AXPXHLWJXNACEFMXHLOXKUCPUAVQVNXOXDDXPXOXDXCVGZXDDVGAXLXNXSUBBDXCINMWPSX
+        CVEWDWEXBBXDDVRWAXRWBWCWFWGWHWI $.
+    $}
+  $}
+
+  ${
+    $d k x B $.  $d k x ph $.  $d k x R $.  $d k x X $.  $d k x Y $.
+    $d k x y D $.  $d f k x y I $.
+    psrmulcl.s $e |- S = ( I mPwSer R ) $.
+    psrmulcl.b $e |- B = ( Base ` S ) $.
+    psrmulcl.t $e |- .x. = ( .r ` S ) $.
+    psrmulcl.r $e |- ( ph -> R e. Ring ) $.
+    psrmulclfi.i $e |- ( ph -> I e. Fin ) $.
+    psrmulcl.x $e |- ( ph -> X e. B ) $.
+    psrmulcl.y $e |- ( ph -> Y e. B ) $.
+    ${
+      psrmulcl.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+      $( Closure of the power series multiplication operation.  (Contributed by
+         Mario Carneiro, 29-Dec-2014.) $)
+      psrmulclfilem $p |- ( ph -> ( X .x. Y ) e. B ) $=
+        ( wcel cvv vk vx vy cv cle cofr wbr crab cfv cmin cof co cmulr cmpt cbs
+        cgsu cmap eqid psrelbas rhmpsrfilem2 fmpttd wfn basfn crg elexd funfvex
+        wf funfni sylancr ccnv cn cima cfn cn0 cxp fnmap fnovex mp3an12i rabexd
+        nn0ex elmapd mpbird psrmulfval psrbasg 3eltr4d ) AUACDUBUCUDUAUDZUEUFUG
+        UCCUHUBUDZIUIWFWGUJUKULJUIDUMUIZULUNUPULZUNZDUOUIZCUQULZIJFULBAWJWLSCWK
+        WJVGAUACWIWKAUBUCCDGUAHIJRNOABCDEGHWKIKWKURZRLPUSABCDEGHWKJKWMRLQUSUTVA
+        AWKCWJTTAUOTVBDTSWKTSZVCADVDNVEWNTDUODUOVFVHVIAGUDVJVKVLVMSGVNHUQULZCTR
+        UQTTVOVBVNTSAHTSWOTSVPVTAHVMOVEVNHTTUQVQVRVSWAWBAUBUCBCDEFWHGUAIJHKLWHU
+        RMRPQWCABCDEGHWKVMVDKWMRLONWDWE $.
+    $}
+
+    $( Closure of the power series multiplication operation.  (Contributed by
+       Mario Carneiro, 29-Dec-2014.) $)
+    psrmulclfi $p |- ( ph -> ( X .x. Y ) e. B ) $=
+      ( vf cv ccnv cn cima cfn wcel cn0 cmap co crab eqid psrmulclfilem ) ABPQR
+      STUAUBPUCFUDUEUFZCDEPFGHIJKLMNOUIUGUH $.
   $}
 
   ${
@@ -200457,6 +201036,415 @@ $)
         AFVVDUYTAVWLWYAWYBWGZVWNMVQRVWLVWQWYCVUAVWRMFOWLWMWAWNWOOVUGWEWTXAVUGVU
         BWAWXGVXKVUCWNVUDWP $.
     $}
+
+    ${
+      $d N p q $.
+      $( Lemma for ~ bpos .  By using the various bounds at our disposal,
+         arrive at an inequality that is false for ` N ` large enough.
+         (Contributed by Mario Carneiro, 14-Mar-2014.)  (Revised by Wolf
+         Lammen, 12-Sep-2020.) $)
+      bposlem6 $p |- ( ph -> ( ( 4 ^ N ) / N ) <
+        ( ( ( 2 x. N ) ^c ( ( ( sqrt ` ( 2 x. N ) ) / 3 ) + 2 ) ) x.
+        ( 2 ^c ( ( ( 4 x. N ) / 3 ) - 5 ) ) ) ) $=
+        ( co c2 c3 wcel cr clt wbr cle vq c4 cexp cdiv cmul cfv caddc ccxp cmin
+        c5 cn cn0 4nn cuz 5nn eluznn sylancr nnnn0d nnred cc0 cfz syl 2nn nnrpd
+        nnmulcl rpge0d 3nn nndivre sylancl 2re rpred crp 2rp 5re remulcld c1 cz
+        rpcxpcl eqid cseq wf cv cpc cprime pccl syl2anr ralrimiva ffvelcdmd cfl
+        id 2z cq nnzd zsubcl zred ccht ce cdvds wne wb syl2anc dvdsval2 syl3anc
+        nnne0d mpbid zq eluzle efchtqcl wral wa wn cif cap syl2an adantl adantr
+        wo wi wceq a1i 3imtr4d iftrue 3brtr4d iffalse wdc zdcle pcmpt2 prmorcht
+        cmpt oveq2d eqtrd mpbird c6 ax-mp chtqcl ltletrd cc zcnd 2cn pm3.2i cbc
+        csqrt nnexpcl nndivred fzctr resqrtcld readdcl rpcxpcld resubcl df-5 4z
+        uzid peano2uz mp2b eqeltri uztrn2 bclbnd pcmptcl simprd bposlem4 elfzuz
+        bccl2 flqcld eqeltrid zmulcl nnzi bposlem3 elfzuz3 pcmptdvds efchtqdvds
+        znq uztrn nnq sqrtrirr prmz flaplt breq1i bitr4di zltnle bitrd bposlem1
+        sylan reexpcld resqcld lelttr mpand resqrtth breq1d prmgt1 ltexp2d df-2
+        nn0zd breq2i imbitrdi sqrtge0d prmnn lt2sqd zleltp1 sylbird imp adantrl
+        0le0 breq12d mpbiri dcn dcand exmiddc mpjaodan simpr oveq1 oveq12d nncn
+        1z exp1d ifeq1d mpteq2ia eqcomi 1nn0 eqidd pc2dvds nngt0d divgt0d elnnz
+        sylanbrc dvdsle mpd 4re 4lt6 clog cht3 fveq2i 6pos elrpii reeflog eqtri
+        6re 3z chtqwordi efle eqbrtrrid 4pos ltdiv2 syl222anc 2lt3 letrd chtqub
+        relogcl remulcl eflt reexplog recni mulcom fveq2d breqtrrd 3p2e5 oveq1i
+        3re 3cn pncan3oi eqtr3i oveq2i subsub mp3an23 eqtr3id cxpexpnn rpcxpadd
+        5cn mp3an13 3eqtr3d mp2an sq2 eqtrdi breqtrd ltdivmul2 lttrd nnre nngt0
+        lelttrd jca ltdivmul eqbrtrrd bposlem5 flqle eqbrtrid 2pos lemul2 nncnd
+        lemul1d 3ap0 divassap mulass mp3an12i 2t2e4 oveq1d eqtr3d lesub1dd 1lt2
+        eqtr3di cxpled lemul2d ) AUBFUCMZFUDMZNFUEMZFUUAMZVXCVXCUUBUFZOUDMZNUGM
+        ZUHMZNUBFUEMZOUDMZUJUIMZUHMZUEMZAVXAFAVXAAUBUKPZFULPZVXAUKPUMAFAUJUKPFU
+        JUNUFPZFUKPZUOHFUJUPUQZURZUBFUUCUQUSVXRUUDAVXDAFUTVXCVAMPZVXDUKPZAVXOVX
+        TVXSFUUEVBFVXCUVBVBZUSZAVXHVXLAVXHAVXCVXGAVXCANUKPZVXQVXCUKPVCVXRNFVEUQ
+        ZVDZAVXFQPZNQPZVXGQPAVXEQPZOUKPZVYGAVXCAVXCVYEUSZAVXCVYFVFZUUFZVGVXEOVH
+        VIVJVXFNUUGVIUUHZVKZAVXLANVLPZVXKQPZVXLVLPVMAVXJQPZUJQPZVYQAVXIQPVYJVYR
+        AVXIAVXNVXQVXIUKPUMVXRUBFVEUQUSVGVXIOVHVIZVNVXJUJUUIVIZNVXKVRUQVKZVOZAF
+        UBUNUFZPZVXBVXDRSAUJWUDPVXPWUEUJUBVPUGMZWUDUUJUBVQPUBWUDPWUFWUDPUUKUBUU
+        LUBUBUUMUUNUUOHUBFUJWUDWUDVSUUPUQFUUQVBAVXDEUECVPVTZUFZNNDUEMZUJUIMZUHM
+        ZUEMZVXMVYCAWUHWUKAWUHAUKUKEWUGAUKUKCWAUKUKWUGWAABWBZVXDWCMZBCJAWUNULPZ
+        BWDWUMWDPZWUPVYAWUOAWUPWJVYBWUMVXDWEWFWGZUURUUSZAVYJEOUNUFZPZEUKPZVGAEO
+        DVAMPZWUTABCDEFGHIJKLUUTZEODUVAVBZEOUPUQZWHZUSZAWUKAVYPWUJQPWUKVLPVMAWU
+        JAWUIVQPZUJVQPWUJVQPANVQPZDVQPZWVHWKADVXCOUDMZWIUFZVQKAWVKAVXCVQPVYJWVK
+        WLPZAVXCVYEWMVGVXCOUVKVIZUVCUVDZNDUVEUQZUJUOUVFWUIUJWNVIZWOZNWUJVRUQZVK
+        ZVOZWUCADWUGUFZVXDWULRABCDFGHIJKUVGAWWBWUHUDMZWUKRSZWWBWULRSZAWWCDWPUFZ
+        WQUFZEWPUFZWQUFZUDMZWUKAWWCAWUHWWBWRSZWWCVQPZAWUNBCDEJWUQWVEAWVBDEUNUFP
+        ZWVCEODUVHVBZUVIAWUHVQPWUHUTWSWWBVQPWWKWWLWTAWUHWVFWMAWUHWVFXDAWWBAUKUK
+        DWUGWURAVYJDWUSPZDUKPZVGAWWMWUTWWOWWNWVDEDOUVLXADOUPUQZWHZWMWUHWWBXBXCX
+        EZWOAWWJAWWIWWGWRSZWWJVQPZAEWLPZDWLPZEDTSZWWTAWVAWXBWVEEUVMVBZAWVJWXCWV
+        ODXFVBZAWWMWXDWWNEDXGVBZEDUVJXCAWWIVQPWWIUTWSWWGVQPWWTWXAWTAWWIAWXBWWIU
+        KPWXEEXHVBZWMAWWIWXHXDAWWGAWXCWWGUKPWXFDXHVBZWMWWIWWGXBXCXEZWOZWVTAWWCW
+        WJWRSZWWCWWJTSZAWXLGWBZWWCWCMZWXNWWJWCMZTSZGWDXIZAWXQGWDAWXNWDPZXJZWXND
+        TSZWXNETSZXKZXJZWXNVXDWCMZUTXLZWYDVPUTXLZWXOWXPTWXTWYDWYFWYGTSZWYDXKZWX
+        TWYDXJWYEVPWYFWYGTWXTWYCWYEVPTSZWYAWXTWYCWYJWXTWYCVXEWXNRSZWYJWXTWYKEWX
+        NRSZWYCWXTWYKVXEWIUFZWXNRSZWYLAVXEWLPVYIVXEUAWBXMSUAWLXIXJXQZWXNVQPZWYK
+        WYNWTWXSAVXCULPWYOAVXCVYEURVXCUAUVNVBWXNUVOZVXEWXNUAUVPXNEWYMWXNRLUVQUV
+        RAEVQPZWYPWYLWYCWTWXSAEWVEWMZWYQEWXNUVSXNUVTWXTVXENUCMZWXNNUCMZRSZWYEVP
+        VPUGMZRSZWYKWYJWXTXUBWYENRSZXUDWXTVXCXUARSZWXNWYEUCMZXUARSZXUBXUEWXTXUG
+        VXCTSZXUFXUHAVXQWXSXUIVXRWXNFUWAUWBWXTXUGQPVXCQPZXUAQPXUIXUFXJXUHXRWXTW
+        XNWYEWXSWXNQPAWXSWXNWYQWOXOZWXSWXSVYAWYEULPAWXSWJVYBWXNVXDWEWFZUWCAXUJW
+        XSVYKXPWXTWXNXUKUWDXUGVXCXUAUWEXCUWFAXUBXUFWTWXSAWYTVXCXUARAXUJUTVXCTSW
+        YTVXCXSVYKVYLVXCUWGXAUWHXPWXTWXNWYENXUKWXTWYEXULUWLZWVIWXTWKXTWXSVPWXNR
+        SAWXNUWIXOUWJYANXUCWYERUWKUWMUWNWXTVXEWXNAVYIWXSVYMXPXUKAUTVXETSWXSAVXC
+        VYKVYLUWOXPWXSUTWXNTSAWXSWXNWXSWXNWXNUWPVDVFXOUWQWXTWYEVQPVPVQPWYJXUDWT
+        XUMUXMWYEVPUWRVIYAUWSUWTUXAWYDWYFWYEXSWXTWYDWYEUTYBXOWYDWYGVPXSWXTWYDVP
+        UTYBXOYCWYIWYHWXTWYIWYHUTUTTSUXBWYIWYFUTWYGUTTWYDWYEUTYDWYDVPUTYDUXCUXD
+        XOWXTWYDYEWYDWYIXQWXTWYAWYCWXSWYPWVJWYAYEAWYQWVOWXNDYFWFWXTWYBYEZWYCYEW
+        XSWYPWYRXUNAWYQWYSWXNEYFWFWYBUXEVBUXFWYDUXGVBUXHWXTWUNWYEWXNBCDEJAWUOBW
+        DXIWXSWUQXPAWVAWXSWVEXPZAWXSUXIZWUMWXNVXDWCUXJAWWMWXSWWNXPZYGWXTWXPWXND
+        UEBUKWUPWUMVPXLZYIZVPVTZUFZEXUTUFZUDMZWCMWYGWXTWWJXVCWXNWCAWWJXVCXSWXSA
+        WWGXVAWWIXVBUDAWWPWWGXVAXSWWQDBXUSXUSVSZYHVBAWVAWWIXVBXSWVEEBXUSXVDYHVB
+        UXKXPYJWXTVPVPWXNBXUSDEBUKWUPWUMVPUCMZVPXLZYIXUSBUKXVFXURWUMUKPZWUPXVEW
+        UMVPXVGWUMWUMUXLUXNUXOUXPUXQAVPULPZBWDXIWXSAXVHBWDXVHAWUPXJUXRXTWGXPXUO
+        XUPWUMWXNXSVPUXSXUQYGYKYCWGAWWLWXAWXLWXRWTWWSWXJWWCWWJGUXTXAYLAWWLWWJUK
+        PZWXLWXMXRWWSAWXAUTWWJRSXVIWXJAWWGWWIAWWGWXIUSZAWWIWXHUSZAWWGWXIUYAZAWW
+        IWXHUYAZUYBWWJUYCUYDWWCWWJUYEXAUYFAWWJWWGUBUDMZWUKWXKAWWGQPZVXNXVNQPXVJ
+        UMWWGUBVHVIWVTAUBWWIRSZWWJXVNRSZAUBYMWWIUBQPZAUYGXTZYMQPAUYPXTXVKUBYMRS
+        AUYHXTAYMOWPUFZWQUFZWWITXWAYMUYIUFZWQUFZYMXVTXWBWQUYJUYKYMVLPXWCYMXSYMU
+        YPUYLUYMYMUYNYNUYOAXVTWWHTSZXWAWWITSZAOWLPZWXBOETSZXWDXWFAOVQPZXWFUYQOX
+        FYNZXTWXEAWUTXWGWVDOEXGVBZOEUYRXCAXVTQPZWWHQPZXWDXWEWTXWFXWKXWIOYOYNAWX
+        BXWLWXEEYOVBXVTWWHUYSUQXEUYTYPAXVRUTUBRSZWWIQPUTWWIRSXVOUTWWGRSXVPXVQWT
+        XVSXWMAVUAXTXVKXVMXVJXVLUBWWIWWGVUBVUCXEAXVNWUKRSZWWGWUKUBUEMZRSZAWWGNW
+        UIOUIMZUCMZXWORAWWGNUYIUFZXWQUEMZWQUFZXWRRAWWFXWTRSZWWGXXARSZAWXCNDRSXX
+        BWXFANODVYHAVJXTZOQPAVUQXTZADWVOWOZNORSAVUDXTAOEDXXEAEWVEUSXXFXWJWXGVUE
+        YPDVUFXAAWWFQPZXWTQPZXXBXXCWTAWXCXXGWXFDYOVBAXWSQPZXWQQPXXHVYPXXIVMNVUG
+        YNZAXWQAWVHXWHXWQVQPZWVPUYQWUIOWNVIZWOXWSXWQVUHUQWWFXWTVUIXAXEAXWRXWQXW
+        SUEMZWQUFZXXAAVYPXXKXWRXXNXSVMXXLNXWQVUJUQAXXMXWTWQAXWQYQPXWSYQPXXMXWTX
+        SAXWQXXLYRXWSXXJVUKXWQXWSVULVIVUMYKVUNAXWRWUKNNUHMZUEMZXWOANXWQUHMZNWUJ
+        NUGMZUHMZXWRXXPAXWQXXRNUHAXWQWUIUJNUIMZUIMZXXRXXTOWUIUIONUGMZNUIMXXTOXY
+        BUJNUIVUOVUPONVURYSVUSVUTVVAAWUIYQPZXYAXXRXSZAWUIWVPYRXYCUJYQPNYQPZXYDV
+        VGYSWUIUJNVVBVVCVBVVDYJAVYDXXKXXQXWRXSVCXXLNXWQVVEUQAWUJYQPZXXSXXPXSZAW
+        UJWVQYRVYPXYFXYEXYGVMYSNWUJNVVFVVHVBVVIXXOUBWUKUEXXONNUCMZUBVYDWVIXXOXY
+        HXSVCWKNNVVEVVJVVKUYOVVAVVLVVMAXVOWUKQPZXVRXWMXJZXWNXWPWTXVJWVTXYJAXVRX
+        WMUYGVUAYTXTWWGWUKUBVVNXCYLVVOVVRAWWBQPXYIWUHQPZUTWUHRSZXJZWWDWWEWTAWWB
+        WWRUSWVTAWUHUKPZXYMWVFXYNXYKXYLWUHVVPWUHVVQVVSVBWWBWUKWUHVVTXCXEVWAAWUL
+        VXHWUKUEMZVXMWWAAVXHWUKVYOWVTVOWUCAWUHVXHTSWULXYOTSABCDEFGHIJKLVWBAWUHV
+        XHWUKWVGVYOWVSVWHXEAWUKVXLTSZXYOVXMTSAWUJVXKTSXYPAWUIVXJUJAWUIWVPWOVYTV
+        YSAVNXTAWUINWVKUEMZVXJTADWVKTSZWUIXYQTSZADWVLWVKTKAWVMWVLWVKTSWVNWVKVWC
+        VBVWDADQPWVKQPZVYHUTNRSZXJZXYRXYSWTXXFAXUJVYJXYTVYKVGVXCOVHVIYUBAVYHYUA
+        VJVWEYTXTDWVKNVWFXCXEANVXCUEMZOUDMZXYQVXJAVXCYQPZYUDXYQXSZAVXCVYEVWGXYE
+        YUEOYQPZOUTXMSZXJYUFYSYUGYUHVURVWIYTNVXCOVWJVVHVBAYUCVXIOUDANNUEMZFUEMZ
+        YUCVXIXYEXYEAFYQPYUJYUCXSYSYSAFVXRVWGNNFVWKVWLYUIUBFUEVWMVUPVWRVWNVWOVV
+        MVWPANWUJVXKXXDVPNRSAVWQXTWVRWUAVWSXEAWUKVXLVXHWVTWUBVYNVWTXEVUEYPVVO
+        $.
+    $}
+  $}
+
+  ${
+    bposlem7.1 $e |- F = ( n e. NN |->
+                           ( ( ( ( sqrt ` 2 ) x. ( G ` ( sqrt ` n ) ) ) +
+                               ( ( 9 / 4 ) x. ( G ` ( n / 2 ) ) ) ) +
+                             ( ( log ` 2 ) / ( sqrt ` ( 2 x. n ) ) ) ) ) $.
+    bposlem7.2 $e |- G = ( x e. RR+ |-> ( ( log ` x ) / x ) ) $.
+    ${
+      $d n A $.  $d n B $.  $d n G $.  $d x A $.  $d x B $.
+      bposlem7.3 $e |- ( ph -> A e. NN ) $.
+      bposlem7.4 $e |- ( ph -> B e. NN ) $.
+      bposlem7.5 $e |- ( ph -> ( _e ^ 2 ) <_ A ) $.
+      bposlem7.6 $e |- ( ph -> ( _e ^ 2 ) <_ B ) $.
+      $( Lemma for ~ bpos .  The function ` F ` is strictly decreasing for
+         arguments greater than 7.  (Contributed by Mario Carneiro,
+         13-Mar-2014.) $)
+      bposlem7 $p |- ( ph -> ( A < B -> ( F ` B ) < ( F ` A ) ) ) $=
+        ( clt wbr c2 co crp cr wcel csqrt cmul c9 c4 cdiv caddc clog wa cexp cv
+        cfv wceq fveq2 id oveq12d rpsqrtcld relogcld rerpdivcld fvmptd3 breq12d
+        nnrpd ceu cle wb cc0 rprege0d resqrtth syl breqtrrd rpge0d ere 0re epos
+        ltleii mpanl12 syl2anc mpbird logdivlt syl22anc lt2sqd 3bitr2rd relogcl
+        rpred le2sq rerpdivcl mpancom fmpti ffvelcdmi 2rp rpsqrtcl mp1i ltmul2d
+        3bitr3d biimpd nnred 2re 2pos pm3.2i syl3anc rphalfcld remulcli resqcli
+        ltdiv1 c3 egt2lt3 simpli lemul2i ax-mp mpbi recni sqvali breqtrri letrd
+        a1i lemuldiv mp3an13 mpbid bitrd 9nn 4nn nnrp rpdivcl syl2an mp2an jcad
+        cn wi sqrt2re remulcl sylancr lt2add syld rpmulcl rprege0 2fveq3 oveq2d
+        readdcld fvoveq1 oveq2 fveq2d 3bitr2d 9re 4ap0 redivclapi ltmul2 bitr2d
+        4re lt2sq c1 1lt2 rplogcl ltdiv2d 3bitrd rpre sylibrd ) ACDNOZPUAUKZDUA
+        UKZGUKZUBQZUCUDUEQZDPUEQZGUKZUBQZUFQZPUGUKZPDUBQZUAUKZUEQZUFQZUUQCUAUKZ
+        GUKZUBQZUVACPUEQZGUKZUBQZUFQZUVFPCUBQZUAUKZUEQZUFQZNOZDFUKZCFUKZNOAUUPU
+        VEUVQNOZUVIUVTNOZUHZUWBAUUPUWEUWFAUUPUUTUVMNOZUVDUVPNOZUHZUWEAUUPUWHUWI
+        AUUPUWHAUVKPUIQZUURPUIQZNOZUUSUVLNOZUUPUWHAUWNUURUGUKZUURUEQZUVKUGUKZUV
+        KUEQZNOZUVKUURNOZUWMAUUSUWPUVLUWRNABUURBUJZUGUKZUXAUEQZUWPRGSIUXAUURULZ
+        UXBUWOUXAUURUEUXAUURUGUMUXDUNUOADADKVAZUPZAUWOUURAUURUXFUQUXFURUSABUVKU
+        XCUWRRGSIUXAUVKULZUXBUWQUXAUVKUEUXAUVKUGUMUXGUNUOACACJVAZUPZAUWQUVKAUVK
+        UXIUQUXIURUSUTAUVKSTZVBUVKVCOZUURSTZVBUURVCOZUWTUWSVDAUVKUXIWCZAUXKVBPU
+        IQZUWKVCOZAUXOCUWKVCLACSTZVECVCOUHUWKCULACUXHVFCVGVHZVIAUXJVEUVKVCOZUXK
+        UXPVDZUXNAUVKUXIVJZVBSTZVEVBVCOZUXJUXSUHUXTVKVEVBVLVKVMVNZVBUVKWDVOVPVQ
+        AUURUXFWCZAUXMUXOUWLVCOZAUXODUWLVCMADSTZVEDVCOUHUWLDULADUXEVFDVGVHZVIAU
+        XLVEUURVCOZUXMUYFVDZUYEAUURUXFVJZUYBUYCUXLUYIUHUYJVKUYDVBUURWDVOVPVQUVK
+        UURVRVSAUVKUURUXNUYEUYAUYKVTWAAUWKCUWLDNUXRUYHUTAUUSUVLUUQAUURRTUUSSTZU
+        XFRSUURGBRSUXCGIUXBSTUXARTUXCSTUXAWBUXBUXAWEWFWGZWHVHZAUVKRTUVLSTZUXIRS
+        UVKGUYMWHVHZPRTZUUQRTAWIPWJWKWLWMWNAUUPUWIAUUPUVBUGUKZUVBUEQZUVNUGUKZUV
+        NUEQZNOZUVCUVONOUWIAUUPUVNUVBNOZVUBAUXQUYGPSTZVEPNOZUHZUUPVUCVDACJWOZAD
+        KWOZVUFAVUDVUEWPWQWRZXNZCDPXCWSAUVNSTVBUVNVCOZUVBSTVBUVBVCOZVUCVUBVDAUV
+        NACUXHWTZWCAVBPUBQZCVCOZVUKAVUNUXOCVUNSTAVBPVKWPXAXNZUXOSTAVBVKXBXNZVUG
+        VUNUXOVCOAVUNVBVBUBQZUXOVCPVBVCOZVUNVURVCOZPVBWPVKPVBNOVBXDNOXEXFVNVEVB
+        NOVUSVUTVDVMPVBVBWPVKVKXGXHXIVBVBVKXJXKXLXNZLXMAUXQVUOVUKVDZVUGUYBUXQVU
+        FVVBVKVUIVBCPXOXPVHXQAUVBADUXEWTZWCAVUNDVCOZVULAVUNUXODVUPVUQVUHVVAMXMA
+        UYGVVDVULVDZVUHUYBUYGVUFVVEVKVUIVBDPXOXPVHXQUVNUVBVRVSXRAUVCUYSUVOVUANA
+        BUVBUXCUYSRGSIUXAUVBULZUXBUYRUXAUVBUEUXAUVBUGUMVVFUNUOVVCAUYRUVBAUVBVVC
+        UQVVCURUSABUVNUXCVUARGSIUXAUVNULZUXBUYTUXAUVNUEUXAUVNUGUMVVGUNUOVUMAUYT
+        UVNAUVNVUMUQVUMURUSUTAUVCUVOUVAAUVBRTUVCSTZVVCRSUVBGUYMWHVHZAUVNRTUVOST
+        ZVUMRSUVNGUYMWHVHZUVARTZAUCYFTZUDYFTZVVLXSXTVVMUCRTUDRTVVLVVNUCYAUDYAUC
+        UDYBYCYDXNWLUUAWNYEAUUTSTZUVDSTZUVMSTZUVPSTZUWJUWEYGAUUQSTZUYLVVOYHUYNU
+        UQUUSYIYJZAUVASTZVVHVVPUCUDUUBUUGUUCUUDZVVIUVAUVCYIYJZAVVSUYOVVQYHUYPUU
+        QUVLYIYJZAVWAVVJVVRVWBVVKUVAUVOYIYJZUUTUVDUVMUVPYKVSYLAUUPUWFAUUPUVRUVG
+        NOZUVSUVHNOZUWFAUXQUYGVUFUUPVWFVDVUGVUHVUJCDPUUEWSAVWGUVSPUIQZUVHPUIQZN
+        OZVWFAUVSRTZUVHRTZVWGVWJVDZAUVRAUYQCRTUVRRTWIUXHPCYMYJZUPZAUVGAUYQDRTUV
+        GRTWIUXEPDYMYJZUPZVWKUVSSTVEUVSVCOUHUVHSTVEUVHVCOUHVWMVWLUVSYNUVHYNUVSU
+        VHUUHYCVPAVWHUVRVWIUVGNAUVRSTVEUVRVCOUHVWHUVRULAUVRVWNVFUVRVGVHAUVGSTVE
+        UVGVCOUHVWIUVGULAUVGVWPVFUVGVGVHUTUUFAUVSUVHUVFVWOVWQUVFRTZAVUDUUIPNOVW
+        RWPUUJPUUKYDZXNUULUUMWNYEAUVESTUVISTZUVQSTUVTSTZUWGUWBYGAUUTUVDVVTVWCYQ
+        ZAUVFSTZVWLVWTVWRVXCVWSUVFUUNXHZVWQUVFUVHWEYJZAUVMUVPVWDVWEYQZAVXCVWKVX
+        AVXDVWOUVFUVSWEYJZUVEUVIUVQUVTYKVSYLAUWCUVJUWDUWANAEDUUQEUJZUAUKGUKZUBQ
+        ZUVAVXHPUEQGUKZUBQZUFQZUVFPVXHUBQZUAUKZUEQZUFQZUVJYFFSHVXHDULZVXMUVEVXP
+        UVIUFVXRVXJUUTVXLUVDUFVXRVXIUUSUUQUBVXHDGUAYOYPVXRVXKUVCUVAUBVXHDPGUEYR
+        YPUOVXRVXOUVHUVFUEVXRVXNUVGUAVXHDPUBYSYTYPUOKAUVEUVIVXBVXEYQUSAECVXQUWA
+        YFFSHVXHCULZVXMUVQVXPUVTUFVXSVXJUVMVXLUVPUFVXSVXIUVLUUQUBVXHCGUAYOYPVXS
+        VXKUVOUVAUBVXHCPGUEYRYPUOVXSVXOUVSUVFUEVXSVXNUVRUAVXHCPUBYSYTYPUOJAUVQU
+        VTVXFVXGYQUSUTUUO $.
+    $}
+
+    $( Lemma for ~ bpos .  Show that ` F ( 6 4 ) ` is less than ` log 2 ` .
+       (Contributed by Mario Carneiro, 14-Mar-2014.) $)
+    bposlem8 $p |- ( ( F ` ; 6 4 ) e. RR /\ ( F ` ; 6 4 ) < ( log ` 2 ) ) $=
+      ( c4 wcel c2 clt wbr c3 cdiv co c5 cmul caddc c1 c8 wceq c6 cdc cfv csqrt
+      cr clog c9 cexp cn 4nn fveq2 8cn eqtri fveq2i cc0 cle 0re 8re 8pos ltleii
+      cv ax-mp eqtr3i eqtrdi fveq2d crp 8nn nnrp cu2 cz 2rp 3z relogexp oveq12d
+      mp2an id 3cn 2nn mp2b recni div23api znq qre remulcli elexi fvmpt sqrt2re
+      cq oveq2d divclapi mulassi 4cn 2re 0le2 oveq2i 3eqtri cc cap mulcli rpap0
+      rpmulcl wa divcanap5 mp3an1 4ap0 eqtr4i 3eqtr3ri oveq1i df-6 cn0 2cn 5nn0
+      mp4an expp1 3eqtr3i nnexpcl nncni nnap0i 5nn nnzi 5cn 9cn eqtr4di adddiri
+      nnrei mp3an 4re redivclapi readdcli 5re c7 ax-1cn cmin 4nn0 3brtr4i mpbir
+      wb 7re mpbi 1re 6nn0 decnncl sqvali 8t8e64 sqrtsqi relogcl gt0ap0ii 4t2e8
+      mul12i remsqsqrt rpsqrtcl divdivap1 divassapi oveq1 2exp6 oveq2 sqrtmulii
+      divcanap4i nngt0i sylancr divrecap2 mulcomi recdivap2 addcli recclapi 3re
+      9nn rerecclapi 9re eqeltri add32i 6cn divdirapi df-7 2t3e6 2t4e8 3eqtr4ri
+      oveq12i 7cn divdiv32api 9nn0 0nn0 9lt10 4lt5 decltc 7t7e49 mul4i mulcomli
+      dec0u 7pos rpge0 rpre lt2msqi rpgt0 ltdivmul mp3an12 ltdiv1ii divsubdirap
+      5t2e10 5p3e8 pncan3oi dividapi 5lt8 ltadd2i df-9 mullidi mulridi nnmulcli
+      adddii 6re divmuldivapi df-4 3nn0 4p3e7 5p2e7 addcomi 3eqtr2i expadd 2nn0
+      sq2 ltsub2 eqbrtrri resubcli lttri ltaddsubi eqbrtri 1lt2 ltmul1ii eqcomi
+      rplogcl pm3.2i ) UAGUBZCUCZUEHUYMIUFUCZJKUYMLGMNZIUDUCZMNZUGGMNZOIOUHNZMN
+      ZPNZQNZRSMNZUYPMNZQNZUYNPNZUEUYLUIHUYMVUFTUAGUUAUJUUBZBUYLUYPBVAZUDUCZDUC
+      ZPNZUYRVUHIMNZDUCZPNZQNZUYNIVUHPNZUDUCZMNZQNZVUFUICVUHUYLTZVUSVUBUYNPNZVU
+      DUYNPNZQNVUFVUTVUOVVAVURVVBQVUTVUOUYQUYNPNZVUAUYNPNZQNVVAVUTVUKVVCVUNVVDQ
+      VUTVUKUYPLSMNZUYNPNZPNZVVCVUTVUJVVFUYPPVUTVUJSDUCZVVFVUTVUISDVUTVUIUYLUDU
+      CZSVUHUYLUDUKSIUHNZUDUCZVVISVVJUYLUDVVJSSPNUYLSULUUCUUDUMUNUOSUPKVVKSTUOS
+      UQURUSUTSURUUEVBVCZVDVESUIHZSVFHZVVHVVFTVGSVHZASAVAZUFUCZVVPMNZVVFVFDVVPS
+      TZVVRLUYNPNZSMNVVFVVSVVQVVTVVPSMVVSVVQSUFUCZVVTVVPSUFUKILUHNZUFUCZVWAVVTV
+      WBSUFVIUNIVFHZLVJHZVWCVVTTVKVLILVMVOVCVDVVSVPVNLUYNSVQUYNIUIHZVWDUYNUEHVR
+      IVHZIUUFVSZVTZULSURUSUUGZWAVDFVVFUEVVEUYNVVEWHHZVVEUEHZVWEVVMVWKVLVGLSWBV
+      OVVEWCVBVWHWDWEWFVSVDWIUYPVVEPNZUYNPNVVGVVCUYPVVEUYNUYPWGVTZLSVQULVWJWJVW
+      IWKVWMUYQUYNPUYPLPNZUYPGUYPPNZPNZMNZVWOSMNUYQVWMVWQSVWOMVWQGUYPUYPPNZPNGI
+      PNSUYPGUYPVWNWLVWNUUIVWSIGPIUEHZUOIUPKVWSITWMWNIUUJVOZWOUUHWPWOVWRLVWPMNZ
+      UYQVWPWQHZVWPUOWRKZUYPWQHZUYPUOWRKZVWRVXBTZGUYPWLVWNWSVWPVFHZVXDGVFHZUYPV
+      FHZVXHGUIHZVXIUJGVHVBVWFVWDVXJVRVWGIUUKZVSZGUYPXAVOVWPWTVBVWNVWDVXJVXFVKV
+      XLUYPWTVSZLWQHZVXCVXDXBVXEVXFXBZVXGVQLVWPUYPXCXDXMGWQHZGUOWRKZVXEVXFUYQVX
+      BTZWLXEVWNVXNVXOVXQVXRXBZVXPVXSVQLGUYPUULXDXMXFUYPLSVWNVQULVWJUUMXGXHVCVD
+      VUTVUNUYRUYTUYNPNZPNVVDVUTVUMVYAUYRPVUTVUMUYSDUCZVYAVUTVULUYSDVUTVULUYLIM
+      NZUYSVUHUYLIMUUNVYCUYSIPNZIMNUYSUYLVYDIMIUAUHNIORQNZUHNZUYLVYDUAVYEIUHXIW
+      OUUOIWQHZOXJHZVYFVYDTXKXLIOXNVOXOXHUYSIUYSVWFVYHUYSUIHZVRXLIOXPVOZXQZXKIV
+      RXRZUURUMVDVEVYIUYSVFHVYBVYATVYJUYSVHAUYSVVRVYAVFDVVPUYSTZVVROUYNPNZUYSMN
+      VYAVYMVVQVYNVVPUYSMVYMVVQUYSUFUCZVYNVVPUYSUFUKVWDOVJHZVYOVYNTVKOXSXTZIOVM
+      VOVDVYMVPVNOUYNUYSYAVWIVYKUYSVYJXRZWAVDFVYAUEUYTUYNUYTWHHZUYTUEHVYPVYIVYS
+      VYQVYJOUYSWBVOUYTWCVBZVWHWDWEWFVSVDWIUYRUYTUYNUGGYBWLXEWJZOUYSYAVYKVYRWJZ
+      VWIWKYCVNUYQVUAUYNUYOUYPLGVQWLXEWJZVWNVXNWJZUYRUYTWUAWUBWSZVWIYDYCVUTVURU
+      YNUYPSPNZMNZVVBVUTVUQWUFUYNMVUTVUQIUYLPNZUDUCZWUFVUTVUPWUHUDVUHUYLIPUUPVE
+      WUIUYPVVIPNWUFIUYLWMUYLVUGYEZWNUOUYLUQWUJUYLVUGUUSUTUUQVVISUYPPVVLWOUMVDW
+      IWUGRWUFMNZUYNPNZVVBUYNWQHWUFWQHWUFUOWRKZWUGWULTVWIUYPSVWNULWSVVMWUFVFHZW
+      UMVGVVMVXJVVNWUNVXMVVOUYPSXAUUTWUFWTVSUYNWUFUVAYFWUKVUDUYNPWUKRSUYPPNZMNZ
+      VUDWUFWUORMUYPSVWNULUVBWOSWQHZSUOWRKZVXEVXFVUDWUPTULVWJVWNVXNSUYPUVCXMXFX
+      HUMVDVNVUBVUDUYNUYQVUAWUDWUEUVDVUCUYPSULVWJUVEZVWNVXNWJZVWIYDYCEVUFUEVUEU
+      YNVUBVUDUYQVUAUYOUYPLGUVFYGXEYHWGVXNYHZUYRUYTUYRWHHZUYRUEHUGVJHVXKWVBUGUV
+      GXTUJUGGWBVOUYRWCVBVYTWDYIVUCUYPSURVWJUVHWGVXNYHZYIVWHWDWEWFVBZVUEUYNVUBV
+      UDUYQVUAWVAUYRUYTUGGUVIYGXEYHOUYSYJUYSVYJYEZVYRYHWDZYIWVCYIZVWHWDUVJVUFRU
+      YNPNZUYMUYNJVUERJKVUFWVHJKVUEYKUYPMNZSMNZVUAQNZRJVUEUYQVUDQNZVUAQNWVKUYQV
+      UAVUDWUDWUEWUTUVKWVLWVJVUAQUYOVUCQNZUYPMNYKSMNZUYPMNWVLWVJWVMWVNUYPMUARQN
+      ZSMNUASMNZVUCQNWVNWVMUARSUVLYLULVWJUVMYKWVOSMUVNXHUYOWVPVUCQILPNZIGPNZMNZ
+      UYOWVPVXQVXRVYGIUOWRKZWVSUYOTZWLXEXKVYLVXOVXTVYGWVTXBWWAVQLGIXCXDXMWVQUAW
+      VRSMUVOUVPUVRVCXHUVQXHUYOVUCUYPWUCWUSVWNVXNUVMYKSUYPUVSULVWNVWJVXNUVTXOXH
+      UMWVKRJKWVJRVUAYMNZJKZWVJOSMNZJKZWWDWWBJKWWCWVIOJKZWWEWWFYKUYPOPNZJKZWWHY
+      KYKPNZWWGWWGPNZJKZGUGUBOUOUBZWWIWWJJGOUGUOYNXLUWAUWBUWCUWDUWEUWFVWSOOPNZP
+      NIWWMPNZWWJWWLVWSIWWMPVXAXHUYPUYPOOVWNVWNYAYAUWGIOPNZOPNRUOUBZOPNWWNWWLWW
+      OWWPOPOIWWPYAXKUWSUWHXHIOOXKYAYAWKOXLUWIXOXOYOUOYKUPKUOWWGUPKZWWHWWKYQUOY
+      KUQYRUWJUTWWGVFHZWWQVXJOVFHZWWRVXMOUIHWWSXSOVHVBUYPOXAVOZWWGUWKVBYKWWGYRW
+      WRWWGUEHWWTWWGUWLVBUWMVOYPUYPUEHZUOUYPJKZWWFWWHYQZWGVWDVXJWXBVKVXLUYPUWNV
+      SYKUEHOUEHWXAWXBXBWXCYRYJYKOUYPUWOUWPVOYPWVIOSYKUYPYRWGVXNYHZYJURUSUWQYSR
+      VVEYMNZWWDWWBJSLYMNZSMNZSSMNZVVEYMNZWWDWXEWUQWURWXGWXITZULVWJWUQVXOWUQWUR
+      XBZWXJULVQSLSUWRUWPVOWXFOSMOLQNZLYMNWXFOWXLSLYMUWTXHOLYAVQUXAVCXHWXHRVVEY
+      MSULVWJUXBXHXGVUAVVEJKZWXEWWBJKZUGOPNZGUYSPNZMNZSUAPNZWXPMNZVUAVVEJWXOWXR
+      JKWXQWXSJKSOPNZOQNZWXTSQNZWXOWXRJOSJKWYAWYBJKUXCOSWXTYJURSOURYJWDUXDYSWXO
+      SRQNZOPNWXTROPNZQNWYAUGWYCOPUXEXHSROULYLYAYDWYDOWXTQOYAUXFWOWPWXRSVYEPNWX
+      TSRPNZQNWYBUAVYESPXIWOSORULYAYLUXIWYESWXTQSULUXGWOWPYOWXOWXRWXPUGOUVIYJWD
+      SUAURUXJWDGUYSYGWVEWDWXPGUYSUJVYJUXHUUSUWQYSUGGOUYSYBWLYAVYKXEVYRUXKIGUHN
+      ZLPNZWYFSPNZMNZVVEWXSWUQWURWYFWQHZWYFUOWRKZWYIVVETZULVWJWYFVWFGXJHZWYFUIH
+      VRYNIGXPVOZXQWYFWYNXRVXOWXKWYJWYKXBWYLVQLSWYFXCXDXMWYGWXRWYHWXPMWYGSIPNZL
+      PNSWVQPNWXRWYFWYOLPWYFILRQNZUHNZVWBIPNZWYOGWYPIUHUXLWOVYGLXJHZWYQWYRTXKUX
+      MILXNVOVWBSIPVIXHWPXHSILULXKVQWKWVQUASPUVOWOWPWYFVWBPNZIIUHNZUYSPNZWYHWXP
+      IGLQNZUHNZIIOQNZUHNZWYTXUBXUCXUEIUHXUCYKOIQNXUEUXNUXOOIYAXKUXPUXQWOVYGWYM
+      WYSXUDWYTTXKYNUXMIGLUXRYFVYGIXJHVYHXUFXUBTXKUXSXLIIOUXRYFXOVWBSWYFPVIWOXU
+      AGUYSPUXTXHXOUVRVCYOVUAUEHVWLRUEHWXMWXNYQWVFLSUVFURVWJYHYTVUAVVERUYAYFYSU
+      YBWVJWWDWWBWVISWXDURVWJYHZOSYJURVWJYHRVUAYTWVFUYCUYDVOWVJVUARXUGWVFYTUYEY
+      PUYFVUERUYNWVGYTVWHUYNVFHZUOUYNJKVWTRIJKXUHWMUYGIUYJVOUYNUWNVBUYHYSWVDWVH
+      UYNUYNVWIUXFUYIYOUYK $.
+
+    $d n q N $.  $d n G $.  $d n q ph $.  $d x ph $.  $d p q N $.  $d x N $.
+    bposlem9.3 $e |- ( ph -> N e. NN ) $.
+    bposlem9.4 $e |- ( ph -> ; 6 4 < N ) $.
+    bposlem9.5 $e |- ( ph -> -. E. p e. Prime ( N < p /\ p <_ ( 2 x. N ) ) ) $.
+    $( Lemma for ~ bpos .  Derive a contradiction.  (Contributed by Mario
+       Carneiro, 14-Mar-2014.)  (Proof shortened by AV, 15-Sep-2021.) $)
+    bposlem9 $p |- ( ph -> ps ) $=
+      ( wcel c2 co c3 cr cmul caddc vq cfv c6 c4 clt wbr cn 4nn a1i ceu cexp c8
+      cle ere 8re mp2an ltleii cc0 wb 0re mp4an recni sylancr mpd clog wa csqrt
+      c9 cdiv cv oveq2d oveq12d fveq2d sqrt2re crp relogcl rerpdivcld rpsqrtcld
+      wceq ffvelcdmd remulcld cz nnzi readdcld 2rp fvmptd3 eqeltrd cmin remulcl
+      ax-mp c5 sylancl relogcld resubcld syl 3nn nndivre 2re 4re ce ccxp cprime
+      c1 cfl 4nn0 lttrd wrex eqid cc recnd syl2anc eqtr4d rpcxpef mpbird oveq1d
+      2cn mp3an23 relogmul 2t2e4 eqtrd oveq1i 3ap0 pm3.2i mp3an13 eqtr3i eqtr3d
+      rpcnd 3cn 3eqtr4d adddid 5cn mulcl 2ap0 3eqtrd mulassd divcanap2d addassd
+      rpap0d mulcld remsqsqrt cdc 6nn0 decnncl egt2lt3 3lt8 3re lttri epos 8pos
+      simpri le2sq mpbi sqvali 8t8e64 eqtri breqtri resqcli nnrei nnred wi ltle
+      letrd bposlem7 bposlem8 simpld 2fveq3 fvoveq1 oveq2 adantl simpr fmptd cq
+      nnrpd 9nn znq qre rphalfcld rpmulcl nnrp rpre rpge0 resqrtcld readdcl 5re
+      simprd resubcl cbc cpc cif cmpt cuz nnzd df-5 6nn 4lt10 declti 4z zltp1le
+      mpbid eqbrtrid 5nn eluz1i sylanbrc breq2 anbi12d cbvrexvw sylnib bposlem6
+      breq1 reexplog reeflogd eqcomd efsub efadd 3brtr3d ltsub1dd mulcom mulass
+      eflt 2timesi fveq2i 3eqtr2i oveq2i eqtrdi 3rp rpdivcl 4cn adddir mp3an12i
+      4p2e6 eqtr3id cap 6cn div23ap divcanap3i divdirap mp3an3 3eqtr3d mvrladdd
+      3t2e6 subdird nnncan2d adddird mulcli nnncan1d addsubassd 3p2e5 df-3 1cnd
+      subdiri pncan2 eqtrid mullidd assraddsubd subdi divmuldivapi 3t3e9 eqtr2i
+      relogdiv oveq12i divclapi mul4 mpanr12 divcanap6 div12ap fveq2 redivclapi
+      id 9re 4ap0 divclapd npncan3d remulcli rerpdivcl rpge0d div23apd rprege0d
+      subcl 0le2 sqrtmul mul4d 2timesd relogmuld addcomd 3eqtr4rd addcl 3brtr4d
+      addcld ltmul2d ltnsymd pm2.21dd ) AGEUBZUCUDUUAZEUBZUEUFZBAVWMGUEUFZVWOLA
+      CVWMGDEFIJVWMUGNAUCUDUUBUHUUCZUIKUJOUKPZVWMUMUFAVWRULOUKPZVWMUMUJULUMUFZV
+      WRVWSUMUFZUJULUNUOUJQUEUFZQULUEUFUJULUEUFOUJUEUFVXBUUDUUJUUEUJQULUNUUFUOU
+      UGUPUQUJRNURUJUMUFULRNURULUMUFVWTVXAUSUNURUJUTUNUUHUQUOURULUTUOUUIUQUJULU
+      UKVAUULVWSULULSPVWMULULUOVBUUMUUNUUOUUPUIZAVWRVWMGVWRRNAUJUNUUQUIVWMRNZAV
+      WMVWQUURZUIZAGKUUSZVXCAVWPVWMGUMUFZLAVXDGRNZVWPVXHUUTVXEVXGVWMGUVAVCVDUVB
+      UVCVDAVWNVWLAVWNRNZVWNOVEUBZUEUFZVXJVXLVFACDEFIJUVDUIZUVEZAVWLOVGUBZGVGUB
+      ZFUBZSPZVHUDVIPZGOVIPZFUBZSPZTPZVXKOGSPZVGUBZVIPZTPZRADGVXODVJZVGUBFUBZSP
+      ZVXSVYHOVIPFUBZSPZTPZVXKOVYHSPZVGUBZVIPZTPVYGUGERIVYHGVSZVYMVYCVYPVYFTVYQ
+      VYJVXRVYLVYBTVYQVYIVXQVXOSVYHGFVGUVFVKVYQVYKVYAVXSSVYHGOFVIUVGVKVLVYQVYOV
+      YEVXKVIVYQVYNVYDVGVYHGOSUVHVMVKVLKAVYCVYFAVXRVYBAVXOVXQVXORNZAVNUIAVORVXP
+      FACVOCVJZVEUBZVYSVIPZRFAVYSVONZVFVYTVYSWUBVYTRNAVYSVPUVIAWUBUVJVQJUVKZAGA
+      GKUVMZVRZVTWAAVXSVYAVXSRNZAVXSUVLNZWUFVHWBNUDUGNZWUGVHUVNWCUHVHUDUVOUPVXS
+      UVPWJUIAVORVXTFWUCAGWUDUVQZVTWAWDAVXKVYEVXKRNZAOVONZWUJWEOVPWJZUIZAVYDAWU
+      KGVONZVYDVONZWEWUDOGUVRVCZVRZVQWDZWFZWURWGZAVWNVXKVWLVXNWUMWUTAVXJVXLVXMU
+      WEAVXKVWLUEUFVYDQVIPZVXKSPZWVAVWLSPZUEUFAGUDVEUBZSPZGVEUBZWHPZUDGSPZQVIPZ
+      VXKSPZWVFWHPZWHPZVYEQVIPZOTPZVYDVEUBZSPZWVIWKWHPZVXKSPZTPZWVKWHPZWVBWVCUE
+      AWVGWVSWVKAWVEWVFAVXIWVDRNZWVERNVXGUDVONZWWAWUHWWBUHUDUVSWJZUDVPWJGWVDWIW
+      LZAGWUDWMZWNZAWVPWVRAWVNWVOAWVMRNZORNZWVNRNAVYERNZQUGNZWWGAWUOWWIWUPWUOVY
+      DVYDUVTVYDUWAUWBWOZWPVYEQWQWLZWRWVMOUWCWLZAVYDWUPWMZWAZAWVQRNZWUJWVRRNAWV
+      IRNZWKRNWWPAWVHRNZWWJWWQAUDRNZVXIWWRWSVXGUDGWIVCZWPWVHQWQWLZUWDWVIWKUWFWL
+      ZWULWVQVXKWIWLZWDZAWVJWVFAWWQWUJWVJRNWXAWULWVIVXKWIWLZWWEWNZAWVGWVSUEUFZW
+      VGWTUBZWVSWTUBZUEUFZAUDGUKPZGVIPZVYDWVNXAPZOWVQXAPZSPZWXHWXIUEADDUGVYHXBN
+      VYHVYHVYDGUWGPUWHPUKPXCUWIUWJZWVAXDUBZVYEXDUBZGUAAGWBNZWKGUMUFGWKUWKUBNAG
+      KUWLZAWKUDXCTPZGUMUWMAUDGUEUFZWYAGUMUFZAUDVWMGWWSAWSUIVXFVXGUDVWMUEUFAUCU
+      DUDUWNXEXEUWOUWPUILXFAUDWBNWXSWYBWYCUSUWQWXTUDGUWRVCUWSUWTWKGWKUXAWCUXBUX
+      CAGHVJZUEUFZWYDVYDUMUFZVFZHXBXGGUAVJZUEUFZWYHVYDUMUFZVFZUAXBXGMWYGWYKHUAX
+      BWYDWYHVSWYEWYIWYFWYJWYDWYHGUEUXDWYDWYHVYDUMUXIUXEUXFUXGWXPXHWXQXHWXRXHUX
+      HAWXLWVEWTUBZWVFWTUBZVIPZWXHAWXKWYLGWYMVIAWWBWXSWXKWYLVSWWCWXTUDGUXJVCAWY
+      MGAGWUDUXKUXLVLAWVEXINWVFXINZWXHWYNVSAWVEWWDXJZAWVFWWEXJZWVEWVFUXMXKXLAWX
+      OWVPWTUBZWVRWTUBZSPZWXIAWXMWYRWXNWYSSAWUOWVNXINWXMWYRVSWUPAWVNWWMXJVYDWVN
+      XMXKAWUKWVQXINWXNWYSVSWEAWVQWXBXJOWVQXMVCVLAWVPXINWVRXINWXIWYTVSAWVPWWOXJ
+      ZAWVRWXCXJZWVPWVRUXNXKXLUXOAWVGRNWVSRNWXGWXJUSWWFWXDWVGWVSUXSXKXNUXPAVYDV
+      XKSPZWVJWHPZWVEWVJWHPWVBWVLAXUCWVEWVJWHAXUCGOSPZVXKSPZWVEAVYDXUEVXKSAOXIN
+      ZGXINZVYDXUEVSXPAGVXGXJZOGUXQVCXOAXUFGOVXKSPZSPZWVEAXUHXUFXUKVSZXUIXUHXUG
+      VXKXINZXULXPVXKWULVBZGOVXKUXRXQWOXUJWVDGSXUJVXKVXKTPZOOSPZVEUBZWVDVXKXUNU
+      XTWUKWUKXUQXUOVSWEWEOOXRUPXUPUDVEXSUYAUYBUYCUYDXTXOAVYDWVIWHPZVXKSPWVBXUD
+      AXURWVAVXKSAVYDWVIWVAAWVIWXAXJZAWVAAWUOQVONWVAVONWUPUYEVYDQUYFWLZYGZAUCGS
+      PZQVIPZWVHVYDTPZQVIPZVYDWVIWVATPZAXVBXVDQVIAXVBUDOTPZGSPZXVDXVGUCGSUYJYAU
+      DXINXUGAXUHXVHXVDVSUYGXPXUIUDOGUYHUYIUYKXOAXVCUCQVIPZGSPZVYDAXUHXVCXVJVSZ
+      XUIUCXINXUHQXINZQURUYLUFZVFZXVKUYMXVLXVMYHYBYCZUCGQUYNYDWOXVIOGSQOSPZQVIP
+      XVIOXVPUCQVIUYTYAOQXPYHYBUYOYEYAUYDAWVHXINZVYDXINZXVEXVFVSZAWVHWWTXJAVYDA
+      WWHVXIVYDRNZWRVXGOGWIVCZXJZXVQXVRXVNXVSXVOWVHVYDQUYPUYQXKUYRUYSXOAVYDWVIV
+      XKXWBXUSAVXKWUMXJZVUAYFAWVEWVJWVFWYPAWVJWXEXJZWYQVUBYIAWVPWVRWVKWHPZTPWVM
+      WVOSPZXUJOWVFSPZTPZTPZWVFWKVXKSPZWHPZTPZWVTWVCAWVPXWIXWEXWKTAWVPXWFOWVOSP
+      ZTPXWIAWVMOWVOAWVMWWLXJZXUGAXPUIZAWVOWWNXJZVUCAXWMXWHXWFTAXWMOVXKWVFTPZSP
+      XWHAWVOXWQOSAWUKWUNWVOXWQVSWEWUDOGXRVCZVKAOVXKWVFXWOXWCWYQYJXTVKXTAXWEWVJ
+      XWJWHPZWVKWHPXWKAWVRXWSWVKWHAWVIWKVXKXUSWKXINAYKUIXWCVUAXOAWVJXWJWVFXWDXW
+      JXINZAWKVXKYKXUNVUDZUIZWYQVUEXTVLAWVPWVRWVKXUAXUBAWVKWXFXJVUFAXWFWVAVYBSP
+      ZTPZXWFXWHXWKTPZTPWVCXWLAXXCXXEXWFTAXWJQVXKSPZWHPZQWVFSPZXWJWHPZTPZXUJXWG
+      XWKTPZTPXXCXXEAXXGXUJXXIXXKTXXGXUJVSAWKQWHPZVXKSPXXGXUJWKQVXKYKYHXUNVUJXX
+      LOVXKSQOTPZQWHPZXXLOXXMWKQWHVUGYAXVLXUGXXNOVSYHXPQOVUKUPYEYAYEUIAXXIXWGWV
+      FXWJAXUGWYOXWGXINZXPWYQOWVFYLVCZWYQXXBAXXHXWGWVFTPZXWJWHAXXHXWGXCWVFSPZTP
+      ZXXQAXXHOXCTPZWVFSPXXSQXXTWVFSVUHYAAOXCWVFXWOAVUIWYQVUCVULAXXRWVFXWGTAWVF
+      WYQVUMVKXTXOVUNVLAQVXTVEUBZSPZXXHXXFWHPZXXCXXJAXYBQWVFVXKWHPZSPZXYCAXYAXY
+      DQSAWUNWUKXYAXYDVSWUDWEGOVUSWLVKAWYOXYEXYCVSZWYQXVLWYOXUMXYFYHXUNQWVFVXKV
+      UOYDWOXTAWVAVXSSPZVYASPQVXTSPZXYAVXTVIPZSPZXXCXYBAXYGXYHVYAXYISAXYGOQVIPZ
+      GSPZQOVIPZXYMSPZSPZXYKXYMSPZGXYMSPZSPZXYHAWVAXYLVXSXYNSAXUHWVAXYLVSZXUIXU
+      GXUHXVNXYSXPXVOOGQUYNYDWOVXSXYNVSAXYNQQSPZXUPVIPVXSQOQOYHXPYHXPYMYMVUPXYT
+      VHXUPUDVIVUQXSVUTVURUIVLAXYKXINZXUHXYOXYRVSZOQXPYHYBVVAXUIYUAXUHVFXYMXINZ
+      YUCYUBQOYHXPYMVVAZYUDXYKGXYMXYMVVBVVCVCAXYRXYQXYHAXYRXCXYQSPXYQXYPXCXYQSX
+      UGOURUYLUFZXVLXVMXYPXCVSXPYMYHYBOQVVDVAYAAXYQAXUHYUCXYQXINXUIYUDGXYMYLWLV
+      UMVULAXUHXYQXYHVSZXUIXUHXVLXUGYUEVFYUFYHXUGYUEXPYMYCGQOVVEXQWOXTYNACVXTWU
+      AXYIVOFRJVYSVXTVSZVYTXYAVYSVXTVIVYSVXTVEVVFYUGVVHVLWUIAXYAVXTAVXTWUIWMZWU
+      IVQZWFZVLAWVAVXSVYAXVAVXSXINAVXSVHUDVVIWSVVJVVGZVBUIAVYAAVYAXYIRYUJYUIWGZ
+      XJYOAXYJQVXTXYISPZSPXYBAQVXTXYIXVLAYHUIZAVXTWUIYGZAXYAVXTAXYAYUHXJZYUOAVX
+      TWUIYRZVVKYOAYUMXYAQSAXYAVXTYUPYUOYUQYPVKXTUYRAXWJXXFXXHXXBXXFXINAQVXKYHX
+      UNVUDUIAXVLWYOXXHXINYHWYQQWVFYLVCVVLYIAXUJXWGXWKXUJXINZAXUJOVXKWRWULVVMVB
+      ZUIXXPAWYOXWTXWKXINWYQXXAWVFXWJVVRWLZYQYIVKAWVMVXKSPZWVMWVFSPZTPZXXCTPYVA
+      YVBXXCTPZTPZXXDWVCAYVAYVBXXCAWVMXINXUMYVAXINXWNXUNWVMVXKYLWLZAWVMWVFXWNWY
+      QYSZAWVAVYBXVAAVYBAWUFVYARNVYBRNYUKYULVXSVYAWIVCZXJZYSZYQAXWFYVCXXCTAXWFW
+      VMXWQSPYVCAWVOXWQWVMSXWRVKAWVMVXKWVFXWNXWCWYQYJXTXOAWVCWVAVYCSPZWVAVYFSPZ
+      TPZYVDYVATPYVEAWVCWVAVYGSPYVMAVWLVYGWVASWUSVKAWVAVYCVYFXVAAVYCAVXRVYBAVYR
+      VXQRNVXRRNVNAVXQVXPVEUBZVXPVIPZRACVXPWUAYVOVOFRJVYSVXPVSZVYTYVNVYSVXPVIVY
+      SVXPVEVVFYVPVVHVLWUEAYVNVXPAVXPWUEWMZWUEVQZWFZYVRWGZVXOVXQWIVCZYVHWDXJAVY
+      FAWUJVYEVONVYFRNWULWUQVXKVYEVVNVCXJZYJXTAYVKYVDYVLYVATAYVKWVAVXRSPZXXCTPY
+      VDAWVAVXRVYBXVAAVXRYWAXJZYVIYJAYWCYVBXXCTAYWCWVMVYESPZVXRSPWVMVYEVXRSPZSP
+      YVBAWVAYWEVXRSAVYEVYESPZQVIPWVAYWEAYWGVYDQVIAXVTURVYDUMUFYWGVYDVSXWAAVYDW
+      UPVVOVYDYTXKXOAVYEVYEQAVYEWWKXJZYWHYUNXVMAYBUIVVPYFZXOAWVMVYEVXRXWNYWHYWD
+      YOAYWFWVFWVMSAYWFVXOVXPSPZVXRSPVXOVXOSPZVXPVXQSPZSPZWVFAVYEYWJVXRSAWWHURO
+      UMUFZVFVXIURGUMUFVFZVYEYWJVSWWHYWNWRVVSYCAGWUDVVQZOGVVTVCXOAVXOVXPVXOVXQV
+      XOXINAVXOVNVBUIZAVXPWUEYGZYWQAVXQYVTXJVWAAYWMOYVNSPYVNYVNTPZWVFAYWKOYWLYV
+      NSYWKOVSZAWWHYWNYWTWRVVSOYTUPUIAYWLVXPYVOSPYVNAVXQYVOVXPSYVSVKAYVNVXPAYVN
+      YVQXJZYWRAVXPWUEYRYPXTVLAYVNYXAVWBAVXPVXPSPZVEUBYWSWVFAVXPVXPWUEWUEVWCAYX
+      BGVEAYWOYXBGVSYWPGYTWOVMYFYNYNVKYNXOXTAYVLYWEVYFSPWVMVYEVYFSPZSPYVAAWVAYW
+      EVYFSYWIXOAWVMVYEVYFXWNYWHYWBYOAYXCVXKWVMSAVXKVYEXWCYWHAVYEWUQYRYPVKYNVLA
+      YVDYVAAYVBXXCYVGYVJVWHYVFVWDYNVWEAXWFXWHXWKAWVMWVOXWNXWPYSAYURXXOXWHXINYU
+      SXXPXUJXWGVWFVCYUTYQYIVWEVWGAVXKVWLWVAWUMWUTXUTVWIXNXFVWJVWK $.
+  $}
+
+  ${
+    $d n p x N $.
+    $( Bertrand's postulate: there is a prime between ` N ` and ` 2 N ` for
+       every positive integer ` N ` .  This proof follows Erd&#337;s's method,
+       for the most part, but with some refinements due to Shigenori Tochiori
+       to save us some calculations of large primes.  See
+       ~ http://en.wikipedia.org/wiki/Proof_of_Bertrand%27s_postulate for an
+       overview of the proof strategy.  This is Metamath 100 proof #98.
+       (Contributed by Mario Carneiro, 14-Mar-2014.) $)
+    bpos $p |- ( N e. NN -> E. p e. Prime ( N < p /\ p <_ ( 2 x. N ) ) ) $=
+      ( vx vn cn wcel c4 cle wbr cv c2 cmul co wa cprime wrex cfv cdiv wdc cz
+      c6 cdc clt bpos1 wn csqrt crp clog cmpt c9 caddc eqid simpll simplr simpr
+      bposlem9 pm2.65da wi c1 cfz nnz peano2zd 2z zmulcld elfzelz prmdcz adantl
+      a1i syl exfzdc ancom rexbii2 dcbii sylibr elfz2 wb prmz syl2an3an bitr4id
+      w3a ibar prmnn nnltp1le sylan2 anbi1d bitr4d dcbid mpbid notnotrdc adantr
+      rexbidva mpd wo 6nn0 4nn0 deccl nn0zi zlelttric sylancl mpjaodan ) AEFZAU
+      AGUBZHIZABJZUCIZXDKALMZHIZNZBOPZXBAUCIZABUDXAXJNZXIUEZUEZXIXKXLXIXKXLNXIC
+      DDEKUFQDJZUFQCUGCJZUHQXORMUIZQLMUJGRMXNKRMXPQLMUKMKUHQKXNLMUFQRMUKMUIZXPA
+      BXQULXPULXAXJXLUMXAXJXLUNXKXLUOZUPXRUQXAXMXIURZXJXAXISZXSXAXDAUSUKMZXFUTM
+      ZFZBOPZSZXTXAXDOFZBYBPZSYEXAYFBYAXFXAAAVAZVBZXAKAKTFXAVCVHYHVDZYCYFSZXAYC
+      XDTFZYKXDYAXFVEXDVFVIVGVJYDYGYCYFBOYBYFYCVKVLVMVNXAYDXIXAYCXHBOXAYFNZYCYA
+      XDHIZXGNZXHYMYCYATFZXFTFZYLVTZYONZYOXDYAXFVOXAYPYQYFYLYOYSVPYIYJXDVQYRYOW
+      AVRVSYMXEYNXGYFXAXDEFXEYNVPXDWBAXDWCWDWEWFWKWGWHXIWIVIWJWLXAATFXBTFXCXJWM
+      YHXBUAGWNWOWPWQAXBWRWSWT $.
   $}
 
 
@@ -213581,6 +214569,12 @@ htmldef "GrpHom" as
    " <IMG SRC='_grphom.gif' WIDTH=54 HEIGHT=19 ALT=' GrpHom' TITLE='GrpHom'> ";
   althtmldef "GrpHom" as " GrpHom ";
   latexdef "GrpHom" as "\mathrm{GrpHom}";
+htmldef "Cntr" as "Cntr";
+  althtmldef "Cntr" as "Cntr";
+  latexdef "Cntr" as "\mathrm{Cntr}";
+htmldef "Cntz" as "Cntz";
+  althtmldef "Cntz" as "Cntz";
+  latexdef "Cntz" as "\mathrm{Cntz}";
 htmldef "CMnd" as "CMnd";
   althtmldef "CMnd" as "CMnd";
   latexdef "CMnd" as "\mathrm{CMnd}";
@@ -218755,6 +219749,19 @@ $)
   iooreen $p |- ( 0 (,) 1 ) ~~ RR $=
     ( vx cr cc0 c1 cioo co cv ce cfv caddc cdiv cmpt wf1o cen wbr eqid iooref1o
     reex f1oen ax-mp ensymi ) BCDEFZBUBABDDAGHIJFKFLZMBUBNOAUCUCPQBUBUCRSTUA $.
+
+  ${
+    $d q x y $.
+    $( The rational and irrational numbers are disjoint.  Here irrational means
+       apart from any rational number.  (Contributed by Jim Kingdon,
+       18-Sep-2026.) $)
+    rirrdisj $p |- ( QQ i^i { x e. RR | A. q e. QQ x =//= q } ) = (/) $=
+      ( vy cq cv cap wbr wral cr crab cin c0 wceq wcel wn disj cc qcn apirr syl
+      breq2 rspcv mtod wb qre breq1 ralbidv elrab3 mtbird mprgbir ) DAEZBEZFGZB
+      DHZAIJZKLMCEZUONZOCDCDUOPUPDNZUQUPULFGZBDHZURUTUPUPFGZURUPQNVAOUPRUPSTUSV
+      ABUPDULUPUPFUAUBUCURUPINUQUTUDUPUEUNUTAUPIUKUPMUMUSBDUKUPULFUFUGUHTUIUJ
+      $.
+  $}
 
 
 $(

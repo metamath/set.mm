@@ -2710,7 +2710,9 @@ favor of theorems in deduction form.</TD>
 
 <TR>
   <TD>riinrab</TD>
-  <TD>~ iinrabm</TD>
+  <TD>~ riinm plus ~ iinrabm</TD>
+  <td>there is no obvious way to combine the case where
+  ` X ` is inhabited and where it is empty</td>
 </TR>
 
 <tr>
@@ -8333,12 +8335,12 @@ proof is not intuitionistic and it is lightly used in set.mm.</TD>
 
 <TR>
   <TD>flle</TD>
-  <TD>~ flqle</TD>
+  <TD>~ flqle , ~ flaplelt</TD>
 </TR>
 
 <TR>
   <TD>flltp1 , fllep1</TD>
-  <TD>~ flqltp1</TD>
+  <TD>~ flqltp1 , ~ flaplelt</TD>
 </TR>
 
 <TR>
@@ -8358,7 +8360,7 @@ proof is not intuitionistic and it is lightly used in set.mm.</TD>
 
 <TR>
   <TD>fllt</TD>
-  <TD>~ flqlt</TD>
+  <TD>~ flqlt , ~ flaplt</TD>
 </TR>
 
 <TR>
@@ -11918,6 +11920,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 <TR>
   <TD>strfv</TD>
   <TD>~ strslfv</TD>
+  <td>if you need something in closed or deduction
+  form, see ~ strslfv3</td>
 </TR>
 
 <TR>
@@ -12955,6 +12959,13 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>pwsdiagghm</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses pwsdiagmhm</td>
+</tr>
+
+<tr>
+  <td>cntziinsn</td>
+  <td><i>none</i></td>
+  <td>would apparently need ` S ` to be inhabited (or
+  empty)</td>
 </tr>
 
 <tr>
@@ -14725,46 +14736,39 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>rhmpsrlem2</td>
-  <td><i>none</i></td>
-  <td>depends on a variety of theorems we don't have yet</td>
+  <td>~ rhmpsrfilem2</td>
+  <td>adds condition that ` I ` is finite</td>
 </tr>
 
 <tr>
-  <td id="missing-psrmulr">psrmulr</td>
-  <td><i>none</i></td>
-  <td>presumably provable in this form or with small
-  changes, now that we have ` gsum ` using ~ df-gsumfi .</td>
-</tr>
-
-<tr>
-  <td>psrmulfval</td>
-  <td><i>none</i></td>
-  <td>this theorem in particular is a simple consequence of
-  psrmulr ( ` F e. B ` should take care of the set existence, as
-  in ~ psradd ), but see the <a href="#missing-psrmulr">psrmulr
-  entry</a> for thoughts on what ` mPwSer ` multiplication should
-  expand to</td>
+  <td>psrmulr</td>
+  <td>~ psrmulrg</td>
+  <td>adds set existence conditions</td>
 </tr>
 
 <tr>
   <td>psrmulval</td>
-  <td><i>none</i></td>
-  <td>this theorem in particular is a simple consequence of
-  psrmulfval , but see the <a href="#missing-psrmulr">psrmulr
-  entry</a> for thoughts on what ` mPwSer ` multiplication should
-  expand to</td>
+  <td>~ psrmulvalfi</td>
+  <td>adds conditions that ` I ` is finite and ` R ` is
+  a ring</td>
 </tr>
 
 <tr>
-  <td>psrmulcllem , psrmulcl</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses rhmpsrlem2 and psrmulfval</td>
+  <td>psrmulcllem</td>
+  <td>~ psrmulclfilem</td>
+  <td>adds condition that ` I ` is finite</td>
+</tr>
+
+<tr>
+  <td>psrmulcl</td>
+  <td>~ psrmulclfi</td>
+  <td>requires a finite index set</td>
 </tr>
 
 <tr>
   <td>psrsca</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses psrmulr</td>
+  <td>should be possible now that we have ~ psrmulrg</td>
 </tr>
 
 <tr>
@@ -14807,11 +14811,11 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>psrlidm</td>
   <td><i>none</i></td>
-  <td>this is where we really would need a functioning definition
-  of ` mPwSer ` multiplication (as discussed at the <a
-  href="#missing-psrmulr">psrmulr entry</a>), in particular how to
-  handle the parts of the set.mm proof which use gsumres and gsumsn .
-  The set.mm proof also uses psrbagcon .  There are some ` if `
+  <td>May be feasible now that we have ~ psrmulrg
+  and ~ psrbagcon . The set.mm proof uses gsumres (we
+  probably want something similar but which changes
+  finitely supported to finite) and gsumsn (probably replace
+  with ~ gsumsncmn ).  There are some ` if `
   expressions in the set.mm proof but it isn't clear they are
   being used in a way that needs decidability (if they do,
   see the similar portion of the ~ psr1clfi proof).</td>
@@ -17611,13 +17615,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>bposlem6</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof depends on the first Chebyshev function
-  ( theta / df-cht )</td>
-</tr>
-
-<tr>
   <td>lgsfval</td>
   <td>~ lgsfvalg</td>
   <td>adds ` A e. ZZ ` and ` N e. NN ` conditions</td>
@@ -19921,13 +19918,6 @@ of the inverse prime series</td>
   <tr>
     <td>97.  Cramer's Rule</td>
     <td>Requires more development of matrices and determinants.</td>
-  </tr>
-
-  <tr>
-    <td>98.  Bertrand's Postulate</td>
-    <td>We would appear to have the obvious prerequisites such
-    as ` pCnt ` ( ~ df-pc ), ` log ` ( ~ df-relog ), and
-    ~ logdivlt .</td>
   </tr>
 </table>
 

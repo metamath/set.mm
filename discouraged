@@ -12491,6 +12491,8 @@
 "psubspi2N" is used by "pclfinN".
 "psubspi2N" is used by "pclfinclN".
 "qexALT" is used by "reexALT".
+"r1omfi" is used by "fineqvr1ombregs".
+"r1omfi" is used by "r1omhf".
 "ralimd4vOLD" is used by "ralimd6vOLD".
 "ralimdvvOLD" is used by "ralimd4vOLD".
 "ralimdvvOLD" is used by "ralimd6vOLD".
@@ -18724,6 +18726,7 @@ New usage of "quantgodelALT" is discouraged (0 uses).
 New usage of "quoremnn0ALT" is discouraged (0 uses).
 New usage of "r19.3rzvOLD" is discouraged (0 uses).
 New usage of "r1omALT" is discouraged (0 uses).
+New usage of "r1omfi" is discouraged (2 uses).
 New usage of "r1pwALT" is discouraged (0 uses).
 New usage of "rab0OLD" is discouraged (0 uses).
 New usage of "rabss2OLD" is discouraged (0 uses).
@@ -19345,6 +19348,7 @@ New usage of "truniALT" is discouraged (0 uses).
 New usage of "truniALTVD" is discouraged (0 uses).
 New usage of "tsetndx" is discouraged (18 uses).
 New usage of "tz6.12-2OLD" is discouraged (0 uses).
+New usage of "tz7.48lemOLD" is discouraged (0 uses).
 New usage of "ubth" is discouraged (1 uses).
 New usage of "ubthlem1" is discouraged (1 uses).
 New usage of "ubthlem2" is discouraged (1 uses).
@@ -21012,6 +21016,7 @@ Proof modification of "quantgodelALT" is discouraged (71 steps).
 Proof modification of "quoremnn0ALT" is discouraged (360 steps).
 Proof modification of "r19.3rzvOLD" is discouraged (7 steps).
 Proof modification of "r1omALT" is discouraged (13 steps).
+Proof modification of "r1omfi" is discouraged (25 steps).
 Proof modification of "r1pwALT" is discouraged (151 steps).
 Proof modification of "rab0OLD" is discouraged (33 steps).
 Proof modification of "rabss2OLD" is discouraged (66 steps).
@@ -21309,6 +21314,7 @@ Proof modification of "truimtru" is discouraged (6 steps).
 Proof modification of "truniALT" is discouraged (183 steps).
 Proof modification of "truniALTVD" is discouraged (220 steps).
 Proof modification of "tz6.12-2OLD" is discouraged (23 steps).
+Proof modification of "tz7.48lemOLD" is discouraged (610 steps).
 Proof modification of "umgr2adedgwlkonALT" is discouraged (294 steps).
 Proof modification of "un0.1" is discouraged (21 steps).
 Proof modification of "un01" is discouraged (18 steps).
