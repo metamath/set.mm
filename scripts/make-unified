@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Make unified set.mm and iset.mm for commit during CI
+
+cd set
+metamath 'read set.mm' 'write source "../set.mm"' 'quit'
+
+cd ..
+cd iset
+metamath 'read iset.mm' 'write source "../iset.mm"' 'quit'
+
