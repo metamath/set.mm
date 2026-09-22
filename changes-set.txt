@@ -94,6 +94,14 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+17-Sep-26 r1omhf      elhf4       Moved from BTT's mathbox to main set.mm
+17-Sep-26 r1filimi    [same]      Moved from BTT's mathbox to main set.mm
+17-Sep-26 rankfilimbi [same]      Moved from BTT's mathbox to main set.mm
+17-Sep-26 fissorduni  [same]      Moved from BTT's mathbox to main set.mm
+17-Sep-26 rankval4b   [same]      Moved from BTT's mathbox to main set.mm
+17-Sep-26 rankval2b   [same]      Moved from BTT's mathbox to main set.mm
+17-Sep-26 elwf        [same]      Moved from BTT's mathbox to main set.mm
+17-Sep-26 r1wf        [same]      Moved from BTT's mathbox to main set.mm
 16-Sep-26 df-bj-mpt3  df-mpt3     Moved from BJ's mathbox to main set.mm
  8-Sep-26 r1omfi      hffi        Moved from BTT's mathbox to main set.mm
  8-Sep-26 hfelhf      [same]      Moved from SF's mathbox to main set.mm
