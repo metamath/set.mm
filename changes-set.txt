@@ -94,6 +94,8 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+22-Sep-26 rspcedeq2vd rspcedeqvd
+22-Sep-26 rspcedeq1vd rspcedeqvd
 17-Sep-26 r1omhf      elhf4       Moved from BTT's mathbox to main set.mm
 17-Sep-26 r1filimi    [same]      Moved from BTT's mathbox to main set.mm
 17-Sep-26 rankfilimbi [same]      Moved from BTT's mathbox to main set.mm
