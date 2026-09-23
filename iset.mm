@@ -197630,6 +197630,35 @@ $)
       XRXP $.
   $}
 
+  ${
+    $d m n A $.  $d m n B $.  $d m n N $.
+    $( An equation involving an ` N ` -th power.  The expression
+       ` exp ( 2 _pi _i / N ) ` is a way to write the primitive ` N ` -th root
+       of unity with the smallest positive argument.  We could write it as
+       ` -u 1 ^c ( 2 / N ) ` except that we only support positive real numbers
+       as the base for ` ^c ` .  The converse is presumably also provable but
+       we do not have a proof yet.  (Contributed by Mario Carneiro,
+       23-Apr-2015.)  (Revised by Jim Kingdon, 18-Sep-2026.) $)
+    efnthr $p |- ( ( A e. CC /\ N e. NN /\ B e. RR+ ) -> (
+      E. n e. ( 0 ... ( N - 1 ) ) A = ( ( B ^c ( 1 / N ) ) x.
+        ( ( exp ` ( ( _i x. ( 2 x. _pi ) ) / N ) ) ^ n ) )
+        -> ( A ^ N ) = B ) ) $=
+      ( cc wcel crp c1 cdiv co ci c2 cpi cmul cexp wceq cc0 3ad2ant2 adantr syl
+      cn w3a ccxp ce cfv cv cmin cfz wa simp3 nnrecre rpcxpcld rpcnd cn0 ax-icn
+      2cn picn mulcli a1i nncn cap wbr nnap0 divclapd efcl elfznn0 expcl syl2an
+      cr simpl2 nnnn0d mulexpd rpcxproot syl2anc adantl mulcomd expmuld 3eqtr3d
+      nn0cnd nncnd oveq2d root1idef oveq1d cz elfzelz 1exp 3eqtrd oveq12d oveq1
+      mulridd eqeq1d syl5ibrcom rexlimdva ) AEFZDUAFZBGFZUBZABHDIJZUCJZKLMNJZNJ
+      ZDIJZUDUEZCUFZOJZNJZPZADOJZBPZCQDHUGJZUHJZWQXDXKFZUIZXIXGXFDOJZBPXMXNWSDO
+      JZXEDOJZNJBHNJBXMWSXEDXMWSWQWSGFXLWQBWRWNWOWPUJZWOWNWRVIFWPDUKRULSUMWQXCE
+      FZXDUNFZXEEFXLWQXBEFXRWQXADXAEFWQKWTUOLMUPUQURURUSWOWNDEFWPDUTRWOWNDQVAVB
+      WPDVCRVDXBVETZXDXJVFZXCXDVGVHXMDWNWOWPXLVJZVKZVLXMXOBXPHNXMWPWOXOBPWQWPXL
+      XQSZYBBDVMVNXMXPXCDOJZXDOJZHXDOJZHXMXCXDDNJZOJXCDXDNJZOJXPYFXMYHYIXCOXMXD
+      DXMXDXLXSWQYAVOZVSXMDYBVTVPWAXMXCXDDWQXRXLXTSZYCYJVQXMXCDXDYKYJYCVQVRXMYE
+      HXDOXMWOYEHPYBDWBTWCXMXDWDFZYGHPXLYLWQXDQXJWEVOXDWFTWGWHXMBXMBYDUMWJWGXGX
+      HXNBAXFDOWIWKWLWM $.
+  $}
+
   $( Ordering law for exponentiation.  (Contributed by NM, 2-Aug-2006.)
      (Revised by Mario Carneiro, 5-Jun-2014.) $)
   ltexp2 $p |- ( ( ( A e. RR /\ M e. ZZ /\ N e. ZZ ) /\

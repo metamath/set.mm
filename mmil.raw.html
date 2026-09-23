@@ -17143,6 +17143,21 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>cxpeq</td>
+  <td><i>none</i></td>
+  <td>One direction is ~ efnthr .  The converse should
+  be provable but the set.mm proof would need a decent amount
+  of adaptation to not use logarithms of complex numbers.
+  Because we have ` B e. RR+ ` and ` ( A ^ N ) = B ` we can
+  conclude ` A =//= 0 ` by ~ expap0 (thus replacing one
+  use of excluded middle in the set.mm proof). It seems likely
+  that if we have eflogeq (for ` B e. RR+ ` ) we'd be able to
+  use it. Because we only support positive real bases for ` ^c `
+  we write ` ( exp `` ( ( _i x. ( 2 x. _pi ) ) / N ) ) ` where set.mm
+  writes ` ( -u 1 ^c ( 2 / N ) ) `</td>
+</tr>
+
+<tr>
   <td>loglesqrt</td>
   <td><i>none</i></td>
   <td>presumably provable, but the set.mm proof relies on
