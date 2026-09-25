@@ -16599,7 +16599,10 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>sineq0</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses various theorems not in iset.mm</td>
+  <td>although we have some portions, such as ~ sinkpi and
+  ~ sineq0re , the remaining part of the set.mm proof does
+  things like take the floor of ` A / _pi ` so we may
+  need a different approach</td>
 </tr>
 
 <tr>
@@ -16809,7 +16812,10 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>eflogeq</td>
   <td><i>none</i></td>
-  <td>see ~ df-relog comment for discussion of complex logarithms</td>
+  <td>Presumably ` B e. CC /\ B =/= 0 ` would need to be changed
+  to ` B e. RR+ ` .  Also the set.mm proof uses efeq1 .
+  Other than that, it would appear the set.mm proof could
+  be adapted.</td>
 </tr>
 
 <tr>
@@ -17000,10 +17006,15 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>cxpmul2z , cxpmul2zd</td>
-  <td><i>none</i></td>
-  <td>it may be possible to extend ~ rpcxpmul2 from ` NN0 `
-  to ` ZZ ` .</td>
+  <td>cxpmul2z</td>
+  <td>~ rpcxpmul2z</td>
+  <td>restricts the base to positive real numbers</td>
+</tr>
+
+<tr>
+  <td>cxpmul2zd</td>
+  <td>~ rpcxpmul2zd</td>
+  <td>restricts the base to positive real numbers</td>
 </tr>
 
 <tr>
@@ -17118,9 +17129,32 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>root1id , root1eq1 , root1cj , cxpeq</td>
+  <td>root1id</td>
+  <td>~ root1idef</td>
+  <td>changes ` ( -u 1 ^c ( 2 / N ) ) ` to
+  ` ( exp `` ( ( _i x. ( 2 x. _pi ) ) / N ) ) ` as an
+  expression for an ` N ` -th root of unity</td>
+</tr>
+
+<tr>
+  <td>root1eq1 , root1cj</td>
   <td><i>none</i></td>
   <td>as described at ~ df-rpcxp we only support positive real bases</td>
+</tr>
+
+<tr>
+  <td>cxpeq</td>
+  <td><i>none</i></td>
+  <td>One direction is ~ efnthr .  The converse should
+  be provable but the set.mm proof would need a decent amount
+  of adaptation to not use logarithms of complex numbers.
+  Because we have ` B e. RR+ ` and ` ( A ^ N ) = B ` we can
+  conclude ` A =//= 0 ` by ~ expap0 (thus replacing one
+  use of excluded middle in the set.mm proof). It seems likely
+  that if we have eflogeq (for ` B e. RR+ ` ) we'd be able to
+  use it. Because we only support positive real bases for ` ^c `
+  we write ` ( exp `` ( ( _i x. ( 2 x. _pi ) ) / N ) ) ` where set.mm
+  writes ` ( -u 1 ^c ( 2 / N ) ) `</td>
 </tr>
 
 <tr>
@@ -17251,11 +17285,20 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>1cubrlem</td>
+  <td><i>none</i></td>
+  <td>Should be feasible if ` ( -u 1 ^c ( 2 / 3 ) ) ` is
+  changed to ` ( exp `` ( ( _i x. ( 2 x. _pi ) ) / 3 ) ) ` .
+  The use of cxpef would be replaced with some rearrangement
+  of that expression but much of the rest of the proof could
+  use the set.mm proof.</td>
+</tr>
+
+<tr>
   <td>1cubr</td>
   <td><i>none</i></td>
-  <td>possibly provable, but the set.mm proof is in terms
-  of 1cubrlem which uses ` ^c ` with a base which is not
-  a positive real.</td>
+  <td>seems like the set.mm proof could be adapted without
+  a lot of change if we had the converse of ~ efnthr</td>
 </tr>
 
 <tr>
