@@ -99,6 +99,11 @@ Date      Old         New         Notes
 24-Sep-26 r1omALT     hfomALT
 24-Sep-26 tskr1om2    tskhf
 24-Sep-26 r1omtsk     hftsk
+22-Sep-26 fnwe2       [same]      Moved from SO's mathbox to main set.mm
+22-Sep-26 fnwe2lem3   [same]      Moved from SO's mathbox to main set.mm
+22-Sep-26 fnwe2lem2   [same]      Moved from SO's mathbox to main set.mm
+22-Sep-26 fnwe2lem1   [same]      Moved from SO's mathbox to main set.mm
+22-Sep-26 fnwe2val    [same]      Moved from SO's mathbox to main set.mm
 22-Sep-26 rspcedeq2vd rspcedeqvd
 22-Sep-26 rspcedeq1vd rspcedeqvd
 17-Sep-26 r1omhf      elhf4       Moved from BTT's mathbox to main set.mm
