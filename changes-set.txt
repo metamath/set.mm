@@ -94,6 +94,11 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+24-Sep-26 r1omfv      dfhf2       Moved from BTT's mathbox to main set.mm
+24-Sep-26 r1om        hfom
+24-Sep-26 r1omALT     hfomALT
+24-Sep-26 tskr1om2    tskhf
+24-Sep-26 r1omtsk     hftsk
 22-Sep-26 rspcedeq2vd rspcedeqvd
 22-Sep-26 rspcedeq1vd rspcedeqvd
 17-Sep-26 r1omhf      elhf4       Moved from BTT's mathbox to main set.mm
