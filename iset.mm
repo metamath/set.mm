@@ -196563,6 +196563,25 @@ $)
     TWHJWKUTVAVDVBVRXDWIWJQZXFXDXGWTJVEVFVGZVHXHRWTXIMVIVJWCIJVKNOTVLVMVRVTPBIP
     BWEWFQXEVNVTIVOUKTVQVP $.
 
+  $( A complex number whose sine is zero is real.  (Contributed by NM,
+     17-Aug-2008.)  (Revised by Mario Carneiro, 10-May-2014.)  (Revised by Jim
+     Kingdon, 23-Sep-2026.) $)
+  sineq0re $p |- ( ( A e. CC /\ ( sin ` A ) = 0 ) -> A e. RR ) $=
+    ( cc wcel cfv cc0 wceq cr ci c2 cmul co ce cabs c1 wb ax-icn mulcl mpan syl
+    caddc csin cneg cmin cdiv sinval eqeq1d efcl negicn subcld cap wbr 2muliap0
+    2mulicn diveqap0 mp3an23 subeq0ad 3bitrd oveq2 mul12 mp3an12 2timesd fveq2d
+    eqtrd efadd syl2anc eqtr2d negidi oveq1i adddir mul02 3eqtr3a eqtrdi eqtr3d
+    2cn ef0 eqeq12d fveq2 biimtrdi syl5 sylbid abs1 eqeq2i 2ap0 mulreap absefib
+    2re bitr2d bitrid sylibd imp ) ABCZAUADZEFZAGCZWKWMHIAJKZJKZLDZMDZNMDZFZWNW
+    KWMHAJKZLDZHUBZAJKZLDZFZWTWKWMXBXEUCKZIHJKZUDKZEFZXGEFZXFWKWLXIEAUEUFWKXGBC
+    ZXJXKOZWKXBXEWKXABCZXBBCHBCZWKXNPHAQRZXAUGSZWKXDBCZXEBCXCBCZWKXRUHXCAQRZXDU
+    GSZUIXLXHBCXHEUJUKXMUMULXGXHUNUOSWKXBXEXQYAUPUQXFXBXBJKZXBXEJKZFZWKWTXBXEXB
+    JURWKYDWQNFWTWKYBWQYCNWKWQXAXATKZLDZYBWKWPYELWKWPIXAJKZYEXOIBCZWKWPYGFPVNHI
+    AUSUTWKXAXPVAVCVBWKXNXNYFYBFXPXPXAXAVDVEVFWKXAXDTKZLDZYCNWKXNXRYJYCFXPXTXAX
+    DVDVEWKYJELDNWKYIELWKHXCTKZAJKZEAJKYIEYKEAJHPVGVHXOXSWKYLYIFPUHHXCAVIUTAVJV
+    KVBVOVLVMVPWQNMVQVRVSVTWTWRNFZWKWNWSNWRWAWBWKWNWOGCZYMWKIGCIEUJUKWNYNOWFWCA
+    IWDUOWKWOBCZYNYMOYHWKYOVNIAQRWOWESWGWHWIWJ $.
+
   ${
     cosord.1 $e |- ( ph -> A e. ( 0 [,] _pi ) ) $.
     cosord.2 $e |- ( ph -> B e. ( 0 [,] _pi ) ) $.
@@ -196691,6 +196710,15 @@ $)
   negpitopissre $p |- ( -u _pi (,] _pi ) C_ RR $=
     ( cpi cneg cxr wcel cr cioc co wss pire renegcli rexri iocssre mp2an ) ABZC
     DAEDNAFGEHNAIJKINALM $.
+
+  $( Property of an ` N ` -th root of unity.  (Contributed by Mario Carneiro,
+     23-Apr-2015.) $)
+  root1idef $p |- ( N e. NN
+      -> ( ( exp ` ( ( _i x. ( 2 x. _pi ) ) / N ) ) ^ N ) = 1 ) $=
+    ( cn wcel ci c2 cpi cmul co cdiv ce cfv cexp c1 wceq ax-icn 2cn picn mulcli
+    cc cz a1i nncn nnap0 divclapd efexp syl2anc divcanap2d fveq2d eqtrdi eqtr3d
+    nnz ef2pi ) ABCZADEFGHZGHZAIHZGHZJKZUPJKALHZMUMUPSCATCURUSNUMUOAUOSCUMDUNOE
+    FPQRRUAZAUBZAUCZUDAUKUPAUEUFUMURUOJKMUMUQUOJUMUOAUTVAVBUGUHULUIUJ $.
 
 
 $(
@@ -197302,6 +197330,32 @@ $)
     ITURUSUDUSVJURBUEZOVHAVABUFUGUTVECDZBUHDZVIVFTUSURVJVLVKAVAUIUJUSVMURBUKOVE
     BULUMUNURVDATUSAUOUPUQ $.
 
+  $( Generalize ~ rpcxpmul2 to negative integers.  (Contributed by Mario
+     Carneiro, 23-Apr-2015.) $)
+  rpcxpmul2z $p |- ( ( A e. RR+ /\ B e. CC /\ C e. ZZ ) ->
+      ( A ^c ( B x. C ) ) = ( ( A ^c B ) ^ C ) ) $=
+    ( crp wcel cc cmul co ccxp cexp wceq cn0 cneg wa rpcxpmul2 adantr c1 oveq2d
+    cdiv mulcld cz cr wo elznn0 wi 3expia simpll simplr simprr syl3anc mulneg2d
+    simprl recnd negeqd negnegd eqtrd negcld rpcxpneg syl2anc cc0 cap rpcncxpcl
+    eqtr3d cxpap0 expineg2 syl22anc 3eqtr4d expr jaod expimpd biimtrid 3impia
+    wbr ) ADEZBFEZCUAEZABCGHZIHZABIHZCJHZKZVPCUBEZCLEZCMZLEZUCZNVNVONZWACUDWGWB
+    WFWAWGWBNWCWAWEWGWCWAUEWBVNVOWCWAABCOUFPWGWBWEWAWGWBWENZNZQABWDGHZIHZSHZQVS
+    WDJHZSHZVRVTWIWKWMQSWIVNVOWEWKWMKVNVOWHUGZVNVOWHUHZWGWBWEUIZABWDOUJRWIAWJMZ
+    IHZVRWLWIWRVQAIWIWRVQMZMVQWIWJWTWIBCWPWICWGWBWEULUMZUKUNWIVQWIBCWPXATUOUPRW
+    IVNWJFEWSWLKWOWIBWDWPWICXAUQTAWJURUSVCWIVSFEZVSUTVAVMZCFEWEVTWNKWGXBWHABVBP
+    WGXCWHABVDPXAWQVSCVEVFVGVHVIVJVKVL $.
+
+  ${
+    rpcxpmul2zd.a $e |- ( ph -> A e. RR+ ) $.
+    rpcxpmul2zd.b $e |- ( ph -> B e. CC ) $.
+    rpcxpmul2zd.c $e |- ( ph -> C e. ZZ ) $.
+    $( Generalize ~ rpcxpmul2 to negative integers.  (Contributed by Mario
+       Carneiro, 30-May-2016.) $)
+    rpcxpmul2zd $p |- ( ph -> ( A ^c ( B x. C ) ) = ( ( A ^c B ) ^ C ) ) $=
+      ( crp wcel cc cz cmul co ccxp cexp wceq rpcxpmul2z syl3anc ) ABHICJIDKIBC
+      DLMNMBCNMDOMPEFGBCDQR $.
+  $}
+
   $( Absolute value of a power, when the base is real.  (Contributed by Mario
      Carneiro, 15-Sep-2014.) $)
   abscxp $p |- ( ( A e. RR+ /\ B e. CC ) ->
@@ -197574,6 +197628,35 @@ $)
       UWJXAXDTZXEUVKUWMUWNWDWIOXFXGXHXIAYFUUCXJZXKAYGXAOPUWOXAOXCWIXEXIXLAYGVSQ
       UVKUWIUWKUWLXMWDUUNWIYGOXNWBXOXPXQXRXRAYIVSQUVLUVSUVTWDUUPUVNYIYNXSURWSXQ
       XRXP $.
+  $}
+
+  ${
+    $d m n A $.  $d m n B $.  $d m n N $.
+    $( An equation involving an ` N ` -th power.  The expression
+       ` exp ( 2 _pi _i / N ) ` is a way to write the primitive ` N ` -th root
+       of unity with the smallest positive argument.  We could write it as
+       ` -u 1 ^c ( 2 / N ) ` except that we only support positive real numbers
+       as the base for ` ^c ` .  The converse is presumably also provable but
+       we do not have a proof yet.  (Contributed by Mario Carneiro,
+       23-Apr-2015.)  (Revised by Jim Kingdon, 18-Sep-2026.) $)
+    efnthr $p |- ( ( A e. CC /\ N e. NN /\ B e. RR+ ) -> (
+      E. n e. ( 0 ... ( N - 1 ) ) A = ( ( B ^c ( 1 / N ) ) x.
+        ( ( exp ` ( ( _i x. ( 2 x. _pi ) ) / N ) ) ^ n ) )
+        -> ( A ^ N ) = B ) ) $=
+      ( cc wcel crp c1 cdiv co ci c2 cpi cmul cexp wceq cc0 3ad2ant2 adantr syl
+      cn w3a ccxp ce cfv cv cmin cfz wa simp3 nnrecre rpcxpcld rpcnd cn0 ax-icn
+      2cn picn mulcli a1i nncn cap wbr nnap0 divclapd efcl elfznn0 expcl syl2an
+      cr simpl2 nnnn0d mulexpd rpcxproot syl2anc adantl mulcomd expmuld 3eqtr3d
+      nn0cnd nncnd oveq2d root1idef oveq1d cz elfzelz 1exp 3eqtrd oveq12d oveq1
+      mulridd eqeq1d syl5ibrcom rexlimdva ) AEFZDUAFZBGFZUBZABHDIJZUCJZKLMNJZNJ
+      ZDIJZUDUEZCUFZOJZNJZPZADOJZBPZCQDHUGJZUHJZWQXDXKFZUIZXIXGXFDOJZBPXMXNWSDO
+      JZXEDOJZNJBHNJBXMWSXEDXMWSWQWSGFXLWQBWRWNWOWPUJZWOWNWRVIFWPDUKRULSUMWQXCE
+      FZXDUNFZXEEFXLWQXBEFXRWQXADXAEFWQKWTUOLMUPUQURURUSWOWNDEFWPDUTRWOWNDQVAVB
+      WPDVCRVDXBVETZXDXJVFZXCXDVGVHXMDWNWOWPXLVJZVKZVLXMXOBXPHNXMWPWOXOBPWQWPXL
+      XQSZYBBDVMVNXMXPXCDOJZXDOJZHXDOJZHXMXCXDDNJZOJXCDXDNJZOJXPYFXMYHYIXCOXMXD
+      DXMXDXLXSWQYAVOZVSXMDYBVTVPWAXMXCXDDWQXRXLXTSZYCYJVQXMXCDXDYKYJYCVQVRXMYE
+      HXDOXMWOYEHPYBDWBTWCXMXDWDFZYGHPXLYLWQXDQXJWEVOXDWFTWGWHXMBXMBYDUMWJWGXGX
+      HXNBAXFDOWIWKWLWM $.
   $}
 
   $( Ordering law for exponentiation.  (Contributed by NM, 2-Aug-2006.)
