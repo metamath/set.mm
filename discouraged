@@ -15798,6 +15798,8 @@ New usage of "cnvbramul" is discouraged (1 uses).
 New usage of "cnvbraval" is discouraged (1 uses).
 New usage of "cnvcnvssOLD" is discouraged (0 uses).
 New usage of "cnvfiALT" is discouraged (0 uses).
+New usage of "cnvimarndmOLD" is discouraged (0 uses).
+New usage of "cnvimassrndmOLD" is discouraged (0 uses).
 New usage of "cnvunop" is discouraged (2 uses).
 New usage of "cnvxpOLD" is discouraged (0 uses).
 New usage of "coecjOLD" is discouraged (0 uses).
@@ -17509,6 +17511,7 @@ New usage of "iunssOLD" is discouraged (0 uses).
 New usage of "iunssfOLD" is discouraged (0 uses).
 New usage of "ivthALT" is discouraged (0 uses).
 New usage of "jaoded" is discouraged (1 uses).
+New usage of "jech9.3OLD" is discouraged (0 uses).
 New usage of "joincomALT" is discouraged (1 uses).
 New usage of "jpi" is discouraged (0 uses).
 New usage of "jplem1" is discouraged (1 uses).
@@ -20019,6 +20022,8 @@ Proof modification of "cnncvsmulassdemo" is discouraged (95 steps).
 Proof modification of "cnv0OLD" is discouraged (59 steps).
 Proof modification of "cnvcnvssOLD" is discouraged (15 steps).
 Proof modification of "cnvfiALT" is discouraged (46 steps).
+Proof modification of "cnvimarndmOLD" is discouraged (24 steps).
+Proof modification of "cnvimassrndmOLD" is discouraged (75 steps).
 Proof modification of "cnvxpOLD" is discouraged (59 steps).
 Proof modification of "coecjOLD" is discouraged (263 steps).
 Proof modification of "com3rgbi" is discouraged (35 steps).
@@ -20753,6 +20758,7 @@ Proof modification of "ivthALT" is discouraged (1080 steps).
 Proof modification of "jaoded" is discouraged (26 steps).
 Proof modification of "jath" is discouraged (318 steps).
 Proof modification of "jccil" is discouraged (10 steps).
+Proof modification of "jech9.3OLD" is discouraged (54 steps).
 Proof modification of "joincomALT" is discouraged (83 steps).
 Proof modification of "kardenOLD" is discouraged (354 steps).
 Proof modification of "kardexOLD" is discouraged (88 steps).
