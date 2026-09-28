@@ -17327,6 +17327,7 @@ New usage of "iin1" is discouraged (3 uses).
 New usage of "iin2" is discouraged (0 uses).
 New usage of "iin3" is discouraged (0 uses).
 New usage of "imadifssranOLD" is discouraged (0 uses).
+New usage of "imadifssranOLDOLD" is discouraged (0 uses).
 New usage of "imadmrnOLD" is discouraged (0 uses).
 New usage of "imaelshi" is discouraged (1 uses).
 New usage of "imassrnOLD" is discouraged (0 uses).
@@ -18718,6 +18719,7 @@ New usage of "ralimdvvOLD" is discouraged (2 uses).
 New usage of "ralrnmpt" is discouraged (1 uses).
 New usage of "ralssOLD" is discouraged (0 uses).
 New usage of "ralxfrALT" is discouraged (0 uses).
+New usage of "rankwflembOLD" is discouraged (0 uses).
 New usage of "rb-ax1" is discouraged (5 uses).
 New usage of "rb-ax2" is discouraged (9 uses).
 New usage of "rb-ax3" is discouraged (8 uses).
@@ -20660,7 +20662,8 @@ Proof modification of "iidn3" is discouraged (8 steps).
 Proof modification of "iin1" is discouraged (1 steps).
 Proof modification of "iin2" is discouraged (1 steps).
 Proof modification of "iin3" is discouraged (1 steps).
-Proof modification of "imadifssranOLD" is discouraged (219 steps).
+Proof modification of "imadifssranOLD" is discouraged (181 steps).
+Proof modification of "imadifssranOLDOLD" is discouraged (219 steps).
 Proof modification of "imadmrnOLD" is discouraged (64 steps).
 Proof modification of "imassrnOLD" is discouraged (43 steps).
 Proof modification of "imbi12VD" is discouraged (121 steps).
@@ -21001,6 +21004,7 @@ Proof modification of "ralimd6vOLD" is discouraged (33 steps).
 Proof modification of "ralimdvvOLD" is discouraged (23 steps).
 Proof modification of "ralssOLD" is discouraged (44 steps).
 Proof modification of "ralxfrALT" is discouraged (85 steps).
+Proof modification of "rankwflembOLD" is discouraged (214 steps).
 Proof modification of "rb-ax1" is discouraged (32 steps).
 Proof modification of "rb-ax2" is discouraged (17 steps).
 Proof modification of "rb-ax3" is discouraged (12 steps).
