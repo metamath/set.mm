@@ -407,6 +407,7 @@
 "4syl" is used by "hashscontpowcl".
 "4syl" is used by "hdmap14lem4a".
 "4syl" is used by "heiborlem10".
+"4syl" is used by "hfxp".
 "4syl" is used by "hmeores".
 "4syl" is used by "i1fd".
 "4syl" is used by "iccelpart".
@@ -14429,7 +14430,7 @@ New usage of "4atex2-0bOLDN" is discouraged (0 uses).
 New usage of "4atex2-0cOLDN" is discouraged (0 uses).
 New usage of "4ipval2" is discouraged (2 uses).
 New usage of "4p4e8ALT" is discouraged (0 uses).
-New usage of "4syl" is discouraged (302 uses).
+New usage of "4syl" is discouraged (303 uses).
 New usage of "5oai" is discouraged (0 uses).
 New usage of "5oalem1" is discouraged (1 uses).
 New usage of "5oalem2" is discouraged (2 uses).
@@ -16706,6 +16707,7 @@ New usage of "fldcrngo" is discouraged (2 uses).
 New usage of "flddivrng" is discouraged (2 uses).
 New usage of "flddmn" is discouraged (0 uses).
 New usage of "fldhmsubcALTV" is discouraged (0 uses).
+New usage of "flt4ALT" is discouraged (0 uses).
 New usage of "fnctOLD" is discouraged (0 uses).
 New usage of "fnexALT" is discouraged (0 uses).
 New usage of "fnrndomgOLD" is discouraged (0 uses).
@@ -16923,6 +16925,7 @@ New usage of "helsh" is discouraged (10 uses).
 New usage of "hfelhfOLD" is discouraged (0 uses).
 New usage of "hfmmval" is discouraged (3 uses).
 New usage of "hfmval" is discouraged (2 uses).
+New usage of "hfomALT" is discouraged (0 uses).
 New usage of "hfpwOLD" is discouraged (0 uses).
 New usage of "hfsmval" is discouraged (1 uses).
 New usage of "hfsnOLD" is discouraged (0 uses).
@@ -18697,7 +18700,6 @@ New usage of "qlaxr5i" is discouraged (0 uses).
 New usage of "quantgodelALT" is discouraged (0 uses).
 New usage of "quoremnn0ALT" is discouraged (0 uses).
 New usage of "r19.3rzvOLD" is discouraged (0 uses).
-New usage of "r1omALT" is discouraged (0 uses).
 New usage of "r1omfi" is discouraged (1 uses).
 New usage of "r1pwALT" is discouraged (0 uses).
 New usage of "rab0OLD" is discouraged (0 uses).
@@ -20385,6 +20387,7 @@ Proof modification of "fldcrngo" is discouraged (65 steps).
 Proof modification of "flddivrng" is discouraged (14 steps).
 Proof modification of "flddmn" is discouraged (29 steps).
 Proof modification of "fldlring" is discouraged (55 steps).
+Proof modification of "flt4ALT" is discouraged (216 steps).
 Proof modification of "fnctOLD" is discouraged (200 steps).
 Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "fnrndomgOLD" is discouraged (24 steps).
@@ -20604,6 +20607,7 @@ Proof modification of "hbntal" is discouraged (48 steps).
 Proof modification of "hbra2VD" is discouraged (26 steps).
 Proof modification of "helloworld" is discouraged (29 steps).
 Proof modification of "hfelhfOLD" is discouraged (65 steps).
+Proof modification of "hfomALT" is discouraged (19 steps).
 Proof modification of "hfpwOLD" is discouraged (54 steps).
 Proof modification of "hfsnOLD" is discouraged (44 steps).
 Proof modification of "hfunOLD" is discouraged (162 steps).
@@ -20974,7 +20978,6 @@ Proof modification of "qexALT" is discouraged (64 steps).
 Proof modification of "quantgodelALT" is discouraged (71 steps).
 Proof modification of "quoremnn0ALT" is discouraged (360 steps).
 Proof modification of "r19.3rzvOLD" is discouraged (7 steps).
-Proof modification of "r1omALT" is discouraged (13 steps).
 Proof modification of "r1omfi" is discouraged (25 steps).
 Proof modification of "r1pwALT" is discouraged (151 steps).
 Proof modification of "rab0OLD" is discouraged (33 steps).
