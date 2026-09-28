@@ -168569,6 +168569,18 @@ $)
       UHVUIWBVUGVVJWVMVVLAVVJWVMVSVUBVUFABVXAUXQPWTVNYJUXQDEWCXBWDMUVMAUVRUWDUW
       AUWFFAUVQUWCHQAGUVPDIAVYPUVPDSVYQDBYTXBULUKAUVTUWEHQAGUVSEIAWVDUVSESWVEEB
       YTXBULUKUOWO $.
+
+    gsummptfidmsplitres.f $e |- F = ( k e. A |-> Y ) $.
+    $( Split a group sum expressed as mapping with a finite domain into two
+       parts using restrictions.  (Contributed by AV, 23-Jul-2019.) $)
+    gsummptfidmsplitres $p |- ( ph -> ( G gsum F )
+                                      = ( ( G gsum ( F |` C ) )
+                                          .+ ( G gsum ( F |` D ) ) ) ) $=
+      ( cgsu co cmpt cres gsummptfidmsplit wceq a1i reseq1i cun ssun1 sseqtrrid
+      oveq2i resmptd eqtrid oveq2d ssun2 oveq12d 3eqtr4d ) AIGBJUAZSTZIGDJUAZST
+      ZIGEJUAZSTZFTIHSTZIHDUBZSTZIHEUBZSTZFTABCDEFGIJKLMNOPQUCVCURUDAHUQISRUJUE
+      AVEUTVGVBFAVDUSISAVDUQDUBUSHUQDRUFAGBDJADEUGZDBDEUHQUIUKULUMAVFVAISAVFUQE
+      UBVAHUQERUFAGBEJAVHEBEDUNQUIUKULUMUOUP $.
   $}
 
   ${
