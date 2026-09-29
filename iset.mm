@@ -168613,6 +168613,12 @@ $)
         VRXOWGSYIPWIVRYIYCULZAYAXRAYHYCWJYJXTXOGYIYCWMAYHYCWNWOMWPWQAGHSGXESKGH
         WRWELWSWTAFXASYEXLDTAFJXBLCXJFDXKIXMXKUMXCWPXD $.
     $}
+
+    $d k C $.  $d k ph $.
+    $( Group sum of a singleton, deduction form.  (Contributed by Thierry
+       Arnoux, 30-Jan-2017.)  (Proof shortened by AV, 11-Dec-2019.) $)
+    gsumsndcmn $p |- ( ph -> ( G gsum ( k e. { M } |-> A ) ) = C ) $=
+      ( nfv nfcv gsumsnfdcmn ) ABCDEFGHIJKLMAENEDOP $.
   $}
 
   ${
