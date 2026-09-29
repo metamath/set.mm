@@ -283287,6 +283287,20 @@ $)
   $}
 
   ${
+    psgnid.s $e |- S = ( pmSgn ` D ) $.
+    $( Permutation sign of the identity.  (Contributed by Thierry Arnoux,
+       21-Aug-2020.) $)
+    psgnid $p |- ( D e. Fin -> ( S ` ( _I |` D ) ) = 1 ) $=
+      ( cfn wcel cid cres cfv csymg c1 eqid symgid fveq2d ccnfld cmgp cneg wceq
+      c0g co cc cpr cress cghm psgnghm2 cmnd wss crg cnring ringmgp ax-mp prid1
+      1ex ax-1cn neg1cn prssi mp2an cnfldbas mgpbas cnfld1 ringidval ress0g syl
+      mp3an ghmid eqtrd ) ADEZFAGZBHAIHZRHZBHZJVFVGVIBAVHDVHKZLMVFBVHNOHZJJPZUA
+      ZUBSZUCSEVJJQAVHVOBVKCVOKZUDVHVOBVIJVIKVLUEEZJVNEVNTUFZJVORHQNUGEVQUHNVLV
+      LKZUIUJJVMULUKJTEVMTEVRUMUNJVMTUOUPVNTVLVOJVPTNVLVSUQURNJVLVSUSUTVAVCVDVB
+      VE $.
+  $}
+
+  ${
     psgninv.s $e |- S = ( SymGrp ` D ) $.
     psgninv.n $e |- N = ( pmSgn ` D ) $.
     psgninv.p $e |- P = ( Base ` S ) $.
@@ -525544,20 +525558,6 @@ $(
   Permutation Signs
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
-
-  ${
-    psgnid.s $e |- S = ( pmSgn ` D ) $.
-    $( Permutation sign of the identity.  (Contributed by Thierry Arnoux,
-       21-Aug-2020.) $)
-    psgnid $p |- ( D e. Fin -> ( S ` ( _I |` D ) ) = 1 ) $=
-      ( cfn wcel cid cres cfv csymg c1 eqid symgid fveq2d ccnfld cmgp cneg wceq
-      c0g co cc cpr cress cghm psgnghm2 cmnd wss crg cnring ringmgp ax-mp prid1
-      1ex ax-1cn neg1cn prssi mp2an cnfldbas mgpbas cnfld1 ringidval ress0g syl
-      mp3an ghmid eqtrd ) ADEZFAGZBHAIHZRHZBHZJVFVGVIBAVHDVHKZLMVFBVHNOHZJJPZUA
-      ZUBSZUCSEVJJQAVHVOBVKCVOKZUDVHVOBVIJVIKVLUEEZJVNEVNTUFZJVORHQNUGEVQUHNVLV
-      LKZUIUJJVMULUKJTEVMTEVRUMUNJVMTUOUPVNTVLVOJVPTNVLVSUQURNJVLVSUSUTVAVCVDVB
-      VE $.
-  $}
 
   ${
     $d D p $.  $d G p $.
