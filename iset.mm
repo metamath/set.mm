@@ -168622,6 +168622,34 @@ $)
   $}
 
   ${
+    $d k A $.  $d k B $.  $d k G $.  $d k M $.  $d k ph $.
+    gsumunsnd.b $e |- B = ( Base ` G ) $.
+    gsumunsnd.p $e |- .+ = ( +g ` G ) $.
+    gsumunsnd.g $e |- ( ph -> G e. CMnd ) $.
+    gsumunsnd.a $e |- ( ph -> A e. Fin ) $.
+    gsumunsnd.f $e |- ( ( ph /\ k e. A ) -> X e. B ) $.
+    gsumunsnd.m $e |- ( ph -> M e. V ) $.
+    gsumunsnd.d $e |- ( ph -> -. M e. A ) $.
+    gsumunsnd.y $e |- ( ph -> Y e. B ) $.
+    gsumunsnd.s $e |- ( ( ph /\ k = M ) -> X = Y ) $.
+    ${
+      gsumunsnfd.0 $e |- F/_ k Y $.
+      $( Append an element to a finite group sum, using bound-variable
+         hypotheses instead of distinct variable conditions.  (Contributed by
+         Mario Carneiro, 19-Dec-2014.)  (Revised by AV, 11-Dec-2019.) $)
+      gsumunsnfd $p |- ( ph -> ( G gsum ( k e. ( A u. { M } ) |-> X ) ) =
+        ( ( G gsum ( k e. A |-> X ) ) .+ Y ) ) $=
+        ( csn cun cmpt cgsu co cfn wcel wn unsnfi syl3anc cv wo elun wceq elsni
+        sylan2 adantr eqeltrd jaodan sylan2b cin disjsn sylibr gsummptfidmsplit
+        wa c0 eqidd nfv gsumsnfdcmn oveq2d eqtrd ) AFEBGUAZUBZIUCUDUEFEBIUCUDUE
+        ZFEVLIUCUDUEZDUEVNJDUEAVMCBVLDEFIKLMABUFUGGHUGGBUGUHZVMUFUGNPQBGHUIUJEU
+        KZVMUGAVQBUGZVQVLUGZULICUGZVQBVLUMAVRVTVSOAVSVEIJCVSAVQGUNIJUNVQGUOSUPA
+        JCUGVSRUQURUSUTAVPBVLVAVFUNQBGVBVCAVMVGVDAVOJVNDAICJEFGHKMPRSAEVHTVIVJV
+        K $.
+    $}
+  $}
+
+  ${
     $d A f $.  $d F f $.  $d G f $.  $d H f $.  $d K f $.  $d f ph $.
     gsummhm.b $e |- B = ( Base ` G ) $.
     gsummhm.z $e |- .0. = ( 0g ` G ) $.
