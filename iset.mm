@@ -168647,6 +168647,14 @@ $)
         JCUGVSRUQURUSUTAVPBVLVAVFUNQBGVBVCAVMVGVDAVOJVNDAICJEFGHKMPRSAEVHTVIVJV
         K $.
     $}
+
+    $d k Y $.
+    $( Append an element to a finite group sum.  (Contributed by Mario
+       Carneiro, 19-Dec-2014.)  (Revised by AV, 2-Jan-2019.)  (Proof shortened
+       by AV, 11-Dec-2019.) $)
+    gsumunsnd $p |- ( ph -> ( G gsum ( k e. ( A u. { M } ) |-> X ) ) =
+      ( ( G gsum ( k e. A |-> X ) ) .+ Y ) ) $=
+      ( nfcv gsumunsnfd ) ABCDEFGHIJKLMNOPQRSEJTUA $.
   $}
 
   ${
