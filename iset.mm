@@ -168584,6 +168584,38 @@ $)
   $}
 
   ${
+    $d k M $.
+    gsumsnd.b $e |- B = ( Base ` G ) $.
+    gsumsndcmn.g $e |- ( ph -> G e. CMnd ) $.
+    gsumsnd.m $e |- ( ph -> M e. V ) $.
+    gsumsnd.c $e |- ( ph -> C e. B ) $.
+    gsumsnd.s $e |- ( ( ph /\ k = M ) -> A = C ) $.
+    ${
+      $d A q $.  $d B q $.  $d C q $.  $d M k q $.  $d ph q $.
+      gsumsnfd.p $e |- F/ k ph $.
+      gsumsnfd.c $e |- F/_ k C $.
+      $( Group sum of a singleton, deduction form, using bound-variable
+         hypotheses instead of distinct variable conditions.  (Contributed by
+         Mario Carneiro, 19-Dec-2014.)  (Revised by Thierry Arnoux,
+         28-Mar-2018.)  (Revised by AV, 11-Dec-2019.) $)
+      gsumsnfdcmn $p |- ( ph -> ( G gsum ( k e. { M } |-> A ) ) = C ) $=
+        ( vq co c0 wcel wceq csn cmpt cgsu cres cfv cplusg c0g wf cun cv csb wa
+        eqid wral elsni ex syl5 ralrimi nfcsb1v nfeq csbeq1a eqeq1d rspc adantr
+        mpan9 eqeltrd nfcv cbvmpt fmptd uncom un0 eqtri feq2i sylibr cfn 0fi wn
+        a1i noel gsump1 res0 oveq2i ccmn gsum0cmn syl eqtrid cvv nfv vex simpll
+        nfan wnfc simpr simplr eqtrd syl2anc csbiedf snidg fvmptd2 oveq12d cmnd
+        cmnmndd mndlid 3eqtrd ) AFEGUAZBUBZUCQFXFRUDZUCQZGXFUEZFUFUEZQFUGUEZDXJ
+        QZDACXJXFFHRGIXJUMZJAXECXFUHRXEUIZCXFUHAPXEEPUJZBUKZCXFAXOXESZULXPDCABD
+        TZEXEUNXQXPDTZAXREXENEUJZXESXTGTZAXRXTGUOAYAXRMUPUQURXRXSEXOXEEXPDEXOBU
+        SZOUTXTXOTZBXPDEXOBVAZVBVCVEADCSZXQLVDVFEPXEBXPPBVGYBYDVHZVIXNXECXFXNXE
+        RUIXERXEVJXEVKVLVMVNRVOSAVPVRKGRSVQAGVSVRVTAXHXKXIDXJAXHFRUCQZXKXGRFUCX
+        FWAWBAFWCSYGXKTJFWDWEWFAPGXPDXEXFCYFAXOGTZULZEXOBDWGAYHENYHEWHWKEDWLYIO
+        VRXOWGSYIPWIVRYIYCULZAYAXRAYHYCWJYJXTXOGYIYCWMAYHYCWNWOMWPWQAGHSGXESKGH
+        WRWELWSWTAFXASYEXLDTAFJXBLCXJFDXKIXMXKUMXCWPXD $.
+    $}
+  $}
+
+  ${
     $d A f $.  $d F f $.  $d G f $.  $d H f $.  $d K f $.  $d f ph $.
     gsummhm.b $e |- B = ( Base ` G ) $.
     gsummhm.z $e |- .0. = ( 0g ` G ) $.
