@@ -209454,7 +209454,7 @@ htmldef ")" as "<IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=' )' TITLE=')'>";
 htmldef "->" as
     " <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT=' -&gt;' TITLE='-&gt;'> ";
   althtmldef "->" as " &rarr; ";
-  latexdef "->" as " \rightarrow ";
+  latexdef "->" as "\rightarrow";
 htmldef "-." as
     "<IMG SRC='lnot.gif' WIDTH=10 HEIGHT=19 ALT=' -.' TITLE='-.'> ";
   althtmldef "-." as '&not; ';
@@ -209471,14 +209471,12 @@ htmldef "|-" as
     /* Without sans-serif, way too big in FF3 */
     /* 2-Jan-2016 reverted sans-serif */
   latexdef "|-" as "\vdash";
-htmldef "&" as
-    " <IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'> ";
+htmldef "&" as " <IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'> ";
   althtmldef "&" as " &amp; ";
   latexdef "&" as "\mathrel{\&}";
-htmldef "=>" as
-  " <IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19 ALT='=&gt;'> ";
+htmldef "=>" as " <IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19 ALT='=&gt;'> ";
   althtmldef "=>" as " &rArr; ";
-  latexdef "=>" as " \Rightarrow ";
+  latexdef "=>" as "\Rightarrow";
 htmldef "ph" as
     "<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>";
   /* althtmldef "ph" as '<FONT COLOR="#0000FF">&#x1D711;</SPAN>'; */
@@ -209737,7 +209735,7 @@ htmldef ".#" as
   althtmldef ".#" as
     ' <span class=symvar style="border-bottom:1px dotted;color:#c3c">' +
     '#</span> ';
-  latexdef ".#" as "\neq\mathrel{\mkern -10mu}\neq";
+  latexdef ".#" as "\mathrel{\neq\mkern-10mu\neq}";
 htmldef ".~" as
     " <IMG SRC='_.sim.gif' WIDTH=13 HEIGHT=19 ALT=' .~' TITLE='.~'> ";
   althtmldef ".~" as
@@ -209755,7 +209753,7 @@ htmldef ".+^" as
   althtmldef ".+^" as
     ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
     '&#x2A23;</SPAN> ';       /* &plusacir; */
-  latexdef ".+^" as "\mathbin{\hat{+}}";
+  latexdef ".+^" as "\hat{+}";
 htmldef ".+b" as
     " <IMG SRC='_.plusb.gif' WIDTH=14 HEIGHT=19 ALT=' .+b' TITLE='.+b'> ";
   althtmldef ".+b" as
@@ -210546,17 +210544,15 @@ htmldef "-" as
   althtmldef "-" as ' &minus; ';
   latexdef "-" as "-";
 htmldef "-u" as
-    "<IMG SRC='shortminus.gif' WIDTH=8 HEIGHT=19 ALT=' -u' TITLE='-u'>";
-    /* use standard minus sign */
-  althtmldef "-u" as '-';
-  latexdef "-u" as "\textrm{-}"; /* short minus */
-    /*latexdef "-u" as "-_u";*/
+    " <IMG SRC='shortminus.gif' WIDTH=8 HEIGHT=19 ALT=' -u' TITLE='-u'>";
+  althtmldef "-u" as ' -';
+  latexdef "-u" as "\mathord{-}";
 htmldef "=//=" as ' # ';
   althtmldef "=//=" as ' # ';
-  latexdef "=//=" as "\neq\mathrel{\mkern -10mu}\neq";
+  latexdef "=//=" as "\mathrel{\neq\mkern-10mu\neq}";
 htmldef "#RR" as ' #<SUB>&#8477;</SUB> ';
   althtmldef "#RR" as ' #<SUB>&#8477;</SUB> ';
-  latexdef "#RR" as "\neq\mathrel{\mkern -10mu}\neq_\mathbb{R}";
+  latexdef "#RR" as "\mathrel{\neq\mkern-10mu\neq_\mathbb{R}}";
 htmldef "_Ind" as "&#x1D7ED;";
   althtmldef "_Ind" as "&#x1D7ED;";
   latexdef "_Ind" as "\pmb{1}";
@@ -210665,7 +210661,7 @@ htmldef "|^" as "&#8968;";
 htmldef "mod" as " <IMG SRC='_mod.gif' WIDTH=29 HEIGHT=19 ALT=' mod' " +
     "TITLE='mod'> ";
   althtmldef "mod" as ' mod ';
-  latexdef "mod" as "\mathbin{\operatorname{mod}}";
+  latexdef "mod" as "\mathbin{\mathrm{mod}}";
 htmldef "==" as " <IMG SRC='equiv.gif' WIDTH=12 HEIGHT=19 ALT=' ==' " +
     "TITLE='=='> ";
   althtmldef "==" as "&equiv;"; /* 2263 */
@@ -210690,7 +210686,7 @@ htmldef "#" as "&#x266f";
 htmldef "shift" as " <IMG SRC='_shift.gif' WIDTH=30 HEIGHT=19 ALT=' shift' " +
     "TITLE='shift'> ";
   althtmldef "shift" as ' shift ';
-  latexdef "shift" as "\mathbin{\operatorname{shift}}";
+  latexdef "shift" as "\mathbin{\mathrm{shift}}";
 htmldef "Re" as "<IMG SRC='re.gif' WIDTH=12 HEIGHT=19 ALT=' Re' TITLE='Re'>";
   althtmldef "Re" as '&real;';
     /* 2-Jan-2016 reverted sans-serif */
@@ -210764,10 +210760,10 @@ htmldef "bits" as "bits";
 htmldef "gcd" as
     " <IMG SRC='_gcd.gif' WIDTH=23 HEIGHT=19 ALT=' gcd' TITLE='gcd'> ";
   althtmldef "gcd" as " gcd ";
-  latexdef "gcd" as "\mathbin{\operatorname{gcd}}";
+  latexdef "gcd" as "\mathbin{\mathrm{gcd}}";
 htmldef "lcm" as " lcm ";
   althtmldef "lcm" as " lcm ";
-  latexdef "lcm" as "\mathbin{\operatorname{lcm}}";
+  latexdef "lcm" as "\mathbin{\mathrm{lcm}}";
 htmldef "Prime" as
     "<IMG SRC='bbp.gif' WIDTH=11 HEIGHT=19 ALT=' Prime' TITLE='Prime'>";
   althtmldef "Prime" as "&#8473;";
@@ -210786,7 +210782,7 @@ htmldef "phi" as
 htmldef "pCnt" as
     " <IMG SRC='_pcnt.gif' WIDTH=32 HEIGHT=19 ALT=' pCnt' TITLE='pCnt'> ";
   althtmldef "pCnt" as " pCnt ";
-  latexdef "pCnt" as "\mathbin{\operatorname{pCnt}}";
+  latexdef "pCnt" as "\mathbin{\mathrm{pCnt}}";
 htmldef "Z[i]" as
     "<IMG SRC='bbz.gif' WIDTH=11 HEIGHT=19 ALT=' ZZ' TITLE='ZZ'>" +
     "<IMG SRC='lbrack.gif' WIDTH=5 HEIGHT=19 ALT='[' TITLE='['>" +
@@ -210953,7 +210949,7 @@ htmldef "lastS" as 'lastS';
   latexdef "lastS" as "\mathrm{lastS}";
 htmldef "++" as " ++ ";
   althtmldef "++" as " ++ ";
-  latexdef "++" as "\mathbin{\operatorname{++}}";
+  latexdef "++" as "\mathbin{++}";
 htmldef '<"' as
     "<IMG SRC='langle.gif' WIDTH=4 HEIGHT=19 ALT=' &lt;' TITLE='&lt;'>" +
     "<IMG SRC='backquote.gif' WIDTH=7 HEIGHT=19 ALT='" + '"' +
@@ -210971,7 +210967,7 @@ htmldef "substr" as " substr ";
   latexdef "substr" as "\mathrm{substr}";
 htmldef "prefix" as ' prefix ';
  althtmldef "prefix" as ' prefix ';
- latexdef "prefix" as "\mathbin{\operatorname{prefix}}";
+ latexdef "prefix" as "\mathbin{\mathrm{prefix}}";
 htmldef "~QG" as " ~<sub><i>QG</i></sub> ";
   althtmldef "~QG" as " ~<sub><i>QG</i></sub> ";
   latexdef "~QG" as " \sim_{QG} ";
@@ -211021,7 +211017,7 @@ htmldef "oppR" as "opp<sub><i>r</i></sub>";
 htmldef "||r" as "<IMG SRC='parallel.gif' WIDTH=5 HEIGHT=19 ALT=' ||' " +
     "TITLE='||'><sub><i>r</i></sub>";
   althtmldef "||r" as "&#8741;<sub>r</sub>";
-  latexdef "||r" as "\mathrel{\parallel_\mathrm{r}}";
+  latexdef "||r" as "\operatorname{\parallel_\mathrm{r}}";
 htmldef "Unit" as "Unit";
   althtmldef "Unit" as "Unit";
   latexdef "Unit" as "\mathrm{Unit}";
@@ -211053,9 +211049,9 @@ htmldef "SubRing" as "SubRing";
 htmldef "RingSpan" as "RingSpan";
   althtmldef "RingSpan" as "RingSpan";
   latexdef "RingSpan" as "\mathrm{RingSpan}";
-htmldef "#r" as "#<sub>r</sub>";
-  althtmldef "#r" as "#<sub>r</sub>";
-  latexdef "#r" as "\mathrel{\neq\mathrel{\mkern -10mu}\neq_\mathrm{r}}";
+htmldef "#r" as " #<sub>r</sub> ";
+  althtmldef "#r" as " #<sub>r</sub> ";
+  latexdef "#r" as "\mathrel{\neq\mkern-10mu\neq_\mathrm{r}}";
 htmldef "DivRing" as
   "<IMG SRC='_divring.gif' WIDTH=52 HEIGHT=19 ALT=' DivRing' TITLE='DivRing'>";
   althtmldef "DivRing" as "DivRing";
@@ -218050,6 +218046,5 @@ $)
       AE! x ( ph -> -. ps ) ) $=
     ( walseu wn wa wals als-no-surprise alseuals anim12i mto ) ABCDZABEZCDZFABC
     GZAMCGZFABCHLONPABCIAMCIJK $.
-
 
 $( (End of David A. Wheeler's mathbox.) $)
