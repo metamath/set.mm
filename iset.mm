@@ -97468,6 +97468,23 @@ $(
 $)
 
   ${
+    $d A x u v $.  $d F x u v $.  $d G x u v $.  $d V x u v $.
+    $( Function analogue of ~ subeq0 .  (Contributed by Mario Carneiro,
+       24-Jul-2014.) $)
+    ofsubeq0 $p |- ( ( A e. V /\ F : A --> CC /\ G : A --> CC ) ->
+                     ( ( F oF - G ) = ( A X. { 0 } ) <-> F = G ) ) $=
+      ( vx vu vv wcel cc wf cv cmin co cfv cc0 wceq wral wa ffnd wfn ffvelcdmda
+      w3a cof csn cxp simp2 simp3 simp1 inidm eqidd subcld ofvalg c0ex fvconst2
+      adantl eqeq12d subeq0ad bitrd ralbidva subcl off fconst ffn ax-mp sylancl
+      wb eqfnfv syl2anc 3bitr4d ) ADHZAIBJZAICJZUBZEKZBCLUCMZNZVNAOUDZUEZNZPZEA
+      QZVNBNZVNCNZPZEAQZVOVRPZBCPZVMVTWDEAVMVNAHZRZVTWBWCLMZOPWDWIVPWJVSOVMAAWB
+      WCLAIBCDDVNVMAIBVJVKVLUFZSZVMAICVJVKVLUGZSZVJVKVLUHZWOAUIZWIWBUJWIWCUJWIW
+      BWCVMAIVNBWKUAZVMAIVNCWMUAZUKULWHVSOPVMAOVNUMUNUOUPWIWBWCWQWRUQURUSVMVOAT
+      VRATZWFWAVFVMAIVOVMFGAAALIIIBCDDFKZIHGKZIHRWTXALMIHVMWTXAUTUOWKWMWOWOWPVA
+      SAVQVRJWSAOUMVBAVQVRVCVDEAVOVRVGVEVMBATCATWGWEVFWLWNEABCVGVHVI $.
+  $}
+
+  ${
     $d A x y $.  $d F x y $.  $d G x y $.  $d V x y $.
     $( Function analogue of ~ negsub .  (Contributed by Mario Carneiro,
        24-Jul-2014.) $)
