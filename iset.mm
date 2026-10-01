@@ -172167,6 +172167,26 @@ $)
   $}
 
   ${
+    $d k x A $.  $d k x B $.  $d k x ph $.  $d k x .x. $.  $d x R $.  $d x X $.
+    $d k x Y $.  $d x .0. $.
+    gsummulc1.b $e |- B = ( Base ` R ) $.
+    gsummulc1.z $e |- .0. = ( 0g ` R ) $.
+    gsummulc1.t $e |- .x. = ( .r ` R ) $.
+    gsummulc1.r $e |- ( ph -> R e. Ring ) $.
+    gsummulc1fi.a $e |- ( ph -> A e. Fin ) $.
+    gsummulc1.y $e |- ( ph -> Y e. B ) $.
+    gsummulc1.x $e |- ( ( ph /\ k e. A ) -> X e. B ) $.
+    $( A finite ring sum multiplied by a constant.  (Contributed by Mario
+       Carneiro, 19-Dec-2014.)  (Revised by AV, 10-Jul-2019.)  Remove unused
+       hypothesis.  (Revised by SN, 7-Mar-2025.) $)
+    gsummulc1fi $p |- ( ph -> ( R gsum ( k e. A |-> ( X .x. Y ) ) ) =
+      ( ( R gsum ( k e. A |-> X ) ) .x. Y ) ) $=
+      ( vx co cmpt wcel cgsu ringcmnd cghm cmhm crg ringrghm syl2anc ghmmhm syl
+      cv oveq1 gsummhm2fi ) AQBCQUJZHERZGHERFDFBGSUARZHERDDGIJKADMUBZUPNAQCUNSZ
+      DDUCRTZUQDDUDRTADUETHCTURMOQCDEHJLUFUGDDUQUHUIPUMGHEUKUMUOHEUKUL $.
+  $}
+
+  ${
     $d B x y z $.  $d G x y z $.
     ringressid.b $e |- B = ( Base ` G ) $.
     $( A ring restricted to its base set is a ring.  It will usually be the
