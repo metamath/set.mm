@@ -172184,6 +172184,15 @@ $)
       ( vx co cmpt wcel cgsu ringcmnd cghm cmhm crg ringrghm syl2anc ghmmhm syl
       cv oveq1 gsummhm2fi ) AQBCQUJZHERZGHERFDFBGSUARZHERDDGIJKADMUBZUPNAQCUNSZ
       DDUCRTZUQDDUDRTADUETHCTURMOQCDEHJLUFUGDDUQUHUIPUMGHEUKUMUOHEUKUL $.
+
+    $( A finite ring sum multiplied by a constant.  (Contributed by Mario
+       Carneiro, 19-Dec-2014.)  (Revised by AV, 10-Jul-2019.)  Remove unused
+       hypothesis.  (Revised by SN, 7-Mar-2025.) $)
+    gsummulc2fi $p |- ( ph -> ( R gsum ( k e. A |-> ( Y .x. X ) ) ) =
+      ( Y .x. ( R gsum ( k e. A |-> X ) ) ) ) $=
+      ( vx co cmpt wcel cgsu ringcmnd cghm cmhm crg ringlghm syl2anc ghmmhm syl
+      cv oveq2 gsummhm2fi ) AQBCHQUJZERZHGERFHDFBGSUARZERDDGIJKADMUBZUPNAQCUNSZ
+      DDUCRTZUQDDUDRTADUETHCTURMOQCDEHJLUFUGDDUQUHUIPUMGHEUKUMUOHEUKUL $.
   $}
 
   ${
