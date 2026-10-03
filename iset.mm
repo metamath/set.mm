@@ -168867,6 +168867,22 @@ $)
       NQUPVAUOSVATVAUPUOSVATUIAEIUJUNUOEVAUPUQURUTUKULUM $.
   $}
 
+  ${
+    $d A j q $.  $d C q $.  $d K j q $.  $d U q $.  $d j ph $.
+    idjusnfi.a $e |- ( ph -> A e. V ) $.
+    idjusnfi.r $e |- ( ( ph /\ j e. A ) -> C e. Fin ) $.
+    idjusnfi.u $e |- U = U_ j e. A ( { j } X. C ) $.
+    $( The image of a singleton through an indexed disjoint union, where it is
+       of finite sets.  (Contributed by Jim Kingdon, 2-Oct-2026.) $)
+    idjusnfi $p |- ( ( ph /\ K e. A ) -> ( U " { K } ) e. Fin ) $=
+      ( vq wcel wa csn cima cfn csb cv eleq1d wb wral ralrimiva nfcsb1v csbeq1a
+      nfel1 wceq rspc mpan9 cop cvv elimasng elvd ciun eleq2i opeliunxp2f bitri
+      cxp bitrdi bianabs eqrdv adantl mpbird ) AFBLZMDFNOZPLZEFCQZPLZACPLZEBUAV
+      CVGAVHEBIUBVHVGEFBEVFPEFCUCZUEERZFUFCVFPEFCUDZSUGUHVCVEVGTAVCVDVFPVCKVDVF
+      VCKRZVDLZVLVFLZVCVMFVLUIZDLZVCVNMZVCVMVPTKDFVLBUJUKULVPVOEBVJNCUQUMZLVQDV
+      RVOJUNEBCFVLVFVIVKUOUPURUSUTSVAVB $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
