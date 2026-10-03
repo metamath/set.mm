@@ -94,6 +94,8 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+30-Sep-26 cnvssb      [same]      Moved from RP's mathbox to main set.mm
+29-Sep-26 fununiq     [same]      Moved from SF's mathbox to main set.mm
 24-Sep-26 r1omfv      dfhf2       Moved from BTT's mathbox to main set.mm
 24-Sep-26 r1om        hfom
 24-Sep-26 r1omALT     hfomALT
