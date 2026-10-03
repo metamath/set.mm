@@ -219330,6 +219330,44 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Disjoint unions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d A x y z $.  $d B x y z $.  $d F y z $.
+    idjudju.f $e |- F = if ( x = (/) , A , B ) $.
+    $( An indexed disjoint union over two sets equals the disjoint union of
+       those two sets.  This connects our notation for an indexed disjoint
+       union, ` U_ x e. C ( { x } X. F ) ` which uses ~ df-iun , with our
+       notation for the disjoint union of two sets ( ~ df-dju ).  (Contributed
+       by Jim Kingdon, 2-Oct-2026.) $)
+    idjudju $p |- U_ x e. 2o ( { x } X. F ) = ( A |_| B ) $=
+      ( vz c2o cv csn cxp wcel wceq wa bitri c0 c1o wo eqeltrdi eqeltrd syl cop
+      ciun cdju wex eliunxp simpl anass ancom anbi2i cpr elpri df2o3 eleq2s cun
+      vy ssun1 simpr 0ex snid wn notnotd intnanrd cif eleq2i elif bilani adantr
+      ecased simprd opelxpd sselid df-dju eleqtrrdi ssun2 1oex 1n0 neii ex mtoi
+      eqtr2 adantl orcomd jaodan sylan2 sylbir exlimivv sylbi elun c1st 1st2nd2
+      cfv c2nd xp1st elsni 0lt2o xp2nd iftrued eleqtrrd eqeq1 eqtrid opeliunxp2
+      ifbid sylanbrc 1lt2o iffalsed jaoi impbii eqriv ) UOAGAHZIDJUBZBCUCZUOHZX
+      JKZXLXKKZXMXLXIFHZUAZLZXIGKZXODKZMZMZFUDAUDXNAFGDXLUEYAXNAFYAXLXPXKXQXTUF
+      YAXQXSMZXRMZXPXKKZYCXQXSXRMZMYAXQXSXRUGYEXTXQXSXRUHUINXRYBXIOLZXIPLZQZYDY
+      HXIOPUJGXIOPUKULUMYBYFYDYGYBYFMZXPOIZBJZPIZCJZUNZXKYIYKYNXPYKYMUPYIXIXOYJ
+      BYIXIOYJYBYFUQZOURUSRYIYFXOBKZYIYFYPMZYFUTZXOCKZMZYIYRYSYIYFYOVAVBYBYQYTQ
+      ZYFXSUUAXQXSXOYFBCVCZKUUADUUBXOEVDYFXOBCVENVFZVGVHVIVJVKBCVLZVMYBYGMZXPYN
+      XKUUEYMYNXPYMYKVNUUEXIXOYLCUUEXIPYLYBYGUQPVOUSRUUEYRYSUUEYTYQUUEYFYPYGYRY
+      BYGYFPOLZPOVPVQZYGYFUUFXIPOVTVRVSWAVBYBYTYQQYGYBYQYTUUCWBVGVHVIVJVKUUDVMW
+      CWDWESWFWGXNXLYKKZXLYMKZQZXMXNXLYNKUUJXKYNXLUUDVDXLYKYMWHNUUHXMUUIUUHXLXL
+      WIWKZXLWLWKZUAZXJXLYJBWJUUHUUKGKZUULUUKOLZBCVCZKZUUMXJKZUUHUUKOGUUHUUKYJK
+      UUOXLYJBWMUUKOWNTZWORUUHUULBUUPXLYJBWPUUHUUOBCUUSWQWRAGDUUKUULUUPXIUUKLZD
+      UUBUUPEUUTYFUUOBCXIUUKOWSXBWTXAZXCSUUIXLUUMXJXLYLCWJUUIUUNUUQUURUUIUUKPGU
+      UIUUKYLKUUKPLZXLYLCWMUUKPWNTZXDRUUIUULCUUPXLYLCWPUUIUUOBCUUIUVBUUOUTUVCUV
+      BUUOUUFUUGUVBUUOUUFUUKPOVTVRVSTXEWRUVAXCSXFWGXGXH $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Omniscience of NN+oo
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
