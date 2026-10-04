@@ -63017,17 +63017,17 @@ htmldef "rh" as "<IMG SRC='_rho.gif' WIDTH=9 HEIGHT=19 TITLE='rh' ALIGN=TOP>";
   latexdef "rh" as "\rho";
 htmldef "mu" as "<IMG SRC='_mu.gif' WIDTH=10 HEIGHT=19 TITLE='mu' ALIGN=TOP>";
   althtmldef "mu" as '<FONT COLOR="#0000FF"><I>&mu;</I></FONT>';
-  latexdef "mu" as "\rho";
+  latexdef "mu" as "\mu";
 htmldef "la" as
     "<IMG SRC='_lambda.gif' WIDTH=9 HEIGHT=19 TITLE='la' ALIGN=TOP>";
   althtmldef "la" as '<FONT COLOR="#0000FF"><I>&lambda;</I></FONT>';
-  latexdef "la" as "\rho";
+  latexdef "la" as "\lambda";
 htmldef "ka" as
     "<IMG SRC='_kappa.gif' WIDTH=9 HEIGHT=19 TITLE='ka' ALIGN=TOP>";
   althtmldef "ka" as '<FONT COLOR="#0000FF"><I>&kappa;</I></FONT>';
-  latexdef "ka" as "\rho";
+  latexdef "ka" as "\kappa";
 htmldef "~P" as "<IMG SRC='scrp.gif' WIDTH=16 HEIGHT=19 TITLE='~P' ALIGN=TOP>";
-  althtmldef "~P" as '<FONT FACE=sans-serif>&weierp;</FONT>';
+  althtmldef "~P" as '&#119979; ';
   latexdef "~P" as "\mathcal{P}";
 htmldef "<->" as " <IMG SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19 " +
     "TITLE='&lt;-&gt;' ALIGN=TOP> ";
@@ -63242,7 +63242,7 @@ htmldef ".+b" as
     " <IMG SRC='_.plusb.gif' WIDTH=14 HEIGHT=19 ALT=' .+b' TITLE='.+b'> ";
   althtmldef ".+b" as
     ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
-    '&#x271A;</SPAN> ';
+    '<b>+</b></SPAN> ';
   latexdef ".+b" as "\pmb{+}";
 htmldef ".(+)" as
     " <IMG SRC='_.oplus.gif' WIDTH=13 HEIGHT=19 ALT=' .(+)' TITLE='.(+)'> ";
@@ -63284,8 +63284,8 @@ htmldef ".0b" as
     " <IMG SRC='_.bf0.gif' WIDTH=9 HEIGHT=19 ALT=' .0b' TITLE='.0b'> ";
   althtmldef ".0b" as
     ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
-    '&#x1D7CE</SPAN> ';
-  latexdef ".0b" as "\pmb{0}";
+    '&#x1D7CE;</SPAN> ';
+  latexdef ".0b" as "\mathbf{0}";
 htmldef "A" as "<IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 TITLE='A' ALIGN=TOP>";
   althtmldef "A" as '<I><FONT COLOR="#CC33CC">A</FONT></I>';
   latexdef "A" as "A";
@@ -63635,16 +63635,16 @@ htmldef "(+)" as
     " <IMG SRC='oplus.gif' WIDTH=13 HEIGHT=19 TITLE='(+)' ALIGN=TOP> ";
   althtmldef "(+)" as " &#x2295; ";
   latexdef "(+)" as "\oplus";
-htmldef "0c" as '0<SUB><I>c</I></SUB>';
-  althtmldef "0c" as '0<SUB><I>c</I></SUB>';
-  latexdef "0c" as "0_c";
-htmldef "1c" as '1<SUB><I>c</I></SUB>';
-  althtmldef "1c" as '1<SUB><I>c</I></SUB>';
-  latexdef "1c" as "1_c";
+htmldef "0c" as '0<SUB>c</SUB>';
+  althtmldef "0c" as '0<SUB>c</SUB>';
+  latexdef "0c" as "0_\mathrm{c}";
+htmldef "1c" as '1<SUB>c</SUB>';
+  althtmldef "1c" as '1<SUB>c</SUB>';
+  latexdef "1c" as "1_\mathrm{c}";
 htmldef "+c" as
     " <IMG SRC='_plc.gif' WIDTH=18 HEIGHT=19 TITLE='+o' ALIGN=TOP> ";
-  althtmldef "+c" as ' +<SUB><I>c</I></SUB> ';
-  latexdef "+c" as "+_c";
+  althtmldef "+c" as ' +<SUB>c</SUB> ';
+  latexdef "+c" as "+_\mathrm{c}";
 htmldef "l" as "<IMG SRC='_l.gif' WIDTH=6 HEIGHT=19 TITLE='l' ALIGN=TOP>";
   althtmldef "l" as '<I><FONT COLOR="#FF0000">l</FONT></I>';
   latexdef "l" as "l";
@@ -63655,11 +63655,11 @@ htmldef "Fix" as
 htmldef "<<" as
     "<IMG SRC='llangle.gif' WIDTH=6 HEIGHT=19 TITLE='&lt;&lt;' ALIGN=TOP>";
   althtmldef "<<" as "&#10218;";
-  latexdef "<<" as "\langle\langle";
+  latexdef "<<" as "\langle\!\langle";
 htmldef ">>" as
     "<IMG SRC='rrangle.gif' WIDTH=6 HEIGHT=19 TITLE='&gt;&gt;' ALIGN=TOP>";
   althtmldef ">>" as "&#10219;";
-  latexdef ">>" as "\rangle\rangle";
+  latexdef ">>" as "\rangle\!\rangle";
 htmldef "(x)" as
     " <IMG SRC='otimes.gif' WIDTH=13 HEIGHT=19 TITLE='(x)' ALIGN=TOP> ";
   althtmldef "(x)" as " &#x2297; ";
@@ -63667,36 +63667,36 @@ htmldef "(x)" as
 htmldef "Image" as "Image";
   althtmldef "Image" as "Image";
   latexdef "Image" as "\mathrm{Image}";
-htmldef "Image_k" as "Image<SUB><I>k</I></SUB>";
-  althtmldef "Image_k" as "Image<SUB><I>k</I></SUB>";
-  latexdef "Image_k" as "\mathrm{Image}_k";
+htmldef "Image_k" as "Image<SUB>k</SUB>";
+  althtmldef "Image_k" as "Image<SUB>k</SUB>";
+  latexdef "Image_k" as "\mathrm{Image}_\mathrm{k}";
 htmldef "~P1" as
   "<IMG SRC='scrp.gif' WIDTH=16 HEIGHT=19 TITLE='~P' ALIGN=TOP><SUB>1</SUB> ";
-  althtmldef "~P1" as '<FONT FACE=sans-serif>&weierp;</FONT><SUB>1</SUB>';
+  althtmldef "~P1" as '&#119979;<SUB>1</SUB>';
   latexdef "~P1" as "\mathcal{P}_1";
 htmldef "X._k" as
     " <IMG SRC='times.gif' WIDTH=9 HEIGHT=19 TITLE='X.'" +
        "ALIGN=TOP><SUB><I>k</I></SUB> ";
-  althtmldef "X._k" as ' &times;<SUB><I>k</I></SUB> ';
-  latexdef "X._k" as "\times_k";
+  althtmldef "X._k" as ' &times;<SUB>k</SUB> ';
+  latexdef "X._k" as "\times_\mathrm{k}";
 htmldef "`'_k" as "<IMG SRC='_cnv.gif' WIDTH=10 HEIGHT=19 TITLE=" + '"' +
-    "`'" + '"' + " ALIGN=TOP><SUB><I>k</I></SUB>";
+    "`'" + '"' + " ALIGN=TOP><SUB>k</SUB>";
     /*htmldef "`'" as
       "<IMG SRC='smallsmile.gif' WIDTH=12 HEIGHT=19 TITLE=" +
       '"' + "`'" + '"' + " ALIGN=TOP>";*/
   althtmldef "`'_k" as
-   '<FONT SIZE="-1"><SUP>&#9697;</SUP></FONT><SUB><I>k</I></SUB>';
-  latexdef "`'_k" as "{}^{\smallsmile}_k";
+   '<FONT SIZE="-1"><SUP>&#9697;</SUP></FONT><SUB>k</SUB>';
+  latexdef "`'_k" as "{}^{\smallsmile}_\mathrm{k}";
 htmldef '"_k' as "<IMG SRC='backquote.gif' WIDTH=7 HEIGHT=19 TITLE='" + '"' +
-    "' ALIGN=TOP><SUB><I>k</I></SUB>";
-  althtmldef '"_k' as ' &#8220;<SUB><I>k</I></SUB> ';
-  latexdef '"_k' as "``_k";
+    "' ALIGN=TOP><SUB>k</SUB>";
+  althtmldef '"_k' as ' &#8220;<SUB>k</SUB> ';
+  latexdef '"_k' as "``_\mathrm{k}";
 htmldef "o._k" as
     " <IMG SRC='circ.gif' WIDTH=8 HEIGHT=19 TITLE='o.' ALIGN=TOP>" +
-      "<SUB><I>k</I></SUB> ";
+      "<SUB>k</SUB> ";
   althtmldef "o._k" as
-  ' <FONT FACE=sans-serif>&#8728;</FONT><SUB><I>k</I></SUB> ';
-  latexdef "o._k" as "\circ_k";
+  ' <FONT FACE=sans-serif>&#8728;</FONT><SUB>k</SUB> ';
+  latexdef "o._k" as "\circ_\mathrm{k}";
 htmldef "SI" as "<FONT FACE=sans-serif> SI </FONT>";
   althtmldef "SI" as '<FONT FACE=sans-serif> SI </FONT>';
   latexdef "SI" as "\mathrm{SI}";
@@ -63720,27 +63720,27 @@ htmldef "U.1" as '&xcup;<SUB>1</SUB>';
   latexdef "U.1" as "\bigcup_1";
 htmldef "_I_k" as
     " <IMG SRC='rmci.gif' WIDTH=4 HEIGHT=19 TITLE='_I_k' ALIGN=TOP>" +
-    "<SUB><I>k</I></SUB> ";
-  althtmldef "_I_k" as ' I<SUB><I>k</I></SUB> ';
-  latexdef "_I_k" as "\mathrm{I}_k";
+    "<SUB>k</SUB> ";
+  althtmldef "_I_k" as ' I<SUB>k</SUB> ';
+  latexdef "_I_k" as "\mathrm{I_k}";
 htmldef "_S_k" as
-    " <FONT FACE=sans-serif>S</FONT><SUB><I>k</I></SUB> ";
+    " <FONT FACE=sans-serif>S</FONT><SUB>k</SUB> ";
   althtmldef "_S_k" as
-    ' <FONT FACE=sans-serif>S</FONT><SUB><I>k</I></SUB> ';
-  latexdef "_S_k" as "\mathrm{S}_k";
+    ' <FONT FACE=sans-serif>S</FONT><SUB>k</SUB> ';
+  latexdef "_S_k" as "\mathrm{S_k}";
 htmldef "Ins2_k" as
-    " <FONT FACE=sans-serif>Ins2</FONT><SUB><I>k</I></SUB> ";
+    " <FONT FACE=sans-serif>Ins2</FONT><SUB>k</SUB> ";
   althtmldef "Ins2_k" as
-    ' <FONT FACE=sans-serif>Ins2</FONT><SUB><I>k</I></SUB> ';
-  latexdef "Ins2_k" as "\mathrm{Ins2}_k";
+    ' <FONT FACE=sans-serif>Ins2</FONT><SUB>k</SUB> ';
+  latexdef "Ins2_k" as "\mathrm{Ins2_k}";
 htmldef "Ins3_k" as
-    " <FONT FACE=sans-serif>Ins3</FONT><SUB><I>k</I></SUB> ";
+    " <FONT FACE=sans-serif>Ins3</FONT><SUB>k</SUB> ";
   althtmldef "Ins3_k" as
-    ' <FONT FACE=sans-serif>Ins3</FONT><SUB><I>k</I></SUB> ';
-  latexdef "Ins3_k" as "\mathrm{Ins3}_k";
-htmldef "SI_k" as " <FONT FACE=sans-serif>SI</FONT><SUB><I>k</I></SUB> ";
-  althtmldef "SI_k" as ' <FONT FACE=sans-serif>SI</FONT><SUB><I>k</I></SUB> ';
-  latexdef "SI_k" as "\mathrm{SI}_k";
+    ' <FONT FACE=sans-serif>Ins3</FONT><SUB>k</SUB> ';
+  latexdef "Ins3_k" as "\mathrm{Ins3_k}";
+htmldef "SI_k" as " <FONT FACE=sans-serif>SI</FONT><SUB>k</SUB> ";
+  althtmldef "SI_k" as ' <FONT FACE=sans-serif>SI</FONT><SUB>k</SUB> ';
+  latexdef "SI_k" as "\mathrm{SI_k}";
 htmldef "Ins2" as " <FONT FACE=sans-serif>Ins2</FONT> ";
   althtmldef "Ins2" as ' <FONT FACE=sans-serif>Ins2</FONT> ';
   latexdef "Ins2" as "\mathrm{Ins2}";
@@ -63864,12 +63864,12 @@ htmldef "~~" as
   latexdef "~~" as "\approx";
 htmldef "^m" as
     " <IMG SRC='_hatm.gif' WIDTH=15 HEIGHT=19 TITLE='^m' ALIGN=TOP> ";
-  althtmldef "^m" as ' &uarr;<SUB><I>m</I></SUB> ';
-  latexdef "^m" as "\uparrow_m";
+  althtmldef "^m" as ' &uarr;<SUB>m</SUB> ';
+  latexdef "^m" as "\mathbin{\uparrow_\mathrm{m}}";
 htmldef "^pm" as
     " <IMG SRC='_hatpm.gif' WIDTH=21 HEIGHT=19 TITLE='^pm' ALIGN=TOP> ";
-  althtmldef "^pm" as ' &uarr;<SUB><I>pm</I></SUB> ';
-  latexdef "^pm" as "\uparrow_{pm}";
+  althtmldef "^pm" as ' &uarr;<SUB>pm</SUB> ';
+  latexdef "^pm" as "\mathbin{\uparrow_\mathrm{pm}}";
 htmldef "NC" as " <FONT FACE=sans-serif>NC</FONT> ";
   althtmldef "NC" as ' <FONT FACE=sans-serif>NC</FONT> ';
   latexdef "NC" as "\mathrm{NC}";
@@ -63877,29 +63877,29 @@ htmldef "<_c" as
     " <IMG SRC='le.gif' WIDTH=11 HEIGHT=19 ALT='&lt;_' ALIGN=TOP>" +
     "<SUB>c</SUB> ";
   althtmldef "<_c" as ' &le;<SUB>c</SUB> ';
-  latexdef "<_c" as "\le_c";
+  latexdef "<_c" as "\le_\mathrm{c}";
 htmldef "<c" as
     " <IMG SRC='lt.gif' WIDTH=11 HEIGHT=19 ALT='&lt;' ALIGN=TOP><SUB>c</SUB> ";
   althtmldef "<c" as ' &lt;<SUB>c</SUB> ';
-  latexdef "<c" as "<_c ";
+  latexdef "<c" as "<_\mathrm{c}";
 htmldef "Nc" as " <FONT FACE=sans-serif>Nc</FONT> ";
   althtmldef "Nc" as ' <FONT FACE=sans-serif>Nc</FONT> ';
   latexdef "Nc" as "\mathrm{Nc}";
-htmldef ".c" as ' &middot;<SUB><I>c</I></SUB> ';
-  althtmldef ".c" as ' &middot;<SUB><I>c</I></SUB> ';
-  latexdef ".c" as "\cdot_c";
+htmldef ".c" as ' &middot;<SUB>c</SUB> ';
+  althtmldef ".c" as ' &middot;<SUB>c</SUB> ';
+  latexdef ".c" as "\cdot_\mathrm{c}";
 htmldef "T_c" as " <FONT FACE=sans-serif>T</FONT><SUB>c</SUB> ";
   althtmldef "T_c" as ' <FONT FACE=sans-serif>T</FONT><SUB>c</SUB> ';
-  latexdef "T_c" as "\mathrm{T}_c ";
-htmldef "2c" as '2<SUB><I>c</I></SUB>';
-  althtmldef "2c" as '2<SUB><I>c</I></SUB>';
-  latexdef "2c" as "2_c";
-htmldef "3c" as '3<SUB><I>c</I></SUB>';
-  althtmldef "3c" as '3<SUB><I>c</I></SUB>';
-  latexdef "3c" as "3_c";
-htmldef "^c" as ' &uarr;<SUB><I>c</I></SUB> ';
-  althtmldef "^c" as ' &uarr;<SUB><I>c</I></SUB> ';
-  latexdef "^c" as "\uparrow_c";
+  latexdef "T_c" as " \mathrm{T_c} ";
+htmldef "2c" as '2<SUB>c</SUB>';
+  althtmldef "2c" as '2<SUB>c</SUB>';
+  latexdef "2c" as "2_\mathrm{c}";
+htmldef "3c" as '3<SUB>c</SUB>';
+  althtmldef "3c" as '3<SUB>c</SUB>';
+  latexdef "3c" as "3_\mathrm{c}";
+htmldef "^c" as ' &uarr;<SUB>c</SUB> ';
+  althtmldef "^c" as ' &uarr;<SUB>c</SUB> ';
+  latexdef "^c" as "\mathbin{\uparrow_\mathrm{c}}";
 htmldef "Sp[ac]" as " <FONT FACE=sans-serif>Sp</FONT><SUB>ac</SUB> ";
   althtmldef "Sp[ac]" as ' <FONT FACE=sans-serif>Sp</FONT><SUB>ac</SUB> ';
   latexdef "Sp[ac]" as "\mathrm{Sp}_\mathrm{ac}";

@@ -209758,7 +209758,7 @@ htmldef ".+b" as
     " <IMG SRC='_.plusb.gif' WIDTH=14 HEIGHT=19 ALT=' .+b' TITLE='.+b'> ";
   althtmldef ".+b" as
     ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
-    '&#x271A;</SPAN> ';
+    '<b>+</b></SPAN> ';
   latexdef ".+b" as "\pmb{+}";
 htmldef ".(+)" as
     " <IMG SRC='_.oplus.gif' WIDTH=13 HEIGHT=19 ALT=' .(+)' TITLE='.(+)'> ";
@@ -209806,8 +209806,8 @@ htmldef ".0b" as
     " <IMG SRC='_.bf0.gif' WIDTH=9 HEIGHT=19 ALT=' .0b' TITLE='.0b'> ";
   althtmldef ".0b" as
     ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
-    '&#x1D7CE</SPAN> ';
-  latexdef ".0b" as "\pmb{0}";
+    '&#x1D7CE;</SPAN> ';
+  latexdef ".0b" as "\mathbf{0}";
 htmldef "A" as "<IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT=' A' TITLE='A'>";
   althtmldef "A" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D434;</SPAN>';
   latexdef "A" as "A";
@@ -210116,7 +210116,7 @@ htmldef "_om" as
     "<IMG SRC='omega.gif' WIDTH=11 HEIGHT=19 ALT=' om' TITLE='om'>";
   /*althtmldef "_om" as '&omega;';*/
   althtmldef "_om" as '&#x3C9;';  /* upright lowercase Greek omega */
-  latexdef "_om" as "\mathrm{\omega}";
+  latexdef "_om" as "\upomega";
 htmldef "X." as
     " <IMG SRC='times.gif' WIDTH=9 HEIGHT=19 ALT=' X.' TITLE='X.'> ";
   althtmldef "X." as ' &times; ';
@@ -210426,19 +210426,19 @@ htmldef "<Q" as
   latexdef "<Q" as "<_\mathcal{Q}";
 htmldef "~Q0" as ' ~<I><SUB><B>Q0</B></SUB></I> ';
   althtmldef "~Q0" as ' ~<I><SUB><B>Q0</B></SUB></I> ';
-  latexdef "~Q0" as "\sim_\mathcal{Q0}";
+  latexdef "~Q0" as "\sim_{\mathcal{Q}_0}";
 htmldef "Q0." as '<I><B>Q<SUB>0</SUB></B></I>';
   althtmldef "Q0." as '<I><B>Q<SUB>0</SUB></B></I>';
   latexdef "Q0." as "\mathcal{Q}_0";
 htmldef "0Q0" as '0<I><SUB><B>Q0</B></SUB></I>';
   althtmldef "0Q0" as '0<I><SUB><B>Q0</B></SUB></I>';
-  latexdef "0Q0" as "0_\mathcal{Q0}";
+  latexdef "0Q0" as "0_{\mathcal{Q}_0}";
 htmldef "+Q0" as ' +<I><SUB><B>Q0</B></SUB></I> ';
   althtmldef "+Q0" as ' +<I><SUB><B>Q0</B></SUB></I> ';
-  latexdef "+Q0" as "+_\mathcal{Q0}";
+  latexdef "+Q0" as "+_{\mathcal{Q}_0}";
 htmldef ".Q0" as ' &middot;<I><SUB><B>Q0</B></SUB></I> ';
   althtmldef ".Q0" as ' &middot;<I><SUB><B>Q0</B></SUB></I> ';
-  latexdef ".Q0" as "\cdot_\mathcal{Q0}";
+  latexdef ".Q0" as "\cdot_{\mathcal{Q}_0}";
 htmldef "P." as "<IMG SRC='calp.gif' WIDTH=13 HEIGHT=19 ALT=' P.' TITLE='P.'>";
   althtmldef "P." as '<I><B>P</B></I>';
   latexdef "P." as "\mathcal{P}";
@@ -210555,7 +210555,7 @@ htmldef "#RR" as ' #<SUB>&#8477;</SUB> ';
   latexdef "#RR" as "\mathrel{\neq\mkern-10mu\neq_\mathbb{R}}";
 htmldef "_Ind" as "&#x1D7ED;";
   althtmldef "_Ind" as "&#x1D7ED;";
-  latexdef "_Ind" as "\pmb{1}";
+  latexdef "_Ind" as "\mathbf{1}";
 htmldef "NN" as "<IMG SRC='bbn.gif' WIDTH=12 HEIGHT=19 ALT=' NN' TITLE='NN'>";
   althtmldef "NN" as '&#8469;'; /* &Nopf; */
     /* 2-Jan-2016 reverted sans-serif */
@@ -210618,11 +210618,11 @@ htmldef "ZZ>=" as "<IMG SRC='_bbzge.gif' WIDTH=20 HEIGHT=19 " +
   latexdef "ZZ>=" as "\mathbb{Z}_\ge";
 htmldef "-e" as " <IMG SRC='shortminus.gif' WIDTH=8 HEIGHT=19 ALT=' -' " +
     "TITLE='-'><IMG SRC='sube.gif' WIDTH=6 HEIGHT=19 ALT='e' TITLE='e'>";
-  althtmldef "-e" as "-<SUB>&#x1D452;</SUB>";
-  latexdef "-e" as "\textrm{-}_e";
+  althtmldef "-e" as "-<SUB>e</SUB>";
+  latexdef "-e" as "\mathord{-_\mathrm{e}}";
 htmldef "+e" as "<IMG SRC='plus.gif' WIDTH=13 HEIGHT=19 ALT=' +' TITLE='+'>" +
     "<IMG SRC='sube.gif' WIDTH=6 HEIGHT=19 ALT='e' TITLE='e'>";
-  althtmldef "+e" as " +<SUB>&#x1D452;</SUB> ";
+  althtmldef "+e" as " +<SUB>e</SUB> ";
   latexdef "+e" as "+_e";
 htmldef "*e" as "<IMG SRC='cdot.gif' WIDTH=4 HEIGHT=19 ALT=' x' TITLE='x'>" +
     "<IMG SRC='sube.gif' WIDTH=6 HEIGHT=19 ALT='e' TITLE='e'>";
@@ -210745,11 +210745,11 @@ htmldef "tan" as
   latexdef "tan" as "\tan";
 htmldef "_pi" as "<IMG SRC='pi.gif' WIDTH=10 HEIGHT=19 ALT=' pi' TITLE='pi'>";
   althtmldef "_pi" as "&pi;";  /* was: "&#x1D70B;"; math italic pi */
-  latexdef "_pi" as "\mathrm{\pi}";
+  latexdef "_pi" as "\uppi";
 htmldef "_tau" as
     "<IMG SRC='tau.gif' WIDTH=10 HEIGHT=19 ALT=' tau' TITLE='tau'>";
   althtmldef "_tau" as '&#x3c4;';  /* upright lowercase Greek tau */
-  latexdef "_tau" as "\mathrm{\tau}";
+  latexdef "_tau" as "\uptau";
 htmldef "||" as
     " <IMG SRC='parallel.gif' WIDTH=5 HEIGHT=19 " + "ALT=' ||' TITLE='||'> ";
   althtmldef "||" as ' &#8741; ';
@@ -210893,7 +210893,7 @@ htmldef "gsum" as " <IMG SRC='csigma.gif' WIDTH=11 HEIGHT=19 " +
 htmldef "gzsum" as " <IMG SRC='csigma.gif' WIDTH=11 HEIGHT=19 " +
     "ALT=' gzsum' TITLE='gzsum'><sub><i>gz</i></sub> ";
   althtmldef "gzsum" as " &Sigma;<sub><i>gz</i></sub> ";
-  latexdef "gzsum" as "\sum_gz";
+  latexdef "gzsum" as "\sum_{gz}";
 htmldef '"s' as " <IMG SRC='backquote.gif' WIDTH=7 HEIGHT=19 ALT=' " + '"' +
     "' TITLE='" + '"' + "'><sub><i>s</i></sub> ";
   althtmldef '"s' as ' &ldquo;<sub><i>s</i></sub> ';
@@ -211223,7 +211223,7 @@ htmldef "~~>t" as "<IMG SRC='rightsquigarrow.gif' WIDTH=15 HEIGHT=19 " +
   althtmldef "~~>t" as
     "&#8669;<SUB>&#x1D461;</SUB>";
     /* 2-Jan-2016 reverted sans-serif */
-  latexdef "~~>t" as "\rightsquigarrow_t";
+  latexdef "~~>t" as "\rightsquigarrow_\mathrm{t}";
 htmldef "tX" as
     " <IMG SRC='_timest.gif' WIDTH=14 HEIGHT=19 ALT=' tX' TITLE='tX'> ";
   althtmldef "tX" as " &times;<SUB>t</SUB> ";

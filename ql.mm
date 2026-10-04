@@ -10338,11 +10338,11 @@ latexdef "(" as "(";
 latexdef ")" as ")";
 latexdef "=" as "=";
 latexdef "==" as "\equiv ";
-latexdef "v" as "\vee ";
-latexdef "^" as "\wedge ";
+latexdef "v" as "\cup ";
+latexdef "^" as "\cap ";
 latexdef "0" as "0";
 latexdef "1" as "1";
-latexdef "'" as "'";
+latexdef "'" as "{}^{\bot}";
 latexdef "wff" as "\mathrm{wff}";
 latexdef "term" as "\mathrm{term}";
 latexdef "|-" as "\vdash";
@@ -10358,8 +10358,8 @@ latexdef "->4" as "\to_4";
 latexdef "->5" as "\to_5";
 latexdef "<->1" as "\leftrightarrow_1";
 latexdef "<->3" as "\leftrightarrow_3";
-latexdef "u3" as "\vee_3";
-latexdef "^3" as "\wedge_3";
+latexdef "u3" as "\cup_3";
+latexdef "^3" as "\cap_3";
 latexdef "==0" as "\equiv_0";
 latexdef "==1" as "\equiv_1";
 latexdef "==2" as "\equiv_2";
@@ -10382,8 +10382,6 @@ latexdef "p2" as "p_2";
 
 /* End of typesetting definition section */
 $)
-
-$( 456789012345 (79-character line to adjust text window width) 567890123456 $)
 
 
 $(
