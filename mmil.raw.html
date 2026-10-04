@@ -13014,11 +13014,25 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>gsumval3a , gsumval3eu , gsumval3lem1 , gsumval3lem2 ,
   gsumval3 , gsumcllem , gsumzres , gsumzcl2 , gsumzcl ,
-  gsumzf1o , gsumres , gsumcl2</td>
+  gsumzf1o</td>
   <td>~ gzsumval2 , ~ gzsumfzval</td>
   <td>these are all in terms of support which we could
   define but which would require additional conditions
   for example decidable equality of group elements</td>
+</tr>
+
+<tr>
+  <td>gsumres</td>
+  <td>~ gsumresfi</td>
+  <td>adds ` W C_ A ` , ` W e. Fin ` , ` A e. Fin ` and
+  ` A. x e. ( A \ W ) ( F `` x ) = .0. `
+  to replace ` F finSupp .0. ` and ` ( F supp .0. ) C_ W ` .</td>
+</tr>
+
+<tr>
+  <td>gsumcl2</td>
+  <td>~ gzsumcl , ~ gsumclfi</td>
+  <td>see gsumcl which is very similar</td>
 </tr>
 
 <tr>
@@ -13108,12 +13122,13 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>gsumzsplit , gsumsplit , gsumsplit2 , gsummptfidmsplit ,
-  gsummptfidmsplitres</td>
+  <td>gsumzsplit , gsumsplit , gsumsplit2</td>
   <td><i>none</i></td>
-  <td>should be possible to prove versions indexed by
-  consecutive integers (compare with gsummptfzsplit and gsummptfzsplitl
-  ).</td>
+  <td>should be possible to prove versions with the usual
+  changes, such as being indexed by
+  consecutive integers for ` gzsum ` (compare with
+  gsummptfzsplit and gsummptfzsplitl ), or changing
+  finitely supported to finite for ` gsum ` .</td>
 </tr>
 
 <tr>
@@ -13180,16 +13195,27 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>gsumsnfd</td>
+  <td rowspan="2">gsumsnfd</td>
   <td>~ gzsumsnfd</td>
-  <td>The group sum needs to be indexed by an integer</td>
+  <td>for ` gzsum `</td>
 </tr>
 
 <tr>
-  <td>gsumsnd , gsumsnf</td>
+  <td>~ gsumsnfdcmn</td>
+  <td>for ` gsum ` , where the monoid is commutative</td>
+</tr>
+
+<tr>
+  <td>gsumsnd</td>
+  <td>~ gsumsndcmn</td>
+  <td>the monoid must be commutative</td>
+</tr>
+
+<tr>
+  <td>gsumsnf</td>
   <td><i>none</i></td>
-  <td>these are variations on similar theorems - see
-  ~ gzsumsnfd and ~ gsumsncmn</td>
+  <td>a variation on similar theorems - see
+  ~ gsumsnfdcmn</td>
 </tr>
 
 <tr>
@@ -14810,15 +14836,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>psrlidm</td>
-  <td><i>none</i></td>
-  <td>May be feasible now that we have ~ psrmulrg
-  and ~ psrbagcon . The set.mm proof uses gsumres (we
-  probably want something similar but which changes
-  finitely supported to finite) and gsumsn (probably replace
-  with ~ gsumsncmn ).  There are some ` if `
-  expressions in the set.mm proof but it isn't clear they are
-  being used in a way that needs decidability (if they do,
-  see the similar portion of the ~ psr1clfi proof).</td>
+  <td>~ psrlidmfi</td>
+  <td>requires a finite index set</td>
 </tr>
 
 <tr>
