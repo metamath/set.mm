@@ -210473,7 +210473,7 @@ htmldef "1R" as "<IMG SRC='_1cr.gif' WIDTH=16 HEIGHT=19 ALT=' 1R' TITLE='1R'>";
 htmldef "-1R" as
     "<IMG SRC='_m1r.gif' WIDTH=22 HEIGHT=19 ALT=' -1R' TITLE='-1R'>";
   althtmldef "-1R" as '-1<I><SUB><B>R</B></SUB></I>';
-  latexdef "-1R" as "-1_\mathcal{R}";
+  latexdef "-1R" as "\mathord{-}1_\mathcal{R}";
 htmldef "+R" as
     " <IMG SRC='_plr.gif' WIDTH=23 HEIGHT=19 ALT=' +R' TITLE='+R'> ";
   althtmldef "+R" as ' +<I><SUB><B>R</B></SUB></I> ';

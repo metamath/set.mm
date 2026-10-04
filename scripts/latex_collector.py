@@ -32,7 +32,7 @@ PREAMBLE = r"""\documentclass[10pt]{article}
 \newfontfamily\unicodefont[
   AutoFakeBold=1.5,
   AutoFakeSlant=0.2
-]{STIX Two Math}
+]{STIXTwoMath-Regular.otf}
 \usepackage[vmargin=1cm,hmargin=1cm,includefoot]{geometry}
 \newsavebox{\ltmcbox}
 \begin{document}
