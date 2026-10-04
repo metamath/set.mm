@@ -143,67 +143,50 @@ jobs:
 
   ###########################################################
   tex:
-    name: Generate TeX output using metamath.exe
-    runs-on: ubuntu-latest
+    name: Generate and check TeX output
+    runs-on: ubuntu-24.04
     needs: skip_dups
     if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
+
       # Update first to counter problems installing texlive
       - run: sudo apt-get update --fix-missing
+
       # Install LaTeX so we can test generated LaTeX. We use extended packages:
-      # texlive-extra-utils provides pdflatex
-      # texlive-fonts-extra provides phonetic.sty
-      - run: sudo apt-get install texlive-latex-extra texlive-extra-utils texlive-fonts-extra
-      # Here's an eXample of how to install "extra" LaTeX packages. See:
-      # https://tex.stackexchange.com/questions/38978/how-can-i-manually-install-a-latex-package-debian-ubuntu-linux/39259#39259
-      # - run: mkdir -p "$HOME/texmf"
-      # - run: wget https://mirrors.ctan.org/macros/latex/contrib/accents.zip -o "$HOME/texmf/accents.zip"
-      # - run: cd "$HOME/texmf"; unzip -j accents.zip
-      # - run: texhash texmf
-      # Use GITHUB_PATH to set PATH. For details see:
-      # https://docs.github.com/en/free-pro-team@latest/actions/reference/
-      # workflow-commands-for-github-actions#setting-an-environment-variable
-      - name: Ensure ~/bin is in PATH
+      # texlive-xetex provides XeLaTeX, needed by fontspec
+      # texlive-fonts-extra provides phonetic.sty and STIX Two fonts
+      # latexmk handles compilation and required reruns
+      - name: Install TeX dependencies
         run: |
-          echo "$HOME/bin" >> "$GITHUB_PATH"
-          mkdir -p "$HOME/bin"
-      - name: Get metamath C program and supporting files
-        run: scripts/download-metamath
-      - name: Record latest version of metamath as env variable
+          sudo apt-get install -y \
+            texlive-xetex \
+            texlive-latex-extra \
+            texlive-fonts-extra \
+            latexmk
+          kpsewhich STIXTwoMath-Regular.otf
+
+      # Check generated LaTeX, to ensure the TeX definitions are okay.
+      # Test set.mm, iset.mm, and nf.mm.
+      - name: Generate and compile symbol tables
+        shell: bash
         run: |
-          dirname=$(zipinfo -1 metamath-program.zip | head -1)
-          dirname=${dirname#metamath-metamath-exe-}
-          echo "METAMATH_LATEST_VERSION=${dirname%/}" >> $GITHUB_ENV
-      # Note: cache key includes version of metamath in use
-      - name: Cache metamathexe
-        id: cache-metamathexe
-        uses: actions/cache@v3
-        env:
-          cache-name: cache-metamathexe
-        with:
-          path: ~/bin/metamath
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ env.METAMATH_LATEST_VERSION }}
-      - name: Build/install metamath, a C verifier (and more) by Norm Megill
-        if: ${{ !steps.cache-metamathexe.outputs.cache-hit }}
-        run: |
-          gcc --version
-          scripts/build-metamath
-      # Check generated LaTeX, to ensure the TeX definitions are okay. set.mm:
-      - run: python3 scripts/latex_collector.py set.mm list-set.tex
-      - run: pdflatex -halt-on-error list-set.tex 2>&1 | tee ,latex-output
-      # Complain if the pdflatex output says something is invalid
-      - run: "! grep -e 'no output PDF file produced!' -e 'invalid' -e 'error' -e 'Error' -e 'Undefined' ,latex-output"
-      # Check generated LaTeX, to ensure the TeX definitions are okay. iset.mm:
-      - run: python3 scripts/latex_collector.py iset.mm list-iset.tex
-      - run: pdflatex -halt-on-error list-iset.tex 2>&1 | tee ,latex-output
-      # Complain if the pdflatex output says something is invalid
-      - run: "! grep -e 'no output PDF file produced!' -e 'invalid' -e 'error' -e 'Error' -e 'Undefined' ,latex-output"
-      # Check generated LaTeX, to ensure the TeX definitions are okay. nf.mm:
-      - run: python3 scripts/latex_collector.py nf.mm list-nf.tex
-      - run: pdflatex -halt-on-error list-nf.tex 2>&1 | tee ,latex-output
-      # Complain if the pdflatex output says something is invalid
-      - run: "! grep -e 'no output PDF file produced!' -e 'invalid' -e 'error' -e 'Error' -e 'Undefined' ,latex-output"
+          for database in set iset nf; do
+            stem="list-${database}"
+            python3 scripts/latex_collector.py "${database}.mm" "${stem}.tex"
+            latexmk -xelatex \
+              -interaction=nonstopmode \
+              -halt-on-error \
+              -file-line-error \
+              "${stem}.tex"
+
+            # Complain if compilation reports missing Unicode glyphs.
+            if grep -q 'Missing character:' "${stem}.log"; then
+              echo "::error::Missing glyphs in ${stem}.tex"
+              grep 'Missing character:' "${stem}.log"
+              exit 1
+            fi
+          done
 
   ###########################################################
   smetamath-rs:
