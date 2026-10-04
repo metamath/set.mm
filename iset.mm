@@ -46161,6 +46161,14 @@ $)
     ( cres wss wcel cvv resss ssexg mpan ) ABDZAEACFKGFABHKACIJ $.
 
   ${
+    resexd.1 $e |- ( ph -> A e. V ) $.
+    $( The restriction of a set is a set.  (Contributed by Glauco Siliprandi,
+       23-Oct-2021.) $)
+    resexd $p |- ( ph -> ( A |` B ) e. _V ) $=
+      ( wcel cres cvv resexg syl ) ABDFBCGHFEBCDIJ $.
+  $}
+
+  ${
     resex.1 $e |- A e. _V $.
     $( The restriction of a set is a set.  (Contributed by Jeff Madsen,
        19-Jun-2011.) $)
