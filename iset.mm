@@ -37282,6 +37282,16 @@ $)
   $}
 
   ${
+    mpteq1i.1 $e |- A = B $.
+    $( An equality theorem for the maps-to notation.  (Contributed by Glauco
+       Siliprandi, 17-Aug-2020.)  Remove all disjoint variable conditions.
+       (Revised by SN, 11-Nov-2024.) $)
+    mpteq1i $p |- ( x e. A |-> C ) = ( x e. B |-> C ) $=
+      ( cmpt wceq wtru a1i eqidd mpteq12dv mptru ) ABDFACDFGHABDCDBCGHEIHDJKL
+      $.
+  $}
+
+  ${
     mpteq2ia.1 $e |- ( x e. A -> B = C ) $.
     $( An equality inference for the maps-to notation.  (Contributed by Mario
        Carneiro, 16-Dec-2013.) $)
