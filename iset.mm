@@ -141293,8 +141293,8 @@ $)
       JUKULUM $.
   $}
 
-  $( No number between ` 1 ` and ` M - 1 ` divides ` M ` .  (Contributed by
-     Mario Carneiro, 24-Jan-2015.) $)
+  $( No number from ` 1 ` to ` M - 1 ` is a multiple of ` M ` .  (Contributed
+     by Mario Carneiro, 24-Jan-2015.) $)
   fzm1ndvds $p |- ( ( M e. NN /\ N e. ( 1 ... ( M - 1 ) ) ) -> -. M || N ) $=
     ( cn wcel c1 cmin co cfz wa cdvds wbr cle wn elfzle2 adantl elfzelz syl2anc
     clt cz wb nnz adantr zltlem1 mpbird elfznn nnzd zltnle mpbid wi dvdsle mtod
