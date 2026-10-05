@@ -168619,6 +168619,26 @@ $)
   $}
 
   ${
+    $d A k $.  $d B k $.  $d C k $.  $d D k $.  $d F k $.  $d k ph $.
+    gsumsplit.b $e |- B = ( Base ` G ) $.
+    gsumsplit.z $e |- .0. = ( 0g ` G ) $.
+    gsumsplit.p $e |- .+ = ( +g ` G ) $.
+    gsumsplit.g $e |- ( ph -> G e. CMnd ) $.
+    gsumsplitfi.a $e |- ( ph -> A e. Fin ) $.
+    gsumsplit.f $e |- ( ph -> F : A --> B ) $.
+    gsumsplit.i $e |- ( ph -> ( C i^i D ) = (/) ) $.
+    gsumsplit.u $e |- ( ph -> A = ( C u. D ) ) $.
+    $( Split a group sum into two parts.  (Contributed by Mario Carneiro,
+       19-Dec-2014.)  (Revised by AV, 5-Jun-2019.) $)
+    gsumsplitfi $p |- ( ph -> ( G gsum F ) =
+      ( ( G gsum ( F |` C ) ) .+ ( G gsum ( F |` D ) ) ) ) $=
+      ( vk cgsu co cv cfv cmpt cres ffvelcdmda eqid gsummptfidmsplitres feqmptd
+      oveq2d reseq1d oveq12d 3eqtr4d ) AHRBRUAZGUBZUCZSTHUODUDZSTZHUOEUDZSTZFTH
+      GSTHGDUDZSTZHGEUDZSTZFTABCDEFRUOHUNJLMNABCUMGOUEPQUOUFUGAGUOHSARBCGOUHZUI
+      AVAUQVCUSFAUTUPHSAGUODVDUJUIAVBURHSAGUOEVDUJUIUKUL $.
+  $}
+
+  ${
     $d k M $.
     gsumsnd.b $e |- B = ( Base ` G ) $.
     gsumsndcmn.g $e |- ( ph -> G e. CMnd ) $.
