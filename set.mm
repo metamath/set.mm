@@ -581889,6 +581889,20 @@ $)
     LYFKYGXFCXGXHXLXIWDXJXKXMXNYFNZYJYMUVQYHYIUVQYGYCXOZYHNYFCFVMZEUVRUVSDCDFXP
     XQXRCFXSXTYGAYATYDYBYE $.
 
+  ${
+    $d n x y z $.
+    $( Alternate definition of ` _J ` as a one-argument function.  (Contributed
+       by BTernaryTau, 4-Oct-2026.) $)
+    dfj2 $p |- _J = ( x e. ( ( On X. On ) X. 9o ) |->
+        ( ( 9o .o ( _J0 ` ( 1st ` x ) ) ) +o ( 2nd ` x ) ) ) $=
+      ( vy vz vn cj con0 c9o cv cop ccj0 cfv comu coa cmpt3 cxp c1st c2nd sylbi
+      co wceq cmpt df-j cotp df-ot eqeq2i opex vex op1std fveq2d oveq2d oveq12d
+      op2ndd mpt3mpt eqtr4i ) EBCDFFGGBHZCHZIZJKZLSZDHZMSZNAFFOGOGAHZPKZJKZLSZV
+      BQKZMSZUABCDUBBCDAFFGVGVAVBUOUPUTUCZTZVEUSVFUTMVIVDURGLVIVCUQJVIVBUQUTIZT
+      ZVCUQTVHVJVBUOUPUTUDUEZUQUTVBUOUPUFZDUGZUHRUIUJVIVKVFUTTVLUQUTVBVMVNULRUK
+      UMUN $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
