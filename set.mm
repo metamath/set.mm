@@ -579517,6 +579517,35 @@ $)
   $( $j usage 'xoromon' avoids 'ax-reg' 'ax-inf' 'ax-inf2'; $)
 
   ${
+    $d A x y z $.  $d B x y z $.  $d C x y z $.  $d D x y z $.  $d E x y z $.
+    omeueq.1 $e |- ( ph -> A e. On ) $.
+    omeueq.2 $e |- ( ph -> A =/= (/) ) $.
+    omeueq.3 $e |- ( ph -> B e. On ) $.
+    omeueq.4 $e |- ( ph -> C e. A ) $.
+    omeueq.5 $e |- ( ph -> D e. On ) $.
+    omeueq.6 $e |- ( ph -> E e. A ) $.
+    omeueq.7 $e |- ( ph -> ( ( A .o B ) +o C ) = ( ( A .o D ) +o E ) ) $.
+    $( The division algorithm for ordinal multiplication ( ~ omeu ) produces a
+       unique quotient and remainder.  (Contributed by BTernaryTau,
+       5-Oct-2026.) $)
+    omeueq $p |- ( ph -> ( B = D /\ C = E ) ) $=
+      ( vx vy wceq wa co coa con0 vz cop cv comu wrex wmo weu wcel omcl syl2anc
+      c0 wne onelon oacl omeu syl3anc eumo syl opeq1 eqeq2d oveq2 oveq1d eqeq1d
+      anbi12d opeq2 eqid pm3.2i a1i 2rspcedvdw eqcomd jctil opex eqeq1 2rexbidv
+      cvv anbi1d moi mp3an1 syl12anc wb opthg mpbid ) ACDUBZEFUBZPZCEPDFPQZAUAU
+      CZNUCZOUCZUBZPZBWHUDRZWISRZBCUDRZDSRZPZQZOBUENTUEZUAUFZWCWJPZWPQZOBUENTUE
+      ZWDWJPZWPQZOBUENTUEZWEAWRUAUGZWSABTUHZWOTUHZBUKULXFGAWNTUHZDTUHZXHAXGCTUH
+      ZXIGIBCUIUJAXGDBUHZXJGJBDUMUJWNDUNUJHNOUABWOUOUPWRUAUQURAXAWCCWIUBZPZWNWI
+      SRZWOPZQWCWCPZWOWOPZQZNOCDTBWHCPZWTXNWPXPXTWJXMWCWHCWIUSUTXTWMXOWOXTWLWNW
+      ISWHCBUDVAVBVCVDWIDPZXNXQXPXRYAXMWCWCWIDCVEUTYAXOWOWOWIDWNSVAVCVDIJXSAXQX
+      RWCVFWOVFVGVHVIAXDWDEWIUBZPZBEUDRZWISRZWOPZQWDWDPZYDFSRZWOPZQNOEFTBWHEPZX
+      CYCWPYFYJWJYBWDWHEWIUSUTYJWMYEWOYJWLYDWISWHEBUDVAVBVCVDWIFPZYCYGYFYIYKYBW
+      DWDWIFEVEUTYKYEYHWOWIFYDSVAVCVDKLAYIYGAWOYHMVJWDVFVKVIWCVOUHZWDVOUHZQWSXB
+      XEQWEYLYMCDVLEFVLVGWRXBXEUAWCWDVOVOWGWCPZWQXANOTBYNWKWTWPWGWCWJVMVPVNWGWD
+      PZWQXDNOTBYOWKXCWPWGWDWJVMVPVNVQVRVSAXKXLWEWFVTIJCDEFTBWAUJWB $.
+  $}
+
+  ${
     $d V y $.  $d A w y z $.  $d R w y z $.
     $( A strict order relation on an infinite set dominates that set.
        (Contributed by BTernaryTau, 14-Jul-2026.) $)
