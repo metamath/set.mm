@@ -71660,6 +71660,26 @@ $)
       USUTVEVFVGVHVMVAVBVC $.
   $}
 
+  ${
+    $d B x y $.  $d E x y $.  $d ph x $.
+    relresfin.e $e |- ( ph -> E e. Fin ) $.
+    relresfin.r $e |- ( ph -> Rel E ) $.
+    relresfin.dm $e |- ( ph -> dom E e. Fin ) $.
+    relresfin.ss $e |- ( ph -> B C_ dom E ) $.
+    relresfin.b $e |- ( ph -> B e. Fin ) $.
+    $( Restricting to a subset of a finite relation's domain gives a finite
+       set.  (Contributed by Jim Kingdon, 6-Oct-2026.) $)
+    relresfin $p |- ( ph -> ( E |` B ) e. Fin ) $=
+      ( vx vy cfn wcel wss cv wdc wral wa cfv wceq cvv cres resss a1i cdm eleq1
+      c1st dcbid fissfi syl3anc adantr c2nd cop simpr 1st2nd sylan eleq1d mpbid
+      wrel 1stexg elv 2ndexg opeldm rspcdva biantrurd opelres bitr4di ralrimiva
+      syl bitr4d ssfidc ) ACKLCBUAZCMZINZVKLZOZICPVKKLDVLACBUBUCAVOICAVMCLZQZVM
+      UFRZBLZOZVOVQJNZBLZOZVTJCUDZVRWAVRSWBVSWAVRBUEUGAWCJWDPZVPABWDMWDKLBKLWEG
+      FHJWDBUHUIUJVQVRVMUKRZULZCLZVRWDLVQVPWHAVPUMVQVMWGCACURVPVMWGSEVMCUNUOZUP
+      UQZVRWFCVRTLIVMTUSUTWFTLIVMTVAUTZVBVHVCVQVSVNVQVSWGVKLZVNVQVSWHVSQWLVQWHV
+      SWJVDVRWFCBWKVEVFVQVMWGVKWIUPVIUGUQVGICVKVJUI $.
+  $}
+
   $( Any injection from one finite set to another of equal size must be a
      bijection.  (Contributed by Jeff Madsen, 5-Jun-2010.) $)
   f1finf1o $p |- ( ( A ~~ B /\ B e. Fin ) ->
