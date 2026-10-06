@@ -581932,6 +581932,27 @@ $)
       UMUN $.
   $}
 
+  ${
+    $d w z $.  $d n w x y $.
+    $( ` _J ` is a one-to-one function.  Part of Proposition 15.3 of
+       [TakeutiZaring] p. 155.  (Contributed by BTernaryTau, 6-Oct-2026.) $)
+    jf1 $p |- _J : ( ( On X. On ) X. 9o ) -1-1-> On $=
+      ( vw vz con0 cxp c9o c1st cfv ccj0 comu co c2nd coa wcel wral wceq wi 9on
+      ax-mp wa a1i cj wf1 cv wf1o wf cr0 cep wiso j0iso isof1o f1of 0elon f0cli
+      omcl mp2an xp2nd onelon sylancr oacl rgen w3a c0 wne csuc nsuceq0 eqnetri
+      c8o df-9o 3ad2ant1 3ad2ant2 simp3 omeueq xp1st f1of1 f1veqaeq mpan syl2an
+      anim1d 3adant3 mpd wb xpopth mpbid 3expia rgen2 dfj2 2fveq3 fveq2 oveq12d
+      oveq2d f1mpt mpbir2an ) CCDZEDZCUAUBEAUCZFGZHGZIJZWOKGZLJZCMZAWNNWTEBUCZF
+      GZHGZIJZXBKGZLJZOZWOXBOZPZBWNNAWNNXAAWNWOWNMZWRCMZWSCMZXAECMZWQCMZXLQWMCW
+      PHWMCHUDZWMCHUEWMCUFUGHUHXPUIWMCUFUGHUJRZWMCHUKRZULUMZEWQUNUOXKXNWSEMZXMQ
+      WOWMEUPZEWSUQURWRWSUSURUTXJABWNWNXKXBWNMZXHXIXKYBXHVAZWPXCOZWSXFOZSZXIYCW
+      QXDOZYESZYFYCEWQWSXDXFXNYCQTEVBVCYCEVGVDVBVHVGVEVFTXOYCXSTXKYBXTXHYAVIXDC
+      MYCWMCXCHXRULUMTYBXKXFEMXHXBWMEUPVJXKYBXHVKVLXKYBYHYFPXHXKYBSYGYDYEXKWPWM
+      MZXCWMMZYGYDPZYBWOWMEVMXBWMEVMWMCHUBZYIYJSYKXPYLXQWMCHVNRWMCWPXCHVOVPVQVR
+      VSVTXKYBYFXIWAXHWOXBWMEWMEWBVSWCWDWEABWNCWTXGUAAWFXIWRXEWSXFLXIWQXDEIWOXB
+      HFWGWJWOXBKWHWIWKWL $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
