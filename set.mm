@@ -581953,6 +581953,27 @@ $)
       HFWGWJWOXBKWHWIWKWL $.
   $}
 
+  ${
+    $d u v w z $.  $d t u v w $.  $d n x y z $.
+    $( ` _J ` is a bijection from ` ( ( On X. On ) X. 9o ) ` to ` On ` .
+       Proposition 15.3 of [TakeutiZaring] p. 155.  (Contributed by
+       BTernaryTau, 6-Oct-2026.) $)
+    jf1o $p |- _J : ( ( On X. On ) X. 9o ) -1-1-onto-> On $=
+      ( vw vz vu vv vt con0 cxp c9o cj wf1o wceq jf1 cv cfv ccj0 comu wrex wcel
+      co coa wf1 crn wf wss f1f frn mp2b c1st c2nd cab wi ssab wne 9on c8o csuc
+      c0 df-9o nsuceq0 eqnetri omeulem1 mp3an13 wfo cr0 wiso j0iso isof1o f1ofo
+      cep foelcdmi mpan oveq2 oveq1d eqeq2d eqcom bitrdi rexbidv biimprcd mpan9
+      reximdv rexlimiva syl cop op1std fveq2d oveq2d op2ndd rexxp sylibr mpgbir
+      vex oveq12d dfj2 rnmpt sseqtrri eqssi dff1o5 mpbir2an ) FFGZHGZFIJWTFIUAZ
+      IUBZFKLXBFXAWTFIUCXBFUDLWTFIUEWTFIUFUGFAMZHBMZUHNZONZPSZXDUINZTSZKZBWTQZA
+      UJZXBFXLUDXCFRZXKUKAXKAFULXMXCHCMZONZPSZDMZTSZKZDHQZCWSQZXKXMHEMZPSZXQTSZ
+      XCKZDHQZEFQZYAHFRXMHUQUMYGUNHUOUPUQURUOUSUTEDHXCVAVBYFYAEFYBFRZXOYBKZCWSQ
+      ZYFYAWSFOVCZYHYJWSFVDVIOVEWSFOJYKVFWSFVDVIOVGWSFOVHUGCWSFOYBVJVKYFYIXTCWS
+      YIXTYFYIXSYEDHYIXSXCYDKYEYIXRYDXCYIXPYCXQTXOYBHPVLVMVNXCYDVOVPVQVRVTVSWAW
+      BXJXSBCDWSHXDXNXQWCKZXIXRXCYLXGXPXHXQTYLXFXOHPYLXEXNOXNXQXDCWKZDWKZWDWEWF
+      XNXQXDYMYNWGWLVNWHWIWJBAWTXIIBWMWNWOWPWTFIWQWR $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
