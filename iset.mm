@@ -168733,6 +168733,27 @@ $)
   $}
 
   ${
+    $d k A $.  $d k B $.  $d k G $.  $d k M $.  $d k V $.  $d k ph $.
+    gsumunsnf.0 $e |- F/_ k Y $.
+    gsumunsnf.b $e |- B = ( Base ` G ) $.
+    gsumunsnf.p $e |- .+ = ( +g ` G ) $.
+    gsumunsnf.g $e |- ( ph -> G e. CMnd ) $.
+    gsumunsnf.a $e |- ( ph -> A e. Fin ) $.
+    gsumunsnf.f $e |- ( ( ph /\ k e. A ) -> X e. B ) $.
+    gsumunsnf.m $e |- ( ph -> M e. V ) $.
+    gsumunsnf.d $e |- ( ph -> -. M e. A ) $.
+    gsumunsnf.y $e |- ( ph -> Y e. B ) $.
+    gsumunsnf.s $e |- ( k = M -> X = Y ) $.
+    $( Append an element to a finite group sum, using bound-variable hypotheses
+       instead of distinct variable conditions.  (Contributed by Mario
+       Carneiro, 19-Dec-2014.)  (Revised by Thierry Arnoux, 28-Mar-2018.)
+       (Proof shortened by AV, 11-Dec-2019.) $)
+    gsumunsnf $p |- ( ph -> ( G gsum ( k e. ( A u. { M } ) |-> X ) ) =
+      ( ( G gsum ( k e. A |-> X ) ) .+ Y ) ) $=
+      ( cv wceq adantl gsumunsnfd ) ABCDEFGHIJLMNOPQRSEUAGUBIJUBATUCKUD $.
+  $}
+
+  ${
     $d A w y z $.  $d B w y z $.  $d F w y z $.  $d G w y z $.  $d ph w y z $.
     gsumresfi.b $e |- B = ( Base ` G ) $.
     gsumresfi.z $e |- .0. = ( 0g ` G ) $.
