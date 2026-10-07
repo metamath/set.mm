@@ -168754,6 +168754,24 @@ $)
   $}
 
   ${
+    $d k A $.  $d k B $.  $d k G $.  $d k M $.  $d k ph $.  $d k Y $.
+    gsumunsn.b $e |- B = ( Base ` G ) $.
+    gsumunsn.p $e |- .+ = ( +g ` G ) $.
+    gsumunsn.g $e |- ( ph -> G e. CMnd ) $.
+    gsumunsn.a $e |- ( ph -> A e. Fin ) $.
+    gsumunsn.f $e |- ( ( ph /\ k e. A ) -> X e. B ) $.
+    gsumunsn.m $e |- ( ph -> M e. V ) $.
+    gsumunsn.d $e |- ( ph -> -. M e. A ) $.
+    gsumunsn.y $e |- ( ph -> Y e. B ) $.
+    gsumunsn.s $e |- ( k = M -> X = Y ) $.
+    $( Append an element to a finite group sum.  (Contributed by Mario
+       Carneiro, 19-Dec-2014.)  (Proof shortened by AV, 8-Mar-2019.) $)
+    gsumunsn $p |- ( ph -> ( G gsum ( k e. ( A u. { M } ) |-> X ) ) =
+      ( ( G gsum ( k e. A |-> X ) ) .+ Y ) ) $=
+      ( wceq cv adantl gsumunsnd ) ABCDEFGHIJKLMNOPQREUAGTIJTASUBUC $.
+  $}
+
+  ${
     $d A w y z $.  $d B w y z $.  $d F w y z $.  $d G w y z $.  $d ph w y z $.
     gsumresfi.b $e |- B = ( Base ` G ) $.
     gsumresfi.z $e |- .0. = ( 0g ` G ) $.
