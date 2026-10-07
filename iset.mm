@@ -169066,6 +169066,26 @@ $)
       UVAAVVKUAYOVVSUJZVVJUEZUAVVJVVSUJZAYIVWGVVJAUAYOYOYIYOYOYIUVBYOYOYIUQAUVC
       YOYOYIUVDYQYPYRVVJYOVRVWHVWIULVVJUVIUAYOVVJVVSYSYTXNAUWBUVEUVTVVSUVQGUVFU
       VGUVHVBYKUVJYEWFVUEYFVBVAVGUVKQUVLUT $.
+
+    $d .0. j k q $.  $d A j k q $.  $d D j k q $.  $d F j k q $.  $d G j k q $.
+    $d j k ph q $.
+
+    $( Write a sum over a two-dimensional region as a double sum.  (Contributed
+       by Mario Carneiro, 28-Dec-2014.)  (Revised by AV, 8-Jun-2019.)  (Revised
+       by Jim Kingdon, 6-Oct-2026.) $)
+    gsum2dfi $p |- ( ph -> ( G gsum F ) = ( G gsum
+      ( j e. D |-> ( G gsum ( k e. ( A " { j } ) |-> ( j F k ) ) ) ) ) ) $=
+      ( cgsu vq cdm csn cima cmpt cres gsum2dfilem2 resmptd oveq2d gsum2dfilem1
+      co cv fmpttd cfv wceq cdif wcel eqid sneq imaeq2d mpteq12dv eldifi adantl
+      wa oveq1 c0 wn eldifn ndmima mpteq1d mpt0 eqtrdi syl c0g gsum0cmn eqtr4di
+      ccmn adantr eqtrd cmnd cmnmndd mndidcl eqeltrd fvmptd3 ralrimiva 3eqtr2d
+      gsumresfi ) AHGTUKHEBUBZHFBEULZUCZUDZWIFULZGUKZUEZTUKZUEZTUKHEDWOUEZWHUFZ
+      TUKHWQTUKABCDEFGHIJKLMNOPQRSUGAWRWPHTAEDWHWOPUHUIAUADCWQHWHIJKLOAEDWOCABC
+      DEFGHIJKLRSUJUMAUAULZWQUNZIUOUADWHUPZAWSXAUQZVDZWTHFBWSUCZUDZWSWLGUKZUEZT
+      UKZIXCEWSWOXHDWQCWQURWIWSUOZWNXGHTXIFWKWMXEXFXIWJXDBWIWSUSUTWIWSWLGVEVAUI
+      XBWSDUQAWSDWHVBVCXCXHICXCXHHVFTUKZIXCXGVFHTXCWSWHUQVGZXGVFUOXBXKAWSDWHVHV
+      CXKXGFVFXFUEVFXKFXEVFXFWSBVIVJFXFVKVLVMUIAXJIUOXBAXJHVNUNZIAHVQUQXJXLUOLH
+      VOVMKVPVRVSZAICUQZXBAHVTUQXNAHLWACHIJKWBVMVRWCWDXMVSWEQPWGWF $.
   $}
 
 
