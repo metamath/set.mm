@@ -36471,6 +36471,20 @@ $)
       EUDCAQUBUDLCTMNOPRS $.
   $}
 
+  ${
+    $d A y $.  $d B y $.  $d ph x y $.
+    sn0disj.1 $e |- ( ( ph /\ x e. A ) -> ( B = (/) \/ B = { x } ) ) $.
+    $( A collection, each of whose elements is empty or a singleton of the
+       index, is disjoint.  (Contributed by Jim Kingdon, 8-Oct-2026.) $)
+    sn0disj $p |- ( ph -> Disj_ x e. A B ) $=
+      ( vy cv wcel wa wmo wdisj wceq wi c0 simplr simpr eleqtrd adantll alrimiv
+      wal csn wn a1i pm2.21dd velsn sylib equcomd wo adantrr mpjaodan ex mo2icl
+      noel syl dfdisj2 sylibr ) ABGZCHZFGZDHZIZBJZFTBCDKAVBFAVAUQUSLZMZBTVBAVDB
+      AVAVCAVAIDNLZVCDUQUAZLZVAVEVCAVAVEIZUSNHZVCVHUSDNURUTVEOVAVEPQVIUBVHUSUMU
+      CUDRVAVGVCAVAVGIZFBVJUSVFHUSUQLVJUSDVFURUTVGOVAVGPQFUQUEUFUGRAURVEVGUHUTE
+      UIUJUKSVABUSULUNSBFCDUOUP $.
+  $}
+
   $( Any collection of empty sets is disjoint.  (Contributed by Mario Carneiro,
      14-Nov-2016.) $)
   0disj $p |- Disj_ x e. A (/) $=
