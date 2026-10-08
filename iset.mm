@@ -169102,6 +169102,59 @@ $)
       VOVMKVPVRVSZAICUQZXBAHVTUQXNAHLWACHIJKWBVMVRWCWDXMVSWEQPWGWF $.
   $}
 
+  ${
+    gsum2d2.b $e |- B = ( Base ` G ) $.
+    gsum2d2.z $e |- .0. = ( 0g ` G ) $.
+    gsum2d2.g $e |- ( ph -> G e. CMnd ) $.
+    gsum2d2fi.a $e |- ( ph -> A e. Fin ) $.
+    gsum2d2fi.r $e |- ( ( ph /\ j e. A ) -> C e. Fin ) $.
+    gsum2d2.f $e |- ( ( ph /\ ( j e. A /\ k e. C ) ) -> X e. B ) $.
+    gsum2d2.u $e |- ( ph -> U e. Fin ) $.
+    gsum2d2.n $e |- ( ( ph /\ ( ( j e. A /\ k e. C ) /\ -. j U k ) )
+                      -> X = .0. ) $.
+    ${
+      $d j k m n B $.  $d j k x y z D $.  $d j x y z E $.
+      $d j k m n x y z ph $.  $d j k m n x y z A $.  $d j k m n x G $.
+      $d j k z U $.  $d m n x y z X $.  $d k m n x y z C $.  $d j V $.
+      $d j k m n x z .0. $.  $d C p $.
+      $( Write a group sum over a two-dimensional region as a double sum.  Note
+         that ` C ( j ) ` is a function of ` j ` .  (Contributed by Mario
+         Carneiro, 28-Dec-2014.) $)
+      gsum2d2fi $p |- ( ph -> ( G gsum ( j e. A , k e. C |-> X ) ) =
+        ( G gsum ( j e. A |-> ( G gsum ( k e. C |-> X ) ) ) ) ) $=
+        ( cgsu wcel vm vn vx vy vp cmpo co cv csn cxp ciun cima cmpt wral wdisj
+        cfn snfig xpfi syl2an2 ralrimiva disjsnxp iunfidisj syl3anc relxp rgenw
+        a1i wrel reliun mpbir cdm cop wex vex eldm2 wceq eliunxp opth1 ad2antrl
+        wa simprrl eqeltrd ex exlimdvv biimtrid exlimdv ssrdv dmiun xpeq2 dmeqd
+        weq xp0 dmeqi dm0 eqtri eqtrdi 0fi eqeltrdi adantl dmxpm cvv elv fin0or
+        c0 wo syl mpjaodan wi orim12d sn0disj eqeltrid wf ralrimivva eqid fmpox
+        sylib idjusnfi gsum2dfi nfcv nfiu1 nfima nfmpo1 nfov nfmpt sneq imaeq2d
+        mpd oveq1 mpteq12dv oveq2d cbvmpt elimasn opeliunxp bitri eqrdv mpteq1d
+        baib nfmpo2 oveq2 mpteq2dva eqtrd simprl simprr ovmpt4g anassrs eqtrid
+        ) AHFGBDIUFZSUGHUABHUBFBFUHZUIZDUJZUKZUAUHZUIZULZUUKUBUHZUUFUGZUMZSUGZU
+        MZSUGHFBHGDIUMZSUGZUMZSUGAUUJCBUAUBUUFHJKLMABUPTZUUIUPTZFBUNFBUUIUOZUUJ
+        UPTNAUVCFBUUGBTZUUHUPTZADUPTZUVCUUGBUQOUUHDURUSUTUVDABDFVAVFFBUUIVBVCUU
+        JVGZAUVHUUIVGZFBUNUVIFBUUHDVDVEFBUUIVHVIVFNAUCUUJVJZBUCUHZUVJTUVKUDUHZV
+        KZUUJTZUDVLAUVKBTZUDUVKUUJUCVMZVNAUVNUVOUDUVNUVMUUGGUHZVKZVOZUVEUVQDTZV
+        SZVSZGVLFVLAUVOFGBDUVMVPAUWBUVOFGAUWBUVOAUWBVSUVKUUGBUVSUCFWJAUWAUVKUVL
+        UUGUVQUVPUDVMVQVRAUVSUVEUVTVTWAWBWCWDWEWDWFAUVJFBUUIVJZUKZUPFBUUIWGAUVB
+        UWCUPTZFBUNFBUWCUOUWDUPTNAUWEFBAUVEVSZDXCVOZUWEUEUHDTUEVLZUWGUWEUWFUWGU
+        WCXCUPUWGUWCUUHXCUJZVJZXCUWGUUIUWIDXCUUHWHWIUWJXCVJXCUWIXCUUHWKWLWMWNWO
+        ZWPWQWRUWHUWEUWFUWHUWCUUHUPUEUUHDWSZUVFFUUGWTUQXAWQWRUWFUVGUWGUWHXDZOUE
+        DXBXEZXFUTAFBUWCUWFUWMUWCXCVOZUWCUUHVOZXDUWNUWFUWGUWOUWHUWPUWGUWOXGUWFU
+        WKVFUWHUWPXGUWFUWLVFXHYFXIFBUWCVBVCXJAICTZGDUNFBUNUUJCUUFXKAUWQFGBDPXLF
+        GBDICUUFUUFXMZXNXOABDUUJFUUKUPNOUUJXMXPXQAUURUVAHSAUURFBHUBUUJUUHULZUUG
+        UUNUUFUGZUMZSUGZUMUVAUAFBUUQUXBFHUUPSFHXRFSXRFUBUUMUUOFUUJUULFBUUIXSFUU
+        LXRXTFUUKUUNUUFFUUKXRFGBDIYAFUUNXRYBYCYBUAUXBXRUAFWJZUUPUXAHSUXCUBUUMUU
+        OUWSUWTUXCUULUUHUUJUUKUUGYDYEUUKUUGUUNUUFYGYHYIYJAFBUXBUUTUWFUXAUUSHSUW
+        FUXAGDUUGUVQUUFUGZUMZUUSUVEUXAUXEVOAUVEUXAUBDUWTUMUXEUVEUBUWSDUWTUVEGUW
+        SDUVQUWSTZUVEUVTUXFUVRUUJTUWAUUJUUGUVQFVMGVMYKFBDUVQYLYMYPYNYOUBGDUWTUX
+        DGUUGUUNUUFGUUGXRFGBDIYQGUUNXRYBUBUXDXRUUNUVQUUGUUFYRYJWOWRUWFGDUXDIAUV
+        EUVTUXDIVOZAUWAVSUVEUVTUWQUXGAUVEUVTUUAAUVEUVTUUBPFGBDIUUFCUWRUUCVCUUDY
+        SYTYIYSUUEYIYT $.
+    $}
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
