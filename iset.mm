@@ -182676,8 +182676,9 @@ $)
     gsumbagdiag.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
     gsumbagdiag.s $e |- S = { y e. D | y oR <_ F } $.
     gsumbagdiag.f $e |- ( ph -> F e. D ) $.
-    $( Lemma for ~ gsumbagdiag .  (Contributed by Mario Carneiro, 5-Jan-2015.)
-       Remove a sethood hypothesis.  (Revised by SN, 6-Aug-2024.) $)
+    $( Lemma for ~ gsumbagdiagfi .  (Contributed by Mario Carneiro,
+       5-Jan-2015.)  Remove a sethood hypothesis.  (Revised by SN,
+       6-Aug-2024.) $)
     gsumbagdiaglem $p |- ( ( ph /\
       ( X e. S /\ Y e. { x e. D | x oR <_ ( F oF - X ) } ) ) ->
       ( Y e. S /\ X e. { x e. D | x oR <_ ( F oF - Y ) } ) ) $=
@@ -182701,6 +182702,30 @@ $)
       UUCUEHGITTYIXEHSIYFVDYJYJHWIZUUHUUBWJZUUHUUCWJWKWLXENHUUCUUFPIXGTSWDYJUUM
       UUHUUBUUAUUSUUHUUAUUNWEWGXENHSIYFWHXENHHUUBUUAUEHGJTTYIXEHSJYKVDYJYJUUTUV
       AUUHUUAWJWKWLWMWNWOWP $.
+
+    $d B j k $.  $d D j k z $.  $d F j k $.  $d G j k $.  $d I f y $.
+    $d I x $.  $d S j k $.  $d ph j k $.  $d f j k y $.  $d j k x $.
+    gsumbagdiag.b $e |- B = ( Base ` G ) $.
+    gsumbagdiag.g $e |- ( ph -> G e. CMnd ) $.
+    gsumbagdiagfi.i $e |- ( ph -> I e. Fin ) $.
+    gsumbagdiag.x $e |- ( ( ph /\
+      ( j e. S /\ k e. { x e. D | x oR <_ ( F oF - j ) } ) ) -> X e. B ) $.
+    $( Two-dimensional commutation of a group sum over a "triangular" region.
+       ~ fisum0diag analogue for finite bags.  (Contributed by Mario Carneiro,
+       5-Jan-2015.)  Remove a sethood hypothesis.  (Revised by SN,
+       6-Aug-2024.) $)
+    gsumbagdiagfi $p |- ( ph ->
+      ( G gsum ( j e. S , k e. { x e. D | x oR <_ ( F oF - j ) } |-> X ) ) =
+      ( G gsum ( k e. S , j e. { x e. D | x oR <_ ( F oF - k ) } |-> X ) ) ) $=
+      ( cv cmin cof co cle cofr wbr crab cxp cfn c0g cfv eqid wcel psrbaglefifi
+      syl2anc eqeltrid wa psrbagconcl sylan elrabi eleq2s adantr xpfi wn simprl
+      wceq gsumbagdiaglem simpld brxp sylanbrc pm2.24d impr impbida gsumcom2fi
+      syl ) AFDBUAZJHUAZUBUCZUDZUEUFZUGBEUHZFFFUIZHIVQJIUAZVSUDWAUGBEUHZKMUJKUK
+      ULZQWFUMRAFCUAJWAUGZCEUHZUJOAJEUNZLUJUNZWHUJUNPSCEGJLNUOUPUQZAVRFUNZURZVT
+      EUNZWJWBUJUNWMVTFUNZWNAWIWLWOPCEFGJLVRNOUSUTWNVTWHFWGCVTEVAOVBVPAWJWLSVCB
+      EGVTLNUOUPTAFUJUNZWPWCUJUNWKWKFFVDUPAWLWDWBUNZURZVRWDWCUGZVEMWFVGZAWRURZW
+      SWTXAWLWDFUNZWSAWLWQVFXAXBVRWEUNZABCEFGJLVRWDNOPVHZVIVRWDFFVJVKVLVMWKAWRX
+      BXCURXDABCEFGJLWDVRNOPVHVNVO $.
   $}
 
   ${
