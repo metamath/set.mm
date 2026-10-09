@@ -182669,6 +182669,41 @@ $)
   $}
 
   ${
+    $d D u v w x $.  $d D y $.  $d D x z $.  $d F f $.  $d F u v w x $.
+    $d F y $.  $d F x z $.  $d I f $.  $d I z $.  $d S u v w $.  $d S z $.
+    $d X f $.  $d X u v w x $.  $d X y $.  $d X x z $.  $d Y f $.
+    $d Y u v w x $.  $d Y y $.  $d Y x z $.  $d ph u v w $.  $d ph z $.
+    gsumbagdiag.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+    gsumbagdiag.s $e |- S = { y e. D | y oR <_ F } $.
+    gsumbagdiag.f $e |- ( ph -> F e. D ) $.
+    $( Lemma for ~ gsumbagdiag .  (Contributed by Mario Carneiro, 5-Jan-2015.)
+       Remove a sethood hypothesis.  (Revised by SN, 6-Aug-2024.) $)
+    gsumbagdiaglem $p |- ( ( ph /\
+      ( X e. S /\ Y e. { x e. D | x oR <_ ( F oF - X ) } ) ) ->
+      ( Y e. S /\ X e. { x e. D | x oR <_ ( F oF - Y ) } ) ) $=
+      ( vz wcel cle wbr wa cn0 cvv vu vv vw cv cmin cof cofr simprr breq1 elrab
+      co crab sylib simpld simprd wf adantr simprl elrab2 psrbagf syl psrbagcon
+      syl3anc ffnd fndmexd w3a wi cr letr syl3an adantl caoftrn mp2and sylanbrc
+      nn0re cfv wb ffvelcdmda caddc leaddsub2 leaddsub bitr3d ralbidva cz nn0zd
+      wral zsubcld feqmptd inidm eqidd offval ofrfval2 3bitr4d mpbid elrabd jca
+      ) AIEOZJBUDZGIUEUFZUKZPUGZQZBDULOZRZRZJEOZIWRGJWSUKZXAQZBDULOXEJDOZJGXAQZ
+      XFXEXIJWTXAQZXEXCXIXKRAWQXCUHXBXKBJDWRJWTXAUIUJUMZUNZXEXKWTGXAQZXJXEXIXKX
+      LUOZXEWTDOZXNXEGDOZHSIUPZIGXAQZXPXNRAXQXDMUQZXEIDOZXRXEYAXSXEWQYAXSRAWQXC
+      URCUDZGXAQZXSCIDEYBIGXAUILUSUMZUNZDFIHKUTVAZXEYAXSYDUODFGIHKVBVCZUOXEUAUB
+      UCHPSPPJWTGTXEHGDXTXEHSGXEXQHSGUPXTDFGHKUTVAZVDZVEZXEXIHSJUPXMDFJHKUTVAZX
+      EXPHSWTUPXEXPXNYGUNDFWTHKUTVAYHUAUDZSOZUBUDZSOZUCUDZSOZVFYLYNPQYNYPPQRYLY
+      PPQVGZXEYMYLVHOYOYNVHOYQYPVHOYRYLVOYNVOYPVOYLYNYPVIVJVKVLVMYCXJCJDEYBJGXA
+      UILUSVNXEXHIXGXAQZBIDWRIXGXAUIYEXEXKYSXOXENUDZJVPZYTGVPZYTIVPZUEUKZPQZNHW
+      FUUCUUBUUAUEUKZPQZNHWFXKYSXEUUEUUGNHXEYTHORZUUCSOZUUASOZUUBSOZUUEUUGVQZXE
+      HSYTIYFVRZXEHSYTJYKVRZXEHSYTGYHVRZUUIUUCVHOZUUJUUAVHOZUUKUUBVHOZUULUUCVOU
+      UAVOUUBVOUUPUUQUURVFUUCUUAVSUKUUBPQUUEUUGUUCUUAUUBVTUUCUUAUUBWAWBVJVCWCXE
+      NHUUAUUDPJWTTSWDYJUUNUUHUUBUUCUUHUUBUUOWEZUUHUUCUUMWEWGXENHSJYKWHXENHHUUB
+      UUCUEHGITTYIXEHSIYFVDYJYJHWIZUUHUUBWJZUUHUUCWJWKWLXENHUUCUUFPIXGTSWDYJUUM
+      UUHUUBUUAUUSUUHUUAUUNWEWGXENHSIYFWHXENHHUUBUUAUEHGJTTYIXEHSJYKVDYJYJUUTUV
+      AUUHUUAWJWKWLWMWNWOWP $.
+  $}
+
+  ${
     $d g h k p x y D $.  $d f g h k p x y I $.  $d g h k p x K $.
     $d g h k p x ph $.  $d g h k p x R $.  $d x p V $.
     psrbas.s $e |- S = ( I mPwSer R ) $.
