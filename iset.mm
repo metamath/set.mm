@@ -58629,6 +58629,20 @@ $)
   $}
 
   ${
+    $d F f g x $.  $d G f g x $.  $d R f g x $.
+    $( Applying a function operation to two functions which are sets yields a
+       set.  (Contributed by Jim Kingdon, 9-Oct-2026.) $)
+    ofovex $p |- ( ( F e. V /\ G e. W ) -> ( F oF R G ) e. _V ) $=
+      ( vx vf vg wcel co cdm cin cv cfv cmpt cvv wceq elex adantr dmeq wa dmexg
+      cof adantl inex1g syl mptexd ineq1d oveq1d mpteq12dv ineq2d oveq2d ovmpog
+      fveq1 df-of syl3anc eqeltrd ) BDIZCEIZUAZBCAUCZJZFBKZCKZLZFMZBNZVFCNZAJZO
+      ZPUTBPIZCPIZVJPIVBVJQURVKUSBDRSUSVLURCERUDUTFVEVIPUTVCPIZVEPIURVMUSBDUBSV
+      CVDPUEUFUGZGHBCPPFGMZKZHMZKZLZVFVONZVFVQNZAJZOVJVAFVCVRLZVGWAAJZOPVOBQZFV
+      SWBWCWDWEVPVCVRVOBTUHWEVTVGWAAVFVOBUNUIUJVQCQZFWCWDVEVIWFVRVDVCVQCTUKWFWA
+      VHVGAVFVQCUNULUJFAGHUOUMUPVNUQ $.
+  $}
+
+  ${
     $d R u v w $.  $d u v w x $.
     nfof.1 $e |- F/_ x R $.
     $( Hypothesis builder for function operation.  (Contributed by Mario
