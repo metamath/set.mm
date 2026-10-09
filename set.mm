@@ -579516,6 +579516,14 @@ $)
     CZBQCGUEGJBBKLABBMNOUBUCRSUBUCTUA $.
   $( $j usage 'xoromon' avoids 'ax-reg' 'ax-inf' 'ax-inf2'; $)
 
+  $( Reconstruction of a member of a nested Cartesian product in terms of its
+     ordered triple components.  (Contributed by BTernaryTau, 9-Oct-2026.) $)
+  ot1st2nd $p |- ( A e. ( ( B X. C ) X. D ) -> A =
+      <. ( 1st ` ( 1st ` A ) ) , ( 2nd ` ( 1st ` A ) ) , ( 2nd ` A ) >. ) $=
+    ( cxp wcel c1st cfv c2nd cop cotp 1st2nd2 wceq xp1st syl opeq1d eqtrd df-ot
+    eqtr4di ) ABCEZDEFZAAGHZGHZUBIHZJZAIHZJZUCUDUFKUAAUBUFJUGATDLUAUBUEUFUAUBTF
+    UBUEMATDNUBBCLOPQUCUDUFRS $.
+
   ${
     $d A x y z $.  $d B x y z $.  $d C x y z $.  $d D x y z $.  $d E x y z $.
     omeueq.1 $e |- ( ph -> A e. On ) $.
