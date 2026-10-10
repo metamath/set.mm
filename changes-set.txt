@@ -94,6 +94,7 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+10-Oct-26 f1od2       [same]      Moved from TA's mathbox to main set.mm
 24-Sep-26 r1omfv      dfhf2       Moved from BTT's mathbox to main set.mm
 24-Sep-26 r1om        hfom
 24-Sep-26 r1omALT     hfomALT
