@@ -182262,10 +182262,14 @@ $(
 $)
 
   $c mPwSer $. $( Multivariate power series $)
+  $c mVar $. $( Multivariate power series variables $)
   $c mPoly $. $( Multivariate polynomial $)
 
   $( Multivariate power series. $)
   cmps $a class mPwSer $.
+
+  $( Multivariate power series variables. $)
+  cmvr $a class mVar $.
 
   $( Multivariate polynomials. $)
   cmpl $a class mPoly $.
@@ -182289,6 +182293,13 @@ $)
              ( ( d X. { x } ) oF ( .r ` r ) f ) ) >. ,
         <. ( TopSet ` ndx ) ,
              ( Xt_ ` ( d X. { ( TopOpen ` r ) } ) ) >. } ) ) $.
+
+    $( Define the generating elements of the power series algebra.
+       (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+    df-mvr $a |- mVar = ( i e. _V , r e. _V |-> ( x e. i |->
+      ( f e. { h e. ( NN0 ^m i ) | ( `' h " NN ) e. Fin } |->
+        if ( f = ( y e. i |-> if ( y = x , 1 , 0 ) ) ,
+             ( 1r ` r ) , ( 0g ` r ) ) ) ) ) $.
   $}
 
   ${
@@ -215876,6 +215887,9 @@ htmldef "algSc" as "algSc";
 htmldef "mPwSer" as " mPwSer ";
   althtmldef "mPwSer" as " mPwSer ";
   latexdef "mPwSer" as "\mathrm{mPwSer}";
+htmldef "mVar" as " mVar ";
+  althtmldef "mVar" as " mVar ";
+  latexdef "mVar" as "\mathrm{mVar}";
 htmldef "mPoly" as " mPoly ";
   althtmldef "mPoly" as " mPoly ";
   latexdef "mPoly" as "\mathrm{mPoly}";
