@@ -183542,6 +183542,21 @@ $)
       IJLMNOPQRSUIUJAUAKWDWKHWEUOWEUKVRKUDZFCWCWJWLWBWIEMWLWAWHVPWLBHVTWGWLVSWF
       UEUFVRKVQULUMUNUPUMUNTAFCWJUOAGUCUQURUSUTVAGVBHVCVDZCUOOVCUOUOVEVJVBUOVAA
       HUOVAWMUOVAVFVGAHJRVHVBHUOUOVCVIVKVLVMVNVO $.
+
+    ${
+      mvrval2.f $e |- ( ph -> F e. D ) $.
+      $( Value of the generating elements of the power series structure.
+         (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+      mvrval2 $p |- ( ph -> ( ( V ` X ) ` F ) =
+          if ( F = ( y e. I |-> if ( y = X , 1 , 0 ) ) , .1. , .0. ) ) $=
+        ( vf cfv cv wceq c1 cc0 cif cmpt mvrval fveq1d cvv eqid eqeq1 ifbid c0g
+        cmgp wcel ringidvalg syl wfn mgpex funfvex funfni sylancr eqeltrd elexd
+        fn0g eqeltrid ifexd fvmptd3 eqtrd ) AGKIUCZUCGUBCUBUDZBHBUDKUEUFUGUHUIZ
+        UEZEMUHZUIZUCGVOUEZEMUHZAGVMVRABCDEUBFHIJKLMNOPQRSTUJUKAUBGVQVTCVRULVRU
+        MVNGUEVPVSEMVNGVOUNUOUAAVSEMULULAEDUQUCZUPUCZULADLURZEWBUESDEWALWAUMZQU
+        SUTAUPULVAZWAULURZWBULURZVHAWCWFSDWALWDVBUTWGULWAUPWAUPVCVDVEVFAMDUPUCZ
+        ULPAWEDULURWHULURZVHADLSVGWIULDUPDUPVCVDVEVIVJVKVL $.
+    $}
   $}
 
   ${
