@@ -141293,8 +141293,8 @@ $)
       JUKULUM $.
   $}
 
-  $( No number between ` 1 ` and ` M - 1 ` divides ` M ` .  (Contributed by
-     Mario Carneiro, 24-Jan-2015.) $)
+  $( No number from ` 1 ` to ` M - 1 ` is a multiple of ` M ` .  (Contributed
+     by Mario Carneiro, 24-Jan-2015.) $)
   fzm1ndvds $p |- ( ( M e. NN /\ N e. ( 1 ... ( M - 1 ) ) ) -> -. M || N ) $=
     ( cn wcel c1 cmin co cfz wa cdvds wbr cle wn elfzle2 adantl elfzelz syl2anc
     clt cz wb nnz adantr zltlem1 mpbird elfznn nnzd zltnle mpbid wi dvdsle mtod
@@ -168476,6 +168476,254 @@ $)
   $}
 
   ${
+    $d .+ w y z $.  $d A k q w y z $.  $d B k $.  $d C k q w y z $.
+    $d D k q w y z $.  $d G w y z $.  $d Y w y z $.  $d k ph q w y z $.
+    gsummptfidmsplit.b $e |- B = ( Base ` G ) $.
+    gsummptfidmsplit.p $e |- .+ = ( +g ` G ) $.
+    gsummptfidmsplit.g $e |- ( ph -> G e. CMnd ) $.
+    gsummptfidmsplit.a $e |- ( ph -> A e. Fin ) $.
+    gsummptfidmsplit.y $e |- ( ( ph /\ k e. A ) -> Y e. B ) $.
+    gsummptfidmsplit.i $e |- ( ph -> ( C i^i D ) = (/) ) $.
+    gsummptfidmsplit.u $e |- ( ph -> A = ( C u. D ) ) $.
+    $( Split a group sum expressed as mapping with a finite domain into two
+       parts.  (Contributed by AV, 23-Jul-2019.) $)
+    gsummptfidmsplit $p |- ( ph -> ( G gsum ( k e. A |-> Y ) )
+                                    = ( ( G gsum ( k e. C |-> Y ) )
+                                        .+ ( G gsum ( k e. D |-> Y ) ) ) ) $=
+      ( cgsu co wceq wcel vw vy vz vq cmpt cin cv csn cun mpteq1 oveq2d mpteq1d
+      c0 ineq2 oveq12d eqeq12d c0g cfv cmnd cmnmndd mndidcl mndlid syl2anc2 in0
+      eqid ax-mp oveq2i syl eqtrid cfn wa wi cres ad2antrr simplll simpr sseldd
+      wss wb eleq1d adantl wo elun mpjaodan syl2anc fmpttd gsump1 ssun1 resmptd
+      a1i wral ralrimiva sylc fvmpts eqtrd adantr inss2 sstrid ad3antrrr eleq2d
+      wdc sylib wn orc df-dc sylibr disjel olcd jaod syl3anc dcand dcbii ssfidc
+      ex elin sselda gsumclfi adantlr wf simp-4l sseqtrrid ad4antr elinel1 indi
+      syl13anc snssi dfss1 uneq2d feq2d mpbid sylnibr sseqtrri sylanblrc disjsn
+      con3i biimpri un0 eqtrdi eqtr4d df-ss gsum0cmn 3eqtr4rd csb simprl simprr
+      mpt0 eldifad elsni mpbird bilani simplr eldifbd vsnid elun2 nfcsb1v nfel1
+      ccmn cdif csbeq1a rspc sylancr oveq1d biimpa fissfi r19.21bi cmn32 3eqtrd
+      ineqcom sylan ssun2 cmncom mndass findcard2sd ) AHGBIUEZQRZHGDBUFZIUEZQRZ
+      HGEBUFZIUEZQRZFRZHGDIUEZQRZHGEIUEZQRZFRAHGUAUGZIUEZQRZHGDUWGUFZIUEZQRZHGE
+      UWGUFZIUEZQRZFRZSHGUMIUEZQRZHGDUMUFZIUEZQRZHGEUMUFZIUEZQRZFRZSHGUBUGZIUEZ
+      QRZHGDUXFUFZIUEZQRZHGEUXFUFZIUEZQRZFRZSZHGUXFUCUGZUHZUIZIUEZQRZHGDUXSUFZI
+      UEZQRZHGEUXSUFZIUEZQRZFRZSZUVOUWBSUAUBUCBUWGUMSZUWIUWRUWPUXEUYJUWHUWQHQGU
+      WGUMIUJUKUYJUWLUXAUWOUXDFUYJUWKUWTHQUYJGUWJUWSIUWGUMDUNULUKUYJUWNUXCHQUYJ
+      GUWMUXBIUWGUMEUNULUKUOUPUWGUXFSZUWIUXHUWPUXOUYKUWHUXGHQGUWGUXFIUJUKUYKUWL
+      UXKUWOUXNFUYKUWKUXJHQUYKGUWJUXIIUWGUXFDUNULUKUYKUWNUXMHQUYKGUWMUXLIUWGUXF
+      EUNULUKUOUPUWGUXSSZUWIUYAUWPUYHUYLUWHUXTHQGUWGUXSIUJUKUYLUWLUYDUWOUYGFUYL
+      UWKUYCHQUYLGUWJUYBIUWGUXSDUNULUKUYLUWNUYFHQUYLGUWMUYEIUWGUXSEUNULUKUOUPUW
+      GBSZUWIUVOUWPUWBUYMUWHUVNHQGUWGBIUJUKUYMUWLUVRUWOUWAFUYMUWKUVQHQUYMGUWJUV
+      PIUWGBDUNULUKUYMUWNUVTHQUYMGUWMUVSIUWGBEUNULUKUOUPAHUQURZUYNFRZUYNUXEUWRA
+      HUSTZUYNCTUYOUYNSAHLUTZCHUYNJUYNVEZVACFHUYNUYNJKUYRVBVCAUXAUYNUXDUYNFAUXA
+      UWRUYNUWTUWQHQUWSUMSUWTUWQSDVDGUWSUMIUJVFVGAUWRHUMQRZUYNUWQUMHQGIUUFVGAHU
+      UQTZUYSUYNSLHUUAVHVIZVIAUXDUWRUYNUXCUWQHQUXBUMSUXCUWQSEVDGUXBUMIUJVFVGVUA
+      VIUOVUAUUBAUXFVJTZVKZUXFBVRZUXQBUXFUURTZVKZVKZUXQDTZUXPUYIVLUXQETZVUGVUHV
+      KZUXPUYIVUJUXPVKUYAUXKGUXQIUUCZFRZUXNFRZUYHVUGUXPUYAVUMSZVUHVUGUXPVKZUYAU
+      XHVUKFRZUXOVUKFRZVUMVUGUYAVUPSUXPVUGUYAHUXTUXFVMZQRZUXQUXTURZFRVUPVUGCFUX
+      THBUXFUXQJKAUYTVUBVUFLVNZVUGGUXSICVUGGUGZUXSTZVKZAVVBBTZICTZAVUBVUFVVCVOV
+      VDVVBUXFTZVVEVVBUXRTZVVDVVGVKUXFBVVBVUGVUDVVCVVGVUCVUDVUEUUDZVNVVDVVGVPVQ
+      VVDVVHVKVVEUXQBTZVUGVVJVVCVVHVUGUXQBUXFVUCVUDVUEUUEZUUGZVNVVHVVEVVJVSVVDV
+      VHVVBUXQBVVBUXQUUHVTWAUUIVVCVVGVVHWBVUGVVBUXFUXRWCUUJWDNWEWFAVUBVUFUUKZVV
+      LVUGUXQBUXFVVKUULZWGVUGVUSUXHVUTVUKFVUGVURUXGHQVUGGUXSUXFIUXFUXSVRVUGUXFU
+      XRWHWJWIUKVUGUXQUXSTZVUKCTZVUTVUKSUXQUXRTVVOUCUUMUXQUXRUXFUUNVFZVUGVVJVVF
+      GBWKZVVPVVLAVVRVUBVUFAVVFGBNWLVNVVFVVPGUXQBGVUKCGUXQIUUOUUPVVBUXQSIVUKCGU
+      XQIUUSVTUUTWMZGUXQIUXSUXTCUXTVEWNUVAUOWOWPVUOUXHUXOVUKFVUGUXPVPUVBVUOUYTU
+      XKCTZUXNCTZVVPVUQVUMSVUGUYTUXPVVAWPVUGVVTUXPVUGUXICUXJHUYNJUYRVVAVUGBVJTZ
+      UXIBVRUDUGZUXITZXAZUDBWKUXIVJTZAVWBVUBVUFMVNZVUGUXIUXFBDUXFWQVVIWRZVUGVWE
+      UDBVUGVWCBTZVKZVWCDTZVWCUXFTZVKZXAVWEVWJVWKVWLVWJEDUFUMSZVWKVWCETZWBZVWKX
+      AZVWJDEUFUMSZVWNAVWRVUBVUFVWIOWSZDEUMUVHZXBVWJVWCDEUIZTZVWPVUGVWIVXBAVWIV
+      XBVSVUBVUFABVXAVWCPWTVNUVCVWCDEWCXBZVWNVWKVWQVWOVWKVWQVLVWNVWKVWKVWKXCZWB
+      ZVWQVWKVXDXDVWKXEZXFWJVWNVWOVWQVWNVWOVKZVXEVWQVXGVXDVWKEDVWCXGXHVXFXFXNXI
+      WMVUGVWLXAZUDBVUGVUDVWBVUBVXHUDBWKVVIVWGVVMUDBUXFUVDXJUVEZXKVWDVWMVWCDUXF
+      XOXLXFWLUDBUXIXMXJZVUGGUXIICVUGVVBUXITZVKAVVEVVFAVUBVUFVXKVOVUGUXIBVVBVWH
+      XPNWEWFXQZWPVUGVWAUXPVUGUXLCUXMHUYNJUYRVVAVUGVWBUXLBVRVWCUXLTZXAZUDBWKUXL
+      VJTZVWGVUGUXLUXFBEUXFWQVVIWRZVUGVXNUDBVWJVWOVWLVKZXAVXNVWJVWOVWLVWJVWRVWP
+      VWOXAZVWSVXCVWRVWKVXRVWOVWRVWKVXRVWRVWKVKZVWOVWOXCZWBZVXRVXSVXTVWODEVWCXG
+      XHVWOXEZXFXNVWOVXRVLVWRVWOVYAVXRVWOVXTXDVYBXFWJXIWMVXIXKVXMVXQVWCEUXFXOXL
+      XFWLUDBUXLXMXJZVUGGUXLICVUGVVBUXLTZVKAVVEVVFAVUBVUFVYDVOVUGUXLBVVBVXPXPNW
+      EWFXQZWPVUGVVPUXPVVSWPCFHUXKUXNVUKJKUVFYEUVGZXRVUJUYHVUMSZUXPVUJUYDVULUYG
+      UXNFVUJUYDHUYCUXIVMZQRZUXQUYCURZFRVULVUJCFUYCHDUXIUXQJKVUGUYTVUHVVAWPVUJU
+      YBCUYCXSZUXIUXRUIZCUYCXSZVUJGUYBICVUJVVBUYBTZVKZAVVEVVFAVUBVUFVUHVYNXTVYO
+      DBVVBADBVRZVUBVUFVUHVYNAVXADBDEWHPYAZYBVYNVVBDTVUJVVBDUXSYCWAVQNWEWFVUHVY
+      KVYMVSVUGVUHUYBVYLCUYCVUHUYBUXIDUXRUFZUIZVYLDUXFUXRYDZVUHVYRUXRUXIVUHUXRD
+      VRVYRUXRSUXQDYFUXRDYGXBYHVIYIWAYJVUGVWFVUHVXJWPVUGVUHVPZVUGUXQUXITZXCZVUH
+      VUGUXQUXFTZXCZWUCVVNWUEVUHWUDVKZWUBWUFWUDVUHWUDVPYOUXQDUXFXOYKVHWPWGVUJVY
+      IUXKVYJVUKFVUGVYIUXKSVUHVUGVYHUXJHQVUGGUYBUXIIUXIUYBVRVUGUXIVYSUYBUXIVYRW
+      HVYTYLWJWIUKWPVUJUXQUYBTZVVPVYJVUKSVUJVUHVVOWUGWUAVVQUXQDUXSXOYMVUGVVPVUH
+      VVSWPGUXQIUYBUYCCUYCVEWNWEUOWOVUJUYFUXMHQVUJGUYEUXLIVUJVUIXCZUYEUXLSVUJVW
+      RVUHWUHAVWRVUBVUFVUHOWSWUADEUXQXGWEWUHUYEUXLEUXRUFZUIZUXLEUXFUXRYDZWUHWUJ
+      UXLUMUIUXLWUHWUIUMUXLWUIUMSWUHEUXQYNYPYHUXLYQYRVIVHULUKUOWPYSXNVUGVUIVKZU
+      XPUYIWULUXPVKUYAVUMUYHVUGUXPVUNVUIVYFXRWULVYGUXPWULUYHUXKUXNVUKFRZFRZVUMW
+      ULUYDUXKUYGWUMFWULUYCUXJHQWULGUYBUXIIWULVUHXCZUYBUXISVUGVWNVUIWUOAVWNVUBV
+      UFAVWRVWNOVWTXBVNEDUXQXGUVIWUOUYBVYSUXIVYTWUOVYSUXIUMUIUXIWUOVYRUMUXIVYRU
+      MSWUODUXQYNYPYHUXIYQYRVIVHULUKWULUYGHUYFUXLVMZQRZUXQUYFURZFRWUMWULCFUYFHE
+      UXLUXQJKVUGUYTVUIVVAWPWULUYECUYFXSZUXLUXRUIZCUYFXSZWULGUYEICWULVVBUYETZVK
+      ZAVVEVVFAVUBVUFVUIWVBXTWVCEBVVBAEBVRZVUBVUFVUIWVBAVXAEBEDUVJPYAZYBWVBVVBE
+      TWULVVBEUXSYCWAVQNWEWFVUIWUSWVAVSVUGVUIUYEWUTCUYFVUIUYEWUJWUTWUKVUIWUIUXR
+      UXLVUIUXREVRWUIUXRSUXQEYFUXREYGXBYHVIYIWAYJVUGVXOVUIVYCWPVUGVUIVPZVUGUXQU
+      XLTZXCZVUIVUGWUEWVHVVNWUEVUIWUDVKZWVGWVIWUDVUIWUDVPYOUXQEUXFXOYKVHWPWGWUL
+      WUQUXNWURVUKFVUGWUQUXNSVUIVUGWUPUXMHQVUGGUYEUXLIUXLUYEVRVUGUXLWUJUYEUXLWU
+      IWHWUKYLWJWIUKWPWULUXQUYETZVVPWURVUKSWULVUIVVOWVJWVFVVQUXQEUXSXOYMVUGVVPV
+      UIVVSWPGUXQIUYEUYFCUYFVEWNWEUOWOUOVUGWUNVUMSVUIVUGWUNUXKVUKUXNFRZFRZVUMVU
+      GWUMWVKUXKFVUGUYTVWAVVPWUMWVKSVVAVYEVVSCFHUXNVUKJKUVKXJUKVUGUYPVVTVVPVWAV
+      UMWVLSAUYPVUBVUFUYQVNVXLVVSVYECFHUXKVUKUXNJKUVLYEYSWPWOWPYSXNVUGUXQVXATZV
+      UHVUIWBVUGVVJWVMVVLAVVJWVMVSVUBVUFABVXAUXQPWTVNYJUXQDEWCXBWDMUVMAUVRUWDUW
+      AUWFFAUVQUWCHQAGUVPDIAVYPUVPDSVYQDBYTXBULUKAUVTUWEHQAGUVSEIAWVDUVSESWVEEB
+      YTXBULUKUOWO $.
+
+    gsummptfidmsplitres.f $e |- F = ( k e. A |-> Y ) $.
+    $( Split a group sum expressed as mapping with a finite domain into two
+       parts using restrictions.  (Contributed by AV, 23-Jul-2019.) $)
+    gsummptfidmsplitres $p |- ( ph -> ( G gsum F )
+                                      = ( ( G gsum ( F |` C ) )
+                                          .+ ( G gsum ( F |` D ) ) ) ) $=
+      ( cgsu co cmpt cres gsummptfidmsplit wceq a1i reseq1i cun ssun1 sseqtrrid
+      oveq2i resmptd eqtrid oveq2d ssun2 oveq12d 3eqtr4d ) AIGBJUAZSTZIGDJUAZST
+      ZIGEJUAZSTZFTIHSTZIHDUBZSTZIHEUBZSTZFTABCDEFGIJKLMNOPQUCVCURUDAHUQISRUJUE
+      AVEUTVGVBFAVDUSISAVDUQDUBUSHUQDRUFAGBDJADEUGZDBDEUHQUIUKULUMAVFVAISAVFUQE
+      UBVAHUQERUFAGBEJAVHEBEDUNQUIUKULUMUOUP $.
+  $}
+
+  ${
+    $d k M $.
+    gsumsnd.b $e |- B = ( Base ` G ) $.
+    gsumsndcmn.g $e |- ( ph -> G e. CMnd ) $.
+    gsumsnd.m $e |- ( ph -> M e. V ) $.
+    gsumsnd.c $e |- ( ph -> C e. B ) $.
+    gsumsnd.s $e |- ( ( ph /\ k = M ) -> A = C ) $.
+    ${
+      $d A q $.  $d B q $.  $d C q $.  $d M k q $.  $d ph q $.
+      gsumsnfd.p $e |- F/ k ph $.
+      gsumsnfd.c $e |- F/_ k C $.
+      $( Group sum of a singleton, deduction form, using bound-variable
+         hypotheses instead of distinct variable conditions.  (Contributed by
+         Mario Carneiro, 19-Dec-2014.)  (Revised by Thierry Arnoux,
+         28-Mar-2018.)  (Revised by AV, 11-Dec-2019.) $)
+      gsumsnfdcmn $p |- ( ph -> ( G gsum ( k e. { M } |-> A ) ) = C ) $=
+        ( vq co c0 wcel wceq csn cmpt cgsu cres cfv cplusg c0g wf cun cv csb wa
+        eqid wral elsni ex syl5 ralrimi nfcsb1v nfeq csbeq1a eqeq1d rspc adantr
+        mpan9 eqeltrd nfcv cbvmpt fmptd uncom un0 eqtri feq2i sylibr cfn 0fi wn
+        a1i noel gsump1 res0 oveq2i ccmn gsum0cmn syl eqtrid cvv nfv vex simpll
+        nfan wnfc simpr simplr eqtrd syl2anc csbiedf snidg fvmptd2 oveq12d cmnd
+        cmnmndd mndlid 3eqtrd ) AFEGUAZBUBZUCQFXFRUDZUCQZGXFUEZFUFUEZQFUGUEZDXJ
+        QZDACXJXFFHRGIXJUMZJAXECXFUHRXEUIZCXFUHAPXEEPUJZBUKZCXFAXOXESZULXPDCABD
+        TZEXEUNXQXPDTZAXREXENEUJZXESXTGTZAXRXTGUOAYAXRMUPUQURXRXSEXOXEEXPDEXOBU
+        SZOUTXTXOTZBXPDEXOBVAZVBVCVEADCSZXQLVDVFEPXEBXPPBVGYBYDVHZVIXNXECXFXNXE
+        RUIXERXEVJXEVKVLVMVNRVOSAVPVRKGRSVQAGVSVRVTAXHXKXIDXJAXHFRUCQZXKXGRFUCX
+        FWAWBAFWCSYGXKTJFWDWEWFAPGXPDXEXFCYFAXOGTZULZEXOBDWGAYHENYHEWHWKEDWLYIO
+        VRXOWGSYIPWIVRYIYCULZAYAXRAYHYCWJYJXTXOGYIYCWMAYHYCWNWOMWPWQAGHSGXESKGH
+        WRWELWSWTAFXASYEXLDTAFJXBLCXJFDXKIXMXKUMXCWPXD $.
+    $}
+
+    $d k C $.  $d k ph $.
+    $( Group sum of a singleton, deduction form.  (Contributed by Thierry
+       Arnoux, 30-Jan-2017.)  (Proof shortened by AV, 11-Dec-2019.) $)
+    gsumsndcmn $p |- ( ph -> ( G gsum ( k e. { M } |-> A ) ) = C ) $=
+      ( nfv nfcv gsumsnfdcmn ) ABCDEFGHIJKLMAENEDOP $.
+  $}
+
+  ${
+    $d k A $.  $d k B $.  $d k G $.  $d k M $.  $d k ph $.
+    gsumunsnd.b $e |- B = ( Base ` G ) $.
+    gsumunsnd.p $e |- .+ = ( +g ` G ) $.
+    gsumunsnd.g $e |- ( ph -> G e. CMnd ) $.
+    gsumunsnd.a $e |- ( ph -> A e. Fin ) $.
+    gsumunsnd.f $e |- ( ( ph /\ k e. A ) -> X e. B ) $.
+    gsumunsnd.m $e |- ( ph -> M e. V ) $.
+    gsumunsnd.d $e |- ( ph -> -. M e. A ) $.
+    gsumunsnd.y $e |- ( ph -> Y e. B ) $.
+    gsumunsnd.s $e |- ( ( ph /\ k = M ) -> X = Y ) $.
+    ${
+      gsumunsnfd.0 $e |- F/_ k Y $.
+      $( Append an element to a finite group sum, using bound-variable
+         hypotheses instead of distinct variable conditions.  (Contributed by
+         Mario Carneiro, 19-Dec-2014.)  (Revised by AV, 11-Dec-2019.) $)
+      gsumunsnfd $p |- ( ph -> ( G gsum ( k e. ( A u. { M } ) |-> X ) ) =
+        ( ( G gsum ( k e. A |-> X ) ) .+ Y ) ) $=
+        ( csn cun cmpt cgsu co cfn wcel wn unsnfi syl3anc cv wo elun wceq elsni
+        sylan2 adantr eqeltrd jaodan sylan2b cin disjsn sylibr gsummptfidmsplit
+        wa c0 eqidd nfv gsumsnfdcmn oveq2d eqtrd ) AFEBGUAZUBZIUCUDUEFEBIUCUDUE
+        ZFEVLIUCUDUEZDUEVNJDUEAVMCBVLDEFIKLMABUFUGGHUGGBUGUHZVMUFUGNPQBGHUIUJEU
+        KZVMUGAVQBUGZVQVLUGZULICUGZVQBVLUMAVRVTVSOAVSVEIJCVSAVQGUNIJUNVQGUOSUPA
+        JCUGVSRUQURUSUTAVPBVLVAVFUNQBGVBVCAVMVGVDAVOJVNDAICJEFGHKMPRSAEVHTVIVJV
+        K $.
+    $}
+
+    $d k Y $.
+    $( Append an element to a finite group sum.  (Contributed by Mario
+       Carneiro, 19-Dec-2014.)  (Revised by AV, 2-Jan-2019.)  (Proof shortened
+       by AV, 11-Dec-2019.) $)
+    gsumunsnd $p |- ( ph -> ( G gsum ( k e. ( A u. { M } ) |-> X ) ) =
+      ( ( G gsum ( k e. A |-> X ) ) .+ Y ) ) $=
+      ( nfcv gsumunsnfd ) ABCDEFGHIJKLMNOPQRSEJTUA $.
+  $}
+
+  ${
+    $d A w y z $.  $d B w y z $.  $d F w y z $.  $d G w y z $.  $d ph w y z $.
+    gsumresfi.b $e |- B = ( Base ` G ) $.
+    gsumresfi.z $e |- .0. = ( 0g ` G ) $.
+    gsumresfi.g $e |- ( ph -> G e. CMnd ) $.
+    gsumresfi.a $e |- ( ph -> A e. Fin ) $.
+    gsumresfi.f $e |- ( ph -> F : A --> B ) $.
+
+    ${
+      $d .0. w x $.  $d A k $.  $d A q z $.  $d A r y z $.  $d A s y $.
+      $d A w x z $.  $d B r y z $.  $d B w y z $.  $d F k $.  $d F r y z $.
+      $d F w x z $.  $d G r y z $.  $d G w y z $.  $d W q z $.  $d W r y z $.
+      $d W s y $.  $d W w x z $.  $d ph r y z $.  $d ph w y z $.
+      gsumresfi.s $e |- ( ph -> A. x e. ( A \ W ) ( F ` x ) = .0. ) $.
+      gsumresfi.w $e |- ( ph -> W e. Fin ) $.
+      gsumresfi.ss $e |- ( ph -> W C_ A ) $.
+      $( Extend a finite group sum by padding outside with zeroes.
+         (Contributed by Mario Carneiro, 15-Dec-2014.)  (Revised by Mario
+         Carneiro, 24-Apr-2016.)  (Revised by AV, 3-Jun-2019.)  (Revised by Jim
+         Kingdon, 24-Sep-2026.) $)
+      gsumresfi $p |- ( ph -> ( G gsum ( F |` W ) ) = ( G gsum F ) ) $=
+        ( cgsu co wceq oveq2d vw vy vz vr vs vq cres cin cdm wf wrel frel resdm
+        3syl fdmd reseq2d eqtr3d cv c0 csn cun ineq2 reseq2 eqeq12d in0 reseq2i
+        oveq2i a1i cfn wcel wa wss cdif wn cfv cplusg cmpt simpr ad2antrr inss2
+        simprl sstrid feqresmpt adantr oveq1d eqid ccmn simplr sselda ffvelcdmd
+        simprr eldifad eldifbd fveq2 adantl gsumunsnd snssd unssd 3eqtr4d snssi
+        wel indi dfss1 sylib uneq2d eqtrid eqtrd wdc wral fissfi syl3anc ssralv
+        sylc infidc syl2anc elinel2 nsyl 3eqtr4rd cmnd cmnmndd fssresd gsumclfi
+        sylan2 mndrid fveqeq2 ad4antr eldifd rspcdva disjsn eqtrdi sylan9eqr wo
+        biimpri un0 eleq1w dcbid exmiddc syl mpjaodan ex findcard2sd 3eqtr2rd
+        df-ss ) AFEQRFECUGZQRZFEGCUHZUGZQRZFEGUGZQRAEUUDFQAEEUIZUGZEUUDACDEUJZE
+        UKUUKESMCDEULEUMUNAUUJCEACDEMUOUPUQTAFEGUAURZUHZUGZQRZFEUUMUGZQRZSFEGUS
+        UHZUGZQRZFEUSUGZQRZSZFEGUBURZUHZUGZQRZFEUVEUGZQRZSZFEGUVEUCURZUTZVAZUHZ
+        UGZQRZFEUVNUGZQRZSZUUHUUESUAUBUCCUUMUSSZUUPUVAUURUVCUWAUUOUUTFQUWAUUNUU
+        SEUUMUSGVBUPTUWAUUQUVBFQUUMUSEVCTVDUUMUVESZUUPUVHUURUVJUWBUUOUVGFQUWBUU
+        NUVFEUUMUVEGVBUPTUWBUUQUVIFQUUMUVEEVCTVDUUMUVNSZUUPUVQUURUVSUWCUUOUVPFQ
+        UWCUUNUVOEUUMUVNGVBUPTUWCUUQUVRFQUUMUVNEVCTVDUUMCSZUUPUUHUURUUEUWDUUOUU
+        GFQUWDUUNUUFEUUMCGVBUPTUWDUUQUUDFQUUMCEVCTVDUVDAUUTUVBFQUUSUSEGVEVFVGVH
+        AUVEVIVJZVKZUVECVLZUVLCUVEVMVJZVKZVKZUVKUVTUWJUVKVKZUVLGVJZUVTUWLVNZUWK
+        UWLVKZUVJUVLEVOZFVPVOZRZFUDUVFUDURZEVOZVQZQRZUWOUWPRZUVSUVQUWKUWQUXBSUW
+        LUWKUVJUXAUWOUWPUWKUVHUVJUXAUWJUVKVRZUWJUVHUXASUVKUWJUVGUWTFQUWJUDCDUVF
+        EAUULUWEUWIMVSZUWJUVFUVECGUVEVTUWFUWGUWHWAZWBZWCTWDUQWEWDUWJUVSUWQSZUVK
+        UWLUWJFUDUVNUWSVQZQRFUDUVEUWSVQZQRZUWOUWPRUVSUWQUWJUVEDUWPUDFUVLCUWSUWO
+        IUWPWFZAFWGVJUWEUWIKVSZAUWEUWIWHZUWJUDUBXAZVKCDUWREUWJUULUXNUXDWDUWJUVE
+        CUWRUXEWIZWJUWJUVLCUVEUWFUWGUWHWKZWLZUWJUVLCUVEUXPWMZUWJCDUVLEUXDUXQWJZ
+        UWRUVLSUWSUWOSUWJUWRUVLEWNWOZWPUWJUVRUXHFQUWJUDCDUVNEUXDUWJUVEUVMCUXEUW
+        JUVLCUXQWQZWRWCTUWJUVJUXJUWOUWPUWJUVIUXIFQUWJUDCDUVEEUXDUXEWCTWEWSZVSUW
+        NUVQFUDUVFUVMVAZUWSVQZQRZUXBUWNUVPUYDFQUWNUVPEUYCUGZUYDUWNUVOUYCEUWLUVO
+        UYCSUWKUWLUVOUVFGUVMUHZVAZUYCGUVEUVMXBZUWLUYGUVMUVFUWLUVMGVLUYGUVMSUVLG
+        WTUVMGXCXDXEXFWOUPUWJUYFUYDSUVKUWLUWJUDCDUYCEUXDUWJUVFUVMCUXFUYAWRWCVSX
+        GTUWJUYEUXBSUVKUWLUWJUVFDUWPUDFUVLCUWSUWOIUXKUXLUWJGVIVJZUEUBXAXHZUEGXI
+        ZUVFVIVJAUYJUWEUWIOVSUWJGCVLZUYKUECXIZUYLAUYMUWEUWIPVSUWJUWGCVIVJZUWEUY
+        NUXEAUYOUWEUWILVSUXMUECUVEXJXKUYKUEGCXLXMUEGUVEXNXOUWJUWRUVFVJZVKCDUWRE
+        UWJUULUYPUXDWDUYPUWJUXNUWRCVJUWRGUVEXPUXOYCWJUXQUWJUCUBXAUVLUVFVJUXRUVL
+        GUVEXPXQUXSUXTWPVSXGXRUWKUWMVKZUVJHUWPRZUVJUVSUVQUWJUYRUVJSZUVKUWMUWJFX
+        SVJUVJDVJUYSUWJFUXLXTUWJUVEDUVIFHIJUXLUXMUWJCDUVEEUXDUXEYAYBDUWPFUVJHIU
+        XKJYDXOVSUYQUVSUWQUYRUWJUXGUVKUWMUYBVSUYQUWOHUVJUWPUYQBURZEVOHSZUWOHSBC
+        GVMZUVLUYTUVLHEYEAVUABVUBXIUWEUWIUVKUWMNYFUYQUVLCGUWJUVLCVJUVKUWMUXQVSU
+        WKUWMVRYGYHTXGUWMUWKUVQUVHUVJUWMUVPUVGFQUWMUVOUVFEUWMUVOUYHUVFUYIUWMUYH
+        UVFUSVAUVFUWMUYGUSUVFUYGUSSUWMGUVLYIYMXEUVFYNYJXFUPTUXCYKXRUWKUWLXHZUWL
+        UWMYLUWJVUCUVKUWJUFURZGVJZXHZVUCUFCUVLVUDUVLSVUEUWLUFUCGYOYPAVUFUFCXIZU
+        WEUWIAUYMUYOUYJVUGPLOUFCGXJXKVSUXQYHWDUWLYQYRYSYTLUUAAUUGUUIFQAUUFGEAUY
+        MUUFGSPGCUUCXDUPTUUB $.
+    $}
+  $}
+
+  ${
     $d A f $.  $d F f $.  $d G f $.  $d H f $.  $d K f $.  $d f ph $.
     gsummhm.b $e |- B = ( Base ` G ) $.
     gsummhm.z $e |- .0. = ( 0g ` G ) $.
@@ -182458,6 +182706,64 @@ $)
         JYIYHWOWNWPYAXSYJYAXQYHXRYIYAUAJVKXQUUKWQXRYIUJYAUAJUGWRVRWSWTXAXDRXBAX
         ODGVPVPAUBVPXCEVPTXOVPTZXEAEULNXFUUMVPEUBEUBXGXHWDAUUHIYTDVPOUDVPVPUIXC
         UUJAJVPTYTVPTXIVQAJVCMXFVKJVPVPUDXJXKXLVSXAACDEFIJXOVCULLYDOSMNXMXN $.
+
+      psrlidm.t $e |- .x. = ( .r ` S ) $.
+      psrlidm.x $e |- ( ph -> X e. B ) $.
+      ${
+        $d .0. p y z $.  $d D g p y z $.  $d I g p y z $.  $d R g p y z $.
+        $d U p y z $.  $d X g p y z $.  $d p ph y z $.
+        $( The identity element of the ring of power series is a left identity.
+           (Contributed by Mario Carneiro, 29-Dec-2014.)  (Proof shortened by
+           AV, 8-Jul-2019.) $)
+        psrlidmfi $p |- ( ph -> ( U .x. X ) = X ) $=
+          ( vy vz vg vp co cbs cfv eqid psr1clfi psrmulclfi psrelbas ffnd cv wa
+          wcel cle cofr wbr crab cmin cof cmulr cmpt cgsu cc0 csn cxp simpr cfn
+          adantr crg psrmulvalfi cres fconstmpt fczpsrbag syl eqeltrid wral cn0
+          breq1 wf psrbagf adantl ffvelcdmda nn0ge0d ralrimiva wfn 0nn0 fconst6
+          ffn mp1i inidm wceq fvconst2g sylan eqidd ofrfval mpbird elrabd snssd
+          a1i resmptd oveq2d ccmn ringcmnd psrbaglefifi syl2anc ad2antrr bilani
+          elrab simpld syldan simprd psrbagcon syl3anc ffvelcdmd ringcld fmpttd
+          cdif weq fveq2 oveq2 fveq2d oveq12d eldifad eqeq1d eqeq1 ifbid eldifi
+          cif cvv sylan2 c0g elexd fvmptd3 eqtrd eqeltrd cui 1unit fn0g funfvex
+          funfni sylancr ifexd wn eldifn sylnib iffalsed oveq1d ringlzd rspcdva
+          velsn ring0cl c0ex xpexg sylancl snfig gsumresfi iftrue nn0cn subid1d
+          snex caofid0r ringlidm gsumsncmn 3eqtr3d 3eqtrd eqfnfvd ) AUDDHLGUHZL
+          ADEUIUJZUVLACDEFJKUVMUVLNUVMUKZQUAACEFGKHLNUAUBPOABCDEFHIJKMNOPQRSTUA
+          ULZUCUMUNUOADUVMLACDEFJKUVMLNUVNQUAUCUNZUOAUDUPZDURZUQZUVQUVLUJEUEUFU
+          PZUVQUSUTZVAZUFDVBZUEUPZHUJZUVQUWDVCVDZUHZLUJZEVEUJZUHZVFZVGUHZKVHVIZ
+          VJZHUJZUVQUWNUWFUHZLUJZUWIUHZUVQLUJZUVSUFCDEFGUWIJUEHLKUVQNUAUWIUKZUB
+          QAHCURUVRUVOVMZALCURUVRUCVMAUVRVKZAKVLURZUVROVMZAEVNURZUVRPVMZVOUVSEU
+          WKUWNVIZVPZVGUHEUEUXGUWJVFZVGUHZUWLUWRUVSUXHUXIEVGUVSUEUWCUXGUWJUVSUW
+          NUWCUVSUWBUWNUVQUWAVAZUFUWNDUVTUWNUVQUWAWCAUWNDURZUVRAUWNBKVHVFZDBKVH
+          VQAUXCUXMDUROBDJKVLQVRVSVTVMZUVSUXKVHBUPZUVQUJZUSVAZBKWAUVSUXQBKUVSUX
+          OKURZUQZUXPUVSKWBUXOUVQUVRKWBUVQWDADJUVQKQWEWFZWGWHWIUVSBKKVHUXPUSKUW
+          NUVQVLVLKWBUWNWDUWNKWJUVSKVHWBWKWLKWBUWNWMWNUVSKWBUVQUXTUOUXDUXDKWOUV
+          SVHWBURZUXRUXOUWNUJVHWPUYAUVSWKXDZKVHUXOWBWQWRUXSUXPWSWTXAXBXCZXEXFUV
+          SUGUWCUVMUWKEUXGMUVNRAEXGURZUVRAEPXHVMZUVSUVRUXCUWCVLURUXBUXDUFDJUVQK
+          QXIXJUVSUEUWCUWJUVMUVSUWDUWCURZUQZUVMEUWIUWEUWHUVNUWTAUXEUVRUYFPXKUVS
+          UYFUWDDURZUWEUVMURUYGUYHUWDUVQUWAVAZUYFUYHUYIUQZUVSUWBUYIUFUWDDUVTUWD
+          UVQUWAWCXMXLZXNZUVSDUVMUWDHUVSCDEFJKUVMHNUVNQUAUXAUNWGXOUYGDUVMUWGLAD
+          UVMLWDUVRUYFUVPXKUYGUWGDURZUWGUVQUWAVAZUYGUVRKWBUWDWDZUYIUYMUYNUQUVSU
+          VRUYFUXBVMUYGUYHUYOUYLDJUWDKQWEVSUYGUYHUYIUYKXPDJUVQUWDKQXQXRXNXSZXTY
+          AUVSUGUPZUWKUJZMWPUGUWCUXGYBZUVSUYQUYSURZUQZUYRUYQHUJZUVQUYQUWFUHZLUJ
+          ZUWIUHZMVUAUEUYQUWJVUEUWCUWKUVMUWKUKUEUGYCZUWEVUBUWHVUDUWIUWDUYQHYDVU
+          FUWGVUCLUWDUYQUVQUWFYEYFYGZVUAUYQUWCUXGUVSUYTVKZYHVUAVUEMUVMVUAUWJMWP
+          ZVUEMWPUEUYSUYQVUFUWJVUEMVUGYIUVSVUIUEUYSWAUYTUVSVUIUEUYSUVSUWDUYSURZ
+          UQZUWJMUWHUWIUHMVUKUWEMUWHUWIVUKUWEUWDUWNWPZIMYMZMVUKBUWDUXOUWNWPZIMY
+          MZVUMDHYNTBUEYCVUNVULIMUXOUWDUWNYJYKVUKUYHUYIVUJUVSUYFUYJUWDUWCUXGYLZ
+          UYKYOXNAVUMYNURUVRVUJAVULIMEUUAUJZYNAUXEIVUQURPEVUQIVUQUKSUUBVSZAMEYP
+          UJZYNRAYPYNWJEYNURVUSYNURZUUCAEVNPYQVUTYNEYPEYPUUDUUEUUFVTUUGXKYRVUKV
+          ULIMVUKUWDUXGURZVULVUJVVAUUHUVSUWDUWCUXGUUIWFUEUWNUUOUUJUUKYSUULVUKUV
+          MEUWIUWHMUVNUWTRAUXEUVRVUJPXKVUJUVSUYFUWHUVMURVUPUYPYOUUMYSWIVMVUHUUN
+          ZAMUVMURZUVRUYTAUXEVVCPUVMEMUVNRUUPVSXKYTYRVVBYSWIAUXGVLURZUVRAUWNYNU
+          RZVVDAUXCUWMYNURVVEOVHUUQUVEKUWMVLYNUURUUSUWNYNUUTVSVMUYCUVAUVSUYDUXL
+          UWRUVMURUXJUWRWPUYEUXNUVSUWRUWSUVMUVSUWRIUWSUWIUHZUWSUVSUWOIUWQUWSUWI
+          UVSBUWNVUOIDHYNTVUNIMUVBUXNAIYNURUVRAIVUQVURYQVMYRUVSUWPUVQLUVSUEKVHV
+          CWBUVQVLWBUXDUXTUYBUWDWBURZUWDVHVCUHUWDWPUVSVVGUWDUWDUVCUVDWFUVFYFYGU
+          VSUXEUWSUVMURVVFUWSWPUXFADUVMUVQLUVPWGZUVMEUWIIUWSUVNUWTSUVGXJYSZVVHY
+          TUWJUVMUWRUEEUWNDUVNVULUWEUWOUWHUWQUWIUWDUWNHYDVULUWGUWPLUWDUWNUVQUWF
+          YEYFYGUVHXRUVIVVIUVJUVK $.
+      $}
     $}
   $}
 
@@ -213121,7 +213427,7 @@ htmldef ")" as "<IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=' )' TITLE=')'>";
 htmldef "->" as
     " <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT=' -&gt;' TITLE='-&gt;'> ";
   althtmldef "->" as " &rarr; ";
-  latexdef "->" as " \rightarrow ";
+  latexdef "->" as "\rightarrow";
 htmldef "-." as
     "<IMG SRC='lnot.gif' WIDTH=10 HEIGHT=19 ALT=' -.' TITLE='-.'> ";
   althtmldef "-." as '&not; ';
@@ -213138,14 +213444,12 @@ htmldef "|-" as
     /* Without sans-serif, way too big in FF3 */
     /* 2-Jan-2016 reverted sans-serif */
   latexdef "|-" as "\vdash";
-htmldef "&" as
-    " <IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'> ";
+htmldef "&" as " <IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'> ";
   althtmldef "&" as " &amp; ";
   latexdef "&" as "\mathrel{\&}";
-htmldef "=>" as
-  " <IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19 ALT='=&gt;'> ";
+htmldef "=>" as " <IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19 ALT='=&gt;'> ";
   althtmldef "=>" as " &rArr; ";
-  latexdef "=>" as " \Rightarrow ";
+  latexdef "=>" as "\Rightarrow";
 htmldef "ph" as
     "<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>";
   /* althtmldef "ph" as '<FONT COLOR="#0000FF">&#x1D711;</SPAN>'; */
@@ -213404,7 +213708,7 @@ htmldef ".#" as
   althtmldef ".#" as
     ' <span class=symvar style="border-bottom:1px dotted;color:#c3c">' +
     '#</span> ';
-  latexdef ".#" as "\neq\mathrel{\mkern -10mu}\neq";
+  latexdef ".#" as "\mathrel{\neq\mkern-10mu\neq}";
 htmldef ".~" as
     " <IMG SRC='_.sim.gif' WIDTH=13 HEIGHT=19 ALT=' .~' TITLE='.~'> ";
   althtmldef ".~" as
@@ -213422,12 +213726,12 @@ htmldef ".+^" as
   althtmldef ".+^" as
     ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
     '&#x2A23;</SPAN> ';       /* &plusacir; */
-  latexdef ".+^" as "\mathbin{\hat{+}}";
+  latexdef ".+^" as "\hat{+}";
 htmldef ".+b" as
     " <IMG SRC='_.plusb.gif' WIDTH=14 HEIGHT=19 ALT=' .+b' TITLE='.+b'> ";
   althtmldef ".+b" as
     ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
-    '&#x271A;</SPAN> ';
+    '<b>+</b></SPAN> ';
   latexdef ".+b" as "\pmb{+}";
 htmldef ".(+)" as
     " <IMG SRC='_.oplus.gif' WIDTH=13 HEIGHT=19 ALT=' .(+)' TITLE='.(+)'> ";
@@ -213475,8 +213779,8 @@ htmldef ".0b" as
     " <IMG SRC='_.bf0.gif' WIDTH=9 HEIGHT=19 ALT=' .0b' TITLE='.0b'> ";
   althtmldef ".0b" as
     ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
-    '&#x1D7CE</SPAN> ';
-  latexdef ".0b" as "\pmb{0}";
+    '&#x1D7CE;</SPAN> ';
+  latexdef ".0b" as "\mathbf{0}";
 htmldef "A" as "<IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT=' A' TITLE='A'>";
   althtmldef "A" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D434;</SPAN>';
   latexdef "A" as "A";
@@ -213785,7 +214089,7 @@ htmldef "_om" as
     "<IMG SRC='omega.gif' WIDTH=11 HEIGHT=19 ALT=' om' TITLE='om'>";
   /*althtmldef "_om" as '&omega;';*/
   althtmldef "_om" as '&#x3C9;';  /* upright lowercase Greek omega */
-  latexdef "_om" as "\mathrm{\omega}";
+  latexdef "_om" as "\upomega";
 htmldef "X." as
     " <IMG SRC='times.gif' WIDTH=9 HEIGHT=19 ALT=' X.' TITLE='X.'> ";
   althtmldef "X." as ' &times; ';
@@ -214095,19 +214399,19 @@ htmldef "<Q" as
   latexdef "<Q" as "<_\mathcal{Q}";
 htmldef "~Q0" as ' ~<I><SUB><B>Q0</B></SUB></I> ';
   althtmldef "~Q0" as ' ~<I><SUB><B>Q0</B></SUB></I> ';
-  latexdef "~Q0" as "\sim_\mathcal{Q0}";
+  latexdef "~Q0" as "\sim_{\mathcal{Q}_0}";
 htmldef "Q0." as '<I><B>Q<SUB>0</SUB></B></I>';
   althtmldef "Q0." as '<I><B>Q<SUB>0</SUB></B></I>';
   latexdef "Q0." as "\mathcal{Q}_0";
 htmldef "0Q0" as '0<I><SUB><B>Q0</B></SUB></I>';
   althtmldef "0Q0" as '0<I><SUB><B>Q0</B></SUB></I>';
-  latexdef "0Q0" as "0_\mathcal{Q0}";
+  latexdef "0Q0" as "0_{\mathcal{Q}_0}";
 htmldef "+Q0" as ' +<I><SUB><B>Q0</B></SUB></I> ';
   althtmldef "+Q0" as ' +<I><SUB><B>Q0</B></SUB></I> ';
-  latexdef "+Q0" as "+_\mathcal{Q0}";
+  latexdef "+Q0" as "+_{\mathcal{Q}_0}";
 htmldef ".Q0" as ' &middot;<I><SUB><B>Q0</B></SUB></I> ';
   althtmldef ".Q0" as ' &middot;<I><SUB><B>Q0</B></SUB></I> ';
-  latexdef ".Q0" as "\cdot_\mathcal{Q0}";
+  latexdef ".Q0" as "\cdot_{\mathcal{Q}_0}";
 htmldef "P." as "<IMG SRC='calp.gif' WIDTH=13 HEIGHT=19 ALT=' P.' TITLE='P.'>";
   althtmldef "P." as '<I><B>P</B></I>';
   latexdef "P." as "\mathcal{P}";
@@ -214142,7 +214446,7 @@ htmldef "1R" as "<IMG SRC='_1cr.gif' WIDTH=16 HEIGHT=19 ALT=' 1R' TITLE='1R'>";
 htmldef "-1R" as
     "<IMG SRC='_m1r.gif' WIDTH=22 HEIGHT=19 ALT=' -1R' TITLE='-1R'>";
   althtmldef "-1R" as '-1<I><SUB><B>R</B></SUB></I>';
-  latexdef "-1R" as "-1_\mathcal{R}";
+  latexdef "-1R" as "\mathord{-}1_\mathcal{R}";
 htmldef "+R" as
     " <IMG SRC='_plr.gif' WIDTH=23 HEIGHT=19 ALT=' +R' TITLE='+R'> ";
   althtmldef "+R" as ' +<I><SUB><B>R</B></SUB></I> ';
@@ -214213,20 +214517,18 @@ htmldef "-" as
   althtmldef "-" as ' &minus; ';
   latexdef "-" as "-";
 htmldef "-u" as
-    "<IMG SRC='shortminus.gif' WIDTH=8 HEIGHT=19 ALT=' -u' TITLE='-u'>";
-    /* use standard minus sign */
-  althtmldef "-u" as '-';
-  latexdef "-u" as "\textrm{-}"; /* short minus */
-    /*latexdef "-u" as "-_u";*/
+    " <IMG SRC='shortminus.gif' WIDTH=8 HEIGHT=19 ALT=' -u' TITLE='-u'>";
+  althtmldef "-u" as ' -';
+  latexdef "-u" as "\mathord{-}";
 htmldef "=//=" as ' # ';
   althtmldef "=//=" as ' # ';
-  latexdef "=//=" as "\neq\mathrel{\mkern -10mu}\neq";
+  latexdef "=//=" as "\mathrel{\neq\mkern-10mu\neq}";
 htmldef "#RR" as ' #<SUB>&#8477;</SUB> ';
   althtmldef "#RR" as ' #<SUB>&#8477;</SUB> ';
-  latexdef "#RR" as "\neq\mathrel{\mkern -10mu}\neq_\mathbb{R}";
+  latexdef "#RR" as "\mathrel{\neq\mkern-10mu\neq_\mathbb{R}}";
 htmldef "_Ind" as "&#x1D7ED;";
   althtmldef "_Ind" as "&#x1D7ED;";
-  latexdef "_Ind" as "\pmb{1}";
+  latexdef "_Ind" as "\mathbf{1}";
 htmldef "NN" as "<IMG SRC='bbn.gif' WIDTH=12 HEIGHT=19 ALT=' NN' TITLE='NN'>";
   althtmldef "NN" as '&#8469;'; /* &Nopf; */
     /* 2-Jan-2016 reverted sans-serif */
@@ -214289,11 +214591,11 @@ htmldef "ZZ>=" as "<IMG SRC='_bbzge.gif' WIDTH=20 HEIGHT=19 " +
   latexdef "ZZ>=" as "\mathbb{Z}_\ge";
 htmldef "-e" as " <IMG SRC='shortminus.gif' WIDTH=8 HEIGHT=19 ALT=' -' " +
     "TITLE='-'><IMG SRC='sube.gif' WIDTH=6 HEIGHT=19 ALT='e' TITLE='e'>";
-  althtmldef "-e" as "-<SUB>&#x1D452;</SUB>";
-  latexdef "-e" as "\textrm{-}_e";
+  althtmldef "-e" as "-<SUB>e</SUB>";
+  latexdef "-e" as "\mathord{-_\mathrm{e}}";
 htmldef "+e" as "<IMG SRC='plus.gif' WIDTH=13 HEIGHT=19 ALT=' +' TITLE='+'>" +
     "<IMG SRC='sube.gif' WIDTH=6 HEIGHT=19 ALT='e' TITLE='e'>";
-  althtmldef "+e" as " +<SUB>&#x1D452;</SUB> ";
+  althtmldef "+e" as " +<SUB>e</SUB> ";
   latexdef "+e" as "+_e";
 htmldef "*e" as "<IMG SRC='cdot.gif' WIDTH=4 HEIGHT=19 ALT=' x' TITLE='x'>" +
     "<IMG SRC='sube.gif' WIDTH=6 HEIGHT=19 ALT='e' TITLE='e'>";
@@ -214332,7 +214634,7 @@ htmldef "|^" as "&#8968;";
 htmldef "mod" as " <IMG SRC='_mod.gif' WIDTH=29 HEIGHT=19 ALT=' mod' " +
     "TITLE='mod'> ";
   althtmldef "mod" as ' mod ';
-  latexdef "mod" as "\mathbin{\operatorname{mod}}";
+  latexdef "mod" as "\mathbin{\mathrm{mod}}";
 htmldef "==" as " <IMG SRC='equiv.gif' WIDTH=12 HEIGHT=19 ALT=' ==' " +
     "TITLE='=='> ";
   althtmldef "==" as "&equiv;"; /* 2263 */
@@ -214357,7 +214659,7 @@ htmldef "#" as "&#x266f";
 htmldef "shift" as " <IMG SRC='_shift.gif' WIDTH=30 HEIGHT=19 ALT=' shift' " +
     "TITLE='shift'> ";
   althtmldef "shift" as ' shift ';
-  latexdef "shift" as "\mathbin{\operatorname{shift}}";
+  latexdef "shift" as "\mathbin{\mathrm{shift}}";
 htmldef "Re" as "<IMG SRC='re.gif' WIDTH=12 HEIGHT=19 ALT=' Re' TITLE='Re'>";
   althtmldef "Re" as '&real;';
     /* 2-Jan-2016 reverted sans-serif */
@@ -214416,11 +214718,11 @@ htmldef "tan" as
   latexdef "tan" as "\tan";
 htmldef "_pi" as "<IMG SRC='pi.gif' WIDTH=10 HEIGHT=19 ALT=' pi' TITLE='pi'>";
   althtmldef "_pi" as "&pi;";  /* was: "&#x1D70B;"; math italic pi */
-  latexdef "_pi" as "\mathrm{\pi}";
+  latexdef "_pi" as "\uppi";
 htmldef "_tau" as
     "<IMG SRC='tau.gif' WIDTH=10 HEIGHT=19 ALT=' tau' TITLE='tau'>";
   althtmldef "_tau" as '&#x3c4;';  /* upright lowercase Greek tau */
-  latexdef "_tau" as "\mathrm{\tau}";
+  latexdef "_tau" as "\uptau";
 htmldef "||" as
     " <IMG SRC='parallel.gif' WIDTH=5 HEIGHT=19 " + "ALT=' ||' TITLE='||'> ";
   althtmldef "||" as ' &#8741; ';
@@ -214431,10 +214733,10 @@ htmldef "bits" as "bits";
 htmldef "gcd" as
     " <IMG SRC='_gcd.gif' WIDTH=23 HEIGHT=19 ALT=' gcd' TITLE='gcd'> ";
   althtmldef "gcd" as " gcd ";
-  latexdef "gcd" as "\mathbin{\operatorname{gcd}}";
+  latexdef "gcd" as "\mathbin{\mathrm{gcd}}";
 htmldef "lcm" as " lcm ";
   althtmldef "lcm" as " lcm ";
-  latexdef "lcm" as "\mathbin{\operatorname{lcm}}";
+  latexdef "lcm" as "\mathbin{\mathrm{lcm}}";
 htmldef "Prime" as
     "<IMG SRC='bbp.gif' WIDTH=11 HEIGHT=19 ALT=' Prime' TITLE='Prime'>";
   althtmldef "Prime" as "&#8473;";
@@ -214453,7 +214755,7 @@ htmldef "phi" as
 htmldef "pCnt" as
     " <IMG SRC='_pcnt.gif' WIDTH=32 HEIGHT=19 ALT=' pCnt' TITLE='pCnt'> ";
   althtmldef "pCnt" as " pCnt ";
-  latexdef "pCnt" as "\mathbin{\operatorname{pCnt}}";
+  latexdef "pCnt" as "\mathbin{\mathrm{pCnt}}";
 htmldef "Z[i]" as
     "<IMG SRC='bbz.gif' WIDTH=11 HEIGHT=19 ALT=' ZZ' TITLE='ZZ'>" +
     "<IMG SRC='lbrack.gif' WIDTH=5 HEIGHT=19 ALT='[' TITLE='['>" +
@@ -214564,7 +214866,7 @@ htmldef "gsum" as " <IMG SRC='csigma.gif' WIDTH=11 HEIGHT=19 " +
 htmldef "gzsum" as " <IMG SRC='csigma.gif' WIDTH=11 HEIGHT=19 " +
     "ALT=' gzsum' TITLE='gzsum'><sub><i>gz</i></sub> ";
   althtmldef "gzsum" as " &Sigma;<sub><i>gz</i></sub> ";
-  latexdef "gzsum" as "\sum_gz";
+  latexdef "gzsum" as "\sum_{gz}";
 htmldef '"s' as " <IMG SRC='backquote.gif' WIDTH=7 HEIGHT=19 ALT=' " + '"' +
     "' TITLE='" + '"' + "'><sub><i>s</i></sub> ";
   althtmldef '"s' as ' &ldquo;<sub><i>s</i></sub> ';
@@ -214620,7 +214922,7 @@ htmldef "lastS" as 'lastS';
   latexdef "lastS" as "\mathrm{lastS}";
 htmldef "++" as " ++ ";
   althtmldef "++" as " ++ ";
-  latexdef "++" as "\mathbin{\operatorname{++}}";
+  latexdef "++" as "\mathbin{++}";
 htmldef '<"' as
     "<IMG SRC='langle.gif' WIDTH=4 HEIGHT=19 ALT=' &lt;' TITLE='&lt;'>" +
     "<IMG SRC='backquote.gif' WIDTH=7 HEIGHT=19 ALT='" + '"' +
@@ -214638,7 +214940,7 @@ htmldef "substr" as " substr ";
   latexdef "substr" as "\mathrm{substr}";
 htmldef "prefix" as ' prefix ';
  althtmldef "prefix" as ' prefix ';
- latexdef "prefix" as "\mathbin{\operatorname{prefix}}";
+ latexdef "prefix" as "\mathbin{\mathrm{prefix}}";
 htmldef "~QG" as " ~<sub><i>QG</i></sub> ";
   althtmldef "~QG" as " ~<sub><i>QG</i></sub> ";
   latexdef "~QG" as " \sim_{QG} ";
@@ -214694,7 +214996,7 @@ htmldef "oppR" as "opp<sub><i>r</i></sub>";
 htmldef "||r" as "<IMG SRC='parallel.gif' WIDTH=5 HEIGHT=19 ALT=' ||' " +
     "TITLE='||'><sub><i>r</i></sub>";
   althtmldef "||r" as "&#8741;<sub>r</sub>";
-  latexdef "||r" as "\mathrel{\parallel_\mathrm{r}}";
+  latexdef "||r" as "\operatorname{\parallel_\mathrm{r}}";
 htmldef "Unit" as "Unit";
   althtmldef "Unit" as "Unit";
   latexdef "Unit" as "\mathrm{Unit}";
@@ -214726,9 +215028,9 @@ htmldef "SubRing" as "SubRing";
 htmldef "RingSpan" as "RingSpan";
   althtmldef "RingSpan" as "RingSpan";
   latexdef "RingSpan" as "\mathrm{RingSpan}";
-htmldef "#r" as "#<sub>r</sub>";
-  althtmldef "#r" as "#<sub>r</sub>";
-  latexdef "#r" as "\mathrel{\neq\mathrel{\mkern -10mu}\neq_\mathrm{r}}";
+htmldef "#r" as " #<sub>r</sub> ";
+  althtmldef "#r" as " #<sub>r</sub> ";
+  latexdef "#r" as "\mathrel{\neq\mkern-10mu\neq_\mathrm{r}}";
 htmldef "DivRing" as
   "<IMG SRC='_divring.gif' WIDTH=52 HEIGHT=19 ALT=' DivRing' TITLE='DivRing'>";
   althtmldef "DivRing" as "DivRing";
@@ -214900,7 +215202,7 @@ htmldef "~~>t" as "<IMG SRC='rightsquigarrow.gif' WIDTH=15 HEIGHT=19 " +
   althtmldef "~~>t" as
     "&#8669;<SUB>&#x1D461;</SUB>";
     /* 2-Jan-2016 reverted sans-serif */
-  latexdef "~~>t" as "\rightsquigarrow_t";
+  latexdef "~~>t" as "\rightsquigarrow_\mathrm{t}";
 htmldef "tX" as
     " <IMG SRC='_timest.gif' WIDTH=14 HEIGHT=19 ALT=' tX' TITLE='tX'> ";
   althtmldef "tX" as " &times;<SUB>t</SUB> ";
@@ -221743,6 +222045,5 @@ $)
       AE! x ( ph -> -. ps ) ) $=
     ( walseu wn wa wals als-no-surprise alseuals anim12i mto ) ABCDZABEZCDZFABC
     GZAMCGZFABCHLONPABCIAMCIJK $.
-
 
 $( (End of David A. Wheeler's mathbox.) $)
