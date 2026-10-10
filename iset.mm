@@ -183508,6 +183508,30 @@ $)
   $}
 
   ${
+    $d f i r x .0. $.  $d f i r x .1. $.  $d f i r x y D $.  $d f F $.
+    $d y W $.  $d f h i r x y I $.  $d f i r x R $.  $d f h x y X $.
+    mvrfval.v $e |- V = ( I mVar R ) $.
+    mvrfval.d $e |- D = { h e. ( NN0 ^m I ) | ( `' h " NN ) e. Fin } $.
+    mvrfval.z $e |- .0. = ( 0g ` R ) $.
+    mvrfval.o $e |- .1. = ( 1r ` R ) $.
+    mvrfval.i $e |- ( ph -> I e. W ) $.
+    mvrfval.r $e |- ( ph -> R e. Y ) $.
+    $( Value of the generating elements of the power series structure.
+       (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+    mvrfval $p |- ( ph -> V = ( x e. I |-> ( f e. D |->
+        if ( f = ( y e. I |-> if ( y = x , 1 , 0 ) ) , .1. , .0. ) ) ) ) $=
+      ( wceq vi vr cmvr co cv c1 cc0 cif cmpt cvv wcel elexd mptexd ccnv cn cfn
+      cima cn0 cmap crab cur cfv c0g simpl oveq2d rabeqdv eqtr4di mpteq1 adantr
+      wa eqeq2d simpr fveq2d ifbieq12d mpteq12dv df-mvr ovmpoga syl3anc eqtrid
+      ) AJIEUCUDZBIGDGUEZCICUEBUETUFUGUHZUIZTZFMUHZUIZUIZNAIUJUKEUJUKWGUJUKVTWG
+      TAIKRULAELSULABIWFKRUMUAUBIEUJUJBUAUEZGHUEUNUOUQUPUKZHURWHUSUDZUTZWACWHWB
+      UIZTZUBUEZVAVBZWNVCVBZUHZUIZUIWGUCUJWHITZWNETZVJZBWHWRIWFWSWTVDZXAGWKWQDW
+      EXAWKWIHURIUSUDZUTDXAWIHWJXCXAWHIURUSXBVEVFOVGXAWMWDWOWPFMXAWLWCWAWSWLWCT
+      WTCWHIWBVHVIVKXAWOEVAVBFXAWNEVAWSWTVLZVMQVGXAWPEVCVBMXAWNEVCXDVMPVGVNVOVO
+      BCGHUAUBVPVQVRVS $.
+  $}
+
+  ${
     $d f B $.  $d f i r s a b k I $.  $d f i r s a b k R $.  $d i r s S $.
     $d i r s U $.  $d f X $.  $d f .0. $.  $d a b f i k s r w $.
     $( The multivariate polynomial constructor is a proper binary operator.
