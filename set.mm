@@ -38854,26 +38854,21 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-  Basic set operations
+  Basic operations on classes
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-  $( Declare new symbols. $)
-  $c \ $.  $( Backslash (difference) $)
-  $c u. $.  $( Cup (union) $)
-  $c i^i $.  $( Cap (intersection) $)
 
-  $( Extend class notation to include class difference (read:  " ` A ` minus
-     ` B ` "). $)
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  The difference of two classes
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $c \ $.  $( Token for the difference of two classes. $)
+
+  $( Syntax for the difference of two classes. $)
   cdif $a class ( A \ B ) $.
-
-  $( Extend class notation to include union of two classes (read:  " ` A `
-     union ` B ` "). $)
-  cun $a class ( A u. B ) $.
-
-  $( Extend class notation to include the intersection of two classes (read:
-      " ` A ` intersect ` B ` "). $)
-  cin $a class ( A i^i B ) $.
 
   ${
     $d x A $.  $d x B $.  $d y A $.  $d y B $.  $d z x $.  $d z y $.  $d z A $.
@@ -38903,62 +38898,6 @@ $)
        removal of an element or equivalently the exclusion of a singleton.
        (Contributed by NM, 29-Apr-1994.) $)
     df-dif $a |- ( A \ B ) = { x | ( x e. A /\ -. x e. B ) } $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.  $d y A $.  $d y B $.  $d z x $.  $d z y $.  $d z A $.
-    $d z B $.
-    $( Soundness justification theorem for ~ df-un .  (Contributed by Rodolfo
-       Medina, 28-Apr-2010.)  (Proof shortened by Andrew Salmon,
-       9-Jul-2011.) $)
-    unjust $p |- { x | ( x e. A \/ x e. B ) } = { y | ( y e. A \/ y e. B ) } $=
-      ( vz cv wcel wo cab weq eleq1w orbi12d cbvabv eqtri ) AFZCGZODGZHZAIEFZCG
-      ZSDGZHZEIBFZCGZUCDGZHZBIRUBAEAEJPTQUAAECKAEDKLMUBUFEBEBJTUDUAUEEBCKEBDKLM
-      N $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.
-    $( Define the union of two classes.  Definition 5.6 of [TakeutiZaring]
-       p. 16.  For example, ` ( { 1 , 3 } u. { 1 , 8 } ) = { 1 , 3 , 8 } `
-       ( ~ ex-un ).  Contrast this operation with difference ` ( A \ B ) `
-       ( ~ df-dif ) and intersection ` ( A i^i B ) ` ( ~ df-in ).  For an
-       alternate definition in terms of class difference, requiring no dummy
-       variables, see ~ dfun2 .  For union defined in terms of intersection,
-       see ~ dfun3 .  (Contributed by NM, 23-Aug-1993.) $)
-    df-un $a |- ( A u. B ) = { x | ( x e. A \/ x e. B ) } $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.  $d y A $.  $d y B $.  $d z x $.  $d z y $.  $d z A $.
-    $d z B $.
-    $( Soundness justification theorem for ~ df-in .  (Contributed by Rodolfo
-       Medina, 28-Apr-2010.)  (Proof shortened by Andrew Salmon,
-       9-Jul-2011.) $)
-    injust $p |- { x | ( x e. A /\ x e. B ) }
-               = { y | ( y e. A /\ y e. B ) } $=
-      ( vz cv wcel wa cab weq eleq1w anbi12d cbvabv eqtri ) AFZCGZODGZHZAIEFZCG
-      ZSDGZHZEIBFZCGZUCDGZHZBIRUBAEAEJPTQUAAECKAEDKLMUBUFEBEBJTUDUAUEEBCKEBDKLM
-      N $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.
-    $( Define the intersection of two classes.  Definition 5.6 of
-       [TakeutiZaring] p. 16.  For example,
-       ` ( { 1 , 3 } i^i { 1 , 8 } ) = { 1 } ` ( ~ ex-in ).  Contrast this
-       operation with union ` ( A u. B ) ` ( ~ df-un ) and difference
-       ` ( A \ B ) ` ( ~ df-dif ).  For alternate definitions in terms of class
-       difference, requiring no dummy variables, see ~ dfin2 and ~ dfin4 .  For
-       intersection defined in terms of union, see ~ dfin3 .  (Contributed by
-       NM, 29-Apr-1994.) $)
-    df-in $a |- ( A i^i B ) = { x | ( x e. A /\ x e. B ) } $.
-
-    $( Alternate definition for the intersection of two classes.  (Contributed
-       by NM, 6-Jul-2005.) $)
-    dfin5 $p |- ( A i^i B ) = { x e. A | x e. B } $=
-      ( cin cv wcel wa cab crab df-in df-rab eqtr4i ) BCDAEZBFMCFZGAHNABIABCJNA
-      BKL $.
   $}
 
   ${
@@ -39018,52 +38957,6 @@ $)
      (Contributed by Andrew Salmon, 15-Jul-2011.) $)
   velcomp $p |- ( x e. ( _V \ A ) <-> -. x e. A ) $=
     ( cv cvv cdif wcel wn vex eldif mpbiran ) ACZDBEFKDFKBFGAHKDBIJ $.
-
-  ${
-    $d A x $.  $d B x $.  $d C x $.
-    $( Expansion of membership in an intersection of two classes.  Theorem 12
-       of [Suppes] p. 25.  (Contributed by NM, 29-Apr-1994.) $)
-    elin $p |- ( A e. ( B i^i C ) <-> ( A e. B /\ A e. C ) ) $=
-      ( vx cin wcel wa elex adantl cv wceq eleq1 anbi12d df-in elab2g pm5.21nii
-      cvv ) ABCEZFAQFZABFZACFZGZARHUASTACHIDJZBFZUCCFZGUBDARQUCAKUDTUEUAUCABLUC
-      ACLMDBCNOP $.
-  $}
-
-  ${
-    $d x y A $.  $d x y B $.
-    $( Alternate definition of the subclass relationship between two classes.
-       Exercise 9 of [TakeutiZaring] p. 18.  This was the original definition
-       before ~ df-ss .  (Contributed by NM, 27-Apr-1994.)  Revise ~ df-ss .
-       (Revised by GG, 15-May-2025.) $)
-    dfss2 $p |- ( A C_ B <-> ( A i^i B ) = A ) $=
-      ( vy vx cv wcel wa cab wb wal cin wss dfcleq df-in eqeq1i wi df-ss eleq1w
-      wceq bitri simp2 3expib impbid dfbi2 pm2.21 pm3.4 ja simplbiim impbii wsb
-      ancl df-clab weq anbi12d sbievw bitr2i bibi1i albii 3bitr4ri ) CEZAFZUTBF
-      ZGZCHZASDEZVDFZVEAFZIZDJZABKZASABLZDVDAMVJVDACABNOVKVGVEBFZPZDJVIDABQVMVH
-      DVMVGVLGZVGIZVHVMVOVMVNVGVMVGVLVGVMVGVLUAUBVGVLUKUCVOVNVGPVGVNPVMVNVGUDVG
-      VNVMVGVLUEVGVLUFUGUHUIVNVFVGVFVCCDUJVNVCDCULVCVNCDCDUMVAVGVBVLCDARCDBRUNU
-      OUPUQTURTUS $.
-    $( $j usage 'dfss2' avoids 'ax-10' 'ax-11' 'ax-12'; $)
-  $}
-
-  $( Variant of subclass definition ~ dfss2 .  (Contributed by NM,
-     21-Jun-1993.) $)
-  dfss $p |- ( A C_ B <-> A = ( A i^i B ) ) $=
-    ( wss cin wceq dfss2 eqcom bitri ) ABCABDZAEAIEABFIAGH $.
-
-
-$(
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-  The difference, union, and intersection of two classes
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$)
-
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  The difference of two classes
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
 
   ${
     $d A x $.  $d B x y $.
@@ -39313,6 +39206,35 @@ $(
   The union of two classes
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
+
+  $c u. $.  $( Token for the union of two classes. $)
+
+  $( Syntax for the union of two classes. $)
+  cun $a class ( A u. B ) $.
+
+  ${
+    $d x A $.  $d x B $.  $d y A $.  $d y B $.  $d z x $.  $d z y $.  $d z A $.
+    $d z B $.
+    $( Soundness justification theorem for ~ df-un .  (Contributed by Rodolfo
+       Medina, 28-Apr-2010.)  (Proof shortened by Andrew Salmon,
+       9-Jul-2011.) $)
+    unjust $p |- { x | ( x e. A \/ x e. B ) } = { y | ( y e. A \/ y e. B ) } $=
+      ( vz cv wcel wo cab weq eleq1w orbi12d cbvabv eqtri ) AFZCGZODGZHZAIEFZCG
+      ZSDGZHZEIBFZCGZUCDGZHZBIRUBAEAEJPTQUAAECKAEDKLMUBUFEBEBJTUDUAUEEBCKEBDKLM
+      N $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Define the union of two classes.  Definition 5.6 of [TakeutiZaring]
+       p. 16.  For example, ` ( { 1 , 3 } u. { 1 , 8 } ) = { 1 , 3 , 8 } `
+       ( ~ ex-un ).  Contrast this operation with difference ` ( A \ B ) `
+       ( ~ df-dif ) and intersection ` ( A i^i B ) ` ( ~ df-in ).  For an
+       alternate definition in terms of class difference, requiring no dummy
+       variables, see ~ dfun2 .  For union defined in terms of intersection,
+       see ~ dfun3 .  (Contributed by NM, 23-Aug-1993.) $)
+    df-un $a |- ( A u. B ) = { x | ( x e. A \/ x e. B ) } $.
+  $}
 
   ${
     $d A x $.  $d B x $.  $d C x $.
@@ -39633,6 +39555,74 @@ $(
   The intersection of two classes
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
+
+  $c i^i $.  $( Token for the intersection of two classes. $)
+
+  $( Syntax for the intersection of two classes. $)
+  cin $a class ( A i^i B ) $.
+  ${
+    $d x A $.  $d x B $.  $d y A $.  $d y B $.  $d z x $.  $d z y $.  $d z A $.
+    $d z B $.
+    $( Soundness justification theorem for ~ df-in .  (Contributed by Rodolfo
+       Medina, 28-Apr-2010.)  (Proof shortened by Andrew Salmon,
+       9-Jul-2011.) $)
+    injust $p |- { x | ( x e. A /\ x e. B ) }
+               = { y | ( y e. A /\ y e. B ) } $=
+      ( vz cv wcel wa cab weq eleq1w anbi12d cbvabv eqtri ) AFZCGZODGZHZAIEFZCG
+      ZSDGZHZEIBFZCGZUCDGZHZBIRUBAEAEJPTQUAAECKAEDKLMUBUFEBEBJTUDUAUEEBCKEBDKLM
+      N $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Define the intersection of two classes.  Definition 5.6 of
+       [TakeutiZaring] p. 16.  For example,
+       ` ( { 1 , 3 } i^i { 1 , 8 } ) = { 1 } ` ( ~ ex-in ).  Contrast this
+       operation with union ` ( A u. B ) ` ( ~ df-un ) and difference
+       ` ( A \ B ) ` ( ~ df-dif ).  For alternate definitions in terms of class
+       difference, requiring no dummy variables, see ~ dfin2 and ~ dfin4 .  For
+       intersection defined in terms of union, see ~ dfin3 .  (Contributed by
+       NM, 29-Apr-1994.) $)
+    df-in $a |- ( A i^i B ) = { x | ( x e. A /\ x e. B ) } $.
+
+    $( Alternate definition for the intersection of two classes.  (Contributed
+       by NM, 6-Jul-2005.) $)
+    dfin5 $p |- ( A i^i B ) = { x e. A | x e. B } $=
+      ( cin cv wcel wa cab crab df-in df-rab eqtr4i ) BCDAEZBFMCFZGAHNABIABCJNA
+      BKL $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( Expansion of membership in an intersection of two classes.  Theorem 12
+       of [Suppes] p. 25.  (Contributed by NM, 29-Apr-1994.) $)
+    elin $p |- ( A e. ( B i^i C ) <-> ( A e. B /\ A e. C ) ) $=
+      ( vx cin wcel wa elex adantl cv wceq eleq1 anbi12d df-in elab2g pm5.21nii
+      cvv ) ABCEZFAQFZABFZACFZGZARHUASTACHIDJZBFZUCCFZGUBDARQUCAKUDTUEUAUCABLUC
+      ACLMDBCNOP $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Alternate definition of the subclass relationship between two classes.
+       Exercise 9 of [TakeutiZaring] p. 18.  This was the original definition
+       before ~ df-ss .  (Contributed by NM, 27-Apr-1994.)  Revise ~ df-ss .
+       (Revised by GG, 15-May-2025.) $)
+    dfss2 $p |- ( A C_ B <-> ( A i^i B ) = A ) $=
+      ( vy vx cv wcel wa cab wb wal cin wss dfcleq df-in eqeq1i wi df-ss eleq1w
+      wceq bitri simp2 3expib impbid dfbi2 pm2.21 pm3.4 ja simplbiim impbii wsb
+      ancl df-clab weq anbi12d sbievw bitr2i bibi1i albii 3bitr4ri ) CEZAFZUTBF
+      ZGZCHZASDEZVDFZVEAFZIZDJZABKZASABLZDVDAMVJVDACABNOVKVGVEBFZPZDJVIDABQVMVH
+      DVMVGVLGZVGIZVHVMVOVMVNVGVMVGVLVGVMVGVLUAUBVGVLUKUCVOVNVGPVGVNPVMVNVGUDVG
+      VNVMVGVLUEVGVLUFUGUHUIVNVFVGVFVCCDUJVNVCDCULVCVNCDCDUMVAVGVBVLCDARCDBRUNU
+      OUPUQTURTUS $.
+    $( $j usage 'dfss2' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+  $}
+
+  $( Variant of subclass definition ~ dfss2 .  (Contributed by NM,
+     21-Jun-1993.) $)
+  dfss $p |- ( A C_ B <-> A = ( A i^i B ) ) $=
+    ( wss cin wceq dfss2 eqcom bitri ) ABCABDZAEAIEABFIAGH $.
 
   ${
     elini.1 $e |- A e. B $.
