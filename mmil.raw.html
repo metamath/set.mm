@@ -5315,8 +5315,8 @@ that rabfi implies excluded middle</TD>
 
 <TR>
 <TD>finresfin</TD>
-<TD><I>none</I></TD>
-<TD>The set.mm proof is in terms of ssfi</TD>
+<TD>~ relresfin</TD>
+<TD>when restricting to a subset of a relation's domain</TD>
 </TR>
 
 <TR>
@@ -7768,12 +7768,6 @@ favor of theorems in deduction form.</TD>
 <TR>
 <TD>crne0</TD>
 <TD>~ crap0 </TD>
-</TR>
-
-<TR>
-<TD>ofsubeq0</TD>
-<TD><I>none</I></TD>
-<TD>presumably provable</TD>
 </TR>
 
 <tr>
@@ -13122,7 +13116,22 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>gsumzsplit , gsumsplit , gsumsplit2</td>
+  <td>gsumzsplit</td>
+  <td><i>none</i></td>
+  <td>we do not currently have any machinery to work with
+  a group sum within the commutative portion of
+  a monoid rather than needing the whole monoid to
+  be commutative</td>
+</tr>
+
+<tr>
+  <td>gsumsplit</td>
+  <td>~ gsumsplitfi</td>
+  <td>changes finitely supported to finite</td>
+</tr>
+
+<tr>
+  <td>gsumsplit2</td>
   <td><i>none</i></td>
   <td>should be possible to prove versions with the usual
   changes, such as being indexed by
@@ -13232,6 +13241,39 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>gsum2dlem1</td>
+  <td>~ gsum2dfilem1</td>
+  <td>requires that ` ( A " { j } ) ` is finite, adds ` j e. D `
+  conditions, and drops unneeded hypotheses</td>
+</tr>
+
+<tr>
+  <td>gsum2dlem2</td>
+  <td>~ gsum2dfilem2</td>
+  <td>changes finitely supported to finite, requires that
+  ` ( A " { j } ) ` is finite, and adds ` j e. D ` condition</td>
+</tr>
+
+<tr>
+  <td>gsum2d</td>
+  <td>~ gsum2dfi</td>
+  <td>changes finitely supported to finite, requires that
+  ` ( A " { j } ) ` is finite, and adds ` j e. D ` condition</td>
+</tr>
+
+<tr>
+  <td>gsum2d2</td>
+  <td>~ gsum2d2fi</td>
+  <td>requires ` A ` and ` C ( j ) ` to be finite</td>
+</tr>
+
+<tr>
+  <td>gsumcom2</td>
+  <td>~ gsumcom2fi</td>
+  <td>requires ` A ` and ` C ( j ) ` to be finite</td>
+</tr>
+
+<tr>
   <td>mgpval</td>
   <td>~ mgpvalg</td>
 </tr>
@@ -13303,9 +13345,15 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>gsummulc1 , gsummulc2</td>
-  <td><i>none</i></td>
-  <td>depend on finSupp and gsum theorems we do not have</td>
+  <td>gsummulc1</td>
+  <td>~ gsummulc1fi</td>
+  <td>changes finitely supported to finite</td>
+</tr>
+
+<tr>
+  <td>gsummulc2</td>
+  <td>~ gsummulc2fi</td>
+  <td>changes finitely supported to finite</td>
 </tr>
 
 <tr>
@@ -14719,26 +14767,15 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>gsumbagdiaglem</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof would apparently work with
-  small changes</td>
-</tr>
-
-<tr>
   <td>gsumbagdiag</td>
-  <td><i>none</i></td>
-  <td>Apparently would be provable now that ` gsum ` is
-  defined via ~ df-gsumfi . We would seem to need a
-  ` gsum ` version of gsumcom2 .</td>
+  <td>~ gsumbagdiagfi</td>
+  <td>requires the index set to be finite</td>
 </tr>
 
 <tr>
   <td>psrass1lem</td>
-  <td><i>none</i></td>
-  <td>The set.mm proof uses suppssdm , 	suppssfifsupp ,
-  gsum2d2 , gsumf1o , psrbaglefi ,
-  gsumbagdiaglem , and gsumbagdiag .</td>
+  <td>~ psrass1filem</td>
+  <td>requires the index set to be finite</td>
 </tr>
 
 <tr>
@@ -14842,14 +14879,14 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>psrridm</td>
-  <td><i>none</i></td>
-  <td>presumably the issues are similar to psrlidm</td>
+  <td>~ psrridmfi</td>
+  <td>requires a finite index set</td>
 </tr>
 
 <tr>
   <td>psrass1</td>
-  <td><i>none</i></td>
-  <td>depends on a variety of ` mPwSer ` and ` gsum ` theorems</td>
+  <td>~ psrass1fi</td>
+  <td>requires a finite index set</td>
 </tr>
 
 <tr>
@@ -14881,8 +14918,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>psrring</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses psrmulcl , psrass1 , psrdi , psrdir ,
-  psrlidm , and psrridm</td>
+  <td>the set.mm proof uses psrdi and psrdir</td>
 </tr>
 
 <tr>
