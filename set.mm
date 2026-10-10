@@ -37582,184 +37582,6 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-  Basic set operations
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$)
-
-  $( Declare new symbols. $)
-  $c \ $.  $( Backslash (difference) $)
-  $c u. $.  $( Cup (union) $)
-  $c i^i $.  $( Cap (intersection) $)
-
-  $( Extend class notation to include class difference (read:  " ` A ` minus
-     ` B ` "). $)
-  cdif $a class ( A \ B ) $.
-
-  $( Extend class notation to include union of two classes (read:  " ` A `
-     union ` B ` "). $)
-  cun $a class ( A u. B ) $.
-
-  $( Extend class notation to include the intersection of two classes (read:
-      " ` A ` intersect ` B ` "). $)
-  cin $a class ( A i^i B ) $.
-
-  ${
-    $d x A $.  $d x B $.  $d y A $.  $d y B $.  $d z x $.  $d z y $.  $d z A $.
-    $d z B $.
-    $( Soundness justification theorem for ~ df-dif .  (Contributed by Rodolfo
-       Medina, 27-Apr-2010.)  (Proof shortened by Andrew Salmon,
-       9-Jul-2011.) $)
-    difjust $p |- { x | ( x e. A /\ -. x e. B ) }
-                = { y | ( y e. A /\ -. y e. B ) } $=
-      ( vz cv wcel wn wa cab weq eleq1w notbid anbi12d cbvabv eqtri ) AFZCGZQDG
-      ZHZIZAJEFZCGZUBDGZHZIZEJBFZCGZUGDGZHZIZBJUAUFAEAEKZRUCTUEAECLULSUDAEDLMNO
-      UFUKEBEBKZUCUHUEUJEBCLUMUDUIEBDLMNOP $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.
-    $( Define class difference, also called relative complement.  Definition
-       5.12 of [TakeutiZaring] p. 20.  For example,
-       ` ( { 1 , 3 } \ { 1 , 8 } ) = { 3 } ` ( ~ ex-dif ).  Contrast this
-       operation with union ` ( A u. B ) ` ( ~ df-un ) and intersection
-       ` ( A i^i B ) ` ( ~ df-in ).  Several notations are used in the
-       literature; we chose the ` \ ` convention used in Definition 5.3 of
-       [Eisenberg] p. 67 instead of the more common minus sign to reserve the
-       latter for later use in, e.g., arithmetic.  We will use the
-       terminology " ` A ` excludes ` B ` " to mean ` A \ B ` .  We will
-       use " ` B ` is removed from ` A ` " to mean ` A \ { B } ` i.e. the
-       removal of an element or equivalently the exclusion of a singleton.
-       (Contributed by NM, 29-Apr-1994.) $)
-    df-dif $a |- ( A \ B ) = { x | ( x e. A /\ -. x e. B ) } $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.  $d y A $.  $d y B $.  $d z x $.  $d z y $.  $d z A $.
-    $d z B $.
-    $( Soundness justification theorem for ~ df-un .  (Contributed by Rodolfo
-       Medina, 28-Apr-2010.)  (Proof shortened by Andrew Salmon,
-       9-Jul-2011.) $)
-    unjust $p |- { x | ( x e. A \/ x e. B ) } = { y | ( y e. A \/ y e. B ) } $=
-      ( vz cv wcel wo cab weq eleq1w orbi12d cbvabv eqtri ) AFZCGZODGZHZAIEFZCG
-      ZSDGZHZEIBFZCGZUCDGZHZBIRUBAEAEJPTQUAAECKAEDKLMUBUFEBEBJTUDUAUEEBCKEBDKLM
-      N $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.
-    $( Define the union of two classes.  Definition 5.6 of [TakeutiZaring]
-       p. 16.  For example, ` ( { 1 , 3 } u. { 1 , 8 } ) = { 1 , 3 , 8 } `
-       ( ~ ex-un ).  Contrast this operation with difference ` ( A \ B ) `
-       ( ~ df-dif ) and intersection ` ( A i^i B ) ` ( ~ df-in ).  For an
-       alternate definition in terms of class difference, requiring no dummy
-       variables, see ~ dfun2 .  For union defined in terms of intersection,
-       see ~ dfun3 .  (Contributed by NM, 23-Aug-1993.) $)
-    df-un $a |- ( A u. B ) = { x | ( x e. A \/ x e. B ) } $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.  $d y A $.  $d y B $.  $d z x $.  $d z y $.  $d z A $.
-    $d z B $.
-    $( Soundness justification theorem for ~ df-in .  (Contributed by Rodolfo
-       Medina, 28-Apr-2010.)  (Proof shortened by Andrew Salmon,
-       9-Jul-2011.) $)
-    injust $p |- { x | ( x e. A /\ x e. B ) }
-               = { y | ( y e. A /\ y e. B ) } $=
-      ( vz cv wcel wa cab weq eleq1w anbi12d cbvabv eqtri ) AFZCGZODGZHZAIEFZCG
-      ZSDGZHZEIBFZCGZUCDGZHZBIRUBAEAEJPTQUAAECKAEDKLMUBUFEBEBJTUDUAUEEBCKEBDKLM
-      N $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.
-    $( Define the intersection of two classes.  Definition 5.6 of
-       [TakeutiZaring] p. 16.  For example,
-       ` ( { 1 , 3 } i^i { 1 , 8 } ) = { 1 } ` ( ~ ex-in ).  Contrast this
-       operation with union ` ( A u. B ) ` ( ~ df-un ) and difference
-       ` ( A \ B ) ` ( ~ df-dif ).  For alternate definitions in terms of class
-       difference, requiring no dummy variables, see ~ dfin2 and ~ dfin4 .  For
-       intersection defined in terms of union, see ~ dfin3 .  (Contributed by
-       NM, 29-Apr-1994.) $)
-    df-in $a |- ( A i^i B ) = { x | ( x e. A /\ x e. B ) } $.
-
-    $( Alternate definition for the intersection of two classes.  (Contributed
-       by NM, 6-Jul-2005.) $)
-    dfin5 $p |- ( A i^i B ) = { x e. A | x e. B } $=
-      ( cin cv wcel wa cab crab df-in df-rab eqtr4i ) BCDAEZBFMCFZGAHNABIABCJNA
-      BKL $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.
-    $( Alternate definition of class difference.  (Contributed by NM,
-       25-Mar-2004.) $)
-    dfdif2 $p |- ( A \ B ) = { x e. A | -. x e. B } $=
-      ( cdif cv wcel wn wa cab crab df-dif df-rab eqtr4i ) BCDAEZBFNCFGZHAIOABJ
-      ABCKOABLM $.
-  $}
-
-  ${
-    $d A x $.  $d B x $.  $d C x $.
-    $( Expansion of membership in a class difference.  (Contributed by NM,
-       29-Apr-1994.) $)
-    eldif $p |- ( A e. ( B \ C ) <-> ( A e. B /\ -. A e. C ) ) $=
-      ( vx cdif wcel cvv wn wa elex adantr cv wceq notbid anbi12d df-dif elab2g
-      eleq1 pm5.21nii ) ABCEZFAGFZABFZACFZHZIZATJUBUAUDABJKDLZBFZUFCFZHZIUEDATG
-      UFAMZUGUBUIUDUFABRUJUHUCUFACRNODBCPQS $.
-  $}
-
-  ${
-    eldifd.1 $e |- ( ph -> A e. B ) $.
-    eldifd.2 $e |- ( ph -> -. A e. C ) $.
-    $( If a class is in one class and not another, it is also in their
-       difference.  One-way deduction form of ~ eldif .  (Contributed by David
-       Moews, 1-May-2017.) $)
-    eldifd $p |- ( ph -> A e. ( B \ C ) ) $=
-      ( wcel wn cdif eldif sylanbrc ) ABCGBDGHBCDIGEFBCDJK $.
-  $}
-
-  ${
-    eldifad.1 $e |- ( ph -> A e. ( B \ C ) ) $.
-    $( If a class is in the difference of two classes, it is also in the
-       minuend.  One-way deduction form of ~ eldif .  (Contributed by David
-       Moews, 1-May-2017.) $)
-    eldifad $p |- ( ph -> A e. B ) $=
-      ( wcel wn cdif wa eldif sylib simpld ) ABCFZBDFGZABCDHFMNIEBCDJKL $.
-  $}
-
-  ${
-    eldifbd.1 $e |- ( ph -> A e. ( B \ C ) ) $.
-    $( If a class is in the difference of two classes, it is not in the
-       subtrahend.  One-way deduction form of ~ eldif .  (Contributed by David
-       Moews, 1-May-2017.) $)
-    eldifbd $p |- ( ph -> -. A e. C ) $=
-      ( wcel wn cdif wa eldif sylib simprd ) ABCFZBDFGZABCDHFMNIEBCDJKL $.
-  $}
-
-  $( The elements of a set difference and the minuend are not equal.
-     (Contributed by AV, 21-Oct-2023.) $)
-  elneeldif $p |- ( ( X e. A /\ Y e. ( B \ A ) ) -> X =/= Y ) $=
-    ( wcel cdif wne wn wa eldif nelne2 ex adantld biimtrid imp ) CAEZDBAFEZCDGZ
-    QDBEZDAEHZIPRDBAJPTRSPTRCDAKLMNO $.
-
-  $( Characterization of setvar elements of the complement of a class.
-     (Contributed by Andrew Salmon, 15-Jul-2011.) $)
-  velcomp $p |- ( x e. ( _V \ A ) <-> -. x e. A ) $=
-    ( cv cvv cdif wcel wn vex eldif mpbiran ) ACZDBEFKDFKBFGAHKDBIJ $.
-
-  ${
-    $d A x $.  $d B x $.  $d C x $.
-    $( Expansion of membership in an intersection of two classes.  Theorem 12
-       of [Suppes] p. 25.  (Contributed by NM, 29-Apr-1994.) $)
-    elin $p |- ( A e. ( B i^i C ) <-> ( A e. B /\ A e. C ) ) $=
-      ( vx cin wcel wa elex adantl cv wceq eleq1 anbi12d df-in elab2g pm5.21nii
-      cvv ) ABCEZFAQFZABFZACFZGZARHUASTACHIDJZBFZUCCFZGUBDARQUCAKUDTUEUAUCABLUC
-      ACLMDBCNOP $.
-  $}
-
-
-$(
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Subclasses and subsets, proper subclasses and subsets
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -39049,6 +38871,184 @@ $)
     ssexnelpss $p |- ( ( A C_ B /\ E. x e. B x e/ A ) -> A C. B ) $=
       ( cv wnel wrex wpss wcel wn wa df-nel ssnelpss expdimp biimtrid rexlimdva
       wss imp ) BCPZADZBEZACFBCGZRTUAACTSBHIZRSCHZJUASBKRUCUBUABCSLMNOQ $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Basic set operations
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare new symbols. $)
+  $c \ $.  $( Backslash (difference) $)
+  $c u. $.  $( Cup (union) $)
+  $c i^i $.  $( Cap (intersection) $)
+
+  $( Extend class notation to include class difference (read:  " ` A ` minus
+     ` B ` "). $)
+  cdif $a class ( A \ B ) $.
+
+  $( Extend class notation to include union of two classes (read:  " ` A `
+     union ` B ` "). $)
+  cun $a class ( A u. B ) $.
+
+  $( Extend class notation to include the intersection of two classes (read:
+      " ` A ` intersect ` B ` "). $)
+  cin $a class ( A i^i B ) $.
+
+  ${
+    $d x A $.  $d x B $.  $d y A $.  $d y B $.  $d z x $.  $d z y $.  $d z A $.
+    $d z B $.
+    $( Soundness justification theorem for ~ df-dif .  (Contributed by Rodolfo
+       Medina, 27-Apr-2010.)  (Proof shortened by Andrew Salmon,
+       9-Jul-2011.) $)
+    difjust $p |- { x | ( x e. A /\ -. x e. B ) }
+                = { y | ( y e. A /\ -. y e. B ) } $=
+      ( vz cv wcel wn wa cab weq eleq1w notbid anbi12d cbvabv eqtri ) AFZCGZQDG
+      ZHZIZAJEFZCGZUBDGZHZIZEJBFZCGZUGDGZHZIZBJUAUFAEAEKZRUCTUEAECLULSUDAEDLMNO
+      UFUKEBEBKZUCUHUEUJEBCLUMUDUIEBDLMNOP $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Define class difference, also called relative complement.  Definition
+       5.12 of [TakeutiZaring] p. 20.  For example,
+       ` ( { 1 , 3 } \ { 1 , 8 } ) = { 3 } ` ( ~ ex-dif ).  Contrast this
+       operation with union ` ( A u. B ) ` ( ~ df-un ) and intersection
+       ` ( A i^i B ) ` ( ~ df-in ).  Several notations are used in the
+       literature; we chose the ` \ ` convention used in Definition 5.3 of
+       [Eisenberg] p. 67 instead of the more common minus sign to reserve the
+       latter for later use in, e.g., arithmetic.  We will use the
+       terminology " ` A ` excludes ` B ` " to mean ` A \ B ` .  We will
+       use " ` B ` is removed from ` A ` " to mean ` A \ { B } ` i.e. the
+       removal of an element or equivalently the exclusion of a singleton.
+       (Contributed by NM, 29-Apr-1994.) $)
+    df-dif $a |- ( A \ B ) = { x | ( x e. A /\ -. x e. B ) } $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d y A $.  $d y B $.  $d z x $.  $d z y $.  $d z A $.
+    $d z B $.
+    $( Soundness justification theorem for ~ df-un .  (Contributed by Rodolfo
+       Medina, 28-Apr-2010.)  (Proof shortened by Andrew Salmon,
+       9-Jul-2011.) $)
+    unjust $p |- { x | ( x e. A \/ x e. B ) } = { y | ( y e. A \/ y e. B ) } $=
+      ( vz cv wcel wo cab weq eleq1w orbi12d cbvabv eqtri ) AFZCGZODGZHZAIEFZCG
+      ZSDGZHZEIBFZCGZUCDGZHZBIRUBAEAEJPTQUAAECKAEDKLMUBUFEBEBJTUDUAUEEBCKEBDKLM
+      N $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Define the union of two classes.  Definition 5.6 of [TakeutiZaring]
+       p. 16.  For example, ` ( { 1 , 3 } u. { 1 , 8 } ) = { 1 , 3 , 8 } `
+       ( ~ ex-un ).  Contrast this operation with difference ` ( A \ B ) `
+       ( ~ df-dif ) and intersection ` ( A i^i B ) ` ( ~ df-in ).  For an
+       alternate definition in terms of class difference, requiring no dummy
+       variables, see ~ dfun2 .  For union defined in terms of intersection,
+       see ~ dfun3 .  (Contributed by NM, 23-Aug-1993.) $)
+    df-un $a |- ( A u. B ) = { x | ( x e. A \/ x e. B ) } $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d y A $.  $d y B $.  $d z x $.  $d z y $.  $d z A $.
+    $d z B $.
+    $( Soundness justification theorem for ~ df-in .  (Contributed by Rodolfo
+       Medina, 28-Apr-2010.)  (Proof shortened by Andrew Salmon,
+       9-Jul-2011.) $)
+    injust $p |- { x | ( x e. A /\ x e. B ) }
+               = { y | ( y e. A /\ y e. B ) } $=
+      ( vz cv wcel wa cab weq eleq1w anbi12d cbvabv eqtri ) AFZCGZODGZHZAIEFZCG
+      ZSDGZHZEIBFZCGZUCDGZHZBIRUBAEAEJPTQUAAECKAEDKLMUBUFEBEBJTUDUAUEEBCKEBDKLM
+      N $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Define the intersection of two classes.  Definition 5.6 of
+       [TakeutiZaring] p. 16.  For example,
+       ` ( { 1 , 3 } i^i { 1 , 8 } ) = { 1 } ` ( ~ ex-in ).  Contrast this
+       operation with union ` ( A u. B ) ` ( ~ df-un ) and difference
+       ` ( A \ B ) ` ( ~ df-dif ).  For alternate definitions in terms of class
+       difference, requiring no dummy variables, see ~ dfin2 and ~ dfin4 .  For
+       intersection defined in terms of union, see ~ dfin3 .  (Contributed by
+       NM, 29-Apr-1994.) $)
+    df-in $a |- ( A i^i B ) = { x | ( x e. A /\ x e. B ) } $.
+
+    $( Alternate definition for the intersection of two classes.  (Contributed
+       by NM, 6-Jul-2005.) $)
+    dfin5 $p |- ( A i^i B ) = { x e. A | x e. B } $=
+      ( cin cv wcel wa cab crab df-in df-rab eqtr4i ) BCDAEZBFMCFZGAHNABIABCJNA
+      BKL $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Alternate definition of class difference.  (Contributed by NM,
+       25-Mar-2004.) $)
+    dfdif2 $p |- ( A \ B ) = { x e. A | -. x e. B } $=
+      ( cdif cv wcel wn wa cab crab df-dif df-rab eqtr4i ) BCDAEZBFNCFGZHAIOABJ
+      ABCKOABLM $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( Expansion of membership in a class difference.  (Contributed by NM,
+       29-Apr-1994.) $)
+    eldif $p |- ( A e. ( B \ C ) <-> ( A e. B /\ -. A e. C ) ) $=
+      ( vx cdif wcel cvv wn wa elex adantr cv wceq notbid anbi12d df-dif elab2g
+      eleq1 pm5.21nii ) ABCEZFAGFZABFZACFZHZIZATJUBUAUDABJKDLZBFZUFCFZHZIUEDATG
+      UFAMZUGUBUIUDUFABRUJUHUCUFACRNODBCPQS $.
+  $}
+
+  ${
+    eldifd.1 $e |- ( ph -> A e. B ) $.
+    eldifd.2 $e |- ( ph -> -. A e. C ) $.
+    $( If a class is in one class and not another, it is also in their
+       difference.  One-way deduction form of ~ eldif .  (Contributed by David
+       Moews, 1-May-2017.) $)
+    eldifd $p |- ( ph -> A e. ( B \ C ) ) $=
+      ( wcel wn cdif eldif sylanbrc ) ABCGBDGHBCDIGEFBCDJK $.
+  $}
+
+  ${
+    eldifad.1 $e |- ( ph -> A e. ( B \ C ) ) $.
+    $( If a class is in the difference of two classes, it is also in the
+       minuend.  One-way deduction form of ~ eldif .  (Contributed by David
+       Moews, 1-May-2017.) $)
+    eldifad $p |- ( ph -> A e. B ) $=
+      ( wcel wn cdif wa eldif sylib simpld ) ABCFZBDFGZABCDHFMNIEBCDJKL $.
+  $}
+
+  ${
+    eldifbd.1 $e |- ( ph -> A e. ( B \ C ) ) $.
+    $( If a class is in the difference of two classes, it is not in the
+       subtrahend.  One-way deduction form of ~ eldif .  (Contributed by David
+       Moews, 1-May-2017.) $)
+    eldifbd $p |- ( ph -> -. A e. C ) $=
+      ( wcel wn cdif wa eldif sylib simprd ) ABCFZBDFGZABCDHFMNIEBCDJKL $.
+  $}
+
+  $( The elements of a set difference and the minuend are not equal.
+     (Contributed by AV, 21-Oct-2023.) $)
+  elneeldif $p |- ( ( X e. A /\ Y e. ( B \ A ) ) -> X =/= Y ) $=
+    ( wcel cdif wne wn wa eldif nelne2 ex adantld biimtrid imp ) CAEZDBAFEZCDGZ
+    QDBEZDAEHZIPRDBAJPTRSPTRCDAKLMNO $.
+
+  $( Characterization of setvar elements of the complement of a class.
+     (Contributed by Andrew Salmon, 15-Jul-2011.) $)
+  velcomp $p |- ( x e. ( _V \ A ) <-> -. x e. A ) $=
+    ( cv cvv cdif wcel wn vex eldif mpbiran ) ACZDBEFKDFKBFGAHKDBIJ $.
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( Expansion of membership in an intersection of two classes.  Theorem 12
+       of [Suppes] p. 25.  (Contributed by NM, 29-Apr-1994.) $)
+    elin $p |- ( A e. ( B i^i C ) <-> ( A e. B /\ A e. C ) ) $=
+      ( vx cin wcel wa elex adantl cv wceq eleq1 anbi12d df-in elab2g pm5.21nii
+      cvv ) ABCEZFAQFZABFZACFZGZARHUASTACHIDJZBFZUCCFZGUBDARQUCAKUDTUEUAUCABLUC
+      ACLMDBCNOP $.
   $}
 
 
