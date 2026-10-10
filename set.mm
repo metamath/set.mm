@@ -37626,28 +37626,6 @@ $)
   $}
 
   ${
-    $d x y A $.  $d x y B $.
-    $( Alternate definition of the subclass relationship between two classes.
-       Exercise 9 of [TakeutiZaring] p. 18.  This was the original definition
-       before ~ df-ss .  (Contributed by NM, 27-Apr-1994.)  Revise ~ df-ss .
-       (Revised by GG, 15-May-2025.) $)
-    dfss2 $p |- ( A C_ B <-> ( A i^i B ) = A ) $=
-      ( vy vx cv wcel wa cab wb wal cin wss dfcleq df-in eqeq1i wi df-ss eleq1w
-      wceq bitri simp2 3expib impbid dfbi2 pm2.21 pm3.4 ja simplbiim impbii wsb
-      ancl df-clab weq anbi12d sbievw bitr2i bibi1i albii 3bitr4ri ) CEZAFZUTBF
-      ZGZCHZASDEZVDFZVEAFZIZDJZABKZASABLZDVDAMVJVDACABNOVKVGVEBFZPZDJVIDABQVMVH
-      DVMVGVLGZVGIZVHVMVOVMVNVGVMVGVLVGVMVGVLUAUBVGVLUKUCVOVNVGPVGVNPVMVNVGUDVG
-      VNVMVGVLUEVGVLUFUGUHUIVNVFVGVFVCCDUJVNVCDCULVCVNCDCDUMVAVGVBVLCDARCDBRUNU
-      OUPUQTURTUS $.
-    $( $j usage 'dfss2' avoids 'ax-10' 'ax-11' 'ax-12'; $)
-  $}
-
-  $( Variant of subclass definition ~ dfss2 .  (Contributed by NM,
-     21-Jun-1993.) $)
-  dfss $p |- ( A C_ B <-> A = ( A i^i B ) ) $=
-    ( wss cin wceq dfss2 eqcom bitri ) ABCABDZAEAIEABFIAGH $.
-
-  ${
     $d x A $.  $d x B $.
     $( Alternate definition of subclass relationship.  (Contributed by NM,
        14-Oct-1999.) $)
@@ -39050,6 +39028,28 @@ $)
       cvv ) ABCEZFAQFZABFZACFZGZARHUASTACHIDJZBFZUCCFZGUBDARQUCAKUDTUEUAUCABLUC
       ACLMDBCNOP $.
   $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Alternate definition of the subclass relationship between two classes.
+       Exercise 9 of [TakeutiZaring] p. 18.  This was the original definition
+       before ~ df-ss .  (Contributed by NM, 27-Apr-1994.)  Revise ~ df-ss .
+       (Revised by GG, 15-May-2025.) $)
+    dfss2 $p |- ( A C_ B <-> ( A i^i B ) = A ) $=
+      ( vy vx cv wcel wa cab wb wal cin wss dfcleq df-in eqeq1i wi df-ss eleq1w
+      wceq bitri simp2 3expib impbid dfbi2 pm2.21 pm3.4 ja simplbiim impbii wsb
+      ancl df-clab weq anbi12d sbievw bitr2i bibi1i albii 3bitr4ri ) CEZAFZUTBF
+      ZGZCHZASDEZVDFZVEAFZIZDJZABKZASABLZDVDAMVJVDACABNOVKVGVEBFZPZDJVIDABQVMVH
+      DVMVGVLGZVGIZVHVMVOVMVNVGVMVGVLVGVMVGVLUAUBVGVLUKUCVOVNVGPVGVNPVMVNVGUDVG
+      VNVMVGVLUEVGVLUFUGUHUIVNVFVGVFVCCDUJVNVCDCULVCVNCDCDUMVAVGVBVLCDARCDBRUNU
+      OUPUQTURTUS $.
+    $( $j usage 'dfss2' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+  $}
+
+  $( Variant of subclass definition ~ dfss2 .  (Contributed by NM,
+     21-Jun-1993.) $)
+  dfss $p |- ( A C_ B <-> A = ( A i^i B ) ) $=
+    ( wss cin wceq dfss2 eqcom bitri ) ABCABDZAEAIEABFIAGH $.
 
 
 $(
