@@ -39203,355 +39203,6 @@ $)
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  The union of two classes
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
-
-  $c u. $.  $( Token for the union of two classes. $)
-
-  $( Syntax for the union of two classes. $)
-  cun $a class ( A u. B ) $.
-
-  ${
-    $d x A $.  $d x B $.  $d y A $.  $d y B $.  $d z x $.  $d z y $.  $d z A $.
-    $d z B $.
-    $( Soundness justification theorem for ~ df-un .  (Contributed by Rodolfo
-       Medina, 28-Apr-2010.)  (Proof shortened by Andrew Salmon,
-       9-Jul-2011.) $)
-    unjust $p |- { x | ( x e. A \/ x e. B ) } = { y | ( y e. A \/ y e. B ) } $=
-      ( vz cv wcel wo cab weq eleq1w orbi12d cbvabv eqtri ) AFZCGZODGZHZAIEFZCG
-      ZSDGZHZEIBFZCGZUCDGZHZBIRUBAEAEJPTQUAAECKAEDKLMUBUFEBEBJTUDUAUEEBCKEBDKLM
-      N $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.
-    $( Define the union of two classes.  Definition 5.6 of [TakeutiZaring]
-       p. 16.  For example, ` ( { 1 , 3 } u. { 1 , 8 } ) = { 1 , 3 , 8 } `
-       ( ~ ex-un ).  Contrast this operation with difference ` ( A \ B ) `
-       ( ~ df-dif ) and intersection ` ( A i^i B ) ` ( ~ df-in ).  For an
-       alternate definition in terms of class difference, requiring no dummy
-       variables, see ~ dfun2 .  For union defined in terms of intersection,
-       see ~ dfun3 .  (Contributed by NM, 23-Aug-1993.) $)
-    df-un $a |- ( A u. B ) = { x | ( x e. A \/ x e. B ) } $.
-  $}
-
-  ${
-    $d A x $.  $d B x $.  $d C x $.
-    $( Expansion of membership in class union.  Theorem 12 of [Suppes] p. 25.
-       (Contributed by NM, 7-Aug-1994.) $)
-    elun $p |- ( A e. ( B u. C ) <-> ( A e. B \/ A e. C ) ) $=
-      ( vx cun wcel cvv wo elex jaoi wceq eleq1 orbi12d df-un elab2g pm5.21nii
-      cv ) ABCEZFAGFZABFZACFZHZARITSUAABIACIJDQZBFZUCCFZHUBDARGUCAKUDTUEUAUCABL
-      UCACLMDBCNOP $.
-  $}
-
-  $( A member of a union that is not a member of the first class, is a member
-     of the second class.  (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
-  elunnel1 $p |- ( ( A e. ( B u. C ) /\ -. A e. B ) -> A e. C ) $=
-    ( cun wcel wo elun biimpi orcanai ) ABCDEZABEZACEZJKLFABCGHI $.
-
-  $( A member of a union that is not a member of the second class, is a member
-     of the first class.  (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
-  elunnel2 $p |- ( ( A e. ( B u. C ) /\ -. A e. C ) -> A e. B ) $=
-    ( cun wcel wo elun biimpi orcomd orcanai ) ABCDEZACEZABEZKMLKMLFABCGHIJ $.
-
-  ${
-    $d x A $.  $d x B $.  $d x C $.
-    uneqri.1 $e |- ( ( x e. A \/ x e. B ) <-> x e. C ) $.
-    $( Inference from membership to union.  (Contributed by NM,
-       21-Jun-1993.) $)
-    uneqri $p |- ( A u. B ) = C $=
-      ( cun cv wcel wo elun bitri eqriv ) ABCFZDAGZMHNBHNCHINDHNBCJEKL $.
-  $}
-
-  ${
-    $d x A $.
-    $( Idempotent law for union of classes.  Theorem 23 of [Suppes] p. 27.
-       (Contributed by NM, 21-Jun-1993.) $)
-    unidm $p |- ( A u. A ) = A $=
-      ( vx cv wcel oridm uneqri ) BAAABCADEF $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.
-    $( Commutative law for union of classes.  Exercise 6 of [TakeutiZaring]
-       p. 17.  (Contributed by NM, 25-Jun-1998.)  (Proof shortened by Andrew
-       Salmon, 26-Jun-2011.) $)
-    uncom $p |- ( A u. B ) = ( B u. A ) $=
-      ( vx cun cv wcel wo orcom elun bitr4i uneqri ) CABBADZCEZAFZMBFZGONGMLFNO
-      HMBAIJK $.
-  $}
-
-  $( If a class equals the union of two other classes, then it equals the union
-     of those two classes commuted. ~ equncom was automatically derived from
-     ~ equncomVD using the tools program translate__without__overwriting.cmd
-     and minimizing.  (Contributed by Alan Sare, 18-Feb-2012.) $)
-  equncom $p |- ( A = ( B u. C ) <-> A = ( C u. B ) ) $=
-    ( cun uncom eqeq2i ) BCDCBDABCEF $.
-
-  ${
-    equncomi.1 $e |- A = ( B u. C ) $.
-    $( Inference form of ~ equncom . ~ equncomi was automatically derived from
-       ~ equncomiVD using the tools program translate__without__overwriting.cmd
-       and minimizing.  (Contributed by Alan Sare, 18-Feb-2012.) $)
-    equncomi $p |- A = ( C u. B ) $=
-      ( cun wceq equncom mpbi ) ABCEFACBEFDABCGH $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.  $d x C $.
-    $( Equality theorem for the union of two classes.  (Contributed by NM,
-       15-Jul-1993.) $)
-    uneq1 $p |- ( A = B -> ( A u. C ) = ( B u. C ) ) $=
-      ( vx wceq cun cv wcel wo eleq2 orbi1d elun 3bitr4g eqrdv ) ABEZDACFZBCFZO
-      DGZAHZRCHZIRBHZTIRPHRQHOSUATABRJKRACLRBCLMN $.
-  $}
-
-  $( Equality theorem for the union of two classes.  (Contributed by NM,
-     5-Aug-1993.) $)
-  uneq2 $p |- ( A = B -> ( C u. A ) = ( C u. B ) ) $=
-    ( wceq cun uneq1 uncom 3eqtr4g ) ABDACEBCECAECBEABCFCAGCBGH $.
-
-  $( Equality theorem for the union of two classes.  (Contributed by NM,
-     29-Mar-1998.) $)
-  uneq12 $p |- ( ( A = B /\ C = D ) -> ( A u. C ) = ( B u. D ) ) $=
-    ( wceq cun uneq1 uneq2 sylan9eq ) ABECDEACFBCFBDFABCGCDBHI $.
-
-  ${
-    uneq1i.1 $e |- A = B $.
-    $( Inference adding union to the right in a class equality.  (Contributed
-       by NM, 30-Aug-1993.) $)
-    uneq1i $p |- ( A u. C ) = ( B u. C ) $=
-      ( wceq cun uneq1 ax-mp ) ABEACFBCFEDABCGH $.
-
-    $( Inference adding union to the left in a class equality.  (Contributed by
-       NM, 30-Aug-1993.) $)
-    uneq2i $p |- ( C u. A ) = ( C u. B ) $=
-      ( wceq cun uneq2 ax-mp ) ABECAFCBFEDABCGH $.
-
-    ${
-      uneq12i.2 $e |- C = D $.
-      $( Equality inference for the union of two classes.  (Contributed by NM,
-         12-Aug-2004.)  (Proof shortened by Eric Schmidt, 26-Jan-2007.) $)
-      uneq12i $p |- ( A u. C ) = ( B u. D ) $=
-        ( wceq cun uneq12 mp2an ) ABGCDGACHBDHGEFABCDIJ $.
-    $}
-  $}
-
-  ${
-    uneq1d.1 $e |- ( ph -> A = B ) $.
-    $( Deduction adding union to the right in a class equality.  (Contributed
-       by NM, 29-Mar-1998.) $)
-    uneq1d $p |- ( ph -> ( A u. C ) = ( B u. C ) ) $=
-      ( wceq cun uneq1 syl ) ABCFBDGCDGFEBCDHI $.
-
-    $( Deduction adding union to the left in a class equality.  (Contributed by
-       NM, 29-Mar-1998.) $)
-    uneq2d $p |- ( ph -> ( C u. A ) = ( C u. B ) ) $=
-      ( wceq cun uneq2 syl ) ABCFDBGDCGFEBCDHI $.
-
-    ${
-      uneq12d.2 $e |- ( ph -> C = D ) $.
-      $( Equality deduction for the union of two classes.  (Contributed by NM,
-         29-Sep-2004.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
-      uneq12d $p |- ( ph -> ( A u. C ) = ( B u. D ) ) $=
-        ( wceq cun uneq12 syl2anc ) ABCHDEHBDICEIHFGBCDEJK $.
-    $}
-  $}
-
-  ${
-    $d x y $.  $d y A $.  $d y B $.
-    nfun.1 $e |- F/_ x A $.
-    nfun.2 $e |- F/_ x B $.
-    $( Bound-variable hypothesis builder for the union of classes.
-       (Contributed by NM, 15-Sep-2003.)  (Revised by Mario Carneiro,
-       14-Oct-2016.)  Avoid ~ ax-10 , ~ ax-11 , ~ ax-12 .  (Revised by SN,
-       14-May-2025.) $)
-    nfun $p |- F/_ x ( A u. B ) $=
-      ( vy cun cv wcel wo elun nfcri nfor nfxfr nfci ) AFBCGZFHZPIQBIZQCIZJAQBC
-      KRSAAFBDLAFCELMNO $.
-    $( $j usage 'nfun' avoids 'ax-10' 'ax-11' 'ax-12'; $)
-  $}
-
-  ${
-    $d A x $.  $d B x $.  $d C x $.
-    $( Associative law for union of classes.  Exercise 8 of [TakeutiZaring]
-       p. 17.  (Contributed by NM, 3-May-1994.)  (Proof shortened by Andrew
-       Salmon, 26-Jun-2011.) $)
-    unass $p |- ( ( A u. B ) u. C ) = ( A u. ( B u. C ) ) $=
-      ( vx cun cv wcel wo elun orbi2i orbi1i orass bitr2i 3bitrri uneqri ) DABE
-      ZCABCEZEZDFZRGSAGZSQGZHTSBGZSCGZHZHZSPGZUCHZSAQIUAUDTSBCIJUGTUBHZUCHUEUFU
-      HUCSABIKTUBUCLMNO $.
-  $}
-
-  $( A rearrangement of union.  (Contributed by NM, 12-Aug-2004.) $)
-  un12 $p |- ( A u. ( B u. C ) ) = ( B u. ( A u. C ) ) $=
-    ( cun uncom uneq1i unass 3eqtr3i ) ABDZCDBADZCDABCDDBACDDIJCABEFABCGBACGH
-    $.
-
-  $( A rearrangement of union.  (Contributed by NM, 12-Aug-2004.)  (Proof
-     shortened by Andrew Salmon, 26-Jun-2011.) $)
-  un23 $p |- ( ( A u. B ) u. C ) = ( ( A u. C ) u. B ) $=
-    ( cun unass un12 uncom 3eqtri ) ABDCDABCDDBACDZDIBDABCEABCFBIGH $.
-
-  $( A rearrangement of the union of 4 classes.  (Contributed by NM,
-     12-Aug-2004.) $)
-  un4 $p |- ( ( A u. B ) u. ( C u. D ) ) =
-            ( ( A u. C ) u. ( B u. D ) ) $=
-    ( cun un12 uneq2i unass 3eqtr4i ) ABCDEZEZEACBDEZEZEABEJEACELEKMABCDFGABJHA
-    CLHI $.
-
-  $( Union distributes over itself.  (Contributed by NM, 17-Aug-2004.) $)
-  unundi $p |- ( A u. ( B u. C ) ) = ( ( A u. B ) u. ( A u. C ) ) $=
-    ( cun unidm uneq1i un4 eqtr3i ) AADZBCDZDAJDABDACDDIAJAEFAABCGH $.
-
-  $( Union distributes over itself.  (Contributed by NM, 17-Aug-2004.) $)
-  unundir $p |- ( ( A u. B ) u. C ) = ( ( A u. C ) u. ( B u. C ) ) $=
-    ( cun unidm uneq2i un4 eqtr3i ) ABDZCCDZDICDACDBCDDJCICEFABCCGH $.
-
-  ${
-    $d x A $.  $d x B $.
-    $( Subclass relationship for union of classes.  Theorem 25 of [Suppes]
-       p. 27.  (Contributed by NM, 5-Aug-1993.) $)
-    ssun1 $p |- A C_ ( A u. B ) $=
-      ( vx cun cv wcel wo orc elun sylibr ssriv ) CAABDZCEZAFZNMBFZGMLFNOHMABIJ
-      K $.
-  $}
-
-  $( Subclass relationship for union of classes.  (Contributed by NM,
-     30-Aug-1993.) $)
-  ssun2 $p |- A C_ ( B u. A ) $=
-    ( cun ssun1 uncom sseqtri ) AABCBACABDABEF $.
-
-  $( Subclass law for union of classes.  (Contributed by NM, 5-Aug-1993.) $)
-  ssun3 $p |- ( A C_ B -> A C_ ( B u. C ) ) $=
-    ( wss cun ssun1 sstr2 mpi ) ABDBBCEZDAIDBCFABIGH $.
-
-  $( Subclass law for union of classes.  (Contributed by NM, 14-Aug-1994.) $)
-  ssun4 $p |- ( A C_ B -> A C_ ( C u. B ) ) $=
-    ( wss cun ssun2 sstr2 mpi ) ABDBCBEZDAIDBCFABIGH $.
-
-  $( Membership law for union of classes.  (Contributed by NM, 5-Aug-1993.) $)
-  elun1 $p |- ( A e. B -> A e. ( B u. C ) ) $=
-    ( cun ssun1 sseli ) BBCDABCEF $.
-
-  $( Membership law for union of classes.  (Contributed by NM, 30-Aug-1993.) $)
-  elun2 $p |- ( A e. B -> A e. ( C u. B ) ) $=
-    ( cun ssun2 sseli ) BCBDABCEF $.
-
-  $( A statement is true for every element of the union of a pair of classes if
-     and only if it is true for every element of the first class and for every
-     element of the second class.  (Contributed by BTernaryTau,
-     27-Sep-2023.) $)
-  elunant $p |- ( ( C e. ( A u. B ) -> ph ) <->
-    ( ( C e. A -> ph ) /\ ( C e. B -> ph ) ) ) $=
-    ( cun wcel wi wo wa elun imbi1i jaob bitri ) DBCEFZAGDBFZDCFZHZAGOAGPAGINQA
-    DBCJKOAPLM $.
-
-  ${
-    $d x A $.  $d x B $.  $d x C $.
-    $( Subclass law for union of classes.  (Contributed by NM, 14-Oct-1999.)
-       (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
-    unss1 $p |- ( A C_ B -> ( A u. C ) C_ ( B u. C ) ) $=
-      ( vx wss cun cv wcel wo ssel orim1d elun 3imtr4g ssrdv ) ABEZDACFZBCFZODG
-      ZAHZRCHZIRBHZTIRPHRQHOSUATABRJKRACLRBCLMN $.
-
-    $( A relationship between subclass and union.  Theorem 26 of [Suppes]
-       p. 27.  (Contributed by NM, 30-Aug-1993.)  (Proof shortened by Andrew
-       Salmon, 26-Jun-2011.) $)
-    ssequn1 $p |- ( A C_ B <-> ( A u. B ) = B ) $=
-      ( vx cv wcel wi wal cun wb wceq wo bicom pm4.72 elun bibi1i 3bitr4i albii
-      wss df-ss dfcleq ) CDZAEZUABEZFZCGUAABHZEZUCIZCGABRUEBJUDUGCUCUBUCKZIUHUC
-      IUDUGUCUHLUBUCMUFUHUCUAABNOPQCABSCUEBTP $.
-  $}
-
-  $( Subclass law for union of classes.  Exercise 7 of [TakeutiZaring] p. 18.
-     (Contributed by NM, 14-Oct-1999.) $)
-  unss2 $p |- ( A C_ B -> ( C u. A ) C_ ( C u. B ) ) $=
-    ( wss cun unss1 uncom 3sstr4g ) ABDACEBCECAECBEABCFCAGCBGH $.
-
-  $( Subclass law for union of classes.  (Contributed by NM, 2-Jun-2004.) $)
-  unss12 $p |- ( ( A C_ B /\ C C_ D ) -> ( A u. C ) C_ ( B u. D ) ) $=
-    ( wss cun unss1 unss2 sylan9ss ) ABECDEACFBCFBDFABCGCDBHI $.
-
-  $( A relationship between subclass and union.  (Contributed by NM,
-     13-Jun-1994.) $)
-  ssequn2 $p |- ( A C_ B <-> ( B u. A ) = B ) $=
-    ( wss cun wceq ssequn1 uncom eqeq1i bitri ) ABCABDZBEBADZBEABFJKBABGHI $.
-
-  ${
-    $d x A $.  $d x B $.  $d x C $.
-    $( The union of two subclasses is a subclass.  Theorem 27 of [Suppes] p. 27
-       and its converse.  (Contributed by NM, 11-Jun-2004.) $)
-    unss $p |- ( ( A C_ C /\ B C_ C ) <-> ( A u. B ) C_ C ) $=
-      ( vx cun wss cv wcel wi wal wa df-ss 19.26 elunant anbi12i 3bitr4i bitr2i
-      albii ) ABEZCFDGZSHTCHZIZDJZACFZBCFZKZDSCLTAHUAIZTBHUAIZKZDJUGDJZUHDJZKUC
-      UFUGUHDMUBUIDUAABTNRUDUJUEUKDACLDBCLOPQ $.
-  $}
-
-  ${
-    unssi.1 $e |- A C_ C $.
-    unssi.2 $e |- B C_ C $.
-    $( An inference showing the union of two subclasses is a subclass.
-       (Contributed by Raph Levien, 10-Dec-2002.) $)
-    unssi $p |- ( A u. B ) C_ C $=
-      ( wss wa cun pm3.2i unss mpbi ) ACFZBCFZGABHCFLMDEIABCJK $.
-  $}
-
-  ${
-    unssd.1 $e |- ( ph -> A C_ C ) $.
-    unssd.2 $e |- ( ph -> B C_ C ) $.
-    $( A deduction showing the union of two subclasses is a subclass.
-       (Contributed by Jonathan Ben-Naim, 3-Jun-2011.) $)
-    unssd $p |- ( ph -> ( A u. B ) C_ C ) $=
-      ( wss cun wa unss biimpi syl2anc ) ABDGZCDGZBCHDGZEFMNIOBCDJKL $.
-  $}
-
-  ${
-    unssad.1 $e |- ( ph -> ( A u. B ) C_ C ) $.
-    $( If ` ( A u. B ) ` is contained in ` C ` , so is ` A ` .  One-way
-       deduction form of ~ unss .  Partial converse of ~ unssd .  (Contributed
-       by David Moews, 1-May-2017.) $)
-    unssad $p |- ( ph -> A C_ C ) $=
-      ( wss cun wa unss sylibr simpld ) ABDFZCDFZABCGDFLMHEBCDIJK $.
-
-    $( If ` ( A u. B ) ` is contained in ` C ` , so is ` B ` .  One-way
-       deduction form of ~ unss .  Partial converse of ~ unssd .  (Contributed
-       by David Moews, 1-May-2017.) $)
-    unssbd $p |- ( ph -> B C_ C ) $=
-      ( wss cun wa unss sylibr simprd ) ABDFZCDFZABCGDFLMHEBCDIJK $.
-  $}
-
-  $( A condition that implies inclusion in the union of two classes.
-     (Contributed by NM, 23-Nov-2003.) $)
-  ssun $p |- ( ( A C_ B \/ A C_ C ) -> A C_ ( B u. C ) ) $=
-    ( wss cun ssun3 ssun4 jaoi ) ABDABCEDACDABCFACBGH $.
-
-  $( Restricted existential quantification over union.  (Contributed by Jeff
-     Madsen, 5-Jan-2011.) $)
-  rexun $p |- ( E. x e. ( A u. B ) ph <->
-                          ( E. x e. A ph \/ E. x e. B ph ) ) $=
-    ( cun wrex cv wcel wa wo df-rex 19.43 elun anbi1i andir bitri exbii orbi12i
-    wex 3bitr4i ) ABCDEZFBGZUAHZAIZBSZABCFZABDFZJZABUAKUBCHZAIZUBDHZAIZJZBSUJBS
-    ZULBSZJUEUHUJULBLUDUMBUDUIUKJZAIUMUCUPAUBCDMNUIUKAOPQUFUNUGUOABCKABDKRTP $.
-
-  $( Restricted quantification over a union.  (Contributed by Scott Fenton,
-     12-Apr-2011.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.) $)
-  ralunb $p |- ( A. x e. ( A u. B ) ph <->
-                 ( A. x e. A ph /\ A. x e. B ph ) ) $=
-    ( cv cun wcel wi wal wral elunant albii 19.26 bitri df-ral anbi12i 3bitr4i
-    wa ) BEZCDFZGAHZBIZSCGAHZBIZSDGAHZBIZRZABTJABCJZABDJZRUBUCUERZBIUGUAUJBACDS
-    KLUCUEBMNABTOUHUDUIUFABCOABDOPQ $.
-
-  $( Restricted quantification over union.  (Contributed by Jeff Madsen,
-     2-Sep-2009.) $)
-  ralun $p |- ( ( A. x e. A ph /\ A. x e. B ph ) -> A. x e. ( A u. B ) ph ) $=
-    ( cun wral wa ralunb biimpri ) ABCDEFABCFABDFGABCDHI $.
-
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
   The intersection of two classes
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
@@ -40001,6 +39652,355 @@ $)
       ( wss cin wceq cv wcel crab dfss2 dfin5 ineqcomi eqeq1i bitri ) CBDCBEZCF
       AGCHABIZCFCBJOPCBCPABCKLMN $.
   $}
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  The union of two classes
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $c u. $.  $( Token for the union of two classes. $)
+
+  $( Syntax for the union of two classes. $)
+  cun $a class ( A u. B ) $.
+
+  ${
+    $d x A $.  $d x B $.  $d y A $.  $d y B $.  $d z x $.  $d z y $.  $d z A $.
+    $d z B $.
+    $( Soundness justification theorem for ~ df-un .  (Contributed by Rodolfo
+       Medina, 28-Apr-2010.)  (Proof shortened by Andrew Salmon,
+       9-Jul-2011.) $)
+    unjust $p |- { x | ( x e. A \/ x e. B ) } = { y | ( y e. A \/ y e. B ) } $=
+      ( vz cv wcel wo cab weq eleq1w orbi12d cbvabv eqtri ) AFZCGZODGZHZAIEFZCG
+      ZSDGZHZEIBFZCGZUCDGZHZBIRUBAEAEJPTQUAAECKAEDKLMUBUFEBEBJTUDUAUEEBCKEBDKLM
+      N $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Define the union of two classes.  Definition 5.6 of [TakeutiZaring]
+       p. 16.  For example, ` ( { 1 , 3 } u. { 1 , 8 } ) = { 1 , 3 , 8 } `
+       ( ~ ex-un ).  Contrast this operation with difference ` ( A \ B ) `
+       ( ~ df-dif ) and intersection ` ( A i^i B ) ` ( ~ df-in ).  For an
+       alternate definition in terms of class difference, requiring no dummy
+       variables, see ~ dfun2 .  For union defined in terms of intersection,
+       see ~ dfun3 .  (Contributed by NM, 23-Aug-1993.) $)
+    df-un $a |- ( A u. B ) = { x | ( x e. A \/ x e. B ) } $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( Expansion of membership in class union.  Theorem 12 of [Suppes] p. 25.
+       (Contributed by NM, 7-Aug-1994.) $)
+    elun $p |- ( A e. ( B u. C ) <-> ( A e. B \/ A e. C ) ) $=
+      ( vx cun wcel cvv wo elex jaoi wceq eleq1 orbi12d df-un elab2g pm5.21nii
+      cv ) ABCEZFAGFZABFZACFZHZARITSUAABIACIJDQZBFZUCCFZHUBDARGUCAKUDTUEUAUCABL
+      UCACLMDBCNOP $.
+  $}
+
+  $( A member of a union that is not a member of the first class, is a member
+     of the second class.  (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
+  elunnel1 $p |- ( ( A e. ( B u. C ) /\ -. A e. B ) -> A e. C ) $=
+    ( cun wcel wo elun biimpi orcanai ) ABCDEZABEZACEZJKLFABCGHI $.
+
+  $( A member of a union that is not a member of the second class, is a member
+     of the first class.  (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
+  elunnel2 $p |- ( ( A e. ( B u. C ) /\ -. A e. C ) -> A e. B ) $=
+    ( cun wcel wo elun biimpi orcomd orcanai ) ABCDEZACEZABEZKMLKMLFABCGHIJ $.
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    uneqri.1 $e |- ( ( x e. A \/ x e. B ) <-> x e. C ) $.
+    $( Inference from membership to union.  (Contributed by NM,
+       21-Jun-1993.) $)
+    uneqri $p |- ( A u. B ) = C $=
+      ( cun cv wcel wo elun bitri eqriv ) ABCFZDAGZMHNBHNCHINDHNBCJEKL $.
+  $}
+
+  ${
+    $d x A $.
+    $( Idempotent law for union of classes.  Theorem 23 of [Suppes] p. 27.
+       (Contributed by NM, 21-Jun-1993.) $)
+    unidm $p |- ( A u. A ) = A $=
+      ( vx cv wcel oridm uneqri ) BAAABCADEF $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Commutative law for union of classes.  Exercise 6 of [TakeutiZaring]
+       p. 17.  (Contributed by NM, 25-Jun-1998.)  (Proof shortened by Andrew
+       Salmon, 26-Jun-2011.) $)
+    uncom $p |- ( A u. B ) = ( B u. A ) $=
+      ( vx cun cv wcel wo orcom elun bitr4i uneqri ) CABBADZCEZAFZMBFZGONGMLFNO
+      HMBAIJK $.
+  $}
+
+  $( If a class equals the union of two other classes, then it equals the union
+     of those two classes commuted. ~ equncom was automatically derived from
+     ~ equncomVD using the tools program translate__without__overwriting.cmd
+     and minimizing.  (Contributed by Alan Sare, 18-Feb-2012.) $)
+  equncom $p |- ( A = ( B u. C ) <-> A = ( C u. B ) ) $=
+    ( cun uncom eqeq2i ) BCDCBDABCEF $.
+
+  ${
+    equncomi.1 $e |- A = ( B u. C ) $.
+    $( Inference form of ~ equncom . ~ equncomi was automatically derived from
+       ~ equncomiVD using the tools program translate__without__overwriting.cmd
+       and minimizing.  (Contributed by Alan Sare, 18-Feb-2012.) $)
+    equncomi $p |- A = ( C u. B ) $=
+      ( cun wceq equncom mpbi ) ABCEFACBEFDABCGH $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Equality theorem for the union of two classes.  (Contributed by NM,
+       15-Jul-1993.) $)
+    uneq1 $p |- ( A = B -> ( A u. C ) = ( B u. C ) ) $=
+      ( vx wceq cun cv wcel wo eleq2 orbi1d elun 3bitr4g eqrdv ) ABEZDACFZBCFZO
+      DGZAHZRCHZIRBHZTIRPHRQHOSUATABRJKRACLRBCLMN $.
+  $}
+
+  $( Equality theorem for the union of two classes.  (Contributed by NM,
+     5-Aug-1993.) $)
+  uneq2 $p |- ( A = B -> ( C u. A ) = ( C u. B ) ) $=
+    ( wceq cun uneq1 uncom 3eqtr4g ) ABDACEBCECAECBEABCFCAGCBGH $.
+
+  $( Equality theorem for the union of two classes.  (Contributed by NM,
+     29-Mar-1998.) $)
+  uneq12 $p |- ( ( A = B /\ C = D ) -> ( A u. C ) = ( B u. D ) ) $=
+    ( wceq cun uneq1 uneq2 sylan9eq ) ABECDEACFBCFBDFABCGCDBHI $.
+
+  ${
+    uneq1i.1 $e |- A = B $.
+    $( Inference adding union to the right in a class equality.  (Contributed
+       by NM, 30-Aug-1993.) $)
+    uneq1i $p |- ( A u. C ) = ( B u. C ) $=
+      ( wceq cun uneq1 ax-mp ) ABEACFBCFEDABCGH $.
+
+    $( Inference adding union to the left in a class equality.  (Contributed by
+       NM, 30-Aug-1993.) $)
+    uneq2i $p |- ( C u. A ) = ( C u. B ) $=
+      ( wceq cun uneq2 ax-mp ) ABECAFCBFEDABCGH $.
+
+    ${
+      uneq12i.2 $e |- C = D $.
+      $( Equality inference for the union of two classes.  (Contributed by NM,
+         12-Aug-2004.)  (Proof shortened by Eric Schmidt, 26-Jan-2007.) $)
+      uneq12i $p |- ( A u. C ) = ( B u. D ) $=
+        ( wceq cun uneq12 mp2an ) ABGCDGACHBDHGEFABCDIJ $.
+    $}
+  $}
+
+  ${
+    uneq1d.1 $e |- ( ph -> A = B ) $.
+    $( Deduction adding union to the right in a class equality.  (Contributed
+       by NM, 29-Mar-1998.) $)
+    uneq1d $p |- ( ph -> ( A u. C ) = ( B u. C ) ) $=
+      ( wceq cun uneq1 syl ) ABCFBDGCDGFEBCDHI $.
+
+    $( Deduction adding union to the left in a class equality.  (Contributed by
+       NM, 29-Mar-1998.) $)
+    uneq2d $p |- ( ph -> ( C u. A ) = ( C u. B ) ) $=
+      ( wceq cun uneq2 syl ) ABCFDBGDCGFEBCDHI $.
+
+    ${
+      uneq12d.2 $e |- ( ph -> C = D ) $.
+      $( Equality deduction for the union of two classes.  (Contributed by NM,
+         29-Sep-2004.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+      uneq12d $p |- ( ph -> ( A u. C ) = ( B u. D ) ) $=
+        ( wceq cun uneq12 syl2anc ) ABCHDEHBDICEIHFGBCDEJK $.
+    $}
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.
+    nfun.1 $e |- F/_ x A $.
+    nfun.2 $e |- F/_ x B $.
+    $( Bound-variable hypothesis builder for the union of classes.
+       (Contributed by NM, 15-Sep-2003.)  (Revised by Mario Carneiro,
+       14-Oct-2016.)  Avoid ~ ax-10 , ~ ax-11 , ~ ax-12 .  (Revised by SN,
+       14-May-2025.) $)
+    nfun $p |- F/_ x ( A u. B ) $=
+      ( vy cun cv wcel wo elun nfcri nfor nfxfr nfci ) AFBCGZFHZPIQBIZQCIZJAQBC
+      KRSAAFBDLAFCELMNO $.
+    $( $j usage 'nfun' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( Associative law for union of classes.  Exercise 8 of [TakeutiZaring]
+       p. 17.  (Contributed by NM, 3-May-1994.)  (Proof shortened by Andrew
+       Salmon, 26-Jun-2011.) $)
+    unass $p |- ( ( A u. B ) u. C ) = ( A u. ( B u. C ) ) $=
+      ( vx cun cv wcel wo elun orbi2i orbi1i orass bitr2i 3bitrri uneqri ) DABE
+      ZCABCEZEZDFZRGSAGZSQGZHTSBGZSCGZHZHZSPGZUCHZSAQIUAUDTSBCIJUGTUBHZUCHUEUFU
+      HUCSABIKTUBUCLMNO $.
+  $}
+
+  $( A rearrangement of union.  (Contributed by NM, 12-Aug-2004.) $)
+  un12 $p |- ( A u. ( B u. C ) ) = ( B u. ( A u. C ) ) $=
+    ( cun uncom uneq1i unass 3eqtr3i ) ABDZCDBADZCDABCDDBACDDIJCABEFABCGBACGH
+    $.
+
+  $( A rearrangement of union.  (Contributed by NM, 12-Aug-2004.)  (Proof
+     shortened by Andrew Salmon, 26-Jun-2011.) $)
+  un23 $p |- ( ( A u. B ) u. C ) = ( ( A u. C ) u. B ) $=
+    ( cun unass un12 uncom 3eqtri ) ABDCDABCDDBACDZDIBDABCEABCFBIGH $.
+
+  $( A rearrangement of the union of 4 classes.  (Contributed by NM,
+     12-Aug-2004.) $)
+  un4 $p |- ( ( A u. B ) u. ( C u. D ) ) =
+            ( ( A u. C ) u. ( B u. D ) ) $=
+    ( cun un12 uneq2i unass 3eqtr4i ) ABCDEZEZEACBDEZEZEABEJEACELEKMABCDFGABJHA
+    CLHI $.
+
+  $( Union distributes over itself.  (Contributed by NM, 17-Aug-2004.) $)
+  unundi $p |- ( A u. ( B u. C ) ) = ( ( A u. B ) u. ( A u. C ) ) $=
+    ( cun unidm uneq1i un4 eqtr3i ) AADZBCDZDAJDABDACDDIAJAEFAABCGH $.
+
+  $( Union distributes over itself.  (Contributed by NM, 17-Aug-2004.) $)
+  unundir $p |- ( ( A u. B ) u. C ) = ( ( A u. C ) u. ( B u. C ) ) $=
+    ( cun unidm uneq2i un4 eqtr3i ) ABDZCCDZDICDACDBCDDJCICEFABCCGH $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( Subclass relationship for union of classes.  Theorem 25 of [Suppes]
+       p. 27.  (Contributed by NM, 5-Aug-1993.) $)
+    ssun1 $p |- A C_ ( A u. B ) $=
+      ( vx cun cv wcel wo orc elun sylibr ssriv ) CAABDZCEZAFZNMBFZGMLFNOHMABIJ
+      K $.
+  $}
+
+  $( Subclass relationship for union of classes.  (Contributed by NM,
+     30-Aug-1993.) $)
+  ssun2 $p |- A C_ ( B u. A ) $=
+    ( cun ssun1 uncom sseqtri ) AABCBACABDABEF $.
+
+  $( Subclass law for union of classes.  (Contributed by NM, 5-Aug-1993.) $)
+  ssun3 $p |- ( A C_ B -> A C_ ( B u. C ) ) $=
+    ( wss cun ssun1 sstr2 mpi ) ABDBBCEZDAIDBCFABIGH $.
+
+  $( Subclass law for union of classes.  (Contributed by NM, 14-Aug-1994.) $)
+  ssun4 $p |- ( A C_ B -> A C_ ( C u. B ) ) $=
+    ( wss cun ssun2 sstr2 mpi ) ABDBCBEZDAIDBCFABIGH $.
+
+  $( Membership law for union of classes.  (Contributed by NM, 5-Aug-1993.) $)
+  elun1 $p |- ( A e. B -> A e. ( B u. C ) ) $=
+    ( cun ssun1 sseli ) BBCDABCEF $.
+
+  $( Membership law for union of classes.  (Contributed by NM, 30-Aug-1993.) $)
+  elun2 $p |- ( A e. B -> A e. ( C u. B ) ) $=
+    ( cun ssun2 sseli ) BCBDABCEF $.
+
+  $( A statement is true for every element of the union of a pair of classes if
+     and only if it is true for every element of the first class and for every
+     element of the second class.  (Contributed by BTernaryTau,
+     27-Sep-2023.) $)
+  elunant $p |- ( ( C e. ( A u. B ) -> ph ) <->
+    ( ( C e. A -> ph ) /\ ( C e. B -> ph ) ) ) $=
+    ( cun wcel wi wo wa elun imbi1i jaob bitri ) DBCEFZAGDBFZDCFZHZAGOAGPAGINQA
+    DBCJKOAPLM $.
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Subclass law for union of classes.  (Contributed by NM, 14-Oct-1999.)
+       (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    unss1 $p |- ( A C_ B -> ( A u. C ) C_ ( B u. C ) ) $=
+      ( vx wss cun cv wcel wo ssel orim1d elun 3imtr4g ssrdv ) ABEZDACFZBCFZODG
+      ZAHZRCHZIRBHZTIRPHRQHOSUATABRJKRACLRBCLMN $.
+
+    $( A relationship between subclass and union.  Theorem 26 of [Suppes]
+       p. 27.  (Contributed by NM, 30-Aug-1993.)  (Proof shortened by Andrew
+       Salmon, 26-Jun-2011.) $)
+    ssequn1 $p |- ( A C_ B <-> ( A u. B ) = B ) $=
+      ( vx cv wcel wi wal cun wb wceq wo bicom pm4.72 elun bibi1i 3bitr4i albii
+      wss df-ss dfcleq ) CDZAEZUABEZFZCGUAABHZEZUCIZCGABRUEBJUDUGCUCUBUCKZIUHUC
+      IUDUGUCUHLUBUCMUFUHUCUAABNOPQCABSCUEBTP $.
+  $}
+
+  $( Subclass law for union of classes.  Exercise 7 of [TakeutiZaring] p. 18.
+     (Contributed by NM, 14-Oct-1999.) $)
+  unss2 $p |- ( A C_ B -> ( C u. A ) C_ ( C u. B ) ) $=
+    ( wss cun unss1 uncom 3sstr4g ) ABDACEBCECAECBEABCFCAGCBGH $.
+
+  $( Subclass law for union of classes.  (Contributed by NM, 2-Jun-2004.) $)
+  unss12 $p |- ( ( A C_ B /\ C C_ D ) -> ( A u. C ) C_ ( B u. D ) ) $=
+    ( wss cun unss1 unss2 sylan9ss ) ABECDEACFBCFBDFABCGCDBHI $.
+
+  $( A relationship between subclass and union.  (Contributed by NM,
+     13-Jun-1994.) $)
+  ssequn2 $p |- ( A C_ B <-> ( B u. A ) = B ) $=
+    ( wss cun wceq ssequn1 uncom eqeq1i bitri ) ABCABDZBEBADZBEABFJKBABGHI $.
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( The union of two subclasses is a subclass.  Theorem 27 of [Suppes] p. 27
+       and its converse.  (Contributed by NM, 11-Jun-2004.) $)
+    unss $p |- ( ( A C_ C /\ B C_ C ) <-> ( A u. B ) C_ C ) $=
+      ( vx cun wss cv wcel wi wal wa df-ss 19.26 elunant anbi12i 3bitr4i bitr2i
+      albii ) ABEZCFDGZSHTCHZIZDJZACFZBCFZKZDSCLTAHUAIZTBHUAIZKZDJUGDJZUHDJZKUC
+      UFUGUHDMUBUIDUAABTNRUDUJUEUKDACLDBCLOPQ $.
+  $}
+
+  ${
+    unssi.1 $e |- A C_ C $.
+    unssi.2 $e |- B C_ C $.
+    $( An inference showing the union of two subclasses is a subclass.
+       (Contributed by Raph Levien, 10-Dec-2002.) $)
+    unssi $p |- ( A u. B ) C_ C $=
+      ( wss wa cun pm3.2i unss mpbi ) ACFZBCFZGABHCFLMDEIABCJK $.
+  $}
+
+  ${
+    unssd.1 $e |- ( ph -> A C_ C ) $.
+    unssd.2 $e |- ( ph -> B C_ C ) $.
+    $( A deduction showing the union of two subclasses is a subclass.
+       (Contributed by Jonathan Ben-Naim, 3-Jun-2011.) $)
+    unssd $p |- ( ph -> ( A u. B ) C_ C ) $=
+      ( wss cun wa unss biimpi syl2anc ) ABDGZCDGZBCHDGZEFMNIOBCDJKL $.
+  $}
+
+  ${
+    unssad.1 $e |- ( ph -> ( A u. B ) C_ C ) $.
+    $( If ` ( A u. B ) ` is contained in ` C ` , so is ` A ` .  One-way
+       deduction form of ~ unss .  Partial converse of ~ unssd .  (Contributed
+       by David Moews, 1-May-2017.) $)
+    unssad $p |- ( ph -> A C_ C ) $=
+      ( wss cun wa unss sylibr simpld ) ABDFZCDFZABCGDFLMHEBCDIJK $.
+
+    $( If ` ( A u. B ) ` is contained in ` C ` , so is ` B ` .  One-way
+       deduction form of ~ unss .  Partial converse of ~ unssd .  (Contributed
+       by David Moews, 1-May-2017.) $)
+    unssbd $p |- ( ph -> B C_ C ) $=
+      ( wss cun wa unss sylibr simprd ) ABDFZCDFZABCGDFLMHEBCDIJK $.
+  $}
+
+  $( A condition that implies inclusion in the union of two classes.
+     (Contributed by NM, 23-Nov-2003.) $)
+  ssun $p |- ( ( A C_ B \/ A C_ C ) -> A C_ ( B u. C ) ) $=
+    ( wss cun ssun3 ssun4 jaoi ) ABDABCEDACDABCFACBGH $.
+
+  $( Restricted existential quantification over union.  (Contributed by Jeff
+     Madsen, 5-Jan-2011.) $)
+  rexun $p |- ( E. x e. ( A u. B ) ph <->
+                          ( E. x e. A ph \/ E. x e. B ph ) ) $=
+    ( cun wrex cv wcel wa wo df-rex 19.43 elun anbi1i andir bitri exbii orbi12i
+    wex 3bitr4i ) ABCDEZFBGZUAHZAIZBSZABCFZABDFZJZABUAKUBCHZAIZUBDHZAIZJZBSUJBS
+    ZULBSZJUEUHUJULBLUDUMBUDUIUKJZAIUMUCUPAUBCDMNUIUKAOPQUFUNUGUOABCKABDKRTP $.
+
+  $( Restricted quantification over a union.  (Contributed by Scott Fenton,
+     12-Apr-2011.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.) $)
+  ralunb $p |- ( A. x e. ( A u. B ) ph <->
+                 ( A. x e. A ph /\ A. x e. B ph ) ) $=
+    ( cv cun wcel wi wal wral elunant albii 19.26 bitri df-ral anbi12i 3bitr4i
+    wa ) BEZCDFZGAHZBIZSCGAHZBIZSDGAHZBIZRZABTJABCJZABDJZRUBUCUERZBIUGUAUJBACDS
+    KLUCUEBMNABTOUHUDUIUFABCOABDOPQ $.
+
+  $( Restricted quantification over union.  (Contributed by Jeff Madsen,
+     2-Sep-2009.) $)
+  ralun $p |- ( ( A. x e. A ph /\ A. x e. B ph ) -> A. x e. ( A u. B ) ph ) $=
+    ( cun wral wa ralunb biimpri ) ABCDEFABCFABDFGABCDHI $.
 
 
 $(
