@@ -78388,9 +78388,9 @@ $)
      domain and range.  (Contributed by Peter Mazsa, 10-Oct-2026.) $)
   relexdmrnb $p |- ( Rel R ->
                      ( R e. _V <-> ( dom R e. _V /\ ran R e. _V ) ) ) $=
-    ( wrel cvv wcel cdm crn wa dmexg rnexg jca adantl relssdmrn xpexg
-    cxp wss ssexg syl2an impbida ) ABZACDZAEZCDZAFZCDZGZTUESTUBUDACHA
-    CIJKSAUAUCNZOUFCDTUEALUAUCCCMAUFCPQR $.
+    ( wrel cvv wcel cdm crn wa dmexg rnexg jca adantl cxp relssdmrn xpexg ssexg
+    wss syl2an impbida ) ABZACDZAEZCDZAFZCDZGZTUESTUBUDACHACIJKSAUAUCLZPUFCDTUE
+    AMUAUCCCNAUFCOQR $.
 
   ${
     fndmexd.1 $e |- ( ph -> F e. V ) $.
@@ -78454,11 +78454,19 @@ $)
     ( wcel cid cres cxp wss cvv idssxp sqxpexg ssexg sylancr ) ABCDAEZAAFZGNHCM
     HCAIABJMNHKL $.
 
-  $( The image of a set is a set.  Theorem 3.17 of [Monk1] p. 39.  (Contributed
-     by NM, 24-Jul-1995.) $)
+  $( Generalization of Theorem 3.17 of [Monk1] p. 39: the image of a class
+     under a restriction is a set whenever the restriction is a set.  Unlike
+     ~ imaexg , the whole relation need not be a set.  (Contributed by Peter
+     Mazsa, 10-Oct-2026.) $)
+  imaexgen $p |- ( ( A |` B ) e. V -> ( A " B ) e. _V ) $=
+    ( cres wcel cima crn cvv df-ima rnexg eqeltrid ) ABDZCEABFLGHABILCJK $.
+
+  $( The image of a set is a set.  Theorem 3.17 of [Monk1] p. 39.  More
+     restrictive antecedent; kept for backward compatibility; for new work,
+     prefer ~ imaexgen .  (Contributed by NM, 24-Jul-1995.)  (Revised by Peter
+     Mazsa, 10-Oct-2026.) $)
   imaexg $p |- ( A e. V -> ( A " B ) e. _V ) $=
-    ( wcel cima crn wss cvv imassrn rnexg ssexg sylancr ) ACDABEZAFZGNHDMHDABIA
-    CJMNHKL $.
+    ( wcel cres cvv cima resexg imaexgen syl ) ACDABEFDABGFDABCHABFIJ $.
 
   ${
     imaex.1 $e |- A e. _V $.
