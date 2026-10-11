@@ -2710,7 +2710,9 @@ favor of theorems in deduction form.</TD>
 
 <TR>
   <TD>riinrab</TD>
-  <TD>~ iinrabm</TD>
+  <TD>~ riinm plus ~ iinrabm</TD>
+  <td>there is no obvious way to combine the case where
+  ` X ` is inhabited and where it is empty</td>
 </TR>
 
 <tr>
@@ -5313,8 +5315,8 @@ that rabfi implies excluded middle</TD>
 
 <TR>
 <TD>finresfin</TD>
-<TD><I>none</I></TD>
-<TD>The set.mm proof is in terms of ssfi</TD>
+<TD>~ relresfin</TD>
+<TD>when restricting to a subset of a relation's domain</TD>
 </TR>
 
 <TR>
@@ -5539,6 +5541,12 @@ that rabfi implies excluded middle</TD>
   <TD>At first glance it would appear that the mapping would need to
   be one to one or some other condition.</TD>
 </TR>
+
+<tr>
+  <td>indexfi</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses fofi</td>
+</tr>
 
 <TR>
   <TD>fisuppfi</TD>
@@ -7762,12 +7770,6 @@ favor of theorems in deduction form.</TD>
 <TD>~ crap0 </TD>
 </TR>
 
-<TR>
-<TD>ofsubeq0</TD>
-<TD><I>none</I></TD>
-<TD>presumably provable</TD>
-</TR>
-
 <tr>
   <td>ofsubge0</td>
   <td><i>none</i></td>
@@ -8327,12 +8329,12 @@ proof is not intuitionistic and it is lightly used in set.mm.</TD>
 
 <TR>
   <TD>flle</TD>
-  <TD>~ flqle</TD>
+  <TD>~ flqle , ~ flaplelt</TD>
 </TR>
 
 <TR>
   <TD>flltp1 , fllep1</TD>
-  <TD>~ flqltp1</TD>
+  <TD>~ flqltp1 , ~ flaplelt</TD>
 </TR>
 
 <TR>
@@ -8352,7 +8354,7 @@ proof is not intuitionistic and it is lightly used in set.mm.</TD>
 
 <TR>
   <TD>fllt</TD>
-  <TD>~ flqlt</TD>
+  <TD>~ flqlt , ~ flaplt</TD>
 </TR>
 
 <TR>
@@ -11808,6 +11810,13 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>changes not empty to inhabited</td>
 </tr>
 
+<tr>
+  <td>2503prm , 4001prm</td>
+  <td><i>none</i></td>
+  <td>presumably provable; ~ 1259prm needed only small
+  changes from the set.mm proof</td>
+</tr>
+
 <TR>
   <TD>isstruct2</TD>
   <TD>~ isstruct2im , ~ isstruct2r</TD>
@@ -11905,6 +11914,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 <TR>
   <TD>strfv</TD>
   <TD>~ strslfv</TD>
+  <td>if you need something in closed or deduction
+  form, see ~ strslfv3</td>
 </TR>
 
 <TR>
@@ -12945,6 +12956,13 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>cntziinsn</td>
+  <td><i>none</i></td>
+  <td>would apparently need ` S ` to be inhabited (or
+  empty)</td>
+</tr>
+
+<tr>
   <td>setsplusg</td>
   <td>~ setsslnid</td>
 </tr>
@@ -12990,11 +13008,25 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>gsumval3a , gsumval3eu , gsumval3lem1 , gsumval3lem2 ,
   gsumval3 , gsumcllem , gsumzres , gsumzcl2 , gsumzcl ,
-  gsumzf1o , gsumres , gsumcl2</td>
+  gsumzf1o</td>
   <td>~ gzsumval2 , ~ gzsumfzval</td>
   <td>these are all in terms of support which we could
   define but which would require additional conditions
   for example decidable equality of group elements</td>
+</tr>
+
+<tr>
+  <td>gsumres</td>
+  <td>~ gsumresfi</td>
+  <td>adds ` W C_ A ` , ` W e. Fin ` , ` A e. Fin ` and
+  ` A. x e. ( A \ W ) ( F `` x ) = .0. `
+  to replace ` F finSupp .0. ` and ` ( F supp .0. ) C_ W ` .</td>
+</tr>
+
+<tr>
+  <td>gsumcl2</td>
+  <td>~ gzsumcl , ~ gsumclfi</td>
+  <td>see gsumcl which is very similar</td>
 </tr>
 
 <tr>
@@ -13084,12 +13116,28 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>gsumzsplit , gsumsplit , gsumsplit2 , gsummptfidmsplit ,
-  gsummptfidmsplitres</td>
+  <td>gsumzsplit</td>
   <td><i>none</i></td>
-  <td>should be possible to prove versions indexed by
-  consecutive integers (compare with gsummptfzsplit and gsummptfzsplitl
-  ).</td>
+  <td>we do not currently have any machinery to work with
+  a group sum within the commutative portion of
+  a monoid rather than needing the whole monoid to
+  be commutative</td>
+</tr>
+
+<tr>
+  <td>gsumsplit</td>
+  <td>~ gsumsplitfi</td>
+  <td>changes finitely supported to finite</td>
+</tr>
+
+<tr>
+  <td>gsumsplit2</td>
+  <td><i>none</i></td>
+  <td>should be possible to prove versions with the usual
+  changes, such as being indexed by
+  consecutive integers for ` gzsum ` (compare with
+  gsummptfzsplit and gsummptfzsplitl ), or changing
+  finitely supported to finite for ` gsum ` .</td>
 </tr>
 
 <tr>
@@ -13156,16 +13204,27 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>gsumsnfd</td>
+  <td rowspan="2">gsumsnfd</td>
   <td>~ gzsumsnfd</td>
-  <td>The group sum needs to be indexed by an integer</td>
+  <td>for ` gzsum `</td>
 </tr>
 
 <tr>
-  <td>gsumsnd , gsumsnf</td>
+  <td>~ gsumsnfdcmn</td>
+  <td>for ` gsum ` , where the monoid is commutative</td>
+</tr>
+
+<tr>
+  <td>gsumsnd</td>
+  <td>~ gsumsndcmn</td>
+  <td>the monoid must be commutative</td>
+</tr>
+
+<tr>
+  <td>gsumsnf</td>
   <td><i>none</i></td>
-  <td>these are variations on similar theorems - see
-  ~ gzsumsnfd and ~ gsumsncmn</td>
+  <td>a variation on similar theorems - see
+  ~ gsumsnfdcmn</td>
 </tr>
 
 <tr>
@@ -13179,6 +13238,39 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>Should be possible with some changes.  Because ` M ` and ` N `
   would need to be consecutive integers, perhaps it would be easier
   to just state them as ` M ` and ` M + 1 ` .</td>
+</tr>
+
+<tr>
+  <td>gsum2dlem1</td>
+  <td>~ gsum2dfilem1</td>
+  <td>requires that ` ( A " { j } ) ` is finite, adds ` j e. D `
+  conditions, and drops unneeded hypotheses</td>
+</tr>
+
+<tr>
+  <td>gsum2dlem2</td>
+  <td>~ gsum2dfilem2</td>
+  <td>changes finitely supported to finite, requires that
+  ` ( A " { j } ) ` is finite, and adds ` j e. D ` condition</td>
+</tr>
+
+<tr>
+  <td>gsum2d</td>
+  <td>~ gsum2dfi</td>
+  <td>changes finitely supported to finite, requires that
+  ` ( A " { j } ) ` is finite, and adds ` j e. D ` condition</td>
+</tr>
+
+<tr>
+  <td>gsum2d2</td>
+  <td>~ gsum2d2fi</td>
+  <td>requires ` A ` and ` C ( j ) ` to be finite</td>
+</tr>
+
+<tr>
+  <td>gsumcom2</td>
+  <td>~ gsumcom2fi</td>
+  <td>requires ` A ` and ` C ( j ) ` to be finite</td>
 </tr>
 
 <tr>
@@ -13253,9 +13345,15 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>gsummulc1 , gsummulc2</td>
-  <td><i>none</i></td>
-  <td>depend on finSupp and gsum theorems we do not have</td>
+  <td>gsummulc1</td>
+  <td>~ gsummulc1fi</td>
+  <td>changes finitely supported to finite</td>
+</tr>
+
+<tr>
+  <td>gsummulc2</td>
+  <td>~ gsummulc2fi</td>
+  <td>changes finitely supported to finite</td>
 </tr>
 
 <tr>
@@ -14658,9 +14756,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>psrbaglefi</td>
-  <td><i>none</i></td>
-  <td>The set.mm proof uses theorems involving
-  the support of a function which we don't have</td>
+  <td>~ psrbaglefifi</td>
+  <td>requires that the index set is finite</td>
 </tr>
 
 <tr>
@@ -14670,26 +14767,15 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>gsumbagdiaglem</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof would apparently work with
-  small changes</td>
-</tr>
-
-<tr>
   <td>gsumbagdiag</td>
-  <td><i>none</i></td>
-  <td>Apparently would be provable now that ` gsum ` is
-  defined via ~ df-gsumfi . We would seem to need a
-  ` gsum ` version of gsumcom2 .</td>
+  <td>~ gsumbagdiagfi</td>
+  <td>requires the index set to be finite</td>
 </tr>
 
 <tr>
   <td>psrass1lem</td>
-  <td><i>none</i></td>
-  <td>The set.mm proof uses suppssdm , 	suppssfifsupp ,
-  gsum2d2 , gsumf1o , psrbaglefi ,
-  gsumbagdiaglem , and gsumbagdiag .</td>
+  <td>~ psrass1filem</td>
+  <td>requires the index set to be finite</td>
 </tr>
 
 <tr>
@@ -14713,46 +14799,39 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>rhmpsrlem2</td>
-  <td><i>none</i></td>
-  <td>depends on a variety of theorems we don't have yet</td>
+  <td>~ rhmpsrfilem2</td>
+  <td>adds condition that ` I ` is finite</td>
 </tr>
 
 <tr>
-  <td id="missing-psrmulr">psrmulr</td>
-  <td><i>none</i></td>
-  <td>presumably provable in this form or with small
-  changes, now that we have ` gsum ` using ~ df-gsumfi .</td>
-</tr>
-
-<tr>
-  <td>psrmulfval</td>
-  <td><i>none</i></td>
-  <td>this theorem in particular is a simple consequence of
-  psrmulr ( ` F e. B ` should take care of the set existence, as
-  in ~ psradd ), but see the <a href="#missing-psrmulr">psrmulr
-  entry</a> for thoughts on what ` mPwSer ` multiplication should
-  expand to</td>
+  <td>psrmulr</td>
+  <td>~ psrmulrg</td>
+  <td>adds set existence conditions</td>
 </tr>
 
 <tr>
   <td>psrmulval</td>
-  <td><i>none</i></td>
-  <td>this theorem in particular is a simple consequence of
-  psrmulfval , but see the <a href="#missing-psrmulr">psrmulr
-  entry</a> for thoughts on what ` mPwSer ` multiplication should
-  expand to</td>
+  <td>~ psrmulvalfi</td>
+  <td>adds conditions that ` I ` is finite and ` R ` is
+  a ring</td>
 </tr>
 
 <tr>
-  <td>psrmulcllem , psrmulcl</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses rhmpsrlem2 and psrmulfval</td>
+  <td>psrmulcllem</td>
+  <td>~ psrmulclfilem</td>
+  <td>adds condition that ` I ` is finite</td>
+</tr>
+
+<tr>
+  <td>psrmulcl</td>
+  <td>~ psrmulclfi</td>
+  <td>requires a finite index set</td>
 </tr>
 
 <tr>
   <td>psrsca</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses psrmulr</td>
+  <td>should be possible now that we have ~ psrmulrg</td>
 </tr>
 
 <tr>
@@ -14794,27 +14873,20 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>psrlidm</td>
-  <td><i>none</i></td>
-  <td>this is where we really would need a functioning definition
-  of ` mPwSer ` multiplication (as discussed at the <a
-  href="#missing-psrmulr">psrmulr entry</a>), in particular how to
-  handle the parts of the set.mm proof which use gsumres and gsumsn .
-  The set.mm proof also uses psrbagcon .  There are some ` if `
-  expressions in the set.mm proof but it isn't clear they are
-  being used in a way that needs decidability (if they do,
-  see the similar portion of the ~ psr1clfi proof).</td>
+  <td>~ psrlidmfi</td>
+  <td>requires a finite index set</td>
 </tr>
 
 <tr>
   <td>psrridm</td>
-  <td><i>none</i></td>
-  <td>presumably the issues are similar to psrlidm</td>
+  <td>~ psrridmfi</td>
+  <td>requires a finite index set</td>
 </tr>
 
 <tr>
   <td>psrass1</td>
-  <td><i>none</i></td>
-  <td>depends on a variety of ` mPwSer ` and ` gsum ` theorems</td>
+  <td>~ psrass1fi</td>
+  <td>requires a finite index set</td>
 </tr>
 
 <tr>
@@ -14846,8 +14918,7 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>psrring</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses psrmulcl , psrass1 , psrdi , psrdir ,
-  psrlidm , and psrridm</td>
+  <td>the set.mm proof uses psrdi and psrdir</td>
 </tr>
 
 <tr>
@@ -16583,7 +16654,10 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>sineq0</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses various theorems not in iset.mm</td>
+  <td>although we have some portions, such as ~ sinkpi and
+  ~ sineq0re , the remaining part of the set.mm proof does
+  things like take the floor of ` A / _pi ` so we may
+  need a different approach</td>
 </tr>
 
 <tr>
@@ -16793,7 +16867,10 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>eflogeq</td>
   <td><i>none</i></td>
-  <td>see ~ df-relog comment for discussion of complex logarithms</td>
+  <td>Presumably ` B e. CC /\ B =/= 0 ` would need to be changed
+  to ` B e. RR+ ` .  Also the set.mm proof uses efeq1 .
+  Other than that, it would appear the set.mm proof could
+  be adapted.</td>
 </tr>
 
 <tr>
@@ -16984,10 +17061,15 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>cxpmul2z , cxpmul2zd</td>
-  <td><i>none</i></td>
-  <td>it may be possible to extend ~ rpcxpmul2 from ` NN0 `
-  to ` ZZ ` .</td>
+  <td>cxpmul2z</td>
+  <td>~ rpcxpmul2z</td>
+  <td>restricts the base to positive real numbers</td>
+</tr>
+
+<tr>
+  <td>cxpmul2zd</td>
+  <td>~ rpcxpmul2zd</td>
+  <td>restricts the base to positive real numbers</td>
 </tr>
 
 <tr>
@@ -17102,9 +17184,32 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>root1id , root1eq1 , root1cj , cxpeq</td>
+  <td>root1id</td>
+  <td>~ root1idef</td>
+  <td>changes ` ( -u 1 ^c ( 2 / N ) ) ` to
+  ` ( exp `` ( ( _i x. ( 2 x. _pi ) ) / N ) ) ` as an
+  expression for an ` N ` -th root of unity</td>
+</tr>
+
+<tr>
+  <td>root1eq1 , root1cj</td>
   <td><i>none</i></td>
   <td>as described at ~ df-rpcxp we only support positive real bases</td>
+</tr>
+
+<tr>
+  <td>cxpeq</td>
+  <td><i>none</i></td>
+  <td>One direction is ~ efnthr .  The converse should
+  be provable but the set.mm proof would need a decent amount
+  of adaptation to not use logarithms of complex numbers.
+  Because we have ` B e. RR+ ` and ` ( A ^ N ) = B ` we can
+  conclude ` A =//= 0 ` by ~ expap0 (thus replacing one
+  use of excluded middle in the set.mm proof). It seems likely
+  that if we have eflogeq (for ` B e. RR+ ` ) we'd be able to
+  use it. Because we only support positive real bases for ` ^c `
+  we write ` ( exp `` ( ( _i x. ( 2 x. _pi ) ) / N ) ) ` where set.mm
+  writes ` ( -u 1 ^c ( 2 / N ) ) `</td>
 </tr>
 
 <tr>
@@ -17235,11 +17340,20 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>1cubrlem</td>
+  <td><i>none</i></td>
+  <td>Should be feasible if ` ( -u 1 ^c ( 2 / 3 ) ) ` is
+  changed to ` ( exp `` ( ( _i x. ( 2 x. _pi ) ) / 3 ) ) ` .
+  The use of cxpef would be replaced with some rearrangement
+  of that expression but much of the rest of the proof could
+  use the set.mm proof.</td>
+</tr>
+
+<tr>
   <td>1cubr</td>
   <td><i>none</i></td>
-  <td>possibly provable, but the set.mm proof is in terms
-  of 1cubrlem which uses ` ^c ` with a base which is not
-  a positive real.</td>
+  <td>seems like the set.mm proof could be adapted without
+  a lot of change if we had the converse of ~ efnthr</td>
 </tr>
 
 <tr>
@@ -17398,26 +17512,204 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>ppisval</td>
+  <td>~ ppiqsval</td>
+  <td>for rational numbers</td>
+</tr>
+
+<tr>
+  <td>ppisval2</td>
+  <td>~ ppiqsval2</td>
+  <td>for rational numbers</td>
+</tr>
+
+<tr>
+  <td>ppifi</td>
+  <td>~ ppiqfi</td>
+  <td>for rational numbers</td>
+</tr>
+
+<tr>
+  <td>chtf</td>
+  <td>~ chtqcl</td>
+  <td>it is easier to give sufficient conditions for being
+  in the domain of the ` theta ` function than to precisely
+  characterize that domain</td>
+</tr>
+
+<tr>
+  <td>chtcl</td>
+  <td>~ chtqcl</td>
+  <td>for rational numbers</td>
+</tr>
+
+<tr>
+  <td>chtval</td>
+  <td>~ chtqval</td>
+  <td>for rational numbers</td>
+</tr>
+
+<tr>
+  <td>efchtcl</td>
+  <td>~ efchtqcl</td>
+  <td>for rational numbers</td>
+</tr>
+
+<tr>
+  <td>chtge0</td>
+  <td>~ chtqge0</td>
+  <td>for rational numbers</td>
+</tr>
+
+<tr>
+  <td>ppival</td>
+  <td>~ ppiqval</td>
+  <td>for rational numbers</td>
+</tr>
+
+<tr>
+  <td>ppif</td>
+  <td>~ ppiqcl</td>
+  <td>it is easier to give sufficient conditions for being
+  in the domain of the ` ppi ` function than to precisely
+  characterize that domain</td>
+</tr>
+
+<tr>
+  <td>ppicl</td>
+  <td>~ ppiqcl</td>
+  <td>for rational numbers</td>
+</tr>
+
+<tr>
+  <td>chtfl</td>
+  <td>~ chtqfl</td>
+  <td>for rational numbers</td>
+</tr>
+
+<tr>
+  <td>chtwordi</td>
+  <td>~ chtqwordi</td>
+  <td>for rational numbers</td>
+</tr>
+
+<tr>
+  <td>efchtdvds</td>
+  <td>~ efchtqdvds</td>
+  <td>for rational numbers</td>
+</tr>
+
+<tr>
+  <td>ppifl</td>
+  <td>~ ppiqfl</td>
+  <td>for rational numbers</td>
+</tr>
+
+<tr>
+  <td>ppip1le</td>
+  <td>~ ppiqp1le</td>
+  <td>for rational numbers</td>
+</tr>
+
+<tr>
+  <td>ppiwordi</td>
+  <td>~ ppiqwordi</td>
+  <td>for rational numbers</td>
+</tr>
+
+<tr>
+  <td>ppinncl</td>
+  <td>~ ppiqnncl</td>
+  <td>for rational numbers</td>
+</tr>
+
+<tr>
+  <td>chtrpcl</td>
+  <td>~ chtqrpcl</td>
+  <td>for rational numbers</td>
+</tr>
+
+<tr>
+  <td>ppieq0</td>
+  <td>~ ppiqeq0</td>
+  <td>for rational numbers</td>
+</tr>
+
+<tr>
+  <td>ppiltx</td>
+  <td>~ ppiqltx</td>
+  <td>for rational numbers</td>
+</tr>
+
+<tr>
+  <td>ppiub</td>
+  <td>~ ppiqub</td>
+  <td>for rational numbers</td>
+</tr>
+
+<tr>
+  <td>chteq0</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses chtlepsi and chpeq0</td>
+</tr>
+
+<tr>
+  <td>chtleppi</td>
+  <td>~ chtqleppi</td>
+  <td>for rational numbers</td>
+</tr>
+
+<tr>
+  <td>chtub</td>
+  <td>~ chtqub</td>
+  <td>for rational numbers</td>
+</tr>
+
+<tr>
+  <td>pclogsum</td>
+  <td><i>none</i></td>
+  <td>it would appear to be possible to adapt the
+  set.mm proof</td>
+</tr>
+
+<tr>
+  <td>logfacubnd</td>
+  <td><i>none</i></td>
+  <td>apparently would be provable if real is changed
+  to rational</td>
+</tr>
+
+<tr>
+  <td>logfaclbnd</td>
+  <td><i>none</i></td>
+  <td>The set.mm proof uses harmonicubnd . Real would
+  need to be changed to rational as well.</td>
+</tr>
+
+<tr>
+  <td>logfacbnd3</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses advlog and dvsum2</td>
+</tr>
+
+<tr>
+  <td>logfacrlim</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses logfacbnd3 and various
+  rlim theorems</td>
+</tr>
+
+<tr>
+  <td>logexprlim , logfacrlim2</td>
+  <td><i>none</i></td>
+  <td>depend on rlim notation and theorems</td>
+</tr>
+
+<tr>
   <td>efexple</td>
   <td>~ prmefexple</td>
   <td>requires ` A ` to be a prime number and ` B ` to be a natural
   number</td>
-</tr>
-
-<tr>
-  <td>bpos1</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof should work with small changes once
-  we have 83prm , 5prm , etc</td>
-</tr>
-
-<tr>
-  <td>bposlem5</td>
-  <td><i>none</i></td>
-  <td>The set.mm proof uses df-ppi (the prime counting
-  function), ppicl , ppi1 , ppiprm , ppinprm , and ppiub .
-  It should be possible to replace the use of excluded
-  middle with ~ prmdc</td>
 </tr>
 
 <tr>
@@ -19724,13 +20016,6 @@ of the inverse prime series</td>
   <tr>
     <td>97.  Cramer's Rule</td>
     <td>Requires more development of matrices and determinants.</td>
-  </tr>
-
-  <tr>
-    <td>98.  Bertrand's Postulate</td>
-    <td>We would appear to have the obvious prerequisites such
-    as ` pCnt ` ( ~ df-pc ), ` log ` ( ~ df-relog ), and
-    ~ logdivlt .</td>
   </tr>
 </table>
 

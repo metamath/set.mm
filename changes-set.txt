@@ -14,6 +14,8 @@ The ones WITH "Notes" may have to be processed manually.
 
 PROPOSED:
 Date      Old       New         Notes
+proposed  prmlem2   prmlt841
+proposed  prmlem1   prmlt25
 proposed  odcl2     odfi
 proposed  finodsubmsubg fiodsubmsubg
 proposed  finsubmsubg fisubmsubg
@@ -92,6 +94,87 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+30-Sep-26 cnvssb      [same]      Moved from RP's mathbox to main set.mm
+29-Sep-26 fununiq     [same]      Moved from SF's mathbox to main set.mm
+24-Sep-26 r1omfv      dfhf2       Moved from BTT's mathbox to main set.mm
+24-Sep-26 r1om        hfom
+24-Sep-26 r1omALT     hfomALT
+24-Sep-26 tskr1om2    tskhf
+24-Sep-26 r1omtsk     hftsk
+23-Sep-26 fzssre      [same]      Moved from GS's mathbox to main set.mm
+22-Sep-26 fnwe2       [same]      Moved from SO's mathbox to main set.mm
+22-Sep-26 fnwe2lem3   [same]      Moved from SO's mathbox to main set.mm
+22-Sep-26 fnwe2lem2   [same]      Moved from SO's mathbox to main set.mm
+22-Sep-26 fnwe2lem1   [same]      Moved from SO's mathbox to main set.mm
+22-Sep-26 fnwe2val    [same]      Moved from SO's mathbox to main set.mm
+22-Sep-26 rspcedeq2vd rspcedeqvd
+22-Sep-26 rspcedeq1vd rspcedeqvd
+17-Sep-26 r1omhf      elhf4       Moved from BTT's mathbox to main set.mm
+17-Sep-26 r1filimi    [same]      Moved from BTT's mathbox to main set.mm
+17-Sep-26 rankfilimbi [same]      Moved from BTT's mathbox to main set.mm
+17-Sep-26 fissorduni  [same]      Moved from BTT's mathbox to main set.mm
+17-Sep-26 rankval4b   [same]      Moved from BTT's mathbox to main set.mm
+17-Sep-26 rankval2b   [same]      Moved from BTT's mathbox to main set.mm
+17-Sep-26 elwf        [same]      Moved from BTT's mathbox to main set.mm
+17-Sep-26 r1wf        [same]      Moved from BTT's mathbox to main set.mm
+16-Sep-26 nna4b4nsq   [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 flt4lem*    [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 flt4lem     exp4sqsq    Moved from SN's mathbox to main set.mm
+16-Sep-26 fltne       [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 fltabcoprm  [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 fltbccoprm  [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 fltaccoprm  [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 fltabcoprmex [same]     Moved from SN's mathbox to main set.mm
+16-Sep-26 fltdvdsabdvdsc [same]   Moved from SN's mathbox to main set.mm
+16-Sep-26 flt0        [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 fltdiv      [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 infdesc     [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 posqsqznn   [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 dvdsexpnn   [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 dvdsexpad   [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 gcdnn0id    [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 gcdle2d     [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 gcdle1d     [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 mvrrsubd    [same]      Moved from SN's mathbox to main set.mm
+16-Sep-26 laddrotrd   mvlladdcd   Moved from SN's mathbox to main set.mm
+16-Sep-26 df-bj-mpt3  df-mpt3     Moved from BJ's mathbox to main set.mm
+ 8-Sep-26 r1omfi      hffi        Moved from BTT's mathbox to main set.mm
+ 8-Sep-26 hfelhf      [same]      Moved from SF's mathbox to main set.mm
+ 8-Sep-26 rankelg     [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 rankpwg     [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 rankung     [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 ranksng     [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 chf         [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 df-hf       [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 elhf        [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 elhf2       [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 elhf2g      [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 0hf         [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 hfun        [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 hfsn        [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 hfadj       [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 hfuni       [same]      Moved from SF's mathbox to main set.mm
+ 1-Sep-26 hfpw        [same]      Moved from SF's mathbox to main set.mm
+30-Aug-26 iunpreima   [same]      Moved from TA's mathbox to main set.mm
+27-Aug-26 fmpodg      [same]      Moved from ZW's mathbox to main set.mm
+27-Aug-26 fmpod       [same]      Moved from ZW's mathbox to main set.mm
+27-Aug-26 cureq       [same]      Moved from BL's mathbox to main set.mm
+27-Aug-26 curf        [same]      Moved from BL's mathbox to main set.mm
+27-Aug-26 uncf        [same]      Moved from BL's mathbox to main set.mm
+27-Aug-26 curfv       [same]      Moved from BL's mathbox to main set.mm
+27-Aug-26 uncov       [same]      Moved from BL's mathbox to main set.mm
+27-Aug-26 lindsdom    [same]      Moved from BL's mathbox to main set.mm
+27-Aug-26 lindsenlbs  [same]      Moved from BL's mathbox to main set.mm
+27-Aug-26 matunitlindflem1 [same] Moved from BL's mathbox to main set.mm
+27-Aug-26 matunitlindflem2 [same] Moved from BL's mathbox to main set.mm
+27-Aug-26 matunitlindf [same]     Moved from BL's mathbox to main set.mm
+26-Aug-26 cacycgr     [same]      Moved from BTT's mathbox to main set.mm
+26-Aug-26 df-acycgr   [same]      Moved from BTT's mathbox to main set.mm
+26-Aug-26 dfacycgr1   [same]      Moved from BTT's mathbox to main set.mm
+26-Aug-26 isacycgr    [same]      Moved from BTT's mathbox to main set.mm
+26-Aug-26 isacycgr1   [same]      Moved from BTT's mathbox to main set.mm
+26-Aug-26 acycgrcycl  [same]      Moved from BTT's mathbox to main set.mm
+23-Aug-26 elmaprd     [same]      Moved from TA's mathbox to main set.mm
 19-Aug-26 abrexct     [same]      Moved from TA's mathbox to main set.mm
 19-Aug-26 0nn0m1nnn0  [same]      Moved from BTT's mathbox to main set.mm
 19-Aug-26 lfuhgr      [same]      Moved from BTT's mathbox to main set.mm
@@ -124,8 +207,188 @@ Date      Old         New         Notes
 15-Aug-26 swrdrn3     [same]      Moved from TA's mathbox to main set.mm
 15-Aug-26 swrdf1      [same]      Moved from TA's mathbox to main set.mm
 15-Aug-26 revpfxsfxrev [same]     Moved from BTT's mathbox to main set.mm
-15-Aug-26 swrdrevpfx [same]       Moved from BTT's mathbox to main set.mm
-15-Aug=26 fmptdF      fmptdf2     Avoids clash with fmptdf
+15-Aug-26 swrdrevpfx  [same]      Moved from BTT's mathbox to main set.mm
+15-Aug-26 fmptdF      fmptdf2     Avoids clash with fmptdf
+13-Aug-26 df-mgmOLD   df-mgm      Moved from JM's mathbox to main set.mm
+13-Aug-26 ismgmOLD    ismgm       Moved from JM's mathbox to main set.mm
+13-Aug-26 clmgmOLD    mgmcl       Moved from JM's mathbox to main set.mm
+13-Aug-26 opidonOLD   mgmidpfod   Moved from JM's mathbox to main set.mm
+13-Aug-26 rngopidOLD  mgmidprnd   Moved from JM's mathbox to main set.mm
+13-Aug-26 opidon2OLD  mgmfod      Moved from JM's mathbox to main set.mm
+13-Aug-26 exidu1      mgmideud    Moved from JM's mathbox to main set.mm
+13-Aug-26 idrval      idvalriota  Moved from JM's mathbox to main set.mm
+13-Aug-26 iorlid      mgmidcl     Moved from JM's mathbox to main set.mm
+13-Aug-26 cmpidelt    mgmlrid     Moved from JM's mathbox to main set.mm
+13-Aug-26 df-sgrOLD   df-sgrp     Moved from JM's mathbox to main set.mm
+13-Aug-26 smgrpismgmOLD sgrpmgm   Moved from JM's mathbox to main set.mm
+13-Aug-26 issmgrpOLD  issgrp      Moved from JM's mathbox to main set.mm
+13-Aug-26 smgrpmgm    sgrpmgm     Moved from JM's mathbox to main set.mm
+13-Aug-26 smgrpassOLD sgrpass     Moved from JM's mathbox to main set.mm
+13-Aug-26 df-mndo     df-mnd      Moved from JM's mathbox to main set.mm
+13-Aug-26 mndoissmgrpOLD mndsgrp  Moved from JM's mathbox to main set.mm
+13-Aug-26 mndoisexid  mndid       Moved from JM's mathbox to main set.mm
+13-Aug-26 mndoismgmOLD mndmgm     Moved from JM's mathbox to main set.mm
+13-Aug-26 ismndo      ismnddef    Moved from JM's mathbox to main set.mm
+13-Aug-26 ismndo1     ismnd       Moved from JM's mathbox to main set.mm
+13-Aug-26 ismndo2     ismnd       Moved from JM's mathbox to main set.mm
+13-Aug-26 grpomndo    grpmnd      Moved from JM's mathbox to main set.mm
+13-Aug-26 exidreslem  0gisid      Moved from JM's mathbox to main set.mm
+13-Aug-26 exidres     idressidex  Moved from JM's mathbox to main set.mm
+13-Aug-26 exidresid   idressid    Moved from JM's mathbox to main set.mm
+13-Aug-26 ablo4pnp    ablsub4     Moved from JM's mathbox to main set.mm
+13-Aug-26 grpoeqdivid grpsubeq0   Moved from JM's mathbox to main set.mm
+13-Aug-26 grposnOLD   grp1        Moved from JM's mathbox to main set.mm
+13-Aug-26 df-ghomOLD  df-ghm      Moved from JM's mathbox to main set.mm
+13-Aug-26 elghomOLD   isghm       Moved from JM's mathbox to main set.mm
+13-Aug-26 ghomlinOLD  ghmlin      Moved from JM's mathbox to main set.mm
+13-Aug-26 ghomidOLD   ghmid       Moved from JM's mathbox to main set.mm
+13-Aug-26 ghomf       ghmf        Moved from JM's mathbox to main set.mm
+13-Aug-26 ghomco      ghmco       Moved from JM's mathbox to main set.mm
+13-Aug-26 ghomdiv     ghmsub      Moved from JM's mathbox to main set.mm
+13-Aug-26 grpokerinj  kerf1ghm    Moved from JM's mathbox to main set.mm
+13-Aug-26 df-rngo     dfring3     Moved from JM's mathbox to main set.mm
+13-Aug-26 isrngo      dfring2     Moved from JM's mathbox to main set.mm
+13-Aug-26 isrngod     isringd     Moved from JM's mathbox to main set.mm
+13-Aug-26 rngocl      ringcl      Moved from JM's mathbox to main set.mm
+13-Aug-26 rngoid      ringid      Moved from JM's mathbox to main set.mm
+13-Aug-26 rngoideu    ringideu    Moved from JM's mathbox to main set.mm
+13-Aug-26 rngodi      ringdi      Moved from JM's mathbox to main set.mm
+13-Aug-26 rngodir     ringdir     Moved from JM's mathbox to main set.mm
+13-Aug-26 rngoass     ringass     Moved from JM's mathbox to main set.mm
+13-Aug-26 rngo2       ringadd2    Moved from JM's mathbox to main set.mm
+13-Aug-26 rngoablo    ringabl     Moved from JM's mathbox to main set.mm
+13-Aug-26 rngoablo2   ringabl     Moved from JM's mathbox to main set.mm
+13-Aug-26 rngogrpo    ringgrp     Moved from JM's mathbox to main set.mm
+13-Aug-26 rngone0     ringbn0     Moved from JM's mathbox to main set.mm
+13-Aug-26 rngogcl     ringacl     Moved from JM's mathbox to main set.mm
+13-Aug-26 rngocom     ringcom     Moved from JM's mathbox to main set.mm
+13-Aug-26 rngo0cl     ring0cl     Moved from JM's mathbox to main set.mm
+13-Aug-26 rngolz      ringlz      Moved from JM's mathbox to main set.mm
+13-Aug-26 rngorz      ringrz      Moved from JM's mathbox to main set.mm
+13-Aug-26 rngosn3     ring1zr     Moved from JM's mathbox to main set.mm
+13-Aug-26 rngosn4     rngen1zr    Moved from JM's mathbox to main set.mm
+13-Aug-26 rngosn6     ringen1zr0  Moved from JM's mathbox to main set.mm
+13-Aug-26 rngomndo    ringmgp     Moved from JM's mathbox to main set.mm
+13-Aug-26 rngoidmlem  ringidmlem  Moved from JM's mathbox to main set.mm
+13-Aug-26 rngolidm    ringlidm    Moved from JM's mathbox to main set.mm
+13-Aug-26 rngoridm    ringridm    Moved from JM's mathbox to main set.mm
+13-Aug-26 rngo1cl     ringidcl    Moved from JM's mathbox to main set.mm
+13-Aug-26 rngoueqz    0ring01eqbi Moved from JM's mathbox to main set.mm
+13-Aug-26 rngonegmn1l ringnegl    Moved from JM's mathbox to main set.mm
+13-Aug-26 rngonegmn1r ringnegr    Moved from JM's mathbox to main set.mm
+13-Aug-26 rngoneglmul ringmneg1   Moved from JM's mathbox to main set.mm
+13-Aug-26 rngonegrmul ringmneg2   Moved from JM's mathbox to main set.mm
+13-Aug-26 rngosubdi   ringsubdi   Moved from JM's mathbox to main set.mm
+13-Aug-26 rngosubdir  ringsubdir  Moved from JM's mathbox to main set.mm
+13-Aug-26 zerdivemp1x ringinvnzdiv Moved from JM's mathbox to main set.mm
+13-Aug-26 df-drngo    df-drng     Moved from JM's mathbox to main set.mm
+13-Aug-26 isdivrngo   isdrng2     Moved from JM's mathbox to main set.mm
+13-Aug-26 drngoi      drngprops   Moved from JM's mathbox to main set.mm
+13-Aug-26 gidsn       mnd1id      Moved from JM's mathbox to main set.mm
+13-Aug-26 zrdivrng    zrdrng      Moved from JM's mathbox to main set.mm
+13-Aug-26 dvrunz      drngunz     Moved from JM's mathbox to main set.mm
+13-Aug-26 isgrpda     isgrpde     Moved from JM's mathbox to main set.mm
+13-Aug-26 isdrngo1    isdrng2     Moved from JM's mathbox to main set.mm
+13-Aug-26 divrngcl    drngmcl     Moved from JM's mathbox to main set.mm
+13-Aug-26 isdrngo2    isdrng3     Moved from JM's mathbox to main set.mm
+13-Aug-26 isdrngo3    isdrng5     Moved from JM's mathbox to main set.mm
+13-Aug-26 df-rngohom  df-rhm      Moved from JM's mathbox to main set.mm
+13-Aug-26 rngohomval  rhmval0     Moved from JM's mathbox to main set.mm
+13-Aug-26 isrngohom   isrhm0      Moved from JM's mathbox to main set.mm
+13-Aug-26 rngohomf    rhmf        Moved from JM's mathbox to main set.mm
+13-Aug-26 rngohomcl   rhmcl       Moved from JM's mathbox to main set.mm
+13-Aug-26 rngohom1    rhm1        Moved from JM's mathbox to main set.mm
+13-Aug-26 rngohomadd  rhmadd      Moved from JM's mathbox to main set.mm
+13-Aug-26 rngohommul  rhmmul      Moved from JM's mathbox to main set.mm
+13-Aug-26 rngogrphom  rhmghm      Moved from JM's mathbox to main set.mm
+13-Aug-26 rngohom0    rhm0        Moved from JM's mathbox to main set.mm
+13-Aug-26 rngohomsub  rhmsub      Moved from JM's mathbox to main set.mm
+13-Aug-26 rngohomco   rhmco       Moved from JM's mathbox to main set.mm
+13-Aug-26 rngokerinj  rhmkerinj   Moved from JM's mathbox to main set.mm
+13-Aug-26 df-rngoiso  df-rim      Moved from JM's mathbox to main set.mm
+13-Aug-26 rngoisoval  rimval      Moved from JM's mathbox to main set.mm
+13-Aug-26 isrngoiso   isrim       Moved from JM's mathbox to main set.mm
+13-Aug-26 rngoiso1o   rimf1o      Moved from JM's mathbox to main set.mm
+13-Aug-26 rngoisohom  rimrhm      Moved from JM's mathbox to main set.mm
+13-Aug-26 rngoisocnv  rimcnv      Moved from JM's mathbox to main set.mm
+13-Aug-26 rngoisoco   rimco       Moved from JM's mathbox to main set.mm
+13-Aug-26 df-risc     dfric2      Moved from JM's mathbox to main set.mm
+13-Aug-26 isriscg     isbrric2    Moved from JM's mathbox to main set.mm
+13-Aug-26 isrisc      isbrric2    Moved from JM's mathbox to main set.mm
+13-Aug-26 risc        brric2      Moved from JM's mathbox to main set.mm
+13-Aug-26 risci       brrici      Moved from JM's mathbox to main set.mm
+13-Aug-26 riscer      ricer       Moved from JM's mathbox to main set.mm
+13-Aug-26 df-fld      df-field    Moved from JM's mathbox to main set.mm
+13-Aug-26 df-crngo    df-cring    Moved from JM's mathbox to main set.mm
+13-Aug-26 iscrngo     iscrng      Moved from JM's mathbox to main set.mm
+13-Aug-26 iscrngo2    iscrng2     Moved from JM's mathbox to main set.mm
+13-Aug-26 iscringd    iscrngd     Moved from JM's mathbox to main set.mm
+13-Aug-26 flddivrng   flddrngd    Moved from JM's mathbox to main set.mm
+13-Aug-26 crngorngo   crngringd   Moved from JM's mathbox to main set.mm
+13-Aug-26 crngocom    crngcom     Moved from JM's mathbox to main set.mm
+13-Aug-26 crngm23     crng32d     Moved from JM's mathbox to main set.mm
+13-Aug-26 crngm4      crng4       Moved from JM's mathbox to main set.mm
+13-Aug-26 fldcrngo    fldcrngd    Moved from JM's mathbox to main set.mm
+13-Aug-26 isfld2      isfld       Moved from JM's mathbox to main set.mm
+13-Aug-26 crngohomfo  crngrhmfo   Moved from JM's mathbox to main set.mm
+13-Aug-26 df-idl      df-2idl     Moved from JM's mathbox to main set.mm
+13-Aug-26 df-pridl    df-prmidl   Moved from JM's mathbox to main set.mm
+13-Aug-26 df-maxidl   df-mxidl    Moved from JM's mathbox to TA's mathbox
+13-Aug-26 idlval      2idlval     Moved from JM's mathbox to main set.mm
+13-Aug-26 isidl       df2idl2     Moved from JM's mathbox to main set.mm
+13-Aug-26 isidlc      df2idl2crng Moved from JM's mathbox to main set.mm
+13-Aug-26 idl0cl      rng2idl0    Moved from JM's mathbox to main set.mm
+13-Aug-26 rngoidl     2idl1       Moved from JM's mathbox to main set.mm
+13-Aug-26 0idl        2idl0       Moved from JM's mathbox to main set.mm
+13-Aug-26 1idl        2idl1el     Moved from JM's mathbox to main set.mm
+13-Aug-26 0rngo       0ring01eqbi2 Moved from JM's mathbox to main set.mm
+13-Aug-26 divrngidl   drngnidl    Moved from JM's mathbox to main set.mm
+13-Aug-26 intidl      intlidl     Moved from JM's mathbox to TA's mathbox
+13-Aug-26 inidl       inlidl      Moved from JM's mathbox to TA's mathbox
+13-Aug-26 unichnidl   unichnlidl  Moved from JM's mathbox to main set.mm
+13-Aug-26 keridl      ker2idl     Moved from JM's mathbox to main set.mm
+13-Aug-26 pridlval    prmidlval   Moved from JM's mathbox to main set.mm
+13-Aug-26 ispridl     isprmidl    Moved from JM's mathbox to main set.mm
+13-Aug-26 pridlidl    prmidlidl   Moved from JM's mathbox to main set.mm
+13-Aug-26 pridlnr     prmidlnr    Moved from JM's mathbox to main set.mm
+13-Aug-26 pridl       prmidl      Moved from JM's mathbox to main set.mm
+13-Aug-26 ispridl2    prmidl2     Moved from JM's mathbox to main set.mm
+13-Aug-26 maxidlval   mxidlval    Moved from JM's mathbox to TA's mathbox
+13-Aug-26 ismaxidl    ismxidl     Moved from JM's mathbox to TA's mathbox
+13-Aug-26 maxidlidl   mxidlidl    Moved from JM's mathbox to TA's mathbox
+13-Aug-26 maxidlnr    mxidlnr     Moved from JM's mathbox to TA's mathbox
+13-Aug-26 maxidlmax   mxidlmax    Moved from JM's mathbox to TA's mathbox
+13-Aug-26 maxidln1    mxidln1     Moved from JM's mathbox to TA's mathbox
+13-Aug-26 maxidln0    mxidlnzr    Moved from JM's mathbox to TA's mathbox
+13-Aug-26 df-prrngo   df-prmring  Moved from JM's mathbox to AV's mathbox
+13-Aug-26 df-dmn      df-idom     Moved from JM's mathbox to AV's mathbox
+13-Aug-26 isprrngo    isprmrng    Moved from JM's mathbox to AV's mathbox
+13-Aug-26 prrngorngo  prmrngring  Moved from JM's mathbox to AV's mathbox
+13-Aug-26 smprngopr   smprngprmrng Moved from JM's mathbox to AV's mathbox
+13-Aug-26 divrngpr    drngprmrng  Moved from JM's mathbox to AV's mathbox
+13-Aug-26 isdmn       isidom2     Moved from JM's mathbox to AV's mathbox
+13-Aug-26 isdmn2      isidom2     Moved from JM's mathbox to AV's mathbox
+13-Aug-26 dmncrng     idomcringd  Moved from JM's mathbox to main set.mm
+13-Aug-26 dmnrngo     idomringd   Moved from JM's mathbox to main set.mm
+13-Aug-26 flddmn      fldidom     Moved from JM's mathbox to main set.mm
+13-Aug-26 df-igen     df-rsp      Moved from JM's mathbox to main set.mm
+13-Aug-26 igenval     rspvalint   Moved from JM's mathbox to main set.mm
+13-Aug-26 igenss      rspssid     Moved from JM's mathbox to main set.mm
+13-Aug-26 igenidl     rspcl       Moved from JM's mathbox to main set.mm
+13-Aug-26 igenmin     rspssp      Moved from JM's mathbox to main set.mm
+13-Aug-26 igenidl2    rsp2idlid   Moved from JM's mathbox to main set.mm
+13-Aug-26 igenval2    rspprop     Moved from JM's mathbox to main set.mm
+13-Aug-26 prnc        rspsn0      Moved from JM's mathbox to main set.mm
+13-Aug-26 isfldidl    isfieldidl  Moved from JM's mathbox to main set.mm
+13-Aug-26 isfldidl2   isfieldidl2 Moved from JM's mathbox to main set.mm
+13-Aug-26 ispridlc    isprmidlc   Moved from JM's mathbox to main set.mm
+13-Aug-26 pridlc      prmidlc     Moved from JM's mathbox to main set.mm
+13-Aug-26 pridlc2     prmidlc2    Moved from JM's mathbox to main set.mm
+13-Aug-26 pridlc3     cmprmidlmcl Moved from JM's mathbox to main set.mm
+13-Aug-26 isdmn3      isidom3     Moved from JM's mathbox to AV's mathbox
+13-Aug-26 dmnnzd      idomnzd     Moved from JM's mathbox to AV's mathbox
+13-Aug-26 dmncan1     idomcanl    Moved from JM's mathbox to AV's mathbox
+13-Aug-26 dmncan2     idomcanl    Moved from JM's mathbox to AV's mathbox
  8-Aug-26 relcnvtr    ---         Deleted; redundant with relcnvtrg
  8-Aug-26 relcnvtrg   ---         Antecedent removed
 27-Jul-26 scottexs    ---         Deleted; use scottex with a class
@@ -166,20 +429,20 @@ Date      Old         New         Notes
 28-Jun-26 drnglidl1ne0 [same]     Moved from TA's mathbox to main set.mm
 28-Jun-26 pm4.71da    [same]      Moved from ZW's mathbox to main set.mm
 27-Jun-26 elringlsm   elmgplsm    Moved from TA's mathbox to main set.mm
-27-Jun-26 elringlsmd  elmgplsmd   Moved from TA's mathbox to main set.mm 
+27-Jun-26 elringlsmd  elmgplsmd   Moved from TA's mathbox to main set.mm
 27-Jun-26 rspsnid     [same]      Moved from TA's mathbox to main set.mm
 27-Jun-26 0ringidl    [same]      Moved from TA's mathbox to main set.mm
-27-Jun-26 ringdi22    [same]      Moved from TA's mathbox to main set.mm 
+27-Jun-26 ringdi22    [same]      Moved from TA's mathbox to main set.mm
 27-Jun-26 qusxpid     [same]      Moved from TA's mathbox to main set.mm
 27-Jun-26 qustriv     [same]      Moved from TA's mathbox to main set.mm
-27-Jun-26 qustrivr    [same]      Moved from TA's mathbox to main set.mm 
+27-Jun-26 qustrivr    [same]      Moved from TA's mathbox to main set.mm
 27-Jun-26 lidlmcld    [same]      Moved from TA's mathbox to main set.mm
 27-Jun-26 uniin1      [same]      Moved from TA's mathbox to main set.mm
 27-Jun-26 uniin2      [same]      Moved from TA's mathbox to main set.mm
-27-Jun-26 lsmidl      [same]      Moved from TA's mathbox to main set.mm 
+27-Jun-26 lsmidl      [same]      Moved from TA's mathbox to main set.mm
 27-Jun-26 submcld     [same]      Moved from TA's mathbox to main set.mm
 27-Jun-26 subgcld     [same]      Moved from TA's mathbox to main set.mm
-27-Jun-26 ecxpid      [same]      Moved from TA's mathbox to main set.mm 
+27-Jun-26 ecxpid      [same]      Moved from TA's mathbox to main set.mm
 27-Jun-26 qsxpid      [same]      Moved from TA's mathbox to main set.mm
 27-Jun-26 lsmidllsp   [same]      Moved from TA's mathbox to main set.mm
 27-Jun-26 lsmidl      [same]      Moved from TA's mathbox to main set.mm
@@ -868,11 +1131,11 @@ Date      Old         New         Notes
 25-Apr-25 ressmulgnn   [same]   Moved from TA's mathbox to main set.mm
 18-Apr-25 mulnzcnopr mulnzcnf   Align with modern suffix conventions.
 13-Apr-25 ovmul     ovmpot      Generalized for all operations
-12-Apr-25 ---       ---         Moved categories of rings theorems 
+12-Apr-25 ---       ---         Moved categories of rings theorems
                                 from AV's mathbox to main set.mm
 12-Apr-25 nrhmzr    [same]      Moved from AV's mathbox to main set.mm
 12-Apr-25 inclfusubc [same]     Moved from AV's mathbox to main set.mm
-12-Apr-25 idfusubc  [same]      Moved from AV's mathbox to main set.mm 
+12-Apr-25 idfusubc  [same]      Moved from AV's mathbox to main set.mm
 12-Apr-25 idfusubc0 [same]      Moved from AV's mathbox to main set.mm
 11-Apr-25 elabrexg  [same]      Moved from GS's mathbox to main set.mm
 10-Apr-25 dvcobr    [same]      revised - remove unneeded hypotheses
@@ -901,35 +1164,35 @@ Date      Old         New         Notes
 30-Mar-25 crngh     crnghm
 30-Mar-25 crngiso   crngoiso    in JM's mathbox
 30-Mar-25 crnghom   crngohom    in JM's mathbox
-28-Mar-25 ---       ---         Moved ideals of non-unital subring theorems 
+28-Mar-25 ---       ---         Moved ideals of non-unital subring theorems
                                 from AV's mathbox to main set.mm
-28-Mar-25 ---       ---         Moved non-unital subring def. and theorems 
+28-Mar-25 ---       ---         Moved non-unital subring def. and theorems
                                 from AV's mathbox to main set.mm
 28-Mar-25 mgmpropd  [same]      Moved from AV's mathbox to main set.mm
 28-Mar-25 ismgmd    [same]      Moved from AV's mathbox to main set.mm
-28-Mar-25 ismhm0    [same]      Moved from AV's mathbox to main set.mm 
+28-Mar-25 ismhm0    [same]      Moved from AV's mathbox to main set.mm
 28-Mar-25 mhmismgmhm [same]     Moved from AV's mathbox to main set.mm
 28-Mar-25 rhmisrnghm [same]     Moved from AV's mathbox to main set.mm
-28-Mar-25 rhmfn     [same]      Moved from AV's mathbox to main set.mm 
+28-Mar-25 rhmfn     [same]      Moved from AV's mathbox to main set.mm
 28-Mar-25 rhmval    [same]      Moved from AV's mathbox to main set.mm
-28-Mar-25 0ringdif  [same]      Moved from AV's mathbox to main set.mm 
-28-Mar-25 0ringbas  [same]      Moved from AV's mathbox to main set.mm 
-28-Mar-25 0ring1eq0 [same]      Moved from AV's mathbox to main set.mm 
-28-Mar-25 c0rhm     [same]      Moved from AV's mathbox to main set.mm 
+28-Mar-25 0ringdif  [same]      Moved from AV's mathbox to main set.mm
+28-Mar-25 0ringbas  [same]      Moved from AV's mathbox to main set.mm
+28-Mar-25 0ring1eq0 [same]      Moved from AV's mathbox to main set.mm
+28-Mar-25 c0rhm     [same]      Moved from AV's mathbox to main set.mm
 28-Mar-25 c0rnghm   [same]      Moved from AV's mathbox to main set.mm
 28-Mar-25 zrrnghm   [same]      Moved from AV's mathbox to main set.mm
-28-Mar-25 ---       ---         Moved non-unital ring hom def. and theorems 
+28-Mar-25 ---       ---         Moved non-unital ring hom def. and theorems
                                 from AV's mathbox to main set.mm
-28-Mar-25 ---       ---         Moved non-unital ring def. and theorems 
+28-Mar-25 ---       ---         Moved non-unital ring def. and theorems
                                 from AV's mathbox to main set.mm
-28-Mar-25 ---       ---         Moved magma hom def. and theorems 
+28-Mar-25 ---       ---         Moved magma hom def. and theorems
                                 from AV's mathbox to main set.mm
 28-Mar-25 prdsmgp   [same]      Moved from AV's mathbox to main set.mm
 28-Mar-25 ringrng   [same]      Moved from AV's mathbox to main set.mm
 28-Mar-25 ringssrng [same]      Moved from AV's mathbox to main set.mm
-28-Mar-25 isringrng [same]      Moved from AV's mathbox to main set.mm 
+28-Mar-25 isringrng [same]      Moved from AV's mathbox to main set.mm
 28-Mar-25 opprrng   [same]      Moved from AV's mathbox to main set.mm
-28-Mar-25 opprrngb  [same]      Moved from AV's mathbox to main set.mm 
+28-Mar-25 opprrngb  [same]      Moved from AV's mathbox to main set.mm
 28-Mar-25 zringrng  [same]      Moved from AV's mathbox to main set.mm
 25-Mar-25 syl6ib    imbitrdi
 24-Mar-25 rngurd    ringurd     Moved from TA's mathbox to main set.mm
@@ -1191,7 +1454,7 @@ Date      Old         New         Notes
 22-Dec-24 frnsuppeq fsuppeq
 22-Dec-24 frnsuppeqg fsuppeqg
 22-Dec-24 frnfsuppbi ffsuppbi
-22-Dec-24 fvmptelrn fvmptelcdm 
+22-Dec-24 fvmptelrn fvmptelcdm
 22-Dec-24 frnssb    fcdmssb
 19-Dec-24 3albii    [same]      moved from PM's mathbox to main set.mm
 19-Dec-24 ssrel3    [same]      moved from PM's mathbox to main set.mm
@@ -1227,7 +1490,7 @@ Date      Old         New         Notes
 18-Nov-24 dfwrecs2  df-wrecs    moved from BJ's mathbox to main set.mm and
                                 made the main definition
 16-Nov-24 rspcdvinvd rspcdv2    moved from SP's mathbox to main set.mm
-15-Nov-24 baseltedgf basendxltedgfndx 
+15-Nov-24 baseltedgf basendxltedgfndx
 12-Nov-24 sseldi    sselid      compare to sselii or sseldd
 11-Nov-24 mpteq12da [same]      moved from GS's mathbox to main set.mm
  9-Nov-24 eqsb3     eqsb1
