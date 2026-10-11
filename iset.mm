@@ -183574,6 +183574,24 @@ $)
   $}
 
   ${
+    $d D y $.  $d I h y $.  $d X h y $.
+    mvridfi.v $e |- V = ( I mVar R ) $.
+    mvridfi.d $e |- D = { h e. ( NN0 ^m I ) | ( `' h " NN ) e. Fin } $.
+    mvridfi.z $e |- .0. = ( 0g ` R ) $.
+    mvridfi.o $e |- .1. = ( 1r ` R ) $.
+    mvridfi.i $e |- ( ph -> I e. Fin ) $.
+    mvridfi.r $e |- ( ph -> R e. Y ) $.
+    mvridfi.x $e |- ( ph -> X e. I ) $.
+    $( The ` X i ` -th coefficient of the term ` X i ` is ` 1 ` .  (Contributed
+       by Mario Carneiro, 7-Jan-2015.) $)
+    mvridfi $p |- ( ph -> ( ( V ` X ) ` ( y e. I |-> if ( y = X , 1 , 0 ) ) )
+        = .1. ) $=
+      ( c1 wcel wceq cc0 cif cmpt cfv cfn cn0 1nn0 snifpsrbagfi syl3anc mvrval2
+      cv a1i eqid iftruei eqtrdi ) ABGBULIUASUBUCUDZIHUEUEUQUQUAZEKUCEABCDEFUQG
+      HUFIJKLMNOPQRAGUFTSUGTZIGTUQCTPUSAUHUMRBCFGSIMUIUJUKUREKUQUNUOUP $.
+  $}
+
+  ${
     $d f B $.  $d f i r s a b k I $.  $d f i r s a b k R $.  $d i r s S $.
     $d i r s U $.  $d f X $.  $d f .0. $.  $d a b f i k s r w $.
     $( The multivariate polynomial constructor is a proper binary operator.
