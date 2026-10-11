@@ -73,8 +73,10 @@ jobs:
     runs-on: ubuntu-latest
     needs: skip_dups
     if: ${{ needs.skip_dups.outputs.should_skip != 'true' }}
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       # Use GITHUB_PATH to set PATH. For details see:
       # https://docs.github.com/en/free-pro-team@latest/actions/reference/
       # workflow-commands-for-github-actions#setting-an-environment-variable
@@ -119,16 +121,24 @@ jobs:
       - run: scripts/regen-from-raw --force '/ALT_HTML' .regened.html
       - run: mkdir -p mpeuni-html/
       - run: for f in *.regened.html; do mv $f mpeuni-html/${f%.regened.html}.html ; done
-      # Check that set.mm and iset.mm have been rewrapped.
-      # We'd probably rather have a bot push up a commit with the rewrapping
-      # when a pull request is submitted, but until we set that up,
-      # at least check that the rewrapping has been done.
-      - run: cp set.mm set-wrapped.mm
-      - run: scripts/rewrap set-wrapped.mm
-      - run: echo 'Checking for set.mm rewrapping:' && diff -U 0 set.mm set-wrapped.mm
-      - run: cp iset.mm iset-wrapped.mm
-      - run: scripts/rewrap iset-wrapped.mm
-      - run: echo 'Checking for iset.mm rewrapping:' && diff -U 0 iset.mm iset-wrapped.mm
+      # Rewrap set.mm and iset.mm.
+      - run: scripts/rewrap set.mm
+      - run: scripts/rewrap iset.mm
+      - name: Commit and push if changes exist
+        run: |
+          # Check if there were changes
+          if [ -z "$(git status --porcelain set.mm iset.mm)" ]; then
+            echo "No changes detected. Skipping commit."
+            exit 0
+          fi
+
+          # Configure Git user identity using the standard GitHub Actions Bot
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add set.mm iset.mm
+          git commit -m "rewrap"
+          git push
       - run: echo 'Checking for set.mm theorem list'
       - run: scripts/check-theorem-list set.mm
       - run: echo 'Checking for iset.mm theorem list'
