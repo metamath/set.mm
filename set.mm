@@ -11823,13 +11823,6 @@ $)
   3orel2 $p |- ( -. ps -> ( ( ph \/ ps \/ ch ) -> ( ph \/ ch ) ) ) $=
     ( w3o wn wo 3orcoma 3orel1 biimtrid ) ABCDBACDBEACFABCGBACHI $.
 
-  $( Obsolete version of ~ 3orel2 as of 8-Oct-2025.  (Contributed by Scott
-     Fenton, 26-Mar-2011.)  (Proof shortened by Andrew Salmon, 25-May-2011.)
-     (Proof modification is discouraged.)  (New usage is discouraged.) $)
-  3orel2OLD $p |- ( -. ps -> ( ( ph \/ ps \/ ch ) -> ( ph \/ ch ) ) ) $=
-    ( w3o wn wo 3orrot 3orel1 orcom imbitrdi biimtrid ) ABCDBCADZBEZACFZABCGMLC
-    AFNBCAHCAIJK $.
-
   $( Partial elimination of a triple disjunction by denial of a disjunct.
      (Contributed by Scott Fenton, 26-Mar-2011.) $)
   3orel3 $p |- ( -. ch -> ( ( ph \/ ps \/ ch ) -> ( ph \/ ps ) ) ) $=
@@ -32288,7 +32281,7 @@ $)
      is equal to the von Neumann universe.  However, the letter "V" does not
      stand for "von Neumann".  The letter "V" was used earlier by Peano in 1889
      for the universe of sets, where the letter V is derived from the Latin
-     word "Verum", referring to the true truth constant ` T ` .  Peano's
+     word "Verum", referring to the true truth constant ` T. ` .  Peano's
      notation ` _V ` was adopted by Whitehead and Russell in Principia
      Mathematica for the class of all sets in 1910.
 
@@ -33920,8 +33913,8 @@ $)
     $( 2-variable restricted existential specialization, using implicit
        substitution.  (Contributed by NM, 16-Oct-1999.) $)
     rspc2ev $p |- ( ( A e. C /\ B e. D /\ ps ) -> E. x e. C E. y e. D ph ) $=
-      ( wcel w3a wrex wa rspcev anim2i 3impb cv wceq rexbidv syl ) FHLZGILZBMUC
-      CEINZOZAEINZDHNUCUDBUFUDBOUEUCCBEGIKPQRUGUEDFHDSFTACEIJUAPUB $.
+      ( wcel w3a wrex cv wceq rexbidv simp1 rspcev 3adant1 rspcedvdw ) FHLZGILZ
+      BMAEINCEINZDFHDOFPACEIJQUBUCBRUCBUDUBCBEGIKSTUA $.
   $}
 
   ${
@@ -37589,7 +37582,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-  Define basic set operations and relations
+  Basic set operations
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -37597,8 +37590,6 @@ $)
   $c \ $.  $( Backslash (difference) $)
   $c u. $.  $( Cup (union) $)
   $c i^i $.  $( Cap (intersection) $)
-  $c C_ $.  $( Subclass or subset symbol $)
-  $c C. $.  $( Proper subclass or subset symbol $)
 
   $( Extend class notation to include class difference (read:  " ` A ` minus
      ` B ` "). $)
@@ -37611,14 +37602,6 @@ $)
   $( Extend class notation to include the intersection of two classes (read:
       " ` A ` intersect ` B ` "). $)
   cin $a class ( A i^i B ) $.
-
-  $( Extend wff notation to include the subclass relation.  This is
-     read " ` A ` is a subclass of ` B ` " or " ` B ` includes ` A ` ".  When
-     ` A ` exists as a set, it is also read " ` A ` is a subset of ` B ` ". $)
-  wss $a wff A C_ B $.
-
-  $( Extend wff notation with proper subclass relation. $)
-  wpss $a wff A C. B $.
 
   ${
     $d x A $.  $d x B $.  $d y A $.  $d y B $.  $d z x $.  $d z y $.  $d z A $.
@@ -37777,9 +37760,21 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-  Subclasses and subsets
+  Subclasses and subsets, proper subclasses and subsets
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Subclasses and subsets
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $c C_ $.  $( Symbol for the subclass predicate. $)
+
+  $( Syntax for the subclass predicate. $)
+  wss $a wff A C_ B $.
 
   ${
     $d A x $.  $d B x $.
@@ -37829,14 +37824,6 @@ $)
      21-Jun-1993.) $)
   dfss $p |- ( A C_ B <-> A = ( A i^i B ) ) $=
     ( wss cin wceq dfss2 eqcom bitri ) ABCABDZAEAIEABFIAGH $.
-
-  $( Define proper subclass (or strict subclass) relationship between two
-     classes.  Definition 5.9 of [TakeutiZaring] p. 17.  For example,
-     ` { 1 , 2 } C. { 1 , 2 , 3 } ` ( ~ ex-pss ).  Note that ` -. A C. A `
-     (proved in ~ pssirr ).  Contrast this relationship with the relationship
-     ` A C_ B ` (as defined in ~ df-ss ).  Other possible definitions are given
-     by ~ dfpss2 and ~ dfpss3 .  (Contributed by NM, 7-Feb-1996.) $)
-  df-pss $a |- ( A C. B <-> ( A C_ B /\ A =/= B ) ) $.
 
   ${
     $d x A $.  $d x B $.
@@ -38837,6 +38824,26 @@ $)
       UCVCAGCUDVJGEUEUFUGVGVDVHTZACPVEVITVFVOACVBVHGDFVHGUHUTDEUIUJUMVDVHACUKUN
       UL $.
   $}
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Proper subclasses and subsets
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $c C. $.  $( Symbol for the proper subclass predicate. $)
+
+  $( Syntax for the proper subclass predicate. $)
+  wpss $a wff A C. B $.
+
+  $( Define proper subclass (or strict subclass) relationship between two
+     classes.  Definition 5.9 of [TakeutiZaring] p. 17.  For example,
+     ` { 1 , 2 } C. { 1 , 2 , 3 } ` ( ~ ex-pss ).  Note that ` -. A C. A `
+     (proved in ~ pssirr ).  Contrast this relationship with the relationship
+     ` A C_ B ` (as defined in ~ df-ss ).  Other possible definitions are given
+     by ~ dfpss2 and ~ dfpss3 .  (Contributed by NM, 7-Feb-1996.) $)
+  df-pss $a |- ( A C. B <-> ( A C_ B /\ A =/= B ) ) $.
 
   $( Alternate definition of proper subclass.  (Contributed by NM,
      7-Feb-1996.) $)
@@ -48913,6 +48920,13 @@ $)
     ( cop cdif wcel wn wa wbr eldif df-br notbii anbi12i 3bitr4i ) ABEZCDFZGPCG
     ZPDGZHZIABQJABCJZABDJZHZIPCDKABQLUARUCTABCLUBSABDLMNO $.
 
+  $( Characterization of the symmetric difference of two binary relations.  The
+     RHS could also be expressed using exclusive disjunction ~ df-xor .
+     (Contributed by Scott Fenton, 11-Apr-2012.) $)
+  brsymdif $p |- ( A ( R /_\ S ) B <-> -. ( A R B <-> A S B ) ) $=
+    ( csymdif wbr cop wcel wb wn df-br elsymdif bibi12i xchbinxr bitri ) ABCDEZ
+    FABGZPHZABCFZABDFZIZJABPKRQCHZQDHZIUAQCDLSUBTUCABCKABDKMNO $.
+
   ${
     $d y A $.  $d y B $.  $d y C $.  $d y R $.  $d x y $.
     $( Move substitution in and out of a binary relation.  (Contributed by NM,
@@ -48965,12 +48979,6 @@ $)
       ( wcel wbr wsbc csb sbcbr12g csbconstg breq1d bitrd ) BFGZCDEHABIABCJZABD
       JZEHCQEHABCDEFKOPCQEABCFLMN $.
   $}
-
-  $( Characterization of the symmetric difference of two binary relations.
-     (Contributed by Scott Fenton, 11-Apr-2012.) $)
-  brsymdif $p |- ( A ( R /_\ S ) B <-> -. ( A R B <-> A S B ) ) $=
-    ( csymdif wbr cop wcel wb wn df-br elsymdif bibi12i xchbinxr bitri ) ABCDEZ
-    FABGZPHZABCFZABDFZIZJABPKRQCHZQDHZIUAQCDLSUBTUCABCKABDKMNO $.
 
   ${
     $d A x $.  $d B x y $.  $d R x $.  $d X x $.  $d Y x $.
@@ -53479,7 +53487,7 @@ $)
       LTZGMUBNUPUQGMUOBEUCUDUEUMHUIUNFUITBCEDOPUFUGUJCDUCUH $.
   $}
 
-  $( The empty set is never an element in an ordered-pair class abstraction.
+  $( The empty set is not an element of an ordered-pair class abstraction.
      (Contributed by Alexander van der Vekens, 5-Nov-2017.)  Reduce axiom usage
      and shorten proof.  (Revised by GG, 3-Oct-2024.) $)
   0nelopab $p |- -. (/) e. { <. x , y >. | ph } $=
@@ -57850,18 +57858,6 @@ $)
   dmresexg $p |- ( B e. V -> dom ( A |` B ) e. _V ) $=
     ( wcel cres cdm cin cvv dmres inex1g eqeltrid ) BCDABEFBAFZGHABIBLCJK $.
 
-  $( A restriction to an image.  (Contributed by NM, 29-Sep-2004.) $)
-  resima $p |- ( ( A |` B ) " B ) = ( A " B ) $=
-    ( cres crn cima residm rneqi df-ima 3eqtr4i ) ABCZBCZDJDJBEABEKJABFGJBHABHI
-    $.
-
-  $( Image under a restricted class.  (Contributed by FL, 31-Aug-2009.)  (Proof
-     shortened by JJ, 25-Aug-2021.) $)
-  resima2 $p |- ( B C_ C -> ( ( A |` C ) " B ) = ( A " B ) ) $=
-    ( wss cin cres crn cima wceq sseqin2 reseq2 sylbi rneqd df-ima resres rneqi
-    eqtri 3eqtr4g ) BCDZACBEZFZGZABFZGACFZBHZABHSUAUCSTBIUAUCIBCJTBAKLMUEUDBFZG
-    UBUDBNUFUAACBOPQABNR $.
-
   $( The range of a restriction is a subset of the whole range.  (Contributed
      by Glauco Siliprandi, 17-Aug-2020.) $)
   rnresss $p |- ran ( A |` B ) C_ ran A $=
@@ -58276,6 +58272,29 @@ $)
       ( cima imaeq1d imaeq2d eqtrd ) ABDHCDHCEHABCDFIADECGJK $.
   $}
 
+  $( Subset theorem for image.  (Contributed by NM, 16-Mar-2004.) $)
+  imass1 $p |- ( A C_ B -> ( A " C ) C_ ( B " C ) ) $=
+    ( wss cres crn cima ssres rnss syl df-ima 3sstr4g ) ABDZACEZFZBCEZFZACGBCGM
+    NPDOQDABCHNPIJACKBCKL $.
+
+  $( Subset theorem for image.  Exercise 22(a) of [Enderton] p. 53.
+     (Contributed by NM, 22-Mar-1998.) $)
+  imass2 $p |- ( A C_ B -> ( C " A ) C_ ( C " B ) ) $=
+    ( wss cres crn cima ssres2 rnss syl df-ima 3sstr4g ) ABDZCAEZFZCBEZFZCAGCBG
+    MNPDOQDABCHNPIJCAKCBKL $.
+
+  $( A restriction to an image.  (Contributed by NM, 29-Sep-2004.) $)
+  resima $p |- ( ( A |` B ) " B ) = ( A " B ) $=
+    ( cres crn cima residm rneqi df-ima 3eqtr4i ) ABCZBCZDJDJBEABEKJABFGJBHABHI
+    $.
+
+  $( Image under a restricted class.  (Contributed by FL, 31-Aug-2009.)  (Proof
+     shortened by JJ, 25-Aug-2021.) $)
+  resima2 $p |- ( B C_ C -> ( ( A |` C ) " B ) = ( A " B ) ) $=
+    ( wss cin cres crn cima wceq sseqin2 reseq2 sylbi rneqd df-ima resres rneqi
+    eqtri 3eqtr4g ) BCDZACBEZFZGZABFZGACFZBHZABHSUAUCSTBIUAUCIBCJTBAKLMUEUDBFZG
+    UBUDBNUFUAACBOPQABNR $.
+
   ${
     $d x y A $.  $d x y B $.
     $( Alternate definition of image.  Compare definition (d) of [Enderton]
@@ -58351,23 +58370,42 @@ $)
 
   ${
     $d x y A $.  $d x y B $.
-    $( The image of the domain of a class is the range of the class.
-       (Contributed by NM, 14-Aug-1994.) $)
+    $( The range is equal to the image of any class including the domain.
+       (Contributed by BJ, 27-Sep-2026.) $)
+    dfrn7 $p |- ( dom A C_ B -> ran A = ( A " B ) ) $=
+      ( vx vy cdm wss cv cop wcel wex cab wa crn cima opeldm ssel syl5 pm4.71rd
+      vex exbidv abbidv dfrn3 dfima3 3eqtr4g ) AEZBFZCGZDGZHAIZCJZDKUGBIZUILZCJ
+      ZDKAMABNUFUJUMDUFUIULCUFUIUKUIUGUEIUFUKUGUHACSDSOUEBUGPQRTUACDAUBCDABUCUD
+      $.
+
+    $( The image of the domain of a class is equal to its range.  (Contributed
+       by NM, 14-Aug-1994.)  (Proof shortened by BJ, 27-Sep-2026.) $)
     imadmrn $p |- ( A " dom A ) = ran A $=
+      ( cdm wss cima crn wceq ssid dfrn7 eqcomd ax-mp ) ABZKCZAKDZAEZFKGLNMAKHI
+      J $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Obsolete version of ~ imadmrn as of 27-Sep-2026.  (Contributed by NM,
+       14-Aug-1994.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    imadmrnOLD $p |- ( A " dom A ) = ran A $=
       ( vx vy cv cdm wcel cop wa wex cab cima crn vex opeldm ancom bitr2i exbii
       pm4.71i abbii dfima3 dfrn3 3eqtr4i ) BDZAEZFZUCCDZGAFZHZBIZCJUGBIZCJAUDKA
       LUIUJCUHUGBUGUGUEHUHUGUEUCUFABMCMNRUGUEOPQSBCAUDTBCAUAUB $.
 
-    $( The image of a class is a subset of its range.  Theorem 3.16(xi) of
-       [Monk1] p. 39.  (Contributed by NM, 31-Mar-1995.) $)
-    imassrn $p |- ( A " B ) C_ ran A $=
+    $( Obsolete version of ~ imassrn as of 27-Sep-2026.  (Contributed by NM,
+       31-Mar-1995.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    imassrnOLD $p |- ( A " B ) C_ ran A $=
       ( vx vy cv wcel cop wex cab cima crn exsimpr ss2abi dfima3 dfrn3 3sstr4i
       wa ) CEZBFZRDEGAFZQCHZDITCHZDIABJAKUAUBDSTCLMCDABNCDAOP $.
   $}
 
   ${
     $d A x $.  $d C x $.
-    $( Image of a function in maps-to notation.  (Contributed by Glauco
+    $( Image by a function in maps-to notation.  (Contributed by Glauco
        Siliprandi, 23-Oct-2021.) $)
     mptima $p |- ( ( x e. A |-> B ) " C ) = ran ( x e. ( A i^i C ) |-> B ) $=
       ( cmpt cima cres crn cin df-ima resmpt3 rneqi eqtri ) ABCEZDFNDGZHABDICEZ
@@ -58377,8 +58415,8 @@ $)
   ${
     $d A x $.  $d C x $.
     mptimass.1 $e |- ( ph -> C C_ A ) $.
-    $( Image of a function in maps-to notation for a subset.  (Contributed by
-       Glauco Siliprandi, 23-Oct-2021.) $)
+    $( Image by a function in maps-to notation of a subset of the domain.
+       (Contributed by Glauco Siliprandi, 23-Oct-2021.) $)
     mptimass $p |- ( ph -> ( ( x e. A |-> B ) " C ) = ran ( x e. C |-> B ) ) $=
       ( cmpt cima cin crn mptima wss wceq sseqin2 sylib mpteq1d rneqd eqtrid )
       ABCDGEHBCEIZDGZJBEDGZJBCDEKATUAABSEDAECLSEMFECNOPQR $.
@@ -58386,7 +58424,7 @@ $)
 
   ${
     $d x y A $.
-    $( Image under the identity relation.  Theorem 3.16(viii) of [Monk1] p. 38.
+    $( Image by the identity relation.  Theorem 3.16(viii) of [Monk1] p. 38.
        (Contributed by NM, 30-Apr-1998.) $)
     imai $p |- ( _I " A ) = A $=
       ( vx vy cid cima cv wcel cop wex cab dfima3 weq wbr df-br vex ideq bitr3i
@@ -58410,10 +58448,6 @@ $)
      by NM, 20-May-1998.) $)
   ima0 $p |- ( A " (/) ) = (/) $=
     ( c0 cima cres crn df-ima res0 rneqi rn0 3eqtri ) ABCABDZEBEBABFKBAGHIJ $.
-
-  $( Image under the empty relation.  (Contributed by FL, 11-Jan-2007.) $)
-  0ima $p |- ( (/) " A ) = (/) $=
-    ( c0 cima crn imassrn rn0 sseqtri 0ss eqssi ) BACZBJBDBBAEFGJHI $.
 
   ${
     $d A y $.  $d B y $.  $d x y $.  $d F y $.
@@ -58442,14 +58476,25 @@ $)
       OGPGJOGJBCKLMN $.
   $}
 
-  $( A preimage under any class is included in the domain of the class.
-     (Contributed by FL, 29-Jan-2007.) $)
-  cnvimass $p |- ( `' A " B ) C_ dom A $=
-    ( ccnv cima crn cdm imassrn dfdm4 sseqtrri ) ACZBDJEAFJBGAHI $.
+  $( The preimage of a superset of the range of a class is equal to the domain
+     of the class.  Generalization of ~ cnvimarndm to supersets of the range.
+     (Contributed by AV, 18-Sep-2024.)  (Proof shortened by BJ,
+     29-Sep-2026.) $)
+  cnvimassrndm $p |- ( ran F C_ A -> ( `' F " A ) = dom F ) $=
+    ( crn wss cdm ccnv cima dfdm4 wceq df-rn sseq1i dfrn7 sylbi eqtr2id ) BCZAD
+    ZBEBFZCZQAGZBHPQEZADRSIOTABJKQALMN $.
 
-  $( The preimage of the range of a class is the domain of the class.
-     (Contributed by Jeff Hankins, 15-Jul-2009.) $)
+  $( The preimage of the range of a class is equal to the domain of the class.
+     (Contributed by Jeff Hankins, 15-Jul-2009.)  (Proof shortened by BJ,
+     29-Sep-2026.) $)
   cnvimarndm $p |- ( `' A " ran A ) = dom A $=
+    ( crn wss ccnv cima cdm wceq ssid cnvimassrndm ax-mp ) ABZKCADKEAFGKHKAIJ
+    $.
+
+  $( Obsolete version of ~ cnvimarndm as of 29-Sep-2026.  (Contributed by Jeff
+     Hankins, 15-Jul-2009.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
+  cnvimarndmOLD $p |- ( `' A " ran A ) = dom A $=
     ( ccnv cdm cima crn imadmrn df-rn imaeq2i dfdm4 3eqtr4i ) ABZKCZDKEKAEZDACK
     FMLKAGHAIJ $.
 
@@ -58627,17 +58672,6 @@ $)
       GLMZNZHIZABJADBCOUJUMABUIULHUIBUHDPZNULUHDBQUKUNBUKUNTADCUGHRUAUBUCUDUEUF
       $.
   $}
-
-  $( Subset theorem for image.  (Contributed by NM, 16-Mar-2004.) $)
-  imass1 $p |- ( A C_ B -> ( A " C ) C_ ( B " C ) ) $=
-    ( wss cres crn cima ssres rnss syl df-ima 3sstr4g ) ABDZACEZFZBCEZFZACGBCGM
-    NPDOQDABCHNPIJACKBCKL $.
-
-  $( Subset theorem for image.  Exercise 22(a) of [Enderton] p. 53.
-     (Contributed by NM, 22-Mar-1998.) $)
-  imass2 $p |- ( A C_ B -> ( C " A ) C_ ( C " B ) ) $=
-    ( wss cres crn cima ssres2 rnss syl df-ima 3sstr4g ) ABDZCAEZFZCBEZFZCAGCBG
-    MNPDOQDABCHNPIJCAKCBKL $.
 
   $( The image of a singleton outside the domain is empty.  (Contributed by NM,
      22-May-1998.)  (Proof shortened by OpenAI, 3-Jul-2020.) $)
@@ -59062,15 +59096,6 @@ $)
   imaundir $p |- ( ( A u. B ) " C ) = ( ( A " C ) u. ( B " C ) ) $=
     ( cun cima cres crn df-ima resundir rneqi rnun 3eqtri uneq12i eqtr4i ) ABDZ
     CEZACFZGZBCFZGZDZACEZBCEZDPOCFZGQSDZGUAOCHUDUEABCIJQSKLUBRUCTACHBCHMN $.
-
-  $( The preimage of a superset of the range of a class is the domain of the
-     class.  Generalization of ~ cnvimarndm for subsets.  (Contributed by AV,
-     18-Sep-2024.) $)
-  cnvimassrndm $p |- ( ran F C_ A -> ( `' F " A ) = dom F ) $=
-    ( crn wss cun wceq ccnv cdm ssequn1 imaeq2 imaundi eqtrdi cnvimarndm uneq1i
-    cima cnvimass ssequn2 mpbi eqtri eqcoms sylbi ) BCZADUBAEZAFBGZAOZBHZFZUBAI
-    UGAUCAUCFZUEUDUBOZUEEZUFUHUEUDUCOUJAUCUDJUDUBAKLUJUFUEEZUFUIUFUEBMNUEUFDUKU
-    FFBAPUEUFQRSLTUA $.
 
   ${
     $d x y A $.  $d x y B $.  $d x y R $.
@@ -59538,18 +59563,28 @@ $)
     ZCUGAEFZGZCUGCZUICZGZBEAFZGZUHUJUGAHIUGUIJUMBEEFZGZUNGBUPUNGZGUOUKUQULUNBKA
     ELMBUPUNNURUNBUREEGZEAGZFUNEEEAOEUSAUTUSEEPQAUTAEAARASUAEAUBUCUDUEUFTT $.
 
+  $( Subclass theorem for converse.  (Contributed by RP, 22-Oct-2020.) $)
+  cnvssb $p |- ( Rel A -> ( A C_ B <-> `' A C_ `' B ) ) $=
+    ( wrel wss ccnv cnvss wa dfrel2 biimpi eqcomd adantr cnvcnvss sstrdi adantl
+    wceq id eqsstrd ex syl5 impbid2 ) ACZABDZAEZBEZDZABFUEUCEZUDEZDZUAUBUCUDFUA
+    UHUBUAUHGAUFBUAAUFOUHUAUFAUAUFAOAHIJKUHUFBDUAUHUFUGBUHPBLMNQRST $.
+
   $( Equality theorem for converse.  (Contributed by FL, 19-Sep-2011.) $)
   cnveqb $p |- ( ( Rel A /\ Rel B ) -> ( A = B <-> `' A = `' B ) ) $=
-    ( wrel wa wceq ccnv cnveq wi dfrel2 eqeq2 imbitrrid eqcoms sylbi imbi2d imp
-    eqeq1 impbid2 ) ACZBCZDABEZAFZBFZEZABGRSUCTHZRUAFZAESUDHZAIUFAUESUDAUEEZUCU
-    EBEZHZSUBFZBEUIBIUIBUJUCUHBUJEUEUJEUAUBGBUJUEJKLMUGTUHUCAUEBPNKLMOQ $.
+    ( wrel wa wss ccnv wceq cnvssb bi2anan9 eqss 3bitr4g ) ACZBCZDABEZBAEZDAFZB
+    FZEZQPEZDABGPQGLNRMOSABHBAHIABJPQJK $.
 
-  $( A relation empty iff its converse is empty.  (Contributed by FL,
+  $( A relation is empty iff its converse is empty.  (Contributed by FL,
      19-Sep-2011.) $)
   cnveq0 $p |- ( Rel A -> ( A = (/) <-> `' A = (/) ) ) $=
-    ( c0 ccnv wceq wrel wb cnv0 rel0 cnveqb mpan2 eqeq2 bibi2d imbitrrid eqcoms
-    wi ax-mp ) BCZBDAEZABDZACZBDZFZOZGUCBQRUBBQDZSTQDZFZRBEUFHABIJUDUAUESBQTKLM
-    NP $.
+    ( wrel c0 wceq ccnv wb rel0 cnveqb mpan2 cnv0 eqeq2i bitrdi ) ABZACDZAEZCEZ
+    DZOCDMCBNQFGACHIPCOJKL $.
+
+  $( A class is empty iff it is a relation whose converse is empty.
+     (Contributed by SN, 8-Oct-2026.) $)
+  cnveq0b $p |- ( A = (/) <-> ( Rel A /\ `' A = (/) ) ) $=
+    ( c0 wceq wrel ccnv rel0 releq mpbiri cnveq0 biadanii ) ABCZADZAEBCKLBDFABG
+    HAIJ $.
 
   $( Alternate definition of relation.  (Contributed by NM, 14-May-2008.) $)
   dfrel3 $p |- ( Rel R <-> ( R |` _V ) = R ) $=
@@ -59581,12 +59616,49 @@ $)
   dfrn4 $p |- ran A = ( A " _V ) $=
     ( cvv cima cres crn df-ima rnresv eqtr2i ) ABCABDEAEABFAGH $.
 
+  $( Any image by a class is included in the range of the class.  Theorem
+     3.16(xi) of [Monk1] p. 39.  (Contributed by NM, 31-Mar-1995.)  (Proof
+     shortened by BJ, 27-Sep-2026.) $)
+  imassrn $p |- ( A " B ) C_ ran A $=
+    ( cima cvv crn wss ssv imass2 ax-mp dfrn4 sseqtrri ) ABCZADCZAEBDFLMFBGBDAH
+    IAJK $.
+
+  $( Any preimage by a class is included in the domain of the class.
+     (Contributed by FL, 29-Jan-2007.) $)
+  cnvimass $p |- ( `' A " B ) C_ dom A $=
+    ( ccnv cima crn cdm imassrn dfdm4 sseqtrri ) ACZBDJEAFJBGAHI $.
+
+  $( Obsolete version of ~ cnvimarndm as of 29-Sep-2026.  (Contributed by AV,
+     18-Sep-2024.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
+  cnvimassrndmOLD $p |- ( ran F C_ A -> ( `' F " A ) = dom F ) $=
+    ( crn wss cun wceq ccnv cdm ssequn1 imaeq2 imaundi eqtrdi cnvimarndm uneq1i
+    cima cnvimass ssequn2 mpbi eqtri eqcoms sylbi ) BCZADUBAEZAFBGZAOZBHZFZUBAI
+    UGAUCAUCFZUEUDUBOZUEEZUFUHUEUDUCOUJAUCUDJUDUBAKLUJUFUEEZUFUIUFUEBMNUEUFDUKU
+    FFBAPUEUFQRSLTUA $.
+
+  $( Image under the empty relation.  (Contributed by FL, 11-Jan-2007.) $)
+  0ima $p |- ( (/) " A ) = (/) $=
+    ( c0 cima crn imassrn rn0 sseqtri 0ss eqssi ) BACZBJBDBBAEFGJHI $.
+
+  $( Condition for the range of a class to be the range of one of its
+     restrictions.  (Contributed by AV, 4-Oct-2025.)  Remove antecedent.
+     (Revised by Eric Schmidt, 10-Jul-2026.)  (Proof shortened by BJ,
+     29-Sep-2026.) $)
+  imadifssrn $p |- ( ( F " ( dom F \ A ) ) C_ ran ( F |` A ) ->
+                                              ran F = ran ( F |` A ) ) $=
+    ( cdm cdif cima cres crn wss cun wceq ssid ssundif mpbir dfrn7 ax-mp df-ima
+    imaundi eqtri sseq2i ssequn2 sylbb1 eqtrid eqtrdi ) BBCZADZEZBAFGZHZBGZBAEZ
+    UGUHUIUJUFIZUJUIBAUEIZEZUKUDULHZUIUMJUNUEUEHUEKUDAUELMBULNOBAUEQRUFUJHUHUKU
+    JJUJUGUFBAPZSUFUJTUAUBUOUC $.
+
   ${
     $d A y $.  $d F y $.
-    $( Condition for the range of a class to be the range of one of its
-       restrictions.  (Contributed by AV, 4-Oct-2025.)  Remove antecedent.
-       (Revised by Eric Schmidt, 10-Jul-2026.) $)
-    imadifssran $p |- ( ( F " ( dom F \ A ) ) C_ ran ( F |` A )
+    $( Obsolete version of ~ imadifssrn as of 29-Sep-2026.  (Contributed by AV,
+       4-Oct-2025.)  Remove antecedent.  (Revised by Eric Schmidt,
+       10-Jul-2026.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    imadifssranOLD $p |- ( ( F " ( dom F \ A ) ) C_ ran ( F |` A )
                      -> ran F = ran ( F |` A ) ) $=
       ( vy cdm cdif cima cres crn wss wceq df-ima sseq1i cv wcel wo cun sseqtri
       wi ssun2 cvv undif2 sseqtrri ssres2 ax-mp rnssi rnun sseli elun sylib cin
@@ -59598,10 +59670,10 @@ $)
       WDWJWKVJBVJTVJVJVAULUMBTUNUOUPBUQURUSVPVNVSVBVTWAWCWAVTUTVCVDVEVNVRIVQBAV
       FVGVHVI $.
 
-    $( Obsolete version of ~ imadifssran as of 10-Jul-2026.  (Contributed by
+    $( Obsolete version of ~ imadifssranOLD as of 10-Jul-2026.  (Contributed by
        AV, 4-Oct-2025.)  (Proof modification is discouraged.)
        (New usage is discouraged.) $)
-    imadifssranOLD $p |- ( ( Rel F /\ A C_ dom F )
+    imadifssranOLDOLD $p |- ( ( Rel F /\ A C_ dom F )
                         -> ( ( F " ( dom F \ A ) ) C_ ran ( F |` A )
                              -> ran F = ran ( F |` A ) ) ) $=
       ( vy cdm cres crn wss wa wceq wi wb eqcomd adantr rneqd eleq2d cun eqtrdi
@@ -62845,6 +62917,21 @@ $)
     $( $j usage 'funmo' avoids 'ax-12'; $)
   $}
 
+  ${
+    $d A x y z $.  $d B x y z $.  $d C x y z $.  $d F x y z $.
+    fununiq.1 $e |- A e. _V $.
+    fununiq.2 $e |- B e. _V $.
+    fununiq.3 $e |- C e. _V $.
+    $( Functions are single-valued.  (Contributed by Scott Fenton,
+       18-Feb-2013.) $)
+    fununiq $p |- ( Fun F -> ( ( A F B /\ A F C ) -> B = C ) ) $=
+      ( vx vy vz cv wbr wa wi wal wceq cvv wcel wb breq12 wfun wrel weq 3adant3
+      dffun2 w3a 3adant2 anbi12d eqeq12 3adant1 imbi12d spc3gv mp3an simplbiim
+      ) DUADUBHKZIKZDLZUOJKZDLZMZIJUCZNZJOIOHOZABDLZACDLZMZBCPZNZHIJDUEAQRBQRCQ
+      RVCVHNEFGVBVHHIJABCQQQUOAPZUPBPZURCPZUFZUTVFVAVGVLUQVDUSVEVIVJUQVDSVKUOAU
+      PBDTUDVIVKUSVESVJUOAURCDTUGUHVJVKVAVGSVIUPBURCUIUJUKULUMUN $.
+  $}
+
   $( A function is a relation.  (Contributed by NM, 1-Aug-1994.) $)
   funrel $p |- ( Fun A -> Rel A ) $=
     ( wfun wrel ccnv ccom cid wss df-fun simplbi ) ABACAADEFGAHI $.
@@ -63942,8 +64029,7 @@ $)
     ADZABEZFGZHCIZBEZFGZCBJFGQUBSQUARFQTABACKLMNCBOP $.
 
   $( Images under a function never map nonempty sets to empty sets.
-     _EDITORIAL_: usable in ~ fnwe2lem2 .  (Contributed by Stefan O'Rear,
-     21-Jan-2015.) $)
+     (Contributed by Stefan O'Rear, 21-Jan-2015.) $)
   fnimaeq0 $p |- ( ( F Fn A /\ B C_ A ) ->
       ( ( F " B ) = (/) <-> B = (/) ) ) $=
     ( cima c0 wceq cdm cin wfn wa imadisj incom fndm sseq2d biimpar dfss2 sylib
@@ -75505,6 +75591,69 @@ $)
       LUMUNTUOUSVHABCIDEFGHUQURT $.
   $}
 
+  ${
+    $d D v w $.  $d ph x y z $.  $d A v w x y z $.  $d B v w x y z $.
+    $d C v w x y z $.  $d X v w x y z $.  $d Y v w x y z $.
+    mpt3fvd.1 $e |- ( ph -> X e. ( ( A X. B ) X. C ) ) $.
+    mpt3fvd.2 $e |- ( ph -> Y e. V ) $.
+    mpt3fvd.3 $e |- ( ( ph /\ X = <. x , y , z >. ) -> Y = D ) $.
+    mpt3fvd.4 $e |- F = ( x e. A , y e. B , z e. C |-> D ) $.
+    $( Value of a three-argument function in maps-to notation.  (Contributed by
+       BTernaryTau, 28-Sep-2026.) $)
+    mpt3fvd $p |- ( ph -> ( F ` X ) = Y ) $=
+      ( vw wceq wa wrex vv cv cotp cfv cxp wcel el2xptp sylib simpr jca reximdv
+      ex mpd cvv wi elexd cmpt3 anbi1d rexbidv 2rexbidv anbi2d wmo w3a wex moeq
+      eqeq1 wal moani ax-gen gen2 mosubott ax-mp r3ex 3exbii bitr4i mobii mpbir
+      an12 a1i copab df-mpt3 vex biantrur opabbii eqtri fvopab3ig fveq1i eqeq1i
+      imbitrrdi syl2anc ) AKBUBZCUBZDUBZUCZRZLHRZSZDGTZCFTZBETZKIUDZLRZAWODGTZC
+      FTZBETZWTAKEFUEGUEZUFXEMBCDKEFGUGUHAXDWSBEAXCWRCFAWOWQDGAWOWQAWOSWOWPAWOU
+      IOUJULUKUKUKUMAKUNUFZLJUFZWTXBUOAKXFMUPNXGXHSWTKBCDEFGHUQZUDZLRXBUAUBZWNR
+      ZQUBZHRZSZDGTZCFTBETZWOXNSZDGTZCFTBETWTUAQKLUNJXIXKKRZXPXSBCEFXTXOXRDGXTX
+      LWOXNXKKWNVFURUSUTXMLRZXSWRBCEFYAXRWQDGYAXNWPWOXMLHVFVAUSUTXQQVBZXKUNUFZY
+      BXLWKEUFWLFUFWMGUFVCZXNSZSZDVDCVDBVDZQVBZYEQVBZDVGZCVGBVGYHYJBCYIDXNYDQQH
+      VEVHVIVJYEBCDQXKVKVLXQYGQXQYDXOSZDVDCVDBVDYGXOBCDEFGVMYFYKBCDXLYDXNVRVNVO
+      VPVQVSXIXQUAQVTYCXQSZUAQVTBCDQEFGHUAWAXQYLUAQYCXQUAWBWCWDWEWFXAXJLKIXIPWG
+      WHWIWJUM $.
+  $}
+
+  ${
+    $d ph x y z $.  $d A x y z $.  $d B x y z $.  $d C x y z $.  $d R x y z $.
+    $d S x y z $.  $d T x y z $.  $d Y x y z $.
+    mpt3fvotd.1 $e |- ( ph -> R e. A ) $.
+    mpt3fvotd.2 $e |- ( ph -> S e. B ) $.
+    mpt3fvotd.3 $e |- ( ph -> T e. C ) $.
+    mpt3fvotd.4 $e |- ( ph -> Y e. V ) $.
+    mpt3fvotd.5 $e |- ( ( ph /\ <. R , S , T >. = <. x , y , z >. ) ->
+        Y = D ) $.
+    mpt3fvotd.6 $e |- F = ( x e. A , y e. B , z e. C |-> D ) $.
+    $( Value of a three-argument function in maps-to notation at an ordered
+       triple.  (Contributed by BTernaryTau, 28-Sep-2026.) $)
+    mpt3fvotd $p |- ( ph -> ( F ` <. R , S , T >. ) = Y ) $=
+      ( cotp wcel cxp otelxp syl3anbrc mpt3fvd ) ABCDEFGHLMIJKUAZNAIEUBJFUBKGUB
+      UGEFUCGUCUBOPQIJKEFGUDUERSTUF $.
+  $}
+
+  ${
+    $d ph x y z $.  $d A x y z $.  $d B x y z $.  $d C x y z $.  $d R x y z $.
+    $d S x y z $.  $d T x y z $.  $d M x y z $.
+    mpt3fvot2d.1 $e |- ( ph -> R e. A ) $.
+    mpt3fvot2d.2 $e |- ( ph -> S e. B ) $.
+    mpt3fvot2d.3 $e |- ( ph -> T e. C ) $.
+    mpt3fvot2d.4 $e |- ( ph -> M e. V ) $.
+    mpt3fvot2d.5 $e |- ( ( ph /\ R = x ) -> K = D ) $.
+    mpt3fvot2d.6 $e |- ( ( ph /\ S = y ) -> L = K ) $.
+    mpt3fvot2d.7 $e |- ( ( ph /\ T = z ) -> M = L ) $.
+    mpt3fvot2d.8 $e |- F = ( x e. A , y e. B , z e. C |-> D ) $.
+    $( Value of a three-argument function in maps-to notation at an ordered
+       triple.  (Contributed by BTernaryTau, 28-Sep-2026.) $)
+    mpt3fvot2d $p |- ( ph -> ( F ` <. R , S , T >. ) = M ) $=
+      ( cotp cv wceq w3a wcel wb otthg syl3anc ex 3anim123d sylbid ancoms sylan
+      wa eqtr ancom1s 3impa syl6 imp mpt3fvotd ) ABCDEFGHIJKLPOQRSTAIJKUEBUFZCU
+      FZDUFZUEUGZOHUGZAVHMHUGZNMUGZONUGZUHZVIAVHIVEUGZJVFUGZKVGUGZUHZVMAIEUIJFU
+      IKGUIVHVQUJQRSIJKVEEVFVGFGUKULAVNVJVOVKVPVLAVNVJUAUMAVOVKUBUMAVPVLUCUMUNU
+      OVJVKVLVIVKVJVLVIVKVJURNHUGZVLVINMHUSVLVRVIONHUSUPUQUTVAVBVCUDVD $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -81414,6 +81563,131 @@ $)
       ( vz vv vu cv cfv cxp wcel wa c1st wbr wceq c2nd wo cop cmpt eqid fnwelem
       copab ) ABCPDQREFRSZFEUAZUBQSZUOUBUCUNUDTZUPUDTZGUEUQURUFUNUGTUPUGTHUEUCU
       HUCRQUMZGHIJPEPSZJTUTUIUJZKLMNOUSUKVAUKUL $.
+  $}
+
+  ${
+    $d U y z a b c d e f $.  $d S x y a b c d e f g $.  $d R x y a b c d e f $.
+    $d ph x y z c d e f g $.  $d A x y z a b c d e f g $.
+    $d F x y z a b c d e f g $.  $d T a b c d e f $.  $d B a b c d e f $.
+    fnwe2.su $e |- ( z = ( F ` x ) -> S = U ) $.
+    fnwe2.t $e |- T = { <. x , y >. | ( ( F ` x ) R ( F ` y ) \/
+        ( ( F ` x ) = ( F ` y ) /\ x U y ) ) } $.
+    $( Lemma for ~ fnwe2 .  Substitute variables.  (Contributed by Stefan
+       O'Rear, 19-Jan-2015.) $)
+    fnwe2lem1 $p |- ( a T b <-> ( ( F ` a ) R ( F ` b ) \/
+        ( ( F ` a ) = ( F ` b ) /\ a [_ ( F ` a ) / z ]_ S b ) ) ) $=
+      ( cv cfv wbr wceq wa wo csb vex fveq2 breqan12d eqeqan12d csbeq1d eqtr3id
+      simpl fvex csbie adantr simpr breq123d anbi12d orbi12d braba ) AMZHNZBMZH
+      NZDOZUPURPZUOUQGOZQZRIMZHNZJMZHNZDOZVDVFPZVCVECVDESZOZQZRABVCVEFITJTUOVCP
+      ZUQVEPZQZUSVGVBVKVLVMUPVDURVFDUOVCHUAZUQVEHUAZUBVNUTVHVAVJVLVMUPVDURVFVOV
+      PUCVNUOVCUQVEGVIVLVMUFVLGVIPVMVLGCUPESVICUPEGUOHUGKUHVLCUPVDEVOUDUEUIVLVM
+      UJUKULUMLUN $.
+
+    fnwe2.s $e |- ( ( ph /\ x e. A ) ->
+        U We { y e. A | ( F ` y ) = ( F ` x ) } ) $.
+    $( Lemma for ~ fnwe2 .  Substitution in well-ordering hypothesis.
+       (Contributed by Stefan O'Rear, 19-Jan-2015.) $)
+    fnwe2lem2 $p |- ( ( ph /\ a e. A ) ->
+        [_ ( F ` a ) / z ]_ S We { y e. A | ( F ` y ) = ( F ` a ) } ) $=
+      ( cv cfv wceq crab csb wwe wral ralrimiva fveq2 csbeq1d fvex csbie eqtrdi
+      eqeq2d rabbidv weeq12d cbvralvw sylibr r19.21bi ) ACOJPZKOZJPZQZCERZDUPGS
+      ZTZKEAUNBOZJPZQZCERZITZBEUAUTKEUAAVEBENUBUTVEKBEUOVAQZURVDUSIVFUSDVBGSIVF
+      DUPVBGUOVAJUCZUDDVBGIVAJUELUFUGVFUQVCCEVFUPVBUNVGUHUIUJUKULUM $.
+
+    fnwe2.f $e |- ( ph -> ( F |` A ) : A --> B ) $.
+    fnwe2.r $e |- ( ph -> R We B ) $.
+
+    ${
+      $d ph b $.
+      fnwe2lem3.a $e |- ( ph -> a C_ A ) $.
+      fnwe2lem3.n0 $e |- ( ph -> a =/= (/) ) $.
+      $( Lemma for ~ fnwe2 .  An element which is in a minimal fiber and
+         minimal within its fiber is minimal globally; thus ` T ` is
+         well-founded.  (Contributed by Stefan O'Rear, 19-Jan-2015.) $)
+      fnwe2lem3 $p |- ( ph -> E. b e. a A. c e. a -. c T b ) $=
+        ( ve vd vf vg cv wbr wn cres cima wral wrex cvv wcel wfr wss c0 wf wfun
+        wne ffun vex funimaex 3syl wwe wefr syl fimassd wfn wb fnimaeq0 syl2anc
+        wceq necon3bid mpbird fri syl22anc cfv crn df-ima rexeqi fnssresd breq2
+        ffnd notbid ralbidv rexrn bitrid wel raleqi breq1 ralrn adantr resabs1d
+        wa ad2antrr fveq1d fvres eqtrd ad2antlr breq12d ralbidva bitrd rexbidva
+        adantl csb crab cin inex1 sselda fnwe2lem2 syldan adantrr inss2 fveqeq2
+        simprl eqidd elrabd elind ne0d wi elin elrab anbi2i bitri imbi1i impexp
+        a1i ralbii2 weq simplrl fveq2 breq1d simplrr simpr rspcdva biimtrid mpd
+        wo ex simprrr breq2d mtbird simprr eleq1w anbi12d imbi12d simplr mp2and
+        ad3antrrr csbeq1d breqd mtbid expr imnan sylib ioran sylanbrc fnwe2lem1
+        eqtr2d sylnibr ralrimiva rspcedvdw rexlimdv rexlimdvaa sylbid ) AUBUFZU
+        CUFZGUGZUHZUBKEUIZLUFZUJZUKZUCUVMULZNUFZMUFZIUGZUHZNUVLUKZMUVLULZAUVMUM
+        UNZFGUOZUVMFUPUVMUQUTZUVOAEFUVKURUVKUSUWBREFUVKVAUVKUVLLVBZVCVDAFGVEUWC
+        SFGVFVGAEFUVKUVLRVHAUWDUVLUQUTUAAUVMUQUVLUQAUVKEVIUVLEUPZUVMUQVMUVLUQVM
+        VJAEFUVKRWDZTEUVLUVKVKVLVNVOUCUBFUVMUMGVPVQAUVOUVHKVRZUDUFZKVRZGUGZUHZU
+        CUVLUKZUDUVLULZUWAAUVOUVGUWIUVKUVLUIZVRZGUGZUHZUBUVMUKZUDUVLULZUWNUVOUV
+        NUCUWOVSZULZAUWTUVNUCUVMUXAUVKUVLVTZWAAUWOUVLVIZUXBUWTVJAEUVLUVKUWGTWBZ
+        UVNUWSUCUDUVLUWOUVHUWPVMZUVJUWRUBUVMUXFUVIUWQUVHUWPUVGGWCWEWFWGVGWHAUWS
+        UWMUDUVLAUDLWIZWOZUWSUVHUWOVRZUWPGUGZUHZUCUVLUKZUWMAUWSUXLVJUXGUWSUWRUB
+        UXAUKZAUXLUWRUBUVMUXAUXCWJAUXDUXMUXLVJUXEUWRUXKUBUCUVLUWOUVGUXIVMUWQUXJ
+        UVGUXIUWPGWKWEWLVGWHWMUXHUXKUWLUCUVLUXHUCLWIZWOZUXJUWKUXOUXIUWHUWPUWJGU
+        XOUXIUVHKUVLUIZVRZUWHUXOUVHUWOUXPAUWOUXPVMUXGUXNAKUVLETWNWPZWQUXNUXQUWH
+        VMUXHUVHUVLKWRXEWSUXOUWPUWIUXPVRZUWJUXOUWIUWOUXPUXRWQUXGUXSUWJVMAUXNUWI
+        UVLKWRWTWSXAWEXBXCXDXCAUWMUWAUDUVLAUXGUWMWOZWOZUEUFZUVGDUWJHXFZUGZUHZUE
+        UVLCUFZKVRUWJVMZCEXGZXHZUKZUBUYIULZUWAUYAUYIUMUNZUYHUYCUOZUYIUYHUPZUYIU
+        QUTUYKUYLUYAUVLUYHUWEXIYHAUXGUYMUWMAUXGUWIEUNZUYMAUVLEUWITXJZAUYOWOUYHU
+        YCVEUYMABCDEGHIJKUDOPQXKUYHUYCVFVGXLXMUYNUYAUVLUYHXNYHUYAUYIUWIUYAUVLUY
+        HUWIAUXGUWMXPUYAUYGUWJUWJVMCUWIEUYFUWIUWJKXOAUXGUYOUWMUYPXMUYAUWJXQXRXS
+        XTUBUEUYHUYIUMUYCVPVQUYAUYJUWAUBUYIUVGUYIUNZUBLWIZUVGEUNZUVGKVRZUWJVMZW
+        OZWOZUYAUYJUWAYAZUYQUYRUVGUYHUNZWOVUCUVGUVLUYHYBVUEVUBUYRUYGVUACUVGEUYF
+        UVGUWJKXOYCYDYEUYAVUCVUDUYJUYBEUNZUYBKVRUWJVMZWOZUYEYAZUEUVLUKZUYAVUCWO
+        ZUWAUYEVUIUEUYIUVLUYBUYIUNZUYEYAUELWIZVUHWOZUYEYAVUMVUIYAVULVUNUYEVULVU
+        MUYBUYHUNZWOVUNUYBUVLUYHYBVUOVUHVUMUYGVUGCUYBEUYFUYBUWJKXOYCYDYEYFVUMVU
+        HUYEYGYEYIVUKVUJUWAVUKVUJWOZUVTUVPUVGIUGZUHZNUVLUKMUVGUVLMUBYJZUVSVURNU
+        VLVUSUVRVUQUVQUVGUVPIWCWEWFUYAUYRVUBVUJYKVUPVURNUVLVUPNLWIZWOZUVPKVRZUY
+        TGUGZVVBUYTVMZUVPUVGDVVBHXFZUGZWOZYSZVUQVVAVVCUHVVGUHZVVHUHVVAVVCVVBUWJ
+        GUGZVVAUWLVVJUHUCUVLUVPUCNYJZUWKVVJVVKUWHVVBUWJGUVHUVPKYLYMWEVUKUWMVUJV
+        UTAUXGUWMVUCYNWPVUPVUTYOYPVVAUYTUWJVVBGVUKVUAVUJVUTUYAUYRUYSVUAUUAZWPUU
+        BUUCVVAVVDVVFUHZYAVVIVUPVUTVVDVVMVUPVUTVVDWOZWOZUVPUVGUYCUGZVVFVVOUVPEU
+        NZVVBUWJVMZVVPUHZVUPVUTVVQVVDVUPUVLEUVPAUWFUXTVUCVUJTUUJXJXMVVOVVBUYTUW
+        JVUPVUTVVDUUDZVUKVUAVUJVVNVVLWPZWSVVOVUIVVQVVRWOZVVSYAUEUVLUVPUENYJZVUH
+        VWBUYEVVSVWCVUFVVQVUGVVRUENEUUEUYBUVPUWJKXOUUFVWCUYDVVPUYBUVPUVGUYCWKWE
+        UUGVUKVUJVVNUUHVUPVUTVVDXPYPUUIVVOUYCVVEUVPUVGVVODUWJVVBHVVOVVBUYTUWJVV
+        TVWAUUTUUKUULUUMUUNVVDVVFUUOUUPVVCVVGUUQUURBCDGHIJKNUBOPUUSUVAUVBUVCYTY
+        QYTYQUVDYRUVEUVFYR $.
+    $}
+
+    ${
+      fnwe2lem4.a $e |- ( ph -> a e. A ) $.
+      fnwe2lem4.b $e |- ( ph -> b e. A ) $.
+      $( Lemma for ~ fnwe2 .  Trichotomy.  (Contributed by Stefan O'Rear,
+         19-Jan-2015.) $)
+      fnwe2lem4 $p |- ( ph -> ( a T b \/ a = b \/ b T a ) ) $=
+        ( cv cfv wbr weq w3o wceq wa wo animorrl fnwe2lem1 sylibr 3mix1d simplr
+        csb simpr olcd 3mix2 adantl eqcomd csbeq1 breqd biimpa 3mix3d crab wcel
+        jca wor wwe fnwe2lem2 mpdan weso syl adantr eqidd elrabd solin syl12anc
+        fveqeq2 mpjao3dan cres fvresd ffvelcdmd eqeltrrd ) ALUAZKUBZMUAZKUBZGUC
+        ZWDWFIUCZLMUDZWFWDIUCZUEZWEWGUFZWGWEGUCZAWHUGZWIWJWKWOWHWMWDWFDWEHUNZUC
+        ZUGZUHZWIAWHWRUIBCDGHIJKLMNOUJZUKULAWMUGZWQWLWJWFWDWPUCZXAWQUGZWIWJWKXC
+        WSWIXCWRWHXCWMWQAWMWQUMXAWQUOVFUPWTUKULWJWLXAWJWIWKUQURXAXBUGZWKWIWJXDW
+        NWGWEUFZWFWDDWGHUNZUCZUGZUHZWKXDXHWNXDXEXGXDWEWGAWMXBUMUSXAXBXGXAWPXFWF
+        WDWMWPXFUFADWEWGHUTURVAVBVFUPBCDGHIJKMLNOUJZUKVCXACUAZKUBWEUFZCEVDZWPVG
+        ZWDXMVEWFXMVEWQWJXBUEAXNWMAXMWPVHZXNAWDEVEZXOSABCDEGHIJKLNOPVIVJXMWPVKV
+        LVMXAXLWEWEUFCWDEXKWDWEKVRAXPWMSVMXAWEVNVOXAXLXECWFEXKWFWEKVRAWFEVEWMTV
+        MXAWEWGAWMUOUSVOXMWDWFWPVPVQVSAWNUGZWKWIWJXQXIWKAWNXHUIXJUKVCAFGVGZWEFV
+        EWGFVEWHWMWNUEAFGVHXRRFGVKVLAWDKEVTZUBWEFAWDEKSWAAEFWDXSQSWBWCAWFXSUBWG
+        FAWFEKTWAAEFWFXSQTWBWCFWEWGGVPVQVS $.
+    $}
+
+    $d ph a b $.
+    $( A well-ordering can be constructed on a partitioned set by patching
+       together well-orderings on each partition using a well-ordering on the
+       partitions themselves.  Similar to ~ fnwe but does not require the
+       within-partition ordering to be globally well.  (Contributed by Stefan
+       O'Rear, 19-Jan-2015.) $)
+    fnwe2 $p |- ( ph -> T We A ) $=
+      ( va vb vd cv vc wfr wbr weq w3o wral wwe wss c0 wne wa wrex wal wcel cfv
+      wn wi wceq crab adantlr cres wf adantr simprl simprr fnwe2lem3 ex alrimiv
+      df-fr sylibr fnwe2lem4 ralrimivva dfwe2 sylanbrc ) AEIUBZQTZRTZIUCQRUDVQV
+      PIUCUEZREUFQEUFEIUGAVPEUHZVPUIUJZUKZSTUATIUCUPSVPUFUAVPULZUQZQUMVOAWCQAWA
+      WBAWAUKBCDEFGHIJKQUASLMABTZEUNZCTKUOWDKUOURCEUSJUGZWANUTAEFKEVAVBZWAOVCAF
+      GUGZWAPVCAVSVTVDAVSVTVEVFVGVHQUASEIVIVJAVRQREEAVPEUNZVQEUNZUKZUKBCDEFGHIJ
+      KQRLMAWEWFWKNUTAWGWKOVCAWHWKPVCAWIWJVDAWIWJVEVKVLQREIVMVN $.
   $}
 
   ${
@@ -98339,9 +98613,9 @@ $)
   ${
     $d p N $.
     cnvimamptfin.n $e |- ( ph -> N e. Fin ) $.
-    $( A preimage of a mapping with a finite domain under any class is finite.
-       In contrast to ~ fisuppfi , the range of the mapping needs not to be
-       known.  (Contributed by AV, 21-Dec-2018.) $)
+    $( Any preimage by a mapping with a finite domain is finite.  In contrast
+       to ~ fisuppfi , the range of the mapping need not be known.
+       (Contributed by AV, 21-Dec-2018.) $)
     cnvimamptfin $p |- ( ph -> ( `' ( p e. N |-> X ) " Y ) e. Fin ) $=
       ( cfn wcel cmpt ccnv cima wss cnvimass eqid dmmptss sstri ssfi sylancl
       cdm ) ABGHEBCIZJDKZBLUAGHFUATSBTDMEBCTTNOPBUAQR $.
@@ -105815,6 +106089,17 @@ $)
     ( vx cr1 con0 wfn cvv cv cpw cmpt c0 crdg rdgfnon df-r1 fneq1i mpbir ) BCDA
     EAFGHZIJZCDIOKCBPALMN $.
 
+  $( The range of the cumulative hierarchy of sets function.  This is the class
+     of all stages of the cumulative hierarchy of sets, not the class of all
+     sets in some stage of the cumulative hierarchy (that is ` U. ran R1 ` ).
+
+     This statement does not require the axiom of replacement by avoiding using
+     ~ r1fnon .  (Contributed by BJ, 27-Sep-2026.) $)
+  rnr1 $p |- ran R1 = ( R1 " On ) $=
+    ( cr1 cdm wlim crn con0 cima wceq r1dmlim word wss ordsson dfrn7 3syl ax-mp
+    limord ) ABZCZADAEFGZHQPIPEJRPOPKAELMN $.
+    $( $j usage 'rnr1' avoids 'ax-rep' 'ax-pow'; $)
+
   $( Value of the cumulative hierarchy of sets function at ` (/) ` .  Part of
      Definition 9.9 of [TakeutiZaring] p. 76.  (Contributed by NM, 2-Sep-2003.)
      (Revised by Mario Carneiro, 10-Sep-2013.) $)
@@ -105835,8 +106120,10 @@ $)
       $.
 
     $( Value of the cumulative hierarchy of sets function at a successor
-       ordinal.  Part of Definition 9.9 of [TakeutiZaring] p. 76.  (Contributed
-       by NM, 2-Sep-2003.)  (Revised by Mario Carneiro, 10-Sep-2013.) $)
+       ordinal.  Use ~ r1sucg (which does not require ~ ax-rep ) when
+       sufficient.  Part of Definition 9.9 of [TakeutiZaring] p. 76.
+       (Contributed by NM, 2-Sep-2003.)  (Revised by Mario Carneiro,
+       10-Sep-2013.) $)
     r1suc $p |- ( A e. On -> ( R1 ` suc A ) = ~P ( R1 ` A ) ) $=
       ( csuc cr1 cfv cpw wceq cdm con0 r1sucg r1fnon fndmi eqcomi eleq2s ) ABCD
       ACDEFACGZHAINHHCJKLM $.
@@ -105857,9 +106144,8 @@ $)
        of Definition 9.9 of [TakeutiZaring] p. 76.  (Contributed by NM,
        4-Oct-2003.)  (Revised by Mario Carneiro, 16-Nov-2014.) $)
     r1lim $p |- ( ( A e. B /\ Lim A ) -> ( R1 ` A ) = U_ x e. A ( R1 ` x ) ) $=
-      ( wcel wlim cr1 cdm cfv cv ciun wceq wa con0 limelon wfn r1fnon eleqtrrdi
-      fndm ax-mp r1limg sylancom ) BCDZBEZBFGZDBFHABAIFHJKUBUCLBMUDBCNFMOUDMKPM
-      FRSQABTUA $.
+      ( wcel wlim cr1 cdm cfv cv ciun wceq con0 limelon r1fnon eleqtrrdi r1limg
+      wa fndmi sylancom ) BCDZBEZBFGZDBFHABAIFHJKTUAQBLUBBCMLFNROABPS $.
   $}
 
   ${
@@ -106141,9 +106427,24 @@ $)
 
   ${
     $d A x y $.
-    $( Two ways of saying a set is well-founded.  (Contributed by NM,
-       11-Oct-2003.)  (Revised by Mario Carneiro, 16-Nov-2014.) $)
+    $( Two ways of expressing that a set is well-founded.  (Contributed by NM,
+       11-Oct-2003.)  (Revised by Mario Carneiro, 16-Nov-2014.)  (Proof
+       shortened by BJ, 29-Sep-2026.) $)
     rankwflemb $p |- ( A e. U. ( R1 " On ) <->
+        E. x e. On A e. ( R1 ` suc x ) ) $=
+      ( vy cr1 con0 cima cuni wcel cv csuc cfv wrex wex eluni wceq eleq2 elfvdm
+      wa wi r1fun biimprcd cpw wss r1tr trss ax-mp elpwg mpbird r1sucg eleqtrrd
+      wtr cdm syl a1i syl9 reximdvai wfun fvelima mpan impel exlimiv crn fvelrn
+      sylbi sylancr rnr1 eleqtrdi elunii mpdan rexlimivw impbii ) BDEFZGHZBAIZJ
+      ZDKZHZAELZVMBCIZHZVSVLHZRZCMVRCBVLNWBVRCVTVNDKZVSOZAELZVRWAVTWDVQAEVTWDBW
+      CHZVNEHZVQWDWFVTWCVSBPUAWFVQSWGWFBWCUBZVPWFBWHHBWCUCZWCUKWFWISVNUDWCBUEUF
+      BWCWCUGUHWFVNDULZHVPWHOBVNDQVNUIUMUJUNUOUPDUQZWAWETAVSEDURUSUTVAVDVQVMAEV
+      QVPVLHVMVQVPDVBZVLVQWKVOWJHVPWLHTBVODQVODVCVEVFVGBVPVLVHVIVJVK $.
+
+    $( Obsolete version of ~ rankwflemb as of 29-Sep-2026.  (Contributed by NM,
+       11-Oct-2003.)  (Revised by Mario Carneiro, 16-Nov-2014.)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
+    rankwflembOLD $p |- ( A e. U. ( R1 " On ) <->
         E. x e. On A e. ( R1 ` suc x ) ) $=
       ( vy cr1 con0 cima cuni wcel cv csuc cfv wrex wa wceq wi wss ax-mp elfvdm
       r1fun crn wex eluni eleq2 biimprcd cpw wtr r1tr trss elpwg mpbird cdm syl
@@ -106369,16 +106670,23 @@ $)
 
   $( Every set belongs to some stage of the cumulative hierarchy of sets,
      expressed using an indexed union.  Lemma 9.3 of [Jech] p. 71.
-     (Contributed by NM, 4-Oct-2003.)  (Revised by Mario Carneiro,
-     8-Jun-2013.) $)
+     (Contributed by NM, 4-Oct-2003.)  (Revised by Mario Carneiro, 8-Jun-2013.)
+     (Proof shortened by BJ, 29-Sep-2026.) $)
   jech9.3 $p |- U_ x e. On ( R1 ` x ) = _V $=
+    ( con0 cv cr1 cfv ciun cima cuni wfun wceq r1fun funiunfv ax-mp unir1 eqtri
+    cvv ) ABACDEFZDBGHZPDIQRJKABDLMNO $.
+
+  $( Obsolete version of ~ jech9.3 as of 29-Sep-2026.  (Contributed by NM,
+     4-Oct-2003.)  (Revised by Mario Carneiro, 8-Jun-2013.)
+     (Proof modification is discouraged.)  (New usage is discouraged.) $)
+  jech9.3OLD $p |- U_ x e. On ( R1 ` x ) = _V $=
     ( con0 cv cr1 cfv ciun crn cuni cima cvv wfn wceq r1fnon fniunfv ax-mp fndm
     cdm imaeq2i imadmrn eqtr3i unieqi unir1 3eqtr2i ) ABACDEFZDGZHZDBIZHJDBKZUD
     UFLMABDNOUGUEDDQZIUGUEUIBDUHUIBLMBDPORDSTUAUBUC $.
 
   ${
     $d x A $.
-    $( Every set is well-founded, assuming the Axiom of Regularity.
+    $( Every set is well-founded, assuming the axiom of regularity.
        Proposition 9.13 of [TakeutiZaring] p. 78.  This variant of ~ tz9.13g is
        useful in proofs of theorems about the rank function.  (Contributed by
        NM, 4-Oct-2003.) $)
@@ -149986,6 +150294,11 @@ $)
       ( vx cfz co cz cv elfzelz ssriv ) CABDEFCGABHI $.
   $}
 
+  $( A finite sequence of integers is a set of real numbers.  (Contributed by
+     Glauco Siliprandi, 5-Apr-2020.) $)
+  fzssre $p |- ( M ... N ) C_ RR $=
+    ( cfz co cz cr fzssz zssre sstri ) ABCDEFABGHI $.
+
   $( A member of a finite set of sequential integer is greater than or equal to
      the lower bound.  (Contributed by NM, 6-Sep-2005.)  (Revised by Mario
      Carneiro, 28-Apr-2015.) $)
@@ -191657,8 +191970,8 @@ $)
       JUKULUM $.
   $}
 
-  $( No number between ` 1 ` and ` M - 1 ` divides ` M ` .  (Contributed by
-     Mario Carneiro, 24-Jan-2015.) $)
+  $( No number from ` 1 ` to ` M - 1 ` is a multiple of ` M ` .  (Contributed
+     by Mario Carneiro, 24-Jan-2015.) $)
   fzm1ndvds $p |- ( ( M e. NN /\ N e. ( 1 ... ( M - 1 ) ) ) -> -. M || N ) $=
     ( cn wcel c1 cmin co cfz wa cdvds wbr cle clt elfzle2 adantl adantr syl2anc
     wn cz wb elfzelz zltlem1 mpbird elfznn nnred cr nnre ltnled mpbid wi dvdsle
@@ -271538,9 +271851,9 @@ $)
     lmodvsass.s $e |- .x. = ( .s ` W ) $.
     lmodvsass.k $e |- K = ( Base ` F ) $.
     lmodvsass.t $e |- .X. = ( .r ` F ) $.
-    $( Associative law for scalar product.  ( ~ ax-hvmulass analog.)
-       (Contributed by NM, 10-Jan-2014.)  (Revised by Mario Carneiro,
-       22-Sep-2015.) $)
+    $( In a module, scalar multiplication is a semigroup action.
+       ( ~ ax-hvmulass analog.)  (Contributed by NM, 10-Jan-2014.)  (Revised by
+       Mario Carneiro, 22-Sep-2015.) $)
     lmodvsass $p |- ( ( W e. LMod /\ ( Q e. K /\ R e. K /\ X e. V ) ) ->
                       ( ( Q .X. R ) .x. X ) = ( Q .x. ( R .x. X ) ) ) $=
       ( wcel co wceq wa cfv eqid clmod w3a cplusg cur lmodlema simprld anabsan2
@@ -286032,8 +286345,9 @@ $)
         eqid frlmelbas mpbid simpld ) DFKZGAKZLZGEDMNKZGBOPZQRZUKUJULUNLZUIUJSU
         JBTKUIUIUJUOUAABCDGHJUBUIUJUCABCDETFGUMHIUMUEJUFUDUGUH $.
 
-      $( Elements of the free module are functions.  (Contributed by Stefan
-         O'Rear, 3-Feb-2015.) $)
+      $( Elements of the free module are functions.  (They map an index to the
+         coordinate at that index).  (Contributed by Stefan O'Rear,
+         3-Feb-2015.) $)
       frlmbasf $p |- ( ( I e. W /\ X e. B ) -> X : I --> N ) $=
         ( wcel wa cmap co wf frlmbasmap wb cvv cbs fvexi elmapg adantr mpbid
         mpan ) DFKZGAKZLGEDMNKZDEGOZABCDEFGHIJPUEUGUHQZUFERKUEUIEBSITEDGRFUAUDU
@@ -351247,7 +351561,7 @@ $)
       ( cclm wcel clmod co clmlmod lmodvscl syl3an1 ) FLMFNMADMGEMAGBOEMFPABCDE
       FGHIJKQR $.
 
-    $( Associative law for scalar product.  Analogue of ~ lmodvsass .
+    $( Scalar multiplication is a semigroup action.  Analogue of ~ lmodvsass .
        (Contributed by Mario Carneiro, 16-Oct-2015.) $)
     clmvsass $p |- ( ( W e. CMod /\ ( Q e. K /\ R e. K /\ X e. V ) ) ->
                       ( ( Q x. R ) .x. X ) = ( Q .x. ( R .x. X ) ) ) $=
@@ -380420,54 +380734,6 @@ $)
   $}
 
   ${
-    $d k x z A $.  $d k x z F $.  $d k x z N $.  $d k x z ph $.  $d k x z S $.
-    plycjOLD.1 $e |- N = ( deg ` F ) $.
-    plycjOLD.2 $e |- G = ( ( * o. F ) o. * ) $.
-
-    ${
-      plycjOLD.3 $e |- ( ( ph /\ x e. S ) -> ( * ` x ) e. S ) $.
-      plycjOLD.4 $e |- ( ph -> F e. ( Poly ` S ) ) $.
-      $( Obsolete version of ~ plycj as of 22-Sep-2025.  The double conjugation
-         of a polynomial is a polynomial.  (The single conjugation is not
-         because our definition of polynomial includes only holomorphic
-         functions, i.e. no dependence on ` ( * `` z ) ` independently of
-         ` z ` .)  (Contributed by Mario Carneiro, 24-Jul-2014.)
-         (New usage is discouraged.)  (Proof modification is discouraged.) $)
-      plycjOLD $p |- ( ph -> G e. ( Poly ` S ) ) $=
-        ( vz vk cc0 cfv cc ccj wcel wceq syl cn0 csn cun cply co ccoe ccom cexp
-        cfz cv cmul csu cmpt eqid plycjlem wss plybss 0cnd snssd unssd eqeltrid
-        cdgr dgrcl wa wf coef elfznn0 fvco3 ffvelcdm wi wo wral ralrimiva fveq2
-        syl2an eleq1d rspccv elsni fveq2d cj0 eqtrdi fvex elsn a1i orim12d elun
-        sylibr 3imtr4g adantr mpd eqeltrd elplyd plyun0 eleqtrdi ) AECMUAZUBZUC
-        NZCUCNZAEKOMFUHUDZLUIZPDUENZUFNZKUIWSUGUDUJUDLUKULZWPADWQQZEXBRJKWTCLDE
-        FGHWTUMZUNSAKXAWOLFACWNOAXCCOUOJCDUPSAMOAUQURUSAFDVANZTGAXCXETQJCDVBSUT
-        AWSWRQZVCZXAWSWTNZPNZWOATWOWTVDZWSTQZXAXIRXFAXCXJJWTCDXDVESZWSFVFZTWOWS
-        PWTVGVNXGXHWOQZXIWOQZAXJXKXNXFXLXMTWOWSWTVHVNAXNXOVIXFAXHCQZXHWNQZVJXIC
-        QZXIWNQZVJXNXOAXPXRXQXSABUIZPNZCQZBCVKXPXRVIAYBBCIVLYBXRBXHCXTXHRYAXICX
-        TXHPVMVOVPSXQXSVIAXQXIMRXSXQXIMPNMXQXHMPXHMVQVRVSVTXIMXHPWAWBWFWCWDXHCW
-        NWEXICWNWEWGWHWIWJWKWJCWLWM $.
-    $}
-
-    coecjOLD.3 $e |- A = ( coeff ` F ) $.
-    $( Obsolete version of ~ coecj as of 22-Sep-2025.  Double conjugation of a
-       polynomial causes the coefficients to be conjugated.  (Contributed by
-       Mario Carneiro, 24-Jul-2014.)  (New usage is discouraged.)
-       (Proof modification is discouraged.) $)
-    coecjOLD $p |- ( F e. ( Poly ` S ) -> ( coeff ` G ) = ( * o. A ) ) $=
-      ( vz vk cfv wcel ccj cc cn0 wf cc0 wceq wb syl2anc vx cply ccom cv adantl
-      cjcl plyssc sseli plycjOLD cdgr dgrcl eqeltrid cjf coef3 sylancr c1 caddc
-      fco co cuz cima csn wne cle wbr wi wral wa fvco3 sylan cj0 eqcomi eqeq12d
-      a1i ffvelcdmda 0cnd cj11 bitrd necon3bid dgrub2 plyco0 r19.21bi ralrimiva
-      mpbid sylbid mpbird plycjlem coeeq ) CBUBKZLZIMAUCZNJDEWJUANCDEFGUAUDZNLW
-      LMKNLWJWLUFUEWINUBKCBUGUHUIWJECUJKOFBCUKULZWJNNMPONAPZONWKPZUMABCHUNZONNM
-      AURUOZWJWKEUPUQUSUTKZVAQVBZRZJUDZWKKZQVCZXAEVDVEZVFZJOVGZWJXEJOWJXAOLZVHZ
-      XCXAAKZQVCZXDXHXBQXIQXHXBQRXIMKZQMKZRZXIQRZXHXBXKQXLWJWNXGXBXKRWPONXAMAVI
-      VJQXLRXHXLQVKVLVNVMXHXINLQNLXMXNSWJONXAAWPVOXHVPXIQVQTVRVSWJXJXDVFZJOWJAW
-      RVAWSRZXOJOVGZABCEHFVTWJEOLZWNXPXQSWMWPAJEWATWDWBWEWCWJXRWOWTXFSWMWQWKJEW
-      ATWFIABJCDEFGHWGWH $.
-  $}
-
-  ${
     $d x A $.  $d x F $.  $d x G $.  $d x S $.  $d x V $.
     $( A polynomial with real coefficients distributes under conjugation.
        (Contributed by Mario Carneiro, 24-Jul-2014.) $)
@@ -409386,7 +409652,7 @@ $)
       YGXNVLEZXOVLEYCYMRYHYFUUQXMXNWTUOXOWTXNXOXAXCXDUIXEXFXGXHXHXI $.
 
     $( Lemma for ~ 2sqreultb .  (Contributed by AV, 10-Jun-2023.)  The prime
-       needs not be odd, as observed by WL. (Revised by AV, 18-Jun-2023.) $)
+       need not be odd, as observed by WL. (Revised by AV, 18-Jun-2023.) $)
     2sqreultblem $p |- ( P e. Prime
                       -> ( ( P mod 4 ) = 1 <-> E! a e. NN0 E! b e. NN0
                               ( a < b /\ ( ( a ^ 2 ) + ( b ^ 2 ) ) = P ) ) ) $=
@@ -409480,7 +409746,7 @@ $)
       LEZXNVLEYBYLRYGYEUUPXLXMWTUOXNWTXMXNXAXBXCUHXDXEXFXGXGXH $.
 
     $( Lemma for ~ 2sqreunnltb .  (Contributed by AV, 11-Jun-2023.)  The prime
-       needs not be odd, as observed by WL. (Revised by AV, 18-Jun-2023.) $)
+       need not be odd, as observed by WL. (Revised by AV, 18-Jun-2023.) $)
     2sqreunnltblem $p |- ( P e. Prime -> ( ( P mod 4 ) = 1
                                         <-> E! a e. NN E! b e. NN ( a < b
                                       /\ ( ( a ^ 2 ) + ( b ^ 2 ) ) = P ) ) ) $=
@@ -409576,7 +409842,7 @@ $)
 
     $( There exists a unique decomposition of a prime as a sum of squares of
        two different nonnegative integers iff ` P == 1 ` (mod 4).  (Contributed
-       by AV, 10-Jun-2023.)  The prime needs not be odd, as observed by WL.
+       by AV, 10-Jun-2023.)  The prime need not be odd, as observed by WL.
        (Revised by AV, 25-Jun-2023.) $)
     2sqreultb $p |- ( P e. Prime -> ( ( P mod 4 ) = 1
         <-> ( E! a e. NN0 E. b e. NN0 ph /\ E! b e. NN0 E. a e. NN0 ph ) ) ) $=
@@ -409599,7 +409865,7 @@ $)
 
     $( There exists a unique decomposition of a prime as a sum of squares of
        two different positive integers iff the prime is of the form
-       ` 4 k + 1 ` .  (Contributed by AV, 11-Jun-2023.)  The prime needs not be
+       ` 4 k + 1 ` .  (Contributed by AV, 11-Jun-2023.)  The prime need not be
        odd, as observed by WL. (Revised by AV, 25-Jun-2023.) $)
     2sqreunnltb $p |- ( P e. Prime -> ( ( P mod 4 ) = 1
             <-> ( E! a e. NN E. b e. NN ph /\ E! b e. NN E. a e. NN ph ) ) ) $=
@@ -435984,9 +436250,11 @@ $)
   $( Declare the syntax for the Line function. $)
   clng $a class LineG $.
 
-  $( Define the Interval (segment) index extractor for Tarski geometries.
-     (Contributed by Thierry Arnoux, 24-Aug-2017.)  Use its index-independent
-     form ~ itvid instead.  (New usage is discouraged.) $)
+  $( Define the Interval (segment) index extractor for Tarski geometries.  The
+     interval is closed ( ~ tgbtwntriv1 and ~ tgbtwntriv2 ).  Also known as the
+     betweenness relation.  (Contributed by Thierry Arnoux, 24-Aug-2017.)  Use
+     its index-independent form ~ itvid instead.
+     (New usage is discouraged.) $)
   df-itv $a |- Itv = Slot ; 1 6 $.
 
   $( Define the line index extractor for geometries.  (Contributed by Thierry
@@ -440413,7 +440681,7 @@ $)
       ${
         $d t x y z .- $.  $d t x y z A $.  $d t x y z I $.  $d t x y z M $.
         $d t x y z P $.  $d t x y z ph $.  $d t x y z X $.  $d t x y z Y $.
-        $( The point inversion function is an isometry, i.e. it is conserves
+        $( The point inversion function is an isometry, i.e., it preserves
            congruence.  Because it is also a bijection, it is also a motion.
            Theorem 7.13 of [Schwabhauser] p. 50.  (Contributed by Thierry
            Arnoux, 6-Jun-2019.) $)
@@ -453734,7 +454002,7 @@ $(
     ~ https://en.wikipedia.org/wiki/Hypergraph (18-Jan-2020).  This is how a
     "hypergraph" is defined in Section I.1 in [Bollobas] p. 7 or the definition
     in section 1.10 in [Diestel] p. 27.  A simple hypergraph has at most one
-    edge between the same vertices, hence a pseudograph needs not be a simple
+    edge between the same vertices, hence a pseudograph need not be a simple
     hypergraph.<br>
     According to [Berge] p. 1, "A <i>simple hypergraph</i> (or "Sperner
     family") is a hypergraph H = { E_1, E_2, ..., E_m } such that E_i C_ E_j
@@ -457990,7 +458258,7 @@ $)
          called a _spanning subgraph_ (see section I.1 in [Bollobas] p. 2 and
          section 1.1 in [Diestel] p. 4).  Formally, the edges are "removed" by
          restricting the edge function of the original graph by an arbitrary
-         class (which actually needs not to be a subset of the domain of the
+         class (which actually need not to be a subset of the domain of the
          edge function).  (Contributed by AV, 18-Nov-2020.)  (Proof shortened
          by AV, 21-Nov-2020.) $)
       uhgrspansubgr $p |- ( ph -> S SubGraph G ) $=
@@ -462331,7 +462599,7 @@ $(
     trail containing all edges [of the graph]" (see definition in [Bollobas]
     p. 16), i.e., f(i) =/= f(j) if  i =/= j and for all edges e(x) there is an
     1 <= i <= n with e(x) = e(f(i)).  Note, however, that an Eulerian path
-    needs not be a path.
+    need not be a path.
 
   * Eulerian circuit: An _Eulerian circuit_ (called _Euler tour_ in the
     definition in [Diestel] p. 22) is "a circuit in a graph containing all the
@@ -465789,27 +466057,27 @@ $)
     sylib ffn anim12i 3adant3 fnsnfv eqtr4d elfz1end biimpi fvresd wfun funresd
     0elfz ffun fz1ssfz0 sseqtrrid ssdmres eleqtrrd syl2anc eqeltrrd wb 3ad2ant3
     fvelrn eleq1 mpbird snssd eqsstrd 3exp com3l sylbir expcom com14 sylc sylbi
-    imp impcom imadifssran fveq2d wf1 cyclispth pthdifv cfn adantl fnfi syl2anr
-    fzfid 1eluzge0 fzss1 mp1i sseqtrrd 3jca hashres cvv ovexd hashf1rn sylancom
-    adantr hashfz1 3eqtr3d syl2anc2 ) DBEFZUAGZBACUBFGZHZAUCZEFZADYRIJZUDZUCZEF
-    ZYRUUAAAUEZUUDKZUFZUUFLZUUCUUGMYTYSUUKYTBACUGFGZNAFZYRAFZMZHYSUUKOZABCUHUUL
-    UUOUUPUULBACUOFGZUUOUUPOZABCUIZUUQNYRIJZCUJFZAUKZYRULPZUURABCUVAUVAUMUNZABC
-    UPZYSUVCUUOUVBUUKUVCYSUUOUVBUUKOOZUVCYSHYRUQPZUVFYRURUVBUVGUUOUUKUVBUVGUUOU
-    UKUVBUVGUUOUSZUUJUUMUTZUUFUVHUUJANUTZUFZUVIUVHUUIUVJAUVHUUIUUTUUDKZUVJUVHUU
-    HUUTUUDUVBUVGUUHUUTMZUUOUUTUVAAVAZQVBUVGUVBUVLUVJMUUOUVGUVLUVJUUDVCZUUDKZUV
-    JUVGUUTUVOUUDUVGUVCUUTUVOMYRVDZYRVERVBUVGUVJUUDVHZTMUVPUVJMUVGUVRUVJNDVFJZY
-    RIJZVHZTUUDUVTUVJDUVSYRIVGVIVJUVGYRNVKFZPZUWATMUVGUVCUWCUVQYRVLVSNYRVMRVNUV
-    JUUDVORSVPSVQUVHAUUTVRZNUUTPZHZUVIUVKMUVBUVGUWFUUOUVBUWDUVGUWEUUTUVAAVTZUVG
-    UVCUWEUVQYRWJRWAWBUUTNAWCRWDUVHUUMUUFUVHUUMUUFPZUUNUUFPZUVHYRUUEFZUUNUUFUVH
-    YRUUDAUVGUVBYRUUDPZUUOUVGUWKYRWEWFVPZWGUVHUUEWHZYRUUEUEZPUWJUUFPUVBUVGUWMUU
-    OUVBUUDAUUTUVAAWKZWIQUVHYRUUDUWNUWLUVHUUDUUHLZUWNUUDMUVBUVGUWPUUOUVBUUTUUDU
-    UHYRWLUVNWMQUUDAWNVSWOYRUUEWTWPWQUUOUVBUWHUWIWRUVGUUMUUNUUFXAWSXBXCXDXEXFXG
-    XHXIXJRXLXKXMUUKUUBUUFEUUDAXNXORYTUUGYRMZYSYTUULUUDUVAUUEXPZUWQABCXQABCXRUU
-    LUWRHZUUEEFZUUDEFZUUGYRUWSAWHZAXSPZUWPUSZUWTUXAMUULUXDUWRUULUUQUXDUUSUUQUVC
-    UVBUXDUVEUVDUVCUVBHZUXBUXCUWPUVBUXBUVCUWOXTUVBUWDUUTXSPUXCUVCUWGUVCNYRYCUUT
-    AYAYBUXEUUDUUTUUHDUWBPUUDUUTLUXEYDDNYRYEYFUVBUVMUVCUVNXTYGYHWPRYNAUUDYIRUUL
-    UWRUUDYJPUWTUUGMUWSDYRIYKUUDUVAUUEYJYLYMUULUXAYRMZUWRUULUVCUXFUULUUQUVCUUSU
-    VERYRYORYNYPYQXTS $.
+    imp impcom imadifssrn fveq2d wf1 cyclispth pthdifv cfn adantl fzfid syl2anr
+    fnfi 1eluzge0 fzss1 mp1i sseqtrrd 3jca adantr hashres cvv hashf1rn sylancom
+    ovexd hashfz1 3eqtr3d syl2anc2 ) DBEFZUAGZBACUBFGZHZAUCZEFZADYRIJZUDZUCZEFZ
+    YRUUAAAUEZUUDKZUFZUUFLZUUCUUGMYTYSUUKYTBACUGFGZNAFZYRAFZMZHYSUUKOZABCUHUULU
+    UOUUPUULBACUOFGZUUOUUPOZABCUIZUUQNYRIJZCUJFZAUKZYRULPZUURABCUVAUVAUMUNZABCU
+    PZYSUVCUUOUVBUUKUVCYSUUOUVBUUKOOZUVCYSHYRUQPZUVFYRURUVBUVGUUOUUKUVBUVGUUOUU
+    KUVBUVGUUOUSZUUJUUMUTZUUFUVHUUJANUTZUFZUVIUVHUUIUVJAUVHUUIUUTUUDKZUVJUVHUUH
+    UUTUUDUVBUVGUUHUUTMZUUOUUTUVAAVAZQVBUVGUVBUVLUVJMUUOUVGUVLUVJUUDVCZUUDKZUVJ
+    UVGUUTUVOUUDUVGUVCUUTUVOMYRVDZYRVERVBUVGUVJUUDVHZTMUVPUVJMUVGUVRUVJNDVFJZYR
+    IJZVHZTUUDUVTUVJDUVSYRIVGVIVJUVGYRNVKFZPZUWATMUVGUVCUWCUVQYRVLVSNYRVMRVNUVJ
+    UUDVORSVPSVQUVHAUUTVRZNUUTPZHZUVIUVKMUVBUVGUWFUUOUVBUWDUVGUWEUUTUVAAVTZUVGU
+    VCUWEUVQYRWJRWAWBUUTNAWCRWDUVHUUMUUFUVHUUMUUFPZUUNUUFPZUVHYRUUEFZUUNUUFUVHY
+    RUUDAUVGUVBYRUUDPZUUOUVGUWKYRWEWFVPZWGUVHUUEWHZYRUUEUEZPUWJUUFPUVBUVGUWMUUO
+    UVBUUDAUUTUVAAWKZWIQUVHYRUUDUWNUWLUVHUUDUUHLZUWNUUDMUVBUVGUWPUUOUVBUUTUUDUU
+    HYRWLUVNWMQUUDAWNVSWOYRUUEWTWPWQUUOUVBUWHUWIWRUVGUUMUUNUUFXAWSXBXCXDXEXFXGX
+    HXIXJRXLXKXMUUKUUBUUFEUUDAXNXORYTUUGYRMZYSYTUULUUDUVAUUEXPZUWQABCXQABCXRUUL
+    UWRHZUUEEFZUUDEFZUUGYRUWSAWHZAXSPZUWPUSZUWTUXAMUULUXDUWRUULUUQUXDUUSUUQUVCU
+    VBUXDUVEUVDUVCUVBHZUXBUXCUWPUVBUXBUVCUWOXTUVBUWDUUTXSPUXCUVCUWGUVCNYRYAUUTA
+    YCYBUXEUUDUUTUUHDUWBPUUDUUTLUXEYDDNYRYEYFUVBUVMUVCUVNXTYGYHWPRYIAUUDYJRUULU
+    WRUUDYKPUWTUUGMUWSDYRIYNUUDUVAUUEYKYLYMUULUXAYRMZUWRUULUVCUXFUULUUQUVCUUSUV
+    ERYRYORYIYPYQXTS $.
 
   $( A (non-trivial) cycle is not a simple path.  (Contributed by Alexander van
      der Vekens, 30-Oct-2017.)  (Revised by AV, 31-Jan-2021.)  (Proof shortened
@@ -476667,7 +476935,7 @@ $)
        required since for ` N = 2 ` : ` F = ( X ( ClWWalksNOn `` G ) 0 ) `
        ` = (/) ` (see ~ clwwlk0on0 stating that a closed walk of length 0 is
        not represented as word), which would result in an empty set on the
-       right hand side, but ` ( X C N ) ` needs not be empty, see ~ 2clwwlk2 .
+       right hand side, but ` ( X C N ) ` need not be empty, see ~ 2clwwlk2 .
        (Contributed by Alexander van der Vekens, 18-Sep-2018.)  (Revised by AV,
        29-May-2021.)  (Revised by AV, 31-Oct-2022.) $)
     extwwlkfab $p |- ( ( G e. USGraph /\ X e. V /\ N e. ( ZZ>= ` 3 ) )
@@ -476886,7 +477154,7 @@ $)
        each of v's neighbors) completing each of the f(n-2) walks from v=v(0)
        to v(n-2)=v.  This theorem holds even for k=0, but not for n=2, since
        ` F = (/) ` , but ` ( X C 2 ) ` , the set of closed walks with length 2
-       on ` X ` , see ~ 2clwwlk2 , needs not be ` (/) ` in this case.  This is
+       on ` X ` , see ~ 2clwwlk2 , need not be ` (/) ` in this case.  This is
        because of the special definition of ` F ` and the usage of words to
        represent (closed) walks, and does not contradict Huneke's statement,
        which would read "the number of closed 2-walks v(0) v(1) v(2) from v =
@@ -482752,7 +483020,7 @@ $)
       QDSUVAYCWLYIWSEUVBWIWEXQDSZVPVEUVAYLXCYMXDXBWEXQDSUVAYMWHWSXQOXDUVAYIWSWH
       XQUVCVDWHWSXQDSVQVEVITVITVITVRVLVSABCKLVTWA $.
 
-    $( Functionality of th scalar product of a complex vector space.
+    $( Functionality of the scalar product of a complex vector space.
        (Contributed by NM, 3-Nov-2006.)  (New usage is discouraged.) $)
     vcsm $p |- ( W e. CVecOLD -> S : ( CC X. X ) --> X ) $=
       ( vx vy vz cvc wcel cablo cc cxp cv co wceq wral wa wf cmul vciOLD simp2d
@@ -488856,7 +489124,7 @@ htmldef ")" as "<IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=' )' TITLE=')'>";
 htmldef "->" as
     " <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT=' -&gt;' TITLE='-&gt;'> ";
   althtmldef "->" as " &rarr; ";
-  latexdef "->" as " \rightarrow ";
+  latexdef "->" as "\rightarrow";
 htmldef "-." as
     "<IMG SRC='lnot.gif' WIDTH=10 HEIGHT=19 ALT=' -.' TITLE='-.'> ";
   althtmldef "-." as '&not; ';
@@ -488873,14 +489141,12 @@ htmldef "|-" as
     /* Without sans-serif, way too big in FF3 */
     /* 2-Jan-2016 reverted sans-serif */
   latexdef "|-" as "\vdash";
-htmldef "&" as
-    " <IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'> ";
+htmldef "&" as " <IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'> ";
   althtmldef "&" as " &amp; ";
   latexdef "&" as "\mathrel{\&}";
-htmldef "=>" as
-  " <IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19 ALT='=&gt;'> ";
+htmldef "=>" as " <IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19 ALT='=&gt;'> ";
   althtmldef "=>" as " &rArr; ";
-  latexdef "=>" as " \Rightarrow ";
+  latexdef "=>" as "\Rightarrow";
 htmldef "ph" as
     "<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>";
   /* althtmldef "ph" as '<FONT COLOR="#0000FF">&#x1D711;</SPAN>'; */
@@ -488963,13 +489229,13 @@ htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
   althtmldef "\/_" as " &#8891; ";
     /* 2-Jan-2016 reverted sans-serif */
-  latexdef "\/_" as "\mathrel{\underline{\vee}}";
+  latexdef "\/_" as "\veebar";
 htmldef "-\/" as
     " <IMG SRC='vee.gif' WIDTH=9 HEIGHT=19 ALT=' -\/' TITLE='-\/' " +
     " STYLE='text-decoration:overline;'> ";
   althtmldef "-\/" as
     ' <span>&#8893;</span> ';
-  latexdef "-\/" as "\mathrel{\overline{\vee}}";
+  latexdef "-\/" as "\mathbin{\overline{\vee}}";
 htmldef "T." as
     " <IMG SRC='top.gif' WIDTH=11 HEIGHT=19 ALT='T.' TITLE='T.'> ";
   althtmldef "T." as '&#x22A4;';
@@ -489171,12 +489437,12 @@ htmldef ".+^" as
   althtmldef ".+^" as
     ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
     '&#x2A23;</SPAN> ';       /* &plusacir; */
-  latexdef ".+^" as "\mathbin{\hat{+}}";
+  latexdef ".+^" as "\hat{+}";
 htmldef ".+b" as
     " <IMG SRC='_.plusb.gif' WIDTH=14 HEIGHT=19 ALT=' .+b' TITLE='.+b'> ";
   althtmldef ".+b" as
     ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
-    '&#x271A;</SPAN> ';
+    '<b>+</b></SPAN> ';
   latexdef ".+b" as "\pmb{+}";
 htmldef ".(+)" as
     " <IMG SRC='_.oplus.gif' WIDTH=13 HEIGHT=19 ALT=' .(+)' TITLE='.(+)'> ";
@@ -489225,8 +489491,8 @@ htmldef ".0b" as
     " <IMG SRC='_.bf0.gif' WIDTH=9 HEIGHT=19 ALT=' .0b' TITLE='.0b'> ";
   althtmldef ".0b" as
     ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
-    '&#x1D7CE</SPAN> ';
-  latexdef ".0b" as "\pmb{0}";
+    '&#x1D7CE;</SPAN> ';
+  latexdef ".0b" as "\mathbf{0}";
 htmldef "A" as "<IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT=' A' TITLE='A'>";
   althtmldef "A" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D434;</SPAN>';
   latexdef "A" as "A";
@@ -489510,14 +489776,14 @@ htmldef "Or" as
 htmldef "Fr" as
     " <IMG SRC='_fr.gif' WIDTH=15 HEIGHT=19 ALT=' Fr' TITLE='Fr'> ";
   althtmldef "Fr" as ' Fr ';
-  latexdef "Fr" as "\mathrel{\operatorname{Fr}}";
+  latexdef "Fr" as "\mathrel{\mathrm{Fr}}";
 htmldef "Se" as ' Se ';
   althtmldef "Se" as ' Se ';
-  latexdef "Se" as "\mathrel{\operatorname{Se}}";
+  latexdef "Se" as "\mathrel{\mathrm{Se}}";
 htmldef "We" as
     " <IMG SRC='_we.gif' WIDTH=21 HEIGHT=19 ALT=' We' TITLE='We'> ";
   althtmldef "We" as ' We ';
-  latexdef "We" as "\mathrm{We}";
+  latexdef "We" as "\mathrel{\mathrm{We}}";
 htmldef "Ord" as
     "<IMG SRC='_ord.gif' WIDTH=26 HEIGHT=19 ALT=' Ord' TITLE='Ord'> ";
   althtmldef "Ord" as 'Ord ';
@@ -489537,7 +489803,7 @@ htmldef "_om" as
     "<IMG SRC='omega.gif' WIDTH=11 HEIGHT=19 ALT=' om' TITLE='om'>";
   /*althtmldef "_om" as '&omega;';*/
   althtmldef "_om" as '&#x3C9;';  /* upright lowercase Greek omega */
-  latexdef "_om" as "\mathrm{\omega}";
+  latexdef "_om" as "\upomega";
 htmldef "X." as
     " <IMG SRC='times.gif' WIDTH=9 HEIGHT=19 ALT=' X.' TITLE='X.'> ";
   althtmldef "X." as ' &times; ';
@@ -489654,7 +489920,7 @@ htmldef "uncurry" as "uncurry ";
 htmldef "[C.]" as
     " [<IMG SRC='subsetneq.gif' WIDTH=12 HEIGHT=19 ALT=' C.' TITLE='C.'>] ";
   althtmldef "[C.]" as " [<B>&#x228a;</B>] ";
-  latexdef "[C.]" as "\mathrm{[C.]}";
+  latexdef "[C.]" as "\mathrel{[\subsetneq]}";
 /*
 htmldef "iota" as
     "<IMG SRC='iota.gif' WIDTH=6 HEIGHT=19 ALT=' iota' TITLE='iota'>";
@@ -489688,7 +489954,7 @@ htmldef "rec" as
   latexdef "rec" as "\mathrm{rec}";
 htmldef "seqom" as "seqom ";
   althtmldef "seqom" as "seq<SUB>&#x3C9;</SUB>";  /* upright lowercase omega */
-  latexdef "seqom" as "\operatorname{seq_\omega}";
+  latexdef "seqom" as "\operatorname{seq_\upomega}";
 htmldef "1o" as "<IMG SRC='_1o.gif' WIDTH=13 HEIGHT=19 ALT=' 1o' TITLE='1o'>";
   althtmldef "1o" as '1<SUB>o</SUB>';
   latexdef "1o" as "1_\mathrm{o}";
@@ -489716,7 +489982,7 @@ htmldef "^o" as
 htmldef "Er" as
     " <IMG SRC='_er.gif' WIDTH=16 HEIGHT=19 ALT=' Er' TITLE='Er'> ";
   althtmldef "Er" as ' Er ';
-  latexdef "Er" as "\mathrel{Er}";
+  latexdef "Er" as "\mathrel{\mathrm{Er}}";
 htmldef "/." as
     "<IMG SRC='diagup.gif' WIDTH=14 HEIGHT=19 ALT=' /.' TITLE='/.'>";
   althtmldef "/." as ' <B>/</B> ';
@@ -489827,25 +490093,25 @@ htmldef "CHOICE" as "<SMALL>CHOICE</SMALL>";
   latexdef "CHOICE" as "\mathrm{CHOICE}";
 htmldef "Fin1a" as "Fin<SUP>Ia</SUP>";
   althtmldef "Fin1a" as "Fin<SUP>Ia</SUP>";
-  latexdef "Fin1a" as "\mathrm{Fin1a}";
+  latexdef "Fin1a" as "\mathrm{Fin^{Ia}}";
 htmldef "Fin2" as "Fin<SUP>II</SUP>";
   althtmldef "Fin2" as "Fin<SUP>II</SUP>";
-  latexdef "Fin2" as "\mathrm{Fin2}";
+  latexdef "Fin2" as "\mathrm{Fin^{II}}";
 htmldef "Fin3" as "Fin<SUP>III</SUP>";
   althtmldef "Fin3" as "Fin<SUP>III</SUP>";
-  latexdef "Fin3" as "\mathrm{Fin3}";
+  latexdef "Fin3" as "\mathrm{Fin^{III}}";
 htmldef "Fin4" as "Fin<SUP>IV</SUP>";
   althtmldef "Fin4" as "Fin<SUP>IV</SUP>";
-  latexdef "Fin4" as "\mathrm{Fin4}";
+  latexdef "Fin4" as "\mathrm{Fin^{IV}}";
 htmldef "Fin5" as "Fin<SUP>V</SUP>";
   althtmldef "Fin5" as "Fin<SUP>V</SUP>";
-  latexdef "Fin5" as "\mathrm{Fin5}";
+  latexdef "Fin5" as "\mathrm{Fin^{V}}";
 htmldef "Fin6" as "Fin<SUP>VI</SUP>";
   althtmldef "Fin6" as "Fin<SUP>VI</SUP>";
-  latexdef "Fin6" as "\mathrm{Fin6}";
+  latexdef "Fin6" as "\mathrm{Fin^{VI}}";
 htmldef "Fin7" as "Fin<SUP>VII</SUP>";
   althtmldef "Fin7" as "Fin<SUP>VII</SUP>";
-  latexdef "Fin7" as "\mathrm{Fin7}";
+  latexdef "Fin7" as "\mathrm{Fin^{VII}}";
 htmldef "GCH" as "GCH";
   althtmldef "GCH" as "GCH";
   latexdef "GCH" as "\mathrm{GCH}";
@@ -489859,7 +490125,7 @@ htmldef "InaccW" as
     "<IMG SRC='_inacc.gif' WIDTH=34 HEIGHT=19 ALT=' Inacc' TITLE='Inacc'>" +
     "<IMG SRC='subw.gif' WIDTH=7 HEIGHT=19 ALT='W' TITLE='W'>";
   althtmldef "InaccW" as "Inacc<SUB>w</SUB>";
-  latexdef "InaccW" as "\mathrm{Inacc}_w";
+  latexdef "InaccW" as "\mathrm{Inacc_w}";
 htmldef "Inacc" as
     "<IMG SRC='_inacc.gif' WIDTH=34 HEIGHT=19 ALT=' Inacc' TITLE='Inacc'>";
   althtmldef "Inacc" as "Inacc";
@@ -489966,7 +490232,7 @@ htmldef "1R" as "<IMG SRC='_1cr.gif' WIDTH=16 HEIGHT=19 ALT=' 1R' TITLE='1R'>";
 htmldef "-1R" as
     "<IMG SRC='_m1r.gif' WIDTH=22 HEIGHT=19 ALT=' -1R' TITLE='-1R'>";
   althtmldef "-1R" as '-1<I><SUB><B>R</B></SUB></I>';
-  latexdef "-1R" as "-1_\mathcal{R}";
+  latexdef "-1R" as "\mathord{-}1_\mathcal{R}";
 htmldef "+R" as
     " <IMG SRC='_plr.gif' WIDTH=23 HEIGHT=19 ALT=' +R' TITLE='+R'> ";
   althtmldef "+R" as ' +<I><SUB><B>R</B></SUB></I> ';
@@ -490037,14 +490303,12 @@ htmldef "-" as
   althtmldef "-" as ' &minus; ';
   latexdef "-" as "-";
 htmldef "-u" as
-    "<IMG SRC='shortminus.gif' WIDTH=8 HEIGHT=19 ALT=' -u' TITLE='-u'>";
-    /* use standard minus sign */
-  althtmldef "-u" as '-';
-  latexdef "-u" as "\textrm{-}"; /* short minus */
-    /*latexdef "-u" as "-_u";*/
+    " <IMG SRC='shortminus.gif' WIDTH=8 HEIGHT=19 ALT=' -u' TITLE='-u'>";
+  althtmldef "-u" as ' -';
+  latexdef "-u" as "\mathord{-}";
 htmldef "_Ind" as "&#x1D7ED;";
   althtmldef "_Ind" as "&#x1D7ED;";
-  latexdef "_Ind" as "\pmb{1}";
+  latexdef "_Ind" as "\mathbf{1}";
 htmldef "NN" as "<IMG SRC='bbn.gif' WIDTH=12 HEIGHT=19 ALT=' NN' TITLE='NN'>";
   althtmldef "NN" as '&#8469;'; /* &Nopf; */
     /* 2-Jan-2016 reverted sans-serif */
@@ -490104,16 +490368,16 @@ htmldef "ZZ>=" as "<IMG SRC='_bbzge.gif' WIDTH=20 HEIGHT=19 " +
   latexdef "ZZ>=" as "\mathbb{Z}_\ge";
 htmldef "-e" as " <IMG SRC='shortminus.gif' WIDTH=8 HEIGHT=19 ALT=' -' " +
     "TITLE='-'><IMG SRC='sube.gif' WIDTH=6 HEIGHT=19 ALT='e' TITLE='e'>";
-  althtmldef "-e" as "-<SUB>&#x1D452;</SUB>";
-  latexdef "-e" as "\textrm{-}_e";
+  althtmldef "-e" as " -<SUB>e</SUB>";
+  latexdef "-e" as "\mathord{-_\mathrm{e}}";
 htmldef "+e" as "<IMG SRC='plus.gif' WIDTH=13 HEIGHT=19 ALT=' +' TITLE='+'>" +
     "<IMG SRC='sube.gif' WIDTH=6 HEIGHT=19 ALT='e' TITLE='e'>";
-  althtmldef "+e" as " +<SUB>&#x1D452;</SUB> ";
-  latexdef "+e" as "+_e";
+  althtmldef "+e" as " +<SUB>e</SUB> ";
+  latexdef "+e" as "+_\mathrm{e}";
 htmldef "*e" as "<IMG SRC='cdot.gif' WIDTH=4 HEIGHT=19 ALT=' x' TITLE='x'>" +
     "<IMG SRC='sube.gif' WIDTH=6 HEIGHT=19 ALT='e' TITLE='e'>";
   althtmldef "*e" as  " &middot;<SUB>e</SUB> ";
-  latexdef "*e" as "\cdot_e";
+  latexdef "*e" as "\cdot_\mathrm{e}";
 htmldef "(,)" as
     "<IMG SRC='_ioo.gif' WIDTH=13 HEIGHT=19 ALT=' (,)' TITLE='(,)'>";
   althtmldef "(,)" as "(,)";
@@ -490158,7 +490422,7 @@ htmldef "|^" as "&#8968;";
 htmldef "mod" as " <IMG SRC='_mod.gif' WIDTH=29 HEIGHT=19 ALT=' mod' " +
     "TITLE='mod'> ";
   althtmldef "mod" as ' mod ';
-  latexdef "mod" as "\mathbin{\operatorname{mod}}";
+  latexdef "mod" as "\mathbin{\mathrm{mod}}";
 htmldef "==" as " <IMG SRC='equiv.gif' WIDTH=12 HEIGHT=19 ALT=' ==' " +
     "TITLE='=='> ";
   althtmldef "==" as "&equiv;"; /* 2263 */
@@ -490191,14 +490455,14 @@ htmldef "!" as "<IMG SRC='bang.gif' WIDTH=3 HEIGHT=19 ALT=' !' TITLE='!'>";
 htmldef "_C" as
     " <IMG SRC='rmcc.gif' WIDTH=10 HEIGHT=19 ALT=' _C' TITLE='_C'> ";
   althtmldef "_C" as 'C';
-  latexdef "_C" as "\mathbin{\operatorname{C}}";
+  latexdef "_C" as "\mathbin{\mathrm{C}}";
 htmldef "#" as "&#x266f";
   althtmldef "#" as "&#x266f";
   latexdef "#" as "\sharp";
 htmldef "shift" as " <IMG SRC='_shift.gif' WIDTH=30 HEIGHT=19 ALT=' shift' " +
     "TITLE='shift'> ";
   althtmldef "shift" as ' shift ';
-  latexdef "shift" as "\mathbin{\operatorname{shift}}";
+  latexdef "shift" as "\mathbin{\mathrm{shift}}";
 htmldef "Re" as "<IMG SRC='re.gif' WIDTH=12 HEIGHT=19 ALT=' Re' TITLE='Re'>";
   althtmldef "Re" as '&real;';
     /* 2-Jan-2016 reverted sans-serif */
@@ -490238,7 +490502,7 @@ htmldef "~~>r" as " <IMG SRC='rightsquigarrow.gif' WIDTH=15 HEIGHT=19 " +
   althtmldef "~~>r" as
     ' &#8669;<SUB>&#x1D45F;</SUB> ';
     /* 2-Jan-2016 reverted sans-serif */
-  latexdef "~~>r" as '\rightsquigarrow_r';
+  latexdef "~~>r" as '\rightsquigarrow_\mathrm{r}';
 htmldef "O(1)" as "<IMG SRC='co.gif' WIDTH=12 HEIGHT=19 ALT=' O' TITLE='O'>" +
     "<IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='(' TITLE='('>" +
     "<IMG SRC='1.gif' WIDTH=7 HEIGHT=19 ALT='1' TITLE='1'>" +
@@ -490278,11 +490542,11 @@ htmldef "tan" as
   latexdef "tan" as "\tan";
 htmldef "_pi" as "<IMG SRC='pi.gif' WIDTH=10 HEIGHT=19 ALT=' pi' TITLE='pi'>";
   althtmldef "_pi" as "&pi;";  /* was: "&#x1D70B;"; math italic pi */
-  latexdef "_pi" as "\mathrm{\pi}";
+  latexdef "_pi" as "\uppi";
 htmldef "_tau" as
     "<IMG SRC='tau.gif' WIDTH=10 HEIGHT=19 ALT=' tau' TITLE='tau'>";
   althtmldef "_tau" as '&#x3c4;';  /* upright lowercase Greek tau */
-  latexdef "_tau" as "\mathrm{\tau}";
+  latexdef "_tau" as "\uptau";
 htmldef "||" as
     " <IMG SRC='parallel.gif' WIDTH=5 HEIGHT=19 " + "ALT=' ||' TITLE='||'> ";
   althtmldef "||" as ' &#8741; ';
@@ -490299,13 +490563,13 @@ htmldef "smul" as " smul ";
 htmldef "gcd" as
     " <IMG SRC='_gcd.gif' WIDTH=23 HEIGHT=19 ALT=' gcd' TITLE='gcd'> ";
   althtmldef "gcd" as " gcd ";
-  latexdef "gcd" as "\mathbin{\operatorname{gcd}}";
+  latexdef "gcd" as "\mathbin{\mathrm{gcd}}";
 htmldef "lcm" as " lcm ";
   althtmldef "lcm" as " lcm ";
-  latexdef "lcm" as "\mathbin{\operatorname{lcm}}";
+  latexdef "lcm" as "\mathbin{\mathrm{lcm}}";
 htmldef "_lcm" as "<U>lcm</U>";
   althtmldef "_lcm" as "<U>lcm</U>";
-  latexdef "_lcm" as "\underline{\mathbin{\operatorname{lcm}}}";
+  latexdef "_lcm" as "\mathbin{\underline{\mathrm{lcm}}}";
 htmldef "Prime" as
     "<IMG SRC='bbp.gif' WIDTH=11 HEIGHT=19 ALT=' Prime' TITLE='Prime'>";
   althtmldef "Prime" as "&#8473;";
@@ -490327,7 +490591,7 @@ htmldef "phi" as
 htmldef "pCnt" as
     " <IMG SRC='_pcnt.gif' WIDTH=32 HEIGHT=19 ALT=' pCnt' TITLE='pCnt'> ";
   althtmldef "pCnt" as " pCnt ";
-  latexdef "pCnt" as "\mathbin{\operatorname{pCnt}}";
+  latexdef "pCnt" as "\mathbin{\mathrm{pCnt}}";
 htmldef "Z[i]" as
     "<IMG SRC='bbz.gif' WIDTH=11 HEIGHT=19 ALT=' ZZ' TITLE='ZZ'>" +
     "<IMG SRC='lbrack.gif' WIDTH=5 HEIGHT=19 ALT='[' TITLE='['>" +
@@ -490526,7 +490790,7 @@ htmldef "Subcat" as "Subcat";
 htmldef "Func" as
     " <IMG SRC='_func.gif' WIDTH=32 HEIGHT=19 ALT=' Func' TITLE='Func'> ";
   althtmldef "Func" as " Func ";
-  latexdef "Func" as "\mathbin{\operatorname{Func}}";
+  latexdef "Func" as "\mathbin{\mathrm{Func}}";
 htmldef "idFunc" as "id<sub><i>func</i></sub>";
   althtmldef "idFunc" as "id<sub><i>func</i></sub>";
   latexdef "idFunc" as "\mathrm{id}_{func}";
@@ -490609,7 +490873,7 @@ htmldef "pairF" as ' &lang;,&rang;<sub><i>F</i></sub> ';
   latexdef "pairF" as " \langle,\rangle_F ";
 htmldef "evalF" as ' eval<sub><i>F</i></sub> ';
   althtmldef "evalF" as ' eval<sub><i>F</i></sub> ';
-  latexdef "evalF" as "\mathbin{\operatorname{eval}}_F";
+  latexdef "evalF" as "\mathbin{\mathrm{eval}}_F";
 htmldef "curryF" as ' curry<sub><i>F</i></sub> ';
   althtmldef "curryF" as ' curry<sub><i>F</i></sub> ';
   latexdef "curryF" as "\mathrm{curry}_F";
@@ -490747,7 +491011,7 @@ htmldef "lastS" as 'lastS';
   latexdef "lastS" as "\mathrm{lastS}";
 htmldef "++" as " ++ ";
   althtmldef "++" as " ++ ";
-  latexdef "++" as "\mathbin{\operatorname{++}}";
+  latexdef "++" as "\mathbin{++}";
 htmldef '<"' as
     "<IMG SRC='langle.gif' WIDTH=4 HEIGHT=19 ALT=' &lt;' TITLE='&lt;'>" +
     "<IMG SRC='backquote.gif' WIDTH=7 HEIGHT=19 ALT='" + '"' +
@@ -490887,7 +491151,7 @@ htmldef "oppR" as "opp<sub><i>r</i></sub>";
 htmldef "||r" as "<IMG SRC='parallel.gif' WIDTH=5 HEIGHT=19 ALT=' ||' " +
     "TITLE='||'><sub><i>r</i></sub>";
   althtmldef "||r" as "&#8741;<sub>r</sub>";
-  latexdef "||r" as "\mathrel{\parallel_\mathrm{r}}";
+  latexdef "||r" as "\operatorname{\parallel_\mathrm{r}}";
 htmldef "Unit" as "Unit";
   althtmldef "Unit" as "Unit";
   latexdef "Unit" as "\mathrm{Unit}";
@@ -491173,10 +491437,10 @@ htmldef "mPoly" as " mPoly ";
   latexdef "mPoly" as "\mathrm{mPoly}";
 htmldef "evalSub" as " evalSub ";
   althtmldef "evalSub" as " evalSub ";
-  latexdef "evalSub" as "\mathbin{\operatorname{evalSub}}";
+  latexdef "evalSub" as "\mathbin{\mathrm{evalSub}}";
 htmldef "eval" as " eval ";
   althtmldef "eval" as " eval ";
-  latexdef "eval" as "\mathbin{\operatorname{eval}}";
+  latexdef "eval" as "\mathbin{\mathrm{eval}}";
 htmldef "mHomP" as " mHomP ";
   althtmldef "mHomP" as " mHomP ";
   latexdef "mHomP" as "\mathrm{mHomP}";
@@ -491329,7 +491593,7 @@ htmldef "~~>t" as "<IMG SRC='rightsquigarrow.gif' WIDTH=15 HEIGHT=19 " +
   althtmldef "~~>t" as
     "&#8669;<SUB>&#x1D461;</SUB>";
     /* 2-Jan-2016 reverted sans-serif */
-  latexdef "~~>t" as "\rightsquigarrow_t";
+  latexdef "~~>t" as "\rightsquigarrow_\mathrm{t}";
 htmldef "Kol2" as
     "<IMG SRC='_kol2.gif' WIDTH=27 HEIGHT=19 ALT=' Kol2' TITLE='Kol2'>";
   althtmldef "Kol2" as "Kol2";
@@ -491499,7 +491763,7 @@ htmldef "NrmVec" as "NrmVec";
 htmldef "normOp" as
     "<IMG SRC='_normop.gif' WIDTH=52 HEIGHT=19 ALT=' normOp' TITLE='normOp'>";
   althtmldef "normOp" as " normOp ";
-  latexdef "normOp" as "\mathbin{\operatorname{normOp}}";
+  latexdef "normOp" as "\mathbin{\mathrm{normOp}}";
 htmldef "NGHom" as " NGHom ";
   althtmldef "NGHom" as " NGHom ";
   latexdef "NGHom" as "\mathrm{NGHom}";
@@ -491612,11 +491876,11 @@ htmldef "L^1" as
     "<IMG SRC='cl.gif' WIDTH=10 HEIGHT=19 ALT=' L' TITLE='L'>" +
     "<IMG SRC='sup1.gif' WIDTH=4 HEIGHT=19 ALT='^1' TITLE='^1'>";
   althtmldef "L^1" as "&#x1D43F;<SUP>1</SUP>";
-  latexdef "L^1" as "L^1";
+  latexdef "L^1" as "\mathrm{L}^1";
 htmldef "S.1" as
     "<IMG SRC='_int1.gif' WIDTH=11 HEIGHT=19 ALT=' S.1' TITLE='S.1'>";
   althtmldef "S.1" as "&int;<SUB>1</SUB>";
-  latexdef "S.1" as "\int_2";
+  latexdef "S.1" as "\int_1";
 htmldef "S.2" as
     "<IMG SRC='_int2.gif' WIDTH=13 HEIGHT=19 ALT=' S.2' TITLE='S.2'>";
   althtmldef "S.2" as "&int;<SUB>2</SUB>";
@@ -491626,7 +491890,7 @@ htmldef "S." as "<IMG SRC='int.gif' WIDTH=10 HEIGHT=19 ALT=' S.' TITLE='S.'>";
   latexdef "S." as "\int";
 htmldef "S_" as "<IMG SRC='int.gif' WIDTH=10 HEIGHT=19 ALT=' S_' TITLE='S_'>_";
   althtmldef "S_" as "&#x2A1C;";
-  latexdef "S_" as "\int";
+  latexdef "S_" as "\underline{\int}";
 htmldef "_d" as " <IMG SRC='rmd.gif' WIDTH=8 HEIGHT=19 ALT=' _d' TITLE='_d'>";
   althtmldef "_d" as " d";
   latexdef "_d" as "\,\mathrm{d}";
@@ -491649,7 +491913,7 @@ htmldef "Dn" as
   latexdef "Dn" as "\mathbin{\mathrm{D}^n}";
 htmldef "C^n" as "<IMG SRC='cc.gif' WIDTH=12 HEIGHT=19 ALT=' C' TITLE='C'>" +
     "<IMG SRC='supn.gif' WIDTH=6 HEIGHT=19 ALT='^n' TITLE='^n'>";
-  althtmldef "C^n" as "&#x1D4D1;C<SUP>&#x1D45B;</SUP>";
+  althtmldef "C^n" as "&#x1D49E;<SUP>&#x1D45B;</SUP>";
   latexdef "C^n" as "\operatorname{\mathcal{C}^n}";
 htmldef "Monic1p" as "Monic<sub>1p</sub>";
   althtmldef "Monic1p" as "Monic<sub>1p</sub>";
@@ -491698,7 +491962,7 @@ htmldef "~~>u" as "<IMG SRC='rightsquigarrow.gif' WIDTH=15 HEIGHT=19 " +
   althtmldef "~~>u" as
     "&#8669;<SUB>&#x1D462;</SUB>";
     /* 2-Jan-2016 reverted sans-serif */
-  latexdef "~~>u" as "\rightsquigarrow_u";
+  latexdef "~~>u" as "\rightsquigarrow_\mathrm{u}";
 htmldef "log" as
     "<IMG SRC='_log.gif' WIDTH=20 HEIGHT=19 ALT=' log' TITLE='log'>";
   althtmldef "log" as "log";
@@ -491726,28 +491990,28 @@ htmldef "area" as "area";
 htmldef "gamma" as
     "<IMG SRC='gamma.gif' WIDTH=11 HEIGHT=19 ALT=' gamma' TITLE='gamma'>";
   althtmldef "gamma" as "&gamma;";
-  latexdef "gamma" as "\gamma";
+  latexdef "gamma" as "\upgamma";
 htmldef "theta" as
     "<IMG SRC='theta.gif' WIDTH=8 HEIGHT=19 ALT=' theta' TITLE='theta'>";
   althtmldef "theta" as "&theta;";
-  latexdef "theta" as "\theta";
+  latexdef "theta" as "\uptheta";
 htmldef "Lam" as "&Lambda;";
   althtmldef "Lam" as "&Lambda;";
-  latexdef "Lam" as "\Lambda";
+  latexdef "Lam" as "\Uplambda";
 htmldef "psi" as "&psi;";
   althtmldef "psi" as "&psi;";
-  latexdef "psi" as "\psi";
+  latexdef "psi" as "\uppsi";
 htmldef "ppi" as "<U>&pi;</U>";
   althtmldef "ppi" as "<U>&pi;</U>";
-  latexdef "ppi" as "\pi";
+  latexdef "ppi" as "\underline{\uppi}";
 htmldef "mmu" as
     "<IMG SRC='mu.gif' WIDTH=10 HEIGHT=19 ALT=' mmu' TITLE='mmu'>";
   althtmldef "mmu" as "&mu;";
-  latexdef "mmu" as "\mu";
+  latexdef "mmu" as "\upmu";
 htmldef "sigma" as
     " <IMG SRC='sigma.gif' WIDTH=10 HEIGHT=19 ALT=' sigma' TITLE='sigma'> ";
   althtmldef "sigma" as " &sigma; ";
-  latexdef "sigma" as "\sigma";
+  latexdef "sigma" as "\upsigma";
 htmldef "DChr" as "DChr";
   althtmldef "DChr" as "DChr";
   latexdef "DChr" as "\mathrm{DChr}";
@@ -492020,8 +492284,8 @@ htmldef "0op" as
   latexdef "0op" as "0_\mathrm{op}";
 htmldef "adj" as
     "<IMG SRC='_adj.gif' WIDTH=20 HEIGHT=19 ALT=' adj' TITLE='adj'>";
-  althtmldef "adj" as "adj";
-  latexdef "adj" as "\mathbin{\operatorname{adj}}";
+  althtmldef "adj" as " adj ";
+  latexdef "adj" as "\mathbin{\mathrm{adj}}";
 htmldef "HmOp" as
     "<IMG SRC='_hmop.gif' WIDTH=41 HEIGHT=19 ALT=' HmOp' TITLE='HmOp'>";
   althtmldef "HmOp" as "HmOp";
@@ -492079,7 +492343,7 @@ htmldef "~~>v" as " <IMG SRC='_squigv.gif' WIDTH=21 HEIGHT=19 " +
   althtmldef "~~>v" as
     ' &#8669;<SUB>&#x1D463;</SUB> ';
     /* 24-Sep-2017 reverted sans-serif */
-  latexdef "~~>v" as '\rightsquigarrow_v';
+  latexdef "~~>v" as '\rightsquigarrow_\mathrm{v}';
 htmldef "SH" as "<IMG SRC='_sh.gif' WIDTH=24 HEIGHT=19 ALT=' SH' TITLE='SH'>";
   althtmldef "SH" as
     ' <I><B>S</B></I><SUB>&#8459;</SUB> ';
@@ -492266,13 +492530,13 @@ htmldef "MH*" as
 /* Mathbox of Thierry Arnoux */
 htmldef "class-o" as "class-o";
   althtmldef "class-o" as "class-o";
-  latexdef "class-o" as "\mathrm{class-o}";
+  latexdef "class-o" as "\mathrm{class\mathord{-}o}";
 htmldef "class-n" as "class-n";
   althtmldef "class-n" as "class-n";
-  latexdef "class-n" as "\mathrm{class-n}";
+  latexdef "class-n" as "\mathrm{class\mathord{-}n}";
 htmldef "<<<" as "&lt;&lt;&lt;";
   althtmldef "<<<" as "&#x22D8;";
-  latexdef "<<<" as "\mathrm{<<<}";
+  latexdef "<<<" as "\lll";
 htmldef "Archi" as "Archi";
   althtmldef "Archi" as "Archi";
   latexdef "Archi" as "\mathrm{Archi}";
@@ -492344,7 +492608,7 @@ htmldef "PsMet" as "PsMet";
   latexdef "PsMet" as "\mathrm{PsMet}";
 htmldef "~Met" as "~Met";
   althtmldef "~Met" as "~<SUB>Met</SUB>";
-  latexdef "~Met" as "~_\mathrm{Met}";
+  latexdef "~Met" as "\sim_\mathrm{Met}";
 htmldef "pstoMet" as "pstoMet";
   althtmldef "pstoMet" as "pstoMet";
   latexdef "pstoMet" as "\mathrm{pstoMet}";
@@ -492393,9 +492657,9 @@ htmldef "Paracomp" as "Paracomp";
 htmldef "ManTop" as "ManTop";
   althtmldef "ManTop" as "ManTop";
   latexdef "ManTop" as "\mathrm{ManTop}";
-htmldef "/e" as " /<SUB>&#x1D452;</SUB> ";
-  althtmldef "/e" as " /<SUB>&#x1D452;</SUB> ";
-  latexdef "/e" as '/_e';
+htmldef "/e" as " /<SUB>e</SUB> ";
+  althtmldef "/e" as " /<SUB>e</SUB> ";
+  latexdef "/e" as '/_\mathrm{e}';
 htmldef "sum*" as "&Sigma;<SUP>*</SUP>";
   althtmldef "sum*" as "&Sigma;<SUP>*</SUP>";
   latexdef "sum*" as "\sum^*";
@@ -492410,7 +492674,7 @@ htmldef "oFC" as " oFC ";
   latexdef "oFC" as "\circ_\mathrm{f/c}";
 htmldef "seqstr" as "seq<SUB>str</SUB>";
   althtmldef "seqstr" as "seq<SUB>str</SUB>";
-  latexdef "seqstr" as "\mathrm{seq_str}";
+  latexdef "seqstr" as "\mathrm{seq_{str}}";
 htmldef "Fibci" as "Fibci";
   althtmldef "Fibci" as "Fibci";
   latexdef "Fibci" as "\mathrm{Fibci}";
@@ -492425,13 +492689,13 @@ htmldef "BrSiga" as "&#x1D505;<SUB>&#8477;</SUB>";
   latexdef "BrSiga" as "\mathfrak{B}_\mathbb{R}";
 htmldef "sX" as " &times;<SUB>s</SUB> ";
   althtmldef "sX" as " &times;<SUB>s</SUB> ";
-  latexdef "sX" as "\times_s";
+  latexdef "sX" as "\times_\mathrm{s}";
 htmldef "measures" as "measures";
   althtmldef "measures" as "measures";
   latexdef "measures" as "\mathrm{measures}";
 htmldef "Ddelta" as "&delta;";
   althtmldef "Ddelta" as "&delta;";
-  latexdef "Ddelta" as "\mathrm{\delta}";
+  latexdef "Ddelta" as "\updelta";
 htmldef "toOMeas" as "toOMeas";
   althtmldef "toOMeas" as "toOMeas";
   latexdef "toOMeas" as "\mathrm{toOMeas}";
@@ -492444,9 +492708,9 @@ htmldef "MblFnM" as "MblFnM";
 htmldef "ae" as "a.e.";
   althtmldef "ae" as "a.e.";
   latexdef "ae" as "\mathrm{a.e.}";
-htmldef "~ae" as "~ a.e.";
-  althtmldef "~ae" as "~ a.e.";
-  latexdef "~ae" as "\mathrm{~ a.e.}";
+htmldef "~ae" as "~<sub>a.e.</sub>";
+  althtmldef "~ae" as "~<sub>a.e.</sub>";
+  latexdef "~ae" as "\sim_\mathrm{a.e.}";
 htmldef "QQHom" as "QQHom";
   althtmldef "QQHom" as "&#8474;Hom";
   latexdef "QQHom" as "\mathbb{Q}\mathrm{Hom}";
@@ -492476,37 +492740,37 @@ htmldef "rRndVar" as "rRndVar";
   latexdef "rRndVar" as "\mathrm{rRndVar}";
 htmldef "oRVC" as "&#8728;<SUB>RV/&#x1D450;</SUB>";
   althtmldef "oRVC" as "&#8728;<SUB>RV/&#x1D450;</SUB>";
-  latexdef "oRVC" as "\circ_RV/c";
+  latexdef "oRVC" as "\circ_{RV/c}";
 htmldef "~RL" as " ~<sub><i>RL</i></sub> ";
   althtmldef "~RL" as " ~<sub><i>RL</i></sub> ";
   latexdef "~RL" as " \sim_{RL} ";
 htmldef "RLocal" as " RLocal ";
   althtmldef "RLocal" as " RLocal ";
-  latexdef "RLocal" as "\mathbin{\operatorname{RLocal}}";
+  latexdef "RLocal" as "\mathbin{\mathrm{RLocal}}";
 htmldef "Frac" as " Frac ";
   althtmldef "Frac" as " Frac ";
-  latexdef "Frac" as "\mathbin{\operatorname{Frac}}";
+  latexdef "Frac" as "\mathbin{\mathrm{Frac}}";
 htmldef "dim" as "dim";
   althtmldef "dim" as "dim";
   latexdef "dim" as "\mathrm{dim}";
 htmldef "/FldExt" as "/<SUB>FldExt</SUB>";
   althtmldef "/FldExt" as "/<SUB>FldExt</SUB>";
-  latexdef "/FldExt" as "/FldExt";
+  latexdef "/FldExt" as "/_\mathrm{FldExt}";
 htmldef "/FinExt" as "/<SUB>FinExt</SUB>";
   althtmldef "/FinExt" as "/<SUB>FinExt</SUB>";
-  latexdef "/FinExt" as "/FinExt";
+  latexdef "/FinExt" as "/_\mathrm{FinExt}";
 htmldef "/AlgExt" as "/<SUB>AlgExt</SUB>";
   althtmldef "/AlgExt" as "/<SUB>AlgExt</SUB>";
-  latexdef "/AlgExt" as "/_AlgExt";
+  latexdef "/AlgExt" as "/_\mathrm{AlgExt}";
 htmldef "[:]" as "[:]";
   althtmldef "[:]" as "[:]";
   latexdef "[:]" as "[:]";
 htmldef "fldGen" as " fldGen ";
   althtmldef "fldGen" as " fldGen ";
-  latexdef "fldGen" as "\mathbin{\operatorname{fldGen}}";
+  latexdef "fldGen" as "\mathbin{\mathrm{fldGen}}";
 htmldef "minPoly" as " minPoly ";
   althtmldef "minPoly" as " minPoly ";
-  latexdef "minPoly" as "\mathbin{\operatorname{minPoly}}";
+  latexdef "minPoly" as "\mathbin{\mathrm{minPoly}}";
 htmldef "Constr" as "Constr";
   althtmldef "Constr" as "Constr";
   latexdef "Constr" as "\mathrm{Constr}";
@@ -492527,7 +492791,7 @@ htmldef "vts" as "vts";
   latexdef "vts" as "\mathrm{vts}";
 htmldef "leftpad" as ' leftpad ';
   althtmldef "leftpad" as ' leftpad ';
-  latexdef "leftpad" as "\mathbin{\operatorname{leftpad}}";
+  latexdef "leftpad" as "\mathbin{\mathrm{leftpad}}";
 htmldef "Itv" as "Itv";
   althtmldef "Itv" as "Itv";
   latexdef "Itv" as "\mathrm{Itv}";
@@ -493064,7 +493328,7 @@ htmldef ".no" as
   althtmldef ".no" as ' &middot;<SUB>no</SUB> '; /* unicode: &#xb7; */
   latexdef ".no" as "\cdot_\mathrm{no}";
 htmldef "No" as "<IMG SRC='_no.gif' WIDTH=17 HEIGHT=19 ALT=' No' TITLE='No'>";
-  althtmldef "No" as '<FONT FACE=sans-serif> No </FONT>';
+  althtmldef "No" as '<FONT FACE=sans-serif>No</FONT>';
   latexdef "No" as "\mathrm{No}";
 htmldef "<s" as
     "<IMG SRC='lt.gif' WIDTH=11 HEIGHT=19 ALT=' &lt;' TITLE='&lt;'>" +
@@ -493073,8 +493337,8 @@ htmldef "<s" as
   latexdef "<s" as "<_s";
 htmldef "bday" as
     "<IMG SRC='_bday.gif' WIDTH=32 HEIGHT=19 ALT=' bday' TITLE='bday'>";
-  althtmldef "bday" as '<FONT FACE=sans-serif> bday </FONT>';
-  latexdef "bday" as "\mathrm{bday}";
+  althtmldef "bday" as '<FONT FACE=sans-serif>bday</FONT>';
+  latexdef "bday" as "\operatorname{bday}";
 htmldef "<<s" as
     "<IMG SRC='lt.gif' WIDTH=11 HEIGHT=19 ALT=' &lt;' TITLE='&lt;'>" +
     "<IMG SRC='lt.gif' WIDTH=11 HEIGHT=19 ALT=' &lt;' TITLE='&lt;'>" +
@@ -493091,21 +493355,21 @@ htmldef "|s" as
     "<IMG SRC='subs.gif' WIDTH=6 HEIGHT=19 ALT='s' TITLE='s'>";
   althtmldef "|s" as " |s ";
   latexdef "|s" as "|_s";
-htmldef "_Made" as " M ";
-  althtmldef "_Made" as " M ";
-  latexdef "_Made" as "\mathrm{M}";
-htmldef "_Old" as " O ";
-  althtmldef "_Old" as " O ";
-  latexdef "_Old" as "\mathrm{O}";
-htmldef "_New" as " N ";
-  althtmldef "_New" as " N ";
-  latexdef "_New" as "\mathrm{N}";
-htmldef "_Left" as " L ";
-  althtmldef "_Left" as " L ";
-  latexdef "_Left" as "\mathrm{L}";
-htmldef "_Right" as " R ";
-  althtmldef "_Right" as " R ";
-  latexdef "_Right" as "\mathrm{R}";
+htmldef "_Made" as "M";
+  althtmldef "_Made" as "M";
+  latexdef "_Made" as "\operatorname{M}";
+htmldef "_Old" as "O";
+  althtmldef "_Old" as "O";
+  latexdef "_Old" as "\operatorname{O}";
+htmldef "_New" as "N";
+  althtmldef "_New" as "N";
+  latexdef "_New" as "\operatorname{N}";
+htmldef "_Left" as "L";
+  althtmldef "_Left" as "L";
+  latexdef "_Left" as "\operatorname{L}";
+htmldef "_Right" as "R";
+  althtmldef "_Right" as "R";
+  latexdef "_Right" as "\operatorname{R}";
 htmldef "0s" as " 0<SUB>s</SUB> ";
   althtmldef "0s" as " 0<SUB>s</SUB> ";
   latexdef "0s" as " 0_\mathrm{s} ";
@@ -493121,12 +493385,12 @@ htmldef "norec2" as " norec2 ";
 htmldef "+s" as " +<SUB>s</SUB> ";
   althtmldef "+s" as " +<SUB>s</SUB> ";
   latexdef "+s" as " +_\mathrm{s} ";
-htmldef "-us" as " -u<SUB>s</SUB> ";
-  althtmldef "-us" as " -u<SUB>s</SUB> ";
-  latexdef "-us" as " -~\mathrm{u}_\mathrm{s} ";
+htmldef "-us" as " -<SUB>s</SUB>";
+  althtmldef "-us" as " -<SUB>s</SUB>";
+  latexdef "-us" as "\mathord{-}_{\mathrm{s}}";
 htmldef "-s" as " -<SUB>s</SUB> ";
-  althtmldef "-s" as " -<SUB>s</SUB> ";
-  latexdef "-s" as " -_\mathrm{s} ";
+  althtmldef "-s" as " &minus;<SUB>s</SUB> ";
+  latexdef "-s" as "-_{\mathrm{s}}";
 htmldef "x.s" as
     " <IMG SRC='cdot.gif' WIDTH=4 HEIGHT=19 ALT=' x.s' TITLE='x.s'>" +
     "<SUB>s</SUB> ";
@@ -493326,11 +493590,11 @@ htmldef "UB" as "UB";
 htmldef "<<" as
   "<IMG SRC='llangle.gif' WIDTH=6 HEIGHT=19 ALT=' &lt;&lt;' TITLE='&lt;&lt;'>";
   althtmldef "<<" as "&#10218;";
-  latexdef "<<" as "\langle\langle";
+  latexdef "<<" as "\langle\!\langle";
 htmldef ">>" as
   "<IMG SRC='rrangle.gif' WIDTH=6 HEIGHT=19 ALT=' &gt;&gt;' TITLE='&gt;&gt;'>";
   althtmldef ">>" as "&#10219;";
-  latexdef ">>" as "\rangle\rangle";
+  latexdef ">>" as "\rangle\!\rangle";
 htmldef "XX." as
     " <IMG SRC='_ttimes.gif' WIDTH=18 HEIGHT=19 ALT=' XX.' TITLE='XX.'> ";
   althtmldef "XX." as ' &times;&times; ';
@@ -493353,9 +493617,9 @@ htmldef "OuterFiveSeg" as " <IMG SRC='_outerfiveseg.gif' WIDTH=89 HEIGHT=19 " +
     "ALT=' OuterFiveSeg' TITLE='OuterFiveSeg'> ";
   althtmldef "OuterFiveSeg" as " OuterFiveSeg ";
   latexdef "OuterFiveSeg" as "\mathrm{OuterFiveSeg}";
-htmldef "TransportTo" as "TransportTo";
-  althtmldef "TransportTo" as "TransportTo";
-  latexdef "TransportTo" as "\mathbin{\operatorname{TransportTo}}";
+htmldef "TransportTo" as " TransportTo ";
+  althtmldef "TransportTo" as " TransportTo ";
+  latexdef "TransportTo" as "\mathbin{\mathrm{TransportTo}}";
 htmldef "InnerFiveSeg" as " <IMG SRC='_innerfiveseg.gif' WIDTH=84 HEIGHT=19 " +
     "ALT=' InnerFiveSeg' TITLE='InnerFiveSeg'> ";
   althtmldef "InnerFiveSeg" as " InnerFiveSeg ";
@@ -493747,17 +494011,17 @@ htmldef "/R" as
   latexdef "/R" as " /_\mathbb{R} ";
 htmldef "PrjSp" as
     "<IMG SRC='bbp.gif' WIDTH=11 HEIGHT=19 ALT=' P' TITLE='P'>roj";
-  althtmldef "PrjSp" as "&#8473;&#x1D563;&#x1D560;&#x1D55B;";
-  latexdef "PrjSp" as "\operatorname{\mathbb{Proj}}";
+  althtmldef "PrjSp" as "&#8473;roj";
+  latexdef "PrjSp" as "\operatorname{\mathbb{P}\mathrm{roj}}";
 htmldef "PrjSpn" as
-    "<IMG SRC='bbp.gif' WIDTH=11 HEIGHT=19 ALT=' P' TITLE='P'>roj" +
-    "<SUB>n</SUB>";
-  althtmldef "PrjSpn" as "&#8473;&#x1D563;&#x1D560;&#x1D55B;<SUB>n</SUB>";
-  latexdef "PrjSpn" as "\operatorname{\mathbb{Proj}_\mathrm{n}}";
+    " <IMG SRC='bbp.gif' WIDTH=11 HEIGHT=19 ALT=' P' TITLE='P'>roj" +
+    "<SUB>n</SUB> ";
+  althtmldef "PrjSpn" as " &#8473;roj<SUB>n</SUB> ";
+  latexdef "PrjSpn" as "\mathbin{\mathbb{P}\mathrm{roj_n}}";
 htmldef "PrjCrv" as
-    "<IMG SRC='bbp.gif' WIDTH=11 HEIGHT=19 ALT=' P' TITLE='P'>rojCrv";
-  althtmldef "PrjCrv" as "&#8473;&#x1D563;&#x1D560;&#x1D55B;Crv";
-  latexdef "PrjCrv" as "\operatorname{\mathbb{Proj}Crv}";
+    " <IMG SRC='bbp.gif' WIDTH=11 HEIGHT=19 ALT=' P' TITLE='P'>rojCrv ";
+  althtmldef "PrjCrv" as " &#8473;rojCrv ";
+  latexdef "PrjCrv" as "\mathbin{\mathbb{P}\mathrm{rojCrv}}";
 /* End of Steven Nguyen's mathbox */
 
 /* Mathbox of Stefan O'Rear */
@@ -493992,10 +494256,10 @@ htmldef "''''" as '&#39&#39&#39&#39';
  latexdef "''''" as "''''";
 htmldef "((" as ' ((';
  althtmldef "((" as ' ((';
- latexdef "((" as " ((";
+ latexdef "((" as " (\!(";
 htmldef "))" as ')) ';
  althtmldef "))" as ')) ';
- latexdef "))" as ")) ";
+ latexdef "))" as ")\!) ";
 htmldef "e//" as
     " _<IMG SRC='notin.gif' WIDTH=10 HEIGHT=19 ALT=' e//' TITLE='e//'> ";
   althtmldef "e//" as ' _&notin; ';
@@ -494026,7 +494290,7 @@ htmldef "GoldbachOdd" as ' GoldbachOdd ';
  latexdef "GoldbachOdd" as "\mathrm{GoldbachOdd}";
 htmldef "prefix" as ' prefix ';
  althtmldef "prefix" as ' prefix ';
- latexdef "prefix" as "\mathbin{\operatorname{prefix}}";
+ latexdef "prefix" as "\mathbin{\mathrm{prefix}}";
 /* Graph theory (extension) */
 htmldef "ClNeighbVtx" as ' ClNeighbVtx ';
   althtmldef "ClNeighbVtx" as ' ClNeighbVtx ';
@@ -494177,7 +494441,7 @@ htmldef "oppFunc" as " oppFunc ";
   latexdef "oppFunc" as "\mathrm{oppFunc}";
 htmldef "UP" as " UP ";
   althtmldef "UP" as " UP ";
-  latexdef "UP" as "\mathbin{\operatorname{UP}}";
+  latexdef "UP" as "\mathbin{\mathrm{UP}}";
 htmldef "swapF" as ' swap<sub><i>F</i></sub> ';
   althtmldef "swapF" as ' swap<sub><i>F</i></sub> ';
   latexdef "swapF" as "\mathrm{swap}_F";
@@ -494293,12 +494557,12 @@ htmldef "AE!" as
   "<IMG SRC='_e1.gif' WIDTH=12 HEIGHT=19 ALT='E!' TITLE='E!'>";
   althtmldef "AE!" as '&forall;&exist;!'; /* &#8704;&#8707;! */
   latexdef "AE!" as "\forall\exists{!}";
-htmldef "Reflexive" as "Reflexive";
-  althtmldef "Reflexive" as "Reflexive";
-  latexdef "Reflexive" as "\mathrel{\operatorname{Reflexive}}";
-htmldef "Irreflexive" as "Irreflexive";
-  althtmldef "Irreflexive" as "Irreflexive";
-  latexdef "Irreflexive" as "\mathrel{\operatorname{Irreflexive}}";
+htmldef "Reflexive" as " Reflexive ";
+  althtmldef "Reflexive" as " Reflexive ";
+  latexdef "Reflexive" as "\mathrel{\mathrm{Reflexive}}";
+htmldef "Irreflexive" as " Irreflexive ";
+  althtmldef "Irreflexive" as " Irreflexive ";
+  latexdef "Irreflexive" as "\mathrel{\mathrm{Irreflexive}}";
 /* End of David A. Wheeler's mathbox */
 
 /* Mathbox of Alan Sare */
@@ -495600,11 +495864,11 @@ htmldef "_pred" as
 htmldef "_Se" as
     " <IMG SRC='_cse.gif' WIDTH=15 HEIGHT=19 ALT=' Se' TITLE='Se'> ";
   althtmldef "_Se" as " Se ";
-  latexdef "_Se" as "\mathrel{\operatorname{Se}}";
+  latexdef "_Se" as "\mathrel{\mathrm{Se}}";
 htmldef "_FrSe" as
     " <IMG SRC='_frse.gif' WIDTH=30 HEIGHT=19 ALT=' FrSe' TITLE='FrSe'> ";
   althtmldef "_FrSe" as " FrSe ";
-  latexdef "_FrSe" as "\mathrel{\operatorname{FrSe}}";
+  latexdef "_FrSe" as "\mathrel{\mathrm{FrSe}}";
 htmldef "_trCl" as
     " <IMG SRC='_trcl.gif' WIDTH=26 HEIGHT=19 ALT=' trCl' TITLE='trCl'>";
   althtmldef "_trCl" as " trCl";
@@ -495648,7 +495912,7 @@ htmldef ",," as ", ";
   latexdef ",," as ", ";
 htmldef "Proj" as " Proj ";
   althtmldef "Proj" as " Proj ";
-  latexdef "Proj" as "\mathbin{Proj}";
+  latexdef "Proj" as "\mathbin{\mathrm{Proj}}";
 htmldef "pr1" as "pr<sub>1</sub> ";
   althtmldef "pr1" as "pr<sub>1</sub> ";
   latexdef "pr1" as "\operatorname{pr_1}";
@@ -495665,28 +495929,24 @@ htmldef "Moore_" as "Moore_";
   althtmldef "Moore_" as "<u>Moore</u>";
   latexdef "Moore_" as "\underline{\mathrm{Moore}}";
 htmldef "-Set->" as " -Set-> ";
-  althtmldef "-Set->" as ' <span style = " ' +
-    ' overflow: visible; width: 0px; height: 0px; display: inline-block; ' +
-    ' font-size: 65%; position: relative; top: -1.4ex; ' +
-    ' left: 0.4ex">Set</span>&#x27f6; ';
+  althtmldef "-Set->" as ' <span style="position:relative">' +
+    '&#x27f6;<span style="position:absolute;' +
+    'font-size:60%; bottom:50%; left:15%">Set</span></span> ';
   latexdef "-Set->" as "\overset{\text{Set}}{\longrightarrow}";
 htmldef "-Top->" as " -Top-> ";
-  althtmldef "-Top->" as ' <span style = " ' +
-    ' overflow: visible; width: 0px; height: 0px; display: inline-block; ' +
-    ' font-size: 65%; position: relative; top: -1.4ex; ' +
-    ' left: 0.4ex">Top</span>&#x27f6; ';
+  althtmldef "-Top->" as ' <span style="position:relative">' +
+    '&#x27f6;<span style="position:absolute;' +
+    'font-size:60%; bottom:50%; left:10%">Top</span></span> ';
   latexdef "-Top->" as "\overset{\text{Top}}{\longrightarrow}";
 htmldef "-Mgm->" as " -Mgm-> ";
-  althtmldef "-Mgm->" as ' <span style = " ' +
-    ' overflow: visible; width: 0px; height: 0px; display: inline-block; ' +
-    ' font-size: 65%; position: relative; top: -1.4ex; ' +
-    ' left: 0.4ex">Mgm</span>&#x27f6; ';
+  althtmldef "-Mgm->" as ' <span style="position:relative">' +
+    '&#x23af;&#x23af;&#x27f6;<span style="position:absolute;' +
+    'font-size:60%; bottom:50%; left:5%">Mgm</span></span> ';
   latexdef "-Mgm->" as "\overset{\text{Mgm}}{\longrightarrow}";
 htmldef "-TopMgm->" as " -TopMgm-> ";
-  althtmldef "-TopMgm->" as ' <span style = " ' +
-    ' overflow: visible; width: 0px; height: 0px; display: inline-block; ' +
-    ' font-size: 65%; position: relative; top: -1.4ex; ' +
-    ' left: 0.0ex">TopMgm</span>&#x27f6; ';
+  althtmldef "-TopMgm->" as ' <span style="position:relative">' +
+    '&#x23af;&#x23af;&#x23af;&#x23af;&#x27f6;<span style="position:absolute;' +
+    'font-size:60%; bottom:50%; left:0%">TopMgm</span></span> ';
   latexdef "-TopMgm->" as "\overset{\text{TopMgm}}{\longrightarrow}";
 htmldef "curry_" as "curry_";
   althtmldef "curry_" as "curry_";
@@ -495703,21 +495963,21 @@ htmldef "]s" as "]s";
 htmldef "_Id" as "Id";
   althtmldef "_Id" as "Id";
   latexdef "_Id" as "\operatorname{Id}";
-htmldef "~P_*" as "~P_*";
-  althtmldef "~P_*" as "&#119979;<sub>*</sub>";
+htmldef "~P_*" as " ~P_* ";
+  althtmldef "~P_*" as " &#119979;<sub>*</sub> ";
   latexdef "~P_*" as "\mathrel{\mathcal{P}_*}";
-htmldef "~P^*" as "~P^*";
-  althtmldef "~P^*" as "&#119979;<sup>*</sup>";
+htmldef "~P^*" as " ~P^* ";
+  althtmldef "~P^*" as " &#119979;<sup>*</sup> ";
   latexdef "~P^*" as "\mathrel{\mathcal{P}^*}";
 htmldef "1/2" as "1/2";
-  althtmldef "1/2" as "1/2";
-  latexdef "1/2" as "1/2";
+  althtmldef "1/2" as "1/2<i><sub><b>R</b></sub></i>";
+  latexdef "1/2" as "\mathord{1/2}_\mathcal{R}";
 htmldef "CCinfty" as "CCinfty";
   althtmldef "CCinfty" as "&#8450;<SUB>&infin;</SUB>";
   latexdef "CCinfty" as "\mathbb{C}_\infty";
 htmldef "CCinftyN" as "CCinftyN";
   althtmldef "CCinftyN" as "&#8450;<SUB>&infin;N</SUB>";
-  latexdef "CCinftyN" as "{\mathbb{C}_\infty}";
+  latexdef "CCinftyN" as "{\mathbb{C}_{\infty \mathrm{N}}}";
 htmldef "CCbar" as "CCbar";
   althtmldef "CCbar" as "&#8450;&#x305;";
   latexdef "CCbar" as "\overline{\mathbb{C}}";
@@ -495729,7 +495989,7 @@ htmldef "+cc" as " +cc ";
   latexdef "+cc" as " +_{\overline{\mathbb{C}}} ";
 htmldef "-cc" as "-cc";
   althtmldef "-cc" as "-<SUB>&#8450;&#x305;</SUB>";
-  latexdef "-cc" as "-_{\overline{\mathbb{C}}}";
+  latexdef "-cc" as "\mathord{-}_{\overline{\mathbb{C}}}";
 htmldef "<rr" as "<rr";
   althtmldef "<rr" as "&lt;<SUB>&#8477;&#x305;</SUB>";
   latexdef "<rr" as "<_{\overline{\mathbb{R}}}";
@@ -495737,7 +495997,7 @@ htmldef ".cc" as " .cc ";
   althtmldef ".cc" as " &#183;<SUB>&#8450;&#x305;</SUB> ";
   latexdef ".cc" as " \cdot_{\overline{\mathbb{C}}} ";
 htmldef "invc" as "invc";
-  althtmldef "invc" as "<SUP>-1</SUP><SUB>&#8450;&#x305;</SUB>";
+  althtmldef "invc" as "&#183;<SUP>-1</SUP>";
   latexdef "invc" as "\cdot^{-1}";
 htmldef "iomnn" as "iomnn";
   althtmldef "iomnn" as "i<SUB>&omega;&hookrightarrow;&#8469;</SUB>";
@@ -495753,13 +496013,13 @@ htmldef "RR>0" as "RR>0";
   latexdef "RR>0" as "\mathbb{R}_{>0}";
 htmldef "{R" as "{R";
   althtmldef "{R" as "{<I><SUB><B>R</B></SUB></I>";
-  latexdef "{R" as "\{_R";
+  latexdef "{R" as "\{_\mathcal{R}";
 htmldef "inftyexpi" as "inftyexpi ";
   althtmldef "inftyexpi" as "+&infin;e<SUP>i</SUP>";
   latexdef "inftyexpi" as "+\infty\mathrm{e^i}";
 htmldef "inftyexpitau" as "inftyexpitau ";
   althtmldef "inftyexpitau" as "+&infin;e<SUP>i&tau;</SUP>";
-  latexdef "inftyexpitau" as "+\infty\mathrm{e^{i\tau}}";
+  latexdef "inftyexpitau" as "+\infty\mathrm{e^{i\uptau}}";
 htmldef "minfty" as "minfty";
   althtmldef "minfty" as "-&infin;";
   latexdef "minfty" as "-\infty";
@@ -495771,19 +496031,19 @@ htmldef "infty" as "infty";
   latexdef "infty" as "\infty";
 htmldef "CChat" as "CChat";
   althtmldef "CChat" as "&#8450;&#x302;";
-  latexdef "CChat" as "\hat{\mathbb{C}}";
+  latexdef "CChat" as "\widehat{\mathbb{C}}";
 htmldef "RRhat" as "RRhat";
   althtmldef "RRhat" as "&#8477;&#x302;";
-  latexdef "RRhat" as "\hat{\mathbb{R}}";
+  latexdef "RRhat" as "\widehat{\mathbb{R}}";
 htmldef "NNbar" as "NNbar";
   althtmldef "NNbar" as "&#8469;&#x305;";
-  latexdef "NNbar" as "\bar{\mathbb{N}}";
+  latexdef "NNbar" as "\overline{\mathbb{N}}";
 htmldef "ZZbar" as "ZZbar";
   althtmldef "ZZbar" as "&#8484;&#x305;";
-  latexdef "ZZbar" as "\bar{\mathbb{Z}}";
+  latexdef "ZZbar" as "\overline{\mathbb{Z}}";
 htmldef "ZZhat" as "ZZhat";
   althtmldef "ZZhat" as "&#8484;&#x302;";
-  latexdef "ZZhat" as "\hat{\mathbb{Z}}";
+  latexdef "ZZhat" as "\widehat{\mathbb{Z}}";
 htmldef "||C" as " ||C ";
   althtmldef "||C" as " &#8741;<sub>&#8450;</sub> ";
   latexdef "||C" as "\mathrel{\parallel_{\mathbb{C}}}";
@@ -495792,7 +496052,7 @@ htmldef "FinSum" as " FinSum ";
   latexdef "FinSum" as " \mathrm{FinSum} ";
 htmldef "RRVec" as "RR-Vec";
   althtmldef "RRVec" as "&#8477;-Vec";
-  latexdef "RRVec" as "{\mathbb{R}-\mathrm{Vec}}";
+  latexdef "RRVec" as "{\mathbb{R}\text{-}\mathrm{Vec}}";
 htmldef "End" as "End ";
   althtmldef "End" as "End ";
   latexdef "End" as "\operatorname{End}";
@@ -496148,7 +496408,7 @@ htmldef "HLtoHil" as "HLtoHil";
 htmldef "r*" as "<IMG SRC='r.gif' WIDTH=7 HEIGHT=19 ALT=' r' TITLE='r'>" +
     "<IMG SRC='ast.gif' WIDTH=7 HEIGHT=19 ALT='*' TITLE='*'>";
   althtmldef "r*" as "r*";
-  latexdef "r*" as "\mathrm{r}*";
+  latexdef "r*" as "\mathrm{r}^*";
 htmldef "hereditary" as " hereditary ";
   althtmldef "hereditary" as " hereditary ";
   latexdef "hereditary" as "\mathrm{hereditary}";
@@ -496158,6 +496418,9 @@ htmldef "hereditary" as " hereditary ";
 htmldef "RelPres" as " RelPres ";
   althtmldef "RelPres" as " RelPres ";
   latexdef "RelPres" as "\mathrm{RelPres}";
+htmldef "HFStruct" as "HFStruct";
+  althtmldef "HFStruct" as "HFStruct";
+  latexdef "HFStruct" as "\mathrm{HFStruct}";
 /* End of Eric Schmidt's mathbox */
 
 /* Mathbox of Glauco Siliprandi */
@@ -496196,7 +496459,7 @@ htmldef "liminf" as "liminf";
   latexdef "liminf" as "\liminf";
 htmldef "~~>*" as "~~&gt;*";
   althtmldef "~~>*" as "~~>*";
-  latexdef "~~>*" as "\rightsquigarrow *";
+  latexdef "~~>*" as "\rightsquigarrow^*";
 /* End of Glauco Siliprandi's mathbox */
 
 /* Mathbox of Jiamin Zhao */
@@ -533798,7 +534061,7 @@ $)
     pidlnzb.1 $e |- B = ( Base ` R ) $.
     pidlnzb.2 $e |- .0. = ( 0g ` R ) $.
     pidlnzb.3 $e |- K = ( RSpan ` R ) $.
-    $( A principal ideal is nonzero iff it is generated by a nonzero elements
+    $( A principal ideal is nonzero iff it is generated by a nonzero element.
        (Contributed by Thierry Arnoux, 22-Mar-2025.) $)
     pidlnzb $p |- ( ( R e. Ring /\ X e. B )
                  -> ( X =/= .0. <-> ( K ` { X } ) =/= { .0. } ) ) $=
@@ -557894,17 +558157,6 @@ $)
   $}
 
   ${
-    mbfmbfmOLD.1 $e |- ( ph -> M e. U. ran measures ) $.
-    mbfmbfmOLD.2 $e |- ( ph -> J e. Top ) $.
-    mbfmbfmOLD.3 $e |- ( ph -> F e. ( dom M MblFnM ( sigaGen ` J ) ) ) $.
-    $( A measurable function to a Borel Set is measurable.  (Contributed by
-       Thierry Arnoux, 24-Jan-2017.)  (Proof modification is discouraged.)
-       (New usage is discouraged.) $)
-    mbfmbfmOLD $p |- ( ph -> F e. U. ran MblFnM ) $=
-      ( cdm csigagen cfv isanmbfm ) ADHCIJBGK $.
-  $}
-
-  ${
     mbfmbfm.1 $e |- ( ph -> F e. ( dom M MblFnM ( sigaGen ` J ) ) ) $.
     $( A measurable function to a Borel Set is measurable.  (Contributed by
        Thierry Arnoux, 24-Jan-2017.)  Remove hypotheses.  (Revised by SN,
@@ -577198,6 +577450,20 @@ $)
   inv2 $p |- ( _V i^i A ) = A $=
     ( cvv inv1 ineqcomi ) ABAACD $.
 
+  ${
+    jaeqifi.1 $e |- ( A = C -> ph ) $.
+    jaeqifi.2 $e |- ( A = D -> ph ) $.
+    jaeqifi.3 $e |- ( B = C -> ph ) $.
+    jaeqifi.4 $e |- ( B = D -> ph ) $.
+    $( Inference combining four equality antecedents into one equality of
+       conditional operators antecedent.  (Contributed by BTernaryTau,
+       14-Jul-2026.) $)
+    jaeqifi $p |- ( if ( ps , A , B ) = if ( ch , C , D ) -> ph ) $=
+      ( cif wceq wi wa iftrue eqeqan12d biimtrdi wn iffalse 4cases ) BCBDELZCFG
+      LZMZANBCOUDDFMABCUBDUCFBDEPZCFGPZQHRBCSZOUDDGMABUGUBDUCGUECFGTZQIRBSZCOUD
+      EFMAUICUBEUCFBDETZUFQJRUIUGOUDEGMAUIUGUBEUCGUJUHQKRUA $.
+  $}
+
   $( There exists an element in a class excluding a singleton if and only if
      there exists an element in the original class not equal to the singleton
      element.  (Contributed by BTernaryTau, 15-Sep-2023.) $)
@@ -577221,6 +577487,14 @@ $)
        'ax-12' 'ax-13' 'ax-ext' 'ax-sep' 'ax-nul'; $)
   $}
 
+
+  $( If the image under a one-to-one function exists, then the corresponding
+     preimage also exists.  (Contributed by BTernaryTau, 21-Jun-2026.) $)
+  f1preimaex $p |- ( ( F : A -1-1-> B /\ C C_ A /\ ( F " C ) e. V ) ->
+      C e. _V ) $=
+    ( wf1 wss cima wcel w3a ccnv cvv wfun df-f1 simprbi funimaexg sylan 3adant2
+    wf wb wa f1imacnv eleq1d 3adant3 mpbid ) ABDFZCAGZDCHZEIZJDKZUHHZLIZCLIZUFU
+    IULUGUFUJMZUIULUFABDSUNABDNOUJUHEPQRUFUGULUMTUIUFUGUAUKCLABCDUBUCUDUE $.
 
   ${
     $d B x $.  $d C x $.  $d F x $.
@@ -577249,6 +577523,44 @@ $)
     wxo cvv imnan mpbi xor2 mpbir2an ) ABCZABDZPUBUCEUBUCFGZHUBUCGIUDUCUBUCUBBB
     CZBQCGUEGJBBKLABBMNOUBUCRSUBUCTUA $.
   $( $j usage 'xoromon' avoids 'ax-reg' 'ax-inf' 'ax-inf2'; $)
+
+  ${
+    $d V y $.  $d A w y z $.  $d R w y z $.
+    $( A strict order relation on an infinite set dominates that set.
+       (Contributed by BTernaryTau, 14-Jul-2026.) $)
+    soinfdom $p |- ( ( R Or A /\ R e. V /\ _om ~<_ A ) -> A ~<_ R ) $=
+      ( vy vz vw wcel cdom wbr wa cv wne adantr cop cif wral wceq weq ancom2s
+      wi wor com wex c0 infn0 n0 sylib csn cdif cen infdifsn ensymd cmpt wf1 wo
+      eldifsn sotrine biimpd expr impd biimtrid iftrue biimpi eqeltrd wn bilani
+      df-br wb iffalse eleq1d mpbird jaoi3 syl6 ralrimiv eldifsnneq neqcomd vex
+      opth1 a1d opth simprbi pm2.24d jaeqifi syl5com rgen rgenw breq1 ifbieq12d
+      eqid opeq1 opeq2 f1mpt sylanblrc f1domg syl5 endomtr syl3an132 3expia mpd
+      impl exlimdv ancoms 3impa ) ABUAZBCGZUBAHIZABHIZXFXDXEJXGXFXEXDXGXFXEXDJZ
+      JZDKZAGZDUCZXGXFXLXHXFAUDLXLAUEDAUFUGMXIXKXGDXFXHXKXGXFAAXJUHUIZUJIXHXKXM
+      BHIZXGXFXMAAXJUKULXEXDXKXNXDXKJZXMBEXMEKZXJBIZXPXJNZXJXPNZOZUMZUNZXEXNXOX
+      TBGZEXMPXTFKZXJBIZYDXJNZXJYDNZOZQZEFRZTZFXMPZEXMPYBXOYCEXMXOXPXMGZXQXJXPB
+      IZUOZYCYMXPAGZXPXJLZJXOYOXPAXJUPXOYPYQYOXDXKYPYQYOTZXDYPXKYRXDYPXKJJYQYOA
+      XPXJBUQURSUSUTVAXQYCYNXQXTXRBXQXRXSVBXQXRBGXPXJBVGVCVDXQVEZYNJYCXSBGZYNYT
+      YSXJXPBVGVFYSYCYTVHYNYSXTXSBXQXRXSVIVJMVKVLVMVNYLEXMYKFXMYDXMGZDFRZVEZYIY
+      JUUAYDXJYDAXJVOVPUUCYJTXQYEXRXSYFYGXRYFQYJUUCXPXJYDXJEVQZDVQZVRVSXRYGQZUU
+      BYJUUFEDRUUBXPXJXJYDUUDUUEVTWAWBXSYFQUUBYJXJXPYDXJUUEUUDVRWBXSYGQZYJUUCUU
+      GDDRYJXJXPXJYDUUEUUDVTWAVSWCWDWEWFEFXMBXTYHYAYAWIYJXQYEXRXSYFYGXPYDXJBWGX
+      PYDXJWJXPYDXJWKWHWLWMXMBCYAWNWOWTAXMBWPWQWRXAWSSXBXC $.
+  $}
+
+  ${
+    $d A r x $.
+    $( The class of well-orders of a set ` A ` and its subsets is a set.
+       (Contributed by BTernaryTau, 2-Aug-2026.) $)
+    abweex $p |- ( A e. V ->
+        { r | E. x ( x C_ A /\ r C_ ( x X. x ) /\ r We x ) } e. _V ) $=
+      ( wcel cv wss cxp wwe w3a wex cab cpw cvv simp1 velpw sylibr simp2 ss2abi
+      wa xpss12 syl2anc sstrd jca eximi simpr exlimiv sstri abid2 sqxpexg pwexd
+      eqeltrid ssexg sylancr ) BCEZAFZBGZDFZUPUPHZGZUPURIZJZAKZDLZURBBHZMZEZDLZ
+      GVHNEVDNEVDUPBMEZVGTZAKZDLVHVCVKDVBVJAVBVIVGVBUQVIUQUTVAOZABPQVBURVEGVGVB
+      URUSVEUQUTVARVBUQUQUSVEGVLVLUPBUPBUAUBUCDVEPQUDUESVKVGDVJVGAVIVGUFUGSUHUO
+      VHVFNDVFUIUOVENBCUJUKULVDVHNUMUN $.
+  $}
 
   ${
     ordtypeon.1 $e |- F = OrdIso ( R , A ) $.
@@ -577565,6 +577877,27 @@ $)
   $}
 
   ${
+    $d T x y $.  $d R v w y $.  $d U w x y $.  $d A v w x y z $.
+    werankwe.1 $e |- S = { <. x , y >. | ( ( rank ` x ) e. ( rank ` y ) \/
+        ( ( rank ` x ) = ( rank ` y ) /\ x R y ) ) } $.
+    werankwe.2 $e |- ( w = ( rank ` x ) -> T = R ) $.
+    werankwe.3 $e |- ( v = x -> U = R ) $.
+    $( Construct a well-order given a relation ` R ( x ) ` that well-orders
+       elements of the same rank.  (Contributed by BTernaryTau,
+       16-Sep-2026.) $)
+    werankwe $p |- ( A. x e. A R We { z e. A | ( rank ` z ) = ( rank ` x ) } ->
+        S We A ) $=
+      ( cv crnk cfv wceq wwe con0 cvv crab wral eqeq2d rabbidv weeq12d cbvralvw
+      fveq2 cep wcel wbr wa wo copab fvex orbi1i opabbii eqtr4i fveqeq2 cbvrabv
+      epeli eqtrdi rspccva cres wf wss wfo rankfo fof ax-mp fssres mp2an epweon
+      ssv a1i fnwe2 sylbir ) CNZOPZANZOPZQZCFUAZGRZAFUBVRENZOPZQZCFUAZJRZEFUBZF
+      HRWHWCEAFWDVSQZWGWBJGMWJWFWACFWJWEVTVRWDVSOUGUCUDZUEUFWIABDFSUHIHGOLHVTBN
+      ZOPZUIZVTWMQVSWLGUJUKZULZABUMVTWMUHUJZWOULZABUMKWRWPABWQWNWOVTWMWLOUNUTUO
+      UPUQWHWMVTQZBFUAZGREVSFWJWGWTJGMWJWGWBWTWKWAWSCBFVQWLVTOURUSVAUEVBFSOFVCV
+      DZWITSOVDZFTVEXATSOVFXBVGTSOVHVIFVMTSFOVJVKVNSUHRWIVLVNVOVP $.
+  $}
+
+  ${
     scotteqi.1 $e |- A = B $.
     $( Equality theorem for the Scott operation.  Inference form of ~ scotteq .
        (Contributed by BTernaryTau, 3-Jul-2026.) $)
@@ -577723,6 +578056,112 @@ $)
     ( wcel ccrd cdm wac cvv elex wceq dfac10 biimpi eleq2d imbitrrid ) ABCADEZC
     FAGCABHFNGAFNGIJKLM $.
   $( $j usage 'acnum' avoids 'ax-ac' 'ax-ac2'; $)
+
+  ${
+    $d A r s $.
+    $( If a well-ordering of an infinite set exists, then a well-ordering
+       equinumerous to the set exists.  (Contributed by BTernaryTau,
+       31-Jul-2026.) $)
+    weexenwe $p |- ( ( E. r r We A /\ _om ~<_ A ) ->
+        E. s ( s C_ ( A X. A ) /\ s We A /\ s ~~ A ) ) $=
+      ( cv wwe wex com cdom wbr wa cxp wss cen w3a ccrd cdm wcel wi ween cvv
+      cin inss2 weinxp biimpi 3ad2ant3 reldom brrelex2i ssdomg mpisyl infxpidm2
+      xpexd domentr syl2an2 3adant3 wor weso sylbi inex1 soinfdom mp3an2 ancoms
+      sylan 3adant1 sbth syl2anc wceq sseq1 weeq1 breq1 3anbi123d spcev mp3an2i
+      vex 3expia exlimdv sylanbr adantrd pm2.43i ) ACDZEZCFZGAHIZJZBDZAAKZLZAWD
+      EZWDAMIZNZBFZWCWAWJWBWAAOPQZWBWAWJRACSWKWBJVTWJCWKWBVTWJVSWEUAZWELZWKWBVT
+      NZAWLEZWLAMIZWJVSWEUBZVTWKWOWBVTWOAVSUCZUDUEWNWLAHIZAWLHIZWPWKWBWSVTWBWLW
+      EHIZWKWEAMIWSWBWETQWMXAWBAATTGAHUFUGZXBUKWQWLWETUHUIAUJWLWEAULUMUNWBVTWTW
+      KVTWBWTVTAWLUOZWBWTVTWOXCWRAWLUPUQXCWLTQWBWTVSWECVMURZAWLTUSUTVBVAVCWLAVD
+      VEWIWMWOWPNBWLXDWDWLVFWFWMWGWOWHWPWDWLWEVGAWDWLVHWDWLAMVIVJVKVLVNVOVPVQVR
+      $.
+  $}
+
+  $( Equivalence between two infiniteness criteria for numerable sets.
+     (Contributed by BTernaryTau, 15-Jul-2026.) $)
+  infinfnum $p |- ( A e. dom card -> ( -. A e. Fin <-> _om ~<_ A ) ) $=
+    ( ccrd cdm wcel com cdom wbr cfin4 isfin4-2 con2bid cfin7 cfin5 cfin6 fin45
+    wn cfn fin56 fin67 3syl fin71num imbitrid cfin2 cfin3 impbid1 notbid bitr2d
+    fin12 fin23 fin34 ) ABCZDZEAFGZAHDZOAPDZOUKUMULAUJIJUKUMUNUKUMUNUMAKDZUKUNU
+    MALDAMDUOANAQARSATUAUNAUBDAUCDUMAUGAUHAUISUDUEUF $.
+  $( $j usage 'infinfnum' avoids 'ax-ac' 'ax-ac2'; $)
+
+  ${
+    $d x y $.
+    $( The Axiom of Choice implies that the cardinalities of the layers of the
+       cumulative hierarchy form a proper class.  (Contributed by BTernaryTau,
+       2-Jul-2026.) $)
+    rncardr1prc $p |- ( CHOICE -> -. ran ( card o. R1 ) e. _V ) $=
+      ( vx vy wac ccrd cr1 ccom crn cvv wcel con0 onprc wf1 wfn cdm wceq dfac10
+      wf wi wfun cv cen wbr crab cint df-card funmpt2 df-fn mpbiran sylbb2 r111
+      ax-mp fnfco sylancl dffn3 sylib wsmo smobeth smo11 mpan2 f1dmex 3syl mtoi
+      f1f ex ) CDEFZGZHIZJHIZKCJVFVEQZJVFVELZVGVHRCVEJMZVICDHMZJHEQZVKCDNHOZVLP
+      VLDSVNAHBTATUAUBBJUCUDDABUEUFDHUGUHUIJHELVMUJJHEVCUKHJDEULUMJVEUNUOVIVEUP
+      VJUQJVFVEURUSVJVGVHJVFHVEUTVDVAVB $.
+    $( $j usage 'rncardr1prc' avoids 'ax-ac' 'ax-ac2'; $)
+  $}
+
+  ${
+    $d v w $.  $d A s $.  $d s y $.  $d B y z $.  $d B s x $.  $d r s x $.
+    acwer1prclem.1 $e |- W = { r | E. x e. On
+        ( r C_ ( ( R1 ` x ) X. ( R1 ` x ) ) /\ r We ( R1 ` x ) ) } $.
+    $( Lemma for ~ acwer1prc .  (Contributed by BTernaryTau, 31-Jul-2026.) $)
+    acwer1prclem $p |- ( ( CHOICE /\ _om ~<_ A /\ ( card ` ( R1 ` B ) ) = A )
+        -> E. s ( ( card ` s ) e. ( card " W ) /\ ( card ` s ) = A ) ) $=
+      ( vy wac com wbr cr1 ccrd wceq cv wwe wcel wa con0 c0 vz cdom cfv w3a cxp
+      vw vv wss wex cima simp1 breq2 biimpar cdm cvv fvex acnum mpi cen cardid2
+      domentr sylan2 expcom syl5 ancomsd 3impib wal dfac8 weeq2 exbidv weexenwe
+      spcv sylbi sylan carden2b 3anim3i eximi syl syl2anc wi wrex fveq2 sqxpeqd
+      df-3an sseq2d eqidd weeq12d anbi12d rspcev wn 0elon r1fnon eleq2i sylnbir
+      fndmi ndmfv r10 eqtr4di biimpa sylancr pm2.61ian vex sseq1 rexbidv sylibr
+      weeq1 elab2 wfun cab cardf2 ffun ax-mp funfvima mpan syli im2anan9 sylani
+      wf eqtr biimtrid eximdv 3adant2 mpd ) IJBUBKZCLUCZMUCZBNZUDZEOZYEYEUEZUHZ
+      YEYIPZYIMUCZYFNZUDZEUIZYMMDUJQZYMBNZRZEUIZYHIJYEUBKZYPIYDYGUKIYDYGUUAIYGY
+      DUUAYGYDRJYFUBKZIUUAYGUUBYDYFBJUBULUMUUBIUUAIUUBYEMUNZQZUUAIYEUOQUUDCLUPZ
+      YEUOUQURUUDUUBYFYEUSKUUAYEUTJYFYEVAVBVBVCVDVEVFIUUARYKYLYIYEUSKZUDZEUIZYP
+      IYEHOZPZHUIZUUAUUHIUAOZUUIPZHUIZUAVGUUKUAHVHUUNUUKUAYEUUEUULYENUUMUUJHUUL
+      YEUUIVIVJVLVMYEEHVKVNUUGYOEUUFYNYKYLYIYEVOVPVQVRVSIYGYPYTVTYDIYGRZYOYSEYO
+      YKYLRZYNRUUOYSYKYLYNWDUUPUUOYIDQZYNYSUUPYIAOZLUCZUUSUEZUHZUUSYIPZRZASWAZU
+      UQCSQZUUPUVDUVCUUPACSUURCNZUVAYKUVBYLUVFUUTYJYIUVFUUSYEUURCLWBZWCWEUVFUUS
+      YEYIYIUVFYIWFUVGWGWHWIUVEWJZUUPRTSQYITLUCZUVIUEZUHZUVIYIPZRZUVDWKUVHUUPUV
+      MUVHYKUVKYLUVLUVHYJUVJYIUVHYEUVIUVHYETUVIUVECLUNZQYETNUVNSCSLWLWOWMCLWPWN
+      WQWRZWCWEUVHYEUVIYIYIUVHYIWFUVOWGWHWSUVCUVMATSUURTNZUVAUVKUVBUVLUVPUUTUVJ
+      YIUVPUUSUVIUURTLWBZWCWEUVPUUSUVIYIYIUVPYIWFUVQWGWHWIWTXAFOZUUTUHZUUSUVRPZ
+      RZASWAUVDFYIDEXBUVRYINZUWAUVCASUWBUVSUVAUVTUVBUVRYIUUTXCUUSUVRYIXFWHXDGXG
+      XEIUUQYQYGYNYRUUQIYIUUCQZYQYIDUQMXHZUWCUUQYQVTUFOUGOUSKUFSWAUGXIZSMXRUWDU
+      GUFXJUWESMXKXLDYIMXMXNXOYNYGYRYMYFBXSVCXPXQXTYAYBYC $.
+  $}
+
+  ${
+    $d u v $.  $d w y z $.  $d s x z $.  $d r s x $.  $d W s y z $.
+    acwer1prc.1 $e |- W = { r | E. x e. On
+        ( r C_ ( ( R1 ` x ) X. ( R1 ` x ) ) /\ r We ( R1 ` x ) ) } $.
+    $( The class of all well-orderings of the stages of the cumulative
+       hierarchy is a proper class.  (Contributed by BTernaryTau,
+       31-Jul-2026.) $)
+    acwer1prc $p |- ( CHOICE -> -. W e. _V ) $=
+      ( vy vz vs vw wac cvv wcel ccrd cr1 com cv cfv wceq con0 wrex syl vv ccom
+      vu crn cdif rncardr1prc wb omex difex2 ax-mp sylnib cres cima wss wa cdom
+      wbr wex w3a simpl cfn eldifn eldifi imassrn sseli cen cab cardf2 frn 3syl
+      wn wf onfin mtbird cdm vex acnum mpi infinfnum imbitrid wfun ffun fvelima
+      imp mpan wfn r1fnon fnfun elrnrexdm mp2b fndmi rexeqi sylib rexex fveqeq2
+      wi biimpcd eximdv mpan9 rexlimiva adantl 3jca acwer1prclem 3expia exlimdv
+      3impia eleq1 biimpac exlimiv ex ssrdv rnco2 difeq1i resima 3sstr4g dfac10
+      wfo df-fn mpbiran sylbb2 dffn2 ssv sylancl fimadmfo focdmex syl5com ssexg
+      fssres syl6an mtod ) IBJKZLMUBUDZNUEZJKZIYLJKZYNUFNJKYOYNUGUHYLNJUIUJUKIY
+      MLBULZBUMZUNYKYQJKZYNILMUDZUMZNUEZLBUMZYMYQIEUUAUUBIEOZUUAKZUUCUUBKZIUUDU
+      OZINUUCUPUQZFOZMPZLPUUCQZFURZUSGOLPZUUBKZUULUUCQZUOZGURZUUEUUFIUUGUUKIUUD
+      UTIUUDUUGUUDUUCVAKZVKZIUUGUUDUUQUUCNKZUUCYTNVBUUDUUCRKZUUQUUSUGUUDUUCYTKZ
+      UUCLUDZKUUTUUCYTNVCZYTUVBUUCLYSVDVEUVBRUUCUAOUCOVFUQUARSUCVGZRLVLZUVBRUNU
+      CUAVHZUVDRLVIUJVEVJUUCVMTVNIUUCLVOZKZUURUUGUGIUUCJKUVHEVPUUCJVQVRUUCVSTVT
+      WDUUDUUKIUUDUVAHOZLPUUCQZHYSSZUUKUVCLWAZUVAUVKUVEUVLUVFUVDRLWBUJZHUUCYSLW
+      CWEUVJUUKHYSUVIYSKZUVIUUIQZFURZUVJUUKUVNUVOFRSZUVPUVNUVOFMVOZSZUVQMRWFMWA
+      UVNUVSWPWGRMWHFMUVIWIWJUVOFUVRRRMWGWKWLWMUVOFRWNTUVJUVOUUJFUVOUVJUUJUVIUU
+      IUUCLWOWQWRWSWTVJXAXBIUUGUUKUUPIUUGUOUUJUUPFIUUGUUJUUPAUUCUUHBGCDXCXDXEXF
+      UUOUUEGUUNUUMUUEUULUUCUUBXGXHXIVJXJXKYLYTNLMXLXMLBXNXOIBYQYPXQZYKYRIBJYPV
+      LZUVTIJJLVLZBJUNUWAILJWFZUWBIUVGJQZUWCXPUWCUVLUWDUVMLJXRXSXTJLYAWMBYBJJBL
+      YHYCBJYPYDTBYQJYPYEYFYMYQJYGYIYJ $.
+  $}
 
 
 $(
@@ -579330,7 +579769,7 @@ $)
     vonf1wev.1 $e |- R = { <. x , y >. | ( F ` x ) e. ( F ` y ) } $.
     $( If ` F ` maps the universe one-to-one into the ordinals, then ` R `
        well-orders the universe.  This is the ZFC version of (6 ` -> ` 3) which
-       is used in place of (7 ` -> ` 3) in
+       can be used in place of (7 ` -> ` 3) in
        ~ https://tinyurl.com/hamkins-gblac .  Note that in NBG set theory the
        antecedent would be something like ` A. X E. F F : X -1-1-> On ` , but
        since we cannot quantify over classes, we instead consider only the case
@@ -579493,6 +579932,127 @@ $)
       wceq wb ) EFBGZAFBAHZIZAFCIZTEFBIAEJUBEFBKALEFABMNCUARUCUBSDAFCUAOPQ $.
     $( $j usage 'vonf1oonf1' avoids 'ax-rep' 'ax-pow' 'ax-un' 'ax-reg' 'ax-inf'
        'ax-inf2' 'ax-ac' 'ax-ac2'; $)
+  $}
+
+  ${
+    $d ph z $.  $d w z $.  $d F w x y $.
+    vonf1onprcf1ac.1 $e |- ( ph -> F : _V -1-1-> On ) $.
+    vonf1onprcf1ac.2 $e |- ( ph -> -. A e. _V ) $.
+    vonf1onprcf1ac.3 $e |- I = ( `' ( F |` A ) o. H ) $.
+    vonf1onprcf1ac.4 $e |- H = OrdIso ( _E , ( F " A ) ) $.
+    $( If ` F ` maps the universe one-to-one into the ordinals and ` A ` is a
+       proper class, then ` I ` maps the ordinals one-to-one into ` A ` and the
+       Axiom of Choice holds.  This is the ZFC version of (6 ` -> ` 7) in
+       ~ https://tinyurl.com/hamkins-gblac .  Note that in NBG set theory the
+       first hypothesis would be something like
+       ` ph -> A. X E. F F : X -1-1-> On ` , but since we cannot quantify over
+       classes, we instead consider only the case ` X = _V ` which is
+       sufficient for this proof.  (Contributed by BTernaryTau,
+       22-Jun-2026.) $)
+    vonf1onprcf1ac $p |- ( ph -> ( I : On -1-1-> A /\ CHOICE ) ) $=
+      ( vz vw vx vy con0 wf1o cvv syl cep wwe cv wf1 wac cres ccnv ccom wss ssv
+      cima f1ores sylancl f1ocnv wiso wn wf f1f fimassd wi f1preimaex mp3an2 ex
+      wcel mtod epweon wess mpi wse epse ordtypeon sylan syl2anc f1oco wceq a1i
+      isof1o f1oeq1d mpbird f1of1 wex wal cfv copab eqid vonf1wev ax-mp cxp cin
+      3syl weinxp vex xpex inex2 weeq1 spcev sylbi alrimiv dfac8 sylibr jca ) A
+      NBEUAZUBANBEOZWSAWTNBCBUCZUDZDUEZOZACBUHZBXBOZNXEDOZXDABXEXAOZXFAPNCUAZBP
+      UFZXHFBUGZPNBCUIUJBXEXAUKQANXERRDULZXGAXENUFZXEPVAZUMZXLAPNCBAXIPNCUNFPNC
+      UOQUPAXNBPVAZGAXIXNXPUQFXIXNXPXIXJXNXPXKPNBCPURUSUTQVBXMXERSZXOXLXMNRSXQV
+      CXENRVDVEXQXERVFXOXLXEVGXERDIVHUSVIVJNXERRDVNQNXEBXBDVKVJANBEXCEXCVLAHVMV
+      OVPNBEVQQAJTZKTZSZKVRZJVSUBAYAJAXRLTCVTMTCVTVALMWAZSZYAAXIPYBSZYCFLMYBCYB
+      WBWCXRPUFYDYCUQXRUGXRPYBVDWDWGYCXRYBXRXRWEZWFZSZYAXRYBWHXTYGKYFYEYBXRXRJW
+      IZYHWJWKXRXSYFWLWMWNQWOJKWPWQWR $.
+    $( $j usage 'vonf1onprcf1ac' avoids 'ax-reg' 'ax-inf' 'ax-inf2' 'ax-ac'
+       'ax-ac2'; $)
+  $}
+
+  ${
+    $d A y $.  $d W y $.  $d r x y $.  $d B w x y $.  $d B v w y $.
+    onprcf1acwevdlem1.1 $e |- W = { r | E. x e. On
+        ( r C_ ( ( R1 ` x ) X. ( R1 ` x ) ) /\ r We ( R1 ` x ) ) } $.
+    $( Lemma for ~ onprcf1acwevd .  (Contributed by BTernaryTau,
+       10-Sep-2026.) $)
+    onprcf1acwevdlem1 $p |- ( ( A C_ W /\ B e. On /\
+        A. y e. A -. y We ( R1 ` B ) ) -> A e. _V ) $=
+      ( vw vv wss con0 wcel cr1 cv wwe wn w3a cvv wi wa cfv wral cxp wex 19.28v
+      cab df-ral anbi2i bitr4i df-3an albii 3bitr4ri nfa1 nfcv pm2.27 3anim123d
+      wal idd wrex simp1 ssel2 vex wceq sseq1 weeq1 anbi12d rexbidv elab2 sylib
+      expcom syl5 ontri1 biimprd r1ord3 3impia wess syl con3d com23 syl5d con4d
+      3expia jctild impancom imp adantld r1ord2 fvex id sqxpeqd weeq2 3anbi123d
+      sseq2d spcev 3expib syli rexlimdva 3anbi23d exbidv elab imbitrrdi 3adant1
+      sylcom syldc sps ssrd sylbi abweex ax-mp ssex ) CEJZDKLZDMUAZBNZOZPZBCUBZ
+      QZCHNZXMJZINZXSXSUCZJZXSYAOZQZHUDZIUFZJZCRLXRXKXLXNCLZXPSZQZBUQZYHXKXLTZY
+      JTZBUQZYMXQTZYLXRYOYMYJBUQZTYPYMYJBUEXQYQYMXPBCUGUHUIYKYNBXKXLYJUJUKXKXLX
+      QUJULYLBCYGYKBUMBCUNBYGUNYKYIXNYGLZSBYIYKXKXLXPQZYRYIXKXKXLXLYJXPYIXKURYI
+      XLURYIXPUOUPYIYSXNANZMUAZUUAUCZJZUUAXNOZTZAKUSZYRYSXKYIUUFXKXLXPUTXKYIUUF
+      XKYITXNELUUFCEXNVAFNZUUBJZUUAUUGOZTZAKUSUUFFXNEBVBZUUGXNVCZUUJUUEAKUULUUH
+      UUCUUIUUDUUGXNUUBVDUUAUUGXNVEVFVGGVHVIVJVKXLXPUUFYRSXKXLXPTZUUFXTXNYBJZXS
+      XNOZQZHUDZYRUUMUUEUUQAKUUEUUMYTKLZTZXLYTDLZTZUUQUUSUUDUVAUUCUUMUURUUDUVAS
+      ZXLUURXPUVBXLUURXPUVBXLUURXPQZUUDUUTXLUVCUUTUUDXLUURXPUUTPZUUDPZSXLUURTZU
+      VDDYTJZXPUVEUVFUVGUVDDYTVLVMUVFUVGXPUVEXLUURUVGXPUVESXLUURUVGQZUUDXOUVHXM
+      UUAJZUUDXOSXLUURUVGUVIDYTVNVOXMUUAXNVPVQVRWBVSVTVOWAXLUURXPUTWCWBWDWEWFUV
+      AUUAXMJZUUEUUQSXLUUTUVJYTDWGWEUVJUUCUUDUUQUUPUVJUUCUUDQHUUAYTMWHXSUUAVCZX
+      TUVJUUNUUCUUOUUDXSUUAXMVDUVKYBUUBXNUVKXSUUAUVKWIWJWMXSUUAXNWKWLWNWOVQWPWQ
+      YFUUQIXNUUKYAXNVCZYEUUPHUVLYCUUNYDUUOXTYAXNYBVDXSYAXNVEWRWSWTXAXBXCXDXEXF
+      XGCYGXMRLYGRLDMWHHXMRIXHXIXJVQ $.
+  $}
+
+  ${
+    $d ph u y $.  $d F u w $.  $d S q t z $.  $d F q w y z $.  $d q t w y z $.
+    $d q t v y z $.
+    onprcf1acwevdlem2.1 $e |- R = { <. y , z >. | ( ( rank ` y ) e.
+        ( rank ` z ) \/ ( ( rank ` y ) = ( rank ` z ) /\ y S z ) ) } $.
+    onprcf1acwevdlem2.2 $e |- S =
+        ( F ` |^| { w e. On | ( F ` w ) We ( R1 ` suc ( rank ` y ) ) } ) $.
+    onprcf1acwevdlem2.3 $e |- ( ( ph /\ u e. On ) ->
+        E. w e. On ( F ` w ) We ( R1 ` u ) ) $.
+    $( Lemma for ~ onprcf1acwevd .  (Contributed by BTernaryTau,
+       16-Sep-2026.) $)
+    onprcf1acwevdlem2 $p |- ( ph -> R We _V ) $=
+      ( vv cv crnk cfv cr1 wwe con0 wceq cvv vq vt csuc wrex wal crab wcel wral
+      rankon onsuci ralrimiva eqidd fveq2 weeq12d rexbidv rspcv mpsyl wss wi wn
+      alrimiv vex rankr1 simprbi eqcoms rgenw rabss mpbir cint nfcv nfrab1 nffv
+      nfint nfcxfr nfwe eqtr4di onminsb wess alimi fveq2d rabbidv inteqd suceqd
+      ralv suceq werankwe sylbir 3syl ) ABMZNOZUCZPOZDMZHOZQZDRUDZBUELMZNOZWJSZ
+      LTUFZGQZBUEZTFQZAWPBWKRUGAEMZPOZWNQZDRUDZERUHWPWJWIUIUJAXGERKUKXGWPEWKRXD
+      WKSZXFWODRXHXEWLWNWNXHWNULXDWKPUMUNUOUPUQVAWPXABWTWLURZWPWLGQZXAXIWSWQWLU
+      GZUSZLTUHXLLTXKWJWRWJWRSWQWJPOUGUTXKWQWJLVBVCVDVEVFWSLTWLVGVHWOXJDDWLGDGW
+      ODRUFZVIZHOZJDXNHDHVJDXMWODRVKVMVLVNDWLVJVOWMXNSZWLWLWNGXPWNXOGWMXNHUMJVP
+      XPWLULUNVQWTWLGVRUQVSXBXABTUHXCXABWDBCLUAUBTGFUAMZUCZPOZWNQZDRUFZVIZHOZUB
+      MZNOZUCZPOZWNQZDRUFZVIZHOZIXQWJSZYCXOGYLYBXNHYLYAXMYLXTWODRYLXSWLWNWNYLWN
+      ULYLXRWKPXQWJWEVTUNWAWBVTJVPYDWISZYKXOGYMYJXNHYMYIXMYMYHWODRYMYGWLWNWNYMW
+      NULYMYFWKPYMYEWJYDWINUMWCVTUNWAWBVTJVPWFWGWH $.
+  $}
+
+  ${
+    $d S z $.  $d W u $.  $d ph v y $.  $d u v x $.  $d r u x $.  $d F w y z $.
+    $d F u v w $.
+    onprcf1acwevd.1 $e |- ( ph -> ( -. W e. _V -> F : On -1-1-> W ) ) $.
+    onprcf1acwevd.2 $e |- ( ph -> CHOICE ) $.
+    onprcf1acwevd.3 $e |- W = { r | E. x e. On
+        ( r C_ ( ( R1 ` x ) X. ( R1 ` x ) ) /\ r We ( R1 ` x ) ) } $.
+    onprcf1acwevd.4 $e |- R = { <. y , z >. | ( ( rank ` y ) e. ( rank ` z ) \/
+        ( ( rank ` y ) = ( rank ` z ) /\ y S z ) ) } $.
+    onprcf1acwevd.5 $e |- S =
+        ( F ` |^| { w e. On | ( F ` w ) We ( R1 ` suc ( rank ` y ) ) } ) $.
+    $( If ` F ` maps the ordinals one-to-one into the proper class ` W ` and
+       the Axiom of Choice holds, then ` R ` well-orders the universe.  This is
+       the ZFC version of (7 ` -> ` 3) in ~ https://tinyurl.com/hamkins-gblac .
+       Note that in NBG set theory the first hypothesis would be something like
+       ` ( ph -> A. X ( -. X e. _V -> E. F F : On -1-1-> X ) ) ` , but since we
+       cannot quantify over classes, we instead consider only the case
+       ` X = W ` which is sufficient for this proof.  (Contributed by
+       BTernaryTau, 16-Sep-2026.) $)
+    onprcf1acwevd $p |- ( ph -> R We _V ) $=
+      ( vu con0 wcel wn cvv vv cv cr1 cfv wwe crn wrex wral onprc wf1 acwer1prc
+      wa wf1o wac syl mpd f1f1orn f1of1 3syl f1dmex sylan ex mtoi adantr wss wi
+      wf f1f frnd onprcf1acwevdlem1 3expia mtod dfrex2 sylibr wb wfn ffnd weeq1
+      rexrn mpbid onprcf1acwevdlem2 ) ACDEUAFGHNOAUAUBZQRZULZWBUCUDZPUBZUEZPHUF
+      ZUGZWEEUBHUDZUEZEQUGZWDWGSPWHUHZSWIWDWMWHTRZAWNSWCAWNQTRZUIAWNWOAQWHHUJZW
+      NWOAQIHUJZQWHHUMWPAITRSZWQAUNWRLBIJMUKUOKUPZQIHUQQWHHURUSQWHTHUTVAVBVCVDA
+      WHIVEZWCWMWNVFAQIHAWQQIHVGWSQIHVHUOZVIWTWCWMWNBPWHWBIJMVJVKVAVLWGPWHVMVNA
+      WIWLVOZWCAHQVPXBAQIHXAVQWGWKPEQHWEWFWJVRVSUOVDVTWA $.
+    $( $j usage 'onprcf1acwevd' avoids 'ax-ac' 'ax-ac2'; $)
   $}
 
   ${
@@ -592420,21 +592980,6 @@ $)
     NBQBRSTUAUB $.
 
   ${
-    $d A x y z $.  $d B x y z $.  $d C x y z $.  $d F x y z $.
-    fununiq.1 $e |- A e. _V $.
-    fununiq.2 $e |- B e. _V $.
-    fununiq.3 $e |- C e. _V $.
-    $( The uniqueness condition of functions.  (Contributed by Scott Fenton,
-       18-Feb-2013.) $)
-    fununiq $p |- ( Fun F -> ( ( A F B /\ A F C ) -> B = C ) ) $=
-      ( vx vy vz cv wbr wa wi wal wceq cvv wcel wb breq12 wfun wrel weq 3adant3
-      dffun2 w3a 3adant2 anbi12d eqeq12 3adant1 imbi12d spc3gv mp3an simplbiim
-      ) DUADUBHKZIKZDLZUOJKZDLZMZIJUCZNZJOIOHOZABDLZACDLZMZBCPZNZHIJDUEAQRBQRCQ
-      RVCVHNEFGVBVHHIJABCQQQUOAPZUPBPZURCPZUFZUTVFVAVGVLUQVDUSVEVIVJUQVDSVKUOAU
-      PBDTUDVIVKUSVESVJUOAURCDTUGUHVJVKVAVGSVIUPBURCUIUJUKULUMUN $.
-  $}
-
-  ${
     funbreq.1 $e |- A e. _V $.
     funbreq.2 $e |- B e. _V $.
     funbreq.3 $e |- C e. _V $.
@@ -592585,12 +593130,12 @@ $)
 
   ${
     $d x y $.  $d y ph $.  $d y ps $.
-    $( Lemma for ~ dfon2 .  (Contributed by Scott Fenton, 28-Feb-2011.) $)
+    $( Lemma for ~ dfon2 .  (Contributed by Scott Fenton, 28-Feb-2011.)  (Proof
+       shortened by SN, 5-Oct-2026.) $)
     dfon2lem1 $p |- Tr U. { x | ( ph /\ Tr x /\ ps ) } $=
-      ( vy cv wtr w3a cab cuni truni wcel wsbc nfsbc1v nfv vex weq sbceq1a treq
-      nf3an 3anbi123d elabf simp2bi mprg ) DEZFZACEZFZBGZCHZIFDUIDUIJUDUIKACUDL
-      ZUEBCUDLZUHUJUEUKGCUDUJUEUKCACUDMUECNBCUDMSDOCDPAUJUGUEBUKACUDQUFUDRBCUDQ
-      TUAUBUC $.
+      ( vy cv wtr w3a cab cuni truni wcel simp2 ss2abi sseli vex treq elab mprg
+      sylib ) DEZFZACEZFZBGZCHZIFDUEDUEJTUEKTUCCHZKUAUEUFTUDUCCAUCBLMNUCUACTDOU
+      BTPQSR $.
   $}
 
   ${
@@ -606808,11 +607353,10 @@ $)
      over minimal implicational calculus and the axiomatic definition of
      disjunction (actually, only the elimination axiom ~ jao via its inference
      form ~ jaoi ; the introduction axioms ~ olc and ~ orc are not needed).
-     Note that this theorem shows that actually, the standard instance of
-     ~ curryax implies the standard instance of ~ peirce , which is not the
-     case for the converse ~ bj-peircecurry .  (Contributed by BJ,
-     15-Jun-2021.)  (Proof modification is discouraged.)
-     (New usage is discouraged.) $)
+     This theorem shows that actually, the standard instance of ~ curryax
+     implies the standard instance of ~ peirce , which is not the case for the
+     converse ~ bj-peircecurry .  (Contributed by BJ, 15-Jun-2021.)
+     (Proof modification is discouraged.)  (New usage is discouraged.) $)
   bj-currypeirce $p |-
               ( ( ph \/ ( ph -> ps ) ) -> ( ( ( ph -> ps ) -> ph ) -> ph ) ) $=
     ( wi ax-1 pm2.27 jaoi ) AABCZACZACGAHDGAEF $.
@@ -606827,19 +607371,19 @@ $)
     ( wi wo orc olc peirce peirceroll ax-mp mpsyl ) AAABCZDZCZLAKEKLCZMLCZKAFLA
     CZLCLCNPACZOLAGKACACNQCABGABLHILAAHJII $.
 
-  $( Conjunction in terms of implication and biconditional.  Note that the
-     proof is intuitionistic (use of ~ ax-3 comes from the unusual definition
-     of the biconditional in set.mm).  (Contributed by BJ, 23-Sep-2023.) $)
+  $( Conjunction in terms of implication and biconditional.  The proof is
+     intuitionistic (use of ~ ax-3 comes from the unusual definition of the
+     biconditional in set.mm).  (Contributed by BJ, 23-Sep-2023.) $)
   bj-animbi $p |- ( ( ph /\ ps ) <-> ( ph <-> ( ph -> ps ) ) ) $=
     ( wa wi wb simpl pm3.4 2thd biimp pm2.43d biimpr mpd jcai impbii ) ABCZAABD
     ZEZOAPABFABGHQABQPAQABAPIJZAPKLRMN $.
 
-  $( Curry's paradox.  Note that the proof is intuitionistic (use of ~ ax-3
-     comes from the unusual definition of the biconditional in set.mm).  The
-     paradox comes from the case where ` ph ` is the self-referential sentence
-     "If this sentence is true, then ` ps ` ", so that one can prove
-     everything.  Therefore, a consistent system cannot allow the formation of
-     such self-referential sentences.  This has lead to the study of logics
+  $( Curry's paradox.  The proof is intuitionistic (use of ~ ax-3 comes from
+     the unusual definition of the biconditional in set.mm).  The paradox comes
+     from the case where ` ph ` is the self-referential sentence "If this
+     sentence is true, then ` ps ` ", so that one can prove everything.
+     Therefore, a consistent system cannot allow the formation of such
+     self-referential sentences.  This has lead to the study of logics
      rejecting contraction ~ pm2.43 , such as affine logic and linear logic.
      (Contributed by BJ, 23-Sep-2023.)  (Proof modification is discouraged.) $)
   bj-currypara $p |- ( ( ph <-> ( ph -> ps ) ) -> ps ) $=
@@ -607067,10 +607611,10 @@ $)
   ${
     $d x ph $.  $d x A $.  $d x B $.  $d x X $.
     $( A biconditional connecting the conditional operator for propositions and
-       the conditional operator for classes.  Note that there is no sethood
-       hypothesis on ` X ` : it is implied by either side.  (Contributed by BJ,
-       24-Sep-2019.)  Generalize statement from setvar ` x ` to class ` X ` .
-       (Revised by BJ, 26-Dec-2023.) $)
+       the conditional operator for classes.  There is no sethood hypothesis on
+       ` X ` : it is implied by either side.  (Contributed by BJ, 24-Sep-2019.)
+       Generalize statement from setvar ` x ` to class ` X ` .  (Revised by BJ,
+       26-Dec-2023.) $)
     bj-ififc $p |-
                  ( X e. if ( ph , A , B ) <-> if- ( ph , X e. A , X e. B ) ) $=
       ( vx cif wcel cv wif cab bj-df-ifc eleq2i cvv wa wn wo df-ifp elex adantl
@@ -607230,8 +607774,8 @@ $)
 
   $( In a normal modal logic, the modal axiom GL implies the modal axiom (4).
      Translated to first-order logic, Axiom GL reads
-     ` |- ( A. x ( A. x ph -> ph ) -> A. x ph ) ` .  Note that the antecedent
-     of ~ bj-gl4 is an instance of the axiom GL, with ` ph ` replaced by
+     ` |- ( A. x ( A. x ph -> ph ) -> A. x ph ) ` .  The antecedent of ~ bj-gl4
+     is an instance of the axiom GL, with ` ph ` replaced by
      ` ( A. x ph /\ ph ) ` , which is a modality sometimes called the "strong
      necessity" of ` ph ` .  (Contributed by BJ, 12-Dec-2019.)
      (Proof modification is discouraged.)  (New usage is discouraged.) $)
@@ -608178,10 +608722,17 @@ $)
     $( Proposed definition to replace ~ df-sb and ~ df-sbc .  Proof is
        therefore unimportant.  Contrary to ~ df-sb , this definition makes a
        substituted formula false when one substitutes a non-existent object for
-       a variable: this is better suited to the "Levy-style" treatment of
-       classes as virtual objects adopted by set.mm.  That difference is
-       unimportant since as soon as ~ ax6ev is posited, all variables "exist".
-       (Contributed by BJ, 19-Feb-2026.) $)
+       a variable.  This is better suited to the "Levy-style" treatment of
+       classes as virtual objects adopted by set.mm.  Indeed, in most set
+       theories, and in particular in this database, one wants to be able to
+       _collect the extension of a formula_, so it is natural that the
+       extension of a formula contain only sets, and not proper classes.  This
+       is illustrated by the fact that ~ bj-dfsbc holds unconditionally.  That
+       statement could therefore replace ~ df-clab .
+
+       This definition is equivalent to ~ df-sb when a setvar is substituted
+       for the class, since, as soon as, ~ ax6ev is posited, all variables
+       "exist".  (Contributed by BJ, 19-Feb-2026.) $)
     bj-df-sb $p
             |- ( [. A / x ]. ph <-> E. y ( y = A /\ A. x ( x = y -> ph ) ) ) $=
   ( wsbc cv wceq wa wex weq wi wal sbc7 wsb sbsbc sb6 bitr3i anbi2i exbii bitri
@@ -608568,7 +609119,7 @@ $)
     $( Proof of ~ axc11n from { ~ ax-1 -- ~ ax-7 , ~ axc9 , ~ axc11r } (note
        that ~ axc16 is provable from { ~ ax-1 -- ~ ax-7 , ~ axc11r }).
 
-       Note that ~ axc11n proves (over minimal calculus) that ~ axc11 and
+       Theorem ~ axc11n proves (over minimal calculus) that ~ axc11 and
        ~ axc11r are equivalent.  Therefore, ~ axc11n11 and ~ axc11n11r prove
        that one can use one or the other as an axiom, provided one assumes the
        axioms listed above ( ~ axc11 appears slightly stronger since
@@ -608595,8 +609146,8 @@ $)
 
   ${
     $d y ph $.
-    $( A weak version of ~ ax-12 which is stronger than ~ ax12v .  Note that if
-       one assumes reflexivity of equality ` |- x = x ` ( ~ equid ), then
+    $( A weak version of ~ ax-12 which is stronger than ~ ax12v .  If one
+       assumes reflexivity of equality ` |- x = x ` ( ~ equid ), then
        ~ bj-ax12v3 implies ~ ax-5 over modal logic K (substitute ` x ` for
        ` y ` ).  See also ~ bj-ax12v3ALT .  (Contributed by BJ, 6-Jul-2021.)
        (Proof modification is discouraged.) $)
@@ -608854,7 +609405,7 @@ $)
      forward implication is proved in modal (K4) while the reverse implication
      is proved in modal (T5).  The LHS has the advantage of not involving
      nested quantifiers on the same variable.  Its metaweakening is proved from
-     the core axiom schemes in ~ bj-substw .  Note that in the LHS, the reverse
+     the core axiom schemes in ~ bj-substw .  In the LHS, the reverse
      implication holds by ~ equs4 (or ~ equs4v if a DV condition is added on
      ` x , t ` as in ~ bj-ax12 ), and the forward implication is ~ sbalex .
 
@@ -609565,9 +610116,9 @@ $)
     ( wnnf wex wal wi wnf bj-dfnnf3 df-nf bitr4i ) ABCABDABEFABGABHABIJ $.
 
   $( When ` ph ` is substituted for ` ps ` , this statement expresses
-     nonfreeness in the weak form of nonfreeness ` ( E. -> A. ) ` .  Note that
-     this could also be proved from ~ bj-nnfim , ~ bj-nnfe1 and ~ bj-nnfa1 .
-     (Contributed by BJ, 9-Dec-2023.) $)
+     nonfreeness in the weak form of nonfreeness ` ( E. -> A. ) ` .  This could
+     also be proved from ~ bj-nnfim , ~ bj-nnfe1 and ~ bj-nnfa1 .  (Contributed
+     by BJ, 9-Dec-2023.) $)
   bj-wnfnf $p |- F// x ( E. x ph -> A. x ps ) $=
     ( wex wal wi wnnf bj-wnf2 bj-wnf1 df-bj-nnf mpbir2an ) ACDBCEFZCGLCDLFLLCEF
     ABCHABCILCJK $.
@@ -609949,9 +610500,9 @@ $)
     bj-drnf2v.1 $e |- ( A. x x = y -> ( ph <-> ps ) ) $.
     $( Version of ~ drnf2 with a disjoint variable condition, which does not
        require ~ ax-10 , ~ ax-11 , ~ ax-12 , ~ ax-13 .  Instance of ~ nfbidv .
-       Note that the version of ~ axc15 with a disjoint variable condition is
-       actually ~ ax12v2 (up to adding a superfluous antecedent).  (Contributed
-       by BJ, 17-Jun-2019.)  (Proof modification is discouraged.) $)
+       The version of ~ axc15 with a disjoint variable condition is actually
+       ~ ax12v2 (up to adding a superfluous antecedent).  (Contributed by BJ,
+       17-Jun-2019.)  (Proof modification is discouraged.) $)
     bj-drnf2v $p |- ( A. x x = y -> ( F/ z ph <-> F/ z ps ) ) $=
       ( weq wal nfbidv ) CDGCHABEFI $.
   $}
@@ -609960,9 +610511,9 @@ $)
     $d x y $.
     bj-equs45fv.1 $e |- F/ y ph $.
     $( Version of ~ equs45f with a disjoint variable condition, which does not
-       require ~ ax-13 .  Note that the version of ~ equs5 with a disjoint
-       variable condition is actually ~ sbalex (up to adding a superfluous
-       antecedent).  (Contributed by BJ, 11-Sep-2019.)
+       require ~ ax-13 .  The version of ~ equs5 with a disjoint variable
+       condition is actually ~ sbalex (up to adding a superfluous antecedent).
+       (Contributed by BJ, 11-Sep-2019.)
        (Proof modification is discouraged.) $)
     bj-equs45fv $p |- ( E. x ( x = y /\ ph ) <-> A. x ( x = y -> ph ) ) $=
       ( weq wa wex wi wal nf5ri anim2i eximi equs5av syl equs4v impbii ) BCEZAF
@@ -610077,8 +610628,8 @@ $)
     ( weq wal wn hbnae sp impbii ) ABDAEFZJCEABCGJCHI $.
 
   $( A special instance of ~ bj-hbaeb2 .  A lemma for distinct var
-     metavariables.  Note that the right-hand side is a closed formula (a
-     sentence).  (Contributed by BJ, 6-Oct-2018.) $)
+     metavariables.  The right-hand side is a closed formula (a sentence).
+     (Contributed by BJ, 6-Oct-2018.) $)
   bj-dvv $p |- ( A. x x = y <-> A. x A. y x = y ) $=
     ( bj-hbaeb2 ) ABBC $.
 
@@ -610411,7 +610962,7 @@ $(
 
   ${
     $d ph x y $.
-    @( Proof of ~ ax-5 from ~ ax-bj-00 (note that the use of ~ ax-5 is via
+    @( Proof of ~ ax-5 from ~ ax-bj-00 (the use of ~ ax-5 is via
        ~ 19.8v , which is a form of ~ sp , and ~ ax-5 and the auxiliary axioms
        are used via the axiom of twoness ~ dtru ).  (Contributed by BJ,
        19-Mar-2021.)  (Proof modification is discouraged.)
@@ -610541,7 +611092,7 @@ $(
   Eliminability of class variables using the $a-statements ~ ax-ext ,
   ~ df-clab , ~ df-cleq , ~ df-clel is an easy result, proved for instance in
   Appendix X of Azriel Levy, _Basic Set Theory_, Dover Publications, 2002.
-  Note that viewed from the set.mm axiomatization, it is a metatheorem not
+  Viewed from the set.mm axiomatization, it is a metatheorem not
   formalizable in set.mm.  It states: every formula in the language of
   FOL + ` e. ` + class terms, but without class variables, is provably
   equivalent (over {FOL, ~ ax-ext , ~ df-clab , ~ df-cleq , ~ df-clel }) to a
@@ -610566,7 +611117,7 @@ $(
   by (i) the formula proved by "eliminablei".  One sees that the RHS of (1) has
   no class terms, the RHS's of (2x) have only class terms of the form dealt
   with by (1), and the RHS's of (3x) have only class terms of the forms dealt
-  with by (1) and (2a).  Note that in order to prove ~ eliminable2a ,
+  with by (1) and (2a).  In order to prove ~ eliminable2a ,
   ~ eliminable2b and ~ eliminable3a , we need to substitute a class variable
   for a setvar variable.  This is possible because setvars are class terms:
   this is the content of the syntactic theorem ~ cv , which is used in these
@@ -610578,7 +611129,7 @@ $(
   constituting the formula, then the same FOL-combination of these equivalents
   will be equivalent to the original formula.
 
-  Note that one has a slightly more precise result: if the original formula has
+  One has a slightly more precise result: if the original formula has
   only class terms appearing in atomic formulas of the form
    ` y e. { x | ph } ` , then ~ df-clab is sufficient (over FOL) to eliminate
   class terms, and if the original formula has only class terms appearing in
@@ -610721,7 +611272,7 @@ $(
   extensionality, together with the theorems below.  In that subsection, the
   last statement should be ~ df-cleq .
 
-  Note that without ~ ax-ext , the $a-statements ~ df-clab , ~ df-cleq , and
+  Without ~ ax-ext , the $a-statements ~ df-clab , ~ df-cleq , and
   ~ df-clel are no longer eliminable (see previous section) (but PROBABLY
   ~ df-clab is still conservative , while ~ df-cleq and ~ df-clel are not).
   This is not a reason not to study what is provable
@@ -610776,9 +611327,9 @@ $)
        equal to a class abstraction is proved by ~ abid1 , which requires {
        ~ ax-8 , ~ ax-9 , ~ ax-ext , ~ df-clab , ~ df-cleq , ~ df-clel }.
 
-       Note that there is no disjoint variable condition on ` x , y ` but the
-       theorem does not depend on ~ ax-13 .  Actually, the proof depends only
-       on the logical axioms ~ ax-1 through ~ ax-7 and ~ sp .
+       There is no disjoint variable condition on ` x , y ` but the theorem
+       does not depend on ~ ax-13 .  Actually, the proof depends only on the
+       logical axioms ~ ax-1 through ~ ax-7 and ~ sp .
 
        The symbol "E!" was chosen to be reminiscent of the analogous predicate
        in (inclusive or non-inclusive) free logic, which deals with the
@@ -610838,10 +611389,10 @@ $)
     $d y A $.
     bj-issetw.1 $e |- ph $.
     $( The closest one can get to ~ isset without using ~ ax-ext .  See also
-       ~ vexw .  Note that the only disjoint variable condition is between
-       ` y ` and ` A ` .  From there, one can prove ~ isset using ~ eleq2i
-       (which requires ~ ax-ext and ~ df-cleq ).  (Contributed by BJ,
-       29-Apr-2019.)  (Proof modification is discouraged.) $)
+       ~ vexw .  The only disjoint variable condition is between ` y ` and
+       ` A ` .  From there, one can prove ~ isset using ~ eleq2i (which
+       requires ~ ax-ext and ~ df-cleq ).  (Contributed by BJ, 29-Apr-2019.)
+       (Proof modification is discouraged.) $)
     bj-issetw $p |- ( A e. { x | ph } <-> E. y y = A ) $=
       ( cab wcel cv wceq wex wb bj-issetwt mpg ) ADABFGCHDICJKBABCDLEM $.
     $( $j usage 'bj-issetw' avoids 'ax-9' 'ax-10' 'ax-11' 'ax-12' 'ax-13'
@@ -611115,10 +611666,10 @@ $)
      satisfy ` ph ` while the RHS says that classes are elements of ` B ` if
      and only if they are sets and satisfy ` ph ` .  Therefore, the LHS is a
      characterization among sets while the RHS is a characterization among
-     classes.  Note that the LHS is often formulated using a class variable
-     instead of the universe ` _V ` while this is not possible for the RHS
-     (apart from using ` B ` itself, which would not be very useful).
-     (Contributed by BJ, 26-Feb-2023.) $)
+     classes.  The LHS is often formulated using a class variable instead of
+     the universe ` _V ` while this is not possible for the RHS (apart from
+     using ` B ` itself, which would not be very useful).  (Contributed by BJ,
+     26-Feb-2023.) $)
   elelb $p |- ( ( A e. _V -> ( A e. B <-> ph ) ) <->
                 ( A e. B <-> ( A e. _V /\ ph ) ) ) $=
     ( wcel cvv elex biadani ) BCDBEDABCFG $.
@@ -612148,7 +612699,7 @@ $(
   The projections are denoted by ` pr1 ` and ` pr2 ` and the couple with
   projections (or coordinates) ` A ` and ` B ` is denoted by ` (| A ,, B |) ` .
 
-  Note that this definition uses the Kuratowski definition ( ~ df-op ) as a
+  This definition uses the Kuratowski definition ( ~ df-op ) as a
   preliminary definition, and then "redefines" a couple.  It could also use the
   "short" version of the Kuratowski pair (see ~ opthreg ) without needing the
   axiom of regularity; it could even bypass this definition by "inlining" it.
@@ -612161,7 +612712,7 @@ $(
   Academic Press, 1965
   (second edition 1986).
 
-  Note that this extends in a natural way to tuples.
+  This extends in a natural way to tuples.
 
   A variation of this definition is justified in ~ opthprc , but here we use
   "tagged versions" of the factors (see ~ df-bj-tag ) so that an m-tuple can
@@ -612263,11 +612814,11 @@ $)
   $( Definition of the Morse monuple (1-tuple).  This is not useful per se, but
      is used as a step towards the definition of couples (2-tuples, or ordered
      pairs).  The reason for "tagging" the set is so that an m-tuple and an
-     n-tuple be equal only when m = n.  Note that with this definition, the
-     0-tuple is the empty set.  New usage is discouraged because the precise
-     definition is generally unimportant compared to the characteristic
-     properties ~ bj-2upleq , ~ bj-2uplth , ~ bj-2uplex , and the properties of
-     the projections (see ~ df-bj-pr1 and ~ df-bj-pr2 ).  (Contributed by BJ,
+     n-tuple be equal only when m = n.  With this definition, the 0-tuple is
+     the empty set.  New usage is discouraged because the precise definition is
+     generally unimportant compared to the characteristic properties
+     ~ bj-2upleq , ~ bj-2uplth , ~ bj-2uplex , and the properties of the
+     projections (see ~ df-bj-pr1 and ~ df-bj-pr2 ).  (Contributed by BJ,
      6-Apr-2019.)  (New usage is discouraged.) $)
   df-bj-1upl $a |- (| A |) = ( { (/) } X. tag A ) $.
 
@@ -612316,8 +612867,8 @@ $)
     ( wcel bj-cpr1 c0 bj-cproj cvv df-bj-pr1 bj-projex eqeltrid ) ABCADEAFGAHEA
     BIJ $.
 
-  $( The characteristic property of monuples.  Note that this holds without
-     sethood hypotheses.  (Contributed by BJ, 6-Apr-2019.) $)
+  $( The characteristic property of monuples.  This holds without sethood
+     hypotheses.  (Contributed by BJ, 6-Apr-2019.) $)
   bj-1uplth $p |- ( (| A |) = (| B |) <-> A = B ) $=
     ( bj-c1upl wceq bj-cpr1 bj-pr1eq bj-pr11val 3eqtr3g bj-1upleq impbii ) ACZB
     CZDZABDMKELEABKLFAGBGHABIJ $.
@@ -612401,8 +612952,8 @@ $)
     ( wcel bj-cpr2 c1o bj-cproj cvv df-bj-pr2 bj-projex eqeltrid ) ABCADEAFGAHE
     ABIJ $.
 
-  $( The characteristic property of couples.  Note that this holds without
-     sethood hypotheses (compare ~ opth ).  (Contributed by BJ, 6-Oct-2018.) $)
+  $( The characteristic property of couples.  This holds without sethood
+     hypotheses (compare ~ opth ).  (Contributed by BJ, 6-Oct-2018.) $)
   bj-2uplth $p |- ( (| A ,, B |) = (| C ,, D |) <-> ( A = C /\ B = D ) ) $=
     ( bj-c2uple wceq wa bj-cpr1 bj-pr1eq bj-pr21val 3eqtr3g bj-pr2eq bj-pr22val
     bj-cpr2 jca bj-2upleq imp impbii ) ABEZCDEZFZACFZBDFZGUAUBUCUASHTHACSTIABJC
@@ -612426,12 +612977,12 @@ $)
 
   $( A couple is never equal to a monuple.  It is in order to have this
      "non-clashing" result that tagging was used.  Without tagging, we would
-     have ` (| A , (/) |) = (| A |) ` .  Note that in the context of Morse
-     tuples, it is natural to define the 0-tuple as the empty set.  Therefore,
-     the present theorem together with ~ bj-1upln0 and ~ bj-2upln0 tell us that
-     an m-tuple may equal an n-tuple only when m = n, at least for m, n <= 2,
-     but this result would extend as soon as we define n-tuples for higher
-     values of n.  (Contributed by BJ, 21-Apr-2019.) $)
+     have ` (| A , (/) |) = (| A |) ` .  In the context of Morse tuples, it is
+     natural to define the 0-tuple as the empty set.  Therefore, the present
+     theorem together with ~ bj-1upln0 and ~ bj-2upln0 tell us that an m-tuple
+     may equal an n-tuple only when m = n, at least for m, n <= 2, but this
+     result would extend as soon as we define n-tuples for higher values of n.
+     (Contributed by BJ, 21-Apr-2019.) $)
   bj-2upln1upl $p |- (| A ,, B |) =/= (| C |) $=
     ( bj-c1upl cdif wne wpss c1o csn bj-ctag cxp cun wss difeq2i cin wceq ax-mp
     c0 mpbi 0pss bj-c2uple xpundi incom xp01disjl eqtr3i disjdif2 1oex bj-tagn0
@@ -612716,6 +613267,36 @@ $)
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Relations, functions, composition: supplements
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  ${  $d A x y $.  $d B x y z $.  $d C x y z $.
+    $( Membership in a composition.  (Contributed by BJ, 16-Aug-2026.) $)
+    elco $p |- ( A e. ( C o. B ) <-> E. x E. y ( A = <. x , y >. /\ E. z
+               ( x B z /\ z C y ) ) ) $=
+      ( ccom wcel cv wbr wa wex copab cop wceq df-co eleq2i elopab bitri ) DFEG
+      ZHDAIZCIZEJUBBIZFJKCLZABMZHDUAUCNOUDKBLALTUEDABCFEPQUDABDRS $.
+  $}
+
+  ${  $d A x y z t $.
+    $( Precomposition with the identity expressed as intersection.
+       (Contributed by BJ, 16-Aug-2026.) $)
+    coi1in $p |- ( A o. _I ) = ( A i^i ( _V X. _V ) ) $=
+      ( vx vy vz vt cid ccom cvv cxp cin cv wbr wa wex vex pm5.32i exbii 3bitri
+      wcel 3bitr4i cop wceq 19.42vv weq ideq anbi1i equcomi breq1d bitri ax6evr
+      19.41v mpbiran df-br eleq1 bitr4id biancomi pm3.2i anass elxp anbi2i elco
+      biantru elin eqriv ) BAFGZAHHIZJZBKZCKZDKZUAZUBZVIEKZFLZVMVJALZMZENZMZDNZ
+      CNZVHASZVHVFSZMZVHVESVHVGSWAVLVIHSZVJHSZMZMZMZDNZCNWAWGDNCNZMVTWCWAWGCDUC
+      VSWICVRWHDVRWAVLMZWKWFMWHVRWAVLVLVQWAVLVQVKASZWAVQCEUDZVIVJALZMZENZWNWLVP
+      WOEVPWMVOMWOVNWMVOVIVMEOUEUFWMVOWNWMVMVIVJACEUGUHPUIQWPWMENWNECUJWMWNEUKU
+      LVIVJAUMRVHVKAUNUOPUPWFWKWDWECODOUQVBWAVLWFURRQQWBWJWACDVHHHUSUTTCDEVHFAV
+      AVHAVFVCTVD $.
+  $}
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
   Set theory: miscellaneous
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
@@ -612751,7 +613332,7 @@ $)
      wanted result.  To translate a biconditional into a class equality, ~ pw0
      uses ~ abbii (which yields an equality of class abstractions), while
      ~ bj-pw0ALT uses ~ eqriv (which requires a biconditional of membership of
-     a given setvar variable).  Note that ~ abbii , through its closed form
+     a given setvar variable).  Theorem ~ abbii , through its closed form
      ~ abbi , is proved from ~ eqrdv , which is the deduction form of ~ eqriv .
      In the other direction, ~ velpw and ~ velsn are proved from the
      definitions of powerclass and singleton using ~ elabg , which is a version
@@ -612842,8 +613423,8 @@ $)
 
   ${
     $d x y $.
-    $( Alternate proof of ~ bj-nuliota .  Note that this alternate proof uses
-       the fact that ` iota x ph ` evaluates to ` (/) ` when there is no ` x `
+    $( Alternate proof of ~ bj-nuliota .  This alternate proof uses the fact
+       that ` iota x ph ` evaluates to ` (/) ` when there is no ` x `
        satisfying ` ph ` ( ~ iotanul ).  This is an implementation detail of
        the encoding currently used in set.mm and should be avoided.
        (Contributed by BJ, 30-Nov-2019.)  (Proof modification is discouraged.)
@@ -612930,7 +613511,7 @@ $)
       FZVEVOUQVPURVNURVNVPUFZVQUGQUISVJVHAVFVGAHVFUHUJRRSUKUNABCTHAACTULUM $.
   $}
 
-  $( The empty set is never an element in an ordered-pair class abstraction.
+  $( The empty set is not an element of an ordered-pair class abstraction.
      (Contributed by Alexander van der Vekens, 5-Nov-2017.)  (Proof shortened
      by BJ, 22-Jul-2023.)
 
@@ -613036,9 +613617,9 @@ $)
        True truth constant existentially quantified over a fresh variable,
        ~ extru ).  This is the conclusion of ~ bj-axnul .
 
-       Note that the weak emptyset axiom implies ` |- ( E. x T. -> E. y T. ) `
-       without DV conditions hence also the same statement as the weak emptyset
-       axiom without DV conditions on ` x ` , but only on ` y , z ` .
+       The weak emptyset axiom implies ` |- ( E. x T. -> E. y T. ) ` without DV
+       conditions hence also the same statement as the weak emptyset axiom
+       without DV conditions on ` x ` , but only on ` y , z ` .
 
        By "axiom of separation", we mean the universal closure of ~ ax-sep ,
        simulated here by its instance with ` F. ` substituted for ` ph ` (and
@@ -613512,7 +614093,7 @@ $)
   ${
     $d A x $.  $d B x $.  $d ps x $.
     bj-raldifsn.is $e |- ( x = B -> ( ph <-> ps ) ) $.
-    $( All elements in a set satisfy a given property if and only if all but
+    $( All elements of a set satisfy a given property if and only if all but
        one satisfy that property and that one also does.  Typically, this can
        be used for characterizations that are proved using different methods
        for a given element and for all others, for instance zero and nonzero
@@ -613557,12 +614138,12 @@ $)
        collections.  This is also illustrated by the lack of sethood condition
        in ~ bj-ismoore .
 
-       Note that the closed sets of a topology form a Moore collection, so a
-       topology is a set, and this remark also applies to many other families
-       of sets (namely, as soon as the whole set is required to be a set of the
-       family, then the associated kind of family has no proper classes: that
-       this condition suffices to impose sethood can be seen in this proof,
-       which relies crucially on ~ uniexr ).
+       The closed sets of a topology form a Moore collection, so a topology is
+       a set, and this remark also applies to many other families of sets
+       (namely, as soon as the whole set is required to be a set of the family,
+       then the associated kind of family has no proper classes: that this
+       condition suffices to impose sethood can be seen in this proof, which
+       relies crucially on ~ uniexr ).
 
        Note: if, in the above predicate, we substitute ` ~P X ` for ` A ` ,
        then the last ` e. ~P X ` could be weakened to ` C_ X ` , and then the
@@ -613622,10 +614203,10 @@ $)
 
   ${
     $d x y A $.
-    $( Characterization of Moore collections.  Note that there is no sethood
-       hypothesis on ` A ` : it is implied by either side (this is obvious for
-       the LHS, and is the content of ~ bj-mooreset for the RHS).  (Contributed
-       by BJ, 9-Dec-2021.) $)
+    $( Characterization of Moore collections.  There is no sethood hypothesis
+       on ` A ` : it is implied by either side (this is obvious for the LHS,
+       and is the content of ~ bj-mooreset for the RHS).  (Contributed by BJ,
+       9-Dec-2021.) $)
     bj-ismoore $p |-
                     ( A e. Moore_ <-> A. x e. ~P A ( U. A i^i |^| x ) e. A ) $=
       ( vy cmoore wcel cvv cuni cv cint cin cpw wral elex bj-mooreset wceq pweq
@@ -613666,9 +614247,9 @@ $)
   ${
     $d ph x $.  $d A x $.
     bj-ismooredr.1 $e |- ( ( ph /\ x C_ A ) -> ( U. A i^i |^| x ) e. A ) $.
-    $( Sufficient condition to be a Moore collection.  Note that there is no
-       sethood hypothesis on ` A ` : it is a consequence of the only
-       hypothesis.  (Contributed by BJ, 9-Dec-2021.) $)
+    $( Sufficient condition to be a Moore collection.  There is no sethood
+       hypothesis on ` A ` : it is a consequence of the only hypothesis.
+       (Contributed by BJ, 9-Dec-2021.) $)
     bj-ismooredr $p |- ( ph -> A e. Moore_ ) $=
       ( cuni cv cint cin wcel cpw wral cmoore elpwi ex syl5 ralrimiv bj-ismoore
       wss sylibr ) ACEBFZGHCIZBCJZKCLIAUABUBTUBITCRZAUATCMAUCUADNOPBCQS $.
@@ -613680,9 +614261,9 @@ $)
     bj-ismooredr2.2 $e |-
                          ( ( ph /\ ( x C_ A /\ x =/= (/) ) ) -> |^| x e. A ) $.
     $( Sufficient condition to be a Moore collection (variant of ~ bj-ismooredr
-       singling out the empty intersection).  Note that there is no sethood
-       hypothesis on ` A ` : it is a consequence of the first hypothesis.
-       (Contributed by BJ, 9-Dec-2021.) $)
+       singling out the empty intersection).  There is no sethood hypothesis on
+       ` A ` : it is a consequence of the first hypothesis.  (Contributed by
+       BJ, 9-Dec-2021.) $)
     bj-ismooredr2 $p |- ( ph -> A e. Moore_ ) $=
       ( cv wss wa c0 wne cuni cint cin wcel anassrs intssuni2 wceq dfss sylbi
       wi wb incom eqeq2i eleq1 biimpd syl adantll mpd ex wn rint0 eleq1a syl2im
@@ -613721,17 +614302,17 @@ $)
       BUGVOVPVMVFVNAULUHUIVEVGVMVEVFRDVGVMUMVCUJVFARUKUNUOUPUQURUSUT $.
   $}
 
-  $( A singleton is a Moore collection, biconditional version.  (Contributed by
-     BJ, 9-Dec-2021.)  (Proof shortened by BJ, 10-Apr-2024.) $)
+  $( A singleton is a Moore collection, biconditional version of ~ bj-snmoore .
+     (Contributed by BJ, 9-Dec-2021.)  (Proof shortened by BJ, 10-Apr-2024.) $)
   bj-snmooreb $p |- ( A e. _V <-> { A } e. Moore_ ) $=
     ( cvv wcel csn cmoore bj-snmoore wn c0 snprc biimpi bj-0nmoore a1i eqneltrd
     wceq con4i impbii ) ABCZADZECZABFQSQGZRHETRHNAIJHECGTKLMOP $.
 
   ${
     $d A x $.  $d B x $.  $d V x $.
-    $( A pair formed of two nested sets is a Moore collection.  (Note that in
-       the statement, if ` B ` is a proper class, we are in the case of
-       ~ bj-snmoore ).  A direct consequence is ` |- { (/) , A } e. Moore_ ` .
+    $( A pair formed of two nested sets is a Moore collection.  (If in the
+       statement ` B ` is a proper class, then the result follows from
+       ~ bj-snmoore ).  A direct consequence is ~ bj-pr0moore .
 
        More generally, any nonempty well-ordered chain of sets that is a set is
        a Moore collection.
@@ -613757,6 +614338,12 @@ $)
       XIVOVPKVQXMXDVMVNVQVRVSVRVTWHWAZWKHZXHWLIYLWIYKHZXHWLJYKWIYMWJYKWIUCUDYMW
       LXHYKWLXHJWIABWBQWCKWIXHIFYKWJACWEWDWFWG $.
   $}
+
+  $( A pair containing the empty set is a Moore collection.  (Contributed by
+     BJ, 4-Oct-2026.) $)
+  bj-pr0moore $p |- { (/) , A } e. Moore_ $=
+    ( c0 cvv wcel wss cpr cmoore 0ex 0ss bj-prmoore mp2an ) BCDBAEBAFGDHAIBACJK
+    $.
 
 
 $(
@@ -614189,7 +614776,8 @@ $)
 
   $( The coordinates of an ordered pair that belongs to a relation are sets.
      TODO:  Slightly shorter than ~ brrelex12 , which could be proved from it.
-     (Contributed by BJ, 27-Dec-2023.) $)
+     The first antecedent would not be needed if using ~ df-bj-2upl , by
+     ~ bj-2uplex .  (Contributed by BJ, 27-Dec-2023.) $)
   bj-opelrelex $p |-
                  ( ( Rel R /\ <. A , B >. e. R ) -> ( A e. _V /\ B e. _V ) ) $=
     ( wrel cop wcel wa cvv cxp wss df-rel biimpi sselda opelxp sylib ) CDZABEZC
@@ -614329,19 +614917,18 @@ $)
     MUDUAUBABKNOPQRS $.
 
   $( Characterization of the ordered pair elements of the identity relation
-     when the intersection of their components are sets.  Note that the
-     antecedent is more general than either component being a set.
-     (Contributed by BJ, 29-Mar-2020.) $)
+     when the intersection of their components are sets.  The antecedent is
+     more general than either component being a set.  (Contributed by BJ,
+     29-Mar-2020.) $)
   bj-opelid $p |- ( ( A i^i B ) e. V -> ( <. A , B >. e. _I <-> A = B ) ) $=
     ( cin wcel wceq cvv wa wi cop cid wb bj-inexeqex ex bj-opelidb ancr impbid2
     simpr bitrid syl ) ABDCEZABFZAGEBGEHZIZABJKEZUBLUAUBUCABCMNUEUCUBHZUDUBABOU
     DUFUBUCUBRUBUCPQST $.
 
   $( Characterization of the classes related by the identity relation when
-     their intersection is a set.  Note that the antecedent is more general
-     than either class being a set.  (Contributed by NM, 30-Apr-2004.)  Weaken
-     the antecedent to sethood of the intersection.  (Revised by BJ,
-     24-Dec-2023.)
+     their intersection is a set.  The antecedent is more general than either
+     class being a set.  (Contributed by NM, 30-Apr-2004.)  Weaken the
+     antecedent to sethood of the intersection.  (Revised by BJ, 24-Dec-2023.)
 
      TODO: replace ~ ideqg , or at least prove ~ ideqg from it. $)
   bj-ideqg $p |- ( ( A i^i B ) e. V -> ( A _I B <-> A = B ) ) $=
@@ -614396,13 +614983,12 @@ $)
   ${
     $d x y A $.  $d x y B $.
     $( Sufficient condition for the restricted identity relation to agree with
-       equality.  Note that the instance of ~ bj-ideqg with ` _V ` substituted
-       for ` V ` is a direct consequence of ~ bj-idreseq .  This is a
-       strengthening of ~ resieq which should be proved from it (note that
-       currently, ~ resieq relies on ~ ideq ).  Note that the intersection in
-       the antecedent is not very meaningful, but is a device to prove versions
-       with either class assumed to be a set.  It could be enough to prove the
-       version with a disjunctive antecedent:
+       equality.  The instance of ~ bj-ideqg with ` _V ` substituted for ` V `
+       is a direct consequence of ~ bj-idreseq .  This is a strengthening of
+       ~ resieq which should be proved from it (currently, ~ resieq relies on
+       ~ ideq ).  The intersection in the antecedent is not very meaningful,
+       but is a device to prove versions with either class assumed to be a set.
+       It could be enough to prove the version with a disjunctive antecedent:
        ` |- ( ( A e. C \/ B e. C ) -> ... ) ` .  (Contributed by BJ,
        25-Dec-2023.) $)
     bj-idreseq $p |- ( ( A i^i B ) e. C -> ( A ( _I |` C ) B <-> A = B ) ) $=
@@ -615346,13 +615932,13 @@ $)
      projective line (Riemann sphere).  In our convention, a product with 0 is
      0, even when the other factor is infinite.  An alternate convention leaves
      products of 0 with an infinite number undefined since the multiplication
-     is not continuous at these points.  Note that our convention entails
+     is not continuous at these points.  This convention entails
      ` ( 0 / 0 ) = 0 ` (given ~ df-bj-invc ).
 
-     Note that this definition uses ` x. ` and ` Arg ` and ` / ` .  Indeed, it
-     would be contrived to bypass ordinary complex multiplication, and the
-     present two-step definition looks like a good compromise.  (Contributed by
-     BJ, 22-Jun-2019.) $)
+     This definition uses ` x. ` and ` Arg ` and ` / ` .  Indeed, it would be
+     contrived to bypass ordinary complex multiplication, and the present
+     two-step definition looks like a good compromise.  (Contributed by BJ,
+     22-Jun-2019.) $)
   df-bj-mulc $a |- .cc = ( x e. ( ( CCbar X. CCbar ) u. ( CChat X. CChat ) )
    |-> if ( ( ( 1st ` x ) = 0 \/ ( 2nd ` x ) = 0 ) , 0 ,
        if ( ( ( 1st ` x ) = infty \/ ( 2nd ` x ) = infty ) , infty ,
@@ -615373,11 +615959,11 @@ $)
        Beware of the overloading: the equality ` ( invc `` 0 ) = infty ` is to
        be understood in the complex projective line, but 0 as an extended
        complex number does not have an inverse, which we can state as
-       ` ( invc `` 0 ) e/ CCbar ` .  Note that this definition relies on
-       ~ df-bj-mulc , which does not bypass ordinary complex multiplication,
-       but defines extended complex multiplication on top of it.  Therefore, we
-       could have used directly ` / ` instead of ` ( iota_ ... .cc ... ) ` .
-       (Contributed by BJ, 22-Jun-2019.) $)
+       ` ( invc `` 0 ) e/ CCbar ` .  This definition relies on ~ df-bj-mulc ,
+       which does not bypass ordinary complex multiplication, but defines
+       extended complex multiplication on top of it.  Therefore, we could have
+       used directly ` / ` instead of ` ( iota_ ... .cc ... ) ` .  (Contributed
+       by BJ, 22-Jun-2019.) $)
     df-bj-invc $a |- invc = ( x e. ( CCbar u. CChat ) |->
                   if ( x = 0 , infty ,
                   if ( x e. CC , ( iota_ y e. CC ( x .cc y ) = 1 ) , 0 ) ) ) $.
@@ -615869,7 +616455,7 @@ $)
 
   $( Variant of ~ fvimacnv where membership of ` A ` in the domain is not
      needed provided the containing class ` B ` does not contain the empty set.
-     Note that this antecedent would not be needed with Definition ~ df-afv .
+     This antecedent would not be needed with Definition ~ df-afv .
      (Contributed by BJ, 7-Jan-2024.) $)
   bj-fvimacnv0 $p |- ( ( Fun F /\ -. (/) e. B ) ->
                                   ( ( F ` A ) e. B <-> A e. ( `' F " B ) ) ) $=
@@ -722941,6 +723527,45 @@ $)
   $}
 
   ${
+    $d i r $.
+    $( The domain of the free module function is a relation.  (Contributed by
+       SN, 24-Sep-2026.) $)
+    reldmfrlm $p |- Rel dom freeLMod $=
+      ( vr vi cvv cv crglmod cfv csn cxp cdsmm co cfrlm df-frlm reldmmpo ) ABCC
+      ADZBDNEFGHIJKBALM $.
+  $}
+
+  ${
+    frlmbasfn.f $e |- F = ( R freeLMod I ) $.
+    frlmbasfn.b $e |- B = ( Base ` F ) $.
+    frlmbasfn.i $e |- ( ph -> I e. W ) $.
+    frlmbasfn.x $e |- ( ph -> X e. B ) $.
+    $( Elements of the free module are functions.  (They map an index to the
+       coordinate at that index, see ~ frlmbasf ).  (Contributed by SN,
+       23-Sep-2026.) $)
+    frlmbasfn $p |- ( ph -> X Fn I ) $=
+      ( cbs cfv wcel wf eqid frlmbasf syl2anc ffnd ) AECLMZGAEFNGBNETGOJKBCDETF
+      GHTPIQRS $.
+  $}
+
+  ${
+    frlmvscl.f $e |- F = ( R freeLMod I ) $.
+    frlmvscl.b $e |- B = ( Base ` F ) $.
+    frlmvscl.k $e |- K = ( Base ` R ) $.
+    frlmvscl.m $e |- .x. = ( .s ` F ) $.
+    frlmvscl.r $e |- ( ph -> R e. Ring ) $.
+    frlmvscl.a $e |- ( ph -> A e. K ) $.
+    frlmvscl.x $e |- ( ph -> X e. B ) $.
+    $( Closure of scalar multiplication in a free module.  (Contributed by SN,
+       24-Sep-2026.) $)
+    frlmvscl $p |- ( ph -> ( A .x. X ) e. B ) $=
+      ( cfv cbs wcel cvv csca eqid crg clmod cfrlm reldmfrlm elbasov syl simprd
+      wa frlmlmod syl2anc wceq frlmsca fveq2d eqtrid eleqtrd lmodvscld ) ABEFUA
+      QZUSRQZCFIKUSUBMUTUBADUCSZGTSZFUDSNADTSZVBAICSVCVBUJPICFUEDGUFJKUGUHUIZDF
+      GTJUKULABHUTOAHDRQUTLADUSRAVAVBDUSUMNVDDFGUCTJUNULUOUPUQPUR $.
+  $}
+
+  ${
     frlmfielbas.f $e |- F = ( R freeLMod I ) $.
     frlmfielbas.n $e |- N = ( Base ` R ) $.
     frlmfielbas.b $e |- B = ( Base ` F ) $.
@@ -723293,9 +723918,53 @@ $)
   $}
 
   ${
+    lmod0vsd.v $e |- V = ( Base ` W ) $.
+    lmod0vsd.f $e |- F = ( Scalar ` W ) $.
+    lmod0vsd.s $e |- .x. = ( .s ` W ) $.
+    lmod0vsd.o $e |- O = ( 0g ` F ) $.
+    lmod0vsd.z $e |- .0. = ( 0g ` W ) $.
+    lmod0vsd.w $e |- ( ph -> W e. LMod ) $.
+    lmod0vsd.x $e |- ( ph -> X e. V ) $.
+    $( Zero times a vector is the zero vector.  (Contributed by SN,
+       24-Sep-2026.) $)
+    lmod0vsd $p |- ( ph -> ( O .x. X ) = .0. ) $=
+      ( clmod wcel co wceq lmod0vs syl2anc ) AFPQGEQDGBRHSNOBCDEFGHIJKLMTUA $.
+  $}
+
+  ${
+    lmodvs0d.f $e |- F = ( Scalar ` W ) $.
+    lmodvs0d.k $e |- K = ( Base ` F ) $.
+    lmodvs0d.s $e |- .x. = ( .s ` W ) $.
+    lmodvs0d.z $e |- .0. = ( 0g ` W ) $.
+    lmodvs0d.w $e |- ( ph -> W e. LMod ) $.
+    lmodvs0d.x $e |- ( ph -> X e. K ) $.
+    $( A scalar times the zero vector is the zero vector.  (Contributed by SN,
+       24-Sep-2026.) $)
+    lmodvs0d $p |- ( ph -> ( X .x. .0. ) = .0. ) $=
+      ( clmod wcel co wceq lmodvs0 syl2anc ) AENOFDOFGBPGQLMBCDEFGHJIKRS $.
+  $}
+
+  ${
+    lmodvsassd.v $e |- V = ( Base ` W ) $.
+    lmodvsassd.f $e |- F = ( Scalar ` W ) $.
+    lmodvsassd.s $e |- .x. = ( .s ` W ) $.
+    lmodvsassd.k $e |- K = ( Base ` F ) $.
+    lmodvsassd.t $e |- .X. = ( .r ` F ) $.
+    lmodvsassd.w $e |- ( ph -> W e. LMod ) $.
+    lmodvsassd.q $e |- ( ph -> Q e. K ) $.
+    lmodvsassd.r $e |- ( ph -> R e. K ) $.
+    lmodvsassd.x $e |- ( ph -> X e. V ) $.
+    $( In a module, scalar multiplication is a semigroup action.  (Contributed
+       by SN, 24-Sep-2026.) $)
+    lmodvsassd $p |- ( ph -> ( ( Q .X. R ) .x. X ) = ( Q .x. ( R .x. X ) ) ) $=
+      ( wcel clmod co wceq lmodvsass syl13anc ) AIUATBGTCGTJHTBCEUBJDUBBCJDUBDU
+      BUCPQRSBCDEFGHIJKLMNOUDUE $.
+  $}
+
+  ${
     $d R f $.  $d S f $.
-    $( A ring isomorphism maps a division ring to a division ring.
-       (Contributed by SN, 18-Feb-2025.) $)
+    $( A ring isomorphic to a division ring is a division ring.  (Contributed
+       by SN, 18-Feb-2025.) $)
     ricdrng1 $p |- ( ( R ~=r S /\ R e. DivRing ) -> S e. DivRing ) $=
       ( vf co wcel cdr wne wi wa cbs cfv cress wceq eqid 3syl crg adantr adantl
       syl c0g cric wbr cv crs wex c0 brric n0 bitri cima wfo rimf1o f1ofo foima
@@ -724663,8 +725332,8 @@ $(
   there is a bijection between 3D lines through the origin and points on the
   real projective plane.
 
-  The concept of projective spaces generalizes the projective plane to any
-  dimension.
+  The concept of a projective space generalizes the projective plane to any
+  dimension ( ~ df-prjspn ).
 
 $)
 
@@ -724678,11 +725347,12 @@ $)
     $( Define the projective space function.  In the bijection between 3D lines
        through the origin and points in the projective plane (see section
        comment), this is equivalent to making any two 3D points (excluding the
-       origin) equivalent iff one is a multiple of another.  This definition
-       does not quite give all the properties needed, since the scalars of a
-       left vector space can be "less dense" than the vectors (for example,
-       making equivalent rational multiples of real numbers).  Compare
-       ~ df-lsatoms .  (Contributed by BJ and SN, 29-Apr-2023.) $)
+       origin) equivalent iff one is a multiple of another.  Note that the
+       meaning of "projective space" is more general than the section comment
+       might suggest.  In particular, the projective space obtained from ` RR `
+       as a ` QQ ` -vector space is infinite-dimensional and is not of the form
+       covered by ~ df-prjspn .  Compare ~ df-lsatoms .  (Contributed by BJ and
+       SN, 29-Apr-2023.) $)
     df-prjsp $a |- PrjSp = ( v e. LVec |->
       [_ ( ( Base ` v ) \ { ( 0g ` v ) } ) / b ]_ (
         b /. { <. x , y >. | ( ( x e. b /\ y e. b ) /\
@@ -724739,16 +725409,15 @@ $)
       ( wcel wa co vm vn vo clmod wbr cv wceq prjsprel simprbi ad2antrl simplrr
       wrex syl simplrl anassrs simpll sylbi adantr simplr cmulr cfv eqeq2d eqid
       oveq1 crg lmodring ad3antrrr simprl ringcld simprr oveq2d cbs simplll c0g
-      csn cdif eldifi lmodvsass syl13anc 3eqtr4d rspcedvdw syl21anbrc rexlimddv
-      eleq2s ) HUDRZIJDUEZJKDUEZSZSZIUAUFZJFTZUGZIKDUEZUAGWFWLUAGULZWEWGWFICRZJ
-      CRZSZWNABCDFUAGIJLMUHZUIUJWIWJGRZWLSZSZJUBUFZKFTZUGZWMUBGXAWGXDUBGULZWEWF
-      WGWTUKZWGWPKCRZSZXEABCDFUBGJKLMUHZUIUMXAXBGRZXDSZSZWOXGIUCUFZKFTZUGZUCGUL
-      WMXLWFWOWIWTXKWFWEWFWGWTXKSUNUOWFWQWNSWOWRWOWPWNUPUQUMXLWGXGXAWGXKXFURWGX
-      HXESXGXIWPXGXEUSUQUMZXLXOIWJXBEUTVAZTZKFTZUGUCXRGXMXRUGXNXSIXMXRKFVDVBXLG
-      EXQWJXBQXQVCZWEEVERWHWTXKEHOVFVGWIWSWLXKUNZXAXJXDVHZVIXLWKWJXCFTZIXSXLJXC
-      WJFXAXJXDVJVKWIWSWLXKUKXLWEWSXJKHVLVAZRZXSYCUGWEWHWTXKVMYAYBXLXGYEXPYEKYD
-      HVNVAVOZVPCKYDYFVQNWDUMWJXBFXQEGYDHKYDVCOPQXTVRVSVTWAABCDFUCGIKLMUHWBWCWC
-      $.
+      csn cdif eldifi eleq2s lmodvsassd 3eqtr4d rspcedvdw syl21anbrc rexlimddv
+      ) HUDRZIJDUEZJKDUEZSZSZIUAUFZJFTZUGZIKDUEZUAGWEWKUAGULZWDWFWEICRZJCRZSZWM
+      ABCDFUAGIJLMUHZUIUJWHWIGRZWKSZSZJUBUFZKFTZUGZWLUBGWTWFXCUBGULZWDWEWFWSUKZ
+      WFWOKCRZSZXDABCDFUBGJKLMUHZUIUMWTXAGRZXCSZSZWNXFIUCUFZKFTZUGZUCGULWLXKWEW
+      NWHWSXJWEWDWEWFWSXJSUNUOWEWPWMSWNWQWNWOWMUPUQUMXKWFXFWTWFXJXEURWFXGXDSXFX
+      HWOXFXDUSUQUMZXKXNIWIXAEUTVAZTZKFTZUGUCXQGXLXQUGXMXRIXLXQKFVDVBXKGEXPWIXA
+      QXPVCZWDEVERWGWSXJEHOVFVGWHWRWKXJUNZWTXIXCVHZVIXKWJWIXBFTIXRXKJXBWIFWTXIX
+      CVJVKWHWRWKXJUKXKWIXAFXPEGHVLVAZHKYBVCOPQXSWDWGWSXJVMXTYAXKXFKYBRZXOYCKYB
+      HVNVAVOZVPCKYBYDVQNVRUMVSVTWAABCDFUCGIKLMUHWBWCWC $.
 
     $d B m $.  $d S m $.
     $( The relation in ` PrjSp ` is reflexive.  (Contributed by Steven Nguyen,
@@ -724941,16 +725610,17 @@ $)
     prjspnval2.b $e |- B = ( ( Base ` W ) \ { ( 0g ` W ) } ) $.
     prjspnval2.s $e |- S = ( Base ` K ) $.
     prjspnval2.x $e |- .x. = ( .s ` W ) $.
+    prjspnval2.n $e |- ( ph -> N e. NN0 ) $.
+    prjspnval2.k $e |- ( ph -> K e. DivRing ) $.
     $( Value of the n-dimensional projective space function, expanded.
-       (Contributed by Steven Nguyen, 15-Jul-2023.) $)
-    prjspnval2 $p |-
-      ( ( N e. NN0 /\ K e. DivRing ) -> ( N PrjSpn K ) = ( B /. .~ ) ) $=
-      ( wcel wa co cprjsp cfv cn0 cdr cprjspn cc0 cfz cqs prjspnval wceq fveq2i
-      cfrlm csca cbs wrex copab clvec cvv ovex frlmlvec mpan2 eqid prjspval syl
-      cv prjspnerlem qseq2d eqtr4d eqtr3id adantl eqtrd ) HUAPZGUBPZQHGUCRGUDHU
-      ERZUJRZSTZCDUFZGHUGVKVNVOUHVJVKVNISTZVOIVMSLUIVKVPCAVCZCPBVCZCPQVQJVCVRFR
-      UHJIUKTZULTZUMQABUNZUFZVOVKIUOPZVPWBUHVKVLUPPWCUDHUEUQGIVLUPLURUSABCVSFVT
-      IJMOVSUTVTUTVAVBVKDWACABCDEFGHIJKLMNOVDVEVFVGVHVI $.
+       (Contributed by SN, 15-Jul-2023.) $)
+    prjspnval2 $p |- ( ph -> ( N PrjSpn K ) = ( B /. .~ ) ) $=
+      ( co wcel cprjspn cc0 cfz cfrlm cprjsp cfv cqs cn0 wceq prjspnval syl2anc
+      cdr fveq2i cv csca cbs wrex copab clvec ovex frlmlvec mpan2 eqid prjspval
+      wa cvv syl prjspnerlem qseq2d eqtr4d eqtr3id eqtrd ) AIHUASZHUBIUCSZUDSZU
+      EUFZDEUGZAIUHTHULTZVMVPUIQRHIUJUKAVPJUEUFZVQJVOUEMUMAVRVSVQUIRVRVSDBUNZDT
+      CUNZDTVEVTKUNWAGSUIKJUOUFZUPUFZUQVEBCURZUGZVQVRJUSTZVSWEUIVRVNVFTWFUBIUCU
+      THJVNVFMVAVBBCDWBGWCJKNPWBVCWCVCVDVGVREWDDBCDEFGHIJKLMNOPVHVIVJVGVKVL $.
   $}
 
   ${
@@ -724990,9 +725660,9 @@ $)
     prjspnvs.1 $e |- ( ph -> X e. B ) $.
     prjspnvs.2 $e |- ( ph -> C e. S ) $.
     prjspnvs.3 $e |- ( ph -> C =/= .0. ) $.
-    $( A nonzero multiple of a vector is equivalent to the vector.  This
-       converts the equivalence relation used in ~ prjspvs (see
-       ~ prjspnerlem ).  (Contributed by SN, 8-Aug-2024.) $)
+    $( A nonzero multiple of a vector is equivalent to the vector.  This is
+       ~ prjspvs with the equivalence relation converted by ~ prjspnerlem .
+       (Contributed by SN, 8-Aug-2024.) $)
     prjspnvs $p |- ( ph -> ( C .x. X ) .~ X ) $=
       ( co wbr cv wcel wa wceq csca cfv cbs wrex copab c0g csn cdif cdr cc0 cfz
       clvec cvv ovexd frlmlvec syl2anc wne wn nelsn eldifd frlmsca fveq2d sneqd
@@ -725011,22 +725681,252 @@ $)
     prjspnssbas.b $e |- B = ( ( Base ` W ) \ { ( 0g ` W ) } ) $.
     prjspnssbas.n $e |- ( ph -> N e. NN0 ) $.
     prjspnssbas.k $e |- ( ph -> K e. DivRing ) $.
-    $( A projective point spans a subset of the (nonzero) affine points.
+    $( A projective space is a set of subsets of the corresponding free module
+       (a set of equivalence classes of nonzero vectors of that module).
        (Contributed by SN, 17-Jan-2025.) $)
     prjspnssbas $p |- ( ph -> P C_ ~P B ) $=
-      ( vx vy vl cv wcel wa cfv co eqid cvsca wceq cbs wrex cqs cpw cprjspn cn0
-      copab cdr prjspnval2 syl2anc eqtrid prjspner qsss eqsstrd ) ACBLOZBPMOZBP
-      QUQNOURFUARZSUBNDUCRZUDQLMUIZUEZBUFACEDUGSZVBGAEUHPDUJPVCVBUBJKLMBVAUTUSD
-      EFNVATZHIUTTZUSTZUKULUMABVAALMBVAUTUSDEFNVDHIVEVFKUNUOUP $.
+      ( vx vy vl cv wcel wa cfv co eqid cvsca wceq cbs copab cqs cpw prjspnval2
+      wrex cprjspn eqtrid prjspner qsss eqsstrd ) ACBLOZBPMOZBPQUNNOUOFUARZSUBN
+      DUCRZUHQLMUDZUEZBUFACEDUISUSGALMBURUQUPDEFNURTZHIUQTZUPTZJKUGUJABURALMBUR
+      UQUPDEFNUTHIVAVBKUKULUM $.
 
+    elprjspnss.a $e |- ( ph -> A e. P ) $.
+    $( A point of a projective space is a subset of the corresponding free
+       module (an equivalence class of nonzero vectors of that module).
+       (Contributed by SN, 23-Sep-2026.) $)
+    elprjspnss $p |- ( ph -> A C_ B ) $=
+      ( cpw prjspnssbas sseldd elpwid ) ABCADCNBACDEFGHIJKLOMPQ $.
+  $}
+
+  ${
+    $d K l x y $.  $d N l x y $.  $d B x y $.
+    prjspnn0.p $e |- P = ( N PrjSpn K ) $.
+    prjspnn0.n $e |- ( ph -> N e. NN0 ) $.
+    prjspnn0.k $e |- ( ph -> K e. DivRing ) $.
     prjspnn0.a $e |- ( ph -> A e. P ) $.
     $( A projective point is nonempty.  (Contributed by SN, 17-Jan-2025.) $)
     prjspnn0 $p |- ( ph -> A =/= (/) ) $=
-      ( vx vy vl cv wcel wceq eqid wa cvsca cfv co cbs copab cdm cqs c0 wne wer
-      wrex prjspner erdm syl cprjspn cn0 cdr prjspnval2 syl2anc eqtrid eleqtrd
-      elqsn0 ) ANQZCROQZCRUAVDPQVEGUBUCZUDSPEUEUCZULUANOUFZUGCSZBCVHUHZRBUIUJAC
-      VHUKVIANOCVHVGVFEFGPVHTZIJVGTZVFTZLUMCVHUNUOABDVJMADFEUPUDZVJHAFUQREURRVN
-      VJSKLNOCVHVGVFEFGPVKIJVLVMUSUTVAVBCBVHVCUT $.
+      ( vx vy vl cv co cbs cfv wcel wa wceq eqid cc0 cfz cfrlm cdif cvsca copab
+      c0g csn wrex cdm cqs wne wer prjspner erdm syl cprjspn prjspnval2 eleqtrd
+      c0 eqtrid elqsn0 syl2anc ) AJMZDUAEUBNUCNZOPVEUGPUHUDZQKMZVFQRVDLMVGVEUEP
+      ZNSLDOPZUIRJKUFZUJVFSZBVFVJUKZQBUTULAVFVJUMVKAJKVFVJVIVHDEVELVJTZVETZVFTZ
+      VITZVHTZHUNVFVJUOUPABCVLIACEDUQNVLFAJKVFVJVIVHDEVELVMVNVOVPVQGHURVAUSVFBV
+      JVBVC $.
+  $}
+
+  ${
+    $d K i $.  $d N i $.  $d V i $.
+    frlmnzcoordex.w $e |- W = ( K freeLMod ( 0 ... N ) ) $.
+    frlmnzcoordex.b $e |- B = ( ( Base ` W ) \ { ( 0g ` W ) } ) $.
+    frlmnzcoordex.k $e |- ( ph -> K e. Ring ) $.
+    frlmnzcoordex.n $e |- ( ph -> N e. NN0 ) $.
+    frlmnzcoordex.v $e |- ( ph -> V e. B ) $.
+    $( Every nonzero vector of a free module has a nonzero coordinate.
+       (Contributed by SN, 23-Sep-2026.) $)
+    frlmnzcoordex $p |-
+      ( ph -> { i e. ( 0 ... N ) | ( V ` i ) =/= ( 0g ` K ) } =/= (/) ) $=
+      ( cfv c0g wceq cc0 cfz wral c0 cvv cv wne crab cbs csn eleqtrdi eldifsnbd
+      co wn cdif neneqd wa cxp eqid ovexd eldifad frlmbasfn wf fconstfv fconst2
+      wfn fvex sylbb1 sylan wcel frlm0 syl2anc adantr eqtrd mtand rabeq0 ralbii
+      crg nne bitri necon3abii sylibr ) ACUAFMZDNMZOZCPEQUHZRZUIVRVSUBZCWAUCZSU
+      BAWBFGNMZOAFWEAFGUDMZWEAFBWFWEUEZUJLIUFZUGUKAWBULFWAVSUEZUMZWEAFWAVAZWBFW
+      JOZAWFDGWATFHWFUNAPEQUOZAFWFWGWHUPUQWAWIFURWKWBULWLCWAVSFUSWAVSFDNVBUTVCV
+      DAWJWEOZWBADVMVEWATVEWNJWMDGWATVSHVSUNVFVGVHVIVJWBWDSWDSOWCUIZCWARWBWCCWA
+      VKWOVTCWAVRVSVNVLVOVPVQ $.
+  $}
+
+  ${
+    $d B b $.  $d K b $.  $d N b $.  $d V b i $.
+    frlmnzcoordval.j $e |- J = ( b e. B |->
+      inf ( { i e. ( 0 ... N ) | ( b ` i ) =/= ( 0g ` K ) } , RR , < ) ) $.
+    frlmnzcoordval.v $e |- ( ph -> V e. B ) $.
+    $( Value of ` J ` , a function that returns the index of the first nonzero
+       coordinate of ` V ` .  (Contributed by SN, 23-Sep-2026.) $)
+    frlmnzcoordval $p |- ( ph -> ( J ` V ) =
+      inf ( { i e. ( 0 ... N ) | ( V ` i ) =/= ( 0g ` K ) } , RR , < ) ) $=
+      ( cv cfv c0g wne cc0 crab cr clt cinf cvv cfz wceq neeq1d rabbidv infeq1d
+      co fveq1 wcel ltso infex a1i fvmptd3 ) AHGCKZHKZLZEMLZNZCOFUAUFZPZQRSUMGL
+      ZUPNZCURPZQRSZBDTIUNGUBZQUSVBRVDUQVACURVDUOUTUPUMUNGUGUCUDUEJVCTUHAQVBRUI
+      UJUKUL $.
+
+    $d N i $.
+    $( The result ` ( J `` V ) ` is the smallest index corresponding to a
+       nonzero coordinate.  (Contributed by SN, 23-Sep-2026.) $)
+    frlmnzcoordinf $p |- (
+            ( ph /\ I e. { i e. ( 0 ... N ) | ( V ` i ) =/= ( 0g ` K ) } ) ->
+                ( J ` V ) <_ I ) $=
+      ( cv cfv c0g cc0 wcel cr cle wss cfn wne cfz crab clt cinf frlmnzcoordval
+      co wceq adantr wbr ssrab2 fzssre sstri fzfi ssfi infrefilb mp3an12 adantl
+      wa mp2an eqbrtrd ) ADCLHMFNMUAZCOGUBUGZUCZPZUSHEMZVDQUDUEZDRAVFVGUHVEABCE
+      FGHIJKUFUIVEVGDRUJZAVDQSVDTPZVEVHVDVCQVBCVCUKZOGULUMVCTPVDVCSVIOGUNVJVCVD
+      UOUTDVDUPUQURVA $.
+  $}
+
+  ${
+    $d B b $.  $d K b i $.  $d N b i $.  $d V b i $.
+    frlmnzcoordcl.j $e |- J = ( b e. B |->
+      inf ( { i e. ( 0 ... N ) | ( b ` i ) =/= ( 0g ` K ) } , RR , < ) ) $.
+    frlmnzcoordcl.w $e |- W = ( K freeLMod ( 0 ... N ) ) $.
+    frlmnzcoordcl.b $e |- B = ( ( Base ` W ) \ { ( 0g ` W ) } ) $.
+    frlmnzcoordcl.k $e |- ( ph -> K e. Ring ) $.
+    frlmnzcoordcl.n $e |- ( ph -> N e. NN0 ) $.
+    frlmnzcoordcl.v $e |- ( ph -> V e. B ) $.
+    $( Closure of the first nonzero coordinate function ` J ` .  (Contributed
+       by SN, 23-Sep-2026.) $)
+    frlmnzcoordcl $p |- ( ph -> ( J ` V ) e. ( 0 ... N ) ) $=
+      ( cfv wne cc0 cr clt cv c0g cfz co crab frlmnzcoordval wss ssrab2 a1i wor
+      cinf cfn wcel c0 fzfid ssfid frlmnzcoordex fzssre sstrdi fiinfcl syl13anc
+      ltso sseldd eqeltrd ) AGDPCUAGPEUBPQZCRFUCUDZUEZSTUKZVFABCDEFGIJOUFAVGVFV
+      HVGVFUGAVECVFUHUIZASTUJZVGULUMVGUNQVGSUGVHVGUMVJAVBUIAVFVGARFUOVIUPABCEFG
+      HKLMNOUQAVGVFSVIRFURUSSVGTUTVAVCVD $.
+
+    ${
+      frlmnzcoordcl2.s $e |- S = ( Base ` K ) $.
+      $( The first nonzero coordinate is a scalar.  (Contributed by SN,
+         24-Sep-2026.) $)
+      frlmnzcoordcl2 $p |- ( ph -> ( V ` ( J ` V ) ) e. S ) $=
+        ( cc0 cfz cfv co cvv wcel cbs wf ovexd c0g csn cdif eqsstri sselid eqid
+        difss frlmbasf syl2anc frlmnzcoordcl ffvelcdmd ) ARGSUAZCHETHAURUBUCHIU
+        DTZUCURCHUEARGSUFABUSHBUSIUGTUHZUIUSMUSUTUMUJPUKUSFIURCUBHLQUSULUNUOABD
+        EFGHIJKLMNOPUPUQ $.
+    $}
+
+    $d J i $.
+    $( The function ` J ` gives a nonzero coordinate.  (Contributed by SN,
+       23-Sep-2026.) $)
+    frlmnzcoordn0 $p |- ( ph -> ( V ` ( J ` V ) ) =/= ( 0g ` K ) ) $=
+      ( cfv wne cc0 cr clt cv c0g co wceq fveq2 neeq1d crab cinf frlmnzcoordval
+      cfz wor cfn wcel c0 wss ltso a1i fzfid ssrab2 frlmnzcoordex fzssre sstrdi
+      ssfid fiinfcl syl13anc eqeltrd elrabrd ) ACUAZGPZEUBPZQZGDPZGPZVJQCVLRFUJ
+      UCZVHVLUDVIVMVJVHVLGUEUFAVLVKCVNUGZSTUHZVOABCDEFGIJOUIASTUKZVOULUMVOUNQVO
+      SUOVPVOUMVQAUPUQAVNVOARFURVOVNUOAVKCVNUSUQZVCABCEFGHKLMNOUTAVOVNSVRRFVAVB
+      SVOTVDVEVFVG $.
+  $}
+
+  ${
+    $d B b $.  $d C b i $.  $d K b i $.  $d N b i $.  $d V b i $.
+    $d .x. b i $.  $d ph i $.
+    $( ` J ` still has ` ( 0g `` K ) ` for consistency. $)
+    frlmnzcoordsca.j $e |- J = ( b e. B |->
+      inf ( { i e. ( 0 ... N ) | ( b ` i ) =/= ( 0g ` K ) } , RR , < ) ) $.
+    frlmnzcoordsca.w $e |- W = ( K freeLMod ( 0 ... N ) ) $.
+    frlmnzcoordsca.b $e |- B = ( ( Base ` W ) \ { ( 0g ` W ) } ) $.
+    frlmnzcoordsca.t $e |- .x. = ( .s ` W ) $.
+    frlmnzcoordsca.z $e |- .0. = ( 0g ` K ) $.
+    frlmnzcoordsca.s $e |- S = ( Base ` K ) $.
+    frlmnzcoordsca.k $e |- ( ph -> K e. DivRing ) $.
+    frlmnzcoordsca.n $e |- ( ph -> N e. NN0 ) $.
+    frlmnzcoordsca.v $e |- ( ph -> V e. B ) $.
+    frlmnzcoordsca.c $e |- ( ph -> C e. S ) $.
+    frlmnzcoordsca.0 $e |- ( ph -> C =/= .0. ) $.
+    $( In a free module, scaling a vector does not change the index of its
+       first nonzero coordinate.  (Contributed by SN, 24-Sep-2026.) $)
+    frlmnzcoordsca $p |- ( ph -> ( J ` ( C .x. V ) ) = ( J ` V ) ) $=
+      ( cv co cfv c0g wne cc0 cfz crab cr clt cinf wcel wceq cmulr cbs cvv eqid
+      wa ovexd adantr csn cdif eleqtrdi eldifad simpr frlmvscaval eqeq1d wo cdr
+      frlmbasf syl2anc ffvelcdmda drngmul0or csca frlmsca fveq2d eqtrid neeqtrd
+      wf wn neeqtrrd neneqd biorf syl bitr4d bitrd necon3bid rabbidva drngringd
+      wb infeq1d frlmvscl eldifsnbd clvec frlmlvec lvecvsn0 mpbir2and eleqtrrdi
+      eleqtrd eldifsnd frlmnzcoordval 3eqtr4d ) AFUEZCJEUFZUGZHUHUGZUIZFUJIUKUF
+      ZULZUMUNUOXGJUGZXJUIZFXLULZUMUNUOXHGUGJGUGAUMXMXPUNAXKXOFXLAXGXLUPZVBZXIX
+      JXNXJXRXIXJUQCXNHURUGZUFZXJUQZXNXJUQZXRXIXTXJXRCKUSUGZHEXSXLXGDUTJKOYCVAZ
+      SXRUJIUKVCACDUPXQUCVDZAJYCUPZXQAJYCKUHUGZVEZAJBYCYHVFZUBPVGZVHZVDAXQVIQXS
+      VAZVJVKXRYACXJUQZYBVLZYBXRDHXSCXNXJSXJVAYLAHVMUPZXQTVDYEAXLDXGJAXLUTUPZYF
+      XLDJWCAUJIUKVCZYKYCHKXLDUTJOSYDVNVOVPVQXRYMWDYBYNWNXRCXJACXJUIXQACKVRUGZU
+      HUGZXJACLYSUDALXJYSRAHYRUHAYOYPHYRUQTYQHKXLVMUTOVSVOZVTZWAWBZUUAWEVDWFYMY
+      BWGWHWIWJWKWLWOABFGHIXHMNAXHYIBAXHYCYGACYCHEKXLDJOYDSQAHTWMUCYKWPAXHYGUIC
+      YSUIJYGUIUUBAJYCYGYJWQACEYRYRUSUGZYSYCKJYGYDQYRVAUUCVAYSVAYGVAAYOYPKWRUPT
+      YQHKXLUTOWSVOACDUUCUCADHUSUGUUCSAHYRUSYTVTWAXCYKWTXAXDPXBXEABFGHIJMNUBXEX
+      F $.
+  $}
+
+  ${
+    $d B v $.  $d I v $.  $d J v $.  $d V v $.  $d .x. v $.
+    prjspnnormval.f $e |- F = ( v e. B |->
+                                   ( ( I ` ( v ` ( J ` v ) ) ) .x. v ) ) $.
+    prjspnnormval.v $e |- ( ph -> V e. B ) $.
+    $( Value of ` F ` , a function that 'normalizes' a vector ` V ` by scaling
+       the first nonzero coordinate to 1.  (Contributed by SN, 24-Sep-2026.) $)
+    prjspnnormval $p |- ( ph ->
+                           ( F ` V ) = ( ( I ` ( V ` ( J ` V ) ) ) .x. V ) ) $=
+      ( cv cfv co cvv wceq id fveq2 fveq12d fveq2d oveq12d ovexd fvmptd3 ) ABHB
+      KZGLZUCLZFLZUCDMHGLZHLZFLZHDMCENIUCHOZUFUIUCHDUJUEUHFUJUDUGUCHUJPZUCHGQRS
+      UKTJAUIHDUAUB $.
+  $}
+
+  ${
+    $d B b v x y $.  $d I l v x y $.  $d J i l v x y $.  $d K b i x y $.
+    $d N b i $.  $d S l $.  $d W l x y $.  $d X b i l v x y $.
+    $d .x. l v x y $.
+    prjspnnorm.e $e |- .~ = { <. x , y >. |
+      ( ( x e. B /\ y e. B ) /\ E. l e. S x = ( l .x. y ) ) } $.
+    prjspnnorm.j $e |- J = ( b e. B |->
+      inf ( { i e. ( 0 ... N ) | ( b ` i ) =/= ( 0g ` K ) } , RR , < ) ) $.
+    prjspnnorm.f $e |- F = ( v e. B |->
+                                ( ( I ` ( v ` ( J ` v ) ) ) .x. v ) ) $.
+    prjspnnorm.w $e |- W = ( K freeLMod ( 0 ... N ) ) $.
+    prjspnnorm.b $e |- B = ( ( Base ` W ) \ { ( 0g ` W ) } ) $.
+    prjspnnorm.s $e |- S = ( Base ` K ) $.
+    prjspnnorm.i $e |- I = ( invr ` K ) $.
+    prjspnnorm.t $e |- .x. = ( .s ` W ) $.
+    prjspnnorm.k $e |- ( ph -> K e. DivRing ) $.
+    prjspnnorm.n $e |- ( ph -> N e. NN0 ) $.
+    prjspnnorm.x $e |- ( ph -> X e. B ) $.
+    $( In a free module, a nonzero vector is equivalent to its normalized
+       vector.  (Contributed by SN, 24-Sep-2026.) $)
+    prjspnequivnorm $p |- ( ph -> X .~ ( F ` X ) ) $=
+      ( cfv co prjspner eqid drngringd frlmnzcoordcl2 frlmnzcoordn0 drnginvrcld
+      c0g drnginvrn0d prjspnvs ersym prjspnnormval breqtrrd ) APPLUJPUJZKUJZPHU
+      KZPJUJFAVFPFEABCEFGHMNORSUBUCUDUFUGULABCEVEFGHMNOPMURUJZRSUBUCUDUFVGUMZUG
+      UIAGMKVDVGUDVHUEUGAEGILMNPOQTUBUCAMUGUNZUHUIUDUOZAEILMNPOQTUBUCVIUHUIUPZU
+      QAGMKVDVGUDVHUEUGVJVKUSUTVAADEHJKLPUAUIVBVC $.
+
+    $d B m $.  $d F m $.  $d S i $.  $d W m $.  $d X m $.
+    $d Y b l i m v x y $.  $d .~ m $.  $d .x. b i m $.  $d ph i m x y $.
+    prjspnnorm.y $e |- ( ph -> Y e. B ) $.
+    $( In a free module, two nonzero vectors are equivalent iff they have the
+       same normalized representative.  (Contributed by SN, 24-Sep-2026.) $)
+    prjspnnorm $p |- ( ph -> ( X .~ Y <-> ( F ` X ) = ( F ` Y ) ) ) $=
+      ( vm wbr cfv wceq wa cv csca cbs c0g csn cdif wcel wrex copab cdr cc0 cfz
+      co cvv ovexd frlmsca syl2anc fveq2d eqtrid anbi2d opabbidv breqd clvec wb
+      rexeqdv frlmlvec eqid prjspreln0 syl bitrd simplbda eldifsn eqcomd eleq2d
+      wne neeq2d anbi12d bitrid cmulr lveclmodd adantr crg drngringd cn0 simprl
+      clmod eqsstri sselid frlmvscl neeqtrd eleqtrdi eldifsnbd eleqtrd lvecvsn0
+      difss simprr mpbir2and eleqtrrdi frlmnzcoordcl2 frlmnzcoordn0 drnginvrcld
+      eldifsnd frlmnzcoordsca frlmnzcoordcl frlmvscaval eqtrd drnginvmuld eqidd
+      lmodvsassd oveq123d ringassd oveq2d ringridmd 3eqtrd oveq1d prjspnnormval
+      cur drnginvrld eqtr3d 3eqtr4d sylbida fveqeq2 syl5ibrcom prjspnequivnorm
+      impr adantlr rexlimddv wer prjspner simpr breqtrrd ertr4d impbida ) APQFU
+      MZPJUNZQJUNZUOZAUUJUPPULUQZQHVIZUOZUUMULOURUNZUSUNZUUQUTUNZVAVBZAUUJPEVCQ
+      EVCZUPZUUPULUUTVDZAUUJPQBUQZEVCCUQZEVCUPZUVDSUQUVEHVIUOZSUURVDZUPZBCVEZUM
+      ZUVBUVCUPZAFUVJPQAFUVFUVGSGVDZUPZBCVEUVJTAUVNUVIBCAUVMUVHUVFAUVGSGUURAGMU
+      SUNUURUEAMUUQUSAMVFVCZVGNVHVIZVJVCZMUUQUOUHAVGNVHVKZMOUVPVFVJUCVLVMZVNVOZ
+      WAVPVQVOVRAOVSVCZUVKUVLVTAUVOUVQUWAUHUVRMOUVPVJUCWBVMZBCEUVJUUQHULUUROPQU
+      USSUVJWCUDUUQWCZUGUURWCZUUSWCZWDWEWFWGAUUNUUTVCZUUPUPUUMUUJAUWFUUPUUMAUWF
+      UPUUMUUPUUOJUNZUULUOZAUWFUUNGVCZUUNMUTUNZWKZUPZUWHUWFUUNUURVCZUUNUUSWKZUP
+      AUWLUUNUURUUSWHAUWMUWIUWNUWKAUURGUUNAGUURUVTWIWJAUUSUWJUUNAUUQMUTAMUUQUVS
+      WIZVNWLWMWNAUWLUPZUUOLUNZUUOUNZKUNZUUOHVIZQLUNZQUNZKUNZQHVIZUWGUULUWPUWSU
+      UNUUQWOUNZVIZQHVIUWTUXDUWPUWSUUNHUXEUUQUUROUSUNZOQUXGWCZUWCUGUWDUXEWCAOXB
+      VCUWLAOUWBWPWQUWPUWSGUURUWPGMKUWRUWJUEUWJWCZUFAUVOUWLUHWQZUWPEGILMNUUOORU
+      AUCUDAMWRVCUWLAMUHWSZWQZANWTVCUWLUIWQZUWPUUOUXGOUTUNZVAZVBZEUWPUUOUXGUXNU
+      WPUUNUXGMHOUVPGQUCUXHUEUGUXLAUWIUWKXAZAQUXGVCUWLAEUXGQEUXPUXGUDUXGUXOXKXC
+      UKXDWQZXEUWPUUOUXNWKUWNQUXNWKZUWPUUNUWJUUSAUWIUWKXLZAUWJUUSUOUWLAMUUQUTUV
+      SVNWQXFAUXSUWLAQUXGUXNAQEUXPUKUDXGXHWQUWPUUNHUUQUURUUSUXGOQUXNUXHUGUWCUWD
+      UWEUXNWCAUWAUWLUWBWQUWPUUNGUURUXQAGUURUOUWLUVTWQZXIZUXRXJXMXRUDXNZUEXOUWP
+      EILMNUUOORUAUCUDUXLUXMUYCXPXQUYAXIUYBUXRYEUWPUXFUXCQHUWPUXFUXCUUNKUNZMWOU
+      NZVIZUUNUYEVIUXCUYDUUNUYEVIZUYEVIZUXCUWPUWSUYFUUNUUNUXEUYEAUXEUYEUOUWLAUU
+      QMWOUWOVNWQUWPUWSUUNUXBUYEVIZKUNUYFUWPUWRUYIKUWPUWRUXAUUOUNUYIUWPUWQUXAUU
+      OUWPEUUNGHILMNQOUWJRUAUCUDUGUXIUEUXJUXMAUVAUWLUKWQUXQUXTXSVNUWPUUNUXGMHUY
+      EUVPUXAGVJQOUCUXHUEUWPVGNVHVKUXQUXRAUXAUVPVCUWLAEILMNQORUAUCUDUXKUIUKXTWQ
+      UGUYEWCZYAYBVNUWPGMUYEKUUNUXBUWJUEUXIUYJUFUXJUXQAUXBGVCUWLAEGILMNQORUAUCU
+      DUXKUIUKUEXOZWQUXTAUXBUWJWKUWLAEILMNQORUAUCUDUXKUIUKXPZWQYCYBUWPUUNYDYFUW
+      PGMUYEUXCUYDUUNUEUYJUXLAUXCGVCUWLAGMKUXBUWJUEUXIUFUHUYKUYLXQWQZUWPGMKUUNU
+      WJUEUXIUFUXJUXQUXTXQUXQYGUWPUYHUXCMYMUNZUYEVIUXCUWPUYGUYNUXCUYEUWPGMUYEUY
+      NKUUNUWJUEUXIUYJUYNWCZUFUXJUXQUXTYNYHUWPGMUYEUYNUXCUEUYJUYOUXLUYMYIYBYJYK
+      YOUWPDEHJKLUUOUBUYCYLAUULUXDUOUWLADEHJKLQUBUKYLWQYPYQPUUOUULJYRYSUUAUUBUU
+      CAUUMUPZPUUKQFEAEFUUDUUMABCEFGHMNOSTUCUDUEUGUHUUEWQAPUUKFUMUUMABCDEFGHIJK
+      LMNOPRSTUAUBUCUDUEUFUGUHUIUJYTWQUYPQUULUUKFAQUULFUMUUMABCDEFGHIJKLMNOQRST
+      UAUBUCUDUEUFUGUHUIUKYTWQAUUMUUFUUGUUHUUI $.
   $}
 
   ${
@@ -725044,128 +725944,6 @@ $)
   $}
 
   ${
-    $d .0. b $.  $d .x. b $.  $d B b $.  $d I b $.  $d X b $.
-    prjspnfv01.f $e |- F = ( b e. B |->
-      if ( ( b ` 0 ) = .0. , b , ( ( I ` ( b ` 0 ) ) .x. b ) ) ) $.
-    prjspnfv01.b $e |- B = ( ( Base ` W ) \ { ( 0g ` W ) } ) $.
-    prjspnfv01.w $e |- W = ( K freeLMod ( 0 ... N ) ) $.
-    prjspnfv01.t $e |- .x. = ( .s ` W ) $.
-    prjspnfv01.0 $e |- .0. = ( 0g ` K ) $.
-    prjspnfv01.1 $e |- .1. = ( 1r ` K ) $.
-    prjspnfv01.i $e |- I = ( invr ` K ) $.
-    prjspnfv01.k $e |- ( ph -> K e. DivRing ) $.
-    prjspnfv01.n $e |- ( ph -> N e. NN0 ) $.
-    prjspnfv01.x $e |- ( ph -> X e. B ) $.
-    $( Any vector is equivalent to a vector whose zeroth coordinate is ` .0. `
-       or ` .1. ` (proof of the value of the zeroth coordinate).  (Contributed
-       by SN, 13-Aug-2023.) $)
-    prjspnfv01 $p |-
-      ( ph -> ( ( F ` X ) ` 0 ) = if ( ( X ` 0 ) = .0. , .0. , .1. ) ) $=
-      ( cc0 cfv wceq co cif cv cvv fveq1 eqeq1d id fveq2d ifbieq12d ovexd ifexd
-      oveq12d fvmptd3 fveq1d iffv a1i simpr wn wa cmulr cbs cfz eqid cdr wne wf
-      wcel c0g csn cdif eleqtrdi eldifad frlmbasf syl2anc 0elfz ffvelcdmd neqne
-      cn0 syl drnginvrcl syl2an3an adantr frlmvscaval drnginvrl ifeq12da 3eqtrd
-      eqtrd ) AUCJEUDZUDUCUCJUDZKUEZJWNFUDZJCUFZUGZUDZWOWNUCWQUDZUGZWOKDUGAUCWM
-      WRALJUCLUHZUDZKUEZXBXCFUDZXBCUFZUGWRBEUIMXBJUEZXDWOXBXFJWQXGXCWNKUCXBJUJZ
-      UKXGULZXGXEWPXBJCXGXCWNFXHUMXIUQUNUBAWOJWQBUIUBAWPJCUOUPURUSWSXAUEAWOUCJW
-      QUTVAAWOWNWTKDAWOVBAWOVCZVDZWTWPWNGVEUDZUFZDXKWPIVFUDZGCXLUCHVGUFZUCGVFUD
-      ZUIJIOXNVHZXPVHZXKUCHVGUOAGVIVLZWNXPVLZXJWNKVJZWPXPVLTAXOXPUCJAXOUIVLJXNV
-      LZXOXPJVKAUCHVGUOAJXNIVMUDVNZAJBXNYCVOUBNVPVQZXNGIXOXPUIJOXRXQVRVSAHWCVLU
-      CXOVLZUAHVTWDZWAZWNKWBZXPGFWNKXRQSWEWFAYBXJYDWGAYEXJYFWGPXLVHZWHAXSXTXJYA
-      XMDUETYGYHXPGXLDFWNKXRQYIRSWIWFWLWJWK $.
-  $}
-
-  ${
-    $d B x y $.  $d X l x y $.  $d W l x y $.  $d .x. l x y $.  $d S l $.
-    $d I l x y $.  $d K x y $.  $d .0. x y $.  $d B b $.  $d X b $.
-    $d .0. b $.  $d .x. b $.  $d I b $.  $d ph b $.
-    prjspner01.e $e |- .~ = { <. x , y >. |
-      ( ( x e. B /\ y e. B ) /\ E. l e. S x = ( l .x. y ) ) } $.
-    prjspner01.f $e |- F = ( b e. B |->
-      if ( ( b ` 0 ) = .0. , b , ( ( I ` ( b ` 0 ) ) .x. b ) ) ) $.
-    prjspner01.b $e |- B = ( ( Base ` W ) \ { ( 0g ` W ) } ) $.
-    prjspner01.w $e |- W = ( K freeLMod ( 0 ... N ) ) $.
-    prjspner01.t $e |- .x. = ( .s ` W ) $.
-    prjspner01.s $e |- S = ( Base ` K ) $.
-    prjspner01.0 $e |- .0. = ( 0g ` K ) $.
-    prjspner01.i $e |- I = ( invr ` K ) $.
-    prjspner01.k $e |- ( ph -> K e. DivRing ) $.
-    prjspner01.n $e |- ( ph -> N e. NN0 ) $.
-    prjspner01.x $e |- ( ph -> X e. B ) $.
-    $( Any vector is equivalent to a vector whose zeroth coordinate is ` .0. `
-       or ` .1. ` (proof of the equivalence).  (Contributed by SN,
-       13-Aug-2023.) $)
-    prjspner01 $p |- ( ph -> X .~ ( F ` X ) ) $=
-      ( cc0 cfv wceq co cif wbr wif prjspner erref adantr wn wa wer cdr wne cfz
-      wcel cvv cbs wf ovexd c0g csn cdif eleqtrdi eldifad eqid frlmbasf syl2anc
-      cn0 0elfz syl ffvelcdmd drnginvrcl syl2an3an drnginvrn0 prjspnvs ifpimpda
-      neqne ersym brif2 sylibr cv fveq1 eqeq1d fveq2d oveq12d ifbieq12d fvmptd3
-      id ifexd breqtrrd ) AMUHMUIZNUJZMWTIUIZMGUKZULZMHUIEAXAMMEUMZMXCEUMZUNMXD
-      EUMAXAXEXFAXEXAAMEDABCDEFGJKLPQTSUBUAUEUOZUGUPUQAXAURZUSZXCMEDADEUTXHXGUQ
-      XIBCDXBEFGJKLMNPQTSUBUAUCAJVAVDZXHUEUQAMDVDXHUGUQAXJWTFVDZXHWTNVBZXBFVDUE
-      AUHKVCUKZFUHMAXMVEVDMLVFUIZVDXMFMVGAUHKVCVHAMXNLVIUIVJZAMDXNXOVKUGSVLVMXN
-      JLXMFVEMTUBXNVNVOVPAKVQVDUHXMVDUFKVRVSVTZWTNWFZFJIWTNUBUCUDWAWBAXJXKXHXLX
-      BNVBUEXPXQFJIWTNUBUCUDWCWBWDWGWEXAMXCMEWHWIAOMUHOWJZUIZNUJZXRXSIUIZXRGUKZ
-      ULXDDHVERXRMUJZXTXAXRYBMXCYCXSWTNUHXRMWKZWLYCWQZYCYAXBXRMGYCXSWTIYDWMYEWN
-      WOUGAXAMXCDVEUGAXBMGVHWRWPWS $.
-
-    $d Y l m x y $.  $d Y b $.  $d B m $.  $d I m $.  $d X m $.  $d .x. m $.
-    $d ph m $.  $d S m x y $.
-    prjspner1.y $e |- ( ph -> Y e. B ) $.
-    prjspner1.1 $e |- ( ph -> ( X ` 0 ) =/= .0. ) $.
-    prjspner1.2 $e |- ( ph -> ( Y ` 0 ) =/= .0. ) $.
-    $( Two vectors whose zeroth coordinate is nonzero are equivalent if and
-       only if they have the same representative in the (n-1)-dimensional
-       affine subspace { x_0 = 1 } .  For example, vectors in 3D space whose
-       ` x ` coordinate is nonzero are equivalent iff they intersect at the
-       plane ` x = 1 ` at the same point (also see section header).
-       (Contributed by SN, 13-Aug-2023.) $)
-    prjspner1 $p |- ( ph -> ( X .~ Y <-> ( F ` X ) = ( F ` Y ) ) ) $=
-      ( vm wbr cfv wceq wcel wa cv co wrex prjsprel cc0 cif wne fveq1 drngringd
-      c0g cfz cvv ovexd cn0 syl frlm0vald sylan9eqr mteqand cdr frlmsca syl2anc
-      0elfz csca fveq2d eqtrid oveq1d clmod cbs frlmlvec lveclmodd csn eleqtrdi
-      clvec cdif eldifad eqid lmod0vs eqtrd neeqtrrd ad2antrr neeq2d syl5ibrcom
-      oveq1 necon2d ancrd cmulr simplr ad3antrrr frlmvscaval frlmbasf ffvelcdmd
-      simpr drnginvmuld drnginvrcld ringcld eleqtrd lmodvsass syl13anc ringassd
-      crg oveqd cur drnginvrld oveq2d ringridmd 3eqtr3d 3eqtr2d oveq12d expimpd
-      wf id eqeq1d syld rexlimdva impr neneqd iffalsed adantr 3eqtr4d ifbieq12d
-      ifexd fvmptd3 prjspner01 simprll simprlr sylan2b wer prjspner ercl2 erref
-      wb breq2 adantl mpbid ertr4d ertrd impbida ) AMNEUMZMHUNZNHUNZUOZUUOAMDUP
-      ZNDUPZUQZMULURZNGUSZUOZULFUTZUQZUURBCDEGULFMNQRVAAUVFUQZVBMUNZOUOZMUVHIUN
-      ZMGUSZVCZVBNUNZOUOZNUVMIUNZNGUSZVCZUUPUUQUVGUVKUVPUVLUVQAUVAUVEUVKUVPUOZA
-      UVAUQZUVDUVRULFUVSUVBFUPZUQZUVDUVBOVDZUVDUQUVRUWAUVDUWBUWAUVBOMUVCUWAMUVC
-      VDUVBOUOZMONGUSZVDZAUWEUVAUVTAMLVGUNZUWDAMUWFUVHOUJMUWFUOAUVHVBUWFUNOVBMU
-      WFVEAJLVBKVHUSZVBVIOUAUDAJUFVFZAVBKVHVJZAKVKUPVBUWGUPZUGKVSVLZVMVNVOAUWDL
-      VTUNZVGUNZNGUSZUWFAOUWMNGAOJVGUNUWMUDAJUWLVGAJVPUPZUWGVIUPZJUWLUOZUFUWIJL
-      UWGVPVIUAVQZVRZWAWBWCALWDUPZNLWEUNZUPZUWNUWFUOALAUWOUWPLWJUPUFUWIJLUWGVIU
-      AWFVRWGZANUXAUWFWHZANDUXAUXDWKUITWIWLZGUWLUWMUXALNUWFUXAWMZUWLWMZUBUWMWMU
-      WFWMWNVRWOWPWQUWCUVCUWDMUVBONGWTWRWSXAXBUWAUWBUVDUVRUWAUWBUQZUVRUVDVBUVCU
-      NZIUNZUVCGUSZUVPUOUXHUXKUVOUVBIUNZJXCUNZUSZUVCGUSZUXNUVBUWLXCUNZUSZNGUSZU
-      VPUXHUXJUXNUVCGUXHUXJUVBUVMUXMUSZIUNUXNUXHUXIUXSIUXHUVBUXAJGUXMUWGVBFVINL
-      UAUXFUCUXHVBKVHVJZUVSUVTUWBXDZAUXBUVAUVTUWBUXEXEZAUWJUVAUVTUWBUWKXEUBUXMW
-      MZXFWAUXHFJUXMIUVBUVMOUCUDUYCUEAUWOUVAUVTUWBUFXEZUYAAUVMFUPUVAUVTUWBAUWGF
-      VBNAUWPUXBUWGFNYGUWIUXEUXAJLUWGFVINUAUCUXFXGVRUWKXHXEZUWAUWBXIZAUVMOVDUVA
-      UVTUWBUKXEZXJWOWCUXHUWTUXNUWLWEUNZUPUVBUYHUPUXBUXRUXOUOAUWTUVAUVTUWBUXCXE
-      UXHUXNFUYHUXHFJUXMUVOUXLUCUYCAJXQUPUVAUVTUWBUWHXEZUXHFJIUVMOUCUDUEUYDUYEU
-      YGXKZUXHFJIUVBOUCUDUEUYDUYAUYFXKZXLAFUYHUOUVAUVTUWBAFJWEUNUYHUCAJUWLWEUWS
-      WAWBXEZXMUXHUVBFUYHUYAUYLXMUYBUXNUVBGUXPUWLUYHUXALNUXFUXGUBUYHWMUXPWMXNXO
-      UXHUXQUVONGUXHUXNUVBUXMUSUVOUXLUVBUXMUSZUXMUSZUXQUVOUXHFJUXMUVOUXLUVBUCUY
-      CUYIUYJUYKUYAXPUXHUXMUXPUXNUVBUXHJUWLXCUXHUWOUWPUWQUYDUXTUWRVRWAXRUXHUYNU
-      VOJXSUNZUXMUSUVOUXHUYMUYOUVOUXMUXHFJUXMUYOIUVBOUCUDUYCUYOWMZUEUYDUYAUYFXT
-      YAUXHFJUXMUYOUVOUCUYCUYPUYIUYJYBWOYCWCYDUVDUVKUXKUVPUVDUVJUXJMUVCGUVDUVHU
-      XIIVBMUVCVEWAUVDYHYEYIWSYFYJYKYLAUVLUVKUOUVFAUVIMUVKAUVHOUJYMYNYOAUVQUVPU
-      OUVFAUVNNUVPAUVMOUKYMYNYOYPUVGPMVBPURZUNZOUOZUYQUYRIUNZUYQGUSZVCZUVLDHVIS
-      UYQMUOZUYSUVIUYQVUAMUVKVUCUYRUVHOVBUYQMVEZYIVUCYHZVUCUYTUVJUYQMGVUCUYRUVH
-      IVUDWAVUEYEYQAUUSUUTUVEUUAZUVGUVIMUVKDVIVUFUVGUVJMGVJYRYSUVGPNVUBUVQDHVIS
-      UYQNUOZUYSUVNUYQVUANUVPVUGUYRUVMOVBUYQNVEZYIVUGYHZVUGUYTUVOUYQNGVUGUYRUVM
-      IVUHWAVUIYEYQAUUSUUTUVEUUBZUVGUVNNUVPDVIVUJUVGUVONGVJYRYSYPUUCAUURUQZMUUP
-      NEDADEUUDUURABCDEFGJKLQRUATUCUBUFUUEZYOZAMUUPEUMUURABCDEFGHIJKLMOPQRSTUAU
-      BUCUDUEUFUGUHYTZYOVUKUUPUUQNEDVUMVUKUUPUUPEUMZUUPUUQEUMZVUKUUPEDVUMAUUPDU
-      PUURAMUUPEDVULVUNUUFYOUUGUURVUOVUPUUHAUUPUUQUUPEUUIUUJUUKANUUQEUMUURABCDE
-      FGHIJKLNOPQRSTUAUBUCUDUEUFUGUIYTYOUULUUMUUN $.
-  $}
-
-  ${
     $d B x y m $.  $d X x y l m $.  $d K x y l m $.  $d .x. x y l m $.
     $d .1. x y l m $.  $d S x y l m $.  $d S n $.  $d .x. n $.  $d .1. n $.
     $d .1. c $.  $d .1. d $.  $d B c $.  $d B d $.  $d B m n $.  $d X c n $.
@@ -725177,7 +725955,7 @@ $)
     0prjspnrel.s $e |- S = ( Base ` K ) $.
     0prjspnrel.w $e |- W = ( K freeLMod ( 0 ... 0 ) ) $.
     0prjspnrel.1 $e |- .1. = ( ( K unitVec ( 0 ... 0 ) ) ` 0 ) $.
-    $( In the zero-dimensional projective space, all vectors are equivalent to
+    $( In a zero-dimensional projective space, all vectors are equivalent to
        the unit vector.  (Contributed by Steven Nguyen, 7-Jun-2023.) $)
     0prjspnrel $p |- ( ( K e. DivRing /\ X e. B ) -> X .~ .1. ) $=
       ( wcel cc0 cvv vm vn vc vd cdr wa cv co wceq wrex simpr 0prjspnlem adantr
@@ -725211,21 +725989,21 @@ $)
     0prjspn.w $e |- W = ( K freeLMod ( 0 ... 0 ) ) $.
     0prjspn.b $e |- B = ( ( Base ` W ) \ { ( 0g ` W ) } ) $.
     $( A zero-dimensional projective space has only 1 point.  (Contributed by
-       Steven Nguyen, 9-Jun-2023.) $)
+       SN, 9-Jun-2023.) $)
     0prjspn $p |- ( K e. DivRing -> ( 0 PrjSpn K ) = { B } ) $=
       ( vx vy vl wcel cc0 co cv wa cfv wceq cbs eqid cvv wbr adantr cdr cprjspn
-      va vb cvsca wrex copab cqs csca csn cn0 0nn0 prjspnval2 mpan ovex frlmsca
-      cfz mpan2 fveq2d rexeqdv anbi2d opabbidv qseq2d cuvc clmod clvec frlmlvec
-      lveclmod 0prjspnrel breqdi adantrr prjspersym syl2an2r prjspertr syl12anc
-      syl adantrl wer prjsper 0prjspnlem qsalrel 3eqtrd ) BUAIZJBUBKZAFLZAIGLZA
-      IMZWEHLWFCUENZKOZHBPNZUFZMZFGUGZUHZAWGWIHCUINZPNZUFZMZFGUGZUHAUJJUKIWCWDW
-      NOULFGAWMWJWHBJCHWMQZDEWJQZWHQZUMUNWCWMWSAWCWLWRFGWCWKWQWGWCWIHWJWPWCBWOP
-      WCJJUQKZRIZBWOOJJUQUOZBCXCUARDUPURUSUTVAVBZVCWCUCUDAWSJBXCVDKNZWCUCLZAIZU
-      DLZAIZMZMCVEIZXHXGWSSZXGXJWSSZXHXJWSSWCXMXLWCCVFIZXMWCXDXPXEBCXCRDVGURZCV
-      HVPTWCXIXNXKWCXIMWMWSXHXGWCWMWSOZXIXFTFGAWMWJWHXGBCXHHWTEXBXADXGQZVIVJVKW
-      CXKXOXIWCXPXKXJXGWSSXOXQWCXKMWMWSXJXGWCXRXKXFTFGAWMWJWHXGBCXJHWTEXBXADXSV
-      IVJFGAWSWOWHWPCXJXGHWSQZEWOQZXBWPQZVLVMVQFGAWSWOWHWPCXHXGXJHXTEYAXBYBVNVO
-      WCXPAWSVRXQFGAWSWOWHWPCHXTEYAXBYBVSVPAXGBCEDXSVTWAWB $.
+      va cvsca wrex copab cqs csca csn cn0 0nn0 a1i prjspnval2 cfz ovex frlmsca
+      vb mpan2 fveq2d rexeqdv anbi2d opabbidv qseq2d cuvc clmod clvec lveclmodd
+      frlmlvec 0prjspnrel breqdi adantrr prjspersym syl2an2r prjspertr syl12anc
+      id adantrl wer prjsper syl 0prjspnlem qsalrel 3eqtrd ) BUAIZJBUBKAFLZAIGL
+      ZAIMZWEHLWFCUDNZKOZHBPNZUEZMZFGUFZUGAWGWIHCUHNZPNZUEZMZFGUFZUGAUIWDFGAWMW
+      JWHBJCHWMQZDEWJQZWHQZJUJIWDUKULWDVPUMWDWMWRAWDWLWQFGWDWKWPWGWDWIHWJWOWDBW
+      NPWDJJUNKZRIZBWNOJJUNUOZBCXBUARDUPURUSUTVAVBZVCWDUCUQAWRJBXBVDKNZWDUCLZAI
+      ZUQLZAIZMZMCVEIZXGXFWRSZXFXIWRSZXGXIWRSWDXLXKWDCWDXCCVFIZXDBCXBRDVHURZVGT
+      WDXHXMXJWDXHMWMWRXGXFWDWMWROZXHXETFGAWMWJWHXFBCXGHWSEXAWTDXFQZVIVJVKWDXJX
+      NXHWDXOXJXIXFWRSXNXPWDXJMWMWRXIXFWDXQXJXETFGAWMWJWHXFBCXIHWSEXAWTDXRVIVJF
+      GAWRWNWHWOCXIXFHWRQZEWNQZXAWOQZVLVMVQFGAWRWNWHWOCXGXFXIHXSEXTXAYAVNVOWDXO
+      AWRVRXPFGAWRWNWHWOCHXSEXTXAYAVSVTAXFBCEDXRWAWBWC $.
   $}
 
   $(
@@ -725343,17 +726121,17 @@ $)
       ( vp vh vk co cfv wceq eqid wcel cvv cprjcrv cc0 cfz cevl cv cima c0g csn
       crab cmhp crn cuni fvssunirn ccnv cn cfn cn0 cmap ovexd fldcrngd crnggrpd
       cxp mpl0 mhp0cl eqeltrd sselid prjcrvval cbs ccrg adantr evl0 imaeq1d cin
-      wa wne wss cpw cfrlm cdif flddrngd prjspnssbas cfsupp wbr frlmbas syl2anc
-      c0 cfield ssrab2 eqsstrrdi ssdifssd sspwd sstrd sselda elpwid sseqin2 cdr
-      sylib simpr prjspnn0 eqnetrd xpima2 syl eqtrd rabeqcda ) AFDCUAOPFUBDUCOZ
-      CUDOZPZLUEZUFZCUGPZUHZQZLBUIBABXFFXECUJOZCDXJLXMRZXFRZIXJRZJKADXMPZXMUKUL
-      FXMDUMAFMUEUNUOUFUPSMUQXEUROUIZXKVBXQAXRECMXEXJTFGXRRZXPHAUBDUCUSZACACKUT
-      ZVAZVCAXRCMXMXEDTXJXNXPXSXTYBJVDVEVFVGAXLLBAXHBSZVNZXICVHPZXEUROZXKVBZXHU
-      FZXKYDXGYGXHYDYEXFCXEXJTEFXOYERZGXPHYDUBDUCUSACVISYCYAVJVKVLYDYFXHVMZWFVO
-      YHXKQYDYJXHWFYDXHYFVPYJXHQYDXHYFABYFVQZXHABCXEVROZVHPZYLUGPUHZVSZVQYKAYOB
-      CDYLIYLRZYORZJACKVTZWAAYOYFAYMYFYNAYMNUEXJWBWCZNYFUIZYFACWGSXETSYTYMQKXTY
-      TCNYLXEYEWGTXJYPYIXPYTRWDWEYSNYFWHWIWJWKWLWMWNXHYFWOWQYDXHYOBCDYLIYPYQADU
-      QSYCJVJACWPSYCYRVJAYCWRWSWTYFXKXHXAXBXCXDXC $.
+      wa c0 wne wss cfrlm cdif cdr flddrngd simpr elprjspnss cfsupp wbr frlmbas
+      cfield syl2anc ssrab2 eqsstrrdi ssdifssd sstrd sseqin2 sylib prjspnn0 syl
+      eqnetrd xpima2 eqtrd rabeqcda ) AFDCUAOPFUBDUCOZCUDOZPZLUEZUFZCUGPZUHZQZL
+      BUIBABXBFXACUJOZCDXFLXIRZXBRZIXFRZJKADXIPZXIUKULFXIDUMAFMUEUNUOUFUPSMUQXA
+      UROUIZXGVBXMAXNECMXAXFTFGXNRZXLHAUBDUCUSZACACKUTZVAZVCAXNCMXIXADTXFXJXLXO
+      XPXRJVDVEVFVGAXHLBAXDBSZVNZXECVHPZXAUROZXGVBZXDUFZXGXTXCYCXDXTYAXBCXAXFTE
+      FXKYARZGXLHXTUBDUCUSACVISXSXQVJVKVLXTYBXDVMZVOVPYDXGQXTYFXDVOXTXDYBVQYFXD
+      QXTXDCXAVROZVHPZYGUGPUHZVSZYBXTXDYJBCDYGIYGRZYJRADUQSXSJVJZACVTSXSACKWAVJ
+      ZAXSWBZWCAYJYBVQXSAYHYBYIAYHNUEXFWDWEZNYBUIZYBACWGSXATSYPYHQKXPYPCNYGXAYA
+      WGTXFYKYEXLYPRWFWHYONYBWIWJWKVJWLXDYBWMWNXTXDBCDIYLYMYNWOWQYBXGXDWRWPWSWT
+      WS $.
   $}
 
 
@@ -734395,133 +735173,6 @@ $)
   $}
 
   ${
-    $d U y z a b c d e f $.  $d S x y a b c d e f g $.  $d R x y a b c d e f $.
-    $d ph x y z c d e f g $.  $d A x y z a b c d e f g $.
-    $d F x y z a b c d e f g $.  $d T a b c d e f $.  $d B a b c d e f $.
-    fnwe2.su $e |- ( z = ( F ` x ) -> S = U ) $.
-    fnwe2.t $e |- T = { <. x , y >. | ( ( F ` x ) R ( F ` y ) \/
-        ( ( F ` x ) = ( F ` y ) /\ x U y ) ) } $.
-    $( Lemma for ~ fnwe2 .  Substitute variables.  (Contributed by Stefan
-       O'Rear, 19-Jan-2015.) $)
-    fnwe2val $p |- ( a T b <-> ( ( F ` a ) R ( F ` b ) \/
-        ( ( F ` a ) = ( F ` b ) /\ a [_ ( F ` a ) / z ]_ S b ) ) ) $=
-      ( cv cfv wbr wceq wa wo csb vex fveq2 breqan12d eqeqan12d csbeq1d eqtr3id
-      simpl fvex csbie adantr simpr breq123d anbi12d orbi12d braba ) AMZHNZBMZH
-      NZDOZUPURPZUOUQGOZQZRIMZHNZJMZHNZDOZVDVFPZVCVECVDESZOZQZRABVCVEFITJTUOVCP
-      ZUQVEPZQZUSVGVBVKVLVMUPVDURVFDUOVCHUAZUQVEHUAZUBVNUTVHVAVJVLVMUPVDURVFVOV
-      PUCVNUOVCUQVEGVIVLVMUFVLGVIPVMVLGCUPESVICUPEGUOHUGKUHVLCUPVDEVOUDUEUIVLVM
-      UJUKULUMLUN $.
-
-    fnwe2.s $e |- ( ( ph /\ x e. A ) ->
-        U We { y e. A | ( F ` y ) = ( F ` x ) } ) $.
-    $( Lemma for ~ fnwe2 .  Substitution in well-ordering hypothesis.
-       (Contributed by Stefan O'Rear, 19-Jan-2015.) $)
-    fnwe2lem1 $p |- ( ( ph /\ a e. A ) ->
-        [_ ( F ` a ) / z ]_ S We { y e. A | ( F ` y ) = ( F ` a ) } ) $=
-      ( cv cfv wceq crab csb wwe wral ralrimiva fveq2 csbeq1d fvex csbie eqtrdi
-      eqeq2d rabbidv weeq12d cbvralvw sylibr r19.21bi ) ACOJPZKOZJPZQZCERZDUPGS
-      ZTZKEAUNBOZJPZQZCERZITZBEUAUTKEUAAVEBENUBUTVEKBEUOVAQZURVDUSIVFUSDVBGSIVF
-      DUPVBGUOVAJUCZUDDVBGIVAJUELUFUGVFUQVCCEVFUPVBUNVGUHUIUJUKULUM $.
-
-    fnwe2.f $e |- ( ph -> ( F |` A ) : A --> B ) $.
-    fnwe2.r $e |- ( ph -> R We B ) $.
-
-    ${
-      $d ph b $.
-      fnwe2lem2.a $e |- ( ph -> a C_ A ) $.
-      fnwe2lem2.n0 $e |- ( ph -> a =/= (/) ) $.
-      $( Lemma for ~ fnwe2 .  An element which is in a minimal fiber and
-         minimal within its fiber is minimal globally; thus ` T ` is
-         well-founded.  (Contributed by Stefan O'Rear, 19-Jan-2015.) $)
-      fnwe2lem2 $p |- ( ph -> E. b e. a A. c e. a -. c T b ) $=
-        ( ve vd vf vg cv wbr wn cres cima wral wrex cvv wcel wfr wss c0 wf wfun
-        wne ffun vex funimaex 3syl wwe wefr syl crn imassrn frnd sstrid cdm cin
-        incom wceq sseqtrrd dfss2 sylib eqtrid eqnetrd imadisj necon3bii sylibr
-        fdmd fri syl22anc cfv df-ima rexeqi wfn wb fnssres syl2anc breq2 notbid
-        ralbidv rexrn bitrid wel wa raleqi breq1 ralrn adantr resabs1d ad2antrr
-        ffnd fveq1d fvres adantl eqtrd ad2antlr breq12d ralbidva bitrd rexbidva
-        csb crab inex1 a1i sselda fnwe2lem1 syldan adantrr inss2 simprl fveqeq2
-        eqidd elrabd elind wi elin elrab anbi2i bitri weq rspcdva biimtrid mpd
-        ex ne0d imbi1i impexp ralbii2 simplrl fveq2 breq1d simplrr simpr breq2d
-        wo simprrr mtbird ad3antrrr simprr eleq1w anbi12d imbi12d simplr mp2and
-        eqtr2d csbeq1d breqd mtbid expr imnan ioran sylanbrc fnwe2val ralrimiva
-        sylnibr rspcev rexlimdv rexlimdvaa sylbid ) AUBUFZUCUFZGUGZUHZUBKEUIZLU
-        FZUJZUKZUCUWBULZNUFZMUFZIUGZUHZNUWAUKZMUWAULZAUWBUMUNZFGUOZUWBFUPUWBUQU
-        TZUWDAEFUVTURUVTUSUWKREFUVTVAUVTUWALVBZVCVDAFGVEUWLSFGVFVGAUWBUVTVHFUVT
-        UWAVIAEFUVTRVJVKAUVTVLZUWAVMZUQUTUWMAUWPUWAUQAUWPUWAUWOVMZUWAUWOUWAVNAU
-        WAUWOUPUWQUWAVOAUWAEUWOTAEFUVTRWDVPUWAUWOVQVRVSUAVTUWBUQUWPUQUVTUWAWAWB
-        WCUCUBFUWBUMGWEWFAUWDUVQKWGZUDUFZKWGZGUGZUHZUCUWAUKZUDUWAULZUWJAUWDUVPU
-        WSUVTUWAUIZWGZGUGZUHZUBUWBUKZUDUWAULZUXDUWDUWCUCUXEVHZULZAUXJUWCUCUWBUX
-        KUVTUWAWHZWIAUXEUWAWJZUXLUXJWKAUVTEWJUWAEUPZUXNAEFUVTRXGTEUWAUVTWLWMZUW
-        CUXIUCUDUWAUXEUVQUXFVOZUVSUXHUBUWBUXQUVRUXGUVQUXFUVPGWNWOWPWQVGWRAUXIUX
-        CUDUWAAUDLWSZWTZUXIUVQUXEWGZUXFGUGZUHZUCUWAUKZUXCAUXIUYCWKUXRUXIUXHUBUX
-        KUKZAUYCUXHUBUWBUXKUXMXAAUXNUYDUYCWKUXPUXHUYBUBUCUWAUXEUVPUXTVOUXGUYAUV
-        PUXTUXFGXBWOXCVGWRXDUXSUYBUXBUCUWAUXSUCLWSZWTZUYAUXAUYFUXTUWRUXFUWTGUYF
-        UXTUVQKUWAUIZWGZUWRUYFUVQUXEUYGAUXEUYGVOUXRUYEAKUWAETXEXFZXHUYEUYHUWRVO
-        UXSUVQUWAKXIXJXKUYFUXFUWSUYGWGZUWTUYFUWSUXEUYGUYIXHUXRUYJUWTVOAUYEUWSUW
-        AKXIXLXKXMWOXNXOXPXOAUXCUWJUDUWAAUXRUXCWTZWTZUEUFZUVPDUWTHXQZUGZUHZUEUW
-        ACUFZKWGUWTVOZCEXRZVMZUKZUBUYTULZUWJUYLUYTUMUNZUYSUYNUOZUYTUYSUPZUYTUQU
-        TVUBVUCUYLUWAUYSUWNXSXTAUXRVUDUXCAUXRUWSEUNZVUDAUWAEUWSTYAZAVUFWTUYSUYN
-        VEVUDABCDEGHIJKUDOPQYBUYSUYNVFVGYCYDVUEUYLUWAUYSYEXTUYLUYTUWSUYLUWAUYSU
-        WSAUXRUXCYFUYLUYRUWTUWTVOCUWSEUYQUWSUWTKYGAUXRVUFUXCVUGYDUYLUWTYHYIYJUU
-        AUBUEUYSUYTUMUYNWEWFUYLVUAUWJUBUYTUVPUYTUNZUBLWSZUVPEUNZUVPKWGZUWTVOZWT
-        ZWTZUYLVUAUWJYKZVUHVUIUVPUYSUNZWTVUNUVPUWAUYSYLVUPVUMVUIUYRVULCUVPEUYQU
-        VPUWTKYGYMYNYOUYLVUNVUOVUAUYMEUNZUYMKWGUWTVOZWTZUYPYKZUEUWAUKZUYLVUNWTZ
-        UWJUYPVUTUEUYTUWAUYMUYTUNZUYPYKUELWSZVUSWTZUYPYKVVDVUTYKVVCVVEUYPVVCVVD
-        UYMUYSUNZWTVVEUYMUWAUYSYLVVFVUSVVDUYRVURCUYMEUYQUYMUWTKYGYMYNYOUUBVVDVU
-        SUYPUUCYOUUDVVBVVAUWJVVBVVAWTZVUIUWEUVPIUGZUHZNUWAUKZUWJUYLVUIVUMVVAUUE
-        VVGVVINUWAVVGNLWSZWTZUWEKWGZVUKGUGZVVMVUKVOZUWEUVPDVVMHXQZUGZWTZUUKZVVH
-        VVLVVNUHVVRUHZVVSUHVVLVVNVVMUWTGUGZVVLUXBVWAUHUCUWAUWEUCNYPZUXAVWAVWBUW
-        RVVMUWTGUVQUWEKUUFUUGWOVVBUXCVVAVVKAUXRUXCVUNUUHXFVVGVVKUUIYQVVLVUKUWTV
-        VMGVVBVULVVAVVKUYLVUIVUJVULUULZXFUUJUUMVVLVVOVVQUHZYKVVTVVGVVKVVOVWDVVG
-        VVKVVOWTZWTZUWEUVPUYNUGZVVQVWFUWEEUNZVVMUWTVOZVWGUHZVVGVVKVWHVVOVVGUWAE
-        UWEAUXOUYKVUNVVATUUNYAYDVWFVVMVUKUWTVVGVVKVVOUUOZVVBVULVVAVWEVWCXFZXKVW
-        FVUTVWHVWIWTZVWJYKUEUWAUWEUENYPZVUSVWMUYPVWJVWNVUQVWHVURVWIUENEUUPUYMUW
-        EUWTKYGUUQVWNUYOVWGUYMUWEUVPUYNXBWOUURVVBVVAVWEUUSVVGVVKVVOYFYQUUTVWFUY
-        NVVPUWEUVPVWFDUWTVVMHVWFVVMVUKUWTVWKVWLUVAUVBUVCUVDUVEVVOVVQUVFVRVVNVVR
-        UVGUVHBCDGHIJKNUBOPUVIUVKUVJUWIVVJMUVPUWAMUBYPZUWHVVINUWAVWOUWGVVHUWFUV
-        PUWEIWNWOWPUVLWMYTYRYTYRUVMYSUVNUVOYS $.
-    $}
-
-    ${
-      fnwe2lem3.a $e |- ( ph -> a e. A ) $.
-      fnwe2lem3.b $e |- ( ph -> b e. A ) $.
-      $( Lemma for ~ fnwe2 .  Trichotomy.  (Contributed by Stefan O'Rear,
-         19-Jan-2015.) $)
-      fnwe2lem3 $p |- ( ph -> ( a T b \/ a = b \/ b T a ) ) $=
-        ( cv cfv wbr weq w3o wceq wa csb animorrl fnwe2val sylibr 3mix1d simplr
-        simpr jca olcd 3mix2 adantl eqcomd csbeq1 breqd biimpa 3mix3d crab wcel
-        wo wor wwe fnwe2lem1 mpdan weso syl adantr fveqeq2 eqidd solin syl12anc
-        elrabd mpjao3dan cres fvresd ffvelcdmd eqeltrrd ) ALUAZKUBZMUAZKUBZGUCZ
-        WDWFIUCZLMUDZWFWDIUCZUEZWEWGUFZWGWEGUCZAWHUGZWIWJWKWOWHWMWDWFDWEHUHZUCZ
-        UGZVFZWIAWHWRUIBCDGHIJKLMNOUJZUKULAWMUGZWQWLWJWFWDWPUCZXAWQUGZWIWJWKXCW
-        SWIXCWRWHXCWMWQAWMWQUMXAWQUNUOUPWTUKULWJWLXAWJWIWKUQURXAXBUGZWKWIWJXDWN
-        WGWEUFZWFWDDWGHUHZUCZUGZVFZWKXDXHWNXDXEXGXDWEWGAWMXBUMUSXAXBXGXAWPXFWFW
-        DWMWPXFUFADWEWGHUTURVAVBUOUPBCDGHIJKMLNOUJZUKVCXACUAZKUBWEUFZCEVDZWPVGZ
-        WDXMVEWFXMVEWQWJXBUEAXNWMAXMWPVHZXNAWDEVEZXOSABCDEGHIJKLNOPVIVJXMWPVKVL
-        VMXAXLWEWEUFCWDEXKWDWEKVNAXPWMSVMXAWEVOVRXAXLXECWFEXKWFWEKVNAWFEVEWMTVM
-        XAWEWGAWMUNUSVRXMWDWFWPVPVQVSAWNUGZWKWIWJXQXIWKAWNXHUIXJUKVCAFGVGZWEFVE
-        WGFVEWHWMWNUEAFGVHXRRFGVKVLAWDKEVTZUBWEFAWDEKSWAAEFWDXSQSWBWCAWFXSUBWGF
-        AWFEKTWAAEFWFXSQTWBWCFWEWGGVPVQVS $.
-    $}
-
-    $d ph a b $.
-    $( A well-ordering can be constructed on a partitioned set by patching
-       together well-orderings on each partition using a well-ordering on the
-       partitions themselves.  Similar to ~ fnwe but does not require the
-       within-partition ordering to be globally well.  (Contributed by Stefan
-       O'Rear, 19-Jan-2015.) $)
-    fnwe2 $p |- ( ph -> T We A ) $=
-      ( va vb vd cv vc wfr wbr weq w3o wral wwe wss c0 wne wa wrex wal wcel cfv
-      wn wi wceq crab adantlr cres wf adantr simprl simprr fnwe2lem2 ex alrimiv
-      df-fr sylibr fnwe2lem3 ralrimivva dfwe2 sylanbrc ) AEIUBZQTZRTZIUCQRUDVQV
-      PIUCUEZREUFQEUFEIUGAVPEUHZVPUIUJZUKZSTUATIUCUPSVPUFUAVPULZUQZQUMVOAWCQAWA
-      WBAWAUKBCDEFGHIJKQUASLMABTZEUNZCTKUOWDKUOURCEUSJUGZWANUTAEFKEVAVBZWAOVCAF
-      GUGZWAPVCAVSVTVDAVSVTVEVFVGVHQUASEIVIVJAVRQREEAVPEUNZVQEUNZUKZUKBCDEFGHIJ
-      KQRLMAWEWFWKNUTAWGWKOVCAWHWKPVCAWIWJVDAWIWJVEVKVLQREIVMVN $.
-  $}
-
-  ${
     $d z a b c d $.
     aomclem1.b $e |- B = { <. a , b >. | E. c e. ( R1 ` U. dom z )
         ( ( c e. b /\ -. c e. a ) /\ A. d e. ( R1 ` U. dom z )
@@ -743299,12 +743950,6 @@ $)
     TTT $.
 
   $( AFTER 18224 cnvcnvss $)
-
-  $( Subclass theorem for converse.  (Contributed by RP, 22-Oct-2020.) $)
-  cnvssb $p |- ( Rel A -> ( A C_ B <-> `' A C_ `' B ) ) $=
-    ( wrel wss ccnv cnvss wa dfrel2 biimpi eqcomd adantr cnvcnvss sstrdi adantl
-    wceq id eqsstrd ex syl5 impbid2 ) ACZABDZAEZBEZDZABFUEUCEZUDEZDZUAUBUCUDFUA
-    UHUBUAUHGAUFBUAAUFOUHUAUFAUAUFAOAHIJKUHUFBDUAUHUFUGBUHPBLMNQRST $.
 
   $( The non-relation part of a relation is empty.  (Contributed by RP,
      22-Oct-2020.) $)
@@ -766569,6 +767214,90 @@ $)
       ZBCFZECGHZEABCICGJRSQBCADKLMABCNCGOP $.
   $}
 
+  ${
+    $d x y z w F $.  $d x y z w H $.  $d x y z w K $.  $d x y z w ph $.
+    cocan2g.1 $e |- ( ph -> Fun F ) $.
+    cocan2g.2 $e |- ( ph -> Rel H ) $.
+    cocan2g.3 $e |- ( ph -> dom H C_ ran F ) $.
+    $( Cancellation law for composition.  Suggested by BJ. (Contributed by Eric
+       Schmidt, 30-Sep-2026.) $)
+    cocanss2 $p |- ( ph -> ( ( H o. F ) C_ ( K o. F ) <-> H C_ K ) ) $=
+      ( vy vz vx vw ccom wa adantr cv wbr wcel wex wi vex wss cop crn cdm sseld
+      wrel breldm syl5 elrn imbitrdi 19.8a brco sylibr ssbr adantl wfun fununiq
+      weq imp breq1d biimprd expr impd exlimdv sylan ex adantrd mpdd expd com23
+      df-br 3imtr3g relssdv coss1 impbid1 ) ACBLZDBLZUAZCDUAZAVRVSAVRMZHICDACUF
+      VRFNVTHOZIOZCPZWAWBDPZWAWBUBZCQWEDQVTWCJOZWABPZJRZWDAWCWHSVRAWCWABUCZQZWH
+      WCWACUDZQAWJWAWBCHTZITZUGAWKWIWAGUEUHJWABWLUIUJNVTWHWCWDVTWGWCWDSJVTWGWCW
+      DVTWGWCMZWFKOZBPZWOWBDPZMZKRZWDVRWNWSSAVRWNWFWBVQPZWSWNWFWBVPPZVRWTWNWNHR
+      XAWNHUKHWFWBCBJTZWMULUMVPVQWFWBUNUHKWFWBDBXBWMULUJUOVTWGWSWDSZWCAWGXCSVRA
+      WGXCABUPZWGXCEXDWGMZWRWDKXEWPWQWDXDWGWPWQWDSXDWGWPMZMZWDWQXGWAWOWBDXDXFHK
+      URWFWAWOBXBWLKTUQUSUTVAVBVCVDVEVFNVGVHVIVDVJVHWAWBCVKWAWBDVKVLVMVFCDBVNVO
+      $.
+
+    cocan2g.4 $e |- ( ph -> Rel K ) $.
+    cocan2g.5 $e |- ( ph -> dom K C_ ran F ) $.
+    $( Cancellation law for composition.  A version of ~ cocan2 with weaker
+       hypotheses.  (Contributed by Eric Schmidt, 29-Sep-2026.) $)
+    cocan2g $p |- ( ph -> ( ( H o. F ) = ( K o. F ) <-> H = K ) ) $=
+      ( ccom wss wa wceq cocanss2 anbi12d eqss 3bitr4g ) ACBJZDBJZKZSRKZLCDKZDC
+      KZLRSMCDMATUBUAUCABCDEFGNABDCEHINORSPCDPQ $.
+  $}
+
+  ${
+    cocan1g.1 $e |- ( ph -> Fun `' F ) $.
+    cocan1g.2 $e |- ( ph -> Rel H ) $.
+    cocan1g.3 $e |- ( ph -> ran H C_ dom F ) $.
+    $( Cancellation law for composition.  Suggested by BJ. (Contributed by Eric
+       Schmidt, 30-Sep-2026.) $)
+    cocanss1 $p |- ( ph -> ( ( F o. H ) C_ ( F o. K ) <-> H C_ K ) ) $=
+      ( ccnv ccom wss wrel relcnv a1i crn cdm df-rn dfdm4 wb cnvssb cnvco relco
+      3sstr3g cocanss2 ax-mp sseq12i bitri syl 3bitr4d ) ACHZBHZIZDHZUJIZJZUIUL
+      JZBCIZBDIZJZCDJZAUJUIULEUIKACLMACNBOUIOUJNGCPBQUBUCURUNRAURUPHZUQHZJZUNUP
+      KURVBRBCUAUPUQSUDUTUKVAUMBCTBDTUEUFMACKUSUORFCDSUGUH $.
+
+    cocan1g.4 $e |- ( ph -> Rel K ) $.
+    cocan1g.5 $e |- ( ph -> ran K C_ dom F ) $.
+    $( Cancellation law for composition.  A version of ~ cocan1 with weaker
+       hypotheses.  (Contributed by Eric Schmidt, 29-Sep-2026.) $)
+    cocan1g $p |- ( ph -> ( ( F o. H ) = ( F o. K ) <-> H = K ) ) $=
+      ( ccom wss wa wceq cocanss1 anbi12d eqss 3bitr4g ) ABCJZBDJZKZSRKZLCDKZDC
+      KZLRSMCDMATUBUAUCABCDEFGNABDCEHINORSPCDPQ $.
+  $}
+
+  ${
+    $d m n F $.  $d m n X $.
+
+    $( The domain of an extensible structure is a subset of ` NN ` .
+       (Contributed by Eric Schmidt, 29-Sep-2026.) $)
+    dmstructnn $p |- ( F Struct X -> dom F C_ NN ) $=
+      ( vm vn cstr wbr cv cop wceq wrex wss cle wcel cfz reximi sylbi rexlimdvw
+      cn syl w3a cdm cxp cin c0 csn cdif wfun isstruct2 simp1bi wa elinxp simpl
+      cfv breq2 biimpcd co isstruct simp3bi simp11 fzssnn sstrd syl6 mpd ) ABEF
+      ZBCGZDGZHZIZDRJZCRJZAUAZRKZVDBLRRUBUCMZVJVDVMAUDUEUFUGZVKBNUMKABUHUIVMVHV
+      GLMZUJZDRJZCRJVJCDRRBLUKVQVICRVPVHDRVHVOULOOPSVDVIVLCRVDVHVLDRVDVHAVGEFZV
+      LVHVDVRBVGAEUNUOVRVKVEVFNUPZRVRVERMZVFRMZVEVFLFZTZVNVKVSKZAVEVFUQZURVRVTV
+      SRKVRWCVNWDTVTWEVTWAWBVNWDUSPVEVFUTSVAVBQQVC $.
+
+    $( The domain of an extensible structure is finite.  (Contributed by Eric
+       Schmidt, 29-Sep-2026.) $)
+    dmstructfi $p |- ( F Struct X -> dom F e. Fin ) $=
+      ( vm vn cstr wbr cv cop wceq cn wrex cdm cfn cle cxp cfz reximi rexlimdvw
+      wcel wss cin c0 csn cdif wfun cfv isstruct2 simp1bi wa elinxp simpl sylbi
+      syl breq2 biimpcd co fzfi w3a isstruct simp3bi ssfi sylancr syl6 mpd ) AB
+      EFZBCGZDGZHZIZDJKZCJKZALZMSZVEBNJJOUASZVKVEVNAUBUCUDUEZVLBPUFTABUGUHVNVIV
+      HNSZUIZDJKZCJKVKCDJJBNUJVRVJCJVQVIDJVIVPUKQQULUMVEVJVMCJVEVIVMDJVEVIAVHEF
+      ZVMVIVEVSBVHAEUNUOVSVFVGPUPZMSVLVTTZVMVFVGUQVSVFJSVGJSVFVGNFURVOWAAVFVGUS
+      UTVTVLVAVBVCRRVD $.
+  $}
+
+  $( The range of an extensible structure is finite.  (Contributed by Eric
+     Schmidt, 29-Sep-2026.) $)
+  rnstructfi $p |- ( F Struct X -> ran F e. Fin ) $=
+    ( cstr wbr crn ccnv cdm cima cfn imadmrn rncnvcnv eqtri structfung dmcnvcnv
+    wfun wcel dmstructfi eqeltrid imafi syl2anc eqeltrrid ) ABCDZAEZAFFZUDGZHZI
+    UFUDEUCUDJAKLUBUDOUEIPUFIPABMUBUEAGIANABQRUDUESTUA $.
+
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Study of dfbi1ALT
@@ -767968,6 +768697,108 @@ $)
   omsshf $p |- _om C_ HF $=
     ( vx com chf cv omhf ssriv ) ABCADEF $.
   $( $j usage 'omsshf' avoids 'ax-inf' 'ax-inf2' 'ax-reg'; $)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Hereditarily finite structures
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c HFStruct $.
+
+  $( Extend class notation with the set of structures whose components are
+     hereditarily finite. $)
+  chfstruct $a class HFStruct $.
+
+  $( Define the class of extensible structures whose components are all
+     hereditarily finite.  We will call these "HFStructs".  Ideally, an
+     HFStruct would itself be a hereditarily finite set, but this is not
+     possible because the domain of a structure is, in the current formulation,
+     a subset of ` NN ` .  To get around this, we adjust the domain to be a
+     subset of ` _om ` , obtaining the "converted form"
+     ` ( F o. ( # |`` _om ) ) ` of an HFStruct ` F ` .  This is indeed
+     hereditarily finite by ~ hfstructhf .  Also, unlike general extensible
+     structures, we do not allow ` (/) ` to be a member of an HFStruct.  This
+     restriction gives us the property that two HFStructs are equal if and only
+     if their converted forms are equal ( ~ hfstructcan ).  (Contributed by
+     Eric Schmidt, 29-Sep-2026.) $)
+  df-hfstruct $a |- HFStruct = ( dom Struct i^i ~P ( _V X. HF ) ) $.
+
+  ${
+    $d x F $.
+
+    $( An HFStruct is an extensible structure.  (Contributed by Eric Schmidt,
+       29-Sep-2026.) $)
+    hfstructstruct $p |- ( F e. HFStruct -> E. x F Struct x ) $=
+      ( chfstruct wcel cstr cdm wbr wex cvv chf cxp cpw cin elinel1 df-hfstruct
+      cv eleq2s eldmg ibi syl ) BCDBEFZDZBAPEGAHZUBBUAIJKLZMCBUAUDNOQUBUCABEUAR
+      ST $.
+
+    $( An HFStruct is a function.  (Contributed by Eric Schmidt,
+       29-Sep-2026.) $)
+    hfstructfun $p |- ( F e. HFStruct -> Fun F ) $=
+      ( chfstruct wcel ccnv wfun cstr wbr wex hfstructstruct structfung exlimiv
+      vx cv syl wrel wb cvv chf cxp wss cdm cpw cin elinel2 elpwid eleq2s relxp
+      df-hfstruct relss mpisyl wceq dfrel2 biimpi funeqd mpbid ) ABCZADDZEZAEZU
+      PALMZFGZLHURLAIVAURLAUTJKNUPAOZURUSPUPAQRSZTZVCOVBVDAFUAZVCUBZUCZBAVGCAVC
+      AVEVFUDUEUHUFQRUGAVCUIUJVBUQAVBUQAUKAULUMUNNUO $.
+  $}
+
+  $( The range of an HFStruct consists of hereditarily finite sets.
+     (Contributed by Eric Schmidt, 29-Sep-2026.) $)
+  rnhfstructsshf $p |- ( F e. HFStruct -> ran F C_ HF ) $=
+    ( chfstruct wcel crn cvv chf cxp wss cdm cpw cin elinel2 elpwid df-hfstruct
+    cstr eleq2s rnss syl rnxpss sstrdi ) ABCZADZEFGZDZFUAAUCHZUBUDHUEAOIZUCJZKZ
+    BAUHCAUCAUFUGLMNPAUCQREFST $.
+
+  $( Conditions that imply that ` F ` is an HFStruct.  (Contributed by Eric
+     Schmidt, 29-Sep-2026.) $)
+  ishfstruct $p |- ( ( F Struct X /\ Rel F /\ ran F C_ HF ) -> F e. HFStruct )
+    $=
+    ( cstr wbr wrel crn chf wss w3a cdm cvv cxp cpw cin chfstruct wcel brstruct
+    releldmi 3ad2ant1 structex relssdmrn 3ad2ant2 ssv mpan 3ad2ant3 sstrd elpwd
+    xpss12 elind df-hfstruct eleqtrrdi ) ABCDZAEZAFZGHZIZACJZKGLZMZNOUPUQUSAULU
+    MAUQPUOABCQRSUPAURKULUMAKPUOABTSUPAAJZUNLZURUMULAVAHUOAUAUBUOULVAURHZUMUTKH
+    UOVBUTUCUTKUNGUHUDUEUFUGUIUJUK $.
+
+  ${
+    $d x F $.
+
+    $( The range of an HFStruct is a hereditarily finite set.  (Contributed by
+       Eric Schmidt, 29-Sep-2026.) $)
+    rnhfstructhf $p |- ( F e. HFStruct -> ran F e. HF ) $=
+      ( vx chfstruct wcel crn cfn chf wss cv cstr wbr hfstructstruct rnstructfi
+      wex exlimiv syl rnhfstructsshf elhf3 sylanbrc ) ACDZAEZFDZUAGHUAGDTABIZJK
+      ZBNUBBALUDUBBAUCMOPAQUARS $.
+
+    $( A converted HFStruct is a hereditarily finite set.  (Contributed by Eric
+       Schmidt, 29-Sep-2026.) $)
+    hfstructhf $p |- ( F e. HFStruct -> ( F o. ( # |` _om ) ) e. HF ) $=
+      ( vx chfstruct wcel com cres ccom cdm chf crn cfn wss ccnv cima dmco wfun
+      chash cn0 wa sylancr wfo wf1o hashomf1o dff1o3 mpbi simpri hfstructstruct
+      cv wbr wex dmstructfi exlimiv syl imafi eqeltrid dmcoss dmhashres sseqtri
+      cstr omsshf sstri elhf3 sylanblrc rncoss rnhfstructhf wrel wb relco hfrel
+      hfsshf ax-mp sylanbrc ) ACDZAQEFZGZHZIDZVOJZIDZVOIDZVMVPKDVPILVQVMVPVNMZA
+      HZNZKAVNOVMWAPZWBKDZWCKDERVNUAZWDERVNUBWFWDSUCERVNUDUEUFVMABUHZUSUIZBUJWE
+      BAUGWHWEBAWGUKULUMWAWBUNTUOVPEIVPVNHEAVNUPEUQURUTVAVPVBVCVMVRAJZLWIIDVSAV
+      NVDAVEVRWIVJTVOVFVTVQVSSVGAVNVHVOVIVKVL $.
+  $}
+
+  ${
+    $d x F $.  $d x G $.
+    $( Two HFStructs are equal if and only if their converted forms are equal.
+       (Contributed by Eric Schmidt, 29-Sep-2026.) $)
+    hfstructcan $p |- ( ( F e. HFStruct /\ G e. HFStruct ) ->
+           ( ( F o. ( # |` _om ) ) = ( G o. ( # |` _om ) ) <-> F = G ) ) $=
+      ( vx chfstruct wcel wa com cn0 wfun hashomf1o wrel hfstructfun funrel syl
+      adantr cdm wss cstr wbr wex chash cres wf1o f1ofun mp1i cv hfstructstruct
+      crn cn dmstructnn nnssnn0 sstrdi wf1 wceq dff1o5 simpri sseqtrrdi exlimiv
+      mpbi adantl cocan2g ) ADEZBDEZFZUAGUBZABGHVEUCZVEIVDJGHVEUDUEVBAKZVCVBAIV
+      GALAMNOVBAPZVEUHZQZVCVBACUFZRSZCTVJCAUGVLVJCVLVHHVIVLVHUIHAVKUJUKULGHVEUM
+      ZVIHUNZVFVMVNFJGHVEUOUSUPZUQURNOVCBKZVBVCBIVPBLBMNUTVCBPZVIQZVBVCBVKRSZCT
+      VRCBUGVSVRCVSVQHVIVSVQUIHBVKUJUKULVOUQURNUTVA $.
+  $}
 
 $( (End of Eric Schmidt's mathbox.) $)
 $( End $[ set-mbox-es.mm $] $)
@@ -772160,11 +772991,6 @@ $)
       ( cdiv co cmul mulcld div32d divcan3d oveq2d eqidd 3eqtrd ) ABCIJCDKJZKJB
       RCIJZKJBDKJZTABCREFACDFGLHMASDBKADCGFHNOATPQ $.
   $}
-
-  $( A finite sequence of integers is a set of real numbers.  (Contributed by
-     Glauco Siliprandi, 5-Apr-2020.) $)
-  fzssre $p |- ( M ... N ) C_ RR $=
-    ( cfz co cz cr fzssz zssre sstri ) ABCDEFABGHI $.
 
   ${
     bccld.n $e |- ( ph -> N e. NN0 ) $.
@@ -808802,8 +809628,9 @@ $)
   ${
     $d h i l n q $.  $d h k l q $.  $d i j l m n q $.  $d j k l m q $.
     $( ` _e ` is transcendental.  Section *5 of [Juillerat] p. 11 can be used
-       as a reference for this proof.  (Contributed by Glauco Siliprandi,
-       5-Apr-2020.)  (Proof shortened by AV, 28-Sep-2020.) $)
+       as a reference for this proof.  This is Metamath 100 proof #67.
+       (Contributed by Glauco Siliprandi, 5-Apr-2020.)  (Proof shortened by AV,
+       28-Sep-2020.) $)
     etransc $p |- _e e. ( CC \ AA ) $=
       ( vk vq vn vm ceu caa wcel cv cc0 cabs cfv c1 clt wa wn wceq co cmul eqid
       cn0 vl vh vj vi cc cdif wne wbr cz wrex wi 1red cr nn0abscl nn0red adantr
@@ -837838,7 +838665,7 @@ see Wikipedia "Mersenne prime", 16-Aug-2021,
 
 This means that if M_n = 2^n-1 is prime, than n must be prime, too, see
 ~ mersenne .  The reverse direction is not generally valid: If p is prime,
-then M_p = 2^p-1 needs not be prime, e.g. M_11 = 2047 = 23 x 89, see
+then M_p = 2^p-1 need not be prime, e.g. M_11 = 2047 = 23 x 89, see
 ~ m11nprm .  This is an example of ~ sgprmdvdsmersenne , stating that if p
 with p = 3 modulo 4 (here 11) and q=2p+1 (here 23) are prime, then q divides
 M_p.
@@ -849950,7 +850777,7 @@ $)
        sets is an element of this set.  By this definition, the closure law is
        expressed as binary relation: a binary operation is related to a set by
        ` clLaw ` if the closure law holds for this binary operation regarding
-       this set.  Note that the binary operation needs not to be a function.
+       this set.  Note that the binary operation need not to be a function.
        (Contributed by AV, 7-Jan-2020.) $)
     df-cllaw $a |- clLaw = { <. o , m >. |
                              A. x e. m A. y e. m ( x o y ) e. m } $.

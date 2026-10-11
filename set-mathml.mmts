@@ -119,14 +119,14 @@ $i class .|| $: <munder accentunder><mi mathcolor=#808>&#8741;</mi> <mo mathcolo
 $i class .~ $: <munder accentunder><mi mathcolor=#808>&#x223C;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
 $i class ._|_ $: <munder accentunder><mi mathcolor=#808>&#8869;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
 $i class .+^ $: <munder accentunder><mi mathcolor=#808>&#x2A23;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
-$i class .+b $: <munder accentunder><mi mathcolor=#808>&#x271A;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .+b $: <munder accentunder><mo mathcolor="#808" mathvariant="bold">+</mo> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
 $i class .(+) $: <munder accentunder><mi mathcolor=#808>&#x2295;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
 $i class .* $: <munder accentunder><mi mathcolor=#808>&lowast;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
 $i class .x. $: <munder accentunder><mi mathcolor=#808>&middot;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
 $i class .xb $: <munder accentunder><mi mathcolor=#808>&#x2219;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
 $i class ., $: <munder accentunder><mi mathcolor=#808>,</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
 $i class .(x) $: <munder accentunder><mi mathcolor=#808>&#x2297;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
-$i class .0b $: <munder accentunder><mi mathcolor=#808>&#x1D7CE</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .0b $: <munder accentunder><mi mathcolor=#808>&#x1D7CE;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
 
 $( Constants $)
 $s wff T. $: <mi href="df-tru.html">&#x22A4;</mi> $. $( There is actually an entity &true; $)

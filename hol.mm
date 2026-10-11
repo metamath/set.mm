@@ -2216,7 +2216,7 @@ htmldef "bool" as
 htmldef "ind" as
     "<IMG SRC='iota.gif' WIDTH=6 HEIGHT=19 ALT='iota' ALIGN=TOP>";
   althtmldef "ind" as '<FONT SIZE="+1">&iota;</FONT>';
-  latexdef "ind" as "\iota";
+  latexdef "ind" as "\upiota";
 htmldef "->" as
     " <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;' ALIGN=TOP> ";
   althtmldef "->" as ' &rarr; ';
@@ -2348,9 +2348,7 @@ htmldef "onto" as "onto ";
 htmldef "@" as
     "<IMG SRC='varepsilon.gif' WIDTH=8 HEIGHT=19 ALT='@' ALIGN=TOP>";
   althtmldef "@" as '&epsilon;';
-  latexdef "@" as "\varepsilon";
+  latexdef "@" as "\upvarepsilon";
 
 /* End of typesetting definition section */
 $)
-
-$( 456789012345 (79-character line to adjust text window width) 567890123456 $)
