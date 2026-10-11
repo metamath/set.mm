@@ -164726,8 +164726,8 @@ $)
   ${
     s1mapd.1 $e |- ( ph -> S e. V ) $.
     s1mapd.x $e |- ( ph -> X e. S ) $.
-    $( A singleton word is a mapping.  See also ~ s2mapd .  (Contributed by
-       Thierry Arnoux, 10-Oct-2026.) $)
+    $( A singleton word is a function on the singleton ` { 0 } ` .  See also
+       ~ s2mapd .  (Contributed by Thierry Arnoux, 10-Oct-2026.) $)
     s1mapd $p |- ( ph -> <" X "> e. ( S ^m { 0 } ) ) $=
       ( cs1 cc0 c1 cfzo co cmap csn cvv ovexd chash cfv wceq s1len a1i eleqtrdi
       eqcomd s1cld wrdfd elmapdd fzo01 oveq2i ) ADGZBHIJKZLKBHMZLKABUIUHCNEAHIJ
@@ -169165,8 +169165,9 @@ $)
     s2mapd.s $e |- ( ph -> S e. V ) $.
     s2mapd.x $e |- ( ph -> X e. S ) $.
     s2mapd.y $e |- ( ph -> Y e. S ) $.
-    $( A doubleton word is a mapping.  See also ~ s3rexrd .  (Contributed by
-       Thierry Arnoux, 10-Oct-2026.) $)
+    $( A doubleton word is a function on the doubleton ` ( 0 ..^ 2 ) ` (which
+       is equal to ` { 0 , 1 } ` by ~ fzo0to2pr ).  See also ~ s3rexrd .
+       (Contributed by Thierry Arnoux, 10-Oct-2026.) $)
     s2mapd $p |- ( ph -> <" X Y "> e. ( S ^m ( 0 ..^ 2 ) ) ) $=
       ( cc0 c2 cfzo co cs2 cvv ovexd chash cfv wceq s2len a1i eqcomd elmapdd
       s2cld wrdfd ) ABIJKLDEMZCNFAIJKOABJUEAUEPQZJUFJRADESTUAADEBGHUCUDUB $.
