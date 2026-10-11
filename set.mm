@@ -582066,6 +582066,18 @@ $)
       TUCXRABOXTCDABXAXRXSABXRXHUVHXBWTXCABFYBXDXE $.
   $}
 
+  ${
+    $d A x $.
+    $( Values of the ` _K1 ` function are ordinals.  (Contributed by
+       BTernaryTau, 11-Oct-2026.) $)
+    k1on $p |- ( _K1 ` A ) e. On $=
+      ( vx con0 wcel ck1 cfv cj ccnv c1st cv wceq 2fveq3 fveq2d dfk12 fvmpt cxp
+      fvex c9o wf1o xp1st jf1o f1ocnvdm mpan eqeltrd wn fvmptndm 0elon eqeltrdi
+      3syl c0 pm2.61i ) ACDZAEFZCDULUMAGHZFZIFZIFZCBABJZUNFIFZIFZUQCEURAKUSUPIU
+      RAIUNLMBNZUPIQOULUOCCPZRPZDZUPVBDUQCDVCCGSULVDUAVCCAGUBUCUOVBRTUPCCTUIUDU
+      LUEUMUJCBCUTEAVAUFUGUHUK $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
