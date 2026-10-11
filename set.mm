@@ -58708,6 +58708,28 @@ $)
       ( wrel ccnv wbr wb relbrcnvg ax-mp ) CEABCFGBACGHDABCIJ $.
   $}
 
+
+  $( The converse of the binary epsilon relation.  For a set ` A ` , the
+     relation ` A ``' _E B ` holds exactly when ` B e. A ` .  The sethood
+     requirement concerns the first argument, not the converse epsilon relation
+     itself.  (Contributed by Peter Mazsa, 30-Jan-2018.) $)
+  brcnvep $p |- ( A e. V -> ( A `' _E B <-> B e. A ) ) $=
+    ( cep ccnv wbr wcel rele relbrcnv epelg bitrid ) ABDEFBADFACGBAGABDHIBACJK
+    $.
+
+  ${
+    $d A x y $.
+    $( Express the restriction of the converse epsilon relation to ` A ` as a
+       class of ordered pairs.  The first coordinate belongs to ` A ` , and the
+       second is a member of the first.  No sethood hypothesis on ` A ` or on
+       the converse epsilon relation is needed.  (Contributed by Peter Mazsa,
+       10-Feb-2018.) $)
+    cnvepres $p |- ( `' _E |` A ) = { <. x , y >. | ( x e. A /\ y e. x ) } $=
+      ( cep ccnv cres cv wcel wbr wa copab dfres2 wb cvv brcnvep anbi2i opabbii
+      elv eqtri ) DEZCFAGZCHZUABGZTIZJZABKUBUCUAHZJZABKABCTLUEUGABUDUFUBUDUFMAU
+      AUCNORPQS $.
+  $}
+
   ${
     $d A x y z $.  $d B x y z $.
     $( A composition is a relation.  Exercise 24 of [TakeutiZaring] p. 25.
@@ -78386,17 +78408,17 @@ $)
      reverse implication used in ~ relexdmrnb and in ~ imaexb .  (Contributed
      by Peter Mazsa, 10-Oct-2026.) $)
   reldmrnex $p |- ( ( Rel R /\ ( dom R e. V /\ ran R e. W ) ) -> R e. _V ) $=
-    ( wrel cdm crn cxp wss cvv wcel wa relssdmrn xpexg ssexg syl2an )
-    ADAAEZAFZGZHRIJAIJPBJQCJKALPQBCMARINO $.
+    ( wrel cdm crn cxp wss cvv wcel wa relssdmrn xpexg ssexg syl2an ) ADAAEZAFZ
+    GZHRIJAIJPBJQCJKALPQBCMARINO $.
 
-  $( A relation is a set exactly when both its domain and range are sets.
-     The forward implication does not require relationhood.  The reverse
+  $( A relation is a set exactly when both its domain and range are sets.  The
+     forward implication does not require relationhood.  The reverse
      implication follows from ~ reldmrnex .  (Contributed by Peter Mazsa,
      10-Oct-2026.) $)
   relexdmrnb $p |- ( Rel R ->
                      ( R e. _V <-> ( dom R e. _V /\ ran R e. _V ) ) ) $=
-    ( wrel cvv wcel cdm crn dmexg rnexg jca adantl reldmrnex impbida
-    wa ) ABZACDZAECDZAFCDZMZORNOPQACGACHIJACCKL $.
+    ( wrel cvv wcel cdm crn wa dmexg rnexg jca adantl reldmrnex impbida ) ABZAC
+    DZAECDZAFCDZGZORNOPQACHACIJKACCLM $.
 
   ${
     fndmexd.1 $e |- ( ph -> F e. V ) $.
@@ -78475,9 +78497,9 @@ $)
      10-Oct-2026.) $)
   imaexb $p |- ( dom ( A |` B ) e. V ->
                  ( ( A |` B ) e. _V <-> ( A " B ) e. _V ) ) $=
-    ( cres cdm wcel cvv cima imaexgen df-ima eleq1i wrel wa reldmrnex
-    crn relres mpan sylan2b ex impbid2 ) ABDZECFZUAGFZABHZGFZABGIUBUE
-    UCUEUBUAOZGFZUCUDUFGABJKUALUBUGMUCABPUACGNQRST $.
+    ( cres cdm wcel cvv cima imaexgen df-ima eleq1i wa relres reldmrnex sylan2b
+    crn wrel mpan ex impbid2 ) ABDZECFZUAGFZABHZGFZABGIUBUEUCUEUBUAPZGFZUCUDUFG
+    ABJKUAQUBUGLUCABMUACGNROST $.
 
   $( The image of a set is a set.  Theorem 3.17 of [Monk1] p. 39.  More
      restrictive antecedent; kept for backward compatibility; for new work,
@@ -79169,6 +79191,21 @@ $)
       UNACIUPUOXAIUNXEWOPZXMWQXIAXTXLWPWKXEWOWCUQTXTXIACIURZAAICUSAYAUTCIACIVAV
       BVCVDVGVEVFVHRWTWLBDVIWNBWKDWFVJWLBDVKSWIBCWKVRVLVMDMKWFMKZBDVNWGMKEYBBDW
       HWDMKWEMKYBBVOFWDWEMMVPVQVSBDWFMMVTWAWB $.
+  $}
+
+  ${
+    $d A x y $.  $d V x $.
+    $( A restriction of the converse epsilon relation to a set is a set,
+       although the converse epsilon relation itself is a proper class.  The
+       restricted relation contains only pairs whose first coordinate belongs
+       to ` A ` and whose second coordinate belongs to a member of ` A ` , as
+       characterized by ~ cnvepres .  In particular, this supplies the
+       singleton-restriction sethood needed to apply ~ ecexgen in ~ eccnvepex .
+       (Contributed by Peter Mazsa, 24-Sep-2018.) $)
+    cnvepresex $p |- ( A e. V -> ( `' _E |` A ) e. _V ) $=
+      ( vx vy wcel cep ccnv cres cv wa copab cvv cnvepres cab abid2 vex eqeltri
+      id a1i opabex3d eqeltrid ) ABEZFGAHCIZAEZDIUCEZJCDKLCDAMUBUECDABUBRUEDNZL
+      EUBUDJUFUCLDUCOCPQSTUA $.
   $}
 
   ${
@@ -90703,10 +90740,33 @@ $)
       ABDCMN $.
   $}
 
-  $( An equivalence class modulo a set is a set.  (Contributed by NM,
-     24-Jul-1995.) $)
+  $( Existence of a coset whenever the corresponding singleton restriction is a
+     set.  This generalizes ~ ecexg : the entire relation need not be a set.
+     The distinction is substantive for proper-class relations.  For example,
+     ~ eccnvepex follows from this theorem and ~ cnvepresex , although ~ ecexg
+     cannot be applied directly to the converse epsilon relation.  (Contributed
+     by Peter Mazsa, 22-Feb-2023.) $)
+  ecexgen $p |- ( ( R |` { A } ) e. V -> [ A ] R e. _V ) $=
+    ( csn cres wcel cec cima cvv df-ec imaexgen eqeltrid ) BADZECFABGBMHIABJBMC
+    KL $.
+
+  $( Every coset of the converse epsilon relation is a set, although the
+     converse epsilon relation itself is a proper class.  By ~ cnvepresex , its
+     restriction to any singleton is a set; hence ~ ecexgen establishes the
+     coset's existence without requiring sethood of the entire relation.  This
+     illustrates the genuine generality of ~ ecexgen over ~ ecexg .
+     (Contributed by Peter Mazsa, 22-Mar-2023.) $)
+  eccnvepex $p |- [ A ] `' _E e. _V $=
+    ( csn cvv wcel cep ccnv cres cec snex cnvepresex ecexgen mp2b ) ABZCDEFZMGC
+    DANHCDAIMCJANCKL $.
+
+  $( Existence of a coset of a set relation.  This is a special case of
+     ~ ecexgen , since restricting a set relation preserves sethood.  The
+     stronger theorem also applies to certain restrictions of proper-class
+     relations, as illustrated by ~ eccnvepex .  (Contributed by NM,
+     24-Jul-1995.)  (Revised by Peter Mazsa, 11-Oct-2026.) $)
   ecexg $p |- ( R e. B -> [ A ] R e. _V ) $=
-    ( wcel cec csn cima cvv df-ec imaexg eqeltrid ) CBDACECAFZGHACICLBJK $.
+    ( wcel csn cres cvv cec resexg ecexgen syl ) CBDCAEZFGDACHGDCLBIACGJK $.
 
   $( A nonempty equivalence class implies the representative is a set.
      (Contributed by Mario Carneiro, 9-Jul-2014.) $)
@@ -640493,12 +640553,6 @@ $)
     ( wcel wa cvv cxp cdif wbr wn brvvdif brvdif bitr4di ) ADFBEFGABHHICJKABCKL
     ABHCJKABCDEMABCNO $.
 
-  $( The converse of the binary epsilon relation.  (Contributed by Peter Mazsa,
-     30-Jan-2018.) $)
-  brcnvep $p |- ( A e. V -> ( A `' _E B <-> B e. A ) ) $=
-    ( cep ccnv wbr wcel rele relbrcnv epelg bitrid ) ABDEFBADFACGBAGABDHIBACJK
-    $.
-
   $( Elementhood in the ` R ` -coset of ` A ` .  Theorem 72 of [Suppes] p. 82.
      (I think we should replace ~ elecg with this original form of Suppes.
      Peter Mazsa).  (Contributed by Mario Carneiro, 9-Jul-2014.) $)
@@ -640801,16 +640855,6 @@ $)
           E. u e. A ( B e. [ u ] R /\ C e. [ u ] S ) ) ) $=
       ( wcel wa cv cres wbr wex wrex cec exanres exanres3 bitr4d ) CGIDHIJAKZCE
       BLMTDFBLMJANTCEMTDFMJABOCTEPIDTFPIJABOABCDEFGHQABCDEFGHRS $.
-  $}
-
-  ${
-    $d A x y $.
-    $( Restricted converse epsilon relation as a class of ordered pairs.
-       (Contributed by Peter Mazsa, 10-Feb-2018.) $)
-    cnvepres $p |- ( `' _E |` A ) = { <. x , y >. | ( x e. A /\ y e. x ) } $=
-      ( cep ccnv cres cv wcel wbr wa copab dfres2 wb cvv brcnvep anbi2i opabbii
-      elv eqtri ) DEZCFAGZCHZUABGZTIZJZABKUBUCUAHZJZABKABCTLUEUGABUDUFUBUDUFMAU
-      AUCNORPQS $.
   $}
 
   ${
@@ -641117,16 +641161,6 @@ $)
       ( vy vx cv wcel wex wral wa copab cdm wceq cep ccnv cres dmopab3 cnvepres
       c0 wn n0el dmeqi eqeq1i 3bitr4i ) BDCDZEZBFCAGUCAEUDHCBIZJZAKQAERLMANZJZA
       KUDCBAOCBASUHUFAUGUECBAPTUAUB $.
-  $}
-
-  ${
-    $d A x y $.  $d V x $.
-    $( Sethood condition for the restricted converse epsilon relation.
-       (Contributed by Peter Mazsa, 24-Sep-2018.) $)
-    cnvepresex $p |- ( A e. V -> ( `' _E |` A ) e. _V ) $=
-      ( vx vy wcel cep ccnv cres cv wa copab cvv cnvepres cab abid2 vex eqeltri
-      id a1i opabex3d eqeltrid ) ABEZFGAHCIZAEZDIUCEZJCDKLCDAMUBUECDABUBRUEDNZL
-      EUBUDJUFUCLDUCOCPQSTUA $.
   $}
 
   $( The image of converse epsilon.  (Contributed by Peter Mazsa,
