@@ -91472,17 +91472,29 @@ $)
 
   ${
     $d A x y $.  $d R x y $.  $d V x $.
-    $( The union of a quotient set, like ~ uniqsw but with a weaker antecedent:
-       only the restriction of ` R ` by ` A ` needs to be a set, not ` R `
-       itself, see e.g. ~ cnvepima .  (Contributed by NM, 9-Dec-2008.)
-       (Revised by Peter Mazsa, 20-Jun-2019.) $)
-    uniqs $p |- ( ( R |` A ) e. V -> U. ( A /. R ) = ( R " A ) ) $=
-      ( vy vx cres wcel cv cec wceq wrex cab cuni ciun cqs cima cvv wral elecex
-      ralrimiv dfiun2g syl eqcomd df-qs unieqi csn df-ec iuneq2i imaiun imaeq2i
-      a1i iunid 3eqtr2ri 3eqtr4g ) BAFCGZDHEHZBIZJEAKDLZMZEAUQNZABOZMBAPZUOUTUS
-      UOUQQGZEARUTUSJUOVCEAAUPBCSTEDAUQQUAUBUCVAUREDABUDUEUTEABUPUFZPZNBEAVDNZP
-      VBEAUQVEUQVEJUPAGUPBUGUKUHEBAVDUIVFABEAULUJUMUN $.
+    $( The union of a quotient set equals the image of its indexing class
+       whenever that image is a set.  This strengthens ~ uniqs : sethood of the
+       restriction is sufficient but not necessary.  Neither ` R ` nor its
+       restriction need be sets.  (Contributed by Peter Mazsa, 11-Oct-2026.) $)
+    uniqsima $p |- ( ( R " A ) e. V -> U. ( A /. R ) = ( R " A ) ) $=
+      ( vy vx cima wcel cv cec wceq wrex cab cuni ciun cqs cvv wral wss csn syl
+      df-ec snssi imass2 eqsstrid ssexg sylan expcom ralrimiv dfiun2g df-qs a1i
+      eqcomd unieqi iuneq2i imaiun iunid imaeq2i 3eqtr2ri 3eqtr4g ) BAFZCGZDHEH
+      ZBIZJEAKDLZMZEAVCNZABOZMUTVAVFVEVAVCPGZEAQVFVEJVAVHEAVBAGZVAVHVIVCUTRVAVH
+      VIVCBVBSZFZUTVBBUAZVIVJARVKUTRVBAUBVJABUCTUDVCUTCUEUFUGUHEDAVCPUITULVGVDE
+      DABUJUMVFEAVKNBEAVJNZFUTEAVCVKVCVKJVIVLUKUNEBAVJUOVMABEAUPUQURUS $.
   $}
+
+  $( The union of a quotient class equals the image of its indexing class
+     whenever the corresponding restriction is a set.  This weakens ~ uniqsw :
+     only the restriction, not the entire class ` R ` , need be a set (see e.g.
+     ~ cnvepima ).  It is a special case of ~ uniqsima , which requires only
+     the image to be a set, even when the restriction is a proper class.
+     Neither theorem requires ` R ` to be a relation.  (Contributed by NM,
+     9-Dec-2008.)  (Revised by Peter Mazsa, 20-Jun-2019.) $)
+  uniqs $p |- ( ( R |` A ) e. V -> U. ( A /. R ) = ( R " A ) ) $=
+    ( cres wcel cima cvv cqs cuni wceq imaexgen uniqsima syl ) BADCEBAFZGEABHIN
+    JBACKABGLM $.
 
   $( The union of a quotient set.  More restrictive antecedent; kept for
      backward compatibility; for new work, prefer ~ uniqs .  (Contributed by
