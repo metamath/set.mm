@@ -90768,6 +90768,15 @@ $)
     ( csn cres wcel cec cima cvv df-ec imaexgen eqeltrid ) BADZECFABGBMHIABJBMC
     KL $.
 
+  $( A singleton restriction is a set exactly when its corresponding coset is a
+     set.  The forward implication is also established directly by ~ ecexgen .
+     For the reverse implication, the domain of the restriction is always a
+     set, allowing ~ imaexb to apply.  Neither the indexed class nor the
+     relation need be sets.  (Contributed by Peter Mazsa, 11-Oct-2026.) $)
+  ecexb $p |- ( ( R |` { A } ) e. _V <-> [ A ] R e. _V ) $=
+    ( csn cres cvv wcel cima cec cdm wb snex dmresexg imaexb mp2b eleq1i bitr4i
+    df-ec ) BACZDZEFZBRGZEFZABHZEFREFSIEFTUBJAKBRELBREMNUCUAEABQOP $.
+
   $( Every coset of the converse epsilon relation is a set, although the
      converse epsilon relation itself is a proper class.  By ~ cnvepresex , its
      restriction to any singleton is a set; hence ~ ecexgen establishes the
