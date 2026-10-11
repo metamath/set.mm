@@ -69720,17 +69720,30 @@ $)
     UDAIZUEJUFUCUGUEUCCQUDACUBMACNOPUDARSTUA $.
 
   ${
+    $d F x $.
+    $( If the domain of a function exists, so does the function.  Part of
+       Theorem 4.15(v) of [Monk1] p. 46.  This is the existence principle also
+       stated by ~ funex , proved here directly using the Axiom of Replacement,
+       before ~ resfunexg and ~ fnex .  It permits these later theorems to be
+       derived without a circular dependency.  (Contributed by NM,
+       11-Nov-1995.)  (Revised by Peter Mazsa, 11-Oct-2026.) $)
+    funexg $p |- ( ( Fun F /\ dom F e. V ) -> F e. _V ) $=
+      ( vx wfun cdm wcel wa cv cfv cop cmpt cima cvv crn wfn funfnd dffn5 sylib
+      wceq id fvex fnasrn eqtrdi opex eqid dmmpti imaeq2i imadmrn eqtr3i adantr
+      eqtr4di funmpt funimaexg mpan adantl eqeltrd ) ADZAEZBFZGACURCHZUTAIZJZKZ
+      URLZMUQAVDSUSUQAVCNZVDUQACURVAKZVEUQAUROAVFSUQAUQTPCURAQRCURVAUTAUAUBUCVC
+      VCEZLVDVEVGURVCCURVBVCUTVAUDVCUEUFUGVCUHUIUKUJUSVDMFZUQVCDUSVHCURVBULVCUR
+      BUMUNUOUP $.
+  $}
+
+  ${
     $d x A $.  $d x B $.
     $( The restriction of a function to a set exists.  Compare Proposition 6.17
        of [TakeutiZaring] p. 28.  (Contributed by NM, 7-Apr-1995.)  (Revised by
-       Mario Carneiro, 22-Jun-2013.) $)
+       Mario Carneiro, 22-Jun-2013.)  (Revised by Peter Mazsa, 11-Oct-2026.) $)
     resfunexg $p |- ( ( Fun A /\ B e. C ) -> ( A |` B ) e. _V ) $=
-      ( vx wfun wcel wa cres cdm cv cfv cop cmpt cima cvv crn wfn funres adantr
-      wceq funfnd dffn5 sylib fvex fnasrn eqtrdi dmmpti imaeq2i imadmrn eqtr4di
-      opex eqid eqtr3i funmpt dmresexg adantl funimaexg sylancr eqeltrd ) AEZBC
-      FZGZABHZDVCIZDJZVEVCKZLZMZVDNZOVBVCVHPZVIVBVCDVDVFMZVJVBVCVDQVCVKTVBVCUTV
-      CEVABARSUADVDVCUBUCDVDVFVEVCUDUEUFVHVHIZNVIVJVLVDVHDVDVGVHVEVFUKVHULUGUHV
-      HUIUMUJVBVHEVDOFZVIOFDVDVGUNVAVMUTABCUOUPVHVDOUQURUS $.
+      ( wfun cres cdm cvv wcel funres dmresexg funexg syl2an ) ADABEZDMFGHMGHBC
+      HBAIABCJMGKL $.
   $}
 
   ${
@@ -69742,15 +69755,13 @@ $)
   $}
 
   $( If the domain of a function is a set, the function is a set.  Theorem
-     6.16(1) of [TakeutiZaring] p. 28.  This theorem is derived using the Axiom
-     of Replacement in the form of ~ resfunexg .  See ~ fnexALT for alternate
-     proof.  (Contributed by NM, 14-Aug-1994.)  (Proof shortened by Andrew
-     Salmon, 17-Sep-2011.) $)
+     6.16(1) of [TakeutiZaring] p. 28.  This follows directly from the earlier
+     Replacement-based theorem ~ funexg , without depending on ~ resfunexg .
+     (Contributed by NM, 14-Aug-1994.)  (Revised by Peter Mazsa,
+     11-Oct-2026.) $)
   fnex $p |- ( ( F Fn A /\ A e. B ) -> F e. _V ) $=
-    ( wfn wrel wcel cdm cres cvv fnrel wfun wceq eleq1a impcom resfunexg sylan2
-    wa df-fn anassrs sylanb resdm eleq1d biimpa syl2an2r ) CADZCEZABFZCCGZHZIFZ
-    CIFZACJUECKZUHALZQUGUJCARULUMUGUJUMUGQULUHBFZUJUGUMUNABUHMNCUHBOPSTUFUJUKUF
-    UICICUAUBUCUD $.
+    ( wfn wfun cdm wceq wa cvv df-fn eleq1a impcom funexg sylan2 anassrs sylanb
+    wcel ) CADCEZCFZAGZHABQZCIQZCAJRTUAUBTUAHRSBQZUBUATUCABSKLCBMNOP $.
 
   ${
     fnexd.1 $e |- ( ph -> F Fn A ) $.
@@ -69767,7 +69778,7 @@ $)
      F.U.N.E.X. and "Have You Any Eggs" is purely a coincidence originated by
      Swedish chefs.)  (Contributed by NM, 11-Nov-1995.) $)
   funex $p |- ( ( Fun F /\ dom F e. B ) -> F e. _V ) $=
-    ( wfun cdm wfn wcel cvv funfn fnex sylanb ) BCBBDZEKAFBGFBHKABIJ $.
+    ( funexg ) BAC $.
 
   ${
     $d x y A $.
@@ -78419,6 +78430,13 @@ $)
                      ( R e. _V <-> ( dom R e. _V /\ ran R e. _V ) ) ) $=
     ( wrel cvv wcel cdm crn wa dmexg rnexg jca adantl reldmrnex impbida ) ABZAC
     DZAECDZAFCDZGZORNOPQACHACIJKACCLM $.
+
+  $( A function is a set exactly when its domain is a set.  The forward
+     implication holds without functionhood by ~ dmexg .  The reverse
+     implication follows from ~ funexg and requires functionhood.  (Contributed
+     by Peter Mazsa, 10-Oct-2026.) $)
+  funexb $p |- ( Fun F -> ( F e. _V <-> dom F e. _V ) ) $=
+    ( wfun cvv wcel cdm dmexg funexg ex impbid2 ) ABZACDZAECDZACFJLKACGHI $.
 
   ${
     fndmexd.1 $e |- ( ph -> F e. V ) $.
