@@ -78382,6 +78382,16 @@ $)
       ( wcel cdm cvv dmexg syl ) ABCEBFGEDBCHI $.
   $}
 
+  $( A relation is a set exactly when both its domain and range are sets.  The
+     forward direction does not require relationhood, in the reverse direction
+     relationhood places the relation inside the Cartesian product of its
+     domain and range.  (Contributed by Peter Mazsa, 10-Oct-2026.) $)
+  relexdmrnb $p |- ( Rel R ->
+                     ( R e. _V <-> ( dom R e. _V /\ ran R e. _V ) ) ) $=
+    ( wrel cvv wcel cdm crn wa dmexg rnexg jca adantl relssdmrn xpexg
+    cxp wss ssexg syl2an impbida ) ABZACDZAEZCDZAFZCDZGZTUESTUBUDACHA
+    CIJKSAUAUCNZOUFCDTUEALUAUCCCMAUFCPQR $.
+
   ${
     fndmexd.1 $e |- ( ph -> F e. V ) $.
     fndmexd.2 $e |- ( ph -> F Fn D ) $.
