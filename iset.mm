@@ -182482,6 +182482,36 @@ $)
       UJUMUKULUAUPCDAUGUHUI $.
 
     ${
+      $d F f $.  $d I f x $.
+      $( A finite index set gives a simpler expression for finite bags.
+         (Contributed by Jim Kingdon, 23-Nov-2025.) $)
+      psrbagfi $p |- ( I e. Fin -> D = ( NN0 ^m I ) ) $=
+        ( vx cfn wcel cv ccnv cn cima cn0 cmap wral wceq wdc ad2antlr ralrimiva
+        wa syl co crab cdm wss elmapi fdmd adantl simpl eqeltrd cnvimass a1i cz
+        cfv wf simpr eleqtrd ffvelcdmd nn0zd elnndc wfn elpreima mpbirand dcbid
+        wb elmapfn mpbird ssfidc syl3anc rabid2 sylibr eqtr4id ) CFGZABHZIJKZFG
+        ZBLCMUAZUBZVPDVLVOBVPNVPVQOVLVOBVPVLVMVPGZSZVMUCZFGVNVTUDZEHZVNGZPZEVTN
+        VOVSVTCFVRVTCOZVLVRCLVMVMLCUEZUFZUGVLVRUHUIWAVSVMJUJUKVSWDEVTVSWBVTGZSZ
+        WDWBVMUMZJGZPZWIWJULGWLWIWJWICLWBVMVRCLVMUNVLWHWFQWIWBVTCVSWHUOVRWEVLWH
+        WGQUPZUQURWJUSTWIWCWKWIWCWBCGZWKWMWIVMCUTZWCWNWKSVDVRWOVLWHVMLCVEQCWBJV
+        MVATVBVCVFREVTVNVGVHRVOBVPVIVJVK $.
+    $}
+
+    ${
+      $d N f y $.  $d X f y $.  $d I y $.  $d V y $.
+      $( A bag containing one element is a finite bag.  (Contributed by Mario
+         Carneiro, 7-Jan-2015.)  (Revised by AV, 8-Jul-2019.) $)
+      snifpsrbagfi $p |- ( ( I e. Fin /\ N e. NN0 /\ X e. I )
+                         -> ( y e. I |-> if ( y = X , N , 0 ) ) e. D ) $=
+        ( cfn wcel cn0 w3a cv wceq cc0 cif cmpt cmap co a1i cvv simpl2 0nn0 wdc
+        wf simpl1 simpr simpl3 fidceq syl3anc ifcldcd fmpttd nn0ex simp1 elmapd
+        wa mpbird psrbagfi syl eleqtrrd ) DHIZEJIZFDIZKZADALZFMZENOZPZJDQRZBVCV
+        GVHIDJVGUDVCADVFJVCVDDIZUOZVEENJUTVAVBVIUANJIVJUBSVJUTVIVBVEUCUTVAVBVIU
+        EVCVIUFUTVAVBVIUGDVDFUHUIUJUKVCJDVGTHJTIVCULSUTVAVBUMZUNUPVCUTBVHMVKBCD
+        GUQURUS $.
+    $}
+
+    ${
       $d n f x $.  $d I x $.  $d V x $.
       $( The constant function equal to zero is a finite bag.  (Contributed by
          AV, 8-Jul-2019.) $)
@@ -182524,22 +182554,6 @@ $)
         ( cvv wcel cn0 wf cle cofr wbr w3a ccnv cn cima wss id psrbagf 3ad2ant1
         ffnd fndmexd psrbaglesuppg mpancom ) EGHZCAHZEIDJZDCKLMZNDOPQCOPQRUGUHU
         FUIUGECAUGSUGEICABCEFTUBUCUAABCDEGFUDUE $.
-    $}
-
-    ${
-      $d F f $.  $d I f x $.
-      $( A finite index set gives a simpler expression for finite bags.
-         (Contributed by Jim Kingdon, 23-Nov-2025.) $)
-      psrbagfi $p |- ( I e. Fin -> D = ( NN0 ^m I ) ) $=
-        ( vx cfn wcel cv ccnv cn cima cn0 cmap wral wceq wdc ad2antlr ralrimiva
-        wa syl co crab cdm wss elmapi fdmd adantl simpl eqeltrd cnvimass a1i cz
-        cfv wf simpr eleqtrd ffvelcdmd nn0zd elnndc wfn elpreima mpbirand dcbid
-        wb elmapfn mpbird ssfidc syl3anc rabid2 sylibr eqtr4id ) CFGZABHZIJKZFG
-        ZBLCMUAZUBZVPDVLVOBVPNVPVQOVLVOBVPVLVMVPGZSZVMUCZFGVNVTUDZEHZVNGZPZEVTN
-        VOVSVTCFVRVTCOZVLVRCLVMVMLCUEZUFZUGVLVRUHUIWAVSVMJUJUKVSWDEVTVSWBVTGZSZ
-        WDWBVMUMZJGZPZWIWJULGWLWIWJWICLWBVMVRCLVMUNVLWHWFQWIWBVTCVSWHUOVRWEVLWH
-        WGQUPZUQURWJUSTWIWCWKWIWCWBCGZWKWMWIVMCUTZWCWNWKSVDVRWOVLWHVMLCVEQCWBJV
-        MVATVBVCVFREVTVNVGVHRVOBVPVIVJVK $.
     $}
 
     $d G f $.
