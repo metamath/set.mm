@@ -78382,15 +78382,21 @@ $)
       ( wcel cdm cvv dmexg syl ) ABCEBFGEDBCHI $.
   $}
 
-  $( A relation is a set exactly when both its domain and range are sets.  The
-     forward direction does not require relationhood, in the reverse direction
-     relationhood places the relation inside the Cartesian product of its
-     domain and range.  (Contributed by Peter Mazsa, 10-Oct-2026.) $)
+  $( A relation is a set if both its domain and range are sets.  This is the
+     reverse implication used in ~ relexdmrnb and in ~ imaexb .  (Contributed
+     by Peter Mazsa, 10-Oct-2026.) $)
+  reldmrnex $p |- ( ( Rel R /\ ( dom R e. V /\ ran R e. W ) ) -> R e. _V ) $=
+    ( wrel cdm crn cxp wss cvv wcel wa relssdmrn xpexg ssexg syl2an )
+    ADAAEZAFZGZHRIJAIJPBJQCJKALPQBCMARINO $.
+
+  $( A relation is a set exactly when both its domain and range are sets.
+     The forward implication does not require relationhood.  The reverse
+     implication follows from ~ reldmrnex .  (Contributed by Peter Mazsa,
+     10-Oct-2026.) $)
   relexdmrnb $p |- ( Rel R ->
                      ( R e. _V <-> ( dom R e. _V /\ ran R e. _V ) ) ) $=
-    ( wrel cvv wcel cdm crn wa dmexg rnexg jca adantl cxp relssdmrn xpexg ssexg
-    wss syl2an impbida ) ABZACDZAEZCDZAFZCDZGZTUESTUBUDACHACIJKSAUAUCLZPUFCDTUE
-    AMUAUCCCNAUFCOQR $.
+    ( wrel cvv wcel cdm crn dmexg rnexg jca adantl reldmrnex impbida
+    wa ) ABZACDZAECDZAFCDZMZORNOPQACGACHIJACCKL $.
 
   ${
     fndmexd.1 $e |- ( ph -> F e. V ) $.
@@ -78460,6 +78466,18 @@ $)
      Mazsa, 10-Oct-2026.) $)
   imaexgen $p |- ( ( A |` B ) e. V -> ( A " B ) e. _V ) $=
     ( cres wcel cima crn cvv df-ima rnexg eqeltrid ) ABDZCEABFLGHABILCJK $.
+
+  $( A restriction whose domain is a set is itself a set if and only if its
+     image is a set.  The forward implication holds without the domain
+     hypothesis by ~ imaexgen .  Only the reverse implication requires domain
+     sethood, using ~ reldmrnex .  Neither the original relation nor the
+     restricting class need be sets.  (Contributed by Peter Mazsa,
+     10-Oct-2026.) $)
+  imaexb $p |- ( dom ( A |` B ) e. V ->
+                 ( ( A |` B ) e. _V <-> ( A " B ) e. _V ) ) $=
+    ( cres cdm wcel cvv cima imaexgen df-ima eleq1i wrel wa reldmrnex
+    crn relres mpan sylan2b ex impbid2 ) ABDZECFZUAGFZABHZGFZABGIUBUE
+    UCUEUBUAOZGFZUCUDUFGABJKUALUBUGMUCABPUACGNQRST $.
 
   $( The image of a set is a set.  Theorem 3.17 of [Monk1] p. 39.  More
      restrictive antecedent; kept for backward compatibility; for new work,
