@@ -591529,10 +591529,10 @@ $)
     $d M f g m n $.  $d M f g n x $.
     mirimanoff.1 $e |- M = { x | -. E. f ( f Fn NN /\ ( f ` 1 ) = x /\ A. n e.
                     NN ( f ` ( n + 1 ) ) e. ( f ` n ) ) } $.
-    $( Mirimanoff's paradox: The class of grounded sets is not a set.  Here, a
+    $( Mirimanoff's paradox:  The class of grounded sets is not a set.  Here, a
        set ` x ` is grounded if there is no infinite membership-descending
-       sequence of sets beginning with ` x ` .  See Paragraph 1 of [Quine] p.
-       37 .  The proof does not depend on ~ ax-reg .  (Contributed by Adrian
+       sequence of sets beginning with ` x ` .  See Paragraph 1 of [Quine]
+       p. 37 .  The proof does not depend on ~ ax-reg .  (Contributed by Adrian
        Ducourtial, 11-Oct-2026.) $)
     mirimanoff $p |- M e/ _V $=
       ( vg vm cvv wcel cv cn c1 cfv wceq caddc wral w3a eleq12d wi fveq1 wfn co
