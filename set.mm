@@ -591532,8 +591532,7 @@ $)
     $( Mirimanoff's paradox:  The class of grounded sets is not a set.  Here, a
        set ` x ` is grounded if there is no infinite membership-descending
        sequence of sets beginning with ` x ` .  See Paragraph 1 of [Quine]
-       p. 37 .  The proof does not depend on ~ ax-reg .  (Contributed by Adrian
-       Ducourtial, 11-Oct-2026.) $)
+       p. 37 .  (Contributed by Adrian Ducourtial, 11-Oct-2026.) $)
     mirimanoff $p |- M e/ _V $=
       ( vg vm cvv wcel cv cn c1 cfv wceq caddc wral w3a eleq12d wi fveq1 wfn co
       wex wn cmpt nnex mptex a1i fvex eqid fnmpti 1nn fvoveq1 fvmpt ax-mp fveq2
@@ -591565,6 +591564,7 @@ $)
       XGVMUWFXSUWHYAUWJYGUWNKXRUWEVNUWFXTUWIDLXRUWETVOUWFYFUWMCKUWFYDUWKYEUWLYC
       XRUWETYBXRUWETRVPVQXHVHXIXJXKXQUWDYJUWBYJADDHUVMDNZUWAYIUWRUVTYHBUWRUVSYA
       XSYGUVMDXTWBWCWDWEEXLZXMXNUWSXOWMXP $.
+    $( $j usage 'mirimanoff' avoids 'ax-reg'; $)
   $}
 
 
