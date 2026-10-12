@@ -492799,10 +492799,10 @@ htmldef "|=." as " &#8872; ";
   latexdef "|=." as "\vDash";
 htmldef "Ax-Ext" as " Ax-Ext ";
   althtmldef "Ax-Ext" as " Ax-Ext ";
-  latexdef "Ax-Ext" as "\mathrm{Ax-Ext}";
+  latexdef "Ax-Ext" as "\mathrm{Ax\text{-}Ext}";
 htmldef "Ax-Rep*" as " Ax-Rep* ";
   althtmldef "Ax-Rep*" as " Ax-Rep* ";
-  latexdef "Ax-Rep*" as "\mathrm{Ax-Rep}*";
+  latexdef "Ax-Rep*" as "\mathrm{Ax\text{-}Rep}*";
 /* End of BTernaryTau's mathbox */
 
 /* Mathbox of Mario Carneiro */
