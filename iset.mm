@@ -182498,6 +182498,20 @@ $)
     $}
 
     ${
+      $d A x $.  $d B x $.  $d D x $.  $d F f $.  $d I f $.  $d I x $.
+      $( Finite bags have decidable equality.  (Contributed by Jim Kingdon,
+         11-Oct-2026.) $)
+      psrbagdceq $p |- ( ( I e. Fin /\ A e. D /\ B e. D ) -> DECID A = B ) $=
+        ( vx wcel wceq wdc cfv wral cz cn0 wf eleqtrd elmapi ffvelcdmda syl2anc
+        syl cfn w3a cv simp1 wa cmap co simp2 psrbagfi 3ad2ant1 nn0zd ralrimiva
+        simp3 zdceq dcfi wfn wb elmapfn eqfnfv dcbid mpbird ) EUAHZACHZBCHZUBZA
+        BIZJGUCZAKZVGBKZIZGELZJZVEVBVJJZGELVLVBVCVDUDVEVMGEVEVGEHUEZVHMHVIMHVMV
+        NVHVEENVGAVEANEUFUGZHZENAOVEACVOVBVCVDUHVBVCCVOIVDCDEFUIUJZPZANEQTRUKVN
+        VIVEENVGBVEBVOHZENBOVEBCVOVBVCVDUMVQPZBNEQTRUKVHVIUNSULVJGEUOSVEVFVKVEA
+        EUPZBEUPZVFVKUQVEVPWAVRANEURTVEVSWBVTBNEURTGEABUSSUTVA $.
+    $}
+
+    ${
       $d N f y $.  $d X f y $.  $d I y $.  $d V y $.
       $( A bag containing one element is a finite bag.  (Contributed by Mario
          Carneiro, 7-Jan-2015.)  (Revised by AV, 8-Jul-2019.) $)
