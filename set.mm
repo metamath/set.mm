@@ -58710,9 +58710,8 @@ $)
 
 
   $( The converse of the binary epsilon relation.  For a set ` A ` , the
-     relation ` A ``' _E B ` holds exactly when ` B e. A ` .  The sethood
-     requirement concerns the first argument, not the converse epsilon relation
-     itself.  (Contributed by Peter Mazsa, 30-Jan-2018.) $)
+     relation ` A ``' _E B ` holds exactly when ` B e. A ` .  (Contributed by
+     Peter Mazsa, 30-Jan-2018.) $)
   brcnvep $p |- ( A e. V -> ( A `' _E B <-> B e. A ) ) $=
     ( cep ccnv wbr wcel rele relbrcnv epelg bitrid ) ABDEFBADFACGBAGABDHIBACJK
     $.
@@ -58721,8 +58720,7 @@ $)
     $d A x y $.
     $( Express the restriction of the converse epsilon relation to ` A ` as a
        class of ordered pairs.  The first coordinate belongs to ` A ` , and the
-       second is a member of the first.  No sethood hypothesis on ` A ` or on
-       the converse epsilon relation is needed.  (Contributed by Peter Mazsa,
+       second is a member of the first.  (Contributed by Peter Mazsa,
        10-Feb-2018.) $)
     cnvepres $p |- ( `' _E |` A ) = { <. x , y >. | ( x e. A /\ y e. x ) } $=
       ( cep ccnv cres cv wcel wbr wa copab dfres2 wb cvv brcnvep anbi2i opabbii
@@ -69722,28 +69720,31 @@ $)
   ${
     $d F x $.
     $( If the domain of a function exists, so does the function.  Part of
-       Theorem 4.15(v) of [Monk1] p. 46.  This is the existence principle also
-       stated by ~ funex , proved here directly using the Axiom of Replacement,
-       before ~ resfunexg and ~ fnex .  It permits these later theorems to be
-       derived without a circular dependency.  (Contributed by NM,
-       11-Nov-1995.)  (Revised by Peter Mazsa, 11-Oct-2026.) $)
-    funexg $p |- ( ( Fun F /\ dom F e. V ) -> F e. _V ) $=
+       Theorem 4.15(v) of [Monk1] p. 46.  (Note:  Any resemblance between
+       F.U.N.E.X. and "Have You Any Eggs" is purely a coincidence originated by
+       Swedish chefs.)  (Contributed by NM, 11-Nov-1995.)  Establish the
+       Replacement argument directly using ~ funimaexg , before ~ resfunexg and
+       ~ fnex , rather than deriving this theorem from ~ fnex .  (Revised by
+       Peter Mazsa, 11-Oct-2026.) $)
+    funex $p |- ( ( Fun F /\ dom F e. B ) -> F e. _V ) $=
       ( vx wfun cdm wcel wa cv cfv cop cmpt cima cvv crn wfn funfnd dffn5 sylib
       wceq id fvex fnasrn eqtrdi opex eqid dmmpti imaeq2i imadmrn eqtr3i adantr
-      eqtr4di funmpt funimaexg mpan adantl eqeltrd ) ADZAEZBFZGACURCHZUTAIZJZKZ
-      URLZMUQAVDSUSUQAVCNZVDUQACURVAKZVEUQAUROAVFSUQAUQTPCURAQRCURVAUTAUAUBUCVC
+      eqtr4di funmpt funimaexg mpan adantl eqeltrd ) BDZBEZAFZGBCURCHZUTBIZJZKZ
+      URLZMUQBVDSUSUQBVCNZVDUQBCURVAKZVEUQBUROBVFSUQBUQTPCURBQRCURVAUTBUAUBUCVC
       VCEZLVDVEVGURVCCURVBVCUTVAUDVCUEUFUGVCUHUIUKUJUSVDMFZUQVCDUSVHCURVBULVCUR
-      BUMUNUOUP $.
+      AUMUNUOUP $.
   $}
 
   ${
     $d x A $.  $d x B $.
     $( The restriction of a function to a set exists.  Compare Proposition 6.17
        of [TakeutiZaring] p. 28.  (Contributed by NM, 7-Apr-1995.)  (Revised by
-       Mario Carneiro, 22-Jun-2013.)  (Revised by Peter Mazsa, 11-Oct-2026.) $)
+       Mario Carneiro, 22-Jun-2013.)  Derive the restriction-specific result
+       from the earlier general existence theorem ~ funex .  (Revised by Peter
+       Mazsa, 11-Oct-2026.) $)
     resfunexg $p |- ( ( Fun A /\ B e. C ) -> ( A |` B ) e. _V ) $=
-      ( wfun cres cdm cvv wcel funres dmresexg funexg syl2an ) ADABEZDMFGHMGHBC
-      HBAIABCJMGKL $.
+      ( wfun cres cdm cvv wcel funres dmresexg funex syl2an ) ADABEZDMFGHMGHBCH
+      BAIABCJGMKL $.
   $}
 
   ${
@@ -69755,13 +69756,13 @@ $)
   $}
 
   $( If the domain of a function is a set, the function is a set.  Theorem
-     6.16(1) of [TakeutiZaring] p. 28.  This follows directly from the earlier
-     Replacement-based theorem ~ funexg , without depending on ~ resfunexg .
-     (Contributed by NM, 14-Aug-1994.)  (Revised by Peter Mazsa,
-     11-Oct-2026.) $)
+     6.16(1) of [TakeutiZaring] p. 28.  See ~ fnexALT for a proof using
+     ~ funimaexg .  (Contributed by NM, 14-Aug-1994.)  Derive this theorem from
+     the earlier general existence theorem ~ funex instead of ~ resfunexg .
+     (Revised by Peter Mazsa, 11-Oct-2026.) $)
   fnex $p |- ( ( F Fn A /\ A e. B ) -> F e. _V ) $=
-    ( wfn wfun cdm wceq wa cvv df-fn eleq1a impcom funexg sylan2 anassrs sylanb
-    wcel ) CADCEZCFZAGZHABQZCIQZCAJRTUAUBTUAHRSBQZUBUATUCABSKLCBMNOP $.
+    ( wfn wfun cdm wceq wa wcel df-fn eleq1a impcom funex sylan2 anassrs sylanb
+    cvv ) CADCEZCFZAGZHABIZCQIZCAJRTUAUBTUAHRSBIZUBUATUCABSKLBCMNOP $.
 
   ${
     fnexd.1 $e |- ( ph -> F Fn A ) $.
@@ -69771,14 +69772,6 @@ $)
     fnexd $p |- ( ph -> F e. _V ) $=
       ( wfn wcel cvv fnex syl2anc ) ACBGBDHCIHEFBDCJK $.
   $}
-
-  $( If the domain of a function exists, so does the function.  Part of Theorem
-     4.15(v) of [Monk1] p. 46.  This theorem is derived using the Axiom of
-     Replacement in the form of ~ fnex .  (Note:  Any resemblance between
-     F.U.N.E.X. and "Have You Any Eggs" is purely a coincidence originated by
-     Swedish chefs.)  (Contributed by NM, 11-Nov-1995.) $)
-  funex $p |- ( ( Fun F /\ dom F e. B ) -> F e. _V ) $=
-    ( funexg ) BAC $.
 
   ${
     $d x y A $.
@@ -78433,10 +78426,10 @@ $)
 
   $( A function is a set exactly when its domain is a set.  The forward
      implication holds without functionhood by ~ dmexg .  The reverse
-     implication follows from ~ funexg and requires functionhood.  (Contributed
+     implication follows from ~ funex and requires functionhood.  (Contributed
      by Peter Mazsa, 10-Oct-2026.) $)
   funexb $p |- ( Fun F -> ( F e. _V <-> dom F e. _V ) ) $=
-    ( wfun cvv wcel cdm dmexg funexg ex impbid2 ) ABZACDZAECDZACFJLKACGHI $.
+    ( wfun cvv wcel cdm dmexg funex ex impbid2 ) ABZACDZAECDZACFJLKCAGHI $.
 
   ${
     fndmexd.1 $e |- ( ph -> F e. V ) $.
@@ -78507,11 +78500,10 @@ $)
   imaexgen $p |- ( ( A |` B ) e. V -> ( A " B ) e. _V ) $=
     ( cres wcel cima crn cvv df-ima rnexg eqeltrid ) ABDZCEABFLGHABILCJK $.
 
-  $( A restriction whose domain is a set is itself a set if and only if its
-     image is a set.  The forward implication holds without the domain
-     hypothesis by ~ imaexgen .  Only the reverse implication requires domain
-     sethood, using ~ reldmrnex .  Neither the original relation nor the
-     restricting class need be sets.  (Contributed by Peter Mazsa,
+  $( When the domain of a restriction is a set, sethood of the restriction is
+     equivalent to sethood of the corresponding image.  The forward implication
+     holds unconditionally by ~ imaexgen ; only the reverse implication
+     requires domain sethood, using ~ reldmrnex .  (Contributed by Peter Mazsa,
      10-Oct-2026.) $)
   imaexb $p |- ( dom ( A |` B ) e. V ->
                  ( ( A |` B ) e. _V <-> ( A " B ) e. _V ) ) $=
@@ -78521,8 +78513,8 @@ $)
 
   $( The image of a set is a set.  Theorem 3.17 of [Monk1] p. 39.  More
      restrictive antecedent; kept for backward compatibility; for new work,
-     prefer ~ imaexgen .  (Contributed by NM, 24-Jul-1995.)  (Revised by Peter
-     Mazsa, 10-Oct-2026.) $)
+     prefer ~ imaexgen .  (Contributed by NM, 24-Jul-1995.)  Derive this
+     special case from ~ imaexgen .  (Revised by Peter Mazsa, 10-Oct-2026.) $)
   imaexg $p |- ( A e. V -> ( A " B ) e. _V ) $=
     ( wcel cres cvv cima resexg imaexgen syl ) ACDABEFDABGFDABCHABFIJ $.
 
@@ -90760,10 +90752,9 @@ $)
 
   $( Existence of a coset whenever the corresponding singleton restriction is a
      set.  This generalizes ~ ecexg : the entire relation need not be a set.
-     The distinction is substantive for proper-class relations.  For example,
-     ~ eccnvepex follows from this theorem and ~ cnvepresex , although ~ ecexg
-     cannot be applied directly to the converse epsilon relation.  (Contributed
-     by Peter Mazsa, 22-Feb-2023.) $)
+     The converse also holds, as shown by ~ ecexb .  For an application to a
+     proper-class relation, see ~ eccnvepex .  (Contributed by Peter Mazsa,
+     22-Feb-2023.) $)
   ecexgen $p |- ( ( R |` { A } ) e. V -> [ A ] R e. _V ) $=
     ( csn cres wcel cec cima cvv df-ec imaexgen eqeltrid ) BADZECFABGBMHIABJBMC
     KL $.
@@ -90787,11 +90778,10 @@ $)
     ( csn cvv wcel cep ccnv cres cec snex cnvepresex ecexgen mp2b ) ABZCDEFZMGC
     DANHCDAIMCJANCKL $.
 
-  $( Existence of a coset of a set relation.  This is a special case of
-     ~ ecexgen , since restricting a set relation preserves sethood.  The
-     stronger theorem also applies to certain restrictions of proper-class
-     relations, as illustrated by ~ eccnvepex .  (Contributed by NM,
-     24-Jul-1995.)  (Revised by Peter Mazsa, 11-Oct-2026.) $)
+  $( Existence of a coset of a set relation.  More restrictive antecedent; kept
+     for backward compatibility; for new work, prefer ~ ecexgen .  (Contributed
+     by NM, 24-Jul-1995.)  Derive this special case from ~ ecexgen to make the
+     generalization explicit.  (Revised by Peter Mazsa, 11-Oct-2026.) $)
   ecexg $p |- ( R e. B -> [ A ] R e. _V ) $=
     ( wcel csn cres cvv cec resexg ecexgen syl ) CBDCAEZFGDACHGDCLBIACGJK $.
 
@@ -91486,12 +91476,10 @@ $)
   $}
 
   $( The union of a quotient class equals the image of its indexing class
-     whenever the corresponding restriction is a set.  This weakens ~ uniqsw :
-     only the restriction, not the entire class ` R ` , need be a set (see e.g.
-     ~ cnvepima ).  It is a special case of ~ uniqsima , which requires only
-     the image to be a set, even when the restriction is a proper class.
-     Neither theorem requires ` R ` to be a relation.  (Contributed by NM,
-     9-Dec-2008.)  (Revised by Peter Mazsa, 20-Jun-2019.) $)
+     whenever the corresponding restriction is a set.  This generalizes
+     ~ uniqsw but has a more restrictive antecedent than ~ uniqsima ; for new
+     work, prefer the latter.  (Contributed by NM, 9-Dec-2008.)  (Revised by
+     Peter Mazsa, 20-Jun-2019.) $)
   uniqs $p |- ( ( R |` A ) e. V -> U. ( A /. R ) = ( R " A ) ) $=
     ( cres wcel cima cvv cqs cuni wceq imaexgen uniqsima syl ) BADCEBAFZGEABHIN
     JBACKABGLM $.
