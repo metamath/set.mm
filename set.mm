@@ -577374,25 +577374,24 @@ $)
   ${
     $d w z $.  $d A y z $.
     fwfffun.1 $e |- F/ y ps $.
-    fwfffun.2 $e |- ( ph -> A. w e. A E. y e. A A. z e. A ( ps -> z = y ) ) $.
+    fwfffun.2 $e |- ( ph -> A. w e. A E. y A. z e. A ( ps -> z = y ) ) $.
     fwfffun.3 $e |- F = { <. w , z >. | ( w e. A /\ z e. A /\ ps ) } $.
     $( If ` ps ` is function-like over ` A ` , then ` F ` matches its behavior.
        (Contributed by BTernaryTau, 28-Sep-2026.) $)
     fwfffun $p |- ( ph ->
         ( ( w e. A /\ z e. A /\ ps ) <-> ( w e. dom F /\ ( F ` w ) = z ) ) ) $=
-      ( cv wcel w3a cop cdm cfv wfun wral syl bitr3id wceq copab eleq2i opabidw
-      wa bitri wb wrmo weq wi rmo2i ralimi wmo funopab funeqi 2reu5lem2 3bitr4i
-      wrex wal sylibr wbr df-br funbrfv2b ) EKZFLDKZFLBMZVDVENZGLZAVDGOLVDGPVEU
-      AUEZVHVGVFEDUBZLVFGVJVGJUCVFEDUDUFAGQZVHVIUGABDFUHZEFRZVKABDCUIUJDFRCFURZ
-      EFRVMIVNVLEFBDCFHUKULSVJQVFDUMEUSVKVMVFEDUNGVJJUOBEDFFUPUQUTVHVDVEGVAVKVI
-      VDVEGVBVDVEGVCTST $.
+      ( cv wcel w3a cop cdm cfv wfun wral sylibr bitr3id wceq wa eleq2i opabidw
+      copab bitri wb wrmo weq wi wex rmo2 ralbii wmo wal funopab funeqi 3bitr4i
+      2reu5lem2 wbr df-br funbrfv2b syl ) EKZFLDKZFLBMZVDVENZGLZAVDGOLVDGPVEUAU
+      BZVHVGVFEDUEZLVFGVJVGJUCVFEDUDUFAGQZVHVIUGABDFUHZEFRZVKABDCUIUJDFRCUKZEFR
+      VMIVLVNEFBDCFHULUMSVJQVFDUNEUOVKVMVFEDUPGVJJUQBEDFFUSURSVHVDVEGUTVKVIVDVE
+      GVAVDVEGVBTVCT $.
   $}
 
   ${
     $d w z $.  $d A y z $.
     fwfffunres.1 $e |- F/ y ps $.
-    fwfffunres.2 $e |- ( ph ->
-        A. w e. A E. y e. A A. z e. A ( ps -> z = y ) ) $.
+    fwfffunres.2 $e |- ( ph -> A. w e. A E. y A. z e. A ( ps -> z = y ) ) $.
     fwfffunres.3 $e |- F =
         ( { <. w , z >. | ( w e. A /\ z e. A /\ ps ) } |` x ) $.
     $( If ` ps ` is function-like over ` A ` , then ` F ` matches its behavior
@@ -580201,18 +580200,19 @@ $)
     srepdflem1 $p |- ( ( ph /\ z e. M ) ->
         ( E. w e. M ( w e. x /\ A. y ps ) <-> E. w e. M
         ( w e. x /\ A. y ( Fun F /\ w e. dom F /\ ( F ` w ) = z ) ) ) ) $=
-      ( cv wcel wa wal wfun w3a nfv cdm cfv wceq nfan 3anass baibr wi simp2 a1i
-      ibar nfa1 cres copab reseq1i eqtri fwfffunres wral wrex wrmo rmo2i ralimi
-      weq wmo funopab funeqi 2reu5lem2 3bitr4i sylibr funres 3biant1d sylan9bbr
-      3syl bitrd nf3an nfopab nfcxfr nfcv nfres nffun nfdm nfcri bitr4di biimpd
-      nffv nfeq1 19.3 jcad biimprd adantld impbid rexbida ) AENZIOZPZFNZCNZOZBD
-      QZPZWQGRZWOGUAZOZWOGUBZWLUCZSZDQZPZFIAWMFJWMFTUDWOIOZWSXHWQWRSZWNXGXIXHWS
-      XHWQWRUEUFWNXIXGWNXIWQXFXIWQUGWNXHWQWRUHUIWNXIXFWNXIXEXFWMXIWMXIPZAXEWMXI
-      UJAXJXBXDPXEAWRCDEFIGBDUKZKGHWPULZXHWMWRSZFEUMZWPULLHXNWPMUNUOUPAXDXBWTAX
-      LRZWTAWREDVBUGEIUQDIURZFIUQZHRZXOKXQWREIUSZFIUQZXRXPXSFIWREDIXKUTVAXNRXME
-      VCFQXRXTXMFEVDHXNMVEWRFEIIVFVGVHWPHVIVLGXLLVEVHVJVMVKXEDWTXBXDDDGDGXLLDHW
-      PDHXNMXMFEDXHWMWRDXHDTWMDTXKVNVOVPDWPVQVRVPZVSDFXADGYAVTWADXCWLDWOGYADWOV
-      QWDWEVNWFWBZWCWGWNXFXIWQWNXIXFYBWHWIWJVKWK $.
+      ( cv wcel wa wal wfun w3a wral wel cdm cfv wceq nfv 3anass baibr wi simp2
+      nfan a1i ibar nfa1 weq wrex wex rexex ralimi syl cres copab reseq1i eqtri
+      fwfffunres wrmo rmo2i funopab funeqi 2reu5lem2 3bitr4i sylibr funres 3syl
+      3biant1d bitrd sylan9bbr nf3an nfopab nfcxfr nfcv nfres nffun nfcri nfeq1
+      wmo nfdm nffv 19.3 bitr4di biimpd jcad biimprd adantld impbid rexbida ) A
+      ENZIOZPZFCUAZBDQZPZWSGRZFNZGUBZOZXCGUCZWPUDZSZDQZPZFIAWQFJWQFUEUJXCIOZXAX
+      KWSWTSZWRXJXLXKXAXKWSWTUFUGWRXLXJWRXLWSXIXLWSUHWRXKWSWTUIUKWRXLXIWRXLXHXI
+      WQXLWQXLPZAXHWQXLULAXMXEXGPXHAWTCDEFIGBDUMZAWTEDUNUHEITZDIUOZFITZXODUPZFI
+      TKXPXRFIXODIUQURUSGHCNZUTZXKWQWTSZFEVAZXSUTLHYBXSMVBVCVDAXGXEXBAXTRZXBAXQ
+      HRZYCKXQWTEIVEZFITZYDXPYEFIWTEDIXNVFURYBRYAEWEFQYDYFYAFEVGHYBMVHWTFEIIVIV
+      JVKXSHVLVMGXTLVHVKVNVOVPXHDXBXEXGDDGDGXTLDHXSDHYBMYAFEDXKWQWTDXKDUEWQDUEX
+      NVQVRVSDXSVTWAVSZWBDFXDDGYGWFWCDXFWPDXCGYGDXCVTWGWDVQWHWIZWJWKWRXIXLWSWRX
+      LXIYHWLWMWNVPWO $.
   $}
 
   ${
