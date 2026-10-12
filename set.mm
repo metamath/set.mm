@@ -23071,12 +23071,19 @@ $)
        theorem is also a direct consequence of ~ mo4f , but this proof is based
        on fewer axioms.
 
-       By the way, swapping ` x ` , ` y ` and ` ph ` , ` ps ` leads to an
-       expression for ` E* y ps ` , which is equivalent to ` E* x ph ` (is a
-       proof line), so the right hand side is a rare instance of an expression
-       where swapping the quantifiers can be done without ~ ax-11 .
-       (Contributed by NM, 26-Jul-1995.)  Reduce axiom usage.  (Revised by Wolf
-       Lammen, 18-Oct-2023.) $)
+       Note: swapping both ` x ` , ` y ` and ` ph ` , ` ps ` preserves the
+       hypothesis and DV conditions, so that we also have the conclusion.
+       ` |- ( E* y ps <-> A. y A. x ( ( ps /\ ph ) -> y = x ) ) ` .  But under
+       the hypothesis and DV condition, we also have
+       ` |- ( E* x ph <-> E* y ps ) ` (that is a proof step).  Therefore, since
+       ` |- ( ( ph /\ ps ) <-> ( ps <-> ph ) ) ` ( ~ ancom ) and
+       ` |- ( x = y <-> y = x ) ` ( ~ equcom ) , we obtain, still under the
+       hypothesis and DV condition,
+       ` |- ( A. x A. y ( ( ph /\ ps ) -> x = y ) <-> `
+       ` A. y A. x ( ( ph /\ ps ) -> x = y ) ) ` ; in other words, in this
+       special case we can swap universal quantifiers as in ~ alcom without
+       requiring ~ ax-11 .  (Contributed by NM, 26-Jul-1995.)  Reduce axiom
+       usage.  (Revised by Wolf Lammen, 18-Oct-2023.) $)
     mo4 $p |- ( E* x ph <-> A. x A. y ( ( ph /\ ps ) -> x = y ) ) $=
       ( vz wmo wa weq wal wex dfmo equequ1 imbi12d cbvalvw biimpi pm2.27 alimdv
       wi sylibr im2anan9 equtr2 syl6com ex com12 exlimiv cbvexvw biimpri ax6evr
@@ -23087,6 +23094,7 @@ $)
       UKVOBDKZBDGZSZVJWEACKZVOWFCKWFWHWEABCDEUGUHVNAWFCAVNWFAVNHZWCFKZWFWIVPFKW
       JFCUIWIVPWCFAVPVNWCAVPHVMWBDVPAVMWBSAVMBVPWAAVMBVLVPWASABVKVLABULUMCDFUNU
       OUPUQRURUSUTBDFLZTVAVBWFCVCVDVJWFWGVSWJVJWFVRWCFWDVEVTWKVFBDVGVHTVI $.
+    $( $j usage 'mo4' avoids 'ax-10' 'ax-11' 'ax-12' 'ax-13'; $)
   $}
 
   ${
@@ -36586,6 +36594,14 @@ $)
       ( cvv wcel wsbc wb sbcgf ax-mp ) CFGABCHAIDABCFEJK $.
   $}
 
+  $( Substituting a class in the false truth constant results in the false
+     truth constant.  The analogous result with the true truth constant does
+     not hold in general since substituting a proper class results in falsehood
+     ( ~ sbcex ), but holds for sets by ~ sbcg .  (Contributed by BJ,
+     11-Oct-2026.) $)
+  sbcfal $p |- ( [. A / x ]. F. <-> F. ) $=
+    ( wfal wsbc cvv wcel sbcex falim sbcg pm5.21nii ) CABDBEFZCCABGKHCABEIJ $.
+
   ${
     $d x y A $.  $d y B $.  $d x V $.  $d y W $.
     sbc2iegf.1 $e |- F/ x ps $.
@@ -40715,13 +40731,22 @@ $)
   $( $j usage 'dfnul3' avoids 'df-clel' 'ax-8' 'ax-10' 'ax-11' 'ax-12'; $)
 
   ${
-    $d A x y $.
+    $d A x $.
     $( The empty set has no elements.  Theorem 6.14 of [Quine] p. 44.
        (Contributed by NM, 21-Jun-1993.)  (Proof shortened by Mario Carneiro,
        1-Sep-2015.)  Remove dependency on ~ ax-10 , ~ ax-11 , and ~ ax-12 .
        (Revised by Steven Nguyen, 3-May-2023.)  (Proof shortened by BJ,
-       23-Sep-2024.) $)
+       23-Sep-2024.)  (Proof shortened by BJ, 11-Oct-2026.) $)
     noel $p |- -. A e. (/) $=
+      ( vx vy c0 wcel cv wex fal cab wsb dfnul4 eleq2i df-clab sbv 3bitri mtbir
+      wfal nex elex2 mto ) ADEBFZDEZBGUBBUBQHUBUAQCIZEQCBJQDUCUACKLQBCMQCBNOPRB
+      ADST $.
+    $( $j usage 'noel' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+
+    $( Obsolete version of ~ noel as of 11-Oct-2026.  (Contributed by NM,
+       21-Jun-1993.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    noelOLD $p |- -. A e. (/) $=
       ( vx vy c0 wcel cv wceq wa wex wfal wsb wn nsb fal mpg cab dfnul4 df-clab
       eleq2i mtbir bitri intnan nex dfclel ) ADEBFZAGZUEDEZHZBIUHBUGUFUGJCBKZJL
       UILCJCBMNOUGUEJCPZEUIDUJUECQSJBCRUATUBUCBADUDT $.
@@ -55291,13 +55316,23 @@ $)
     FZBDFZEZEOREPSEELCDGMQNTABCHABDHIOPRSJK $.
 
   ${
-    $d w x y z A $.
+    $d A x y $.
     $( Membership in universal class of ordered pairs.  (Contributed by NM,
-       4-Jul-1994.) $)
+       4-Jul-1994.)  (Proof shortened by BJ, 16-Oct-2026.) $)
     elvv $p |- ( A e. ( _V X. _V ) <-> E. x E. y A = <. x , y >. ) $=
+      ( cvv cxp wcel cv cop wceq wrex wex elxp2 rexv exbii 3bitri ) CDDEFCAGBGH
+      IZBDJZADJQAKPBKZAKABCDDLQAMQRAPBMNO $.
+
+    $( Obsolete version of ~ elvv as of 16-Oct-2026.  (Contributed by NM,
+       4-Jul-1994.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    elvvOLD $p |- ( A e. ( _V X. _V ) <-> E. x E. y A = <. x , y >. ) $=
       ( cvv cxp wcel cv cop wceq wa wex elxp vex pm3.2i biantru 2exbii bitr4i )
       CDDEFCAGZBGZHIZRDFZSDFZJZJZBKAKTBKAKABCDDLTUDABUCTUAUBAMBMNOPQ $.
+  $}
 
+  ${
+    $d A x y z w $.
     $( Membership in universal class of ordered triples.  (Contributed by NM,
        17-Dec-2008.) $)
     elvvv $p |- ( A e. ( ( _V X. _V ) X. _V )
@@ -57795,8 +57830,15 @@ $)
 
   $( A restriction is a relation.  Exercise 12 of [TakeutiZaring] p. 25.
      (Contributed by NM, 2-Aug-1994.)  (Proof shortened by Andrew Salmon,
-     27-Aug-2011.) $)
+     27-Aug-2011.)  (Proof shortened by BJ, 16-Oct-2026.) $)
   relres $p |- Rel ( A |` B ) $=
+    ( cres wrel cvv cxp cin relinxp df-res releqi mpbir ) ABCZDABEFGZDBEAHLMABI
+    JK $.
+
+  $( Obsolete version of ~ relres as of 16-Oct-2026.  (Contributed by NM,
+     2-Aug-1994.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
+  relresOLD $p |- Rel ( A |` B ) $=
     ( cres cvv cxp wss wrel cin df-res inss2 eqsstri relxp relss mp2 ) ABCZBDEZ
     FPGOGOAPHPABIAPJKBDLOPMN $.
 
@@ -101887,7 +101929,8 @@ $)
   $( Class symbol for the weak dominance relation. $)
   cwdom $a class ~<_* $.
 
-  ${  $d x y z $.
+  ${
+    $d x y z $.
     $( A set is _weakly dominated_ by a "larger" set if the "larger" set can be
        mapped onto the "smaller" set or the smaller set is empty, or
        equivalently, if the smaller set can be placed into bijection with some
@@ -102690,7 +102733,8 @@ $)
   $( First we prove the equivalence of our version of Infinity with
      some others. $)
 
-  ${  $d x y z w v f $.
+  ${
+    $d x y z w v f $.
     $( Existence of ` _om ` implies our axiom of infinity ~ ax-inf .  The proof
        shows that the especially contrived
        class " ` ran ( rec ( ( v e. _V |-> suc v ) , x ) |`` _om ) ` " exists,
@@ -611199,7 +611243,8 @@ $)
   eliminable-velab $p |- ( y e. { x | ph } <-> [ y / x ] ph ) $=
     ( df-clab ) ACBD $.
 
-  ${  $d x z $.  $d y z $.  $d ph z $.
+  ${
+    $d x z $.  $d y z $.  $d ph z $.
     $( A theorem used to prove the base case of the Eliminability Theorem (see
        section comment): variable equals abstraction.  (Contributed by BJ,
        30-Apr-2024.)  (Proof modification is discouraged.)
@@ -611210,7 +611255,8 @@ $)
       wb ) BEZACFZGDBHZDESIZQZDJTACDKZQZDJDRSLUBUDDUAUCTACDMNOP $.
   $}
 
-  ${  $d x z $.  $d y z $.  $d ph z $.
+  ${
+    $d x z $.  $d y z $.  $d ph z $.
     $( A theorem used to prove the base case of the Eliminability Theorem (see
        section comment): abstraction equals variable.  (Contributed by BJ,
        30-Apr-2024.)  Beware not to use symmetry of class equality.
@@ -611221,7 +611267,8 @@ $)
       wb ) ABEZCFZGDFRHZDCIZQZDJABDKZUAQZDJDRSLUBUDDTUCUAABDMNOP $.
   $}
 
-  ${  $d x z $.  $d y z $.  $d ph z $.  $d ps z $.
+  ${
+    $d x z $.  $d y z $.  $d ph z $.  $d ps z $.
     $( A theorem used to prove the base case of the Eliminability Theorem (see
        section comment): abstraction equals abstraction.  (Contributed by BJ,
        30-Apr-2024.)  (Proof modification is discouraged.)
@@ -611232,7 +611279,8 @@ $)
       ) ACFZBDFZGEHZRIZTSIZJZEKACELZBDELZJZEKERSMUCUFEUAUDUBUEACENBDENOPQ $.
   $}
 
-  ${  $d t x z $.  $d y z $.  $d ph z $.  $d ph t $.
+  ${
+    $d t x z $.  $d y z $.  $d ph z $.  $d ph t $.
     $( A theorem used to prove the base case of the Eliminability Theorem (see
        section comment): abstraction belongs to variable.  (Contributed by BJ,
        30-Apr-2024.)  (Proof modification is discouraged.)
@@ -611244,7 +611292,8 @@ $)
       QRT $.
   $}
 
-  ${  $d t x z $.  $d y z $.  $d ph z $.  $d ph t $.  $d ps z $.
+  ${
+    $d t x z $.  $d y z $.  $d ph z $.  $d ph t $.  $d ps z $.
     $( A theorem used to prove the base case of the Eliminability Theorem (see
        section comment): abstraction belongs to abstraction.  (Contributed by
        BJ, 30-Apr-2024.)  (Proof modification is discouraged.)
@@ -613265,30 +613314,176 @@ $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
   Relations, functions, composition: supplements
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+
+  Some shortenings and proof modifications that allow the following
+  re-structuring of sections:
+
+  2.3.10. Cartesian product
+  2.3.11. Relations
+  2.3.11.1. Restriction
+  2.3.11.2. Relations
+  2.3.11.3. Domain
+  2.3.11.4. Converse
+  2.3.11.5. Range
+  2.3.11.6. Image
+  2.3.11.7. Composition
+
 $)
 
-  ${  $d A x y $.  $d B x y z $.  $d C x y z $.
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.  $d x y R $.
+    $( Membership in an intersection with a Cartesian product.  (Contributed by
+       Peter Mazsa, 9-Sep-2022.)  Use the ` x R y ` idiom and give a shorter
+       proof not depending on ~ df-rel .  (Revised by BJ, 16-Oct-2026.)  Note
+       to remove when moving to main section: a shortening of the exact
+       statement ~ elinxp is possible along the same line. $)
+    bj-elinxp $p |- ( C e. ( R i^i ( A X. B ) ) <->
+                          E. x e. A E. y e. B ( C = <. x , y >. /\ x R y ) ) $=
+      ( cxp cin wcel wa cv cop wceq wrex wbr elin elxp2 anbi2i r19.42v rexbii
+      eleq1 df-br bitr4di pm5.32ri biancomi 3bitr3ri 3bitri ) EFCDGZHIEFIZEUHIZ
+      JUIEAKZBKZLZMZBDNZACNZJZUNUKULFOZJZBDNZACNZEFUHPUJUPUIABECDQRUIUNJZBDNZAC
+      NUIUOJZACNVAUQVCVDACUIUNBDSTVCUTACVBUSBDVBUNURUNUIURUNUIUMFIUREUMFUAUKULF
+      UBUCUDUETTUIUOACSUFUG $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.
+    $( Membership in a restriction.  (Contributed by Scott Fenton,
+       17-Mar-2011.)  (Proof shortened by Peter Mazsa, 9-Sep-2022.)  Use the
+       ` x B y ` idiom.  (Revised by BJ, 16-Oct-2026.) $)
+    bj-elres $p |- ( A e. ( B |` C ) <->
+                               E. x e. C E. y ( A = <. x , y >. /\ x B y ) ) $=
+      ( cres wcel cvv cxp cin cv cop wceq wbr wrex wex df-res eleq2i bj-elinxp
+      wa rexv rexbii 3bitri ) CDEFZGCDEHIJZGCAKZBKZLMUFUGDNTZBHOZAEOUHBPZAEOUDU
+      ECDEQRABEHCDSUIUJAEUHBUAUBUC $.
+  $}
+
+  ${
+    $d A x y z $.  $d R x y z $.
+    $( Alternate definition of the restriction of a class to another, as an
+       ordered pair class abstraction: the restriction of a class to another is
+       the class of ordered pairs whose first component is in the restricting
+       class and whose components are related by the restricted class.
+       (Contributed by Mario Carneiro, 5-Nov-2013.)  Do not depend on
+       ~ df-rel .  (Revised by BJ, 16-Oct-2026.) $)
+    bj-dfres2 $p |- ( R |` A ) = { <. x , y >. | ( x e. A /\ x R y ) } $=
+      ( vz cres cv wcel wbr wa copab cop wceq wex wrex df-rex an12 exbii 19.42v
+      bitr2i bitri bj-elres elopab 3bitr4i eqriv ) EDCFZAGZCHZUGBGZDIZJZABKZEGZ
+      UGUILMZUJJZBNZACOZUNUKJZBNZANZUMUFHUMULHUQUHUPJZANUTUPACPVAUSAUSUHUOJZBNV
+      AURVBBUNUHUJQRUHUOBSTRUAABUMDCUBUKABUMUCUDUE $.
+  $}
+
+  $( The restriction of a class to a class is included in the Cartesian product
+     of the restricting class with the universal class.  (Contributed by BJ,
+     16-Oct-2026.) $)
+  bj-resss2 $p |- ( R |` A ) C_ ( A X. _V ) $=
+    ( cres cvv cxp cin df-res inss2 eqsstri ) BACBADEZFJBAGBJHI $.
+
+  ${
+    $d A x y $.
+    $( Two ways of expressing the "relation part" of a class: its restriction
+       to the universal class (that is, its intersection with the Cartesian
+       square of the universal class) equals the class of ordered pairs it
+       contains (the class of ordered pairs whose components are related by
+       it).
+
+       The "relation part" of a class is a relation (see ~ df-rel and
+       ~ relres ) and is the largest relation included in that class (that
+       follows from ~ relssresv ).  Taking the relation part of a class is a
+       projection onto the collection of relations, that is, it is an
+       idempotent operation ( ~ residm ) with image the collection of relations
+       (by ~ relres for one inclusion and the forward implication of ~ dfrel3
+       for the other).  As with any projection, a class is in its image if and
+       only if its is a fixpoint of that projection (which is precisely
+       ~ dfrel3 ).
+
+       Other expressions giving the relation part of a class are ~ cnvcnv ,
+       ~ coi1res .  (Contributed by BJ, 16-Oct-2026.) $)
+    relpart $p |- ( A |` _V ) = { <. x , y >. | x A y } $=
+      ( cvv cres cv wcel wbr copab bj-dfres2 vex biantrur bicomi opabbii eqtri
+      wa ) CDEAFZDGZQBFCHZPZABISABIABDCJTSABSTRSAKLMNO $.
+  $}
+
+  $( Alternate definition of relation: a class is a relation if and only if it
+     is equal to its "relation part" (see ~ relpart ).  (Contributed by NM,
+     14-May-2008.)  Do not depend on ~ df-cnv to move it earlier.  (Revised by
+     BJ, 16-Oct-2026.) $)
+  bj-dfrel3 $p |- ( Rel R <-> ( R |` _V ) = R ) $=
+    ( cvv cxp wss cin wceq wrel cres dfss2 df-rel df-res eqeq1i 3bitr4i ) ABBCZ
+    DANEZAFAGABHZAFANIAJPOAABKLM $.
+
+  $( A relation is included in a class if and only if it is included in its
+     "relation part" (see ~ relpart ).  (Contributed by BJ, 16-Oct-2026.) $)
+  relssresv $p |- ( Rel B -> ( B C_ A <-> B C_ ( A |` _V ) ) ) $=
+    ( wrel cvv cres wceq wss wb bj-dfrel3 ssres sseq1 imbitrid id resss impbid1
+    sstrdi sylbi ) BCBDEZBFZBAGZBADEZGZHBISTUBTRUAGSUBBADJRBUAKLUBBUAAUBMADNPOQ
+    $.
+
+  ${
+    $d R x y $.
+    $( A relation can be expressed as the set of ordered pairs in it.  An
+       analogue of ~ dffn5 for relations.  (Contributed by Mario Carneiro,
+       16-Aug-2015.)  Do not depend on ~ df-cnv , reverse equality.  (Revised
+       by BJ, 16-Oct-2026.)  Note: this theorem could be used in place of
+       ~ opabid2 , which could be deleted. $)
+    bj-dfrel4v $p |- ( Rel R <-> { <. x , y >. | x R y } = R ) $=
+      ( wrel cvv cres wceq cv wbr copab bj-dfrel3 relpart eqeq1i bitri ) CDCEFZ
+      CGAHBHCIABJZCGCKOPCABCLMN $.
+  $}
+
+  ${
+    $d R x y $.
+    $( Alternate definition of relation.  Exercise 2 of [TakeutiZaring] p. 25.
+       (Contributed by NM, 29-Dec-1996.)  (Proof shortened by BJ, 16-Oct-2026.)
+       Do not use ~ opabid2 .  (Proof modification is discouraged.) $)
+    bj-dfrel2 $p |- ( Rel R <-> `' `' R = R ) $=
+      ( vx vy wrel cv wbr copab wceq ccnv bj-dfrel4v cnvcnv3 eqeq1i bitr4i ) AD
+      BECEAFBCGZAHAIIZAHBCAJONABCAKLM $.
+
+  $}
+
+  ${
+    $d A x y $.
+    $( The double converse of a class equals its restriction to the universe.
+       (Contributed by NM, 8-Oct-2007.) $)
+    bj-cnvcnv2 $p |- `' `' A = ( A |` _V ) $=
+      ( vx vy ccnv cv wbr copab cvv cres cnvcnv3 relpart eqtr4i ) ADDBECEAFBCGA
+      HIBCAJBCAKL $.
+  $}
+
+  $( The double converse of a class strips out all elements that are not
+     ordered pairs.  (Contributed by NM, 8-Dec-2003.)  (Proof shortened by BJ,
+     26-Nov-2021.)  (Proof shortened by BJ, 16-Oct-2026.)  Prefer use of
+     ~ bj-cnvcnv2 . $)
+  bj-cnvcnv $p |- `' `' A = ( A i^i ( _V X. _V ) ) $=
+    ( ccnv cvv cres cxp cin bj-cnvcnv2 df-res eqtri ) ABBACDACCEFAGACHI $.
+
+  ${
+    $d A x y $.  $d B x y z $.  $d C x y z $.
     $( Membership in a composition.  (Contributed by BJ, 16-Aug-2026.) $)
-    elco $p |- ( A e. ( C o. B ) <-> E. x E. y ( A = <. x , y >. /\ E. z
-               ( x B z /\ z C y ) ) ) $=
+    elco $p |- ( A e. ( C o. B ) <->
+                  E. x E. y ( A = <. x , y >. /\ E. z ( x B z /\ z C y ) ) ) $=
       ( ccom wcel cv wbr wa wex copab cop wceq df-co eleq2i elopab bitri ) DFEG
       ZHDAIZCIZEJUBBIZFJKCLZABMZHDUAUCNOUDKBLALTUEDABCFEPQUDABDRS $.
   $}
 
-  ${  $d A x y z t $.
-    $( Precomposition with the identity expressed as intersection.
-       (Contributed by BJ, 16-Aug-2026.) $)
-    coi1in $p |- ( A o. _I ) = ( A i^i ( _V X. _V ) ) $=
-      ( vx vy vz vt cid ccom cvv cxp cin cv wbr wa wex vex pm5.32i exbii 3bitri
-      wcel 3bitr4i cop wceq 19.42vv weq ideq anbi1i equcomi breq1d bitri ax6evr
-      19.41v mpbiran df-br eleq1 bitr4id biancomi pm3.2i anass elxp anbi2i elco
-      biantru elin eqriv ) BAFGZAHHIZJZBKZCKZDKZUAZUBZVIEKZFLZVMVJALZMZENZMZDNZ
-      CNZVHASZVHVFSZMZVHVESVHVGSWAVLVIHSZVJHSZMZMZMZDNZCNWAWGDNCNZMVTWCWAWGCDUC
-      VSWICVRWHDVRWAVLMZWKWFMWHVRWAVLVLVQWAVLVQVKASZWAVQCEUDZVIVJALZMZENZWNWLVP
-      WOEVPWMVOMWOVNWMVOVIVMEOUEUFWMVOWNWMVMVIVJACEUGUHPUIQWPWMENWNECUJWMWNEUKU
-      LVIVJAUMRVHVKAUNUOPUPWFWKWDWECODOUQVBWAVLWFURRQQWBWJWACDVHHHUSUTTCDEVHFAV
-      AVHAVFVCTVD $.
+  ${
+    $d A x y z $.
+    $( Precomposing with the identity is the same thing as taking the relation
+       part of a class.  (Contributed by BJ, 16-Aug-2026.) $)
+    coi1res $p |- ( A o. _I ) = ( A |` _V ) $=
+      ( vx vz vy cv cid wbr wex copab ccom cvv cres weq vex equcom bitri anbi1i
+      wa ideq exbii breq1 equsexvw opabbii df-co relpart 3eqtr4i ) BEZCEZFGZUHD
+      EZAGZRZCHZBDIUGUJAGZBDIAFJAKLUMUNBDUMCBMZUKRZCHUNULUPCUIUOUKUIBCMUOUGUHCN
+      SBCOPQTUKUNCBUHUGUJAUAUBPUCBDCAFUDBDAUEUF $.
   $}
+
+  $( The identity relation is a right-unit for composition.  Part of Theorem
+     3.7(i) of [Monk1] p. 36.  (Contributed by NM, 22-Apr-2004.)  Strengthen to
+     biconditional form and shorten (Revised by BJ, 16-Oct-2026.) $)
+  bj-coi1 $p |- ( Rel A <-> ( A o. _I ) = A ) $=
+    ( wrel cvv cres wceq cid ccom bj-dfrel3 coi1res eqeq1i bitr4i ) ABACDZAEAFG
+    ZAEAHMLAAIJK $.
 
 
 $(
@@ -614676,7 +614871,7 @@ $)
     copsex2gd.is $e |- ( ( ph /\ ( x = A /\ y = B ) ) -> ( ps <-> ch ) ) $.
     $( Implicit substitution inference for ordered pairs.  (Contributed by NM,
        28-May-1995.)  Use a similar proof to ~ copsex4g to reduce axiom usage.
-       (Revised by SN, 1-Sep-2024.)  Adapt ~ copsex2g $p to deduction form.
+       (Revised by SN, 1-Sep-2024.)  Adapt ~ copsex2g to deduction form.
        (Revised by BJ, 28-Mar-2026.)  Do not use ~ copsex2g .
        (Proof modification is discouraged.) $)
     copsex2gd $p |- ( ( ph /\ ( A e. V /\ B e. W ) ) ->
@@ -615354,7 +615549,8 @@ $)
       VRVSWBUIUHUJUKULUMVOVQCEVNVPDVKAVMBACDUOBDEUOUPUQURUS $.
   $}
 
-  ${  $d A x y t $.  $d B x y t $.  $d C x y t $.  $d D x y t $.
+  ${
+    $d A x y t $.  $d B x y t $.  $d C x y t $.  $d D x y t $.
     $( The composition of two Cartesian products is included in the expected
        Cartesian product.  There is equality if ` ( B i^i C ) =/= (/) ` , see
        ~ xpcogend .  (Contributed by BJ, 22-May-2024.) $)
