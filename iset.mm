@@ -183606,6 +183606,32 @@ $)
   $}
 
   ${
+    $d f h x y z I $.  $d f x y ph $.  $d f x R $.  $d x y V $.  $d y z W $.
+    $d x B $.
+    mvrf.s $e |- S = ( I mPwSer R ) $.
+    mvrf.v $e |- V = ( I mVar R ) $.
+    mvrf.b $e |- B = ( Base ` S ) $.
+    mvrffi.i $e |- ( ph -> I e. Fin ) $.
+    mvrf.r $e |- ( ph -> R e. Ring ) $.
+    $( The power series variable function is a function from the index set to
+       elements of the power series structure representing ` X i ` for each
+       ` i ` .  (Contributed by Mario Carneiro, 29-Dec-2014.) $)
+    mvrffi $p |- ( ph -> V : I --> B ) $=
+      ( vf vh vy cv cfn wcel cn0 cmap cvv vx ccnv cn cima co crab wceq cc0 cmpt
+      c1 cif cur cfv c0g crg eqid mvrfval cbs ringidcl syl ad2antrr ring0cl wdc
+      wa wf simpr a1i simplr snifpsrbagfi syl3anc psrbagdceq ifcldcd fmpttd wfn
+      basfn elexd funfvex funfni sylancr adantr cxp fnmap nn0ex fnovex mp3an12i
+      1nn0 rabexd elmapd mpbird psrbasg eleqtrrd fmpt3d ) AUAELMOUBUCUDPQZMRESU
+      EZUFZLOZNENOUAOZUGUJUHUKUIZUGZCULUMZCUNUMZUKZUIZBFAUANWOCWTLMEFPUOXAHWOUP
+      ZXAUPZWTUPZJKUQAWQEQZVDZXCCURUMZWOSUEZBXHXCXJQWOXIXCVEXHLWOXBXIXHWPWOQZVD
+      ZWSWTXAXIAWTXIQZXGXKACUOQZXMKXICWTXIUPZXFUSUTVAAXAXIQZXGXKAXNXPKXICXAXOXE
+      VBUTVAXLEPQZXKWRWOQZWSVCAXQXGXKJVAZXHXKVFXLXQUJRQZXGXRXSXTXLWFVGAXGXKVHNW
+      OMEUJWQXDVIVJWPWRWOMEXDVKVJVLVMXHXIWOXCTTAXITQZXGAURTVNCTQYAVOACUOKVPYATC
+      URCURVQVRVSVTAWOTQXGAWMMWNWOTXDSTTWAVNRTQAETQWNTQWBWCAEPJVPRETTSWDWEWGVTW
+      HWIABXJUGXGABWOCDMEXIPUOGXOXDIJKWJVTWKWL $.
+  $}
+
+  ${
     $d f B $.  $d f i r s a b k I $.  $d f i r s a b k R $.  $d i r s S $.
     $d i r s U $.  $d f X $.  $d f .0. $.  $d a b f i k s r w $.
     $( The multivariate polynomial constructor is a proper binary operator.
