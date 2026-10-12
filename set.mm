@@ -582120,6 +582120,25 @@ $)
       VDVET $.
   $}
 
+  ${
+    $d A n x y $.
+    $( An upper bound on the value of ` _J0 ` .  (Contributed by BTernaryTau,
+       12-Oct-2026.) $)
+    j0le $p |- ( A e. On -> ( _J0 ` <. ( _K1 ` A ) , ( _K2 ` A ) >. ) C_ A ) $=
+      ( vx vy vn con0 wcel cfv cop ccj0 c9o comu co wss 9on mp2an coa cv adantl
+      a1i wceq ck1 ck2 cxp cr0 cep wiso wf1o j0iso isof1o f1of mp2b 0elon f0cli
+      wf wa c0 wne ck3 k39o ne0ii on0eln0 ax-mp mpbir omword2 mpan2 omcl onelon
+      wb oaword1 cotp cj jk1k2k3 cvv k1on k2on ovexd opeq1 fveq2d oveq2d oveq1d
+      opeq2 oveq2 df-j mpt3fvot2d eqtrd sseqtrrid sstrid ) AEFZAUAGZAUBGZHZIGZJ
+      WLKLZAWLEFZJEFZWLWMMZEEUCZEWKIWQEUDUEIUFWQEIUGWQEIUNUHWQEUDUEIUIWQEIUJUKU
+      LUMZNWNWOUOUPJFZWPWSJUPUQZAURGZJAUSZUTWOWSWTVHNJVAVBVCWLJVDVEOWHWMXAPLZWM
+      AWMEFZXAEFZWMXCMWOWNXDNWRJWLVFOWOXAJFZXENXBJXAVGOWMXAVIOWHAWIWJXAVJVKGXCA
+      VLWHBCDEEJJBQZCQZHZIGZKLZDQZPLZWIWJXAVKJWIXHHZIGZKLZXLPLZWMXLPLZXCVMWIEFW
+      HAVNSWJEFWHAVOSXFWHXBSWHWMXAPVPWIXGTZXQXMTWHXSXPXKXLPXSXOXJJKXSXNXIIWIXGX
+      HVQVRVSVTRWJXHTZXRXQTWHXTWMXPXLPXTWLXOJKXTWKXNIWJXHWIWAVRVSVTRXAXLTXCXRTW
+      HXAXLWMPWBRBCDWCWDWEWFWG $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
