@@ -582090,6 +582090,19 @@ $)
       UCURCCUDUKUEUNUFUOUGCBCVBEAVCUHUIULUM $.
   $}
 
+  ${
+    $d A x $.
+    $( Values of the ` _K3 ` function are ordinals less than 9.  (Contributed
+       by BTernaryTau, 11-Oct-2026.) $)
+    k39o $p |- ( _K3 ` A ) e. 9o $=
+      ( vx con0 wcel ck3 cfv c9o cj ccnv c2nd 2fveq3 dfk32 fvex fvmpt wf1o jf1o
+      cv cxp c0 c8o f1ocnvdm mpan xp2nd syl eqeltrd fvmptndm csuc df-9o nsuceq0
+      wn wne eqnetri wb 9on on0eln0 ax-mp mpbir eqeltrdi pm2.61i ) ACDZAEFZGDUT
+      VAAHIZFZJFZGBABQZVBFJFZVDCEVEAJVBKBLZVCJMNUTVCCCRZGRZDZVDGDVICHOUTVJPVICA
+      HUAUBVCVHGUCUDUEUTUJVASGBCVFEAVGUFSGDZGSUKZGTUGSUHTUIULGCDVKVLUMUNGUOUPUQ
+      URUS $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
