@@ -4034,6 +4034,7 @@ that we are evaluating functions within their domains.
 <TR>
 <TD>ofval</TD>
 <TD>~ ofvalg </TD>
+<td>adds condition that ` ( C R D ) ` is a set</td>
 </TR>
 
 <tr>
@@ -14890,9 +14891,15 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>psrdi , psrdir</td>
-  <td><i>none</i></td>
-  <td>depends on a variety of ` mPwSer ` and ` gsum ` theorems</td>
+  <td>psrdi</td>
+  <td>~ psrdifi</td>
+  <td>requires a finite index set</td>
+</tr>
+
+<tr>
+  <td>psrdir</td>
+  <td>~ psrdirfi</td>
+  <td>requires a finite index set</td>
 </tr>
 
 <tr>
@@ -14917,8 +14924,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>psrring</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses psrdi and psrdir</td>
+  <td>~ psrringfi</td>
+  <td>requires a finite index set</td>
 </tr>
 
 <tr>
