@@ -79205,13 +79205,9 @@ $)
 
   ${
     $d A x y $.  $d V x $.
-    $( A restriction of the converse epsilon relation to a set is a set,
-       although the converse epsilon relation itself is a proper class.  The
-       restricted relation contains only pairs whose first coordinate belongs
-       to ` A ` and whose second coordinate belongs to a member of ` A ` , as
-       characterized by ~ cnvepres .  In particular, this supplies the
-       singleton-restriction sethood needed to apply ~ ecexgen in ~ eccnvepex .
-       (Contributed by Peter Mazsa, 24-Sep-2018.) $)
+    $( The restriction of the proper-class converse epsilon relation to a set
+       is a set (see ~ cnvepres ).  This supplies the hypothesis of ~ ecexgen
+       used in ~ eccnvepex .  (Contributed by Peter Mazsa, 24-Sep-2018.) $)
     cnvepresex $p |- ( A e. V -> ( `' _E |` A ) e. _V ) $=
       ( vx vy wcel cep ccnv cres cv wa copab cvv cnvepres cab abid2 vex eqeltri
       id a1i opabex3d eqeltrid ) ABEZFGAHCIZAEZDIUCEZJCDKLCDAMUBUECDABUBRUEDNZL
