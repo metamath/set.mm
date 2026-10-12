@@ -582103,6 +582103,23 @@ $)
       URUS $.
   $}
 
+  ${
+    $d A x $.
+    $( Identity law for the ` _J ` function.  Proposition 15.8 of
+       [TakeutiZaring] p. 156.  (Contributed by BTernaryTau, 11-Oct-2026.) $)
+    jk1k2k3 $p |- ( A e. On ->
+        A = ( _J ` <. ( _K1 ` A ) , ( _K2 ` A ) , ( _K3 ` A ) >. ) ) $=
+      ( vx con0 wcel ck1 cfv ck2 ck3 cj wceq cxp c9o c1st c2nd jf1o 2fveq3 fvex
+      fveq2d fvmpt eqcomd cotp ccnv w3a wa wf1o f1ocnvdm mpan dfk12 dfk22 dfk32
+      cv 3jca jca k1on k2on k39o el2xptp0 mp3an sylib eqeltrrd f1ocnvfvb mp3an1
+      wb mpancom mpbird ) ACDZAEFZAGFZAHFZUAZIFZAVFVKAJZAIUBZFZVJJZVFVNCCKLKZDZ
+      VNMFZMFZVGJZVRNFZVHJZVNNFZVIJZUCZUDZVOVFVQWEVPCIUEZVFVQOVPCAIUFUGZVFVTWBW
+      DVFVGVSBABUKZVMFZMFZMFVSCEWIAJZWKVRMWIAMVMPZRBUHVRMQSTVFVHWABAWKNFWACGWLW
+      KVRNWMRBUIVRNQSTVFVIWCBAWJNFWCCHWIANVMPBUJVNNQSTULUMVGCDVHCDVILDWFVOVCAUN
+      AUOAUPVNCCLVGVHVIUQURUSZVJVPDZVFVLVOVCZVFVNVJVPWNWHUTWGWOVFWPOVPCVJAIVAVB
+      VDVET $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
