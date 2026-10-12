@@ -582078,6 +582078,18 @@ $)
       LUEUMUJCBCUTEAVAUFUGUHUK $.
   $}
 
+  ${
+    $d A x $.
+    $( Values of the ` _K2 ` function are ordinals.  (Contributed by
+       BTernaryTau, 11-Oct-2026.) $)
+    k2on $p |- ( _K2 ` A ) e. On $=
+      ( vx con0 wcel ck2 cfv cj ccnv c1st c2nd cv wceq 2fveq3 fveq2d dfk22 fvex
+      fvmpt cxp c9o wf1o jf1o f1ocnvdm xp1st xp2nd eqeltrd wn c0 fvmptndm 0elon
+      mpan 3syl eqeltrdi pm2.61i ) ACDZAEFZCDUNUOAGHZFZIFZJFZCBABKZUPFIFZJFZUSC
+      EUTALVAURJUTAIUPMNBOZURJPQUNUQCCRZSRZDZURVDDUSCDVECGTUNVFUAVECAGUBUJUQVDS
+      UCURCCUDUKUEUNUFUOUGCBCVBEAVCUHUIULUM $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
