@@ -591533,7 +591533,7 @@ $)
        set ` x ` is grounded if there is no infinite membership-descending
        sequence of sets beginning with ` x ` .  See Paragraph 1 of [Quine]
        p. 37 .
-       
+
        Note that the definition of ` M ` presupposes that ` _om ` is available
        as a set ( ~ omex ), which is equivalent to assuming ~ ax-inf2 .
        (Contributed by Adrian Ducourtial, 11-Oct-2026.) $)
