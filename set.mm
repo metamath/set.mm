@@ -582174,6 +582174,16 @@ $)
     ( con0 wcel ck1 cfv ck2 cun cop ccj0 wss k1on k2on mp2an j0le sstrid unssbd
     maxssj0 ) ABCZADEZAFEZARSTGZSTHIEZASBCTBCUAUBJAKALSTQMANOP $.
 
+  $( The value of ` _K1 ` is strictly bounded by its argument when the value of
+     ` _K3 ` is nonzero.  Part of Proposition 15.10(2) of [TakeutiZaring]
+     p. 156.  (Contributed by BTernaryTau, 12-Oct-2026.) $)
+  k3n0k1lt $p |- ( ( A e. On /\ (/) e. ( _K3 ` A ) ) -> ( _K1 ` A ) e. A ) $=
+    ( con0 wcel c0 ck3 cfv wa ck1 ck2 cun cop ccj0 k3n0j0lt wi wss k1on maxssj0
+    k2on mp2an adantr onun2i ontr2 mpan mpani mpd onunel mp3an12 simprbda mpdan
+    wb ) ABCZDAEFCZGZAHFZAIFZJZACZUNACZUMUNUOKLFZACZUQAMUKUTUQNULUKUPUSOZUTUQUN
+    BCZUOBCZVAAPZARZUNUOQSUPBCUKVAUTGUQNUNUOVDVEUAUPUSAUBUCUDTUEUMUQURUOACZUKUQ
+    URVFGUJZULVBVCUKVGVDVEUNUOAUFUGTUHUI $.
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
