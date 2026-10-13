@@ -582139,6 +582139,13 @@ $)
       HXAXLWMPWBRBCDWCWDWEWFWG $.
   $}
 
+  $( The value of ` _K1 ` is bounded by its argument.  Part of Proposition
+     15.10(1) of [TakeutiZaring] p. 156.  (Contributed by BTernaryTau,
+     12-Oct-2026.) $)
+  k1le $p |- ( A e. On -> ( _K1 ` A ) C_ A ) $=
+    ( con0 wcel ck1 cfv ck2 cun cop ccj0 wss k1on k2on mp2an j0le sstrid unssad
+    maxssj0 ) ABCZADEZAFEZARSTGZSTHIEZASBCTBCUAUBJAKALSTQMANOP $.
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
