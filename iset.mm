@@ -183655,6 +183655,12 @@ $)
         KQXRFYQYRSUUAUUJYQSTWMYQYTYCSTYPXRXTWNWOWPWQWRWSUUKUUJTRZYLUUKSTUKUUOUP
         WTUUKUUOSTSUUJTWNXAXBYCSTXCXDXEXFXGXHXIXJYCXKXLXMXNXOUAUBFBGXPXQ $.
     $}
+
+    mvrcl2.x $e |- ( ph -> X e. I ) $.
+    $( A power series variable is an element of the base set.  (Contributed by
+       Mario Carneiro, 29-Dec-2014.) $)
+    mvrcl2fi $p |- ( ph -> ( V ` X ) e. B ) $=
+      ( mvrffi ffvelcdmd ) AEBGFABCDEFHIJKLNMO $.
   $}
 
   ${
