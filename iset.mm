@@ -67653,6 +67653,17 @@ $)
   $}
 
   ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( Set exponentiation is inhabited if the base is inhabited.  (Contributed
+       by Jim Kingdon, 13-Oct-2026.) $)
+    mapm $p |- ( ( A e. V /\ B e. W /\ C e. A ) -> E. x x e. ( A ^m B ) ) $=
+      ( wcel w3a csn cxp cmap co cv wex wf fconstg 3ad2ant3 simp3 snssd fssd
+      simp1 simp2 elmapd mpbird elex2 syl ) BEGZCFGZDBGZHZCDIZJZBCKLZGZAMUMGANU
+      JUNCBULOUJCUKBULUIUGCUKULOUHCDBPQUJDBUGUHUIRSTUJBCULEFUGUHUIUAUGUHUIUBUCU
+      DAULUMUEUF $.
+  $}
+
+  ${
     $d A f y $.  $d B f y $.  $d f ph y $.
     mapsnd.1 $e |- ( ph -> A e. V ) $.
     mapsnd.2 $e |- ( ph -> B e. W ) $.
