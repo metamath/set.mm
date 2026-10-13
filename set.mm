@@ -582139,6 +582139,27 @@ $)
       HXAXLWMPWBRBCDWCWDWEWFWG $.
   $}
 
+  ${
+    $d A n x y $.
+    $( A strict upper bound on the value of ` _J0 ` for nonzero values of
+       ` _K3 ` .  (Contributed by BTernaryTau, 12-Oct-2026.) $)
+    k3n0j0lt $p |- ( ( A e. On /\ (/) e. ( _K3 ` A ) ) ->
+        ( _J0 ` <. ( _K1 ` A ) , ( _K2 ` A ) >. ) e. A ) $=
+      ( vx vy vn con0 wcel c0 cfv wa c9o cop ccj0 comu co coa 9on mp2an wceq cv
+      a1i ck3 ck1 ck2 wb cxp cr0 cep wiso wf1o wf j0iso isof1o f1of 0elon f0cli
+      mp2b omcl k39o onelon oaord1 bilani cotp cj jk1k2k3 k1on k2on ovexd opeq1
+      cvv fveq2d oveq2d oveq1d adantl opeq2 oveq2 mpt3fvot2d eqtrd eleqtrrd wss
+      df-j adantr wne ne0ii on0eln0 ax-mp mpbir omword2 mpan2 wi ontr2 mpan mpd
+      mpani ) AEFZGAUAHZFZIZJAUBHZAUCHZKZLHZMNZAFZXAAFZWQXBXBWOONZAWPXBXEFZWNXB
+      EFZWOEFZWPXFUDJEFZXAEFZXGPEEUEZEWTLXKEUFUGLUHXKELUIXKELUJUKXKEUFUGLULXKEL
+      UMUPUNUOZJXAUQQXIWOJFZXHPAURZJWOUSQXBWOUTQVAWNAXERWPWNAWRWSWOVBVCHXEAVDWN
+      BCDEEJJBSZCSZKZLHZMNZDSZONZWRWSWOVCJWRXPKZLHZMNZXTONZXBXTONZXEVIWREFWNAVE
+      TWSEFWNAVFTXMWNXNTWNXBWOOVGWRXORZYEYARWNYGYDXSXTOYGYCXRJMYGYBXQLWRXOXPVHV
+      JVKVLVMWSXPRZYFYERWNYHXBYDXTOYHXAYCJMYHWTYBLWSXPWRVNVJVKVLVMWOXTRXEYFRWNW
+      OXTXBOVOVMBCDVTVPVQWAVRWQXAXBVSZXCXDXJXIYIXLPXJXIIGJFZYIYJJGWBZWOJXNWCXIY
+      JYKUDPJWDWEWFXAJWGWHQWNYIXCIXDWIZWPXJWNYLXLXAXBAWJWKWAWMWL $.
+  $}
+
   $( The value of ` _K1 ` is bounded by its argument.  Part of Proposition
      15.10(1) of [TakeutiZaring] p. 156.  (Contributed by BTernaryTau,
      12-Oct-2026.) $)
