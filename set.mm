@@ -592139,6 +592139,63 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Integers in terms of rationals
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d N a b x y z k p m n $.  $d S m n p $.
+    zqalglem1.1 $e |- S = { k | E. x e. QQ E. y e. QQ E. z e. QQ
+     ( 2 + ( ( ( a x. b ) x. ( k ^ 2 ) ) + ( b x. ( z ^ 2 ) ) ) ) =
+     ( ( x ^ 2 ) + ( a x. ( y ^ 2 ) ) ) } $.
+    $( Lemma for zqalg (future).  All non-negative integers satisfy the forward
+       direction.  (Contributed by Scott Fenton, 13-Oct-2026.) $)
+    zqalglem1 $p |- ( N e. NN0 ->
+     A. a e. QQ A. b e. QQ
+     ( ( 0 e. S /\ A. m e. QQ ( m e. S -> ( m + 1 ) e. S ) ) -> N e. S ) )
+     $=
+      ( vp vn cc0 wcel wi cq wral eleq1 imbi2d 2ralbidv cv c1 caddc co wceq weq
+      wa simpl rgen2w cn0 cz nn0z zq oveq1 eleq1d imbi12d 3syl adantld ralimdvv
+      rspcv a2d nn0ind ) MDNZFUAZDNZVDUBUCUDZDNZOZFPQZUGZKUAZDNZOZIPQHPQVJVCOZI
+      PQHPQVJLUAZDNZOZIPQHPQVJVOUBUCUDZDNZOZIPQHPQVJGDNZOZIPQHPQKLGVKMUEZVMVNHI
+      PPWCVLVCVJVKMDRSTKLUFZVMVQHIPPWDVLVPVJVKVODRSTVKVRUEZVMVTHIPPWEVLVSVJVKVR
+      DRSTVKGUEZVMWBHIPPWFVLWAVJVKGDRSTVNHIPPVCVIUHUIVOUJNZVQVTHIPPWGVJVPVSWGVI
+      VPVSOZVCWGVOUKNVOPNVIWHOVOULVOUMVHWHFVOPFLUFZVEVPVGVSVDVODRWIVFVRDVDVOUBU
+      CUNUOUPUTUQURVAUSVB $.
+
+    $( Lemma for zqalg (future).  A rational ` N ` satisfies the condition iff
+       ` -u N ` satisfies it.  (Contributed by Scott Fenton, 13-Oct-2026.) $)
+    zqalglem2 $p |- ( N e. QQ -> (
+     A. a e. QQ A. b e. QQ
+     ( ( 0 e. S /\ A. m e. QQ ( m e. S -> ( m + 1 ) e. S ) ) -> N e. S ) <->
+     A. a e. QQ A. b e. QQ
+     ( ( 0 e. S /\ A. m e. QQ ( m e. S -> ( m + 1 ) e. S ) ) -> -u N e. S ) )
+     ) $=
+      ( cq wcel cv caddc co c2 cmul cexp wrex oveq2d cc0 c1 wi wral wa cneg qcn
+      sqnegd oveq1d eqeq1d rexbidv 2rexbidv wb negex oveq1 elab2 elab2g 3bitr4d
+      wceq a1i imbi2d 2ralbidv bicomd ) GKLZUADLFMZDLVEUBNODLUCFKUDUEZGUFZDLZUC
+      ZIKUDHKUDVFGDLZUCZIKUDHKUDVDVIVKHIKKVDVHVJVFVDPHMZIMZQOZVGPROZQOZVMCMPROQ
+      OZNOZNOZAMPROVLBMPROQONOZUSZCKSZBKSAKSZPVNGPROZQOZVQNOZNOZVTUSZCKSZBKSAKS
+      ZVHVJVDWBWIABKKVDWAWHCKVDVSWGVTVDVRWFPNVDVPWEVQNVDVOWDVNQVDGGUGUHTUITUJUK
+      ULVHWCUMVDPVNEMZPROZQOZVQNOZNOZVTUSZCKSZBKSAKSZWCEVGDGUNWKVGUSZWQWBABKKWS
+      WPWACKWSWOVSVTWSWNVRPNWSWMVPVQNWSWLVOVNQWKVGPRUOTUITUJUKULJUPUTWRWJEGDKWK
+      GUSZWQWIABKKWTWPWHCKWTWOWGVTWTWNWFPNWTWMWEVQNWTWLWDVNQWKGPRUOTUITUJUKULJU
+      QURVAVBVC $.
+
+    $( Lemma for zqalg (future).  All integers satisfy the forward direction.
+       (Contributed by Scott Fenton, 13-Oct-2026.) $)
+    zqalglem3 $p |- ( N e. ZZ ->
+     A. a e. QQ A. b e. QQ
+     ( ( 0 e. S /\ A. m e. QQ ( m e. S -> ( m + 1 ) e. S ) ) -> N e. S ) )
+     $=
+      ( cz wcel cq cc0 cv c1 wi wral cn0 zqalglem1 caddc co wa zq cr elznn0 a1d
+      cneg wo zqalglem2 syl5ibrcom jaoi simplbiim mpd ) GKLZGMLZNDLFOZDLUQPUAUB
+      DLQFMRUCZGDLQIMRHMRZGUDUOGUELGSLZGUHZSLZUIUPUSQZGUFUTVCVBUTUSUPABCDEFGHIJ
+      TUGVBUSUPURVADLQIMRHMRABCDEFVAHIJTABCDEFGHIJUJUKULUMUN $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Infinite products
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
