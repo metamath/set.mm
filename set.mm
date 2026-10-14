@@ -80,6 +80,7 @@ MM  Mykola Mostovenko
 LM  Luke Murphy
 SN  Steven Nguyen
 MO  Mel L. O'Cat
+TJO Timothy J. O'Malley
 OAI OpenAI
 SO  Stefan O'Rear
 JO  Jason Orendorff
@@ -727574,6 +727575,29 @@ $( (End of Larry Lesyna's mathbox.) $)
 $( End $[ set-mbox-ll.mm $] $)
 
 
+$( Begin $[ set-mbox-tjo.mm $] $)
+$( Skip $[ set-main.mm $] $)
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Mathbox for Timothy J. O'Malley
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+  $( The axioms of the complex numbers imply the Axiom of Infinity (in the form
+     of ~ omex ): the map of ~ om2uzf1oi is a one-to-one onto mapping from
+     ` _om ` onto a set of integers, so ` _om ` is a set.  Compare ~ dcomex and
+     ~ grothomex .  Note that our proof depends on neither ~ ax-inf nor
+     ~ ax-inf2 .  (Contributed by Timothy J. O'Malley, 8-Oct-2026.) $)
+  omexcn $p |- _om e. _V $=
+    ( vx com cvv wcel cc0 cuz cfv fvex cv c1 caddc co cmpt crdg cres wf1o wb 0z
+    eqid om2uzf1oi f1ovv ax-mp mpbir ) BCDZEFGZCDZEFHBUEACAIJKLMENBOZPUDUFQAEUG
+    RUGSTBUEUGUAUBUC $.
+    $( $j usage 'omexcn' avoids 'ax-inf' 'ax-inf2'; $)
+
+$( (End of Timothy J. O'Malley's mathbox.) $)
+$( End $[ set-mbox-tjo.mm $] $)
+
+
 $( Begin $[ set-mbox-oai.mm $] $)
 $( Skip $[ set-main.mm $] $)
 $(
@@ -727592,30 +727616,6 @@ $)
 
 $( (End of OpenAI's mathbox.) $)
 $( End $[ set-mbox-oai.mm $] $)
-
-
-$( Begin $[ set-mbox-tjo.mm $] $)
-$( Skip $[ set-main.mm $] $)
-$(
-#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-  Mathbox for Timothy J. O'Malley
-#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-$)
-
-  $( The axioms of the complex numbers imply the Axiom of Infinity (in the form
-     of ~ omex ): the map of ~ om2uzf1oi is a one-to-one onto mapping from
-     ` _om ` onto a set of integers, so ` _om ` is a set.  Compare ~ dcomex and
-     ~ grothomex .  Note that our proof depends on neither ~ ax-inf nor
-     ~ ax-inf2 .  (Contributed by Timothy J. O'Malley, 8-Oct-2026.) $)
-  omexcn $p |- _om e. _V $=
-    ( vx cvv cv c1 caddc cmpt cc0 crdg com cres cdm cuz cfv wf1o wceq om2uzf1oi
-    co 0z eqid wcel f1odm ax-mp fvex f1oexrnex mp2an dmex eqeltrri ) ABACDEQFGH
-    IJKIBIGLMABACDEQFGHIJNABACDEQFGHIJKIOAGABACDEQFGHIJRABACDEQFGHIJSPIGLMABACD
-    EQFGHIJUAUBABACDEQFGHIJIGLMABACDEQFGHIJNGLMBTABACDEQFGHIJBTAGABACDEQFGHIJRA
-    BACDEQFGHIJSPGLUCIGLMABACDEQFGHIJBUDUEUFUG $.
-
-$( (End of Timothy J. O'Malley's mathbox.) $)
-$( End $[ set-mbox-tjo.mm $] $)
 
 
 $( Begin $[ set-mbox-so.mm $] $)
