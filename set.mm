@@ -34,6 +34,7 @@ https://github.com/metamath/set.mm.
 Contributor list:
 
 DA  David Abernethy
+JAG Jorge Agra
 SA  Stefan Allan
 TA  Thierry Arnoux
 JA  Juha Arpiainen
@@ -37582,184 +37583,6 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-  Basic set operations
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$)
-
-  $( Declare new symbols. $)
-  $c \ $.  $( Backslash (difference) $)
-  $c u. $.  $( Cup (union) $)
-  $c i^i $.  $( Cap (intersection) $)
-
-  $( Extend class notation to include class difference (read:  " ` A ` minus
-     ` B ` "). $)
-  cdif $a class ( A \ B ) $.
-
-  $( Extend class notation to include union of two classes (read:  " ` A `
-     union ` B ` "). $)
-  cun $a class ( A u. B ) $.
-
-  $( Extend class notation to include the intersection of two classes (read:
-      " ` A ` intersect ` B ` "). $)
-  cin $a class ( A i^i B ) $.
-
-  ${
-    $d x A $.  $d x B $.  $d y A $.  $d y B $.  $d z x $.  $d z y $.  $d z A $.
-    $d z B $.
-    $( Soundness justification theorem for ~ df-dif .  (Contributed by Rodolfo
-       Medina, 27-Apr-2010.)  (Proof shortened by Andrew Salmon,
-       9-Jul-2011.) $)
-    difjust $p |- { x | ( x e. A /\ -. x e. B ) }
-                = { y | ( y e. A /\ -. y e. B ) } $=
-      ( vz cv wcel wn wa cab weq eleq1w notbid anbi12d cbvabv eqtri ) AFZCGZQDG
-      ZHZIZAJEFZCGZUBDGZHZIZEJBFZCGZUGDGZHZIZBJUAUFAEAEKZRUCTUEAECLULSUDAEDLMNO
-      UFUKEBEBKZUCUHUEUJEBCLUMUDUIEBDLMNOP $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.
-    $( Define class difference, also called relative complement.  Definition
-       5.12 of [TakeutiZaring] p. 20.  For example,
-       ` ( { 1 , 3 } \ { 1 , 8 } ) = { 3 } ` ( ~ ex-dif ).  Contrast this
-       operation with union ` ( A u. B ) ` ( ~ df-un ) and intersection
-       ` ( A i^i B ) ` ( ~ df-in ).  Several notations are used in the
-       literature; we chose the ` \ ` convention used in Definition 5.3 of
-       [Eisenberg] p. 67 instead of the more common minus sign to reserve the
-       latter for later use in, e.g., arithmetic.  We will use the
-       terminology " ` A ` excludes ` B ` " to mean ` A \ B ` .  We will
-       use " ` B ` is removed from ` A ` " to mean ` A \ { B } ` i.e. the
-       removal of an element or equivalently the exclusion of a singleton.
-       (Contributed by NM, 29-Apr-1994.) $)
-    df-dif $a |- ( A \ B ) = { x | ( x e. A /\ -. x e. B ) } $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.  $d y A $.  $d y B $.  $d z x $.  $d z y $.  $d z A $.
-    $d z B $.
-    $( Soundness justification theorem for ~ df-un .  (Contributed by Rodolfo
-       Medina, 28-Apr-2010.)  (Proof shortened by Andrew Salmon,
-       9-Jul-2011.) $)
-    unjust $p |- { x | ( x e. A \/ x e. B ) } = { y | ( y e. A \/ y e. B ) } $=
-      ( vz cv wcel wo cab weq eleq1w orbi12d cbvabv eqtri ) AFZCGZODGZHZAIEFZCG
-      ZSDGZHZEIBFZCGZUCDGZHZBIRUBAEAEJPTQUAAECKAEDKLMUBUFEBEBJTUDUAUEEBCKEBDKLM
-      N $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.
-    $( Define the union of two classes.  Definition 5.6 of [TakeutiZaring]
-       p. 16.  For example, ` ( { 1 , 3 } u. { 1 , 8 } ) = { 1 , 3 , 8 } `
-       ( ~ ex-un ).  Contrast this operation with difference ` ( A \ B ) `
-       ( ~ df-dif ) and intersection ` ( A i^i B ) ` ( ~ df-in ).  For an
-       alternate definition in terms of class difference, requiring no dummy
-       variables, see ~ dfun2 .  For union defined in terms of intersection,
-       see ~ dfun3 .  (Contributed by NM, 23-Aug-1993.) $)
-    df-un $a |- ( A u. B ) = { x | ( x e. A \/ x e. B ) } $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.  $d y A $.  $d y B $.  $d z x $.  $d z y $.  $d z A $.
-    $d z B $.
-    $( Soundness justification theorem for ~ df-in .  (Contributed by Rodolfo
-       Medina, 28-Apr-2010.)  (Proof shortened by Andrew Salmon,
-       9-Jul-2011.) $)
-    injust $p |- { x | ( x e. A /\ x e. B ) }
-               = { y | ( y e. A /\ y e. B ) } $=
-      ( vz cv wcel wa cab weq eleq1w anbi12d cbvabv eqtri ) AFZCGZODGZHZAIEFZCG
-      ZSDGZHZEIBFZCGZUCDGZHZBIRUBAEAEJPTQUAAECKAEDKLMUBUFEBEBJTUDUAUEEBCKEBDKLM
-      N $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.
-    $( Define the intersection of two classes.  Definition 5.6 of
-       [TakeutiZaring] p. 16.  For example,
-       ` ( { 1 , 3 } i^i { 1 , 8 } ) = { 1 } ` ( ~ ex-in ).  Contrast this
-       operation with union ` ( A u. B ) ` ( ~ df-un ) and difference
-       ` ( A \ B ) ` ( ~ df-dif ).  For alternate definitions in terms of class
-       difference, requiring no dummy variables, see ~ dfin2 and ~ dfin4 .  For
-       intersection defined in terms of union, see ~ dfin3 .  (Contributed by
-       NM, 29-Apr-1994.) $)
-    df-in $a |- ( A i^i B ) = { x | ( x e. A /\ x e. B ) } $.
-
-    $( Alternate definition for the intersection of two classes.  (Contributed
-       by NM, 6-Jul-2005.) $)
-    dfin5 $p |- ( A i^i B ) = { x e. A | x e. B } $=
-      ( cin cv wcel wa cab crab df-in df-rab eqtr4i ) BCDAEZBFMCFZGAHNABIABCJNA
-      BKL $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.
-    $( Alternate definition of class difference.  (Contributed by NM,
-       25-Mar-2004.) $)
-    dfdif2 $p |- ( A \ B ) = { x e. A | -. x e. B } $=
-      ( cdif cv wcel wn wa cab crab df-dif df-rab eqtr4i ) BCDAEZBFNCFGZHAIOABJ
-      ABCKOABLM $.
-  $}
-
-  ${
-    $d A x $.  $d B x $.  $d C x $.
-    $( Expansion of membership in a class difference.  (Contributed by NM,
-       29-Apr-1994.) $)
-    eldif $p |- ( A e. ( B \ C ) <-> ( A e. B /\ -. A e. C ) ) $=
-      ( vx cdif wcel cvv wn wa elex adantr cv wceq notbid anbi12d df-dif elab2g
-      eleq1 pm5.21nii ) ABCEZFAGFZABFZACFZHZIZATJUBUAUDABJKDLZBFZUFCFZHZIUEDATG
-      UFAMZUGUBUIUDUFABRUJUHUCUFACRNODBCPQS $.
-  $}
-
-  ${
-    eldifd.1 $e |- ( ph -> A e. B ) $.
-    eldifd.2 $e |- ( ph -> -. A e. C ) $.
-    $( If a class is in one class and not another, it is also in their
-       difference.  One-way deduction form of ~ eldif .  (Contributed by David
-       Moews, 1-May-2017.) $)
-    eldifd $p |- ( ph -> A e. ( B \ C ) ) $=
-      ( wcel wn cdif eldif sylanbrc ) ABCGBDGHBCDIGEFBCDJK $.
-  $}
-
-  ${
-    eldifad.1 $e |- ( ph -> A e. ( B \ C ) ) $.
-    $( If a class is in the difference of two classes, it is also in the
-       minuend.  One-way deduction form of ~ eldif .  (Contributed by David
-       Moews, 1-May-2017.) $)
-    eldifad $p |- ( ph -> A e. B ) $=
-      ( wcel wn cdif wa eldif sylib simpld ) ABCFZBDFGZABCDHFMNIEBCDJKL $.
-  $}
-
-  ${
-    eldifbd.1 $e |- ( ph -> A e. ( B \ C ) ) $.
-    $( If a class is in the difference of two classes, it is not in the
-       subtrahend.  One-way deduction form of ~ eldif .  (Contributed by David
-       Moews, 1-May-2017.) $)
-    eldifbd $p |- ( ph -> -. A e. C ) $=
-      ( wcel wn cdif wa eldif sylib simprd ) ABCFZBDFGZABCDHFMNIEBCDJKL $.
-  $}
-
-  $( The elements of a set difference and the minuend are not equal.
-     (Contributed by AV, 21-Oct-2023.) $)
-  elneeldif $p |- ( ( X e. A /\ Y e. ( B \ A ) ) -> X =/= Y ) $=
-    ( wcel cdif wne wn wa eldif nelne2 ex adantld biimtrid imp ) CAEZDBAFEZCDGZ
-    QDBEZDAEHZIPRDBAJPTRSPTRCDAKLMNO $.
-
-  $( Characterization of setvar elements of the complement of a class.
-     (Contributed by Andrew Salmon, 15-Jul-2011.) $)
-  velcomp $p |- ( x e. ( _V \ A ) <-> -. x e. A ) $=
-    ( cv cvv cdif wcel wn vex eldif mpbiran ) ACZDBEFKDFKBFGAHKDBIJ $.
-
-  ${
-    $d A x $.  $d B x $.  $d C x $.
-    $( Expansion of membership in an intersection of two classes.  Theorem 12
-       of [Suppes] p. 25.  (Contributed by NM, 29-Apr-1994.) $)
-    elin $p |- ( A e. ( B i^i C ) <-> ( A e. B /\ A e. C ) ) $=
-      ( vx cin wcel wa elex adantl cv wceq eleq1 anbi12d df-in elab2g pm5.21nii
-      cvv ) ABCEZFAQFZABFZACFZGZARHUASTACHIDJZBFZUCCFZGUBDARQUCAKUDTUEUAUCABLUC
-      ACLMDBCNOP $.
-  $}
-
-
-$(
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Subclasses and subsets, proper subclasses and subsets
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -37802,28 +37625,6 @@ $)
        the original definition ~ dfss2 .  (Revised by GG, 15-May-2025.) $)
     df-ss $a |- ( A C_ B <-> A. x ( x e. A -> x e. B ) ) $.
   $}
-
-  ${
-    $d x y A $.  $d x y B $.
-    $( Alternate definition of the subclass relationship between two classes.
-       Exercise 9 of [TakeutiZaring] p. 18.  This was the original definition
-       before ~ df-ss .  (Contributed by NM, 27-Apr-1994.)  Revise ~ df-ss .
-       (Revised by GG, 15-May-2025.) $)
-    dfss2 $p |- ( A C_ B <-> ( A i^i B ) = A ) $=
-      ( vy vx cv wcel wa cab wb wal cin wss dfcleq df-in eqeq1i wi df-ss eleq1w
-      wceq bitri simp2 3expib impbid dfbi2 pm2.21 pm3.4 ja simplbiim impbii wsb
-      ancl df-clab weq anbi12d sbievw bitr2i bibi1i albii 3bitr4ri ) CEZAFZUTBF
-      ZGZCHZASDEZVDFZVEAFZIZDJZABKZASABLZDVDAMVJVDACABNOVKVGVEBFZPZDJVIDABQVMVH
-      DVMVGVLGZVGIZVHVMVOVMVNVGVMVGVLVGVMVGVLUAUBVGVLUKUCVOVNVGPVGVNPVMVNVGUDVG
-      VNVMVGVLUEVGVLUFUGUHUIVNVFVGVFVCCDUJVNVCDCULVCVNCDCDUMVAVGVBVLCDARCDBRUNU
-      OUPUQTURTUS $.
-    $( $j usage 'dfss2' avoids 'ax-10' 'ax-11' 'ax-12'; $)
-  $}
-
-  $( Variant of subclass definition ~ dfss2 .  (Contributed by NM,
-     21-Jun-1993.) $)
-  dfss $p |- ( A C_ B <-> A = ( A i^i B ) ) $=
-    ( wss cin wceq dfss2 eqcom bitri ) ABCABDZAEAIEABFIAGH $.
 
   ${
     $d x A $.  $d x B $.
@@ -39054,7 +38855,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-  The difference, union, and intersection of two classes
+  Basic operations on classes
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -39064,6 +38865,99 @@ $(
   The difference of two classes
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
+
+  $c \ $.  $( Token for the difference of two classes. $)
+
+  $( Syntax for the difference of two classes. $)
+  cdif $a class ( A \ B ) $.
+
+  ${
+    $d x A $.  $d x B $.  $d y A $.  $d y B $.  $d z x $.  $d z y $.  $d z A $.
+    $d z B $.
+    $( Soundness justification theorem for ~ df-dif .  (Contributed by Rodolfo
+       Medina, 27-Apr-2010.)  (Proof shortened by Andrew Salmon,
+       9-Jul-2011.) $)
+    difjust $p |- { x | ( x e. A /\ -. x e. B ) }
+                = { y | ( y e. A /\ -. y e. B ) } $=
+      ( vz cv wcel wn wa cab weq eleq1w notbid anbi12d cbvabv eqtri ) AFZCGZQDG
+      ZHZIZAJEFZCGZUBDGZHZIZEJBFZCGZUGDGZHZIZBJUAUFAEAEKZRUCTUEAECLULSUDAEDLMNO
+      UFUKEBEBKZUCUHUEUJEBCLUMUDUIEBDLMNOP $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Define class difference, also called relative complement.  Definition
+       5.12 of [TakeutiZaring] p. 20.  For example,
+       ` ( { 1 , 3 } \ { 1 , 8 } ) = { 3 } ` ( ~ ex-dif ).  Contrast this
+       operation with union ` ( A u. B ) ` ( ~ df-un ) and intersection
+       ` ( A i^i B ) ` ( ~ df-in ).  Several notations are used in the
+       literature; we chose the ` \ ` convention used in Definition 5.3 of
+       [Eisenberg] p. 67 instead of the more common minus sign to reserve the
+       latter for later use in, e.g., arithmetic.  We will use the
+       terminology " ` A ` excludes ` B ` " to mean ` A \ B ` .  We will
+       use " ` B ` is removed from ` A ` " to mean ` A \ { B } ` i.e. the
+       removal of an element or equivalently the exclusion of a singleton.
+       (Contributed by NM, 29-Apr-1994.) $)
+    df-dif $a |- ( A \ B ) = { x | ( x e. A /\ -. x e. B ) } $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Alternate definition of class difference.  (Contributed by NM,
+       25-Mar-2004.) $)
+    dfdif2 $p |- ( A \ B ) = { x e. A | -. x e. B } $=
+      ( cdif cv wcel wn wa cab crab df-dif df-rab eqtr4i ) BCDAEZBFNCFGZHAIOABJ
+      ABCKOABLM $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( Expansion of membership in a class difference.  (Contributed by NM,
+       29-Apr-1994.) $)
+    eldif $p |- ( A e. ( B \ C ) <-> ( A e. B /\ -. A e. C ) ) $=
+      ( vx cdif wcel cvv wn wa elex adantr cv wceq notbid anbi12d df-dif elab2g
+      eleq1 pm5.21nii ) ABCEZFAGFZABFZACFZHZIZATJUBUAUDABJKDLZBFZUFCFZHZIUEDATG
+      UFAMZUGUBUIUDUFABRUJUHUCUFACRNODBCPQS $.
+  $}
+
+  ${
+    eldifd.1 $e |- ( ph -> A e. B ) $.
+    eldifd.2 $e |- ( ph -> -. A e. C ) $.
+    $( If a class is in one class and not another, it is also in their
+       difference.  One-way deduction form of ~ eldif .  (Contributed by David
+       Moews, 1-May-2017.) $)
+    eldifd $p |- ( ph -> A e. ( B \ C ) ) $=
+      ( wcel wn cdif eldif sylanbrc ) ABCGBDGHBCDIGEFBCDJK $.
+  $}
+
+  ${
+    eldifad.1 $e |- ( ph -> A e. ( B \ C ) ) $.
+    $( If a class is in the difference of two classes, it is also in the
+       minuend.  One-way deduction form of ~ eldif .  (Contributed by David
+       Moews, 1-May-2017.) $)
+    eldifad $p |- ( ph -> A e. B ) $=
+      ( wcel wn cdif wa eldif sylib simpld ) ABCFZBDFGZABCDHFMNIEBCDJKL $.
+  $}
+
+  ${
+    eldifbd.1 $e |- ( ph -> A e. ( B \ C ) ) $.
+    $( If a class is in the difference of two classes, it is not in the
+       subtrahend.  One-way deduction form of ~ eldif .  (Contributed by David
+       Moews, 1-May-2017.) $)
+    eldifbd $p |- ( ph -> -. A e. C ) $=
+      ( wcel wn cdif wa eldif sylib simprd ) ABCFZBDFGZABCDHFMNIEBCDJKL $.
+  $}
+
+  $( The elements of a set difference and the minuend are not equal.
+     (Contributed by AV, 21-Oct-2023.) $)
+  elneeldif $p |- ( ( X e. A /\ Y e. ( B \ A ) ) -> X =/= Y ) $=
+    ( wcel cdif wne wn wa eldif nelne2 ex adantld biimtrid imp ) CAEZDBAFEZCDGZ
+    QDBEZDAEHZIPRDBAJPTRSPTRCDAKLMNO $.
+
+  $( Characterization of setvar elements of the complement of a class.
+     (Contributed by Andrew Salmon, 15-Jul-2011.) $)
+  velcomp $p |- ( x e. ( _V \ A ) <-> -. x e. A ) $=
+    ( cv cvv cdif wcel wn vex eldif mpbiran ) ACZDBEFKDFKBFGAHKDBIJ $.
 
   ${
     $d A x $.  $d B x y $.
@@ -39310,329 +39204,77 @@ $)
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  The union of two classes
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
-
-  ${
-    $d A x $.  $d B x $.  $d C x $.
-    $( Expansion of membership in class union.  Theorem 12 of [Suppes] p. 25.
-       (Contributed by NM, 7-Aug-1994.) $)
-    elun $p |- ( A e. ( B u. C ) <-> ( A e. B \/ A e. C ) ) $=
-      ( vx cun wcel cvv wo elex jaoi wceq eleq1 orbi12d df-un elab2g pm5.21nii
-      cv ) ABCEZFAGFZABFZACFZHZARITSUAABIACIJDQZBFZUCCFZHUBDARGUCAKUDTUEUAUCABL
-      UCACLMDBCNOP $.
-  $}
-
-  $( A member of a union that is not a member of the first class, is a member
-     of the second class.  (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
-  elunnel1 $p |- ( ( A e. ( B u. C ) /\ -. A e. B ) -> A e. C ) $=
-    ( cun wcel wo elun biimpi orcanai ) ABCDEZABEZACEZJKLFABCGHI $.
-
-  $( A member of a union that is not a member of the second class, is a member
-     of the first class.  (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
-  elunnel2 $p |- ( ( A e. ( B u. C ) /\ -. A e. C ) -> A e. B ) $=
-    ( cun wcel wo elun biimpi orcomd orcanai ) ABCDEZACEZABEZKMLKMLFABCGHIJ $.
-
-  ${
-    $d x A $.  $d x B $.  $d x C $.
-    uneqri.1 $e |- ( ( x e. A \/ x e. B ) <-> x e. C ) $.
-    $( Inference from membership to union.  (Contributed by NM,
-       21-Jun-1993.) $)
-    uneqri $p |- ( A u. B ) = C $=
-      ( cun cv wcel wo elun bitri eqriv ) ABCFZDAGZMHNBHNCHINDHNBCJEKL $.
-  $}
-
-  ${
-    $d x A $.
-    $( Idempotent law for union of classes.  Theorem 23 of [Suppes] p. 27.
-       (Contributed by NM, 21-Jun-1993.) $)
-    unidm $p |- ( A u. A ) = A $=
-      ( vx cv wcel oridm uneqri ) BAAABCADEF $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.
-    $( Commutative law for union of classes.  Exercise 6 of [TakeutiZaring]
-       p. 17.  (Contributed by NM, 25-Jun-1998.)  (Proof shortened by Andrew
-       Salmon, 26-Jun-2011.) $)
-    uncom $p |- ( A u. B ) = ( B u. A ) $=
-      ( vx cun cv wcel wo orcom elun bitr4i uneqri ) CABBADZCEZAFZMBFZGONGMLFNO
-      HMBAIJK $.
-  $}
-
-  $( If a class equals the union of two other classes, then it equals the union
-     of those two classes commuted. ~ equncom was automatically derived from
-     ~ equncomVD using the tools program translate__without__overwriting.cmd
-     and minimizing.  (Contributed by Alan Sare, 18-Feb-2012.) $)
-  equncom $p |- ( A = ( B u. C ) <-> A = ( C u. B ) ) $=
-    ( cun uncom eqeq2i ) BCDCBDABCEF $.
-
-  ${
-    equncomi.1 $e |- A = ( B u. C ) $.
-    $( Inference form of ~ equncom . ~ equncomi was automatically derived from
-       ~ equncomiVD using the tools program translate__without__overwriting.cmd
-       and minimizing.  (Contributed by Alan Sare, 18-Feb-2012.) $)
-    equncomi $p |- A = ( C u. B ) $=
-      ( cun wceq equncom mpbi ) ABCEFACBEFDABCGH $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.  $d x C $.
-    $( Equality theorem for the union of two classes.  (Contributed by NM,
-       15-Jul-1993.) $)
-    uneq1 $p |- ( A = B -> ( A u. C ) = ( B u. C ) ) $=
-      ( vx wceq cun cv wcel wo eleq2 orbi1d elun 3bitr4g eqrdv ) ABEZDACFZBCFZO
-      DGZAHZRCHZIRBHZTIRPHRQHOSUATABRJKRACLRBCLMN $.
-  $}
-
-  $( Equality theorem for the union of two classes.  (Contributed by NM,
-     5-Aug-1993.) $)
-  uneq2 $p |- ( A = B -> ( C u. A ) = ( C u. B ) ) $=
-    ( wceq cun uneq1 uncom 3eqtr4g ) ABDACEBCECAECBEABCFCAGCBGH $.
-
-  $( Equality theorem for the union of two classes.  (Contributed by NM,
-     29-Mar-1998.) $)
-  uneq12 $p |- ( ( A = B /\ C = D ) -> ( A u. C ) = ( B u. D ) ) $=
-    ( wceq cun uneq1 uneq2 sylan9eq ) ABECDEACFBCFBDFABCGCDBHI $.
-
-  ${
-    uneq1i.1 $e |- A = B $.
-    $( Inference adding union to the right in a class equality.  (Contributed
-       by NM, 30-Aug-1993.) $)
-    uneq1i $p |- ( A u. C ) = ( B u. C ) $=
-      ( wceq cun uneq1 ax-mp ) ABEACFBCFEDABCGH $.
-
-    $( Inference adding union to the left in a class equality.  (Contributed by
-       NM, 30-Aug-1993.) $)
-    uneq2i $p |- ( C u. A ) = ( C u. B ) $=
-      ( wceq cun uneq2 ax-mp ) ABECAFCBFEDABCGH $.
-
-    ${
-      uneq12i.2 $e |- C = D $.
-      $( Equality inference for the union of two classes.  (Contributed by NM,
-         12-Aug-2004.)  (Proof shortened by Eric Schmidt, 26-Jan-2007.) $)
-      uneq12i $p |- ( A u. C ) = ( B u. D ) $=
-        ( wceq cun uneq12 mp2an ) ABGCDGACHBDHGEFABCDIJ $.
-    $}
-  $}
-
-  ${
-    uneq1d.1 $e |- ( ph -> A = B ) $.
-    $( Deduction adding union to the right in a class equality.  (Contributed
-       by NM, 29-Mar-1998.) $)
-    uneq1d $p |- ( ph -> ( A u. C ) = ( B u. C ) ) $=
-      ( wceq cun uneq1 syl ) ABCFBDGCDGFEBCDHI $.
-
-    $( Deduction adding union to the left in a class equality.  (Contributed by
-       NM, 29-Mar-1998.) $)
-    uneq2d $p |- ( ph -> ( C u. A ) = ( C u. B ) ) $=
-      ( wceq cun uneq2 syl ) ABCFDBGDCGFEBCDHI $.
-
-    ${
-      uneq12d.2 $e |- ( ph -> C = D ) $.
-      $( Equality deduction for the union of two classes.  (Contributed by NM,
-         29-Sep-2004.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
-      uneq12d $p |- ( ph -> ( A u. C ) = ( B u. D ) ) $=
-        ( wceq cun uneq12 syl2anc ) ABCHDEHBDICEIHFGBCDEJK $.
-    $}
-  $}
-
-  ${
-    $d x y $.  $d y A $.  $d y B $.
-    nfun.1 $e |- F/_ x A $.
-    nfun.2 $e |- F/_ x B $.
-    $( Bound-variable hypothesis builder for the union of classes.
-       (Contributed by NM, 15-Sep-2003.)  (Revised by Mario Carneiro,
-       14-Oct-2016.)  Avoid ~ ax-10 , ~ ax-11 , ~ ax-12 .  (Revised by SN,
-       14-May-2025.) $)
-    nfun $p |- F/_ x ( A u. B ) $=
-      ( vy cun cv wcel wo elun nfcri nfor nfxfr nfci ) AFBCGZFHZPIQBIZQCIZJAQBC
-      KRSAAFBDLAFCELMNO $.
-    $( $j usage 'nfun' avoids 'ax-10' 'ax-11' 'ax-12'; $)
-  $}
-
-  ${
-    $d A x $.  $d B x $.  $d C x $.
-    $( Associative law for union of classes.  Exercise 8 of [TakeutiZaring]
-       p. 17.  (Contributed by NM, 3-May-1994.)  (Proof shortened by Andrew
-       Salmon, 26-Jun-2011.) $)
-    unass $p |- ( ( A u. B ) u. C ) = ( A u. ( B u. C ) ) $=
-      ( vx cun cv wcel wo elun orbi2i orbi1i orass bitr2i 3bitrri uneqri ) DABE
-      ZCABCEZEZDFZRGSAGZSQGZHTSBGZSCGZHZHZSPGZUCHZSAQIUAUDTSBCIJUGTUBHZUCHUEUFU
-      HUCSABIKTUBUCLMNO $.
-  $}
-
-  $( A rearrangement of union.  (Contributed by NM, 12-Aug-2004.) $)
-  un12 $p |- ( A u. ( B u. C ) ) = ( B u. ( A u. C ) ) $=
-    ( cun uncom uneq1i unass 3eqtr3i ) ABDZCDBADZCDABCDDBACDDIJCABEFABCGBACGH
-    $.
-
-  $( A rearrangement of union.  (Contributed by NM, 12-Aug-2004.)  (Proof
-     shortened by Andrew Salmon, 26-Jun-2011.) $)
-  un23 $p |- ( ( A u. B ) u. C ) = ( ( A u. C ) u. B ) $=
-    ( cun unass un12 uncom 3eqtri ) ABDCDABCDDBACDZDIBDABCEABCFBIGH $.
-
-  $( A rearrangement of the union of 4 classes.  (Contributed by NM,
-     12-Aug-2004.) $)
-  un4 $p |- ( ( A u. B ) u. ( C u. D ) ) =
-            ( ( A u. C ) u. ( B u. D ) ) $=
-    ( cun un12 uneq2i unass 3eqtr4i ) ABCDEZEZEACBDEZEZEABEJEACELEKMABCDFGABJHA
-    CLHI $.
-
-  $( Union distributes over itself.  (Contributed by NM, 17-Aug-2004.) $)
-  unundi $p |- ( A u. ( B u. C ) ) = ( ( A u. B ) u. ( A u. C ) ) $=
-    ( cun unidm uneq1i un4 eqtr3i ) AADZBCDZDAJDABDACDDIAJAEFAABCGH $.
-
-  $( Union distributes over itself.  (Contributed by NM, 17-Aug-2004.) $)
-  unundir $p |- ( ( A u. B ) u. C ) = ( ( A u. C ) u. ( B u. C ) ) $=
-    ( cun unidm uneq2i un4 eqtr3i ) ABDZCCDZDICDACDBCDDJCICEFABCCGH $.
-
-  ${
-    $d x A $.  $d x B $.
-    $( Subclass relationship for union of classes.  Theorem 25 of [Suppes]
-       p. 27.  (Contributed by NM, 5-Aug-1993.) $)
-    ssun1 $p |- A C_ ( A u. B ) $=
-      ( vx cun cv wcel wo orc elun sylibr ssriv ) CAABDZCEZAFZNMBFZGMLFNOHMABIJ
-      K $.
-  $}
-
-  $( Subclass relationship for union of classes.  (Contributed by NM,
-     30-Aug-1993.) $)
-  ssun2 $p |- A C_ ( B u. A ) $=
-    ( cun ssun1 uncom sseqtri ) AABCBACABDABEF $.
-
-  $( Subclass law for union of classes.  (Contributed by NM, 5-Aug-1993.) $)
-  ssun3 $p |- ( A C_ B -> A C_ ( B u. C ) ) $=
-    ( wss cun ssun1 sstr2 mpi ) ABDBBCEZDAIDBCFABIGH $.
-
-  $( Subclass law for union of classes.  (Contributed by NM, 14-Aug-1994.) $)
-  ssun4 $p |- ( A C_ B -> A C_ ( C u. B ) ) $=
-    ( wss cun ssun2 sstr2 mpi ) ABDBCBEZDAIDBCFABIGH $.
-
-  $( Membership law for union of classes.  (Contributed by NM, 5-Aug-1993.) $)
-  elun1 $p |- ( A e. B -> A e. ( B u. C ) ) $=
-    ( cun ssun1 sseli ) BBCDABCEF $.
-
-  $( Membership law for union of classes.  (Contributed by NM, 30-Aug-1993.) $)
-  elun2 $p |- ( A e. B -> A e. ( C u. B ) ) $=
-    ( cun ssun2 sseli ) BCBDABCEF $.
-
-  $( A statement is true for every element of the union of a pair of classes if
-     and only if it is true for every element of the first class and for every
-     element of the second class.  (Contributed by BTernaryTau,
-     27-Sep-2023.) $)
-  elunant $p |- ( ( C e. ( A u. B ) -> ph ) <->
-    ( ( C e. A -> ph ) /\ ( C e. B -> ph ) ) ) $=
-    ( cun wcel wi wo wa elun imbi1i jaob bitri ) DBCEFZAGDBFZDCFZHZAGOAGPAGINQA
-    DBCJKOAPLM $.
-
-  ${
-    $d x A $.  $d x B $.  $d x C $.
-    $( Subclass law for union of classes.  (Contributed by NM, 14-Oct-1999.)
-       (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
-    unss1 $p |- ( A C_ B -> ( A u. C ) C_ ( B u. C ) ) $=
-      ( vx wss cun cv wcel wo ssel orim1d elun 3imtr4g ssrdv ) ABEZDACFZBCFZODG
-      ZAHZRCHZIRBHZTIRPHRQHOSUATABRJKRACLRBCLMN $.
-
-    $( A relationship between subclass and union.  Theorem 26 of [Suppes]
-       p. 27.  (Contributed by NM, 30-Aug-1993.)  (Proof shortened by Andrew
-       Salmon, 26-Jun-2011.) $)
-    ssequn1 $p |- ( A C_ B <-> ( A u. B ) = B ) $=
-      ( vx cv wcel wi wal cun wb wceq wo bicom pm4.72 elun bibi1i 3bitr4i albii
-      wss df-ss dfcleq ) CDZAEZUABEZFZCGUAABHZEZUCIZCGABRUEBJUDUGCUCUBUCKZIUHUC
-      IUDUGUCUHLUBUCMUFUHUCUAABNOPQCABSCUEBTP $.
-  $}
-
-  $( Subclass law for union of classes.  Exercise 7 of [TakeutiZaring] p. 18.
-     (Contributed by NM, 14-Oct-1999.) $)
-  unss2 $p |- ( A C_ B -> ( C u. A ) C_ ( C u. B ) ) $=
-    ( wss cun unss1 uncom 3sstr4g ) ABDACEBCECAECBEABCFCAGCBGH $.
-
-  $( Subclass law for union of classes.  (Contributed by NM, 2-Jun-2004.) $)
-  unss12 $p |- ( ( A C_ B /\ C C_ D ) -> ( A u. C ) C_ ( B u. D ) ) $=
-    ( wss cun unss1 unss2 sylan9ss ) ABECDEACFBCFBDFABCGCDBHI $.
-
-  $( A relationship between subclass and union.  (Contributed by NM,
-     13-Jun-1994.) $)
-  ssequn2 $p |- ( A C_ B <-> ( B u. A ) = B ) $=
-    ( wss cun wceq ssequn1 uncom eqeq1i bitri ) ABCABDZBEBADZBEABFJKBABGHI $.
-
-  ${
-    $d x A $.  $d x B $.  $d x C $.
-    $( The union of two subclasses is a subclass.  Theorem 27 of [Suppes] p. 27
-       and its converse.  (Contributed by NM, 11-Jun-2004.) $)
-    unss $p |- ( ( A C_ C /\ B C_ C ) <-> ( A u. B ) C_ C ) $=
-      ( vx cun wss cv wcel wi wal wa df-ss 19.26 elunant anbi12i 3bitr4i bitr2i
-      albii ) ABEZCFDGZSHTCHZIZDJZACFZBCFZKZDSCLTAHUAIZTBHUAIZKZDJUGDJZUHDJZKUC
-      UFUGUHDMUBUIDUAABTNRUDUJUEUKDACLDBCLOPQ $.
-  $}
-
-  ${
-    unssi.1 $e |- A C_ C $.
-    unssi.2 $e |- B C_ C $.
-    $( An inference showing the union of two subclasses is a subclass.
-       (Contributed by Raph Levien, 10-Dec-2002.) $)
-    unssi $p |- ( A u. B ) C_ C $=
-      ( wss wa cun pm3.2i unss mpbi ) ACFZBCFZGABHCFLMDEIABCJK $.
-  $}
-
-  ${
-    unssd.1 $e |- ( ph -> A C_ C ) $.
-    unssd.2 $e |- ( ph -> B C_ C ) $.
-    $( A deduction showing the union of two subclasses is a subclass.
-       (Contributed by Jonathan Ben-Naim, 3-Jun-2011.) $)
-    unssd $p |- ( ph -> ( A u. B ) C_ C ) $=
-      ( wss cun wa unss biimpi syl2anc ) ABDGZCDGZBCHDGZEFMNIOBCDJKL $.
-  $}
-
-  ${
-    unssad.1 $e |- ( ph -> ( A u. B ) C_ C ) $.
-    $( If ` ( A u. B ) ` is contained in ` C ` , so is ` A ` .  One-way
-       deduction form of ~ unss .  Partial converse of ~ unssd .  (Contributed
-       by David Moews, 1-May-2017.) $)
-    unssad $p |- ( ph -> A C_ C ) $=
-      ( wss cun wa unss sylibr simpld ) ABDFZCDFZABCGDFLMHEBCDIJK $.
-
-    $( If ` ( A u. B ) ` is contained in ` C ` , so is ` B ` .  One-way
-       deduction form of ~ unss .  Partial converse of ~ unssd .  (Contributed
-       by David Moews, 1-May-2017.) $)
-    unssbd $p |- ( ph -> B C_ C ) $=
-      ( wss cun wa unss sylibr simprd ) ABDFZCDFZABCGDFLMHEBCDIJK $.
-  $}
-
-  $( A condition that implies inclusion in the union of two classes.
-     (Contributed by NM, 23-Nov-2003.) $)
-  ssun $p |- ( ( A C_ B \/ A C_ C ) -> A C_ ( B u. C ) ) $=
-    ( wss cun ssun3 ssun4 jaoi ) ABDABCEDACDABCFACBGH $.
-
-  $( Restricted existential quantification over union.  (Contributed by Jeff
-     Madsen, 5-Jan-2011.) $)
-  rexun $p |- ( E. x e. ( A u. B ) ph <->
-                          ( E. x e. A ph \/ E. x e. B ph ) ) $=
-    ( cun wrex cv wcel wa wo df-rex 19.43 elun anbi1i andir bitri exbii orbi12i
-    wex 3bitr4i ) ABCDEZFBGZUAHZAIZBSZABCFZABDFZJZABUAKUBCHZAIZUBDHZAIZJZBSUJBS
-    ZULBSZJUEUHUJULBLUDUMBUDUIUKJZAIUMUCUPAUBCDMNUIUKAOPQUFUNUGUOABCKABDKRTP $.
-
-  $( Restricted quantification over a union.  (Contributed by Scott Fenton,
-     12-Apr-2011.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.) $)
-  ralunb $p |- ( A. x e. ( A u. B ) ph <->
-                 ( A. x e. A ph /\ A. x e. B ph ) ) $=
-    ( cv cun wcel wi wal wral elunant albii 19.26 bitri df-ral anbi12i 3bitr4i
-    wa ) BEZCDFZGAHZBIZSCGAHZBIZSDGAHZBIZRZABTJABCJZABDJZRUBUCUERZBIUGUAUJBACDS
-    KLUCUEBMNABTOUHUDUIUFABCOABDOPQ $.
-
-  $( Restricted quantification over union.  (Contributed by Jeff Madsen,
-     2-Sep-2009.) $)
-  ralun $p |- ( ( A. x e. A ph /\ A. x e. B ph ) -> A. x e. ( A u. B ) ph ) $=
-    ( cun wral wa ralunb biimpri ) ABCDEFABCFABDFGABCDHI $.
-
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
   The intersection of two classes
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
+
+  $c i^i $.  $( Token for the intersection of two classes. $)
+
+  $( Syntax for the intersection of two classes. $)
+  cin $a class ( A i^i B ) $.
+  ${
+    $d x A $.  $d x B $.  $d y A $.  $d y B $.  $d z x $.  $d z y $.  $d z A $.
+    $d z B $.
+    $( Soundness justification theorem for ~ df-in .  (Contributed by Rodolfo
+       Medina, 28-Apr-2010.)  (Proof shortened by Andrew Salmon,
+       9-Jul-2011.) $)
+    injust $p |- { x | ( x e. A /\ x e. B ) }
+               = { y | ( y e. A /\ y e. B ) } $=
+      ( vz cv wcel wa cab weq eleq1w anbi12d cbvabv eqtri ) AFZCGZODGZHZAIEFZCG
+      ZSDGZHZEIBFZCGZUCDGZHZBIRUBAEAEJPTQUAAECKAEDKLMUBUFEBEBJTUDUAUEEBCKEBDKLM
+      N $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Define the intersection of two classes.  Definition 5.6 of
+       [TakeutiZaring] p. 16.  For example,
+       ` ( { 1 , 3 } i^i { 1 , 8 } ) = { 1 } ` ( ~ ex-in ).  Contrast this
+       operation with union ` ( A u. B ) ` ( ~ df-un ) and difference
+       ` ( A \ B ) ` ( ~ df-dif ).  For alternate definitions in terms of class
+       difference, requiring no dummy variables, see ~ dfin2 and ~ dfin4 .  For
+       intersection defined in terms of union, see ~ dfin3 .  (Contributed by
+       NM, 29-Apr-1994.) $)
+    df-in $a |- ( A i^i B ) = { x | ( x e. A /\ x e. B ) } $.
+
+    $( Alternate definition for the intersection of two classes.  (Contributed
+       by NM, 6-Jul-2005.) $)
+    dfin5 $p |- ( A i^i B ) = { x e. A | x e. B } $=
+      ( cin cv wcel wa cab crab df-in df-rab eqtr4i ) BCDAEZBFMCFZGAHNABIABCJNA
+      BKL $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( Expansion of membership in an intersection of two classes.  Theorem 12
+       of [Suppes] p. 25.  (Contributed by NM, 29-Apr-1994.) $)
+    elin $p |- ( A e. ( B i^i C ) <-> ( A e. B /\ A e. C ) ) $=
+      ( vx cin wcel wa elex adantl cv wceq eleq1 anbi12d df-in elab2g pm5.21nii
+      cvv ) ABCEZFAQFZABFZACFZGZARHUASTACHIDJZBFZUCCFZGUBDARQUCAKUDTUEUAUCABLUC
+      ACLMDBCNOP $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Alternate definition of the subclass relationship between two classes.
+       Exercise 9 of [TakeutiZaring] p. 18.  This was the original definition
+       before ~ df-ss .  (Contributed by NM, 27-Apr-1994.)  Revise ~ df-ss .
+       (Revised by GG, 15-May-2025.) $)
+    dfss2 $p |- ( A C_ B <-> ( A i^i B ) = A ) $=
+      ( vy vx cv wcel wa cab wb wal cin wss dfcleq df-in eqeq1i wi df-ss eleq1w
+      wceq bitri simp2 3expib impbid dfbi2 pm2.21 pm3.4 ja simplbiim impbii wsb
+      ancl df-clab weq anbi12d sbievw bitr2i bibi1i albii 3bitr4ri ) CEZAFZUTBF
+      ZGZCHZASDEZVDFZVEAFZIZDJZABKZASABLZDVDAMVJVDACABNOVKVGVEBFZPZDJVIDABQVMVH
+      DVMVGVLGZVGIZVHVMVOVMVNVGVMVGVLVGVMVGVLUAUBVGVLUKUCVOVNVGPVGVNPVMVNVGUDVG
+      VNVMVGVLUEVGVLUFUGUHUIVNVFVGVFVCCDUJVNVCDCULVCVNCDCDUMVAVGVBVLCDARCDBRUNU
+      OUPUQTURTUS $.
+    $( $j usage 'dfss2' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+  $}
+
+  $( Variant of subclass definition ~ dfss2 .  (Contributed by NM,
+     21-Jun-1993.) $)
+  dfss $p |- ( A C_ B <-> A = ( A i^i B ) ) $=
+    ( wss cin wceq dfss2 eqcom bitri ) ABCABDZAEAIEABFIAGH $.
 
   ${
     elini.1 $e |- A e. B $.
@@ -40011,6 +39653,355 @@ $)
       ( wss cin wceq cv wcel crab dfss2 dfin5 ineqcomi eqeq1i bitri ) CBDCBEZCF
       AGCHABIZCFCBJOPCBCPABCKLMN $.
   $}
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  The union of two classes
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $c u. $.  $( Token for the union of two classes. $)
+
+  $( Syntax for the union of two classes. $)
+  cun $a class ( A u. B ) $.
+
+  ${
+    $d x A $.  $d x B $.  $d y A $.  $d y B $.  $d z x $.  $d z y $.  $d z A $.
+    $d z B $.
+    $( Soundness justification theorem for ~ df-un .  (Contributed by Rodolfo
+       Medina, 28-Apr-2010.)  (Proof shortened by Andrew Salmon,
+       9-Jul-2011.) $)
+    unjust $p |- { x | ( x e. A \/ x e. B ) } = { y | ( y e. A \/ y e. B ) } $=
+      ( vz cv wcel wo cab weq eleq1w orbi12d cbvabv eqtri ) AFZCGZODGZHZAIEFZCG
+      ZSDGZHZEIBFZCGZUCDGZHZBIRUBAEAEJPTQUAAECKAEDKLMUBUFEBEBJTUDUAUEEBCKEBDKLM
+      N $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Define the union of two classes.  Definition 5.6 of [TakeutiZaring]
+       p. 16.  For example, ` ( { 1 , 3 } u. { 1 , 8 } ) = { 1 , 3 , 8 } `
+       ( ~ ex-un ).  Contrast this operation with difference ` ( A \ B ) `
+       ( ~ df-dif ) and intersection ` ( A i^i B ) ` ( ~ df-in ).  For an
+       alternate definition in terms of class difference, requiring no dummy
+       variables, see ~ dfun2 .  For union defined in terms of intersection,
+       see ~ dfun3 .  (Contributed by NM, 23-Aug-1993.) $)
+    df-un $a |- ( A u. B ) = { x | ( x e. A \/ x e. B ) } $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( Expansion of membership in class union.  Theorem 12 of [Suppes] p. 25.
+       (Contributed by NM, 7-Aug-1994.) $)
+    elun $p |- ( A e. ( B u. C ) <-> ( A e. B \/ A e. C ) ) $=
+      ( vx cun wcel cvv wo elex jaoi wceq eleq1 orbi12d df-un elab2g pm5.21nii
+      cv ) ABCEZFAGFZABFZACFZHZARITSUAABIACIJDQZBFZUCCFZHUBDARGUCAKUDTUEUAUCABL
+      UCACLMDBCNOP $.
+  $}
+
+  $( A member of a union that is not a member of the first class, is a member
+     of the second class.  (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
+  elunnel1 $p |- ( ( A e. ( B u. C ) /\ -. A e. B ) -> A e. C ) $=
+    ( cun wcel wo elun biimpi orcanai ) ABCDEZABEZACEZJKLFABCGHI $.
+
+  $( A member of a union that is not a member of the second class, is a member
+     of the first class.  (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
+  elunnel2 $p |- ( ( A e. ( B u. C ) /\ -. A e. C ) -> A e. B ) $=
+    ( cun wcel wo elun biimpi orcomd orcanai ) ABCDEZACEZABEZKMLKMLFABCGHIJ $.
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    uneqri.1 $e |- ( ( x e. A \/ x e. B ) <-> x e. C ) $.
+    $( Inference from membership to union.  (Contributed by NM,
+       21-Jun-1993.) $)
+    uneqri $p |- ( A u. B ) = C $=
+      ( cun cv wcel wo elun bitri eqriv ) ABCFZDAGZMHNBHNCHINDHNBCJEKL $.
+  $}
+
+  ${
+    $d x A $.
+    $( Idempotent law for union of classes.  Theorem 23 of [Suppes] p. 27.
+       (Contributed by NM, 21-Jun-1993.) $)
+    unidm $p |- ( A u. A ) = A $=
+      ( vx cv wcel oridm uneqri ) BAAABCADEF $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Commutative law for union of classes.  Exercise 6 of [TakeutiZaring]
+       p. 17.  (Contributed by NM, 25-Jun-1998.)  (Proof shortened by Andrew
+       Salmon, 26-Jun-2011.) $)
+    uncom $p |- ( A u. B ) = ( B u. A ) $=
+      ( vx cun cv wcel wo orcom elun bitr4i uneqri ) CABBADZCEZAFZMBFZGONGMLFNO
+      HMBAIJK $.
+  $}
+
+  $( If a class equals the union of two other classes, then it equals the union
+     of those two classes commuted. ~ equncom was automatically derived from
+     ~ equncomVD using the tools program translate__without__overwriting.cmd
+     and minimizing.  (Contributed by Alan Sare, 18-Feb-2012.) $)
+  equncom $p |- ( A = ( B u. C ) <-> A = ( C u. B ) ) $=
+    ( cun uncom eqeq2i ) BCDCBDABCEF $.
+
+  ${
+    equncomi.1 $e |- A = ( B u. C ) $.
+    $( Inference form of ~ equncom . ~ equncomi was automatically derived from
+       ~ equncomiVD using the tools program translate__without__overwriting.cmd
+       and minimizing.  (Contributed by Alan Sare, 18-Feb-2012.) $)
+    equncomi $p |- A = ( C u. B ) $=
+      ( cun wceq equncom mpbi ) ABCEFACBEFDABCGH $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Equality theorem for the union of two classes.  (Contributed by NM,
+       15-Jul-1993.) $)
+    uneq1 $p |- ( A = B -> ( A u. C ) = ( B u. C ) ) $=
+      ( vx wceq cun cv wcel wo eleq2 orbi1d elun 3bitr4g eqrdv ) ABEZDACFZBCFZO
+      DGZAHZRCHZIRBHZTIRPHRQHOSUATABRJKRACLRBCLMN $.
+  $}
+
+  $( Equality theorem for the union of two classes.  (Contributed by NM,
+     5-Aug-1993.) $)
+  uneq2 $p |- ( A = B -> ( C u. A ) = ( C u. B ) ) $=
+    ( wceq cun uneq1 uncom 3eqtr4g ) ABDACEBCECAECBEABCFCAGCBGH $.
+
+  $( Equality theorem for the union of two classes.  (Contributed by NM,
+     29-Mar-1998.) $)
+  uneq12 $p |- ( ( A = B /\ C = D ) -> ( A u. C ) = ( B u. D ) ) $=
+    ( wceq cun uneq1 uneq2 sylan9eq ) ABECDEACFBCFBDFABCGCDBHI $.
+
+  ${
+    uneq1i.1 $e |- A = B $.
+    $( Inference adding union to the right in a class equality.  (Contributed
+       by NM, 30-Aug-1993.) $)
+    uneq1i $p |- ( A u. C ) = ( B u. C ) $=
+      ( wceq cun uneq1 ax-mp ) ABEACFBCFEDABCGH $.
+
+    $( Inference adding union to the left in a class equality.  (Contributed by
+       NM, 30-Aug-1993.) $)
+    uneq2i $p |- ( C u. A ) = ( C u. B ) $=
+      ( wceq cun uneq2 ax-mp ) ABECAFCBFEDABCGH $.
+
+    ${
+      uneq12i.2 $e |- C = D $.
+      $( Equality inference for the union of two classes.  (Contributed by NM,
+         12-Aug-2004.)  (Proof shortened by Eric Schmidt, 26-Jan-2007.) $)
+      uneq12i $p |- ( A u. C ) = ( B u. D ) $=
+        ( wceq cun uneq12 mp2an ) ABGCDGACHBDHGEFABCDIJ $.
+    $}
+  $}
+
+  ${
+    uneq1d.1 $e |- ( ph -> A = B ) $.
+    $( Deduction adding union to the right in a class equality.  (Contributed
+       by NM, 29-Mar-1998.) $)
+    uneq1d $p |- ( ph -> ( A u. C ) = ( B u. C ) ) $=
+      ( wceq cun uneq1 syl ) ABCFBDGCDGFEBCDHI $.
+
+    $( Deduction adding union to the left in a class equality.  (Contributed by
+       NM, 29-Mar-1998.) $)
+    uneq2d $p |- ( ph -> ( C u. A ) = ( C u. B ) ) $=
+      ( wceq cun uneq2 syl ) ABCFDBGDCGFEBCDHI $.
+
+    ${
+      uneq12d.2 $e |- ( ph -> C = D ) $.
+      $( Equality deduction for the union of two classes.  (Contributed by NM,
+         29-Sep-2004.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+      uneq12d $p |- ( ph -> ( A u. C ) = ( B u. D ) ) $=
+        ( wceq cun uneq12 syl2anc ) ABCHDEHBDICEIHFGBCDEJK $.
+    $}
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.
+    nfun.1 $e |- F/_ x A $.
+    nfun.2 $e |- F/_ x B $.
+    $( Bound-variable hypothesis builder for the union of classes.
+       (Contributed by NM, 15-Sep-2003.)  (Revised by Mario Carneiro,
+       14-Oct-2016.)  Avoid ~ ax-10 , ~ ax-11 , ~ ax-12 .  (Revised by SN,
+       14-May-2025.) $)
+    nfun $p |- F/_ x ( A u. B ) $=
+      ( vy cun cv wcel wo elun nfcri nfor nfxfr nfci ) AFBCGZFHZPIQBIZQCIZJAQBC
+      KRSAAFBDLAFCELMNO $.
+    $( $j usage 'nfun' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( Associative law for union of classes.  Exercise 8 of [TakeutiZaring]
+       p. 17.  (Contributed by NM, 3-May-1994.)  (Proof shortened by Andrew
+       Salmon, 26-Jun-2011.) $)
+    unass $p |- ( ( A u. B ) u. C ) = ( A u. ( B u. C ) ) $=
+      ( vx cun cv wcel wo elun orbi2i orbi1i orass bitr2i 3bitrri uneqri ) DABE
+      ZCABCEZEZDFZRGSAGZSQGZHTSBGZSCGZHZHZSPGZUCHZSAQIUAUDTSBCIJUGTUBHZUCHUEUFU
+      HUCSABIKTUBUCLMNO $.
+  $}
+
+  $( A rearrangement of union.  (Contributed by NM, 12-Aug-2004.) $)
+  un12 $p |- ( A u. ( B u. C ) ) = ( B u. ( A u. C ) ) $=
+    ( cun uncom uneq1i unass 3eqtr3i ) ABDZCDBADZCDABCDDBACDDIJCABEFABCGBACGH
+    $.
+
+  $( A rearrangement of union.  (Contributed by NM, 12-Aug-2004.)  (Proof
+     shortened by Andrew Salmon, 26-Jun-2011.) $)
+  un23 $p |- ( ( A u. B ) u. C ) = ( ( A u. C ) u. B ) $=
+    ( cun unass un12 uncom 3eqtri ) ABDCDABCDDBACDZDIBDABCEABCFBIGH $.
+
+  $( A rearrangement of the union of 4 classes.  (Contributed by NM,
+     12-Aug-2004.) $)
+  un4 $p |- ( ( A u. B ) u. ( C u. D ) ) =
+            ( ( A u. C ) u. ( B u. D ) ) $=
+    ( cun un12 uneq2i unass 3eqtr4i ) ABCDEZEZEACBDEZEZEABEJEACELEKMABCDFGABJHA
+    CLHI $.
+
+  $( Union distributes over itself.  (Contributed by NM, 17-Aug-2004.) $)
+  unundi $p |- ( A u. ( B u. C ) ) = ( ( A u. B ) u. ( A u. C ) ) $=
+    ( cun unidm uneq1i un4 eqtr3i ) AADZBCDZDAJDABDACDDIAJAEFAABCGH $.
+
+  $( Union distributes over itself.  (Contributed by NM, 17-Aug-2004.) $)
+  unundir $p |- ( ( A u. B ) u. C ) = ( ( A u. C ) u. ( B u. C ) ) $=
+    ( cun unidm uneq2i un4 eqtr3i ) ABDZCCDZDICDACDBCDDJCICEFABCCGH $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( Subclass relationship for union of classes.  Theorem 25 of [Suppes]
+       p. 27.  (Contributed by NM, 5-Aug-1993.) $)
+    ssun1 $p |- A C_ ( A u. B ) $=
+      ( vx cun cv wcel wo orc elun sylibr ssriv ) CAABDZCEZAFZNMBFZGMLFNOHMABIJ
+      K $.
+  $}
+
+  $( Subclass relationship for union of classes.  (Contributed by NM,
+     30-Aug-1993.) $)
+  ssun2 $p |- A C_ ( B u. A ) $=
+    ( cun ssun1 uncom sseqtri ) AABCBACABDABEF $.
+
+  $( Subclass law for union of classes.  (Contributed by NM, 5-Aug-1993.) $)
+  ssun3 $p |- ( A C_ B -> A C_ ( B u. C ) ) $=
+    ( wss cun ssun1 sstr2 mpi ) ABDBBCEZDAIDBCFABIGH $.
+
+  $( Subclass law for union of classes.  (Contributed by NM, 14-Aug-1994.) $)
+  ssun4 $p |- ( A C_ B -> A C_ ( C u. B ) ) $=
+    ( wss cun ssun2 sstr2 mpi ) ABDBCBEZDAIDBCFABIGH $.
+
+  $( Membership law for union of classes.  (Contributed by NM, 5-Aug-1993.) $)
+  elun1 $p |- ( A e. B -> A e. ( B u. C ) ) $=
+    ( cun ssun1 sseli ) BBCDABCEF $.
+
+  $( Membership law for union of classes.  (Contributed by NM, 30-Aug-1993.) $)
+  elun2 $p |- ( A e. B -> A e. ( C u. B ) ) $=
+    ( cun ssun2 sseli ) BCBDABCEF $.
+
+  $( A statement is true for every element of the union of a pair of classes if
+     and only if it is true for every element of the first class and for every
+     element of the second class.  (Contributed by BTernaryTau,
+     27-Sep-2023.) $)
+  elunant $p |- ( ( C e. ( A u. B ) -> ph ) <->
+    ( ( C e. A -> ph ) /\ ( C e. B -> ph ) ) ) $=
+    ( cun wcel wi wo wa elun imbi1i jaob bitri ) DBCEFZAGDBFZDCFZHZAGOAGPAGINQA
+    DBCJKOAPLM $.
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Subclass law for union of classes.  (Contributed by NM, 14-Oct-1999.)
+       (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    unss1 $p |- ( A C_ B -> ( A u. C ) C_ ( B u. C ) ) $=
+      ( vx wss cun cv wcel wo ssel orim1d elun 3imtr4g ssrdv ) ABEZDACFZBCFZODG
+      ZAHZRCHZIRBHZTIRPHRQHOSUATABRJKRACLRBCLMN $.
+
+    $( A relationship between subclass and union.  Theorem 26 of [Suppes]
+       p. 27.  (Contributed by NM, 30-Aug-1993.)  (Proof shortened by Andrew
+       Salmon, 26-Jun-2011.) $)
+    ssequn1 $p |- ( A C_ B <-> ( A u. B ) = B ) $=
+      ( vx cv wcel wi wal cun wb wceq wo bicom pm4.72 elun bibi1i 3bitr4i albii
+      wss df-ss dfcleq ) CDZAEZUABEZFZCGUAABHZEZUCIZCGABRUEBJUDUGCUCUBUCKZIUHUC
+      IUDUGUCUHLUBUCMUFUHUCUAABNOPQCABSCUEBTP $.
+  $}
+
+  $( Subclass law for union of classes.  Exercise 7 of [TakeutiZaring] p. 18.
+     (Contributed by NM, 14-Oct-1999.) $)
+  unss2 $p |- ( A C_ B -> ( C u. A ) C_ ( C u. B ) ) $=
+    ( wss cun unss1 uncom 3sstr4g ) ABDACEBCECAECBEABCFCAGCBGH $.
+
+  $( Subclass law for union of classes.  (Contributed by NM, 2-Jun-2004.) $)
+  unss12 $p |- ( ( A C_ B /\ C C_ D ) -> ( A u. C ) C_ ( B u. D ) ) $=
+    ( wss cun unss1 unss2 sylan9ss ) ABECDEACFBCFBDFABCGCDBHI $.
+
+  $( A relationship between subclass and union.  (Contributed by NM,
+     13-Jun-1994.) $)
+  ssequn2 $p |- ( A C_ B <-> ( B u. A ) = B ) $=
+    ( wss cun wceq ssequn1 uncom eqeq1i bitri ) ABCABDZBEBADZBEABFJKBABGHI $.
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( The union of two subclasses is a subclass.  Theorem 27 of [Suppes] p. 27
+       and its converse.  (Contributed by NM, 11-Jun-2004.) $)
+    unss $p |- ( ( A C_ C /\ B C_ C ) <-> ( A u. B ) C_ C ) $=
+      ( vx cun wss cv wcel wi wal wa df-ss 19.26 elunant anbi12i 3bitr4i bitr2i
+      albii ) ABEZCFDGZSHTCHZIZDJZACFZBCFZKZDSCLTAHUAIZTBHUAIZKZDJUGDJZUHDJZKUC
+      UFUGUHDMUBUIDUAABTNRUDUJUEUKDACLDBCLOPQ $.
+  $}
+
+  ${
+    unssi.1 $e |- A C_ C $.
+    unssi.2 $e |- B C_ C $.
+    $( An inference showing the union of two subclasses is a subclass.
+       (Contributed by Raph Levien, 10-Dec-2002.) $)
+    unssi $p |- ( A u. B ) C_ C $=
+      ( wss wa cun pm3.2i unss mpbi ) ACFZBCFZGABHCFLMDEIABCJK $.
+  $}
+
+  ${
+    unssd.1 $e |- ( ph -> A C_ C ) $.
+    unssd.2 $e |- ( ph -> B C_ C ) $.
+    $( A deduction showing the union of two subclasses is a subclass.
+       (Contributed by Jonathan Ben-Naim, 3-Jun-2011.) $)
+    unssd $p |- ( ph -> ( A u. B ) C_ C ) $=
+      ( wss cun wa unss biimpi syl2anc ) ABDGZCDGZBCHDGZEFMNIOBCDJKL $.
+  $}
+
+  ${
+    unssad.1 $e |- ( ph -> ( A u. B ) C_ C ) $.
+    $( If ` ( A u. B ) ` is contained in ` C ` , so is ` A ` .  One-way
+       deduction form of ~ unss .  Partial converse of ~ unssd .  (Contributed
+       by David Moews, 1-May-2017.) $)
+    unssad $p |- ( ph -> A C_ C ) $=
+      ( wss cun wa unss sylibr simpld ) ABDFZCDFZABCGDFLMHEBCDIJK $.
+
+    $( If ` ( A u. B ) ` is contained in ` C ` , so is ` B ` .  One-way
+       deduction form of ~ unss .  Partial converse of ~ unssd .  (Contributed
+       by David Moews, 1-May-2017.) $)
+    unssbd $p |- ( ph -> B C_ C ) $=
+      ( wss cun wa unss sylibr simprd ) ABDFZCDFZABCGDFLMHEBCDIJK $.
+  $}
+
+  $( A condition that implies inclusion in the union of two classes.
+     (Contributed by NM, 23-Nov-2003.) $)
+  ssun $p |- ( ( A C_ B \/ A C_ C ) -> A C_ ( B u. C ) ) $=
+    ( wss cun ssun3 ssun4 jaoi ) ABDABCEDACDABCFACBGH $.
+
+  $( Restricted existential quantification over union.  (Contributed by Jeff
+     Madsen, 5-Jan-2011.) $)
+  rexun $p |- ( E. x e. ( A u. B ) ph <->
+                          ( E. x e. A ph \/ E. x e. B ph ) ) $=
+    ( cun wrex cv wcel wa wo df-rex 19.43 elun anbi1i andir bitri exbii orbi12i
+    wex 3bitr4i ) ABCDEZFBGZUAHZAIZBSZABCFZABDFZJZABUAKUBCHZAIZUBDHZAIZJZBSUJBS
+    ZULBSZJUEUHUJULBLUDUMBUDUIUKJZAIUMUCUPAUBCDMNUIUKAOPQUFUNUGUOABCKABDKRTP $.
+
+  $( Restricted quantification over a union.  (Contributed by Scott Fenton,
+     12-Apr-2011.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.) $)
+  ralunb $p |- ( A. x e. ( A u. B ) ph <->
+                 ( A. x e. A ph /\ A. x e. B ph ) ) $=
+    ( cv cun wcel wi wal wral elunant albii 19.26 bitri df-ral anbi12i 3bitr4i
+    wa ) BEZCDFZGAHZBIZSCGAHZBIZSDGAHZBIZRZABTJABCJZABDJZRUBUCUERZBIUGUAUJBACDS
+    KLUCUEBMNABTOUHUDUIUFABCOABDOPQ $.
+
+  $( Restricted quantification over union.  (Contributed by Jeff Madsen,
+     2-Sep-2009.) $)
+  ralun $p |- ( ( A. x e. A ph /\ A. x e. B ph ) -> A. x e. ( A u. B ) ph ) $=
+    ( cun wral wa ralunb biimpri ) ABCDEFABCFABDFGABCDHI $.
 
 
 $(
@@ -290602,16 +290593,16 @@ $)
        29-Dec-2014.) $)
     psrring $p |- ( ph -> S e. Ring ) $=
       ( vx vy vz vr vf cfv cv wcel eqidd w3a eqid adantr cplusg cmulr ccnv cima
-      cbs cn cfn cn0 cmap co crab cc0 csn cxp wceq cur c0g cif cmpt crg ringgrp
-      cgrp psrgrp 3ad2ant1 simp2 simp3 psrmulcl wa simpr1 simpr2 simpr3 psrass1
-      syl psrdi psrdir psr1cl simpr psrlidm psrridm isringd ) AIJKCUENZCUANZCCU
-      BNZLMOUCUFUDUGPMUHDUIUJUKZLODULUMUNUOBUPNZBUQNZURUSZAWAQAWBQAWCQABCDEFGAB
-      UTPZBVBPHBVAVMVCAIOZWAPZJOZWAPZRWABCWCDWIWKFWASZWCSZAWJWHWLHVDAWJWLVEAWJW
-      LVFVGAWJWLKOZWAPZRZVHZWAWDBCWCMDEWIWKWOFADEPZWQGTZAWHWQHTZWDSZWNWMAWJWLWP
-      VIZAWJWLWPVJZAWJWLWPVKZVLWRWAWDWBBCWCMDEWIWKWOFWTXAXBWNWMXCXDXEWBSZVNWRWA
-      WDWBBCWCMDEWIWKWOFWTXAXBWNWMXCXDXEXFVOALWAWDBCWGWEMDEWFFGHXBWFSZWESZWGSZW
-      MVPAWJVHZLWAWDBCWCWGWEMDEWIWFFAWSWJGTZAWHWJHTZXBXGXHXIWMWNAWJVQZVRXJLWAWD
-      BCWCWGWEMDEWIWFFXKXLXBXGXHXIWMWNXMVSVT $.
+      cbs cn cfn cn0 cmap co crab cc0 csn cxp wceq cur c0g cmpt ringgrpd psrgrp
+      cif crg 3ad2ant1 simp2 simp3 psrmulcl simpr1 simpr2 simpr3 psrass1 psrdir
+      wa psrdi psr1cl simpr psrlidm psrridm isringd ) AIJKCUENZCUANZCCUBNZLMOUC
+      UFUDUGPMUHDUIUJUKZLODULUMUNUOBUPNZBUQNZVAURZAVSQAVTQAWAQABCDEFGABHUSUTAIO
+      ZVSPZJOZVSPZRVSBCWADWFWHFVSSZWASZAWGBVBPZWIHVCAWGWIVDAWGWIVEVFAWGWIKOZVSP
+      ZRZVLZVSWBBCWAMDEWFWHWMFADEPZWOGTZAWLWOHTZWBSZWKWJAWGWIWNVGZAWGWIWNVHZAWG
+      WIWNVIZVJWPVSWBVTBCWAMDEWFWHWMFWRWSWTWKWJXAXBXCVTSZVMWPVSWBVTBCWAMDEWFWHW
+      MFWRWSWTWKWJXAXBXCXDVKALVSWBBCWEWCMDEWDFGHWTWDSZWCSZWESZWJVNAWGVLZLVSWBBC
+      WAWEWCMDEWFWDFAWQWGGTZAWLWGHTZWTXEXFXGWJWKAWGVOZVPXHLVSWBBCWAWEWCMDEWFWDF
+      XIXJWTXEXFXGWJWKXKVQVR $.
 
     psr1.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
     psr1.z $e |- .0. = ( 0g ` R ) $.
@@ -514673,6 +514664,1922 @@ $)
       (  ) B $.
   $}
 
+
+$( Begin $[ set-mbox-jag.mm $] $)
+$( Skip $[ set-main.mm $] $)
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Mathbox for Jorge Agra
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+$( Exterior-angle theorem and AAS congruence in Tarski geometry.
+
+   The main results are the exterior-angle theorem ~ tgexta and the AAS
+   triangle congruence criterion ~ tgaas .  The sections below, in order:
+   consequences of triangle non-collinearity; congruence of degenerate angles
+   and in-angle transport across an angle congruence; angle order ( ` leA ` )
+   and its behavior under congruence; the exterior-angle theorem; and the AAS
+   assembly.
+
+   set.mm has no strict angle order, so "strictly less than" is expressed as
+   ` leA ` together with the negation of ` cgrA ` . $)
+
+
+$( Consequences of triangle non-collinearity: vertex inequalities, the
+   dimension condition, and non-collinearity transported across an angle
+   congruence. $)
+
+  ${
+    tgacne.p $e |- P = ( Base ` G ) $.
+    tgacne.i $e |- I = ( Itv ` G ) $.
+    tgacne.l $e |- L = ( LineG ` G ) $.
+    tgacne.g $e |- ( ph -> G e. TarskiG ) $.
+    tgacne.a $e |- ( ph -> A e. P ) $.
+    tgacne.b $e |- ( ph -> B e. P ) $.
+    tgacne.c $e |- ( ph -> C e. P ) $.
+    tgacne.ncol $e |- ( ph -> -. ( C e. ( A L B ) \/ A = B ) ) $.
+    $( Non-collinearity of triangle ` A B C ` implies distinct vertices ` A `
+       and ` C ` .  (Contributed by JAG, 12-Aug-2026.) $)
+    tgacne $p |- ( ph -> A =/= C ) $=
+      ( ncolrot1 ncolcom ncolne1 ) AEFGHBDCIJKLMONAEFGHCDBIKJLNOMAEFGHBCDIKJLMN
+      OPQRS $.
+  $}
+
+  ${
+    tgbcne.p $e |- P = ( Base ` G ) $.
+    tgbcne.i $e |- I = ( Itv ` G ) $.
+    tgbcne.l $e |- L = ( LineG ` G ) $.
+    tgbcne.g $e |- ( ph -> G e. TarskiG ) $.
+    tgbcne.a $e |- ( ph -> A e. P ) $.
+    tgbcne.b $e |- ( ph -> B e. P ) $.
+    tgbcne.c $e |- ( ph -> C e. P ) $.
+    tgbcne.ncol $e |- ( ph -> -. ( C e. ( A L B ) \/ A = B ) ) $.
+    $( Non-collinearity of triangle ` A B C ` implies distinct vertices ` B `
+       and ` C ` .  (Contributed by JAG, 12-Aug-2026.) $)
+    tgbcne $p |- ( ph -> B =/= C ) $=
+      ( ncolrot2 ncolne1 ) AEFGHCDBIJKLNOMAEFGHBCDIKJLMNOPQR $.
+  $}
+
+
+$( The remaining degenerate-angle congruence constructor.  Every
+   existing theorem concluding ` cgrA ` either copies an angle onto a
+   non-collinear frame ( ~ acopy , ~ trgcopy ), moves along a ray from an
+   angle already in hand ( ~ cgrahl1 , ~ cgrahl2 ), or is reflexivity,
+   symmetry or transitivity.  Nothing builds a congruence between two
+   null angles out of their degeneracy alone, which is what the null
+   branch of in-angle transport needs; the flat-angle counterpart is
+   ~ flatcgra . $)
+
+  ${
+    $d x ph $.  $d x A $.  $d x B $.  $d x C $.  $d x D $.  $d x E $.
+    $d x F $.  $d x G $.  $d x P $.  $d x I $.  $d x K $.  $d x .- $.
+    $d y ph $.  $d y A $.  $d y B $.  $d y C $.  $d y D $.  $d y E $.
+    $d y F $.  $d y G $.  $d y P $.  $d y I $.  $d y K $.  $d y .- $.
+    $d x y $.
+    cgrahlb.p $e |- P = ( Base ` G ) $.
+    cgrahlb.i $e |- I = ( Itv ` G ) $.
+    cgrahlb.k $e |- K = ( hlG ` G ) $.
+    cgrahlb.m $e |- .- = ( dist ` G ) $.
+    cgrahlb.g $e |- ( ph -> G e. TarskiG ) $.
+    cgrahlb.a $e |- ( ph -> A e. P ) $.
+    cgrahlb.b $e |- ( ph -> B e. P ) $.
+    cgrahlb.c $e |- ( ph -> C e. P ) $.
+    cgrahlb.d $e |- ( ph -> D e. P ) $.
+    cgrahlb.e $e |- ( ph -> E e. P ) $.
+    cgrahlb.f $e |- ( ph -> F e. P ) $.
+    cgrahlb.1 $e |- ( ph -> A ( K ` B ) C ) $.
+    cgrahlb.2 $e |- ( ph -> D ( K ` E ) F ) $.
+    $( Two null angles are congruent: if ` A ` and ` C ` lie on one half-line
+       from ` B ` , and ` D ` and ` F ` on one half-line from ` E ` , then
+       angle ` <" A B C "> ` is congruent to ` <" D E F "> ` .  This is GeoCoq
+       l11__21__b ; set.mm has only the converse, ~ cgrahl (GeoCoq
+       l11__21__a ).  Proved by copying both arms onto the target rays with
+       ~ hlcgrex and closing the third side by segment subtraction
+       ( ~ tgcgrsub2 ), so it needs no non-collinear frame.  (Contributed by
+       JAG, 12-Aug-2026.) $)
+    cgrahlb $p |- ( ph -> <" A B C "> ( cgrA ` G ) <" D E F "> ) $=
+      ( vx vy cv cfv wbr co wceq wa cs3 ccgra cstrkg simplll syl simpllr simplr
+      wcel ccgrg eqid simpr simpld simprd eqcomd tgcgrcomlr cleg wo ishlg mpbid
+      wne simp3d hltr hlcomd tgcgrsub2 trgcgr iscgrad wrex hlne1 necomd hlcgrex
+      w3a hlne2 jca reeanv sylibr r19.29vva ) AUFUHZEGKUIZUJZGWJLUKZCBLUKZULZUM
+      ZUGUHZHWKUJZGWQLUKZCDLUKZULZUMZUMZBCDUNEGHUNIUOUIUJUFUGFFAWJFVAZUMZWQFVAZ
+      UMZXCUMZBCDEFGHIJKWJWQMNOXHAIUPVAAXDXFXCUQZQURZXHABFVAXIRURZXHACFVAXISURZ
+      XHADFVAXITURZXHAEFVAXIUAURZXHAGFVAXIUBURZXHAHFVAXIUCURZAXDXFXCUSZXEXFXCUT
+      ZXHBCDWJFIVBUIZGWQILMPXSVCXJXKXLXMXQXOXRXHCBGWJFIJLMPNXJXLXKXOXQXHWMWNXHW
+      LWOXHWPXBXGXCVDZVEZVFVGZVHXHWSWTXHWRXAXHWPXBXTVFZVFVGZXHBDWJWQFIJLMPNXJXK
+      XMXQXRXHCBDGFWJWQIJIVIUIZLMPNYEVCXJXLXKXMXOXOXQXRXHBCVMZDCVMZBCDJUKVADCBJ
+      UKVAVJZXHBDCKUIUJZYFYGYHWDXHAYIXIUDURXHBDCFIJKUPMNOXKXMXLXJVKVLVNXHWJGVMZ
+      WQGVMZWJGWQJUKVAWQGWJJUKVAVJZXHWJWQWKUJYJYKYLWDXHWJHWQGFIJKMNOXQXPXRXJXOX
+      HWJEHGFIJKMNOXQXNXPXJXOXHWLWOYAVEZXHAEHWKUJXIUEURVOXHWQHGFIJKUPMNOXRXPXOX
+      JXHWRXAYCVEZVPVOXHWJWQGFIJKUPMNOXQXRXOXJVKVLVNYBYDVQVHVRYMYNVSAWPUFFVTZXB
+      UGFVTZUMXCUGFVTUFFVTAYOYPAUFGCBEFIJKLMNOUBSRQUAPAEHGFIJKUPMNOUAUCUBQUEWAA
+      BCABDCFIJKUPMNORTSQUDWAWBWCAUGGCDHFIJKLMNOUBSTQUCPAEHGFIJKUPMNOUAUCUBQUEW
+      EADCABDCFIJKUPMNORTSQUDWEWBWCWFWPXBUFUGFFWGWHWI $.
+  $}
+
+  ${
+    $d x ph $.  $d x P $.  $d x I $.  $d x K $.  $d x G $.  $d x D $.
+    $d x E $.  $d x F $.  $d x W $.  $d x .- $.
+    inagbtwn.p $e |- P = ( Base ` G ) $.
+    inagbtwn.i $e |- I = ( Itv ` G ) $.
+    inagbtwn.k $e |- K = ( hlG ` G ) $.
+    inagbtwn.g $e |- ( ph -> G e. TarskiG ) $.
+    inagbtwn.d $e |- ( ph -> D e. P ) $.
+    inagbtwn.e $e |- ( ph -> E e. P ) $.
+    inagbtwn.f $e |- ( ph -> F e. P ) $.
+    inagbtwn.w $e |- ( ph -> W e. P ) $.
+    inagbtwn.in $e |- ( ph -> W ( inA ` G ) <" D E F "> ) $.
+    inagbtwn.1 $e |- ( ph -> E e. ( D I W ) ) $.
+    $( A flat sub-angle forces the containing angle flat: if ` W ` is inside
+       angle ` <" D E F "> ` and ` E ` lies between ` D ` and ` W ` , then
+       ` E ` lies between ` D ` and ` F ` .  This is GeoCoq
+       bet__in__angle__bet.  Proved by unfolding ~ isinag and following its
+       segment point.  (Contributed by JAG, 12-Aug-2026.) $)
+    inagbtwn $p |- ( ph -> E e. ( D I F ) ) $=
+      ( syl vx cv co wcel wceq cfv wbr wo wa simpl simpr simpld eleq1d cds eqid
+      mpbid cstrkg simpll simplr tgbtwnintr tgbtwncom wne w3a ishlg tgbtwnouttr
+      simp2d necomd simp3d mpjaodan tgbtwnexch simprd wrex cinag isinag r19.29a
+      cs3 ) AUAUBZBEGUCZUDZVQDUEZVQIDHUFUGZUHZUIZDVRUDZUACAVQCUDZUIZWCUIZVTWDWA
+      WGVTUIZVSWDWHWGVSWGVTUJWGVSWBWFWCUKZULZTWHVQDVRWGVTUKUMUPWGWAUIZBDVQECFGF
+      UNUFZJWLUOZKWKWGFUQUDZWGWAUJZWGAWNAWEWCURZMTTZWKWGBCUDZWOWGAWRWPNTTZWKWGD
+      CUDZWOWGAWTWPOTTZWKWGWEWOAWEWCUSTZWKWGECUDZWOWGAXCWPPTTWKVQDIGUCUDZDBVQGU
+      CUDIDVQGUCUDZWKXDUIZVQDBCFGWLJWMKXFWKWNWKXDUJZWQTZXFWKWEXGXBTZXFWKWTXGXAT
+      ZXFWKWRXGWSTZXFVQDBICFGWLJWMKXHXIXJXKXFWKICUDZXGWKWGXLWOWGAXLWPQTTZTWKXDU
+      KXFWKDBIGUCUDZXGWKWGXNWOWGAXNWPSTTZTUTVAWKXEUIZBDIVQCFGWLJWMKXPWKWNWKXEUJ
+      ZWQTXPWKWRXQWSTXPWKWTXQXATXPWKXLXQXMTXPWKWEXQXBTXPWKDIVBXQWKIDWKVQDVBZIDV
+      BZXDXEUHZWKWAXRXSXTVCWGWAUKWKVQIDCFGHUQJKLXBXMXAWQVDUPZVFVGTXPWKXNXQXOTWK
+      XEUKVEWKXRXSXTYAVHVIWKWGVSWOWJTVJWGVSWBWIVKVIABDVBEDVBXSVCZWCUACVLZAIBDEV
+      PFVMUFUGYBYCUIRAUABDECFGHUQIJKLQNOPMVNUPVKVO $.
+  $}
+
+  ${
+    $d v ph $.  $d v P $.  $d v I $.  $d v K $.  $d v G $.  $d v D $.
+    $d v E $.  $d v F $.  $d v W $.  $d v X $.  $d v Y $.  $d v Z $.
+    inagcgrasubhl.p $e |- P = ( Base ` G ) $.
+    inagcgrasubhl.i $e |- I = ( Itv ` G ) $.
+    inagcgrasubhl.k $e |- K = ( hlG ` G ) $.
+    inagcgrasubhl.g $e |- ( ph -> G e. TarskiG ) $.
+    inagcgrasubhl.d $e |- ( ph -> D e. P ) $.
+    inagcgrasubhl.e $e |- ( ph -> E e. P ) $.
+    inagcgrasubhl.f $e |- ( ph -> F e. P ) $.
+    inagcgrasubhl.w $e |- ( ph -> W e. P ) $.
+    inagcgrasubhl.x $e |- ( ph -> X e. P ) $.
+    inagcgrasubhl.y $e |- ( ph -> Y e. P ) $.
+    inagcgrasubhl.z $e |- ( ph -> Z e. P ) $.
+    inagcgrasubhl.cgb $e |- ( ph -> <" D E F "> ( cgrA ` G ) <" X Y Z "> ) $.
+    inagcgrasubhl.1 $e |- ( ph -> D ( K ` E ) W ) $.
+    $( In-angle transport, degenerate branch (i): the sub-angle ` <" D E W "> `
+       is **null**, ` W ` lying on ray ` E D ` .  The witness is not
+       constructed -- it is ` X ` , the target's own first arm -- and ~ cgrahlb
+       supplies the copied angle from the two ray degeneracies.  No GeoCoq
+       counterpart:  GeoCoq's branch only locates a witness supplied by its
+       universal statement.  (Contributed by JAG, 12-Aug-2026.) $)
+    inagcgrasubhl $p |- ( ph -> E. v e. P ( v ( inA ` G ) <" X Y Z "> /\
+        <" D E W "> ( cgrA ` G ) <" X Y v "> ) ) $=
+      ( cv cs3 cinag cfv wbr ccgra wceq simpr breq1d eqidd s3eqd breq2d anbi12d
+      wa cstrkg cgrane3 necomd cgrane4 cds eqid tgbtwntriv1 isinagd cgrahlb jca
+      hlid olcd rspcedvd ) ABUGZKLMUHZGUIUJZUKZCEJUHZKLVNUHZGULUJZUKZUTKVOVPUKZ
+      VRKLKUHZVTUKZUTBKDUBAVNKUMZUTZVQWBWAWDWFVNKVOVPAWEUNZUOWFVSWCVRVTWFKLVNKK
+      LWFKUPWFLUPWGUQURUSAWBWDAKLMDGHIVAKKNOPUBUBUCUDQUBALKACEFKDLMGHINOPQRSTUB
+      UCUDUEVBVCZALMACEFKDLMGHINOPQRSTUBUCUDUEVDVCWHAKMDGHGVEUJZNWIVFZOQUBUDVGA
+      KKLIUJUKKLUMAKKLDGHINOPUBUBUCQWHVKZVLVHACEJKDLKGHIWINOPWJQRSUAUBUCUBUFWKV
+      IVJVM $.
+  $}
+
+  ${
+    $d v ph $.  $d v P $.  $d v I $.  $d v K $.  $d v G $.  $d v D $.
+    $d v E $.  $d v F $.  $d v W $.  $d v X $.  $d v Y $.  $d v Z $.
+    inagcgrasubbtwn.p $e |- P = ( Base ` G ) $.
+    inagcgrasubbtwn.i $e |- I = ( Itv ` G ) $.
+    inagcgrasubbtwn.k $e |- K = ( hlG ` G ) $.
+    inagcgrasubbtwn.g $e |- ( ph -> G e. TarskiG ) $.
+    inagcgrasubbtwn.d $e |- ( ph -> D e. P ) $.
+    inagcgrasubbtwn.e $e |- ( ph -> E e. P ) $.
+    inagcgrasubbtwn.f $e |- ( ph -> F e. P ) $.
+    inagcgrasubbtwn.w $e |- ( ph -> W e. P ) $.
+    inagcgrasubbtwn.x $e |- ( ph -> X e. P ) $.
+    inagcgrasubbtwn.y $e |- ( ph -> Y e. P ) $.
+    inagcgrasubbtwn.z $e |- ( ph -> Z e. P ) $.
+    inagcgrasubbtwn.in $e |- ( ph -> W ( inA ` G ) <" D E F "> ) $.
+    inagcgrasubbtwn.cgb $e |- ( ph -> <" D E F "> ( cgrA ` G ) <" X Y Z "> ) $.
+    inagcgrasubbtwn.1 $e |- ( ph -> E e. ( D I W ) ) $.
+    $( In-angle transport, degenerate branch (ii): the sub-angle
+       ` <" D E W "> ` is **flat**, ` E ` lying between ` D ` and ` W ` .  The
+       witness is built beyond ` Y ` on the ray opposite ` Y X ` with
+       ~ axtgsegcon , and ~ flatcgra supplies the copied angle from the two
+       betweennesses.  The in-angle conjunct goes through ~ inagbtwn , which
+       carries the flatness up to the containing angle, then ~ cgrabtwn across
+       the congruence and ~ isinagd on the target.  (Contributed by JAG,
+       12-Aug-2026.) $)
+    inagcgrasubbtwn $p |- ( ph -> E. v e. P ( v ( inA ` G ) <" X Y Z "> /\
+        <" D E W "> ( cgrA ` G ) <" X Y v "> ) ) $=
+      ( cv co wcel cds cfv wceq wa cs3 cinag wbr ccgra cstrkg simplr simpll syl
+      wne cgrane3 necomd cgrane4 simpr simprd eqcomd tgcgrneq inagbtwn cgrabtwn
+      eqid eqidd orcd isinagd inagne1 inagne3 flatcgra jca axtgsegcon reximddv3
+      simpld ) ALKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNBUHKLMUOGUPULUQCEJUOKLBUHUOGU
+      RULUQUNBDABUHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUNBUHKLMUOGUPULUQCEJU
+      OKLBUHUOGURULUQABUHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUNKLMDGHIUSBUHL
+      NOPABUHDUJLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUTABUHDUJUNLKBUHHUIUJLBUHGUKU
+      LUIKLGUKULUIUMUNUNAKDUJABUHDUJLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNVAUBVBABU
+      HDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUNALDUJABUHDUJLKBUHHUIUJLBUHGUKUL
+      UIKLGUKULUIUMUNVAUCVBABUHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUNAMDUJAB
+      UHDUJLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNVAUDVBABUHDUJUNLKBUHHUIUJLBUHGUKUL
+      UIKLGUKULUIUMUNUNAGUSUJABUHDUJLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNVAQVBABUH
+      DUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUNALDUJABUHDUJLKBUHHUIUJLBUHGUKULU
+      IKLGUKULUIUMUNVAUCVBABUHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUNAKLVCABU
+      HDUJLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNVAALKACEFKDLMGHINOPQRSTUBUCUDUFVDVE
+      VBABUHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUNAMLVCABUHDUJLKBUHHUIUJLBUH
+      GUKULUIKLGUKULUIUMUNVAALMACEFKDLMGHINOPQRSTUBUCUDUFVFVEVBABUHDUJUNLKBUHHU
+      IUJLBUHGUKULUIKLGUKULUIUMUNUNLBUHABUHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIU
+      MUNUNKLLBUHDGHGUKULNGUKULVMOABUHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUN
+      AGUSUJABUHDUJLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNVAQVBABUHDUJUNLKBUHHUIUJLB
+      UHGUKULUIKLGUKULUIUMUNUNAKDUJABUHDUJLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNVAU
+      BVBABUHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUNALDUJABUHDUJLKBUHHUIUJLBU
+      HGUKULUIKLGUKULUIUMUNVAUCVBABUHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUNA
+      LDUJABUHDUJLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNVAUCVBABUHDUJLKBUHHUIUJLBUHG
+      UKULUIKLGUKULUIUMUNUTABUHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUNLBUHGUK
+      ULUIKLGUKULUIABUHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUNLKBUHHUIUJLBUHG
+      UKULUIKLGUKULUIUMABUHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNVGVHVIABUHDUJ
+      UNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUNAKLVCABUHDUJLKBUHHUIUJLBUHGUKULUIKL
+      GUKULUIUMUNVAALKACEFKDLMGHINOPQRSTUBUCUDUFVDVEVBVJVEABUHDUJUNLKBUHHUIUJLB
+      UHGUKULUIKLGUKULUIUMUNUNALKMHUIUJABUHDUJLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMU
+      NVAACEFKDLMGHGUKULNOGUKULVMQRSTUBUCUDUFACDEFGHIJNOPQRSTUAUEUGVKVLVBABUHDU
+      JUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUNLLUMLBUHLIULUQABUHDUJUNLKBUHHUIUJL
+      BUHGUKULUIKLGUKULUIUMUNUNLVNVOVPABUHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUM
+      UNUNCEJKDLBUHGHGUKULNOGUKULVMABUHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNU
+      NAGUSUJABUHDUJLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNVAQVBABUHDUJUNLKBUHHUIUJL
+      BUHGUKULUIKLGUKULUIUMUNUNACDUJABUHDUJLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNVA
+      RVBABUHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUNAEDUJABUHDUJLKBUHHUIUJLBU
+      HGUKULUIKLGUKULUIUMUNVASVBABUHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUNAJ
+      DUJABUHDUJLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNVAUAVBABUHDUJUNLKBUHHUIUJLBUH
+      GUKULUIKLGUKULUIUMUNUNAKDUJABUHDUJLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNVAUBV
+      BABUHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUNALDUJABUHDUJLKBUHHUIUJLBUHG
+      UKULUIKLGUKULUIUMUNVAUCVBABUHDUJLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUTABUHD
+      UJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUNAECJHUIUJABUHDUJLKBUHHUIUJLBUHGUK
+      ULUIKLGUKULUIUMUNVAUGVBABUHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUNLKBUH
+      HUIUJLBUHGUKULUIKLGUKULUIUMABUHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNVGW
+      CABUHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUNACEVCABUHDUJLKBUHHUIUJLBUHG
+      UKULUIKLGUKULUIUMUNVAACEFDGHIJNOPUARSTQUEVQVBABUHDUJUNLKBUHHUIUJLBUHGUKUL
+      UIKLGUKULUIUMUNUNAJEVCABUHDUJLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNVAACEFDGHI
+      JNOPUARSTQUEVRVBABUHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUNAKLVCABUHDUJ
+      LKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNVAALKACEFKDLMGHINOPQRSTUBUCUDUFVDVEVBAB
+      UHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUNLBUHABUHDUJUNLKBUHHUIUJLBUHGUK
+      ULUIKLGUKULUIUMUNUNKLLBUHDGHGUKULNGUKULVMOABUHDUJUNLKBUHHUIUJLBUHGUKULUIK
+      LGUKULUIUMUNUNAGUSUJABUHDUJLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNVAQVBABUHDUJ
+      UNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUNAKDUJABUHDUJLKBUHHUIUJLBUHGUKULUIKL
+      GUKULUIUMUNVAUBVBABUHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUNALDUJABUHDU
+      JLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNVAUCVBABUHDUJUNLKBUHHUIUJLBUHGUKULUIKL
+      GUKULUIUMUNUNALDUJABUHDUJLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNVAUCVBABUHDUJL
+      KBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUTABUHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULU
+      IUMUNUNLBUHGUKULUIKLGUKULUIABUHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUNL
+      KBUHHUIUJLBUHGUKULUIKLGUKULUIUMABUHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMU
+      NVGVHVIABUHDUJUNLKBUHHUIUJLBUHGUKULUIKLGUKULUIUMUNUNAKLVCABUHDUJLKBUHHUIU
+      JLBUHGUKULUIKLGUKULUIUMUNVAALKACEFKDLMGHINOPQRSTUBUCUDUFVDVEVBVJVEVSVTABK
+      LDGHGUKULKLNGUKULVMOQUBUCUBUCWAWB $.
+  $}
+
+  ${
+    $d c ph $.  $d c P $.  $d c I $.  $d c K $.  $d c L $.  $d c G $.
+    $d c D $.  $d c E $.  $d c F $.  $d c W $.  $d c X $.  $d c Y $.  $d c Z $.
+    $d c v $.  $d v ph $.  $d v P $.  $d v I $.  $d v K $.  $d v L $.
+    $d v G $.  $d v D $.  $d v E $.  $d v F $.  $d v W $.  $d v X $.  $d v Y $.
+    $d v Z $.
+    inagcgrabtwn.p $e |- P = ( Base ` G ) $.
+    inagcgrabtwn.i $e |- I = ( Itv ` G ) $.
+    inagcgrabtwn.k $e |- K = ( hlG ` G ) $.
+    inagcgrabtwn.l $e |- L = ( LineG ` G ) $.
+    inagcgrabtwn.g $e |- ( ph -> G e. TarskiG ) $.
+    inagcgrabtwn.d $e |- ( ph -> D e. P ) $.
+    inagcgrabtwn.e $e |- ( ph -> E e. P ) $.
+    inagcgrabtwn.f $e |- ( ph -> F e. P ) $.
+    inagcgrabtwn.w $e |- ( ph -> W e. P ) $.
+    inagcgrabtwn.x $e |- ( ph -> X e. P ) $.
+    inagcgrabtwn.y $e |- ( ph -> Y e. P ) $.
+    inagcgrabtwn.z $e |- ( ph -> Z e. P ) $.
+    inagcgrabtwn.cgb $e |- ( ph -> <" D E F "> ( cgrA ` G ) <" X Y Z "> ) $.
+    inagcgrabtwn.1 $e |- ( ph -> E e. ( D I F ) ) $.
+    inagcgrabtwn.2 $e |- ( ph -> -. ( W e. ( D L E ) \/ D = E ) ) $.
+    $( In-angle transport, degenerate branch (iii): the containing angle is
+       **flat** while the sub-angle is not.  This is the ` x = E ` disjunct of
+       ~ isinag , which the non-degenerate spine cannot reach.  Unlike branches
+       (i) and (ii) the copied angle must be *constructed*: the congruence
+       hypothesis relates ` W ` to nothing on the target side, and ~ acopy
+       needs a point off line ` X Y ` to pick a side, which the collinear ` Z `
+       cannot be. ~ ncoltgdim2 takes the dimension from this branch's own
+       non-collinearity and ~ tglowdim2ln produces that point.  (Contributed by
+       JAG, 12-Aug-2026.) $)
+    inagcgrabtwn $p |- ( ph -> E. v e. P ( v ( inA ` G ) <" X Y Z "> /\
+        <" D E W "> ( cgrA ` G ) <" X Y v "> ) ) $=
+      ( vc cv co wcel wn cs3 cinag cfv wbr ccgra wrex chpg cstrkg simplr simpll
+      syl wne cgrane3 necomd cgrane4 simpr simpld eqid cgrabtwn wceq eqidd orcd
+      wa cds isinagd wo ncolrot1 neneqd ioran sylibr acopy reximddv3 ncoltgdim2
+      jca tglowdim2ln r19.29a ) AUJUKLMJULUMUNBUKLMNUOGUPUQURCEKUOLMBUKUOGUSUQU
+      RVQBDUTUJDAUJUKDUMVQUJUKLMJULUMUNVQCEKUOLMBUKUOGUSUQURBUKUJUKLMJULGVAUQUQ
+      URVQBUKLMNUOGUPUQURCEKUOLMBUKUOGUSUQURVQBDAUJUKDUMVQUJUKLMJULUMUNVQBUKDUM
+      VQCEKUOLMBUKUOGUSUQURBUKUJUKLMJULGVAUQUQURVQVQBUKLMNUOGUPUQURCEKUOLMBUKUO
+      GUSUQURAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMVQCEKUOLMBUKUOGUSUQURBUKUJUKLMJULGV
+      AUQUQURVQVQLMNDGHIVBBUKMOPQAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMCEKUOLMBUKUOGUS
+      UQURBUKUJUKLMJULGVAUQUQURVQVCAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMVQCEKUOLMBUKU
+      OGUSUQURBUKUJUKLMJULGVAUQUQURVQVQAUJUKDUMVQUJUKLMJULUMUNVQLDUMAUJUKDUMVQU
+      JUKLMJULUMUNVQBUKDUMCEKUOLMBUKUOGUSUQURBUKUJUKLMJULGVAUQUQURVQVDAUJUKDUMV
+      QUJUKLMJULUMUNVQALDUMAUJUKDUMUJUKLMJULUMUNVDUDVEVEAUJUKDUMVQUJUKLMJULUMUN
+      VQBUKDUMVQCEKUOLMBUKUOGUSUQURBUKUJUKLMJULGVAUQUQURVQVQAUJUKDUMVQUJUKLMJUL
+      UMUNVQMDUMAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMCEKUOLMBUKUOGUSUQURBUKUJUKLMJULG
+      VAUQUQURVQVDAUJUKDUMVQUJUKLMJULUMUNVQAMDUMAUJUKDUMUJUKLMJULUMUNVDUEVEVEAU
+      JUKDUMVQUJUKLMJULUMUNVQBUKDUMVQCEKUOLMBUKUOGUSUQURBUKUJUKLMJULGVAUQUQURVQ
+      VQAUJUKDUMVQUJUKLMJULUMUNVQNDUMAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMCEKUOLMBUKU
+      OGUSUQURBUKUJUKLMJULGVAUQUQURVQVDAUJUKDUMVQUJUKLMJULUMUNVQANDUMAUJUKDUMUJ
+      UKLMJULUMUNVDUFVEVEAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMVQCEKUOLMBUKUOGUSUQURBU
+      KUJUKLMJULGVAUQUQURVQVQAUJUKDUMVQUJUKLMJULUMUNVQGVBUMAUJUKDUMVQUJUKLMJULU
+      MUNVQBUKDUMCEKUOLMBUKUOGUSUQURBUKUJUKLMJULGVAUQUQURVQVDAUJUKDUMVQUJUKLMJU
+      LUMUNVQAGVBUMAUJUKDUMUJUKLMJULUMUNVDSVEVEAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMV
+      QCEKUOLMBUKUOGUSUQURBUKUJUKLMJULGVAUQUQURVQVQAUJUKDUMVQUJUKLMJULUMUNVQMDU
+      MAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMCEKUOLMBUKUOGUSUQURBUKUJUKLMJULGVAUQUQURV
+      QVDAUJUKDUMVQUJUKLMJULUMUNVQAMDUMAUJUKDUMUJUKLMJULUMUNVDUEVEVEAUJUKDUMVQU
+      JUKLMJULUMUNVQBUKDUMVQCEKUOLMBUKUOGUSUQURBUKUJUKLMJULGVAUQUQURVQVQAUJUKDU
+      MVQUJUKLMJULUMUNVQLMVFAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMCEKUOLMBUKUOGUSUQURB
+      UKUJUKLMJULGVAUQUQURVQVDAUJUKDUMVQUJUKLMJULUMUNVQALMVFAUJUKDUMUJUKLMJULUM
+      UNVDAMLACEFLDMNGHIOPQSTUAUBUDUEUFUGVGVHVEVEAUJUKDUMVQUJUKLMJULUMUNVQBUKDU
+      MVQCEKUOLMBUKUOGUSUQURBUKUJUKLMJULGVAUQUQURVQVQAUJUKDUMVQUJUKLMJULUMUNVQN
+      MVFAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMCEKUOLMBUKUOGUSUQURBUKUJUKLMJULGVAUQUQU
+      RVQVDAUJUKDUMVQUJUKLMJULUMUNVQANMVFAUJUKDUMUJUKLMJULUMUNVDAMNACEFLDMNGHIO
+      PQSTUAUBUDUEUFUGVIVHVEVEAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMVQCEKUOLMBUKUOGUSU
+      QURBUKUJUKLMJULGVAUQUQURVQVQMBUKAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMVQCEKUOLMB
+      UKUOGUSUQURBUKUJUKLMJULGVAUQUQURVQVQCEKLDMBUKGHIOPQAUJUKDUMVQUJUKLMJULUMU
+      NVQBUKDUMVQCEKUOLMBUKUOGUSUQURBUKUJUKLMJULGVAUQUQURVQVQAUJUKDUMVQUJUKLMJU
+      LUMUNVQGVBUMAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMCEKUOLMBUKUOGUSUQURBUKUJUKLMJU
+      LGVAUQUQURVQVDAUJUKDUMVQUJUKLMJULUMUNVQAGVBUMAUJUKDUMUJUKLMJULUMUNVDSVEVE
+      AUJUKDUMVQUJUKLMJULUMUNVQBUKDUMVQCEKUOLMBUKUOGUSUQURBUKUJUKLMJULGVAUQUQUR
+      VQVQAUJUKDUMVQUJUKLMJULUMUNVQCDUMAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMCEKUOLMBU
+      KUOGUSUQURBUKUJUKLMJULGVAUQUQURVQVDAUJUKDUMVQUJUKLMJULUMUNVQACDUMAUJUKDUM
+      UJUKLMJULUMUNVDTVEVEAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMVQCEKUOLMBUKUOGUSUQURB
+      UKUJUKLMJULGVAUQUQURVQVQAUJUKDUMVQUJUKLMJULUMUNVQEDUMAUJUKDUMVQUJUKLMJULU
+      MUNVQBUKDUMCEKUOLMBUKUOGUSUQURBUKUJUKLMJULGVAUQUQURVQVDAUJUKDUMVQUJUKLMJU
+      LUMUNVQAEDUMAUJUKDUMUJUKLMJULUMUNVDUAVEVEAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMV
+      QCEKUOLMBUKUOGUSUQURBUKUJUKLMJULGVAUQUQURVQVQAUJUKDUMVQUJUKLMJULUMUNVQKDU
+      MAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMCEKUOLMBUKUOGUSUQURBUKUJUKLMJULGVAUQUQURV
+      QVDAUJUKDUMVQUJUKLMJULUMUNVQAKDUMAUJUKDUMUJUKLMJULUMUNVDUCVEVEAUJUKDUMVQU
+      JUKLMJULUMUNVQBUKDUMVQCEKUOLMBUKUOGUSUQURBUKUJUKLMJULGVAUQUQURVQVQAUJUKDU
+      MVQUJUKLMJULUMUNVQLDUMAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMCEKUOLMBUKUOGUSUQURB
+      UKUJUKLMJULGVAUQUQURVQVDAUJUKDUMVQUJUKLMJULUMUNVQALDUMAUJUKDUMUJUKLMJULUM
+      UNVDUDVEVEAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMVQCEKUOLMBUKUOGUSUQURBUKUJUKLMJU
+      LGVAUQUQURVQVQAUJUKDUMVQUJUKLMJULUMUNVQMDUMAUJUKDUMVQUJUKLMJULUMUNVQBUKDU
+      MCEKUOLMBUKUOGUSUQURBUKUJUKLMJULGVAUQUQURVQVDAUJUKDUMVQUJUKLMJULUMUNVQAMD
+      UMAUJUKDUMUJUKLMJULUMUNVDUEVEVEAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMCEKUOLMBUKU
+      OGUSUQURBUKUJUKLMJULGVAUQUQURVQVCAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMVQCEKUOLM
+      BUKUOGUSUQURBUKUJUKLMJULGVAUQUQURVQVQCEKUOLMBUKUOGUSUQURBUKUJUKLMJULGVAUQ
+      UQURAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMVQCEKUOLMBUKUOGUSUQURBUKUJUKLMJULGVAUQ
+      UQURVQVJVKVIVHAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMVQCEKUOLMBUKUOGUSUQURBUKUJUK
+      LMJULGVAUQUQURVQVQAUJUKDUMVQUJUKLMJULUMUNVQMLNHULUMAUJUKDUMVQUJUKLMJULUMU
+      NVQBUKDUMCEKUOLMBUKUOGUSUQURBUKUJUKLMJULGVAUQUQURVQVDAUJUKDUMVQUJUKLMJULU
+      MUNVQAMLNHULUMAUJUKDUMUJUKLMJULUMUNVDACEFLDMNGHGVRUQOPGVRUQVLSTUAUBUDUEUF
+      UGUHVMVEVEAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMVQCEKUOLMBUKUOGUSUQURBUKUJUKLMJU
+      LGVAUQUQURVQVQMMVNMBUKMIUQURAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMVQCEKUOLMBUKUO
+      GUSUQURBUKUJUKLMJULGVAUQUQURVQVQMVOVPVSAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMVQC
+      EKUOLMBUKUOGUSUQURBUKUJUKLMJULGVAUQUQURVQVQCEKUOLMBUKUOGUSUQURBUKUJUKLMJU
+      LGVAUQUQURAUJUKDUMVQUJUKLMJULUMUNVQBUKDUMVQCEKUOLMBUKUOGUSUQURBUKUJUKLMJU
+      LGVAUQUQURVQVJVKWHAUJUKDUMVQUJUKLMJULUMUNVQCEKLDBMUJUKGHJGVRUQOPGVRUQVLAU
+      JUKDUMVQUJUKLMJULUMUNVQAGVBUMAUJUKDUMUJUKLMJULUMUNVDSVEAUJUKDUMVQUJUKLMJU
+      LUMUNVQACDUMAUJUKDUMUJUKLMJULUMUNVDTVEAUJUKDUMVQUJUKLMJULUMUNVQAEDUMAUJUK
+      DUMUJUKLMJULUMUNVDUAVEAUJUKDUMVQUJUKLMJULUMUNVQAKDUMAUJUKDUMUJUKLMJULUMUN
+      VDUCVEAUJUKDUMVQUJUKLMJULUMUNVQALDUMAUJUKDUMUJUKLMJULUMUNVDUDVEAUJUKDUMVQ
+      UJUKLMJULUMUNVQAMDUMAUJUKDUMUJUKLMJULUMUNVDUEVEAUJUKDUMUJUKLMJULUMUNVCRAU
+      JUKDUMVQUJUKLMJULUMUNVQACEKJULUMEKVNVTUNAUJUKDUMUJUKLMJULUMUNVDADGHJCEKOR
+      PSTUAUCUIWAVEAUJUKDUMVQUJUKLMJULUMUNVQDGHJLMUJUKORPAUJUKDUMVQUJUKLMJULUMU
+      NVQAGVBUMAUJUKDUMUJUKLMJULUMUNVDSVEAUJUKDUMVQUJUKLMJULUMUNVQALDUMAUJUKDUM
+      UJUKLMJULUMUNVDUDVEAUJUKDUMVQUJUKLMJULUMUNVQAMDUMAUJUKDUMUJUKLMJULUMUNVDU
+      EVEAUJUKDUMUJUKLMJULUMUNVCAUJUKDUMVQUJUKLMJULUMUNVQUJUKLMJULUMUNLMVNUNVQU
+      JUKLMJULUMLMVNVTUNAUJUKDUMVQUJUKLMJULUMUNVQUJUKLMJULUMUNLMVNUNAUJUKDUMVQU
+      JUKLMJULUMUNVJAUJUKDUMVQUJUKLMJULUMUNVQLMAUJUKDUMVQUJUKLMJULUMUNVQALMVFAU
+      JUKDUMUJUKLMJULUMUNVDAMLACEFLDMNGHIOPQSTUAUBUDUEUFUGVGVHVEWBWHUJUKLMJULUM
+      LMVNWCWDWAWEWFALMDGHJUJOPRSADGHJCEKORPSTUAUCUIWGUDUEAMLACEFLDMNGHIOPQSTUA
+      UBUDUEUFUGVGVHWIWJ $.
+  $}
+
+  ${
+    $d x ph $.  $d x P $.  $d x I $.  $d x K $.  $d x G $.  $d x .- $.
+    $d x A $.  $d x B $.  $d x C $.  $d x D $.  $d x E $.  $d x F $.
+    $d y ph $.  $d y P $.  $d y I $.  $d y K $.  $d y G $.  $d y .- $.
+    $d y A $.  $d y B $.  $d y C $.  $d y D $.  $d y E $.  $d y F $.  $d x y $.
+    iscgrag.p $e |- P = ( Base ` G ) $.
+    iscgrag.i $e |- I = ( Itv ` G ) $.
+    iscgrag.k $e |- K = ( hlG ` G ) $.
+    iscgrag.m $e |- .- = ( dist ` G ) $.
+    iscgrag.g $e |- ( ph -> G e. TarskiG ) $.
+    iscgrag.a $e |- ( ph -> A e. P ) $.
+    iscgrag.b $e |- ( ph -> B e. P ) $.
+    iscgrag.c $e |- ( ph -> C e. P ) $.
+    iscgrag.d $e |- ( ph -> D e. P ) $.
+    iscgrag.e $e |- ( ph -> E e. P ) $.
+    iscgrag.f $e |- ( ph -> F e. P ) $.
+    iscgrag.1 $e |- ( ph -> <" A B C "> ( cgrA ` G ) <" D E F "> ) $.
+    $( Ray normalization: an angle congruence yields two points on the target
+       rays carrying a full triangle congruence, together with the two arm
+       lengths.  This is the forward direction of ~ iscgra (Schwabhauser 11.3)
+       repackaged -- nothing is constructed; the distances are read off the
+       ` cgrG ` with ~ cgr3simp1 and ~ cgr3simp2 .  No non-degeneracy
+       hypothesis is needed or wanted: ` cgrA ` carries vertex distinctness
+       intrinsically ( ~ cgrane1 through ~ cgrane4 ), and an extra hypothesis
+       would obstruct the degenerate branches.  (Contributed by JAG,
+       12-Aug-2026.) $)
+    iscgrag $p |- ( ph -> E. x e. P E. y e. P ( ( <" A B C "> ( cgrG ` G )
+        <" x E y "> /\ x ( K ` E ) D /\ y ( K ` E ) F ) /\ ( ( E .- x ) = ( B
+        .- A ) /\ ( E .- y ) = ( B .- C ) ) ) ) $=
+      ( cs3 cv ccgrg cfv wbr w3a wrex co wceq wa simpr cstrkg simpll simpld syl
+      wcel simprd eqid simplr simp1d cgr3simp1 tgcgrcomlr cgr3simp2 ex reximdva
+      eqcomd jca imp ccgra iscgra mpbid reximddv3 ) ADEFUGZBUHZICUHZUGKUIUJZUKZ
+      VTGIMUJZUKZWAJWDUKZULZCHUMZWGIVTNUNZEDNUNZUOZIWANUNZEFNUNZUOZUPZUPZCHUMZB
+      HAVTHVBZUPZWHWQWSWGWPCHWSWAHVBZUPZWGWPXAWGUPZWGWOXAWGUQZXBWKWNXBWJWIXBDEV
+      TIHKLNORPXBAKURVBXBAWRWSWTWGUSZUTZSVAZXBADHVBXETVAZXBAEHVBXEUAVAZXBAWRXDV
+      CZXBAIHVBXEUDVAZXBDEFVTHWBIWAKLNORPWBVDZXFXGXHXBAFHVBXEUBVAZXIXJWSWTWGVEZ
+      XBWCWEWFXCVFZVGVHVLXBWMWLXBDEFVTHWBIWAKLNORPXKXFXGXHXLXIXJXMXNVIVLVMVMVJV
+      KVNAVSGIJUGKVOUJUKWHBHUMUFABCDEFGHIJKLMOPQSTUAUBUCUDUEVPVQVR $.
+  $}
+
+  ${
+    $d y ph $.  $d y P $.  $d y I $.  $d y K $.  $d y G $.  $d y .- $.
+    $d y A $.  $d y B $.  $d y C $.  $d y J $.  $d y X $.  $d y E $.  $d y Z $.
+    cgrgptxfr.p $e |- P = ( Base ` G ) $.
+    cgrgptxfr.i $e |- I = ( Itv ` G ) $.
+    cgrgptxfr.m $e |- .- = ( dist ` G ) $.
+    cgrgptxfr.g $e |- ( ph -> G e. TarskiG ) $.
+    cgrgptxfr.a $e |- ( ph -> A e. P ) $.
+    cgrgptxfr.b $e |- ( ph -> B e. P ) $.
+    cgrgptxfr.c $e |- ( ph -> C e. P ) $.
+    cgrgptxfr.x $e |- ( ph -> X e. P ) $.
+    cgrgptxfr.e $e |- ( ph -> E e. P ) $.
+    cgrgptxfr.z $e |- ( ph -> Z e. P ) $.
+    cgrgptxfr.j $e |- ( ph -> J e. P ) $.
+    cgrgptxfr.1 $e |- ( ph -> <" A B C "> ( cgrG ` G ) <" X E Z "> ) $.
+    cgrgptxfr.2 $e |- ( ph -> J e. ( A I C ) ) $.
+    $( Transfer a segment point across a triangle congruence: given
+       ` <" A B C "> cgrG <" X E Z "> ` and ` J ` between ` A ` and ` C ` , the
+       corresponding point on ` ( X I Z ) ` exists, with its betweenness, its
+       two distances and the sub-triangle congruence.  GeoCoq reaches this
+       through l4__6 and cong2__conga__cong ; here ~ cgrg3col4 (Schwabhauser
+       11.28) constructs the point with every pairwise distance and ~ tgbtwnxfr
+       -- which *is* l4__6 -- supplies the image betweenness.  The ` A = C `
+       case takes ~ cgrg3col4 's right disjunct, since ~ tgellng needs
+       ` A =/= C ` and ` cgrA ` does not supply it.  (Contributed by JAG,
+       12-Aug-2026.) $)
+    cgrgptxfr $p |- ( ph -> E. y e. P ( ( y e. ( X I Z ) /\ <" A B J "> ( cgrG
+        ` G ) <" X E y "> ) /\ ( ( A .- J ) = ( X .- y ) /\ ( J .- C ) = ( y .-
+        Z ) ) ) ) $=
+      ( cs4 cv ccgrg cfv wbr co wcel cs3 wceq eqid cstrkg simpll syl simplr w3a
+      wa simpr tgcgr4 mpbid simprd simp1d simp3d tgcgrcomlr cgr3simp3 tgbtwnxfr
+      trgcgr cgr3simp1 simp2d jca clng olcd wne w3o simpl 3mix1d tgellng mpbird
+      wo orcd pm2.61dane cgrg3col4 reximddv3 ) ACDEJUGLGMBUHZUGHUIUJZUKZWILMIUL
+      UMZCDJUNLGWIUNWJUKZVBZCJKULLWIKULUOZJEKULWIMKULUOZVBZVBBFAWIFUMZVBZWKVBZW
+      NWQWTWLWMWTCJELFWJWIMHIKNPOWJUPZWTAHUQUMZAWRWKURZQUSZWTACFUMZXCRUSZWTAJFU
+      MZXCUDUSZWTAEFUMZXCTUSZWTALFUMXCUAUSZAWRWKUTZWTAMFUMXCUCUSZWTCJELFWJWIMHK
+      NPXAXDXFXHXJXKXLXMWTWODJKULGWIKULUOZEJKULMWIKULUOZWTCDEUNLGMUNWJUKZWOXNXO
+      VAZWTWKXPXQVBWSWKVCWTCDEJFWJHIKLGMWINPOXAXDXFWTADFUMXCSUSZXJXHXKWTAGFUMXC
+      UBUSZXMXLVDVEVFZVGZWTEJMWIFHIKNPOXDXJXHXMXLWTWOXNXOXTVHVIZWTCDELFWJGMHIKN
+      POXAXDXFXRXJXKXSXMWTAXPXCUEUSZVJVLWTAJCEIULUMZXCUFUSVKWTCDJLFWJGWIHKNPXAX
+      DXFXRXHXKXSXLWTCDELFWJGMHIKNPOXAXDXFXRXJXKXSXMYCVMWTWOXNXOXTVNWTCJLWIFHIK
+      NPOXDXFXHXKXLYAVIVLVOWTWOWPYAYBVOVOABCDELFGMHHVPUJZJNQRSTUAUBUCYEUPZUDUEA
+      JCEYEULUMZCEUOZWDCEAYHVBYHYGAYHVCVQACEVRZVBZYGYHYJYGYDCJEIULUMZECJIULUMZV
+      SYJYDYKYLYJAYDAYIVTZUFUSWAYJFHIYECEJNYFOYJAXBYMQUSYJAXEYMRUSYJAXIYMTUSAYI
+      VCYJAXGYMUDUSWBWCWEWFWGWH $.
+  $}
+
+  ${
+    inagcgratrgmain.p $e |- P = ( Base ` G ) $.
+    inagcgratrgmain.i $e |- I = ( Itv ` G ) $.
+    inagcgratrgmain.k $e |- K = ( hlG ` G ) $.
+    inagcgratrgmain.g $e |- ( ph -> G e. TarskiG ) $.
+    inagcgratrgmain.d $e |- ( ph -> D e. P ) $.
+    inagcgratrgmain.e $e |- ( ph -> E e. P ) $.
+    inagcgratrgmain.w $e |- ( ph -> W e. P ) $.
+    inagcgratrgmain.x $e |- ( ph -> X e. P ) $.
+    inagcgratrgmain.y $e |- ( ph -> Y e. P ) $.
+    inagcgratrgmain.z $e |- ( ph -> Z e. P ) $.
+    inagcgratrgmain.j $e |- ( ph -> J e. P ) $.
+    inagcgratrgmain.s $e |- ( ph -> S e. P ) $.
+    inagcgratrgmain.t $e |- ( ph -> T e. P ) $.
+    inagcgratrgmain.q $e |- ( ph -> Q e. P ) $.
+    inagcgratrgmain.de $e |- ( ph -> D =/= E ) $.
+    inagcgratrgmain.jw $e |- ( ph -> J ( K ` E ) W ) $.
+    inagcgratrgmain.sx $e |- ( ph -> S ( K ` Y ) X ) $.
+    inagcgratrgmain.tz $e |- ( ph -> T ( K ` Y ) Z ) $.
+    inagcgratrgmain.q1 $e |- ( ph -> Q e. ( S I T ) ) $.
+    inagcgratrgmain.sub $e |- ( ph -> <" D E J "> ( cgrG ` G ) <" S Y Q "> ) $.
+    ${
+      inagcgratrgmain.m $e |- .- = ( dist ` G ) $.
+      $( In-angle transport, the non-degenerate main case, with its three
+         constructions carried as hypotheses: ` J ` the segment point from
+         ~ isinag , ` S ` and ` T ` the normalized target arms from ~ iscgrag ,
+         and ` Q ` the transferred point from ~ cgrgptxfr .  Concludes the body
+         of ~ cgrainag 's existential at the witness ` Q ` . **No ~ acopy and
+         no half-plane fact**: the witness is the transferred point, not a
+         fresh angle copy, which is what removes the non-collinearity
+         obligations.  (Contributed by JAG, 12-Aug-2026.) $)
+      inagcgratrgmain $p |- ( ph -> ( Q ( inA ` G ) <" X Y Z "> /\ <" D E W ">
+          ( cgrA ` G ) <" X Y Q "> ) ) $=
+        ( cs3 cinag cfv ccgra cstrkg hlne1 ccgrg eqid cgr3simp2 necomd tgcgrneq
+        wbr wceq hlid isinagd hlcomd inaghl cgrcgra cgrahl1 cgracom cgrahl2 jca
+        olcd ) ADNOPURHUSUTVIBGMURNODURHVAUTVIAEOFNCPHIKDDQRSUJUHUEUITAEOFCHIKV
+        BDDQRSUJUHUEUITUJAENOCHIKVBQRSUHUDUETUMVCAFPOCHIKVBQRSUIUFUETUNVCAODAGJ
+        ODCHILQUQRTUBUGUEUJABGJECHVDUTODHILQUQRHVDUTVETUAUBUGUHUEUJUPVFAJGAJMGC
+        HIKVBQRSUGUCUBTULVCVGVHVGUOADDOKUTVIDOVJADDOCHIKQRSUJUJUETAODAGJODCHILQ
+        UQRTUBUGUEUJABGJECHVDUTODHILQUQRHVDUTVETUAUBUGUHUEUJUPVFAJGAJMGCHIKVBQR
+        SUGUCUBTULVCVGVHVGVKVTVLUDUFUJAENOCHIKVBQRSUHUDUETUMVMAFPOCHIKVBQRSUIUF
+        UETUNVMADDOCHIKQRSUJUJUETAODAGJODCHILQUQRTUBUGUEUJABGJECHVDUTODHILQUQRH
+        VDUTVETUAUBUGUHUEUJUPVFAJGAJMGCHIKVBQRSUGUCUBTULVCVGVHVGVKVNANODBCGMHIK
+        QRTSUDUEUJUAUBUCANODBCGJHIKMQRSTUDUEUJUAUBUGABGJNCODHIKQRTSUAUBUGUDUEUJ
+        ABGJECODHIKNQRSTUAUBUGUHUEUJABGJECODHIKQRTSUAUBUGUHUEUJUKAJGAJMGCHIKVBQ
+        RSUGUCUBTULVCVGUPVOUDAENOCHIKVBQRSUHUDUETUMVMVPVQUCAJMGCHIKVBQRSUGUCUBT
+        ULVMVRVQVS $.
+    $}
+
+    ${
+      $d v ph $.  $d v P $.  $d v I $.  $d v K $.  $d v G $.  $d v D $.
+      $d v E $.  $d v W $.  $d v X $.  $d v Y $.  $d v Z $.  $d v J $.
+      $d v S $.  $d v T $.  $d v Q $.
+      $( ~ inagcgratrgmain with the existential introduced at its own witness
+         ` Q ` .  Split out so that the substitution instance is built once, at
+         the top level, rather than under the existential eliminations that
+         produce ` S ` , ` T ` and ` Q ` .  (Contributed by JAG,
+         12-Aug-2026.) $)
+      inagcgratrgw $p |- ( ph -> E. v e. P ( v ( inA ` G ) <" X Y Z "> /\
+          <" D E W "> ( cgrA ` G ) <" X Y v "> ) ) $=
+        ( cv cs3 cinag cfv wbr ccgra wa simpr breq1d eqidd s3eqd breq2d anbi12d
+        wceq cds eqid inagcgratrgmain rspcedvd ) ABUQNOPURIUSUTVACHMURNOBUQURIV
+        BUTVAVCENOPURIUSUTVACHMURNOEURIVBUTVAVCBEDUJABUQEVJVCBUQNOPURIUSUTVAENO
+        PURIUSUTVACHMURNOBUQURIVBUTVACHMURNOEURIVBUTVAABUQEVJVCBUQENOPURIUSUTAB
+        UQEVJVDVEABUQEVJVCNOBUQURNOEURCHMURIVBUTABUQEVJVCNOBUQENOABUQEVJVCNVFAB
+        UQEVJVCOVFABUQEVJVDVGVHVIACDEFGHIJKLIVKUTMNOPQRSTUAUBUCUDUEUFUGUHUIUJUK
+        ULUMUNUOUPIVKUTVLVMVN $.
+    $}
+  $}
+
+  ${
+    $d v ph $.  $d v P $.  $d v I $.  $d v K $.  $d v G $.  $d v D $.
+    $d v E $.  $d v F $.  $d v W $.  $d v X $.  $d v Y $.  $d v Z $.  $d v J $.
+    $d v S $.  $d v T $.  $d y ph $.  $d y P $.  $d y I $.  $d y K $.
+    $d y G $.  $d y D $.  $d y E $.  $d y F $.  $d y W $.  $d y X $.  $d y Y $.
+    $d y Z $.  $d y J $.  $d y S $.  $d y T $.  $d y v $.
+    inagcgratrgxfr.p $e |- P = ( Base ` G ) $.
+    inagcgratrgxfr.i $e |- I = ( Itv ` G ) $.
+    inagcgratrgxfr.k $e |- K = ( hlG ` G ) $.
+    inagcgratrgxfr.g $e |- ( ph -> G e. TarskiG ) $.
+    inagcgratrgxfr.d $e |- ( ph -> D e. P ) $.
+    inagcgratrgxfr.e $e |- ( ph -> E e. P ) $.
+    inagcgratrgxfr.f $e |- ( ph -> F e. P ) $.
+    inagcgratrgxfr.w $e |- ( ph -> W e. P ) $.
+    inagcgratrgxfr.x $e |- ( ph -> X e. P ) $.
+    inagcgratrgxfr.y $e |- ( ph -> Y e. P ) $.
+    inagcgratrgxfr.z $e |- ( ph -> Z e. P ) $.
+    inagcgratrgxfr.j $e |- ( ph -> J e. P ) $.
+    inagcgratrgxfr.s $e |- ( ph -> S e. P ) $.
+    inagcgratrgxfr.t $e |- ( ph -> T e. P ) $.
+    inagcgratrgxfr.de $e |- ( ph -> D =/= E ) $.
+    inagcgratrgxfr.1 $e |- ( ph -> J e. ( D I F ) ) $.
+    inagcgratrgxfr.jw $e |- ( ph -> J ( K ` E ) W ) $.
+    inagcgratrgxfr.sx $e |- ( ph -> S ( K ` Y ) X ) $.
+    inagcgratrgxfr.tz $e |- ( ph -> T ( K ` Y ) Z ) $.
+    inagcgratrgxfr.2 $e |- ( ph -> <" D E F "> ( cgrG ` G ) <" S Y T "> ) $.
+    $( In-angle transport with the target arms already normalized to ` S ` and
+       ` T ` : ~ cgrgptxfr transfers the segment point ` J ` to a point of
+       ` ( S I T ) ` , and that one existential is eliminated here.
+       (Contributed by JAG, 12-Aug-2026.) $)
+    inagcgratrgxfr $p |- ( ph -> E. v e. P ( v ( inA ` G ) <" X Y Z "> /\
+        <" D E W "> ( cgrA ` G ) <" X Y v "> ) ) $=
+      ( vy cv co wcel cs3 ccgrg cfv wbr wa wceq cinag ccgra wrex eqid cgrgptxfr
+      cds cstrkg simpl syl simpr simpld wne simprd inagcgratrgw rexlimddv ) AUQ
+      URZEFJUSUTZCGKVAEOWBVAIVBVCVDZVEZCKIVLVCZUSEWBWFUSVFKHWFUSWBFWFUSVFVEZVEZ
+      BURZNOPVAIVGVCVDCGMVANOWIVAIVHVCVDVEBDVIUQDAUQCGHDOIJKWFEFQRWFVJTUAUBUCUI
+      UFUJUHUPULVKAWBDUTZWHVEZVEZBCDWBEFGIJKLMNOPQRSWLAIVMUTAWKVNZTVOWLACDUTWMU
+      AVOWLAGDUTWMUBVOWLAMDUTWMUDVOWLANDUTWMUEVOWLAODUTWMUFVOWLAPDUTWMUGVOWLAKD
+      UTWMUHVOWLAEDUTWMUIVOWLAFDUTWMUJVOWLWJWHAWKVPZVQWLACGVRWMUKVOWLAKMGLVCVDW
+      MUMVOWLAENOLVCZVDWMUNVOWLAFPWOVDWMUOVOWLWCWDWLWEWGWLWJWHWNVSVQZVQWLWCWDWP
+      VSVTWA $.
+  $}
+
+  ${
+    inagcgratrgncol.p $e |- P = ( Base ` G ) $.
+    inagcgratrgncol.i $e |- I = ( Itv ` G ) $.
+    inagcgratrgncol.k $e |- K = ( hlG ` G ) $.
+    inagcgratrgncol.g $e |- ( ph -> G e. TarskiG ) $.
+    inagcgratrgncol.d $e |- ( ph -> D e. P ) $.
+    inagcgratrgncol.e $e |- ( ph -> E e. P ) $.
+    inagcgratrgncol.f $e |- ( ph -> F e. P ) $.
+    inagcgratrgncol.w $e |- ( ph -> W e. P ) $.
+    inagcgratrgncol.x $e |- ( ph -> X e. P ) $.
+    inagcgratrgncol.y $e |- ( ph -> Y e. P ) $.
+    inagcgratrgncol.z $e |- ( ph -> Z e. P ) $.
+    inagcgratrgncol.cgb $e
+    |- ( ph -> <" D E F "> ( cgrA ` G ) <" X Y Z "> ) $.
+
+    ${
+      $d v ph $.  $d v P $.  $d v I $.  $d v K $.  $d v G $.  $d v D $.
+      $d v E $.  $d v F $.  $d v W $.  $d v X $.  $d v Y $.  $d v Z $.
+      $d v J $.  $d x ph $.  $d x P $.  $d x I $.  $d x K $.  $d x G $.
+      $d x D $.  $d x E $.  $d x F $.  $d x W $.  $d x X $.  $d x Y $.
+      $d x Z $.  $d x J $.  $d x v $.  $d y ph $.  $d y P $.  $d y I $.
+      $d y K $.  $d y G $.  $d y D $.  $d y E $.  $d y F $.  $d y W $.
+      $d y X $.  $d y Y $.  $d y Z $.  $d y J $.  $d y v $.  $d x y $.
+      inagcgratrgncol.j $e |- ( ph -> J e. P ) $.
+      inagcgratrgncol.de $e |- ( ph -> D =/= E ) $.
+      inagcgratrgncol.1 $e |- ( ph -> J e. ( D I F ) ) $.
+      inagcgratrgncol.jw $e |- ( ph -> J ( K ` E ) W ) $.
+      $( In-angle transport once the segment point ` J ` of ~ isinag is on the
+         ray ` E W ` : ~ iscgrag normalizes the target arms and its two
+         existentials are eliminated here, leaving ~ inagcgratrgxfr to do the
+         transfer.  (Contributed by JAG, 12-Aug-2026.) $)
+      inagcgratrgncol $p |- ( ph -> E. v e. P ( v ( inA ` G ) <" X Y Z "> /\
+          <" D E W "> ( cgrA ` G ) <" X Y v "> ) ) $=
+        ( vx vy cs3 cv ccgrg cfv wbr w3a wrex cinag ccgra cds wceq eqid iscgrag
+        wa co simpl reximi wcel cstrkg simpll simplr simpld simprd simpr simp2d
+        syl wne simp3d simp1d inagcgratrgxfr ex rexlimdvva mpd ) ACEFUMUKUNMULU
+        NUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQURULDUSUKDUSBUNLMNUMGUTUPUQCEKUMLMBUNUM
+        GVAUPUQVFBDUSACEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQURMUKUNGVBUP
+        VGECGVBUPVGVCMULUNGVBUPVGEFGVBUPVGVCVFVFULDUSUKDUSCEFUMUKUNMULUNUMGUOUP
+        UQUKUNLMJUPUQULUNNMJUPUQURULDUSUKDUSAUKULCEFLDMNGHJGVBUPOPQGVBUPVDRSTUA
+        UCUDUEUFVECEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQURMUKUNGVBUPVGEC
+        GVBUPVGVCMULUNGVBUPVGEFGVBUPVGVCVFVFULDUSCEFUMUKUNMULUNUMGUOUPUQUKUNLMJ
+        UPUQULUNNMJUPUQURULDUSUKDCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQU
+        RMUKUNGVBUPVGECGVBUPVGVCMULUNGVBUPVGEFGVBUPVGVCVFVFCEFUMUKUNMULUNUMGUOU
+        PUQUKUNLMJUPUQULUNNMJUPUQURULDCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJ
+        UPUQURMUKUNGVBUPVGECGVBUPVGVCMULUNGVBUPVGEFGVBUPVGVCVFVHVIVIVRACEFUMUKU
+        NMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQURBUNLMNUMGUTUPUQCEKUMLMBUNUMGVAUP
+        UQVFBDUSUKULDDAUKUNDVJULUNDVJVFVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUN
+        NMJUPUQURBUNLMNUMGUTUPUQCEKUMLMBUNUMGVAUPUQVFBDUSAUKUNDVJULUNDVJVFVFCEF
+        UMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQURVFBCDUKUNULUNEFGHIJKLMNOPQA
+        UKUNDVJULUNDVJVFVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQURVFAGVK
+        VJAUKUNDVJULUNDVJVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQURVLRVR
+        AUKUNDVJULUNDVJVFVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQURVFACD
+        VJAUKUNDVJULUNDVJVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQURVLSVR
+        AUKUNDVJULUNDVJVFVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQURVFAED
+        VJAUKUNDVJULUNDVJVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQURVLTVR
+        AUKUNDVJULUNDVJVFVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQURVFAFD
+        VJAUKUNDVJULUNDVJVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQURVLUAV
+        RAUKUNDVJULUNDVJVFVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQURVFAK
+        DVJAUKUNDVJULUNDVJVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQURVLUB
+        VRAUKUNDVJULUNDVJVFVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQURVFA
+        LDVJAUKUNDVJULUNDVJVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQURVLU
+        CVRAUKUNDVJULUNDVJVFVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQURVF
+        AMDVJAUKUNDVJULUNDVJVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQURVL
+        UDVRAUKUNDVJULUNDVJVFVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQURV
+        FANDVJAUKUNDVJULUNDVJVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQURV
+        LUEVRAUKUNDVJULUNDVJVFVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQUR
+        VFAIDVJAUKUNDVJULUNDVJVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQUR
+        VLUGVRAUKUNDVJULUNDVJVFVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQU
+        RVFUKUNDVJULUNDVJAUKUNDVJULUNDVJVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULU
+        NNMJUPUQURVMVNAUKUNDVJULUNDVJVFVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUN
+        NMJUPUQURVFUKUNDVJULUNDVJAUKUNDVJULUNDVJVFCEFUMUKUNMULUNUMGUOUPUQUKUNLM
+        JUPUQULUNNMJUPUQURVMVOAUKUNDVJULUNDVJVFVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJ
+        UPUQULUNNMJUPUQURVFACEVSAUKUNDVJULUNDVJVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJ
+        UPUQULUNNMJUPUQURVLUHVRAUKUNDVJULUNDVJVFVFCEFUMUKUNMULUNUMGUOUPUQUKUNLM
+        JUPUQULUNNMJUPUQURVFAICFHVGVJAUKUNDVJULUNDVJVFCEFUMUKUNMULUNUMGUOUPUQUK
+        UNLMJUPUQULUNNMJUPUQURVLUIVRAUKUNDVJULUNDVJVFVFCEFUMUKUNMULUNUMGUOUPUQU
+        KUNLMJUPUQULUNNMJUPUQURVFAIKEJUPUQAUKUNDVJULUNDVJVFCEFUMUKUNMULUNUMGUOU
+        PUQUKUNLMJUPUQULUNNMJUPUQURVLUJVRAUKUNDVJULUNDVJVFVFCEFUMUKUNMULUNUMGUO
+        UPUQUKUNLMJUPUQULUNNMJUPUQURVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJ
+        UPUQAUKUNDVJULUNDVJVFVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQURV
+        PVQAUKUNDVJULUNDVJVFVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQURVF
+        CEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQAUKUNDVJULUNDVJVFVFCEFUMUK
+        UNMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQURVPVTAUKUNDVJULUNDVJVFVFCEFUMUKU
+        NMULUNUMGUOUPUQUKUNLMJUPUQULUNNMJUPUQURVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJ
+        UPUQULUNNMJUPUQAUKUNDVJULUNDVJVFVFCEFUMUKUNMULUNUMGUOUPUQUKUNLMJUPUQULU
+        NNMJUPUQURVPWAWBWCWDWE $.
+    $}
+
+    ${
+      $d v ph $.  $d v P $.  $d v I $.  $d v K $.  $d v L $.  $d v G $.
+      $d v D $.  $d v E $.  $d v F $.  $d v W $.  $d v X $.  $d v Y $.
+      $d v Z $.  $d x ph $.  $d x P $.  $d x I $.  $d x K $.  $d x L $.
+      $d x G $.  $d x D $.  $d x E $.  $d x F $.  $d x W $.  $d x X $.
+      $d x Y $.  $d x Z $.  $d x v $.
+      inagcgratrgn.l $e |- L = ( LineG ` G ) $.
+      inagcgratrgn.in $e |- ( ph -> W ( inA ` G ) <" D E F "> ) $.
+      inagcgratrgn.1 $e |- ( ph -> -. ( W e. ( D L E ) \/ D = E ) ) $.
+      $( In-angle transport, non-collinear case: unfold ~ isinag , eliminate
+         its segment-point existential, and dispatch on the disjunct it carries
+         -- ` x = E ` to ~ inagcgrabtwn , ` x ( K `` E ) W ` to
+         ~ inagcgratrgncol .  (Contributed by JAG, 12-Aug-2026.) $)
+      inagcgratrgn $p |- ( ph -> E. v e. P ( v ( inA ` G ) <" X Y Z "> /\
+          <" D E W "> ( cgrA ` G ) <" X Y v "> ) ) $=
+        ( vx cv co wcel wceq cfv wbr wo wa cs3 cinag wrex wne w3a cstrkg isinag
+        ccgra mpbid simprd simpl syl adantr simpr simpld eleq1d wn inagcgrabtwn
+        inagne1 inagcgratrgncol mpjaodan rexlimddv ) AUJUKCFHULUMUJUKEUNUJUKKEI
+        UOUPUQURBUKLMNUSGUTUOUPCEKUSLMBUKUSGVFUOUPURBDVAUJDACEVBFEVBKEVBVCUJUKC
+        FHULUMUJUKEUNUJUKKEIUOUPUQURUJDVAAKCEFUSGUTUOUPCEVBFEVBKEVBVCUJUKCFHULU
+        MUJUKEUNUJUKKEIUOUPUQURUJDVAURUHAUJCEFDGHIVDKOPQUBSTUARVEVGVHAUJUKDUMUJ
+        UKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURUJUKEUNBUKLMNUSGUTUOUPCEKUSLMBUKUSGV
+        FUOUPURBDVAUJUKKEIUOUPAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURUJUK
+        EUNURBCDEFGHIJKLMNOPQUGAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURGVD
+        UMUJUKEUNAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURAGVDUMAUJUKDUMUJU
+        KCFHULUMUJUKEUNUJUKKEIUOUPUQURURVIRVJVKAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKE
+        IUOUPUQURURURCDUMUJUKEUNAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURAC
+        DUMAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURVISVJVKAUJUKDUMUJUKCFHULU
+        MUJUKEUNUJUKKEIUOUPUQURURUREDUMUJUKEUNAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEI
+        UOUPUQURURURAEDUMAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURVITVJVKAUJU
+        KDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURFDUMUJUKEUNAUJUKDUMUJUKCFHULUM
+        UJUKEUNUJUKKEIUOUPUQURURURAFDUMAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQU
+        RURVIUAVJVKAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURKDUMUJUKEUNAUJU
+        KDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURAKDUMAUJUKDUMUJUKCFHULUMUJUKEU
+        NUJUKKEIUOUPUQURURVIUBVJVKAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURUR
+        LDUMUJUKEUNAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURALDUMAUJUKDUMUJ
+        UKCFHULUMUJUKEUNUJUKKEIUOUPUQURURVIUCVJVKAUJUKDUMUJUKCFHULUMUJUKEUNUJUK
+        KEIUOUPUQURURURMDUMUJUKEUNAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURUR
+        AMDUMAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURVIUDVJVKAUJUKDUMUJUKCFH
+        ULUMUJUKEUNUJUKKEIUOUPUQURURURNDUMUJUKEUNAUJUKDUMUJUKCFHULUMUJUKEUNUJUK
+        KEIUOUPUQURURURANDUMAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURVIUEVJVK
+        AUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURCEFUSLMNUSGVFUOUPUJUKEUNAU
+        JUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURACEFUSLMNUSGVFUOUPAUJUKDUMUJ
+        UKCFHULUMUJUKEUNUJUKKEIUOUPUQURURVIUFVJVKAUJUKDUMUJUKCFHULUMUJUKEUNUJUK
+        KEIUOUPUQURURURUJUKEUNURUJUKCFHULUMECFHULUMAUJUKDUMUJUKCFHULUMUJUKEUNUJ
+        UKKEIUOUPUQURURURUJUKCFHULUMUJUKEUNAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOU
+        PUQURURURUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQAUJUKDUMUJUKCFHULUMUJUKEUNUJUKK
+        EIUOUPUQURURURUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURAUJUKDUMUJUKCFHUL
+        UMUJUKEUNUJUKKEIUOUPUQURURVLVHVMVKAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUP
+        UQURURURUJUKEUNURUJUKECFHULAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURU
+        RUJUKEUNVLVNVGAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURKCEJULUMCEUN
+        UQVOUJUKEUNAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURAKCEJULUMCEUNUQ
+        VOAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURVIUIVJVKVPAUJUKDUMUJUKCFHU
+        LUMUJUKEUNUJUKKEIUOUPUQURURURUJUKKEIUOUPURBCDEFGHUJUKIKLMNOPQAUJUKDUMUJ
+        UKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURGVDUMUJUKKEIUOUPAUJUKDUMUJUKCFHULUMU
+        JUKEUNUJUKKEIUOUPUQURURURAGVDUMAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQU
+        RURVIRVJVKAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURCDUMUJUKKEIUOUPA
+        UJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURACDUMAUJUKDUMUJUKCFHULUMUJU
+        KEUNUJUKKEIUOUPUQURURVISVJVKAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURUR
+        UREDUMUJUKKEIUOUPAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURAEDUMAUJU
+        KDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURVITVJVKAUJUKDUMUJUKCFHULUMUJUKEU
+        NUJUKKEIUOUPUQURURURFDUMUJUKKEIUOUPAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOU
+        PUQURURURAFDUMAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURVIUAVJVKAUJUKD
+        UMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURKDUMUJUKKEIUOUPAUJUKDUMUJUKCFHUL
+        UMUJUKEUNUJUKKEIUOUPUQURURURAKDUMAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPU
+        QURURVIUBVJVKAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURLDUMUJUKKEIUO
+        UPAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURALDUMAUJUKDUMUJUKCFHULUM
+        UJUKEUNUJUKKEIUOUPUQURURVIUCVJVKAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQ
+        URURURMDUMUJUKKEIUOUPAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURAMDUM
+        AUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURVIUDVJVKAUJUKDUMUJUKCFHULUMU
+        JUKEUNUJUKKEIUOUPUQURURURNDUMUJUKKEIUOUPAUJUKDUMUJUKCFHULUMUJUKEUNUJUKK
+        EIUOUPUQURURURANDUMAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURVIUEVJVKA
+        UJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURCEFUSLMNUSGVFUOUPUJUKKEIUOU
+        PAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURACEFUSLMNUSGVFUOUPAUJUKDU
+        MUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURVIUFVJVKAUJUKDUMUJUKCFHULUMUJUKEUNU
+        JUKKEIUOUPUQURURURUJUKDUMUJUKKEIUOUPAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUO
+        UPUQURURURUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURAUJUKDUMUJUKCFHULUMUJ
+        UKEUNUJUKKEIUOUPUQURURVLVMVKAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURUR
+        URCEVBUJUKKEIUOUPAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURACEVBAUJU
+        KDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURVIACEFDGHIKOPQUBSTUARUHVQVJVKAUJ
+        UKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURUJUKCFHULUMUJUKKEIUOUPAUJUKDU
+        MUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQAU
+        JUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURUJUKDUMUJUKCFHULUMUJUKEUNUJU
+        KKEIUOUPUQURAUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURVLVHVMVKAUJUKDUM
+        UJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURURUJUKKEIUOUPVLVRAUJUKDUMUJUKCFHULUM
+        UJUKEUNUJUKKEIUOUPUQURURURUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQAUJUKDUMUJUKCF
+        HULUMUJUKEUNUJUKKEIUOUPUQURURURUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQUR
+        AUJUKDUMUJUKCFHULUMUJUKEUNUJUKKEIUOUPUQURURVLVHVHVSVT $.
+    $}
+  $}
+
+
+$( Angle order ( ` leA ` ) and its witnesses: passing between "inside the
+   angle" and ` leA ` , transporting a witness across a congruent target angle,
+   and replacing either compared angle by a congruent one. $)
+
+  ${
+    inaglea.p $e |- P = ( Base ` G ) $.
+    inaglea.i $e |- I = ( Itv ` G ) $.
+    inaglea.k $e |- K = ( hlG ` G ) $.
+    inaglea.g $e |- ( ph -> G e. TarskiG ) $.
+    inaglea.a $e |- ( ph -> A e. P ) $.
+    inaglea.b $e |- ( ph -> B e. P ) $.
+    inaglea.c $e |- ( ph -> C e. P ) $.
+    inaglea.y $e |- ( ph -> Y e. P ) $.
+    inaglea.1 $e |- ( ph -> C ( inA ` G ) <" A B Y "> ) $.
+    $( If ` C ` lies inside angle ` <" A B Y "> ` , then angle ` <" A B C "> `
+       is less than or equal to ` <" A B Y "> ` .  (Contributed by JAG,
+       12-Aug-2026.) $)
+    inaglea $p |- ( ph -> <" A B C "> ( leA ` G ) <" A B Y "> ) $=
+      ( cleag cfv eqid inagne1 inagne3 necomd cgraid isleagd ) ABCDBECIFFSTZDJM
+      NOPNOQUGUAPRABCDEFGHJKMLNOPABCIEFGHDJKLPNOQMRUBADCABCIEFGHDJKLPNOQMRUCUDU
+      EUF $.
+  $}
+
+  ${
+  $( ` v ` is bound in the conclusion, so these are *mandatory* $d conditions
+     and they propagate to every caller.  Without them the statement cannot be
+     proved through ~ acopy , whose own frame demands its witness be distinct
+     from everything in scope; ~ hlcgrex is of the same shape and carries the
+     same list.  ` .- ` and ` L ` are deliberately absent: neither occurs in
+     this statement, so the proof supplies them internally with ~ eqid rather
+     than making all five callers pass them. $)
+    $d ph v $.  $d P v $.  $d I v $.  $d K v $.  $d G v $.  $d D v $.
+    $d E v $.  $d F v $.  $d W v $.  $d X v $.  $d Y v $.  $d Z v $.
+    cgrainag.p $e |- P = ( Base ` G ) $.
+    cgrainag.i $e |- I = ( Itv ` G ) $.
+    cgrainag.k $e |- K = ( hlG ` G ) $.
+    cgrainag.g $e |- ( ph -> G e. TarskiG ) $.
+    cgrainag.d $e |- ( ph -> D e. P ) $.
+    cgrainag.e $e |- ( ph -> E e. P ) $.
+    cgrainag.f $e |- ( ph -> F e. P ) $.
+    cgrainag.x $e |- ( ph -> X e. P ) $.
+    cgrainag.y $e |- ( ph -> Y e. P ) $.
+    cgrainag.z $e |- ( ph -> Z e. P ) $.
+    cgrainag.w $e |- ( ph -> W e. P ) $.
+    cgrainag.in $e |- ( ph -> W ( inA ` G ) <" D E F "> ) $.
+    cgrainag.cgb $e
+    |- ( ph -> <" D E F "> ( cgrA ` G ) <" X Y Z "> ) $.
+    $( Target-side in-angle transport: if ` W ` lies inside angle
+       ` <" D E F "> ` and that angle is congruent to ` <" X Y Z "> ` , then
+       some point inside ` <" X Y Z "> ` makes ` <" X Y v "> ` congruent to the
+       sub-angle ` <" D E W "> ` .  The geometric core of ~ leawittrg .
+       (Contributed by JAG, 12-Aug-2026.) $)
+    cgrainag $p |- ( ph -> E. v e. P ( v ( inA ` G ) <" X Y Z "> /\ <" D E W ">
+        ( cgrA ` G ) <" X Y v "> ) ) $=
+      ( clng cfv co wcel wceq wo cv cs3 cinag wbr ccgra wa wrex wn cstrkg simpr
+      adantr inagcgrasubhl inagcgrasubbtwn syl hlcomd orcd olcd eqid wi inagne1
+      simpl neneqd orel2 mpd lnhl mpjaodan inagcgratrgn exmid a1i ) AJCEGUGUHUI
+      UJCEUKULBUMKLMUNGUOUHUPCEJUNKLBUMUNGUQUHUPURBDUSJCEGUGUHUIUJCEUKULUTAJCEG
+      UGUHUIUJCEUKULURCJEIUHUPBUMKLMUNGUOUHUPCEJUNKLBUMUNGUQUHUPURBDUSECJHUIUJA
+      JCEGUGUHUIUJCEUKULURCJEIUHUPURBCDEFGHIJKLMNOPAJCEGUGUHUIUJCEUKULURGVAUJCJ
+      EIUHUPAGVAUJJCEGUGUHUIUJCEUKULQVCVCAJCEGUGUHUIUJCEUKULURCDUJCJEIUHUPACDUJ
+      JCEGUGUHUIUJCEUKULRVCVCAJCEGUGUHUIUJCEUKULUREDUJCJEIUHUPAEDUJJCEGUGUHUIUJ
+      CEUKULSVCVCAJCEGUGUHUIUJCEUKULURFDUJCJEIUHUPAFDUJJCEGUGUHUIUJCEUKULTVCVCA
+      JCEGUGUHUIUJCEUKULURJDUJCJEIUHUPAJDUJJCEGUGUHUIUJCEUKULUDVCVCAJCEGUGUHUIU
+      JCEUKULURKDUJCJEIUHUPAKDUJJCEGUGUHUIUJCEUKULUAVCVCAJCEGUGUHUIUJCEUKULURLD
+      UJCJEIUHUPALDUJJCEGUGUHUIUJCEUKULUBVCVCAJCEGUGUHUIUJCEUKULURMDUJCJEIUHUPA
+      MDUJJCEGUGUHUIUJCEUKULUCVCVCAJCEGUGUHUIUJCEUKULURCEFUNKLMUNGUQUHUPCJEIUHU
+      PACEFUNKLMUNGUQUHUPJCEGUGUHUIUJCEUKULUFVCVCAJCEGUGUHUIUJCEUKULURCJEIUHUPV
+      BVDAJCEGUGUHUIUJCEUKULURECJHUIUJURBCDEFGHIJKLMNOPAJCEGUGUHUIUJCEUKULURGVA
+      UJECJHUIUJAGVAUJJCEGUGUHUIUJCEUKULQVCVCAJCEGUGUHUIUJCEUKULURCDUJECJHUIUJA
+      CDUJJCEGUGUHUIUJCEUKULRVCVCAJCEGUGUHUIUJCEUKULUREDUJECJHUIUJAEDUJJCEGUGUH
+      UIUJCEUKULSVCVCAJCEGUGUHUIUJCEUKULURFDUJECJHUIUJAFDUJJCEGUGUHUIUJCEUKULTV
+      CVCAJCEGUGUHUIUJCEUKULURJDUJECJHUIUJAJDUJJCEGUGUHUIUJCEUKULUDVCVCAJCEGUGU
+      HUIUJCEUKULURKDUJECJHUIUJAKDUJJCEGUGUHUIUJCEUKULUAVCVCAJCEGUGUHUIUJCEUKUL
+      URLDUJECJHUIUJALDUJJCEGUGUHUIUJCEUKULUBVCVCAJCEGUGUHUIUJCEUKULURMDUJECJHU
+      IUJAMDUJJCEGUGUHUIUJCEUKULUCVCVCAJCEGUGUHUIUJCEUKULURJCEFUNGUOUHUPECJHUIU
+      JAJCEFUNGUOUHUPJCEGUGUHUIUJCEUKULUEVCVCAJCEGUGUHUIUJCEUKULURCEFUNKLMUNGUQ
+      UHUPECJHUIUJACEFUNKLMUNGUQUHUPJCEGUGUHUIUJCEUKULUFVCVCAJCEGUGUHUIUJCEUKUL
+      URECJHUIUJVBVEAJCEGUGUHUIUJCEUKULURJCEIUHUPCJEIUHUPECJHUIUJULECJHUIUJAJCE
+      GUGUHUIUJCEUKULURJCEIUHUPURCJEIUHUPECJHUIUJAJCEGUGUHUIUJCEUKULURJCEIUHUPU
+      RJCEDGHIVANOPAJCEGUGUHUIUJCEUKULURJCEIUHUPURAJCEGUGUHUIUJCEUKULURJDUJAJCE
+      GUGUHUIUJCEUKULURJCEIUHUPVMAJDUJJCEGUGUHUIUJCEUKULUDVCVFAJCEGUGUHUIUJCEUK
+      ULURJCEIUHUPURAJCEGUGUHUIUJCEUKULURCDUJAJCEGUGUHUIUJCEUKULURJCEIUHUPVMACD
+      UJJCEGUGUHUIUJCEUKULRVCVFAJCEGUGUHUIUJCEUKULURJCEIUHUPURAJCEGUGUHUIUJCEUK
+      ULUREDUJAJCEGUGUHUIUJCEUKULURJCEIUHUPVMAEDUJJCEGUGUHUIUJCEUKULSVCVFAJCEGU
+      GUHUIUJCEUKULURJCEIUHUPURAJCEGUGUHUIUJCEUKULURGVAUJAJCEGUGUHUIUJCEUKULURJ
+      CEIUHUPVMAGVAUJJCEGUGUHUIUJCEUKULQVCVFAJCEGUGUHUIUJCEUKULURJCEIUHUPVBVGVH
+      AJCEGUGUHUIUJCEUKULURECJHUIUJURECJHUIUJCJEIUHUPAJCEGUGUHUIUJCEUKULURECJHU
+      IUJVBVIAJCEGUGUHUIUJCEUKULURCEJCDGHIGUGUHNOPACDUJJCEGUGUHUIUJCEUKULRVCAED
+      UJJCEGUGUHUIUJCEUKULSVCAJDUJJCEGUGUHUIUJCEUKULUDVCAGVAUJJCEGUGUHUIUJCEUKU
+      LQVCACDUJJCEGUGUHUIUJCEUKULRVCGUGUHVJAJCEGUGUHUIUJCEUKULURJCEGUGUHUIUJCEU
+      KULJCEGUGUHUIUJAJCEGUGUHUIUJCEUKULVBAJCEGUGUHUIUJCEUKULURCEUKUTJCEGUGUHUI
+      UJCEUKULJCEGUGUHUIUJVKACEUKUTJCEGUGUHUIUJCEUKULACEACEFDGHIJNOPUDRSTQUEVLV
+      NVCCEUKJCEGUGUHUIUJVOVFVPVQVRVRAJCEGUGUHUIUJCEUKULUTURBCDEFGHIGUGUHJKLMNO
+      PAGVAUJJCEGUGUHUIUJCEUKULUTQVCACDUJJCEGUGUHUIUJCEUKULUTRVCAEDUJJCEGUGUHUI
+      UJCEUKULUTSVCAFDUJJCEGUGUHUIUJCEUKULUTTVCAJDUJJCEGUGUHUIUJCEUKULUTUDVCAKD
+      UJJCEGUGUHUIUJCEUKULUTUAVCALDUJJCEGUGUHUIUJCEUKULUTUBVCAMDUJJCEGUGUHUIUJC
+      EUKULUTUCVCACEFUNKLMUNGUQUHUPJCEGUGUHUIUJCEUKULUTUFVCGUGUHVJAJCEFUNGUOUHU
+      PJCEGUGUHUIUJCEUKULUTUEVCAJCEGUGUHUIUJCEUKULUTVBVSJCEGUGUHUIUJCEUKULJCEGU
+      GUHUIUJCEUKULUTULAJCEGUGUHUIUJCEUKULVTWAVR $.
+  $}
+
+  ${
+  $( Mirrors ~ cgrainag 's mandatory $d list: ` v ` is bound in the conclusion
+     here too, and this proof instantiates ~ cgrainag 's witness with it. $)
+    $d ph v $.  $d P v $.  $d I v $.  $d K v $.  $d G v $.  $d D v $.
+    $d E v $.  $d F v $.  $d W v $.  $d X v $.  $d Y v $.  $d Z v $.  $d H v $.
+    $d U v $.  $d J v $.
+    leawittrg.p $e |- P = ( Base ` G ) $.
+    leawittrg.i $e |- I = ( Itv ` G ) $.
+    leawittrg.k $e |- K = ( hlG ` G ) $.
+    leawittrg.g $e |- ( ph -> G e. TarskiG ) $.
+    leawittrg.d $e |- ( ph -> D e. P ) $.
+    leawittrg.e $e |- ( ph -> E e. P ) $.
+    leawittrg.f $e |- ( ph -> F e. P ) $.
+    leawittrg.x $e |- ( ph -> X e. P ) $.
+    leawittrg.y $e |- ( ph -> Y e. P ) $.
+    leawittrg.z $e |- ( ph -> Z e. P ) $.
+    leawittrg.h $e |- ( ph -> H e. P ) $.
+    leawittrg.u $e |- ( ph -> U e. P ) $.
+    leawittrg.j $e |- ( ph -> J e. P ) $.
+    leawittrg.w $e |- ( ph -> W e. P ) $.
+    leawittrg.in $e |- ( ph -> W ( inA ` G ) <" D E F "> ) $.
+    leawittrg.cga $e
+    |- ( ph -> <" H U J "> ( cgrA ` G ) <" D E W "> ) $.
+    leawittrg.cgb $e
+    |- ( ph -> <" D E F "> ( cgrA ` G ) <" X Y Z "> ) $.
+    $( Target-side ` leA ` witness transport: move a witness inside
+       ` <" D E F "> ` across a congruent target angle ` <" X Y Z "> ` ,
+       carrying the angle ` <" H U J "> ` copied at that witness with it.
+       (Contributed by JAG, 12-Aug-2026.) $)
+    leawittrg $p |- ( ph -> E. v e. P ( v ( inA ` G ) <" X Y Z "> /\
+        <" H U J "> ( cgrA ` G ) <" X Y v "> ) ) $=
+      ( cv cs3 cinag cfv wbr ccgra wcel simpr simpld cstrkg adantr simpl simprd
+      wa cgratr jca cgrainag reximddv3 ) ABUNZNOPUOHUPUQURZCFMUOZNOVLUOZHUSUQZU
+      RZVGZVMIEKUOZVOVPURZVGBDAVLDUTZVGZVRVGZVMVTWCVMVQWBVRVAZVBWCIEKCDOFMHNJVL
+      LQRWBHVCUTZVRAWEWATVDVDSWBIDUTZVRAWFWAUGVDVDWBEDUTZVRAWGWAUHVDVDWBKDUTZVR
+      AWHWAUIVDVDWBCDUTZVRAWIWAUAVDVDWBFDUTZVRAWJWAUBVDVDWBMDUTZVRAWKWAUJVDVDWB
+      VSVNVPURZVRAWLWAULVDVDWBNDUTZVRAWMWAUDVDVDWBODUTZVRAWNWAUEVDVDWCAWAWBVRVE
+      VFWCVMVQWDVFVHVIABCDFGHJLMNOPQRSTUAUBUCUDUEUFUJUKUMVJVK $.
+  $}
+
+
+  ${
+    $d ph w $.  $d A w $.  $d B w $.  $d C w $.  $d D w $.  $d E w $.
+    $d F w $.  $d G w $.  $d P w $.  $d X w $.  $d Y w $.  $d Z w $.
+    $d ph v $.  $d A v $.  $d B v $.  $d C v $.  $d D v $.  $d E v $.
+    $d F v $.  $d G v $.  $d P v $.  $d X v $.  $d Y v $.  $d Z v $.  $d v w $.
+  $( ` I ` and ` K ` joined the list when ~ leawittrg 's witness became a
+     mandatory variable with $d against them; both are dummies here. $)
+    $d I v $.  $d K v $.  $d I w $.  $d K w $.
+    leacgra2.p $e |- P = ( Base ` G ) $.
+    leacgra2.i $e |- I = ( Itv ` G ) $.
+    leacgra2.k $e |- K = ( hlG ` G ) $.
+    leacgra2.g $e |- ( ph -> G e. TarskiG ) $.
+    leacgra2.a $e |- ( ph -> A e. P ) $.
+    leacgra2.b $e |- ( ph -> B e. P ) $.
+    leacgra2.c $e |- ( ph -> C e. P ) $.
+    leacgra2.x $e |- ( ph -> X e. P ) $.
+    leacgra2.y $e |- ( ph -> Y e. P ) $.
+    leacgra2.z $e |- ( ph -> Z e. P ) $.
+    leacgra2.d $e |- ( ph -> D e. P ) $.
+    leacgra2.e $e |- ( ph -> E e. P ) $.
+    leacgra2.f $e |- ( ph -> F e. P ) $.
+    leacgra2.1 $e |- ( ph -> <" A B C "> ( leA ` G ) <" X Y Z "> ) $.
+    leacgra2.2 $e |- ( ph -> <" X Y Z "> ( cgrA ` G ) <" D E F "> ) $.
+    $( Target-side ` leA ` transport: replacing the larger angle by a congruent
+       angle preserves the angle order.  Proved from ~ leawittrg and ~ isleag ,
+       the witness form of ` leA ` .  (Contributed by JAG, 12-Aug-2026.) $)
+    leacgra2 $p |- ( ph -> <" A B C "> ( leA ` G ) <" D E F "> ) $=
+      ( vv vw cs3 cleag cfv wbr cv cinag ccgra wa wrex wcel cstrkg adantr simpl
+      simprd simpr simpld leawittrg isleag mpbid r19.29a mpbird ) ABCDULZEGHULZ
+      IUMUNZUOUJUPZVNIUQUNZUOVMEGVPULIURUNZUOUSUJFUTZAUKUPZLMNULZVQUOZVMLMVTULV
+      RUOZUSZVSUKFAVTFVAZUSZWDUSZUJLFCMNIBJDKVTEGHOPQWFIVBVAZWDAWHWERVCVCWFLFVA
+      ZWDAWIWEUBVCVCWFMFVAZWDAWJWEUCVCVCWFNFVAZWDAWKWEUDVCVCWFEFVAZWDAWLWEUEVCV
+      CWFGFVAZWDAWMWEUFVCVCWFHFVAZWDAWNWEUGVCVCWFBFVAZWDAWOWESVCVCWFCFVAZWDAWPW
+      ETVCVCWFDFVAZWDAWQWEUAVCVCWGAWEWFWDVDVEWGWBWCWFWDVFZVGWGWBWCWRVEWFWAVNVRU
+      OZWDAWSWEUIVCVCVHAVMWAVOUOWDUKFUTUHAUKBCDLFMNIORSTUAUBUCUDVIVJVKAUJBCDEFG
+      HIORSTUAUEUFUGVIVL $.
+  $}
+
+  ${
+    $d ph w $.  $d A w $.  $d B w $.  $d C w $.  $d D w $.  $d E w $.
+    $d F w $.  $d G w $.  $d H w $.  $d J w $.  $d P w $.  $d U w $.
+    leacgra1.p $e |- P = ( Base ` G ) $.
+    leacgra1.i $e |- I = ( Itv ` G ) $.
+    leacgra1.k $e |- K = ( hlG ` G ) $.
+    leacgra1.g $e |- ( ph -> G e. TarskiG ) $.
+    leacgra1.a $e |- ( ph -> A e. P ) $.
+    leacgra1.b $e |- ( ph -> B e. P ) $.
+    leacgra1.c $e |- ( ph -> C e. P ) $.
+    leacgra1.d $e |- ( ph -> D e. P ) $.
+    leacgra1.e $e |- ( ph -> E e. P ) $.
+    leacgra1.f $e |- ( ph -> F e. P ) $.
+    leacgra1.h $e |- ( ph -> H e. P ) $.
+    leacgra1.u $e |- ( ph -> U e. P ) $.
+    leacgra1.j $e |- ( ph -> J e. P ) $.
+    leacgra1.1 $e |- ( ph -> <" A B C "> ( leA ` G ) <" D E F "> ) $.
+    leacgra1.2 $e |- ( ph -> <" A B C "> ( cgrA ` G ) <" H U J "> ) $.
+    $( Source-side ` leA ` transport: replacing the smaller angle by a
+       congruent angle preserves the angle order.  The counterpart of
+       ~ leacgra2 , proved directly from the witness form of ` leA `
+       ( ~ isleag , ~ isleagd ).  (Contributed by JAG, 12-Aug-2026.) $)
+    leacgra1 $p |- ( ph -> <" H U J "> ( leA ` G ) <" D E F "> ) $=
+      ( vw cv cs3 cinag cfv ccgra wa cleag wcel cstrkg adantr eqid simpl simprd
+      wbr simpr simpld cgracom cgratr isleagd wrex isleag mpbid r19.29a ) AUJUK
+      ZEHIULZJUMUNVDZBCDULZEHVNULJUOUNZVDZUPZKGMULZVOJUQUNZVDUJFAVNFURZUPZVTUPZ
+      KGMEFHIJWBVNOWDJUSURZVTAWFWCRUTUTZWDKFURZVTAWHWCUEUTUTZWDGFURZVTAWJWCUFUT
+      UTZWDMFURZVTAWLWCUGUTUTZWDEFURZVTAWNWCUBUTUTZWDHFURZVTAWPWCUCUTUTZWDIFURZ
+      VTAWRWCUDUTUTWBVAWEAWCWDVTVBVCZWEVPVSWDVTVEZVFWEKGMBFHCDJELVNNOPWGQWIWKWM
+      WDBFURZVTAXAWCSUTUTZWDCFURZVTAXCWCTUTUTZWDDFURZVTAXEWCUAUTUTZWEBCDKFGMJLN
+      OPWGQXBXDXFWIWKWMWDVQWAVRVDZVTAXGWCUIUTUTVGWOWQWSWEVPVSWTVCVHVIAVQVOWBVDV
+      TUJFVJUHAUJBCDEFHIJORSTUAUBUCUDVKVLVM $.
+  $}
+
+
+$( Angle order under congruence of both compared angles ( ~ leacgra ), used by
+   ~ tgextalt2 . $)
+
+  ${
+    leacgra.p $e |- P = ( Base ` G ) $.
+    leacgra.i $e |- I = ( Itv ` G ) $.
+    leacgra.k $e |- K = ( hlG ` G ) $.
+    leacgra.s $e |- .<_ = ( leA ` G ) $.
+    leacgra.g $e |- ( ph -> G e. TarskiG ) $.
+    leacgra.a $e |- ( ph -> A e. P ) $.
+    leacgra.b $e |- ( ph -> B e. P ) $.
+    leacgra.c $e |- ( ph -> C e. P ) $.
+    leacgra.d $e |- ( ph -> D e. P ) $.
+    leacgra.e $e |- ( ph -> E e. P ) $.
+    leacgra.f $e |- ( ph -> F e. P ) $.
+    leacgra.h $e |- ( ph -> H e. P ) $.
+    leacgra.u $e |- ( ph -> U e. P ) $.
+    leacgra.j $e |- ( ph -> J e. P ) $.
+    leacgra.x $e |- ( ph -> X e. P ) $.
+    leacgra.y $e |- ( ph -> Y e. P ) $.
+    leacgra.z $e |- ( ph -> Z e. P ) $.
+    leacgra.1 $e |- ( ph -> <" A B C "> .<_ <" D E F "> ) $.
+    leacgra.2 $e |- ( ph -> <" A B C "> ( cgrA ` G ) <" H U J "> ) $.
+    leacgra.3 $e |- ( ph -> <" D E F "> ( cgrA ` G ) <" X Y Z "> ) $.
+    $( GeoCoq l11__30 analogue: ` leA ` is preserved when both compared angles
+       are replaced by congruent angles.  (Contributed by JAG, 12-Aug-2026.) $)
+    leacgra $p |- ( ph -> <" H U J "> .<_ <" X Y Z "> ) $=
+      ( cs3 cleag cfv wbr breqi sylib leacgra1 leacgra2 sylibr ) AKGMUSZPQRUSZJ
+      UTVAZVBVHVIOVBAKGMPFQRJLNEHISTUAUCUJUKULUGUHUIUMUNUOABCDEFGHIJKLMNSTUAUCU
+      DUEUFUGUHUIUJUKULABCDUSZEHIUSZOVBVKVLVJVBUPVKVLOVJUBVCVDUQVEURVFVHVIOVJUB
+      VCVG $.
+  $}
+
+
+$( The exterior-angle theorem ~ tgexta and its route.  Throughout, the
+   triangle is ` A B C ` with the side ` B C ` extended beyond ` C ` to ` D ` ,
+   so the exterior angle is ` <" A C D "> ` and the remote interior angles are
+   those at ` A ` and ` B ` .
+
+   The construction is the classical one: reflect ` B ` through the midpoint of
+   ` A ` and ` C ` .  The reflected point carries the interior angle at ` A `
+   onto an angle at ` C ` ( ~ tgmircgra ) and lies inside the exterior angle
+   ( ~ tgextalem1inag ), which gives the non-strict bound ~ tgextale ; the
+   strictness comes from the open half-plane facts ending in ~ tgextancgra . $)
+
+  ${
+    tgmircgrg.p $e |- P = ( Base ` G ) $.
+    tgmircgrg.m $e |- .- = ( dist ` G ) $.
+    tgmircgrg.i $e |- I = ( Itv ` G ) $.
+    tgmircgrg.l $e |- L = ( LineG ` G ) $.
+    tgmircgrg.g $e |- ( ph -> G e. TarskiG ) $.
+    tgmircgrg.a $e |- ( ph -> A e. P ) $.
+    tgmircgrg.b $e |- ( ph -> B e. P ) $.
+    tgmircgrg.c $e |- ( ph -> C e. P ) $.
+    tgmircgrg.ncol $e |- ( ph -> -. ( A e. ( B L C ) \/ B = C ) ) $.
+    ${
+      $( Reflecting ` B ` through the midpoint of ` A ` and ` C ` carries
+         triangle ` C A B ` onto ` A C P ` , where ` P ` is the reflected
+         point.  The dimension condition the mid* family carries is discharged
+         from the non-collinearity through ~ ncoltgdim2 , not taken as a
+         hypothesis.  (Contributed by JAG, 12-Aug-2026.) $)
+      tgmircgrg $p |- ( ph -> <" C A B "> ( cgrG ` G )
+          <" A C ( ( ( pInvG ` G ) ` ( A ( midG ` G ) C ) ) ` B ) "> ) $=
+        ( cfv co ccgrg cmid cmir ncoltgdim2 midcl mircl tgcgrcoml ismidb mpbird
+        eqid eqidd wceq oveq1d miriso eqcomd fveq2d mirmir oveq2d eqtr3d trgcgr
+        eqtrd ) ADBCBEFUASDCBDFUBSTFUCSSSFIJKFUASUJNQOPOQABDFUBSTEFUCSFGHBDFUBS
+        TFUCSSICJKLMFUCSUJNABDEFGIJKLNAEFGHCDBJMLNPQORUDOQUEBDFUBSTFUCSSUJPUFAB
+        DBDEFGIJKLNOQOQABDITUKUGADCBDFUBSTFUCSSSITBCITADCBDFUBSTFUCSSSITBBDFUBS
+        TFUCSSSCBDFUBSTFUCSSSITBCITADBBDFUBSTFUCSSSCBDFUBSTFUCSSSIADBBDFUBSTFUC
+        SSSULBDFUBSTBDFUBSTULABDFUBSTUKABDEFUCSFGBDFUBSTIJKLNAEFGHCDBJMLNPQORUD
+        OQFUCSUJABDEFGIJKLNAEFGHCDBJMLNPQORUDOQUEUHUIUMABDFUBSTEFUCSFGHBDFUBSTF
+        UCSSIBCJKLMFUCSUJNABDEFGIJKLNAEFGHCDBJMLNPQORUDOQUEBDFUBSTFUCSSUJOPUNVA
+        UOACBDFUBSTFUCSSSDBDFUBSTFUCSSSITCDITCBDFUBSTFUCSSSBITABDFUBSTEFUCSFGHB
+        DFUBSTFUCSSICDJKLMFUCSUJNABDEFGIJKLNAEFGHCDBJMLNPQORUDOQUEBDFUBSTFUCSSU
+        JPQUNADBDFUBSTFUCSSSBCBDFUBSTFUCSSSIADBDFUBSTFUCSSSBBDFUBSTFUCSSSBDFUBS
+        TFUCSSSBADBBDFUBSTFUCSSSBDFUBSTFUCSSADBBDFUBSTFUCSSSULBDFUBSTBDFUBSTULA
+        BDFUBSTUKABDEFUCSFGBDFUBSTIJKLNAEFGHCDBJMLNPQORUDOQFUCSUJABDEFGIJKLNAEF
+        GHCDBJMLNPQORUDOQUEUHUIUPABDFUBSTBEFUCSFGHBDFUBSTFUCSSIJKLMFUCSUJNABDEF
+        GIJKLNAEFGHCDBJMLNPQORUDOQUEBDFUBSTFUCSSUJOUQVAURUSUT $.
+    $}
+
+    ${
+      $( The angle congruence the exterior-angle theorem opens with: the
+         interior angle at ` A ` in triangle ` C A B ` is congruent to the
+         angle at ` C ` in the midpoint-reflected triangle.  This is ~ cgrcgra
+         over ~ tgmircgrg ; the vertex distinctnesses come from the
+         non-collinearity via ~ tgbcne and ~ tgacne .  (Contributed by JAG,
+         12-Aug-2026.) $)
+      tgmircgra $p |- ( ph -> <" C A B "> ( cgrA ` G )
+          <" A C ( ( ( pInvG ` G ) ` ( A ( midG ` G ) C ) ) ` B ) "> ) $=
+        ( cfv cmir cmid co chlg ncoltgdim2 midcl tgbcne tgacne necomd tgmircgrg
+        eqid mircl cgrcgra ) ADBCBEDCBDFUASUBFTSSSFGFUCSJLNFUCSUJQOPOQABDFUASUB
+        EFTSFGHBDFUASUBFTSSICJKLMFTSUJNABDEFGIJKLNAEFGHCDBJMLNPQORUDOQUEBDFUASU
+        BFTSSUJPUKACDBEFGHJLMNPQORUFACBACDBEFGHJLMNPQORUGUHABCDEFGHIJKLMNOPQRUI
+        UL $.
+    $}
+
+    ${
+      $( The midpoint-reflected point is off line ` A C ` .  If it were on that
+         line, ~ mirln -- whose centre-on-the-line hypothesis is the midpoint,
+         itself on ` A C ` -- would put its reflection there too, and ~ mirmir
+         says that reflection is ` B ` , contradicting the triangle's
+         non-collinearity.  This is the strengthening ` inA ` cannot give: it
+         is what turns "inside the angle" into an open half-plane fact.
+         (Contributed by JAG, 12-Aug-2026.) $)
+      tgextamirn $p |- ( ph -> -. ( ( ( pInvG ` G ) ` ( A ( midG ` G ) C ) ) `
+          B ) e. ( A L C ) ) $=
+        ( cfv co cmid cmir wcel wn wceq wo wa ncolrot1 ncolcom ioran sylib eqid
+        simpld cstrkg adantr ncoltgdim2 midcl mirmir ncolne2 tgelrnln btwncolg1
+        crn midbtwn neneqd olcnd simpr mirln eqeltrrd mtand ) ACBDFUASTFUBSSSBD
+        HTUCCBDHTUCACBDHTUCUDBDUEUDACBDHTUCBDUEUFUDCBDHTUCUDBDUEUDUGAEFGHDBCJML
+        NQOPAEFGHCDBJMLNPQORUHUICBDHTUCBDUEUJUKUMACBDFUASTFUBSSSBDHTUCUGCBDFUAS
+        TFUBSSSBDFUASTFUBSSSCBDHTACBDFUASTFUBSSSBDHTUCUGBDFUASTCEFUBSFGHBDFUAST
+        FUBSSIJKLMFUBSULAFUNUCCBDFUASTFUBSSSBDHTUCNUOABDFUASTEUCCBDFUASTFUBSSSB
+        DHTUCABDEFGIJKLNAEFGHCDBJMLNPQORUPOQUQUOBDFUASTFUBSSULACEUCCBDFUASTFUBS
+        SSBDHTUCPUOURACBDFUASTFUBSSSBDHTUCUGBDFUASTCBDFUASTFUBSSSBDHTEFUBSFGHBD
+        FUASTFUBSSIJKLMFUBSULAFUNUCCBDFUASTFUBSSSBDHTUCNUOBDFUASTFUBSSULABDHTHV
+        BUCCBDFUASTFUBSSSBDHTUCAEFGHBDJLMNOQAEFGHBCDJLMNOPQRUSUTUOABDFUASTBDHTU
+        CCBDFUASTFUBSSSBDHTUCABDFUASTBDHTUCBDUEAEFGHBDBDFUASTJMLNOQABDEFGIJKLNA
+        EFGHCDBJMLNPQORUPOQUQABDEFGIJKLNAEFGHCDBJMLNPQORUPOQVCVAABDAEFGHBCDJLMN
+        OPQRUSVDVEUOACBDFUASTFUBSSSBDHTUCVFVGVHVI $.
+    $}
+  $}
+
+
+  ${
+    tgextancd.p $e |- P = ( Base ` G ) $.
+    tgextancd.m $e |- .- = ( dist ` G ) $.
+    tgextancd.i $e |- I = ( Itv ` G ) $.
+    tgextancd.l $e |- L = ( LineG ` G ) $.
+    tgextancd.g $e |- ( ph -> G e. TarskiG ) $.
+    tgextancd.a $e |- ( ph -> A e. P ) $.
+    tgextancd.b $e |- ( ph -> B e. P ) $.
+    tgextancd.c $e |- ( ph -> C e. P ) $.
+    tgextancd.d $e |- ( ph -> D e. P ) $.
+    tgextancd.ext $e |- ( ph -> C e. ( B I D ) ) $.
+    tgextancd.ncol $e |- ( ph -> -. ( A e. ( B L C ) \/ B = C ) ) $.
+    tgextancd.ne $e |- ( ph -> C =/= D ) $.
+    $( The target-side non-collinearity of the exterior angle.  Line ` C D ` is
+       line ` C B ` -- ` C ` lies between ` B ` and ` D ` , and ` C =/= D ` --
+       so ` A ` is off it exactly because the triangle is non-degenerate.  This
+       is ~ acopyeu 's acopy.2 frame hypothesis in ~ tgextancgra , and it is
+       what excludes ~ isinag 's ` x = C ` branch in ~ tgextahp .  (Contributed
+       by JAG, 12-Aug-2026.) $)
+    tgextancd $p |- ( ph -> -. ( A e. ( C L D ) \/ C = D ) ) $=
+      ( co wcel wn wceq wa wo ioran sylib simpld simprd neqned necomd tgbtwncom
+      ncolcom btwncolg2 olcnd tglineelsb2 eleq2d mtbid neneqd jca sylibr ) ABDE
+      IUCZUDZUEZDEUFZUEZUGVFVHUHUEAVGVIABDCIUCZUDZVFAVKUEZDCUFZUEZAVKVMUHUEVLVN
+      UGAFGHICDBKNMOQRPUAUPVKVMUIUJZUKAVJVEBAFDCEGHIKMNORQADCAVLVNVOULZUMSADEUB
+      UNAEVJUDVMAFGHIDCEKNMORQSACDEFGHJKLMOQRSTUOUQVPURUSUTVAADEUBVBVCVFVHUIVD
+      $.
+  $}
+
+
+  ${
+    $d a b $.  $d a t $.  $d b t $.  $d u v $.  $d u w $.  $d v w $.  $d u a $.
+    $d u b $.  $d u t $.  $d v a $.  $d v b $.  $d v t $.  $d w a $.  $d w b $.
+    $d w t $.  $d ph u $.  $d ph v $.  $d ph w $.  $d P u $.  $d P v $.
+    $d P w $.  $d I u $.  $d I v $.  $d I w $.  $d L u $.  $d L v $.  $d L w $.
+    $d K u $.  $d K v $.  $d K w $.  $d G u $.  $d G v $.  $d G w $.  $d A u $.
+    $d A v $.  $d A w $.  $d C u $.  $d C v $.  $d C w $.  $d D u $.  $d D v $.
+    $d D w $.  $d W u $.  $d W v $.  $d W w $.  $d X u $.  $d X v $.  $d X w $.
+    $d ph a $.  $d ph b $.  $d ph t $.  $d P a $.  $d P b $.  $d P t $.
+    $d I a $.  $d I b $.  $d I t $.  $d L a $.  $d L b $.  $d L t $.  $d K a $.
+    $d K b $.  $d K t $.  $d G a $.  $d G b $.  $d G t $.  $d A a $.  $d A b $.
+    $d A t $.  $d C a $.  $d C b $.  $d C t $.  $d D a $.  $d D b $.  $d D t $.
+    $d W a $.  $d W b $.  $d W t $.  $d X a $.  $d X b $.  $d X t $.
+    tgextahpl.p $e |- P = ( Base ` G ) $.
+    tgextahpl.m $e |- .- = ( dist ` G ) $.
+    tgextahpl.i $e |- I = ( Itv ` G ) $.
+    tgextahpl.l $e |- L = ( LineG ` G ) $.
+    tgextahpl.k $e |- K = ( hlG ` G ) $.
+    tgextahpl.g $e |- ( ph -> G e. TarskiG ) $.
+    tgextahpl.a $e |- ( ph -> A e. P ) $.
+    tgextahpl.c $e |- ( ph -> C e. P ) $.
+    tgextahpl.d $e |- ( ph -> D e. P ) $.
+    tgextahpl.w $e |- ( ph -> W e. P ) $.
+    tgextahpl.x $e |- ( ph -> X e. P ) $.
+    tgextahpl.ncd $e |- ( ph -> -. ( A e. ( C L D ) \/ C = D ) ) $.
+    tgextahpl.nw $e |- ( ph -> -. W e. ( A L C ) ) $.
+    tgextahpl.xad $e |- ( ph -> X e. ( A I D ) ) $.
+    tgextahpl.xk $e |- ( ph -> X ( K ` C ) W ) $.
+    $( The generic open half-plane core.  From a point ` X ` between ` A ` and
+       ` D ` that is on the half-line from ` C ` through ` W ` , with ` W ` off
+       line ` A C ` , both ` X ` and ` D ` and both ` X ` and ` W ` land on the
+       same side of line ` A C ` (two ~ colhp applications), and ~ hpgcom /
+       ~ hpgtr compose them. ` X =/= C ` is read off .xk by ~ hlne1 , so no
+       ` x = C ` case reaches here.  The $d s are on proof dummies only --
+       ~ colhp 's class abstraction needs its own bound variables -- so nothing
+       propagates to callers.  (Contributed by JAG, 12-Aug-2026.) $)
+    tgextahpl $p |- ( ph -> W ( ( hpG ` G ) ` ( A L C ) ) D ) $=
+      ( vt vu vv vw va vb co cv cdif wcel wa wrex copab ncolne1 tgelrnln eleq1d
+      wceq simpl simpr anbi12d simpll simplr oveq12d eleq12d cbvrexdva cbvopabv
+      chpg cfv wbr adantr cstrkg hlcomd hlln wne tglinecom necomd hlne1 eleqtrd
+      wn tglineelsb2 eqtrd eleqtrrd mtand jca btwncolg2 tgbtwncom btwncolg3 w3a
+      tglinerflx2 ishlg mpbid simp3d mpjaodan mpbird hpgcom ncolne2 tglinerflx1
+      wo colhp nelne2 syl2anc btwnhl1 hpgtr ) AUHKLDBCIUNZEFGIUIUOZEXKUPZUQZUJU
+      OZXMUQZURZUKUOZXLXOGUNZUQZUKXKUSZURZUIUJUTZULUMMOPRAEFGIBCMOPRSTAEFGIBCDM
+      OPRSTUAUDVAZVBZUBYBULUOZXMUQZUMUOZXMUQZURZUHUOZYFYHGUNZUQZUHXKUSZURUIUJUL
+      UMXLYFVDZXOYHVDZURZXQYJYAYNYQXNYGXPYIYQXLYFXMYOYPVEVCYQXOYHXMYOYPVFVCVGYQ
+      XTYMUKUHXKYQXRYKVDZURZXRYKXSYLYQYRVFYSXLYFXOYHGYOYPYRVHYOYPYRVIVJVKVLVGVM
+      ZUCAUHLKXKEFGIYCULUMMOPRYEUCYTUBALKXKFVNVOVOZVPLKCHVOVPZLXKUQZWFZURAUUBUU
+      DUGAUUCKXKUQUEAUUCURZKLCIUNZXKUUEKLCEFGHIMOQAKEUQZUUCUBVQZALEUQZUUCUCVQZA
+      CEUQZUUCTVQZAFVRUQZUUCRVQZPUUELKCEFGHVRMOQUUJUUHUULUUNAUUBUUCUGVQVSVTUUEX
+      KCBIUNZUUFUUEEBCFGIMOPUUNABEUQUUCSVQZUULABCWAUUCYDVQWBZUUEUUOCLIUNUUFUUEE
+      CBLFGIMOPUUNUULUUPACBWAUUCABCYDWCVQUUJALCWAZUUCALKCEFGHVRMOQUCUBTRUGWDZVQ
+      UUELXKUUOAUUCVFUUQWEWGUUEECLFGIMOPUUNUULUUJACLWAUUCALCUUSWCVQWBWHWHWIWJZW
+      KAUHLKCXKEFGHIYCULUMMOPRYEUCYTUBAEBCFGIMOPRSTYDWPALCKGUNUQZCLKIUNUQLKVDXE
+      KCLGUNUQZAUVAUREFGILKCMPOAUUMUVARVQAUUIUVAUCVQAUUGUVAUBVQAUUKUVATVQAUVAVF
+      WLAUVBURZEFGILKCMPOAUUMUVBRVQZAUUIUVBUCVQZAUUGUVBUBVQZAUUKUVBTVQZUVCCKLEF
+      GJMNOUVDUVGUVFUVEAUVBVFWMWNAUURKCWAZUVAUVBXEZAUUBUURUVHUVIWOUGALKCEFGHVRM
+      OQUCUBTRWQWRWSWTQXFXAXBUAALDUUAVPLDBHVOVPZUUDURAUVJUUDABDLCEFGHMOQSUAUCRT
+      UFAEFGIBCDMOPRSTUAUDXCABLABXKUQUUDBLWAAEBCFGIMOPRSTYDXDZUUTBLXKXGXHWCXIUU
+      TWKAUHLDBXKEFGHIYCULUMMOPRYEUCYTUAUVKAEFGILDBMPORUCUASUFWLQXFXAXJ $.
+  $}
+
+  ${
+    tgextalem1inag.p $e |- P = ( Base ` G ) $.
+    tgextalem1inag.m $e |- .- = ( dist ` G ) $.
+    tgextalem1inag.i $e |- I = ( Itv ` G ) $.
+    tgextalem1inag.l $e |- L = ( LineG ` G ) $.
+    tgextalem1inag.k $e |- K = ( hlG ` G ) $.
+    tgextalem1inag.g $e |- ( ph -> G e. TarskiG ) $.
+    tgextalem1inag.a $e |- ( ph -> A e. P ) $.
+    tgextalem1inag.b $e |- ( ph -> B e. P ) $.
+    tgextalem1inag.c $e |- ( ph -> C e. P ) $.
+    tgextalem1inag.d $e |- ( ph -> D e. P ) $.
+    tgextalem1inag.ext $e |- ( ph -> C e. ( B I D ) ) $.
+    tgextalem1inag.ncol $e |- ( ph -> -. ( A e. ( B L C ) \/ B = C ) ) $.
+    tgextalem1inag.ne $e |- ( ph -> C =/= D ) $.
+    ${
+      $d ph q $.  $d P q $.  $d I q $.  $d L q $.  $d K q $.  $d .- q $.
+      $d G q $.  $d A q $.  $d B q $.  $d C q $.  $d D q $.
+      $( The point obtained by reflecting ` B ` through the midpoint of ` A `
+         and ` C ` lies inside the exterior angle ` <" A C D "> ` .  Proved by
+         Pasch on the midpoint and the extension, turned into an in-angle
+         statement with ~ isinagd and moved from ray ` C M ` to ray ` C A ` by
+         ~ inaghl .  (Contributed by JAG, 12-Aug-2026.) $)
+      tgextalem1inag $p |- ( ph -> ( ( ( pInvG ` G ) ` ( A ( midG ` G ) C ) ) `
+          B ) ( inA ` G ) <" A C D "> ) $=
+        ( vq cmid co cmir eqid ncolrot2 ncolcom ncolrot1 ncoltgdim2 midcl mircl
+        cfv cv wcel cs3 cinag wbr cvv adantr cstrkg elexd simpl simprd wne wceq
+        wa wn ioran sylib eqidd midcgr eqcomd simpr tgcgreq eqtr3d necon3bd mpd
+        wo ex necomd axtgcgrrflx eqtrd midbtwn tgbtwncom neqned btwnlng1 simpld
+        mirbtwn jca nelne2 syl mirne mircgr ncolne1 tgsas2 cgrane3 btwnhl1 orrd
+        oacgr isinagd axtgpasch r19.29a btwnhl2 hlcomd hlid inaghl ) ABDGUFUPUG
+        ZDEBFEGHICXKGUHUPZUPZUPZXNLNPAXKFXLGHJXMKCLMNOXLUIZQABDFGHKLMNQAFGHJBDC
+        LONQRTSAFGHJCBDLONQSRTAFGHJBCDLONQRSTAFGHJCDBLONQSTRUCUJUKULZUMZRTUNZXM
+        UIZSUOZXRTUAQAUEUQZXKEHUGURZYADXNHUGURZVJZXNXKDEUSGUTUPVAUEFAYAFURZVJZY
+        DVJZXKDEFGHIVBXNYALNPYFXNFURZYDAYHYEXTVCVCZYFXKFURZYDAYJYEXRVCVCYFDFURZ
+        YDAYKYETVCVCZYFEFURZYDAYMYEUAVCVCYGGVDYFGVDURZYDAYNYEQVCVCZVEYGAYEYFYDV
+        FVGZYFXKDVHZYDAYQYEABDVIZVKZYQACBDJUGZURZVKZYSAUUAYRWBVKUUBYSVJXPUUAYRV
+        LVMZVGZAYRXKDAXKDVIZYRAUUEVJZXKBDUUFXKDXKBFGHKLMNAYNUUEQVCAYJUUEXRVCZAY
+        KUUETVCUUGABFURZUUERVCAXKDKUGZXKBKUGZVIUUEAUUJUUIABDXKFGHKLMNQXQRTAXKVN
+        VOZVPVCAUUEVQZVRUULVSWCVTWAZVCVCYFEDVHZYDAUUNYEADEUDWDZVCVCYFXNDVHZYDAU
+        UPYEADXNACBXKXNFDXKGHILNPQSRXRXTTXRABXKCDFXKXNGHKLMNQRXRSTXRXTABXKKUGZU
+        UIDXKKUGZAUUQUUJUUIAFGHKBXKLMNQRXRWEUUKWFAUURUUIAFGHKDXKLMNQTXRWEVPWFAB
+        XKCDFBXNGHKLNMQRXRSTRXTABDFGHKLMNQXQRTWGZAXNXKCFGHKLMNQXTXRSAXKCFXLGHJX
+        MKLMNOXOQXRXSSWLZWHAYSXKBVHUUDAYRXKBAXKBVIZYRAUVAVJZXKBDAUVAVQZUVBXKBXK
+        DFGHKLMNAYNUVAQVCAYJUVAXRVCZAUUHUVARVCUVDAYKUVATVCAUUJUUIVIUVAUUKVCUVCV
+        RVSWCVTWAAXKYTURZUUBVJXKCVHAUVEUUBAFGHJBDXKLNOQRTXRABDUUDWIZUUSWJAUUBYS
+        UUCWKWMXKCYTWNWOZUUMAXNXKAXKCFXLGHJXMKLMNOXOQXRXSSAXKCUVGWDWPWDXCAXKXNK
+        UGXKCKUGAXKCFXLGHJXMKLMNOXOQXRXSSWQVPAFGHJBCDLNOQRSTUCWRWSWTWDZVCVCZYGY
+        BYCYFYDVQZWKYGYADVIZYAXNDIUPVAZYGUVKVKZUVLYGUVMVJZDXNYAYAFGHILNPYGYKUVM
+        YLVCYGYHUVMYIVCYGYEUVMYPVCZYGYNUVMYOVCUVOYGYCUVMYGYBYCUVJVGVCYGDXNVHUVM
+        YGXNDUVIWDVCUVNYADYGUVMVQWIXAWCXBXDAFXKGHKDXNECUELMNQXTUASXRTUUTACDEFGH
+        KLMNQSTUAUBWHXEXFRUAXTAXKBDFGHIVDLNPXRRTQABDXKEFGHILNPRTXRQUAUUSUVFUUMX
+        GXHAEEDFGHILNPUAUATQUUOXIAXNXNDFGHILNPXTXTTQUVHXIXJ $.
+    $}
+
+    ${
+      $( The non-strict exterior-angle bound, a checkpoint only. ~ tgmircgra
+         gives the reflected copy of the interior angle, ~ tgextalem1inag puts
+         that copy inside the exterior angle; ~ inaglea turns "inside" into
+         ` leA ` and ~ leacgra1 transports the bound along the congruence
+         (flipped with ~ cgracom ).  No new geometry.  This bound is
+         deliberately too weak for ~ tgaas , whose contradiction branch already
+         holds an angle congruence and so satisfies ` leA ` for free --
+         strictness comes later, and only ~ tgexta is the exterior-angle
+         theorem.  (Contributed by JAG, 12-Aug-2026.) $)
+      tgextale $p |- ( ph -> <" C A B "> ( leA ` G ) <" A C D "> ) $=
+        ( cmid cfv co cmir eqid ncoltgdim2 midcl mircl tgextalem1inag tgmircgra
+        inaglea cgracom leacgra1 ) ABDCBDGUEUFUGGUHUFUFUFBFBDEGDHCILNPQRTABDGUE
+        UFUGFGUHUFGHJBDGUEUFUGGUHUFUFKCLMNOGUHUFUIQABDFGHKLMNQAFGHJCDBLONQSTRUC
+        UJRTUKBDGUEUFUGGUHUFUFUISULRTUATRSABDCBDGUEUFUGGUHUFUFUFFGHIELNPQRTABDG
+        UEUFUGFGUHUFGHJBDGUEUFUGGUHUFUFKCLMNOGUHUFUIQABDFGHKLMNQAFGHJCDBLONQSTR
+        UCUJRTUKBDGUEUFUGGUHUFUFUISULUAABCDEFGHIJKLMNOPQRSTUAUBUCUDUMUOADBCBFDC
+        BDGUEUFUGGUHUFUFUFGHILNQPTRSRTABDGUEUFUGFGUHUFGHJBDGUEUFUGGUHUFUFKCLMNO
+        GUHUFUIQABDFGHKLMNQAFGHJCDBLONQSTRUCUJRTUKBDGUEUFUGGUHUFUFUISULABCDFGHJ
+        KLMNOQRSTUCUNUPUQ $.
+    $}
+
+    ${
+      $( The midpoint-reflected point is not on the ray from ` C ` through
+         ` D ` .  If it were, then -- ray ` C D ` being the extension of
+         ` B C ` -- it would lie on line ` C B ` ; ~ mirln2 , the converse of
+         the ~ mirln used in ~ tgextamirn , would put the midpoint of ` A ` and
+         ` C ` on that line too; and the midpoint is collinear with ` A ` and
+         ` C ` , so ` A ` would land on line ` C B ` , contradicting the
+         triangle's non-collinearity. ` M =/= C ` comes from ~ ismidb /
+         ~ mirinv / ~ mirne , not from ~ midbtwn .  (Contributed by JAG,
+         12-Aug-2026.) $)
+      tgextamirnhl $p |- ( ph -> -. D ( K ` C ) ( ( ( pInvG ` G ) ` ( A ( midG
+          ` G ) C ) ) ` B ) ) $=
+        ( cmid cfv co cmir wcel wn wceq wo wa ncolcom ioran sylib simpld cstrkg
+        adantr ncoltgdim2 midcl midbtwn tgbtwncom btwncolg3 eqidd ismidb mpbird
+        wbr eqid wne ncolne2 necomd eqeq1d mirinv bitrd necon3bid mpbid eqnetrd
+        mirne neneqd olcnd simprd neqned tgelrnln tglinerflx2 mircl hlcomd hlln
+        crn simpr tglinecom eleqtrd btwncolg2 tglineelsb2 eleqtrrd mirln2 mtand
+        ) AECBDGUEUFUGGUHUFUFUFDIUFVHBDCJUGUIABDCJUGUIUJDCUKUJABDCJUGUIDCUKULUJ
+        BDCJUGUIUJDCUKUJUMAFGHJCDBLONQSTRUCUNBDCJUGUIDCUKUOUPUQAECBDGUEUFUGGUHU
+        FUFUFDIUFVHUMBDBDGUEUFUGJUGDCJUGAECBDGUEUFUGGUHUFUFUFDIUFVHUMBDBDGUEUFU
+        GJUGUIDBDGUEUFUGUKAECBDGUEUFUGGUHUFUFUFDIUFVHUMFGHJDBDGUEUFUGBLONAGURUI
+        ECBDGUEUFUGGUHUFUFUFDIUFVHQUSADFUIECBDGUEUFUGGUHUFUFUFDIUFVHTUSABDGUEUF
+        UGFUIECBDGUEUFUGGUHUFUFUFDIUFVHABDFGHKLMNQAFGHJCDBLONQSTRUCUTRTVAUSABFU
+        IECBDGUEUFUGGUHUFUFUFDIUFVHRUSABDGUEUFUGDBHUGUIECBDGUEUFUGGUHUFUFUFDIUF
+        VHABBDGUEUFUGDFGHKLMNQRABDFGHKLMNQAFGHJCDBLONQSTRUCUTRTVATABDFGHKLMNQAF
+        GHJCDBLONQSTRUCUTRTVBVCUSVDADBDGUEUFUGUKUJECBDGUEUFUGGUHUFUFUFDIUFVHADB
+        DGUEUFUGADBBDGUEUFUGGUHUFUFUFBDGUEUFUGADBBDGUEUFUGGUHUFUFUFUKBDGUEUFUGB
+        DGUEUFUGUKABDGUEUFUGVEABDFGUHUFGHBDGUEUFUGKLMNQAFGHJCDBLONQSTRUCUTRTGUH
+        UFVIABDFGHKLMNQAFGHJCDBLONQSTRUCUTRTVAVFVGABDGUEUFUGBFGUHUFGHJBDGUEUFUG
+        GUHUFUFKLMNOGUHUFVIQABDFGHKLMNQAFGHJCDBLONQSTRUCUTRTVABDGUEUFUGGUHUFUFV
+        IRABDGUEUFUGBADBVJBDGUEUFUGBVJABDAFGHJBCDLNOQRSTUCVKVLADBBDGUEUFUGBADBU
+        KBBDGUEUFUGGUHUFUFUFBUKBDGUEUFUGBUKADBBDGUEUFUGGUHUFUFUFBADBBDGUEUFUGGU
+        HUFUFUFUKBDGUEUFUGBDGUEUFUGUKABDGUEUFUGVEABDFGUHUFGHBDGUEUFUGKLMNQAFGHJ
+        CDBLONQSTRUCUTRTGUHUFVIABDFGHKLMNQAFGHJCDBLONQSTRUCUTRTVAVFVGVMABDGUEUF
+        UGBFGUHUFGHJBDGUEUFUGGUHUFUFKLMNOGUHUFVIQABDFGHKLMNQAFGHJCDBLONQSTRUCUT
+        RTVABDGUEUFUGGUHUFUFVIRVNVOVPVQVLVSVRVTUSWAAECBDGUEUFUGGUHUFUFUFDIUFVHU
+        MFDCBDGUEUFUGGHJLNOAGURUIECBDGUEUFUGGUHUFUFUFDIUFVHQUSADFUIECBDGUEUFUGG
+        UHUFUFUFDIUFVHTUSACFUIECBDGUEUFUGGUHUFUFUFDIUFVHSUSADCVJECBDGUEUFUGGUHU
+        FUFUFDIUFVHADCABDCJUGUIUJDCUKUJABDCJUGUIDCUKULUJBDCJUGUIUJDCUKUJUMAFGHJ
+        CDBLONQSTRUCUNBDCJUGUIDCUKUOUPWBWCUSABDGUEUFUGFUIECBDGUEUFUGGUHUFUFUFDI
+        UFVHABDFGHKLMNQAFGHJCDBLONQSTRUCUTRTVAUSABDGUEUFUGDVJECBDGUEUFUGGUHUFUF
+        UFDIUFVHADBDGUEUFUGADBBDGUEUFUGGUHUFUFUFBDGUEUFUGADBBDGUEUFUGGUHUFUFUFU
+        KBDGUEUFUGBDGUEUFUGUKABDGUEUFUGVEABDFGUHUFGHBDGUEUFUGKLMNQAFGHJCDBLONQS
+        TRUCUTRTGUHUFVIABDFGHKLMNQAFGHJCDBLONQSTRUCUTRTVAVFVGABDGUEUFUGBFGUHUFG
+        HJBDGUEUFUGGUHUFUFKLMNOGUHUFVIQABDFGHKLMNQAFGHJCDBLONQSTRUCUTRTVABDGUEU
+        FUGGUHUFUFVIRABDGUEUFUGBADBVJBDGUEUFUGBVJABDAFGHJBCDLNOQRSTUCVKVLADBBDG
+        UEUFUGBADBUKBBDGUEUFUGGUHUFUFUFBUKBDGUEUFUGBUKADBBDGUEUFUGGUHUFUFUFBADB
+        BDGUEUFUGGUHUFUFUFUKBDGUEUFUGBDGUEUFUGUKABDGUEUFUGVEABDFGUHUFGHBDGUEUFU
+        GKLMNQAFGHJCDBLONQSTRUCUTRTGUHUFVIABDFGHKLMNQAFGHJCDBLONQSTRUCUTRTVAVFV
+        GVMABDGUEUFUGBFGUHUFGHJBDGUEUFUGGUHUFUFKLMNOGUHUFVIQABDFGHKLMNQAFGHJCDB
+        LONQSTRUCUTRTVABDGUEUFUGGUHUFUFVIRVNVOVPVQVLVSVRVLUSAECBDGUEUFUGGUHUFUF
+        UFDIUFVHUMBDGUEUFUGCDCJUGFGUHUFGHJBDGUEUFUGGUHUFUFKLMNOGUHUFVIAGURUIECB
+        DGUEUFUGGUHUFUFUFDIUFVHQUSBDGUEUFUGGUHUFUFVIADCJUGJWIUIECBDGUEUFUGGUHUF
+        UFUFDIUFVHAFGHJDCLNOQTSADCABDCJUGUIUJDCUKUJABDCJUGUIDCUKULUJBDCJUGUIUJD
+        CUKUJUMAFGHJCDBLONQSTRUCUNBDCJUGUIDCUKUOUPWBWCWDUSABDGUEUFUGFUIECBDGUEU
+        FUGGUHUFUFUFDIUFVHABDFGHKLMNQAFGHJCDBLONQSTRUCUTRTVAUSACDCJUGUIECBDGUEU
+        FUGGUHUFUFUFDIUFVHAFDCGHJLNOQTSADCABDCJUGUIUJDCUKUJABDCJUGUIDCUKULUJBDC
+        JUGUIUJDCUKUJUMAFGHJCDBLONQSTRUCUNBDCJUGUIDCUKUOUPWBWCWEUSAECBDGUEUFUGG
+        UHUFUFUFDIUFVHUMCBDGUEUFUGGUHUFUFUFDEJUGDCJUGAECBDGUEUFUGGUHUFUFUFDIUFV
+        HUMCBDGUEUFUGGUHUFUFUFEDJUGDEJUGAECBDGUEUFUGGUHUFUFUFDIUFVHUMCBDGUEUFUG
+        GUHUFUFUFEDFGHIJLNPACBDGUEUFUGGUHUFUFUFFUIECBDGUEUFUGGUHUFUFUFDIUFVHABD
+        GUEUFUGFGUHUFGHJBDGUEUFUGGUHUFUFKCLMNOGUHUFVIQABDFGHKLMNQAFGHJCDBLONQST
+        RUCUTRTVABDGUEUFUGGUHUFUFVISWFUSAEFUIECBDGUEUFUGGUHUFUFUFDIUFVHUAUSADFU
+        IECBDGUEUFUGGUHUFUFUFDIUFVHTUSAGURUIECBDGUEUFUGGUHUFUFUFDIUFVHQUSOAECBD
+        GUEUFUGGUHUFUFUFDIUFVHUMECBDGUEUFUGGUHUFUFUFDFGHIURLNPAEFUIECBDGUEUFUGG
+        UHUFUFUFDIUFVHUAUSACBDGUEUFUGGUHUFUFUFFUIECBDGUEUFUGGUHUFUFUFDIUFVHABDG
+        UEUFUGFGUHUFGHJBDGUEUFUGGUHUFUFKCLMNOGUHUFVIQABDFGHKLMNQAFGHJCDBLONQSTR
+        UCUTRTVABDGUEUFUGGUHUFUFVISWFUSADFUIECBDGUEUFUGGUHUFUFUFDIUFVHTUSAGURUI
+        ECBDGUEUFUGGUHUFUFUFDIUFVHQUSAECBDGUEUFUGGUHUFUFUFDIUFVHWJWGWHAECBDGUEU
+        FUGGUHUFUFUFDIUFVHUMFEDGHJLNOAGURUIECBDGUEUFUGGUHUFUFUFDIUFVHQUSAEFUIEC
+        BDGUEUFUGGUHUFUFUFDIUFVHUAUSADFUIECBDGUEUFUGGUHUFUFUFDIUFVHTUSAEDVJECBD
+        GUEUFUGGUHUFUFUFDIUFVHADEUDVLUSWKWLADCJUGDEJUGUKECBDGUEUFUGGUHUFUFUFDIU
+        FVHAFDCEGHJLNOQTSADCABDCJUGUIUJDCUKUJABDCJUGUIDCUKULUJBDCJUGUIUJDCUKUJU
+        MAFGHJCDBLONQSTRUCUNBDCJUGUIDCUKUOUPWBWCUAADEUDVLAEDCJUGUIDCUKAFGHJDCEL
+        ONQTSUAACDEFGHKLMNQSTUAUBVCWMABDCJUGUIUJDCUKUJABDCJUGUIDCUKULUJBDCJUGUI
+        UJDCUKUJUMAFGHJCDBLONQSTRUCUNBDCJUGUIDCUKUOUPWBWAWNUSWOWPWNWOWQ $.
+    $}
+
+    ${
+      $d ph x $.  $d P x $.  $d .- x $.  $d I x $.  $d L x $.  $d K x $.
+      $d G x $.  $d A x $.  $d B x $.  $d C x $.  $d D x $.
+      $( The reflected point and ` D ` lie on the same OPEN half-plane of line
+         ` A C ` -- the fact ~ acopyeu requires and ` inA ` does not give.
+         ~ tgextalem1inag puts the reflected point inside the exterior angle,
+         which is non-strict: ~ isinag 's witness clause is
+         ` ( x = C \/ x ( K `` C ) P ) ` , so a point inside an angle may sit
+         on a boundary ray.  The ` x = C ` branch collapses to
+         ` ( A e. ( C L D ) \/ C = D ) ` and is killed by ~ tgextancd ; the
+         main branch is ~ tgextahpl , whose off-line input is ~ tgextamirn .
+         The $d s are the mandatory ones ~ isinag carries for the witness
+         variable.  (Contributed by JAG , 12-Aug-2026.) $)
+      tgextahp $p |- ( ph -> ( ( ( pInvG ` G ) ` ( A ( midG ` G ) C ) ) ` B ) (
+          ( hpG ` G ) ` ( A L C ) ) D ) $=
+        ( vx cv co wcel wceq cmid cfv cmir wbr chpg wne w3a wrex tgextalem1inag
+        wo wa cs3 cinag cstrkg eqid ncoltgdim2 midcl mircl isinag simprd adantr
+        mpbid simpr simprrl eqeltrrd btwncolg2 wn tgextancd pm2.21dd tgextamirn
+        simprl tgextahpl simprrr mpjaodan rexlimddv ) AUEUFBEHUGUHUEUFDUIUEUFCB
+        DGUJUKUGGULUKUKUKDIUKUMUSUTCBDGUJUKUGGULUKUKUKEBDJUGGUNUKUKUMUEFABDUOED
+        UOCBDGUJUKUGGULUKUKUKDUOUPUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIUK
+        UMUSUTUEFUQACBDGUJUKUGGULUKUKUKBDEVAGVBUKUMBDUOEDUOCBDGUJUKUGGULUKUKUKD
+        UOUPUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIUKUMUSUTUEFUQUTABCDEFGHI
+        JKLMNOPQRSTUAUBUCUDURAUEBDEFGHIVCCBDGUJUKUGGULUKUKUKLNPABDGUJUKUGFGULUK
+        GHJBDGUJUKUGGULUKUKKCLMNOGULUKVDQABDFGHKLMNQAFGHJCDBLONQSTRUCVERTVFBDGU
+        JUKUGGULUKUKVDSVGRTUAQVHVKVIAUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGGUL
+        UKUKUKDIUKUMUSUTUTUTUEUFDUICBDGUJUKUGGULUKUKUKEBDJUGGUNUKUKUMUEUFCBDGUJ
+        UKUGGULUKUKUKDIUKUMAUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIU
+        KUMUSUTUTUTUEUFDUIUTBDEJUGUHDEUIUSCBDGUJUKUGGULUKUKUKEBDJUGGUNUKUKUMAUE
+        UFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIUKUMUSUTUTUTUEUFDUIUTFG
+        HJDEBLONAUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIUKUMUSUTUTUT
+        GVCUHUEUFDUIAGVCUHUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIUKU
+        MUSUTUTQVJVJAUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIUKUMUSUT
+        UTUTDFUHUEUFDUIADFUHUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIU
+        KUMUSUTUTTVJVJAUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIUKUMUS
+        UTUTUTEFUHUEUFDUIAEFUHUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKD
+        IUKUMUSUTUTUAVJVJAUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIUKU
+        MUSUTUTUTBFUHUEUFDUIABFUHUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUK
+        UKDIUKUMUSUTUTRVJVJAUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIU
+        KUMUSUTUTUTUEUFDUIUTUEUFDBEHUGAUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGG
+        ULUKUKUKDIUKUMUSUTUTUTUEUFDUIVLAUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUG
+        GULUKUKUKDIUKUMUSUTUTUTUEUFBEHUGUHUEUFDUIAUEUFFUHUEUFBEHUGUHUEUFDUIUEUF
+        CBDGUJUKUGGULUKUKUKDIUKUMUSVMVJVNVOAUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJ
+        UKUGGULUKUKUKDIUKUMUSUTUTUTBDEJUGUHDEUIUSVPUEUFDUIABDEJUGUHDEUIUSVPUEUF
+        FUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIUKUMUSUTUTABCDEFGHJKLMNOQ
+        RSTUAUBUCUDVQVJVJVRAUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIU
+        KUMUSUTUTUTUEUFCBDGUJUKUGGULUKUKUKDIUKUMUTBDEFGHIJKCBDGUJUKUGGULUKUKUKU
+        EUFLMNOPAUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIUKUMUSUTUTUT
+        GVCUHUEUFCBDGUJUKUGGULUKUKUKDIUKUMAGVCUHUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCB
+        DGUJUKUGGULUKUKUKDIUKUMUSUTUTQVJVJAUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJU
+        KUGGULUKUKUKDIUKUMUSUTUTUTBFUHUEUFCBDGUJUKUGGULUKUKUKDIUKUMABFUHUEUFFUH
+        UEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIUKUMUSUTUTRVJVJAUEUFFUHUEUFB
+        EHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIUKUMUSUTUTUTDFUHUEUFCBDGUJUKUGGUL
+        UKUKUKDIUKUMADFUHUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIUKUM
+        USUTUTTVJVJAUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIUKUMUSUTU
+        TUTEFUHUEUFCBDGUJUKUGGULUKUKUKDIUKUMAEFUHUEUFFUHUEUFBEHUGUHUEUFDUIUEUFC
+        BDGUJUKUGGULUKUKUKDIUKUMUSUTUTUAVJVJAUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGU
+        JUKUGGULUKUKUKDIUKUMUSUTUTUTCBDGUJUKUGGULUKUKUKFUHUEUFCBDGUJUKUGGULUKUK
+        UKDIUKUMACBDGUJUKUGGULUKUKUKFUHUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGG
+        ULUKUKUKDIUKUMUSUTUTABDGUJUKUGFGULUKGHJBDGUJUKUGGULUKUKKCLMNOGULUKVDQAB
+        DFGHKLMNQAFGHJCDBLONQSTRUCVERTVFBDGUJUKUGGULUKUKVDSVGVJVJAUEUFFUHUEUFBE
+        HUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIUKUMUSUTUTUTUEUFFUHUEUFCBDGUJUKUGG
+        ULUKUKUKDIUKUMAUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIUKUMUS
+        UTVTVJAUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIUKUMUSUTUTUTBD
+        EJUGUHDEUIUSVPUEUFCBDGUJUKUGGULUKUKUKDIUKUMABDEJUGUHDEUIUSVPUEUFFUHUEUF
+        BEHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIUKUMUSUTUTABCDEFGHJKLMNOQRSTUAUB
+        UCUDVQVJVJAUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIUKUMUSUTUT
+        UTCBDGUJUKUGGULUKUKUKBDJUGUHVPUEUFCBDGUJUKUGGULUKUKUKDIUKUMACBDGUJUKUGG
+        ULUKUKUKBDJUGUHVPUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIUKUM
+        USUTUTABCDFGHJKLMNOQRSTUCVSVJVJAUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUG
+        GULUKUKUKDIUKUMUSUTUTUTUEUFBEHUGUHUEUFCBDGUJUKUGGULUKUKUKDIUKUMAUEUFFUH
+        UEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIUKUMUSVMVJAUEUFFUHUEUFBEHUGU
+        HUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIUKUMUSUTUTUTUEUFCBDGUJUKUGGULUKUKUKDIU
+        KUMVLWAAUEUFFUHUEUFBEHUGUHUEUFDUIUEUFCBDGUJUKUGGULUKUKUKDIUKUMUSWBWCWD
+        $.
+    $}
+
+    ${
+      $d a b $.  $d a t $.  $d b t $.  $d u v $.  $d u w $.  $d v w $.
+      $d u a $.  $d u b $.  $d u t $.  $d v a $.  $d v b $.  $d v t $.
+      $d w a $.  $d w b $.  $d w t $.  $d ph u $.  $d ph v $.  $d ph w $.
+      $d P u $.  $d P v $.  $d P w $.  $d I u $.  $d I v $.  $d I w $.
+      $d L u $.  $d L v $.  $d L w $.  $d K u $.  $d K v $.  $d K w $.
+      $d G u $.  $d G v $.  $d G w $.  $d A u $.  $d A v $.  $d A w $.
+      $d B u $.  $d B v $.  $d B w $.  $d C u $.  $d C v $.  $d C w $.
+      $d D u $.  $d D v $.  $d D w $.  $d .- u $.  $d .- v $.  $d .- w $.
+      $d ph a $.  $d ph b $.  $d ph t $.  $d P a $.  $d P b $.  $d P t $.
+      $d I a $.  $d I b $.  $d I t $.  $d L a $.  $d L b $.  $d L t $.
+      $d K a $.  $d K b $.  $d K t $.  $d G a $.  $d G b $.  $d G t $.
+      $d A a $.  $d A b $.  $d A t $.  $d B a $.  $d B b $.  $d B t $.
+      $d C a $.  $d C b $.  $d C t $.  $d D a $.  $d D b $.  $d D t $.
+      $d .- a $.  $d .- b $.  $d .- t $.
+      $( The exterior angle is NOT congruent to the remote interior angle --
+         the strictness ~ tgextale cannot give, and what ~ tgaas 's
+         contradiction branch needs.  The exterior angle is ` <" A C D "> ` ,
+         at the extension of ` B C ` beyond ` C ` .  The tail of GeoCoq's
+         l11__41__aux , run through ~ acopyeu rather than
+         conga__cop__or__out__ts : a congruent exterior angle would, by
+         angle-construction uniqueness, put the midpoint-reflected point of
+         ~ tgmircgra on the ray ` C D ` -- the two rays make congruent angles
+         with the shared base ray ` C A ` and, by ~ tgextahp and ~ hpgid , lie
+         on the same open half-plane of line ` A C ` -- which ~ tgextamirnhl
+         forbids.  Both of ~ acopyeu 's non-collinearity hypotheses are
+         discharged, not assumed: source side by rotating the triangle's own
+         ncol , target side by ~ tgextancd .  (Contributed by JAG,
+         12-Aug-2026.) $)
+      tgextancgra $p |- ( ph -> -. <" C A B "> ( cgrA ` G ) <" A C D "> ) $=
+        ( vt vu vv vw va vb cs3 ccgra cfv wbr cmid co cmir tgextamirnhl wa wcel
+        cstrkg adantr wceq wo wn ncolrot1 tgextancd eqid ncoltgdim2 midcl mircl
+        simpr tgmircgra chpg cv cdif wrex copab ncolne2 tgelrnln eleq1d anbi12d
+        simpl simpll simplr oveq12d eleq12d cbvrexdva ioran sylib simpld necomd
+        cbvopabv tglinerflx2 tglinecom eleqtrd tglineelsb2 mtand hpgid tgextahp
+        wne acopyeu ) ADBCUKBDEUKGULUMUNECBDGUOUMUPGUQUMUMUMDIUMUNABCDEFGHIJKLM
+        NOPQRSTUAUBUCUDURADBCUKBDEUKGULUMUNUSDBCBFDEGHIJKECBDGUOUMUPGUQUMUMUMLN
+        MAGVAUTDBCUKBDEUKGULUMUNQVBADFUTDBCUKBDEUKGULUMUNTVBABFUTDBCUKBDEUKGULU
+        MUNRVBACFUTDBCUKBDEUKGULUMUNSVBABFUTDBCUKBDEUKGULUMUNRVBADFUTDBCUKBDEUK
+        GULUMUNTVBAEFUTDBCUKBDEUKGULUMUNUAVBOADBCJUPUTBCVCVDVEDBCUKBDEUKGULUMUN
+        AFGHJDBCLONQTRSAFGHJCDBLONQSTRUCVFVFVBABDEJUPUTDEVCVDVEDBCUKBDEUKGULUMU
+        NABCDEFGHJKLMNOQRSTUAUBUCUDVGVBAEFUTDBCUKBDEUKGULUMUNUAVBACBDGUOUMUPGUQ
+        UMUMUMFUTDBCUKBDEUKGULUMUNABDGUOUMUPFGUQUMGHJBDGUOUMUPGUQUMUMKCLMNOGUQU
+        MVHQABDFGHKLMNQAFGHJCDBLONQSTRUCVIRTVJBDGUOUMUPGUQUMUMVHSVKVBPADBCUKBDE
+        UKGULUMUNVLADBCUKBDCBDGUOUMUPGUQUMUMUMUKGULUMUNDBCUKBDEUKGULUMUNABCDFGH
+        JKLMNOQRSTUCVMVBAEEBDJUPGVNUMUMUNDBCUKBDEUKGULUMUNAUEEBDJUPFGHJUFVOFBDJ
+        UPVPUTUGVOFBDJUPVPUTUSUHVOUFVOUGVOHUPUTUHBDJUPVQUSUFUGVRUIUJLNOQAFGHJBD
+        LNOQRTAFGHJBCDLNOQRSTUCVSVTUAUFVOFBDJUPVPUTUGVOFBDJUPVPUTUSUHVOUFVOUGVO
+        HUPUTUHBDJUPVQUSUIVOFBDJUPVPUTUJVOFBDJUPVPUTUSUEVOUIVOUJVOHUPUTUEBDJUPV
+        QUSUFUGUIUJUFVOUIVOVCUGVOUJVOVCUSUFVOFBDJUPVPUTUGVOFBDJUPVPUTUSUIVOFBDJ
+        UPVPUTUJVOFBDJUPVPUTUSUHVOUFVOUGVOHUPUTUHBDJUPVQUEVOUIVOUJVOHUPUTUEBDJU
+        PVQUFVOUIVOVCUGVOUJVOVCUSUFVOFBDJUPVPUTUIVOFBDJUPVPUTUGVOFBDJUPVPUTUJVO
+        FBDJUPVPUTUFVOUIVOVCUGVOUJVOVCUSUFVOUIVOFBDJUPVPUFVOUIVOVCUGVOUJVOVCWCW
+        AUFVOUIVOVCUGVOUJVOVCUSUGVOUJVOFBDJUPVPUFVOUIVOVCUGVOUJVOVCVLWAWBUFVOUI
+        VOVCUGVOUJVOVCUSUHVOUFVOUGVOHUPUTUEVOUIVOUJVOHUPUTUHUEBDJUPUFVOUIVOVCUG
+        VOUJVOVCUSUHVOUEVOVCUSUHVOUEVOUFVOUGVOHUPUIVOUJVOHUPUFVOUIVOVCUGVOUJVOV
+        CUSUHVOUEVOVCVLUFVOUIVOVCUGVOUJVOVCUSUHVOUEVOVCUSUFVOUIVOUGVOUJVOHUFVOU
+        IVOVCUGVOUJVOVCUHVOUEVOVCWDUFVOUIVOVCUGVOUJVOVCUHVOUEVOVCWEWFWGWHWBWMAE
+        BDJUPUTBDEJUPUTABDEJUPUTVEDEVCVEABDEJUPUTDEVCVDVEBDEJUPUTVEDEVCVEUSABCD
+        EFGHJKLMNOQRSTUAUBUCUDVGBDEJUPUTDEVCWIWJWKAEBDJUPUTUSBDBJUPDEJUPABDBJUP
+        UTEBDJUPUTAFDBGHJLNOQTRABDAFGHJBCDLNOQRSTUCVSWLWNVBAEBDJUPUTUSFDBEGHJLN
+        OAGVAUTEBDJUPUTQVBADFUTEBDJUPUTTVBABFUTEBDJUPUTRVBADBXAEBDJUPUTABDAFGHJ
+        BCDLNOQRSTUCVSWLVBAEFUTEBDJUPUTUAVBAEDXAEBDJUPUTADEUDWLVBAEBDJUPUTUSEBD
+        JUPDBJUPAEBDJUPUTVLAEBDJUPUTUSFBDGHJLNOAGVAUTEBDJUPUTQVBABFUTEBDJUPUTRV
+        BADFUTEBDJUPUTTVBABDXAEBDJUPUTAFGHJBCDLNOQRSTUCVSVBWOWPWQWPWRWSVBACBDGU
+        OUMUPGUQUMUMUMEBDJUPGVNUMUMUNDBCUKBDEUKGULUMUNABCDEFGHIJKLMNOPQRSTUAUBU
+        CUDWTVBXBWR $.
+    $}
+  $}
+
+
+  ${
+    tgextaoa.p $e |- P = ( Base ` G ) $.
+    tgextaoa.m $e |- .- = ( dist ` G ) $.
+    tgextaoa.i $e |- I = ( Itv ` G ) $.
+    tgextaoa.k $e |- K = ( hlG ` G ) $.
+    tgextaoa.g $e |- ( ph -> G e. TarskiG ) $.
+    tgextaoa.a $e |- ( ph -> A e. P ) $.
+    tgextaoa.b $e |- ( ph -> B e. P ) $.
+    tgextaoa.c $e |- ( ph -> C e. P ) $.
+    tgextaoa.d $e |- ( ph -> D e. P ) $.
+    tgextaoa.e $e |- ( ph -> E e. P ) $.
+    tgextaoa.ext $e |- ( ph -> C e. ( B I D ) ) $.
+    tgextaoa.ext2 $e |- ( ph -> C e. ( A I E ) ) $.
+    tgextaoa.cb $e |- ( ph -> C =/= B ) $.
+    tgextaoa.ca $e |- ( ph -> C =/= A ) $.
+    tgextaoa.dc $e |- ( ph -> D =/= C ) $.
+    tgextaoa.ce $e |- ( ph -> C =/= E ) $.
+    $( The two exterior angles at ` C ` are VERTICAL, hence congruent.  Ray
+       ` C D ` is opposite ray ` C B ` and ray ` C E ` is opposite ray
+       ` C A ` , so ` <" B C E "> ` and ` <" A C D "> ` have both legs flipped.
+       One ~ sacgr (Schwabhaeuser 11.13, GeoCoq l11__13 ) does it in a single
+       shot, because ~ sacgr flips the first slot of each side independently:
+       the premise it wants is ` <" D C E "> ( cgrA `` G ) <" E C D "> ` , a
+       bare angle reversal by ~ cgraswap , needing no non-collinearity at all.
+       ~ oacgr (11.14) would prove the same thing from two supplements and is
+       not used.  (Contributed by JAG, 12-Aug-2026.) $)
+    tgextaoa $p |- ( ph -> <" B C E "> ( cgrA ` G ) <" A C D "> ) $=
+      ( cgraswap tgbtwncom sacgr ) AEDGGFDEHIKCBLNMPTSUAUASTRQAEDGFHIJLNPOTSUAU
+      FUGUHACDEFHIKLMNPRSTUBUIABDGFHIKLMNPQSUAUCUIUDUEUJ $.
+  $}
+
+  ${
+    tgextalt1.p $e |- P = ( Base ` G ) $.
+    tgextalt1.m $e |- .- = ( dist ` G ) $.
+    tgextalt1.i $e |- I = ( Itv ` G ) $.
+    tgextalt1.l $e |- L = ( LineG ` G ) $.
+    tgextalt1.k $e |- K = ( hlG ` G ) $.
+    tgextalt1.s $e |- .<_ = ( leA ` G ) $.
+    tgextalt1.g $e |- ( ph -> G e. TarskiG ) $.
+    tgextalt1.a $e |- ( ph -> A e. P ) $.
+    tgextalt1.b $e |- ( ph -> B e. P ) $.
+    tgextalt1.c $e |- ( ph -> C e. P ) $.
+    tgextalt1.d $e |- ( ph -> D e. P ) $.
+    tgextalt1.ext $e |- ( ph -> C e. ( B I D ) ) $.
+    tgextalt1.ncol $e |- ( ph -> -. ( A e. ( B L C ) \/ B = C ) ) $.
+    tgextalt1.ne $e |- ( ph -> C =/= D ) $.
+    $( ~ tgexta 's FIRST conjunct, strict -- the remote interior angle at ` A `
+       is strictly less than the exterior angle at ` C ` . ~ tgextale and
+       ~ tgextancgra deliver both halves already, but stated about
+       ` <" C A B "> ` ; ~ tgexta wants ` <" B A C "> ` , the same angle read
+       backwards.  So this is ~ cgraswap plus two transports: ~ leacgra1 for
+       the ` leA ` half, and ~ cgratr under ~ mtand for the negation -- if
+       ` <" B A C "> ` were congruent to the exterior angle then so would
+       ` <" C A B "> ` be, which ~ tgextancgra forbids.  (Contributed by JAG,
+       12-Aug-2026.) $)
+    tgextalt1 $p |- ( ph -> ( <" B A C "> .<_ <" A C D "> /\ -. <" B A C "> (
+        cgrA ` G ) <" A C D "> ) ) $=
+      ( cs3 wbr ccgra cfv cleag tgextale ncolne2 necomd cgraswap leacgra1 breqi
+      wn ncolne1 sylibr tgextancgra cstrkg wcel adantr simpr cgratr mtand jca
+      wa ) ACBDUGZBDEUGZKUHZVJVKGUIUJZUHZURAVJVKGUKUJZUHVLADBCBFBDEGCHDIMOQSUBT
+      UATUBUCUATUBABCDEFGHIJLMNOPQSTUAUBUCUDUEUFULADBCFGHIMOSQUBTUAABDAFGHJBCDM
+      OPSTUAUBUEUMUNAFGHJBCDMOPSTUAUBUEUSUOZUPVJVKKVORUQUTAVNDBCUGZVKVMUHABCDEF
+      GHIJLMNOPQSTUAUBUCUDUEUFVAAVNVIDBCCFDBDGBHEIMOAGVBVCVNSVDQADFVCVNUBVDZABF
+      VCVNTVDZACFVCVNUAVDZVTVSVRAVQVJVMUHVNVPVDVSVRAEFVCVNUCVDAVNVEVFVGVH $.
+  $}
+
+  ${
+    tgextalt2.p $e |- P = ( Base ` G ) $.
+    tgextalt2.m $e |- .- = ( dist ` G ) $.
+    tgextalt2.i $e |- I = ( Itv ` G ) $.
+    tgextalt2.l $e |- L = ( LineG ` G ) $.
+    tgextalt2.k $e |- K = ( hlG ` G ) $.
+    tgextalt2.s $e |- .<_ = ( leA ` G ) $.
+    tgextalt2.g $e |- ( ph -> G e. TarskiG ) $.
+    tgextalt2.a $e |- ( ph -> A e. P ) $.
+    tgextalt2.b $e |- ( ph -> B e. P ) $.
+    tgextalt2.c $e |- ( ph -> C e. P ) $.
+    tgextalt2.d $e |- ( ph -> D e. P ) $.
+    tgextalt2.e $e |- ( ph -> E e. P ) $.
+    tgextalt2.ext $e |- ( ph -> C e. ( B I D ) ) $.
+    tgextalt2.ext2 $e |- ( ph -> C e. ( A I E ) ) $.
+    tgextalt2.ncol $e |- ( ph -> -. ( A e. ( B L C ) \/ B = C ) ) $.
+    tgextalt2.ne $e |- ( ph -> C =/= D ) $.
+    tgextalt2.ne2 $e |- ( ph -> C =/= E ) $.
+    $( ~ tgexta 's SECOND conjunct, strict, at a supplied second extension
+       point ` E ` .  This is NOT a permutation of the first conjunct: ` E ` is
+       a new point, ` C ` between ` A ` and ` E ` , and ~ tgextale /
+       ~ tgextancgra are applied a second time at the reconfigured triangle
+       (the roles of ` A ` and ` B ` exchanged, exterior angle
+       ` <" B C E "> ` ). ~ tgextaoa then identifies ` <" B C E "> ` with
+       ` <" A C D "> ` as vertical angles, and the two halves are transported
+       across that congruence -- ~ leacgra for ` leA ` , and ~ cgratr under
+       ~ mtand for the negation, which ~ leacgra cannot move. ` E ` is
+       existentially constructed by ~ tgexta , not here.  (Contributed by JAG,
+       12-Aug-2026.) $)
+    tgextalt2 $p |- ( ph -> ( <" A B C "> .<_ <" A C D "> /\ -. <" A B C "> (
+        cgrA ` G ) <" A C D "> ) ) $=
+      ( cs3 wbr ccgra cfv cleag ncolrot2 ncolcom ncolrot1 tgextale breqi sylibr
+      wn ncolne1 necomd cgraswap ncolne2 tgextaoa leacgra tgextancgra wa cstrkg
+      wcel adantr simpr cgratr cgracom mtand jca ) ABCDUKZBDEUKZLULVSVTHUMUNZUL
+      ZVBADCBCFCDGHBIDJLBDENPRSTUCUBUAUBUCUEUAUBUCUAUCUDADCBUKZCDGUKZHUOUNZULWC
+      WDLULACBDGFHIJKMNOPQRTUBUAUCUEUGAFHIKCBDNQPTUBUAUCAFHIKBCDNQPTUAUBUCAFHIK
+      CDBNQPTUBUCUAUHUPUQURZUJUSWCWDLWESUTVAADCBFHIJNPTRUCUBUAACDAFHIKCDBNPQTUB
+      UCUAAFHIKCDBNQPTUBUCUAUHURVCVDZABCAFHIKBCDNPQTUAUBUCUHVCVDVEZABCDEFGHIJMN
+      OPRTUAUBUCUDUEUFUGWGABDAFHIKBCDNPQTUAUBUCUHVFVDADEUIVDUJVGZVHAWBWCWDWAULA
+      CBDGFHIJKMNOPQRTUBUAUCUEUGWFUJVIAWBVJZDCBBFDDEHCIGJNPAHVKVLWBTVMZRADFVLWB
+      UCVMZACFVLWBUBVMZABFVLWBUAVMZWNWLAEFVLWBUDVMZWJDCBBFDCDHBIEJNPWKRWLWMWNWN
+      WMWLAWCVSWAULWBWHVMWNWLWOAWBVNVOWMWLAGFVLWBUEVMAVTWDWAULWBACDGBFDEHIJNPTR
+      UBUCUEUAUCUDWIVPVMVOVQVR $.
+  $}
+
+  ${
+  $( ` y ` is the second extension point, a proof-internal dummy: mandatory
+     $d. $)
+    $d ph y $.  $d P y $.  $d .- y $.  $d I y $.  $d L y $.  $d K y $.
+    $d .<_ y $.  $d G y $.  $d A y $.  $d B y $.  $d C y $.  $d D y $.
+    tgexta.p $e |- P = ( Base ` G ) $.
+    tgexta.m $e |- .- = ( dist ` G ) $.
+    tgexta.i $e |- I = ( Itv ` G ) $.
+    tgexta.l $e |- L = ( LineG ` G ) $.
+    tgexta.k $e |- K = ( hlG ` G ) $.
+    tgexta.s $e |- .<_ = ( leA ` G ) $.
+    tgexta.g $e |- ( ph -> G e. TarskiG ) $.
+    tgexta.a $e |- ( ph -> A e. P ) $.
+    tgexta.b $e |- ( ph -> B e. P ) $.
+    tgexta.c $e |- ( ph -> C e. P ) $.
+    tgexta.d $e |- ( ph -> D e. P ) $.
+    tgexta.1 $e |- ( ph -> C e. ( B I D ) ) $.
+    tgexta.2 $e |- ( ph -> -. ( A e. ( B L C ) \/ B = C ) ) $.
+    tgexta.3 $e |- ( ph -> C =/= D ) $.
+    $( The exterior-angle theorem, GeoCoq l11__41 -- BOTH remote interior
+       angles of the triangle are STRICTLY less than the exterior angle at
+       ` C ` .  There is no ltA in set.mm , so strictness is carried inline as
+       ` leA ` together with the non-congruence; the pair is what ~ tgaas 's
+       contradiction branch needs, since a bare ` leA ` conclusion is satisfied
+       by a congruence and so contradicts nothing ( ~ tgextan records that the
+       pair is usable).  The second conjunct is not a permutation of the first:
+       ~ axtgsegcon builds a second extension point ` y ` beyond ` C ` on line
+       ` A C ` , ~ tgextalt2 reruns the construction there, and the two
+       exterior angles are identified as vertical by ~ tgextaoa .  (Contributed
+       by JAG, 12-Aug-2026.) $)
+    tgexta $p |- ( ph -> ( ( <" B A C "> .<_ <" A C D "> /\ -. <" B A C "> (
+        cgrA ` G ) <" A C D "> ) /\ ( <" A B C "> .<_ <" A C D "> /\ -.
+        <" A B C "> ( cgrA ` G ) <" A C D "> ) ) ) $=
+      ( vy cs3 wbr ccgra cfv wn wa tgextalt1 cv wcel cstrkg adantr simpl simprd
+      wceq simpr simpld wne eqcomd ncolne2 necomd tgcgrneq tgextalt2 axtgsegcon
+      co wo r19.29a jca ) ACBDUHZBDEUHZKUIVOVPGUJUKZUIULUMBCDUHZVPKUIVRVPVQUIUL
+      UMZABCDEFGHIJKLMNOPQRSTUAUBUCUDUEUFUNADBUGUOZHVKUPZDVTLVKZDBLVKZVAZUMZVSU
+      GFAVTFUPZUMZWEUMZBCDEFVTGHIJKLMNOPQRWGGUQUPZWEAWIWFSURURZWGBFUPZWEAWKWFTU
+      RURZWGCFUPZWEAWMWFUAURURWGDFUPZWEAWNWFUBURURZWGEFUPZWEAWPWFUCURURWHAWFWGW
+      EUSUTZWGDCEHVKUPZWEAWRWFUDURURWHWAWDWGWEVBZVCWGBCDJVKUPCDVAVLULZWEAWTWFUE
+      URURWGDEVDZWEAXAWFUFURURWHDBDVTFGHLMNOWJWOWLWOWQWHWBWCWHWAWDWSUTVEWGDBVDZ
+      WEAXBWFABDAFGHJBCDMOPSTUAUBUEVFVGURURVHVIAUGDBFGHLBDMNOSTUBUBTVJVMVN $.
+  $}
+
+  ${
+    tgextan.p $e |- P = ( Base ` G ) $.
+    tgextan.m $e |- .- = ( dist ` G ) $.
+    tgextan.i $e |- I = ( Itv ` G ) $.
+    tgextan.l $e |- L = ( LineG ` G ) $.
+    tgextan.k $e |- K = ( hlG ` G ) $.
+    tgextan.s $e |- .<_ = ( leA ` G ) $.
+    tgextan.g $e |- ( ph -> G e. TarskiG ) $.
+    tgextan.a $e |- ( ph -> A e. P ) $.
+    tgextan.b $e |- ( ph -> B e. P ) $.
+    tgextan.c $e |- ( ph -> C e. P ) $.
+    tgextan.d $e |- ( ph -> D e. P ) $.
+    tgextan.1 $e |- ( ph -> C e. ( B I D ) ) $.
+    tgextan.2 $e |- ( ph -> -. ( A e. ( B L C ) \/ B = C ) ) $.
+    tgextan.3 $e |- ( ph -> C =/= D ) $.
+    tgextan.cgr $e |- ( ph -> <" A B C "> ( cgrA ` G ) <" A C D "> ) $.
+    $( ~ tgexta 's strictness can be used -- a remote interior angle congruent
+       to the exterior angle is contradictory, so anything follows.  This is
+       the shape ~ tgaasexc consumes: that branch holds an angle congruence and
+       must close on it, which the non-strict ` leA ` -only form of ~ tgexta
+       could never let it do.  (Contributed by JAG, 12-Aug-2026.) $)
+    tgextan $p |- ( ph -> ps ) $=
+      ( cs3 ccgra cfv wbr wn wa tgexta simprd pm2.21dd ) ACDEUIZCEFUIZHUJUKZULZ
+      BUHAURUSLULZVAUMZADCEUIZUSLULVDUSUTULUMUNVBVCUNACDEFGHIJKLMNOPQRSTUAUBUCU
+      DUEUFUGUOUPUPUQ $.
+  $}
+
+
+$( The AAS assembly proper.  ~ tgaas1 reduces AAS to SAS by proving
+   the side included between the two given angles congruent; everything from
+   here to ~ tgaas1 exists to prove that one equality, by ruling out
+   ` ( B .- C ) =/= ( E .- F ) ` with the exterior-angle theorem ~ tgextan .
+
+   Nowhere is the third angle congruence
+   ` <" C A B "> ( cgrA `` G ) <" F D E "> ` derived from the two given
+   ones: that inference is the angle-sum theorem and is false in absolute
+   geometry. $)
+
+  ${
+    tgaasncol.p $e |- P = ( Base ` G ) $.
+    tgaasncol.i $e |- I = ( Itv ` G ) $.
+    tgaasncol.l $e |- L = ( LineG ` G ) $.
+    tgaasncol.g $e |- ( ph -> G e. TarskiG ) $.
+    tgaasncol.x $e |- ( ph -> X e. P ) $.
+    tgaasncol.y $e |- ( ph -> Y e. P ) $.
+    tgaasncol.z $e |- ( ph -> Z e. P ) $.
+    tgaasncol.w $e |- ( ph -> W e. P ) $.
+    tgaasncol.1 $e |- ( ph -> -. ( X e. ( Y L Z ) \/ Y = Z ) ) $.
+    tgaasncol.2 $e |- ( ph -> ( W e. ( Z L Y ) \/ Z = Y ) ) $.
+    tgaasncol.3 $e |- ( ph -> W =/= Z ) $.
+    $( Slide a non-collinearity along the line it is off: if ` X ` is off line
+       ` Y Z ` and ` W ` is a point of that line other than ` Z ` , then ` X `
+       is off line ` Z W ` too.  Lines ` Z Y ` and ` Z W ` coincide
+       ( ~ tglineeltr ), which is what the exterior-angle hypothesis of
+       ~ tgaasexc needs at the moving point.  (Contributed by JAG,
+       12-Aug-2026.) $)
+    tgaasncol $p |- ( ph -> -. ( X e. ( Z L W ) \/ Z = W ) ) $=
+      ( co wcel wceq wo ncolcom wa cstrkg adantr ncolrot1 ncolne1 necomd neneqd
+      wne olcnd simpr tglineeltr orcd mtand ) AGIFEUAUBZIFUCZUDZGIHEUAZUBZIHUCZ
+      UDABCDEHIGJLKMOPNRUEAVAUFZVCVDVEBIHGFCDEJKLACUGUBVAMUHAIBUBVAPUHAHBUBVAOU
+      HAIHUMVAAHIABCDEHIGJKLMOPNABCDEHIGJLKMOPNRUIUJUKZUHAFBUBVAQUHAFIUMVATUHZA
+      FVBUBZVAAVHVDSAIHVFULUNUHAGBUBVANUHVEUSUTAVAUOVEIFVEFIVGUKULUNUPUQUR $.
+  $}
+
+  ${
+    tgaasexc.p $e |- P = ( Base ` G ) $.
+    tgaasexc.m $e |- .- = ( dist ` G ) $.
+    tgaasexc.i $e |- I = ( Itv ` G ) $.
+    tgaasexc.l $e |- L = ( LineG ` G ) $.
+    tgaasexc.g $e |- ( ph -> G e. TarskiG ) $.
+    tgaasexc.d $e |- ( ph -> D e. P ) $.
+    tgaasexc.e $e |- ( ph -> E e. P ) $.
+    tgaasexc.s $e |- ( ph -> S e. P ) $.
+    tgaasexc.t $e |- ( ph -> T e. P ) $.
+    tgaasexc.1 $e |- ( ph -> -. ( D e. ( E L T ) \/ E = T ) ) $.
+    tgaasexc.2 $e |- ( ph -> S e. ( E I T ) ) $.
+    tgaasexc.3 $e |- ( ph -> S =/= E ) $.
+    tgaasexc.4 $e |- ( ph -> S =/= T ) $.
+    tgaasexc.5 $e
+    |- ( ph -> <" D T E "> ( cgrA ` G ) <" D S E "> ) $.
+    $( The contradiction branch of AAS, stated once for both orders of the two
+       candidate points. ` S ` lies strictly between ` E ` and ` T ` , and
+       ` D ` is off the line, so ` <" D S E "> ` is an exterior angle of
+       triangle ` D T S ` and is STRICTLY greater than the remote interior
+       angle at ` T ` -- while the hypothesis says the two are congruent.
+       ~ tgextan turns that into anything.  (Contributed by JAG,
+       12-Aug-2026.) $)
+    tgaasexc $p |- ( ph -> ps ) $=
+      ( chlg cfv cleag eqid tgbtwncom btwncolg1 ncolne2 ncolrot1 ncolne1 necomd
+      tgaasncol cgraid btwnhl1 cgrahl2 cgracom cgratr tgextan ) ABCFEGDHIHUFUGZ
+      JHUHUGZKLMNOVCUIZVDUIPQTSRAGEFDHIKLMNPRSTUBUJZADHIJECGFLNOPQRTSUAADHIJFGE
+      LONPTRSVFUKUDUPUCACFECDEFGHCIGVCLNPVEQTSQTRACFGCDFEHIVCLNPVEQTRQTSACFGCDF
+      GHIVCELNVEPQTRQTRACFGDHIVCLNPVEQTRADHIJCGFLNOPQRTUAULAGFADHIJGFCLNOPRTQAD
+      HIJGFCLONPRTQUAUMUNUOZUQSAFGECDHIVCLNVETRSPQVFVGUDURUSUTQSRUEVAVB $.
+  $}
+
+  ${
+    tgaasne.p $e |- P = ( Base ` G ) $.
+    tgaasne.m $e |- .- = ( dist ` G ) $.
+    tgaasne.i $e |- I = ( Itv ` G ) $.
+    tgaasne.l $e |- L = ( LineG ` G ) $.
+    tgaasne.k $e |- K = ( hlG ` G ) $.
+    tgaasne.g $e |- ( ph -> G e. TarskiG ) $.
+    tgaasne.d $e |- ( ph -> D e. P ) $.
+    tgaasne.e $e |- ( ph -> E e. P ) $.
+    tgaasne.f $e |- ( ph -> F e. P ) $.
+    tgaasne.h $e |- ( ph -> H e. P ) $.
+    tgaasne.1 $e |- ( ph -> -. ( D e. ( E L F ) \/ E = F ) ) $.
+    tgaasne.2 $e |- ( ph -> H ( K ` E ) F ) $.
+    tgaasne.3 $e |- ( ph -> F =/= H ) $.
+    tgaasne.4 $e
+    |- ( ph -> <" D F E "> ( cgrA ` G ) <" D H E "> ) $.
+    $( Two DISTINCT points ` F ` and ` H ` on one half-line from ` E ` ,
+       subtending congruent angles at a point ` D ` off the line, are
+       contradictory. ~ ishlg unfolds the half-line to "one of them is strictly
+       between ` E ` and the other" -- both sub-branches are proved, each by
+       ~ tgaasexc on its own triangle, and they are not permutations of one
+       another: the second needs the non-collinearity transported to line
+       ` E H ` by ~ cgrancol .  (Contributed by JAG, 12-Aug-2026.) $)
+    tgaasne $p |- ( ph -> ps ) $=
+      ( co wcel wa cstrkg adantr wo wn simpr wne cfv wbr w3a ishlg mpbid simp1d
+      wceq necomd cs3 ccgra tgaasexc cgraswaplr cgrancol simp2d simp3d mpjaodan
+      cgracom ) AHEFIUGUHBFEHIUGUHAHEFIUGUHUIBCDHFEGIKLMNOPAGUJUHHEFIUGUHRUKACD
+      UHHEFIUGUHSUKAEDUHHEFIUGUHTUKAHDUHHEFIUGUHUBUKAFDUHHEFIUGUHUAUKACEFKUGUHE
+      FVBULUMHEFIUGUHUCUKAHEFIUGUHUNAHEUOHEFIUGUHAHEUOFEUOHEFIUGUHFEHIUGUHULAHF
+      EJUPUQHEUOFEUOHEFIUGUHFEHIUGUHULURUDAHFEDGIJUJMOQUBUATRUSUTVAUKAHFUOHEFIU
+      GUHAFHUEVCUKACFEVDCHEVDGVEUPUQHEFIUGUHUFUKVFAFEHIUGUHUIBCDFHEGIKLMNOPAGUJ
+      UHFEHIUGUHRUKACDUHFEHIUGUHSUKAEDUHFEHIUGUHTUKAFDUHFEHIUGUHUAUKAHDUHFEHIUG
+      UHUBUKACEHKUGUHEHVBULUMFEHIUGUHAEFCEDHCGIKLMONRTUASTUBSACFECDHEGILMONRSUA
+      TSUBTUFVGPUCVHUKAFEHIUGUHUNAFEUOFEHIUGUHAHEUOFEUOHEFIUGUHFEHIUGUHULAHFEJU
+      PUQHEUOFEUOHEFIUGUHFEHIUGUHULURUDAHFEDGIJUJMOQUBUATRUSUTVIUKAFHUOFEHIUGUH
+      UEUKACHEVDCFEVDGVEUPUQFEHIUGUHACFECDHEGIJMORQSUATSUBTUFVLUKVFAHEUOFEUOHEF
+      IUGUHFEHIUGUHULAHFEJUPUQHEUOFEUOHEFIUGUHFEHIUGUHULURUDAHFEDGIJUJMOQUBUATR
+      USUTVJVK $.
+  $}
+
+  ${
+    tgaascgra.p $e |- P = ( Base ` G ) $.
+    tgaascgra.m $e |- .- = ( dist ` G ) $.
+    tgaascgra.i $e |- I = ( Itv ` G ) $.
+    tgaascgra.l $e |- L = ( LineG ` G ) $.
+    tgaascgra.k $e |- K = ( hlG ` G ) $.
+    tgaascgra.g $e |- ( ph -> G e. TarskiG ) $.
+    tgaascgra.a $e |- ( ph -> A e. P ) $.
+    tgaascgra.b $e |- ( ph -> B e. P ) $.
+    tgaascgra.c $e |- ( ph -> C e. P ) $.
+    tgaascgra.d $e |- ( ph -> D e. P ) $.
+    tgaascgra.e $e |- ( ph -> E e. P ) $.
+    tgaascgra.f $e |- ( ph -> F e. P ) $.
+    tgaascgra.h $e |- ( ph -> H e. P ) $.
+    tgaascgra.ncol $e |- ( ph -> -. ( C e. ( A L B ) \/ A = B ) ) $.
+    tgaascgra.1 $e |- ( ph -> ( A .- B ) = ( D .- E ) ) $.
+    tgaascgra.2 $e
+    |- ( ph -> <" A B C "> ( cgrA ` G ) <" D E F "> ) $.
+    tgaascgra.3 $e
+    |- ( ph -> <" B C A "> ( cgrA ` G ) <" E F D "> ) $.
+    tgaascgra.4 $e |- ( ph -> H ( K ` E ) F ) $.
+    tgaascgra.5 $e |- ( ph -> ( E .- H ) = ( B .- C ) ) $.
+    ${
+      $( The comparison triangle of the AAS route: with ` H ` placed on ray
+         ` E F ` at distance ` B C ` from ` E ` , the triangle ` D E H ` is
+         congruent to ` A B C ` ( ~ cgrahl2 then ~ tgsas ), so its angle at
+         ` H ` can be read off ( ~ cgrcgra ) and matched against the given
+         angle at ` F ` .  The result is the angle congruence the case split of
+         ~ tgaas1h consumes.  (Contributed by JAG, 12-Aug-2026.) $)
+      tgaascgra $p |- ( ph -> <" D F E "> ( cgrA ` G ) <" D H E "> ) $=
+        ( cgracom tgbcne tgacne necomd ccgrg cfv eqid co eqcomd tgsas cgr3simp3
+        cgrahl2 trgcgr cgrcgra cgratr cgraswaplr ) AGHEGFJEIKNOQPTUEUFUDUEUGUDA
+        GHECFJDBIGKELOQTSUEUFUDUBUCUAACDBGFHEIKLOQTSUBUCUAUEUFUDUKUNUEUGUDACDBG
+        FJEIKLOQTSUBUCUAUEUGUDABCDFIKMOQRTUAUBUCUHUOABDABCDFIKMOQRTUAUBUCUHUPUQ
+        ACDBGFIURUSZJEINOPVJUTZTUBUCUAUEUGUDAGJNVACDNVAUMVBZABCDEFVJGJIKNOPQVKT
+        UAUBUCUDUEUGABCDEFGJIKNOPQTUAUBUCUDUEUGUIABCDEFGHIKLJOQSTUAUBUCUDUEUFUJ
+        UGULVEVLVCVDUIVFVGVHVI $.
+    $}
+
+    ${
+      $( ~ tgaas1 with the constructed point ` H ` still explicit: the case
+         split on ` F = H ` .  Equal, and the side equality is a substitution;
+         distinct, and ~ tgaasne closes the branch.  BOTH branches are proved
+         -- assuming ` F = H ` would be assuming the theorem.  (Contributed by
+         JAG , 12-Aug-2026.) $)
+      tgaas1h $p |- ( ph -> ( B .- C ) = ( E .- F ) ) $=
+        ( co wceq wa eqcomd adantr simpr oveq2d eqtrd wne cstrkg wo wn cgrancol
+        wcel ncolrot1 cfv wbr cs3 ccgra tgaascgra tgaasne pm2.61dane ) ACDNUNGH
+        NUNUOHJAHJUOUPCDNUNGJNUNGHNUNACDNUNGJNUNUOHJUOAGJNUNCDNUNUMUQURAHJUOUPG
+        HNUNGJNUNAHJUOUPHJGNAHJUOUSUTUQVAAHJVBUPCDNUNGHNUNUOEFGHIJKLMNOPQRSAIVC
+        VGHJVBTURAEFVGHJVBUDURAGFVGHJVBUEURAHFVGHJVBUFURAJFVGHJVBUGURAEGHMUNVGG
+        HUOVDVEHJVBAFIKMEGHORQTUDUEUFABCDEFGHIKMNOQPTUAUBUCUDUEUFUJRUHVFVHURAJH
+        GLVIVJHJVBULURAHJVBUSAEHGVKEJGVKIVLVIVJHJVBABCDEFGHIJKLMNOPQRSTUAUBUCUD
+        UEUFUGUHUIUJUKULUMVMURVNVO $.
+    $}
+  $}
+
+
+  ${
+  $( ` x ` is the point copied onto ray ` E F ` , a proof-internal dummy of
+     ~ tgaas1 : mandatory $d. $)
+    $d ph x $.  $d P x $.  $d .- x $.  $d I x $.  $d L x $.  $d G x $.
+    $d A x $.  $d B x $.  $d C x $.  $d D x $.  $d E x $.  $d F x $.
+    tgaas1.p $e |- P = ( Base ` G ) $.
+    tgaas1.m $e |- .- = ( dist ` G ) $.
+    tgaas1.i $e |- I = ( Itv ` G ) $.
+    tgaas1.l $e |- L = ( LineG ` G ) $.
+    tgaas1.g $e |- ( ph -> G e. TarskiG ) $.
+    tgaas1.a $e |- ( ph -> A e. P ) $.
+    tgaas1.b $e |- ( ph -> B e. P ) $.
+    tgaas1.c $e |- ( ph -> C e. P ) $.
+    tgaas1.d $e |- ( ph -> D e. P ) $.
+    tgaas1.e $e |- ( ph -> E e. P ) $.
+    tgaas1.f $e |- ( ph -> F e. P ) $.
+    tgaas1.ncol $e |- ( ph -> -. ( C e. ( A L B ) \/ A = B ) ) $.
+    tgaas1.1 $e |- ( ph -> ( A .- B ) = ( D .- E ) ) $.
+    tgaas1.2 $e |- ( ph -> <" A B C "> ( cgrA ` G ) <" D E F "> ) $.
+    tgaas1.3 $e |- ( ph -> <" B C A "> ( cgrA ` G ) <" E F D "> ) $.
+    $( Under the AAS hypotheses, the side included between the two given angles
+       is congruent.  This is the whole content of AAS: ~ tgaas simply packages
+       it with SAS ( ~ tgsas ).  The point copied onto ray ` E F ` by
+       ~ tgaascgra is eliminated here.  (Contributed by JAG, 12-Aug-2026.) $)
+    tgaas1 $p |- ( ph -> ( B .- C ) = ( E .- F ) ) $=
+      ( vx cv chlg cfv wbr co wceq wa wcel cstrkg adantr simpl simprd wo wn cs3
+      eqid ccgra simpr simpld tgaas1h cgrancol tgbcne necomd hlcgrex r19.29a )
+      AUHUIHGIUJUKUKULGUHUILUMCDLUMUNUOCDLUMGHLUMUNUHFAUHUIFUPUOUHUIHGIUJUKUKUL
+      GUHUILUMCDLUMUNUOUOBCDEFGHIUHUIJIUJUKKLMNOPIUJUKVDAUHUIFUPUOIUQUPUHUIHGIU
+      JUKUKULGUHUILUMCDLUMUNUOAIUQUPUHUIFUPQURURAUHUIFUPUOBFUPUHUIHGIUJUKUKULGU
+      HUILUMCDLUMUNUOABFUPUHUIFUPRURURAUHUIFUPUOCFUPUHUIHGIUJUKUKULGUHUILUMCDLU
+      MUNUOACFUPUHUIFUPSURURAUHUIFUPUODFUPUHUIHGIUJUKUKULGUHUILUMCDLUMUNUOADFUP
+      UHUIFUPTURURAUHUIFUPUOEFUPUHUIHGIUJUKUKULGUHUILUMCDLUMUNUOAEFUPUHUIFUPUAU
+      RURAUHUIFUPUOGFUPUHUIHGIUJUKUKULGUHUILUMCDLUMUNUOAGFUPUHUIFUPUBURURAUHUIF
+      UPUOHFUPUHUIHGIUJUKUKULGUHUILUMCDLUMUNUOAHFUPUHUIFUPUCURURAUHUIFUPUOUHUIH
+      GIUJUKUKULGUHUILUMCDLUMUNUOUOAUHUIFUPAUHUIFUPUOUHUIHGIUJUKUKULGUHUILUMCDL
+      UMUNUOUSUTAUHUIFUPUODBCKUMUPBCUNVAVBUHUIHGIUJUKUKULGUHUILUMCDLUMUNUOADBCK
+      UMUPBCUNVAVBUHUIFUPUDURURAUHUIFUPUOBCLUMEGLUMUNUHUIHGIUJUKUKULGUHUILUMCDL
+      UMUNUOABCLUMEGLUMUNUHUIFUPUEURURAUHUIFUPUOBCDVCEGHVCIVEUKULUHUIHGIUJUKUKU
+      LGUHUILUMCDLUMUNUOABCDVCEGHVCIVEUKULUHUIFUPUFURURAUHUIFUPUOCDBVCGHEVCIVEU
+      KULUHUIHGIUJUKUKULGUHUILUMCDLUMUNUOACDBVCGHEVCIVEUKULUHUIFUPUGURURAUHUIFU
+      PUOUHUIHGIUJUKUKULGUHUILUMCDLUMUNUOUOUHUIHGIUJUKUKULGUHUILUMCDLUMUNAUHUIF
+      UPUOUHUIHGIUJUKUKULGUHUILUMCDLUMUNUOVFVGAUHUIFUPUOUHUIHGIUJUKUKULGUHUILUM
+      CDLUMUNUOUOUHUIHGIUJUKUKULGUHUILUMCDLUMUNAUHUIFUPUOUHUIHGIUJUKUKULGUHUILU
+      MCDLUMUNUOVFUTVHAUHGCDHFIJIUJUKLMOIUJUKVDUBSTQUCNAGHAEGHFIJKMOPQUAUBUCABC
+      DEFGHIJKLMONQRSTUAUBUCUFPUDVIVJVKABCDFIJKMOPQRSTUDVJVLVM $.
+
+    $( Angle-angle-side: two triangles with two congruent angles and a
+       congruent side not included between them are congruent.  The side
+       included between the two angles is congruent by ~ tgaas1 , which reduces
+       the theorem to SAS ( ~ tgsas ).  (Contributed by JAG, 12-Aug-2026.) $)
+    tgaas $p |- ( ph -> <" A B C "> ( cgrG ` G ) <" D E F "> ) $=
+      ( tgaas1 tgsas ) ABCDEFGHIJLMNOQRSTUAUBUCUEUFABCDEFGHIJKLMNOPQRSTUAUBUCUD
+      UEUFUGUHUI $.
+  $}
+
+
+$( (End of Jorge Agra's mathbox.) $)
+$( End $[ set-mbox-jag.mm $] $)
 
 $( Begin $[ set-mbox-sa.mm $] $)
 $( Skip $[ set-main.mm $] $)
@@ -888143,5 +890050,6 @@ $)
 
 $( (End of Kunhao Zheng's mathbox.) $)
 $( End $[ set-mbox-kz.mm $] $)
+
 
 $( End $[ set-mbox.mm $] $)
