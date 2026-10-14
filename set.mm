@@ -69718,27 +69718,28 @@ $)
     UDAIZUEJUFUCUGUEUCCQUDACUBMACNOPUDARSTUA $.
 
   ${
-    $d F x $.
-    $( If the domain of a function exists, so does the function.  Part of
-       Theorem 4.15(v) of [Monk1] p. 46.  As explained in ~ ax-rep ,
-       Replacement ensures that the image of a set under a function is a set.
-       The graph of a function ` F ` is precisely the image of its domain under
-       the mapping ` x ` to ` <. x , ( F `` x ) >. ` .  Thus, ~ funex naturally
-       expresses the application of Replacement to the existence of function
-       graphs.  (Note:  Any resemblance between F.U.N.E.X. and "Have You Any
-       Eggs" is purely a coincidence originated by Swedish chefs.)
-       (Contributed by NM, 11-Nov-1995.)  Establish this general existence
-       principle directly using ~ funimaexg , allowing ~ resfunexg and ~ fnex
-       to be derived as applications.  (Revised by Peter Mazsa,
-       11-Oct-2026.) $)
-    funex $p |- ( ( Fun F /\ dom F e. B ) -> F e. _V ) $=
-      ( vx wfun cdm wcel wa cv cfv cop cmpt cima cvv crn wfn funfnd dffn5 sylib
-      wceq id fvex fnasrn eqtrdi opex eqid dmmpti imaeq2i imadmrn eqtr3i adantr
-      eqtr4di funmpt funimaexg mpan adantl eqeltrd ) BDZBEZAFZGBCURCHZUTBIZJZKZ
-      URLZMUQBVDSUSUQBVCNZVDUQBCURVAKZVEUQBUROBVFSUQBUQTPCURBQRCURVAUTBUAUBUCVC
-      VCEZLVDVEVGURVCCURVBVCUTVAUDVCUEUFUGVCUHUIUKUJUSVDMFZUQVCDUSVHCURVBULVCUR
-      AUMUNUOUP $.
+    $d A x $.  $d F x $.
+    $( If the domain of a function is a set, the function is a set.  Theorem
+       6.16(1) of [TakeutiZaring] p. 28.  See ~ fnexALT for an alternate proof.
+       (Contributed by NM, 14-Aug-1994.)  Establish the general
+       function-existence principle directly using Replacement in the form of
+       ~ funimaexg , rather than deriving it from the restriction-specific
+       theorem ~ resfunexg .  (Revised by Steven Nguyen, 13-Oct-2026.) $)
+    fnex $p |- ( ( F Fn A /\ A e. B ) -> F e. _V ) $=
+      ( vx wfn wcel wa cv cfv cop cmpt cima cvv wceq biimpi crn cdm fvex fnasrn
+      dffn5 imadmrn opex eqid dmmpti imaeq2i eqtr4di adantr wfun funimaexg mpan
+      3eqtr2ri funmpt adantl eqeltrd ) CAEZABFZGCDADHZUQCIZJZKZALZMUOCVANUPUOCD
+      AURKZVAUOCVBNDACTOVBUTPUTUTQZLVADAURUQCRSUTUAVCAUTDAUSUTUQURUBUTUCUDUEUKU
+      FUGUPVAMFZUOUTUHUPVDDAUSULUTABUIUJUMUN $.
   $}
+
+  $( If the domain of a function exists, so does the function.  Part of Theorem
+     4.15(v) of [Monk1] p. 46.  This theorem is derived using the Axiom of
+     Replacement in the form of ~ fnex .  (Note:  Any resemblance between
+     F.U.N.E.X. and "Have You Any Eggs" is purely a coincidence originated by
+     Swedish chefs.)  (Contributed by NM, 11-Nov-1995.) $)
+  funex $p |- ( ( Fun F /\ dom F e. B ) -> F e. _V ) $=
+    ( wfun cdm wfn wcel cvv funfn fnex sylanb ) BCBBDZEKAFBGFBHKABIJ $.
 
   ${
     $d x A $.  $d x B $.
@@ -69759,15 +69760,6 @@ $)
     resiexd $p |- ( ph -> ( _I |` B ) e. _V ) $=
       ( cid wfun wcel cres cvv funi resfunexg sylancr ) AEFBCGEBHIGJDEBCKL $.
   $}
-
-  $( If the domain of a function is a set, the function is a set.  Theorem
-     6.16(1) of [TakeutiZaring] p. 28.  See ~ fnexALT for a proof using
-     ~ funimaexg .  (Contributed by NM, 14-Aug-1994.)  Derive this theorem from
-     the earlier general existence theorem ~ funex instead of ~ resfunexg .
-     (Revised by Peter Mazsa, 11-Oct-2026.) $)
-  fnex $p |- ( ( F Fn A /\ A e. B ) -> F e. _V ) $=
-    ( wfn wfun cdm wceq wa wcel df-fn eleq1a impcom funex sylan2 anassrs sylanb
-    cvv ) CADCEZCFZAGZHABIZCQIZCAJRTUAUBTUAHRSBIZUBUATUCABSKLBCMNOP $.
 
   ${
     fnexd.1 $e |- ( ph -> F Fn A ) $.
