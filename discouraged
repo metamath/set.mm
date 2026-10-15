@@ -15360,6 +15360,7 @@ New usage of "brprcneuALT" is discouraged (1 uses).
 New usage of "c-bnj14" is discouraged (131 uses).
 New usage of "c-bnj18" is discouraged (59 uses).
 New usage of "c0exALT" is discouraged (0 uses).
+New usage of "cardprcALT" is discouraged (0 uses).
 New usage of "cases2ALT" is discouraged (0 uses).
 New usage of "cayleyhamiltonALT" is discouraged (0 uses).
 New usage of "cba" is discouraged (85 uses).
@@ -18331,6 +18332,7 @@ New usage of "onfrALTlem4" is discouraged (2 uses).
 New usage of "onfrALTlem4VD" is discouraged (0 uses).
 New usage of "onfrALTlem5" is discouraged (2 uses).
 New usage of "onfrALTlem5VD" is discouraged (0 uses).
+New usage of "onprcALT" is discouraged (0 uses).
 New usage of "onsetreclem1" is discouraged (2 uses).
 New usage of "onsetreclem2" is discouraged (1 uses).
 New usage of "onsetreclem3" is discouraged (1 uses).
@@ -19991,6 +19993,7 @@ Proof modification of "brfi1indALT" is discouraged (741 steps).
 Proof modification of "brfvidRP" is discouraged (93 steps).
 Proof modification of "brprcneuALT" is discouraged (247 steps).
 Proof modification of "c0exALT" is discouraged (15 steps).
+Proof modification of "cardprcALT" is discouraged (59 steps).
 Proof modification of "cases2ALT" is discouraged (88 steps).
 Proof modification of "cayleyhamiltonALT" is discouraged (657 steps).
 Proof modification of "cbveuALT" is discouraged (48 steps).
@@ -20925,6 +20928,7 @@ Proof modification of "onfrALTlem4" is discouraged (126 steps).
 Proof modification of "onfrALTlem4VD" is discouraged (116 steps).
 Proof modification of "onfrALTlem5" is discouraged (320 steps).
 Proof modification of "onfrALTlem5VD" is discouraged (320 steps).
+Proof modification of "onprcALT" is discouraged (21 steps).
 Proof modification of "opelopab4" is discouraged (69 steps).
 Proof modification of "opexOLD" is discouraged (31 steps).
 Proof modification of "opidon2OLD" is discouraged (80 steps).

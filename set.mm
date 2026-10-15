@@ -591578,7 +591578,7 @@ $)
     $( Mirimanoff's paradox:  The class of grounded sets is not a set.  Here, a
        set ` x ` is grounded if there is no infinite membership-descending
        sequence of sets beginning with ` x ` .  See Paragraph 1 of [Quine]
-       p. 37 . (Contributed by Adrian Ducourtial, 11-Oct-2026.) $)
+       p. 37 .  (Contributed by Adrian Ducourtial, 11-Oct-2026.) $)
     mirimanoff $p |- M e/ _V $=
       ( cvv cv com wfn c0 cfv wceq csuc wcel wral w3a wex wn cab crab eqtr4i
       rabab mirimanoffr ) ABCDFDBGZHIJUDKAGLCGZMUDKUEUDKNCHOPBQRZASUFAFTEUFAUBU
@@ -591587,7 +591587,7 @@ $)
   $}
 
   ${
-    $d A x $. $d V x $.
+    $d A x $.  $d V x $.
     onprcr.1 $e |- A = { x e. V | Ord x } $.
     onprcr.2 $e |- Tr A $.
     $( Relative version of ~ onprc .  (Contributed by Adrian Ducourtial,
