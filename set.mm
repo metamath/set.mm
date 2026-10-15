@@ -591526,58 +591526,16 @@ $(
 $)
 
   ${
-    $d M m $.  $d f g m n $.  $d f g n x $.  $d M f n x $.
-    mirimanoff.1 $e |- M = { x | -. E. f ( f Fn _om /\ ( f ` (/) ) = x /\ A. n
-                    e. _om ( f ` suc n ) e. ( f ` n ) ) } $.
-    $( Mirimanoff's paradox:  The class of grounded sets is not a set.  Here, a
-       set ` x ` is grounded if there is no infinite membership-descending
-       sequence of sets beginning with ` x ` .  See Paragraph 1 of [Quine]
-       p. 37 .
-
-       Note that the definition of ` M ` presupposes that ` _om ` is available
-       as a set ( ~ omex ), which is equivalent to assuming ~ ax-inf2 .
-       (Contributed by Adrian Ducourtial, 11-Oct-2026.) $)
-    mirimanoff $p |- M e/ _V $=
-      ( vg vm cvv wcel cv com c0 cfv wceq wral w3a wex eleq12d wi fveq1 csuc wn
-      wfn cmpt omex mptex a1i fvex fnmpti peano1 suceq fveq2d fvmpt ax-mp fveq2
-      cbvralvw wa rspcv peano2 syl11 3ad2ant3 imp wb eqidd fvexd fvmptd4 adantl
-      eqid mpbird ralrimiva syl3an3b 3jca fneq1 eqeq1d ralbidv 3anbi123d spcedv
-      eleq2 3ad2ant2 mpbid eqeq2 3anbi2d exbidv notbid cab cbvexvw notbii abbii
-      eqtri elab2 sylib pm2.65i nexdv isseti ralrimivw fnmpt syl fvmptg sylancr
-      elex biimprd ancoms impancom mpancom ralrimiv syl5ibrcom eximdv mpii mtod
-      sylan ex elab2g mtbid nelir ) DHDHIZBJZKUCZLXPMZDNZCJZUAZXPMZXTXPMZIZCKOZ
-      PZBQZUBZXOYFBYFUBXOYFFJZKUCZLYIMZLUAZXPMZNZYAYIMZXTYIMZIZCKOZPZFQZYFYSGKG
-      JZUAZXPMZUDZKUCZLUUDMZYMNZYAUUDMZXTUUDMZIZCKOZPFHUUDUUDHIYFGKUUCUEUFUGYFU
-      UEUUGUUKUUEYFGKUUCUUDUUBXPUHUUDVHZUIUGUUGYFLKIZUUGUJGLUUCYMKUUDUUALNZUUBY
-      LXPUUALUKULUULYLXPUHZUMUNUGYEXQXSUUCUUAXPMZIZGKOZUUKYDUUQCGKXTUUANZYBUUCY
-      CUUPUUSYAUUBXPXTUUAUKULXTUUAXPUORUPXQXSUURPZUUJCKUUTXTKIZUQUUJYAUAZXPMZYB
-      IZUUTUVAUVDUURXQUVAUVDSXSYAKIZUURUVDUVAUUQUVDGYAKUUAYANZUUCUVCUUPYBUVFUUB
-      UVBXPUUAYAUKULZUUAYAXPUORURXTUSZUTVAVBUVAUUJUVDVCUUTUVAUUHUVCUUIYBUVAGYAU
-      UCUVCKUUDHUVGUVAUUDVDUVHUVAUVBXPVEVFGXTUUCYBKUUDUUAXTNZUUBYAXPUUAXTUKULUU
-      LYAXPUHUMRVGVIVJVKVLYIUUDNZYJUUEYNUUGYRUUKKYIUUDVMUVJYKUUFYMLYIUUDTVNUVJY
-      QUUJCKUVJYOUUHYPUUIYAYIUUDTXTYIUUDTRVOVPVQYFYMDIZYTUBZYFYMXRIZUVKYEXQUVMX
-      SUUMYEUVMSUJYDUVMCLKXTLNZYBYMYCXRUVNYAYLXPXTLUKULXTLXPUORURUNVAXSXQUVMUVK
-      VCYEXRDYMVRVSVTYJYKAJZNZYRPZFQZUBZUVLAYMDUUOUVOYMNZUVRYTUVTUVQYSFUVTUVPYN
-      YJYRUVOYMYKWAWBWCWDDXQXRUVONZYEPZBQZUBZAWEUVSAWEEUWDUVSAUWCUVRUWBUVQBFXPY
-      INZXQYJUWAUVPYEYRKXPYIVMUWEXRYKUVOLXPYITVNUWEYDYQCKUWEYBYOYCYPYAXPYITXTXP
-      YITRVOVPWFWGWHWIWJWKWLUGWMZXODDIZYHXOUWGYGUWFXOUWGXPGKDUDZNZBQZYGBUWHGKDU
-      EUFWNXOUWGUWJYGSXOUWGUQUWIYFBUWGUWIYFSXOUWGYFUWIUWHKUCZLUWHMZDNZYAUWHMZXT
-      UWHMZIZCKOZPUWGUWKUWMUWQUWGXOGKOUWKUWGXOGKDDWTZWOGKDUWHHUWHVHZWPWQUWGUUMX
-      OUWMUJUWRGLDDKHUWHUUNDVDUWSWRWSUWGUWPCKXOUWGUVAUWPSUWRXOUVAUWGUWPUVAXOUWG
-      UWPSUVAXOUQZUWPUWGUWTUWNDUWODUVAUVEXOUWNDNUVHGYADDKHUWHUVFDVDUWSWRXJGXTDD
-      KHUWHUVIDVDUWSWRRXAXBXCXDXEVLUWIXQUWKXSUWMYEUWQKXPUWHVMUWIXRUWLDLXPUWHTVN
-      UWIYDUWPCKUWIYBUWNYCUWOYAXPUWHTXTXPUWHTRVOVPXFVGXGXKXHXIUWDYHADDHUVODNZUW
-      CYGUXAUWBYFBUXAUWAXSXQYEUVODXRWAWBWCWDEXLXMWLXN $.
-    $( $j usage 'mirimanoff' avoids 'ax-reg'; $)
-  $}
-
-  ${
     $d M m $.  $d V m $.  $d f g m n $.  $d f g n x $.  $d M f n x $.
     $d V f n x $.
     mirimanoffr.1 $e |- M = { x e. V | -. E. f ( f Fn _om /\ ( f ` (/) ) = x
                      /\ A. n e. _om ( f ` suc n ) e. ( f ` n ) ) } $.
     $( Relative version of ~ mirimanoff (which corresponds to the case
-       ` V = _V ` ).  (Contributed by Adrian Ducourtial, 13-Oct-2026.) $)
+       ` V = _V ` ).
+
+       Note that the definition of ` M ` presupposes that ` _om ` is available
+       as a set ( ~ omex ), which is equivalent to assuming ~ ax-inf2 .
+       (Contributed by Adrian Ducourtial, 13-Oct-2026.) $)
     mirimanoffr $p |- M e/ V $=
       ( vg vm wcel cv com c0 cfv wceq wral w3a wex wn eleq12d fveq1 wfn cvv a1i
       csuc cmpt omex mptex fvex fnmpti peano1 suceq fveq2d fvmpt ax-mp cbvralvw
@@ -591611,6 +591569,66 @@ $)
       SUWNTYCXSUWNTSVPVQXHXIXJXLXMUWGYKADEDUVRDNZUWFYJUXHUWEYIBUXHUWDYBXTYHUVRD
       YAWJWAWBWCFWGXNXRYKXOWKXPXAXQ $.
     $( $j usage 'mirimanoffr' avoids 'ax-reg'; $)
+  $}
+
+  ${
+    $d M f n x $.
+    mirimanoff.1 $e |- M = { x | -. E. f ( f Fn _om /\ ( f ` (/) ) = x /\ A. n
+                    e. _om ( f ` suc n ) e. ( f ` n ) ) } $.
+    $( Mirimanoff's paradox:  The class of grounded sets is not a set.  Here, a
+       set ` x ` is grounded if there is no infinite membership-descending
+       sequence of sets beginning with ` x ` .  See Paragraph 1 of [Quine]
+       p. 37 . (Contributed by Adrian Ducourtial, 11-Oct-2026.) $)
+    mirimanoff $p |- M e/ _V $=
+      ( cvv cv com wfn c0 cfv wceq csuc wcel wral w3a wex wn cab crab eqtr4i
+      rabab mirimanoffr ) ABCDFDBGZHIJUDKAGLCGZMUDKUEUDKNCHOPBQRZASUFAFTEUFAUBU
+      AUC $.
+    $( $j usage 'mirimanoff' avoids 'ax-reg'; $)
+  $}
+
+  ${
+    $d A x $. $d V x $.
+    onprcr.1 $e |- A = { x e. V | Ord x } $.
+    onprcr.2 $e |- Tr A $.
+    $( Relative version of ~ onprc .  (Contributed by Adrian Ducourtial,
+       15-Oct-2026.) $)
+    onprcr $p |- -. A e. V $=
+      ( wcel word wn wtr cep wwe con0 wss crab cab rabssab df-on 3sstr4i epweon
+      cv wess mp2 df-ord mpbir2an ordirr ax-mp ordeq elrab3 mpbiri eleqtrrdi
+      mto ) BCFZBBFZBGZUMHUNBIBJKZEBLMLJKUOATZGZACNZUQAOBLUQACPDAQRSBLJUAUBBUCU
+      DZBUEUFULBURBULBURFUNUSUQUNABCUPBUGUHUIDUJUK $.
+    $( $j usage 'onprcr' avoids 'ax-reg'; $)
+  $}
+
+  $( Alternate proof of ~ onprc from ~ onprcr .  (Contributed by Adrian
+     Ducourtial, 15-Oct-2026.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
+  onprcALT $p |- -. On e. _V $=
+    ( vx con0 cvv cv word cab crab df-on rabab eqtr4i tron onprcr ) ABCBADEZAFM
+    ACGAHMAIJKL $.
+
+  ${
+    $d A x $.  $d V x $.
+    cardprcr.1 $e |- A = { x e. V | ( card ` x ) = x } $.
+    cardprcr.2 $e |- ( A e. V -> ( har ` U. A ) e. V ) $.
+    $( Relative version of ~ cardprc .  (Contributed by Adrian Ducourtial,
+       15-Oct-2026.) $)
+    cardprcr $p |- -. A e. V $=
+      ( wcel cuni char cfv cdom wbr harndom cvv wss uniexg ccrd wceq harcard cv
+      fveq2 id eqeq12d elrab2 sylanblrc elssuni syl ssdomg sylc mto ) BCFZBGZHI
+      ZUKJKZUKLUJUKMFULUKNZUMBCOUJULBFZUNUJULCFULPIZULQZUOEUKRASZPIZURQUQAULCBU
+      RULQZUSUPURULURULPTUTUAUBDUCUDULBUEUFULUKMUGUHUI $.
+  $}
+
+  ${
+    $d x y $.
+    $( Alternate proof of ~ cardprc from ~ cardprcr .  (Contributed by Adrian
+       Ducourtial, 15-Oct-2026.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    cardprcALT $p |- { x | ( card ` x ) = x } e/ _V $=
+      ( vy cv ccrd cfv wceq cab crab rabab fveq2 id eqeq12d cbvrabv eqtr3i wcel
+      cvv cuni char fvexd cardprcr nelir ) ACZDEZUBFZAGZPBUEPUDAPHUEBCZDEZUFFZB
+      PHUDAIUDUHABPUBUFFZUCUGUBUFUBUFDJUIKLMNUEPOUEQRSTUA $.
   $}
 
 
