@@ -82934,6 +82934,20 @@ $)
       BQZVHVGFNZRZBQZHZASZADECFUDVFVAVEGZVDHZASVNVDAVEUBVPVMAVOVIVDVLBVACAUEUFV
       HBSZVGFTZBSZNVHVRUCZRZBQVDVLVHVRBUGVBVQVCVSVBVQTABVAUHCUIUJBFUKULVKWABVJV
       TVHVGFUMUNUPUOUQURUSUT $.
+
+    $( Obsolete version of ~ suppvalbr as of 14-Oct-2026.  The value of the
+       operation constructing the support of a function expressed by binary
+       relations.  (Contributed by AV, 7-Apr-2019.)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
+    suppvalbrOLD $p |- ( ( R e. V /\ Z e. W ) -> ( R supp Z )
+                    = { x | ( E. y x R y /\ E. y ( x R y <-> y =/= Z ) ) } ) $=
+      ( wcel wa cv wbr wex wceq wn wb cab csn cima wne abbii a1i cdm crab csupp
+      df-rab vex eldm cvv imasng elv neeq1i neeq2i nabbib 3bitri anbi12i eqtr2i
+      co df-sn df-ne bibi2i exbii anbi2i suppval 3eqtr4rd ) CDGFEGHZAIZBIZCJZBK
+      ZVGVFFLZMZNZBKZHZAOZCVEPQZFPZRZACUAZUBZVHVGVFFRZNZBKZHZAOZCFUCUPVNVSLVDVS
+      VEVRGZVQHZAOVNVQAVRUDWFVMAWEVHVQVLBVECAUEUFVQVGBOZVPRWGVIBOZRVLVOWGVPVOWG
+      LABVEUGCUHUIUJVPWHWGBFUQUKVGVIBULUMUNSUOTWDVNLVDWCVMAWBVLVHWAVKBVTVJVGVFF
+      URUSUTVASTADECFVBVC $.
   $}
 
   ${
