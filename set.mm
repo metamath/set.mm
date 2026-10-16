@@ -108,6 +108,7 @@ JV  Jannik Vierling
 ZW  Zhi Wang
 EW  Emmett Weisz
 DAW David A. Wheeler
+SW  Sky Winter
 RW  Roger Witte
 KW  Kyle Wyonch
 JY  Jonathan Yan
@@ -82924,8 +82925,22 @@ $)
   ${
     $d R x y $.  $d Z x y $.
     $( The value of the operation constructing the support of a function
-       expressed by binary relations.  (Contributed by AV, 7-Apr-2019.) $)
+       expressed by binary relations.  (Contributed by AV, 7-Apr-2019.)  (Proof
+       shortened by Sky Winter, 14-Oct-2026.) $)
     suppvalbr $p |- ( ( R e. V /\ Z e. W ) -> ( R supp Z )
+                    = { x | ( E. y x R y /\ E. y ( x R y <-> y =/= Z ) ) } ) $=
+      ( wcel wa csupp co cv csn cima wne cdm crab wex wb cab wceq wbr df-rab wn
+      suppval vex eldm nabbib cvv imasng elv df-sn neeq12i df-ne bibi2i 3bitr4i
+      exbii anbi12i abbii eqtri eqtrdi ) CDGFEGHCFIJCAKZLMZFLZNZACOZPZVABKZCUAZ
+      BQZVHVGFNZRZBQZHZASZADECFUDVFVAVEGZVDHZASVNVDAVEUBVPVMAVOVIVDVLBVACAUEUFV
+      HBSZVGFTZBSZNVHVRUCZRZBQVDVLVHVRBUGVBVQVCVSVBVQTABVAUHCUIUJBFUKULVKWABVJV
+      TVHVGFUMUNUPUOUQURUSUT $.
+
+    $( Obsolete version of ~ suppvalbr as of 14-Oct-2026.  The value of the
+       operation constructing the support of a function expressed by binary
+       relations.  (Contributed by AV, 7-Apr-2019.)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
+    suppvalbrOLD $p |- ( ( R e. V /\ Z e. W ) -> ( R supp Z )
                     = { x | ( E. y x R y /\ E. y ( x R y <-> y =/= Z ) ) } ) $=
       ( wcel wa cv wbr wex wceq wn wb cab csn cima wne abbii a1i cdm crab csupp
       df-rab vex eldm cvv imasng elv neeq1i neeq2i nabbib 3bitri anbi12i eqtr2i
