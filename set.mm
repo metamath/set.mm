@@ -577312,22 +577312,23 @@ $)
   $}
 
   ${
-    $d A x y $.
+    $d A x y $.  $d A w y $.  $d A w z $.
     rmo6.1 $e |- F/ y ph $.
     $( Alternate version of ~ rmo2 where ` y ` has a restricted quantifier.
-       The antecedent ` E. y y e. A ` on the right-hand side handles the case
+       The antecedent ` E. z z e. A ` on the right-hand side handles the case
        where ` A ` is empty.  (Contributed by BTernaryTau, 29-Sep-2026.) $)
     rmo6 $p |- ( E* x e. A ph <->
-        ( E. y y e. A -> E. y e. A A. x e. A ( ph -> x = y ) ) ) $=
-      ( wrmo cv wcel wex weq wi wral wrex wreu rmo5 wn wa df-rex sylbi ja alnex
-      nfcv nfrexw nfn idd wal notbii bitr4i pm2.21 expd ralrid jctird imbitrrdi
-      alimi eximd wb reu6f biimp ralimi reximi a1d eleq1w cbvexvw exsimpl con3i
-      sylnbir sylibr nrexrmo syl rmo2i impbii ) ABDFZCGDHZCIZABCJZKZBDLZCDMZKZV
-      LABDMZABDNZKVSABDOVTWAVSVTPZVNVMVQQZCIVRWBVMWCCVTCACBDCDUBEUCUDWBVMVMVQWB
-      VMUEWBBGDHZAQZPZBUFZVQWBWEBIZPZWGVTWHABDRUGZWEBUAUHWGVPBDWFWDVPKBWFWDAVOW
-      EVOUIUJUNUKSULUOVQCDRUMWAVRVNWAAVOUPZBDLZCDMVRABCDEUQWLVQCDWKVPBDAVOURUSU
-      TSVATSVNVRVLVNPZWBVLWMWIWBVNWDBIZWIWDVMBCBCDVBVCWHWNWDABVDVEVFWJVGABDVHVI
-      ABCDEVJTVK $.
+        ( E. z z e. A -> E. y e. A A. x e. A ( ph -> x = y ) ) ) $=
+      ( vw cv wcel wex wi wral wrex wn wa df-rex sylbi ja eleq1w cbvexvw nfrexw
+      wrmo weq wreu rmo5 nfcv nfn idd wal notbii alnex bitr4i pm2.21 expd alimi
+      ralrid jctird eximd imbitrrdi reu6f biimp ralimi reximi a1d exsimpl con3i
+      wb sylnbir sylibr nrexrmo syl rmo2i impbii bitri imbi1i ) ABEUBZCHEIZCJZA
+      BCUCZKZBELZCEMZKZDHEIZDJZWBKVPWCVPABEMZABEUDZKWCABEUEWFWGWCWFNZVRVQWAOZCJ
+      WBWHVQWICWFCACBECEUFFUAUGWHVQVQWAWHVQUHWHBHEIZAOZNZBUIZWAWHWKBJZNZWMWFWNA
+      BEPUJZWKBUKULWMVTBEWLWJVTKBWLWJAVSWKVSUMUNUOUPQUQURWACEPUSWGWBVRWGAVSVGZB
+      ELZCEMWBABCEFUTWRWACEWQVTBEAVSVAVBVCQVDRQVRWBVPVRNZWHVPWSWOWHVRWJBJZWOWJV
+      QBCBCESTWNWTWJABVEVFVHWPVIABEVJVKABCEFVLRVMVRWEWBVRGHEIZGJWEVQXACGCGESTXA
+      WDGDGDESTVNVOVN $.
   $}
 
   $( The intersection of the universal class with a class is itself.  A
