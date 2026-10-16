@@ -72063,11 +72063,16 @@ $)
   cfsupp $a class finSupp $.
 
   ${
-    $d r z $.
+    $d r w z $.
     $( Define the property of a function to be finitely supported (in relation
-       to a given zero).  (Contributed by AV, 23-May-2019.) $)
-    df-fsupp $a |- finSupp
-                   = { <. r , z >. | ( Fun r /\ ( r supp z ) e. Fin ) } $.
+       to a given zero).  This definition will perhaps be most useful when the
+       domain of the function has decidable equality; consider as an
+       alternative ` ( R supp Z ) e. Fin ` (see ~ df-supp ) which will behave
+       well when a codomain of the function has decidable equality.
+       (Contributed by AV, 23-May-2019.)  (Revised by Jim Kingdon,
+       16-Oct-2026.) $)
+    df-fsuppfi $a |- finSupp = { <. r , z >. | ( Fun r /\
+      E. w ( w e. Fin /\ w C_ dom r /\ ( r " ( dom r \ w ) ) C_ { z } ) ) } $.
 
     $( The property of a function to be finitely supported is a relation.
        (Contributed by AV, 7-Jun-2019.) $)
