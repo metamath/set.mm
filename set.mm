@@ -577373,19 +577373,19 @@ $)
   $}
 
   ${
-    $d w z $.  $d A y z $.
+    $d x z $.  $d A y z $.
     fwfffun.1 $e |- F/ y ps $.
-    fwfffun.2 $e |- ( ph -> A. w e. A E. y A. z e. A ( ps -> z = y ) ) $.
-    fwfffun.3 $e |- F = { <. w , z >. | ( w e. A /\ z e. A /\ ps ) } $.
+    fwfffun.2 $e |- ( ph -> A. x e. A E. y A. z e. A ( ps -> z = y ) ) $.
+    fwfffun.3 $e |- F = { <. x , z >. | ( x e. A /\ z e. A /\ ps ) } $.
     $( If ` ps ` is function-like over ` A ` , then ` F ` matches its behavior.
        (Contributed by BTernaryTau, 28-Sep-2026.) $)
     fwfffun $p |- ( ph ->
-        ( ( w e. A /\ z e. A /\ ps ) <-> ( w e. dom F /\ ( F ` w ) = z ) ) ) $=
+        ( ( x e. A /\ z e. A /\ ps ) <-> ( x e. dom F /\ ( F ` x ) = z ) ) ) $=
       ( cv wcel w3a cop cdm cfv wfun wral sylibr bitr3id wceq wa eleq2i opabidw
       copab bitri wb wrmo weq wi wex rmo2 ralbii wmo wal funopab funeqi 3bitr4i
-      2reu5lem2 wbr df-br funbrfv2b syl ) EKZFLDKZFLBMZVDVENZGLZAVDGOLVDGPVEUAU
-      BZVHVGVFEDUEZLVFGVJVGJUCVFEDUDUFAGQZVHVIUGABDFUHZEFRZVKABDCUIUJDFRCUKZEFR
-      VMIVLVNEFBDCFHULUMSVJQVFDUNEUOVKVMVFEDUPGVJJUQBEDFFUSURSVHVDVEGUTVKVIVDVE
+      2reu5lem2 wbr df-br funbrfv2b syl ) CKZFLEKZFLBMZVDVENZGLZAVDGOLVDGPVEUAU
+      BZVHVGVFCEUEZLVFGVJVGJUCVFCEUDUFAGQZVHVIUGABEFUHZCFRZVKABEDUIUJEFRDUKZCFR
+      VMIVLVNCFBEDFHULUMSVJQVFEUNCUOVKVMVFCEUPGVJJUQBCEFFUSURSVHVDVEGUTVKVIVDVE
       GVAVDVEGVBTVCT $.
   $}
 
