@@ -579460,6 +579460,18 @@ $)
   $}
 
   ${
+    $d F x y $.
+    onf1we.1 $e |- R = { <. x , y >. | ( F ` x ) e. ( F ` y ) } $.
+    $( If ` F ` maps ` A ` one-to-one into the ordinals, then ` R ` well-orders
+       ` A ` .  (Contributed by BTernaryTau, 16-Sep-2026.) $)
+    onf1we $p |- ( F : A -1-1-> On -> R We A ) $=
+      ( con0 wf1 wwe crn cep wss f1f frnd epweon wess mpisyl cv cfv copab epeli
+      wf1o wb f1f1orn wcel wbr fvex opabbii eqtr4i f1owe syl mpbird ) CGEHZCDIZ
+      EJZKIZUMUOGLGKIUPUMCGECGEMNOUOGKPQUMCUOEUBUNUPUCCGEUDABCUODKEDARESZBRZESZ
+      UEZABTUQUSKUFZABTFVAUTABUQUSUREUGUAUHUIUJUKUL $.
+  $}
+
+  ${
     $d A y $.  $d ph v x $.  $d D x y $.  $d D u v $.  $d R x y $.  $d S x y $.
     $d F x y $.  $d F u v $.  $d C u v x $.  $d S u v x $.
     fnrelpredd.1 $e |- ( ph -> F Fn A ) $.
@@ -579781,6 +579793,47 @@ $)
   $}
 
   ${
+    $d R v w x y $.  $d A v w x y z $.
+    werankwe2.1 $e |- S = { <. x , y >. | ( ( rank ` x ) e. ( rank ` y ) \/
+        ( ( rank ` x ) = ( rank ` y ) /\ x R y ) ) } $.
+    $( Construct a well-order given a relation that well-orders elements of the
+       same rank.  See ~ werankwe for a version where ` R ` can depend on
+       ` w ` .  (Contributed by BTernaryTau, 18-Sep-2026.) $)
+    werankwe2 $p |- ( A. w e. A R We { z e. A | ( rank ` z ) = ( rank ` w ) }
+        -> S We A ) $=
+      ( vv cv crnk cfv wceq crab wwe con0 cep eqidd wbr cvv wral wa copab epeli
+      wcel fvex orbi1i opabbii eqtr4i weq eqeq2d rabbidv fveqeq2 cbvrabv eqtrdi
+      wo fveq2 weeq12d rspccva wf wss wfo rankfo fof ax-mp ssv fssres mp2an a1i
+      cres epweon fnwe2 ) CJZKLZDJZKLZMZCENZFOZDEUAZABIEPQFGFKIJAJZKLZMFRGWBBJZ
+      KLZUEZWBWDMWAWCFSUBZUPZABUCWBWDQSZWFUPZABUCHWIWGABWHWEWFWBWDWCKUFUDUGUHUI
+      VSWDWBMZBENZFODWAEDAUJZVRWKFFWLFRWLVRVNWBMZCENWKWLVQWMCEWLVPWBVNVOWAKUQUK
+      ULWMWJCBEVMWCWBKUMUNUOURUSEPKEVJUTZVTTPKUTZETVAWNTPKVBWOVCTPKVDVEEVFTPEKV
+      GVHVIPQOVTVKVIVL $.
+  $}
+
+  ${
+    $d S w z $.  $d A w x y $.  $d A w x z $.  $d A u v x y $.
+    rankse.1 $e |- S = { <. x , y >. | ( ( rank ` x ) e. ( rank ` y ) \/
+        ( ( rank ` x ) = ( rank ` y ) /\ ph ) ) } $.
+    $( Construct a relation that is set-like on any class.  (Contributed by
+       BTernaryTau, 18-Sep-2026.) $)
+    rankse $p |- S Se A $=
+      ( vv vu vw vz cv wbr crab cvv wcel wral crnk cfv wceq nfcv wse wss rankon
+      con0 wrex wi rgenw fveq2 sseq1d ralrab2 mpbir sseq2 ralbidv mp2an bndrank
+      id rspcev ax-mp wa wo simpl orim2i copab cop breqi opabidw 3bitri onsseli
+      df-br 3imtr4i a1i ss2rabi ssexi nfopab1 nfcxfr nfbr cbvrabw eleq1i ralbii
+      breq1 nfopab2 nfrabw nfel1 breq2 rabbidv eleq1d cbvralw df-se 3bitr4ri
+      nfv ) DEUAZBKZCKZELZBDMZNOZCDPZWPCDWOWLQRZWMQRZUBZBDMZGKZQRZHKZUBZGXAPZHU
+      DUEZXANOWSUDOXCWSUBZGXAPZXGWMUCZXIWTWTUFZBDPXKBDWTUPUGWTXHWTGBDXBWLSXCWRW
+      SXBWLQUHUIUJUKXFXIHWSUDXDWSSXEXHGXAXDWSXCULUMUQUNHGXAUOURWNWTBDWNWTUFWLDO
+      WRWSOZWRWSSZAUSZUTZXLXMUTWNWTXNXMXLXMAVAVBWNWLWMXOBCVCZLWLWMVDXPOXOWLWMEX
+      PFVEWLWMXPVIXOBCVFVGWRWSWLUCXJVHVJVKVLVMUGWLIKZELZBDMZNOZIDPJKZXQELZJDMZN
+      OZIDPWQWKXTYDIDXSYCNXRYBBJDBDTJDTXRJWJBYAXQEBYATBEXPFXOBCVNVOBXQTVPWLYAXQ
+      EVTVQVRVSWPXTCIDWPIWJCXSNXRCBDCWLXQECWLTCEXPFXOBCWAVOCXQTVPCDTWBWCWMXQSZW
+      OXSNYEWNXRBDWMXQWLEWDWEWFWGIJDEWHWIUK $.
+  $}
+
+  ${
     scotteqi.1 $e |- A = B $.
     $( Equality theorem for the Scott operation.  Inference form of ~ scotteq .
        (Contributed by BTernaryTau, 3-Jul-2026.) $)
@@ -579932,6 +579985,44 @@ $)
   scottssr1 $p |- ( A e. B -> Scott B C_ ( R1 ` suc ( rank ` A ) ) ) $=
     ( wcel cscott crnk cfv csuc wss rankscottu wb rankon onsuci scottex rankr1b
     cr1 con0 ax-mp sylibr ) ABCBDZEFAEFZGZHZSUAOFHZABIUAPCUCUBJTAKLSUABMNQR $.
+
+  ${
+    $d f w x $.  $d f v x $.  $d f w y z $.
+    $( Axiom of Choice equivalent: every set can be mapped one-to-one into the
+       ordinals.  (Contributed by BTernaryTau, 16-Sep-2026.) $)
+    dfac15 $p |- ( CHOICE <-> A. x E. f f : x -1-1-> On ) $=
+      ( vv vw vy vz wac con0 wf1 wex wal cen wbr wcel syl alimi sylbi wwe cfv
+      cv wrex dfac10c wss onss wf1o ensymb bren bitri f1of1 sylan expcom eximdv
+      wi f1ss biimtrid rexlimiv copab eqid onf1we cxp cin weinxp vex xpex inex2
+      weeq1 spcev exlimiv dfac8 sylibr impbii ) GATZHBTZIZBJZAKZGCTZVLLMZCHUAZA
+      KVPACUBVSVOAVRVOCHVQHNVQHUCZVRVOUMVQUDVRVLVQVMUEZBJZVTVOVRVLVQLMWBVQVLUFV
+      LVQBUGUHVTWAVNBWAVTVNWAVLVQVMIVTVNVLVQVMUIVLVQHVMUNUJUKULUOOUPPQVPVLDTZRZ
+      DJZAKGVOWEAVNWEBVNVLETVMSFTVMSNEFUQZRZWEEFVLWFVMWFURUSWGVLWFVLVLUTZVAZRZW
+      EVLWFVBWDWJDWIWHWFVLVLAVCZWKVDVEVLWCWIVFVGQOVHPADVIVJVK $.
+    $( $j usage 'dfac15' avoids 'ax-ac' 'ax-ac2'; $)
+  $}
+
+  ${
+    $d r v x $.  $d w x y z $.
+    $( Axiom of Choice equivalent: for every pair of sets, one is dominated by
+       the other (see also ~ entri3 ).  (Contributed by BTernaryTau,
+       17-Sep-2026.) $)
+    dfac16 $p |- ( CHOICE <-> A. x A. y ( x ~<_ y \/ y ~<_ x ) ) $=
+      ( vw vz vr vv wac cv cdom wbr wo wal cen con0 wrex dfac10c wcel wa wn wb
+      wi csdm domtriord xor3 nbior sylbir ensym endomtr sylan ex domentr expcom
+      syl sylan9 sdomdom syl2an sylan9r orim12d an4s rexlimdvaa alimdv biimtrid
+      mpan9 rexlimiva com12 pm2.43i wwe wex char cfv breq2 harcl a1i fvex breq1
+      wceq orbi12d harndom olcnd rspcedvdw ac10ct alimi dfac8 sylibr impbii
+      spcv ) GAHZBHZIJZWHWGIJZKZBLZALZGWMGCHZWGMJZCNOZALGWMACPGWPWLAWPGWLWOGWLU
+      ACNGDHZWHMJZDNOZBLWNNQZWORZWLBDPXAWSWKBXAWRWKDNWTWQNQZWOWRWKWTXBRZWNWQIJZ
+      WQWNUBJZKZWOWRRZWKXCXDXESTZXFWNWQUCXHXDXETSXFXDXEUDXDXEUEUFUMXGXDWIXEWJWO
+      XDWGWQIJZWRWIWOXDXIWOWGWNMJXDXIWNWGUGWGWNWQUHUIUJXIWRWIWGWQWHUKULUNWRXEWH
+      WNIJZWOWJWRXEXJWRWHWQMJWQWNIJXJXEWQWHUGWQWNUOWHWQWNUHUPUJXJWOWJWHWNWGUKUL
+      UQURVCUSUTVAVBVDVEVAVBVFWMWGEHVGEVHZALGWLXKAWLWGFHZIJZFNOXKWLXMWGWGVIVJZI
+      JZFXNNXLXNWGIVKXNNQWLWGVLVMWLXOXNWGIJZWKXOXPKBXNWGVIVNWHXNVPWIXOWJXPWHXNW
+      GIVKWHXNWGIVOVQWFXPSWLWGVRVMVSVTEFWGWAUMWBAEWCWDWE $.
+    $( $j usage 'dfac16' avoids 'ax-ac' 'ax-ac2'; $)
+  $}
 
   $( The Axiom of Choice implies that any set is numerable.  (Contributed by
      BTernaryTau, 3-Jul-2026.) $)
@@ -581518,6 +581609,19 @@ $)
   $}
 
   ${
+    $d ph x z $.  $d f x z $.  $d G f z $.
+    gblacfnac2d.1 $e |- ( ph -> G Fn _V ) $.
+    gblacfnac2d.2 $e |- ( ph -> A. z ( z =/= (/) -> ( G ` z ) e. z ) ) $.
+    $( If ` G ` is a global choice function, then the Axiom of Choice holds.
+       This is ~ gblacfnacd expressed using ` CHOICE ` .  (Contributed by
+       BTernaryTau, 25-Sep-2026.) $)
+    gblacfnac2d $p |- ( ph -> CHOICE ) $=
+      ( vf vx cv wfn c0 wne cfv wcel wi wral wa wex wal wac gblacfnacd sylibr
+      dfac4 ) AFHZGHZIBHZJKUEUCLUEMNBUDOPFQGRSAGBFCDETGBFUBUA $.
+    $( $j usage 'gblacfnac2d' avoids 'ax-ac' 'ax-ac2'; $)
+  $}
+
+  ${
     $d A x y $.
     $( Lemma for ~ onvf1od .  (Contributed by BTernaryTau, 2-Dec-2025.) $)
     onvf1odlem1 $p |- ( A e. V -> E. x e. On E. y e. ( R1 ` x ) -. y e. A ) $=
@@ -581769,7 +581873,7 @@ $)
     vonf1osev.1 $e |- R = { <. x , y >. | ( F ` x ) e. ( F ` y ) } $.
     $( If ` F ` is a bijection from the universe to the ordinals, then ` R ` is
        a set-like well-ordering of the universe.  This is the ZFC version of (2
-       ` -> ` 4) which is used in place of (3 ` -> ` 4) in
+       ` -> ` 4) which can be used in place of (3 ` -> ` 4) in
        ~ https://tinyurl.com/hamkins-gblac .  This proof takes advantage of the
        fact that the well-order constructed in (2 ` -> ` 3) is also set-like.
        (Contributed by BTernaryTau, 8-Jun-2026.) $)
@@ -581782,6 +581886,21 @@ $)
       ICLDUOUPUQUR $.
     $( $j usage 'vonf1osev' avoids 'ax-pow' 'ax-reg' 'ax-inf' 'ax-inf2' 'ax-ac'
        'ax-ac2'; $)
+  $}
+
+  ${
+    $d w x y z $.  $d R w x y $.
+    wevsev.1 $e |- S = { <. x , y >. | ( ( rank ` x ) e. ( rank ` y ) \/
+        ( ( rank ` x ) = ( rank ` y ) /\ x R y ) ) } $.
+    $( If ` R ` is a well-ordering of the universe, then ` S ` is a set-like
+       well-ordering of the universe.  This is the ZFC version of (3 ` -> ` 4)
+       in ~ https://tinyurl.com/hamkins-gblac .  (Contributed by BTernaryTau,
+       18-Sep-2026.) $)
+    wevsev $p |- ( R We _V -> ( S We _V /\ S Se _V ) ) $=
+      ( vz vw cvv wwe wse cv crnk cfv wceq crab wral wss wi ssv wess syl rankse
+      ax-mp ralrimivw werankwe2 wbr jctir ) HCIZHDIZHDJUHFKLMGKLMNFHOZCIZGHPUIU
+      HUKGHUJHQUHUKRUJSUJHCTUCUDABFGHCDEUEUAAKBKCUFABHDEUBUG $.
+    $( $j usage 'wevsev' avoids 'ax-ac' 'ax-ac2'; $)
   $}
 
   ${
@@ -581853,8 +581972,8 @@ $)
     $d A y $.  $d W y $.  $d r x y $.  $d B w x y $.  $d B v w y $.
     onprcf1acwevdlem1.1 $e |- W = { r | E. x e. On
         ( r C_ ( ( R1 ` x ) X. ( R1 ` x ) ) /\ r We ( R1 ` x ) ) } $.
-    $( Lemma for ~ onprcf1acwevd .  (Contributed by BTernaryTau,
-       10-Sep-2026.) $)
+    $( Lemma for ~ onprcf1acwevd and ~ prconf1acwevd .  (Contributed by
+       BTernaryTau, 10-Sep-2026.) $)
     onprcf1acwevdlem1 $p |- ( ( A C_ W /\ B e. On /\
         A. y e. A -. y We ( R1 ` B ) ) -> A e. _V ) $=
       ( vw vv wss con0 wcel cr1 cv wwe wn w3a cvv wi wa cfv wral cxp wex 19.28v
@@ -581889,8 +582008,8 @@ $)
         ( F ` |^| { w e. On | ( F ` w ) We ( R1 ` suc ( rank ` y ) ) } ) $.
     onprcf1acwevdlem2.3 $e |- ( ( ph /\ u e. On ) ->
         E. w e. On ( F ` w ) We ( R1 ` u ) ) $.
-    $( Lemma for ~ onprcf1acwevd .  (Contributed by BTernaryTau,
-       16-Sep-2026.) $)
+    $( Lemma for ~ onprcf1acwevd and ~ prconf1acwevd .  (Contributed by
+       BTernaryTau, 16-Sep-2026.) $)
     onprcf1acwevdlem2 $p |- ( ph -> R We _V ) $=
       ( vv cv crnk cfv cr1 wwe con0 wceq cvv vq vt csuc wrex wal crab wcel wral
       rankon onsuci ralrimiva eqidd fveq2 weeq12d rexbidv rspcv mpsyl wss wi wn
@@ -581936,6 +582055,34 @@ $)
       WHIVEZWCWMWNVFAQIHAWQQIHVGWSQIHVHUOZVIWTWCWMWNBPWHWBIJMVJVKVAVLWGPWHVMVNA
       WIWLVOZWCAHQVPXBAQIHXAVQWGWKPEQHWEWFWJVRVSUOVDVTWA $.
     $( $j usage 'onprcf1acwevd' avoids 'ax-ac' 'ax-ac2'; $)
+  $}
+
+  ${
+    $d S z $.  $d W u $.  $d ph v y $.  $d u v x $.  $d r u x $.  $d F w y z $.
+    $d F u v w $.
+    prconf1acwevd.1 $e |- ( ph -> ( -. W e. _V -> F : W -1-1-> On ) ) $.
+    prconf1acwevd.2 $e |- ( ph -> CHOICE ) $.
+    prconf1acwevd.3 $e |- W = { r | E. x e. On
+        ( r C_ ( ( R1 ` x ) X. ( R1 ` x ) ) /\ r We ( R1 ` x ) ) } $.
+    prconf1acwevd.4 $e |- R = { <. y , z >. | ( ( rank ` y ) e. ( rank ` z ) \/
+        ( ( rank ` y ) = ( rank ` z ) /\ y S z ) ) } $.
+    prconf1acwevd.5 $e |- S = ( `' F `
+        |^| { w e. On | ( `' F ` w ) We ( R1 ` suc ( rank ` y ) ) } ) $.
+    $( If ` F ` maps the proper class ` W ` one-to-one into the ordinals and
+       the Axiom of Choice holds, then ` R ` well-orders the universe.
+       (Contributed by BTernaryTau, 16-Sep-2026.) $)
+    prconf1acwevd $p |- ( ph -> R We _V ) $=
+      ( vu cv con0 wrex 3syl vv ccnv wcel wa crn wss cr1 cfv wwe wf1 wf cvv wac
+      wn acwer1prc syl mpd f1f frn adantr wral ssid onprcf1acwevdlem1 mp3an1 ex
+      nsyli impcom dfrex2 sylibr wb wf1o wceq f1f1orn f1ocnv f1ofo forn rexeqdv
+      wfo wfn f1ofn weeq1 rexrn bitr3d mpbid ssrexv sylc onprcf1acwevdlem2 ) AC
+      DEUAFGHUBZNOAUAQZRUCZUDZHUEZRUFZWIUGUHZEQWHUHZUIZEWLSZWPERSAWMWJAIRHUJZIR
+      HUKWMAIULUCZUNZWRAUMWTLBIJMUOUPZKUQZIRHURIRHUSTUTWKWNPQZUIZPISZWQWKXDUNPI
+      VAZUNZXEWJAXGWJXFWSAWJXFWSIIUFWJXFWSIVBBPIWIIJMVCVDVEXAVFVGXDPIVHVIAXEWQV
+      JWJAXDPWHUEZSZXEWQAXDPXHIAWLIWHVKZWLIWHVRXHIVLAWRIWLHVKXJXBIRHVMIWLHVNTZW
+      LIWHVOWLIWHVPTVQAXJWHWLVSXIWQVJXKWLIWHVTXDWPPEWLWHWNXCWOWAWBTWCUTWDWPEWLR
+      WEWFWG $.
+    $( $j usage 'prconf1acwevd' avoids 'ax-ac' 'ax-ac2'; $)
   $}
 
   ${
@@ -582012,6 +582159,181 @@ $)
     $( $j usage 'onvfowev' avoids 'ax-rep' 'ax-pow' 'ax-reg' 'ax-inf' 'ax-inf2'
        'ax-ac' 'ax-ac2'; $)
   $}
+
+  $( If ` F ` maps ` A ` one-to-one into the ordinals, then either ` A ` can be
+     mapped one-to-one into the ordinals (by ` F ` ), or the ordinals can be
+     mapped one-to-one into ` A ` .  This is the ZFC version of (6 ` -> ` 9) in
+     ~ https://tinyurl.com/hamkins-gblac .  The proof is trivial but is
+     included for completeness.  (Contributed by BTernaryTau, 16-Sep-2026.) $)
+  onf1onf1or $p |- ( F : A -1-1-> On ->
+      ( F : A -1-1-> On \/ H : On -1-1-> A ) ) $=
+    ( con0 wf1 orc ) ADBEDACEF $.
+  $( $j usage 'onf1onf1or' avoids 'ax-ac' 'ax-ac2'; $)
+
+  ${
+    $d ph y $.  $d A z $.  $d f v $.  $d r x $.  $d F w y z $.  $d I w y z $.
+    $d W w y z $.
+    onf1oracwevd.1 $e |- ( ph -> ( F : W -1-1-> On \/ H : On -1-1-> W ) ) $.
+    onf1oracwevd.2 $e |- ( ph ->
+        A. v ( E. f f : v -1-1-> On \/ E. h h : On -1-1-> v ) ) $.
+    onf1oracwevd.3 $e |- W = { r | E. x e. On
+        ( r C_ ( ( R1 ` x ) X. ( R1 ` x ) ) /\ r We ( R1 ` x ) ) } $.
+    onf1oracwevd.4 $e |- R = { <. y , z >. | ( ( rank ` y ) e. ( rank ` z ) \/
+        ( ( rank ` y ) = ( rank ` z ) /\ y A z ) ) } $.
+    onf1oracwevd.5 $e |- A =
+        ( I ` |^| { w e. On | ( I ` w ) We ( R1 ` suc ( rank ` y ) ) } ) $.
+    onf1oracwevd.6 $e |- I = if ( F : W -1-1-> On , `' F , H ) $.
+    $( If ` F ` maps the proper class ` W ` one-to-one into the ordinals or
+       ` H ` maps the ordinals one-to-one into the proper class ` W ` , and if
+       every set can either be mapped one-to-one into the ordinals or have the
+       ordinals mapped one-to-one into it, then ` R ` well-orders the universe.
+       This is the ZFC version of (9 ` -> ` 3) in
+       ~ https://tinyurl.com/hamkins-gblac .  Note that in NBG set theory the
+       first two hypotheses would be replaced by something like
+       ` ( ph -> A. X ( E. F F : X -1-1-> On \/ E. H H : On -1-1-> X ) ) ` .
+       However, we cannot quantify over classes, so we split this into the case
+       where ` X ` is a set and the case where ` X ` is the proper class ` W `
+       which together are sufficient for this proof.  (Contributed by
+       BTernaryTau, 16-Sep-2026.) $)
+    onf1oracwevd $p |- ( ph -> R We _V ) $=
+      ( con0 wf1 cvv wwe wa cv crnk cfv wcel wceq csuc cr1 ccnv crab cint copab
+      wbr wo wn simpr a1d wac wex wal wi onprc f1dmex elvd mto orel2 ax-mp sylg
+      nex dfac15 sylibr adantr eqid prconf1acwevd wb iftrue eqtrid fveq1d eqidd
+      weeq12d rabbidv inteqd fveq12d breqd anbi2d orbi2d opabbidv adantl mpbird
+      cif orcanai iffalse f1eq1 syl onprcf1acwevd pm2.61dan ) ANUBKUCZUDHUEZAXB
+      UFZXCUDCUGZUHUIZDUGZUHUIZUJZXFXHUKZXEXGXFULUMUIZEUGZKUNZUIZUEZEUBUOZUPZXM
+      UIZURZUFZUSZCDUQZUEZXDBCDEYBXRKNOXDXBNUDUJUTZAXBVAVBAVCXBAFUGZUBIUGUCIVDZ
+      FVEVCAYFUBYEJUGZUCZJVDZUSZYFFQYIUTYJYFVFYHJYHUBUDUJZVGYHYKFUBYEUDYGVHVIVJ
+      VNYIYFVKVLVMFIVOVPZVQRYBVRXRVRVSXBXCYCVTAXBUDUDHYBXBHXIXJXEXGGURZUFZUSZCD
+      UQYBSXBYOYACDXBYNXTXIXBYMXSXJXBGXRXEXGXBGXKXLMUIZUEZEUBUOZUPZMUIXRTXBYSXQ
+      MXMXBMXBXMLWOZXMUAXBXMLWAWBZXBYRXPXBYQXOEUBXBXKXKYPXNXBXLMXMUUAWCXBXKWDWE
+      WFWGWHWBWIWJWKWLWBXBUDWDWEWMWNAXBUTZUFZBCDEHGMNOUUCUBNMUCZYDUUCUUDUBNLUCZ
+      AXBUUEPWPUUBUUDUUEVTZAUUBMLUKUUFUUBMYTLUAXBXMLWQWBUBNMLWRWSWMWNVBAVCUUBYL
+      VQRSTWTXA $.
+    $( $j usage 'onf1oracwevd' avoids 'ax-ac' 'ax-ac2'; $)
+  $}
+
+  ${
+    onprcf1of1orad.1 $e |- ( ph -> F : On -1-1-onto-> _V ) $.
+    onprcf1of1orad.2 $e |- ( ph -> ( -. B e. _V -> H : On -1-1-onto-> B ) ) $.
+    onprcf1of1orad.3 $e |- ( ph -> -. B e. _V ) $.
+    onprcf1of1orad.4 $e |- I = ( H o. ( `' F |` A ) ) $.
+    $( If ` F ` is a bijection from the ordinals to the universe and ` H ` is a
+       bijection from the ordinals to the proper class ` B ` , then ` I ` maps
+       ` A ` one-to-one into ` B ` .  This is the ZFC version of (5 ` -> ` 10)
+       in ~ https://tinyurl.com/hamkins-gblac in the case where one of the
+       classes is a proper class.  See ~ onprcf1of1orbd for the case where
+       neither class is a proper class, and see ~ onprcf1of1ord for a theorem
+       that covers both cases.  Note that in NBG set theory the first two
+       hypotheses would be replaced by something like
+       ` ( ph -> A. X ( -. X e. _V -> E. F F : On -1-1-onto-> X ) ) ` .
+       However, we cannot quantify over classes, so we split this into the case
+       where ` X ` is the universe and the case where ` X ` is an arbitrary
+       proper class ` B ` which together are sufficient for this proof.
+       (Contributed by BTernaryTau, 17-Sep-2026.) $)
+    onprcf1of1orad $p |- ( ph -> I : A -1-1-> B ) $=
+      ( ccnv cres ccom wf1 con0 wf1o cvv wcel wn f1of1 mpd syl wss f1ssres 3syl
+      f1ocnv ssv sylancl f1co syl2anc wceq wb f1eq1 ax-mp sylibr ) ABCEDKZBLZMZ
+      NZBCFNZAOCENZBOUQNZUSAOCEPZVAACQRSVCIHUAOCETUBAOQDPQOUPPZVBGOQDUFVDQOUPNB
+      QUCVBQOUPTBUGQOBUPUDUHUEBOCEUQUIUJFURUKUTUSULJBCFURUMUNUO $.
+    $( $j usage 'onprcf1of1orad' avoids 'ax-rep' 'ax-pow' 'ax-un' 'ax-reg'
+       'ax-inf' 'ax-inf2' 'ax-ac' 'ax-ac2'; $)
+  $}
+
+  ${
+    $d ph x $.  $d ph z $.  $d A x $.  $d A f $.  $d A h $.  $d B f $.
+    $d B h $.  $d i z $.  $d F i $.  $d B x y $.
+    onprcf1of1orbd.1 $e |- ( ph -> F : On -1-1-onto-> _V ) $.
+    onprcf1of1orbd.2 $e |- ( ph -> A e. V ) $.
+    onprcf1of1orbd.3 $e |- ( ph -> B e. W ) $.
+    $( If ` F ` is a bijection from the ordinals to the universe and both ` A `
+       and ` B ` are sets, then either ` A ` can be mapped one-to-one into
+       ` B ` or ` B ` can be mapped one-to-one into ` A ` .  This is the ZFC
+       version of (5 ` -> ` 10) in ~ https://tinyurl.com/hamkins-gblac in the
+       case where neither class is a proper class.  See ~ onprcf1of1orad for
+       the case where one of the classes is a proper class, and see
+       ~ onprcf1of1ord for a theorem that covers both cases.  Note that in NBG
+       set theory the first hypothesis would be replaced by something like
+       ` ( ph -> A. X ( -. X e. _V -> E. F F : On -1-1-onto-> X ) ) ` , but
+       since we cannot quantify over classes, we instead consider only the case
+       ` X = _V ` which is sufficient for this proof.  (Contributed by
+       BTernaryTau, 17-Sep-2026.) $)
+    onprcf1of1orbd $p |- ( ph ->
+        ( E. f f : A -1-1-> B \/ E. h h : B -1-1-> A ) ) $=
+      ( vz vi vx cdom wbr cv wf1 con0 cvv vy wo wex wac wal ccnv cres wf1o wcel
+      wfun f1ocnv f1ofun resfunexg elvd syl wss f1of1 ssv f1ssres sylancl f1eq1
+      3syl spcedv alrimiv dfac15 sylibr dfac16 wi wceq breq2 breq1 spcgv alimdv
+      orbi12d sylsyld biimtrid mpd wb brdomg mpbid ) ABCOPZCBOPZUBZBCDQRDUCZCBE
+      QREUCZUBAUDWCALQZSMQZRZMUCZLUEUDAWILAWHWFSFUFZWFUGZRZMTWKASTFUHZWKTUIZIWM
+      TSWJUHZWJUJZWNSTFUKZTSWJULWPWNLWJWFTUMUNVBUOAWMWOWLIWQWOTSWJRWFTUPWLTSWJU
+      QWFURTSWFWJUSUTVBWFSWGWKVAVCVDLMVEVFUDNQZUAQZOPZWSWROPZUBZUAUEZNUEZAWCNUA
+      VGABGUIZXDWRCOPZCWROPZUBZNUEWCJAXCXHNACHUIZXCXHVHKXBXHUACHWSCVIWTXFXAXGWS
+      CWROVJWSCWROVKVNVLUOVMXHWCNBGWRBVIXFWAXGWBWRBCOVKWRBCOVJVNVLVOVPVQAWAWDWB
+      WEAXIWAWDVRKBCHDVSUOAXEWBWEVRJCBGEVSUOVNVT $.
+    $( $j usage 'onprcf1of1orbd' avoids 'ax-reg' 'ax-inf' 'ax-inf2' 'ax-ac'
+       'ax-ac2'; $)
+  $}
+
+  ${
+    $d A f x $.  $d B f x $.  $d F f x $.
+    onprcf1of1ord.1 $e |- ( ph -> F : On -1-1-onto-> _V ) $.
+    onprcf1of1ord.2 $e |- ( ph -> ( -. A e. _V -> H : On -1-1-onto-> A ) ) $.
+    onprcf1of1ord.3 $e |- ( ph -> ( -. B e. _V -> I : On -1-1-onto-> B ) ) $.
+    onprcf1of1ord.4 $e |- J = if ( A e. _V , if (
+        B e. _V , K , ( I o. ( `' F |` A ) ) ) , ( H o. ( `' F |` B ) ) ) $.
+    onprcf1of1ord.5 $e |- K = ( F ` |^|
+        { x e. On | ( ( F ` x ) : A -1-1-> B \/ ( F ` x ) : B -1-1-> A ) } ) $.
+    $( If ` F ` is a bijection from the ordinals to the universe, ` H ` is a
+       bijection from the ordinals to ` A ` if ` A ` is a proper class, and
+       ` I ` is a bijection from the ordinals to ` B ` if ` B ` is a proper
+       class, then ` J ` either maps ` A ` one-to-one into ` B ` or maps ` B `
+       one-to-one into ` A ` .  This is the ZFC version of (5 ` -> ` 10) in
+       ~ https://tinyurl.com/hamkins-gblac .  Note that in NBG set theory the
+       first three hypotheses would be replaced by something like
+       ` ( ph -> A. X ( -. X e. _V -> E. F F : On -1-1-onto-> X ) ) ` .
+       However, we cannot quantify over classes, so we split this into the case
+       where ` X ` is the universe, the case where ` X ` is an arbitrary proper
+       class ` A ` , and the case where ` X ` is an arbitrary proper class
+       ` B ` , which together are sufficient for this proof.  (Contributed by
+       BTernaryTau, 17-Sep-2026.) $)
+    onprcf1of1ord $p |- ( ph -> ( J : A -1-1-> B \/ J : B -1-1-> A ) ) $=
+      ( vf cvv wf1 con0 wb wceq wcel wo wa cfv crab cint wrex wex wf1o ad2antrr
+      cv simplr simpr onprcf1of1orbd sylibr crn dff1o5 simprbi syl rexeqdv rexv
+      19.43 bitrdi wfn f1ofn f1eq1 orbi12d rexrn 3syl bitr3d mpbid nfrab1 nfint
+      nfcv nffv nff1 nfor fveq2 onminsb ccnv cres ccom cif iftrue eqtrid adantl
+      ad2antlr eqtrd eqtrdi mpbird eqid onprcf1of1orad iffalse pm2.61dan adantr
+      wn wi orcd olcd ) ACPUAZCDHQZDCHQZUBZAWTUCZDPUAZXCXDXEUCZXCCDCDBUKZEUDZQZ
+      DCXHQZUBZBRUEZUFZEUDZQZDCXNQZUBZXFXKBRUGZXQXFCDOUKZQZDCXSQZUBZOUHZXRXFXTO
+      UHYAOUHUBYCXFCDOOEPPARPEUIZWTXEJUJAWTXEULXDXEUMUNXTYAOVBUOAYCXRSWTXEAYBOE
+      UPZUGZYCXRAYFYBOPUGYCAYBOYEPAYDYEPTZJYDRPEQYGRPEUQURUSUTYBOVAVCAYDERVDYFX
+      RSJRPEVEYBXKOBREXSXHTXTXIYAXJCDXSXHVFDCXSXHVFVGVHVIVJUJVKXKXQBXOXPBBCDXNB
+      XMEBEVNBXLXKBRVLVMVOZBCVNZBDVNZVPBDCXNYHYJYIVPVQXGXMTZXIXOXJXPYKXHXNTZXIX
+      OSXGXMEVRZCDXHXNVFUSYKYLXJXPSYMDCXHXNVFUSVGVSUSXFXAXOXBXPXFHXNTZXAXOSXFHI
+      XNXFHXEIGEVTZCWAWBZWCZIWTHYQTZAXEWTHWTYQFYODWAWBZWCZYQMWTYQYSWDWEZWGXEYQI
+      TXDXEIYPWDWFWHNWIZCDHXNVFUSXFYNXBXPSUUBDCHXNVFUSVGWJXDXEWPZUCZXAXBUUDXACD
+      YPQZUUDCDEGYPAYDWTUUCJUJAUUCRDGUIWQWTUUCLUJXDUUCUMYPWKWLUUDHYPTXAUUESUUDH
+      YQYPWTYRAUUCUUAWGUUCYQYPTXDXEIYPWMWFWHCDHYPVFUSWJWRWNAWTWPZUCZXBXAUUGXBDC
+      YSQZUUGDCEFYSAYDUUFJWOAUUFRCFUIWQUUFKWOAUUFUMYSWKWLUUFXBUUHSZAUUFHYSTUUIU
+      UFHYTYSMWTYQYSWMWEDCHYSVFUSWFWJWSWN $.
+    $( $j usage 'onprcf1of1ord' avoids 'ax-reg' 'ax-inf' 'ax-inf2' 'ax-ac'
+       'ax-ac2'; $)
+  $}
+
+  $( If ` F ` maps ` A ` one-to-one into the ordinals or ` H ` maps the
+     ordinals one-to-one into ` A ` , then either ` A ` can be mapped
+     one-to-one into the ordinals (by ` F ` ), or the ordinals can be mapped
+     one-to-one into ` A ` (by ` H ` ).  This is the ZFC version of (10 ` -> `
+     9) in ~ https://tinyurl.com/hamkins-gblac .  Note that in NBG set theory
+     the antecedent would be something like
+     ` A. A A. X ( E. F F : A -1-1-> X \/ E. H H : X -1-1-> A ) ` , but since
+     we cannot quantify over classes, we instead consider only the case
+     ` X = On ` which is sufficient for this proof.  The proof is trivial but
+     is included for completeness.  (Contributed by BTernaryTau,
+     17-Sep-2026.) $)
+  f1oronf1or $p |- ( ( F : A -1-1-> On \/ H : On -1-1-> A ) ->
+      ( F : A -1-1-> On \/ H : On -1-1-> A ) ) $=
+    ( con0 wf1 wo id ) ADBEDACEFG $.
+  $( $j usage 'f1oronf1or' avoids 'ax-ac' 'ax-ac2'; $)
 
 
 $(
