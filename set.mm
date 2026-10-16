@@ -579391,6 +579391,14 @@ $)
       UMURUSUPUNGZUAUQUMURUSVAUMUSURUTUBUMUNUOHVABCEDUCUNUOUDUEUFUNUPUGUHUI $.
   $}
 
+  $( The union of two ordinals is equal to their maximum.  (Contributed by
+     BTernaryTau, 7-Oct-2026.) $)
+  ordunmax $p |- ( ( Ord A /\ Ord B ) ->
+      ( A u. B ) = if ( A C_ B , B , A ) ) $=
+    ( word wa wss cun cif wceq wn ordtri2or2 ord ssequn2 imbitrdi iffalse eqtr3
+    jca2 syl6 ssequn1 biimpi iftrue eqtr4d pm2.61d2 ) ACBCDZABEZABFZUDBAGZHZUCU
+    DIZUEAHZUFAHZDUGUCUHUIUJUCUHBAEZUIUCUDUKABJKBALMUDBANPUEUFAOQUDUEBUFUDUEBHA
+    BRSUDBATUAUB $.
 
   $( If an ordinal class is not a set, then it must be the proper class of all
      ordinals.  (Contributed by BTernaryTau, 9-Jun-2026.) $)
@@ -581510,7 +581518,8 @@ $)
     $d x y $.
     $( Define a particular set-like well-ordering of ` On X. On ` using the
        lexicographical ordering ` LexOrd ` .  Based on Definition 7.57 of
-       [TakeutiZaring] p. 54.  (Contributed by BTernaryTau, 2-Sep-2026.) $)
+       [TakeutiZaring] p. 54.  See ~ r0weseon for a proof that this relation is
+       a set-like well-order.  (Contributed by BTernaryTau, 2-Sep-2026.) $)
     df-r0 $a |- _R0 = { <. x , y >. | ( ( x e. ( On X. On ) /\
         y e. ( On X. On ) ) /\
         ( ( ( 1st ` x ) u. ( 2nd ` x ) ) e. ( ( 1st ` y ) u. ( 2nd ` y ) ) \/
@@ -581518,9 +581527,9 @@ $)
         x LexOrd y ) ) ) } $.
   $}
 
-  $( Define the ` _R0 ` order isomorphism from ` On X. On ` to ` On ` .
-     Equivalent to Definition 7.59 of [TakeutiZaring] p. 55.  (Contributed by
-     BTernaryTau, 2-Sep-2026.) $)
+  $( Define the ` _R0 ` order isomorphism of ` On X. On ` onto ` On ` .
+     Equivalent to Definition 7.59 of [TakeutiZaring] p. 55 (see ~ j0iso ).
+     (Contributed by BTernaryTau, 2-Sep-2026.) $)
   df-j0 $a |- _J0 = `' OrdIso ( _R0 , ( On X. On ) ) $.
 
   ${
@@ -581575,6 +581584,209 @@ $)
   $( Define the class of all constructible sets.  Definition 15.15 of
      [TakeutiZaring] p. 158.  (Contributed by BTernaryTau, 3-Sep-2026.) $)
   df-l $a |- _L = ( _FL " On ) $.
+
+  ${
+    $d x y $.
+    $( Lexicographical order is a well-ordering of ` On X. On ` .  Part of
+       Proposition 7.56(1) of [TakeutiZaring] p. 54.  Unlike ` _R0 ` , this
+       order is _not_ set-like, as the preimage of ` <. 1o , (/) >. ` is the
+       proper class ` ( { (/) } X. On ) ` .  This theorem is ~ leweon expressed
+       using ` LexOrd ` .  (Contributed by BTernaryTau, 19-Sep-2026.) $)
+    lexoweon $p |- LexOrd We ( On X. On ) $=
+      ( vx vy clexo df-lexo leweon ) ABCABDE $.
+  $}
+
+  ${
+    $d ph x y $.  $d A x y $.  $d B x y $.  $d C x y $.  $d D x y $.
+    brlexod.1 $e |- ( ph -> A e. On ) $.
+    brlexod.2 $e |- ( ph -> B e. On ) $.
+    brlexod.3 $e |- ( ph -> C e. On ) $.
+    brlexod.4 $e |- ( ph -> D e. On ) $.
+    $( Condition for two ordered pairs to be related by ` LexOrd ` .
+       (Contributed by BTernaryTau, 20-Sep-2026.) $)
+    brlexod $p |- ( ph -> ( <. A , B >. LexOrd <. C , D >. <->
+        ( A e. C \/ ( A = C /\ B e. D ) ) ) ) $=
+      ( vx vy con0 wcel wa wceq c1st cfv c2nd fveq2 syl2anc cop wbr cxp opelxpd
+      clexo wo jca df-lexo a1i op1stg sylan9eqr adantrr adantrl eleq12d eqeq12d
+      cv copab op2ndg anbi12d orbi12d brab2d mpbirand ) ABCUAZDEUAZUEUBVCLLUCZM
+      ZVDVEMZNBDMZBDOZCEMZNZUFZAVFVGABCLLFGUDADELLHIUDUGAJUPZPQZKUPZPQZMZVNVPOZ
+      VMRQZVORQZMZNZUFZVLJKVCVDUEVEVEUEVMVEMVOVEMNWCNJKUQOAJKUHUIAVMVCOZVOVDOZN
+      NZVQVHWBVKWFVNBVPDAWDVNBOWEWDAVNVCPQZBVMVCPSABLMZCLMZWGBOFGBCLLUJTUKULZAW
+      EVPDOWDWEAVPVDPQZDVOVDPSADLMZELMZWKDOHIDELLUJTUKUMZUNWFVRVIWAVJWFVNBVPDWJ
+      WNUOWFVSCVTEAWDVSCOWEWDAVSVCRQZCVMVCRSAWHWIWOCOFGBCLLURTUKULAWEVTEOWDWEAV
+      TVDRQZEVOVDRSAWLWMWPEOHIDELLURTUKUMUNUSUTVAVB $.
+  $}
+
+  ${
+    $d w x y z $.
+    $( ` _R0 ` is a set-like well-ordering of ` On X. On ` .  Part of
+       Proposition 7.58 of [TakeutiZaring] p. 54.  This theorem is ~ r0weon
+       expressed using ` _R0 ` .  (Contributed by BTernaryTau, 19-Sep-2026.) $)
+    r0weseon $p |- ( _R0 We ( On X. On ) /\ _R0 Se ( On X. On ) ) $=
+      ( vx vy vz vw cr0 clexo df-lexo df-r0 r0weon ) ABCDEFABGCDHI $.
+  $}
+
+  ${
+    $d ph x y $.  $d A x y $.  $d B x y $.  $d C x y $.  $d D x y $.
+    brr0d.1 $e |- ( ph -> A e. On ) $.
+    brr0d.2 $e |- ( ph -> B e. On ) $.
+    brr0d.3 $e |- ( ph -> C e. On ) $.
+    brr0d.4 $e |- ( ph -> D e. On ) $.
+    $( Condition for two ordered pairs to be related by ` _R0 ` .  (Contributed
+       by BTernaryTau, 19-Sep-2026.) $)
+    brr0d $p |- ( ph -> ( <. A , B >. _R0 <. C , D >. <->
+        ( ( A u. B ) e. ( C u. D ) \/ ( ( A u. B ) = ( C u. D ) /\
+        <. A , B >. LexOrd <. C , D >. ) ) ) ) $=
+      ( vx vy con0 wcel wa cun wceq c1st cfv c2nd fveq2 cop cr0 wbr cxp opelxpd
+      clexo wo jca cv copab a1i op1stg syl2anc sylan9eqr op2ndg uneq12d adantrr
+      adantrl eleq12d eqeq12d wb breq12 adantl anbi12d orbi12d brab2d mpbirand
+      df-r0 ) ABCUAZDEUAZUBUCVILLUDZMZVJVKMZNBCOZDEOZMZVNVOPZVIVJUFUCZNZUGZAVLV
+      MABCLLFGUEADELLHIUEUHAJUIZQRZWASRZOZKUIZQRZWESRZOZMZWDWHPZWAWEUFUCZNZUGZV
+      TJKVIVJUBVKVKUBWAVKMWEVKMNWMNJKUJPAJKVHUKAWAVIPZWEVJPZNZNZWIVPWLVSWQWDVNW
+      HVOAWNWDVNPWOAWNNWBBWCCWNAWBVIQRZBWAVIQTABLMZCLMZWRBPFGBCLLULUMUNWNAWCVIS
+      RZCWAVISTAWSWTXACPFGBCLLUOUMUNUPUQZAWOWHVOPWNAWONWFDWGEWOAWFVJQRZDWEVJQTA
+      DLMZELMZXCDPHIDELLULUMUNWOAWGVJSRZEWEVJSTAXDXEXFEPHIDELLUOUMUNUPURZUSWQWJ
+      VQWKVRWQWDVNWHVOXBXGUTWPWKVRVAAWAVIWEVJUFVBVCVDVEVFVG $.
+  $}
+
+  ${
+    $d x y $.
+    $( The domain of ` _R0 ` is a subset of ` On X. On ` .  (Contributed by
+       BTernaryTau, 22-Sep-2026.) $)
+    dmr0ss $p |- dom _R0 C_ ( On X. On ) $=
+      ( vx vy cr0 cdm cv con0 cxp wcel wa c1st cfv c2nd cun wceq clexo wo copab
+      wbr df-r0 simpll pm4.71ri opabbii eqtri dmeqi dmopabss eqsstri ) CDAEZFFG
+      ZHZUIBEZUHHZIUGJKUGLKMZUJJKUJLKMZHULUMNUGUJORIPZIZIZABQZDUHCUQCUOABQUQABS
+      UOUPABUOUIUIUKUNTUAUBUCUDUOABUHUEUF $.
+  $}
+
+  ${
+    r0maxss.1 $e |- ( ph -> A e. On ) $.
+    r0maxss.2 $e |- ( ph -> B e. On ) $.
+    r0maxss.3 $e |- ( ph -> C e. On ) $.
+    r0maxss.4 $e |- ( ph -> D e. On ) $.
+    r0maxss.5 $e |- ( ph -> <. A , B >. _R0 <. C , D >. ) $.
+    $( If two ordered pairs are related by ` _R0 ` , then the maximum of the
+       first pair is less than or equal to the maximum of the second pair.
+       (The union of two ordinals is proven to be their maximum in
+       ~ ordunmax .)  (Contributed by BTernaryTau, 22-Sep-2026.) $)
+    r0maxss $p |- ( ph -> ( A u. B ) C_ ( C u. D ) ) $=
+      ( cun wss wcel wceq wo cop wbr con0 onun2 syl2anc clexo brr0d mpbid simpl
+      wa cr0 orim2i syl wb onsseleq mpbird ) ABCKZDEKZLZULUMMZULUMNZOZAUOUPBCPZ
+      DEPZUAQZUEZOZUQAURUSUFQVBJABCDEFGHIUBUCVAUPUOUPUTUDUGUHAULRMZUMRMZUNUQUIA
+      BRMCRMVCFGBCSTADRMERMVDHIDESTULUMUJTUK $.
+  $}
+
+  $( ` _J0 ` is the ` _R0 ` order isomorphism of ` On X. On ` onto ` On ` .
+     Definition 7.59 of [TakeutiZaring] p. 55.  This isomorphism is unique by
+     ~ weisoeq and ~ r0weseon .  (Contributed by BTernaryTau, 19-Sep-2026.) $)
+  j0iso $p |- _J0 Isom _R0 , _E ( ( On X. On ) , On ) $=
+    ( con0 cxp cr0 cep ccj0 wiso coi ccnv wwe wse wa r0weseon cvv wcel wn onprc
+    wo xpexr pm1.2 syl mto eqid ordtypeon mp3an3 isocnv mp2b df-j0 isoeq1 ax-mp
+    wceq wb mpbir ) AABZACDEFZUMACDUMCGZHZFZUMCIZUMCJZKAUMDCUOFZUQLURUSUMMNZOUT
+    VAAMNZPVAVBVBQVBAAMRVBSTUAUMCUOUOUBUCUDAUMDCUOUEUFEUPUJUNUQUKUGUMACDUPEUHUI
+    UL $.
+
+  ${
+    $d x y z $.  $d F y z $.
+    j00smo.1 $e |- F = ( x e. On |-> ( _J0 ` <. (/) , x >. ) ) $.
+    $( ` _J0 ` is strictly monotonic over its second argument when its first
+       argument is zero.  (Contributed by BTernaryTau, 19-Sep-2026.) $)
+    j00smo $p |- Smo F $=
+      ( vy vz con0 c0 cv cop ccj0 cfv wcel 0elon cr0 cep mpan wa wbr wceq fvex
+      co df-ov cxp wiso wf1o j0iso isof1o f1of mp2b fovcl eqeltrrid fmpti ordon
+      wf cun 0un eleq12i clexo wo orc a1i simpl simpr brr0d imbitrrid biimtrrid
+      wb opelxpi isorel syl2an epeli opeq2 fveq2d fvmpt breqan12d bitr4d sylibd
+      bitr3id fdmi issmo ) DEBFAFFGAHZIZJKZBCWAFLZWCGWAJUAZFGWAJUBGFLZWDWEFLMGW
+      AFFFJFFUCZFNOJUDZWGFJUEWGFJUNUFWGFNOJUGWGFJUHUIUJPUKULZUMDHZFLZEHZFLZQZWJ
+      WLLZGWJIZGWLIZNRZWJBKZWLBKZLZWOGWJUOZGWLUOZLZWNWRXBWJXCWLWJUPWLUPUQXDWRWN
+      XDXBXCSWPWQURRQZUSXDXEUTWNGWJGWLWFWNMVAZWKWMVBXFWKWMVCVDVEVFWNWRWPJKZWQJK
+      ZORZXAWKWPWGLZWQWGLZWRXIVGZWMWFWKXJMGWJFFVHPWFWMXKMGWLFFVHPWHXJXKQXLUFWGF
+      WPWQNOJVIPVJXAWSWTORWNXIWSWTWLBTVKWKWMWSXGWTXHOAWJWCXGFBWAWJSWBWPJWAWJGVL
+      VMCWPJTVNAWLWCXHFBWAWLSWBWQJWAWLGVLVMCWQJTVNVOVRVPVQFFBWIVSVT $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    $( The value of ` _J0 ` is at least the maximum of its two arguments.
+       Proposition 15.1(1) of [TakeutiZaring] p. 154.  (Contributed by
+       BTernaryTau, 22-Sep-2026.) $)
+    maxssj0 $p |- ( ( A e. On /\ B e. On ) ->
+        ( A u. B ) C_ ( _J0 ` <. A , B >. ) ) $=
+      ( vx con0 wcel wa c0 cun cop cr0 wbr ccj0 cfv wss wceq cep wb fvex syl wn
+      cxp wiso wf1o wf j0iso isof1o f1of mp2b 0elon f0cli onun2 opelxpd opelxpi
+      a1i isorel mpan syl2anc epeli bitrdi cv cmpt wfn wsmo fnmpti j00smo smogt
+      eqid mp3an12 opeq2 fveq2d fvmpt sseqtrd ontr2 sylancl mpand sylbid onelss
+      wi mpsylsyld eqcom biimpi uneq1 0un eqtrdi opeq12d sseq2d syl5ibcom clexo
+      simpl simpr brr0d word eloni ordirr 3syl eleq1i sylnibr orel1 olc impbid1
+      wo bitrd mpbirand brlexod intnand adantl onunel 3anidm23 mtbird orel2 orc
+      3bitrd wne on0eln0 adantr df-ne xor3 nbior sylbir mpjaod ) ADEZBDEZFZGABH
+      ZIZABIZJKZYDYFLMZNZAGOZYHDEZYCYGYDYHEZYIDDUAZDYFLYMDJPLUBZYMDLUCYMDLUDUEY
+      MDJPLUFYMDLUGUHUIUJZYCYGYELMZYHEZYLYCYGYPYHPKZYQYCYEYMEZYFYMEZYGYRQZYCGYD
+      DDGDEYCUIUNZABUKZULABDDUMYNYSYTFUUAUEYMDYEYFJPLUOUPUQYPYHYFLRURUSYCYDYPNZ
+      YQYLYCYDDEZUUDUUCUUEYDYDCDGCUTZIZLMZVAZMZYPUUIDVBUUIVCUUEYDUUJNCDUUHUUIUU
+      GLRUUIVGZVDCUUIUUKVEDYDUUIVFVHCYDUUHYPDUUIUUFYDOUUGYELUUFYDGVIVJUUKYELRVK
+      VLSZYCUUEYKUUDYQFYLVRUUCYOYDYPYHVMVNVOVPYHYDVQVSYCUUDYJYIUULYJYPYHYDYJYEY
+      FLYJGAYDBYJGAOZAGVTWAYJYDGBHBAGBWBBWCWDWEVJWFWGYCYGYJTZQZYGYJXAZYCYGGAEZU
+      UNYCYGYEYFWHKZUUQUUMYDBEZFZXAZUUQYCYGGYDHZYDOZUURUVCYCYDWCZUNYCYGUVBYDEZU
+      VCUURFZXAZUVFYCGYDABUUBUUCYAYBWIZYAYBWJZWKYCUVETZUVGUVFQYCYDYDEZUVEYCUUEY
+      DWLUVKTUUCYDWMYDWNWOUVBYDYDUVDWPWQUVJUVGUVFUVEUVFWRUVFUVEWSWTSXBXCYCGYDAB
+      UUBUUCUVHUVIXDYCUUTTZUVAUUQQYCUUSUUMYCUUSABEZBBEZFZYBUVOTYAYBUVNUVMYBBWLU
+      VNTBWMBWNSXEXFYAYBUUSUVOQABBXGXHXIXEUVLUVAUUQUUTUUQXJUUQUUTXKWTSXLYCUUQAG
+      XMZUUNYAUUQUVPQYBAXNXOAGXPUSXBUUOYGYJQTUUPYGYJXQYGYJXRXSSXT $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.
+    $( Lemma for ~ j0ltaleph .  (Contributed by BTernaryTau, 25-Sep-2026.) $)
+    j0ltalephlem $p |- ( ( A e. On /\ B e. On ) ->
+        ( _J0 ` <. A , B >. ) ~<_ ( suc ( A u. B ) X. suc ( A u. B ) ) ) $=
+      ( vx vy con0 wcel wa cop ccj0 cr0 ccnv csn wbr cvv cep cin wss wb syl2anc
+      wf1o cfv cima cen cun csuc cxp cdom cres fvex wiso j0iso opelxpi wceq crn
+      imassrn cdm dfdm4 dmr0ss eqsstrri sstri sseqin2 mpbi eqcomi ineq2i isof1o
+      epini wf f1of mp2b 0elon f0cli onssi eqtr2i isoini2 sylancr f1ocnv f1oeng
+      3syl onun2 onsuc syl xpexd cv wi simplrl simplrr simplll simpllr eliniseg
+      wral opex ax-mp bilani r0maxss unssad onsssuc mpbid opelxpd ex ralrimivva
+      unssbd ssrel2 sylibr ssdomg sylc endomtr ) AEFZBEFZGZABHZIUAZJKZXJLZUBZUC
+      MZXNABUDZUEZXQUFZUGMZXKXRUGMXIXKNFXKXNIXNUHZKZTZXOXJIUIZXIXNXKJOXTUJZXNXK
+      XTTYBXIEEUFZEJOIUJZXJYEFYDUKABEEULYEEXNXKJOIXJYEXNPZXNXNYEQZYGXNUMXNXLUNZ
+      YEXLXMUOYIJUPYEJUQURUSUTZXNYEVAVBVCEOKXKLUBZPEXKPZXKYKXKEXKYCVFVDXKEQYLXK
+      UMXKYEEXJIYFYEEITYEEIVGUKYEEJOIVEYEEIVHVIVJVKVLXKEVAVBVMVNVOXNXKJOXTVEXNX
+      KXTVPVRXKXNNYAVQVOXIXRNFXNXRQZXSXIXQXQEEXIXPEFZXQEFABVSZXPVTWAZYPWBXICWCZ
+      DWCZHZXNFZYSXRFZWDZDEWJCEWJZYMXIUUBCDEEXIYQEFZYREFZGZGZYTUUAUUGYTGZYQYRXQ
+      XQUUHYQXPQZYQXQFZUUHYQYRXPUUHYQYRABXIUUDUUEYTWEZXIUUDUUEYTWFZXGXHUUFYTWGZ
+      XGXHUUFYTWHZYTYSXJJMZUUGXJNFYTUUORABWKJXJYSNYQYRWKWIWLWMWNZWOUUHUUDYNUUIU
+      UJRUUKUUHXGXHYNUUMUUNYOSZYQXPWPSWQUUHYRXPQZYRXQFZUUHYQYRXPUUPXAUUHUUEYNUU
+      RUUSRUULUUQYRXPWPSWQWRWSWTYHYMUUCRYJCDEEXNXRXBWLXCXNXRNXDXEXKXNXRXFS $.
+  $}
+
+  $( The value of ` _J0 ` is less than an aleph if its two arguments are less
+     than that aleph.  Proposition 15.1(2) of [TakeutiZaring] p. 154.
+     (Contributed by BTernaryTau, 25-Sep-2026.) $)
+  j0ltaleph $p |- ( ( A e. ( aleph ` C ) /\ B e. ( aleph ` C ) ) ->
+      ( _J0 ` <. A , B >. ) e. ( aleph ` C ) ) $=
+    ( con0 wcel cale cfv wa ccj0 wi com cdom wbr wn csdm wb omelon cxp cfn syl
+    cop w3a wo cr0 cep wiso wf1o wf j0iso f1of mp2b 0elon f0cli domtriord mp2an
+    isof1o con2bii sdomel sylbir orri csuc alephon anim12i 3adant3 j0ltalephlem
+    cun oneli xpfi anidms domfi sylan expcom cdm onenon infinfnum biimpri nsyli
+    ccrd onun2 3syl sylibd cen infxpidm2 ex domentr syl6an onunel mp3an3 syl2an
+    onsuc ibir wlim alephislim limsuc sylbi 3ad2ant3 alephsdom stoic3 domsdomtr
+    mpbid jctird syl6 syld mpan sylibrd wss alephgeom biimpi 3ad2antl3 jaod mpi
+    sselda 3expia com12 wceq alephfnon fndmi eleq2i ndmfv sylnbir nel02 pm2.21d
+    c0 intnanrd pm2.61i ) CDEZACFGZEZBYGEZHZABUAZIGZYGEZJYJYFYMYHYIYFYMYHYIYFUB
+    ZKYLLMZYLKEZUCYMYOYPYONYLKOMZYPYOYQKDEZYLDEZYOYQNPQDDRZDYKIYTDUDUEIUFYTDIUG
+    YTDIUHUIYTDUDUEIUPYTDIUJUKULUMZKYLUNUOUQYSYRYQYPJUUAQYLKURUOUSUTYNYOYMYPYNY
+    OYLYGOMZYMYNYOKABVFZVAZLMZUUBYNADEZBDEZHZYOUUEJYHYIUUHYFYHUUFYIUUGYGACVBZVG
+    ZYGBUUIVGZVCZVDZUUHYOUUDSEZNZUUEUUHUUNYLSEZYOUUHYLUUDUUDRZLMZUUNUUPJABVEZUU
+    NUURUUPUUNUUQSEZUURUUPUUNUUTUUDUUDVHVIUUQYLVJVKVLTUUPNZYOYSYLVRVMZEUVAYOPUU
+    AYLVNYLVOUKVPVQUUHUUDUVBEZUUOUUEPUUHUUCDEZUUDDEZUVCABVSZUUCWJZUUDVNVTZUUDVO
+    TWATYNUUEYLUUDLMZUUDYGOMZHUUBYNUUEUVIUVJYNUUHUUEUVIJUUMUUHUURUUEUUQUUDWBMZU
+    VIUUSUUHUUEUVKUUHUVCUUEUVKUVHUUDWCVKWDYLUUQUUDWEWFTYNUUDYGEZUVJYNUUCYGEZUVL
+    YHYIUVMYFYJUVMYHUUFUUGUVMYJPZYIUUJUUKUUFUUGYGDEUVNUUIABYGWGWHWIWKVDYFYHUVMU
+    VLPZYIYFYGWLUVOCWMYGUUCWNWOWPWTYHYIUVEYFUVLUVJPYJUUHUVDUVEUULUVFUVGVTUUDCWQ
+    WRWTXAYLUUDYGWSXBXCYFYHYMUUBPZYIYSYFUVPUUAYLCWQXDWPXEYNYPYMYFYHYPYMYIYFKYGY
+    LYFKYGXFCXGXHXLXIWDXJXKXMXNYFNZYJYMUVQYHYIUVQYGYCXOZYHNYFCFVMZEUVRUVSDCDFXP
+    XQXRCFXSXTYGAYATYDYBYE $.
 
 
 $(
