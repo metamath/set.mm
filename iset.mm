@@ -72077,8 +72077,8 @@ $)
     $( The property of a function to be finitely supported is a relation.
        (Contributed by AV, 7-Jun-2019.) $)
     relfsupp $p |- Rel finSupp $=
-      ( vr vz cv wfun csupp co cfn wcel wa cfsupp df-fsupp relopabiv ) ACZDMBCE
-      FGHIABJBAKL $.
+      ( vr vw vz cv wfun cfn wcel cdm wss cdif csn w3a wex wa cfsupp df-fsuppfi
+      cima relopabi ) ADZEBDZFGTSHZISUATJQCDKILBMNACOCBAPR $.
   $}
 
   $( A proper class is never finitely supported.  (Contributed by AV,
