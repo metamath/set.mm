@@ -582244,6 +582244,24 @@ $)
       GUUTUWAUVOHWLZQYOKUWBQKYAUWBQKWPYBUWBQKYCXJXAXBUVCYPDXQXRUJRYFYD $.
   $}
 
+  ${
+    $d A x $.
+    $( The value of ` _FL ` when the value of ` _K3 ` is zero.  Part of
+       Proposition 15.14 of [TakeutiZaring] p. 158.  (Contributed by
+       BTernaryTau, 17-Oct-2026.) $)
+    fnlfvk30 $p |- ( ( A e. On /\ ( _K3 ` A ) = (/) ) ->
+        ( _FL ` A ) = ( _FL " A ) ) $=
+      ( vx con0 wcel ck3 cfv c0 wceq wa cfnl cres cvv cdm crn adantr adantl wss
+      cv eqtrd mpan ck1 ck2 cotp cgdlopc cif cmpt cima tfr2 eqid dmeq onss tfr1
+      df-fnl fndmi sseq2i ssdmres bitr3i ad2antrr fveq2d simplr iftrued eqtr4di
+      sylib rneq df-ima wfun wfn fnfun ax-mp resfunexg funimaexg fvmptd2 ) ACDZ
+      AEFZGHZIZAJFZJAKZBLBRZMZEFZGHZVSNZWAVTUAFVSFVTUBFVSFUCUDFZUEZUFZFZJAUGZVM
+      VQWGHVOAJWFBUMZUHOVPBVRWEWHLWFLWFUIVPVSVRHZIZWEWCWHWKWBWCWDWKWAVNGWKVTAEW
+      KVTVRMZAWJVTWLHVPVSVRUJPVMWLAHZVOWJVMACQZWMAUKWNAJMZQWMWOCACJJWFWIULZUNUO
+      AJUPUQVCURSUSVMVOWJUTSVAWJWCWHHVPWJWCVRNWHVSVRVDJAVEVBPSVMVRLDZVOJVFZVMWQ
+      JCVGWRWPCJVHVIZJACVJTOVMWHLDZVOWRVMWTWSJACVKTOVLS $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
