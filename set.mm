@@ -64127,7 +64127,7 @@ $)
     $d x A $.
     fnmpti.1 $e |- B e. _V $.
     fnmpti.2 $e |- F = ( x e. A |-> B ) $.
-    $( Functionality and domain of an ordered-pair class abstraction.
+    $( The maps-to notation defines a function with domain.
        (Contributed by NM, 29-Jan-2004.)  (Revised by Mario Carneiro,
        31-Aug-2015.) $)
     fnmpti $p |- F Fn A $=
