@@ -43475,6 +43475,17 @@ $)
       ( wceq cpw pweq syl ) ABCEBFCFEDBCGH $.
   $}
 
+  $( The power class of the universe is the universe.  Exercise 4.12(d) of
+     [Mendelson] p. 235.
+
+     The collection of all classes is of course larger than ` _V ` , which is
+     the collection of all sets.  But ` ~P _V ` , being a class, cannot contain
+     proper classes, so ` ~P _V ` is actually no larger than ` _V ` .  This
+     fact is exploited in ~ ncanth .  (Contributed by NM, 14-Sep-2003.) $)
+  pwv $p |- ~P _V = _V $=
+    ( vx cvv cpw cv wcel wss ssv velpw mpbir vex 2th eqriv ) ABCZBADZMEZNBEONBF
+    NGABHIAJKL $.
+
   $( The power class of the union of two classes includes the union of their
      power classes.  Exercise 4.12(k) of [Mendelson] p. 235.  (Contributed by
      NM, 23-Nov-2003.)  Remove use of ~ ax-sep , ~ ax-nul , ~ ax-pr and shorten
@@ -43536,13 +43547,9 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-  Unordered and ordered pairs
+  Singletons, unordered pairs, unordered triples
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
-
-  $( Declare new symbols needed. $)
-  $c <. $.  $( Bracket (the period distinguishes it from 'less than') $)
-  $c >. $.  $( Bracket (the period distinguishes it from 'greater than') $)
 
   ${
     $d x A $.  $d y A $.  $d z x $.  $d z y $.  $d z A $.
@@ -43593,69 +43600,6 @@ $)
      ~ df-ot .  As with all tuples, when the term "triple" is used without
      qualifier, it means "ordered triple".  (Contributed by NM, 9-Apr-1994.) $)
   df-tp $a |- { A , B , C } = ( { A , B } u. { C } ) $.
-
-  $( Extend class notation to include ordered pair. $)
-  cop $a class <. A , B >. $.
-
-  ${
-    $d x A $.  $d x B $.
-    $( Definition of an ordered pair, equivalent to Kuratowski's definition
-       ` { { A } , { A , B } } ` when the arguments are sets.  Since the
-       behavior of Kuratowski definition is not very useful for proper classes,
-       we define it to be empty in this case (see ~ opprc1 , ~ opprc2 , and
-       ~ 0nelop ).  For Kuratowski's actual definition when the arguments are
-       sets, see ~ dfop .  For the justifying theorem (for sets) see ~ opth .
-       See ~ dfopif for an equivalent formulation using the ` if ` operation.
-
-       Definition 9.1 of [Quine] p. 58 defines an ordered pair unconditionally
-       as ` <. A , B >. = { { A } , { A , B } } ` , which has different
-       behavior from our ~ df-op when the arguments are proper classes.
-       Ordinarily this difference is not important, since neither definition is
-       meaningful in that case.  Our ~ df-op was chosen because it often makes
-       proofs shorter by eliminating unnecessary sethood hypotheses.
-
-       There are other ways to define ordered pairs.  The basic requirement is
-       that two ordered pairs are equal iff their respective members are equal.
-       In 1914 Norbert Wiener gave the first successful definition
-       ` <. A , B >. `_2 ` = { { { A } , (/) } , { { B } } } ` , justified by
-       ~ opthwiener .  This was simplified by Kazimierz Kuratowski in 1921 to
-       our present definition.  An even simpler definition ` <. A , B >. `_3
-       ` = { A , { A , B } } ` is justified by ~ opthreg , but it requires the
-       Axiom of Regularity for its justification and is not commonly used.  A
-       definition that also works for proper classes is ` <. A , B >. `_4
-       ` = ( ( A X. { (/) } ) u. ( B X. { { (/) } } ) ) ` , justified by
-       ~ opthprc .  Nearly at the same time as Norbert Wiener, Felix Hausdorff
-       proposed the following definition in "Grundz&uuml;ge der Mengenlehre"
-       ("Basics of Set Theory"), p. 32, in 1914: ` <. A , B >. `_5
-       ` = { { A , O } , { B , T } } ` .  Hausdorff used ` 1 ` and ` 2 `
-       instead of ` O ` and ` T ` , but actually any two different fixed sets
-       will do (e.g., ` O = (/) ` and ` T = { (/) } ` , see ~ 0nep0 ).
-       Furthermore, Hausdorff demanded that ` O ` and ` T ` are both different
-       from ` A ` as well as ` B ` , which is actually not necessary (at least
-       not in full extent), see ~ opthhausdorff0 and ~ opthhausdorff .  If we
-       restrict our sets to nonnegative integers, an ordered pair definition
-       that involves only elementary arithmetic is provided by ~ nn0opthi .  An
-       ordered pair of real numbers can also be represented by a complex number
-       as shown by ~ cru .  Kuratowski's ordered pair definition is standard
-       for ZFC set theory, but it is very inconvenient to use in New
-       Foundations theory because it is not type-level; a common alternate
-       definition in New Foundations is the definition from [Rosser] p. 281.
-
-       Since there are other ways to define ordered pairs, we discourage direct
-       use of this definition so that most theorems won't depend on this
-       particular construction; theorems will instead rely on ~ dfopif .
-       (Contributed by NM, 28-May-1995.)  (Revised by Mario Carneiro,
-       26-Apr-2015.)  (Avoid depending on this detail.) $)
-    df-op $a |- <. A , B >. =
-                { x | ( A e. _V /\ B e. _V /\ x e. { { A } , { A , B } } ) } $.
-  $}
-
-  $( Extend class notation to include ordered triple. $)
-  cotp $a class <. A , B , C >. $.
-
-  $( Define ordered triple of classes.  Definition of ordered triple in [Stoll]
-     p. 25.  (Contributed by NM, 3-Apr-2015.) $)
-  df-ot $a |- <. A , B , C >. = <. <. A , B >. , C >. $.
 
   ${
     $d x A $.  $d x B $.
@@ -45732,6 +45676,180 @@ $)
       UBOPTUCACDUDUEUF $.
   $}
 
+
+  ${
+    $d B x $.  $d ps x $.
+    ralunsn.1 $e |- ( x = B -> ( ph <-> ps ) ) $.
+    $( Restricted quantification over the union of a set and a singleton, using
+       implicit substitution.  (Contributed by Paul Chapman, 17-Nov-2012.)
+       (Revised by Mario Carneiro, 23-Apr-2015.) $)
+    ralunsn $p |- ( B e. C -> ( A. x e. ( A u. { B } ) ph <->
+                                ( A. x e. A ph /\ ps ) ) ) $=
+      ( csn cun wral wa wcel ralunb ralsng anbi2d bitrid ) ACDEHZIJACDJZACQJZKE
+      FLZRBKACDQMTSBRABCEFGNOP $.
+  $}
+
+  ${
+    $d A x $.  $d B x y $.  $d C x $.  $d ch x $.  $d ps y $.  $d th x $.
+    2ralunsn.1 $e |- ( x = B -> ( ph <-> ch ) ) $.
+    2ralunsn.2 $e |- ( y = B -> ( ph <-> ps ) ) $.
+    2ralunsn.3 $e |- ( x = B -> ( ps <-> th ) ) $.
+    $( Double restricted quantification over the union of a set and a
+       singleton, using implicit substitution.  (Contributed by Paul Chapman,
+       17-Nov-2012.) $)
+    2ralunsn $p |- ( B e. C ->
+                     ( A. x e. ( A u. { B } ) A. y e. ( A u. { B } ) ph <->
+                       ( ( A. x e. A A. y e. A ph /\ A. x e. A ps ) /\
+                         ( A. y e. A ch /\ th ) ) ) ) $=
+      ( wcel csn cun wral wa ralunsn ralbidv cv wceq r19.26 anbi1i bitrdi bitrd
+      anbi12d ) HIMZAFGHNOZPZEUHPAFGPZBQZEUHPZUJEGPBEGPQZCFGPZDQZQZUGUIUKEUHABF
+      GHIKRSUGULUKEGPZUOQUPUKUOEGHIETHUAZUJUNBDURACFGJSLUFRUQUMUOUJBEGUBUCUDUE
+      $.
+  $}
+
+  ${
+    $d A x $.
+    $( The power set of a singleton.  (Contributed by NM, 5-Jun-2006.) $)
+    pwsn $p |- ~P { A } = { (/) , { A } } $=
+      ( vx cv csn wss cab c0 wceq wo cpw cpr sssn abbii df-pw dfpr2 3eqtr4i ) B
+      CZADZEZBFQGHQRHIZBFRJGRKSTBQALMBRNBGROP $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    $( The power set of an unordered pair.  (Contributed by NM, 1-May-2009.) $)
+    pwpr $p |- ~P { A , B } = ( { (/) , { A } } u. { { B } , { A , B } } ) $=
+      ( vx cpr cpw c0 csn cun cv wss wcel wo wceq sspr vex orbi12i bitr4i velpw
+      elpr elun 3bitr4i eqriv ) CABDZEZFAGZDZBGZUCDZHZCIZUCJZUJUFKZUJUHKZLZUJUD
+      KUJUIKUKUJFMUJUEMLZUJUGMUJUCMLZLUNUJABNULUOUMUPUJFUECOZSUJUGUCUQSPQCUCRUJ
+      UFUHTUAUB $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( The power set of an unordered triple.  (Contributed by Mario Carneiro,
+       2-Jul-2016.) $)
+    pwtp $p |- ~P { A , B , C } =
+      ( ( { (/) , { A } } u. { { B } , { A , B } } ) u.
+        ( { { C } , { A , C } } u. { { B , C } , { A , B , C } } ) ) $=
+      ( vx ctp cpw c0 csn cpr cun cv wcel velpw wo wceq elun elpr orbi12i bitri
+      wss vex sstp 3bitr4ri eqriv ) DABCEZFZGAHZIZBHZABIZIZJZCHZACIZIZBCIZUEIZJ
+      ZJZDKZUFLUTUETZUTUSLZDUEMUTULLZUTURLZNUTGOUTUGONZUTUIOUTUJONZNZUTUMOUTUNO
+      NZUTUPOUTUEONZNZNVBVAVCVGVDVJVCUTUHLZUTUKLZNVGUTUHUKPVKVEVLVFUTGUGDUAZQUT
+      UIUJVMQRSVDUTUOLZUTUQLZNVJUTUOUQPVNVHVOVIUTUMUNVMQUTUPUEVMQRSRUTULURPUTAB
+      CUBUCSUD $.
+  $}
+
+  $( Compute the power set of the power set of the power set of the empty set.
+     (See also ~ pw0 and ~ pwpw0 .)  (Contributed by NM, 2-May-2009.) $)
+  pwpwpw0 $p |- ~P { (/) , { (/) } } =
+                ( { (/) , { (/) } } u. { { { (/) } } , { (/) , { (/) } } } ) $=
+    ( c0 csn pwpr ) AABC $.
+
+  ${
+    $d A v $.  $d B v $.  $d C v $.  $d V v $.
+    $( For an element of a proper unordered pair of elements of a class ` V ` ,
+       there is another (different) element of the class ` V ` which is an
+       element of the proper pair.  (Contributed by AV, 18-Dec-2021.) $)
+    prproe $p |- ( ( C e. { A , B } /\ A =/= B /\ ( A e. V /\ B e. V ) )
+                   -> E. v e. ( V \ { C } ) v e. { A , B } ) $=
+      ( wcel wne wa wceq wi eleq1 neeq2 eqcoms biimpcd adantr eldifsnd ad2antll
+      wb impcom rspcedvdw cpr cv csn cdif wrex elpri simprrr necom sylbi prid2g
+      wo adantl ex simprrl prid1g jaoi syl 3impib ) DBCUAZFZBCGZBEFZCEFZHZAUBZU
+      SFZAEDUCUDZUEZUTDBIZDCIZUKVAVDHZVHJZDBCUFVIVLVJVIVKVHVIVKHZVFCUSFZACVGVEC
+      USKVMCEDVIVAVBVCUGVKVICDGZVAVIVOJZVDVACBGZVPBCUHVIVQVOVQVORBDBDCLMNUIOSPV
+      DVNVIVAVCVNVBBCEUJULQTUMVJVKVHVJVKHZVFBUSFZABVGVEBUSKVRBEDVJVAVBVCUNVKVJB
+      DGZVAVJVTJVDVJVAVTVAVTRCDCDBLMNOSPVDVSVJVAVBVSVCBCEUOOQTUMUPUQUR $.
+  $}
+
+  $( If there are three elements in a proper unordered pair, and two of them
+     are different from the third one, the two must be equal.  (Contributed by
+     AV, 19-Dec-2021.) $)
+  3elpr2eq $p |- ( ( ( X e. { A , B } /\ Y e. { A , B } /\ Z e. { A , B } )
+                     /\ ( Y =/= X /\ Z =/= X ) ) -> Y = Z ) $=
+    ( wcel wne wa wceq wo wi elpri eqtr3 eqneqall syl adantld ex a1d impd jaoi
+    cpr w3a 2a1d com12 com13 3imp syl3an imp ) CABUAZFZDUIFZEUIFZUBDCGZECGZHZDE
+    IZUJCAIZCBIZJZUKDAIZDBIZJZULEAIZEBIZJZUOUPKZCABLDABLEABLUSVBVEVFUQVBVEVFKKU
+    RVEVBUQVFVCVBUQVFKZKVDVCVGVBVCUQVFVCUQHZUNUPUMVHECIZUNUPKZECAMUPECNZOPQRVBV
+    DVGUTVDVGKVAUTVGVDUTUQVFUTUQHZUMUNUPVLDCIZUMVJKZDCAMVJDCNZOSQRVAVDVGVAVDHUP
+    UQUODEBMUCQTUDTUEVEVBURVFVCVBURVFKZKVDVBVCVPUTVCVPKVAUTVCVPUTVCHUPURUODEAMU
+    CQVAVPVCVAURVFVAURHZUMUNUPVQVMVNDCBMVOOSQRTUDVDVPVBVDURVFVDURHZUNUPUMVRVIVJ
+    ECBMVKOPQRTUETUFUGUH $.
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Ordered pairs and triples
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare new symbols needed. $)
+  $c <. $.  $( Bracket (the period distinguishes it from 'less than') $)
+  $c >. $.  $( Bracket (the period distinguishes it from 'greater than') $)
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Ordered pairs
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $( Extend class notation to include ordered pair. $)
+  cop $a class <. A , B >. $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( Definition of an ordered pair, equivalent to Kuratowski's definition
+       ` { { A } , { A , B } } ` when the arguments are sets.  Since the
+       behavior of Kuratowski definition is not very useful for proper classes,
+       we define it to be empty in this case (see ~ opprc1 , ~ opprc2 , and
+       ~ 0nelop ).  For Kuratowski's actual definition when the arguments are
+       sets, see ~ dfop .  For the justifying theorem (for sets) see ~ opth .
+       See ~ dfopif for an equivalent formulation using the ` if ` operation.
+
+       Definition 9.1 of [Quine] p. 58 defines an ordered pair unconditionally
+       as ` <. A , B >. = { { A } , { A , B } } ` , which has different
+       behavior from our ~ df-op when the arguments are proper classes.
+       Ordinarily this difference is not important, since neither definition is
+       meaningful in that case.  Our ~ df-op was chosen because it often makes
+       proofs shorter by eliminating unnecessary sethood hypotheses.
+
+       There are other ways to define ordered pairs.  The basic requirement is
+       that two ordered pairs are equal iff their respective members are equal.
+       In 1914 Norbert Wiener gave the first successful definition
+       ` <. A , B >. `_2 ` = { { { A } , (/) } , { { B } } } ` , justified by
+       ~ opthwiener .  This was simplified by Kazimierz Kuratowski in 1921 to
+       our present definition.  An even simpler definition ` <. A , B >. `_3
+       ` = { A , { A , B } } ` is justified by ~ opthreg , but it requires the
+       Axiom of Regularity for its justification and is not commonly used.  A
+       definition that also works for proper classes is ` <. A , B >. `_4
+       ` = ( ( A X. { (/) } ) u. ( B X. { { (/) } } ) ) ` , justified by
+       ~ opthprc .  Nearly at the same time as Norbert Wiener, Felix Hausdorff
+       proposed the following definition in "Grundz&uuml;ge der Mengenlehre"
+       ("Basics of Set Theory"), p. 32, in 1914: ` <. A , B >. `_5
+       ` = { { A , O } , { B , T } } ` .  Hausdorff used ` 1 ` and ` 2 `
+       instead of ` O ` and ` T ` , but actually any two different fixed sets
+       will do (e.g., ` O = (/) ` and ` T = { (/) } ` , see ~ 0nep0 ).
+       Furthermore, Hausdorff demanded that ` O ` and ` T ` are both different
+       from ` A ` as well as ` B ` , which is actually not necessary (at least
+       not in full extent), see ~ opthhausdorff0 and ~ opthhausdorff .  If we
+       restrict our sets to nonnegative integers, an ordered pair definition
+       that involves only elementary arithmetic is provided by ~ nn0opthi .  An
+       ordered pair of real numbers can also be represented by a complex number
+       as shown by ~ cru .  Kuratowski's ordered pair definition is standard
+       for ZFC set theory, but it is very inconvenient to use in New
+       Foundations theory because it is not type-level; a common alternate
+       definition in New Foundations is the definition from [Rosser] p. 281.
+
+       Since there are other ways to define ordered pairs, we discourage direct
+       use of this definition so that most theorems won't depend on this
+       particular construction; theorems will instead rely on ~ dfopif .
+       (Contributed by NM, 28-May-1995.)  (Revised by Mario Carneiro,
+       26-Apr-2015.)  (Avoid depending on this detail.) $)
+    df-op $a |- <. A , B >. =
+                { x | ( A e. _V /\ B e. _V /\ x e. { { A } , { A , B } } ) } $.
+  $}
+
   ${
     $d A x $.  $d B x $.
     $( Rewrite ~ df-op using ` if ` .  When both arguments are sets, it reduces
@@ -45826,46 +45944,6 @@ $)
       ( wceq cop opeq12 syl2anc ) ABCHDEHBDICEIHFGBDCEJK $.
   $}
 
-  $( Equality theorem for ordered triples.  (Contributed by NM, 3-Apr-2015.) $)
-  oteq1 $p |- ( A = B -> <. A , C , D >. = <. B , C , D >. ) $=
-    ( wceq cop cotp opeq1 opeq1d df-ot 3eqtr4g ) ABEZACFZDFBCFZDFACDGBCDGLMNDAB
-    CHIACDJBCDJK $.
-
-  $( Equality theorem for ordered triples.  (Contributed by NM, 3-Apr-2015.) $)
-  oteq2 $p |- ( A = B -> <. C , A , D >. = <. C , B , D >. ) $=
-    ( wceq cop cotp opeq2 opeq1d df-ot 3eqtr4g ) ABEZCAFZDFCBFZDFCADGCBDGLMNDAB
-    CHICADJCBDJK $.
-
-  $( Equality theorem for ordered triples.  (Contributed by NM, 3-Apr-2015.) $)
-  oteq3 $p |- ( A = B -> <. C , D , A >. = <. C , D , B >. ) $=
-    ( wceq cop cotp opeq2 df-ot 3eqtr4g ) ABECDFZAFKBFCDAGCDBGABKHCDAICDBIJ $.
-
-  ${
-    oteq1d.1 $e |- ( ph -> A = B ) $.
-    $( Equality deduction for ordered triples.  (Contributed by Mario Carneiro,
-       11-Jan-2017.) $)
-    oteq1d $p |- ( ph -> <. A , C , D >. = <. B , C , D >. ) $=
-      ( wceq cotp oteq1 syl ) ABCGBDEHCDEHGFBCDEIJ $.
-
-    $( Equality deduction for ordered triples.  (Contributed by Mario Carneiro,
-       11-Jan-2017.) $)
-    oteq2d $p |- ( ph -> <. C , A , D >. = <. C , B , D >. ) $=
-      ( wceq cotp oteq2 syl ) ABCGDBEHDCEHGFBCDEIJ $.
-
-    $( Equality deduction for ordered triples.  (Contributed by Mario Carneiro,
-       11-Jan-2017.) $)
-    oteq3d $p |- ( ph -> <. C , D , A >. = <. C , D , B >. ) $=
-      ( wceq cotp oteq3 syl ) ABCGDEBHDECHGFBCDEIJ $.
-
-    oteq123d.2 $e |- ( ph -> C = D ) $.
-    oteq123d.3 $e |- ( ph -> E = F ) $.
-    $( Equality deduction for ordered triples.  (Contributed by Mario Carneiro,
-       11-Jan-2017.) $)
-    oteq123d $p |- ( ph -> <. A , C , E >. = <. B , D , F >. ) $=
-      ( cotp oteq1d oteq2d oteq3d 3eqtrd ) ABDFKCDFKCEFKCEGKABCDFHLADECFIMAFGCE
-      JNO $.
-  $}
-
   ${
     nfop.1 $e |- F/_ x A $.
     nfop.2 $e |- F/_ x B $.
@@ -45879,8 +45957,8 @@ $)
 
   ${
     $d z B $.  $d z A $.  $d x z $.
-    nfopd.2 $e |- ( ph -> F/_ x A ) $.
-    nfopd.3 $e |- ( ph -> F/_ x B ) $.
+    nfopd.1 $e |- ( ph -> F/_ x A ) $.
+    nfopd.2 $e |- ( ph -> F/_ x B ) $.
     $( Deduction version of bound-variable hypothesis builder ~ nfop .  This
        shows how the deduction version of a not-free theorem such as ~ nfop can
        be created from the corresponding not-free inference theorem.
@@ -45920,36 +45998,6 @@ $)
       ( cvv wcel cop csn wceq opidg ax-mp ) ACDAAEAFFGBACHI $.
   $}
 
-  ${
-    $d B x $.  $d ps x $.
-    ralunsn.1 $e |- ( x = B -> ( ph <-> ps ) ) $.
-    $( Restricted quantification over the union of a set and a singleton, using
-       implicit substitution.  (Contributed by Paul Chapman, 17-Nov-2012.)
-       (Revised by Mario Carneiro, 23-Apr-2015.) $)
-    ralunsn $p |- ( B e. C -> ( A. x e. ( A u. { B } ) ph <->
-                                ( A. x e. A ph /\ ps ) ) ) $=
-      ( csn cun wral wa wcel ralunb ralsng anbi2d bitrid ) ACDEHZIJACDJZACQJZKE
-      FLZRBKACDQMTSBRABCEFGNOP $.
-  $}
-
-  ${
-    $d A x $.  $d B x y $.  $d C x $.  $d ch x $.  $d ps y $.  $d th x $.
-    2ralunsn.1 $e |- ( x = B -> ( ph <-> ch ) ) $.
-    2ralunsn.2 $e |- ( y = B -> ( ph <-> ps ) ) $.
-    2ralunsn.3 $e |- ( x = B -> ( ps <-> th ) ) $.
-    $( Double restricted quantification over the union of a set and a
-       singleton, using implicit substitution.  (Contributed by Paul Chapman,
-       17-Nov-2012.) $)
-    2ralunsn $p |- ( B e. C ->
-                     ( A. x e. ( A u. { B } ) A. y e. ( A u. { B } ) ph <->
-                       ( ( A. x e. A A. y e. A ph /\ A. x e. A ps ) /\
-                         ( A. y e. A ch /\ th ) ) ) ) $=
-      ( wcel csn cun wral wa ralunsn ralbidv cv wceq r19.26 anbi1i bitrdi bitrd
-      anbi12d ) HIMZAFGHNOZPZEUHPAFGPZBQZEUHPZUJEGPBEGPQZCFGPZDQZQZUGUIUKEUHABF
-      GHIKRSUGULUKEGPZUOQUPUKUOEGHIETHUAZUJUNBDURACFGJSLUFRUQUMUOUJBEGUBUCUDUE
-      $.
-  $}
-
   $( Expansion of an ordered pair when either member is a proper class.
      (Contributed by Mario Carneiro, 26-Apr-2015.) $)
   opprc $p |- ( -. ( A e. _V /\ B e. _V ) -> <. A , B >. = (/) ) $=
@@ -45973,85 +46021,59 @@ $)
   oprcl $p |- ( C e. <. A , B >. -> ( A e. _V /\ B e. _V ) ) $=
     ( cop wcel c0 wceq cvv wa n0i opprc nsyl2 ) CABDZEMFGAHEBHEIMCJABKL $.
 
-  ${
-    $d A x $.
-    $( The power set of a singleton.  (Contributed by NM, 5-Jun-2006.) $)
-    pwsn $p |- ~P { A } = { (/) , { A } } $=
-      ( vx cv csn wss cab c0 wceq wo cpw cpr sssn abbii df-pw dfpr2 3eqtr4i ) B
-      CZADZEZBFQGHQRHIZBFRJGRKSTBQALMBRNBGROP $.
-  $}
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Ordered triples
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $( Extend class notation to include ordered triple. $)
+  cotp $a class <. A , B , C >. $.
+
+  $( Define ordered triple of classes.  Definition of ordered triple in [Stoll]
+     p. 25.  (Contributed by NM, 3-Apr-2015.) $)
+  df-ot $a |- <. A , B , C >. = <. <. A , B >. , C >. $.
+
+  $( Equality theorem for ordered triples.  (Contributed by NM, 3-Apr-2015.) $)
+  oteq1 $p |- ( A = B -> <. A , C , D >. = <. B , C , D >. ) $=
+    ( wceq cop cotp opeq1 opeq1d df-ot 3eqtr4g ) ABEZACFZDFBCFZDFACDGBCDGLMNDAB
+    CHIACDJBCDJK $.
+
+  $( Equality theorem for ordered triples.  (Contributed by NM, 3-Apr-2015.) $)
+  oteq2 $p |- ( A = B -> <. C , A , D >. = <. C , B , D >. ) $=
+    ( wceq cop cotp opeq2 opeq1d df-ot 3eqtr4g ) ABEZCAFZDFCBFZDFCADGCBDGLMNDAB
+    CHICADJCBDJK $.
+
+  $( Equality theorem for ordered triples.  (Contributed by NM, 3-Apr-2015.) $)
+  oteq3 $p |- ( A = B -> <. C , D , A >. = <. C , D , B >. ) $=
+    ( wceq cop cotp opeq2 df-ot 3eqtr4g ) ABECDFZAFKBFCDAGCDBGABKHCDAICDBIJ $.
 
   ${
-    $d A x $.  $d B x $.
-    $( The power set of an unordered pair.  (Contributed by NM, 1-May-2009.) $)
-    pwpr $p |- ~P { A , B } = ( { (/) , { A } } u. { { B } , { A , B } } ) $=
-      ( vx cpr cpw c0 csn cun cv wss wcel wo wceq sspr vex orbi12i bitr4i velpw
-      elpr elun 3bitr4i eqriv ) CABDZEZFAGZDZBGZUCDZHZCIZUCJZUJUFKZUJUHKZLZUJUD
-      KUJUIKUKUJFMUJUEMLZUJUGMUJUCMLZLUNUJABNULUOUMUPUJFUECOZSUJUGUCUQSPQCUCRUJ
-      UFUHTUAUB $.
+    oteq1d.1 $e |- ( ph -> A = B ) $.
+    $( Equality deduction for ordered triples.  (Contributed by Mario Carneiro,
+       11-Jan-2017.) $)
+    oteq1d $p |- ( ph -> <. A , C , D >. = <. B , C , D >. ) $=
+      ( wceq cotp oteq1 syl ) ABCGBDEHCDEHGFBCDEIJ $.
+
+    $( Equality deduction for ordered triples.  (Contributed by Mario Carneiro,
+       11-Jan-2017.) $)
+    oteq2d $p |- ( ph -> <. C , A , D >. = <. C , B , D >. ) $=
+      ( wceq cotp oteq2 syl ) ABCGDBEHDCEHGFBCDEIJ $.
+
+    $( Equality deduction for ordered triples.  (Contributed by Mario Carneiro,
+       11-Jan-2017.) $)
+    oteq3d $p |- ( ph -> <. C , D , A >. = <. C , D , B >. ) $=
+      ( wceq cotp oteq3 syl ) ABCGDEBHDECHGFBCDEIJ $.
+
+    oteq123d.2 $e |- ( ph -> C = D ) $.
+    oteq123d.3 $e |- ( ph -> E = F ) $.
+    $( Equality deduction for ordered triples.  (Contributed by Mario Carneiro,
+       11-Jan-2017.) $)
+    oteq123d $p |- ( ph -> <. A , C , E >. = <. B , D , F >. ) $=
+      ( cotp oteq1d oteq2d oteq3d 3eqtrd ) ABDFKCDFKCEFKCEGKABCDFHLADECFIMAFGCE
+      JNO $.
   $}
-
-  ${
-    $d A x $.  $d B x $.  $d C x $.
-    $( The power set of an unordered triple.  (Contributed by Mario Carneiro,
-       2-Jul-2016.) $)
-    pwtp $p |- ~P { A , B , C } =
-      ( ( { (/) , { A } } u. { { B } , { A , B } } ) u.
-        ( { { C } , { A , C } } u. { { B , C } , { A , B , C } } ) ) $=
-      ( vx ctp cpw c0 csn cpr cun cv wcel velpw wo wceq elun elpr orbi12i bitri
-      wss vex sstp 3bitr4ri eqriv ) DABCEZFZGAHZIZBHZABIZIZJZCHZACIZIZBCIZUEIZJ
-      ZJZDKZUFLUTUETZUTUSLZDUEMUTULLZUTURLZNUTGOUTUGONZUTUIOUTUJONZNZUTUMOUTUNO
-      NZUTUPOUTUEONZNZNVBVAVCVGVDVJVCUTUHLZUTUKLZNVGUTUHUKPVKVEVLVFUTGUGDUAZQUT
-      UIUJVMQRSVDUTUOLZUTUQLZNVJUTUOUQPVNVHVOVIUTUMUNVMQUTUPUEVMQRSRUTULURPUTAB
-      CUBUCSUD $.
-  $}
-
-  $( Compute the power set of the power set of the power set of the empty set.
-     (See also ~ pw0 and ~ pwpw0 .)  (Contributed by NM, 2-May-2009.) $)
-  pwpwpw0 $p |- ~P { (/) , { (/) } } =
-                ( { (/) , { (/) } } u. { { { (/) } } , { (/) , { (/) } } } ) $=
-    ( c0 csn pwpr ) AABC $.
-
-  $( The power class of the universe is the universe.  Exercise 4.12(d) of
-     [Mendelson] p. 235.
-
-     The collection of all classes is of course larger than ` _V ` , which is
-     the collection of all sets.  But ` ~P _V ` , being a class, cannot contain
-     proper classes, so ` ~P _V ` is actually no larger than ` _V ` .  This
-     fact is exploited in ~ ncanth .  (Contributed by NM, 14-Sep-2003.) $)
-  pwv $p |- ~P _V = _V $=
-    ( vx cvv cpw cv wcel wss ssv velpw mpbir vex 2th eqriv ) ABCZBADZMEZNBEONBF
-    NGABHIAJKL $.
-
-  ${
-    $d A v $.  $d B v $.  $d C v $.  $d V v $.
-    $( For an element of a proper unordered pair of elements of a class ` V ` ,
-       there is another (different) element of the class ` V ` which is an
-       element of the proper pair.  (Contributed by AV, 18-Dec-2021.) $)
-    prproe $p |- ( ( C e. { A , B } /\ A =/= B /\ ( A e. V /\ B e. V ) )
-                   -> E. v e. ( V \ { C } ) v e. { A , B } ) $=
-      ( wcel wne wa wceq wi eleq1 neeq2 eqcoms biimpcd adantr eldifsnd ad2antll
-      wb impcom rspcedvdw cpr cv csn cdif wrex elpri simprrr necom sylbi prid2g
-      wo adantl ex simprrl prid1g jaoi syl 3impib ) DBCUAZFZBCGZBEFZCEFZHZAUBZU
-      SFZAEDUCUDZUEZUTDBIZDCIZUKVAVDHZVHJZDBCUFVIVLVJVIVKVHVIVKHZVFCUSFZACVGVEC
-      USKVMCEDVIVAVBVCUGVKVICDGZVAVIVOJZVDVACBGZVPBCUHVIVQVOVQVORBDBDCLMNUIOSPV
-      DVNVIVAVCVNVBBCEUJULQTUMVJVKVHVJVKHZVFBUSFZABVGVEBUSKVRBEDVJVAVBVCUNVKVJB
-      DGZVAVJVTJVDVJVAVTVAVTRCDCDBLMNOSPVDVSVJVAVBVSVCBCEUOOQTUMUPUQUR $.
-  $}
-
-  $( If there are three elements in a proper unordered pair, and two of them
-     are different from the third one, the two must be equal.  (Contributed by
-     AV, 19-Dec-2021.) $)
-  3elpr2eq $p |- ( ( ( X e. { A , B } /\ Y e. { A , B } /\ Z e. { A , B } )
-                     /\ ( Y =/= X /\ Z =/= X ) ) -> Y = Z ) $=
-    ( wcel wne wa wceq wo wi elpri eqtr3 eqneqall syl adantld ex a1d impd jaoi
-    cpr w3a 2a1d com12 com13 3imp syl3an imp ) CABUAZFZDUIFZEUIFZUBDCGZECGZHZDE
-    IZUJCAIZCBIZJZUKDAIZDBIZJZULEAIZEBIZJZUOUPKZCABLDABLEABLUSVBVEVFUQVBVEVFKKU
-    RVEVBUQVFVCVBUQVFKZKVDVCVGVBVCUQVFVCUQHZUNUPUMVHECIZUNUPKZECAMUPECNZOPQRVBV
-    DVGUTVDVGKVAUTVGVDUTUQVFUTUQHZUMUNUPVLDCIZUMVJKZDCAMVJDCNZOSQRVAVDVGVAVDHUP
-    UQUODEBMUCQTUDTUEVEVBURVFVCVBURVFKZKVDVBVCVPUTVCVPKVAUTVCVPUTVCHUPURUODEAMU
-    CQVAVPVCVAURVFVAURHZUMUNUPVQVMVNDCBMVOOSQRTUDVDVPVBVDURVFVDURHZUNUPUMVRVIVJ
-    ECBMVKOPQRTUETUFUGUH $.
 
 
 $(
