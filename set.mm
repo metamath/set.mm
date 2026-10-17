@@ -582262,6 +582262,29 @@ $)
       JCVGWRWPCJVHVIZJACVJTOVMWHLDZVOWRVMWTWSJACVKTOVLS $.
   $}
 
+  ${
+    $d A x $.
+    $( The value of ` _FL ` when the value of ` _K3 ` is nonzero.  Part of
+       Proposition 15.14 of [TakeutiZaring] p. 158.  (Contributed by
+       BTernaryTau, 17-Oct-2026.) $)
+    fnlfvk3n0 $p |- ( ( A e. On /\ ( _K3 ` A ) =/= (/) ) ->
+        ( _FL ` A ) = ( ~F ` <. ( _K3 ` A ) ,
+        ( _FL ` ( _K1 ` A ) ) , ( _FL ` ( _K2 ` A ) ) >. ) ) $=
+      ( vx con0 wcel ck3 cfv c0 wa cfnl cvv cdm wceq ck1 ck2 cotp cgdlopc eqtrd
+      adantr fveq2d ax-mp wne cres cv crn cif cmpt df-fnl tfr2 eqid dmeq adantl
+      wss onss fndmi sseq2i ssdmres bitr3i sylib ad2antrr simplr eqnetrd neneqd
+      tfr1 iffalsed simpr fveq12d wb c9o k39o 9on oneli on0eln0 k3n0k1lt fvresd
+      sylan2br k3n0k2lt oteq123d wfun wfn fnfun resfunexg mpan fvexd fvmptd2 )
+      ACDZAEFZGUAZHZAIFZIAUBZBJBUCZKZEFZGLZWKUDZWMWLMFZWKFZWLNFZWKFZOZPFZUEZUFZ
+      FZWFAMFZIFZANFZIFZOZPFZWEWIXDLWGAIXCBUGZUHRWHBWJXBXJJXCJXCUIWHWKWJLZHZXBX
+      AXJXMWNWOXAXMWMGXMWMWFGXMWLAEXMWLWJKZAXLWLXNLWHWKWJUJUKWEXNALZWGXLWEACULZ
+      XOAUMXPAIKZULXOXQCACIIXCXKVCZUNUOAIUPUQURUSQZSZWEWGXLUTVAVBVDXMWTXIPXMWMW
+      FWQXFWSXHXTXMWQXEWJFZXFXMWPXEWKWJWHXLVEZXMWLAMXSSVFWHYAXFLXLWHXEAIWGWEGWF
+      DZXEADWFCDZYCWGVGWFVHDYDAVIVHWFVJVKTWFVLTZAVMVOVNRQXMWSXGWJFZXHXMWRXGWKWJ
+      YBXMWLANXSSVFWHYFXHLXLWHXGAIWGWEYCXGADYEAVPVOVNRQVQSQWEWJJDZWGIVRZWEYGICV
+      SYHXRCIVTTIACWAWBRWHXIPWCWDQ $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
