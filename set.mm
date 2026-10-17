@@ -45099,30 +45099,6 @@ $)
   eldifeldifsn $p |- ( ( X e. A /\ Y e. ( B \ A ) ) -> Y e. ( B \ { X } ) ) $=
     ( wcel cdif csn snssi sscond sselda ) CAEZBAFBCGZFDKLABCAHIJ $.
 
-  $( Compute the power set of the empty set.  Theorem 89 of [Suppes] p. 47.
-     (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew Salmon,
-     29-Jun-2011.) $)
-  pw0 $p |- ~P (/) = { (/) } $=
-    ( vx cv c0 wss cab wceq cpw csn ss0b abbii df-pw df-sn 3eqtr4i ) ABZCDZAENC
-    FZAECGCHOPANIJACKACLM $.
-
-  ${
-    $d x y $.
-    $( Compute the power set of the power set of the empty set.  (See ~ pw0 for
-       the power set of the empty set.)  Theorem 90 of [Suppes] p. 48.
-       Although this theorem is a special case of ~ pwsn , we have chosen to
-       show a direct elementary proof.  (Contributed by NM, 7-Aug-1994.) $)
-    pwpw0 $p |- ~P { (/) } = { (/) , { (/) } } $=
-      ( vx vy cv c0 csn wss cab wceq wo cpw cpr wn wa wcel wi df-ss velsn sylbi
-      wal wex imbi2i albii bitri neq0 exintr biimtrid exancom dfclel snssi syl6
-      bitr4i anc2li eqss imbitrrdi orrd 0ss sseq1 mpbiri jaoi abbii df-pw dfpr2
-      eqimss impbii 3eqtr4i ) ACZDEZFZAGVFDHZVFVGHZIZAGVGJDVGKVHVKAVHVKVHVIVJVH
-      VILZVHVGVFFZMVJVHVLVMVHBCZVFNZVNDHZOZBSZVLVMOVHVOVNVGNZOZBSVRBVFVGPVTVQBV
-      SVPVOBDQUAUBUCVRVLVOVPMBTZVMVLVOBTVRWABVFUDVOVPBUEUFWADVFNZVMWAVPVOMBTWBV
-      OVPBUGBDVFUHUKDVFUIRUJRULVFVGUMUNUOVIVHVJVIVHDVGFVGUPVFDVGUQURVFVGVCUSVDU
-      TAVGVAADVGVBVE $.
-  $}
-
   $( A singleton is a subset of an unordered pair containing its member.
      (Contributed by NM, 27-Aug-2004.) $)
   snsspr1 $p |- { A } C_ { A , B } $=
@@ -45738,6 +45714,31 @@ $)
       NZUTUPOUTUEONZNZNVBVAVCVGVDVJVCUTUHLZUTUKLZNVGUTUHUKPVKVEVLVFUTGUGDUAZQUT
       UIUJVMQRSVDUTUOLZUTUQLZNVJUTUOUQPVNVHVOVIUTUMUNVMQUTUPUEVMQRSRUTULURPUTAB
       CUBUCSUD $.
+  $}
+
+  $( Compute the power set of the empty set.  Theorem 89 of [Suppes] p. 47.
+     (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew Salmon,
+     29-Jun-2011.) $)
+  pw0 $p |- ~P (/) = { (/) } $=
+    ( vx cv c0 wss cab wceq cpw csn ss0b abbii df-pw df-sn 3eqtr4i ) ABZCDZAENC
+    FZAECGCHOPANIJACKACLM $.
+
+  ${
+    $d x y $.
+    $( Compute the power set of the power set of the empty set.  (See ~ pw0 for
+       the power set of the empty set.)  Theorem 90 of [Suppes] p. 48.
+       Although this theorem is a special case of ~ pwsn , we have chosen to
+       show a direct elementary proof.  (Contributed by NM, 7-Aug-1994.)  Avoid
+       ~ pwsn .  (Proof modification is discouraged.) $)
+    pwpw0 $p |- ~P { (/) } = { (/) , { (/) } } $=
+      ( vx vy cv c0 csn wss cab wceq wo cpw cpr wn wa wcel wi df-ss velsn sylbi
+      wal wex imbi2i albii bitri neq0 exintr biimtrid exancom dfclel snssi syl6
+      bitr4i anc2li eqss imbitrrdi orrd 0ss sseq1 mpbiri jaoi abbii df-pw dfpr2
+      eqimss impbii 3eqtr4i ) ACZDEZFZAGVFDHZVFVGHZIZAGVGJDVGKVHVKAVHVKVHVIVJVH
+      VILZVHVGVFFZMVJVHVLVMVHBCZVFNZVNDHZOZBSZVLVMOVHVOVNVGNZOZBSVRBVFVGPVTVQBV
+      SVPVOBDQUAUBUCVRVLVOVPMBTZVMVLVOBTVRWABVFUDVOVPBUEUFWADVFNZVMWAVPVOMBTWBV
+      OVPBUGBDVFUHUKDVFUIRUJRULVFVGUMUNUOVIVHVJVIVHDVGFVGUPVFDVGUQURVFVGVCUSVDU
+      TAVGVAADVGVBVE $.
   $}
 
   $( Compute the power set of the power set of the power set of the empty set.
