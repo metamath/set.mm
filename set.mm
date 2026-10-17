@@ -492920,6 +492920,15 @@ htmldef "_L" as "&#x1D43F;";
 htmldef "AcyclicGraph" as "AcyclicGraph";
   althtmldef "AcyclicGraph" as "AcyclicGraph";
   latexdef "AcyclicGraph" as "\mathrm{AcyclicGraph}";
+htmldef "|=." as " &#8872; ";
+  althtmldef "|=." as " &#8872; ";
+  latexdef "|=." as "\vDash";
+htmldef "Ax-Ext" as " Ax-Ext ";
+  althtmldef "Ax-Ext" as " Ax-Ext ";
+  latexdef "Ax-Ext" as "\mathrm{Ax\text{-}Ext}";
+htmldef "Ax-Rep*" as " Ax-Rep* ";
+  althtmldef "Ax-Rep*" as " Ax-Rep* ";
+  latexdef "Ax-Rep*" as "\mathrm{Ax\text{-}Rep}*";
 /* End of BTernaryTau's mathbox */
 
 /* Mathbox of Mario Carneiro */
@@ -579328,6 +579337,45 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
+  ${
+    $d A x y $.
+    reu6f.1 $e |- F/ y ph $.
+    $( Version of ~ reu6 with disjoint variable condition replaced by
+       nonfreeness hypothesis.  (Contributed by BTernaryTau, 29-Sep-2026.) $)
+    reu6f $p |- ( E! x e. A ph <-> E. y e. A A. x e. A ( ph <-> x = y ) ) $=
+      ( wreu cv wcel wa weu weq wb wral wrex df-reu wal wex wi biimprcd 3bitr4i
+      19.28v eleq1w sbequ12 anbi12d equequ1 bibi12d equid simpl sylbir biimtrdi
+      wsb tbt spimvw ibar bibi1d sps jca axc4i imim2i impd adantl adantr simplr
+      biimp simpr biimpr syl6ci jcai ex impbid alimi impbii df-ral anbi2i exbii
+      imp nfv nfan euf df-rex bitri ) ABDFBGDHZAIZBJZABCKZLZBDMZCDNZABDOWCWELZB
+      PZCQCGDHZWGIZCQWDWHWJWLCWKWBWFRZIZBPZWKWMBPZIWJWLWKWMBUAWJWOWIWNBWJWKWMWI
+      WKBCWEWIWKABCUKZIZCCKZLZWKWEWCWRWEWSWEWBWKAWQBCDUBZABCUCUDBCCUEUFWTWRWKWS
+      WRCUGULWKWQUHUIUJUMWIWMBWBWFWIWBAWCWEWBAUNUOSUPUQURWNWIBWNWCWEWMWCWERWKWM
+      WBAWEWFAWERWBAWEVDUSUTVAWNWEWCWNWEIZWBAWNWEWBWKWEWBRWMWEWBWKXASVBVPXBWBWF
+      WEAWKWMWEVCWNWEVEAWEVFVGVHVIVJVKVLWGWPWKWFBDVMVNTVOWCBCWBACWBCVQEVRVSWGCD
+      VTTWA $.
+  $}
+
+  ${
+    $d A x y $.  $d A w y $.  $d A w z $.
+    rmo6.1 $e |- F/ y ph $.
+    $( Alternate version of ~ rmo2 where ` y ` has a restricted quantifier.
+       The antecedent ` E. z z e. A ` on the right-hand side handles the case
+       where ` A ` is empty.  (Contributed by BTernaryTau, 29-Sep-2026.) $)
+    rmo6 $p |- ( E* x e. A ph <->
+        ( E. z z e. A -> E. y e. A A. x e. A ( ph -> x = y ) ) ) $=
+      ( vw cv wcel wex wi wral wrex wn wa df-rex sylbi ja eleq1w cbvexvw nfrexw
+      wrmo weq wreu rmo5 nfcv nfn idd wal notbii alnex bitr4i pm2.21 expd alimi
+      ralrid jctird eximd imbitrrdi reu6f biimp ralimi reximi a1d exsimpl con3i
+      wb sylnbir sylibr nrexrmo syl rmo2i impbii bitri imbi1i ) ABEUBZCHEIZCJZA
+      BCUCZKZBELZCEMZKZDHEIZDJZWBKVPWCVPABEMZABEUDZKWCABEUEWFWGWCWFNZVRVQWAOZCJ
+      WBWHVQWICWFCACBECEUFFUAUGWHVQVQWAWHVQUHWHBHEIZAOZNZBUIZWAWHWKBJZNZWMWFWNA
+      BEPUJZWKBUKULWMVTBEWLWJVTKBWLWJAVSWKVSUMUNUOUPQUQURWACEPUSWGWBVRWGAVSVGZB
+      ELZCEMWBABCEFUTWRWACEWQVTBEAVSVAVBVCQVDRQVRWBVPVRNZWHVPWSWOWHVRWJBJZWOWJV
+      QBCBCESTWNWTWJABVEVFVHWPVIABEVJVKABCEFVLRVMVRWEWBVRGHEIZGJWEVQXACGCGESTXA
+      WDGDGDESTVNVOVN $.
+  $}
+
   $( The intersection of the universal class with a class is itself.  A
      commuted form of ~ inv1 .  (Contributed by BTernaryTau, 24-Jun-2026.) $)
   inv2 $p |- ( _V i^i A ) = A $=
@@ -579389,6 +579437,44 @@ $)
       eqimss wb wa biimprd fnfvima intss1 syl jctird eqss imbitrrdi impbid ) EB
       FZCBGZDCHZIZDEJZECKZLZMZUNANEJGACOZUQUNUPGZUMURUNUPSUJUKUSURTULABCUNEPQZR
       UMURUSUPUNGZUAUQUMURUSVAUMUSURUTUBUMUNUOHVABCEDUCUNUOUDUEUFUNUPUGUHUI $.
+  $}
+
+  ${
+    $d x z $.  $d A y z $.
+    fwfffun.1 $e |- F/ y ps $.
+    fwfffun.2 $e |- ( ph -> A. x e. A E. y A. z e. A ( ps -> z = y ) ) $.
+    fwfffun.3 $e |- F = { <. x , z >. | ( x e. A /\ z e. A /\ ps ) } $.
+    $( If ` ps ` is function-like over ` A ` , then ` F ` matches its behavior.
+       (Contributed by BTernaryTau, 28-Sep-2026.) $)
+    fwfffun $p |- ( ph ->
+        ( ( x e. A /\ z e. A /\ ps ) <-> ( x e. dom F /\ ( F ` x ) = z ) ) ) $=
+      ( cv wcel w3a cop cdm cfv wfun wral sylibr bitr3id wceq wa eleq2i opabidw
+      copab bitri wb wrmo weq wi wex rmo2 ralbii wmo wal funopab funeqi 3bitr4i
+      2reu5lem2 wbr df-br funbrfv2b syl ) CKZFLEKZFLBMZVDVENZGLZAVDGOLVDGPVEUAU
+      BZVHVGVFCEUEZLVFGVJVGJUCVFCEUDUFAGQZVHVIUGABEFUHZCFRZVKABEDUIUJEFRDUKZCFR
+      VMIVLVNCFBEDFHULUMSVJQVFEUNCUOVKVMVFCEUPGVJJUQBCEFFUSURSVHVDVEGUTVKVIVDVE
+      GVAVDVEGVBTVCT $.
+  $}
+
+  ${
+    $d w z $.  $d A y z $.
+    fwfffunres.1 $e |- F/ y ps $.
+    fwfffunres.2 $e |- ( ph -> A. w e. A E. y A. z e. A ( ps -> z = y ) ) $.
+    fwfffunres.3 $e |- F =
+        ( { <. w , z >. | ( w e. A /\ z e. A /\ ps ) } |` x ) $.
+    $( If ` ps ` is function-like over ` A ` , then ` F ` matches its behavior
+       over ` x ` .  (Contributed by BTernaryTau, 28-Sep-2026.) $)
+    fwfffunres $p |- ( ph -> ( ( z e. A /\ ( w e. A /\ w e. x /\ ps ) ) <->
+        ( w e. dom F /\ ( F ` w ) = z ) ) ) $=
+      ( cv wcel w3a wa cdm cfv wceq wb adantr copab eqid fwfffun cres cin dmeqi
+      dmres eqtri elin2 baib fveq1i fvres eqtrid eqeq1d anbi12d adantl pm5.32da
+      bitr4d ancom anbi1i 3bitri 13an22anass 3bitr4i simplbi pm4.71ri 3bitr4g
+      an4 ) AFLZCLZMZVHGMZELZGMZBNZOZVJVHHPZMZVHHQZVLRZOZOVMVKVJBNOZVTAVJVNVTAV
+      JOVNVHVNFEUAZPZMZVHWBQZVLRZOZVTAVNWGSVJABFDEGWBIJWBUBUCTVJVTWGSAVJVQWDVSW
+      FVQVJWDVHVIWCVPVPWBVIUDZPVIWCUEHWHKUFWBVIUGUHUIZUJVJVRWEVLVJVRVHWHQWEVHHW
+      HKUKVHVIWBULUMUNUOUPURUQVMVKOVJBOOZVJVKOVMBOOZWAVOWJVMVJOZVKBOZOVJVMOZWMO
+      WKVMVKVJBVGWLWNWMVMVJUSUTVJVMVKBVGVAVMVKVJBVBVJVKVMBVBVCVTVJVQVJVSVQVJWDW
+      IVDTVEVF $.
   $}
 
   $( The union of two ordinals is equal to their maximum.  (Contributed by
@@ -582925,6 +583011,209 @@ $)
       BURUJVAUQCDUJUTUOUPUNAUMBPUAUBUCUJAQHZBQHZUKUSSABUDZCBQDTUEUJVDULVCSUJVDV
       EVFUFCAQDTUIUGUH $.
   $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Model theory
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c |=. $.  $( Standard model predicate $)
+  $c Ax-Ext $.  $( Axiom of Extensionality $)
+  $c Ax-Rep* $.  $( Strong Axiom Scheme of Replacement $)
+
+  $( Extend wff notation to include a predicate for standard models of the
+     Axiom of Extensionality. $)
+  wsmext $a wff M |=. Ax-Ext $.
+
+  $( Extend wff notation to include a predicate for standard models of a strong
+     version of the Axiom Scheme of Replacement. $)
+  wsmrep $a wff M |=. Ax-Rep* $.
+
+  ${
+    $d M x y z $.
+    $( Define the standard model of Extensionality predicate, which is true for
+       a class that is a model of the Axiom of Extensionality under the
+       membership predicate.  Our notation is similar to that of ~ df-prv and
+       ~ df-gzext ( ` M |= AxExt ` ), but ` M |=. Ax-Ext ` uses a different
+       double turnstile character and a different format for the axiom name.
+       (Contributed by BTernaryTau, 2-Oct-2026.) $)
+    df-smext $a |- ( M |=. Ax-Ext <->
+        A. x e. M A. y e. M ( A. z e. M ( z e. x <-> z e. y ) -> x = y ) ) $.
+  $}
+
+  ${
+    $d M f w x y z $.
+    $( Define the strong Axiom Scheme of Replacement predicate, which is true
+       for a class that is a standard model of the strong version of the Axiom
+       Scheme of Replacement used in ~ wfaxrep (see comments there).  Our
+       notation includes an asterisk because we cannot guarantee that a
+       standard model of the Axiom Scheme of Replacement will also be a
+       standard model of this strong version.  However, proving that a class is
+       a standard model of the strong Axiom Scheme of Replacement is sufficient
+       to prove that it is also a standard model of the ZF Axiom Scheme of
+       Replacement.
+
+       The exact expression used in ~ wfaxrep is unsuitable for use in a
+       definition because it contains a wff metavariable that we cannot
+       quantify over.  Instead, this definition uses the specific instance
+       where ` ph ` is replaced with
+       ` ( Fun f /\ w e. dom f /\ ( f `` w ) = z ) ` .  This allows the set
+       ` f ` to effectively take on the role of the function-like wff, and
+       since ` f ` is a setvar, we are free to add a universal quantifier over
+       it.  The full scheme can then be recovered from this definition using
+       ~ smrepsrep .
+
+       This approach works because we can use our ~ ax-rep to guarantee the
+       existence of a suitable ` f ` in ` _V ` for any ` x ` and function-like
+       ` ph ` .  Note that ` M ` is not guaranteed to contain a suitable ` f `
+       (since it might not model the necessary axioms), so we must use an
+       unrestricted universal quantifier for ` f ` .
+
+       (Contributed by BTernaryTau, 30-Sep-2026.) $)
+    df-smrep $a |- ( M |=. Ax-Rep* <-> A. f A. x e. M ( A. w e. M E. y e. M
+        A. z e. M ( A. y ( Fun f /\ w e. dom f /\ ( f ` w ) = z ) -> z = y ) ->
+        E. y e. M A. z e. M ( z e. y <-> E. w e. M ( w e. x /\
+        A. y ( Fun f /\ w e. dom f /\ ( f ` w ) = z ) ) ) ) ) $.
+  $}
+
+  ${
+    $d x y $.  $d M w y z $.
+    srepdflem1.1 $e |- F/ w ph $.
+    srepdflem1.2 $e |- ( ph ->
+        A. w e. M E. y e. M A. z e. M ( A. y ps -> z = y ) ) $.
+    srepdflem1.3 $e |- F = ( G |` x ) $.
+    srepdflem1.4 $e |- G = { <. w , z >. | ( w e. M /\ z e. M /\ A. y ps ) } $.
+    $( Lemma for ~ srepdf .  (Contributed by BTernaryTau, 30-Sep-2026.) $)
+    srepdflem1 $p |- ( ( ph /\ z e. M ) ->
+        ( E. w e. M ( w e. x /\ A. y ps ) <-> E. w e. M
+        ( w e. x /\ A. y ( Fun F /\ w e. dom F /\ ( F ` w ) = z ) ) ) ) $=
+      ( cv wcel wa wal wfun w3a wral wel cdm cfv wceq nfv 3anass baibr wi simp2
+      nfan a1i ibar nfa1 weq wrex wex rexex ralimi syl cres copab reseq1i eqtri
+      fwfffunres wrmo rmo2i funopab funeqi 2reu5lem2 3bitr4i sylibr funres 3syl
+      3biant1d bitrd sylan9bbr nf3an nfopab nfcxfr nfcv nfres nffun nfcri nfeq1
+      wmo nfdm nffv 19.3 bitr4di biimpd jcad biimprd adantld impbid rexbida ) A
+      ENZIOZPZFCUAZBDQZPZWSGRZFNZGUBZOZXCGUCZWPUDZSZDQZPZFIAWQFJWQFUEUJXCIOZXAX
+      KWSWTSZWRXJXLXKXAXKWSWTUFUGWRXLXJWRXLWSXIXLWSUHWRXKWSWTUIUKWRXLXIWRXLXHXI
+      WQXLWQXLPZAXHWQXLULAXMXEXGPXHAWTCDEFIGBDUMZAWTEDUNUHEITZDIUOZFITZXODUPZFI
+      TKXPXRFIXODIUQURUSGHCNZUTZXKWQWTSZFEVAZXSUTLHYBXSMVBVCVDAXGXEXBAXTRZXBAXQ
+      HRZYCKXQWTEIVEZFITZYDXPYEFIWTEDIXNVFURYBRYAEWEFQYDYFYAFEVGHYBMVHWTFEIIVIV
+      JVKXSHVLVMGXTLVHVKVNVOVPXHDXBXEXGDDGDGXTLDHXSDHYBMYAFEDXKWQWTDXKDUEWQDUEX
+      NVQVRVSDXSVTWAVSZWBDFXDDGYGWFWCDXFWPDXCGYGDXCVTWGWDVQWHWIZWJWKWRXIXLWSWRX
+      LXIYHWLWMWNVPWO $.
+  $}
+
+  ${
+    $d F f $.  $d f w x y z $.  $d M f w y z $.
+    srepdflem2.1 $e |- F/ f ph $.
+    srepdflem2.2 $e |- F/ w ph $.
+    srepdflem2.3 $e |- F/ y ph $.
+    srepdflem2.4 $e |- F/ z ph $.
+    srepdflem2.5 $e |- ( ph -> x e. M ) $.
+    srepdflem2.6 $e |- ( ph -> ( A. w e. M E. y e. M A. z e. M (
+        A. y ( Fun f /\ w e. dom f /\ ( f ` w ) = z ) -> z = y ) ->
+        E. y e. M A. z e. M ( z e. y <-> E. w e. M ( w e. x /\
+        A. y ( Fun f /\ w e. dom f /\ ( f ` w ) = z ) ) ) ) ) $.
+    srepdflem2.7 $e |- ( ph ->
+        A. w e. M E. y e. M A. z e. M ( A. y ps -> z = y ) ) $.
+    srepdflem2.8 $e |- F = ( G |` x ) $.
+    srepdflem2.9 $e |- G = { <. w , z >. | ( w e. M /\ z e. M /\ A. y ps ) } $.
+    $( Lemma for ~ srepdf .  (Contributed by BTernaryTau, 30-Sep-2026.) $)
+    srepdflem2 $p |- ( ph ->
+        E. y e. M A. z e. M ( z e. y <-> E. w e. M ( w e. x /\ A. y ps ) ) ) $=
+      ( wcel cv wfun cdm cfv wceq w3a wal wa wrex wb wral cvv cres wi wrmo nfa1
+      weq rmo2i ralimi copab wmo funopab funeqi 2reu5lem2 sylibr resfunexg elvd
+      3bitr4i 3syl eqeltrid wex elex2 rmoeq simp3 eqcomd spsv rmoimi ax-mp rmo6
+      mpbi adantr ralrimia mpd alrimi nfv nf3an nfopab nfcv nfres nfeq2 nfopab2
+      nfcxfr nfopab1 funeq dmeq eleq2d fveq1 eqeq1d anbi2d rexbid bibi2d ralbid
+      3anbi123d albid spcgv sylc srepdflem1 biantr sylan2 ralimdaa a1d reximdai
+      expcom ) AEUAZDUAZTZFUAZCUAZTZHUBZXQHUCZTZXQHUDZXNUEZUFZDUGZUHZFJUIZUJZEJ
+      UKZDJUIZXPXSBDUGZUHFJUIZUJZEJUKZDJUIAHULTXPXSGUAZUBZXQYPUCZTZXQYPUDZXNUEZ
+      UFZDUGZUHZFJUIZUJZEJUKZDJUIZGUGYKAHIXRUMZULRAYLEDUQZUNEJUKDJUIZFJUKZIUBZU
+      UIULTZQUULYLEJUOZFJUKZUUMUUKUUOFJYLEDJBDUPZURUSXQJTZXNJTZYLUFZFEUTZUBUUTE
+      VAFUGUUMUUPUUTFEVBIUVASVCYLFEJJVDVHVEUUMUUNCIXRULVFVGVIVJAUUHGKAUUCUUJUNE
+      JUKDJUIZFJUKUUHAUVBFJLAUVBUURAXRJTXOJTZDVKZUVBODXRJVLUUCEJUOZUVDUVBUNXNYT
+      UEZEJUOUVEEYTJVMUUCUVFEJUUBUVFDUUBYTXNYQYSUUAVNVOVPVQVRUUCEDDJUUBDUPVSVTV
+      IWAWBPWCWDUUHYKGHULYPHUEZUUGYJDJDYPHDHUUIRDIXRDIUVASUUTFEDUURUUSYLDUURDWE
+      UUSDWEUUQWFWGWLDXRWHWIWLWJZUVGUUFYIEJEYPHEHUUIREIXREIUVASUUTFEWKWLEXRWHWI
+      WLWJUVGUUEYHXPUVGUUDYGFJFYPHFHUUIRFIXRFIUVASUUTFEWMWLFXRWHWIWLWJUVGUUCYFX
+      SUVGUUBYEDUVHUVGYQXTYSYBUUAYDYPHWNUVGYRYAXQYPHWOWPUVGYTYCXNXQYPHWQWRXCXDW
+      SWTXAXBWTXEXFAYJYODJMAYJYOUNUVCAYIYNEJNYIAUUSUHZYNUVIYIYMYHUJYNABCDEFHIJL
+      QRSXGXPYHYMXHXIXMXJXKXLWC $.
+  $}
+
+  ${
+    $d ph g $.  $d ps g $.  $d f g w x y z $.  $d M f g w y z $.
+    srepdf.1 $e |- F/ f ph $.
+    srepdf.2 $e |- F/ w ph $.
+    srepdf.3 $e |- F/ x ph $.
+    srepdf.4 $e |- F/ y ph $.
+    srepdf.5 $e |- F/ z ph $.
+    srepdf.6 $e |- ( ph -> A. x e. M ( A. w e. M E. y e. M A. z e. M (
+        A. y ( Fun f /\ w e. dom f /\ ( f ` w ) = z ) -> z = y ) ->
+        E. y e. M A. z e. M ( z e. y <-> E. w e. M ( w e. x /\
+        A. y ( Fun f /\ w e. dom f /\ ( f ` w ) = z ) ) ) ) ) $.
+    $( Derive the strong version of the Axiom Scheme of Replacement used in
+       ~ wfaxrep (see comments there) from a particular instance of that
+       version of Replacement.  Note that this theorem depends on ~ ax-rep , so
+       it does not follow that we could replace ~ ax-rep with an axiom that
+       lacks a wff metavariable.  (Contributed by BTernaryTau, 30-Sep-2026.) $)
+    srepdf $p |- ( ph -> A. x e. M ( A. w e. M E. y e. M A. z e. M (
+        A. y ps -> z = y ) -> E. y e. M A. z e. M ( z e. y <->
+        E. w e. M ( w e. x /\ A. y ps ) ) ) ) $=
+      ( vg wal wi wral wrex nfan weq wel wa wb cv wcel ax-5 w3a copab cres nfa1
+      nfv nfra1 nfal nfcv nfre1 nfralw nfrexw simplr wfun cdm wceq alrimi funeq
+      cfv eleq2d fveq1 eqeq1d 3anbi123d albidv imbi1d rexralbidv ralbidv anbi2d
+      dmeq rexbidv bibi2d imbi12d cbvalvw sylib 19.21bi adantr simpr srepdflem2
+      r19.21bi eqid ex syl5 ralrimia ) ABDPZEDUAZQZEHRZDHSZFHRZEDUBZFCUBZWJUCFH
+      SUDEHRDHSZQCHKWOWOOPZACUEZHUFZUCZWRWOOUGXBWSWRXBWSUCZBCDEFOFUEZHUFEUEZHUF
+      WJUHFEUIZWTUJZXFHXBWSOXBOULWOOUKTXBWSFAXAFJXAFULTWOFOWNFHUMUNTXBWSDAXADLX
+      ADULTWODOWNDFHDHUOWMDHUPUQUNTXBWSEAXAEMXAEULTWOEOWNEFHEHUOZWMEDHXHWLEHUMU
+      RUQUNTAXAWSUSXBOUEZUTZXDXIVAZUFZXDXIVEZXEVBZUHZDPZWKQZEHRDHSZFHRZWPWQXPUC
+      ZFHSZUDZEHRDHSZQZWSAYDCHAYDCHRZOAGUEZUTZXDYFVAZUFZXDYFVEZXEVBZUHZDPZWKQZE
+      HRDHSZFHRZWPWQYMUCZFHSZUDZEHRDHSZQZCHRZGPYEOPAUUBGINVCUUBYEGOGOUAZUUAYDCH
+      UUCYPXSYTYCUUCYOXRFHUUCYNXQDEHHUUCYMXPWKUUCYLXODUUCYGXJYIXLYKXNYFXIVDUUCY
+      HXKXDYFXIVOVFUUCYJXMXEXDYFXIVGVHVIVJZVKVLVMUUCYSYBDEHHUUCYRYAWPUUCYQXTFHU
+      UCYMXPWQUUDVNVPVQVLVRVMVSVTWAWEWBXCWOOXBWSWCWAXGWFXFWFWDWGWHWI $.
+  $}
+
+  ${
+    $d M f w x y z $.
+    $( Derive the strong version of the Axiom Scheme of Replacement used in
+       ~ wfaxrep (see comments there) from ` M |=. Ax-Rep* ` .  (Contributed by
+       BTernaryTau, 30-Sep-2026.) $)
+    smrepsrep $p |- ( M |=. Ax-Rep* -> A. x e. M ( A. w e. M E. y e. M
+        A. z e. M ( A. y ph -> z = y ) -> E. y e. M
+        A. z e. M ( z e. y <-> E. w e. M ( w e. x /\ A. y ph ) ) ) ) $=
+      ( vf wsmrep nfv cv wfun cdm wcel cfv wceq wal wi wral wrex wel w3a weq wa
+      wb df-smrep biimpi 19.21bi srepdf ) FHZABCDEGFUIGIUIEIUIBIUICIUIDIUIGJZKE
+      JZUJLMUKUJNDJOUACPZDCUBQDFRCFSEFRDCTEBTULUCEFSUDDFRCFSQBFRZGUIUMGPBCDEGFU
+      EUFUGUH $.
+  $}
+
+  ${
+    $d x y z $.
+    $( The universe is a standard model of the Axiom of Extensionality.
+       (Contributed by BTernaryTau, 2-Oct-2026.) $)
+    vsmext $p |- _V |=. Ax-Ext $=
+      ( vz vx vy cvv wsmext wel wb wral weq wi wal ax-ext sylbi rgen2w df-smext
+      ralv mpbir ) DEABFACFGZADHZBCIZJZCDHBDHUABCDDSRAKTRAPBCALMNBCADOQ $.
+  $}
+
+  ${
+    $d f w x y z $.
+    $( The universe is a standard model of the strong Axiom Scheme of
+       Replacement.  (Contributed by BTernaryTau, 2-Oct-2026.) $)
+    vsmrep $p |- _V |=. Ax-Rep* $=
+      ( vf vw vz vy vx cvv wsmrep cv wal wi wral wrex wel ralv rexv exbii bitri
+      wb wex albii wfun cdm wcel cfv wceq w3a wa df-smrep ax-rep bibi2i 3imtr4i
+      weq rgenw mpgbir ) FGAHZUABHZUOUBUCUPUOUDCHUEUFZDIZCDULJZCFKZDFLZBFKZCDMZ
+      BEMURUGZBFLZRZCFKZDFLZJZEFKAEDCBAFUHVIEFUSCIZDSZBIZVCVDBSZRZCIZDSZVBVHUQE
+      DCBUIVBVABIVLVABNVAVKBVAUTDSVKUTDOUTVJDUSCNPQTQVHVGDSVPVGDOVGVODVGVFCIVOV
+      FCNVFVNCVEVMVCVDBOUJTQPQUKUMUN $.
+  $}
+
 
 $( (End of BTernaryTau's mathbox.) $)
 $( End $[ set-mbox-bt.mm $] $)
