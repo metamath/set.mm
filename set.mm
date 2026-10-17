@@ -80701,12 +80701,28 @@ $)
   $}
 
   ${
-    $d u v x y z A $.  $d u v y z B $.  $d u v z C $.  $d u v x y z X $.
+    $d x y z X $.  $d y z A $.  $d z B $.  $d z C $.
     ovmptss.1 $e |- F = ( x e. A , y e. B |-> C ) $.
     $( If all the values of the mapping are subsets of a class ` X ` , then so
        is any evaluation of the mapping.  (Contributed by Mario Carneiro,
-       24-Dec-2016.) $)
+       24-Dec-2016.)  Avoid ~ ax-un and shorten proof.  (Revised by Zhi Wang,
+       16-Sep-2026.) $)
     ovmptss $p |- ( A. x e. A A. y e. B C C_ X -> ( E F G ) C_ X ) $=
+      ( vz wss wral co wrex wi wcel r19.23v bitri sylibr cmpo cuni ovssunirn cv
+      crn wceq sseq1 biimprd com12 2ralimi ralbii sylib cab rnmpo eleq2i imbi1i
+      eqid abid ralrimiv unissb sstrid oveqi sseq1i ) EILZBDMACMZFHABCDEUAZNZIL
+      FHGNZILVEVGVFUEZUBZIVFFHUCVEKUDZILZKVIMVJILVEVLKVIVEVKEUFZBDOZACOZVLPZVKV
+      IQZVLPVEVMVLPZBDMZACMZVPVDVRABCDVMVDVLVMVLVDVKEIUGUHUIUJVTVNVLPZACMVPVSWA
+      ACVMVLBDRUKVNVLACRSULVQVOVLVQVKVOKUMZQVOVIWBVKABKCDEVFVFUQUNUOVOKURSUPTUS
+      KVIIUTTVAVHVGIGVFFHJVBVCT $.
+
+    $( $j usage 'ovmptss' avoids 'ax-un'; $)
+
+    $d u v x y z A $.  $d u v y B $.  $d u v C $.  $d u v X $.
+    $( Obsolete version of ~ ovmptss as of 16-Sep-2026.  (Contributed by Mario
+       Carneiro, 24-Dec-2016.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    ovmptssOLD $p |- ( A. x e. A A. y e. B C C_ X -> ( E F G ) C_ X ) $=
       ( vz vu vv cv cfv csb wss wral sseq1d nfcv c1st c2nd csn cxp ciun co cmpo
       cop cmpt mpomptsx eqtri fvmptss wceq op1std csbeq1d op2ndd csbeq2dv eqtrd
       vex raliunxp nfcsb1v nfxp weq sneq csbeq1a xpeq12d cbviun raleqi nfv nfss
@@ -865362,6 +865378,22 @@ $)
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  The conditional operator for classes
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  ${
+    $( Membership in a conditional class with an empty set in the false-branch
+       is equivalent to the condition and membership in the first class.
+       (Contributed by Zhi Wang, 14-Sep-2026.) $)
+    elif0 $p |- ( A e. if ( ph , B , (/) ) <-> ( ph /\ A e. B ) ) $=
+      ( c0 cif wcel wa wn wo elif noel intnan biorfri bitr4i ) BACDEFABCFGZAHZB
+      DFZGZIOABCDJROQPBKLMN $.
+  $}
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
   Unordered and ordered pairs
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
@@ -866039,6 +866071,55 @@ $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
+  ${
+    $d A x y z $.  $d B x y z $.  $d D x y z $.  $d F x y z $.  $d X x y z $.
+    $d Y x y z $.  $d C z $.
+    elovmpoeq.f $e |- F = ( x e. A , y e. B |-> C ) $.
+    elovmpoeq.s $e |- ( ( x = X /\ y = Y ) -> C = D ) $.
+    $( If a value of an operation given by maps-to notation has a member, it
+       equals the substituted body.  (Contributed by Zhi Wang, 17-Sep-2026.) $)
+    elovmpoeq $p |- ( N e. ( X F Y ) -> ( X F Y ) = D ) $=
+      ( vz wcel wa wceq cop cv cvv elexd co coprab wbr c0 wne ne0i df-ov eqcomi
+      cfv tz6.12i mpisyl df-br sylib df-mpo eqtri eleqtrdi wb elmpocl1 elmpocl2
+      cmpo ovexd w3a simp1 eleq1d simp2 anbi12d simp3 3adant3 eqeq12d eloprabga
+      syl3anc mpbid simprd ) HIJGUAZNZICNZJDNZOZVNFPZVOIJQZVNQZARZCNZBRZDNZOZMR
+      ZEPZOZABMUBZNZVRVSOZVOWAGWJVOVTVNGUCZWAGNVOVNUDUEVTGUIZVNPWMVNHUFVNWNIJGU
+      GUHVTVNGUJUKVTVNGULUMGABCDEUTWJKABMCDEUNUOUPVOISNJSNVNSNWKWLUQVOICABCDEIJ
+      GHKURTVOJDABCDEIJGHKUSTVOIJGVAWIWLABMIJVNSSSWBIPZWDJPZWGVNPZVBZWFVRWHVSWR
+      WCVPWEVQWRWBICWOWPWQVCVDWRWDJDWOWPWQVEVDVFWRWGVNEFWOWPWQVGWOWPEFPWQLVHVIV
+      FVJVKVLVM $.
+  $}
+
+  ${
+    $d B a u v $.  $d A u v $.  $d H a $.
+    fnmpompt.l $e |- L = ( u e. B , v e. B |->
+      ( a e. ( u H v ) |-> ( A ` a ) ) ) $.
+    $( Characterization of the outer domain of a chained maps-to expression.
+       (Contributed by Zhi Wang, 14-Sep-2026.) $)
+    fnmpompt $p |- L Fn ( B X. B ) $=
+      ( cv co cfv cmpt ovex mptex fnmpoi ) BADDGBIZAIZEJZGICKZLFHGRSPQEMNO $.
+
+    $d H u v $.  $d U a u v $.  $d V a u v $.  $d ph a u v $.
+    fvmpomptd.u $e |- ( ph -> U e. B ) $.
+    fvmpomptd.v $e |- ( ph -> V e. B ) $.
+    $( The outer value of an iterated maps-to function is the corresponding
+       inner maps-to function.  (Contributed by Zhi Wang, 14-Sep-2026.) $)
+    ovmpomptd $p |- ( ph -> ( U L V ) = ( a e. ( U H V ) |-> ( A ` a ) ) ) $=
+      ( cv co cmpt cvv wceq a1i wa cmpo simprl simprr oveq12d mpteq1d wcel ovex
+      cfv mptex ovmpod ) ACBFIEEJCNZBNZGOZJNDUHZPZJFIGOZUNPZHQHCBEEUOUARAKSAUKF
+      RZULIRZTTZJUMUPUNUTUKFULIGAURUSUBAURUSUCUDUELMUQQUFAJUPUNFIGUGUISUJ $.
+
+    $d F a u v $.  $d A a $.
+    fvmpomptd.f $e |- ( ph -> F e. ( U H V ) ) $.
+    $( At an element of its inner domain, an iterated maps-to function has the
+       value of its body.  The operation ` H ` is arbitrary; evaluation on a
+       morphism in a hom-set is one application.  (Contributed by Zhi Wang,
+       14-Sep-2026.) $)
+    fvmpomptd $p |- ( ph -> ( ( U L V ) ` F ) = ( A ` F ) ) $=
+      ( cv cfv co cvv ovmpomptd wceq wa simpr fveq2d fvexd fvmptd ) AKGKPZDQGDQ
+      FJHRFJIRSABCDEFHIJKLMNTAUGGUAZUBUGGDAUHUCUDOAGDUEUF $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
@@ -866249,6 +866330,20 @@ $)
       ( vg cvv cixp cv wfn cab wf wcel dffn2 vex fneq1 elab elixpconst 3bitr4ri
       eqriv ) DABEFZCGZBHZCIZDGZBHZBEUCJUCUBKUCSKBUCLUAUDCUCDMZBTUCNOABEUCUEPQR
       $.
+  $}
+
+  ${
+    $d x A $.  $d x F $.
+    elixpmpt.a $e |- A e. _V $.
+    $( Membership in an indexed Cartesian product over a set is equivalent to
+       being its exact function graph with components of the indicated types.
+       (Contributed by Zhi Wang, 14-Sep-2026.) $)
+    elixpmpt $p |- ( F e. X_ x e. A B <->
+      ( F = ( x e. A |-> ( F ` x ) ) /\ A. x e. A ( F ` x ) e. B ) ) $=
+      ( cixp wcel wfn cv cfv wral cmpt wceq cvv w3a wa elixp2 3simpc simpl fnex
+      sylancl simpr 3jca impbii bitri dffn5 bianbi ) DABCFGZDBHZAIDJZCGABKZDABU
+      JLMUHDNGZUIUKOZUIUKPZABCDQUMUNULUIUKRUNULUIUKUNUIBNGULUIUKSZEBNDTUAUOUIUK
+      UBUCUDUEABDUFUG $.
   $}
 
 
@@ -869451,6 +869546,26 @@ $)
   $}
 
   ${
+    $d H z $.  $d N z $.  $d O z $.  $d P z $.  $d U z $.  $d V z $.  $d W z $.
+    ixpovf.p $e |- ( ph -> P e. X_ z e. ( W X. W )
+      ( ( ( O ` ( 1st ` z ) ) N ( O ` ( 2nd ` z ) ) ) ^m ( H ` z ) ) ) $.
+    ixpovf.u $e |- ( ph -> U e. W ) $.
+    ixpovf.v $e |- ( ph -> V e. W ) $.
+    $( A member of an indexed product of function spaces has the indicated
+       function type at each pair of indices.  Hom-functions of a functor are
+       one application.  (Contributed by Zhi Wang, 14-Sep-2026.) $)
+    ixpovf $p |- ( ph ->
+      ( U P V ) : ( U H V ) --> ( ( O ` U ) N ( O ` V ) ) ) $=
+      ( cfv c1st c2nd co cmap wcel wceq cvv cop cxp cixp opelxpd 2fveq3 oveq12d
+      wf cv fveq2 fvixp syl2anc elmaprd df-ov eqcomi elexd op1stg fveq2d op2ndg
+      a1i feq123d mpbid ) ADHUAZEMZVBNMZGMZVBOMZGMZFPZVBCMZUGDHEPZDGMZHGMZFPZDH
+      CPZUGAVCVHVIACBIIUBZBUHZNMGMZVPOMGMZFPZVPEMZQPZUCRVBVORVIVHVCQPZRJADHIIKL
+      UDBVOWAVBWBCVPVBSZVSVHVTVCQWCVQVEVRVGFVPVBGNUEVPVBGOUEUFVPVBEUIUFUJUKULAV
+      CVJVHVMVIVNVIVNSAVNVIDHCUMUNUSVCVJSAVJVCDHEUMUNUSAVEVKVGVLFAVDDGADTRZHTRZ
+      VDDSADIKUOZAHILUOZDHTTUPUKUQAVFHGAWDWEVFHSWFWGDHTTURUKUQUFUTVA $.
+  $}
+
+  ${
     0funcglem.1 $e |- ( ph -> ( ps <-> ( ch /\ th /\ ta ) ) ) $.
     0funcglem.2 $e |- ( ph -> ( ch <-> et ) ) $.
     0funcglem.3 $e |- ( ph -> ( th <-> ze ) ) $.
@@ -869632,6 +869747,24 @@ $)
             ( <. K , L >. o.func <. F , G >. ) e. ( C Func E ) ) $=
       ( cop cfunc co wbr wcel df-br sylib cofucl ) ABCDEFKZGHKZAEFBCLMZNSUAOIEF
       UAPQAGHCDLMZNTUBOJGHUBPQR $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.  $d D x y $.  $d F x y $.  $d ph x y $.
+    ${
+      $d E x y $.  $d K x y $.
+      cofu1stfix.a $e |- A = ( Base ` E ) $.
+      cofu1stfix.f $e |- ( ph -> F e. ( D Func E ) ) $.
+      cofu1stfix.k $e |- ( ph -> K e. ( E Func E ) ) $.
+      cofu1stfix.i $e |- ( ph -> ( 1st ` K ) = ( _I |` A ) ) $.
+      $( Post-composition by an object-fixing functor preserves the entire
+         object function, including its exact domain.  (Contributed by Zhi
+         Wang, 14-Sep-2026.)  (Revised by Zhi Wang, 17-Sep-2026.) $)
+      cofu1stfix $p |- ( ph -> ( 1st ` ( K o.func F ) ) = ( 1st ` F ) ) $=
+        ( ccofu co c1st cfv ccom cid cres cbs eqid cofu1st coeq1d wf func1st2nd
+        wceq c2nd funcf1 fcoi2 syl 3eqtrd ) AFEKLMNFMNZEMNZOPBQZUKOZUKACRNZCDDE
+        FUNSZHITAUJULUKJUAAUNBUKUBUMUKUDAUNBCDUKEUENUOGACDEHUCUFUNBUKUGUHUI $.
+    $}
   $}
 
   ${
@@ -871880,6 +872013,164 @@ $)
     natrcl3 $p |- ( ph -> K ( C Func D ) L ) $=
       ( cop cfunc co wcel wbr wa natrcl syl simprd df-br sylibr ) AGHLZCDMNZOZG
       HUDPAEFLZUDOZUEABUFUCINOUGUEQKBCDUFUCIJRSTGHUDUAUB $.
+  $}
+
+  ${
+    isnat3.n $e |- N = ( C Nat D ) $.
+    isnat3.b $e |- B = ( Base ` C ) $.
+    ${
+      $d A x y h $.  $d B x y h $.  $d C x y h $.  $d D x y h $.  $d F x y h $.
+      $d G x y h $.  $d H x y h $.  $d J x y h $.  $d N x y h $.
+      $d ph x y h $.  $d .x. x y h $.
+      isnat3.h $e |- H = ( Hom ` C ) $.
+      isnat3.j $e |- J = ( Hom ` D ) $.
+      isnat3.o $e |- .x. = ( comp ` D ) $.
+      isnat3.f $e |- ( ph -> F e. ( C Func D ) ) $.
+      isnat3.g $e |- ( ph -> G e. ( C Func D ) ) $.
+      $( A natural transformation is an exact component function with typed
+         values satisfying naturality.  (Contributed by Zhi Wang,
+         14-Sep-2026.) $)
+      isnat3 $p |- ( ph -> ( A e. ( F N G ) <->
+        ( A = ( x e. B |-> ( A ` x ) ) /\
+          A. x e. B ( A ` x ) e.
+            ( ( ( 1st ` F ) ` x ) J ( ( 1st ` G ) ` x ) ) /\
+          A. x e. B A. y e. B A. h e. ( x H y )
+            ( ( A ` y ) ( <. ( ( 1st ` F ) ` x ) , ( ( 1st ` F ) ` y ) >.
+                .x. ( ( 1st ` G ) ` y ) ) ( ( x ( 2nd ` F ) y ) ` h ) ) =
+            ( ( ( x ( 2nd ` G ) y ) ` h )
+              ( <. ( ( 1st ` F ) ` x ) , ( ( 1st ` G ) ` x ) >.
+                .x. ( ( 1st ` G ) ` y ) ) ( A ` x ) ) ) ) ) $=
+        ( co wcel cv c1st cfv cixp c2nd cop wceq wral cmpt w3a isnat2 anass cbs
+        wa fvexi elixpmpt anbi1i 3anass 3bitr4i bitrdi ) ADJKNUBUCDBEBUDZJUEUFZ
+        UFZVDKUEUFZUFZMUBZUGUCZCUDZDUFIUDZVDVKJUHUFUBUFVFVKVEUFUIVKVGUFZHUBUBVL
+        VDVKKUHUFUBUFVDDUFZVFVHUIVMHUBUBUJIVDVKLUBUKCEUKBEUKZUQZDBEVNULUJZVNVIU
+        CBEUKZVOUMZABCDEFGHIJKLMNOPQRSTUAUNVQVRUQZVOUQVQVRVOUQUQVPVSVQVRVOUOVJV
+        TVOBEVIDEFUPPURUSUTVQVRVOVAVBVC $.
+    $}
+
+    natfn2.a $e |- ( ph -> A e. ( F N G ) ) $.
+    $( A natural transformation is a function on the objects of the source
+       category.  (Contributed by Zhi Wang, 14-Sep-2026.) $)
+    natfn2 $p |- ( ph -> A Fn B ) $=
+      ( c1st cfv c2nd nat1st2nd natfn ) ABCDEFLMFNMGLMGNMHIABDEFGHIKOJP $.
+
+    $d A x $.  $d B x $.  $d L x $.  $d ph x $.
+    nateq.l $e |- ( ph -> L e. ( F N G ) ) $.
+    $( Two natural transformations with the same source and target are equal
+       exactly when all their components agree.  (Contributed by Zhi Wang,
+       14-Sep-2026.) $)
+    nateq $p |- ( ph -> ( A = L <-> A. x e. B ( A ` x ) = ( L ` x ) ) ) $=
+      ( wfn wceq cv cfv wral natfn2 wb eqfnfv syl2anc ) ACDOIDOCIPBQZCRUDIRPBDS
+      UAACDEFGHJKLMTAIDEFGHJKLNTBDCIUBUC $.
+  $}
+
+  ${
+    $d A x y f $.  $d B x y f $.  $d C x y f $.  $d D x y f $.  $d F x y f $.
+    $d Q x y f $.  $d N x y f $.  $d ph x y f $.
+    natideq.q $e |- Q = ( C FuncCat D ) $.
+    natideq.n $e |- N = ( C Nat D ) $.
+    natideq.b $e |- B = ( Base ` C ) $.
+    ${
+      $d I x y f $.  $d J x y f $.
+      natideq.i $e |- I = ( Id ` Q ) $.
+      natideq.j $e |- J = ( Id ` D ) $.
+      natideq.a $e |- ( ph -> A e. ( F N F ) ) $.
+      $( A natural transformation is an identity exactly when all its
+         components are identities.  This also covers an empty object set.
+         (Contributed by Zhi Wang, 14-Sep-2026.) $)
+      natideq $p |- ( ph -> ( A = ( I ` F ) <->
+        A. x e. B ( A ` x ) = ( J ` ( ( 1st ` F ) ` x ) ) ) ) $=
+        ( cfv wceq wcel cv wral c1st ccom co cfunc wa natrcl syl simpld fucidcl
+        fucid eqeltrd nateq adantr fveq1d cbs c2nd eqid func1st2nd funcf1 simpr
+        wf fvco3d eqtrd eqeq2d ralbidva bitrd ) ACHIRZSBUAZCRZVJVIRZSZBDUBVKVJH
+        UCRZRJRZSZBDUBABCDEFHHVIKMNQAVIJVNUDZHHKUEZAEFGJHILOPAHEFUFUETZVSACVRTV
+        SVSUGQCEFHHKMUHUIUJZULZAEFGJHKLMPVTUKUMUNAVMVPBDAVJDTZUGZVLVOVKWCVLVJVQ
+        RVOWCVJVIVQAVIVQSWBWAUOUPWCDFUQRZVJJVNADWDVNVCWBADWDEFVNHURRNWDUSAEFHVT
+        UTVAUOAWBVBVDVEVFVGVH $.
+    $}
+
+    $d G x y f $.  $d H x y f $.  $d L x y f $.  $d R x y f $.  $d .o. x y f $.
+    $d .x. x y f $.
+    natcoeq.o $e |- .o. = ( comp ` D ) $.
+    natcoeq.x $e |- .x. = ( comp ` Q ) $.
+    natcoeq.a $e |- ( ph -> A e. ( F N G ) ) $.
+    natcoeq.r $e |- ( ph -> R e. ( G N H ) ) $.
+    natcoeq.l $e |- ( ph -> L e. ( F N H ) ) $.
+    $( A natural transformation equals a composite exactly when all its
+       components equal the corresponding composites, including when the object
+       set is empty.  (Contributed by Zhi Wang, 14-Sep-2026.) $)
+    natcoeq $p |- ( ph -> ( L = ( R ( <. F , G >. .x. H ) A ) <->
+      A. x e. B ( L ` x ) =
+        ( ( R ` x ) ( <. ( ( 1st ` F ) ` x ) , ( ( 1st ` G ) ` x ) >.
+            .o. ( ( 1st ` H ) ` x ) ) ( A ` x ) ) ) ) $=
+      ( cop co wceq cv cfv wral c1st fuccocl nateq adantr simpr fuccoval eqeq2d
+      wcel wa ralbidva bitrd ) AMHCJKUDLIUEUEZUFBUGZMUHZVBVAUHZUFZBDUIVCVBHUHVB
+      CUHVBJUJUHUHVBKUJUHUHUDVBLUJUHUHOUEUEZUFZBDUIABMDEFJLVANQRUCAEFGCHIJKLNPQ
+      TUAUBUKULAVEVGBDAVBDUQZURZVDVFVCVIDEFGCHIOJKLNVBPQRSTACJKNUEUQVHUAUMAHKLN
+      UEUQVHUBUMAVHUNUOUPUSUT $.
+  $}
+
+  ${
+    $d B x y z m n t v a b f h $.  $d C x y z m n t v a b f h $.
+    $d E x y z m n t v a b f h $.  $d H x y z m n t v a b f h $.
+    $d I x y z m n t v a b f h $.  $d J x y z m n t v a b f h $.
+    $d K x y z m n t v a b f h $.  $d O x y z m n t v a b f h $.
+    $d P x y z m n t v a b f h $.  $d Q x y z m n t v a b f h $.
+    $d T x y z m n t v a b f h $.  $d W x y z m n t v a b f h $.
+    $d ph x y z m n t a b f h $.  $d .x. x y z m n t v a b f h $.
+    $d .o. x y z m n t v a b f h $.  $d .xb x y z m n t v a b f h $.
+    fucidcobi.w $e |- W = ( Base ` T ) $.
+    fucidcobi.q $e |- Q = ( C FuncCat E ) $.
+    fucidcobi.b $e |- B = ( Base ` C ) $.
+    fucidcobi.h $e |- H = ( Hom ` T ) $.
+    fucidcobi.i $e |- I = ( Id ` T ) $.
+    fucidcobi.j $e |- J = ( Id ` Q ) $.
+    fucidcobi.k $e |- K = ( Id ` E ) $.
+    fucidcobi.x $e |- .x. = ( comp ` T ) $.
+    fucidcobi.y $e |- .o. = ( comp ` Q ) $.
+    fucidcobi.v $e |- .xb = ( comp ` E ) $.
+    fucidcobi.c $e |- ( ph -> T e. Cat ) $.
+    fucidcobi.p $e |- ( ph -> P e. X_ v e. ( W X. W )
+      ( ( ( O ` ( 1st ` v ) ) ( C Nat E ) ( O ` ( 2nd ` v ) ) )
+        ^m ( H ` v ) ) ) $.
+    $( Componentwise functor laws for a correctly typed hom-family into a
+       functor category.  The source category ` T ` and object assignment ` O `
+       are arbitrary: the identity and composition laws are equivalent to their
+       component equations.  No functor law is assumed in the hypotheses.
+       Functor composition is an application in ~ fucoisfunc2 .  (Contributed
+       by Zhi Wang, 14-Sep-2026.) $)
+    fucidcobi $p |- ( ph -> (
+      A. x e. W ( ( ( x P x ) ` ( I ` x ) ) = ( J ` ( O ` x ) ) /\
+      A. y e. W A. z e. W A. m e. ( x H y ) A. n e. ( y H z )
+        ( ( x P z ) ` ( n ( <. x , y >. .x. z ) m ) ) =
+        ( ( ( y P z ) ` n )
+          ( <. ( O ` x ) , ( O ` y ) >. .o. ( O ` z ) )
+          ( ( x P y ) ` m ) ) )
+      <->
+      A. x e. W
+      ( A. t e. B ( ( ( x P x ) ` ( I ` x ) ) ` t ) =
+          ( K ` ( ( 1st ` ( O ` x ) ) ` t ) ) /\
+        A. y e. W A. z e. W A. m e. ( x H y ) A. n e. ( y H z ) A. t e. B
+          ( ( ( x P z ) ` ( n ( <. x , y >. .x. z ) m ) ) ` t ) =
+          ( ( ( ( y P z ) ` n ) ` t )
+            ( <. ( ( 1st ` ( O ` x ) ) ` t ) , ( ( 1st ` ( O ` y ) ) ` t ) >.
+              .xb ( ( 1st ` ( O ` z ) ) ` t ) )
+            ( ( ( x P y ) ` m ) ` t ) ) ) ) ) $=
+      ( cv cfv co wceq cop wral wa c1st wcel cnat eqid cxp c2nd cmap cixp simpr
+      adantr ixpovf ccat catidcl ffvelcdmd natideq simpl simpld catcocl natcoeq
+      syl simprd ralbidva anbi12d ) ABUPZRUQZWFWFIURZUQZWFUAUQZSUQUSZOUPZNUPZWF
+      CUPZUTDUPZMURURZWFWOIURZUQZWLWNWOIURZUQZWMWFWNIURZUQZWJWNUAUQZUTWOUAUQZUC
+      URURUSZOWNWOQURZVAZNWFWNQURZVAZDUBVAZCUBVAZVBFUPZWIUQXLWJVCUQUQZTUQUSFGVA
+      ZXLWRUQXLWTUQXLXBUQXMXLXCVCUQUQUTXLXDVCUQUQKURURUSFGVAZOXFVAZNXHVAZDUBVAZ
+      CUBVAZVBBUBAWFUBVDZVBZWKXNXKXSYAFWIGHPJWJSTHPVEURZUEYBVFZUFUIUJYAWFWFQURW
+      JWJYBURWGWHYAEIWFQYBUAWFUBAIEUBUBVGEUPZVCUQUAUQYDVHUQUAUQYBURYDQUQVIURVJV
+      DZXTUOVLAXTVKZYFVMYAUBLRQWFUDUGUHALVNVDZXTUNVLYFVOVPVQYAXJXRCUBYAWNUBVDZV
+      BZXIXQDUBYIWOUBVDZVBZXGXPNXHYKWMXHVDZVBZXEXOOXFYMWLXFVDZVBZFXBGHPJWTUCWJX
+      CXDWRYBKUEYCUFUMULYOXHWJXCYBURWMXAYOEIWFQYBUAWNUBYOAYEYOAXTYOYAYHYOYIYJYO
+      YKYLYMYNVRZVSZVSZVSZVSZUOWBZYOAXTYSWCZYOYAYHYRWCZVMYOYKYLYPWCZVPYOXFXCXDY
+      BURWLWSYOEIWNQYBUAWOUBUUAUUCYOYIYJYQWCZVMYMYNVKZVPYOWFWOQURWJXDYBURWPWQYO
+      EIWFQYBUAWOUBUUAUUBUUEVMYOUBLMWMWLQWFWNWOUDUGUKYOAYGYTUNWBUUBUUCUUEUUDUUF
+      VTVPWAWDWDWDWDWEWD $.
   $}
 
   ${
@@ -874434,28 +874725,23 @@ $)
     fucofunc.e $e |- ( ph -> E e. Cat ) $.
     $( The functor composition bifunctor is a functor.  See also ~ fucofunca .
 
-       However, it is unlikely the unique functor compatible with the functor
-       composition.  As a counterexample, let ` C ` and ` D ` be terminal
-       categories (categories of one object and one morphism, ~ df-termc ), for
-       example, ` ( SetCat `` 1o ) ` (the trivial category, ~ setc1oterm ), and
-       ` E ` be a category with two objects equipped with only two non-identity
-       morphisms ` f ` and ` g ` , pointing in the same direction.  It is
-       possible to map the ordered pair of natural transformations
-       ` <. a , i >. ` , where ` a ` sends to ` f ` and ` i ` is the identity
-       natural transformation, to the other natural transformation ` b `
-       sending to ` g ` , i.e., define the morphism part ` P ` such that
-       ` ( a ( U P V ) i ) = b ` such that ` ( b `` X ) = g ` given hypotheses
-       of ~ fuco23 .  Such construction should be provable as a functor.
+       Its object function need not determine its morphism function; see
+       ~ fuconuniqex2 .  In ~ fuconuniqex both source categories are
+       ` ( SetCat `` 1o ) ` .  The witness target is the category of
+       ~ par2cat , with two objects and two parallel nonidentity arrows.  The
+       map in ~ fuconuniq exchanges those arrows and gives another functor with
+       exactly the same object function; ~ fuconuniq2 states its existence.  At
+       a natural-transformation/identity pair, the canonical and alternative
+       components are respectively ` (/) ` and ` 1o ` , as proved in
+       ~ fuconuniqvals .
 
-       Given any ` P ` , it is a morphism part of a functor compatible with the
-       object part, i.e., the functor composition, i.e., the restriction of
-       ` o.func ` , iff both of the following hold.
-
-       1.  It has the same form as ~ df-fuco up to ~ fuco23 , but
-       ` ( ( B ( U P V ) A ) `` X ) ` might be mapped to a different morphism
-       in category ` E ` .  See ~ fucofulem2 for some insights.
-
-       2. ~ fuco22nat , ~ fucoid , and ~ fucoco are satisfied.
+       For arbitrary categories, ~ fucoisfunc characterizes all morphism parts
+       with the object function ` ( o.func |`` W ) ` of functor composition.
+       The componentwise version ~ fucoisfunc2 expresses the three exact
+       function domains suggested by ~ df-fuco and ~ fuco23 , together with
+       component typing, naturality, and the identity and composition laws.
+       These conditions allow component values other than those of the
+       canonical construction.
 
        (Contributed by Zhi Wang, 3-Oct-2025.) $)
     fucofunc $p |- ( ph -> O ( T Func Q ) P ) $=
@@ -874556,6 +874842,345 @@ $)
       GBUPUQAVCVGCDVDHUJRVCULVKACDHPURUSQBVDVCVGUGUTVAVB $.
   $}
 
+  ${
+    $d A x $.  $d B x $.  $d C x $.  $d E x $.  $d G x $.  $d H x $.  $d I x $.
+    $d ph x $.
+    fucoridid.p $e |- ( ph -> ( 2nd ` ( <. C , C >. o.F E ) ) = P ) $.
+    fucoridid.q $e |- Q = ( C FuncCat C ) $.
+    fucoridid.j $e |- J = ( Id ` Q ) $.
+    fucoridid.i $e |- I = ( idFunc ` C ) $.
+    fucoridid.c $e |- ( ph -> C e. Cat ) $.
+    fucoridid.a $e |- ( ph -> A e. ( G ( C Nat E ) H ) ) $.
+    $( Horizontal composition with the identity natural transformation of the
+       identity functor leaves a natural transformation unchanged.
+       (Contributed by Zhi Wang, 14-Sep-2026.)  (Revised by Zhi Wang,
+       17-Sep-2026.) $)
+    fucoridid $p |- ( ph ->
+      ( A ( <. G , I >. P <. H , I >. ) ( J ` I ) ) = A ) $=
+      ( cfv cop co ccom c1st cid cbs cres ccat wcel idfucl syl fucorid2 idfu1st
+      cfunc eqid coeq2d cvv wf wceq wfn cnat natfn2 dffn2 sylib fcoi1 3eqtrd )
+      ABIJQGIRHIRDSSBIUAQZTBUBCUCQZUDZTZBABCCDEFIGHJKMLPACUEUFICCUKSUFOCINUGUHU
+      IAVDVFBAVECINVEULZOUJUMAVEUNBUOZVGBUPABVEUQVIABVECFGHCFURSZVJULVHPUSVEBUT
+      VAVEUNBVBUHVC $.
+  $}
+
+  ${
+    $d C a b m n p q u v x y z $.  $d D a b m n p q u v x y z $.
+    $d E a b m n p q u v x y z $.  $d W a b m n p q u v x y z $.
+    $d O a b m n p q u v x y z $.  $d P a b m n p q u v x y z $.
+    fucoisfunc.w $e |- W = ( ( D Func E ) X. ( C Func D ) ) $.
+    ${
+      $d T a b m n p q u v x y z $.  $d Q a b m n p q u v x y z $.
+      $d H a b m n p q u v x y z $.  $d I a b m n p q u v x y z $.
+      $d J a b m n p q u v x y z $.  $d ph a b m n p q u v x y z $.
+      $d .x. a b m n p q u v x y z $.  $d .o. a b m n p q u v x y z $.
+      fucoisfunc.t $e |- T = ( ( D FuncCat E ) Xc. ( C FuncCat D ) ) $.
+      fucoisfunc.q $e |- Q = ( C FuncCat E ) $.
+      fucoisfunc.o $e |- O = ( o.func |` W ) $.
+      fucoisfunc.h $e |- H = ( Hom ` T ) $.
+      fucoisfunc.i $e |- I = ( Id ` T ) $.
+      fucoisfunc.j $e |- J = ( Id ` Q ) $.
+      fucoisfunc.x $e |- .x. = ( comp ` T ) $.
+      fucoisfunc.y $e |- .o. = ( comp ` Q ) $.
+      fucoisfunc.c $e |- ( ph -> C e. Cat ) $.
+      fucoisfunc.d $e |- ( ph -> D e. Cat ) $.
+      fucoisfunc.e $e |- ( ph -> E e. Cat ) $.
+      $( A characterization of functors with the object part of functor
+         composition, in terms of an exact morphism function and compatible
+         component functors.  See ~ fucoisfunc2 for the componentwise form.
+         (Contributed by Zhi Wang, 14-Sep-2026.) $)
+      fucoisfunc $p |- ( ph -> ( O ( T Func Q ) P <->
+        ( ( P = ( u e. W , v e. W |-> ( u P v ) ) /\
+        A. m e. W A. n e. W
+          ( ( m P n ) = ( b e. ( ( 1st ` m ) ( D Nat E ) ( 1st ` n ) ) ,
+                          a e. ( ( 2nd ` m ) ( C Nat D ) ( 2nd ` n ) )
+                          |-> ( b ( m P n ) a ) ) /\
+        A. p e. ( ( 1st ` m ) ( D Nat E ) ( 1st ` n ) )
+        A. q e. ( ( 2nd ` m ) ( C Nat D ) ( 2nd ` n ) )
+              ( p ( m P n ) q ) e. ( ( O ` m ) ( C Nat E ) ( O ` n ) ) ) ) /\
+        A. x e. W ( ( ( x P x ) ` ( I ` x ) ) = ( J ` ( O ` x ) ) /\
+        A. y e. W A. z e. W A. m e. ( x H y ) A. n e. ( y H z )
+          ( ( x P z ) ` ( n ( <. x , y >. .x. z ) m ) ) =
+          ( ( ( y P z ) ` n )
+            ( <. ( O ` x ) , ( O ` y ) >. .o. ( O ` z ) )
+            ( ( x P y ) ` m ) ) ) ) ) ) $=
+        ( cfunc co wbr cxp c1st cfv c2nd cnat cmap cixp wcel wceq cop wral cmpo
+        cv wa wf w3a cbs xpcfucbas fucbas eqid fuchom cfuc fuccat xpccat isfunc
+        eqtri ccofu cres rescofuf reseq2i feq12i mpbir 3anass mpbiran chom cxpc
+        bitrdi fveq2i fucofulem2 anbi1i ) ASIKJURUSUTZIDTTVADVMZVBVCSVCXBVDVCSV
+        CGOVEUSZUSXBPVCVFUSVGVHZBVMZQVCXEXEIUSVCXESVCZRVCVINVMZMVMZXECVMZVJXBLU
+        SUSXEXBIUSVCXGXIXBIUSVCXHXEXIIUSVCXFXISVCVJXBSVCUAUSUSVINXIXBPUSVKMXEXI
+        PUSVKDTVKCTVKVNBTVKZVNZIFETTFVMEVMIUSVLVIXHXGIUSZUEUDXHVBVCXGVBVCHOVEUS
+        USZXHVDVCXGVDVCGHVEUSUSZUEVMUDVMXLUSVLVIUCVMUBVMXLUSXHSVCXGSVCXCUSVHUBX
+        NVKUCXMVKVNNTVKMTVKVNZXJVNAXATGOURUSZSVOZXDXJVPZXKABCDTXPKLQMNJSIPRXCUA
+        THOURUSGHURUSVAZKVQVCUFHOGKHUGVRWFGOJUHVSUJGOJXCUHXCVTWAUKULUMUNAHOWBUS
+        ZGHWBUSZKUGAHOXTXTVTUPUQWCAGHYAYAVTUOUPWCWDAGOJUHUOUQWCWEXRXQXKXQXSXPWG
+        XSWHZVOGHOWITXSXPSYBSWGTWHYBUITXSWGUFWJWFUFWKWLXQXDXJWMWNWQXDXOXJDEFTGH
+        MNOSIPUBUCUDUEUFPKWOVCXTYAWPUSZWOVCUJKYCWOUGWRWFWSWTWQ $.
+    $}
+
+    $d B a b m n p q u v x y z h $.  $d R a b m n p q u v x y z h $.
+    $d S a b m n p q u v x y z h $.  $d .xb a b m n p q u v x y z h $.
+    $d C h $.  $d D h $.  $d E h $.  $d W h $.  $d O h $.  $d P h $.
+    fucoisfunc2lem1.o $e |- O = ( o.func |` W ) $.
+    fucoisfunc2lem1.b $e |- B = ( Base ` C ) $.
+    fucoisfunc2lem1.r $e |- R = ( Hom ` C ) $.
+    fucoisfunc2lem1.s $e |- S = ( Hom ` E ) $.
+    fucoisfunc2lem1.v $e |- .xb = ( comp ` E ) $.
+    $( Lemma for ~ fucoisfunc2lem2 .  An equivalence that expands the
+       transformation outputs of a composition-shaped hom-family into exact
+       component functions, component typing, and naturality.  The component
+       values are arbitrary; no canonical value is imposed.  (Contributed by
+       Zhi Wang, 14-Sep-2026.) $)
+    fucoisfunc2lem1 $p |- ( ( P = ( u e. W , v e. W |-> ( u P v ) ) /\
+      A. m e. W A. n e. W
+        ( ( m P n ) = ( b e. ( ( 1st ` m ) ( D Nat E ) ( 1st ` n ) ) ,
+                        a e. ( ( 2nd ` m ) ( C Nat D ) ( 2nd ` n ) )
+                        |-> ( b ( m P n ) a ) ) /\
+      A. p e. ( ( 1st ` m ) ( D Nat E ) ( 1st ` n ) )
+      A. q e. ( ( 2nd ` m ) ( C Nat D ) ( 2nd ` n ) )
+            ( p ( m P n ) q ) e. ( ( O ` m ) ( C Nat E ) ( O ` n ) ) ) )
+      <->
+      ( P = ( u e. W , v e. W |-> ( u P v ) ) /\
+      A. m e. W A. n e. W
+        ( ( m P n ) = ( b e. ( ( 1st ` m ) ( D Nat E ) ( 1st ` n ) ) ,
+                        a e. ( ( 2nd ` m ) ( C Nat D ) ( 2nd ` n ) )
+                        |-> ( b ( m P n ) a ) ) /\
+      A. p e. ( ( 1st ` m ) ( D Nat E ) ( 1st ` n ) )
+      A. q e. ( ( 2nd ` m ) ( C Nat D ) ( 2nd ` n ) )
+      ( ( p ( m P n ) q ) = ( x e. B |-> ( ( p ( m P n ) q ) ` x ) ) /\
+      A. x e. B ( ( p ( m P n ) q ) ` x ) e.
+        ( ( ( 1st ` ( O ` m ) ) ` x ) S ( ( 1st ` ( O ` n ) ) ` x ) ) /\
+      A. x e. B A. y e. B A. h e. ( x R y )
+        ( ( ( p ( m P n ) q ) ` y )
+          ( <. ( ( 1st ` ( O ` m ) ) ` x ) , ( ( 1st ` ( O ` m ) ) ` y ) >.
+            .xb ( ( 1st ` ( O ` n ) ) ` y ) )
+          ( ( x ( 2nd ` ( O ` m ) ) y ) ` h ) ) =
+        ( ( ( x ( 2nd ` ( O ` n ) ) y ) ` h )
+          ( <. ( ( 1st ` ( O ` m ) ) ` x ) , ( ( 1st ` ( O ` n ) ) ` x ) >.
+            .xb ( ( 1st ` ( O ` n ) ) ` y ) )
+          ( ( p ( m P n ) q ) ` x ) ) ) ) ) ) $=
+      ( cv co cmpo wceq c1st cfv cnat c2nd wcel wral wa cmpt cop w3a wtru cfunc
+      wb eqid wf cxp ccofu rescofuf reseq2i eqtri feq12i mpbir simplr ffvelcdmd
+      cres a1i simpr isnat3 2ralbidv anbi2d ralbidva mptru ) HDCQQDUHCUHHUIUJUK
+      ZMUHZNUHZHUIZUATWEULUMWFULUMGOUNUIUIZWEUOUMWFUOUMFGUNUIUIZUAUHTUHWGUIUJUK
+      ZSUHRUHWGUIZWEPUMZWFPUMZFOUNUIZUIUPZRWIUQSWHUQZURZNQUQZMQUQZURWDWJWKAEAUH
+      ZWKUMZUSUKXAWTWLULUMZUMZWTWMULUMZUMZJUIUPAEUQBUHZWKUMLUHZWTXFWLUOUMUIUMXC
+      XFXBUMUTXFXDUMZKUIUIXGWTXFWMUOUMUIUMXAXCXEUTXHKUIUIUKLWTXFIUIUQBEUQAEUQVA
+      ZRWIUQSWHUQZURZNQUQZMQUQZURVDVBWSXMWDVBWRXLMQVBWEQUPZURZWQXKNQXOWFQUPZURZ
+      WPXJWJXQWOXISRWHWIXQABWKEFOKLWLWMIJWNWNVEUDUEUFUGXQQFOVCUIZWEPQXRPVFZXQXS
+      GOVCUIFGVCUIVGZXRVHXTVPZVFFGOVIQXTXRPYAPVHQVPYAUCQXTVHUBVJVKUBVLVMVQZVBXN
+      XPVNVOXQQXRWFPYBXOXPVRVOVSVTWAWBWBWAWC $.
+
+    $d T a b m n p q u v x y z w t h f $.
+    $d Q a b m n p q u v x y z w t h f $.
+    $d H a b m n p q u v x y z w t h f $.
+    $d I a b m n p q u v x y z w t h f $.
+    $d J a b m n p q u v x y z w t h f $.
+    $d K a b m n p q u v x y z w t h f $.
+    $d ph a b m n p q u v x y z w t h f $.
+    $d .x. a b m n p q u v x y z w t h f $.
+    $d .o. a b m n p q u v x y z w t h f $.  $d B w t f $.  $d C w t f $.
+    $d D w t f $.  $d E w t f $.  $d W w t f $.  $d O w t f $.  $d P w t f $.
+    $d R w t f $.  $d S w t f $.  $d .xb w t f $.
+    fucoisfunc2.t $e |- T = ( ( D FuncCat E ) Xc. ( C FuncCat D ) ) $.
+    fucoisfunc2.q $e |- Q = ( C FuncCat E ) $.
+    fucoisfunc2.h $e |- H = ( Hom ` T ) $.
+    fucoisfunc2.i $e |- I = ( Id ` T ) $.
+    fucoisfunc2.x $e |- .x. = ( comp ` T ) $.
+    fucoisfunc2.c $e |- ( ph -> C e. Cat ) $.
+    fucoisfunc2.d $e |- ( ph -> D e. Cat ) $.
+    fucoisfunc2.e $e |- ( ph -> E e. Cat ) $.
+    fucoisfunc2.k $e |- K = ( Id ` E ) $.
+    ${
+      fucoisfunc2lem2.j $e |- J = ( Id ` Q ) $.
+      fucoisfunc2lem2.y $e |- .o. = ( comp ` Q ) $.
+      $( Lemma for ~ fucoisfunc2 .  (Contributed by Zhi Wang, 14-Sep-2026.)
+         (New usage is discouraged.) $)
+      fucoisfunc2lem2 $p |- ( ph -> ( O ( T Func Q ) P <->
+        ( ( P = ( u e. W , v e. W |-> ( u P v ) ) /\
+        A. m e. W A. n e. W
+          ( ( m P n ) = ( b e. ( ( 1st ` m ) ( D Nat E ) ( 1st ` n ) ) ,
+                          a e. ( ( 2nd ` m ) ( C Nat D ) ( 2nd ` n ) )
+                          |-> ( b ( m P n ) a ) ) /\
+        A. p e. ( ( 1st ` m ) ( D Nat E ) ( 1st ` n ) )
+        A. q e. ( ( 2nd ` m ) ( C Nat D ) ( 2nd ` n ) )
+        ( ( p ( m P n ) q ) = ( x e. B |-> ( ( p ( m P n ) q ) ` x ) ) /\
+        A. x e. B ( ( p ( m P n ) q ) ` x ) e.
+          ( ( ( 1st ` ( O ` m ) ) ` x ) S ( ( 1st ` ( O ` n ) ) ` x ) ) /\
+        A. x e. B A. y e. B A. h e. ( x R y )
+          ( ( ( p ( m P n ) q ) ` y )
+            ( <. ( ( 1st ` ( O ` m ) ) ` x ) , ( ( 1st ` ( O ` m ) ) ` y ) >.
+              .xb ( ( 1st ` ( O ` n ) ) ` y ) )
+            ( ( x ( 2nd ` ( O ` m ) ) y ) ` h ) ) =
+          ( ( ( x ( 2nd ` ( O ` n ) ) y ) ` h )
+            ( <. ( ( 1st ` ( O ` m ) ) ` x ) , ( ( 1st ` ( O ` n ) ) ` x ) >.
+              .xb ( ( 1st ` ( O ` n ) ) ` y ) )
+            ( ( p ( m P n ) q ) ` x ) ) ) ) ) /\
+        A. x e. W
+        ( A. t e. B ( ( ( x P x ) ` ( I ` x ) ) ` t ) =
+            ( K ` ( ( 1st ` ( O ` x ) ) ` t ) ) /\
+          A. y e. W A. z e. W A. m e. ( x H y ) A. n e. ( y H z ) A. t e. B
+            ( ( ( x P z ) ` ( n ( <. x , y >. .x. z ) m ) ) ` t ) =
+            ( ( ( ( y P z ) ` n ) ` t )
+              ( <. ( ( 1st ` ( O ` x ) ) ` t ) , ( ( 1st ` ( O ` y ) ) ` t ) >.
+                .xb ( ( 1st ` ( O ` z ) ) ` t ) )
+              ( ( ( x P y ) ` m ) ` t ) ) ) ) ) ) $=
+        ( vw cfunc co wbr cxp cv c1st cfv c2nd cnat cmap cixp wcel wceq wral wa
+        cop cmpo cmpt fucoisfunc chom cfuc cxpc fveq2i eqtri fucofulem2 bitr4di
+        w3a anbi1i cbs xpcfucbas ccat eqid fuccat xpccat adantr simpr fucidcobi
+        pm5.32da bitrd fucoisfunc2lem1 bitri bitrdi ) AUFKPLVKVLVMZKVJUGUGVNVJV
+        OZVPVQUFVQXNVRVQUFVQIUAVSVLZVLXNUBVQVTVLWAWBZGVOZBVOZUCVQXRXRKVLVQZVQXQ
+        XRUFVQZVPVQVQZUEVQWCGHWDXQTVOZSVOZXRCVOZWFDVOZQVLVLXRYEKVLVQZVQXQYBYDYE
+        KVLVQZVQXQYCXRYDKVLVQZVQYAXQYDUFVQZVPVQVQWFXQYEUFVQZVPVQVQOVLVLWCGHWDTY
+        DYEUBVLZWDSXRYDUBVLZWDDUGWDCUGWDWEBUGWDZWEZKFEUGUGFVOEVOKVLWGWCZYCYBKVL
+        ZULUKYCVPVQYBVPVQJUAVSVLVLZYCVRVQYBVRVQIJVSVLVLZULVOUKVOYPVLWGWCZUJVOUI
+        VOYPVLZBHXRYTVQZWHWCUUAXRYCUFVQZVPVQZVQZXRYBUFVQZVPVQZVQZNVLWBBHWDYDYTV
+        QRVOZXRYDUUBVRVQVLVQUUDYDUUCVQWFYDUUFVQZOVLVLUUHXRYDUUEVRVQVLVQUUAUUDUU
+        GWFUUIOVLVLWCRXRYDMVLWDCHWDBHWDWQUIYRWDUJYQWDWETUGWDSUGWDWEZYMWEAXMXPXS
+        XTUDVQWCYFYGYHXTYIWFYJUHVLVLWCTYKWDSYLWDDUGWDCUGWDWEBUGWDZWEZYNAXMYOYSY
+        TUUBUUEXOVLWBUIYRWDUJYQWDWETUGWDSUGWDWEZUUKWEUULABCDEFIJKLPQSTUAUBUCUDU
+        FUGUHUIUJUKULUMUSUTUNVAVBVHVCVIVDVEVFWIXPUUMUUKVJEFUGIJSTUAUFKUBUIUJUKU
+        LUMUBPWJVQJUAWKVLZIJWKVLZWLVLZWJVQVAPUUPWJUSWMWNWOZWRWPAXPUUKYMAXPWEBCD
+        VJGHIKLOPQSTUAUBUCUDUEUFUGUHUGJUAVKVLIJVKVLVNPWSVQUMJUAIPJUSWTWNUTUOVAV
+        BVHVGVCVIURAPXAWBXPAUUNUUOPUSAJUAUUNUUNXBVEVFXCAIJUUOUUOXBVDVEXCXDXEAXP
+        XFXGXHXIXPUUJYMXPUUMUUJUUQBCEFHIJKMNORSTUAUFUGUIUJUKULUMUNUOUPUQURXJXKW
+        RXL $.
+    $}
+
+    $( Full componentwise characterization of an arbitrary morphism part with
+       the object function of functor composition.  See also ~ fucoisfunc .
+
+       Its three exact function domains, component types and naturality, and
+       pointwise identity and composition laws are necessary and sufficient.
+       Empty object and hom domains are permitted.  For a concrete failure of
+       uniqueness, see ~ fuconuniq and ~ fuconuniqex2 .  (Contributed by Zhi
+       Wang, 14-Sep-2026.)  (Revised by Zhi Wang, 17-Sep-2026.) $)
+    fucoisfunc2 $p |- ( ph -> ( O ( T Func Q ) P <->
+      ( ( P = ( u e. W , v e. W |-> ( u P v ) ) /\
+      A. m e. W A. n e. W
+        ( ( m P n ) = ( b e. ( ( 1st ` m ) ( D Nat E ) ( 1st ` n ) ) ,
+                        a e. ( ( 2nd ` m ) ( C Nat D ) ( 2nd ` n ) )
+                        |-> ( b ( m P n ) a ) ) /\
+      A. p e. ( ( 1st ` m ) ( D Nat E ) ( 1st ` n ) )
+      A. q e. ( ( 2nd ` m ) ( C Nat D ) ( 2nd ` n ) )
+      ( ( p ( m P n ) q ) = ( x e. B |-> ( ( p ( m P n ) q ) ` x ) ) /\
+      A. x e. B ( ( p ( m P n ) q ) ` x ) e.
+        ( ( ( 1st ` ( O ` m ) ) ` x ) S ( ( 1st ` ( O ` n ) ) ` x ) ) /\
+      A. x e. B A. y e. B A. h e. ( x R y )
+        ( ( ( p ( m P n ) q ) ` y )
+          ( <. ( ( 1st ` ( O ` m ) ) ` x ) , ( ( 1st ` ( O ` m ) ) ` y ) >.
+            .xb ( ( 1st ` ( O ` n ) ) ` y ) )
+          ( ( x ( 2nd ` ( O ` m ) ) y ) ` h ) ) =
+        ( ( ( x ( 2nd ` ( O ` n ) ) y ) ` h )
+          ( <. ( ( 1st ` ( O ` m ) ) ` x ) , ( ( 1st ` ( O ` n ) ) ` x ) >.
+            .xb ( ( 1st ` ( O ` n ) ) ` y ) )
+          ( ( p ( m P n ) q ) ` x ) ) ) ) ) /\
+      A. x e. W
+      ( A. t e. B ( ( ( x P x ) ` ( I ` x ) ) ` t ) =
+          ( K ` ( ( 1st ` ( O ` x ) ) ` t ) ) /\
+        A. y e. W A. z e. W A. m e. ( x H y ) A. n e. ( y H z ) A. t e. B
+          ( ( ( x P z ) ` ( n ( <. x , y >. .x. z ) m ) ) ` t ) =
+          ( ( ( ( y P z ) ` n ) ` t )
+            ( <. ( ( 1st ` ( O ` x ) ) ` t ) , ( ( 1st ` ( O ` y ) ) ` t ) >.
+              .xb ( ( 1st ` ( O ` z ) ) ` t ) )
+            ( ( ( x P y ) ` m ) ` t ) ) ) ) ) ) $=
+      ( ccid cfv cco eqid fucoisfunc2lem2 ) ABCDEFGHIJKLMNOPQRSTUAUBUCLVFVGZUDU
+      EUFLVHVGZUGUHUIUJUKULUMUNUOUPUQURUSUTVAVBVCVDVEVKVIVLVIVJ $.
+  $}
+
+  ${
+    $d C x y u v $.  $d E x y u v $.  $d K x y u v $.  $d L x y u v $.
+    $d Q x y u v $.  $d T x y u v $.  $d ph x y u v $.
+    fucoaltfunc.q $e |- Q = ( C FuncCat E ) $.
+    ${
+      $d D x y u v $.
+      fucoaltfunc.t $e |- T = ( ( D FuncCat E ) Xc. ( C FuncCat D ) ) $.
+      fucoaltfunc.l $e |- L = ( <. C , D >. o.F E ) $.
+      fucoaltfunc.c $e |- ( ph -> C e. Cat ) $.
+      fucoaltfunc.d $e |- ( ph -> D e. Cat ) $.
+      fucoaltfunc.e $e |- ( ph -> E e. Cat ) $.
+      fucoaltfunc.k $e |- ( ph -> K e. ( Q Func Q ) ) $.
+      fucoaltfunc.i $e |- ( ph -> ( 1st ` K ) = ( _I |` ( C Func E ) ) ) $.
+      $( Post-compose functor composition with an object-fixing endofunctor of
+         its target.  The original object function remains literally fixed for
+         arbitrary source and intermediate categories.  (Contributed by Zhi
+         Wang, 14-Sep-2026.) $)
+      fucoaltfunc $p |- ( ph ->
+        ( 1st ` L ) ( T Func Q ) ( 2nd ` ( K o.func L ) ) ) $=
+        ( co c1st cfv cfunc ccofu c2nd fucbas cop fucofunca eqeltrid cofu1stfix
+        cfuco cofucl func1st2nd breq1dd ) AGHUAQZRSHRSULUBSEDTQZABFTQEDHGBFDIUC
+        AHBCUDFUHQUMKABCDEFJILMNUEUFZOPUGAEDULAEDDHGUNOUIUJUK $.
+    $}
+
+    $d A x y u v $.  $d F x y u v $.  $d G x y u v $.  $d I x y u v $.
+    fucoaltval.l $e |- L = ( <. C , C >. o.F E ) $.
+    fucoaltval.c $e |- ( ph -> C e. Cat ) $.
+    fucoaltval.e $e |- ( ph -> E e. Cat ) $.
+    fucoaltval.k $e |- ( ph -> K e. ( Q Func Q ) ) $.
+    fucoaltval.f $e |- ( ph -> F e. ( C Func E ) ) $.
+    fucoaltval.g $e |- ( ph -> G e. ( C Func E ) ) $.
+    fucoaltval.a $e |- ( ph -> A e. ( F ( C Nat E ) G ) ) $.
+    ${
+      fucoaltval.i $e |- I = ( idFunc ` C ) $.
+      fucoaltval.j $e |- J = ( Id ` ( C FuncCat C ) ) $.
+      ${
+        fucoaltvallem.t $e |- T = ( ( C FuncCat E ) Xc. ( C FuncCat C ) ) $.
+        $( Lemma for ~ fucoaltval .  (Contributed by Zhi Wang, 14-Sep-2026.)
+           (New usage is discouraged.) $)
+        fucoaltvallem $p |- ( ph ->
+          ( A ( <. F , I >. ( 2nd ` ( K o.func L ) ) <. G , I >. ) ( J ` I ) )
+            =
+            ( ( F ( 2nd ` K ) G ) ` A ) ) $=
+          ( cfv cop ccofu co c2nd df-ov c1st cfunc cxp chom xpcfucbas fucofunca
+          cfuco eqeltrid ccat wcel idfucl syl opelxpd eqid fucbas fuchom fuccat
+          cnat cfuc catidcl xpcfuchom2 eleqtrrd cofu2 eqcomi fveq2i a1i fuco11b
+          wceq cofurid eqtrd eqtr3id oveq12d fucoridid fveq12d eqtrid ) ABIJUDZ
+          GIUEZHIUEZKLUFUGUHUDUGZUGBWEUEZWHUDZBGHKUHUDZUGZUDZBWEWHUIAWJWIWFWGLU
+          HUDZUGZUDZWFLUJUDZUDZWGWQUDZWKUGZUDWMACFUKUGZCCUKUGZULEDWIDLKEUMUDZWF
+          WGCFCECUCUNALCCUEFUPUGZEDUKUGNACCDEFUCMOOPUOUQQAGIXAXBRACURUSIXBUSOCI
+          UAUTVAZVBAHIXAXBSXEVBXCVCZAWIGHCFVGUGUGZIICCVGUGZUGZULWFWGXCUGABWEXGX
+          ITAXBCCVHUGZJXHICCXJXJVCZVDCCXJXHXKXHVCVEUBACCXJXKOOVFXEVIVBACFCHIECX
+          CGIUCRXESXEXFVJVKVLAWPBWTWLAWRGWSHWKAWRGIWQUGZGGIWQUIAXLGIUFUGGACCFIG
+          WQXDUJUDWQVQAXDLUJLXDNVMZVNVOZXERVPACFGIRUAVRVSVTAWSHIWQUGZHHIWQUIAXO
+          HIUFUGHACCFIHWQXNXESVPACFHISUAVRVSVTWAAWPBWEWOUGBBWEWOUIABCWNXJFGHIJX
+          DUHUDWNVQAXDLUHXMVNVOXKUBUAOTWBVTWCVSWD $.
+      $}
+
+      $( At a pair consisting of a natural transformation and the identity of
+         the identity functor, post-composed functor composition acts by the
+         post- composing functor on that natural transformation.  (Contributed
+         by Zhi Wang, 14-Sep-2026.)  (Revised by Zhi Wang, 17-Sep-2026.) $)
+      fucoaltval $p |- ( ph ->
+        ( A ( <. F , I >. ( 2nd ` ( K o.func L ) ) <. G , I >. ) ( J ` I ) ) =
+          ( ( F ( 2nd ` K ) G ) ` A ) ) $=
+        ( cfuc co cxpc eqid fucoaltvallem ) ABCDCEUBUCCCUBUCUDUCZEFGHIJKLMNOPQR
+        STUAUGUEUF $.
+    $}
+
+    fucoaltne.n $e |- ( ph -> ( ( F ( 2nd ` K ) G ) ` A ) =/= A ) $.
+    ${
+      fucoaltnelem.t $e |- T = ( ( C FuncCat E ) Xc. ( C FuncCat C ) ) $.
+      fucoaltnelem.i $e |- I = ( idFunc ` C ) $.
+      fucoaltnelem.j $e |- J = ( Id ` ( C FuncCat C ) ) $.
+      $( Lemma for ~ fucoaltne .  (Contributed by Zhi Wang, 14-Sep-2026.)
+         (New usage is discouraged.) $)
+      fucoaltnelem $p |- ( ph -> ( 2nd ` ( K o.func L ) ) =/= ( 2nd ` L ) ) $=
+        ( ccofu co c2nd cfv wceq cop simpr oveqd fucoaltval adantr cfuco eqcomi
+        wa cfuc fveq2i a1i eqid fucoridid 3eqtr3d mteqand ) AKLUEUFUGUHZLUGUHZB
+        GHKUGUHUFUHZBUAAVEVFUIZUQZBIJUHZGIUJZHIUJZVEUFZUFZBVJVKVLVFUFZUFZVGBVIV
+        MVOBVJVIVEVFVKVLAVHUKULULAVNVGUIVHABCDFGHIJKLMNOPQRSTUCUDUMUNAVPBUIVHAB
+        CVFCCURUFZFGHIJCCUJFUOUFZUGUHVFUIAVRLUGLVRNUPUSUTVQVAUDUCOTVBUNVCVD $.
+    $}
+
+    $( A changed natural transformation witnesses that post-composed functor
+       composition has a different morphism part.  (Contributed by Zhi Wang,
+       14-Sep-2026.)  (Revised by Zhi Wang, 17-Sep-2026.) $)
+    fucoaltne $p |- ( ph -> ( 2nd ` ( K o.func L ) ) =/= ( 2nd ` L ) ) $=
+      ( co eqid cfuc cxpc cidfu cfv ccid fucoaltnelem ) ABCDCEUASCCUASZUBSZEFGC
+      UCUDZUGUEUDZHIJKLMNOPQRUHTUITUJTUF $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
@@ -874598,6 +875223,62 @@ $)
       cbs cop cxpc cfuc oveq12i fucofunca eqid curf1cl ) ACGUARDUISZEDFBCUJGUBR
       JIHMCGELUCACGELACGHUDSZHUESZACGHNUFZUGZACGURUSUTUHZTABCDKOVATABCFEDUKRGEC
       GULRDBCULRUKLKUMQOVAVBUNUQUONPUP $.
+  $}
+
+  ${
+    $d C a g h x $.  $d D a g h x $.  $d E a g h x $.  $d F a g h x $.
+    $d a g h ph x $.  $d K a g h $.  $d Q a g h $.  $d R a g h $.
+    postcof1st.q $e |- Q = ( C FuncCat D ) $.
+    postcof1st.r $e |- R = ( D FuncCat E ) $.
+    postcof1st.o $e |- .o. = ( <. R , Q >. curryF ( <. C , D >. o.F E ) ) $.
+    postcof1st.f $e |- ( ph -> F e. ( D Func E ) ) $.
+    postcof1st.c $e |- ( ph -> C e. Cat ) $.
+    postcof1st.k $e |- K = ( ( 1st ` .o. ) ` F ) $.
+    $( The object part of the explicit post-composition functor sends each
+       functor to its post-composition with ` F ` .  (Contributed by Zhi Wang,
+       14-Sep-2026.) $)
+    postcof1st $p |- ( ph ->
+      ( 1st ` K ) = ( g e. ( C Func D ) |-> ( F o.func g ) ) ) $=
+      ( vh co cv cfv va cfunc ccofu cmpt cnat cbs c1st c2nd cmpo cop postcofval
+      vx wceq ovex mptex mpoex op1std syl ) AIFBCUBRZHFSZUCRZUDZFQUSUSUAUTQSZBC
+      UERRULBUFTULSZUASTVDUTUGTTVDVCUGTTHUHTRTUDUDZUIZUJUMIUGTVBUMAULBCDEFQGHIJ
+      UAKLMNOPUKVBVFIFUSVABCUBUNZUOFQUSUSVEVGVGUPUQUR $.
+
+    $( The morphism part of the explicit post-composition functor sends a pair
+       of functors to the induced map on natural transformations.  (Contributed
+       by Zhi Wang, 14-Sep-2026.) $)
+    postcof2nd $p |- ( ph -> ( 2nd ` K ) =
+      ( g e. ( C Func D ) , h e. ( C Func D ) |->
+        ( a e. ( g ( C Nat D ) h ) |-> ( x e. ( Base ` C ) |->
+          ( ( ( ( 1st ` g ) ` x ) ( 2nd ` F ) ( ( 1st ` h ) ` x ) )
+            ` ( a ` x ) ) ) ) ) ) $=
+      ( cfv cfunc co cv ccofu cmpt cnat cbs c1st c2nd cmpo wceq postcofval ovex
+      cop mptex mpoex op2ndd syl ) AKGCDUAUBZJGUCZUDUBZUEZGHUSUSMUTHUCZCDUFUBUB
+      BCUGTBUCZMUCTVDUTUHTTVDVCUHTTJUITUBTUEUEZUJZUNUKKUITVFUKABCDEFGHIJKLMNOPQ
+      RSULVBVFKGUSVACDUAUMZUOGHUSUSVEVGVGUPUQUR $.
+
+    $d G a g h x $.  $d H a g h x $.  $d A a g h x $.  $d X a g h x $.
+    postcof2.g $e |- ( ph -> G e. ( C Func D ) ) $.
+    postcof2.h $e |- ( ph -> H e. ( C Func D ) ) $.
+    postcof2.a $e |- ( ph -> A e. ( G ( C Nat D ) H ) ) $.
+    postcof2.x $e |- ( ph -> X e. ( Base ` C ) ) $.
+    $( A component of the action of a post-composition functor is obtained by
+       applying the morphism part of ` F ` to the component morphism.
+       (Contributed by Zhi Wang, 14-Sep-2026.) $)
+    postcof2 $p |- ( ph -> ( ( ( G ( 2nd ` K ) H ) ` A ) ` X ) =
+      ( ( ( ( 1st ` G ) ` X ) ( 2nd ` F ) ( ( 1st ` H ) ` X ) )
+        ` ( A ` X ) ) ) $=
+      ( vx va vg vh cv cfv c1st c2nd co cbs cvv cmpt cnat cfunc postcof2nd wceq
+      wa simprl simprr oveq12d fveq2d fveq1d mpteq2dv mpteq12dv wcel ovex mptex
+      a1i ovmpod simpr fvex fvmptd fveq12d fvexd ) AUDLUDUHZBUIZVRIUJUIZUIZVRJU
+      JUIZUIZHUKUIZULZUIZLBUIZLVTUIZLWBUIZWDULZUICUMUIZBIJKUKUIZULZUIUNAUEBUDWK
+      VRUEUHZUIZWEUIZUOZUDWKWFUOZIJCDUPULZULZWMUNAUFUGIJCDUQULZXAUEUFUHZUGUHZWS
+      ULZUDWKWOVRXBUJUIZUIZVRXCUJUIZUIZWDULZUIZUOZUOUEWTWQUOZWLUNAUDCDEFUFUGGHK
+      MUENOPQRSURAXBIUSZXCJUSZUTUTZUEXDXKWTWQXOXBIXCJWSAXMXNVAZAXMXNVBZVCXOUDWK
+      XJWPXOWOXIWEXOXFWAXHWCWDXOVRXEVTXOXBIUJXPVDVEXOVRXGWBXOXCJUJXQVDVEVCVEVFV
+      GTUAXLUNVHAUEWTWQIJWSVIVJVKVLAWNBUSZUTZUDWKWPWFXSWOVSWEXSVRWNBAXRVMVEVDVF
+      UBWRUNVHAUDWKWFCUMVNVJVKVOAVRLUSZUTZVSWGWEWJYAWAWHWCWIWDYAVRLVTAXTVMZVDYA
+      VRLWBYBVDVCYAVRLBYBVDVPUCAWGWJVQVO $.
   $}
 
 
@@ -877515,6 +878196,66 @@ $)
   $}
 
   ${
+    $d A x y z k $.  $d B x y z k $.  $d C x y z k $.  $d D x y z k $.
+    $d F x y z k $.  $d Y x y z k $.  $d ph x y z k $.
+    termcfunc1eq.c $e |- ( ph -> C e. TermCat ) $.
+    ${
+      termcfunc1eq.f $e |- ( ph -> F e. ( C Func D ) ) $.
+      ${
+        $d G x y z k $.
+        termcfunc1eq.b $e |- B = ( Base ` C ) $.
+        termcfunc1eq.g $e |- ( ph -> G e. ( C Func D ) ) $.
+        termcfunc1eq.y $e |- ( ph -> Y e. B ) $.
+        termcfunc1eq.e $e |-
+          ( ph -> ( ( 1st ` F ) ` Y ) = ( ( 1st ` G ) ` Y ) ) $.
+        $( Functors with terminal source are equal when they agree on its
+           object.  (Contributed by Zhi Wang, 14-Sep-2026.) $)
+        termcfunc1eq $p |- ( ph -> F = G ) $=
+          ( c1st cfv cop csn opeq2d sneqd eqid ccid fveq2d opeq12d termcfuncval
+          cbs wcel wceq simprd 3eqtr4d ) AGGENOOZPZQZGGPZGCUAOZOZUJDUAOZOZPZQZP
+          ZQZPZGGFNOOZPZQZUMUOVCUPOZPZQZPZQZPZEFAULVEVAVJAUKVDAUJVCGMRSAUTVIAUS
+          VHUMAURVGAUQVFUOAUJVCUPMUBRSRSUCAUJDUEOZUFEVBUGAVLBDCUPUNEUJGVLTZHIJL
+          UJTUPTZUNTZUDUHAVCVLUFFVKUGAVLBDCUPUNFVCGVMHKJLVCTVNVOUDUHUI $.
+      $}
+
+      $d S x y z k $.
+      termccofix.s $e |- ( ph -> S e. ( D Func D ) ) $.
+      termccofix.i $e |- ( ph -> ( 1st ` S ) = ( _I |` A ) ) $.
+      $( Post-composition by an object-fixing endofunctor leaves a functor with
+         terminal source literally unchanged.  (Contributed by Zhi Wang,
+         14-Sep-2026.) $)
+      termccofix $p |- ( ph -> ( S o.func F ) = F ) $=
+        ( cbs cfv ccofu co eqid c1st c2nd func1st2nd funcf1 cdm cuni cofucl cid
+        termco cres cofu1 fveq1d wcel wceq ffvelcdmd dmeqd dmresi eqtrdi eqtr3d
+        fdmd eleqtrrd fvresi syl 3eqtrd termcfunc1eq ) ACKLZCDEFMNZFVAUAZGACDDF
+        EHIUBVAOZHAVACGVDUDZAVCVBPLLVCFPLZLZEPLZLVGUCBUEZLZVGAVACDDFEVCVDHIVEUF
+        AVGVHVIJUGAVGBUHVJVGUIAVGDKLZBAVAVKVCVFAVAVKCDVFFQLVDVKOZACDFHRSVEUJAVH
+        TZBVKAVMVITBAVHVIJUKBULUMAVKVKVHAVKVKDDVHEQLVLVLADDEIRSUOUNUPBVGUQURUSU
+        T $.
+    $}
+
+    $d A a g h x y z k $.  $d B a g h $.  $d C a g h $.  $d D a g h $.
+    $d F a g h $.  $d Y a g h $.  $d K a g h $.  $d Q a g h $.  $d R a g h $.
+    $d ph a g h $.
+    termcpostfix.q $e |- Q = ( C FuncCat D ) $.
+    termcpostfix.r $e |- R = ( D FuncCat D ) $.
+    termcpostfix.o $e |- .o. = ( <. R , Q >. curryF ( <. C , D >. o.F D ) ) $.
+    termcpostfix.k $e |- K = ( ( 1st ` .o. ) ` F ) $.
+    termcpostfix.f $e |- ( ph -> F e. ( D Func D ) ) $.
+    termcpostfix.i $e |- ( ph -> ( 1st ` F ) = ( _I |` A ) ) $.
+    $( Post-composition by an object-fixing endofunctor induces an
+       object-fixing endofunctor on a functor category with terminal source.
+       (Contributed by Zhi Wang, 14-Sep-2026.) $)
+    termcpostfix $p |- ( ph -> ( K e. ( Q Func Q ) /\
+      ( 1st ` K ) = ( _I |` ( C Func D ) ) ) ) $=
+      ( vg cfunc co wcel c1st cfv cres wceq termccatd postcofcl cmpt postcof1st
+      cid cv ccofu wa ctermc adantr simpr termccofix mpteq2dva mptresid eqtr4di
+      eqtrd jca ) AHEERSTHUAUBZUICDRSZUCZUDACDEFEDGHIKLMOACJUEZNKUFAVBQVCQUJZUG
+      ZVDAVBQVCGVFUKSZUGVGACDEFQDGHIKLMOVENUHAQVCVHVFAVFVCTZULBCDGVFACUMTVIJUNA
+      VIUOAGDDRSTVIOUNAGUAUBUIBUCUDVIPUNUPUQUTQVCURUSVA $.
+  $}
+
+  ${
     termcnatval.c $e |- ( ph -> C e. TermCat ) $.
     termcnatval.n $e |- N = ( C Nat D ) $.
     termcnatval.a $e |- ( ph -> A e. ( F N G ) ) $.
@@ -878637,13 +879378,14 @@ $)
 
   ${
     $d C c j s x $.  $d J j s x $.  $d S s x $.
-    cnelsubclem.1 $e |- J e. _V $.
-    cnelsubclem.2 $e |- S e. _V $.
-    cnelsubclem.3 $e |- ( C e. Cat /\ J Fn ( S X. S ) /\
+    cnelsubcw.1 $e |- J e. _V $.
+    cnelsubcw.2 $e |- S e. _V $.
+    cnelsubcw.3 $e |- ( C e. Cat /\ J Fn ( S X. S ) /\
           ( J C_cat ( Homf ` C ) /\ -. A. x e. S
             ( ( Id ` C ) ` x ) e. ( x J x ) /\ ( C |`cat J ) e. Cat ) ) $.
-    $( Lemma for ~ cnelsubc .  (Contributed by Zhi Wang, 6-Nov-2025.) $)
-    cnelsubclem $p |- E. c e. Cat E. j E. s ( j Fn ( s X. s ) /\
+    $( A weaker version of ~ cnelsubc , which requires fewer axioms.
+       (Contributed by Zhi Wang, 6-Nov-2025.) $)
+    cnelsubcw $p |- E. c e. Cat E. j E. s ( j Fn ( s X. s ) /\
       ( j C_cat ( Homf ` c ) /\ -. A. x e. s ( ( Id ` c ) ` x ) e. ( x j x )
       /\ ( c |`cat j ) e. Cat ) ) $=
       ( ccat wcel cv cfv cssc co wral wn cresc wex cxp wfn wbr ccid w3a wa wrex
@@ -878658,6 +879400,7 @@ $)
       JWKYDYJWJXPAWAYJWIXOWHWFWFVTEVJVCVDUPYJWMXSKVTEBSVEVFVGURVHUTVKVIXKWRGBKW
       SBUSZXJWPDFYKXIWOWCYKXAWEXFWLXHWNYKWTWDVTOWSBUHVLVMYKXEWKYKXDWJAWAYKXCWHW
       IYKWFXBWGWSBUDVLVNVFVDUPYKXGWMKWSBVTSVOVFVGVPVQVRVI $.
+    $( $j usage 'cnelsubcw' avoids 'ax-10' 'ax-11' 'ax-12'; $)
   $}
 
   ${
@@ -878671,9 +879414,1008 @@ $)
       ( j C_cat ( Homf ` c ) /\ -. A. x e. s ( ( Id ` c ) ` x ) e. ( x j x )
       /\ ( c |`cat j ) e. Cat ) ) $=
       ( vf vg cnx cbs cfv c0 csn cop chom c2o cotp cco cv c1o chomf eqid cin co
-      cmpo ctp csetc fvex 1oex cresc ccid setc1onsubc cnelsubclem ) AGHIJKLGMIJ
-      JNOKLGPIJJLJEFNNEQFQUAUCZOKLUDZRBRUEIZSIZCDUNSUFUGAUMUMUOUHUBZRULUMUIIZEF
-      UNUMSIZUOUMTULTUNTUOTRTURTUQTUPTUJUK $.
+      cmpo ctp csetc fvex 1oex cresc ccid setc1onsubc cnelsubcw ) AGHIJKLGMIJJN
+      OKLGPIJJLJEFNNEQFQUAUCZOKLUDZRBRUEIZSIZCDUNSUFUGAUMUMUOUHUBZRULUMUIIZEFUN
+      UMSIZUOUMTULTUNTUOTRTURTUQTUPTUJUK $.
+  $}
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Parallel-arrow categories
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  ${
+    $d B x y $.  $d J x y $.  $d S x y $.  $d U x y $.  $d X x y $.
+    $d Y x y $.
+    parhomval.h $e |- H = ( x e. B , y e. B |->
+      if ( x = y , { J } , if ( ( x = X /\ y = Y ) , S , (/) ) ) ) $.
+    ${
+      $d V x y $.
+      parhomval.s $e |- S e. _V $.
+      $( At objects in the base, the hom operation has value ` { J } ` on the
+         diagonal, ` S ` from the distinguished source to target, and the empty
+         set otherwise.  (Contributed by Zhi Wang, 14-Sep-2026.) $)
+      parhomval $p |- ( ( U e. B /\ V e. B ) ->
+        ( U H V ) = if ( U = V , { J } ,
+          if ( ( U = X /\ V = Y ) , S , (/) ) ) ) $=
+        ( cv wceq csn wa c0 cif eqeq1d ifex eqeq12 simpl simpr anbi12d ifbieq2d
+        ifbid snex 0ex ovmpoa ) ABEHCCAMZBMZNZGOZUJINZUKJNZPZDQRZREHNZUMEINZHJN
+        ZPZDQRZRFUJENZUKHNZPZULURUQVBUMUJEUKHUAVEUPVADQVEUNUSUOUTVEUJEIVCVDUBSV
+        EUKHJVCVDUCSUDUFUEKURUMVBGUGVADQLUHTTUI $.
+
+      parhomel.j $e |- J e. _V $.
+      $( Membership in a hom-set of a parallel-arrow category is equivalent to
+         being its identity value on the diagonal, or a member of ` S ` at the
+         distinguished source and target.  (Contributed by Zhi Wang,
+         14-Sep-2026.) $)
+      parhomel $p |- ( ( U e. B /\ V e. B ) -> ( F e. ( U H V ) <->
+        ( ( U = V /\ F = J ) \/
+          ( -. U = V /\ ( ( U = X /\ V = Y ) /\ F e. S ) ) ) ) ) $=
+        ( wcel wa wceq cif wo anbi2i co c0 wn parhomval eleq2d elif elsn2 elif0
+        csn orbi12i bitri bitrdi ) ECOICOPZFEIGUAZOFEIQZHUIZEJQIKQPZDUBRZRZOZUO
+        FHQZPZUOUCZUQFDOPZPZSZUMUNUSFABCDEGHIJKLMUDUEUTUOFUPOZPZVCFUROZPZSVFUOF
+        UPURUFVHVBVJVEVGVAUOFHNUGTVIVDVCUQFDUHTUJUKUL $.
+
+      parhomcl2.k $e |- K = ( S u. { J } ) $.
+      parhomcl2.u $e |- ( ph -> U e. B ) $.
+      parhomcl2.v $e |- ( ph -> V e. B ) $.
+      parhomcl2.f $e |- ( ph -> F e. ( U H V ) ) $.
+      $( Variant of ~ parhomcl .  (Contributed by Zhi Wang, 14-Sep-2026.)
+         (Revised by Zhi Wang, 17-Sep-2026.)  (New usage is discouraged.)
+         (Proof modification is discouraged.) $)
+      parhomcl2 $p |- ( ph -> F e. K ) $=
+        ( csn cun wcel wo wceq wa wn co wb parhomel syl2anc mpbid elsn2 bilanri
+        olcd simprr orcd jaoi syl elun sylibr eleqtrrdi ) AGEIUAZUBZJAGEUCZGVCU
+        CZUDZGVDUCAFKUEZGIUEZUFZVHUGZFLUEKMUEUFZVEUFUFZUDZVGAGFKHUHUCZVNTAFDUCK
+        DUCVOVNUIRSBCDEFGHIKLMNOPUJUKULVJVGVMVJVFVEVFVIVHGIPUMUNUOVMVEVFVKVLVEU
+        PUQURUSGEVCUTVAQVB $.
+    $}
+
+    $( On the diagonal, the parallel-arrow hom operation has value ` { J } ` .
+       (Contributed by Zhi Wang, 16-Sep-2026.) $)
+    parhomidval $p |- ( U e. B -> ( U H U ) = { J } ) $=
+      ( wcel co csn wceq weq cv wa c0 cif eqtr3 iftrued snex ovmpoa anidms ) EC
+      KEEFLGMZNABEECCABOZUEAPZHNBPZINQDRSZSUEFUGENUHENQUFUEUIUGUHETUAJGUBUCUD
+      $.
+
+    ${
+      $d V x y $.
+      parhomssun.k $e |- K = ( S u. { J } ) $.
+      $( Every value of the parallel-arrow hom operation is a subclass of the
+         arrow carrier.  (Contributed by Zhi Wang, 16-Sep-2026.) $)
+      parhomssun $p |- ( U H V ) C_ K $=
+        ( cun cv wceq c0 cif wss wral co csn weq ifssun ssun2 un0 ssun1 eqsstri
+        wa sstri unssi rgen2w ovmptss ax-mp sseqtrri ) EIFUAZDGUBZNZHABUCZUQAOJ
+        PBOKPUIZDQRZRZURSZBCTACTUPURSVCABCCVBUQVANURUSUQVAUDUQVAURUQDUEVADQNZUR
+        UTDQUDVDDURDUFDUQUGUHUJUKUJULABCCVBEFIURLUMUNMUO $.
+
+      parhomcl.f $e |- ( ph -> F e. ( U H V ) ) $.
+      $( All hom-sets of the parallel-arrow construction lie in its arrow
+         carrier.  (Contributed by Zhi Wang, 14-Sep-2026.)  (Revised by Zhi
+         Wang, 16-Sep-2026.) $)
+      parhomcl $p |- ( ph -> F e. K ) $=
+        ( co parhomssun sselid ) AFKHQJGBCDEFHIJKLMNORPS $.
+    $}
+
+    ${
+      $d V x y $.
+      parhomideq.f $e |- ( ph -> F e. ( U H V ) ) $.
+      parhomideq.e $e |- ( ph -> U = V ) $.
+      ${
+        parhomideq2.s $e |- S e. _V $.
+        parhomideq2.j $e |- J e. _V $.
+        parhomideq2.u $e |- ( ph -> U e. B ) $.
+        parhomideq2.v $e |- ( ph -> V e. B ) $.
+        $( Variant of ~ parhomideq .  (Contributed by Zhi Wang, 14-Sep-2026.)
+           (Proof modification is discouraged.)  (New usage is discouraged.) $)
+        parhomideq2 $p |- ( ph -> F = J ) $=
+          ( wceq co csn wa c0 cif parhomval syl2anc iftrued eqtrd eleqtrd elsnd
+          wcel ) AGIAGFJHUAZIUBZNAUMFJTZUNFKTJLTUCEUDUEZUEZUNAFDULJDULUMUQTRSBC
+          DEFHIJKLMPUFUGAUOUNUPOUHUIUJUK $.
+      $}
+
+      $( An endomorphism in the parallel-arrow construction has the identity
+         value.  (Contributed by Zhi Wang, 14-Sep-2026.)  (Revised by Zhi Wang,
+         16-Sep-2026.) $)
+      parhomideq $p |- ( ph -> F = J ) $=
+        ( co wcel wceq cv cif csn oveq2d eleqtrrd weq elmpocl1 parhomidval 3syl
+        wa c0 eleqtrd elsnd ) AGIAGFFHPZIUAZAGFJHPZULNAFJFHOUBUCAGUNQFDQULUMRNB
+        CDDBCUDUMBSKRCSLRUHEUITTFJHGMUEBCDEFHIKLMUFUGUJUK $.
+    $}
+
+    ${
+      $d V x y $.
+      parhomid.j $e |- J e. _V $.
+      parhomid.u $e |- ( ph -> U e. B ) $.
+      ${
+        parhomid2.s $e |- S e. _V $.
+        $( Variant of ~ parhomid .  (Contributed by Zhi Wang, 14-Sep-2026.)
+           (Proof modification is discouraged.)  (New usage is discouraged.) $)
+        parhomid2 $p |- ( ph -> J e. ( U H U ) ) $=
+          ( csn co snid wceq wa cif c0 wcel parhomval syl2anc iftruei eleqtrrid
+          eqid eqtrdi ) AHHOZFFGPZHLQAUJFFRZUIFIRFJRSEUATZTZUIAFDUBZUNUJUMRMMBC
+          DEFGHFIJKNUCUDUKUIULFUGUEUHUF $.
+      $}
+
+      $( The identity value belongs to each endomorphism hom-set.  (Contributed
+         by Zhi Wang, 14-Sep-2026.)  (Revised by Zhi Wang, 16-Sep-2026.) $)
+      parhomid $p |- ( ph -> J e. ( U H U ) ) $=
+        ( csn co snid wcel wceq parhomidval syl eleqtrrid ) AHHNZFFGOZHLPAFDQUC
+        UBRMBCDEFGHIJKSTUA $.
+    $}
+
+    ${
+      $d V x y a b $.  $d B a b $.  $d J a b $.  $d S a b $.  $d U a b $.
+      $d X a b $.  $d Y a b $.  $d H a b $.
+      $( Evaluate an inhabited parallel-arrow hom-set.  Membership certifies
+         the selected branch even when sethood hypotheses are unavailable.
+         Compare ~ parhomval for evaluation throughout the object domain.
+         (Contributed by Zhi Wang, 17-Sep-2026.) $)
+      parhomvaln0 $p |- ( F e. ( U H V ) -> ( U H V ) =
+        if ( U = V , { J } , if ( ( U = X /\ V = Y ) , S , (/) ) ) ) $=
+        ( va vb weq cv wceq wa c0 cif csn cmpo nfcv eqeq12 simpl eqeq1d anbi12d
+        simpr ifbid ifbieq2d cbvmpo eqtri elovmpoeq ) MNCCMNOZHUAZMPZJQZNPZKQZR
+        ZDSTZTZEIQZUOEJQZIKQZRZDSTZTGFEIGABCCABOZUOAPZJQZBPZKQZRZDSTZTZUBMNCCVB
+        UBLABMNCCVOVBMVOUCNVOUCAVBUCBVBUCAMOZBNOZRZVHUNVNVAUOVIUPVKURUDVRVMUTDS
+        VRVJUQVLUSVRVIUPJVPVQUEUFVRVKURKVPVQUHUFUGUIUJUKULUPEQZURIQZRZUNVCVAVGU
+        OUPEURIUDWAUTVFDSWAUQVDUSVEWAUPEJVSVTUEUFWAURIKVSVTUHUFUGUIUJUM $.
+    $}
+
+    ${
+      $d V x y $.
+      parhomne.f $e |- ( ph -> F e. ( U H V ) ) $.
+      parhomne.n $e |- ( ph -> -. U = V ) $.
+      ${
+        parhomne2.s $e |- S e. _V $.
+        parhomne2.j $e |- J e. _V $.
+        parhomne2.u $e |- ( ph -> U e. B ) $.
+        parhomne2.v $e |- ( ph -> V e. B ) $.
+        $( Variant of ~ parhomne .  (Contributed by Zhi Wang, 14-Sep-2026.)
+           (Revised by Zhi Wang, 17-Sep-2026.)  (New usage is discouraged.)
+           (Proof modification is discouraged.) $)
+        parhomne2 $p |- ( ph -> ( U = X /\ V = Y ) ) $=
+          ( wceq wn wa wcel co wo parhomel syl2anc mpbid intnanrd orcnd simprld
+          wb ) AFJTZUAZFKTJLTUBZGEUCZAUMGITZUBZUNUOUPUBUBZAGFJHUDUCZURUSUEZNAFD
+          UCJDUCUTVAULRSBCDEFGHIJKLMPQUFUGUHAUMUQOUIUJUK $.
+      $}
+
+      $( A morphism between different objects has the distinguished source and
+         target.  (Contributed by Zhi Wang, 14-Sep-2026.)  (Revised by Zhi
+         Wang, 17-Sep-2026.) $)
+      parhomne $p |- ( ph -> ( U = X /\ V = Y ) ) $=
+        ( wceq wa wcel c0 cif co csn parhomvaln0 syl iffalsed eqtrd elif0 sylib
+        eleqtrd simpld ) AFKPJLPQZGERZAGUKESTZRUKULQAGFJHUAZUMNAUNFJPZIUBZUMTZU
+        MAGUNRUNUQPNBCDEFGHIJKLMUCUDAUOUPUMOUEUFUIUKGEUGUHUJ $.
+    $}
+
+    ${
+      $d V x y $.
+      parhomss.p $e |- S C_ ~P J $.
+      parhomss.f $e |- ( ph -> F e. ( U H V ) ) $.
+      ${
+        $d W x y $.
+        parhomss2.s $e |- S e. _V $.
+        parhomss2.j $e |- J e. _V $.
+        parhomss2.u $e |- ( ph -> U e. B ) $.
+        parhomss2.v $e |- ( ph -> V e. B ) $.
+        $( Variant of ~ parhomss .  (Contributed by Zhi Wang, 14-Sep-2026.)
+           (Revised by Zhi Wang, 17-Sep-2026.)  (New usage is discouraged.)
+           (Proof modification is discouraged.) $)
+        parhomss2 $p |- ( ph -> F C_ J ) $=
+          ( csn cun cpw snsspw unssi eqid parhomcl sselid elpwid ) AGIAEITZUAZI
+          UBZGEUIUKNIUCUDABCDEFGHIUJJKLMUJUEOUFUGUH $.
+      $}
+
+      $( When every member of the parallel-arrow class ` S ` is a subset of
+         ` J ` , every arrow in a hom-set is a subset of its identity value
+         ` J ` .  The subset hypothesis is essential; it does not follow from
+         the hom-set definition alone.  (Contributed by Zhi Wang, 14-Sep-2026.)
+         (Revised by Zhi Wang, 17-Sep-2026.) $)
+      parhomss $p |- ( ph -> F C_ J ) $=
+        ( csn cun cpw snsspw unssi eqid parhomcl sselid elpwid ) AGIAEIPZQZIRZG
+        EUEUGNISTABCDEFGHIUFJKLMUFUAOUBUCUD $.
+    $}
+
+    $d V x y $.  $d W x y $.
+    parhomeqor.f $e |- ( ph -> F e. ( U H V ) ) $.
+    parhomeqor.g $e |- ( ph -> G e. ( V H W ) ) $.
+    ${
+      parhomeqor2.s $e |- S e. _V $.
+      parhomeqor2.j $e |- J e. _V $.
+      parhomeqor2.n $e |- X =/= Y $.
+      parhomeqor2.u $e |- ( ph -> U e. B ) $.
+      parhomeqor2.v $e |- ( ph -> V e. B ) $.
+      parhomeqor2.w $e |- ( ph -> W e. B ) $.
+      $( Variant of ~ parhomeqor .  (Contributed by Zhi Wang, 14-Sep-2026.)
+         (Revised by Zhi Wang, 17-Sep-2026.)  (New usage is discouraged.)
+         (Proof modification is discouraged.) $)
+      parhomeqor2 $p |- ( ph -> ( U = V \/ V = W ) ) $=
+        ( wceq wn wa co wcel ad2antrr parhomne simpld adantr simprd eqtr3d neii
+        simpr a1i condan ex orrd ) AFKUDZKLUDZAVAUEZVBAVCUFZVBMNUDZVDVBUEZUFZKM
+        NVGKMUDLNUDVGBCDEKHIJLMNOAHKLIUGUHVCVFQUIVDVFUPUJUKVDKNUDZVFVDFMUDVHVDB
+        CDEFGIJKMNOAGFKIUGUHVCPULAVCUPUJUMULUNVEUEVGMNTUOUQURUSUT $.
+    $}
+
+    $( In a composable pair, at least one arrow is an endomorphism.
+       (Contributed by Zhi Wang, 14-Sep-2026.)  (Revised by Zhi Wang,
+       17-Sep-2026.) $)
+    parhomeqor $p |- ( ph -> ( U = V \/ V = W ) ) $=
+      ( wceq wn adantr wa co wcel simpr parhomne simpld eqtr4d condan ex orrd )
+      AFKRZKLRZAUKSZULAUMUAZULUKUNULSZUAZFMKUNFMRZUOUNUQKNRUNBCDEFGIJKMNOAGFKIU
+      BUCUMPTAUMUDZUEUFTUPKMRLNRUPBCDEKHIJLMNOUNHKLIUBUCZUOAUSUMQTTUNUOUDUEUFUG
+      UNUMUOURTUHUIUJ $.
+
+    parhomco.p $e |- S C_ ~P J $.
+    ${
+      parhomco2.s $e |- S e. _V $.
+      parhomco2.j $e |- J e. _V $.
+      parhomco2.n $e |- X =/= Y $.
+      parhomco2.u $e |- ( ph -> U e. B ) $.
+      parhomco2.v $e |- ( ph -> V e. B ) $.
+      parhomco2.w $e |- ( ph -> W e. B ) $.
+      $( Variant of ~ parhomco .  (Contributed by Zhi Wang, 14-Sep-2026.)
+         (Revised by Zhi Wang, 17-Sep-2026.)  (New usage is discouraged.)
+         (Proof modification is discouraged.) $)
+      parhomco2 $p |- ( ph -> ( G i^i F ) e. ( U H W ) ) $=
+        ( wceq cin co wcel wa adantr simpr parhomideq ineq2d wss parhomss dfss2
+        sylib oveq1d 3eltr4d ineq1d sseqin2 eleqtrd eqeltrd parhomeqor mpjaodan
+        eqtrd oveq2d ) AFKUEZHGUFZFLIUGZUHKLUEZAVHUIZHKLIUGZVIVJAHVMUHZVHQUJVLV
+        IHJUFZHVLGJHVLBCDEFGIJKMNOAGFKIUGZUHZVHPUJAVHUKZULUMVLHJUNZVOHUEAVSVHAB
+        CDEKHIJLMNORQUOUJHJUPUQVFVLFKLIVRURUSAVKUIZVIGVJVTVIJGUFZGVTHJGVTBCDEKH
+        IJLMNOAVNVKQUJAVKUKZULUTVTGJUNZWAGUEAWCVKABCDEFGIJKMNORPUOUJGJVAUQVFVTG
+        VPVJAVQVKPUJVTKLFIWBVGVBVCABCDEFGHIJKLMNOPQVDVE $.
+    $}
+
+    $( When every member of the parallel-arrow class ` S ` is a subset of
+       ` J ` , intersection of composable arrows belongs to the hom-set from
+       the first object to the last.  The subset hypothesis supplies the
+       required intersection identity laws; it does not follow from the hom
+       construction alone.  (Contributed by Zhi Wang, 14-Sep-2026.)  (Revised
+       by Zhi Wang, 17-Sep-2026.) $)
+    parhomco $p |- ( ph -> ( G i^i F ) e. ( U H W ) ) $=
+      ( wceq adantr cin co wcel wa simpr parhomideq ineq2d parhomss dfss2 sylib
+      wss eqtrd oveq1d 3eltr4d ineq1d sseqin2 oveq2d eleqtrd eqeltrd parhomeqor
+      mpjaodan ) AFKSZHGUAZFLIUBZUCKLSZAVBUDZHKLIUBZVCVDAHVGUCZVBQTVFVCHJUAZHVF
+      GJHVFBCDEFGIJKMNOAGFKIUBZUCZVBPTAVBUEZUFUGVFHJUKZVIHSAVMVBABCDEKHIJLMNORQ
+      UHTHJUIUJULVFFKLIVLUMUNAVEUDZVCGVDVNVCJGUAZGVNHJGVNBCDEKHIJLMNOAVHVEQTAVE
+      UEZUFUOVNGJUKZVOGSAVQVEABCDEFGIJKMNORPUHTGJUPUJULVNGVJVDAVKVEPTVNKLFIVPUQ
+      URUSABCDEFGHIJKLMNOPQUTVA $.
+  $}
+
+  ${
+    $d B f g p z $.  $d K f g p z $.  $d U f g p z $.  $d V f g p z $.
+    $d W f g p z $.  $d F f g p z $.  $d G f g p z $.  $d ph f g p z $.
+    $d M p z $.
+    parcoval.m $e |- M = ( f e. K , g e. K |-> ( f i^i g ) ) $.
+    parcoval.c $e |- .x. = ( p e. ( B X. B ) , z e. B |-> M ) $.
+    parcoval.s $e |- M e. _V $.
+    parcoval.u $e |- ( ph -> U e. B ) $.
+    parcoval.v $e |- ( ph -> V e. B ) $.
+    parcoval.w $e |- ( ph -> W e. B ) $.
+    parcoval.f $e |- ( ph -> F e. K ) $.
+    parcoval.g $e |- ( ph -> G e. K ) $.
+    $( The composition in the specified parallel-arrow categories is
+       intersection.  (Contributed by Zhi Wang, 14-Sep-2026.) $)
+    parcoval $p |- ( ph -> ( G ( <. U , V >. .x. W ) F ) = ( G i^i F ) ) $=
+      ( cop co cin cxp cvv cmpo wceq a1i cv wa eqidd opelxpd wcel ovmpod simprl
+      oveqd simprr ineq12d inex1g syl eqtrd ) AIHELUCZMDUDZUDIHKUDIHUEZAVEKIHAN
+      BVDMCCUFZCKKDUGDNBVGCKUHUIAPUJANUKVDUIBUKMUIULULKUMAELCCRSUNTKUGUOAQUJUPU
+      RAFGIHJJFUKZGUKZUEZVFKUGKFGJJVJUHUIAOUJAVHIUIZVIHUIZULULVHIVIHAVKVLUQAVKV
+      LUSUTUBUAAIJUOVFUGUOUBIHJVAVBUPVC $.
+  $}
+
+  ${
+    $d B m n r s p q x y z w f g k $.  $d J m n r s p q x y z w f g k $.
+    $d S m n r s p q x y z w f g k $.  $d X m n r s p q x y z w f g k $.
+    $d Y m n r s p q x y z w f g k $.  $d K m n r s p q x y z w f g k $.
+    $d H p q r s x y z w f g k $.  $d M m n p q x y z w f g k $.
+    $d C x y z w f g k $.  $d .x. x y z w f g k $.
+    parcatid.b $e |- B e. _V $.
+    parcatid.j $e |- J e. _V $.
+    parcatid.p $e |- S C_ ~P J $.
+    parcatid.k $e |- K = ( S u. { J } ) $.
+    parcatid.h $e |- H = ( m e. B , n e. B |->
+      if ( m = n , { J } , if ( ( m = X /\ n = Y ) , S , (/) ) ) ) $.
+    parcatid.m $e |- M = ( r e. K , s e. K |-> ( r i^i s ) ) $.
+    parcatid.o $e |- .x. = ( p e. ( B X. B ) , q e. B |-> M ) $.
+    parcatid.c $e |- C = { <. ( Base ` ndx ) , B >. ,
+      <. ( Hom ` ndx ) , H >. , <. ( comp ` ndx ) , .x. >. } $.
+    ${
+      parcatid2.s $e |- S e. _V $.
+      parcatid2.n $e |- X =/= Y $.
+      $( Variant of ~ parcatid .  (Contributed by Zhi Wang, 14-Sep-2026.)
+         (Revised by Zhi Wang, 17-Sep-2026.)  (New usage is discouraged.)
+         (Proof modification is discouraged.) $)
+      parcatid2 $p |- ( C e. Cat /\ ( Id ` C ) = ( y e. B |-> J ) ) $=
+        ( vx vz vw vf vg vk ccat wcel ccid cfv cmpt wceq wa wtru cv w3a cvv cbs
+        co catbas a1i chom weq csn c0 cif cmpo mpoex eqeltri cathomfval cco cxp
+        xpex catcofval cnx cop ctp tpex biid simpr parhomid cin cun snex simp1d
+        unex simpld simprd parhomcl snid elun2 ax-mp eleqtrri parcoval parhomss
+        simp3d wss sseqin2 sylib eqtrd simp2d dfss2 eqeltrd inass oveq1d oveq2d
+        parhomco 3eqtr4a iscatd2 mptru ) CUNUOCUPUQABIURUSUTVAUHVBZBUOZAVBZBUOZ
+        UTZUIVBZBUOZUJVBZBUOZUTZUKVBZXRXTHVFUOZULVBZXTYCHVFUOZUMVBZYCYEHVFUOZVC
+        ZVCZUHAUIUJBCEIUKULUMHVDBCVEUQUSVABCEHUERVGVHHCVIUQUSVABCEHUEHFGBBFGVJI
+        VKZFVBLUSGVBMUSUTDVLVMVMZVNVDUBFGBBYQRRVOVPVQVHECVRUQUSVABCEHUEEQPBBVSZ
+        BKVNVDUDQPYRBKBBRRVTRVOVPWAVHCVDUOVACWBVEUQBWCZWBVIUQHWCZWBVRUQEWCZWDVD
+        UEYSYTUUAWEVPVHYOWFVAYAUTFGBDXTHILMUBSVAYAWGWHVAYOUTZIYHXRXTWCZXTEVFVFI
+        YHWIZYHUUBPBEXRONYHIJKXTXTQUCUDKONJJOVBNVBWIZVNVDUCONJJUUEJDYPWJZVDUADY
+        PUFIWKWMVPZUUGVOVPZUUBXSYAUUBYBYGYNVAYOWGZWLZWNZUUBXSYAUUJWOZUULUUBFGBD
+        XRYHHIJXTLMUBUAUUBYIYKYMUUBYBYGYNUUIXCZWLZWPZIJUOUUBIUUFJIYPUOIUUFUOISW
+        QIYPDWRWSUAWTVHZXAUUBYHIXDUUDYHUSUUBFGBDXRYHHIXTLMUBTUUNXBYHIXEXFXGUUBY
+        JIXTXTWCYCEVFVFYJIWIZYJUUBPBEXTONIYJJKXTYCQUCUDUUHUULUULUUBYDYFUUBYBYGY
+        NUUIXHZWNZUUPUUBFGBDXTYJHIJYCLMUBUAUUBYIYKYMUUMXHZWPZXAUUBYJIXDUUQYJUSU
+        UBFGBDXTYJHIYCLMUBTUUTXBYJIXIXFXGUUBYJYHUUCYCEVFVFZYJYHWIZXRYCHVFUUBPBE
+        XRONYHYJJKXTYCQUCUDUUHUUKUULUUSUUOUVAXAZUUBFGBDXRYHYJHIXTYCLMUBUUNUUTTX
+        NZXJUUBYLYJWIZYHWIZYLUVCWIZYLYJXTYCWCYEEVFVFZYHUUCYEEVFZVFZYLUVBXRYCWCY
+        EEVFZVFZYLYJYHXKUUBUVKUVFYHUVJVFUVGUUBUVIUVFYHUVJUUBPBEXTONYJYLJKYCYEQU
+        CUDUUHUULUUSUUBYDYFUURWOZUVAUUBFGBDYCYLHIJYELMUBUAUUBYIYKYMUUMXCZWPZXAX
+        LUUBPBEXRONYHUVFJKXTYEQUCUDUUHUUKUULUVNUUOUUBFGBDXTUVFHIJYELMUBUAUUBFGB
+        DXTYJYLHIYCYELMUBUUTUVOTXNWPXAXGUUBUVMYLUVCUVLVFUVHUUBUVBUVCYLUVLUVDXMU
+        UBPBEXRONUVCYLJKYCYEQUCUDUUHUUKUUSUVNUUBFGBDXRUVCHIJYCLMUBUAUVEWPUVPXAX
+        GXOXPXQ $.
+    $}
+
+    $( Construct a category with a family of parallel arrows from ` X ` to
+       ` Y ` and only identity endomorphisms.  All arrow values are subsets of
+       ` J ` ; composition is intersection.  Nonidentity arrows can occur only
+       when ` X ` and ` Y ` are distinct members of ` B ` .  If ` X = Y ` , or
+       either distinguished endpoint is outside ` B ` , the category is
+       discrete.  (Contributed by Zhi Wang, 14-Sep-2026.)  (Revised by Zhi
+       Wang, 17-Sep-2026.) $)
+    parcatid $p |- ( C e. Cat /\ ( Id ` C ) = ( y e. B |-> J ) ) $=
+      ( vx vz vw vf vg vk ccat wcel ccid cfv cmpt wceq wa wtru cv co w3a catbas
+      cvv cbs a1i chom weq csn c0 cif cmpo eqeltri cathomfval cco cxp catcofval
+      mpoex xpex cnx cop ctp tpex biid simpr parhomid cin cun pwex ssexi simp1d
+      cpw snex unex simpld simprd simp3d parhomcl elun2 ax-mp eleqtrri parcoval
+      snid wss parhomss sseqin2 sylib eqtrd simp2d dfss2 parhomco eqeltrd inass
+      oveq1d oveq2d 3eqtr4a iscatd2 mptru ) CULUMCUNUOABIUPUQURUSUFUTZBUMZAUTZB
+      UMZURZUGUTZBUMZUHUTZBUMZURZUIUTZXSYAHVAUMZUJUTZYAYDHVAUMZUKUTZYDYFHVAUMZV
+      BZVBZUFAUGUHBCEIUIUJUKHVDBCVEUOUQUSBCEHUERVCVFHCVGUOUQUSBCEHUEHFGBBFGVHIV
+      IZFUTLUQGUTMUQURDVJVKVKZVLVDUBFGBBYRRRVRVMVNVFECVOUOUQUSBCEHUEEQPBBVPZBKV
+      LVDUDQPYSBKBBRRVSRVRVMVQVFCVDUMUSCVTVEUOBWAZVTVGUOHWAZVTVOUOEWAZWBVDUEYTU
+      UAUUBWCVMVFYPWDUSYBURFGBDYAHILMUBSUSYBWEWFUSYPURZIYIXSYAWAZYAEVAVAIYIWGZY
+      IUUCPBEXSONYIIJKYAYAQUCUDKONJJOUTNUTWGZVLVDUCONJJUUFJDYQWHZVDUADYQDIWLISW
+      ITWJIWMWNVMZUUHVRVMZUUCXTYBUUCYCYHYOUSYPWEZWKZWOZUUCXTYBUUKWPZUUMUUCFGBDX
+      SYIHIJYALMUBUAUUCYJYLYNUUCYCYHYOUUJWQZWKZWRZIJUMUUCIUUGJIYQUMIUUGUMISXCIY
+      QDWSWTUAXAVFZXBUUCYIIXDUUEYIUQUUCFGBDXSYIHIYALMUBTUUOXEYIIXFXGXHUUCYKIYAY
+      AWAYDEVAVAYKIWGZYKUUCPBEYAONIYKJKYAYDQUCUDUUIUUMUUMUUCYEYGUUCYCYHYOUUJXIZ
+      WOZUUQUUCFGBDYAYKHIJYDLMUBUAUUCYJYLYNUUNXIZWRZXBUUCYKIXDUURYKUQUUCFGBDYAY
+      KHIYDLMUBTUVAXEYKIXJXGXHUUCYKYIUUDYDEVAVAZYKYIWGZXSYDHVAUUCPBEXSONYIYKJKY
+      AYDQUCUDUUIUULUUMUUTUUPUVBXBZUUCFGBDXSYIYKHIYAYDLMUBUUOUVATXKZXLUUCYMYKWG
+      ZYIWGZYMUVDWGZYMYKYAYDWAYFEVAVAZYIUUDYFEVAZVAZYMUVCXSYDWAYFEVAZVAZYMYKYIX
+      MUUCUVLUVGYIUVKVAUVHUUCUVJUVGYIUVKUUCPBEYAONYKYMJKYDYFQUCUDUUIUUMUUTUUCYE
+      YGUUSWPZUVBUUCFGBDYDYMHIJYFLMUBUAUUCYJYLYNUUNWQZWRZXBXNUUCPBEXSONYIUVGJKY
+      AYFQUCUDUUIUULUUMUVOUUPUUCFGBDYAUVGHIJYFLMUBUAUUCFGBDYAYKYMHIYDYFLMUBUVAU
+      VPTXKWRXBXHUUCUVNYMUVDUVMVAUVIUUCUVCUVDYMUVMUVEXOUUCPBEXSONUVDYMJKYDYFQUC
+      UDUUIUULUUTUVOUUCFGBDXSUVDHIJYDLMUBUAUVFWRUVQXBXHXPXQXR $.
+  $}
+
+  ${
+    $d B x y $.  $d J x y $.  $d S x y $.  $d U x y $.  $d V x y $.
+    $d X x y $.  $d Y x y $.
+    paridval.b $e |- B = ( Base ` C ) $.
+    paridval.h $e |- H = ( Hom ` C ) $.
+    paridval.hv $e |- H = ( x e. B , y e. B |->
+      if ( x = y , { J } , if ( ( x = X /\ y = Y ) , S , (/) ) ) ) $.
+    paridval.c $e |- ( ph -> C e. Cat ) $.
+    ${
+      paridval.u $e |- ( ph -> U e. B ) $.
+      $( The identity at any object of a category with the parallel-arrow hom
+         construction is ` J ` .  (Contributed by Zhi Wang, 17-Sep-2026.) $)
+      paridval $p |- ( ph -> ( ( Id ` C ) ` U ) = J ) $=
+        ( ccid cfv eqid catidcl eqidd parhomideq ) ABCDFGGEQRZRHIGJKNADEUCHGLMU
+        CSOPTAGUAUB $.
+    $}
+
+    $d W x y $.
+    parcoval2.o $e |- .x. = ( comp ` C ) $.
+    parcoval2.f $e |- ( ph -> F e. ( U H V ) ) $.
+    parcoval2.g $e |- ( ph -> G e. ( V H W ) ) $.
+    $( Composition in a category with the parallel-arrow hom construction.
+       Every composable pair contains an identity, so the category identity
+       laws determine the value.  (Contributed by Zhi Wang, 17-Sep-2026.) $)
+    parcoval2 $p |- ( ph -> ( G ( <. U , V >. .x. W ) F )
+      = if ( U = V , G , F ) ) $=
+      ( wceq cop co cif wa ccid cfv simpr opeq1d oveq1d eqidd adantr parhomideq
+      wcel weq csn cv elmpocl2 syl paridval eqtr4d oveq123d eqid catrid iftrued
+      eqtrd parhomeqor orcanai eqcomd oveq2d elmpocl1 catlid iffalsed pm2.61dan
+      c0 wn ) AHMUDZJIHMUEZNGUFZUFZVTJIUGZUDAVTUHZWCJWDWEWCJMEUIUJZUJZMMUEZNGUF
+      ZUFZJWEJJIWGWBWIWEWAWHNGWEHMMAVTUKZULUMWEJUNWEILWGWEBCDFHIKLMOPSAIHMKUFUQ
+      ZVTUBUOWKUPAWGLUDZVTABCDEFMKLOPQRSTAWLMDUQUBBCDDBCURLUSBUTOUDCUTPUDUHFVRU
+      GUGZHMKISVAVBZVCZUOVDVEAWJJUDVTADEGWFJKMNQRWFVFZTWOUAAJMNKUFUQZNDUQUCBCDD
+      WNMNKJSVAVBUCVGUOVIWEVTJIWKVHVDAVTVSZUHZWCIWDWTWCWGIWAMGUFZUFZIWTJWGIIWBX
+      AWTNMWAGWTMNAVTMNUDABCDFHIJKLMNOPSUBUCVJVKZVLVMWTJLWGWTBCDFMJKLNOPSAWRWSU
+      CUOXCUPAWMWSWPUOVDWTIUNVEAXBIUDWSADEGWFIKHMQRWQTAWLHDUQUBBCDDWNHMKISVNVBU
+      AWOUBVOUOVIWTVTJIAWSUKVPVDVQ $.
+  $}
+
+  ${
+    $d C x y z w f g k $.  $d m n r s p q x y z w f g k $.
+    par2catid.c $e |- C = { <. ( Base ` ndx ) , 2o >. ,
+      <. ( Hom ` ndx ) , ( m e. 2o , n e. 2o |->
+        if ( m = n , { 2o } , if ( ( m = (/) /\ n = 1o ) , 2o , (/) ) ) ) >. ,
+      <. ( comp ` ndx ) , ( p e. ( 2o X. 2o ) , q e. 2o |->
+        ( r e. 3o , s e. 3o |-> ( r i^i s ) ) ) >. } $.
+    $( A concrete category with two objects and two parallel nonidentity
+       arrows.  The two identity arrows both have raw value ` 2o ` ; their
+       sources and targets distinguish them.  The parallel arrows have raw
+       values the empty set and ` 1o ` .  (Contributed by Zhi Wang,
+       14-Sep-2026.) $)
+    par2catid $p |- ( C e. Cat /\ ( Id ` C ) = ( y e. 2o |-> 2o ) ) $=
+      ( c2o cxp c3o cv cmpo wceq c0 c1o cif 2oex eqid cin csn wtr cpw con0 wcel
+      wa wss 2on ontr ax-mp dftr4 mpbi csuc cun df-3o df-suc eqtri parcatid ) A
+      JBJHGJJKJFELLFMEMUANZNZCDCDJJCMZDMZOJUBZVBPOVCQOUGJPRRNZJLUTPQEFGHSSJUCZJ
+      JUDUHJUEUFVFUIJUJUKJULUMLJUNJVDUOUPJUQURVETUTTVATIUS $.
+  $}
+
+  ${
+    $d m n r s p q x y z w f g k $.
+    $( The explicitly given two-object, two-parallel-arrow category exists.
+       This closed theorem discharges the constructor premises in ~ par2catid .
+       (Contributed by Zhi Wang, 14-Sep-2026.) $)
+    par2cat $p |- { <. ( Base ` ndx ) , 2o >. ,
+      <. ( Hom ` ndx ) , ( m e. 2o , n e. 2o |->
+        if ( m = n , { 2o } , if ( ( m = (/) /\ n = 1o ) , 2o , (/) ) ) ) >. ,
+      <. ( comp ` ndx ) , ( p e. ( 2o X. 2o ) , q e. 2o |->
+        ( r e. 3o , s e. 3o |-> ( r i^i s ) ) ) >. } e. Cat $=
+      ( vy cnx cbs cfv c2o cop chom cv wceq csn c0 cif cmpo c3o c1o cco cxp cin
+      wa ctp ccat wcel ccid cmpt eqid par2catid simpli ) HIJKLHMJABKKANZBNZOKPU
+      NQOUOUAOUEKQRRSLHUBJFEKKUCKDCTTDNCNUDSSLUFZUGUHUPUIJGKKUJOGUPABCDEFUPUKUL
+      UM $.
+  $}
+
+  ${
+    $d m n r s p q $.
+    par2str.c $e |- C = { <. ( Base ` ndx ) , 2o >. ,
+      <. ( Hom ` ndx ) , ( m e. 2o , n e. 2o |->
+        if ( m = n , { 2o } , if ( ( m = (/) /\ n = 1o ) , 2o , (/) ) ) ) >. ,
+      <. ( comp ` ndx ) , ( p e. ( 2o X. 2o ) , q e. 2o |->
+        ( r e. 3o , s e. 3o |-> ( r i^i s ) ) ) >. } $.
+    $( The object set, hom operation, and composition of the concrete
+       two-object parallel-arrow category.  (Contributed by Zhi Wang,
+       14-Sep-2026.) $)
+    par2str $p |- ( 2o = ( Base ` C ) /\
+      ( m e. 2o , n e. 2o |->
+        if ( m = n , { 2o } , if ( ( m = (/) /\ n = 1o ) , 2o , (/) ) ) ) =
+          ( Hom ` C ) /\
+      ( p e. ( 2o X. 2o ) , q e. 2o |->
+        ( r e. 3o , s e. 3o |-> ( r i^i s ) ) ) = ( comp ` C ) ) $=
+      ( c2o cbs cfv wceq cv csn c0 cif cmpo c3o 2oex mpoex c1o chom cxp cin cco
+      wa catbas cathomfval xpex catcofval 3pm3.2i ) IAJKLBCIIBMZCMZLINULOLUMUAL
+      UFIOPPZQZAUBKLGFIIUCZIEDRREMDMUDQZQZAUEKLIAURUOHSUGIAURUOHBCIIUNSSTUHIAUR
+      UOHGFUPIUQIISSUISTUJUK $.
+  $}
+
+  ${
+    $d B x y $.  $d J x y $.  $d S x y $.  $d U x y $.  $d V x y $.
+    $d X x y $.  $d Y x y $.
+    parmapcl.h $e |- H = ( x e. B , y e. B |->
+      if ( x = y , { J } , if ( ( x = X /\ y = Y ) , S , (/) ) ) ) $.
+    ${
+      parmapcl.f $e |- ( ph -> F e. ( U H V ) ) $.
+      parmapcl.i $e |- ( ph -> ( A ` J ) = J ) $.
+      parmapcl.a $e |- ( ( ph /\ F e. S ) -> ( A ` F ) e. S ) $.
+      ${
+        parmapcl2.s $e |- S e. _V $.
+        parmapcl2.j $e |- J e. _V $.
+        parmapcl2.u $e |- ( ph -> U e. B ) $.
+        parmapcl2.v $e |- ( ph -> V e. B ) $.
+        $( Variant of ~ parmapcl .  (Contributed by Zhi Wang, 14-Sep-2026.)
+           (Revised by Zhi Wang, 17-Sep-2026.)  (New usage is discouraged.)
+           (Proof modification is discouraged.) $)
+        parmapcl2 $p |- ( ph -> ( A ` F ) e. ( U H V ) ) $=
+          ( cfv co wcel wceq wa wn wo simprl simprr fveq2d adantr eqtrd simprrl
+          jca simprrr syldan jca32 wb parhomel syl2anc mpbid orim12da mpbird )
+          AHDUBZGKIUCZUDZGKUEZVEJUEZUFZVHUGZGLUEKMUEUFZVEFUDZUFUFZUHZAVHHJUEZUF
+          ZVKVLHFUDZUFZUFZVJVNAVQUFZVHVIAVHVPUIWAVEJDUBZJWAHJDAVHVPUJUKAWBJUEVQ
+          PULUMUOAVTUFVKVLVMAVKVSUIAVKVLVRUNAVTVRVMAVKVLVRUPQUQURAHVFUDZVQVTUHZ
+          OAGEUDZKEUDZWCWDUSTUABCEFGHIJKLMNRSUTVAVBVCAWEWFVGVOUSTUABCEFGVEIJKLM
+          NRSUTVAVD $.
+      $}
+
+      $( A map fixing the identity value and preserving the parallel-arrow
+         class preserves each hom-set.  (Contributed by Zhi Wang, 14-Sep-2026.)
+         (Revised by Zhi Wang, 17-Sep-2026.) $)
+      parmapcl $p |- ( ph -> ( A ` F ) e. ( U H V ) ) $=
+        ( wceq wcel wa cfv co adantr simpr parhomideq fveq2d 3eqtr4d eqeltrd wn
+        c0 cif csn parhomvaln0 iffalsed eqtrd eleqtrd elif0 sylib simprd syldan
+        syl simpld iftrued eleqtrrd pm2.61dan ) AGKRZHDUAZGKIUBZSAVFTZVGHVHVIJD
+        UAZJVGHAVJJRVFPUCVIHJDVIBCEFGHIJKLMNAHVHSZVFOUCZAVFUDUEZUFVMUGVLUHAVFUI
+        ZTZVGFVHAVNHFSZVGFSVOGLRKMRTZVPVOHVQFUJUKZSVQVPTVOHVHVRAVKVNOUCZVOVHVFJ
+        ULZVRUKZVRVOVKVHWARVSBCEFGHIJKLMNUMVAVOVFVTVRAVNUDUNUOZUPVQHFUQURZUSQUT
+        VOVHVRFWBVOVQFUJVOVQVPWCVBVCUOVDVE $.
+
+      $d W x y $.
+      parmapco2.s $e |- S e. _V $.
+      parmapco2.j $e |- J e. _V $.
+      parmapco2.p $e |- S C_ ~P J $.
+      parmapco2.n $e |- X =/= Y $.
+      parmapco2.u $e |- ( ph -> U e. B ) $.
+      parmapco2.v $e |- ( ph -> V e. B ) $.
+      parmapco2.w $e |- ( ph -> W e. B ) $.
+      parmapco2.g $e |- ( ph -> G e. ( V H W ) ) $.
+      parmapco2.b $e |- ( ( ph /\ G e. S ) -> ( A ` G ) e. S ) $.
+      $( Variant of ~ parmapco .  (Contributed by Zhi Wang, 14-Sep-2026.)
+         (Revised by Zhi Wang, 17-Sep-2026.)  (New usage is discouraged.)
+         (Proof modification is discouraged.) $)
+      parmapco2 $p |- ( ph ->
+        ( A ` ( G i^i F ) ) = ( ( A ` G ) i^i ( A ` F ) ) ) $=
+        ( wceq cin cfv wss parmapcl parhomss adantr dfss2 sylib wcel parhomideq
+        wa co simpr fveq2d ineq2d 3eqtr4rd sseqin2 ineq1d parhomeqor mpjaodan
+        eqtrd ) AGLUIZIHUJZDUKZIDUKZHDUKZUJZUILMUIZAVKUTZVNKUJZVNVPVMVRVNKULZVS
+        VNUIAVTVKABCEFLVNJKMNOPUBABCDEFLIJKMNOPUGRUHUMUNUOVNKUPUQVRVOKVNVRVOKDU
+        KZKVRHKDVRBCEFGHJKLNOPAHGLJVAURVKQUOAVKVBUSZVCAWAKUIZVKRUOVJVDVRVLIDVRV
+        LIKUJZIVRHKIWBVDVRIKULZWDIUIAWEVKABCEFLIJKMNOPUBUGUNUOIKUPUQVJVCVEAVQUT
+        ZKVOUJZVOVPVMWFVOKULZWGVOUIAWHVQABCEFGVOJKLNOPUBABCDEFGHJKLNOPQRSUMUNUO
+        VOKVFUQWFVNKVOWFVNWAKWFIKDWFBCEFLIJKMNOPAILMJVAURVQUGUOAVQVBUSZVCAWCVQR
+        UOVJVGWFVLHDWFVLKHUJZHWFIKHWIVGWFHKULZWJHUIAWKVQABCEFGHJKLNOPUBQUNUOHKV
+        FUQVJVCVEABCEFGHIJKLMNOPQUGVHVI $.
+    $}
+
+    $d W x y $.
+    parmapco.p $e |- S C_ ~P J $.
+    parmapco.f $e |- ( ph -> F e. ( U H V ) ) $.
+    parmapco.g $e |- ( ph -> G e. ( V H W ) ) $.
+    parmapco.i $e |- ( ph -> ( A ` J ) = J ) $.
+    parmapco.a $e |- ( ( ph /\ F e. S ) -> ( A ` F ) e. S ) $.
+    parmapco.b $e |- ( ( ph /\ G e. S ) -> ( A ` G ) e. S ) $.
+    $( An identity-fixing map preserving parallel arrows preserves every typed
+       composition.  (Contributed by Zhi Wang, 14-Sep-2026.)  (Revised by Zhi
+       Wang, 17-Sep-2026.) $)
+    parmapco $p |- ( ph -> ( A ` ( G i^i F ) )
+      = ( ( A ` G ) i^i ( A ` F ) ) ) $=
+      ( wceq cin cfv wa parmapcl parhomss adantr dfss2 sylib co wcel parhomideq
+      wss simpr fveq2d eqtrd ineq2d 3eqtr4rd sseqin2 ineq1d parhomeqor mpjaodan
+      ) AGLUCZIHUDZDUEZIDUEZHDUEZUDZUCLMUCZAVEUFZVHKUDZVHVJVGVLVHKUOZVMVHUCAVNV
+      EABCEFLVHJKMNOPQABCDEFLIJKMNOPSTUBUGUHUIVHKUJUKVLVIKVHVLVIKDUEZKVLHKDVLBC
+      EFGHJKLNOPAHGLJULUMVERUIAVEUPUNZUQAVOKUCZVETUIURUSVLVFIDVLVFIKUDZIVLHKIVP
+      USVLIKUOZVRIUCAVSVEABCEFLIJKMNOPQSUHUIIKUJUKURUQUTAVKUFZKVIUDZVIVJVGVTVIK
+      UOZWAVIUCAWBVKABCEFGVIJKLNOPQABCDEFGHJKLNOPRTUAUGUHUIVIKVAUKVTVHKVIVTVHVO
+      KVTIKDVTBCEFLIJKMNOPAILMJULUMVKSUIAVKUPUNZUQAVQVKTUIURVBVTVFHDVTVFKHUDZHV
+      TIKHWCVBVTHKUOZWDHUCAWEVKABCEFGHJKLNOPQRUHUIHKVAUKURUQUTABCEFGHIJKLMNOPRS
+      VCVD $.
+  $}
+
+  ${
+    $d B r s f g p q u v a t x y z $.  $d J r s f g p q u v a t x y z $.
+    $d S r s f g p q u v a t x y z $.  $d X r s f g p q u v a t x y z $.
+    $d Y r s f g p q u v a t x y z $.  $d K r s f g p q u v a t x y z $.
+    $d A r s f g p q u v a t x y z $.  $d H f g p q u v a t x y z $.
+    $d M r s p q u v a t x y z $.  $d .x. u v a t x y z $.  $d L t x y z $.
+    $d C x y z $.  $d I x y z $.
+    parmapfunc.b $e |- B = ( Base ` C ) $.
+    parmapfunc.h $e |- H = ( Hom ` C ) $.
+    parmapfunc.c $e |- C e. Cat $.
+    parmapfunc.hv $e |- H = ( r e. B , s e. B |->
+      if ( r = s , { J } , if ( ( r = X /\ s = Y ) , S , (/) ) ) ) $.
+    parmapfunc.l $e |- L = ( u e. B , v e. B |->
+      ( a e. ( u H v ) |-> ( A ` a ) ) ) $.
+    parmapfunc.ai $e |- ( A ` J ) = J $.
+    parmapfunc.as $e |- A. t e. S ( A ` t ) e. S $.
+    ${
+      $d B r s f g p q u v a t x y z i j $.  $d J i j $.  $d S i j $.
+      $d X i j $.  $d Y i j $.  $d K i j $.  $d A i j $.  $d H i j $.
+      $d M i j $.  $d L i j $.  $d C i j $.  $d I i j $.  $d .x. i j $.
+      parmapfunc2.i $e |- I = ( Id ` C ) $.
+      parmapfunc2.o $e |- .x. = ( comp ` C ) $.
+      parmapfunc2.s $e |- S e. _V $.
+      parmapfunc2.j $e |- J e. _V $.
+      parmapfunc2.p $e |- S C_ ~P J $.
+      parmapfunc2.n $e |- X =/= Y $.
+      parmapfunc2.k $e |- K = ( S u. { J } ) $.
+      parmapfunc2.mv $e |- M = ( f e. K , g e. K |-> ( f i^i g ) ) $.
+      parmapfunc2.ov $e |- .x. = ( p e. ( B X. B ) , q e. B |-> M ) $.
+      parmapfunc2.iv $e |- I = ( t e. B |-> J ) $.
+      $( Variant of ~ parmapfunc .  (Contributed by Zhi Wang, 14-Sep-2026.)
+         (Revised by Zhi Wang, 17-Sep-2026.)  (New usage is discouraged.)
+         (Proof modification is discouraged.) $)
+      parmapfunc2 $p |- ( _I |` B ) ( C Func C ) L $=
+        ( vx vy vz vi vj cid cres cfunc co wbr wtru ccat wcel wf1o wf f1oi f1of
+        a1i mp1i cxp wfn fnmpompt cv wa cfv simprl simprr ovmpomptd simpr fveq2
+        wceq eleq1d vtoclri adantl parmapcl fmpt3d fvresi syl oveq12d feq3d cvv
+        mpbird eqidd fvmptd2 fveq2d parhomid fvmpomptd 3eqtr4a w3a cop cin cmpo
+        eqtrd csn snex unex eqeltri simp21 simp22 simp23 simp3l parhomcl simp3r
+        cun mpoex parcoval opeq12d oveq123d parhomco parmapco 3eqtr4rd isfuncd
+        mptru ) VFEVGZOFFVHVIVJVKVAVBVCEEFHLVDVEFYNOKLKHUDUDUEUEUKUKULULFVLVMVK
+        UFVRZYOEEYNVNEEYNVOVKEVPEEYNVQVSOEEVTWAVKABDEKOUCUHWBVRVKVAWCZEVMZVBWCZ
+        EVMZWDWDZYPYRKVIZYPYNWEZYRYNWEZKVIZYPYROVIZVOUUAUUAUUEVOYTUCUUAUCWCZDWE
+        ZUUAUUEYTABDEYPKOYRUCUHVKYQYSWFZVKYQYSWGZWHYTUUFUUAVMZWDZTSDEGYPUUFKMYR
+        QRUGYTUUJWIMDWEZMWKZUUKUIVRUUFGVMUUGGVMZUUKCWCZDWEZGVMZUUNCUUFGUUOUUFWK
+        UUPUUGGUUOUUFDWJWLUJWMWNWOWPYTUUDUUAUUEUUAYTUUBYPUUCYRKYTYQUUBYPWKZUUHE
+        YPWQZWRYTYSUUCYRWKZUUIEYRWQZWRWSWTXBVKYQWDZUULMYPLWEZYPYPOVIZWEZUUBLWEZ
+        UIUVBUVEMUVDWEUULUVBUVCMUVDUVBCYPMMELXAUTUVBUUOYPWKWDMXCVKYQWIZMXAVMUVB
+        UNVRXDZXEUVBABDEYPMKOYPUCUHUVGUVGUVBTSEGYPKMQRUGUNUVGXFXGXMUVBUVFUVCMUV
+        BUUBYPLYQUURVKUUSWNXEUVHXMXHVKYQYSVCWCZEVMZXIZVDWCZUUAVMZVEWCZYRUVIKVIV
+        MZWDZXIZUVNDWEZUVLDWEZYPYRXJZUVIHVIZVIUVRUVSXKZUVNYRUVIOVIWEZUVLUUEWEZU
+        UBUUCXJZUVIYNWEZHVIZVIUVNUVLUWAVIZYPUVIOVIZWEZUVQUAEHYPIJUVSUVRNPYRUVIU
+        BURUSPIJNNIWCJWCXKZXLXAURIJNNUWKNGMXNZYDXAUQGUWLUMMXOXPXQZUWMYEXQZVKYQY
+        SUVJUVPXRZVKYQYSUVJUVPXSZVKYQYSUVJUVPXTZUVQTSEGYPUVSKMNYRQRUGUQUVQTSDEG
+        YPUVLKMYRQRUGVKUVKUVMUVOYAZUUMUVQUIVRZUVLGVMUVSGVMZUVQUUQUWTCUVLGUUOUVL
+        WKUUPUVSGUUOUVLDWJWLUJWMWNZWOYBUVQTSEGYRUVRKMNUVIQRUGUQUVQTSDEGYRUVNKMU
+        VIQRUGVKUVKUVMUVOYCZUWSUVNGVMUVRGVMZUVQUUQUXCCUVNGUUOUVNWKUUPUVRGUUOUVN
+        DWJWLUJWMWNZWOYBYFUVQUWCUVRUWDUVSUWGUWAUVQUWEUVTUWFUVIHUVQUUBYPUUCYRUVQ
+        YQUURUWOUUSWRUVQYSUUTUWPUVAWRYGUVQUVJUWFUVIWKUWQEUVIWQWRWSUVQABDEYRUVNK
+        OUVIUCUHUWPUWQUXBXGUVQABDEYPUVLKOYRUCUHUWOUWPUWRXGYHUVQUWJUVNUVLXKZDWEZ
+        UWBUVQUWJUXEUWIWEUXFUVQUWHUXEUWIUVQUAEHYPIJUVLUVNNPYRUVIUBURUSUWNUWOUWP
+        UWQUVQTSEGYPUVLKMNYRQRUGUQUWRYBUVQTSEGYRUVNKMNUVIQRUGUQUXBYBYFXEUVQABDE
+        YPUXEKOUVIUCUHUWOUWQUVQTSEGYPUVLUVNKMYRUVIQRUGUWRUXBUOYIXGXMUVQTSDEGYPU
+        VLUVNKMYRUVIQRUGUOUWRUXBUWSUXAUXDYJXMYKYLYM $.
+    $}
+
+    $d C f g p q m n $.  $d B r s u v a t x y z m n $.  $d J m n $.
+    $d S m n $.  $d X m n $.  $d Y m n $.  $d K m n $.  $d H m n $.
+    $d M m n $.  $d I m n $.  $d L m n $.  $d A m n $.  $d .x. m n $.
+    $( A map fixing the identity value and preserving the parallel-arrow class
+       induces an endofunctor fixing every object.  Category membership and the
+       hom construction suffice: every composable pair contains an identity.
+       (Contributed by Zhi Wang, 14-Sep-2026.)  (Revised by Zhi Wang,
+       17-Sep-2026.) $)
+    parmapfunc $p |- ( _I |` B ) ( C Func C ) L $=
+      ( vx vy vz vm vn cid cres cfunc wbr wtru cco cfv ccid eqid ccat wcel wf1o
+      co a1i wf f1oi f1of mp1i cxp fnmpompt cv wa simprl simprr ovmpomptd simpr
+      wfn wceq weq fveq2 eleq1d vtoclri adantl parmapcl fmpt3d fvresi syl feq3d
+      oveq12d mpbird paridval fveq2d fvexi parhomid fvmpomptd eqtrd 3eqtr4a w3a
+      eqcomi cif cop fvif simp3l simp3r parcoval2 simp21 simp23 simp22 eqeltrrd
+      catcocl opeq12d oveq123d isfuncd mptru ) UHEUIZJFFUJUTUKULUCUDUEEEFFUMUNZ
+      FUOUNZUFUGFXLJHXNHXMPPQQXNUPZXOXMUPZXPFUQURZULRVAZXREEXLUSEEXLVBULEVCEEXL
+      VDVEJEEVFVNULABDEHJOTVGVAULUCVHZEURZUDVHZEURZVIVIZXSYAHUTZXSXLUNZYAXLUNZH
+      UTZXSYAJUTZVBYDYDYHVBYCOYDOVHZDUNZYDYHYCABDEXSHJYAOTULXTYBVJZULXTYBVKZVLY
+      CYIYDURZVIZNMDEGXSYIHIYAKLSYCYMVMIDUNZIVOZYNUAVAYIGURYJGURZYNCVHZDUNZGURZ
+      YQCYIGCOVPYSYJGYRYIDVQVRUBVSVTWAWBYCYGYDYHYDYCYEXSYFYAHYCXTYEXSVOZYKEXSWC
+      ZWDYCYBYFYAVOZYLEYAWCZWDWFWEWGULXTVIZYOIXSXNUNZXSXSJUTZUNZYEXNUNZUAUUEUUH
+      IUUGUNYOUUEUUFIUUGUUENMEFGXSHIKLPQSXQUUERVAULXTVMZWHZWIUUEABDEXSIHJXSOTUU
+      JUUJUUENMEGXSHIKLSIIDYOIUAWPWJUUJWKWLWMUUEUUIUUFIUUEYEXSXNXTUUAULUUBVTWIU
+      UKWMWNULXTYBUEVHZEURZWOZUFVHZYDURZUGVHZYAUULHUTURZVIZWOZUCUDVPZUUQUUOWQZD
+      UNZUVAUUQDUNZUUODUNZWQZUUQUUOXSYAWRZUULXMUTZUTZXSUULJUTZUNZUUQYAUULJUTUNZ
+      UUOYHUNZYEYFWRZUULXLUNZXMUTZUTZUVAUUQUUODWSUUTUVKUVBUVJUNUVCUUTUVIUVBUVJU
+      UTNMEFGXMXSUUOUUQHIYAUULKLPQSXQUUTRVAZXPULUUNUUPUURWTZULUUNUUPUURXAZXBZWI
+      UUTABDEXSUVBHJUULOTULXTYBUUMUUSXCZULXTYBUUMUUSXDZUUTUVIUVBXSUULHUTUWAUUTE
+      FXMUUOUUQHXSYAUULPQXPUVRUWBULXTYBUUMUUSXEZUWCUVSUVTXGXFWLWMUUTUVQUVDUVEUV
+      HUTUVFUUTUVLUVDUVMUVEUVPUVHUUTUVNUVGUVOUULXMUUTYEXSYFYAUUTXTUUAUWBUUBWDUU
+      TYBUUCUWDUUDWDXHUUTUUMUVOUULVOUWCEUULWCWDWFUUTABDEYAUUQHJUULOTUWDUWCUVTWL
+      UUTABDEXSUUOHJYAOTUWBUWDUVSWLXIUUTNMEFGXMXSUVEUVDHIYAUULKLPQSUVRXPUUTNMDE
+      GXSUUOHIYAKLSUVSYPUUTUAVAZUUOGURUVEGURZUUTYTUWFCUUOGCUFVPYSUVEGYRUUODVQVR
+      UBVSVTWAUUTNMDEGYAUUQHIUULKLSUVTUWEUUQGURUVDGURZUUTYTUWGCUUQGCUGVPYSUVDGY
+      RUUQDVQVRUBVSVTWAXBWMWNXJXK $.
+  $}
+
+  ${
+    parswapval.a $e |- A = ( b e. 3o |->
+      if ( b = 2o , 2o , if ( b = (/) , 1o , (/) ) ) ) $.
+    ${
+      $d U b $.
+      $( Evaluate the transposition of the two parallel-arrow values.
+         (Contributed by Zhi Wang, 14-Sep-2026.) $)
+      parswapval $p |- ( U e. 3o ->
+        ( A ` U ) = if ( U = 2o , 2o , if ( U = (/) , 1o , (/) ) ) ) $=
+        ( cv c2o wceq c1o cif c3o eqeq1 ifbid ifbieq2d 2oex 1oex 0ex ifex fvmpt
+        c0 ) CBCEZFGZFTSGZHSIZIBFGZFBSGZHSIZIJATBGZUAUDUCUFFTBFKUGUBUEHSTBSKLMD
+        UDFUFNUEHSOPQQR $.
+    $}
+
+    $d b t $.  $d A t $.
+    $( The concrete transposition fixes the identity, preserves the parallel
+       arrows, and sends the empty-set arrow to the ordinal-one arrow.
+       (Contributed by Zhi Wang, 14-Sep-2026.) $)
+    parswapprop $p |- ( ( A ` 2o ) = 2o /\
+      A. t e. 2o ( A ` t ) e. 2o /\ ( A ` (/) ) = 1o ) $=
+      ( c2o cfv wceq wcel c0 c1o cif c3o df-3o eleqtrri parswapval eqid iftruei
+      ax-mp elelsuc wn cv wral csuc sucid eqtri eleqtrrdi syl 2on onirri nelneq
+      2oex mpan2 iffalsed eqtrd cpr 1oelpr df2o3 0ex prid1 ifcli eqeltrdi mp2an
+      rgen iffalsei 3eqtri 3pm3.2i ) EBFZEGAUAZBFZEHZAEUBIBFZJGVGEEGZEEIGJIKZKZ
+      EELHVGVNGEEUCZLEUKUDMNBECDORVLEVMEPQUEVJAEVHEHZVIVHIGZJIKZEVPVIVHEGZEVRKZ
+      VRVPVHLHVIVTGVPVHVOLVHESMUFBVHCDOUGVPVSEVRVPEEHTZVSTEUHUIZVHEEUJULUMUNVQJ
+      IEJIJUOZEUPUQNIWCEIJURUSUQNZUTVAVCVKIEGZEIIGZJIKZKZWGJILHVKWHGIVOLIEHZIVO
+      HWDIESRMNBICDORWEEWGWIWAWETWDWBIEEUJVBVDWFJIIPQVEVF $.
+  $}
+
+  ${
+    $d m n r s p q u v a b t x y z w f g k i j $.
+    $d A m n r s p q u v a t x y z i j $.  $d C x y z w f g k i j t $.
+    $d L t x y z i j $.
+    parswapfunc.c $e |- C = { <. ( Base ` ndx ) , 2o >. ,
+      <. ( Hom ` ndx ) , ( m e. 2o , n e. 2o |->
+        if ( m = n , { 2o } , if ( ( m = (/) /\ n = 1o ) , 2o , (/) ) ) ) >. ,
+      <. ( comp ` ndx ) , ( p e. ( 2o X. 2o ) , q e. 2o |->
+        ( r e. 3o , s e. 3o |-> ( r i^i s ) ) ) >. } $.
+    parswapfunc.a $e |- A = ( b e. 3o |->
+      if ( b = 2o , 2o , if ( b = (/) , 1o , (/) ) ) ) $.
+    parswapfunc.l $e |- L = ( u e. 2o , v e. 2o |->
+      ( a e. ( u ( m e. 2o , n e. 2o |->
+          if ( m = n , { 2o } , if ( ( m = (/) /\ n = 1o ) , 2o , (/) ) ) ) v )
+        |-> ( A ` a ) ) ) $.
+    $( The explicit exchange of the two parallel nonidentity arrows is an
+       endofunctor with identity object function.  (Contributed by Zhi Wang,
+       14-Sep-2026.) $)
+    parswapfunc $p |- <. ( _I |` 2o ) , L >. e. ( C Func C ) $=
+      ( vt c2o wceq cfv cid cres cfunc co wbr cop wcel cv csn c0 c1o wa cif cbs
+      cmpo chom cxp c3o cin par2str simp1i simp2i ccat ccid cmpt par2catid eqid
+      cco simpli wral parswapprop parmapfunc df-br mpbi ) UARUBZGDDUCUDZUEVOGUF
+      VPUGABQCRDREFRREUHZFUHZSRUIVQUJSVRUKSULRUJUMUMUOZRGUJUKFELRDUNTSZVSDUPTSZ
+      KJRRUQRIHURURIUHHUHUSUOUODVHTSZDEFHIJKNUTZVAVTWAWBWCVBDVCUGDVDTQRRVESQDEF
+      HIJKNVFVIVSVGPRCTRSZQUHCTRUGQRVJZUJCTUKSZQCMOVKZVAWDWEWFWGVBVLVOGVPVMVN
+      $.
+  $}
+
+  ${
+    $d m n $.
+    par2hom.h $e |- H = ( m e. 2o , n e. 2o |->
+      if ( m = n , { 2o } , if ( ( m = (/) /\ n = 1o ) , 2o , (/) ) ) ) $.
+    $( The four hom-sets of the explicit two-object parallel-arrow category.
+       (Contributed by Zhi Wang, 14-Sep-2026.) $)
+    par2hom $p |- ( ( (/) H (/) ) = { 2o } /\ ( 1o H 1o ) = { 2o } /\
+      ( ( (/) H 1o ) = 2o /\ ( 1o H (/) ) = (/) ) ) $=
+      ( c0 co c2o wceq c1o wa cif wcel df2o3 eleqtrri 2oex parhomval mp2an eqid
+      iftruei iffalsei csn cpr 0ex prid1 eqtri 1oelpr nesymi pm3.2i 3eqtri neii
+      1n0 intnanr 3pm3.2i ) EECFZGUAZHIICFZUOHEICFZGHZIECFZEHZJUNEEHZUOVAEIHZJG
+      EKZKZUOEGLZVEUNVDHEEIUBZGEIUCUDMNZVGABGGECGEEIDOPQVAUOVCERZSUEUPIIHZUOIEH
+      ZVIJGEKZKZUOIGLZVMUPVLHIVFGUFMNZVNABGGICGIEIDOPQVIUOVKIRZSUEURUTUQVBUOVAV
+      IJZGEKZKZVQGVEVMUQVRHVGVNABGGECGIEIDOPQVBUOVQIEUKUGTVPGEVAVIVHVOUHSUIUSVJ
+      UOVJVBJZGEKZKZVTEVMVEUSWAHVNVGABGGICGEEIDOPQVJUOVTIEUKUJZTVSGEVJVBWBULTUI
+      UHUM $.
+  $}
+
+  ${
+    $d C x y z w f g k $.  $d E x y z w f g k $.  $d F x y z w f g k $.
+    $d G x y z w f g k $.  $d L x y z w f g k $.  $d A x y z w f g k $.
+    $d m n r s p q x y z w f g k $.
+    par2diag.c $e |- C = ( SetCat ` 1o ) $.
+    par2diag.e $e |- E = { <. ( Base ` ndx ) , 2o >. ,
+      <. ( Hom ` ndx ) , ( m e. 2o , n e. 2o |->
+        if ( m = n , { 2o } , if ( ( m = (/) /\ n = 1o ) , 2o , (/) ) ) ) >. ,
+      <. ( comp ` ndx ) , ( p e. ( 2o X. 2o ) , q e. 2o |->
+        ( r e. 3o , s e. 3o |-> ( r i^i s ) ) ) >. } $.
+    par2diag.l $e |- L = ( E DiagFunc C ) $.
+    par2diag.f $e |- F = ( ( 1st ` L ) ` (/) ) $.
+    par2diag.g $e |- G = ( ( 1st ` L ) ` 1o ) $.
+    par2diag.a $e |- A = ( 1o X. { (/) } ) $.
+    $( Two constant functors into the concrete parallel-arrow category and a
+       natural transformation whose component is the empty-set arrow.
+       (Contributed by Zhi Wang, 14-Sep-2026.) $)
+    par2diag $p |- ( ( F e. ( C Func E ) /\ G e. ( C Func E ) ) /\
+      ( A e. ( F ( C Nat E ) G ) /\ ( A ` (/) ) = (/) ) /\
+      ( ( ( 1st ` F ) ` (/) ) = (/) /\ ( ( 1st ` G ) ` (/) ) = 1o ) ) $=
+      ( c0 c1o vy cfunc co wcel cnat cfv wceq c1st w3a wtru ccat ccid par2catid
+      c2o cmpt simpli a1i ctermc csetc setc1oterm eqeltri termccatd cbs weq csn
+      wa cv cif cmpo chom cxp c3o cin cco par2str simp1i cpr 0ex prid1 eleqtrri
+      df2o3 diag1cl 1oelpr setc1obas simp2i eqid par2hom simp3i diag2cl oveq12i
+      jca 3eltr4g fveq1i 0lt1o fvconst2 ax-mp eqtri jctir diag11 3jca mptru ) F
+      BEUBUCZUDZGXBUDZVFZAFGBEUEUCZUCZUDZSAUFZSUGZVFZSFUHUFUFSUGZSGUHUFUFTUGZVF
+      ZUIUJXEXKXNUJXCXDUJUNEBFHSOEUKUDZUJXOEULUFUAUNUNUOUGUAECDIJKLNUMUPUQZUJBB
+      URUDUJBTUSUFURMUTVAUQVBZUNEVCUFUGZCDUNUNCDVDUNVEZCVGSUGDVGTUGVFUNSVHVHVIZ
+      EVJUFUGZLKUNUNVKUNJIVLVLJVGIVGVMVIVIEVNUFUGZECDIJKLNVOZVPZSUNUDUJSSTVQZUN
+      STVRVSWAVTZUQZPWBUJUNEBGHTOXPXQYDTUNUDUJTYEUNWCWAVTUQZQWBWKUJXHXJUJTSVEVK
+      ZSHUHUFZUFZTYJUFZXFUCAXGUJUNTEBSXTHXFSTOYDBMWDZXRYAYBYCWEXPXQYGYHSSTXTUCZ
+      UDUJSUNYNYFYNUNUGZTSXTUCSUGZSSXTUCXSUGTTXTUCXSUGYOYPVFCDXTXTWFWGWHUPVTUQX
+      FWFWIRFYKGYLXFPQWJWLXISYIUFZSSAYIRWMSTUDZYQSUGWNTSSVRWOWPWQWRUJXLXMUJUNTE
+      BFHSSOXPXQYDYGPYMYRUJWNUQZWSUJUNTEBGHTSOXPXQYDYHQYMYSWSWKWTXA $.
+  $}
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Nonuniqueness of the morphism part of functor composition
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  ${
+    $d m n r s p q u v a b x y z w f g k i j t h l d e c $.
+    $d C x y z w f g k i j t h l d e c $.
+    $d E x y z w f g k i j t h l d e c $.
+    $d Q x y z w f g k i j t h l d e c $.
+    $d L x y z w f g k i j t h l d e c $.
+    $d T x y z w f g k i j t h l d e c $.
+    fuconuniq2.c $e |- C = ( SetCat ` 1o ) $.
+    fuconuniq2.e $e |- E = { <. ( Base ` ndx ) , 2o >. ,
+      <. ( Hom ` ndx ) , ( m e. 2o , n e. 2o |->
+        if ( m = n , { 2o } , if ( ( m = (/) /\ n = 1o ) , 2o , (/) ) ) ) >. ,
+      <. ( comp ` ndx ) , ( p e. ( 2o X. 2o ) , q e. 2o |->
+        ( r e. 3o , s e. 3o |-> ( r i^i s ) ) ) >. } $.
+    fuconuniq2.q $e |- Q = ( C FuncCat E ) $.
+    fuconuniq2.l $e |- L = ( <. C , C >. o.F E ) $.
+    ${
+      $d A x y z w f g k i j t h l d e c $.
+      $d M x y z w f g k i j t h l d e c $.
+      $d S x y z w f g k i j t h l d e c $.
+      $d R x y z w f g k i j t h l d e c $.
+      $d K x y z w f g k i j t h l d e c $.
+      $d D x y z w f g k i j t h l d e c $.
+      $d F x y z w f g k i j t h l d e c $.
+      $d G x y z w f g k i j t h l d e c $.
+      $d .o. x y z w f g k i j t h l d e c $.  $d A m n r s p q u v a $.
+      fuconuniq.a $e |- A = ( b e. 3o |->
+        if ( b = 2o , 2o , if ( b = (/) , 1o , (/) ) ) ) $.
+      fuconuniq.m $e |- M = ( u e. 2o , v e. 2o |->
+        ( a e. ( u ( m e. 2o , n e. 2o |->
+            if ( m = n , { 2o } , if ( ( m = (/) /\ n = 1o ) , 2o , (/) ) ) ) v
+              )
+          |-> ( A ` a ) ) ) $.
+      fuconuniq.s $e |- S = <. ( _I |` 2o ) , M >. $.
+      fuconuniq.r $e |- R = ( E FuncCat E ) $.
+      fuconuniq.o $e |- .o. =
+        ( <. R , Q >. curryF ( <. C , E >. o.F E ) ) $.
+      fuconuniq.k $e |- K = ( ( 1st ` .o. ) ` S ) $.
+      ${
+        $d N x y z w f g k i j t h l d e c $.
+        fuconuniqlem.t $e |- T = ( ( C FuncCat E ) Xc. ( C FuncCat C ) ) $.
+        fuconuniqlem.d $e |- D = ( E DiagFunc C ) $.
+        fuconuniqlem.f $e |- F = ( ( 1st ` D ) ` (/) ) $.
+        fuconuniqlem.g $e |- G = ( ( 1st ` D ) ` 1o ) $.
+        fuconuniqlem.n $e |- N = ( 1o X. { (/) } ) $.
+        $( Lemma for ~ fuconuniq .  (Contributed by Zhi Wang, 14-Sep-2026.)
+           (New usage is discouraged.) $)
+        fuconuniqlem $p |-
+          ( ( 1st ` L ) ( T Func Q ) ( 2nd ` ( K o.func L ) ) /\
+            ( 2nd ` ( K o.func L ) ) =/= ( 2nd ` L ) ) $=
+          ( vy vx vt c1st cfv ccofu co c2nd cfunc wbr wa wtru ctermc wcel csetc
+          wne c1o setc1oterm eqeltri a1i termccatd ccat ccid c2o cmpt par2catid
+          wceq simpli cid cres cop parswapfunc cv cvv mptresid mptex csn c0 cif
+          2oex cmpo op1std mp1i termcpostfix simpld simprd fucoaltfunc par2diag
+          mpoex simp1i simpri simp2i cbs 0lt1o setc1obas eleqtri postcof2 mptru
+          cnat simp3i ax-mp oveq123i fveq12i eqtri cpr 0ex prid1 df2o3 eleqtrri
+          op2ndd 1oelpr eqid par2hom fvmpomptd wral parswapprop 3eqtri neeqtrri
+          1n0 eqnetri fveq1 necon3i fucoaltne jca ) PVDVEOPVFVGVHVEZIFVIVGVJZUU
+          EPVHVEVPZVKVLUUFUUGVLDDFILOPUHUPUIVLDDVMVNVLDVQVOVEVMUFVRVSVTZWAZUUIL
+          WBVNZVLUUJLWCVEVAWDWDWEWGVALJKTUAUBUCUGWFWHVTZVLOFFVIVGVNZOVDVEWIDLVI
+          VGZWJWGZVLWDDLFGHOSUUHUHUMUNUOHLLVIVGZVNVLHWIWDWJZQWKZUUOULABCLJKQTUA
+          UBUCUDUEUGUJUKWLVSVTZHUUQWGZHVDVEUUPWGVLULUUPQHUUPVBWDVBWMZWEWNVBWDWO
+          VBWDUUTWTWPVSZQBAWDWDUDBWMAWMJKWDWDJWMZKWMZWGWDWQZUVBWRWGUVCVQWGVKWDW
+          RWSWSXAZVGUDWMCVEWEZXAWNUKBAWDWDUVFWTWTXIVSZXBXCXDZXEZVLUULUUNUVHXFXG
+          VLRDFLMNOPUHUIUUIUUKUVIMUUMVNZVLUVJNUUMVNZUVJUVKVKZRMNDLXSVGVGVNZWRRV
+          EZWRWGZVKZWRMVDVEVEZWRWGZWRNVDVEVEZVQWGZVKZRDJKLMNETUAUBUCUFUGUQURUSU
+          TXHZXJZWHVTZUVKVLUVJUVKUWCXKVTZUVMVLUVMUVOUVLUVPUWAUWBXLZWHVTZWRRMNOV
+          HVEVGVEZVEZUVNVPUWHRVPVLUWIWRUVNUWIVQWRUWIWRWRVQQVGZVEZWRCVEZVQUWIUVN
+          UVQUVSHVHVEZVGZVEZUWKUWIUWOWGVLRDLFGLHMNOWRSUHUMUNUURUUIUOUWDUWEUWGWR
+          DXMVEZVNVLWRVQUWPXNDUFXOXPVTXQXRUVNWRUWNUWJUVQUVSWRVQUWMQUVRUVTUVLUVP
+          UWAUWBXTZWHUVRUVTUWQXKUUSUWMQWGULUUPQHUVAUVGYJYAYBUVMUVOUWFXKZYCYDUWK
+          UWLWGVLABCWDWRWRUVEQVQUDUKWRWDVNVLWRWRVQYEZWDWRVQYFYGYHYIZVTVQWDVNVLV
+          QUWSWDYKYHYIVTWRWRVQUVEVGZVNVLWRWDUXAUWTUXAWDWGZVQWRUVEVGWRWGZWRWRUVE
+          VGUVDWGVQVQUVEVGUVDWGUXBUXCVKJKUVEUVEYLYMXTWHYIVTYNXRWDCVEWDWGVCWMCVE
+          WDVNVCWDYOUWLVQWGVCCUEUJYPXTYQYSYTUWRYRUWHRUWIUVNWRUWHRUUAUUBXCUUCUUD
+          XR $.
+      $}
+
+      ${
+        fuconuniq.t $e |- T = ( ( C FuncCat E ) Xc. ( C FuncCat C ) ) $.
+        $( The arrow map ` A ` fixes the identity arrow ` 2o ` and exchanges
+           the two nonidentity parallel arrows ` (/) ` and ` 1o ` .  It gives a
+           concrete alternative to functor composition with the same object
+           function and a different morphism function.  All hypotheses name
+           explicit constructed sets; no category or functor existence is
+           assumed.  (Contributed by Zhi Wang, 14-Sep-2026.)  (Revised by Zhi
+           Wang, 17-Sep-2026.) $)
+        fuconuniq $p |- ( ( 1st ` L ) ( T Func Q ) ( 2nd ` ( K o.func L ) )
+          /\
+          ( 2nd ` ( K o.func L ) ) =/= ( 2nd ` L ) ) $=
+          ( cdiag co c0 c1st cfv c1o csn cxp eqid fuconuniqlem ) ABCDKDUMUNZEFG
+          HIJKUOVCUPUQZUQZURVDUQZLMNURUOUSUTZOPQRSTUAUBUCUDUEUFUGUHUIUJUKULVCVA
+          VEVAVFVAVGVAVB $.
+      $}
+
+      $d N x y z w f g k i j t h l d e c $.
+      fuconuniqvals.d $e |- D = ( E DiagFunc C ) $.
+      fuconuniqvals.f $e |- F = ( ( 1st ` D ) ` (/) ) $.
+      fuconuniqvals.g $e |- G = ( ( 1st ` D ) ` 1o ) $.
+      fuconuniqvals.n $e |- N = ( 1o X. { (/) } ) $.
+      ${
+        fuconuniqvalslem.t $e |- T = ( ( C FuncCat E ) Xc. ( C FuncCat C ) ) $.
+        $( Lemma for ~ fuconuniqvals .  (Contributed by Zhi Wang, 14-Sep-2026.)
+           (New usage is discouraged.) $)
+        fuconuniqvalslem $p |- ( ( ( N ( <. F , ( idFunc ` C ) >. ( 2nd ` L )
+                   <. G , ( idFunc ` C ) >. )
+              ( ( Id ` ( C FuncCat C ) ) ` ( idFunc ` C ) ) ) ` (/) ) = (/) /\
+          ( ( N ( <. F , ( idFunc ` C ) >. ( 2nd ` ( K o.func L ) )
+                   <. G , ( idFunc ` C ) >. )
+              ( ( Id ` ( C FuncCat C ) ) ` ( idFunc ` C ) ) ) ` (/) ) = 1o ) $=
+          ( vy vx vt c0 cidfu cfv cfuc ccid cop c2nd wceq ccofu c1o wtru eqcomi
+          co cfuco fveq2i a1i eqid wcel csetc setc1oterm eqeltri termccatd cnat
+          ctermc cfunc c1st par2diag simp2i simpli fucoridid mptru fveq1i eqtri
+          simpri ccat c2o cmpt par2catid cid cres parswapfunc cvv mptresid 2oex
+          wa cv mptex weq csn cmpo mpoex op1std mp1i termcpostfix simpld simp1i
+          cif fucoaltval 0lt1o setc1obas eleqtri postcof2 simp3i ax-mp oveq123i
+          cbs op2ndd fveq12i cpr 0ex prid1 df2o3 eleqtrri 1oelpr fvmpomptd wral
+          par2hom parswapprop 3eqtri pm3.2i ) VDRDVEVFZDDVGVPZVHVFZVFZMUUDVIZNU
+          UDVIZPVJVFZVPVPZVFZVDVKVDRUUGUUHUUIOPVLVPVJVFVPVPZVFZVMVKUULVDRVFZVDV
+          DUUKRUUKRVKVNRDUUJUUELMNUUDUUFDDVILVQVPZVJVFUUJVKVNUUPPVJPUUPUIVOVRVS
+          UUEVTUUFVTZUUDVTZVNDDWGWAVNDVMWBVFWGUFWCWDVSZWEZRMNDLWFVPVPWAZVNUVAUU
+          OVDVKZMDLWHVPZWAZNUVCWAZXHZUVAUVBXHZVDMWIVFVFZVDVKZVDNWIVFVFZVMVKZXHZ
+          RDJKLMNETUAUBUCUFUGUPUQURUSWJZWKZWLVSZWMWNWOUVAUVBUVNWQZWPUUNVDRMNOVJ
+          VFVPVFZVFZVMVDUUMUVQUUMUVQVKVNRDFLMNUUDUUFOPUHUIUUTLWRWAZVNUVSLVHVFVA
+          WSWSWTVKVALJKTUAUBUCUGXAWLVSVNOFFWHVPWAOWIVFXBUVCXCVKVNWSDLFGHOSUUSUH
+          UMUNUOHLLWHVPZWAVNHXBWSXCZQVIZUVTULABCLJKQTUAUBUCUDUEUGUJUKXDWDVSZHUW
+          BVKZHWIVFUWAVKVNULUWAQHUWAVBWSVBXIZWTXEVBWSXFVBWSUWEXGXJWDZQBAWSWSUDB
+          XIAXIJKWSWSJKXKWSXLZJXIVDVKKXIVMVKXHWSVDXTXTXMZVPUDXICVFWTZXMXEUKBAWS
+          WSUWIXGXGXNWDZXOXPXQXRUVDVNUVDUVEUVFUVGUVLUVMXSZWLVSZUVEVNUVDUVEUWKWQ
+          VSZUVOUURUUQYAWNWOUVRVDVDVMQVPZVFZVDCVFZVMUVRUUOUVHUVJHVJVFZVPZVFZUWO
+          UVRUWSVKVNRDLFGLHMNOVDSUHUMUNUWCUUTUOUWLUWMUVOVDDYIVFZWAVNVDVMUWTYBDU
+          FYCYDVSYEWNUUOVDUWRUWNUVHUVJVDVMUWQQUVIUVKUVFUVGUVLUVMYFZWLUVIUVKUXAW
+          QUWDUWQQVKULUWAQHUWFUWJYJYGYHUVPYKWPUWOUWPVKVNABCWSVDVDUWHQVMUDUKVDWS
+          WAVNVDVDVMYLZWSVDVMYMYNYOYPZVSVMWSWAVNVMUXBWSYQYOYPVSVDVDVMUWHVPZWAVN
+          VDWSUXDUXCUXDWSVKZVMVDUWHVPVDVKZVDVDUWHVPUWGVKVMVMUWHVPUWGVKUXEUXFXHJ
+          KUWHUWHVTYTYFWLYPVSYRWNWSCVFWSVKVCXICVFWSWAVCWSYSUWPVMVKVCCUEUJUUAYFU
+          UBWPUUC $.
+      $}
+
+      $( At the same natural-transformation/identity input, the canonical and
+         alternative morphism maps give respectively ` (/) ` and ` 1o ` at the
+         unique source object ` (/) ` .  (Contributed by Zhi Wang,
+         14-Sep-2026.)  (Revised by Zhi Wang, 17-Sep-2026.) $)
+      fuconuniqvals $p |- ( ( ( N ( <. F , ( idFunc ` C ) >. ( 2nd ` L )
+                 <. G , ( idFunc ` C ) >. )
+            ( ( Id ` ( C FuncCat C ) ) ` ( idFunc ` C ) ) ) ` (/) ) = (/) /\
+        ( ( N ( <. F , ( idFunc ` C ) >. ( 2nd ` ( K o.func L ) )
+                 <. G , ( idFunc ` C ) >. )
+            ( ( Id ` ( C FuncCat C ) ) ` ( idFunc ` C ) ) ) ` (/) ) = 1o ) $=
+        ( cfuc co cxpc eqid fuconuniqvalslem ) ABCDEFGHDKUSUTDDUSUTVAUTZIJKLMNO
+        PQRSTUAUBUCUDUEUFUGUHUIUJUKULUMUNUOUPUQURVDVBVC $.
+    $}
+
+    fuconuniq2.t $e |- T = ( ( C FuncCat E ) Xc. ( C FuncCat C ) ) $.
+    $( The concrete parallel-arrow category supplies a morphism function
+       different from canonical functor composition, with its object function
+       fixed exactly.  See ~ par2cat and ~ par2hom for the category and its
+       four hom-sets.  (Contributed by Zhi Wang, 14-Sep-2026.) $)
+    fuconuniq2 $p |- E. z
+      ( ( 1st ` L ) ( T Func Q ) z /\ z =/= ( 2nd ` L ) ) $=
+      ( cfv cv c2o vu vv va vb c1st cfunc co wbr c2nd wne cid cres weq csn wceq
+      wa c0 c1o cif cmpo c3o cmpt cop cfuc cfuco ccurf ccofu fvex breq2 anbi12d
+      neeq1 eqid fuconuniq ceqsexv2d ) HUERZASZDCUFUGZUHZVPHUIRZUJZUPVOUKTULUAU
+      BTTUCUASUBSEFTTEFUMTUNESUQUOFSURUOUPTUQUSUSUTUGUCSUDVAUDSZTUOTWAUQUOURUQU
+      SUSVBZRVBUTZVCZGGVDUGZCVCBGVCGVEUGVFUGZUERRZHVGUGZUIRZVQUHZWIVSUJZUPAWIWH
+      UIVHVPWIUOVRWJVTWKVPWIVOVQVIVPWIVSVKVJUBUAWBBCWEWDDEFGWGHWCWFIJKLUCUDMNOP
+      WBVLWCVLWDVLWEVLWFVLWGVLQVMVN $.
+  $}
+
+  ${
+    $d m n r s p q u v a b x y z w f g k i j t h l d e c $.
+    $( The object function of functor composition does not in general determine
+       its morphism function, even when both source categories are the trivial
+       category.  The witness category is the explicit two-object,
+       two-parallel-arrow category of ~ par2cat .  (Contributed by Zhi Wang,
+       14-Sep-2026.) $)
+    fuconuniqex $p |- E. e e. Cat E. z
+      ( ( 1st ` ( <. ( SetCat ` 1o ) , ( SetCat ` 1o ) >. o.F e ) )
+        ( ( ( ( SetCat ` 1o ) FuncCat e ) Xc.
+            ( ( SetCat ` 1o ) FuncCat ( SetCat ` 1o ) ) ) Func
+          ( ( SetCat ` 1o ) FuncCat e ) ) z /\
+        z =/= ( 2nd ` ( <. ( SetCat ` 1o ) , ( SetCat ` 1o ) >. o.F e ) ) ) $=
+      ( vm vn vp vq vr vs cnx cfv c2o cop cv wceq wa cmpo ccat co cfuc eqid cbs
+      chom csn c1o cif cco cxp c3o cin ctp wcel csetc cfuco c1st cxpc cfunc wbr
+      c0 c2nd wne wex wrex par2cat fuconuniq2 oveq2 fveq2d oveq1d oveq12d eqidd
+      breq123d neeq2d anbi12d exbidv rspcev mp2an ) IUAJKLIUBJCDKKCMZDMZNKUCVPU
+      RNVQUDNOKURUEUEPLIUFJEFKKUGKGHUHUHGMHMUIPPLUJZQUKUDULJZVSLZVRUMRZUNJZAMZV
+      SVRSRZVSVSSRZUORZWDUPRZUQZWCWAUSJZUTZOZAVAZVTBMZUMRZUNJZWCVSWMSRZWEUORZWP
+      UPRZUQZWCWNUSJZUTZOZAVAZBQVBCDHGFEVCAVSWDWFCDVRWAHGFEVSTVRTWDTWATWFTVDXCW
+      LBVRQWMVRNZXBWKAXDWSWHXAWJXDWOWBWCWCWRWGXDWNWAUNWMVRVTUMVEZVFXDWQWFWPWDUP
+      XDWPWDWEUOWMVRVSSVEZVGXFVHXDWCVIVJXDWTWIWCXDWNWAUSXEVFVKVLVMVNVO $.
+  $}
+
+  ${
+    $d c d e z $.
+    $( There are categories for which the object function of functor
+       composition does not determine its morphism function.  Choose both
+       source categories to be the trivial category and apply ~ fuconuniqex .
+       The full compatibility conditions are given in ~ fucoisfunc ;
+       ~ fucoisfunc2 expands the natural-transformation component conditions.
+       (Contributed by Zhi Wang, 14-Sep-2026.) $)
+    fuconuniqex2 $p |- E. c e. Cat E. d e. Cat E. e e. Cat E. z
+      ( ( 1st ` ( <. c , d >. o.F e ) )
+        ( ( ( d FuncCat e ) Xc. ( c FuncCat d ) ) Func ( c FuncCat e ) ) z /\
+        z =/= ( 2nd ` ( <. c , d >. o.F e ) ) ) $=
+      ( cfv ccat wcel cv cop cfuco co c1st cfuc cxpc wbr c2nd wne wrex fvoveq1d
+      cfunc c1o csetc wa wex ctermc cthinc setc1oterm thinccat mp2b fuconuniqex
+      termcthin opeq2 oveq1 oveq2 oveq12d oveq1d breq123d neeq2d anbi12d exbidv
+      wceq eqidd rexbidv rspcev mp2an opeq1 oveq2d 2rexbidv ) UAUBEZFGZVIDHZIZB
+      HZJKZLEZAHZVKVMMKZVIVKMKZNKZVIVMMKZTKZOZVPVNPEZQZUCZAUDZBFRZDFRZCHZVKIZVM
+      JKZLEZVPVQWIVKMKZNKZWIVMMKZTKZOZVPWKPEZQZUCZAUDZBFRDFRZCFRVIUEGVIUFGVJUGV
+      IUKVIUHUIZVJVIVIIZVMJKZLEZVPVTVIVIMKZNKZVTTKZOZVPXEPEZQZUCZAUDZBFRZWHXCAB
+      UJWGXODVIFVKVIVAZWFXNBFXPWEXMAXPWBXJWDXLXPVOXFVPVPWAXIXPVLXDVMLJVKVIVIULZ
+      SXPVSXHVTTXPVQVTVRXGNVKVIVMMUMVKVIVIMUNUOUPXPVPVBUQXPWCXKVPXPVLXDVMPJXQSU
+      RUSUTVCVDVEXBWHCVIFWIVIVAZXAWFDBFFXRWTWEAXRWQWBWSWDXRWLVOVPVPWPWAXRWJVLVM
+      LJWIVIVKVFZSXRWNVSWOVTTXRWMVRVQNWIVIVKMUMVGWIVIVMMUMUOXRVPVBUQXRWRWCVPXRW
+      JVLVMPJXSSURUSUTVHVDVE $.
   $}
 
 
