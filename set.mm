@@ -582194,6 +582194,25 @@ $)
     BCZUOBCZVAAPZARZUNUOQSUPBCUKVAUTGUQNUNUOVDVEUAUPUSAUBUCUDTUEUMUQUNACZURUKUQ
     VFURGUJZULVBVCUKVGVDVEUNUOAUFUGTUHUI $.
 
+  ${
+    $( Lemma for ~ jltaleph .  (Contributed by BTernaryTau, 16-Oct-2026.) $)
+    jltalephlem $p |- ( ( C e. 9o /\ _om ~<_ ( _J0 ` <. A , B >. ) ) ->
+        ( ( 9o .o ( _J0 ` <. A , B >. ) ) +o C ) ~~ ( _J0 ` <. A , B >. ) ) $=
+      ( c9o wcel com ccj0 cdom wbr wa cen cxp con0 9on cr0 cep mp2b 9onn entr
+      co cop cfv comu coa wiso wf1o j0iso isof1o 0elon f0cli omxpen mp2an elexi
+      wf f1of fvex xpcomen entri cfn nnfi fict domtr mpan c0 wne c8o csuc df-9o
+      nsuceq0 eqnetri ccrd cdm onenon ax-mp infxpabs mpanl1 mpdan sylancr ensym
+      mpanr1 domentr sylan2 cdju omcl oneli simpr elnn mpan2 3syl sylan mp3an2i
+      onadju infdjuabs syl2an2r adantl syl2anc ) CDEZFABUAZGUBZHIZJDWSUCTZCUDTZ
+      XAKIZXAWSKIZXBWSKIWTWQFXAHIZXCWTXDXEWTXAWSDLZKIXFWSKIZXDXADWSLZXFDMEZWSME
+      ZXAXHKINMMLZMWRGXKMOPGUEXKMGUFXKMGUNUGXKMOPGUHXKMGUOQUIUJZDWSUKULDWSDFRUM
+      WRGUPUQURWTDWSHIZXGDFHIZWTXMDFEZDUSEXNRDUTDVAQDFWSVBVCWTDVDVEZXMXGDVFVGVD
+      VHVFVIVJWSVKVLZEZWTXPXMJXGXJXRXLWSVMVNWSDVOVPVTVQXAXFWSSVRZXDWTWSXAKIXEXA
+      WSVSFWSXAWAWBVQWQXBXACWCZKIZXEXTXAKIZXCWQXAMEZCMEYAXIXJYCNXLDWSWDULZDCNWE
+      XACWLVRXAXQEZWQXEJXECXAHIZYBYCYEYDXAVMVNWQXEWFWQCFHIZXEYFWQCFEZCUSEYGWQXO
+      YHRCDWGWHCUTCVAWICFXAVBWJXACWMWKXBXTXASWNWBWTXDWQXSWOXBXAWSSWP $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
