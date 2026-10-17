@@ -577294,7 +577294,7 @@ $)
 
   ${
     $d A x y $.
-    reu6.1 $e |- F/ y ph $.
+    reu6f.1 $e |- F/ y ph $.
     $( Version of ~ reu6 with disjoint variable condition replaced by
        nonfreeness hypothesis.  (Contributed by BTernaryTau, 29-Sep-2026.) $)
     reu6f $p |- ( E! x e. A ph <-> E. y e. A A. x e. A ( ph <-> x = y ) ) $=
