@@ -67653,6 +67653,17 @@ $)
   $}
 
   ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( Set exponentiation is inhabited if the base is inhabited.  (Contributed
+       by Jim Kingdon, 13-Oct-2026.) $)
+    mapm $p |- ( ( A e. V /\ B e. W /\ C e. A ) -> E. x x e. ( A ^m B ) ) $=
+      ( wcel w3a csn cxp cmap co cv wex wf fconstg 3ad2ant3 simp3 snssd fssd
+      simp1 simp2 elmapd mpbird elex2 syl ) BEGZCFGZDBGZHZCDIZJZBCKLZGZAMUMGANU
+      JUNCBULOUJCUKBULUIUGCUKULOUHCDBPQUJDBUGUHUIRSTUJBCULEFUGUHUIUAUGUHUIUBUCU
+      DAULUMUEUF $.
+  $}
+
+  ${
     $d A f y $.  $d B f y $.  $d f ph y $.
     mapsnd.1 $e |- ( ph -> A e. V ) $.
     mapsnd.2 $e |- ( ph -> B e. W ) $.
@@ -182262,10 +182273,14 @@ $(
 $)
 
   $c mPwSer $. $( Multivariate power series $)
+  $c mVar $. $( Multivariate power series variables $)
   $c mPoly $. $( Multivariate polynomial $)
 
   $( Multivariate power series. $)
   cmps $a class mPwSer $.
+
+  $( Multivariate power series variables. $)
+  cmvr $a class mVar $.
 
   $( Multivariate polynomials. $)
   cmpl $a class mPoly $.
@@ -182289,6 +182304,13 @@ $)
              ( ( d X. { x } ) oF ( .r ` r ) f ) ) >. ,
         <. ( TopSet ` ndx ) ,
              ( Xt_ ` ( d X. { ( TopOpen ` r ) } ) ) >. } ) ) $.
+
+    $( Define the generating elements of the power series algebra.
+       (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+    df-mvr $a |- mVar = ( i e. _V , r e. _V |-> ( x e. i |->
+      ( f e. { h e. ( NN0 ^m i ) | ( `' h " NN ) e. Fin } |->
+        if ( f = ( y e. i |-> if ( y = x , 1 , 0 ) ) ,
+             ( 1r ` r ) , ( 0g ` r ) ) ) ) ) $.
   $}
 
   ${
@@ -182471,6 +182493,50 @@ $)
       UJUMUKULUAUPCDAUGUHUI $.
 
     ${
+      $d F f $.  $d I f x $.
+      $( A finite index set gives a simpler expression for finite bags.
+         (Contributed by Jim Kingdon, 23-Nov-2025.) $)
+      psrbagfi $p |- ( I e. Fin -> D = ( NN0 ^m I ) ) $=
+        ( vx cfn wcel cv ccnv cn cima cn0 cmap wral wceq wdc ad2antlr ralrimiva
+        wa syl co crab cdm wss elmapi fdmd adantl simpl eqeltrd cnvimass a1i cz
+        cfv wf simpr eleqtrd ffvelcdmd nn0zd elnndc wfn elpreima mpbirand dcbid
+        wb elmapfn mpbird ssfidc syl3anc rabid2 sylibr eqtr4id ) CFGZABHZIJKZFG
+        ZBLCMUAZUBZVPDVLVOBVPNVPVQOVLVOBVPVLVMVPGZSZVMUCZFGVNVTUDZEHZVNGZPZEVTN
+        VOVSVTCFVRVTCOZVLVRCLVMVMLCUEZUFZUGVLVRUHUIWAVSVMJUJUKVSWDEVTVSWBVTGZSZ
+        WDWBVMUMZJGZPZWIWJULGWLWIWJWICLWBVMVRCLVMUNVLWHWFQWIWBVTCVSWHUOVRWEVLWH
+        WGQUPZUQURWJUSTWIWCWKWIWCWBCGZWKWMWIVMCUTZWCWNWKSVDVRWOVLWHVMLCVEQCWBJV
+        MVATVBVCVFREVTVNVGVHRVOBVPVIVJVK $.
+    $}
+
+    ${
+      $d A x $.  $d B x $.  $d D x $.  $d F f $.  $d I f $.  $d I x $.
+      $( Finite bags have decidable equality.  (Contributed by Jim Kingdon,
+         11-Oct-2026.) $)
+      psrbagdceq $p |- ( ( I e. Fin /\ A e. D /\ B e. D ) -> DECID A = B ) $=
+        ( vx wcel wceq wdc cfv wral cz cn0 wf eleqtrd elmapi ffvelcdmda syl2anc
+        syl cfn w3a cv simp1 wa cmap co simp2 psrbagfi 3ad2ant1 nn0zd ralrimiva
+        simp3 zdceq dcfi wfn wb elmapfn eqfnfv dcbid mpbird ) EUAHZACHZBCHZUBZA
+        BIZJGUCZAKZVGBKZIZGELZJZVEVBVJJZGELVLVBVCVDUDVEVMGEVEVGEHUEZVHMHVIMHVMV
+        NVHVEENVGAVEANEUFUGZHZENAOVEACVOVBVCVDUHVBVCCVOIVDCDEFUIUJZPZANEQTRUKVN
+        VIVEENVGBVEBVOHZENBOVEBCVOVBVCVDUMVQPZBNEQTRUKVHVIUNSULVJGEUOSVEVFVKVEA
+        EUPZBEUPZVFVKUQVEVPWAVRANEURTVEVSWBVTBNEURTGEABUSSUTVA $.
+    $}
+
+    ${
+      $d N f y $.  $d X f y $.  $d I y $.  $d V y $.
+      $( A bag containing one element is a finite bag.  (Contributed by Mario
+         Carneiro, 7-Jan-2015.)  (Revised by AV, 8-Jul-2019.) $)
+      snifpsrbagfi $p |- ( ( I e. Fin /\ N e. NN0 /\ X e. I )
+                         -> ( y e. I |-> if ( y = X , N , 0 ) ) e. D ) $=
+        ( cfn wcel cn0 w3a cv wceq cc0 cif cmpt cmap co a1i cvv simpl2 0nn0 wdc
+        wf simpl1 simpr simpl3 fidceq syl3anc ifcldcd fmpttd nn0ex simp1 elmapd
+        wa mpbird psrbagfi syl eleqtrrd ) DHIZEJIZFDIZKZADALZFMZENOZPZJDQRZBVCV
+        GVHIDJVGUDVCADVFJVCVDDIZUOZVEENJUTVAVBVIUANJIVJUBSVJUTVIVBVEUCUTVAVBVIU
+        EVCVIUFUTVAVBVIUGDVDFUHUIUJUKVCJDVGTHJTIVCULSUTVAVBUMZUNUPVCUTBVHMVKBCD
+        GUQURUS $.
+    $}
+
+    ${
       $d n f x $.  $d I x $.  $d V x $.
       $( The constant function equal to zero is a finite bag.  (Contributed by
          AV, 8-Jul-2019.) $)
@@ -182513,22 +182579,6 @@ $)
         ( cvv wcel cn0 wf cle cofr wbr w3a ccnv cn cima wss id psrbagf 3ad2ant1
         ffnd fndmexd psrbaglesuppg mpancom ) EGHZCAHZEIDJZDCKLMZNDOPQCOPQRUGUHU
         FUIUGECAUGSUGEICABCEFTUBUCUAABCDEGFUDUE $.
-    $}
-
-    ${
-      $d F f $.  $d I f x $.
-      $( A finite index set gives a simpler expression for finite bags.
-         (Contributed by Jim Kingdon, 23-Nov-2025.) $)
-      psrbagfi $p |- ( I e. Fin -> D = ( NN0 ^m I ) ) $=
-        ( vx cfn wcel cv ccnv cn cima cn0 cmap wral wceq wdc ad2antlr ralrimiva
-        wa syl co crab cdm wss elmapi fdmd adantl simpl eqeltrd cnvimass a1i cz
-        cfv wf simpr eleqtrd ffvelcdmd nn0zd elnndc wfn elpreima mpbirand dcbid
-        wb elmapfn mpbird ssfidc syl3anc rabid2 sylibr eqtr4id ) CFGZABHZIJKZFG
-        ZBLCMUAZUBZVPDVLVOBVPNVPVQOVLVOBVPVLVMVPGZSZVMUCZFGVNVTUDZEHZVNGZPZEVTN
-        VOVSVTCFVRVTCOZVLVRCLVMVMLCUEZUFZUGVLVRUHUIWAVSVMJUJUKVSWDEVTVSWBVTGZSZ
-        WDWBVMUMZJGZPZWIWJULGWLWIWJWICLWBVMVRCLVMUNVLWHWFQWIWBVTCVSWHUOVRWEVLWH
-        WGQUPZUQURWJUSTWIWCWKWIWCWBCGZWKWMWIVMCUTZWCWNWKSVDVRWOVLWHVMLCVEQCWBJV
-        MVATVBVCVFREVTVNVGVHRVOBVPVIVJVK $.
     $}
 
     $d G f $.
@@ -183494,6 +183544,134 @@ $)
       KWPVRWAVSBCVTLDWEWGWMEWQWRWSWJWIWTXAXBXCVLAKVRWABCWDWBLDWCEFGWSWCSZWBSZWD
       SZWIVMAWFVFZKVRWABCVTWDWBLDWEWCEAWLWFFTZAWKWFGTZWSXDXEXFWIWJAWFVNZVOXGKVR
       WABCVTWDWBLDWEWCEXHXIWSXDXEXFWIWJXJVPVQ $.
+  $}
+
+  ${
+    $d f i r x .0. $.  $d f i r x .1. $.  $d f i r x y D $.  $d f F $.
+    $d y W $.  $d f h i r x y I $.  $d f i r x R $.  $d f h x y X $.
+    mvrfval.v $e |- V = ( I mVar R ) $.
+    mvrfval.d $e |- D = { h e. ( NN0 ^m I ) | ( `' h " NN ) e. Fin } $.
+    mvrfval.z $e |- .0. = ( 0g ` R ) $.
+    mvrfval.o $e |- .1. = ( 1r ` R ) $.
+    mvrfval.i $e |- ( ph -> I e. W ) $.
+    mvrfval.r $e |- ( ph -> R e. Y ) $.
+    $( Value of the generating elements of the power series structure.
+       (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+    mvrfval $p |- ( ph -> V = ( x e. I |-> ( f e. D |->
+        if ( f = ( y e. I |-> if ( y = x , 1 , 0 ) ) , .1. , .0. ) ) ) ) $=
+      ( wceq vi vr cmvr co cv c1 cc0 cif cmpt cvv wcel elexd mptexd ccnv cn cfn
+      cima cn0 cmap crab cur cfv c0g simpl oveq2d rabeqdv eqtr4di mpteq1 adantr
+      wa eqeq2d simpr fveq2d ifbieq12d mpteq12dv df-mvr ovmpoga syl3anc eqtrid
+      ) AJIEUCUDZBIGDGUEZCICUEBUETUFUGUHZUIZTZFMUHZUIZUIZNAIUJUKEUJUKWGUJUKVTWG
+      TAIKRULAELSULABIWFKRUMUAUBIEUJUJBUAUEZGHUEUNUOUQUPUKZHURWHUSUDZUTZWACWHWB
+      UIZTZUBUEZVAVBZWNVCVBZUHZUIZUIWGUCUJWHITZWNETZVJZBWHWRIWFWSWTVDZXAGWKWQDW
+      EXAWKWIHURIUSUDZUTDXAWIHWJXCXAWHIURUSXBVEVFOVGXAWMWDWOWPFMXAWLWCWAWSWLWCT
+      WTCWHIWBVHVIVKXAWOEVAVBFXAWNEVAWSWTVLZVMQVGXAWPEVCVBMXAWNEVCXDVMPVGVNVOVO
+      BCGHUAUBVPVQVRVS $.
+
+    mvrval.x $e |- ( ph -> X e. I ) $.
+    $( Value of the generating elements of the power series structure.
+       (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+    mvrval $p |- ( ph -> ( V ` X ) = ( f e. D |->
+        if ( f = ( y e. I |-> if ( y = X , 1 , 0 ) ) , .1. , .0. ) ) ) $=
+      ( vx cfv cv wceq c1 cc0 cif cmpt mvrfval fveq1d eqid eqeq2 ifbid mpteq2dv
+      cvv eqeq2d ccnv cn cima cfn wcel cn0 cmap co cxp fnmap nn0ex elexd fnovex
+      wfn mp3an12i rabexd mptexd fvmptd3 eqtrd ) AKIUBKUAHFCFUCZBHBUCZUAUCZUDZU
+      EUFUGZUHZUDZEMUGZUHZUHZUBFCVPBHVQKUDZUEUFUGZUHZUDZEMUGZUHZAKIWEAUABCDEFGH
+      IJLMNOPQRSUIUJAUAKWDWKHWEUOWEUKVRKUDZFCWCWJWLWBWIEMWLWAWHVPWLBHVTWGWLVSWF
+      UEUFVRKVQULUMUNUPUMUNTAFCWJUOAGUCUQURUSUTVAGVBHVCVDZCUOOVCUOUOVEVJVBUOVAA
+      HUOVAWMUOVAVFVGAHJRVHVBHUOUOVCVIVKVLVMVNVO $.
+
+    ${
+      mvrval2.f $e |- ( ph -> F e. D ) $.
+      $( Value of the generating elements of the power series structure.
+         (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+      mvrval2 $p |- ( ph -> ( ( V ` X ) ` F ) =
+          if ( F = ( y e. I |-> if ( y = X , 1 , 0 ) ) , .1. , .0. ) ) $=
+        ( vf cfv cv wceq c1 cc0 cif cmpt mvrval fveq1d cvv eqid eqeq1 ifbid c0g
+        cmgp wcel ringidvalg syl wfn mgpex funfvex funfni sylancr eqeltrd elexd
+        fn0g eqeltrid ifexd fvmptd3 eqtrd ) AGKIUCZUCGUBCUBUDZBHBUDKUEUFUGUHUIZ
+        UEZEMUHZUIZUCGVOUEZEMUHZAGVMVRABCDEUBFHIJKLMNOPQRSTUJUKAUBGVQVTCVRULVRU
+        MVNGUEVPVSEMVNGVOUNUOUAAVSEMULULAEDUQUCZUPUCZULADLURZEWBUESDEWALWAUMZQU
+        SUTAUPULVAZWAULURZWBULURZVHAWCWFSDWALWDVBUTWGULWAUPWAUPVCVDVEVFAMDUPUCZ
+        ULPAWEDULURWHULURZVHADLSVGWIULDUPDUPVCVDVEVIVJVKVL $.
+    $}
+  $}
+
+  ${
+    $d D y $.  $d I h y $.  $d X h y $.
+    mvridfi.v $e |- V = ( I mVar R ) $.
+    mvridfi.d $e |- D = { h e. ( NN0 ^m I ) | ( `' h " NN ) e. Fin } $.
+    mvridfi.z $e |- .0. = ( 0g ` R ) $.
+    mvridfi.o $e |- .1. = ( 1r ` R ) $.
+    mvridfi.i $e |- ( ph -> I e. Fin ) $.
+    mvridfi.r $e |- ( ph -> R e. Y ) $.
+    mvridfi.x $e |- ( ph -> X e. I ) $.
+    $( The ` X i ` -th coefficient of the term ` X i ` is ` 1 ` .  (Contributed
+       by Mario Carneiro, 7-Jan-2015.) $)
+    mvridfi $p |- ( ph -> ( ( V ` X ) ` ( y e. I |-> if ( y = X , 1 , 0 ) ) )
+        = .1. ) $=
+      ( c1 wcel wceq cc0 cif cmpt cfv cfn cn0 1nn0 snifpsrbagfi syl3anc mvrval2
+      cv a1i eqid iftruei eqtrdi ) ABGBULIUASUBUCUDZIHUEUEUQUQUAZEKUCEABCDEFUQG
+      HUFIJKLMNOPQRAGUFTSUGTZIGTUQCTPUSAUHUMRBCFGSIMUIUJUKUREKUQUNUOUP $.
+  $}
+
+  ${
+    $d f h x y z I $.  $d f x y ph $.  $d f x R $.  $d x y V $.  $d y z W $.
+    $d x B $.
+    mvrf.s $e |- S = ( I mPwSer R ) $.
+    mvrf.v $e |- V = ( I mVar R ) $.
+    mvrf.b $e |- B = ( Base ` S ) $.
+    mvrffi.i $e |- ( ph -> I e. Fin ) $.
+    mvrf.r $e |- ( ph -> R e. Ring ) $.
+    $( The power series variable function is a function from the index set to
+       elements of the power series structure representing ` X i ` for each
+       ` i ` .  (Contributed by Mario Carneiro, 29-Dec-2014.) $)
+    mvrffi $p |- ( ph -> V : I --> B ) $=
+      ( vf vh vy cv cfn wcel cn0 cmap cvv vx ccnv cn cima co crab wceq cc0 cmpt
+      c1 cif cur cfv c0g crg eqid mvrfval cbs ringidcl syl ad2antrr ring0cl wdc
+      wa wf simpr a1i simplr snifpsrbagfi syl3anc psrbagdceq ifcldcd fmpttd wfn
+      basfn elexd funfvex funfni sylancr adantr cxp fnmap nn0ex fnovex mp3an12i
+      1nn0 rabexd elmapd mpbird psrbasg eleqtrrd fmpt3d ) AUAELMOUBUCUDPQZMRESU
+      EZUFZLOZNENOUAOZUGUJUHUKUIZUGZCULUMZCUNUMZUKZUIZBFAUANWOCWTLMEFPUOXAHWOUP
+      ZXAUPZWTUPZJKUQAWQEQZVDZXCCURUMZWOSUEZBXHXCXJQWOXIXCVEXHLWOXBXIXHWPWOQZVD
+      ZWSWTXAXIAWTXIQZXGXKACUOQZXMKXICWTXIUPZXFUSUTVAAXAXIQZXGXKAXNXPKXICXAXOXE
+      VBUTVAXLEPQZXKWRWOQZWSVCAXQXGXKJVAZXHXKVFXLXQUJRQZXGXRXSXTXLWFVGAXGXKVHNW
+      OMEUJWQXDVIVJWPWRWOMEXDVKVJVLVMXHXIWOXCTTAXITQZXGAURTVNCTQYAVOACUOKVPYATC
+      URCURVQVRVSVTAWOTQXGAWMMWNWOTXDSTTWAVNRTQAETQWNTQWBWCAEPJVPRETTSWDWEWGVTW
+      HWIABXJUGXGABWOCDMEXIPUOGXOXDIJKWJVTWKWL $.
+
+    ${
+      mvrf1.z $e |- .0. = ( 0g ` R ) $.
+      mvrf1.o $e |- .1. = ( 1r ` R ) $.
+      mvrf1.n $e |- ( ph -> .1. =/= .0. ) $.
+      $( The power series variable function is injective if the base ring is
+         nonzero.  (Contributed by Mario Carneiro, 29-Dec-2014.) $)
+      mvrf1fi $p |- ( ph -> V : I -1-1-> B ) $=
+        ( vz wceq c1 cc0 vx vy vh wf cv cfv wral wf1 mvrffi wcel wne adantr wdc
+        wi wa wn cfn simprll simprlr fidceq syl3anc w3a cmpt simp2r fveq1d ccnv
+        cif cn cima cn0 cmap co crab eqid 3ad2ant1 simp2ll mvridfi simp2lr 1nn0
+        crg a1i snifpsrbagfi mvrval2 3eqtr3d simp3 cvv wb mpteqb c0ex ifex mprg
+        1ex iftrue eqeq1 ifbid eqeq12d rspcv biimtrid syl 1ne0 necon3abid mpbii
+        iffalse nsyl syl6 mt2d iffalsed eqtrd 3expia necon3ad notnotrdc sylsyld
+        mpd expr ralrimivva dff13 sylanbrc ) AFBGUDUAUEZGUFZUBUEZGUFZRZXRXTRZUN
+        ZUBFUGUAFUGFBGUHABCDFGIJKLMUIAYDUAUBFFAXRFUJZXTFUJZUOZYBYCAYGYBUOZUOZEH
+        UKZYCAYJYHPULYIYCUMZYJYCUPZUPZYCYIFUQUJZYEYFYKAYNYHLULAYEYFYBURAYEYFYBU
+        SFXRXTUTVAYIYLEHAYHYLEHRAYHYLVBZEQFQUEZXRRZSTVGZVCZQFYPXTRZSTVGZVCRZEHV
+        GZHYOYSXSUFYSYAUFEUUCYOYSXSYAAYGYBYLVDVEYOQUCUEVFVHVIUQUJUCVJFVKVLVMZCE
+        UCFGXRVTHJUUDVNZNOAYHYNYLLVOZAYHCVTUJYLMVOZYEYFYBAYLVPZVQYOQUUDCEUCYSFG
+        UQXTVTHJUUENOUUFUUGYEYFYBAYLVRYOYNSVJUJZYEYSUUDUJUUFUUIYOVSWAUUHQUUDUCF
+        SXRUUEWBVAWCWDYOUUBEHYOUUBYLAYHYLWEYOUUBSYCSTVGZRZYMYOYEUUBUUKUNUUHUUBY
+        RUUARZQFUGZYEUUKYRWFUJZUUBUUMWGQFQFYRUUAWFWHUUNYPFUJYQSTWLWIWJWAWKUULUU
+        KQXRFYQYRSUUAUUJYQSTWMYQYTYCSTYPXRXTWNWOWPWQWRWSUUKUUJTRZYLUUKSTUKUUOUP
+        WTUUKUUOSTSUUJTWNXAXBYCSTXCXDXEXFXGXHXIXJYCXKXLXMXNXOUAUBFBGXPXQ $.
+    $}
+
+    mvrcl2.x $e |- ( ph -> X e. I ) $.
+    $( A power series variable is an element of the base set.  (Contributed by
+       Mario Carneiro, 29-Dec-2014.) $)
+    mvrcl2fi $p |- ( ph -> ( V ` X ) e. B ) $=
+      ( mvrffi ffvelcdmd ) AEBGFABCDEFHIJKLNMO $.
   $}
 
   ${
@@ -215876,6 +216054,9 @@ htmldef "algSc" as "algSc";
 htmldef "mPwSer" as " mPwSer ";
   althtmldef "mPwSer" as " mPwSer ";
   latexdef "mPwSer" as "\mathrm{mPwSer}";
+htmldef "mVar" as " mVar ";
+  althtmldef "mVar" as " mVar ";
+  latexdef "mVar" as "\mathrm{mVar}";
 htmldef "mPoly" as " mPoly ";
   althtmldef "mPoly" as " mPoly ";
   latexdef "mPoly" as "\mathrm{mPoly}";
