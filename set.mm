@@ -582213,6 +582213,37 @@ $)
       YHRCDWGWHCUTCVAWICFXAVBWJXACWMWKXBXTXASWNWBWTXDWQXSWOXBXAWSSWP $.
   $}
 
+  ${
+    $d A n x y $.  $d B n x y $.  $d C n x y $.  $d D n x y $.
+    $( The value of ` _J ` is less than an aleph if its first two arguments are
+       less than that aleph.  Proposition 15.11 of [TakeutiZaring] p. 156.
+       (Contributed by BTernaryTau, 16-Oct-2026.) $)
+    jltaleph $p |- ( ( A e. ( aleph ` D ) /\ B e. ( aleph ` D ) /\ C e. 9o ) ->
+        ( _J ` <. A , B , C >. ) e. ( aleph ` D ) ) $=
+      ( cale cfv wcel c9o ccj0 com cj wa comu co coa wceq con0 adantr wn wbr vx
+      vy vn w3a cop cotp cvv alephon oneli 3ad2ant1 3ad2ant2 simp3 ovexd fveq2d
+      cv opeq1 oveq2d oveq1d adantl opeq2 oveq2 mpt3fvot2d anim1ci c0 alephfnon
+      df-j cdm fndmi eleq2i ndmfv sylnbir nel02 syl con4i alephgeom bilani 9onn
+      wss nnmcl mpan elnn mpan2 nnacl syl2an sseldd syl2anc eqeltrd csdm cen wb
+      cdom cxp cr0 wiso wf1o wf j0iso isof1o f1of mp2b 0elon f0cli onfin notbid
+      cep cfn ccrd onenon infinfnum ax-mp jltalephlem sylan2b 3ad2antl3 eqbrtrd
+      bitr3d j0ltaleph alephsdom sylancr 3adant3 ensdomtr wf1 jf1 f1f pm2.61dan
+      mpbid mpbird ) ADEFZGZBYGGZCHGZUDZABUEZIFZJGZABCUFZKFZYGGZYKYNLZYPHYMMNZC
+      ONZYGYKYPYTPZYNYKUAUBUCQQHHUAUOZUBUOZUEZIFZMNZUCUOZONZABCKHAUUCUEZIFZMNZU
+      UGONZYSUUGONZYTUGYHYIAQGYJYGADUHZUIUJYIYHBQGYJYGBUUNUIUKYHYIYJULZYKYSCOUM
+      AUUBPZUULUUHPYKUUPUUKUUFUUGOUUPUUJUUEHMUUPUUIUUDIAUUBUUCUPUNUQURUSBUUCPZU
+      UMUULPYKUUQYSUUKUUGOUUQYMUUJHMUUQYLUUIIBUUCAUTUNUQURUSCUUGPYTUUMPYKCUUGYS
+      OVAUSUAUBUCVFVBZRYRYNYJLZDQGZYTYGGYKYJYNUUOVCYKUUTYNYHYIUUTYJUUTYHUUTSYGV
+      DPZYHSUUTDEVGZGUVAUVBQDQEVEVHVIDEVJVKYGAVLVMVNZUJRUUSUUTLJYGYTUUTJYGVRUUS
+      DVOVPUUSYTJGZUUTYNYSJGZCJGZUVDYJHJGZYNUVEVQHYMVSVTYJUVGUVFVQCHWAWBYSCWCWD
+      RWEWFWGYKYNSZLZYQYPYGWHTZUVIYPYMWITYMYGWHTZUVJUVIYPYTYMWIYKUUAUVHUURRYJYH
+      UVHYTYMWITZYIUVHYJJYMWKTZUVLYMQGZUVHUVMWJQQWLZQYLIUVOQWMXEIWNUVOQIWOUVOQI
+      WPWQUVOQWMXEIWRUVOQIWSWTXAXBZUVNYMXFGZSZUVHUVMUVNUVQYNYMXCXDUVNYMXGVGGUVR
+      UVMWJYMXHYMXIVMXOXJABCXKXLXMXNYKUVKUVHYHYIUVKYJYHYILYMYGGZUVKABDXPYHUVSUV
+      KWJZYIYHUVNUUTUVTUVPUVCYMDXQXRRYEXSRYPYMYGXTWFYKYQUVJWJZUVHYHYIUWAYJYHYPQ
+      GUUTUWAUVOHWLZQYOKUWBQKYAUWBQKWPYBUWBQKYCXJXAXBUVCYPDXQXRUJRYFYD $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
