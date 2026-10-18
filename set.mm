@@ -581830,6 +581830,18 @@ $)
       QCUCOUFUEOACUCBRQHISUA $.
   $}
 
+  ${
+    $d ph x y $.  $d A x y $.  $d B x y $.
+    gdlop5fv.1 $e |- ( ph -> A e. V ) $.
+    gdlop5fv.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the fifth G&ouml;del operation.  (Contributed by
+       BTernaryTau, 18-Oct-2026.) $)
+    gdlop5fv $p |- ( ph -> ( ~F5 ` <. A , B >. ) = ( A i^i dom B ) ) $=
+      ( vx vy cvv cv cdm cin cgdlop5 elexd wcel inex1g syl wceq adantl ineq2d
+      ineq1 dmeq df-gdlop5 mpofvop2d ) AHIJJHKZIKZLZMZBCNBUHMZBCLZMZJABDFOACEGO
+      ABDPULJPFBUKDQRBUFSUJUISABUFUHUBTCUGSZULUJSAUMUKUHBCUGUCUATHIUDUE $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
