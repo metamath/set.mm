@@ -62634,9 +62634,20 @@ $)
     iotan0.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
     $( Representation of "the unique element such that ` ph ` " with a class
        expression ` A ` which is not the empty set (that means that "the unique
-       element such that ` ph ` " exists).  (Contributed by AV,
-       30-Jan-2024.) $)
-    iotan0 $p |- ( ( A e. V /\ A =/= (/) /\ A = ( iota x ph ) ) -> ps ) $=
+       element such that ` ph ` " exists).  (Contributed by AV, 30-Jan-2024.)
+       Remove sethood requirement from antecedent.  (Revised by Eric Schmidt,
+       17-Oct-2026.) $)
+    iotan0 $p |- ( ( A =/= (/) /\ A = ( iota x ph ) ) -> ps ) $=
+      ( c0 wne cio wceq wa weu pm13.18 expcom iotanul necon1ai syl6 imp wi wcel
+      cvv iotaex eleq1 mpbiri eqcom iota2 biimprd biimtrid impancom mpancom mpd
+      adantl ) DFGZDACHZIZJACKZBULUNUOULUNUMFGZUOUNULUPDUMFLMUOUMFACNOPQUNUOBRZ
+      ULDTSZUNUQUNURUMTSACUADUMTUBUCURUOUNBUNUMDIZURUOJZBDUMUDUTBUSABCDTEUEUFUG
+      UHUIUKUJ $.
+
+    $( Obsolete version of ~ iotan0 as of 17-Oct-2026.  (Contributed by AV,
+       30-Jan-2024.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    iotan0OLD $p |- ( ( A e. V /\ A =/= (/) /\ A = ( iota x ph ) ) -> ps ) $=
       ( wcel c0 wne cio wceq w3a weu pm13.18 expcom iotanul necon1ai syl6 a1i
       wi 3imp wa eqcom iota2 biimprd biimtrid impancom 3adant2 mpd ) DEGZDHIZDA
       CJZKZLACMZBUJUKUMUNUKUMUNTTUJUKUMULHIZUNUMUKUODULHNOUNULHACPQRSUAUJUMUNBT
@@ -234011,14 +234022,13 @@ $)
        with this theorem.  (Contributed by AV, 29-Jan-2024.) $)
     sgrpidmnd $p |- ( ( G e. Smgrp /\ E. e e. B ( e =/= (/) /\ e = .0. ) )
                        -> G e. Mnd ) $=
-      ( vx vy csgrp wcel cv c0 wne wceq wa wrex cplusg co wral wi cfv cmnd eqid
-      cio grpidval eqeq2i w3a weq eleq1w oveq1 eqeq1d ovanraleqv anbi12d iotan0
-      rsp simpl2im 3expb expcom sylan2b impcom ralrimiv reximia anim2i ismnddef
-      ex sylibr ) CIJZBKZLMZVHDNZOZBAPZOVGVHGKZCQUAZRZVMNZVMVHVNRVMNOZGASZBAPZO
-      CUBJVLVSVGVKVRBAVHAJZVKVRVTVKOVQGAVKVTVMAJVQTZVJVIVHHKZAJZWBVMVNRZVMNZVMW
-      BVNRVMNOGASZOZHUDZNZVTWATDWHVHGAVNHCDEVNUCZFUEUFVTVIWIOWAVTVIWIWAVTVIWIUG
-      VTVRWAWGVTVROHVHAHBUHZWCVTWFVRHBAUIWEVPGVMWBVMVNAVHWKWDVOVMWBVHVMVNUJUKUL
-      UMUNVQGAUOUPUQURUSUTVAVEVBVCAVNBCGEWJVDVF $.
+      ( vx vy csgrp wcel cv c0 wne wceq wa wrex cplusg cfv co wral cmnd wi eqid
+      cio grpidval eqeq2i weq eleq1w oveq1 eqeq1d ovanraleqv anbi12d iotan0 rsp
+      simpl2im sylan2b ralrimiv reximi anim2i ismnddef sylibr ) CIJZBKZLMZVCDNZ
+      OZBAPZOVBVCGKZCQRZSZVHNZVHVCVISVHNOZGATZBAPZOCUAJVGVNVBVFVMBAVFVLGAVEVDVC
+      HKZAJZVOVHVISZVHNZVHVOVISVHNOGATZOZHUDZNZVHAJVLUBZDWAVCGAVIHCDEVIUCZFUEUF
+      VDWBOVCAJZVMWCVTWEVMOHVCHBUGZVPWEVSVMHBAUHVRVKGVHVOVHVIAVCWFVQVJVHVOVCVHV
+      IUIUJUKULUMVLGAUNUOUPUQURUSAVIBCGEWDUTVA $.
   $}
 
   ${

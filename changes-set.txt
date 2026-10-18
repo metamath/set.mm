@@ -94,6 +94,7 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+17-Oct-26 iotan0      [same]      Remove sethood requirement from antecedent
 14-Oct-26 flt4lem*    [same]      Revise to `( A gcd B ) = 1` to shorten overall
 30-Sep-26 cnvssb      [same]      Moved from RP's mathbox to main set.mm
 29-Sep-26 fununiq     [same]      Moved from SF's mathbox to main set.mm
