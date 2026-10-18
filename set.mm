@@ -580609,6 +580609,48 @@ $)
     ( c8o csuc c9o con0 wcel 8on sucidg ax-mp df-9o eleqtrri ) AABZCADEAKEFADGH
     IJ $.
 
+  $( Ordinal 7 is less than ordinal 9.  (Contributed by BTernaryTau,
+     17-Oct-2026.) $)
+  7olt9o $p |- 7o e. 9o $=
+    ( c7o c8o wcel c9o csuc con0 sucidg ax-mp df-8o eleqtrri 8olt9o wa wi ontr1
+    7on 9on mp2an ) ABCZBDCZADCZAAEZBAFCAUACOAFGHIJKDFCRSLTMPABDNHQ $.
+
+  $( Ordinal 6 is less than ordinal 9.  (Contributed by BTernaryTau,
+     17-Oct-2026.) $)
+  6olt9o $p |- 6o e. 9o $=
+    ( c6o c7o wcel c9o csuc con0 sucidg ax-mp df-7o eleqtrri 7olt9o wa wi ontr1
+    6on 9on mp2an ) ABCZBDCZADCZAAEZBAFCAUACOAFGHIJKDFCRSLTMPABDNHQ $.
+
+  $( Ordinal 5 is less than ordinal 9.  (Contributed by BTernaryTau,
+     17-Oct-2026.) $)
+  5olt9o $p |- 5o e. 9o $=
+    ( c5o c6o wcel c9o csuc con0 sucidg ax-mp df-6o eleqtrri 6olt9o wa wi ontr1
+    5on 9on mp2an ) ABCZBDCZADCZAAEZBAFCAUACOAFGHIJKDFCRSLTMPABDNHQ $.
+
+  $( Ordinal 4 is less than ordinal 9.  (Contributed by BTernaryTau,
+     17-Oct-2026.) $)
+  4olt9o $p |- 4o e. 9o $=
+    ( c4o c5o wcel c9o csuc con0 sucidg ax-mp df-5o eleqtrri 5olt9o wa wi ontr1
+    4on 9on mp2an ) ABCZBDCZADCZAAEZBAFCAUACOAFGHIJKDFCRSLTMPABDNHQ $.
+
+  $( Ordinal 3 is less than ordinal 9.  (Contributed by BTernaryTau,
+     17-Oct-2026.) $)
+  3olt9o $p |- 3o e. 9o $=
+    ( c3o c4o wcel c9o csuc con0 sucidg ax-mp df-4o eleqtrri 4olt9o wa wi ontr1
+    3on 9on mp2an ) ABCZBDCZADCZAAEZBAFCAUACOAFGHIJKDFCRSLTMPABDNHQ $.
+
+  $( Ordinal 2 is less than ordinal 9.  (Contributed by BTernaryTau,
+     17-Oct-2026.) $)
+  2olt9o $p |- 2o e. 9o $=
+    ( c2o c3o wcel c9o csuc con0 sucidg ax-mp df-3o eleqtrri 3olt9o wa wi ontr1
+    2on 9on mp2an ) ABCZBDCZADCZAAEZBAFCAUACOAFGHIJKDFCRSLTMPABDNHQ $.
+
+  $( Ordinal 1 is less than ordinal 9.  (Contributed by BTernaryTau,
+     17-Oct-2026.) $)
+  1olt9o $p |- 1o e. 9o $=
+    ( c1o c2o wcel c9o csuc con0 sucidg ax-mp df-2o eleqtrri 2olt9o wa wi ontr1
+    1on 9on mp2an ) ABCZBDCZADCZAAEZBAFCAUACOAFGHIJKDFCRSLTMPABDNHQ $.
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
