@@ -581854,6 +581854,19 @@ $)
       OABDPULJPFBUKDQRBUFSUJUISABUFUHUBTCUGSZULUJSAUMUKUHBCUGUCUATHIUDUE $.
   $}
 
+  ${
+    $d ph x y $.  $d A x y $.  $d B x y $.
+    gdlop7fv.1 $e |- ( ph -> A e. V ) $.
+    gdlop7fv.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the seventh G&ouml;del operation.  (Contributed by
+       BTernaryTau, 18-Oct-2026.) $)
+    gdlop7fv $p |- ( ph -> ( ~F7 ` <. A , B >. ) = ( A i^i ( Cnv2 ` B ) ) ) $=
+      ( vx vy cvv cv ccnv2 cfv cin cgdlop7 elexd wcel inex1g wceq adantl ineq2d
+      syl ineq1 fveq2 df-gdlop7 mpofvop2d ) AHIJJHKZIKZLMZNZBCOBUINZBCLMZNZJABD
+      FPACEGPABDQUMJQFBULDRUBBUGSUKUJSABUGUIUCTCUHSZUMUKSAUNULUIBCUHLUDUATHIUEU
+      F $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
