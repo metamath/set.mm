@@ -581867,6 +581867,19 @@ $)
       F $.
   $}
 
+  ${
+    $d ph x y $.  $d A x y $.  $d B x y $.
+    gdlop8fv.1 $e |- ( ph -> A e. V ) $.
+    gdlop8fv.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the eighth G&ouml;del operation.  (Contributed by
+       BTernaryTau, 18-Oct-2026.) $)
+    gdlop8fv $p |- ( ph -> ( ~F8 ` <. A , B >. ) = ( A i^i ( Cnv3 ` B ) ) ) $=
+      ( vx vy cvv cv ccnv3 cfv cin cgdlop8 elexd wcel inex1g wceq adantl ineq2d
+      syl ineq1 fveq2 df-gdlop8 mpofvop2d ) AHIJJHKZIKZLMZNZBCOBUINZBCLMZNZJABD
+      FPACEGPABDQUMJQFBULDRUBBUGSUKUJSABUGUIUCTCUHSZUMUKSAUNULUIBCUHLUDUATHIUEU
+      F $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
