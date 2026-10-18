@@ -581794,6 +581794,18 @@ $)
       UFRABUDUESTCUERUHUGRACUEBUATHIUBUC $.
   $}
 
+  ${
+    $d ph x y $.  $d A x y $.  $d B x y $.
+    gdlop2fv.1 $e |- ( ph -> A e. V ) $.
+    gdlop2fv.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the second G&ouml;del operation.  (Contributed by
+       BTernaryTau, 18-Oct-2026.) $)
+    gdlop2fv $p |- ( ph -> ( ~F2 ` <. A , B >. ) = ( A i^i _E ) ) $=
+      ( vx vy cvv cv cep cin cgdlop2 elexd wcel inex1g syl wceq ineq1 adantl wa
+      eqidd df-gdlop2 mpofvop2d ) AHIJJHKZLMZBCNBLMZUHJABDFOACEGOABDPUHJPFBLDQR
+      BUFSUHUGSABUFLTUAACIKSUBUHUCHIUDUE $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
