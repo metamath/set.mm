@@ -581842,6 +581842,18 @@ $)
       ABDPULJPFBUKDQRBUFSUJUISABUFUHUBTCUGSZULUJSAUMUKUHBCUGUCUATHIUDUE $.
   $}
 
+  ${
+    $d ph x y $.  $d A x y $.  $d B x y $.
+    gdlop6fv.1 $e |- ( ph -> A e. V ) $.
+    gdlop6fv.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the sixth G&ouml;del operation.  (Contributed by
+       BTernaryTau, 18-Oct-2026.) $)
+    gdlop6fv $p |- ( ph -> ( ~F6 ` <. A , B >. ) = ( A i^i `' B ) ) $=
+      ( vx vy cvv cv ccnv cin cgdlop6 elexd wcel inex1g syl wceq adantl ineq2d
+      ineq1 cnveq df-gdlop6 mpofvop2d ) AHIJJHKZIKZLZMZBCNBUHMZBCLZMZJABDFOACEG
+      OABDPULJPFBUKDQRBUFSUJUISABUFUHUBTCUGSZULUJSAUMUKUHBCUGUCUATHIUDUE $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
