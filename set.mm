@@ -62635,8 +62635,7 @@ $)
     $( Representation of "the unique element such that ` ph ` " with a class
        expression ` A ` which is not the empty set (that means that "the unique
        element such that ` ph ` " exists).  (Contributed by AV, 30-Jan-2024.)
-       Remove sethood requirement from antecedent.  (Revised by Eric Schmidt,
-       17-Oct-2026.) $)
+       Remove sethood antecedent.  (Revised by Eric Schmidt, 17-Oct-2026.) $)
     iotan0 $p |- ( ( A =/= (/) /\ A = ( iota x ph ) ) -> ps ) $=
       ( c0 wne cio wceq wa weu pm13.18 expcom iotanul necon1ai syl6 imp wi wcel
       cvv iotaex eleq1 mpbiri eqcom iota2 biimprd biimtrid impancom mpancom mpd
