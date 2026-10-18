@@ -580603,6 +580603,12 @@ $)
     ( c9o c8o csuc com df-9o wcel 8onn peano2 ax-mp eqeltri ) ABCZDEBDFKDFGBHIJ
     $.
 
+  $( Ordinal 8 is less than ordinal 9.  (Contributed by BTernaryTau,
+     17-Oct-2026.) $)
+  8olt9o $p |- 8o e. 9o $=
+    ( c8o csuc c9o con0 wcel 8on sucidg ax-mp df-9o eleqtrri ) AABZCADEAKEFADGH
+    IJ $.
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
