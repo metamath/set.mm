@@ -14715,14 +14715,6 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>df-mvr</td>
-  <td><i>none</i></td>
-  <td>it appears that the set.mm definition might work (most theorems
-  will need ` i e. Fin ` conditions but that's how we expect to use
-  this definition)</td>
-</tr>
-
-<tr>
   <td>df-mpl</td>
   <td>~ df-mplcoe</td>
   <td>our definition does not assume decidable equality for
@@ -14737,10 +14729,9 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>snifpsrbag</td>
-  <td><i>none</i></td>
-  <td>we do not have some of the theorems used in this proof
-  and it appears that if anything like this is possible, it
-  would need some decidable equality conditions added</td>
+  <td>~ snifpsrbagfi</td>
+  <td>adds conditions that the index set is finite and that
+  ` X ` is an element of the index set</td>
 </tr>
 
 <tr>
@@ -14929,6 +14920,30 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>mvrid</td>
+  <td>~ mvridfi</td>
+  <td>adds requirement that the index set is finite</td>
+</tr>
+
+<tr>
+  <td>mvrf</td>
+  <td>~ mvrffi</td>
+  <td>adds requirement that the index set is finite</td>
+</tr>
+
+<tr>
+  <td>mvrf1</td>
+  <td>~ mvrf1fi</td>
+  <td>adds requirement that the index set is finite</td>
+</tr>
+
+<tr>
+  <td>mvrcl2</td>
+  <td>~ mvrcl2fi</td>
+  <td>adds requirement that the index set is finite</td>
+</tr>
+
+<tr>
   <td>mplval</td>
   <td>~ mplvalcoe</td>
   <td>adds set existence conditions and changes the expansion
@@ -14950,10 +14965,16 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>mvrcl , mvrf2</td>
+  <td>mvrcl</td>
   <td><i>none</i></td>
-  <td>may be feasible (with ` I e. W ` changed to ` I e. Fin ` )
-  if we define mVar</td>
+  <td>might be feasible (for finite index sets) once we fix the
+  definition of ` mPoly ` to handle empty index sets</td>
+</tr>
+
+<tr>
+  <td>mvrf2</td>
+  <td><i>none</i></td>
+  <td>should be feasible (with ` I e. W ` changed to ` I e. Fin ` )</td>
 </tr>
 
 <tr>
@@ -17729,7 +17750,9 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>lgsqrlem1</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses evl1vard , evl1expd ,
-  evl1scad , ply1scl1 , and evl1subd</td>
+  evl1scad , ply1scl1 , and evl1subd . Although there
+  is a reference to deg1 it does not seem to be used
+  in any of the lgsqr lemmas.</td>
 </tr>
 
 <tr>
