@@ -581806,6 +581806,18 @@ $)
       BUFSUHUGSABUFLTUAACIKSUBUHUCHIUDUE $.
   $}
 
+  ${
+    $d ph x y $.  $d A x y $.  $d B x y $.
+    gdlop3fv.1 $e |- ( ph -> A e. V ) $.
+    gdlop3fv.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the third G&ouml;del operation.  (Contributed by
+       BTernaryTau, 18-Oct-2026.) $)
+    gdlop3fv $p |- ( ph -> ( ~F3 ` <. A , B >. ) = ( A \ B ) ) $=
+      ( vx vy cvv cdif cgdlop3 elexd difexd wceq difeq1 adantl difeq2 df-gdlop3
+      cv mpofvop2d ) AHIJJHTZITZKZBCLBUCKZBCKZJABDFMACEGMABCDFNBUBOUEUDOABUBUCP
+      QCUCOUFUEOACUCBRQHISUA $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
