@@ -885675,11 +885675,29 @@ $)
        multiples-of-four theorem, the named-constant realization of interface
        P01-I16.  The proof uses descent, finite residue multiplicativity,
        quadratic reciprocity and prime-divisor scaling; it assumes no
-       correlation theorem.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+       correlation theorem.  See ~ liougold4dvds for the alternate statement
+       using divisibility.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougold4 $p |- A. n e. NN E. a e. NN E. b e. NN ( ( 4 x. n ) = ( a + b
     ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) $=
       ( c4 cv cmul co caddc wceq cliou cfv c1 cneg cn wrex wcel id liougold4nnd
       w3a rgen ) DAEFGBECEHGIBEJKLMICEJKLMISCNOBNOANAENPAEBCAENPQRT $.
+  $}
+
+  ${
+    $d N a b $.
+    $( Alternate form of ~ liougold4 : every positive integer divisible by four
+       is the sum of two positive integers with Liouville value minus one.
+       Apply ~ liougold4nnd to the positive integer ` ( N / 4 ) ` .
+       (Contributed by Zhi Wang, 19-Oct-2026.) $)
+    liougold4dvds $p |- ( ( N e. NN /\ 4 || N ) ->
+      E. a e. NN E. b e. NN ( N = ( a + b ) /\
+        ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
+      ( cn wcel c4 cdvds wbr wa cdiv co wceq cliou cfv wrex mpbid nncnd rexbidv
+      cv w3a cmul caddc c1 cneg simpr wb 4nn a1i nndivdvds syl2anc liougold4nnd
+      simpl nnne0d divcan2d eqeq1d 3anbi1d ) ADEZFAGHZIZFAFJKZUAKZBSZCSZUBKZLZV
+      BMNUCUDZLZVCMNVFLZTZCDOZBDOAVDLZVGVHTZCDOZBDOUSUTBCUSURUTDEZUQURUEUSUQFDE
+      ZURVNUFUQURULZVOUSUGUHZAFUIUJPUKUSVJVMBDUSVIVLCDUSVEVKVGVHUSVAAVDUSAFUSAV
+      PQUSFVQQUSFVQUMUNUOUPRRP $.
   $}
 
 $( (End of Zhi Wang's mathbox.) $)
