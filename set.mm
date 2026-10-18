@@ -23071,8 +23071,8 @@ $)
        theorem is also a direct consequence of ~ mo4f , but this proof is based
        on fewer axioms.
 
-       Note: swapping both ` x ` , ` y ` and ` ph ` , ` ps ` preserves the
-       hypothesis and DV conditions, so that we also have the conclusion.
+       Note:  Swapping both ` x ` , ` y ` and ` ph ` , ` ps ` preserves the
+       hypothesis and DV conditions, so we also have the conclusion
        ` |- ( E* y ps <-> A. y A. x ( ( ps /\ ph ) -> y = x ) ) ` .  But under
        the hypothesis and DV condition, we also have
        ` |- ( E* x ph <-> E* y ps ) ` (that is a proof step).  Therefore, since
@@ -613439,13 +613439,14 @@ $)
     bj-dfrel2 $p |- ( Rel R <-> `' `' R = R ) $=
       ( vx vy wrel cv wbr copab wceq ccnv bj-dfrel4v cnvcnv3 eqeq1i bitr4i ) AD
       BECEAFBCGZAHAIIZAHBCAJONABCAKLM $.
-
   $}
 
   ${
     $d A x y $.
     $( The double converse of a class equals its restriction to the universe.
-       (Contributed by NM, 8-Oct-2007.) $)
+       (Contributed by NM, 8-Oct-2007.)  Do not depend on ~ cnvcnv in order to
+       prove it from ~ cnvcnv2 .  (Revised by BJ, 16-Oct-2026.)  Do not depend
+       on ~ cnvcnv .  (Proof modification is discouraged.) $)
     bj-cnvcnv2 $p |- `' `' A = ( A |` _V ) $=
       ( vx vy ccnv cv wbr copab cvv cres cnvcnv3 relpart eqtr4i ) ADDBECEAFBCGA
       HIBCAJBCAKL $.
@@ -613454,7 +613455,7 @@ $)
   $( The double converse of a class strips out all elements that are not
      ordered pairs.  (Contributed by NM, 8-Dec-2003.)  (Proof shortened by BJ,
      26-Nov-2021.)  (Proof shortened by BJ, 16-Oct-2026.)  Prefer use of
-     ~ bj-cnvcnv2 . $)
+     ~ bj-cnvcnv2 .  (Proof modification is discouraged.) $)
   bj-cnvcnv $p |- `' `' A = ( A i^i ( _V X. _V ) ) $=
     ( ccnv cvv cres cxp cin bj-cnvcnv2 df-res eqtri ) ABBACDACCEFAGACHI $.
 
@@ -613469,8 +613470,8 @@ $)
 
   ${
     $d A x y z $.
-    $( Precomposing with the identity is the same thing as taking the relation
-       part of a class.  (Contributed by BJ, 16-Aug-2026.) $)
+    $( Precomposing with the identity is the same as taking the relation part
+       of a class.  (Contributed by BJ, 16-Aug-2026.) $)
     coi1res $p |- ( A o. _I ) = ( A |` _V ) $=
       ( vx vz vy cv cid wbr wex copab ccom cvv cres weq vex equcom bitri anbi1i
       wa ideq exbii breq1 equsexvw opabbii df-co relpart 3eqtr4i ) BEZCEZFGZUHD
