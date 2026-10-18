@@ -6443,6 +6443,11 @@
 "flddivrng" is used by "isfld2".
 "flddivrng" is used by "isfldidl".
 "fuco22natlem" is used by "fuco22nat".
+"fucoaltnelem" is used by "fucoaltne".
+"fucoaltvallem" is used by "fucoaltval".
+"fucoisfunc2lem2" is used by "fucoisfunc2".
+"fuconuniqlem" is used by "fuconuniq".
+"fuconuniqvalslem" is used by "fuconuniqvals".
 "funadj" is used by "adj1".
 "funadj" is used by "adj1o".
 "funadj" is used by "adjeq".
@@ -15360,6 +15365,7 @@ New usage of "brprcneuALT" is discouraged (1 uses).
 New usage of "c-bnj14" is discouraged (131 uses).
 New usage of "c-bnj18" is discouraged (59 uses).
 New usage of "c0exALT" is discouraged (0 uses).
+New usage of "cardprcALT" is discouraged (0 uses).
 New usage of "cases2ALT" is discouraged (0 uses).
 New usage of "cayleyhamiltonALT" is discouraged (0 uses).
 New usage of "cba" is discouraged (85 uses).
@@ -16717,6 +16723,11 @@ New usage of "frgrwopreglem5ALT" is discouraged (0 uses).
 New usage of "fsetprcnexALT" is discouraged (0 uses).
 New usage of "fuco11bALT" is discouraged (0 uses).
 New usage of "fuco22natlem" is discouraged (1 uses).
+New usage of "fucoaltnelem" is discouraged (1 uses).
+New usage of "fucoaltvallem" is discouraged (1 uses).
+New usage of "fucoisfunc2lem2" is discouraged (1 uses).
+New usage of "fuconuniqlem" is discouraged (1 uses).
+New usage of "fuconuniqvalslem" is discouraged (1 uses).
 New usage of "funadj" is discouraged (4 uses).
 New usage of "funcnvadj" is discouraged (1 uses).
 New usage of "funcringcsetcALTV" is discouraged (0 uses).
@@ -18331,6 +18342,7 @@ New usage of "onfrALTlem4" is discouraged (2 uses).
 New usage of "onfrALTlem4VD" is discouraged (0 uses).
 New usage of "onfrALTlem5" is discouraged (2 uses).
 New usage of "onfrALTlem5VD" is discouraged (0 uses).
+New usage of "onprcALT" is discouraged (0 uses).
 New usage of "onsetreclem1" is discouraged (2 uses).
 New usage of "onsetreclem2" is discouraged (1 uses).
 New usage of "onsetreclem3" is discouraged (1 uses).
@@ -18379,6 +18391,7 @@ New usage of "osumcllem9N" is discouraged (1 uses).
 New usage of "osumcor2i" is discouraged (1 uses).
 New usage of "osumcori" is discouraged (0 uses).
 New usage of "osumi" is discouraged (10 uses).
+New usage of "ovmptssOLD" is discouraged (0 uses).
 New usage of "p0exALT" is discouraged (0 uses).
 New usage of "padd12N" is discouraged (2 uses).
 New usage of "padd4N" is discouraged (1 uses).
@@ -18387,6 +18400,17 @@ New usage of "paddclN" is discouraged (2 uses).
 New usage of "paddunN" is discouraged (1 uses).
 New usage of "paddunssN" is discouraged (3 uses).
 New usage of "paddvaln0N" is discouraged (0 uses).
+New usage of "parcatid2" is discouraged (0 uses).
+New usage of "parhomcl2" is discouraged (0 uses).
+New usage of "parhomco2" is discouraged (0 uses).
+New usage of "parhomeqor2" is discouraged (0 uses).
+New usage of "parhomid2" is discouraged (0 uses).
+New usage of "parhomideq2" is discouraged (0 uses).
+New usage of "parhomne2" is discouraged (0 uses).
+New usage of "parhomss2" is discouraged (0 uses).
+New usage of "parmapcl2" is discouraged (0 uses).
+New usage of "parmapco2" is discouraged (0 uses).
+New usage of "parmapfunc2" is discouraged (0 uses).
 New usage of "pautsetN" is discouraged (1 uses).
 New usage of "pcl0N" is discouraged (2 uses).
 New usage of "pcl0bN" is discouraged (1 uses).
@@ -19277,6 +19301,7 @@ New usage of "superpos" is discouraged (1 uses).
 New usage of "supexpr" is discouraged (1 uses).
 New usage of "suplem1pr" is discouraged (1 uses).
 New usage of "suplem2pr" is discouraged (1 uses).
+New usage of "suppvalbrOLD" is discouraged (0 uses).
 New usage of "supsr" is discouraged (1 uses).
 New usage of "supsrlem" is discouraged (1 uses).
 New usage of "swapf2f1oaALT" is discouraged (0 uses).
@@ -19991,6 +20016,7 @@ Proof modification of "brfi1indALT" is discouraged (741 steps).
 Proof modification of "brfvidRP" is discouraged (93 steps).
 Proof modification of "brprcneuALT" is discouraged (247 steps).
 Proof modification of "c0exALT" is discouraged (15 steps).
+Proof modification of "cardprcALT" is discouraged (59 steps).
 Proof modification of "cases2ALT" is discouraged (88 steps).
 Proof modification of "cayleyhamiltonALT" is discouraged (657 steps).
 Proof modification of "cbveuALT" is discouraged (48 steps).
@@ -20925,6 +20951,7 @@ Proof modification of "onfrALTlem4" is discouraged (126 steps).
 Proof modification of "onfrALTlem4VD" is discouraged (116 steps).
 Proof modification of "onfrALTlem5" is discouraged (320 steps).
 Proof modification of "onfrALTlem5VD" is discouraged (320 steps).
+Proof modification of "onprcALT" is discouraged (21 steps).
 Proof modification of "opelopab4" is discouraged (69 steps).
 Proof modification of "opexOLD" is discouraged (31 steps).
 Proof modification of "opidon2OLD" is discouraged (80 steps).
@@ -20940,7 +20967,19 @@ Proof modification of "orcomdd" is discouraged (13 steps).
 Proof modification of "ordelordALT" is discouraged (128 steps).
 Proof modification of "ordelordALTVD" is discouraged (202 steps).
 Proof modification of "orim12dALT" is discouraged (34 steps).
+Proof modification of "ovmptssOLD" is discouraged (296 steps).
 Proof modification of "p0exALT" is discouraged (2 steps).
+Proof modification of "parcatid2" is discouraged (745 steps).
+Proof modification of "parhomcl2" is discouraged (110 steps).
+Proof modification of "parhomco2" is discouraged (218 steps).
+Proof modification of "parhomeqor2" is discouraged (112 steps).
+Proof modification of "parhomid2" is discouraged (61 steps).
+Proof modification of "parhomideq2" is discouraged (65 steps).
+Proof modification of "parhomne2" is discouraged (73 steps).
+Proof modification of "parhomss2" is discouraged (38 steps).
+Proof modification of "parmapcl2" is discouraged (169 steps).
+Proof modification of "parmapco2" is discouraged (351 steps).
+Proof modification of "parmapfunc2" is discouraged (806 steps).
 Proof modification of "peano3OLD" is discouraged (10 steps).
 Proof modification of "perfectALTV" is discouraged (528 steps).
 Proof modification of "perpdragALT" is discouraged (241 steps).
@@ -21240,6 +21279,7 @@ Proof modification of "suctrALT2VD" is discouraged (173 steps).
 Proof modification of "suctrALT3" is discouraged (137 steps).
 Proof modification of "suctrALTcf" is discouraged (164 steps).
 Proof modification of "suctrALTcfVD" is discouraged (164 steps).
+Proof modification of "suppvalbrOLD" is discouraged (155 steps).
 Proof modification of "swapf2f1oaALT" is discouraged (361 steps).
 Proof modification of "syl5imp" is discouraged (23 steps).
 Proof modification of "syl5impVD" is discouraged (57 steps).
