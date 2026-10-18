@@ -581818,6 +581818,18 @@ $)
       QCUCOUFUEOACUCBRQHISUA $.
   $}
 
+  ${
+    $d ph x y $.  $d A x y $.  $d B x y $.
+    gdlop4fv.1 $e |- ( ph -> A e. V ) $.
+    gdlop4fv.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the fourth G&ouml;del operation.  (Contributed by
+       BTernaryTau, 18-Oct-2026.) $)
+    gdlop4fv $p |- ( ph -> ( ~F4 ` <. A , B >. ) = ( A |` B ) ) $=
+      ( vx vy cvv cres cgdlop4 elexd resexd wceq reseq1 adantl reseq2 df-gdlop4
+      cv mpofvop2d ) AHIJJHTZITZKZBCLBUCKZBCKZJABDFMACEGMABCDFNBUBOUEUDOABUBUCP
+      QCUCOUFUEOACUCBRQHISUA $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
