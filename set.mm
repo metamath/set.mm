@@ -579614,6 +579614,27 @@ $)
   $}
 
   ${
+    $d ph x y $.  $d C w z $.  $d A w x y z $.  $d B w x y z $.
+    $d X w x y z $.  $d Y w x y z $.
+    mpofvd.1 $e |- ( ph -> X e. ( A X. B ) ) $.
+    mpofvd.2 $e |- ( ph -> Y e. V ) $.
+    mpofvd.3 $e |- ( ( ph /\ X = <. x , y >. ) -> Y = C ) $.
+    mpofvd.4 $e |- F = ( x e. A , y e. B |-> C ) $.
+    $( Value of a two-argument function (usually an operation) in maps-to
+       notation.  (Contributed by BTernaryTau, 18-Oct-2026.) $)
+    mpofvd $p |- ( ph -> ( F ` X ) = Y ) $=
+      ( vw vz wceq wcel wa wex cv cop cfv cxp syl idd jctird imdistanda 2eximdv
+      elxpi mpd cvv wi elexd eqeq1 anbi1d 2exbidv anbi2d wmo moeq moani mosubop
+      a1i copab cmpo coprab df-mpo dfoprab2 3eqtri vex biantrur eqtri fvopab3ig
+      opabbii syl2anc ) AIBUAZCUAZUBZQZVPDRVQERSZJFQZSZSZCTBTZIGUCJQZAVSVTSZCTB
+      TZWDAIDEUDZRWGKBCIDEUJUEAWFWCBCAVSVTWBAVSSZVTVTWAWIVTUFMUGUHUIUKAIULRJHRW
+      DWEUMAIWHKUNLOUAZVRQZVTPUAZFQZSZSZCTBTZVSWNSZCTBTWDOPIJULHGWJIQZWOWQBCWRW
+      KVSWNWJIVRUOUPUQWLJQZWQWCBCWSWNWBVSWSWMWAVTWLJFUOURURUQWPPUSWJULRZWNPBCWJ
+      WMVTPPFUTVAVBVCGWPOPVDZWTWPSZOPVDGBCDEFVEWNBCPVFXANBCPDEFVGWNBCPOVHVIWPXB
+      OPWTWPOVJVKVNVLVMVOUK $.
+  $}
+
+  ${
     $d V y $.  $d A w y z $.  $d R w y z $.
     $( A strict order relation on an infinite set dominates that set.
        (Contributed by BTernaryTau, 14-Jul-2026.) $)
