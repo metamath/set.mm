@@ -579650,6 +579650,25 @@ $)
   $}
 
   ${
+    $d ph x y $.  $d A x y $.  $d B x y $.  $d R x y $.  $d S x y $.
+    $d L x y $.
+    mpofvop2d.1 $e |- ( ph -> R e. A ) $.
+    mpofvop2d.2 $e |- ( ph -> S e. B ) $.
+    mpofvop2d.3 $e |- ( ph -> L e. V ) $.
+    mpofvop2d.4 $e |- ( ( ph /\ R = x ) -> K = C ) $.
+    mpofvop2d.5 $e |- ( ( ph /\ S = y ) -> L = K ) $.
+    mpofvop2d.6 $e |- F = ( x e. A , y e. B |-> C ) $.
+    $( Value of a two-argument function (usually an operation) in maps-to
+       notation at an ordered pair.  (Contributed by BTernaryTau,
+       18-Oct-2026.) $)
+    mpofvop2d $p |- ( ph -> ( F ` <. R , S >. ) = L ) $=
+      ( cop wceq cv wa wcel wb opthg syl2anc ex anim12d sylbid eqtr ancoms syl6
+      imp mpofvopd ) ABCDEFGHILKMNOAGHSBUAZCUAZSTZKFTZAUQJFTZKJTZUBZURAUQGUOTZH
+      UPTZUBZVAAGDUCHEUCUQVDUDMNGHUOUPDEUEUFAVBUSVCUTAVBUSPUGAVCUTQUGUHUIUTUSUR
+      KJFUJUKULUMRUN $.
+  $}
+
+  ${
     $d V y $.  $d A w y z $.  $d R w y z $.
     $( A strict order relation on an infinite set dominates that set.
        (Contributed by BTernaryTau, 14-Jul-2026.) $)
