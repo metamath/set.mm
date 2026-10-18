@@ -581782,6 +581782,18 @@ $)
         ( ~F8 ` <. x , y >. ) ) ) ) ) ) ) ) ) $.
   $}
 
+  ${
+    $d ph x y $.  $d A x y $.  $d B x y $.
+    gdlop1fv.1 $e |- ( ph -> A e. V ) $.
+    gdlop1fv.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the first G&ouml;del operation.  (Contributed by
+       BTernaryTau, 18-Oct-2026.) $)
+    gdlop1fv $p |- ( ph -> ( ~F1 ` <. A , B >. ) = { A , B } ) $=
+      ( vx vy cvv cv cpr cgdlop1 elexd wcel prex a1i wceq preq1 adantl preq2
+      df-gdlop1 mpofvop2d ) AHIJJHKZIKZLZBCMBUELZBCLZJABDFNACEGNUHJOABCPQBUDRUG
+      UFRABUDUESTCUERUHUGRACUEBUATHIUBUC $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
