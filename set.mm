@@ -579552,6 +579552,16 @@ $)
       IVDTVEVF $.
   $}
 
+  ${
+    ontr1i.1 $e |- C e. On $.
+    ontr1i.2 $e |- A e. B $.
+    ontr1i.3 $e |- B e. C $.
+    $( Transitive law for ordinal numbers.  Inference form of ~ ontr1 .
+       (Contributed by BTernaryTau, 19-Oct-2026.) $)
+    ontr1i $p |- A e. C $=
+      ( con0 wcel ontr1 mp2ani ax-mp ) CGHZACHZDLABHBCHMEFABCIJK $.
+  $}
+
   $( The union of two ordinals is equal to their maximum.  (Contributed by
      BTernaryTau, 7-Oct-2026.) $)
   ordunmax $p |- ( ( Ord A /\ Ord B ) ->
