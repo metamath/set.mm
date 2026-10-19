@@ -72090,9 +72090,10 @@ $)
        to a given zero).  This definition will perhaps be most useful when the
        domain of the function has decidable equality; consider as an
        alternative ` ( R supp Z ) e. Fin ` (see ~ df-supp ) which will behave
-       well when a codomain of the function has decidable equality.
-       (Contributed by AV, 23-May-2019.)  (Revised by Jim Kingdon,
-       16-Oct-2026.) $)
+       well when a codomain of the function has decidable equality.  If both
+       domain and codomain have decidable equality, the two are equivalent as
+       seen at ~ funisfsuppdc .  (Contributed by AV, 23-May-2019.)  (Revised by
+       Jim Kingdon, 16-Oct-2026.) $)
     df-fsuppfi $a |- finSupp = { <. r , z >. | ( Fun r /\
       E. w ( w e. Fin /\ w C_ dom r /\ ( r " ( dom r \ w ) ) C_ { z } ) ) } $.
 
@@ -72141,13 +72142,43 @@ $)
       VGUIWAVJVRVKWAVIVQBVEEVGUJUKULUMUNUOUPABDPFCPVCVDVNUTVAGHMBCDFUQURVB $.
   $}
 
-  $( The property of a function to be finitely supported (in relation to a
-     given zero).  (Contributed by AV, 23-May-2019.) $)
-  funisfsupp $p |- ( ( Fun R /\ R e. V /\ Z e. W )
-                     -> ( R finSupp Z <-> ( R supp Z ) e. Fin ) ) $=
-    ( wfun wcel w3a cfsupp wbr csupp co cfn wa wb isfsupp 3adant1 ibar 3ad2ant1
-    bicomd bitrd ) AEZABFZDCFZGADHIZUAADJKLFZMZUEUBUCUDUFNUAABCDOPUAUBUFUENUCUA
-    UEUFUAUEQSRT $.
+  ${
+    $d A r x y $.  $d B x y $.  $d F p w $.  $d F q r w $.  $d F p x y $.
+    $d Z p w $.  $d Z q r w $.  $d Z p y $.  $d p ph w $.  $d ph q r w $.
+    funisfsuppdc.r $e |- ( ph -> F e. V ) $.
+    funisfsuppdc.f $e |- ( ph -> F : A --> B ) $.
+    funisfsuppdc.z $e |- ( ph -> Z e. B ) $.
+    funisfsuppdc.dmdc $e |- ( ph -> A. x e. A A. y e. A DECID x = y ) $.
+    funisfsuppdc.cdmdc $e |- ( ph -> A. x e. B A. y e. B DECID x = y ) $.
+    $( The property of a function to be finitely supported (in relation to a
+       given zero).  This shows that ~ df-fsuppfi and ~ df-supp give the same
+       results, in the case of decidable equality.  (Contributed by AV,
+       23-May-2019.)  (Revised by Jim Kingdon, 17-Oct-2026.) $)
+    funisfsuppdc $p |- ( ph
+                       -> ( F finSupp Z <-> ( F supp Z ) e. Fin ) ) $=
+      ( wcel wa cv wss wdc wceq ad3antrrr vw vp vr vq cfsupp wbr csupp cfn cdif
+      co cdm cima csn w3a wfun wex wb isfsuppfi syl2anc simplbda wral simpr1 wf
+      ad2antrr cfv simplr3 simpr difeq1d eleqtrrd wi ffund eldifad funfvima mpd
+      sseldd elsni syl simpr2 sseq2d mpbid adantr elssdc ralrimiva suppssdc wne
+      fdmd eqeq2 dcbid eqeq1 ralbidv ffvelcdmd rspcdva dcned wfn ffnd elsuppfng
+      sselda syl3anc mpbirand mpbird ssfidc exlimddv suppssdmg imaeq2d crn ccnv
+      suppinisegdc funimacnv eqtrd inss1 eqsstrdi eqsstrd isfsuppfid impbida
+      cin ) AFHUEUFZFHUGUJZUHNZAXPOZUAPZUHNZXTFUKZQZFYBXTUIZULZHUMZQZUNZXRUAAXP
+      FUOZYHUAUPZAFGNZHENZXPYIYJOUQIKUAFEGHURUSUTXSYHOZYAXQXTQUBPZXQNZRZUBXTVAX
+      RXSYAYCYGVBZYMUCDEUDFXTHADEFVCZXPYHJVDYMUDPZDXTUIZNZOZYSFVEZYFNUUCHSUUBYE
+      YFUUCYAYCYGXSUUAVFUUBYSYDNZUUCYENZUUBYSYTYDYMUUAVGZUUBYBDXTAYBDSXPYHUUAAD
+      EFJWFZTZVHVIUUBYIYSYBNUUDUUEVJAYIXPYHUUAADEFJVKZTUUBYSDYBUUBYSDXTUUFVLUUH
+      VIYDYSFVMUSVNVOUUCHVPVQYMUCPZXTNRUCDYMUUJDNZOBCXTDUUJABPZCPZSZRZCDVABDVAX
+      PYHUUKLTYMUUKVGYMXTDQZUUKYMYCUUPXSYAYCYGVRAYCUUPUQXPYHAYBDXTUUGVSVDVTZWAY
+      MYAUUKYQWAWBWCWDYMYPUBXTYMYNXTNZOZYPYNFVEZHWEZRUUSUUTHUUSUUTUUMSZRZUUTHSZ
+      RCEHUUMHSUVBUVDUUMHUUTWGWHUUSUUOCEVAZUVCCEVABEUUTUULUUTSZUUOUVCCEUVFUUNUV
+      BUULUUTUUMWIWHWJAUVEBEVAXPYHUURMTUUSDEYNFAYRXPYHUURJTYMXTDYNUUQWQZWKWLAYL
+      XPYHUURKTWLWMUUSYOUVAUUSYOYNDNZUVAUVGAYOUVHUVAOUQZXPYHUURAFDWNYKYLUVIADEF
+      JWOIKYNFGEDHWPWRTWSWHWTWCUBXTXQXAWRXBAXROZFEGXQHAYKXRIWAZAYLXRKWAZAYIXRUU
+      IWAAXRVGUVJYKYLXQYBQUVKUVLFGEHXCUSAFYBXQUIZULZYFQXRAUVNFDXQUIZULZYFAUVMUV
+      OFAYBDXQUUGVHXDAUVPYFFXEZXOZYFAUVPFFXFYFULZULZUVRAUVOUVSFABCDEFGHJIKMXGXD
+      AYIUVTUVRSUUIYFFXHVQXIYFUVQXJXKXLWAXMXN $.
+  $}
 
   $( Implications of a class being a finitely supported function (in relation
      to a given zero).  (Contributed by AV, 26-May-2019.) $)
