@@ -582005,6 +582005,25 @@ $)
       WSWNSAXBWRWKOBWIWJVPVQVRCWJSZWFWSSAXCWEWROCWJBWAVQVRIJHVSWBABCDEFGWCWD $.
   $}
 
+  ${
+    $d ph n x y $.  $d A n x y $.  $d B n x y $.
+    gdlopcfv3.1 $e |- ( ph -> A e. V ) $.
+    gdlopcfv3.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the combined G&ouml;del operations function when its first
+       argument is 3.  (Contributed by BTernaryTau, 19-Oct-2026.) $)
+    gdlopcfv3 $p |- ( ph -> ( ~F ` <. 3o , A , B >. ) = ( A \ B ) ) $=
+      ( vn vx vy c3o cfv cop cgdlop3 cvv cv c1o wceq c2o cif cgdlopc c9o c0 csn
+      cotp cdif cgdlop1 cgdlop2 c4o cgdlop4 c5o cgdlop5 c6o cgdlop6 c7o cgdlop7
+      cgdlop8 wcel 3olt9o df-3o suceldifsn0 a1i elexd fvexd wa 1on 3on eqsucidi
+      df-2o ontr1i gdlopcfvlem eqcom bilani iftrued 3eqtrrd opeq1 fveq2d adantl
+      con0 2on opeq2 df-gdlopc mpt3fvot2d gdlop3fv eqtrd ) AKBCUEUALBCMZNLZBCUF
+      AHIJUBUCUDUFZOOHPZQRIPZJPZMZUGLZWISRWLUHLZWIKRZWLNLZWIUIRWLUJLWIUKRWLULLW
+      IUMRWLUNLWIUORWLUPLWLUQLTTTTZTZTZTZKBCUAWPBWKMZNLZWGOKWHURAKUBSUSUTVAVBAB
+      DFVCACEGVCAWFNVDAKWIRZVEZWTWSWRWPAQKWIWMWSVFVGQSKVGQSVSVFVIVHSKVSVTUTVHZV
+      JVKASKWIWNWRVTVGXEVKXDWOWPWQXCWOAKWIVLVMVNVOBWJRZXBWPRAXFXAWLNBWJWKVPVQVR
+      CWKRZWGXBRAXGWFXANCWKBWAVQVRIJHWBWCABCDEFGWDWE $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
