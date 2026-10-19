@@ -579571,6 +579571,16 @@ $)
       ( csuc wcel sucidg ax-mp eleqtrri ) AAFZBACGAKGDACHIEJ $.
   $}
 
+  ${
+    suceldifsn0.1 $e |- A e. B $.
+    suceldifsn0.2 $e |- A = suc C $.
+    $( A successor that is a member of a set is also a member of that set with
+       the empty set removed.  (Contributed by BTernaryTau, 19-Oct-2026.) $)
+    suceldifsn0 $p |- A e. ( B \ { (/) } ) $=
+      ( c0 csn cdif wcel wne csuc nsuceq0 eqnetri eldifsn mpbir2an ) ABFGHIABIA
+      FJDACKFECLMABFNO $.
+  $}
+
   $( The union of two ordinals is equal to their maximum.  (Contributed by
      BTernaryTau, 7-Oct-2026.) $)
   ordunmax $p |- ( ( Ord A /\ Ord B ) ->
