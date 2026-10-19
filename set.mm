@@ -582024,6 +582024,26 @@ $)
       CWKRZWGXBRAXGWFXANCWKBWAVQVRIJHWBWCABCDEFGWDWE $.
   $}
 
+  ${
+    $d ph n x y $.  $d A n x y $.  $d B n x y $.
+    gdlopcfv4.1 $e |- ( ph -> A e. V ) $.
+    gdlopcfv4.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the combined G&ouml;del operations function when its first
+       argument is 4.  (Contributed by BTernaryTau, 19-Oct-2026.) $)
+    gdlopcfv4 $p |- ( ph -> ( ~F ` <. 4o , A , B >. ) = ( A |` B ) ) $=
+      ( vn vx vy c4o cfv cop cgdlop4 c1o wceq c2o c3o cif 4on cotp cgdlopc cres
+      c9o c0 csn cvv cv cgdlop1 cgdlop2 cgdlop3 c5o cgdlop5 c6o cgdlop6 cgdlop7
+      cdif c7o cgdlop8 wcel 4olt9o df-4o suceldifsn0 a1i elexd fvexd con0 df-3o
+      wa 2on eqsucidi 3on ontr1i gdlopcfvlem eqcom bilani iftrued 3eqtrrd df-2o
+      1on eqtr4d opeq1 fveq2d adantl opeq2 df-gdlopc mpt3fvot2d gdlop4fv eqtrd
+      ) AKBCUAUBLBCMZNLZBCUCAHIJUDUEUFUQZUGUGHUHZOPIUHZJUHZMZUILZWMQPWPUJLZWMRP
+      WPUKLZWMKPZWPNLZWMULPWPUMLWMUNPWPUOLWMURPWPUPLWPUSLSSSZSZSZSZSZKBCUBXABWO
+      MZNLZWKUGKWLUTAKUDRVAVBVCVDABDFVEACEGVEAWJNVFAKWMPZVIZXAXEXFXJXEXDXCXAAQK
+      WMWRXDVJTQRKTQRVGVJVHVKZRKVGVLVBVKZVMVNARKWMWSXCVLTXLVNXJWTXAXBXIWTAKWMVO
+      VPVQVRAOKWMWQXEVTTORKTOQRVLOQVGVTVSVKXKVMXLVMVNWABWNPZXHXAPAXMXGWPNBWNWOW
+      BWCWDCWOPZWKXHPAXNWJXGNCWOBWEWCWDIJHWFWGABCDEFGWHWI $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
