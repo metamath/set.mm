@@ -17385,6 +17385,7 @@ New usage of "intidl" is discouraged (2 uses).
 New usage of "intnatN" is discouraged (0 uses).
 New usage of "iorlid" is discouraged (2 uses).
 New usage of "iotaeq" is discouraged (0 uses).
+New usage of "iotan0OLD" is discouraged (0 uses).
 New usage of "ip0i" is discouraged (1 uses).
 New usage of "ip1i" is discouraged (2 uses).
 New usage of "ip1ilem" is discouraged (1 uses).
@@ -20721,6 +20722,7 @@ Proof modification of "int2" is discouraged (14 steps).
 Proof modification of "int3" is discouraged (17 steps).
 Proof modification of "intidl" is discouraged (503 steps).
 Proof modification of "iorlid" is discouraged (57 steps).
+Proof modification of "iotan0OLD" is discouraged (86 steps).
 Proof modification of "iscmgmALT" is discouraged (57 steps).
 Proof modification of "iscom2" is discouraged (130 steps).
 Proof modification of "iscringd" is discouraged (867 steps).
