@@ -581957,6 +581957,18 @@ $)
       F $.
   $}
 
+  ${
+    gdlopcfvlem.1 $e |- A e. On $.
+    gdlopcfvlem.2 $e |- B e. On $.
+    gdlopcfvlem.3 $e |- A e. B $.
+    $( Lemma for ~ gdlopcfv2 through ~ gdlopcfv8 .  (Contributed by
+       BTernaryTau, 19-Oct-2026.) $)
+    gdlopcfvlem $p |- ( ( ph /\ B = C ) -> if ( C = A , D , E ) = E ) $=
+      ( wceq wa wn wne wss wcel con0 wb onelpss mp2an mpbi neeq2 mpbii iffalsed
+      simpri nesym sylib adantl ) ACDJZKDBJZEFUHUILZAUHBDMZUJUHBCMZUKBCNZULBCOZ
+      UMULKZIBPOCPOUNUOQGHBCRSTUDCDBUAUBBDUEUFUGUC $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
