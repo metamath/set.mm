@@ -579562,6 +579562,15 @@ $)
       ( con0 wcel ontr1 mp2ani ax-mp ) CGHZACHZDLABHBCHMEFABCIJK $.
   $}
 
+  ${
+    eqsucidi.1 $e |- A e. V $.
+    eqsucidi.2 $e |- B = suc A $.
+    $( A set belongs to its successor.  Inference form of ~ sucidg with an
+       equality hypothesis.  (Contributed by BTernaryTau, 19-Oct-2026.) $)
+    eqsucidi $p |- A e. B $=
+      ( csuc wcel sucidg ax-mp eleqtrri ) AAFZBACGAKGDACHIEJ $.
+  $}
+
   $( The union of two ordinals is equal to their maximum.  (Contributed by
      BTernaryTau, 7-Oct-2026.) $)
   ordunmax $p |- ( ( Ord A /\ Ord B ) ->
