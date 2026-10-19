@@ -61429,6 +61429,28 @@ $)
     ITZMZUHNUGUKUMBBOUHMZMZUHUGULUNBABCDEPQUFBRZUIBSUJUOUHNBUAUPUIUHBUBUCUDUE
     $.
 
+  ${
+    $d F w x y $.  $d V w $.  $d W w $.  $d Z w y $.  $d A w $.  $d B x y $.
+    $d ph w $.
+    suppinisegdc.fun $e |- ( ph -> F : A --> B ) $.
+    suppinisegdc.f $e |- ( ph -> F e. V ) $.
+    suppinisegdc.z $e |- ( ph -> Z e. B ) $.
+    suppinisegdc.dc $e |- ( ph -> A. x e. B A. y e. B DECID x = y ) $.
+    $( Relation between the support ` ( F supp Z ) ` and the initial segment
+       ` ( ``' F " { Z } ) ` .  (Contributed by Thierry Arnoux, 25-Jun-2024.)
+       (Revised by Jim Kingdon, 18-Oct-2026.) $)
+    suppinisegdc $p |- ( ph -> ( A \ ( F supp Z ) ) = ( `' F " { Z } ) ) $=
+      ( vw cv wcel wa wceq wdc wb cvv csupp co cdif ccnv csn cima cfv eldif wne
+      wn eqeq2 dcbid wral eqeq1 ralbidv adantr ffvelcdmda rspcdva nnedc syl wfn
+      ffnd elsuppfng syl3anc baibd notbid fvexg sylancl 3bitr4d pm5.32da bitrid
+      vex elsng elpreima bitr4d eqrdv ) AMDFHUAUBZUCZFUDHUEZUFZAMNZVROZWADOZWAF
+      UGZVSOZPZWAVTOZWBWCWAVQOZUJZPAWFWADVQUHAWCWIWEAWCPZWDHUIZUJZWDHQZWIWEWJWM
+      RZWLWMSWJWDCNZQZRZWNCEHWOHQWPWMWOHWDUKULWJBNZWOQZRZCEUMZWQCEUMBEWDWRWDQZW
+      TWQCEXBWSWPWRWDWOUNULUOAXABEUMWCLUPADEWAFIUQURAHEOZWCKUPURWDHUSUTWJWHWKAW
+      HWCWKAFDVAZFGOZXCWHWCWKPSADEFIVBZJKWAFGEDHVCVDVEVFWJWDTOZWEWMSWJXEWATOXGA
+      XEWCJUPMVLWAFGTVGVHWDHTVMUTVIVJVKAXDWGWFSXFDWAVSFVNUTVOVP $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
