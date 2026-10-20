@@ -72181,12 +72181,14 @@ $)
   $}
 
   ${
+    $d F w $.  $d Z w $.
     fsuppfund.1 $e |- ( ph -> F finSupp Z ) $.
     $( A finitely supported function is a function.  (Contributed by SN,
        8-Mar-2025.) $)
     fsuppfund $p |- ( ph -> Fun F ) $=
-      ( cfsupp wbr wfun csupp co cfn wcel fsuppimp simpld syl ) ABCEFZBGZDOPBCH
-      IJKBCLMN $.
+      ( vw wfun cv cfn wcel cdm wss cdif cima csn w3a wex cfsupp wbr wa cvv wb
+      relfsupp brrelex12i isfsuppfi 3syl mpbid simpld ) ABFZEGZHIUIBJZKBUJUILMC
+      NKOEPZABCQRZUHUKSZDAULBTICTISULUMUADBCQUBUCEBTTCUDUEUFUG $.
   $}
 
   $( If two functions have the same support, one function is finitely supported
