@@ -72206,9 +72206,9 @@ $)
   $( The empty set is a finitely supported function.  (Contributed by AV,
      19-Jul-2019.) $)
   0fsupp $p |- ( Z e. V -> (/) finSupp Z ) $=
-    ( wcel c0 cfsupp wbr csupp co cfn supp0 0fi eqeltrdi wfun cvv wb funisfsupp
-    fun0 0ex mp3an12 mpbird ) BACZDBEFZDBGHZICZUAUCDIABJKLDMDNCUAUBUDOQRDNABPST
-    $.
+    ( wcel cvv 0ex a1i wfun fun0 cfn 0fi cdm wss 0ss cdif cima csn 0ima eqsstri
+    c0 id isfsuppfid ) BACZSADSBSDCUBEFUBTSGUBHFSICUBJFSSKZLUBUCMFSUCSNZOZBPZLU
+    BUESUFUDQUFMRFUA $.
 
   ${
     snopfsuppdc.x $e |- ( ph -> X e. V ) $.
