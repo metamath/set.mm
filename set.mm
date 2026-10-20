@@ -890960,6 +890960,41 @@ $)
       CEMNOPLQCRSBRSAEBCUBUCUDUE $.
   $}
 
+  ${
+    $d P a b $.
+    $( Twice every prime greater than three is the sum of two positive integers
+       with Liouville value one.  Theorem 1.2 of "A Goldbach theorem for the
+       Liouville function",
+       ~ https://github.com/CaptainSude/Liouville-Goldbach .  This follows
+       directly from ~ liougb2prmposd .  See ~ liougbprm2 for an alternate
+       version with an outer restricted universal quantifier.  (Contributed by
+       Zhi Wang, 21-Oct-2026.) $)
+    liougbprm $p |- ( ( P e. Prime /\ 3 < P ) ->
+      E. a e. NN E. b e. NN ( ( 2 x. P ) = ( a + b ) /\
+        ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $=
+      ( cprime wcel c3 clt wbr wa simpl simpr liougb2prmposd ) ADEZFAGHZIABCMNJ
+      MNKL $.
+  $}
+
+  ${
+    $d p a b $.
+    $( Alternate version of ~ liougbprm , with an outer restricted universal
+       quantifier excluding the primes two and three.  The result follows from
+       ~ liougbprm by restricted generalization, reusing its entire proof
+       chain.  (Contributed by Zhi Wang, 21-Oct-2026.) $)
+    liougbprm2 $p |- A. p e. ( Prime \ { 2 , 3 } )
+      E. a e. NN E. b e. NN ( ( 2 x. p ) = ( a + b ) /\
+        ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) $=
+      ( c2 cv co wceq cliou cfv c1 w3a cn wrex cprime c3 wcel wbr c5 a1i syl cr
+      cmul caddc cpr cdif clt eldifi 3re 5re prmnn 3lt5 cuz cle wo w3o prm23ge5
+      nnred wn wne eldifpr biimpi simp2d neneqd 3orel1 mpd simp3d orel1 ltletrd
+      wi eluzle liougbprm syl2anc rgen ) DAEZUBFBEZCEZUCFGVOHIJGVPHIJGKCLMBLMZA
+      NDOUDZUEZVNVSPZVNNPZOVNUFQVQVNNVRUGZVTORVNOUAPVTUHSRUAPVTUISVTVNVTWAVNLPW
+      BVNUJTUQORUFQVTUKSVTVNRULIPZRVNUMQVTVNOGZWCUNZWCVTVNDGZWDWCUOZWEVTWAWGWBV
+      NUPTVTWFURWGWEVIVTVNDVTWAVNDUSZVNOUSZVTWAWHWIKVNNDOUTVAZVBVCWFWDWCVDTVEVT
+      WDURWEWCVIVTVNOVTWAWHWIWJVFVCWDWCVGTVERVNVJTVHVNBCVKVLVM $.
+  $}
+
 $( (End of Zhi Wang's mathbox.) $)
 $( End $[ set-mbox-zw.mm $] $)
 
