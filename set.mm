@@ -580025,6 +580025,27 @@ $)
     RS $.
 
   ${
+    $d ph x y $.  $d A x y $.  $d B x y $.  $d R x y $.
+    erscottd.1 $e |- ( ph -> R Er V ) $.
+    erscottd.2 $e |- ( ph -> A e. V ) $.
+    $( Applying the Scott operation to equivalence classes preserves their
+       equality property.  (Contributed by BTernaryTau, 20-Oct-2026.) $)
+    erscottd $p |- ( ph ->
+        ( A R B <-> Scott { x | x R A } = Scott { x | x R B } ) ) $=
+      ( vy wbr cv cab wceq wa w3a 3ad2ant1 wcel c0 wn breq1 cscott simp3 3expia
+      wer simp2 ertrd ertr4d impbid abbidv scotteqd wex erref elabd n0i scott0b
+      syl sylnib cin disjeq0 biimpcd simpl con3i nsyli wne df-ne ndisj imbitrdi
+      bitr3i mpan9 elscottab 3ad2ant2 3ad2ant3 ertr3d 3expib exlimdv adantr mpd
+      wi impbida ) ACDEJZBKZCEJZBLZUAZWADEJZBLZUAZMZAVTNZWCWFWIWBWEBWIWBWEAVTWB
+      WEAVTWBOWACDEFAVTFEUDZWBGPAVTWBUBAVTWBUEUFUCAVTWEWBAVTWEOWADCEFAVTWJWEGPA
+      VTWEUBAVTWEUEUGUCUHUIUJAWHNIKZWDQZWKWGQZNZIUKZVTAWDRMZSZWHWOAWCRMZWPACWCQ
+      WRSAWBCCEJBCFHACEFGHULWACCETUMWCCUNUPWCUOUQWHWQWDWGURZRMZSZWOWHWTWPWGRMZN
+      ZWQWTWHXCWDWGUSUTXCWPWPXBVAVBVCXAWSRVDWOWSRVEIWDWGVFVHVGVIAWOVTVRWHAWNVTI
+      AWLWMVTAWLWMOCWKDEFAWLWJWMGPWLAWKCEJZWMWBXDBIWAWKCETVJVKWMAWKDEJZWLWEXEBI
+      WAWKDETVJVLVMVNVOVPVQVS $.
+  $}
+
+  ${
     $d f w x $.  $d f v x $.  $d f w y z $.
     $( Axiom of Choice equivalent: every set can be mapped one-to-one into the
        ordinals.  (Contributed by BTernaryTau, 16-Sep-2026.) $)
