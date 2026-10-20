@@ -582087,6 +582087,29 @@ $)
       MABCDEFGWNWO $.
   $}
 
+  ${
+    $d ph n x y $.  $d A n x y $.  $d B n x y $.
+    gdlopcfv7.1 $e |- ( ph -> A e. V ) $.
+    gdlopcfv7.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the combined G&ouml;del operations function when its first
+       argument is 7.  (Contributed by BTernaryTau, 19-Oct-2026.) $)
+    gdlopcfv7 $p |- ( ph ->
+        ( ~F ` <. 7o , A , B >. ) = ( A i^i ( Cnv2 ` B ) ) ) $=
+      ( c7o cfv cgdlop7 wceq c2o c3o c4o c5o c6o cif 7on con0 eqsucidi vn vx vy
+      cotp cgdlopc cop ccnv2 cin c9o c0 csn cdif cvv cv cgdlop1 cgdlop2 cgdlop3
+      cgdlop4 cgdlop5 cgdlop6 cgdlop8 wcel 7olt9o df-7o suceldifsn0 elexd fvexd
+      c1o a1i wa 2on df-3o 3on df-4o 4on df-5o 5on df-6o 6on ontr1i gdlopcfvlem
+      1on df-2o eqcom bilani iftrued 3eqtrrd 3eqtr4rd opeq1 fveq2d adantl opeq2
+      df-gdlopc mpt3fvot2d gdlop7fv eqtrd ) AHBCUDUEIBCUFZJIZBCUGIUHAUAUBUCUIUJ
+      UKULZUMUMUAUNZVHKUBUNZUCUNZUFZUOIZWTLKXCUPIZWTMKXCUQIZWTNKXCURIZWTOKXCUSI
+      ZWTPKXCUTIZWTHKZXCJIZXCVAIZQZQZQZQZQZQZQZHBCUEXKBXBUFZJIZWRUMHWSVBAHUIPVC
+      VDVEVIABDFVFACEGVFAWQJVGAHWTKZVJZXRXQXSXKALHWTXEXQVKRLMHRLMSVKVLTMNHRMNSV
+      MVNTNOHRNOSVOVPTOPHROPSVQVRTPHSVSVDTZVTZVTZVTZVTZWAAVHHWTXDXRWBRVHLHRVHLS
+      WBWCTYHVTWAYCXPXOXQXKANHWTXGXOVORYFWAAMHWTXFXPVMRYGWAYCXOXNXMXKAOHWTXHXNV
+      QRYEWAAPHWTXIXMVSRYDWAYCXJXKXLYBXJAHWTWDWEWFWGWHWHBXAKZYAXKKAYIXTXCJBXAXB
+      WIWJWKCXBKZWRYAKAYJWQXTJCXBBWLWJWKUBUCUAWMWNABCDEFGWOWP $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
