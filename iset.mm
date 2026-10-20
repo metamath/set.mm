@@ -72210,19 +72210,16 @@ $)
     c0 id isfsuppfid ) BACZSADSBSDCUBEFUBTSGUBHFSICUBJFSSKZLUBUCMFSUCSNZOZBPZLU
     BUESUFUDQUFMRFUA $.
 
-  ${
-    snopfsuppdc.x $e |- ( ph -> X e. V ) $.
-    snopfsuppdc.y $e |- ( ph -> Y e. W ) $.
-    snopfsuppdc.z $e |- ( ph -> Z e. U ) $.
-    snopfsuppdc.dc $e |- ( ph -> DECID Y = Z ) $.
-    $( A singleton containing an ordered pair is a finitely supported function.
-       (Contributed by AV, 19-Jul-2019.) $)
-    snopfsuppdc $p |- ( ph -> { <. X , Y >. } finSupp Z ) $=
-      ( cop csn cvv wcel opexg syl2anc syl c0 cfn snexg wfun funsng co wceq cif
-      csupp eqid suppsnopdc 0fi a1i snfig ifcldcd eqeltrd isfsuppd ) AEFLZMZNBG
-      AUPNOZUQNOAECOZFDOZURHIEFCDPQUPNUARJAUSUTUQUBHIEFCDUCQAUQGUGUDFGUEZSEMZUF
-      TABUQCDEFGUQUHHIJKUIAVASVBTSTOAUJUKAUSVBTOHECULRKUMUNUO $.
-  $}
+  $( A singleton containing an ordered pair is a finitely supported function.
+     (Contributed by AV, 19-Jul-2019.) $)
+  snopfsupp $p |- ( ( X e. V /\ Y e. W /\ Z e. U )
+                    -> { <. X , Y >. } finSupp Z ) $=
+    ( wcel w3a cop csn cvv opexg 3adant3 snexg syl simp3 cdif cima c0 eqtrdi
+    wfun funsng cfn snfig 3ad2ant1 ssid wceq dmsnopg 3ad2ant2 sseqtrrid difeq1d
+    cdm difid imaeq2d ima0 0ss eqsstrdi isfsuppfid ) DBGZECGZFAGZHZDEIZJZAKDJZF
+    VBVCKGZVDKGUSUTVFVADEBCLMVCKNOUSUTVAPUSUTVDUAVADEBCUBMUSUTVEUCGVADBUDUEVBVE
+    VEVDULZVEUFUTUSVGVEUGVADECUHUIZUJVBVDVGVEQZRZSFJZVBVJVDSRSVBVISVDVBVIVEVEQS
+    VBVGVEVEVHUKVEUMTUNVDUOTVKUPUQUR $.
 
   $( Two ways of saying that a function with known codomain is finitely
      supported.  (Contributed by AV, 8-Jul-2019.) $)
