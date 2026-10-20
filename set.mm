@@ -580017,6 +580017,13 @@ $)
       CUBKZOUDUCGUEUGUEUDAGUFCAKZUGCUDALUBAJUHUGPAEUFCUBAMQNRCUDUBLSTUA $.
   $}
 
+  $( The Scott's trick set of a transitive class is also transitive.
+     (Contributed by BTernaryTau, 20-Oct-2026.) $)
+  trscott $p |- ( Tr A -> Tr Scott A ) $=
+    ( wtr crnk cima cint csuc cr1 cfv cscott r1tr trin mpan2 wceq dfscott3 treq
+    cin wb ax-mp sylibr ) ABZACADEFZGHZPZBZAIZBZTUBBUDUAJAUBKLUEUCMUFUDQANUEUCO
+    RS $.
+
   ${
     $d f w x $.  $d f v x $.  $d f w y z $.
     $( Axiom of Choice equivalent: every set can be mapped one-to-one into the
