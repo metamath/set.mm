@@ -72197,9 +72197,10 @@ $)
     $( A constant function with value zero is finitely supported.  (Contributed
        by AV, 30-Jun-2019.) $)
     fczfsuppd $p |- ( ph -> ( B X. { Z } ) finSupp Z ) $=
-      ( csn cxp cvv wcel snexg syl xpexd wfn wfun fnconstg fnfun 3syl cfn csupp
-      co c0 fczsupp0 0fi eqeltri a1i isfsuppd ) ABEHZIZJDEABUICJFAEDKZUIJKGEDLM
-      NGAUKUJBOUJPGBEDQBUJRSUJEUAUBZTKAULUCTBEUDUEUFUGUH $.
+      ( csn cxp cvv c0 wcel snexg syl xpexd wfn wfun fnconstg fnfun a1i cfn 0fi
+      3syl cdm wss 0ss cdif wf fconstg fimassd isfsuppfid ) ABEHZIZDJKEABULCJFA
+      EDLZULJLGEDMNOGAUNUMBPUMQGBEDRBUMSUCKUALAUBTKUMUDZUEAUOUFTABULUMUOKUGAUNB
+      ULUMUHGBEDUINUJUK $.
   $}
 
   $( The empty set is a finitely supported function.  (Contributed by AV,
