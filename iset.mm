@@ -72192,6 +72192,18 @@ $)
   $}
 
   ${
+    fidmfisupp.1 $e |- ( ph -> F : D --> R ) $.
+    fidmfisupp.2 $e |- ( ph -> D e. Fin ) $.
+    fidmfisupp.3 $e |- ( ph -> Z e. V ) $.
+    $( A function with a finite domain is finitely supported.  (Contributed by
+       Glauco Siliprandi, 24-Dec-2020.) $)
+    fidmfisupp $p |- ( ph -> F finSupp Z ) $=
+      ( cvv cdm cfn fexd ffund fdmd eqeltrd ssidd cdif cima c0 csn imaeq2i ima0
+      wss difid eqtri 0ss eqsstri a1i isfsuppfid ) ADEJDKZFABCLDGHMIABCDGNAUKBL
+      ABCDGOHPAUKQDUKUKRZSZFUAZUDAUMTUNUMDTSTULTDUKUEUBDUCUFUNUGUHUIUJ $.
+  $}
+
+  ${
     fczfsuppd.b $e |- ( ph -> B e. V ) $.
     fczfsuppd.z $e |- ( ph -> Z e. W ) $.
     $( A constant function with value zero is finitely supported.  (Contributed
