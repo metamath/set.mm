@@ -16578,6 +16578,7 @@ New usage of "elspansni" is discouraged (2 uses).
 New usage of "elunirnALT" is discouraged (0 uses).
 New usage of "elunop" is discouraged (7 uses).
 New usage of "elunop2" is discouraged (0 uses).
+New usage of "elvvOLD" is discouraged (0 uses).
 New usage of "elxpcbasex1ALT" is discouraged (0 uses).
 New usage of "elxpcbasex2ALT" is discouraged (0 uses).
 New usage of "en0ALT" is discouraged (0 uses).
@@ -18155,6 +18156,7 @@ New usage of "nnadjuALT" is discouraged (0 uses).
 New usage of "nnexALT" is discouraged (3 uses).
 New usage of "nnindALT" is discouraged (0 uses).
 New usage of "nnne0ALT" is discouraged (0 uses).
+New usage of "noelOLD" is discouraged (0 uses).
 New usage of "nonbooli" is discouraged (0 uses).
 New usage of "norm-i" is discouraged (13 uses).
 New usage of "norm-i-i" is discouraged (2 uses).
@@ -18792,6 +18794,7 @@ New usage of "reldmxpcALT" is discouraged (0 uses).
 New usage of "relop" is discouraged (1 uses).
 New usage of "relopabVD" is discouraged (0 uses).
 New usage of "relopabiALT" is discouraged (0 uses).
+New usage of "relresOLD" is discouraged (0 uses).
 New usage of "relresfldOLD" is discouraged (0 uses).
 New usage of "relrngo" is discouraged (6 uses).
 New usage of "renegclALT" is discouraged (0 uses).
@@ -19844,6 +19847,8 @@ Proof modification of "bj-cleljusti" is discouraged (20 steps).
 Proof modification of "bj-clex" is discouraged (50 steps).
 Proof modification of "bj-cmnssmnd" is discouraged (30 steps).
 Proof modification of "bj-cmnssmndel" is discouraged (5 steps).
+Proof modification of "bj-cnvcnv" is discouraged (17 steps).
+Proof modification of "bj-cnvcnv2" is discouraged (24 steps).
 Proof modification of "bj-consensusALT" is discouraged (30 steps).
 Proof modification of "bj-csbprc" is discouraged (47 steps).
 Proof modification of "bj-currypara" is discouraged (16 steps).
@@ -19855,6 +19860,7 @@ Proof modification of "bj-dfid2ALT" is discouraged (157 steps).
 Proof modification of "bj-dfif" is discouraged (39 steps).
 Proof modification of "bj-dfnnf3" is discouraged (34 steps).
 Proof modification of "bj-dfnul2" is discouraged (21 steps).
+Proof modification of "bj-dfrel2" is discouraged (31 steps).
 Proof modification of "bj-dfsbc" is discouraged (63 steps).
 Proof modification of "bj-disj2r" is discouraged (88 steps).
 Proof modification of "bj-disjsn01" is discouraged (18 steps).
@@ -20340,6 +20346,7 @@ Proof modification of "elpwgded" is discouraged (23 steps).
 Proof modification of "elpwgdedVD" is discouraged (23 steps).
 Proof modification of "elrefsymrels3" is discouraged (65 steps).
 Proof modification of "elunirnALT" is discouraged (38 steps).
+Proof modification of "elvvOLD" is discouraged (51 steps).
 Proof modification of "elxpcbasex1ALT" is discouraged (49 steps).
 Proof modification of "elxpcbasex2ALT" is discouraged (49 steps).
 Proof modification of "en0ALT" is discouraged (62 steps).
@@ -20928,6 +20935,7 @@ Proof modification of "nnadjuALT" is discouraged (62 steps).
 Proof modification of "nnexALT" is discouraged (34 steps).
 Proof modification of "nnindALT" is discouraged (15 steps).
 Proof modification of "nnne0ALT" is discouraged (19 steps).
+Proof modification of "noelOLD" is discouraged (59 steps).
 Proof modification of "normlem7tALT" is discouraged (177 steps).
 Proof modification of "notnotrALT" is discouraged (12 steps).
 Proof modification of "notnotrALT2" is discouraged (2 steps).
@@ -21072,6 +21080,7 @@ Proof modification of "reldisjunOLD" is discouraged (58 steps).
 Proof modification of "reldmxpcALT" is discouraged (143 steps).
 Proof modification of "relopabVD" is discouraged (354 steps).
 Proof modification of "relopabiALT" is discouraged (74 steps).
+Proof modification of "relresOLD" is discouraged (30 steps).
 Proof modification of "relresfldOLD" is discouraged (117 steps).
 Proof modification of "relrngo" is discouraged (96 steps).
 Proof modification of "renegcl" is discouraged (34 steps).
