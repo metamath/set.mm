@@ -72204,6 +72204,18 @@ $)
   $}
 
   ${
+    $d A x $.  $d V x $.  $d ph x $.
+    fsuppmptdm.f $e |- F = ( x e. A |-> Y ) $.
+    fsuppmptdm.a $e |- ( ph -> A e. Fin ) $.
+    fsuppmptdm.y $e |- ( ( ph /\ x e. A ) -> Y e. V ) $.
+    fsuppmptdm.z $e |- ( ph -> Z e. W ) $.
+    $( A mapping with a finite domain is finitely supported.  (Contributed by
+       AV, 7-Jun-2019.) $)
+    fsuppmptdm $p |- ( ph -> F finSupp Z ) $=
+      ( fmptd fdmfifsupp ) ACEDFHABCGEDKIMJLN $.
+  $}
+
+  ${
     fczfsuppd.b $e |- ( ph -> B e. V ) $.
     fczfsuppd.z $e |- ( ph -> Z e. W ) $.
     $( A constant function with value zero is finitely supported.  (Contributed
