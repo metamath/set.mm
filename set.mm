@@ -50380,6 +50380,12 @@ $)
   nvel $p |- -. _V e. A $=
     ( vx cvv wcel cv wceq wex vnex elisset mto ) CADBECFBGBHBCAIJ $.
 
+  $( If a class is the universal class it doesn't belong to any class,
+     generalization of ~ nvel .  (Contributed by Alexander van der Vekens,
+     26-May-2017.) $)
+  nvelim $p |- ( A = _V -> -. A e. B ) $=
+    ( cvv wceq wcel nvel wb eleq1 eqcoms mtbii ) ACDCBEZABEZBFKLGCACABHIJ $.
+
   $( The universal class is not a member of itself (and thus is not a set).
      Proposition 5.21 of [TakeutiZaring] p. 21; our proof, however, does not
      depend on the Axiom of Regularity.  (Contributed by NM, 23-Aug-1993.)
@@ -62505,6 +62511,16 @@ $)
       ( weq wb wal cab cv csn wceq cio abbi df-sn eqtr4di iotaval2 syl ) ABCDZE
       BFZABGZCHZIZJABKTJRSQBGUAAQBLBTMNABCOP $.
     $( $j usage 'iotaval' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+  $}
+
+  ${
+    $d x y $.  $d ph y $.
+    $( Equivalence between two different forms of ` iota ` .  (Contributed by
+       Andrew Salmon, 15-Jul-2011.) $)
+    iotain $p |- ( E! x ph -> |^| { x | ph } = ( iota x ph ) ) $=
+      ( vy weu cv wceq wb wal wex cab cint cio eu6 csn intsn abbi df-sn eqtr4di
+      vex inteqd iotaval 3eqtr4a exlimiv sylbi ) ABDABECEZFZGBHZCIABJZKZABLZFZA
+      BCMUGUKCUGUENZKUEUIUJUECSOUGUHULUGUHUFBJULAUFBPBUEQRTABCUAUBUCUD $.
   $}
 
   ${
@@ -760546,16 +760562,6 @@ $)
   $}
 
   ${
-    $d x y $.  $d ph y $.
-    $( Equivalence between two different forms of ` iota ` .  (Contributed by
-       Andrew Salmon, 15-Jul-2011.) $)
-    iotain $p |- ( E! x ph -> |^| { x | ph } = ( iota x ph ) ) $=
-      ( vy weu cv wceq wb wal wex cab cint cio eu6 csn intsn abbi df-sn eqtr4di
-      vex inteqd iotaval 3eqtr4a exlimiv sylbi ) ABDABECEZFZGBHZCIABJZKZABLZFZA
-      BCMUGUKCUGUENZKUEUIUJUECSOUGUHULUGUHUFBJULAUFBPBUEQRTABCUAUBUCUD $.
-  $}
-
-  ${
     $d y ph $.  $d y x $.
     $( The iota class exists.  This theorem does not require ~ ax-nul for its
        proof.  (Contributed by Andrew Salmon, 11-Jul-2011.) $)
@@ -833845,6 +833851,24 @@ $)
       MUBANOUDUCFRUEUCFPUBASTUA $.
   $}
 
+  ${
+    $d A x $.  $d ps x $.
+    aiotaexim.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    $( Representation of "the unique element such that ` ph ` " with a class
+       expression ` A ` which is a set (that means that "the unique element
+       such that ` ph ` " exists).  Analog to ~ iotan0 which requires ` A ` to
+       be nonempty instead of being a set.  That gives a more natural
+       statement, closer to statements like ~ spcgv .  (Proposed by BJ,
+       18-Oct-2026.)  (Contributed by AV, 18-Oct-2026.) $)
+    aiotaexim $p |- ( ( A e. V /\ A = ( iota' x ph ) ) -> ps ) $=
+      ( caiota wceq wcel weu cab cint cvv cif wi dfaiota3 eqeq2i iftrue eqeq2d
+      sylbid cio iotain eqcom wa iota2 biimprd expcom com23 biimtrid wn iffalse
+      nvelim pm2.21d biimtrdi pm2.61i sylbi impcom ) DACGZHZDEIZBUSDACJZACKLZMN
+      ZHZUTBOZURVCDACPQVAVDVEOVAVDDVBHZVEVAVCVBDVAVBMRSVAVFDACUAZHZVEVAVBVGDACU
+      BSVHVGDHZVAVEDVGUCVAUTVIBUTVAVIBOUTVAUDBVIABCDEFUEUFUGUHUITTVAUJZVDDMHZVE
+      VJVCMDVAVBMUKSVKUTBDEULUMUNUOUPUQ $.
+  $}
+
 
 $( Begin $[ set-mbox-av-2reu.mm $] $)
 $(
@@ -834352,19 +834376,6 @@ $)
       impbid ) ABDEJCABCDFEGDKZFLZBCMAINOACBDEAUCEPZQCBUECBMZAUEUDUFHUDBCIRSNTU
       AUB $.
   $}
-
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  The universal class (extension)
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
-
-  $( If a class is the universal class it doesn't belong to any class,
-     generalization of ~ nvel .  (Contributed by Alexander van der Vekens,
-     26-May-2017.) $)
-  nvelim $p |- ( A = _V -> -. A e. B ) $=
-    ( cvv wceq wcel nvel wb eleq1 eqcoms mtbii ) ACDCBEZABEZBFKLGCACABHIJ $.
 
 
 $(
