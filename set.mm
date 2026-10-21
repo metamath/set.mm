@@ -38343,22 +38343,6 @@ $)
       wrex 3bitr4g ) CDEZBFZCGZAHZBIZUBDGZUDHZBIZABCSUDBDSUAUCUFJZBKUEUHLBCDMUI
       UDUGBUIUDUFUCAUFNOPQABCRUDBDRT $.
     $( $j usage 'rexss' avoids 'ax-5' 'ax-6' 'ax-7' 'ax-8'; $)
-
-    $( Obsolete version of ~ ralss as of 14-Oct-2025.  (Contributed by Stefan
-       O'Rear, 3-Apr-2015.)  (Proof modification is discouraged.)
-       (New usage is discouraged.) $)
-    ralssOLD $p |- ( A C_ B -> ( A. x e. A ph <->
-          A. x e. B ( x e. A -> ph ) ) ) $=
-      ( wss cv wcel wi wa ssel pm4.71rd imbi1d impexp bitrdi ralbidv2 ) CDEZABF
-      ZCGZAHZBCDPSQDGZRIZAHTSHPRUAAPRTCDQJKLTRAMNO $.
-
-    $( Obsolete version of ~ rexss as of 14-Oct-2025.  (Contributed by Stefan
-       O'Rear, 3-Apr-2015.)  (Proof modification is discouraged.)
-       (New usage is discouraged.) $)
-    rexssOLD $p |- ( A C_ B -> ( E. x e. A ph <->
-          E. x e. B ( x e. A /\ ph ) ) ) $=
-      ( wss cv wcel wa ssel pm4.71rd anbi1d anass bitrdi rexbidv2 ) CDEZABFZCGZ
-      AHZBCDORPDGZQHZAHSRHOQTAOQSCDPIJKSQALMN $.
   $}
 
   ${
@@ -69094,18 +69078,6 @@ $)
     fnsnb $p |- ( F Fn { A } <-> F = { <. A , ( F ` A ) >. } ) $=
       ( cvv wcel csn wfn cfv cop wceq wb fnsnbg ax-mp ) ADEBAFGBAABHIFJKCABDLM
       $.
-
-    $( Obsolete version of ~ fnsnb as of 21-Oct-2025.  A function whose domain
-       is a singleton can be represented as a singleton of an ordered pair.
-       (Contributed by Jonathan Ben-Naim, 3-Jun-2011.)  Revised to add reverse
-       implication.  (Revised by NM, 29-Dec-2018.)
-       (Proof modification is discouraged.)  (New usage is discouraged.) $)
-    fnsnbOLD $p |- ( F Fn { A } <-> F = { <. A , ( F ` A ) >. } ) $=
-      ( vx csn wfn cfv cop wceq cv wcel fnsnr wfun cdm df-fn snid mpbiri anim2i
-      wa eleq2 sylbi funfvop syl eleq1 syl5ibrcom velsn bitr4di eqrdv fvex fnsn
-      impbid fneq1 impbii ) BAEZFZBAABGZHZEZIZUODBURUODJZBKZUTUQIZUTURKUOVAVBAU
-      TBLUOVAVBUQBKZUOBMZABNZKZSZVCUOVDVEUNIZSVGBUNOVHVFVDVHVFAUNKACPVEUNATQRUA
-      ABUBUCUTUQBUDUEUKDUQUFUGUHUSUOURUNFAUPCABUIUJUNBURULQUM $.
   $}
 
   ${
