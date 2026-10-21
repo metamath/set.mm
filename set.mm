@@ -623001,35 +623001,36 @@ $)
        ~ mmset.html#class .  (Contributed by NM, 26-May-1993.)  (Revised by BJ,
        19-Aug-2023.)  Add dependency on ~ ax-8 in the general case.  (Revised
        by Wolf Lammen, 21-Oct-2026.) $)
-    df-wl-clab $a |- ( x e. { y | ph } <-> [ x / y ] ph ) $.
+    wl-df-clab $p |- ( x e. { y | ph } <-> [ x / y ] ph ) $=
+      ( df-clab ) ABCF $.
   $}
 
   ${
     $d t y $.
-    $( Restate ~ df-clab for the general case.  (Contributed by Wolf Lammen,
+    $( Restate ~ wl-df-clab for the general case.  (Contributed by Wolf Lammen,
        21-Oct-2026.) $)
     wl-dfclab $p |- ( x e. { y | ph } <-> [ x / y ] ph ) $=
-      ( vt wnf weq wb wel wsb w3o wo elsb1 bicomi olci df-3or mpbir df-wl-clab
+      ( vt wnf weq wb wel wsb w3o wo elsb1 bicomi olci df-3or mpbir wl-df-clab
       ) ABCDACEZACDFGZBDHZCDHCBIZGZJRSKZUBKUBUCUATCBDLMNRSUBOPQ $.
   $}
 
   ${
     $d t y $.
     wl-dfclabf.1 $e |- F/ y ph $.
-    $( Restate ~ df-clab when ` ph ` does not depend on ` y ` .  (Contributed
-       by Wolf Lammen, 21-Oct-2026.) $)
+    $( Restate ~ wl-df-clab when ` ph ` does not depend on ` y ` .
+       (Contributed by Wolf Lammen, 21-Oct-2026.) $)
     wl-dfclabf $p |- ( x e. { y | ph } <-> ph ) $=
-      ( vt cv cab wcel wsb wnf weq wb wel w3o orci df-3or mpbir df-wl-clab sbf
+      ( vt cv cab wcel wsb wnf weq wb wel w3o orci df-3or mpbir wl-df-clab sbf
       wo bitri ) BFACGHACBIAABCEACJZACEKLZBEMCEMCBILZNUBUCTZUDTUEUDUBUCDOOUBUCU
       DPQRACBDSUA $.
   $}
 
   ${
     $d t y $.  $d y ph $.
-    $( Restate ~ df-clab when ` ph ` and ` y ` are disjoint. (Contributed by
-       Wolf Lammen, 21-Oct-2026.) $)
+    $( Restate ~ wl-df-clab when ` ph ` and ` y ` are disjoint.  (Contributed
+       by Wolf Lammen, 21-Oct-2026.) $)
     wl-dfclabv $p |- ( x e. { y | ph } <-> ph ) $=
-      ( vt cv cab wcel wsb wnf weq wb wel w3o wo nfv orci df-3or df-wl-clab sbv
+      ( vt cv cab wcel wsb wnf weq wb wel w3o wo nfv orci df-3or wl-df-clab sbv
       mpbir bitri ) BEACFGACBHAABCDACIZACDJKZBDLCDLCBHKZMUBUCNZUDNUEUDUBUCACOPP
       UBUCUDQTRACBSUA $.
   $}
