@@ -623026,8 +623026,8 @@ $)
 
   ${
     $d t y $.  $d y ph $.
-    $( Restate ~ df-clab when ` ph ` and ` y ` are disjoint. -(Contributed by
-       Wolf Lammen, 21-Oct-2026.)  (Contributed by ?who?, 21-Oct-2026.) $)
+    $( Restate ~ df-clab when ` ph ` and ` y ` are disjoint. (Contributed by
+       Wolf Lammen, 21-Oct-2026.) $)
     wl-dfclabv $p |- ( x e. { y | ph } <-> ph ) $=
       ( vt cv cab wcel wsb wnf weq wb wel w3o wo nfv orci df-3or df-wl-clab sbv
       mpbir bitri ) BEACFGACBHAABCDACIZACDJKZBDLCDLCBHKZMUBUCNZUDNUEUDUBUCACOPP
