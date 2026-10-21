@@ -882288,7 +882288,7 @@ $(
   Arithmetic Liouville function
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-  The signed prime-factor count ` Omega ` is defined on nonzero rationals in
+  The signed prime Omega function ` Omega ` is defined on nonzero rationals in
   ~ df-bom .  The arithmetic Liouville function ` lam ` is defined on all
   rationals in ~ df-liou , with value zero at zero.  The results below focus
   on positive integers, the elements of ` NN ` .
@@ -882303,26 +882303,118 @@ $)
 
   $c Omega $.
 
-  $( The signed prime-factor count on nonzero rational numbers, defined in
+  $( The signed prime Omega function on nonzero rational numbers, defined in
      ~ df-bom . $)
   cbom $a class Omega $.
 
   ${
     $d p q x $.
-    $( Define the signed prime Omega function on nonzero rational numbers.  The
-       label fragment "bom" means "big omega", distinguishing this multiplicity
-       sum from a count of distinct prime divisors.  The construction sums the
-       nonzero prime valuations from ~ df-pc ; denominator factors contribute
-       negatively.  Thus its value is the prime-factor count of the numerator
-       minus that of the denominator, with multiplicity.  On positive integers
-       it counts prime factors with multiplicity.  See section 2 of C. L.
-       Samuels, Acta Arithmetica 205 (2022), 341-370,
-       ~ https://arxiv.org/abs/2111.01012 .
+    $( Define the signed prime Omega function on nonzero rational numbers by
+       summing the nonzero prime valuations ` pCnt ` defined in ~ df-pc .
+       Denominator factors contribute negatively.  Its value is the
+       prime-factor count of the absolute numerator minus that of the positive
+       denominator, with multiplicity.  Its restriction to the positive
+       integers is the prime Omega function, which counts prime factors with
+       multiplicity.  Changing the sign of the input does not change the value,
+       and a reciprocal prime has value minus one.  Thus "signed" describes the
+       denominator contributions, not the sign of the input.
 
-       For positive-integer evaluation and closure see ~ bomnnval and
-       ~ bomnncl .  Examples are ~ bom1 and ~ bomprm ; complete additivity on
-       positive integers is ~ bomnnmul .  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
+       The label fragment "bom" abbreviates "big omega", a name for the prime
+       Omega function.  See "Big Omega Function" in M. Billal and A. Parvardi,
+       "Topics in Number Theory:  An Olympiad-Oriented Approach", second
+       edition, section 3.7, p. 215 (PDF p. 217),
+       ~ https://parvardi.ca/resources/topics-in-number-theory.pdf#page=217 .
+       See also S. Sugden and D. Miller, "Exploring the Fundamental Theorem of
+       Arithmetic in Excel 2007", Spreadsheets in Education 4, no. 2, Article
+       2, section 8, exercises 17-18, p. 23 (PDF p. 25),
+       ~ https://sie.scholasticahq.com/article/4578.pdf#page=25 .  The latter
+       explicitly distinguishes the "big omega function" from the "little omega
+       function", which counts distinct prime factors.
+
+       The signed prime Omega function is the "classical prime Omega function"
+       characterized in the opening paragraph of section 2 of C. L. Samuels,
+       Acta Arithmetica 205 (2022), no. 4, 341-370,
+       ~ https://arxiv.org/abs/2111.01012v2 .  It is the unique homomorphism
+       from the nonzero rationals under multiplication to the integers under
+       addition that maps every prime to one.
+
+       The signed prime Omega function can equivalently be obtained by
+       extending the prime Omega function first to nonzero integers by absolute
+       value, then to nonzero rationals by subtracting the denominator's value
+       from the numerator's value.  This construction is an application of
+       Theorems 1 and 2 in section 2, pp. 4-6, of J. K. Merikoski, P.
+       Haukkanen, and T. Tossavainen, "Complete additivity, complete
+       multiplicativity, and Leibniz-additivity on rationals", INTEGERS 21
+       (2021), A33, ~ https://math.colgate.edu/~~integers/v33/v33.pdf .
+
+       No finite value at zero can preserve complete additivity for all inputs
+       while every prime has value one: multiplying zero by a prime would
+       require the value at zero to equal itself plus one.  The prime Omega
+       function can be extended to the nonnegative integers by assigning zero
+       at zero, but this extension is not completely additive on its full
+       domain.  Additivity remains valid for nonzero inputs.  Lean 4 Mathlib's
+       ArithmeticFunction.cardFactors uses this convention; see
+       ~ https://leanprover-community.github.io/mathlib4_docs/ .
+
+       Another convention assigns infinity at zero and uses extended addition.
+       Merikoski, Haukkanen, and Tossavainen discuss this convention in section
+       2, p. 2, immediately after equation (2) of the paper cited above.  With
+       addition extended so that infinity absorbs finite values and itself, the
+       additivity law also holds when a factor is zero.  Extending the signed
+       prime Omega function in this way would require adding zero to its
+       domain, an explicit branch at zero, an enlarged codomain, and extended
+       addition.  Its current definition excludes zero.
+
+       Wolfram Language's PrimeOmega has two factorization conventions.  With
+       the default setting on positive integers, it counts integer prime
+       factors with multiplicity, giving the prime Omega function.  With
+       GaussianIntegers -> True, it counts Gaussian prime factors with
+       multiplicity instead.  The two counts can differ on the same positive
+       integer: at two the integer count is one and the Gaussian count is two.
+       Thus the Gaussian count does not extend the prime Omega function.
+       Nonreal Gaussian-integer inputs automatically use Gaussian
+       factorization.  PrimeOmega is undefined at zero.  See "Details and
+       Options", "Scope / Numerical Evaluation", "Options / GaussianIntegers",
+       and "Possible Issues" in the PrimeOmega documentation,
+       ~ https://reference.wolfram.com/language/ref/PrimeOmega.html .
+
+       Another possible construction sums the absolute values of rational prime
+       valuations.  For a reduced fraction it adds the numerator and
+       denominator multiplicities rather than subtracting them.  It agrees with
+       the prime Omega function on positive integers, but fails complete
+       additivity under cancellation: a prime and its reciprocal each
+       contribute one, whereas their product has count zero.  This is a
+       comparison of constructions, not an attribution of this alternative to
+       the cited sources.
+
+       Samuels also extends the signed prime Omega function to all nonzero
+       algebraic numbers, with rational values, in section 2, equation (2.1),
+       of the 2022 paper cited above.  The value of this extension is the value
+       of the signed prime Omega function at the field norm, divided by the
+       field degree.  The extension is unchanged under multiplication by an
+       algebraic unit, an algebraic integer whose inverse is also an algebraic
+       integer.  It therefore defines a function on nonzero algebraic numbers
+       modulo algebraic units.  Theorem 2.1 treats extensions more generally.
+       Complete additivity and the prime value force the positive square root
+       of two to have value one half, so an algebraic extension cannot retain
+       an integer codomain.
+
+       For real-valued extensions of the signed prime Omega function to nonzero
+       algebraic numbers modulo roots of unity, see C. L. Samuels, Canadian
+       Mathematical Bulletin 69 (2026), no. 2, 609-627, section 1.2, pp.
+       611-612, Corollary 1.2 and the following "Prime Omega Function" example,
+       ~ https://doi.org/10.4153/S0008439525101343 .  These likewise give
+       functions on individual nonzero algebraic numbers by assigning each
+       input the value of its class.  They are unchanged under multiplication
+       by a root of unity, a number whose positive integer power is one.  This
+       condition is weaker than invariance under all algebraic units.  The
+       continuous extensions there use the Weil-height norm.  These algebraic
+       extensions are not adopted here.
+
+       For the domain see ~ bomdm .  For positive-integer evaluation and
+       closure see ~ bomnnval and ~ bomnncl .  Examples are ~ bom1 and
+       ~ bomprm ; complete additivity on positive integers is ~ bomnnmul .
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
     df-bom $a |- Omega = ( x e. ( QQ \ { 0 } ) |->
       sum_ p e. { q e. Prime | ( q pCnt x ) =/= 0 } ( p pCnt x ) ) $.
   $}
@@ -882335,12 +882427,13 @@ $)
 
   ${
     $( Define the arithmetic Liouville function on the rationals, with value
-       zero at zero.  On nonzero inputs it is minus one to the signed prime
-       Omega power.  The rational extension is used by Hajdu and Hajdu, "On the
-       Liouville function on rational polynomial values" (2021), section 1 and
-       before Theorem 2.4, ~ https://doi.org/10.4064/aa200706-31-5 .  The zero
-       convention follows Helfgott, "The parity problem for reducible cubic
-       forms" (2006), introduction after equation (1.1),
+       zero at zero.  On nonzero inputs its value is minus one raised to the
+       value of the signed prime Omega function.  The rational extension is
+       used by Hajdu and Hajdu, "On the Liouville function on rational
+       polynomial values" (2021), section 1 and before Theorem 2.4,
+       ~ https://doi.org/10.4064/aa200706-31-5 .  The zero convention follows
+       Helfgott, "The parity problem for reducible cubic forms" (2006),
+       introduction after equation (1.1),
        ~ https://arxiv.org/abs/math/0408142 .  Combining these conventions
        yields the zero-inclusive rational function defined here.
 
@@ -882430,8 +882523,8 @@ $)
 
   ${
     $d p q $.
-    $( The signed prime Omega function has value zero at one.  (Contributed by
-       Zhi Wang, 17-Oct-2026.) $)
+    $( The prime Omega function has value zero at one.  (Contributed by Zhi
+       Wang, 17-Oct-2026.) $)
     bom1 $p |- ( Omega ` 1 ) = 0 $=
       ( vq vp c1 cbom cfv cv cpc co cc0 wne cprime crab csu cq csn cdif wcel c0
       wceq wn wa 1q 0ne1 necomi pm3.2i eldifsn mpbir bomval wral pc1 nne sylibr
@@ -882453,8 +882546,8 @@ $)
 
   ${
     $d A p q $.
-    $( On positive integers, the signed prime Omega function is the sum of
-       prime multiplicities over prime divisors.  (Contributed by Zhi Wang,
+    $( Express the prime Omega function as a sum of prime multiplicities over
+       the prime divisors of its input.  (Contributed by Zhi Wang,
        17-Oct-2026.) $)
     bomnnval $p |- ( A e. NN -> ( Omega ` A ) = sum_ p e. { q e. Prime | q ||
       A } ( p pCnt A ) ) $=
@@ -882468,8 +882561,8 @@ $)
 
   ${
     $d A p q $.
-    $( The signed prime Omega function has a nonnegative integer value on every
-       positive integer.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( The prime Omega function takes nonnegative integer values.  (Contributed
+       by Zhi Wang, 17-Oct-2026.) $)
     bomnncl $p |- ( A e. NN -> ( Omega ` A ) e. NN0 ) $=
       ( vq vp cn wcel cbom cfv cv cdvds wbr cprime crab cpc co csu cn0 bomnnval
       prmdvdsfi wa simpr elrabi syl simpl pccld fsumnn0cl eqeltrd ) ADEAFGBHAIJ
@@ -882479,8 +882572,8 @@ $)
 
   ${
     $d P p q $.
-    $( The signed prime Omega function has value one at every prime.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( The prime Omega function has value one at every prime.  (Contributed by
+       Zhi Wang, 17-Oct-2026.) $)
     bomprm $p |- ( P e. Prime -> ( Omega ` P ) = 1 ) $=
       ( vp vq cprime wcel cbom cfv cpc co c1 csn csu cdvds wbr crab prmnn eqtrd
       cv wceq id cn bomnnval syl wb c2 cuz prmuz2 dvdsprm sylan ancoms rabbidva
@@ -882579,7 +882672,7 @@ $)
     bomnnss.2 $e |- ( ph -> B e. Fin ) $.
     bomnnss.3 $e |- ( ph -> B C_ Prime ) $.
     bomnnss.4 $e |- ( ph -> { q e. Prime | q || A } C_ B ) $.
-    $( Extend the positive-integer prime Omega sum to a finite set of primes
+    $( Evaluate the prime Omega function using a finite set of primes
        containing all prime divisors of the input.  (Contributed by Zhi Wang,
        17-Oct-2026.) $)
     bomnnss $p |- ( ph -> ( Omega ` A ) = sum_ p e. B ( p pCnt A ) ) $=
