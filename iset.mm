@@ -99774,14 +99774,6 @@ $)
     wi mpan2 imp dfn2 imaeq2i eqtr4di ) BCDZBEAFZGAHIJZAKZEHLMZNZUIONUFUGUHUKPZ
     UFHQDUGULTREABCQHSUAUBOUJUIUCUDUE $.
 
-  $( A function into ` NN0 ` is finitely supported iff its support is finite.
-     (Contributed by AV, 8-Jul-2019.) $)
-  fcdmnn0fsupp $p |- ( ( I e. V /\ F : I --> NN0 )
-                       -> ( F finSupp 0 <-> ( `' F " NN ) e. Fin ) ) $=
-    ( wcel cn0 wf wa cc0 cfsupp wbr ccnv csn cdif cima cfn cn wb cvv wi c0ex
-    ffsuppbi mpan2 imp dfn2 imaeq2i eleq1i bitr4di ) BCDZBEAFZGAHIJZAKZEHLMZNZO
-    DZUKPNZODUHUIUJUNQZUHHRDUIUPSTEABCRHUAUBUCUOUMOPULUKUDUEUFUG $.
-
   $( Version of ~ fcdmnn0supp avoiding ~ ax-coll by assuming ` F ` is a set
      rather than its domain ` I ` .  (Contributed by SN, 5-Aug-2024.) $)
   fcdmnn0suppg $p |- ( ( F e. V /\ F : I --> NN0 )
@@ -100679,6 +100671,20 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
     w3a zre ad2antrl simprr 3jca sylan2b ge0div syl mpbid ) ACDZBEDZFZGAHIZGABJ
     KHIZUIULUJALMUKANDZBNDZGBOIZTZULUMPUJUIBQDZUPFZUQBRUIUSFUNUOUPUIUNUSASMURUO
     UIUPBUAUBUIURUPUCUDUEABUFUGUH $.
+
+  ${
+    $d F x y $.  $d I x y $.
+    $( A function into ` NN0 ` is finitely supported iff its support is finite.
+       (Contributed by AV, 8-Jul-2019.) $)
+    fcdmnn0fsuppfi $p |- ( ( I e. Fin /\ F : I --> NN0 )
+                         -> ( F finSupp 0 <-> ( `' F " NN ) e. Fin ) ) $=
+      ( vx vy cfn wcel cn0 wf wa cc0 cfsupp wbr csupp co ccnv a1i wral cv nn0z
+      cz cn cima cvv simpr simpl fexd 0nn0 fidceq 3expb ralrimivva adantr zdceq
+      weq wdc syl2an rgen2 funisfsuppdc fcdmnn0supp eleq1d bitrd ) BEFZBGAHZIZA
+      JKLAJMNZEFAOUAUBZEFVCCDBGAUCJVCBGEAVAVBUDZVAVBUEUFVFJGFVCUGPVACDUMUNZDBQC
+      BQVBVAVGCDBBVACRZBFDRZBFVGBVHVIUHUIUJUKVGDGQCGQVCVGCDGGVHGFVHTFVITFVGVIGF
+      VHSVISVHVIULUOUPPUQVCVDVEEABEURUSUT $.
+  $}
 
   ${
     $d k M $.  $d k N $.
