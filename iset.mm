@@ -182514,13 +182514,12 @@ $)
       sylbi ) CAFCBGHIJKFZBLDMNZOZFZDLCPZAUDCEQUECUCFUFUBBCUCRCLDSTUA $.
 
     $( Finite bags have finite support.  (Contributed by Stefan O'Rear,
-       9-Mar-2015.)  (Revised by AV, 18-Jul-2019.)  Remove a sethood
-       antecedent.  (Revised by SN, 7-Aug-2024.) $)
-    psrbagfsupp $p |- ( F e. D -> F finSupp 0 ) $=
-      ( wcel cc0 cfsupp wbr ccnv cn cima cfn cn0 wf cvv wa id psrbagf ffnd wb
-      fndmexd psrbag biimpa mpancom simprd fcdmnn0fsuppg mpdan mpbird ) CAFZCGH
-      IZCJKLMFZUJDNCOZULDPFZUJUMULQZUJDCAUJRUJDNCABCDESZTUBUNUJUOABCDPEUCUDUEUF
-      UJUMUKULUAUPCDAUGUHUI $.
+       9-Mar-2015.)  (Revised by AV, 18-Jul-2019.)  (Revised by Jim Kingdon,
+       22-Oct-2026.) $)
+    psrbagfsuppfi $p |- ( ( F e. D /\ I e. Fin ) -> F finSupp 0 ) $=
+      ( wcel cfn wa cc0 cfsupp wbr ccnv cn cima cn0 wf psrbag biimpac simprd wb
+      simpr psrbagf adantr fcdmnn0fsuppfi syl2anc mpbird ) CAFZDGFZHZCIJKZCLMNG
+      FZUIDOCPZUKUHUGULUKHABCDGEQRSUIUHULUJUKTUGUHUAUGULUHABCDEUBUCCDUDUEUF $.
 
     ${
       $d F f $.  $d I f x $.
