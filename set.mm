@@ -875760,9 +875760,9 @@ $)
 
   $( Define the hyperbolic tangent function (tanh).  We define it this way for
      ~ cmpt , which requires the form ` ( x e. A |-> B ) ` .  (Contributed by
-     David A. Wheeler, 10-May-2015.) $)
+     David A. Wheeler, 10-May-2015.)  (Revised by Jon Pennant, 22-Oct-2026.) $)
   df-tanh $a |- tanh = ( x e. ( `' cosh " ( CC \ { 0 } ) ) |->
-                       ( ( tan ` ( _i x. x ) ) / _i ) ) $.
+                       ( ( sinh ` x ) / ( cosh ` x ) ) ) $.
 
   ${
     $d x A $.
@@ -875772,8 +875772,8 @@ $)
        ~ sinh-conventional for a justification that our definition is the same
        as the conventional definition of sinh used in other sources.
        (Contributed by David A. Wheeler, 20-Apr-2015.) $)
-    sinhval-named $p |- ( A e. CC ->
-                          ( sinh ` A ) = ( ( sin ` ( _i x. A ) ) / _i ) ) $=
+    sinhval-named $p |- ( A e. CC -> 
+                        ( sinh ` A ) = ( ( sin ` ( _i x. A ) ) / _i ) ) $=
       ( vx ci cv cmul co csin cfv cdiv cc csinh wceq fveq2d oveq1d df-sinh ovex
       oveq2 fvmpt ) BACBDZEFZGHZCIFCAEFZGHZCIFJKSALZUAUCCIUDTUBGSACEQMNBOUCCIPR
       $.
@@ -875788,18 +875788,7 @@ $)
     coshval-named $p |- ( A e. CC -> ( cosh ` A ) = ( cos ` ( _i x. A ) ) ) $=
       ( vx ci cv cmul co ccos cfv cc ccosh wceq oveq2 fveq2d df-cosh fvex fvmpt
       ) BACBDZEFZGHCAEFZGHIJQAKRSGQACELMBNSGOP $.
-  $}
 
-  ${
-    $d x A $.
-    $( Value of the named tanh function.  Here we show the simple conversion to
-       the conventional form used in set.mm, using the definition given by
-       ~ df-tanh .  (Contributed by David A. Wheeler, 10-May-2015.) $)
-    tanhval-named $p |- ( A e. ( `' cosh " ( CC \ { 0 } ) ) ->
-                          ( tanh ` A ) = ( ( tan ` ( _i x. A ) ) / _i ) ) $=
-      ( vx ci cv cmul co ctan cfv cdiv ccosh ccnv cc0 csn cdif cima ctanh oveq2
-      cc wceq fveq2d oveq1d df-tanh ovex fvmpt ) BACBDZEFZGHZCIFCAEFZGHZCIFJKRL
-      MNOPUEASZUGUICIUJUFUHGUEACEQTUABUBUICIUCUD $.
   $}
 
   $( Conventional definition of sinh.  Here we show that the sinh definition
@@ -875819,15 +875808,15 @@ $)
      Wheeler, 27-May-2015.) $)
   sinhpcosh $p |- ( A e. CC ->
                    ( ( sinh ` A ) + ( cosh ` A ) ) = ( exp ` A ) ) $=
-    ( cc wcel csinh cfv ccosh caddc co c2 ce cmul cdiv cneg cmin eqtrd 2cn 2ne0
-    ci efcl a1i csin sinhval-named sinhval coshval-named coshval oveq12d cc0 wa
-    ccos wne wceq addcld subcld divdir syl3an1 syl3an2 3anidm12 mpanr12 2timesd
-    negcl syl nppcand addassd 3eqtr2rd oveq1d 3eqtr2d divcan3d ) ABCZADEZAFEZGH
-    ZIAJEZKHZILHZVLVHVKVLAMZJEZNHZILHZVLVPGHZILHZGHZVQVSGHZILHZVNVHVIVRVJVTGVHV
-    IRAKHZUAERLHVRAUBAUCOVHVJWDUIEVTAUDAUEOUFVHIBCZIUGUJZWCWAUKZPQVHWEWFUHZWGVH
-    VHVSBCZWHWGVHVLVPASZVHVOBCVPBCAUTVOSVAZULVHVQBCWIWHWGVHVLVPWJWKUMZVQVSIUNUO
-    UPUQURVHWBVMILVHVMVLVLGHVQVLGHVPGHWBVHVLWJUSVHVLVPVLWJWKWJVBVHVQVLVPWLWJWKV
-    CVDVEVFVHVLIWJWEVHPTWFVHQTVGO $.
+    ( cc wcel csinh cfv ccosh caddc co c2 ce cmul cdiv cneg cmin csin eqtrd 2cn
+    ci 2ne0 a1i sinhval-named sinhval ccos coshval-named coshval oveq12d cc0 wa
+    wceq efcl negcl efcld addcld subcld divdir syl3an1 syl3an2 3anidm12 mpanr12
+    wne 2timesd nppcand addassd 3eqtr2rd oveq1d 3eqtr2d divcan3d ) ABCZADEZAFEZ
+    GHZIAJEZKHZILHZVLVHVKVLAMZJEZNHZILHZVLVPGHZILHZGHZVQVSGHZILHZVNVHVIVRVJVTGV
+    HVIRAKHZOERLHVRAUAAUBPVHVJWDUCEVTAUDAUEPUFVHIBCZIUGUTZWCWAUIZQSVHWEWFUHZWGV
+    HVHVSBCZWHWGVHVLVPAUJZVHVOAUKULZUMVHVQBCWIWHWGVHVLVPWJWKUNZVQVSIUOUPUQURUSV
+    HWBVMILVHVMVLVLGHVQVLGHVPGHWBVHVLWJVAVHVLVPVLWJWKWJVBVHVQVLVPWLWJWKVCVDVEVF
+    VHVLIWJWEVHQTWFVHSTVGP $.
 
   $( Domain and codomain of the sinh function.  (Contributed by Jon Pennant,
      9-Sep-2026.) $)
@@ -875882,15 +875871,45 @@ $)
     HUMBCZUOUPKUHGBCZUQUSPURGUIOQUMRNSUHUNUKJUHUNUKDZDUKUHUMVAUHGAUTUHPUGZUHUAZ
     UBUCUHUKUHGAVBVCUDUETUFTAMS $.
 
+  ${
+    $d x A $.
+    $( Value of the tanh function in terms of sinh and cosh.  (Contributed by
+       Jon Pennant, 22-Oct-2026.) $)
+    tanhval $p |- ( ( A e. CC /\ ( cosh ` A ) =/= 0 ) ->
+                    ( tanh ` A ) = ( ( sinh ` A ) / ( cosh ` A ) ) ) $=
+      ( vx cc wcel ccosh cfv cc0 wne wa ccnv cdif cima ctanh csinh cdiv co wceq
+      csn simpl fveq2 coshcl anim1i eldifsn sylibr wf wfn wb coshf ffn elpreima
+      mp2b sylanbrc cv oveq12d df-tanh ovex fvmpt syl ) ACDZAEFZGHZIZAEJCGRKZLZ
+      DZAMFANFZUTOPZQVBUSUTVCDZVEUSVASVBUTCDZVAIVHUSVIVAAUAUBUTCGUCUDCCEUEECUFV
+      EUSVHIUGUHCCEUICAVCEUJUKULBABUMZNFZVJEFZOPVGVDMVJAQVKVFVLUTOVJANTVJAETUNB
+      UOVFUTOUPUQUR $.
+  $}
+
+  ${
+    $d x A $.
+    $( Value of the named tanh function.  Here we show the simple conversion to
+       the conventional form used in set.mm, using the definition given by
+       ~ df-tanh .  (Contributed by David A. Wheeler, 10-May-2015.)  (Revised
+       by Jon Pennant, 22-Oct-2026.) $)
+    tanhval-conventional $p |- ( ( A e. CC /\ ( cosh ` A ) =/= 0 ) ->
+                          ( tanh ` A ) = ( ( tan ` ( _i x. A ) ) / _i ) ) $=
+      ( cc wcel ccosh cfv cc0 wne wa ctanh ci cmul co csin ccos cdiv ctan csinh
+      wceq adantr a1i sinhval-named coshval-named oveq12d tanhval ax-icn mulcld
+      simpl sincld coscld eqnetrrd ine0 divdiv32d 3eqtr4d tanval syl2anc oveq1d
+      simpr eqtr4d ) ABCZADEZFGZHZAIEZJAKLZMEZVDNEZOLZJOLZVDPEZJOLVBAQEZUTOLVEJ
+      OLZVFOLVCVHVBVJVKUTVFOUSVJVKRVAAUASUSUTVFRVAAUBSZUCAUDVBVEVFJVBVDVBJAJBCV
+      BUETZUSVAUGUFZUHVBVDVNUIVMVBUTVFFVLUSVAUQUJZJFGVBUKTULUMVBVIVGJOVBVDBCVFF
+      GVIVGRVNVOVDUNUOUPUR $.
+  $}
+
   $( Domain and codomain of the tanh function.  (Contributed by Jon Pennant,
-     9-Sep-2026.) $)
+     22-Oct-2026.) $)
   tanhf $p |- tanh : ( `' cosh " ( CC \ { 0 } ) ) --> CC $=
-    ( vx ccosh ccnv cc cc0 csn cdif cima ci cv cmul ctan cfv cdiv ctanh df-tanh
-    co wcel ax-icn a1i wf wfn wa wb coshf ffn elpreima mp2b simplbi mulcld ccos
-    wceq coshval-named syl simprbi eldifsnbd eqnetrrd tancld ine0 divcld fmpti
-    wne ) ABCDEFGZHZDIAJZKQZLMZINQOAPVEVDRZVGIVHVFVHIVEIDRVHSTZVHVEDRZVEBMZVCRZ
-    DDBUABDUBVHVJVLUCUDUEDDBUFDVEVCBUGUHZUIZUJVHVKVFUKMZEVHVJVKVOULVNVEUMUNVHVK
-    DEVHVJVLVMUOUPUQURVIIEVBVHUSTUTVA $.
+    ( vx ccosh ccnv cc cc0 csn cdif cima cv csinh cdiv co ctanh df-tanh wcel wf
+    cfv wfn wa syl wb ffn elpreima mp2b simplbi sinhcl coshcl simprbi eldifsnbd
+    coshf divcld fmpti ) ABCDEFGZHZDAIZJQZUOBQZKLMANUOUNOZUPUQURUODOZUPDOURUSUQ
+    UMOZDDBPBDRURUSUTSUAUJDDBUBDUOUMBUCUDZUEZUOUFTURUSUQDOVBUOUGTURUQDEURUSUTVA
+    UHUIUKUL $.
 
   $( The closure of the tanh function with complex argument.  (Contributed by
      Jon Pennant, 9-Sep-2026.) $)
@@ -875900,69 +875919,21 @@ $)
     ABCZADEZFGZUJBFPHZCZAIEBCZUIUKJUJBFUIUJBCUKAKLUIUKMNUIUMJZADOULQZCZUNBBDRDB
     SUQUOTUABBDUBBAULDUCUDUPBAIUEUFUGUH $.
 
-  $( Value of the tanh function in terms of sinh and cosh.  (Contributed by Jon
-     Pennant, 9-Sep-2026.) $)
-  tanhval $p |- ( ( A e. CC /\ ( cosh ` A ) =/= 0 ) ->
-                  ( tanh ` A ) = ( ( sinh ` A ) / ( cosh ` A ) ) ) $=
-    ( cc wcel ccosh cfv cc0 wne wa csinh cmul ccos cdiv csin wceq adantr oveq1d
-    ci co ax-icn a1i sinhval-named coshval-named oveq2d ctan ccnv csn cdif cima
-    ctanh simpl coshcl anim1i eldifsn sylibr wf wfn coshf ffn elpreima sylanbrc
-    wb mp2b tanhval-named mulcl mpan neeq1d biimpa tanval syl2anc sincld coscld
-    syl ine0 divdiv32d 3eqtrd 3eqtr4rd ) ABCZADEZFGZHZAIEZQAJRZKEZLRWBMEZQLRZWC
-    LRZWAVRLRAUIEZVTWAWEWCLVQWAWENVSAUAOPVTVRWCWALVQVRWCNVSAUBZOUCVTWGWBUDEZQLR
-    ZWDWCLRZQLRWFVTADUEBFUFUGZUHCZWGWJNVTVQVRWLCZWMVQVSUJVTVRBCZVSHWNVQWOVSAUKU
-    LVRBFUMUNBBDUODBUPWMVQWNHVAUQBBDURBAWLDUSVBUTAVCVLVTWIWKQLVTWBBCZWCFGZWIWKN
-    VQWPVSQBCZVQWPSQAVDVEOZVQVSWQVQVRWCFWHVFVGZWBVHVIPVTWDWCQVTWBWSVJVTWBWSVKWR
-    VTSTWTQFGVTVMTVNVOVP $.
-
   $( Value of the tanh function at 0.  (Contributed by Jon Pennant,
-     9-Sep-2026.) $)
+     22-Oct-2026.) $)
   tanh0 $p |- ( tanh ` 0 ) = 0 $=
-    ( cc0 ctanh cfv ci cmul co ctan cdiv ccosh ccnv cc csn cdif cima wcel cosh0
-    c1 mpbir2an ax-mp eqtri wceq 0cn wne ax-1cn eqeltri ax-1ne0 eqnetri eldifsn
-    wfn wa wb wf coshf ffn elpreima tanhval-named it0e0 fveq2i tan0 oveq1i ine0
-    ax-icn div0i ) ABCZDAEFZGCZDHFZAAIJKALMZNOZVDVGUAVIAKOZAICZVHOZUBVLVKKOVKAU
-    CVKQKPUDUEVKQAPUFUGVKKAUHRIKUIZVIVJVLUJUKKKIULVMUMKKIUNSKAVHIUOSRAUPSVGADHF
-    AVFADHVFAGCAVEAGUQURUSTUTDVBVAVCTT $.
+    ( cc0 ctanh cfv csinh ccosh cdiv co cc wcel wne wceq 0cn c1 ax-1ne0 eqnetri
+    cosh0 tanhval mp2an sinh0 oveq1i ax-1cn eqeltri div0i 3eqtri ) ABCZADCZAECZ
+    FGZAUGFGAAHIUGAJUEUHKLUGMAPNOZAQRUFAUGFSTUGUGMHPUAUBUIUCUD $.
 
-  $( The tanh function is odd.  (Contributed by Jon Pennant, 9-Sep-2026.) $)
+  $( The tanh function is odd.  (Contributed by Jon Pennant, 22-Oct-2026.) $)
   tanhneg $p |- ( ( A e. CC /\ ( cosh ` A ) =/= 0 ) ->
                    ( tanh ` -u A ) = -u ( tanh ` A ) ) $=
-    ( cc wcel ccosh cfv cc0 wne wa ci cmul co ctan cdiv cneg wceq ax-icn neeq1d
-    ctanh syl sylanbrc a1i simpl mulcld ccos coshval-named biimpa tancld divneg
-    ine0 mp3an23 ccnv csn cdif coshcl anim1i eldifsn sylibr wf wfn wb coshf ffn
-    cima elpreima mp2b tanhval-named negeqd negcl adantr coshneg biimpar fveq2d
-    mulneg2d oveq1d tanneg syl2anc 3eqtrd 3eqtr4rd ) ABCZADEZFGZHZIAJKZLEZIMKZN
-    ZWDNZIMKZAREZNANZREZWBWDBCZWFWHOZWBWCWBIAIBCZWBPUAZVSWAUBZUCZVSWAWCUDEZFGZV
-    SVTWRFAUEQUFZUGWLWNIFGWMPUIWDIUHUJSWBWIWEWBADUKBFULUMZVCZCZWIWEOWBVSVTXACZX
-    CWPWBVTBCZWAHXDVSXEWAAUNUOVTBFUPUQBBDURZDBUSZXCVSXDHUTVABBDVBZBAXADVDVETAVF
-    SVGWBWKIWJJKZLEZIMKZWCNZLEZIMKWHWBWJXBCZWKXKOWBWJBCZWJDEZXACZXNVSXOWAAVHZVI
-    WBXPBCZXPFGZXQVSXSWAVSXOXSXRWJUNSVIVSXTWAVSXPVTFAVJQVKXPBFUPTXFXGXNXOXQHUTV
-    AXHBWJXADVDVETWJVFSWBXJXMIMWBXIXLLWBIAWOWPVMVLVNWBXMWGIMWBWCBCWSXMWGOWQWTWC
-    VOVPVNVQVR $.
-
-  $( Value of the tanh function in terms of -i tan(i x) on its domain.
-     (Contributed by Jon Pennant, 9-Sep-2026.) $)
-  tanhvalnegitan $p |- ( A e. ( `' cosh " ( CC \ { 0 } ) ) ->
-                         ( tanh ` A ) = ( -u _i x. ( tan ` ( _i x. A ) ) ) ) $=
-    ( ccosh ccnv cc cc0 csn cdif cima wcel ctanh cfv cmul ctan cdiv cneg ax-icn
-    ci co syl a1i tanhval-named c1 wa wf wfn wb coshf ffn elpreima biimpi mulcl
-    mp2b mpan adantr ccos simpld coshval-named simprd eldifsnbd eqnetrrd tancld
-    wceq wne ine0 divrec2d irec oveq1i eqtrdi eqtrd ) ABCDEFGZHIZAJKQALRZMKZQNR
-    ZQOZVMLRZAUAVKVNUBQNRZVMLRVPVKVMQVKVLVKADIZABKZVJIZUCZVLDIZVKWADDBUDBDUEVKW
-    AUFUGDDBUHDAVJBUIULUJZVRWBVTQDIZVRWBPQAUKUMUNSVKVSVLUOKZEVKVRVSWEVBVKVRVTWC
-    UPAUQSVKVSDEVKVRVTWCURUSUTVAWDVKPTQEVCVKVDTVEVQVOVMLVFVGVHVI $.
-
-  $( Value of the tanh function in terms of tan and multiplication by -i.
-     (Contributed by Jon Pennant, 9-Sep-2026.) $)
-  tanhvalnegitan2 $p |- ( ( A e. CC /\ ( cosh ` A ) =/= 0 ) ->
-                         ( tanh ` A ) = ( -u _i x. ( tan ` ( _i x. A ) ) ) ) $=
-    ( cc wcel ccosh cfv cc0 wne wa csn cdif ccnv cima ctanh cneg cmul ctan wceq
-    ci co biimpri simpl coshcl eldifsn sylan jca wf wfn coshf ffn elpreima mp2b
-    wb tanhvalnegitan 3syl ) ABCZADEZFGZHZUOUPBFIJZCZHZADKUSLCZAMERNRAOSPEOSQUR
-    UOUTUOUQUAUOUPBCZUQUTAUBUTVCUQHUPBFUCTUDUEVBVABBDUFDBUGVBVAULUHBBDUIBAUSDUJ
-    UKTAUMUN $.
-
+    ( cc wcel ccosh cfv cc0 wne wa csinh cdiv co cneg ctanh sinhcl adantr simpr
+    coshcl divnegd tanhval wceq negeqd coshneg eqnetrd syl2an2r sinhneg oveq12d
+    negcl eqtrd 3eqtr4rd ) ABCZADEZFGZHZAIEZUKJKZLUNLZUKJKZAMEZLALZMEZUMUNUKUJU
+    NBCULANOUJUKBCULAQOUJULPZRUMURUOASUAUMUTUSIEZUSDEZJKZUQUJUSBCULVCFGUTVDTAUG
+    UMVCUKFUJVCUKTULAUBOZVAUCUSSUDUMVBUPVCUKJUJVBUPTULAUEOVEUFUHUI $.
 
   $( Addition formula for sinh.  (Contributed by Jon Pennant, 9-Sep-2026.) $)
   sinhadd $p |- ( ( A e. CC /\ B e. CC ) ->
@@ -876087,7 +876058,6 @@ $)
     MZVHOMZNMVHVKNMZVHOMZVIVAIVJVFVLNVAVJIVAVHURVHBCUTURUSAUBZSTZURVHFGZUTURUSB
     CZVQUTUCVOUSUJUDUEZUFUGVAVDUSURVDBCUTAUHTZURVRUTVOTURUTUKUIULVAVHVKVHVPVAVD
     VTSVPVSUMURVNVIUNUTURVMIVHOAUOQTUPUQ $.
-
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
