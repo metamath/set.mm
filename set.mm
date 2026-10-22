@@ -882428,14 +882428,46 @@ $)
   ${
     $( Define the arithmetic Liouville function on the rationals, with value
        zero at zero.  On nonzero inputs its value is minus one raised to the
-       value of the signed prime Omega function.  The rational extension is
-       used by Hajdu and Hajdu, "On the Liouville function on rational
-       polynomial values" (2021), section 1 and before Theorem 2.4,
-       ~ https://doi.org/10.4064/aa200706-31-5 .  The zero convention follows
-       Helfgott, "The parity problem for reducible cubic forms" (2006),
-       introduction after equation (1.1),
-       ~ https://arxiv.org/abs/math/0408142 .  Combining these conventions
-       yields the zero-inclusive rational function defined here.
+       value of the signed prime Omega function.  On positive integers this
+       gives the usual Liouville function: one for an even number of prime
+       factors counted with multiplicity, and minus one for an odd number.
+
+       Hajdu and Hajdu, "On the Liouville function on rational polynomial
+       values" (2021), section 1, ~ https://doi.org/10.4064/aa200706-31-5 ,
+       extend the positive-integer function to positive rationals by
+       ` ( lam `` ( n / k ) ) = ( ( lam `` n ) / ( lam `` k ) ) ` for
+       ` n , k e. NN ` .  To obtain the formula used here, observe that the
+       prime valuations in ~ df-bom subtract denominator multiplicities, so
+       ` ( Omega `` ( n / k ) ) = ( ( Omega `` n ) - ( Omega `` k ) ) ` .
+       Consequently, the quotient of the two integer Liouville values is
+       ` ( ( -u 1 ^ ( Omega `` n ) ) / ( -u 1 ^ ( Omega `` k ) ) ) `
+       ` = ( -u 1 ^ ( ( Omega `` n ) - ( Omega `` k ) ) ) `
+       ` = ( -u 1 ^ ( Omega `` ( n / k ) ) ) ` .  Common factors cancel in the
+       difference, so the fraction need not be reduced.
+
+       Immediately before Theorem 2.4, the same paper extends the function to
+       negative rationals by ` ( lam `` x ) = ( lam `` ( -u x ) ) ` .  The
+       prime valuations in ~ df-bom are unchanged by negating a nonzero
+       rational, so the same exponential formula gives this convention too.
+
+       The value at zero is a separate convention, following Helfgott's choice
+       for integer inputs in "The parity problem for reducible cubic forms"
+       (2006), introduction after equation (1.1),
+       ~ https://arxiv.org/abs/math/0408142 .  Since ` Omega ` is defined only
+       on nonzero rationals, the explicit zero branch extends the function to
+       all of ` QQ ` .
+
+       The function defined here differs from the "Liouville function of the
+       first kind" proposed by A. Vieru in section 7, p. 22 of
+       arXiv:1306.0496v4 (2015 revision of the 2013 preprint),
+       ~ https://arxiv.org/pdf/1306.0496v4#page=22 .  His equal-count clause
+       assigns to a fraction the negative of its denominator's integer
+       Liouville value.
+       Thus it gives minus one at ` ( 4 / 9 ) `: both integer prime-factor
+       counts are two, and the integer Liouville value at nine is one.  The
+       defining formula here gives one at that fraction, since its signed prime
+       Omega value is zero.  The two prescriptions therefore disagree where
+       that proposal gives an explicit rule.
 
        For evaluations at zero, one, and primes see ~ liou0 , ~ liou1 , and
        ~ liouprm .  Complete multiplicativity on positive integers is
