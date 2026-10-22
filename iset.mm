@@ -183707,9 +183707,8 @@ $)
     $( The multivariate polynomial constructor is a proper binary operator.
        (Contributed by Mario Carneiro, 21-Mar-2015.) $)
     reldmmpl $p |- Rel dom mPoly $=
-      ( vi vr vw vk va vb vf cvv cv cmps co cfv clt wbr wral c0g wceq cn0 cmap
-      wi wrex cbs crab cress csb cmpl df-mplcoe reldmmpo ) ABHHCAIZBIZJKCIZDIZE
-      ILULFIZLMNDUIOUMGILUJPLQTFRUISKZOEUNUAGUKUBLUCUDKUEUFCGADBEFUGUH $.
+      ( vi vr vs vf cvv cv cmps co c0g cfv cfsupp wbr cbs crab cress csb df-mpl
+      cmpl reldmmpo ) ABEECAFBFZGHCFZDFTIJKLDUAMJNOHPRCDABQS $.
 
     mplval.p $e |- P = ( I mPoly R ) $.
     mplval.s $e |- S = ( I mPwSer R ) $.
