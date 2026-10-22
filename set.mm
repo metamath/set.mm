@@ -496566,12 +496566,10 @@ htmldef "wl-setvarx" as " nosubst-x";
   althtmldef "wl-setvarx" as
       ' <SPAN CLASS=typecode STYLE="color:gray">nosubst-x</SPAN>';
   latexdef "wl-setvarx" as "\mathrm{nosubst-x}";
-/*
-htmldef "wl-x_f" as " @x ";
-  althtmldef "wl-x_f" as
+htmldef "wl_xx" as " @x ";
+  althtmldef "wl_xx" as
       ' <SPAN CLASS=setvar STYLE="color:red">&#x1D465;@</SPAN>';
-  latexdef "wl-x_f" as "x\hat ";
-*/
+  latexdef "wl_xx" as "x\hat ";
 /* End of Wolf Lammen's mathbox */
 
 /* End of typesetting definition section */
@@ -623058,8 +623056,8 @@ $)
     altvarcolorcode "wl_setvarx" as "FF0001";
   $)
 
+  $v wl_xx $.
   $(
-  @v wl-x_f @.
   wl-vx.nosubst @f wl-setvarx wl-x_f @.
   @( allow the substitution of a wl-setvarx for a setvar. @)
   wl-cvx.nosubst @a setvar wl-x_ @.
