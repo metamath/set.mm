@@ -623056,14 +623056,11 @@ $)
     altvarcolorcode "wl_setvarx" as "FF0000";
   $)
 
-  ${
-    $v wl-x_ $.
-    wl-vx.nosubst $f wl-setvarx wl-x_ $.
-    $( PLEASE PUT DESCRIPTION HERE. $)
-    wl-cvx.nosubst $a setvar wl-x_ $.
-    $( $j primitive 'wl-cvx.nosubst'; $)
-
-  $}
+  $v wl-x_ $.
+  wl-vx.nosubst $f wl-setvarx wl-x_ $.
+  $( allow the substitution of a wl-setvarx for a setvar. $)
+  wl-cvx.nosubst $a setvar wl-x_ $.
+  $( $j primitive 'wl-cvx.nosubst'; $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
