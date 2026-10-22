@@ -623057,8 +623057,8 @@ $)
   $)
 
   $v wl_xx $.
+  wl-vx.nosubst $f wl-setvarx wl_xx $.
   $(
-  wl-vx.nosubst @f wl-setvarx wl-x_f @.
   @( allow the substitution of a wl-setvarx for a setvar. @)
   wl-cvx.nosubst @a setvar wl-x_ @.
   @( @j primitive 'wl-cvx.nosubst'; @)
