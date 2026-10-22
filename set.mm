@@ -623057,10 +623057,10 @@ $)
 
   ${
     $v wl-x_ $.
-    wl-vx_ $f wl-setvarx wl-x $.
+    wl-vx.nosubst $f wl-setvarx wl-x $.
 
-    wl-cvx_ $a wl-setvarx wl-x_ $.
-    $( $j primitive 'wl-cvx_'; $)
+    wl-cvx.nosubst $a wl-setvarx wl-x_ $.
+    $( $j primitive 'wl-cvx.nosubst'; $)
 
   $}
 
