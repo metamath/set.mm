@@ -875772,7 +875772,7 @@ $)
        ~ sinh-conventional for a justification that our definition is the same
        as the conventional definition of sinh used in other sources.
        (Contributed by David A. Wheeler, 20-Apr-2015.) $)
-    sinhval-named $p |- ( A e. CC -> 
+    sinhval-named $p |- ( A e. CC ->
                         ( sinh ` A ) = ( ( sin ` ( _i x. A ) ) / _i ) ) $=
       ( vx ci cv cmul co csin cfv cdiv cc csinh wceq fveq2d oveq1d df-sinh ovex
       oveq2 fvmpt ) BACBDZEFZGHZCIFCAEFZGHZCIFJKSALZUAUCCIUDTUBGSACEQMNBOUCCIPR
