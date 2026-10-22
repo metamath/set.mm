@@ -496560,6 +496560,17 @@ htmldef "veronese" as "veronese";
   althtmldef "veronese" as "veronese";
   latexdef "veronese" as "\mathrm{veronese}";
 /* End of Jiamin Zhao's mathbox */
+
+/* Mathbox of Wolf Lammen */
+htmldef "wl-setvarx" as " nosubst-x"
+  althtmldef
+    "wl-setvarx" as '<SPAN CLASS=typecode STYLE="color:gray">nosubst-x</SPAN>';
+  latexdef "wl-setvarx" as "\mathrm{nosubst-x}";
+htmldef "wl-x" as " x# ";
+  althtmldef "wl-x" as '<SPAN CLASS=setvar STYLE="color:red">&#x1D465;#</SPAN>';
+  latexdef "wl-x" as "x#";
+/* End of Wolf Lammen's mathbox */
+
 /* End of typesetting definition section */
 $)
 $( End $[ set-typeset.mm $] $)
@@ -623033,6 +623044,24 @@ $)
       ( vt cv cab wcel wsb wnf weq wb wel w3o wo nfv orci df-3or wl-df-clab sbv
       mpbir bitri ) BEACFGACBHAABCDACIZACDJKZBDLCDLCBHKZMUBUCNZUDNUEUDUBUCACOPP
       UBUCUDQTRACBSUA $.
+  $}
+
+  $c wl-setvarx $.  $( A variable type assigned to just one variable wl-vx_ $)
+  $( $j syntax 'wl-setvarx'; bound 'wl-setvarx'; $)
+
+  $( Declare the color of setvar variables. $)
+  $( $j
+    varcolorcode "wl-setvarx" as "FF0000";
+    altvarcolorcode "wl_setvarx" as "FF0000";
+  $)
+
+  ${
+    $v wl-x_ $.
+    wl-vx_ $f wl-setvarx wl-x $.
+
+    wl-cvx_ $a wl-setvarx wl-x_ $.
+    $( $j primitive 'wl-cvx_'; $)
+
   $}
 
 $(
