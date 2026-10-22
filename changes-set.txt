@@ -94,6 +94,8 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+21-Oct-26 iotain      [same]      Moved from ATS's mathbox to main set.mm
+21-Oct-26 nvelim      [same]      Moved from AV's mathbox to main set.mm
 17-Oct-26 iotan0      [same]      Remove sethood requirement from antecedent
 14-Oct-26 flt4lem*    [same]      Revise to `( A gcd B ) = 1` to shorten overall
 10-Oct-26 f1od2       [same]      Moved from TA's mathbox to main set.mm
