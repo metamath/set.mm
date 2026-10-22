@@ -623053,8 +623053,8 @@ $)
 
   $( Declare the color of setvar variables. $)
   $( $j
-    varcolorcode "wl-setvarx" as "FF0000";
-    altvarcolorcode "wl_setvarx" as "FF0000";
+    varcolorcode "wl-setvarx" as "FF0001";
+    altvarcolorcode "wl_setvarx" as "FF0001";
   $)
 
   $v wl-x_f $.
