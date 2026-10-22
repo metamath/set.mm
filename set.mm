@@ -833740,9 +833740,11 @@ $)
        is no corresponding theorem ` ( E! x ph <-> ( iota x ph ) =/= (/) ) ` ,
        because ` (/) ` can be a valid unique set satisfying a wff (see, for
        example, ~ iota0def ).  Only the right to left implication would hold,
-       see (negated) ~ iotanul .  For defined cases, however, both definitions
-       ~ df-iota and ~ df-aiota are equivalent, see ~ reuaiotaiota .  (Proposed
-       by BJ, 13-Aug-2022.)  (Contributed by AV, 24-Aug-2022.) $)
+       see (negated) ~ iotanul .  See also ~ aiotaexim which requires sethood
+       instead of not being empty.  For defined cases, however, both
+       definitions ~ df-iota and ~ df-aiota are equivalent, see
+       ~ reuaiotaiota .  (Proposed by BJ, 13-Aug-2022.)  (Contributed by AV,
+       24-Aug-2022.) $)
     df-aiota $a |- ( iota' x ph ) = |^| { y | { x | ph } = { y } } $.
 
     $( Alternate definition of the alternate version of Russell's definition of
