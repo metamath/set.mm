@@ -496562,6 +496562,7 @@ htmldef "veronese" as "veronese";
 /* End of Jiamin Zhao's mathbox */
 
 /* Mathbox of Wolf Lammen */
+/*
 htmldef "wl-setvarx" as " nosubst-x";
   althtmldef "wl-setvarx" as
       ' <SPAN CLASS=typecode STYLE="color:gray">nosubst-x</SPAN>';
@@ -496570,6 +496571,7 @@ htmldef "wl-x_" as " x# ";
   althtmldef "wl-x_" as
       ' <SPAN CLASS=setvar STYLE="color:red">&#x1D465;#</SPAN>';
   latexdef "wl-x_" as "x\hat ";
+  */
 /* End of Wolf Lammen's mathbox */
 
 /* End of typesetting definition section */
@@ -623047,20 +623049,22 @@ $)
       UBUCUDQTRACBSUA $.
   $}
 
-  $c wl-setvarx $.  $( A variable type assigned to just one variable wl-vx_ $)
-  $( $j syntax 'wl-setvarx'; bound 'wl-setvarx'; $)
+  $(
+  $c wl-setvarx @.  @( A variable type assigned to just one variable wl-vx_ $)
+  @( $j syntax 'wl-setvarx'; bound 'wl-setvarx'; @)
 
-  $( Declare the color of setvar variables. $)
-  $( $j
+  @( Declare the color of setvar variables. @)
+  @( $j
     varcolorcode "wl-setvarx" as "FF0000";
     altvarcolorcode "wl_setvarx" as "FF0000";
-  $)
+  @)
 
   $v wl-x_ $.
   wl-vx.nosubst $f wl-setvarx wl-x_ $.
-  $( allow the substitution of a wl-setvarx for a setvar. $)
+  @( allow the substitution of a wl-setvarx for a setvar. @)
   wl-cvx.nosubst $a setvar wl-x_ $.
-  $( $j primitive 'wl-cvx.nosubst'; $)
+  @( $j primitive 'wl-cvx.nosubst'; @)
+  $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
