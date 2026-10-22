@@ -496562,12 +496562,13 @@ htmldef "veronese" as "veronese";
 /* End of Jiamin Zhao's mathbox */
 
 /* Mathbox of Wolf Lammen */
-htmldef "wl-setvarx" as " nosubst-x"
-  althtmldef
-    "wl-setvarx" as '<SPAN CLASS=typecode STYLE="color:gray">nosubst-x</SPAN>';
+htmldef "wl-setvarx" as " nosubst-x";
+  althtmldef "wl-setvarx" as
+      ' <SPAN CLASS=typecode STYLE="color:gray">nosubst-x</SPAN>';
   latexdef "wl-setvarx" as "\mathrm{nosubst-x}";
 htmldef "wl-x" as " x# ";
-  althtmldef "wl-x" as '<SPAN CLASS=setvar STYLE="color:red">&#x1D465;#</SPAN>';
+  althtmldef "wl-x" as
+      ' <SPAN CLASS=setvar STYLE="color:red">&#x1D465;#</SPAN>';
   latexdef "wl-x" as "x#";
 /* End of Wolf Lammen's mathbox */
 
