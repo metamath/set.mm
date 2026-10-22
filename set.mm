@@ -496566,10 +496566,10 @@ htmldef "wl-setvarx" as " nosubst-x";
   althtmldef "wl-setvarx" as
       ' <SPAN CLASS=typecode STYLE="color:gray">nosubst-x</SPAN>';
   latexdef "wl-setvarx" as "\mathrm{nosubst-x}";
-htmldef "wl-x" as " x# ";
-  althtmldef "wl-x" as
+htmldef "wl-x_" as " x# ";
+  althtmldef "wl-x_" as
       ' <SPAN CLASS=setvar STYLE="color:red">&#x1D465;#</SPAN>';
-  latexdef "wl-x" as "x#";
+  latexdef "wl-x_" as "x#";
 /* End of Wolf Lammen's mathbox */
 
 /* End of typesetting definition section */
