@@ -623050,20 +623050,20 @@ $)
   $}
 
   $(
-  $c wl-setvarx @.  @( A variable type assigned to just one variable wl-vx_ $)
-  @( $j syntax 'wl-setvarx'; bound 'wl-setvarx'; @)
+  @c wl-setvarx @.  @( A variable type assigned to just one variable wl-vx_ @)
+  @( @j syntax 'wl-setvarx'; bound 'wl-setvarx'; @)
 
   @( Declare the color of setvar variables. @)
-  @( $j
+  @( @j
     varcolorcode "wl-setvarx" as "FF0000";
     altvarcolorcode "wl_setvarx" as "FF0000";
   @)
 
-  $v wl-x_ $.
-  wl-vx.nosubst $f wl-setvarx wl-x_ $.
+  @v wl-x_ @.
+  wl-vx.nosubst @f wl-setvarx wl-x_ @.
   @( allow the substitution of a wl-setvarx for a setvar. @)
-  wl-cvx.nosubst $a setvar wl-x_ $.
-  @( $j primitive 'wl-cvx.nosubst'; @)
+  wl-cvx.nosubst @a setvar wl-x_ @.
+  @( @j primitive 'wl-cvx.nosubst'; @)
   $)
 
 $(
