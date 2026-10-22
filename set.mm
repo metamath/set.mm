@@ -496562,11 +496562,11 @@ htmldef "veronese" as "veronese";
 /* End of Jiamin Zhao's mathbox */
 
 /* Mathbox of Wolf Lammen */
-/*
 htmldef "wl-setvarx" as " nosubst-x";
   althtmldef "wl-setvarx" as
       ' <SPAN CLASS=typecode STYLE="color:gray">nosubst-x</SPAN>';
   latexdef "wl-setvarx" as "\mathrm{nosubst-x}";
+/*
 htmldef "wl-x_" as " x# ";
   althtmldef "wl-x_" as
       ' <SPAN CLASS=setvar STYLE="color:red">&#x1D465;#</SPAN>';
@@ -623049,10 +623049,10 @@ $)
       UBUCUDQTRACBSUA $.
   $}
 
-  $(
-  @c wl-setvarx @.  @( A variable type assigned to just one variable wl-vx_ @)
-  @( @j syntax 'wl-setvarx'; bound 'wl-setvarx'; @)
+  $c wl-setvarx $.  $( A variable type assigned to just one variable wl-vx_ $)
+  $( $j syntax 'wl-setvarx'; bound 'wl-setvarx'; $)
 
+  $(
   @( Declare the color of setvar variables. @)
   @( @j
     varcolorcode "wl-setvarx" as "FF0000";
