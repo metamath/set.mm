@@ -496569,7 +496569,7 @@ htmldef "wl-setvarx" as " nosubst-x";
 htmldef "wl-x_" as " x# ";
   althtmldef "wl-x_" as
       ' <SPAN CLASS=setvar STYLE="color:red">&#x1D465;#</SPAN>';
-  latexdef "wl-x_" as "x#";
+  latexdef "wl-x_" as "x\#";
 /* End of Wolf Lammen's mathbox */
 
 /* End of typesetting definition section */
