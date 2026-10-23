@@ -20157,10 +20157,8 @@ $)
     hb.2 $e |- ( ps -> A. x ps ) $.
     $( If ` x ` is not free in ` ph ` and ` ps ` , it is not free in
        ` ( ph /\ ps ) ` .  (Contributed by NM, 14-May-1993.)  (Proof shortened
-       by Wolf Lammen, 2-Jan-2018.)  Proof based on
-       ~ https://github.com/metamath/set.mm/issues/5555 .  Avoid ~ ax-5 ,
-       ~ ax-6 , ~ ax-7 , ~ ax-10 , and ~ ax-12 .  (Revised by Sky Winter,
-       22-Oct-2026.) $)
+       by Wolf Lammen, 2-Jan-2018.)  Reduce axiom dependencies.  (Revised by SN
+       and Sky Winter, 22-Oct-2026.) $)
     hban $p |- ( ( ph /\ ps ) -> A. x ( ph /\ ps ) ) $=
       ( wa wal pm3.2 alrimdh imp ) ABABFZCGABKCDEABHIJ $.
     $( $j usage 'hban' avoids 'ax-5' 'ax-6' 'ax-7' 'ax-10' 'ax-12'; $)
