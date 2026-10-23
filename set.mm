@@ -67712,7 +67712,7 @@ $)
     BVAHZBJUOURVABACQSUOVDUQBULCUMRZUNVDUQTULUMUMTZVEUMUAVEULVFGCUMUBUCUDUMACUE
     UFUGUHUNVCUTMULAUSUMUIUKUJ $.
 
-  $( Membership in the preimage of a set under a function.  (Contributed by
+  $( Membership in the preimage of a class under a function.  (Contributed by
      Jeff Madsen, 2-Sep-2009.)  (Proof shortened by Sky Winter,
      22-Oct-2026.) $)
   elpreima $p |- ( F Fn A -> ( B e. ( `' F " C )
