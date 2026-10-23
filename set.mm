@@ -579581,6 +579581,43 @@ $)
     CZBQCGUEGJBBKLABBMNOUBUCRSUBUCTUA $.
   $( $j usage 'xoromon' avoids 'ax-reg' 'ax-inf' 'ax-inf2'; $)
 
+  $( Reconstruction of a member of a nested Cartesian product in terms of its
+     ordered triple components.  (Contributed by BTernaryTau, 9-Oct-2026.) $)
+  ot1st2nd $p |- ( A e. ( ( B X. C ) X. D ) -> A =
+      <. ( 1st ` ( 1st ` A ) ) , ( 2nd ` ( 1st ` A ) ) , ( 2nd ` A ) >. ) $=
+    ( cxp wcel c1st cfv c2nd cop cotp 1st2nd2 wceq xp1st syl opeq1d eqtrd df-ot
+    eqtr4di ) ABCEZDEFZAAGHZGHZUBIHZJZAIHZJZUCUDUFKUAAUBUFJUGATDLUAUBUEUFUAUBTF
+    UBUEMATDNUBBCLOPQUCUDUFRS $.
+
+  ${
+    $d A x y z $.  $d B x y z $.  $d C x y z $.  $d D x y z $.  $d E x y z $.
+    omeueq.1 $e |- ( ph -> A e. On ) $.
+    omeueq.2 $e |- ( ph -> A =/= (/) ) $.
+    omeueq.3 $e |- ( ph -> B e. On ) $.
+    omeueq.4 $e |- ( ph -> C e. A ) $.
+    omeueq.5 $e |- ( ph -> D e. On ) $.
+    omeueq.6 $e |- ( ph -> E e. A ) $.
+    omeueq.7 $e |- ( ph -> ( ( A .o B ) +o C ) = ( ( A .o D ) +o E ) ) $.
+    $( The division algorithm for ordinal multiplication ( ~ omeu ) produces a
+       unique quotient and remainder.  (Contributed by BTernaryTau,
+       5-Oct-2026.) $)
+    omeueq $p |- ( ph -> ( B = D /\ C = E ) ) $=
+      ( vx vy wceq wa co coa con0 vz cop cv comu wrex wmo weu wcel omcl syl2anc
+      c0 wne onelon oacl omeu syl3anc eumo syl opeq1 eqeq2d oveq2 oveq1d eqeq1d
+      anbi12d opeq2 eqid pm3.2i a1i 2rspcedvdw eqcomd jctil opex eqeq1 2rexbidv
+      cvv anbi1d moi mp3an1 syl12anc wb opthg mpbid ) ACDUBZEFUBZPZCEPDFPQZAUAU
+      CZNUCZOUCZUBZPZBWHUDRZWISRZBCUDRZDSRZPZQZOBUENTUEZUAUFZWCWJPZWPQZOBUENTUE
+      ZWDWJPZWPQZOBUENTUEZWEAWRUAUGZWSABTUHZWOTUHZBUKULXFGAWNTUHZDTUHZXHAXGCTUH
+      ZXIGIBCUIUJAXGDBUHZXJGJBDUMUJWNDUNUJHNOUABWOUOUPWRUAUQURAXAWCCWIUBZPZWNWI
+      SRZWOPZQWCWCPZWOWOPZQZNOCDTBWHCPZWTXNWPXPXTWJXMWCWHCWIUSUTXTWMXOWOXTWLWNW
+      ISWHCBUDVAVBVCVDWIDPZXNXQXPXRYAXMWCWCWIDCVEUTYAXOWOWOWIDWNSVAVCVDIJXSAXQX
+      RWCVFWOVFVGVHVIAXDWDEWIUBZPZBEUDRZWISRZWOPZQWDWDPZYDFSRZWOPZQNOEFTBWHEPZX
+      CYCWPYFYJWJYBWDWHEWIUSUTYJWMYEWOYJWLYDWISWHEBUDVAVBVCVDWIFPZYCYGYFYIYKYBW
+      DWDWIFEVEUTYKYEYHWOWIFYDSVAVCVDKLAYIYGAWOYHMVJWDVFVKVIWCVOUHZWDVOUHZQWSXB
+      XEQWEYLYMCDVLEFVLVGWRXBXEUAWCWDVOVOWGWCPZWQXANOTBYNWKWTWPWGWCWJVMVPVNWGWD
+      PZWQXDNOTBYOWKXCWPWGWDWJVMVPVNVQVRVSAXKXLWEWFVTIJCDEFTBWAUJWB $.
+  $}
+
   ${
     $d V y $.  $d A w y z $.  $d R w y z $.
     $( A strict order relation on an infinite set dominates that set.
@@ -581953,6 +581990,365 @@ $)
     WRWTXAYLUUDYGWSXBXCYFYHYMUUBPZYIYSYFUVPUUAYLCWQXDWPXEYNYPYMYFYHYPYMYIYFKYGY
     LYFKYGXFCXGXHXLXIWDXJXKXMXNYFNZYJYMUVQYHYIUVQYGYCXOZYHNYFCFVMZEUVRUVSDCDFXP
     XQXRCFXSXTYGAYATYDYBYE $.
+
+  ${
+    $d n x y z $.
+    $( Alternate definition of ` _J ` as a one-argument function.  (Contributed
+       by BTernaryTau, 4-Oct-2026.) $)
+    dfj2 $p |- _J = ( x e. ( ( On X. On ) X. 9o ) |->
+        ( ( 9o .o ( _J0 ` ( 1st ` x ) ) ) +o ( 2nd ` x ) ) ) $=
+      ( vy vz vn cj con0 c9o cv cop ccj0 cfv comu coa cmpt3 cxp c1st c2nd sylbi
+      co wceq cmpt df-j cotp df-ot eqeq2i opex vex op1std fveq2d oveq2d oveq12d
+      op2ndd mpt3mpt eqtr4i ) EBCDFFGGBHZCHZIZJKZLSZDHZMSZNAFFOGOGAHZPKZJKZLSZV
+      BQKZMSZUABCDUBBCDAFFGVGVAVBUOUPUTUCZTZVEUSVFUTMVIVDURGLVIVCUQJVIVBUQUTIZT
+      ZVCUQTVHVJVBUOUPUTUDUEZUQUTVBUOUPUFZDUGZUHRUIUJVIVKVFUTTVLUQUTVBVMVNULRUK
+      UMUN $.
+  $}
+
+  ${
+    $d w z $.  $d n w x y $.
+    $( ` _J ` is a one-to-one function.  Part of Proposition 15.3 of
+       [TakeutiZaring] p. 155.  (Contributed by BTernaryTau, 6-Oct-2026.) $)
+    jf1 $p |- _J : ( ( On X. On ) X. 9o ) -1-1-> On $=
+      ( vw vz con0 cxp c9o c1st cfv ccj0 comu co c2nd coa wcel wral wceq wi 9on
+      ax-mp wa a1i cj wf1 cv wf1o wf cr0 cep wiso j0iso isof1o f1of 0elon f0cli
+      omcl mp2an xp2nd onelon sylancr oacl rgen w3a c0 wne csuc nsuceq0 eqnetri
+      c8o df-9o 3ad2ant1 3ad2ant2 simp3 omeueq xp1st f1of1 f1veqaeq mpan syl2an
+      anim1d 3adant3 mpd wb xpopth mpbid 3expia rgen2 dfj2 2fveq3 fveq2 oveq12d
+      oveq2d f1mpt mpbir2an ) CCDZEDZCUAUBEAUCZFGZHGZIJZWOKGZLJZCMZAWNNWTEBUCZF
+      GZHGZIJZXBKGZLJZOZWOXBOZPZBWNNAWNNXAAWNWOWNMZWRCMZWSCMZXAECMZWQCMZXLQWMCW
+      PHWMCHUDZWMCHUEWMCUFUGHUHXPUIWMCUFUGHUJRZWMCHUKRZULUMZEWQUNUOXKXNWSEMZXMQ
+      WOWMEUPZEWSUQURWRWSUSURUTXJABWNWNXKXBWNMZXHXIXKYBXHVAZWPXCOZWSXFOZSZXIYCW
+      QXDOZYESZYFYCEWQWSXDXFXNYCQTEVBVCYCEVGVDVBVHVGVEVFTXOYCXSTXKYBXTXHYAVIXDC
+      MYCWMCXCHXRULUMTYBXKXFEMXHXBWMEUPVJXKYBXHVKVLXKYBYHYFPXHXKYBSYGYDYEXKWPWM
+      MZXCWMMZYGYDPZYBWOWMEVMXBWMEVMWMCHUBZYIYJSYKXPYLXQWMCHVNRWMCWPXCHVOVPVQVR
+      VSVTXKYBYFXIWAXHWOXBWMEWMEWBVSWCWDWEABWNCWTXGUAAWFXIWRXEWSXFLXIWQXDEIWOXB
+      HFWGWJWOXBKWHWIWKWL $.
+  $}
+
+  ${
+    $d u v w z $.  $d t u v w $.  $d n x y z $.
+    $( ` _J ` is a bijection from ` ( ( On X. On ) X. 9o ) ` to ` On ` .
+       Proposition 15.3 of [TakeutiZaring] p. 155.  (Contributed by
+       BTernaryTau, 6-Oct-2026.) $)
+    jf1o $p |- _J : ( ( On X. On ) X. 9o ) -1-1-onto-> On $=
+      ( vw vz vu vv vt con0 cxp c9o cj wf1o wceq jf1 cv cfv ccj0 comu wrex wcel
+      co coa wf1 crn wf wss f1f frn mp2b c1st c2nd cab wi ssab wne 9on c8o csuc
+      c0 df-9o nsuceq0 eqnetri omeulem1 mp3an13 wfo cr0 wiso j0iso isof1o f1ofo
+      cep foelcdmi mpan oveq2 oveq1d eqeq2d eqcom bitrdi rexbidv biimprcd mpan9
+      reximdv rexlimiva syl cop op1std fveq2d oveq2d op2ndd rexxp sylibr mpgbir
+      vex oveq12d dfj2 rnmpt sseqtrri eqssi dff1o5 mpbir2an ) FFGZHGZFIJWTFIUAZ
+      IUBZFKLXBFXAWTFIUCXBFUDLWTFIUEWTFIUFUGFAMZHBMZUHNZONZPSZXDUINZTSZKZBWTQZA
+      UJZXBFXLUDXCFRZXKUKAXKAFULXMXCHCMZONZPSZDMZTSZKZDHQZCWSQZXKXMHEMZPSZXQTSZ
+      XCKZDHQZEFQZYAHFRXMHUQUMYGUNHUOUPUQURUOUSUTEDHXCVAVBYFYAEFYBFRZXOYBKZCWSQ
+      ZYFYAWSFOVCZYHYJWSFVDVIOVEWSFOJYKVFWSFVDVIOVGWSFOVHUGCWSFOYBVJVKYFYIXTCWS
+      YIXTYFYIXSYEDHYIXSXCYDKYEYIXRYDXCYIXPYCXQTXOYBHPVLVMVNXCYDVOVPVQVRVTVSWAW
+      BXJXSBCDWSHXDXNXQWCKZXIXRXCYLXGXPXHXQTYLXFXOHPYLXEXNOXNXQXDCWKZDWKZWDWEWF
+      XNXQXDYMYNWGWLVNWHWIWJBAWTXIIBWMWNWOWPWTFIWQWR $.
+  $}
+
+  ${
+    $d n x y z $.
+    $( Alternate definition of ` _K1 ` using maps-to notation.  (Contributed by
+       BTernaryTau, 9-Oct-2026.) $)
+    dfk12 $p |- _K1 = ( x e. On |-> ( 1st ` ( 1st ` ( `' _J ` x ) ) ) ) $=
+      ( vz vy vn cv con0 wcel cotp cj cfv wceq wrex c9o wa copab wi jf1o adantr
+      w3a cvv ccnv c1st ck1 simpl simpllr simpr simplr simplll eqcom cxp otelxp
+      cmpt wb wf1o f1ocnvfvb mp3an1 sylanbr c2nd vex 3pm3.2i oteqimp mpi simp1d
+      eqcomd biimtrdi biimtrid syl31anc rexlimdva impr f1ocnvdm mpan xp1st 3syl
+      jca eleq1 adantl mpbird oteq3 eqeq2d oteq2 syl ot1st2nd eqtr4d 2rspcedvdw
+      xp2nd oteq1 biimprd imbitrrdi reximdva syldan mpd f1of ax-mp 0elon mpbiri
+      f0cli rexlimivw jccil impbii opabbii df-k1 pm4.71ri eqtri df-mpt 3eqtr4i
+      wf ) AEZFGZBEZFGZXGXICEZDEZHZIJZKZCFLZDMLZNZNZABOZXHXIXGIUAJZUBJZUBJZKZNZ
+      ABOUCAFYCULXSYEABXSYEXSXHYDXHXRUDXHXJXQYDXHXJNZXPYDDMYFXLMGZNZXOYDCFYHXKF
+      GZNZXJYIYGXHXOYDPXHXJYGYIUEZYHYIUFZYFYGYIUGZXHXJYGYIUHZXOXNXGKZXJYIYGSZXH
+      NZYDXGXNUIZYQYOYAXMKZYDYPXMFFUJZMUJZGZXHYOYSUMZXIXKXLFFMUKUUAFIUNZUUBXHUU
+      CQUUAFXMXGIUOUPUQZYSYCXIYSYCXIKZYBURJZXKKZYAURJZXLKZYSXITGZXKTGZXLTGZSUUF
+      UUHUUJSUUKUULUUMBUSCUSDUSUTXIXKXLYATTTVAVBVCVDVEVFVGVHVHVIVNYEXRXHYEXJXQY
+      EXJYCFGZXHUUNYDXHYAUUAGZYBYTGZUUNUUDXHUUOQUUAFXGIVJVKZYAYTMVLZYBFFVLVMRYD
+      XJUUNUMXHXIYCFVOVPVQZYEYSCFLZDMLZXQYEYSYAXIXKUUIHZKYAXIUUGUUIHZKDCUUIUUGM
+      FXLUUIKXMUVBYAXLUUIXIXKVRVSXKUUGKUVBUVCYAXKUUGXIUUIVTVSXHUUIMGZYDXHUUOUVD
+      UUQYAYTMWEWARXHUUGFGZYDXHUUOUUPUVEUUQUURYBFFWEVMRYEYAYCUUGUUIHZUVCXHYAUVF
+      KZYDXHUUOUVGUUQYAFFMWBWARYDUVCUVFKXHXIYCUUGUUIWFVPWCWDXHYDXJUVAXQPUUSYFUU
+      TXPDMYHYSXOCFYJXJYIYGXHYSXOPYKYLYMYNYQYSYOXOYQYOYSUUEWGYRWHVGWIWIWJWKVNXQ
+      XHXJXPXHDMXOXHCFXOXHXNFGUUAFXMIUUDUUAFIXFQUUAFIWLWMWNWPXGXNFVOWOWQWQVPZWR
+      WSWTUCXRABOXTBCADXAXRXSABXRXHUVHXBWTXCABFYCXDXE $.
+  $}
+
+  ${
+    $d n x y z $.
+    $( Alternate definition of ` _K2 ` using maps-to notation.  (Contributed by
+       BTernaryTau, 10-Oct-2026.) $)
+    dfk22 $p |- _K2 = ( x e. On |-> ( 2nd ` ( 1st ` ( `' _J ` x ) ) ) ) $=
+      ( vy vz vn cv con0 wcel cotp cj cfv wceq wrex c9o wa copab wi jf1o adantr
+      w3a cvv ccnv c1st c2nd ck2 cmpt simpl simpr simpllr simplr simplll cxp wb
+      eqcom otelxp wf1o f1ocnvfvb mp3an1 sylanbr vex 3pm3.2i oteqimp mpi simp2d
+      eqcomd biimtrdi biimtrid syl31anc rexlimdva impr jca f1ocnvdm xp1st xp2nd
+      mpan eleq1 adantl mpbird oteq3 eqeq2d oteq1 syl ot1st2nd oteq2 2rspcedvdw
+      3syl eqtr4d biimprd imbitrrdi reximdva syldan mpd f1of ax-mp 0elon mpbiri
+      f0cli rexlimivw jccil impbii opabbii df-k2 pm4.71ri eqtri df-mpt 3eqtr4i
+      wf ) AEZFGZBEZFGZXGCEZXIDEZHZIJZKZCFLZDMLZNZNZABOZXHXIXGIUAJZUBJZUCJZKZNZ
+      ABOUDAFYCUEXSYEABXSYEXSXHYDXHXRUFXHXJXQYDXHXJNZXPYDDMYFXLMGZNZXOYDCFYHXKF
+      GZNZYIXJYGXHXOYDPYHYIUGZXHXJYGYIUHZYFYGYIUIZXHXJYGYIUJZXOXNXGKZYIXJYGSZXH
+      NZYDXGXNUMZYQYOYAXMKZYDYPXMFFUKZMUKZGZXHYOYSULZXKXIXLFFMUNUUAFIUOZUUBXHUU
+      CQUUAFXMXGIUPUQURZYSYCXIYSYBUBJZXKKZYCXIKZYAUCJZXLKZYSXKTGZXITGZXLTGZSUUG
+      UUHUUJSUUKUULUUMCUSBUSDUSUTXKXIXLYATTTVAVBVCVDVEVFVGVHVHVIVJYEXRXHYEXJXQY
+      EXJYCFGZXHUUNYDXHYAUUAGZYBYTGZUUNUUDXHUUOQUUAFXGIVKVNZYAYTMVLZYBFFVMWERYD
+      XJUUNULXHXIYCFVOVPVQZYEYSCFLZDMLZXQYEYSYAXKXIUUIHZKYAUUFXIUUIHZKDCUUIUUFM
+      FXLUUIKXMUVBYAXLUUIXKXIVRVSXKUUFKUVBUVCYAXKUUFXIUUIVTVSXHUUIMGZYDXHUUOUVD
+      UUQYAYTMVMWARXHUUFFGZYDXHUUOUUPUVEUUQUURYBFFVLWERYEYAUUFYCUUIHZUVCXHYAUVF
+      KZYDXHUUOUVGUUQYAFFMWBWARYDUVCUVFKXHXIYCUUFUUIWCVPWFWDXHYDXJUVAXQPUUSYFUU
+      TXPDMYHYSXOCFYJYIXJYGXHYSXOPYKYLYMYNYQYSYOXOYQYOYSUUEWGYRWHVGWIWIWJWKVJXQ
+      XHXJXPXHDMXOXHCFXOXHXNFGUUAFXMIUUDUUAFIXFQUUAFIWLWMWNWPXGXNFVOWOWQWQVPZWR
+      WSWTUDXRABOXTCBADXAXRXSABXRXHUVHXBWTXCABFYCXDXE $.
+  $}
+
+  ${
+    $d n x y z $.
+    $( Alternate definition of ` _K3 ` using maps-to notation.  (Contributed by
+       BTernaryTau, 10-Oct-2026.) $)
+    dfk32 $p |- _K3 = ( x e. On |-> ( 2nd ` ( `' _J ` x ) ) ) $=
+      ( vn vz vy cv con0 wcel c9o cotp cj cfv wceq wrex wa copab wi jf1o adantr
+      w3a cvv ccnv c2nd ck3 simpl simplr simpr simpllr simplll eqcom cxp otelxp
+      cmpt wb wf1o f1ocnvfvb mp3an1 sylanbr c1st vex 3pm3.2i oteqimp mpi simp3d
+      eqcomd biimtrdi biimtrid syl31anc rexlimdva impr jca f1ocnvdm xp2nd eleq1
+      mpan syl adantl mpbird oteq1 eqeq2d oteq2 xp1st ot1st2nd oteq3 2rspcedvdw
+      3syl eqtr4d biimprd imbitrrdi reximdva syldan mpd f1of ax-mp 0elon mpbiri
+      f0cli rexlimivw jccil impbii opabbii df-k3 pm4.71ri eqtri df-mpt 3eqtr4i
+      wf ) AEZFGZBEZHGZXGCEZDEZXIIZJKZLZDFMZCFMZNZNZABOZXHXIXGJUAKZUBKZLZNZABOU
+      CAFYBULXSYDABXSYDXSXHYCXHXRUDXHXJXQYCXHXJNZXPYCCFYEXKFGZNZXOYCDFYGXLFGZNZ
+      YFYHXJXHXOYCPYEYFYHUEZYGYHUFZXHXJYFYHUGZXHXJYFYHUHZXOXNXGLZYFYHXJSZXHNZYC
+      XGXNUIZYPYNYAXMLZYCYOXMFFUJZHUJZGZXHYNYRUMZXKXLXIFFHUKYTFJUNZUUAXHUUBQYTF
+      XMXGJUOUPUQZYRYBXIYRYAURKZURKZXKLZUUEUBKZXLLZYBXILZYRXKTGZXLTGZXITGZSUUGU
+      UIUUJSUUKUULUUMCUSDUSBUSUTXKXLXIYATTTVAVBVCVDVEVFVGVHVHVIVJYDXRXHYDXJXQYD
+      XJYBHGZXHUUNYCXHYAYTGZUUNUUCXHUUOQYTFXGJVKVNZYAYSHVLVORYCXJUUNUMXHXIYBHVM
+      VPVQZYDYRDFMZCFMZXQYDYRYAUUFXLXIIZLYAUUFUUHXIIZLCDUUFUUHFFXKUUFLXMUUTYAXK
+      UUFXLXIVRVSXLUUHLUUTUVAYAXLUUHUUFXIVTVSXHUUFFGZYCXHUUOUUEYSGZUVBUUPYAYSHW
+      AZUUEFFWAWERXHUUHFGZYCXHUUOUVCUVEUUPUVDUUEFFVLWERYDYAUUFUUHYBIZUVAXHYAUVF
+      LZYCXHUUOUVGUUPYAFFHWBVORYCUVAUVFLXHXIYBUUFUUHWCVPWFWDXHYCXJUUSXQPUUQYEUU
+      RXPCFYGYRXODFYIYFYHXJXHYRXOPYJYKYLYMYPYRYNXOYPYNYRUUDWGYQWHVGWIWIWJWKVJXQ
+      XHXJXPXHCFXOXHDFXOXHXNFGYTFXMJUUCYTFJXFQYTFJWLWMWNWPXGXNFVMWOWQWQVPZWRWSW
+      TUCXRABOXTCDABXAXRXSABXRXHUVHXBWTXCABFYBXDXE $.
+  $}
+
+  ${
+    $d A x $.
+    $( Values of the ` _K1 ` function are ordinals.  (Contributed by
+       BTernaryTau, 11-Oct-2026.) $)
+    k1on $p |- ( _K1 ` A ) e. On $=
+      ( vx con0 wcel ck1 cfv cj ccnv c1st cv wceq 2fveq3 fveq2d dfk12 fvmpt cxp
+      fvex c9o wf1o xp1st jf1o f1ocnvdm mpan eqeltrd wn fvmptndm 0elon eqeltrdi
+      3syl c0 pm2.61i ) ACDZAEFZCDULUMAGHZFZIFZIFZCBABJZUNFIFZIFZUQCEURAKUSUPIU
+      RAIUNLMBNZUPIQOULUOCCPZRPZDZUPVBDUQCDVCCGSULVDUAVCCAGUBUCUOVBRTUPCCTUIUDU
+      LUEUMUJCBCUTEAVAUFUGUHUK $.
+  $}
+
+  ${
+    $d A x $.
+    $( Values of the ` _K2 ` function are ordinals.  (Contributed by
+       BTernaryTau, 11-Oct-2026.) $)
+    k2on $p |- ( _K2 ` A ) e. On $=
+      ( vx con0 wcel ck2 cfv cj ccnv c1st c2nd cv wceq 2fveq3 fveq2d dfk22 fvex
+      fvmpt cxp c9o wf1o jf1o f1ocnvdm xp1st xp2nd eqeltrd wn c0 fvmptndm 0elon
+      mpan 3syl eqeltrdi pm2.61i ) ACDZAEFZCDUNUOAGHZFZIFZJFZCBABKZUPFIFZJFZUSC
+      EUTALVAURJUTAIUPMNBOZURJPQUNUQCCRZSRZDZURVDDUSCDVECGTUNVFUAVECAGUBUJUQVDS
+      UCURCCUDUKUEUNUFUOUGCBCVBEAVCUHUIULUM $.
+  $}
+
+  ${
+    $d A x $.
+    $( Values of the ` _K3 ` function are ordinals less than 9.  (Contributed
+       by BTernaryTau, 11-Oct-2026.) $)
+    k39o $p |- ( _K3 ` A ) e. 9o $=
+      ( vx con0 wcel ck3 cfv c9o cj ccnv c2nd 2fveq3 dfk32 fvex fvmpt wf1o jf1o
+      cv cxp c0 c8o f1ocnvdm mpan xp2nd syl eqeltrd fvmptndm csuc df-9o nsuceq0
+      wn wne eqnetri wb 9on on0eln0 ax-mp mpbir eqeltrdi pm2.61i ) ACDZAEFZGDUT
+      VAAHIZFZJFZGBABQZVBFJFZVDCEVEAJVBKBLZVCJMNUTVCCCRZGRZDZVDGDVICHOUTVJPVICA
+      HUAUBVCVHGUCUDUEUTUJVASGBCVFEAVGUFSGDZGSUKZGTUGSUHTUIULGCDVKVLUMUNGUOUPUQ
+      URUS $.
+  $}
+
+  ${
+    $d A x $.
+    $( Identity law for the ` _J ` function.  Proposition 15.8 of
+       [TakeutiZaring] p. 156.  (Contributed by BTernaryTau, 11-Oct-2026.) $)
+    jk1k2k3 $p |- ( A e. On ->
+        A = ( _J ` <. ( _K1 ` A ) , ( _K2 ` A ) , ( _K3 ` A ) >. ) ) $=
+      ( vx con0 wcel ck1 cfv ck2 ck3 cj wceq cxp c9o c1st c2nd jf1o 2fveq3 fvex
+      fveq2d fvmpt eqcomd cotp ccnv w3a wa wf1o f1ocnvdm mpan dfk12 dfk22 dfk32
+      cv 3jca jca k1on k2on k39o el2xptp0 mp3an sylib eqeltrrd f1ocnvfvb mp3an1
+      wb mpancom mpbird ) ACDZAEFZAGFZAHFZUAZIFZAVFVKAJZAIUBZFZVJJZVFVNCCKLKZDZ
+      VNMFZMFZVGJZVRNFZVHJZVNNFZVIJZUCZUDZVOVFVQWEVPCIUEZVFVQOVPCAIUFUGZVFVTWBW
+      DVFVGVSBABUKZVMFZMFZMFVSCEWIAJZWKVRMWIAMVMPZRBUHVRMQSTVFVHWABAWKNFWACGWLW
+      KVRNWMRBUIVRNQSTVFVIWCBAWJNFWCCHWIANVMPBUJVNNQSTULUMVGCDVHCDVILDWFVOVCAUN
+      AUOAUPVNCCLVGVHVIUQURUSZVJVPDZVFVLVOVCZVFVNVJVPWNWHUTWGWOVFWPOVPCVJAIVAVB
+      VDVET $.
+  $}
+
+  ${
+    $d A n x y $.
+    $( An upper bound on the value of ` _J0 ` .  (Contributed by BTernaryTau,
+       12-Oct-2026.) $)
+    j0le $p |- ( A e. On -> ( _J0 ` <. ( _K1 ` A ) , ( _K2 ` A ) >. ) C_ A ) $=
+      ( vx vy vn con0 wcel cfv cop ccj0 c9o comu co wss 9on mp2an coa cv adantl
+      a1i wceq ck1 ck2 cxp cr0 cep wiso wf1o j0iso isof1o f1of mp2b 0elon f0cli
+      wf wa c0 wne ck3 k39o ne0ii on0eln0 ax-mp mpbir omword2 mpan2 omcl onelon
+      wb oaword1 cotp cj jk1k2k3 cvv k1on k2on ovexd opeq1 fveq2d oveq2d oveq1d
+      opeq2 oveq2 df-j mpt3fvot2d eqtrd sseqtrrid sstrid ) AEFZAUAGZAUBGZHZIGZJ
+      WLKLZAWLEFZJEFZWLWMMZEEUCZEWKIWQEUDUEIUFWQEIUGWQEIUNUHWQEUDUEIUIWQEIUJUKU
+      LUMZNWNWOUOUPJFZWPWSJUPUQZAURGZJAUSZUTWOWSWTVHNJVAVBVCWLJVDVEOWHWMXAPLZWM
+      AWMEFZXAEFZWMXCMWOWNXDNWRJWLVFOWOXAJFZXENXBJXAVGOWMXAVIOWHAWIWJXAVJVKGXCA
+      VLWHBCDEEJJBQZCQZHZIGZKLZDQZPLZWIWJXAVKJWIXHHZIGZKLZXLPLZWMXLPLZXCVMWIEFW
+      HAVNSWJEFWHAVOSXFWHXBSWHWMXAPVPWIXGTZXQXMTWHXSXPXKXLPXSXOXJJKXSXNXIIWIXGX
+      HVQVRVSVTRWJXHTZXRXQTWHXTWMXPXLPXTWLXOJKXTWKXNIWJXHWIWAVRVSVTRXAXLTXCXRTW
+      HXAXLWMPWBRBCDWCWDWEWFWG $.
+  $}
+
+  ${
+    $d A n x y $.
+    $( A strict upper bound on the value of ` _J0 ` for nonzero values of
+       ` _K3 ` .  (Contributed by BTernaryTau, 12-Oct-2026.) $)
+    k3n0j0lt $p |- ( ( A e. On /\ (/) e. ( _K3 ` A ) ) ->
+        ( _J0 ` <. ( _K1 ` A ) , ( _K2 ` A ) >. ) e. A ) $=
+      ( vx vy vn con0 wcel c0 cfv wa c9o cop ccj0 comu co coa 9on mp2an wceq cv
+      a1i ck3 ck1 ck2 wb cxp cr0 cep wiso wf1o wf j0iso isof1o f1of 0elon f0cli
+      mp2b omcl k39o onelon oaord1 bilani cotp cj jk1k2k3 k1on k2on ovexd opeq1
+      cvv fveq2d oveq2d oveq1d adantl opeq2 oveq2 mpt3fvot2d eqtrd eleqtrrd wss
+      df-j adantr wne ne0ii on0eln0 ax-mp mpbir omword2 mpan2 wi ontr2 mpan mpd
+      mpani ) AEFZGAUAHZFZIZJAUBHZAUCHZKZLHZMNZAFZXAAFZWQXBXBWOONZAWPXBXEFZWNXB
+      EFZWOEFZWPXFUDJEFZXAEFZXGPEEUEZEWTLXKEUFUGLUHXKELUIXKELUJUKXKEUFUGLULXKEL
+      UMUPUNUOZJXAUQQXIWOJFZXHPAURZJWOUSQXBWOUTQVAWNAXERWPWNAWRWSWOVBVCHXEAVDWN
+      BCDEEJJBSZCSZKZLHZMNZDSZONZWRWSWOVCJWRXPKZLHZMNZXTONZXBXTONZXEVIWREFWNAVE
+      TWSEFWNAVFTXMWNXNTWNXBWOOVGWRXORZYEYARWNYGYDXSXTOYGYCXRJMYGYBXQLWRXOXPVHV
+      JVKVLVMWSXPRZYFYERWNYHXBYDXTOYHXAYCJMYHWTYBLWSXPWRVNVJVKVLVMWOXTRXEYFRWNW
+      OXTXBOVOVMBCDVTVPVQWAVRWQXAXBVSZXCXDXJXIYIXLPXJXIIGJFZYIYJJGWBZWOJXNWCXIY
+      JYKUDPJWDWEWFXAJWGWHQWNYIXCIXDWIZWPXJWNYLXLXAXBAWJWKWAWMWL $.
+  $}
+
+  $( The value of ` _K1 ` is bounded by its argument.  Part of Proposition
+     15.10(1) of [TakeutiZaring] p. 156.  (Contributed by BTernaryTau,
+     12-Oct-2026.) $)
+  k1le $p |- ( A e. On -> ( _K1 ` A ) C_ A ) $=
+    ( con0 wcel ck1 cfv ck2 cun cop ccj0 wss k1on k2on mp2an j0le sstrid unssad
+    maxssj0 ) ABCZADEZAFEZARSTGZSTHIEZASBCTBCUAUBJAKALSTQMANOP $.
+
+  $( The value of ` _K2 ` is bounded by its argument.  Part of Proposition
+     15.10(1) of [TakeutiZaring] p. 156.  (Contributed by BTernaryTau,
+     12-Oct-2026.) $)
+  k2le $p |- ( A e. On -> ( _K2 ` A ) C_ A ) $=
+    ( con0 wcel ck1 cfv ck2 cun cop ccj0 wss k1on k2on mp2an j0le sstrid unssbd
+    maxssj0 ) ABCZADEZAFEZARSTGZSTHIEZASBCTBCUAUBJAKALSTQMANOP $.
+
+  $( The value of ` _K1 ` is strictly bounded by its argument when the value of
+     ` _K3 ` is nonzero.  Part of Proposition 15.10(2) of [TakeutiZaring]
+     p. 156.  (Contributed by BTernaryTau, 12-Oct-2026.) $)
+  k3n0k1lt $p |- ( ( A e. On /\ (/) e. ( _K3 ` A ) ) -> ( _K1 ` A ) e. A ) $=
+    ( con0 wcel c0 ck3 cfv wa ck1 ck2 cun cop ccj0 k3n0j0lt wi wss k1on maxssj0
+    k2on mp2an adantr onun2i ontr2 mpan mpani mpd onunel mp3an12 simprbda mpdan
+    wb ) ABCZDAEFCZGZAHFZAIFZJZACZUNACZUMUNUOKLFZACZUQAMUKUTUQNULUKUPUSOZUTUQUN
+    BCZUOBCZVAAPZARZUNUOQSUPBCUKVAUTGUQNUNUOVDVEUAUPUSAUBUCUDTUEUMUQURUOACZUKUQ
+    URVFGUJZULVBVCUKVGVDVEUNUOAUFUGTUHUI $.
+
+  $( The value of ` _K2 ` is strictly bounded by its argument when the value of
+     ` _K3 ` is nonzero.  Part of Proposition 15.10(2) of [TakeutiZaring]
+     p. 156.  (Contributed by BTernaryTau, 12-Oct-2026.) $)
+  k3n0k2lt $p |- ( ( A e. On /\ (/) e. ( _K3 ` A ) ) -> ( _K2 ` A ) e. A ) $=
+    ( con0 wcel c0 ck3 cfv wa ck1 ck2 cun cop ccj0 k3n0j0lt wi wss k1on maxssj0
+    k2on mp2an adantr onun2i ontr2 mpan mpani mpd onunel mp3an12 simplbda mpdan
+    wb ) ABCZDAEFCZGZAHFZAIFZJZACZUOACZUMUNUOKLFZACZUQAMUKUTUQNULUKUPUSOZUTUQUN
+    BCZUOBCZVAAPZARZUNUOQSUPBCUKVAUTGUQNUNUOVDVEUAUPUSAUBUCUDTUEUMUQUNACZURUKUQ
+    VFURGUJZULVBVCUKVGVDVEUNUOAUFUGTUHUI $.
+
+  ${
+    $( Lemma for ~ jltaleph .  (Contributed by BTernaryTau, 16-Oct-2026.) $)
+    jltalephlem $p |- ( ( C e. 9o /\ _om ~<_ ( _J0 ` <. A , B >. ) ) ->
+        ( ( 9o .o ( _J0 ` <. A , B >. ) ) +o C ) ~~ ( _J0 ` <. A , B >. ) ) $=
+      ( c9o wcel com ccj0 cdom wbr wa cen cxp con0 9on cr0 cep mp2b 9onn entr
+      co cop cfv comu coa wiso wf1o j0iso isof1o 0elon f0cli omxpen mp2an elexi
+      wf f1of fvex xpcomen entri cfn nnfi fict domtr mpan c0 wne c8o csuc df-9o
+      nsuceq0 eqnetri ccrd cdm onenon ax-mp infxpabs mpanl1 mpdan sylancr ensym
+      mpanr1 domentr sylan2 cdju omcl oneli simpr elnn mpan2 3syl sylan mp3an2i
+      onadju infdjuabs syl2an2r adantl syl2anc ) CDEZFABUAZGUBZHIZJDWSUCTZCUDTZ
+      XAKIZXAWSKIZXBWSKIWTWQFXAHIZXCWTXDXEWTXAWSDLZKIXFWSKIZXDXADWSLZXFDMEZWSME
+      ZXAXHKINMMLZMWRGXKMOPGUEXKMGUFXKMGUNUGXKMOPGUHXKMGUOQUIUJZDWSUKULDWSDFRUM
+      WRGUPUQURWTDWSHIZXGDFHIZWTXMDFEZDUSEXNRDUTDVAQDFWSVBVCWTDVDVEZXMXGDVFVGVD
+      VHVFVIVJWSVKVLZEZWTXPXMJXGXJXRXLWSVMVNWSDVOVPVTVQXAXFWSSVRZXDWTWSXAKIXEXA
+      WSVSFWSXAWAWBVQWQXBXACWCZKIZXEXTXAKIZXCWQXAMEZCMEYAXIXJYCNXLDWSWDULZDCNWE
+      XACWLVRXAXQEZWQXEJXECXAHIZYBYCYEYDXAVMVNWQXEWFWQCFHIZXEYFWQCFEZCUSEYGWQXO
+      YHRCDWGWHCUTCVAWICFXAVBWJXACWMWKXBXTXASWNWBWTXDWQXSWOXBXAWSSWP $.
+  $}
+
+  ${
+    $d A n x y $.  $d B n x y $.  $d C n x y $.  $d D n x y $.
+    $( The value of ` _J ` is less than an aleph if its first two arguments are
+       less than that aleph.  Proposition 15.11 of [TakeutiZaring] p. 156.
+       (Contributed by BTernaryTau, 16-Oct-2026.) $)
+    jltaleph $p |- ( ( A e. ( aleph ` D ) /\ B e. ( aleph ` D ) /\ C e. 9o ) ->
+        ( _J ` <. A , B , C >. ) e. ( aleph ` D ) ) $=
+      ( cale cfv wcel c9o ccj0 com cj wa comu co coa wceq con0 adantr wn wbr vx
+      vy vn w3a cop cotp cvv alephon oneli 3ad2ant1 3ad2ant2 simp3 ovexd fveq2d
+      cv opeq1 oveq2d oveq1d adantl opeq2 oveq2 mpt3fvot2d anim1ci c0 alephfnon
+      df-j cdm fndmi eleq2i ndmfv sylnbir nel02 syl con4i alephgeom bilani 9onn
+      wss nnmcl mpan elnn mpan2 nnacl syl2an sseldd syl2anc eqeltrd csdm cen wb
+      cdom cxp cr0 wiso wf1o wf j0iso isof1o f1of mp2b 0elon f0cli onfin notbid
+      cep cfn ccrd onenon infinfnum ax-mp jltalephlem sylan2b 3ad2antl3 eqbrtrd
+      bitr3d j0ltaleph alephsdom sylancr 3adant3 ensdomtr wf1 jf1 f1f pm2.61dan
+      mpbid mpbird ) ADEFZGZBYGGZCHGZUDZABUEZIFZJGZABCUFZKFZYGGZYKYNLZYPHYMMNZC
+      ONZYGYKYPYTPZYNYKUAUBUCQQHHUAUOZUBUOZUEZIFZMNZUCUOZONZABCKHAUUCUEZIFZMNZU
+      UGONZYSUUGONZYTUGYHYIAQGYJYGADUHZUIUJYIYHBQGYJYGBUUNUIUKYHYIYJULZYKYSCOUM
+      AUUBPZUULUUHPYKUUPUUKUUFUUGOUUPUUJUUEHMUUPUUIUUDIAUUBUUCUPUNUQURUSBUUCPZU
+      UMUULPYKUUQYSUUKUUGOUUQYMUUJHMUUQYLUUIIBUUCAUTUNUQURUSCUUGPYTUUMPYKCUUGYS
+      OVAUSUAUBUCVFVBZRYRYNYJLZDQGZYTYGGYKYJYNUUOVCYKUUTYNYHYIUUTYJUUTYHUUTSYGV
+      DPZYHSUUTDEVGZGUVAUVBQDQEVEVHVIDEVJVKYGAVLVMVNZUJRUUSUUTLJYGYTUUTJYGVRUUS
+      DVOVPUUSYTJGZUUTYNYSJGZCJGZUVDYJHJGZYNUVEVQHYMVSVTYJUVGUVFVQCHWAWBYSCWCWD
+      RWEWFWGYKYNSZLZYQYPYGWHTZUVIYPYMWITYMYGWHTZUVJUVIYPYTYMWIYKUUAUVHUURRYJYH
+      UVHYTYMWITZYIUVHYJJYMWKTZUVLYMQGZUVHUVMWJQQWLZQYLIUVOQWMXEIWNUVOQIWOUVOQI
+      WPWQUVOQWMXEIWRUVOQIWSWTXAXBZUVNYMXFGZSZUVHUVMUVNUVQYNYMXCXDUVNYMXGVGGUVR
+      UVMWJYMXHYMXIVMXOXJABCXKXLXMXNYKUVKUVHYHYIUVKYJYHYILYMYGGZUVKABDXPYHUVSUV
+      KWJZYIYHUVNUUTUVTUVPUVCYMDXQXRRYEXSRYPYMYGXTWFYKYQUVJWJZUVHYHYIUWAYJYHYPQ
+      GUUTUWAUVOHWLZQYOKUWBQKYAUWBQKWPYBUWBQKYCXJXAXBUVCYPDXQXRUJRYFYD $.
+  $}
+
+  ${
+    $d A x $.
+    $( The value of ` _FL ` when the value of ` _K3 ` is zero.  Part of
+       Proposition 15.14 of [TakeutiZaring] p. 158.  (Contributed by
+       BTernaryTau, 17-Oct-2026.) $)
+    fnlfvk30 $p |- ( ( A e. On /\ ( _K3 ` A ) = (/) ) ->
+        ( _FL ` A ) = ( _FL " A ) ) $=
+      ( vx con0 wcel ck3 cfv c0 wceq wa cfnl cres cvv cdm crn adantr adantl wss
+      cv eqtrd mpan ck1 ck2 cotp cgdlopc cif cmpt cima tfr2 eqid dmeq onss tfr1
+      df-fnl fndmi sseq2i ssdmres bitr3i ad2antrr fveq2d simplr iftrued eqtr4di
+      sylib rneq df-ima wfun wfn fnfun ax-mp resfunexg funimaexg fvmptd2 ) ACDZ
+      AEFZGHZIZAJFZJAKZBLBRZMZEFZGHZVSNZWAVTUAFVSFVTUBFVSFUCUDFZUEZUFZFZJAUGZVM
+      VQWGHVOAJWFBUMZUHOVPBVRWEWHLWFLWFUIVPVSVRHZIZWEWCWHWKWBWCWDWKWAVNGWKVTAEW
+      KVTVRMZAWJVTWLHVPVSVRUJPVMWLAHZVOWJVMACQZWMAUKWNAJMZQWMWOCACJJWFWIULZUNUO
+      AJUPUQVCURSUSVMVOWJUTSVAWJWCWHHVPWJWCVRNWHVSVRVDJAVEVBPSVMVRLDZVOJVFZVMWQ
+      JCVGWRWPCJVHVIZJACVJTOVMWHLDZVOWRVMWTWSJACVKTOVLS $.
+  $}
+
+  ${
+    $d A x $.
+    $( The value of ` _FL ` when the value of ` _K3 ` is nonzero.  Part of
+       Proposition 15.14 of [TakeutiZaring] p. 158.  (Contributed by
+       BTernaryTau, 17-Oct-2026.) $)
+    fnlfvk3n0 $p |- ( ( A e. On /\ ( _K3 ` A ) =/= (/) ) ->
+        ( _FL ` A ) = ( ~F ` <. ( _K3 ` A ) ,
+        ( _FL ` ( _K1 ` A ) ) , ( _FL ` ( _K2 ` A ) ) >. ) ) $=
+      ( vx con0 wcel ck3 cfv c0 wa cfnl cvv cdm wceq ck1 ck2 cotp cgdlopc eqtrd
+      adantr fveq2d ax-mp wne cres cv crn cif cmpt df-fnl tfr2 eqid dmeq adantl
+      wss onss fndmi sseq2i ssdmres bitr3i sylib ad2antrr simplr eqnetrd neneqd
+      tfr1 iffalsed simpr fveq12d wb c9o k39o 9on oneli on0eln0 k3n0k1lt fvresd
+      sylan2br k3n0k2lt oteq123d wfun wfn fnfun resfunexg mpan fvexd fvmptd2 )
+      ACDZAEFZGUAZHZAIFZIAUBZBJBUCZKZEFZGLZWKUDZWMWLMFZWKFZWLNFZWKFZOZPFZUEZUFZ
+      FZWFAMFZIFZANFZIFZOZPFZWEWIXDLWGAIXCBUGZUHRWHBWJXBXJJXCJXCUIWHWKWJLZHZXBX
+      AXJXMWNWOXAXMWMGXMWMWFGXMWLAEXMWLWJKZAXLWLXNLWHWKWJUJUKWEXNALZWGXLWEACULZ
+      XOAUMXPAIKZULXOXQCACIIXCXKVCZUNUOAIUPUQURUSQZSZWEWGXLUTVAVBVDXMWTXIPXMWMW
+      FWQXFWSXHXTXMWQXEWJFZXFXMWPXEWKWJWHXLVEZXMWLAMXSSVFWHYAXFLXLWHXEAIWGWEGWF
+      DZXEADWFCDZYCWGVGWFVHDYDAVIVHWFVJVKTWFVLTZAVMVOVNRQXMWSXGWJFZXHXMWRXGWKWJ
+      YBXMWLANXSSVFWHYFXHLXLWHXGAIWGWEYCXGADYEAVPVOVNRQVQSQWEWJJDZWGIVRZWEYGICV
+      SYHXRCIVTTIACWAWBRWHXIPWCWDQ $.
+  $}
 
 
 $(
