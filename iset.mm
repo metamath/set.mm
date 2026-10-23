@@ -183734,19 +183734,22 @@ $)
         UAUBWCWDUPWF $.
     $}
 
-    mplbas.u $e |- U = ( Base ` P ) $.
-    $( Base set of the set of multivariate polynomials.  (Contributed by Mario
-       Carneiro, 7-Jan-2015.)  (Revised by AV, 25-Jun-2019.)  (Revised by Jim
-       Kingdon, 4-Nov-2025.) $)
-    mplbascoe $p |- ( ( I e. V /\ R e. W ) -> U = { f e. B |
-        E. a e. ( NN0 ^m I ) A. b e. ( NN0 ^m I ) (
-          A. k e. I ( a ` k ) < ( b ` k )
-          -> ( f ` b ) = .0. ) } ) $=
-      ( wcel cvv wa cbs cfv cv clt wbr wral wceq wi cmap co wrex crab mplvalcoe
-      cn0 eqid a1i cmps cxp wfn fnpsr fnovex mp3an3an eqeltrid ssrab2 ressbas2d
-      elex wss eqtr4id ) HISZCJSZUAZEBUBUCGUDZLUDUCVMMUDZUCUEUFGHUGVNFUDUCKUHUI
-      MUOHUJUKZUGLVOULZFAUMZRVLVQABDTABCDVQFGHIJKLMNOPQVQUPUNADUBUCUHVLPUQVLDHC
-      URUKZTOURTTUSUTVJHTSVKCTSVRTSVAHIVGCJVGHCTTURVBVCVDVQAVHVLVPFAVEUQVFVI $.
+    ${
+      $d .0. x $.  $d B x $.  $d U x $.  $d f x $.
+      mplbas.u $e |- U = ( Base ` P ) $.
+      $( Base set of the set of multivariate polynomials.  (Contributed by
+         Mario Carneiro, 7-Jan-2015.)  (Revised by Mario Carneiro, 2-Oct-2015.)
+         (Revised by AV, 25-Jun-2019.) $)
+      mplbas $p |- U = { f e. B | f finSupp .0. } $=
+        ( vi cv wcel cvv cmpl cmps cfv vx vr cfsupp wbr crab reldmmpl wfun wrel
+        vw wa co c0g cbs cress csb df-mpl mpofun funrel ax-mp relelbasov elrabi
+        reldmpsr cxp wfn fnpsr syl eqid mplvalg wceq a1i fnovex mp3an1 eqeltrid
+        fnrel wss ssrab2 ressbas2d eqtr4id eleq2d pm5.21nii eqriv ) UAEFOZHUCUD
+        ZFAUEZUAOZEPGQPZCQPZUJZWEWDPZWEEBRGCUFRUGRUHNUBQQUINOUBOZSUKUIOZWBWJULT
+        UCUDFWKUMTUEUNUKUORUIFNUBUPUQRURUSIMUTWIWEAPWHWCFWEAVAWEADSGCVBSQQVCZVD
+        ZSUHVEWLSVNUSJKUTVFWHEWDWEWHEBUMTWDMWHWDABDQABCDWDFGQQHIJKLWDVGVHADUMTV
+        IWHKVJWHDGCSUKZQJWMWFWGWNQPVEGCQQSVKVLVMWDAVOWHWCFAVPVJVQVRVSVTWA $.
+    $}
 
     $d X a b f $.
     $( Property of being a polynomial.  (Contributed by Mario Carneiro,
