@@ -183715,29 +183715,23 @@ $)
     mplval.b $e |- B = ( Base ` S ) $.
     mplval.z $e |- .0. = ( 0g ` R ) $.
     ${
-      mplvalcoe.u $e |- U = { f e. B | E. a e. ( NN0 ^m I )
-        A. b e. ( NN0 ^m I ) ( A. k e. I ( a ` k ) < ( b ` k )
-          -> ( f ` b ) = .0. ) } $.
+      mplval.u $e |- U = { f e. B | f finSupp .0. } $.
       $( Value of the set of multivariate polynomials.  (Contributed by Mario
-         Carneiro, 7-Jan-2015.)  (Revised by AV, 25-Jun-2019.)  (Revised by Jim
-         Kingdon, 4-Nov-2025.) $)
-      mplvalcoe $p |- ( ( I e. V /\ R e. W ) -> P = ( S |`s U ) ) $=
-        ( wcel cvv vi vr vs wa cmpl co cress wceq elex adantr adantl cmps fnpsr
-        cxp wfn a1i fnovex syl3anc eqeltrid cv cfv clt wbr wral wi cn0 cmap cbs
-        wrex basfn funfvex funfni sylancr rabexd syl2anc c0g crab csb vex mp3an
-        ressex id oveq12 sylan9eqr eqtr4di fveq2d simpll oveq2d raleqdv imbi12d
-        simplr eqeq2d raleqbidv rexeqbidv rabeqbidv oveq12d df-mplcoe ovmpoga
-        csbied eqtrid ) HISZCJSZUDZBHCUEUFZDEUGUFZNXCHTSZCTSZXETSZXDXEUHXAXFXBH
-        IUIUJZXBXGXACJUIUKZXCDTSZETSXHXCDHCULUFZTOXCULTTUNUOZXFXGXLTSXMXCUMUPXI
-        XJHCTTULUQURUSZXCGUTZLUTVAXOMUTZVAVBVCZGHVDZXPFUTVAZKUHZVEZMVFHVGUFZVDZ
-        LYBVIZFAETRXCADVHVAZTPXCVHTUOXKYETSZVJXNYFTDVHDVHVKVLVMUSVNEDTTWAVOUAUB
-        HCTTUCUAUTZUBUTZULUFZUCUTZXQGYGVDZXSYHVPVAZUHZVEZMVFYGVGUFZVDZLYOVIZFYJ
-        VHVAZVQZUGUFZVRXEUETYGHUHZYHCUHZUDZUCYIYTXETYITSZUUCXMYGTSYHTSUUDUMUAVS
-        UBVSYGYHTTULUQVTUPUUCYJYIUHZUDZYJDYSEUGUUFYJXLDUUEUUCYJYIXLUUEWBYGHYHCU
-        LWCWDOWEZUUFYSYDFAVQEUUFYQYDFYRAUUFYRYEAUUFYJDVHUUGWFPWEUUFYPYCLYOYBUUF
-        YGHVFVGUUAUUBUUEWGZWHZUUFYNYAMYOYBUUIUUFYKXRYMXTUUFXQGYGHUUHWIUUFYLKXSU
-        UFYLCVPVAKUUFYHCVPUUAUUBUUEWKWFQWEWLWJWMWNWORWEWPWSUCFUAGUBLMWQWRURWT
-        $.
+         Carneiro, 7-Jan-2015.)  (Revised by Mario Carneiro, 2-Oct-2015.)
+         (Revised by AV, 25-Jun-2019.) $)
+      mplvalg $p |- ( ( I e. V /\ R e. W ) -> P = ( S |`s U ) ) $=
+        ( wcel co cvv cmps cbs vi vr vs wa cmpl wceq elex adantr adantl cxp wfn
+        cress fnpsr a1i fnovex syl3anc eqeltrid cv cfsupp wbr cfv basfn funfvex
+        funfni sylancr rabexd ressex syl2anc c0g csb vex mp3an oveq12 sylan9eqr
+        id eqtr4di fveq2d simplr breq2d rabeqbidv oveq12d csbied df-mpl ovmpoga
+        crab eqtrid ) GHPZCIPZUDZBGCUEQZDEULQZKWIGRPZCRPZWKRPZWJWKUFWGWLWHGHUGU
+        HZWHWMWGCIUGUIZWIDRPZERPWNWIDGCSQZRLWISRRUJUKZWLWMWRRPWSWIUMUNWOWPGCRRS
+        UOUPUQZWIFURZJUSUTZFAEROWIADTVAZRMWITRUKWQXCRPZVBWTXDRDTDTVCVDVEUQVFEDR
+        RVGVHUAUBGCRRUCUAURZUBURZSQZUCURZXAXFVIVAZUSUTZFXHTVAZWEZULQZVJWKUERXEG
+        UFZXFCUFZUDZUCXGXMWKRXGRPZXPWSXERPXFRPXQUMUAVKUBVKXEXFRRSUOVLUNXPXHXGUF
+        ZUDZXHDXLEULXSXHWRDXRXPXHXGWRXRVOXEGXFCSVMVNLVPZXSXLXBFAWEEXSXJXBFXKAXS
+        XKXCAXSXHDTXTVQMVPXSXIJXAUSXSXICVIVAJXSXFCVIXNXOXRVRVQNVPVSVTOVPWAWBUCF
+        UAUBWCWDUPWF $.
     $}
 
     mplbas.u $e |- U = ( Base ` P ) $.
