@@ -80022,9 +80022,9 @@ $)
       crn eqcom rexbii bitri bitr4di eqrdv ) BDZCBEZABAFZGHZIZQZUCCFZUDJUFUIKZA
       BLZUIUHJZABUIMULUIUFKZABLUKABUFUIUGUGNUEGOPUMUJABUIUFRSTUAUB $.
 
-    $( Obsolete version of ~ reldm as of 22-Oct-2026.  An expression for the
-       domain of a relation.  (Contributed by NM, 22-Sep-2013.)
-       (Proof modification is discouraged.)  (New usage is discouraged.) $)
+    $( Obsolete version of ~ reldm as of 22-Oct-2026.  (Contributed by NM,
+       22-Sep-2013.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     reldmOLD $p |- ( Rel A -> dom A = ran ( x e. A |-> ( 1st ` x ) ) ) $=
       ( vy vz wrel cdm cv c1st cfv cmpt crn wcel wceq wrex releldm2 wfn wb fvex
       eqid fnmpti fvelrnb ax-mp fveq2 fvmpt eqeq1d rexbiia bitr2id bitrd eqrdv
