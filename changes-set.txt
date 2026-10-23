@@ -24,7 +24,6 @@ proposed  dfss2     sseqin
 proposed  dfss3f    dfss2f
 proposed  dfss6     dfss3
 proposed  dfss3     dfss2
-proposed  fidmfisupp fdmfifsupp merge duplicate theorems
 proposed  grplmulf1o grpladdf1o
 proposed  df-rgmod  df-rlm
 proposed  crglmod   crlm
@@ -94,6 +93,7 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+22-Oct-26 fidmfisupp  ---         deleted; duplicate of fdmfifsupp
 21-Oct-26 iotain      [same]      Moved from ATS's mathbox to main set.mm
 21-Oct-26 nvelim      [same]      Moved from AV's mathbox to main set.mm
 17-Oct-26 iotan0      [same]      Remove sethood requirement from antecedent
