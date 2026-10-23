@@ -183734,9 +183734,9 @@ $)
         UAUBWCWDUPWF $.
     $}
 
+    mplbas.u $e |- U = ( Base ` P ) $.
     ${
       $d .0. x $.  $d B x $.  $d U x $.  $d f x $.
-      mplbas.u $e |- U = ( Base ` P ) $.
       $( Base set of the set of multivariate polynomials.  (Contributed by
          Mario Carneiro, 7-Jan-2015.)  (Revised by Mario Carneiro, 2-Oct-2015.)
          (Revised by AV, 25-Jun-2019.) $)
@@ -183751,18 +183751,12 @@ $)
         IWHKVJWHDGCSUKZQJWMWFWGWNQPVEGCQQSVKVLVMWDAVOWHWCFAVPVJVQVRVSVTWA $.
     $}
 
-    $d X a b f $.
     $( Property of being a polynomial.  (Contributed by Mario Carneiro,
        7-Jan-2015.)  (Revised by Mario Carneiro, 2-Oct-2015.)  (Revised by AV,
-       25-Jun-2019.)  (Revised by Jim Kingdon, 4-Nov-2025.) $)
-    mplelbascoe $p |- ( ( I e. V /\ R e. W ) -> ( X e. U <-> ( X e. B /\
-        E. a e. ( NN0 ^m I ) A. b e. ( NN0 ^m I ) (
-        A. k e. I ( a ` k ) < ( b ` k ) -> ( X ` b ) = .0. ) ) ) ) $=
-      ( vf wcel wa cv cfv clt wbr wral wceq cn0 cmap wrex crab mplbascoe eleq2d
-      wi co fveq1 eqeq1d imbi2d rexralbidv elrab bitrdi ) GHTCITUAZJETJFUBZLUBU
-      CVCMUBZUCUDUEFGUFZVDSUBZUCZKUGZUNZMUHGUIUOZUFLVJUJZSAUKZTJATVEVDJUCZKUGZU
-      NZMVJUFLVJUJZUAVBEVLJABCDESFGHIKLMNOPQRULUMVKVPSJAVFJUGZVIVOLMVJVJVQVHVNV
-      EVQVGVMKVDVFJUPUQURUSUTVA $.
+       25-Jun-2019.) $)
+    mplelbas $p |- ( X e. U <-> ( X e. B /\ X finSupp .0. ) ) $=
+      ( vf cv cfsupp wbr breq1 mplbas elrab2 ) NOZHPQGHPQNGAEUAGHPRABCDENFHIJKL
+      MST $.
   $}
 
   ${
