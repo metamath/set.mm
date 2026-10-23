@@ -580117,7 +580117,7 @@ $)
   ${
     $d A x $.  $d B x $.  $d C x $.
     $( Relationship between the ranks of an element in a Scott's trick set and
-       an element in the input set.  (Contributed by BTernaryTau,
+       an element in the input class.  (Contributed by BTernaryTau,
        3-Jul-2026.) $)
     elscottrankss $p |- ( ( A e. Scott B /\ C e. B ) ->
         ( rank ` A ) C_ ( rank ` C ) ) $=
@@ -580126,8 +580126,8 @@ $)
       ACGQOPR $.
   $}
 
-  $( If a member of the input set has the same rank as a member of the Scott's
-     trick set, then it is also a member of the Scott's trick set.
+  $( If a member of the input class has the same rank as a member of the
+     Scott's trick set, then it is also a member of the Scott's trick set.
      (Contributed by BTernaryTau, 10-Jul-2026.) $)
   scottrankeqel $p |- ( ( A e. Scott B /\ C e. B /\
       ( rank ` C ) = ( rank ` A ) ) -> C e. Scott B ) $=
@@ -580135,7 +580135,7 @@ $)
     cfv w3a wb elscott2 baib 3ad2ant2 mpbird ) ABDZEZCBEZCFOZAFOZGZPZCUBEZUEFBH
     IZGZUHUFUJGZUKUCUDULUGABJKUGUCULUKUDUEUFUJLMNUDUCUIUKQUGUIUDUKCBRSTUA $.
 
-  $( If a member of the input set is not a member of the Scott's trick set,
+  $( If a member of the input class is not a member of the Scott's trick set,
      then its rank is greater than the rank of a member of the Scott's trick
      set.  (Contributed by BTernaryTau, 10-Jul-2026.) $)
   nelscottrankgt $p |- ( ( A e. Scott B /\ C e. B /\ -. C e. Scott B ) ->
@@ -580164,6 +580164,27 @@ $)
     scott0bOLD $p |- ( A = (/) <-> Scott A = (/) ) $=
       ( vx vy c0 wceq crnk cfv wss wral cscott scott0OLD df-scott eqeq1i bitr4i
       cv crab ) ADEBOFGCOFGHCAIBAPZDEAJZDEBCAKRQDBCALMN $.
+  $}
+
+  $( If the input class has elements, then the Scott's trick set is not empty.
+     (Contributed by BTernaryTau, 23-Aug-2026.) $)
+  elscottn0 $p |- ( A e. B -> Scott B =/= (/) ) $=
+    ( wcel c0 wne cscott ne0i scott0b necon3bii sylib ) ABCBDEBFZDEBAGBDKDBHIJ
+    $.
+
+  ${
+    $d A x y $.
+    $( If the empty set is an element of the input class, then the Scott's
+       trick set is the singleton of the empty set.  (Contributed by
+       BTernaryTau, 23-Aug-2026.) $)
+    0elscott $p |- ( (/) e. A -> Scott A = { (/) } ) $=
+      ( vx vy c0 wcel cscott wceq csn wss wo cv crnk cfv wral fveq2 sseq2d ss0b
+      wi con0 0elon onrankid mpbi sseq2i rankeq0 3bitr4i bitrdi rspcv ralrimivw
+      vex crab df-scott sseq1i rabsssn bitri sylibr sssn sylib elscottn0 neneqd
+      orcnd ) DAEZAFZDGZVBDHZGZVAVBVDIZVCVEJVABKZLMZCKZLMZIZCANZVGDGZRZBANZVFVA
+      VNBAVKVMCDAVIDGZVKVHDLMZIZVMVPVJVQVHVIDLOPVHDIVHDGVRVMVHQVQDVHDSEVQDGTDUA
+      UBUCVGBUIUDUEUFUGUHVFVLBAUJZVDIVOVBVSVDBCAUKULVLBADUMUNUOVBDUPUQVAVBDDAUR
+      USUT $.
   $}
 
   ${
@@ -580196,6 +580217,63 @@ $)
   scottssr1 $p |- ( A e. B -> Scott B C_ ( R1 ` suc ( rank ` A ) ) ) $=
     ( wcel cscott crnk cfv csuc wss rankscottu wb rankon onsuci scottex rankr1b
     cr1 con0 ax-mp sylibr ) ABCBDZEFAEFZGZHZSUAOFHZABIUAPCUCUBJTAKLSUABMNQR $.
+
+  ${
+    $d A x y $.
+    $( The Scott operation is idempotent.  (Contributed by BTernaryTau,
+       23-Aug-2026.) $)
+    scottidm $p |- Scott Scott A = Scott A $=
+      ( vx vy cscott scottss cv wcel crnk cfv wss wral elscott ssralv simplbiim
+      wa wi ax-mp ancli sylibr ssriv eqssi ) ADZDZUBUBEBUBUCBFZUBGZUEUDHICFHIJZ
+      CUBKZOUDUCGUEUGUEUDAGUFCAKZUGCUDALUBAJUHUGPAEUFCUBAMQNRCUDUBLSTUA $.
+  $}
+
+  $( The Scott's trick set of a transitive class is also transitive.
+     (Contributed by BTernaryTau, 20-Oct-2026.) $)
+  trscott $p |- ( Tr A -> Tr Scott A ) $=
+    ( wtr crnk cima cint csuc cr1 cfv cscott r1tr trin mpan2 wceq dfscott3 treq
+    cin wb ax-mp sylibr ) ABZACADEFZGHZPZBZAIZBZTUBBUDUAJAUBKLUEUCMUFUDQANUEUCO
+    RS $.
+
+  ${
+    $d ph x y $.  $d A x y $.  $d B x y $.  $d R x y $.
+    erscottd.1 $e |- ( ph -> R Er V ) $.
+    erscottd.2 $e |- ( ph -> A e. V ) $.
+    $( Applying the Scott operation to equivalence classes preserves their
+       equality property.  (Contributed by BTernaryTau, 20-Oct-2026.) $)
+    erscottd $p |- ( ph ->
+        ( A R B <-> Scott { x | x R A } = Scott { x | x R B } ) ) $=
+      ( vy wbr cv cab wceq wa w3a 3ad2ant1 wcel c0 wn breq1 cscott simp3 3expia
+      wer simp2 ertrd ertr4d impbid abbidv scotteqd wex erref elabd n0i scott0b
+      syl sylnib cin disjeq0 biimpcd simpl con3i nsyli wne df-ne ndisj imbitrdi
+      bitr3i mpan9 elscottab 3ad2ant2 3ad2ant3 ertr3d 3expib exlimdv adantr mpd
+      wi impbida ) ACDEJZBKZCEJZBLZUAZWADEJZBLZUAZMZAVTNZWCWFWIWBWEBWIWBWEAVTWB
+      WEAVTWBOWACDEFAVTFEUDZWBGPAVTWBUBAVTWBUEUFUCAVTWEWBAVTWEOWADCEFAVTWJWEGPA
+      VTWEUBAVTWEUEUGUCUHUIUJAWHNIKZWDQZWKWGQZNZIUKZVTAWDRMZSZWHWOAWCRMZWPACWCQ
+      WRSAWBCCEJBCFHACEFGHULWACCETUMWCCUNUPWCUOUQWHWQWDWGURZRMZSZWOWHWTWPWGRMZN
+      ZWQWTWHXCWDWGUSUTXCWPWPXBVAVBVCXAWSRVDWOWSRVEIWDWGVFVHVGVIAWOVTVRWHAWNVTI
+      AWLWMVTAWLWMOCWKDEFAWLWJWMGPWLAWKCEJZWMWBXDBIWAWKCETVJVKWMAWKDEJZWLWEXEBI
+      WAWKDETVJVLVMVNVOVPVQVS $.
+  $}
+
+  ${
+    $d ph x $.  $d A x $.  $d B x $.  $d R x $.
+    ecscottd.1 $e |- ( ph -> R Er V ) $.
+    ecscottd.2 $e |- ( ph -> A e. V ) $.
+    $( Applying the Scott operation to equivalence classes preserves their
+       equality property.  (Contributed by BTernaryTau, 20-Oct-2026.) $)
+    ecscottd $p |- ( ph -> ( A R B <-> Scott [ A ] R = Scott [ B ] R ) ) $=
+      ( vx wcel wbr cec cscott wceq wb wa cab adantr dfec2 c0 sylib cv erscottd
+      syl ersymb abbidv eqtrd scotteqd sylan9eqr eqeq12d bitr4d wer simpr ercl2
+      wn stoic1a wne cdm erdm ecdmn0 scott0b necon3bii eleq2d notbid necon2bbii
+      eleqtrrd biimpar sylibr neeqtrrd neneqd 2falsed pm2.61dan ) ACEIZBCDJZBDK
+      ZLZCDKZLZMZNAVLOZVMHUAZBDJZHPZLZVTCDJZHPZLZMZVRAVMWGNVLAHBCDEFGUBQVSVOWCV
+      QWFAVOWCMVLAVNWBAVNBVTDJZHPZWBABEIVNWIMGHBDERUCAWHWAHABVTDEFUDUEUFUGQVSVP
+      WEVLAVPCVTDJZHPWEHCDERAWJWDHACVTDEFUDUEUHUGUIUJAVLUNZOZVMVRAVMVLAVMOBCDEA
+      EDUKZVMFQAVMULUMUOWLVOVQWLVOSVQAVOSUPZWKAVNSUPZWNABDUQZIWOABEWPGAWMWPEMFE
+      DURUCZVEBDUSTVNSVOSVNUTVATQWLVPSMZVQSMWLCWPIZUNZWRAWTWKAWSVLAWPECWQVBVCVF
+      WSVPSCDUSVDVGVPUTTVHVIVJVK $.
+  $}
 
   ${
     $d f w x $.  $d f v x $.  $d f w y z $.
