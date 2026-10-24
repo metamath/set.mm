@@ -579925,26 +579925,6 @@ $)
     $( $j usage 'r1filim' avoids 'ax-reg'; $)
   $}
 
-  $( Obsolete theorem, use ~ hffi instead.  Hereditarily finite sets are finite
-     sets.  (Contributed by BTernaryTau, 30-Dec-2025.)
-     (Proof modification is discouraged.)  (New usage is discouraged.) $)
-  r1omfi $p |- U. ( R1 " _om ) C_ Fin $=
-    ( vx cr1 com cima cuni cfn cv wcel chf df-hf eleq2i hffi sylbir ssriv ) ABC
-    DEZFAGZOHPIHPFHIOPJKPLMN $.
-  $( $j usage 'r1omfi' avoids 'ax-reg'; $)
-
-  ${
-    $d A x y $.
-    $( A set is hereditarily finite iff it is finite and all of its elements
-       are hereditarily finite.  (Contributed by BTernaryTau, 19-Jan-2026.) $)
-    r1omhf $p |- ( A e. U. ( R1 " _om ) <->
-        ( A e. Fin /\ A. x e. A x e. U. ( R1 " _om ) ) ) $=
-      ( chf wcel cfn cv wral cr1 com cima cuni elhf4 df-hf eleq2i ralbii anbi2i
-      wa 3bitr3i ) BCDBEDZAFZCDZABGZQBHIJKZDSTUCDZABGZQABLCUCBMNUBUESUAUDABCUCT
-      MNOPR $.
-    $( $j usage 'r1omhf' avoids 'ax-reg'; $)
-  $}
-
   $( A set is a subset of the value of the cumulative hierarchy of sets
      function iff it is an element of the value at the successor.  (Contributed
      by BTernaryTau, 15-Jan-2026.) $)
@@ -580029,21 +580009,6 @@ $)
   $}
 
   ${
-    $d A x y $.
-    $( If every element in a transitive class is finite, then every element is
-       also hereditarily finite.  (Contributed by BTernaryTau, 24-Jan-2026.) $)
-    trssfir1om $p |- ( ( Tr A /\ A C_ Fin ) -> A C_ U. ( R1 " _om ) ) $=
-      ( vx vy wtr cfn wss wa cr1 com cima cuni wcel w3a weq eleq1w 3anbi1d wral
-      cv wi a1d imbi12d ssel2 ancoms 3adant2 expcomd impcom 3adant3 simp2 simp3
-      a1i trel 3jcad ralrimiv ralim syl5 r1omhf imbitrrdi setinds2 3expib com12
-      jcad ssrdv ) ADZAEFZGZBAHIJKZBRZALZVEVGVFLZVHVCVDVIVHVCVDMZVISCRZALZVCVDM
-      ZVKVFLZSZBCBCNZVJVMVIVNVPVHVLVCVDBCAOPBCVFOUAVOCVGQZVJVGELZVNCVGQZGVIVQVJ
-      VRVSVJVRSVQVHVDVRVCVDVHVRAEVGUBUCUDUJVJVMCVGQVQVSVJVMCVGVJVKVGLZVLVCVDVHV
-      CVTVLSZVDVCVHWAVCVTVHVLAVKVGUKUEUFUGVJVCVTVHVCVDUHTVJVDVTVHVCVDUITULUMVMV
-      NCVGUNUOVACVGUPUQURUSUTVB $.
-  $}
-
-  ${
     $d H w x y z $.
     $( The class of all hereditarily finite sets is the only class with the
        property that all sets are members of it iff they are finite and all of
@@ -580063,29 +580028,6 @@ $)
       UTVCXFEWRJWQXEEWRJZXAWQXEEWRVAXHWSWRIHZXDEWRJZKZWQWTWSXIXCEWRJZKXHXKEWRNX
       HXLXJXIXCXDEWRVBVDVEWPXKWTTADADRZWCXKVRWTXMVSXIWBXJADISXMWAXDBEVQWRBERZWA
       XDLXMBECSVFXMXNUNVGVMADCSUTVHVIVJVKVLURVNVO $.
-  $}
-
-  ${
-    $d H w x y z $.
-    $( The class of all hereditarily finite sets is the only class with the
-       property that all sets are members of it iff they are finite and all of
-       their elements are members of it.  (Contributed by BTernaryTau,
-       24-Jan-2026.) $)
-    r1omhfb $p |- ( H = U. ( R1 " _om ) <->
-        A. x ( x e. H <-> ( x e. Fin /\ A. y e. x y e. H ) ) ) $=
-      ( vz vw cv wcel cfn wral wa wb wal r1omhf eleq2w2 wi wss alimi imim2i weq
-      eleq1w cr1 com cima cuni wceq ralbidv anbi2d bibi12d mpbiri alrimiv biimp
-      wtr simpr ralrid dftr5 sylibr simpl trssfir1om syl2anc syl biimpr imbi12d
-      df-ss imbi2d ralim anim2d biimtrid adantl cbvraldva2 anbi12d syl9r sylcom
-      ra4v spvv setinds2 ssrdv eqssd impbii ) CUAUBUCUDZUEZAFZCGZWAHGZBFZCGZBWA
-      IZJZKZALZVTWHAVTWHWAVSGZWCWDVSGZBWAIZJZKBWAMVTWBWJWGWMACVSNVTWFWLWCVTWEWK
-      BWABCVSNUFUGUHUIUJWICVSWIWBWGOZALZCVSPZWHWNAWBWGUKQWOCULZCHPZWPWOWFACIWQW
-      OWFACWNWBWFOAWGWFWBWCWFUMRQUNABCUOUPWOWBWCOZALWRWNWSAWGWCWBWCWFUQRQACHVCU
-      PCURUSUTWIWGWBOZALZVSCPWHWTAWBWGVAQXADVSCXADFZVSGZXBCGZOZOXAEFZVSGZXFCGZO
-      ZOZDEDESZXEXIXAXKXCXGXDXHDEVSTDECTVBVDXJEXBIXAXIEXBIZXEXAXIEXBVMXLXCXBHGZ
-      XHEXBIZJZXAXDXCXMXGEXBIZJXLXOEXBMXLXPXNXMXGXHEXBVEVFVGWTXOXDOADADSZWGXOWB
-      XDXQWCXMWFXNADHTXQWEXHBEWAXBBESZWEXHKXQBECTVHXQXRUQVIVJADCTVBVNVKVLVOVPUT
-      VQVR $.
   $}
 
   ${
@@ -581116,7 +581058,7 @@ $)
   ${
     $d A x y $.
     $( If every element in a transitive class is finite, then every element is
-       also hereditarily finite.  This version of ~ trssfir1om replaces
+       also hereditarily finite.  This version of ~ trssfihf replaces
        ~ setinds2 with ~ setinds2regs .  (Contributed by BTernaryTau,
        20-Jan-2026.)  Use ` HF ` .  (Revised by BTernaryTau, 24-Oct-2026.) $)
     trssfihfregs $p |- ( ( Tr A /\ A C_ Fin ) -> A C_ HF ) $=
@@ -581132,29 +581074,11 @@ $)
   $}
 
   ${
-    $d A x y $.
-    $( If every element in a transitive class is finite, then every element is
-       also hereditarily finite.  This version of ~ trssfir1om replaces
-       ~ setinds2 with ~ setinds2regs .  (Contributed by BTernaryTau,
-       20-Jan-2026.) $)
-    trssfir1omregs $p |- ( ( Tr A /\ A C_ Fin ) -> A C_ U. ( R1 " _om ) ) $=
-      ( vx vy wtr cfn wss wa cr1 com cima cuni wcel w3a weq eleq1w 3anbi1d wral
-      cv wi a1d imbi12d ssel2 ancoms 3adant2 expcomd impcom 3adant3 simp2 simp3
-      trel 3jcad ralrimiv ralim syl5 r1omhf imbitrrdi setinds2regs 3expib com12
-      a1i jcad ssrdv ) ADZAEFZGZBAHIJKZBRZALZVEVGVFLZVHVCVDVIVHVCVDMZVISCRZALZV
-      CVDMZVKVFLZSZBCBCNZVJVMVIVNVPVHVLVCVDBCAOPBCVFOUAVOCVGQZVJVGELZVNCVGQZGVI
-      VQVJVRVSVJVRSVQVHVDVRVCVDVHVRAEVGUBUCUDUTVJVMCVGQVQVSVJVMCVGVJVKVGLZVLVCV
-      DVHVCVTVLSZVDVCVHWAVCVTVHVLAVKVGUJUEUFUGVJVCVTVHVCVDUHTVJVDVTVHVCVDUITUKU
-      LVMVNCVGUMUNVACVGUOUPUQURUSVB $.
-    $( $j usage 'trssfir1omregs' avoids 'ax-reg' 'ax-inf' 'ax-inf2'; $)
-  $}
-
-  ${
     $d H w x y z $.
     $( The class of all hereditarily finite sets is the only class with the
        property that all sets are members of it iff they are finite and all of
-       their elements are members of it.  This version of ~ r1omhfb replaces
-       ~ setinds2 with ~ setinds2regs and ~ trssfir1om with ~ trssfir1omregs .
+       their elements are members of it.  This version of ~ eqhf replaces
+       ~ setinds2 with ~ setinds2regs and ~ trssfihf with ~ trssfihfregs .
        (Contributed by BTernaryTau, 21-Jan-2026.)  Use ` HF ` .  (Revised by
        BTernaryTau, 24-Oct-2026.) $)
     eqhfregs $p |- ( H = HF <->
@@ -581174,31 +581098,6 @@ $)
     $( $j usage 'eqhfregs' avoids 'ax-reg' 'ax-inf' 'ax-inf2'; $)
   $}
 
-  ${
-    $d H w x y z $.
-    $( The class of all hereditarily finite sets is the only class with the
-       property that all sets are members of it iff they are finite and all of
-       their elements are members of it.  This version of ~ r1omhfb replaces
-       ~ setinds2 with ~ setinds2regs and ~ trssfir1om with ~ trssfir1omregs .
-       (Contributed by BTernaryTau, 21-Jan-2026.) $)
-    r1omhfbregs $p |- ( H = U. ( R1 " _om ) <->
-        A. x ( x e. H <-> ( x e. Fin /\ A. y e. x y e. H ) ) ) $=
-      ( vz vw cv wcel cfn wral wa wb wal r1omhf eleq2w2 wi wss alimi imim2i weq
-      eleq1w cr1 com cima cuni wceq ralbidv anbi2d bibi12d mpbiri alrimiv biimp
-      wtr simpr ralrid dftr5 sylibr simpl trssfir1omregs syl2anc biimpr imbi12d
-      df-ss syl imbi2d ra4v ralim anim2d biimtrid cbvraldva2 anbi12d spvv syl9r
-      adantl sylcom setinds2regs ssrdv eqssd impbii ) CUAUBUCUDZUEZAFZCGZWAHGZB
-      FZCGZBWAIZJZKZALZVTWHAVTWHWAVSGZWCWDVSGZBWAIZJZKBWAMVTWBWJWGWMACVSNVTWFWL
-      WCVTWEWKBWABCVSNUFUGUHUIUJWICVSWIWBWGOZALZCVSPZWHWNAWBWGUKQWOCULZCHPZWPWO
-      WFACIWQWOWFACWNWBWFOAWGWFWBWCWFUMRQUNABCUOUPWOWBWCOZALWRWNWSAWGWCWBWCWFUQ
-      RQACHVBUPCURUSVCWIWGWBOZALZVSCPWHWTAWBWGUTQXADVSCXADFZVSGZXBCGZOZOXAEFZVS
-      GZXFCGZOZOZDEDESZXEXIXAXKXCXGXDXHDEVSTDECTVAVDXJEXBIXAXIEXBIZXEXAXIEXBVEX
-      LXCXBHGZXHEXBIZJZXAXDXCXMXGEXBIZJXLXOEXBMXLXPXNXMXGXHEXBVFVGVHWTXOXDOADAD
-      SZWGXOWBXDXQWCXMWFXNADHTXQWEXHBEWAXBBESZWEXHKXQBECTVMXQXRUQVIVJADCTVAVKVL
-      VNVOVPVCVQVR $.
-    $( $j usage 'r1omhfbregs' avoids 'ax-reg' 'ax-inf' 'ax-inf2'; $)
-  $}
-
   $( All sets are finite iff all sets are hereditarily finite.  (Contributed by
      BTernaryTau, 30-Dec-2025.)  Use ` HF ` .  (Revised by BTernaryTau,
      24-Oct-2026.) $)
@@ -581208,14 +581107,6 @@ $)
     CDZECDZUGEFGHZIZCUGEFJHZIUJKUGUKUIUGJGFLOMNPQUHCBRZUGUHEBRULAEBASTUAECBUBUC
     BUDUEUF $.
   $( $j usage 'fineqvhfbregs' avoids 'ax-reg' 'ax-inf' 'ax-inf2'; $)
-
-  $( All sets are finite iff all sets are hereditarily finite.  (Contributed by
-     BTernaryTau, 30-Dec-2025.) $)
-  fineqvr1ombregs $p |- ( Fin = _V <-> U. ( R1 " _om ) = _V ) $=
-    ( cfn cvv wceq cr1 com cima cuni fineqvomon imaeq2d unieqd unir1regs eqtrdi
-    con0 wss r1omfi sseq1 mpbii vss sylib impbii ) ABCZDEFZGZBCZUAUCDMFZGBUAUBU
-    EUAEMDHIJKLUDBANZUAUDUCANUFOUCBAPQARST $.
-  $( $j usage 'fineqvr1ombregs' avoids 'ax-reg' 'ax-inf' 'ax-inf2'; $)
 
 
 $(
