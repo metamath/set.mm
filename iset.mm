@@ -183764,12 +183764,11 @@ $)
     $( ` mPoly ` has universal domain.  (Contributed by Jim Kingdon,
        5-Nov-2025.) $)
     fnmpl $p |- mPoly Fn ( _V X. _V ) $=
-      ( vi vr vw vk va vb vf cvv cv cmps co cfv clt wbr wral cbs wfn wcel mp2an
-      vex c0g wceq cn0 cmap wrex crab cress csb cmpl df-mplcoe cxp fnpsr fnovex
-      wi mp3an basfn funfvex funfni rabex ressex csbexa fnmpoi ) ABHHCAIZBIZJKZ
-      CIZDIZEILVGFIZLMNDVCOVHGILVDUALUBUNFUCVCUDKZOEVIUEZGVFPLZUFZUGKZUHUICGADB
-      EFUJCVEVMJHHUKQVCHRVDHRVEHRULATBTVCVDHHJUMUOVFHRZVLHRVMHRCTZVJGVKPHQVNVKH
-      RZUPVOVPHVFPVFPUQURSUSVLVFHHUTSVAVB $.
+      ( vi vr vw vf cvv cv cmps co c0g cfv cfsupp wbr cbs crab csb wfn wcel vex
+      cress mp2an cmpl df-mpl cxp fnpsr fnovex mp3an basfn funfvex funfni rabex
+      ressex csbexa fnmpoi ) ABEECAFZBFZGHZCFZDFUOIJKLZDUQMJZNZSHZOUACDABUBCUPV
+      AGEEUCPUNEQUOEQUPEQUDARBRUNUOEEGUEUFUQEQZUTEQVAEQCRZURDUSMEPVBUSEQZUGVCVD
+      EUQMUQMUHUITUJUTUQEEUKTULUM $.
   $}
 
   ${
