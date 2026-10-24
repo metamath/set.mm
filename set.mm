@@ -15656,6 +15656,26 @@ $)
     ( wa wal w3a 19.26 anbi1i df-3an albii bitri 3bitr4i ) ABEZDFZCDFZEZADFZBDF
     ZEZPEABCGZDFZRSPGOTPABDHIUBNCEZDFQUAUCDABCJKNCDHLRSPJM $.
 
+  ${
+    hb.1 $e |- ( ph -> A. x ph ) $.
+    hb.2 $e |- ( ps -> A. x ps ) $.
+    $( If ` x ` is not free in ` ph ` and ` ps ` , it is not free in
+       ` ( ph /\ ps ) ` .  (Contributed by NM, 14-May-1993.)  (Proof shortened
+       by Wolf Lammen, 2-Jan-2018.)  Reduce axiom dependencies.  (Revised by SN
+       and Sky Winter, 22-Oct-2026.) $)
+    hban $p |- ( ( ph /\ ps ) -> A. x ( ph /\ ps ) ) $=
+      ( wa wal pm3.2 alrimdh imp ) ABABFZCGABKCDEABHIJ $.
+    $( $j usage 'hban' avoids 'ax-5' 'ax-6' 'ax-7' 'ax-10' 'ax-12'; $)
+    hb.3 $e |- ( ch -> A. x ch ) $.
+    $( If ` x ` is not free in ` ph ` , ` ps ` , and ` ch ` , it is not free in
+       ` ( ph /\ ps /\ ch ) ` .  (Contributed by NM, 14-Sep-2003.)  (Proof
+       shortened by Wolf Lammen, 2-Jan-2018.)  Reduce axiom dependencies.
+       (Revised by SN and Sky Winter, 23-Oct-2026.) $)
+    hb3an $p |- ( ( ph /\ ps /\ ch ) -> A. x ( ph /\ ps /\ ch ) ) $=
+      ( w3a wa df-3an hban hbxfrbi ) ABCHABIZCIDABCJMCDABDEFKGKL $.
+    $( $j usage 'hb3an' avoids 'ax-5' 'ax-6' 'ax-7' 'ax-10' 'ax-12'; $)
+  $}
+
   $( Theorem 19.29 of [Margaris] p. 90.  See also ~ 19.29r .  (Contributed by
      NM, 21-Jun-1993.)  (Proof shortened by Andrew Salmon, 13-May-2011.) $)
   19.29 $p |- ( ( A. x ph /\ E. x ps ) -> E. x ( ph /\ ps ) ) $=
@@ -18730,6 +18750,19 @@ $)
   hbe1a $p |- ( E. x A. x ph -> A. x ph ) $=
     ( wal wex wn df-ex hbn1 con1i sylbi ) ABCZBDJEBCZEJJBFJKABGHI $.
 
+  ${
+    nf5di.1 $e |- ( ph -> F/ x ph ) $.
+    $( Since the converse holds by ~ a1i , this inference shows that we can
+       represent a not-free hypothesis with either ` F/ x ph ` (inference form)
+       or ` ( ph -> F/ x ph ) ` (deduction form).  (Contributed by NM,
+       17-Aug-2018.)  (Proof shortened by Wolf Lammen, 10-Jul-2019.)  Reduce
+       axiom dependencies.  (Revised by SN and Sky Winter, 23-Oct-2026.) $)
+    nf5di $p |- F/ x ph $=
+      ( wex wal hbe1 nfrd com12 eximdh pm2.43i hbe1a syl nfi ) ABABDZABEZBDZONP
+      NAOBABFANOAABCGHIJABKLM $.
+    $( $j usage 'nf5di' avoids 'ax-5' 'ax-6' 'ax-7' 'ax-12'; $)
+  $}
+
   $( One direction of ~ nf5 can be proved with a smaller footprint on axiom
      usage.  (Contributed by Wolf Lammen, 16-Sep-2021.) $)
   nf5-1 $p |- ( A. x ( ph -> A. x ph ) -> F/ x ph ) $=
@@ -20015,12 +20048,11 @@ $)
   $}
 
   ${
-    nf5di.1 $e |- ( ph -> F/ x ph ) $.
-    $( Since the converse holds by ~ a1i , this inference shows that we can
-       represent a not-free hypothesis with either ` F/ x ph ` (inference form)
-       or ` ( ph -> F/ x ph ) ` (deduction form).  (Contributed by NM,
-       17-Aug-2018.)  (Proof shortened by Wolf Lammen, 10-Jul-2019.) $)
-    nf5di $p |- F/ x ph $=
+    nf5diOLD.1 $e |- ( ph -> F/ x ph ) $.
+    $( Obsolete version of ~ nf5di as of 23-Oct-2026.  (Contributed by NM,
+       17-Aug-2018.)  (Proof shortened by Wolf Lammen, 10-Jul-2019.)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
+    nf5diOLD $p |- F/ x ph $=
       ( wal nf5rd pm2.43i nf5i ) ABAABDAABCEFG $.
   $}
 
@@ -20153,18 +20185,18 @@ $)
   $}
 
   ${
-    hb.1 $e |- ( ph -> A. x ph ) $.
-    hb.2 $e |- ( ps -> A. x ps ) $.
-    $( If ` x ` is not free in ` ph ` and ` ps ` , it is not free in
-       ` ( ph /\ ps ) ` .  (Contributed by NM, 14-May-1993.)  (Proof shortened
-       by Wolf Lammen, 2-Jan-2018.) $)
-    hban $p |- ( ( ph /\ ps ) -> A. x ( ph /\ ps ) ) $=
+    hbOLD.1 $e |- ( ph -> A. x ph ) $.
+    hbOLD.2 $e |- ( ps -> A. x ps ) $.
+    $( Obsolete version of ~ hban as of 22-Oct-2026.  (Contributed by NM,
+       14-May-1993.)  (Proof shortened by Wolf Lammen, 2-Jan-2018.)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
+    hbanOLD $p |- ( ( ph /\ ps ) -> A. x ( ph /\ ps ) ) $=
       ( wa nf5i nfan nf5ri ) ABFCABCACDGBCEGHI $.
-    hb.3 $e |- ( ch -> A. x ch ) $.
-    $( If ` x ` is not free in ` ph ` , ` ps ` , and ` ch ` , it is not free in
-       ` ( ph /\ ps /\ ch ) ` .  (Contributed by NM, 14-Sep-2003.)  (Proof
-       shortened by Wolf Lammen, 2-Jan-2018.) $)
-    hb3an $p |- ( ( ph /\ ps /\ ch ) -> A. x ( ph /\ ps /\ ch ) ) $=
+    hbOLD.3 $e |- ( ch -> A. x ch ) $.
+    $( Obsolete version of ~ hb3an as of 23-Oct-2026.  (Contributed by NM,
+       14-Sep-2003.)  (Proof shortened by Wolf Lammen, 2-Jan-2018.)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
+    hb3anOLD $p |- ( ( ph /\ ps /\ ch ) -> A. x ( ph /\ ps /\ ch ) ) $=
       ( w3a nf5i nf3an nf5ri ) ABCHDABCDADEIBDFICDGIJK $.
   $}
 

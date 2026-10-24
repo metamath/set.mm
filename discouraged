@@ -16878,12 +16878,14 @@ New usage of "halfnq" is discouraged (1 uses).
 New usage of "hatomic" is discouraged (1 uses).
 New usage of "hatomici" is discouraged (6 uses).
 New usage of "hatomistici" is discouraged (1 uses).
+New usage of "hb3anOLD" is discouraged (0 uses).
 New usage of "hba1-o" is discouraged (8 uses).
 New usage of "hbabg" is discouraged (2 uses).
 New usage of "hbae" is discouraged (3 uses).
 New usage of "hbae-o" is discouraged (4 uses).
 New usage of "hbalg" is discouraged (1 uses).
 New usage of "hbalgVD" is discouraged (0 uses).
+New usage of "hbanOLD" is discouraged (0 uses).
 New usage of "hbequid" is discouraged (2 uses).
 New usage of "hbexg" is discouraged (0 uses).
 New usage of "hbexgVD" is discouraged (0 uses).
@@ -17972,6 +17974,7 @@ New usage of "nd4" is discouraged (1 uses).
 New usage of "negexsr" is discouraged (0 uses).
 New usage of "nelaneqOLD" is discouraged (0 uses).
 New usage of "nelaneqOLDOLD" is discouraged (0 uses).
+New usage of "nf5diOLD" is discouraged (0 uses).
 New usage of "nfa1-o" is discouraged (4 uses).
 New usage of "nfaba1g" is discouraged (0 uses).
 New usage of "nfabd" is discouraged (5 uses).
@@ -20628,10 +20631,12 @@ Proof modification of "had0OLD" is discouraged (45 steps).
 Proof modification of "had1OLD" is discouraged (38 steps).
 Proof modification of "hadifpOLD" is discouraged (20 steps).
 Proof modification of "hashge3el3dif" is discouraged (229 steps).
+Proof modification of "hb3anOLD" is discouraged (23 steps).
 Proof modification of "hba1-o" is discouraged (34 steps).
 Proof modification of "hbae-o" is discouraged (85 steps).
 Proof modification of "hbalg" is discouraged (31 steps).
 Proof modification of "hbalgVD" is discouraged (53 steps).
+Proof modification of "hbanOLD" is discouraged (17 steps).
 Proof modification of "hbequid" is discouraged (34 steps).
 Proof modification of "hbexg" is discouraged (71 steps).
 Proof modification of "hbexgVD" is discouraged (205 steps).
@@ -20888,6 +20893,7 @@ Proof modification of "nalsetOLD" is discouraged (100 steps).
 Proof modification of "nbbnOLD" is discouraged (25 steps).
 Proof modification of "nelaneqOLD" is discouraged (31 steps).
 Proof modification of "nelaneqOLDOLD" is discouraged (41 steps).
+Proof modification of "nf5diOLD" is discouraged (13 steps).
 Proof modification of "nfa1-o" is discouraged (8 steps).
 Proof modification of "nfcrALT" is discouraged (20 steps).
 Proof modification of "nfequid-o" is discouraged (8 steps).
