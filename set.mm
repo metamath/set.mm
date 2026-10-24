@@ -581118,6 +581118,24 @@ $)
     $( If every element in a transitive class is finite, then every element is
        also hereditarily finite.  This version of ~ trssfir1om replaces
        ~ setinds2 with ~ setinds2regs .  (Contributed by BTernaryTau,
+       20-Jan-2026.)  Use ` HF ` .  (Revised by BTernaryTau, 24-Oct-2026.) $)
+    trssfihfregs $p |- ( ( Tr A /\ A C_ Fin ) -> A C_ HF ) $=
+      ( vx vy wtr cfn wss wa chf cv wcel w3a wi weq eleq1w 3anbi1d imbi12d wral
+      ssel2 ancoms a1d 3adant2 trel expcomd impcom 3adant3 simp2 simp3 ralrimiv
+      a1i 3jcad ralim syl5 jcad elhf4 imbitrrdi setinds2regs 3expib com12 ssrdv
+      ) ADZAEFZGZBAHBIZAJZVBVCHJZVDUTVAVEVDUTVAKZVELCIZAJZUTVAKZVGHJZLZBCBCMZVF
+      VIVEVJVLVDVHUTVABCANOBCHNPVKCVCQZVFVCEJZVJCVCQZGVEVMVFVNVOVFVNLVMVDVAVNUT
+      VAVDVNAEVCRSUAUIVFVICVCQVMVOVFVICVCVFVGVCJZVHUTVAVDUTVPVHLZVAUTVDVQUTVPVD
+      VHAVGVCUBUCUDUEVFUTVPVDUTVAUFTVFVAVPVDUTVAUGTUJUHVIVJCVCUKULUMCVCUNUOUPUQ
+      URUS $.
+    $( $j usage 'trssfihfregs' avoids 'ax-reg' 'ax-inf' 'ax-inf2'; $)
+  $}
+
+  ${
+    $d A x y $.
+    $( If every element in a transitive class is finite, then every element is
+       also hereditarily finite.  This version of ~ trssfir1om replaces
+       ~ setinds2 with ~ setinds2regs .  (Contributed by BTernaryTau,
        20-Jan-2026.) $)
     trssfir1omregs $p |- ( ( Tr A /\ A C_ Fin ) -> A C_ U. ( R1 " _om ) ) $=
       ( vx vy wtr cfn wss wa cr1 com cima cuni wcel w3a weq eleq1w 3anbi1d wral
