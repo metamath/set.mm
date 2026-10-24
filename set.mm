@@ -489977,20 +489977,24 @@ htmldef "-->" as
   latexdef "-->" as "\longrightarrow";
 htmldef "-1-1->" as "<IMG SRC='onetoone.gif' WIDTH=23 HEIGHT=19 " +
     "ALT=' -1-1-&gt;' TITLE='-1-1-&gt;'>";
-  althtmldef "-1-1->" as
-    '&ndash;<FONT SIZE=-2 FACE=sans-serif>1-1</FONT>&rarr;';
+  althtmldef "-1-1->" as "<SPAN STYLE='position:relative'>&#x27f6;" +
+    "<SPAN STYLE='position:absolute;" +
+    "font-size:60%; bottom:46%; left:18%'>1-1</SPAN></SPAN>";
   latexdef "-1-1->" as "\overset{\mathrm{1-1}}{\longrightarrow}";
 htmldef "-onto->" as
     "<IMG SRC='onto.gif' WIDTH=23 HEIGHT=19 " +
     "ALT=' -onto-&gt;' TITLE='-onto-&gt;'>";
-  althtmldef "-onto->" as
-    '&ndash;<FONT SIZE=-2 FACE=sans-serif>onto</FONT>&rarr;';
+  althtmldef "-onto->" as "<SPAN STYLE='position:relative'>&#x27f6;" +
+    "<SPAN STYLE='position:absolute;" +
+    "font-size:60%; top:50%; left:9%'>onto</SPAN></SPAN>";
   latexdef "-onto->" as "\underset{\mathrm{onto}}{\longrightarrow}";
 htmldef "-1-1-onto->" as "<IMG SRC='onetooneonto.gif' WIDTH=23 HEIGHT=19 " +
     "ALT=' -1-1-onto-&gt;' TITLE='-1-1-onto-&gt;'>";
-  althtmldef "-1-1-onto->" as '&ndash;<FONT SIZE=-2 '
-    + 'FACE=sans-serif>1-1</FONT>-<FONT SIZE=-2 '
-    + 'FACE=sans-serif>onto</FONT>&rarr;';
+  althtmldef "-1-1-onto->" as "<SPAN STYLE='position:relative'>&#x27f6;" +
+    "<SPAN STYLE='position:absolute;" +
+    "font-size:60%; bottom:46%; left:18%'>1-1</SPAN>" +
+    "<SPAN STYLE='position:absolute;" +
+    "font-size:60%; top:50%; left:9%'>onto</SPAN></SPAN>";
   latexdef "-1-1-onto->" as "\overset{\mathrm{1-1}}{\underset{\mathrm{onto}}" +
     "{\longrightarrow}}";
 htmldef "`" as
