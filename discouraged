@@ -14923,6 +14923,7 @@ New usage of "bj-brrelex12ALT" is discouraged (0 uses).
 New usage of "bj-ceqsalgALT" is discouraged (0 uses).
 New usage of "bj-ceqsalgvALT" is discouraged (0 uses).
 New usage of "bj-clel3gALT" is discouraged (0 uses).
+New usage of "bj-cnvcnv" is discouraged (0 uses).
 New usage of "bj-consensusALT" is discouraged (0 uses).
 New usage of "bj-csbsnlem" is discouraged (1 uses).
 New usage of "bj-currypeirce" is discouraged (0 uses).
@@ -14940,6 +14941,7 @@ New usage of "bj-ideqgALT" is discouraged (0 uses).
 New usage of "bj-inex1gALT" is discouraged (0 uses).
 New usage of "bj-inftyexpidisj" is discouraged (3 uses).
 New usage of "bj-inftyexpiinv" is discouraged (1 uses).
+New usage of "bj-inxpALT" is discouraged (0 uses).
 New usage of "bj-mpomptALT" is discouraged (0 uses).
 New usage of "bj-nuliotaALT" is discouraged (0 uses).
 New usage of "bj-opelidb1ALT" is discouraged (0 uses).
@@ -15821,6 +15823,7 @@ New usage of "conventions-comments" is discouraged (0 uses).
 New usage of "conventions-labels" is discouraged (0 uses).
 New usage of "copsexg" is discouraged (1 uses).
 New usage of "copsexgwOLD" is discouraged (0 uses).
+New usage of "coss12dOLD" is discouraged (0 uses).
 New usage of "counop" is discouraged (0 uses).
 New usage of "cplem1OLD" is discouraged (1 uses).
 New usage of "cplem2OLD" is discouraged (0 uses).
@@ -19254,6 +19257,7 @@ New usage of "sspwtrALT2" is discouraged (0 uses).
 New usage of "sspz" is discouraged (1 uses).
 New usage of "ssralv2" is discouraged (2 uses).
 New usage of "ssralv2VD" is discouraged (0 uses).
+New usage of "ssrelOLD" is discouraged (0 uses).
 New usage of "sstrALT2" is discouraged (0 uses).
 New usage of "sstrALT2VD" is discouraged (0 uses).
 New usage of "st0" is discouraged (1 uses).
@@ -19927,6 +19931,7 @@ Proof modification of "bj-idres" is discouraged (132 steps).
 Proof modification of "bj-imn3ani" is discouraged (18 steps).
 Proof modification of "bj-inex1gALT" is discouraged (82 steps).
 Proof modification of "bj-inrab2" is discouraged (48 steps).
+Proof modification of "bj-inxpALT" is discouraged (161 steps).
 Proof modification of "bj-isseti" is discouraged (15 steps).
 Proof modification of "bj-issetiv" is discouraged (15 steps).
 Proof modification of "bj-issettruALTV" is discouraged (26 steps).
@@ -19968,6 +19973,7 @@ Proof modification of "bj-nul" is discouraged (28 steps).
 Proof modification of "bj-nuliota" is discouraged (73 steps).
 Proof modification of "bj-nuliotaALT" is discouraged (60 steps).
 Proof modification of "bj-opelidb1ALT" is discouraged (46 steps).
+Proof modification of "bj-opelrelex" is discouraged (38 steps).
 Proof modification of "bj-orim2" is discouraged (31 steps).
 Proof modification of "bj-peircecurry" is discouraged (58 steps).
 Proof modification of "bj-peircestab" is discouraged (65 steps).
@@ -20080,6 +20086,7 @@ Proof modification of "conventions-comments" is discouraged (1 steps).
 Proof modification of "conventions-labels" is discouraged (1 steps).
 Proof modification of "copsex2gd" is discouraged (81 steps).
 Proof modification of "copsexgwOLD" is discouraged (338 steps).
+Proof modification of "coss12dOLD" is discouraged (82 steps).
 Proof modification of "cplem1OLD" is discouraged (130 steps).
 Proof modification of "cplem2OLD" is discouraged (94 steps).
 Proof modification of "crngm23" is discouraged (126 steps).
@@ -21298,6 +21305,7 @@ Proof modification of "sspwtrALT" is discouraged (84 steps).
 Proof modification of "sspwtrALT2" is discouraged (72 steps).
 Proof modification of "ssralv2" is discouraged (83 steps).
 Proof modification of "ssralv2VD" is discouraged (147 steps).
+Proof modification of "ssrelOLD" is discouraged (201 steps).
 Proof modification of "sstrALT2" is discouraged (81 steps).
 Proof modification of "sstrALT2VD" is discouraged (84 steps).
 Proof modification of "stdpc5t" is discouraged (23 steps).
