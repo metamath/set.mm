@@ -580048,6 +580048,28 @@ $)
     $( The class of all hereditarily finite sets is the only class with the
        property that all sets are members of it iff they are finite and all of
        their elements are members of it.  (Contributed by BTernaryTau,
+       24-Jan-2026.)  Use ` HF ` .  (Revised by BTernaryTau, 24-Oct-2026.) $)
+    eqhf $p |- ( H = HF <->
+        A. x ( x e. H <-> ( x e. Fin /\ A. y e. x y e. H ) ) ) $=
+      ( vz vw chf cv wcel cfn wral wa wb wal elhf4 eleq2w2 wss alimi weq eleq1w
+      wi wceq ralbidv anbi2d bibi12d mpbiri biimp wtr simpr imim2i ralrid dftr5
+      alrimiv sylibr simpl df-ss trssfihf syl2anc syl biimpr imbi12d ra4v ralim
+      imbi2d anim2d biimtrid adantl cbvraldva2 spvv syl9r sylcom setinds2 ssrdv
+      anbi12d eqssd impbii ) CFUAZAGZCHZVQIHZBGZCHZBVQJZKZLZAMZVPWDAVPWDVQFHZVS
+      VTFHZBVQJZKZLBVQNVPVRWFWCWIACFOVPWBWHVSVPWAWGBVQBCFOUBUCUDUEULWECFWEVRWCT
+      ZAMZCFPZWDWJAVRWCUFQWKCUGZCIPZWLWKWBACJWMWKWBACWJVRWBTAWCWBVRVSWBUHUIQUJA
+      BCUKUMWKVRVSTZAMWNWJWOAWCVSVRVSWBUNUIQACIUOUMCUPUQURWEWCVRTZAMZFCPWDWPAVR
+      WCUSQWQDFCWQDGZFHZWRCHZTZTWQEGZFHZXBCHZTZTZDEDERZXAXEWQXGWSXCWTXDDEFSDECS
+      UTVCXFEWRJWQXEEWRJZXAWQXEEWRVAXHWSWRIHZXDEWRJZKZWQWTWSXIXCEWRJZKXHXKEWRNX
+      HXLXJXIXCXDEWRVBVDVEWPXKWTTADADRZWCXKVRWTXMVSXIWBXJADISXMWAXDBEVQWRBERZWA
+      XDLXMBECSVFXMXNUNVGVMADCSUTVHVIVJVKVLURVNVO $.
+  $}
+
+  ${
+    $d H w x y z $.
+    $( The class of all hereditarily finite sets is the only class with the
+       property that all sets are members of it iff they are finite and all of
+       their elements are members of it.  (Contributed by BTernaryTau,
        24-Jan-2026.) $)
     r1omhfb $p |- ( H = U. ( R1 " _om ) <->
         A. x ( x e. H <-> ( x e. Fin /\ A. y e. x y e. H ) ) ) $=
