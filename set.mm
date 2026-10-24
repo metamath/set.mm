@@ -70,6 +70,7 @@ RFL Roy F. Longton
 TM  T M
 TVM Thomas van Maaren
 JPM Jeffrey P. Machado
+XM  Xander Mackay
 JM  Jeff Madsen
 GM  Giovanni Mascellani
 PM  Peter Mazsa
@@ -634917,6 +634918,611 @@ $)
 
 $( (End of Thomas van Maaren's mathbox.) $)
 $( End $[ set-mbox-tvm.mm $] $)
+
+
+$( Begin $[ set-mbox-xm.mm $] $)
+$( Skip $[ set-main.mm $] $)
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+  Mathbox for Xander Mackay
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+$( The proofs in this section were found by Claude, Anthropic's language
+   model, working from a plan of its own under the direction and review of
+   Xander Mackay. $)
+
+$(
+===============================================================================
+  Preimages of sets under translation
+===============================================================================
+$)
+
+  ${
+    elicoshift.a $e |- ( ph -> A e. RR ) $.
+    elicoshift.b $e |- ( ph -> B e. RR ) $.
+    elicoshift.v $e |- ( ph -> V e. RR ) $.
+    elicoshift.y $e |- ( ph -> Y e. RR ) $.
+    $( Membership in a left-closed, right-open real interval is unchanged by
+       translating the point and the interval together.  (Contributed by Xander
+       Mackay and Claude, 16-Sep-2026.) $)
+    elicoshift $p |- ( ph -> ( ( Y - V ) e. ( A [,) B ) <-> Y e. ( ( A + V )
+      [,) ( B + V ) ) ) )
+                     $=
+      ( co cr wcel cle wbr clt w3a caddc cico wb cxr cmin resubcld 2thd syl3anc
+      leaddsub bicomd ltsubaddd 3anbi123d rexrd elico2 syl2anc readdcld 3bitr4d
+      ) AEDUAJZKLZBUNMNZUNCONZPZEKLZBDQJZEMNZECDQJZONZPZUNBCRJLZEUTVBRJLZAUOUSU
+      PVAUQVCAUOUSAEDIHUBIUCAVAUPABKLZDKLUSVAUPSFHIBDEUEUDUFAEDCIHGUGUHAVGCTLVE
+      URSFACGUIBCUNUJUKAUTKLVBTLVFVDSABDFHULAVBACDGHULUIUTVBEUJUKUM $.
+  $}
+
+  ${
+    $d V k $.  $d X k $.  $d Y k $.  $d k ph $.
+    elixpshift.x $e |- ( ph -> X e. _V ) $.
+    elixpshift.a $e |- ( ph -> A : X --> RR ) $.
+    elixpshift.b $e |- ( ph -> B : X --> RR ) $.
+    elixpshift.v $e |- ( ph -> V : X --> RR ) $.
+    elixpshift.y $e |- ( ph -> Y : X --> RR ) $.
+    $( Membership in an infinite Cartesian product of left-closed, right-open
+       real intervals is unchanged by translating the point and every factor
+       together.  (Contributed by Xander Mackay and Claude, 16-Sep-2026.) $)
+    elixpshift $p |- ( ph -> ( ( Y oF - V ) e. X_ k e. X ( ( A ` k ) [,) ( B
+      ` k ) ) <-> Y e. X_ k e. X ( ( ( A ` k ) + ( V ` k ) ) [,) ( ( B ` k ) +
+      ( V ` k ) ) ) ) )
+                     $=
+      ( cmin co cfv wcel wa cvv cr ffvelcdmda cof cico wral caddc cixp wfn wceq
+      cv ffnd adantr simpr fnfvof syl22anc eleq1d elicoshift bitrd ralbidva w3a
+      wb df-3an a1i elixp2 ovexd inidm offn jca biantrurd 3bitr4d fexd ) ADUHZG
+      EMUAZNZOZVJBOZVJCOZUBNZPZDFUCZVJGOZVNVJEOZUDNVOVTUDNUBNZPZDFUCZVLDFVPUEPZ
+      GDFWAUEPZAVQWBDFAVJFPZQZVQVSVTMNZVPPWBWGVMWHVPWGGFUFZEFUFZFRPZWFVMWHUGAWI
+      WFAFSGLUIZUJAWJWFAFSEKUIZUJAWKWFHUJAWFUKFMGERVJULUMUNWGVNVOVTVSAFSVJBITAF
+      SVJCJTAFSVJEKTAFSVJGLTUOUPUQAVLRPZVLFUFZVRURZWNWOQZVRQZWDVRWPWRUSAWNWOVRU
+      TVAWDWPUSADFVPVLVBVAAWQVRAWNWOAGEVKVCAFFMFGERRWLWMHHFVDVEVFVGVHAGRPZWIWCU
+      RZWSWIQZWCQZWEWCWTXBUSAWSWIWCUTVAWEWTUSADFWAGVBVAAXAWCAWSWIAFSRGLHVIWLVFV
+      GVHVH $.
+  $}
+
+  ${
+    $d V k $.  $d X k $.  $d Y k $.  $d k ph $.
+    ofsubpreim.x $e |- ( ph -> X e. _V ) $.
+    ofsubpreim.v $e |- ( ph -> V : X --> RR ) $.
+    ofsubpreim.y $e |- ( ph -> Y : X --> RR ) $.
+    ofsubpreim.c $e |- ( ( ph /\ k e. X ) -> ( ( ( Y ` k ) - ( V ` k ) ) e. C
+      <-> ( Y ` k ) e. D ) )
+                       $.
+    $( Translating a point by ` V ` and testing coordinatewise membership in
+       ` C ` is the same as testing the untranslated point against the class
+       ` D ` the translation carries ` C ` to, coordinatewise, over an infinite
+       index set.  (Contributed by Xander Mackay and Claude, 16-Sep-2026.) $)
+    ofsubpreim $p |- ( ph -> ( ( Y oF - V ) e. X_ k e. X C <-> Y e. X_ k e. X
+      D ) )
+                     $=
+      ( cmin cfv wcel wa wfn cvv cr wb a1i cv cof co wral cixp wceq ffnd adantr
+      simpr fnfvof syl22anc eleq1d bitrd ralbidva w3a df-3an elixp2 ovexd inidm
+      offn jca biantrurd 3bitr4d fexd ) ADUAZGELUBZUCZMZBNZDFUDZVEGMZCNZDFUDZVG
+      DFBUENZGDFCUENZAVIVLDFAVEFNZOZVIVKVEEMLUCZBNVLVQVHVRBVQGFPZEFPZFQNZVPVHVR
+      UFAVSVPAFRGJUGZUHAVTVPAFREIUGZUHAWAVPHUHAVPUIFLGEQVEUJUKULKUMUNAVGQNZVGFP
+      ZVJUOZWDWEOZVJOZVNVJWFWHSAWDWEVJUPTVNWFSADFBVGUQTAWGVJAWDWEAGEVFURAFFLFGE
+      QQWBWCHHFUSUTVAVBVCAGQNZVSVMUOZWIVSOZVMOZVOVMWJWLSAWIVSVMUPTVOWJSADFCGUQT
+      AWKVMAWIVSAFRQGJHVDWBVAVBVCVC $.
+  $}
+
+  ${
+    $d A k $.  $d V k $.  $d X k $.  $d k ph $.
+    ofaddsubidd.x $e |- ( ph -> X e. _V ) $.
+    ofaddsubidd.a $e |- ( ph -> A : X --> RR ) $.
+    ofaddsubidd.v $e |- ( ph -> V : X --> RR ) $.
+    $( Translating a function by ` V ` and then back by ` V ` recovers the
+       function.  (Contributed by Xander Mackay and Claude, 16-Sep-2026.) $)
+    ofaddsubidd $p |- ( ph -> ( ( A oF + V ) oF - V ) = A ) $=
+      ( vk caddc cof co cmin cvv cr ffnd offn wcel cfv wfn adantr inidm cv wceq
+      wa simpr fnfvof syl22anc oveq1d ffvelcdmda recnd pncand 3eqtrd eqfnfvd )
+      AHDBCIJKZCLJKZBADDLDUNCMMADDIDBCMMADNBFOZADNCGOZEEDUAZPZUQEEURPUPAHUBZDQZ
+      UDZUTUORZUTUNRZUTCRZLKZUTBRZVEIKZVELKVGVBUNDSZCDSZDMQZVAVCVFUCAVIVAUSTAVJ
+      VAUQTZAVKVAETZAVAUEZDLUNCMUTUFUGVBVDVHVELVBBDSZVJVKVAVDVHUCAVOVAUPTVLVMVN
+      DIBCMUTUFUGUHVBVGVEVBVGADNUTBFUIUJVBVEADNUTCGUIUJUKULUM $.
+  $}
+
+  ${
+    $d A k $.  $d V k $.  $d W k $.  $d X k $.  $d k ph $.
+    ofsubneg.x $e |- ( ph -> X e. _V ) $.
+    ofsubneg.a $e |- ( ph -> A : X --> RR ) $.
+    ofsubneg.v $e |- ( ph -> V : X --> RR ) $.
+    ofsubneg.w $e |- ( ph -> W = ( k e. X |-> -u ( V ` k ) ) ) $.
+    $( Translating by the pointwise negation of ` V ` is the same as
+       translating by ` V ` in the other direction.  (Contributed by Xander
+       Mackay and Claude, 16-Sep-2026.) $)
+    ofsubneg $p |- ( ph -> ( A oF - W ) = ( A oF + V ) ) $=
+      ( cmin cof co caddc cvv cr ffnd cfv wfn adantr cv cneg wcel wa ffvelcdmda
+      renegcld fmpt3d inidm offn wceq simpr fnfvof fvmpt2d oveq2d recnd subnegd
+      syl22anc 3eqtrd eqtr4d eqfnfvd ) ACFBEKLMZBDNLMZAFFKFBEOOAFPBHQZAFPEACFCU
+      AZDRZUBZPEJAVDFUCZUDZVEAFPVDDIUEZUFZUGQZGGFUHZUIAFFNFBDOOVCAFPDIQZGGVLUIV
+      HVDVARZVDBRZVENMZVDVBRZVHVNVOVDERZKMZVOVFKMVPVHBFSZEFSZFOUCZVGVNVSUJAVTVG
+      VCTZAWAVGVKTAWBVGGTZAVGUKZFKBEOVDULUQVHVRVFVOKACFVFEPJVJUMUNVHVOVEVHVOAFP
+      VDBHUEUOVHVEVIUOUPURVHVTDFSZWBVGVQVPUJWCAWFVGVMTWDWEFNBDOVDULUQUSUT $.
+  $}
+
+  $( The preimage of an intersection under a coordinatewise translation is the
+     intersection of the preimages.  (Contributed by Xander Mackay and Claude,
+     16-Sep-2026.) $)
+  ofsubpreimin $p |- { y e. ( RR ^m X ) | ( y oF - V ) e. ( A i^i B ) } = ( {
+    y e. ( RR ^m X ) | ( y oF - V ) e. A } i^i { y e. ( RR ^m X ) | ( y oF - V
+    ) e. B } )
+                    $=
+    ( cv cmin cof co cin wcel cr cmap crab wa elin rabbii inrab eqtr4i ) AFDGHI
+    ZBCJKZALEMIZNTBKZTCKZOZAUBNUCAUBNUDAUBNJUAUEAUBTBCPQUCUDAUBRS $.
+
+  $( The preimage of a class difference under a coordinatewise translation is
+     the difference of the preimages.  (Contributed by Xander Mackay and
+     Claude, 16-Sep-2026.) $)
+  ofsubpreimdif $p |- { y e. ( RR ^m X ) | ( y oF - V ) e. ( A \ B ) } = ( { y
+    e. ( RR ^m X ) | ( y oF - V ) e. A } \ { y e. ( RR ^m X ) | ( y oF - V ) e.
+    B } )
+                    $=
+    ( cv cmin cof co cdif wcel cr cmap crab wn wa eldif rabbii difrab eqtr4i )
+    AFDGHIZBCJKZALEMIZNUABKZUACKZOPZAUCNUDAUCNUEAUCNJUBUFAUCUABCQRUDUEAUCST $.
+
+$(
+===============================================================================
+  Preimages of sets under scaling
+===============================================================================
+$)
+
+  ${
+    elicodiv.a $e |- ( ph -> A e. RR ) $.
+    elicodiv.b $e |- ( ph -> B e. RR ) $.
+    elicodiv.c $e |- ( ph -> C e. RR+ ) $.
+    elicodiv.y $e |- ( ph -> Y e. RR ) $.
+    $( Membership in a left-closed, right-open real interval is unchanged by
+       scaling the point and the interval together.  (Contributed by Xander
+       Mackay and Claude, 16-Sep-2026.) $)
+    elicodiv $p |- ( ph -> ( ( Y / C ) e. ( A [,) B ) <-> Y e. ( ( A x. C )
+      [,) ( B x. C ) ) ) )
+                    $=
+      ( co cr wcel cle wbr clt w3a cmul cico cxr wb cdiv rerpdivcld 2thd bicomd
+      lemuldivd ltdivmul2d 3anbi123d rexrd elico2 syl2anc remulcld 3bitr4d
+      rpred ) AEDUAJZKLZBUNMNZUNCONZPZEKLZBDQJZEMNZECDQJZONZPZUNBCRJLZEUTVBRJLZ
+      AUOUSUPVAUQVCAUOUSAEDIHUBIUCAVAUPABEDFIHUEUDAECDIGHUFUGABKLCSLVEURTFACGUH
+      BCUNUIUJAUTKLVBSLVFVDTABDFADHUMZUKAVBACDGVGUKUHUTVBEUIUJUL $.
+  $}
+
+  ${
+    $d V k $.  $d X k $.  $d Y k $.  $d k ph $.
+    elixpdiv.x $e |- ( ph -> X e. _V ) $.
+    elixpdiv.a $e |- ( ph -> A : X --> RR ) $.
+    elixpdiv.b $e |- ( ph -> B : X --> RR ) $.
+    elixpdiv.v $e |- ( ph -> V : X --> RR+ ) $.
+    elixpdiv.y $e |- ( ph -> Y : X --> RR ) $.
+    $( Membership in an infinite Cartesian product of left-closed, right-open
+       real intervals is unchanged by scaling the point and every factor
+       together.  (Contributed by Xander Mackay and Claude, 16-Sep-2026.) $)
+    elixpdiv $p |- ( ph -> ( ( Y oF / V ) e. X_ k e. X ( ( A ` k ) [,) ( B `
+      k ) ) <-> Y e. X_ k e. X ( ( ( A ` k ) x. ( V ` k ) ) [,) ( ( B ` k ) x.
+      ( V ` k ) ) ) ) )
+                    $=
+      ( cdiv co cfv wcel wa cvv cr ffvelcdmda cof cico wral cmul cixp wceq ffnd
+      cv wfn adantr crp simpr fnfvof syl22anc eleq1d elicodiv bitrd ralbidva wb
+      w3a df-3an a1i elixp2 ovexd inidm offn jca biantrurd 3bitr4d fexd ) ADUHZ
+      GEMUAZNZOZVKBOZVKCOZUBNZPZDFUCZVKGOZVOVKEOZUDNVPWAUDNUBNZPZDFUCZVMDFVQUEP
+      ZGDFWBUEPZAVRWCDFAVKFPZQZVRVTWAMNZVQPWCWHVNWIVQWHGFUIZEFUIZFRPZWGVNWIUFAW
+      JWGAFSGLUGZUJAWKWGAFUKEKUGZUJAWLWGHUJAWGULFMGERVKUMUNUOWHVOVPWAVTAFSVKBIT
+      AFSVKCJTAFUKVKEKTAFSVKGLTUPUQURAVMRPZVMFUIZVSUTZWOWPQZVSQZWEVSWQWSUSAWOWP
+      VSVAVBWEWQUSADFVQVMVCVBAWRVSAWOWPAGEVLVDAFFMFGERRWMWNHHFVEVFVGVHVIAGRPZWJ
+      WDUTZWTWJQZWDQZWFWDXAXCUSAWTWJWDVAVBWFXAUSADFWBGVCVBAXBWDAWTWJAFSRGLHVJWM
+      VGVHVIVI $.
+  $}
+
+  ${
+    xmulrecd.k $e |- ( ph -> K e. RR+ ) $.
+    xmulrecd.w $e |- ( ph -> W e. RR* ) $.
+    $( Extended-real multiplication by a positive real and then by its
+       reciprocal recovers the original extended real, in deduction form.
+       (Contributed by Xander Mackay and Claude, 16-Sep-2026.) $)
+    xmulrecd $p |- ( ph -> ( K *e ( ( 1 / K ) *e W ) ) = W ) $=
+      ( c1 cdiv co cxmu cmul cr wcel wceq rpred rpreccld rexmul rpcnd cxr rpxrd
+      syl2anc rpne0d recidd eqtrd oveq1d xmulass syl3anc xmullid syl 3eqtr3d )
+      ABFBGHZIHZCIHZFCIHZBUJCIHIHZCAUKFCIAUKBUJJHZFABKLUJKLUKUOMABDNAUJABDOZNBU
+      JPTABABDQABDUAUBUCUDABRLUJRLCRLZULUNMABDSAUJUPSEBUJCUEUFAUQUMCMECUGUHUI
+      $.
+  $}
+
+  ${
+    $d V k $.  $d X k $.  $d Y k $.  $d k ph $.
+    ofdivpreim.x $e |- ( ph -> X e. _V ) $.
+    ofdivpreim.v $e |- ( ph -> V : X --> RR+ ) $.
+    ofdivpreim.y $e |- ( ph -> Y : X --> RR ) $.
+    ofdivpreim.c $e |- ( ( ph /\ k e. X ) -> ( ( ( Y ` k ) / ( V ` k ) ) e. C
+      <-> ( Y ` k ) e. D ) )
+                       $.
+    $( Scaling a point by ` V ` and testing coordinatewise membership in ` C `
+       is the same as testing the unscaled point against the class ` D ` the
+       scaling carries ` C ` to, coordinatewise, over an infinite index set.
+       (Contributed by Xander Mackay and Claude, 16-Sep-2026.) $)
+    ofdivpreim $p |- ( ph -> ( ( Y oF / V ) e. X_ k e. X C <-> Y e. X_ k e. X
+      D ) )
+                     $=
+      ( cdiv cfv wcel wa wfn cvv adantr wb a1i cv cof co wral cixp wceq cr ffnd
+      crp simpr fnfvof syl22anc eleq1d bitrd ralbidva df-3an elixp2 ovexd inidm
+      w3a offn jca biantrurd 3bitr4d fexd ) ADUAZGELUBZUCZMZBNZDFUDZVFGMZCNZDFU
+      DZVHDFBUENZGDFCUENZAVJVMDFAVFFNZOZVJVLVFEMLUCZBNVMVRVIVSBVRGFPZEFPZFQNZVQ
+      VIVSUFAVTVQAFUGGJUHZRAWAVQAFUIEIUHZRAWBVQHRAVQUJFLGEQVFUKULUMKUNUOAVHQNZV
+      HFPZVKUTZWEWFOZVKOZVOVKWGWISAWEWFVKUPTVOWGSADFBVHUQTAWHVKAWEWFAGEVGURAFFL
+      FGEQQWCWDHHFUSVAVBVCVDAGQNZVTVNUTZWJVTOZVNOZVPVNWKWMSAWJVTVNUPTVPWKSADFCG
+      UQTAWLVNAWJVTAFUGQGJHVEWCVBVCVDVD $.
+  $}
+
+  ${
+    $d A k $.  $d V k $.  $d X k $.  $d k ph $.
+    ofmuldividd.x $e |- ( ph -> X e. _V ) $.
+    ofmuldividd.a $e |- ( ph -> A : X --> RR ) $.
+    ofmuldividd.v $e |- ( ph -> V : X --> RR+ ) $.
+    $( Scaling a function by ` V ` and then dividing back by ` V ` recovers the
+       function.  (Contributed by Xander Mackay and Claude, 16-Sep-2026.) $)
+    ofmuldividd $p |- ( ph -> ( ( A oF x. V ) oF / V ) = A ) $=
+      ( vk cmul cof co cdiv cvv cr ffnd crp offn cfv wfn adantr inidm wcel wceq
+      cv wa simpr fnfvof syl22anc oveq1d ffvelcdmda recnd rpcnd rpne0d divcan4d
+      3eqtrd eqfnfvd ) AHDBCIJKZCLJKZBADDLDUQCMMADDIDBCMMADNBFOZADPCGOZEEDUAZQZ
+      UTEEVAQUSAHUDZDUBZUEZVCURRZVCUQRZVCCRZLKZVCBRZVHIKZVHLKVJVEUQDSZCDSZDMUBZ
+      VDVFVIUCAVLVDVBTAVMVDUTTZAVNVDETZAVDUFZDLUQCMVCUGUHVEVGVKVHLVEBDSZVMVNVDV
+      GVKUCAVRVDUSTVOVPVQDIBCMVCUGUHUIVEVJVHVEVJADNVCBFUJUKVEVHADPVCCGUJZULVEVH
+      VSUMUNUOUP $.
+  $}
+
+  ${
+    $d A k $.  $d V k $.  $d W k $.  $d X k $.  $d k ph $.
+    ofdivrecip.x $e |- ( ph -> X e. _V ) $.
+    ofdivrecip.a $e |- ( ph -> A : X --> RR ) $.
+    ofdivrecip.v $e |- ( ph -> V : X --> RR+ ) $.
+    ofdivrecip.w $e |- ( ph -> W = ( k e. X |-> ( 1 / ( V ` k ) ) ) ) $.
+    $( Dividing by the pointwise reciprocal of ` V ` is the same as scaling by
+       ` V ` in the other direction.  (Contributed by Xander Mackay and Claude,
+       16-Sep-2026.) $)
+    ofdivrecip $p  |- ( ph -> ( A oF / W ) = ( A oF x. V ) ) $=
+      ( cdiv co cmul cvv cr ffnd cfv crp wfn adantr c1 wcel ffvelcdmda rpreccld
+      cof cv wa rpred fmpt3d inidm offn wceq simpr fnfvof syl22anc oveq2d recnd
+      fvmpt2d rpcnd rpne0d divrecd recrecd eqtrd 3eqtrd eqtr4d eqfnfvd ) ACFBEK
+      UELZBDMUELZAFFKFBENNAFOBHPZAFOEACFUACUFZDQZKLZOEJAVJFUBZUGZVLVNVKAFRVJDIU
+      CZUDZUHUIPZGGFUJZUKAFFMFBDNNVIAFRDIPZGGVRUKVNVJVGQZVJBQZVKMLZVJVHQZVNVTWA
+      VJEQZKLZWAVLKLZWBVNBFSZEFSZFNUBZVMVTWEULAWGVMVITZAWHVMVQTAWIVMGTZAVMUMZFK
+      BENVJUNUOVNWDVLWAKACFVLERJVPURUPVNWFWAUAVLKLZMLWBVNWAVLVNWAAFOVJBHUCUQVNV
+      LVPUSVNVLVPUTVAVNWMVKWAMVNVKVNVKVOUSVNVKVOUTVBUPVCVDVNWGDFSZWIVMWCWBULWJA
+      WNVMVSTWKWLFMBDNVJUNUOVEVF $.
+  $}
+
+  $( The preimage of an intersection under a coordinatewise scaling is the
+     intersection of the preimages.  (Contributed by Xander Mackay and Claude,
+     16-Sep-2026.) $)
+  ofdivpreimin $p |- { y e. ( RR ^m X ) | ( y oF / V ) e. ( A i^i B ) } = ( { y
+    e. ( RR ^m X ) | ( y oF / V ) e. A } i^i { y e. ( RR ^m X ) | ( y oF / V )
+    e. B } )
+                   $=
+    ( cv cdiv cof co cin wcel cr cmap crab wa elin rabbii inrab eqtr4i ) AFDGHI
+    ZBCJKZALEMIZNTBKZTCKZOZAUBNUCAUBNUDAUBNJUAUEAUBTBCPQUCUDAUBRS $.
+
+  $( The preimage of a class difference under a coordinatewise scaling is the
+     difference of the preimages.  (Contributed by Xander Mackay and Claude,
+     16-Sep-2026.) $)
+  ofdivpreimdif $p |- { y e. ( RR ^m X ) | ( y oF / V ) e. ( A \ B ) } = ( { y
+    e. ( RR ^m X ) | ( y oF / V ) e. A } \ { y e. ( RR ^m X ) | ( y oF / V ) e.
+    B } )
+                   $=
+    ( cv cdiv cof co cdif wcel cr cmap crab wn wa eldif rabbii difrab eqtr4i )
+    AFDGHIZBCJKZALEMIZNUABKZUACKZOPZAUCNUDAUCNUEAUCNJUBUFAUCUABCQRUDUEAUCST $.
+
+$(
+===============================================================================
+  Disjointness of integer-lattice translates
+===============================================================================
+$)
+
+  ${
+    $d X j $.  $d Y j $.  $d Z j $.
+    ofziundisjlem1.x $e |- ( ph -> X e. Fin ) $.
+    ofziundisjlem1.y $e |- ( ph -> Y e. ( RR ^m X ) ) $.
+    ofziundisjlem1.z $e |- ( ph -> Z e. ( ZZ ^m X ) ) $.
+    ofziundisjlem1.q $e |- ( ph -> ( Y oF + Z ) e. X_ j e. X ( 0 [,) 1 ) ) $.
+    $( Lemma for ~ ofziundisj : if translating a real point by an
+       integer-valued function lands it in the half-open unit cube, that
+       integer function is determined coordinatewise as the pointwise negated
+       floor of the point.  (Contributed by Xander Mackay and Claude,
+       18-Sep-2026.) $)
+    ofziundisjlem1 $p |- ( ( ph /\ j e. X ) -> ( |_ ` ( Y ` j ) ) = -u ( Z ` j
+                    ) )
+                    $=
+      ( wcel cfv cle wbr c1 caddc co clt cc0 cr cz cv cfl cneg wceq cmin df-neg
+      wa cof cico w3a wral cvv wfn cixp adantr elixp2 sylib simp3d sylancom cxr
+      rspa wb 0re 1xr elico2 mp2an simp2d cmap elmapi syl ffnd cfn elexd fnfvof
+      wf simpr syl22anc breqtrd ffvelcdmda zred lesubaddd mpbird eqbrtrid recnd
+      a1i zcnd subnegd eqbrtrrd eqbrtrd renegcld 1red ltsubadd2d mpbid jca flbi
+      znegcld syl2anc ) ABUAZCJZUGZWRDKZUBKWREKZUCZUDZXCXALMZXAXCNOPQMZUGZWTXEX
+      FWTXCRXBUEPZXALXBUFWTXHXALMRXAXBOPZLMWTRWRDEOUHPZKZXILWTXKSJZRXKLMZXKNQMZ
+      WTXKRNUIPZJZXLXMXNUJZAWSXPBCUKZXPWTXJULJZXJCUMZXRWTXJBCXOUNJZXSXTXRUJAYAW
+      SIUOBCXOXJUPUQURXPBCVAUSRSJZNUTJXPXQVBVCVDRNXKVEVFUQZVGWTDCUMZECUMZCULJZW
+      SXKXIUDAYDWSACSDADSCVHPJCSDVOGDSCVIVJZVKUOAYEWSACTEAETCVHPJCTEVOHETCVIVJZ
+      VKUOAYFWSACVLFVMUOAWSVPCODEULWRVNVQZVRWTRXBXAYBWTVCWEWTXBACTWREYHVSZVTZAC
+      SWRDYGVSZWAWBWCWTXAXCUEPZNQMXFWTYMXINQWTXAXBWTXAYLWDWTXBYJWFWGWTXKXINQYIW
+      TXLXMXNYCURWHWIWTXAXCNYLWTXBYKWJWTWKWLWMWNWTXASJXCTJXDXGVBYLWTXBYJWPXAXCW
+      OWQWB $.
+  $}
+
+  ${
+    $d W j $.  $d X j $.  $d Y j $.  $d Z j $.  $d j ph $.
+    ofziundisjlem2.x $e |- ( ph -> X e. Fin ) $.
+    ofziundisjlem2.y $e |- ( ph -> Y e. ( RR ^m X ) ) $.
+    ofziundisjlem2.z $e |- ( ph -> Z e. ( ZZ ^m X ) ) $.
+    ofziundisjlem2.q $e |- ( ph -> ( Y oF + Z ) e. X_ j e. X ( 0 [,) 1 ) ) $.
+    ofziundisjlem2.w $e |- ( ph -> W e. ( ZZ ^m X ) ) $.
+    ofziundisjlem2.r $e |- ( ph -> ( Y oF + W ) e. X_ j e. X ( 0 [,) 1 ) ) $.
+    $( Lemma for ~ ofziundisj : the integer translate landing a point in the
+       half-open unit cube is unique.  (Contributed by Xander Mackay and
+       Claude, 18-Sep-2026.) $)
+    ofziundisjlem2 $p   |- ( ph -> Z = W ) $=
+      ( cz wcel wf elmapi syl ffnd cfv ffvelcdmda cmap co cv cfl ofziundisjlem1
+      wa zcnd cneg eqtr3d neg11d eqfnfvd ) ABDFCADMFAFMDUAUBZNDMFOIFMDPQZRADMCA
+      CULNDMCOKCMDPQZRABUCZDNUFZUOFSZUOCSZUPUQADMUOFUMTUGUPURADMUOCUNTUGUPUOESU
+      DSUQUHURUHABDEFGHIJUEABDECGHKLUEUIUJUK $.
+  $}
+
+  ${
+    $d X j k u w y z $.  $d j ph u w z $.
+    ofziundisj.x $e |- ( ph -> X e. Fin ) $.
+    $( The integer-lattice translates of the half-open unit cube are pairwise
+       disjoint.  (Contributed by Xander Mackay and Claude, 18-Sep-2026.) $)
+    ofziundisj $p |- ( ph -> Disj_ z e. ( ZZ ^m X ) { y e. ( RR ^m X ) | ( y
+      oF + z ) e. X_ k e. X ( 0 [,) 1 ) } )
+                    $=
+      ( vw vu vj weq cv co cixp wcel cmap crab wral wa ad2antrr eleq1d caddc c1
+      cof cc0 cico cr cin c0 wceq wo cz wdisj wn simplr cfn oveq1 bilani simpld
+      elrab adantr simplrl simprd eqidd cbvixpv eleqtrdi simplrr ofziundisjlem2
+      mtand ralrimiva disj sylibr ex orrd ralrimivva oveq2 rabbidv disjor ) ACG
+      JZBKZCKZUAUCZLZDEUDUBUELZMZNZBUFEOLZPZVSGKZWALZWDNZBWFPZUGUHUIZUJZGUKEOLZ
+      QCWNQCWNWGULAWMCGWNWNAVTWNNZWHWNNZRZRZVRWLWRVRUMZWLWRWSRZHKZWKNZUMZHWGQWL
+      WTXCHWGWTXAWGNZRZXBVRWRWSXDUNXEXBRZIWHEXAVTWTEUONZXDXBAXGWQWSFSSXEXAWFNZX
+      BXEXHXAVTWALZWDNZXDXHXJRWTWEXJBXAWFBHJZWBXIWDVSXAVTWAUPTUSUQZURUTWTWOXDXB
+      AWOWPWSVASXFXIWDIEWCMZXEXJXBXEXHXJXLVBUTDIEWCWCDIJWCVCVDZVEWTWPXDXBAWOWPW
+      SVFSXFXAWHWALZWDXMXFXHXOWDNZXBXHXPRXEWJXPBXAWFXKWIXOWDVSXAWHWAUPTUSUQVBXN
+      VEVGVHVIHWGWKVJVKVLVMVNWNWGWKCGVRWEWJBWFVRWBWIWDVTWHVSWAVOTVPVQVK $.
+  $}
+
+  ${
+    $d X k $.  $d k ph $.  $d k u $.  $d k w $.  $d k z $.
+    ofblichfdisjlem1.x $e |- ( ph -> X e. Fin ) $.
+    ofblichfdisjlem1.z $e |- ( ph -> z e. ( ZZ ^m X ) ) $.
+    ofblichfdisjlem1.w $e |- ( ph -> w e. ( ZZ ^m X ) ) $.
+    ofblichfdisjlem1.u $e |- ( ph -> u e. ( RR ^m X ) ) $.
+    $( Lemma for ~ ofblichfdisj : the pointwise difference of two
+       lattice-translate differences of a common point collapses to the
+       difference of the lattice points themselves.  (Contributed by Xander
+       Mackay and Claude, 18-Sep-2026.) $)
+    ofblichfdisjlem1 $p |- ( ph -> ( k e. X |-> ( ( ( u oF - z ) ` k ) - ( ( u
+      oF
+      - w ) ` k ) ) ) = ( w oF - z ) )
+                       $=
+      ( cv cmin co cfv wcel cr cfn wf elmapi cz cof cmpt wa cmap syl ffvelcdmda
+      wss zssre a1i feqmptd offval2 resubcld fvmpt2d oveq12d nnncan1d mpteq2dva
+      fssd recnd eqtrd eqtr4d ) AEFEKZDKZBKZLUAZMZNZVAVBCKZVDMZNZLMZUBEFVAVGNZV
+      AVCNZLMZUBVGVCVDMAEFVJVMAVAFOUCZVJVAVBNZVLLMZVOVKLMZLMVMVNVFVPVIVQLAEFVPV
+      EPAEFVOVLLVBVCQPPGAFPVAVBAVBPFUDMOFPVBRJVBPFSUEZUFZAFPVAVCAFTPVCAVCTFUDMZ
+      OFTVCRHVCTFSUEZTPUGAUHUIZUQUFZAEFPVBVRUJZAEFTVCWAUJZUKVNVOVLVSWCULUMAEFVQ
+      VHPAEFVOVKLVBVGQPPGVSAFPVAVGAFTPVGAVGVTOFTVGRIVGTFSUEZWBUQUFZWDAEFTVGWFUJ
+      ZUKVNVOVKVSWGULUMUNVNVOVLVKVNVOVSURVNVLWCURVNVKWGURUOUSUPAEFVKVLLVGVCQPPG
+      WGWCWHWEUKUT $.
+  $}
+
+  ${
+    $d X k $.  $d k ph $.  $d k w $.  $d k z $.
+    ofblichfdisjlem2.x $e |- ( ph -> X e. Fin ) $.
+    ofblichfdisjlem2.z $e |- ( ph -> z e. ( ZZ ^m X ) ) $.
+    ofblichfdisjlem2.w $e |- ( ph -> w e. ( ZZ ^m X ) ) $.
+    $( Lemma for ~ ofblichfdisj : the pointwise difference of two integer
+       lattice points is again an integer lattice point.  (Contributed by
+       Xander Mackay and Claude, 18-Sep-2026.) $)
+    ofblichfdisjlem2 $p |- ( ph -> ( w oF - z ) e. ( ZZ ^m X ) ) $=
+      ( vk cv cmin co cfv cz cfn wcel wf elmapi syl ffvelcdmda feqmptd cof cmpt
+      cmap offval2 cvv zex a1i wa zsubcld fmpttd elmapdd eqeltrd ) ACIZBIZJUAKH
+      DHIZUMLZUOUNLZJKZUBZMDUCKZAHDUPUQJUMUNNMMEADMUOUMAUMUTODMUMPGUMMDQRZSZADM
+      UOUNAUNUTODMUNPFUNMDQRZSZAHDMUMVATAHDMUNVCTUDAMDUSUENMUEOAUFUGEAHDURMAUOD
+      OUHUPUQVBVDUIUJUKUL $.
+  $}
+
+  ${
+    $d S s t $.  $d S y $.  $d X k s t $.  $d X y $.  $d k ph $.  $d k s t u $.
+    $d k t w $.  $d k s t z $.  $d u y $.  $d w y $.  $d y z $.
+    ofblichfdisjlem3.x $e |- ( ph -> X e. Fin ) $.
+    ofblichfdisjlem3.d $e |- ( ph -> A. s e. S A. t e. S ( ( k e. X |-> ( ( s `
+      k
+      ) - ( t ` k ) ) ) e. ( ZZ ^m X ) -> s = t ) )
+                         $.
+    ofblichfdisjlem3.z $e |- ( ph -> z e. ( ZZ ^m X ) ) $.
+    ofblichfdisjlem3.w $e |- ( ph -> w e. ( ZZ ^m X ) ) $.
+    ofblichfdisjlem3.uz $e |- ( ph -> u e. ( { y e. ( RR ^m X ) | ( y oF - z )
+      e.
+      S } i^i X_ k e. X ( 0 [,) 1 ) ) )
+                          $.
+    ofblichfdisjlem3.uw $e |- ( ph -> u e. ( { y e. ( RR ^m X ) | ( y oF - w )
+      e.
+      S } i^i X_ k e. X ( 0 [,) 1 ) ) )
+                          $.
+    $( Lemma for ~ ofblichfdisj : a point common to two integer-lattice
+       translates of a set that meets every lattice translate at most once
+       forces the two translating lattice points to be equal.  (Contributed by
+       Xander Mackay and Claude, 18-Sep-2026.) $)
+    ofblichfdisjlem3 $p |- ( ph -> z = w ) $=
+      ( cz co wcel cr cv cmap wfn elmapfn syl wa cfv wf cmin cof crab cico cixp
+      cc0 c1 elin1d oveq1 eleq1d elrab sylib simpld elmapi ffvelcdmda recnd wss
+      wceq zssre a1i fssd cmpt ofblichfdisjlem1 ofblichfdisjlem2 eqeltrd oveq1d
+      fveq1 mpteq2dv eqeq1 imbi12d oveq2d elrabrd rspc2dv mpd fveq1d adantr cfn
+      wi eqeq2 feqmptd offval2 resubcld fvmpt2d 3eqtr3d subcand eqfnfvd ) AHICU
+      AZDUAZAWOQIUBRZSZWOIUCMWOQIUDUEAWPWQSZWPIUCNWPQIUDUEAHUAZISZUFZWTEUAZUGZW
+      TWOUGZWTWPUGZXBXDAITWTXCAXCTIUBRZSZITXCUHAXHXCWOUIUJZRZGSZAXCBUAZWOXIRZGS
+      ZBXGUKZSXHXKUFAXOHIUNUOULRUMZXCOUPZXNXKBXCXGXLXCVFZXMXJGXLXCWOXIUQURZUSUT
+      VAZXCTIVBUEZVCZVDXBXEAITWTWOAIQTWOAWRIQWOUHMWOQIVBUEZQTVEAVGVHZVIVCZVDXBX
+      FAITWTWPAIQTWPAWSIQWPUHNWPQIVBUEZYDVIVCZVDXBWTXJUGZWTXCWPXIRZUGZXDXEUIRZX
+      DXFUIRZAYHYJVFXAAWTXJYIAHIYHYJUIRZVJZWQSZXJYIVFZAYNWPWOXIRWQACDEHIKMNXTVK
+      ACDIKMNVLVMAHIWTJUAZUGZWTFUAZUGZUIRZVJZWQSZYQYSVFZWFYOYPWFHIYHYTUIRZVJZWQ
+      SZXJYSVFZWFJFXJYIGGYQXJVFZUUCUUGUUDUUHUUIUUBUUFWQUUIHIUUAUUEUUIYRYHYTUIWT
+      YQXJVOVNVPURYQXJYSVQVRYSYIVFZUUGYOUUHYPUUJUUFYNWQUUJHIUUEYMUUJYTYJYHUIWTY
+      SYIVOVSVPURYSYIXJWGVRLAXNXKBXCXGXSXQVTAXLWPXIRZGSZYIGSBXCXGXRUUKYIGXLXCWP
+      XIUQURAUULBXGUKXPXCPUPVTWAWBWCWDAHIYKXJTAHIXDXEUIXCWOWETTKYBYEAHITXCYAWHZ
+      AHIQWOYCWHWIXBXDXEYBYEWJWKAHIYLYITAHIXDXFUIXCWPWETTKYBYGUUMAHIQWPYFWHWIXB
+      XDXFYBYGWJWKWLWMWN $.
+  $}
+
+  ${
+    $d S k s t u z $.  $d S k t u w z $.  $d S k u w y z $.  $d X j k u $.
+    $d X k s t u z $.  $d X k t u w z $.  $d X k u w y z $.  $d k ph u w z $.
+    ofblichfdisj.x $e |- ( ph -> X e. Fin ) $.
+    ofblichfdisj.d $e |- ( ph -> A. s e. S A. t e. S ( ( k e. X |-> ( ( s ` k
+      ) - ( t ` k ) ) ) e. ( ZZ ^m X ) -> s = t ) )
+                         $.
+    $( If a set meets every integer-lattice translate of itself, restricted to
+       the half-open unit cube, at most in points forcing equal translates,
+       then its integer-lattice translates restricted to that cube are pairwise
+       disjoint.  (Contributed by Xander Mackay and Claude, 18-Sep-2026.) $)
+    ofblichfdisj $p |- ( ph -> Disj_ z e. ( ZZ ^m X ) ( { y e. ( RR ^m X ) |
+      ( y oF - z ) e. S } i^i X_ k e. X ( 0 [,) 1 ) ) )
+                       $=
+      ( vw vj vu weq cv co wcel cin wral wa cmin cof cr cmap crab cc0 cico cixp
+      c1 c0 wceq wo cz wdisj wn simplr cfn ad4antr cfv cmpt wi simprl ad3antrrr
+      simprr eqidd cbvixpv eleqtrdi simpr ofblichfdisjlem3 mtand ralrimiva disj
+      ineq2i sylibr ex orrd ineq12i eqeq1i orbi2i sylib ralrimivva oveq2 eleq1d
+      rabbidv ineq1d disjor ) ACKNZBOZCOZUAUBZPZEQZBUCGUDPZUEZFGUFUIUGPZUHZRZWH
+      KOZWJPZEQZBWMUEZWPRZRZUJUKZULZKUMGUDPZSCXFSCXFWQUNAXECKXFXFAWIXFQZWRXFQZT
+      ZTZWGWNLGWOUHZRZXAXKRZRZUJUKZULXEXJWGXOXJWGUOZXOXJXPTZMOZXMQZUOZMXLSXOXQX
+      TMXLXQXRXLQZTZXSWGXJXPYAUPYBXSTZBCKMDEFGHAGUQQXIXPYAXSIURAFGFOZHOUSYDDOUS
+      UAPUTXFQHDNVADESHESXIXPYAXSJURXJXGXPYAXSAXGXHVBVCXJXHXPYAXSAXGXHVDVCYCXRX
+      LWQXQYAXSUPXKWPWNLFGWOWOLFNWOVEVFZVMZVGYCXRXMXBYBXSVHXKWPXAYEVMZVGVIVJVKM
+      XLXMVLVNVOVPXOXDWGXNXCUJXLWQXMXBYFYGVQVRVSVTWAXFWQXBCKWGWNXAWPWGWLWTBWMWG
+      WKWSEWIWRWHWJWBWCWDWEWFVN $.
+  $}
+
+$(
+===============================================================================
+  Convex, centrally symmetric sets
+===============================================================================
+$)
+
+  ${
+    $d I y $.  $d S y $.  $d V y $.
+    minkcvxlem1.v $e |- ( ph -> V e. { y e. ( RR ^m I ) | ( y oF / ( I X. { ( 1
+      / 2 ) } ) ) e. S } )
+                      $.
+    $( Lemma for ~ minkcvx : a point of the half-set is a point of
+       ` ( RR ^m I ) ` whose double lies in ` S ` .  (Contributed by Xander
+       Mackay and Claude, 18-Sep-2026.) $)
+    minkcvxlem1 $p |- ( ph -> ( V e. ( RR ^m I ) /\ ( V oF / ( I X. { ( 1 / 2 )
+      } ) ) e. S ) )
+                    $=
+      ( cv c1 c2 cdiv co csn cxp cof wcel cr cmap crab wa wceq oveq1 eleq1d
+      elrab sylib ) AEBGZDHIJKLMZJNZKZCOZBPDQKZROEUJOEUFUGKZCOZSFUIULBEUJUEETUH
+      UKCUEEUFUGUAUBUCUD $.
+  $}
+
+  ${
+    minkcvxlem2.v $e |- ( ph -> V e. ( RR ^m I ) ) $.
+    $( Lemma for ~ minkcvx : a coordinate of the doubled point.  (Contributed
+       by Xander Mackay and Claude, 18-Sep-2026.) $)
+    minkcvxlem2 $p |- ( ( ph /\ k e. I ) -> ( ( V oF / ( I X. { ( 1 / 2 ) } ) )
+      ` k ) = ( ( V ` k ) / ( 1 / 2 ) ) )
+                    $=
+      ( cv cfv c1 c2 cdiv co csn cxp cvv cr cmap wcel wfn syl wa elmapfn simprd
+      ovex fnconstg mp1i elmapex inidm eqidd wceq fvconst2 adantl ofval ) ACCBF
+      ZDGZHIJKZJCDCUOLMZNNUMADOCPKQZDCREDOCUASUONQUPCRAHIJUCZCUONUDUEAONQZCNQZA
+      UQUSUTTEDOCUFSUBZVACUGAUMCQZTUNUHVBUMUPGUOUIACUOUMURUJUKUL $.
+  $}
+
+  ${
+    $d I t $.  $d I x $.  $d I y $.  $d S t $.  $d S x $.  $d S y $.  $d X k $.
+    $d X t $.  $d X x $.  $d X y $.  $d Y k $.  $d Y t $.  $d Y y $.  $d k t $.
+    $d k x $.  $d k y $.  $d t x $.  $d t y $.  $d x y $.
+    minkcvxlem3.c $e |- ( ph -> A. x e. S A. y e. S A. t e. ( 0 [,] 1 ) ( k e.
+      I |-> ( ( t x. ( x ` k ) ) + ( ( 1 - t ) x. ( y ` k ) ) ) ) e. S )
+                      $.
+    minkcvxlem3.x $e |- ( ph -> X e. S ) $.
+    minkcvxlem3.y $e |- ( ph -> Y e. S ) $.
+    $( Lemma for ~ minkcvx : the convexity hypothesis at ` t = ( 1 / 2 ) ` ,
+       the midpoint of two points of ` S ` is in ` S ` .  (Contributed by
+       Xander Mackay and Claude, 18-Sep-2026.) $)
+    minkcvxlem3 $p |- ( ph -> ( k e. I |-> ( ( ( 1 / 2 ) x. ( X ` k ) ) + ( ( 1
+      - ( 1 / 2 ) ) x. ( Y ` k ) ) ) ) e. S )
+                    $=
+      ( c1 co wcel cv cfv cmul caddc cmpt c2 cdiv cc0 cicc cmin wral cr cle wbr
+      halfre halfge0 halflt1 ltleii elicc01 mpbir3an wceq fveq1 oveq2d mpteq2dv
+      1re oveq1d eleq1d ralbidv rspc2dv oveq1 oveq2 oveq12d rspcv mpsyl ) MUAUB
+      NZUCMUDNZOZAFGDPZFPZHQZRNZMVMUENZVNIQZRNZSNZTZEOZDVKUFZFGVJVORNZMVJUENZVR
+      RNZSNZTZEOZVLVJUGOUCVJUHUIVJMUHUIUJUKVJMUJUTULUMVJUNUOAFGVMVNBPZQZRNZVQVN
+      CPZQZRNZSNZTZEOZDVKUFWCFGVPWOSNZTZEOZDVKUFBCHIEEWJHUPZWRXADVKXBWQWTEXBFGW
+      PWSXBWLVPWOSXBWKVOVMRVNWJHUQURVAUSVBVCWMIUPZXAWBDVKXCWTWAEXCFGWSVTXCWOVSV
+      PSXCWNVRVQRVNWMIUQURURUSVBVCJKLVDWBWIDVJVKVMVJUPZWAWHEXDFGVTWGXDVPWDVSWFS
+      VMVJVORVEXDVQWEVRRVMVJMUEVFVAVGUSVBVHVI $.
+  $}
+
+  ${
+    $d I j $.  $d I k $.  $d I x $.  $d S x $.  $d X j $.  $d X k $.  $d X x $.
+    $d j k $.  $d k x $.
+    minkcvxlem4.o $e |- ( ph -> A. x e. S ( k e. I |-> -u ( x ` k ) ) e. S ) $.
+    minkcvxlem4.x $e |- ( ph -> X e. S ) $.
+    $( Lemma for ~ minkcvx : the symmetry hypothesis at a point of ` S ` , with
+       the negated point written over a fresh binder ` j ` .  (Contributed by
+       Xander Mackay and Claude, 18-Sep-2026.) $)
+    minkcvxlem4 $p |- ( ph -> ( j e. I |-> -u ( X ` j ) ) e. S ) $=
+      ( cv cfv cneg cmpt wceq fveq2 negeqd cbvmptv wcel fveq1 mpteq2dv rspcdva
+      eleq1d eqeltrrid ) ADFDJZGKZLZMEFEJZGKZLZMZCEDFUIUFUGUDNUHUEUGUDGOPQAEFUG
+      BJZKZLZMZCRUJCRBCGUKGNZUNUJCUOEFUMUIUOULUHUGUKGSPTUBHIUAUC $.
+  $}
+
+  $( Lemma for ~ minkcvx : the coordinate algebra, half the double of ` A `
+     plus half the negated double of ` B ` is ` ( A - B ) ` .  (Contributed by
+     Xander Mackay and Claude, 18-Sep-2026.) $)
+  minkcvxlem5 $p |- ( ( A e. CC /\ B e. CC ) -> ( ( ( 1 / 2 ) x. ( A / ( 1 / 2
+    ) ) ) + ( ( 1 - ( 1 / 2 ) ) x. -u ( B / ( 1 / 2 ) ) ) ) = ( A - B ) )
+                  $=
+    ( cc wcel wa c1 c2 cdiv co cmul cmin cneg caddc simpl halfcn a1i cc0 halfre
+    wne divcan2d halfgt0 gt0ne0ii 1mhlfehlf oveq1d simpr divcld mulneg2d negeqd
+    wceq 3eqtrd oveq12d negsub eqtrd ) ACDZBCDZEZFGHIZAUQHIJIZFUQKIZBUQHIZLZJIZ
+    MIABLZMIABKIUPURAVBVCMUPAUQUNUONUQCDUPOPZUQQSUPUQRUAUBPZTUPVBUQVAJIUQUTJIZL
+    VCUPUSUQVAJUSUQUIUPUCPUDUPUQUTVDUPBUQUNUOUEZVDVEUFUGUPVFBUPBUQVGVDVETUHUJUK
+    ABULUM $.
+
+  ${
+    $d I j $.  $d I k $.  $d I t $.  $d I x $.  $d I y $.  $d S j $.  $d S k $.
+    $d S t $.  $d S x $.  $d S y $.  $d V k $.  $d V t $.  $d V x $.  $d V y $.
+    $d W j $.  $d W k $.  $d W t $.  $d W x $.  $d W y $.  $d j k $.
+    $d j ph $.  $d j t $.  $d j x $.  $d j y $.  $d k ph $.  $d k t $.
+    $d k x $.  $d k y $.  $d ph t $.  $d ph x $.  $d ph y $.  $d t x $.
+    $d t y $.  $d x y $.
+    minkcvx.c $e |- ( ph -> A. x e. S A. y e. S A. t e. ( 0 [,] 1 ) ( k e. I
+      |-> ( ( t x. ( x ` k ) ) + ( ( 1 - t ) x. ( y ` k ) ) ) ) e. S )
+                  $.
+    minkcvx.o $e |- ( ph -> A. x e. S ( k e. I |-> -u ( x ` k ) ) e. S ) $.
+    minkcvx.v $e |- ( ph -> V e. { y e. ( RR ^m I ) | ( y oF / ( I X. { ( 1 / 2
+      ) } ) ) e. S } )
+                  $.
+    minkcvx.w $e |- ( ph -> W e. { y e. ( RR ^m I ) | ( y oF / ( I X. { ( 1 / 2
+      ) } ) ) e. S } )
+                  $.
+    $( The convexity step used in the proof of Minkowski's theorem on lattice
+       points: the difference of two points of the half-set of a convex,
+       centrally symmetric ` S ` lies in ` S ` , as the midpoint of the double
+       of one and the negated double of the other.  (Contributed by Xander
+       Mackay and Claude, 18-Sep-2026.) $)
+    minkcvx $p |- ( ph -> ( k e. I |-> ( ( V ` k ) - ( W ` k ) ) ) e. S )
+                $=
+      ( vj cdiv co cfv cmul wcel cr c1 c2 csn cxp cof cmin cneg cmpt caddc cmap
+      cv minkcvxlem1 simpld minkcvxlem2 oveq2d cvv eqid wceq fveq2 negeqd simpr
+      wa negex a1i fvmptd3 eqtrd oveq12d cc elmapi ffvelcdmda recnd minkcvxlem5
+      wf syl syl2anc mpteq2dva simprd minkcvxlem4 minkcvxlem3 eqeltrrd ) AFGUAU
+      BOPZFUKZHGWAUCUDZOUEZPZQZRPZUAWAUFPZWBNGNUKZIWCWDPZQZUGZUHZQZRPZUIPZUHFGW
+      BHQZWBIQZUFPZUHEAFGWPWSAWBGSZVBZWPWAWQWAOPZRPZWHWRWAOPZUGZRPZUIPZWSXAWGXC
+      WOXFUIXAWFXBWARAFGHAHTGUJPZSZWEESZACEGHLULZUMZUNUOXAWNXEWHRXAWNWBWJQZUGZX
+      EXANWBWLXNGWMUPWMUQWIWBURWKXMWIWBWJUSUTAWTVAXNUPSXAXMVCVDVEXAXMXDAFGIAIXH
+      SZWJESZACEGIMULZUMZUNUTVFUOVGXAWQVHSWRVHSXGWSURXAWQAGTWBHAXIGTHVMXLHTGVIV
+      NVJVKXAWRAGTWBIAXOGTIVMXRITGVIVNVJVKWQWRVLVOVFVPABCDEFGWEWMJAXIXJXKVQABEN
+      FGWJKAXOXPXQVQVRVSVT $.
+  $}
+
+$( (End of Xander Mackay's mathbox.) $)
+$( End $[ set-mbox-xm.mm $] $)
 
 
 $( Begin $[ set-mbox-jm.mm $] $)
