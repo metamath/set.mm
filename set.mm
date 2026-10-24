@@ -581200,6 +581200,16 @@ $)
   $}
 
   $( All sets are finite iff all sets are hereditarily finite.  (Contributed by
+     BTernaryTau, 30-Dec-2025.)  Use ` HF ` .  (Revised by BTernaryTau,
+     24-Oct-2026.) $)
+  fineqvhfbregs $p |- ( Fin = _V <-> HF = _V ) $=
+    ( vx cfn cvv wceq chf cr1 con0 cima cuni com df-hf fineqvomon unieqd eqtrid
+    imaeq2d unir1regs eqtrdi wss cv hffi ssriv sseq1 mpbii vss sylib impbii ) B
+    CDZECDZUGEFGHZIZCUGEFJHZIUJKUGUKUIUGJGFLOMNPQUHCBRZUGUHEBRULAEBASTUAECBUBUC
+    BUDUEUF $.
+  $( $j usage 'fineqvhfbregs' avoids 'ax-reg' 'ax-inf' 'ax-inf2'; $)
+
+  $( All sets are finite iff all sets are hereditarily finite.  (Contributed by
      BTernaryTau, 30-Dec-2025.) $)
   fineqvr1ombregs $p |- ( Fin = _V <-> U. ( R1 " _om ) = _V ) $=
     ( cfn cvv wceq cr1 com cima cuni fineqvomon imaeq2d unieqd unir1regs eqtrdi
