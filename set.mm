@@ -26283,13 +26283,22 @@ $)
        (Contributed by NM, 25-Nov-2013.)  (Revised by Mario Carneiro,
        11-Aug-2016.)  Remove dependency on ~ ax-8 and ~ df-clel (by avoiding
        use of ~ cleqh ).  (Revised by BJ, 23-Jun-2019.)  Definitial form.
-       (Revised by Wolf Lammen, 23-Feb-2025.) $)
+       (Revised by Wolf Lammen, 23-Feb-2025.)  (Proof shortened by SN,
+       22-Oct-2026.) $)
     abbib $p |- ( { x | ph } = { x | ps } <-> A. x ( ph <-> ps ) ) $=
+      ( vy cv cab wcel wb wal wsb wceq df-clab bibi12i sbbi bitr4i albii dfcleq
+      sb8v 3bitr4i ) DEZACFZGZTBCFZGZHZDIABHZCDJZDIUAUCKUFCIUEUGDUEACDJZBCDJZHU
+      GUBUHUDUIADCLBDCLMABCDNOPDUAUCQUFCDRS $.
+    $( $j usage 'abbib' avoids 'ax-8' 'df-clel' ; $)
+
+    $( Obsolete version of ~ abbib as of 22-Oct-2026.  (Contributed by NM,
+       25-Nov-2013.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    abbibOLD $p |- ( { x | ph } = { x | ps } <-> A. x ( ph <-> ps ) ) $=
       ( vy cab wceq cv wcel wal dfcleq nfsab1 nfbi nfv weq wsb df-clab sbequ12r
       wb bitrid bibi12d cbvalv1 bitri ) ACEZBCEZFDGZUCHZUEUDHZRZDIABRZCIDUCUDJU
       HUIDCUFUGCACDKBCDKLUIDMDCNZUFAUGBUFACDOUJAADCPADCQSUGBCDOUJBBDCPBDCQSTUAU
       B $.
-    $( $j usage 'abbib' avoids 'ax-8' 'df-clel' ; $)
   $}
 
   ${
