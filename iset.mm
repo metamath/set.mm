@@ -183832,20 +183832,16 @@ $)
         $( Lemma for ~ mplsubgfi .  There exists a polynomial.  (Contributed by
            Jim Kingdon, 21-Nov-2025.) $)
         mplsubgfilemm $p |- ( ph -> E. j j e. U ) $=
-          ( vk vb vf cfv wcel cv cn0 cfn va vn c0g wex cbs clt wbr wral wceq wi
-          cmap co wrex ccnv cima crab csn cxp eqid psr0 psr0cl eqeltrd cc0 cmpt
-          cn wf wa 0nn0 a1i fmpttd cvv elmapd mpbird fveq1d adantr cgrp grpidcl
-          nn0ex simpr psrbagfi eleqtrrd fvconst2g syl2anc eqtrd ralrimiva fveq1
-          syl a1d breq1d ralbidv rspceaimv wb mplelbascoe mpbir2and spcegv sylc
-          eleq1 ) ADUCPZEQZWSFRZEQZFUDAWSWRDUEPZQZMRZUARZPZXDNRZPZUFUGZMGUHZXGW
-          RPZCUCPZUIZUJNSGUKULZUHUAXNUMZAWRORUNVEUOTQOXNUPZXLUQURZXBAXPCDOGXLTW
-          RHKLXPUSZXLUSZWRUSUTZAXBXPCDOGTXLHKLXRXSXBUSZVAVBAUBGVCVDZXNQZXDYBPZX
-          HUFUGZMGUHZXMUJZNXNUHXOAYCGSYBVFAUBGVCSVCSQAUBRGQVGVHVIVJASGYBVKTSVKQ
-          AVRVIKVLVMAYGNXNAXGXNQZVGZXMYFYIXKXGXQPZXLAXKYJUIYHAXGWRXQXTVNVOYIXLC
-          UEPZQZXGXPQYJXLUIAYLYHACVPQZYLLYKCXLYKUSXSVQWGVOYIXGXNXPAYHVSAXPXNUIZ
-          YHAGTQZYNKXPOGXRVTWGVOWAXPXLXGYKWBWCWDWHWEXJYFXMUANYBXNXNXEYBUIZXIYEM
-          GYPXFYDXHUFXDXEYBWFWIWJWKWCAYOYMWSXCXOVGWLKLXBBCDEMGTVPWRXLUANIHYAXSJ
-          WMWCWNZYQXAWSFWREWTWREWQWOWP $.
+          ( vf c0g cfv wcel cfn eqid c0 syl cv wex cbs cfsupp wbr ccnv cima cn0
+          cn cmap co crab csn psr0 psr0cl eqeltrd cgrp grpidcl wfun psrelbasfun
+          cxp 0fi a1i cdm wss 0ss cdif fconstg wceq psrbagfi xpeq1d eqtrd feq1d
+          wf mpbird fimassd isfsuppfid mplelbas sylanbrc eleq1 spcegv sylc ) AD
+          NOZEPZWDFUAZEPZFUBAWCDUCOZPZWCCNOZUDUEWDAWCMUAUFUIUGQPMUHGUJUKZULZWIU
+          MZVAZWGAWKCDMGWIQWCHKLWKRZWIRZWCRUNZAWGWKCDMGQWIHKLWNWOWGRZUOUPZAWCCU
+          COZWGSWIWRACUQPWIWSPZLWSCWIWSRWOURTZAWHWCUSWRWGCDGWCHWQUTTSQPAVBVCSWC
+          VDZVEAXBVFVCAWJWLWCXBSVGAWJWLWCVNWJWLWJWLVAZVNZAWTXDXAWJWIWSVHTAWJWLW
+          CXCAWCWMXCWPAWKWJWLAGQPWKWJVIKWKMGWNVJTVKVLVMVOVPVQWGBCDEGWCWIIHWQWOJ
+          VRVSZXEWFWDFWCEWEWCEVTWAWB $.
       $}
 
       ${
