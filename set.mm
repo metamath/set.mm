@@ -242837,6 +242837,28 @@ $)
       CDEHGFIJLKULT $.
   $}
 
+  ${
+    $d a b c d F $.  $d a b c d R $.  $d a b c d U $.  $d a b c d V $.
+    $d a b c d ph $.  $d c d B $.
+    imasgim.u $e |- ( ph -> U = ( F "s R ) ) $.
+    imasgim.v $e |- ( ph -> V = ( Base ` R ) ) $.
+    imasgim.f $e |- ( ph -> F : V -1-1-onto-> B ) $.
+    imasgim.r $e |- ( ph -> R e. Grp ) $.
+    $( A relabeling of the elements of a group induces an isomorphism to the
+       relabeled group.  (Contributed by Stefan O'Rear, 8-Jul-2015.)  (Revised
+       by Mario Carneiro, 11-Aug-2015.) $)
+    imasgim $p |- ( ph -> F e. ( R GrpIso U ) ) $=
+      ( va vb vd vc co wcel cfv wf1o eqid cv cghm cbs cgim cplusg cgrp c0g wceq
+      eqidd wfo f1ofo f1ocpbl imasgrp simpld wf wb imasbas f1oeq3 mpbid f1oeq2d
+      syl f1of wa eleq2d anbi12d w3a imasaddval eqcomd 3expib sylbird imp isgim
+      isghmd sylanbrc ) AECDUAOPCUBQZDUBQZERZECDUCOPAKLCUDQZDUDQZCDEVNVOVNSZVOS
+      ZVQSZVRSZJADUEPCUFQZEQDUFQUGABVQCDEFWCMNKLGHAVQUHAFBERZFBEUIIFBEUJUTZAKTZ
+      LTZNTMTVQEFBIUKZJWCSULUMAVPVNVOEUNAFVOERZVPAWDWIIABVOUGWDWIUOABCDEFUEGHWE
+      JUPBVOFEUQUTURAFVNVOEHUSURZVNVOEVAUTAWFVNPZWGVNPZVBZWFWGVQOEQZWFEQWGEQVRO
+      ZUGZAWMWFFPZWGFPZVBWPAWQWKWRWLAFVNWFHVCAFVNWGHVCVDAWQWRWPAWQWRVEWOWNABCVR
+      VQDEFWFWGUEMNKLWEWHGHJWAWBVFVGVHVIVJVLWJVNVOCDEVSVTVKVM $.
+  $}
+
   $( The relation "is isomorphic to" for groups.  (Contributed by Stefan
      O'Rear, 25-Jan-2015.) $)
   brgic $p |- ( R ~=g S <-> ( R GrpIso S ) =/= (/) ) $=
@@ -739868,28 +739890,6 @@ $)
   $}
 
   ${
-    $d a b c d F $.  $d a b c d R $.  $d a b c d U $.  $d a b c d V $.
-    $d a b c d ph $.  $d c d B $.
-    imasgim.u $e |- ( ph -> U = ( F "s R ) ) $.
-    imasgim.v $e |- ( ph -> V = ( Base ` R ) ) $.
-    imasgim.f $e |- ( ph -> F : V -1-1-onto-> B ) $.
-    imasgim.r $e |- ( ph -> R e. Grp ) $.
-    $( A relabeling of the elements of a group induces an isomorphism to the
-       relabeled group. _MOVABLE_ (Contributed by Stefan O'Rear, 8-Jul-2015.)
-       (Revised by Mario Carneiro, 11-Aug-2015.) $)
-    imasgim $p |- ( ph -> F e. ( R GrpIso U ) ) $=
-      ( va vb vd vc co wcel cfv wf1o eqid cv cghm cbs cgim cplusg cgrp c0g wceq
-      eqidd wfo f1ofo f1ocpbl imasgrp simpld wf wb imasbas f1oeq3 mpbid f1oeq2d
-      syl f1of wa eleq2d anbi12d w3a imasaddval eqcomd 3expib sylbird imp isgim
-      isghmd sylanbrc ) AECDUAOPCUBQZDUBQZERZECDUCOPAKLCUDQZDUDQZCDEVNVOVNSZVOS
-      ZVQSZVRSZJADUEPCUFQZEQDUFQUGABVQCDEFWCMNKLGHAVQUHAFBERZFBEUIIFBEUJUTZAKTZ
-      LTZNTMTVQEFBIUKZJWCSULUMAVPVNVOEUNAFVOERZVPAWDWIIABVOUGWDWIUOABCDEFUEGHWE
-      JUPBVOFEUQUTURAFVNVOEHUSURZVNVOEVAUTAWFVNPZWGVNPZVBZWFWGVQOEQZWFEQWGEQVRO
-      ZUGZAWMWFFPZWGFPZVBWPAWQWKWRWLAFVNWFHVCAFVNWGHVCVDAWQWRWPAWQWRVEWOWNABCVR
-      VQDEFWFWGUEMNKLWEWHGHJWAWBVFVGVHVIVJVLWJVNVOCDEVSVTVKVM $.
-  $}
-
-  ${
     $d f B $.  $d f C $.  $d f R $.
     isnumbasgrplem1.b $e |- B = ( Base ` R ) $.
     $( A set which is equipollent to the base set of a definable Abelian group
@@ -770792,7 +770792,7 @@ $)
   $}
 
   $( A pair of ordered pairs is a relation.  (Contributed by Eric Schmidt,
-     6-Oct-2026.) $)
+     24-Oct-2026.) $)
   relpropg $p |- ( ( ( A e. V /\ B e. W ) /\ ( C e. X /\ D e. Y ) ) ->
       Rel { <. A , B >. , <. C , D >. } ) $=
     ( wcel wa cop csn cun wrel cpr relsnopg anim12i relun sylibr df-pr releqi )
@@ -770856,7 +770856,7 @@ $)
     mpoexwd.3 $e |- D e. _V $.
     mpoexwd.4 $e |- ( ( ph /\ ( x e. A /\ y e. B ) ) -> C e. D ) $.
     $( Deduction version of ~ mpoexw .  (Contributed by Eric Schmidt,
-       6-Oct-2026.) $)
+       24-Oct-2026.) $)
     mpoexwd $p |- ( ph -> ( x e. A , y e. B |-> C ) e. _V ) $=
       ( vz cvv wcel wral wceq syl cv wrex wa cmpo cdm crn mpofun cxp ralrimivva
       wfun eqid dmmpoga xpex eqeltrdi cab rnmpo a1i wi eleq1a rexlimdvva abssdv
@@ -770901,35 +770901,42 @@ $)
     UFUDEUCUDJAKLUBUDOUEIPUFIPABMUBUEAGIANABQRUDUESTUA $.
 
   ${
-    $d g h k m F $.  $d g h k m C $.  $d g h k m .+ $.  $d g h k m ph $.
-    $d k m S $.  $d k m R $.  $d k m B $.
-    grpxfr.1 $e |- B = ( Base ` R ) $.
-    grpxfr.2 $e |- .+ = ( +g ` R ) $.
-    grpxfr.3 $e |- .+^ = ( g e. C , h e. C |->
-        ( F ` ( ( `' F ` g ) .+ ( `' F ` h ) ) ) ) $.
-    grpxfr.4 $e |- S = {
-        <. ( Base ` ndx ) , C >. ,
+    imasgimw.u $e |- ( ph -> U = ( F "s R ) ) $.
+    imasgimw.v $e |- ( ph -> V = ( Base ` R ) ) $.
+    imasgimw.f $e |- ( ph -> F : V -1-1-onto-> B ) $.
+    imasgimw.r $e |- ( ph -> R e. Grp ) $.
+    imasgimw.b $e |- B e. _V $.
+    $( A relabeling of the elements of a group induces an isomorphism to the
+       relabeled group.  This theorem is the same as ~ imasgim but with an
+       extra, unused, hypothesis ` B e. _V ` .  We do this in anticipation of a
+       revision to theorems about ` "s ` in which we use a sethood hypothesis
+       to avoid ~ ax-rep .  When this happens, this theorem can be deleted and
+       all usages replaced with usages of ~ imasgim .  (Contributed by Eric
+       Schmidt, 24-Oct-2026.) $)
+    imasgimw $p |- ( ph -> F e. ( R GrpIso U ) ) $=
+      ( imasgim ) ABCDEFGHIJL $.
+  $}
+
+  ${
+    $d G x y $.  $d H x y $.  $d B x y $.
+    grpgimcanon.1 $e |- B = ( Base ` G ) $.
+    grpgimcanon.2 $e |- .+^ = ( +f ` G ) $.
+    grpgimcanon.3 $e |- H = {
+        <. ( Base ` ndx ) , B >. ,
         <. ( +g ` ndx ) , .+^ >. } $.
-    grpxfr.5 $e |- ( ph -> R e. Grp ) $.
-    grpxfr.6 $e |- C e. _V $.
-    grpxfr.7 $e |- ( ph -> F : B -1-1-onto-> C ) $.
-    $( Use the bijection ` F ` to transfer group structure from ` B ` to
-       ` C ` .  (Contributed by Eric Schmidt, 6-Oct-2026.) $)
-    grpxfr $p |- ( ph -> F e. ( R GrpIso S ) ) $=
-      ( wcel cfv wceq vk vm cghm co wf1o cgim cplusg cvv cbs grpbase ax-mp eqid
-      cv w3a ccnv wf f1of syl ffvelcdmda 3adant3 wa fveq2 oveqan12d fveq2d fvex
-      ovmpoa 3imp3i2an cmpo c0 csn cun p0ex unex crn fvrn0 wfo forn 3syl uneq1d
-      f1ofo eleqtrid mpoexwd eqeltrid grpplusg oveqd 3ad2ant1 f1ocnvfv1 3adant2
-      adantr oveq12d syl3an1 3eqtr3rd ghmfghm isgim sylanbrc ) AJFGUCUDRBCJUEZJ
-      FGUFUDRAUAUBDGUGSZJFGBCKCUHRCGUISTPCEGUHNUJUKZLWQULAUAUMZBRZUBUMZBRZUNZWS
-      JSZXAJSZEUDZXDJUOZSZXEXGSZDUDZJSZXDXEWQUDZWSXADUDZJSAWTXBXDCRZXECRXFXKTAW
-      TXNXBABCWSJAWPBCJUPQBCJUQURZUSUTABCXAJXOUSHIXDXECCHUMZXGSZIUMZXGSZDUDZJSZ
-      XKEXPXDTZXRXETZVAXTXJJYBYCXQXHXSXIDXPXDXGVBXRXEXGVBVCVDMXJJVEVFVGAWTXFXLT
-      XBAEWQXDXEAEUHREWQTAEHICCYAVHUHMAHICCYACVIVJZVKZPPCYDPVLVMAYAYERXPCRXRCRV
-      AAYAJVNZYDVKYEJXTVOAYFCYDAWPBCJVPZYFCTQBCJVTZBCJVQVRVSWAWIWBWCCEGUHNWDURW
-      EWFXCXJXMJAWPWTXBXJXMTQWPWTXBUNXHWSXIXADWPWTXHWSTXBBCWSJWGUTWPXBXIXATWTBC
-      XAJWGWHWJWKVDWLAWPYGQYHUROWMQBCFGJKWRWNWO $.
-    $( $j usage 'grpxfr' avoids 'ax-rep'; $)
+    $( The result of "canonicalizing" a group by discarding unneeded structural
+       components and ensuring that the group operation is a binary operation
+       is isomorphic to the original group.  (Contributed by Eric Schmidt,
+       24-Oct-2026.) $)
+    grpgimcanon $p |- ( G e. Grp -> ( _I |` B ) e. ( G GrpIso H ) ) $=
+      ( vx vy wcel cghm co cbs cfv wceq a1i cvv cv wa cplusg cgrp cid cres wf1o
+      cgim idghm fvexi grpbase ax-mp eqidd eqid plusfval adantl cxp wf grpplusf
+      xpex fex2 mp3an23 grpplusg 3syl oveqdr eqtr3d ghmpropd eleqtrd f1oi isgim
+      sylanblrc ) CUAJZUBAUCZCDKLZJAAVJUDVJCDUELJVIVJCCKLVKACEUFVIHIAACCCDACMNO
+      VIEPZVLVLADMNOZVIAQJZVMACMEUGZABDQGUHUIZPVIHRZAJIRZAJSZSZVQVRCTNZLZUJVTVQ
+      VRBLZWBVQVRDTNZLVSWCWBOVIAWABCVQVREWAUKFULUMVIVSHIBWDVIAAUNZABUOZBQJZBWDO
+      ABCEFUPWFWEQJVNWGAAVOVOUQVOWEABQQURUSABDQGUTVAVBVCVDVEAVFAACDVJEVPVGVH $.
+    $( $j usage 'grpgimcanon' avoids 'ax-rep'; $)
   $}
 
 
@@ -772350,7 +772357,7 @@ $)
 
     $( Define the Ackermann bijection from hereditarily finite sets to
        ` _om ` .  This definition is derived from ~ ackbij2 .  (Contributed by
-       Eric Schmidt, 6-Oct-2026.) $)
+       Eric Schmidt, 24-Oct-2026.) $)
     df-ackbij $a |- ackBij =
       U. ( rec (
         ( x e. _V |-> ( y e. ~P dom x |-> (
@@ -772363,7 +772370,7 @@ $)
     $d x y z w u v $.
 
     $( The Ackermann bijection is a bijection.  This is just a restatement of
-       ~ ackbij2 .  (Contributed by Eric Schmidt, 6-Oct-2026.) $)
+       ~ ackbij2 .  (Contributed by Eric Schmidt, 24-Oct-2026.) $)
     ackbij3 $p |- ackBij : HF -1-1-onto-> _om $=
       ( vu vv vz vw vx vy cpw cv csn cxp ciun ccrd cfv cmpt cvv cdm cima fveq2d
       weq cbvmptv com cfn cackbij iuneq1 sneq pweq xpeq12d cbviunv fveq2i eqtri
@@ -772481,28 +772488,24 @@ $)
   $}
 
   ${
-    $d g h F $.  $d g h C $.
-    grphfstruct.1 $e |- .+ = ( g e. C , h e. C |-> ( F ` D ) ) $.
-    grphfstruct.2 $e |- R = {
-        <. ( Base ` ndx ) , C >. ,
-        <. ( +g ` ndx ) , .+ >. } $.
-    grphfstruct.3 $e |- ( ph -> C e. HF ) $.
-    grphfstruct.4 $e |- ( ph -> ran F C_ C ) $.
+    grpcanonhfstruct.1 $e |- B = ( Base ` G ) $.
+    grpcanonhfstruct.2 $e |- .+^ = ( +f ` G ) $.
+    grpcanonhfstruct.3 $e |- H = {
+        <. ( Base ` ndx ) , B >. ,
+        <. ( +g ` ndx ) , .+^ >. } $.
+    grpcanonhfstruct.4 $e |- ( ph -> G e. Grp ) $.
+    grpcanonhfstruct.5 $e |- ( ph -> B e. HF ) $.
     $( A group defined on a hereditarily finite set is an HFStruct.
-       (Contributed by Eric Schmidt, 6-Oct-2026.) $)
-    grphfstruct $p |- ( ph -> R e. HFStruct ) $=
-      ( cnx cfv cop wrel crn chf wcel cvv cbs cplusg cstr wbr wss chfstruct cpr
-      grpstr cdm cxp fvex dmmpo hfxp syl2anc eqeltrid csn cun fvrn0 unss1 sseld
-      c0 wral mpi ralrimivw rnmposs 3syl hfadj sylancl hfsshf wfun wa wb mpofun
-      0hf funrel hfrel mp2b sylanbrc relpropg mpanl1 mpanr1 releqi sylibr rneqi
-      wceq rnpropg mp2an eqtri prssd eqsstrid ishfstruct mp3an2i ) EMUANZMUBNZO
-      ZUCUDAEPZEQZRUEEUFSBDEJUHAWMBOWNDOUGZPZWPABRSZDRSZWSKADUIZRSZDQZRSZXAAXBB
-      BUJZRFGBBCHNZDICHUKULAWTWTXFRSKKBBUMUNUOAXDBVAUPZUQZUEZXIRSZXEAHQZBUEZXGX
-      ISZGBVBZFBVBXJLXMXOFBXMXNGBXMXGXLXHUQZSXNHCURXMXPXIXGXLBXHUSUTVCVDVDFGBBX
-      GXIDIVEVFAWTVARSXKKVNBVAVGVHXDXIVIUNDVJDPXAXCXEVKVLFGBBXGDIVMDVODVPVQVRZW
-      TWNTSZXAWSMUBUKZWMTSZWTXRXAVKWSMUAUKZWMBWNDTRTRVSVTWAUNEWRJWBWCAWQBDUGZRW
-      QWRQZYBEWRJWDXTXRYCYBWEYAXSWMWNBDTTWFWGWHABDRKXQWIWJEWOWKWL $.
-
+       (Contributed by Eric Schmidt, 24-Oct-2026.) $)
+    grpcanonhfstruct $p |- ( ph -> H e. HFStruct ) $=
+      ( cnx cbs cfv cplusg cop wrel chf wcel syl2anc cvv cstr wbr crn chfstruct
+      wss grpstr cpr cxp cgrp wf grpplusf fssxp 3syl hfxp hfsshf fvex wa mpanl1
+      relpropg mpanr1 releqi rneqi wceq rnpropg mp2an eqtri eqsstrid ishfstruct
+      sylibr prssd mp3an2i ) EKLMZKNMZOZUAUBAEPZEUCZQUEEUDRBCEHUFAVLBOVMCOUGZPZ
+      VOABQRZCQRZVRJACBBUHZBUHZUEZWBQRZVTADUIRWABCUJWCIBCDFGUKWABCULUMAWAQRZVSW
+      DAVSVSWEJJBBUNSJWABUNSCWBUOSZVSVMTRZVTVRKNUPZVLTRZVSWGVTUQVRKLUPZVLBVMCTQ
+      TQUSURUTSEVQHVAVIAVPBCUGZQVPVQUCZWKEVQHVBWIWGWLWKVCWJWHVLVMBCTTVDVEVFABCQ
+      JWFVJVGEVNVHVK $.
   $}
 
   ${
@@ -772511,17 +772514,20 @@ $)
     fingrphf.2 $e |- ( ph -> G e. Grp ) $.
     fingrphf.3 $e |- ( ph -> B e. Fin ) $.
     $( Every finite group is isomorphic to a group with hereditarily finite
-       components.  (Contributed by Eric Schmidt, 6-Oct-2026.) $)
+       components.  (Contributed by Eric Schmidt, 24-Oct-2026.) $)
     fingrphf $p |- ( ph -> E. h e. HFStruct G ~=g h ) $=
-      ( vf vx vy ccrd cfv cv cgic wbr chfstruct wcel syl wa eqid cfn wex ensymd
-      wf1o wrex cen ficardid bren sylib cnx cbs cop cplusg ccnv co cmpo cpr chf
-      breq2 com ficardom omhf 3syl adantr crn f1of frnd adantl grphfstruct cgrp
-      wss cgim simpl fvex simpr grpxfr brgici sylan rspcedvdw exlimddv ) ABBKLZ
-      HMZUDZDCMZNOZCPUEHABUAQZWCHUBZGWFBWAUFOWGWFWABBUGUCBWAHUHUIRAWCSZWEDUJUKL
-      WAULUJUMLIJWAWAIMWBUNZLJMWILDUMLZUOZWBLUPZULUQZNOZCWMPWDWMDNUSWHWAWKWLWMI
-      JWBWLTZWMTZAWAURQZWCAWFWAUTQWQGBVAWAVBVCVDWCWBVEWAVKAWCBWAWBBWAWBVFVGVHVI
-      ADVJQZWCWNFWRWCSZWBDWMVLUOQWNWSBWAWJWLDWMIJWBEWJTWOWPWRWCVMBKVNWRWCVOVPDW
-      MWBVQRVRVSVT $.
+      ( vf ccrd cfv cv cgic wbr wcel syl cbs co eqid cgrp cgim wf1o cfn wex cen
+      chfstruct wrex ficardid ensymd bren sylib cnx cimas cop cplusg cplusf cpr
+      wa breq2 cghm eqidd wceq a1i simpr simpl fvex imasgimw ghmgrp2 3syl sylan
+      gimghm chf wfo f1ofo adantl adantr imasbas ficardom omhf grpcanonhfstruct
+      com eqeltrrd cid cres grpgimcanon gimco syl2anc brgici rspcedvdw exlimddv
+      ccom ) ABBIJZHKZUAZDCKZLMZCUEUFHABUBNZWMHUCZGWPBWKUDMWQWPWKBBUGUHBWKHUIUJ
+      OAWMUQZWODUKPJWLDULQZPJZUMUKUNJWSUOJZUMUPZLMZCXBUEWNXBDLURWRWTXAWSXBWTRZX
+      ARZXBRZADSNZWMWSSNZFXGWMUQZWLDWSTQNZWLDWSUSQNXHXIWKDWSWLBXIWSUTBDPJVAZXIE
+      VBXGWMVCXGWMVDBIVEVFZDWSWLVJDWSWLVGVHZVIWRWKWTVKWRWKDWSWLBSWRWSUTXKWREVBW
+      MBWKWLVLABWKWLVMVNAXGWMFVOVPAWKVKNZWMAWPWKVTNXNGBVQWKVRVHVOWAVSAXGWMXCFXI
+      WBWTWCZWLWJZDXBTQNZXCXIXOWSXBTQNZXJXQXIXHXRXMWTXAWSXBXDXEXFWDOXLDWSXBXOWL
+      WEWFDXBXPWGOVIWHWI $.
   $}
 
   $c <HFStruct $.
@@ -772536,13 +772542,13 @@ $)
     $( Define a well ordering on HFStructs.  The exact definition is not
        important.  Any explicit definition of a well ordering would do.  The
        definition we have chosen makes proving ~ hfstructwe easier.
-       (Contributed by Eric Schmidt, 6-Oct-2026.) $)
+       (Contributed by Eric Schmidt, 24-Oct-2026.) $)
     df-lthfstruct $a |- <HFStruct = { <. f , g >. |
         ( ( h e. HFStruct |-> ( ackBij ` ( h o. ( # |` _om ) ) ) ) ` f ) _E
         ( ( h e. HFStruct |-> ( ackBij ` ( h o. ( # |` _om ) ) ) ) ` g ) } $.
 
     $( The relation ` <HFStruct ` is a well ordering of the class of HFStructs.
-       (Contributed by Eric Schmidt, 6-Oct-2026.) $)
+       (Contributed by Eric Schmidt, 24-Oct-2026.) $)
     hfstructwe $p |- <HFStruct We HFStruct $=
       ( vh vf vg chfstruct com cv ccom cackbij cfv wf1 cep wwe clthfstruct wcel
       wral wceq wi chf hfstructhf ax-mp cres cmpt weq wf1o wf ackbij3 ffvelcdmi
@@ -772577,7 +772583,7 @@ $)
        mathematical structures with a finite base set.  (For groups, see
        ~ fingrphf .)  Thus, the technique used here could apply in other cases
        in which we want a particular representative of some class of finite
-       structures.  (Contributed by Eric Schmidt, 6-Oct-2026.) $)
+       structures.  (Contributed by Eric Schmidt, 24-Oct-2026.) $)
     df-finfld $a |- finFld = ( q e. ( ^ " ( Prime X. NN ) ) |->
       inf ( ( HFStruct i^i { k e. Field | ( # ` ( Base ` k ) ) = q } )
       , HFStruct , <HFStruct ) ) $.
