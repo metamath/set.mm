@@ -581155,6 +581155,31 @@ $)
        property that all sets are members of it iff they are finite and all of
        their elements are members of it.  This version of ~ r1omhfb replaces
        ~ setinds2 with ~ setinds2regs and ~ trssfir1om with ~ trssfir1omregs .
+       (Contributed by BTernaryTau, 21-Jan-2026.)  Use ` HF ` .  (Revised by
+       BTernaryTau, 24-Oct-2026.) $)
+    eqhfregs $p |- ( H = HF <->
+        A. x ( x e. H <-> ( x e. Fin /\ A. y e. x y e. H ) ) ) $=
+      ( vz vw chf cv wcel cfn wral wa wb wal elhf4 eleq2w2 wss alimi weq eleq1w
+      wi wceq ralbidv anbi2d bibi12d mpbiri biimp wtr simpr imim2i ralrid dftr5
+      alrimiv sylibr simpl df-ss trssfihfregs syl2anc syl biimpr imbi12d imbi2d
+      ralim anim2d biimtrid adantl cbvraldva2 anbi12d syl9r sylcom setinds2regs
+      ra4v spvv ssrdv eqssd impbii ) CFUAZAGZCHZVQIHZBGZCHZBVQJZKZLZAMZVPWDAVPW
+      DVQFHZVSVTFHZBVQJZKZLBVQNVPVRWFWCWIACFOVPWBWHVSVPWAWGBVQBCFOUBUCUDUEULWEC
+      FWEVRWCTZAMZCFPZWDWJAVRWCUFQWKCUGZCIPZWLWKWBACJWMWKWBACWJVRWBTAWCWBVRVSWB
+      UHUIQUJABCUKUMWKVRVSTZAMWNWJWOAWCVSVRVSWBUNUIQACIUOUMCUPUQURWEWCVRTZAMZFC
+      PWDWPAVRWCUSQWQDFCWQDGZFHZWRCHZTZTWQEGZFHZXBCHZTZTZDEDERZXAXEWQXGWSXCWTXD
+      DEFSDECSUTVAXFEWRJWQXEEWRJZXAWQXEEWRVKXHWSWRIHZXDEWRJZKZWQWTWSXIXCEWRJZKX
+      HXKEWRNXHXLXJXIXCXDEWRVBVCVDWPXKWTTADADRZWCXKVRWTXMVSXIWBXJADISXMWAXDBEVQ
+      WRBERZWAXDLXMBECSVEXMXNUNVFVGADCSUTVLVHVIVJVMURVNVO $.
+    $( $j usage 'eqhfregs' avoids 'ax-reg' 'ax-inf' 'ax-inf2'; $)
+  $}
+
+  ${
+    $d H w x y z $.
+    $( The class of all hereditarily finite sets is the only class with the
+       property that all sets are members of it iff they are finite and all of
+       their elements are members of it.  This version of ~ r1omhfb replaces
+       ~ setinds2 with ~ setinds2regs and ~ trssfir1om with ~ trssfir1omregs .
        (Contributed by BTernaryTau, 21-Jan-2026.) $)
     r1omhfbregs $p |- ( H = U. ( R1 " _om ) <->
         A. x ( x e. H <-> ( x e. Fin /\ A. y e. x y e. H ) ) ) $=
