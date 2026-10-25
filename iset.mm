@@ -72189,6 +72189,15 @@ $)
       ( vw wfun cv cfn wcel cdm wss cdif cima csn w3a wex cfsupp wbr wa cvv wb
       relfsupp brrelex12i isfsuppfi 3syl mpbid simpld ) ABFZEGZHIUIBJZKBUJUILMC
       NKOEPZABCQRZUHUKSZDAULBTICTISULUMUADBCQUBUCEBTTCUDUEUFUG $.
+
+    $( A finitely supported function has a finite subset of its domain such
+       that values outside that subset map to zero.  (Contributed by Jim
+       Kingdon, 24-Oct-2026.) $)
+    fsuppfiss $p |- ( ph -> E. w ( w e. Fin /\ w C_ dom F
+        /\ ( F " ( dom F \ w ) ) C_ { Z } ) ) $=
+      ( wfun cv cfn wcel cdm wss cdif cima csn w3a wex cfsupp wbr wa cvv simprd
+      wb relfsupp brrelex12i isfsuppfi 3syl mpbid ) ACFZBGZHIUICJZKCUJUILMDNKOB
+      PZACDQRZUHUKSZEAULCTIDTISULUMUBECDQUCUDBCTTDUEUFUGUA $.
   $}
 
   ${
