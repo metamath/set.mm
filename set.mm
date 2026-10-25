@@ -616740,6 +616740,14 @@ $)
       UBUCUDUETTUIUOACSUFUG $.
   $}
 
+  $( A restricted class is included in a class if and only if it is included in
+     that class restricted to any class including the first restricting class.
+     (Contributed by BJ, 25-Oct-2026.) $)
+  resssres $p |-
+              ( X C_ Y -> ( ( A |` X ) C_ B <-> ( A |` X ) C_ ( B |` Y ) ) ) $=
+    ( wss cres ssres resabs2 sseq1d imbitrid id resss sstrdi impbid1 ) CDEZACFZ
+    BEZPBDFZEZQPDFZREOSPBDGOTPRACDHIJSPRBSKBDLMN $.
+
   ${
     $d x y A $.  $d x y B $.  $d x y C $.
     $( Membership in a restriction.  (Contributed by Scott Fenton,
