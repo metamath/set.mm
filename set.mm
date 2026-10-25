@@ -58157,6 +58157,14 @@ $)
       TZVNTVOWBKVLDTWOUTADVAVCDVMVDBCAVNVEVFVGVOVLVNDEDVMVHAVNDVIVJVK $.
   $}
 
+  $( A class precomposed with its converse is included in the identity relation
+     if and only if it is the idendity relation restricted to its range.
+     (Contributed by BJ, 25-Oct-2026.) $)
+  cocnvideq $p |-
+                 ( ( A o. `' A ) C_ _I <-> ( A o. `' A ) = ( _I |` ran A ) ) $=
+    ( ccnv ccom cid wss cdm cres wceq crn iss dmcocnv reseq2i eqeq2i bitri ) AA
+    BCZDEODOFZGZHODAIZGZHOJQSOPRDAKLMN $.
+
   ${
     $d x y A $.  $d x y B $.  $d y C $.
     $( Restriction of a class abstraction of ordered pairs.  (Contributed by
@@ -65561,9 +65569,16 @@ $)
   f1cnv $p |- ( F : A -1-1-> B -> `' F : ran F -1-1-onto-> A ) $=
     ( wf1 crn wf1o ccnv f1f1orn f1ocnv syl ) ABCDACEZCFKACGFABCHAKCIJ $.
 
-  $( Composition with the converse.  (Contributed by Jeff Madsen,
-     2-Sep-2009.) $)
+  $( Composition with the converse.  (Contributed by Jeff Madsen, 2-Sep-2009.)
+     (Proof shortened by BJ, 25-Oct-2026.) $)
   funcocnv2 $p |- ( Fun F -> ( F o. `' F ) = ( _I |` ran F ) ) $=
+    ( wfun wrel ccnv ccom cid wss cres wceq df-fun cocnvideq biimpi simplbiim
+    crn ) ABACAADEZFGZOFANHIZAJPQAKLM $.
+
+  $( Obsolete version of ~ funcocnv2 as of 25-Oct-2026.  (Contributed by Jeff
+     Madsen, 2-Sep-2009.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
+  funcocnv2OLD $p |- ( Fun F -> ( F o. `' F ) = ( _I |` ran F ) ) $=
     ( wfun ccnv ccom cid wss crn cres wceq wrel simprbi cdm iss dmcocnv reseq2i
     df-fun eqeq2i bitri sylib ) ABZAACDZEFZUAEAGZHZIZTAJUBAPKUBUAEUALZHZIUEUAMU
     GUDUAUFUCEANOQRS $.
