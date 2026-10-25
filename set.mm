@@ -56578,6 +56578,17 @@ $)
   $}
 
   ${
+    brcoi.1 $e |- X e. _V $.
+    brcoi.2 $e |- Y e. _V $.
+    brcoi.3 $e |- Z e. _V $.
+    $( Ordered pair membership in a composition.  (Contributed by BJ,
+       26-Oct-2026.) $)
+    brcoi $p |- ( ( X R Y /\ Y S Z ) -> X ( S o. R ) Z ) $=
+      ( cvv wcel w3a wbr wa ccom 3pm3.2i brcogw mpan ) CIJZEIJZDIJZKCDALDEBLMCE
+      BANLRSTFHGOCEBAIIDIPQ $.
+  $}
+
+  ${
     $d x y A $.  $d x y B $.  $d ph x $.  $d ph y $.
     eqbrrdva.1 $e |- ( ph -> A C_ ( C X. D ) ) $.
     eqbrrdva.2 $e |- ( ph -> B C_ ( C X. D ) ) $.
