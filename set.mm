@@ -57648,11 +57648,34 @@ $)
       $.
   $}
 
+  $( The domain of a class precomposed with its converse is equal to its range.
+     (Contributed by BJ, 25-Oct-2026.) $)
+  dmcocnv $p |- dom ( A o. `' A ) = ran A $=
+    ( ccnv ccom cdm crn wceq dfdm4 dmcoeq ax-mp df-rn eqtr4i ) AABZCDZLDZAEADLE
+    FMNFAGALHIAJK $.
+
+  $( The domain of a class postcomposed with its converse is equal to its
+     domain.  (Contributed by BJ, 25-Oct-2026.) $)
+  dmcnvco $p |- dom ( `' A o. A ) = dom A $=
+    ( ccnv cdm crn wceq ccom df-rn eqcomi dmcoeq ax-mp ) ABZCZADZEKAFCACEMLAGHK
+    AIJ $.
+
   $( Range of a composition.  (Contributed by NM, 19-Mar-1998.) $)
   rncoeq $p |- ( dom A = ran B -> ran ( A o. B ) = ran A ) $=
     ( ccnv cdm crn wceq ccom dmcoeq eqcom df-rn dfdm4 eqeq12i bitri cnvco dmeqi
     eqtri 3imtr4i ) BCZDZACZEZFZRTGZDZTDZFADZBEZFZABGZEZAEZFRTHUHUGUFFUBUFUGIUG
     SUFUABJAKLMUJUDUKUEUJUICZDUDUIJULUCABNOPAJLQ $.
+
+  $( The range of a class precomposed with its converse is equal to its range.
+     (Contributed by BJ, 25-Oct-2026.) $)
+  rncocnv $p |- ran ( A o. `' A ) = ran A $=
+    ( cdm ccnv crn wceq ccom dfdm4 rncoeq ax-mp ) ABACZDEAJFDADEAGAJHI $.
+
+  $( The range of a class postcomposed with its converse is equal to its
+     domain.  (Contributed by BJ, 25-Oct-2026.) $)
+  rncnvco $p |- ran ( `' A o. A ) = dom A $=
+    ( ccnv ccom crn cdm wceq df-rn eqcomi rncoeq ax-mp dfdm4 eqtr4i ) ABZACDZMD
+    ZAEMEZADZFNOFQPAGHMAIJAKL $.
 
   $( Equality theorem for restrictions.  (Contributed by NM, 7-Aug-1994.) $)
   reseq1 $p |- ( A = B -> ( A |` C ) = ( B |` C ) ) $=
@@ -60452,10 +60475,9 @@ $)
   $( Alternate definition of domain ~ df-dm that doesn't require dummy
      variables.  (Contributed by NM, 2-Aug-2010.) $)
   dfdm2 $p |- dom A = U. U. ( `' A o. A ) $=
-    ( ccnv ccom cuni cdm crn cun cnvco cocnvcnv2 eqtri unieqi eqtr3i wceq df-rn
-    unidmrn eqcomi dmcoeq ax-mp rncoeq dfdm4 eqtr4i uneq12i unidm 3eqtrri ) ABZ
-    ACZDZDZUFEZUFFZGZAEZULGULUFBZDZDUHUKUNUGUMUFUMUEUEBCUFUEAHUEAIJKKUFOLUIULUJ
-    ULUEEZAFZMZUIULMUPUOANPZUEAQRUJUEFZULUQUJUSMURUEASRATUAUBULUCUD $.
+    ( ccnv ccom cdm crn cun cnvco cocnvcnv2 eqtri unieqi unidmrn eqtr3i dmcnvco
+    cuni rncnvco uneq12i unidm 3eqtrri ) ABZACZNZNZTDZTEZFZADZUFFUFTBZNZNUBUEUH
+    UAUGTUGSSBCTSAGSAHIJJTKLUCUFUDUFAMAOPUFQR $.
 
   $( The double class union of a nonempty Cartesian product is the union of it
      members.  (Contributed by NM, 17-Sep-2006.) $)
@@ -65542,9 +65564,9 @@ $)
   $( Composition with the converse.  (Contributed by Jeff Madsen,
      2-Sep-2009.) $)
   funcocnv2 $p |- ( Fun F -> ( F o. `' F ) = ( _I |` ran F ) ) $=
-    ( wfun ccnv ccom cid wss crn cres wceq wrel df-fun simprbi cdm dfdm4 dmcoeq
-    iss ax-mp df-rn eqtr4i reseq2i eqeq2i bitri sylib ) ABZAACZDZEFZUFEAGZHZIZU
-    DAJUGAKLUGUFEUFMZHZIUJUFPULUIUFUKUHEUKUEMZUHAMUEGIUKUMIANAUEOQARSTUAUBUC $.
+    ( wfun ccnv ccom cid wss crn cres wceq wrel simprbi cdm iss dmcocnv reseq2i
+    df-fun eqeq2i bitri sylib ) ABZAACDZEFZUAEAGZHZIZTAJUBAPKUBUAEUALZHZIUEUAMU
+    GUDUAUFUCEANOQRS $.
 
   $( The composition of an onto function and its converse.  (Contributed by
      Stefan O'Rear, 12-Feb-2015.) $)
