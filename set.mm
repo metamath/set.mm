@@ -56582,7 +56582,7 @@ $)
     brcoi.2 $e |- Y e. _V $.
     brcoi.3 $e |- Z e. _V $.
     $( Ordered pair membership in a composition.  (Contributed by BJ,
-       26-Oct-2026.) $)
+       25-Oct-2026.) $)
     brcoi $p |- ( ( X R Y /\ Y S Z ) -> X ( S o. R ) Z ) $=
       ( cvv wcel w3a wbr wa ccom 3pm3.2i brcogw mpan ) CIJZEIJZDIJZKCDALDEBLMCE
       BANLRSTFHGOCEBAIIDIPQ $.
@@ -57650,13 +57650,13 @@ $)
 
   $( The domain of a class precomposed with its converse is equal to its range.
      (Contributed by BJ, 25-Oct-2026.) $)
-  dmcocnv $p |- dom ( A o. `' A ) = ran A $=
+  dmcocnv2 $p |- dom ( A o. `' A ) = ran A $=
     ( ccnv ccom cdm crn wceq dfdm4 dmcoeq ax-mp df-rn eqtr4i ) AABZCDZLDZAEADLE
     FMNFAGALHIAJK $.
 
   $( The domain of a class postcomposed with its converse is equal to its
      domain.  (Contributed by BJ, 25-Oct-2026.) $)
-  dmcnvco $p |- dom ( `' A o. A ) = dom A $=
+  dmcocnv1 $p |- dom ( `' A o. A ) = dom A $=
     ( ccnv cdm crn wceq ccom df-rn eqcomi dmcoeq ax-mp ) ABZCZADZEKAFCACEMLAGHK
     AIJ $.
 
@@ -57668,12 +57668,12 @@ $)
 
   $( The range of a class precomposed with its converse is equal to its range.
      (Contributed by BJ, 25-Oct-2026.) $)
-  rncocnv $p |- ran ( A o. `' A ) = ran A $=
+  rncocnv2 $p |- ran ( A o. `' A ) = ran A $=
     ( cdm ccnv crn wceq ccom dfdm4 rncoeq ax-mp ) ABACZDEAJFDADEAGAJHI $.
 
   $( The range of a class postcomposed with its converse is equal to its
      domain.  (Contributed by BJ, 25-Oct-2026.) $)
-  rncnvco $p |- ran ( `' A o. A ) = dom A $=
+  rncocnv1 $p |- ran ( `' A o. A ) = dom A $=
     ( ccnv ccom crn cdm wceq df-rn eqcomi rncoeq ax-mp dfdm4 eqtr4i ) ABZACDZMD
     ZAEMEZADZFNOFQPAGHMAIJAKL $.
 
@@ -58158,12 +58158,12 @@ $)
   $}
 
   $( A class precomposed with its converse is included in the identity relation
-     if and only if it is the idendity relation restricted to its range.
+     if and only if it is the identity relation restricted to its range.
      (Contributed by BJ, 25-Oct-2026.) $)
   cocnvideq $p |-
                  ( ( A o. `' A ) C_ _I <-> ( A o. `' A ) = ( _I |` ran A ) ) $=
-    ( ccnv ccom cid wss cdm cres wceq crn iss dmcocnv reseq2i eqeq2i bitri ) AA
-    BCZDEODOFZGZHODAIZGZHOJQSOPRDAKLMN $.
+    ( ccnv ccom cid wss cdm cres wceq crn iss dmcocnv2 reseq2i eqeq2i bitri ) A
+    ABCZDEODOFZGZHODAIZGZHOJQSOPRDAKLMN $.
 
   ${
     $d x y A $.  $d x y B $.  $d y C $.
@@ -60337,8 +60337,22 @@ $)
     $( Associative law for class composition.  Theorem 27 of [Suppes] p. 64.
        Also Exercise 21 of [Enderton] p. 53.  Interestingly, this law holds for
        any classes whatsoever, not just functions or even relations.
-       (Contributed by NM, 27-Jan-1997.) $)
+       (Contributed by NM, 27-Jan-1997.)  Remove dependency on ~ ax-11 .
+       (Revised by BJ, 25-Oct-2026.) $)
     coass $p |- ( ( A o. B ) o. C ) = ( A o. ( B o. C ) ) $=
+      ( vx vy vz vw ccom relco cv wbr wa wex vex brco brcoi imp exlimiv sylbi
+      ex sylan anasss exlimdv biimtrid wi sylan2 anassrs impbii eqbrriv ) DEABH
+      ZCHZABCHZHZUJCIAULIDJZEJZUKKZUNUOUMKZUPUNFJZCKZURUOUJKZLZFMUQFUNUOUJCDNZE
+      NZOVAUQFUSUTUQUTURGJZBKZVDUOAKZLZGMUSUQGURUOABFNZVCOUSVGUQGUSVGUQUSVEVFUQ
+      USVELZUNVDULKZVFUQCBUNURVDVBVHGNZPULAUNVDUOVBVKVCPUAUBTUCUDQRSUQVJVFLZGMU
+      PGUNUOAULVBVCOVLUPGVJVFUPVJVIFMVFUPUEZFUNVDBCVBVKOVIVMFVIVFUPUSVEVFUPVGUS
+      UTUPBAURVDUOVHVKVCPCUJUNURUOVBVHVCPUFUGTRSQRSUHUI $.
+    $( $j usage 'coass' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+
+    $( Obsolete version of ~ coass as of 25-Oct-2026.  (Contributed by NM,
+       27-Jan-1997.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    coassOLD $p |- ( ( A o. B ) o. C ) = ( A o. ( B o. C ) ) $=
       ( vx vy vz vw ccom relco cv wbr wa wex cop wcel brco exbii opelco 3bitr4i
       vex excom anass 2exbii bitr4i anbi2i exdistr anbi1i 19.41v eqrelriiv ) DE
       ABHZCHZABCHZHZUJCIAULIDJZFJZCKZUOGJZBKZUQEJZAKZLZLZGMFMZUPURLZUTLZFMZGMZU
@@ -60483,9 +60497,9 @@ $)
   $( Alternate definition of domain ~ df-dm that doesn't require dummy
      variables.  (Contributed by NM, 2-Aug-2010.) $)
   dfdm2 $p |- dom A = U. U. ( `' A o. A ) $=
-    ( ccnv ccom cdm crn cun cnvco cocnvcnv2 eqtri unieqi unidmrn eqtr3i dmcnvco
-    cuni rncnvco uneq12i unidm 3eqtrri ) ABZACZNZNZTDZTEZFZADZUFFUFTBZNZNUBUEUH
-    UAUGTUGSSBCTSAGSAHIJJTKLUCUFUDUFAMAOPUFQR $.
+    ( ccnv ccom cuni cdm crn cun cnvco cocnvcnv2 unieqi unidmrn eqtr3i dmcocnv1
+    eqtri rncocnv1 uneq12i unidm 3eqtrri ) ABZACZDZDZTEZTFZGZAEZUFGUFTBZDZDUBUE
+    UHUAUGTUGSSBCTSAHSAINJJTKLUCUFUDUFAMAOPUFQR $.
 
   $( The double class union of a nonempty Cartesian product is the union of it
      members.  (Contributed by NM, 17-Sep-2006.) $)
@@ -65572,16 +65586,16 @@ $)
   $( Composition with the converse.  (Contributed by Jeff Madsen, 2-Sep-2009.)
      (Proof shortened by BJ, 25-Oct-2026.) $)
   funcocnv2 $p |- ( Fun F -> ( F o. `' F ) = ( _I |` ran F ) ) $=
-    ( wfun wrel ccnv ccom cid wss cres wceq df-fun cocnvideq biimpi simplbiim
-    crn ) ABACAADEZFGZOFANHIZAJPQAKLM $.
+    ( wfun ccnv ccom cid wss crn cres wceq wrel df-fun simprbi cocnvideq sylib
+    ) ABZAACDZEFZPEAGHIOAJQAKLAMN $.
 
   $( Obsolete version of ~ funcocnv2 as of 25-Oct-2026.  (Contributed by Jeff
      Madsen, 2-Sep-2009.)  (Proof modification is discouraged.)
      (New usage is discouraged.) $)
   funcocnv2OLD $p |- ( Fun F -> ( F o. `' F ) = ( _I |` ran F ) ) $=
-    ( wfun ccnv ccom cid wss crn cres wceq wrel simprbi cdm iss dmcocnv reseq2i
-    df-fun eqeq2i bitri sylib ) ABZAACDZEFZUAEAGZHZIZTAJUBAPKUBUAEUALZHZIUEUAMU
-    GUDUAUFUCEANOQRS $.
+    ( wfun ccnv ccom cid wss crn cres wceq wrel df-fun simprbi cdm iss dmcocnv2
+    reseq2i eqeq2i bitri sylib ) ABZAACDZEFZUAEAGZHZIZTAJUBAKLUBUAEUAMZHZIUEUAN
+    UGUDUAUFUCEAOPQRS $.
 
   $( The composition of an onto function and its converse.  (Contributed by
      Stefan O'Rear, 12-Feb-2015.) $)
