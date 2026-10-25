@@ -26250,9 +26250,9 @@ $)
     $( Equal class abstractions require equivalent formulas, and conversely.
        (Contributed by NM, 25-Nov-2013.)  (Revised by Mario Carneiro,
        11-Aug-2016.)  Remove dependency on ~ ax-8 and ~ df-clel (by avoiding
-       use of ~ cleqh ).  (Revised by BJ, 23-Jun-2019.)  Definitial form.
-       (Revised by Wolf Lammen, 23-Feb-2025.)  (Proof shortened by SN,
-       22-Oct-2026.) $)
+       use of ~ cleqh ).  (Revised by BJ, 23-Jun-2019.)  Reverse the
+       biconditional.  (Revised by Wolf Lammen, 23-Feb-2025.)  (Proof shortened
+       by SN, 22-Oct-2026.) $)
     abbib $p |- ( { x | ph } = { x | ps } <-> A. x ( ph <-> ps ) ) $=
       ( vy cv cab wcel wb wal wsb wceq df-clab bibi12i sbbi bitr4i albii dfcleq
       sb8v 3bitr4i ) DEZACFZGZTBCFZGZHZDIABHZCDJZDIUAUCKUFCIUEUGDUEACDJZBCDJZHU
