@@ -58157,14 +58157,6 @@ $)
       TZVNTVOWBKVLDTWOUTADVAVCDVMVDBCAVNVEVFVGVOVLVNDEDVMVHAVNDVIVJVK $.
   $}
 
-  $( A class precomposed with its converse is included in the identity relation
-     if and only if it is the identity relation restricted to its range.
-     (Contributed by BJ, 25-Oct-2026.) $)
-  cocnvideq $p |-
-                 ( ( A o. `' A ) C_ _I <-> ( A o. `' A ) = ( _I |` ran A ) ) $=
-    ( ccnv ccom cid wss cdm cres wceq crn iss dmcocnv2 reseq2i eqeq2i bitri ) A
-    ABCZDEODOFZGZHODAIZGZHOJQSOPRDAKLMN $.
-
   ${
     $d x y A $.  $d x y B $.  $d y C $.
     $( Restriction of a class abstraction of ordered pairs.  (Contributed by
@@ -60291,6 +60283,26 @@ $)
     crn relco dfrel2 mpbi eqtri 3eqtr4g cnveqd 3eqtr3g ) ADZCEZABFZCGZFZHZFZFZA
     BHZFZFZUJUMUFUKUNUFUHAFZHZUGUPHZUKUNUFUPQZCEUQURIUEUSCAJKUGUPCLMUKUIFUPHUQA
     UINUHUPOUAABNUBUCUJPULUJIAUIRUJSTUMPUOUMIABRUMSTUD $.
+
+
+  ${
+    $d x y z A $.
+    $( A class postcomposed with its converse includes the identity relation
+       restricted to its domain.  (Contributed by BJ, 25-Oct-2026.) $)
+    idresdmsscocnv1 $p |- ( _I |` dom A ) C_ ( `' A o. A ) $=
+      ( vx vy vz cid cdm cres ccnv ccom relres cv wbr cop wcel vex brresi sylbi
+      wa wex df-br eldm brcnv brcoi sylan2br anidms exlimiv weq wb ideq biimpac
+      breq2 sylan 3imtr3i relssi ) BCEAFZGZAHZAIZEUOJBKZCKZUPLZUSUTURLZUSUTMZUP
+      NVCURNVAUSUONZUSUTELZRVBUOUSUTECOZPVDUSUSURLZVEVBVDUSDKZALZDSVGDUSABOZUAV
+      IVGDVIVGVIVIVHUSUQLVGVHUSADOZVJUBAUQUSVHUSVJVKVJUCUDUEUFQVEVGVBVEBCUGVGVB
+      UHUSUTVFUIUSUTUSURUKQUJULQUSUTUPTUSUTURTUMUN $.
+  $}
+
+  $( A class precomposed with its converse includes the identity relation
+     restricted to its range.  (Contributed by BJ, 25-Oct-2026.) $)
+  idresrnsscocnv2 $p |- ( _I |` ran A ) C_ ( A o. `' A ) $=
+    ( cid ccnv cdm cres ccom crn idresdmsscocnv1 df-rn eqcomi reseq2i cocnvcnv1
+    3sstr3i ) BACZDZENCNFBAGZEANFNHOPBPOAIJKANLM $.
 
   ${
     $d x y z A $.
@@ -65578,24 +65590,24 @@ $)
     ABEFZGACDEHZIZACTJZGZACTFRBCDIZBCDJZGABEIZABEJZGUCSBCDKABEKUDUFUEUGUCUDUFGU
     AUEUGGUBABCDELABCDEMNOPACTKQ $.
 
-  $( The converse of an injective function is bijective.  (Contributed by FL,
-     11-Nov-2011.) $)
+  $( The converse of an injective function is a bijection on its range.
+     (Contributed by FL, 11-Nov-2011.) $)
   f1cnv $p |- ( F : A -1-1-> B -> `' F : ran F -1-1-onto-> A ) $=
     ( wf1 crn wf1o ccnv f1f1orn f1ocnv syl ) ABCDACEZCFKACGFABCHAKCIJ $.
 
-  $( Composition with the converse.  (Contributed by Jeff Madsen, 2-Sep-2009.)
-     (Proof shortened by BJ, 25-Oct-2026.) $)
+  $( Precomposition with the converse.  (Contributed by Jeff Madsen,
+     2-Sep-2009.)  (Proof shortened by BJ, 25-Oct-2026.) $)
   funcocnv2 $p |- ( Fun F -> ( F o. `' F ) = ( _I |` ran F ) ) $=
-    ( wfun ccnv ccom cid wss crn cres wceq wrel df-fun simprbi cocnvideq sylib
-    ) ABZAACDZEFZPEAGHIOAJQAKLAMN $.
+    ( wfun ccnv ccom cid cdm cres crn wss wceq wrel df-fun simprbi iss dmcocnv2
+    sylib reseq2i eqtrdi ) ABZAACDZETFZGZEAHZGSTEIZTUBJSAKUDALMTNPUAUCEAOQR $.
 
   $( Obsolete version of ~ funcocnv2 as of 25-Oct-2026.  (Contributed by Jeff
      Madsen, 2-Sep-2009.)  (Proof modification is discouraged.)
      (New usage is discouraged.) $)
   funcocnv2OLD $p |- ( Fun F -> ( F o. `' F ) = ( _I |` ran F ) ) $=
-    ( wfun ccnv ccom cid wss crn cres wceq wrel df-fun simprbi cdm iss dmcocnv2
-    reseq2i eqeq2i bitri sylib ) ABZAACDZEFZUAEAGZHZIZTAJUBAKLUBUAEUAMZHZIUEUAN
-    UGUDUAUFUCEAOPQRS $.
+    ( wfun ccnv ccom cid wss crn cres wceq wrel df-fun simprbi cdm dfdm4 dmcoeq
+    iss ax-mp df-rn eqtr4i reseq2i eqeq2i bitri sylib ) ABZAACZDZEFZUFEAGZHZIZU
+    DAJUGAKLUGUFEUFMZHZIUJUFPULUIUFUKUHEUKUEMZUHAMUEGIUKUMIANAUEOQARSTUAUBUC $.
 
   $( The composition of an onto function and its converse.  (Contributed by
      Stefan O'Rear, 12-Feb-2015.) $)
