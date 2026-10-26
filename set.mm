@@ -579606,6 +579606,19 @@ $)
       TUDUE $.
   $}
 
+  ${
+    $d ph y $.  $d ps x $.  $d x y $.
+    eu8.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Uniqueness using implicit substitution.  (Contributed by BTernaryTau,
+       25-Oct-2026.) $)
+    eu8 $p |- ( E! x ph <-> E. x ( ph /\ A. y ( ps -> x = y ) ) ) $=
+      ( weu weq wb wal wex wi wa cbveuvw eu6 dfbi2 equcom imbi2i bicomd equcoms
+      albii equsalvw bicomi anbi12i ancom 19.26 3bitr4ri bitri exbii 3bitri ) A
+      CFBDFBDCGZHZDIZCJABCDGZKZDIZLZCJABCDEMBDCNULUPCULBUJKZUJBKZLZDIZUPUKUSDBU
+      JOTUOALUQDIZURDIZLUPUTUOVAAVBUNUQDUMUJBCDPQTVBABADCBAHCDUMABERSUAUBUCAUOU
+      DUQURDUEUFUGUHUI $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
