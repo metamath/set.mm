@@ -892948,8 +892948,9 @@ $)
        multiplicativity on rationals, value minus one on primes, and value one
        at minus one.  The first conditions determine the values on positive
        integers; the last fixes the sign on negative inputs.  The
-       counterexample ~ lioununiq shows why the last condition is needed.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
+       counterexample ~ lioununiq shows why the last condition is needed.  For
+       an alternate version using the evaluation formula on ` dom Omega ` , see
+       ~ liouuniq2 .  (Contributed by Zhi Wang, 27-Oct-2026.) $)
     liouuniq $p |- ( F = lam <->
       ( ( F : QQ --> CC /\
           A. a e. QQ A. b e. QQ
@@ -893563,6 +893564,37 @@ $)
       KLMNOEHPDFKBQRFHSSITAKDKEKLMNOEHPDFKBQRFHSSIAKFKBQRFHSIBHIAKDKEKLMNOEHPDF
       KBQRFHSSIVGDKEKLMNOEHPDAKFKBQRFHSXKWHFAKBWJXAFKBQRFBAKUENHXKWHBAKUENWGWHX
       NXIWA $.
+  $}
+
+  ${
+    $d F x $.  $d F a b $.  $d p F $.  $d p a $.  $d p b $.  $d p x $.
+    $( Characterize Liouville's function by complex-valued complete
+       multiplicativity on rationals and its evaluation formula on
+       ` dom Omega ` (see ~ bomdm and ~ liouval ).  Alternate version of
+       ~ liouuniq .  The evaluation formula supplies both normalization
+       conditions in ~ liouuniq ; complete multiplicativity then determines the
+       value at zero.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    liouuniq2 $p |- ( F = lam <->
+      ( F : QQ --> CC /\
+        A. x e. dom Omega ( F ` x ) = ( -u 1 ^ ( Omega ` x ) ) /\
+        A. a e. QQ A. b e. QQ
+          ( F ` ( a x. b ) ) = ( ( F ` a ) x. ( F ` b ) ) ) ) $=
+      ( vp cliou wceq cq cv cfv c1 cbom cexp co wral wa cprime wcel syl fveq2
+      cc wf cneg cdm cmul w3a liouuniq biimpi simpld fveq1 adantr cc0 csn bomdm
+      cdif eleq2i liouval sylbi adantl eqtrd ex ralrimiv simprd simp1 simp3 jca
+      3jca wi simp2 cn prmnn nnqnz sylibr oveq2d eqeq12d rspcv com12 imp eqtr3d
+      liouprm wne cz neg1z zq ax-mp neg1ne0 pm3.2i mpbir liouneg1 eqtr3i eqtrdi
+      eldifsn biimpri impbii ) BFGZHUABUBZAIZBJZKUCZWQLJZMNZGZALUDZOZCIZDIZUENB
+      JXEBJXFBJUENGDHOCHOZUFZWOWPXDXGWOWPXGWOWPXGPZEIZBJZWSGZEQOZWSBJZKGZPZWOXI
+      XPPZBECDUGZUHUIZUIWOXBAXCWOWQXCRZXBWOXTPWRWQFJZXAWOWRYAGXTWQBFUJUKXTYAXAG
+      ZWOXTWQHULUMUOZRYBXCYCWQUNUPWQUQURUSUTVAVBWOWPXGXSVCVGXHXQWOXHXIXPXHWPXGW
+      PXDXGVDWPXDXGVEVFXHXMXOXHXLEQXHXJQRZXLXHYDPXKWSXJLJZMNZWSXHYDXKYFGZXHXDYD
+      YGVHWPXDXGVIZYDXDYGYDXJXCRZXDYGVHYDXJYCRZYIYDXJVJRYJXJVKXJVLSZXCYCXJUNUPV
+      MXBYGAXJXCWQXJGZWRXKXAYFWQXJBTYLWTYEWSMWQXJLTVNVOVPSVQSVRYDYFWSGXHYDXJFJZ
+      YFWSYDYJYMYFGYKXJUQSXJVTVSUSUTVAVBXHXNWSWSLJZMNZKXHXDXNYOGZYHWSXCRZXDYPVH
+      YQWSYCRZYRWSHRZWSULWAZPYSYTWSWBRYSWCWSWDWEWFWGWSHULWLWHZXCYCWSUNUPWHXBYPA
+      WSXCWQWSGZWRXNXAYOWQWSBTUUBWTYNWSMWQWSLTVNVOVPWESWSFJZYOKYRUUCYOGUUAWSUQW
+      EWIWJWKVFVFWOXQXRWMSWN $.
   $}
 
 $( (End of Zhi Wang's mathbox.) $)
