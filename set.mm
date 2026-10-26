@@ -580802,6 +580802,22 @@ $)
       YHYCBJYPYDTBYQJYPYEYFYMYQJYGYIYJ $.
   $}
 
+  ${
+    $d u v w x y z $.
+    $( Derive a shortened version of Maes' AC (see ~ ackmb ) .  Uses only
+       Tarski's FOL axiom schemes and ~ ax-ac2 .  (Contributed by BTernaryTau,
+       26-Oct-2026.) $)
+    axac2b $p |- E. y A. z E. v A. u ( ( y e. x /\ ( z e. y ->
+        ( ( v e. x /\ -. y = v ) /\ z e. v ) ) ) \/
+        ( -. y e. x /\ ( z e. x -> ( ( u e. z /\ u e. y ) <-> u = v ) ) ) ) $=
+      ( wel weq wn wa wi wo wal wex wb ax-ac2 ackmblem mpbi ) BAFZCBFDAFBDGHICD
+      FIJIZRHZCAFZDCFDBFIECFEBFIZEDGZJIJIKELDMCLBMSTUAUBUCNJIKELDMCLBMABCDEOABC
+      DEPQ $.
+    $( $j usage 'axac2b' avoids 'ax-9' 'ax-10' 'ax-11' 'ax-12' 'ax-13' 'ax-ext'
+       'ax-rep' 'ax-sep' 'ax-nul' 'ax-pow' 'ax-pr' 'ax-un' 'ax-reg' 'ax-inf'
+       'ax-inf2' 'ax-ac' 'df-clab' 'df-cleq' 'df-clel'; $)
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
