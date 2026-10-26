@@ -579653,6 +579653,21 @@ $)
       DUQURDUEUFUGUHUI $.
   $}
 
+  ${
+    $d ph y $.  $d ch y $.  $d ps x z $.  $d x y z $.
+    eu8w.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    eu8w.2 $e |- ( y = z -> ( ps <-> ch ) ) $.
+    $( Replace ~ ax-10 , ~ ax-12 in ~ eu8 with an additional substitution
+       hypothesis.  (Contributed by BTernaryTau, 26-Oct-2026.) $)
+    eu8w $p |- ( E! x ph <-> E. x ( ph /\ A. y ( ps -> x = y ) ) ) $=
+      ( weu weq wb wal wex wi wa cbveuvw bicomd equcoms eu6w albii dfbi2 equcom
+      imbi2i equsalvw bicomi anbi12i ancom 19.26 3bitr4ri bitri exbii 3bitri )
+      ADIBEIBEDJZKZELZDMABDEJZNZELZOZDMABDEGPBCAEDFHBAKDEUPABGQRZSUOUSDUOBUMNZU
+      MBNZOZELZUSUNVCEBUMUATURAOVAELZVBELZOUSVDURVEAVFUQVAEUPUMBDEUBUCTVFABAEDU
+      TUDUEUFAURUGVAVBEUHUIUJUKUL $.
+    $( $j usage 'eu8w' avoids 'ax-8' 'ax-9' 'ax-10' 'ax-11' 'ax-12' 'ax-13'; $)
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
