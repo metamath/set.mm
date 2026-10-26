@@ -17451,6 +17451,17 @@ $)
   $}
 
   ${
+    $d x y $.  $d ph y $.  $d ps x $.
+    nfa1w.x $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Replace ~ ax-10 in ~ nfa1 with a substitution hypothesis.  (Contributed
+       by SN, 2-Sep-2025.) $)
+    nfa1w $p |- F/ x A. x ph $=
+      ( wal cbvalvw nfv nfxfr ) ACFBDFZCABCDEGJCHI $.
+    $( $j usage 'nfa1w' avoids 'ax-8' 'ax-9' 'ax-10' 'ax-11' 'ax-12'
+       'ax-13'; $)
+  $}
+
+  ${
     $d x y $.  $d ps x $.  $d ph y $.
     19.8aw.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
     $( If a formula is true, then it is true for at least one instance.  This
@@ -730845,16 +730856,6 @@ $(
   approach is found, that approach is shorter and better.
 
 $)
-
-  ${
-    $d x y $.  $d ph y $.  $d ps x $.
-    nfa1w.x $e |- ( x = y -> ( ph <-> ps ) ) $.
-    $( Replace ~ ax-10 in ~ nfa1 with a substitution hypothesis.  (Contributed
-       by SN, 2-Sep-2025.) $)
-    nfa1w $p |- F/ x A. x ph $=
-      ( wal cbvalvw nfv nfxfr ) ACFBDFZCABCDEGJCHI $.
-    $( $j usage 'nfa1w' avoids 'ax-10'; $)
-  $}
 
   ${
     $d x y z $.  $d x ps $.  $d x th $.  $d y z ph $.
