@@ -580676,6 +580676,19 @@ $)
        'ax-inf2' 'ax-ac' 'ax-ac2' 'df-clab' 'df-cleq' 'df-clel'; $)
   $}
 
+  ${
+    $d u v x y z $.
+    $( Equivalence of the Axiom of Choice and a shortened version of Maes' AC
+       (see ~ ackmb ).  Uses only Tarski's FOL axiom schemes.  (Contributed by
+       BTernaryTau, 26-Oct-2026.) $)
+    dfackmb $p |- ( CHOICE <-> A. x E. y A. z E. v A. u ( ( y e. x /\
+        ( z e. y -> ( ( v e. x /\ -. y = v ) /\ z e. v ) ) ) \/ ( -. y e. x /\
+        ( z e. x -> ( ( u e. z /\ u e. y ) <-> u = v ) ) ) ) ) $=
+      ( wac wel weq wn wa wi wo wal wex wb dfackm ackmb bitri ) FBAGZCBGDAGBDHI
+      JCDGJKJZSIZCAGZDCGDBGJECGEBGJZEDHZKJKJLEMDNCMBNAMTUAUBUCUDOKJLEMDNCMBNAMA
+      BCDEPABCDEQR $.
+  $}
+
   $( The Axiom of Choice implies that any set is numerable.  (Contributed by
      BTernaryTau, 3-Jul-2026.) $)
   acnum $p |- ( CHOICE -> ( A e. V -> A e. dom card ) ) $=
