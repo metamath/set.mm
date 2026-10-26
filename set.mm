@@ -882321,7 +882321,7 @@ $)
        ~ bomnumden .  Its restriction to the positive integers is the prime
        Omega function, which counts prime factors with multiplicity; see
        ~ bomnnval .  Changing the sign of the input does not change the value
-       (~ bomneg ), and a reciprocal prime has value minus one (~ bomrec and
+       ( ~ bomneg ), and a reciprocal prime has value minus one ( ~ bomrec and
        ~ bomprm ).  Thus "signed" describes the denominator contributions, not
        the sign of the input.
 
@@ -882484,7 +882484,7 @@ $)
        Immediately before Theorem 2.4, the same paper extends the function to
        negative rationals by ` ( lam `` x ) = ( lam `` ( -u x ) ) ` .  The
        signed prime Omega values are unchanged by negating a nonzero rational
-       (~ bomneg ), so the same exponential formula gives this convention too;
+       ( ~ bomneg ), so the same exponential formula gives this convention too;
        see ~ liouneg .
 
        The value at zero is a separate convention, following Helfgott's choice
