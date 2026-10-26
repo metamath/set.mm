@@ -594955,6 +594955,61 @@ $)
       PHUDAIUDUHABPUBUFFZUCUGUBUFUBUFDJUIKLMNUEPOUEQRSTUA $.
   $}
 
+  ${
+    $d A x y $.
+    $( A class has an element just in case it has a proper subset.
+       (Contributed by Adrian Ducourtial, 26-Oct-2026.) $)
+    elpssex
+        $p |- ( E. x x e. A <-> E. y y C. A ) $=
+          ( cv wcel wex wpss c0 wss wne 0ss a1i ne0i necomd df-pss sylanbrc 0ex
+          psseq1 syl exlimiv spcev wn wa pssnel exsimpl impbii ) ADZCEZAFZBDZCG
+          ZBFZUHULAUHHCGZULUHHCIZHCJUMUNUHCKLUHCHCUGMNHCOPUKUMBHQUJHCRUASTUKUIB
+          UKUHUGUJEUBZUCAFUIAUJCUDUHUOAUESTUF $.
+  $}
+
+  ${
+    $d A u y $.  $d A v w z $.  $d A v w x y $.
+    $( Uniqueness of elements is equivalent to uniqueness of proper subsets.
+       (Contributed by Adrian Ducourtial, 26-Oct-2026.) $)
+    elpssmo
+        $p |- ( E* x x e. A <-> E* y y C. A ) $=
+          ( vu vv vw vz cv wcel wmo wpss weq wi wal wex c0 wceq wa wn imbi12d
+          cvv 0ex pssss sseld alrimiv eleq1w cbvmovw dfmo wb equequ1 spvv com12
+          a1i equcomiv syl6 equequ2 imbi2d albidv exlimiv sylbi elequ1 biimprcd
+          notbid imim2d alimdv syl9 impcomd exlimdv pssnel impel syl2an2 pm2.01
+          ibd alsyl sylg eq0 sylibr eqeq2 spcedv w3a csn vsnid n0ii simp1 velsn
+          ex notbii ssnelpss snssi syl11 sylan2br com23 3imp21 noel ax-mp mpan2
+          wss 0ss psseq1 mo4 vsnex anbi1d eqeq1 spcv anbi2d syl ancomsd syl2anc
+          sylan 3expia 3impia mt3i 3comr equcomd 3expib alrimivv impbii ) AHZCI
+          ZAJZBHZCKZBJZXTYBBDLZMZBNZDOYCXTYFYBYAPQZMZBNDUAPPUAIXTUBUMXTYHBXTYBY
+          GXTYBRZEHZYAIZSZENYGYIYKYLMZYLEYBYKYJCIZMZENXTYNYLMZENZYMENYBYOEYBYAC
+          YJYACUCUDUEXTFHZCIZYRYAIZSZRZFOYQYBXTUUBYQFXTUUAYSYQXTYSYNEFLZMZENZUU
+          AYQXTYNEJZYSUUEMZXSYNAEAECUFZUGUUFYNEGLZMZENZGOUUGYNEGUHUUKUUGGYSUUKU
+          UEYSUUKUUEYSUUKGFLZUUKUUEUIYSUUKFGLZUULUUKYSUUMUUJYSUUMMEFUUCYNYSUUIU
+          UMEFCUFEFGUJTUKULFGUNUOUULUUJUUDEUULUUIUUCYNGFEUPUQURUOVMULUSUTUTUUAU
+          UDYPEUUAUUCYLYNUUCYLUUAUUCYKYTEFBVAVCVBVDVEVFVGVHFYACVIVJYKYNYLEVNVKY
+          KVLVOEYAVPVQWFUEDHZPQZYEYHBUUOYDYGYBUUNPYAVRUQURVSYBBDUHVQYCXSYNRZAEL
+          ZMZENANXTYCUURAEYCXSYNUUQYCXSYNVTEAXSYNYCEALZXSYNYCVTUUSXRWAZPQZXRUUT
+          AWBWCXSYNYCUUSSZUVAMUUPUVBYCUVAXSYNUVBYCUVAMZXSYNUVBVTXSUUTCKZUVCXSYN
+          UVBWDYNXSUVBUVDYNUVBXSUVDYNUVBXSUVDMZUVBYNYJUUTIZSZUVEUVFUUSEXRWEWGUU
+          TCWQYNUVGRUVDXSUUTCYJWHXRCWIWJWKWFWLWMXSPCKZUVDUVCXSXRPISZUVHXRWNPCWQ
+          XSUVIRUVHMCWRPCXRWHWOWPYCUVHUVDRUVAYCUVDUVHUVAYCUVDYRCKZRZUUTYRQZMZFN
+          ZUVDUVHRZUVAMZYCYBUVJRZBFLZMZFNZBNUVNYBUVJBFYAYRCWSWTUVTUVNBUUTAXAYAU
+          UTQZUVSUVMFUWAUVQUVKUVRUVLUWAYBUVDUVJYAUUTCWSXBYAUUTYRXCTURXDUTUVMUVP
+          FPUBYRPQZUVKUVOUVLUVAUWBUVJUVHUVDYRPCWSXEYRPUUTVRTXDXFXGULXIXHXJWLXKX
+          LXMXNXOXPXSYNAEUUHWTVQXQ $.
+  $}
+
+  ${
+    $d A x y $.
+    $( A class has a unique element just in case it has a unique proper subset.
+       (Contributed by Adrian Ducourtial, 26-Oct-2026.) $)
+    elpsseu
+        $p |- ( E! x x e. A <-> E! y y C. A ) $=
+          ( cv wcel wex wmo wa wpss weu elpssex elpssmo anbi12i df-eu 3bitr4i )
+          ADCEZAFZPAGZHBDCIZBFZSBGZHPAJSBJQTRUAABCKABCLMPANSBNO $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
