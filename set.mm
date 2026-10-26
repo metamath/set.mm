@@ -882285,20 +882285,23 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-  Liouville's function
+  The signed prime Omega function and Liouville's function
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   The signed prime Omega function ` Omega ` is defined on nonzero rationals in
-  ~ df-bom . Liouville's function ` lam ` is defined on all rationals in ~
-  df-liou , with value zero at zero. The results below focus on positive
-  integers, the elements of ` NN ` .
+  ~ df-bom .  Liouville's function ` lam ` is defined on all rationals in
+  ~ df-liou , with value zero at zero.  The section develops their rational
+  identities, positive-integer properties, and Goldbach applications.
+  Characterizations are given in ~ bomuniq , ~ liouuniq , and ~ liouuniq2 .
 
-  A pair for Liouville's function at a target consists of two positive integers
-  summing to the target and having equal function values. The pair is called
-  positive when that common value is one, and negative when it is minus one.
-  The signs refer to function values. The main results are ~ liougb4 for
-  positive multiples of four, ~ liougb for all even integers greater than two,
-  and ~ liougbprm for positive pairs at twice a prime greater than three.
+  In the Goldbach results, a pair consists of two positive integers summing to
+  the target.  A positive-positive pair has both Liouville values equal to
+  one; a negative-negative pair has both equal to minus one.  These terms
+  follow the paragraph after Theorem 1.2 of the paper cited in ~ liougb .
+  The signs refer to function values, not to the summands.  The main results
+  are ~ liougb4 for positive multiples of four, ~ liougb for all even integers
+  greater than two, and ~ liougbprm for positive-positive pairs at twice a
+  prime greater than three.
 
 $)
 
@@ -882311,15 +882314,16 @@ $)
   ${
     $d p q x $.
     $( Define the signed prime Omega function on nonzero rational numbers by
-       summing the nonzero prime valuations ` pCnt ` defined in ~ df-pc .
-       Denominator factors contribute negatively.  Its value is the
-       prime-factor count of the absolute numerator minus that of the positive
-       denominator, with multiplicity.  Its restriction to the positive
-       integers is the prime Omega function, which counts prime factors with
-       multiplicity; see ~ bomnnval .  Changing the sign of the input does not
-       change the value, and a reciprocal prime has value minus one.  Thus
-       "signed" describes the denominator contributions, not the sign of the
-       input.
+       summing the nonzero prime valuations ` pCnt ` defined in ~ df-pc .  The
+       support is finite by ~ pcqfi .  Denominator factors contribute
+       negatively.  Its value is the prime-factor count of the absolute
+       numerator minus that of the positive denominator, with multiplicity; see
+       ~ bomnumden .  Its restriction to the positive integers is the prime
+       Omega function, which counts prime factors with multiplicity; see
+       ~ bomnnval .  Changing the sign of the input does not change the value
+       (~ bomneg ), and a reciprocal prime has value minus one (~ bomrec and
+       ~ bomprm ).  Thus "signed" describes the denominator contributions, not
+       the sign of the input.
 
        The label fragment "bom" abbreviates "big omega", a name for the prime
        Omega function.  See "Big Omega Function" in M. Billal and A. Parvardi,
@@ -882343,11 +882347,12 @@ $)
        The signed prime Omega function can equivalently be obtained by
        extending the prime Omega function first to nonzero integers by absolute
        value, then to nonzero rationals by subtracting the denominator's value
-       from the numerator's value.  This construction is an application of
-       Theorems 1 and 2 in section 2, pp. 4-6, of J. K. Merikoski, P.
-       Haukkanen, and T. Tossavainen, "Complete additivity, complete
-       multiplicativity, and Leibniz-additivity on rationals", INTEGERS 21
-       (2021), A33, ~ https://math.colgate.edu/~~integers/v33/v33.pdf .
+       from the numerator's value; see ~ bomabs and ~ bomdiv .  This
+       construction is an application of Theorems 1 and 2 in section 2, pp.
+       4-6, of J. K. Merikoski, P. Haukkanen, and T. Tossavainen, "Complete
+       additivity, complete multiplicativity, and Leibniz-additivity on
+       rationals", INTEGERS 21 (2021), A33,
+       ~ https://math.colgate.edu/~~integers/v33/v33.pdf .
 
        No finite value at zero can preserve complete additivity for all inputs
        while every prime has value one: multiplying zero by a prime would
@@ -882355,8 +882360,9 @@ $)
        function can be extended to the nonnegative integers by assigning zero
        at zero, but this extension is not completely additive on its full
        domain.  Additivity remains valid for nonzero inputs.  Lean 4 Mathlib's
-       ArithmeticFunction.cardFactors uses this convention; see
-       ~ https://leanprover-community.github.io/mathlib4_docs/ .
+       ArithmeticFunction.cardFactors uses this convention; see that
+       declaration in the module Mathlib.NumberTheory.ArithmeticFunction.Misc
+       at ~ https://leanprover-community.github.io/mathlib4_docs/ .
 
        Another convention assigns infinity at zero and uses extended addition.
        Merikoski, Haukkanen, and Tossavainen discuss this convention in section
@@ -882428,10 +882434,12 @@ $)
        continuous extensions there use the Weil-height norm.  These algebraic
        extensions are not adopted here.
 
-       For the domain see ~ bomdm .  For positive-integer closure see
-       ~ bomnncl .  Examples are ~ bom1 and ~ bomprm ; complete additivity on
-       positive integers is ~ bomnnmul .  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
+       For the domain and integer-valued function property see ~ bomdm and
+       ~ bomf .  Complete additivity on nonzero rationals is ~ bommul ;
+       ~ bomnnmul specializes it to positive integers.  Examples are ~ bom1 ,
+       ~ bomprm , and ~ bom4 .  For positive-integer closure and
+       characterization of primes see ~ bomnncl and ~ bomnn1 .  (Contributed by
+       Zhi Wang, 17-Oct-2026.) $)
     df-bom $a |- Omega = ( x e. ( QQ \ { 0 } ) |->
       sum_ p e. { q e. Prime | ( q pCnt x ) =/= 0 } ( p pCnt x ) ) $.
   $}
@@ -882445,7 +882453,7 @@ $)
     $( Define Liouville's function on the rationals, extending its
        positive-integer definition and assigning value zero at zero.  On
        nonzero inputs its value is minus one raised to the value of the signed
-       prime Omega function.
+       prime Omega function; see ~ liouval .
 
        The name "Liouville's function" is used both for this rational extension
        and for its positive-integer restriction.  Domain qualifiers are
@@ -882453,8 +882461,9 @@ $)
 
        For positive integers, Liouville's function has value one when the
        number of prime factors counted with multiplicity is even, and minus one
-       when it is odd.  See T. M. Apostol, "Introduction to Analytic Number
-       Theory" (1976), section 2.12, p. 37,
+       when it is odd; see ~ lioueq1 and ~ lioueqneg1 for the corresponding
+       criteria on nonzero rationals.  See T. M. Apostol, "Introduction to
+       Analytic Number Theory" (1976), section 2.12, p. 37,
        ~ https://doi.org/10.1007/978-1-4757-5579-4 .
 
        Hajdu and Hajdu, "On the Liouville function on rational polynomial
@@ -882463,25 +882472,29 @@ $)
        ` ( lam `` ( n / k ) ) = ( ( lam `` n ) / ( lam `` k ) ) ` for
        ` n , k e. NN ` .  To obtain the formula used here, observe that the
        prime valuations in ~ df-bom subtract denominator multiplicities, so
-       ` ( Omega `` ( n / k ) ) = ( ( Omega `` n ) - ( Omega `` k ) ) ` .
-       Consequently, the quotient of the two positive-integer values of
-       Liouville's function is
+       ` ( Omega `` ( n / k ) ) = ( ( Omega `` n ) - ( Omega `` k ) ) ` by
+       ~ bomdiv .  Consequently, the quotient of the two positive-integer
+       values of Liouville's function is
        ` ( ( -u 1 ^ ( Omega `` n ) ) / ( -u 1 ^ ( Omega `` k ) ) ) `
        ` = ( -u 1 ^ ( ( Omega `` n ) - ( Omega `` k ) ) ) `
        ` = ( -u 1 ^ ( Omega `` ( n / k ) ) ) ` .  Common factors cancel in the
-       difference, so the fraction need not be reduced.
+       difference, so the fraction need not be reduced.  The product version is
+       ~ lioudiv ; the nonzero values have square one by ~ liouvalsq .
 
        Immediately before Theorem 2.4, the same paper extends the function to
        negative rationals by ` ( lam `` x ) = ( lam `` ( -u x ) ) ` .  The
-       prime valuations in ~ df-bom are unchanged by negating a nonzero
-       rational, so the same exponential formula gives this convention too.
+       signed prime Omega values are unchanged by negating a nonzero rational
+       (~ bomneg ), so the same exponential formula gives this convention too;
+       see ~ liouneg .
 
        The value at zero is a separate convention, following Helfgott's choice
        for integer inputs in "The parity problem for reducible cubic forms"
        (2006), introduction after equation (1.1),
        ~ https://arxiv.org/abs/math/0408142 .  Since ` Omega ` is defined only
        on nonzero rationals, the explicit zero branch extends the function to
-       all of ` QQ ` .
+       all of ` QQ ` .  Complete multiplicativity on rationals is ~ lioumul ;
+       ~ liouuniq2 shows how it determines the value at zero once the nonzero
+       evaluations are fixed.
 
        The function defined here differs from the "Liouville function of the
        first kind" proposed by A. Vieru in section 7, p. 22 of
@@ -882492,7 +882505,17 @@ $)
        prime-factor counts are two, and the value of Liouville's function at
        nine is one.  The defining formula here gives one at that fraction,
        since its signed prime Omega value is zero.  The two prescriptions
-       therefore disagree where that proposal gives an explicit rule.
+       therefore disagree where that proposal gives an explicit rule.  On p. 23
+       the same source proposes a second kind: value one when the two
+       prime-factor counts differ by one, and minus one when they are equal.
+       This also gives minus one at ` ( 4 / 9 ) ` .  The following note leaves
+       larger count differences undecided.  Neither partial prescription is
+       adopted as a complete rational extension.
+
+       A different completely multiplicative rational extension of the
+       positive-integer function is obtained by multiplying by signum; see
+       ~ lioununiq .  It is excluded here by the normalization at minus one in
+       ~ liouuniq .
 
        For evaluations at zero, one, and primes see ~ liou0 , ~ liou1 , and
        ~ liouprm .  Complete multiplicativity on positive integers is
@@ -882545,8 +882568,8 @@ $)
   $}
 
   ${
-    $( Domain of the signed prime Omega function.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
+    $( The domain of the signed prime Omega function is the set of nonzero
+       rationals.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     bomdm $p |- dom Omega = ( QQ \ { 0 } ) $=
       ( cq cc0 csn cdif cbom bomfn fndmi ) ABCDEFG $.
   $}
@@ -883134,8 +883157,8 @@ $)
   $}
 
   ${
-    $( Multiplication by two reverses the sign of Liouville's function.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    $( Multiplication by two negates the value of Liouville's function at a
+       rational input.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
     liou2mul $p |- ( A e. QQ -> ( lam ` ( 2 x. A ) ) = -u ( lam ` A ) ) $=
       ( cq wcel c2 cmul co cliou cfv c1 cneg wceq cn 2nn nnq id cc cc0 ctp wss
       wf ax-mp a1i lioumul syl2anc liou2 oveq1i eqtrdi liouf neg1cn tpssi mp3an
@@ -883146,8 +883169,8 @@ $)
   $}
 
   ${
-    $( Multiplication by three reverses the sign of Liouville's function.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    $( Multiplication by three negates the value of Liouville's function at a
+       rational input.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
     liou3mul $p |- ( A e. QQ -> ( lam ` ( 3 x. A ) ) = -u ( lam ` A ) ) $=
       ( cq wcel c3 cmul co cliou cfv c1 cneg wceq cn 3nn nnq id cc cc0 ctp wss
       wf ax-mp a1i lioumul syl2anc liou3 oveq1i eqtrdi liouf neg1cn tpssi mp3an
@@ -883214,9 +883237,9 @@ $)
     lioupairexd.3 $e |- ( ph -> N = ( A + B ) ) $.
     lioupairexd.4 $e |- ( ph -> ( lam ` A ) = S ) $.
     lioupairexd.5 $e |- ( ph -> ( lam ` B ) = S ) $.
-    $( Introduce two explicit positive-integer witnesses at which Liouville's
-       function has the same prescribed sign.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
+    $( Explicit positive-integer summands with prescribed common value under
+       Liouville's function give the corresponding existence statement.
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
     lioupairexd $p |- ( ph -> E. a e. NN E. b e. NN ( N = ( a + b ) /\ ( lam
       ` a ) = S /\ ( lam ` b ) = S ) ) $=
       ( cv caddc co wceq cliou cfv w3a cn wrex oveq1 eqeq2d fveq2 rexbidv oveq2
@@ -883369,8 +883392,9 @@ $)
     liounopaird.4 $e |- ( ph -> -. E. a e. NN E. b e. NN ( N = ( a + b ) /\ (
       lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
     liounopaird.5 $e |- ( ph -> ( lam ` A ) = -u 1 ) $.
-    $( Absence of a negative pair for Liouville's function forces the positive
-       sign on the complement of a negative summand.  (Contributed by Zhi Wang,
+    $( If ` N ` has no negative-negative pair and ` ( A + B ) = N ` , with
+       positive integer summands, then value minus one at ` A ` forces value
+       one at ` B ` under Liouville's function.  (Contributed by Zhi Wang,
        17-Oct-2026.) $)
     liounopaird $p |- ( ph -> ( lam ` B ) = 1 ) $=
       ( cliou cfv c1 cneg wceq cv cn wrex adantr caddc co w3a simpr lioupairexd
@@ -883402,9 +883426,11 @@ $)
     liounopairmuld.6 $e |- ( ph -> ( S x. ( lam ` K ) ) = -u 1 ) $.
     liounopairmuld.7 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( N x. K ) = (
       a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
-    $( Absence of a negative decomposition excludes a matching sign of
-       Liouville's function before scaling.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
+    $( If scaling by ` K ` changes the Liouville value ` S ` to minus one and
+       ` ( N x. K ) ` has no negative-negative pair, two positive-integer
+       summands of ` N ` cannot both have value ` S ` .  The first summand has
+       value ` S ` by hypothesis, so the second does not.  (Contributed by Zhi
+       Wang, 17-Oct-2026.) $)
     liounopairmuld $p |- ( ph -> -. ( lam ` B ) = S ) $=
       ( cliou cfv wceq cv cn cmul co caddc c1 cneg w3a wrex adantr lioupairmuld
       wa wcel simpr ex mtod ) ACPQDRFEUAUBGSHSUCUBRGSPQUDUERHSPQUDUERUFHTUGGTUG
@@ -883422,10 +883448,10 @@ $)
     liougb4negd.5 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 4 x. M ) = ( a
       + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
     liougb4negd.6 $e |- ( ph -> ( lam ` A ) = -u 1 ) $.
-    $( If four times ` M ` has no negative pair for Liouville's function, a
-       negative-sign summand of ` M ` has a positive-sign complement.  See
-       ~ liougb4 for the target theorem.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
+    $( If four times ` M ` has no negative-negative pair, a positive-integer
+       summand of ` M ` with Liouville value minus one has a complement with
+       value one.  See ~ liougb4 for the target theorem.  (Contributed by Zhi
+       Wang, 17-Oct-2026.) $)
     liougb4negd $p |- ( ph -> ( lam ` B ) = 1 ) $=
       ( c1 cneg c4 cliou cmul co wceq cv wcel 4nn a1i cfv oveq2i neg1cn mulridi
       cn liou4 eqtri caddc w3a wrex nncnd mulcomd lioupaireq syl liounopairmuld
@@ -883445,9 +883471,9 @@ $)
     liougb4posd.5 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 4 x. M ) = ( a
       + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
     liougb4posd.6 $e |- ( ph -> ( lam ` A ) = 1 ) $.
-    $( If four times ` M ` has no negative pair for Liouville's function, a
-       positive-sign summand of twice ` M ` has a negative-sign complement.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( If four times ` M ` has no negative-negative pair, a positive-integer
+       summand of twice ` M ` with Liouville value one has a complement with
+       value minus one.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4posd $p |- ( ph -> ( lam ` B ) = -u 1 ) $=
       ( c1 c2 cmul co cn cneg wceq cv 2nn a1i cliou liou2 oveq2i neg1cn mullidi
       wcel cfv eqtri caddc w3a wrex c4 wb nncnd mul32d oveq1i eqtrdi lioupaireq
@@ -883463,8 +883489,8 @@ $)
     liougb4sum1d.1 $e |- ( ph -> C e. CC ) $.
     liougb4sum1d.2 $e |- ( ph -> B e. CC ) $.
     liougb4sum1d.3 $e |- ( ph -> M = ( ( 3 x. C ) + B ) ) $.
-    $( An additive identity for splitting a triple summand.  (Contributed by
-       Zhi Wang, 17-Oct-2026.) $)
+    $( Splitting a triple summand into one copy and two copies preserves the
+       sum.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4sum1d $p |- ( ph -> M = ( C + ( ( 2 x. C ) + B ) ) ) $=
       ( c2 cmul co caddc c3 c1 cc wcel 2cn a1i adddirp1d mulcld eqtrd eqtr3di
       2p1e3 oveq1i addcomd eqtr3d oveq1d addassd ) ADCHCIJKJBKJCHCIJBKJKJADLCIJ
@@ -883477,7 +883503,7 @@ $)
     liougb4sum2d.2 $e |- ( ph -> A e. CC ) $.
     liougb4sum2d.3 $e |- ( ph -> B e. CC ) $.
     liougb4sum2d.4 $e |- ( ph -> M = ( A + B ) ) $.
-    $( An additive identity for the complementary pair at twice a target.
+    $( If ` M = ( A + B ) ` , then ` B ` and ` ( M + A ) ` sum to twice ` M ` .
        (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4sum2d $p |- ( ph -> ( 2 x. M ) = ( B + ( M + A ) ) ) $=
       ( c2 cmul co caddc 2timesd oveq1d eqtrd add32d addcld addcomd oveq2d ) AI
@@ -883492,8 +883518,9 @@ $)
     liougb4sum3d.4 $e |- ( ph -> D e. CC ) $.
     liougb4sum3d.5 $e |- ( ph -> M = ( C + D ) ) $.
     liougb4sum3d.6 $e |- ( ph -> A = ( 3 x. C ) ) $.
-    $( An additive identity for the complementary pair at four times a target.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( If ` M = ( C + D ) ` and ` A = ( 3 x. C ) ` , then ` ( 3 x. D ) ` and
+       ` ( M + A ) ` sum to four times ` M ` .  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
     liougb4sum3d $p |- ( ph -> ( 4 x. M ) = ( ( 3 x. D ) + ( M + A ) ) ) $=
       ( c4 cmul co c3 caddc cc wcel 3cn eqtrd c1 adddirp1d 3p1e4 oveq1i eqtr3di
       a1i eqcomd oveq2d adddid oveq1d eqtr4d mulcld add32d addcld addcomd ) ALE
@@ -883511,9 +883538,9 @@ $)
     liougb4trid.3 $e |- ( ph -> M = ( ( 3 x. C ) + B ) ) $.
     liougb4trid.4 $e |- ( ph -> ( lam ` ( 3 x. C ) ) = 1 ) $.
     liougb4trid.5 $e |- ( ph -> ( lam ` B ) = 1 ) $.
-    $( A positive-sign decomposition with a triple summand gives a negative
-       pair for Liouville's function at four times the target.  (Contributed by
-       Zhi Wang, 17-Oct-2026.) $)
+    $( A positive-positive decomposition with a triple summand gives a
+       negative-negative pair for Liouville's function at four times the
+       target.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4trid $p |- ( ph -> E. a e. NN E. b e. NN ( ( 4 x. M ) = ( a + b
       ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
       ( co cv wceq cliou cfv c1 cneg cn wrex c4 cmul caddc w3a wn wa c3 c2 wcel
@@ -883617,9 +883644,9 @@ $)
     liougb4n3d.5 $e |- ( ph -> ( lam ` B ) = 1 ) $.
     liougb4n3d.6 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 4 x. M ) = ( a
       + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
-    $( A positive-sign pair cannot have a summand divisible by three if its
-       quadrupled target has no negative pair for Liouville's function.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( A positive-positive pair cannot have a summand divisible by three if its
+       quadrupled target has no negative-negative pair for Liouville's
+       function.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4n3d $p |- ( ph -> -. 3 || A ) $=
       ( c3 cdvds wbr co wceq cn wa wcel c4 cmul cv caddc cliou cfv c1 cneg wrex
       w3a cdiv simpr wb adantr 3nn a1i nndivdvds syl2anc mpbid cc0 wne divcan2d
@@ -883894,7 +883921,8 @@ $)
     liougb4gapeld.6 $e |- ( ph -> ( lam ` A ) = 1 ) $.
     liougb4gapeld.7 $e |- ( ph -> ( lam ` B ) = 1 ) $.
     liougb4gapeld.8 $e |- ( ph -> D = ( B - A ) ) $.
-    $( Membership introduction for the positive gaps of positive-sign pairs.
+    $( A positive difference between the summands of a positive-positive pair
+       belongs to the gap set supplied by the equality hypothesis.
        (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4gapeld $p |- ( ph -> D e. S ) $=
       ( cv co wceq cn wcel caddc cliou cfv c1 w3a cmin wrex oveq1 eqeq2d eqeq1d
@@ -883934,8 +883962,10 @@ $)
     liougb4gapdescd.9 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 4 x. M )
     = ( a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
     liougb4gapdescd.10 $e |- ( ph -> -. 3 || M ) $.
-    $( Construct a strictly smaller positive gap from a positive-sign pair.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( A positive-positive pair for ` M ` with a positive gap gives one with a
+       smaller positive gap, if three does not divide ` M ` and four times
+       ` M ` has no negative-negative pair.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
     liougb4gapdescd $p |- ( ph -> E. y e. S y < D ) $=
       ( cv clt wbr caddc co c3 cdiv breq1 liougb4desccld nncnd addcomd eqtrd cn
       cmin nnaddcld eqeltrd nnred wcel eqeltrrd wb nnsub syl2anc liougb4descltd
@@ -883993,10 +884023,10 @@ $)
     liougb4gap0d.2 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 4 x. M ) =
     ( a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
     liougb4gap0d.3 $e |- ( ph -> -. 3 || M ) $.
-    $( If four times ` M ` has no negative pair for Liouville's function and
-       ` M ` is not divisible by three, there is no positive gap between
-       positive-sign summands of ` M ` .  The transformation in
-       ~ liougb4descsumd divides a positive gap by three, contradicting
+    $( If four times ` M ` has no negative-negative pair and ` M ` is not
+       divisible by three, there is no positive gap between the summands of a
+       positive-positive pair for ` M ` .  The transformation in
+       ~ liougb4descgapd divides a positive gap by three, contradicting
        well-ordering.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4gap0d $p |- ( ph -> S = (/) ) $=
       ( vx vu vv cn cv wceq cliou cfv c1 wa wcel vy wss caddc co cmin wrex crab
@@ -884043,9 +884073,9 @@ $)
     liougb4ordpaird.5 $e |- ( ph -> ( lam ` B ) = 1 ) $.
     liougb4ordpaird.6 $e |- ( ph -> A < B ) $.
     liougb4ordpaird.7 $e |- ( ph -> -. 3 || M ) $.
-    $( Strictly ordered positive-sign summands produce a negative pair at four
-       times their sum, when three does not divide that sum.  (Contributed by
-       Zhi Wang, 17-Oct-2026.) $)
+    $( Strictly ordered summands with Liouville value one produce a
+       negative-negative pair at four times their sum, when three does not
+       divide that sum.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4ordpaird $p |- ( ph -> E. a e. NN E. b e. NN ( ( 4 x. M ) = (
     a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
       ( co cv wceq cliou cfv c1 cn vt c4 cmul caddc cneg w3a wrex wn wa cmin c0
@@ -884077,8 +884107,8 @@ $)
     liougb4doubled.1 $e |- ( ph -> A e. NN ) $.
     liougb4doubled.2 $e |- ( ph -> M = ( A + A ) ) $.
     $( When ` M = ( A + A ) ` for a positive integer ` A ` , ~ liougb8mul
-       supplies a negative pair at ` ( 4 x. M ) ` for Liouville's function.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+       supplies a negative-negative pair at ` ( 4 x. M ) ` for Liouville's
+       function.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4doubled $p |- ( ph -> E. a e. NN E. b e. NN ( ( 4 x. M ) = ( a
     + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
       ( c4 cmul co cv wceq cliou cfv c1 cneg cn wrex c8 c2 caddc w3a liougb8mul
@@ -884100,9 +884130,9 @@ $)
     liougb4posabeqd.6 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 4 x. M )
     = ( a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
     liougb4posabeqd.7 $e |- ( ph -> -. 3 || M ) $.
-    $( If four times ` M ` has no negative pair for Liouville's function and
-       ` M ` is not divisible by three, positive-sign summands of ` M ` must
-       coincide.  See ~ liougb4gap0d .  (Contributed by Zhi Wang,
+    $( If four times ` M ` has no negative-negative pair and ` M ` is not
+       divisible by three, the summands of a positive-positive pair for ` M `
+       must coincide.  See ~ liougb4gap0d .  (Contributed by Zhi Wang,
        17-Oct-2026.) $)
     liougb4posabeqd $p |- ( ph -> A = B ) $=
       ( wceq clt wbr co cv cliou cfv wn wa c4 cmul caddc c1 cneg cn wrex adantr
@@ -884125,9 +884155,9 @@ $)
     liougb4pospaird.4 $e |- ( ph -> ( lam ` A ) = 1 ) $.
     liougb4pospaird.5 $e |- ( ph -> ( lam ` B ) = 1 ) $.
     liougb4pospaird.6 $e |- ( ph -> -. 3 || M ) $.
-    $( Positive-sign summands of a total not divisible by three supply a
-       negative pair at four times the total.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
+    $( A positive-positive pair for a total not divisible by three supplies a
+       negative-negative pair at four times that total.  (Contributed by Zhi
+       Wang, 17-Oct-2026.) $)
     liougb4pospaird $p |- ( ph -> E. a e. NN E. b e. NN ( ( 4 x. M ) = (
     a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
       ( co cv wceq cliou cfv c1 cneg cn c4 cmul caddc w3a wrex wn wa wcel simpr
@@ -884154,10 +884184,9 @@ $)
     liougb4antisumd.4 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 4 x. M )
     = ( a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
     liougb4antisumd.5 $e |- ( ph -> -. 3 || M ) $.
-    $( Complementary positive integers have opposite signs of Liouville's
-       function under a missing representation at four times the total, when
-       three does not divide that total.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
+    $( If four times ` M ` has no negative-negative pair and three does not
+       divide ` M ` , two positive integers summing to ` M ` have opposite
+       Liouville values.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4antisumd $p |- ( ph -> ( lam ` B ) = -u ( lam ` A ) ) $=
       ( cliou cfv c1 cneg wceq wa cn adantr cv caddc wcel nnaddcld eqeltrd cmul
       co c4 wrex wn simpr liougb4negd negeqd ax-1cn negnegi eqtrdi eqtr4d ex c3
@@ -884183,11 +884212,11 @@ $)
     liougb4antid.4 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 4 x. M ) =
     ( a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
     liougb4antid.5 $e |- ( ph -> -. 3 || M ) $.
-    $( If four times ` M ` has no negative pair for Liouville's function and
-       ` M ` is not divisible by three, complementary positive integers below
-       ` M ` have opposite signs of Liouville's function.  This antireflection
-       identity follows from the ternary descent in ~ liougb4gap0d .
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( If four times ` M ` has no negative-negative pair for Liouville's
+       function and ` M ` is not divisible by three, complementary positive
+       integers below ` M ` have opposite signs of Liouville's function.  This
+       antireflection identity follows from the ternary descent in
+       ~ liougb4gap0d .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4antid $p |- ( ph -> ( lam ` ( M - A ) ) = -u ( lam ` A ) ) $=
       ( cmin co nnsubgtd caddc nncnd pncan3d eqcomd liougb4antisumd ) ABCBKLCDE
       GABCGFHMABCBKLNLCABCABGOACFOPQIJR $.
@@ -884265,8 +884294,8 @@ $)
     prmmodmulcand.5 $e |- ( ph -> -. P || Z ) $.
     prmmodmulcand.6 $e |- ( ph -> ( ( A x. Z ) mod P ) = ( ( B x. Z ) mod P
     ) ) $.
-    $( A multiplier not divisible by a prime can be cancelled from a congruence
-       modulo that prime.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( Multiplication by a nonzero residue can be canceled modulo a prime.
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
     prmmodmulcand $p |- ( ph -> ( A mod P ) = ( B mod P ) ) $=
       ( cmo co wceq cmin cdvds wbr cmul wcel cz wn wo cn cprime zmulcld moddvds
       prmnn syl syl3anc mpbid zcnd subdird breqtrrd zsubcld euclemma orcomd ord
@@ -884392,8 +884421,9 @@ $)
     fzo0leeld.1 $e |- ( ph -> A e. ( 0 ..^ M ) ) $.
     fzo0leeld.2 $e |- ( ph -> N e. ZZ ) $.
     fzo0leeld.3 $e |- ( ph -> M <_ N ) $.
-    $( Embed a half-open nonnegative integer interval into one with a greater
-       upper endpoint.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( A nonnegative integer below ` M ` belongs to the half-open interval with
+       upper endpoint ` N ` whenever ` M <_ N ` .  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
     fzo0leeld $p |- ( ph -> A e. ( 0 ..^ N ) ) $=
       ( cc0 cfzo co cuz cfv wcel wss cz cle wbr elfzoel2 syl eluz2 syl3anbrc
       fzoss2 sseldd ) AHCIJHDIJBADCKLMHCIJHDIJNACOMDOMCDPQDCKLMABHCIJMCOMEBHCRS
@@ -884730,8 +884760,10 @@ $)
     liougb4modnegd.4 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 4 x. P )
     = ( a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
     liougb4modnegd.5 $e |- ( ph -> -. 3 || P ) $.
-    $( A counterexample forces oddness of the sign of Liouville's function on
-       nonzero residue classes.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( If four times ` P ` has no negative-negative pair and three does not
+       divide ` P ` , Liouville's function at nonzero residues modulo ` P `
+       reverses sign under negation.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
     liougb4modnegd $p |- ( ph -> ( lam ` ( -u A mod P ) ) = -u ( lam ` (
     A mod P ) ) ) $=
       ( cneg cmo co cliou cfv cmin negmodndvdsd c1 cfzo zmod1fzod fveq2d sselid
@@ -884800,8 +884832,10 @@ $)
     lioumodnegd.5 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 4 x. P ) = ( a
     + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
     lioumodnegd.6 $e |- ( ph -> -. 3 || P ) $.
-    $( Oddness of the local residue function under the counterexample
-       hypothesis.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( The residue function of ~ lioumodval reverses sign under negation away
+       from multiples of ` P ` , if three does not divide ` P ` and four times
+       ` P ` has no negative-negative pair.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
     lioumodnegd $p |- ( ph -> ( F ` -u A ) = -u ( F ` A ) ) $=
       ( cneg cfv cmo co cliou znegcld lioumodval liougb4modnegd negeqd eqtr4d
       eqtrd ) ACNEOCDPQRONCEONACNEOCNDPQROCDPQRONABCNDEHACJSTACDFGIJKLMUAUDACEO
@@ -884888,8 +884922,8 @@ $)
     fmuleq1d.1 $e |- ( ph -> A = C ) $.
     fmuleq1d.2 $e |- ( ph -> ( F ` ( A x. B ) ) = ( ( F ` A ) x. ( F ` B )
     ) ) $.
-    $( Transport a function multiplication identity along equality of its first
-       argument.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( Transport a multiplication identity for values of ` F ` along equality
+       of its first argument.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     fmuleq1d $p |- ( ph -> ( F ` ( C x. B ) ) = ( ( F ` C ) x. ( F ` B ) )
     ) $=
       ( cmul co cfv oveq1d fveq2d eqtrd eqtr3d ) ABCHIEJDCHIEJDEJCEJHIABCHIDCHI
@@ -884903,7 +884937,7 @@ $)
     fmulcomd.4 $e |- ( ph -> ( F ` B ) e. CC ) $.
     fmulcomd.5 $e |- ( ph -> ( F ` ( A x. B ) ) = ( ( F ` A ) x. ( F ` B )
     ) ) $.
-    $( Reverse the arguments of a function multiplication identity.
+    $( Reverse the arguments of a multiplication identity for values of ` F ` .
        (Contributed by Zhi Wang, 17-Oct-2026.) $)
     fmulcomd $p |- ( ph -> ( F ` ( B x. A ) ) = ( ( F ` B ) x. ( F ` A ) )
     ) $=
@@ -885175,8 +885209,10 @@ $)
     liougb4rigidgt1d.8 $e |- ( ph -> -. 3 || P ) $.
     liougb4rigidgt1d.9 $e |- ( ph -> A. k e. ( 1 ..^ N ) A. z e. ZZ ( -.
     P || z -> ( F ` ( k x. z ) ) = ( ( F ` k ) x. ( F ` z ) ) ) ) $.
-    $( Discharge the short signed witnesses in the residue multiplication
-       induction step.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( For a multiplier greater than one, the identities for smaller positive
+       multipliers and the short signed congruence witnesses imply the next
+       multiplication identity under the stated residue-function assumptions.
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4rigidgt1d $p |- ( ph -> ( F ` ( N x. Z ) ) = ( ( F ` N ) x. (
     F ` Z ) ) ) $=
       ( cv vi vj cabs cfv cn wcel clt wbr wa cmul co cmo wceq w3a cz c1 fzossnn
@@ -885293,8 +885329,9 @@ $)
 
   ${
     $d A z $.  $d B z $.
-    $( Equality preserves the universally quantified residue multiplication
-       predicate.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( Equal multipliers give equivalent universally quantified multiplication
+       identities for the listed values of ` F ` .  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
     fmulraleq $p |- ( A = B -> ( A. z e. ZZ ( -. P || z -> ( F ` ( A x. z )
     ) = ( ( F ` A ) x. ( F ` z ) ) ) <-> A. z e. ZZ ( -. P || z -> ( F ` (
     B x. z ) ) = ( ( F ` B ) x. ( F ` z ) ) ) ) ) $=
@@ -885306,9 +885343,10 @@ $)
 
   ${
     $d F v z $.  $d N v z $.  $d P v z $.
-    $( Rename the integer argument in the residue multiplication predicate.
-       (Contributed by Zhi Wang, 17-Oct-2026.)  (Revised by Zhi Wang,
-       19-Oct-2026.) $)
+    $( Renaming the bound integer variable preserves the assertion that ` F `
+       satisfies the displayed multiplication identity at integers not
+       divisible by ` P ` .  (Contributed by Zhi Wang, 17-Oct-2026.)  (Revised
+       by Zhi Wang, 19-Oct-2026.) $)
     fmulralcbv $p |- ( A. z e. ZZ ( -. P || z -> ( F ` ( N x. z ) ) = ( ( F
     ` N ) x. ( F ` z ) ) ) <-> A. v e. ZZ ( -. P || v -> ( F ` ( N x. v ) )
     = ( ( F ` N ) x. ( F ` v ) ) ) ) $=
@@ -885358,10 +885396,10 @@ $)
     ) = ( a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
     liougb4rigidrald.4 $e |- ( ph -> -. 3 || P ) $.
     liougb4rigidrald.5 $e |- ( ph -> N e. NN ) $.
-    $( Under the missing-negative-pair hypothesis for four times the prime,
-       strong induction proves multiplicativity of the residue function from
-       ~ lioumodval for every positive multiplier below the prime modulus.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( If a prime is not divisible by three and its quadruple has no
+       negative-negative pair, strong induction proves multiplicativity of the
+       residue function from ~ lioumodval for every positive multiplier below
+       the prime modulus.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4rigidrald $p |- ( ph -> ( N < P -> A. z e. ZZ ( -. P || z -> (
     F ` ( N x. z ) ) = ( ( F ` N ) x. ( F ` z ) ) ) ) ) $=
       ( vn vm cv clt wbr cfv wi vv vk cdvds wn cmul wceq wral fmulraleq imbi12d
@@ -885490,11 +885528,11 @@ $)
     liougb4modmuld.6 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 4 x. P )
     = ( a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
     liougb4modmuld.7 $e |- ( ph -> -. 3 || P ) $.
-    $( If four times the prime ` P ` has no negative pair for Liouville's
-       function and ` P ` is not divisible by three, the residue function from
-       ~ lioumodval is multiplicative for positive multipliers below ` P ` and
-       integer arguments not divisible by ` P ` .  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
+    $( If four times the prime ` P ` has no negative-negative pair for
+       Liouville's function and ` P ` is not divisible by three, the residue
+       function from ~ lioumodval is multiplicative for positive multipliers
+       below ` P ` and integer arguments not divisible by ` P ` .  (Contributed
+       by Zhi Wang, 17-Oct-2026.) $)
     liougb4modmuld $p |- ( ph -> ( F ` ( N x. Z ) ) = ( ( F ` N ) x. ( F
     ` Z ) ) ) $=
       ( vz wbr cv co cfv clt cdvds wn cmul wceq wi cz wral c1 cfzo elfzolt2 syl
@@ -885524,9 +885562,10 @@ $)
     liougb4modsqd.5 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 4 x. P ) =
     ( a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
     liougb4modsqd.6 $e |- ( ph -> -. 3 || P ) $.
-    $( Under the missing-negative-pair hypothesis for four times the prime, the
-       residue function from ~ lioumodval takes value one on every nonzero
-       square residue.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( If four times the prime has no negative-negative pair, the residue
+       function from ~ lioumodval takes value one on every nonzero square
+       residue.  Here three does not divide the prime.  (Contributed by Zhi
+       Wang, 17-Oct-2026.) $)
     liougb4modsqd $p |- ( ph -> ( F ` ( Z ^ 2 ) ) = 1 ) $=
       ( co cfv cmul c1 cmo wcel syl c2 cexp zcnd sqvald fveq2d cn prmnn cfzo cz
       cprime zmod1fzod elfzoelz cr crp wceq zred nnrpd modabs2 syl2anc eqid a1i
@@ -885548,9 +885587,10 @@ $)
     liougb4modm1d.3 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 4 x. P ) =
     ( a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
     liougb4modm1d.4 $e |- ( ph -> -. 3 || P ) $.
-    $( Under the missing-negative-pair hypothesis for four times the prime, the
-       residue function from ~ lioumodval takes value minus one at minus one.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( If a prime is not divisible by three and its quadruple has no
+       negative-negative pair, the residue function from ~ lioumodval takes
+       value minus one at minus one.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
     liougb4modm1d $p |- ( ph -> ( F ` -u 1 ) = -u 1 ) $=
       ( c1 cneg cfv cprime wcel cn prmnn syl 1zzd cdvds wbr nprmdvds1 lioumod1d
       wn lioumodnegd negeqd eqtrd ) AKLDMKDMLKLABKCDEFGACNOCPOHCQRASACNOCKTUAUD
@@ -885566,9 +885606,10 @@ $)
     liougb4lgsposd.5 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 4 x. P )
     = ( a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
     liougb4lgsposd.6 $e |- ( ph -> -. 3 || P ) $.
-    $( Under the missing-negative-pair hypothesis for four times the prime,
-       every nonzero quadratic residue has value one under the residue function
-       from ~ lioumodval .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( If four times the prime has no negative-negative pair, every nonzero
+       quadratic residue has value one under the residue function from
+       ~ lioumodval .  Here three does not divide the prime.  (Contributed by
+       Zhi Wang, 17-Oct-2026.) $)
     liougb4lgsposd $p |- ( ph -> ( F ` A ) = 1 ) $=
       ( vu cv c2 co cmo wceq wa cexp cdvds wbr wn wrex cfv clgs wcel cprime csn
       cz c1 cdif lgsqrmodndvds syl2anc mpd simprl zsqcl syl simpl simprr simpld
@@ -885597,10 +885638,9 @@ $)
     liougb4nmod1d.3 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 4 x. P ) =
     ( a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
     liougb4nmod1d.4 $e |- ( ph -> -. 3 || P ) $.
-    $( If four times an odd prime has no negative pair for Liouville's
-       function, the prime cannot have residue one modulo four, under the
-       stated nondivisibility hypothesis.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
+    $( If four times an odd prime has no negative-negative pair and three does
+       not divide the prime, its residue modulo four cannot be one.
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4nmod1d $p |- ( ph -> -. ( P mod 4 ) = 1 ) $=
       ( c4 cmo co c1 wceq cneg wcel wa cprime adantr cn wne nnneneg mp1i neneqd
       1nn cfv c2 csn cdif cz neg1z a1i clgs simpr wb m1lgs mpbird cmul cv caddc
@@ -885635,10 +885675,11 @@ $)
     liougb4prmnqrd.5 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 4 x. P )
     = ( a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
     liougb4prmnqrd.6 $e |- ( ph -> -. 3 || P ) $.
-    $( Under the missing-negative-pair hypothesis for four times the prime,
-       every smaller prime is excluded from the quadratic residues.  Combine
-       its value minus one under Liouville's function with ~ liougb4lgsposd .
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( If an odd prime is not divisible by three and its quadruple has no
+       negative-negative pair, no smaller prime is a quadratic residue modulo
+       it.  Combine the smaller prime's value minus one under Liouville's
+       function with ~ liougb4lgsposd .  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
     liougb4prmnqrd $p |- ( ph -> -. ( R /L P ) = 1 ) $=
       ( clgs co c1 wceq cneg wcel cprime cn wne 1nn nnneneg mp1i neneqd cfv csn
       wa c2 cdif adantr cz prmz syl simpr c4 cmul cv caddc cliou w3a wrex wn c3
@@ -885689,9 +885730,9 @@ $)
     liougb4halfoddd.3 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 4 x. P )
     = ( a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
     liougb4halfoddd.4 $e |- ( ph -> -. 3 || P ) $.
-    $( If four times the odd prime has no negative pair for Liouville's
-       function, then ` ( ( P - 1 ) / 2 ) ` is odd.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
+    $( If four times the odd prime has no negative-negative pair for
+       Liouville's function, then ` ( ( P - 1 ) / 2 ) ` is odd.  Here three
+       does not divide the prime.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4halfoddd $p |- ( ph -> -. 2 || ( ( P - 1 ) / 2 ) ) $=
       ( c1 cneg cmin co c2 cdiv cexp wceq clgs wcel cdvds wbr cmo liougb4nmod1d
       c4 cprime csn cdif wb m1lgs syl mtbird m1lgsvald eqeq1d mtbid oddprm nnzd
@@ -885805,8 +885846,9 @@ $)
     dvdsp1modneg1d.1 $e |- ( ph -> A e. ZZ ) $.
     dvdsp1modneg1d.2 $e |- ( ph -> M e. NN ) $.
     dvdsp1modneg1d.3 $e |- ( ph -> M || ( A + 1 ) ) $.
-    $( A divisor of an integer successor identifies its residue with negative
-       one.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( If ` M ` divides ` ( A + 1 ) ` , then the residue of ` A ` modulo ` M `
+       equals the residue of minus one.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
     dvdsp1modneg1d $p |- ( ph -> ( A mod M ) = ( -u 1 mod M ) ) $=
       ( cmo co c1 cneg wceq cmin cdvds wbr caddc zcnd 1cnd mpbird wcel cz cn wb
       subnegd breq2d neg1z a1i moddvds syl3anc ) ABCGHIJCGHKCBIJLHMNACBIJLHMNCB
@@ -885915,7 +885957,7 @@ $)
     liougb4prmgt3fd.1 $e |- F = ( x e. ZZ |-> ( lam ` ( x mod P ) ) ) $.
     liougb4prmgt3fd.2 $e |- ( ph -> P e. Prime ) $.
     liougb4prmgt3fd.3 $e |- ( ph -> 3 < P ) $.
-    $( Four times a prime greater than three has a negative pair for
+    $( Four times a prime greater than three has a negative-negative pair for
        Liouville's function, with a local residue-function alias.  A missing
        pair would yield a smaller prime both included in and excluded from the
        quadratic residues; see ~ oddprmqrexd and ~ liougb4prmnqrd .
@@ -885959,7 +886001,7 @@ $)
     $d P a b $.  $d P x $.
     liougb4prmgt3d.1 $e |- ( ph -> P e. Prime ) $.
     liougb4prmgt3d.2 $e |- ( ph -> 3 < P ) $.
-    $( Four times a prime greater than three has a negative pair for
+    $( Four times a prime greater than three has a negative-negative pair for
        Liouville's function.  Instantiate the local residue function in
        ~ liougb4prmgt3fd .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4prmgt3d $p |- ( ph -> E. a e. NN E. b e. NN ( ( 4 x. P ) = ( a
@@ -885996,9 +886038,10 @@ $)
   ${
     $d P a b $.
     liougb4prmd.1 $e |- ( ph -> P e. Prime ) $.
-    $( The quadruple of every prime has a negative pair for Liouville's
-       function.  Combine the cases two and three with the reciprocity argument
-       for larger primes.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( The quadruple of every prime has a negative-negative pair for
+       Liouville's function.  Combine the cases two and three with the
+       reciprocity argument for larger primes.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
     liougb4prmd $p |- ( ph -> E. a e. NN E. b e. NN ( ( 4 x. P ) = ( a +
     b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
       ( c2 wceq c5 cfv wcel c4 cmul co cv cliou c1 cneg cn wrex wa c3 cuz caddc
@@ -886027,9 +886070,9 @@ $)
     liougb4mulposd.3 $e |- ( ph -> ( lam ` K ) = 1 ) $.
     liougb4mulposd.4 $e |- ( ph -> E. u e. NN E. v e. NN ( ( 4 x. A ) = (
     u + v ) /\ ( lam ` u ) = -u 1 /\ ( lam ` v ) = -u 1 ) ) $.
-    $( Scale a negative pair for Liouville's function by a positive integer at
-       which the function is one.  Transport both witnesses and use complete
-       multiplicativity.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( Scale a negative-negative pair for Liouville's function by a positive
+       integer at which the function is one.  Transport both witnesses and use
+       complete multiplicativity.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4mulposd $p |- ( ph -> E. a e. NN E. b e. NN ( ( 4 x. ( A x. K
     ) ) = ( a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
       ( co cv wceq cliou cfv c1 cneg cn wa c4 cmul caddc w3a wrex simplr simprl
@@ -886091,8 +886134,8 @@ $)
     liougb4prmdivd.3 $e |- ( ph -> P || A ) $.
     liougb4prmdivd.4 $e |- ( ph -> ( lam ` A ) = -u 1 ) $.
     $( Transfer the prime-parameter decomposition to a positive multiple with
-       negative value of Liouville's function, using the positive-sign
-       quotient.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+       negative value of Liouville's function, using the quotient with
+       Liouville value one.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4prmdivd $p |- ( ph -> E. a e. NN E. b e. NN ( ( 4 x. A ) = ( a
     + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
       ( c4 cdiv co cmul cv wceq cliou cfv c1 cneg cn vv vu w3a wrex cprime wcel
@@ -886130,10 +886173,10 @@ $)
   ${
     $d A a b $.
     liougb4nnd.1 $e |- ( ph -> A e. NN ) $.
-    $( Every positive multiple of four has a negative pair for Liouville's
-       function, deduction version.  Split the positive parameter according to
-       its two possible function values.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
+    $( Every positive multiple of four has a negative-negative pair for
+       Liouville's function, deduction version.  Split the positive parameter
+       according to its two possible function values.  (Contributed by Zhi
+       Wang, 17-Oct-2026.) $)
     liougb4nnd $p |- ( ph -> E. a e. NN E. b e. NN ( ( 4 x. A ) = ( a + b
     ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
       ( cliou cfv c1 wceq c4 cmul co cv caddc cneg w3a cn wrex wcel wn wa simpr
@@ -886229,8 +886272,9 @@ $)
     $d K a b u v $.  $d N a b u v $.  $d T a b u v $.  $d ph u v $.
     lioupairmulreximd.1 $e |- ( ph -> K e. NN ) $.
     lioupairmulreximd.2 $e |- ( ph -> ( S x. ( lam ` K ) ) = T ) $.
-    $( Scale an existential equal-sign pair for Liouville's function, with the
-       input existence statement retained as an implication premise.
+    $( Scaling positive-integer summands by ` K ` changes their common
+       Liouville value from ` S ` to ` T ` when ` T = ( S x. ( lam `` K ) ) ` .
+       Here the existence of the original summands is an implication premise.
        (Contributed by Zhi Wang, 20-Oct-2026.) $)
     lioupairmulreximd $p |- ( ph -> ( E. u e. NN E. v e. NN ( N = ( u + v )
       /\ ( lam ` u ) = S /\ ( lam ` v ) = S ) -> E. a e. NN E. b e. NN ( ( N
@@ -886255,9 +886299,10 @@ $)
     lioupairmulrexd.2 $e |- ( ph -> ( S x. ( lam ` K ) ) = T ) $.
     lioupairmulrexd.3 $e |- ( ph -> E. u e. NN E. v e. NN ( N = ( u + v ) /\
       ( lam ` u ) = S /\ ( lam ` v ) = S ) ) $.
-    $( Scale an existential pair for Liouville's function by a positive
-       integer, applying ~ lioupairmuld to both witnesses.  (Contributed by Zhi
-       Wang, 20-Oct-2026.) $)
+    $( Scaling positive-integer summands by ` K ` changes their common
+       Liouville value from ` S ` to ` T ` when ` T = ( S x. ( lam `` K ) ) ` .
+       Apply ~ lioupairmuld to the witnesses supplied by the existence
+       hypothesis.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     lioupairmulrexd $p |- ( ph -> E. a e. NN E. b e. NN ( ( N x. K ) = ( a +
       b ) /\ ( lam ` a ) = T /\ ( lam ` b ) = T ) ) $=
       ( cv caddc co wceq cliou cfv cn wrex w3a cmul lioupairmulreximd mpd ) AGC
@@ -886284,8 +886329,9 @@ $)
     $d K a b u v $.  $d ph u v $.
     liougb18posd.1 $e |- ( ph -> K e. NN ) $.
     liougb18posd.2 $e |- ( ph -> ( lam ` K ) = 1 ) $.
-    $( Scale the negative pair for eighteen by a positive integer at which
-       Liouville's function is one.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( Scale the negative-negative pair for eighteen by a positive integer at
+       which Liouville's function is one.  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
     liougb18posd $p |- ( ph -> E. a e. NN E. b e. NN ( ( ; 1 8 x. K ) = ( a +
       b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
       ( vv vu c1 cneg c8 cdc cliou cfv cmul co cv wceq cn wrex oveq2d caddc w3a
@@ -886301,9 +886347,9 @@ $)
     liounopairsgnd.4 $e |- ( ph -> -. E. a e. NN E. b e. NN ( N = ( a + b )
       /\ ( lam ` a ) = S /\ ( lam ` b ) = S ) ) $.
     liounopairsgnd.5 $e |- ( ph -> ( lam ` A ) = S ) $.
-    $( Absence of an equal-sign pair for Liouville's function excludes the same
-       sign on the complementary summand.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
+    $( If no positive-integer decomposition of ` N ` has common Liouville value
+       ` S ` , a summand with value ` S ` has a complement with value different
+       from ` S ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liounopairsgnd $p |- ( ph -> -. ( lam ` B ) = S ) $=
       ( cliou cfv wceq cv caddc cn wrex adantr co w3a wa wcel simpr lioupairexd
       ex mtod ) ACMNDOEFPGPQUAOFPMNDOGPMNDOUBGRSFRSKACMNDOEFPGPQUAOFPMNDOGPMNDO
@@ -886316,10 +886362,10 @@ $)
     liou2nopairnegd.1 $e |- ( ph -> P e. NN ) $.
     liou2nopairnegd.2 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = (
       a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( Absence of a positive pair for Liouville's function at twice a positive
-       integer excludes a negative pair at that integer.  Double both summands
-       using the common scaling implication.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
+    $( Absence of a positive-positive pair for Liouville's function at twice a
+       positive integer excludes a negative-negative pair at that integer.
+       Double both summands using the common scaling implication.  (Contributed
+       by Zhi Wang, 20-Oct-2026.) $)
     liou2nopairnegd $p |- ( ph -> -. E. u e. NN E. v e. NN ( P = ( u + v ) /\
       ( lam ` u ) = -u 1 /\ ( lam ` v ) = -u 1 ) ) $=
       ( cv caddc co wceq cliou cfv c1 cneg cn wrex c2 cmul w3a 2nn liou2 oveq2i
@@ -886339,9 +886385,9 @@ $)
     liounopairposd.4 $e |- ( ph -> -. E. a e. NN E. b e. NN ( N = ( a + b )
       /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     liounopairposd.5 $e |- ( ph -> ( lam ` A ) = 1 ) $.
-    $( Absence of a positive pair for Liouville's function forces the
-       complementary sign to be negative.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
+    $( If ` N ` has no positive-positive pair, a positive-integer summand with
+       Liouville value one has a complement with value minus one.  (Contributed
+       by Zhi Wang, 20-Oct-2026.) $)
     liounopairposd $p |- ( ph -> ( lam ` B ) = -u 1 ) $=
       ( c1 liounopairsgnd liounnnotposd ) ACHABCLDEFGHIJKMN $.
   $}
@@ -886362,9 +886408,9 @@ $)
     liougbprmdivd.4 $e |- ( ph -> ( lam ` A ) = 1 ) $.
     liougbprmdivd.5 $e |- ( ph -> E. u e. NN E. v e. NN ( ( 2 x. P ) = ( u +
       v ) /\ ( lam ` u ) = 1 /\ ( lam ` v ) = 1 ) ) $.
-    $( Transfer a positive pair for Liouville's function at twice a prime to a
-       negative pair at twice a positive multiple at which Liouville's function
-       is one.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( Transfer a positive-positive pair for Liouville's function at twice a
+       prime to a negative-negative pair at twice a positive multiple at which
+       Liouville's function is one.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liougbprmdivd $p |- ( ph -> E. a e. NN E. b e. NN ( ( 2 x. A ) = ( a + b
       ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
       ( cmul co cdiv cv wceq cliou cfv c1 c2 caddc cneg w3a wrex liouprmdivnegd
@@ -886408,9 +886454,9 @@ $)
     liou2reflnegd.4 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = ( a
       + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     liou2reflnegd.5 $e |- ( ph -> ( lam ` A ) = -u 1 ) $.
-    $( If twice ` P ` has no positive pair for Liouville's function, the
-       complement of a negative-sign positive integer below ` P ` has value one
-       under Liouville's function.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( If twice ` P ` has no positive-positive pair and a positive integer
+       ` A < P ` has Liouville value minus one, its complement ` ( P - A ) `
+       has value one.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liou2reflnegd $p |- ( ph -> ( lam ` ( P - A ) ) = 1 ) $=
       ( vu vv cmin co clt wbr cn wcel wb nncnd nnsub syl2anc mpbid caddc eqcomd
       pncan3d liou2nopairnegd liounopaird ) ABCBMNCKLGABCOPCBMNQRHABQRCQRBCOPCB
@@ -886421,7 +886467,7 @@ $)
     $d A a b $.
     liougb4evend.1 $e |- ( ph -> A e. NN ) $.
     liougb4evend.2 $e |- ( ph -> 2 || A ) $.
-    $( The double of a positive even integer has a negative pair for
+    $( The double of a positive even integer has a negative-negative pair for
        Liouville's function.  Reuse ~ liougb4nnd with the positive integer
        half-parameter.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liougb4evend $p |- ( ph -> E. a e. NN E. b e. NN ( ( 2 x. A ) = ( a + b )
@@ -886467,10 +886513,10 @@ $)
     liou2transnegd.4 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = (
       a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     liou2transnegd.5 $e |- ( ph -> ( lam ` A ) = -u 1 ) $.
-    $( If twice ` P ` has no positive pair for Liouville's function, a positive
-       integer ` A ` below ` P ` at which Liouville's function is minus one has
-       a translated argument ` ( P + A ) ` at which Liouville's function is
-       minus one.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( If twice ` P ` has no positive-positive pair for Liouville's function, a
+       positive integer ` A ` below ` P ` at which Liouville's function is
+       minus one has a translated argument ` ( P + A ) ` at which Liouville's
+       function is minus one.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liou2transnegd $p |- ( ph -> ( lam ` ( P + A ) ) = -u 1 ) $=
       ( cmin co caddc c2 cmul clt wbr cn wcel nncnd nnsub syl2anc mpbid 2timesd
       wb nnaddcld subadd23d pncand oveq2d eqtr4d liou2reflnegd liounopairposd
@@ -886486,9 +886532,9 @@ $)
     liou2refld.3 $e |- ( ph -> A < P ) $.
     liou2refld.4 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = ( a +
       b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( The reflection inequality forced by absence of a positive pair for
-       Liouville's function at twice the positive integer parameter.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( If twice ` P ` has no positive-positive pair, Liouville's value at
+       ` ( P - A ) ` is at least the negative of its value at a positive
+       integer ` A < P ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liou2refld $p |- ( ph -> -u ( lam ` A ) <_ ( lam ` ( P - A ) ) ) $=
       ( cliou cfv c1 cneg wceq cmin co cle wbr wa cn simpr negeqd ax-1cn eqtrdi
       negnegi 1le1 a1i wcel adantr clt c2 cmul caddc w3a liou2reflnegd breqtrrd
@@ -886519,8 +886565,9 @@ $)
        ` ( P / 2 ) ` .  Their middle band lies strictly between ` ( P / 4 ) `
        and ` ( P / 3 ) ` ; their upper third lies strictly between
        ` ( P / 3 ) ` and ` ( P / 2 ) ` .  These intervals control the doubling
-       and tripling comparisons below.  The missing-positive-pair hypothesis at
-       twice a prime ultimately forces full multiplicativity in ~ liouoddmuld .
+       and tripling comparisons below.  If ` P ` is a prime greater than three
+       and twice ` P ` has no positive-positive pair, the completion is
+       multiplicative away from multiples of ` P ` by ~ liouoddmuld .
        (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouoddval $p |- ( ph -> ( F ` A ) = if ( ( A mod P ) < ( P / 2 ) , ( lam
       ` ( A mod P ) ) , -u ( lam ` ( P - ( A mod P ) ) ) ) ) $=
@@ -886538,8 +886585,10 @@ $)
     liou2dblrefld.3 $e |- ( ph -> ( 2 x. A ) < P ) $.
     liou2dblrefld.4 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = ( a
       + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( A doubled reflection inequality under the absence of a positive pair for
-       Liouville's function.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( If twice ` P ` has no positive-positive pair, Liouville's value at
+       ` ( P - ( 2 x. A ) ) ` is at least its value at ` A ` , for positive
+       integers with ` ( 2 x. A ) < P ` .  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
     liou2dblrefld $p |- ( ph -> ( lam ` A ) <_ ( lam ` ( P - ( 2 x. A ) ) ) )
       $=
       ( c2 cmul co cliou cfv cneg cmin cle cn wcel syl wceq liounn2mul liounncn
@@ -886555,8 +886604,9 @@ $)
     liou2transled.3 $e |- ( ph -> A < P ) $.
     liou2transled.4 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = ( a
       + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( A translation inequality under the absence of a positive pair for
-       Liouville's function.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( If twice ` P ` has no positive-positive pair, Liouville's value at
+       ` ( P + A ) ` is at most its value at a positive integer ` A < P ` .
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liou2transled $p |- ( ph -> ( lam ` ( P + A ) ) <_ ( lam ` A ) ) $=
       ( cliou cfv c1 cneg wceq caddc co cle wbr wa cn wcel adantr clt c2 cv w3a
       cmul wrex simpr liou2transnegd neg1rr leidi a1i eqbrtrd breqtrrd nnaddcld
@@ -886698,8 +886748,9 @@ $)
     liouoddnegd.3 $e |- ( ph -> -. 2 || P ) $.
     liouoddnegd.4 $e |- ( ph -> A e. ZZ ) $.
     liouoddnegd.5 $e |- ( ph -> -. P || A ) $.
-    $( The odd completion reverses sign under negation of a nonzero residue.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( For an odd positive modulus, the completion of ~ liouoddval reverses
+       sign under negation away from multiples of the modulus.  (Contributed by
+       Zhi Wang, 20-Oct-2026.) $)
     liouoddnegd $p |- ( ph -> ( F ` -u A ) = -u ( F ` A ) ) $=
       ( cneg cfv cmo co c2 cdiv clt wbr cliou cmin cif cz znegcl syl liouoddval
       wcel wceq negmodndvdsd liouoddifeq eqtrd c1 cfzo fzossnn zmod1fzod sselid
@@ -886717,8 +886768,9 @@ $)
     signnotposled.1 $e |- ( ph -> A e. { -u 1 , 1 } ) $.
     signnotposled.2 $e |- ( ph -> B e. { -u 1 , 1 } ) $.
     signnotposled.3 $e |- ( ph -> ( A = 1 -> B = -u 1 ) ) $.
-    $( Exclusion of two positive signs yields an ordering of opposite signs.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( If two values in ` { -u 1 , 1 } ` are not both one, either value is at
+       most the negative of the other.  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
     signnotposled $p |- ( ph -> B <_ -u A ) $=
       ( c1 cneg wceq cle wbr wa cpr signbounds syl simprd simpr negeqd breqtrrd
       wcel adantr ax-1cn negnegi eqtrdi neg1rr leidi eqbrtrdi wo elpri mpjaodan
@@ -886736,9 +886788,10 @@ $)
     liou2pair23posd.5 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = (
       a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     liou2pair23posd.6 $e |- ( ph -> ( lam ` U ) = 1 ) $.
-    $( A three-two decomposition under the missing-pair hypothesis excludes
-       simultaneous positive values of Liouville's function.  (Contributed by
-       Zhi Wang, 20-Oct-2026.) $)
+    $( If ` P = ( ( 3 x. U ) + ( 2 x. V ) ) ` with positive integer summands
+       and twice ` P ` has no positive-positive pair, Liouville value one at
+       ` U ` forces value minus one at ` V ` .  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
     liou2pair23posd $p |- ( ph -> ( lam ` V ) = -u 1 ) $=
       ( cliou cfv cneg c1 cn wcel cmul co vu vv cc liounncn syl negnegd c2 wceq
       liounn2mul c3 3nn a1i nnmulcld 2nn liou2nopairnegd liounn3mul liounopaird
@@ -886783,7 +886836,9 @@ $)
     liou2pair23led.4 $e |- ( ph -> P = ( ( 3 x. U ) + ( 2 x. V ) ) ) $.
     liou2pair23led.5 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = (
       a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( The sign inequality forced by a three-two decomposition.  (Contributed
+    $( If ` P = ( ( 3 x. U ) + ( 2 x. V ) ) ` with positive integers ` U ` and
+       ` V ` and twice ` P ` has no positive-positive pair, the Liouville value
+       at ` V ` is at most the negative of its value at ` U ` .  (Contributed
        by Zhi Wang, 20-Oct-2026.) $)
     liou2pair23led $p |- ( ph -> ( lam ` V ) <_ -u ( lam ` U ) ) $=
       ( cliou cfv cn wcel c1 wceq adantr co cv cneg cpr liounncl syl wa c3 cmul
@@ -886808,8 +886863,8 @@ $)
 
   ${
     mul3sub2d.1 $e |- ( ph -> P e. CC ) $.
-    $( The difference of three times and twice a complex number.  (Contributed
-       by Zhi Wang, 20-Oct-2026.) $)
+    $( Three times a complex number minus twice that number equals the original
+       number.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     mul3sub2d $p |- ( ph -> ( ( 3 x. P ) - ( 2 x. P ) ) = P ) $=
       ( c3 c2 cmin co cmul cc wcel 3cn a1i 2cn subdird c1 wceq ax-1cn subsub23i
       3m1e2 mpbi oveq1i mullidd eqtrid eqtr3d ) ADEFGBHGDBHGEBHGFGBADEBDIJAKLEI
@@ -886836,7 +886891,8 @@ $)
     sub3ltnd.1 $e |- ( ph -> P e. NN ) $.
     sub3ltnd.2 $e |- ( ph -> N e. NN ) $.
     sub3ltnd.3 $e |- ( ph -> ( 2 x. N ) < P ) $.
-    $( Two order bounds used in the upper-third reflection argument.
+    $( For positive integers with ` ( 2 x. N ) < P ` , the difference
+       ` ( ( 3 x. N ) - P ) ` is below ` N ` , and ` N ` is below ` P ` .
        (Contributed by Zhi Wang, 20-Oct-2026.) $)
     sub3ltnd $p |- ( ph -> ( ( ( 3 x. N ) - P ) < N /\ N < P ) ) $=
       ( c3 cmul co cmin clt wbr c2 cn wcel 2nn a1i nnmulcld nnred 3nn mul3sub2d
@@ -886859,7 +886915,8 @@ $)
     liou2refl3eqd.10 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = (
       a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     $( A closed chain of sign inequalities forces the two upper-third
-       reflection equalities.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+       reflection equalities.  Here twice ` P ` has no positive-positive pair.
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liou2refl3eqd $p |- ( ph -> ( ( lam ` U ) = ( lam ` N ) /\ ( lam ` V ) =
       -u ( lam ` N ) ) ) $=
       ( cliou cfv wcel wceq cneg cle wbr wa cr cn liounnre syl renegcl caddc co
@@ -886889,9 +886946,11 @@ $)
     liou2refl3d.4 $e |- ( ph -> P < ( 3 x. N ) ) $.
     liou2refl3d.5 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = ( a +
       b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( Exact upper-third reflection of the values of Liouville's function
-       forced by a missing positive pair.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
+    $( If twice ` P ` has no positive-positive pair, reflection at twice an
+       argument in the upper third preserves its Liouville value, whereas
+       subtracting ` P ` from its triple negates that value.  The upper third
+       is the interval strictly between ` ( P / 3 ) ` and ` ( P / 2 ) ` .
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liou2refl3d $p |- ( ph -> ( ( lam ` ( P - ( 2 x. N ) ) ) = ( lam ` N ) /\
       ( lam ` ( ( 3 x. N ) - P ) ) = -u ( lam ` N ) ) ) $=
       ( c2 cmul co cmin c3 cn wcel a1i nnmulcld nncnd 2nn nnsubgtd wceq pncan3d
@@ -887065,8 +887124,9 @@ $)
     liouodd2smalld.4 $e |- ( ph -> N e. NN ) $.
     liouodd2smalld.5 $e |- ( ph -> ( 2 x. N ) < P ) $.
     liouodd2smalld.6 $e |- ( ph -> ( 4 x. N ) < P ) $.
-    $( Local doubling symmetry below one quarter of the modulus.  (Contributed
-       by Zhi Wang, 20-Oct-2026.) $)
+    $( At a positive integer below one quarter of an odd modulus, the odd
+       completion agrees with its value at the negated double.  (Contributed by
+       Zhi Wang, 20-Oct-2026.) $)
     liouodd2smalld $p |- ( ph -> ( F ` -u ( 2 x. N ) ) = ( F ` N ) ) $=
       ( c2 cn wcel 2nn a1i cliou cfv cmul co c1 cneg wceq liou2 c4 nncnd mul22d
       clt eqbrtrd liouoddshortnegd ) ABCDLEFGHLMNAOPILQRUAUBUCAUDPJALLESTSTUEES
@@ -887100,7 +887160,8 @@ $)
     liouodd3smalld.4 $e |- ( ph -> N e. NN ) $.
     liouodd3smalld.5 $e |- ( ph -> ( 2 x. N ) < P ) $.
     liouodd3smalld.6 $e |- ( ph -> ( 6 x. N ) < P ) $.
-    $( Local tripling symmetry below one sixth of the modulus.  (Contributed by
+    $( At a positive integer below one sixth of an odd modulus, the odd
+       completion agrees with its value at the negated triple.  (Contributed by
        Zhi Wang, 20-Oct-2026.) $)
     liouodd3smalld $p |- ( ph -> ( F ` -u ( 3 x. N ) ) = ( F ` N ) ) $=
       ( c3 cn wcel 3nn a1i cliou cfv cmul co c1 cneg wceq liou3 c2 c6 clt nncnd
@@ -887151,10 +887212,10 @@ $)
     liouodd2led.5 $e |- ( ph -> ( 2 x. N ) < P ) $.
     liouodd2led.6 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = ( a +
       b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( If twice the odd modulus has no positive pair for Liouville's function,
-       the odd completion at a positive central representative is no greater
-       than its value at the negated double.  See ~ liouoddval for the central
-       interval.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( If twice the odd modulus has no positive-positive pair for Liouville's
+       function, the odd completion at a positive central representative is no
+       greater than its value at the negated double.  See ~ liouoddval for the
+       central interval.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouodd2led $p |- ( ph -> ( F ` N ) <_ ( F ` -u ( 2 x. N ) ) ) $=
       ( c4 cmul co clt wbr cfv wn c2 cneg wa wcel cliou liouoddsmall2d liounnre
       cle cr cn syl eqeltrd leid adantr cdvds liouodd2smalld breqtrrd cmin wceq
@@ -887180,8 +887241,9 @@ $)
     liouodd2upperd.6 $e |- ( ph -> P < ( 3 x. N ) ) $.
     liouodd2upperd.7 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = (
       a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( Exact doubling symmetry on the upper third of the central interval.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( On the upper third of the positive central interval, the odd completion
+       agrees with its value at the negated double.  Here twice ` P ` has no
+       positive-positive pair.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouodd2upperd $p |- ( ph -> ( F ` -u ( 2 x. N ) ) = ( F ` N ) ) $=
       ( cmul co cfv cliou c4 c3 c2 cneg cmin nnred cr wcel 4re a1i remulcld 3re
       nnrpd clt wbr 3lt4 ltmul1dd lttrd ltnsymd liouodd2larged wceq liou2refl3d
@@ -887203,10 +887265,10 @@ $)
     liouodd3midled.7 $e |- ( ph -> -. ( 6 x. N ) < P ) $.
     liouodd3midled.8 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = (
       a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( If twice the odd modulus has no positive pair for Liouville's function,
-       the odd completion at ` N ` is no greater than its value at the negated
-       triple, for ` N ` at least ` ( P / 6 ) ` and below ` ( P / 3 ) ` .
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( If twice the odd modulus has no positive-positive pair for Liouville's
+       function, the odd completion at ` N ` is no greater than its value at
+       the negated triple, for ` N ` at least ` ( P / 6 ) ` and below
+       ` ( P / 3 ) ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouodd3midled $p |- ( ph -> ( F ` N ) <_ ( F ` -u ( 3 x. N ) ) ) $=
       ( cfv c3 cmul co cliou cmin cneg liouoddsmall2d cn wcel liounn3mul negeqd
       cle wceq syl cc liounncn negnegd 3nn nnmulcld liou2refld eqbrtrrd eqbrtrd
@@ -887251,8 +887313,9 @@ $)
     liouodd3upperd.6 $e |- ( ph -> P < ( 3 x. N ) ) $.
     liouodd3upperd.7 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = (
       a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( Exact tripling symmetry on the upper third of the central interval.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( On the upper third of the positive central interval, the odd completion
+       agrees with its value at the negated triple.  Here twice ` P ` has no
+       positive-positive pair.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouodd3upperd $p |- ( ph -> ( F ` -u ( 3 x. N ) ) = ( F ` N ) ) $=
       ( c3 cmul co cneg cfv cliou cmin cn wcel 3nn a1i nnmulcld liouoddnegsubpd
       nnzd nnsubgtd sub3dblpd liouoddnegsmall2d c2 liou2refl3d simprd negeqd cc
@@ -887329,7 +887392,8 @@ $)
     liou2midrefld.6 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = ( a
       + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     $( The two reflected values of Liouville's function agree on the middle
-       band.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+       band.  Here twice ` P ` has no positive-positive pair.  (Contributed by
+       Zhi Wang, 20-Oct-2026.) $)
     liou2midrefld $p |- ( ph -> ( lam ` ( P - ( 2 x. N ) ) ) = ( lam ` ( P -
       ( 3 x. N ) ) ) ) $=
       ( c2 cmul co cmin cliou cfv c3 cn wcel 2nn a1i nnmulcld nnsubgtd liounncn
@@ -887388,7 +887452,8 @@ $)
     liouodd23midd.7 $e |- ( ph -> ( 3 x. N ) < P ) $.
     liouodd23midd.8 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = ( a
       + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( The doubled and tripled completion values agree on the middle band.
+    $( On the middle band, the odd completion agrees at the negated double and
+       negated triple.  Here twice ` P ` has no positive-positive pair.
        (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouodd23midd $p |- ( ph -> ( F ` -u ( 2 x. N ) ) = ( F ` -u ( 3 x. N ) )
       ) $=
@@ -887520,11 +887585,11 @@ $)
     liouodd3extrad.7 $e |- ( ph -> P < ( 6 x. N ) ) $.
     liouodd3extrad.8 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = (
       a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( The commuting doubling and tripling inequalities give exact tripling on
-       the remaining interval, strictly between ` ( P / 6 ) ` and
-       ` ( P / 4 ) ` , under the missing-positive-pair hypothesis.  See
-       ~ liouodd2led and ~ liouodd3midled .  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
+    $( The commuting doubling and tripling inequalities give equality with the
+       value at the negated triple on the interval strictly between
+       ` ( P / 6 ) ` and ` ( P / 4 ) ` .  See ~ liouodd2led and
+       ~ liouodd3midled .  Here twice ` P ` has no positive-positive pair.
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouodd3extrad $p |- ( ph -> ( F ` -u ( 3 x. N ) ) = ( F ` N ) ) $=
       ( c3 cmul co c2 wcel cneg cfv wceq cle wbr wa cmin cn 3nn nnmulcld cprime
       a1i prmnn syl clt sub3extrabd simpld nnsubgtd nnzd znegcld modnegsubselfd
@@ -887628,9 +887693,9 @@ $)
     liouodd23centrald.6 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) =
     ( a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     $( The odd completion agrees at the negated double and negated triple of
-       each positive central representative if twice the prime has no positive
-       pair for Liouville's function.  See ~ liouoddval for the central
-       interval.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+       each positive central representative if twice the prime has no
+       positive-positive pair for Liouville's function.  See ~ liouoddval for
+       the central interval.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouodd23centrald $p |- ( ph -> ( F ` -u ( 2 x. N ) ) = ( F ` -u ( 3 x. N
     ) ) ) $=
       ( c4 cmul co clt wbr wa wn c2 cneg c3 wceq c6 cn wcel cprime prmnn adantr
@@ -887789,8 +887854,8 @@ $)
     liouodd23resd.5 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = ( a
     + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     $( Doubling and tripling have equal odd completion values on every nonzero
-       canonical residue under the missing-pair assumption.  (Contributed by
-       Zhi Wang, 20-Oct-2026.) $)
+       canonical residue when twice ` P ` has no positive-positive pair.
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouodd23resd $p |- ( ph -> ( F ` ( 2 x. N ) ) = ( F ` ( 3 x. N ) ) ) $=
       ( c2 cmul co clt wbr cn wcel wn cfv c3 wceq cprime prmnn syl adantr cdvds
       wa csn cdif prmgt3factsd simpld oddn2prm cz 2z a1i c1 cfzo fzossnn sselid
@@ -887836,8 +887901,8 @@ $)
     liouodd23d.6 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = ( a +
     b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     $( Doubling and tripling have equal odd completion values at any integer
-       not divisible by the prime under the missing-pair assumption.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+       not divisible by the prime when twice ` P ` has no positive-positive
+       pair.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouodd23d $p |- ( ph -> ( F ` ( 2 x. A ) ) = ( F ` ( 3 x. A ) ) ) $=
       ( co cmo cprime wcel cn prmnn syl c2 cmul cfv c3 cz 2z a1i cfzo zmod1fzod
       c1 elfzoelz cr crp wceq zred nnrpd modabs2 liouoddmulcong1d liouodd23resd
@@ -887888,9 +887953,10 @@ $)
     liouodd2supportd.6 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) =
     ( a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     liouodd2supportd.7 $e |- ( ph -> ( F ` -u ( 2 x. N ) ) =/= ( F ` N ) ) $.
-    $( Failure of the central doubling identity is confined strictly between
-       one quarter and one third of the prime.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
+    $( If twice ` P ` has no positive-positive pair, a positive central
+       argument whose odd-completion value differs from the value at its
+       negated double lies strictly between one quarter and one third of
+       ` P ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouodd2supportd $p |- ( ph -> ( P < ( 4 x. N ) /\ ( 3 x. N ) < P ) ) $=
       ( c4 cmul co clt wbr c3 wn c2 cneg cfv wceq neneqd wa cn cprime prmnn syl
       wcel adantr cdvds csn cdif prmgt3factsd simpld oddn2prm liouodd2smalld ex
@@ -887927,7 +887993,8 @@ $)
     $( Multiplication by two-thirds modulo the prime preserves the pair of
        completion values in the doubling comparison.  With ` ( 3 x. Z ) `
        congruent to ` N ` , replace ` N ` by ` ( 2 x. Z ) ` and use
-       ~ liouodd23d .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+       ~ liouodd23d .  Here twice ` P ` has no positive-positive pair.
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouodd23transportd $p |- ( ph -> ( ( F ` ( 2 x. Z ) ) = ( F ` N ) /\ ( F
     ` -u ( 2 x. ( 2 x. Z ) ) ) = ( F ` -u ( 2 x. N ) ) ) ) $=
       ( c2 cmul co c3 cfv wceq cneg liouodd23d cz wcel a1i zmulcld liouoddcongd
@@ -887984,7 +888051,8 @@ $)
     liouodd2upperled.6 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) =
     ( a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     $( The doubling inequality reverses in the upper half of the nonzero
-       residue interval.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+       residue interval.  Here twice ` P ` has no positive-positive pair.
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouodd2upperled $p |- ( ph -> ( F ` -u ( 2 x. N ) ) <_ ( F ` N ) ) $=
       ( c2 co cprime wcel syl wbr c1 cmul cneg cfv cle cn prmnn csn cdvds wn c3
       cdif prmgt3factsd simpld oddn2prm cz cfzo elfzoelz zmulcld prmgt3ndvds23d
@@ -888051,7 +888119,8 @@ $)
     liouodd2posfzod.6 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = (
     a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     $( A strict increase in the doubling comparison has a positive central
-       canonical representative.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+       canonical representative.  Here twice ` P ` has no positive-positive
+       pair.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouodd2posfzod $p |- ( ph -> ( 2 x. N ) < P ) $=
       ( c2 cmul co clt wbr wn cfv cneg cle wa cprime wcel adantr c3 c1 simpr cv
       cfzo caddc wceq cliou w3a cn wrex liouodd2upperled cr elfzoelz fzo1ndvdsd
@@ -888115,8 +888184,8 @@ $)
     liouodd2posrepd.7 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = (
     a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     $( A strict doubling increase gives a positive central representative in
-       the quarter-to-third interval.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
+       the quarter-to-third interval.  Here twice ` P ` has no
+       positive-positive pair.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouodd2posrepd $p |- ( ph -> ( ( A mod P ) e. NN /\ ( 2 x. ( A mod P ) )
     < P /\ ( P < ( 4 x. ( A mod P ) ) /\ ( 3 x. ( A mod P ) ) < P ) ) ) $=
       ( cmo co wcel c2 cmul cfv cn clt wbr c4 c3 wa c1 fzossnn cprime prmnn syl
@@ -888176,11 +888245,13 @@ $)
     liouodd2centrald.5 $e |- ( ph -> ( 2 x. N ) < P ) $.
     liouodd2centrald.6 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) =
     ( a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( Exact doubling symmetry on the positive central interval.  A
-       hypothetical strict increase is transported by multiplication by
-       two-thirds modulo the prime using ~ liouodd23transportd .  The support
-       bound ~ liouodd2supportd and the interval inequality ~ quarterthirdlt
-       then give a contradiction.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( The odd completion agrees with its value at the negated double on the
+       positive central interval when twice ` P ` has no positive-positive
+       pair.  A hypothetical strict increase is transported by multiplication
+       by two-thirds modulo the prime using ~ liouodd23transportd .  The
+       support bound ~ liouodd2supportd and the interval inequality
+       ~ quarterthirdlt then give a contradiction.  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
     liouodd2centrald $p |- ( ph -> ( F ` -u ( 2 x. N ) ) = ( F ` N ) ) $=
       ( c2 cmul co cneg cfv wceq wn c3 cmin cexp cmo wa c1 cfzo fzo0ss1 cn wcel
       cc0 clt wbr w3a 3nn a1i c4 cprime adantr 2nn nnzd cz cdvds prmgt3ndvds23d
@@ -888675,9 +888746,10 @@ $)
     liouodd2resd.4 $e |- ( ph -> N e. ( 1 ..^ P ) ) $.
     liouodd2resd.5 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = ( a
     + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( Exact doubling on every nonzero canonical residue, using reflection to
-       transfer the central symmetry.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
+    $( Doubling negates the value of the odd completion at each nonzero
+       canonical residue.  Reflection transfers the central identity from
+       ~ liouodd2centrald .  Here twice ` P ` has no positive-positive pair.
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouodd2resd $p |- ( ph -> ( F ` ( 2 x. N ) ) = -u ( F ` N ) ) $=
       ( c2 cmul co clt wbr wcel adantr wn cfv cneg wceq wa cc cc0 wne cn cprime
       prmnn syl cz 2z a1i cfzo elfzoelz zmulcld cdvds prmgt3ndvds23d fzo1ndvdsd
@@ -888740,9 +888812,9 @@ $)
     liouodd23symd.5 $e |- ( ph -> -. P || A ) $.
     liouodd23symd.6 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = ( a
     + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( Under the missing-positive-pair hypothesis at twice the prime, doubling
-       and tripling reverse the odd-completion sign at every nonzero residue.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( If twice the prime has no positive-positive pair, doubling and tripling
+       reverse the odd-completion sign at every nonzero residue.  (Contributed
+       by Zhi Wang, 20-Oct-2026.) $)
     liouodd23symd $p |- ( ph -> ( ( F ` ( 2 x. A ) ) = -u ( F ` A ) /\ ( F `
     ( 3 x. A ) ) = -u ( F ` A ) ) ) $=
       ( c2 cmul co cfv cmo wcel syl cneg wceq c3 cprime cn prmnn cz 2z a1i cfzo
@@ -888794,8 +888866,9 @@ $)
     liouodd23valsd.3 $e |- ( ph -> 3 < P ) $.
     liouodd23valsd.4 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = (
     a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( The odd completion takes value minus one at two and three under the
-       missing-pair assumption.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( The odd completion takes value minus one at two and three when twice
+       ` P ` has no positive-positive pair.  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
     liouodd23valsd $p |- ( ph -> ( ( F ` 2 ) = -u 1 /\ ( F ` 3 ) = -u 1 ) )
     $=
       ( c2 cfv c1 cneg c3 cmul co a1i cn wcel wceq 2t1e2 fveq2d 1nn clt wbr w3a
@@ -888864,8 +888937,9 @@ $)
     liouodd23muld.5 $e |- ( ph -> -. P || A ) $.
     liouodd23muld.6 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = ( a
     + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( Multiplication by two and three is exact for the odd completion under
-       the missing-pair assumption.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( The odd completion satisfies the multiplication identities with left
+       factors two and three.  Here twice ` P ` has no positive-positive pair.
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouodd23muld $p |- ( ph -> ( ( F ` ( 2 x. A ) ) = ( ( F ` 2 ) x. ( F ` A
     ) ) /\ ( F ` ( 3 x. A ) ) = ( ( F ` 3 ) x. ( F ` A ) ) ) ) $=
       ( c2 cmul co cfv wceq c3 cneg liouodd23symd simpld c1 liouodd23valsd wcel
@@ -888939,8 +889013,10 @@ $)
     divremadjacentd.3 $e |- ( ph -> T e. CC ) $.
     divremadjacentd.4 $e |- ( ph -> R e. CC ) $.
     divremadjacentd.5 $e |- ( ph -> P = ( ( T x. N ) + R ) ) $.
-    $( The two remainders at adjacent quotient values.  (Contributed by Zhi
-       Wang, 20-Oct-2026.) $)
+    $( If ` P = ( ( T x. N ) + R ) ` , then ` ( ( T x. N ) - P ) = -u R ` and
+       ` ( ( ( T + 1 ) x. N ) - P ) = ( N - R ) ` .  These are the signed
+       remainders at adjacent coefficients.  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
     divremadjacentd $p |- ( ph -> ( ( ( T x. N ) - P ) = -u R /\ ( ( ( T + 1
       ) x. N ) - P ) = ( N - R ) ) ) $=
       ( cmul co cmin cneg wceq c1 caddc mulcld negsubdi2d eqtrd subaddd cc wcel
@@ -888998,8 +889074,8 @@ $)
 
   ${
     nnabsd.1 $e |- ( ph -> A e. NN ) $.
-    $( The absolute value of a natural number.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
+    $( The absolute value of a positive integer equals that integer.
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
     nnabsd $p |- ( ph -> ( abs ` A ) = A ) $=
       ( nnred cc0 cr wcel 0re a1i cn clt wbr nngt0 syl ltled absidd ) ABABCDAEB
       EFGAHIABCDABJGEBKLCBMNOP $.
@@ -889091,8 +889167,9 @@ $)
   ${
     nnnegabsboundd.1 $e |- ( ph -> R e. NN ) $.
     nnnegabsboundd.2 $e |- ( ph -> R < N ) $.
-    $( A negative natural number has the same positive absolute bound.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( Negating a positive integer gives an integer whose absolute value is
+       positive and satisfies the same strict upper bound.  (Contributed by Zhi
+       Wang, 20-Oct-2026.) $)
     nnnegabsboundd $p |- ( ph -> ( -u R e. ZZ /\ ( abs ` -u R ) e. NN /\ (
       abs ` -u R ) < N ) ) $=
       ( cneg cz wcel cabs cfv clt wbr nnzd znegcld nncnd absnegd nnabsd eqeltrd
@@ -889209,9 +889286,9 @@ $)
   ${
     muladjacentdifd.1 $e |- ( ph -> T e. CC ) $.
     muladjacentdifd.2 $e |- ( ph -> N e. CC ) $.
-    $( Differences of products at the adjacent coefficients ` ( T - 1 ) ` ,
-       ` T ` , and ` ( T + 1 ) ` .  Both parameters may be complex.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( The products at coefficients ` ( T + 1 ) ` and ` ( T - 1 ) ` differ by
+       twice ` N ` ; those at ` T ` and ` ( T - 1 ) ` differ by ` N ` .  Both
+       parameters may be complex.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     muladjacentdifd $p |- ( ph -> ( ( ( ( T + 1 ) x. N ) - ( ( T - 1 ) x. N )
       ) = ( 2 x. N ) /\ ( ( T x. N ) - ( ( T - 1 ) x. N ) ) = N ) ) $=
       ( c1 caddc co cmul cmin wceq wcel ax-1cn a1i subcld subdird oveq1d eqtr3d
@@ -889389,9 +889466,9 @@ $)
     liouoddmuldbliffd.7 $e |- ( ph -> -. P || D ) $.
     liouoddmuldbliffd.8 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) =
       ( a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( Under a missing-pair hypothesis, doubling an argument preserves and
-       reflects a multiplication identity.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
+    $( If twice ` P ` has no positive-positive pair, doubling an argument
+       preserves and reflects a multiplication identity.  (Contributed by Zhi
+       Wang, 20-Oct-2026.) $)
     liouoddmuldbliffd $p |- ( ph -> ( ( F ` ( Q x. ( 2 x. D ) ) ) = ( ( F ` Q
       ) x. ( F ` ( 2 x. D ) ) ) <-> ( F ` ( Q x. D ) ) = ( ( F ` Q ) x. ( F `
       D ) ) ) ) $=
@@ -889456,8 +889533,8 @@ $)
     liouodd23prodmuld.9 $e |- ( ph -> ( F ` ( K x. Z ) ) = ( ( F ` K ) x. ( F
       ` Z ) ) ) $.
     $( An exact multiplier extends to twice and three times that multiplier
-       under the missing-pair hypothesis.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
+       when twice ` P ` has no positive-positive pair.  (Contributed by Zhi
+       Wang, 20-Oct-2026.) $)
     liouodd23prodmuld $p |- ( ph -> ( ( F ` ( ( 2 x. K ) x. Z ) ) = ( ( F ` (
       2 x. K ) ) x. ( F ` Z ) ) /\ ( F ` ( ( 3 x. K ) x. Z ) ) = ( ( F ` ( 3
       x. K ) ) x. ( F ` Z ) ) ) ) $=
@@ -889951,8 +890028,9 @@ $)
       mod P ) \/ ( ( ( 3 x. K ) x. N ) mod P ) = ( ( 2 x. D ) mod P ) ) ) $.
     $( The induction hypotheses for smaller multipliers and smaller positive
        arguments, together with bounded signed congruence witnesses as in
-       ~ oddextcertd , imply the next multiplication identity.  (Contributed by
-       Zhi Wang, 20-Oct-2026.) $)
+       ~ oddextcertd , imply the next multiplication identity.  Here twice
+       ` P ` has no positive-positive pair.  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
     liouoddextstepd $p |- ( ph -> ( F ` ( Q x. N ) ) = ( ( F ` Q ) x. ( F ` N
       ) ) ) $=
       ( c2 cmul co cmo wceq cfv c3 wa cn wcel cprime prmnn syl adantr cz 2z a1i
@@ -890052,8 +890130,8 @@ $)
       = ( d mod P ) \/ ( ( ( 3 x. j ) x. N ) mod P ) = ( ( 2 x. d ) mod P ) )
       ) ) $.
     $( Discharge the bounded signed congruence witnesses in ~ liouoddextstepd
-       to obtain the common multiplication step.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
+       to obtain the common multiplication step.  Here twice ` P ` has no
+       positive-positive pair.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouoddextshortd $p |- ( ph -> ( F ` ( Q x. N ) ) = ( ( F ` Q ) x. ( F `
       N ) ) ) $=
       ( cv clt wbr cabs cfv cn wcel w3a c2 cmul co wceq c3 wo wa cz wrex cprime
@@ -890200,8 +890278,9 @@ $)
     liouoddextsmalld.3 $e |- ( ph -> Q e. NN ) $.
     liouoddextsmalld.4 $e |- ( ph -> N e. NN ) $.
     liouoddextsmalld.5 $e |- ( ph -> ( ( 2 x. Q ) x. N ) < P ) $.
-    $( The short-product branch of half-interval multiplicative extension.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( The odd completion is multiplicative when the product of its
+       positive-integer arguments is below half the modulus.  (Contributed by
+       Zhi Wang, 20-Oct-2026.) $)
     liouoddextsmalld $p |- ( ph -> ( F ` ( Q x. N ) ) = ( ( F ` Q ) x. ( F `
       N ) ) ) $=
       ( c2 cmul co clt wbr wcel a1i nncnd nnred cc 2cn mulassd eqbrtrrd crp 2rp
@@ -890249,9 +890328,10 @@ $)
       || z -> ( F ` ( k x. z ) ) = ( ( F ` k ) x. ( F ` z ) ) ) ) $.
     liouoddextlarged.15 $e |- ( ph -> A. r e. ( 1 ..^ N ) ( F ` ( Q x. r ) )
       = ( ( F ` Q ) x. ( F ` r ) ) ) $.
-    $( The large-product odd-argument branch follows from the bounded signed
-       congruences in ~ oddextcertd .  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
+    $( For an odd positive argument and a product above half the modulus, the
+       smaller-argument and smaller-multiplier identities imply the next
+       multiplication identity via ~ oddextcertd .  Here twice ` P ` has no
+       positive-positive pair.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouoddextlarged $p |- ( ph -> ( F ` ( Q x. N ) ) = ( ( F ` Q ) x. ( F `
       N ) ) ) $=
       ( vj vd cprime wcel cn prmnn syl c2 csn cdif cdvds wbr wn c3 prmgt3factsd
@@ -890297,8 +890377,10 @@ $)
       z -> ( F ` ( k x. z ) ) = ( ( F ` k ) x. ( F ` z ) ) ) ) $.
     liouoddextoddd.14 $e |- ( ph -> A. r e. ( 1 ..^ N ) ( F ` ( Q x. r ) ) =
       ( ( F ` Q ) x. ( F ` r ) ) ) $.
-    $( The odd inner induction argument combines the short-product and
-       signed-descent branches.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( For an odd positive argument, the smaller-argument and
+       smaller-multiplier identities imply the next multiplication identity,
+       combining short products and signed descent.  Here twice ` P ` has no
+       positive-positive pair.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouoddextoddd $p |- ( ph -> ( F ` ( Q x. N ) ) = ( ( F ` Q ) x. ( F ` N
       ) ) ) $=
       ( c2 cmul co clt wbr wceq wa cn wcel cprime prmnn adantr liouoddextsmalld
@@ -890339,8 +890421,10 @@ $)
       z -> ( F ` ( k x. z ) ) = ( ( F ` k ) x. ( F ` z ) ) ) ) $.
     liouoddextnextd.12 $e |- ( ph -> A. r e. ( 1 ..^ N ) ( F ` ( Q x. r ) ) =
       ( ( F ` Q ) x. ( F ` r ) ) ) $.
-    $( The complete inner induction step for a multiplier greater than one not
-       divisible by three.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( The smaller-argument and smaller-multiplier identities imply the next
+       multiplication identity for a central multiplier greater than one and
+       not divisible by three.  Here twice ` P ` has no positive-positive pair.
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouoddextnextd $p |- ( ph -> ( F ` ( Q x. N ) ) = ( ( F ` Q ) x. ( F ` N
       ) ) ) $=
       ( c1 wceq cmul co cfv wa cprime wcel cn prmnn syl c2 c3 2re a1i 3re nnred
@@ -890394,7 +890478,8 @@ $)
     $( Inner strong induction on the positive central argument proves
        multiplication by ` Q ` , assuming the identities for smaller
        multipliers.  The interval and odd completion are explained in
-       ~ liouoddval .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+       ~ liouoddval .  Here twice ` P ` has no positive-positive pair.
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouoddextcentralrald $p |- ( ph -> ( N < ( P / 2 ) -> ( F ` ( Q x. N ) )
       = ( ( F ` Q ) x. ( F ` N ) ) ) ) $=
       ( vn vm vr cv c2 cdiv co clt wbr cmul cfv wceq breq1 fmuleq2 imbi12d wcel
@@ -890585,7 +890670,8 @@ $)
       -> ( F ` ( k x. z ) ) = ( ( F ` k ) x. ( F ` z ) ) ) ) $.
     liouoddextresd.10 $e |- ( ph -> A e. ( 1 ..^ P ) ) $.
     $( The conditional multiplier identity extends from the central interval to
-       all positive residues.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+       all positive residues.  Here twice ` P ` has no positive-positive pair.
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouoddextresd $p |- ( ph -> ( F ` ( Q x. A ) ) = ( ( F ` Q ) x. ( F ` A
       ) ) ) $=
       ( c2 cmul co clt wbr cfv wceq wa cprime adantr c3 cn c1 cdvds wn cv caddc
@@ -890653,11 +890739,11 @@ $)
       z -> ( F ` ( k x. z ) ) = ( ( F ` k ) x. ( F ` z ) ) ) ) $.
     liouoddextpointd.10 $e |- ( ph -> Z e. ZZ ) $.
     liouoddextpointd.11 $e |- ( ph -> -. P || Z ) $.
-    $( Conditional multiplication by a central positive integer greater than
-       one and not divisible by three, assuming the missing-positive-pair
-       hypothesis and the identities for smaller multipliers.  Extend the
-       central result to every integer argument not divisible by the prime.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( If twice the prime has no positive-positive pair, the identities for
+       smaller multipliers imply multiplication by a central positive integer
+       greater than one and not divisible by three.  Extend the central result
+       to every integer argument not divisible by the prime.  (Contributed by
+       Zhi Wang, 20-Oct-2026.) $)
     liouoddextpointd $p |- ( ph -> ( F ` ( Q x. Z ) ) = ( ( F ` Q ) x. ( F `
       Z ) ) ) $=
       ( cprime wcel cn prmnn syl cmo zmod1fzod liouoddextresd liouoddmulperiodd
@@ -890682,7 +890768,8 @@ $)
     liouoddext3divd.10 $e |- ( ph -> A. k e. ( 1 ..^ Q ) A. z e. ZZ ( -. P ||
       z -> ( F ` ( k x. z ) ) = ( ( F ` k ) x. ( F ` z ) ) ) ) $.
     $( A multiplier divisible by three reduces to its smaller quotient using
-       exact tripling.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+       exact tripling.  Here twice ` P ` has no positive-positive pair.
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouoddext3divd $p |- ( ph -> ( F ` ( Q x. Z ) ) = ( ( F ` Q ) x. ( F ` Z
       ) ) ) $=
       ( c3 cdiv co cmul nncnd cc wcel 3nn nncni a1i cc0 wne nnne0i divcan2d cfv
@@ -890715,8 +890802,9 @@ $)
       = ( a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     liouoddextendnextd.9 $e |- ( ph -> A. k e. ( 1 ..^ Q ) A. z e. ZZ ( -. P
       || z -> ( F ` ( k x. z ) ) = ( ( F ` k ) x. ( F ` z ) ) ) ) $.
-    $( The complete outer induction step for a central positive multiplier.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( The identities for smaller positive multipliers imply the multiplication
+       identity for the next central positive multiplier.  Here twice ` P ` has
+       no positive-positive pair.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouoddextendnextd $p |- ( ph -> ( F ` ( Q x. Z ) ) = ( ( F ` Q ) x. ( F
       ` Z ) ) ) $=
       ( wn c1 wceq cmul co cfv wa simpr eqcomd zcnd cc wcel cc0 cprime cn prmnn
@@ -890757,7 +890845,8 @@ $)
     liouoddextendrald.5 $e |- ( ph -> Q e. NN ) $.
     $( Outer strong induction on the positive central multiplier completes the
        multiplication identities, using the inner induction in
-       ~ liouoddextcentralrald .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+       ~ liouoddextcentralrald .  Here twice ` P ` has no positive-positive
+       pair.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouoddextendrald $p |- ( ph -> ( Q < ( P / 2 ) -> A. z e. ZZ ( -. P || z
       -> ( F ` ( Q x. z ) ) = ( ( F ` Q ) x. ( F ` z ) ) ) ) ) $=
       ( vq vu cv co wbr cfv wi vv vk c2 cdiv clt cdvds cmul wceq wral fmulraleq
@@ -890875,8 +890964,10 @@ $)
     liouoddcentralmuld.7 $e |- ( ph -> -. P || Z ) $.
     liouoddcentralmuld.8 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P )
       = ( a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( Multiplication in the odd completion by any central positive integer.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( The odd completion satisfies the multiplication identity for a positive
+       central multiplier and an integer argument not divisible by the prime.
+       Here twice ` P ` has no positive-positive pair.  (Contributed by Zhi
+       Wang, 20-Oct-2026.) $)
     liouoddcentralmuld $p |- ( ph -> ( F ` ( Q x. Z ) ) = ( ( F ` Q ) x. ( F
       ` Z ) ) ) $=
       ( vz c2 co wbr cdiv clt cv cdvds wn cmul cfv wceq wi cz wral nnred cprime
@@ -890916,9 +891007,10 @@ $)
     liouoddresmuld.6 $e |- ( ph -> -. P || Z ) $.
     liouoddresmuld.7 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = (
       a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( Multiplication by any nonzero canonical residue in the odd completion,
-       using reflection about the modulus.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
+    $( The odd completion satisfies the multiplication identity for a nonzero
+       canonical residue and an integer argument not divisible by the prime.
+       Reflection extends ~ liouoddcentralmuld .  Here twice ` P ` has no
+       positive-positive pair.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouoddresmuld $p |- ( ph -> ( F ` ( A x. Z ) ) = ( ( F ` A ) x. ( F ` Z
       ) ) ) $=
       ( c2 cmul co wbr wn clt cfv wceq wa cprime wcel adantr c3 cn cfzo fzossnn
@@ -890967,8 +891059,8 @@ $)
     liouoddmuld.8 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = ( a +
       b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     $( The odd completion is multiplicative on integers not divisible by the
-       prime if a positive pair for Liouville's function at twice the prime is
-       missing.  The two inductions in ~ liouoddextcentralrald and
+       prime if a positive-positive pair for Liouville's function at twice the
+       prime is missing.  The two inductions in ~ liouoddextcentralrald and
        ~ liouoddextendrald handle central arguments and multipliers; reflection
        extends their result to all nonzero residues.  (Contributed by Zhi Wang,
        20-Oct-2026.) $)
@@ -890991,8 +891083,9 @@ $)
     liouoddsqd.5 $e |- ( ph -> -. P || Z ) $.
     liouoddsqd.6 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = ( a +
       b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( A square not divisible by the prime has odd-completion value one under
-       the missing-pair assumption.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( A square not divisible by the prime has odd-completion value one when
+       twice ` P ` has no positive-positive pair.  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
     liouoddsqd $p |- ( ph -> ( F ` ( Z ^ 2 ) ) = 1 ) $=
       ( c2 cexp co cfv cmul c1 wcel zcnd sqvald fveq2d liouoddmuld cneg wceq cn
       cpr cprime prmnn syl liouoddcld signmulself eqtrd ) AENOPDQEERPDQSAENOPEE
@@ -891026,8 +891119,8 @@ $)
     liouoddlgsposd.6 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = (
       a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     $( Every nonzero quadratic residue has value one under the odd completion
-       if a positive pair for Liouville's function at twice the prime is
-       missing.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+       if a positive-positive pair for Liouville's function at twice the prime
+       is missing.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouoddlgsposd $p |- ( ph -> ( F ` A ) = 1 ) $=
       ( vu cv c2 co cmo wceq wa cexp cdvds wbr wn wrex cfv clgs wcel cprime csn
       cz c1 cdif wi c3 prmgt3factsd simpld lgsqrmodndvds syl2anc mpd simprl syl
@@ -891076,8 +891169,8 @@ $)
     liouoddnqrd.6 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = ( a +
       b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     $( An argument where the odd completion is minus one cannot be a quadratic
-       residue under the missing-pair assumption.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
+       residue when twice ` P ` has no positive-positive pair.  (Contributed by
+       Zhi Wang, 20-Oct-2026.) $)
     liouoddnqrd $p |- ( ph -> -. ( A /L P ) = 1 ) $=
       ( clgs co c1 wceq cneg cfv adantr wne cn wcel 1nn nnneneg ax-mp neneqd wa
       a1i cprime c3 clt wbr cz simpr c2 cmul cv caddc cliou wrex liouoddlgsposd
@@ -891137,8 +891230,8 @@ $)
     liouoddhalfoddd.3 $e |- ( ph -> 3 < P ) $.
     liouoddhalfoddd.4 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = (
       a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( A missing positive pair for Liouville's function at twice a prime forces
-       ` ( ( P - 1 ) / 2 ) ` to be odd.  (Contributed by Zhi Wang,
+    $( A missing positive-positive pair for Liouville's function at twice a
+       prime forces ` ( ( P - 1 ) / 2 ) ` to be odd.  (Contributed by Zhi Wang,
        20-Oct-2026.) $)
     liouoddhalfoddd $p |- ( ph -> -. 2 || ( ( P - 1 ) / 2 ) ) $=
       ( c1 cneg cmin co c2 cdiv cdvds wbr wcel cprime cexp wceq cz neg1z a1i cn
@@ -891162,8 +891255,9 @@ $)
     liouoddprmnqrd.5 $e |- ( ph -> R < ( P / 2 ) ) $.
     liouoddprmnqrd.6 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = (
       a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( Under a missing positive pair, no prime below half the modulus is a
-       quadratic residue.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( If twice a prime ` P > 3 ` has no positive-positive pair, no prime below
+       half of ` P ` is a quadratic residue modulo ` P ` .  (Contributed by Zhi
+       Wang, 20-Oct-2026.) $)
     liouoddprmnqrd $p |- ( ph -> -. ( R /L P ) = 1 ) $=
       ( cprime wcel cz prmz syl cn prmnn liouoddprmd liouoddnqrd ) ABDCEFGHIJAD
       NODPOKDQRABCDEHACNOCSOICTRKLUAMUB $.
@@ -891177,8 +891271,8 @@ $)
     liouoddcontrad.3 $e |- ( ph -> 3 < P ) $.
     liouoddcontrad.4 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = (
       a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( A positive pair for Liouville's function cannot be missing at twice a
-       prime above three.  The missing pair forces oddness of
+    $( A positive-positive pair for Liouville's function cannot be missing at
+       twice a prime above three.  The missing pair forces oddness of
        ` ( ( P - 1 ) / 2 ) ` by ~ liouoddhalfoddd .  The prime quadratic
        residue furnished by ~ oddprmqrhalfexd contradicts ~ liouoddprmnqrd .
        (Contributed by Zhi Wang, 20-Oct-2026.) $)
@@ -891204,9 +891298,9 @@ $)
       lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
     liouoddpaird.2 $e |- ( ph -> P e. Prime ) $.
     liouoddpaird.3 $e |- ( ph -> 3 < P ) $.
-    $( There is a positive pair for Liouville's function at twice a prime above
-       three, with the local odd-completion alias.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
+    $( There is a positive-positive pair for Liouville's function at twice a
+       prime above three, with the local odd-completion alias.  (Contributed by
+       Zhi Wang, 20-Oct-2026.) $)
     liouoddpaird $p |- ( ph -> E. a e. NN E. b e. NN ( ( 2 x. P ) = ( a + b )
       /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $=
       ( c2 cmul co cv caddc wceq cliou cfv c1 cn wrex w3a wn cprime wcel adantr
@@ -891222,7 +891316,7 @@ $)
     liougb2prmposd.2 $e |- ( ph -> 3 < P ) $.
     $( Twice every prime above three is the sum of two positive integers at
        which Liouville's function is one.  Instantiate the odd completion in
-       ~ liouoddpaird .  The public versions are ~ liougbprm and ~ liougbprm2 .
+       ~ liouoddpaird .  See the versions ~ liougbprm and ~ liougbprm2 .
        (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liougb2prmposd $p |- ( ph -> E. a e. NN E. b e. NN ( ( 2 x. P ) = ( a + b
       ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $=
@@ -891238,9 +891332,9 @@ $)
     liougbprmgt3divd.3 $e |- ( ph -> P || A ) $.
     liougbprmgt3divd.4 $e |- ( ph -> ( lam ` A ) = 1 ) $.
     liougbprmgt3divd.5 $e |- ( ph -> 3 < P ) $.
-    $( Scale a positive pair for twice a prime above three to a negative pair
-       for twice a positive multiple at which Liouville's function is one.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( Scale a positive-positive pair for twice a prime above three to a
+       negative-negative pair for twice a positive multiple at which
+       Liouville's function is one.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liougbprmgt3divd $p |- ( ph -> E. a e. NN E. b e. NN ( ( 2 x. A ) = ( a +
       b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
       ( vv vu liougb2prmposd liougbprmdivd ) AKLBCDEFGHIACLKGJMN $.
@@ -891308,9 +891402,9 @@ $)
     liougb3squared.3 $e |- ( ph -> 3 || ( A / 3 ) ) $.
     liougb3squared.4 $e |- ( ph -> ( lam ` A ) = 1 ) $.
     $( If ` A ` has value one under Liouville's function and two successive
-       exact factors of three, scale the negative pair at eighteen by
-       ` ( ( A / 3 ) / 3 ) ` to obtain a negative pair for twice ` A ` .
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+       exact factors of three, scale the negative-negative pair at eighteen by
+       ` ( ( A / 3 ) / 3 ) ` to obtain a negative-negative pair for twice
+       ` A ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liougb3squared $p |- ( ph -> E. a e. NN E. b e. NN ( ( 2 x. A ) = ( a + b
       ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
       ( c1 c3 cdiv co cmul cv wceq cliou cfv cneg cn wcel c8 cdc caddc w3a wrex
@@ -891343,9 +891437,10 @@ $)
     liougb3qdivd.4 $e |- ( ph -> 3 || A ) $.
     liougb3qdivd.5 $e |- ( ph -> Q e. Prime ) $.
     liougb3qdivd.6 $e |- ( ph -> Q || ( A / 3 ) ) $.
-    $( A prime divisor of the quotient by three supplies a negative pair, using
-       the prime kernel or the eighteen case.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
+    $( For an odd positive integer ` A ` divisible by three with Liouville
+       value one, a prime divisor of ` ( A / 3 ) ` supplies a negative-negative
+       pair at twice ` A ` .  Use ~ liougbprmgt3divd or the eighteen case
+       ~ liougb3squared .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liougb3qdivd $p |- ( ph -> E. a e. NN E. b e. NN ( ( 2 x. A ) = ( a + b )
       /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
       ( c3 wceq co wcel adantr cdvds cdiv wn a1i c2 cmul cv caddc cliou c1 cneg
@@ -891369,8 +891464,8 @@ $)
     liougb3divd.3 $e |- ( ph -> ( lam ` A ) = 1 ) $.
     liougb3divd.4 $e |- ( ph -> 3 || A ) $.
     $( An odd positive integer divisible by three with value one under
-       Liouville's function has a negative pair at its double.  (Contributed by
-       Zhi Wang, 20-Oct-2026.) $)
+       Liouville's function has a negative-negative pair at its double.
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liougb3divd $p |- ( ph -> E. a e. NN E. b e. NN ( ( 2 x. A ) = ( a + b )
       /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
       ( vq cv c3 cdiv co cdvds wbr wceq cliou cprime wcel wa c2 cmul caddc cneg
@@ -891390,9 +891485,9 @@ $)
     liougboddprmdivd.3 $e |- ( ph -> ( lam ` A ) = 1 ) $.
     liougboddprmdivd.4 $e |- ( ph -> P e. Prime ) $.
     liougboddprmdivd.5 $e |- ( ph -> P || A ) $.
-    $( Every prime divisor of an odd positive integer at which Liouville's
-       function is one supplies a negative pair at its double.  (Contributed by
-       Zhi Wang, 20-Oct-2026.) $)
+    $( For an odd positive integer ` A ` with Liouville value one, a prime
+       divisor of ` A ` supplies a negative-negative pair at twice ` A ` .
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liougboddprmdivd $p |- ( ph -> E. a e. NN E. b e. NN ( ( 2 x. A ) = ( a +
       b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
       ( c3 wceq cv cn wa wcel adantr cdvds wbr wn c2 cmul co caddc cliou cfv c1
@@ -891411,8 +891506,8 @@ $)
     liougboddposd.3 $e |- ( ph -> -. 2 || A ) $.
     liougboddposd.4 $e |- ( ph -> ( lam ` A ) = 1 ) $.
     $( An odd positive integer greater than one with value one under
-       Liouville's function has a negative pair at its double.  (Contributed by
-       Zhi Wang, 20-Oct-2026.) $)
+       Liouville's function has a negative-negative pair at its double.
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liougboddposd $p |- ( ph -> E. a e. NN E. b e. NN ( ( 2 x. A ) = ( a + b
       ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
       ( vp cv cdvds wbr wceq cliou cfv c1 cn cprime wcel wa c2 cmul co cneg w3a
@@ -891469,12 +891564,14 @@ $)
        two is a sum of two positive integers at which Liouville's function is
        minus one.  Theorem 1.1 of "A Goldbach theorem for the Liouville
        function", ~ https://github.com/CaptainSude/Liouville-Goldbach .  The
-       proof reuses the multiples-of-four chain through ~ liougb4nnd .  For the
-       remaining case it scales the positive pairs for Liouville's function at
-       twice a prime from ~ liougbprm ; their construction uses the odd
-       completion in ~ liouoddval .  See ~ liougbral for the universally
-       quantified alternate version and ~ liougb4dvds for the multiples-of-four
-       special case.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+       proof reuses the multiples-of-four chain through ~ liougb4nnd .  For odd
+       half-parameters it uses equal summands when their Liouville value is
+       minus one.  Otherwise it scales positive-positive pairs at twice a prime
+       from ~ liougbprm or the negative-negative pair at eighteen via
+       ~ liougb3squared .  The prime case uses the odd completion in
+       ~ liouoddval .  See ~ liougbral for the universally quantified alternate
+       version and ~ liougb4dvds for the multiples-of-four special case.
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liougb $p |- ( ( N e. NN /\ 2 || N /\ 2 < N ) ->
       E. a e. NN E. b e. NN ( N = ( a + b ) /\
         ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
@@ -891702,8 +891799,9 @@ $)
   $}
 
   ${
-    $( Liouville's function is one exactly when the signed prime Omega value is
-       even.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    $( At a nonzero rational input, Liouville's function is one exactly when
+       the signed prime Omega value is even.  (Contributed by Zhi Wang,
+       27-Oct-2026.) $)
     lioueq1 $p |- ( A e. ( QQ \ { 0 } ) ->
       ( ( lam ` A ) = 1 <-> 2 || ( Omega ` A ) ) ) $=
       ( cq cc0 csn cdif wcel cliou cfv c1 wceq cneg cbom cexp co c2 wbr liouval
@@ -891810,8 +891908,9 @@ $)
   $}
 
   ${
-    $( Liouville's function is minus one exactly when the signed prime Omega
-       value is odd.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    $( At a nonzero rational input, Liouville's function is minus one exactly
+       when the signed prime Omega value is odd.  (Contributed by Zhi Wang,
+       27-Oct-2026.) $)
     lioueqneg1 $p |- ( A e. ( QQ \ { 0 } ) ->
       ( ( lam ` A ) = -u 1 <-> -. 2 || ( Omega ` A ) ) ) $=
       ( cq cc0 csn cdif wcel cliou cfv c1 cneg wceq wne c2 cdvds wbr liounzneg1
@@ -892518,7 +892617,7 @@ $)
 
   ${
     $d N p q $.
-    $( On positive integers, Liouville's function agrees with the Moebius
+    $( On positive integers, Liouville's function agrees with the M&ouml;bius
        function exactly where the latter is nonzero.  (Contributed by Zhi Wang,
        27-Oct-2026.) $)
     liousqf $p |- ( N e. NN ->
@@ -892547,8 +892646,8 @@ $)
   $}
 
   ${
-    $( Express the Moebius function on positive integers using Liouville's
-       function and the square of the Moebius function.  (Contributed by Zhi
+    $( On positive integers, the M&ouml;bius value equals the Liouville value
+       multiplied by the square of the M&ouml;bius value.  (Contributed by Zhi
        Wang, 27-Oct-2026.) $)
     lioumuid $p |- ( N e. NN ->
       ( mmu ` N ) = ( ( lam ` N ) x. ( ( mmu ` N ) ^ 2 ) ) ) $=
@@ -893039,10 +893138,11 @@ $)
   ${
     $d N k x $.  $d N m x z $.  $d d j k n p u x $.  $d d j k n p w x y $.
     $d j k n p t $.  $d m w x z $.  $d y z $.
-    $( The divisor sum of Liouville's function is the indicator of perfect
-       squares.  The proof cancels the contributions of divisors paired by a
-       prime factor and uses strong induction after removing a prime square.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    $( On positive integers, the divisor sum of Liouville's function is the
+       indicator of perfect squares.  Theorem 2.19 in [ApostolNT] p. 38.  The
+       proof cancels the contributions of divisors paired by a prime factor and
+       uses strong induction after removing a prime square.  (Contributed by
+       Zhi Wang, 27-Oct-2026.) $)
     lioudivsum $p |- ( N e. NN ->
       sum_ d e. { k e. NN | k || N } ( lam ` d ) =
       if ( E. m e. NN N = ( m ^ 2 ) , 1 , 0 ) ) $=
@@ -893205,8 +893305,8 @@ $)
 
   ${
     $d N d j k x y z $.  $d N j k m n x z $.  $d N d k u $.
-    $( Express Liouville's function as a sum of Moebius values at quotients by
-       square divisors.  Apply ~ muinv to ~ lioudivsum and reindex the
+    $( Express Liouville's function as a sum of M&ouml;bius values at quotients
+       by square divisors.  Apply ~ muinv to ~ lioudivsum and reindex the
        surviving terms by their positive square roots.  (Contributed by Zhi
        Wang, 27-Oct-2026.) $)
     lioumusqsum $p |- ( N e. NN ->
