@@ -63345,11 +63345,21 @@ $)
       BIRSCHZBIBRQJUATBUAUARSDHZKTUAUBLRSCDMNOP $.
   $}
 
+  $( If the union of classes is a function, the classes themselves are
+     functions.  (Contributed by AV, 18-Jul-2019.)  Shorten proof and remove
+     dependency on ~ ax-sep and ~ ax-pr .  (Revised by Eric Schmidt,
+     24-Oct-2026.) $)
+  fununfun $p |- ( Fun ( F u. G ) -> ( Fun F /\ Fun G ) ) $=
+    ( cun wfun wss wi ssun1 funss ax-mp ssun2 jca ) ABCZDZADZBDZALEMNFABGALHIBL
+    EMOFBAJBLHIK $.
+  $( $j usage 'fununfun' avoids 'ax-rep' 'ax-sep' 'ax-nul' 'ax-pr'; $)
+
   ${
     $d F x y $.  $d G x y $.
-    $( If the union of classes is a function, the classes itselves are
-       functions.  (Contributed by AV, 18-Jul-2019.) $)
-    fununfun $p |- ( Fun ( F u. G ) -> ( Fun F /\ Fun G ) ) $=
+    $( Obsolete version of ~ fununfun as of 24-Oct-2026.  (Contributed by AV,
+       18-Jul-2019.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    fununfunOLD $p |- ( Fun ( F u. G ) -> ( Fun F /\ Fun G ) ) $=
       ( vx vy wrel wa cun funrel relun sylib cv wbr wmo fununmo alrimiv anim12i
       wfun wal dffun6 sylibr simpl simpr uncom funeqi sylbi jca mpancom ) AEZBE
       ZFZABGZQZAQZBQZFULUKEUJUKHABIJUJULFZUMUNUOUHCKZDKZALDMZCRZFUMUJUHULUSUHUI
@@ -63357,11 +63367,19 @@ $)
       CUDCDBANUEOPCDBSTUFUG $.
   $}
 
+  $( A function with removed elements is still a function.  (Contributed by AV,
+     7-Jun-2021.)  Shorten proof and remove dependency on ~ ax-sep and
+     ~ ax-pr .  (Revised by Eric Schmidt, 24-Oct-2026.) $)
+  fundif $p |- ( Fun F -> Fun ( F \ A ) ) $=
+    ( cdif wss wfun wi difss funss ax-mp ) BACZBDBEJEFBAGJBHI $.
+  $( $j usage 'fundif' avoids 'ax-rep' 'ax-sep' 'ax-nul' 'ax-pr'; $)
+
   ${
     $d A x y z $.  $d F x y z $.
-    $( A function with removed elements is still a function.  (Contributed by
-       AV, 7-Jun-2021.) $)
-    fundif $p |- ( Fun F -> Fun ( F \ A ) ) $=
+    $( Obsolete version of ~ fundif as of 24-Oct-2026.  (Contributed by AV,
+       7-Jun-2021.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    fundifOLD $p |- ( Fun F -> Fun ( F \ A ) ) $=
       ( vx vy vz wrel cv wbr wa weq wi wal cdif reldif wn brdif pm2.27 ad2ant2r
       wfun dffun2 syl2anb com12 alimi 2alimi anim12i 3imtr4i ) BFZCGZDGZBHZUHEG
       ZBHZIZDEJZKZELZDLCLZIBAMZFZUHUIURHZUHUKURHZIZUNKZELZDLCLZIBSURSUGUSUQVEBA

@@ -16752,10 +16752,12 @@ New usage of "funcringcsetclem8ALTV" is discouraged (1 uses).
 New usage of "funcringcsetclem9ALTV" is discouraged (1 uses).
 New usage of "funcrngcsetcALT" is discouraged (0 uses).
 New usage of "fundcmpsurinjALT" is discouraged (0 uses).
+New usage of "fundifOLD" is discouraged (0 uses).
 New usage of "funop" is discouraged (2 uses).
 New usage of "funopg" is discouraged (0 uses).
 New usage of "funopsn" is discouraged (2 uses).
 New usage of "funopsnOLD" is discouraged (0 uses).
+New usage of "fununfunOLD" is discouraged (0 uses).
 New usage of "fvimacnvALT" is discouraged (0 uses).
 New usage of "fvprcALT" is discouraged (0 uses).
 New usage of "gen11" is discouraged (19 uses).
@@ -20603,7 +20605,9 @@ Proof modification of "fsetprcnexALT" is discouraged (190 steps).
 Proof modification of "fuco11bALT" is discouraged (199 steps).
 Proof modification of "funcrngcsetcALT" is discouraged (765 steps).
 Proof modification of "fundcmpsurinjALT" is discouraged (221 steps).
+Proof modification of "fundifOLD" is discouraged (122 steps).
 Proof modification of "funopsnOLD" is discouraged (355 steps).
+Proof modification of "fununfunOLD" is discouraged (114 steps).
 Proof modification of "fvilbdRP" is discouraged (27 steps).
 Proof modification of "fvimacnvALT" is discouraged (102 steps).
 Proof modification of "fvprcALT" is discouraged (26 steps).
