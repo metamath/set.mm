@@ -23263,6 +23263,29 @@ $)
   $}
 
   ${
+    $d x y z $.  $d x ps $.  $d x th $.  $d y z ph $.
+    eu6w.x $e |- ( x = z -> ( ph <-> ps ) ) $.
+    eu6w.y $e |- ( x = y -> ( ph <-> th ) ) $.
+    $( Replace ~ ax-10 , ~ ax-12 in ~ eu6 with substitution hypotheses.
+       (Contributed by SN, 27-May-2025.) $)
+    eu6w $p |- ( E! x ph <-> E. y A. x ( ph <-> x = y ) ) $=
+      ( wex weq wb wal wa wi wn alimi imbi2d 19.8aw syl eximi weu pm2.21 sylbir
+      alnex equequ2 albidv biimp wnf equequ1 imbi12d nfa1w bibi12d nfim cbvalvw
+      ja 19.38b imbi12i a1i spw nfrd syl5 impbid2 bitr3d ax-mp ax12wlem embantd
+      id com12 ancld albiim imbitrrdi mpgbi eximdv impbii anbi2i 3bitr4ri ancom
+      abai eu3v biimpr exsbim biantru 3bitr4i bitri ) ADUAZADIZADEJZKZDLZEIZMZW
+      JWFWFWJNZMWFAWGNZDLZEIZMWKWEWLWOWFWLWOWFWJWOWFOZWNWOWPAOZDLWNADUDWQWMDAWG
+      UBPUCWNADFJZNZDLEFEFJZWMWSDWTWGWRAEFDUEQUFRSWIWNEWHWMDAWGUGPTUOWFWOWJWFWN
+      WIEAWNWINZNZWFXANZDXADUHZXBDLZXCKWNWIDWMBFEJZNZDFWRABWGXFGDFEUIZUJZUKWHBX
+      FKZDFWRABWGXFGXHULZUKUMXDWFXADLZNXEXCAXADUPXDXLXAWFXDXLXAXAXGFLZXJFLZNZDF
+      XAXOKWRWNXMWIXNWMXGDFXIUNWHXJDFXKUNUQURZUSXAXADIXDXLXAXODFXPRXDXADXDVGUTV
+      AVBQVCVDAWNWNWGANZDLZMWIAWNXRWNWMAXRWMXGDFXIUSAAWGXRAVGWGAXRACDEHVEVHVFVA
+      VIAWGDVJVKVLVMVHVNVOWFWJVRADEVSVPWJWFMWJWJWFNZMWKWJWJWFVRWFWJVQXSWJWJXREI
+      WFWIXREWHXQDAWGVTPTADEWASWBWCWD $.
+    $( $j usage 'eu6w' avoids 'ax-10' 'ax-11' 'ax-12' 'ax-13'; $)
+  $}
+
+  ${
     $d x y z $.  $d ph z $.
     euf.1 $e |- F/ y ph $.
     $( Version of ~ eu6 with disjoint variable condition replaced by
@@ -730856,29 +730879,6 @@ $(
   approach is found, that approach is shorter and better.
 
 $)
-
-  ${
-    $d x y z $.  $d x ps $.  $d x th $.  $d y z ph $.
-    eu6w.x $e |- ( x = z -> ( ph <-> ps ) ) $.
-    eu6w.y $e |- ( x = y -> ( ph <-> th ) ) $.
-    $( Replace ~ ax-10 , ~ ax-12 in ~ eu6 with substitution hypotheses.
-       (Contributed by SN, 27-May-2025.) $)
-    eu6w $p |- ( E! x ph <-> E. y A. x ( ph <-> x = y ) ) $=
-      ( wex weq wb wal wa wi wn alimi imbi2d 19.8aw syl eximi weu pm2.21 sylbir
-      alnex equequ2 albidv biimp wnf equequ1 imbi12d nfa1w bibi12d nfim cbvalvw
-      ja 19.38b imbi12i a1i spw nfrd syl5 impbid2 bitr3d ax-mp ax12wlem embantd
-      id com12 ancld albiim imbitrrdi mpgbi eximdv impbii anbi2i 3bitr4ri ancom
-      abai eu3v biimpr exsbim biantru 3bitr4i bitri ) ADUAZADIZADEJZKZDLZEIZMZW
-      JWFWFWJNZMWFAWGNZDLZEIZMWKWEWLWOWFWLWOWFWJWOWFOZWNWOWPAOZDLWNADUDWQWMDAWG
-      UBPUCWNADFJZNZDLEFEFJZWMWSDWTWGWRAEFDUEQUFRSWIWNEWHWMDAWGUGPTUOWFWOWJWFWN
-      WIEAWNWINZNZWFXANZDXADUHZXBDLZXCKWNWIDWMBFEJZNZDFWRABWGXFGDFEUIZUJZUKWHBX
-      FKZDFWRABWGXFGXHULZUKUMXDWFXADLZNXEXCAXADUPXDXLXAWFXDXLXAXAXGFLZXJFLZNZDF
-      XAXOKWRWNXMWIXNWMXGDFXIUNWHXJDFXKUNUQURZUSXAXADIXDXLXAXODFXPRXDXADXDVGUTV
-      AVBQVCVDAWNWNWGANZDLZMWIAWNXRWNWMAXRWMXGDFXIUSAAWGXRAVGWGAXRACDEHVEVHVFVA
-      VIAWGDVJVKVLVMVHVNVOWFWJVRADEVSVPWJWFMWJWJWFNZMWKWJWJWFVRWFWJVQXSWJWJXREI
-      WFWIXREWHXQDAWGVTPTADEWASWBWCWD $.
-    $( $j usage 'eu6w' avoids 'ax-10' 'ax-11' 'ax-12'; $)
-  $}
 
   ${
     $d x y $.  $d x th $.  $d x ch $.  $d y ph $.  $d y ps $.
