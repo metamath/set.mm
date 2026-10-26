@@ -580635,6 +580635,29 @@ $)
     $( $j usage 'dfac16' avoids 'ax-ac' 'ax-ac2'; $)
   $}
 
+  ${
+    $d u v x $.  $d u v w y $.  $d u v w z $.
+    $( Lemma for ~ ackmb and ~ axac2b .  (Contributed by BTernaryTau,
+       26-Oct-2026.) $)
+    ackmblem $p |- ( E. y A. z E. v A. u ( ( y e. x /\ ( z e. y ->
+        ( ( v e. x /\ -. y = v ) /\ z e. v ) ) ) \/ ( -. y e. x /\ ( z e. x ->
+        ( ( v e. z /\ v e. y ) /\ ( ( u e. z /\ u e. y ) -> u = v ) ) ) ) ) <->
+        E. y A. z E. v A. u ( ( y e. x /\ ( z e. y -> ( ( v e. x /\
+        -. y = v ) /\ z e. v ) ) ) \/ ( -. y e. x /\ ( z e. x -> ( ( u e. z /\
+        u e. y ) <-> u = v ) ) ) ) ) $=
+      ( vw wel weq wn wa wi wo wal wex wb exbii 19.28v elequ1 3bitri 3bitr4ri
+      19.43 19.32v 19.42v 19.37v 19.21v equcom imbi2i albii weu anbi12d cbveuvw
+      anbi2i eu8w bicomd equcoms eu6w 3bitr3i 3bitr2i orbi2i ) BAGZCBGDAGBDHIJC
+      DGJKJZUTIZCAGZDCGZDBGZJZECGZEBGZJZEDHZKZJZKZJZLEMZDNZCMVAVBVCVIVJOZKZJZLE
+      MZDNZCMBVPWACVAVSEMZLZDNVADNZWBDNZLZWAVPVAWBDUAVTWCDVAVSEUBPVPVAVNEMZLZDN
+      WDWGDNZLWFVOWHDVAVNEUBPVAWGDUAWIWEWDVBVREMZJZDNVBWJDNZJZWEWIVBWJDUCWBWKDV
+      BVREQPWIVBVMEMZJZDNVBWNDNZJWMWGWODVBVMEQPVBWNDUCWPWLVBVCVQEMZKZDNVCWQDNZK
+      ZWLWPVCWQDUDWJWRDVCVQEUEPWPVCVLEMZKZDNVCXADNZKWTWNXBDVCVLEUEPVCXADUDXCWSV
+      CXCVFVKEMZJZDNVFVIDEHZKZEMZJZDNZWSXAXEDVFVKEQPXIXEDXHXDVFXGVKEXFVJVIDEUFU
+      GUHULPVFDUIVIEUIXJWSVFVIDEXFVDVGVEVHDECRDEBRUJZUKVFVIFCGZFBGZJZDEFXKEFHVG
+      XLVHXMEFCREFBRUJZUMVIXNVFEDFXOVIVFODEXFVFVIXKUNUOUPUQURUGSTULSTUSSTUHP $.
+  $}
+
   $( The Axiom of Choice implies that any set is numerable.  (Contributed by
      BTernaryTau, 3-Jul-2026.) $)
   acnum $p |- ( CHOICE -> ( A e. V -> A e. dom card ) ) $=
