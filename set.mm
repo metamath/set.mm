@@ -2425,7 +2425,7 @@ $(
   Unlike most traditional developments, we have chosen not to have a separate
   symbol such as "Df." to mean "is defined as".  Instead, we will later use the
   biconditional connective for this purpose ( ~ df-an is its first use), as it
-  allows us to use logic to manipulate definitions directly.  This greatly
+  allows to use logic to manipulate definitions directly.  This greatly
   simplifies many proofs since it eliminates the need for a separate mechanism
   for introducing and eliminating definitions.
 
@@ -2460,12 +2460,12 @@ $)
      Unlike most traditional developments, we have chosen not to have a
      separate symbol such as "Df." to mean "is defined as".  Instead, we will
      later use the biconditional connective for this purpose ( ~ df-an is its
-     first use), as it allows us to use logic to manipulate definitions
-     directly.  This greatly simplifies many proofs since it eliminates the
-     need for a separate mechanism for introducing and eliminating definitions.
-     Of course, we cannot use this mechanism to define the biconditional
-     itself, since it hasn't been introduced yet.  Instead, we use a more
-     general form of definition, described as follows.
+     first use), as it allows to use logic to manipulate definitions directly.
+     This greatly simplifies many proofs since it eliminates the need for a
+     separate mechanism for introducing and eliminating definitions.  Of
+     course, we cannot use this mechanism to define the biconditional itself,
+     since it hasn't been introduced yet.  Instead, we use a more general form
+     of definition, described as follows.
 
      In its most general form, a definition is simply an assertion that
      introduces a new symbol (or a new combination of existing symbols, as in
@@ -7332,7 +7332,7 @@ $( Miscellaneous theorems using conjunction. $)
 
   ${
     syldbl2.1 $e |- ( ( ph /\ ps ) -> ( ps -> th ) ) $.
-    $( Stacked hypotheses imply the goal.  (Contributed by Stanislas Polu,
+    $( Stacked hypotheseis implies goal.  (Contributed by Stanislas Polu,
        9-Mar-2020.) $)
     syldbl2 $p |- ( ( ph /\ ps ) -> th ) $=
       ( wa com12 anabsi7 ) ABCABEBCDFG $.
@@ -12304,7 +12304,7 @@ $)
 
        (The description above applies to set theory, not predicate calculus.
        The purpose of introducing ` class x ` here, and not in set theory where
-       it belongs, is to allow us to express, i.e., "prove", the ~ weq of
+       it belongs, is to allow to express, i.e., "prove", the ~ weq of
        predicate calculus from the ~ wceq of set theory, so that we do not
        overload the ` = ` connective with two syntax definitions.  This is done
        to prevent ambiguity that would complicate some Metamath parsers.) $)
@@ -12330,7 +12330,7 @@ $)
        ~ mmset.html#class .
 
        (The purpose of introducing ` wff A = B ` here, and not in set theory
-       where it belongs, is to allow us to express, i.e., "prove", the ~ weq of
+       where it belongs, is to allow to express, i.e., "prove", the ~ weq of
        predicate calculus in terms of the ~ wceq of set theory, so that we do
        not "overload" the ` = ` connective with two syntax definitions.  This
        is done to prevent ambiguity that would complicate some Metamath
@@ -13366,7 +13366,7 @@ $)
      proved.  From { ~ ax-1 , ~ ax-2 and ~ peirce }, { ~ impsingle } was
      proved.  Therefore, the theorems that can be proved by selecting any one
      of these three distinct axiom sets must be equivalent.  Prover9 and mmj2
-     were used to help construct this proof.  (Contributed by Larry Lesyna and
+     were used to help constuct this proof.  (Contributed by Larry Lesyna and
      Jeffrey P. Machado, 1-Aug-2023.)  (Proof modification is discouraged.)
      (New usage is discouraged.) $)
   tarski-bernays-ax2 $p |- ( ( ph -> ( ps -> ch ) )
@@ -14809,7 +14809,7 @@ $(
   Predicate calculus with equality:  Tarski's system S2 (1 rule, 6 schemes)
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
-  Here we extend the language of wffs with predicate calculus, which allows us
+  Here we extend the language of wffs with predicate calculus, which allows
   to talk about individual objects in a domain of discourse (which for us will
   be the universe of all sets, so we call them "setvar variables") and make
   true/false statements about predicates, which are relationships between
@@ -15155,7 +15155,7 @@ $)
     $( No variable is (effectively) free in a theorem.
 
        This and later "hypothesis-building" lemmas, with labels starting
-       "hb...", allow us to construct proofs of formulas of the form
+       "hb...", allow to construct proofs of formulas of the form
        ` |- ( ph -> A. x ph ) ` from smaller formulas of this form.  These are
        useful for constructing hypotheses that state " ` x ` is (effectively)
        not free in ` ph ` ".  (Contributed by NM, 11-May-1993.)  This hb* idiom
@@ -17688,7 +17688,7 @@ $)
        one could apply the definiens for ` [ t / x ] ph ` twice, using
        different dummy variables ` y ` and ` z ` , and then invoke ~ bitr3i to
        establish their equivalence.  This would jeopardize the independence of
-       axioms, as demonstrated in an analogous situation involving ~ df-ss to
+       axioms, as demonstrated in an analoguous situation involving ~ df-ss to
        prove ~ ax-8 (see ~ in-ax8 ).
 
        Prefer ~ dfsb unless you can prove the hypothesis from fewer axioms in
@@ -18159,8 +18159,8 @@ $)
        For a general discussion of the theory of classes, see
        ~ mmset.html#class .
 
-       The purpose of introducing ` wff A e. B ` here is to allow us to prove
-       the ~ wel of predicate calculus in terms of the ~ wcel of set theory, so
+       The purpose of introducing ` wff A e. B ` here is to allow to prove the
+       ~ wel of predicate calculus in terms of the ~ wcel of set theory, so
        that we do not overload the ` e. ` connective with two syntax
        definitions.  This is done to prevent ambiguity that would complicate
        some Metamath parsers.  The class variables ` A ` and ` B ` are
@@ -18830,7 +18830,7 @@ $)
      preprint).  Also appears as Lemma 12 of [Monk2] p. 109 and Axiom C5-3 of
      [Monk2] p. 113.  This axiom scheme is logically redundant (see ~ ax11w )
      but is used as an auxiliary axiom scheme to achieve metalogical
-     completeness.  Use its weak version ~ alcomimw when it allows us to avoid
+     completeness.  Use its weak version ~ alcomimw when it allows to avoid
      dependence on ~ ax-11 .  (Contributed by NM, 12-Mar-1993.) $)
   ax-11 $a |- ( A. x A. y ph -> A. y A. x ph ) $.
 
@@ -18842,7 +18842,7 @@ $)
   $}
 
   $( Theorem 19.5 of [Margaris] p. 89.  Use its weak version ~ alcomw when it
-     allows us to avoid dependence on ~ ax-11 .  (Contributed by NM,
+     allows to avoid dependence on ~ ax-11 .  (Contributed by NM,
      30-Jun-1993.) $)
   alcom $p |- ( A. x A. y ph <-> A. y A. x ph ) $=
     ( wal ax-11 impbii ) ACDBDABDCDABCEACBEF $.
@@ -22810,8 +22810,8 @@ $)
        one could apply the definiens for ` E* x ph ` twice, using different
        dummy variables ` y ` and ` z ` , and then invoke ~ bitr3i to establish
        their equivalence.  This would jeopardize the independence of axioms, as
-       demonstrated in an analogous situation involving ~ df-ss to prove ~ ax-8
-       (see ~ in-ax8 ).
+       demonstrated in an analoguous situation involving ~ df-ss to prove
+       ~ ax-8 (see ~ in-ax8 ).
 
        Prefer ~ dfmo unless you can prove the hypothesis from fewer axioms in
        special cases.  (Contributed by Wolf Lammen, 27-May-2019.)  Make this
@@ -25567,9 +25567,9 @@ $)
     $( Every set is a class.  Proposition 4.9 of [TakeutiZaring] p. 13.  This
        theorem shows that a setvar variable can be expressed as a class
        abstraction.  This provides a motivation for the class syntax
-       construction ~ cv , which allows us to substitute a setvar variable for
-       a class variable.  See also ~ cab and ~ df-clab .  Note that this is not
-       a rigorous justification, because ~ cv is used as part of the proof of
+       construction ~ cv , which allows to substitute a setvar variable for a
+       class variable.  See also ~ cab and ~ df-clab .  Note that this is not a
+       rigorous justification, because ~ cv is used as part of the proof of
        this theorem, but a careful argument can be made outside of the
        formalism of Metamath, for example as is done in Chapter 4 of Takeuti
        and Zaring.  See also the discussion under the definition of class in
@@ -26250,7 +26250,7 @@ $)
     $( Equal class abstractions require equivalent formulas, and conversely.
        (Contributed by NM, 25-Nov-2013.)  (Revised by Mario Carneiro,
        11-Aug-2016.)  Remove dependency on ~ ax-8 and ~ df-clel (by avoiding
-       use of ~ cleqh ).  (Revised by BJ, 23-Jun-2019.)  Definitional form.
+       use of ~ cleqh ).  (Revised by BJ, 23-Jun-2019.)  Definitial form.
        (Revised by Wolf Lammen, 23-Feb-2025.) $)
     abbib $p |- ( { x | ph } = { x | ps } <-> A. x ( ph <-> ps ) ) $=
       ( vy cab wceq cv wcel wal dfcleq nfsab1 nfbi nfv weq wsb df-clab sbequ12r
@@ -28451,8 +28451,7 @@ $)
 
   $( Not equivalent wff's correspond to not equal class abstractions.
      (Contributed by AV, 7-Apr-2019.)  (Proof shortened by Wolf Lammen,
-     25-Nov-2019.)  Definitional form.  (Revised by Wolf Lammen,
-     5-Mar-2025.) $)
+     25-Nov-2019.)  Definitial form.  (Revised by Wolf Lammen, 5-Mar-2025.) $)
   nabbib $p |- ( { x | ph } =/= { x | ps } <-> E. x ( ph <-> -. ps ) ) $=
     ( cab wne wceq wn wb wex df-ne exnal xor3 exbii bitr3i abbib xchnxbir bitri
     wal ) ACDZBCDZESTFZGABGHZCIZSTJABHZCRZUCUAUEGUDGZCIUCUDCKUFUBCABLMNABCOPQ
@@ -29542,7 +29541,7 @@ $)
 
   ${
     $d x ps $.
-    $( Restricted quantifier version of one direction of ~ 19.27 .  (Assuming
+    $( Restricted quantitifer version of one direction of ~ 19.27 .  (Assuming
        ` F/_ x A ` , the other direction holds when ` A ` is nonempty, see
        ~ r19.27zv .)  (Contributed by NM, 3-Jun-2004.)  (Proof shortened by
        Andrew Salmon, 30-May-2011.)  (Proof shortened by Wolf Lammen,
@@ -29757,7 +29756,7 @@ $)
   ${
     $d x ph $.  $d y ph $.  $d z ph $.  $d w ph $.
     ralimd4v.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    $( Deduction quadruply quantifying both antecedent and consequent.
+    $( Deduction quadrupally quantifying both antecedent and consequent.
        (Contributed by Scott Fenton, 2-Mar-2025.)  Reduce DV conditions.
        (Revised by Eric Schmidt, 18-Nov-2025.) $)
     ralimd4v $p |- ( ph -> ( A. x e. A A. y e. B A. z e. C A. w e. D ps ->
@@ -29779,7 +29778,7 @@ $)
   ${
     $d x ph $.  $d y ph $.  $d z ph $.  $d w ph $.  $d p ph $.  $d q ph $.
     ralim6dv.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    $( Deduction sextuply quantifying both antecedent and consequent.
+    $( Deduction sextupally quantifying both antecedent and consequent.
        (Contributed by Scott Fenton, 5-Mar-2025.)  Reduce DV conditions.
        (Revised by Eric Schmidt, 18-Nov-2025.) $)
     ralimd6v $p |- ( ph -> (
@@ -35530,7 +35529,7 @@ $(
   first expression, even though it has a shorter constant string, is actually
   much more complicated in its parse tree: it is parsed as
   (wi (wceq (cv vx) (cv vy)) wph), while the ` CondEq ` version is parsed as
-  (wcdeq vx vy wph).  It also allows us to give a name to the specific ternary
+  (wcdeq vx vy wph).  It also allows to give a name to the specific ternary
   operation ` ( x = y -> ph ) ` .
 
   This is all used as part of a metatheorem: we want to say that
@@ -42542,7 +42541,7 @@ $)
   ${
     $d x y ph $.  $d x y A $.  $d x y B $.  $d x C $.
     $( An alternate definition of the conditional operator ~ df-if with one
-       fewer connective (but probably less intuitive to understand).
+       fewer connectives (but probably less intuitive to understand).
        (Contributed by NM, 30-Jan-2006.) $)
     dfif2 $p |- if ( ph , A , B ) =
                  { x | ( ( x e. B -> ph ) -> ( x e. A /\ ph ) ) } $=
@@ -45071,8 +45070,8 @@ $)
     ARUNBAKUTABUBBAUCRUDULCBLUOCBUEUOBCABCUFUGSUHS $.
 
   $( An unordered triple is an unordered pair if and only if one of its
-     elements is a proper class or is identical with one of the other elements.
-     (Contributed by Alexander van der Vekens, 15-Jan-2018.) $)
+     elements is a proper class or is identical with one of the another
+     elements.  (Contributed by Alexander van der Vekens, 15-Jan-2018.) $)
   tppreqb $p |- ( -. ( C e. _V /\ C =/= A /\ C =/= B )
                      <-> { A , B , C } = { A , B } ) $=
     ( cvv wcel wne w3a wn ctp cpr wceq wo w3o wa ianor tpprceq3 sylbir jaoi nne
@@ -57430,7 +57429,7 @@ $)
     elrnmpt1d.1 $e |- F = ( x e. A |-> B ) $.
     elrnmpt1d.2 $e |- ( ph -> x e. A ) $.
     elrnmpt1d.3 $e |- ( ph -> B e. V ) $.
-    $( Elementhood in an image set.  Deduction version of ~ elrnmpt1 .
+    $( Elementhood in an image set.  Deducion version of ~ elrnmpt1 .
        (Contributed by Glauco Siliprandi, 23-Oct-2021.) $)
     elrnmpt1d $p |- ( ph -> B e. ran F ) $=
       ( cv wcel crn elrnmpt1 syl2anc ) ABJCKDFKDELKHIBCDEFGMN $.
@@ -61182,7 +61181,7 @@ $)
     $( The Principle of Well-Ordered Induction.  Theorem 6.27 of
        [TakeutiZaring] p. 32.  This principle states that if ` B ` is a
        subclass of a well-ordered class ` A ` with the property that every
-       element of ` B ` whose initial segment is included in ` A ` is itself
+       element of ` B ` whose inital segment is included in ` A ` is itself
        equal to ` A ` .  (Contributed by Scott Fenton, 29-Jan-2011.)  (Revised
        by Mario Carneiro, 26-Jun-2015.)  (Proof shortened by Scott Fenton,
        17-Nov-2024.) $)
@@ -61202,7 +61201,7 @@ $)
     $( The Principle of Well-Ordered Induction.  Theorem 6.27 of
        [TakeutiZaring] p. 32.  This principle states that if ` B ` is a
        subclass of a well-ordered class ` A ` with the property that every
-       element of ` B ` whose initial segment is included in ` A ` is itself
+       element of ` B ` whose inital segment is included in ` A ` is itself
        equal to ` A ` .  (Contributed by Scott Fenton, 29-Jan-2011.)  (Revised
        by Mario Carneiro, 26-Jun-2015.) $)
     wfii $p |- ( ( B C_ A /\
@@ -62173,7 +62172,7 @@ $)
     $.
 
   $( An ordinal number is a transitive class.  (Contributed by NM,
-     11-Jun-1994.)  Put in closed form.  (Revised by BJ, 28-Dec-2024.) $)
+     11-Jun-1994.)  Put in closed form.  (Resised by BJ, 28-Dec-2024.) $)
   ontr $p |- ( A e. On -> Tr A ) $=
     ( con0 wcel word wtr eloni ordtr syl ) ABCADAEAFAGH $.
 
@@ -62667,7 +62666,7 @@ $)
       iota2df.4 $e |- F/ x ph $.
       iota2df.5 $e |- ( ph -> F/ x ch ) $.
       iota2df.6 $e |- ( ph -> F/_ x B ) $.
-      $( A condition that allows us to represent "the unique element such that
+      $( A condition that allows to represent "the unique element such that
          ` ph ` " with a class expression ` A ` .  (Contributed by NM,
          30-Dec-2014.) $)
       iota2df $p |- ( ph -> ( ch <-> ( iota x ps ) = B ) ) $=
@@ -62677,7 +62676,7 @@ $)
     $}
 
     $d x B $.  $d x ph $.  $d x ch $.
-    $( A condition that allows us to represent "the unique element such that
+    $( A condition that allows to represent "the unique element such that
        ` ph ` " with a class expression ` A ` .  (Contributed by NM,
        30-Dec-2014.) $)
     iota2d $p |- ( ph -> ( ch <-> ( iota x ps ) = B ) ) $=
@@ -63307,7 +63306,7 @@ $)
 
   ${
     $d F x y $.  $d G x y $.
-    $( If the union of classes is a function, the classes themselves are
+    $( If the union of classes is a function, the classes itselves are
        functions.  (Contributed by AV, 18-Jul-2019.) $)
     fununfun $p |- ( Fun ( F u. G ) -> ( Fun F /\ Fun G ) ) $=
       ( vx vy wrel wa cun funrel relun sylib cv wbr wmo fununmo alrimiv anim12i
@@ -63332,7 +63331,7 @@ $)
   ${
     $d x y A $.  $d x y B $.
     $( The converse singleton of an ordered pair is a function.  This is
-       equivalent to ~ funsn via ~ cnvsn , but stating it this way allows us to
+       equivalent to ~ funsn via ~ cnvsn , but stating it this way allows to
        skip the sethood assumptions on ` A ` and ` B ` .  (Contributed by NM,
        30-Apr-2015.) $)
     funcnvsn $p |- Fun `' { <. A , B >. } $=
@@ -68277,8 +68276,8 @@ $)
     $d A w x y $.  $d B x y $.  $d F w y $.
     dffo3f.1 $e |- F/_ x F $.
     $( An onto mapping expressed in terms of function values.  As ~ dffo3 but
-       with fewer disjoint variable constraints.  (Contributed by Glauco
-       Siliprandi, 17-Aug-2020.) $)
+       with less disjoint vars constraints.  (Contributed by Glauco Siliprandi,
+       17-Aug-2020.) $)
     dffo3f $p |- ( F : A -onto-> B
                   <-> ( F : A --> B /\ A. y e. B E. x e. A y = ( F ` x ) ) ) $=
       ( vw wfo wceq wa cv cfv wrex cab wb nfcv nfv wcel wal wi wf crn dffo2 wfn
@@ -68306,9 +68305,8 @@ $)
   ${
     $d A x y $.  $d B x y $.  $d C x y $.  $d F y $.
     foelrnf.1 $e |- F/_ x F $.
-    $( Property of a surjective function.  As ~ foelrn but with fewer disjoint
-       variable constraints.  (Contributed by Glauco Siliprandi,
-       17-Aug-2020.) $)
+    $( Property of a surjective function.  As ~ foelrn but with less disjoint
+       vars constraints.  (Contributed by Glauco Siliprandi, 17-Aug-2020.) $)
     foelrnf $p |- ( ( F : A -onto-> B /\ C e. B ) -> E. x e. A C = ( F ` x ) )
                $=
       ( vy wfo cv cfv wceq wrex wral wcel dffo3f simprbi eqeq1 rexbidv rspccva
@@ -72213,7 +72211,7 @@ $)
     riota2f.1 $e |- F/_ x B $.
     riota2f.2 $e |- F/ x ps $.
     riota2f.3 $e |- ( x = B -> ( ph <-> ps ) ) $.
-    $( This theorem shows a condition that allows us to represent a descriptor
+    $( This theorem shows a condition that allows to represent a descriptor
        with a class expression ` B ` .  (Contributed by NM, 23-Aug-2011.)
        (Revised by Mario Carneiro, 15-Oct-2016.) $)
     riota2f $p |- ( ( B e. A /\ E! x e. A ph ) ->
@@ -72225,7 +72223,7 @@ $)
   ${
     $d x ps $.  $d x A $.  $d x B $.
     riota2.1 $e |- ( x = B -> ( ph <-> ps ) ) $.
-    $( This theorem shows a condition that allows us to represent a descriptor
+    $( This theorem shows a condition that allows to represent a descriptor
        with a class expression ` B ` .  (Contributed by NM, 23-Aug-2011.)
        (Revised by Mario Carneiro, 10-Dec-2016.) $)
     riota2 $p |- ( ( B e. A /\ E! x e. A ph ) ->
@@ -72955,7 +72953,7 @@ $)
     $d W x z $.  $d W y z $.  $d G x z $.  $d G y $.  $d th z $.
     $( Restrictions of a collection of ordered pairs of related elements are
        sets.  (Contributed by Alexander van der Vekens, 1-Nov-2017.)  (Revised
-       by AV, 15-Jan-2021.)  Add disjoint variable conditions between ` W , G `
+       by AV, 15-Jan-2021.)  Add disjoint variable conditions betweem ` W , G `
        and ` x , y ` to remove hypotheses.  (Revised by SN, 13-Dec-2024.) $)
     opabresex2 $p |- { <. x , y >. | ( x ( W ` G ) y /\ th ) } e. _V $=
       ( vz cv cfv wbr wa copab fvex elopabran ssriv ssexi ) BGCGDEHZIAJBCKZPDEL
@@ -75493,9 +75491,9 @@ $)
     elovmpt3imp.o $e |- O = ( x e. _V , y e. _V |-> ( z e. M |-> B ) ) $.
     $( If the value of a function which is the result of an operation defined
        by the maps-to notation is not empty, the operands must be sets.
-       Remark: a function which is the result of an operation can be regarded
-       as an operation with 3 operands - therefore the abbreviation "mpt3" is
-       used in the label.  (Contributed by AV, 16-May-2019.) $)
+       Remark: a function which is the result of an operation can be regared as
+       operation with 3 operands - therefore the abbreviation "mpt3" is used in
+       the label.  (Contributed by AV, 16-May-2019.) $)
     elovmpt3imp $p |- ( A e. ( ( X O Y ) ` Z ) -> ( X e. _V /\ Y e. _V ) ) $=
       ( co cfv wcel c0 wne cvv wa ne0i wceq wi ax-1 wn mpondm0 fveq1 0fv eqtrdi
       cmpt eqneqall 3syl pm2.61i syl ) DJHIGLZMZNUNOPZHQNIQNRZUNDSUPUOUPUAZUPUO
@@ -76425,9 +76423,9 @@ $)
   ${
     $d x y A $.  $d x y B $.
     $( Define a relation which corresponds to proper subsethood ~ df-pss on
-       sets.  This allows us to use proper subsethood with general concepts
-       that require relations, such as strict ordering, see ~ sorpss .
-       (Contributed by Stefan O'Rear, 2-Nov-2014.) $)
+       sets.  This allows to use proper subsethood with general concepts that
+       require relations, such as strict ordering, see ~ sorpss .  (Contributed
+       by Stefan O'Rear, 2-Nov-2014.) $)
     df-rpss $a |- [C.] = { <. x , y >. | x C. y } $.
 
     $( The proper subset relation is a relation.  (Contributed by Stefan
@@ -82542,8 +82540,8 @@ $)
       $d C a b c d e f q x y $.  $d R a b c d e f q x y $.
       $d S a b c d e f q x y $.  $d T a b c d e f q x y $.
       $d U a b c d e f q $.  $d X a b c $.  $d Y b c $.  $d Z c $.
-      $( Calculate the predecessor class for the triple order.  (Contributed by
-         Scott Fenton, 31-Jan-2025.) $)
+      $( Calculate the predecsessor class for the triple order.  (Contributed
+         by Scott Fenton, 31-Jan-2025.) $)
       xpord3pred $p |- ( ( X e. A /\ Y e. B /\ Z e. C ) ->
        Pred ( U , ( ( A X. B ) X. C ) , <. X , Y , Z >. ) =
        ( ( ( ( Pred ( R , A , X ) u. { X } ) X.
@@ -84085,7 +84083,7 @@ $)
 
     $( The behavior of ` tpos ` when the left argument is the empty set (which
        is not an ordered pair but is the "default" value of an ordered pair
-       when the arguments are proper classes).  This allows us to eliminate
+       when the arguments are proper classes).  This allows to eliminate
        sethood hypotheses on ` A , B ` in ~ brtpos .  (Contributed by Mario
        Carneiro, 10-Sep-2015.) $)
     brtpos0 $p |- ( A e. V -> ( (/) tpos F A <-> (/) F A ) ) $=
@@ -86427,7 +86425,7 @@ $)
     $( Define a recursive definition generator on ` On ` (the class of ordinal
        numbers) with characteristic function ` F ` and initial value ` I ` .
        This combines functions ` F ` in ~ tfr1 and ` G ` in ~ tz7.44-1 into one
-       definition.  This rather amazing operation allows us to define, with
+       definition.  This rather amazing operation allows to define, with
        compact direct definitions, functions that are usually defined in
        textbooks only with indirect self-referencing recursive definitions.  A
        recursive definition requires advanced metalogic to justify - in
@@ -86728,7 +86726,7 @@ $(
 $)
 
   $( We use the next 3 theorems for finite recursion.  Note that we take
-     advantage of what we have done for transfinite recursion, which allows us
+     advantage of what we have done for transfinite recursion, which allows
      to explicitly specify the function and moreover not require the
      existence of omega. $)
 
@@ -90664,7 +90662,7 @@ $)
     ) ADEZBDEZCDEZFZABCGHZGHACBGHZGHZABGHCGHACGHBGHZSTUAAGQRTUAIPBCJKLABCMPRQUC
     UBIACBMNO $.
 
-  $( Rearrangement of terms in a quadruple sum.  (Contributed by Scott Fenton,
+  $( Rearragement of terms in a quadruple sum.  (Contributed by Scott Fenton,
      5-Feb-2025.) $)
   nadd4 $p |- ( ( ( A e. On /\ B e. On ) /\ ( C e. On /\ D e. On ) ) ->
   ( ( A +no B ) +no ( C +no D ) ) = ( ( A +no C ) +no ( B +no D ) ) ) $=
@@ -90674,7 +90672,7 @@ $)
     KLUJUKEFZUGUHUMUQIUFUTUIABMNUFUGUHOUFUGUHPZUKCDSTUJUNEFZUEUHUPURIUDUGVBUEUH
     ACMUAUDUEUIUBVAUNBDSTUC $.
 
-  $( Rearrangement of terms in a quadruple sum.  (Contributed by Scott Fenton,
+  $( Rearragement of terms in a quadruple sum.  (Contributed by Scott Fenton,
      5-Feb-2025.) $)
   nadd42 $p |- ( ( ( A e. On /\ B e. On ) /\ ( C e. On /\ D e. On ) ) ->
   ( ( A +no B ) +no ( C +no D ) ) = ( ( A +no C ) +no ( D +no B ) ) ) $=
@@ -92645,7 +92643,7 @@ $)
   ${
     $d A f g $.  $d B f g $.
     $( The class of all functions from ` A ` into ` B ` is a subclass of the
-       power class of the Cartesian product of ` A ` and ` B ` .  (Contributed
+       power class of the cartesion product of ` A ` and ` B ` .  (Contributed
        by AV, 13-Sep-2024.) $)
     fsetsspwxp $p |- { f | f : A --> B } C_ ~P ( A X. B ) $=
       ( vg cv wf cab cxp cpw wss wcel fssxp vex feq1 elab velpw 3imtr4i ssriv )
@@ -92727,7 +92725,7 @@ $)
   ${
     $d A a f g m n $.  $d B a f g m n $.  $d V a m n $.
     $( The class of all functions from a nonempty set ` A ` into a proper class
-       ` B ` is not a set.  If one of the preconditions is not fulfilled, then
+       ` B ` is not a set.  If one of the preconditions is not fufilled, then
        ` { f | f : A --> B } ` is a set, see ~ fsetdmprc0 for ` A e/ _V ` ,
        ~ fset0 for ` A = (/) ` , and ~ fsetex for ` B e. _V ` , see also
        ~ fsetexb .  (Contributed by AV, 14-Sep-2024.)  (Proof shortened by BJ,
@@ -97067,7 +97065,7 @@ $)
   ${
     $d A f x y $.  $d B f x y $.
     $( Corollary of Pigeonhole Principle.  If ` A ` is finite and ` B ` is a
-       proper subset of ` A ` , then ` B ` is strictly less numerous than
+       proper subset of ` A ` , the ` B ` is strictly less numerous than
        ` A ` .  Stronger version of Corollary 6C of [Enderton] p. 135.
        (Contributed by NM, 22-Aug-2008.)  Avoid ~ ax-pow .  (Revised by
        BTernaryTau, 26-Nov-2024.) $)
@@ -97301,7 +97299,7 @@ $)
 
   ${
     $d A x $.  $d A f $.
-    $( A set has fewer than one member iff it is empty.  (Contributed by Stefan
+    $( A set has less than one member iff it is empty.  (Contributed by Stefan
        O'Rear, 28-Oct-2014.)  Avoid ~ ax-pow , ~ ax-un .  (Revised by
        BTernaryTau, 12-Dec-2024.) $)
     sdom1 $p |- ( A ~< 1o <-> A = (/) ) $=
@@ -99576,7 +99574,7 @@ $)
     mapfien2.bd $e |- ( ph -> B ~~ D ) $.
     mapfien2.z $e |- ( ph -> .0. e. B ) $.
     mapfien2.w $e |- ( ph -> W e. D ) $.
-    $( Equinumerosity relation for sets of finitely supported functions.
+    $( Equinumerousity relation for sets of finitely supported functions.
        (Contributed by Stefan O'Rear, 9-Jul-2015.)  (Revised by AV,
        7-Jul-2019.) $)
     mapfien2 $p |- ( ph -> S ~~ T ) $=
@@ -115366,7 +115364,7 @@ $)
       QS $.
   $}
 
-  $( A set with fewer than two elements has 0 or 1.  (Contributed by Stefan
+  $( A set with less than two elements has 0 or 1.  (Contributed by Stefan
      O'Rear, 30-Oct-2014.) $)
   sdom2en01 $p |- ( A ~< 2o <-> ( A = (/) \/ A ~~ 1o ) ) $=
     ( c2o wbr cfn wcel c0 wceq c1o wo com con0 2onn sselii 1onn ccrd cfv eleq2i
@@ -117372,10 +117370,10 @@ $)
     hsmexlem.g $e |- G = OrdIso ( _E , U_ a e. A B ) $.
     $( Lemma for ~ hsmex .  Bound the order type of a union of sets of
        ordinals, each of limited order type.  Vaguely reminiscent of ~ unictb
-       but use of order types allows us to canonically choose the
-       sub-bijections, removing the choice requirement.  (Contributed by Stefan
-       O'Rear, 14-Feb-2015.)  (Revised by Mario Carneiro, 26-Jun-2015.)
-       (Revised by AV, 18-Sep-2021.) $)
+       but use of order types allows to canonically choose the sub-bijections,
+       removing the choice requirement.  (Contributed by Stefan O'Rear,
+       14-Feb-2015.)  (Revised by Mario Carneiro, 26-Jun-2015.)  (Revised by
+       AV, 18-Sep-2021.) $)
     hsmexlem2 $p |- ( ( A e. V /\ C e. On /\ A. a e. A ( B e. ~P On /\
               dom F e. C ) ) -> dom G e. ( har ` ~P ( A X. C ) ) ) $=
       ( vb ve vd wcel con0 wa cfv cv cep wceq wrex vc cpw cdm wral w3a ciun wss
@@ -122992,7 +122990,7 @@ $)
 
   $( ` _om ` is a strongly inaccessible cardinal.  (Many definitions of
      "inaccessible" explicitly disallow ` _om ` as an inaccessible cardinal,
-     but this choice allows us to reuse our results for inaccessibles for
+     but this choice allows to reuse our results for inaccessibles for
      ` _om ` .)  (Contributed by Mario Carneiro, 29-May-2014.) $)
   omina $p |- _om e. Inacc $=
     ( vx com cina wcel c0 wne ccf cfv wceq cv cpw csdm wbr wral peano1 cfom cfn
@@ -128819,9 +128817,9 @@ $)
      ~ qsid , which shows that the coset of the converse membership relation
      (which is not an equivalence relation) acts as an identity divisor for the
      quotient set operation.  This lets us "pretend" that ` CC ` is a quotient
-     set, even though it is not (compare ~ df-c ), and allows us to reuse some
-     of the equivalence class lemmas we developed for the transition from
-     positive reals to signed reals, etc.  (Contributed by NM, 13-Aug-1995.)
+     set, even though it is not (compare ~ df-c ), and allows to reuse some of
+     the equivalence class lemmas we developed for the transition from positive
+     reals to signed reals, etc.  (Contributed by NM, 13-Aug-1995.)
      (New usage is discouraged.) $)
   dfcnqs $p |- CC = ( ( R. X. R. ) /. `' _E ) $=
     ( cc cnr cxp cep ccnv cqs df-c qsid eqtr4i ) ABBCZJDEFGJHI $.
@@ -130904,7 +130902,7 @@ $)
     $d A x y z w $.  $d B x y z w $.
     $( The Dedekind cut theorem.  This theorem, which may be used to replace
        ~ ax-pre-sup with appropriate adjustments, states that, if ` A `
-       completely precedes ` B ` , then there is some number separating the two
+       completely preceeds ` B ` , then there is some number separating the two
        of them.  (Contributed by Scott Fenton, 13-Jun-2013.) $)
     dedekind $p |- ( ( A C_ RR /\ B C_ RR /\ A. x e. A A. y e. B x < y ) ->
        E. z e. RR A. x e. A A. y e. B ( x <_ z /\ z <_ y ) ) $=
@@ -132963,7 +132961,7 @@ $)
       ABCDEFGMN $.
   $}
 
-  $( If adding a number to another number yields the other number, the added
+  $( If adding a number to a another number yields the other number, the added
      number must be ` 0 ` .  This shows that ` 0 ` is the unique (right)
      identity of the complex numbers.  (Contributed by AV, 17-Jan-2021.) $)
   addid0 $p |- ( ( X e. CC /\ Y e. CC ) -> ( ( X + Y ) = X <-> Y = 0 ) ) $=
@@ -148541,9 +148539,9 @@ $)
       LWNWCCWKVGVHVRWKVIVJVKABACVRTVAVBVCWRVL $.
   $}
 
-  $( The infimum of a set of extended reals containing minus infinity is minus
-     infinity.  (Contributed by Thierry Arnoux, 18-Feb-2018.)  (Revised by AV,
-     28-Sep-2020.) $)
+  $( The infinimum of a set of extended reals containing minus infinity is
+     minus infinity.  (Contributed by Thierry Arnoux, 18-Feb-2018.)  (Revised
+     by AV, 28-Sep-2020.) $)
   infxrmnf $p |- ( ( A C_ RR* /\ -oo e. A ) -> inf ( A , RR* , < ) = -oo ) $=
     ( cxr wss cmnf wcel clt cinf cle wbr wceq infxrlb infxrcl adantr xlemnf syl
     wa wb mpbid ) ABCZDAEZPZABFGZDHIZUBDJZADKUAUBBEZUCUDQSUETALMUBNOR $.
@@ -151644,10 +151642,10 @@ $)
     BUCNBAOUCUGUBABPRABQSABTUA $.
 
   $( The difference of an integer in a finite set of sequential nonnegative
-     integers and an integer of a finite set of sequential integers with the
-     same upper bound and the nonnegative integer as lower bound is a member of
-     the finite set of sequential nonnegative integers.  (Contributed by
-     Alexander van der Vekens, 6-Jun-2018.) $)
+     integers and and an integer of a finite set of sequential integers with
+     the same upper bound and the nonnegative integer as lower bound is a
+     member of the finite set of sequential nonnegative integers.  (Contributed
+     by Alexander van der Vekens, 6-Jun-2018.) $)
   fz0fzdiffz0 $p |- ( ( M e. ( 0 ... N ) /\ K e. ( M ... N ) )
                       -> ( K - M ) e. ( 0 ... N ) ) $=
     ( cc0 cfz co wcel wa cn0 cle wbr w3a adantl wb elfznn0 adantr mpbid wi cz
@@ -157734,8 +157732,8 @@ $)
       NVTVKVOVHVMUAUBVHVMUCVQEGPUDUETVDFTEFTGHUKUFTEGPUGVITVHUHKZVDFZVKVLWAEFZW
       AGHZOVIWBVLWCWDVHUIVHULUJVSWAEGPUMUNUOUPUQURUS $.
 
-    $( Closure law for integer exponentiation of complex numbers.  (Contributed
-       by Mario Carneiro, 4-Jun-2014.) $)
+    $( Closure law for integer exponentiation of complex numnbers.
+       (Contributed by Mario Carneiro, 4-Jun-2014.) $)
     expclz $p |- ( ( A e. CC /\ A =/= 0 /\ N e. ZZ ) -> ( A ^ N ) e. CC ) $=
       ( cc wcel cc0 wne cz w3a cexp co csn expclzlem eldifad ) ACDAEFBGDHABIJCE
       KABLM $.
@@ -158693,9 +158691,9 @@ $)
     EAJVGVHXLXPXSXQEKAVIXQERXLVJVKVLXLXTXGRZXLXLXMYASAAEVMVNVQVOVPVDVRWGVSAWNBV
     TWAWHWIWOWPRZWJWHWMTDZWIYBWHWMXBWBXMYCWIYBSEWMBWCQWDWEWF $.
 
-  $( The sum of two squares of reals is zero if and only if both reals are
-     zero.  (Contributed by NM, 29-Apr-2005.)  (Revised by Stefan O'Rear,
-     5-Oct-2014.)  (Proof shortened by Mario Carneiro, 28-May-2016.) $)
+  $( The sum of two squres of reals is zero if and only if both reals are zero.
+     (Contributed by NM, 29-Apr-2005.)  (Revised by Stefan O'Rear, 5-Oct-2014.)
+     (Proof shortened by Mario Carneiro, 28-May-2016.) $)
   sumsqeq0 $p |- ( ( A e. RR /\ B e. RR ) ->
     ( ( A = 0 /\ B = 0 ) <-> ( ( A ^ 2 ) + ( B ^ 2 ) ) = 0 ) ) $=
     ( cr wcel wa c2 cexp co cc0 wceq cle wbr wb resqcl sqge0 jca recn sqeq0 syl
@@ -164046,8 +164044,8 @@ $)
   ${
     $d N w $.  $d V w $.
     $( If there is only a finite number of symbols, the number of words of a
-       fixed length over these symbols is the number of these symbols raised to
-       the power of the length.  (Contributed by Alexander van der Vekens,
+       fixed length over these sysmbols is the number of these symbols raised
+       to the power of the length.  (Contributed by Alexander van der Vekens,
        25-Mar-2018.) $)
     hashwrdn $p |- ( ( V e. Fin /\ N e. NN0 )
             -> ( # ` { w e. Word V | ( # ` w ) = N } ) = ( ( # ` V ) ^ N ) ) $=
@@ -165455,7 +165453,7 @@ $)
     ZXTYDXRYLYFYEYOXTNWQWNYLWPYNVJXRTWPWNYEWQYHVBCJBVKVLXTXSVMVNVOVPVIVTVQVRXSX
     TYAVSWAXRYBWOBCDAWBWCWDWEWFWGWHWIWCVTWJVQ $.
 
-  $( The value of a subword operation for improper arguments is the empty set.
+  $( The value of a subword operation for inproper arguments is the empty set.
      (Contributed by AV, 2-Dec-2022.) $)
   swrdnd0 $p |- ( S e. Word V
                   -> ( -. ( F e. ( 0 ... L ) /\ L e. ( 0 ... ( # ` S ) ) )
@@ -168314,8 +168312,8 @@ $)
       ADUPXJ $.
   $}
 
-  $( If a word is injective (regarded as a function), the cyclically shifted
-     word is also injective.  (Contributed by AV, 14-Mar-2021.) $)
+  $( If a word is injectiv (regarded as function), the cyclically shifted word
+     is also injective.  (Contributed by AV, 14-Mar-2021.) $)
   cshinj $p |- ( ( F e. Word A /\ Fun `' F /\ S e. ZZ )
                 -> ( G = ( F cyclShift S ) -> Fun `' G ) ) $=
     ( cword wcel ccnv wfun cz w3a ccsh co wceq cc0 chash cfv wf1 wa wf df-f1 ex
@@ -168624,7 +168622,7 @@ $)
 
   ${
     $d N n y $.  $d V n y $.  $d X n y $.
-    $( For a nonempty word the sets of shifted words, expressed by a finite
+    $( For a nonempty word the sets of shifted words, expressd by a finite
        interval of integers or by a half-open integer range are identical.
        (Contributed by Alexander van der Vekens, 15-Jun-2018.) $)
     scshwfzeqfzo $p |- ( ( X e. Word V /\ X =/= (/) /\ N = ( # ` X ) )
@@ -197202,8 +197200,8 @@ $)
 
     absprodnn.z $e |- ( ph -> 0 e/ Z ) $.
     $( The absolute value of the product of the elements of a finite subset of
-       the integers not containing 0 is a positive integer.  (Contributed by
-       AV, 21-Aug-2020.) $)
+       the integers not containing 0 is a poitive integer.  (Contributed by AV,
+       21-Aug-2020.) $)
     absprodnn $p |- ( ph -> P e. NN ) $=
       ( cv cprod cabs cfv cn cz wcel cc0 wne sselda fprodzcl wa elnelne2 expcom
       zcnd wnel wi syl imp fprodn0 nnabscl syl2anc eqeltrid ) ACDBIZBJZKLZMGAUM
@@ -197367,7 +197365,7 @@ $)
       VKBVFMULUMUOUPBVNTUQURUSUTVA $.
 
     $( Characterization of the least common multiple of a set of integers
-       (without 0):  A positive integer is the least common multiple of a set
+       (without 0):  A positiven integer is the least common multiple of a set
        of integers iff it divides each of the elements of the set and every
        integer which divides each of the elements of the set is greater than or
        equal to this integer.  (Contributed by AV, 22-Aug-2020.) $)
@@ -207787,7 +207785,7 @@ $)
     prmlem2.23 $e |- -. ; 2 3 || N $.
     $( Our last proving session got as far as 25 because we started with the
        two "bootstrap" primes 2 and 3, and the next prime is 5, so knowing that
-       2 and 3 are prime and 4 is not allows us to cover the numbers less than
+       2 and 3 are prime and 4 is not allows to cover the numbers less than
        ` 5 ^ 2 = 2 5 ` .  Additionally, nonprimes are "easy", so we can extend
        this range of known prime/nonprimes all the way until 29, which is the
        first prime larger than 25.  Thus, in this lemma we extend another
@@ -209546,7 +209544,7 @@ $(
   as ~ cznabel , based on ~ setsnid ) or even ordered (in proofs such as
   ~ lmodstr ).  The requirement that the indices are distinct is necessary for
   sets of ordered pairs to be extensible structures, whereas the ordering
-  allows for proofs avoiding the usage of quadratically many inequalities
+  allows for proofs avoiding the usage of quadradically many inequalities
   (compare ~ cnfldfun with ~ cnfldfunALT ).
 
   As for the inequalities, it is recommended to provide them explicitly as
@@ -209554,8 +209552,8 @@ $(
   theorems use discouraged slot theorems, they should be placed near the
   definition of a slot (within the same subsection), so that the range of
   usages of discouraged theorems is tightly limited.  Although there could be
-  quadratically many of them in the total number of indices, far fewer are
-  actually available (and not many more are expected).
+  quadradically many of them in the total number of indices, much less are
+  actually available (and not much more are expected).
 
   As for the ordering, there are some theorems like ~ basendxltplusgndx
   providing the less-than relationship between two indices.  These theorems are
@@ -214806,9 +214804,8 @@ $)
        subsets ` S ` of the base set such that ` z ` is in the closure of
        ` ( S u. { y } ) ` but not in the closure of ` S ` , ` y ` is in the
        closure of ` ( S u. { z } ) ` (Definition 3.1.9 in [FaureFrolicher]
-       p. 57 to 58.)  This theorem allows us to construct substitution
-       instances of this definition.  (Contributed by David Moews,
-       1-May-2017.) $)
+       p. 57 to 58.)  This theorem allows to construct substitution instances
+       of this definition.  (Contributed by David Moews, 1-May-2017.) $)
     mreexd $p |- ( ph -> Y e. ( N ` ( S u. { Z } ) ) ) $=
       ( csn cun cfv wcel cv cdif wral cpw sselpwd wceq wa adantr ad2antrr simpr
       simplr uneq12d fveq2d eleqtrrd wn neleqtrrd eldifd simpllr eleq12d rspcdv
@@ -217426,7 +217423,7 @@ $)
     invisoinv.f $e |- ( ph -> F e. ( X I Y ) ) $.
     $( The inverse of an isomorphism ` F ` (which is unique because of ~ invf
        and is therefore denoted by ` ( ( X N Y ) `` F ) ` , see also remark
-       3.12 in [Adamek] p. 28) is inverse to the isomorphism.  (Contributed by
+       3.12 in [Adamek] p. 28) is invers to the isomorphism.  (Contributed by
        AV, 9-Apr-2020.) $)
     invisoinvl $p |- ( ph -> ( ( X N Y ) ` F ) ( Y N X ) F ) $=
       ( co cfv wbr cop eqid ccid cco ciso idiso a1i oveqd eleqtrrd invco isohom
@@ -217438,7 +217435,7 @@ $)
       UFUOABCVGHIVPLNUPVAUQABCVIVGVFVQHGIVRVPLNVNMAHGEPZHGVQPVFABCVQEHGIVRJLNMU
       IAVSWBDVEABCEFGHIKLMNJVBOURULUSVAUTABCVFDFHGIKLNMVCVD $.
 
-    $( The inverse of an isomorphism is inverse to the isomorphism.
+    $( The inverse of an isomorphism is invers to the isomorphism.
        (Contributed by AV, 9-Apr-2020.) $)
     invisoinvr $p |- ( ph -> F ( X N Y ) ( ( X N Y ) ` F ) ) $=
       ( co cfv wbr invisoinvl invsym mpbird ) ADDGHFPZQZUBRUCDHGFPRABCDEFGHIJKL
@@ -227440,11 +227437,11 @@ $)
        In our formalism of extensible structures, the base set of a poset ` f `
        is denoted by ` ( Base `` f ) ` and its partial order by ` ( le `` f ) `
        (for "less than or equal to").  The quantifiers ` E. b E. r ` provide a
-       notational shorthand to allow us to refer to the base and ordering
-       relation as ` b ` and ` r ` in the definition rather than having to
-       repeat ` ( Base `` f ) ` and ` ( le `` f ) ` throughout.  These
-       quantifiers can be eliminated with ~ ceqsex2v and related theorems.
-       (Contributed by NM, 18-Oct-2012.) $)
+       notational shorthand to allow to refer to the base and ordering relation
+       as ` b ` and ` r ` in the definition rather than having to repeat
+       ` ( Base `` f ) ` and ` ( le `` f ) ` throughout.  These quantifiers can
+       be eliminated with ~ ceqsex2v and related theorems.  (Contributed by NM,
+       18-Oct-2012.) $)
     df-poset $a |- Poset = { f | E. b E. r
               ( b = ( Base ` f )
                /\ r = ( le ` f )
@@ -232286,7 +232283,7 @@ $)
     mgmplusf.1 $e |- B = ( Base ` M ) $.
     mgmplusf.2 $e |- .+^ = ( +f ` M ) $.
     $( The group addition function of a magma is a function into its base set.
-       (Contributed by Mario Carneiro, 14-Aug-2015.)  (Revised by AV,
+       (Contributed by Mario Carneiro, 14-Aug-2015.)  (Revisd by AV,
        28-Jan-2020.) $)
     mgmplusf $p |- ( M e. Mgm -> .+^ : ( B X. B ) --> B ) $=
       ( vx vy cmgm wcel cv cplusg cfv co wral cxp eqid mgmcl 3expb ralrimivva
@@ -235750,10 +235747,10 @@ $)
     mndind.i2 $e |- ( ( ( ph /\ y e. B /\ z e. G ) /\ ch ) -> th ) $.
     mndind.a $e |- ( ph -> A e. B ) $.
     $( Induction in a monoid.  In this theorem, ` ps ( x ) ` is the "generic"
-       proposition to be proved (the first four hypotheses tell its values at
-       y, y+z, 0, A respectively).  The two induction hypotheses mndind.i1 and
-       mndind.i2 tell that it is true at 0, that if it is true at y then it is
-       true at y+z (provided z is in ` G ` ).  The hypothesis mndind.k tells
+       proposition to be be proved (the first four hypotheses tell its values
+       at y, y+z, 0, A respectively).  The two induction hypotheses mndind.i1
+       and mndind.i2 tell that it is true at 0, that if it is true at y then it
+       is true at y+z (provided z is in ` G ` ).  The hypothesis mndind.k tells
        that ` G ` is generating.  (Contributed by SO, 14-Jul-2018.) $)
     mndind $p |- ( ph -> et ) $=
       ( va vb vc vd co wsbc wcel wb cmnd mndidcl syl sbcieg mpbird cv wi dfsbcq
@@ -237871,7 +237868,7 @@ $)
     grpss.s $e |- G C_ R $.
     grpss.f $e |- Fun R $.
     $( Show that a structure extending a constructed group (e.g., a ring) is
-       also a group.  This allows us to prove that a constructed potential ring
+       also a group.  This allows to prove that a constructed potential ring
        ` R ` is a group before we know that it is also a ring.  (Theorem
        ~ ringgrp , on the other hand, requires that we know in advance that
        ` R ` is a ring.)  (Contributed by NM, 11-Oct-2013.) $)
@@ -246342,7 +246339,7 @@ $)
     psgnunilem1.p $e |- ( ph -> P e. T ) $.
     psgnunilem1.q $e |- ( ph -> Q e. T ) $.
     psgnunilem1.a $e |- ( ph -> A e. dom ( P \ _I ) ) $.
-    $( Lemma for ~ psgnuni .  Given two consecutive transpositions in a
+    $( Lemma for ~ psgnuni .  Given two consequtive transpositions in a
        representation of a permutation, either they are equal and therefore
        equivalent to the identity, or they are not and it is possible to
        commute them such that a chosen point in the left transposition is
@@ -248400,7 +248397,7 @@ $)
 
     $d g h ph $.
     $( Sylow's first theorem.  If ` P ^ N ` is a prime power that divides the
-       cardinality of ` G ` , then ` G ` has a subgroup with size ` P ^ N ` .
+       cardinality of ` G ` , then ` G ` has a supgroup with size ` P ^ N ` .
        This is part of Metamath 100 proof #72.  (Contributed by Mario Carneiro,
        16-Jan-2015.) $)
     sylow1 $p |- ( ph -> E. g e. ( SubGrp ` G ) ( # ` g ) = ( P ^ N ) ) $=
@@ -255706,7 +255703,7 @@ $)
     gsummptfif1o.f $e |- F = ( i e. N |-> X ) $.
     gsummptfif1o.h $e |- ( ph -> H : C -1-1-onto-> N ) $.
     $( Re-index a finite group sum as map, using a bijection.  (Contributed by
-       AV, 23-Jul-2019.) $)
+       by AV, 23-Jul-2019.) $)
     gsummptfif1o $p |- ( ph -> ( G gsum F ) = ( G gsum ( F o. H ) ) ) $=
       ( cfn c0g cfv eqid wcel wral wf fmpt sylib cvv fvexd fdmfifsupp gsumf1o )
       AHBCEFGPFQRZJUISKLAIBTDHUAHBEUBMDHBIENUCUDZAHBEUEUIUJLAFQUFUGOUH $.
@@ -260186,7 +260183,7 @@ $)
      addition slot.  Note that this will not actually be a group for the
      average ring, or even for a field, but it will be a monoid, and ~ unitgrp
      shows that we get a group if we restrict to the elements that have
-     inverses.  This allows us to formalize such notions as "the multiplication
+     inverses.  This allows to formalize such notions as "the multiplication
      operation of a ring is a monoid" ( ~ ringmgp ) or "the multiplicative
      identity" in terms of the identity of a monoid ( ~ df-ur ).  (Contributed
      by Mario Carneiro, 21-Dec-2014.) $)
@@ -265820,7 +265817,7 @@ $)
     KZCBJGHZSEABJGHZEKZBAJGHZSUIUCBCDLABELUJUMULUOUIUJUMSUEULUOSZUHABCDEMUPUFUN
     UKIZUGDENUOULUQUGHCBAUNUKMOPQRTACUDLUA $.
 
-  $( Ring isomorphism is reflexive.  (Contributed by AV, 24-Jul-2026.) $)
+  $( Ring isomorphism is reflexive.  (Contributed by by AV, 24-Jul-2026.) $)
   ricref $p |- ( R e. Ring -> R ~=r R ) $=
     ( crg wcel cid cbs cfv cres crs cric wbr crh wf1o eqid idrhm f1oi sylanblrc
     co isrim brrici syl ) ABCZDAEFZGZAAHQCZAAIJUAUCAAKQCUBUBUCLUDUBAUBMZNUBOUBU
@@ -269558,7 +269555,7 @@ $)
 
   ${
     isdrng3.b $e |- B = ( Base ` R ) $.
-    $( Lemma for ~ isdrng3 :  The base set of a multiplication group restricted
+    $( Lemma for ~ isdrng3 :  The base set of a multipication group restricted
        to a subset of the original base set.  (Contributed by AV,
        22-Jul-2026.) $)
     isdrng3lem0 $p |- ( Base ` ( ( mulGrp ` R ) |`s ( B \ X ) ) )
@@ -286010,7 +286007,7 @@ sequences (&alpha;<sub>i</sub>) where &alpha;<sub>i</sub> &isin; M<sub>i</sub>
 and &alpha;<sub>i</sub> = 0 for cofinitely many indices i.  (The direct product
 is analogous but the indices do not need to cofinitely vanish.)".  In this
 definition, "cofinitely many" means "almost all" or "for all but finitely
-many".  Furthermore, "This set inherits the module structure via componentwise
+many".  Furthemore, "This set inherits the module structure via componentwise
 addition and scalar multiplication. Explicitly, two such sequences &alpha; and
 &beta; can be added by writing (&alpha; + &beta;)<sub>i</sub> =
 &alpha;<sub>i</sub> + &beta;<sub>i</sub> for all i (note that this is again
@@ -286032,7 +286029,7 @@ the subset of the direct product ... consisting of all families
 (x<sub>i</sub>)<sub>i &isin; I</sub> with x<sub>i</sub> &isin; A<sub>i</sub>
 such that x<sub>i</sub> = 0 for all but a finite number of indices i").
 <br>
-In short, the <b>direct sum</b> of a family of (left) modules
+In short, the <b>direct sum</b> of a familiy of (left) modules
 {M<sub>i</sub>}<sub>i &isin; I</sub> is the restriction of the direct product
 of {M<sub>i</sub>}<sub>i &isin; I</sub> to the elements with index function
 having finite support, as formalized by Definition ~ df-dsmm .
@@ -287682,8 +287679,8 @@ shown that these definitions are actually equivalent. $)
 
        This is a defined concept because it matters in many cases whether
        independence is taken at a set or family level.  For instance, a number
-       is transcendental iff its nonzero powers are linearly independent.  Is 1
-       transcendental?  It has only one nonzero power.
+       is transcedental iff its nonzero powers are linearly independent.  Is 1
+       transcedental?  It has only one nonzero power.
 
        We can almost define family independence as a family of unequal elements
        with independent range, as ~ islindf3 , but taking that as primitive
@@ -294383,7 +294380,7 @@ $)
        ` ( 1 + x ) + ( 1 + x ) y e. ( { y } mPoly ( { x } mPoly ZZ ) ) ` .
        This, for example, allows one to treat a multivariate polynomial as a
        univariate polynomial with coefficients in a polynomial ring with one
-       fewer variable.  (Contributed by Mario Carneiro, 21-Mar-2015.) $)
+       less variable.  (Contributed by Mario Carneiro, 21-Mar-2015.) $)
     df-selv $a |- selectVars = ( i e. _V , r e. _V |->
       ( j e. ~P i |-> ( f e. ( Base ` ( i mPoly r ) ) |->
         [_ ( ( i \ j ) mPoly r ) / u ]_
@@ -300419,7 +300416,7 @@ $(
   Matrices
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 
-  According to Wikipedia ("Matrix (mathematics)", 02-Apr-2019,
+  According to Wikipedia ("Matrix (mathemetics)", 02-Apr-2019,
   ~ https://en.wikipedia.org/wiki/Matrix_(mathematics) ) "A matrix is a
   rectangular array of numbers or other mathematical objects for which
   operations such as addition and multiplication are defined.  Most commonly, a
@@ -303986,7 +303983,7 @@ $)
     $d n r m i j k l $.
     $( Define the submatrices of a square matrix.  A submatrix is obtained by
        deleting a row and a column of the original matrix.  Since the indices
-       of a matrix need not be sequential integers, it does not matter that
+       of a matrix need not to be sequential integers, it does not matter that
        there may be gaps in the numbering of the indices for the submatrix.
        The determinants of such submatrices are called the "minors" of the
        original matrix.  (Contributed by AV, 27-Dec-2018.) $)
@@ -304124,13 +304121,13 @@ $)
        definition as theorems:  "The determinant function is the unique
        multilinear, alternating and normalized function from the algebra of
        square matrices of the same dimension over a commutative ring to this
-       ring".  Functionality is shown by ~ mdetf .  Multilinearity means
-       "linear for each row" - the additivity is shown by ~ mdetrlin , the
-       homogeneity by ~ mdetrsca .  Furthermore, it is shown that the
-       determinant function is alternating (see ~ mdetralt ) and normalized
-       (see ~ mdet1 ).  Finally, uniqueness is shown by ~ mdetuni .  As a
-       consequence, the "determinant of a square matrix" is the function value
-       of the determinant function for this square matrix, see ~ mdetleib .
+       ring".  Functionality is shown by ~ mdetf .  Multilineary means "linear
+       for each row" - the additivity is shown by ~ mdetrlin , the homogeneity
+       by ~ mdetrsca .  Furthermore, it is shown that the determinant function
+       is alternating (see ~ mdetralt ) and normalized (see ~ mdet1 ).
+       Finally, uniqueness is shown by ~ mdetuni .  As a consequence, the
+       "determinant of a square matrix" is the function value of the
+       determinant function for this square matrix, see ~ mdetleib .
        (Contributed by Stefan O'Rear, 9-Sep-2015.)  (Revised by SO,
        10-Jul-2018.) $)
     df-mdet $a |- maDet = ( n e. _V , r e. _V |-> ( m e. ( Base ` ( n Mat r )
@@ -306150,8 +306147,8 @@ $)
     $d K a b c d e i j $.  $d M a b c d e i j $.  $d N a b c d e $.
     $d R a b c d e $.  $d X a b c d e j $.  $d L a b c d e $.
     $d .x. a b c d e i $.  $d L i j $.  $d B a b c d $.
-    $( The adjunct of a transposed matrix is the transposition of the adjunct
-       of the matrix.  (Contributed by Stefan O'Rear, 17-Jul-2018.) $)
+    $( The adjuct of a transposed matrix is the transposition of the adjunct of
+       the matrix.  (Contributed by Stefan O'Rear, 17-Jul-2018.) $)
     madutpos $p |- ( ( R e. CRing /\ M e. B ) ->
         ( J ` tpos M ) = tpos ( J ` M ) ) $=
       ( va vb vc vd wcel wa cfv wceq cv co eqid ccrg ctpos wral weq cur c0g cif
@@ -306448,7 +306445,7 @@ $(
   that is a weighted sum of the determinants of n sub-matrices of B, each of
   size (n-1) x (n-1)". The expansion is usually performed for a row of matrix B
   (alternately for a column of matrix B). The mentioned "sub-matrices" are the
-  matrices resulting from deleting the i-th row and the j-th column of matrix
+  matrices resultung from deleting the i-th row and the j-th column of matrix
   B.  The mentioned "weights" (factors/coefficients) are the elements at
   position i and j in matrix B. If the expansion is performed for a row, the
   coefficients are the elements of the selected row.
@@ -308568,7 +308565,7 @@ $)
 
   ${
     $d R x y $.
-    $( The transformed empty set as matrix of dimension 0 is the empty set
+    $( The transformed empty set as matrix of dimenson 0 is the empty set
        (i.e., the polynomial matrix of dimension 0).  (Contributed by AV,
        4-Aug-2019.) $)
     d0mat2pmat $p |- ( R e. V -> ( ( (/) matToPolyMat R ) ` (/) ) = (/) ) $=
@@ -308585,7 +308582,7 @@ $)
     d1mat2pmat.b $e |- B = ( Base ` ( N Mat R ) ) $.
     d1mat2pmat.p $e |- P = ( Poly1 ` R ) $.
     d1mat2pmat.s $e |- S = ( algSc ` P ) $.
-    $( The transformation of a matrix of dimension 1.  (Contributed by AV,
+    $( The transformation of a matrix of dimenson 1.  (Contributed by AV,
        4-Aug-2019.) $)
     d1mat2pmat $p |- ( ( R e. V /\ ( N = { A } /\ A e. V ) /\ M e. B )
                   -> ( T ` M ) = { <. <. A , A >. , ( S ` ( A M A ) ) >. } ) $=
@@ -318372,7 +318369,7 @@ $)
     lmbr.2 $e |- ( ph -> J e. ( TopOn ` X ) ) $.
     $( Express the binary relation "sequence ` F ` converges to point
        ` P ` " in a topological space.  Definition 1.4-1 of [Kreyszig] p. 25.
-       The condition ` F C_ ( CC X. X ) ` allows us to use objects more general
+       The condition ` F C_ ( CC X. X ) ` allows to use objects more general
        than sequences when convenient; see the comment in ~ df-lm .
        (Contributed by Mario Carneiro, 14-Nov-2013.) $)
     lmbr $p |- ( ph -> ( F ( ~~>t ` J ) P <->
@@ -351533,13 +351530,13 @@ $)
   ${
     $d f k w F $.  $d f k w K $.  $d f k w W $.
     $( Define the class of subcomplex modules, which are left modules over a
-       subring of the field of complex numbers ` CCfld ` , which allows us to
-       use the complex addition, multiplication, etc. in theorems about
-       subcomplex modules.  Since the field of complex numbers is commutative
-       and so are its subrings (see ~ subrgcrng ), left modules over such
-       subrings are the same as right modules, see ~ rmodislmod .  Therefore,
-       we drop the word "left" from "subcomplex left module".  (Contributed by
-       Mario Carneiro, 16-Oct-2015.) $)
+       subring of the field of complex numbers ` CCfld ` , which allows to use
+       the complex addition, multiplication, etc. in theorems about subcomplex
+       modules.  Since the field of complex numbers is commutative and so are
+       its subrings (see ~ subrgcrng ), left modules over such subrings are the
+       same as right modules, see ~ rmodislmod .  Therefore, we drop the word
+       "left" from "subcomplex left module".  (Contributed by Mario Carneiro,
+       16-Oct-2015.) $)
     df-clm $a |- CMod = { w e. LMod | [. ( Scalar ` w ) / f ].
       [. ( Base ` f ) / k ].
         ( f = ( CCfld |`s k ) /\ k e. ( SubRing ` CCfld ) ) } $.
@@ -354800,10 +354797,9 @@ $)
     lmmbr.3 $e |- ( ph -> D e. ( *Met ` X ) ) $.
     $( Express the binary relation "sequence ` F ` converges to point
        ` P ` " in a metric space.  Definition 1.4-1 of [Kreyszig] p. 25.  The
-       condition ` F C_ ( CC X. X ) ` allows us to use objects more general
-       than sequences when convenient; see the comment in ~ df-lm .
-       (Contributed by NM, 7-Dec-2006.)  (Revised by Mario Carneiro,
-       1-May-2014.) $)
+       condition ` F C_ ( CC X. X ) ` allows to use objects more general than
+       sequences when convenient; see the comment in ~ df-lm .  (Contributed by
+       NM, 7-Dec-2006.)  (Revised by Mario Carneiro, 1-May-2014.) $)
     lmmbr $p |- ( ph -> ( F ( ~~>t ` J ) P <->
                   ( F e. ( X ^pm CC ) /\ P e. X /\ A. x e. RR+ E. y e. ran ZZ>=
                     ( F |` y ) : y --> ( P ( ball ` D ) x ) ) ) ) $=
@@ -354822,10 +354818,9 @@ $)
 
     $( Express the binary relation "sequence ` F ` converges to point
        ` P ` " in a metric space.  Definition 1.4-1 of [Kreyszig] p. 25.  The
-       condition ` F C_ ( CC X. X ) ` allows us to use objects more general
-       than sequences when convenient; see the comment in ~ df-lm .
-       (Contributed by NM, 7-Dec-2006.)  (Revised by Mario Carneiro,
-       1-May-2014.) $)
+       condition ` F C_ ( CC X. X ) ` allows to use objects more general than
+       sequences when convenient; see the comment in ~ df-lm .  (Contributed by
+       NM, 7-Dec-2006.)  (Revised by Mario Carneiro, 1-May-2014.) $)
     lmmbr2 $p |- ( ph -> ( F ( ~~>t ` J ) P <->
    ( F e. ( X ^pm CC ) /\ P e. X /\ A. x e. RR+ E. j e. ZZ A. k e. ( ZZ>= ` j )
       ( k e. dom F /\ ( F ` k ) e. X /\ ( ( F ` k ) D P ) < x ) ) ) ) $=
@@ -355131,9 +355126,9 @@ $)
 
     $( Express the property " ` F ` is a Cauchy sequence of metric ` D ` ".
        Part of Definition 1.4-3 of [Kreyszig] p. 28.  The condition
-       ` F C_ ( CC X. X ) ` allows us to use objects more general than
-       sequences when convenient; see the comment in ~ df-lm .  (Contributed by
-       NM, 7-Dec-2006.)  (Revised by Mario Carneiro, 14-Nov-2013.) $)
+       ` F C_ ( CC X. X ) ` allows to use objects more general than sequences
+       when convenient; see the comment in ~ df-lm .  (Contributed by NM,
+       7-Dec-2006.)  (Revised by Mario Carneiro, 14-Nov-2013.) $)
     iscau $p |- ( D e. ( *Met ` X ) -> ( F e. ( Cau ` D ) <->
         ( F e. ( X ^pm CC ) /\ A. x e. RR+ E. k e. ZZ ( F |` ( ZZ>= ` k ) ) :
           ( ZZ>= ` k ) --> ( ( F ` k ) ( ball ` D ) x ) ) ) ) $=
@@ -357013,7 +357008,7 @@ $)
        Banach space must be a (subcomplex) pre-Hilbert space is required
        because the definition of ` ClSubSp ` is based on an inner product.  If
        ` ClSubSp ` was generalized for arbitrary topological spaces, this
-       assumption could be omitted.  (Contributed by AV, 8-Oct-2022.) $)
+       assuption could be omitted.  (Contributed by AV, 8-Oct-2022.) $)
     bncssbn $p |- ( ( ( W e. Ban /\ W e. CPreHil ) /\ U e. S )
                     -> X e. Ban ) $=
       ( cbn wcel ccph wa cnvc csca cfv ccms clss bnnvc eqid bnsca jca ad2antrr
@@ -363407,7 +363402,7 @@ $)
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Lebesgue integral
+  Lesbesgue integral
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
@@ -369436,7 +369431,7 @@ $)
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Lebesgue directed integral
+  Lesbesgue directed integral
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
@@ -388223,7 +388218,7 @@ $)
   $}
 
   $( The range of the natural logarithm function, also the principal domain of
-     the exponential function.  This allows us to write the longer class
+     the exponential function.  This allows to write the longer class
      expression as simply ` ran log ` .  (Contributed by Paul Chapman,
      21-Apr-2008.)  (Revised by Mario Carneiro, 13-May-2014.) $)
   logrn $p |- ran log = ( `' Im " ( -u _pi (,] _pi ) ) $=
@@ -390280,7 +390275,7 @@ $)
       BAXKBWEWBTVRWTWQDEYFXRYIJYEWQXJWCWDQWFWGWHWIWJWK $.
   $}
 
-  $( The complex power function allows us to write n-th roots via the idiom
+  $( The complex power function allows to write n-th roots via the idiom
      ` A ^c ( 1 / N ) ` .  (Contributed by Mario Carneiro, 6-May-2015.) $)
   cxproot $p |- ( ( A e. CC /\ N e. NN ) ->
                  ( ( A ^c ( 1 / N ) ) ^ N ) = A ) $=
@@ -394418,7 +394413,7 @@ $)
   asincl $p |- ( A e. CC -> ( arcsin ` A ) e. CC ) $=
     ( cc casin asinf ffvelcdmi ) BBACDE $.
 
-  $( Domain and codomain of the arccos function.  (Contributed by Mario
+  $( Domain and codoamin of the arccos function.  (Contributed by Mario
      Carneiro, 31-Mar-2015.) $)
   acosf $p |- arccos : CC --> CC $=
     ( vx cc cpi c2 cdiv co casin cfv cmin cacos df-acos wcel picn halfcl asincl
@@ -394479,7 +394474,7 @@ $)
     ZMPZUMUNPZUPMPULUMEDZUNEDUSUTSAUIZUAUMUNUBQULURUPMULURUMIRHZUPULVAIEDZURVCP
     VBTUMIUCQULVAVDVCUPPVBTUMIUDQUJUEUFUGUHUK $.
 
-  $( Domain and codomain of the arctan function.  (Contributed by Mario
+  $( Domain and codoamin of the arctan function.  (Contributed by Mario
      Carneiro, 31-Mar-2015.) $)
   atanf $p |- arctan : ( CC \ { -u _i , _i } ) --> CC $=
     ( vx cc ci cneg cpr co c1 cmul cmin clog cfv catan wcel ax-icn ax-1cn mulcl
@@ -394632,13 +394627,13 @@ $)
     QYKYLVRVSVTWAWBWRYFIAYFBCWRWCWDXFWRNWDXHWEWMYJARWQAWFWGWHSWISWIWJWKWL $.
 
   $( The arcsine function composed with ` sin ` is equal to the identity.  This
-     plus ~ sinasin allow us to view ` sin ` and ` arcsin ` as inverse
-     operations to each other.  For ease of use, we have not defined precisely
-     the correct domain of correctness of this identity; in addition to the
-     main region described here it is also true for _some_ points on the branch
-     cuts, namely when ` A = ( _pi / 2 ) - _i y ` for nonnegative real ` y `
-     and also symmetrically at ` A = _i y - ( _pi / 2 ) ` .  In particular,
-     when restricted to reals this identity extends to the closed interval
+     plus ~ sinasin allow to view ` sin ` and ` arcsin ` as inverse operations
+     to each other.  For ease of use, we have not defined precisely the correct
+     domain of correctness of this identity; in addition to the main region
+     described here it is also true for _some_ points on the branch cuts,
+     namely when ` A = ( _pi / 2 ) - _i y ` for nonnegative real ` y ` and also
+     symmetrically at ` A = _i y - ( _pi / 2 ) ` .  In particular, when
+     restricted to reals this identity extends to the closed interval
      ` [ -u ( _pi / 2 ) , ( _pi / 2 ) ] ` , not just the open interval (see
      ~ reasinsin ).  (Contributed by Mario Carneiro, 2-Apr-2015.) $)
   asinsin $p |- ( ( A e. CC /\ ( Re ` A ) e.
@@ -400741,7 +400736,7 @@ $)
       fzfi dvdsssfz1 sstrid ssfi sylancr ) ACDZEAFGZHDBIAJKZBLMZUDNUFHDEARUCUFU
       EBCMZUDLCNUFUGNOUEBLCPQABSTUDUFUAUB $.
 
-    $( Domain and codomain of the Chebyshev function.  (Contributed by Mario
+    $( Domain and codoamin of the Chebyshev function.  (Contributed by Mario
        Carneiro, 15-Sep-2014.) $)
     chtf $p |- theta : RR --> RR $=
       ( vx vp cr cc0 cv cicc co cprime cin clog cfv csu ccht df-cht ppifi wa cn
@@ -412972,10 +412967,9 @@ $)
 
       $( The sum ` sum_ n e. NN , X ( n ) / n ` is nonzero for all
          non-principal Dirichlet characters (i.e. the assumption ` X e. W ` is
-         contradictory).  This is the key result that allows us to eliminate
-         the conditionals from ~ dchrmusum2 and ~ dchrvmasumif .  Lemma 9.4.4
-         of [Shapiro], p. 382.  (Contributed by Mario Carneiro,
-         12-May-2016.) $)
+         contradictory).  This is the key result that allows to eliminate the
+         conditionals from ~ dchrmusum2 and ~ dchrvmasumif .  Lemma 9.4.4 of
+         [Shapiro], p. 382.  (Contributed by Mario Carneiro, 12-May-2016.) $)
       dchrisum0 $p |- -. ph $=
         ( co vx vk vb vi vz vd vc vt va cn cdvds wbr crab cfv csu cmpt eqid csn
         cv cdif cdiv cc0 wceq ssrab3 difss sstri sselid dchrisum0re crp cfl cfz
@@ -413039,9 +413033,9 @@ $)
           ( abs ` ( ( seq 1 ( + , F ) ` ( |_ ` y ) ) - T ) ) <_ ( C / y ) ) $.
         $( The sum ` sum_ n e. NN , X ( n ) / n ` is nonzero for all
            non-principal Dirichlet characters (i.e. the assumption ` X e. W `
-           is contradictory).  This is the key result that allows us to
-           eliminate the conditionals from ~ dchrmusum2 and ~ dchrvmasumif .
-           Lemma 9.4.4 of [Shapiro], p. 382.  (Contributed by Mario Carneiro,
+           is contradictory).  This is the key result that allows to eliminate
+           the conditionals from ~ dchrmusum2 and ~ dchrvmasumif .  Lemma 9.4.4
+           of [Shapiro], p. 382.  (Contributed by Mario Carneiro,
            12-May-2016.) $)
         dchrisumn0 $p |- ( ph -> T =/= 0 ) $=
           ( vm cc0 wceq wa cn cv cfv cdiv co csu csn cdif crab wcel adantr eqid
@@ -421709,7 +421703,7 @@ $)
       XCWGXJXNXMFVMUMGWHVNVONKVSXJXKPXLVPNFWIKVQVTVOWA $.
 
     $d V x $.
-    $( Bounding law from above for the surreal infimum.  Analogous to
+    $( Bounding law from above for the surreal infimum.  Analagous to
        proposition 4.2 of [Lipparini] p. 6.  (Contributed by Scott Fenton,
        9-Aug-2024.) $)
     noinfbnd1 $p |- ( ( B C_ No /\ B e. V /\ U e. B ) ->
@@ -421824,7 +421818,7 @@ $)
        |-> ( iota x E. u e. B ( g e. dom u /\
        A. v e. B ( -. u <s v -> ( u |` suc g ) = ( v |` suc g ) ) /\
        ( u ` g ) = x ) ) ) ) $.
-    $( Bounding law from below for the surreal infimum.  Analogous to
+    $( Bounding law from below for the surreal infimum.  Analagous to
        proposition 4.3 of [Lipparini] p. 6.  (Contributed by Scott Fenton,
        9-Aug-2024.) $)
     noinfbnd2 $p |- ( ( B C_ No /\ B e. V /\ Z e. No ) ->
@@ -422677,7 +422671,7 @@ In [Conway] surreal numbers are represented as equivalence classes of cuts
 of previously defined surreal numbers.  This is complicated to handle in
 ZFC without classes so we do not make it our definition. However, we can
 define a cut operator on surreals that behaves similarly.  We introduce
-such an operator in this section and use it to define all surreals hereafter.
+such an operator in this section and use it to define all surreals hearafter.
 $)
 
 $(
@@ -422887,7 +422881,7 @@ $)
 
   ${
     $d A x y p q r $.  $d B x y p q r $.
-    $( Conway's Simplicity Theorem.  Given ` A ` preceding ` B ` , there is a
+    $( Conway's Simplicity Theorem.  Given ` A ` preceeding ` B ` , there is a
        unique surreal of minimal length separating them.  This is a fundamental
        property of surreals and will be used (via surreal cuts) to prove many
        properties later on.  Theorem from [Alling] p. 185.  (Contributed by
@@ -423338,7 +423332,7 @@ $)
 
   ${
     $d A x $.  $d B x $.
-    $( If ` A ` precedes ` B ` , then ` A ` and ` B ` are disjoint.
+    $( If ` A ` preceeds ` B ` , then ` A ` and ` B ` are disjoint.
        (Contributed by Scott Fenton, 18-Sep-2024.) $)
     sltsdisj $p |- ( A <<s B -> ( A i^i B ) = (/) ) $=
       ( vx cslts wbr cv wcel wn wral c0 wceq wa clts csur sltsss1 sselda ltsirr
@@ -431815,7 +431809,7 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-  $( Declare a new constant. $)
+  $( Delcare a new constant. $)
   $c On_s $.
 
   $( Declare the syntax for surreal ordinals. $)
@@ -432646,9 +432640,8 @@ $)
 
         ${
           $d F x y $.  $d C x $.
-          $( A helper lemma for the value of a recursive definition generator
-             on surreal sequences.  (Contributed by Scott Fenton,
-             18-Apr-2025.) $)
+          $( A helper lemma for the value of a recursive defintion generator on
+             surreal sequences.  (Contributed by Scott Fenton, 18-Apr-2025.) $)
           noseqrdglem $p |- ( ( ph /\ B e. Z ) ->
           <. B , ( 2nd ` ( R ` ( `' G ` B ) ) ) >. e. ran R ) $=
             ( wcel cfv cop com wa ccnv c2nd crn wceq om2noseqf1o f1ocnvdm sylan
@@ -432789,7 +432782,7 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-  $( Declare new constants. $)
+  $( Delcare new constants. $)
   $c NN0_s NN_s $.
 
   $( Declare the syntax for surreal non-negative integers. $)
@@ -434458,7 +434451,7 @@ $)
     pw2divscan4d.1 $e |- ( ph -> A e. No ) $.
     pw2divscan4d.2 $e |- ( ph -> N e. NN0_s ) $.
     pw2divscan4d.3 $e |- ( ph -> M e. NN0_s ) $.
-    $( Cancellation law for division by powers of two.  (Contributed by Scott
+    $( Cancellation law for divison by powers of two.  (Contributed by Scott
        Fenton, 11-Dec-2025.) $)
     pw2divscan4d $p |- ( ph -> ( A /su ( 2s ^su N ) ) =
      ( ( ( 2s ^su M ) x.s A ) /su ( 2s ^su ( N +s M ) ) ) ) $=
@@ -434485,7 +434478,7 @@ $)
       UGGCUHUISULAURFUSBJAVBURFUJVCUPUKSABCDEUMUNUO $.
     $( $j usage 'pw2gt0divsd' avoids 'ax-inf' 'ax-inf2'; $)
 
-    $( Division of a non-negative surreal by a power of two.  (Contributed by
+    $( Divison of a non-negative surreal by a power of two.  (Contributed by
        Scott Fenton, 7-Nov-2025.) $)
     pw2ge0divsd $p |- ( ph ->
     ( 0s <_s A <-> 0s <_s ( A /su ( 2s ^su N ) ) ) ) $=
@@ -435895,7 +435888,7 @@ $)
   ${
     $d x y n $.
     $( Define the surreal reals.  These are the finite numbers without any
-       infinitesimal parts.  Definition from [Conway] p. 24.  (Contributed by
+       infintesimal parts.  Definition from [Conway] p. 24.  (Contributed by
        Scott Fenton, 15-Apr-2025.) $)
     df-reno $a |- RR_s = { x e. No | (
      E. n e. NN_s ( ( -us ` n ) <s x /\ x <s n ) /\
@@ -436272,7 +436265,7 @@ $(
   A Tarski structure ` f ` is a set (of points) ` ( Base `` f ) ` together with
   functions ` ( Itv `` f ) ` and ` ( dist `` f ) ` on
   ` ( ( Base `` f ) X. ( Base `` f ) ) ` satisfying certain axioms (given in
-  Definitions ~ df-trkg _et sequentes_).  This allows us to treat a Tarski
+  Definitions ~ df-trkg _et sequentes_).  This allows to treat a Tarski
   structure as a special kind of extensible structure (see ~ df-struct ).
 
   The translation to and from Tarski's treatment is as follows (given, again,
@@ -437236,7 +437229,7 @@ $)
   ${
     $d A f u x y $.  $d R f u x y $.  $d V u x y $.
     $( Given any equivalence relation ` R ` , one can define a function ` f `
-       such that all elements of an equivalence class of ` R ` have the same
+       such that all elements of an equivalence classe of ` R ` have the same
        image by ` f ` .  (Contributed by Thierry Arnoux, 25-Jan-2023.) $)
     tgjustr $p |- ( ( A e. V /\ R Er A ) -> E. f ( f Fn A
       /\ A. x e. A A. y e. A ( x R y <-> ( f ` x ) = ( f ` y ) ) ) ) $=
@@ -437636,7 +437629,7 @@ $)
       tgtrisegint.1 $e |- ( ph -> B e. ( A I C ) ) $.
       tgtrisegint.2 $e |- ( ph -> E e. ( D I C ) ) $.
       tgtrisegint.3 $e |- ( ph -> F e. ( A I D ) ) $.
-      $( A line segment between two sides of a triangle intersects a segment
+      $( A line segment between two sides of a triange intersects a segment
          crossing from the remaining side to the opposite vertex.  Theorem 3.17
          of [Schwabhauser] p. 33.  (Contributed by Thierry Arnoux,
          23-Mar-2019.) $)
@@ -440935,7 +440928,7 @@ $)
       $d G a b $.  $d M a b $.  $d P a b $.  $d a b ph $.
       mirmot.m $e |- M = ( S ` A ) $.
       mirmot.a $e |- ( ph -> A e. P ) $.
-      $( Point inversion is a motion of the geometric space.  Theorem 7.14 of
+      $( Point investion is a motion of the geometric space.  Theorem 7.14 of
          [Schwabhauser] p. 51.  (Contributed by Thierry Arnoux,
          15-Dec-2019.) $)
       mirmot $p |- ( ph -> M e. ( G Ismt G ) ) $=
@@ -445072,8 +445065,8 @@ $)
         LXSXS $.
     $}
 
-    $( If the catheti of two right-angled triangles are congruent, so are their
-       hypotenuses.  Theorem 10.12 of [Schwabhauser] p. 91.  (Contributed by
+    $( If the catheti of two right-angled triangles are congruent, so is their
+       hypothenuse.  Theorem 10.12 of [Schwabhauser] p. 91.  (Contributed by
        Thierry Arnoux, 16-Dec-2019.) $)
     hypcgr $p |- ( ph -> ( A .- C ) = ( D .- F ) ) $=
       ( co cmid cfv cmir clng clmi eqid midcl mircl mirrag miriso eqtr4d midcom
@@ -448568,7 +448561,7 @@ $)
     isoas.c $e |- ( ph -> C e. P ) $.
     isoas.1 $e |- ( ph -> -. ( C e. ( A L B ) \/ A = B ) ) $.
     isoas.2 $e |- ( ph -> <" A B C "> ( cgrA ` G ) <" A C B "> ) $.
-    $( Congruence theorem for isosceles triangles: if two angles of a triangle
+    $( Congruence theorem for isocele triangles: if two angles of a triangle
        are congruent, then the corresponding sides also are.  (Contributed by
        Thierry Arnoux, 5-Oct-2020.) $)
     isoas $p |- ( ph -> ( A .- B ) = ( A .- C ) ) $=
@@ -451382,7 +451375,7 @@ $)
 
   ${
     $d A i j $.  $d B i j $.  $d C i j $.  $d N i j $.  $d T i j $.
-    $( Lemma for ~ ax5seg .  Reexpress a one congruence sum given betweenness.
+    $( Lemma for ~ ax5seg .  Rexpress a one congruence sum given betweenness.
        (Contributed by Scott Fenton, 11-Jun-2013.) $)
     ax5seglem1 $p |- ( ( N e. NN /\ ( A e. ( EE ` N ) /\ C e. ( EE ` N ) ) /\
        ( T e. ( 0 [,] 1 ) /\
@@ -451414,8 +451407,8 @@ $)
       XGXKYPUVHXGXKYPUHZYMUVIYGYLXGXIYPYQXJXIYPYQXGUUDWFWRXGXJYPYRXIXJYPYRXGUUE
       WFWTXAXBXCXDXEXF $.
 
-    $( Lemma for ~ ax5seg .  Reexpress another congruence sum given
-       betweenness.  (Contributed by Scott Fenton, 11-Jun-2013.) $)
+    $( Lemma for ~ ax5seg .  Rexpress another congruence sum given betweenness.
+       (Contributed by Scott Fenton, 11-Jun-2013.) $)
     ax5seglem2 $p |- ( ( N e. NN /\ ( A e. ( EE ` N ) /\ C e. ( EE ` N ) ) /\
        ( T e. ( 0 [,] 1 ) /\
          A. i e. ( 1 ... N ) ( B ` i ) =
@@ -453012,8 +453005,8 @@ $)
             ( x ` i ) = ( ( ( 1 - t ) x. ( Z ` i ) ) +
                           ( t x. ( U ` i ) ) ) ) ) } $.
     $( Lemma for ~ axcont .  The idea here is to set up a mapping ` F ` that
-       will allow us to transfer ~ dedekind to two sets of points.  Here, we
-       set up ` F ` and show its domain and codomain.  (Contributed by Scott
+       will allow to transfer ~ dedekind to two sets of points.  Here, we set
+       up ` F ` and show its domain and codomain.  (Contributed by Scott
        Fenton, 17-Jun-2013.) $)
     axcontlem2 $p |-
        ( ( ( N e. NN /\ Z e. ( EE ` N ) /\ U e. ( EE ` N ) ) /\ Z =/= U ) ->
@@ -453344,7 +453337,7 @@ $)
            A. i e. ( 1 ... N )
             ( x ` i ) = ( ( ( 1 - t ) x. ( Z ` i ) ) +
                           ( t x. ( U ` i ) ) ) ) ) } $.
-    $( Lemma for ~ axcont .  Given two points in ` D ` , one precedes the other
+    $( Lemma for ~ axcont .  Given two points in ` D ` , one preceeds the other
        iff its scaling constant is less than the other point's.  (Contributed
        by Scott Fenton, 18-Jun-2013.) $)
     axcontlem7 $p |- ( ( ( ( N e. NN /\ Z e. ( EE ` N ) /\ U e. ( EE ` N ) )
@@ -455178,7 +455171,7 @@ $(
     and ` USPGraph C_ USHGraph ` ( ~ uspgrushgr ),
     see also ~ uspgrupgrushgr
 
-  * Undirected Multigraph: ` UMGraph `
+  * Undirected Muligraph: ` UMGraph `
     => ` UMGraph C_ UPGraph ` ( ~ umgrupgr )
     and ` UMGraph C_ ` ULFHGraph ( ~ umgrislfupgr )
 
@@ -458397,9 +458390,9 @@ $)
          called a _spanning subgraph_ (see section I.1 in [Bollobas] p. 2 and
          section 1.1 in [Diestel] p. 4).  Formally, the edges are "removed" by
          restricting the edge function of the original graph by an arbitrary
-         class (which actually need not be a subset of the domain of the edge
-         function).  (Contributed by AV, 18-Nov-2020.)  (Proof shortened by AV,
-         21-Nov-2020.) $)
+         class (which actually need not to be a subset of the domain of the
+         edge function).  (Contributed by AV, 18-Nov-2020.)  (Proof shortened
+         by AV, 21-Nov-2020.) $)
       uhgrspansubgr $p |- ( ph -> S SubGraph G ) $=
         ( csubgr wbr cfv wss cuhgr wcel eqid cvtx ciedg cedg ssid sseqtrid cres
         cpw resss eqsstrdi uhgrspansubgrlem w3a wb uhgrfun syl issubgr2 syl3anc
@@ -460133,8 +460126,8 @@ $)
   ${
     $d G v $.  $d V v $.
     iscusgrvtx.v $e |- V = ( Vtx ` G ) $.
-    $( A simple graph is complete iff all vertices are universal.  (Contributed
-       by AV, 1-Nov-2020.) $)
+    $( A simple graph is complete iff all vertices are uniuversal.
+       (Contributed by AV, 1-Nov-2020.) $)
     iscusgrvtx $p |- ( G e. ComplUSGraph
                     <-> ( G e. USGraph /\ A. v e. V v e. ( UnivVtx ` G ) ) ) $=
       ( ccusgr wcel cusgr ccplgr wa cv cuvtx wral iscusgr iscplgr pm5.32i bitri
@@ -463930,9 +463923,9 @@ $)
     upgr2wlk.v $e |- V = ( Vtx ` G ) $.
     upgr2wlk.i $e |- I = ( iEdg ` G ) $.
     $( Properties of a pair of functions to be a walk of length 2 in a
-       pseudograph.  Note that the vertices need not be distinct and the edges
-       can be loops or multiedges.  (Contributed by Alexander van der Vekens,
-       16-Feb-2018.)  (Revised by AV, 3-Jan-2021.)  (Revised by AV,
+       pseudograph.  Note that the vertices need not to be distinct and the
+       edges can be loops or multiedges.  (Contributed by Alexander van der
+       Vekens, 16-Feb-2018.)  (Revised by AV, 3-Jan-2021.)  (Revised by AV,
        28-Oct-2021.) $)
     upgr2wlk $p |- ( G e. UPGraph -> ( ( F ( Walks ` G ) P /\ ( # ` F ) = 2 )
                   <-> ( F : ( 0 ..^ 2 ) --> dom I /\ P : ( 0 ... 2 ) --> V
@@ -471544,7 +471537,7 @@ $)
       OUPVQWDMNZOZWHWRWIXAWEVTWGVSWTWEVTNVQWDMCUQSXAWFLCXAWFMLPFZLWTWFXBNVQWDML
       PURSUSUTVAVBVCVDVFVGVHVIVRWSOVTVSWIAVTVSWPVJVKVLVMVNVO $.
 
-    $( If a word represents a closed walk of length at least 2 in an undirected
+    $( If a word represents a closed walk of length at least 2 in a undirected
        simple graph, the first two symbols of the word must be different.
        (Contributed by Alexander van der Vekens, 17-Jun-2018.)  (Revised by AV,
        30-Apr-2021.) $)
@@ -475794,7 +475787,7 @@ $)
       $.
   $}
 
-  $( In a (maybe degenerate) 4-cycle, two vertices have two (maybe not
+  $( In a (maybe degenerate) 4-cycle, two vertice have two (maybe not
      different) common neighbors.  (Contributed by Alexander van der Vekens,
      19-Nov-2017.)  (Revised by AV, 2-Apr-2021.) $)
   4cycl2v2nb $p |- ( ( ( { A , B } e. E /\ { B , C } e. E )
@@ -475863,7 +475856,7 @@ $)
     $d A x $.  $d B x $.  $d C x $.  $d E x $.  $d G x $.  $d V x $.
     4cyclusnfrgr.v $e |- V = ( Vtx ` G ) $.
     4cyclusnfrgr.e $e |- E = ( Edg ` G ) $.
-    $( A graph with a 4-cycle is not a friendship graph.  (Contributed by
+    $( A graph with a 4-cycle is not a friendhip graph.  (Contributed by
        Alexander van der Vekens, 19-Dec-2017.)  (Revised by AV, 2-Apr-2021.) $)
     4cyclusnfrgr $p |- ( ( G e. USGraph /\ ( A e. V /\ C e. V /\ A =/= C )
                                         /\ ( B e. V /\ D e. V /\ B =/= D ) )
@@ -478787,7 +478780,7 @@ $)
        In most cases we try to minimize hypotheses, so that the statement be
        more general and easier to use.  There are exceptions.  For example, we
        intentionally add hypotheses if they help make proofs independent of a
-       particular construction (e.g., the construction of the complex numbers
+       particular construction (e.g., the contruction of the complex numbers
        ` CC ` ).  We also intentionally add hypotheses for many real and
        complex number theorems to expressly state their domains even when they
        are not needed.  For example, we could show that
@@ -478878,7 +478871,7 @@ $)
        associated with ~ imim1 .
 
        <p>"Deduction form" is the preferred form for theorems because this form
-       allows us to easily use the theorem in places where (in traditional
+       allows to easily use the theorem in places where (in traditional
        textbook formalizations) the standard Deduction Theorem (see below)
        would be used. We call this approach <b>"deduction style"</b>.
        In contrast, we usually avoid theorems in "inference form" when that
@@ -478931,7 +478924,7 @@ $)
 
        <li><p><b>Recursion.</b>
        We define recursive functions using various "recursion constructors".
-       These allow us to define, with compact direct definitions, functions
+       These allow to define, with compact direct definitions, functions
        that are usually defined in textbooks with indirect self-referencing
        recursive definitions.  This produces compact definition and much
        simpler proofs, and greatly reduces the risk of creating unsound
@@ -479765,7 +479758,7 @@ $)
 
        <p>
        The following table shows some commonly used abbreviations in labels, in
-       alphabetical order.  For each abbreviation we provide a mnemonic, the
+       alphabetical order.  For each abbreviation we provide a mnenomic, the
        source theorem or the assumption defining it, an expression showing what
        it looks like, whether or not it is a "syntax fragment" (an abbreviation
        that indicates a particular kind of syntax), and hyperlinks to label
@@ -479774,7 +479767,7 @@ $)
        <i>not</i> a complete list of abbreviations, though we do want this to
        eventually be a complete list of exceptions.
        <table border="1" id="naming-abbreviation-table">
-       <tr><th>Abbreviation</th><th>Mnemonic</th><th>Source</th>
+       <tr><th>Abbreviation</th><th>Mnenomic</th><th>Source</th>
        <th>Expression</th><th>Syntax?</th><th>Example(s)</th></tr>
        <tr><td>a</td><td>and (suffix)</td><td> </td>
        <td> </td><td>No</td><td> ~ biimpa , ~ rexlimiva </td></tr>
@@ -482028,9 +482021,9 @@ $)
     $( Define the class of planar incidence geometries.  We use Hilbert's
        axioms and adapt them to planar geometry.  We use ` e. ` for the
        incidence relation.  We could have used a generic binary relation, but
-       using ` e. ` allows us to reuse previous results.  Much of what follows
-       is directly borrowed from Aitken, _Incidence-Betweenness Geometry_,
-       2008, ~ http://public.csusm.edu/aitken_html/m410/betweenness.08.pdf .
+       using ` e. ` allows to reuse previous results.  Much of what follows is
+       directly borrowed from Aitken, _Incidence-Betweenness Geometry_, 2008,
+       ~ http://public.csusm.edu/aitken_html/m410/betweenness.08.pdf .
 
        The class ` Plig ` is the class of planar incidence geometries, where a
        planar incidence geometry is defined as a set of lines satisfying three
@@ -485759,7 +485752,7 @@ $)
   caj $a class adj $.
 
   $c HmOp $.
-  $( Set of Hermitian (self-adjoint) operators. $)
+  $( Set of Hermitional (self-adjoint) operators. $)
   chmo $a class HmOp $.
 
   ${
@@ -496750,9 +496743,9 @@ $)
 
   $( Extend class notation with inner (scalar) product in Hilbert space.  In
      the literature, the inner product of ` A ` and ` B ` is usually written
-     ` <. A , B >. ` but our operation notation allows us to use existing
-     theorems about operations and also eliminates ambiguity with the
-     definition of an ordered pair ~ df-op . $)
+     ` <. A , B >. ` but our operation notation allows to use existing theorems
+     about operations and also eliminates ambiguity with the definition of an
+     ordered pair ~ df-op . $)
   csp $a class .ih $.
 
   $( Register inner product in Hilbert space as a primitive expression (lacking
@@ -497894,12 +497887,11 @@ $)
   $( Conjugate law for inner product.  Postulate (S1) of [Beran] p. 95.  Note
      that ` * `` x ` is the complex conjugate ~ cjval of ` x ` .  In the
      literature, the inner product of ` A ` and ` B ` is usually written
-     ` <. A , B >. ` , but our operation notation ~ co allows us to use
-     existing theorems about operations and also avoids a clash with the
-     definition of an ordered pair ~ df-op .  Physicists use ` <. B | A >. ` ,
-     called Dirac bra-ket notation, to represent this operation; see comments
-     in ~ df-bra .  (Contributed by NM, 29-Jul-1999.)
-     (New usage is discouraged.) $)
+     ` <. A , B >. ` , but our operation notation ~ co allows to use existing
+     theorems about operations and also avoids a clash with the definition of
+     an ordered pair ~ df-op .  Physicists use ` <. B | A >. ` , called Dirac
+     bra-ket notation, to represent this operation; see comments in ~ df-bra .
+     (Contributed by NM, 29-Jul-1999.)  (New usage is discouraged.) $)
   ax-his1 $a |- ( ( A e. ~H /\ B e. ~H ) ->
                 ( A .ih B ) = ( * ` ( B .ih A ) ) ) $.
 
@@ -509891,7 +509883,7 @@ $)
 
     $( Value of the converse of the bra function.  Based on the Riesz Lemma
        ~ riesz4 , this very important theorem not only justifies the Dirac
-       bra-ket notation, but allows us to extract a unique vector from any
+       bra-ket notation, but allows to extract a unique vector from any
        continuous linear functional from which the functional can be recovered;
        i.e. a single vector can "store" _all_ of the information contained in
        any entire continuous linear functional (mapping from ` ~H ` to
@@ -517796,8 +517788,7 @@ $)
     elpreq.1 $e |- ( ph -> X e. { A , B } ) $.
     elpreq.2 $e |- ( ph -> Y e. { A , B } ) $.
     elpreq.3 $e |- ( ph -> ( X = A <-> Y = A ) ) $.
-    $( Equality within a pair.  (Contributed by Thierry Arnoux,
-       23-Aug-2017.) $)
+    $( Equality wihin a pair.  (Contributed by Thierry Arnoux, 23-Aug-2017.) $)
     elpreq $p |- ( ph -> X = Y ) $=
       ( wceq wa simpr biimpa eqtr4d wn cpr wcel wo elpri syl orcanai simpl 3syl
       notbid wi pm2.53 sylc pm2.61dan ) ADBIZDEIAUHJDBEAUHKAUHEBIZHLMAUHNZJZDCE
@@ -519137,7 +519128,7 @@ $)
     fconst7v.f $e |- ( ph -> F Fn A ) $.
     fconst7v.e $e |- ( ( ph /\ x e. A ) -> ( F ` x ) = B ) $.
     $( An alternative way to express a constant function.  (Contributed by
-       Glauco Siliprandi, 5-Feb-2022.)  Removed hypotheses as suggested by SN
+       Glauco Siliprandi, 5-Feb-2022.)  Removed hyphotheses as suggested by SN
        (Revised by Thierry Arnoux, 10-Jan-2026.) $)
     fconst7v $p |- ( ph -> F = ( A X. { B } ) ) $=
       ( c0 wceq cxp wa a1i simpr wfn adantr wb mpbid wcel cvv nfcv xpeq1d fneq2
@@ -519786,7 +519777,7 @@ $)
     $d x y A $.  $d y B $.  $d x C $.  $d x y D $.  $d x E $.
     fcomptf.1 $e |- F/_ x B $.
     $( Express composition of two functions as a maps-to applying both in
-       sequence.  This version has one fewer distinct variable restriction
+       sequence.  This version has one less distinct variable restriction
        compared to ~ fcompt .  (Contributed by Thierry Arnoux, 30-Jun-2017.) $)
     fcomptf $p |- ( ( A : D --> E /\ B : C --> D ) -> ( A o. B ) = ( x e. C |->
         ( A ` ( B ` x ) ) ) ) $=
@@ -521386,7 +521377,7 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-  $( Value of the signum of a real number, expressed using absolute value.
+  $( Value of the signum of a real number, expresssed using absolute value.
      (Contributed by Thierry Arnoux, 9-Nov-2025.) $)
   sgnval2 $p |- ( ( A e. RR /\ A =/= 0 ) -> ( sgn ` A ) = ( A / ( abs ` A ) )
       ) $=
@@ -523757,7 +523748,7 @@ $)
     dpexpp1.1 $e |- ( P + 1 ) = Q $.
     dpexpp1.p $e |- P e. ZZ $.
     dpexpp1.q $e |- Q e. ZZ $.
-    $( Add one zero to the mantissa, and a one to the exponent in a scientific
+    $( Add one zero to the mantisse, and a one to the exponent in a scientific
        notation.  (Contributed by Thierry Arnoux, 16-Dec-2021.) $)
     dpexpp1 $p |- ( ( A . B ) x. ( ; 1 0 ^ P ) )
       = ( ( 0 . _ A B ) x. ( ; 1 0 ^ Q ) ) $=
@@ -524965,8 +524956,8 @@ $)
         YNYMVPXIWTJBWFWSDYNJWAVPWBVSVRVTVL $.
     $}
 
-    $( Same theorem as ~ toslub , for infimum.  (Contributed by Thierry Arnoux,
-       17-Feb-2018.)  (Revised by AV, 28-Sep-2020.) $)
+    $( Same theorem as ~ toslub , for infinimum.  (Contributed by Thierry
+       Arnoux, 17-Feb-2018.)  (Revised by AV, 28-Sep-2020.) $)
     tosglb $p |- ( ph -> ( ( glb ` K ) ` A ) = inf ( A , B , .< ) ) $=
       ( va vb vc vd cfv cv wbr wral wi wa ctos cglb ccnv csup cinf cple crio wn
       wrex eqid tosglblem riotabidva biid glbval wcel wor wceq cid cres wss ibi
@@ -527671,7 +527662,7 @@ $)
     pmtrcnel.f $e |- ( ph -> F e. B ) $.
     pmtrcnel.i $e |- ( ph -> I e. dom ( F \ _I ) ) $.
     $( Composing a permutation ` F ` with a transposition which results in
-       moving at least one fewer point.  Here the set of points moved by a
+       moving at least one less point.  Here the set of points moved by a
        permutation ` F ` is expressed as ` dom ( F \ _I ) ` .  (Contributed by
        Thierry Arnoux, 16-Nov-2023.) $)
     pmtrcnel $p |- ( ph -> dom ( ( ( T ` { I , J } ) o. F ) \ _I )
@@ -527717,7 +527708,7 @@ $)
     pmtrcnel.e $e |- E = dom ( F \ _I ) $.
     pmtrcnel.a $e |- A = dom ( ( ( T ` { I , J } ) o. F ) \ _I ) $.
     $( Composing a permutation ` F ` with a transposition which results in
-       moving one or two fewer points.  (Contributed by Thierry Arnoux,
+       moving one or two less points.  (Contributed by Thierry Arnoux,
        16-Nov-2023.) $)
     pmtrcnelor $p |- ( ph -> ( A = ( E \ { I , J } ) \/ A = ( E \ { I } ) ) )
        $=
@@ -529947,8 +529938,8 @@ $)
 
     ${
       fxpsubrg.1 $e |- ( ( ph /\ p e. B ) -> F e. ( W RingHom W ) ) $.
-      $( The set of fixed points of a group action ` A ` on a ring ` W ` is a
-         subring.  (Contributed by Thierry Arnoux, 18-Nov-2025.) $)
+      $( The fixed points of a group action ` A ` on a ring ` W ` is a
+         subgring.  (Contributed by Thierry Arnoux, 18-Nov-2025.) $)
       fxpsubrg $p |- ( ph -> ( C FixPts A ) e. ( SubRing ` W ) ) $=
         ( wcel co cfv wceq cvv adantr vz vy crg cfxp csubg cv cmulr wral csubrg
         cur c0g cmpt crh oveq1 mpteq2dv eqtrid eleq1d ralrimiva cgrp gagrp eqid
@@ -533411,7 +533402,7 @@ $)
       AQWKWMABCDEFGHIUNUOZUPWNVKWCVLWDWNVIWAVEWQUQWNVIWAVFWQUQURUSUTUTVABCVOEVG
       VIVOTVGTVITVBBCWGFVSWAWGTVSTWATVBVC $.
 
-    $( If two structures have the same components (properties), one is an
+    $( If two structures have the same components (properties), one is a
        integral domain iff the other one is.  See also ~ domnpropd .
        (Contributed by Thierry Arnoux, 13-Oct-2025.) $)
     idompropd $p |- ( ph -> ( K e. IDomn <-> L e. IDomn ) ) $=
@@ -541993,7 +541984,7 @@ $)
     evlextv.a $e |- ( ph -> A : I --> B ) $.
     $( Evaluating a variable-extended polynomial is the same as evaluating the
        polynomial in the original set of variables (in both cases, the
-       additional variable is ignored).  (Contributed by Thierry Arnoux,
+       additionial variable is ignored).  (Contributed by Thierry Arnoux,
        15-Feb-2026.) $)
     evlextv $p |- ( ph -> ( ( Q ` ( ( E ` Y ) ` F ) ) ` A )
                          = ( ( O ` F ) ` ( A |` J ) ) ) $=
@@ -543527,7 +543518,7 @@ $)
     esplyfvn.14 $e |- ( ph -> Z : I --> B ) $.
     $( Express the last elementary symmetric polynomial, evaluated at a given
        set of points ` Z ` , in terms of the last elementary symmetric
-       polynomial with one fewer variable.  (Contributed by Thierry Arnoux,
+       polynomial with one less variable.  (Contributed by Thierry Arnoux,
        15-Feb-2026.) $)
     esplyfvn $p |- ( ph -> ( ( Q ` ( E ` H ) ) ` Z )
                     = ( ( Z ` Y ) .x. ( ( O ` ( F ` K ) ) ` ( Z |` J ) ) ) ) $=
@@ -546106,7 +546097,7 @@ $)
     evls1fldgencl.6 $e |- ( ph -> F e. ( SubDRing ` E ) ) $.
     evls1fldgencl.7 $e |- ( ph -> A e. B ) $.
     evls1fldgencl.8 $e |- ( ph -> G e. U ) $.
-    $( Closure of the subring polynomial evaluation in the field extension.
+    $( Closure of the subring polynomial evaluation in the field extention.
        (Contributed by Thierry Arnoux, 2-Apr-2025.) $)
     evls1fldgencl $p |- ( ph -> ( ( O ` G ) ` A ) e. ( E fldGen ( F u. { A } )
        ) ) $=
@@ -546584,7 +546575,7 @@ $)
       fldextrspundglemul.7 $e |- ( ph -> ( J [:] K ) e. NN0 ) $.
       fldextrspundglemul.1 $e |- E = ( L |`s ( L fldGen ( G u. H ) ) ) $.
       $( Given two field extensions ` I / K ` and ` J / K ` of the same field
-         ` K ` , ` J / K ` being finite, and the composite field ` E = I J ` ,
+         ` K ` , ` J / K ` being finite, and the composiste field ` E = I J ` ,
          the degree of the extension of the composite field ` E / K ` is at
          most the product of the field extension degrees of ` I / K ` and
          ` J / K ` .  (Contributed by Thierry Arnoux, 19-Oct-2025.) $)
@@ -548093,7 +548084,7 @@ $)
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Towers of quadratic extensions
+  Towers of quadratic extentions
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
@@ -549034,7 +549025,7 @@ $)
       constrelextdg2.1 $e |- ( ph -> ( C ` N ) C_ F ) $.
       constrelextdg2.x $e |- ( ph -> X e. ( C ` suc N ) ) $.
       $( If the ` N ` -th step ` ( C `` N ) ` of the construction of
-         constructible numbers is included in a subfield ` F ` of the complex
+         constuctible numbers is included in a subfield ` F ` of the complex
          numbers, then any element ` X ` of the next step ` ( C `` suc N ) ` is
          either in ` F ` or in a quadratic extension of ` F ` .  (Contributed
          by Thierry Arnoux, 6-Jul-2025.) $)
@@ -550747,7 +550738,7 @@ $)
        submatrix is obtained by deleting a row and a column of the original
        matrix.  Because this function re-indexes the matrix, the resulting
        submatrix still has the same index set for rows and columns, and its
-       determinant is defined, unlike the current ~ df-subma .  (Contributed by
+       determinent is defined, unlike the current ~ df-subma .  (Contributed by
        Thierry Arnoux, 18-Aug-2020.) $)
     df-smat $a |- subMat1 = ( m e. _V |->
        ( k e. NN , l e. NN |-> ( m o. ( i e. NN , j e. NN |->
@@ -551803,7 +551794,7 @@ $(
     m3det.p @e |- .+ = ( +g ` R ) @.
     m3det.m @e |- .- = ( -g ` R ) @.
     m3det.t @e |- .x. = ( .r ` R ) @.
-    @( Rule of Sarrus.  Expanded formula for the computation of the determinant
+    @( Rule of Sarrus.  Expanded formula for the computation of the determinent
        of 3x3-matrices.  (Contributed by Thierry Arnoux, 16-Aug-2020.) @)
     m3det @p |- ( ( R e. CRing /\ M e. B ) -> ( D ` M ) = ( (
           ( ( ( ( 1 M 1 ) .x. ( 2 M 2 ) ) .x. ( 3 M 3 ) )
@@ -554497,7 +554488,7 @@ $)
     fsumcvg4.m $e |- ( ph -> M e. ZZ ) $.
     fsumcvg4.c $e |- ( ph -> F : S --> CC ) $.
     fsumcvg4.f $e |- ( ph -> ( `' F " ( CC \ { 0 } ) ) e. Fin ) $.
-    $( A series with finite support is a finite sum, and therefore converges.
+    $( A serie with finite support is a finite sum, and therefore converges.
        (Contributed by Thierry Arnoux, 6-Sep-2017.)  (Revised by Thierry
        Arnoux, 1-Sep-2019.) $)
     fsumcvg4 $p |- ( ph -> seq M ( + , F ) e. dom ~~> ) $=
@@ -554691,7 +554682,7 @@ $( End $[ set-mbox-ta-algtop.mm $] $)
 $( Begin $[ set-mbox-ta-ucm.mm $] $)
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-  Uniform Structures and Spaces
+  Uniform Stuctures and Spaces
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -554939,7 +554930,7 @@ $)
     qqhval.1 $e |- ./ = ( /r ` R ) $.
     qqhval.2 $e |- .1. = ( 1r ` R ) $.
     qqhval.3 $e |- L = ( ZRHom ` R ) $.
-    $( Value of the canonical homomorphism from the rational numbers to a
+    $( Value of the canonical homormorphism from the rational number to a
        field.  (Contributed by Thierry Arnoux, 22-Oct-2017.) $)
     qqhval $p |- ( R e. _V -> ( QQHom ` R ) =
       ran ( x e. ZZ , y e. ( `' L " ( Unit ` R ) ) |->
@@ -555137,7 +555128,7 @@ $)
       UUJ $.
 
     $d e q s x y ./ $.  $d e q s x y B $.  $d e q s x y L $.  $d e q s x y R $.
-    $( Value of the canonical homomorphism from the rational numbers when the
+    $( Value of the canonical homormorphism from the rational number when the
        target ring is a division ring.  (Contributed by Thierry Arnoux,
        26-Oct-2017.) $)
     qqhval2 $p |- ( ( R e. DivRing /\ ( chr ` R ) = 0 ) -> ( QQHom ` R ) =
@@ -555175,7 +555166,7 @@ $)
       $.
 
     $d q Q $.
-    $( Value of the canonical homomorphism from the rational numbers when the
+    $( Value of the canonical homormorphism from the rational number when the
        target ring is a division ring.  (Contributed by Thierry Arnoux,
        30-Oct-2017.) $)
     qqhvval $p |- ( ( ( R e. DivRing /\ ( chr ` R ) = 0 ) /\ Q e. QQ ) ->
@@ -555484,7 +555475,7 @@ $)
     $d r J $.  $d r K $.  $d r R $.
     rrhval.1 $e |- J = ( topGen ` ran (,) ) $.
     rrhval.2 $e |- K = ( TopOpen ` R ) $.
-    $( Value of the canonical homomorphism from the real numbers to a complete
+    $( Value of the canonical homormorphism from the real numbers to a complete
        space.  (Contributed by Thierry Arnoux, 2-Nov-2017.) $)
     rrhval $p |- ( R e. V
       -> ( RRHom ` R ) = ( ( J CnExt K ) ` ( QQHom ` R ) ) ) $=
@@ -561850,9 +561841,9 @@ $)
     omsmeas.d $e |- ( ph -> (/) e. dom R ) $.
     omsmeas.0 $e |- ( ph -> ( R ` (/) ) = 0 ) $.
     $( The restriction of a constructed outer measure to Caratheodory
-       measurable sets is a measure.  This theorem allows us to construct
-       measures from pre-measures with the required characteristics, as for the
-       Lebesgue measure.  (Contributed by Thierry Arnoux, 17-May-2020.) $)
+       measurable sets is a measure.  This theorem allows to construct measures
+       from pre-measures with the required characteristics, as for the Lebesgue
+       measure.  (Contributed by Thierry Arnoux, 17-May-2020.) $)
     omsmeas $p |- ( ph -> ( M |` S ) e. ( measures ` S ) ) $=
       ( vf vy cfv wcel c0 wceq wbr cle ve vg vx cres cmeas cc0 cpnf cicc co com
       wf cv cdom wdisj wa cuni cesum wi cpw wral w3a cdm coms omsf syl2anc fdmd
@@ -562890,7 +562881,7 @@ $)
   ${
     $d w m $.
     $( Define the Bochner integral as the extension by continuity of the
-       Bochner integral for simple functions.
+       Bochnel integral for simple functions.
 
        Bogachev first defines 'fundamental in the mean' sequences, in
        definition 2.3.1 of [Bogachev] p. 116, and notes that those are actually
@@ -564040,7 +564031,7 @@ $)
     sseqval.3 $e |- W = ( Word S i^i ( `' # " ( ZZ>= ` ( # ` M ) ) ) ) $.
     sseqval.4 $e |- ( ph -> F : W --> S ) $.
     $( Value of the strong sequence builder function.  The set ` W ` represents
-       here the words of length greater than or equal to the length of the
+       here the words of length greater than or equal to the lenght of the
        initial sequence ` M ` .  (Contributed by Thierry Arnoux,
        21-Apr-2019.) $)
     sseqval $p |- ( ph -> ( M seqstr F ) = ( M u. ( lastS o. seq ( # ` M ) ( (
@@ -564650,7 +564641,7 @@ $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
-  $( Conditional Probability builder $)
+  $( Conditional Probabililty builder $)
   $c cprob $.
 
   $( Extends class notation with the conditional probability builder. $)
@@ -564958,10 +564949,9 @@ $)
     $( Define the preimage set mapping operator.  In probability theory, the
        notation ` P ( X = A ) ` denotes the probability that a random variable
        ` X ` takes the value ` A ` .  We introduce here an operator which
-       enables us to write this in Metamath as ` ( P `` ( X oRVC _I A ) ) ` ,
-       and keep a similar notation.  Because with this notation
-       ` ( X oRVC _I A ) ` is a set, we can also apply it to conditional
-       probabilities, like in
+       enables to write this in Metamath as ` ( P `` ( X oRVC _I A ) ) ` , and
+       keep a similar notation.  Because with this notation ` ( X oRVC _I A ) `
+       is a set, we can also apply it to conditional probabilities, like in
        ` ( P `` ( X oRVC _I A ) | ( Y oRVC _I B ) ) ) ` .
 
        The oRVC operator transforms a relation ` R ` into an operation taking a
@@ -567389,7 +567379,7 @@ $)
 
     signsw.w $e |- W = { <. ( Base ` ndx ) , { -u 1 , 0 , 1 } >. ,
       <. ( +g ` ndx ) , .+^ >. } $.
-    $( The base of ` W ` is the unordered triple representing the possible
+    $( The base of ` W ` is the unordered triple reprensenting the possible
        signs.  (Contributed by Thierry Arnoux, 9-Sep-2018.) $)
     signswbase $p |- { -u 1 , 0 , 1 } = ( Base ` W ) $=
       ( c1 cneg cc0 ctp cvv wcel cbs cfv wceq tpex grpbase ax-mp ) GHZIGJZKLTBM
@@ -570184,9 +570174,9 @@ $)
                                         < ( ( 1 . _ 0 _ 3 _ 8 _ 8 3 ) x. x ) $.
 
   $( Theorem 13. of [RosserSchoenfeld] p. 71.  Theorem ~ chpchtlim states that
-     the ` psi ` and ` theta ` function are asymptotic to each other; this
-     axiom postulates an upper bound for their difference.  This is stated as
-     an axiom until a formal proof can be provided.  (Contributed by Thierry
+     the ` psi ` and ` theta ` function are asymtotic to each other; this axiom
+     postulates an upper bound for their difference.  This is stated as an
+     axiom until a formal proof can be provided.  (Contributed by Thierry
      Arnoux, 28-Dec-2021.) $)
   ax-ros336 $a |- A. x e. RR+ ( ( psi ` x ) - ( theta ` x ) )
                                  < ( ( 1 . _ 4 _ 2 _ 6 2 ) x. ( sqrt ` x ) ) $.
@@ -576455,7 +576445,7 @@ $( MARKER 1 - TODO DELETE $)
     bnj1018.29 $e |- ( ( th /\ ch /\ ta /\ et ) -> ch" ) $.
     bnj1018.30 $e |- ( ( th /\ ch /\ ta /\ et )
       -> ( ch" /\ i e. _om /\ suc i e. p ) ) $.
-    $( Version of ~ bnj1018 with fewer disjoint variable conditions, but
+    $( Version of ~ bnj1018 with less disjoint variable conditions, but
        requiring ~ ax-13 .  (Contributed by GG, 27-Mar-2024.)
        (New usage is discouraged.) $)
     bnj1018g $p |- ( ( th /\ ch /\ et /\ E. p ta )
@@ -584845,7 +584835,7 @@ $)
         UYLHSHYDYFHNUYBYGWMWC $.
     $}
 
-    $( A two-term recurrence for the subfactorial.  This theorem allows us to
+    $( A two-term recurrence for the subfactorial.  This theorem allows to
        forget the combinatorial definition of the derangement number in favor
        of the recursive definition provided by this theorem and ~ subfac0 ,
        ~ subfac1 .  (Contributed by Mario Carneiro, 23-Jan-2015.) $)
@@ -585827,7 +585817,7 @@ $)
        composite ` R o. S ` is homotopic to the identity map.  If a retraction
        exists, we say ` J ` is a retract of ` K ` .  (This terminology is
        borrowed from HoTT and appears to be nonstandard, although it has
-       similarities to the concept of retract in the category of topological
+       similaries to the concept of retract in the category of topological
        spaces and to a deformation retract in general topology.)  Two
        topological spaces that are retracts of each other are called homotopy
        equivalent.  (Contributed by Mario Carneiro, 11-Feb-2015.) $)
@@ -595124,10 +595114,10 @@ $)
 
   ${
     $d x A $.
-    $( We call a class "untangled" if all its members are not members of
+    $( We call a class "untanged" if all its members are not members of
        themselves.  The term originates from Isbell (see citation in ~ dfon2 ).
        Using this concept, we can avoid a lot of the uses of the Axiom of
-       Regularity.  Here, we prove a series of properties of untangled classes.
+       Regularity.  Here, we prove a series of properties of untanged classes.
        First, we prove that an untangled class is not a member of itself.
        (Contributed by Scott Fenton, 28-Feb-2011.) $)
     untelirr $p |- ( A. x e. A -. x e. x -> -. A e. A ) $=
@@ -599587,7 +599577,7 @@ $)
   ${
     $d A q r $.  $d B q r $.  $d C q r $.  $d D q r $.  $d E q r $.
     $d N q r $.  $d P q r $.
-    $( A line segment between two sides of a triangle intersects a segment
+    $( A line segment between two sides of a triange intersects a segment
        crossing from the remaining side to the opposite vertex.  Theorem 3.17
        of [Schwabhauser] p. 33.  (Contributed by Scott Fenton, 24-Sep-2013.) $)
     trisegint $p |- ( ( N e. NN /\
@@ -601188,7 +601178,7 @@ $)
       NAVMVNWJYNYBYOXJYMXJYLXFXJXLXRWKWIYOXDXIDNCXHAVMVNWJWLWMWCWEWDWFWC $.
   $}
 
-  $( Connectivity law for betweenness.  Theorem 5.1 of [Schwabhauser] p. 39-41.
+  $( Connectitivy law for betweenness.  Theorem 5.1 of [Schwabhauser] p. 39-41.
      (Contributed by Scott Fenton, 9-Oct-2013.) $)
   btwnconn1 $p |- ( ( N e. NN /\ ( A e. ( EE ` N ) /\ B e. ( EE ` N ) ) /\
      ( C e. ( EE ` N ) /\ D e. ( EE ` N ) ) ) ->
@@ -606731,7 +606721,7 @@ $)
   $( The double nand. $)
   w3nand $a wff ( ph -/\ ps -/\ ch ) $.
 
-  $( The double nand.  This definition allows us to express the input of three
+  $( The double nand.  This definition allows to express the input of three
      variables only being false if all three are true.  (Contributed by Anthony
      Hart, 2-Sep-2011.) $)
   df-3nand $a |- ( ( ph -/\ ps -/\ ch ) <-> ( ph -> ( ps -> -. ch ) ) ) $.
@@ -610596,7 +610586,7 @@ $)
   bj-0 $p wff ( ( ph -> ps ) -> ch ) $=
     ( wi ) ABDCD $.
 
-  $( In this proof, the use of the syntactic theorem ~ bj-0 allows us to reduce
+  $( In this proof, the use of the syntactic theorem ~ bj-0 allows to reduce
      the total length by one (non-essential) step.  See also the section
      comment and the comment of ~ bj-0 .  Since ~ bj-0 is used in a
      non-essential step, this use does not appear on this webpage (but the
@@ -611695,7 +611685,7 @@ $( *** ax-gen required *** $)
   ${
     bj-aleximiALT.1 $e |- ( ph -> ( ps -> ch ) ) $.
     $( Alternate proof of ~ aleximi from ~ exim , which is sometimes used as an
-       axiom in intuitionistic modal logic.  (Contributed by BJ, 9-Dec-2023.)
+       axiom in instuitionistic modal logic.  (Contributed by BJ, 9-Dec-2023.)
        (Proof modification is discouraged.)  (New usage is discouraged.) $)
     bj-aleximiALT $p |- ( A. x ph -> ( E. x ps -> E. x ch ) ) $=
       ( wal wi wex alimi exim syl ) ADFBCGZDFBDHCDHGALDEIBCDJK $.
@@ -611746,7 +611736,7 @@ $( *** ax-gen required *** $)
   $}
 
   $( A commuted form of ~ exim which is sometimes posited as an axiom in
-     intuitionistic modal logic.  Forward implication of ~ 19.35 .  Its
+     instuitionistic modal logic.  Forward implication of ~ 19.35 .  Its
      converse is not intuitionistic.  (Contributed by BJ, 9-Dec-2023.) $)
   bj-eximcom $p |- ( E. x ( ph -> ps ) -> ( A. x ph -> E. x ps ) ) $=
     ( wal wi wex pm2.27 aleximi com12 ) ACDABEZCFBCFAJBCABGHI $.
@@ -612080,7 +612070,7 @@ $)
       ( wtru wex wal wi wn wfal empty falim alimi a1d sylbi bj-cbvalvv ja ) ECF
       ZADFBDGZBCGZHZRIJCGZUACKUBTSJBCBLMNOABDCPQ $.
 
-    $( Existentially quantifying over a non-occurring variable is independent
+    $( Exixtentially quantifying over a non-occurring variable is independent
        from the variable, under a weaker condition than in ~ bj-cbvexvv .
        (Contributed by BJ, 14-Mar-2026.)
        (Proof modification is discouraged.) $)
@@ -612787,14 +612777,14 @@ $)
     ( wal wn axc7 con1i ) ABCDBCAABEF $.
 
   $( When ` ph ` is substituted for ` ps ` , this is the first half of
-     nonfreeness ` ( . -> A. ) ` of the weak form of nonfreeness
+     nonfreness ` ( . -> A. ) ` of the weak form of nonfreeness
      ` ( E. -> A. ) ` .  (Contributed by BJ, 9-Dec-2023.) $)
   bj-wnf1 $p |- ( ( E. x ph -> A. x ps ) -> A. x ( E. x ph -> A. x ps ) ) $=
     ( wex wal wi bj-modal4e hba1 imim12i 19.38 syl ) ACDZBCEZFZLCDZMCEZFNCEOLMP
     ACGBCHILMCJK $.
 
   $( When ` ph ` is substituted for ` ps ` , this is the first half of
-     nonfreeness ` ( . -> A. ) ` of the weak form of nonfreeness
+     nonfreness ` ( . -> A. ) ` of the weak form of nonfreeness
      ` ( E. -> A. ) ` .  (Contributed by BJ, 9-Dec-2023.) $)
   bj-wnf2 $p |- ( E. x ( E. x ph -> A. x ps ) -> ( E. x ph -> A. x ps ) ) $=
     ( wex wal wi hbe1 bj-eximcom hbe1a syl56 ) ACDZKCEKBCEZFCDLCDLACGKLCHBCIJ
@@ -613228,7 +613218,7 @@ $)
   $}
 
   $( A variable is nonfree in a formula if and only if it is nonfree in its
-     negation.  The forward implication is intuitionistically valid (and that
+     negation.  The foward implication is intuitionistically valid (and that
      direction is sufficient for the purpose of recursively proving that some
      formulas have a given variable not free in them, like ~ bj-nnfim ).
      Intuitionistically, ` |- ( F// x -. ph <-> F// x -. -. ph ) ` .  See
@@ -615685,7 +615675,7 @@ $(
   A few results around Russell's paradox.  For clarity, we prove separately a
   FOL statement (now in the main part as ~ ru0 ) and then two versions
   ( ~ bj-ru1 and ~ bj-ru ).  Special attention is put on minimizing axiom
-  dependencies.
+  depencencies.
 
 $)
 
@@ -615988,7 +615978,7 @@ $)
   ${
     $d x A $.
     $( The empty set is not a member of a singletonization (neither is any
-       nonsingleton, in particular any von Neumann ordinal except possibly
+       nonsingleton, in particular any von Neuman ordinal except possibly
        ~ df-1o ).  (Contributed by BJ, 6-Oct-2018.) $)
     bj-0nelsngl $p |- (/) e/ sngl A $=
       ( vx c0 bj-csngl wcel cv csn wceq wex vex snnz nesymi nex bj-elsngl rexex
@@ -617573,7 +617563,7 @@ $)
   ${
     $d A x y $.  $d V x $.  $d W x $.  $d Y x y $.
     $( The elementwise intersection on a powerset is the powerset of the
-       intersection.  This allows us to prove for instance that the topology
+       intersection.  This allows to prove for instance that the topology
        induced on a subset by the discrete topology is the discrete topology on
        that subset.  See also ~ restdis (which uses ~ distop and ~ restopn2 ).
        (Contributed by BJ, 27-Apr-2021.) $)
@@ -618170,7 +618160,7 @@ $(
   Extended real and complex numbers, real and complex projective lines
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-  In this section, we introduce several supersets of the set ` RR ` of real
+  In this section, we indroduce several supersets of the set ` RR ` of real
   numbers and the set ` CC ` of complex numbers.
 
   Once they are given their usual topologies, which are locally compact, both
@@ -619581,7 +619571,7 @@ $)
        zero prereal (in order that one have ` RR C_ CC ` ), that prereals are
        equivalence classes of couples of positive reals, the latter are
        Dedekind cuts of positive rationals, which are equivalence classes of
-       positive ordinals.  In particular, we take the successor ordinal at the
+       positive ordinals.  In partiular, we take the successor ordinal at the
        beginning and subtract 1 at the end since the intermediate systems
        contain only (strictly) positive numbers.
 
@@ -622947,8 +622937,8 @@ $)
      universality.  The consequent afterwards depends on more conditions than
      before, which renders the implication chain less versatile.  So you find
      this proof technique mostly when you adjust a chain to a hypothesis of a
-     rule.  A common case is that of syllogisms merging two implication chains
-     into one.
+     rule.  A common case are syllogisms merging two implication chains into
+     one.
 
      The first elements of the first series correspond to ~ a1i , ~ a1d and
      ~ a1dd in the main part.
@@ -623339,7 +623329,7 @@ $)
     ( wfal wif wi wa dfifp7 falim a1bi bitr4i ) ABCDCAEZABFZELABCGKLAHIJ $.
 
   $( Assuming "(n+1)-maxtru1" ` <-> -. ` "(n+1)-mintru-2", we can deduce from
-     the recursion formula given in ~ wl-df-3mintru2 , that a similar one
+     the recursion formula given in ~ wl-df-3mintru2 , that a similiar one
 
      "(n+1)-maxtru1" ` <-> if- ( ph , ` -.  "n-mintru-1" ` , ` "n-maxtru1"
      ` ) `
@@ -623442,8 +623432,8 @@ $)
        fixed, and gradually builts up to the full abstraction of ZFC. Along the
        way, results are only preliminary, and one may at any point branch off
        and pursue a different path toward another variant of set theory.  This
-       openness is already visible in axiom ~ ax-mp , where the symbol ` -> `
-       can be understood as implication, bi-conditional, or conjunction.
+       openess is already visible in axiom ~ ax-mp , where the symbol ` -> `
+       can be understood as as implication, bi-conditional, or conjunction.
        The notation and symbol shapes are suggestive, but their interpretation
        is not mandatory.  The point here is that Metamath, as a purely
        syntactic system, can sometimes allow freedoms, unavailable to
@@ -623720,7 +623710,7 @@ $)
        3. <HTML><b>Add primitive formulas</b></HTML>
 
        3a.  Add the rewrite rule ~ cv to set.mm, allowing variables of type
-       "setvar" to also acquire type "class".  In this way, a variable of
+       "setvar" to also aquire type "class".  In this way, a variable of
        "setvar" type can serve as a substitute for a class variable.
 
        3b.  Add the rewrite rules ~ wcel and ~ wceq to set.mm, making the
@@ -623857,7 +623847,7 @@ $)
 
        <HTML><h3>Equality between classes</h3></HTML>
 
-       In set.mm class variables of type "class" are introduced analogously
+       In set.mm class variables of type "class" are introduced analoguously
        to set variables.  Besides the primitive operations equality and
        membership, class builders allow other syntactical constructs to
        substitute for class variables, enabling them to represent class
@@ -623917,7 +623907,7 @@ $)
        defined, the reasoning given for class abstraction above applies
        generally, and Leibniz's Law continues to hold.
 
-       3e.  Backward Compatibility.  A class ` A ` equal to a set should be
+       3e.  Backward Compatability.  A class ` A ` equal to a set should be
        substitutable for a free set variable ` x ` in any theorem, yielding a
        valid result, provided ` x ` and ` A ` are distinct.  Sethood is
        conveniently expressed by ` E. z z = A ` ; this assumption is added as
@@ -623933,7 +623923,7 @@ $)
        The affected FOL axioms are ~ ax-6 (in the form ~ ax6ev ), ~ ax-7 ,
        ~ ax-8 , ~ ax-9 , ~ ax-12 ( ~ ax12v2 ), and to some extent ~ ax-13
        ( ~ ax13v ).  Since ZF (Zermelo-Fraenkel) set theory does not allow
-       quantification over class variables, no similar class-based versions
+       quantifification over class variables, no similar class-based versions
        of the quantified FOL axioms exist.
 
        (Contributed by Wolf Lammen, 18-Sep-2025.) $)
@@ -623966,7 +623956,7 @@ $)
        encompassed by the general theorems of propositional logic.
 
        In ZF, however, the objects of study are sets - mathematical entities.
-       The flexibility of propositional variables is not required here.
+       The flexibility of propsitional variables is not required here.
        Instead, ZF introduces two primitive connectives between sets:
        ` x = y ` and ` x e. y ` .  ZF is concerned only with logical schemata
        constructed solely from these primitives.  Thus, before we can eliminate
@@ -623993,7 +623983,7 @@ $)
 
        A class can only occur in combination with one of the operators ` = ` or
        ` e. ` .  This applies in particular to class abstractions, which are
-       the only kind of classes permitted in this step of extending level-0
+       the only kind of classes permtted in this step of extending level-0
        predicates in ZF.  The definitions ~  df-cleq and ~ df-clel show that
        equality and membership ultimately reduce to expressions of the form
        ` x e. A ` .  For a class abstraction ` { y | ph } ` , the resulting
@@ -624008,7 +623998,7 @@ $)
        level-1 predicates.  After eliminating all level-1 abstractions from
        such a predicate a level-0 expression is the result.
 
-       Analogously, we can define level-2 class abstractions, where the
+       Analoguously, we can define level-2 class abstractions, where the
        predicate ` ph ` in ` { y | ph } ` is a level-1 predicate.  Again,
        ` x e. { y | ph } ` reduces to a level-1 expression, which in turn can
        be reduced to a level-0 one.  By similar reasoning, equality and
@@ -624036,9 +624026,9 @@ $)
        1. Infinite constructions.  Suppose we wish to add up an infinite series
        of real numbers, where each term defines its successor using a class
        abstraction one level higher than that of the previous term.  Such a
-       summation introduces terms of arbitrarily high level.  While each
-       individual term remains reducible in ZF, the infinite sum expression may
-       not be reducible without special care.
+       summation introduces terms of arbitrary high level.  While each
+       individual term remains reducable in ZF, the infinite sum expression may
+       not be reducable without special care.
 
        2. Class builders.  Every class builder other than ~ cv must be a
        definition, making its elimination straightforward.  The class
@@ -624096,7 +624086,7 @@ $)
        The notion of equality expressed in this axiom does not automatically
        coincide with the general notion of equality.  Some principles are,
        however, already captured:  Equality is shown to be an equivalence
-       relation, covering transitivity ( ~ eqtr ), reflexivity ( ~ eqid ) and
+       relation, covering transivity ( ~ eqtr ), reflexivity ( ~ eqid ) and
        symmetry ( ~ eqcom ).  It also yields the class-level version of
        ~ ax-ext (the backward direction of ~ df-cleq ) holds.
 
@@ -624263,12 +624253,12 @@ $)
      Case (d) shows that in full generality, a class variable cannot always be
      eliminated, something Zermelo-Fraenkel set theory (ZF) requires.  If the
      universe contained only finitely many sets, a free class variable ` A `
-     could be expressed as a finite disjunction of possibilities, hence
+     could be expressed as a finite disjunction of possiblities, hence
      eliminable.  But in ZF's richer universe, in a definition of an
      unrestricted class variable ` A = { x | ph } ` the variable ` ph ` will
      contain ` A ` in some way, violating condition (1) above.  Thus
      constraints are needed.  In ZF, any formula containing class variables
-     assumes that non-set class variables can be replaced by ` { x | ph } `
+     assumes that non-set class variables can be be replaced by ` { x | ph } `
      where ` ph ` itself contains no class variables.  There is, however, no
      way to state this condition in a formal way in set.mm.
 
@@ -624534,10 +624524,11 @@ $)
        substituting the class variables with set variables already holds.
        Thus, this definition extends to class variables a relation already
        valid for set variables, and is therefore conservative.  This only
-       sketches the conservativity argument; for details see Appendix of [Levy]
-       p. 357.  For this reason we regard this statement as a "definition",
-       even though it does not have the usual form of a definition.  Under a
-       stricter syntactic criterion, ~ df-clel would instead be an axiom.
+       sketches the conservativity arguement; for details see Appendix of
+       [Levy] p. 357.  For this reason we regard this statement as a
+       "definition", even though it does not have the usual form of a
+       definition.  Under a stricter syntactic criterion, ~ df-clel would
+       instead be an axiom.
 
        See also comments under ~ df-clab , ~ df-cleq , and ~ eqabb .
 
@@ -625151,7 +625142,7 @@ $)
       ( wnf wal wsb wb sbft alimi albi syl wl-sb9v bitr3di ) ACDZBEZACBFZBEZABE
       ZABCFCEOPAGZBEQRGNSBACBHIPABJKABCLM $.
 
-    $( Substitution of variable in existential quantifier.  Closed form of
+    $( Substitution of variable in existentialal quantifier.  Closed form of
        ~ sb8ef .  (Contributed by Wolf Lammen, 27-Apr-2025.) $)
     wl-sb8eft $p |- ( A. x F/ y ph -> ( E. x ph <-> E. y [ y / x ] ph ) ) $=
       ( wnf wal wex wsb wn wb nfnt alimi wl-sb8ft syl alnex albii bitri 3bitr3g
@@ -634724,7 +634715,7 @@ $)
     findcard4.3 $e |- ( y e. Fin -> ( A. x ( ( # ` x ) < ( # ` y ) -> ph ) ->
       ch ) ) $.
     $( Schema for strong induction on the cardinality of a finite set.  The
-       inductive hypothesis is that the result is true on any set with fewer
+       inductive hypothesis is that the result is true on any set with less
        elements.  The result is then proven to be true for all finite sets.
        (Contributed by Thomas van Maaren, 14-Aug-2026.) $)
     findcard4 $p |- ( A e. Fin -> ta ) $=
@@ -635589,10 +635580,9 @@ $)
        ` k + 1 ` elements taken together have property ` ps ` .  Then there
        exists an infinite sequence of elements of ` A ` such that the first
        ` n ` terms of this sequence satisfy ` ps ` for all ` n ` .  This
-       theorem allows us to construct infinite sequences where each term
-       depends on all the previous terms in the sequence.  (Contributed by Jeff
-       Madsen, 2-Sep-2009.)  (Proof shortened by Mario Carneiro,
-       3-Jun-2014.) $)
+       theorem allows to construct infinite sequences where each term depends
+       on all the previous terms in the sequence.  (Contributed by Jeff Madsen,
+       2-Sep-2009.)  (Proof shortened by Mario Carneiro, 3-Jun-2014.) $)
     sdc $p |- ( ph -> E. f ( f : Z --> A /\ A. n e. Z ch ) ) $=
       ( vx vy vj cv cfz co wf wa wrex cab c1 caddc cres wceq w3a cmpo weq oveq2
       feq2d anbi12d cbvrexvw abbii mpoeq123i eqidd eqeq1 3anbi2d rexbidv abbidv
@@ -638699,8 +638689,7 @@ $(
   In most cases, the corresponding definitions and theorems based on extensible
   structures are indicated within the comments.
 
-  This and the following sections in JM's mathbox will be removed from set.mm
-  on
+  This and the following sections in JM's mathox will be removed from set.mm on
   13-Aug-2027, unless there are any objections.
 
 $)
@@ -639464,7 +639453,7 @@ $)
 
   ${
     $d g h x y z $.
-    $( Obsolete definition, use ~ dfring3 instead.  Define the class of all
+    $( Obsolete defintion, use ~ dfring3 instead.  Define the class of all
        unital rings.  (Contributed by Jeff Hankins, 21-Nov-2006.)
        (New usage is discouraged.) $)
     df-rngo $a |- RingOps = { <. g , h >. | ( ( g e. AbelOp /\
@@ -640243,7 +640232,7 @@ $)
 
   ${
     $d g h $.
-    $( Obsolete definition, use ~ df-drng instead.  Define the class of all
+    $( Obsolete defintion, use ~ df-drng instead.  Define the class of all
        division rings (sometimes called skew fields).  A division ring is a
        unital ring where every element except the additive identity has a
        multiplicative inverse.  (Contributed by NM, 4-Apr-2009.)
@@ -640509,7 +640498,7 @@ $)
 
   ${
     $d r s f x y $.
-    $( Obsolete definition, use ~ df-rhm instead.  Define the function which
+    $( Obsolete defintion, use ~ df-rhm instead.  Define the function which
        gives the set of ring homomorphisms between two given rings.
        (New usage is discouraged.)  (Contributed by Jeff Madsen,
        19-Jun-2010.) $)
@@ -640777,7 +640766,7 @@ $)
 
   ${
     $d r s f $.
-    $( Obsolete definition, use ~ df-rim instead.  Define the function which
+    $( Obsolete defintion, use ~ df-rim instead.  Define the function which
        gives the set of ring isomorphisms between two given rings.
        (Contributed by Jeff Madsen, 16-Jun-2011.)
        (New usage is discouraged.) $)
@@ -640893,7 +640882,7 @@ $)
 
   ${
     $d r s f $.
-    $( Obsolete definition, use ~ dfric2 instead.  Define the ring isomorphism
+    $( Obsolete defintion, use ~ dfric2 instead.  Define the ring isomorphism
        relation.  (Contributed by Jeff Madsen, 16-Jun-2011.)
        (New usage is discouraged.) $)
     df-risc $a |- ~=R = { <. r , s >. | ( ( r e. RingOps /\ s e. RingOps )
@@ -641000,7 +640989,7 @@ $)
 
   $( Add alternate definition. Add Kennington's one (=/= the zero ring),
        and Mizar's one: ` ( GId `` G ) =/= ( GId `` H ) ` $)
-  $( Obsolete definition, use ~ df-field instead.  Definition of a field.  A
+  $( Obsolete defintion, use ~ df-field instead.  Definition of a field.  A
      field is a commutative division ring.  (Contributed by FL, 6-Sep-2009.)
      (Revised by Jeff Madsen, 10-Jun-2010.)  (New usage is discouraged.) $)
   df-fld $a |- Fld = ( DivRingOps i^i Com2 ) $.
@@ -641010,7 +640999,7 @@ $)
   $( Extend class notation with the class of commutative rings. $)
   ccring $a class CRingOps $.
 
-  $( Obsolete definition, use ~ df-cring instead.  Define the class of
+  $( Obsolete defintion, use ~ df-cring instead.  Define the class of
      commutative rings.  (Contributed by Jeff Madsen, 8-Jun-2010.)
      (New usage is discouraged.) $)
   df-crngo $a |- CRingOps = ( RingOps i^i Com2 ) $.
@@ -641236,7 +641225,7 @@ $)
 
   ${
     $d r i x y z $.
-    $( Obsolete definition, use ~ df-2idl (or ~ df-lidl ) instead.  Define the
+    $( Obsolete defintion, use ~ df-2idl (or ~ df-lidl ) instead.  Define the
        class of (two-sided) ideals of a ring ` R ` .  A subset of ` R ` is an
        ideal if it contains ` 0 ` , is closed under addition, and is closed
        under multiplication on either side by any element of ` R ` .
@@ -641251,7 +641240,7 @@ $)
 
   ${
     $d r i a b x y $.
-    $( Obsolete definition, use ~ df-prmidl instead.  Define the class of prime
+    $( Obsolete defintion, use ~ df-prmidl instead.  Define the class of prime
        ideals of a ring ` R ` .  A proper ideal ` I ` of ` R ` is prime if
        whenever ` A B C_ I ` for ideals ` A ` and ` B ` , either ` A C_ I ` or
        ` B C_ I ` .  The more familiar definition using elements rather than
@@ -641266,10 +641255,10 @@ $)
 
   ${
     $d r i j $.
-    $( Obsolete definition, use ~ df-mxidl instead.  Define the class of
-       maximal ideals of a ring ` R ` .  A proper ideal is called maximal if it
-       is maximal with respect to inclusion among proper ideals.  (Contributed
-       by Jeff Madsen, 5-Jan-2011.)  (New usage is discouraged.) $)
+    $( Obsolete defintion, use ~ df-mxidl instead.  Define the class of maximal
+       ideals of a ring ` R ` .  A proper ideal is called maximal if it is
+       maximal with respect to inclusion among proper ideals.  (Contributed by
+       Jeff Madsen, 5-Jan-2011.)  (New usage is discouraged.) $)
     df-maxidl $a |- MaxIdl = ( r e. RingOps |->
             { i e. ( Idl ` r ) | ( i =/= ran ( 1st ` r ) /\ A. j e. ( Idl ` r )
                       ( i C_ j -> ( j = i \/ j = ran ( 1st ` r ) ) ) ) } ) $.
@@ -646536,7 +646525,7 @@ $)
     $d R u x y $.
     $( Define the class of cosets by ` R ` : ` x ` and ` y ` are cosets by
        ` R ` iff there exists a set ` u ` such that both ` u R x ` and
-       ` u R y ` hold, i.e., both ` x ` and ` y ` are elements of the ` R `
+       ` u R y ` hold, i.e., both ` x ` and ` y ` are are elements of the ` R `
        -coset of ` u ` (see ~ dfcoss2 and the comment of ~ dfec2 ). ` R ` is
        usually a relation.
 
@@ -646566,7 +646555,7 @@ $)
     $d R u x y $.
     $( Alternate definition of the class of cosets by ` R ` : ` x ` and ` y `
        are cosets by ` R ` iff there exists a set ` u ` such that both ` x `
-       and ` y ` are elements of the ` R ` -coset of ` u ` (see also the
+       and ` y ` are are elements of the ` R ` -coset of ` u ` (see also the
        comment of ~ dfec2 ). ` R ` is usually a relation.  (Contributed by
        Peter Mazsa, 16-Jan-2018.) $)
     dfcoss2 $p |- ,~ R =
@@ -646928,7 +646917,7 @@ $)
   ${
     $d A u $.  $d B u $.  $d C u $.  $d D u $.  $d E u $.  $d R u $.  $d S u $.
     $d V u $.  $d W u $.  $d X u $.  $d Y u $.
-    $( ` <. B , C >. ` and ` <. D , E >. ` are cosets by a range Cartesian
+    $( ` <. B , C >. ` and ` <. D , E >. ` are cosets by an range Cartesian
        product with a restriction: a binary relation.  (Contributed by Peter
        Mazsa, 8-Jun-2021.) $)
     br1cossxrnres $p |-
@@ -650339,8 +650328,8 @@ $)
      Partitions are disjoints on domain quotients (or: domain quotients
      restricted to disjoints).
 
-     This is a more general meaning of partition than we are familiar with: the
-     conventional meaning of partition (e.g. partition ` A ` of ` X ` ,
+     This is a more general meaning of partition than we we are familiar with:
+     the conventional meaning of partition (e.g. partition ` A ` of ` X ` ,
      [Halmos] p. 28:  "A partition of ` X ` is a disjoint collection ` A ` of
      non-empty subsets of ` X ` whose union is ` X ` ", or Definition 35,
      [Suppes] p. 83., cf. ~ https://oeis.org/A000110 ) is what we call
@@ -652911,7 +652900,8 @@ $( (End of "Predicate calculus with equality:  Older axiomatization".) $)
     fsumshftd.5 $e |- ( ( ph /\ j = ( k - K ) ) -> A = B ) $.
     $( Index shift of a finite sum with a weaker "implicit substitution"
        hypothesis than ~ fsumshft .  The proof demonstrates how this can be
-       derived starting from ~ fsumshft .  (Contributed by NM, 1-Nov-2019.) $)
+       derived starting from from ~ fsumshft .  (Contributed by NM,
+       1-Nov-2019.) $)
     fsumshftd $p |- ( ph -> sum_ j e. ( M ... N ) A =
                              sum_ k e. ( ( M + K ) ... ( N + K ) ) B ) $=
       ( vw cfz co csu cv wcel cc csb caddc csbeq1a nfcv nfcsb1v cbvsum cmin nfv
@@ -656053,7 +656043,7 @@ $)
     $d r s .+ $.  $d r s z D $.  $d r s G $.  $d r s z K $.  $d r s .x. $.
     $d r s U $.  $d r s z V $.  $d r s Z $.  $d r s z ph $.
     $d k l r s u v x y z $.
-    $( Lemma for ~ lshpkrex .  Show linearity of ` G ` .  (Contributed by NM,
+    $( Lemma for ~ lshpkrex .  Show linearlity of ` G ` .  (Contributed by NM,
        17-Jul-2014.) $)
     lshpkrlem6 $p |- ( ( ph /\ ( l e. K /\ u e. V /\ v e. V ) )
     -> ( G ` ( ( l .x. u ) .+ v ) )
@@ -656286,11 +656276,11 @@ $)
        vectors are functionals.  In many texts, this is defined as a right
        vector space, but by reversing the multiplication we achieve a left
        vector space, as is done in definition of dual vector space in
-       [Holland95] p. 218.  This allows us to reuse our existing collection of
+       [Holland95] p. 218.  This allows to reuse our existing collection of
        left vector space theorems.  The restriction on ` oF ( +g `` v ) `
        allows it to be a set; see ~ ofmres .  Note the operation reversal in
-       the scalar product to allow us to use the original scalar ring instead
-       of the ` oppR ` ring, for convenience.  (Contributed by NM,
+       the scalar product to allow to use the original scalar ring instead of
+       the ` oppR ` ring, for convenience.  (Contributed by NM,
        18-Oct-2014.) $)
     df-ldual $a |- LDual = ( v e. _V |->
       ( { <. ( Base ` ndx ) , ( LFnl ` v ) >. ,
@@ -656320,10 +656310,10 @@ $)
        vectors are functionals.  In many texts, this is defined as a right
        vector space, but by reversing the multiplication we achieve a left
        vector space, as is done in definition of dual vector space in
-       [Holland95] p. 218.  This allows us to reuse our existing collection of
+       [Holland95] p. 218.  This allows to reuse our existing collection of
        left vector space theorems.  Note the operation reversal in the scalar
-       product to allow us to use the original scalar ring instead of the
-       ` oppR ` ring, for convenience.  (Contributed by NM, 18-Oct-2014.) $)
+       product to allow to use the original scalar ring instead of the ` oppR `
+       ring, for convenience.  (Contributed by NM, 18-Oct-2014.) $)
     ldualset $p |- ( ph -> D = ( { <. ( Base ` ndx ) , F >. ,
          <. ( +g ` ndx ) , .+b >. , <. ( Scalar ` ndx ) , O >. }
        u. { <. ( .s ` ndx ) , .xb >. } ) ) $=
@@ -659843,7 +659833,7 @@ $)
   ${
     hlatjcom.j $e |- .\/ = ( join ` K ) $.
     hlatjcom.a $e |- A = ( Atoms ` K ) $.
-    $( Commutativity of join operation.  Frequently-used special case of
+    $( Commutatitivity of join operation.  Frequently-used special case of
        ~ latjcom for atoms.  (Contributed by NM, 15-Jun-2012.) $)
     hlatjcom $p |- ( ( K e. HL /\ X e. A /\ Y e. A )
                -> ( X .\/ Y ) = ( Y .\/ X ) ) $=
@@ -671608,8 +671598,8 @@ $)
     lhp2at.a $e |- A = ( Atoms ` K ) $.
     lhp2at.h $e |- H = ( LHyp ` K ) $.
     $( There exist at least two different atoms under a co-atom.  This allows
-       us to create a line under the co-atom.  TODO: is this needed?
-       (Contributed by NM, 1-Jun-2012.)  (New usage is discouraged.) $)
+       to create a line under the co-atom.  TODO: is this needed?  (Contributed
+       by NM, 1-Jun-2012.)  (New usage is discouraged.) $)
     lhpex2leN $p |- ( ( K e. HL /\ W e. H )
        -> E. p e. A E. q e. A ( p .<_ W /\ q .<_ W /\ p =/= q ) ) $=
       ( chlt wcel wa cv wbr wne w3a wrex simprr lhpexle1 adantr jca necom bitri
@@ -687229,8 +687219,8 @@ $)
     tendoco.h $e |- H = ( LHyp ` K ) $.
     tendoco.e $e |- E = ( ( TEndo ` K ) ` W ) $.
     $( The composition of two trace-preserving endomorphisms (multiplication in
-       the endomorphism ring) is a trace-preserving endomorphism.  (Contributed
-       by NM, 9-Jun-2013.) $)
+       the endormorphism ring) is a trace-preserving endomorphism.
+       (Contributed by NM, 9-Jun-2013.) $)
     tendococl $p |- ( ( ( K e. HL /\ W e. H ) /\ S e. E /\ T e. E )
      -> ( S o. T ) e. E ) $=
       ( chlt wcel cfv ccom eqid wf syl2anc tendocl syl3anc tendocoval syl221anc
@@ -687518,7 +687508,7 @@ $)
     tendo0.e $e |- E = ( ( TEndo ` K ) ` W ) $.
     tendo0.o $e |- O = ( f e. T |-> ( _I |` B ) ) $.
     $d f B $.  $d f T $.
-    $( The additive identity trace-preserving endomorphism preserves
+    $( The additive identity trace-preserving endormorphism preserves
        composition of translations.  TODO: why isn't this a special case of
        ~ tendospdi1 ?  (Contributed by NM, 11-Jun-2013.) $)
     tendo0co2 $p |- ( ( ( K e. HL /\ W e. H ) /\ F e. T /\ G e. T )
@@ -687546,7 +687536,7 @@ $)
     $d g B $.  $d g h H $.  $d g h K $.  $d g h O $.  $d g h T $.  $d g h W $.
     ${
       $d f g $.
-      $( The additive identity is a trace-preserving endomorphism.
+      $( The additive identity is a trace-preserving endormorphism.
          (Contributed by NM, 12-Jun-2013.) $)
       tendo0cl $p |- ( ( K e. HL /\ W e. H ) -> O e. E ) $=
         ( vg vh chlt wcel cfv eqid cv wa ctrl cple id cid cres idltrn tendo0cbv
@@ -687560,7 +687550,7 @@ $)
            ( f e. T |-> ( ( s ` f ) o. ( t ` f ) ) ) ) $.
     $d g s t E $.  $d g P $.  $d g S $.  $d s t T $.  $d f s t W $.
     $d f s t $.
-    $( Property of the additive identity endomorphism.  (Contributed by NM,
+    $( Property of the additive identity endormorphism.  (Contributed by NM,
        12-Jun-2013.) $)
     tendo0pl $p |- ( ( ( K e. HL /\ W e. H ) /\ S e. E )
       -> ( O P S ) = S ) $=
@@ -687574,7 +687564,7 @@ $)
       CZBBWDVDWOWDTWKVQWDESZWQWPVQVRWJWRDEGWBHIUBKNOPVEVFBEWDHIUBKMNOVGVHBBWDVI
       BBWDVJVKVLVMEVTUAGHIDKNOPVNVP $.
 
-    $( Property of the additive identity endomorphism.  (Contributed by NM,
+    $( Property of the additive identity endormorphism.  (Contributed by NM,
        21-Feb-2014.) $)
     tendo0plr $p |- ( ( ( K e. HL /\ W e. H ) /\ S e. E )
       -> ( S P O ) = S ) $=
@@ -688205,8 +688195,8 @@ $)
     tendocan.h $e |- H = ( LHyp ` K ) $.
     tendocan.t $e |- T = ( ( LTrn ` K ) ` W ) $.
     tendocan.e $e |- E = ( ( TEndo ` K ) ` W ) $.
-    $( Cancellation law: if the values of two trace-preserving endomorphisms
-       are equal, so are the endomorphisms.  Lemma J of [Crawley] p. 118.
+    $( Cancellation law: if the values of two trace-preserving endormorphisms
+       are equal, so are the endormorphisms.  Lemma J of [Crawley] p. 118.
        (Contributed by NM, 21-Jun-2013.) $)
     tendocan $p |- ( ( ( K e. HL /\ W e. H )
           /\ ( U e. E /\ V e. E /\ ( U ` F ) = ( V ` F ) )
@@ -688277,7 +688267,7 @@ $)
       GUTVAVFVCGTZUTVATVFVGPZUTVCUGZUTGUGZUTVAVGVIVJTVFUTVCGUHUIVHVEVIUTTUSVEVB
       VGUJZBUTUKULVHVEVJVATVKABCUTFGMIUMULUNUOUPUQURUQ $.
 
-    $( The composition (product) of trace-preserving endomorphisms is nonzero
+    $( The composition (product) of trace-preserving endormorphisms is nonzero
        when each argument is nonzero.  (Contributed by NM, 8-Aug-2013.) $)
     tendoconid $p |- ( ( ( K e. HL /\ W e. H ) /\ ( U e. E /\ U =/= O )
        /\ ( V e. E /\ V =/= O ) ) -> ( U o. V ) =/= O ) $=
@@ -691688,7 +691678,7 @@ $)
     $d f h N $.  $d f h P $.  $d f h R $.  $d f h T $.  $d f h U $.
     $d f h W $.  $d b f h g z $.
     $( Part of Lemma K of [Crawley] p. 118.  Line 11, p. 120, "tau is in Delta"
-       i.e. ` U ` is a trace-preserving endomorphism.  (Contributed by NM,
+       i.e. ` U ` is a trace-preserving endormorphism.  (Contributed by NM,
        31-Jul-2013.) $)
     cdlemk56 $p |- ( ( ( ( K e. HL /\ W e. H ) /\ F e. T /\ N e. T )
         /\ ( R ` F ) = ( R ` N ) /\ ( P e. A /\ -. P .<_ W ) )
@@ -695093,7 +695083,7 @@ $)
   ${
     $d k w x f $.
     $( Isomorphism B is isomorphism A extended with an extra dimension set to
-       the zero vector component i.e. the zero endomorphism.  Its domain is
+       the zero vector component i.e. the zero endormorphism.  Its domain is
        lattice elements less than or equal to the fiducial co-atom ` w ` .
        (Contributed by NM, 8-Dec-2013.) $)
     df-dib $a |- DIsoB = ( k e. _V |-> ( w e. ( LHyp ` k ) |->
@@ -698685,7 +698675,7 @@ $)
       $d h K $.  $d h T $.  $d h W $.
       dihglbb.o $e |- O = ( h e. T |-> ( _I |` B ) ) $.
       $( Isomorphism H of a lattice glb when the glb is  under the
-         fiducial hyperplane ` W ` . $)
+         fiduial hyperplane ` W ` . $)
 $(
       dihglbb $p |- ( ( ( K e. HL /\ W e. H ) /\ ( S C_ B /\ S =/= (/) )
           /\ ( G ` S ) .<_ W )
@@ -700279,7 +700269,7 @@ $)
     dochoccl.o $e |- ._|_ = ( ( ocH ` K ) ` W ) $.
     dochoccl.k $e |- ( ph -> ( K e. HL /\ W e. H ) ) $.
     dochoccl.g $e |- ( ph -> X C_ V ) $.
-    $( A set of vectors is closed iff it equals its double orthocomplement.
+    $( A set of vectors is closed iff it equals its double orthocomplent.
        (Contributed by NM, 1-Jan-2015.) $)
     dochoccl $p |- ( ph -> ( X e. ran I <-> ( ._|_ ` ( ._|_ ` X ) ) = X ) ) $=
       ( wcel cfv wa wss crn wceq chlt dochoc sylan simpr dochssv syl2anc dochcl
@@ -706379,7 +706369,7 @@ $)
       $.
 
     mapdsord.x $e |- ( ph -> Y e. S ) $.
-    $( Strong ordering property of the map defined by ~ df-mapd .  (Contributed
+    $( Strong ordering property of themap defined by ~ df-mapd .  (Contributed
        by NM, 13-Mar-2015.) $)
     mapdsord $p |- ( ph -> ( ( M ` X ) C. ( M ` Y ) <-> X C. Y ) ) $=
       ( cfv wss wne wa wpss mapdord mapd11 necon3bid anbi12d df-pss 3bitr4g ) A
@@ -707732,7 +707722,7 @@ $)
       mapdh.x $e |- ( ph -> X e. A ) $.
       mapdh.f $e |- ( ph -> F e. B ) $.
       mapdh.y $e |- ( ph -> Y e. E ) $.
-      $( Lemma for ~~? mapdh .  (Contributed by NM, 3-Apr-2015.)  (Revised by
+      $( Lemmma for ~~? mapdh .  (Contributed by NM, 3-Apr-2015.)  (Revised by
          Mario Carneiro, 6-May-2015.) $)
       mapdhval $p |- ( ph -> ( I ` <. X , F , Y >. )
     = if ( Y = .0. , Q , ( iota_ h e. D ( ( M ` ( N ` { Y } ) ) = ( J ` { h } )
@@ -707758,7 +707748,7 @@ $)
       mapdh0.o $e |- .0. = ( 0g ` U ) $.
       mapdh0.x $e |- ( ph -> X e. A ) $.
       mapdh0.f $e |- ( ph -> F e. B ) $.
-      $( Lemma for ~~? mapdh .  (Contributed by NM, 3-Apr-2015.) $)
+      $( Lemmma for ~~? mapdh .  (Contributed by NM, 3-Apr-2015.) $)
       mapdhval0 $p |- ( ph -> ( I ` <. X , F , .0. >. ) = Q ) $=
         ( cotp cfv wceq csn cv co crio cif cvv wcel c0g fvexi a1i mapdhval eqid
         wa iftruei eqtrdi ) AQKRUDLUERRUFZGRUGPUENUEJUHZUGMUEUFQROUIUGPUENUEKVC
@@ -707770,7 +707760,7 @@ $)
       mapdh2.x $e |- ( ph -> X e. A ) $.
       mapdh2.f $e |- ( ph -> F e. B ) $.
       mapdh2.y $e |- ( ph -> Y e. ( V \ { .0. } ) ) $.
-      $( Lemma for ~~? mapdh .  (Contributed by NM, 3-Apr-2015.) $)
+      $( Lemmma for ~~? mapdh .  (Contributed by NM, 3-Apr-2015.) $)
       mapdhval2 $p |- ( ph -> ( I ` <. X , F , Y >. )
     = ( iota_ h e. D ( ( M ` ( N ` { Y } ) ) = ( J ` { h } )
              /\ ( M ` ( N ` { ( X .- Y ) } ) )
@@ -707801,7 +707791,7 @@ $)
     ${
       mapdhc.y $e |- ( ph -> Y e. V ) $.
       mapdh.ne $e |- ( ph -> ( N ` { X } ) =/= ( N ` { Y } ) ) $.
-      $( Lemma for ~~? mapdh .  (Contributed by NM, 3-Apr-2015.) $)
+      $( Lemmma for ~~? mapdh .  (Contributed by NM, 3-Apr-2015.) $)
       mapdhcl $p |- ( ph -> ( I ` <. X , F , Y >. ) e. D ) $=
         ( cotp cfv wcel wceq oteq3 fveq2d eleq1d wne wa csn cv crio cdif adantr
         co anim1i eldifsn sylibr mapdhval2 wreu chlt mapdpg riotacl syl eqeltrd
@@ -707819,7 +707809,7 @@ $)
       mapdhe.y $e |- ( ph -> Y e. ( V \ { .0. } ) ) $.
       mapdhe.g $e |- ( ph -> G e. D ) $.
       mapdh.ne2 $e |- ( ph -> ( N ` { X } ) =/= ( N ` { Y } ) ) $.
-      $( Lemma for ~~? mapdh .  The defining equation for h(x,x',y)=y' in part
+      $( Lemmma for ~~? mapdh .  The defining equation for h(x,x',y)=y' in part
          (2) in [Baer] p. 45 line 24.  (Contributed by NM, 4-Apr-2015.) $)
       mapdheq $p |- ( ph -> ( ( I ` <. X , F , Y >. ) = G
          <-> ( ( M ` ( N ` { Y } ) ) = ( J ` { G } )
@@ -707835,7 +707825,7 @@ $)
         WFWGWI $.
 
       $d x G $.
-      $( Lemma for ~~? mapdh .  One direction of part (2) in [Baer] p. 45.
+      $( Lemmma for ~~? mapdh .  One direction of part (2) in [Baer] p. 45.
          (Contributed by NM, 4-Apr-2015.) $)
       mapdheq2 $p |- ( ph -> ( ( I ` <. X , F , Y >. ) = G
           -> ( I ` <. Y , G , X >. ) = F ) ) $=
@@ -707857,7 +707847,7 @@ $)
       mapdhe2.g $e |- ( ph -> G e. D ) $.
       mapdh.ne3 $e |- ( ph -> ( N ` { X } ) =/= ( N ` { Y } ) ) $.
       mapdh.my $e |- ( ph -> ( M ` ( N ` { Y } ) ) = ( J ` { G } ) ) $.
-      $( Lemma for ~~? mapdh .  Part (2) in [Baer] p. 45.  The bidirectional
+      $( Lemmma for ~~? mapdh .  Part (2) in [Baer] p. 45.  The bidirectional
          version of ~ mapdheq2 seems to require an additional hypothesis not
          mentioned in Baer.  TODO fix ref.  TODO:  We probably don't need this;
          delete if never used.  (Contributed by NM, 4-Apr-2015.)
@@ -708037,7 +708027,7 @@ $)
       mapdh6b0.z $e |- ( ph -> Z e. V ) $.
       mapdh6b0.ne $e |- ( ph
             -> ( ( N ` { X } ) i^i ( N ` { Y , Z } ) ) = { .0. } ) $.
-      $( Lemma for ~ mapdh6N .  (Contributed by NM, 23-Apr-2015.)
+      $( Lemmma for ~ mapdh6N .  (Contributed by NM, 23-Apr-2015.)
          (New usage is discouraged.) $)
       mapdh6b0N $p |- ( ph -> -. X e. ( N ` { Y , Z } ) ) $=
         ( cpr cfv wcel wn csn cin wceq clss eqid dvhlvec dvhlmod lspprcl mpbird
@@ -708049,7 +708039,7 @@ $)
       mapdh6b.y $e |- ( ph -> Y = .0. ) $.
       mapdh6b.z $e |- ( ph -> Z e. V ) $.
       mapdh6b.ne $e |- ( ph -> -. X e. ( N ` { Y , Z } ) ) $.
-      $( Lemma for ~ mapdh6N .  (Contributed by NM, 24-Apr-2015.)
+      $( Lemmma for ~ mapdh6N .  (Contributed by NM, 24-Apr-2015.)
          (New usage is discouraged.) $)
       mapdh6bN $p |- ( ph -> ( I ` <. X , F , ( Y .+ Z ) >. )
            = ( ( I ` <. X , F , Y >. ) .+b ( I ` <. X , F , Z >. ) ) ) $=
@@ -708069,7 +708059,7 @@ $)
       mapdh6c.y $e |- ( ph -> Y e. V ) $.
       mapdh6c.z $e |- ( ph -> Z = .0. ) $.
       mapdh6c.ne $e |- ( ph -> -. X e. ( N ` { Y , Z } ) ) $.
-      $( Lemma for ~ mapdh6N .  (Contributed by NM, 24-Apr-2015.)
+      $( Lemmma for ~ mapdh6N .  (Contributed by NM, 24-Apr-2015.)
          (New usage is discouraged.) $)
       mapdh6cN $p |- ( ph -> ( I ` <. X , F , ( Y .+ Z ) >. )
            = ( ( I ` <. X , F , Y >. ) .+b ( I ` <. X , F , Z >. ) ) ) $=
@@ -708098,7 +708088,7 @@ $)
       mapdh6d.z $e |- ( ph -> Z e. ( V \ { .0. } ) ) $.
       mapdh6d.w $e |- ( ph -> w e. ( V \ { .0. } ) ) $.
       mapdh6d.wn $e |- ( ph -> -. w e. ( N ` { X , Y } ) ) $.
-      $( Lemma for ~ mapdh6N .  (Contributed by NM, 1-May-2015.)
+      $( Lemmma for ~ mapdh6N .  (Contributed by NM, 1-May-2015.)
          (New usage is discouraged.) $)
       mapdh6dN $p |- ( ph -> ( I ` <. X , F , ( w .+ ( Y .+ Z ) ) >. )
         = ( ( I ` <. X , F , w >. ) .+b ( I ` <. X , F , ( Y .+ Z ) >. ) ) ) $=
@@ -708128,8 +708118,8 @@ $)
         TJUCUKUVNXOZUNXSWNUVNUUHJUVPXTWNUVJUUHJUVLYDYAYBYCYEWCXMWIUUTYOYFUUTYQY
         FYGYH $.
 
-      $( Lemma for ~ mapdh6N .  Part (6) in [Baer] p. 47 line 38.  (Contributed
-         by NM, 1-May-2015.)  (New usage is discouraged.) $)
+      $( Lemmma for ~ mapdh6N .  Part (6) in [Baer] p. 47 line 38.
+         (Contributed by NM, 1-May-2015.)  (New usage is discouraged.) $)
       mapdh6eN $p |- ( ph -> ( I ` <. X , F , ( ( w .+ Y ) .+ Z ) >. )
         = ( ( I ` <. X , F , ( w .+ Y ) >. ) .+b ( I ` <. X , F , Z >. ) ) ) $=
         ( cotp cfv cv co wcel wne cdif dvhlmod eldifad lmodvacl syl3anc dvhlvec
@@ -708145,8 +708135,8 @@ $)
         UCUDUEUKVCUMUNXPVBVGVHVIVFYGVJWKZWNWEYBXSUBYAXRSXEUEWOWPWQWRAYCYDAYCXNV
         PYEASTJUEUBXEUKUNXPYFXQXLYHWDWEWSAXFWTAXCWTXA $.
 
-      $( Lemma for ~ mapdh6N .  Part (6) in [Baer] p. 47 line 38.  (Contributed
-         by NM, 1-May-2015.)  (New usage is discouraged.) $)
+      $( Lemmma for ~ mapdh6N .  Part (6) in [Baer] p. 47 line 38.
+         (Contributed by NM, 1-May-2015.)  (New usage is discouraged.) $)
       mapdh6fN $p |- ( ph -> ( I ` <. X , F , ( w .+ Y ) >. )
            = ( ( I ` <. X , F , w >. ) .+b ( I ` <. X , F , Y >. ) ) ) $=
         ( cotp cfv cv csn wne cpr wcel dvhlvec eldifad lspindpi simpld lspindp1
@@ -708156,8 +708146,8 @@ $)
         IVSZAUBVNSVLZWKVOWQUEVNSVLVOASTJUBUCUEUKUNWMAUBTWNVBVSZWOAUETWNVHVSVEVT
         WAVJWBWDAWJWQVOWLASTJWHUBUCUKUNWMWPWRWOVJVTWDAWIWEAWGWEWF $.
 
-      $( Lemma for ~ mapdh6N .  Part (6) of [Baer] p. 47 line 39.  (Contributed
-         by NM, 1-May-2015.)  (New usage is discouraged.) $)
+      $( Lemmma for ~ mapdh6N .  Part (6) of [Baer] p. 47 line 39.
+         (Contributed by NM, 1-May-2015.)  (New usage is discouraged.) $)
       mapdh6gN $p |- ( ph
   -> ( ( I ` <. X , F , w >. ) .+b ( I ` <. X , F , ( Y .+ Z ) >. ) )
            = ( ( ( I ` <. X , F , w >. ) .+b ( I ` <. X , F , Y >. ) )
@@ -708172,7 +708162,7 @@ $)
         DVGVTAUETXDVHVTFTJWKUCUEUKVCWAWDWEWFAXCWQWRGABCDEFGHIJKLMNOPQRSTUAUBUCU
         DUEUFUGUHUIUJUKULUMUNUOUPUQURUSUTVAVBVCVDVEVFVGVHVIVJWGWHWIWJ $.
 
-      $( Lemma for ~ mapdh6N .  Part (6) of [Baer] p. 48 line 2.  (Contributed
+      $( Lemmma for ~ mapdh6N .  Part (6) of [Baer] p. 48 line 2.  (Contributed
          by NM, 1-May-2015.)  (New usage is discouraged.) $)
       mapdh6hN $p |- ( ph -> ( I ` <. X , F , ( Y .+ Z ) >. )
            = ( ( I ` <. X , F , Y >. ) .+b ( I ` <. X , F , Z >. ) ) ) $=
@@ -708201,7 +708191,7 @@ $)
       mapdh6i.z $e |- ( ph -> Z e. ( V \ { .0. } ) ) $.
       ${
         mapdh6i.yz $e |- ( ph -> ( N ` { Y } ) = ( N ` { Z } ) ) $.
-        $( Lemma for ~ mapdh6N .  Eliminate auxiliary vector ` w ` .
+        $( Lemmma for ~ mapdh6N .  Eliminate auxiliary vector ` w ` .
            (Contributed by NM, 1-May-2015.)  (New usage is discouraged.) $)
         mapdh6iN $p |- ( ph -> ( I ` <. X , F , ( Y .+ Z ) >. )
              = ( ( I ` <. X , F , Y >. ) .+b ( I ` <. X , F , Z >. ) ) ) $=
@@ -708217,7 +708207,7 @@ $)
           KXJWLWOWP $.
       $}
 
-      $( Lemma for ~ mapdh6N .  Eliminate ` ( N `` { Y } ) = ( N `` { Z } ) `
+      $( Lemmma for ~ mapdh6N .  Eliminate ` ( N `` { Y } ) = ( N `` { Z } ) `
          hypothesis.  (Contributed by NM, 1-May-2015.)
          (New usage is discouraged.) $)
       mapdh6jN $p |- ( ph -> ( I ` <. X , F , ( Y .+ Z ) >. )
@@ -708237,7 +708227,7 @@ $)
       mapdh6k.y $e |- ( ph -> Y e. V ) $.
       mapdh6k.z $e |- ( ph -> Z e. V ) $.
       mapdh6k.xn $e |- ( ph -> -. X e. ( N ` { Y , Z } ) ) $.
-      $( Lemma for ~ mapdh6N .  Eliminate nonzero vector requirement.
+      $( Lemmma for ~ mapdh6N .  Eliminate nonzero vector requirement.
          (Contributed by NM, 1-May-2015.)  (New usage is discouraged.) $)
       mapdh6kN $p |- ( ph -> ( I ` <. X , F , ( Y .+ Z ) >. )
              = ( ( I ` <. X , F , Y >. ) .+b ( I ` <. X , F , Z >. ) ) ) $=
@@ -710343,7 +710333,7 @@ $)
       hdmap1l6b0.z $e |- ( ph -> Z e. V ) $.
       hdmap1l6b0.ne $e |- ( ph
             -> ( ( N ` { X } ) i^i ( N ` { Y , Z } ) ) = { .0. } ) $.
-      $( Lemma for ~ hdmap1l6 .  (Contributed by NM, 23-Apr-2015.)
+      $( Lemmma for ~ hdmap1l6 .  (Contributed by NM, 23-Apr-2015.)
          (New usage is discouraged.) $)
       hdmap1l6b0N $p |- ( ph -> -. X e. ( N ` { Y , Z } ) ) $=
         ( cpr cfv wcel wn csn cin wceq clss eqid dvhlvec dvhlmod lspprcl mpbird
@@ -710355,7 +710345,7 @@ $)
       hdmap1l6b.y $e |- ( ph -> Y = .0. ) $.
       hdmap1l6b.z $e |- ( ph -> Z e. V ) $.
       hdmap1l6b.ne $e |- ( ph -> -. X e. ( N ` { Y , Z } ) ) $.
-      $( Lemma for ~ hdmap1l6 .  (Contributed by NM, 24-Apr-2015.) $)
+      $( Lemmma for ~ hdmap1l6 .  (Contributed by NM, 24-Apr-2015.) $)
       hdmap1l6b $p |- ( ph -> ( I ` <. X , F , ( Y .+ Z ) >. )
            = ( ( I ` <. X , F , Y >. ) .+b ( I ` <. X , F , Z >. ) ) ) $=
         ( cotp cfv cgrp wcel wceq clmod lcdlmod lmodgrp syl csn dvhlvec eldifad
@@ -710374,7 +710364,7 @@ $)
       hdmap1l6c.y $e |- ( ph -> Y e. V ) $.
       hdmap1l6c.z $e |- ( ph -> Z = .0. ) $.
       hdmap1l6c.ne $e |- ( ph -> -. X e. ( N ` { Y , Z } ) ) $.
-      $( Lemma for ~ hdmap1l6 .  (Contributed by NM, 24-Apr-2015.) $)
+      $( Lemmma for ~ hdmap1l6 .  (Contributed by NM, 24-Apr-2015.) $)
       hdmap1l6c $p |- ( ph -> ( I ` <. X , F , ( Y .+ Z ) >. )
            = ( ( I ` <. X , F , Y >. ) .+b ( I ` <. X , F , Z >. ) ) ) $=
         ( cotp cfv cgrp wcel wceq clmod lcdlmod lmodgrp syl csn dvhlvec eldifad
@@ -710401,7 +710391,7 @@ $)
       hdmap1l6d.z $e |- ( ph -> Z e. ( V \ { .0. } ) ) $.
       hdmap1l6d.w $e |- ( ph -> w e. ( V \ { .0. } ) ) $.
       hdmap1l6d.wn $e |- ( ph -> -. w e. ( N ` { X , Y } ) ) $.
-      $( Lemma for ~ hdmap1l6 .  (Contributed by NM, 1-May-2015.) $)
+      $( Lemmma for ~ hdmap1l6 .  (Contributed by NM, 1-May-2015.) $)
       hdmap1l6d $p |- ( ph -> ( I ` <. X , F , ( w .+ ( Y .+ Z ) ) >. )
         = ( ( I ` <. X , F , w >. ) .+b ( I ` <. X , F , ( Y .+ Z ) >. ) ) ) $=
         ( cv co cotp cfv wceq wa clmod lcdlmod csn wne dvhlvec eldifad lspindpi
@@ -710429,7 +710419,7 @@ $)
         UUNUUDIYAVLZWKZUVKUUOAUUNUUTUVMUUOUUJUVLQRIUAUFUVLXMZUJXPWFUVLUUDIUVNXQ
         WFUVHUUDIUVJXRYBXSXTYCWAXJWGUUQYMYDUUQYOYDYEYF $.
 
-      $( Lemma for ~ hdmap1l6 .  Part (6) in [Baer] p. 47 line 38.
+      $( Lemmma for ~ hdmap1l6 .  Part (6) in [Baer] p. 47 line 38.
          (Contributed by NM, 1-May-2015.) $)
       hdmap1l6e $p |- ( ph -> ( I ` <. X , F , ( ( w .+ Y ) .+ Z ) >. )
         = ( ( I ` <. X , F , ( w .+ Y ) >. ) .+b ( I ` <. X , F , Z >. ) ) ) $=
@@ -710446,7 +710436,7 @@ $)
         AVEVFVGVDYEVHWIZWLWCXTXQTXSXPQXCUCWMWNWOWPAYAYBAYAXLVNYCAQRIUCTXCUFUJXN
         YDXOXJYFWBWCWQAXDWRAXAWRWS $.
 
-      $( Lemma for ~ hdmap1l6 .  Part (6) in [Baer] p. 47 line 38.
+      $( Lemmma for ~ hdmap1l6 .  Part (6) in [Baer] p. 47 line 38.
          (Contributed by NM, 1-May-2015.) $)
       hdmap1l6f $p |- ( ph -> ( I ` <. X , F , ( w .+ Y ) >. )
            = ( ( I ` <. X , F , w >. ) .+b ( I ` <. X , F , Y >. ) ) ) $=
@@ -710457,7 +710447,7 @@ $)
         QVJZWIVMWOUCVLQVJVMAQRITUAUCUFUJWKATRWLVAVQZWMAUCRWLVFVQVCVRVSVHVTWBAWH
         WOVMWJAQRIWFTUAUFUJWKWNWPWMVHVRWBAWGWCAWEWCWD $.
 
-      $( Lemma for ~ hdmap1l6 .  Part (6) of [Baer] p. 47 line 39.
+      $( Lemmma for ~ hdmap1l6 .  Part (6) of [Baer] p. 47 line 39.
          (Contributed by NM, 1-May-2015.) $)
       hdmap1l6g $p |- ( ph
   -> ( ( I ` <. X , F , w >. ) .+b ( I ` <. X , F , ( Y .+ Z ) >. ) )
@@ -710473,8 +710463,8 @@ $)
         RERIWIUAUCUFUGVSWBWCWDAXAWOWPFABCDEFGHIJKLMNOPQRSTUAUBUCUDUEUFUGUHUIUJU
         KULUMUNUOUPUQURUSUTVAVBVCVDVEVFVGVHWEWFWGWH $.
 
-      $( Lemma for ~ hdmap1l6 .  Part (6) of [Baer] p. 48 line 2.  (Contributed
-         by NM, 1-May-2015.) $)
+      $( Lemmma for ~ hdmap1l6 .  Part (6) of [Baer] p. 48 line 2.
+         (Contributed by NM, 1-May-2015.) $)
       hdmap1l6h $p |- ( ph -> ( I ` <. X , F , ( Y .+ Z ) >. )
            = ( ( I ` <. X , F , Y >. ) .+b ( I ` <. X , F , Z >. ) ) ) $=
         ( cv cotp cfv wceq hdmap1l6g clmod wcel lcdlmod csn wne dvhlvec eldifad
@@ -710501,7 +710491,7 @@ $)
         $d w .+b $.  $d w F $.  $d w I $.  $d w N $.  $d w .+ $.  $d w U $.
         $d w V $.  $d w X $.  $d w Y $.  $d w Z $.  $d w ph $.
         hdmap1l6i.yz $e |- ( ph -> ( N ` { Y } ) = ( N ` { Z } ) ) $.
-        $( Lemma for ~ hdmap1l6 .  Eliminate auxiliary vector ` w ` .
+        $( Lemmma for ~ hdmap1l6 .  Eliminate auxiliary vector ` w ` .
            (Contributed by NM, 1-May-2015.) $)
         hdmap1l6i $p |- ( ph -> ( I ` <. X , F , ( Y .+ Z ) >. )
              = ( ( I ` <. X , F , Y >. ) .+b ( I ` <. X , F , Z >. ) ) ) $=
@@ -710516,7 +710506,7 @@ $)
           PXEVJWQAXEPQHSTUEXFUIXGWTXAWGWBAXBWQWHAXBWQWLZWIXHWJWMWN $.
       $}
 
-      $( Lemma for ~ hdmap1l6 .  Eliminate ` ( N ` { Y } ) = ( N ` { Z } ) `
+      $( Lemmma for ~ hdmap1l6 .  Eliminate ` ( N ` { Y } ) = ( N ` { Z } ) `
          hypothesis.  (Contributed by NM, 1-May-2015.) $)
       hdmap1l6j $p |- ( ph -> ( I ` <. X , F , ( Y .+ Z ) >. )
              = ( ( I ` <. X , F , Y >. ) .+b ( I ` <. X , F , Z >. ) ) ) $=
@@ -710534,7 +710524,7 @@ $)
       hdmap1l6k.y $e |- ( ph -> Y e. V ) $.
       hdmap1l6k.z $e |- ( ph -> Z e. V ) $.
       hdmap1l6k.xn $e |- ( ph -> -. X e. ( N ` { Y , Z } ) ) $.
-      $( Lemma for ~ hdmap1l6 .  Eliminate nonzero vector requirement.
+      $( Lemmma for ~ hdmap1l6 .  Eliminate nonzero vector requirement.
          (Contributed by NM, 1-May-2015.) $)
       hdmap1l6k $p |- ( ph -> ( I ` <. X , F , ( Y .+ Z ) >. )
              = ( ( I ` <. X , F , Y >. ) .+b ( I ` <. X , F , Z >. ) ) ) $=
@@ -712872,7 +712862,7 @@ $)
         dimension (for the existence of ` w ` ) that we already have
         available anyway.  (Alternately, we could
         have used the ` E ` of ~ hdmapevec2 for ` w ` and followed Baer's proof
-        directly, which would require one fewer dimension.)
+        directly, which would require one less dimension.)
         TODO: not clear this is possible; it seems we need existence of
         a square-root type factor. $)
 $(
@@ -719950,7 +719940,7 @@ $)
     ( x < y -> ( f ` x ) < ( f ` y ) ) ) } $.
     sticksstones3.5 $e |- F = ( z e. A |-> ran z ) $.
     $( The range function on strictly monotone functions with finite domain and
-       codomain is a surjective mapping onto ` K ` -elemental sets.
+       codomain is an surjective mapping onto ` K ` -elemental sets.
        (Contributed by metakunt, 28-Sep-2024.) $)
     sticksstones3 $p  |- ( ph -> F : A -onto-> B ) $=
       ( wral wa wcel clt vw vv vc wfo cfv wceq wrex wf1 sticksstones2 ccnv wfun
@@ -732617,7 +732607,7 @@ $)
   ${
     $d A a b p $.  $d N a b c d e u t p $.  $d S a b c d e u t p $.
     $( While Diophantine sets were defined to have a finite number of witness
-       variables consecutively following the observable variables, this is not
+       variables consequtively following the observable variables, this is not
        necessary; they can equivalently be taken to use any witness set
        ` ( S \ ( 1 ... N ) ) ` .  For instance, in ~ diophin we use this to
        take the two input sets to have disjoint witness sets.  (Contributed by
@@ -734932,8 +734922,8 @@ $)
       VSYAQJUVMYJFBXTUUKUUBYQWRWCWSXN $.
 
     $( First-quadrant Pell solutions are bounded away from 1.  (This particular
-       bound allows us to prove exact values for the fundamental solution
-       later.)  (Contributed by Stefan O'Rear, 18-Sep-2014.) $)
+       bound allows to prove exact values for the fundamental solution later.)
+       (Contributed by Stefan O'Rear, 18-Sep-2014.) $)
     pell1qrgap $p |- ( ( D e. ( NN \ []NN ) /\ A e. ( Pell1QR ` D ) /\ 1 < A )
         -> ( ( sqrt ` ( D + 1 ) ) + ( sqrt ` D ) ) <_ A ) $=
       ( va vb cn csquarenn wcel cfv c1 clt wbr caddc co csqrt cle cmul wceq cn0
@@ -737179,7 +737169,7 @@ $)
 
   ${
     $d A a b $.  $d N a b $.  $d J a b $.
-    $( Lemma for ~ jm2.20nn .  Truncate binomial expansion p-adically.
+    $( Lemma for ~ jm2.20nn .  Truncate binomial expansion p-adicly.
        (Contributed by Stefan O'Rear, 26-Sep-2014.) $)
     jm2.23 $p |- ( ( A e. ( ZZ>= ` 2 ) /\ N e. ZZ /\ J e. NN ) -> ( ( A rmY N )
         ^ 3 ) || ( ( A rmY ( N x. J ) ) - ( J x. ( ( ( A rmX N ) ^ ( J - 1 ) )
@@ -739637,7 +739627,7 @@ $)
 
   ${
     pwslnmlem0.y $e |- Y = ( W ^s (/) ) $.
-    $( Zeroth powers are Noetherian.  (Contributed by Stefan O'Rear,
+    $( Zeroeth powers are Noetherian.  (Contributed by Stefan O'Rear,
        24-Jan-2015.) $)
     pwslnmlem0 $p |- ( W e. LMod -> Y e. LNoeM ) $=
       ( clmod wcel cbs cfv cfn clnm cvv 0ex pwslmod mpan2 cmap wceq eqid pwsbas
@@ -739730,7 +739720,7 @@ $)
     unxpwdom3.ni $e |- ( ph -> -. D ~<_ A ) $.
     $( Weaker version of ~ unxpwdom where a function is required only to be
        cancellative, not an injection. ` D ` and ` B ` are to be thought of as
-       "large" "horizontal" sets, the others as "small".  Because the operator
+       "large" "horizonal" sets, the others as "small".  Because the operator
        is row-wise injective, but the whole row cannot inject into ` A ` , each
        row must hit an element of ` B ` ; by column injectivity, each row can
        be identified in at least one way by the ` B ` element that it hits and
@@ -741432,7 +741422,7 @@ $)
       KVLVJVM $.
 
     mendmulr.q $e |- .x. = ( .r ` A ) $.
-    $( A specific multiplication in the module endomorphism algebra.
+    $( A specific multiplication in the module endormoprhism algebra.
        (Contributed by Stefan O'Rear, 3-Sep-2015.) $)
     mendmulr $p |- ( ( X e. B /\ Y e. B ) -> ( X .x. Y ) = ( X o. Y ) ) $=
       ( vx vy wcel ccom cvv co wceq coexg cv coeq1 coeq2 cmulr cfv mendmulrfval
@@ -742152,7 +742142,7 @@ $)
      segment which "fixes" 0 $)
   $( Initial segments of the CLR are homeomorph to [0,1) $)
   $( CLR is connected $)
-  $( Initial segments of the OLR are homeomorphic to (0,1), thus RR $)
+  $( Intial segments of the OLR are homeomorph to (0,1), thus RR $)
   $( OLR is connected $)
   $( Every Lindelof subset of OLR is contained in a homeomorph of RR $)
   $( Define LL $)
@@ -743040,7 +743030,7 @@ $)
   $( A set is called an ordinal iff it is transitive and every element is
      transitive.  See ~ elon2 . $)
 
-  $( Every element of an ordinal is an ordinal.  Lemma 1.3 of [Schloeder] p. 1.
+  $( Every element of a ordinal is an ordinal.  Lemma 1.3 of [Schloeder] p. 1.
      Based on ~ onelon and ~ eloni .  (Contributed by RP, 15-Jan-2025.) $)
   onelord $p |- ( ( A e. On /\ B e. A ) -> Ord B ) $=
     ( con0 wcel wa word onelon eloni syl ) ACDBADEBCDBFABGBHI $.
@@ -743609,7 +743599,7 @@ $)
     pm5.32i 3bitr4i omword2 sylbi ) ACDZBCDZAEFZGZUCUBHZEADZHZBABIJKUBUCHZUDHUF
     UDHUEUHUIUFUDUBUCLMUBUCUDNUFUGUDUBUGUDOUCAPQRSBATUA $.
 
-  $( The nonzero product with a limit ordinal on the right is a limit ordinal.
+  $( The nonzero product with an limit ordinal on the right is a limit ordinal.
      Lemma 3.13 of [Schloeder] p. 9.  (Contributed by RP, 29-Jan-2025.) $)
   omlim2 $p |- ( ( ( A e. On /\ A =/= (/) ) /\ ( Lim B /\ B e. V ) ) ->
                        Lim ( A .o B ) ) $=
@@ -744536,7 +744526,7 @@ $)
       sylanbrc ) DFLEGLMFNOGNOMMDEHPZFGQPZLUFRDRERSZTUGUHUFUAABCDEFGHIJKUBABCDE
       FGHIJKUCUGUHUFUDUE $.
 
-    $( The concatenation with the empty series leaves the series unchanged.
+    $( The concatentation with the empty series leaves the series unchanged.
        (Contributed by RP, 25-Feb-2025.) $)
     tfsconcatb0 $p |- ( ( ( A Fn C /\ B Fn D ) /\ ( C e. On /\ D e. On ) ) ->
                         ( B = (/) <-> ( A .+ B ) = A ) ) $=
@@ -744565,7 +744555,7 @@ $)
       UWOYJYIUVTUWOUWBFXMRWNTYHUWNFPZYKYFUWPYGFDUOWNWNXNYLFUVEDMXFYKYIYHUWGTYLO
       EXGXOXPXQUVFUUGDXRXSYAYBUQUUGDYCVRYLUUJUUHDABCDEFGHIJKYDUPYE $.
 
-    $( The concatenation with the empty series leaves the series unchanged.
+    $( The concatentation with the empty series leaves the series unchanged.
        (Contributed by RP, 28-Feb-2025.) $)
     tfsconcat0i $p |- ( ( ( A Fn C /\ B Fn D ) /\ ( C e. On /\ D e. On ) ) ->
                     ( A = (/) -> ( A .+ B ) = B ) ) $=
@@ -744589,7 +744579,7 @@ $)
       FUULUUMYKXFUULUUEXFUULUUEGXMXTEWOWLWMXMXTEWNWPUPWQWQWRTXGYLEPZXJXLXFUVCXE
       XFEUKUVCGEULABEWSTWHUQWTXAEXDVEWLXKYIYGEABCDEFGHIJKXBUOXC $.
 
-    $( The concatenation with the empty series leaves the finite series
+    $( The concatentation with the empty series leaves the finite series
        unchanged.  (Contributed by RP, 1-Mar-2025.) $)
     tfsconcat0b $p |- ( ( ( A Fn C /\ B Fn D ) /\ ( C e. On /\ D e. _om ) ) ->
                         ( A = (/) <-> ( A .+ B ) = B ) ) $=
@@ -744609,7 +744599,7 @@ $)
       IJKWJRWKXCXRGPXBXGGEWLVLWMXDXIYBSZXGXBYQXCXBXIDUFZOPZYBXBDWNXIYSSFDWODWPR
       XBYRFOFDWLWQWRTTWSWTXA $.
 
-    $( The concatenation of two empty series results in an empty series.
+    $( The concatentation of two empty series results in an empty series.
        (Contributed by RP, 25-Feb-2025.) $)
     tfsconcat00 $p |- ( ( ( A Fn C /\ B Fn D ) /\ ( C e. On /\ D e. On ) ) ->
                         ( ( A = (/) /\ B = (/) ) <-> ( A .+ B ) = (/) ) ) $=
@@ -744878,7 +744868,7 @@ $)
 
   ${
     $d A a $.  $d F a $.  $d G a $.  $d V a $.
-    $( Component-wise addition of natural number-yielding functions commutes.
+    $( Component-wise addition of natural numnber-yielding functions commutes.
        (Contributed by RP, 5-Jan-2025.) $)
     ofoacom $p |- ( ( A e. V /\ ( F e. ( _om ^m A ) /\ G e. ( _om ^m A ) ) ) ->
                     ( F oF +o G ) = ( G oF +o F ) ) $=
@@ -745478,7 +745468,7 @@ $)
       $( When ` A ` is the sum of a limit ordinal (or zero) and a natural
          number and ` B ` is the sum of a larger limit ordinal and a smaller
          natural number, every natural sum of ` A ` with a natural number is
-         less than ` B ` .  (Contributed by RP, 14-Feb-2025.) $)
+         less that ` B ` .  (Contributed by RP, 14-Feb-2025.) $)
       naddwordnexlem3 $p |- ( ph -> A. x e. _om ( A +no x ) e. B ) $=
         ( co wcel com coa con0 wceq cv cnadd wa comu omelon onelon syl2anc omcl
         sylancr nnon syl oacl eqeltrd naddonnn sylan wss naddwordnexlem0 simprd
@@ -745670,7 +745660,7 @@ $)
   ${
     fpwfvss.f $e |- F : C --> ~P B $.
     $( Functions into a powerset always have values which are subsets.  This is
-       dependent on our convention when the argument is not part of the domain.
+       dependant on our convention when the argument is not part of the domain.
        (Contributed by RP, 13-Sep-2024.) $)
     fpwfvss $p |- ( F ` A ) C_ B $=
       ( wcel cfv wss cpw ffvelcdmi elpwid wn cdm wceq fdmi eleq2i ndmfv sylnbir
@@ -746556,7 +746546,7 @@ $)
     ABUEDUIFONULVEUSVJUGVBUKVDUFVAUDCDPQUJVCUHEDPQRUOVGURVIUNVFUMCFPQUQVHUPEFPQ
     RRN $.
 
-  $( Consequence of implication.  (Contributed by RP, 17-Apr-2020.) $)
+  $( Consequnce of implication.  (Contributed by RP, 17-Apr-2020.) $)
   ifpimim $p |- ( if- ( ph , ( ps -> ch ) , ( th -> ta ) )
                     -> ( if- ( ph , ps , th ) -> if- ( ph , ch , ta ) ) ) $=
     ( wn wi wo wa wif pm2.521 orim1i adantr id orci a1i jca simpr wb pm4.81
@@ -749048,7 +749038,7 @@ $)
     fvmptiunrelexplb0d.n $e |- ( ph -> N e. _V ) $.
     fvmptiunrelexplb0d.0 $e |- ( ph -> 0 e. N ) $.
     $( If the indexed union ranges over the zeroth power of the relation, then
-       a restriction of the identity relation is a subset of the application of
+       a restriction of the identity relation is a subset of the appliction of
        the function to the relation.  (Contributed by RP, 22-Jul-2020.) $)
     fvmptiunrelexplb0d $p |- ( ph -> ( _I |` ( dom R u. ran R ) )
                                      C_ ( C ` R ) ) $=
@@ -749067,7 +749057,7 @@ $)
     fvmptiunrelexplb0da.rel $e |- ( ph -> Rel R ) $.
     fvmptiunrelexplb0da.0 $e |- ( ph -> 0 e. N ) $.
     $( If the indexed union ranges over the zeroth power of the relation, then
-       a restriction of the identity relation is a subset of the application of
+       a restriction of the identity relation is a subset of the appliction of
        the function to the relation.  (Contributed by RP, 22-Jul-2020.) $)
     fvmptiunrelexplb0da $p |- ( ph -> ( _I |` U. U. R ) C_ ( C ` R ) ) $=
       ( cid cuni cres cdm crn cun cfv wrel wceq syl reseq2d fvmptiunrelexplb0d
@@ -749082,7 +749072,7 @@ $)
     fvmptiunrelexplb1d.n $e |- ( ph -> N e. _V ) $.
     fvmptiunrelexplb1d.1 $e |- ( ph -> 1 e. N ) $.
     $( If the indexed union ranges over the first power of the relation, then
-       the relation is a subset of the application of the function to the
+       the relation is a subset of the appliction of the function to the
        relation.  (Contributed by RP, 22-Jul-2020.) $)
     fvmptiunrelexplb1d $p |- ( ph -> R C_ ( C ` R ) ) $=
       ( c1 crelexp co cv ciun cfv wcel wss oveq2 cvv ssiun2s syl relexp1d oveq1
@@ -749766,8 +749756,8 @@ $)
       $d x y z C $.  $d i j n x y z M $.  $d i j x y z N $.
       $d i j n x y z R $.  $d r R $.  $d i j n x y z V $.
       $( The indexed union of relation exponentiation over upper integers is a
-         transitive relation.  Generalized from ~ rtrclreclem3 .  (Contributed
-         by RP, 4-Jun-2020.) $)
+         transive relation.  Generalized from ~ rtrclreclem3 .  (Contributed by
+         RP, 4-Jun-2020.) $)
       iunrelexpuztr $p |- ( ( R e. V /\ N = ( ZZ>= ` M ) /\ M e. NN0 )
                              -> ( ( C ` R ) o. ( C ` R ) ) C_ ( C ` R ) ) $=
         ( vx vy vi vz vj wcel cv crelexp wbr wrex wa cvv cuz cfv wceq cn0 co wi
@@ -750396,7 +750386,7 @@ $)
     frege91d.ac $e |- ( ph -> A R B ) $.
     $( If ` B ` follows ` A ` in ` R ` then ` B ` follows ` A ` in the
        transitive closure of ` R ` .  Similar to Proposition 91 of [Frege1879]
-       p. 68.  Compare with ~ frege91 .  (Contributed by RP, 15-Jul-2020.) $)
+       p. 68.  Comparw with ~ frege91 .  (Contributed by RP, 15-Jul-2020.) $)
     frege91d $p |- ( ph -> A ( t+ ` R ) B ) $=
       ( wbr ctcl cfv cvv wcel wss trclfvlb syl ssbrd mpd ) ABCDGBCDHIZGFADQBCAD
       JKDQLEDJMNOP $.
@@ -750591,7 +750581,7 @@ $)
        follows ` B ` or ` B ` follows ` A ` in the transitive closure of
        ` F ` , the successor of ` A ` is either ` B ` or it follows ` B ` or it
        comes before ` B ` in the transitive closure of ` F ` .  Similar to
-       Proposition 129 of [Frege1879] p. 83.  Compare with ~ frege129 .
+       Proposition 129 of [Frege1879] p. 83.  Comparw with ~ frege129 .
        (Contributed by RP, 16-Jul-2020.) $)
     frege129d $p |- ( ph -> ( B ( t+ ` F ) C \/ B = C \/ C ( t+ ` F ) B ) ) $=
       ( cfv wbr wceq w3o wa cvv wcel adantr simpr ex ctcl frege126d eqcom sylib
@@ -750747,7 +750737,7 @@ $(
   problems; this leads to ` A. A ` g( ` A ` ) being translated as
   ` A. a a e. G ` and so forth.
 
-  Under this interpretation the text of section 11 gives us ~ sp (or ~ simpl
+  Under this interpreation the text of section 11 gives us ~ sp (or ~ simpl
   and ~ simpr and ~ anifp in the propositional case) and statements similar
   to ~ cbvalivw , ~ ax-gen , ~ alrimiv , and ~ alrimdv .  These last four
   introduce a generality and have no useful definition in terms of
@@ -750868,24 +750858,24 @@ $)
       DCUSUTVARTR $.
   $}
 
-  $( Equality law for relations being hereditary over a class.  (Contributed by
+  $( Equality law for relations being herditary over a class.  (Contributed by
      RP, 27-Mar-2020.) $)
   heeq12 $p |- ( ( R = S /\ A = B )
                  -> ( R hereditary A <-> S hereditary B ) ) $=
     ( wceq wa cima wss whe simpl simpr imaeq12d sseq12d df-he 3bitr4g ) CDEZABE
     ZFZCAGZAHDBGZBHACIBDIRSTABRCDABPQJPQKZLUAMACNBDNO $.
 
-  $( Equality law for relations being hereditary over a class.  (Contributed by
+  $( Equality law for relations being herditary over a class.  (Contributed by
      RP, 27-Mar-2020.) $)
   heeq1 $p |- ( R = S -> ( R hereditary A <-> S hereditary A ) ) $=
     ( wceq whe wb eqid heeq12 mpan2 ) BCDAADABEACEFAGAABCHI $.
 
-  $( Equality law for relations being hereditary over a class.  (Contributed by
+  $( Equality law for relations being herditary over a class.  (Contributed by
      RP, 27-Mar-2020.) $)
   heeq2 $p |- ( A = B -> ( R hereditary A <-> R hereditary B ) ) $=
     ( wceq whe wb eqid heeq12 mpan ) CCDABDACEBCEFCGABCCHI $.
 
-  $( Distribute proper substitution through hereditary relation.  (Contributed
+  $( Distribute proper substitution through herditary relation.  (Contributed
      by RP, 29-Jun-2020.) $)
   sbcheg $p |- ( A e. V -> ( [. A / x ]. B hereditary C <->
     [_ A / x ]_ B hereditary [_ A / x ]_ C ) ) $=
@@ -750893,7 +750883,7 @@ $)
     a1i 3bitr4g ) BEFZCDGZDHZABIZABCJZABDJZGZUFHZDCKZABIUFUEKUAUDABUBJZUFHUHABU
     BDELUAUJUGUFUJUGMUAABDCNSOPUIUCABDCQRUFUEQT $.
 
-  $( Subclass law for relations being hereditary over a class.  (Contributed by
+  $( Subclass law for relations being herditary over a class.  (Contributed by
      RP, 27-Mar-2020.) $)
   hess $p |- ( S C_ R -> ( R hereditary A -> S hereditary A ) ) $=
     ( wss cima whe wi imass1 sstr2 syl df-he 3imtr4g ) CBDZBAEZADZCAEZADZABFACF
@@ -751521,7 +751511,7 @@ $)
     ( wb wi wif frege55cor1a frege9 ax-mp ) BAEZABEZFLACDGBCDGFZFKMFFBAHKLMIJ
     $.
 
-  $( This is the all important formula which allows us to apply Frege-style
+  $( This is the all important formula which allows to apply Frege-style
      definitions and explore their consequences.  A closed form of ~ biimpri .
      Proposition 57 of [Frege1879] p. 51.  (Contributed by RP, 24-Dec-2019.)
      (Proof modification is discouraged.) $)
@@ -752127,7 +752117,7 @@ $)
     frege74.x $e |- X e. U $.
     frege74.y $e |- Y e. V $.
     $( If ` X ` has a property ` A ` that is hereditary in the ` R ` -sequence,
-       then every result of an application of the procedure ` R ` to ` X ` has
+       then every result of a application of the procedure ` R ` to ` X ` has
        the property ` A ` .  Proposition 74 of [Frege1879] p. 60.  (Contributed
        by RP, 28-Mar-2020.)  (Revised by RP, 5-Jul-2020.)
        (Proof modification is discouraged.) $)
@@ -752811,7 +752801,7 @@ $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
   ` Fun ``' ``' R ` means the relationship content of procedure ` R ` is
-  single-valued.  The double converse allows us to simply apply this syntax in
+  single-valued.  The double converse allows to simply apply this syntax in
   place of Frege's even though the original never explicitly limited discussion
   of propositional statements which vary on two variables to relations.
 
@@ -753000,7 +752990,7 @@ $)
       ( ctcl cfv cid cun wbr wn wi ccnv wfun frege114 frege125 ax-mp ) GDAMNZOP
       ZQGDUEQRDGUFQSZSATTUAHGAQHDUEQUGSSSAFCDGKIUBABCDEFGHIJKLUCUD $.
 
-    $( Commute antecedents of ~ frege126 .  Proposition 127 of [Frege1879]
+    $( Communte antecedents of ~ frege126 .  Proposition 127 of [Frege1879]
        p. 82.  (Contributed by RP, 9-Jul-2020.)
        (Proof modification is discouraged.) $)
     frege127 $p |- ( Fun `' `' R
@@ -753074,7 +753064,7 @@ $)
     ${
       $d a b M $.  $d a b R $.
       $( If the procedure ` R ` is single-valued, then the property of
-         belonging to the ` R ` -sequence beginning with ` M ` or preceding
+         belonging to the ` R ` -sequence beginning with ` M ` or preceeding
          ` M ` in the ` R ` -sequence is hereditary in the ` R ` -sequence.
          Proposition 131 of [Frege1879] p. 85.  (Contributed by RP,
          9-Jul-2020.)  (Proof modification is discouraged.) $)
@@ -753966,7 +753956,7 @@ $(
   <TR>
     <TH> K1 <BR>
     Isotonic <BR>
-    Monotonic
+    Montonic
     </TH>
     <TD STYLE="text-align: center;">
     ` ( ( s e. ( N `` x ) /\ s C_ t ) -> t e. ( N `` x ) ) ` </TD>
@@ -754068,7 +754058,7 @@ $(
   </TABLE>
 
   <P>
-    Using these properties as axiomatic constraints on the functions,
+    Using these properties as axiomic constraints on the functions,
     certain collections of them give rise to named spaces.
   </P>
 
@@ -754980,7 +754970,7 @@ $)
         $d ph i j k s t $.
         $( If (pseudo-)interior and (pseudo-)closure functions are related by
            the duality operator then conditions equal to claiming that at least
-           one (pseudo-)neighborhood of a particular point exists hold equally.
+           one (pseudo-)neighborbood of a particular point exists hold equally.
            (Contributed by RP, 21-May-2021.) $)
         ntrclsneine0lem $p |- ( ph -> ( E. s e. ~P B X e. ( I ` s )
                                     <-> E. s e. ~P B -. X e. ( K ` s ) ) ) $=
@@ -755001,7 +754991,7 @@ $)
 
       $( If (pseudo-)interior and (pseudo-)closure functions are related by the
          duality operator then conditions equal to claiming that for every
-         point, at least one (pseudo-)neighborhood exists hold equally.
+         point, at least one (pseudo-)neighborbood exists hold equally.
          (Contributed by RP, 21-May-2021.) $)
       ntrclsneine0 $p |- ( ph -> ( A. x e. B E. s e. ~P B x e. ( I ` s )
                             <-> A. x e. B E. s e. ~P B -. x e. ( K ` s ) ) ) $=
@@ -755135,8 +755125,8 @@ $)
     ${
       $d B a b s t $.  $d B i j k s t $.  $d I a b s t $.  $d I i j k s t $.
       $d K a b $.  $d ph a b s t $.  $d ph i j k s t $.
-      $( The intersection of interiors of every pair is a subset of the
-         interior of the intersection of the pair if and only if the closure of
+      $( The intersection of interiors of a every pair is a subset of the
+         interior of the intersection of the pair if an only if the closure of
          the union of every pair is a subset of the union of closures of the
          pair.  (Contributed by RP, 19-Jun-2021.) $)
       ntrclsk3 $p |- ( ph -> ( A. s e. ~P B A. t e. ~P B
@@ -755393,7 +755383,7 @@ $)
         $d ph i j k l s $.
         $( If (pseudo-)interior and (pseudo-)neighborhood functions are related
            by the operator, ` F ` , then conditions equal to claiming that for
-           every point, at least one (pseudo-)neighborhood exists hold equally.
+           every point, at least one (pseudo-)neighborbood exists hold equally.
            (Contributed by RP, 29-May-2021.) $)
         ntrneineine0lem $p |- ( ph -> ( E. s e. ~P B X e. ( I ` s )
                                         <-> ( N ` X ) =/= (/) ) ) $=
@@ -755410,7 +755400,7 @@ $)
         $d ph i j k l s $.
         $( If (pseudo-)interior and (pseudo-)neighborhood functions are related
            by the operator, ` F ` , then conditions equal to claiming that for
-           every point, not all subsets are (pseudo-)neighborhoods hold
+           every point, at not all subsets are (pseudo-)neighborboods hold
            equally.  (Contributed by RP, 1-Jun-2021.) $)
         ntrneineine1lem $p |- ( ph -> ( E. s e. ~P B -. X e. ( I ` s )
                                         <-> ( N ` X ) =/= ~P B ) ) $=
@@ -755479,7 +755469,7 @@ $)
 
       $( If (pseudo-)interior and (pseudo-)neighborhood functions are related
          by the operator, ` F ` , then conditions equal to claiming that for
-         every point, at least one (pseudo-)neighborhood exists hold equally.
+         every point, at least one (pseudo-)neighborbood exists hold equally.
          (Contributed by RP, 29-May-2021.) $)
       ntrneineine0 $p |- ( ph -> ( A. x e. B E. s e. ~P B x e. ( I ` s )
                             <-> A. x e. B ( N ` x ) =/= (/) ) ) $=
@@ -755493,8 +755483,8 @@ $)
       $d m x $.
       $( If (pseudo-)interior and (pseudo-)neighborhood functions are related
          by the operator, ` F ` , then conditions equal to claiming that for
-         every point, not all subsets are (pseudo-)neighborhoods hold equally.
-         (Contributed by RP, 1-Jun-2021.) $)
+         every point, at not all subsets are (pseudo-)neighborboods hold
+         equally.  (Contributed by RP, 1-Jun-2021.) $)
       ntrneineine1 $p |- ( ph -> ( A. x e. B E. s e. ~P B -. x e. ( I ` s )
                             <-> A. x e. B ( N ` x ) =/= ~P B ) ) $=
         ( cv cfv wcel wn cpw wrex wne wbr adantr simpr ntrneineine1lem ralbidva
@@ -755681,7 +755671,7 @@ $)
       $( The closure of the union of any pair is a subset of the union of
          closures if and only if the union of any pair belonging to the
          convergents of a point implies at least one of the pair belongs to the
-         convergents of that point.  (Contributed by RP, 19-Jun-2021.) $)
+         the convergents of that point.  (Contributed by RP, 19-Jun-2021.) $)
       ntrneix3 $p |- ( ph -> ( A. s e. ~P B A. t e. ~P B ( I ` ( s u. t ) )
                                                  C_ ( ( I ` s ) u. ( I ` t ) )
                  <-> A. x e. B A. s e. ~P B A. t e. ~P B
@@ -756068,7 +756058,7 @@ $)
         $d M i j k l $.  $d M n o p $.  $d N i j k l m $.  $d N n o p $.
         $d S m $.  $d S o $.  $d X l m $.  $d ph i j k l $.  $d ph n o p $.
         $( A subset being an element of a neighborhood of a point is equivalent
-           to the complement of that subset not being an element of the
+           to the complement of that subset not being a element of the
            convergent of that point.  (Contributed by RP, 12-Jun-2021.) $)
         neicvgel1 $p |- ( ph -> ( S e. ( N ` X )
                                   <-> -. ( B \ S ) e. ( M ` X ) ) ) $=
@@ -756095,7 +756085,7 @@ $)
         $d M i j k l $.  $d M n o p $.  $d N i j k l m $.  $d N n o p $.
         $d S m $.  $d S o $.  $d X l m $.  $d ph i j k l $.  $d ph n o p $.
         $( The complement of a subset being an element of a neighborhood at a
-           point is equivalent to that subset not being an element of the
+           point is equivalent to that subset not being a element of the
            convergent at that point.  (Contributed by RP, 12-Jun-2021.) $)
         neicvgel2 $p |- ( ph -> ( ( B \ S ) e. ( N ` X )
                                   <-> -. S e. ( M ` X ) ) ) $=
@@ -756683,7 +756673,7 @@ $)
 
   ${
     imadisjld.1 $e |- ( ph -> ( dom A i^i B ) = (/) ) $.
-    $( Natural deduction form of one side of ~ imadisj .  (Contributed by
+    $( Natural dduction form of one side of ~ imadisj .  (Contributed by
        Stanislas Polu, 9-Mar-2020.) $)
     imadisjld $p |- ( ph -> ( A " B ) = (/) ) $=
       ( cdm cin c0 wceq cima imadisj sylibr ) ABECFGHBCIGHDBCJK $.
@@ -758047,7 +758037,7 @@ $)
         -> E. r e. m ( p e. r /\ U. r C_ n ) ) ) ) } $.
     $( The hypothesis of this theorem defines a class M of sets that we
        temporarily call "minimal universes", and which will turn out in
-       ~ grumnueq to be exactly Grothendieck universes.  Minimal universes are
+       ~ grumnueq to be exactly Grothendicek universes.  Minimal universes are
        sets which satisfy the predicate on ` y ` in ~ rr-groth , except for the
        ` x e. y ` clause.
 
@@ -762430,7 +762420,7 @@ $)
     vk15.4j.1 $e |- -. ( E. x -. ph /\ E. x ( ps /\ -. ch ) ) $.
     vk15.4j.2 $e |- ( A. x ch -> -. E. x ( th /\ ta ) ) $.
     vk15.4j.3 $e |- -. A. x ( ta -> ph ) $.
-    $( Exercise 4j of Unit 15 of "Understanding Symbolic Logic", Fifth Edition
+    $( Excercise 4j of Unit 15 of "Understanding Symbolic Logic", Fifth Edition
        (2008), by Virginia Klenk.  This proof is the minimized Hilbert-style
        axiomatic version of the Fitch-style Natural Deduction proof found on
        page 442 of Klenk and was automatically derived from that proof.
@@ -764586,7 +764576,7 @@ $)
     ee11an.2 $e |- ( ph -> ch ) $.
     ee11an.3 $e |- ( ( ps /\ ch ) -> th ) $.
     $( ~ e11an without virtual deductions. ~ syl22anc is also ~ e11an without
-       virtual deductions, except with a different order of hypotheses.
+       virtual deductions, exept with a different order of hypotheses.
        (Contributed by Alan Sare, 8-Jul-2011.)
        (Proof modification is discouraged.)  (New usage is discouraged.) $)
     ee11an $p |- ( ph -> th ) $=
@@ -764941,8 +764931,8 @@ $)
     eel00000.4 $e |- th $.
     eel00000.5 $e |- ta $.
     eel00000.6 $e |- ( ( ( ( ( ph /\ ps ) /\ ch ) /\ th ) /\ ta ) -> et ) $.
-    $( Elimination rule similar to ~ eel0000 , except with five hypothesis
-       steps.  (Contributed by Alan Sare, 17-Oct-2017.) $)
+    $( Elimination rule similar ~ eel0000 , except with five hpothesis steps.
+       (Contributed by Alan Sare, 17-Oct-2017.) $)
     eel00000 $p |- et $=
       ( wi wa exp41 mpan mp2 ) DEFJKBCDEFMMZHIABCRMGABNCDEFLOPQQ $.
   $}
@@ -769917,7 +769907,7 @@ $)
     $d x y $.
     $( The following User's Proof is a Natural Deduction Sequent Calculus
        transcription of the Fitch-style Natural Deduction proof of Unit 20
-       Exercise 3.a., which is ~ sb5 , found in the "Answers to Starred
+       Excercise 3.a., which is ~ sb5 , found in the "Answers to Starred
        Exercises" on page 457 of "Understanding Symbolic Logic", Fifth
        Edition (2008), by Virginia Klenk.  The same proof may also be
        interpreted as a Virtual Deduction Hilbert-style axiomatic proof.  It
@@ -769972,7 +769962,7 @@ $)
     vk15.4jVD.3 $e |- -. A. x ( ta -> ph ) $.
     $( The following User's Proof is a Natural Deduction Sequent Calculus
        transcription of the Fitch-style Natural Deduction proof of Unit 15
-       Exercise 4.f. found in the "Answers to Starred Exercises" on page 442
+       Excercise 4.f. found in the "Answers to Starred Exercises" on page 442
        of "Understanding Symbolic Logic", Fifth Edition (2008), by Virginia
        Klenk.  The same proof may also be interpreted to be a Virtual Deduction
        Hilbert-style axiomatic proof.  It was completed automatically by the
@@ -770266,7 +770256,7 @@ $)
     $( The following User's Proof is a Virtual Deduction proof (see ~ wvd1 )
        using conjunction-form virtual hypothesis collections.  The
        conjunction-form version of completeusersproof.cmd.  It allows the User
-       to avoid superfluous virtual hypotheses.  This proof was completed
+       to avoid superflous virtual hypotheses.  This proof was completed
        automatically by a tools program which invokes Mel L. O'Cat's
        mmj2 and Norm Megill's Metamath Proof Assistant. ~ suctrALTcf
        is ~ suctrALTcfVD without virtual deductions and was derived
@@ -772904,7 +772894,7 @@ $)
     refsum2cn.5 $e |- ( ph -> J e. ( TopOn ` X ) ) $.
     refsum2cn.6 $e |- ( ph -> F e. ( J Cn K ) ) $.
     refsum2cn.7 $e |- ( ph -> G e. ( J Cn K ) ) $.
-    $( The sum of two continuous real functions (from a common topological
+    $( The sum of two continuus real functions (from a common topological
        space) is continuous.  (Contributed by Glauco Siliprandi,
        20-Apr-2017.) $)
     refsum2cn $p |- ( ph
@@ -774839,7 +774829,7 @@ $)
     $d ph y z $.
     projf1o.1 $e |- ( ph -> A e. V ) $.
     projf1o.2 $e |- F = ( x e. B |-> <. A , x >. ) $.
-    $( A bijection from a set to a projection in a two dimensional space.
+    $( A biijection from a set to a projection in a two dimensional space.
        (Contributed by Glauco Siliprandi, 11-Oct-2020.) $)
     projf1o $p |- ( ph -> F : B -1-1-onto-> ( { A } X. B ) ) $=
       ( vy vz cv wceq wral cop wcel wa adantr simpr cvv sylanbrc csn cxp wf1 wf
@@ -775081,7 +775071,7 @@ $)
     difmapsn.a $e |- ( ph -> A e. V ) $.
     difmapsn.b $e |- ( ph -> B e. W ) $.
     difmapsn.v $e |- ( ph -> C e. Z ) $.
-    $( Difference of two sets exponentiated to a singleton.  (Contributed by
+    $( Difference of two sets exponentiatiated to a singleton.  (Contributed by
        Glauco Siliprandi, 3-Mar-2021.) $)
     difmapsn $p |- ( ph -> ( ( A ^m { C } ) \ ( B ^m { C } ) ) = ( ( A \ B ) ^m
        { C } ) ) $=
@@ -775974,7 +775964,7 @@ $)
     ) ACDZBCDZABEZFZABGHZPQTCDRABIJSABPQRKPQRLPQRMNO $.
 
   $( Relationship between membership in a half-open finite set of sequential
-     integers and membership in a finite set of sequential integers.
+     integers and membership in a finite set of sequential intergers.
      (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
   elfzfzo $p |- ( A e. ( M ..^ N ) <-> ( A e. ( M ... N ) /\ A < N ) ) $=
     ( cfzo co wcel cfz clt wbr wa elfzofz elfzolt2 jca cuz cfv cz elfzuz adantr
@@ -777216,7 +777206,7 @@ $)
   ${
     ltdivgt1.1 $e |- ( ph -> A e. RR+ ) $.
     ltdivgt1.2 $e |- ( ph -> B e. RR+ ) $.
-    $( Division by a number greater than 1.  (Contributed by Glauco Siliprandi,
+    $( Divsion by a number greater than 1.  (Contributed by Glauco Siliprandi,
        21-Nov-2020.) $)
     ltdivgt1 $p |- ( ph -> ( 1 < B <-> ( A / B ) < A ) ) $=
       ( c1 clt wbr cdiv co crp wcel 1rp a1i ltdiv2d rpcnd div1d breq2d bitrd )
@@ -777959,8 +777949,8 @@ $)
       DTUGFUET $.
   $}
 
-  $( An extended real is real iff it is not an infinity.  (Contributed by
-     Glauco Siliprandi, 23-Oct-2021.) $)
+  $( An extended real is real iff it is not an infinty.  (Contributed by Glauco
+     Siliprandi, 23-Oct-2021.) $)
   xrre4 $p |- ( A e. RR* -> ( A e. RR <-> ( A =/= -oo /\ A =/= +oo ) ) ) $=
     ( cxr wcel cr cmnf wne wa renemnf adantl renepnf jca ex simpl simprl simprr
     cpnf xrred impbid ) ABCZADCZAEFZAPFZGZSTUCSTGUAUBTUASAHITUBSAJIKLSUCTSUCGAS
@@ -779423,7 +779413,7 @@ $)
     UDUEALDUFAMNUEUDBLDUFBMOUDUEUHCDUFUDUEQUGABRPSUDUEUFAUHEFABUATUDUEUFUHBEFAB
     UBTUC $.
 
-  $( If the open interval is removed from the closed interval, only the bounds
+  $( If the open inverval is removed from the closed interval, only the bounds
      are left.  (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
   iccdifioo $p |- ( ( A e. RR* /\ B e. RR* /\ A <_ B ) -> ( ( A [,] B ) \ ( A
      (,) B ) ) = { A , B } ) $=
@@ -779587,7 +779577,7 @@ $)
 
   ${
     $d A x $.  $d B x $.  $d C x $.
-    $( Intersection of two adjacent closed intervals is a singleton.
+    $( Intersection of two adiacent closed intervals is a singleton.
        (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
     iccintsng $p |- ( ( ( A e. RR* /\ B e. RR* /\ C e. RR* ) /\ ( A <_ B /\ B
        <_ C ) ) -> ( ( A [,] B ) i^i ( B [,] C ) ) = { B } ) $=
@@ -779606,7 +779596,7 @@ $)
 
   ${
     $d A x $.  $d B x $.
-    $( Left-closed right-open interval gotten by a closed interval taking away
+    $( Left-closed right-open interval gotten by a closed iterval taking away
        the upper bound.  (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
     icoiccdif $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A [,) B ) = ( ( A [,] B ) \
        { B } ) ) $=
@@ -782729,7 +782719,7 @@ $)
     lptioo2cn.3 $e |- ( ph -> B e. RR ) $.
     lptioo2cn.4 $e |- ( ph -> A < B ) $.
     $( The upper bound of an open interval is a limit point of the interval,
-       with respect to the standard topology on complex numbers.  (Contributed
+       wirth respect to the standard topology on complex numbers.  (Contributed
        by Glauco Siliprandi, 11-Dec-2019.) $)
     lptioo2cn $p |- ( ph -> B e. ( ( limPt ` J ) ` ( A (,) B ) ) ) $=
       ( cioo co ccnfld ctopn cfv clp wcel cr cin eqid wss eleqtrdi crn ctg ctop
@@ -782746,7 +782736,7 @@ $)
     lptioo1cn.3 $e |- ( ph -> A e. RR ) $.
     lptioo1cn.4 $e |- ( ph -> A < B ) $.
     $( The lower bound of an open interval is a limit point of the interval,
-       with respect to the standard topology on complex numbers.  (Contributed
+       wirth respect to the standard topology on complex numbers.  (Contributed
        by Glauco Siliprandi, 11-Dec-2019.) $)
     lptioo1cn $p |- ( ph -> A e. ( ( limPt ` J ) ` ( A (,) B ) ) ) $=
       ( cioo co ccnfld ctopn cfv clp wcel cr cin eqid wss a1i crn ctg ctop cuni
@@ -784730,7 +784720,7 @@ $)
     limsupre2lem.2 $e |- ( ph -> A C_ RR ) $.
     limsupre2lem.3 $e |- ( ph -> F : A --> RR* ) $.
     $( Given a function on the extended reals, its supremum limit is real if
-       and only if two conditions hold: 1. there is a real number that is
+       and only if two condition holds: 1. there is a real number that is
        smaller than the function, at some point, in any upper part of the
        reals; 2. there is a real number that is eventually larger than the
        function.  (Contributed by Glauco Siliprandi, 23-Oct-2021.) $)
@@ -784760,7 +784750,7 @@ $)
     limsupre2.2 $e |- ( ph -> A C_ RR ) $.
     limsupre2.3 $e |- ( ph -> F : A --> RR* ) $.
     $( Given a function on the extended reals, its supremum limit is real if
-       and only if two conditions hold: 1. there is a real number that is
+       and only if two condition holds: 1. there is a real number that is
        smaller than the function, at some point, in any upper part of the
        reals; 2. there is a real number that is eventually larger than the
        function.  (Contributed by Glauco Siliprandi, 23-Oct-2021.) $)
@@ -784886,7 +784876,7 @@ $)
     limsupre2mpt.a $e |- ( ph -> A C_ RR ) $.
     limsupre2mpt.b $e |- ( ( ph /\ x e. A ) -> B e. RR* ) $.
     $( Given a function on the extended reals, its supremum limit is real if
-       and only if two conditions hold: 1. there is a real number that is
+       and only if two condition holds: 1. there is a real number that is
        smaller than the function, at some point, in any upper part of the
        reals; 2. there is a real number that is eventually larger than the
        function.  (Contributed by Glauco Siliprandi, 23-Oct-2021.) $)
@@ -784939,7 +784929,7 @@ $)
     limsupre3lem.2 $e |- ( ph -> A C_ RR ) $.
     limsupre3lem.3 $e |- ( ph -> F : A --> RR* ) $.
     $( Given a function on the extended reals, its supremum limit is real if
-       and only if two conditions hold: 1. there is a real number that is less
+       and only if two condition holds: 1. there is a real number that is less
        than or equal to the function, at some point, in any upper part of the
        reals; 2. there is a real number that is eventually greater than or
        equal to the function.  (Contributed by Glauco Siliprandi,
@@ -784978,7 +784968,7 @@ $)
     limsupre3.2 $e |- ( ph -> A C_ RR ) $.
     limsupre3.3 $e |- ( ph -> F : A --> RR* ) $.
     $( Given a function on the extended reals, its supremum limit is real if
-       and only if two conditions hold: 1. there is a real number that is less
+       and only if two condition holds: 1. there is a real number that is less
        than or equal to the function, at some point, in any upper part of the
        reals; 2. there is a real number that is eventually greater than or
        equal to the function.  (Contributed by Glauco Siliprandi,
@@ -785007,7 +784997,7 @@ $)
     limsupre3mpt.a $e |- ( ph -> A C_ RR ) $.
     limsupre3mpt.b $e |- ( ( ph /\ x e. A ) -> B e. RR* ) $.
     $( Given a function on the extended reals, its supremum limit is real if
-       and only if two conditions hold: 1. there is a real number that is less
+       and only if two condition holds: 1. there is a real number that is less
        than or equal to the function, at some point, in any upper part of the
        reals; 2. there is a real number that is eventually greater than or
        equal to the function.  (Contributed by Glauco Siliprandi,
@@ -785036,7 +785026,7 @@ $)
     limsupre3uzlem.3 $e |- Z = ( ZZ>= ` M ) $.
     limsupre3uzlem.4 $e |- ( ph -> F : Z --> RR* ) $.
     $( Given a function on the extended reals, its supremum limit is real if
-       and only if two conditions hold: 1. there is a real number that is less
+       and only if two condition holds: 1. there is a real number that is less
        than or equal to the function, infinitely often; 2. there is a real
        number that is eventually greater than or equal to the function.
        (Contributed by Glauco Siliprandi, 23-Oct-2021.) $)
@@ -785086,7 +785076,7 @@ $)
     limsupre3uz.3 $e |- Z = ( ZZ>= ` M ) $.
     limsupre3uz.4 $e |- ( ph -> F : Z --> RR* ) $.
     $( Given a function on the extended reals, its supremum limit is real if
-       and only if two conditions hold: 1. there is a real number that is less
+       and only if two condition holds: 1. there is a real number that is less
        than or equal to the function, infinitely often; 2. there is a real
        number that is eventually greater than or equal to the function.
        (Contributed by Glauco Siliprandi, 23-Oct-2021.) $)
@@ -785113,7 +785103,7 @@ $)
     limsupreuz.3 $e |- Z = ( ZZ>= ` M ) $.
     limsupreuz.4 $e |- ( ph -> F : Z --> RR ) $.
     $( Given a function on the reals, its supremum limit is real if and only if
-       two conditions hold: 1. there is a real number that is less than or
+       two condition holds: 1. there is a real number that is less than or
        equal to the function, infinitely often; 2. there is a real number that
        is greater than or equal to the function.  (Contributed by Glauco
        Siliprandi, 23-Oct-2021.) $)
@@ -785189,7 +785179,7 @@ $)
     limsupreuzmpt.z $e |- Z = ( ZZ>= ` M ) $.
     limsupreuzmpt.b $e |- ( ( ph /\ j e. Z ) -> B e. RR ) $.
     $( Given a function on the reals, defined on a set of upper integers, its
-       supremum limit is real if and only if two conditions hold: 1. there is a
+       supremum limit is real if and only if two condition holds: 1. there is a
        real number that is less than or equal to the function, infinitely
        often; 2. there is a real number that is greater than or equal to the
        function.  (Contributed by Glauco Siliprandi, 23-Oct-2021.) $)
@@ -786040,7 +786030,7 @@ $)
     limsupgt.r $e |- ( ph -> ( limsup ` F ) e. RR ) $.
     limsupgt.x $e |- ( ph -> X e. RR+ ) $.
     $( Given a sequence of real numbers, there exists an upper part of the
-       sequence that's approximated from below by the superior limit.
+       sequence that's appxoximated from below by the superior limit.
        (Contributed by Glauco Siliprandi, 2-Jan-2022.) $)
     limsupgt $p |- ( ph -> E. j e. Z A. k e. ( ZZ>= ` j ) ( ( F ` k ) - X ) < (
        limsup ` F ) ) $=
@@ -786456,7 +786446,7 @@ $)
     liminfreuzlem.3 $e |- Z = ( ZZ>= ` M ) $.
     liminfreuzlem.4 $e |- ( ph -> F : Z --> RR ) $.
     $( Given a function on the reals, its inferior limit is real if and only if
-       two conditions hold: 1. there is a real number that is greater than or
+       two condition holds: 1. there is a real number that is greater than or
        equal to the function, infinitely often; 2. there is a real number that
        is smaller than or equal to the function.  (Contributed by Glauco
        Siliprandi, 2-Jan-2022.) $)
@@ -786491,7 +786481,7 @@ $)
     liminfreuz.3 $e |- Z = ( ZZ>= ` M ) $.
     liminfreuz.4 $e |- ( ph -> F : Z --> RR ) $.
     $( Given a function on the reals, its inferior limit is real if and only if
-       two conditions hold: 1. there is a real number that is greater than or
+       two condition holds: 1. there is a real number that is greater than or
        equal to the function, infinitely often; 2. there is a real number that
        is smaller than or equal to the function.  (Contributed by Glauco
        Siliprandi, 2-Jan-2022.) $)
@@ -787871,7 +787861,7 @@ $)
     cncfmptssg.6 $e |- ( ( ph /\ x e. C ) -> E e. D ) $.
     $( A continuous complex function restricted to a subset is continuous,
        using maps-to notation.  This theorem generalizes ~ cncfmptss because it
-       allows us to establish a subset for the codomain also.  (Contributed by
+       allows to establish a subset for the codomain also.  (Contributed by
        Glauco Siliprandi, 11-Dec-2019.) $)
     cncfmptssg $p |- ( ph -> ( x e. C |-> E ) e. ( C -cn-> D ) ) $=
       ( cmpt ccncf co wcel cc wss syl2anc wf fmpttd wb cncfrss2 syl sstrd cv wa
@@ -791742,7 +791732,7 @@ $)
     itgvol0.1 $e |- ( ph -> A C_ RR ) $.
     itgvol0.2 $e |- ( ph -> ( vol* ` A ) = 0 ) $.
     itgvol0.3 $e |- ( ( ph /\ x e. A ) -> B e. CC ) $.
-    $( If the domain is negligible, the function is integrable and the integral
+    $( If the domani is negligible, the function is integrable and the integral
        is 0.  (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
     itgvol0 $p |- ( ph -> ( ( x e. A |-> B ) e. L^1 /\ S. A B _d x = 0 ) ) $=
       ( cmpt cibl wcel citg cc0 wceq c0 mpt0 iblempty eqeltri wss covol cfv 0ss
@@ -797638,8 +797628,8 @@ $)
       1 ) ) x. ( ( 1 / ( ( 2 x. N ) + 1 ) ) ^ ( 2 x. k ) ) ) ) $.
     stirlinglem10.5 $e |- L = ( k e. NN |-> ( ( 1 / ( ( ( 2 x. N )
                                        + 1 ) ^ 2 ) ) ^ k ) ) $.
-    $( A bound for any B(N)-B(N + 1) that will allow us to find a lower bound
-       for the whole ` B ` sequence.  (Contributed by Glauco Siliprandi,
+    $( A bound for any B(N)-B(N + 1) that will allow to find a lower bound for
+       the whole ` B ` sequence.  (Contributed by Glauco Siliprandi,
        29-Jun-2017.) $)
     stirlinglem10 $p |- ( N e. NN -> ( ( B ` N ) - ( B ` ( N + 1 ) ) ) <_
       ( ( 1 / 4 ) x. ( 1 / ( N x. ( N + 1 ) ) ) ) ) $=
@@ -798604,7 +798594,7 @@ $)
     dirkercncflem1.b $e |- B = ( Y + _pi ) $.
     dirkercncflem1.y $e |- ( ph -> Y e. RR ) $.
     dirkercncflem1.ymod0 $e |- ( ph -> ( Y mod ( 2 x. _pi ) ) = 0 ) $.
-    $( If ` Y ` is a multiple of ` _pi ` then it belongs to an open interval
+    $( If ` Y ` is a multiple of ` _pi ` then it belongs to an open inerval
        ` ( A (,) B ) ` such that for any other point ` y ` in the interval, cos
        y/2 and sin y/2 are nonzero.  Such an interval is needed to apply De
        L'Hopital theorem.  (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
@@ -798951,7 +798941,7 @@ $)
     dirkercncflem4.b $e |- B = ( A + 1 ) $.
     dirkercncflem4.c $e |- C = ( A x. ( 2 x. _pi ) ) $.
     dirkercncflem4.e $e |- E = ( B x. ( 2 x. _pi ) ) $.
-    $( The Dirichlet kernel is continuous at points that are not multiples of 2
+    $( The Dirichlet kernel is continuos at points that are not multiple of 2
        &pi; .  This is the easier condition, for the proof of the continuity of
        the Dirichlet kernel.  (Contributed by Glauco Siliprandi,
        11-Dec-2019.) $)
@@ -810058,7 +810048,7 @@ $)
        ) x. ( sin ` ( n x. x ) ) ) _d x / _pi ) ) $.
     fourierdlem115.s $e |- S = ( k e. NN |-> ( ( ( A ` k ) x. ( cos ` ( k x. X
        ) ) ) + ( ( B ` k ) x. ( sin ` ( k x. X ) ) ) ) ) $.
-    $( Fourier series convergence, for piecewise smooth functions.
+    $( Fourier serier convergence, for piecewise smooth functions.
        (Contributed by Glauco Siliprandi, 11-Dec-2019.) $)
     fourierdlem115 $p |- ( ph -> ( seq 1 ( + , S ) ~~> ( ( ( L + R ) / 2 ) - (
        ( A ` 0 ) / 2 ) ) /\ ( ( ( A ` 0 ) / 2 ) + sum_ n e. NN ( ( ( A ` n ) x.
@@ -812615,7 +812605,7 @@ $)
        ) | sum_ j e. ( 0 ... M ) ( c ` j ) = n } ) $.
     $( ` P ` divides the I -th derivative of ` F ` applied to ` J ` . if it is
        not the case that ` I = P - 1 ` and ` J = 0 ` .  This is case 1 and the
-       second part of case 2 proven in [Juillerat] p. 13 .  (Contributed by
+       second part of case 2 proven in in [Juillerat] p. 13 .  (Contributed by
        Glauco Siliprandi, 5-Apr-2020.) $)
     etransclem38 $p |- ( ph -> P || ( ( ( ( RR Dn F ) ` I ) ` J ) / ( ! ` ( P -
        1 ) ) ) ) $=
@@ -812703,7 +812693,7 @@ $)
     etransclem41.f $e |- F = ( x e. RR |-> ( ( x ^ ( P - 1 ) ) x. prod_ j e. (
        1 ... M ) ( ( x - j ) ^ P ) ) ) $.
     $( ` P ` does not divide the P-1 -th derivative of ` F ` applied to ` 0 ` .
-       This is the first part of case 2: proven in [Juillerat] p. 13 .
+       This is the first part of case 2: proven in in [Juillerat] p. 13 .
        (Contributed by Glauco Siliprandi, 5-Apr-2020.) $)
     etransclem41 $p |- ( ph -> -. P || ( ( ( ( RR Dn F ) ` ( P - 1 ) ) ` 0 ) /
        ( ! ` ( P - 1 ) ) ) ) $=
@@ -813591,8 +813581,8 @@ $)
     ioorrnopnlem.v $e |- V = ( F ( ball ` D ) E ) $.
     ioorrnopnlem.d $e |- D = ( f e. ( RR ^m X ) , g e. ( RR ^m X ) |-> ( sqrt `
        sum_ k e. X ( ( ( f ` k ) - ( g ` k ) ) ^ 2 ) ) ) $.
-    $( A point in an indexed product of open intervals is contained in an open
-       ball that is contained in the indexed product of open intervals.
+    $( The a point in an indexed product of open intervals is contained in an
+       open ball that is contained in the indexed product of open intervals.
        (Contributed by Glauco Siliprandi, 8-Apr-2021.) $)
     ioorrnopnlem $p |- ( ph -> E. v e. ( TopOpen ` ( RR^ ` X ) ) ( F e. v /\ v
        C_ X_ i e. X ( ( A ` i ) (,) ( B ` i ) ) ) ) $=
@@ -815586,7 +815576,7 @@ $)
     sge0resrn.r $e |- ( ph -> R We A ) $.
     $( The sum of nonnegative extended reals restricted to the range of a
        function is less than or equal to the sum of the composition of the two
-       functions (well-order hypothesis allows us to avoid using the axiom of
+       functions (well-order hypothesis allows to avoid using the axiom of
        choice).  (Contributed by Glauco Siliprandi, 17-Aug-2020.) $)
     sge0resrn $p |- ( ph -> ( sum^ ` ( F |` ran G ) ) <_ ( sum^ ` ( F o. G ) )
        ) $=
@@ -829497,7 +829487,7 @@ $)
     smfdivdmmbl.6 $e |- ( ( ph /\ x e. B ) -> D e. W ) $.
     smfdivdmmbl.7 $e |- ( ph -> ( x e. B |-> D ) e. ( SMblFn ` S ) ) $.
     smfdivdmmbl.8 $e |- E = { x e. B | D =/= 0 } $.
-    $( If a function and a sigma-measurable function have domains in the
+    $( If a functions and a sigma-measurable function have domains in the
        sigma-algebra, the domain of the division of the two functions is in the
        sigma-algebra.  This is the third statement of Proposition 121H of
        [Fremlin1] p. 39 .  Note:  While the theorem in the book assumes both
@@ -829564,7 +829554,7 @@ $)
     smfdivdmmbl2.9 $e |- D = { x e. dom G | ( G ` x ) =/= 0 } $.
     smfdivdmmbl2.10 $e |- H = ( x e. ( dom F i^i D ) |-> ( ( F ` x ) / ( G ` x
        ) ) ) $.
-    $( If a function and a sigma-measurable function have domains in the
+    $( If a functions and a sigma-measurable function have domains in the
        sigma-algebra, the domain of the division of the two functions is in the
        sigma-algebra.  This is the third statement of Proposition 121H of
        [Fremlin1] p. 39 .  Note:  While the theorem in the book assumes both
@@ -830608,7 +830598,7 @@ $)
       ( cchn wcel cun wss ssun1 chndss ax-mp sseli ssun2 jaoi ) ABDEZFABCGZDEZF
       ACDEZFOQABPHOQHBCIBPDJKLRQACPHRQHCBMCPDJKLN $.
 
-    $( Superadditivity of chain constructor over alphabet parameter.
+    $( Superaddivity of chain constructor over alphabet parameter.
        (Contributed by Ender Ting, 24-Jul-2026.) $)
     chndun2 $p |- ( ( R Chain B ) u. ( R Chain C ) ) C_
       ( R Chain ( B u. C ) ) $=
@@ -832224,7 +832214,7 @@ $=
     mdandyv0.4 $e |- ( th <-> F. ) $.
     mdandyv0.5 $e |- ( ta <-> F. ) $.
     mdandyv0.6 $e |- ( et <-> F. ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ph, ps accordingly.  (Contributed by Jarvin Udandy,
        6-Sep-2016.) $)
     mdandyv0 $p |- ( ( ( ( ch <-> ph ) /\ ( th <-> ph ) ) /\ ( ta <-> ph ) ) /\
@@ -832240,7 +832230,7 @@ $=
     mdandyv1.4 $e |- ( th <-> F. ) $.
     mdandyv1.5 $e |- ( ta <-> F. ) $.
     mdandyv1.6 $e |- ( et <-> F. ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ph, ps accordingly.  (Contributed by Jarvin Udandy,
        6-Sep-2016.) $)
     mdandyv1 $p |- ( ( ( ( ch <-> ps ) /\ ( th <-> ph ) ) /\ ( ta <-> ph ) ) /\
@@ -832256,7 +832246,7 @@ $=
     mdandyv2.4 $e |- ( th <-> T. ) $.
     mdandyv2.5 $e |- ( ta <-> F. ) $.
     mdandyv2.6 $e |- ( et <-> F. ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ph, ps accordingly.  (Contributed by Jarvin Udandy,
        6-Sep-2016.) $)
     mdandyv2 $p |- ( ( ( ( ch <-> ph ) /\ ( th <-> ps ) ) /\ ( ta <-> ph ) ) /\
@@ -832272,7 +832262,7 @@ $=
     mdandyv3.4 $e |- ( th <-> T. ) $.
     mdandyv3.5 $e |- ( ta <-> F. ) $.
     mdandyv3.6 $e |- ( et <-> F. ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ph, ps accordingly.  (Contributed by Jarvin Udandy,
        6-Sep-2016.) $)
     mdandyv3 $p |- ( ( ( ( ch <-> ps ) /\ ( th <-> ps ) ) /\ ( ta <-> ph ) ) /\
@@ -832288,7 +832278,7 @@ $=
     mdandyv4.4 $e |- ( th <-> F. ) $.
     mdandyv4.5 $e |- ( ta <-> T. ) $.
     mdandyv4.6 $e |- ( et <-> F. ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ph, ps accordingly.  (Contributed by Jarvin Udandy,
        6-Sep-2016.) $)
     mdandyv4 $p |- ( ( ( ( ch <-> ph ) /\ ( th <-> ph ) ) /\
@@ -832306,7 +832296,7 @@ $=
     mdandyv5.4 $e |- ( th <-> F. ) $.
     mdandyv5.5 $e |- ( ta <-> T. ) $.
     mdandyv5.6 $e |- ( et <-> F. ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ph, ps accordingly.  (Contributed by Jarvin Udandy,
        6-Sep-2016.) $)
     mdandyv5 $p |- ( ( ( ( ch <-> ps ) /\ ( th <-> ph ) ) /\
@@ -832324,7 +832314,7 @@ $=
     mdandyv6.4 $e |- ( th <-> T. ) $.
     mdandyv6.5 $e |- ( ta <-> T. ) $.
     mdandyv6.6 $e |- ( et <-> F. ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ph, ps accordingly.  (Contributed by Jarvin Udandy,
        6-Sep-2016.) $)
     mdandyv6 $p |- ( ( ( ( ch <-> ph ) /\ ( th <-> ps ) ) /\
@@ -832342,7 +832332,7 @@ $=
     mdandyv7.4 $e |- ( th <-> T. ) $.
     mdandyv7.5 $e |- ( ta <-> T. ) $.
     mdandyv7.6 $e |- ( et <-> F. ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ph, ps accordingly.  (Contributed by Jarvin Udandy,
        6-Sep-2016.) $)
     mdandyv7 $p |- ( ( ( ( ch <-> ps ) /\ ( th <-> ps ) ) /\
@@ -832360,7 +832350,7 @@ $=
     mdandyv8.4 $e |- ( th <-> F. ) $.
     mdandyv8.5 $e |- ( ta <-> F. ) $.
     mdandyv8.6 $e |- ( et <-> T. ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ph, ps accordingly.  (Contributed by Jarvin Udandy,
        6-Sep-2016.) $)
     mdandyv8 $p |- ( ( ( ( ch <-> ph ) /\ ( th <-> ph ) ) /\
@@ -832378,7 +832368,7 @@ $=
     mdandyv9.4 $e |- ( th <-> F. ) $.
     mdandyv9.5 $e |- ( ta <-> F. ) $.
     mdandyv9.6 $e |- ( et <-> T. ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ph, ps accordingly.  (Contributed by Jarvin Udandy,
        6-Sep-2016.) $)
     mdandyv9 $p |- ( ( ( ( ch <-> ps ) /\ ( th <-> ph ) ) /\
@@ -832396,7 +832386,7 @@ $=
     mdandyv10.4 $e |- ( th <-> T. ) $.
     mdandyv10.5 $e |- ( ta <-> F. ) $.
     mdandyv10.6 $e |- ( et <-> T. ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ph, ps accordingly.  (Contributed by Jarvin Udandy,
        6-Sep-2016.) $)
     mdandyv10 $p |- ( ( ( ( ch <-> ph ) /\ ( th <-> ps ) ) /\
@@ -832414,7 +832404,7 @@ $=
     mdandyv11.4 $e |- ( th <-> T. ) $.
     mdandyv11.5 $e |- ( ta <-> F. ) $.
     mdandyv11.6 $e |- ( et <-> T. ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ph, ps accordingly.  (Contributed by Jarvin Udandy,
        6-Sep-2016.) $)
     mdandyv11 $p |- ( ( ( ( ch <-> ps ) /\ ( th <-> ps ) ) /\
@@ -832432,7 +832422,7 @@ $=
     mdandyv12.4 $e |- ( th <-> F. ) $.
     mdandyv12.5 $e |- ( ta <-> T. ) $.
     mdandyv12.6 $e |- ( et <-> T. ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ph, ps accordingly.  (Contributed by Jarvin Udandy,
        6-Sep-2016.) $)
     mdandyv12 $p |- ( ( ( ( ch <-> ph ) /\ ( th <-> ph ) ) /\
@@ -832450,7 +832440,7 @@ $=
     mdandyv13.4 $e |- ( th <-> F. ) $.
     mdandyv13.5 $e |- ( ta <-> T. ) $.
     mdandyv13.6 $e |- ( et <-> T. ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ph, ps accordingly.  (Contributed by Jarvin Udandy,
        6-Sep-2016.) $)
     mdandyv13 $p |- ( ( ( ( ch <-> ps ) /\ ( th <-> ph ) ) /\
@@ -832468,7 +832458,7 @@ $=
     mdandyv14.4 $e |- ( th <-> T. ) $.
     mdandyv14.5 $e |- ( ta <-> T. ) $.
     mdandyv14.6 $e |- ( et <-> T. ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ph, ps accordingly.  (Contributed by Jarvin Udandy,
        6-Sep-2016.) $)
     mdandyv14 $p |- ( ( ( ( ch <-> ph ) /\ ( th <-> ps ) ) /\
@@ -832486,7 +832476,7 @@ $=
     mdandyv15.4 $e |- ( th <-> T. ) $.
     mdandyv15.5 $e |- ( ta <-> T. ) $.
     mdandyv15.6 $e |- ( et <-> T. ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ph, ps accordingly.  (Contributed by Jarvin Udandy,
        6-Sep-2016.) $)
     mdandyv15 $p |- ( ( ( ( ch <-> ps ) /\ ( th <-> ps ) ) /\
@@ -832504,7 +832494,7 @@ $=
     mdandyvr0.4 $e |- ( th <-> ph ) $.
     mdandyvr0.5 $e |- ( ta <-> ph ) $.
     mdandyvr0.6 $e |- ( et <-> ph ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ze, si accordingly.  (Contributed by Jarvin Udandy,
        7-Sep-2016.) $)
     mdandyvr0 $p |- ( ( ( ( ch <-> ze ) /\ ( th <-> ze ) ) /\
@@ -832522,7 +832512,7 @@ $=
     mdandyvr1.4 $e |- ( th <-> ph ) $.
     mdandyvr1.5 $e |- ( ta <-> ph ) $.
     mdandyvr1.6 $e |- ( et <-> ph ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ze, si accordingly.  (Contributed by Jarvin Udandy,
        7-Sep-2016.) $)
     mdandyvr1 $p |- ( ( ( ( ch <-> si ) /\ ( th <-> ze ) ) /\
@@ -832540,7 +832530,7 @@ $=
     mdandyvr2.4 $e |- ( th <-> ps ) $.
     mdandyvr2.5 $e |- ( ta <-> ph ) $.
     mdandyvr2.6 $e |- ( et <-> ph ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ze, si accordingly.  (Contributed by Jarvin Udandy,
        7-Sep-2016.) $)
     mdandyvr2 $p |- ( ( ( ( ch <-> ze ) /\ ( th <-> si ) ) /\
@@ -832558,7 +832548,7 @@ $=
     mdandyvr3.4 $e |- ( th <-> ps ) $.
     mdandyvr3.5 $e |- ( ta <-> ph ) $.
     mdandyvr3.6 $e |- ( et <-> ph ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ze, si accordingly.  (Contributed by Jarvin Udandy,
        7-Sep-2016.) $)
     mdandyvr3 $p |- ( ( ( ( ch <-> si ) /\ ( th <-> si ) ) /\
@@ -832576,7 +832566,7 @@ $=
     mdandyvr4.4 $e |- ( th <-> ph ) $.
     mdandyvr4.5 $e |- ( ta <-> ps ) $.
     mdandyvr4.6 $e |- ( et <-> ph ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ze, si accordingly.  (Contributed by Jarvin Udandy,
        7-Sep-2016.) $)
     mdandyvr4 $p |- ( ( ( ( ch <-> ze ) /\ ( th <-> ze ) ) /\
@@ -832594,7 +832584,7 @@ $=
     mdandyvr5.4 $e |- ( th <-> ph ) $.
     mdandyvr5.5 $e |- ( ta <-> ps ) $.
     mdandyvr5.6 $e |- ( et <-> ph ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ze, si accordingly.  (Contributed by Jarvin Udandy,
        7-Sep-2016.) $)
     mdandyvr5 $p |- ( ( ( ( ch <-> si ) /\ ( th <-> ze ) ) /\
@@ -832612,7 +832602,7 @@ $=
     mdandyvr6.4 $e |- ( th <-> ps ) $.
     mdandyvr6.5 $e |- ( ta <-> ps ) $.
     mdandyvr6.6 $e |- ( et <-> ph ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ze, si accordingly.  (Contributed by Jarvin Udandy,
        7-Sep-2016.) $)
     mdandyvr6 $p |- ( ( ( ( ch <-> ze ) /\ ( th <-> si ) ) /\
@@ -832630,7 +832620,7 @@ $=
     mdandyvr7.4 $e |- ( th <-> ps ) $.
     mdandyvr7.5 $e |- ( ta <-> ps ) $.
     mdandyvr7.6 $e |- ( et <-> ph ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ze, si accordingly.  (Contributed by Jarvin Udandy,
        7-Sep-2016.) $)
     mdandyvr7 $p |- ( ( ( ( ch <-> si ) /\ ( th <-> si ) ) /\
@@ -832648,7 +832638,7 @@ $=
     mdandyvr8.4 $e |- ( th <-> ph ) $.
     mdandyvr8.5 $e |- ( ta <-> ph ) $.
     mdandyvr8.6 $e |- ( et <-> ps ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ze, si accordingly.  (Contributed by Jarvin Udandy,
        7-Sep-2016.) $)
     mdandyvr8 $p |- ( ( ( ( ch <-> ze ) /\ ( th <-> ze ) ) /\
@@ -832665,7 +832655,7 @@ $=
     mdandyvr9.4 $e |- ( th <-> ph ) $.
     mdandyvr9.5 $e |- ( ta <-> ph ) $.
     mdandyvr9.6 $e |- ( et <-> ps ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ze, si accordingly.  (Contributed by Jarvin Udandy,
        7-Sep-2016.) $)
     mdandyvr9 $p |- ( ( ( ( ch <-> si ) /\ ( th <-> ze ) ) /\
@@ -832682,7 +832672,7 @@ $=
     mdandyvr10.4 $e |- ( th <-> ps ) $.
     mdandyvr10.5 $e |- ( ta <-> ph ) $.
     mdandyvr10.6 $e |- ( et <-> ps ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ze, si accordingly.  (Contributed by Jarvin Udandy,
        7-Sep-2016.) $)
     mdandyvr10 $p |- ( ( ( ( ch <-> ze ) /\ ( th <-> si ) ) /\
@@ -832699,7 +832689,7 @@ $=
     mdandyvr11.4 $e |- ( th <-> ps ) $.
     mdandyvr11.5 $e |- ( ta <-> ph ) $.
     mdandyvr11.6 $e |- ( et <-> ps ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ze, si accordingly.  (Contributed by Jarvin Udandy,
        7-Sep-2016.) $)
     mdandyvr11 $p |- ( ( ( ( ch <-> si ) /\ ( th <-> si ) ) /\
@@ -832716,7 +832706,7 @@ $=
     mdandyvr12.4 $e |- ( th <-> ph ) $.
     mdandyvr12.5 $e |- ( ta <-> ps ) $.
     mdandyvr12.6 $e |- ( et <-> ps ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ze, si accordingly.  (Contributed by Jarvin Udandy,
        7-Sep-2016.) $)
     mdandyvr12 $p |- ( ( ( ( ch <-> ze ) /\ ( th <-> ze ) ) /\
@@ -832733,7 +832723,7 @@ $=
     mdandyvr13.4 $e |- ( th <-> ph ) $.
     mdandyvr13.5 $e |- ( ta <-> ps ) $.
     mdandyvr13.6 $e |- ( et <-> ps ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ze, si accordingly.  (Contributed by Jarvin Udandy,
        7-Sep-2016.) $)
     mdandyvr13 $p |- ( ( ( ( ch <-> si ) /\ ( th <-> ze ) ) /\
@@ -832750,7 +832740,7 @@ $=
     mdandyvr14.4 $e |- ( th <-> ps ) $.
     mdandyvr14.5 $e |- ( ta <-> ps ) $.
     mdandyvr14.6 $e |- ( et <-> ps ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ze, si accordingly.  (Contributed by Jarvin Udandy,
        7-Sep-2016.) $)
     mdandyvr14 $p |- ( ( ( ( ch <-> ze ) /\ ( th <-> si ) ) /\
@@ -832767,7 +832757,7 @@ $=
     mdandyvr15.4 $e |- ( th <-> ps ) $.
     mdandyvr15.5 $e |- ( ta <-> ps ) $.
     mdandyvr15.6 $e |- ( et <-> ps ) $.
-    $( Given the equivalences set in the hypotheses, there exists a proof where
+    $( Given the equivalences set in the hypotheses, there exist a proof where
        ch, th, ta, et match ze, si accordingly.  (Contributed by Jarvin Udandy,
        7-Sep-2016.) $)
     mdandyvr15 $p |- ( ( ( ( ch <-> si ) /\ ( th <-> si ) ) /\
@@ -832784,8 +832774,8 @@ $=
     mdandyvrx0.4 $e |- ( th <-> ph ) $.
     mdandyvrx0.5 $e |- ( ta <-> ph ) $.
     mdandyvrx0.6 $e |- ( et <-> ph ) $.
-    $( Given the exclusivities set in the hypotheses, there exists a proof
-       where ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
+    $( Given the exclusivities set in the hypotheses, there exist a proof where
+       ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
        Udandy, 7-Sep-2016.) $)
     mdandyvrx0 $p |- ( ( ( ( ch \/_ ze ) /\ ( th \/_ ze ) ) /\
 ( ta \/_ ze ) ) /\
@@ -832802,8 +832792,8 @@ $=
     mdandyvrx1.4 $e |- ( th <-> ph ) $.
     mdandyvrx1.5 $e |- ( ta <-> ph ) $.
     mdandyvrx1.6 $e |- ( et <-> ph ) $.
-    $( Given the exclusivities set in the hypotheses, there exists a proof
-       where ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
+    $( Given the exclusivities set in the hypotheses, there exist a proof where
+       ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
        Udandy, 7-Sep-2016.) $)
     mdandyvrx1 $p |- ( ( ( ( ch \/_ si ) /\ ( th \/_ ze ) ) /\
 ( ta \/_ ze ) ) /\
@@ -832820,8 +832810,8 @@ $=
     mdandyvrx2.4 $e |- ( th <-> ps ) $.
     mdandyvrx2.5 $e |- ( ta <-> ph ) $.
     mdandyvrx2.6 $e |- ( et <-> ph ) $.
-    $( Given the exclusivities set in the hypotheses, there exists a proof
-       where ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
+    $( Given the exclusivities set in the hypotheses, there exist a proof where
+       ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
        Udandy, 7-Sep-2016.) $)
     mdandyvrx2 $p |- ( ( ( ( ch \/_ ze ) /\ ( th \/_ si ) ) /\
 ( ta \/_ ze ) ) /\
@@ -832838,8 +832828,8 @@ $=
     mdandyvrx3.4 $e |- ( th <-> ps ) $.
     mdandyvrx3.5 $e |- ( ta <-> ph ) $.
     mdandyvrx3.6 $e |- ( et <-> ph ) $.
-    $( Given the exclusivities set in the hypotheses, there exists a proof
-       where ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
+    $( Given the exclusivities set in the hypotheses, there exist a proof where
+       ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
        Udandy, 7-Sep-2016.) $)
     mdandyvrx3 $p |- ( ( ( ( ch \/_ si ) /\ ( th \/_ si ) ) /\
 ( ta \/_ ze ) ) /\
@@ -832856,8 +832846,8 @@ $=
     mdandyvrx4.4 $e |- ( th <-> ph ) $.
     mdandyvrx4.5 $e |- ( ta <-> ps ) $.
     mdandyvrx4.6 $e |- ( et <-> ph ) $.
-    $( Given the exclusivities set in the hypotheses, there exists a proof
-       where ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
+    $( Given the exclusivities set in the hypotheses, there exist a proof where
+       ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
        Udandy, 7-Sep-2016.) $)
     mdandyvrx4 $p |- ( ( ( ( ch \/_ ze ) /\ ( th \/_ ze ) ) /\
 ( ta \/_ si ) ) /\
@@ -832874,8 +832864,8 @@ $=
     mdandyvrx5.4 $e |- ( th <-> ph ) $.
     mdandyvrx5.5 $e |- ( ta <-> ps ) $.
     mdandyvrx5.6 $e |- ( et <-> ph ) $.
-    $( Given the exclusivities set in the hypotheses, there exists a proof
-       where ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
+    $( Given the exclusivities set in the hypotheses, there exist a proof where
+       ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
        Udandy, 7-Sep-2016.) $)
     mdandyvrx5 $p |- ( ( ( ( ch \/_ si ) /\ ( th \/_ ze ) ) /\
 ( ta \/_ si ) ) /\
@@ -832892,8 +832882,8 @@ $=
     mdandyvrx6.4 $e |- ( th <-> ps ) $.
     mdandyvrx6.5 $e |- ( ta <-> ps ) $.
     mdandyvrx6.6 $e |- ( et <-> ph ) $.
-    $( Given the exclusivities set in the hypotheses, there exists a proof
-       where ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
+    $( Given the exclusivities set in the hypotheses, there exist a proof where
+       ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
        Udandy, 7-Sep-2016.) $)
     mdandyvrx6 $p |- ( ( ( ( ch \/_ ze ) /\ ( th \/_ si ) ) /\
 ( ta \/_ si ) ) /\
@@ -832910,8 +832900,8 @@ $=
     mdandyvrx7.4 $e |- ( th <-> ps ) $.
     mdandyvrx7.5 $e |- ( ta <-> ps ) $.
     mdandyvrx7.6 $e |- ( et <-> ph ) $.
-    $( Given the exclusivities set in the hypotheses, there exists a proof
-       where ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
+    $( Given the exclusivities set in the hypotheses, there exist a proof where
+       ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
        Udandy, 7-Sep-2016.) $)
     mdandyvrx7 $p |- ( ( ( ( ch \/_ si ) /\ ( th \/_ si ) ) /\
 ( ta \/_ si ) ) /\
@@ -832928,8 +832918,8 @@ $=
     mdandyvrx8.4 $e |- ( th <-> ph ) $.
     mdandyvrx8.5 $e |- ( ta <-> ph ) $.
     mdandyvrx8.6 $e |- ( et <-> ps ) $.
-    $( Given the exclusivities set in the hypotheses, there exists a proof
-       where ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
+    $( Given the exclusivities set in the hypotheses, there exist a proof where
+       ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
        Udandy, 7-Sep-2016.) $)
     mdandyvrx8 $p |- ( ( ( ( ch \/_ ze ) /\ ( th \/_ ze ) ) /\
 ( ta \/_ ze ) ) /\
@@ -832945,8 +832935,8 @@ $=
     mdandyvrx9.4 $e |- ( th <-> ph ) $.
     mdandyvrx9.5 $e |- ( ta <-> ph ) $.
     mdandyvrx9.6 $e |- ( et <-> ps ) $.
-    $( Given the exclusivities set in the hypotheses, there exists a proof
-       where ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
+    $( Given the exclusivities set in the hypotheses, there exist a proof where
+       ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
        Udandy, 7-Sep-2016.) $)
     mdandyvrx9 $p |- ( ( ( ( ch \/_ si ) /\ ( th \/_ ze ) ) /\
 ( ta \/_ ze ) ) /\
@@ -832962,8 +832952,8 @@ $=
     mdandyvrx10.4 $e |- ( th <-> ps ) $.
     mdandyvrx10.5 $e |- ( ta <-> ph ) $.
     mdandyvrx10.6 $e |- ( et <-> ps ) $.
-    $( Given the exclusivities set in the hypotheses, there exists a proof
-       where ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
+    $( Given the exclusivities set in the hypotheses, there exist a proof where
+       ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
        Udandy, 7-Sep-2016.) $)
     mdandyvrx10 $p |- ( ( ( ( ch \/_ ze ) /\ ( th \/_ si ) ) /\
 ( ta \/_ ze ) ) /\
@@ -832979,8 +832969,8 @@ $=
     mdandyvrx11.4 $e |- ( th <-> ps ) $.
     mdandyvrx11.5 $e |- ( ta <-> ph ) $.
     mdandyvrx11.6 $e |- ( et <-> ps ) $.
-    $( Given the exclusivities set in the hypotheses, there exists a proof
-       where ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
+    $( Given the exclusivities set in the hypotheses, there exist a proof where
+       ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
        Udandy, 7-Sep-2016.) $)
     mdandyvrx11 $p |- ( ( ( ( ch \/_ si ) /\ ( th \/_ si ) ) /\
 ( ta \/_ ze ) ) /\
@@ -832996,8 +832986,8 @@ $=
     mdandyvrx12.4 $e |- ( th <-> ph ) $.
     mdandyvrx12.5 $e |- ( ta <-> ps ) $.
     mdandyvrx12.6 $e |- ( et <-> ps ) $.
-    $( Given the exclusivities set in the hypotheses, there exists a proof
-       where ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
+    $( Given the exclusivities set in the hypotheses, there exist a proof where
+       ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
        Udandy, 7-Sep-2016.) $)
     mdandyvrx12 $p |- ( ( ( ( ch \/_ ze ) /\ ( th \/_ ze ) ) /\
 ( ta \/_ si ) ) /\
@@ -833013,8 +833003,8 @@ $=
     mdandyvrx13.4 $e |- ( th <-> ph ) $.
     mdandyvrx13.5 $e |- ( ta <-> ps ) $.
     mdandyvrx13.6 $e |- ( et <-> ps ) $.
-    $( Given the exclusivities set in the hypotheses, there exists a proof
-       where ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
+    $( Given the exclusivities set in the hypotheses, there exist a proof where
+       ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
        Udandy, 7-Sep-2016.) $)
     mdandyvrx13 $p |- ( ( ( ( ch \/_ si ) /\ ( th \/_ ze ) ) /\
 ( ta \/_ si ) ) /\
@@ -833030,8 +833020,8 @@ $=
     mdandyvrx14.4 $e |- ( th <-> ps ) $.
     mdandyvrx14.5 $e |- ( ta <-> ps ) $.
     mdandyvrx14.6 $e |- ( et <-> ps ) $.
-    $( Given the exclusivities set in the hypotheses, there exists a proof
-       where ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
+    $( Given the exclusivities set in the hypotheses, there exist a proof where
+       ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
        Udandy, 7-Sep-2016.) $)
     mdandyvrx14 $p |- ( ( ( ( ch \/_ ze ) /\ ( th \/_ si ) ) /\
 ( ta \/_ si ) ) /\
@@ -833047,8 +833037,8 @@ $=
     mdandyvrx15.4 $e |- ( th <-> ps ) $.
     mdandyvrx15.5 $e |- ( ta <-> ps ) $.
     mdandyvrx15.6 $e |- ( et <-> ps ) $.
-    $( Given the exclusivities set in the hypotheses, there exists a proof
-       where ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
+    $( Given the exclusivities set in the hypotheses, there exist a proof where
+       ch, th, ta, et exclude ze, si accordingly.  (Contributed by Jarvin
        Udandy, 7-Sep-2016.) $)
     mdandyvrx15 $p |- ( ( ( ( ch \/_ si ) /\ ( th \/_ si ) ) /\ ( ta \/_ si ) )
                      /\ ( et \/_ si ) ) $=
@@ -833238,7 +833228,7 @@ $(
 $)
 
   $( Replacement of a nested antecedent with an outer antecedent.  Commuted
-     simplified form of elimination of a nested antecedent.  Also holds
+     simplificated form of elimination of a nested antecedent.  Also holds
      intuitionistically.  Polish prefix notation:  CCCpqrCsCqr .  (Contributed
      by ADH, 10-Nov-2023.)  (Proof modification is discouraged.) $)
   adh-jarrsc $p |- ( ( ( ph -> ps ) -> ch ) -> ( th -> ( ps -> ch ) ) ) $=
@@ -835025,7 +835015,7 @@ $)
     ralbinrald.1 $e |- ( ph -> X e. A ) $.
     ralbinrald.2 $e |- ( x e. A -> x = X ) $.
     ralbinrald.3 $e |- ( x = X -> ( ps <-> th ) ) $.
-    $( Elimination of a restricted universal quantification under certain
+    $( Elemination of a restricted universal quantification under certain
        conditions.  (Contributed by Alexander van der Vekens, 2-Aug-2017.) $)
     ralbinrald $p |- ( ph -> ( A. x e. A ps <-> th ) ) $=
       ( wral cv wceq wb adantl rspcdv wcel wa bicomd syl biimpd ralrimdva
@@ -835812,7 +835802,7 @@ $)
 
     $( Reverse closure law, in contrast to ~ ndmovrcl where it is required that
        the operation's domain doesn't contain the empty set
-       ( ` -. (/) e. S ` ), no additional assumption is required.  (Contributed
+       ( ` -. (/) e. S ` ), no additional asumption is required.  (Contributed
        by Alexander van der Vekens, 26-May-2017.) $)
     ndmaovrcl $p |- ( (( A F B )) e. S -> ( A e. S /\ B e. S ) ) $=
       ( caov wcel cop cdm wa aovvdm cxp opelxp biimpi eleq2s syl ) ABDFCGABHZDI
@@ -837017,7 +837007,7 @@ $)
     ioran ) ACDZBCDZEZABFGBAHGZIBAFGZBAJZKZIZUDIUEIEZABLUBUCUFUATUCUFMBANOPUGUH
     MUBUDUESQR $.
 
-  $( A real number increased by 1 is less than or equal to the number increased
+  $( A real number increasd by 1 is less than or equal to the number increased
      by 2.  (Contributed by Alexander van der Vekens, 17-Sep-2018.) $)
   p1lep2 $p |- ( N e. RR -> ( N + 1 ) <_ ( N + 2 ) ) $=
     ( cr wcel c1 c2 1red 2re a1i id cle wbr 1le2 leadd2dd ) ABCZDEANFEBCNGHNIDE
@@ -837443,7 +837433,7 @@ $)
     ( c2 cfzo co wcel cuz cfv cz clt wbr w3a cn elfzo2 eluz2nn 3ad2ant1 sylbi )
     ACBDEFACGHFZBIFZABJKZLAMFZACBNRSUATAOPQ $.
 
-  $( If one factor of a product of integers is at least 2 and less than the
+  $( If one factor of a product of integers is at least 2 and less then the
      product, so is the second factor.  (Contributed by AV, 5-Apr-2026.) $)
   nnmul2 $p |- ( ( A e. ( 2 ..^ N ) /\ B e. NN /\ ( A x. B ) = N )
                  -> B e. ( 2 ..^ N ) ) $=
@@ -837460,8 +837450,8 @@ $)
     MVNWGWDXJWKOWEWFCBKUPVOVNWHBTFZDTFZXCWIWJWKNOWEWDXLWGBVPVLXMWHVQVRWDWEXCWGA
     DCVSSBDCVTWAWB $.
 
-  $( A factor of a product of integers is at least 2 and less than the product
-     iff the second factor is at least 2 and less than the product.
+  $( A factor of a product of integers is at least 2 and less then the product
+     iff the second factor is at least 2 and less then the product.
      (Contributed by AV, 5-Apr-2026.) $)
   nnmul2b $p |- ( ( A e. NN /\ B e. NN /\ ( A x. B ) = N )
                   -> ( A e. ( 2 ..^ N ) <-> B e. ( 2 ..^ N ) ) ) $=
@@ -839007,7 +838997,7 @@ $)
     ${
       iccpartgtprec.i $e |- ( ph -> I e. ( 1 ... M ) ) $.
       $( If there is a partition, then all intermediate points and the upper
-         bound are strictly greater than the preceding intermediate points or
+         bound are strictly greater than the preceeding intermediate points or
          lower bound.  (Contributed by AV, 11-Jul-2020.) $)
       iccpartgtprec $p |- ( ph -> ( P ` ( I - 1 ) ) < ( P ` I ) ) $=
         ( c1 cmin co cfv caddc clt cc0 cfz wcel cfzo cz wb syl cxr wbr cn ciccp
@@ -839751,7 +839741,7 @@ $)
     ichcircshi.1 $e |- ( x = z -> ( ph <-> ps ) ) $.
     ichcircshi.2 $e |- ( y = x -> ( ps <-> ch ) ) $.
     ichcircshi.3 $e |- ( z = y -> ( ch <-> ph ) ) $.
-    $( The setvar variables are interchangeable if they can be circularly
+    $( The setvar variables are interchangeable if they can be circularily
        shifted using a third setvar variable, using implicit substitution.
        (Contributed by AV, 29-Jul-2023.) $)
     ichcircshi $p |- [ x <> y ] ph $=
@@ -841074,7 +841064,7 @@ $(
   was ` ; ; ; 4 0 0 1 `, see ~ 4001prm ).
 
   Another important result of this section is Goldbach's theorem ~ goldbachth ,
-  showing that two different Fermat numbers are coprime.  By this, it can be
+  showing that two different Fermut numbers are coprime.  By this, it can be
   proven that there is an infinite number of primes, see ~ prminf2 .
 
   Finally, it is shown that every prime of the form ` ( ( 2 ^ k ) + 1 ) ` must
@@ -842725,7 +842715,7 @@ $)
   $( If a power of a prime ` P ` (i.e. ` P ^ M ` ) is of the form
      ` 2 ^ N - 1 ` , then ` N ` must be prime and ` M ` must be ` 1 ` .
      Generalization of ~ mersenne (where ` M = 1 ` is a prerequisite).  Theorem
-     of S. Ligh and L. Neal (1974) "A note on Mersenne numbers", Mathematics
+     of S. Ligh and L. Neal (1974) "A note on Mersenne mumbers", Mathematics
      Magazine, 47:4, 231-233.  (Contributed by AV, 16-Aug-2021.) $)
   lighneal $p |- ( ( ( P e. Prime /\ M e. NN /\ N e. NN )
                      /\ ( ( 2 ^ N ) - 1 ) = ( P ^ M ) )
@@ -847188,10 +847178,10 @@ $)
   $c GraphIso $. $( Graph isomorphisms. $)
   $c ~=gr $. $( Relation "is isomorphic to" for graphs $)
 
-  $( Extend class notation to include the graph isomorphisms as pair. $)
+  $( Extend class notation to include the graph ispmorphisms as pair. $)
   cgrisom $a class GraphIsom $.
 
-  $( Extend class notation to include the graph isomorphisms. $)
+  $( Extend class notation to include the graph ispmorphisms. $)
   cgrim $a class GraphIso $.
 
   $( Extend class notation to include the "is isomorphic to" relation for
@@ -853430,7 +853420,7 @@ $)
 
   ${
     $d a b f g h $.
-    $( In general, the image of an edge of a graph by a local isomorphism is
+    $( In general, the image of an edge of a graph by a local isomprphism is
        not an edge of the other graph, proven by an example (see
        ~ gpg5edgnedg ).  This theorem proves that the analogon
        ` ( ( ( G e. USPGraph /\ H e. USPGraph ) /\ ( F e. ( G GraphLocIso H ) `
@@ -854288,7 +854278,7 @@ $(
   ).
 
   Taking a step back, we define "laws" applicable for "binary operations"
-  (which even need not be functions), according to the definition in
+  (which even need not to be functions), according to the definition in
   [Hall] p. 1 and [BourbakiAlg1] p. 1, p. 4 and p. 7. These laws are used, on
   the one hand, to specialize internal binary operations (see ~ df-clintop and
   ~ df-assintop ), and on the other hand to define the common algebraic
@@ -854337,11 +854327,11 @@ $)
     $( The closure law for binary operations, see definitions of laws A0. and
        M0. in section 1.1 of [Hall] p. 1, or definition 1 in [BourbakiAlg1]
        p. 1: the value of a binary operation applied to two operands of a given
-       set is an element of this set.  By this definition, the closure law is
-       expressed as a binary relation: a binary operation is related to a set
-       by ` clLaw ` if the closure law holds for this binary operation
-       regarding this set.  Note that the binary operation need not be a
-       function.  (Contributed by AV, 7-Jan-2020.) $)
+       sets is an element of this set.  By this definition, the closure law is
+       expressed as binary relation: a binary operation is related to a set by
+       ` clLaw ` if the closure law holds for this binary operation regarding
+       this set.  Note that the binary operation need not to be a function.
+       (Contributed by AV, 7-Jan-2020.) $)
     df-cllaw $a |- clLaw = { <. o , m >. |
                              A. x e. m A. y e. m ( x o y ) e. m } $.
 
@@ -854617,7 +854607,7 @@ $)
       QUNUKCBUIUMBALRSTUJUHUKABUAUBUCUD $.
   $}
 
-  $( The associative law holds for an associative (closed internal binary)
+  $( The associative low holds for a associative (closed internal binary)
      operation for a set.  (Contributed by FL, 2-Nov-2009.)  (Revised by AV,
      20-Jan-2020.) $)
   assintopasslaw $p |- ( .o. e. ( assIntOp ` M ) -> .o. assLaw M ) $=
@@ -856418,8 +856408,7 @@ $(
   Prime rings (and integral domains)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-  This section contains the definitions and theorems of section "Prime rings
-  and
+  This section contains the definitions and teorems of section "Prime rings and
   integral domains" in JF's mathbox, transformed into extensible structures.
 
 $)
@@ -857535,7 +857524,7 @@ $)
       MIGDNLO $.
 
     $( The scalar 1 embedded into an associative algebra corresponds to the 1
-       of the associative algebra.  (Contributed by AV, 31-Jul-2019.) $)
+       of the an associative algebra.  (Contributed by AV, 31-Jul-2019.) $)
     assaascl1 $p |- ( ph -> ( A ` ( 1r ` F ) ) = ( 1r ` W ) ) $=
       ( casa wcel clmod assalmod syl crg assaring ascl1 ) ABCDEFADHIZDJIGDKLAPD
       MIGDNLO $.
@@ -863764,7 +863753,7 @@ $)
 
     $( The line passing through the two different points ` X ` and ` Y ` in a
        generalized real Euclidean space of finite dimension, expressed by its
-       coordinates.  Remark:  This proof is shorter and requires fewer distinct
+       coordinates.  Remark:  This proof is shorter and requires less distinct
        variables than the proof using ~ rrxlinesc .  (Contributed by AV,
        13-Feb-2023.) $)
     rrxlinec $p |- ( ( I e. Fin /\ ( X e. P /\ Y e. P /\ X =/= Y ) )
@@ -866137,7 +866126,7 @@ $)
     iunlub.2 $e |- ( ( ph /\ x = X ) -> B = C ) $.
     ${
       iunlub.3 $e |- ( ( ph /\ x e. A ) -> B C_ C ) $.
-      $( The indexed union is the lowest upper bound if it exists.
+      $( The indexed union is the the lowest upper bound if it exists.
          (Contributed by Zhi Wang, 1-Nov-2025.) $)
       iunlub $p |- ( ph -> U_ x e. A B = C ) $=
         ( ciun iunssd wss wrex cv wceq wa sseq2d ssidd rspcedvd ssiun syl eqssd
@@ -866146,7 +866135,7 @@ $)
 
     ${
       iinglb.3 $e |- ( ( ph /\ x e. A ) -> C C_ B ) $.
-      $( The indexed intersection is the greatest lower bound if it exists.
+      $( The indexed intersection is the the greatest lower bound if it exists.
          (Contributed by Zhi Wang, 1-Nov-2025.) $)
       iinglb $p |- ( ph -> |^|_ x e. A B = C ) $=
         ( ciin wss wrex cv wceq wa sseq1d ssidd rspcedvd iinss syl ssiin sylibr
@@ -868280,8 +868269,8 @@ $)
       glbprdm $p |- ( ph -> S e. dom G ) $=
         ( cdm wcel cfv wceq glbprlem simpld ) ACDQRCDSGTABCDEFGHIJKLMNOPUAUB $.
 
-      $( The GLB of the set of two comparable elements in a poset is the lesser
-         of the two.  (Contributed by Zhi Wang, 26-Sep-2024.) $)
+      $( The GLB of the set of two comparable elements in a poset is the less
+         one of the two.  (Contributed by Zhi Wang, 26-Sep-2024.) $)
       glbpr $p |- ( ph -> ( G ` S ) = X ) $=
         ( cdm wcel cfv wceq glbprlem simprd ) ACDQRCDSGTABCDEFGHIJKLMNOPUAUB $.
     $}
@@ -868909,7 +868898,7 @@ $)
          algebra is not a faithful module.  For example, Let ` F ` be the 2 by
          2 upper triangular matrix algebra over a commutative ring ` W ` .  It
          is provable that ` F ` is in general non-commutative.  Define scalar
-         multiplication ` C .x. X ` as multiplying the top-left entry, which is
+         multiplication ` C .x. X ` as multipying the top-left entry, which is
          a "vector" element of ` W ` , of the "scalar" ` C ` , which is now an
          upper triangular matrix, with the "vector" ` X e. ( Base `` W ) ` .
 
@@ -873115,7 +873104,7 @@ $)
 
   $( The binary product of categories is a proper operator, so it can be used
      with ~ ovprc1 , ~ elbasov , ~ strov2rcl , and so on.  See ~ reldmxpcALT
-     for an alternate proof with fewer "essential steps" but more "bytes".
+     for an alternate proof with less "essential steps" but more "bytes".
      (Proposed by SN, 15-Oct-2025.)  (Contributed by Zhi Wang, 15-Oct-2025.) $)
   reldmxpc $p |- Rel dom Xc. $=
     ( cxpc cdm wrel cvv cxp relxp fnxpc fndmi releqi mpbir ) ABZCDDEZCDDFKLLAGH
@@ -882241,9 +882230,9 @@ $)
     lmdran.g $e |- ( ph -> G e. ( D Func .1. ) ) $.
     lmdran.l $e |- L = ( C DiagFunc .1. ) $.
     lmdran.y $e |- ( ph -> Y = ( ( 1st ` L ) ` X ) ) $.
-    $( To each limit of a diagram there is a corresponding right Kan extension
+    $( To each limit of a diagram there is a corresponding right Kan extention
        of the diagram along a functor to a terminal category.  The morphism
-       parts coincide, while the object parts are in one-to-one correspondence
+       parts coincide, while the object parts are one-to-one correspondent
        ( ~ diag1f1o ).  (Contributed by Zhi Wang, 26-Nov-2025.) $)
     lmdran $p |- ( ph -> ( X ( ( C Limit D ) ` F ) M
                        <-> Y ( G ( <. D , .1. >. Ran C ) F ) M ) ) $=
@@ -882269,9 +882258,9 @@ $)
       MUVDVPZYJUUMUVDXCUVBUVLUURAYIUURYKUVAWNUVBYJUUMUVDUUGUVHXAXDYJUUMUVDXEVOX
       FXGAXTYFJHAUVIXTYFVELCDXQBFYBYEEUUNYQYBTXHVOXIXJXK $.
 
-    $( To each colimit of a diagram there is a corresponding left Kan extension
+    $( To each colimit of a diagram there is a corresponding left Kan extention
        of the diagram along a functor to a terminal category.  The morphism
-       parts coincide, while the object parts are in one-to-one correspondence
+       parts coincide, while the object parts are one-to-one correspondent
        ( ~ diag1f1o ).  (Contributed by Zhi Wang, 26-Nov-2025.) $)
     cmdlan $p |- ( ph -> ( X ( ( C Colimit D ) ` F ) M
                        <-> Y ( G ( <. D , .1. >. Lan C ) F ) M ) ) $=
@@ -896319,7 +896308,7 @@ $)
      intuitionistic logic.  In intuitionistic logic, if this statement is true
      for some ` ph ` , then ` ph ` is _testable_.  The proof is trivial because
      it's simply a special case of the law of the excluded middle, which is
-     true in classical logic but not necessarily true in intuitionistic logic.
+     true in classical logic but not necessarily true in intuitionisic logic.
      (Contributed by David A. Wheeler, 5-Dec-2018.) $)
   testable $p |- ( -. ph \/ -. -. ph ) $=
     ( wn exmid ) ABC $.
