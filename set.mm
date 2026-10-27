@@ -856657,7 +856657,7 @@ $)
   ${
     $d A a b $.  $d S a b $.
     $( Representation of an "adjuncted integer".  (Contributed by AV,
-    25-Oct-2026.) $)
+       25-Oct-2026.) $)
     elazim $p |- ( ( S e. CC /\ A e. ( Z[] ` S ) )
                    -> E. a e. ZZ E. b e. ZZ A = ( a + ( b x. S ) ) ) $=
       ( cc wcel caz cfv cv cmul co caddc wceq cz wrex elaz simplbda ) BEFABGHFA
@@ -856683,7 +856683,7 @@ $)
   ${
     $d C a b $.  $d S a b $.
     $( The adjuncted complex number multiplied with an integer is an adjuncted
-       integer. (Contributed by AV, 25-Oct-2026.) $)
+       integer.  (Contributed by AV, 25-Oct-2026.) $)
     adcnmulzaz $p |- ( ( S e. CC /\ C e. ZZ ) -> ( C x. S ) e. ( Z[] ` S ) ) $=
       ( va vb cc wcel cz wa cmul co caz cfv cv caddc wceq wrex zcn oveq1 eqeq2d
       cc0 adantl simpl mulcld oveq2d 0zd simpr addlidd eqcomd 2rspcedvdw adantr
@@ -856704,12 +856704,12 @@ $)
     $( Construct an adjuncted integer.  (Contributed by AV, 25-Oct-2026.) $)
     azlinz $p |- ( S e. CC -> ( ( A e. ZZ /\ B e. ZZ )
                                 -> ( A + ( B x. S ) ) e. ( Z[] ` S ) ) ) $=
-    ( va vb cc wcel cz wa cmul co caddc wceq wrex zcn adantr adantl simpl oveq1
-    cv caz cfv mulcld addcld eqeq2d oveq2d simprr eqidd 2rspcedvdw wb mpbir2and
-    elaz ex ) CFGZAHGZBHGZIZABCJKZLKZCUAUBGZUNUQIZUTUSFGZUSDTZETZCJKZLKZMZEHNDH
-    NZVAAURUQAFGZUNUOVIUPAOPQVABCUQBFGZUNUPVJUOBOQQUNUQRUCUDVAVGUSAVELKZMUSUSMD
-    EABHHVCAMVFVKUSVCAVELSUEVDBMZVKUSUSVLVEURALVDBCJSUFUEUQUOUNUOUPRQUNUOUPUGVA
-    USUHUIUNUTVBVHIUJUQUSCDEULPUKUM $.
+      ( va vb cc wcel cz wa cmul co caddc cv wceq zcn adantr adantl simpl oveq1
+      wrex caz mulcld addcld eqeq2d oveq2d simprr eqidd 2rspcedvdw wb mpbir2and
+      cfv elaz ex ) CFGZAHGZBHGZIZABCJKZLKZCUAUKGZUNUQIZUTUSFGZUSDMZEMZCJKZLKZN
+      ZEHTDHTZVAAURUQAFGZUNUOVIUPAOPQVABCUQBFGZUNUPVJUOBOQQUNUQRUBUCVAVGUSAVELK
+      ZNUSUSNDEABHHVCANVFVKUSVCAVELSUDVDBNZVKUSUSVLVEURALVDBCJSUEUDUQUOUNUOUPRQ
+      UNUOUPUFVAUSUGUHUNUTVBVHIUIUQUSCDEULPUJUM $.
   $}
 
   ${
@@ -856717,32 +856717,32 @@ $)
     $( The adjunction of an integer to the ring of integers yields the
        integers.  (Contributed by AV, 25-Oct-2026.) $)
     adcnaz $p |- ( S e. ZZ -> ( Z[] ` S ) = ZZ ) $=
-    ( vs va vb cz wcel caz cfv cv cc cmul co caddc wceq wrex wa wb zcn elaz syl
-    simprl simpr zmulcl syl2anr zaddcld syl5ibrcom rexlimdvva expimpd sylbid wi
-    simpl eleq1 zelaz ex impbid eqrdv ) AEFZBAGHZEUQBIZURFZUSEFZUQUTUSJFZUSCIZD
-    IZAKLZMLZNZDEOCEOZPZVAUQAJFZUTVIQARZUSACDSTUQVBVHVAUQVBPZVGVACDEEVLVCEFZVDE
-    FZPZPZVAVGVFEFVPVCVEVLVMVNUAVOVNUQVEEFVLVMVNUBUQVBUKVDAUCUDUEUSVFEULUFUGUHU
-    IUQVJVAUTUJVKVJVAUTUSAUMUNTUOUP $.
+      ( vs va vb cz wcel caz cfv cv cc cmul co caddc wceq wrex wa zcn elaz syl
+      wb simprl simpr simpl syl2anr zaddcld eleq1 syl5ibrcom rexlimdvva expimpd
+      zmulcl sylbid wi zelaz ex impbid eqrdv ) AEFZBAGHZEUQBIZURFZUSEFZUQUTUSJF
+      ZUSCIZDIZAKLZMLZNZDEOCEOZPZVAUQAJFZUTVITAQZUSACDRSUQVBVHVAUQVBPZVGVACDEEV
+      LVCEFZVDEFZPZPZVAVGVFEFVPVCVEVLVMVNUAVOVNUQVEEFVLVMVNUBUQVBUCVDAUJUDUEUSV
+      FEUFUGUHUIUKUQVJVAUTULVKVJVAUTUSAUMUNSUOUP $.
   $}
 
   ${
     $d a b s $.
     $( The Gaussian integers are the adjunction of ` _i ` to the ring of
-       integers. (Contributed by AV, 25-Oct-2026.) $)
+       integers.  (Contributed by AV, 25-Oct-2026.) $)
     gziaz $p |- Z[i] = ( Z[] ` _i ) $=
-    ( vs va vb ci cfv cv cc wcel cre cz cim cmul co caddc wceq wa oveq2d ax-icn
-    ad2antll eqtrd cgz caz wrex 3anass oveq1 eqeq2d simprl simprr simpl replimd
-    w3a a1i zcn mulcomd 2rspcedvdw ex fveq2d ad2antrl crred eqeltrd crimd fveq2
-    zre jca eleq1d anbi12d syl5ibrcom rexlimdvva impbid pm5.32i bitri elgz elaz
-    cr wb ax-mp 3bitr4i eqriv ) AUADUBEZAFZGHZVTIEZJHZVTKEZJHZUKZWAVTBFZCFZDLMZ
-    NMZOZCJUCBJUCZPZVTUAHVTVSHZWFWAWCWEPZPZWMWAWCWEUDWAWOWLWAWOWLWAWOWLWPWKVTWB
-    WINMZOVTWBWDDLMZNMZOBCWBWDJJWGWBOWJWQVTWGWBWINUEUFWHWDOZWQWSVTWTWIWRWBNWHWD
-    DLUEQUFWAWCWEUGWAWCWEUHWPVTWBDWDLMZNMWSWPVTWAWOUIUJWPXAWRWBNWPDWDDGHZWPRULW
-    EWDGHWAWCWDUMSUNQTUOUPWAWKWOBCJJWAWGJHZWHJHZPPZWOWKWJIEZJHZWJKEZJHZPXEXGXIX
-    EXFWGJXEXFWGDWHLMZNMZIEWGXEWJXKIXEWIXJWGNXEWHDXDWHGHWAXCWHUMSXBXERULUNQZUQX
-    EWGWHXCWGVNHWAXDWGVCURZXDWHVNHWAXCWHVCSZUSTWAXCXDUGUTXEXHWHJXEXHXKKEWHXEWJX
-    KKXLUQXEWGWHXMXNVATWAXCXDUHUTVDWKWCXGWEXIWKWBXFJVTWJIVBVEWKWDXHJVTWJKVBVEVF
-    VGVHVIVJVKVTVLXBWNWMVORVTDBCVMVPVQVR $.
+      ( vs va vb ci cfv cv cc wcel cre cz cmul co caddc wceq wa oveq2d ad2antll
+      cim ax-icn eqtrd cgz caz w3a wrex 3anass oveq1 eqeq2d simprl simprr simpl
+      replimd a1i zcn mulcomd 2rspcedvdw ex fveq2d ad2antrl crred eqeltrd crimd
+      cr zre jca fveq2 eleq1d anbi12d syl5ibrcom rexlimdvva impbid pm5.32i elgz
+      bitri wb elaz ax-mp 3bitr4i eqriv ) AUADUBEZAFZGHZVTIEZJHZVTREZJHZUCZWAVT
+      BFZCFZDKLZMLZNZCJUDBJUDZOZVTUAHVTVSHZWFWAWCWEOZOZWMWAWCWEUEWAWOWLWAWOWLWA
+      WOWLWPWKVTWBWIMLZNVTWBWDDKLZMLZNBCWBWDJJWGWBNWJWQVTWGWBWIMUFUGWHWDNZWQWSV
+      TWTWIWRWBMWHWDDKUFPUGWAWCWEUHWAWCWEUIWPVTWBDWDKLZMLWSWPVTWAWOUJUKWPXAWRWB
+      MWPDWDDGHZWPSULWEWDGHWAWCWDUMQUNPTUOUPWAWKWOBCJJWAWGJHZWHJHZOOZWOWKWJIEZJ
+      HZWJREZJHZOXEXGXIXEXFWGJXEXFWGDWHKLZMLZIEWGXEWJXKIXEWIXJWGMXEWHDXDWHGHWAX
+      CWHUMQXBXESULUNPZUQXEWGWHXCWGVBHWAXDWGVCURZXDWHVBHWAXCWHVCQZUSTWAXCXDUHUT
+      XEXHWHJXEXHXKREWHXEWJXKRXLUQXEWGWHXMXNVATWAXCXDUIUTVDWKWCXGWEXIWKWBXFJVTW
+      JIVEVFWKWDXHJVTWJRVEVFVGVHVIVJVKVMVTVLXBWNWMVNSVTDBCVOVPVQVR $.
   $}
 
   ${
@@ -856876,8 +856876,8 @@ $)
     $( The basic ` N ` -th root of unity.  (Contributed by AV, 24-Oct-2026.) $)
     bruval $p |- ( N e. NN
                 -> ( bRoU ` N ) = ( exp ` ( ( 2 x. ( _pi x. _i ) ) / N ) ) ) $=
-    ( vn c2 cpi ci cmul co cv cdiv ce cfv cn cbru wceq oveq2 fveq2d df-bru fvex
-    fvmpt ) BACDEFGFGZBHZIGZJKTAIGZJKLMUAANUBUCJUAATIOPBQUCJRS $.
+      ( vn c2 cpi ci cmul co cv cdiv ce cfv cbru wceq oveq2 fveq2d df-bru fvmpt
+      cn fvex ) BACDEFGFGZBHZIGZJKTAIGZJKRLUAAMUBUCJUAATINOBPUCJSQ $.
   $}
 
   $( The basic ` N ` -th root of unity is a complex number.  (Contributed by
@@ -856914,7 +856914,7 @@ $)
     ( cn wcel cbru cfv cexp co c1 cneg cdiv ccxp bruval2 oveq1d root1id eqtrd
     c2 ) ABCZADEZAFGHIPAJGKGZAFGHQRSAFALMANO $.
 
-  $( The basic (and only) 1st root of unity is 1. (Contributed by AV,
+  $( The basic (and only) 1st root of unity is 1.  (Contributed by AV,
      24-Oct-2026.) $)
   bru1 $p |- ( bRoU ` 1 ) = 1 $=
     ( c1 cbru cfv cneg c2 cdiv co ccxp cn wcel wceq 1nn bruval2 ax-mp 2cn div1i
@@ -856922,17 +856922,26 @@ $)
     ABCZADZEAFGZHGZAAIJUJUMKLAMNUMUKEHGZAULEUKHEOPQUNUKERGZAUKSJUKUAUBEUCJUNUOK
     UDUEUFUKEUGUHUITTT $.
 
-  $( The basic 2nd root of unity is ` -u 1 `. (Contributed by AV,
+  $( The basic 2nd root of unity is ` -u 1 ` .  (Contributed by AV,
      24-Oct-2026.) $)
   bru2 $p |- ( bRoU ` 2 ) = -u 1 $=
     ( c2 cbru cfv c1 cneg cdiv co ccxp cn wcel 2nn bruval2 ax-mp 2div2e1 oveq2i
     wceq cc neg1cn cxp1 3eqtri ) ABCZDEZAAFGZHGZUBDHGZUBAIJUAUDPKALMUCDUBHNOUBQ
     JUEUBPRUBSMT $.
 
+  $( The basic 2nd root of unity is ` _i ` .  (Contributed by AV,
+     27-Oct-2026.) $)
+  bru4 $p |- ( bRoU ` 4 ) = _i $=
+    ( c1 cneg c2 c4 cdiv co ccxp csqrt cbru ci cmul 2t1e2 2t2e4 oveq12i cc wcel
+    cfv wceq 2cnne0 ax-mp cc0 wne wa ax-1cn divcan5 mp3an eqtr3i oveq2i cxpsqrt
+    neg1cn eqtri cn 4nn bruval2 sqrtm1 3eqtr4i ) ABZCDEFZGFZUQHQZDIQZJUSUQACEFZ
+    GFZUTURVBUQGCAKFZCCKFZEFZURVBVDCVEDELMNAOPCOPCUAUBUCZVGVFVBRUDSSACCUEUFUGUH
+    UQOPVCUTRUJUQUITUKDULPVAUSRUMDUNTUOUP $.
+
   ${
     bru3eq.w $e |- W = ( bRoU ` 3 ) $.
-    $( An alternate way to express the basic 3rd root of unity. (Contributed by
-       AV, 24-Oct-2026.) $)
+    $( An alternate way to express the basic 3rd root of unity.  (Contributed
+       by AV, 24-Oct-2026.) $)
     bru3val $p |- W = ( ( -u 1 + ( _i x. ( sqrt ` 3 ) ) ) / 2 ) $=
       ( c3 cfv c2 cpi cmul co cdiv ccos ci csin caddc wceq 2cn 2ne0 oveq2i cmin
       c1 3eqtri cbru cneg csqrt cn wcel 3nn bruval3 ax-mp ax-icn 3pos sqrtpclii
@@ -856952,9 +856961,9 @@ $)
       YHYIVSUUDUUFNVFYGXIXTYFGWKUHQUUFUUGEGUUGUUFXIEXDEXKOPVBZOPWLWEQXIEUUHOPWM
       TTQWNWOT $.
 
-    $( The complex conjugate of the basic 3rd root of unity. (Contributed by
+    $( The complex conjugate of the basic 3rd root of unity.  (Contributed by
        AV, 24-Oct-2026.) $)
-    bru3cj $p |-  ( * ` W ) = ( W ^ 2 ) $=
+    bru3cj $p |- ( * ` W ) = ( W ^ 2 ) $=
       ( ccj cfv c1 cneg c2 c3 co cexp wcel wceq ax-mp eqtri fveq2i cc wa pm3.2i
       3nn eqcomi cdiv ccxp cmin cbru cn bruval2 neg1cn 2cn 3cn 3ne0 divcli exp1
       cxpcl cz 1z root1cj 3m1e2 oveq12i 3eqtri ) ACDEFZGHUAIZUBIZCDZVBHEUCIZJIZ
@@ -856962,7 +856971,7 @@ $)
       APKZQVKVLVMUGGHUHUIUJUKRUTVAUMMVBULMTOVGEUNKZQVJVELVGVNSUOREHUPMNVBAVDGJA
       VBVHTUQURUS $.
 
-    $( The square of the basic 3rd root of unity. (Contributed by AV,
+    $( The square of the basic 3rd root of unity.  (Contributed by AV,
        24-Oct-2026.) $)
     bru3sq $p |- ( W ^ 2 ) = ( ( -u 1 / 2 )
                                - ( _i x. ( ( sqrt ` 3 ) / 2 ) ) ) $=
@@ -856974,7 +856983,7 @@ $)
       QULUMUNNVDSRVFSRVLVHUOVCUPTVEVNTVDVFUQURUSUT $.
 
     $( The basic 3rd root of unity ` _om ` satisfies the equation
-       ` _om ^ 2 + _om + 1 = 0 `. (Contributed by AV, 24-Oct-2026.) $)
+       ` _om ^ 2 + _om + 1 = 0 ` .  (Contributed by AV, 24-Oct-2026.) $)
     bru3eq $p |- ( ( ( W ^ 2 ) + W ) + 1 ) = 0 $=
       ( c2 co caddc c1 cneg cdiv ci cmul cc0 oveq1i wcel ax-1cn 2cn 2ne0 oveq2i
       cc eqtri ax-icn cexp c3 csqrt cfv cmin bru3sq bru3val oveq12i wceq divneg
@@ -856988,7 +856997,7 @@ $)
       QVTVQVGUKSLFFNNVHVIWGKGKWFKVLUOVJSVM $.
 
     $( The square of the basic 3rd root of unity expressed by the basic 3rd
-       root of unity. (Contributed by AV, 24-Oct-2026.) $)
+       root of unity.  (Contributed by AV, 24-Oct-2026.) $)
     bru3sqbru $p |- ( W ^ 2 ) = ( -u 1 - W ) $=
       ( c2 cexp co c1 caddc cneg cmin cc0 wceq cc wcel wa addcom cxp ax-addf c3
       ax-1cn mp2an fdmi ndmovcom pm2.61i oveq2i cbru cfv cn brucn ax-mp eqeltri
@@ -856997,6 +857006,57 @@ $)
       AOFALGLLPLGQUAUBUCUDVBAFAARUEUFZLBRUGMVLLMUKRUHUIUJZULZVMSUMABUNUOVBLMVCL
       MVGVHUPVNFASVMUQVBVCURTUSVJVKVDVEKSVMFAUTTVA $.
   $}
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Eisenstein integers
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+
+  According to Wikipedia ("Eisenstein integer", 27-Oct-2026,
+  ~ https://en.wikipedia.org/wiki/Eisenstein_integer ) "the Eisenstein integers
+  (named after Gotthold Eisenstein) ... are the complex numbers of the form
+  ` z = a + b _om ` where ` a ` and ` b ` are integers and `_om ` is a
+  primitive (hence non-real) cube root of unity."  With the definitions of
+  "Basic ` N ` -th root of unity" and "Adjunction of a complex number to the
+  ring of integers", the set of Eisenstein integers can be denoted by
+  ` ( Z[] `` ( bRoU `` 3 ) ) `.  Compare with the set of Gaussian integers
+  ` Z[i] = ( Z[] `` _i ) = ( Z[] `` ( bRoU `` 4 ) ) `, see ~ df-gz ,~ gziaz
+  and ~ bru4 .
+
+$)
+
+  $( The square of the basic 3rd root of unity is an Eisenstein integer.
+     (Contributed by AV, 26-Oct-2026.) $)
+  ezsqelaz $p |- ( ( bRoU ` 3 ) ^ 2 ) e. ( Z[] ` ( bRoU ` 3 ) ) $=
+    ( c3 cbru cfv c2 cexp co c1 cneg cmin caz eqid bru3sqbru cc wa cn 3nn brucn
+    wcel ax-mp cz neg1z zelaz mp2an adcnelaz pm3.2i azsubcl mp2 eqeltri ) ABCZD
+    EFGHZUIIFZUIJCZUIUIKLUIMRZUJULRZUIULRZNUKULRAORUMPAQSZUNUOUMUJTRUNUPUAUJUIU
+    BUCUMUOUPUIUDSUEUJUIULUIULKUFUGUH $.
+
+  ${
+    $d a b $.
+    $( The Eisenstein integers form a subring of the complex numbers.
+       (Contributed by AV, 26-Oct-2026.) $)
+    ezsubrg $p |- ( Z[] ` ( bRoU ` 3 ) ) e. ( SubRing ` CCfld ) $=
+      ( va vb c3 cbru cfv caz cc wcel cv wi cn 3nn brucn ax-mp azcn wa caddc co
+      c1 mp2an eqid azaddcl cneg aznegcl cz 1z zelaz cexp cmul ezsqelaz azmulcl
+      c2 cnsubrglem ) ABCDEZFEZUNGHZAIZUOHZUQGHJCKHUPLCMNZUQUNONUPURBIZUOHPZUQU
+      TQRUOHJUSUQUTUOUNUOUAZUBNUPURUQUCUOHJUSUQUOUNVBUDNUPSUEHSUOHUSUFSUNUGTUPU
+      NULUHRUOHVAUQUTUIRUOHJUSUJUQUTUOUNVBUKTUM $.
+  $}
+
+  $( The Eisenstein integers are a subset of the complex numbers.  (Contributed
+     by AV, 26-Oct-2026.) $)
+  ezsscn $p |- ( Z[] ` ( bRoU ` 3 ) ) C_ CC $=
+    ( c3 cbru cfv caz ccnfld csubrg wcel cc wss ezsubrg subrgccsscc ax-mp ) ABC
+    DCZEFCGMHIJMKL $.
+
+  $( The Eisenstein integers form an integral domain.  (Contributed by AV,
+     26-Oct-2026.) $)
+  ezidom $p |- ( CCfld |`s ( Z[] ` ( bRoU ` 3 ) ) ) e. IDomn $=
+    ( ccnfld c3 cbru cfv caz cress co eqid ezsubrg subrgccidom ) ABCDEDZFGZKLHI
+    J $.
 
 
 $(
