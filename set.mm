@@ -67721,9 +67721,8 @@ $)
     cdm fvimacnv funfni pm5.32da bitr4d ) DAEZBDFCGZHZBAHZUEIUFBDJCHZIUCUEUFUEB
     DRZHUCUFUDUHBDCKLUCUHABADMNOPUCUFUGUEUGUEQABDBCDSTUAUB $.
 
-  $( Obsolete version of ~ elpreima as of 22-Oct-2026.  Membership in the
-     preimage of a set under a function.  (Contributed by Jeff Madsen,
-     2-Sep-2009.)  (Proof modification is discouraged.)
+  $( Obsolete version of ~ elpreima as of 22-Oct-2026.  (Contributed by Jeff
+     Madsen, 2-Sep-2009.)  (Proof modification is discouraged.)
      (New usage is discouraged.) $)
   elpreimaOLD $p |- ( F Fn A -> ( B e. ( `' F " C )
                               <-> ( B e. A /\ ( F ` B ) e. C ) ) ) $=
