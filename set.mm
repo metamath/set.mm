@@ -133326,6 +133326,24 @@ $)
   $}
 
   ${
+    addmuldir1d.a $e |- ( ph -> A e. CC ) $.
+    addmuldir1d.b $e |- ( ph -> B e. CC ) $.
+    addmuldir1d.c $e |- ( ph -> C e. CC ) $.
+    addmuldir1d.d $e |- ( ph -> D e. CC ) $.
+    addmuldir1d.e $e |- ( ph -> E e. CC ) $.
+    addmuldir1d.f $e |- ( ph -> F e. CC ) $.
+    $( Distributive law with summands being products.  (Contributed by AV,
+       25-Oct-2026.) $)
+    addmuldir1d $p |- ( ph -> ( ( A + ( B x. C ) ) x. ( D + ( E x. F ) ) )
+           = ( ( ( A x. D ) + ( A x. ( E x. F ) ) )
+               + ( ( D x. ( B x. C ) ) + ( ( B x. C ) x. ( E x. F ) ) ) ) ) $=
+      ( cmul co caddc mulcld muladdd add42d oveq2d mulcomd 3eqtrd ) ABCDNOZPOEF
+      GNOZPONOBENOZUDUCNOZPOBUDNOZEUCNOZPOPOUEUGPOZUHUFPOZPOUIUHUCUDNOZPOZPOABU
+      CEUDHACDIJQZKAFGLMQZRAUEUFUGUHABEHKQAUDUCUNUMQABUDHUNQAEUCKUMQSAUJULUIPAU
+      FUKUHPAUDUCUNUMUATTUB $.
+  $}
+
+  ${
     muls1d.1 $e |- ( ph -> A e. CC ) $.
     muls1d.2 $e |- ( ph -> B e. CC ) $.
     $( Multiplication by one minus a number.  (Contributed by Scott Fenton,
@@ -158953,6 +158971,26 @@ $)
     UQFGZUNIGUOUSULVAUMUNIULVAAUQBHGZFGZUMUJUKUQCDZVAVCLUKVDUJJCDUKVDMJBNOPZABU
     QQRULVBBAFUKVBBLUJBSPUAUBTULUNUQUNABUCZVEVFUDUEABUFULUTUPURFULUNCDUTUPLVFUN
     UIUGTUH $.
+
+  ${
+    addmuldir2d.a $e |- ( ph -> A e. CC ) $.
+    addmuldir2d.b $e |- ( ph -> B e. CC ) $.
+    addmuldir2d.c $e |- ( ph -> C e. CC ) $.
+    addmuldir2d.d $e |- ( ph -> D e. CC ) $.
+    addmuldir2d.e $e |- ( ph -> E e. CC ) $.
+    $( Distributive law with summands being products with a common factor.
+       (Contributed by AV, 25-Oct-2026.) $)
+    addmuldir2d $p |- ( ph -> ( ( A + ( B x. C ) ) x. ( D + ( E x. C ) ) )
+                      = ( ( ( A x. D ) + ( ( ( A x. E ) + ( D x. B ) ) x. C ) )
+                                       + ( ( B x. E ) x. ( C ^ 2 ) ) ) ) $=
+      ( cmul co caddc mulcld addassd mulassd oveq12d oveq2d eqtrd addcld eqtr2d
+      c2 cexp addmuldir1d adddird mul4d cc wcel wceq sqval eqcomd syl 3eqtr2d )
+      ABCDLMZNMEFDLMZNMLMBELMZBUPLMZNMZEUOLMZUOUPLMZNMNMUSUTNMZVANMUQBFLMZECLMZ
+      NMDLMZNMZCFLMZDUCUDMZLMZNMABCDEFDGHIJKIUEAUSUTVAAUQURABEGJOZABUPGAFDKIOZO
+      ZUAAEUOJACDHIOZOZAUOUPVMVKOPAVBVFVAVINAVBUQURUTNMZNMVFAUQURUTVJVLVNPAVOVE
+      UQNAVEVCDLMZVDDLMZNMVOAVCVDDABFGKOAECJHOIUFAVPURVQUTNABFDGKIQAECDJHIQRUBS
+      TAVAVGDDLMZLMVIACDFDHIKIUGAVRVHVGLADUHUIZVRVHUJIVSVHVRDUKULUMSTRUN $.
+  $}
 
   ${
     binom2.1 $e |- A e. CC $.
@@ -494538,6 +494576,9 @@ htmldef "RngCatALTV" as 'RngCatALTV';
 htmldef "RingCatALTV" as 'RingCatALTV';
  althtmldef "RingCatALTV" as 'RingCatALTV';
  latexdef "RingCatALTV" as "\mathrm{RingCatALTV}";
+htmldef "Z[]" as 'Z[]';
+ althtmldef "Z[]" as 'Z[]';
+ latexdef "Z[]" as "\mathrm{Z[]}";
 htmldef "PrmRing" as
   "<IMG SRC='_prring.gif' WIDTH=45 HEIGHT=19 ALT=' PrmRing' TITLE='PrmRing'>";
   althtmldef "PrmRing" as "PrmRing";
@@ -856506,14 +856547,317 @@ $)
       WQWREDWRWLWOUSWJ $.
   $}
 
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Subrings of the complex numbers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( A subring of the complex numbers is a subset of the complex numbers.
+     (Contributed by AV, 26-Oct-2026.) $)
+  subrgccsscc $p |- ( S e. ( SubRing ` CCfld ) -> S C_ CC ) $=
+    ( cc ccnfld cnfldbas subrgss ) ABCDE $.
+
+  ${
+    subrgcccrng.r $e |- R = ( CCfld |`s S ) $.
+    subrgcccrng.s $e |- S e. ( SubRing ` CCfld ) $.
+    $( A subring of the complex numbers is a commutative ring.  (Contributed by
+       AV, 26-Oct-2026.) $)
+    subrgcccrng $p |- R e. CRing $=
+      ( ccnfld ccrg wcel csubrg cfv cncrng subrgcrng mp2an ) EFGBEHIGAFGJDBEACK
+      L $.
+
+    $( The zero of a subring of the complex numbers.  (Contributed by AV,
+       26-Oct-2026.) $)
+    subrgcccrng0 $p |- 0 = ( 0g ` R ) $=
+      ( ccnfld csubrg cfv wcel cc0 c0g wceq cnfld0 subrg0 ax-mp ) BEFGHIAJGKDBE
+      AICLMN $.
+
+    $( The one of a subring of the complex numbers.  (Contributed by AV,
+       26-Oct-2026.) $)
+    subrgcccrng1 $p |- 1 = ( 1r ` R ) $=
+      ( ccnfld csubrg cfv wcel c1 cur wceq cnfld1 subrg1 ax-mp ) BEFGHIAJGKDBEA
+      ICLMN $.
+
+    $( A subring of the complex numbers is a nonzero ring.  (Contributed by AV,
+       26-Oct-2026.) $)
+    subrgccnzr $p |- R e. NzRing $=
+      ( cnzr wcel crg c1 cc0 wne ccrg subrgcccrng crngring ax-1ne0 subrgcccrng1
+      ax-mp subrgcccrng0 isnzr mpbir2an ) AEFAGFZHIJAKFTABCDLAMPNAHIABCDOABCDQR
+      S $.
+
+    $d R x y $.  $d S x y $.
+    $( A subring of the complex numbers is a domain.  (Contributed by AV,
+       26-Oct-2026.) $)
+    subrgccdom $p |- R e. Domn $=
+      ( vx vy cdomn wcel cv cmul co cc0 wceq wral ccnfld cfv ax-mp sseli cmulr
+      cc cnzr wo wi subrgccnzr wa wb csubrg wss subrgccsscc mul0or syl2an rgen2
+      biimpd cnfldsrngbas eqid cnfldsrngmul fveq2i eqtr4i subrgcccrng0 mpbir2an
+      cbs cress isdomn ) AGHAUAHEIZFIZJKLMZVDLMVELMUBZUCZFBNEBNABCDUDVHEFBBVDBH
+      ZVEBHZUEVFVGVIVDTHVETHVFVGUFVJBTVDBOUGPZHZBTUHZDBUIQZRBTVEVNRVDVEUJUKUMUL
+      EFBAJLVMBAVAPMVNABCUNQJOBVBKZSPZASPVLJVPMDVOBVKVOUOUPQAVOSCUQURABCDUSVCUT
+      $.
+
+    $( A subring of the complex numbers is an integral domain.  (Contributed by
+       AV, 26-Oct-2026.) $)
+    subrgccidom $p |- R e. IDomn $=
+      ( cidom wcel ccrg cdomn subrgcccrng subrgccdom isidom mpbir2an ) AEFAGFAH
+      FABCDIABCDJAKL $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Adjunction of a complex number to the ring of integers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c Z[] $.
+
+  $( Extend class notation with the adjunctions of a complex number to the ring
+     of integers. $)
+  caz $a class Z[] $.
+
+  ${
+    $d a b s x $.
+    $( Define the mapping yielding the adjunctions of a complex number to the
+       ring of integers.  Analogous to ~ df-gz .  (Contributed by AV,
+       24-Oct-2026.) $)
+    df-az $a |- Z[] = ( s e. CC |-> { x e. CC | E. a e. ZZ E. b e. ZZ
+                                      x = ( a + ( b x. s ) ) } ) $.
+  $}
+
+  ${
+    $d S a b s x $.
+    $( An adjunction of a complex number to the ring of integers.  (Contributed
+       by AV, 24-Oct-2026.) $)
+    azval $p |- ( S e. CC -> ( Z[] ` S ) = { x e. CC | E. a e. ZZ E. b e. ZZ
+                                             x = ( a + ( b x. S ) ) } ) $=
+      ( vs cv cmul co caddc wceq cz wrex crab caz oveq2 oveq2d 2rexbidv rabbidv
+      cc eqeq2d df-az cnex rabex fvmpt ) EBAFZCFZDFZEFZGHZIHZJZDKLCKLZASMUEUFUG
+      BGHZIHZJZDKLCKLZASMSNUHBJZULUPASUQUKUOCDKKUQUJUNUEUQUIUMUFIUHBUGGOPTQRAEC
+      DUAUPASUBUCUD $.
+  $}
+
+  ${
+    $d A a b x $.  $d S a b x $.
+    $( Elementhood in an adjunction of a complex number to the ring of
+       integers.  Such an elemenzt is called "adjuncted integer" in the
+       following.  (Contributed by AV, 24-Oct-2026.) $)
+    elaz $p |- ( S e. CC -> ( A e. ( Z[] ` S ) <-> ( A e. CC
+                       /\ E. a e. ZZ E. b e. ZZ A = ( a + ( b x. S ) ) ) ) ) $=
+      ( vx cc wcel caz cfv cv cmul co caddc wceq cz wrex crab wa azval eleq2d
+      eqeq1 2rexbidv eqid elrab2 bitrdi ) BFGZABHIZGAEJZCJDJBKLMLZNZDOPCOPZEFQZ
+      GAFGAUINZDOPCOPZRUFUGULAEBCDSTUKUNEAFULUHANUJUMCDOOUHAUIUAUBULUCUDUE $.
+  $}
+
+  ${
+    $d A a b $.  $d S a b $.
+    $( Representation of an "adjuncted integer".  (Contributed by AV,
+    25-Oct-2026.) $)
+    elazim $p |- ( ( S e. CC /\ A e. ( Z[] ` S ) )
+                   -> E. a e. ZZ E. b e. ZZ A = ( a + ( b x. S ) ) ) $=
+      ( cc wcel caz cfv cv cmul co caddc wceq cz wrex elaz simplbda ) BEFABGHFA
+      EFACIDIBJKLKMDNOCNOABCDPQ $.
+
+    $( An adjuncted integer is a complex number.  (Contributed by AV,
+       24-Oct-2026.) $)
+    azcn $p |- ( S e. CC -> ( A e. ( Z[] ` S ) -> A e. CC ) ) $=
+      ( va vb cc wcel caz cfv cv cmul co caddc wceq cz wrex elaz simpl biimtrdi
+      wa ) BEFABGHFAEFZACIDIBJKLKMDNOCNOZSTABCDPTUAQR $.
+
+    $( An integer is an adjuncted integer.  (Contributed by AV,
+       24-Oct-2026.) $)
+    zelaz $p |- ( ( S e. CC /\ A e. ZZ ) -> A e. ( Z[] ` S ) ) $=
+      ( va vb cc wcel cz wa caz cfv cv cmul co caddc wceq wrex cc0 oveq1 eqeq2d
+      oveq2d zcn adantl simpr 0zd simpl mul02d addridd eqtr2d 2rspcedvdw adantr
+      wb elaz mpbir2and ) BEFZAGFZHZABIJFZAEFZACKZDKZBLMZNMZOZDGPCGPZUOURUNAUAU
+      BZUPVCAAVANMZOAAQBLMZNMZOCDAQGGUSAOVBVFAUSAVANRSUTQOZVFVHAVIVAVGANUTQBLRT
+      SUNUOUCUPUDUPVHAQNMAUPVGQANUPBUNUOUEUFTUPAVEUGUHUIUNUQURVDHUKUOABCDULUJUM
+      $.
+  $}
+
+  ${
+    $d C a b $.  $d S a b $.
+    $( The adjuncted complex number multiplied with an integer is an adjuncted
+       integer. (Contributed by AV, 25-Oct-2026.) $)
+    adcnmulzaz $p |- ( ( S e. CC /\ C e. ZZ ) -> ( C x. S ) e. ( Z[] ` S ) ) $=
+      ( va vb cc wcel cz wa cmul co caz cfv cv caddc wceq wrex zcn oveq1 eqeq2d
+      cc0 adantl simpl mulcld oveq2d 0zd simpr addlidd eqcomd 2rspcedvdw adantr
+      wb elaz mpbir2and ) BEFZAGFZHZABIJZBKLFZUQEFZUQCMZDMZBIJZNJZOZDGPCGPZUPAB
+      UOAEFUNAQUAUNUOUBUCZUPVDUQTVBNJZOUQTUQNJZOCDTAGGUTTOVCVGUQUTTVBNRSVAAOZVG
+      VHUQVIVBUQTNVAABIRUDSUPUEUNUOUFUPVHUQUPUQVFUGUHUIUNURUSVEHUKUOUQBCDULUJUM
+      $.
+  $}
+
+  $( The adjuncted complex number is an adjuncted integer.  (Contributed by AV,
+     25-Oct-2026.) $)
+  adcnelaz $p |- ( S e. CC -> S e. ( Z[] ` S ) ) $=
+    ( cc wcel c1 cmul co caz cfv mullid cz 1z adcnmulzaz mpan2 eqeltrrd ) ABCZD
+    AEFZAAGHZAIODJCPQCKDALMN $.
+
+  ${
+    $d A a b $.  $d B a b $.  $d S a b $.
+    $( Construct an adjuncted integer.  (Contributed by AV, 25-Oct-2026.) $)
+    azlinz $p |- ( S e. CC -> ( ( A e. ZZ /\ B e. ZZ )
+                                -> ( A + ( B x. S ) ) e. ( Z[] ` S ) ) ) $=
+    ( va vb cc wcel cz wa cmul co caddc wceq wrex zcn adantr adantl simpl oveq1
+    cv caz cfv mulcld addcld eqeq2d oveq2d simprr eqidd 2rspcedvdw wb mpbir2and
+    elaz ex ) CFGZAHGZBHGZIZABCJKZLKZCUAUBGZUNUQIZUTUSFGZUSDTZETZCJKZLKZMZEHNDH
+    NZVAAURUQAFGZUNUOVIUPAOPQVABCUQBFGZUNUPVJUOBOQQUNUQRUCUDVAVGUSAVELKZMUSUSMD
+    EABHHVCAMVFVKUSVCAVELSUEVDBMZVKUSUSVLVEURALVDBCJSUFUEUQUOUNUOUPRQUNUOUPUGVA
+    USUHUIUNUTVBVHIUJUQUSCDEULPUKUM $.
+  $}
+
+  ${
+    $d S a b s $.
+    $( The adjunction of an integer to the ring of integers yields the
+       integers.  (Contributed by AV, 25-Oct-2026.) $)
+    adcnaz $p |- ( S e. ZZ -> ( Z[] ` S ) = ZZ ) $=
+    ( vs va vb cz wcel caz cfv cv cc cmul co caddc wceq wrex wa wb zcn elaz syl
+    simprl simpr zmulcl syl2anr zaddcld syl5ibrcom rexlimdvva expimpd sylbid wi
+    simpl eleq1 zelaz ex impbid eqrdv ) AEFZBAGHZEUQBIZURFZUSEFZUQUTUSJFZUSCIZD
+    IZAKLZMLZNZDEOCEOZPZVAUQAJFZUTVIQARZUSACDSTUQVBVHVAUQVBPZVGVACDEEVLVCEFZVDE
+    FZPZPZVAVGVFEFVPVCVEVLVMVNUAVOVNUQVEEFVLVMVNUBUQVBUKVDAUCUDUEUSVFEULUFUGUHU
+    IUQVJVAUTUJVKVJVAUTUSAUMUNTUOUP $.
+  $}
+
+  ${
+    $d a b s $.
+    $( The Gaussian integers are the adjunction of ` _i ` to the ring of
+       integers. (Contributed by AV, 25-Oct-2026.) $)
+    gziaz $p |- Z[i] = ( Z[] ` _i ) $=
+    ( vs va vb ci cfv cv cc wcel cre cz cim cmul co caddc wceq wa oveq2d ax-icn
+    ad2antll eqtrd cgz caz wrex 3anass oveq1 eqeq2d simprl simprr simpl replimd
+    w3a a1i zcn mulcomd 2rspcedvdw ex fveq2d ad2antrl crred eqeltrd crimd fveq2
+    zre jca eleq1d anbi12d syl5ibrcom rexlimdvva impbid pm5.32i bitri elgz elaz
+    cr wb ax-mp 3bitr4i eqriv ) AUADUBEZAFZGHZVTIEZJHZVTKEZJHZUKZWAVTBFZCFZDLMZ
+    NMZOZCJUCBJUCZPZVTUAHVTVSHZWFWAWCWEPZPZWMWAWCWEUDWAWOWLWAWOWLWAWOWLWPWKVTWB
+    WINMZOVTWBWDDLMZNMZOBCWBWDJJWGWBOWJWQVTWGWBWINUEUFWHWDOZWQWSVTWTWIWRWBNWHWD
+    DLUEQUFWAWCWEUGWAWCWEUHWPVTWBDWDLMZNMWSWPVTWAWOUIUJWPXAWRWBNWPDWDDGHZWPRULW
+    EWDGHWAWCWDUMSUNQTUOUPWAWKWOBCJJWAWGJHZWHJHZPPZWOWKWJIEZJHZWJKEZJHZPXEXGXIX
+    EXFWGJXEXFWGDWHLMZNMZIEWGXEWJXKIXEWIXJWGNXEWHDXDWHGHWAXCWHUMSXBXERULUNQZUQX
+    EWGWHXCWGVNHWAXDWGVCURZXDWHVNHWAXCWHVCSZUSTWAXCXDUGUTXEXHWHJXEXHXKKEWHXEWJX
+    KKXLUQXEWGWHXMXNVATWAXCXDUHUTVDWKWCXGWEXIWKWBXFJVTWJIVBVEWKWDXHJVTWJKVBVEVF
+    VGVHVIVJVKVTVLXBWNWMVORVTDBCVMVPVQVR $.
+  $}
+
+  ${
+    $d A a b $.  $d R a b $.  $d S a b $.
+    aznegcl.r $e |- R = ( Z[] ` S ) $.
+    $( The adjuncted integers are closed under negation.  (Contributed by AV,
+       25-Oct-2026.) $)
+    aznegcl $p |- ( S e. CC -> ( A e. R -> -u A e. R ) ) $=
+      ( va vb wcel cc cneg wa cv cmul co caddc cz wrex zcn adantr adantl znegcl
+      caz cfv eleq2i wceq elazim negeq simpl mulcl syl2anr negdid eqcomd oveq2d
+      mulneg1d sylan9eqr anim12i azlinz imp syl2an eleqtrrdi eqeltrd rexlimdvva
+      eqtrd ex mpd biimtrid ) ABGACUAUBZGZCHGZAIZBGZBVFADUCVHVGVJVHVGJZAEKZFKZC
+      LMZNMZUDZFOPEOPVJACEFUEVKVPVJEFOOVKVLOGZVMOGZJZJZVPVJVTVPJVIVLIZVMIZCLMZN
+      MZBVPVTVIVOIZWDAVOUFVTWEWAVNIZNMWDVTVLVNVSVLHGZVKVQWGVRVLQRSVSVMHGZVHVNHG
+      VKVRWHVQVMQSZVHVGUGZVMCUHUIUJVTWFWCWANVTWCWFVTVMCVSWHVKWISVKVHVSWJRUMUKUL
+      VBUNVTWDBGVPVTWDVFBVKVHWAOGZWBOGZJZWDVFGZVSWJVQWKVRWLVLTVMTUOVHWMWNWAWBCU
+      PUQURDUSRUTVCVAVDVCVE $.
+
+    $d B a b $.
+    $( The adjuncted integers are closed under multiplication with an integer.
+       (Contributed by AV, 25-Oct-2026.) $)
+    azmulzcl $p |- ( S e. CC -> ( ( B e. ZZ /\ A e. R )
+                                  -> ( B x. A ) e. R ) ) $=
+      ( va vb cc wcel cz cmul co wa cv caddc wceq wrex adantr zcn adantl eleq2i
+      caz wi elazim ex biimtrid simpll mulassd eqcomd oveq2d ad2ant2lr ad2ant2l
+      cfv zmulcl jca azlinz sylc eqeltrd simpl mulcl syl2anr adddid a1i 3eltr4d
+      oveq2 eleq1d syl5ibrcom rexlimdvva syld expimpd ) DHIZBJIZACIZBAKLZCIZVKV
+      LMZVMAFNZGNZDKLZOLZPZGJQFJQZVOVMADUBUMZIZVPWBCWCAEUAVKWDWBUCVLVKWDWBADFGU
+      DUERUFVPWAVOFGJJVPVQJIZVRJIZMZMZVOWABVTKLZCIWHBVQKLZBVSKLZOLZWCWICWHWLWJB
+      VRKLZDKLZOLZWCWHWKWNWJOWHWNWKWHBVRDVPBHIZWGVLWPVKBSTRZWGVRHIZVPWFWRWEVRST
+      ZTVKVLWGUGZUHUIUJWHVKWJJIZWMJIZMWOWCIWTWHXAXBVLWEXAVKWFBVQUNUKVLWFXBVKWEB
+      VRUNULUOWJWMDUPUQURWHBVQVSWQWGVQHIZVPWEXCWFVQSRTWGWRVKVSHIVPWSVKVLUSVRDUT
+      VAVBCWCPWHEVCVDWAVNWICAVTBKVEVFVGVHVIVJ $.
+
+    $d A a b c d $.  $d B c d $.  $d R c d $.  $d S c d $.
+    $( The adjuncted integers are closed under addition.  (Contributed by AV,
+       25-Oct-2026.) $)
+    azaddcl $p |- ( S e. CC -> ( ( A e. R /\ B e. R ) -> ( A + B ) e. R ) ) $=
+      ( va vb vc vd wcel wa cc caddc co cv cmul wceq cz wrex zcn caz cfv eleq2i
+      anbi12i elazim ex simpl adantr adantl zaddcl syl2an simpr jca azlinz sylc
+      wi ad2antrl ad2antll mulcld add4d adddird eqcomd oveq2d eqtrd a1i 3eltr4d
+      wb oveq12 eleq1d ancoms syl5ibrcom expd rexlimdvva com23 syl2and biimtrid
+      impd ) ACJZBCJZKADUAUBZJZBVTJZKDLJZABMNZCJZVRWAVSWBCVTAEUCCVTBEUCUDWCWAAF
+      OZGOZDPNZMNZQZGRSFRSZWBBHOZIOZDPNZMNZQZIRSHRSZWEWCWAWKADFGUEUFWCWBWQBDHIU
+      EUFWCWKWQWEWCWJWQWEUPFGRRWCWFRJZWGRJZKZKZWQWJWEXAWPWJWEUPHIRRXAWLRJZWMRJZ
+      KZKZWPWJWEXEWEWPWJKWIWOMNZCJZXEWFWLMNZWGWMMNZDPNZMNZVTXFCXEWCXHRJZXIRJZKX
+      KVTJXAWCXDWCWTUGUHZXEXLXMXAWRXBXLXDWTWRWCWRWSUGUIXBXCUGWFWLUJUKXAWSXCXMXD
+      WTWSWCWRWSULUIXBXCULWGWMUJUKUMXHXIDUNUOXEXFXHWHWNMNZMNXKXEWFWHWLWNXAWFLJZ
+      XDWRXPWCWSWFTUQUHXEWGDXAWGLJZXDWSXQWCWRWGTURUHZXNUSXBWLLJXAXCWLTUQXEWMDXC
+      WMLJXAXBWMTURZXNUSUTXEXOXJXHMXEXJXOXEWGWMDXRXSXNVAVBVCVDCVTQXEEVEVFWJWPWE
+      XGVGWJWPKWDXFCAWIBWOMVHVIVJVKVLVMVNVMVQVOVP $.
+
+    $( The adjuncted integers are closed under subtraction.  (Contributed by
+       AV, 25-Oct-2026.) $)
+    azsubcl $p |- ( S e. CC -> ( ( A e. R /\ B e. R ) -> ( A - B ) e. R ) ) $=
+      ( cc wcel wa cmin co cneg caddc caz cfv wi eleq2i azcn a1dd biimtrid imp
+      imp32 adantld negsubd aznegcl anim2d azaddcl syldan eqeltrrd ex ) DFGZACG
+      ZBCGZHZABIJZCGUJUMHZABKZLJZUNCUOABUJUKULAFGZUKADMNZGZUJULUROCUSAEPUJUTURU
+      LADQRSUAUJUMBFGZUJULVAUKULBUSGUJVACUSBEPBDQSUBTUCUJUMUKUPCGZHZUQCGZUJUMVC
+      UJULVBUKBCDEUDUETUJVCVDAUPCDEUFTUGUHUI $.
+
+    $( The adjuncted integers are closed under multiplication if the square of
+       the adjuncted complex number is an adjuncted integer.  (Contributed by
+       AV, 25-Oct-2026.) $)
+    azmulcl $p |- ( ( S e. CC /\ ( S ^ 2 ) e. R )
+                    -> ( ( A e. R /\ B e. R ) -> ( A x. B ) e. R ) ) $=
+      ( va vb vc vd cc wcel co wa cv cmul caddc cz wrex adantr zcn c2 cexp wceq
+      wi caz cfv eleq2i anbi12i elazim ex anim12d biimtrid oveq12 ancoms adantl
+      ad2antrl ad2antll simplll addmuldir2d simpl zmulcl syl2an zelaz eleqtrrdi
+      syl2anc simpr syl2anr zaddcld adcnmulzaz jca azaddcl sylc simpllr eqeltrd
+      azmulzcl exp32 rexlimdvva com23 impd syld ) DJKZDUAUBLZCKZMZACKZBCKZMZAFN
+      ZGNZDOLPLZUCZGQRFQRZBHNZINZDOLPLZUCZIQRHQRZMZABOLZCKZWAWGWRUDWCWGADUEUFZK
+      ZBXAKZMWAWRWEXBWFXCCXAAEUGCXABEUGUHWAXBWLXCWQWAXBWLADFGUIUJWAXCWQBDHIUIUJ
+      UKULSWDWLWQWTWDWKWQWTUDFGQQWDWHQKZWIQKZMZMZWQWKWTXGWPWKWTUDHIQQXGWMQKZWNQ
+      KZMZMZWPWKWTXKWPWKMZMWSWJWOOLZCXLWSXMUCZXKWKWPXNAWJBWOOUMUNUOXKXMCKXLXKXM
+      WHWMOLZWHWNOLZWMWIOLZPLZDOLZPLZWIWNOLZWBOLZPLZCXKWHWIDWMWNXGWHJKZXJXDYDWD
+      XEWHTUPSXGWIJKZXJXEYEWDXDWITUQSWAWCXFXJURZXHWMJKXGXIWMTUPXIWNJKXGXHWNTUQU
+      SXKWAXTCKZYBCKZMYCCKYFXKYGYHXKWAXOCKZXSCKZMYGYFXKYIYJXKXOXACXKWAXOQKZXOXA
+      KYFXGXDXHYKXJXFXDWDXDXEUTUOZXHXIUTZWHWMVAVBXODVCVEEVDXKXSXACXKWAXRQKXSXAK
+      YFXKXPXQXGXDXIXPQKXJYLXHXIVFZWHWNVAVBXJXHXEXQQKXGYMXFXEWDXDXEVFUOZWMWIVAV
+      GVHXRDVIVEEVDVJXOXSCDEVKVLXKWAYAQKZWCMYHYFXKYPWCXGXEXIYPXJYOYNWIWNVAVBWAW
+      CXFXJVMVJWBYACDEVOVLVJXTYBCDEVKVLVNSVNVPVQVRVQVSVT $.
+
+    $( The adjuncted integers are closed under conjugation if the conjugation
+       of the adjuncted complex number is an adjuncted integer.  (Contributed
+       by AV, 26-Oct-2026.) $)
+    azcjcl $p |- ( ( S e. CC /\ ( * ` S ) e. R )
+                   -> ( A e. R -> ( * ` A ) e. R ) ) $=
+      ( va vb cc wcel ccj cfv wa cv cmul co caddc cz wrex ex adantr adantl wceq
+      caz eleq2i wi elazim biimtrid fveq2 zcn ad2antrl simpl syl2anr cjaddd zre
+      mulcl cr cjred cjmuld oveq1d eqtrd oveq12d sylan9eqr zelaz ad2ant2r simpr
+      eleqtrrdi anim12ci azmulzcl sylc jca azaddcl eqeltrd rexlimdvva syld ) CG
+      HZCIJZBHZKZABHZAELZFLZCMNZONZUAZFPQEPQZAIJZBHZVRACUBJZHZVQWDBWGADUCVNWHWD
+      UDVPVNWHWDACEFUERSUFVQWCWFEFPPVQVSPHZVTPHZKZKZWCWFWLWCKWEVSVTVOMNZONZBWCW
+      LWEWBIJZWNAWBIUGWLWOVSIJZWAIJZONWNWLVSWAWIVSGHVQWJVSUHUIWKVTGHZVNWAGHVQWJ
+      WRWIVTUHTZVNVPUJZVTCUNUKULWLWPVSWQWMOWLVSWIVSUOHVQWJVSUMUIUPWLWQVTIJZVOMN
+      WMWLVTCWKWRVQWSTVQVNWKWTSZUQWLXAVTVOMWLVTWKVTUOHZVQWJXCWIVTUMTTUPURUSUTUS
+      VAWLWNBHZWCWLVNVSBHZWMBHZKXDXBWLXEXFWLVSWGBVNWIVSWGHVPWJVSCVBVCDVEWLVNWJV
+      PKXFXBVQVPWKWJVNVPVDWIWJVDVFVOVTBCDVGVHVIVSWMBCDVJVHSVKRVLVM $.
+  $}
+
+  $( The gaussian integers are closed under multiplication.  Alternate
+     (shorter) proof.  (Contributed by AV, 25-Oct-2026.)
+     (Proof modification is discouraged.)  (New usage is discouraged.) $)
+  gzmulclALT $p |- ( ( A e. Z[i] /\ B e. Z[i] ) -> ( A x. B ) e. Z[i] ) $=
+    ( ci cc wcel c2 cexp co cgz wa cmul wi ax-icn c1 cneg i2 cz neg1z zgz ax-mp
+    eqeltri gziaz azmulcl mp2an ) CDECFGHZIEAIEBIEJABKHIELMUENOZIPUFQEUFIERUFST
+    UAABICUBUCUD $.
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Prime rings (and integral domains)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-  This section contains the definitions and teorems of section "Prime rings and
-  integral domains" in JF's mathbox, transformed into extensible structures.
+  This section contains the definitions and theorems of section "Prime rings
+  and integral domains" in JF's mathbox, transformed into extensible
+  structures.
 
 $)
 
