@@ -723652,6 +723652,18 @@ $)
   $}
 
   ${
+    $d ph w z $.  $d w x z $.  $d w y z $.  $d ps x $.  $d ps y $.
+    cbvex2ivw.1 $e |- ( ( x = z /\ y = w ) -> ( ph -> ps ) ) $.
+    $( One direction of ~ cbvex2vw does not need a DV condition between ` x `
+       and ` y ` .  Idea from ~ relopabVD .  (Contributed by SN,
+       27-Oct-2026.) $)
+    cbvex2ivw $p |- ( E. x E. y ph -> E. z E. w ps ) $=
+      ( wex weq wi ax6evr ex eximdv mpi 19.37v sylib eximii 19.37iv exlimivv )
+      ABFHZEHCDATECEIZATJZEECKUAABJZFHZUBUADFIZFHUDFDKUAUEUCFUAUEUCGLMNABFOPQRS
+      $.
+  $}
+
+  ${
     $d x ph $.
     sbtd.1 $e |- ( ph -> ps ) $.
     $( A true statement is true upon substitution (deduction).  A similar proof
