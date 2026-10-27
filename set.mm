@@ -494579,6 +494579,9 @@ htmldef "RingCatALTV" as 'RingCatALTV';
 htmldef "Z[]" as 'Z[]';
  althtmldef "Z[]" as 'Z[]';
  latexdef "Z[]" as "\mathrm{Z[]}";
+htmldef "bRoU" as 'bRoU';
+ althtmldef "bRoU" as 'bRoU';
+ latexdef "bRoU" as "\mathrm{bRoU}";
 htmldef "PrmRing" as
   "<IMG SRC='_prring.gif' WIDTH=45 HEIGHT=19 ALT=' PrmRing' TITLE='PrmRing'>";
   althtmldef "PrmRing" as "PrmRing";
@@ -856548,9 +856551,9 @@ $)
   $}
 
 $(
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
   Subrings of the complex numbers
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
   $( A subring of the complex numbers is a subset of the complex numbers.
@@ -856607,9 +856610,9 @@ $)
 
 
 $(
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
   Adjunction of a complex number to the ring of integers
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
   $c Z[] $.
@@ -856848,6 +856851,152 @@ $)
     ( ci cc wcel c2 cexp co cgz wa cmul wi ax-icn c1 cneg i2 cz neg1z zgz ax-mp
     eqeltri gziaz azmulcl mp2an ) CDECFGHZIEAIEBIEJABKHIELMUENOZIPUFQEUFIERUFST
     UAABICUBUCUD $.
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Basic ` N ` -th root of unity
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $c bRoU $.
+
+  $( Extend class notation with the mapping yielding the basic ` N ` -th root
+     of unity. $)
+  cbru $a class bRoU $.
+
+  $( Define the mapping yielding the basic ` N ` -th root of unity.  In
+     ~ cxpeq , this is called "the primitive ` N ` -th root of unity with the
+     smallest positive argument".  (Contributed by AV, 24-Oct-2026.) $)
+  df-bru $a |- bRoU = ( n e. NN
+                        |-> ( exp ` ( ( 2 x. ( _pi x. _i ) ) / n ) ) ) $.
+
+  ${
+    $d N n $.
+    $( The basic ` N ` -th root of unity.  (Contributed by AV, 24-Oct-2026.) $)
+    bruval $p |- ( N e. NN
+                -> ( bRoU ` N ) = ( exp ` ( ( 2 x. ( _pi x. _i ) ) / N ) ) ) $=
+    ( vn c2 cpi ci cmul co cv cdiv ce cfv cn cbru wceq oveq2 fveq2d df-bru fvex
+    fvmpt ) BACDEFGFGZBHZIGZJKTAIGZJKLMUAANUBUCJUAATIOPBQUCJRS $.
+  $}
+
+  $( The basic ` N ` -th root of unity is a complex number.  (Contributed by
+     AV, 24-Oct-2026.) $)
+  brucn $p |- ( N e. NN -> ( bRoU ` N ) e. CC ) $=
+    ( cn wcel cbru cfv c2 cpi ci cmul co cdiv bruval 2cn picn ax-icn mulcli a1i
+    ce cc nncn nnne0 divcld efcld eqeltrd ) ABCZADEFGHIJZIJZAKJZRESALUEUHUEUGAU
+    GSCUEFUFMGHNOPPQATAUAUBUCUD $.
+
+  $( An alternate way to express the basic ` N ` -th root of unity, see
+     ~ cxpeq .  (Contributed by AV, 24-Oct-2026.) $)
+  bruval2 $p |- ( N e. NN -> ( bRoU ` N ) = ( -u 1 ^c ( 2 / N ) ) ) $=
+    ( cn wcel c2 cpi ci cmul co cdiv ce cfv cneg clog cbru ccxp a1i picn ax-icn
+    c1 cc 2cn mulcli nncn nnne0 div23d logm1 mulcomi eqtr2i oveq2d eqtrd fveq2d
+    wceq bruval neg1cn cc0 wne neg1ne0 divcld cxpefd 3eqtr4d ) ABCZDEFGHZGHAIHZ
+    JKDAIHZSLZMKZGHZJKANKVEVDOHVAVCVGJVAVCVDVBGHVGVADVBADTCVAUAPZVBTCVAEFQRUBPA
+    UCZAUDZUEVAVBVFVDGVBVFULVAVFFEGHVBUFFERQUGUHPUIUJUKAUMVAVEVDVETCVAUNPVEUOUP
+    VAUQPVADAVHVIVJURUSUT $.
+
+  $( An alternate way to express the basic ` N ` -th root of unity.
+     (Contributed by AV, 24-Oct-2026.) $)
+  bruval3 $p |- ( N e. NN -> ( bRoU ` N ) = ( ( cos ` ( ( 2 x. _pi ) / N ) )
+                              + ( _i x. ( sin ` ( ( 2 x. _pi ) / N ) ) ) ) ) $=
+    ( cn wcel cbru cfv c2 cpi ci cmul co cdiv ce ccos csin wceq picn ax-icn a1i
+    cc 3eqtrd caddc bruval mulcomi oveq2d 2cnd mul12d eqtrd oveq1d 2picn div23d
+    nncn nnne0 div32d fveq2d divcld efival syl ) ABCZADEFGHIJZIJZAKJZLEHFGIJZAK
+    JZIJZLEZVCMEHVCNEIJUAJZAUBURVAVDLURVAHVBIJZAKJHAKJVBIJVDURUTVGAKURUTFHGIJZI
+    JVGURUSVHFIUSVHOURGHPQUCRUDURFHGURUEHSCURQRZGSCURPRUFUGUHURHVBAVIVBSCURUIRZ
+    AUKZAULZUJURHAVBVIVKVJVLUMTUNURVCSCVEVFOURVBAVJVKVLUOVCUPUQT $.
+
+  $( The ` N ` -th power of the basic ` N ` -th root of unity is 1.
+     (Contributed by AV, 24-Oct-2026.) $)
+  bruvalexp $p |- ( N e. NN -> ( ( bRoU ` N ) ^ N ) = 1 ) $=
+    ( cn wcel cbru cfv cexp co c1 cneg cdiv ccxp bruval2 oveq1d root1id eqtrd
+    c2 ) ABCZADEZAFGHIPAJGKGZAFGHQRSAFALMANO $.
+
+  $( The basic (and only) 1st root of unity is 1. (Contributed by AV,
+     24-Oct-2026.) $)
+  bru1 $p |- ( bRoU ` 1 ) = 1 $=
+    ( c1 cbru cfv cneg c2 cdiv co ccxp cn wcel wceq 1nn bruval2 ax-mp 2cn div1i
+    oveq2i cexp cc eqtri cc0 wne cz neg1cn neg1ne0 2z cxpexpz mp3an neg1sqe1 )
+    ABCZADZEAFGZHGZAAIJUJUMKLAMNUMUKEHGZAULEUKHEOPQUNUKERGZAUKSJUKUAUBEUCJUNUOK
+    UDUEUFUKEUGUHUITTT $.
+
+  $( The basic 2nd root of unity is ` -u 1 `. (Contributed by AV,
+     24-Oct-2026.) $)
+  bru2 $p |- ( bRoU ` 2 ) = -u 1 $=
+    ( c2 cbru cfv c1 cneg cdiv co ccxp cn wcel 2nn bruval2 ax-mp 2div2e1 oveq2i
+    wceq cc neg1cn cxp1 3eqtri ) ABCZDEZAAFGZHGZUBDHGZUBAIJUAUDPKALMUCDUBHNOUBQ
+    JUEUBPRUBSMT $.
+
+  ${
+    bru3eq.w $e |- W = ( bRoU ` 3 ) $.
+    $( An alternate way to express the basic 3rd root of unity. (Contributed by
+       AV, 24-Oct-2026.) $)
+    bru3val $p |- W = ( ( -u 1 + ( _i x. ( sqrt ` 3 ) ) ) / 2 ) $=
+      ( c3 cfv c2 cpi cmul co cdiv ccos ci csin caddc wceq 2cn 2ne0 oveq2i cmin
+      c1 3eqtri cbru cneg csqrt cn wcel 3nn bruval3 ax-mp ax-icn 3pos sqrtpclii
+      3re recni divassi neg1cn mulcli divdiri cexp picn 3cn fveq2i divcli cos2t
+      3ne0 cc sincos3rdpi simpri oveq1i sqrecii eqtri sqvali ax-1cn c4 cc0 4ne0
+      2t2e4 eqnetri wne wa 2cnne0 divcan5 mp3an eqtr3i 2div2e1 eqcomi divsubdir
+      eqtr4i negsubdi2i 2m1e1 negeqi oveq12 divreci divcan2i oveq12i 3eqtr4ri
+      sin2t ) ACUADZEFGHCIHZJDZKWRLDZGHZMHZSUBZKCUCDZGHZMHEIHZBCUDUEWQXBNUFCUGU
+      HXCEIHZXEEIHZMHXGKXDEIHZGHZMHXFXBXHXJXGMKXDEUIXDCULUJUKUMZOPUNQXCXEEUOKXD
+      UIXKUPOPUQWSXGXAXJMWSEFCIHZGHZJDZESEEURHZIHZGHZSRHZXGWRXMJEFCOUSUTVDUNZVA
+      XNEXLJDZEURHZGHZSRHZXRXLVEUEZXNYCNFCUSUTVDVBZXLVCUHYBXQSRYAXPEGYASEIHZEUR
+      HXPXTYFEURXLLDZXINZXTYFNZVFVGVHEOPVIVJQVHVJXRYFSRHZSERHZEIHZXGXQYFSRXQESE
+      EGHZIHZGHZYFXPYNEGXOYMSIEOVKQQESGHYMIHZYOYFESYMOVLEEOOUPYMVMVNVPVOVQUNSVE
+      UEZEVEUEZEVNVRVSZYSYPYFNVLVTVTSEEWAWBWCVJVHYJYFEEIHZRHZYLSYTYFRYTSWDWEQYQ
+      YRYSYLUUANVLOVTSEEWFWBWGYKXCEIESRHZUBYKXCESOVLWHUUBSWIWJWCVHTTWTXIKGWTXML
+      DZEYGXTGHZGHZXIWRXMLXSVAYDUUCUUENYEXLWPUHUUEEXIYFGHZGHEXIEIHZGHXIUUDUUFEG
+      YHYIVSUUDUUFNVFYGXIXTYFGWKUHQUUFUUGEGUUGUUFXIEXDEXKOPVBZOPWLWEQXIEUUHOPWM
+      TTQWNWOT $.
+
+    $( The complex conjugate of the basic 3rd root of unity. (Contributed by
+       AV, 24-Oct-2026.) $)
+    bru3cj $p |-  ( * ` W ) = ( W ^ 2 ) $=
+      ( ccj cfv c1 cneg c2 c3 co cexp wcel wceq ax-mp eqtri fveq2i cc wa pm3.2i
+      3nn eqcomi cdiv ccxp cmin cbru cn bruval2 neg1cn 2cn 3cn 3ne0 divcli exp1
+      cxpcl cz 1z root1cj 3m1e2 oveq12i 3eqtri ) ACDEFZGHUAIZUBIZCDZVBHEUCIZJIZ
+      AGJIAVBCAHUDDZVBBHUEKZVFVBLSHUFMNZOVCVBEJIZCDZVEVBVICVIVBVBPKZVIVBLUTPKZV
+      APKZQVKVLVMUGGHUHUIUJUKRUTVAUMMVBULMTOVGEUNKZQVJVELVGVNSUOREHUPMNVBAVDGJA
+      VBVHTUQURUS $.
+
+    $( The square of the basic 3rd root of unity. (Contributed by AV,
+       24-Oct-2026.) $)
+    bru3sq $p |- ( W ^ 2 ) = ( ( -u 1 / 2 )
+                               - ( _i x. ( ( sqrt ` 3 ) / 2 ) ) ) $=
+      ( ccj cfv c2 cexp co c1 cdiv ci c3 cmul caddc fveq2i ax-icn 2cn 2ne0 wcel
+      cr rehalfcli cneg csqrt cmin bru3cj bru3val neg1cn sqrtpclii recni mulcli
+      3pos divdiri divassi oveq2i eqtri wceq neg1rr cjreim mp2an 3eqtri eqtr3i
+      3re ) ACDZAEFGHUAZEIGZJKUBDZEIGZLGZUCGZABUDVBVCJVELGZMGEIGZCDVDVGMGZCDZVH
+      AVJCABUENVJVKCVJVDVIEIGZMGVKVCVIEUFJVEOVEKVAUJUGZUHZUIPQUKVMVGVDMJVEEOVOP
+      QULUMUNNVDSRVFSRVLVHUOVCUPTVEVNTVDVFUQURUSUT $.
+
+    $( The basic 3rd root of unity ` _om ` satisfies the equation
+       ` _om ^ 2 + _om + 1 = 0 `. (Contributed by AV, 24-Oct-2026.) $)
+    bru3eq $p |- ( ( ( W ^ 2 ) + W ) + 1 ) = 0 $=
+      ( c2 co caddc c1 cneg cdiv ci cmul cc0 oveq1i wcel ax-1cn 2cn 2ne0 oveq2i
+      cc eqtri ax-icn cexp c3 csqrt cfv cmin bru3sq bru3val oveq12i wceq divneg
+      mp3an halfcn mulneg2i 2thalfe1 negeqi neg1cn divcli 2timesi 3eqtr3ri 3pos
+      wne sqrtpclii recni mulcli divdiri divassi nppcan3 negsubdii 3eqtr4i neg0
+      3re 1m1e0 3eqtri ) ACUADZAEDZFEDFGZCHDZIUBUCUDZCHDZJDZUEDZVPIVRJDZEDCHDZE
+      DZFEDZFFUEDZGZKVOWDFEVNWAAWCEABUFABUGUHLVQVQEDZFEDVPFEDWEWGWHVPFECFCHDZGZ
+      JDZCVQJDVPWHWJVQCJFRMCRMCKVAWJVQUINOPFCUJUKQWKCWIJDZGVPCWIOULUMWLFUNUOSVQ
+      VPCUPOPUQZURUSLWDWHFEWDWAVQVTEDZEDZWHWCWNWAEWCVQWBCHDZEDWNVPWBCUPIVRTVRUB
+      VKUTVBVCZVDOPVEWPVTVQEIVRCTWQOPVFQSQVQRMZVTRMWRWOWHUIWMIVSTVRCWQOPUQVDWMV
+      QVTVQVGUKSLFFNNVHVIWGKGKWFKVLUOVJSVM $.
+
+    $( The square of the basic 3rd root of unity expressed by the basic 3rd
+       root of unity. (Contributed by AV, 24-Oct-2026.) $)
+    bru3sqbru $p |- ( W ^ 2 ) = ( -u 1 - W ) $=
+      ( c2 cexp co c1 caddc cneg cmin cc0 wceq cc wcel wa addcom cxp ax-addf c3
+      ax-1cn mp2an fdmi ndmovcom pm2.61i oveq2i cbru cfv cn brucn ax-mp eqeltri
+      3nn sqcli addassi bru3eq 3eqtr2i wb addcli addeq0 mpbi negdi2 eqtri ) ACD
+      EZFAGEZHZFHAIEZVBVCGEZJKZVBVDKZVFVBAFGEZGEVBAGEFGEJVCVIVBGFLMZALMZNVCVIKF
+      AOFALGLLPLGQUAUBUCUDVBAFAARUEUFZLBRUGMVLLMUKRUHUIUJZULZVMSUMABUNUOVBLMVCL
+      MVGVHUPVNFASVMUQVBVCURTUSVJVKVDVEKSVMFAUTTVA $.
+  $}
 
 
 $(
