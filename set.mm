@@ -882308,7 +882308,7 @@ $)
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Definitions, domains, and basic values
+  Definitions and basic laws
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
@@ -882681,13 +882681,6 @@ $)
       GADEHICABCADCAEFAJAKLADEMN $.
   $}
 
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Prime valuations and prime divisors
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
-
   ${
     $d A p $.
     $( A nonzero rational has only finitely many nonzero prime valuations.  The
@@ -882921,13 +882914,6 @@ $)
       NMUCUDBHAOMUCUDXDXEXFXJBHAIJDXGXEXHXIBHALMNMUCUDBHAOMUCUDBKXKXL $.
   $}
 
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Elementary properties of signs
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
-
   ${
     $( The square of either integer sign is one.  (Contributed by Zhi Wang,
        17-Oct-2026.) $)
@@ -882990,13 +882976,6 @@ $)
       ABGHILBHGHHGABGHILBGHABGHIQRGUBUCUDSABGILCGHBHJABGILCGHGHJABGICGHIFUKGHUE
       UFUGABGILBGABGIQRSABGHGMTBGHIBGIUHDBGHGUIOUJ $.
   $}
-
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Multiplication laws and values at small integers
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
 
   ${
     $d p q x $.
@@ -883465,7 +883444,7 @@ $)
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Restrictions and sign criteria
+  Function identities, bounds, and characterizations
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
@@ -883710,13 +883689,6 @@ $)
       ( c1 clt wbr wne liounegne1d cn wcel wb nngt1ne1 syl mpbird nnprmexd ) AB
       CDAFBGHBFIABEJABKLFBGHBFIMDBNOPQ $.
   $}
-
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Negation, quotients, powers, and rational identities
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
 
   ${
     $d A p q $.
@@ -884293,13 +884265,6 @@ $)
       IJKFABJKCJKCBPQBCHIJKRDACSKCJKECTUABCUDUBUEUFABLMNGUGUHUI $.
   $}
 
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Divisibility and bounds for the prime Omega function
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
-
   ${
     $( The prime Omega function is nondecreasing under divisibility of positive
        integers.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
@@ -884449,13 +884414,6 @@ $)
       HWSVSURPUSUTVAVBWGWHCDZWKWIOWGVTXAVRWEVTVCWGVNWRVTXAOWQWTAVSVDUQQWHVEPQWG
       AVSWGAWQVFWGVSWTVFWGVSWTVGVHQWSVIVJVKVQVPVMVNAURNVL $.
   $}
-
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Finite products and M&ouml;bius identities
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
 
   ${
     $d N p q $.
@@ -885279,13 +885237,6 @@ $)
       NXIWA $.
   $}
 
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Uniqueness characterizations
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
-
   ${
     $d a b $.  $d a x $.  $d b x $.  $d p x $.
     lioununiq.1 $e |- F =
@@ -885540,7 +885491,7 @@ $)
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Algebraic identities
+  General algebra and order
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
@@ -885790,13 +885741,6 @@ $)
       EBEHGFGFGLBFGALEBEHGLNOAUJMENOAPMABECENOAPMEQRASMTUEAEBEHGFGBLFABECENOAPM
       EQRASMUFUGUHUKUHUK $.
   $}
-
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Order bounds, integer intervals, and descent
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
 
   ${
     nnthirdltd.1 $e |- ( ph -> A e. NN ) $.
@@ -886123,10 +886067,273 @@ $)
       breqtrd ) ABCGHBIGHBJAICJKBCGHBIGHJKFAICBILMANOEABDPQRABABDSTUA $.
   $}
 
+  ${
+    fmuleq1d.1 $e |- ( ph -> A = C ) $.
+    fmuleq1d.2 $e |- ( ph -> ( F ` ( A x. B ) ) = ( ( F ` A ) x. ( F ` B )
+    ) ) $.
+    $( Transport a multiplication identity for values of ` F ` along equality
+       of its first argument.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    fmuleq1d $p |- ( ph -> ( F ` ( C x. B ) ) = ( ( F ` C ) x. ( F ` B ) )
+    ) $=
+      ( cmul co cfv oveq1d fveq2d eqtrd eqtr3d ) ABCHIEJDCHIEJDEJCEJHIABCHIDCHI
+      EABDCHFKLABCHIEJBEJCEJHIDEJCEJHIGABEJDEJCEJHABDEFLKMN $.
+  $}
+
+  ${
+    fmulcomd.1 $e |- ( ph -> A e. CC ) $.
+    fmulcomd.2 $e |- ( ph -> B e. CC ) $.
+    fmulcomd.3 $e |- ( ph -> ( F ` A ) e. CC ) $.
+    fmulcomd.4 $e |- ( ph -> ( F ` B ) e. CC ) $.
+    fmulcomd.5 $e |- ( ph -> ( F ` ( A x. B ) ) = ( ( F ` A ) x. ( F ` B )
+    ) ) $.
+    $( Reverse the arguments of a multiplication identity for values of ` F ` .
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    fmulcomd $p |- ( ph -> ( F ` ( B x. A ) ) = ( ( F ` B ) x. ( F ` A ) )
+    ) $=
+      ( cmul co cfv mulcomd fveq2d eqtrd eqtr3d ) ABCJKDLCBJKDLCDLBDLJKABCJKCBJ
+      KDABCEFMNABCJKDLBDLCDLJKCDLBDLJKIABDLCDLGHMOP $.
+  $}
+
+  ${
+    $d F k z $.  $d K k z $.  $d N k $.  $d P k z $.  $d Z z $.
+    fmulralspecd.1 $e |- ( ph -> K e. ( 1 ..^ N ) ) $.
+    fmulralspecd.2 $e |- ( ph -> Z e. ZZ ) $.
+    fmulralspecd.3 $e |- ( ph -> -. P || Z ) $.
+    fmulralspecd.4 $e |- ( ph -> A. k e. ( 1 ..^ N ) A. z e. ZZ ( -. P || z
+    -> ( F ` ( k x. z ) ) = ( ( F ` k ) x. ( F ` z ) ) ) ) $.
+    $( Specialize a bounded family of multiplication identities at an arbitrary
+       nondivisible integer.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    fmulralspecd $p |- ( ph -> ( F ` ( K x. Z ) ) = ( ( F ` K ) x. ( F ` Z
+    ) ) ) $=
+      ( cdvds wbr wn cmul co cfv wceq cv wi cz wral c1 cfzo oveq1 fveq2d oveq1d
+      fveq2 eqeq12d imbi2d breq2 notbid oveq2 oveq2d imbi12d rspc2v syl2anc mpd
+      wcel ) ACHMNOFHPQERFERHERPQSKACBTMNODTBTPQERDTERBTERPQSUABUBUCDUDGUEQUCCH
+      MNOFHPQERFERHERPQSUALAFUDGUEQUTHUBUTCBTMNODTBTPQERDTERBTERPQSUABUBUCDUDGU
+      EQUCCHMNOFHPQERFERHERPQSUAUAIJCBTMNODTBTPQERDTERBTERPQSUACHMNOFHPQERFERHE
+      RPQSUACBTMNOFBTPQERFERBTERPQSUADBFHUDGUEQUBDTFSDTBTPQERDTERBTERPQSFBTPQER
+      FERBTERPQSCBTMNODTFSDTBTPQERFBTPQERDTERBTERPQFERBTERPQDTFSDTBTPQFBTPQEDTF
+      BTPUFUGDTFSDTERFERBTERPDTFEUIUHUJUKBTHSCBTMNOCHMNOFBTPQERFERBTERPQSFHPQER
+      FERHERPQSBTHSCBTMNCHMNBTHCMULUMBTHSFBTPQERFHPQERFERBTERPQFERHERPQBTHSFBTP
+      QFHPQEBTHFPUNUGBTHSBTERHERFERPBTHEUIUOUJUPUQURUSUS $.
+  $}
+
+  ${
+    $d A z $.  $d B z $.
+    $( Equal multipliers give equivalent universally quantified multiplication
+       identities for the listed values of ` F ` .  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
+    fmulraleq $p |- ( A = B -> ( A. z e. ZZ ( -. P || z -> ( F ` ( A x. z )
+    ) = ( ( F ` A ) x. ( F ` z ) ) ) <-> A. z e. ZZ ( -. P || z -> ( F ` (
+    B x. z ) ) = ( ( F ` B ) x. ( F ` z ) ) ) ) ) $=
+      ( wceq cv cdvds wbr wn cmul co cfv wi oveq1 fveq2d fveq2 oveq1d eqeq12d
+      cz imbi2d ralbidv ) BCFDAGHIJBAGKLEMBEMAGEMKLFNDAGHIJCAGKLEMCEMAGEMKLFNAT
+      BCFBAGKLEMBEMAGEMKLFCAGKLEMCEMAGEMKLFDAGHIJBCFBAGKLEMCAGKLEMBEMAGEMKLCEMA
+      GEMKLBCFBAGKLCAGKLEBCAGKOPBCFBEMCEMAGEMKBCEQRSUAUB $.
+  $}
+
+  ${
+    $d F v z $.  $d N v z $.  $d P v z $.
+    $( Renaming the bound integer variable preserves the assertion that ` F `
+       satisfies the displayed multiplication identity at integers not
+       divisible by ` P ` .  (Contributed by Zhi Wang, 17-Oct-2026.)  (Revised
+       by Zhi Wang, 19-Oct-2026.) $)
+    fmulralcbv $p |- ( A. z e. ZZ ( -. P || z -> ( F ` ( N x. z ) ) = ( ( F
+    ` N ) x. ( F ` z ) ) ) <-> A. v e. ZZ ( -. P || v -> ( F ` ( N x. v ) )
+    = ( ( F ` N ) x. ( F ` v ) ) ) ) $=
+      ( cv cdvds wbr wn cmul co cfv wceq wi cz breq2 notbid oveq2 fveq2d fveq2
+      oveq2d eqeq12d imbi12d cbvralvw ) CAFGHIEAFJKDLEDLAFDLJKMNCBFGHIEBFJKDLED
+      LBFDLJKMNABOAFBFMCAFGHICBFGHIEAFJKDLEDLAFDLJKMEBFJKDLEDLBFDLJKMAFBFMCAFGH
+      CBFGHAFBFCGPQAFBFMEAFJKDLEBFJKDLEDLAFDLJKEDLBFDLJKAFBFMEAFJKEBFJKDAFBFEJR
+      SAFBFMAFDLBFDLEDLJAFBFDTUAUBUCUD $.
+  $}
+
+  ${
+    $d F m $.  $d N m $.  $d P m $.  $d k m z $.  $d k ph $.
+    fmulindhypd.1 $e |- ( ph -> P e. RR ) $.
+    fmulindhypd.2 $e |- ( ph -> N e. NN ) $.
+    fmulindhypd.3 $e |- ( ph -> N < P ) $.
+    fmulindhypd.4 $e |- ( ph -> A. m e. NN ( m < N -> ( m < P -> A. z e. ZZ
+    ( -. P || z -> ( F ` ( m x. z ) ) = ( ( F ` m ) x. ( F ` z ) ) ) ) ) )
+    $.
+    $( Restrict a strong-induction hypothesis to the smaller positive residue
+       multipliers.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    fmulindhypd $p |- ( ph -> A. k e. ( 1 ..^ N ) A. z e. ZZ ( -. P || z ->
+    ( F ` ( k x. z ) ) = ( ( F ` k ) x. ( F ` z ) ) ) ) $=
+      ( cv wbr cmul co cfv wi c1 cfzo clt cdvds wn wceq cz wral wcel wa fzossnn
+      cn simpr sselid nnred adantr elfzolt2 lttrd breq1 fmulraleq imbi12d rspcv
+      cr syl mpd ralrimiva ) ACBLUAMUBDLBLNOFPDLFPBLFPNOUCQBUDUEDRGSOADLRGSOUFU
+      GDLCTMCBLUAMUBDLBLNOFPDLFPBLFPNOUCQBUDUEADLRGSOUFUGDLGCADLRGSOUFUGDLADLRG
+      SOUFUGRGSOUIDLGUHADLRGSOUFUJUKULAGUTUFDLRGSOUFAGIULUMACUTUFDLRGSOUFHUMADL
+      RGSOUFUGDLRGSOUFDLGTMADLRGSOUFUJDLRGUNVAAGCTMDLRGSOUFJUMUOADLRGSOUFUGDLGT
+      MDLCTMCBLUAMUBDLBLNOFPDLFPBLFPNOUCQBUDUEQADLRGSOUFUGDLRGSOUFDLGTMADLRGSOU
+      FUJDLRGUNVAADLRGSOUFUGELGTMELCTMCBLUAMUBELBLNOFPELFPBLFPNOUCQBUDUEQQEUIUE
+      DLGTMDLCTMCBLUAMUBDLBLNOFPDLFPBLFPNOUCQBUDUEQQAELGTMELCTMCBLUAMUBELBLNOFP
+      ELFPBLFPNOUCQBUDUEQQEUIUEDLRGSOUFKUMADLRGSOUFUGDLUIUFELGTMELCTMCBLUAMUBEL
+      BLNOFPELFPBLFPNOUCQBUDUEQQEUIUEDLGTMDLCTMCBLUAMUBDLBLNOFPDLFPBLFPNOUCQBUD
+      UEQQQADLRGSOUFUGRGSOUIDLGUHADLRGSOUFUJUKELGTMELCTMCBLUAMUBELBLNOFPELFPBLF
+      PNOUCQBUDUEQQDLGTMDLCTMCBLUAMUBDLBLNOFPDLFPBLFPNOUCQBUDUEQQEDLUIELDLUCELG
+      TMDLGTMELCTMCBLUAMUBELBLNOFPELFPBLFPNOUCQBUDUEQDLCTMCBLUAMUBDLBLNOFPDLFPB
+      LFPNOUCQBUDUEQELDLGTUPELDLUCELCTMDLCTMCBLUAMUBELBLNOFPELFPBLFPNOUCQBUDUEC
+      BLUAMUBDLBLNOFPDLFPBLFPNOUCQBUDUEELDLCTUPBELDLCFUQURURUSVAVBVBVBVC $.
+  $}
+
+  ${
+    $d F z $.  $d N z $.  $d P z $.  $d Z z $.
+    fmulralspeczd.1 $e |- ( ph -> Z e. ZZ ) $.
+    fmulralspeczd.2 $e |- ( ph -> -. P || Z ) $.
+    fmulralspeczd.3 $e |- ( ph -> A. z e. ZZ ( -. P || z -> ( F ` ( N x. z
+    ) ) = ( ( F ` N ) x. ( F ` z ) ) ) ) $.
+    $( Specialize the universal residue multiplication identity at an integer.
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    fmulralspeczd $p |- ( ph -> ( F ` ( N x. Z ) ) = ( ( F ` N ) x. ( F ` Z
+    ) ) ) $=
+      ( cdvds wbr wn cmul co cfv wceq cv wi cz wral breq2 notbid fveq2d eqeq12d
+      wcel oveq2 fveq2 oveq2d imbi12d rspcv syl mpd ) ACFJKLEFMNDOEDOFDOMNPHACB
+      QJKLEBQMNDOEDOBQDOMNPRBSTCFJKLEFMNDOEDOFDOMNPRIAFSUECBQJKLEBQMNDOEDOBQDOM
+      NPRBSTCFJKLEFMNDOEDOFDOMNPRRGCBQJKLEBQMNDOEDOBQDOMNPRCFJKLEFMNDOEDOFDOMNP
+      RBFSBQFPCBQJKLCFJKLEBQMNDOEDOBQDOMNPEFMNDOEDOFDOMNPBQFPCBQJKCFJKBQFCJUAUB
+      BQFPEBQMNDOEFMNDOEDOBQDOMNEDOFDOMNBQFPEBQMNEFMNDBQFEMUFUCBQFPBQDOFDOEDOMB
+      QFDUGUHUDUIUJUKULUL $.
+  $}
+
+  ${
+    fmulmuliffd.1 $e |- ( ph -> K e. CC ) $.
+    fmulmuliffd.2 $e |- ( ph -> Q e. CC ) $.
+    fmulmuliffd.3 $e |- ( ph -> Z e. CC ) $.
+    fmulmuliffd.4 $e |- ( ph -> ( F ` K ) e. CC ) $.
+    fmulmuliffd.5 $e |- ( ph -> ( F ` Q ) e. CC ) $.
+    fmulmuliffd.6 $e |- ( ph -> ( F ` Z ) e. CC ) $.
+    fmulmuliffd.7 $e |- ( ph -> ( F ` ( Q x. Z ) ) e. CC ) $.
+    fmulmuliffd.8 $e |- ( ph -> ( F ` K ) =/= 0 ) $.
+    fmulmuliffd.9 $e |- ( ph -> ( F ` ( K x. ( Q x. Z ) ) ) = ( ( F ` K ) x.
+    ( F ` ( Q x. Z ) ) ) ) $.
+    fmulmuliffd.10 $e |- ( ph -> ( F ` ( K x. Z ) ) = ( ( F ` K ) x. ( F ` Z
+    ) ) ) $.
+    $( A multiplier with nonzero value preserves and reflects a multiplication
+       identity.  Cancel its value using the two given multiplication
+       identities.  Only the listed evaluations of ` F ` are assumed to be
+       complex numbers.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    fmulmuliffd $p |- ( ph -> ( ( F ` ( Q x. ( K x. Z ) ) ) = ( ( F ` Q ) x.
+    ( F ` ( K x. Z ) ) ) <-> ( F ` ( Q x. Z ) ) = ( ( F ` Q ) x. ( F ` Z ) )
+    ) ) $=
+      ( cmul co cfv wceq mul12d fveq2d eqtrd oveq2d eqeq12d mulcld mulcand
+      bitrd ) ABDEPQPQCRBCRDEPQCRPQSDCRBEPQCRPQDCRBCRECRPQPQSBEPQCRBCRECRPQSABD
+      EPQPQCRDCRBEPQCRPQBCRDEPQCRPQDCRBCRECRPQPQABDEPQPQCRDBEPQPQCRDCRBEPQCRPQA
+      BDEPQPQDBEPQPQCABDEGFHTUANUBABCRDEPQCRPQBCRDCRECRPQPQDCRBCRECRPQPQADEPQCR
+      DCRECRPQBCRPOUCABCRDCRECRJIKTUBUDABEPQCRBCRECRPQDCRLABCRECRJKUEIMUFUG $.
+  $}
+
+  ${
+    fmuloned.1 $e |- ( ph -> A e. CC ) $.
+    fmuloned.2 $e |- ( ph -> ( F ` A ) e. CC ) $.
+    fmuloned.3 $e |- ( ph -> ( F ` 1 ) = 1 ) $.
+    $( A complex argument and complex value satisfy the multiplication identity
+       for left multiplication by one when ` ( F `` 1 ) = 1 ` .  (Contributed
+       by Zhi Wang, 20-Oct-2026.) $)
+    fmuloned $p |- ( ph -> ( F ` ( 1 x. A ) ) = ( ( F ` 1 ) x. ( F ` A ) ) )
+    $=
+      ( c1 cmul co cfv mullidd fveq2d oveq1d eqtrd eqtr4d ) AGBHICJBCJGCJBCJHIA
+      GBHIBCABDKLAGCJBCJHIGBCJHIBCJAGCJGBCJHFMABCJEKNO $.
+  $}
+
+  ${
+    fmulneg1d.1 $e |- ( ph -> A e. CC ) $.
+    fmulneg1d.2 $e |- ( ph -> ( F ` A ) e. CC ) $.
+    fmulneg1d.3 $e |- ( ph -> ( F ` -u 1 ) = -u 1 ) $.
+    fmulneg1d.4 $e |- ( ph -> ( F ` -u A ) = -u ( F ` A ) ) $.
+    $( The multiplication identity for left multiplication by minus one follows
+       from the specified sign reversal at ` A ` and the value minus one at
+       minus one.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    fmulneg1d $p |- ( ph -> ( F ` ( -u 1 x. A ) ) = ( ( F ` -u 1 ) x. ( F ` A
+    ) ) ) $=
+      ( c1 cneg cmul co cfv mulm1d fveq2d eqtrd oveq1d eqtr4d ) AHIBJKCLBCLIHIC
+      LBCLJKAHIBJKCLBICLBCLIAHIBJKBICABDMNGOAHICLBCLJKHIBCLJKBCLIAHICLHIBCLJFPA
+      BCLEMOQ $.
+  $}
+
+  ${
+    fmulprodd.1 $e |- ( ph -> A e. CC ) $.
+    fmulprodd.2 $e |- ( ph -> B e. CC ) $.
+    fmulprodd.3 $e |- ( ph -> Z e. CC ) $.
+    fmulprodd.4 $e |- ( ph -> ( F ` A ) e. CC ) $.
+    fmulprodd.5 $e |- ( ph -> ( F ` B ) e. CC ) $.
+    fmulprodd.6 $e |- ( ph -> ( F ` Z ) e. CC ) $.
+    fmulprodd.7 $e |- ( ph -> ( F ` ( A x. ( B x. Z ) ) ) = ( ( F ` A ) x. (
+      F ` ( B x. Z ) ) ) ) $.
+    fmulprodd.8 $e |- ( ph -> ( F ` ( B x. Z ) ) = ( ( F ` B ) x. ( F ` Z ) )
+      ) $.
+    fmulprodd.9 $e |- ( ph -> ( F ` ( A x. B ) ) = ( ( F ` A ) x. ( F ` B ) )
+      ) $.
+    $( Combine two exact multiplicative factors.  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
+    fmulprodd $p |- ( ph -> ( F ` ( ( A x. B ) x. Z ) ) = ( ( F ` ( A x. B )
+      ) x. ( F ` Z ) ) ) $=
+      ( cmul co cfv mulassd eqtrd eqtr4d fveq2d oveq2d oveq1d ) ABCOPEOPDQBDQCD
+      QOPEDQOPBCOPDQEDQOPABCOPEOPDQBDQCDQEDQOPOPBDQCDQOPEDQOPABCOPEOPDQBDQCEOPD
+      QOPBDQCDQEDQOPOPABCOPEOPDQBCEOPOPDQBDQCEOPDQOPABCOPEOPBCEOPOPDABCEFGHRUAL
+      SACEOPDQCDQEDQOPBDQOMUBSABDQCDQEDQIJKRTABCOPDQBDQCDQOPEDQONUCT $.
+  $}
+
+  ${
+    fmulnegiffd.1 $e |- ( ph -> A e. CC ) $.
+    fmulnegiffd.2 $e |- ( ph -> B e. CC ) $.
+    fmulnegiffd.3 $e |- ( ph -> ( F ` A ) e. CC ) $.
+    fmulnegiffd.4 $e |- ( ph -> ( F ` B ) e. CC ) $.
+    fmulnegiffd.5 $e |- ( ph -> ( F ` ( A x. B ) ) e. CC ) $.
+    fmulnegiffd.6 $e |- ( ph -> ( F ` -u B ) = -u ( F ` B ) ) $.
+    fmulnegiffd.7 $e |- ( ph -> ( F ` -u ( A x. B ) ) = -u ( F ` ( A x. B ) )
+      ) $.
+    $( The multiplication identity is preserved and reflected by negating its
+       second argument, given sign reversal of the values at ` B ` and
+       ` ( A x. B ) ` .  Only these pointwise sign-reversal hypotheses are
+       required.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    fmulnegiffd $p |- ( ph -> ( ( F ` ( A x. -u B ) ) = ( ( F ` A ) x. ( F `
+      -u B ) ) <-> ( F ` ( A x. B ) ) = ( ( F ` A ) x. ( F ` B ) ) ) ) $=
+      ( cneg cmul co cfv wceq mulneg2d fveq2d eqtrd oveq2d eqeq12d mulcld bitrd
+      neg11ad ) ABCLMNDOBDOCLDOMNPBCMNDOLBDOCDOMNLPBCMNDOBDOCDOMNPABCLMNDOBCMND
+      OLBDOCLDOMNBDOCDOMNLABCLMNDOBCMNLDOBCMNDOLABCLMNBCMNLDABCEFQRKSABDOCLDOMN
+      BDOCDOLMNBDOCDOMNLACLDOCDOLBDOMJTABDOCDOGHQSUAABCMNDOBDOCDOMNIABDOCDOGHUB
+      UDUC $.
+  $}
+
+  ${
+    $( Substitute the second argument of a multiplication identity.
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    fmuleq2 $p |- ( B = C -> ( ( F ` ( A x. B ) ) = ( ( F ` A ) x. ( F ` B )
+      ) <-> ( F ` ( A x. C ) ) = ( ( F ` A ) x. ( F ` C ) ) ) ) $=
+      ( wceq cmul co cfv oveq2 fveq2d fveq2 oveq2d eqeq12d ) BCEABFGDHACFGDHADH
+      BDHFGADHCDHFGBCEABFGACFGDBCAFIJBCEBDHCDHADHFBCDKLM $.
+  $}
+
+  ${
+    $d F r $.  $d N r $.  $d Q r $.  $d R r $.
+    fmulinspecd.1 $e |- ( ph -> R e. ( 1 ..^ N ) ) $.
+    fmulinspecd.2 $e |- ( ph -> A. r e. ( 1 ..^ N ) ( F ` ( Q x. r ) ) = ( (
+      F ` Q ) x. ( F ` r ) ) ) $.
+    $( Specialize a multiplication identity on a positive initial interval.
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    fmulinspecd $p |- ( ph -> ( F ` ( Q x. R ) ) = ( ( F ` Q ) x. ( F ` R ) )
+      ) $=
+      ( cv cmul co cfv wceq c1 cfzo fmuleq2 rspcdva ) ABFIJKDLBDLFIDLJKMBCJKDLB
+      DLCDLJKMFNEOKCBFICDPHGQ $.
+  $}
+
+  ${
+    fmulonerid.1 $e |- ( ph -> A e. CC ) $.
+    fmulonerid.2 $e |- ( ph -> ( F ` A ) e. CC ) $.
+    fmulonerid.3 $e |- ( ph -> ( F ` 1 ) = 1 ) $.
+    $( The right-unit multiplication identity follows from its left-unit
+       counterpart.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    fmulonerid $p |- ( ph -> ( F ` ( A x. 1 ) ) = ( ( F ` A ) x. ( F ` 1 ) )
+      ) $=
+      ( c1 cc wcel ax-1cn a1i cfv eqeltrd fmuloned fmulcomd ) AGBCGHIAJKDAGCLGH
+      FGHIAJKMEABCDEFNO $.
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Divisibility, parity, and congruences
+  Divisibility, congruences, and quadratic residues
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
@@ -886740,13 +886947,6 @@ $)
       TACNRUECNBSACNRUFACBSTCNRGUDUGUHUQUIUJCMNUKULCUMUNICURUNHUS $.
   $}
 
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Integer division and bounds for residue representatives
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
-
   ${
     fldivp1widthd.1 $e |- ( ph -> P e. NN ) $.
     fldivp1widthd.2 $e |- ( ph -> N e. NN ) $.
@@ -886982,13 +887182,6 @@ $)
       QORSBMCNOPQODNOQODUCUDUIABMCNODAMCMRSAUGTEUHFGAPCMCNOPUJSAUTTACEUKAMCNOAM
       CMRSAUGTEUHUKHAMCMRSAUGTEULUMKLUNVDVDAMDMRSAUGTFULUMVFVI $.
   $}
-
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Bounded congruences and small representatives
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
 
   ${
     $d K x y $.  $d N x y $.  $d P x y $.  $d Z x y $.  $d ph x y $.
@@ -887780,13 +887973,6 @@ $)
       VNVQVRUQVSWAWB $.
   $}
 
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Quadratic residues and bounds for prime divisors
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
-
   ${
     m1lgsvald.1 $e |- ( ph -> P e. ( Prime \ { 2 } ) ) $.
     $( The Legendre symbol of minus one is minus one raised to
@@ -888003,277 +888189,7 @@ $)
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Multiplication identities for function values
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
-
-  ${
-    fmuleq1d.1 $e |- ( ph -> A = C ) $.
-    fmuleq1d.2 $e |- ( ph -> ( F ` ( A x. B ) ) = ( ( F ` A ) x. ( F ` B )
-    ) ) $.
-    $( Transport a multiplication identity for values of ` F ` along equality
-       of its first argument.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    fmuleq1d $p |- ( ph -> ( F ` ( C x. B ) ) = ( ( F ` C ) x. ( F ` B ) )
-    ) $=
-      ( cmul co cfv oveq1d fveq2d eqtrd eqtr3d ) ABCHIEJDCHIEJDEJCEJHIABCHIDCHI
-      EABDCHFKLABCHIEJBEJCEJHIDEJCEJHIGABEJDEJCEJHABDEFLKMN $.
-  $}
-
-  ${
-    fmulcomd.1 $e |- ( ph -> A e. CC ) $.
-    fmulcomd.2 $e |- ( ph -> B e. CC ) $.
-    fmulcomd.3 $e |- ( ph -> ( F ` A ) e. CC ) $.
-    fmulcomd.4 $e |- ( ph -> ( F ` B ) e. CC ) $.
-    fmulcomd.5 $e |- ( ph -> ( F ` ( A x. B ) ) = ( ( F ` A ) x. ( F ` B )
-    ) ) $.
-    $( Reverse the arguments of a multiplication identity for values of ` F ` .
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    fmulcomd $p |- ( ph -> ( F ` ( B x. A ) ) = ( ( F ` B ) x. ( F ` A ) )
-    ) $=
-      ( cmul co cfv mulcomd fveq2d eqtrd eqtr3d ) ABCJKDLCBJKDLCDLBDLJKABCJKCBJ
-      KDABCEFMNABCJKDLBDLCDLJKCDLBDLJKIABDLCDLGHMOP $.
-  $}
-
-  ${
-    $d F k z $.  $d K k z $.  $d N k $.  $d P k z $.  $d Z z $.
-    fmulralspecd.1 $e |- ( ph -> K e. ( 1 ..^ N ) ) $.
-    fmulralspecd.2 $e |- ( ph -> Z e. ZZ ) $.
-    fmulralspecd.3 $e |- ( ph -> -. P || Z ) $.
-    fmulralspecd.4 $e |- ( ph -> A. k e. ( 1 ..^ N ) A. z e. ZZ ( -. P || z
-    -> ( F ` ( k x. z ) ) = ( ( F ` k ) x. ( F ` z ) ) ) ) $.
-    $( Specialize a bounded family of multiplication identities at an arbitrary
-       nondivisible integer.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    fmulralspecd $p |- ( ph -> ( F ` ( K x. Z ) ) = ( ( F ` K ) x. ( F ` Z
-    ) ) ) $=
-      ( cdvds wbr wn cmul co cfv wceq cv wi cz wral c1 cfzo oveq1 fveq2d oveq1d
-      fveq2 eqeq12d imbi2d breq2 notbid oveq2 oveq2d imbi12d rspc2v syl2anc mpd
-      wcel ) ACHMNOFHPQERFERHERPQSKACBTMNODTBTPQERDTERBTERPQSUABUBUCDUDGUEQUCCH
-      MNOFHPQERFERHERPQSUALAFUDGUEQUTHUBUTCBTMNODTBTPQERDTERBTERPQSUABUBUCDUDGU
-      EQUCCHMNOFHPQERFERHERPQSUAUAIJCBTMNODTBTPQERDTERBTERPQSUACHMNOFHPQERFERHE
-      RPQSUACBTMNOFBTPQERFERBTERPQSUADBFHUDGUEQUBDTFSDTBTPQERDTERBTERPQSFBTPQER
-      FERBTERPQSCBTMNODTFSDTBTPQERFBTPQERDTERBTERPQFERBTERPQDTFSDTBTPQFBTPQEDTF
-      BTPUFUGDTFSDTERFERBTERPDTFEUIUHUJUKBTHSCBTMNOCHMNOFBTPQERFERBTERPQSFHPQER
-      FERHERPQSBTHSCBTMNCHMNBTHCMULUMBTHSFBTPQERFHPQERFERBTERPQFERHERPQBTHSFBTP
-      QFHPQEBTHFPUNUGBTHSBTERHERFERPBTHEUIUOUJUPUQURUSUS $.
-  $}
-
-  ${
-    $d A z $.  $d B z $.
-    $( Equal multipliers give equivalent universally quantified multiplication
-       identities for the listed values of ` F ` .  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    fmulraleq $p |- ( A = B -> ( A. z e. ZZ ( -. P || z -> ( F ` ( A x. z )
-    ) = ( ( F ` A ) x. ( F ` z ) ) ) <-> A. z e. ZZ ( -. P || z -> ( F ` (
-    B x. z ) ) = ( ( F ` B ) x. ( F ` z ) ) ) ) ) $=
-      ( wceq cv cdvds wbr wn cmul co cfv wi oveq1 fveq2d fveq2 oveq1d eqeq12d
-      cz imbi2d ralbidv ) BCFDAGHIJBAGKLEMBEMAGEMKLFNDAGHIJCAGKLEMCEMAGEMKLFNAT
-      BCFBAGKLEMBEMAGEMKLFCAGKLEMCEMAGEMKLFDAGHIJBCFBAGKLEMCAGKLEMBEMAGEMKLCEMA
-      GEMKLBCFBAGKLCAGKLEBCAGKOPBCFBEMCEMAGEMKBCEQRSUAUB $.
-  $}
-
-  ${
-    $d F v z $.  $d N v z $.  $d P v z $.
-    $( Renaming the bound integer variable preserves the assertion that ` F `
-       satisfies the displayed multiplication identity at integers not
-       divisible by ` P ` .  (Contributed by Zhi Wang, 17-Oct-2026.)  (Revised
-       by Zhi Wang, 19-Oct-2026.) $)
-    fmulralcbv $p |- ( A. z e. ZZ ( -. P || z -> ( F ` ( N x. z ) ) = ( ( F
-    ` N ) x. ( F ` z ) ) ) <-> A. v e. ZZ ( -. P || v -> ( F ` ( N x. v ) )
-    = ( ( F ` N ) x. ( F ` v ) ) ) ) $=
-      ( cv cdvds wbr wn cmul co cfv wceq wi cz breq2 notbid oveq2 fveq2d fveq2
-      oveq2d eqeq12d imbi12d cbvralvw ) CAFGHIEAFJKDLEDLAFDLJKMNCBFGHIEBFJKDLED
-      LBFDLJKMNABOAFBFMCAFGHICBFGHIEAFJKDLEDLAFDLJKMEBFJKDLEDLBFDLJKMAFBFMCAFGH
-      CBFGHAFBFCGPQAFBFMEAFJKDLEBFJKDLEDLAFDLJKEDLBFDLJKAFBFMEAFJKEBFJKDAFBFEJR
-      SAFBFMAFDLBFDLEDLJAFBFDTUAUBUCUD $.
-  $}
-
-  ${
-    $d F m $.  $d N m $.  $d P m $.  $d k m z $.  $d k ph $.
-    fmulindhypd.1 $e |- ( ph -> P e. RR ) $.
-    fmulindhypd.2 $e |- ( ph -> N e. NN ) $.
-    fmulindhypd.3 $e |- ( ph -> N < P ) $.
-    fmulindhypd.4 $e |- ( ph -> A. m e. NN ( m < N -> ( m < P -> A. z e. ZZ
-    ( -. P || z -> ( F ` ( m x. z ) ) = ( ( F ` m ) x. ( F ` z ) ) ) ) ) )
-    $.
-    $( Restrict a strong-induction hypothesis to the smaller positive residue
-       multipliers.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    fmulindhypd $p |- ( ph -> A. k e. ( 1 ..^ N ) A. z e. ZZ ( -. P || z ->
-    ( F ` ( k x. z ) ) = ( ( F ` k ) x. ( F ` z ) ) ) ) $=
-      ( cv wbr cmul co cfv wi c1 cfzo clt cdvds wn wceq cz wral wcel wa fzossnn
-      cn simpr sselid nnred adantr elfzolt2 lttrd breq1 fmulraleq imbi12d rspcv
-      cr syl mpd ralrimiva ) ACBLUAMUBDLBLNOFPDLFPBLFPNOUCQBUDUEDRGSOADLRGSOUFU
-      GDLCTMCBLUAMUBDLBLNOFPDLFPBLFPNOUCQBUDUEADLRGSOUFUGDLGCADLRGSOUFUGDLADLRG
-      SOUFUGRGSOUIDLGUHADLRGSOUFUJUKULAGUTUFDLRGSOUFAGIULUMACUTUFDLRGSOUFHUMADL
-      RGSOUFUGDLRGSOUFDLGTMADLRGSOUFUJDLRGUNVAAGCTMDLRGSOUFJUMUOADLRGSOUFUGDLGT
-      MDLCTMCBLUAMUBDLBLNOFPDLFPBLFPNOUCQBUDUEQADLRGSOUFUGDLRGSOUFDLGTMADLRGSOU
-      FUJDLRGUNVAADLRGSOUFUGELGTMELCTMCBLUAMUBELBLNOFPELFPBLFPNOUCQBUDUEQQEUIUE
-      DLGTMDLCTMCBLUAMUBDLBLNOFPDLFPBLFPNOUCQBUDUEQQAELGTMELCTMCBLUAMUBELBLNOFP
-      ELFPBLFPNOUCQBUDUEQQEUIUEDLRGSOUFKUMADLRGSOUFUGDLUIUFELGTMELCTMCBLUAMUBEL
-      BLNOFPELFPBLFPNOUCQBUDUEQQEUIUEDLGTMDLCTMCBLUAMUBDLBLNOFPDLFPBLFPNOUCQBUD
-      UEQQQADLRGSOUFUGRGSOUIDLGUHADLRGSOUFUJUKELGTMELCTMCBLUAMUBELBLNOFPELFPBLF
-      PNOUCQBUDUEQQDLGTMDLCTMCBLUAMUBDLBLNOFPDLFPBLFPNOUCQBUDUEQQEDLUIELDLUCELG
-      TMDLGTMELCTMCBLUAMUBELBLNOFPELFPBLFPNOUCQBUDUEQDLCTMCBLUAMUBDLBLNOFPDLFPB
-      LFPNOUCQBUDUEQELDLGTUPELDLUCELCTMDLCTMCBLUAMUBELBLNOFPELFPBLFPNOUCQBUDUEC
-      BLUAMUBDLBLNOFPDLFPBLFPNOUCQBUDUEELDLCTUPBELDLCFUQURURUSVAVBVBVBVC $.
-  $}
-
-  ${
-    $d F z $.  $d N z $.  $d P z $.  $d Z z $.
-    fmulralspeczd.1 $e |- ( ph -> Z e. ZZ ) $.
-    fmulralspeczd.2 $e |- ( ph -> -. P || Z ) $.
-    fmulralspeczd.3 $e |- ( ph -> A. z e. ZZ ( -. P || z -> ( F ` ( N x. z
-    ) ) = ( ( F ` N ) x. ( F ` z ) ) ) ) $.
-    $( Specialize the universal residue multiplication identity at an integer.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    fmulralspeczd $p |- ( ph -> ( F ` ( N x. Z ) ) = ( ( F ` N ) x. ( F ` Z
-    ) ) ) $=
-      ( cdvds wbr wn cmul co cfv wceq cv wi cz wral breq2 notbid fveq2d eqeq12d
-      wcel oveq2 fveq2 oveq2d imbi12d rspcv syl mpd ) ACFJKLEFMNDOEDOFDOMNPHACB
-      QJKLEBQMNDOEDOBQDOMNPRBSTCFJKLEFMNDOEDOFDOMNPRIAFSUECBQJKLEBQMNDOEDOBQDOM
-      NPRBSTCFJKLEFMNDOEDOFDOMNPRRGCBQJKLEBQMNDOEDOBQDOMNPRCFJKLEFMNDOEDOFDOMNP
-      RBFSBQFPCBQJKLCFJKLEBQMNDOEDOBQDOMNPEFMNDOEDOFDOMNPBQFPCBQJKCFJKBQFCJUAUB
-      BQFPEBQMNDOEFMNDOEDOBQDOMNEDOFDOMNBQFPEBQMNEFMNDBQFEMUFUCBQFPBQDOFDOEDOMB
-      QFDUGUHUDUIUJUKULUL $.
-  $}
-
-  ${
-    fmulmuliffd.1 $e |- ( ph -> K e. CC ) $.
-    fmulmuliffd.2 $e |- ( ph -> Q e. CC ) $.
-    fmulmuliffd.3 $e |- ( ph -> Z e. CC ) $.
-    fmulmuliffd.4 $e |- ( ph -> ( F ` K ) e. CC ) $.
-    fmulmuliffd.5 $e |- ( ph -> ( F ` Q ) e. CC ) $.
-    fmulmuliffd.6 $e |- ( ph -> ( F ` Z ) e. CC ) $.
-    fmulmuliffd.7 $e |- ( ph -> ( F ` ( Q x. Z ) ) e. CC ) $.
-    fmulmuliffd.8 $e |- ( ph -> ( F ` K ) =/= 0 ) $.
-    fmulmuliffd.9 $e |- ( ph -> ( F ` ( K x. ( Q x. Z ) ) ) = ( ( F ` K ) x.
-    ( F ` ( Q x. Z ) ) ) ) $.
-    fmulmuliffd.10 $e |- ( ph -> ( F ` ( K x. Z ) ) = ( ( F ` K ) x. ( F ` Z
-    ) ) ) $.
-    $( A multiplier with nonzero value preserves and reflects a multiplication
-       identity.  Cancel its value using the two given multiplication
-       identities.  Only the listed evaluations of ` F ` are assumed to be
-       complex numbers.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    fmulmuliffd $p |- ( ph -> ( ( F ` ( Q x. ( K x. Z ) ) ) = ( ( F ` Q ) x.
-    ( F ` ( K x. Z ) ) ) <-> ( F ` ( Q x. Z ) ) = ( ( F ` Q ) x. ( F ` Z ) )
-    ) ) $=
-      ( cmul co cfv wceq mul12d fveq2d eqtrd oveq2d eqeq12d mulcld mulcand
-      bitrd ) ABDEPQPQCRBCRDEPQCRPQSDCRBEPQCRPQDCRBCRECRPQPQSBEPQCRBCRECRPQSABD
-      EPQPQCRDCRBEPQCRPQBCRDEPQCRPQDCRBCRECRPQPQABDEPQPQCRDBEPQPQCRDCRBEPQCRPQA
-      BDEPQPQDBEPQPQCABDEGFHTUANUBABCRDEPQCRPQBCRDCRECRPQPQDCRBCRECRPQPQADEPQCR
-      DCRECRPQBCRPOUCABCRDCRECRJIKTUBUDABEPQCRBCRECRPQDCRLABCRECRJKUEIMUFUG $.
-  $}
-
-  ${
-    fmuloned.1 $e |- ( ph -> A e. CC ) $.
-    fmuloned.2 $e |- ( ph -> ( F ` A ) e. CC ) $.
-    fmuloned.3 $e |- ( ph -> ( F ` 1 ) = 1 ) $.
-    $( A complex argument and complex value satisfy the multiplication identity
-       for left multiplication by one when ` ( F `` 1 ) = 1 ` .  (Contributed
-       by Zhi Wang, 20-Oct-2026.) $)
-    fmuloned $p |- ( ph -> ( F ` ( 1 x. A ) ) = ( ( F ` 1 ) x. ( F ` A ) ) )
-    $=
-      ( c1 cmul co cfv mullidd fveq2d oveq1d eqtrd eqtr4d ) AGBHICJBCJGCJBCJHIA
-      GBHIBCABDKLAGCJBCJHIGBCJHIBCJAGCJGBCJHFMABCJEKNO $.
-  $}
-
-  ${
-    fmulneg1d.1 $e |- ( ph -> A e. CC ) $.
-    fmulneg1d.2 $e |- ( ph -> ( F ` A ) e. CC ) $.
-    fmulneg1d.3 $e |- ( ph -> ( F ` -u 1 ) = -u 1 ) $.
-    fmulneg1d.4 $e |- ( ph -> ( F ` -u A ) = -u ( F ` A ) ) $.
-    $( The multiplication identity for left multiplication by minus one follows
-       from the specified sign reversal at ` A ` and the value minus one at
-       minus one.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    fmulneg1d $p |- ( ph -> ( F ` ( -u 1 x. A ) ) = ( ( F ` -u 1 ) x. ( F ` A
-    ) ) ) $=
-      ( c1 cneg cmul co cfv mulm1d fveq2d eqtrd oveq1d eqtr4d ) AHIBJKCLBCLIHIC
-      LBCLJKAHIBJKCLBICLBCLIAHIBJKBICABDMNGOAHICLBCLJKHIBCLJKBCLIAHICLHIBCLJFPA
-      BCLEMOQ $.
-  $}
-
-  ${
-    fmulprodd.1 $e |- ( ph -> A e. CC ) $.
-    fmulprodd.2 $e |- ( ph -> B e. CC ) $.
-    fmulprodd.3 $e |- ( ph -> Z e. CC ) $.
-    fmulprodd.4 $e |- ( ph -> ( F ` A ) e. CC ) $.
-    fmulprodd.5 $e |- ( ph -> ( F ` B ) e. CC ) $.
-    fmulprodd.6 $e |- ( ph -> ( F ` Z ) e. CC ) $.
-    fmulprodd.7 $e |- ( ph -> ( F ` ( A x. ( B x. Z ) ) ) = ( ( F ` A ) x. (
-      F ` ( B x. Z ) ) ) ) $.
-    fmulprodd.8 $e |- ( ph -> ( F ` ( B x. Z ) ) = ( ( F ` B ) x. ( F ` Z ) )
-      ) $.
-    fmulprodd.9 $e |- ( ph -> ( F ` ( A x. B ) ) = ( ( F ` A ) x. ( F ` B ) )
-      ) $.
-    $( Combine two exact multiplicative factors.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
-    fmulprodd $p |- ( ph -> ( F ` ( ( A x. B ) x. Z ) ) = ( ( F ` ( A x. B )
-      ) x. ( F ` Z ) ) ) $=
-      ( cmul co cfv mulassd eqtrd eqtr4d fveq2d oveq2d oveq1d ) ABCOPEOPDQBDQCD
-      QOPEDQOPBCOPDQEDQOPABCOPEOPDQBDQCDQEDQOPOPBDQCDQOPEDQOPABCOPEOPDQBDQCEOPD
-      QOPBDQCDQEDQOPOPABCOPEOPDQBCEOPOPDQBDQCEOPDQOPABCOPEOPBCEOPOPDABCEFGHRUAL
-      SACEOPDQCDQEDQOPBDQOMUBSABDQCDQEDQIJKRTABCOPDQBDQCDQOPEDQONUCT $.
-  $}
-
-  ${
-    fmulnegiffd.1 $e |- ( ph -> A e. CC ) $.
-    fmulnegiffd.2 $e |- ( ph -> B e. CC ) $.
-    fmulnegiffd.3 $e |- ( ph -> ( F ` A ) e. CC ) $.
-    fmulnegiffd.4 $e |- ( ph -> ( F ` B ) e. CC ) $.
-    fmulnegiffd.5 $e |- ( ph -> ( F ` ( A x. B ) ) e. CC ) $.
-    fmulnegiffd.6 $e |- ( ph -> ( F ` -u B ) = -u ( F ` B ) ) $.
-    fmulnegiffd.7 $e |- ( ph -> ( F ` -u ( A x. B ) ) = -u ( F ` ( A x. B ) )
-      ) $.
-    $( The multiplication identity is preserved and reflected by negating its
-       second argument, given sign reversal of the values at ` B ` and
-       ` ( A x. B ) ` .  Only these pointwise sign-reversal hypotheses are
-       required.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    fmulnegiffd $p |- ( ph -> ( ( F ` ( A x. -u B ) ) = ( ( F ` A ) x. ( F `
-      -u B ) ) <-> ( F ` ( A x. B ) ) = ( ( F ` A ) x. ( F ` B ) ) ) ) $=
-      ( cneg cmul co cfv wceq mulneg2d fveq2d eqtrd oveq2d eqeq12d mulcld bitrd
-      neg11ad ) ABCLMNDOBDOCLDOMNPBCMNDOLBDOCDOMNLPBCMNDOBDOCDOMNPABCLMNDOBCMND
-      OLBDOCLDOMNBDOCDOMNLABCLMNDOBCMNLDOBCMNDOLABCLMNBCMNLDABCEFQRKSABDOCLDOMN
-      BDOCDOLMNBDOCDOMNLACLDOCDOLBDOMJTABDOCDOGHQSUAABCMNDOBDOCDOMNIABDOCDOGHUB
-      UDUC $.
-  $}
-
-  ${
-    $( Substitute the second argument of a multiplication identity.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    fmuleq2 $p |- ( B = C -> ( ( F ` ( A x. B ) ) = ( ( F ` A ) x. ( F ` B )
-      ) <-> ( F ` ( A x. C ) ) = ( ( F ` A ) x. ( F ` C ) ) ) ) $=
-      ( wceq cmul co cfv oveq2 fveq2d fveq2 oveq2d eqeq12d ) BCEABFGDHACFGDHADH
-      BDHFGADHCDHFGBCEABFGACFGDBCAFIJBCEBDHCDHADHFBCDKLM $.
-  $}
-
-  ${
-    $d F r $.  $d N r $.  $d Q r $.  $d R r $.
-    fmulinspecd.1 $e |- ( ph -> R e. ( 1 ..^ N ) ) $.
-    fmulinspecd.2 $e |- ( ph -> A. r e. ( 1 ..^ N ) ( F ` ( Q x. r ) ) = ( (
-      F ` Q ) x. ( F ` r ) ) ) $.
-    $( Specialize a multiplication identity on a positive initial interval.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    fmulinspecd $p |- ( ph -> ( F ` ( Q x. R ) ) = ( ( F ` Q ) x. ( F ` R ) )
-      ) $=
-      ( cv cmul co cfv wceq c1 cfzo fmuleq2 rspcdva ) ABFIJKDLBDLFIDLJKMBCJKDLB
-      DLCDLJKMFNEOKCBFICDPHGQ $.
-  $}
-
-  ${
-    fmulonerid.1 $e |- ( ph -> A e. CC ) $.
-    fmulonerid.2 $e |- ( ph -> ( F ` A ) e. CC ) $.
-    fmulonerid.3 $e |- ( ph -> ( F ` 1 ) = 1 ) $.
-    $( The right-unit multiplication identity follows from its left-unit
-       counterpart.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    fmulonerid $p |- ( ph -> ( F ` ( A x. 1 ) ) = ( ( F ` A ) x. ( F ` 1 ) )
-      ) $=
-      ( c1 cc wcel ax-1cn a1i cfv eqeltrd fmuloned fmulcomd ) AGBCGHIAJKDAGCLGH
-      FGHIAJKMEABCDEFNO $.
-  $}
-
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Additive decompositions and scaling
+  Additive decompositions and the multiples-of-four theorem
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
@@ -888710,13 +888626,6 @@ $)
       ADEONUGUSDEONRSTUCQADEHIJKUFUHVBVCAEDEONMNDUAMADEADHVBAEAEUTUSEUGUSIEVAUK
       VBAEAEUTUSEUGUSIEVAUKVDVEVFUNTUCUADMNUAEMNDEONMNFGVGUKVH $.
   $}
-
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Descent on summand gaps for multiples of four
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
 
   ${
     $d A a b $.  $d B b $.  $d M a b $.
@@ -889240,13 +889149,6 @@ $)
       ( cmin co nnsubgtd caddc nncnd pncan3d eqcomd liougb4antisumd ) ABCBKLCDE
       GABCGFHMABCBKLNLCABCABGOACFOPQIJR $.
   $}
-
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Residue functions: evaluation and conditional multiplicativity
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
 
   ${
     $d A a b $.  $d P a b $.
@@ -889839,13 +889741,6 @@ $)
       UAUEOADNOCNODCPQADSODNOHDUBTGIUCCDUDUFUGADSODKJLMUHHDUITUJ $.
   $}
 
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  The Liouville-Goldbach theorem for positive multiples of four
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
-
   ${
     $d P a b $.  $d P x $.  $d Z x $.
     liougb4modsqd.1 $e |- F = ( x e. ZZ |-> ( lam ` ( x mod P ) ) ) $.
@@ -890175,7 +890070,7 @@ $)
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Consequences of missing positive-positive decompositions
+  Odd completion and reflection identities
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
@@ -890407,13 +890302,6 @@ $)
       ONPQUIARBLCMNONMNBONLBRCMNONMNPABCABFURACGURUOUSABRCMNONSTLBRCMNONMNPQBRC
       MNONPQUIUJARCMNBARCRSTAUHUBGUCFJUDBRCMNONUTUGVAVBVC $.
   $}
-
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Odd completion: basic values and symmetries
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
 
   ${
     $( Equal arguments give equal values in the conditional expression used for
@@ -890942,7 +890830,7 @@ $)
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Odd completion: doubling and tripling on the central interval
+  Odd completion: doubling, tripling, and multiplicativity
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
@@ -891288,13 +891176,6 @@ $)
       UDGVRVTUKWCUDWDGUFWEFUFWETUCEOPCQRTAUACOPFVRGVRVSPUDFVRVTUKWCUDGVRVTUKWCU
       DWDGUFWEFUFWETNEOPCQRTMUJUJWKVBWBWB $.
   $}
-
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Odd completion: doubling and tripling on nonzero residues
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
 
   ${
     $d N a b $.  $d N x $.  $d P a b $.  $d P x $.
@@ -892200,13 +892081,6 @@ $)
       OPCEQTASEQUCTCEQOANEQUCTRSEQUCTRABDEFGHIJMUDUPUFACEQACEQUGUECEQUHUIABCDEH
       ADUJUEDURUEIDUKULKLUMUBUNUSUOUQ $.
   $}
-
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Odd completion: conditional multiplicativity
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
 
   ${
     $d D x $.  $d K x $.  $d N x $.  $d P x $.  $d Q x $.
@@ -893419,7 +893293,7 @@ $)
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Positive-positive pairs at twice a prime greater than three
+  The prime and general Liouville-Goldbach theorems
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
@@ -893637,13 +893511,6 @@ $)
       NUPTVTWFURWGWEVIVTVNDVTWAVNDUSZVNOUSZVTWAWHWIKVNNDOUTVAZVBVCWFWDWCVDTVEVT
       WDURWEWCVIVTVNOVTWAWHWIWJVFVCWDWCVGTVERVNVJTVHVNBCVKVLVM $.
   $}
-
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  The Liouville-Goldbach theorem for even integers greater than two
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
 
   ${
     $d A a b $.
