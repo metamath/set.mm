@@ -93,6 +93,8 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+26-Oct-26 relopabiv   ---         obsolete; use relopabi instead
+26-Oct-26 relopabv    ---         obsolete; use relopab instead
 22-Oct-26 fidmfisupp  ---         deleted; duplicate of fdmfifsupp
 21-Oct-26 iotain      [same]      Moved from ATS's mathbox to main set.mm
 21-Oct-26 nvelim      [same]      Moved from AV's mathbox to main set.mm
