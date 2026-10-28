@@ -857020,7 +857020,7 @@ $(
   "Basic ` N ` -th root of unity" and "Adjunction of a complex number to the
   ring of integers", the set of Eisenstein integers can be denoted by
   ` ( Z[] `` ( bRoU `` 3 ) ) `.  Compare with the set of Gaussian integers
-  ` Z[i] = ( Z[] `` _i ) = ( Z[] `` ( bRoU `` 4 ) ) ` , see ~ df-gz ,~ gziaz
+  ` Z[i] = ( Z[] `` _i ) = ( Z[] `` ( bRoU `` 4 ) ) ` , see ~ df-gz , ~ gziaz
   and ~ bru4 .
 
 $)
