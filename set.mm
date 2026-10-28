@@ -594861,7 +594861,8 @@ $)
 
   ${
     $d V x z $.  $d M v x y z $.  $d M v w y z $.
-    mirimanoffr.1 $e |- M = { x e. V | A. y ( x e. y -> E. z e. y ( z i^i y ) = (/) ) } $.
+    mirimanoffr.1 $e |- M = { x e. V | A. y ( x e. y -> E. z e. y ( z i^i y ) =
+                     (/) ) } $.
     $( Relative version of ~ mirimanoff (which corresponds to the case
        ` V = _V ` ).  (Contributed by Adrian Ducourtial, 13-Oct-2026.) $)
     mirimanoffr
@@ -594905,15 +594906,16 @@ $)
 
   ${
     $d M x y z $.
-    mirimanoff.1 $e |- M = { x | A. y ( x e. y -> E. z e. y ( z i^i y ) = (/) ) } $.
-    $( Mirimanoff's paradox:  The class of grounded sets is not a set.  Informally,
-       a set ` x ` is "grounded" if there is no infinite membership-descending
-       chain of sets (possibly a finite cycle) beginning with ` x ` . Formally, we
-       define a set ` x ` to be _grounded_ if every set containing ` x ` has a
-       minimal element with respect to membership. (Compare this with ~ ax-reg ,
-       which says that every non-empty set has an ` e. ` -minimal element.) See
-       Paragraph 1 of [Quine] p. 37 .  (Contributed by Adrian Ducourtial,
-       11-Oct-2026.) $)
+    mirimanoff.1 $e |- M = { x | A. y ( x e. y -> E. z e. y ( z i^i y ) = (/)
+                    ) } $.
+    $( Mirimanoff's paradox:  The class of grounded sets is not a set.
+       Informally, a set ` x ` is "grounded" if there is no infinite
+       membership-descending chain of sets (possibly a finite cycle) beginning
+       with ` x ` .  Formally, we define a set ` x ` to be _grounded_ if every
+       set containing ` x ` has a minimal element with respect to membership.
+       (Compare this with ~ ax-reg , which says that every non-empty set has an
+       ` e. ` -minimal element.) See Paragraph 1 of [Quine] p. 37 .
+       (Contributed by Adrian Ducourtial, 11-Oct-2026.) $)
     mirimanoff
         $p |- M e/ _V $=
           ( cvv wel cv cin c0 wceq wrex wal cab crab rabab eqtr4i mirimanoffr
