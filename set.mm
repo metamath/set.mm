@@ -831663,6 +831663,192 @@ $)
     $}
   $)
 
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Conjecture collection
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    etsyntaxcheck.believe $e |- ph $.
+    $( An equivalent to ~ idi that is used to verify syntactic validity of a
+       hypothesis which is not proved yet, and not risk database unsoundness if
+       it turns out to be false.  (Contributed by Ender Ting, 29-Oct-2026.)
+       (New usage is discouraged.) $)
+    etsyntaxcheck $p |- ph $=
+      (  ) B $.
+  $}
+
+  ${
+    $d D a b c s u v x y $.
+    undiscol.valid $e |- D = { c | ( U. c = CC /\ A. s e. c A. u e. s A. v e. s
+                                     ( abs ` ( u - v ) ) =/= 1 ) } $.
+    undiscol.yes7 $e |- E. c e. D ( # ` c ) = 7 $.
+    $( Unformalized theorem from Hadwiger-Nelson problem: the plane can be
+       partitioned into 7 sets of different colors such that no color has pair
+       of points at unit distance.  Suggested proof strategy: construct hexagon
+       coloring as an indexed union, then bound the distances.  Do not remove
+       ~ etsyntaxcheck from the proof as it verifies whether the hypothesis is
+       even a wff.  (Contributed by Ender Ting, 29-Oct-2026.)
+       (Proof modification is discouraged.) $)
+    undiscolle7 $p |- E. c e. D ( # ` c ) = 7 $=
+      ( cv chash cfv c7 wceq wrex etsyntaxcheck ) EHIJKLECMGN $.
+
+    undiscol.no1 $e |- A. c e. D 1 < ( # ` c ) $.
+    $( Unformalized theorem from Hadwiger-Nelson problem: partitioning of the
+       plane into 1 set is not a proper coloring.  Suggested proof strategy:
+       consider ` { 0 , 1 } ` and observe they both belong to the only color.
+       Obsolete after completion of ~ undiscolgt2 .  Do not remove
+       ~ etsyntaxcheck from the proof until complete.  (Contributed by Ender
+       Ting, 29-Oct-2026.)  (Proof modification is discouraged.) $)
+    undiscolgt1 $p |- A. c e. D 1 < ( # ` c ) $=
+      ( c1 cv chash cfv clt wbr wral etsyntaxcheck ) IEJKLMNECOHP $.
+
+    undiscol.no2 $e |- A. c e. D 2 < ( # ` c ) $.
+    $( Unformalized theorem from Hadwiger-Nelson problem: no partitioning of
+       plane into 2 sets is a proper coloring.  Suggested proof strategy:
+       construct an equilateral triangle, then invoke pigeonhole principle to
+       observe at least two are in one of the sets.  Obsolete after completion
+       of ~ undiscolgt3 .  Do not remove ~ etsyntaxcheck from the proof until
+       complete.  (Contributed by Ender Ting, 29-Oct-2026.)
+       (Proof modification is discouraged.) $)
+    undiscolgt2 $p |- A. c e. D 2 < ( # ` c ) $=
+      ( c2 cv chash cfv clt wbr wral etsyntaxcheck ) JEKLMNOECPIQ $.
+
+    undiscol.no3 $e |- A. c e. D 3 < ( # ` c ) $.
+    $( Unformalized theorem from Hadwiger-Nelson problem: no partitioning of
+       plane into 3 sets is a proper coloring.  Suggested proof strategy:
+       Moser spindle (or Golomb construction), with lemma that its chromatic
+       number is a lower bound on count of partitions.  Obsolete after
+       completion of ~ undiscolgt4 .  Do not remove ~ etsyntaxcheck from the
+       proof until complete.  (Contributed by Ender Ting, 29-Oct-2026.)
+       (Proof modification is discouraged.) $)
+    undiscolgt3 $p |- A. c e. D 3 < ( # ` c ) $=
+      ( c3 cv chash cfv clt wbr wral etsyntaxcheck ) KELMNOPECQJR $.
+
+    undiscol.no4 $e |- A. c e. D 4 < ( # ` c ) $.
+    $( Unformalized theorem from Hadwiger-Nelson problem: no partitioning of
+       plane into 4 sets is a proper coloring.  Suggested proof strategy:  G11
+       (510 vertices and 2508 edges, not four-colorable) and generate lemmas by
+       some automatic tool; alternatively, other graphs by Michael Nielsen can
+       be used if they happen to have easier proofs.  This is the current
+       state-of-the-art in chromatic numbers of unit distance graphs.  Do not
+       remove ~ etsyntaxcheck from the proof until complete.  (Contributed by
+       Ender Ting, 29-Oct-2026.)  (Proof modification is discouraged.) $)
+    undiscolgt4 $p |- A. c e. D 4 < ( # ` c ) $=
+      ( c4 cv chash cfv clt wbr wral etsyntaxcheck ) LEMNOPQECRKS $.
+
+    $( above, quote; I don't know proper formatting
+https://michaelnielsen.org/polymath/index.php?title=Hadwiger-Nelson_problem
+    $)
+
+    $( The minimum partitioning size is an extended real number i.e. infinity
+       or a real.  (Contributed by Ender Ting, 29-Oct-2026.) $)
+    undiscolminxr $p |- inf ( ( # " D ) , RR* , < ) e. RR* $=
+      ( vx chash cima cxr wss clt cxnn0 cvv ax-mp cinf wcel wf hashfxnn0 fimass
+      cv xnn0xr ssriv sstri infxrcl ) MCNZOPUKOQUAOUBUKROSRMUCUKRPUDSRMCUETLROL
+      UFUGUHUIUKUJT $.
+
+    $( The minimum partitioning size for the plane is less or equal to 7.
+       (Contributed by Ender Ting, 29-Oct-2026.) $)
+    undiscolminle7 $p |- inf ( ( # " D ) , RR* , < ) <_ 7 $=
+      ( vx chash cxr wss c7 cxnn0 cvv hashfxnn0 ax-mp cima wcel clt cinf cle wf
+      wbr fimass cv xnn0xr ssriv sstri cfv wceq wrex undiscolle7 wfn wb ffn ssv
+      fvelimab mp2an mpbir infxrlb ) MCUAZNOPVEUBZVENUCUDPUEUGVEQNRQMUFZVEQOSRQ
+      MCUHTLQNLUIUJUKULVFEUIMUMPUNECUOZABCDEFGUPMRUQZCROVFVHURVGVISRQMUSTCUTERC
+      PMVAVBVCVEPVDVB $.
+
+    $( Colorings which use infinite number of colors do not influence the
+       minimal size.  (Contributed by Ender Ting, 29-Oct-2026.) $)
+    undiscolminmpi $p |- inf ( ( # " D ) , RR* , < )
+                       = inf ( ( ( # " D ) \ { +oo } ) , RR* , < ) $=
+      ( vx vy vb cxr clt wcel wbr cxnn0 ax-mp va chash cima cpnf csn cdif cv wn
+      cinf wral wrex wi wceq wss wf hashfxnn0 fimass xnn0xr ssriv sstri ssdifss
+      cvv infxrcl wo neldif ex orrd wtru wor xrltso a1i wa xrinfmss inflb mptru
+      mp1i elsni pnfnlt eqnbrtrd syl jaoi rgen infglb eldifi anim1i reximi2 w3a
+      id eqinf mp3an ) UBCUCZUDUEZUFZOPUIZOQZLUGZWNPRUHZLWKUJZWNWPPRZMUGZWPPRZM
+      WKUKZULZLOUJZWKOPUIWNUMZWMOUNZWOWKOUNZXFWKSOVBSUBUOWKSUNUPVBSUBCUQTZUASOU
+      AUGZURUSUTWKOWLVAZTWMVCZTWQLWKWPWKQZWPWMQZWPWLQZVDWQXLXMXNXLXMUHXNWPWKWLV
+      EVFVGXMWQXNXMWQULVHUANEOWMWPPOPVIZVHVJVKZXFNUGZXIPRUHNWMUJXIXQPREUGXQPREW
+      MUKULNOUJVLUAOUKVHXGXFWKSOXHLSOWPURUSUTXJTZUANEWMVMVPVNVOXNWPUDUMZWQWPUDV
+      QXSWPUDWNPXSWHWOUDWNPRUHXSXFWOXRXKTWNVRVPVSVTWAVTWBXCLOWPOQZWSXBXTWSVLZXA
+      MWMUKZXBXFYAYBULXRXFNEMOWMWPPXOXFVJVKNEMWMVMWCTXAXAMWMWKWTWMQWTWKQXAWTWKW
+      LWDWEWFVTVFWBWOWRXDWGXEULVHLMOWKWNPXPWIVOWJ $.
+
+    $( Infimum over coloring sizes does not use infinite extended reals.
+       (Contributed by Ender Ting, 29-Oct-2026.) $)
+    undiscolminstd $p |- inf ( ( ( # " D ) \ { +oo } ) , RR* , < )
+                       = inf ( ( ( # " D ) \ { +oo } ) , RR , < ) $=
+      ( chash cpnf cr cxr clt wcel cvv c7 c4 vx vy cima csn cdif wss c0 wne cle
+      cv wbr wral wrex cinf cxnn0 wn wa cn0 eldif biimpi hashfxnn0 fimass ax-mp
+      wceq wf sseli velsn biimpri con3i anim12i syl xnn0nnn0pnf con1d imp nn0re
+      3syl ssriv cfv undiscolle7 rexanid mpbir wfn ffn a1i elex fnbrfvb syl2anc
+      ex biimpd reximi 7re elexi elima rexri pnfxr ltpnf orc wor xrltso sotrieq
+      wb wo mpan necon2abid imbitrid 3impia mp3an nelsn pm3.2i ne0ii 4re eldifi
+      ssv fvelimab mp2an eqcom rexbidv mpbid id vex hashxrcl adantl undiscolgt4
+      eqeltrdi rspec adantr breqtrd xrltle rexlimiv rgen breq1d ralbidv infxrre
+      jca rspcev ) LCUCZMUDZUEZNUFYRUGUHUAUJZUBUJZUIUKZUBYRULZUANUMZYROPUNYRNPU
+      NVDUAYRNYSYRQZYSUOQZYSMVDZUPZUQZYSURQZYSNQUUDYSYPQZYSYQQZUPZUQZUUHUUDUUMY
+      SYPYQUSUTUUJUUEUULUUGYPUOYSRUOLVEZYPUOUFVARUOLCVBVCVFUUFUUKUUKUUFUAMVGVHV
+      IVJVKUUEUUGUUIUUEUUIUUFUUEUUIUPUUFYSVLWHVMVNYSVOVPVQSYRSYRQSYPQZSYQQUPZUQ
+      UUOUUPUUOEUJZSLUKZECUMZUUQCQZUUQLVRZSVDZUQZECUMZUUSUVDUVBECUMABCDEFGVSUVB
+      ECVTWAUVCUURECUUTUVBUURUUTUVBUURUUTLRWBZUUQRQZUVBUURXAUVEUUTUUNUVEVARUOLW
+      CVCZWDUUQCWERUUQSLWFWGWIVNWJVCESLCSNWKWLWMWASMUHZUUPSOQZMOQZSMPUKZUVHSWKW
+      NWOSNQUVKWKSWPVCUVIUVJUVKUVHUVKUVKMSPUKZXBZUVIUVJUQZUVHUVKUVLWQUVNUVMSMOP
+      WRUVNSMVDUVMUPXAWSOSMPWTXCXDXEXFXGSMXHVCXISYPYQUSWAXJTNQTYTUIUKZUBYRULZUU
+      CXKUVOUBYRYTYRQYTYPQZUVOYTYPYQXLUVQYTUVAVDZECUMZUVOUVQUVAYTVDZECUMZUVSUVQ
+      UWAUVECRUFUVQUWAXAUVGCXMERCYTLXNXOUTUVQUVTUVRECUVTUVRXAUVQUVAYTXPWDXQXRUV
+      RUVOECUUTUVRUVOUUTUVRUQZTOQZYTOQZUQZTYTPUKZUVOUWBUWCUWDUWCUWBTXKWNWDUVRUW
+      DUUTUVRYTUVAOUVRXSUVFUVAOQEXTUUQRYAVCYDYBYNUWBTUVAYTPUUTTUVAPUKZUVRUWGECA
+      BCDEFGHIJKYCYEYFUVRUVTUUTUVRUVTYTUVAXPUTYBYGUWEUWFUVOTYTYHVNWGWHYIVKVKYJU
+      UBUVPUATNYSTVDZUUAUVOUBYRUWHYSTYTUIUWHXSYKYLYOXOUAUBYRYMXG $.
+
+    $( The minimum partitioning size is a natural number or zero.  (Contributed
+       by Ender Ting, 29-Oct-2026.) $)
+    undiscolminnn $p |- inf ( ( # " D ) , RR* , < ) e. NN0 $=
+      ( chash clt cpnf cn0 wcel cxnn0 cvv ax-mp c7 vx cima cxr cinf csn cdif cr
+      undiscolminmpi undiscolminstd eqtri cv wn wceq eldif biimpi wss hashfxnn0
+      wa wf fimass sseli velsn biimpri con3i anim12i xnn0nnn0pnf con1d imp 3syl
+      ex ssriv cc0 cuz cfv c0 wne nn0uz sseqtri wbr wrex rexanid mpbir wfn elex
+      wb ffn fnbrfvb sylancr biimpa reximi 7re elexi elima ltpnf nelsn mpbir2an
+      ltneii ne0ii infssuzcl mp2an sselii eqeltri ) LCUBZUCMUDZXCNUEZUFZUGMUDZO
+      XDXFUCMUDXGABCDEFGHIJKUHABCDEFGHIJKUIUJXFOXGUAXFOUAUKZXFPZXHXCPZXHXEPZULZ
+      URZXHQPZXHNUMZULZURXHOPZXIXMXHXCXEUNUOXJXNXLXPXCQXHRQLUSZXCQUPUQRQLCUTSVA
+      XOXKXKXOUANVBVCVDVEXNXPXQXNXQXOXNXQULXOXHVFVJVGVHVIVKZXFVLVMVNZUPXFVOVPXG
+      XFPXFOXTXSVQVRTXFTXFPTXCPZTXEPULZYAEUKZTLVSZECVTZYCCPZYCLVNTUMZURZECVTZYE
+      YIYGECVTGYGECWAWBYHYDECYFYGYDYFLRWCZYCRPYGYDWEXRYJUQRQLWFSYCCWDRYCTLWGWHW
+      IWJSETLCTUGWKWLWMWBTNVPYBTNWKTUGPTNMVSWKTWNSWQTNWOSTXCXEUNWPWRXFVLWSWTXAX
+      B $.
+
+    $( The minimum partitioning size for the plane is at least 5.  (Contributed
+       by Ender Ting, 29-Oct-2026.) $)
+    undiscolmingt4 $p |- 5 <_ inf ( ( # " D ) , RR* , < ) $=
+      ( vy c5 chash cxr cle wbr wcel cvv cxnn0 cima clt cinf wral cfv wceq wrex
+      vx cv wfn wss wb wf hashfxnn0 ffn ax-mp ssv fvelimab mp2an biimpi rexbidv
+      biidd mpbid wa cn0 cpnf c4 c1 caddc co df-5 undiscolgt4 rspec adantr 4nn0
+      a1i simpr nn0ltp1le syl2anc eqbrtrid simplr breqtrd ex 5re rexri breqtrrd
+      pnfge mp1i wo vex hashxnn0 wn wi xnn0nnn0pnf pm5.6 mpbi syl rexlimiv rgen
+      mpjaod fimass xnn0xr ssriv sstri infxrgelb mpbir ) MNCUAZOUBUCPQZMLUIZPQZ
+      LXGUDZXJLXGXIXGRZEUIZNUEZXIUFZECUGZXJXLXPXPXLXPNSUJZCSUKXLXPULSTNUMZXQUNS
+      TNUOUPCUQESCXINURUSUTXLXOXOECXLXOVBVAVCXOXJECXMCRZXOXJXSXOVDZXNVERZXJXNVF
+      UFZXTYAXJXTYAVDZMXNXIPYCMVGVHVIVJZXNPVKYCVGXNUBQZYDXNPQZXTYEYAXSYEXOYEECA
+      BCDEFGHIJKVLVMVNVNYCVGVERZYAYEYFULYGYCVOVPXTYAVQVGXNVRVSVCVTXSXOYAWAWBWCX
+      TYBXJXTYBVDZMXNXIPYHMVFXNPMORZMVFPQYHMWDWEZMWGWHXTYBVQWFXSXOYBWAWBWCXTXNT
+      RZYAYBWIZXMSRYKXTEWJXMSWKWHYKYAWLVDYBWMYKYLWMXNWNYKYAYBWOWPWQWTWCWRWQWSXG
+      OUKYIXHXKULXGTOXRXGTUKUNSTNCXAUPUHTOUHUIXBXCXDYJLXGMXEUSXF $.
+
+    $( Current state-of-the-art in Hadwiger-Nelson problem, unformalized.
+       Minimum partitioning of a plane into sets such that no set has a pair of
+       points at unit distance has size of either 5, 6 or 7.  (Contributed by
+       Ender Ting, 29-Oct-2026.) $)
+    undiscolmin $p |- inf ( ( # " D ) , RR* , < ) e. ( 5 ... 7 ) $=
+      ( chash cima c5 c7 wcel cz cle wbr nnzi cxr clt cinf cfz co undiscolminnn
+      nn0zi undiscolmingt4 undiscolminle7 w3a wb 5nn 7nn elfz1 mp2an mpbir3an )
+      LCMUAUBUCZNOUDUEPZUQQPZNUQRSZUQORSZUQABCDEFGHIJKUFUGABCDEFGHIJKUHABCDEFGH
+      IJKUINQPOQPURUSUTVAUJUKNULTOUMTUQNOUNUOUP $.
+  $}
+
+
 $( (End of Ender Ting's mathbox.) $)
 $( End $[ set-mbox-et.mm $] $)
 
