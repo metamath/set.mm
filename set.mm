@@ -594966,8 +594966,8 @@ $)
     $d M x y z $.
     mirimanofff.1 $e |- M = { x | A. y ( x e. y -> E. z e. y ( z i^i y ) = (/)
                      ) } $.
-    $( Mirimanoff's paradox for founded sets.  See ~ mirimanoff .
-       (Contributed by Adrian Ducourtial, 28-Oct-2026.) $)
+    $( Mirimanoff's paradox for founded sets.  See ~ mirimanoff .  (Contributed
+       by Adrian Ducourtial, 28-Oct-2026.) $)
     mirimanofff $p |- M e/ _V $=
       ( cvv wel cv cin c0 wceq wrex wi wal cab crab rabab eqtr4i mirimanofffr )
       ABCDFDABGCHBHZIJKCTLMBNZAOUAAFPEUAAQRS $.
