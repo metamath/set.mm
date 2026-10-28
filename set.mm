@@ -594860,63 +594860,64 @@ $(
 $)
 
   ${
-    $d M m $.  $d V m $.  $d f g m n $.  $d f g n x $.  $d M f n x $.
-    $d V f n x $.
-    mirimanoffr.1 $e |- M = { x e. V | -. E. f ( f Fn _om /\ ( f ` (/) ) = x
-                     /\ A. n e. _om ( f ` suc n ) e. ( f ` n ) ) } $.
+    $d V x z $.  $d M v x y z $.  $d M v w y z $.
+    mirimanoffr.1 $e |- M = { x e. V | A. y ( x e. y -> E. z e. y ( z i^i y ) = (/) ) } $.
     $( Relative version of ~ mirimanoff (which corresponds to the case
-       ` V = _V ` ).
-
-       Note that the definition of ` M ` presupposes that ` _om ` is available
-       as a set ( ~ omex ), which is equivalent to assuming ~ ax-inf2 .
-       (Contributed by Adrian Ducourtial, 13-Oct-2026.) $)
-    mirimanoffr $p |- M e/ V $=
-      ( vg vm wcel cv com c0 cfv wceq wral w3a wex wn eleq12d fveq1 wfn cvv a1i
-      csuc cmpt omex mptex fvex fnmpti peano1 suceq fveq2d fvmpt ax-mp cbvralvw
-      fveq2 wa wi rspcv peano2 syl11 3ad2ant3 imp wb eqidd fvexd fvmptd4 adantl
-      eqid mpbird ralrimiva syl3an3b 3jca fneq1 eqeq1d ralbidv 3anbi123d spcedv
-      eleq2 3ad2ant2 3anbi2d exbidv notbid cbvexvw notbii rabbieq elrab2 simprd
-      mpbid eqeq2 sylib nexdv pm2.24 idd wo isseti simpl ralrimivw fnmpt fvmptg
-      pm2.65i syl sylancr biimprd ancoms impancom ralrimiv syl5ibrcom eximdv ex
-      sylan mpii mtod sylnib ianor mpjaod nelir ) DEDEIZBJZKUAZLXSMZDNZCJZUDZXS
-      MZYCXSMZIZCKOZPZBQZRZXRYIBYIRXRYIGJZKUAZLYLMZLUDZXSMZNZYDYLMZYCYLMZIZCKOZ
-      PZGQZYIUUBHKHJZUDZXSMZUEZKUAZLUUGMZYPNZYDUUGMZYCUUGMZIZCKOZPGUBUUGUUGUBIY
-      IHKUUFUFUGUCYIUUHUUJUUNUUHYIHKUUFUUGUUEXSUHUUGVIZUIUCUUJYILKIZUUJUJHLUUFY
-      PKUUGUUDLNZUUEYOXSUUDLUKULUUOYOXSUHUMUNUCYHXTYBUUFUUDXSMZIZHKOZUUNYGUUSCH
-      KYCUUDNZYEUUFYFUURUVAYDUUEXSYCUUDUKULYCUUDXSUPSUOXTYBUUTPZUUMCKUVBYCKIZUQ
-      UUMYDUDZXSMZYEIZUVBUVCUVFUUTXTUVCUVFURYBYDKIZUUTUVFUVCUUSUVFHYDKUUDYDNZUU
-      FUVEUURYEUVHUUEUVDXSUUDYDUKULZUUDYDXSUPSUSYCUTZVAVBVCUVCUUMUVFVDUVBUVCUUK
-      UVEUULYEUVCHYDUUFUVEKUUGUBUVIUVCUUGVEUVJUVCUVDXSVFVGHYCUUFYEKUUGUUDYCNZUU
-      EYDXSUUDYCUKULUUOYDXSUHUMSVHVJVKVLVMYLUUGNZYMUUHYQUUJUUAUUNKYLUUGVNUVLYNU
-      UIYPLYLUUGTVOUVLYTUUMCKUVLYRUUKYSUULYDYLUUGTYCYLUUGTSVPVQVRYIYPEIZUUCRZYI
-      YPDIZUVMUVNUQYIYPYAIZUVOYHXTUVPYBUUPYHUVPURUJYGUVPCLKYCLNZYEYPYFYAUVQYDYO
-      XSYCLUKULYCLXSUPSUSUNVBYBXTUVPUVOVDYHYADYPVSVTWIYMYNAJZNZUUAPZGQZRZUVNAYP
-      EDUVRYPNZUWAUUCUWCUVTUUBGUWCUVSYQYMUUAUVRYPYNWJWAWBWCXTYAUVRNZYHPZBQZRZUW
-      BAEDFUWFUWAUWEUVTBGXSYLNZXTYMUWDUVSYHUUAKXSYLVNUWHYAYNUVRLXSYLTVOUWHYGYTC
-      KUWHYEYRYFYSYDXSYLTYCXSYLTSVPVQWDWEWFWGWKWHXAUCWLZXRXRRZYKRZUWKXRUWKWMXRU
-      WKWNXRXRYKUQZRUWJUWKWOXRDDIZUWLXRUWMYJUWIXRUWMXSHKDUEZNZBQZYJBUWNHKDUFUGW
-      PXRUWMUWPYJURXRUWMUQZUWOYIBUWQYIUWOUWNKUAZLUWNMZDNZYDUWNMZYCUWNMZIZCKOZPU
-      WQUWRUWTUXDUWQXRHKOUWRUWQXRHKXRUWMWQZWRHKDUWNEUWNVIZWSXBUWQUUPXRUWTUJUXEH
-      LDDKEUWNUUQDVEUXFWTXCUWQUXCCKXRUVCUWMUXCUVCXRUWMUXCURUVCXRUQZUXCUWMUXGUXA
-      DUXBDUVCUVGXRUXADNUVJHYDDDKEUWNUVHDVEUXFWTXKHYCDDKEUWNUVKDVEUXFWTSXDXEXFX
-      GVMUWOXTUWRYBUWTYHUXDKXSUWNVNUWOYAUWSDLXSUWNTVOUWOYGUXCCKUWOYEUXAYFUXBYDX
-      SUWNTYCXSUWNTSVPVQXHXIXJXLXMUWGYKADEDUVRDNZUWFYJUXHUWEYIBUXHUWDYBXTYHUVRD
-      YAWJWAWBWCFWGXNXRYKXOWKXPXAXQ $.
+       ` V = _V ` ).  (Contributed by Adrian Ducourtial, 13-Oct-2026.) $)
+    mirimanoffr
+        $p |- M e/ V $=
+          ( vv vw wcel cv wn wa wex wrex wceq wi wal sylib exbii anbi2i nex wel
+          pm3.24 ancom mtbi wral w3a cin c0 pm2.24 idd wo csn snexg snidg eleq1
+          cvv imbi1d albidv elrab2 simprbi eleq2 ineq2 rexeqbi1dv imbi12d spcgv
+          eqeq1d syl5 com23 elsn2g ineq1 biimtrdi imp disjr bitrdi notbid rspcv
+          sylc wb syl adantr sylbid rexlimdva syld pm2.01d notbii ianor exanali
+          mpjaod sylibr df-rex alnex bitr4i albii 3bitr2i df-ral xchnxbir exnal
+          imor pm4.63 ralbii eleq2w2 rexbidv rspcva anim2i anabss7 eximi eleq1w
+          cbvrexvw r19.41v biancomi 3anass 3ancomb 2exbii df-3an 19.41v 3bitr3i
+          excom pm4.61 olc elequ1 sylbir anim1i sylbi mto nelir ) DEDEIZGJZDIZK
+          ZYILZGMZYKGYIYJLYKYIUCYIYJUDUEUAYGGBUBZHJZCJZIZHBJZNZCYQUFZYIUGZBMZGM
+          ZYLYGYMYIYSUGZBMGMZUUBYGUUCGMZBMZUUDYGYIYSLZGYQNZBMZUUFYGYSYIGYQNZLZB
+          MZUUIYGYSYNDIZHYQNZLZBMZUULYGDYQIZYSLZBMZUUPYGUUQYOYQUHZUIOZCYQNZKZLZ
+          BMZUUSYGUUQUVBPZBQZKZUVEYGYGKZUVHUVHYGUVHUJYGUVHUKYGYGUVGLZKZUVIUVHUL
+          YGDDIZKZUVKYGUVLYGUVLYODUMZUHZUIOZCUVNNZUVMYGUVNUQIZDUVNIZUVLUVQPDEUN
+          DEUOZUVRUVLUVSUVQUVLUVGUVRUVSUVQPZUVLYGUVGAJZYQIZUVBPZBQZUVGADEDUWBDO
+          ZUWDUVFBUWFUWCUUQUVBUWBDYQUPURUSFUTZVAUVFUWABUVNUQYQUVNOZUUQUVSUVBUVQ
+          YQUVNDVBUVAUVPCYQUVNUWHUUTUVOUIYQUVNYOVCVGVDVEVFVHVIVRYGUVPUVMCUVNYGY
+          OUVNIZLZUVPUUMKZHUVNUFZUVMUWJUVPDUVNUHZUIOZUWLYGUWIUVPUWNVSZYGUWIYODO
+          ZUWOYODEVJUWPUVOUWMUIYODUVNVKVGVLVMHDUVNVNVOYGUWLUVMPZUWIYGUVSUWQUVTU
+          WKUVMHDUVNYNDOUUMUVLYNDDUPVPVQVTWAWBWCWDWEUVLUVJUWGWFRYGUVGWGRWIUUQUV
+          BBWHWJUVDUURBUVCYSUUQUVCYOYQIZUVAKZPZCQZUWSCYQUFZYSUVCUWRUVALZCMZKZUX
+          CKZCQZUXAUVBUXDUVACYQWKWFZUXCCWLZUXFUWTCUXFUWRKUWSULZUWTUWRUVAWGZUWRU
+          WSWSZWMWNWOUWSCYQWPZUWSYRCYQUWSYNYQIZYPLZHMZYRUWSUXNYPKZPZHQZKZUXRKZH
+          MUXPUXQHYQUFZUXTUVAUYBUXSUXQHYQWPWFHYOYQVNWQUXRHWRUYAUXOHUXNYPWTSWOYP
+          HYQWKWMXAZWOTSRUURUUOBUUQYSUUOUURUUNYSYRUUNCDYQUWPYPUUMHYQHYODXBXCXDX
+          EXFXGVTUUOUUKBUUNUUJYSUUMYIHGYQHGDXHXITSRUUHUUKBUUHYSUUJYIYSGYQXJXKSW
+          JUUHUUEBUUHYMUUGLZGMUUEUUGGYQWKUUCUYDGYMYIYSXLSWMSRUUCBGXRRUUCYTGBYMY
+          IYSXMXNRUUAYKGUUAYMYSLZYILZBMZYKYTUYFBYMYSYIXOSUYGUYEBMZYILYKUYEYIBXP
+          UYHYJYIUYHYMUVBPZBQZKZYJUYKYMUXALZBMZYMUXBLZBMUYHUYKYMUXJCQZLZBMZUYMU
+          YKYMUXELZBMZYMUXGLZBMUYQUYIKZBMYMUVCLZBMUYKUYSVUAVUBBYMUVBXSSUYIBWRVU
+          BUYRBUVCUXEYMUXHTSXQUYTUYRBUXGUXEYMUXITSUYTUYPBUXGUYOYMUXFUXJCUXKWNTS
+          WOUYLUYPBUXAUYOYMUWTUXJCUXLWNTSWMUYNUYLBUXBUXAYMUXMTSUYNUYEBUXBYSYMUY
+          CTSWOUYKYHEIZKZUYKULZYJUYKVUDXTVUCUYJLVUEYIVUCUYJWGUWEUYJAYHEDUWBYHOZ
+          UWDUYIBVUFUWCYMUVBAGBYAURUSFUTWQWJYBYCYDYDXGVTYEYF $.
     $( $j usage 'mirimanoffr' avoids 'ax-reg'; $)
   $}
 
   ${
-    $d M f n x $.
-    mirimanoff.1 $e |- M = { x | -. E. f ( f Fn _om /\ ( f ` (/) ) = x /\ A. n
-                    e. _om ( f ` suc n ) e. ( f ` n ) ) } $.
-    $( Mirimanoff's paradox:  The class of grounded sets is not a set.  Here, a
-       set ` x ` is grounded if there is no infinite membership-descending
-       sequence of sets beginning with ` x ` .  See Paragraph 1 of [Quine]
-       p. 37 .  (Contributed by Adrian Ducourtial, 11-Oct-2026.) $)
-    mirimanoff $p |- M e/ _V $=
-      ( cvv cv com wfn c0 cfv wceq csuc wcel wral w3a wex wn cab crab eqtr4i
-      rabab mirimanoffr ) ABCDFDBGZHIJUDKAGLCGZMUDKUEUDKNCHOPBQRZASUFAFTEUFAUBU
-      AUC $.
+    $d M x y z $.
+    mirimanoff.1 $e |- M = { x | A. y ( x e. y -> E. z e. y ( z i^i y ) = (/) ) } $.
+    $( Mirimanoff's paradox:  The class of grounded sets is not a set.  Informally,
+       a set ` x ` is "grounded" if there is no infinite membership-descending
+       chain of sets (possibly a finite cycle) beginning with ` x ` . Formally, we
+       define a set ` x ` to be _grounded_ if every set containing ` x ` has a
+       minimal element with respect to membership. (Compare this with ~ ax-reg ,
+       which says that every non-empty set has an ` e. ` -minimal element.) See
+       Paragraph 1 of [Quine] p. 37 .  (Contributed by Adrian Ducourtial,
+       11-Oct-2026.) $)
+    mirimanoff
+        $p |- M e/ _V $=
+          ( cvv wel cv cin c0 wceq wrex wal cab crab rabab eqtr4i mirimanoffr
+          wi ) ABCDFDABGCHBHZIJKCTLSBMZANUAAFOEUAAPQR $.
     $( $j usage 'mirimanoff' avoids 'ax-reg'; $)
   $}
 
