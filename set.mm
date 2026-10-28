@@ -515757,7 +515757,6 @@ $( Angle order ( ` leA ` ) and its witnesses: passing between "inside the
       VFWCVMVQWDVFVHVIABCDFGHJLMNOPQRSTUAUBUCUDUEUFUJUKUMVJVK $.
   $}
 
-
   ${
     $d ph w $.  $d A w $.  $d B w $.  $d C w $.  $d D w $.  $d E w $.
     $d F w $.  $d G w $.  $d P w $.  $d X w $.  $d Y w $.  $d Z w $.
@@ -515955,7 +515954,6 @@ $( The exterior-angle theorem ~ tgexta and its route.  Throughout, the
     $}
   $}
 
-
   ${
     tgextancd.p $e |- P = ( Base ` G ) $.
     tgextancd.m $e |- .- = ( dist ` G ) $.
@@ -515983,7 +515981,6 @@ $( The exterior-angle theorem ~ tgexta and its route.  Throughout, the
       UNAEVJUDVMAFGHIDCEKNMORQSACDEFGHJKLMOQRSTUOUQVPURUSUTVAADEUBVBVCVFVHUIVD
       $.
   $}
-
 
   ${
     $d a b $.  $d a t $.  $d b t $.  $d u v $.  $d u w $.  $d v w $.  $d u a $.
@@ -516348,7 +516345,6 @@ $( The exterior-angle theorem ~ tgexta and its route.  Throughout, the
     $}
   $}
 
-
   ${
     tgextaoa.p $e |- P = ( Base ` G ) $.
     tgextaoa.m $e |- .- = ( dist ` G ) $.
@@ -516697,7 +516693,6 @@ $( The AAS assembly proper.  ~ tgaas1 reduces AAS to SAS by proving
     $}
   $}
 
-
   ${
   $( ` x ` is the point copied onto ray ` E F ` , a proof-internal dummy of
      ~ tgaas1 : mandatory $d. $)
@@ -516772,7 +516767,6 @@ $)
     HABCADEFAGHSHTCAGHSHIHJAGHSHKLMHSHPABCADEFAGHAQRAGHSHUAUBABCADEFJAGHSHKLMHA
     ANHOLSAUCUDUE $.
 
-
   $( Division by a nonzero complex number ` A ` is multiplication by its
      conjugate followed by division by the square of its absolute value.
      (Contributed by JAG, 13-Oct-2026.) $)
@@ -516785,7 +516779,6 @@ $)
     CDPACDAEFGBCDGACDAEFACDAEFGBCDRTUAUBACDAEFGBCDGAHSAIJALSMNJAHSBIJKACDAEFGBC
     DGALSMNJAHSAIJACDAEFGBCDGALSMNJAAHSIJAHSAIJACDAEFGBCDGAACDAEFBCDPUCACDAEFGB
     CDGAAHSACDAEFBCDPACDAEFGBCDGAACDAEFBCDPQUDUEUFUGUH $.
-
 
   $( The imaginary part of a quotient ` ( B / A ) ` of complex numbers is the
      imaginary part of ` ( ( * `` A ) x. B ) ` divided by the square of the
@@ -516802,7 +516795,6 @@ $)
     ACDAEFGBCDGANKOPIEFANKEFACDAEFGBCDGAACDAEFBCDSACDAEFGBCDGACDAEFACDAEFGBCDUE
     UFUKACDAEFGBCDGANKCDANKOPIEFANKEFUGACDAEFGBCDGANKACDAEFGBCDGAACDAEFBCDSTUHA
     NKUIULUJUMUN $.
-
 
   $( The imaginary part of ` ( ( * `` A ) x. B ) ` is the determinant of the
      real and imaginary parts of ` A ` and ` B ` , that is, twice the signed
@@ -516822,7 +516814,6 @@ $)
     CDBCDEAKGACDBCDEAACDBCDNTRACDBCDEBJGACDBCDEBACDBCDOQRULACDBCDEAJGBKGACDBCDE
     AJGACDBCDEAACDBCDNQRACDBCDEBKGACDBCDEBACDBCDOTRULUJUHUH $.
 
-
   $( Adding the first row of a two-by-two determinant to its second row leaves
      the determinant unchanged: with rows ` A ` , ` B ` and ` C ` , ` D ` , the
      determinant ` ( ( A x. D ) - ( B x. C ) ) ` equals the one with rows
@@ -516838,7 +516829,6 @@ $)
     UOUPUBZNURBACVLVKUNUOUPUCZNUDURVFVBVHVCURUNVFEFURULUMVKVLSABOTURADVKVMPZURU
     MULGVHEFURUMULVLVKSBAOTZURBCVLVNPZUEURVJLVDHURVJVHVHKILURVFVHVHKURVHVFURBAV
     LVKUFUGQURVHVPUHRQUJURVDURVBVCVOVQUKUIR $.
-
 
   $( Twice the signed area of a triangle given by coordinates is the same
      whether it is computed from the first vertex or from the second.  The
@@ -516861,7 +516851,6 @@ $)
     XCOZUEVIVRVTXGXDUFVIFDBXFXBXCULPQVIWFVNVICAWPWQUIQRVIWMWFVIWDVRXEXGUJWSUMSR
     VIWDGHZWFGHZIZVRGHZWAGHZIZIWOWHUOVIXJXMVIXHXIXEWSTVIXKXLXGXATTWDWFVRWAUPUQS
     VIWEWIWGWJJVIVTWAXDXAURVIVQVRWRXGURRVIWBVSVIVTWAXDXAUSVIVQVRWRXGUSUTPQ $.
-
 
   $( The signed area of a triangle with complex vertices ` A ` , ` B ` , ` C `
      does not depend on the vertex it is computed from: the imaginary part of
@@ -516900,7 +516889,6 @@ $)
     DEABGHDEADEBDECDEFCBADEBDECDEQADEBDECDENPADEBDECDEFABADEBDECDEOADEBDECDENPU
     CCBGHABGHUDUEUKUG $.
 
-
   ${
     cnrflinv.a $e |- ( ph -> A e. CC ) $.
     cnrflinv.w $e |- ( ph -> W e. CC ) $.
@@ -516928,7 +516916,6 @@ $)
       WKRAWAVTWEWDVASUPAWKAVTWAWDWEUJAVTWAWDWEWFWGVBVETVFUPAVGWIVCTSABEFHVDT $.
   $}
 
-
   ${
     cnrflfix.a $e |- ( ph -> A e. CC ) $.
     cnrflfix.w $e |- ( ph -> W e. CC ) $.
@@ -516947,7 +516934,6 @@ $)
       EUEZAVAVHUFZAVAVHADBFEGUGUHZUIUJUKSTABEULSAVDBVANJDAVCVABNAVCVFVBMJVAACVF
       VBMVGUNAVAVBVHVIVJUMSTABDEFUOSUP $.
   $}
-
 
   ${
     cnrflsw.a $e |- ( ph -> A e. CC ) $.
@@ -516974,7 +516960,6 @@ $)
       QNVQADVSVRQWIUNAVQVRWFWGWHVGTUQUMUQAWNWMABVKVQGADVIWSWTVCZWFVDSABVKVQGXAW
       FVEUMAWJCVKRABCGHVFUNTST $.
   $}
-
 
   ${
     $d A x y $.  $d B x y $.
@@ -517005,7 +516990,6 @@ $)
       BVGVCVHAWBWHXBAWHAWBXBVIUOAWBXBXCVLVJVDAWGWCWIRAWBXBVMVHAWIWEWCRAWBXBVKUE
       VDAWBWDWBXBAWBXBVNXBAWBXBXCVOXCVPVQ $.
   $}
-
 
   ${
     $d A x y $.  $d B x y $.  $d C x y $.
@@ -517045,7 +517029,6 @@ $)
       VHVDAWCWBXBWLXEWOXFWPWQWRXHVMVFVGVOVNVOVD $.
   $}
 
-
   ${
     $d A x y $.  $d B x y $.
     angioo.1 $e |- F
@@ -517071,7 +517054,6 @@ $)
       EWCUTNZWPMWFRSZWDWHVEAWRWBAVTWMVKTWQAWSWBAWFAWKWLWFVFNWMWOVTVGUQVHTWCWFVI
       VJVLVMAWKWDWBVNWMWKWDWBVTVOVMUKVPVQ $.
   $}
-
 
   ${
     $d A x y $.  $d B x y $.  $d C x y $.
@@ -517124,7 +517106,6 @@ $)
       PUWQVDOXTQUBXAWIWTXBXCXDUOXEUVQYBXFWIXGWD $.
   $}
 
-
   ${
     $d A x y $.  $d B x y $.  $d R x y $.
     morlemfix.f $e |- F
@@ -517166,7 +517147,6 @@ $)
       IADXNEFKLMNYCVIVDUOUJUIUIADXMDDUETUGUDSTUFTDUKYFFUKADXMFKMOYDUNUMVDVDVD
       $.
   $}
-
 
   ${
     $d A x y $.  $d B x y $.  $d C x y $.  $d P x y $.  $d Q x y $.
@@ -517222,7 +517202,6 @@ $)
       SAFDUCVEUHUIUNUKVFVG $.
   $}
 
-
   ${
     $d A x y $.  $d B x y $.
     morlemcub.f $e |- F
@@ -517248,7 +517227,6 @@ $)
       VGAVPVTUJAVPNRVMPQZPQVTARNVMWJWBWMVHAWNVSNPAWNORGPQZPQVSAROGWJWCWLVHAWOVR
       OPAWORWDPQVRAGWDRPWEVIAVRRWIWJWKVJVKVIVKVIVKVLVK $.
   $}
-
 
   ${
     $d A x y $.  $d B x y $.  $d C x y $.
@@ -517304,7 +517282,6 @@ $)
       VCDXMDXMHDUKUFUTUHUEUFULUFZDUKUFZUTUHZUEUFZULUFHAUVBUVLDULAUVAUVKXMUEAUUT
       UVJUTAYHUVIDUKADFXMYEHPRSUBUUSUUNVHUQVMURURADXMFHPRSUBUUSVNVKVKVKVK $.
   $}
-
 
   ${
     $d A x y $.  $d B x y $.  $d C x y $.
@@ -517379,7 +517356,6 @@ $)
       UQYOYPYQUOUYGUMAUYGUOYRYSUQYTUUAUYEUYHUUBAHUOWTUUCUQUUDUUEUUF $.
   $}
 
-
   ${
     mul1subeqd.s $e |- ( ph -> S e. CC ) $.
     mul1subeqd.t $e |- ( ph -> T e. CC ) $.
@@ -517390,7 +517366,6 @@ $)
       ( c1 cmin co cmul 1cnd subdid mulridd oveq12d eqtrd ) ABHCIJKJBHKJZBCKJZI
       JBDIJABHCEALFMAQBRDIABENGOP $.
   $}
-
 
   ${
     cubm1d.s $e |- ( ph -> S e. CC ) $.
@@ -517409,7 +517384,6 @@ $)
       VLWJVHWKEAVJVFBAVJWEUOWHAVFBVRCUPUQZVRCURAVGDVSVQUSQAVJVGDVGWMVSVQVSVAAWL
       TVNIAVGVSUTVBVCAVNAVJDWMVQVDVESS $.
   $}
-
 
   ${
     morlemcyc.j $e |- ( ph -> J e. CC ) $.
@@ -517440,7 +517414,6 @@ $)
       CUJAWLWOABHGXSUMZYLWDVHVFAWPAWLWOYOYLWEWFTWAABGUIT $.
   $}
 
-
   ${
     morlemne1.s $e |- ( ph -> S e. ( 0 (,) _pi ) ) $.
     $( A rotation by an angle ` S ` in the open interval ` ( 0 (,) _pi ) ` is
@@ -517454,7 +517427,6 @@ $)
       AVEVLKABULPVEVLJABABLQUAFPZBRPCBLQUBSZUCBUDSUEAVKRPVJRPVMVJJABVOUFABVOUGV
       KVJUHUIUJAVJAVNLVJUKUMCBUNSUOUPLVHJAVHLUQURTUSUTVFVIVAAVEIKVDTVBVC $.
   $}
-
 
   ${
     morlemdne0.s $e |- ( ph -> S e. RR ) $.
@@ -517490,7 +517462,6 @@ $)
       LWMAVBWNOZQWNOYEYIVQUUDAWOPAQYOWPVBQXSWQURWRWSWTXAXB $.
   $}
 
-
   ${
     morlemclr.a $e |- ( ph -> A e. CC ) $.
     morlemclr.b $e |- ( ph -> B e. CC ) $.
@@ -517518,7 +517489,6 @@ $)
       VHVBAVDBAMFVLJUGGRZAFVGJWIRZAUTEVMIRZUQURSUMAVIVBAVEVHWOWPUHZWQUDSUPAEVBV
       IIWQWRUSUJS $.
   $}
-
 
   ${
     morlemka.e $e |- ( ph -> E e. CC ) $.
@@ -517556,7 +517526,6 @@ $)
       ACFVJTUJUMTUPAWHWEAWFWGACEFXFUSAVTCXMFUSQAOCXQFUSUCACEXFJKFVKT $.
   $}
 
-
   ${
     morlemkb.e $e |- ( ph -> E e. CC ) $.
     morlemkb.d $e |- ( ph -> D e. CC ) $.
@@ -517592,7 +517561,6 @@ $)
       TAVSCXCFUGUQXKUIUTVGUSVCUQAWGWHWIACQFQURUOAVIUNVJZABEGXFSZXTTUSVCAWGWJWFY
       FAWHWIYGXTRZAOBXBGSZTAWLWMWGNAWLWFWJNMWMAWJWFYHYIUGABEXFJKGVKUIUJUS $.
   $}
-
 
   ${
     morlemkc.e $e |- ( ph -> E e. CC ) $.
@@ -517640,7 +517608,6 @@ $)
       XRXFXQVTAUVMXCUVNPQAXCXRWAAUVNXAXCONZPAXCXAXRXQUPAUVKUVOPAUVKXMRMNWFRMNZX
       CONUVOAEXMRMJVIAWFDRXGHXPWBAUVPXAXCOACBRFGXPWBVIVFKURTVBTVGWC $.
   $}
-
 
   ${
     morlemlinalg.a $e |- ( ph -> A e. CC ) $.
@@ -517776,7 +517743,6 @@ $)
       $.
   $}
 
-
   ${
     $d A x y $.  $d B x y $.  $d C x y $.  $d P x y $.  $d Q x y $.
     $d R x y $.
@@ -517853,7 +517819,6 @@ $)
       STUAAXTUEUFUGYAYB $.
   $}
 
-
   ${
     cubeq1facd.s $e |- ( ph -> S e. CC ) $.
     cubeq1facd.1 $e |- ( ph -> ( S ^ 3 ) = 1 ) $.
@@ -517865,7 +517830,6 @@ $)
       ( c1 cmin co c2 cexp caddc cmul cc0 cubm1d oveq1d wceq 1m1e0 a1i 3eqtrd
       c3 ) ABEFGBHIGBJGEJGKGBSIGZEFGEEFGZLABCMATEEFDNUALOAPQR $.
   $}
-
 
   ${
     cubeq1absd.j $e |- ( ph -> J e. CC ) $.
@@ -517883,7 +517847,6 @@ $)
       VFVG $.
   $}
 
-
   ${
     cubeq1sumd.j $e |- ( ph -> J e. CC ) $.
     cubeq1sumd.1 $e |- ( ph -> ( J ^ 3 ) = 1 ) $.
@@ -517897,7 +517860,6 @@ $)
       HZUINAUIUFAUHFAUGBABCOCPAQZPABFCULRZABFCULESZTAUKNUFMHNAUJNUFMABCDUAUBAUF
       UMUNUCUDUE $.
   $}
-
 
   ${
     morlemeqrot.u $e |- ( ph -> U e. CC ) $.
@@ -517923,7 +517885,6 @@ $)
       CUKOMZTAWFVGCLMZWHACVGIVOULACNTPMZOMZWHWIWKWHUMAWJUKCOUNUOUPACNINUQURAUSU
       PUTVAVBJSUCAEHVCSVAVDSAVTCQLMQAVSQCLKUJACIVESVAVA $.
   $}
-
 
   ${
     morlemeqd.u $e |- ( ph -> U e. CC ) $.
@@ -517951,7 +517912,6 @@ $)
       QWDWBAVJDVPGUGUTVAUQAVJDVPGVBTUJTADEVGGHACVFIABDFGVCRVDVE $.
   $}
 
-
   ${
     morlemeqi.u $e |- ( ph -> U e. CC ) $.
     morlemeqi.v $e |- ( ph -> V e. CC ) $.
@@ -517976,7 +517936,6 @@ $)
       UPAUPAUOVEUIUJUKULUMAUTRURSNZURAUTCUQSNZOPVCURSNVGAUSVHOABCDEFGHIJVDLTUBA
       CUQIABDFGUCZUFAVCRURSVFUDUHAURAURAUQVIUIUJUKULUN $.
   $}
-
 
   ${
     $d A x y $.  $d B x y $.  $d C x y $.  $d P x y $.  $d Q x y $.
@@ -518009,8 +517968,6 @@ $)
     morleyR2.4 $e |- ( ph -> ( ( R - B ) F ( A - B ) ) = Y ) $.
     morleyR2.5 $e |- ( ph -> ( ( A - C ) F ( Q - C ) ) = Z ) $.
     morleyR2.6 $e |- ( ph -> ( ( P - C ) F ( B - C ) ) = Z ) $.
-
-
     $( Morley's trisector theorem in the complex plane: the three points where
        adjacent angle trisectors of a triangle meet form an equilateral
        triangle.  The triangle has distinct vertices ` A ` , ` B ` , ` C ` and
@@ -518042,7 +517999,6 @@ $)
       WLAYFYGYHYJWQABCDEFGHIJXJKLMNOPQRSTUAUBUCUDUEUFUGUHUIUJUKULUMUNUOUPUQURUS
       YIWRWS $.
   $}
-
 
 $( (End of Jorge Agra's mathbox.) $)
 $( End $[ set-mbox-jag.mm $] $)
