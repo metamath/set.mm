@@ -182769,6 +182769,168 @@ $)
   $}
 
   ${
+    psrbagmaxlem1.x $e |- ( ph -> X C_ ( NN0 ^m I ) ) $.
+    psrbagmaxlem1.xfi $e |- ( ph -> X e. Fin ) $.
+    psrbagmaxlem1.i $e |- ( ph -> I e. Fin ) $.
+    ${
+      $d I j p x $.  $d I j v x y z $.  $d I j w x y z $.  $d X p u x $.
+      $d X u v x y z $.  $d X u w x y z $.  $d j ph v x y z $.  $d j p u x $.
+      $d ph w x y z $.
+      $( Lemma for ~ psrbagmax .  Existence of a bag which is greater than any
+         element of a finite set of bags.  (Contributed by Jim Kingdon,
+         27-Oct-2026.) $)
+      psrbagmaxlem1 $p |- ( ph -> E. p ( p : I --> NN0
+          /\ A. j e. I A. x e. X ( x ` j ) <_ ( p ` j ) ) ) $=
+        ( vu wcel cv cle wbr wral cn0 wrex wa wceq syl2anc vw vy vz cfn cfv wex
+        vv wf c0 csn cun raleq rexbidv cc0 0nn0 ral0 brralrspcev mp2an a1i cdif
+        wss breq2 ralbidv cbvrexv cpr cr clt csup simplr cmap co ad5antr simprr
+        ad2antrr eldifad sseldd cvv nn0ex elmapd mpbid simp-5r nn0maxcl ad6antr
+        ffvelcdmd simprl ad3antrrr elmapi syl simp-6r nn0red maxcl simpr maxle1
+        simpllr letrd ex ralimdva imp maxle2 wb fveq1 breq1d ralunsn rexlimdva2
+        elv sylanbrc biimtrid adantr findcard2sd ralrimiva ac6sfi ) ADUDKZCLZBL
+        ZUEZJLZMNZBEOZJPQZCDODPFLZUHXOXMXTUEZMNZBEOZCDORFUFIAXSCDAXMDKZRZXQBUAL
+        ZOZJPQXQBUIOZJPQZXQBUBLZOZJPQZXQBYJUCLZUJUKZOZJPQZXSUAUBUCEYFUISYGYHJPX
+        QBYFUIULUMYFYJSYGYKJPXQBYFYJULUMYFYNSYGYOJPXQBYFYNULUMYFESYGXRJPXQBYFEU
+        LUMYIYEUNPKXOUNMNZBUIOYIUOYQBUPJBXOUNMPUIUQURUSYLXOUGLZMNZBYJOZUGPQYEYJ
+        UDKZRZYJEVAZYMEYJUTKZRZRZYPYKYTJUGPXPYRSXQYSBYJXPYRXOMVBVCVDUUFYTYPUGPU
+        UFYRPKZRZYTRZYRXMYMUEZVEVFVGVHZPKZXOUUKMNZBYNOZYPUUIUUGUUJPKZUULUUFUUGY
+        TVIZUUIDPXMYMUUIYMPDVJVKZKZDPYMUHZUUIEUUQYMAEUUQVAZYDUUAUUEUUGYTGVLUUIY
+        MEYJUUFUUDUUGYTUUBUUCUUDVMZVNVOVPUUIPDYMVQUDPVQKUUIVRUSAXLYDUUAUUEUUGYT
+        IVLVSVTAYDUUAUUEUUGYTWAWDZYRUUJWBTUUIUUMBYJOZUUJUUKMNZUUNUUHYTUVCUUHYSU
+        UMBYJUUHXNYJKZRZYSUUMUVFYSRZXOYRUUKUVGXOUVGDPXMXNUVGXNUUQKDPXNUHUVGEUUQ
+        XNAUUTYDUUAUUEUUGUVEYSGWCUVGYJEXNUUFUUCUUGUVEYSUUBUUCUUDWEWFUUHUVEYSVIV
+        PVPXNPDWGWHAYDUUAUUEUUGUVEYSWIWDWJUVGYRUUFUUGUVEYSWNWJZUVGYRVFKZUUJVFKZ
+        UUKVFKUVHUVGUUJUUFUUOUUGUVEYSUUFDPXMYMUUFUURUUSUUFEUUQYMAUUTYDUUAUUEGWF
+        UUFYMEYJUVAVOVPYMPDWGWHAYDUUAUUEWNWDWFWJZYRUUJWKTUVFYSWLUVGUVIUVJYRUUKM
+        NUVHUVKYRUUJWMTWOWPWQWRUUIUVIUVJUVDUUIYRUUPWJUUIUUJUVBWJYRUUJWSTUUNUVCU
+        VDRWTUCUUMUVDBYJYMVQXNYMSXOUUJUUKMXMXNYMXAXBXCXEXFJBXOUUKMPYNUQTXDXGAEU
+        DKYDHXHXIXJXRYCCJDPFXPYASXQYBBEXPYAXOMVBVCXKT $.
+    $}
+
+    psrbagmaxlem1a.p $e |- ( ph -> P : I --> NN0 ) $.
+    psrbagmaxlem1a.r $e |- ( ph -> R : I --> NN0 ) $.
+    psrbagmaxlem1a.s $e |- S
+      = ( i e. I |-> sup ( { ( P ` i ) , ( R ` i ) } , RR , < ) ) $.
+    ${
+      $d I i $.  $d i ph $.
+      $( Lemma for ~ psrbagmax .  A new bag which is the pointwise maximum of
+         two bags.  (Contributed by Jim Kingdon, 27-Oct-2026.) $)
+      psrbagmaxlem1a $p |- ( ph -> S : I --> NN0 ) $=
+        ( cv cfv cpr cr cn0 wcel ffvelcdmda clt csup wa nn0maxcl syl2anc fmptd
+        ) AEFENZBOZUGCOZPQUAUBZRDAUGFSUCUHRSUIRSUJRSAFRUGBKTAFRUGCLTUHUIUDUEMUF
+        $.
+    $}
+
+    psrbagmaxlem1x.z $e |- Z = { q e. ( NN0 ^m I ) | q oR <_ S } $.
+    ${
+      $d I f q $.  $d S f q $.  $d I i $.  $d ph i $.
+      $( Lemma for ~ psrbagmax .  Applying ~ psrbaglefifi to the sets in this
+         theorem.  (Contributed by Jim Kingdon, 27-Oct-2026.) $)
+      psrbagmaxlemfi $p |- ( ph -> Z e. Fin ) $=
+        ( vf cn0 cfn wcel cv cle cofr cmap co crab ccnv cima wceq eqid psrbagfi
+        wbr cn syl rabeqdv wf psrbagmaxlem1a cvv a1i elmapd mpbird psrbaglefifi
+        nn0ex eleqtrrd syl2anc eqeltrrd eqeltrid ) AHIUADUBUCULZIRFUDUEZUFZSPAV
+        HIQUAUGUMUHSTQVIUFZUFZVJSAVHIVKVIAFSTZVKVIUILVKQFVKUJZUKUNZUOADVKTVMVLS
+        TADVIVKADVITFRDUPABCDEFGJKLMNOUQARFDURSRURTAVCUSLUTVAVOVDLIVKQDFVNVBVEV
+        FVG $.
+    $}
+
+    psrbagmaxlem1a.x $e |- ( ph
+      -> A. j e. I A. x e. X ( x ` j ) <_ ( P ` j ) ) $.
+    psrbagmaxlem1a.y $e |- ( ph
+      -> A. j e. I A. y e. Y ( y ` j ) <_ ( R ` j ) ) $.
+    psrbagmaxlem1a.yss $e |- ( ph -> Y C_ ( NN0 ^m I ) ) $.
+    psrbagmaxlem1a.yfi $e |- ( ph -> Y e. Fin ) $.
+    ${
+      $d I i j $.  $d I q $.  $d P i j $.  $d R i $.  $d S j $.  $d S q $.
+      $d X j x $.  $d Z x $.  $d i j ph $.  $d ph x $.  $d q x $.
+      $( Lemma for ~ psrbagmax .  All the bags in ` X ` are (pointwise) less
+         than ` S ` , and thus elements of ` Z ` .  (Contributed by Jim
+         Kingdon, 27-Oct-2026.) $)
+      psrbagmaxlem1x $p |- ( ph -> X C_ Z ) $=
+        ( cv wcel wa cn0 cmap co cle cofr wbr sselda cfv wral elmapi ffvelcdmda
+        wf syl nn0red ad2antrr simpr ffvelcdmd psrbagmaxlem1a r19.21bi an32s cr
+        cpr clt csup maxle1 syl2anc weq fveq2 preq12d supeq1d nn0maxcl breqtrrd
+        fvmptd3 letrd ralrimiva cfn wfn elmapfn ffnd adantr inidm eqidd ofrfval
+        mpbird breq1 elrab2 sylanbrc ex ssrdv ) ABJLABUEZJUFZWQLUFZAWRUGZWQUHIU
+        IUJZUFZWQFUKULZUMZWSAJXAWQNUNZWTXDHUEZWQUOZXFFUOZUKUMZHIUPWTXIHIWTXFIUF
+        ZUGZXGXFDUOZXHXKXGWTIUHXFWQWTXBIUHWQUSXEWQUHIUQUTURVAXKXLXKIUHXFDAIUHDU
+        SWRXJQVBWTXJVCZVDZVAZXKXHXKIUHXFFAIUHFUSWRXJADEFGIJNOPQRSVEZVBXMVDVAAXJ
+        WRXGXLUKUMZAXJUGXQBJAXQBJUPHIUAVFVFVGXKXLXLXFEUOZVIZVHVJVKZXHUKXKXLVHUF
+        XRVHUFXLXTUKUMXOXKXRXKIUHXFEAIUHEUSWRXJRVBXMVDZVAXLXRVLVMXKGXFGUEZDUOZY
+        BEUOZVIZVHVJVKXTIFUHSGHVNZVHYEXSVJYFYCXLYDXRYBXFDVOYBXFEVOVPVQXMXKXLUHU
+        FXRUHUFXTUHUFXNYAXLXRVRVMVTVSWAWBWTHIIXGXHUKIWQFWCWCWTXBWQIWDXEWQUHIWEU
+        TAFIWDWRAIUHFXPWFWGAIWCUFWRPWGZYGIWHXKXGWIXKXHWIWJWKMUEZFXCUMXDMWQXALYH
+        WQFXCWLTWMWNWOWP $.
+    $}
+
+    ${
+      $d I i j $.  $d I q $.  $d P i $.  $d R i $.  $d S j $.  $d S q $.
+      $d Y j y $.  $d Z y $.  $d i j ph $.  $d ph y $.  $d q y $.
+      $( Lemma for ~ psrbagmax .  All the bags in ` Y ` are (pointwise) less
+         than ` S ` , and thus elements of ` Z ` .  (Contributed by Jim
+         Kingdon, 27-Oct-2026.) $)
+      psrbagmaxlem1y $p |- ( ph -> Y C_ Z ) $=
+        ( cv wcel wa cn0 cmap co cle cofr wbr sselda cfv wral elmapi ffvelcdmda
+        wf syl nn0red ad2antrr simpr ffvelcdmd psrbagmaxlem1a r19.21bi an32s cr
+        cpr clt csup maxle2 syl2anc weq fveq2 preq12d supeq1d nn0maxcl breqtrrd
+        fvmptd3 letrd ralrimiva cfn wfn elmapfn ffnd adantr inidm eqidd ofrfval
+        mpbird breq1 elrab2 sylanbrc ex ssrdv ) ACKLACUEZKUFZWQLUFZAWRUGZWQUHIU
+        IUJZUFZWQFUKULZUMZWSAKXAWQUCUNZWTXDHUEZWQUOZXFFUOZUKUMZHIUPWTXIHIWTXFIU
+        FZUGZXGXFEUOZXHXKXGWTIUHXFWQWTXBIUHWQUSXEWQUHIUQUTURVAXKXLXKIUHXFEAIUHE
+        USWRXJRVBWTXJVCZVDZVAZXKXHXKIUHXFFAIUHFUSWRXJADEFGIJNOPQRSVEZVBXMVDVAAX
+        JWRXGXLUKUMZAXJUGXQCKAXQCKUPHIUBVFVFVGXKXLXFDUOZXLVIZVHVJVKZXHUKXKXRVHU
+        FXLVHUFXLXTUKUMXKXRXKIUHXFDAIUHDUSWRXJQVBXMVDZVAXOXRXLVLVMXKGXFGUEZDUOZ
+        YBEUOZVIZVHVJVKXTIFUHSGHVNZVHYEXSVJYFYCXRYDXLYBXFDVOYBXFEVOVPVQXMXKXRUH
+        UFXLUHUFXTUHUFYAXNXRXLVRVMVTVSWAWBWTHIIXGXHUKIWQFWCWCWTXBWQIWDXEWQUHIWE
+        UTAFIWDWRAIUHFXPWFWGAIWCUFWRPWGZYGIWHXKXGWIXKXHWIWJWKMUEZFXCUMXDMWQXALY
+        HWQFXCWLTWMWNWOWP $.
+    $}
+  $}
+
+  ${
+    $d I i j k p r u x $.  $d I i p q r u $.  $d I i j k p r v x $.
+    $d I i j k r u y $.  $d I i p q r z $.  $d X i j k p r u x $.
+    $d X i j k p r v x $.  $d X i p r z $.  $d Y i j k p r u $.
+    $d Y i j k p r v $.  $d Y i j k r u y $.  $d Y i p r z $.
+    $d i j k p ph r u x $.  $d ph r v x $.  $d ph r u y $.  $d q r v $.
+    $d v y $.
+    psrbagmax.x $e |- ( ph -> X C_ ( NN0 ^m I ) ) $.
+    psrbagmax.xfi $e |- ( ph -> X e. Fin ) $.
+    psrbagmax.y $e |- ( ph -> Y C_ ( NN0 ^m I ) ) $.
+    psrbagmax.yfi $e |- ( ph -> Y e. Fin ) $.
+    psrbagmax.i $e |- ( ph -> I e. Fin ) $.
+    $( Given two finite sets of bags, provide a finite set which contains all
+       of their elements.
+
+       The proof constructs the result ( ` Z ` in the lemmas), proves its
+       properties (via ~ psrbagmaxlemfi , ~ psrbagmaxlem1x , and
+       ~ psrbagmaxlem1y ), and then this proof combines those lemmas and
+       assigns the result to the variable ` z ` .  (Contributed by Jim Kingdon,
+       24-Oct-2026.) $)
+    psrbagmax $p |- ( ph -> E. z ( ( z C_ ( NN0 ^m I ) /\ z e. Fin )
+        /\ ( X C_ z /\ Y C_ z ) ) ) $=
+      ( vj vu vv vk cv cfv cle wral wa wss vp vx vr vy vq vi cn0 wf wbr cmap co
+      cfn wcel wex psrbagmaxlem1 adantr cpr cr clt csup cmpt cofr crab ad2antrr
+      simplrl simprl eqid psrbagmaxlemfi ssrab2 jctil simplrr weq fveq1 cbvralv
+      breq1d ralbii fveq2 bitri sylib simprr psrbagmaxlem1x psrbagmaxlem1y wceq
+      breq12d ralbidv jca32 sseq1 eleq1 anbi12d sseq2 spcegv sylc exlimddv ) AC
+      UGUAOZUHZKOZUBOZPZWPWNPZQUIZUBDRZKCRZSZBOZUGCUJUKZTZXDULUMZSZDXDTZEXDTZSZ
+      SZBUNZUAAUBKCDUAFGJUOAXCSZCUGUCOZUHZWPUDOZPZWPXOPZQUIZUDERZKCRZSZXMUCAYCU
+      CUNXCAUDKCEUCHIJUOUPXNYCSZUEOUFCUFOZWNPYEXOPUQURUSUTVAZQVBUIZUEXEVCZULUMZ
+      YHXETZYISZDYHTZEYHTZSZSZXMYDWNXOYFUFCDYHUEADXETXCYCFVDZADULUMXCYCGVDZACUL
+      UMXCYCJVDZAWOXBYCVEZXNXPYBVFZYFVGZYHVGZVHZYDYKYLYMYDYIYJUUCYGUEXEVIVJYDLM
+      WNXOYFUFNCDEYHUEYPYQYRYSYTUUAUUBYDXBNOZLOZPZUUDWNPZQUIZLDRZNCRZAWOXBYCVKX
+      BWPUUEPZWSQUIZLDRZKCRUUJXAUUMKCWTUULUBLDUBLVLWRUUKWSQWPWQUUEVMVOVNVPUUMUU
+      IKNCKNVLZUULUUHLDUUNUUKUUFWSUUGQWPUUDUUEVQWPUUDWNVQWDWEVNVRVSZYDYBUUDMOZP
+      ZUUDXOPZQUIZMERZNCRZXNXPYBVTYBWPUUPPZXSQUIZMERZKCRUVAYAUVDKCXTUVCUDMEUDMV
+      LXRUVBXSQWPXQUUPVMVOVNVPUVDUUTKNCUUNUVCUUSMEUUNUVBUUQXSUURQWPUUDUUPVQWPUU
+      DXOVQWDWEVNVRVSZAEXETXCYCHVDZAEULUMXCYCIVDZWAYDLMWNXOYFUFNCDEYHUEYPYQYRYS
+      YTUUAUUBUUOUVEUVFUVGWBWFXLYOBYHULXDYHWCZXHYKXKYNUVHXFYJXGYIXDYHXEWGXDYHUL
+      WHWIUVHXIYLXJYMXDYHDWJXDYHEWJWIWIWKWLWMWM $.
+  $}
+
+  ${
     $d D u v w x $.  $d D y $.  $d D x z $.  $d F f $.  $d F u v w x $.
     $d F y $.  $d F x z $.  $d I f $.  $d I z $.  $d S u v w $.  $d S z $.
     $d X f $.  $d X u v w x $.  $d X y $.  $d X x z $.  $d Y f $.
