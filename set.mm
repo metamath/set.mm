@@ -856999,12 +856999,11 @@ $)
     $( The square of the basic 3rd root of unity expressed by the basic 3rd
        root of unity.  (Contributed by AV, 24-Oct-2026.) $)
     bru3sqbru $p |- ( W ^ 2 ) = ( -u 1 - W ) $=
-      ( c2 cexp co c1 caddc cneg cmin cc0 wceq cc wcel wa addcom cxp ax-addf c3
-      ax-1cn mp2an fdmi ndmovcom pm2.61i oveq2i cbru cfv cn brucn ax-mp eqeltri
-      3nn sqcli addassi bru3eq 3eqtr2i wb addcli addeq0 mpbi negdi2 eqtri ) ACD
-      EZFAGEZHZFHAIEZVBVCGEZJKZVBVDKZVFVBAFGEZGEVBAGEFGEJVCVIVBGFLMZALMZNVCVIKF
-      AOFALGLLPLGQUAUBUCUDVBAFAARUEUFZLBRUGMVLLMUKRUHUIUJZULZVMSUMABUNUOVBLMVCL
-      MVGVHUPVNFASVMUQVBVCURTUSVJVKVDVEKSVMFAUTTVA $.
+      ( c2 cexp co c1 caddc cneg cmin cc0 wceq ax-1cn c3 cbru cfv cc wcel mp2an
+      cn 3nn brucn ax-mp eqeltri addcomi oveq2i sqcli addassi bru3eq 3eqtr2i wb
+      addcli addeq0 mpbi negdi2 eqtri ) ACDEZFAGEZHZFHAIEZUPUQGEZJKZUPURKZUTUPA
+      FGEZGEUPAGEFGEJUQVCUPGFALAMNOZPBMSQVDPQTMUAUBUCZUDUEUPAFAVEUFZVELUGABUHUI
+      UPPQUQPQVAVBUJVFFALVEUKUPUQULRUMFPQAPQURUSKLVEFAUNRUO $.
   $}
 
 
@@ -857016,12 +857015,12 @@ $(
   According to Wikipedia ("Eisenstein integer", 27-Oct-2026,
   ~ https://en.wikipedia.org/wiki/Eisenstein_integer ) "the Eisenstein integers
   (named after Gotthold Eisenstein) ... are the complex numbers of the form
-  ` z = a + b _om ` where ` a ` and ` b ` are integers and `_om ` is a
+  ` z = a + b _om ` where ` a ` and ` b ` are integers and ` _om ` is a
   primitive (hence non-real) cube root of unity."  With the definitions of
   "Basic ` N ` -th root of unity" and "Adjunction of a complex number to the
   ring of integers", the set of Eisenstein integers can be denoted by
   ` ( Z[] `` ( bRoU `` 3 ) ) `.  Compare with the set of Gaussian integers
-  ` Z[i] = ( Z[] `` _i ) = ( Z[] `` ( bRoU `` 4 ) ) `, see ~ df-gz ,~ gziaz
+  ` Z[i] = ( Z[] `` _i ) = ( Z[] `` ( bRoU `` 4 ) ) ` , see ~ df-gz ,~ gziaz
   and ~ bru4 .
 
 $)
