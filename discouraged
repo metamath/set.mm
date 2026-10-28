@@ -6411,6 +6411,11 @@
 "erngset-rN" is used by "erngbase-rN".
 "erngset-rN" is used by "erngfmul-rN".
 "erngset-rN" is used by "erngfplus-rN".
+"etsyntaxcheck" is used by "undiscolgt1".
+"etsyntaxcheck" is used by "undiscolgt2".
+"etsyntaxcheck" is used by "undiscolgt3".
+"etsyntaxcheck" is used by "undiscolgt4".
+"etsyntaxcheck" is used by "undiscolle7".
 "euxfr2" is used by "euxfr".
 "exatleN" is used by "cdlema2N".
 "exdistrf" is used by "oprabid".
@@ -16648,6 +16653,7 @@ New usage of "erngplus2-rN" is discouraged (0 uses).
 New usage of "erngring-rN" is discouraged (0 uses).
 New usage of "erngset-rN" is discouraged (3 uses).
 New usage of "et-ltneverrefl" is discouraged (0 uses).
+New usage of "etsyntaxcheck" is discouraged (5 uses).
 New usage of "eufndx" is discouraged (0 uses).
 New usage of "eujustALT" is discouraged (0 uses).
 New usage of "euxfr" is discouraged (0 uses).
@@ -21353,6 +21359,11 @@ Proof modification of "un01" is discouraged (18 steps).
 Proof modification of "un10" is discouraged (18 steps).
 Proof modification of "un2122" is discouraged (44 steps).
 Proof modification of "undif3VD" is discouraged (295 steps).
+Proof modification of "undiscolgt1" is discouraged (12 steps).
+Proof modification of "undiscolgt2" is discouraged (12 steps).
+Proof modification of "undiscolgt3" is discouraged (12 steps).
+Proof modification of "undiscolgt4" is discouraged (12 steps).
+Proof modification of "undiscolle7" is discouraged (11 steps).
 Proof modification of "uni0OLD" is discouraged (13 steps).
 Proof modification of "unichnidl" is discouraged (794 steps).
 Proof modification of "unidif0OLD" is discouraged (81 steps).
