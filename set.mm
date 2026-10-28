@@ -594860,12 +594860,73 @@ $(
 $)
 
   ${
-    $d V x z $.  $d M v x y z $.  $d M v w y z $.
-    mirimanoffr.1 $e |- M = { x e. V | A. y ( x e. y -> E. z e. y ( z i^i y ) =
-                     (/) ) } $.
+    $d M m $.  $d V m $.  $d f g m n $.  $d f g n x $.  $d M f n x $.
+    $d V f n x $.
+    mirimanoffr.1 $e |- M = { x e. V | -. E. f ( f Fn _om /\ ( f ` (/) ) = x
+                     /\ A. n e. _om ( f ` suc n ) e. ( f ` n ) ) } $.
     $( Relative version of ~ mirimanoff (which corresponds to the case
-       ` V = _V ` ).  (Contributed by Adrian Ducourtial, 13-Oct-2026.) $)
+       ` V = _V ` ).
+
+       Note that the definition of ` M ` presupposes that ` _om ` is available
+       as a set ( ~ omex ), which is equivalent to assuming ~ ax-inf2 .
+       (Contributed by Adrian Ducourtial, 13-Oct-2026.) $)
     mirimanoffr $p |- M e/ V $=
+      ( vg vm wcel cv com c0 cfv wceq wral w3a wex wn eleq12d fveq1 wfn cvv a1i
+      csuc cmpt omex mptex fvex fnmpti peano1 suceq fveq2d fvmpt ax-mp cbvralvw
+      fveq2 wa wi rspcv peano2 syl11 3ad2ant3 imp wb eqidd fvexd fvmptd4 adantl
+      eqid mpbird ralrimiva syl3an3b 3jca fneq1 eqeq1d ralbidv 3anbi123d spcedv
+      eleq2 3ad2ant2 3anbi2d exbidv notbid cbvexvw notbii rabbieq elrab2 simprd
+      mpbid eqeq2 sylib nexdv pm2.24 idd wo isseti simpl ralrimivw fnmpt fvmptg
+      pm2.65i syl sylancr biimprd ancoms impancom ralrimiv syl5ibrcom eximdv ex
+      sylan mpii mtod sylnib ianor mpjaod nelir ) DEDEIZBJZKUAZLXSMZDNZCJZUDZXS
+      MZYCXSMZIZCKOZPZBQZRZXRYIBYIRXRYIGJZKUAZLYLMZLUDZXSMZNZYDYLMZYCYLMZIZCKOZ
+      PZGQZYIUUBHKHJZUDZXSMZUEZKUAZLUUGMZYPNZYDUUGMZYCUUGMZIZCKOZPGUBUUGUUGUBIY
+      IHKUUFUFUGUCYIUUHUUJUUNUUHYIHKUUFUUGUUEXSUHUUGVIZUIUCUUJYILKIZUUJUJHLUUFY
+      PKUUGUUDLNZUUEYOXSUUDLUKULUUOYOXSUHUMUNUCYHXTYBUUFUUDXSMZIZHKOZUUNYGUUSCH
+      KYCUUDNZYEUUFYFUURUVAYDUUEXSYCUUDUKULYCUUDXSUPSUOXTYBUUTPZUUMCKUVBYCKIZUQ
+      UUMYDUDZXSMZYEIZUVBUVCUVFUUTXTUVCUVFURYBYDKIZUUTUVFUVCUUSUVFHYDKUUDYDNZUU
+      FUVEUURYEUVHUUEUVDXSUUDYDUKULZUUDYDXSUPSUSYCUTZVAVBVCUVCUUMUVFVDUVBUVCUUK
+      UVEUULYEUVCHYDUUFUVEKUUGUBUVIUVCUUGVEUVJUVCUVDXSVFVGHYCUUFYEKUUGUUDYCNZUU
+      EYDXSUUDYCUKULUUOYDXSUHUMSVHVJVKVLVMYLUUGNZYMUUHYQUUJUUAUUNKYLUUGVNUVLYNU
+      UIYPLYLUUGTVOUVLYTUUMCKUVLYRUUKYSUULYDYLUUGTYCYLUUGTSVPVQVRYIYPEIZUUCRZYI
+      YPDIZUVMUVNUQYIYPYAIZUVOYHXTUVPYBUUPYHUVPURUJYGUVPCLKYCLNZYEYPYFYAUVQYDYO
+      XSYCLUKULYCLXSUPSUSUNVBYBXTUVPUVOVDYHYADYPVSVTWIYMYNAJZNZUUAPZGQZRZUVNAYP
+      EDUVRYPNZUWAUUCUWCUVTUUBGUWCUVSYQYMUUAUVRYPYNWJWAWBWCXTYAUVRNZYHPZBQZRZUW
+      BAEDFUWFUWAUWEUVTBGXSYLNZXTYMUWDUVSYHUUAKXSYLVNUWHYAYNUVRLXSYLTVOUWHYGYTC
+      KUWHYEYRYFYSYDXSYLTYCXSYLTSVPVQWDWEWFWGWKWHXAUCWLZXRXRRZYKRZUWKXRUWKWMXRU
+      WKWNXRXRYKUQZRUWJUWKWOXRDDIZUWLXRUWMYJUWIXRUWMXSHKDUEZNZBQZYJBUWNHKDUFUGW
+      PXRUWMUWPYJURXRUWMUQZUWOYIBUWQYIUWOUWNKUAZLUWNMZDNZYDUWNMZYCUWNMZIZCKOZPU
+      WQUWRUWTUXDUWQXRHKOUWRUWQXRHKXRUWMWQZWRHKDUWNEUWNVIZWSXBUWQUUPXRUWTUJUXEH
+      LDDKEUWNUUQDVEUXFWTXCUWQUXCCKXRUVCUWMUXCUVCXRUWMUXCURUVCXRUQZUXCUWMUXGUXA
+      DUXBDUVCUVGXRUXADNUVJHYDDDKEUWNUVHDVEUXFWTXKHYCDDKEUWNUVKDVEUXFWTSXDXEXFX
+      GVMUWOXTUWRYBUWTYHUXDKXSUWNVNUWOYAUWSDLXSUWNTVOUWOYGUXCCKUWOYEUXAYFUXBYDX
+      SUWNTYCXSUWNTSVPVQXHXIXJXLXMUWGYKADEDUVRDNZUWFYJUXHUWEYIBUXHUWDYBXTYHUVRD
+      YAWJWAWBWCFWGXNXRYKXOWKXPXAXQ $.
+    $( $j usage 'mirimanoffr' avoids 'ax-reg'; $)
+  $}
+
+  ${
+    $d M f n x $.
+    mirimanoff.1 $e |- M = { x | -. E. f ( f Fn _om /\ ( f ` (/) ) = x /\ A. n
+                    e. _om ( f ` suc n ) e. ( f ` n ) ) } $.
+    $( Mirimanoff's paradox:  The class of grounded sets is not a set.  Here, a
+       set ` x ` is grounded if there is no infinite membership-descending
+       sequence of sets beginning with ` x ` .  See Paragraph 1 of [Quine]
+       p. 37 .  (Contributed by Adrian Ducourtial, 11-Oct-2026.) $)
+    mirimanoff $p |- M e/ _V $=
+      ( cvv cv com wfn c0 cfv wceq csuc wcel wral w3a wex wn cab crab eqtr4i
+      rabab mirimanoffr ) ABCDFDBGZHIJUDKAGLCGZMUDKUEUDKNCHOPBQRZASUFAFTEUFAUBU
+      AUC $.
+    $( $j usage 'mirimanoff' avoids 'ax-reg'; $)
+  $}
+
+  ${
+    $d V x z $.  $d M v x y z $.  $d M v w y z $.
+    mirimanofffr.1 $e |- M = { x e. V | A. y ( x e. y -> E. z e. y ( z i^i y )
+                      = (/) ) } $.
+    $( Relative version of ~ mirimanofff (which corresponds to the case
+       ` V = _V ` ).  (Contributed by Adrian Ducourtial, 28-Oct-2026.) $)
+    mirimanofffr $p |- M e/ V $=
       ( vv vw wcel cv wn wa wex wrex wceq wi wal sylib exbii anbi2i pm3.24 mtbi
       ancom nex wel wral w3a cin c0 pm2.24 idd csn cvv snexg snidg eleq1 imbi1d
       wo albidv elrab2 simprbi eleq2 ineq2 eqeq1d rexeqbi1dv imbi12d spcgv syl5
@@ -594898,25 +594959,19 @@ $)
       UXGUYOYMUXFUXJCUXKWNTSWOUYLUYPBUXAUYOYMUWTUXJCUXLWNTSWMUYNUYLBUXBUXAYMUXM
       TSUYNUYEBUXBYSYMUYCTSWOUYKYHEIZKZUYKURZYJUYKVUDXSVUCUYJLVUEYIVUCUYJWGUWEU
       YJAYHEDUWBYHOZUWDUYIBVUFUWCYMUVBAGBXTUQUSFUTWQWJYAYBYDYDXFVSYEYF $.
-    $( $j usage 'mirimanoffr' avoids 'ax-reg'; $)
+    $( $j usage 'mirimanofffr' avoids 'ax-reg'; $)
   $}
 
   ${
     $d M x y z $.
-    mirimanoff.1 $e |- M = { x | A. y ( x e. y -> E. z e. y ( z i^i y ) = (/)
-                    ) } $.
-    $( Mirimanoff's paradox:  The class of grounded sets is not a set.
-       Informally, a set ` x ` is "grounded" if there is no infinite
-       membership-descending chain of sets (possibly a finite cycle) beginning
-       with ` x ` .  Formally, we define a set ` x ` to be _grounded_ if every
-       set containing ` x ` has a minimal element with respect to membership.
-       (Compare this with ~ ax-reg , which says that every non-empty set has an
-       ` e. ` -minimal element.)  See Paragraph 1 of [Quine] p. 37 .
-       (Contributed by Adrian Ducourtial, 11-Oct-2026.) $)
-    mirimanoff $p |- M e/ _V $=
-      ( cvv wel cv cin c0 wceq wrex wi wal cab crab rabab eqtr4i mirimanoffr )
+    mirimanofff.1 $e |- M = { x | A. y ( x e. y -> E. z e. y ( z i^i y ) = (/)
+                     ) } $.
+    $( Mirimanoff's paradox for founded sets.  See ~ mirimanoff .
+       (Contributed by Adrian Ducourtial, 28-Oct-2026.) $)
+    mirimanofff $p |- M e/ _V $=
+      ( cvv wel cv cin c0 wceq wrex wi wal cab crab rabab eqtr4i mirimanofffr )
       ABCDFDABGCHBHZIJKCTLMBNZAOUAAFPEUAAQRS $.
-    $( $j usage 'mirimanoff' avoids 'ax-reg'; $)
+    $( $j usage 'mirimanofff' avoids 'ax-reg'; $)
   $}
 
   ${
