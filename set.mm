@@ -533772,8 +533772,8 @@ $)
     edomediv.y $e |- ( ph -> Y e. ( B \ { .0. } ) ) $.
     $( Apply an Euclidean division in an Euclidean domain.  (Contributed by
        Thierry Arnoux, 29-Oct-2026.) $)
-    edomediv $p |- ( ph -> E. q e. B E. r e. B ( X = ( ( Y .x. q ) .+ r ) /\ (
-       r = .0. \/ ( E ` r ) < ( E ` Y ) ) ) ) $=
+    edomediv $p |- ( ph -> E. q e. B E. r e. B ( X = ( ( Y .x. q ) .+ r )
+                                 /\ ( r = .0. \/ ( E ` r ) < ( E ` Y ) ) ) ) $=
       ( wa vx vy cv co wceq csn cdif cres cfv clt wo wrex eqeq1 anbi1d 2rexbidv
       wbr oveq1 oveq1d eqeq2d fveq2 breq2d orbi2d anbi12d cidom wcel wral cedom
       cn0 wf reseq1i isedom sylib simprrd rspc2dv wb biort bitr3d adantl simplr
