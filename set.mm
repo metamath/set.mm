@@ -533693,7 +533693,7 @@ $)
   cedom $a class EDomn $.
 
   ${
-    $d a b d e q r v $.
+    $d a b d e q r v w $.
     $( Define Euclidean domains.  (Contributed by Thierry Arnoux,
        22-Mar-2025.) $)
     df-edom $a |- EDomn = { d e. IDomn | [. ( EuclF ` d ) / e ].
