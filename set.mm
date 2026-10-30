@@ -517892,24 +517892,24 @@ $)
     morlemeqd.w $e |- ( ph -> W e. CC ) $.
     morlemeqd.j $e |- ( ph -> J e. CC ) $.
     morlemeqd.1 $e |- ( ph -> ( J ^ 3 ) = 1 ) $.
-    morlemeqd.2 $e |- ( ph -> ( ( ( J ^ 2 ) + J ) + 1 ) = 0 ) $.
+    morlemeqd.2 $e |- ( ph -> J =/= 1 ) $.
     morlemeqd.3 $e |- ( ph -> ( ( U + ( J x. V ) ) + ( ( J ^ 2 ) x. W ) )
         = 0 ) $.
     $( If ` ( ( U + ( J x. V ) ) + ( ( J ^ 2 ) x. W ) ) = 0 ` , where ` J ` is
-       a cube root of unity and a root of ` ( ( ( J ^ 2 ) + J ) + 1 ) ` , then
-       the side ` ( V - W ) ` of the triangle with vertices ` U ` , ` V ` ,
-       ` W ` is ` J ` times its side ` ( U - V ) ` .  (Contributed by JAG,
-       13-Oct-2026.) $)
+       a cube root of unity other than ` 1 ` , then the side ` ( V - W ) ` of
+       the triangle with vertices ` U ` , ` V ` , ` W ` is ` J ` times its side
+       ` ( U - V ) ` .  (Contributed by JAG, 13-Oct-2026.) $)
     morlemeqd $p |- ( ph -> ( V - W ) = ( J x. ( U - V ) ) ) $=
       ( cmin co cmul wceq caddc mulcld cc0 eqtrd subdid oveq2d addsubassd sqcld
       c2 cexp addcld addcomd morlemeqrot eqtr3d c1 1cnd adddird mullidd oveq12d
       addassd oveq1d mul02d eqtr4d addcand mpbid pncan2d subcld subaddd mpbird
-      ) ADEMNCBDMNZONZPEVGQNZDPAVHECBONZCDONZMNZQNZDAVGVKEQACBDIFGUAUBAEVIQNZVJ
-      MNZVLDAEVIVJHACBIFRZACDIGRZUCAVNVJDQNZVJMNDAVMVQVJMACUEUFNZDONZVMQNZVSVQQ
-      NZPVMVQPAVTSWAAVMVSQNVTSAVMVSAEVIHVOUGZAVRDACIUDZGRZUHABCDEFGHIJLUIUJAVRC
-      QNZUKQNZDONZWASAWGVSVJQNZDQNZWAAWGWEDONZUKDONZQNWIAWEUKDAVRCWCIUGAULGUMAW
-      JWHWKDQAVRCDWCIGUMADGUNUOTAVSVJDWDVPGUPTAWGSDONSAWFSDOKUQADGURTUJUSAVSVMV
-      QWDWBAVJDVPGUGUTVAUQAVJDVPGVBTUJTADEVGGHACVFIABDFGVCRVDVE $.
+      cubeq1sumd ) ADEMNCBDMNZONZPEVHQNZDPAVIECBONZCDONZMNZQNZDAVHVLEQACBDIFGUA
+      UBAEVJQNZVKMNZVMDAEVJVKHACBIFRZACDIGRZUCAVOVKDQNZVKMNDAVNVRVKMACUEUFNZDON
+      ZVNQNZVTVRQNZPVNVRPAWASWBAVNVTQNWASAVNVTAEVJHVPUGZAVSDACIUDZGRZUHABCDEFGH
+      IJLUIUJAVSCQNZUKQNZDONZWBSAWHVTVKQNZDQNZWBAWHWFDONZUKDONZQNWJAWFUKDAVSCWD
+      IUGAULGUMAWKWIWLDQAVSCDWDIGUMADGUNUOTAVTVKDWEVQGUPTAWHSDONSAWGSDOACIJKVFU
+      QADGURTUJUSAVTVNVRWEWCAVKDVQGUGUTVAUQAVKDVQGVBTUJTADEVHGHACVGIABDFGVCRVDV
+      E $.
   $}
 
   ${
@@ -517929,12 +517929,12 @@ $)
     morlemeqi $p |- ( ph
         -> ( ( abs ` ( W - U ) ) = ( abs ` ( U - V ) ) /\ ( abs ` ( V - W ) )
         = ( abs ` ( U - V ) ) ) ) $=
-      ( cmin co cabs cfv wceq c1 cmul morlemeqd cubeq1sumd fveq2d subcld oveq1d
-      morlemeqrot absmuld cubeq1absd 3eqtrd abscld recnd mullidd eqtrd eqcomd
-      jca ) AEBMNZOPZBDMNZOPZQDEMNZOPZURQAURUPAURRUPSNZUPAURCUOSNZOPCOPZUPSNVAA
-      UQVBOAECBDHFGIJACIJKUAZABCDEFGHIJLUETUBACUOIAEBHFUCZUFAVCRUPSACIJUGZUDUHA
-      UPAUPAUOVEUIUJUKULUMAUTRURSNZURAUTCUQSNZOPVCURSNVGAUSVHOABCDEFGHIJVDLTUBA
-      CUQIABDFGUCZUFAVCRURSVFUDUHAURAURAUQVIUIUJUKULUN $.
+      ( cmin co cabs cfv wceq c1 cmul morlemeqd fveq2d subcld cubeq1absd oveq1d
+      morlemeqrot absmuld 3eqtrd abscld recnd mullidd eqtrd eqcomd jca ) AEBMNZ
+      OPZBDMNZOPZQDEMNZOPZUQQAUQUOAUQRUOSNZUOAUQCUNSNZOPCOPZUOSNUTAUPVAOAECBDHF
+      GIJKABCDEFGHIJLUETUAACUNIAEBHFUBZUFAVBRUOSACIJUCZUDUGAUOAUOAUNVCUHUIUJUKU
+      LAUSRUQSNZUQAUSCUPSNZOPVBUQSNVEAURVFOABCDEFGHIJKLTUAACUPIABDFGUBZUFAVBRUQ
+      SVDUDUGAUQAUQAUPVGUHUIUJUKUM $.
   $}
 
   ${
