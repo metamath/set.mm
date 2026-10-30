@@ -184075,27 +184075,37 @@ $)
       $}
 
       ${
-        $d I a b k $.  $d I f $.  $d I p u v $.  $d N a b $.  $d R a b k $.
-        $d R p u v $.  $d X a b $.  $d X p u $.  $d a b ph $.  $d b u v $.
+        $d I f $.  $d N p w $.  $d R p w $.  $d X p w $.  $d p ph w $.
         mplsubgfileminv.x $e |- ( ph -> X e. U ) $.
         mplsubgfileminv.inv $e |- N = ( invg ` S ) $.
         $( Lemma for ~ mplsubgfi .  The additive inverse of a polynomial is a
            polynomial.  (Contributed by Jim Kingdon, 26-Nov-2025.) $)
         mplsubgfileminv $p |- ( ph -> ( N ` X ) e. U ) $=
-          ( va vb cfv wcel cfn vk vf cbs cv clt wbr wral c0g wceq cn0 cmap wrex
-          wi co cminusg ccom ccnv cima crab eqid mplbasss sselid psrneg eqeltrd
-          cn psrnegcl wa wb mplelbascoe syl2anc mpbid simprd fveq1d ad2antrr wf
-          psrelbasfi simplr fvco3 simpr fveq2d grpinvid syl eqtrd 3eqtrd imim2d
-          cgrp ex ralimdva reximdv mpd mpbir2and ) AHGRZESZWLDUCRZSZUAUDZPUDRWP
-          QUDZRUEUFUAFUGZWQWLRZCUHRZUIZUMZQUJFUKUNZUGZPXCULZAWLCUORZHUPZWNAWNUB
-          UDUQVEURTSUBXCUSZCDUBFGXFTHILMXHUTZXFUTZWNUTZOAEWNHWNBCDEFJIKXKVANVBZ
-          VCZAWNXHCDUBFXFTHILMXIXJXKXLVFVDAWRWQHRZWTUIZUMZQXCUGZPXCULZXEAHWNSZX
-          RAHESZXSXRVGZNAFTSZCWFSZXTYAVHLMWNBCDEUAFTWFHWTPQJIXKWTUTZKVIVJVKVLAX
-          QXDPXCAXPXBQXCAWQXCSZVGZXOXAWRYFXOXAYFXOVGZWSWQXGRZXNXFRZWTAWSYHUIYEX
-          OAWQWLXGXMVMVNYGXCCUCRZHVOZYEYHYIUIAYKYEXOAWNCDFYJHIYJUTLXKXLVPVNAYEX
-          OVQXCYJWQXFHVRVJYGYIWTXFRZWTYGXNWTXFYFXOVSVTAYLWTUIZYEXOAYCYMMCXFWTYD
-          XJWAWBVNWCWDWGWEWHWIWJAYBYCWMWOXEVGVHLMWNBCDEUAFTWFWLWTPQJIXKYDKVIVJW
-          K $.
+          ( vf cfv wcel adantr wceq vw vp cbs c0g cfsupp wbr cminusg ccom cv cn
+          ccnv cima cfn cn0 cmap co crab eqid wa mplelbas sylib simpld psrnegcl
+          psrneg eqeltrd cdm wss cdif csn w3a simprd fsuppfiss cgrp grpidcl syl
+          wfun psrelbas ffund simpr1 simpr2 psrelbasfi fdmd eqtr4d sseq2d mpbid
+          wb difeq1d imaeq2d wral simpr3 funimass4 sylancl fveq1d ad3antrrr wfn
+          difss ffnd simplr eldifad eleqtrd fvco2 syl2anc eqtrd adantl grpinvid
+          elsni fveq2d mpbird ex ralimdva sseqtrid eqsstrrd isfsuppfid exlimddv
+          elsng mpd sylanbrc ) AHGQZDUCQZRZXRCUDQZUEUFZXRERAXRCUGQZHUHZXSAXSPUI
+          UKUJULUMRPUNFUOUPZUQZCDPFGYCUMHILMYFURZYCURZXSURZOAHXSRZHYAUEUFZAHERY
+          JYKUSNXSBCDEFHYAJIYIYAURZKUTVAZVBZVDZAXSYFCDPFYCUMHILMYGYHYIYNVCVEZAU
+          AUIZUMRZYQHVFZVGZHYSYQVHZULYAVIZVGZVJZYBUAAUAHYAAYJYKYMVKVLAUUDUSZXRC
+          UCQZXSYQYAAXTUUDYPSAYAUUFRZUUDACVMRZUUGMUUFCYAUUFURZYLVNVOZSAXRVPZUUD
+          AYFUUFXRAXSYFCDPFUUFXRIUUIYGYIYPVQVRZSAYRYTUUCVSUUEYTYQXRVFZVGZAYRYTU
+          UCVTAYTUUNWFUUDAYSUUMYQAYSYEUUMAYEUUFHAXSCDFUUFHIUUILYIYNWAZWBZAYEUUF
+          XRAXSCDFUUFXRIUUILYIYPWAWBWCZWDSWEUUEXRUUMYQVHZULZXRUUAULZUUBAUUTUUST
+          UUDAUUAUURXRAYSUUMYQUUQWGWHSUUEUUTUUBVGZUBUIZXRQZUUBRZUBUUAWIZUUEUVBH
+          QZUUBRZUBUUAWIZUVEUUEUUCUVHAYRYTUUCWJAUUCUVHWFZUUDAHVPUUAYSVGUVIAYFUU
+          FHAXSYFCDPFUUFHIUUIYGYIYNVQVRYSYQWPZUBUUAUUBHWKWLSWEUUEUVGUVDUBUUAUUE
+          UVBUUARZUSZUVGUVDUVLUVGUSZUVDUVCYATZUVMUVCYAYCQZYAUVMUVCUVFYCQZUVOUVM
+          UVCUVBYDQZUVPAUVCUVQTUUDUVKUVGAUVBXRYDYOWMWNUVMHYEWOZUVBYERUVQUVPTAUV
+          RUUDUVKUVGAYEUUFHUUOWQWNUVMUVBYSYEUVMUVBYSYQUUEUVKUVGWRWSAYSYETUUDUVK
+          UVGUUPWNWTYEYCHUVBXAXBXCUVMUVFYAYCUVGUVFYATUVLUVFYAXFXDXGXCAUVOYATZUU
+          DUVKUVGAUUHUVSMCYCYAYLYHXEVOWNXCZUVMUVCUUFRUVDUVNWFUVMUVCYAUUFUVTAUUG
+          UUDUVKUVGUUJWNVEUVCYAUUFXOVOXHXIXJXPAUVAUVEWFZUUDAUUKUUAUUMVGUWAUULAY
+          SUUAUUMUVJUUQXKUBUUAUUBXRWKXBSXHXLXMXNXSBCDEFXRYAJIYIYLKUTXQ $.
       $}
 
       $d S j u v $.  $d U j u v $.  $d ph u v $.
