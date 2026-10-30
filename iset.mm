@@ -183977,6 +183977,22 @@ $)
   $}
 
   ${
+    $d ph x $.  $d B x $.  $d I x $.  $d V x $.
+    mvrf2.p $e |- P = ( I mPoly R ) $.
+    mvrf2.v $e |- V = ( I mVar R ) $.
+    mvrf2.b $e |- B = ( Base ` P ) $.
+    mvrf2fi.i $e |- ( ph -> I e. Fin ) $.
+    mvrf2.r $e |- ( ph -> R e. Ring ) $.
+    $( The power series/polynomial variable function maps indices to
+       polynomials.  (Contributed by Stefan O'Rear, 8-Mar-2015.) $)
+    mvrf2fi $p |- ( ph -> V : I --> B ) $=
+      ( vx wfn cv cfv wcel wral wf eqid adantr cmps co cbs mvrffi ffnd wa simpr
+      cfn crg mvrclfi ralrimiva ffnfv sylanbrc ) AFEMLNZFOBPZLEQEBFRAEEDUAUBZUC
+      OZFAUQDUPEFUPSHUQSJKUDUEAUOLEAUNEPZUFBCDEFUNGHIAEUHPURJTADUIPURKTAURUGUJU
+      KLEBFULUM $.
+  $}
+
+  ${
     mplrcl.p $e |- P = ( I mPoly R ) $.
     mplrcl.b $e |- B = ( Base ` P ) $.
     $( Reverse closure for the polynomial index set.  (Contributed by Stefan
