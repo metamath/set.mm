@@ -183943,6 +183943,40 @@ $)
   $}
 
   ${
+    $d I f x y $.  $d I k x y $.  $d R k x $.  $d V k x $.  $d W y $.
+    $d X f x y $.  $d X k x y $.  $d k ph x y $.
+    mvrcl.s $e |- P = ( I mPoly R ) $.
+    mvrcl.v $e |- V = ( I mVar R ) $.
+    mvrcl.b $e |- B = ( Base ` P ) $.
+    mvrclfi.i $e |- ( ph -> I e. Fin ) $.
+    mvrcl.r $e |- ( ph -> R e. Ring ) $.
+    mvrcl.x $e |- ( ph -> X e. I ) $.
+    $( A power series variable is a polynomial.  (Contributed by Mario
+       Carneiro, 9-Jan-2015.) $)
+    mvrclfi $p |- ( ph -> ( V ` X ) e. B ) $=
+      ( vf cfv wcel eqid wceq cn0 wa vy vk vx co cbs c0g cfsupp wbr mvrcl2fi cv
+      cmps c1 cc0 cif cmpt csn cgrp ringgrpd grpidcl syl ccnv cn cima cmap crab
+      cfn psrelbas ffund 1nn0 a1i 0nn0 wdc adantr fidceq syl3anc ifcldcd fmpttd
+      wf simpr cvv nn0ex elmapd mpbird snfig cdm snssd psrelbasfi fdmd sseqtrrd
+      cdif difeq1d imaeq2d wfun wrex fvelima simprr psrbagfi eleq2d pm5.32i cur
+      sylan crg wne eldifsn bilani simpld mvrval2 simprd neneqd iffalsed sylbir
+      eqtrd ad2ant2r eqtr3d velsn sylibr rexlimddv ex ssrdv isfsuppfid mplelbas
+      eqsstrd sylanbrc ) AGFOZEDUKUDZUEOZPYDDUFOZUGUHYDBPAYFDYEEFGYEQZIYFQZKLMU
+      IZAYDDUEOZYFUAEUAUJZGRZULUMUNZUOZUPZYGYJADUQPYGYKPADLURYKDYGYKQZYGQZUSUTA
+      NUJVAVBVCVFPNSEVDUDZVEZYKYDAYFYTDYENEYKYDYHYQYTQZYIYJVGVHZAYOYSPZYPVFPAUU
+      CESYOVRAUAEYNSAYLEPZTZYMULUMSULSPUUEVIVJUMSPUUEVKVJUUEEVFPZUUDGEPZYMVLAUU
+      FUUDKVMAUUDVSAUUGUUDMVMEYLGVNVOVPVQASEYOVTVFSVTPAWAVJKWBWCZYOYSWDUTAYPYSY
+      DWEZAYOYSUUHWFAYSYKYDAYFDYEEYKYDYHYQKYIYJWGWHZWIAYDUUIYPWJZVCYDYSYPWJZVCZ
+      YGUPZAUUKUULYDAUUIYSYPUUJWKWLAUBUUMUUNAUBUJZUUMPZUUOUUNPZAUUPTZUCUJZYDOZU
+      UORZUUQUCUULAYDWMUUPUVAUCUULWNUUBUCUUOUULYDWOXAUURUUSUULPZUVATTZUUOYGRUUQ
+      UVCUUTUUOYGUURUVBUVAWPAUVBUUTYGRZUUPUVAAUVBTAUUSYTYPWJZPZTZUVDAUVFUVBAUVE
+      UULUUSAYTYSYPAUUFYTYSRKYTNEUUAWQUTWKWRWSUVGUUTUUSYORZDWTOZYGUNYGUVGUAYTDU
+      VINUUSEFVFGXBYGIUUAYRUVIQAUUFUVFKVMADXBPUVFLVMAUUGUVFMVMUVGUUSYTPZUUSYOXC
+      ZUVFUVJUVKTAUUSYTYOXDXEZXFXGUVGUVHUVIYGUVGUUSYOUVGUVJUVKUVLXHXIXJXLXKXMXN
+      UBYGXOXPXQXRXSYBXTYFCDYEBEYDYGHYHYIYRJYAYC $.
+  $}
+
+  ${
     mplrcl.p $e |- P = ( I mPoly R ) $.
     mplrcl.b $e |- B = ( Base ` P ) $.
     $( Reverse closure for the polynomial index set.  (Contributed by Stefan
