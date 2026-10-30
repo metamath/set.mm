@@ -496573,6 +496573,18 @@ htmldef "HLtoHil" as "HLtoHil";
 */
 /* End of Norm Megill's mathbox */
 
+/* Mathbox of Jon Pennant */
+htmldef "tri" as "tri";
+  althtmldef "tri" as "tri";
+  latexdef "tri" as "\mathrm{tri}";
+htmldef "c2r" as "c2r";
+  althtmldef "c2r" as "c2r";
+  latexdef "c2r" as "\mathrm{c2r}";
+htmldef "areac" as "areac";
+  althtmldef "areac" as "areac";
+  latexdef "areac" as "\mathrm{areac}";
+/* End of Jon Pennant's mathbox */
+
 /* Mathbox of Richard Penner */
 htmldef "r*" as "<IMG SRC='r.gif' WIDTH=7 HEIGHT=19 ALT=' r' TITLE='r'>" +
     "<IMG SRC='ast.gif' WIDTH=7 HEIGHT=19 ALT='*' TITLE='*'>";
@@ -742368,6 +742380,1813 @@ $)
   $}
 
   ${
+    iccvolrnd.1 $e |- ( ph -> P e. RR ) $.
+    iccvolrnd.2 $e |- ( ph -> Q e. RR ) $.
+    iccvolrnd.3 $e |- ( ph -> P <_ Q ) $.
+    $( A closed interval of reals has finite Lebesgue measure.  (Contributed by
+       Jon Pennant, 29-Oct-2026.) $)
+    iccvolrnd $p |- ( ph -> ( P [,] Q ) e. ( `' vol " RR ) ) $=
+      ( cicc co cvol cfv cr wcel ccnv cima cmin covol cdm wceq iccmbl syl2anc
+      mblvol syl cle wbr ovolicc syl3anc eqtrd resubcld eqeltrd wfun wb cpnf wf
+      cc0 volf ffun mp1i fvimacnv mpbid ) ABCGHZIJZKLZUTIMKNLZAVACBOHZKAVAUTPJZ
+      VDAUTIQZLZVAVERABKLZCKLZVGDEBCSTZUTUAUBAVHVIBCUCUDVEVDRDEFBCUEUFUGACBEDUH
+      UIAIUJZVGVBVCUKVFUNULGHZIUMVKAUOVFVLIUPUQVJUTKIURTUS $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d ph x $.
+    itgsuppicc.1 $e |- ( ph -> A e. RR ) $.
+    itgsuppicc.2 $e |- ( ph -> B e. RR ) $.
+    itgsuppicc.3 $e |- ( ph -> A <_ B ) $.
+    itgsuppicc.4 $e |- ( ( ph /\ -. x e. ( A [,] B ) ) -> F = 0 ) $.
+    $( An integral of a function that vanishes outside a closed interval equals
+       the integral over that closed interval.  (Contributed by Jon Pennant,
+       29-Oct-2026.) $)
+    itgsuppicc $p |- ( ph -> S. RR F _d x = S. ( A [,] B ) F _d x ) $=
+      ( cicc co citg cr iccssred cv cdif wcel wn cc0 wceq eldifn sylan2 eqcomd
+      itgss ) ABCDJKZELBMELABUEMEACDFGNBOZMUEPQAUFUEQRESTUFMUEUAIUBUDUC $.
+  $}
+
+  ${
+    cvxbnd13d.1 $e |- ( ph -> X e. RR ) $.
+    cvxbnd13d.2 $e |- ( ph -> Y e. RR ) $.
+    cvxbnd13d.3 $e |- ( ph -> Z e. RR ) $.
+    cvxbnd13d.4 $e |- ( ph -> X <_ Y ) $.
+    cvxbnd13d.5 $e |- ( ph -> Y <_ Z ) $.
+    cvxbnd13d.6 $e |- ( ph -> u e. ( 0 [,] 1 ) ) $.
+    cvxbnd13d.7 $e |- ( ph -> v e. ( 0 [,] 1 ) ) $.
+    cvxbnd13d.8 $e |- ( ph -> w e. ( 0 [,] 1 ) ) $.
+    cvxbnd13d.9 $e |- ( ph -> ( ( u + v ) + w ) = 1 ) $.
+    $( A 3-point convex combination of ordered reals lies inside its end
+       points.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    cvxbnd13d $p |- ( ph -> ( ( ( u x. X ) + ( v x. Y ) ) +
+                     ( w x. Z ) ) e. ( X [,] Z ) ) $=
+      ( cmul co caddc wcel cv cicc cr cle wbr cc0 c1 unitssre remulcld readdcld
+      sselid recnd adddird oveq1d mullidd eqtrd 3eqtr3d elicc01 simp2d lemul2ad
+      sylib leadd2dd letrd le2addd eqbrtrd leadd1dd breq2dd wb elicc2 mpbir3and
+      w3a syl2anc ) ADUAZEQRZCUAZFQRZSRZBUAZGQRZSRZEGUBRTZVTUCTZEVTUDUEZVTGUDUE
+      ZAVQVSAVNVPAVMEAUFUGUBRZUCVMUHMUKZHUIZAVOFAWEUCVOUHNUKZIUIZUJZAVRGAWEUCVR
+      UHOUKZJUIZUJAEVNVOEQRZSRZVREQRZSRZVTUDAVMVOSRZVRSRZEQRZWQEQRZWOSREWPAWQVR
+      EAWQAVMVOWFWHUJULZAVRWKULZAEHULZUMAWSUGEQREAWRUGEQPUNAEXCUOUPAWTWNWOSAVMV
+      OEAVMWFULZAVOWHULZXCUMUNUQAWNWOVQVSAVNWMWGAVOEWHHUIZUJAVREWKHUIWJWLAWMVPV
+      NXFWIWGAEFVOHIWHAVOUCTZUFVOUDUEZVOUGUDUEZAVOWETXGXHXIVKNVOURVAUSZKUTVBAEG
+      VRHJWKAVRUCTZUFVRUDUEZVRUGUDUEZAVRWETXKXLXMVKOVRURVAUSAEFGHIJKLVCZUTVDVEA
+      VMGQRZVOGQRZSRZVSSRZGVTUDAWRGQRZUGGQRXRGAWRUGGQPUNAXSWQGQRZVSSRXRAWQVRGXA
+      XBAGJULZUMAXTXQVSSAVMVOGXDXEYAUMUNUPAGYAUOUQAVQXQVSWJAXOXPAVMGWFJUIZAVOGW
+      HJUIZUJWLAVNVPXOXPWGWIYBYCAEGVMHJWFAVMUCTZUFVMUDUEZVMUGUDUEZAVMWETYDYEYFV
+      KMVMURVAUSXNUTAFGVOIJWHXJLUTVDVFVGAEUCTGUCTWAWBWCWDVKVHHJEGVTVIVLVJ $.
+  $}
+
+  ${
+    cvxbndconstd.1 $e |- ( ph -> X e. RR ) $.
+    cvxbndconstd.2 $e |- ( ph -> Y e. RR ) $.
+    cvxbndconstd.3 $e |- ( ph -> Z e. RR ) $.
+    cvxbndconstd.4 $e |- ( ph -> X = Y ) $.
+    cvxbndconstd.5 $e |- ( ph -> Y = Z ) $.
+    cvxbndconstd.6 $e |- ( ph -> u e. ( 0 [,] 1 ) ) $.
+    cvxbndconstd.7 $e |- ( ph -> v e. ( 0 [,] 1 ) ) $.
+    cvxbndconstd.8 $e |- ( ph -> w e. ( 0 [,] 1 ) ) $.
+    cvxbndconstd.9 $e |- ( ph -> ( ( u + v ) + w ) = 1 ) $.
+    $( A convex combination of identical values equals that value.
+       (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    cvxbndconstd $p |- ( ph -> ( ( ( u x. X ) + ( v x. Y ) )
+                           + ( w x. Z ) ) = X ) $=
+      ( cmul co caddc recnd cv eqcomd oveq2d eqtrd oveq12d cc0 c1 cicc unitssre
+      cr sselid readdcld adddird oveq1d mullidd 3eqtr3rd ) ADUAZEQRZCUAZFQRZSRZ
+      BUAZGQRZSRURUSEQRZSRZVBEQRZSRZEAVAVEVCVFSAUTVDURSAFEUSQAEFKUBUCUCAGEVBQAE
+      GAEFGKLUDUBUCUEAUQUSSRZVBSRZEQRZVHEQRZVFSREVGAVHVBEAVHAUQUSAUFUGUHRZUJUQU
+      IMUKZAVLUJUSUINUKZULTAVBAVLUJVBUIOUKTAEHTZUMAVJUGEQREAVIUGEQPUNAEVOUOUDAV
+      KVEVFSAUQUSEAUQVMTAUSVNTVOUMUNUPUD $.
+  $}
+
+  ${
+    unitcvxd.1 $e |- ( ph -> X e. ( 0 [,] 1 ) ) $.
+    unitcvxd.2 $e |- ( ph -> Y e. ( 0 [,] 1 ) ) $.
+    unitcvxd.3 $e |- ( ph -> T e. ( 0 [,] 1 ) ) $.
+    $( The unit interval is closed under interpolation.  (Contributed by Jon
+       Pennant, 29-Oct-2026.) $)
+    unitcvxd $p |- ( ph -> ( ( ( 1 - T ) x. X ) + ( T x. Y ) )
+                                        e. ( 0 [,] 1 ) ) $=
+      ( c1 co cmul cr wcel cc0 cle wbr w3a elicc01 sylib simp1d simp2d cmin syl
+      caddc cicc remulcld readdcld mulge0d addge0d 1red simp3d lemul2ad mulridd
+      iirev recnd breqtrd le2addd npcand syl3anbrc ) AHBUAIZCJIZBDJIZUCIZKLMVBN
+      OVBHNOVBMHUDIZLAUTVAAUSCAUSKLZMUSNOZUSHNOZAUSVCLZVDVEVFPABVCLZVGGBUMUBUSQ
+      RZSZACKLZMCNOZCHNOZACVCLVKVLVMPECQRZSZUEZABDABKLZMBNOZBHNOZAVHVQVRVSPGBQR
+      ZSZADKLZMDNOZDHNOZADVCLWBWCWDPFDQRZSZUEZUFAUTVAVPWGAUSCVJVOAVDVEVFVITZAVK
+      VLVMVNTUGABDWAWFAVQVRVSVTTZAWBWCWDWETUGUHAVBUSBUCIHNAUTVAUSBVPWGVJWAAUTUS
+      HJIUSNACHUSVOAUIZVJWHAVKVLVMVNUJUKAUSAUSVJUNULUOAVABHJIBNADHBWFWJWAWIAWBW
+      CWDWEUJUKABABWAUNZULUOUPAHBAHWJUNWKUQUOVBQUR $.
+  $}
+
+  ${
+    $d P t $.  $d Q t $.  $d Y t $.  $d ph t $.
+    eliccconvd.1 $e |- ( ph -> P e. RR ) $.
+    eliccconvd.2 $e |- ( ph -> Q e. RR ) $.
+    eliccconvd.3 $e |- ( ph -> P <_ Q ) $.
+    eliccconvd.4 $e |- ( ph -> Y e. ( P [,] Q ) ) $.
+    $( Any point in a closed real interval can be expressed as a convex
+       combination of its endpoints.  (Contributed by Jon Pennant,
+       29-Oct-2026.) $)
+    eliccconvd $p |- ( ph -> E. t e. ( 0 [,] 1 )
+                              Y = ( ( ( 1 - t ) x. P ) + ( t x. Q ) ) ) $=
+      ( c1 cmin co cmul caddc cc0 wbr wcel adantr recnd cle wceq cv cicc clt wa
+      wrex 0elunit addridd 1cnd subid1d oveq1d mullidd eqtrd mul02d oveq12d w3a
+      cr elicc2 syl2anc mpbid simp3d simpr eqcomd breqtrd simp2d simp1d letri3d
+      wb mpbir2and 3eqtr4rd oveq2 oveq1 rspceeqv sylancr cdiv resubcld redivcld
+      posdifd gt0ne0d elrpd subge0d mpbird divge0d lesub1dd syl112anc syl3anbrc
+      lediv1 dividd elicc01 subdird mulcld subadd23d subdid divcan1d pncan3d wo
+      oveq2d leloed orcomd mpjaodan ) ACDUAZEJBUBZKLZCMLZXBDMLZNLZUABOJUCLZUFZC
+      DUDPZAXAUEZOXGQEJOKLZCMLZODMLZNLZUAXHUGXJCONLCXNEXJCXJCACUQQZXAFRZSZUHXJX
+      LCXMONXJXLJCMLZCXJXKJCMXJJXJUIUJUKXJCXQULUMXJDXJDADUQQZXAGRSUNUOXJECUAECT
+      PCETPZXJEDCTAEDTPZXAAEUQQZXTYAAECDUCLQZYBXTYAUPZIAXOXSYCYDVHFGCDEURUSUTZV
+      AZRXJCDAXAVBVCVDAXTXAAYBXTYAYEVEZRXJECAYBXAAYBXTYAYEVFZRXPVGVIVJBOXGXFXNE
+      XBOUAZXDXLXEXMNYIXCXKCMXBOJKVKUKXBODMVLUOVMVNAXIUEZECKLZDCKLZVOLZXGQZEJYM
+      KLZCMLZYMDMLZNLZUAXHYJYMUQQOYMTPYMJTPYNYJYKYLYJECAYBXIYHRZAXOXIFRZVPZYJDC
+      AXSXIGRZYTVPZYJYLYJXIOYLUDPZAXIVBYJCDYTUUBVRUTZVSZVQZYJYKYLUUAYJYLUUCUUEV
+      TYJOYKTPXTAXTXIYGRYJECYSYTWAWBWCYJYMYLYLVOLZJTYJYKYLTPZYMUUHTPZYJEDCYSUUB
+      YTAYAXIYFRWDYJYKUQQYLUQQZUUKUUDUUIUUJVHUUAUUCUUCUUEYKYLYLWGWEUTYJYLYJYLUU
+      CSZUUFWHVDYMWIWFYJYREYJYRCYKNLZEYJYRCYQYMCMLZKLZNLZUUMYJYRCUUNKLZYQNLUUPY
+      JYPUUQYQNYJYPXRUUNKLUUQYJJYMCYJUIYJYMUUGSZYJCYTSZWJYJXRCUUNKYJCUUSULUKUMU
+      KYJCUUNYQUUSYJYMCUURUUSWKYJYMDUURYJDUUBSZWKWLUMYJUUOYKCNYJUUOYMYLMLZYKYJU
+      VAUUOYJYMDCUURUUTUUSWMVCYJYKYLYJYKUUASUULUUFWNUMWQUMYJCEUUSYJEYSSWOUMVCBY
+      MXGXFYREXBYMUAZXDYPXEYQNUVBXCYOCMXBYMJKVKUKXBYMDMVLUOVMUSAXIXAACDTPXIXAWP
+      HACDFGWRUTWSWT $.
+  $}
+
+  ${
+    baryvertalgd.1 $e |- ( ph -> A e. CC ) $.
+    baryvertalgd.2 $e |- ( ph -> B e. CC ) $.
+    baryvertalgd.3 $e |- ( ph -> C e. CC ) $.
+    baryvertalgd.4 $e |- ( ph -> W e. RR ) $.
+    baryvertalgd.5 $e |- ( ph -> T e. RR ) $.
+    baryvertalgd.6 $e |- ( ph -> U = ( ( 1 - W ) x. ( 1 - T ) ) ) $.
+    baryvertalgd.7 $e |- ( ph -> V = ( ( 1 - W ) x. T ) ) $.
+    $( Algebraic identity decomposing a 3-variable barycentric combination into
+       a nested 2-point combination.  (Contributed by Jon Pennant,
+       29-Oct-2026.) $)
+    baryvertalgd $p |- ( ph ->
+      ( ( ( U + V ) + W ) = 1 /\
+        ( ( ( U x. A ) + ( V x. B ) ) + ( W x. C ) ) =
+          ( ( ( 1 - T ) x. ( ( ( 1 - W ) x. A ) + ( W x. C ) ) ) +
+            ( T x. ( ( ( 1 - W ) x. B ) + ( W x. C ) ) ) ) ) ) $=
+      ( caddc co c1 cmul mulcld wceq oveq12d subcld adddid eqtr4d npcand oveq2d
+      cmin 1cnd recnd mulridd 3eqtrd oveq1d eqtrd add4d mulassd mulcomd adddird
+      eqtr3d mullidd 3eqtr3d 3eqtrrd jca ) AFGPQZHPQZRUAFBSQZGCSQZPQZHDSQZPQZRE
+      UHQZRHUHQZBSQZVIPQSQZEVLCSQZVIPQSQZPQZUAAVEVLHPQRAVDVLHPAVDVLVKEPQZSQZVLR
+      SQVLAVDVLVKSQZVLESQZPQVSAFVTGWAPNOUBAVLVKEARHAUIZAHLUJZUCZAREWBAEMUJZUCZW
+      EUDUEAVRRVLSAREWBWEUFZUGAVLWDUKULUMARHWBWCUFUNAVQVKVMSQZVKVISQZPQZEVOSQZE
+      VISQZPQZPQWHWKPQZWIWLPQZPQVJAVNWJVPWMPAVKVMVIWFAVLBWDITZAHDWCKTZUDAEVOVIW
+      EAVLCWDJTZWQUDUBAWHWIWKWLAVKVMWFWPTAVKVIWFWQTAEVOWEWRTAEVIWEWQTUOAWNVHWOV
+      IPAWHVFWKVGPAVKVLSQZBSQWHVFAVKVLBWFWDIUPAWSFBSAWSVTFAVKVLWFWDUQNUEUMUSAEV
+      LSQZCSQWKVGAEVLCWEWDJUPAWTGCSAWTWAGAEVLWEWDUQOUEUMUSUBAVRVISQRVISQWOVIAVR
+      RVISWGUMAVKEVIWFWEWQURAVIWQUTVAUBVBVC $.
+  $}
+
+  ${
+    baryvertbndd.1 $e |- ( ph -> A e. RR ) $.
+    baryvertbndd.2 $e |- ( ph -> B e. RR ) $.
+    baryvertbndd.3 $e |- ( ph -> C e. RR ) $.
+    baryvertbndd.4 $e |- ( ph -> A <_ B ) $.
+    baryvertbndd.5 $e |- ( ph -> u e. ( 0 [,] 1 ) ) $.
+    baryvertbndd.6 $e |- ( ph -> v e. ( 0 [,] 1 ) ) $.
+    baryvertbndd.7 $e |- ( ph -> w e. ( 0 [,] 1 ) ) $.
+    baryvertbndd.8 $e |- ( ph -> ( ( u + v ) + w ) = 1 ) $.
+    baryvertbndd.9 $e |- ( ph -> U = ( ( ( 1 - w ) x. A ) + ( w x. C ) ) ) $.
+    baryvertbndd.10 $e |- ( ph -> V = ( ( ( 1 - w ) x. B ) + ( w x. C ) ) ) $.
+    baryvertbndd.11 $e |- ( ph -> Y = ( ( ( u x. A ) + ( v x. B ) )
+                                                     + ( w x. C ) ) ) $.
+    $( A barycentric combination of three points lies between the boundary
+       segments when the first two are ordered.  Proved with zero divisions or
+       cases.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    baryvertbndd $p |- ( ph -> Y e. ( U [,] V ) ) $=
+      ( cicc co wcel cr cle wbr cv cmul caddc cc0 c1 unitssre remulcld readdcld
+      sselid eqeltrd w3a sylib simp2d lemul2ad leadd2dd leadd1dd cmin wceq 1cnd
+      elicc01 recnd addcld subadd2d mpbird oveq1d adddird eqtrd 3brtr4d syl2anc
+      wb elicc2 mpbir3and ) AJHIUBUCUDZJUEUDZHJUFUGZJIUFUGZAJDUHZEUIUCZCUHZFUIU
+      CZUJUCZBUHZGUIUCZUJUCZUEUAAWHWJAWEWGAWDEAUKULUBUCZUEWDUMOUPZKUNZAWFFAWLUE
+      WFUMPUPZLUNZUOZAWIGAWLUEWIUMQUPZMUNZUOUQAWEWFEUIUCZUJUCZWJUJUCZWKHJUFAXAW
+      HWJAWEWTWNAWFEWOKUNZUOZWQWSAWTWGWEXCWPWNAEFWFKLWOAWFUEUDZUKWFUFUGZWFULUFU
+      GZAWFWLUDXEXFXGURPWFVGUSUTNVAVBVCAHULWIVDUCZEUIUCZWJUJUCXBSAXIXAWJUJAXIWD
+      WFUJUCZEUIUCXAAXHXJEUIAXHXJVEXJWIUJUCULVERAULWIXJAVFAWIWRVHAWDWFAWDWMVHZA
+      WFWOVHZVIVJVKZVLAWDWFEXKXLAEKVHVMVNVLVNZUAVOAWKWDFUIUCZWGUJUCZWJUJUCZJIUF
+      AWHXPWJWQAXOWGAWDFWMLUNZWPUOZWSAWEXOWGWNXRWPAEFWDKLWMAWDUEUDZUKWDUFUGZWDU
+      LUFUGZAWDWLUDXTYAYBUROWDVGUSUTNVAVCVCUAAIXHFUIUCZWJUJUCXQTAYCXPWJUJAYCXJF
+      UIUCXPAXHXJFUIXMVLAWDWFFXKXLAFLVHVMVNVLVNZVOAHUEUDIUEUDVTWAWBWCURVQAHXBUE
+      XNAXAWJXDWSUOUQAIXQUEYDAXPWJXSWSUOUQHIJVRVPVS $.
+  $}
+
+  ${
+    shoelacealgd.1 $e |- ( ph -> A e. CC ) $.
+    shoelacealgd.2 $e |- ( ph -> B e. CC ) $.
+    shoelacealgd.3 $e |- ( ph -> C e. CC ) $.
+    shoelacealgd.4 $e |- ( ph -> ( Re ` A ) < ( Re ` B ) ) $.
+    shoelacealgd.5 $e |- ( ph -> ( Re ` B ) < ( Re ` C ) ) $.
+    shoelacealgd.6 $e |- ( ph -> P = ( ( ( ( ( Re ` C ) - ( Re ` B ) ) /
+        ( ( Re ` C ) - ( Re ` A ) ) ) x. A ) +
+        ( ( ( ( Re ` B ) - ( Re ` A ) ) /
+        ( ( Re ` C ) - ( Re ` A ) ) ) x. C ) ) ) $.
+    $( Algebraic identity relating the vertical-split height formula to the
+       Shoelace cross-product formula.  (Contributed by Jon Pennant,
+       29-Oct-2026.) $)
+    shoelacealgd $p |- ( ph ->
+      ( ( ( 1 / 2 ) x. ( abs ` ( ( Im ` P ) - ( Im ` B ) ) ) ) x.
+        ( ( Re ` C ) - ( Re ` A ) ) ) =
+      ( ( 1 / 2 ) x. ( abs `
+        ( ( ( ( Re ` B ) - ( Re ` A ) ) x. ( ( Im ` C ) - ( Im ` A ) ) ) -
+          ( ( ( Re ` C ) - ( Re ` A ) ) x.
+          ( ( Im ` B ) - ( Im ` A ) ) ) ) ) ) ) $=
+      ( co cim cfv cmin cmul caddc recnd mulcld oveq1d c1 c2 cdiv cabs cre 1cnd
+      halfcld cr fveq2d recld resubcld clt wbr cc0 lttrd posdifd mpbid redivcld
+      gt0ne0d imaddd immul2d oveq12d 3eqtrd imcld remulcld readdcld abscld 0red
+      eqeltrd mulassd absmuld ltled absidd oveq2d eqtrd mulcomd subdird adddird
+      mul32d divcan1d subdid subcld subsub3d subadd23d eqcomd nnncan2d 3eqtr4rd
+      addcomd 3eqtr2d ) AUAUBUCLZEMNZCMNZOLZUDNZPLDUENZBUENZOLZPLWJWNWQPLZPLWJW
+      MWQPLZUDNZPLWJCUENZWPOLZDMNZBMNZOLPLZWQWLXDOLPLZOLZUDNZPLAWJWNWQAUAAUFUGA
+      WNAWMAWMAWKWLAWKWOXAOLZWQUCLZXDPLZXBWQUCLZXCPLZQLZUHAWKXJBPLZXLDPLZQLZMNX
+      OMNZXPMNZQLXNAEXQMKUIAXOXPAXJBAXJAXIWQAWOXAADHUJZACGUJZUKZAWOWPXTABFUJZUK
+      ZAWQAWPWOULUMUNWQULUMAWPXAWOYCYAXTIJUOAWPWOYCXTUPUQZUSZURZRZFSAXLDAXLAXBW
+      QAXAWPYAYCUKZYDYFURZRZHSUTAXRXKXSXMQAXJBYGFVAAXLDYJHVAVBVCZAXKXMAXJXDYGAB
+      FVDZVEZAXLXCYJADHVDZVEZVFZVIACGVDZUKRZVGRAWQYDRZVJAWTWRWJPAWTWNWQUDNZPLWR
+      AWMWQYSYTVKAUUAWQWNPAWQYDAUNWQAVHYDYEVLVMVNVOVNAWTXHWJPAXHWTAXGWSUDAXIXDP
+      LZXBXCPLZQLZWLWQPLZOLZUUDWQWLPLZOLZWSXGAUUEUUGUUDOAWLWQAWLYRRZYTVPVNAWSXN
+      WQPLZUUEOLZXKWQPLZXMWQPLZQLZUUEOLUUFAWSXNWLOLZWQPLUUKAWMUUOWQPAWKXNWLOYLT
+      TAXNWLWQAXNYQRUUIYTVQVOAUUJUUNUUEOAXKXMWQAXKYNRAXMYPRYTVRTAUUNUUDUUEOAUUL
+      UUBUUMUUCQAUULXJWQPLZXDPLUUBAXJXDWQYHAXDYMRZYTVSAUUPXIXDPAXIWQAXIYBRZYTYF
+      VTTVOAUUMXLWQPLZXCPLUUCAXLXCWQYKAXCYORZYTVSAUUSXBXCPAXBWQAXBYIRZYTYFVTTVO
+      VBTVCAXGUUCWQXDPLZXBXDPLZOLZQLZUUGOLZUUCUUBQLZUUGOLUUHAXGUUCUVCOLZUUGUVBO
+      LZOLUVHUVBQLZUUGOLUVFAXEUVHXFUVIOAXBXCXDUVAUUTUUQWAAWQWLXDYTUUIUUQWAVBAUV
+      HUUGUVBAUUCUVCAXBXCUVAUUTSZAXBXDUVAUUQSZWBAWQWLYTUUISAWQXDYTUUQSZWCAUVJUV
+      EUUGOAUUCUVCUVBUVKUVLUVMWDTVCAUVEUVGUUGOAUVDUUBUUCQAUVDWQXBOLZXDPLZUUBAUV
+      OUVDAWQXBXDYTUVAUUQVQWEAUVNXIXDPAWOXAWPAWOXTRAXAYARAWPYCRWFTVOVNTAUVGUUDU
+      UGOAUUCUUBUVKAXIXDUURUUQSWHTVCWGUIWEVNWI $.
+  $}
+
+  ${
+    shoelacevertrd.1 $e |- ( ph -> A e. CC ) $.
+    shoelacevertrd.2 $e |- ( ph -> B e. CC ) $.
+    shoelacevertrd.3 $e |- ( ph -> C e. CC ) $.
+    shoelacevertrd.4 $e |- ( ph -> ( Re ` A ) = ( Re ` B ) ) $.
+    $( Determinant reduction when the first two vertices share a real part.
+       (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    shoelacevertrd $p |- ( ph ->
+      ( ( 1 / 2 ) x. ( abs `
+        ( ( ( ( Re ` B ) - ( Re ` A ) ) x. ( ( Im ` C ) - ( Im ` A ) ) ) -
+          ( ( ( Re ` C ) - ( Re ` A ) ) x.
+          ( ( Im ` B ) - ( Im ` A ) ) ) ) ) ) =
+      ( ( ( 1 / 2 ) x. ( abs ` ( ( Im ` B ) - ( Im ` A ) ) ) ) x.
+        ( abs ` ( ( Re ` C ) - ( Re ` A ) ) ) ) ) $=
+      ( co cre cfv cmin cim cmul cabs cc0 oveq1d recnd eqtrd imcld c1 cdiv cneg
+      c2 eqcomd recld subidd subcld mul02d df-neg eqtr4di fveq2d mulcld absnegd
+      absmuld abscld mulcomd oveq2d cc wcel halfcn a1i mulassd eqtr4d ) AUAUDUB
+      IZCJKZBJKZLIZDMKZBMKZLIZNIZDJKZVGLIZCMKZVJLIZNIZLIZOKZNIVEVPOKZVNOKZNIZNI
+      VEVTNIWANIAVSWBVENAVSWAVTNIZWBAVSVQOKZWCAVSVQUCZOKWDAVRWEOAVRPVQLIWEAVLPV
+      QLAVLPVKNIPAVHPVKNAVHVGVGLIPAVFVGVGLAVGVFHUEQAVGAVGABEUFRZUGSQAVKAVIVJAVI
+      ADGTRAVJABETRZUHUISQVQUJUKULAVQAVNVPAVMVGAVMADGUFRWFUHZAVOVJAVOACFTRWGUHZ
+      UMUNSAVNVPWHWIUOSAWAVTAWAAVNWHUPRZAVTAVPWIUPRZUQSURAVEVTWAVEUSUTAVAVBWKWJ
+      VCVD $.
+  $}
+
+  ${
+    barycomb2algd.1 $e |- ( ph -> A e. CC ) $.
+    barycomb2algd.2 $e |- ( ph -> B e. CC ) $.
+    barycomb2algd.3 $e |- ( ph -> C e. CC ) $.
+    barycomb2algd.4 $e |- ( ph -> D e. CC ) $.
+    barycomb2algd.5 $e |- ( ph -> E e. CC ) $.
+    barycomb2algd.6 $e |- ( ph -> F e. CC ) $.
+    barycomb2algd.7 $e |- ( ph -> X e. CC ) $.
+    barycomb2algd.8 $e |- ( ph -> Y e. CC ) $.
+    barycomb2algd.9 $e |- ( ph -> Z e. CC ) $.
+    barycomb2algd.10 $e |- ( ph -> T e. CC ) $.
+    barycomb2algd.11 $e |- ( ph -> U = ( ( ( 1 - T ) x. D ) + ( T x. X ) ) ) $.
+    barycomb2algd.12 $e |- ( ph -> V = ( ( ( 1 - T ) x. E ) + ( T x. Y ) ) ) $.
+    barycomb2algd.13 $e |- ( ph -> W = ( ( ( 1 - T ) x. F ) + ( T x. Z ) ) ) $.
+    $( Algebraic identity for a 2-point convex combination of two 3-variable
+       barycentric combinations.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    barycomb2algd $p |- ( ph ->
+      ( ( ( U + V ) + W ) =
+          ( ( ( 1 - T ) x. ( ( D + E ) + F ) ) +
+            ( T x. ( ( X + Y ) + Z ) ) ) /\
+        ( ( ( U x. A ) + ( V x. B ) ) + ( W x. C ) ) =
+          ( ( ( 1 - T ) x. ( ( ( D x. A ) + ( E x. B ) ) + ( F x. C ) ) ) +
+            ( T x. ( ( ( X x. A ) + ( Y x. B ) ) + ( Z x. C ) ) ) ) ) ) $=
+      ( caddc co cmin cmul wceq oveq12d subcld mulcld add4d oveq1d eqtrd addcld
+      c1 1cnd adddid eqcomd eqtr4d 3eqtrd mulassd joinlmuladdmuld jca ) AGJUHUI
+      ZKUHUIZUTFUJUIZEHUHUIZIUHUIUKUIZFLMUHUIZNUHUIUKUIZUHUIZULGBUKUIZJCUKUIZUH
+      UIZKDUKUIZUHUIZVKEBUKUIZHCUKUIZUHUIZIDUKUIZUHUIUKUIZFLBUKUIZMCUKUIZUHUIZN
+      DUKUIZUHUIUKUIZUHUIZULAVJVKEUKUIZVKHUKUIZUHUIZFLUKUIZFMUKUIZUHUIZUHUIZVKI
+      UKUIZFNUKUIZUHUIZUHUIZWOWTUHUIZWRXAUHUIZUHUIVPAVJWMWPUHUIZWNWQUHUIZUHUIZX
+      BUHUIXCAVIXHKXBUHAGXFJXGUHUEUFUMUGUMAXHWSXBUHAWMWPWNWQAVKEAUTFAVAUDUNZRUO
+      ZAFLUDUAUOZAVKHXISUOZAFMUDUBUOZUPUQURAWOWRWTXAAWMWNXJXLUSAWPWQXKXMUSAVKIX
+      ITUOZAFNUDUCUOZUPAXDVMXEVOUHAXDVKVLUKUIZWTUHUIVMAWOXPWTUHAXPWOAVKEHXIRSVB
+      VCUQAVKVLIXIAEHRSUSTVBVDAXEFVNUKUIZXAUHUIVOAWRXQXAUHAXQWRAFLMUDUAUBVBVCUQ
+      AFVNNUDALMUAUBUSUCVBVDUMVEAWAVKWBUKUIZVKWCUKUIZUHUIZFWGUKUIZFWHUKUIZUHUIZ
+      UHUIZVKWEUKUIZFWJUKUIZUHUIZUHUIZXTYEUHUIZYCYFUHUIZUHUIWLAWAXRYAUHUIZXSYBU
+      HUIZUHUIZYGUHUIYHAVSYMVTYGUHAVQYKVRYLUHAVQXFBUKUIYKAGXFBUKUEUQAWMBWPYKXJO
+      XKAWMBUKUIXRWPBUKUIYAUHAVKEBXIROVFAFLBUDUAOVFUMVGURAVRXGCUKUIYLAJXGCUKUFU
+      QAWNCWQYLXLPXMAWNCUKUIXSWQCUKUIYBUHAVKHCXISPVFAFMCUDUBPVFUMVGURUMAVTXBDUK
+      UIYGAKXBDUKUGUQAWTDXAYGXNQXOAWTDUKUIYEXADUKUIYFUHAVKIDXITQVFAFNDUDUCQVFUM
+      VGURUMAYMYDYGUHAXRYAXSYBAVKWBXIAEBROUOZUOZAFWGUDALBUAOUOZUOZAVKWCXIAHCSPU
+      OZUOZAFWHUDAMCUBPUOZUOZUPUQURAXTYCYEYFAXRXSYOYSUSAYAYBYQUUAUSAVKWEXIAIDTQ
+      UOZUOAFWJUDANDUCQUOZUOUPAYIWFYJWKUHAYIVKWDUKUIZYEUHUIWFAXTUUDYEUHAUUDXTAV
+      KWBWCXIYNYRVBVCUQAVKWDWEXIAWBWCYNYRUSUUBVBVDAYJFWIUKUIZYFUHUIWKAYCUUEYFUH
+      AUUEYCAFWGWHUDYPYTVBVCUQAFWIWJUDAWGWHYPYTUSUUCVBVDUMVEVH $.
+  $}
+
+  ${
+    $d A d e f u v w x y z $.  $d B d e f u v w x y z $.
+    $d C d e f u v w x y z $.  $d T d e f u v w x y z $.
+    $d X d e f u v w x y z $.  $d Y d e f u v w x y z $.  $d d e f ph u v w $.
+    barycvxd.1 $e |- ( ph -> A e. CC ) $.
+    barycvxd.2 $e |- ( ph -> B e. CC ) $.
+    barycvxd.3 $e |- ( ph -> C e. CC ) $.
+    barycvxd.4 $e |- ( ph -> T e. ( 0 [,] 1 ) ) $.
+    barycvxd.5 $e |- ( ph -> E. u e. ( 0 [,] 1 ) E. v e. ( 0 [,] 1 )
+            E. w e. ( 0 [,] 1 ) ( ( ( u + v ) + w ) = 1 /\
+            X = ( ( ( u x. A ) + ( v x. B ) ) + ( w x. C ) ) ) ) $.
+    barycvxd.6 $e |- ( ph -> E. u e. ( 0 [,] 1 ) E. v e. ( 0 [,] 1 )
+            E. w e. ( 0 [,] 1 ) ( ( ( u + v ) + w ) = 1 /\
+            Y = ( ( ( u x. A ) + ( v x. B ) ) + ( w x. C ) ) ) ) $.
+    $( The convex combination of two points given in barycentric coordinates
+       with respect to a fixed triangle frame is itself a barycentric
+       combination.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    barycvxd $p |- ( ph -> E. u e. ( 0 [,] 1 ) E. v e. ( 0 [,] 1 )
+                     E. w e. ( 0 [,] 1 ) ( ( ( u + v ) + w ) = 1 /\
+              ( ( ( 1 - T ) x. X ) + ( T x. Y ) ) =
+              ( ( ( u x. A ) + ( v x. B ) ) + ( w x. C ) ) ) ) $=
+      ( caddc co wceq cmul vx vy vz vd ve vf cv c1 cmin wa cicc wrex wcel oveq2
+      cc0 w3a eqeq1d oveq1 oveq2d eqeq2d anbi12d cbvrexv rexbii oveq1d 2rexbidv
+      rexbidv bitri ad2antrr simpll simprl simprrl simprrr simplr simpr1 adantr
+      sylib jca31 unitcvxd simpr2 simpr3 3jca cc cr unitssre sselid recnd eqidd
+      barycomb2algd simpld oveq12d adantl subcld mulridd npcand eqtrd ad3antrrr
+      1cnd 3eqtrd simprr simprd eqtr4d rspc3ev syl12anc syl expr rexlimdvvva ex
+      mpd ) AUAUGZUBUGZQRZUCUGZQRZUHSZUHHUIRZITRZHJTRZQRZXIETRZXJFTRZQRZXLGTRZQ
+      RZSZUJZUCUOUHUKRZULZUBYFULZUAYFULZDUGZCUGZQRZBUGZQRZUHSZXRYJETRZYKFTRZQRZ
+      YMGTRZQRZSZUJZBYFULCYFULZDYFULZAYOJYTSZUJZBYFULCYFULDYFULYIPAUUFYIDCBYFYF
+      YFAYJYFUMZYKYFUMZYMYFUMZUPZUJZUUFYIUUKUUFUJZUDUGZUEUGZQRZUFUGZQRZUHSZIUUM
+      ETRZUUNFTRZQRZUUPGTRZQRZSZUJZUFYFULUEYFULZUDYFULZYIAUVGUUJUUFAYOIYTSZUJZB
+      YFULZCYFULZDYFULZUVGOUVLYJUUNQRZUUPQRZUHSZIYPUUTQRZUVBQRZSZUJZUFYFULZUEYF
+      ULZDYFULUVGUVKUWADYFUVKYLUUPQRZUHSZIYRUVBQRZSZUJZUFYFULZCYFULUWAUVJUWGCYF
+      UVIUWFBUFYFYMUUPSZYOUWCUVHUWEUWHYNUWBUHYMUUPYLQUNUQUWHYTUWDIUWHYSUVBYRQYM
+      UUPGTURUSUTVAVBVCUWGUVTCUEYFYKUUNSZUWFUVSUFYFUWIUWCUVOUWEUVRUWIUWBUVNUHUW
+      IYLUVMUUPQYKUUNYJQUNVDUQUWIUWDUVQIUWIYRUVPUVBQUWIYQUUTYPQYKUUNFTURUSVDUTV
+      AVFVBVGVCUWAUVFDUDYFYJUUMSZUVSUVEUEUFYFYFUWJUVOUURUVRUVDUWJUVNUUQUHUWJUVM
+      UUOUUPQYJUUMUUNQURVDUQUWJUVQUVCIUWJUVPUVAUVBQUWJYPUUSUUTQYJUUMETURVDVDUTV
+      AVEVBVGVPVHUULUVEYIUDUEUFYFYFYFUULUUMYFUMZUUNYFUMZUUPYFUMZUPZUVEYIUULUWNU
+      VEUJZUJZUUKUWNUJZUVEUUFUJZUJZYIUWPUUKUWNUWRUUKUUFUWOVIUULUWNUVEVJUWPUURUV
+      DUUFUULUWNUURUVDVKUULUWNUURUVDVLUUKUUFUWOVMVQVQUWSXOUUMTRHYJTRQRZYFUMZXOU
+      UNTRHYKTRQRZYFUMZXOUUPTRHYMTRQRZYFUMZUPZUWTUXBQRZUXDQRZUHSZXRUWTETRZUXBFT
+      RZQRZUXDGTRZQRZSZYIUWQUXFUWRUWQUXAUXCUXEUWQHUUMYJUUKUWKUWLUWMVNZUUKUUGUWN
+      AUUGUUHUUIVNVOZAHYFUMUUJUWNNVHZVRUWQHUUNYKUUKUWKUWLUWMVSZUUKUUHUWNAUUGUUH
+      UUIVSVOZUXRVRUWQHUUPYMUUKUWKUWLUWMVTZUUKUUIUWNAUUGUUHUUIVTVOZUXRVRWAVOUWS
+      UXHXOUUQTRZHYNTRZQRZXOUHTRZHUHTRZQRZUHUWQUXHUYESZUWRUWQUYIUXNXOUVCTRZHYTT
+      RZQRZSZUWQEFGUUMHUWTUUNUUPUXBUXDYJYKYMAEWBUMUUJUWNKVHAFWBUMUUJUWNLVHAGWBU
+      MUUJUWNMVHUWQUUMUWQYFWCUUMWDUXPWEWFUWQUUNUWQYFWCUUNWDUXSWEWFUWQUUPUWQYFWC
+      UUPWDUYAWEWFUWQYJUWQYFWCYJWDUXQWEWFUWQYKUWQYFWCYKWDUXTWEWFUWQYMUWQYFWCYMW
+      DUYBWEWFAHWBUMUUJUWNAHAYFWCHWDNWEWFZVHUWQUWTWGUWQUXBWGUWQUXDWGWHZWIVOUWRU
+      YEUYHSUWQUWRUYCUYFUYDUYGQUWRUUQUHXOTUURUVDUUFVIUSUWRYNUHHTUVEYOUUEVJUSWJW
+      KAUYHUHSUUJUWNUWRAUYHXOHQRUHAUYFXOUYGHQAXOAUHHAWQZUYNWLWMAHUYNWMWJAUHHUYP
+      UYNWNWOWPWRUWSXRUYLUXNUWRXRUYLSUWQUWRXPUYJXQUYKQUWRIUVCXOTUURUVDUUFVMUSUW
+      RJYTHTUVEYOUUEWSUSWJWKUWQUYMUWRUWQUYIUYMUYOWTVOXAYEUXIUXOUJUWTXJQRZXLQRZU
+      HSZXRUXJXTQRZYBQRZSZUJUXGXLQRZUHSZXRUXLYBQRZSZUJUAUBUCUWTUXBUXDYFYFYFXIUW
+      TSZXNUYSYDVUBVUGXMUYRUHVUGXKUYQXLQXIUWTXJQURVDUQVUGYCVUAXRVUGYAUYTYBQVUGX
+      SUXJXTQXIUWTETURVDVDUTVAXJUXBSZUYSVUDVUBVUFVUHUYRVUCUHVUHUYQUXGXLQXJUXBUW
+      TQUNVDUQVUHVUAVUEXRVUHUYTUXLYBQVUHXTUXKUXJQXJUXBFTURUSVDUTVAXLUXDSZVUDUXI
+      VUFUXOVUIVUCUXHUHXLUXDUXGQUNUQVUIVUEUXNXRVUIYBUXMUXLQXLUXDGTURUSUTVAXBXCX
+      DXEXFXHXGXFXHYIXIYKQRZYMQRZUHSZXRXSYQQRZYSQRZSZUJZBYFULZCYFULZUAYFULUUDYH
+      VURUAYFYHXKYMQRZUHSZXRYAYSQRZSZUJZBYFULZUBYFULVURYGVVDUBYFYEVVCUCBYFXLYMS
+      ZXNVUTYDVVBVVEXMVUSUHXLYMXKQUNUQVVEYCVVAXRVVEYBYSYAQXLYMGTURUSUTVAVBVCVVD
+      VUQUBCYFXJYKSZVVCVUPBYFVVFVUTVULVVBVUOVVFVUSVUKUHVVFXKVUJYMQXJYKXIQUNVDUQ
+      VVFVVAVUNXRVVFYAVUMYSQVVFXTYQXSQXJYKFTURUSVDUTVAVFVBVGVCVURUUCUADYFXIYJSZ
+      VUPUUBCBYFYFVVGVULYOVUOUUAVVGVUKYNUHVVGVUJYLYMQXIYJYKQURVDUQVVGVUNYTXRVVG
+      VUMYRYSQVVGXSYPYQQXIYJETURVDVDUTVAVEVBVGVP $.
+  $}
+
+  ${
+    barysplitalgd.1 $e |- ( ph -> A e. CC ) $.
+    barysplitalgd.2 $e |- ( ph -> B e. CC ) $.
+    barysplitalgd.3 $e |- ( ph -> C e. CC ) $.
+    barysplitalgd.4 $e |- ( ph -> P e. CC ) $.
+    barysplitalgd.5 $e |- ( ph -> U e. CC ) $.
+    barysplitalgd.6 $e |- ( ph -> V e. CC ) $.
+    barysplitalgd.7 $e |- ( ph -> W e. CC ) $.
+    barysplitalgd.8 $e |- ( ph -> S e. CC ) $.
+    barysplitalgd.9 $e |- ( ph -> S =/= 0 ) $.
+    barysplitalgd.10 $e |- ( ph -> P = ( ( ( 1 - S ) x. A ) + ( S x. C ) ) ) $.
+    $( Algebraic identity re-expressing barycentric coordinates under an edge
+       split for the left sub-triangle.  (Contributed by Jon Pennant,
+       29-Oct-2026.) $)
+    barysplitalgd $p |- ( ph ->
+      ( ( ( ( U - ( ( ( 1 - S ) / S ) x. W ) ) + V ) + ( W / S ) ) =
+          ( ( U + V ) + W ) /\
+        ( ( ( ( U - ( ( ( 1 - S ) / S ) x. W ) ) x. A ) + ( V x. B ) ) +
+          ( ( W / S ) x. P ) ) =
+          ( ( ( U x. A ) + ( V x. B ) ) + ( W x. C ) ) ) ) $=
+      ( co c1 cmin cdiv cmul caddc wceq 1cnd subcld divcld mulcld npcand oveq1d
+      add4d eqtrd divrec2d dividd oveq2d divdird eqtr3d 3eqtr2d addassd 3eqtr4d
+      adddirp1d subdird adddid mulassd div13d divcan1d oveq12d 3eqtrd jca ) AGU
+      AFUBTZFUCTZIUDTZUBTZHUETZIFUCTZUETZGHUETIUETZUFVOBUDTZHCUDTZUETZVQEUDTZUE
+      TZGBUDTZWAUETIDUDTZUETZUFAVPVNIUETZUETZGHIUETZUETZVRVSAWIVOVNUETZWJUETWKA
+      VOHVNIAGVNNAVMIAVLFAUAFAUGZQUHZQRUIZPUJZUHOWPPUMAWLGWJUEAGVNNWPUKULUNAVQW
+      HVPUEAVQUAFUCTZIUDTVMUAUETZIUDTWHAIFPQRUOAWRWQIUDAVMFFUCTZUETZWRWQAWSUAVM
+      UEAFQRUPUQAVLFUETZFUCTWTWQAVLFFWNQQRURAXAUAFUCAUAFWMQUKULUSUSULAVMIWOPVCU
+      TUQAGHINOPVAVBAWEVNBUDTZUBTZWAUETZXBWFUETZUETZWEWAWFUETZUETZWDWGAXFXCXBUE
+      TZXGUETXHAXCWAXBWFAWEXBAGBNJUJZAVNBWPJUJZUHAHCOKUJZXKAIDPLUJZUMAXIWEXGUEA
+      WEXBXJXKUKULUNAWBXDWCXEUEAVTXCWAUEAGVNBNWPJVDULAWCVQVLBUDTZFDUDTZUETZUDTV
+      QXNUDTZVQXOUDTZUETXEAEXPVQUDSUQAVQXNXOAIFPQRUIZAVLBWNJUJAFDQLUJVEAXQXBXRW
+      FUEAVQVLUDTZBUDTXQXBAVQVLBXSWNJVFAXTVNBUDAIFVLPQWNRVGULUSAVQFUDTZDUDTXRWF
+      AVQFDXSQLVFAYAIDUDAIFPQRVHULUSVIVJVIAWEWAWFXJXLXMVAVBVK $.
+  $}
+
+  ${
+    barysplitralgd.1 $e |- ( ph -> A e. CC ) $.
+    barysplitralgd.2 $e |- ( ph -> B e. CC ) $.
+    barysplitralgd.3 $e |- ( ph -> C e. CC ) $.
+    barysplitralgd.4 $e |- ( ph -> P e. CC ) $.
+    barysplitralgd.5 $e |- ( ph -> U e. CC ) $.
+    barysplitralgd.6 $e |- ( ph -> V e. CC ) $.
+    barysplitralgd.7 $e |- ( ph -> W e. CC ) $.
+    barysplitralgd.8 $e |- ( ph -> S e. CC ) $.
+    barysplitralgd.9 $e |- ( ph -> ( 1 - S ) =/= 0 ) $.
+    barysplitralgd.10 $e |- ( ph -> P = ( ( ( 1 - S ) x. A )
+                                      + ( S x. C ) ) ) $.
+    $( Algebraic identity re-expressing barycentric coordinates under an edge
+       split for the right sub-triangle.  (Contributed by Jon Pennant,
+       29-Oct-2026.) $)
+    barysplitralgd $p |- ( ph ->
+      ( ( ( V + ( U / ( 1 - S ) ) ) + ( W - ( ( S / ( 1 - S ) ) x. U ) ) ) =
+          ( ( U + V ) + W ) /\
+        ( ( ( V x. B ) + ( ( U / ( 1 - S ) ) x. P ) ) +
+          ( ( W - ( ( S / ( 1 - S ) ) x. U ) ) x. C ) ) =
+          ( ( ( U x. A ) + ( V x. B ) ) + ( W x. C ) ) ) ) $=
+      ( co c1 cmin cdiv caddc cmul wceq 1cnd subcld divcld mulcld npcand div32d
+      oveq2d subdird mullidd oveq1d eqtrd 3eqtr2d eqtr3d addassd addcomd addcld
+      divcan2d ppncand adddid mulassd divcan1d mulcomd oveq12d eqcomd 3eqtrd
+      jca ) AHGUAFUBTZUCTZUDTZIFVMUCTZGUETZUBTZUDTZGHUDTZIUDTZUFHCUETZVNEUETZUD
+      TZVRDUETZUDTZGBUETZWBUDTZIDUETZUDTZUFAVSVTVQUDTZVRUDTWAAVOWKVRUDAVOHGVQUD
+      TZUDTHGUDTZVQUDTWKAVNWLHUDAVNVQUBTZVQUDTVNWLAVNVQAGVMNAUAFAUGZQUHZRUIZAVP
+      GAFVMQWPRUINUJZUKAWNGVQUDAWNVNFVNUETZUBTZVMVNUETZGAVQWSVNUBAFVMGQWPNRULZU
+      MAXAUAVNUETZWSUBTWTAUAFVNWOQWQUNAXCVNWSUBAVNWQUOUPUQAGVMNWPRVCURUPUSUMAHG
+      VQONWRUTAWMVTVQUDAHGONVAUPURUPAVTVQIAGHNOVBWRPVDUQAWFWHVQDUETZUDTZWIXDUBT
+      ZUDTWJAWDXEWEXFUDAWDWBWGXDUDTZUDTWBWGUDTZXDUDTXEAWCXGWBUDAWCVNVMBUETZUETZ
+      VNFDUETZUETZUDTZWGWSDUETZUDTXGAWCVNXIXKUDTZUETXMAEXOVNUESUMAVNXIXKWQAVMBW
+      PJUJAFDQLUJVEUQAXJWGXLXNUDAVNVMUETZBUETXJWGAVNVMBWQWPJVFAXPGBUEAGVMNWPRVG
+      UPUSAVNFUETZDUETXLXNAVNFDWQQLVFAXQWSDUEAVNFWQQVHUPUSVIAXNXDWGUDAWSVQDUEAV
+      QWSXBVJUPUMVKUMAWBWGXDAHCOKUJZAGBNJUJZAVQDWRLUJZUTAXHWHXDUDAWBWGXRXSVAUPU
+      RAIVQDPWRLUNVIAWHXDWIAWGWBXSXRVBXTAIDPLUJVDUQVL $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Affine and Barycentric Geometry of Triangles
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Syntax declaration for triangles. $)
+  $c tri $.
+  $( Syntax for the triangle function.  (Contributed by Jon Pennant,
+     29-Oct-2026.) $)
+  ctri $a class tri $.
+
+
+  ${
+    $d t u v w z $.
+    $( The closed triangle determined by three complex vertices defined via
+       3-variable barycentric coordinates.  (Contributed by Jon Pennant,
+       29-Oct-2026.) $)
+    df-tri $a |- tri = ( t e. ( CC X. ( CC X. CC ) ) |->
+      { z e. CC | E. u e. ( 0 [,] 1 ) E. v e. ( 0 [,] 1 ) E. w e. ( 0 [,] 1 )
+        ( ( ( u + v ) + w ) = 1 /\
+          z = ( ( ( u x. ( 1st ` t ) ) +
+                  ( v x. ( 1st ` ( 2nd ` t ) ) ) ) +
+                ( w x. ( 2nd ` ( 2nd ` t ) ) ) ) ) } ) $.
+  $}
+
+  ${
+    $d A t u v w z $.  $d B t u v w z $.  $d C t u v w z $.  $d ph t u v w z $.
+    trivald.1 $e |- ( ph -> A e. CC ) $.
+    trivald.2 $e |- ( ph -> B e. CC ) $.
+    trivald.3 $e |- ( ph -> C e. CC ) $.
+    $( Value of the triangle function unpacked into barycentric coordinates.
+       (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    trivald $p |- ( ph -> ( tri ` <. A , <. B , C >. >. ) =
+      { z e. CC | E. u e. ( 0 [,] 1 ) E. v e. ( 0 [,] 1 ) E. w e. ( 0 [,] 1 )
+        ( ( ( u + v ) + w ) = 1 /\
+          z = ( ( ( u x. A ) + ( v x. B ) ) + ( w x. C ) ) ) } ) $=
+      ( caddc co wceq c1st cfv cmul c2nd wrex cc vt cop cv c1 cc0 cicc crab cxp
+      ctri cvv df-tri fveq2 wcel opelxpd op1stg syl2anc sylan9eqr oveq2d 2fveq3
+      wa op2ndg fveq2d eqtrd oveq12d eqeq2d rexbidv 2rexbidv rabbidv cnex rabex
+      anbi2d a1i fvmptd2 ) AUAFGHUBZUBZEUCZDUCZLMCUCZLMUDNZBUCZVPUAUCZOPZQMZVQW
+      ARPZOPZQMZLMZVRWDRPZQMZLMZNZUTZCUEUDUFMZSZDWMSEWMSZBTUGVSVTVPFQMZVQGQMZLM
+      ZVRHQMZLMZNZUTZCWMSZDWMSEWMSZBTUGZTTTUHZUHUIUJBCDEUAUKAWAVONZUTZWOXDBTXHW
+      NXCEDWMWMXHWLXBCWMXHWKXAVSXHWJWTVTXHWGWRWIWSLXHWCWPWFWQLXHWBFVPQXGAWBVOOP
+      ZFWAVOOULAFTUMZVNXFUMZXIFNIAGHTTJKUNZFVNTXFUOUPUQURXHWEGVQQXGAWEVORPZOPZG
+      WAVOORUSAXNVNOPZGAXMVNOAXJXKXMVNNIXLFVNTXFVAUPZVBAGTUMZHTUMZXOGNJKGHTTUOU
+      PVCUQURVDXHWHHVRQXGAWHXMRPZHWAVORRUSAXSVNRPZHAXMVNRXPVBAXQXRXTHNJKGHTTVAU
+      PVCUQURVDVEVKVFVGVHAFVNTXFIXLUNXEUJUMAXDBTVIVJVLVM $.
+  $}
+
+  ${
+    $d A u v w z $.  $d B u v w z $.  $d C u v w z $.  $d ph u v w z $.
+    trissccd.1 $e |- ( ph -> A e. CC ) $.
+    trissccd.2 $e |- ( ph -> B e. CC ) $.
+    trissccd.3 $e |- ( ph -> C e. CC ) $.
+    $( A triangle is a subset of the complex numbers.  (Contributed by Jon
+       Pennant, 29-Oct-2026.) $)
+    trissccd $p |- ( ph -> ( tri ` <. A , <. B , C >. >. ) C_ CC ) $=
+      ( vu vv vw vz cop cv caddc co c1 wceq cmul wrex cc ctri cfv cc0 cicc crab
+      wa trivald ssrab2 eqsstrdi ) ABCDLLUAUBHMZIMZNOJMZNOPQKMUJBROUKCRONOULDRO
+      NOQUFJUCPUDOZSIUMSHUMSZKTUETAKJIHBCDEFGUGUNKTUHUI $.
+  $}
+
+  ${
+    $d A u v w z $.  $d B u v w z $.  $d C u v w z $.  $d Z u v w z $.
+    $d ph u v w z $.
+    eltrid.1 $e |- ( ph -> A e. CC ) $.
+    eltrid.2 $e |- ( ph -> B e. CC ) $.
+    eltrid.3 $e |- ( ph -> C e. CC ) $.
+    eltrid.4 $e |- ( ph -> Z e. CC ) $.
+    $( Condition for a point to belong to a triangle.  (Contributed by Jon
+       Pennant, 29-Oct-2026.) $)
+    eltrid $p |- ( ph -> ( Z e. ( tri ` <. A , <. B , C >. >. ) <->
+      E. u e. ( 0 [,] 1 ) E. v e. ( 0 [,] 1 ) E. w e. ( 0 [,] 1 )
+        ( ( ( u + v ) + w ) = 1 /\
+          Z = ( ( ( u x. A ) + ( v x. B ) ) + ( w x. C ) ) ) ) ) $=
+      ( vz wcel cv caddc co wceq cmul wrex cop ctri cfv c1 wa cicc crab trivald
+      cc0 cc eleq2d wb eqeq1 anbi2d rexbidv 2rexbidv elrab a1i mpbirand bitrd )
+      AHEFGUAUAUBUCZNHDOZCOZPQBOZPQUDRZMOZVBESQVCFSQPQVDGSQPQZRZUEZBUIUDUFQZTZC
+      VJTDVJTZMUJUGZNZVEHVGRZUEZBVJTZCVJTDVJTZAVAVMHAMBCDEFGIJKUHUKAVNHUJNZVRLV
+      NVSVRUEULAVLVRMHUJVFHRZVKVQDCVJVJVTVIVPBVJVTVHVOVEVFHVGUMUNUOUPUQURUSUT
+      $.
+  $}
+
+  ${
+    $d A u v w z $.  $d B u v w z $.  $d C u v w z $.  $d ph u v w z $.
+    tricom12d.1 $e |- ( ph -> A e. CC ) $.
+    tricom12d.2 $e |- ( ph -> B e. CC ) $.
+    tricom12d.3 $e |- ( ph -> C e. CC ) $.
+    $( Swapping the first two vertices preserves the triangle.  (Contributed by
+       Jon Pennant, 29-Oct-2026.) $)
+    tricom12d $p |- ( ph -> ( tri ` <. A , <. B , C >. >. ) =
+                            ( tri ` <. B , <. A , C >. >. ) ) $=
+      ( vu vv vw vz cv caddc co c1 wceq wa wrex cc wcel cmul cc0 cicc crab ctri
+      cop cfv elunitcn addcom syl2an oveq1d eqeq1d adantll adantl adantr mulcld
+      wb adantlr addcomd eqeq2d anbi12d rexbidv rexbidva rexcom rabbidv trivald
+      bitrdi 3eqtr4d ) AHLZILZMNZJLZMNZOPZKLZVIBUANZVJCUANZMNZVLDUANZMNZPZQZJUB
+      OUCNZRZIWCRZHWCRZKSUDVJVIMNZVLMNZOPZVOVQVPMNZVSMNZPZQZJWCRZHWCRIWCRZKSUDB
+      CDUFUFUEUGCBDUFUFUEUGAWFWOKSAWFWNIWCRZHWCRWOAWEWPHWCAVIWCTZQZWDWNIWCWRVJW
+      CTZQZWBWMJWCWTVNWIWAWLWQWSVNWIUQAWQWSQZVMWHOXAVKWGVLMWQVISTZVJSTZVKWGPWSV
+      IUHZVJUHZVIVJUIUJUKULUMWTVTWKVOWTVRWJVSMWTVPVQWRVPSTWSWRVIBWQXBAXDUNABSTW
+      QEUOUPUOAWSVQSTWQAWSQVJCWSXCAXEUNACSTWSFUOUPURUSUKUTVAVBVCVCWNHIWCWCVDVGV
+      EAKJIHBCDEFGVFAKJHICBDFEGVFVH $.
+  $}
+
+  ${
+    $d A u v w z $.  $d B u v w z $.  $d C u v w z $.  $d ph u v w z $.
+    tricom23d.1 $e |- ( ph -> A e. CC ) $.
+    tricom23d.2 $e |- ( ph -> B e. CC ) $.
+    tricom23d.3 $e |- ( ph -> C e. CC ) $.
+    $( Swapping the second and third vertices preserves the triangle.
+       (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    tricom23d $p |- ( ph -> ( tri ` <. A , <. B , C >. >. ) =
+                            ( tri ` <. A , <. C , B >. >. ) ) $=
+      ( vu vv vw vz cv caddc co c1 wceq wa wrex cc wcel cmul cc0 cicc crab ctri
+      cop cfv elunitcn ad3antlr ad2antlr adantl add32d eqeq1d ad3antrrr anbi12d
+      mulcld eqeq2d rexbidva rexcom bitrdi rabbidv trivald 3eqtr4d ) AHLZILZMNJ
+      LZMNZOPZKLZVDBUANZVECUANZMNVFDUANZMNZPZQZJUBOUCNZRZIVPRZHVPRZKSUDVDVFMNVE
+      MNZOPZVIVJVLMNVKMNZPZQZIVPRJVPRZHVPRZKSUDBCDUFUFUEUGBDCUFUFUEUGAVSWFKSAVR
+      WEHVPAVDVPTZQZVRWDJVPRZIVPRWEWHVQWIIVPWHVEVPTZQZVOWDJVPWKVFVPTZQZVHWAVNWC
+      WMVGVTOWMVDVEVFWGVDSTAWJWLVDUHUIZWJVESTWHWLVEUHUJZWLVFSTWKVFUHUKZULUMWMVM
+      WBVIWMVJVKVLWMVDBWNABSTWGWJWLEUNUPWMVECWOACSTWGWJWLFUNUPWMVFDWPADSTWGWJWL
+      GUNUPULUQUOURURWDIJVPVPUSUTURVAAKJIHBCDEFGVBAKIJHBDCEGFVBVC $.
+  $}
+
+  ${
+    tricycd.1 $e |- ( ph -> A e. CC ) $.
+    tricycd.2 $e |- ( ph -> B e. CC ) $.
+    tricycd.3 $e |- ( ph -> C e. CC ) $.
+    $( Cyclic permutation of vertices preserves the triangle.  (Contributed by
+       Jon Pennant, 29-Oct-2026.) $)
+    tricycd $p |- ( ph -> ( tri ` <. A , <. B , C >. >. ) =
+                           ( tri ` <. B , <. C , A >. >. ) ) $=
+      ( cop ctri cfv tricom12d tricom23d eqtrd ) ABCDHHIJCBDHHIJCDBHHIJABCDEFGK
+      ACBDFEGLM $.
+  $}
+
+  ${
+    $d A u v w z $.  $d B u v w z $.  $d C u v w z $.  $d W u v w z $.
+    $d ph u v w z $.
+    tri12d.1 $e |- ( ph -> A e. CC ) $.
+    tri12d.2 $e |- ( ph -> B e. CC ) $.
+    tri12d.3 $e |- ( ph -> C e. CC ) $.
+    tri12d.4 $e |- ( ph -> W e. ( 0 [,] 1 ) ) $.
+    $( The edge connecting the first two vertices belongs to the triangle.
+       (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    tri12d $p |- ( ph -> ( ( ( 1 - W ) x. A ) + ( W x. B ) ) e.
+                         ( tri ` <. A , <. B , C >. >. ) ) $=
+      ( vu vv vw c1 co cmul caddc wcel wceq cc0 oveq1d cmin cop ctri cv wa cicc
+      cfv wrex oveq1 eqeq1d eqeq2d anbi12d oveq2 oveq2d syl 0elunit a1i 1cnd cr
+      iirev unitssre sselid recnd npcand addridd eqtrd mul02d subcld mulcld jca
+      addcld eqtr2d 3rspcedvdw eltrid mpbird ) AMEUANZBONZECONZPNZBCDUBUBUCUGQJ
+      UDZKUDZPNZLUDZPNZMRZVSVTBONZWACONZPNZWCDONZPNZRZUEZLSMUFNZUHKWMUHJWMUHAWL
+      VPWAPNZWCPNZMRZVSVQWGPNZWIPNZRZUEVPEPNZWCPNZMRZVSVSWIPNZRZUEWTSPNZMRZVSVS
+      SDONZPNZRZUEJKLVPESWMWMWMVTVPRZWEWPWKWSXJWDWOMXJWBWNWCPVTVPWAPUITUJXJWJWR
+      VSXJWHWQWIPXJWFVQWGPVTVPBOUITTUKULWAERZWPXBWSXDXKWOXAMXKWNWTWCPWAEVPPUMTU
+      JXKWRXCVSXKWQVSWIPXKWGVRVQPWAECOUIUNTUKULWCSRZXBXFXDXIXLXAXEMWCSWTPUMUJXL
+      XCXHVSXLWIXGVSPWCSDOUIUNUKULAEWMQVPWMQIEUTUOISWMQAUPUQAXFXIAXEMSPNMAWTMSP
+      AMEAURZAEAWMUSEVAIVBVCZVDTAMXMVEVFAXHVSSPNVSAXGSVSPADHVGUNAVSAVQVRAVPBAME
+      XMXNVHFVIAECXNGVIVKZVEVLVJVMALKJBCDVSFGHXOVNVO $.
+  $}
+
+  ${
+    tri13d.1 $e |- ( ph -> A e. CC ) $.
+    tri13d.2 $e |- ( ph -> B e. CC ) $.
+    tri13d.3 $e |- ( ph -> C e. CC ) $.
+    tri13d.4 $e |- ( ph -> W e. ( 0 [,] 1 ) ) $.
+    $( The edge connecting the first and third vertices belongs to the
+       triangle.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    tri13d $p |- ( ph -> ( ( ( 1 - W ) x. A ) + ( W x. C ) ) e.
+                         ( tri ` <. A , <. B , C >. >. ) ) $=
+      ( c1 cmin co cmul caddc cop ctri cfv tri12d tricom23d eleqtrd ) AJEKLBMLE
+      DMLNLBDCOOPQBCDOOPQABDCEFHGIRABDCFHGST $.
+  $}
+
+  ${
+    tri23d.1 $e |- ( ph -> A e. CC ) $.
+    tri23d.2 $e |- ( ph -> B e. CC ) $.
+    tri23d.3 $e |- ( ph -> C e. CC ) $.
+    tri23d.4 $e |- ( ph -> W e. ( 0 [,] 1 ) ) $.
+    $( The edge connecting the second and third vertices belongs to the
+       triangle.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    tri23d $p |- ( ph -> ( ( ( 1 - W ) x. B ) + ( W x. C ) ) e.
+                         ( tri ` <. A , <. B , C >. >. ) ) $=
+      ( c1 cmin co cmul caddc cop ctri cfv tri12d tricycd eleqtrrd ) AJEKLCMLED
+      MLNLCDBOOPQBCDOOPQACDBEGHFIRABCDFGHST $.
+  $}
+
+  ${
+    $d A u v w $.  $d B u v w $.  $d C u v w $.  $d ph u v w $.
+    trivtx1d.1 $e |- ( ph -> A e. CC ) $.
+    trivtx1d.2 $e |- ( ph -> B e. CC ) $.
+    trivtx1d.3 $e |- ( ph -> C e. CC ) $.
+    $( The first vertex belongs to the triangle.  (Contributed by Jon Pennant,
+       29-Oct-2026.) $)
+    trivtx1d $p |- ( ph -> A e. ( tri ` <. A , <. B , C >. >. ) ) $=
+      ( c1 cc0 cmin co cmul caddc cop ctri cfv 1cnd subid1d oveq1d eqtrd mul02d
+      mullidd oveq12d addridd cicc wcel 0elunit a1i tri12d eqeltrrd ) AHIJKZBLK
+      ZICLKZMKZBBCDNNOPAUNBIMKBAULBUMIMAULHBLKBAUKHBLAHAQRSABEUBTACFUAUCABEUDTA
+      BCDIEFGIIHUEKUFAUGUHUIUJ $.
+  $}
+
+  ${
+    $d A u v w $.  $d B u v w $.  $d C u v w $.  $d ph u v w $.
+    trivtx2d.1 $e |- ( ph -> A e. CC ) $.
+    trivtx2d.2 $e |- ( ph -> B e. CC ) $.
+    trivtx2d.3 $e |- ( ph -> C e. CC ) $.
+    $( The second vertex belongs to the triangle.  (Contributed by Jon Pennant,
+       29-Oct-2026.) $)
+    trivtx2d $p |- ( ph -> B e. ( tri ` <. A , <. B , C >. >. ) ) $=
+      ( cop ctri cfv trivtx1d tricom12d eleqtrd ) ACCBDHHIJBCDHHIJACBDFEGKACBDF
+      EGLM $.
+  $}
+
+  ${
+    $d A u v w $.  $d B u v w $.  $d C u v w $.  $d ph u v w $.
+    trivtx3d.1 $e |- ( ph -> A e. CC ) $.
+    trivtx3d.2 $e |- ( ph -> B e. CC ) $.
+    trivtx3d.3 $e |- ( ph -> C e. CC ) $.
+    $( The third vertex belongs to the triangle.  (Contributed by Jon Pennant,
+       29-Oct-2026.) $)
+    trivtx3d $p |- ( ph -> C e. ( tri ` <. A , <. B , C >. >. ) ) $=
+      ( cop ctri cfv trivtx2d tricom23d eleqtrd ) ADBDCHHIJBCDHHIJABDCEGFKABDCE
+      GFLM $.
+  $}
+
+  ${
+    $d A u v w $.  $d B u v w $.  $d C u v w $.  $d T u v w $.  $d X u v w $.
+    $d Y u v w $.  $d ph u v w $.  $d t u v w $.
+    tricvxd.1 $e |- ( ph -> A e. CC ) $.
+    tricvxd.2 $e |- ( ph -> B e. CC ) $.
+    tricvxd.3 $e |- ( ph -> C e. CC ) $.
+    tricvxd.4 $e |- ( ph -> X e. ( tri ` <. A , <. B , C >. >. ) ) $.
+    tricvxd.5 $e |- ( ph -> Y e. ( tri ` <. A , <. B , C >. >. ) ) $.
+    tricvxd.6 $e |- ( ph -> T e. ( 0 [,] 1 ) ) $.
+    $( A triangle is convex.  The line segment connecting any two points in the
+       triangle lies entirely in the triangle.  (Contributed by Jon Pennant,
+       29-Oct-2026.) $)
+    tricvxd $p |- ( ph -> ( ( ( 1 - T ) x. X ) + ( T x. Y ) ) e.
+                          ( tri ` <. A , <. B , C >. >. ) ) $=
+      ( vu vv vw co cmul caddc wrex c1 cmin cop ctri cfv wcel cv wceq wa cc0 cc
+      cicc trissccd sseldd eltrid mpbid barycvxd 1cnd cr unitssre sselid subcld
+      recnd mulcld addcld mpbird ) AUAEUBQZFRQZEGRQZSQZBCDUCUCUDUEZUFNUGZOUGZSQ
+      PUGZSQUAUHZVJVLBRQVMCRQSQVNDRQSQZUHUIPUJUAULQZTOVQTNVQTAPONBCDEFGHIJMAFVK
+      UFVOFVPUHUIPVQTOVQTNVQTKAPONBCDFHIJAVKUKFABCDHIJUMZKUNZUOUPAGVKUFVOGVPUHU
+      IPVQTOVQTNVQTLAPONBCDGHIJAVKUKGVRLUNZUOUPUQAPONBCDVJHIJAVHVIAVGFAUAEAURAE
+      AVQUSEUTMVAVCZVBVSVDAEGWAVTVDVEUOVF $.
+  $}
+
+  ${
+    tricvx3d.1 $e |- ( ph -> A e. CC ) $.
+    tricvx3d.2 $e |- ( ph -> B e. CC ) $.
+    tricvx3d.3 $e |- ( ph -> C e. CC ) $.
+    tricvx3d.4 $e |- ( ph -> X e. ( tri ` <. A , <. B , C >. >. ) ) $.
+    tricvx3d.5 $e |- ( ph -> Y e. ( tri ` <. A , <. B , C >. >. ) ) $.
+    tricvx3d.6 $e |- ( ph -> Z e. ( tri ` <. A , <. B , C >. >. ) ) $.
+    tricvx3d.7 $e |- ( ph -> u e. ( 0 [,] 1 ) ) $.
+    tricvx3d.8 $e |- ( ph -> v e. ( 0 [,] 1 ) ) $.
+    tricvx3d.9 $e |- ( ph -> w e. ( 0 [,] 1 ) ) $.
+    tricvx3d.10 $e |- ( ph -> ( ( u + v ) + w ) = 1 ) $.
+    $( Any 3-point convex combination of points in a triangle remains inside
+       the triangle.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    tricvx3d $p |- ( ph -> ( ( ( u x. X ) + ( v x. Y ) ) + ( w x. Z ) ) e.
+                           ( tri ` <. A , <. B , C >. >. ) ) $=
+      ( cv c1 wceq cmul co caddc cop ctri cfv wcel wa cc0 cle wbr cmin unitssre
+      cicc sselid recnd addcld mvlraddd adantr simpr oveq2d 1cnd subidd elicc01
+      cr 3eqtrd simp2bi addge01d mpbid breq2dd 0red letri3d mpbir2and oveq1d cc
+      trissccd sseldd mul02d addlidd eqtr3d oveq12d 00id eqtrdi mullidd eqeltrd
+      syl eqtrd wn cdiv 1red resubcld clt simp3bi leloed olcnd posdifd redivcld
+      gt0ne0d subcld mulcld adddid mulassd subdid mulridd divcan2d eqcomd elrpd
+      wo mvrraddd divge0d addcomd lediv1d dividd breq2d bitrd syl3anbrc tricvxd
+      eqeltrrd pm2.61dan ) ABUAZUBUCZDUAZHUDUEZCUAZIUDUEZUFUEZYCJUDUEZUFUEZEFGU
+      GUGUHUIZUJAYDUKZYKJYLYMYKULJUFUEJYMYIULYJJUFYMYIULULUFUEULYMYFULYHULUFYMY
+      FULHUDUEULYMYEULHUDYMYEULUCYEULUMUNULYEUMUNZYMYEYGUFUEZULYEUMYMYOUBYCUOUE
+      ZUBUBUOUEULAYOYPUCZYDAYOYCUBAYEYGAYEAULUBUQUEZVHYEUPQURZUSAYGAYRVHYGUPRUR
+      ZUSZUTAYCAYRVHYCUPSURUSTVAZVBYMYCUBUBUOAYDVCZVDYMUBYMVEVFVIZYMULYGUMUNZYE
+      YOUMUNAUUEYDAYGYRUJZUUERUUFYGVHUJZUUEYGUBUMUNYGVGVJZWIVBYMYEYGAYEVHUJZYDY
+      SVBZAUUGYDYTVBVKVLVMAYNYDAYEYRUJZYNQUUKUUIYNYEUBUMUNYEVGVJZWIVBYMYEULUUJY
+      MVNVOVPZVQYMHAHVRUJZYDAYLVRHAEFGKLMVSZNVTZVBWAWJYMYHULIUDUEULYMYGULIUDYMY
+      OYGULYMYOULYGUFUEYGYMYEULYGUFUUMVQYMYGAYGVRUJYDUUAVBWBWJUUDWCVQYMIAIVRUJZ
+      YDAYLVRIUUOOVTZVBWAWJWDWEWFYMYJUBJUDUEJYMYCUBJUDUUCVQYMJAJVRUJYDAYLVRJUUO
+      PVTVBZWGWJWDYMJUUSWBWJAJYLUJZYDPVBWHAYDWKZUKZYPUBYGYPWLUEZUOUEZHUDUEZUVCI
+      UDUEZUFUEZUDUEZYJUFUEYKYLUVBUVHYIYJUFUVBUVHYPUVEUDUEZYPUVFUDUEZUFUEYIUVBY
+      PUVEUVFUVBYPUVBUBYCUVBWMZUVBYRVHYCUPAYCYRUJZUVASVBZURZWNZUSZUVBUVDHUVBUBU
+      VCUVBVEZUVBUVCUVBYGYPUVBYRVHYGUPAUUFUVARVBZURZUVOUVBYPUVBYCUBWOUNZULYPWOU
+      NUVBUVTYDUVBYCUBUMUNZUVTYDXKUVBUVLUWAUVMUVLYCVHUJULYCUMUNUWAYCVGWPWIUVBYC
+      UBUVNUVKWQVLAUVAVCWRUVBYCUBUVNUVKWSVLZXAZWTZUSZXBZAUUNUVAUUPVBZXCUVBUVCIU
+      WEAUUQUVAUURVBZXCXDUVBUVIYFUVJYHUFUVBYPUVDUDUEZHUDUEUVIYFUVBYPUVDHUVPUWFU
+      WGXEUVBUWIYEHUDUVBUWIYPUBUDUEZYPUVCUDUEZUOUEYPYGUOUEYEUVBYPUBUVCUVPUVQUWE
+      XFUVBUWJYPUWKYGUOUVBYPUVPXGUVBYGYPUVBYGUVSUSZUVPUWCXHZWDUVBYPYEYGUVBYEUVB
+      YRVHYEUPAUUKUVAQVBZURZUSZUWLUVBYOYPAYQUVAUUBVBZXIXLVIVQWCUVBUWKIUDUEUVJYH
+      UVBYPUVCIUVPUWEUWHXEUVBUWKYGIUDUWMVQWCWDWJVQUVBEFGYCUVGJAEVRUJUVAKVBZAFVR
+      UJUVALVBZAGVRUJUVAMVBZUVBEFGUVCHIUWRUWSUWTAHYLUJUVANVBAIYLUJUVAOVBUVBUVCV
+      HUJULUVCUMUNUVCUBUMUNZUVCYRUJUWDUVBYGYPUVSUVBYPUVOUWBXJZUVBUUFUUEUVRUUHWI
+      XMUVBYGYPUMUNZUXAUVBYOYPYGUMUWQUVBYGYEUFUEZYOYGUMUVBYGYEUWLUWPXNUVBYNYGUX
+      DUMUNUVBUUKYNUWNUULWIUVBYGYEUVSUWOVKVLVMVMUVBUXCUVCYPYPWLUEZUMUNUXAUVBYGY
+      PYPUVSUVOUXBXOUVBUXEUBUVCUMUVBYPUVPUWCXPXQXRVLUVCVGXSXTAUUTUVAPVBUVMXTYAY
+      B $.
+  $}
+
+  ${
+    $d A u v w z $.  $d B u v w z $.  $d C u v w z $.  $d X u v w z $.
+    $d Y u v w z $.  $d Z u v w z $.  $d ph u v w z $.
+    trissd.1 $e |- ( ph -> A e. CC ) $.
+    trissd.2 $e |- ( ph -> B e. CC ) $.
+    trissd.3 $e |- ( ph -> C e. CC ) $.
+    trissd.4 $e |- ( ph -> X e. ( tri ` <. A , <. B , C >. >. ) ) $.
+    trissd.5 $e |- ( ph -> Y e. ( tri ` <. A , <. B , C >. >. ) ) $.
+    trissd.6 $e |- ( ph -> Z e. ( tri ` <. A , <. B , C >. >. ) ) $.
+    $( Sub-triangle monotonicity.  A triangle spanned by any three points of an
+       outer triangle is a subset of the outer triangle.  (Contributed by Jon
+       Pennant, 29-Oct-2026.) $)
+    trissd $p |- ( ph -> ( tri ` <. X , <. Y , Z >. >. ) C_
+                         ( tri ` <. A , <. B , C >. >. ) ) $=
+      ( vu vv wcel wa co cc syl vz vw cop ctri cfv cv caddc wceq cmul cicc wrex
+      c1 simpl simpr trissccd sseldd sselda eltrid mpbid simprd simpld tricvx3d
+      cc0 eqeltrd ex rexlimdva sylc ssrdv ) AUAEFGUCUCUDUEZBCDUCUCUDUEZAUAUFZVI
+      PZVKVJPZAVLQZANUFZOUFZUGRUBUFZUGRULUHZVKVOEUIRVPFUIRUGRVQGUIRUGRZUHZQZUBV
+      CULUJRZUKZOWBUKZNWBUKZVMAVLUMZVNVLWEAVLUNVNUBONEFGVKVNAESPWFAVJSEABCDHIJU
+      OZKUPZTVNAFSPWFAVJSFWGLUPZTVNAGSPWFAVJSGWGMUPZTAVISVKAEFGWHWIWJUOUQURUSAW
+      DVMNWBAVOWBPZQZWCVMOWBWLVPWBPZQZWAVMUBWBWNVQWBPZQZWAVMWPWAQZVKVSVJWQVRVTW
+      PWAUNZUTWQUBONBCDEFGWQABSPWQAWKWQWLWMWQWNWOWPWAUMZVAZVAZVAZHTWQACSPXBITWQ
+      ADSPXBJTWQAEVJPXBKTWQAFVJPXBLTWQAGVJPXBMTWQAWKXAUTWQWLWMWTUTWQWNWOWSUTWQV
+      RVTWRVAVBVDVEVFVFVFVGVEVH $.
+  $}
+
+  ${
+    $d a b c A $.  $d a b c B $.  $d a b c C $.  $d a b c X $.  $d a b c Y $.
+    $d a b c Z $.  $d a b c ph $.
+    triordrelemd.1 $e |- ( ph -> X e. CC ) $.
+    triordrelemd.2 $e |- ( ph -> Y e. CC ) $.
+    triordrelemd.3 $e |- ( ph -> Z e. CC ) $.
+    triordrelemd.4 $e |- ( ph -> ( tri ` <. A , <. B , C >. >. ) =
+                                 ( tri ` <. X , <. Y , Z >. >. ) ) $.
+    $( Lemma for sorting triangle vertices by real parts.  (Contributed by Jon
+       Pennant, 29-Oct-2026.) $)
+    triordrelemd $p |- ( ph -> ( ( ( Re ` X ) <_ ( Re ` Y ) /\
+         ( Re ` Y ) <_ ( Re ` Z ) ) -> E. a e. CC E. b e. CC E. c e. CC
+         ( ( tri ` <. A , <. B , C >. >. ) = ( tri ` <. a , <. b , c >. >. ) /\
+         ( ( Re ` a ) <_ ( Re ` b ) /\ ( Re ` b ) <_ ( Re ` c ) ) ) ) ) $=
+      ( cop ctri cfv cre cle cc wceq wbr wa cv wrex wi wcel opeq1 fveq2d eqeq2d
+      w3a fveq2 breq1d anbi1d anbi12d opeq2d breq2d opeq2 rspc3ev exp32 syl3anc
+      anbi2d mpd ) ABCDOOPQZEFGOZOZPQZUAZERQZFRQZSUBZVJGRQZSUBZUCZVDHUDZIUDZJUD
+      ZOZOZPQZUAZVORQZVPRQZSUBZWCVQRQZSUBZUCZUCZJTUEITUEHTUEZUFZNAETUGZFTUGZGTU
+      GZVHWJUFKLMWKWLWMUKVHVNWIWHVHVNUCVDEVROZPQZUAZVIWCSUBZWFUCZUCVDEFVQOZOZPQ
+      ZUAZVKVJWESUBZUCZUCHIJEFGTTTVOEUAZWAWPWGWRXEVTWOVDXEVSWNPVOEVRUHUIUJXEWDW
+      QWFXEWBVIWCSVOERULUMUNUOVPFUAZWPXBWRXDXFWOXAVDXFWNWTPXFVRWSEVPFVQUHUPUIUJ
+      XFWQVKWFXCXFWCVJVISVPFRULZUQXFWCVJWESXGUMUOUOVQGUAZXBVHXDVNXHXAVGVDXHWTVF
+      PXHWSVEEVQGFURUPUIUJXHXCVMVKXHWEVLVJSVQGRULUQVBUOUSUTVAVC $.
+  $}
+
+  ${
+    $d a b c A $.  $d a b c B $.  $d a b c C $.  $d a b c ph $.
+    triordred.1 $e |- ( ph -> A e. CC ) $.
+    triordred.2 $e |- ( ph -> B e. CC ) $.
+    triordred.3 $e |- ( ph -> C e. CC ) $.
+    $( Every triangle has a vertex permutation with sorted real parts.
+       (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    triordred $p |- ( ph -> E. a e. CC E. b e. CC E. c e. CC
+      ( ( tri ` <. A , <. B , C >. >. ) = ( tri ` <. a , <. b , c >. >. ) /\
+        ( ( Re ` a ) <_ ( Re ` b ) /\ ( Re ` b ) <_ ( Re ` c ) ) ) ) $=
+      ( cre cfv cle wbr cop ctri wi triordrelemd expd mpjaod cv wceq wa cc wrex
+      eqidd expcomd tricom23d a1ddd tricycd eqtrd a1dd recld letrid tricom12d )
+      ABKLZCKLZMNZBCDOOPLZEUAZFUAZGUAZOOPLUBUTKLVAKLZMNVCVBKLMNUCUCGUDUEFUDUEEU
+      DUEZUQUPMNZAUQDKLZMNZURVDQZVFUQMNZAURVGVDABCDBCDEFGHIJAUSUFRUGAUPVFMNZVIV
+      HQVFUPMNZAVJVIURVDAVJVIVDABCDBDCEFGHJIABCDHIJUHRSUIAVKVHVIAVKURVDABCDDBCE
+      FGJHIAUSCDBOOPLDBCOOPLZABCDHIJUJZACDBIJHUJUKZRSULAUPVFABHUMZADJUMZUNZTAUQ
+      VFACIUMZVPUNZTAVJVEVDQZVKAVEVJVDABCDCBDEFGIHJABCDHIJUORUGAVGVKVTQVIAVGVKV
+      EVDAVGVKVDABCDCDBEFGIJHVMRSUIAVIVTVKAVIVEVDABCDDCBEFGJIHAUSVLDCBOOPLVNADB
+      CJHIUHUKRSULVSTVQTAUPUQVOVRUNT $.
+  $}
+
+  ${
+    $d a b c A $.  $d a b c B $.  $d a b c C $.  $d a b c X $.  $d a b c Y $.
+    $d a b c Z $.  $d a b c ph $.
+    triordimlemd.1 $e |- ( ph -> X e. CC ) $.
+    triordimlemd.2 $e |- ( ph -> Y e. CC ) $.
+    triordimlemd.3 $e |- ( ph -> Z e. CC ) $.
+    triordimlemd.4 $e |- ( ph -> ( tri ` <. A , <. B , C >. >. ) =
+                                  ( tri ` <. X , <. Y , Z >. >. ) ) $.
+    $( Lemma for sorting triangle vertices by imaginary parts.  (Contributed by
+       Jon Pennant, 29-Oct-2026.) $)
+    triordimlemd $p |- ( ph -> ( ( ( Im ` X ) <_ ( Im ` Y ) /\
+        ( Im ` Y ) <_ ( Im ` Z ) ) -> E. a e. CC E. b e. CC E. c e. CC
+        ( ( tri ` <. A , <. B , C >. >. ) = ( tri ` <. a , <. b , c >. >. ) /\
+        ( ( Im ` a ) <_ ( Im ` b ) /\ ( Im ` b ) <_ ( Im ` c ) ) ) ) ) $=
+      ( cc cop ctri cfv cim cle wcel w3a wceq wbr wa cv wrex 3jca fveq2d eqeq2d
+      opeq1 fveq2 breq1d anbi1d anbi12d opeq2d breq2d opeq2 anbi2d rspc3ev sylc
+      wi exp32 ) AEOUAZFOUAZGOUAZUBZBCDPPQRZEFGPZPZQRZUCZESRZFSRZTUDZVNGSRZTUDZ
+      UEZVHHUFZIUFZJUFZPZPZQRZUCZVSSRZVTSRZTUDZWGWASRZTUDZUEZUEZJOUGIOUGHOUGZVB
+      AVDVEVFKLMUHNVGVLVRWMWLVLVRUEVHEWBPZQRZUCZVMWGTUDZWJUEZUEVHEFWAPZPZQRZUCZ
+      VOVNWITUDZUEZUEHIJEFGOOOVSEUCZWEWPWKWRXEWDWOVHXEWCWNQVSEWBUKUIUJXEWHWQWJX
+      EWFVMWGTVSESULUMUNUOVTFUCZWPXBWRXDXFWOXAVHXFWNWTQXFWBWSEVTFWAUKUPUIUJXFWQ
+      VOWJXCXFWGVNVMTVTFSULZUQXFWGVNWITXGUMUOUOWAGUCZXBVLXDVRXHXAVKVHXHWTVJQXHW
+      SVIEWAGFURUPUIUJXHXCVQVOXHWIVPVNTWAGSULUQUSUOUTVCVA $.
+  $}
+
+  ${
+    $d a b c A $.  $d a b c B $.  $d a b c C $.  $d a b c ph $.
+    triordimd.1 $e |- ( ph -> A e. CC ) $.
+    triordimd.2 $e |- ( ph -> B e. CC ) $.
+    triordimd.3 $e |- ( ph -> C e. CC ) $.
+    $( Every triangle has a vertex permutation with sorted imaginary parts.
+       (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    triordimd $p |- ( ph -> E. a e. CC E. b e. CC E. c e. CC
+      ( ( tri ` <. A , <. B , C >. >. ) = ( tri ` <. a , <. b , c >. >. ) /\
+        ( ( Im ` a ) <_ ( Im ` b ) /\ ( Im ` b ) <_ ( Im ` c ) ) ) ) $=
+      ( cim cfv cle wbr cop ctri wi triordimlemd expd mpjaod cv wceq wa cc wrex
+      eqidd expcomd tricom23d a1ddd tricycd eqtrd a1dd imcld letrid tricom12d )
+      ABKLZCKLZMNZBCDOOPLZEUAZFUAZGUAZOOPLUBUTKLVAKLZMNVCVBKLMNUCUCGUDUEFUDUEEU
+      DUEZUQUPMNZAUQDKLZMNZURVDQZVFUQMNZAURVGVDABCDBCDEFGHIJAUSUFRUGAUPVFMNZVIV
+      HQVFUPMNZAVJVIURVDAVJVIVDABCDBDCEFGHJIABCDHIJUHRSUIAVKVHVIAVKURVDABCDDBCE
+      FGJHIAUSCDBOOPLDBCOOPLZABCDHIJUJZACDBIJHUJUKZRSULAUPVFABHUMZADJUMZUNZTAUQ
+      VFACIUMZVPUNZTAVJVEVDQZVKAVEVJVDABCDCBDEFGIHJABCDHIJUORUGAVGVKVTQVIAVGVKV
+      EVDAVGVKVDABCDCDBEFGIJHVMRSUIAVIVTVKAVIVEVDABCDDCBEFGJIHAUSVLDCBOOPLVNADB
+      CJHIUHUKRSULVSTVQTAUPUQVOVRUNT $.
+  $}
+
+  ${
+    tribaryred.1 $e |- ( ph -> A e. CC ) $.
+    tribaryred.2 $e |- ( ph -> B e. CC ) $.
+    tribaryred.3 $e |- ( ph -> C e. CC ) $.
+    tribaryred.4 $e |- ( ph -> u e. ( 0 [,] 1 ) ) $.
+    tribaryred.5 $e |- ( ph -> v e. ( 0 [,] 1 ) ) $.
+    tribaryred.6 $e |- ( ph -> w e. ( 0 [,] 1 ) ) $.
+    tribaryred.7 $e |- ( ph -> ( ( u + v ) + w ) = 1 ) $.
+    tribaryred.8 $e |- ( ph -> Z = ( ( ( u x. A ) + ( v x. B ) )
+                                                  + ( w x. C ) ) ) $.
+    $( Real part of a barycentric combination.  (Contributed by Jon Pennant,
+       29-Oct-2026.) $)
+    tribaryred $p |- ( ph -> ( Re ` Z ) =
+      ( ( ( u x. ( Re ` A ) ) + ( v x. ( Re ` B ) ) )
+                              + ( w x. ( Re ` C ) ) ) ) $=
+      ( cre cfv co caddc cv cmul fveq2d c1 cicc cr unitssre sselid recnd mulcld
+      cc0 addcld readdd remul2d oveq12d eqtrd 3eqtrd ) AHQRDUAZEUBSZCUAZFUBSZTS
+      ZBUAZGUBSZTSZQRVBQRZVDQRZTSUREQRUBSZUTFQRUBSZTSZVCGQRUBSZTSAHVEQPUCAVBVDA
+      USVAAUREAURAUKUDUESZUFURUGLUHZUIIUJZAUTFAUTAVLUFUTUGMUHZUIJUJZULAVCGAVCAV
+      LUFVCUGNUHZUIKUJUMAVFVJVGVKTAVFUSQRZVAQRZTSVJAUSVAVNVPUMAVRVHVSVITAUREVMI
+      UNAUTFVOJUNUOUPAVCGVQKUNUOUQ $.
+  $}
+
+  ${
+    tribaryimd.1 $e |- ( ph -> A e. CC ) $.
+    tribaryimd.2 $e |- ( ph -> B e. CC ) $.
+    tribaryimd.3 $e |- ( ph -> C e. CC ) $.
+    tribaryimd.4 $e |- ( ph -> u e. ( 0 [,] 1 ) ) $.
+    tribaryimd.5 $e |- ( ph -> v e. ( 0 [,] 1 ) ) $.
+    tribaryimd.6 $e |- ( ph -> w e. ( 0 [,] 1 ) ) $.
+    tribaryimd.7 $e |- ( ph -> ( ( u + v ) + w ) = 1 ) $.
+    tribaryimd.8 $e |- ( ph -> Z = ( ( ( u x. A ) + ( v x. B ) )
+                                                  + ( w x. C ) ) ) $.
+    $( Imaginary part of a barycentric combination.  (Contributed by Jon
+       Pennant, 29-Oct-2026.) $)
+    tribaryimd $p |- ( ph -> ( Im ` Z ) =
+      ( ( ( u x. ( Im ` A ) ) + ( v x. ( Im ` B ) ) )
+                              + ( w x. ( Im ` C ) ) ) ) $=
+      ( cim cfv co caddc cv cmul fveq2d c1 cicc cr unitssre sselid recnd mulcld
+      cc0 addcld imaddd immul2d oveq12d eqtrd 3eqtrd ) AHQRDUAZEUBSZCUAZFUBSZTS
+      ZBUAZGUBSZTSZQRVBQRZVDQRZTSUREQRUBSZUTFQRUBSZTSZVCGQRUBSZTSAHVEQPUCAVBVDA
+      USVAAUREAURAUKUDUESZUFURUGLUHZUIIUJZAUTFAUTAVLUFUTUGMUHZUIJUJZULAVCGAVCAV
+      LUFVCUGNUHZUIKUJUMAVFVJVGVKTAVFUSQRZVAQRZTSVJAUSVAVNVPUMAVRVHVSVITAUREVMI
+      UNAUTFVOJUNUOUPAVCGVQKUNUOUQ $.
+  $}
+
+  ${
+    $d A u v w z $.  $d B u v w z $.  $d C u v w z $.  $d Z u v w z $.
+    $d ph u v w $.
+    trirebndd.1 $e |- ( ph -> A e. CC ) $.
+    trirebndd.2 $e |- ( ph -> B e. CC ) $.
+    trirebndd.3 $e |- ( ph -> C e. CC ) $.
+    trirebndd.4 $e |- ( ph -> ( Re ` A ) <_ ( Re ` B ) ) $.
+    trirebndd.5 $e |- ( ph -> ( Re ` B ) <_ ( Re ` C ) ) $.
+    $( The real part of any point in a real-sorted triangle lies within its
+       endpoints.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    trirebndd $p |- ( ph -> ( Z e. ( tri ` <. A , <. B , C >. >. ) ->
+                             ( Re ` Z ) e. ( ( Re ` A ) [,] ( Re ` C ) ) ) ) $=
+      ( vu vv vw cfv wcel co wa caddc cmul syl cop ctri cre cicc trissccd sseld
+      cc wi cv wceq cc0 wrex adantr simpr eltrid simp-4l simp-4r simpllr simplr
+      c1 simprl simprr tribaryred cr cle wbr cvxbnd13d eqeltrd rexlimdva sylbid
+      recld ex com23 mpdd ) AEBCDUAUAUBNZOZEUGOZEUCNZBUCNZDUCNZUDPZOZAVOUGEABCD
+      FGHUEUFAVQVPWBAVQVPWBUHAVQQZVPKUIZLUIZRPMUIZRPUTUJZEWDBSPWECSPRPWFDSPRPUJ
+      ZQZMUKUTUDPZULZLWJULZKWJULZWBWCMLKBCDEABUGOZVQFUMACUGOZVQGUMADUGOZVQHUMAV
+      QUNUOAWMWBUHVQAWLWBKWJAWDWJOZQZWKWBLWJWRWEWJOZQZWIWBMWJWTWFWJOZQZWIWBXBWI
+      QZVRWDVSSPWECUCNZSPRPWFVTSPRPWAXCMLKBCDEXCAWNAWQWSXAWIUPZFTXCAWOXEGTXCAWP
+      XEHTAWQWSXAWIUQZWRWSXAWIURZWTXAWIUSZXBWGWHVAZXBWGWHVBVCXCMLKVSXDVTXCAVSVD
+      OXEABFVKTXCAXDVDOXEACGVKTXCAVTVDOXEADHVKTXCAVSXDVEVFXEITXCAXDVTVEVFXEJTXF
+      XGXHXIVGVHVLVIVIVIUMVJVLVMVN $.
+  $}
+
+  ${
+    $d A u v w z $.  $d B u v w z $.  $d C u v w z $.  $d Z u v w z $.
+    $d ph u v w $.
+    triredegd.1 $e |- ( ph -> A e. CC ) $.
+    triredegd.2 $e |- ( ph -> B e. CC ) $.
+    triredegd.3 $e |- ( ph -> C e. CC ) $.
+    triredegd.4 $e |- ( ph -> ( Re ` A ) = ( Re ` B ) ) $.
+    triredegd.5 $e |- ( ph -> ( Re ` B ) = ( Re ` C ) ) $.
+    $( Any point in a vertically degenerate triangle has the same real part as
+       its vertices.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    triredegd $p |- ( ph -> ( Z e. ( tri ` <. A , <. B , C >. >. ) ->
+                                   ( Re ` Z ) = ( Re ` A ) ) ) $=
+      ( vu vv vw cfv wcel wa caddc co cmul ad3antrrr cop ctri cre wceq cc0 cicc
+      cv c1 wrex simpr cc adantr trissccd sselda eltrid simprll simprlr simplrr
+      mpbid wi simprl adantl tribaryred cr recld cvxbndconstd eqtrd ex rexlimdv
+      expr anassrs rexlimdva mpd ) AEBCDUAUAUBNZOZEUCNZBUCNZUDZAVOPZKUGZLUGZQRM
+      UGZQRUHUDZEVTBSRWACSRQRWBDSRQRUDZPZMUEUHUFRZUIZLWFUIZKWFUIZVRVSVOWIAVOUJV
+      SMLKBCDEABUKOZVOFULACUKOZVOGULADUKOZVOHULAVNUKEABCDFGHUMUNUOUSVSWHVRKWFVS
+      VTWFOZPZWGVRLWFWNWAWFOZPWEVRMWFVSWMWOWBWFOZWEVRUTZUTVSWMWOPZWPWQVSWRWPPZP
+      ZWEVRWTWEPZVPVTVQSRWACUCNZSRQRWBDUCNZSRQRVQXAMLKBCDEAWJVOWSWEFTAWKVOWSWEG
+      TAWLVOWSWEHTWTWMWEVSWMWOWPUPULZWTWOWEVSWMWOWPUQULZVSWRWPWEURZWTWCWDVAZWEW
+      DWTWCWDUJVBVCXAMLKVQXBXCAVQVDOVOWSWEABFVETAXBVDOVOWSWEACGVETAXCVDOVOWSWEA
+      DHVETAVQXBUDVOWSWEITAXBXCUDVOWSWEJTXDXEXFXGVFVGVHVJVKVIVLVLVMVH $.
+  $}
+
+  ${
+    $d A u v w z $.  $d B u v w z $.  $d C u v w z $.  $d Z u v w z $.
+    $d ph u v w $.
+    triimbndd.1 $e |- ( ph -> A e. CC ) $.
+    triimbndd.2 $e |- ( ph -> B e. CC ) $.
+    triimbndd.3 $e |- ( ph -> C e. CC ) $.
+    triimbndd.4 $e |- ( ph -> ( Im ` A ) <_ ( Im ` B ) ) $.
+    triimbndd.5 $e |- ( ph -> ( Im ` B ) <_ ( Im ` C ) ) $.
+    $( The imaginary part of any point in an imaginary-sorted triangle lies
+       within its end points.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    triimbndd $p |- ( ph -> ( Z e. ( tri ` <. A , <. B , C >. >. ) ->
+                   ( Im ` Z ) e. ( ( Im ` A ) [,] ( Im ` C ) ) ) ) $=
+      ( vu vv vw cfv wcel co wa caddc cmul ad3antrrr cop ctri cim cicc wceq cc0
+      cv c1 wrex simpr cc adantr trissccd sselda eltrid simprll simprlr simplrr
+      mpbid wi simprl adantl tribaryimd cr imcld cle wbr cvxbnd13d eqeltrd expr
+      ex anassrs rexlimdv rexlimdva mpd ) AEBCDUAUAUBNZOZEUCNZBUCNZDUCNZUDPZOZA
+      VQQZKUGZLUGZRPMUGZRPUHUEZEWDBSPWECSPRPWFDSPRPUEZQZMUFUHUDPZUIZLWJUIZKWJUI
+      ZWBWCVQWMAVQUJWCMLKBCDEABUKOZVQFULACUKOZVQGULADUKOZVQHULAVPUKEABCDFGHUMUN
+      UOUSWCWLWBKWJWCWDWJOZQZWKWBLWJWRWEWJOZQWIWBMWJWCWQWSWFWJOZWIWBUTZUTWCWQWS
+      QZWTXAWCXBWTQZQZWIWBXDWIQZVRWDVSSPWECUCNZSPRPWFVTSPRPWAXEMLKBCDEAWNVQXCWI
+      FTAWOVQXCWIGTAWPVQXCWIHTXDWQWIWCWQWSWTUPULZXDWSWIWCWQWSWTUQULZWCXBWTWIURZ
+      XDWGWHVAZWIWHXDWGWHUJVBVCXEMLKVSXFVTAVSVDOVQXCWIABFVETAXFVDOVQXCWIACGVETA
+      VTVDOVQXCWIADHVETAVSXFVFVGVQXCWIITAXFVTVFVGVQXCWIJTXGXHXIXJVHVIVKVJVLVMVN
+      VNVOVK $.
+  $}
+
+  ${
+    $d A y $.  $d B y $.  $d C y $.
+    trivertsegd.1 $e |- ( ph -> A e. CC ) $.
+    trivertsegd.2 $e |- ( ph -> B e. CC ) $.
+    trivertsegd.3 $e |- ( ph -> C e. CC ) $.
+    trivertsegd.4 $e |- ( ph -> ( Re ` A ) = ( Re ` B ) ) $.
+    trivertsegd.5 $e |- ( ph -> ( Re ` B ) = ( Re ` C ) ) $.
+    trivertsegd.6 $e |- ( ph -> ( Im ` A ) <_ ( Im ` B ) ) $.
+    trivertsegd.7 $e |- ( ph -> ( Im ` B ) <_ ( Im ` C ) ) $.
+    $( Any point on the vertical segment between the first and third vertices
+       belongs to the degenerate triangle.  (Contributed by Jon Pennant,
+       29-Oct-2026.) $)
+    trivertsegd $p |- ( ph -> ( y e. ( ( Im ` A ) [,] ( Im ` C ) ) ->
+                                   ( ( Re ` A ) + ( _i x. y ) ) e.
+                                   ( tri ` <. A , <. B , C >. >. ) ) ) $=
+      ( co wcel ci cmul caddc adantr c1 eqtrd cv cim cfv cicc cre cop ctri wceq
+      wa clt wbr wo cle imcld letrd cr wb leloe syl2anc mpbid orcomd w3a elicc2
+      simpr simp3d breq2d mpbird simp2d jca wss iccssre sseld letri3d oveq2d cc
+      replimd eqtr4d trivtx1d eqeltrd ex cmin cdiv oveq1d eqcomd oveq12d ax-1cn
+      imp a1i resubcld recnd gtned subne0d redivcld subcld ax-icn mulcld adddid
+      recld add4d adddird npcan mullidd eqtr3d mul12d subdird addcomd addsub12d
+      subdid divcan1d pncan3d cc0 posdifd elrpd subge0d divge0d lesub1dd dividd
+      lediv1dd 3jca 0re 1re mp2an sylibr tri13d eqeltrrd jaod mpd ) ABUAZCUBUCZ
+      EUBUCZUDMZNZCUEUCZOYHPMZQMZCDEUFUFUGUCZNZAYLUIZYIYJUHZYIYJUJUKZULYQYRYTYS
+      YRYIYJUMUKZYTYSULZAUUAYLAYIDUBUCYJACFUNZADGUNAEHUNZKLUORYRYIUPNZYJUPNZUUA
+      UUBUQAUUEYLUUCRZAUUFYLUUDRZYIYJURUSUTVAYRYSYQYTYRYSYQYRYSUIZYOCYPUUIYOYMO
+      YIPMZQMZCUUIYNUUJYMQUUIYHYIOPUUIYHYIUHYHYIUMUKZYIYHUMUKZUIUUIUULUUMUUIUUL
+      YHYJUMUKZYRUUNYSYRYHUPNZUUMUUNYRYLUUOUUMUUNVBZAYLVDYRUUEUUFYLUUPUQUUGUUHY
+      IYJYHVCUSUTZVEZRUUIYIYJYHUMYRYSVDVFVGYRUUMYSYRUUOUUMUUNUUQVHZRVIUUIYHYIYR
+      UUOYSAYLUUOAYKUPYHAUUEUUFYKUPVJUUCUUDYIYJVKUSVLWGZRYRUUEYSUUGRVMVGVNVNYRC
+      UUKUHZYSYRCACVONZYLFRZVPZRVQUUICDEYRUVBYSUVCRYRDVONZYSAUVEYLGRZRYREVONZYS
+      AUVGYLHRZRVRVSVTYRYTYQYRYTUIZSYHYIWAMZYJYIWAMZWBMZWAMZCPMZUVLEPMZQMZYOYPU
+      VIUVPUVMUUKPMZUVLYMOYJPMZQMZPMZQMZYOUVIUVNUVQUVOUVTQUVICUUKUVMPYRUVAYTUVD
+      RVNUVIEUVSUVLPUVIUVSEYRUVSEUHYTYRUVSEUEUCZUVRQMEYRYMUWBUVRQAYMUWBUHYLAYMD
+      UEUCUWBIJTRWCYREUVHVPVQRWDVNWEUVIUWAUVMYMPMZUVMUUJPMZQMZUVLYMPMZUVLUVRPMZ
+      QMZQMZYOUVIUVQUWEUVTUWHQUVIUVMYMUUJUVISUVLSVONZUVIWFWHZUVIUVLUVIUVJUVKUVI
+      YHYIYRUUOYTUUTRZYRUUEYTUUGRZWIZUVIYJYIYRUUFYTUUHRZUWMWIZUVIYJYIUVIYJUWOWJ
+      ZUVIYIUWMWJZUVIYIYJUWMYRYTVDZWKWLZWMZWJZWNZYRYMVONYTYRYMAYMUPNYLACFWRRWJR
+      ZUVIOYIYROVONZYTUXEYRWOWHRZUWRWPZWQUVIUVLYMUVRUXBUXDUVIOYJUXFUWQWPZWQWEUV
+      IUWIUWCUWFQMZUWDUWGQMZQMYOUVIUWCUWDUWFUWGUVIUVMYMUXCUXDWPUVIUVMUUJUXCUXGW
+      PUVIUVLYMUXBUXDWPUVIUVLUVRUXBUXHWPWSUVIUXIYMUXJYNQUVIUVMUVLQMZYMPMZUXIYMU
+      VIUVMUVLYMUXCUXBUXDWTUVIUXLSYMPMYMUVIUXKSYMPUVIUWJUVLVONUXKSUHUWKUXBSUVLX
+      AUSWCUVIYMUXDXBTXCUVIUXJOUVMYIPMZPMZOUVLYJPMZPMZQMZYNUVIUWDUXNUWGUXPQUVIU
+      VMOYIUXCUXFUWRXDUVIUVLOYJUXBUXFUWQXDWEUVIUXQOUXMUXOQMZPMZYNUVIUXSUXQUVIOU
+      XMUXOUXFUVIUVMYIUXCUWRWPUVIUVLYJUXBUWQWPZWQWDUVIUXRYHOPUVIUXRYIUVJQMZYHUV
+      IUXRYIUXOUVLYIPMZWAMZQMZUYAUVIUXRUXOYIUYBWAMZQMZUYDUVIUXRUYEUXOQMUYFUVIUX
+      MUYEUXOQUVIUXMSYIPMZUYBWAMUYEUVISUVLYIUWKUXBUWRXEUVIUYGYIUYBWAUVIYIUWRXBW
+      CTWCUVIUYEUXOUVIYIUYBUWRUVIUVLYIUXBUWRWPZWNUXTXFTUVIUYDUYFUVIYIUXOUYBUWRU
+      XTUYHXGWDTUVIUYCUVJYIQUVIUYCUVLUVKPMZUVJUVIUYIUYCUVIUVLYJYIUXBUWQUWRXHWDU
+      VIUVJUVKUVIUVJUWNWJUVIYJYIUWQUWRWNZUWTXITVNTUVIYIYHUWRYRYHVONYTYRYHUUTWJR
+      XJTVNTTWETTTUVICDEUVLYRUVBYTUVCRYRUVEYTUVFRYRUVGYTUVHRUVIUVLUPNZXKUVLUMUK
+      ZUVLSUMUKZVBZUVLXKSUDMNZUVIUYKUYLUYMUXAUVIUVJUVKUWNUVIUVKUWPUVIYTXKUVKUJU
+      KUWSUVIYIYJUWMUWOXLUTXMZUVIXKUVJUMUKUUMYRUUMYTUUSRUVIYHYIUWLUWMXNVGXOUVIU
+      VLUVKUVKWBMZUMUKUYMUVIUVJUVKUVKUWNUWPUYPUVIYHYJYIUWLUWOUWMYRUUNYTUURRXPXR
+      UVIUYQSUVLUMUVIUVKUYJUWTXQVFUTXSXKUPNSUPNUYOUYNUQXTYAXKSUVLVCYBYCYDYEVTYF
+      YGVT $.
+  $}
+
+
+  ${
+    trisplitptcld.1 $e |- ( ph -> A e. CC ) $.
+    trisplitptcld.2 $e |- ( ph -> B e. CC ) $.
+    trisplitptcld.3 $e |- ( ph -> C e. CC ) $.
+    trisplitptcld.4 $e |- ( ph -> ( Re ` A ) < ( Re ` B ) ) $.
+    trisplitptcld.5 $e |- ( ph -> ( Re ` B ) < ( Re ` C ) ) $.
+    trisplitptcld.6 $e |- ( ph -> P = ( ( ( ( ( Re ` C ) - ( Re ` B ) ) /
+                                  ( ( Re ` C ) - ( Re ` A ) ) ) x. A ) +
+                                  ( ( ( ( Re ` B ) - ( Re ` A ) ) /
+                                  ( ( Re ` C ) - ( Re ` A ) ) ) x. C ) ) ) $.
+    $( The split point belongs to the complex numbers.  (Contributed by Jon
+       Pennant, 29-Oct-2026.) $)
+    trisplitptcld $p |- ( ph -> P e. CC ) $=
+      ( cre cfv cmin co cdiv cmul recld resubcld clt caddc cc wbr lttrd posdifd
+      cc0 mpbid gt0ne0d redivcld recnd mulcld addcld eqeltrd ) AEDLMZCLMZNOZUNB
+      LMZNOZPOZBQOZUOUQNOZURPOZDQOZUAOUBKAUTVCAUSBAUSAUPURAUNUOADHRZACGRZSAUNUQ
+      VDABFRZSZAURAUQUNTUCUFURTUCAUQUOUNVFVEVDIJUDAUQUNVFVDUEUGUHZUIUJFUKAVBDAV
+      BAVAURAUOUQVEVFSVGVHUIUJHUKULUM $.
+  $}
+
+  ${
+    trisplitptred.1 $e |- ( ph -> A e. CC ) $.
+    trisplitptred.2 $e |- ( ph -> B e. CC ) $.
+    trisplitptred.3 $e |- ( ph -> C e. CC ) $.
+    trisplitptred.4 $e |- ( ph -> ( Re ` A ) < ( Re ` B ) ) $.
+    trisplitptred.5 $e |- ( ph -> ( Re ` B ) < ( Re ` C ) ) $.
+    trisplitptred.6 $e |- ( ph -> P = ( ( ( ( ( Re ` C ) - ( Re ` B ) ) /
+                                  ( ( Re ` C ) - ( Re ` A ) ) ) x. A ) +
+                                  ( ( ( ( Re ` B ) - ( Re ` A ) ) /
+                                  ( ( Re ` C ) - ( Re ` A ) ) ) x. C ) ) ) $.
+    $( The split point has the same real part as the intermediate vertex.
+       (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    trisplitptred $p |- ( ph -> ( Re ` P ) = ( Re ` B ) ) $=
+      ( cre cfv cmin co cmul cdiv caddc mulcld eqtrd recld resubcld clt wbr cc0
+      fveq2d lttrd posdifd mpbid gt0ne0d redivcld readdd remul2d oveq12d subcld
+      div23d eqcomd divdird subdird mulcomd oveq2d addcomd npcand oveq1d subdid
+      recnd addsubassd divcan4d ) AELMZCLMZDLMZBLMZNOZPOZVMQOZVJAVIVKVJNOZVLPOZ
+      VJVLNOZVKPOZROZVMQOZVOAVIVQVMQOZVSVMQOZROZWAAVIVPVMQOZVLPOZVRVMQOZVKPOZRO
+      ZWDAVIWEBPOZLMZWGDPOZLMZROZWIAVIWJWLROZLMWNAEWOLKUFAWJWLAWEBAWEAVPVMAVKVJ
+      ADHUAZACGUAZUBAVKVLWPABFUAZUBZAVMAVLVKUCUDUEVMUCUDAVLVJVKWRWQWPIJUGAVLVKW
+      RWPUHUIUJZUKZVFFSAWGDAWGAVRVMAVJVLWQWRUBWSWTUKZVFHSULTAWKWFWMWHRAWEBXAFUM
+      AWGDXBHUMUNTAWFWBWHWCRAWBWFAVPVLVMAVKVJAVKWPVFZAVJWQVFZUOZAVLWRVFZAVKVLXC
+      XFUOZWTUPUQAWCWHAVRVKVMAVJVLXDXFUOZXCXGWTUPUQUNTAWAWDAVQVSVMAVPVLXEXFSAVR
+      VKXHXCSXGWTURUQTAVTVNVMQAVTVJVKPOZVJVLPOZNOZVNAVTXIVKVLPOZNOZXLROZXJNOZXK
+      AVTXMXLXJNOZROZXOAVTXPXMROXQAVQXPVSXMRAVKVJVLXCXDXFUSAVSXIVLVKPOZNOXMAVJV
+      LVKXDXFXCUSAXRXLXINAVLVKXFXCUTVATUNAXPXMAXLXJAVKVLXCXFSZAVJVLXDXFSZUOAXIX
+      LAVJVKXDXCSZXSUOZVBTAXOXQAXMXLXJYBXSXTVGUQTAXNXIXJNAXIXLYAXSVCVDTAVNXKAVJ
+      VKVLXDXCXFVEUQTVDTAVJVMXDXGWTVHT $.
+  $}
+
+  ${
+    trisplitsslld.1 $e |- ( ph -> A e. CC ) $.
+    trisplitsslld.2 $e |- ( ph -> B e. CC ) $.
+    trisplitsslld.3 $e |- ( ph -> C e. CC ) $.
+    trisplitsslld.4 $e |- ( ph -> ( Re ` A ) < ( Re ` B ) ) $.
+    trisplitsslld.5 $e |- ( ph -> ( Re ` B ) < ( Re ` C ) ) $.
+    trisplitsslld.6 $e |- ( ph -> P = ( ( ( ( ( Re ` C ) - ( Re ` B ) ) /
+                                  ( ( Re ` C ) - ( Re ` A ) ) ) x. A ) +
+                                  ( ( ( ( Re ` B ) - ( Re ` A ) ) /
+                                  ( ( Re ` C ) - ( Re ` A ) ) ) x. C ) ) ) $.
+    $( The left sub-triangle is contained in the parent triangle.  (Contributed
+       by Jon Pennant, 29-Oct-2026.) $)
+    trisplitsslld $p |- ( ph -> ( tri ` <. A , <. B , P >. >. ) C_
+                                    ( tri ` <. A , <. B , C >. >. ) ) $=
+      ( c1 cmin co cdiv caddc cc0 cle wbr mpbid trivtx1d trivtx2d cop ctri wcel
+      cfv cre cmul w3a cicc recld resubcld lttrd posdifd gt0ne0d redivcld elrpd
+      cr clt 0red ltled divge0d lesub1d lediv1d recnd dividd breq2d 3jca sylibr
+      elicc01 tri13d eqcomd oveq1d divsubdird subsub2d addsubassd npcand eqtr3d
+      eqtrd eleq1d mpbird trissd ) ABCDBCEFGHABCDFGHUAABCDFGHUBAEBCDUCUCUDUFZUE
+      LCUGUFZBUGUFZMNZDUGUFZWEMNZONZMNZBUHNZWIDUHNZPNZWCUEABCDWIFGHAWIURUEZQWIR
+      SZWILRSZUIWIQLUJNUEAWNWOWPAWFWHAWDWEACGUKZABFUKZULZAWGWEADHUKZWRULZAWHAWE
+      WGUSSQWHUSSAWEWDWGWRWQWTIJUMAWEWGWRWTUNTZUOZUPAWFWHWSAWHXAXBUQZAQWFAUTWSA
+      WEWDUSSQWFUSSIAWEWDWRWQUNTVAVBAWIWHWHONZRSZWPAWFWHRSZXFAWDWGRSXGAWDWGWQWT
+      JVAAWDWGWEWQWTWRVCTAWFWHWHWSXAXDVDTAXELWIRAWHAWHXAVEZXCVFZVGTVHWIVJVIVKAE
+      WMWCAEWGWDMNZWHONZBUHNZWLPNWMKAXLWKWLPAXKWJBUHAWJXKAWJWHWFMNZWHONZXKAWJXE
+      WIMNZXNALXEWIMAXELXIVLVMAXNXOAWHWFWHXHAWFWSVEXHXCVNVLVSAXMXJWHOAXMWHWEWDM
+      NPNZXJAWHWDWEXHAWDWQVEZAWEWRVEZVOAWHWEPNZWDMNXPXJAWHWEWDXHXRXQVPAXSWGWDMA
+      WGWEAWGWTVEXRVQVMVRVSVMVSVLVMVMVSVTWAWB $.
+  $}
+
+  ${
+    trisplitssrd.1 $e |- ( ph -> A e. CC ) $.
+    trisplitssrd.2 $e |- ( ph -> B e. CC ) $.
+    trisplitssrd.3 $e |- ( ph -> C e. CC ) $.
+    trisplitssrd.4 $e |- ( ph -> ( Re ` A ) < ( Re ` B ) ) $.
+    trisplitssrd.5 $e |- ( ph -> ( Re ` B ) < ( Re ` C ) ) $.
+    trisplitssrd.6 $e |- ( ph -> P = ( ( ( ( ( Re ` C ) - ( Re ` B ) ) /
+                                 ( ( Re ` C ) - ( Re ` A ) ) ) x. A ) +
+                                 ( ( ( ( Re ` B ) - ( Re ` A ) ) /
+                                 ( ( Re ` C ) - ( Re ` A ) ) ) x. C ) ) ) $.
+    $( The right sub-triangle is contained in the parent triangle.
+       (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    trisplitssrd $p |- ( ph -> ( tri ` <. B , <. P , C >. >. ) C_
+                                    ( tri ` <. A , <. B , C >. >. ) ) $=
+      ( trivtx2d cop ctri trisplitsslld trisplitptcld trivtx3d sseldd trissd
+      cfv ) ABCDCEDFGHABCDFGHLABCEMMNTBCDMMNTEABCDEFGHIJKOABCEFGABCDEFGHIJKPQRA
+      BCDFGHQS $.
+  $}
+
+  ${
+    $d A d e f u v w $.  $d B d e f u v w $.  $d C d e f u v w $.
+    $d P d e f u v w $.  $d Z d e f u v w $.  $d d e f ph u v w $.
+    eltrisplitld.1 $e |- ( ph -> A e. CC ) $.
+    eltrisplitld.2 $e |- ( ph -> B e. CC ) $.
+    eltrisplitld.3 $e |- ( ph -> C e. CC ) $.
+    eltrisplitld.4 $e |- ( ph -> ( Re ` A ) < ( Re ` B ) ) $.
+    eltrisplitld.5 $e |- ( ph -> ( Re ` B ) < ( Re ` C ) ) $.
+    eltrisplitld.6 $e |- ( ph -> P = ( ( ( ( ( Re ` C ) - ( Re ` B ) ) /
+                                 ( ( Re ` C ) - ( Re ` A ) ) ) x. A ) +
+                                 ( ( ( ( Re ` B ) - ( Re ` A ) ) /
+                                 ( ( Re ` C ) - ( Re ` A ) ) ) x. C ) ) ) $.
+    eltrisplitld.7 $e |- ( ph -> Z e. CC ) $.
+    $( Left coordinate transfer: any point in the triangle with real part at
+       most that of the intermediate vertex belongs to the left sub-triangle.
+       (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    eltrisplitld $p |- ( ph -> ( ( Z e. ( tri ` <. A , <. B , C >. >. ) /\
+                                 ( Re ` Z ) <_ ( Re ` B ) ) ->
+                                   Z e. ( tri ` <. A , <. B , P >. >. ) ) ) $=
+      ( wcel cle wbr caddc co c1 syl vu vv vw vd ve vf cop ctri cfv cre cv wceq
+      cmul wa cc0 cicc wrex wi eltrid biimpd cmin cdiv id oveq1d eqeq1d anbi12d
+      eqeq2d oveq2d cr simpld unitssre simpl simprd sselid recld resubcld recnd
+      w3a lttrd posdifd mpbid gt0ne0d dividd eqcomd divsubdird eqtrd addsubassd
+      clt subsub2d npcand eqtr3d redivcld eqeltrd divgt0d remulcld 1re a1i 0red
+      elrpd 0lt1 ltled divge0d readdcld simpr tribaryred breq1d mullidd adddird
+      cc breq2d add32d leadd1d mpbird lesub1dd pncan2d addsubd lemul1ad mulassd
+      pncand subdid wne divrec2d mulcomd divcan7d recidd mulridd subge0d bicomd
+      0re elicc2i sylib simp3d simp2d mul02d addridd wb 3jca sylibr rexlimdva
+      ex leadd2dd letrd lesubadd syl3anc crp le2addd 0cnd addlidd trisplitptcld
+      leadd1dd divcld barysplitalgd 3rspcedvdw expr expdimp rexlimdv syld impd
+      jca ) AFBCDUGUGUHUINZFUJUIZCUJUIZOPZFBCEUGUGUHUINZAUUTUAUKZUBUKZQRZUCUKZQ
+      RZSULZFUVEBUMRUVFCUMRZQRUVHDUMRQRZULZUNZUCUOSUPRZUQZUBUVOUQZUAUVOUQZUVCUV
+      DURZAUUTUVRAUCUBUABCDFGHIMUSUTAUVQUVSUAUVOAUVEUVONZUNZUVPUVSUBUVOUWAUVFUV
+      ONZUNUVNUVSUCUVOUWAUWBUVHUVONZUVNUVSURZAUVTUWBUWCUNZUWDAUVTUWEUNZUNZUVNUV
+      SUWGUVNUNZUVCUVDUWHUVCUNZUDUKZUEUKZQRZUFUKZQRZSULZFUWJBUMRZUWKCUMRZQRZUWM
+      EUMRZQRZULZUNZUFUVOUQUEUVOUQUDUVOUQZUVDUWIUXBUVESUVBBUJUIZVARZDUJUIZUXDVA
+      RZVBRZVARZUXHVBRZUVHUMRZVARZUWKQRZUWMQRZSULZFUXLBUMRZUWQQRZUWSQRZULZUNUXL
+      UVFQRZUWMQRZSULZFUXPUVKQRZUWSQRZULZUNUXTUVHUXHVBRZQRZSULZFUYCUYFEUMRZQRZU
+      LZUNUDUEUFUXLUVFUYFUVOUVOUVOUWJUXLULZUWOUXOUXAUXSUYLUWNUXNSUYLUWLUXMUWMQU
+      YLUWJUXLUWKQUYLVCZVDVDVEUYLUWTUXRFUYLUWRUXQUWSQUYLUWPUXPUWQQUYLUWJUXLBUMU
+      YMVDVDVDVGVFUWKUVFULZUXOUYBUXSUYEUYNUXNUYASUYNUXMUXTUWMQUYNUWKUVFUXLQUYNV
+      CZVHVDVEUYNUXRUYDFUYNUXQUYCUWSQUYNUWQUVKUXPQUYNUWKUVFCUMUYOVDVHVDVGVFUWMU
+      YFULZUYBUYHUYEUYKUYPUYAUYGSUYPUWMUYFUXTQUYPVCZVHVEUYPUYDUYJFUYPUWSUYIUYCQ
+      UYPUWMUYFEUMUYQVDVHVGVFUWIUXLVINZUOUXLOPZUXLSOPZVRUXLUVONUWIUYRUYSUYTUWIU
+      VEUXKUWIUWHUVEVINZUWIUWHUVCUWIVCZVJZUWHUVOVIUVEVKUWHUVTUWEUWHAUWFUWGUVNVL
+      ZVMZVJZVNZTZUWIUXJUVHUWIAUXJVINUWIUWHAVUCUWHAUWFVUDVJZTZAUXIUXHAUXIUXFUVB
+      VARZUXGVBRZVIAUXIUXGUXEVARZUXGVBRZVULAUXIUXGUXGVBRZUXHVARZVUNASVUOUXHVAAV
+      UOSAUXGAUXGAUXFUXDADIVOZABGVOZVPZVQZAUXGAUXDUXFWHPUOUXGWHPAUXDUVBUXFVURAC
+      HVOZVUQJKVSAUXDUXFVURVUQVTWAZWBZWCWDVDAVUNVUPAUXGUXEUXGVUTAUXEAUVBUXDVVAV
+      URVPZVQZVUTVVCWEWDWFAVUMVUKUXGVBAVUMUXGUXDUVBVARQRZVUKAUXGUVBUXDVUTAUVBVV
+      AVQZAUXDVURVQZWIAUXGUXDQRZUVBVARVVFVUKAUXGUXDUVBVUTVVHVVGWGAVVIUXFUVBVAAU
+      XFUXDAUXFVUQVQZVVHWJVDWKWFVDWFZAVUKUXGAUXFUVBVUQVVAVPZVUSVVCWLWMZAUXEUXGV
+      VDVUSVVCWLZAUXHAUXEUXGVVDVUSAUXDUVBWHPUOUXEWHPJAUXDUVBVURVVAVTWAZVVBWNZWB
+      ZWLZTZUWIUWHUVHVINZVUCUWHUVOVIUVHVKUWHUWBUWCUWHUVTUWEVUEVMZVMZVNZTZWOZVPZ
+      UWIUXKUVEOPZUYSUWIUXKUVEUXEUMRZSUXEVBRZUMRZOPZVWGUWIUVHVUKUMRZVWIUMRZVWJO
+      PVWKUWIVWLVWHVWIUWIUVHVUKVWDUWIAVUKVINVUJVVLTWOUWIUVEUXEVUHUWIAUXEVINVUJV
+      VDTWOUWIAVWIVINVUJASUXESVINZAWPWQZVVDAUXEVVOWBZWLZTUWIAUOVWIOPVUJASUXEVWO
+      AUXEVVDVVOWSAUOSAWRZVWOUOSWHPAWTWQXAXBTUWIVWLUVEUVBUMRZUVEUXDUMRZVARZOPZV
+      WLVWHOPUWIUVHUXFUMRZUVHUVBUMRZVARZVXAOPZVXBUWIVXEVXAVXDQRZVXDVARZOPVXFUWI
+      VXCVXGVXDUWIUWHVXCVINVUCUWHUVHUXFVWCUWHAUXFVINVUIVUQTWOTZUWIVXAVXDUWIVWSV
+      WTUWIUWHVWSVINVUCUWHUVEUVBVUGUWHAUVBVINVUIVVATZWOTZUWIUWHVWTVINVUCUWHUVEU
+      XDVUGUWHAUXDVINVUIVURTWOTZVPZUWIUWHVXDVINVUCUWHUVHUVBVWCVXJWOTZXCVXNUWIVX
+      CVWSVXDQRZVWTVARZOPZVXCVXGOPUWIVWTVXCQRZVWTVARZVXPOPVXQUWIVXRVXOVWTUWIVWT
+      VXCVXLVXIXCZUWIVWSVXDVXKVXNXCZVXLUWIVXRVXOOPVXRUVFUVBUMRZQRZVXOVYBQRZOPZU
+      WIVYCVWSVYBQRZVXDQRZOPZVYEUWIVWTVYBQRVXCQRZVYGOPZVYHUWIVYIUVBOPZVYJUWIUVC
+      VYKUWIUWHUVCVUBVMUWIUVAVYIUVBOUWIUWHUVAVYIULVUCUWHUCUBUABCDFUWHABXINZVUIG
+      TUWHACXINZVUIHTUWHADXINZVUIITVUFUWHUWBUWCVWAVJZVWBUWHUVJUVMUWGUVNXDZVJZUW
+      HUVJUVMVYPVMZXETXFWAUWIUVBVYGVYIOUWIUWHUVBVYGULVUCUWHUVBUVIUVBUMRZVYGUWHU
+      VBSUVBUMRZVYSUWHVYTUVBUWHAVYTUVBULVUIAUVBVVGXGTWDUWHVYSVYTUWHUVISUVBUMVYQ
+      VDWDWFUWHVYSUVGUVBUMRZVXDQRVYGUWHUVGUVHUVBUWHUVGUWHUVEUVFVUGUWHUVOVIUVFVK
+      VYOVNZXCVQUWHUVHVWCVQZUWHAUVBXINZVUIVVGTZXHUWHWUAVYFVXDQUWHUVEUVFUVBUWHUV
+      EVUGVQZUWHUVFWUBVQZWUEXHVDWFWFTXJWAUWIVYIVYCVYGOUWIVWTVYBVXCUWIVWTVXLVQZU
+      WIVYBUWIUWHVYBVINVUCUWHUVFUVBWUBVXJWOTZVQZUWIVXCVXIVQZXKXFWAUWIVYGVYDVYCO
+      UWIVWSVYBVXDUWIVWSVXKVQZWUJUWIVXDVXNVQZXKXJWAUWIVXRVXOVYBVXTVYAWUIXLXMXNU
+      WIVXSVXCVXPOUWIVWTVXCWUHWUKXOXFWAUWIVXPVXGVXCOUWIVWSVXDVWTWULWUMWUHXPXJWA
+      XNUWIVXHVXAVXEOUWIVXAVXDUWIVXAVXMVQWUMXSXJWAUWIVXEVWLVXAOUWIVWLVXEUWIUVHU
+      XFUVBUWIUWHUVHXINVUCWUCTZUWIAUXFXINVUJVVJTUWIAWUDVUJVVGTZXTWDXFWAUWIVXAVW
+      HVWLOUWIVWHVXAUWIUVEUVBUXDUWIUWHUVEXINVUCWUFTZWUOUWIAUXDXINVUJVVHTXTWDXJW
+      AXQUWIVWMUXKVWJOUWIVWMUVHUXJUMRZUXKUWIVWMUVHVUKVWIUMRZUMRWUQUWIUVHVUKVWIW
+      UNUWIAVUKXINVUJAVUKVVLVQZTZUWIAVWIXINVUJAVWIVWQVQTZXRUWIWURUXJUVHUMUWIWUR
+      VUKUXEVBRZUXJUWIWVBWURUWIWVBVWIVUKUMRWURUWIVUKUXEWUTUWIAUXEXINVUJVVETZUWI
+      AUXEUOYAVUJVWPTZYBUWIVWIVUKWVAWUTYCWFWDUWIAWVBUXJULVUJAUXJWVBAUXJVULUXHVB
+      RZWVBAWVEUXJAVULUXIUXHVBAUXIVULVVKWDZVDWDAVUKUXEUXGWUSVVEVUTVWPVVCYDWFWDT
+      WFVHWFUWIUVHUXJWUNUWIAUXJXINVUJAUXJVVRVQTZYCZWFXFWAUWIVWJUVEUXKOUWIVWJUVE
+      SUMRZUVEUWIVWJUVEUXEVWIUMRZUMRWVIUWIUVEUXEVWIWUPWVCWVAXRUWIWVJSUVEUMUWIUX
+      EWVCWVDYEVHWFUWIUVEWUPYFWFXJWAUWIUYSVWGUWIUVEUXKVUHVWEYGYHWAZUWIUYTUVESUX
+      KQRZOPZUWIUVESWVLVUHUWIAVWNVUJVWOTZUWISUXKWVNVWEXCUWIVUAUOUVEOPZUVESOPZUW
+      IUVTVUAWVOWVPVRUWIUWHUVTVUCVUFTUOSUVEYIWPYJYKYLUWISUOQRZWVLOPSWVLOPUWIUOU
+      XKSUWIAUOVINVUJVWRTZVWEWVNUWIUOWUQOPZUOUXKOPUWIUOUXJUMRZWUQOPWVSUWIUOUVHU
+      XJWVRVWDVVSUWIAUOUXJOPVUJAUOUXJVWRVVRAUXIUXHVVMVVNAUOUXIWHPUOVULWHPAVUKUX
+      GVVLVUSAUVBUXFWHPUOVUKWHPKAUVBUXFVVAVUQVTWAVVBWNAUXIVULUOWHVVKXJXMVVPWNXA
+      TUWIVVTUOUVHOPZUVHSOPZUWIUWCVVTWWAWWBVRUWIUWHUWCVUCVWBTUOSUVHYIWPYJYKYMZX
+      QUWIWVTUOWUQOUWIUXJWVGYNXFWAUWIWUQUXKUOOWVHXJWAUUAUWIWVQSWVLOUWISUWIASXIN
+      VUJASVWOVQTYOXFWAUUBUWIVUAUXKVINVWNUYTWVMYPVUHVWEWVNUVEUXKSUUCUUDXMYQUOSU
+      XLYIWPYJYRUWIUWHUWBVUCVYOTZUWIUYFVINZUOUYFOPZUYFSOPZVRUYFUVONUWIWWEWWFWWG
+      UWIUVHUXHVWDUWIAUXHVINVUJVVNTUWIAUXHUOYAVUJVVQTZWLZUWIUVHUXHVWDUWIAUXHUUE
+      NVUJAUXHVVNVVPWSTWWCXBUWIUYFUYGOPZWWGUWIUOUYFQRZUYGOPWWJUWIUOUXTUYFWVRUWI
+      UXLUVFVWFUWIUWHUVFVINZVUCWUBTZXCWWIUWIUOUOQRZUXTOPUOUXTOPUWIUOUOUXLUVFWVR
+      WVRVWFWWMWVKUWIWWLUOUVFOPZUVFSOPZUWIUWBWWLWWOWWPVRWWDUOSUVFYIWPYJYKYMUUFU
+      WIWWNUOUXTOUWIUOUWIUUGYOXFWAUUJUWIWWKUYFUYGOUWIUYFUWIUYFWWIVQUUHXFWAUWIUY
+      GSUYFOUWIUYGUVISUWIUYGUVIULZUYJUVLULZUWIBCDEUXHUVEUVFUVHUWIAVYLVUJGTUWIAV
+      YMVUJHTUWIAVYNVUJITUWIAEXINVUJABCDEGHIJKLUUIZTWUPUWIUWHUVFXINVUCWUGTWUNUW
+      IAUXHXINVUJAUXEUXGVVEVUTVVCUUKTWWHUWIAEUXIBUMRZUXHDUMRZQRZULVUJAEVULBUMRZ
+      WXAQRWXBLAWXCWWTWXAQAVULUXIBUMWVFVDVDWFTUULZVJUWIUWHUVJVUCVYQTWFZXJWAYQUO
+      SUYFYIWPYJYRUWIUYHUYKWXEUWIUYJFUWIUYJUVLFUWIWWQWWRWXDVMUWIFUVLUWIUWHUVMVU
+      CVYRTWDWFWDUUSUUMUWIUVDUXCUWIAUVDUXCYPVUJAUFUEUDBCEFGHWWSMUSTYHWAYTYTUUNU
+      UOUUPYSYSUUQUUR $.
+  $}
+
+  ${
+    $d A d e f u v w $.  $d B d e f u v w $.  $d C d e f u v w $.
+    $d P d e f u v w $.  $d Z d e f u v w $.  $d d e f ph u v w $.
+    eltrisplitrd.1 $e |- ( ph -> A e. CC ) $.
+    eltrisplitrd.2 $e |- ( ph -> B e. CC ) $.
+    eltrisplitrd.3 $e |- ( ph -> C e. CC ) $.
+    eltrisplitrd.4 $e |- ( ph -> ( Re ` A ) < ( Re ` B ) ) $.
+    eltrisplitrd.5 $e |- ( ph -> ( Re ` B ) < ( Re ` C ) ) $.
+    eltrisplitrd.6 $e |- ( ph -> P = ( ( ( ( ( Re ` C ) - ( Re ` B ) ) /
+                                 ( ( Re ` C ) - ( Re ` A ) ) ) x. A ) +
+                                 ( ( ( ( Re ` B ) - ( Re ` A ) ) /
+                                 ( ( Re ` C ) - ( Re ` A ) ) ) x. C ) ) ) $.
+    eltrisplitrd.7 $e |- ( ph -> Z e. CC ) $.
+    $( Right coordinate transfer: any point in the triangle with real part at
+       least that of the intermediate vertex belongs to the right sub-triangle.
+       (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    eltrisplitrd $p |- ( ph -> ( ( Z e. ( tri ` <. A , <. B , C >. >. ) /\
+                               ( Re ` B ) <_ ( Re ` Z ) ) ->
+                                 Z e. ( tri ` <. B , <. P , C >. >. ) ) ) $=
+      ( wcel cle wbr caddc co c1 syl vu vv vw vd ve vf cop ctri cfv cre cv wceq
+      cmul wa cc0 cicc wrex wi eltrid biimpd cmin cdiv id oveq1d eqeq1d anbi12d
+      eqeq2d oveq2d simpld simpl simprd cr unitssre sselid recld resubcld recnd
+      w3a lttrd posdifd mpbid gt0ne0d dividd eqcomd divsubdird eqtrd addsubassd
+      clt subsub2d npcand eqtr3d redivcld eqeltrd wne divgt0d breq2d mpbird crp
+      elrpd 0re 1re elicc2i sylib simp2d divge0d readdcld remulcld 0red addlidd
+      leadd1dd breq1d a1i 0lt1 ltled cc simpr tribaryred mullidd adddird add32d
+      leadd1d lesub1dd pncan2d addsubd pncand lemul1ad mulassd mulridd leadd2dd
+      subdid recidd mulcomd bicomd addridd letrd 3jca sylibr wb ex rexlimdva
+      divrec2d divcan7d trisplitptcld divcld barysplitralgd simp3d lesubadd jca
+      subge0d mul02d syl3anc 3rspcedvdw expr expdimp rexlimdv syld impd ) AFBCD
+      UGUGUHUINZCUJUIZFUJUIZOPZFCEDUGUGUHUINZAUURUAUKZUBUKZQRZUCUKZQRZSULZFUVCB
+      UMRUVDCUMRZQRUVFDUMRQRZULZUNZUCUOSUPRZUQZUBUVMUQZUAUVMUQZUVAUVBURZAUURUVP
+      AUCUBUABCDFGHIMUSUTAUVOUVQUAUVMAUVCUVMNZUNZUVNUVQUBUVMUVSUVDUVMNZUNUVLUVQ
+      UCUVMUVSUVTUVFUVMNZUVLUVQURZAUVRUVTUWAUNZUWBAUVRUWCUNZUNZUVLUVQUWEUVLUNZU
+      VAUVBUWFUVAUNZUDUKZUEUKZQRZUFUKZQRZSULZFUWHCUMRZUWIEUMRZQRZUWKDUMRZQRZULZ
+      UNZUFUVMUQUEUVMUQUDUVMUQZUVBUWGUWTUVDUWIQRZUWKQRZSULZFUVIUWOQRZUWQQRZULZU
+      NUVDUVCSUUSBUJUIZVARZDUJUIZUXHVARZVBRZVARZVBRZQRZUWKQRZSULZFUVIUXNEUMRZQR
+      ZUWQQRZULZUNUXOUVFUXLUXMVBRZUVCUMRZVARZQRZSULZFUXSUYDDUMRZQRZULZUNUDUEUFU
+      VDUXNUYDUVMUVMUVMUWHUVDULZUWMUXDUWSUXGUYJUWLUXCSUYJUWJUXBUWKQUYJUWHUVDUWI
+      QUYJVCZVDVDVEUYJUWRUXFFUYJUWPUXEUWQQUYJUWNUVIUWOQUYJUWHUVDCUMUYKVDVDVDVGV
+      FUWIUXNULZUXDUXQUXGUYAUYLUXCUXPSUYLUXBUXOUWKQUYLUWIUXNUVDQUYLVCZVHVDVEUYL
+      UXFUXTFUYLUXEUXSUWQQUYLUWOUXRUVIQUYLUWIUXNEUMUYMVDVHVDVGVFUWKUYDULZUXQUYF
+      UYAUYIUYNUXPUYESUYNUWKUYDUXOQUYNVCZVHVEUYNUXTUYHFUYNUWQUYGUXSQUYNUWKUYDDU
+      MUYOVDVHVGVFUWGUWFUVTUWGUWFUVAUWGVCZVIZUWFUVTUWAUWFUVRUWCUWFAUWDUWEUVLVJZ
+      VKZVKZVIZTZUWGUXNVLNZUOUXNOPZUXNSOPZVRUXNUVMNUWGVUCVUDVUEUWGUVCUXMUWGUWFU
+      VCVLNZUYQUWFUVMVLUVCVMUWFUVRUWCUYSVIZVNZTZUWGAUXMVLNUWGUWFAUYQUWFAUWDUYRV
+      IZTZAUXMUXJUUSVARZUXKVBRZVLAUXMUXKUXIVARZUXKVBRZVUMAUXMUXKUXKVBRZUXLVARZV
+      UOASVUPUXLVAAVUPSAUXKAUXKAUXJUXHADIVOZABGVOZVPZVQZAUXKAUXHUXJWHPUOUXKWHPA
+      UXHUUSUXJVUSACHVOZVURJKVSAUXHUXJVUSVURVTWAZWBZWCWDVDAVUOVUQAUXKUXIUXKVVAA
+      UXIAUUSUXHVVBVUSVPZVQZVVAVVDWEWDWFAVUNVULUXKVBAVUNUXKUXHUUSVARQRZVULAUXKU
+      USUXHVVAAUUSVVBVQZAUXHVUSVQZWIAUXKUXHQRZUUSVARVVGVULAUXKUXHUUSVVAVVIVVHWG
+      AVVJUXJUUSVAAUXJUXHAUXJVURVQZVVIWJVDWKWFVDWFZAVULUXKAUXJUUSVURVVBVPZVUTVV
+      DWLWMZTUWGAUXMUOWNVUKAUXMAUOUXMWHPUOVUMWHPAVULUXKVVMVUTAUUSUXJWHPUOVULWHP
+      KAUUSUXJVVBVURVTWAZVVCWOAUXMVUMUOWHVVLWPWQZWBZTZWLZUWGUVCUXMVUIUWGAUXMWRN
+      VUKAUXMVVNVVPWSTUWGVUFUOUVCOPZUVCSOPZUWGUVRVUFVVTVWAVRUWGUWFUVRUYQVUGTUOS
+      UVCWTXAXBXCXDZXEUWGUXNUYEOPVUEUWGUXNUXOUYEVVSUWGUVDUXNUWGUWFUVDVLNZUYQUWF
+      UVMVLUVDVMVUAVNZTZVVSXFZUWGUXOUYDVWFUWGUVFUYCUWGUWFUVFVLNZUYQUWFUVMVLUVFV
+      MUWFUVTUWAUYTVKZVNZTZUWGUYBUVCUWGAUYBVLNVUKAUXLUXMAUXIUXKVVEVUTVVDWLZVVNV
+      VQWLZTZVUIXGZVPZXFUWGUOUXNQRZUXOOPUXNUXOOPUWGUOUVDUXNUWGAUOVLNVUKAXHZTZVW
+      EVVSUWGVWCUOUVDOPZUVDSOPZUWGUVTVWCVWSVWTVRVUBUOSUVDWTXAXBXCXDXJUWGVWPUXNU
+      XOOUWGUXNUWGUXNVVSVQXIXKWAUWGUXOUOQRZUYEOPUXOUYEOPUWGUOUYDUXOVWRVWOVWFUWG
+      UYCUVFOPZUOUYDOPZUWGUVCUXIUMRZSVULVBRZUMRZUVFOPZVXBUWGVXFUVFVULUMRZVXEUMR
+      ZOPVXGUWGVXDVXHVXEUWGUVCUXIVUIUWGAUXIVLNVUKVVETXGUWGUVFVULVWJUWGAVULVLNVU
+      KVVMTXGUWGAVXEVLNVUKASVULSVLNZAXAXLZVVMAVULVVOWBZWLZTUWGAUOVXEOPVUKASVULV
+      XKAVULVVMVVOWSAUOSVWQVXKUOSWHPAXMXLXNXETUWGVXDUVFUXJUMRZUVFUUSUMRZVARZOPZ
+      VXDVXHOPUWGUVCUUSUMRZUVCUXHUMRZVARZVXPOPZVXQUWGVXTVXOQRZVXOVARZVXPOPVYAUW
+      GVYBVXNVXOUWGVXTVXOUWGVXRVXSUWGUWFVXRVLNUYQUWFUVCUUSVUHUWFAUUSVLNVUJVVBTZ
+      XGTZUWGUWFVXSVLNUYQUWFUVCUXHVUHUWFAUXHVLNVUJVUSTXGTZVPZUWGUWFVXOVLNUYQUWF
+      UVFUUSVWIVYDXGTZXFUWGUWFVXNVLNUYQUWFUVFUXJVWIUWFAUXJVLNVUJVURTXGTZVYHUWGV
+      XRVXOQRZVXSVARZVXNOPZVYBVXNOPUWGVYKVXSVXNQRZVXSVARZOPVYLUWGVYJVYMVXSUWGVX
+      RVXOVYEVYHXFZUWGVXSVXNVYFVYIXFZVYFUWGVYJVYMOPVYJUVDUUSUMRZQRZVYMVYQQRZOPZ
+      UWGVYRVXSVYQQRVXNQRZOPZVYTUWGVXRVYQQRZVXOQRZWUAOPZWUBUWGUUSWUAOPZWUEUWGUV
+      AWUFUWGUWFUVAUYPVKUWGUUTWUAUUSOUWGUWFUUTWUAULUYQUWFUCUBUABCDFUWFABXONZVUJ
+      GTUWFACXONZVUJHTUWFADXONZVUJITVUGVUAVWHUWFUVHUVKUWEUVLXPZVIZUWFUVHUVKWUJV
+      KZXQTWPWAUWGUUSWUDWUAOUWGUWFUUSWUDULUYQUWFUUSUVGUUSUMRZWUDUWFUUSSUUSUMRZW
+      UMUWFWUNUUSUWFAWUNUUSULVUJAUUSVVHXRTWDUWFWUMWUNUWFUVGSUUSUMWUKVDWDWFUWFWU
+      MUVEUUSUMRZVXOQRWUDUWFUVEUVFUUSUWFUVEUWFUVCUVDVUHVWDXFVQUWFUVFVWIVQZUWFAU
+      USXONZVUJVVHTZXSUWFWUOWUCVXOQUWFUVCUVDUUSUWFUVCVUHVQZUWFUVDVWDVQZWURXSVDW
+      FWFTXKWAUWGWUDVYRWUAOUWGVXRVYQVXOUWGVXRVYEVQZUWGVYQUWGUWFVYQVLNUYQUWFUVDU
+      USVWDVYDXGTZVQZUWGVXOVYHVQZXTXKWAUWGWUAVYSVYROUWGVXSVYQVXNUWGVXSVYFVQZWVC
+      UWGVXNVYIVQZXTWPWAUWGVYJVYMVYQVYOVYPWVBYAWQYBUWGVYNVXNVYKOUWGVXSVXNWVEWVF
+      YCWPWAUWGVYKVYBVXNOUWGVXRVXOVXSWVAWVDWVEYDXKWAYBUWGVYCVXTVXPOUWGVXTVXOUWG
+      VXTVYGVQWVDYEXKWAUWGVXTVXDVXPOUWGVXDVXTUWGUVCUUSUXHUWGUWFUVCXONUYQWUSTZUW
+      GAWUQVUKVVHTZUWGAUXHXONVUKVVITYJWDXKWAUWGVXPVXHVXDOUWGVXHVXPUWGUVFUXJUUSU
+      WGUWFUVFXONUYQWUPTZUWGAUXJXONVUKVVKTWVHYJWDWPWAYFUWGVXIUVFVXFOUWGVXIUVFSU
+      MRZUVFUWGVXIUVFVULVXEUMRZUMRWVJUWGUVFVULVXEWVIUWGAVULXONVUKAVULVVMVQZTZUW
+      GAVXEXONVUKAVXEVXMVQTZYGUWGWVKSUVFUMUWGVULWVMUWGAVULUOWNVUKVXLTZYKVHWFUWG
+      UVFWVIYHWFWPWAUWGVXFUYCUVFOUWGVXFUVCUYBUMRZUYCUWGVXFUVCUXIVXEUMRZUMRWVPUW
+      GUVCUXIVXEWVGUWGAUXIXONVUKVVFTZWVNYGUWGWVQUYBUVCUMUWGWVQUXIVULVBRZUYBUWGW
+      VSWVQUWGWVSVXEUXIUMRWVQUWGUXIVULWVRWVMWVOUUAUWGVXEUXIWVNWVRYLWFWDUWGAWVSU
+      YBULVUKAUYBWVSAUYBUXLVUMVBRZWVSAWVTUYBAVUMUXMUXLVBAUXMVUMVVLWDZVHWDAUXIVU
+      LUXKVVFWVLVVAVXLVVDUUBWFWDTWFVHWFUWGUVCUYBWVGUWGAUYBXONVUKAUYBVWLVQTZYLZW
+      FXKWAUWGVXCVXBUWGUVFUYCVWJVWNUUIYMWAZYIUWGVXAUXOUYEOUWGUXOUWGUXOVWFVQYNXK
+      WAYOUWGUYESUXNOUWGUYEUVGSUWGUYEUVGULZUYHUVJULZUWGBCDEUXLUVCUVDUVFUWGAWUGV
+      UKGTUWGAWUHVUKHTUWGAWUIVUKITUWGAEXONVUKABCDEGHIJKLUUCZTWVGUWGUWFUVDXONUYQ
+      WUTTWVIUWGAUXLXONVUKAUXIUXKVVFVVAVVDUUDTVVRUWGAEUXMBUMRZUXLDUMRZQRZULVUKA
+      EVUMBUMRZWWIQRWWJLAWWKWWHWWIQAVUMUXMBUMWWAVDVDWFTUUEZVIUWGUWFUVHUYQWUKTWF
+      ZWPWAYPUOSUXNWTXAXBYQUWGUYDVLNZVXCUYDSOPZVRUYDUVMNUWGWWNVXCWWOVWOWWDUWGWW
+      OUVFSUYCQRZOPZUWGUVFSWWPVWJUWGAVXJVUKVXKTZUWGSUYCWWRVWNXFUWGVWGUOUVFOPZUV
+      FSOPZUWGUWAVWGWWSWWTVRUWGUWFUWAUYQVWHTUOSUVFWTXAXBXCUUFUWGSUOQRZWWPOPSWWP
+      OPUWGUOUYCSVWRVWNWWRUWGUOWVPOPZUOUYCOPUWGUOUYBUMRZWVPOPWXBUWGUOUVCUYBVWRV
+      UIVWMUWGAUOUYBOPVUKAUOUYBVWQVWLAUXLUXMVWKVVNAUXIUXKVVEVUTAUXHUUSWHPUOUXIW
+      HPJAUXHUUSVUSVVBVTWAVVCWOVVPWOXNTVWBYFUWGWXCUOWVPOUWGUYBWWBUUJXKWAUWGWVPU
+      YCUOOWWCWPWAYIUWGWXASWWPOUWGSUWGASXONVUKASVXKVQTYNXKWAYOUWGVWGUYCVLNVXJWW
+      OWWQYRVWJVWNWWRUVFUYCSUUGUUKWQYPUOSUYDWTXAXBYQUWGUYFUYIWWMUWGUYHFUWGUYHUV
+      JFUWGWWEWWFWWLVKUWGFUVJUWGUWFUVKUYQWULTWDWFWDUUHUULUWGUVBUXAUWGAUVBUXAYRV
+      UKAUFUEUDCEDFHWWGIMUSTYMWAYSYSUUMUUNUUOYTYTUUPUUQ $.
+  $}
+
+  ${
+    $d A z $.  $d B z $.  $d C z $.  $d P z $.  $d ph z $.
+    triunsplitd.1 $e |- ( ph -> A e. CC ) $.
+    triunsplitd.2 $e |- ( ph -> B e. CC ) $.
+    triunsplitd.3 $e |- ( ph -> C e. CC ) $.
+    triunsplitd.4 $e |- ( ph -> ( Re ` A ) < ( Re ` B ) ) $.
+    triunsplitd.5 $e |- ( ph -> ( Re ` B ) < ( Re ` C ) ) $.
+    triunsplitd.6 $e |- ( ph -> P = ( ( ( ( ( Re ` C ) - ( Re ` B ) ) /
+                                ( ( Re ` C ) - ( Re ` A ) ) ) x. A ) +
+                                ( ( ( ( Re ` B ) - ( Re ` A ) ) /
+                                ( ( Re ` C ) - ( Re ` A ) ) ) x. C ) ) ) $.
+    $( A triangle is the union of its left and right sub-triangles along the
+       vertical line through the intermediate vertex.  (Contributed by Jon
+       Pennant, 29-Oct-2026.) $)
+    triunsplitd $p |- ( ph -> ( tri ` <. A , <. B , C >. >. ) =
+                              ( ( tri ` <. A , <. B , P >. >. ) u.
+                                ( tri ` <. B , <. P , C >. >. ) ) ) $=
+      ( cop cfv wcel wa cre wbr cc syl co vz cun cv cle wo simpl trissccd simpr
+      ctri cr sseldd recld jca letric ssun1 id adantr cmin cdiv cmul caddc wceq
+      wi clt eltrisplitld sselid ex ssun2 eltrisplitrd jaod ssrdv trisplitsslld
+      mpd wss trisplitssrd unss sylib eqssd ) ABCDLLUIMZBCELLUIMZCEDLLUIMZUBZAU
+      AVSWBAUAUCZVSNZWCWBNZAWDOZWCPMZCPMZUDQZWHWGUDQZUEZWEWFWGUJNZWHUJNZOWKWFWL
+      WMWFWCWFVSRWCWFBCDWFABRNAWDUFZFSZWFACRNWNGSZWFADRNWNHSZUGAWDUHZUKZULWFCWP
+      ULUMWGWHUNSWFWIWEWJWFWIWEWFWIOZVTWBWCVTWAUOWTWDWIOZWCVTNZWTWDWIWTWFWDWFWF
+      WIWFUPZUQZWRSWFWIUHUMWTWFXAXBVCXDWFBCDEWCWOWPWQWFABPMZWHVDQWNISZWFAWHDPMZ
+      VDQWNJSZWFAEXGWHURTXGXEURTZUSTBUTTWHXEURTXIUSTDUTTVATVBWNKSZWSVESVMVFVGWF
+      WJWEWFWJOZWAWBWCWAVTVHXKWDWJOZWCWANZXKWDWJXKWFWDWFWFWJXCUQZWRSWFWJUHUMXKW
+      FXLXMVCXNWFBCDEWCWOWPWQXFXHXJWSVISVMVFVGVJVMVGVKAVTVSVNZWAVSVNZOWBVSVNAXO
+      XPABCDEFGHIJKVLABCDEFGHIJKVOUMVTWAVSVPVQVR $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Complex Area, Cartesian Embedding and Triangle Measurability
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+
+  $( Syntax declarations for complex area and embeddings. $)
+  $c c2r areac $.
+  $( Syntax for the complex-to-Cartesian embedding function.  (Contributed by
+     Jon Pennant, 29-Oct-2026.) $)
+  cc2r $a class c2r $.
+  $( Syntax for complex planar area.  (Contributed by Jon Pennant,
+     29-Oct-2026.) $)
+  careac $a class areac $.
+
+  ${
+    $( The canonical embedding from the complex numbers to Cartesian real
+       pairs.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    df-c2r $a |- c2r = ( z e. CC |-> <. ( Re ` z ) , ( Im ` z ) >. ) $.
+  $}
+
+  ${
+    $( The area of a subset of the complex plane, defined via its image under
+       the Cartesian embedding.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    df-areac $a |- areac = ( s e. ~P CC |-> ( area ` ( c2r " s ) ) ) $.
+  $}
+
+  ${
+    $d s S $.  $d ph s $.
+    areacvald.1 $e |- ( ph -> S C_ CC ) $.
+    $( Value of the complex area function.  (Contributed by Jon Pennant,
+       29-Oct-2026.) $)
+    areacvald $p |- ( ph -> ( areac ` S ) = ( area ` ( c2r " S ) ) ) $=
+      ( vs cc cpw wcel careac cfv cc2r cima carea wceq wss cnex elpw2 sylibr cv
+      imaeq2 fveq2d df-areac fvex fvmpt syl ) ABEFZGZBHIJBKZLIZMABENUFCBEOPQDBJ
+      DRZKZLIUHUEHUIBMUJUGLUIBJSTDUAUGLUBUCUD $.
+  $}
+
+  ${
+    areactrid.1 $e |- ( ph -> A e. CC ) $.
+    areactrid.2 $e |- ( ph -> B e. CC ) $.
+    areactrid.3 $e |- ( ph -> C e. CC ) $.
+    $( Value of the complex area function on a triangle.  (Contributed by Jon
+       Pennant, 29-Oct-2026.) $)
+    areactrid $p |- ( ph -> ( areac ` ( tri ` <. A , <. B , C >. >. ) ) =
+                ( area ` ( c2r " ( tri ` <. A , <. B , C >. >. ) ) ) ) $=
+      ( cop ctri cfv trissccd areacvald ) ABCDHHIJABCDEFGKL $.
+  $}
+
+  ${
+    $d T w x y z $.  $d ph w x y z $.
+    c2rimad.1 $e |- ( ph -> T C_ CC ) $.
+    $( Image of a subset of the complex numbers under the Cartesian embedding.
+       (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    c2rimad $p |- ( ph -> ( c2r " T ) =
+      { <. x , y >. | ( ( x + ( _i x. y ) ) e. T /\
+         ( x e. RR /\ y e. RR ) ) } ) $=
+      ( vz cv co caddc wcel cr wa cc2r cvv cre cfv cim cc wceq syl ci cmul cima
+      cxp wss wrel crn imassrn cop wral fvex opelxpii rgenw rnmptss ax-mp sstri
+      df-c2r relxp relss mp2 wrex opex elimampt opth rexbii bitrdi simplr oveq2
+      a1i oveq2d oveq1 sylan9eqr sselda replim eqcomd eleq1d mpbird simpr simpl
+      vex simpld recld eqeltrd simprd imcld jca exp31 rexlimdv crre crim anim2i
+      wi fveq2 eqeq2d anbi12d rspcev impbid bitrd opabbi2dv ) ABGZUACGZUBHZIHZD
+      JZWTKJZXAKJZLZLZBCMDUCZXINNUDZUEXJUFXIUFXIMUGZXJMDUHFGZOPZXLQPZUIZXJJZFRU
+      JXKXJUEXPFRXMXNNNXLOUKXLQUKULUMFRXOXJMFUQZUNUOUPNNURXIXJUSUTAWTXAUIZXIJZW
+      TXMSZXAXNSZLZFDVAZXHAXSXRXOSZFDVAYCAFRXOXRDMNXQXRNJAWTXAVBVIEVCYDYBFDWTXA
+      XMXNBVTCVTVDVEVFAYCXHAYBXHFDAXLDJZYBXHAYELZYBLZXDXGYGXDYEAYEYBVGYGXCXLDYB
+      YFXCXMUAXNUBHZIHZXLYAXTXCWTYHIHYIYAXBYHWTIXAXNUAUBVHVJWTXMYHIVKVLYFXLRJZY
+      IXLSADRXLEVMZYJXLYIXLVNVOTVLVPVQYGXEXFYGWTXMKYGXTYAYFYBVRZWAYGYFXMKJYFYBV
+      SZYFXLYKWBTWCYGXAXNKYGXTYAYLWDYGYFXNKJYMYFXLYKWETWCWFWFWGWHXHYCWLAXHXDWTX
+      COPZSZXAXCQPZSZLZLYCXGYRXDXGYOYQXGYNWTWTXAWIVOXGYPXAWTXAWJVOWFWKYBYRFXCDX
+      LXCSZXTYOYAYQYSXMYNWTXLXCOWMWNYSXNYPXAXLXCQWMWNWOWPTVIWQWRWS $.
+  $}
+
+  ${
+    c2rimassd.1 $e |- ( ph -> T C_ CC ) $.
+    $( The Cartesian image of any subset of the complex numbers is a subset of
+       real pairs.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    c2rimassd $p |- ( ph -> ( c2r " T ) C_ ( RR X. RR ) ) $=
+      ( vz cc2r cima cr cxp wss crn imassrn cv cre cfv cim cop wcel cc wral id
+      recld imcld opelxpd rgen df-c2r rnmptss ax-mp sstri a1i ) EBFZGGHZIAUJEJZ
+      UKEBKDLZMNZUMONZPZUKQZDRSULUKIUQDRUMRQZUNUOGGURUMURTZUAURUMUSUBUCUDDRUPUK
+      EDUEUFUGUHUI $.
+  $}
+
+  ${
+    $d A x y z $.  $d B x y z $.  $d C x y z $.  $d x y z $.  $d ph x y z $.
+    c2rtrid.1 $e |- ( ph -> A e. CC ) $.
+    c2rtrid.2 $e |- ( ph -> B e. CC ) $.
+    c2rtrid.3 $e |- ( ph -> C e. CC ) $.
+    $( The image of a complex triangle under the Cartesian embedding.
+       (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    c2rtrid $p |- ( ph -> ( c2r " ( tri ` <. A , <. B , C >. >. ) ) =
+      { <. x , y >. | ( ( x + ( _i x. y ) ) e.
+                        ( tri ` <. A , <. B , C >. >. ) /\
+                        ( x e. RR /\ y e. RR ) ) } ) $=
+      ( cop ctri cfv trissccd c2rimad ) ABCDEFJJKLADEFGHIMN $.
+  $}
+
+  ${
+    c2rtrissd.1 $e |- ( ph -> A e. CC ) $.
+    c2rtrissd.2 $e |- ( ph -> B e. CC ) $.
+    c2rtrissd.3 $e |- ( ph -> C e. CC ) $.
+    $( The Cartesian image of a complex triangle is a subset of real pairs.
+       (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    c2rtrissd $p |- ( ph -> ( c2r " ( tri ` <. A , <. B , C >. >. ) ) C_
+                                        ( RR X. RR ) ) $=
+      ( cop ctri cfv trissccd c2rimassd ) ABCDHHIJABCDEFGKL $.
+  $}
+
+
+  ${
+    $d A x y $.  $d B x y $.  $d C x y $.  $d x y $.  $d ph x y $.
+    trislice0d.1 $e |- ( ph -> A e. CC ) $.
+    trislice0d.2 $e |- ( ph -> B e. CC ) $.
+    trislice0d.3 $e |- ( ph -> C e. CC ) $.
+    trislice0d.4 $e |- ( ph -> ( Re ` A ) <_ ( Re ` B ) ) $.
+    trislice0d.5 $e |- ( ph -> ( Re ` B ) <_ ( Re ` C ) ) $.
+    $( Any vertical slice of a real-sorted triangle outside its horizontal span
+       is empty.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    trislice0d $p |- ( ( ph /\ -. x e. ( ( Re ` A ) [,] ( Re ` C ) ) ) ->
+               ( ( c2r " ( tri ` <. A , <. B , C >. >. ) ) " { x } ) = (/) ) $=
+      ( vy cre cfv co wcel wa cop c0 syl6 imp cv cicc wn cc2r ctri cima csn wss
+      wceq ci cmul caddc cr vex elimasn a1i copab c2rtrid eleq2d opabidw biimpd
+      wb bitrd simpl trirebndd syld simpr eleq1d mpd ex con3d pm2.21d ssrdv ss0
+      crre syl ) ABUAZCLMELMUBNZOZUCZPZUDCDEQQUEMZUFZVQUGUFZRUHWDRUIWAKWDRWAKUA
+      ZWDOZWEROAVTWFUCAWFVSAWFVSAWFPZVQUJWEUKNULNZLMZVROZVSAWFWJAWFWHWBOZWJAWFW
+      KVQUMOWEUMOPZPZWKAWFWMAWFVQWEQZWCOZWMWFWOVBAWCVQWEBUNKUNUOUPAWOWNWMBKUQZO
+      ZWMAWCWPWNABKCDEFGHURUSWQWMVBAWMBKUTUPVCVCVAZWKWLVDSACDEWHFGHIJVEVFTWGWJV
+      SWGWIVQVRAWFWIVQUIZAWFWLWSAWFWMWLWRWKWLVGSVQWEVOSTVHVAVIVJVKTVLVMWDVNVP
+      $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.  $d C x y $.  $d x y $.  $d ph x y $.
+    trivol0d.1 $e |- ( ph -> A e. CC ) $.
+    trivol0d.2 $e |- ( ph -> B e. CC ) $.
+    trivol0d.3 $e |- ( ph -> C e. CC ) $.
+    trivol0d.4 $e |- ( ph -> ( Re ` A ) <_ ( Re ` B ) ) $.
+    trivol0d.5 $e |- ( ph -> ( Re ` B ) <_ ( Re ` C ) ) $.
+    $( The volume of any vertical slice outside a real-sorted triangle's
+       horizontal span is zero.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    trivol0d $p |- ( ( ph /\ -. x e. ( ( Re ` A ) [,] ( Re ` C ) ) ) ->
+      ( vol ` ( ( c2r " ( tri ` <. A , <. B , C >. >. ) ) " { x } ) ) = 0 ) $=
+      ( vy cre cfv co wcel wa cop cvol c0 wceq cv cicc wn cc2r ctri csn cc0 wss
+      cima ci cmul caddc cr vex elimasn a1i copab c2rtrid eleq2d opabidw biimpd
+      wb bitrd simpl syl6 trirebndd syld imp simpr crre eleq1d ex con3d pm2.21d
+      mpd ssrdv ss0 syl fveq2d covol cdm 0mbl mblvol ax-mp ovol0 eqtri eqtrdi )
+      ABUAZCLMELMUBNZOZUCZPZUDCDEQQUEMZUIZWHUFUIZRMSRMZUGWLWOSRWLWOSUHWOSTWLKWO
+      SWLKUAZWOOZWQSOAWKWRUCAWRWJAWRWJAWRPZWHUJWQUKNULNZLMZWIOZWJAWRXBAWRWTWMOZ
+      XBAWRXCWHUMOWQUMOPZPZXCAWRXEAWRWHWQQZWNOZXEWRXGVBAWNWHWQBUNKUNUOUPAXGXFXE
+      BKUQZOZXEAWNXHXFABKCDEFGHURUSXIXEVBAXEBKUTUPVCVCVAZXCXDVDVEACDEWTFGHIJVFV
+      GVHWSXBWJWSXAWHWIAWRXAWHTZAWRXDXKAWRXEXDXJXCXDVIVEWHWQVJVEVHVKVAVOVLVMVHV
+      NVPWOVQVRVSWPSVTMZUGSRWAOWPXLTWBSWCWDWEWFWG $.
+  $}
+
+
+  ${
+    $d A x y $.  $d B x y $.  $d C x y $.  $d X x y $.  $d x y $.  $d ph x y $.
+    c2rtrioutslice0d.1 $e |- ( ph -> A e. CC ) $.
+    c2rtrioutslice0d.2 $e |- ( ph -> B e. CC ) $.
+    c2rtrioutslice0d.3 $e |- ( ph -> C e. CC ) $.
+    c2rtrioutslice0d.4 $e |- ( ph -> ( Re ` A ) = ( Re ` B ) ) $.
+    c2rtrioutslice0d.5 $e |- ( ph -> ( Re ` B ) = ( Re ` C ) ) $.
+    c2rtrioutslice0d.6 $e |- ( ph -> X e. RR ) $.
+    c2rtrioutslice0d.7 $e |- ( ph -> X =/= ( Re ` A ) ) $.
+    $( Any vertical slice away from a degenerate triangle's vertical line is
+       empty.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    c2rtrioutslice0d $p |- ( ph ->
+           ( ( c2r " ( tri ` <. A , <. B , C >. >. ) ) " { X } ) = (/) ) $=
+      ( vy vx cop c0 wceq wcel wa syl cc2r ctri cfv cima csn wss wrex wbr elima
+      cv vex df-br rexbii bitri biimpi wn wi cre elsn eqcomd a1i adantr ci cmul
+      imp co caddc cr copab c2rtrid eleq2d wb opabidw biimpd simprd crre simpld
+      bitrd simpl triredegd mpd eqtrd adantlr wne df-ne pm2.65d pm2.21 rexlimdv
+      ex syl6 syl5 ssrdv ss0 ) AUABCDOOUBUCZUDZEUEZUDZPUFWQPQAMWQPMUJZWQRZNUJZW
+      ROZWORZNWPUGZAWRPRZWSXCWSWTWRWOUHZNWPUGXCNWRWOWPMUKUIXEXBNWPWTWRWOULUMUNU
+      OAXBXDNWPAWTWPRZXBUPZXBXDUQAXFXGAXFSZXBEBURUCZQZXHXBXJXHXBSZEWTXIXHEWTQZX
+      BAXFXLXFXLUQAXFWTEXFWTEQWTENUKUSUOUTVAVEVBAXBWTXIQXFAXBSZWTWTVCWRVDVFVGVF
+      ZURUCZXIXMWTVHRWRVHRSZWTXOQXMXNWNRZXPAXBXQXPSZAXBXRAXBXAXRNMVIZRZXRAWOXSX
+      AANMBCDFGHVJVKXTXRVLAXRNMVMVAVRVNVEZVOXPXOWTWTWRVPUTTXMXQXOXIQZXMXQXPYAVQ
+      XMAXQYBUQAXBVSABCDXNFGHIJVTTWAWBWCWBWIXHXBXJUPZXKEXIWDZYCXKAYDXKXHAXHXBVS
+      AXFVSTLTYDYCEXIWEUOTWIWFWIXBXDWGWJWHWKWLWQWMT $.
+  $}
+
+
+  ${
+    $d A w x y $.  $d B w x y $.  $d C w x y $.  $d ph x y $.
+    c2rtrivertsliced.1 $e |- ( ph -> A e. CC ) $.
+    c2rtrivertsliced.2 $e |- ( ph -> B e. CC ) $.
+    c2rtrivertsliced.3 $e |- ( ph -> C e. CC ) $.
+    c2rtrivertsliced.4 $e |- ( ph -> ( Re ` A ) = ( Re ` B ) ) $.
+    c2rtrivertsliced.5 $e |- ( ph -> ( Re ` B ) = ( Re ` C ) ) $.
+    c2rtrivertsliced.6 $e |- ( ph -> ( Im ` A ) <_ ( Im ` B ) ) $.
+    c2rtrivertsliced.7 $e |- ( ph -> ( Im ` B ) <_ ( Im ` C ) ) $.
+    $( The vertical slice through a degenerate triangle equals the interval
+       formed by the extreme imaginary parts.  (Contributed by Jon Pennant,
+       29-Oct-2026.) $)
+    c2rtrivertsliced $p |- ( ph ->
+           ( ( c2r " ( tri ` <. A , <. B , C >. >. ) ) " { ( Re ` A ) } ) =
+                                  ( ( Im ` A ) [,] ( Im ` C ) ) ) $=
+      ( vy vx vw cfv co wcel caddc cr wa cc2r cop ctri cima cre csn cim cicc cv
+      ci cmul wb fvex vex elimasn a1i copab c2rtrid nfv wceq oveq2 oveq2d eleq1
+      eleq1d anbi2d anbi12d cbvopab2 eqtrdi eleq2d oveq1 anbi1d opelopab bitrdi
+      bitrd recld biantrud ancom bicomd wi triimbndd adantr crim sylan ex com23
+      sylibd impd trivertsegd wss imcld iccssre syl2anc sseld jcad impbid eqrdv
+      ) ALUABCDUBUBUCOZUDZBUEOZUFUDZBUGOZDUGOZUHPZALUIZWTQZWSUJXDUKPZRPZWQQZXDS
+      QZTZXDXCQZAXEXHWSSQZXITZTZXJAXEWSXDUBZWRQZXNXEXPULAWRWSXDBUEUMZLUNZUOUPAX
+      PXOMUIZUJNUIZUKPZRPZWQQZXSSQZXTSQZTZTZMNUQZQXNAWRYHXOAWRXSXFRPZWQQZYDXITZ
+      TZMLUQYHAMLBCDEFGURYLYGMLNYLNUSYGLUSXDXTUTZYJYCYKYFYMYIYBWQYMXFYAXSRXDXTU
+      JUKVAVBVDYMXIYEYDXDXTSVCVEVFVGVHVIYGWSYARPZWQQZXLYETZTXNMNWSXDXQXRXSWSUTZ
+      YCYOYFYPYQYBYNWQXSWSYARVJVDYQYDXLYEXSWSSVCVKVFXTXDUTZYOXHYPXMYRYNXGWQYRYA
+      XFWSRXTXDUJUKVAVBVDYRYEXIXLXTXDSVCVEVFVLVMVNAXMXIXHAXIXMAXIXIXLTXMAXLXIAB
+      EVOZVPXIXLVQVMVRVEVNAXJXKAXHXIXKAXIXHXKAXIXHXKVSAXITZXHXGUGOZXCQZXKAXHUUB
+      VSXIABCDXGEFGJKVTWAYTUUAXDXCAXLXIUUAXDUTYSWSXDWBWCVDWFWDWEWGAXKXHXIALBCDE
+      FGHIJKWHAXCSXDAXASQXBSQXCSWIABEWJADGWJXAXBWKWLWMWNWOVNWP $.
+  $}
+
+  ${
+    tridegslicevolrnordd.1 $e |- ( ph -> X e. CC ) $.
+    tridegslicevolrnordd.2 $e |- ( ph -> Y e. CC ) $.
+    tridegslicevolrnordd.3 $e |- ( ph -> Z e. CC ) $.
+    tridegslicevolrnordd.4 $e |- ( ph -> ( Re ` X ) = ( Re ` Y ) ) $.
+    tridegslicevolrnordd.5 $e |- ( ph -> ( Re ` Y ) = ( Re ` Z ) ) $.
+    tridegslicevolrnordd.6 $e |- ( ph -> ( Im ` X ) <_ ( Im ` Y ) ) $.
+    tridegslicevolrnordd.7 $e |- ( ph -> ( Im ` Y ) <_ ( Im ` Z ) ) $.
+    tridegslicevolrnordd.8 $e |- ( ph -> ( tri ` <. A , <. B , C >. >. ) =
+                                    ( tri ` <. X , <. Y , Z >. >. ) ) $.
+    tridegslicevolrnordd.9 $e |- ( ph -> ( Re ` A ) = ( Re ` X ) ) $.
+    $( A degenerate triangle slice has finite Lebesgue measure under ordered
+       imaginary parts.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    tridegslicevolrnordd $p |- ( ph ->
+          ( ( c2r " ( tri ` <. A , <. B , C >. >. ) ) "
+          { ( Re ` A ) } ) e. ( `' vol " RR ) ) $=
+      ( cc2r cop cfv cima ctri cre csn cicc co cvol ccnv imaeq2d sneqd imaeq12d
+      cim cr c2rtrivertsliced eqtrd imcld letrd iccvolrnd eqeltrd ) AQBCDRRUASZ
+      TZBUBSZUCZTZEUKSZGUKSZUDUEZUFUGULTAVCQEFGRRUASZTZEUBSZUCZTVFAUTVHVBVJAUSV
+      GQOUHAVAVIPUIUJAEFGHIJKLMNUMUNAVDVEAEHUOZAGJUOZAVDFUKSVEVKAFIUOVLMNUPUQUR
+      $.
+  $}
+
+  ${
+    $d a b c A $.  $d a b c B $.  $d a b c C $.  $d a b c ph $.
+    tridegslicevolrnd.1 $e |- ( ph -> A e. CC ) $.
+    tridegslicevolrnd.2 $e |- ( ph -> B e. CC ) $.
+    tridegslicevolrnd.3 $e |- ( ph -> C e. CC ) $.
+    tridegslicevolrnd.4 $e |- ( ph -> ( Re ` A ) = ( Re ` B ) ) $.
+    tridegslicevolrnd.5 $e |- ( ph -> ( Re ` B ) = ( Re ` C ) ) $.
+    $( The vertical slice through a degenerate triangle has finite Lebesgue
+       measure.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    tridegslicevolrnd $p |- ( ph ->
+                  ( ( c2r " ( tri ` <. A , <. B , C >. >. ) ) "
+                    { ( Re ` A ) } ) e. ( `' vol " RR ) ) $=
+      ( va vb vc cop cfv wceq wa cc cre wcel mpd ctri cv cim cle wrex cc2r cima
+      wbr csn cvol ccnv triordimd simp-4r simpllr simplr trivtx1d simprl eqcomd
+      cr eleqtrd wi triredegd syl trivtx2d eqtr4d trivtx3d simprr simpld simprd
+      simp-4l tridegslicevolrnordd ex rexlimdva ) ABCDMMUANZJUBZKUBZLUBZMMUANZO
+      ZVOUCNVPUCNZUDUHZVTVQUCNUDUHZPZPZLQUEZKQUEZJQUEUFVNUGBRNZUIUGUJUKUSUGSZAB
+      CDJKLEFGULAWFWHJQAVOQSZPZWEWHKQWJVPQSZPZWDWHLQWLVQQSZPZWDWHWNWDPZBCDVOVPV
+      QAWIWKWMWDUMZWJWKWMWDUNZWLWMWDUOZWOVORNZWGVPRNZWOVOVNSZWSWGOZWOVOVRVNWOVO
+      VPVQWPWQWRUPWOVNVRWNVSWCUQZURZUTWOAXAXBVAAWIWKWMWDVJZABCDVOEFGHIVBVCTZWOV
+      PVNSZWTWGOZWOVPVRVNWOVOVPVQWPWQWRVDXDUTWOAXGXHVAXEABCDVPEFGHIVBVCTZVEWOWT
+      WGVQRNZXIWOVQVNSZXJWGOZWOVQVRVNWOVOVPVQWPWQWRVFXDUTWOAXKXLVAXEABCDVQEFGHI
+      VBVCTVEWOWAWBWNVSWCVGZVHWOWAWBXMVIXCWOWSWGXFURVKVLVMVMVMT $.
+  $}
+
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.  $d ph x $.
+    tridegdmared.1 $e |- ( ph -> A e. CC ) $.
+    tridegdmared.2 $e |- ( ph -> B e. CC ) $.
+    tridegdmared.3 $e |- ( ph -> C e. CC ) $.
+    tridegdmared.4 $e |- ( ph -> ( Re ` A ) = ( Re ` B ) ) $.
+    tridegdmared.5 $e |- ( ph -> ( Re ` B ) = ( Re ` C ) ) $.
+    $( The Cartesian image of a vertically degenerate triangle belongs to dom
+       area.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    tridegdmared $p |- ( ph -> ( c2r " ( tri ` <. A , <. B , C >. >. ) )
+                                                        e. dom area ) $=
+      ( vx cfv cr cvol wcel wa wceq syl a1i c0 cc cc2r cop ctri cima cxp wss cv
+      csn ccnv wral cmpt cibl carea cdm c2rtrissd cre wi sneq tridegslicevolrnd
+      imaeq2 imp simpl adantr eqeltrd ex wne df-ne biimpri c2rtrioutslice0d cc0
+      wn simpr covol 0mbl mblvol ax-mp ovol0 eqtri eqeltri wfun wb cpnf cicc co
+      0re wf volf ffun pm3.2i fvimacnv mpbi syl5 pm2.61d ralrimiv recld iccssre
+      jca rembl sselda cle wbr elicc2 biimpd simp2 simp3 letri3d biimprd sylbid
+      w3a ancom syld mpd sneqd imaeq2d fveq2d cnvimass sselid mpbird recnd cdif
+      eldif sylib leidd 3jca eleq1 con3d eqtrd mpteq2dva ax-resscn ssid syl3anc
+      ccncf sstrd cncfmptc cniccibl iblss2 dmarea syl3anbrc ) AUABCDUBUBUCKUDZL
+      LUEUFYSJUGZUHZUDZMUILUDZNZJLUJJLUUBMKZUKULNYSUMUNNABCDEFGUOAUUDJLAYTLNZUU
+      DAUUFOZYTBUPKZPZUUDUUGUUIUUDUUGUUIOZUUBYSUUHUHZUDZUUCUUGUUIUUBUULPZUUIUUM
+      UQUUGUUIUUAUUKPUUMYTUUHURUUAUUKYSUTQRVAUUGUULUUCNZUUIUUGAUUNAUUFVBZABCDEF
+      GHIUSZQVCVDVEUUIVKZYTUUHVFZUUGUUDUURUUQYTUUHVGVHZUUGUURUUDUUGUUROZUUBSUUC
+      UUTBCDYTUUTABTNUUTUUGAUUGUURVBZUUOQZEQUUTACTNUVBFQUUTADTNUVBGQUUTAUUHCUPK
+      ZPUVBHQUUTAUVCDUPKPUVBIQUUTUUGUUFUVAAUUFVLZQUUGUURVLVIZUUTASUUCNZUVBUVFAS
+      MKZLNZUVFUVGVJLUVGSVMKZVJSMUNZNZUVGUVIPVNSVOVPVQVRZWEVSMVTZUVKOUVHUVFWAUV
+      MUVKUVJVJWBWCWDZMWFUVMWGUVJUVNMWHVPZVNWISLMWJVPWKRQVDVEWLWMVEWNAJUUHUUHWC
+      WDZLUUETAUUHLNZUVQOZUVPLUFAUVQUVQABEWOZUVSWQZUUHUUHWPQZLUVJNAWRRAYTUVPNZO
+      ZUUEUULMKZTUWCUUBUULMUWCUUAUUKYSUWCYTUUHUWCUWBUUIAUWBVLUWCUUGUWBUUIUQUWCA
+      UUFAUWBVBZAUVPLYTUWAWSWQUUGUWBUUFUUHYTWTXAZYTUUHWTXAZXIZUUIUUGUWBUWHUUGAU
+      WBUWHWAZUUOAUVRUWIUVTUUHUUHYTXBQQXCUWHUWFUWGOZUUGUUIUWHUWFUWGUUFUWFUWGXDU
+      UFUWFUWGXEWQUUGUWJUWGUWFOZUUIUWJUWKWAUUGUWFUWGXJRUUGUUIUWKUUGYTUUHUVDUUGA
+      UVQUUOUVSQXFXGXHWLXKQXLXMXNXOZUWCAUWDTNZUWEAUWDAUWDLNZUUNUUPAUVMUULUVJNZO
+      UWNUUNWAAUVMUWOUVMAUVORAUUCUVJUULMLXPUUPXQWQUULLMWJQXRXSZQVDAYTLUVPXTNZOZ
+      UUTUUEVJPUWRUUGUURUWRAUUFAUWQVBUWRUUFUWBVKZOZUUFUWRUWQUWTAUWQVLYTLUVPYAYB
+      ZUUFUWSVBQWQZUWRUUQUURUWRUWSUUQUWRUWTUWSUXAUUFUWSVLQUWRUUGUWSUUQUQUXBUUGU
+      UIUWBUUGUUIUWBUUJUWBUUHUVPNZUUGUXCUUIUUGAUXCUUOAUXCUVQUUHUUHWTXAZUXDXIZAU
+      VQUXDUXDUVSAUUHUVSYCZUXFYDAUVRUXCUXEWAUVTUUHUUHUUHXBQXRQVCUUGUUIUWBUXCWAZ
+      UUIUXGUQUUGYTUUHUVPYERVAXRVEYFQXLUUSQWQUUTUUEUVGVJUUTUUBSMUVEXOUVGVJPUUTU
+      VLRYGQAJUVPUUEUKJUVPUWDUKZULAJUVPUUEUWDUWLYHAUVQUVQUXHUVPTYLWDNZUXHULNUVS
+      UVSAUWMUVPTUFTTUFZUXIUWPAUVPLTUWALTUFAYIRYMUXJATYJRJUWDUVPTYNYKUUHUUHUXHY
+      OYKVDYPJYSYQYR $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.  $d C x $.  $d D x $.  $d E x $.  $d F x $.
+    $d S x y $.  $d U y $.  $d V y $.  $d ph x y $.
+    areaquaddmd.1 $e |- ( ph -> A e. RR ) $.
+    areaquaddmd.2 $e |- ( ph -> B e. RR ) $.
+    areaquaddmd.3 $e |- ( ph -> C e. RR ) $.
+    areaquaddmd.4 $e |- ( ph -> D e. RR ) $.
+    areaquaddmd.5 $e |- ( ph -> E e. RR ) $.
+    areaquaddmd.6 $e |- ( ph -> F e. RR ) $.
+    areaquaddmd.7 $e |- ( ph -> A < B ) $.
+    areaquaddmd.8 $e |- ( ph -> C <_ E ) $.
+    areaquaddmd.9 $e |- ( ph -> D <_ F ) $.
+    areaquaddmd.10 $e |- ( ph -> U = ( C + ( ( ( x - A ) / ( B - A ) ) x.
+                                               ( D - C ) ) ) ) $.
+    areaquaddmd.11 $e |- ( ph -> V = ( E + ( ( ( x - A ) / ( B - A ) ) x.
+                                               ( F - E ) ) ) ) $.
+    areaquaddmd.12 $e |- ( ph -> S = { <. x , y >. | ( x e. ( A [,] B ) /\
+                                                 y e. ( U [,] V ) ) } ) $.
+    $( A quadrilateral with two vertical sides belongs to dom area.
+       (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    areaquaddmd $p |- ( ph -> S e. dom area ) $=
+      ( cr cxp wss cv csn cima cvol ccnv wcel wral cfv cmpt cibl w3a carea cicc
+      cdm co wa copab iccssred sselda adantr cmin cdiv cmul caddc wceq resubcld
+      anasss cc0 recnd ltned necomd subne0d redivcld remulcld eqeltrd opabssxpd
+      wne readdcld eqsstrd cop vex elimasn eleq2d opabidw bitrdi wb ibar bicomd
+      simpr syl bitrd bitrid eqrdv c1 cle 1re a1i wbr jca elicc2 mpbid lesub1dd
+      simp3d clt subge0d mpbird lemul1ad subdid oveq2d mulcld addsub12d mulcomd
+      eqtrd subdird mullidd oveq1d eqtr3d eqcomd oveq12d addcomd wn fveq2d 0mbl
+      c0 covol mblvol ax-mp syl3anc mpteq2dva cc cncfmptc subcld cncfmpt2f noel
+      crp posdifd elrpd lediv1d dividd breqtrd simp2d divge0d le2addd iccvolrnd
+      3brtr4d intnanrd mtbird bicomi mtbid 2falsed ovol0 eqtri 0re wfun cpnf wf
+      volf ffun fvimacnv pm2.61dan ralrimiva rembl iccmbl eldif simprbi ovolicc
+      cdif anim2i ccncf ccnfld ctopn eqid ctx subcn addcn ax-resscn sstrdi ssid
+      ccn divrecd cncfmptid sylancl reccld eqeltrrd cniccibl iblss2 3jca dmarea
+      mulcn sylibr ) AHUEUEUFZUGZHBUHZUIUJZUKULUEUJZUMZBUEUNZBUEUXAUKUOZUPUQUMZ
+      URHUSVAUMAUWSUXDUXFAHUWTDEUTVBZUMZCUHZILUTVBZUMZVCZBCVDZUWRUDAUXLBCUEUEAU
+      XHUXKUWTUEUMZAUXHVCZUXNUXKAUXGUEUWTADEMNVEZVFZVGVNAUXHUXKUXIUEUMUXOUXJUEU
+      XIUXOILUXOIFUWTDVHVBZEDVHVBZVIVBZGFVHVBZVJVBZVKVBZUEAIUYCVLUXHUBVGZUXOFUY
+      BAFUEUMUXHOVGZUXOUXTUYAUXOUXRUXSUXOUWTDUXQADUEUMZUXHMVGZVMZAUXSUEUMUXHAED
+      NMVMZVGZAUXSVOWDUXHAEDAENVPZADMVPZADEADEMSVQVRVSZVGZVTZAUYAUEUMUXHAGFPOVM
+      VGWAWEWBZUXOLJUXTKJVHVBZVJVBZVKVBZUEALUYSVLUXHUCVGZUXOJUYRAJUEUMUXHQVGZUX
+      OUXTUYQUYOAUYQUEUMUXHAKJRQVMVGWAWEWBZVEVFVNWCWFAUXCBUEAUXCUXNAUXHUXCUXOUX
+      AUXJUXBUXOCUXAUXJUXIUXAUMZUWTUXIWGZHUMZUXOUXKHUWTUXIBWHCWHWIZUXOVUEUXLUXK
+      UXOVUEVUDUXMUMZUXLUXOHUXMVUDAHUXMVLZUXHUDVGWJUXLBCWKZWLUXOUXHUXLUXKWMAUXH
+      WPZUXHUXKUXLUXHUXKWNWOWQWRWSWTZUXOILUYPVUBUXOFXAUXTVHVBZVJVBZGUXTVJVBZVKV
+      BZJVULVJVBZKUXTVJVBZVKVBZILXBUXOVUMVUNVUPVUQUXOFVULUYEUXOXAUXTXAUEUMUXOXC
+      XDZUYOVMZWAZUXOGUXTAGUEUMUXHPVGZUYOWAZUXOJVULVUAVUTWAZUXOKUXTAKUEUMUXHRVG
+      ZUYOWAZUXOFJVULUYEVUAVUTUXOVOVULXBXEUXTXAXBXEUXOUXTUXSUXSVIVBZXAXBUXOUXRU
+      XSXBXEUXTVVGXBXEUXOUWTEDUXQAEUEUMZUXHNVGUYGUXOUXNDUWTXBXEZUWTEXBXEZUXOUXH
+      UXNVVIVVJURZVUJAUXHVVKWMZUXHAUYFVVHVCVVLAUYFVVHMNXFDEUWTXGWQVGXHZXJXIUXOU
+      XRUXSUXSUYHUYJAUXSUUBUMUXHAUXSUYIADEXKXEVOUXSXKXESADEMNUUCXHUUDVGZUUEXHUX
+      OUXSUXOUXSUYJVPZUYNUUFUUGUXOXAUXTVUSUYOXLXMAFJXBXEUXHTVGXNUXOGKUXTVVBVVEU
+      YOUXOUXRUXSUYHVVNUXOVOUXRXBXEVVIUXOUXNVVIVVJVVMUUHUXOUWTDUXQUYGXLXMUUIAGK
+      XBXEUXHUAVGXNUUJUXOIVUNVUMVKVBZVUOUXOIUXTGVJVBZFUXTFVJVBZVHVBZVKVBZVVPUXO
+      IFVVQVVRVHVBZVKVBZVVTUXOIUYCVWBUYDUXOUYBVWAFVKUXOUXTGFUXOUXTUYOVPZUXOGVVB
+      VPZUXOFUYEVPZXOXPXTUXOFVVQVVRVWEUXOUXTGVWCVWDXQUXOUXTFVWCVWEXQXRXTUXOVVQV
+      UNVVSVUMVKUXOUXTGVWCVWDXSUXOVUMVVSUXOVULFVJVBZVUMVVSUXOVULFUXOVULVUTVPZVW
+      EXSUXOVWFXAFVJVBZVVRVHVBVVSUXOXAUXTFUXOXAVUSVPZVWCVWEYAUXOVWHFVVRVHUXOFVW
+      EYBYCXTYDYEYFXTUXOVUNVUMUXOVUNVVCVPUXOVUMVVAVPYGXTUXOLVUQVUPVKVBZVURUXOLU
+      XTKVJVBZJUXTJVJVBZVHVBZVKVBZVWJUXOLJVWKVWLVHVBZVKVBZVWNUXOLUYSVWPUYTUXOUY
+      RVWOJVKUXOUXTKJVWCUXOKVVEVPZUXOJVUAVPZXOXPXTUXOJVWKVWLVWRUXOUXTKVWCVWQXQU
+      XOUXTJVWCVWRXQXRXTUXOVWKVUQVWMVUPVKUXOUXTKVWCVWQXSUXOVUPVWMUXOVULJVJVBZVU
+      PVWMUXOVULJVWGVWRXSUXOVWSXAJVJVBZVWLVHVBVWMUXOXAUXTJVWIVWCVWRYAUXOVWTJVWL
+      VHUXOJVWRYBYCXTYDYEYFXTUXOVUQVUPUXOVUQVVFVPUXOVUPVVDVPYGXTUULZUUKWBZAUXHY
+      HZVCZUXEUEUMZUXCVXDUXEVOUEVXDUXEYKUKUOZVOVXDUXAYKUKVXDCUXAYKVXDVUCUXIYKUM
+      ZVXDVUEVUCVXDVUEUXLVXDUXHUXKAVXCWPUUMVXDVUEVUGUXLVXDHUXMVUDAVUHVXCUDVGWJV
+      UIWLUUNVUEVUCWMVXDVUCVUEVUFUUOXDUUPVXGYHVXDUXIUUAXDUUQWTZYIVXFVOVLVXDVXFY
+      KYLUOZVOYKUKVAZUMZVXFVXIVLYJYKYMYNUURUUSXDXTZVOUEUMVXDUUTXDWBVXDUKUVAZUXA
+      VXJUMZVCZVXEUXCWMZVXDVXMVXNVXMVXDVXJVOUVBUTVBZUKUVCVXMUVDVXJVXQUKUVEYNZXD
+      VXDUXAYKVXJVXHVXKVXDYJXDWBXFUXAUEUKUVFZWQXHUVGVGUVHABUXGUEUXEUEUXPUEVXJUM
+      AUVIXDUXOVXEUXCVXBUXOVXOVXPUXOVXMVXNVXMUXOVXRXDUXOUXAUXJVXJVUKUXOIUEUMZLU
+      EUMZVCUXJVXJUMZUXOVXTVYAUYPVUBXFILUVJWQZWBXFVXSWQXMAUWTUEUXGUVNUMZVCVXDUX
+      EVOVLVYDVXCAVYDUXNVXCUWTUEUXGUVKUVLUVOVXLWQABUXGUXEUPZBUXGLIVHVBZUPZUQAVY
+      GVYEABUXGVYFUXEUXOUXEVYFUXOUXEUXJUKUOZVYFUXOUXAUXJUKVUKYIUXOVYHUXJYLUOZVY
+      FUXOVYBVYHVYIVLVYCUXJYMWQUXOVXTVYAILXBXEVYIVYFVLUYPVUBVXAILUVMYOXTXTYEYPY
+      EAUYFVVHVYGUXGYQUVPVBZUMVYGUQUMMNABLIVHUVQUVRUOZUXGVYKUVSZVHVYKVYKUVTVBVY
+      KUWFVBZUMAVYKVYLUWAXDZABUXGLUPBUXGUYSUPVYJABUXGLUYSUYTYPABJUYRVKVYKUXGVYL
+      VKVYMUMAVYKVYLUWBXDZAJYQUMUXGYQUGZYQYQUGZBUXGJUPVYJUMAJQVPZAUXGUEYQUXPUWC
+      UWDZVYQAYQUWEZXDZBJUXGYQYRYOABUXTUYQVJVYKUXGVYLVJVYMUMAVYKVYLUWPXDZABUXGU
+      XRXAUXSVIVBZVJVBZUPBUXGUXTUPVYJABUXGWUDUXTUXOUXTWUDUXOUXRUXSUXOUWTDUXOUWT
+      UXQVPADYQUMZUXHUYLVGYSVVOUYNUWGYEYPABUXRWUCVJVYKUXGVYLWUBABUWTDVHVYKUXGVY
+      LVYNAVYPVYQBUXGUWTUPVYJUMVYSVYTBUXGYQUWHUWIAWUEVYPVYQBUXGDUPVYJUMUYLVYSWU
+      ABDUXGYQYRYOYTAWUCYQUMVYPVYQBUXGWUCUPVYJUMAUXSAEDUYKUYLYSUYMUWJVYSWUABWUC
+      UXGYQYRYOYTUWKZAUYQYQUMVYPVYQBUXGUYQUPVYJUMAKJAKRVPVYRYSVYSWUABUYQUXGYQYR
+      YOYTYTWBABUXGIUPBUXGUYCUPVYJABUXGIUYCUYDYPABFUYBVKVYKUXGVYLVYOAFYQUMVYPVY
+      QBUXGFUPVYJUMAFOVPZVYSWUABFUXGYQYRYOABUXTUYAVJVYKUXGVYLWUBWUFAUYAYQUMVYPV
+      YQBUXGUYAUPVYJUMAGFAGPVPWUGYSVYSWUABUYAUXGYQYRYOYTYTWBYTDEVYGUWLYOWBUWMUW
+      NBHUWOUWQ $.
+  $}
+
+  ${
     $d A x $.  $d B x $.  $d C x $.  $d D x $.  $d S x $.
     arearect.1 $e |- A e. RR $.
     arearect.2 $e |- B e. RR $.
@@ -742568,9 +744387,1275 @@ $)
       IYHWCXGYCXGVVPYOXG $.
   $}
 
+  ${
+    $d A x y $.  $d B x y $.  $d C x $.  $d D x $.  $d E x $.  $d F x $.
+    $d S x y $.  $d U y $.  $d V y $.  $d ph x y $.
+    areaquadd.1 $e |- ( ph -> A e. RR ) $.
+    areaquadd.2 $e |- ( ph -> B e. RR ) $.
+    areaquadd.3 $e |- ( ph -> C e. RR ) $.
+    areaquadd.4 $e |- ( ph -> D e. RR ) $.
+    areaquadd.5 $e |- ( ph -> E e. RR ) $.
+    areaquadd.6 $e |- ( ph -> F e. RR ) $.
+    areaquadd.7 $e |- ( ph -> A < B ) $.
+    areaquadd.8 $e |- ( ph -> C <_ E ) $.
+    areaquadd.9 $e |- ( ph -> D <_ F ) $.
+    areaquadd.10 $e |- ( ph -> U = ( C + ( ( ( x - A ) / ( B - A ) ) x.
+                                                     ( D - C ) ) ) ) $.
+    areaquadd.11 $e |- ( ph -> V = ( E + ( ( ( x - A ) / ( B - A ) ) x.
+                                                     ( F - E ) ) ) ) $.
+    areaquadd.12 $e |- ( ph -> S = { <. x , y >. | ( x e. ( A [,] B ) /\
+                                              y e. ( U [,] V ) ) } ) $.
+    $( The area of a quadrilateral with two sides parallel to the y-axis.
+       (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    areaquadd $p |- ( ph -> ( area ` S ) =
+      ( ( ( ( F + E ) / 2 ) - ( ( D + C ) / 2 ) ) x. ( B - A ) ) ) $=
+      ( carea cfv caddc co c2 cdiv cmin cmul cicc citg cr cv cima cvol cdm wcel
+      wceq wss wral cmpt wa copab iccssre syl2anc sselda adantr simpl jca c1 cc
+      recnd simpr resubcld cc0 wne mulcld addsub12d subdid oveq2d eqtrd subdird
+      cibl mullidd oveq1d 3eqtr4d 1red addcomd mulcomd 3eqtrd remulcld readdcld
+      oveq12d eqeltrd syl a1i iftrue adantl covol wb eqrdv fveq2d iccmbl mblvol
+      cif vex cle wbr subidd rexrd syl3anc lesub1dd mpbid eqbrtrrd eqtr4d wn c0
+      cxr eqcomd ralrimiva cncfmptc cncfmpt2f cniccibl itgeq2 itgconst itgmulc2
+      subcld divrec2d cexp 1p1e2 oveq2i halfcld divcan4d eqtr3d addcld div32
+      clt csn ccnv ltned necomd subne0d redivcld 1cnd anasss ex ssopab2dv df-xp
+      cxp 3sstr4d elimasn eleq2d opabidw 3bitrd baibd iccleub ltsub1d syl112anc
+      cop breq1dd lediv1 breqtrd lemul1ad elrpd iccgelb divge0d le2addd 3brtr4d
+      dividd ovolicc iffalse syl6 con3d imp noel 2falsed 0mbl ax-mp ovol0 eqtri
+      biimpd eqtrdi pm2.61dan 0re ifcl sylancl wfun cpnf wf volf ifcld fvimacnv
+      ffun rembl cdif eldifn anim2i mpteq2dva ccncf ccnfld ctopn eqid ctx subcn
+      ccn mpteq2dv addcn ax-resscn sstrdi ssid divsubdird cres divccncf rescncf
+      resmpt sylc eqeltrrd divcld mulcncf iblss2 dmarea syl3anbrc itgss2 itgsub
+      areaval itgaddlem2 ltled itgeq2dv ax-1cn cncfmptid exp1d cn0 1nn0 itgpowd
+      iblsub oveq12i oveq1i sqcld subsq 2cnd 2ne0 div23d times2 pnpcan2 adddird
+      2cnne0 times2d addsubassd addridd ) AHUEUFZKJUGUHZUIUJUHZEDUKUHZULUHZGFUG
+      UHZUIUJUHZVUPULUHZUKUHZVUOVUSUKUHVUPULUHZAVUMVUNVUPUIUJUHZULUHZVURVVCULUH
+      ZUKUHZVVAAVUMBDEUMUHZLIUKUHZUNZVVFAVUMBUOHBUPZUUAUQZURUFZUNZVVIAHUEUSUTZV
+      UMVVMVAAHUOUOUULZVBVVKURUUBUOUQUTZBUOVCBUOVVLVDWFUTVVNAVVJVVGUTZCUPZILUMU
+      HZUTZVEZBCVFZVVJUOUTZVVRUOUTZVEZBCVFZHVVOAVWAVWEBCAVWAVWEAVVQVVTVWEAVVQVE
+      ZVVTVEVWCVWDVWGVWCVVTAVVGUOVVJADUOUTZEUOUTZVVGUOVBZMNDEVGVHZVIZVJVWGVVSUO
+      VVRVWGAVWCVEZVVSUOVBZVWGAVWCAVVQVKZVWLVLZVWMIUOUTZLUOUTZVWNVWMIFVMVVJDUKU
+      HZVUPUJUHZUKUHZULUHZGVWTULUHZUGUHZUOVWMIVWTGULUHZVXAFULUHZUGUHZVXFVXEUGUH
+      VXDVWMFVXEVWTFULUHZUKUHZUGUHZVXEFVXHUKUHZUGUHIVXGVWMFVXEVXHAFVNUTZVWCAFOV
+      OZVJZVWMVWTGVWMVWTVWMVWSVUPVWMVVJDAVWCVPAVWHVWCMVJVQZAVUPUOUTZVWCAEDNMVQZ
+      VJAVUPVRVSZVWCAEDAENVOZADMVOZADEADEMSUUCUUDUUEZVJUUFZVOZAGVNUTZVWCAGPVOZV
+      JZVTZVWMVWTFVYCVXNVTWAVWMIFVWTGFUKUHZULUHZUGUHZVXJAIVYJVAZVWCUBVJVWMVYIVX
+      IFUGVWMVWTGFVYCVYFVXNWBWCWDVWMVXFVXKVXEUGVWMVXFVMFULUHZVXHUKUHVXKVWMVMVWT
+      FVWMUUGZVYCVXNWEVWMVYLFVXHUKVWMFVXNWGWHWDWCWIVWMVXEVXFVYGVWMVXAFVWMVXAVWM
+      VMVWTVWMWJVYBVQZVOZVXNVTWKVWMVXFVXBVXEVXCUGVWMVXAFVYOVXNWLVWMVWTGVYCVYFWL
+      WPWMZVWMVXBVXCVWMFVXAAFUOUTZVWCOVJVYNWNZVWMGVWTAGUOUTZVWCPVJVYBWNZWOWQZVW
+      MLJVXAULUHZKVWTULUHZUGUHZUOVWMLVWTKULUHZVXAJULUHZUGUHZWUFWUEUGUHWUDVWMJWU
+      EVWTJULUHZUKUHZUGUHZWUEJWUHUKUHZUGUHLWUGVWMJWUEWUHAJVNUTZVWCAJQVOZVJZVWMV
+      WTKVYCAKVNUTZVWCAKRVOZVJZVTZVWMVWTJVYCWUNVTWAVWMLJVWTKJUKUHZULUHZUGUHZWUJ
+      ALWVAVAZVWCUCVJVWMWUTWUIJUGVWMVWTKJVYCWUQWUNWBWCWDVWMWUFWUKWUEUGVWMWUFVMJ
+      ULUHZWUHUKUHWUKVWMVMVWTJVYMVYCWUNWEVWMWVCJWUHUKVWMJWUNWGWHWDWCWIVWMWUEWUF
+      WURVWMVXAJVYOWUNVTWKVWMWUFWUBWUEWUCUGVWMVXAJVYOWUNWLVWMVWTKVYCWUQWLWPWMZV
+      WMWUBWUCVWMJVXAAJUOUTZVWCQVJVYNWNZVWMKVWTAKUOUTZVWCRVJVYBWNZWOWQZILVGVHWR
+      VIVLUUHUUIUUJUDVVOVWFVAABCUOUOUUKWSUUMAVVPBUOVWMVVLUOUTZVVPVWMVVLVVQVVHVR
+      XHZUOAVVLWVKVAZVWCAWVKVVLAVVQWVKVVLVAVWGWVKVVHVVLVVQWVKVVHVAAVVQVVHVRWTXA
+      VWGVVLVVSURUFZVVSXBUFZVVHVWGVVKVVSURVWGCVVKVVSAVVRVVKUTZVVQVVTAWVOVVJVVRU
+      VBZHUTZWVPVWBUTZVWAWVOWVQXCAHVVJVVRBXICXIUUNWSAHVWBWVPUDUUOWVRVWAXCAVWABC
+      UUPWSUUQZUURXDZXEVWGVVSURUSZUTZWVMWVNVAVWGVWQVWRWWBVWGVWMVWQVWPWUAWRZVWGV
+      WMVWRVWPWVIWRZILXFZVHVVSXGWRVWGVWQVWRILXJXKWVNVVHVAWWCWWDVWGVXDWUDILXJVWG
+      VXBVXCWUBWUCVWGVWMVXBUOUTVWPVYRWRVWGVWMVXCUOUTVWPVYTWRVWGVWMWUBUOUTVWPWVF
+      WRVWGVWMWUCUOUTVWPWVHWRVWGFJVXAAVYQVVQOVJZAWVEVVQQVJZVWGVWMVXAUOUTVWPVYNW
+      RVWGVWTVWTUKUHVRVXAXJVWGVWTVWGVWMVWTVNUTVWPVYCWRZXLVWGVWTVMVWTVWGVWMVWTUO
+      UTVWPVYBWRZVWGWJWWIVWGVWTVUPVUPUJUHZVMXJVWGVWSVUPXJXKZVWTWWJXJXKZVWGVVJED
+      VWLAVWIVVQNVJZAVWHVVQMVJZVWGDYAUTZEYAUTZVVQVVJEXJXKVWGDWWNXMZVWGEWWMXMZAV
+      VQVPZDEVVJUUSXNXOVWGVWSUOUTZVXPVXPVRVUPYTXKWWKWWLXCVWGVWMWWTVWPVXOWRZAVXP
+      VVQVXQVJZWXBVWGDDUKUHZVRVUPYTVWGDVWGDWWNVOXLZVWGDEYTXKZWXCVUPYTXKAWXEVVQS
+      VJVWGDEDWWNWWMWWNUUTXPUVCZVWSVUPVUPUVDUVAXPVWGVUPVWGVUPWXBVOZAVXRVVQVYAVJ
+      ZUVLUVEXOXQAFJXJXKVVQTVJUVFVWGGKVWTAVYSVVQPVJZAWVGVVQRVJZWWIVWGVWSVUPWXAV
+      WGVUPWXBWXFUVGVWGWXCVRVWSXJWXDVWGDVVJDWWNVWLWWNVWGWWOWWPVVQDVVJXJXKWWQWWR
+      WWSDEVVJUVHXNXOXQUVIAGKXJXKVVQUAVJUVFUVJVWGVWMIVXDVAVWPVYPWRVWGVWMLWUDVAV
+      WPWVDWRUVKILUVMXNWMZXRAVVQXSZVEZWVKVRVVLWXLWVKVRVAAVVQVVHVRUVNXAWXMVVLXTU
+      RUFZVRWXMVVKXTURWXMCVVKXTWXMWVOVVRXTUTZAWXLWVOXSAWVOVVQAWVOVWAVVQAWVOVWAW
+      VSUWDVVQVVTVKUVOUVPUVQWXOXSWXMVVRUVRWSUVSXDZXEWXNXTXBUFZVRXTWWAUTZWXNWXQV
+      AUVTXTXGUWAUWBUWCUWEZXRUWFYBVJZVWMVVHUOUTVRUOUTWVKUOUTVWMLIWVIWUAVQUWGVVQ
+      VVHVRUOUWHUWIWQZVWMURUWJZVVKWWAUTWVJVVPXCWYBVWMWWAVRUWKUMUHZURUWLWYBUWMWW
+      AWYCURUWPUWAWSVWMVVKVVQVVSXTXHZWWAAVVKWYDVAZVWCAVVQWYEVWGVVKVVSWYDWVTVVQW
+      YDVVSVAAVVQVVSXTWTXAXRWXMVVKXTWYDWXPWXLWYDXTVAAVVQVVSXTUVNXAXRUWFVJVWMVVQ
+      VVSXTWWAVWMVWQVWRWWBWUAWVIWWEVHWXRVWMUVTWSUWNWQVVKUOURUWOVHXPYCABVVGUOVVL
+      UOVWKUOWWAUTAUWQWSVWGVWMWVJVWPWYAWRAVVJUOVVGUWRUTZVEWXMVVLVRVAWYFWXLAVVJU
+      OVVGUWSUWTWXSWRABVVGVVLVDBVVGVVHVDZWFABVVGVVLVVHWXKUXAAVWHVWIWYGVVGVNUXBU
+      HZUTWYGWFUTMNABLIUKUXCUXDUFZVVGWYIUXEZUKWYIWYIUXFUHWYIUXHUHZUTAWYIWYJUXGW
+      SZABVVGLVDZBVVGWVAVDWYHABVVGLWVAUCUXIABJWUTUGWYIVVGWYJUGWYKUTAWYIWYJUXJWS
+      ZAWULVVGVNVBZVNVNVBZBVVGJVDZWYHUTZWUMAVVGUOVNVWKUXKUXLZWYPAVNUXMWSZBJVVGV
+      NYDXNZABVWTWUSVVGABVVGVWTVDZBVVGVVJVUPUJUHZDVUPUJUHZUKUHZVDWYHABVVGVWTXUE
+      VWGVVJDVUPAVVGVNVVJWYSVIZADVNUTZVVQVXTVJWXGWXHUXNUXAABXUCXUDUKWYIVVGWYJWY
+      LABVNXUCVDZVVGUXOZBVVGXUCVDZWYHAWYOXUIXUJVAWYSBVNVVGXUCUXRWRAWYOXUHVNVNUX
+      BUHUTZXUIWYHUTWYSAVUPVNUTZVXRXUKAVUPVXQVOZVYABVUPXUHXUHUXEUXPVHVNVNVVGXUH
+      UXQUXSUXTAXUDVNUTWYOWYPBVVGXUDVDWYHUTADVUPVXTXUMVYAUYAWYSWYTBXUDVVGVNYDXN
+      YEWQZABKJUKWYIVVGWYJWYLAWUOWYOWYPBVVGKVDWYHUTWUPWYSWYTBKVVGVNYDXNXUAYEUYB
+      ZYEWQZABVVGIVDZBVVGVYJVDWYHABVVGIVYJUBUXIABFVYIUGWYIVVGWYJWYNAVXLWYOWYPBV
+      VGFVDZWYHUTZVXMWYSWYTBFVVGVNYDXNZABVWTVYHVVGXUNABGFUKWYIVVGWYJWYLAVYDWYOW
+      YPBVVGGVDWYHUTVYEWYSWYTBGVVGVNYDXNXUTYEUYBZYEWQZYEDEWYGYFXNWQUYCBHUYDUYEB
+      HUYHWRAVVMBUOWVKUNZVVIAWVLBUOVCVVMXVCVAAWVLBUOWXTYCBUOVVLWVKYGWRAVWJVVIXV
+      CVAVWKBVVGUOVVHUYFWRXRWDAVVIBVVGLUNZBVVGIUNZUKUHVVFABVVGLIUOWWDAVWHVWIWYM
+      WYHUTWYMWFUTMNXUPDEWYMYFXNWWCAVWHVWIXUQWYHUTXUQWFUTMNXVBDEXUQYFXNUYGAXVDV
+      VDXVEVVEUKAXVDJUIULUHZWUSUGUHZVVCULUHZVVDAXVDXVFVVCULUHZWUSVVCULUHZUGUHZX
+      VHAXVDJVUPULUHZXVJUGUHZXVKAXVDBVVGJUNZBVVGWUTUNZUGUHZXVMAXVDBVVGWVAUNZXVP
+      AWVBBVVGVCXVDXVQVAAWVBBVVGAWVBVVQUCVJYCBVVGLWVAYGWRABVVGJWUTUOWWGAVWHVWIW
+      YRWYQWFUTMNXUADEWYQYFXNVWGVWTWUSWWIVWGKJWXJWWGVQWNZAVWHVWIBVVGWUTVDZWYHUT
+      XVSWFUTMNXUODEXVSYFXNWWGXVRUYIWDAXVNXVLXVOXVJUGAXVNJVVGURUFZULUHZXVLAVVGW
+      WAUTZXVTUOUTZWULXVNXWAVAAVWHVWIXWBMNDEXFVHZAXVTVUPUOAXVTVVGXBUFZVUPAXWBXV
+      TXWEVAXWDVVGXGWRAVWHVWIDEXJXKXWEVUPVAMNADEMNSUYJZDEUVMXNWDZVXQWQZWUMBVVGJ
+      YHXNAXVTVUPJULXWGWCWDABVVGWUSVWTULUHZUNZXVOXVJABVVGXWIWUTVWGWUSVWTVWGAWUS
+      VNUTVWOAKJWUPWUMYJZWRWWHWLUYKAWUSBVVGVWTUNZULUHXWJXVJABVVGVWTWUSUOXWKWWIA
+      VWHVWIXUBWYHUTXUBWFUTMNXUNDEXUBYFXNZYIAXWLVVCWUSULAXWLBVVGVMVUPUJUHZVWSUL
+      UHZUNZXWNBVVGVWSUNZULUHZVVCAVWTXWOVAZBVVGVCXWLXWPVAAXWSBVVGVWGVWSVUPVWGVW
+      SWXAVOWXGWXHYKYCBVVGVWTXWOYGWRAXWRXWPABVVGVWSXWNUOAVMVUPVMVNUTAUYLWSXUMVY
+      AUYAZWXAABVVGVVJDUOVWLAVWHVWIBVVGVVJVDZWYHUTZXXAWFUTMNAWYOWYPXXBWYSWYTBVV
+      GVNUYMVHDEXXAYFXNZWWNAVWHVWIBVVGDVDZWYHUTZXXDWFUTMNAXUGWYOWYPXXEVXTWYSWYT
+      BDVVGVNYDXNDEXXDYFXNZUYRYIYBAXWREDUGUHZDUIULUHZUKUHZUIUJUHZVVCAXWRXXGUIUJ
+      UHZDUKUHZXXJAXWRXWNEUIYLUHZDUIYLUHZUKUHZUIUJUHZULUHZDUKUHZXXLAXWRXXQXWNDV
+      UPULUHZULUHZUKUHZXXRAXWRXWNXXPXXSUKUHZULUHXYAAXWQXYBXWNULAXWQBVVGVVJUNZBV
+      VGDUNZUKUHXYBABVVGVVJDUOVWLXXCWWNXXFUYGAXYCXXPXYDXXSUKAXYCBVVGVVJVMYLUHZU
+      NZEVMVMUGUHZYLUHZDXYGYLUHZUKUHZUIUJUHZXXPAXYFXYCAXYEVVJVAZBVVGVCXYFXYCVAA
+      XYLBVVGVWGVVJXUFUYNYCBVVGXYEVVJYGWRYBAXYFXYJXYGUJUHXYKABDEVMMNXWFVMUYOUTA
+      UYPWSUYQXYGUIXYJUJYMYNUWEXYKXXPVAAXYJXXOUIUJXYHXXMXYIXXNUKXYGUIEYLYMYNXYG
+      UIDYLYMYNUYSUYTWSWMAXYDDXVTULUHZXXSAXWBXWCXUGXYDXYMVAXWDXWHVXTBVVGDYHXNAX
+      VTVUPDULXWGWCWDWPWDWCAXWNXXPXXSXWTAXXOAXXMXXNAEVXSVUAADVXTVUAYJYOADVUPVXT
+      XUMVTZWBWDAXXTDXXQUKAXXSVUPUJUHXXTDAXXSVUPXYNXUMVYAYKADVUPVXTXUMVYAYPYQWC
+      WDAXXQXXKDUKAXXQXWNXXKVUPULUHZULUHZXXKAXXQXWNXXGVUPULUHZUIUJUHZULUHXYPAXX
+      PXYRXWNULAXXOXYQUIUJAEVNUTZXUGXXOXYQVAVXSVXTEDVUBVHWHWCAXYRXYOXWNULAXXGVU
+      PUIAEDVXSVXTYRZXUMAVUCZUIVRVSZAVUDWSZVUEWCWDAXYOVUPUJUHXYPXXKAXYOVUPAXXKV
+      UPAXXGXYTYOZXUMVTXUMVYAYKAXXKVUPYUDXUMVYAYPYQWDWHWDAXXLXXKXXHUIUJUHZUKUHZ
+      XXJADYUEXXKUKAYUEDADUIVXTYUAYUCYPYBWCAXXJYUFAXXGXXHUIXYTADUIVXTYUAVTYUAYU
+      CUXNYBWDWDAXXIVUPUIUJAXXIXXGDDUGUHZUKUHZVUPAXXHYUGXXGUKAXUGXXHYUGVAVXTDVU
+      FWRWCAXYSXUGXUGYUHVUPVAVXSVXTVXTEDDVUGXNWDWHWDWMZWCYQYQWPWDAXVLXVIXVJUGAX
+      VFUIUJUHZVUPULUHZXVLXVIAYUJJVUPULAJUIWUMYUAYUCYPWHAXVFVNUTUIVNUTYUBVEZXUL
+      YUKXVIVAAJUIWUMYUAVTZYULAVUIWSZXUMXVFUIVUPYSXNYQWHWDAXVHXVKAXVFWUSVVCYUMX
+      WKAVUPXUMYOZVUHYBWDAXVGVUNVVCULAXVGJJUGUHZWUSUGUHZVUNAXVFYUPWUSUGAJWUMVUJ
+      WHAYUQKYUPJUKUHZUGUHVUNAYUPKJAJJWUMWUMYRWUPWUMWAAYURJKUGAYURJJJUKUHZUGUHJ
+      VRUGUHJAJJJWUMWUMWUMVUKAYUSVRJUGAJWUMXLWCAJWUMVULWMWCWDWDWHWDAXVEFUIULUHZ
+      VYHUGUHZVVCULUHZVVEAXVEYUTVVCULUHZVYHVVCULUHZUGUHZYVBAXVEFVUPULUHZYVDUGUH
+      ZYVEAXVEBVVGVYJUNZBVVGFUNZBVVGVYIUNZUGUHYVGAVYKBVVGVCXVEYVHVAAVYKBVVGAVYK
+      VVQUBVJYCBVVGIVYJYGWRABVVGFVYIUOWWFAVWHVWIXUSXURWFUTMNXUTDEXURYFXNVWGVWTV
+      YHWWIVWGGFWXIWWFVQWNZAVWHVWIBVVGVYIVDZWYHUTYVLWFUTMNXVADEYVLYFXNWWFYVKUYI
+      AYVIYVFYVJYVDUGAYVIFXVTULUHZYVFAXWBXWCVXLYVIYVMVAXWDXWHVXMBVVGFYHXNAXVTVU
+      PFULXWGWCWDABVVGVYHVWTULUHZUNZYVJYVDABVVGYVNVYIVWGVYHVWTVWGAVYHVNUTVWOAGF
+      VYEVXMYJZWRWWHWLUYKAVYHXWLULUHYVOYVDABVVGVWTVYHUOYVPWWIXWMYIAXWLVVCVYHULY
+      UIWCYQYQWPWMAYVFYVCYVDUGAYUTUIUJUHZVUPULUHZYVFYVCAYVQFVUPULAFUIVXMYUAYUCY
+      PWHAYUTVNUTYULXULYVRYVCVAAFUIVXMYUAVTZYUNXUMYUTUIVUPYSXNYQWHWDAYVBYVEAYUT
+      VYHVVCYVSYVPYUOVUHYBWDAYVAVURVVCULAYVAFFUGUHZVYHUGUHZVURAYUTYVTVYHUGAFVXM
+      VUJWHAYWAGYVTFUKUHZUGUHVURAYVTGFAFFVXMVXMYRVYEVXMWAAYWBFGUGAYWBFFFUKUHZUG
+      UHFVRUGUHFAFFFVXMVXMVXMVUKAYWCVRFUGAFVXMXLWCAFVXMVULWMWCWDWDWHWDWPWDWDAVV
+      AVVFAVUQVVDVUTVVEUKAVUNVNUTYULXULVUQVVDVAAKJWUPWUMYRZYUNXUMVUNUIVUPYSXNAV
+      URVNUTYULXULVUTVVEVAAGFVYEVXMYRZYUNXUMVURUIVUPYSXNWPYBWDAVVBVVAAVUOVUSVUP
+      AVUNYWDYOAVURYWEYOXUMWEYBWD $.
+  $}
+
+
+  ${
+    $d A x y $.  $d B x y $.  $d C x y $.  $d D x y $.  $d F x y $.
+    $d S x y $.  $d U y $.  $d V y $.  $d ph x y $.
+    areatrivertld.1 $e |- ( ph -> A e. RR ) $.
+    areatrivertld.2 $e |- ( ph -> B e. RR ) $.
+    areatrivertld.3 $e |- ( ph -> C e. RR ) $.
+    areatrivertld.4 $e |- ( ph -> D e. RR ) $.
+    areatrivertld.5 $e |- ( ph -> F e. RR ) $.
+    areatrivertld.6 $e |- ( ph -> A < B ) $.
+    areatrivertld.7 $e |- ( ph -> D <_ F ) $.
+    areatrivertld.8 $e |- ( ph -> U = ( C + ( ( ( x - A ) / ( B - A ) ) x.
+                                                        ( D - C ) ) ) ) $.
+    areatrivertld.9 $e |- ( ph -> V = ( C + ( ( ( x - A ) / ( B - A ) ) x.
+                                                        ( F - C ) ) ) ) $.
+    areatrivertld.10 $e |- ( ph -> S = { <. x , y >. | ( x e. ( A [,] B ) /\
+                                                 y e. ( U [,] V ) ) } ) $.
+    $( The area of a triangle with one vertical side to the right.
+       (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    areatrivertld $p |- ( ph -> ( area ` S ) = ( ( ( 1 / 2 ) x. ( F - D ) ) x.
+                                                          ( B - A ) ) ) $=
+      ( carea cfv caddc co c2 cdiv cmin cmul c1 leidd areaquadd addcld 2cnd cc0
+      recnd wne 2ne0 divsubdird pnpcan2d oveq1d subcld divrec2d eqtrd eqtr3d
+      a1i ) AHUBUCJFUDUEZUFUGUEGFUDUEZUFUGUEUHUEZEDUHUEZUIUEUJUFUGUEJGUHUEZUIUE
+      ZVJUIUEABCDEFGHIFJKLMNONPQAFNUKRSTUAULAVIVLVJUIAVGVHUHUEZUFUGUEZVIVLAVGVH
+      UFAJFAJPUPZAFNUPZUMAGFAGOUPZVPUMAUNZUFUOUQAURVFZUSAVNVKUFUGUEVLAVMVKUFUGA
+      JGFVOVQVPUTVAAVKUFAJGVOVQVBVRVSVCVDVEVAVD $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.  $d C x y $.  $d D x y $.  $d F x y $.
+    $d S x y $.  $d U y $.  $d V y $.  $d ph x y $.
+    areatrivertrd.1 $e |- ( ph -> A e. RR ) $.
+    areatrivertrd.2 $e |- ( ph -> B e. RR ) $.
+    areatrivertrd.3 $e |- ( ph -> C e. RR ) $.
+    areatrivertrd.4 $e |- ( ph -> D e. RR ) $.
+    areatrivertrd.5 $e |- ( ph -> F e. RR ) $.
+    areatrivertrd.6 $e |- ( ph -> B < A ) $.
+    areatrivertrd.7 $e |- ( ph -> D <_ F ) $.
+    areatrivertrd.8 $e |- ( ph -> U = ( D + ( ( ( x - B ) / ( A - B ) ) x.
+                                                        ( C - D ) ) ) ) $.
+    areatrivertrd.9 $e |- ( ph -> V = ( F + ( ( ( x - B ) / ( A - B ) ) x.
+                                                        ( C - F ) ) ) ) $.
+    areatrivertrd.10 $e |- ( ph -> S = { <. x , y >. | ( x e. ( B [,] A ) /\
+                                                 y e. ( U [,] V ) ) } ) $.
+    $( The area of a triangle with one vertical side to the left.  (Contributed
+       by Jon Pennant, 29-Oct-2026.) $)
+    areatrivertrd $p |- ( ph -> ( area ` S ) = ( ( ( 1 / 2 ) x. ( F - D ) )
+                                                       x. ( A - B ) ) ) $=
+      ( carea cfv caddc co c2 cdiv cmin cmul c1 leidd areaquadd addcld 2cnd cc0
+      recnd wne 2ne0 a1i divsubdird pnpcand oveq1d subcld divrec2d eqtrd eqtr3d
+      ) AHUBUCFJUDUEZUFUGUEFGUDUEZUFUGUEUHUEZDEUHUEZUIUEUJUFUGUEJGUHUEZUIUEZVJU
+      IUEABCEDGFHIJFKMLONPNQRAFNUKSTUAULAVIVLVJUIAVGVHUHUEZUFUGUEZVIVLAVGVHUFAF
+      JAFNUPZAJPUPZUMAFGVOAGOUPZUMAUNZUFUOUQAURUSZUTAVNVKUFUGUEVLAVMVKUFUGAFJGV
+      OVPVQVAVBAVKUFAJGVPVQVCVRVSVDVEVFVBVE $.
+  $}
+
+  ${
+    $d A s t u v w x y $.  $d B s t u v w x y $.  $d C s t u v w x y $.
+    $d ph s t u v w x y $.
+    c2rtrivertrd.1 $e |- ( ph -> A e. CC ) $.
+    c2rtrivertrd.2 $e |- ( ph -> B e. CC ) $.
+    c2rtrivertrd.3 $e |- ( ph -> C e. CC ) $.
+    c2rtrivertrd.4 $e |- ( ph -> ( Re ` A ) = ( Re ` B ) ) $.
+    c2rtrivertrd.5 $e |- ( ph -> ( Re ` B ) < ( Re ` C ) ) $.
+    c2rtrivertrd.6 $e |- ( ph -> ( Im ` A ) <_ ( Im ` B ) ) $.
+    $( Cartesian representation of a triangle with a vertical left edge and
+       apex to the right.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    c2rtrivertrd $p |- ( ph -> ( c2r " ( tri ` <. A , <. B , C >. >. ) ) =
+      { <. x , y >. | ( x e. ( ( Re ` A ) [,] ( Re ` C ) ) /\
+        y e. ( ( ( Im ` A ) + ( ( ( x - ( Re ` A ) ) /
+        ( ( Re ` C ) - ( Re ` A ) ) ) x.
+        ( ( Im ` C ) - ( Im ` A ) ) ) ) [,] ( ( Im ` B ) +
+        ( ( ( x - ( Re ` A ) ) /
+        ( ( Re ` C ) - ( Re ` A ) ) ) x.
+        ( ( Im ` C ) - ( Im ` B ) ) ) ) ) ) } ) $=
+      ( cmul co caddc wcel cmin adantr eqtrd oveq1d vu vv vw vs vt cc2r cop cfv
+      ctri cima cv ci cr wa copab cre cicc cim cdiv c2rtrid wceq cc0 wrex anass
+      c1 ancom anbi2i bitri bicomi cc simpl recn syl ax-icn simpr mulcld addcld
+      a1i adantl eltrid biimpd imp sylbi simpld crre eqcomd simpl2im tribaryred
+      ex simprd recld cle wbr leidd mpbid ltled imcld eqid unitssre sseli recnd
+      ax-1cn ad5antr subdird mullidd subadd23d ad4antr adddird pncan2d divcan4d
+      subdid oveq2d oveq12d jca rexlimdva mpd iccssre syl2anc resubcld remulcld
+      wss sseld readdcld w3a wb eliccconvd wi eqeq2d iimulcl 1re readdd remul2d
+      iirev imaddd immul2d oveq1 eqeq1d anbi12d oveq2 reximdv cvxbnd13d eqeltrd
+      breq2d tribaryimd baryvertbndd pncand subcld wne clt eqbrtrd ltned necomd
+      subne0d eleq2d adantrd redivcld elicc2 simp2d simp3d rexbidv baryvertalgd
+      crim letrd 3jca replimd npcand jca32 rspc3ev sylan9eq anbi2d syl5 expcomd
+      com12 com23 syld syldan biimprd impbid opabbidv ) AUFDEFUGUGUIUHZUJBUKZUL
+      CUKZMNZONZUVTPZUWAUMPZUWBUMPZUNZUNZBCUOUWADUPUHZFUPUHZUQNZPZUWBDURUHZUWAU
+      WJQNZUWKUWJQNZUSNZFURUHZUWNQNZMNZONZEURUHZUWQUWRUXBQNZMNZONZUQNZPZUNZBCUO
+      ABCDEFGHIUTAUWIUXHBCAUWIUXHAUWIUXHAUWIUNZUAUKZUBUKZONZUCUKZONZVEVAZUWDUXJ
+      DMNZUXKEMNZONZUXMFMNZONZVAZUNZUCVBVEUQNZVCZUBUYCVCZUAUYCVCZUXHAUWIUYFAUWI
+      UYFUXIAUWHUNZUWEUNZUYFUYHUXIUYHAUWHUWEUNZUNUXIAUWHUWEVDUYIUWIAUWHUWEVFVGV
+      HVIUYGUWEUYFUYGUWEUYFUYGUCUBUADEFUWDADVJPZUWHGRAEVJPZUWHHRAFVJPZUWHIRUWHU
+      WDVJPAUWHUWAUWCUWHUWFUWAVJPUWFUWGVKUWAVLVMUWHULUWBULVJPUWHVNVRUWHUWGUWBVJ
+      PUWFUWGVOUWBVLVMVPVQVSVTZWAWBWCWIWBUXIUYEUXHUAUYCUXIUXJUYCPZUNZUYDUXHUBUY
+      CUYOUXKUYCPZUNZUYBUXHUCUYCUYQUXMUYCPZUNZUYBUXHUYSUYBUNZUWMUXGUYTUWAUXJUWJ
+      MNZUXKEUPUHZMNZONZUXMUWKMNZONZUWLUYTUWAUWDUPUHZVUFUYSUWAVUGVAZUYBUYSAUWIV
+      UHUYSUXIUYNUYSUYOUYPUYQUYRVKZWDZWDZUWIVUGUWAUWIUWHVUGUWAVAUWEUWHVOZUWAUWB
+      WEVMWFWGRUYTUCUBUADEFUWDUYSUYJUYBUYSUXIUYJVUKAUYJUWIGRVMRZUYSUYKUYBUYSUXI
+      UYKVUKAUYKUWIHRVMRZUYSUYLUYBUYSUXIUYLVUKAUYLUWIIRVMRZUYSUYNUYBUYSUXIUYNVU
+      JWJRZUYSUYPUYBUYSUYOUYPVUIWJRZUYSUYRUYBUYQUYRVORZUYTUYBUXOUYSUYBVOZUXOUYA
+      VKVMZUYTUYBUYAVUSUXOUYAVOVMZWHSZUYTUCUBUAUWJVUBUWKUYSUWJUMPZUYBUYSUXIVVCV
+      UKAVVCUWIADGWKZRVMRUYSVUBUMPZUYBUYSUXIVVEVUKAVVEUWIAEHWKZRVMRUYSUWKUMPZUY
+      BUYSUXIVVGVUKAVVGUWIAFIWKZRVMRUYSUWJVUBWLWMZUYBUYSUXIVVIVUKAVVIUWIAUWJUWJ
+      WLWMVVIAUWJVVDWNAUWJVUBUWJWLJUUCWORVMRUYSVUBUWKWLWMZUYBUYSUXIVVJVUKAVVJUW
+      IAVUBUWKVVFVVHKWPRVMRVUPVUQVURVUTUUAUUBUYTUWBVEUXMQNZUWNMNZUXMUWRMNZONZVV
+      KUXBMNZVVMONZUQNZPUXGUYTUCUBUAUWNUXBUWRVVNVVPUWBUYSUWNUMPZUYBUYSUXIVVRVUK
+      AVVRUWIADGWQZRVMRUYSUXBUMPZUYBUYSUXIVVTVUKAVVTUWIAEHWQZRVMRUYSUWRUMPZUYBU
+      YSUXIVWBVUKAVWBUWIAFIWQZRVMRUYSUWNUXBWLWMZUYBUYSUXIVWDVUKAVWDUWILRVMRVUPV
+      UQVURVUTVVNVVNVAUYTVVNWRVRVVPVVPVAUYTVVPWRVRUYTUWBUWDURUHZUXJUWNMNUXKUXBM
+      NONVVMONUYSUWBVWEVAZUYBUYSAUWIVWFVUKUWIVWEUWBUWIUWHVWEUWBVAVULUWAUWBUVBVM
+      WFWGRUYTUCUBUADEFUWDVUMVUNVUOVUPVUQVURVUTVVAUUDSUUEUYTVVQUXFUWBUYTVVNUXAV
+      VPUXEUQUYTVVNUWNUXMUWSMNZONZUXAUYTVVNUWNVVMUXMUWNMNZQNZONZVWHUYTVVNUWNVWI
+      QNZVVMONVWKUYTVVLVWLVVMOUYTVVLVEUWNMNZVWIQNVWLUYTVEUXMUWNVEVJPZUYTXBVRZUY
+      TUYRUXMVJPVURUYRUXMUYCUMUXMWSWTXAVMZAUWNVJPZUWIUYNUYPUYRUYBAUWNVVSXAZXCZX
+      DUYTVWMUWNVWIQUYTUWNVWSXETSTUYTUWNVWIVVMVWSUYTUXMUWNVWPVWSVPUYTUXMUWRVWPA
+      UWRVJPZUWIUYNUYPUYRUYBAUWRVWCXAZXCZVPZXFSUYTVWJVWGUWNOUYTVWGVWJUYTUXMUWRU
+      WNVWPVXBVWSXKWFXLSUYTVWGUWTUWNOUYTUXMUWQUWSMUYTUWQUXMUYTUWQUXMUWPMNZUWPUS
+      NUXMUYTUWOVXDUWPUSUYTUWOUWJVXDONZUWJQNVXDUYTUWAVXEUWJQUYTUWAVVKUWJMNZVUEO
+      NZVXEUYTUWAVUFVXGVVBUYTVUDVXFVUEOUYTVUDUXLUWJMNZVXFUYTVUDVUAUXKUWJMNZONZV
+      XHUYTVUCVXIVUAOUYTVUBUWJUXKMUYTUWJVUBUYSUWJVUBVAZUYBAVXKUWIUYNUYPUYRJXGRW
+      FXLXLUYTVXHVXJUYTUXJUXKUWJUYTUYNUXJVJPVUPUYNUXJUYCUMUXJWSWTXAVMZUYTUYPUXK
+      VJPVUQUYPUXKUYCUMUXKWSWTXAVMZAUWJVJPZUWIUYNUYPUYRUYBAUWJVVDXAZXCZXHWFSUYT
+      UXLVVKUWJMUYTUXLUXNUXMQNZVVKUYTVXQUXLUYTUXLUXMUYTUXJUXKVXLVXMVQVWPUUFWFUY
+      TUXNVEUXMQVUTTSTSTSUYTVXGUWJVUEUXMUWJMNZQNZONZVXEUYTVXGUWJVXRQNZVUEONVXTU
+      YTVXFVYAVUEOUYTVXFVEUWJMNZVXRQNVYAUYTVEUXMUWJVWOVWPVXPXDUYTVYBUWJVXRQUYTU
+      WJVXPXETSTUYTUWJVXRVUEVXPUYTUXMUWJVWPVXPVPUYTUXMUWKVWPAUWKVJPZUWIUYNUYPUY
+      RUYBAUWKVVHXAZXCZVPXFSUYTVXSVXDUWJOUYTVXDVXSUYTUXMUWKUWJVWPVYEVXPXKWFXLSS
+      TUYTUWJVXDVXPUYTUXMUWPVWPUYTUWKUWJVYEVXPUUGZVPXISTUYTUXMUWPVWPVYFUYSUWPVB
+      UUHZUYBAVYGUWIUYNUYPUYRAUWKUWJVYDVXOAUWJUWKAUWJUWKVVDAUWJVUBUWKUUIJKUUJZU
+      UKUULUUMZXGRXJSWFZTXLSUYTVVPUXBUXMUXCMNZONZUXEUYTVVPUXBVVMUXMUXBMNZQNZONZ
+      VYLUYTVVPUXBVYMQNZVVMONVYOUYTVVOVYPVVMOUYTVVOVEUXBMNZVYMQNVYPUYTVEUXMUXBV
+      WOVWPAUXBVJPZUWIUYNUYPUYRUYBAUXBVWAXAZXCZXDUYTVYQUXBVYMQUYTUXBVYTXETSTUYT
+      UXBVYMVVMVYTUYTUXMUXBVWPVYTVPVXCXFSUYTVYNVYKUXBOUYTVYKVYNUYTUXMUWRUXBVWPV
+      XBVYTXKWFXLSUYTVYKUXDUXBOUYTUXMUWQUXCMVYJTXLSXMUUNWOXNWIXOXOXOXPWIAUXHUWI
+      AUXHUNZUWEUWHWUAUYFUWEWUAUWBVEUDUKZQNZUXAMNZWUBUXEMNZONZVAZUDUYCVCZUYFWUA
+      UDUXAUXEUWBWUAUWNUWTAVVRUXHVVSRWUAUWQUWSWUAUWOUWPWUAUWAUWJAUXHUWFAUWMUWFU
+      XGAUWLUMUWAAVVCVVGUWLUMYAVVDVVHUWJUWKXQXRYBUUOWBZAVVCUXHVVDRZXSAUWPUMPUXH
+      AUWKUWJVVHVVDXSZRAVYGUXHVYIRUUPZAUWSUMPUXHAUWRUWNVWCVVSXSRXTYCZWUAUXBUXDA
+      VVTUXHVWARWUAUWQUXCWULAUXCUMPUXHAUWRUXBVWCVWAXSRXTYCZWUAUXAUWBUXEWUMWUAUX
+      GUWGUXHUXGAUWMUXGVOVSZWUAUXFUMUWBWUAUXAUMPZUXEUMPZUXFUMYAWUMWUNUXAUXEXQXR
+      YBXPZWUNWUAUWGUXAUWBWLWMZUWBUXEWLWMZWUAUXGUWGWUSWUTYDZWUOWUAWUPWUQUNUXGWV
+      AYEWUAWUPWUQWUMWUNXNUXAUXEUWBUUQVMWOZUURWUAUWGWUSWUTWVBUUSUVCWUOYFWUAUWAV
+      EUEUKZQNZUWJMNZWVCUWKMNZONZVAZUEUYCVCZWUHUYFYGZWUAUEUWJUWKUWAWUJAVVGUXHVV
+      HRAUWJUWKWLWMUXHAUWJUWKVVDVVHVYHWPRUXHUWMAUWMUXGVKVSYFAWVIWVJYGUXHAWVHWVJ
+      UEUYCAWVCUYCPZUNZWVHWVJWVLWVHUNZWUHUWBWUCWVDUWNMNZWVCUWRMNZONZMNZWUBWVDUX
+      BMNZWVOONZMNZONZVAZUDUYCVCZUYFWVMWUHWWCWVMWUGWWBUDUYCWVMWUFWWAUWBWVMWUDWV
+      QWUEWVTOWVMUXAWVPWUCMWVMWVPUXAWVMWVPUWNWVCUWSMNZONZUXAWVLWVPWWEVAWVHWVLWV
+      PUWNWVOWVCUWNMNZQNZONZWWEWVLWVPUWNWWFQNZWVOONWWHWVLWVNWWIWVOOWVLWVNVWMWWF
+      QNWWIWVLVEWVCUWNVWNWVLXBVRZWVKWVCVJPZAWVKWVCUYCUMWVCWSWTZXAZVSZAVWQWVKVWR
+      RZXDWVLVWMUWNWWFQWVLUWNWWOXETSTWVLUWNWWFWVOWWOWVLWVCUWNWWNWWOVPWVLWVCUWRW
+      WNAVWTWVKVXARZVPZXFSWVLWWGWWDUWNOWVLWWDWWGWVLWVCUWRUWNWWNWWPWWOXKWFXLSRWV
+      MWWDUWTUWNOWVMWVCUWQUWSMWVMUWQWVCWVMUWQWVCUWPMNZUWPUSNWVCWVMUWOWWRUWPUSWV
+      MUWOUWJWWRONZUWJQNWWRWVMUWAWWSUWJQWVMUWAWVGWWSWVLWVHVOWVLWVGWWSVAWVHWVLWV
+      GUWJWVFWVCUWJMNZQNZONZWWSWVLWVGUWJWWTQNZWVFONWXBWVLWVEWXCWVFOWVLWVEVYBWWT
+      QNWXCWVLVEWVCUWJWWJWWNAVXNWVKVXORZXDWVLVYBUWJWWTQWVLUWJWXDXETSTWVLUWJWWTW
+      VFWXDWVLWVCUWJWWNWXDVPWVLWVCUWKWWNAVYCWVKVYDRZVPXFSWVLWXAWWRUWJOWVLWWRWXA
+      WVLWVCUWKUWJWWNWXEWXDXKWFXLSRSTWVMUWJWWRWVLVXNWVHWXDRWVMWVCUWPWVLWWKWVHWW
+      NRZWVLUWPVJPZWVHAWXGWVKAUWPWUKXARRZVPXISTWVMWVCUWPWXFWXHWVLVYGWVHAVYGWVKV
+      YIRRXJSWFZTXLSWFXLWVMUXEWVSWUBMWVMWVSUXEWVMWVSUXBWVCUXCMNZONZUXEWVLWVSWXK
+      VAWVHWVLWVSUXBWVOWVCUXBMNZQNZONZWXKWVLWVSUXBWXLQNZWVOONWXNWVLWVRWXOWVOOWV
+      LWVRVYQWXLQNWXOWVLVEWVCUXBWWJWWNAVYRWVKVYSRZXDWVLVYQUXBWXLQWVLUXBWXPXETST
+      WVLUXBWXLWVOWXPWVLWVCUXBWWNWXPVPWWQXFSWVLWXMWXJUXBOWVLWXJWXMWVLWVCUWRUXBW
+      WNWWPWXPXKWFXLSRWVMWXJUXDUXBOWVMWVCUWQUXCMWXITXLSWFXLXMYHUUTWAWVLWVHWWCUY
+      FYGWVLWWCWVHUYFWVLWWBWVHUYFYGUDUYCWVLWUBUYCPZUNZWVHWWBUYFWXRAWVKWXQUNZUNZ
+      WVHWWBUNZUYFYGAWVKWXQVDWYAWXTUYFWXTUXOWVGULWWAMNZONZUXTVAZUNZUCUYCVCZUBUY
+      CVCZUAUYCVCZWYAUYFWXTWVDWUCMNZUYCPZWVDWUBMNZUYCPZWVKYDZWYIWYKONZWVCONZVEV
+      AZWYCWYIDMNZWYKEMNZONZWVCFMNZONZVAZUNZUNWYHWXTWYMWYPXUBWXTWYJWYLWVKWXTWVD
+      UYCPZWUCUYCPZWYJWXSXUDAWVKXUDWXQWVCYMRVSZWXSXUEAWXQXUEWVKWUBYMVSVSWVDWUCY
+      IXRWXTXUDWXQWYLXUFWXSWXQAWVKWXQVOVSWVDWUBYIXRWXSWVKAWVKWXQVKVSUVDWXTWYPXU
+      AWUCWVDDMNZWYTONZMNZWUBWVDEMNZWYTONZMNZONZVAZWXTDEFWUBWYIWYKWVCAUYJWXSGRZ
+      AUYKWXSHRZAUYLWXSIRZWXSWVCUMPZAWVKXURWXQWWLRVSZWXSWUBUMPZAWXQXUTWVKUYCUMW
+      UBWSWTZVSVSZWYIWYIVAWXTWYIWRVRWYKWYKVAWXTWYKWRVRUVAZWDWXTWYCXUMXUAWXTXUMW
+      YCWXTXUMXUMUPUHZULXUMURUHZMNZONWYCWXTXUMWXTXUIXULWXTWUCXUHWXSWUCVJPZAWXQX
+      VGWVKWXQWUCWXQVEWUBVEUMPZWXQYJVRXVAXSZXAVSVSZWXTXUGWYTWXTWVDDWXSWVDVJPZAW
+      VKXVKWXQWVKWVDWVKVEWVCXVHWVKYJVRWWLXSZXARVSZXUOVPZWXTWVCFWXSWWKAWVKWWKWXQ
+      WWMRVSZXUQVPZVQZVPZWXTWUBXUKWXSWUBVJPZAWXQXVSWVKWXQWUBXVAXAVSVSZWXTXUJWYT
+      WXTWVDEXVMXUPVPZXVPVQZVPZVQUVEWXTXVDWVGXVFWYBOWXTXVDWUCWVGMNZWUBWVGMNZONZ
+      WVGWXTXVDXUIUPUHZXULUPUHZONXWFWXTXUIXULXVRXWCYKWXTXWGXWDXWHXWEOWXTXWGWUCX
+      UHUPUHZMNXWDWXTWUCXUHWXSWUCUMPZAWXQXWJWVKXVIVSVSZXVQYLWXTXWIWVGWUCMWXTXWI
+      XUGUPUHZWYTUPUHZONWVGWXTXUGWYTXVNXVPYKWXTXWLWVEXWMWVFOWXTWVDDWXSWVDUMPZAW
+      VKXWNWXQXVLRVSZXUOYLWXTWVCFXUSXUQYLZXMSXLSWXTXWHWUBXUKUPUHZMNXWEWXTWUBXUK
+      XVBXWBYLWXTXWQWVGWUBMWXTXWQWVDVUBMNZWVFONZWVGWXTXWQXUJUPUHZXWMONXWSWXTXUJ
+      WYTXWAXVPYKWXTXWTXWRXWMWVFOWXTWVDEXWOXUPYLXWPXMSWXTXWRWVEWVFOWXTVUBUWJWVD
+      MWXTUWJVUBAVXKWXSJRWFXLTSXLSXMSWXTXWFWUCWUBONZWVGMNZWVGWXTXXBXWFWXTWUCWUB
+      WVGXVJXVTWXTWVEWVFWXTWVDUWJXVMAVXNWXSVXORVPWXTWVCUWKXVOAVYCWXSVYDRVPVQZXH
+      WFWXTXXBVEWVGMNWVGWXTXXAVEWVGMWXTVEWUBVWNWXTXBVRXVTUVFTWXTWVGXXCXESSSWXTX
+      VEWWAULMWXTXVEWUCXUHURUHZMNZWUBXUKURUHZMNZONZWWAWXTXVEXUIURUHZXULURUHZONX
+      XHWXTXUIXULXVRXWCYNWXTXXIXXEXXJXXGOWXTWUCXUHXWKXVQYOWXTWUBXUKXVBXWBYOXMSW
+      XTXXEWVQXXGWVTOWXTXXDWVPWUCMWXTXXDXUGURUHZWYTURUHZONWVPWXTXUGWYTXVNXVPYNW
+      XTXXKWVNXXLWVOOWXTWVDDXWOXUOYOWXTWVCFXUSXUQYOZXMSXLWXTXXFWVSWUBMWXTXXFXUJ
+      URUHZXXLONWVSWXTXUJWYTXWAXVPYNWXTXXNWVRXXLWVOOWXTWVDEXWOXUPYOXXMXMSXLXMSX
+      LXMSWFWXTXUAXUMWXTWYPXUNXVCWJWFSUVGWYEXUCWYIUXKONZUXMONZVEVAZWYCWYQUXQONZ
+      UXSONZVAZUNWYNUXMONZVEVAZWYCWYSUXSONZVAZUNUAUBUCWYIWYKWVCUYCUYCUYCUXJWYIV
+      AZUXOXXQWYDXXTXYEUXNXXPVEXYEUXLXXOUXMOUXJWYIUXKOYPTYQXYEUXTXXSWYCXYEUXRXX
+      RUXSOXYEUXPWYQUXQOUXJWYIDMYPTTYHYRUXKWYKVAZXXQXYBXXTXYDXYFXXPXYAVEXYFXXOW
+      YNUXMOUXKWYKWYIOYSTYQXYFXXSXYCWYCXYFXXRWYSUXSOXYFUXQWYRWYQOUXKWYKEMYPXLTY
+      HYRUXMWVCVAZXYBWYPXYDXUBXYGXYAWYOVEUXMWVCWYNOYSYQXYGXYCXUAWYCXYGUXSWYTWYS
+      OUXMWVCFMYPXLYHYRUVHVMWYAWYGUYEUAUYCWYAWYFUYDUBUYCWYAWYEUYBUCUYCWYAWYEUYB
+      WYAWYDUYAUXOWYAWYCUWDUXTWYAUWDWYCWVHWWBUWDWVGUWCONWYCUWAWVGUWCOYPWWBUWCWY
+      BWVGOUWBWWAULMYSXLUVIWFYQUVJWAYTYTYTUVKUVMWCUVLXOUVNWBUVOWIXORXPXPWUAUWEU
+      YFAUXHUWHUWEUYFYEWUAUWFUWGWUIWURXNZUYMUVPUVQXPXYHXNWIUVRUVSS $.
+  $}
+
+  ${
+    $d A s t u v w x y $.  $d B s t u v w x y $.  $d C s t u v w x y $.
+    $d ph s t u v w x y $.
+    c2rtrivertld.1 $e |- ( ph -> A e. CC ) $.
+    c2rtrivertld.2 $e |- ( ph -> B e. CC ) $.
+    c2rtrivertld.3 $e |- ( ph -> C e. CC ) $.
+    c2rtrivertld.4 $e |- ( ph -> ( Re ` A ) < ( Re ` B ) ) $.
+    c2rtrivertld.5 $e |- ( ph -> ( Re ` B ) = ( Re ` C ) ) $.
+    c2rtrivertld.6 $e |- ( ph -> ( Im ` B ) <_ ( Im ` C ) ) $.
+    $( Cartesian representation of a triangle with apex to the left and a
+       vertical right edge.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    c2rtrivertld $p |- ( ph -> ( c2r " ( tri ` <. A , <. B , C >. >. ) ) =
+      { <. x , y >. | ( x e. ( ( Re ` A ) [,] ( Re ` B ) ) /\
+        y e. ( ( ( Im ` A ) + ( ( ( x - ( Re ` A ) ) /
+        ( ( Re ` B ) - ( Re ` A ) ) ) x.
+        ( ( Im ` B ) - ( Im ` A ) ) ) ) [,] ( ( Im ` A ) +
+        ( ( ( x - ( Re ` A ) ) /
+        ( ( Re ` B ) - ( Re ` A ) ) ) x.
+        ( ( Im ` C ) - ( Im ` A ) ) ) ) ) ) } ) $=
+      ( cmul co caddc wcel cmin adantr syl eqtrd vu vv vw vt cc2r cop ctri cima
+      vs cfv cv ci cr wa copab cre cicc cim cdiv c2rtrid c1 wceq cc0 wrex anass
+      ancom anbi2i cc simpl recn simpr mulcld addcld adantl eltrid biimpd sylbi
+      a1i imp simpld eqcomd simpl2im simprd recld cle wbr oveq2d eleq2d eqeltrd
+      mpbid unitssre sseli recnd imcld addcomd oveq1d add32d eqid ax-1cn subcld
+      ex subdid addsub12d subdird mullidd subsubd subidd addlidd ad4antr necomd
+      adddird wne subne0d divcan4d oveq12d jca rexlimdva mpd eliccconvd syl2anc
+      wi sseld resubcld remulcld readdcld w3a wb subadd23d eqeq2d iirev iimulcl
+      oveq1 eqeq1d anbi12d oveq2 readdd remul2d imaddd immul2d reximdv crre wss
+      bitri bicomi ax-icn tribaryred ltled leidd breq2d tribaryimd baryvertbndd
+      cvxbnd13d addassd pncand addsubd iccssre adantrd redivcld iccssred elicc2
+      crim ltned simp2d simp3d letrd sselid pncan2d 3eqtrd rexbidv baryvertalgd
+      rspc3ev sylan9eq replimd npcand eqtr3d eqcom bitrd anbi2d expcomd adantlr
+      3jca biimprd tricycd impbid opabbidv ) AUEDEFUFUFUGUJZUHBUKZULCUKZMNZONZU
+      WFPZUWGUMPZUWHUMPZUNZUNZBCUOUWGDUPUJZEUPUJZUQNZPZUWHDURUJZUWGUWPQNZUWQUWP
+      QNZUSNZEURUJZUWTQNZMNZONZUWTUXCFURUJZUWTQNZMNZONZUQNZPZUNZBCUOABCDEFGHIUT
+      AUWOUXNBCAUWOUXNAUWOUXNAUWOUNZUAUKZUBUKZONZUCUKZONZVAVBZUWJUXPDMNUXQEMNON
+      UXSFMNONVBZUNZUCVCVAUQNZVDZUBUYDVDZUAUYDVDZUXNAUWOUYGAUWOUYGUXOAUWNUNZUWK
+      UNZUYGUYIUXOUYIAUWNUWKUNZUNUXOAUWNUWKVEUYJUWOAUWNUWKVFVGUUCUUDUYHUWKUYGUY
+      HUWKUYGUYHUCUBUADEFUWJADVHPZUWNGRAEVHPZUWNHRAFVHPZUWNIRUWNUWJVHPZAUWNUWGU
+      WIUWNUWLUWGVHPUWLUWMVIUWGVJSUWNULUWHULVHPUWNUUEVRUWNUWMUWHVHPUWLUWMVKUWHV
+      JSVLVMZVNVOVPVSVQXAVSUXOUYFUXNUAUYDUXOUXPUYDPZUNZUYEUXNUBUYDUYQUXQUYDPZUN
+      ZUYCUXNUCUYDUYSUXSUYDPZUNZUYCUXNVUAUYCUNZUWSUXMVUBUWGUXPUWPMNZUXQUWQMNZON
+      UXSFUPUJZMNZONZUWRVUBUWGUWJUPUJZVUGVUAUWGVUHVBZUYCVUAAUWOVUIVUAUXOUYPVUAU
+      YQUYRUYSUYTVIZVTZVTZUWOVUHUWGUWOUWNVUHUWGVBUWKUWNVKZUWGUWHUUASWAWBRVUBUCU
+      BUADEFUWJVUAUYKUYCVUAUXOUYKVULAUYKUWOGRSRZVUAUYLUYCVUAUXOUYLVULAUYLUWOHRS
+      RZVUAUYMUYCVUAUXOUYMVULAUYMUWOIRSRZVUAUYPUYCVUAUXOUYPVUKWCRZVUAUYRUYCVUAU
+      YQUYRVUJWCRZVUAUYTUYCUYSUYTVKRZVUBUYCUYAVUAUYCVKZUYAUYBVISZVUBUYCUYBVUTUY
+      AUYBVKSZUUFTZVUBVUGUWPVUEUQNZPVUGUWRPVUBUCUBUAUWPUWQVUEVUAUWPUMPZUYCVUAUX
+      OVVEVULAVVEUWOADGWDZRSRZVUAUWQUMPZUYCVUAUXOVVHVULAVVHUWOAEHWDZRSRZVUAVUEU
+      MPZUYCVUAUXOVVKVULAVVKUWOAFIWDRSRZVUAUWPUWQWEWFZUYCVUAUXOVVMVULAVVMUWOAUW
+      PUWQVVFVVIJUUGZRSRVUAUWQVUEWEWFZUYCVUAUXOVVOVULAVVOUWOAUWQUWQWEWFVVOAUWQV
+      VIUUHAUWQVUEUWQWEKUUIWJRSRVUQVURVUSVVAUULVUBVVDUWRVUGVUAVVDUWRVBZUYCVUAUX
+      OVVPVULAVVPUWOAUWRVVDAUWQVUEUWPUQKWGWARSRWHWJWIVUBUWHVAUXPQNZUXDMNZUXPUWT
+      MNZONZVVQUXHMNZVVSONZUQNZPUXMVUBUWHUXQUXDMNZUXSUXHMNZONVVSONZVWCVUBUWHVVS
+      VWDONZVWEONZVWFVUBUWHUWJURUJZVWHVUAUWHVWIVBZUYCVUAAUWOVWJVULUWOVWIUWHUWOU
+      WNVWIUWHVBVUMUWGUWHUVASWAWBRVUBUCUBUADEFUWJVUNVUOVUPVUQVURVUSVVAVVBUUJTVU
+      BVWHVWDVVSONZVWEONVWFVUBVWGVWKVWEOVUBVVSVWDVUBUXPUWTVUBUXPVUBUYPUXPUMPVUQ
+      UYDUMUXPWKWLSWMZVUBUWTVUAUWTUMPZUYCVUAUXOVWMVULAVWMUWOADGWNZRSRZWMZVLZVUB
+      UXQUXDVUBUXQVUBUYRUXQUMPVURUYDUMUXQWKWLSWMZVUBUXDVUAUXDUMPZUYCVUAUXOVWSVU
+      LAVWSUWOAEHWNZRSRZWMZVLZWOWPVUBVWDVVSVWEVXCVWQVUBUXSUXHVUBUXSVUBUYTUXSUMP
+      VUSUYDUMUXSWKWLSWMZVUBUXHVUAUXHUMPZUYCVUAUXOVXEVULAVXEUWOAFIWNZRSRZWMZVLW
+      QTTVUBUAUCUBUXDUXHUWTVVTVWBVWFVXAVXGVWOVUAUXDUXHWEWFZUYCVUAUXOVXIVULAVXIU
+      WOLRSRVURVUSVUQVUBUXQUXSONZUXPONZUXTVAVUBUXTVXKVUBUXTUXQUXPONZUXSONVXKVUB
+      UXRVXLUXSOVUBUXPUXQVWLVWRWOWPVUBUXQUXPUXSVWRVWLVXDWQTWAVVATZVVTVVTVBVUBVV
+      TWRVRVWBVWBVBVUBVWBWRVRVWFVWFVBVUBVWFWRVRUUKWIVUBVWCUXLUWHVUBVVTUXGVWBUXK
+      UQVUBVVTUWTVVQUXEMNZONZUXGVUBVXOVVTVUBVXOUWTVVRVVQUWTMNZQNZONZVVTVUBVXNVX
+      QUWTOVUBVVQUXDUWTVUBVAUXPVAVHPZVUBWSVRZVWLWTZVXBVWPXBWGVUBVXRVVRUWTVXPQNZ
+      ONVVTVUBUWTVVRVXPVWPVUBVVQUXDVYAVXBVLVUBVVQUWTVYAVWPVLZXCVUBVYBVVSVVROVUB
+      VYBUWTUWTVVSQNZQNZVVSVUBVXPVYDUWTQVUBVXPVAUWTMNZVVSQNVYDVUBVAUXPUWTVXTVWL
+      VWPXDVUBVYFUWTVVSQVUBUWTVWPXEWPTWGVUBVYEVCVVSONZVVSVUBVYEUWTUWTQNZVVSONVY
+      GVUBUWTUWTVVSVWPVWPVWQXFVUBVYHVCVVSOVUBUWTVWPXGWPTVUBVVSVWQXHTTZWGTTWAVUB
+      VXNUXFUWTOVUBVVQUXCUXEMVUBUXCVVQVUBUXCVVQUXBMNZUXBUSNVVQVUBUXAVYJUXBUSVUB
+      UXAVVQUWQMNZVVQUWPMNZQNZVYJVUBUXAVYKUWPVUCQNZQNZVYMVUBUXAVYKUWPQNVUCONZVY
+      OVUBUXAVYKVUCONZUWPQNVYPVUBUWGVYQUWPQVUBUWGVUCVYKONZVYQVUBUWGVUCVUDVUFONZ
+      ONZVYRVUBUWGVUGVYTVVCVUBVUCVUDVUFVUBUXPUWPVWLVUBUWPVVGWMZVLZVUBUXQUWQVWRV
+      UBUWQVVJWMZVLVUBUXSVUEVXDVUBVUEVVLWMVLUUMTVUBVYSVYKVUCOVUBVYSVXJUWQMNZVYK
+      VUBVYSVUDUXSUWQMNZONZWUDVUBVUFWUEVUDOVUBWUEVUFVUBUWQVUEUXSMVUAUWQVUEVBZUY
+      CAWUGUWOUYPUYRUYTKXIRWGWAWGVUBWUDWUFVUBUXQUXSUWQVWRVXDWUCXKWATVUBVXJVVQUW
+      QMVUBVXJVXKUXPQNZVVQVUBWUHVXJVUBVXJUXPVUBUXQUXSVWRVXDVMVWLUUNWAVUBVXKVAUX
+      PQVXMWPTWPTWGTVUBVUCVYKWUBVUBVVQUWQVYAWUCVLZWOTWPVUBVYKVUCUWPWUIWUBWUAUUO
+      TVUBVYOVYPVUBVYKUWPVUCWUIWUAWUBXFWATVUBVYMVYOVUBVYLVYNVYKQVUBVYLVAUWPMNZV
+      UCQNVYNVUBVAUXPUWPVXTVWLWUAXDVUBWUJUWPVUCQVUBUWPWUAXEWPTWGWATVUBVYJVYMVUB
+      VVQUWQUWPVYAWUCWUAXBWATWPVUBVVQUXBVYAVUBUWQUWPWUCWUAWTVUBUWQUWPWUCWUAVUBU
+      WPUWQVUAUWPUWQXLZUYCAWUKUWOUYPUYRUYTAUWPUWQVVFJUVBZXIRXJXMXNTWAZWPWGTVUBV
+      WBUWTVVQUXIMNZONZUXKVUBWUOVWBVUBWUOUWTVWAVXPQNZONZVWBVUBWUNWUPUWTOVUBVVQU
+      XHUWTVYAVXHVWPXBWGVUBWUQVWAVYBONVWBVUBUWTVWAVXPVWPVUBVVQUXHVYAVXHVLVYCXCV
+      UBVYBVVSVWAOVYIWGTTWAVUBWUNUXJUWTOVUBVVQUXCUXIMWUMWPWGTXOWHWJXPXAXQXQXQXR
+      XAAUXNUWOAUXNUNZUWKUWNWURUWJEFDUFUFUGUJZPZUWKWURUYAUWJUXPEMNZUXQFMNZONZUX
+      SDMNZONZVBZUNZUCUYDVDZUBUYDVDZUAUYDVDZWUTWURUWGVAUDUKZQNZUWPMNZWVKUWQMNZO
+      NZVBZUDUYDVDWVJWURUDUWPUWQUWGAVVEUXNVVFRZAVVHUXNVVIRZAVVMUXNVVNRUXNUWSAUW
+      SUXMVIVNXSWURWVPWVJUDUYDWURWVKUYDPZUNZWVPWVJWVTWVPUNZWVPWVJWVTWVPVKZWWAUW
+      HVAUIUKZQNZWVLUWTMNZWVKUXDMNZONZMNZWWCWWEWVKUXHMNZONZMNZONZVBZUIUYDVDZWVP
+      WVJYAZWWAUWHWWDUXGMNZWWCUXKMNZONZVBZUIUYDVDZWWNWWAWURWWTWWAWURWVSWVTWVPVI
+      ZVTZWURUIUXGUXKUWHWURUWTUXFAVWMUXNVWNRZWURUXCUXEWURUXAUXBWURUWGUWPAUXNUWL
+      AUWSUWLUXMAUWRUMUWGAVVEVVHUWRUMUUBVVFVVIUWPUWQUUPXTYBUUQVSZWVQYCWURUWQUWP
+      WVRWVQYCWURUWQUWPWURUWQWVRWMZWURUWPWVQWMZWURUWPUWQAWUKUXNWULRXJXMZUURZWUR
+      UXDUWTAVWSUXNVWTRZWXCYCYDYEZWURUWTUXJWXCWURUXCUXIWXHWURUXHUWTAVXEUXNVXFRZ
+      WXCYCYDYEZWURUXGUWHUXKWXJWURUXMUWMUXNUXMAUWSUXMVKVNZWURUXLUMUWHWURUXGUXKW
+      XJWXLUUSYBXRZWXLWURUWMUXGUWHWEWFZUWHUXKWEWFZWURUXMUWMWXOWXPYFZWXMWURUXGUM
+      PZUXKUMPZUNUXMWXQYGWURWXRWXSWXJWXLXPUXGUXKUWHUUTSWJZUVCWURUWMWXOWXPWXTUVD
+      UVEWXMXSSWWAWWTWWNWWAWWSWWMUIUYDWWAWWRWWLUWHWWAWWPWWHWWQWWKOWWAUXGWWGWWDM
+      WWAWWGUXGWWAWWGUWTWVKUXEMNZONZUXGWWAWWGUWTWWFWVKUWTMNZQNZONZWYBWWAWWGUWTW
+      YCQNZWWFONWYEWWAWWEWYFWWFOWWAWWEVYFWYCQNWYFWWAVAWVKUWTVXSWWAWSVRZWWAWVKWW
+      AUYDUMWVKWKWWAWURWVSWXAWCUVFWMZWWAWURUWTVHPWXBWURUWTWXCWMSZXDWWAVYFUWTWYC
+      QWWAUWTWYIXEWPTZWPWWAUWTWYCWWFWYIWWAWVKUWTWYHWYIVLZWWAWVKUXDWYHWWAWURUXDV
+      HPWXBWURUXDWXIWMSZVLYHTWWAWYDWYAUWTOWWAWYAWYDWWAWVKUXDUWTWYHWYLWYIXBWAWGT
+      WWAWYAUXFUWTOWWAWVKUXCUXEMWWAUXCWVKWWAUXCWVKUXBMNZUXBUSNWVKWWAUXAWYMUXBUS
+      WWAUXAUWPWYMONZUWPQNWYMWWAUWGWYNUWPQWWAUWGWVOWYNWWBWWAWVOUWPWVNWVKUWPMNZQ
+      NZONZWYNWWAWVOUWPWYOQNZWVNONWYQWWAWVMWYRWVNOWWAWVMWUJWYOQNWYRWWAVAWVKUWPW
+      YGWYHWWAWURUWPVHPWXBWXFSZXDWWAWUJUWPWYOQWWAUWPWYSXEWPTWPWWAUWPWYOWVNWYSWW
+      AWVKUWPWYHWYSVLWWAWVKUWQWYHWWAWURUWQVHPWXBWXESZVLYHTWWAWYPWYMUWPOWWAWYMWY
+      PWWAWVKUWQUWPWYHWYTWYSXBWAWGTTWPWWAUWPWYMWYSWWAWVKUXBWYHWWAUWQUWPWYTWYSWT
+      ZVLUVGTWPWWAWVKUXBWYHXUAWWAWURUXBVCXLWXBWXGSXNTWAZWPWGTWAWGWWAUXKWWJWWCMW
+      WAWWJUXKWWAWWJUWTWWIWYCQNZONZUWTWVKUXIMNZONUXKWWAWWJWYFWWIONXUDWWAWWEWYFW
+      WIOWYJWPWWAUWTWYCWWIWYIWYKWWAWVKUXHWYHWWAWURUXHVHPWXBWURUXHWXKWMSZVLYHTWW
+      AXUCXUEUWTOWWAXUEXUCWWAWVKUXHUWTWYHXUFWYIXBWAWGWWAXUEUXJUWTOWWAWVKUXCUXIM
+      XUBWPWGUVHWAWGXOYIUVIVPXRWVTWWNWWOYAZWVPAWVSXUGUXNAWVSUNZWWMWWOUIUYDXUHWW
+      CUYDPZUNZWVPWWMWVJXUJAWVSXUIUNZUNZWVPWWMUNZWVJYAAWVSXUIVEXULXUMWVJXULXUMU
+      NZUYAWVEWWDWVLDMNZWVKEMNZONZMNZWWCXUOWVKFMNZONZMNZONZVBZUNZUCUYDVDZUBUYDV
+      DZUAUYDVDZWVJXULXVGXUMXULVAWVLQNZWWDMNZUYDPZXVHWWCMNZUYDPZWVLUYDPZYFZXVIX
+      VKONZWVLONZVAVBZXVIEMNZXVKFMNZONZXUOONZXVBVBZUNZUNXVGXULXVNXWCXULXVJXVLXV
+      MXULXVHUYDPZWWDUYDPZXVJXULXVMXWDXUKXVMAWVSXVMXUIWVKYJRVNZWVLYJSZXUKXWEAXU
+      IXWEWVSWWCYJVNVNZXVHWWDYKXTXULXWDXUIXVLXWGXUKXUIAWVSXUIVKVNXVHWWCYKXTXWFU
+      WAXULXVQXWBXULXVQXWAWWDXVHEMNZXUOONZMNZWWCXVHFMNZXUOONZMNZONZVBZXULEFDWWC
+      XVIXVKWVLAUYLXUKHRZAUYMXUKIRZAUYKXUKGRZXULXVMWVLUMPXWFUYDUMWVLWKWLSZXUKWW
+      CUMPZAXUIXXAWVSUYDUMWWCWKWLVNVNZXVIXVIVBXULXVIWRVRXVKXVKVBXULXVKWRVRUVJZV
+      TXULXWAXWOXVBXULXVQXWPXXCWCXULXWKXURXWNXVAOXULXWJXUQWWDMXULXWJXUPXUOONXUQ
+      XULXWIXUPXUOOXULXVHWVKEMXULXVHVCWVKONZWVKXULXVHVAVAQNZWVKONXXDXULVAVAWVKV
+      XSXULWSVRZXXFXULWVKXUKWVKUMPZAWVSXXGXUIUYDUMWVKWKWLRVNZWMZXFXULXXEVCWVKOX
+      ULVAXXFXGWPTXULWVKXXIXHTZWPWPXULXUPXUOXULWVKEXXIXWQVLZXULWVLDXULWVLXWTWMZ
+      XWSVLZWOTWGXULXWMXUTWWCMXULXWMXUSXUOONXUTXULXWLXUSXUOOXULXVHWVKFMXXJWPWPX
+      ULXUSXUOXULWVKFXXIXWRVLZXXMWOTWGXOTXPXPXVDXWCXVIUXQONZUXSONZVAVBZXVRWVBON
+      ZWVDONZXVBVBZUNXVOUXSONZVAVBZXVTWVDONZXVBVBZUNUAUBUCXVIXVKWVLUYDUYDUYDUXP
+      XVIVBZUYAXXQXVCXXTXYEUXTXXPVAXYEUXRXXOUXSOUXPXVIUXQOYLWPYMXYEWVEXXSXVBXYE
+      WVCXXRWVDOXYEWVAXVRWVBOUXPXVIEMYLWPWPYMYNUXQXVKVBZXXQXYBXXTXYDXYFXXPXYAVA
+      XYFXXOXVOUXSOUXQXVKXVIOYOWPYMXYFXXSXYCXVBXYFXXRXVTWVDOXYFWVBXVSXVROUXQXVK
+      FMYLWGWPYMYNUXSWVLVBZXYBXVQXYDXWBXYGXYAXVPVAUXSWVLXVOOYOYMXYGXYCXWAXVBXYG
+      WVDXUOXVTOUXSWVLDMYLWGYMYNUVKSRXUNXVFWVIUAUYDXUNXVEWVHUBUYDXUNXVDWVGUCUYD
+      XUNXVDWVGXUNXVCWVFUYAXUNXVCWVEUWJVBZWVFXUNXVBUWJWVEXUNUWJXVBXUNWVOULWWLMN
+      ZONZUWJXVBXUMXYJUWJVBXULXUMUWJXYJWVPWWMUWJWVOUWIONXYJUWGWVOUWIOYLWWMUWIXY
+      IWVOOUWHWWLULMYOWGUVLWAVNXULXYJXVBVBXUMXULXVBXYJXULXVBXVBUPUJZULXVBURUJZM
+      NZONXYJXULXVBXULXURXVAXULWWDXUQXULWWDXULXWEWWDUMPXWHUYDUMWWDWKWLSZWMZXULX
+      UOXUPXXMXXKVMZVLZXULWWCXUTXULWWCXXBWMZXULXUOXUSXXMXXNVMZVLZVMUVMXULXYKWVO
+      XYMXYIOXULXYKWWDWVOMNZWWCWVOMNZONZWVOXULXYKXURUPUJZXVAUPUJZONYUCXULXURXVA
+      XYQXYTYPXULYUDYUAYUEYUBOXULYUDWWDXUQUPUJZMNYUAXULWWDXUQXYNXYPYQXULYUFWVOW
+      WDMXULYUFXUOUPUJZXUPUPUJZONWVOXULXUOXUPXXMXXKYPXULYUGWVMYUHWVNOXULWVLDXWT
+      XWSYQZXULWVKEXXHXWQYQXOTWGTXULYUEWWCXUTUPUJZMNYUBXULWWCXUTXXBXYSYQXULYUJW
+      VOWWCMXULYUJWVMWVKVUEMNZONZWVOXULYUJYUGXUSUPUJZONYULXULXUOXUSXXMXXNYPXULY
+      UGWVMYUMYUKOYUIXULWVKFXXHXWRYQXOTXULYUKWVNWVMOXULVUEUWQWVKMXULUWQVUEAWUGX
+      UKKRWAWGWGTWGTXOTXULYUCWWDWWCONZWVOMNZWVOXULYUOYUCXULWWDWWCWVOXYOXYRXULWV
+      MWVNXULWVLUWPXXLXULUWPXULDXWSWDWMVLXULWVKUWQXXIXULUWQXULEXWQWDWMVLVMZXKWA
+      XULYUOVAWVOMNWVOXULYUNVAWVOMXULVAWWCXXFXYRUVNWPXULWVOYUPXETTTXULXYLWWLULM
+      XULXYLWWDXUQURUJZMNZWWCXUTURUJZMNZONZWWLXULXYLXURURUJZXVAURUJZONYVAXULXUR
+      XVAXYQXYTYRXULYVBYURYVCYUTOXULWWDXUQXYNXYPYSXULWWCXUTXXBXYSYSXOTXULYURWWH
+      YUTWWKOXULYUQWWGWWDMXULYUQXUOURUJZXUPURUJZONWWGXULXUOXUPXXMXXKYRXULYVDWWE
+      YVEWWFOXULWVLDXWTXWSYSZXULWVKEXXHXWQYSXOTWGXULYUSWWJWWCMXULYUSYVDXUSURUJZ
+      ONWWJXULXUOXUSXXMXXNYRXULYVDWWEYVGWWIOYVFXULWVKFXXHXWRYSXOTWGXOTWGXOTWARU
+      VOWAYIXYHWVFYGXUNWVEUWJUVPVRUVQUVRVPYTYTYTXRXAVQUVSXQUVTRXRXRXAXQXRWURWUT
+      WVJWURUCUBUAEFDUWJAUYLUXNHRAUYMUXNIRAUYKUXNGRWURUWNUYNWURUWLUWMWXDWXNXPZU
+      YOSVOUWBXRAWUTUWKYAUXNAWUTUWKAWUSUWFUWJAUWFWUSADEFGHIUWCWAWHVPRXRYVHXPXAU
+      WDUWET $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.  $d C x y $.  $d ph x y $.
+    trivertrdmared.1 $e |- ( ph -> A e. CC ) $.
+    trivertrdmared.2 $e |- ( ph -> B e. CC ) $.
+    trivertrdmared.3 $e |- ( ph -> C e. CC ) $.
+    trivertrdmared.4 $e |- ( ph -> ( Re ` A ) < ( Re ` B ) ) $.
+    trivertrdmared.5 $e |- ( ph -> ( Re ` B ) = ( Re ` C ) ) $.
+    $( Any complex triangle with a vertical right edge belongs to dom area.
+       (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    trivertrdmared $p |- ( ph -> ( c2r " ( tri ` <. A , <. B , C >. >. ) )
+                                               e. dom area ) $=
+      ( vx vy cfv wbr cop wcel cr syl cmin co wceq cim cle cc2r ctri cima carea
+      wo cdm wa imcld jca letric cre cv cdiv cmul caddc simpl recld leidd simpr
+      clt eqid a1i cc c2rtrivertld areaquaddmd ex tricom23d breq2d mpbid eqcomd
+      imaeq2d eqeltrd jaod mpd ) ACUALZDUALZUBMZVRVQUBMZUGZUCBCDNNUDLZUEZUFUHZO
+      ZAVQPOZVRPOZUIWAAWFWGACFUJZADGUJZUKVQVRULQAVSWEVTAVSWEAVSUIZJKBUMLZCUMLZB
+      UALZVQWCWMJUNWKRSZWLWKRSUOSZVQWMRSZUPSUQSZWMVRWMWOVRWMRSZUPSUQSZWJAWKPOZA
+      VSURZABEUSZQWJAWLPOXAACFUSQWJAWMPOZXAABEUJZQZWJAWFXAWHQXEWJAWGXAWIQWJAWKW
+      LVBMZXAHQZWJAWMWMUBMZXAAWMXDUTZQAVSVAZWQWQTWJWQVCVDWSWSTWJWSVCVDWJJKBCDWJ
+      ABVEOZXAEQWJACVEOZXAFQWJADVEOZXAGQXGWJAWLDUMLZTXAIQXJVFVGVHAVTWEAVTUIZWCU
+      CBDCNNUDLZUEZWDXOWBXPUCXOBCDXOAXKAVTURZEQZXOAXLXRFQZXOAXMXRGQZVIVMXOJKWKX
+      NWMVRXQWMWNXNWKRSUOSZWRUPSUQSZWMVQWMYBWPUPSUQSZXOAWTXRXBQXOAXNPOXRADGUSQX
+      OAXCXRXDQZXOAWGXRWIQYEXOAWFXRWHQXOAWKXNVBMZXRAXFYFHAWLXNWKVBIVJVKQZXOAXHX
+      RXIQAVTVAZYCYCTXOYCVCVDYDYDTXOYDVCVDXOJKBDCXSYAXTYGXOAXNWLTXRAWLXNIVLQYHV
+      FVGVNVHVOVP $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.  $d C x y $.  $d ph x y $.
+    trivertldmared.1 $e |- ( ph -> A e. CC ) $.
+    trivertldmared.2 $e |- ( ph -> B e. CC ) $.
+    trivertldmared.3 $e |- ( ph -> C e. CC ) $.
+    trivertldmared.4 $e |- ( ph -> ( Re ` A ) = ( Re ` B ) ) $.
+    trivertldmared.5 $e |- ( ph -> ( Re ` B ) < ( Re ` C ) ) $.
+    $( Any complex triangle with a vertical left edge belongs to dom area.
+       (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    trivertldmared $p |- ( ph -> ( c2r " ( tri ` <. A , <. B , C >. >. ) )
+                                               e. dom area ) $=
+      ( vx vy cfv wbr cop wcel cr syl cmin co wceq cim cle cc2r ctri cima carea
+      wo cdm wa imcld jca letric cre cv cdiv cmul caddc simpl clt breq1d mpbird
+      recld simpr eqid a1i cc c2rtrivertrd areaquaddmd tricom12d imaeq2d eqcomd
+      leidd ex eqeltrd jaod mpd ) ABUALZCUALZUBMZVRVQUBMZUGZUCBCDNNUDLZUEZUFUHZ
+      OZAVQPOZVRPOZUIWAAWFWGABEUJZACFUJZUKVQVRULQAVSWEVTAVSWEAVSUIZJKBUMLZDUMLZ
+      VQDUALZWCVQJUNZWKRSWLWKRSUOSZWMVQRSZUPSUQSZVRWMVRWOWMVRRSZUPSUQSZWJAWKPOA
+      VSURZABEVBQWJAWLPOZWTADGVBZQWJAWFWTWHQWJAWMPOZWTADGUJZQZWJAWGWTWIQXEWJAWK
+      WLUSMZWTAXFCUMLZWLUSMZIAWKXGWLUSHUTVAZQAVSVCZWJWMXEVLWQWQTWJWQVDVEWSWSTWJ
+      WSVDVEWJJKBCDWJABVFOZWTEQWJACVFOZWTFQWJADVFOZWTGQWJAWKXGTWTHQWJAXHWTIQXJV
+      GVHVMAVTWEAVTUIZWCUCCBDNNUDLZUEZWDXNWBXOUCXNBCDXNAXKAVTURZEQZXNAXLXQFQZXN
+      AXMXQGQZVIVJXNJKXGWLVRWMXPVRWNXGRSWLXGRSUOSZWRUPSUQSZVQWMVQYAWPUPSUQSZXNA
+      XGPOXQACFVBQXNAXAXQXBQXNAWGXQWIQXNAXCXQXDQZXNAWFXQWHQYDXNAXHXQIQAVTVCZXNW
+      MYDVLYBYBTXNYBVDVEYCYCTXNYCVDVEXNJKCBDXSXRXTXNAXGWKTXQAWKXGHVKQXNAXFXQXIQ
+      YEVGVHVNVMVOVP $.
+  $}
+
+  ${
+    c2runtricld.1 $e |- ( ph -> A e. CC ) $.
+    c2runtricld.2 $e |- ( ph -> B e. CC ) $.
+    c2runtricld.3 $e |- ( ph -> C e. CC ) $.
+    c2runtricld.4 $e |- ( ph -> ( Re ` A ) < ( Re ` B ) ) $.
+    c2runtricld.5 $e |- ( ph -> ( Re ` B ) < ( Re ` C ) ) $.
+    c2runtricld.6 $e |- ( ph -> P = ( ( ( ( ( Re ` C ) - ( Re ` B ) ) /
+                                ( ( Re ` C ) - ( Re ` A ) ) ) x. A ) +
+                                ( ( ( ( Re ` B ) - ( Re ` A ) ) /
+                                ( ( Re ` C ) - ( Re ` A ) ) ) x. C ) ) ) $.
+    $( The Cartesian image of a triangle is the union of the Cartesian images
+       of its two sub-triangles.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    c2runtricld $p |- ( ph -> ( c2r " ( tri ` <. A , <. B , C >. >. ) ) =
+                              ( ( c2r " ( tri ` <. A , <. B , P >. >. ) ) u.
+                              ( c2r " ( tri ` <. B , <. P , C >. >. ) ) ) ) $=
+      ( cc2r cop ctri cfv cima cun triunsplitd imaeq2d wceq imaundi a1i eqtrd )
+      ALBCDMMNOZPLBCEMMNOZCEDMMNOZQZPZLUEPLUFPQZAUDUGLABCDEFGHIJKRSUHUITALUEUFU
+      AUBUC $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.  $d C x y $.  $d P x y $.  $d ph x y $.
+    c2rtrisliceld.1 $e |- ( ph -> A e. CC ) $.
+    c2rtrisliceld.2 $e |- ( ph -> B e. CC ) $.
+    c2rtrisliceld.3 $e |- ( ph -> C e. CC ) $.
+    c2rtrisliceld.4 $e |- ( ph -> ( Re ` A ) < ( Re ` B ) ) $.
+    c2rtrisliceld.5 $e |- ( ph -> ( Re ` B ) < ( Re ` C ) ) $.
+    c2rtrisliceld.6 $e |- ( ph -> P = ( ( ( ( ( Re ` C ) - ( Re ` B ) ) /
+                                  ( ( Re ` C ) - ( Re ` A ) ) ) x. A ) +
+                                  ( ( ( ( Re ` B ) - ( Re ` A ) ) /
+                                  ( ( Re ` C ) - ( Re ` A ) ) ) x. C ) ) ) $.
+    $( Vertical slices of the parent triangle over the left interval match the
+       left sub-triangle.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    c2rtrisliceld $p |- ( ph -> ( x e. ( ( Re ` A ) [,] ( Re ` B ) ) ->
+      ( ( c2r " ( tri ` <. A , <. B , C >. >. ) ) " { x } ) =
+      ( ( c2r " ( tri ` <. A , <. B , P >. >. ) ) " { x } ) ) ) $=
+      ( vy cfv co wcel cop wa adantr wbr cv cre cicc cc2r ctri cima csn wceq ci
+      caddc cr wi vex elimasn copab c2rtrid eleq2d opabidw bitrdi bitrid biimpd
+      cmul cle simpr crre syl w3a wb recld elicc2 syl2anc imp simp3d eqbrtrd cc
+      clt cmin simpld recnd ax-icn a1i simprd mulcld addcld eltrisplitld mpan2d
+      cdiv ex com23 impd jcad syld trisplitptcld ssrdv wss trisplitsslld imass2
+      biimprd imass1 eqssd ) ABUAZCUBNZDUBNZUCOPZUDCDEQQUENZUFZXAUGZUFZUDCDFQQU
+      ENZUFZXGUFZUHAXDRZXHXKXLMXHXKXLMUAZXHPZXAUIXMVBOZUJOZXIPZXAUKPZXMUKPZRZRZ
+      XMXKPZXLXNXPXEPZXTRZYAAXNYDULXDAXNYDXNXAXMQZXFPZAYDXFXAXMBUMZMUMZUNAYFYEY
+      DBMUOZPYDAXFYIYEABMCDEGHIUPUQYDBMURUSUTVASXLYDXQXTXLYCXTXQXLXTYCXQXLXTYCX
+      QULXLXTRZYCXPUBNZXCVCTXQYJYKXAXCVCYJXTYKXAUHXLXTVDZXAXMVEVFXLXAXCVCTZXTXL
+      XRXBXAVCTZYMAXDXRYNYMVGZAXDYOAXBUKPXCUKPXDYOVHACGVIADHVIXBXCXAVJVKVAVLVMS
+      VNYJCDEFXPXLCVOPZXTAYPXDGSSXLDVOPZXTAYQXDHSSXLEVOPZXTAYRXDISSXLXBXCVPTZXT
+      AYSXDJSSXLXCEUBNZVPTZXTAUUAXDKSSXLFYTXCVQOYTXBVQOZWGOCVBOXCXBVQOUUBWGOEVB
+      OUJOUHZXTAUUCXDLSSYJXAXOYJXAYJXRXSYLVRVSYJUIXMUIVOPYJVTWAYJXMYJXRXSYLWBVS
+      WCWDWEWFWHWIWJYDXTULXLYCXTVDWAWKWLAYAYBULXDAYBYAYBYEXJPZAYAXJXAXMYGYHUNAU
+      UDYEYABMUOZPYAAXJUUEYEABMCDFGHACDEFGHIJKLWMUPUQYABMURUSUTWRSWLWNAXKXHWOZX
+      DAXJXFWOZUUFAXIXEWOUUGACDEFGHIJKLWPXIXEUDWQVFXJXFXGWSVFSWTWH $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.  $d C x y $.  $d P x y $.  $d ph x y $.
+    c2rtrislicerd.1 $e |- ( ph -> A e. CC ) $.
+    c2rtrislicerd.2 $e |- ( ph -> B e. CC ) $.
+    c2rtrislicerd.3 $e |- ( ph -> C e. CC ) $.
+    c2rtrislicerd.4 $e |- ( ph -> ( Re ` A ) < ( Re ` B ) ) $.
+    c2rtrislicerd.5 $e |- ( ph -> ( Re ` B ) < ( Re ` C ) ) $.
+    c2rtrislicerd.6 $e |- ( ph -> P = ( ( ( ( ( Re ` C ) - ( Re ` B ) ) /
+                                  ( ( Re ` C ) - ( Re ` A ) ) ) x. A ) +
+                                  ( ( ( ( Re ` B ) - ( Re ` A ) ) /
+                                  ( ( Re ` C ) - ( Re ` A ) ) ) x. C ) ) ) $.
+    $( Vertical slices of the parent triangle over the right interval match the
+       right sub-triangle.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    c2rtrislicerd $p |- ( ph -> ( x e. ( ( Re ` B ) [,] ( Re ` C ) ) ->
+      ( ( c2r " ( tri ` <. A , <. B , C >. >. ) ) " { x } ) =
+      ( ( c2r " ( tri ` <. B , <. P , C >. >. ) ) " { x } ) ) ) $=
+      ( vy cfv co wcel cop wa adantr wbr cv cre cicc cc2r ctri cima csn wceq ci
+      caddc cr wi vex elimasn copab c2rtrid eleq2d opabidw bitrdi bitrid biimpd
+      cmul cle w3a wb recld elicc2 syl2anc imp simp2d simpr crre eqcomd breqtrd
+      syl cc clt cmin simpld recnd ax-icn a1i simprd mulcld addcld eltrisplitrd
+      cdiv mpan2d com23 impd jcad syld trisplitptcld biimprd ssrdv trisplitssrd
+      ex wss imass2 imass1 eqssd ) ABUAZDUBNZEUBNZUCOPZUDCDEQQUENZUFZXBUGZUFZUD
+      DFEQQUENZUFZXHUFZUHAXERZXIXLXMMXIXLXMMUAZXIPZXBUIXNVBOZUJOZXJPZXBUKPZXNUK
+      PZRZRZXNXLPZXMXOXQXFPZYARZYBAXOYEULXEAXOYEXOXBXNQZXGPZAYEXGXBXNBUMZMUMZUN
+      AYGYFYEBMUOZPYEAXGYJYFABMCDEGHIUPUQYEBMURUSUTVASXMYEXRYAXMYDYAXRXMYAYDXRX
+      MYAYDXRULXMYARZYDXCXQUBNZVCTXRYKXCXBYLVCXMXCXBVCTZYAXMXSYMXBXDVCTZAXEXSYM
+      YNVDZAXEYOAXCUKPXDUKPXEYOVEADHVFAEIVFXCXDXBVGVHVAVIVJSYKYLXBYKYAYLXBUHXMY
+      AVKZXBXNVLVOVMVNYKCDEFXQXMCVPPZYAAYQXEGSSXMDVPPZYAAYRXEHSSXMEVPPZYAAYSXEI
+      SSXMCUBNZXCVQTZYAAUUAXEJSSXMXCXDVQTZYAAUUBXEKSSXMFXDXCVROXDYTVROZWGOCVBOX
+      CYTVROUUCWGOEVBOUJOUHZYAAUUDXELSSYKXBXPYKXBYKXSXTYPVSVTYKUIXNUIVPPYKWAWBY
+      KXNYKXSXTYPWCVTWDWEWFWHWQWIWJYEYAULXMYDYAVKWBWKWLAYBYCULXEAYCYBYCYFXKPZAY
+      BXKXBXNYHYIUNAUUEYFYBBMUOZPYBAXKUUFYFABMDFEHACDEFGHIJKLWMIUPUQYBBMURUSUTW
+      NSWLWOAXLXIWRZXEAXKXGWRZUUGAXJXFWRUUHACDEFGHIJKLWPXJXFUDWSVOXKXGXHWTVOSXA
+      WQ $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.  $d C x y $.  $d x y $.  $d ph x y $.
+    trisplitdmared.1 $e |- ( ph -> A e. CC ) $.
+    trisplitdmared.2 $e |- ( ph -> B e. CC ) $.
+    trisplitdmared.3 $e |- ( ph -> C e. CC ) $.
+    trisplitdmared.4 $e |- ( ph -> ( Re ` A ) < ( Re ` B ) ) $.
+    trisplitdmared.5 $e |- ( ph -> ( Re ` B ) < ( Re ` C ) ) $.
+    $( The Cartesian image of a triangle with strictly ordered real parts
+       belongs to dom area.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    trisplitdmared $p |- ( ph -> ( c2r " ( tri ` <. A , <. B , C >. >. ) )
+                                              e. dom area ) $=
+      ( vx cfv cr cvol wcel wa co wceq syl jca c0 cc2r cop ctri cima cxp wss cv
+      csn ccnv wral cmpt cibl carea cdm c2rtrissd cre cicc cmin cdiv cmul caddc
+      cle wbr w3a simpl simprd simpr recld elicc2 biimpd simp2 syl6 sylc mpbird
+      wb 3jca eqid a1i c2rtrisliceld trisplitptcld trisplitptred trivertrdmared
+      mpd eqcomd dmarea simp2bi r19.21bi eqeltrd simp3 c2rtrislicerd clt breq1d
+      wi trivertldmared letrid mpjaodan ex wn simpll ltled trislice0d cc0 covol
+      0mbl mblvol ax-mp ovol0 eqtri 0re eqeltri wfun cpnf wf volf ffun fvimacnv
+      pm3.2i mpbi pm2.61d ralrimiv cc cnvimass sselid recnd simp3bi ibladd citg
+      addcld snssi ovolsn cun eqtrd fveq2d wne ltlen ltnle mpbid con3d trivol0d
+      cdif c2runtricld imaeq1d imaundir eldifsni necomd eldifi eqled uneq2d un0
+      addridd oveq2d oveq2 eleq2d notbid biimprd imdistani uneq1d oveq1d itgeqa
+      0un addlidd simpld syl3anbrc ) AUABCDUBUBUCKUDZLLUEZUFUVDJUGZUHZUDZMUILUD
+      ZNZJLUJJLUVHMKZUKULNZUVDUMUNZNABCDEFGUOAUVJJLAUVFLNZUVJAUVNOZUVFBUPKZDUPK
+      ZUQPNZUVJUVOUVRUVJUVOUVROZUVFCUPKZVBVCZUVJUVTUVFVBVCZUVSUWAOZUVHUABCUVQUV
+      TURPUVQUVPURPZUSPBUTPUVTUVPURPUWDUSPDUTPVAPZUBUBUCKUDZUVGUDZUVIUWCUVFUVPU
+      VTUQPZNZUVHUWGQZUWCUWIUVNUVPUVFVBVCZUWAVDZUWCUVNUWKUWAUWCUVSUVNUVSUWAVEZU
+      VSAUVNUVOUVRVEZVFZRUWCUVOUVRUWKUWCUVSUVOUWMUWNRZUWCUVSUVRUWMUVOUVRVGZRUVO
+      UVRUVNUWKUVFUVQVBVCZVDZUWKUVOUVRUWSUVOAUVRUWSVOZAUVNVEZAUVPLNZUVQLNZOUWTA
+      UXBUXCABEVHZADGVHZSUVPUVQUVFVIRRVJZUVNUWKUWRVKVLVMUVSUWAVGVPUWCAUWIUWLVOZ
+      UWCUVSAUWMUVSUVOAUWNUXARZRZAUXBUVTLNZOZUXGAUXBUXJUXDACFVHZSUVPUVTUVFVIZRR
+      VNUWCAUWIUWJWMUXIAJBCDUWEEFGHIUWEUWEQAUWEVQVRZVSRWCUWCUVOUWGUVINZUWPAUXOJ
+      LAUWFUVMNZUXOJLUJZABCUWEEFABCDUWEEFGHIUXNVTZHAUWEUPKZUVTABCDUWEEFGHIUXNWA
+      ZWDZWBZUXPUWFUVEUFZUXQJLUWGMKZUKULNZJUWFWEZWFRWGZRWHUVSUWBOZUVHUACUWEDUBU
+      BUCKUDZUVGUDZUVIUYHUVFUVTUVQUQPNZUVHUYJQZUYHUYKUVNUWBUWRVDZUYHUVNUWBUWRUY
+      HUVSUVNUVSUWBVEZUWORUVSUWBVGUYHUVOUVRUWRUYHUVSUVOUYNUWNRZUYHUVSUVRUYNUWQR
+      UVOUVRUWSUWRUXFUVNUWKUWRWIVLVMVPUYHAUYKUYMVOZUYHUVSAUYNUXHRZAUXJUXCOZUYPA
+      UXJUXCUXLUXESUVTUVQUVFVIZRRVNUYHAUYKUYLWMUYQAJBCDUWEEFGHIUXNWJRWCUYHUVOUY
+      JUVINZUYOAUYTJLAUYIUVMNZUYTJLUJZACUWEDFUXRGUYAAUXSUVQWKVCUVTUVQWKVCIAUXSU
+      VTUVQWKUXTWLVNZWNZVUAUYIUVEUFZVUBJLUYJMKZUKULNZJUYIWEZWFRWGZRWHUVSUVFUVTU
+      WOUVSAUXJUXHUXLRWOWPWQUVOUVRWRZUVJUVOVUJOZUVHTUVIVUKAVUJOUVHTQVUKAVUJAUVN
+      VUJWSZUVOVUJVGSAJBCDEFGAUVPUVTUXDUXLHWTZAUVTUVQUXLUXEIWTXARVUKATUVINZVULV
+      UNATMKZLNZVUNVUOXBLVUOTXCKZXBTMUNZNZVUOVUQQXDTXEXFXGXHXIXJMXKZVUSOVUPVUNV
+      OVUTVUSVURXBXLUQPZMXMVUTXNVURVVAMXOXFZXDXQTLMXPXFXRVRRWHWQXSZWQXTAUVLJLUY
+      DVUFVAPZUKULNZAJLUYDVUFYAUVOUYDUVOUYDLNZUXOUYGUVOVUTUWGVURNZOVVFUXOVOUVOV
+      UTVVGVUTUVOVVBVRZUVOUVIVURUWGMLYBZUYGYCSUWGLMXPRVNYDZAUXPUYEUYBUXPUYCUXQU
+      YEUYFYERUVOVUFUVOVUFLNZUYTVUIUVOVUTUYJVURNZOVVKUYTVOUVOVUTVVLVVHUVOUVIVUR
+      UYJVVIVUIYCSUYJLMXPRVNYDZAVUAVUGVUDVUAVUEVUBVUGVUHYERYFAUVLVVEVOJLUVKYGJL
+      VVDYGQAJUVTUHZLUVKVVDUVOUVKUVOUVKLNZUVJVVCUVOVUTUVHVURNZOVVOUVJVOUVOVUTVV
+      PVVHUVOUVIVURUVHVVIVVCYCSUVHLMXPRVNYDUVOUYDVUFVVJVVMYHAUXJVVNLUFUXLUVTLYI
+      RAUXJVVNXCKXBQUXLUVTYJRAUVFLVVNYTNZOZUWAUVKVVDQUWBVVRUWAOZUVKUYDVVDVVSUVK
+      UWGUYJYKZMKZUYDVVSAUVKVWAQZVVSVVRAVVRUWAVEZAVVQVEZRZAUVHVVTMAUVHUWFUYIYKZ
+      UVGUDZVVTAUVDVWFUVGABCDUWEEFGHIUXNUUAUUBVWGVVTQAUWFUYIUVGUUCVRYLYMZRVVSVV
+      TUWGMVVSVVTUWGTYKZUWGVVSUYJTUWGVVSAUYKWRZOZUYJTQVVSAVWJVWEVVSUWBWRZVWJVVS
+      UVFUVTWKVCZVWLVVSVWMUWAUVTUVFYNZOZVVSUWAVWNVVRUWAVGVVSUVFUVTVVSVVRUVFUVTY
+      NZVWCVVRVVQVWPAVVQVGZUVFLUVTUUDRZRUUESVVSUVNUXJOZVWMVWOVOVVSUVNUXJVVSVVRU
+      VNVWCVVRVVQUVNVWQUVFLVVNUUFRZRZVVSVVRUXJVWCVVRAUXJVWDUXLRZRZSZUVFUVTYORVN
+      VVSVWSVWMVWLVOVXDUVFUVTYPRYQVVSUYKUWBVVSUYKUYMUWBVVSUYKUYMVVSUYRUYPVVSUXJ
+      UXCVXCVVSAUXCVWEUXERSUYSRVJUVNUWBUWRVKVLYRWCSZAJCUWEDFUXRGAUVTUXSUXLUYAUU
+      GZAUXSUVQAUXSUVTLUXTUXLWHUXEVUCWTZXARUUHVWIUWGQVVSUWGUUIVRYLYMYLVVSUYDUYD
+      XBVAPZVVDVVSVXHUYDVVSUYDVVSUVOUYDYANVVSAUVNVWEVXASVVJRUUJWDVVSXBVUFUYDVAV
+      VSVUFXBVVSVWKVUFXBQVXEAJCUWEDFUXRGVXFVXGYSRWDUUKYLYLVVRUWBOZUVKVUFVVDVXIU
+      VKVWAVUFVXIAVWBVXIVVRAVVRUWBVEZVWDRZVWHRVXIVVTUYJMVXIVVTTUYJYKZUYJVXIUWGT
+      UYJVXIAUWIWRZOZUWGTQZVXIAVXMVXKVXIUWAWRZVXMVXIUVTUVFWKVCZVXPVXIVXQUWBVWPO
+      ZVXIUWBVWPVVRUWBVGVXIVVRVWPVXJVWRRSVXIUXJUVNOZVXQVXRVOVXIUXJUVNVXIVVRUXJV
+      XJVXBRZVXIVVRUVNVXJVWTRZSZUVTUVFYORVNVXIVXSVXQVXPVOVYBUVTUVFYPRYQVXIUWIUW
+      AVXIUWIUWLUWAVXIUWIUWLVXIUXKUXGVXIUXBUXJVXIAUXBVXKUXDRVXTSUXMRVJUVNUWKUWA
+      WIVLYRWCSZVXNAUVFUVPUXSUQPZNZWRZOZVXOAVXMVYFAVYFVXMAVYEUWIAVYDUWHUVFAUXSU
+      VTQVYDUWHQUXTUXSUVTUVPUQUULRUUMUUNUUOUUPZAJBCUWEEFUXRVUMVXFXARRUUQVXLUYJQ
+      VXIUYJUUTVRYLYMYLVXIVUFXBVUFVAPZVVDVXIVYIVUFVXIVUFVXIUVOVUFYANVXIAUVNVXKV
+      YASVVMRUVAWDVXIXBUYDVUFVAVXIUYDXBVXIVXNUYDXBQZVYCVXNVYGVYJVYHAJBCUWEEFUXR
+      VUMVXFYSRRWDUURYLYLVVRUVFUVTVWTVXBWOWPUUSUVBVNJUVDWEUVC $.
+  $}
+
+  ${
+    trisortdmared.1 $e |- ( ph -> A e. CC ) $.
+    trisortdmared.2 $e |- ( ph -> B e. CC ) $.
+    trisortdmared.3 $e |- ( ph -> C e. CC ) $.
+    trisortdmared.4 $e |- ( ph -> ( Re ` A ) <_ ( Re ` B ) ) $.
+    trisortdmared.5 $e |- ( ph -> ( Re ` B ) <_ ( Re ` C ) ) $.
+    $( The Cartesian image of a real-sorted triangle belongs to dom area.
+       (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    trisortdmared $p |- ( ph -> ( c2r " ( tri ` <. A , <. B , C >. >. ) )
+                                               e. dom area ) $=
+      ( cre cfv clt wbr wcel wa cc adantr simpr recld mpjaodan cc2r cop ctri wo
+      cima carea wceq trisplitdmared trivertrdmared leloed mpbid trivertldmared
+      cdm cle tridegdmared ) ABJKZCJKZLMZUABCDUBUBUCKUEUFUMNZUPUQUGZAUROZUQDJKZ
+      LMZUSUQVBUGZVAVCOBCDVABPNZVCAVEUREQZQVACPNZVCAVGURFQZQVADPNZVCAVIURGQZQVA
+      URVCAURRZQVAVCRUHVAVDOBCDVAVEVDVFQVAVGVDVHQVAVIVDVJQVAURVDVKQVAVDRUIAVCVD
+      UDZURAUQVBUNMVLIAUQVBACFSZADGSUJUKZQTAUTOZVCUSVDVOVCOBCDVOVEVCAVEUTEQZQVO
+      VGVCAVGUTFQZQVOVIVCAVIUTGQZQVOUTVCAUTRZQVOVCRULVOVDOBCDVOVEVDVPQVOVGVDVQQ
+      VOVIVDVRQVOUTVDVSQVOVDRUOAVLUTVNQTAUPUQUNMURUTUDHAUPUQABESVMUJUKT $.
+  $}
+
+  ${
+    $d A a b c $.  $d B a b c $.  $d C a b c $.  $d a b c ph $.
+    tridmared.1 $e |- ( ph -> A e. CC ) $.
+    tridmared.2 $e |- ( ph -> B e. CC ) $.
+    tridmared.3 $e |- ( ph -> C e. CC ) $.
+    $( The Cartesian image of any complex triangle belongs to dom area.
+       (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    tridmared $p |- ( ph -> ( c2r " ( tri ` <. A , <. B , C >. >. ) )
+                                            e. dom area ) $=
+      ( va vb vc cop cfv cv cre wa cc wrex wcel simpr adantr ctri wceq cle cc2r
+      wbr carea triordred simpld imaeq2d simprd trisortdmared eqeltrd rexlimdva
+      cima cdm ex mpd ) ABCDKKUALZHMZIMZJMZKKUALZUBZUSNLUTNLZUCUEZVDVANLUCUEZOZ
+      OZJPQZIPQZHPQUDURUNZUFUOZRZABCDHIJEFGUGAVJVMHPAUSPRZOZVIVMIPVOUTPRZOZVHVM
+      JPVQVAPRZOZVHVMVSVHOZVKUDVBUNVLVTURVBUDVTVCVGVSVHSZUHUIVTUSUTVAVSVNVHVQVN
+      VRVOVNVPAVNSTTTVSVPVHVQVPVRVOVPSTTVSVRVHVQVRSTVTVEVFVTVCVGWAUJZUHVTVEVFWB
+      UJUKULUPUMUMUMUQ $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Geometric Triangle Area Formulas
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.  $d ph x $.
+    areatridegd.1 $e |- ( ph -> A e. CC ) $.
+    areatridegd.2 $e |- ( ph -> B e. CC ) $.
+    areatridegd.3 $e |- ( ph -> C e. CC ) $.
+    areatridegd.4 $e |- ( ph -> ( Re ` A ) = ( Re ` B ) ) $.
+    areatridegd.5 $e |- ( ph -> ( Re ` B ) = ( Re ` C ) ) $.
+    $( A triangle whose vertices all lie on a single vertical line has zero
+       area.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    areatridegd $p |- ( ph ->
+                ( areac ` ( tri ` <. A , <. B , C >. >. ) ) = 0 ) $=
+      ( vx cfv cc0 cr cvol wcel wceq syl wa a1i eqtrd cop ctri careac cc2r cima
+      carea areactrid cv csn citg cdm tridegdmared areaval cre cicc co cif sneq
+      wi imaeq2 imp fveq2d simpl cle wbr w3a recld leidd 3jca jca elicc2 mpbird
+      wb adantr eleq1 iftrue eqcomd ex wn wne df-ne biimpri c0 c2rtrioutslice0d
+      simpr covol 0mbl mblvol ax-mp ovol0 eqtri biimpi biimpd simp2 simp3 ancom
+      cc letri3d biimprd sylbid syl5 syld iffalse syl6 pm2.61d itgeq2dv iccssre
+      con3d wss itgss2 cmul iccmbl cmin ovolicc syl3anc subidd 0re eqeltrd ccnv
+      recnd tridegslicevolrnd wfun cpnf wf volf ffun cnvimass fvimacnv itgconst
+      sselid oveq2d mul01d ) ABCDUAUAUBKZUCKUDYMUEZUFKZLABCDEFGUGAYOJMYNJUHZUIZ
+      UEZNKZUJZLAYNUFUKOYOYTPABCDEFGHIULJYNUMQAYTJBUNKZUUAUOUPZYNUUAUIZUEZNKZUJ
+      ZLAYTJMYPUUBOZUUELUQZUJZUUFAJMYSUUHAYPMOZRZYPUUAPZYSUUHPZUUKUULUUMUUKUULR
+      ZYSUUEUUHUUNYRUUDNUUKUULYRUUDPZUULUUOUSUUKUULYQUUCPUUOYPUUAURYQUUCYNUTQSV
+      AVBUUNUUHUUEUUNUUGUUHUUEPUUNUUGUUAUUBOZUUKUUPUULUUKAUUPAUUJVCZAUUPUUAMOZU
+      UAUUAVDVEZUUSVFZAUURUUSUUSABEVGZAUUAUVAVHZUVBVIAUURUURRZUUPUUTVMAUURUURUV
+      AUVAVJZUUAUUAUUAVKQVLQVNUUKUULUUGUUPVMZUULUVEUSUUKYPUUAUUBVOSVAVLUUGUUELV
+      PQVQTVRUULVSZYPUUAVTZUUKUUMUVGUVFYPUUAWAZWBUUKUVGUUMUUKUVGRZYSLUUHUVIYSWC
+      NKZLUVIYRWCNUVIBCDYPUVIABWQOUVIUUKAUUKUVGVCZUUQQZEQUVIACWQOUVLFQUVIADWQOU
+      VLGQUVIAUUACUNKZPUVLHQUVIAUVMDUNKPUVLIQUVIUUKUUJUVKAUUJWEZQUUKUVGWEWDVBUV
+      JLPUVIUVJWCWFKZLWCNUKZOUVJUVOPWGWCWHWIWJWKSTUVIUUHLUUKUVGUUHLPZUUKUVGUUGV
+      SZUVQUVGUVFUUKUVRUVGUVFUVHWLUUKUUGUULUUKUUGUUJUUAYPVDVEZYPUUAVDVEZVFZUULU
+      UKUUGUWAUUKAUUGUWAVMZUUQAUVCUWBUVDUUAUUAYPVKQQWMUWAUVSUVTRZUUKUULUWAUVSUV
+      TUUJUVSUVTWNUUJUVSUVTWOVJUUKUWCUVTUVSRZUULUWCUWDVMUUKUVSUVTWPSUUKUULUWDUU
+      KYPUUAUVNUUKAUURUUQUVAQWRWSWTXAXBXHXAUUGUUELXCXDVAVQTVRXAXEXFAUUFUUIAUUBM
+      XIZUUFUUIPAUVCUWEUVDUUAUUAXGQJUUBMUUEXJQVQTAUUFUUEUUBNKZXKUPZLAUUBUVPOZUW
+      FMOUUEWQOUUFUWGPAUVCUWHUVDUUAUUAXLQZAUWFLMAUWFUUAUUAXMUPZLAUWFUUBWFKZUWJA
+      UWHUWFUWKPUWIUUBWHQAUURUURUUSUWKUWJPUVAUVAUVBUUAUUAXNXOTAUUAAUUAUVAXTXPTZ
+      LMOAXQSXRAUUEAUUEMOZUUDNXSMUEZOZABCDEFGHIYAZANYBZUUDUVPOZRUWMUWOVMAUWQUWR
+      UWQAUVPLYCUOUPZNYDUWQYEUVPUWSNYFWISAUWNUVPUUDNMYGUWPYJVJUUDMNYHQVLXTZJUUB
+      UUEYIXOAUWGUUELXKUPLAUWFLUUEXKUWLYKAUUEUWTYLTTTTT $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.  $d C x y $.  $d x y $.  $d ph x y $.
+    areatrivertrclemd.1 $e |- ( ph -> A e. CC ) $.
+    areatrivertrclemd.2 $e |- ( ph -> B e. CC ) $.
+    areatrivertrclemd.3 $e |- ( ph -> C e. CC ) $.
+    areatrivertrclemd.4 $e |- ( ph -> ( Re ` A ) = ( Re ` B ) ) $.
+    areatrivertrclemd.5 $e |- ( ph -> ( Re ` B ) < ( Re ` C ) ) $.
+    areatrivertrclemd.6 $e |- ( ph -> ( Im ` A ) <_ ( Im ` B ) ) $.
+    $( Area of a triangle with a vertical left edge when the lower vertex has
+       smaller imaginary part.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    areatrivertrclemd $p |- ( ph -> ( areac ` ( tri ` <. A , <. B , C >. >. ) )
+      = ( ( ( 1 / 2 ) x. ( abs ` ( ( Im ` B ) - ( Im ` A ) ) ) ) x.
+        ( ( Re ` C ) - ( Re ` A ) ) ) ) $=
+      ( vx vy cop cfv co cim cmin cmul cre imcld ctri c1 c2 cdiv cabs cc2r cima
+      careac carea areactrid caddc recld clt eqbrtrd c2rtrivertrd areatrivertrd
+      cv eqidd eqtrd abssubge0d eqcomd oveq2d oveq1d ) ABCDMMUANZUHNZUBUCUDOZCP
+      NZBPNZQOZROZDSNZBSNZQOZROZVFVIUENZROZVMROAVEUFVDUGZUINVNABCDEFGUJAKLVKVLD
+      PNZVHVQVHKUQVLQOVMUDOZVRVHQOROUKOZVGVGVSVRVGQOROUKOZADGULABEULADGTABETZAC
+      FTZAVLCSNVKUMHIUNJAVTURAWAURAKLBCDEFGHIJUOUPUSAVJVPVMRAVIVOVFRAVOVIAVHVGW
+      BWCJUTVAVBVCUS $.
+  $}
+
+  ${
+    areatrivertrcd.1 $e |- ( ph -> A e. CC ) $.
+    areatrivertrcd.2 $e |- ( ph -> B e. CC ) $.
+    areatrivertrcd.3 $e |- ( ph -> C e. CC ) $.
+    areatrivertrcd.4 $e |- ( ph -> ( Re ` A ) = ( Re ` B ) ) $.
+    areatrivertrcd.5 $e |- ( ph -> ( Re ` B ) < ( Re ` C ) ) $.
+    $( The area of a triangle with a vertical left edge.  (Contributed by Jon
+       Pennant, 29-Oct-2026.) $)
+    areatrivertrcd $p |- ( ph -> ( areac ` ( tri ` <. A , <. B , C >. >. ) ) =
+      ( ( ( 1 / 2 ) x. ( abs ` ( ( Im ` B ) - ( Im ` A ) ) ) ) x.
+        ( ( Re ` C ) - ( Re ` A ) ) ) ) $=
+      ( cfv wbr cop careac co cmin cmul cre wceq wcel adantr cim cle wo ctri c1
+      c2 cdiv cabs imcld letrid wa clt simpr areatrivertrclemd tricom12d fveq2d
+      cc ex eqcomd eqbrtrd eqtrd cr recnd abssubd oveq2d oveq12d jaod mpd ) ABU
+      AJZCUAJZUBKZVJVIUBKZUCBCDLLUDJZMJZUEUFUGNZVJVIONUHJZPNZDQJZBQJZONZPNZRZAV
+      IVJABEUIZACFUIZUJAVKWBVLAVKWBAVKUKBCDABUQSZVKETACUQSZVKFTADUQSZVKGTAVSCQJ
+      ZRVKHTAWHVRULKVKITAVKUMUNURAVLWBAVLUKZVNVOVIVJONUHJZPNZVRWHONZPNZWAWIVNCB
+      DLLUDJZMJWMWIVMWNMWIBCDAWEVLETZAWFVLFTZAWGVLGTZUOUPWICBDWPWOWQAWHVSRVLAVS
+      WHHUSTZAVSVRULKVLAVSWHVRULHIUTTAVLUMUNVAWIWKVQWLVTPWIWJVPVOPWIVIVJWIVIAVI
+      VBSVLWCTVCWIVJAVJVBSVLWDTVCVDVEWIWHVSVROWRVEVFVAURVGVH $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.  $d C x y $.  $d ph x y $.
+    areatrivertlclemd.1 $e |- ( ph -> A e. CC ) $.
+    areatrivertlclemd.2 $e |- ( ph -> B e. CC ) $.
+    areatrivertlclemd.3 $e |- ( ph -> C e. CC ) $.
+    areatrivertlclemd.4 $e |- ( ph -> ( Re ` A ) < ( Re ` B ) ) $.
+    areatrivertlclemd.5 $e |- ( ph -> ( Re ` B ) = ( Re ` C ) ) $.
+    areatrivertlclemd.6 $e |- ( ph -> ( Im ` B ) <_ ( Im ` C ) ) $.
+    $( Area of a triangle with a vertical right edge when the lower vertex has
+       smaller imaginary part.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    areatrivertlclemd $p |- ( ph -> ( areac ` ( tri ` <. A , <. B , C >. >. ) )
+      = ( ( ( 1 / 2 ) x. ( abs ` ( ( Im ` C ) - ( Im ` B ) ) ) ) x.
+        ( ( Re ` B ) - ( Re ` A ) ) ) ) $=
+      ( vx vy cop cfv cdiv co cim cmin cmul imcld ctri careac c1 cabs cc2r cima
+      c2 cre carea areactrid caddc recld eqidd c2rtrivertld areatrivertld eqtrd
+      cv abssubge0d eqcomd oveq2d oveq1d ) ABCDMMUANZUBNZUCUGOPZDQNZCQNZRPZSPZC
+      UHNZBUHNZRPZSPZVDVGUDNZSPZVKSPAVCUEVBUFZUINVLABCDEFGUJAKLVJVIBQNZVFVOVPKU
+      QVJRPVKOPZVFVPRPSPUKPZVEVPVQVEVPRPSPUKPZABEULACFULABETACFTZADGTZHJAVRUMAV
+      SUMAKLBCDEFGHIJUNUOUPAVHVNVKSAVGVMVDSAVMVGAVFVEVTWAJURUSUTVAUP $.
+  $}
+
+  ${
+    areatrivertlcd.1 $e |- ( ph -> A e. CC ) $.
+    areatrivertlcd.2 $e |- ( ph -> B e. CC ) $.
+    areatrivertlcd.3 $e |- ( ph -> C e. CC ) $.
+    areatrivertlcd.4 $e |- ( ph -> ( Re ` A ) < ( Re ` B ) ) $.
+    areatrivertlcd.5 $e |- ( ph -> ( Re ` B ) = ( Re ` C ) ) $.
+    $( The area of a triangle with a vertical right edge.  (Contributed by Jon
+       Pennant, 29-Oct-2026.) $)
+    areatrivertlcd $p |- ( ph -> ( areac ` ( tri ` <. A , <. B , C >. >. ) ) =
+      ( ( ( 1 / 2 ) x. ( abs ` ( ( Im ` C ) - ( Im ` B ) ) ) ) x.
+        ( ( Re ` B ) - ( Re ` A ) ) ) ) $=
+      ( cfv wbr cop careac co cmin cmul cre wceq wcel adantr cim cle wo ctri c1
+      c2 cdiv cabs imcld letrid wa clt simpr areatrivertlclemd tricom23d fveq2d
+      cc ex breqtrd eqcomd eqtrd recnd abssubd oveq2d oveq1d oveq12d jaod mpd
+      cr ) ACUAJZDUAJZUBKZVKVJUBKZUCBCDLLUDJZMJZUEUFUGNZVKVJONUHJZPNZCQJZBQJZON
+      ZPNZRZAVJVKACFUIZADGUIZUJAVLWCVMAVLWCAVLUKBCDABUQSZVLETACUQSZVLFTADUQSZVL
+      GTAVTVSULKVLHTAVSDQJZRVLITAVLUMUNURAVMWCAVMUKZVOVPVJVKONUHJZPNZWIVTONZPNZ
+      WBWJVOBDCLLUDJZMJWNWJVNWOMWJBCDAWFVMETZAWGVMFTZAWHVMGTZUOUPWJBDCWPWRWQAVT
+      WIULKVMAVTVSWIULHIUSTAWIVSRVMAVSWIIUTTZAVMUMUNVAWJWLVRWMWAPWJWKVQVPPWJVJV
+      KWJVJAVJVISVMWDTVBWJVKAVKVISVMWETVBVCVDWJWIVSVTOWSVEVFVAURVGVH $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.  $d C x y $.  $d P x y $.  $d x y $.  $d ph x y $.
+    areatrisplitd.1 $e |- ( ph -> A e. CC ) $.
+    areatrisplitd.2 $e |- ( ph -> B e. CC ) $.
+    areatrisplitd.3 $e |- ( ph -> C e. CC ) $.
+    areatrisplitd.4 $e |- ( ph -> ( Re ` A ) < ( Re ` B ) ) $.
+    areatrisplitd.5 $e |- ( ph -> ( Re ` B ) < ( Re ` C ) ) $.
+    areatrisplitd.6 $e |- ( ph -> P = ( ( ( ( ( Re ` C ) - ( Re ` B ) ) /
+                                  ( ( Re ` C ) - ( Re ` A ) ) ) x. A ) +
+                                  ( ( ( ( Re ` B ) - ( Re ` A ) ) /
+                                  ( ( Re ` C ) - ( Re ` A ) ) ) x. C ) ) ) $.
+    $( Triangle area splits additively along the vertical line through the
+       intermediate vertex.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    areatrisplitd $p |- ( ph -> ( ( P e. CC /\ ( Re ` P ) = ( Re ` B ) ) /\
+                          ( areac ` ( tri ` <. A , <. B , C >. >. ) ) =
+                          ( ( areac ` ( tri ` <. A , <. B , P >. >. ) ) +
+                          ( areac ` ( tri ` <. B , <. P , C >. >. ) ) ) ) ) $=
+      ( vx wcel cfv wceq caddc co cr cvol eqtrd cc cre cop careac trisplitptcld
+      wa ctri trisplitptred jca cc2r cima carea areactrid cv csn trisplitdmared
+      citg cdm areaval syl recld ltled letrd trivol0d itgsuppicc eqcomd cvv cle
+      cicc wbr w3a 3jca wb elicc2 mpbird fvex iccssred iccmbl syl2anc cmpt cibl
+      a1i cxp wss ccnv wral dmarea simp3bi itgspliticc c2rtrisliceld imp fveq2d
+      iblss itgeq2dv oveq1d c2rtrislicerd oveq2d eqtr3d cc0 eleq2d notbid eqled
+      wn biimprd ex syld eqbrtrd trivertrdmared clt trivertldmared ) AEUAMZEUBN
+      ZCUBNZOZUFBCDUCUCUGNZUDNZBCEUCUCUGNZUDNZCEDUCUCUGNZUDNZPQZOAXKXNABCDEFGHI
+      JKUEZABCDEFGHIJKUHZUIAXPUJXQUKZULNZUJXSUKZULNZPQZYAAXPUJXOUKZULNZYHABCDFG
+      HUMAYJLRYDLUNZUOZUKZSNZUQZLRYFYLUKZSNZUQZPQZYHAYJLRYIYLUKZSNZUQZYSAYIULUR
+      ZMZYJUUBOABCDFGHIJUPZLYIUSUTAUUBLBUBNZXMVIQZYNUQZLXMDUBNZVIQZYQUQZPQZYSAL
+      UUFUUIVIQZUUAUQZUUBUULAUUBUUNALUUFUUIUUAABFVAZADHVAZAUUFXMUUIUUOACGVAZUUP
+      AUUFXMUUOUUQIVBZAXMUUIUUQUUPJVBZVCALBCDFGHUURUUSVDVEVFAUUNLUUGUUAUQZLUUJU
+      UAUQZPQZUULALUUFXMUUIUUAVGUUOUUPAXMUUMMZXMRMZUUFXMVHVJZXMUUIVHVJZVKZAUVDU
+      VEUVFUUQUURUUSVLAUUFRMZUUIRMZUFUVCUVGVMAUVHUVIUUOUUPUIUUFUUIXMVNUTVOUUAVG
+      MZAYKUUMMUFYTSVPZWBALUUGRUUAVGAUUFXMUUOUUQVQAUVHUVDUUGSURZMUUOUUQUUFXMVRV
+      SUVJAYKRMUFUVKWBZAUUDLRUUAVTWAMZUUEUUDYIRRWCWDYTSWERUKMLRWFUVNLYIWGWHUTZW
+      MALUUJRUUAVGAXMUUIUUQUUPVQAUVDUVIUUJUVLMUUQUUPXMUUIVRVSUVMUVOWMWIAUVBUUHU
+      VAPQUULAUUTUUHUVAPALUUGUUAYNAYKUUGMZUFYTYMSAUVPYTYMOALBCDEFGHIJKWJWKWLWNW
+      OAUVAUUKUUHPALUUJUUAYQAYKUUJMZUFYTYPSAUVQYTYPOALBCDEFGHIJKWPWKWLWNWQTTWRA
+      UULYOUUKPQYSAUUHYOUUKPAYOUUHALUUFXMYNUUOUUQUURAUVPXCZYNWSOZAUVRYKUUFXLVIQ
+      ZMZXCZUVSAUWBUVRAUWAUVPAUVTUUGYKAXLXMUUFVIYCWQWTXAXDAUWBUVSALBCEFGYBUURAX
+      MXLUUQAXLXMYCVFZXBZVDXEXFWKVEVFWOAUUKYRYOPAYRUUKALXMUUIYQUUQUUPUUSALCEDGY
+      BHUWDAXLXMUUIVHYCUUSXGVDVEVFWQTTTAYSYEYRPQYHAYOYEYRPAYEYOAYDUUCMYEYOOABCE
+      FGYBIUWCXHLYDUSUTVFWOAYRYGYEPAYGYRAYFUUCMYGYROACEDGYBHUWCAXLXMUUIXIYCJXGX
+      JLYFUSUTVFWQTTTAYHXRYGPQYAAYEXRYGPAXRYEABCEFGYBUMVFWOAYGXTXRPAXTYGACEDGYB
+      HUMVFWQTTUI $.
+  $}
+
+  ${
+    areatrisortsplitd.1 $e |- ( ph -> A e. CC ) $.
+    areatrisortsplitd.2 $e |- ( ph -> B e. CC ) $.
+    areatrisortsplitd.3 $e |- ( ph -> C e. CC ) $.
+    areatrisortsplitd.4 $e |- ( ph -> ( Re ` A ) < ( Re ` B ) ) $.
+    areatrisortsplitd.5 $e |- ( ph -> ( Re ` B ) < ( Re ` C ) ) $.
+    $( The area of a strictly real-sorted triangle is given by the Shoelace
+       formula.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    areatrisortsplitd $p |- ( ph -> ( areac ` ( tri ` <. A , <. B , C >. >. ) )
+      = ( ( 1 / 2 ) x. ( abs `
+      ( ( ( ( Re ` B ) - ( Re ` A ) ) x. ( ( Im ` C ) - ( Im ` A ) ) ) -
+      ( ( ( Re ` C ) - ( Re ` A ) ) x. ( ( Im ` B ) - ( Im ` A ) ) ) ) ) ) ) $=
+      ( cop cfv c2 co cre cmin cmul caddc cim eqtrd recnd ctri careac cdiv cabs
+      c1 cc wcel wceq wa eqid areatrisplitd simprd simpld eqcomd areatrivertlcd
+      a1i clt wbr breq1d mpbird areatrivertrcd oveq12d ax-1cn 2cn cc0 wne imcld
+      2ne0 divcld subcld abscld mulcld recld adddid addcomd oveq2d shoelacealgd
+      resubcld npncand ) ABCDJJUAKUBKZUELUCMZDNKZCNKZOMZWBBNKZOMZUCMBPMWCWEOMZW
+      FUCMDPMQMZRKZCRKZOMZUDKZPMZWFPMZWAWGDRKBRKZOMPMWFWJWOOMPMOMUDKPMAVTWMWGWD
+      QMZPMZWNAVTWMWGPMZWMWDPMZQMZWQAVTBCWHJJUAKUBKZCWHDJJUAKUBKZQMZWTAWHUFUGZW
+      HNKZWCUHZUIZVTXCUHZABCDWHEFGHIWHWHUHAWHUJUPZUKZULAXAWRXBWSQABCWHEFAXDXFAX
+      GXHXJUMZUMZHAXEWCAXDXFXKULZUNZUOACWHDFXLGXNAXEWBUQURWCWBUQURIAXEWCWBUQXMU
+      SUTVAVBSAWQWTAWMWGWDAWAWLAUELUEUFUGAVCUPLUFUGAVDUPLVEVFAVHUPVIAWLAWKAWIWJ
+      AWIAWHXLVGTAWJACFVGTVJVKTVLAWGAWCWEACFVMZABEVMZVRTZAWDAWBWCADGVMZXOVRTZVN
+      UNSAWPWFWMPAWPWDWGQMWFAWGWDXQXSVOAWBWCWEAWBXRTAWCXOTAWEXPTVSSVPSABCDWHEFG
+      HIXIVQS $.
+  $}
+
+  ${
+    areatrisortd.1 $e |- ( ph -> A e. CC ) $.
+    areatrisortd.2 $e |- ( ph -> B e. CC ) $.
+    areatrisortd.3 $e |- ( ph -> C e. CC ) $.
+    areatrisortd.4 $e |- ( ph -> ( Re ` A ) <_ ( Re ` B ) ) $.
+    areatrisortd.5 $e |- ( ph -> ( Re ` B ) <_ ( Re ` C ) ) $.
+    $( The area of a weakly real-sorted triangle is given by the Shoelace
+       formula.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    areatrisortd $p |- ( ph -> ( areac ` ( tri ` <. A , <. B , C >. >. ) ) =
+      ( ( 1 / 2 ) x. ( abs `
+      ( ( ( ( Re ` B ) - ( Re ` A ) ) x. ( ( Im ` C ) - ( Im ` A ) ) ) -
+      ( ( ( Re ` C ) - ( Re ` A ) ) x. ( ( Im ` B ) - ( Im ` A ) ) ) ) ) ) ) $=
+      ( cfv co cmin cmul cabs wbr cc0 adantr eqtrd recld recnd wceq ctri careac
+      cre cop c1 c2 cdiv cim wa cc wcel simpr areatridegd shoelacevertrd eqcomd
+      clt oveq1d subidd fveq2d abs0 a1i oveq2d 1cnd halfcld imcld subcld abscld
+      mulcld mul01d areatrivertrcd cr ad2antrr resubcld cle breq1d mpbird ltled
+      subge0d absidd leloed mpbid orcomd mpjaodan areatrivertlcd caddc subsub3d
+      wo subdid npcand absmuld mulcomd mulassd areatrisortsplitd ) ABUDJZCUDJZU
+      AZBCDUEUEUBJUCJZUFUGUHKZWPWOLKZDUIJZBUIJZLKZMKZDUDJZWOLKZCUIJZXBLKZMKZLKZ
+      NJZMKZUAZWOWPUQOZAWQUJZWPXEUAZXMWPXEUQOZXOXPUJZWRPXLXRBCDXOBUKULZXPAXSWQE
+      QZQZXOCUKULZXPAYBWQFQZQZXODUKULZXPAYEWQGQZQZXOWQXPAWQUMZQZXOXPUMZUNXRXLPX
+      RXLWSXHNJZMKZXFNJZMKZPXRBCDYAYDYGYIUOXRYNYLPMKPXRYMPYLMXRYMPNJZPXRXFPNXRX
+      FWOWOLKPXRXEWOWOLXRWOXEXRWOWPXEYIYJRUPURXRWOXRWOXRBYASTUSRUTYOPUAXRVAVBRV
+      CXRYLXRWSYKXOWSUKULZXPXOUFXOVDVEQXRYKXRXHXRXGXBXRXGXRCYDVFTXRXBXRBYAVFTVG
+      VHTVIVJRRUPRXOXQUJZWRYLXFMKZXLYQBCDXOXSXQXTQZXOYBXQYCQZXOYEXQYFQZXOWQXQYH
+      QZXOXQUMZVKYQXLYRYQXLYNYRYQBCDYSYTUUAUUBUOYQYMXFYLMYQXFYQXEWOAXEVLULWQXQA
+      DGSZVMZAWOVLULWQXQABESZVMZVNYQPXFVOOWOXEVOOYQWOXEUUGUUEYQWOXEUQOXQUUCYQWO
+      WPXEUQUUBVPVQVRYQXEWOYQDUUASYQBYSSVSVQVTVCRUPRAXPXQWHZWQAXQXPAWPXEVOOXQXP
+      WHIAWPXEACFSZUUDWAWBWCZQWDAXNUJZXPXMXQUUKXPUJZWRWSXAXGLKZNJZMKWTMKZXLUULB
+      CDUUKXSXPAXSXNEQZQZUUKYBXPAYBXNFQZQZUUKYEXPAYEXNGQZQZUUKXNXPAXNUMZQZUUKXP
+      UMZWEUULXLUUOUULXLWSUUNWTMKZMKZUUOUULXKUVEWSMUULXKWTUUNMKZUVEUULXKWTNJZUU
+      NMKZUVGUULXKWTUUMMKZNJUVIUULXJUVJNUULXJWTXCXHLKZMKZUVJUULXJXDWTXHMKZLKZUV
+      LUULXIUVMXDLUULXFWTXHMUULXEWPWOLUULWPXEUVDUPURURVCUULUVLUVNUULWTXCXHUULWT
+      UULWPWOUULCUUSSZUULBUUQSZVNZTZUULXAXBUULXAUULDUVAVFTZUULXBUULBUUQVFTZVGZU
+      ULXGXBUULXGUULCUUSVFTZUVTVGWIUPRUULUVKUUMWTMUULUVKXCXBWFKZXGLKUUMUULXCXGX
+      BUWAUWBUVTWGUULUWCXAXGLUULXAXBUVSUVTWJURRVCRUTUULWTUUMUVRUULXAXGUVSUWBVGZ
+      WKRUULUVHWTUUNMUULWTUVQUULPWTVOOWOWPVOOZUULWOWPUVPUVOUVCVRUULWPWOUVOUVPVS
+      VQVTURRUULWTUUNUVRUULUUNUULUUMUWDVHTZWLRVCUULUUOUVFUULWSUUNWTUUKYPXPUUKUF
+      UUKVDVEQUWFUVRWMUPRUPRUUKXQUJBCDUUKXSXQUUPQUUKYBXQUURQUUKYEXQUUTQUUKXNXQU
+      VBQUUKXQUMWNAUUHXNUUJQWDAXNWQAUWEXNWQWHHAWOWPUUFUUIWAWBWCWD $.
+  $}
+
+  ${
+    areatrid.1 $e |- ( ph -> A e. CC ) $.
+    areatrid.2 $e |- ( ph -> B e. CC ) $.
+    areatrid.3 $e |- ( ph -> C e. CC ) $.
+    $( The area of any triangle determined by three complex vertices is given
+       by the cross-product / Shoelace formula.  (Contributed by Jon Pennant,
+       29-Oct-2026.) $)
+    areatrid $p |- ( ph -> ( areac ` ( tri ` <. A , <. B , C >. >. ) ) =
+      ( ( 1 / 2 ) x. ( abs `
+      ( ( ( ( Re ` B ) - ( Re ` A ) ) x. ( ( Im ` C ) - ( Im ` A ) ) ) -
+      ( ( ( Re ` C ) - ( Re ` A ) ) x. ( ( Im ` B ) - ( Im ` A ) ) ) ) ) ) ) $=
+      ( co cmin cmul adantr eqtrd cneg recld recnd subcld eqcomd oveq12d negcld
+      cfv cre cle wbr cop ctri careac c1 c2 cdiv cim cabs wceq wa cc wcel simpr
+      areatrisortd tricom23d fveq2d cr mulcld negsubdi2d absnegd oveq2d tricycd
+      subsub3d npcand oveq1d subdid subdird mulneg1d mulneg2d pnpcan2d neg2subd
+      imcld caddc subnegd wo letric syl2anc mpjaodan tricom12d eqtr3d ) ABUATZC
+      UATZUBUCZBCDUDUDUETZUFTZUGUHUIHZWEWDIHZDUJTZBUJTZIHZJHZDUATZWDIHZCUJTZWLI
+      HZJHZIHZUKTZJHZULZWEWDUBUCZAWFUMZWEWOUBUCZXCWOWEUBUCZXEXFUMBCDXEBUNUOZXFA
+      XHWFEKZKXECUNUOZXFAXJWFFKZKXEDUNUOZXFAXLWFGKZKXEWFXFAWFUPZKXEXFUPUQXEXGUM
+      ZWDWOUBUCZXCWOWDUBUCZXOXPUMZWHWIWSWNIHZUKTZJHZXBXRWHBDCUDUDUETZUFTYAXRWGY
+      BUFXRBCDXOXHXPXEXHXGXIKZKZXOXJXPXEXJXGXKKZKZXOXLXPXEXLXGXMKZKZURUSXRBDCYD
+      YHYFXOXPUPXOXGXPXEXGUPKUQLXRXTXAWIJXRXTWTMZUKTZXAXRXSYIUKXRYIXSXRWNWSXRWJ
+      WMXRWEWDXRWEXOWEUTUOZXPXEYKXGAYKWFACFNZKKKOXRWDXOWDUTUOZXPXEYMXGAYMWFABEN
+      ZKKKOZPXRWKWLXRWKXOWKUTUOZXPXEYPXGAYPWFADGVOKKKOXRWLXOWLUTUOZXPXEYQXGAYQW
+      FABEVOKKKOZPVAZXRWPWRXRWOWDXRWOXOWOUTUOZXPXEYTXGAYTWFADGNZKKKOYOPXRWQWLXR
+      WQXOWQUTUOZXPXEUUBXGAUUBWFACFVOKKKOYRPVAZVBQUSXRWTXRWNWSYSUUCPVCLVDLXOXQU
+      MZWHWIWDWOIHZWQWKIHZJHZWEWOIHZWLWKIHZJHZIHZUKTZJHZXBUUDWHDBCUDUDUETZUFTUU
+      MUUDWGUUNUFUUDWGCDBUDUDUETZUUNUUDBCDXOXHXQYCKZXOXJXQYEKZXOXLXQYGKZVEUUDCD
+      BUUQUURUUPVELUSUUDDBCUURUUPUUQXOXQUPXOWFXQXEWFXGXNKKUQLUUDUULXAWIJUUDUUKW
+      TUKUUDUUKWSMZWNMZIHZWTUUDUUKUUSWPWMJHZVPHZUUTUVBVPHZIHZUVAUUDUUKWPMZWRJHZ
+      UVFWMJHZIHZWJWMMZJHZWPUVJJHZIHZIHZUVEUUDUUKUVFWRWMIHZJHZWJWPIHZUVJJHZIHUV
+      NUUDUUGUVPUUJUVRIUUDUUEUVFUUFUVOJUUDUVFUUEUUDWOWDUUDWOUUDDUURNOZUUDWDUUDB
+      UUPNOZVBQUUDUVOUUFUUDUVOWRWLVPHZWKIHUUFUUDWRWKWLUUDWQWLUUDWQUUDCUUQVOOZUU
+      DWLUUDBUUPVOOZPZUUDWKUUDDUURVOOZUWCVFUUDUWAWQWKIUUDWQWLUWBUWCVGVHLQRUUDUU
+      HUVQUUIUVJJUUDUVQUUHUUDUVQWJWDVPHZWOIHUUHUUDWJWOWDUUDWEWDUUDWEUUDCUUQNOZU
+      VTPZUVSUVTVFUUDUWFWEWOIUUDWEWDUWGUVTVGVHLQUUDUVJUUIUUDWKWLUWEUWCVBQRRUUDU
+      VPUVIUVRUVMIUUDUVFWRWMUUDWPUUDWOWDUVSUVTPZSUWDUUDWKWLUWEUWCPZVIUUDWJWPUVJ
+      UWHUWIUUDWMUWJSVJRLUUDUVIUVCUVMUVDIUUDUVIUUSUVBMZIHUVCUUDUVGUUSUVHUWKIUUD
+      WPWRUWIUWDVKUUDWPWMUWIUWJVKRUUDUUSUVBUUDWSUUDWPWRUWIUWDVAZSZUUDWPWMUWIUWJ
+      VAZVQLUUDUVMUUTUWKIHUVDUUDUVKUUTUVLUWKIUUDWJWMUWHUWJVLUUDWPWMUWIUWJVLRUUD
+      UUTUVBUUDWNUUDWJWMUWHUWJVAZSZUWNVQLRLUUDUUSUUTUVBUWMUWPUWNVMLUUDWSWNUWLUW
+      OVNLUSVDLXEXPXQVRZXGAUWQWFAYMYTUWQYNUUAWDWOVSVTZKKWAAXFXGVRZWFAYKYTUWSYLU
+      UAWEWOVSVTZKWAAXDUMZXPXCXQUXAXPUMZWHWIWDWEIHZWKWQIHZJHZWOWEIHZWLWQIHZJHZI
+      HZUKTZJHZXBUXBWHCBDUDUDUETZUFTUXKUXBWGUXLUFUXBBCDUXAXHXPAXHXDEKZKZUXAXJXP
+      AXJXDFKZKZUXAXLXPAXLXDGKZKZWBUSUXBCBDUXPUXNUXRUXAXDXPAXDUPZKUXAXPUPUQLUXB
+      UXJXAWIJUXBUXJYJXAUXBUXIYIUKUXBUXIXSYIUXBUXIUUTUUSIHZXSUXBUXIUUTWJWRJHZVP
+      HZUUSUYAVPHZIHZUXTUXBUXIWJMZWMJHZUYEWRJHZIHZWPWRMZJHZWJUYIJHZIHZIHZUYDUXB
+      UXIUYEWMWRIHZJHZWPWJIHZUYIJHZIHUYMUXBUXEUYOUXHUYQIUXBUXCUYEUXDUYNJUXBUYEU
+      XCUXBWEWDUXBWEUXBCUXPNOZUXBWDUXBBUXNNOZVBQUXBUYNUXDUXBUYNWMWLVPHZWQIHZUXD
+      UXBWMWQWLUXBWKWLUXBWKUXBDUXRVOOZUXBWLUXBBUXNVOOZPZUXBWQUXBCUXPVOOZVUCVFUX
+      BUYTWKWQIUXBWKWLVUBVUCVGVHLQRUXBUXFUYPUXGUYIJUXBUYPUXFUXBUYPWPWDVPHZWEIHZ
+      UXFUXBWPWEWDUXBWOWDUXBWOUXBDUXRNOZUYSPZUYRUYSVFUXBVUFWOWEIUXBWOWDVUHUYSVG
+      VHLQUXBUYIUXGUXBWQWLVUEVUCVBQRRUXBUYOUYHUYQUYLIUXBUYEWMWRUXBWJUXBWEWDUYRU
+      YSPZSVUDUXBWQWLVUEVUCPZVIUXBWPWJUYIVUIVUJUXBWRVUKSVJRLUXBUYHUYBUYLUYCIUXB
+      UYHUUTUYAMZIHZUYBUXBUYFUUTUYGVULIUXBWJWMVUJVUDVKUXBWJWRVUJVUKVKRUXBUUTUYA
+      UXBWNUXBWJWMVUJVUDVAZSZUXBWJWRVUJVUKVAZVQLUXBUYLUUSVULIHZUYCUXBUYJUUSUYKV
+      ULIUXBWPWRVUIVUKVLUXBWJWRVUJVUKVLRUXBUUSUYAUXBWSUXBWPWRVUIVUKVAZSZVUPVQLR
+      LUXBUUTUUSUYAVUOVUSVUPVMLUXBWNWSVUNVURVNLUXBYIXSUXBWNWSVUNVURVBQLUSUXBWTU
+      XBWNWSVUNVURPVCLVDLUXAXQUMZXFXCXGVUTXFUMZWHWIUXHUXEIHZUKTZJHZXBVVAWHUUOUF
+      TVVDVVAWGUUOUFVVABCDVUTXHXFUXAXHXQUXMKZKZVUTXJXFUXAXJXQUXOKZKZVUTXLXFUXAX
+      LXQUXQKZKZVEUSVVACDBVVHVVJVVFVUTXFUPVUTXQXFUXAXQUPKUQLVVAVVCXAWIJVVAVVBWT
+      UKVVAVVBUVAWTVVAVVBUYCUYBIHZUVAVVAVVBUYLUYHIHZVVKVVAVVBUYQUYOIHVVLVVAUXHU
+      YQUXEUYOIVVAUXFUYPUXGUYIJVVAUYPUXFVVAUYPVUGUXFVVAWPWEWDVVAWOWDVVAWOVVADVV
+      JNOZVVAWDVVABVVFNOZPZVVAWEVVACVVHNOZVVNVFVVAVUFWOWEIVVAWOWDVVMVVNVGVHLQVV
+      AUYIUXGVVAWQWLVVAWQVVACVVHVOOZVVAWLVVABVVFVOOZVBQRVVAUXCUYEUXDUYNJVVAUYEU
+      XCVVAWEWDVVPVVNVBQVVAUYNUXDVVAUYNVUAUXDVVAWMWQWLVVAWKWLVVAWKVVADVVJVOOZVV
+      RPZVVQVVRVFVVAUYTWKWQIVVAWKWLVVSVVRVGVHLQRRVVAUYQUYLUYOUYHIVVAWPWJUYIVVOV
+      VAWEWDVVPVVNPZVVAWRVVAWQWLVVQVVRPZSVJVVAUYEWMWRVVAWJVWASVVTVWBVIRLVVAUYLU
+      YCUYHUYBIVVAUYLVUQUYCVVAUYJUUSUYKVULIVVAWPWRVVOVWBVLVVAWJWRVWAVWBVLRVVAUU
+      SUYAVVAWSVVAWPWRVVOVWBVAZSZVVAWJWRVWAVWBVAZVQLVVAUYHVUMUYBVVAUYFUUTUYGVUL
+      IVVAWJWMVWAVVTVKVVAWJWRVWAVWBVKRVVAUUTUYAVVAWNVVAWJWMVWAVVTVAZSZVWEVQLRLV
+      VAUUSUUTUYAVWDVWGVWEVMLVVAWSWNVWCVWFVNLUSVDLVUTXGUMZWHWIUUJUUGIHZUKTZJHZX
+      BVWHWHDCBUDUDUETZUFTVWKVWHWGVWLUFVWHWGYBVWLVWHBCDVUTXHXGVVEKZVUTXJXGVVGKZ
+      VUTXLXGVVIKZURVWHBDCVWMVWOVWNVELUSVWHDCBVWOVWNVWMVUTXGUPVUTXDXGUXAXDXQUXS
+      KKUQLVWHVWJXAWIJVWHVWJUULXAVWHUUKMZUKTVWJUULVWHVWPVWIUKVWHUUGUUJVWHUUEUUF
+      VWHWDWOVWHWDVWHBVWMNOZVWHWOVWHDVWONOZPZVWHWQWKVWHWQVWHCVWNVOOZVWHWKVWHDVW
+      OVOOZPZVAZVWHUUHUUIVWHWEWOVWHWEVWHCVWNNOZVWRPZVWHWLWKVWHWLVWHBVWMVOOZVXAP
+      ZVAZVBUSVWHUUKVWHUUGUUJVXCVXHPVCWCVWHUUKWTUKVWHWTUUKVWHWTUUJMZUUGMZIHZUUK
+      VWHWTVXIUUEUUIJHZVPHZVXJVXLVPHZIHVXKVWHWNVXMWSVXNIVWHWNUUHUUEIHZUUIMZJHZV
+      XMVWHWJVXOWMVXPJVWHVXOWJVWHVXOUUHWOVPHZWDIHWJVWHUUHWDWOVXEVWQVWRVFVWHVXRW
+      EWDIVWHWEWOVXDVWRVGVHLQVWHVXPWMVWHWLWKVXFVXAVBQRVWHVXQVXIVXLMZIHZVXMVWHVX
+      QUUHVXPJHZUUEVXPJHZIHVXTVWHUUHUUEVXPVXEVWSVWHUUIVXGSVJVWHVYAVXIVYBVXSIVWH
+      UUHUUIVXEVXGVLVWHUUEUUIVWSVXGVLRLVWHVXIVXLVWHUUJVXHSZVWHUUEUUIVWSVXGVAZVQ
+      LLVWHWSUUEMZUUFUUIIHZJHZVXNVWHWPVYEWRVYFJVWHVYEWPVWHWDWOVWQVWRVBQVWHVYFWR
+      VWHVYFUUFWKVPHZWLIHWRVWHUUFWLWKVXBVXFVXAVFVWHVYHWQWLIVWHWQWKVWTVXAVGVHLQR
+      VWHVYGVXJVXSIHZVXNVWHVYGVYEUUFJHZVYEUUIJHZIHVYIVWHVYEUUFUUIVWHUUEVWSSVXBV
+      XGVIVWHVYJVXJVYKVXSIVWHUUEUUFVWSVXBVKVWHUUEUUIVWSVXGVKRLVWHVXJVXLVWHUUGVX
+      CSZVYDVQLLRVWHVXIVXJVXLVYCVYLVYDVMLVWHUUJUUGVXHVXCVNLQUSLVDLUXAUWSXQAUWSX
+      DUWTKKWAAUWQXDUWRKWAAYMYKWFXDVRYNYLWDWEVSVTWA $.
+  $}
+
+
+  ${
+    areatrisinalgd.1 $e |- ( ph -> A e. CC ) $.
+    areatrisinalgd.2 $e |- ( ph -> B e. CC ) $.
+    areatrisinalgd.3 $e |- ( ph -> C e. CC ) $.
+    $( Algebraic identity relating the Shoelace determinant centered at the
+       first vertex to the cross-product components centered at the third
+       vertex.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    areatrisinalgd $p |- ( ph ->
+      ( ( ( ( Re ` B ) - ( Re ` A ) ) x. ( ( Im ` C ) - ( Im ` A ) ) ) -
+        ( ( ( Re ` C ) - ( Re ` A ) ) x. ( ( Im ` B ) - ( Im ` A ) ) ) ) =
+      ( ( ( ( Re ` A ) - ( Re ` C ) ) x. ( ( Im ` B ) - ( Im ` C ) ) ) -
+        ( ( ( Im ` A ) - ( Im ` C ) ) x. ( ( Re ` B ) - ( Re ` C ) ) ) ) ) $=
+      ( cfv cmin co caddc recnd mulcld addcld eqtrd oveq1d eqcomd oveq2d subcld
+      cmul cre recld imcld mulsubd oveq12d sub4d pnpcan2d addsub4d subdird cneg
+      cim mulcomd subsub4d subdid subsub2d addcomd negsubdi2d negsubd negeqd cc
+      mulneg1d eqeltrd ) ACUAHZBUAHZIJDUKHZBUKHZIJTJZDUAHZVDIJCUKHZVFIJTJZIJZVC
+      VETJZVHVITJZIJZVCVHIJZVFTJZVEVIIJZVDTJZKJZIJZVDVHIJVIVEIJZTJZVFVEIJVOTJZI
+      JZAVKVNVCVFTJZVEVDTJZKJZVHVFTJZVIVDTJZKJZIJZIJZVTAVKVLVFVDTJZKJZVMWMKJZIJ
+      ZWKIJZWLAVKWNWGIJZWOWJIJZIJWQAVGWRVJWSIAVCVDVEVFAVCACFUBLZAVDABEUBLZAVEAD
+      GUCLZAVFABEUCLZUDAVHVDVIVFAVHADGUBLZXAAVIACFUCLZXCUDUEAWNWGWOWJAVLWMAVCVE
+      WTXBMZAVFVDXCXAMZNAWEWFAVCVFWTXCMZAVEVDXBXAMZNAVMWMAVHVIXDXEMZXGNAWHWIAVH
+      VFXDXCMZAVIVDXEXAMZNUFOAWPVNWKIAVLVMWMXFXJXGUGPOAWKVSVNIAWKWEWHIJZWFWIIJZ
+      KJVSAWEWFWHWIXHXIXKXLUHAXMVPXNVRKAVPXMAVCVHVFWTXDXCUIQAVRXNAVEVIVDXBXEXAU
+      IZQUEOROAWDVTAWDVNVSUJZKJZVTAWDVNVDWATJZVFVOTJZIJZKJZXQAWDXTVNKJZYAAWDXTV
+      MVLIJZIJZYBAWDXTVIVHTJZVLIJZIJZYDAWDVDVITJZVFVCTJZIJZVDVETJZVFVHTJZIJZIJZ
+      YFIJZYGAWDYJYMYFKJZIJZYOAWDYJYKYEKJZYLVLKJZIJZIJZYQAWDYHVEVHTJZKJZYIVHVET
+      JZKJZIJZYTIJZUUAAWDUUCYRIJZUUEYSIJZIJUUGAWBUUHWCUUIIAVDVHVIVEXAXDXEXBUDAV
+      FVEVCVHXCXBWTXDUDUEAUUCYRUUEYSAYHUUBAVDVIXAXEMZAVEVHXBXDMNAYKYEAVDVEXAXBM
+      ZAVIVHXEXDMZNAYIUUDAVFVCXCWTMZAVHVEXDXBMZNAYLVLAVFVHXCXDMZXFNUFOAUUFYJYTI
+      AUUFYHUUDKJZUUEIJYJAUUCUUPUUEIAUUBUUDYHKAVEVHXBXDULRPAYHYIUUDUUJUUMUUNUGO
+      POAYTYPYJIAYKYEYLVLUUKUULUUOXFUHROAYOYQAYJYMYFAYHYIUUJUUMSAYKYLUUKUUOSAYE
+      VLUULXFSUMQOAYNXTYFIAYNYHYKIJZYIYLIJZIJXTAYHYIYKYLUUJUUMUUKUUOUFAUUQXRUUR
+      XSIAXRUUQAVDVIVEXAXEXBUNQAXSUURAVFVCVHXCWTXDUNQUEOPOAYFYCXTIAYEVMVLIAVIVH
+      XEXDULPROAXTVMVLAXRXSAVDWAXAAVIVEXEXBSZMZAVFVOXCAVCVHWTXDSZMZSZXJXFUOOAXT
+      VNUVCAVLVMXFXJSZUPOAXTXPVNKAXTXSXRIJZUJZXPAUVFXTAXSXRUVBUUTUQQAUVEVSAUVEV
+      PXRUJZKJZVSAUVEVPXRIJZUVHAXSVPXRIAVFVOXCUVAULPAUVHUVIAVPXRAVOVFUVAXCMZUUT
+      URQOAUVGVRVPKAVRUVGAVRWAVDTJZUJZUVGAVRWAUJZVDTJUVLAVQUVMVDTAUVMVQAVIVEXEX
+      BUQQPAWAVDUUSXAVAOAUVKXRAWAVDUUSXAULUSOQROUSOROAVNVSUVDAVPVRUVJAVRXNUTXOA
+      WFWIXIXLSVBNUROQO $.
+  $}
+
+  ${
+    sinargabsd.1 $e |- ( ph -> U e. CC ) $.
+    sinargabsd.2 $e |- ( ph -> V e. CC ) $.
+    sinargabsd.3 $e |- ( ph -> U =/= 0 ) $.
+    sinargabsd.4 $e |- ( ph -> V =/= 0 ) $.
+    $( Complex trigonometric identity relating the sine of the angle between
+       two non-zero complex vectors to their 2D cross-product.  (Contributed by
+       Jon Pennant, 29-Oct-2026.) $)
+    sinargabsd $p |- ( ph ->
+      ( ( ( abs ` V ) x. ( abs ` U ) ) x.
+        ( abs ` ( sin ` ( Im ` ( log ` ( U / V ) ) ) ) ) ) =
+      ( abs ` ( ( ( Im ` U ) x. ( Re ` V ) ) -
+                ( ( Re ` U ) x. ( Im ` V ) ) ) ) ) $=
+      ( cabs cfv cmul co cdiv cim oveq2d abscld recnd eqtrd eqcomd imcld fveq2d
+      clog csin ccj cre cmin cexp absdivd sqvald oveq1d absne0d divcld divcan2d
+      c2 mulassd sqcld divne0d logcld resincld ci ce wcel wceq resinval syl cc0
+      wne efiarg syl2anc imdivd absge0d absidd remulcld eqeltrd absmuld immul2d
+      cr cc sqge0d c1 divrecd reccld mul12d wa jca recval cjcld cz expne0d cneg
+      a1i caddc immuld imcjd recld mulneg2d recjd oveq12d mulcld negcld addcomd
+      2z negsubd ) ACHIZBHIZJKZBCLKZUAIZMIZUBIZHIZJKZBCUCIZJKZMIZHIZBMIZCUDIZJK
+      ZBUDIZCMIZJKZUEKZHIAXKXCUMUFKZXFJKZMIZHIZXOAXKYCXFMIZJKZHIZYFAXKYCYGHIZJK
+      ZYIAXKYCXFHIZJKZXJJKZYKAYNXKAYMXEXJJAYMXCXCXDXCLKZJKZJKZXEAYMXCXCJKZYOJKZ
+      YQAYMYCYOJKYSAYLYOYCJABCDEGUGNAYCYRYOJAXCAXCACEOZPZUHZUIQAXCXCYOUUAUUAAXD
+      XCAXDABDOPZUUAACEGUJZUKUNQAYPXDXCJAXDXCUUCUUAUUDULNQUIRAYNYCYLXJJKZJKYKAY
+      CYLXJAXCUUAUOZAYLAXFABCDEGUKZOZPZAXJAXIAXIAXHAXGAXFUUGABCDEFGUPZUQSZURPOP
+      UNAUUEYJYCJAUUEYLYJYLLKZJKYJAXJUULYLJAXJYJYLHIZLKZUULAXJYGYLLKZHIUUNAXIUU
+      OHAXIXFYLLKZMIZUUOAXIUSXHJKUTIZMIZUUQAXHVPVAXIUUSVBUUKXHVCVDAUURUUPMAXFVQ
+      VAXFVEVFUURUUPVBUUGUUJXFVGVHTQAYLXFUUHUUGAXFUUGUUJUJZVIQTAYGYLAYGAXFUUGSP
+      ZUUIUUTUGQAUUMYLYJLAYLUUHAXFUUGVJVKNQNAYJYLAYJAYGUVAOPUUIUUTULQNQQAYKYCHI
+      ZYJJKZYIAYCUVBYJJAUVBYCAYCAYCYRVPUUBAXCXCYTYTVLVMZAXCYTVRVKRUIAYIUVCAYCYG
+      UUFUVAVNRQQAYHYEHAYEYHAYCXFUVDUUGVORTQAYEXNHAYDXMMAYDBYCVSCLKZJKZJKZXMAYD
+      YCBUVEJKZJKUVGAXFUVHYCJABCDEGVTNAYCBUVEUUFDACEGWAWBQAUVFXLBJAUVFYCXLYCLKZ
+      JKXLAUVEUVIYCJACVQVAZCVEVFZWCUVEUVIVBAUVJUVKEGWDCWEVDNAXLYCACEWFZUUFAXCUM
+      UUAUUDUMWGVAAXAWJWHULQNQTTQAXNYBHAXNXRYAWIZWKKZYBAXNUVMXRWKKZUVNAXNXSXLMI
+      ZJKZXPXLUDIZJKZWKKUVOABXLDUVLWLAUVQUVMUVSXRWKAUVQXSXTWIZJKUVMAUVPUVTXSJAC
+      EWMNAXSXTAXSABDWNPZAXTACESPZWOQAUVRXQXPJACEWPNWQQAUVMXRAYAAXSXTUWAUWBWRZW
+      SAXPXQAXPABDSPAXQACEWNPWRZWTQAXRYAUWDUWCXBQTQ $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.  $d C x y $.
+    areatrisind.f $e |- F = ( x e. ( CC \ { 0 } ) , y e. ( CC \ { 0 } ) |->
+                            ( Im ` ( log ` ( y / x ) ) ) ) $.
+    areatrisind.x $e |- X = ( abs ` ( B - C ) ) $.
+    areatrisind.y $e |- Y = ( abs ` ( A - C ) ) $.
+    areatrisind.o $e |- O = ( ( B - C ) F ( A - C ) ) $.
+    areatrisind.1 $e |- ( ph -> A e. CC ) $.
+    areatrisind.2 $e |- ( ph -> B e. CC ) $.
+    areatrisind.3 $e |- ( ph -> C e. CC ) $.
+    areatrisind.4 $e |- ( ph -> A =/= C ) $.
+    areatrisind.5 $e |- ( ph -> B =/= C ) $.
+    $( The geometric area of a triangle equals half the product of two side
+       lengths times the absolute sine of the included angle.  (Contributed by
+       Jon Pennant, 29-Oct-2026.) $)
+    areatrisind $p |- ( ph -> ( areac ` ( tri ` <. A , <. B , C >. >. ) ) =
+      ( ( ( 1 / 2 ) x. ( X x. Y ) ) x. ( abs ` ( sin ` O ) ) ) ) $=
+      ( co cop ctri cfv careac c1 c2 cdiv cmul csin cabs cmin clog cim areatrid
+      cre areatrisinalgd fveq2d oveq2d eqtrd resubd eqcomd imsubd oveq12d recld
+      subcld recnd mulcld abssubd subne0d sinargabsd wceq eqcomi a1i angvald cc
+      imcld wcel halfcn abscld eqeltrrd divcld divne0d logcld sincld mulassd )
+      ADEFUAUAUBUCUDUCZUEUFUGTZIJUHTZHUIUCZUJUCZUHTZUHTZWGWHUHTWJUHTZAWFWGEFUKT
+      ZUJUCZDFUKTZUJUCZUHTZWPWNUGTZULUCZUMUCZUIUCZUJUCZUHTZUHTZWLAWFWGWPUMUCZWN
+      UOUCZUHTZWPUOUCZWNUMUCZUHTZUKTUJUCZUHTZXEAWFWGXKXHUKTZUJUCZUHTZXMAWFWGDUO
+      UCZFUOUCZUKTZEUMUCZFUMUCZUKTZUHTZDUMUCZYAUKTZEUOUCZXRUKTZUHTZUKTZUJUCZUHT
+      ZXPAWFWGYFXQUKTYAYDUKTUHTXRXQUKTXTYDUKTUHTUKTZUJUCZUHTYKADEFOPQUNAYMYJWGU
+      HAYLYIUJADEFOPQUPUQURUSAYJXOWGUHAYIXNUJAYCXKYHXHUKAXSXIYBXJUHAXIXSADFOQUT
+      VAAXJYBAEFPQVBVAVCAYEXFYGXGUHAXFYEADFOQVBVAAXGYGAEFPQUTVAVCVCUQURUSAXOXLW
+      GUHAXKXHAXIXJAXIAWPADFOQVEZVDVFAXJAWNAEFPQVEZVPVFVGAXFXGAXFAWPYNVPVFAXGAW
+      NYOVDVFVGVHURUSAXLXDWGUHAXDXLAWPWNYNYOADFOQRVIZAEFPQSVIZVJVAURUSAXDWKWGUH
+      AWRWHXCWJUHAWOIWQJUHWOIVKAIWOLVLVMZWQJVKAJWQMVLVMZVCAXBWIUJAXAHUIAHXAAHWN
+      WPGTZXAHYTVKANVMABCGWNWPKYOYQYNYPVNUSVAZUQUQVCURUSAWMWLAWGWHWJWGVOVQAVRVM
+      AIJAWOIVOYRAWOAWNYOVSVFVTAWQJVOYSAWQAWPYNVSVFVTVGAWJAWIAHAXAHVOUUAAXAAWTA
+      WSAWPWNYNYOYQWAAWPWNYNYOYPYQWBWCVPVFVTWDVSVFWEVAUS $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.  $d C x y $.
+    heronaread.x $e |- X = ( abs ` ( B - C ) ) $.
+    heronaread.y $e |- Y = ( abs ` ( A - C ) ) $.
+    heronaread.z $e |- Z = ( abs ` ( A - B ) ) $.
+    heronaread.s $e |- S = ( ( ( X + Y ) + Z ) / 2 ) $.
+    heronaread.1 $e |- ( ph -> A e. CC ) $.
+    heronaread.2 $e |- ( ph -> B e. CC ) $.
+    heronaread.3 $e |- ( ph -> C e. CC ) $.
+    heronaread.4 $e |- ( ph -> A =/= C ) $.
+    heronaread.5 $e |- ( ph -> B =/= C ) $.
+    $( Heron's formula for the true geometric area of a triangle in terms of
+       its three side lengths.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    heronaread $p |- ( ph -> ( areac ` ( tri ` <. A , <. B , C >. >. ) ) =
+      ( sqrt ` ( ( S x. ( S - X ) ) x. ( ( S - Y ) x. ( S - Z ) ) ) ) ) $=
+      ( cfv co cmul vx vy cop ctri careac c1 c2 cdiv cmin cc0 csn cdif clog cim
+      cc cv cmpo csin cabs csqrt eqid areatrisind heron eqtrd ) ABCDUCUCUDRUERU
+      FUGUHSFGTSTSCDUISBDUISUAUBUOUJUKULZVEUBUPUAUPUHSUMRUNRUQZSZURRUSRTSEEFUIS
+      TSEGUISEHUISTSTSUTRAUAUBBCDVFVGFGVFVAZIJVGVAZMNOPQVBAUAUBBCDEVFVGFGHVHIJK
+      VILMNOPQVCVD $.
+  $}
+
+
 $( (End of Jon Pennant's mathbox.) $)
 $( End $[ set-mbox-jpp.mm $] $)
-
 
 $( Begin $[ set-mbox-rp.mm $] $)
 $( Skip $[ set-main.mm $] $)
