@@ -856645,7 +856645,7 @@ $)
       $d A x $.  $d B x $.  $d S x $.  $d X x $.
       linplyfv2.c $e |- C = ( x e. NN0 |-> if ( x = 0 , A , B ) ) $.
       $( The evaluation of a linear polynomial over a subset of the complex
-         numbers with explicit coefficientsat a complex number.  (Contributed
+         numbers with explicit coefficients at a complex number.  (Contributed
          by AV, 31-Oct-2026.) $)
       linply2cfv $p |- ( ( S C_ CC /\ ( A e. S /\ B e. S ) /\ X e. CC )
                        -> ( P ` X ) = ( A + ( B x. X ) ) ) $=
@@ -856662,7 +856662,7 @@ $)
 
     $d C c $.  $d P c n $.  $d S c k n p z $.
     $( A linear polynomial over a subset of the complex numbers is a polynomial
-       over a subset of the complex numbers.  (Contributed by AV,
+       over the subset of the complex numbers.  (Contributed by AV,
        31-Oct-2026.) $)
     linply $p |- ( ( S C_ CC /\ C e. ( S ^m NN0 ) ) -> P e. ( Poly ` S ) ) $=
       ( vn vc cc wss cn0 co wcel cc0 cv cfz cfv wceq c1 cvv cmap cexp cmul cmpt
