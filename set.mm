@@ -10660,9 +10660,17 @@ $)
   $}
 
   $( Associative law for four conjunctions with a triple conjunction.
-     (Contributed by Thierry Arnoux, 21-Jan-2025.) $)
+     (Contributed by Thierry Arnoux, 21-Jan-2025.)  (Proof shortened by Wolf
+     Lammen, 31-Oct-2026.) $)
   13an22anass $p |- ( ( ph /\ ( ps /\ ch /\ th ) )
                    <-> ( ( ph /\ ps ) /\ ( ch /\ th ) ) ) $=
+    ( w3a wa 3anass bianass ) BCDEBCDFABCDGH $.
+
+  $( Obsolete version of ~ 13an22anass as of 31-Oct-2026.  (Contributed by
+     Thierry Arnoux, 21-Jan-2025.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
+  13an22anassOLD $p |- ( ( ph /\ ( ps /\ ch /\ th ) )
+                       <-> ( ( ph /\ ps ) /\ ( ch /\ th ) ) ) $=
     ( wa w3a an2anr an4 bitri an43 3bitr2ri 3an4anass ancom ) ABECDEEZBCEDAEEZB
     CDFZAEAPEOCBEADEEZACEDBEEZNBCDAGRCAEBDEEQACDBGCABDHIACDBJKBCDALPAMK $.
 
