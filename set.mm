@@ -594910,7 +594910,7 @@ $)
     mirimanoff.1 $e |- M = { x | -. E. f ( f Fn _om /\ ( f ` (/) ) = x /\ A. n
                     e. _om ( f ` suc n ) e. ( f ` n ) ) } $.
     $( Mirimanoff's paradox:  The class of grounded sets is not a set.  Here, a
-       set ` x ` is grounded if there is no infinite membership-descending
+       set ` x ` is _grounded_ if there is no infinite membership-descending
        sequence of sets beginning with ` x ` .  See Paragraph 1 of [Quine]
        p. 37 .  (Contributed by Adrian Ducourtial, 11-Oct-2026.) $)
     mirimanoff $p |- M e/ _V $=
@@ -594959,19 +594959,23 @@ $)
       UXGUYOYMUXFUXJCUXKWNTSWOUYLUYPBUXAUYOYMUWTUXJCUXLWNTSWMUYNUYLBUXBUXAYMUXM
       TSUYNUYEBUXBYSYMUYCTSWOUYKYHEIZKZUYKURZYJUYKVUDXSVUCUYJLVUEYIVUCUYJWGUWEU
       YJAYHEDUWBYHOZUWDUYIBVUFUWCYMUVBAGBXTUQUSFUTWQWJYAYBYDYDXFVSYEYF $.
-    $( $j usage 'mirimanofffr' avoids 'ax-reg'; $)
+    $( $j usage 'mirimanofffr' avoids 'ax-10' 'ax-rep' 'ax-nul' 'ax-un'
+       'ax-reg' 'ax-inf2' ; $)
   $}
 
   ${
     $d M x y z $.
     mirimanofff.1 $e |- M = { x | A. y ( x e. y -> E. z e. y ( z i^i y ) = (/)
                      ) } $.
-    $( Mirimanoff's paradox for founded sets.  See ~ mirimanoff .  (Contributed
-       by Adrian Ducourtial, 28-Oct-2026.) $)
+    $( Mirimanoff's paradox ~ mirimanoff for founded sets.  A set ` x ` is
+       _founded_ if every set containing ` x ` has a minimal element under
+       membership.  Compare with ~ zfreg the defining condition of ` M ` in the
+       hypothesis.  (Contributed by Adrian Ducourtial, 28-Oct-2026.) $)
     mirimanofff $p |- M e/ _V $=
       ( cvv wel cv cin c0 wceq wrex wi wal cab crab rabab eqtr4i mirimanofffr )
       ABCDFDABGCHBHZIJKCTLMBNZAOUAAFPEUAAQRS $.
-    $( $j usage 'mirimanofff' avoids 'ax-reg'; $)
+    $( $j usage 'mirimanofff' avoids 'ax-10' 'ax-rep' 'ax-nul' 'ax-un' 'ax-reg'
+       'ax-inf2' ; $)
   $}
 
   ${
