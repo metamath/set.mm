@@ -48691,6 +48691,15 @@ $)
       ( wbr breq1d mtbird ) ABDEHCDEHGABCDEFIJ $.
   $}
 
+  ${
+    brneqtrd.1 $e |- ( ph -> -. A R B ) $.
+    brneqtrd.2 $e |- ( ph -> B = C ) $.
+    $( Substitution of equal classes into the negation of a binary relation.
+       (Contributed by Glauco Siliprandi, 3-Jan-2021.) $)
+    brneqtrd $p |- ( ph -> -. A R C ) $=
+      ( wbr breq2d mtbid ) ABCEHBDEHFACDBEGIJ $.
+  $}
+
   $( Two classes are different if they don't have the same relationship to a
      third class.  (Contributed by NM, 3-Jun-2012.) $)
   nbrne1 $p |- ( ( A R B /\ -. A R C ) -> B =/= C ) $=
@@ -60534,6 +60543,37 @@ $)
       IZDAJCAJZKABLZEZUGUFUMGZDCHZUFUGUMGZIZCAJDAJZKABMAUMMUEUNULUSABNULUKCAJDA
       JUSUKCDAAOURUKDCAAUOUHUPUIUQUJUGUFBDPZCPZQDCRUFUGBVAUTQSUAUBUCCDABTDCAUMT
       UD $.
+  $}
+
+  ${
+    $d R x y z $.  $d A x y z $.  $d B x y z $.  $d C x y $.
+    $( A subset of a well-founded set has an infimum.  (Contributed by Jeff
+       Madsen, 2-Sep-2009.) $)
+    frinfm $p |- ( ( R Fr A /\ ( B e. C /\ B C_ A /\ B =/= (/) ) ) ->
+                    E. x e. A ( A. y e. B -. x `' R y /\
+                    A. y e. A ( y `' R x -> E. z e. B y `' R z ) ) ) $=
+      ( wfr wcel wss c0 wa cv wbr wn wral wrex wi vex ex wne w3a ccnv fri exp43
+      ancom1s 3imp2 ssel2 adantrr brcnv biimpi ralimi ad2antll rspcev ralrimivw
+      con3i breq2 ad2antrl jca32 reximdv2 adantl 3ad2antr2 mpd ) DGHZEFIZEDJZEK
+      UAZUBLBMZAMZGNZOZBEPZAEQZVIVHGUCZNZOZBEPZVHVIVNNZVHCMZVNNZCEQZRZBDPZLZADQ
+      ZVDVEVFVGVMVDVEVFVGVMVEVDVFVGLVMABDEFGUDUFUEUGVDVEVFVMWERZVGVFWFVDVFVLWDA
+      EDVFVIEIZVLLZVIDIZWDLVFWHLWIVQWCVFWGWIVLEDVIUHUIVLVQVFWGVKVPBEVOVJVOVJVIV
+      HGASBSUJUKUPULUMWGWCVFVLWGWBBDWGVRWAVTVRCVIEVSVIVHVNUQUNTUOURUSTUTVAVBVC
+      $.
+  $}
+
+  ${
+    $d A x y z $.  $d B x y z $.  $d C x y z $.  $d R x y z $.
+    $( A nonempty subset of a well-ordered set has a lower bound.  (Contributed
+       by Jeff Madsen, 2-Sep-2009.) $)
+    welb $p |- ( ( R We A /\ ( B e. C /\ B C_ A /\ B =/= (/) ) ) ->
+              ( `' R Or B /\ E. x e. B ( A. y e. B -. x `' R y /\
+                        A. y e. B ( y `' R x -> E. z e. B y `' R z ) ) ) ) $=
+      ( wwe wcel wss c0 w3a wa wor cv wbr wral wrex syl 3ad2antr2 wne ccnv wess
+      wn wi impcom weso cnvso sylib wfr ssidd 3anim2i adantl frinfm syl2anc jca
+      wefr ) DGHZEFIZEDJZEKUAZLZMZEGUBZNZAOZBOZVDPUDBEQVGVFVDPVGCOVDPCERUEBEQMA
+      ERZURUSUTVEVAURUTMZEGNZVEVIEGHZVJUTURVKEDGUCUFZEGUGSEGUHUITVCEGUJZUSEEJZV
+      ALZVHURUSUTVMVAVIVKVMVLEGUQSTVBVOURUTVNUSVAUTEUKULUMABCEEFGUNUOUP $.
   $}
 
   ${
@@ -525025,6 +525065,62 @@ $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
+  $( "Less than" is a well-order on the nonnegative integers.  (Contributed by
+     Thierry Arnoux, 29-Oct-2026.) $)
+  ltwenn0 $p |- < We NN0 $=
+    ( cn0 clt wwe cc0 cuz cfv ltweuz wceq wb nn0uz weeq2 ax-mp mpbir ) ABCZDEFZ
+    BCZDGAOHNPIJAOBKLM $.
+
+  ${
+    $d A b i x $.  $d A j $.  $d A w x y z $.  $d B b $.  $d B i j y $.
+    $d B w x z $.  $d C w x y $.  $d R b i $.  $d R j $.  $d R w x y z $.
+    $d b i ph $.  $d ph w x y $.
+    weinfcl.1 $e |- ( ph -> R We A ) $.
+    weinfcl.2 $e |- ( ph -> B e. V ) $.
+    weinfcl.3 $e |- ( ph -> B C_ A ) $.
+    weinfcl.4 $e |- ( ph -> B =/= (/) ) $.
+    $( Closure of the infimum in a well-order.  (Contributed by Thierry Arnoux,
+       29-Oct-2026.) $)
+    weinfcl $p |- ( ph -> inf ( B , A , R ) e. B ) $=
+      ( vx vi vy vj cv wbr wn wral wcel wa syl cinf weso ad2antrr sselda adantr
+      wor wwe weq breq1 notbid cbvralvw bilani r19.21bi simprr rspcedvdw eqinfd
+      simpllr simplr eqeltrd wfr wefr frd r19.29a ) AJNZKNZDOZPZJCQZCBDUAZCRKCA
+      VECRZSZVHSZVIVECVLLMBCVEDABDUFZVJVHABDUGZVMFBDUBTUCVKVEBRVHACBVEHUDUEVLLN
+      ZVEDOZPZLCVHVQLCQVKVGVQJLCJLUHVFVPVDVOVEDUIUJUKULUMVLVOBRZVEVODOZSZSMNZVO
+      DOVSMVECWAVEVODUIAVJVHVTUQVLVRVSUNUOUPAVJVHURUSAKJBCDEAVNBDUTFBDVATHGIVBV
+      C $.
+  $}
+
+  ${
+    $d A i y $.  $d A t x y z $.  $d B i $.  $d B t x y z $.  $d R i $.
+    $d R t x y z $.  $d V x y z $.  $d i ph $.  $d ph t x y z $.
+    weinflb.1 $e |- ( ph -> Rel R ) $.
+    weinflb.2 $e |- ( ph -> R We A ) $.
+    weinflb.3 $e |- ( ph -> B e. V ) $.
+    weinflb.4 $e |- ( ph -> B C_ A ) $.
+    weinflb.5 $e |- ( ph -> B =/= (/) ) $.
+    weinflb.6 $e |- ( ph -> C e. B ) $.
+    $( In a well-order, an infimum is a lower bound.  (Contributed by Thierry
+       Arnoux, 29-Oct-2026.) $)
+    weinflb $p |- ( ph -> -. C R inf ( B , A , R ) ) $=
+      ( vx vy vz wcel wbr wn wral wa cinf wwe wor weso syl cv ccnv wrex wss wne
+      welb syl13anc simprd sselda adantrr brcnvg notbid ralbidva biimpa adantll
+      wi c0 breq1 simpllr rspcedvdw ralrimiva adantr anim12dan anasss reximssdv
+      simpr ex inflb mpd ) ADCPDCBEUAEQRLAMNOBCDEABEUBZBEUCHBEUDUEAMUFZNUFZEUGZ
+      QZRZNCSZVQVPVRQVQOUFZVRQOCUHVANCSZTZVQVPEQZRZNCSZVPVQEQZWBVQEQZOCUHZVAZNB
+      SZTZMBCACVRUCZWDMCUHZAVOCFPCBUICVBUJWNWOTHIJKMNOBCFEUKULUMAVPCPZVPBPWDACB
+      VPJUNUOAWPWDWMAWPTZWAWGWCWLWPWAWGAWPWAWGWPVTWFNCWPVQCPTVSWEVPVQCCEUPUQURU
+      SUTWQWLWCWQWKNBWQVQBPZTZWHWJWSWHTWIWHOVPCWBVPVQEVCAWPWRWHVDWSWHVKVEVLVFVG
+      VHVIVJVMVN $.
+  $}
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Order Theory : Galois Connections
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
   $c Monot MGalConn $.
   $v .c_ $.
 
@@ -533601,15 +533697,262 @@ $)
   cedom $a class EDomn $.
 
   ${
-    $d a b d e q r v $.
-    $( Define Euclidean Domains.  (Contributed by Thierry Arnoux,
+    $d a b d e q r v w $.
+    $( Define Euclidean domains.  (Contributed by Thierry Arnoux,
        22-Mar-2025.) $)
-    df-edom $a |- EDomn = { d e. IDomn |
-      [. ( EuclF ` d ) / e ]. [. ( Base ` d ) / v ].
-         ( Fun e /\ ( e " ( v \ { ( 0g ` d ) } ) ) C_ ( 0 [,) +oo )
-       /\ A. a e. v A. b e. ( v \ { ( 0g ` d ) } ) E. q e. v E. r e. v (
+    df-edom $a |- EDomn = { d e. IDomn | [. ( EuclF ` d ) / e ].
+      [. ( Base ` d ) / v ]. [. ( v \ { ( 0g ` d ) } ) / w ]. (
+           ( e |` w ) : w --> NN0
+       /\ A. a e. v A. b e. w E. q e. v E. r e. v (
            a = ( ( b ( .r ` d ) q ) ( +g ` d ) r )
        /\ ( r = ( 0g ` d ) \/ ( e ` r ) < ( e ` b ) ) ) ) } $.
+  $}
+
+  ${
+    $d .+ b d e $.  $d .0. b d e y $.  $d .0. v w $.  $d .x. b d e $.
+    $d B b d e q r x y $.  $d B d e q r v w x y $.  $d D b d e q r x y $.
+    $d D v w $.  $d E b d e q r x y $.  $d E v w $.
+    isedom.b $e |- B = ( Base ` D ) $.
+    isedom.0 $e |- .0. = ( 0g ` D ) $.
+    isedom.p $e |- .+ = ( +g ` D ) $.
+    isedom.m $e |- .x. = ( .r ` D ) $.
+    isedom.e $e |- E = ( ( EuclF ` D ) |` ( B \ { .0. } ) ) $.
+    $( Property of being a Euclidean domain.  (Contributed by Thierry Arnoux,
+       29-Oct-2026.) $)
+    isedom $p |- ( D e. EDomn <-> ( D e. IDomn /\ ( E : ( B \ { .0. } ) --> NN0
+       /\ A. x e. B A. y e. ( B \ { .0. } )
+           E. q e. B E. r e. B ( x = ( ( y .x. q ) .+ r )
+             /\ ( r = .0. \/ ( E ` r ) < ( E ` y ) ) ) ) ) ) $=
+      ( cv cfv wceq wa wrex vw ve vd vv cn0 cres wf cmulr co cplusg c0g clt wbr
+      wo wral csn cdif wsbc cbs ceuf cidom cedom eqid cvv vex difexi a1i simpll
+      wcel simpr simplr difeq1d reseq12d feq12d fveq1d breq12d orbi2d rexeqbidv
+      eqtrd anbi2d raleqbidv anbi12d sbcied sbcie2s fveq2 eqtr4di sneqd difeq2d
+      wb oveqd eqidd oveq123d eqeq2d ad2antrr orbi1d biort bitr3d adantl fveq1i
+      reseq2d wne eldifsnd fvresd eqtr2id adantr eleqtrd bitrd rexbidva rexbidv
+      pm2.61dane raleqbidva ralbidv df-edom elrab2 ) UAPZUEUBPZXOUFZUGZAPZBPZJP
+      ZUCPZUHQZUIZIPZYBUJQZUIZRZYEYBUKQZRZYEXPQZXTXPQZULUMZUNZSZIUDPZTZJYPTZBXO
+      UOZAYPUOZSZUAYPYIUPZUQZURZUDYBUSQURUBYBUTQURZCHUPZUQZUEGUGZXSXTYAFUIZYEEU
+      IZRZYEHRZYEGQZXTGQZULUMZUNZSZICTZJCTZBUUGUOZACUOZSZUCDVAVBYBDRZUUECUUBUQZ
+      UEDUTQZUVDUFZUGZYHYJYEUVEQZXTUVEQZULUMZUNZSZICTZJCTZBUVDUOZACUOZSZUVBUUDU
+      VQUCUVECUTUSDUBUDUVEVCKXPUVERZYPCRZSZUUAUVQUAUUCVDUUCVDVIUVTYPUUBUDVEVFVG
+      UVTXOUUCRZSZXRUVGYTUVPUWBXOUVDUEXQUVFUWBXPUVEXOUVDUVRUVSUWAVHZUWBXOUUCUVD
+      UVTUWAVJUWBYPCUUBUVRUVSUWAVKZVLVSZVMUWEVNUWBYSUVOAYPCUWDUWBYRUVNBXOUVDUWE
+      UWBYQUVMJYPCUWDUWBYOUVLIYPCUWDUWBYNUVKYHUWBYMUVJYJUWBYKUVHYLUVIULUWBYEXPU
+      VEUWCVOUWBXTXPUVEUWCVOVPVQVTVRVRWAWAWBWCWDUVCUVGUUHUVPUVAUVCUVDUUGUEUVFGU
+      VCUVFUVEUUGUFZGUVCUVDUUGUVEUVCUUBUUFCUVCYIHUVCYIDUKQHYBDUKWELWFZWGWHZWTOW
+      FUWHVNUVCUVOUUTACUVCUVNUUSBUVDUUGUWHUVCXTUVDVIZSZUVMUURJCUWJUVLUUQICUWJYE
+      CVIZSZYHUUKUVKUUPUVCYHUUKWIUWIUWKUVCYGUUJXSUVCYDUUIYEYEYFEUVCYFDUJQEYBDUJ
+      WEMWFUVCYCFXTYAUVCYCDUHQFYBDUHWENWFWJUVCYEWKWLWMWNUWLUVKUULUVJUNZUUPUWLYJ
+      UULUVJUVCYJUULWIUWIUWKUVCYIHYEUWGWMWNWOUWLUWMUUPWIZYEHUULUWNUWLUULUULUWMU
+      UPUULUVJWPUULUUOWPWQWRUWLYEHXAZSZUVJUUOUULUWPUVHUUMUVIUUNULUWPUUMYEUWFQUV
+      HYEGUWFOWSUWPYEUUGUVEUWPYECHUWJUWKUWOVKUWLUWOVJXBXCXDUWPUUNXTUWFQUVIXTGUW
+      FOWSUWPXTUUGUVEUWJXTUUGVIUWKUWOUWJXTUVDUUGUVCUWIVJUVCUVDUUGRUWIUWHXEXFWNX
+      CXDVPVQXJXGWBXHXIXKXLWBXGUAUDUBIJABUCXMXN $.
+  $}
+
+  ${
+    $d D q r x y $.
+    edomidom.1 $e |- ( ph -> D e. EDomn ) $.
+    $( Every Euclidean domain is an integral domain.  (Contributed by Thierry
+       Arnoux, 29-Oct-2026.) $)
+    edomidom $p |- ( ph -> D e. IDomn ) $=
+      ( vx vy vq vr cedom wcel cidom cbs cfv c0g cv co wceq wa wrex wral eqid
+      csn cdif cn0 ceuf cres wf cmulr cplusg clt wbr wo isedom simplbi syl ) AB
+      HIZBJIZCUOUPBKLZBMLZUAUBZUCBUDLUSUEZUFDNENZFNBUGLZOGNZBUHLZOPVCURPVCUTLVA
+      UTLUIUJUKQGUQRFUQREUSSDUQSQDEUQBVDVBUTURGFUQTURTVDTVBTUTTULUMUN $.
+  $}
+
+  ${
+    $d .+ x y $.  $d .0. q r x y $.  $d .x. x y $.  $d B q r x y $.
+    $d D q r x y $.  $d E q r x y $.  $d X q r x y $.  $d Y q r y $.
+    $d ph q r $.
+    edomediv.b $e |- B = ( Base ` D ) $.
+    edomediv.z $e |- .0. = ( 0g ` D ) $.
+    edomediv.p $e |- .+ = ( +g ` D ) $.
+    edomediv.m $e |- .x. = ( .r ` D ) $.
+    edomediv.e $e |- E = ( EuclF ` D ) $.
+    edomediv.d $e |- ( ph -> D e. EDomn ) $.
+    edomediv.x $e |- ( ph -> X e. B ) $.
+    edomediv.y $e |- ( ph -> Y e. ( B \ { .0. } ) ) $.
+    $( Apply a Euclidean division in a Euclidean domain.  (Contributed by
+       Thierry Arnoux, 29-Oct-2026.) $)
+    edomediv $p |- ( ph -> E. q e. B E. r e. B ( X = ( ( Y .x. q ) .+ r )
+                                 /\ ( r = .0. \/ ( E ` r ) < ( E ` Y ) ) ) ) $=
+      ( wa vx vy cv co wceq csn cdif cres cfv clt wo wrex eqeq1 anbi1d 2rexbidv
+      wbr oveq1 oveq1d eqeq2d fveq2 breq2d orbi2d anbi12d cidom wcel wral cedom
+      cn0 wf reseq1i isedom sylib simprrd rspc2dv wb biort bitr3d adantl simplr
+      ceuf wne eldifsnd fvresd ad2antrr adantr breq12d pm2.61dane anbi2d anasss
+      simpr 2rexbidva mpbid ) AGHKUCZEUDZJUCZDUDZUEZWOIUEZWOFBIUFUGZUHZUIZHWTUI
+      ZUJUPZUKZTZJBULKBULZWQWRWOFUIZHFUIZUJUPZUKZTZJBULKBULAUAUCZUBUCZWMEUDZWOD
+      UDZUEZWRXAXMWTUIZUJUPZUKZTZJBULKBULZXFGXOUEZXSTZJBULKBULUAUBGHBWSXLGUEZXT
+      YCKJBBYDXPYBXSXLGXOUMUNUOXMHUEZYCXEKJBBYEYBWQXSXDYEXOWPGYEXNWNWODXMHWMEUQ
+      URUSYEXRXCWRYEXQXBXAUJXMHWTUTVAVBVCUOACVDVEZWSVHWTVIZYAUBWSVFUABVFZACVGVE
+      YFYGYHTTQUAUBBCDEWTIJKLMNOFCVTUIWSPVJVKVLVMRSVNAXEXKKJBBAWMBVEZWOBVEZXEXK
+      VOAYITZYJTZXDXJWQYLXDXJVOZWOIWRYMYLWRWRXDXJWRXCVPWRXIVPVQVRYLWOIWAZTZXCXI
+      WRYOXAXGXBXHUJYOWOWSFYOWOBIYKYJYNVSYLYNWJWBWCYLXBXHUEYNYLHWSFAHWSVEYIYJSW
+      DWCWEWFVBWGWHWIWKWL $.
+  $}
+
+  ${
+    $d .0. q r x y $.  $d B q r x y $.  $d E q r x y $.  $d F q r x y $.
+    $d ph x y $.
+    fldedom.b $e |- B = ( Base ` F ) $.
+    fldedom.1 $e |- .0. = ( 0g ` F ) $.
+    fldedom.2 $e |- W = ( B \ { .0. } ) $.
+    fldedom.e $e |- E = ( EuclF ` F ) $.
+    fldedom.f $e |- ( ph -> F e. Field ) $.
+    fldedom.3 $e |- ( ph -> ( E |` W ) : W --> NN0 ) $.
+    $( A field is a Euclidean domain, regardless of its Euclidean norm.
+       (Contributed by Thierry Arnoux, 29-Oct-2026.) $)
+    fldedom $p |- ( ph -> F e. EDomn ) $=
+      ( vx vy vq wcel cfv co wceq wa vr cidom csn cdif cn0 cres wf cmulr cplusg
+      cv clt wbr wo wrex wral cedom cfield fldidom syl reseq2i a1i feq2dd cinvr
+      feq1dd oveq2 oveq1d eqeq2d anbi1d eqeq1 fveq2 breq1d orbi12d anbi12d eqid
+      crg idomringd ad2antrr flddrngd difssd sselda simpr eldifsnbd drnginvrcld
+      cdr simplr ringcld ringgrpd grpidcld cur cgrp grpridd ringassd drnginvrrd
+      eqtr3d ringlidmd 3eqtrrd eqidd orcd jca 2rspcedvdw anasss ralrimivva ceuf
+      reseq1i isedom sylanbrc ) ADUBPZBFUCZUDZUECXIUFZUGZMUJZNUJZOUJZDUHQZRZUAU
+      JZDUIQZRZSZXQFSZXQXJQZXMXJQZUKULZUMZTZUABUNOBUNZNXIUOMBUOZTDUPPADUQPXGKDU
+      RUSZAXKYHAXIUECEUFZXJYJXJSAEXICIUTVAAEXIUEYJEXISAIVALVBVDAYGMNBXIAXLBPZXM
+      XIPZYGAYKTZYLTZYFXLXMXMDVCQZQZXLXORZXORZXQXRRZSZYETXLYRFXRRZSZFFSZFXJQZYC
+      UKULZUMZTOUAYQFBBXNYQSZXTYTYEUUGXSYSXLUUGXPYRXQXRXNYQXMXOVEVFVGVHYAYTUUBY
+      EUUFYAYSUUAXLXQFYRXRVEVGYAYAUUCYDUUEXQFFVIYAYBUUDYCUKXQFXJVJVKVLVMYNBDXOY
+      PXLGXOVNZADVOPYKYLADYIVPZVQZYNBDYOXMFGHYOVNZADWDPYKYLADKVRVQZYMXIBXMYMBXH
+      VSVTZYNXMBFYMYLWAWBZWCZAYKYLWEZWFZAFBPYKYLABDFGHADUUIWGZWHVQYNUUBUUFYNUUA
+      YRDWIQZXLXORZXLYNBXRDYRFGXRVNZHADWJPYKYLUURVQYNBDXOXMYQGUUHUUJUUMUUQWFWKY
+      NXMYPXORZXLXORYRUUTYNBDXOXMYPXLGUUHUUJUUMUUOUUPWLYNUVBUUSXLXOYNBDXOUUSYOX
+      MFGHUUHUUSVNZUUKUULUUMUUNWMVFWNYNBDXOUUSXLGUUHUVCUUJUUPWOWPYNUUCUUEYNFWQW
+      RWSWTXAXBWSMNBDXRXOXJFUAOGHUVAUUHCDXCQXIJXDXEXF $.
+  $}
+
+  ${
+    $d x y $.
+    $( The ring of integers is an integral domain.  (Contributed by Thierry
+       Arnoux, 4-May-2025.) $)
+    zringidom $p |- ZZring e. IDomn $=
+      ( vx vy czring cidom wcel ccrg cdomn zringcrng cz cc0 cv cmul wa ad2antrr
+      wceq cc zcnd zringbas zring0 mpbir2an cnzr csn crlreg cfv wss zringnzr co
+      cdif wi eldifi wo simplr simpr mul0or biimpa syl21anc wne eldifsni neneqd
+      wral orcnd ralrimiva eqid zringmulr isrrg sylanbrc ssriv isdomn2 isidom
+      ex ) CDECFECGEZHVKCUAEIJUBZUHZCUCUDZUEUFAVMVNAKZVMEZVOIEZVOBKZLUGJOZVRJOZ
+      UIZBIUTVOVNEVOIVLUJZVPWABIVPVRIEZMZVSVTWDVSMZVOJOZVTWEVOPEZVRPEZVSWFVTUKZ
+      WEVOVPVQWCVSWBNQWEVRVPWCVSULQWDVSUMWGWHMVSWIVOVRUNUOUPWEVOJVPVOJUQWCVSVOI
+      JURNUSVAVJVBBICLVNVOJVNVCZRVDSVEVFVGICVNJRWJSVHTCVIT $.
+  $}
+
+  ${
+    $d q r x y $.
+    zzedom.1 $e |- abs = ( EuclF ` ZZring ) $.
+    $( The ring of integers is a Euclidean domain.  Note that the hypothesis
+       ` abs = ( EuclF `` ZZring ) ` could be dropped if the definition of
+       ` CCfld ` is adapted.  (Contributed by Thierry Arnoux, 29-Oct-2026.) $)
+    zzedom $p |- ZZring e. EDomn $=
+      ( vx vy vq vr czring wcel cz cc0 cn0 cabs cv cmul co caddc wceq cfv wa cc
+      wrex cedom cidom csn cdif cres wf clt wo wral zringidom cmpt wtru cr absf
+      wbr a1i wss zsscn ssdifss mp1i feqresmpt mptru nn0abscl syl fmpti cle w3a
+      eldifi simpr simp-5r difssd sselda ad5antr mulcomd oveq1d eqtrd wne df-ne
+      zcnd simpllr simp-4r adantr eldifsnd fvresd zred absidd simp-7r biimtrrid
+      wn 3brtr4d ex orrd jca 3anasss simpl eldifsnbd wreu divalg reurex syl3anc
+      rexcom sylib reximddv2 rgen2 pm3.2i zringbas zringplusg zringmulr reseq1i
+      zring0 ceuf isedom mpbir2an ) FUAGFUBGHIUCZUDZJKXOUEZUFZBLZCLZDLZMNZELZON
+      ZPZYBIPZYBXPQZXSXPQZUGUOZUHZRZEHTDHTZCXOUIBHUIZRUJXQYLBXOJXRKQZXPXPBXOYMU
+      KPULBSUMXOKSUMKUFULUNUPHSUQXOSUQULURHSXNUSUTVAVBXRXOGXRHGZYMJGXRHXNVHXRVC
+      VDVEYKBCHXOYNXSXOGZRZIYBVFUOZYBXSKQZUGUOZXRXTXSMNZYBONZPZVGZYJDEHHYPXTHGZ
+      RZYBHGZRZYQYSUUBYJUUGYQRZYSRZUUBRZYDYIUUJXRUUAYCUUIUUBVIUUJYTYAYBOUUJXTXS
+      UUJXTYPUUDUUFYQYSUUBVJVSUUJXSYPXSHGZUUDUUFYQYSUUBYNXOHXSYNHXNVKVLZVMVSVNV
+      OVPUUJYEYHYEWIYBIVQZUUJYHYBIVRUUJUUMYHUUJUUMRZYBYRYFYGUGUUHYSUUBUUMVTUUNY
+      FYBKQZYBUUNYBXOKUUNYBHIUUJUUFUUMUUEUUFYQYSUUBWAZWBUUJUUMVIWCWDUUJUUOYBPUU
+      MUUJYBUUJYBUUPWEUUGYQYSUUBVTWFWBVPUUNXSXOKYNYOUUDUUFYQYSUUBUUMWGWDWJWKWHW
+      LWMWNYPUUCDHTZEHTZUUCEHTDHTYPYNUUKXSIVQZUURYNYOWOUULYPXSHIYNYOVIWPYNUUKUU
+      SVGUUQEHWQUURXSXREDWRUUQEHWSVDWTUUCEDHHXAXBXCXDXEBCHFOMXPIEDXFXJXGXHKFXKQ
+      XOAXIXLXM $.
+  $}
+
+  ${
+    $d .0. a g q r $.  $d .0. q r x y $.  $d B a g q r $.  $d B q r x y $.
+    $d D j $.  $d D q r $.  $d D x y $.  $d E a g q r $.  $d E q r x y $.
+    $d I a g q r $.  $d I j $.  $d I q r x $.  $d K a q r $.  $d K j $.
+    $d M a g q r $.  $d a g ph q r $.  $d g j $.  $d ph q r x $.
+    edompidlem.b $e |- B = ( Base ` D ) $.
+    edompidlem.o $e |- .0. = ( 0g ` D ) $.
+    edompidlem.k $e |- K = ( RSpan ` D ) $.
+    edompidlem.e $e |- E = ( EuclF ` D ) $.
+    edompidlem.m $e |- M = inf ( ( E " ( I \ { .0. } ) ) , NN0 , < ) $.
+    edompidlem.d $e |- ( ph -> D e. EDomn ) $.
+    edompidlem.i $e |- ( ph -> I e. ( LIdeal ` D ) ) $.
+    edompidlem.1 $e |- ( ph -> I =/= { .0. } ) $.
+    $( Lemma for ~ edompid :  In a Euclidean domain, all (non-zero) ideals are
+       generated by a single element.  (Contributed by Thierry Arnoux,
+       29-Oct-2026.) $)
+    edompidlem $p |- ( ph -> E. g e. B I = ( K ` { g } ) ) $=
+      ( cfv wcel wa va vq vr vx vy csn cdif wss wceq wrex clidl eqid lidlss syl
+      cv ssdifssd cres cmulr co cplusg clt wbr wo simplr simpr wne wn cima cinf
+      wi cn0 cvv wrel ltrel a1i ltwenn0 ceuf fvexi imaexd ad7antr ssdifd imass2
+      resima cidom wf wral cedom reseq1i isedom sylib simprld fimassd eqsstrrid
+      wwe sstrd crg simpld idomringd lidl0cl syl2anc snssd necomd pssdifn0 ffnd
+      c0 wfn adantr sselda fnfvimad resima2 eleqtrd n0limd simpllr eldifsnd csg
+      ne0d oveq1d cabl ringabld ad5antr eldifad ad6antr simp-4r ringcld syl3anc
+      ad2antrr ablpncan2 eqtr2d idomcringd crngcomd lidlmcld eqeltrrd lidlsubcl
+      simp-5r ccrg syl22anc eqeltrd fvresd 3eltr3d ex weinflb 3eqtr3rd brneqtrd
+      simp-6r ad4antr necon4ad imp mpjaodan oveq2d cgrp ringgrpd grpridd 3eqtrd
+      eqtr4d rspcl rspsnid anasss ad3antrrr edomediv r19.29vva ssrdv rspssp cin
+      eqssd nfcv weinfcl eqeltrid eleqtrrd fvelimad sseqin2 rexeqtrdv reximddv3
+      ssrexv sylc ) AFIUFZUGZBUHFDUOZUFZGRZUIZDUVPUJUVTDBUJAFBUVOAFCUKRZSZFBUHZ
+      PBFUWACJUWAULZUMZUNZUPAUVQEBUVOUGZUQZRZHUIZUVTDUVPAUVQUVPSZTZUWJTZFUVSUWM
+      UAFUVSUWMUAUOZFSZUWNUVSSZUWMUWOTZUWNUVQUBUOZCURRZUSZUCUOZCUTRZUSZUIZUXAIU
+      IZUXAERZUVQERZVAVBZVCZTUWPUBUCBBUWQUWRBSZTZUXABSZTZUXDUXIUWPUXMUXDTZUXITZ
+      UWNUWRUVQUWSUSZUVSUXOUWNUWTUXPUXOUWNUXCUWTIUXBUSUWTUXMUXDUXIVDUXOUXAIUWTU
+      XBUXOUXEUXEUXHUXOUXEVEUXOUXHUXEUXOUXHUXAIUXNUXAIVFZUXHVGZVJUXIUXNUXQUXRUX
+      NUXQTZUXFEUVPVHZVKVAVIZUXGVAUXSVKUXTUXFVAVLVAVMUXSVNVOVKVAWNZUXSVPVOAUXTV
+      LSUWKUWJUWOUXJUXLUXDUXQAEUVPVLEVLSAECVQMVRVOVSZVTAUXTVKUHUWKUWJUWOUXJUXLU
+      XDUXQAUXTEUWGVHZVKAUVPUWGUHZUXTUYDUHAFBUVOUWFWAZUVPUWGEWBUNAUYDUWHUWGVHVK
+      EUWGWCAUWGVKUWHUWGACWDSZUWGVKUWHWEZUDUOZUEUOZUWRUWSUSUXAUXBUSUIUXEUXAUWHR
+      ZUYJUWHRVAVBVCTUCBUJUBBUJUEUWGWFUDBWFZACWGSZUYGUYHUYLTZTOUDUEBCUXBUWSUWHI
+      UCUBJKUXBULZUWSULZECVQRUWGMWHWIWJZWKZWLWMWOZVTAUXTXEVFZUWKUWJUWOUXJUXLUXD
+      UXQAUYTUDUVPAUVOFUHUVOFVFUVPXEVFAIFACWPSZUWBIFSACAUYGUYNUYQWQZWRZPCUWAFIU
+      WDKWSWTXAAFUVOQXBUVOFXCWTAUYIUVPSZTZUXTUYIUWHRZVUEVUFUWHUVPVHZUXTVUEUWGUY
+      IUVPUWHAUWHUWGXFZVUDAUWGVKUWHUYRXDZXGAUVPUWGUYIUYFXHAVUDVEXIAVUGUXTUIZVUD
+      AUYEVUJUYFEUVPUWGXJUNZXGXKXPXLZVTUXSUYKVUGUXFUXTUXSUWGUXAUVPUWHAVUHUWKUWJ
+      UWOUXJUXLUXDUXQVUIVTUXSUXABIUXKUXLUXDUXQXMZUXNUXQVEZXNZUXSUXAFIUXSUXAUWNU
+      WTCXORZUSZFUXSVUQUXCUWTVUPUSZUXAUXSUWNUXCUWTVUPUXMUXDUXQVDXQUXSCXRSZUWTBS
+      UXLVURUXAUIAVUSUWKUWJUWOUXJUXLUXDUXQACVUCXSVTUXSBCUWSUVQUWRJUYPUWMVUAUWOU
+      XJUXLUXDUXQAVUAUWKUWJVUCYFZXTZUWLUVQBSZUWJUWOUXJUXLUXDUXQUWLUVQBUVOAUVPUW
+      GUVQUYFXHZYAZYBUWQUXJUXLUXDUXQYCZYDVUMBUXBCVUPUWTUXAJUYOVUPULZYGYEYHUXSVU
+      AUWBUWOUWTFSVUQFSVVAUWMUWBUWOUXJUXLUXDUXQAUWBUWKUWJPYFZXTZUWMUWOUXJUXLUXD
+      UXQYNUXSUXPUWTFUXNUXPUWTUIZUXQUXNBCUWSUWRUVQJUYPACYOSUWKUWJUWOUXJUXLUXDAC
+      VUBYIYBUWQUXJUXLUXDXMUWLVVBUWJUWOUXJUXLUXDVVDXTYJZXGUXSBCUWSUWAFUWRUVQUWD
+      JUYPVVAVVHVVEUWMUVQFSUWOUXJUXLUXDUXQUWMUVQFUVOAUWKUWJVDYAZXTYKYLCUWAFVUPU
+      WNUWTUWDVVFYMYPYQVUNXNXIUXSUXAUWGEVUOYRAVUJUWKUWJUWOUXJUXLUXDUXQVUKVTYSUU
+      AUXSUWIHUXGUYAUWLUWJUWOUXJUXLUXDUXQUUDUWQUWIUXGUIUXJUXLUXDUXQUWQUVQUWGEUW
+      LUVQUWGSUWJUWOVVCYFZYRUUEHUYAUIUXSNVOUUBUUCYTXGUUFUUGUXNUXIVEUUHUUIUXOBUX
+      BCUWTIJUYOKACUUJSUWKUWJUWOUXJUXLUXDUXIACVUCUUKVTUXOBCUWSUVQUWRJUYPUWMVUAU
+      WOUXJUXLUXDUXIVUTXTZUWLVVBUWJUWOUXJUXLUXDUXIVVDYBUWQUXJUXLUXDUXIYCZYDUULU
+      UMUXNVVIUXIVVJXGUUNUXOBCUWSUWAUVSUWRUVQUWDJUYPVVMUWLUVSUWASZUWJUWOUXJUXLU
+      XDUXIUWLVUAUVRBUHVVOAVUAUWKVUCXGZUWLUVQBVVDXABCUWAUVRGLJUWDUUOWTYBVVNUWLU
+      VQUVSSZUWJUWOUXJUXLUXDUXIUWLVUAVVBVVQVVPVVDBCUVQGJLUUPWTYBYKYQUUQUWQBCUXB
+      UWSEUWNUVQIUCUBJKUYOUYPMAUYMUWKUWJUWOOUURUWMFBUWNUWMUWBUWCVVGUWEUNXHVVLUU
+      SUUTYTUVAUWMVUAUWBUVRFUHUVSFUHVUTVVGUWMUVQFVVKXACUWAUVRFGLUWDUVBYEUVDAUWJ
+      DUWGUVPUVCZUVPADUWGUVPHUWHDUWHUVEVUIAHUXTVUGAHUYAUXTNAVKUXTVAVLUYBAVPVOUY
+      CUYSVULUVFUVGVUKUVHUVIAUYEVVRUVPUIUYFUVPUWGUVJWJUVKUVLUVTDUVPBUVMUVN $.
+  $}
+
+  ${
+    $d D g i $.  $d D i x $.  $d g ph $.  $d i ph $.
+    edompid.1 $e |- ( ph -> D e. EDomn ) $.
+    $( Every Euclidean domain is a PID. (Contributed by Thierry Arnoux,
+       29-Oct-2026.) $)
+    edompid $p |- ( ph -> D e. PID ) $=
+      ( vi vg cidom clpir cin cpid edomidom wcel cfv cv csn wceq ad2antrr simpr
+      wa eqid syl crg clpidl wss idomringd crsp cbs wrex c0g sneq fveq2d eqeq2d
+      clidl cgrp ringgrpd grpidcld rsp0 eqtr4d rspcedvdw wne ceuf cdif cima cn0
+      cinf cedom simplr edompidlem pm2.61dane wb islpidl adantr mpbird ex ssrdv
+      clt islpir2 sylanbrc elind df-pid eleqtrrdi ) ABFGHIAFGBABCJZABUAKZBULLZB
+      UBLZUCBGKABWAUDZADWCWDADMZWCKZWFWDKZAWGRZWHWFEMZNZBUELZLZOZEBUFLZUGZWIWPW
+      FBUHLZNZWIWFWROZRZWNWFWRWLLZOEWQWOWJWQOZWMXAWFXBWKWRWLWJWQUIUJUKWTWOBWQWO
+      SZWQSZABUMKWGWSABWEUNPUOWTWFWRXAWIWSQAXAWROZWGWSAWBXEWEBWLWQWLSZXDUPTPUQU
+      RWIWFWRUSZRWOBEBUTLZWFWLXHWFWRVAVBVCVOVDZWQXCXDXFXHSXISABVEKWGXGCPAWGXGVF
+      WIXGQVGVHAWHWPVIZWGAWBXJWEWOWDBEWFWLWDSZXFXCVJTVKVLVMVNWDBWCXKWCSVPVQVRVS
+      VT $.
   $}
 
 
@@ -539209,21 +539552,6 @@ $(
   The ring of integers
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
-
-  ${
-    $d x y $.
-    $( The ring of integers is an integral domain.  (Contributed by Thierry
-       Arnoux, 4-May-2025.) $)
-    zringidom $p |- ZZring e. IDomn $=
-      ( vx vy czring cidom wcel ccrg cdomn zringcrng cz cc0 cv cmul wa ad2antrr
-      wceq cc zcnd zringbas zring0 mpbir2an cnzr csn crlreg cfv wss zringnzr co
-      cdif wi eldifi wo simplr simpr mul0or biimpa syl21anc wne eldifsni neneqd
-      wral orcnd ralrimiva eqid zringmulr isrrg sylanbrc ssriv isdomn2 isidom
-      ex ) CDECFECGEZHVKCUAEIJUBZUHZCUCUDZUEUFAVMVNAKZVMEZVOIEZVOBKZLUGJOZVRJOZ
-      UIZBIUTVOVNEVOIVLUJZVPWABIVPVRIEZMZVSVTWDVSMZVOJOZVTWEVOPEZVRPEZVSWFVTUKZ
-      WEVOVPVQWCVSWBNQWEVRVPWCVSULQWDVSUMWGWHMVSWIVOVRUNUOUPWEVOJVPVOJUQWCVSVOI
-      JURNUSVAVJVBBICLVNVOJVNVCZRVDSVEVFVGICVNJRWJSVHTCVIT $.
-  $}
 
   $( The ring of integers is a principal ideal domain.  (Contributed by Thierry
      Arnoux, 18-May-2025.) $)
@@ -635768,37 +636096,6 @@ $)
       ZBDJZXIWQYMYOWAZXAWQYBYPYFBDYLWPVPVQSXBYNABDYGXBYHWTYNAWBXAYHWTWBWQWTBDVR
       VSYNAWTAWTWAYLWSXOVTWCWDWEWFVLXLXQXRLZXTYALZLGXPWPYEWMXCXPVOZXFYQXKYRYSXD
       XQXEXRXCXPDOWGXCXPEWHTYSXHXTXJYAYSXGXSBDACXCXPWIWJXICXCXPWKTTWLWNWOVQ $.
-  $}
-
-  ${
-    $d R x y z $.  $d A x y z $.  $d B x y z $.  $d C x y $.
-    $( A subset of a well-founded set has an infimum.  (Contributed by Jeff
-       Madsen, 2-Sep-2009.) $)
-    frinfm $p |- ( ( R Fr A /\ ( B e. C /\ B C_ A /\ B =/= (/) ) ) ->
-                    E. x e. A ( A. y e. B -. x `' R y /\
-                    A. y e. A ( y `' R x -> E. z e. B y `' R z ) ) ) $=
-      ( wfr wcel wss c0 wa cv wbr wn wral wrex wi vex ex wne w3a ccnv fri exp43
-      ancom1s 3imp2 ssel2 adantrr brcnv biimpi ralimi ad2antll rspcev ralrimivw
-      con3i breq2 ad2antrl jca32 reximdv2 adantl 3ad2antr2 mpd ) DGHZEFIZEDJZEK
-      UAZUBLBMZAMZGNZOZBEPZAEQZVIVHGUCZNZOZBEPZVHVIVNNZVHCMZVNNZCEQZRZBDPZLZADQ
-      ZVDVEVFVGVMVDVEVFVGVMVEVDVFVGLVMABDEFGUDUFUEUGVDVEVFVMWERZVGVFWFVDVFVLWDA
-      EDVFVIEIZVLLZVIDIZWDLVFWHLWIVQWCVFWGWIVLEDVIUHUIVLVQVFWGVKVPBEVOVJVOVJVIV
-      HGASBSUJUKUPULUMWGWCVFVLWGWBBDWGVRWAVTVRCVIEVSVIVHVNUQUNTUOURUSTUTVAVBVC
-      $.
-  $}
-
-  ${
-    $d A x y z $.  $d B x y z $.  $d C x y z $.  $d R x y z $.
-    $( A nonempty subset of a well-ordered set has a lower bound.  (Contributed
-       by Jeff Madsen, 2-Sep-2009.) $)
-    welb $p |- ( ( R We A /\ ( B e. C /\ B C_ A /\ B =/= (/) ) ) ->
-              ( `' R Or B /\ E. x e. B ( A. y e. B -. x `' R y /\
-                        A. y e. B ( y `' R x -> E. z e. B y `' R z ) ) ) ) $=
-      ( wwe wcel wss c0 w3a wa wor cv wbr wral wrex syl 3ad2antr2 wne ccnv wess
-      wn wi impcom weso cnvso sylib wfr ssidd 3anim2i adantl frinfm syl2anc jca
-      wefr ) DGHZEFIZEDJZEKUAZLZMZEGUBZNZAOZBOZVDPUDBEQVGVFVDPVGCOVDPCERUEBEQMA
-      ERZURUSUTVEVAURUTMZEGNZVEVIEGHZVJUTURVKEDGUCUFZEGUGSEGUHUITVCEGUJZUSEEJZV
-      ALZVHURUSUTVMVAVIVKVMVLEGUQSTVBVOURUTVNUSVAUTEUKULUMABCEEFGUNUOUP $.
   $}
 
   ${
@@ -773810,15 +774107,6 @@ $)
     ssdf $p |- ( ph -> A C_ B ) $=
       ( cv wcel wral wss ex ralrimi dfss3 sylibr ) ABGZDHZBCICDJAPBCEAOCHPFKLBC
       DMN $.
-  $}
-
-  ${
-    brneqtrd.1 $e |- ( ph -> -. A R B ) $.
-    brneqtrd.2 $e |- ( ph -> B = C ) $.
-    $( Substitution of equal classes into the negation of a binary relation.
-       (Contributed by Glauco Siliprandi, 3-Jan-2021.) $)
-    brneqtrd $p |- ( ph -> -. A R C ) $=
-      ( wbr breq2d mtbid ) ABCEHBDEHFACDBEGIJ $.
   $}
 
   ${
