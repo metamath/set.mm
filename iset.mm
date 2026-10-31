@@ -184000,6 +184000,15 @@ $)
     mplrcl $p |- ( X e. B -> I e. _V ) $=
       ( wcel cvv cmpl reldmmpl cxp wfn wrel fnmpl fnrel ax-mp relelbasov simpld
       ) EAHDIHCIHEABJDCKJIILZMJNOTJPQFGRS $.
+
+    mplelsfi.z $e |- .0. = ( 0g ` R ) $.
+    mplelsfi.f $e |- ( ph -> F e. B ) $.
+    $( A polynomial treated as a coefficient function has finitely many nonzero
+       terms.  (Contributed by Stefan O'Rear, 22-Mar-2015.)  (Revised by AV,
+       25-Jun-2019.) $)
+    mplelsfi $p |- ( ph -> F finSupp .0. ) $=
+      ( wcel cfsupp wbr cmps co cbs cfv eqid mplelbas simprbi syl ) AEBLZEGMNZK
+      UCEFDOPZQRZLUDUFCDUEBFEGHUESUFSJITUAUB $.
   $}
 
   ${
