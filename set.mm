@@ -579625,6 +579625,35 @@ $)
       IVDTVEVF $.
   $}
 
+  ${
+    ontr1i.1 $e |- C e. On $.
+    ontr1i.2 $e |- A e. B $.
+    ontr1i.3 $e |- B e. C $.
+    $( Transitive law for ordinal numbers.  Inference form of ~ ontr1 .
+       (Contributed by BTernaryTau, 19-Oct-2026.) $)
+    ontr1i $p |- A e. C $=
+      ( con0 wcel ontr1 mp2ani ax-mp ) CGHZACHZDLABHBCHMEFABCIJK $.
+  $}
+
+  ${
+    eqsucidi.1 $e |- A e. V $.
+    eqsucidi.2 $e |- B = suc A $.
+    $( A set belongs to its successor.  Inference form of ~ sucidg with an
+       equality hypothesis.  (Contributed by BTernaryTau, 19-Oct-2026.) $)
+    eqsucidi $p |- A e. B $=
+      ( csuc wcel sucidg ax-mp eleqtrri ) AAFZBACGAKGDACHIEJ $.
+  $}
+
+  ${
+    suceldifsn0.1 $e |- A e. B $.
+    suceldifsn0.2 $e |- A = suc C $.
+    $( A successor that is a member of a set is also a member of that set with
+       the empty set removed.  (Contributed by BTernaryTau, 19-Oct-2026.) $)
+    suceldifsn0 $p |- A e. ( B \ { (/) } ) $=
+      ( c0 csn cdif wcel wne csuc nsuceq0 eqnetri eldifsn mpbir2an ) ABFGHIABIA
+      FJDACKFECLMABFNO $.
+  $}
+
   $( The union of two ordinals is equal to their maximum.  (Contributed by
      BTernaryTau, 7-Oct-2026.) $)
   ordunmax $p |- ( ( Ord A /\ Ord B ) ->
@@ -579684,6 +579713,61 @@ $)
       DWDWIFEVEUTYKYEYHWOWIFYDSVAVCVDKLAYIYGAWOYHMVJWDVFVKVIWCVOUHZWDVOUHZQWSXB
       XEQWEYLYMCDVLEFVLVGWRXBXEUAWCWDVOVOWGWCPZWQXANOTBYNWKWTWPWGWCWJVMVPVNWGWD
       PZWQXDNOTBYOWKXCWPWGWDWJVMVPVNVQVRVSAXKXLWEWFVTIJCDEFTBWAUJWB $.
+  $}
+
+  ${
+    $d ph x y $.  $d C w z $.  $d A w x y z $.  $d B w x y z $.
+    $d X w x y z $.  $d Y w x y z $.
+    mpofvd.1 $e |- ( ph -> X e. ( A X. B ) ) $.
+    mpofvd.2 $e |- ( ph -> Y e. V ) $.
+    mpofvd.3 $e |- ( ( ph /\ X = <. x , y >. ) -> Y = C ) $.
+    mpofvd.4 $e |- F = ( x e. A , y e. B |-> C ) $.
+    $( Value of a two-argument function (usually an operation) in maps-to
+       notation.  (Contributed by BTernaryTau, 18-Oct-2026.) $)
+    mpofvd $p |- ( ph -> ( F ` X ) = Y ) $=
+      ( vw vz wceq wcel wa wex cv cop cfv cxp syl idd jctird imdistanda 2eximdv
+      elxpi mpd cvv wi elexd eqeq1 anbi1d 2exbidv anbi2d wmo moeq moani mosubop
+      a1i copab cmpo coprab df-mpo dfoprab2 3eqtri vex biantrur eqtri fvopab3ig
+      opabbii syl2anc ) AIBUAZCUAZUBZQZVPDRVQERSZJFQZSZSZCTBTZIGUCJQZAVSVTSZCTB
+      TZWDAIDEUDZRWGKBCIDEUJUEAWFWCBCAVSVTWBAVSSZVTVTWAWIVTUFMUGUHUIUKAIULRJHRW
+      DWEUMAIWHKUNLOUAZVRQZVTPUAZFQZSZSZCTBTZVSWNSZCTBTWDOPIJULHGWJIQZWOWQBCWRW
+      KVSWNWJIVRUOUPUQWLJQZWQWCBCWSWNWBVSWSWMWAVTWLJFUOURURUQWPPUSWJULRZWNPBCWJ
+      WMVTPPFUTVAVBVCGWPOPVDZWTWPSZOPVDGBCDEFVEWNBCPVFXANBCPDEFVGWNBCPOVHVIWPXB
+      OPWTWPOVJVKVNVLVMVOUK $.
+  $}
+
+  ${
+    $d ph x y $.  $d A x y $.  $d B x y $.  $d R x y $.  $d S x y $.
+    $d Y x y $.
+    mpofvopd.1 $e |- ( ph -> R e. A ) $.
+    mpofvopd.2 $e |- ( ph -> S e. B ) $.
+    mpofvopd.3 $e |- ( ph -> Y e. V ) $.
+    mpofvopd.4 $e |- ( ( ph /\ <. R , S >. = <. x , y >. ) -> Y = C ) $.
+    mpofvopd.5 $e |- F = ( x e. A , y e. B |-> C ) $.
+    $( Value of a two-argument function (usually an operation) in maps-to
+       notation at an ordered pair.  (Contributed by BTernaryTau,
+       18-Oct-2026.) $)
+    mpofvopd $p |- ( ph -> ( F ` <. R , S >. ) = Y ) $=
+      ( cop opelxpd mpofvd ) ABCDEFIJGHQKAGHDELMRNOPS $.
+  $}
+
+  ${
+    $d ph x y $.  $d A x y $.  $d B x y $.  $d R x y $.  $d S x y $.
+    $d L x y $.
+    mpofvop2d.1 $e |- ( ph -> R e. A ) $.
+    mpofvop2d.2 $e |- ( ph -> S e. B ) $.
+    mpofvop2d.3 $e |- ( ph -> L e. V ) $.
+    mpofvop2d.4 $e |- ( ( ph /\ R = x ) -> K = C ) $.
+    mpofvop2d.5 $e |- ( ( ph /\ S = y ) -> L = K ) $.
+    mpofvop2d.6 $e |- F = ( x e. A , y e. B |-> C ) $.
+    $( Value of a two-argument function (usually an operation) in maps-to
+       notation at an ordered pair.  (Contributed by BTernaryTau,
+       18-Oct-2026.) $)
+    mpofvop2d $p |- ( ph -> ( F ` <. R , S >. ) = L ) $=
+      ( cop wceq cv wa wcel wb opthg syl2anc ex anim12d sylbid eqtr ancoms syl6
+      imp mpofvopd ) ABCDEFGHILKMNOAGHSBUAZCUAZSTZKFTZAUQJFTZKJTZUBZURAUQGUOTZH
+      UPTZUBZVAAGDUCHEUCUQVDUDMNGHUOUPDEUEUFAVBUSVCUTAVBUSPUGAVCUTQUGUHUIUTUSUR
+      KJFUJUKULUMRUN $.
   $}
 
   ${
@@ -580591,6 +580675,54 @@ $)
   9onn $p |- 9o e. _om $=
     ( c9o c8o csuc com df-9o wcel 8onn peano2 ax-mp eqeltri ) ABCZDEBDFKDFGBHIJ
     $.
+
+  $( Ordinal 8 is less than ordinal 9.  (Contributed by BTernaryTau,
+     17-Oct-2026.) $)
+  8olt9o $p |- 8o e. 9o $=
+    ( c8o csuc c9o con0 wcel 8on sucidg ax-mp df-9o eleqtrri ) AABZCADEAKEFADGH
+    IJ $.
+
+  $( Ordinal 7 is less than ordinal 9.  (Contributed by BTernaryTau,
+     17-Oct-2026.) $)
+  7olt9o $p |- 7o e. 9o $=
+    ( c7o c8o wcel c9o csuc con0 sucidg ax-mp df-8o eleqtrri 8olt9o wa wi ontr1
+    7on 9on mp2an ) ABCZBDCZADCZAAEZBAFCAUACOAFGHIJKDFCRSLTMPABDNHQ $.
+
+  $( Ordinal 6 is less than ordinal 9.  (Contributed by BTernaryTau,
+     17-Oct-2026.) $)
+  6olt9o $p |- 6o e. 9o $=
+    ( c6o c7o wcel c9o csuc con0 sucidg ax-mp df-7o eleqtrri 7olt9o wa wi ontr1
+    6on 9on mp2an ) ABCZBDCZADCZAAEZBAFCAUACOAFGHIJKDFCRSLTMPABDNHQ $.
+
+  $( Ordinal 5 is less than ordinal 9.  (Contributed by BTernaryTau,
+     17-Oct-2026.) $)
+  5olt9o $p |- 5o e. 9o $=
+    ( c5o c6o wcel c9o csuc con0 sucidg ax-mp df-6o eleqtrri 6olt9o wa wi ontr1
+    5on 9on mp2an ) ABCZBDCZADCZAAEZBAFCAUACOAFGHIJKDFCRSLTMPABDNHQ $.
+
+  $( Ordinal 4 is less than ordinal 9.  (Contributed by BTernaryTau,
+     17-Oct-2026.) $)
+  4olt9o $p |- 4o e. 9o $=
+    ( c4o c5o wcel c9o csuc con0 sucidg ax-mp df-5o eleqtrri 5olt9o wa wi ontr1
+    4on 9on mp2an ) ABCZBDCZADCZAAEZBAFCAUACOAFGHIJKDFCRSLTMPABDNHQ $.
+
+  $( Ordinal 3 is less than ordinal 9.  (Contributed by BTernaryTau,
+     17-Oct-2026.) $)
+  3olt9o $p |- 3o e. 9o $=
+    ( c3o c4o wcel c9o csuc con0 sucidg ax-mp df-4o eleqtrri 4olt9o wa wi ontr1
+    3on 9on mp2an ) ABCZBDCZADCZAAEZBAFCAUACOAFGHIJKDFCRSLTMPABDNHQ $.
+
+  $( Ordinal 2 is less than ordinal 9.  (Contributed by BTernaryTau,
+     17-Oct-2026.) $)
+  2olt9o $p |- 2o e. 9o $=
+    ( c2o c3o wcel c9o csuc con0 sucidg ax-mp df-3o eleqtrri 3olt9o wa wi ontr1
+    2on 9on mp2an ) ABCZBDCZADCZAAEZBAFCAUACOAFGHIJKDFCRSLTMPABDNHQ $.
+
+  $( Ordinal 1 is less than ordinal 9.  (Contributed by BTernaryTau,
+     17-Oct-2026.) $)
+  1olt9o $p |- 1o e. 9o $=
+    ( c1o c2o wcel c9o csuc con0 sucidg ax-mp df-2o eleqtrri 2olt9o wa wi ontr1
+    1on 9on mp2an ) ABCZBDCZADCZAAEZBAFCAUACOAFGHIJKDFCRSLTMPABDNHQ $.
 
 
 $(
@@ -581798,6 +581930,280 @@ $)
         if ( n = 6o , ( ~F6 ` <. x , y >. ) ,
         if ( n = 7o , ( ~F7 ` <. x , y >. ) ,
         ( ~F8 ` <. x , y >. ) ) ) ) ) ) ) ) ) $.
+  $}
+
+  ${
+    $d ph x y $.  $d A x y $.  $d B x y $.
+    gdlop1fv.1 $e |- ( ph -> A e. V ) $.
+    gdlop1fv.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the first G&ouml;del operation.  (Contributed by
+       BTernaryTau, 18-Oct-2026.) $)
+    gdlop1fv $p |- ( ph -> ( ~F1 ` <. A , B >. ) = { A , B } ) $=
+      ( vx vy cvv cv cpr cgdlop1 elexd wcel prex a1i wceq preq1 adantl preq2
+      df-gdlop1 mpofvop2d ) AHIJJHKZIKZLZBCMBUELZBCLZJABDFNACEGNUHJOABCPQBUDRUG
+      UFRABUDUESTCUERUHUGRACUEBUATHIUBUC $.
+  $}
+
+  ${
+    $d ph x y $.  $d A x y $.  $d B x y $.
+    gdlop2fv.1 $e |- ( ph -> A e. V ) $.
+    gdlop2fv.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the second G&ouml;del operation.  (Contributed by
+       BTernaryTau, 18-Oct-2026.) $)
+    gdlop2fv $p |- ( ph -> ( ~F2 ` <. A , B >. ) = ( A i^i _E ) ) $=
+      ( vx vy cvv cv cep cin cgdlop2 elexd wcel inex1g syl wceq ineq1 adantl wa
+      eqidd df-gdlop2 mpofvop2d ) AHIJJHKZLMZBCNBLMZUHJABDFOACEGOABDPUHJPFBLDQR
+      BUFSUHUGSABUFLTUAACIKSUBUHUCHIUDUE $.
+  $}
+
+  ${
+    $d ph x y $.  $d A x y $.  $d B x y $.
+    gdlop3fv.1 $e |- ( ph -> A e. V ) $.
+    gdlop3fv.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the third G&ouml;del operation.  (Contributed by
+       BTernaryTau, 18-Oct-2026.) $)
+    gdlop3fv $p |- ( ph -> ( ~F3 ` <. A , B >. ) = ( A \ B ) ) $=
+      ( vx vy cvv cdif cgdlop3 elexd difexd wceq difeq1 adantl difeq2 df-gdlop3
+      cv mpofvop2d ) AHIJJHTZITZKZBCLBUCKZBCKZJABDFMACEGMABCDFNBUBOUEUDOABUBUCP
+      QCUCOUFUEOACUCBRQHISUA $.
+  $}
+
+  ${
+    $d ph x y $.  $d A x y $.  $d B x y $.
+    gdlop4fv.1 $e |- ( ph -> A e. V ) $.
+    gdlop4fv.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the fourth G&ouml;del operation.  (Contributed by
+       BTernaryTau, 18-Oct-2026.) $)
+    gdlop4fv $p |- ( ph -> ( ~F4 ` <. A , B >. ) = ( A |` B ) ) $=
+      ( vx vy cvv cres cgdlop4 elexd resexd wceq reseq1 adantl reseq2 df-gdlop4
+      cv mpofvop2d ) AHIJJHTZITZKZBCLBUCKZBCKZJABDFMACEGMABCDFNBUBOUEUDOABUBUCP
+      QCUCOUFUEOACUCBRQHISUA $.
+  $}
+
+  ${
+    $d ph x y $.  $d A x y $.  $d B x y $.
+    gdlop5fv.1 $e |- ( ph -> A e. V ) $.
+    gdlop5fv.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the fifth G&ouml;del operation.  (Contributed by
+       BTernaryTau, 18-Oct-2026.) $)
+    gdlop5fv $p |- ( ph -> ( ~F5 ` <. A , B >. ) = ( A i^i dom B ) ) $=
+      ( vx vy cvv cv cdm cin cgdlop5 elexd wcel inex1g syl wceq adantl ineq2d
+      ineq1 dmeq df-gdlop5 mpofvop2d ) AHIJJHKZIKZLZMZBCNBUHMZBCLZMZJABDFOACEGO
+      ABDPULJPFBUKDQRBUFSUJUISABUFUHUBTCUGSZULUJSAUMUKUHBCUGUCUATHIUDUE $.
+  $}
+
+  ${
+    $d ph x y $.  $d A x y $.  $d B x y $.
+    gdlop6fv.1 $e |- ( ph -> A e. V ) $.
+    gdlop6fv.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the sixth G&ouml;del operation.  (Contributed by
+       BTernaryTau, 18-Oct-2026.) $)
+    gdlop6fv $p |- ( ph -> ( ~F6 ` <. A , B >. ) = ( A i^i `' B ) ) $=
+      ( vx vy cvv cv ccnv cin cgdlop6 elexd wcel inex1g syl wceq adantl ineq2d
+      ineq1 cnveq df-gdlop6 mpofvop2d ) AHIJJHKZIKZLZMZBCNBUHMZBCLZMZJABDFOACEG
+      OABDPULJPFBUKDQRBUFSUJUISABUFUHUBTCUGSZULUJSAUMUKUHBCUGUCUATHIUDUE $.
+  $}
+
+  ${
+    $d ph x y $.  $d A x y $.  $d B x y $.
+    gdlop7fv.1 $e |- ( ph -> A e. V ) $.
+    gdlop7fv.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the seventh G&ouml;del operation.  (Contributed by
+       BTernaryTau, 18-Oct-2026.) $)
+    gdlop7fv $p |- ( ph -> ( ~F7 ` <. A , B >. ) = ( A i^i ( Cnv2 ` B ) ) ) $=
+      ( vx vy cvv cv ccnv2 cfv cin cgdlop7 elexd wcel inex1g wceq adantl ineq2d
+      syl ineq1 fveq2 df-gdlop7 mpofvop2d ) AHIJJHKZIKZLMZNZBCOBUINZBCLMZNZJABD
+      FPACEGPABDQUMJQFBULDRUBBUGSUKUJSABUGUIUCTCUHSZUMUKSAUNULUIBCUHLUDUATHIUEU
+      F $.
+  $}
+
+  ${
+    $d ph x y $.  $d A x y $.  $d B x y $.
+    gdlop8fv.1 $e |- ( ph -> A e. V ) $.
+    gdlop8fv.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the eighth G&ouml;del operation.  (Contributed by
+       BTernaryTau, 18-Oct-2026.) $)
+    gdlop8fv $p |- ( ph -> ( ~F8 ` <. A , B >. ) = ( A i^i ( Cnv3 ` B ) ) ) $=
+      ( vx vy cvv cv ccnv3 cfv cin cgdlop8 elexd wcel inex1g wceq adantl ineq2d
+      syl ineq1 fveq2 df-gdlop8 mpofvop2d ) AHIJJHKZIKZLMZNZBCOBUINZBCLMZNZJABD
+      FPACEGPABDQUMJQFBULDRUBBUGSUKUJSABUGUIUCTCUHSZUMUKSAUNULUIBCUHLUDUATHIUEU
+      F $.
+  $}
+
+  ${
+    gdlopcfvlem.1 $e |- A e. On $.
+    gdlopcfvlem.2 $e |- B e. On $.
+    gdlopcfvlem.3 $e |- A e. B $.
+    $( Lemma for ~ gdlopcfv2 through ~ gdlopcfv8 .  (Contributed by
+       BTernaryTau, 19-Oct-2026.) $)
+    gdlopcfvlem $p |- ( ( ph /\ B = C ) -> if ( C = A , D , E ) = E ) $=
+      ( wceq wa wn wne wss wcel con0 wb onelpss mp2an mpbi neeq2 mpbii iffalsed
+      simpri nesym sylib adantl ) ACDJZKDBJZEFUHUILZAUHBDMZUJUHBCMZUKBCNZULBCOZ
+      UMULKZIBPOCPOUNUOQGHBCRSTUDCDBUAUBBDUEUFUGUC $.
+  $}
+
+  ${
+    $d ph n x y $.  $d A n x y $.  $d B n x y $.
+    gdlopcfv1.1 $e |- ( ph -> A e. V ) $.
+    gdlopcfv1.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the combined G&ouml;del operations function when its first
+       argument is 1.  (Contributed by BTernaryTau, 19-Oct-2026.) $)
+    gdlopcfv1 $p |- ( ph -> ( ~F ` <. 1o , A , B >. ) = { A , B } ) $=
+      ( vn vx vy c1o cgdlopc cfv cop cgdlop1 c9o cvv cv wceq cif cpr c0 csn c2o
+      cotp cdif cgdlop2 c3o cgdlop3 c4o cgdlop4 c5o cgdlop5 c6o cgdlop6 cgdlop7
+      c7o cgdlop8 wcel 1olt9o df-1o suceldifsn0 a1i elexd fvexd wa eqcom bilani
+      iftrued eqcomd opeq1 fveq2d adantl opeq2 df-gdlopc mpt3fvot2d gdlop1fv
+      eqtrd ) AKBCUELMBCNZOMZBCUAAHIJPUBUCUFZQQHRZKSZIRZJRZNZOMZWBUDSWFUGMWBUHS
+      WFUIMWBUJSWFUKMWBULSWFUMMWBUNSWFUOMWBUQSWFUPMWFURMTTTTTTZTZKBCLWGBWENZOMZ
+      VTQKWAUSAKPUBUTVAVBVCABDFVDACEGVDAVSOVEAKWBSZVFZWIWGWMWCWGWHWLWCAKWBVGVHV
+      IVJBWDSZWKWGSAWNWJWFOBWDWEVKVLVMCWESZVTWKSAWOVSWJOCWEBVNVLVMIJHVOVPABCDEF
+      GVQVR $.
+  $}
+
+  ${
+    $d ph n x y $.  $d A n x y $.  $d B n x y $.
+    gdlopcfv2.1 $e |- ( ph -> A e. V ) $.
+    gdlopcfv2.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the combined G&ouml;del operations function when its first
+       argument is 2.  (Contributed by BTernaryTau, 19-Oct-2026.) $)
+    gdlopcfv2 $p |- ( ph -> ( ~F ` <. 2o , A , B >. ) = ( A i^i _E ) ) $=
+      ( vn vx vy c2o cgdlopc cfv cop cgdlop2 cvv cv c1o wceq cif cep cin c9o c0
+      cotp csn cdif cgdlop1 c3o cgdlop3 c4o cgdlop4 c5o cgdlop5 c6o cgdlop6 c7o
+      cgdlop7 cgdlop8 wcel 2olt9o df-2o suceldifsn0 a1i elexd fvexd wa 1on con0
+      2on gdlopcfvlem eqcom bilani iftrued eqtr2d opeq1 fveq2d adantl df-gdlopc
+      eqsucidi opeq2 mpt3fvot2d gdlop2fv eqtrd ) AKBCUELMBCNZOMZBUAUBAHIJUCUDUF
+      UGZPPHQZRSIQZJQZNZUHMZWHKSZWKOMZWHUISWKUJMWHUKSWKULMWHUMSWKUNMWHUOSWKUPMW
+      HUQSWKURMWKUSMTTTTTZTZTZKBCLWNBWJNZOMZWFPKWGUTAKUCRVAVBVCVDABDFVEACEGVEAW
+      EOVFAKWHSZVGZWQWPWNARKWHWLWPVHVJRKVIVHVBVTVKXAWMWNWOWTWMAKWHVLVMVNVOBWISZ
+      WSWNSAXBWRWKOBWIWJVPVQVRCWJSZWFWSSAXCWEWROCWJBWAVQVRIJHVSWBABCDEFGWCWD $.
+  $}
+
+  ${
+    $d ph n x y $.  $d A n x y $.  $d B n x y $.
+    gdlopcfv3.1 $e |- ( ph -> A e. V ) $.
+    gdlopcfv3.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the combined G&ouml;del operations function when its first
+       argument is 3.  (Contributed by BTernaryTau, 19-Oct-2026.) $)
+    gdlopcfv3 $p |- ( ph -> ( ~F ` <. 3o , A , B >. ) = ( A \ B ) ) $=
+      ( vn vx vy c3o cfv cop cgdlop3 cvv cv c1o wceq c2o cif cgdlopc c9o c0 csn
+      cotp cdif cgdlop1 cgdlop2 c4o cgdlop4 c5o cgdlop5 c6o cgdlop6 c7o cgdlop7
+      cgdlop8 wcel 3olt9o df-3o suceldifsn0 a1i elexd fvexd wa 1on 3on eqsucidi
+      df-2o ontr1i gdlopcfvlem eqcom bilani iftrued 3eqtrrd opeq1 fveq2d adantl
+      con0 2on opeq2 df-gdlopc mpt3fvot2d gdlop3fv eqtrd ) AKBCUEUALBCMZNLZBCUF
+      AHIJUBUCUDUFZOOHPZQRIPZJPZMZUGLZWISRWLUHLZWIKRZWLNLZWIUIRWLUJLWIUKRWLULLW
+      IUMRWLUNLWIUORWLUPLWLUQLTTTTZTZTZTZKBCUAWPBWKMZNLZWGOKWHURAKUBSUSUTVAVBAB
+      DFVCACEGVCAWFNVDAKWIRZVEZWTWSWRWPAQKWIWMWSVFVGQSKVGQSVSVFVIVHSKVSVTUTVHZV
+      JVKASKWIWNWRVTVGXEVKXDWOWPWQXCWOAKWIVLVMVNVOBWJRZXBWPRAXFXAWLNBWJWKVPVQVR
+      CWKRZWGXBRAXGWFXANCWKBWAVQVRIJHWBWCABCDEFGWDWE $.
+  $}
+
+  ${
+    $d ph n x y $.  $d A n x y $.  $d B n x y $.
+    gdlopcfv4.1 $e |- ( ph -> A e. V ) $.
+    gdlopcfv4.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the combined G&ouml;del operations function when its first
+       argument is 4.  (Contributed by BTernaryTau, 19-Oct-2026.) $)
+    gdlopcfv4 $p |- ( ph -> ( ~F ` <. 4o , A , B >. ) = ( A |` B ) ) $=
+      ( vn vx vy c4o cfv cop cgdlop4 c1o wceq c2o c3o cif 4on cotp cgdlopc cres
+      c9o c0 csn cvv cv cgdlop1 cgdlop2 cgdlop3 c5o cgdlop5 c6o cgdlop6 cgdlop7
+      cdif c7o cgdlop8 wcel 4olt9o df-4o suceldifsn0 a1i elexd fvexd con0 df-3o
+      wa 2on eqsucidi 3on ontr1i gdlopcfvlem eqcom bilani iftrued 3eqtrrd df-2o
+      1on eqtr4d opeq1 fveq2d adantl opeq2 df-gdlopc mpt3fvot2d gdlop4fv eqtrd
+      ) AKBCUAUBLBCMZNLZBCUCAHIJUDUEUFUQZUGUGHUHZOPIUHZJUHZMZUILZWMQPWPUJLZWMRP
+      WPUKLZWMKPZWPNLZWMULPWPUMLWMUNPWPUOLWMURPWPUPLWPUSLSSSZSZSZSZSZKBCUBXABWO
+      MZNLZWKUGKWLUTAKUDRVAVBVCVDABDFVEACEGVEAWJNVFAKWMPZVIZXAXEXFXJXEXDXCXAAQK
+      WMWRXDVJTQRKTQRVGVJVHVKZRKVGVLVBVKZVMVNARKWMWSXCVLTXLVNXJWTXAXBXIWTAKWMVO
+      VPVQVRAOKWMWQXEVTTORKTOQRVLOQVGVTVSVKXKVMXLVMVNWABWNPZXHXAPAXMXGWPNBWNWOW
+      BWCWDCWOPZWKXHPAXNWJXGNCWOBWEWCWDIJHWFWGABCDEFGWHWI $.
+  $}
+
+  ${
+    $d ph n x y $.  $d A n x y $.  $d B n x y $.
+    gdlopcfv5.1 $e |- ( ph -> A e. V ) $.
+    gdlopcfv5.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the combined G&ouml;del operations function when its first
+       argument is 5.  (Contributed by BTernaryTau, 19-Oct-2026.) $)
+    gdlopcfv5 $p |- ( ph -> ( ~F ` <. 5o , A , B >. ) = ( A i^i dom B ) ) $=
+      ( c5o cfv cgdlop5 c1o wceq c2o c3o c4o cif 5on con0 eqsucidi gdlopcfvlem
+      vn vx vy cotp cgdlopc cop cdm cin c9o c0 csn cdif cgdlop1 cgdlop2 cgdlop3
+      cvv cgdlop4 c6o cgdlop6 c7o cgdlop7 cgdlop8 wcel 5olt9o df-5o suceldifsn0
+      cv a1i elexd fvexd 2on df-3o 3on df-4o 4on ontr1i 1on df-2o eqcom iftrued
+      wa bilani 3eqtrrd 3eqtr4rd opeq1 fveq2d adantl opeq2 df-gdlopc mpt3fvot2d
+      gdlop5fv eqtrd ) AHBCUDUEIBCUFZJIZBCUGUHAUAUBUCUIUJUKULZUPUPUAVGZKLUBVGZU
+      CVGZUFZUMIZWPMLWSUNIZWPNLWSUOIZWPOLWSUQIZWPHLZWSJIZWPURLWSUSIWPUTLWSVAIWS
+      VBIPPZPZPZPZPZPZHBCUEXEBWRUFZJIZWNUPHWOVCAHUIOVDVEVFVHABDFVIACEGVIAWMJVJA
+      HWPLZWAZXJXIXKXEAMHWPXAXIVKQMNHQMNRVKVLSNOHQNORVMVNSOHRVOVESZVPZVPZTAKHWP
+      WTXJVQQKMHQKMRVQVRSXRVPTXOXIXHXGXEANHWPXBXHVMQXQTAOHWPXCXGVOQXPTXOXDXEXFX
+      NXDAHWPVSWBVTWCWDBWQLZXMXELAXSXLWSJBWQWRWEWFWGCWRLZWNXMLAXTWMXLJCWRBWHWFW
+      GUBUCUAWIWJABCDEFGWKWL $.
+  $}
+
+  ${
+    $d ph n x y $.  $d A n x y $.  $d B n x y $.
+    gdlopcfv6.1 $e |- ( ph -> A e. V ) $.
+    gdlopcfv6.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the combined G&ouml;del operations function when its first
+       argument is 6.  (Contributed by BTernaryTau, 19-Oct-2026.) $)
+    gdlopcfv6 $p |- ( ph -> ( ~F ` <. 6o , A , B >. ) = ( A i^i `' B ) ) $=
+      ( c6o cfv cgdlop6 wceq c2o c3o c4o c5o cif 6on con0 eqsucidi gdlopcfvlem
+      vn vx vy cotp cgdlopc cop ccnv cin c9o c0 csn cdif cvv cv cgdlop1 cgdlop2
+      c1o cgdlop3 cgdlop4 cgdlop5 cgdlop7 cgdlop8 wcel 6olt9o df-6o suceldifsn0
+      c7o a1i elexd fvexd 3on df-4o 4on df-5o 5on ontr1i 2on df-3o eqcom bilani
+      wa iftrued 3eqtrrd 3eqtr4rd 1on df-2o eqtr4d opeq1 fveq2d opeq2 df-gdlopc
+      adantl mpt3fvot2d gdlop6fv eqtrd ) AHBCUDUEIBCUFZJIZBCUGUHAUAUBUCUIUJUKUL
+      ZUMUMUAUNZUQKUBUNZUCUNZUFZUOIZWSLKXBUPIZWSMKXBURIZWSNKXBUSIZWSOKXBUTIZWSH
+      KZXBJIZWSVGKXBVAIXBVBIPZPZPZPZPZPZPZHBCUEXIBXAUFZJIZWQUMHWRVCAHUIOVDVEVFV
+      HABDFVIACEGVIAWPJVJAHWSKZWAZXIXOXPXTXNXMXOXIAMHWSXEXMVKQMNHQMNRVKVLSNOHQN
+      ORVMVNSOHRVOVESZVPZVPZTALHWSXDXNVQQLMHQLMRVQVRSYCVPZTXTXMXLXKXIANHWSXFXLV
+      MQYBTAOHWSXGXKVOQYATXTXHXIXJXSXHAHWSVSVTWBWCWDAUQHWSXCXOWEQUQLHQUQLRWEWFS
+      YDVPTWGBWTKZXRXIKAYEXQXBJBWTXAWHWIWLCXAKZWQXRKAYFWPXQJCXABWJWIWLUBUCUAWKW
+      MABCDEFGWNWO $.
+  $}
+
+  ${
+    $d ph n x y $.  $d A n x y $.  $d B n x y $.
+    gdlopcfv7.1 $e |- ( ph -> A e. V ) $.
+    gdlopcfv7.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the combined G&ouml;del operations function when its first
+       argument is 7.  (Contributed by BTernaryTau, 19-Oct-2026.) $)
+    gdlopcfv7 $p |- ( ph ->
+        ( ~F ` <. 7o , A , B >. ) = ( A i^i ( Cnv2 ` B ) ) ) $=
+      ( c7o cfv cgdlop7 wceq c2o c3o c4o c5o c6o cif 7on con0 eqsucidi vn vx vy
+      cotp cgdlopc cop ccnv2 cin c9o c0 csn cdif cvv cv cgdlop1 cgdlop2 cgdlop3
+      cgdlop4 cgdlop5 cgdlop6 cgdlop8 wcel 7olt9o df-7o suceldifsn0 elexd fvexd
+      c1o a1i wa 2on df-3o 3on df-4o 4on df-5o 5on df-6o 6on ontr1i gdlopcfvlem
+      1on df-2o eqcom bilani iftrued 3eqtrrd 3eqtr4rd opeq1 fveq2d adantl opeq2
+      df-gdlopc mpt3fvot2d gdlop7fv eqtrd ) AHBCUDUEIBCUFZJIZBCUGIUHAUAUBUCUIUJ
+      UKULZUMUMUAUNZVHKUBUNZUCUNZUFZUOIZWTLKXCUPIZWTMKXCUQIZWTNKXCURIZWTOKXCUSI
+      ZWTPKXCUTIZWTHKZXCJIZXCVAIZQZQZQZQZQZQZQZHBCUEXKBXBUFZJIZWRUMHWSVBAHUIPVC
+      VDVEVIABDFVFACEGVFAWQJVGAHWTKZVJZXRXQXSXKALHWTXEXQVKRLMHRLMSVKVLTMNHRMNSV
+      MVNTNOHRNOSVOVPTOPHROPSVQVRTPHSVSVDTZVTZVTZVTZVTZWAAVHHWTXDXRWBRVHLHRVHLS
+      WBWCTYHVTWAYCXPXOXQXKANHWTXGXOVORYFWAAMHWTXFXPVMRYGWAYCXOXNXMXKAOHWTXHXNV
+      QRYEWAAPHWTXIXMVSRYDWAYCXJXKXLYBXJAHWTWDWEWFWGWHWHBXAKZYAXKKAYIXTXCJBXAXB
+      WIWJWKCXBKZWRYAKAYJWQXTJCXBBWLWJWKUBUCUAWMWNABCDEFGWOWP $.
+  $}
+
+  ${
+    $d ph n x y $.  $d A n x y $.  $d B n x y $.
+    gdlopcfv8.1 $e |- ( ph -> A e. V ) $.
+    gdlopcfv8.2 $e |- ( ph -> B e. W ) $.
+    $( The value of the combined G&ouml;del operations function when its first
+       argument is 8.  (Contributed by BTernaryTau, 19-Oct-2026.) $)
+    gdlopcfv8 $p |- ( ph ->
+        ( ~F ` <. 8o , A , B >. ) = ( A i^i ( Cnv3 ` B ) ) ) $=
+      ( c8o cfv cgdlop8 wceq c2o c3o c4o c5o cif 8on con0 eqsucidi gdlopcfvlem
+      vn vx vy cotp cgdlopc cop ccnv3 cin c9o c0 csn cvv cv c1o cgdlop1 cgdlop2
+      cdif cgdlop3 cgdlop4 cgdlop5 c6o cgdlop6 cgdlop7 8olt9o df-8o suceldifsn0
+      c7o wcel a1i elexd fvexd wa 2on df-3o 3on df-4o 4on df-5o 5on df-6o df-7o
+      6on 7on ontr1i df-2o 3eqtrrd 3eqtr4rd opeq1 fveq2d adantl opeq2 df-gdlopc
+      1on mpt3fvot2d gdlop8fv eqtrd ) AHBCUDUEIBCUFZJIZBCUGIUHAUAUBUCUIUJUKUQZU
+      LULUAUMZUNKUBUMZUCUMZUFZUOIZWTLKXCUPIZWTMKXCURIZWTNKXCUSIZWTOKXCUTIZWTVAK
+      XCVBIZWTVGKXCVCIZXCJIZPZPZPZPZPZPZPZHBCUEXKBXBUFZJIZWRULHWSVHAHUIVGVDVEVF
+      VIABDFVJACEGVJAWQJVKAHWTKVLZXQXPXRXKALHWTXEXPVMQLMHQLMRVMVNSMNHQMNRVOVPSN
+      OHQNORVQVRSOVAHQOVARVSVTSVAVGHQVAVGRWBWASVGHRWCVESZWDZWDZWDZWDZWDZTAUNHWT
+      XDXQWMQUNLHQUNLRWMWESYGWDTYAXOXNXPXKANHWTXGXNVQQYETAMHWTXFXOVOQYFTYAXNXMX
+      LXKAOHWTXHXMVSQYDTAVAHWTXIXLWBQYCTAVGHWTXJXKWCQYBTWFWGWGBXAKZXTXKKAYHXSXC
+      JBXAXBWHWIWJCXBKZWRXTKAYIWQXSJCXBBWKWIWJUBUCUAWLWNABCDEFGWOWP $.
   $}
 
 
