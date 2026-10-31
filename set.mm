@@ -57648,17 +57648,17 @@ $)
       $.
   $}
 
-  $( The domain of a class precomposed with its converse is equal to its range.
-     (Contributed by BJ, 25-Oct-2026.) $)
-  dmcocnv2 $p |- dom ( A o. `' A ) = ran A $=
-    ( ccnv ccom cdm crn wceq dfdm4 dmcoeq ax-mp df-rn eqtr4i ) AABZCDZLDZAEADLE
-    FMNFAGALHIAJK $.
-
   $( The domain of a class postcomposed with its converse is equal to its
      domain.  (Contributed by BJ, 25-Oct-2026.) $)
   dmcocnv1 $p |- dom ( `' A o. A ) = dom A $=
     ( ccnv cdm crn wceq ccom df-rn eqcomi dmcoeq ax-mp ) ABZCZADZEKAFCACEMLAGHK
     AIJ $.
+
+  $( The domain of a class precomposed with its converse is equal to its range.
+     (Contributed by BJ, 25-Oct-2026.) $)
+  dmcocnv2 $p |- dom ( A o. `' A ) = ran A $=
+    ( ccnv ccom cdm crn wceq dfdm4 dmcoeq ax-mp df-rn eqtr4i ) AABZCDZLDZAEADLE
+    FMNFAGALHIAJK $.
 
   $( Range of a composition.  (Contributed by NM, 19-Mar-1998.) $)
   rncoeq $p |- ( dom A = ran B -> ran ( A o. B ) = ran A ) $=
