@@ -883477,9 +883477,9 @@ $)
 
   $( Define the hyperbolic tangent function (tanh).  We define it this way for
      ~ cmpt , which requires the form ` ( x e. A |-> B ) ` .  (Contributed by
-     David A. Wheeler, 10-May-2015.) $)
+     David A. Wheeler, 10-May-2015.)  (Revised by Jon Pennant, 22-Oct-2026.) $)
   df-tanh $a |- tanh = ( x e. ( `' cosh " ( CC \ { 0 } ) ) |->
-                       ( ( tan ` ( _i x. x ) ) / _i ) ) $.
+                       ( ( sinh ` x ) / ( cosh ` x ) ) ) $.
 
   ${
     $d x A $.
@@ -883490,7 +883490,7 @@ $)
        as the conventional definition of sinh used in other sources.
        (Contributed by David A. Wheeler, 20-Apr-2015.) $)
     sinhval-named $p |- ( A e. CC ->
-                          ( sinh ` A ) = ( ( sin ` ( _i x. A ) ) / _i ) ) $=
+                        ( sinh ` A ) = ( ( sin ` ( _i x. A ) ) / _i ) ) $=
       ( vx ci cv cmul co csin cfv cdiv cc csinh wceq fveq2d oveq1d df-sinh ovex
       oveq2 fvmpt ) BACBDZEFZGHZCIFCAEFZGHZCIFJKSALZUAUCCIUDTUBGSACEQMNBOUCCIPR
       $.
@@ -883505,18 +883505,7 @@ $)
     coshval-named $p |- ( A e. CC -> ( cosh ` A ) = ( cos ` ( _i x. A ) ) ) $=
       ( vx ci cv cmul co ccos cfv cc ccosh wceq oveq2 fveq2d df-cosh fvex fvmpt
       ) BACBDZEFZGHCAEFZGHIJQAKRSGQACELMBNSGOP $.
-  $}
 
-  ${
-    $d x A $.
-    $( Value of the named tanh function.  Here we show the simple conversion to
-       the conventional form used in set.mm, using the definition given by
-       ~ df-tanh .  (Contributed by David A. Wheeler, 10-May-2015.) $)
-    tanhval-named $p |- ( A e. ( `' cosh " ( CC \ { 0 } ) ) ->
-                          ( tanh ` A ) = ( ( tan ` ( _i x. A ) ) / _i ) ) $=
-      ( vx ci cv cmul co ctan cfv cdiv ccosh ccnv cc0 csn cdif cima ctanh oveq2
-      cc wceq fveq2d oveq1d df-tanh ovex fvmpt ) BACBDZEFZGHZCIFCAEFZGHZCIFJKRL
-      MNOPUEASZUGUICIUJUFUHGUEACEQTUABUBUICIUCUD $.
   $}
 
   $( Conventional definition of sinh.  Here we show that the sinh definition
@@ -883531,23 +883520,261 @@ $)
     ABCZADEFAGHZIEZFJHZKFJHZUKGHZFLZUKGHZAMUIUKBCZULUNPZUIUJFBCZUIUJBCNFAOQRUQU
     SFSTURNUAUKFUBUCUDUNUPPUIUMUOUKGUEUFUGUH $.
 
-  $( TODO: Show that tanh(x) = -i tan(ix). $)
-
   $( Prove that ` ( sinh `` A ) + ( cosh `` A ) = ( exp `` A ) ` using the
      conventional hyperbolic trigonometric functions.  (Contributed by David A.
      Wheeler, 27-May-2015.) $)
   sinhpcosh $p |- ( A e. CC ->
                    ( ( sinh ` A ) + ( cosh ` A ) ) = ( exp ` A ) ) $=
-    ( cc wcel csinh cfv ccosh caddc co c2 ce cmul cdiv cneg cmin eqtrd 2cn 2ne0
-    ci efcl a1i csin sinhval-named sinhval coshval-named coshval oveq12d cc0 wa
-    ccos wne wceq addcld subcld divdir syl3an1 syl3an2 3anidm12 mpanr12 2timesd
-    negcl syl nppcand addassd 3eqtr2rd oveq1d 3eqtr2d divcan3d ) ABCZADEZAFEZGH
-    ZIAJEZKHZILHZVLVHVKVLAMZJEZNHZILHZVLVPGHZILHZGHZVQVSGHZILHZVNVHVIVRVJVTGVHV
-    IRAKHZUAERLHVRAUBAUCOVHVJWDUIEVTAUDAUEOUFVHIBCZIUGUJZWCWAUKZPQVHWEWFUHZWGVH
-    VHVSBCZWHWGVHVLVPASZVHVOBCVPBCAUTVOSVAZULVHVQBCWIWHWGVHVLVPWJWKUMZVQVSIUNUO
-    UPUQURVHWBVMILVHVMVLVLGHVQVLGHVPGHWBVHVLWJUSVHVLVPVLWJWKWJVBVHVQVLVPWLWJWKV
-    CVDVEVFVHVLIWJWEVHPTWFVHQTVGO $.
+    ( cc wcel csinh cfv ccosh caddc co c2 ce cmul cdiv cneg cmin csin eqtrd 2cn
+    ci 2ne0 a1i sinhval-named sinhval ccos coshval-named coshval oveq12d cc0 wa
+    wceq efcl negcl efcld addcld subcld divdir syl3an1 syl3an2 3anidm12 mpanr12
+    wne 2timesd nppcand addassd 3eqtr2rd oveq1d 3eqtr2d divcan3d ) ABCZADEZAFEZ
+    GHZIAJEZKHZILHZVLVHVKVLAMZJEZNHZILHZVLVPGHZILHZGHZVQVSGHZILHZVNVHVIVRVJVTGV
+    HVIRAKHZOERLHVRAUAAUBPVHVJWDUCEVTAUDAUEPUFVHIBCZIUGUTZWCWAUIZQSVHWEWFUHZWGV
+    HVHVSBCZWHWGVHVLVPAUJZVHVOAUKULZUMVHVQBCWIWHWGVHVLVPWJWKUNZVQVSIUOUPUQURUSV
+    HWBVMILVHVMVLVLGHVQVLGHVPGHWBVHVLWJVAVHVLVPVLWJWKWJVBVHVQVLVPWLWJWKVCVDVEVF
+    VHVLIWJWEVHQTWFVHSTVGP $.
 
+  $( Domain and codomain of the sinh function.  (Contributed by Jon Pennant,
+     9-Sep-2026.) $)
+  sinhf $p |- sinh : CC --> CC $=
+    ( vx cc ci cv cmul co csin cfv cdiv csinh df-sinh wcel ax-icn a1i id mulcld
+    sincld cc0 wne ine0 divcld fmpti ) ABBCADZEFZGHZCIFJAKUCBLZUECUFUDUFCUCCBLU
+    FMNZUFOPQUGCRSUFTNUAUB $.
+
+  $( The closure of the sinh function with complex argument.  (Contributed by
+     Jon Pennant, 9-Sep-2026.) $)
+  sinhcl $p |- ( A e. CC -> ( sinh ` A ) e. CC ) $=
+    ( cc csinh sinhf ffvelcdmi ) BBACDE $.
+
+  $( Value of the sinh function at 0.  (Contributed by Jon Pennant,
+     9-Sep-2026.) $)
+  sinh0 $p |- ( sinh ` 0 ) = 0 $=
+    ( cc0 csinh cfv ci cmul co csin cdiv cc wcel wceq sinhval-named ax-mp it0e0
+    0cn fveq2i sin0 eqtri oveq1i ax-icn ine0 div0i 3eqtri ) ABCZDAEFZGCZDHFZADH
+    FAAIJUDUGKOALMUFADHUFAGCAUEAGNPQRSDTUAUBUC $.
+
+  $( The sinh function is odd.  (Contributed by Jon Pennant, 9-Sep-2026.) $)
+  sinhneg $p |- ( A e. CC -> ( sinh ` -u A ) = -u ( sinh ` A ) ) $=
+    ( cc wcel ci cmul co csin cdiv cneg csinh wa ax-icn jctl 3syl sinhval-named
+    cfv a1i wceq syl oveq1d mulcl sincl cc0 divnegd negeqd negcl mulneg2 eqcomd
+    wne ine0 fveq2d sinneg 3eqtr2d 3eqtr4rd ) ABCZDAEFZGPZDHFZIUQIZDHFZAJPZIAIZ
+    JPZUOUQDUODBCZUOKZUPBCZUQBCUOVDLMZDAUAZUPUBNVDUOLQDUCUIUOUJQUDUOVAURAOUEUOV
+    CDVBEFZGPZDHFZUPIZGPZDHFUTUOVBBCVCVKRAUFVBOSUOVMVJDHUOVLVIGUOVIVLUOVEVIVLRV
+    GDAUGSUHUKTUOVMUSDHUOVEVFVMUSRVGVHUPULNTUMUN $.
+
+  $( Domain and codomain of the cosh function.  (Contributed by Jon Pennant,
+     9-Sep-2026.) $)
+  coshf $p |- cosh : CC --> CC $=
+    ( vx cc ci cv cmul co ccos cfv ccosh df-cosh ax-icn a1i mulcld coscld fmpti
+    wcel id ) ABBCADZEFZGHIAJRBPZSTCRCBPTKLTQMNO $.
+
+  $( The closure of the cosh function with complex argument.  (Contributed by
+     Jon Pennant, 9-Sep-2026.) $)
+  coshcl $p |- ( A e. CC -> ( cosh ` A ) e. CC ) $=
+    ( cc ccosh coshf ffvelcdmi ) BBACDE $.
+
+  $( Value of the cosh function at 0.  (Contributed by Jon Pennant,
+     9-Sep-2026.) $)
+  cosh0 $p |- ( cosh ` 0 ) = 1 $=
+    ( cc0 ccosh cfv ci cmul co ccos c1 wcel wceq 0cn coshval-named ax-mp fveq2i
+    cc it0e0 cos0 3eqtri ) ABCZDAEFZGCZAGCHAOISUAJKALMTAGPNQR $.
+
+  $( The cosh function is even.  (Contributed by Jon Pennant, 9-Sep-2026.) $)
+  coshneg $p |- ( A e. CC -> ( cosh ` -u A ) = ( cosh ` A ) ) $=
+    ( cc wcel cneg ccosh cfv ci cmul co ccos wceq negcl coshval-named syl mulcl
+    ax-icn sylancr cosneg eqtr4d eqtrd id mulneg2d negeqd mulcld negnegd fveq2d
+    a1i ) ABCZADZEFZGAHIZJFZAEFUHUJGUIHIZDZJFZULUHUJUMJFZUOUHUIBCZUJUPKALZUIMNU
+    HUMBCZUOUPKUHGBCZUQUSPURGUIOQUMRNSUHUNUKJUHUNUKDZDUKUHUMVAUHGAUTUHPUGZUHUAZ
+    UBUCUHUKUHGAVBVCUDUETUFTAMS $.
+
+  ${
+    $d x A $.
+    $( Value of the tanh function in terms of sinh and cosh.  (Contributed by
+       Jon Pennant, 22-Oct-2026.) $)
+    tanhval $p |- ( ( A e. CC /\ ( cosh ` A ) =/= 0 ) ->
+                    ( tanh ` A ) = ( ( sinh ` A ) / ( cosh ` A ) ) ) $=
+      ( vx cc wcel ccosh cfv cc0 wne wa ccnv cdif cima ctanh csinh cdiv co wceq
+      csn simpl fveq2 coshcl anim1i eldifsn sylibr wf wfn wb coshf ffn elpreima
+      mp2b sylanbrc cv oveq12d df-tanh ovex fvmpt syl ) ACDZAEFZGHZIZAEJCGRKZLZ
+      DZAMFANFZUTOPZQVBUSUTVCDZVEUSVASVBUTCDZVAIVHUSVIVAAUAUBUTCGUCUDCCEUEECUFV
+      EUSVHIUGUHCCEUICAVCEUJUKULBABUMZNFZVJEFZOPVGVDMVJAQVKVFVLUTOVJANTVJAETUNB
+      UOVFUTOUPUQUR $.
+  $}
+
+  ${
+    $d x A $.
+    $( Value of the named tanh function.  Here we show the simple conversion to
+       the conventional form used in set.mm, using the definition given by
+       ~ df-tanh .  (Contributed by David A. Wheeler, 10-May-2015.)  (Revised
+       by Jon Pennant, 22-Oct-2026.) $)
+    tanhval-conventional $p |- ( ( A e. CC /\ ( cosh ` A ) =/= 0 ) ->
+                          ( tanh ` A ) = ( ( tan ` ( _i x. A ) ) / _i ) ) $=
+      ( cc wcel ccosh cfv cc0 wne wa ctanh ci cmul co csin ccos cdiv ctan csinh
+      wceq adantr a1i sinhval-named coshval-named oveq12d tanhval ax-icn mulcld
+      simpl sincld coscld eqnetrrd ine0 divdiv32d 3eqtr4d tanval syl2anc oveq1d
+      simpr eqtr4d ) ABCZADEZFGZHZAIEZJAKLZMEZVDNEZOLZJOLZVDPEZJOLVBAQEZUTOLVEJ
+      OLZVFOLVCVHVBVJVKUTVFOUSVJVKRVAAUASUSUTVFRVAAUBSZUCAUDVBVEVFJVBVDVBJAJBCV
+      BUETZUSVAUGUFZUHVBVDVNUIVMVBUTVFFVLUSVAUQUJZJFGVBUKTULUMVBVIVGJOVBVDBCVFF
+      GVIVGRVNVOVDUNUOUPUR $.
+  $}
+
+  $( Domain and codomain of the tanh function.  (Contributed by Jon Pennant,
+     22-Oct-2026.) $)
+  tanhf $p |- tanh : ( `' cosh " ( CC \ { 0 } ) ) --> CC $=
+    ( vx ccosh ccnv cc cc0 csn cdif cima cv csinh cdiv co ctanh df-tanh wcel wf
+    cfv wfn wa syl wb ffn elpreima mp2b simplbi sinhcl coshcl simprbi eldifsnbd
+    coshf divcld fmpti ) ABCDEFGZHZDAIZJQZUOBQZKLMANUOUNOZUPUQURUODOZUPDOURUSUQ
+    UMOZDDBPBDRURUSUTSUAUJDDBUBDUOUMBUCUDZUEZUOUFTURUSUQDOVBUOUGTURUQDEURUSUTVA
+    UHUIUKUL $.
+
+  $( The closure of the tanh function with complex argument.  (Contributed by
+     Jon Pennant, 9-Sep-2026.) $)
+  tanhcl $p |- ( ( A e. CC /\ ( cosh ` A ) =/= 0 ) -> ( tanh ` A ) e. CC ) $=
+    ( cc wcel ccosh cfv cc0 wne cdif ctanh wa coshcl adantr simpr eldifsnd ccnv
+    csn cima wf wfn wb coshf ffn elpreima mp2b tanhf ffvelcdmi sylbir syldan )
+    ABCZADEZFGZUJBFPHZCZAIEBCZUIUKJUJBFUIUJBCUKAKLUIUKMNUIUMJZADOULQZCZUNBBDRDB
+    SUQUOTUABBDUBBAULDUCUDUPBAIUEUFUGUH $.
+
+  $( Value of the tanh function at 0.  (Contributed by Jon Pennant,
+     22-Oct-2026.) $)
+  tanh0 $p |- ( tanh ` 0 ) = 0 $=
+    ( cc0 ctanh cfv csinh ccosh cdiv co cc wcel wne wceq 0cn c1 ax-1ne0 eqnetri
+    cosh0 tanhval mp2an sinh0 oveq1i ax-1cn eqeltri div0i 3eqtri ) ABCZADCZAECZ
+    FGZAUGFGAAHIUGAJUEUHKLUGMAPNOZAQRUFAUGFSTUGUGMHPUAUBUIUCUD $.
+
+  $( The tanh function is odd.  (Contributed by Jon Pennant, 22-Oct-2026.) $)
+  tanhneg $p |- ( ( A e. CC /\ ( cosh ` A ) =/= 0 ) ->
+                   ( tanh ` -u A ) = -u ( tanh ` A ) ) $=
+    ( cc wcel ccosh cfv cc0 wne wa csinh cdiv co cneg ctanh sinhcl adantr simpr
+    coshcl divnegd tanhval wceq negeqd coshneg eqnetrd syl2an2r sinhneg oveq12d
+    negcl eqtrd 3eqtr4rd ) ABCZADEZFGZHZAIEZUKJKZLUNLZUKJKZAMEZLALZMEZUMUNUKUJU
+    NBCULANOUJUKBCULAQOUJULPZRUMURUOASUAUMUTUSIEZUSDEZJKZUQUJUSBCULVCFGUTVDTAUG
+    UMVCUKFUJVCUKTULAUBOZVAUCUSSUDUMVBUPVCUKJUJVBUPTULAUEOVEUFUHUI $.
+
+  $( Addition formula for sinh.  (Contributed by Jon Pennant, 9-Sep-2026.) $)
+  sinhadd $p |- ( ( A e. CC /\ B e. CC ) ->
+                  ( sinh ` ( A + B ) ) =
+                  ( ( ( sinh ` A ) x. ( cosh ` B ) ) +
+                    ( ( cosh ` A ) x. ( sinh ` B ) ) ) ) $=
+    ( cc wcel wa caddc co csinh ci cmul csin cdiv ccos ccosh wceq sinhval-named
+    cfv ax-icn oveq1d mulcld addcl syl adddi mp3an1 fveq2d simpl mulcl sylancom
+    a1i sinadd syl2anc 3eqtrd sincld coscld cc0 wne pm3.2i divdir mp3an3 div23d
+    ine0 divassd oveq12d coshval-named oveqan12d eqtr4d ) ACDZBCDZEZABFGZHQZIAJ
+    GZKQZILGZIBJGZMQZJGZVLMQZVOKQZILGZJGZFGZAHQZBNQZJGZANQZBHQZJGZFGVIVKVMVPJGZ
+    VRVSJGZFGZILGZWIILGZWJILGZFGZWBVIVKIVJJGZKQZILGZVLVOFGZKQZILGWLVIVJCDVKWROA
+    BUAVJPUBVIWQWTILVIWPWSKICDZVGVHWPWSORIABUCUDUESVIWTWKILVIVLCDVOCDZWTWKOVIIA
+    XAVIRUIZVGVHUFTZVGVHXAXBXCIBUGUHZVLVOUJUKSULVIWICDZWJCDZWLWOOZVIVMVPVIVLXDU
+    MZVIVOXEUNZTVIVRVSVIVLXDUNZVIVOXEUMZTXFXGXAIUOUPZEXHXAXMRVAUQWIWJIURUSUKVIW
+    MVQWNWAFVIVMVPIXIXJXCXMVIVAUIZUTVIVRVSIXKXLXCXNVBVCULVIWEVQWHWAFVGVHWCVNWDV
+    PJAPBVDVEVGVHWFVRWGVTJAVDBPVEVCVF $.
+
+  $( Addition formula for cosh.  (Contributed by Jon Pennant, 9-Sep-2026.) $)
+  coshadd $p |- ( ( A e. CC /\ B e. CC ) ->
+                  ( cosh ` ( A + B ) ) =
+                  ( ( ( cosh ` A ) x. ( cosh ` B ) ) +
+                    ( ( sinh ` A ) x. ( sinh ` B ) ) ) ) $=
+    ( cc wcel caddc co ccosh cfv cmul ci csin cmin csinh ccos coshval-named syl
+    wceq a1i mulcld 3eqtrd wa cneg addcl ax-icn adddi mp3an1 fveq2d simpl simpr
+    cosadd syl2anc oveqan12d oveq1d eqtr4d cdiv ixi sinhval-named oveq2d eqtr3d
+    c1 sincld cc0 ine0 divcld mul4d divcan2d oveq12d sinhcl mulcl syl2an mulm1d
+    wne coshcl subnegd ) ACDZBCDZUAZABEFZGHZAGHZBGHZIFZJAIFZKHZJBIFZKHZIFZLFZWB
+    AMHZBMHZIFZUBZLFWBWKEFVQVSWCNHZWENHZIFZWGLFZWHVQVSJVRIFZNHZWCWEEFZNHZWPVQVR
+    CDVSWRQABUCVROPVQWQWSNJCDZVOVPWQWSQUDJABUEUFUGVQWCCDWECDWTWPQVQJAXAVQUDRZVO
+    VPUHZSZVQJBXBVOVPUIZSZWCWEUJUKTVQWBWOWGLVOVPVTWMWAWNIAOBOULUMUNVQWGWLWBLVQU
+    TUBZWKIFZWGWLVQXHJJIFZWDJUOFZWFJUOFZIFZIFZJXJIFZJXKIFZIFWGVQXIWKIFXHXMVQXIX
+    GWKIXIXGQVQUPRUMVQWKXLXIIVOVPWIXJWJXKIAUQBUQULURUSVQJJXJXKXBXBVQWDJVQWCXDVA
+    ZXBJVBVLVQVCRZVDVQWFJVQWEXFVAZXBXQVDVEVQXNWDXOWFIVQWDJXPXBXQVFVQWFJXRXBXQVF
+    VGTVQWKVOWICDWJCDWKCDVPAVHBVHWIWJVIVJZVKUSURVQWBWKVQVTWAVQVOVTCDXCAVMPVQVPW
+    ACDXEBVMPSXSVNT $.
+
+  $( Subtraction formula for sinh.  (Contributed by Jon Pennant,
+     9-Sep-2026.) $)
+  sinhsub $p |- ( ( A e. CC /\ B e. CC ) ->
+                  ( sinh ` ( A - B ) ) =
+                  ( ( ( sinh ` A ) x. ( cosh ` B ) ) -
+                    ( ( cosh ` A ) x. ( sinh ` B ) ) ) ) $=
+    ( cc wcel cmin co csinh cfv ccosh cmul cneg caddc negsubd oveq2d syl sinhcl
+    wceq wf a1i ffvelcdmda wa negcl sinhadd sylan2 simpl fveq2d coshneg 3eqtr3d
+    simpr oveq1d sinhneg coshcl mulneg2 syl2an eqtrd coshf mulcld sinhf 3eqtrd
+    ) ACDZBCDZUAZABEFZGHZAGHZBIHZJFZAIHZBKZGHZJFZLFZVGVHBGHZJFZKZLFVGVNEFVBAVIL
+    FZGHZVEVIIHZJFZVKLFZVDVLVAUTVICDVQVTQBUBAVIUCUDVBVPVCGVBABUTVAUEZUTVAUIZMUF
+    VBVSVGVKLVBVAVSVGQWBVAVRVFVEJBUGNOUJUHVBVKVOVGLVBVKVHVMKZJFZVOVBVAVKWDQWBVA
+    VJWCVHJBUKNOUTVHCDZVMCDWDVOQVAAULZBPVHVMUMUNUONVBVGVNVBVEVFVBUTVECDWAAPOUTC
+    CBICCIRUTUPSTUQVBVHVMVBUTWEWAWFOUTCCBGCCGRUTURSTUQMUS $.
+
+  $( Subtraction formula for cosh.  (Contributed by Jon Pennant,
+     9-Sep-2026.) $)
+  coshsub $p |- ( ( A e. CC /\ B e. CC ) ->
+                  ( cosh ` ( A - B ) ) =
+                  ( ( ( cosh ` A ) x. ( cosh ` B ) ) -
+                    ( ( sinh ` A ) x. ( sinh ` B ) ) ) ) $=
+    ( cc wcel cmin co ccosh cfv cmul csinh cneg caddc wceq oveq2d adantl sinhcl
+    eqtrd adantr wf a1i wa coshadd sylan2 negsub fveq2d coshneg sinhneg mulneg2
+    negcl syl2an oveq12d 3eqtr3d coshcl coshf ffvelcdmda mulcld sinhf negsubd )
+    ACDZBCDZUAZABEFZGHZAGHZBGHZIFZAJHZBJHZIFZKZLFZVFVIEFVAABKZLFZGHZVDVLGHZIFZV
+    GVLJHZIFZLFZVCVKUTUSVLCDVNVSMBUIAVLUBUCVAVMVBGABUDUEVAVPVFVRVJLUTVPVFMUSUTV
+    OVEVDIBUFNOVAVRVGVHKZIFZVJUTVRWAMUSUTVQVTVGIBUGNOUSVGCDZVHCDWAVJMUTAPZBPVGV
+    HUHUJQUKULVAVFVIVAVDVEUSVDCDUTAUMRUSCCBGCCGSUSUNTUOUPVAVGVHUSWBUTWCRUSCCBJC
+    CJSUSUQTUOUPURQ $.
+
+
+  $( Addition formula for tanh.  (Contributed by Jon Pennant, 9-Sep-2026.) $)
+  tanhadd $p |- ( ( ( ( A e. CC /\ B e. CC ) /\ ( cosh ` A ) =/= 0 ) /\
+                  ( ( cosh ` B ) =/= 0 /\ ( cosh ` ( A + B ) ) =/= 0 ) ) ->
+                  ( tanh ` ( A + B ) ) =
+                  ( ( ( tanh ` A ) + ( tanh ` B ) ) /
+                    ( 1 + ( ( tanh ` A ) x. ( tanh ` B ) ) ) ) ) $=
+    ( cc wcel wa ccosh cfv cc0 wne caddc co ctanh cdiv cmul wceq addcld tanhval
+    csinh oveq12d mulcld simplll simpllr simprr syl2anc sinhadd ad2antrr sinhcl
+    coshadd ad3antrrr coshcl ad3antlr eqnetrrd simplr simprl mulne0d divadddivd
+    c1 divcan7d mulcomd oveq2d oveq1d 3eqtr4rd divdird dividd divmuldivd eqtr2d
+    eqtrd eqtr3d 3eqtrd ) ACDZBCDZEZAFGZHIZEZBFGZHIZABJKZFGZHIZEZEZVRLGZVRRGZVS
+    MKZARGZVPNKZVMBRGZNKZJKZVMVPNKZWFWHNKZJKZMKZALGZBLGZJKZUQWOWPNKZJKZMKZWBVRC
+    DVTWCWEOWBABVJVKVNWAUAZVJVKVNWAUBZPVOVQVTUCZVRQUDVLWEWNOVNWAVLWDWJVSWMMABUE
+    ABUHZSUFWBWJWKMKZWMWKMKZMKWNWTWBWJWMWKWBWGWIWBWFVPVJWFCDVKVNWAAUGUIZVKVPCDV
+    JVNWABUJUKZTWBVMWHVJVMCDVKVNWAAUJUIZVKWHCDVJVNWABUGUKZTPWBWKWLWBVMVPXIXHTZW
+    BWFWHXGXJTZPXKWBVSWMHVLVSWMOVNWAXDUFXCULWBVMVPXIXHVLVNWAUMZVOVQVTUNZUOZURWB
+    XEWQXFWSMWBWFVMMKZWHVPMKZJKWGWHVMNKZJKZWKMKWQXEWBWFVMWHVPXGXIXJXHXMXNUPWBWO
+    XPWPXQJWBVJVNWOXPOXAXMAQUDZWBVKVQWPXQOXBXNBQUDZSWBWJXSWKMWBWIXRWGJWBVMWHXIX
+    JUSUTVAVBWBXFWKWKMKZWLWKMKZJKWSWBWKWLWKXKXLXKXOVCWBYBUQYCWRJWBWKXKXOVDWBWRX
+    PXQNKYCWBWOXPWPXQNXTYASWBWFVMWHVPXGXIXJXHXMXNVEVFSVGSVHVI $.
+
+  ${
+    tanhaddd.a $e |- ( ph -> A e. CC ) $.
+    tanhaddd.b $e |- ( ph -> B e. CC ) $.
+    tanhaddd.1 $e |- ( ph -> ( cosh ` A ) =/= 0 ) $.
+    tanhaddd.2 $e |- ( ph -> ( cosh ` B ) =/= 0 ) $.
+    tanhaddd.3 $e |- ( ph -> ( cosh ` ( A + B ) ) =/= 0 ) $.
+    $( Addition formula for tanh.  (Contributed by Jon Pennant, 9-Sep-2026.) $)
+    tanhaddd $p |- ( ph -> ( tanh ` ( A + B ) ) =
+                  ( ( ( tanh ` A ) + ( tanh ` B ) ) /
+                    ( 1 + ( ( tanh ` A ) x. ( tanh ` B ) ) ) ) ) $=
+      ( cc wcel wa ccosh cfv cc0 wne caddc co ctanh c1 cmul cdiv wceq syl22anc
+      jca tanhadd ) ABIJZCIJZKBLMNOCLMNOBCPQZLMNOUHRMBRMZCRMZPQSUIUJTQPQUAQUBAU
+      FUGDEUDFGHBCUEUC $.
+  $}
+
+  $( The fundamental identity for hyperbolic functions: cosh^2 - sinh^2 = 1.
+     (Contributed by Jon Pennant, 9-Sep-2026.) $)
+  coshsinhsq $p |- ( A e. CC ->
+                     ( ( ( cosh ` A ) ^ 2 ) - ( ( sinh ` A ) ^ 2 ) ) = 1 ) $=
+    ( cc wcel ccosh cfv c2 cexp co csinh cmin cmul coshcl sqvald sinhcl oveq12d
+    c1 wceq coshsub anidms cc0 subid fveq2d cosh0 eqtrdi 3eqtr2d ) ABCZADEZFGHZ
+    AIEZFGHZJHUGUGKHZUIUIKHZJHZAAJHZDEZPUFUHUKUJULJUFUGALMUFUIANMOUFUOUMQAARSUF
+    UOTDEPUFUNTDAUAUBUCUDUE $.
+
+  $( Hyperbolic tangent/secant identity: 1 - tanh^2 = sech^2 (or 1 / cosh^2).
+     (Contributed by Jon Pennant, 27-Sep-2026.) $)
+  ontanhsq $p |- ( ( A e. CC /\ ( cosh ` A ) =/= 0 ) ->
+               ( 1 - ( ( tanh ` A ) ^ 2 ) ) = ( 1 / ( ( cosh ` A ) ^ 2 ) ) ) $=
+    ( cc wcel ccosh cfv cc0 wne wa c1 ctanh c2 cexp co cmin cdiv tanhval oveq1d
+    csinh sqcld adantr oveq2d coshcl wb syl biimpar dividd eqcomd sinhcl sqdivd
+    sqne0 simpr oveq12d divsubdird wceq coshsinhsq 3eqtr2d eqtrd ) ABCZADEZFGZH
+    ZIAJEZKLMZNMIAREZUSOMZKLMZNMZIUSKLMZOMZVAVCVFINVAVBVEKLAPQUAVAVGVHVHOMZVDKL
+    MZVHOMZNMVHVKNMZVHOMZVIVAIVJVFVLNVAVJIVAVHURVHBCUTURUSAUBZSTZURVHFGZUTURUSB
+    CZVQUTUCVOUSUJUDUEZUFUGVAVDUSURVDBCUTAUHTZURVRUTVOTURUTUKUIULVAVHVKVHVPVAVD
+    VTSVPVSUMURVNVIUNUTURVMIVHOAUOQTUPUQ $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
