@@ -14321,6 +14321,7 @@ New usage of "0subgALT" is discouraged (0 uses).
 New usage of "0vfval" is discouraged (9 uses).
 New usage of "10nprmOLD" is discouraged (0 uses).
 New usage of "139prmALT" is discouraged (0 uses).
+New usage of "13an22anassOLD" is discouraged (0 uses).
 New usage of "19.21a3con13vVD" is discouraged (0 uses).
 New usage of "19.41rg" is discouraged (3 uses).
 New usage of "19.41rgVD" is discouraged (0 uses).
@@ -19562,6 +19563,7 @@ Proof modification of "0sdom1domALT" is discouraged (31 steps).
 Proof modification of "0subgALT" is discouraged (80 steps).
 Proof modification of "10nprmOLD" is discouraged (11 steps).
 Proof modification of "139prmALT" is discouraged (758 steps).
+Proof modification of "13an22anassOLD" is discouraged (79 steps).
 Proof modification of "19.21a3con13vVD" is discouraged (107 steps).
 Proof modification of "19.41rg" is discouraged (58 steps).
 Proof modification of "19.41rgVD" is discouraged (127 steps).
