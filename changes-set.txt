@@ -93,6 +93,8 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+24-Oct-26 fphpd       [same]      Moved from SO's mathbox to main set.mm
+24-Oct-26 indstrd     [same]      Moved from MKU's mathbox to main set.mm
 22-Oct-26 fidmfisupp  ---         deleted; duplicate of fdmfifsupp
 21-Oct-26 iotain      [same]      Moved from ATS's mathbox to main set.mm
 21-Oct-26 nvelim      [same]      Moved from AV's mathbox to main set.mm
