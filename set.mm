@@ -60343,12 +60343,27 @@ $)
       FNAMQRUDSTUA $.
   $}
 
-  $( Composition with a restricted identity relation.  (Contributed by FL,
-     19-Jun-2011.)  (Revised by Stefan O'Rear, 7-Mar-2015.) $)
+  $( A restricted identity relation is equal to its converse.  (Contributed by
+     FL, 4-Mar-2007.)  Remove dependency on ~ ax-12 and shorten.  (Revised by
+     BJ, 1-Nov-2026.) $)
+  cnvresid $p |- `' ( _I |` A ) = ( _I |` A ) $=
+    ( cid cxp cin ccnv cres cnvin cnvi cnvxp ineq12i idinxpresid cnveqi 3eqtr3i
+    eqtri ) BAACZDZEZPBAFZERQBEZOEZDPBOGSBTOHAAIJNPRAKZLUAM $.
+
+  $( Precomposing with a restricted identity relation is the same as
+     restricting.  (Contributed by FL, 19-Jun-2011.)  (Revised by Stefan
+     O'Rear, 7-Mar-2015.) $)
   coires1 $p |- ( A o. ( _I |` B ) ) = ( A |` B ) $=
     ( ccnv cres ccom cocnvcnv1 wrel wceq relcnv coi1 ax-mp eqtr3i reseq1i resco
     cid rescnvcnv ) ACZCZBDZAOBDEZABDAOEZBDSTUARBROEZUARAOFRGUBRHQIRJKLMAOBNLAB
     PL $.
+
+  $( Postcomposing with a restricted identity relation is the same as
+     corestricting.  (Contributed by BJ, 1-Nov-2026.) $)
+  coires2 $p |- ( ( _I |` B ) o. A ) = ( A i^i ( _V X. B ) ) $=
+    ( cid cres ccnv ccom cvv cxp cnvresid coeq1i coires1 cnveqi cnvco cnvrescnv
+    cin 3eqtr3i cocnvcnv2 3eqtr3ri ) CBDZEZAEZEZFZSUBFAGBHOZSAFTSUBBIJUASFZEUAB
+    DZEUCUDUEUFUABKLUASMBANPSAQR $.
 
   ${
     $d x y z w A $.  $d x y z w B $.  $d x y z w C $.
@@ -63781,9 +63796,10 @@ $)
     crn wss funssres mpan2 eqtr2id ) BCZDZUABAEZFUABAFZCZGZFZUEUCUFUAUCUDPUFBAH
     UDIJKUBUEUAQZUGUELUDBQUHBAMUDBNOUAUERST $.
 
-  $( Converse of a restricted identity function.  (Contributed by FL,
-     4-Mar-2007.) $)
-  cnvresid $p |- `' ( _I |` A ) = ( _I |` A ) $=
+  $( Obsolete version of ~ cnvresid as of 1-Nov-2026.  (Contributed by FL,
+     4-Mar-2007.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
+  cnvresidOLD $p |- `' ( _I |` A ) = ( _I |` A ) $=
     ( cid ccnv wceq wfun cres cnvi eqcomi funi funeq cima funcnvres imai eqtrdi
     mpbii reseq12i mp2b ) BBCZDZREZBAFZCZUADRBGHSBETIBRJOTUBRBAKZFUAABLRBUCAGAM
     PNQ $.

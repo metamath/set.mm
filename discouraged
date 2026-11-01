@@ -15805,6 +15805,7 @@ New usage of "cnvcnvssOLD" is discouraged (0 uses).
 New usage of "cnvfiALT" is discouraged (0 uses).
 New usage of "cnvimarndmOLD" is discouraged (0 uses).
 New usage of "cnvimassrndmOLD" is discouraged (0 uses).
+New usage of "cnvresidOLD" is discouraged (0 uses).
 New usage of "cnvunop" is discouraged (2 uses).
 New usage of "cnvxpOLD" is discouraged (0 uses).
 New usage of "coassOLD" is discouraged (0 uses).
@@ -20061,6 +20062,7 @@ Proof modification of "cnvcnvssOLD" is discouraged (15 steps).
 Proof modification of "cnvfiALT" is discouraged (46 steps).
 Proof modification of "cnvimarndmOLD" is discouraged (24 steps).
 Proof modification of "cnvimassrndmOLD" is discouraged (75 steps).
+Proof modification of "cnvresidOLD" is discouraged (46 steps).
 Proof modification of "cnvxpOLD" is discouraged (59 steps).
 Proof modification of "coassOLD" is discouraged (181 steps).
 Proof modification of "com3rgbi" is discouraged (35 steps).
