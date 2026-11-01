@@ -58709,19 +58709,16 @@ $)
   $}
 
 
-  $( The converse of the binary epsilon relation.  For a set ` A ` , the
-     relation ` A ``' _E B ` holds exactly when ` B e. A ` .  (Contributed by
-     Peter Mazsa, 30-Jan-2018.) $)
+  $( Characterizarion of the converse epsilon relation.  (Contributed by Peter
+     Mazsa, 30-Jan-2018.) $)
   brcnvep $p |- ( A e. V -> ( A `' _E B <-> B e. A ) ) $=
     ( cep ccnv wbr wcel rele relbrcnv epelg bitrid ) ABDEFBADFACGBAGABDHIBACJK
     $.
 
   ${
     $d A x y $.
-    $( Express the restriction of the converse epsilon relation to ` A ` as a
-       class of ordered pairs.  The first coordinate belongs to ` A ` , and the
-       second is a member of the first.  (Contributed by Peter Mazsa,
-       10-Feb-2018.) $)
+    $( Restricted converse epsilon relation expressed as an ordered-pair class
+       abstraction.  (Contributed by Peter Mazsa, 10-Feb-2018.) $)
     cnvepres $p |- ( `' _E |` A ) = { <. x , y >. | ( x e. A /\ y e. x ) } $=
       ( cep ccnv cres cv wcel wbr wa copab dfres2 wb cvv brcnvep anbi2i opabbii
       elv eqtri ) DEZCFAGZCHZUABGZTIZJZABKUBUCUAHZJZABKABCTLUEUGABUDUFUBUDUFMAU
@@ -69719,12 +69716,12 @@ $)
 
   ${
     $d A x $.  $d F x $.
-    $( If the domain of a function is a set, the function is a set.  Theorem
-       6.16(1) of [TakeutiZaring] p. 28.  See ~ fnexALT for an alternate proof.
-       (Contributed by NM, 14-Aug-1994.)  Establish the general
-       function-existence principle directly using Replacement in the form of
-       ~ funimaexg , rather than deriving it from the restriction-specific
-       theorem ~ resfunexg .  (Revised by Steven Nguyen, 13-Oct-2026.) $)
+    $( If the domain of a function with domain is a set, then the function is a
+       set.  Theorem 6.16(1) of [TakeutiZaring] p. 28.  See ~ fnexALT for an
+       alternate proof.  (Contributed by NM, 14-Aug-1994.)  Apply Replacement
+       directly in the form of ~ funimaexg , rather than via the
+       restriction-specific ~ resfunexg .  (Revised by Peter Mazsa and Steven
+       Nguyen, 13-Oct-2026.) $)
     fnex $p |- ( ( F Fn A /\ A e. B ) -> F e. _V ) $=
       ( vx wfn wcel wa cv cfv cop cmpt cima cvv wceq biimpi crn cdm fvex fnasrn
       dffn5 imadmrn opex eqid dmmpti imaeq2i eqtr4di adantr wfun funimaexg mpan
@@ -78405,23 +78402,21 @@ $)
       ( wcel cdm cvv dmexg syl ) ABCEBFGEDBCHI $.
   $}
 
-  $( A relation is a set if both its domain and range are sets.  This is the
-     reverse implication used in ~ relexdmrnb and in ~ imaexb .  (Contributed
+  $( A relation is a set if both its domain and range are sets.  (Contributed
      by Peter Mazsa, 10-Oct-2026.) $)
   reldmrnex $p |- ( ( Rel R /\ ( dom R e. V /\ ran R e. W ) ) -> R e. _V ) $=
     ( wrel cdm crn cxp wss cvv wcel wa relssdmrn xpexg ssexg syl2an ) ADAAEZAFZ
     GZHRIJAIJPBJQCJKALPQBCMARINO $.
 
-  $( A relation is a set exactly when both its domain and range are sets.  The
-     forward implication does not require relationhood.  The reverse
-     implication follows from ~ reldmrnex .  (Contributed by Peter Mazsa,
-     10-Oct-2026.) $)
+  $( A relation is a set if and only if both its domain and range are sets.
+     Only the reverse implication needs ` R ` to be a relation, see
+     ~ reldmrnex .  (Contributed by Peter Mazsa, 10-Oct-2026.) $)
   relexdmrnb $p |- ( Rel R ->
                      ( R e. _V <-> ( dom R e. _V /\ ran R e. _V ) ) ) $=
     ( wrel cvv wcel cdm crn wa dmexg rnexg jca adantl reldmrnex impbida ) ABZAC
     DZAECDZAFCDZGZORNOPQACHACIJKACCLM $.
 
-  $( A function is a set exactly when its domain is a set.  The forward
+  $( A function is a set if and only if its domain is a set.  The forward
      implication holds without functionhood by ~ dmexg .  The reverse
      implication follows from ~ funex and requires functionhood.  (Contributed
      by Peter Mazsa, 10-Oct-2026.) $)
@@ -78490,14 +78485,15 @@ $)
     ( wcel cid cres cxp wss cvv idssxp sqxpexg ssexg sylancr ) ABCDAEZAAFZGNHCM
     HCAIABJMNHKL $.
 
-  $( Generalization of Theorem 3.17 of [Monk1] p. 39: the image of a class
-     under a restriction is a set whenever the restriction is a set.  Unlike
-     ~ imaexg , the whole relation need not be a set.  (Contributed by Peter
-     Mazsa, 10-Oct-2026.) $)
+  $( If the restriction of a class to another class is a set, then the image of
+     the restricting class under restricted class is also a set.
+     Generalization of ~ imaexg , which requires that the entire class, and not
+     just its restriction, be a set.  (Contributed by Peter Mazsa,
+     10-Oct-2026.) $)
   imaexgen $p |- ( ( A |` B ) e. V -> ( A " B ) e. _V ) $=
     ( cres wcel cima crn cvv df-ima rnexg eqeltrid ) ABDZCEABFLGHABILCJK $.
 
-  $( When the domain of a restriction is a set, sethood of the restriction is
+  $( If the domain of a restriction is a set, sethood of the restriction is
      equivalent to sethood of the corresponding image.  The forward implication
      holds unconditionally by ~ imaexgen ; only the reverse implication
      requires domain sethood, using ~ reldmrnex .  (Contributed by Peter Mazsa,
@@ -78508,10 +78504,10 @@ $)
     crn wrel mpan ex impbid2 ) ABDZECFZUAGFZABHZGFZABGIUBUEUCUEUBUAPZGFZUCUDUFG
     ABJKUAQUBUGLUCABMUACGNROST $.
 
-  $( The image of a set is a set.  Theorem 3.17 of [Monk1] p. 39.  More
-     restrictive antecedent; kept for backward compatibility; for new work,
-     prefer ~ imaexgen .  (Contributed by NM, 24-Jul-1995.)  Derive this
-     special case from ~ imaexgen .  (Revised by Peter Mazsa, 10-Oct-2026.) $)
+  $( The image of a set is a set.  Theorem 3.17 of [Monk1] p. 39.  A more
+     general form of this theorem is proved as ~ imaexgen .  (Contributed by
+     NM, 24-Jul-1995.)  Derive this special case from ~ imaexgen .  (Revised by
+     Peter Mazsa, 10-Oct-2026.) $)
   imaexg $p |- ( A e. V -> ( A " B ) e. _V ) $=
     ( wcel cres cvv cima resexg imaexgen syl ) ACDABEFDABGFDABCHABFIJ $.
 
@@ -79203,8 +79199,7 @@ $)
   ${
     $d A x y $.  $d V x $.
     $( The restriction of the proper-class converse epsilon relation to a set
-       is a set (see ~ cnvepres ).  This supplies the hypothesis of ~ ecexgen
-       used in ~ eccnvepex .  (Contributed by Peter Mazsa, 24-Sep-2018.) $)
+       is a set.  (Contributed by Peter Mazsa, 24-Sep-2018.) $)
     cnvepresex $p |- ( A e. V -> ( `' _E |` A ) e. _V ) $=
       ( vx vy wcel cep ccnv cres cv wa copab cvv cnvepres cab abid2 vex eqeltri
       id a1i opabex3d eqeltrid ) ABEZFGAHCIZAEZDIUCEZJCDKLCDAMUBUECDABUBRUEDNZL
@@ -90771,12 +90766,11 @@ $)
     ( csn cvv wcel cep ccnv cres cec snex cnvepresex ecexgen mp2b ) ABZCDEFZMGC
     DANHCDAIMCJANCKL $.
 
-  $( Existence of a coset of a set relation.  More restrictive antecedent; kept
-     for backward compatibility; for new work, prefer ~ ecexgen .  (Contributed
-     by NM, 24-Jul-1995.)  Derive this special case from ~ ecexgen to make the
-     generalization explicit.  (Revised by Peter Mazsa, 11-Oct-2026.) $)
+  $( Existence of a coset of a set relation.  Special case of ~ ecexgen , more
+     restrictive antecedent; cf. ~ eccnvepex .  (Contributed by NM,
+     24-Jul-1995.) $)
   ecexg $p |- ( R e. B -> [ A ] R e. _V ) $=
-    ( wcel csn cres cvv cec resexg ecexgen syl ) CBDCAEZFGDACHGDCLBIACGJK $.
+    ( wcel cec csn cima cvv df-ec imaexg eqeltrid ) CBDACECAFZGHACICLBJK $.
 
   $( A nonempty equivalence class implies the representative is a set.
      (Contributed by Mario Carneiro, 9-Jul-2014.) $)
@@ -91456,10 +91450,10 @@ $)
   ${
     $d A x y $.  $d R x y $.  $d V x $.
     $( The union of a quotient set equals the image of its indexing class
-       whenever that image is a set.  This strengthens ~ uniqs : sethood of the
-       restriction is sufficient but not necessary.  Neither ` R ` nor its
-       restriction need be sets.  (Contributed by Peter Mazsa, 11-Oct-2026.) $)
-    uniqsima $p |- ( ( R " A ) e. V -> U. ( A /. R ) = ( R " A ) ) $=
+       whenever that image is a set.  This strengthens ~ uniqsw : sethood of
+       ` R ` is sufficient but not necessary.  (Contributed by Peter Mazsa,
+       11-Oct-2026.) $)
+    uniqs $p |- ( ( R " A ) e. V -> U. ( A /. R ) = ( R " A ) ) $=
       ( vy vx cima wcel cv cec wceq wrex cab cuni ciun cqs cvv wral wss csn syl
       df-ec snssi imass2 eqsstrid ssexg sylan expcom ralrimiv dfiun2g df-qs a1i
       eqcomd unieqi iuneq2i imaiun iunid imaeq2i 3eqtr2ri 3eqtr4g ) BAFZCGZDHEH
@@ -91468,21 +91462,12 @@ $)
       DABUJUMVFEAVKNBEAVJNZFUTEAVCVKVCVKJVIVLUKUNEBAVJUOVMABEAUPUQURUS $.
   $}
 
-  $( The union of a quotient class equals the image of its indexing class
-     whenever the corresponding restriction is a set.  This generalizes
-     ~ uniqsw but has a more restrictive antecedent than ~ uniqsima ; for new
-     work, prefer the latter.  (Contributed by NM, 9-Dec-2008.)  (Revised by
-     Peter Mazsa, 20-Jun-2019.) $)
-  uniqs $p |- ( ( R |` A ) e. V -> U. ( A /. R ) = ( R " A ) ) $=
-    ( cres wcel cima cvv cqs cuni wceq imaexgen uniqsima syl ) BADCEBAFZGEABHIN
-    JBACKABGLM $.
-
   $( The union of a quotient set.  More restrictive antecedent; kept for
      backward compatibility; for new work, prefer ~ uniqs .  (Contributed by
      NM, 9-Dec-2008.)  (Proof shortened by AV, 25-Nov-2025.) $)
   uniqsw $p |- ( R e. V -> U. ( A /. R ) = ( R " A ) ) $=
-    ( wcel cres cvv cqs cuni cima wceq resexg uniqs syl ) BCDBAEFDABGHBAIJBACKA
-    BFLM $.
+    ( wcel cima cvv cqs cuni wceq imaexg uniqs syl ) BCDBAEZFDABGHMIBACJABFKL
+    $.
 
   ${
     $d x y A $.  $d x y ph $.  $d x y R $.
@@ -641169,8 +641154,8 @@ $)
 
   $( The range of a restriction is equal to the union of the quotient set.
      (Contributed by Peter Mazsa, 19-May-2018.) $)
-  rnresequniqs $p |- ( ( R |` A ) e. V -> ran ( R |` A ) = U. ( A /. R ) ) $=
-    ( cres wcel cqs cuni cima crn uniqs df-ima eqtr2di ) BADZCEABFGBAHMIABCJBAK
+  rnresequniqs $p |- ( ( R " A ) e. V -> ran ( R |` A ) = U. ( A /. R ) ) $=
+    ( cima wcel cqs cuni cres crn uniqs df-ima eqtr2di ) BADZCEABFGMBAHIABCJBAK
     L $.
 
   ${
@@ -641186,8 +641171,9 @@ $)
   $( The image of converse epsilon.  (Contributed by Peter Mazsa,
      22-Mar-2023.) $)
   cnvepima $p |- ( A e. V -> ( `' _E " A ) = U. A ) $=
-    ( wcel cep ccnv cqs cuni cima cres cvv wceq cnvepresex uniqs unieqi eqtr3di
-    syl qsid ) ABCZADEZFZGZSAHZAGRSAIJCUAUBKABLASJMPTAAQNO $.
+    ( wcel cep ccnv cqs cuni cima cres wceq cnvepresex imaexgen uniqs 3syl qsid
+    cvv unieqi eqtr3di ) ABCZADEZFZGZTAHZAGSTAIPCUCPCUBUCJABKTAPLATPMNUAAAOQR
+    $.
 
   $( Sufficient condition for the intersection relation to be a set.
      (Contributed by Peter Mazsa, 24-Nov-2019.) $)
@@ -645541,9 +645527,9 @@ $)
   $( The range of a relation is equal to the union of the domain quotient.
      (Contributed by Peter Mazsa, 13-Oct-2018.) $)
   unidmqs $p |- ( R e. V -> ( Rel R -> U. ( dom R /. R ) = ran R ) ) $=
-    ( wcel wrel cdm cqs cuni crn wceq cres cvv rnresequniqs syl resdm sylan9req
-    resexg rneqd ex ) ABCZADZAEZAFGZAHZISTUBAUAJZHZUCSUDKCUEUBIAUABPUAAKLMTUDAA
-    NQOR $.
+    ( wcel wrel cdm cqs cuni crn wceq cres cima imaexg rnresequniqs resdm rneqd
+    cvv syl sylan9req ex ) ABCZADZAEZAFGZAHZITUAUCAUBJZHZUDTAUBKPCUFUCIAUBBLUBA
+    PMQUAUEAANORS $.
 
   $( The union of the domain quotient of a relation is equal to the class ` A `
      if and only if the range is equal to it as well.  (Contributed by Peter
