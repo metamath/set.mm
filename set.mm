@@ -60350,12 +60350,20 @@ $)
     ( cid cxp cin ccnv cres cnvin cnvi cnvxp ineq12i idinxpresid cnveqi 3eqtr3i
     eqtri ) BAACZDZEZPBAFZERQBEZOEZDPBOGSBTOHAAIJNPRAKZLUAM $.
 
-  $( Composition with a restricted identity relation.  (Contributed by FL,
-     19-Jun-2011.)  (Revised by Stefan O'Rear, 7-Mar-2015.) $)
+  $( Precomposing with a restricted identity relation is the same as
+     restricting.  (Contributed by FL, 19-Jun-2011.)  (Revised by Stefan
+     O'Rear, 7-Mar-2015.) $)
   coires1 $p |- ( A o. ( _I |` B ) ) = ( A |` B ) $=
     ( ccnv cres ccom cocnvcnv1 wrel wceq relcnv coi1 ax-mp eqtr3i reseq1i resco
     cid rescnvcnv ) ACZCZBDZAOBDEZABDAOEZBDSTUARBROEZUARAOFRGUBRHQIRJKLMAOBNLAB
     PL $.
+
+  $( Postcomposing with a restricted identity relation is the same as
+     corestricting.  (Contributed by BJ, 1-Nov-2026.) $)
+  coires2 $p |- ( ( _I |` B ) o. A ) = ( A i^i ( _V X. B ) ) $=
+    ( cid cres ccnv ccom cvv cxp cnvresid coeq1i coires1 cnveqi cnvco cnvrescnv
+    cin 3eqtr3i cocnvcnv2 3eqtr3ri ) CBDZEZAEZEZFZSUBFAGBHOZSAFTSUBBIJUASFZEUAB
+    DZEUCUDUEUFUABKLUASMBANPSAQR $.
 
   ${
     $d x y z w A $.  $d x y z w B $.  $d x y z w C $.
