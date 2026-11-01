@@ -882321,7 +882321,7 @@ $)
 
   ${
     $( Every positive integer is a nonzero rational.  (Contributed by Zhi Wang,
-       27-Oct-2026.)  (Proof shortened by Zhi Wang, 2-Nov-2026.) $)
+       27-Oct-2026.) $)
     nnqnz $p |- ( A e. NN -> A e. ( QQ \ { 0 } ) ) $=
       ( cn wcel cq cc0 nnq nnne0 eldifsnd ) ABCADEAFAGH $.
   $}
@@ -882652,7 +882652,7 @@ $)
     rpthirdltd.1 $e |- ( ph -> A e. RR+ ) $.
     $( A third of a positive real number is strictly smaller than that number.
        This includes the case ` ( ph -> A e. NN ) ` .  (Contributed by Zhi
-       Wang, 17-Oct-2026.)  (Revised by Zhi Wang, 2-Nov-2026.) $)
+       Wang, 17-Oct-2026.) $)
     rpthirdltd $p |- ( ph -> ( A / 3 ) < A ) $=
       ( c3 cdiv co c1 clt wbr 1lt3 a1i crp wcel 1rp ltdiv2d mpbid rpcnd breqtrd
       3rp div1d ) ABDEFZBGEFZBHAGDHIZUAUBHIUCAJKAGDBGLMANKDLMASKCOPABABCQTR $.
@@ -882664,8 +882664,7 @@ $)
     rpdivgt1ltd.3 $e |- ( ph -> 1 < B ) $.
     $( Division of a positive real number by a real number greater than one
        decreases it.  This includes the case ` ( ph -> A e. NN ) ` .
-       (Contributed by Zhi Wang, 20-Oct-2026.)  (Revised by Zhi Wang,
-       2-Nov-2026.) $)
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
     rpdivgt1ltd $p |- ( ph -> ( A / B ) < A ) $=
       ( cdiv co c1 clt wbr crp wcel 1rp a1i ltdiv2d mpbid rpcnd div1d breqtrd )
       ABCGHZBIGHZBJAICJKUAUBJKFAICBILMANOEDPQABABDRST $.
@@ -882912,7 +882911,7 @@ $)
     nnnegabsboundd.2 $e |- ( ph -> R < N ) $.
     $( Negating a positive integer gives an integer whose absolute value is
        positive and satisfies the same strict upper bound.  (Contributed by Zhi
-       Wang, 20-Oct-2026.)  (Proof shortened by Zhi Wang, 2-Nov-2026.) $)
+       Wang, 20-Oct-2026.) $)
     nnnegabsboundd $p |- ( ph -> ( -u R e. ZZ /\ ( abs ` -u R ) e. NN /\ (
       abs ` -u R ) < N ) ) $=
       ( cneg cz wcel cabs cfv cn clt wbr nnzd znegcld nncnd absnegd wceq nnnn0d
@@ -882925,8 +882924,7 @@ $)
     nnsubabsboundd.2 $e |- ( ph -> R e. NN ) $.
     nnsubabsboundd.3 $e |- ( ph -> R < N ) $.
     $( A proper positive difference has a smaller positive absolute value.
-       (Contributed by Zhi Wang, 20-Oct-2026.)  (Proof shortened by Zhi Wang,
-       2-Nov-2026.) $)
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
     nnsubabsboundd $p |- ( ph -> ( ( N - R ) e. ZZ /\ ( abs ` ( N - R ) ) e.
       NN /\ ( abs ` ( N - R ) ) < N ) ) $=
       ( cmin co cz wcel cabs cfv cn clt wbr nnsubbothd simpld nnzd cn0 wceq syl
@@ -883050,8 +883048,7 @@ $)
     $d F v z $.  $d N v z $.  $d P v z $.
     $( Renaming the bound integer variable preserves the assertion that ` F `
        satisfies the displayed multiplication identity at integers not
-       divisible by ` P ` .  (Contributed by Zhi Wang, 17-Oct-2026.)  (Revised
-       by Zhi Wang, 19-Oct-2026.) $)
+       divisible by ` P ` .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     fmulralcbv $p |- ( A. z e. ZZ ( -. P || z -> ( F ` ( N x. z ) ) = ( ( F
     ` N ) x. ( F ` z ) ) ) <-> A. v e. ZZ ( -. P || v -> ( F ` ( N x. v ) )
     = ( ( F ` N ) x. ( F ` v ) ) ) ) $=
@@ -883793,7 +883790,7 @@ $)
     $( Express the signed prime Omega function at a nonzero integer as a sum of
        prime multiplicities over its prime divisors.  For ` A e. NN ` , this
        gives the prime-factor count with multiplicity.  (Contributed by Zhi
-       Wang, 17-Oct-2026.)  (Revised by Zhi Wang, 2-Nov-2026.) $)
+       Wang, 17-Oct-2026.) $)
     bomzval $p |- ( A e. ( ZZ \ { 0 } ) -> ( Omega ` A ) = sum_ p e. { q e.
       Prime | q || A } ( p pCnt A ) ) $=
       ( cz cc0 cdif wcel cfv cv cpc co wne cprime crab cq wa syl adantr syl2anc
@@ -883810,8 +883807,7 @@ $)
   ${
     $d A p q $.
     $( The prime Omega function takes nonnegative integer values.  (Contributed
-       by Zhi Wang, 17-Oct-2026.)  (Proof shortened by Zhi Wang,
-       2-Nov-2026.) $)
+       by Zhi Wang, 17-Oct-2026.) $)
     bomnncl $p |- ( A e. NN -> ( Omega ` A ) e. NN0 ) $=
       ( vq vp cn wcel cbom cfv cv cdvds wbr cprime crab cpc csu cn0 cc0 csn syl
       co cz cdif wceq nnznz bomzval prmdvdsfi wa simpr elrabi fsumnn0cl eqeltrd
@@ -883822,7 +883818,7 @@ $)
   ${
     $d P p q $.
     $( The prime Omega function has value one at every prime.  (Contributed by
-       Zhi Wang, 17-Oct-2026.)  (Proof shortened by Zhi Wang, 2-Nov-2026.) $)
+       Zhi Wang, 17-Oct-2026.) $)
     bomprm $p |- ( P e. Prime -> ( Omega ` P ) = 1 ) $=
       ( vp vq cprime wcel cbom cfv cpc co c1 csn cv csu cdvds crab cz syl eqtrd
       wceq syl2anc wbr cn prmnn cc0 cdif nnznz bomzval wb c2 cuz prmuz2 dvdsprm
@@ -884091,8 +884087,8 @@ $)
 
   ${
     $( Liouville's function takes one of two signs on positive integers.
-       Specialization of ~ liounzcl .  (Contributed by Zhi Wang, 17-Oct-2026.)
-       (Proof shortened by Zhi Wang, 27-Oct-2026.) $)
+       Specialization of ~ liounzcl .  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
     liounncl $p |- ( A e. NN -> ( lam ` A ) e. { -u 1 , 1 } ) $=
       ( cn wcel cq cc0 csn cdif cliou cfv c1 cneg cpr nnqnz liounzcl syl ) ABCA
       DEFGCAHIJKJLCAMANO $.
@@ -884149,7 +884145,7 @@ $)
     bomnnss.4 $e |- ( ph -> { q e. Prime | q || A } C_ B ) $.
     $( Evaluate the prime Omega function using a finite set of primes
        containing all prime divisors of the input.  (Contributed by Zhi Wang,
-       17-Oct-2026.)  (Proof shortened by Zhi Wang, 2-Nov-2026.) $)
+       17-Oct-2026.) $)
     bomnnss $p |- ( ph -> ( Omega ` A ) = sum_ p e. B ( p pCnt A ) ) $=
       ( cv cdvds wbr cprime csu wcel wceq cc0 syl adantl adantr cbom cfv cpc co
       crab cn cz csn cdif nnznz bomzval wa elrabi pccld nn0cnd wn eldifn wb wss
@@ -884303,8 +884299,8 @@ $)
   ${
     $d n p q $.
     $( The restriction of the signed prime Omega function to positive integers
-       is the prime multiplicity sum.  (Contributed by Zhi Wang, 27-Oct-2026.)
-       (Proof shortened by Zhi Wang, 2-Nov-2026.) $)
+       is the prime multiplicity sum.  (Contributed by Zhi Wang,
+       27-Oct-2026.) $)
     bomres $p |- ( Omega |` NN ) =
       ( n e. NN |-> sum_ p e. { q e. Prime | q || n } ( p pCnt n ) ) $=
       ( vx cbom cn cres cv cfv cmpt cdvds wbr cprime crab cpc co cdif wceq wcel
@@ -884418,8 +884414,7 @@ $)
 
   ${
     $( At a nonzero rational, Liouville's function is one exactly when it is
-       not minus one.  (Contributed by Zhi Wang, 27-Oct-2026.)  (Proof
-       shortened by Zhi Wang, 2-Nov-2026.) $)
+       not minus one.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
     liounz1 $p |- ( A e. ( QQ \ { 0 } ) ->
       ( ( lam ` A ) = 1 <-> ( lam ` A ) =/= -u 1 ) ) $=
       ( cq cc0 csn cdif wcel cliou cfv c1 wceq cneg liounzneg1 necon2bbid df-ne
@@ -884430,8 +884425,7 @@ $)
     $( On rationals, the value of Liouville's function lies between minus one
        and one, including its value at zero.  This includes the
        positive-integer case ` A e. NN ` .  The value at zero is given by
-       ~ liou0 .  (Contributed by Zhi Wang, 20-Oct-2026.)  (Revised by Zhi
-       Wang, 2-Nov-2026.) $)
+       ~ liou0 .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     lioubounds $p |- ( A e. QQ -> ( -u 1 <_ ( lam ` A ) /\ ( lam ` A ) <_ 1 ) )
       $=
       ( cq wcel c1 cneg cliou cfv cle wbr wa cc0 wceq neg1rr 0re neg1lt0 ltleii
@@ -885186,7 +885180,7 @@ $)
     $d N p q $.
     $( On positive integers, Liouville's function agrees with the M&ouml;bius
        function exactly where the latter is nonzero.  (Contributed by Zhi Wang,
-       27-Oct-2026.)  (Proof shortened by Zhi Wang, 2-Nov-2026.) $)
+       27-Oct-2026.) $)
     liousqf $p |- ( N e. NN ->
       ( ( lam ` N ) = ( mmu ` N ) <-> ( mmu ` N ) =/= 0 ) ) $=
       ( vq vp cn wcel cfv wceq cc0 wne wa simpr c1 syl adantr ex cdvds wbr cexp
@@ -887694,8 +887688,7 @@ $)
     oddextstripcertd.9 $e |- ( ph -> -. 3 || Q ) $.
     $( Inside the narrow strip, an adjacent odd multiple and a halved remainder
        supply the bounded signed congruence witnesses of ~ oddextcertd .
-       (Contributed by Zhi Wang, 20-Oct-2026.)  (Proof shortened by Zhi Wang,
-       2-Nov-2026.) $)
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
     oddextstripcertd $p |- ( ph -> E. k e. NN E. d e. ZZ ( ( k < Q /\ ( abs `
       d ) e. NN /\ ( abs ` d ) < N ) /\ ( ( ( ( 2 x. k ) x. N ) mod P ) = ( d
       mod P ) \/ ( ( ( 3 x. k ) x. N ) mod P ) = ( ( 2 x. d ) mod P ) ) ) )
@@ -888388,8 +888381,7 @@ $)
     liounopairposd.5 $e |- ( ph -> ( lam ` A ) = 1 ) $.
     $( If ` N ` has no positive-positive pair, a positive-integer summand with
        Liouville value one has a complement with value minus one.  (Contributed
-       by Zhi Wang, 20-Oct-2026.)  (Proof shortened by Zhi Wang,
-       2-Nov-2026.) $)
+       by Zhi Wang, 20-Oct-2026.) $)
     liounopairposd $p |- ( ph -> ( lam ` B ) = -u 1 ) $=
       ( cliou cfv c1 cneg wceq wo cpr wcel syl cn liounncl elpri liounopairsgnd
       wn wi orel2 mpd ) ACLMZNOZPZUINPZQZUKAUIUJNRSZUMACUASUNHCUBTUIUJNUCTAULUE
@@ -888456,8 +888448,7 @@ $)
     liougb4posd.6 $e |- ( ph -> ( lam ` A ) = 1 ) $.
     $( If four times ` M ` has no negative-negative pair, a positive-integer
        summand of twice ` M ` with Liouville value one has a complement with
-       value minus one.  (Contributed by Zhi Wang, 17-Oct-2026.)  (Proof
-       shortened by Zhi Wang, 2-Nov-2026.) $)
+       value minus one.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4posd $p |- ( ph -> ( lam ` B ) = -u 1 ) $=
       ( cliou cfv c1 wceq c2 cmul co cn cneg wne wcel 2nn oveq2i neg1cn mullidi
       a1i liou2 eqtri cv caddc w3a wrex c4 nncnd mul32d 2t2e4 oveq1i lioupaireq
@@ -888830,8 +888821,7 @@ $)
     liougb4antisumd.5 $e |- ( ph -> -. 3 || M ) $.
     $( If four times ` M ` has no negative-negative pair and three does not
        divide ` M ` , two positive integers summing to ` M ` have opposite
-       Liouville values.  (Contributed by Zhi Wang, 17-Oct-2026.)  (Proof
-       shortened by Zhi Wang, 2-Nov-2026.) $)
+       Liouville values.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4antisumd $p |- ( ph -> ( lam ` B ) = -u ( lam ` A ) ) $=
       ( cliou cfv c1 cneg wceq cn adantr wcel syl wa caddc nnaddcld eqeltrd w3a
       co c4 cmul cv wn simpr liougb4negd negeqd ax-1cn negnegi eqtrdi eqtr4d ex
@@ -889731,7 +889721,7 @@ $)
     $( Every positive multiple of four has a negative-negative pair for
        Liouville's function, deduction version.  Split the positive parameter
        according to its two possible function values.  (Contributed by Zhi
-       Wang, 17-Oct-2026.)  (Proof shortened by Zhi Wang, 2-Nov-2026.) $)
+       Wang, 17-Oct-2026.) $)
     liougb4nnd $p |- ( ph -> E. a e. NN E. b e. NN ( ( 4 x. A ) = ( a + b
     ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
       ( cliou cfv c1 wceq c4 co cv cn wrex wa wcel adantr simpr ex syl cmul w3a
