@@ -59144,7 +59144,7 @@ $)
     SVOVPBCDEUIPVHVTIVCWAIVEAVBCDEQTRUJUKVAVDVEVCBCBVBADSCVBADSUMUN $.
 
   ${
-    $d x y z w $.  $d z w ph $.
+    $d x z w $.  $d y z w $.  $d z w ph $.
     $( The converse of a class abstraction of ordered pairs.  (Contributed by
        NM, 11-Dec-2003.)  (Proof shortened by Andrew Salmon, 27-Aug-2011.)
        Avoid ~ ax-10 , ~ ax-12 .  (Revised by SN, 7-Jun-2025.) $)
@@ -73780,7 +73780,7 @@ $)
   $}
 
   ${
-    $d x y z $.
+    $d x z $.  $d y z $.
     $( The domain of an operation class abstraction is a relation.
        (Contributed by NM, 17-Mar-1995.) $)
     reldmoprab $p |- Rel dom { <. <. x , y >. , z >. | ph } $=
@@ -74082,6 +74082,17 @@ $)
   $}
 
   ${
+    $d x z $.  $d y z $.  $d A z $.  $d B z $.  $d C z $.
+    reldmmpo.1 $e |- F = ( x e. A , y e. B |-> C ) $.
+    $( The domain of an operation defined by maps-to notation is a relation.
+       (Contributed by Stefan O'Rear, 27-Nov-2014.) $)
+    reldmmpo $p |- Rel dom F $=
+      ( vz cdm wrel cv wcel wa wceq coprab reldmoprab cmpo df-mpo eqtri dmeqi
+      releqi mpbir ) FIZJAKCLBKDLMHKENMZABHOZIZJUDABHPUCUFFUEFABCDEQUEGABHCDERS
+      TUAUB $.
+  $}
+
+  ${
     $d w x $.  $d w y z A $.  $d w z B $.  $d w z C $.  $d w z F $.  $d z ps $.
     $d x y z D $.  $d x y ph $.
     rngop.1 $e |- F = ( x e. A , y e. B |-> C ) $.
@@ -74098,13 +74109,6 @@ $)
       a1i rexlimivv syl ex biimtrid ssrdv ) EFJZBDKACKZIGLZFIMZUKJULENZBDOACOZU
       JULFJZUNIUKABICDEGHPQUJUNUOUJUNRUIUMRZBDOACOUOUIUMABCDSUPUOABCDUPUOTAMCJB
       MDJRUMUOUIULEFUAUBUCUDUEUFUGUH $.
-
-    $( The domain of an operation defined by maps-to notation is a relation.
-       (Contributed by Stefan O'Rear, 27-Nov-2014.) $)
-    reldmmpo $p |- Rel dom F $=
-      ( vz cdm wrel cv wcel wa wceq coprab reldmoprab cmpo df-mpo eqtri dmeqi
-      releqi mpbir ) FIZJAKCLBKDLMHKENMZABHOZIZJUDABHPUCUFFUEFABCDEQUEGABHCDERS
-      TUAUB $.
 
     $( Membership in the range of an operation class abstraction.  (Contributed
        by NM, 27-Aug-2007.)  (Revised by Mario Carneiro, 31-Aug-2015.) $)
@@ -80981,7 +80985,7 @@ $)
   $}
 
   ${
-    $d w x y z $.  $d y B $.  $d x y A $.
+    $d w x y $.  $d x y z $.  $d y B $.  $d x y A $.
     relmpoopab.1 $e |- F = ( x e. A , y e. B |-> { <. z , w >. | ph } ) $.
     $( Any function to sets of ordered pairs produces a relation on function
        value unconditionally.  (Contributed by Mario Carneiro, 9-Feb-2015.) $)
@@ -84150,7 +84154,7 @@ $)
   $}
 
   ${
-    $d w x y z $.
+    $d w x y $.  $d x y z $.
     brovmpoex.1 $e |- O = ( x e. _V , y e. _V |-> { <. z , w >. | ph } ) $.
     $( A binary relation of the value of an operation given by the maps-to
        notation.  (Contributed by Alexander van der Vekens, 21-Oct-2017.) $)
@@ -652375,15 +652379,12 @@ $)
       DGZCAGZBCEHZIZBAEJGZTUBKUCSBFLZEHZIFAMFCAUEUABUDCENOFABEDPQR $.
   $}
 
-  ${
-    $d x y $.
-    $( Lemma for ~ prtex and ~ prter3 .  (Contributed by Rodolfo Medina,
-       13-Oct-2010.) $)
-    prtlem12 $p |- ( .~ = { <. x , y >. | E. u e. A ( x e. u /\ y e. u ) }
-                        -> Rel .~ ) $=
-      ( wel wa wrex copab wceq wrel relopab releq mpbiri ) EACFBCFGCDHZABIZJEKP
-      KOABLEPMN $.
-  $}
+  $( Lemma for ~ prtex and ~ prter3 .  (Contributed by Rodolfo Medina,
+     13-Oct-2010.) $)
+  prtlem12 $p |- ( .~ = { <. x , y >. | E. u e. A ( x e. u /\ y e. u ) }
+                      -> Rel .~ ) $=
+    ( wel wa wrex copab wceq wrel relopab releq mpbiri ) EACFBCFGCDHZABIZJEKPKO
+    ABLEPMN $.
 
   ${
     $d u v x y A $.  $d v w x y $.  $d v x y z $.
@@ -754985,7 +754986,6 @@ $)
   $}
 
   ${
-    $d E x y $.  $d F y $.
     brovmptimex.mpt $e |- F = ( x e. E , y e. G |-> H ) $.
     brovmptimex.br $e |- ( ph -> A R B ) $.
     brovmptimex.ov $e |- ( ph -> R = ( C F D ) ) $.
