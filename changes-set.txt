@@ -93,11 +93,6 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
-24-Oct-26 fineqvr1ombregs fineqvhfbregs
-24-Oct-26 r1omhfbregs eqhfregs
-24-Oct-26 trssfir1omregs trssfihfregs
-24-Oct-26 r1omhfb     eqhf
-24-Oct-26 trssfir1om  trssfihf
 22-Oct-26 fidmfisupp  ---         deleted; duplicate of fdmfifsupp
 21-Oct-26 iotain      [same]      Moved from ATS's mathbox to main set.mm
 21-Oct-26 nvelim      [same]      Moved from AV's mathbox to main set.mm
