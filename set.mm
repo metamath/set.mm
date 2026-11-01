@@ -20686,17 +20686,6 @@ $)
                                           ( E. x E. y ph /\ E. z E. w ps ) ) $=
       ( wa wex excom exbii eeanv 2exbii nfv nfex eean 3bitri ) ABGFHZEHDHZCHQDH
       ZEHZCHADHZBFHZGZEHCHUACHUBEHGRTCQDEIJSUCCEABDFKLUAUBCEAEDAEMNBCFBCMNOP $.
-
-    ${
-      $d y z $.  $d w x $.
-      $( Obsolete version of ~ ee4anv as of 26-Oct-2025.  (Contributed by NM,
-         31-Jul-1995.)  (Proof modification is discouraged.)
-         (New usage is discouraged.) $)
-      ee4anvOLD $p |- ( E. x E. y E. z E. w ( ph /\ ps ) <->
-                                          ( E. x E. y ph /\ E. z E. w ps ) ) $=
-        ( wa wex excom exbii eeanv 2exbii 3bitri ) ABGFHZEHDHZCHNDHZEHZCHADHZBF
-        HZGZEHCHRCHSEHGOQCNDEIJPTCEABDFKLRSCEKM $.
-    $}
   $}
 
   ${
