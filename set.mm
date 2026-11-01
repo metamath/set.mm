@@ -882415,12 +882415,10 @@ $)
        second sums the prime valuations of the constant coefficient directly.
        These expressions describe the same extension, since the norm is
        ` ( ( -u 1 ^ D ) x. C ) ` and its sign does not affect prime valuations;
-       see ~ pcneg .
-
-       Both expressions use the algebraic degree ~ df-dgraa and minimal
-       polynomial ~ df-mpaa from Stefan O'Rear's mathbox.  They are not adopted
-       here: mathbox-independent foundations and proofs of closure, rational
-       agreement, and complete additivity remain to be supplied.  The
+       see ~ pcneg .  Both expressions use the algebraic degree ~ df-dgraa and
+       minimal polynomial ~ df-mpaa from Stefan O'Rear's mathbox.  They are not
+       adopted here: mathbox-independent foundations and proofs of closure,
+       rational agreement, and complete additivity remain to be supplied.  The
        mathematical extension is unchanged under multiplication by an algebraic
        unit, an algebraic integer whose inverse is also an algebraic integer,
        and therefore defines a function on nonzero algebraic numbers modulo
