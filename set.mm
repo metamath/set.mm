@@ -595424,7 +595424,7 @@ $)
     mirimanoff.1 $e |- M = { x | -. E. f ( f Fn _om /\ ( f ` (/) ) = x /\ A. n
                     e. _om ( f ` suc n ) e. ( f ` n ) ) } $.
     $( Mirimanoff's paradox:  The class of grounded sets is not a set.  Here, a
-       set ` x ` is grounded if there is no infinite membership-descending
+       set ` x ` is _grounded_ if there is no infinite membership-descending
        sequence of sets beginning with ` x ` .  See Paragraph 1 of [Quine]
        p. 37 .  (Contributed by Adrian Ducourtial, 11-Oct-2026.) $)
     mirimanoff $p |- M e/ _V $=
@@ -595432,6 +595432,64 @@ $)
       rabab mirimanoffr ) ABCDFDBGZHIJUDKAGLCGZMUDKUEUDKNCHOPBQRZASUFAFTEUFAUBU
       AUC $.
     $( $j usage 'mirimanoff' avoids 'ax-reg'; $)
+  $}
+
+  ${
+    $d V x z $.  $d M v x y z $.  $d M v w y z $.
+    mirimanofffr.1 $e |- M = { x e. V | A. y ( x e. y -> E. z e. y ( z i^i y )
+                      = (/) ) } $.
+    $( Relative version of ~ mirimanofff (which corresponds to the case
+       ` V = _V ` ).  (Contributed by Adrian Ducourtial, 28-Oct-2026.) $)
+    mirimanofffr $p |- M e/ V $=
+      ( vv vw wcel cv wn wa wex wrex wceq wi wal sylib exbii anbi2i pm3.24 mtbi
+      ancom nex wel wral w3a cin c0 pm2.24 idd csn cvv snexg snidg eleq1 imbi1d
+      wo albidv elrab2 simprbi eleq2 ineq2 eqeq1d rexeqbi1dv imbi12d spcgv syl5
+      com23 sylc elsn2g ineq1 biimtrdi imp disjr bitrdi notbid rspcv syl adantr
+      wb sylbid rexlimdva syld pm2.01d notbii ianor mpjaod exanali sylibr alnex
+      df-rex bitr4i albii 3bitr2i df-ral xchnxbir pm4.63 ralbii eleq2w2 rexbidv
+      exnal rspcva anim2i anabss7 eximi eleq1w cbvrexvw r19.41v biancomi 3anass
+      imor 3ancomb 2exbii df-3an 19.41v pm4.61 3bitr3i olc elequ1 sylbir anim1i
+      excom sylbi mto nelir ) DEDEIZGJZDIZKZYILZGMZYKGYIYJLYKYIUAYIYJUCUBUDYGGB
+      UEZHJZCJZIZHBJZNZCYQUFZYIUGZBMZGMZYLYGYMYIYSUGZBMGMZUUBYGUUCGMZBMZUUDYGYI
+      YSLZGYQNZBMZUUFYGYSYIGYQNZLZBMZUUIYGYSYNDIZHYQNZLZBMZUULYGDYQIZYSLZBMZUUP
+      YGUUQYOYQUHZUIOZCYQNZKZLZBMZUUSYGUUQUVBPZBQZKZUVEYGYGKZUVHUVHYGUVHUJYGUVH
+      UKYGYGUVGLZKZUVIUVHURYGDDIZKZUVKYGUVLYGUVLYODULZUHZUIOZCUVNNZUVMYGUVNUMIZ
+      DUVNIZUVLUVQPDEUNDEUOZUVRUVLUVSUVQUVLUVGUVRUVSUVQPZUVLYGUVGAJZYQIZUVBPZBQ
+      ZUVGADEDUWBDOZUWDUVFBUWFUWCUUQUVBUWBDYQUPUQUSFUTZVAUVFUWABUVNUMYQUVNOZUUQ
+      UVSUVBUVQYQUVNDVBUVAUVPCYQUVNUWHUUTUVOUIYQUVNYOVCVDVEVFVGVHVIVJYGUVPUVMCU
+      VNYGYOUVNIZLZUVPUUMKZHUVNUFZUVMUWJUVPDUVNUHZUIOZUWLYGUWIUVPUWNWAZYGUWIYOD
+      OZUWOYODEVKUWPUVOUWMUIYODUVNVLVDVMVNHDUVNVOVPYGUWLUVMPZUWIYGUVSUWQUVTUWKU
+      VMHDUVNYNDOUUMUVLYNDDUPVQVRVSVTWBWCWDWEUVLUVJUWGWFRYGUVGWGRWHUUQUVBBWIWJU
+      VDUURBUVCYSUUQUVCYOYQIZUVAKZPZCQZUWSCYQUFZYSUVCUWRUVALZCMZKZUXCKZCQZUXAUV
+      BUXDUVACYQWLWFZUXCCWKZUXFUWTCUXFUWRKUWSURZUWTUWRUVAWGZUWRUWSXLZWMWNWOUWSC
+      YQWPZUWSYRCYQUWSYNYQIZYPLZHMZYRUWSUXNYPKZPZHQZKZUXRKZHMUXPUXQHYQUFZUXTUVA
+      UYBUXSUXQHYQWPWFHYOYQVOWQUXRHXBUYAUXOHUXNYPWRSWOYPHYQWLWMWSZWOTSRUURUUOBU
+      UQYSUUOUURUUNYSYRUUNCDYQUWPYPUUMHYQHYODWTXAXCXDXEXFVSUUOUUKBUUNUUJYSUUMYI
+      HGYQHGDXGXHTSRUUHUUKBUUHYSUUJYIYSGYQXIXJSWJUUHUUEBUUHYMUUGLZGMUUEUUGGYQWL
+      UUCUYDGYMYIYSXKSWMSRUUCBGYCRUUCYTGBYMYIYSXMXNRUUAYKGUUAYMYSLZYILZBMZYKYTU
+      YFBYMYSYIXOSUYGUYEBMZYILYKUYEYIBXPUYHYJYIUYHYMUVBPZBQZKZYJUYKYMUXALZBMZYM
+      UXBLZBMUYHUYKYMUXJCQZLZBMZUYMUYKYMUXELZBMZYMUXGLZBMUYQUYIKZBMYMUVCLZBMUYK
+      UYSVUAVUBBYMUVBXQSUYIBXBVUBUYRBUVCUXEYMUXHTSXRUYTUYRBUXGUXEYMUXITSUYTUYPB
+      UXGUYOYMUXFUXJCUXKWNTSWOUYLUYPBUXAUYOYMUWTUXJCUXLWNTSWMUYNUYLBUXBUXAYMUXM
+      TSUYNUYEBUXBYSYMUYCTSWOUYKYHEIZKZUYKURZYJUYKVUDXSVUCUYJLVUEYIVUCUYJWGUWEU
+      YJAYHEDUWBYHOZUWDUYIBVUFUWCYMUVBAGBXTUQUSFUTWQWJYAYBYDYDXFVSYEYF $.
+    $( $j usage 'mirimanofffr' avoids 'ax-10' 'ax-rep' 'ax-nul' 'ax-un'
+       'ax-reg' 'ax-inf2' ; $)
+  $}
+
+  ${
+    $d M x y z $.
+    mirimanofff.1 $e |- M = { x | A. y ( x e. y -> E. z e. y ( z i^i y ) = (/)
+                     ) } $.
+    $( Mirimanoff's paradox ~ mirimanoff for founded sets.  A set ` x ` is
+       _founded_ if every set containing ` x ` has a minimal element under
+       membership.  Compare with ~ zfreg the defining condition of ` M ` in the
+       hypothesis.  (Contributed by Adrian Ducourtial, 28-Oct-2026.) $)
+    mirimanofff $p |- M e/ _V $=
+      ( cvv wel cv cin c0 wceq wrex wi wal cab crab rabab eqtr4i mirimanofffr )
+      ABCDFDABGCHBHZIJKCTLMBNZAOUAAFPEUAAQRS $.
+    $( $j usage 'mirimanofff' avoids 'ax-10' 'ax-rep' 'ax-nul' 'ax-un' 'ax-reg'
+       'ax-inf2' ; $)
   $}
 
   ${
