@@ -93,7 +93,6 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
-26-Oct-26 relopabiv   relopabiALT obsolete; use relopabi instead
 26-Oct-26 relopabv    ---         obsolete; use relopab instead
 24-Oct-26 imasgim     [same]      Moved from SO's mathbox to main set.mm
 24-Oct-26 rnmposs     [same]      Moved from TA's mathbox to main set.mm

@@ -56091,11 +56091,11 @@ $)
 
   ${
     $d x y $.
-    relopabiALT.1 $e |- A = { <. x , y >. | ph } $.
+    relopabiv.1 $e |- A = { <. x , y >. | ph } $.
     $( Alternate proof of ~ relopabi , which is shorter but requires an extra
        DV condition.  (Contributed by BJ, 22-Jul-2023.)
        (Proof modification is discouraged.)  (New usage is discouraged.) $)
-    relopabiALT $p |- Rel A $=
+    relopabiv $p |- Rel A $=
       ( wrel cvv cxp wss copab cv wcel wa vex pm3.2i a1i ssopab2i df-xp 3sstr4i
       df-rel mpbir ) DFDGGHZIABCJBKGLZCKGLZMZBCJDUBAUEBCUEAUCUDBNCNOPQEBCGGRSDT
       UA $.
@@ -56107,7 +56107,7 @@ $)
        8-Sep-2024.)  (Proof modification is discouraged.)
        (New usage is discouraged.) $)
     relopabv $p |- Rel { <. x , y >. | ph } $=
-      ( copab eqid relopabiALT ) ABCABCDZGEF $.
+      ( copab eqid relopabiv ) ABCABCDZGEF $.
   $}
 
   ${
