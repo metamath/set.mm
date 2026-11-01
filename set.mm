@@ -496749,6 +496749,20 @@ htmldef "veronese" as "veronese";
   althtmldef "veronese" as "veronese";
   latexdef "veronese" as "\mathrm{veronese}";
 /* End of Jiamin Zhao's mathbox */
+
+/* Mathbox of Wolf Lammen */
+/*
+htmldef "wl-setvarx" as " nosubst-x";
+  althtmldef "wl-setvarx" as
+      ' <SPAN CLASS=typecode STYLE="color:gray">nosubst-x</SPAN>';
+  latexdef "wl-setvarx" as "\mathrm{nosubst-x}";
+htmldef "wl_xx" as " @x ";
+  althtmldef "wl_xx" as
+      ' <SPAN CLASS=setvar STYLE="color:red">&#x1D465;@</SPAN>';
+  latexdef "wl_xx" as "*x";
+*/
+/* End of Wolf Lammen's mathbox */
+
 /* End of typesetting definition section */
 $)
 $( End $[ set-typeset.mm $] $)
@@ -624037,897 +624051,6 @@ $(
 $)
 
   ${
-    $d x A $.  $d x B $.
-    $( <HTML><br><b>Disclaimer:</b></HTML> The material presented here is just
-       my (WL's) personal perception.  I am not an expert in this field, so
-       some or all of the text here can be misleading, or outright wrong.  This
-       and the following texts should be read as explorations rather than as
-       definite statements, open to doubt, alternatives, and reinterpretation.
-
-       <HTML><h3>Preface</h3></HTML>
-
-       Three specific theorems are under focus in the following pages:
-       ~ df-cleq , ~ df-clel , and ~ df-clab .  Only technical concepts
-       necessary to explain these will be introduced, along with a selection of
-       supporting theorems.  The three theorems are central to a bootstrapping
-       process that introduces objects into set.mm.  We will first examine how
-       Metamath in general creates basic new ideas from scratch, and then look
-       at how these methods are applied specifically to classes, capable of
-       representing objects in set theory.
-
-       In Zermelo-Fraenkel set theory with the axiom of choice (ZFC), these
-       three theorems are (more or less) independent of each other, which means
-       they can be introduced in different orders.  From my own experience,
-       another order has pedagogical advantages: it helps grasping not only the
-       overall concept better, but also the intricate details that I first
-       found difficult to comprehend.  Reordering theorems, though
-       syntactically possible, sometimes may cause doubts when intermediate
-       results are not strictly tied to ZFC only.
-
-       The purpose of set.mm is to provide a formal framework capable of
-       proving the results of ZFC, provided that formulas are properly
-       interpreted.  In fact, there is freedom of interpretation.  The database
-       set.mm develops from the very beginning, where nothing is assumed or
-       fixed, and gradually builts up to the full abstraction of ZFC. Along the
-       way, results are only preliminary, and one may at any point branch off
-       and pursue a different path toward another variant of set theory.  This
-       openess is already visible in axiom ~ ax-mp , where the symbol ` -> `
-       can be understood as as implication, bi-conditional, or conjunction.
-       The notation and symbol shapes are suggestive, but their interpretation
-       is not mandatory.  The point here is that Metamath, as a purely
-       syntactic system, can sometimes allow freedoms, unavailable to
-       semantically fixed systems, which presuppose only a single ultimate
-       goal.
-
-       (Contributed by Wolf Lammen, 28-Sep-2025.) $)
-    wl-cleq-0 $p |- ( A = B <-> A. x ( x e. A <-> x e. B ) ) $=
-      ( dfcleq ) ABCD $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.
-    $( <HTML><br><b>Disclaimer:</b></HTML> The material presented here is just
-       my (WL's) personal perception.  I am not an expert in this field, so
-       some or all of the text here can be misleading, or outright wrong.  This
-       text should be read as an exploration rather than as definite
-       statements, open to doubt, alternatives, and reinterpretation.
-
-       <HTML><h3>Grammars and Parsable contents</h3></HTML>
-
-       A Metamath program is a text-based tool.  Its input consists of
-       primarily human-readable and editable text stored in *.mm files.  For
-       automated processing, these files follow a strict structure.  This
-       enables automated analysis of their contents, verification of proofs,
-       proof assistance, and the generation of output files - for example, the
-       HTML page of this dummy theorem.  A set.mm file contains numerous such
-       structured instructions serving these purposes.
-
-       This page provides a brief explanation of the general concepts behind
-       structured text, as exemplified by set.mm.  The study of structured text
-       originated in linguistics, and later computer science formalized it
-       further for text like data and program code.  The rules describing such
-       structures are collectively known as _grammar_.  Metamath also
-       introduces a grammar to support automation and establish a high degree
-       of confidence in its correctness.  It could have been described using
-       the terminology of earlier scientific disciplines, but instead it uses
-       its own language.
-
-       When a text exhibits a sufficiently regular structure, its form can be
-       described by a set of syntax rules, or grammar.  Such rules consist of
-       terminal symbols (fixed, literal elements) and non-terminal symbols,
-       which can recursively be expanded using the grammar's _rewrite_ rules.
-       A program component that applies a grammar to text is called a _parser_.
-       The parser decomposes the text into smaller parts, called _syntactic
-       units_, while often maintaining contextual information.  These units may
-       then be handed over to subsequent components for further processing,
-       such as populating a database or generating output.
-
-       In these pages, we restrict our attention to strictly formatted material
-       consisting of formulas with logical and mathematical content.  These
-       syntactic units are embedded in higher-level structures such as
-       chapters, together with commands that, for example, control the HTML
-       output.
-
-       Conceptually, the parsing process can be viewed as consisting of two
-       stages.  The top-level stage applies a simple built-in grammar to
-       identify its structural units.  Each unit is a text region marked on
-       both sides with predefined tokens (in Metamath: keywords), beginning
-       with the escape character "$".  Text regions containing logical or
-       mathematical formulas are then passed to a second-stage parser, which
-       applies a different grammar.  Unlike the first, this grammar is not
-       built-in but is dynamically constructed.
-
-       In what follows, we will ignore the first stage of parsing, since its
-       role is only to extract the relevant material embedded within text
-       primarily intended for human readers.
-
-       (Contributed by Wolf Lammen, 18-Aug-2025.) $)
-    wl-cleq-1 $p |- ( A = B <-> A. x ( x e. A <-> x e. B ) ) $=
-      ( dfcleq ) ABCD $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.
-    $( <HTML><br><b>Disclaimer:</b></HTML> The material presented here is just
-       my (WL's) personal perception.  I am not an expert in this field, so
-       some or all of the text here can be misleading, or outright wrong.  This
-       text should be read as an exploration rather than as definite
-       statements, open to doubt, alternatives, and reinterpretation.
-
-       <HTML><h3>Vocabulary</h3></HTML>
-
-       <HTML><b>Sentence:<br></b></HTML>
-       A _sentence_ or _closed form theorem_ is a theorem without any
-       hypothesis, as opposed to the inference form.  Although distinct
-       variable conditions can be viewed as a particular kind of hypothesis, in
-       Metamath they are treated as side conditions, and do not affect formal
-       structure of the theorem.  Expressions such as ` F/ x ph ` or the
-       distinctor ` A. x ( x = y ) ` play a similar role, but appear as
-       separate hypotheses, or they can simply serve as the first antecedent
-       in a sentence.
-
-       <HTML><b>Bound / Free / Dependent:<br></b></HTML>
-       In formal theories, variables are used to represent
-       objects,  allowing for general statements about relations rather than
-       individual cases.  In Metamath, for example, mathematical objects are
-       represented by variables of type "setvar".
-
-       An occurrence of such a variable in any formula ` ph ` is said to be
-       bound.  if ` ph ` quantifies that variable, as in ` A. x ph ` .
-       Variables not bound by a quantifier are called free.  Variables of type
-       "class" are always free, since quantifiers do not apply to them.
-
-       A free variable often indicates a parameter dependency; however, the
-       formula ` x = x ` shows that this is not necessarily the case.  In
-       Metamath, a variable expressing a real dependency is also called
-       "effectively free" (see ~ nfequid , with thanks to SN for pointing out
-       this theorem).
-
-       <HTML><b>Instance:<br></b></HTML>
-       A formula of type "class" that is not a mere variable is called an
-       _instance_ of any "class" type variable.  An instance may represent a
-       single object, or it may still describe a family of objects, when
-       variables expressing dependencies occur within that formula.
-
-       <HTML><b>Attribute:<br></b></HTML>
-       Objects possess properties, some of which may uniquely identify them.
-       In logic, properties are also known as attributes.  They are described
-       by formulas depending on a variable, which can then be substituted with
-       a specific object.  If the resulting statement is true, that particular
-       attribute is said to apply to the object.
-
-       Multiple objects forming an instance may share common attributes.  A
-       variable inherits the attributes of the instance it represents.
-
-       (Contributed by Wolf Lammen, 12-Oct-2025.) $)
-    wl-cleq-2 $p |- ( A = B <-> A. x ( x e. A <-> x e. B ) ) $=
-      ( dfcleq ) ABCD $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.
-    $( <HTML><br><b>Disclaimer:</b></HTML> The material presented here is just
-       my (WL's) personal perception.  I am not an expert in this field, so
-       some or all of the text here can be misleading, or outright wrong.  This
-       text should be read as an exploration rather than as definite
-       statements, open to doubt, alternatives, and reinterpretation.
-
-       <HTML><h3>Introducing a New Concept:  Well-formed formulas</h3></HTML>
-
-       The parser that processes strictly formatted Metamath text with logical
-       or mathematical content constructs its grammar dynamically.  New syntax
-       rules are added on the fly whenever they are needed to parse upcoming
-       formulas.  Only a minimal set of built-in rules - those required to
-       introduce new grammar rules - is predefined; everything else must be
-       supplied by set.mm itself as syntactic units identified by the
-       first-stage parser.  Text regions beginning with the tokens "$c" or
-       "$v", for example, are part of such grammar extensions.
-
-       We will outline the extension process used when introducing an entirely
-       new concept that cannot build on any prior material.  As a simple
-       example, we will trace here the steps involved in defining formulas, the
-       expressions used for hypotheses and statements - a concept first-order
-       logic needs from the very beginning to articulate its ideas.
-
-       1. <HTML><b>Introduce a type code</b></HTML>
-
-       To mark new formulas and variables later used in theorems, the constant
-       "wff" is reserved.  It abbreviates "well-formed formula", a term that
-       already suggests that such formulas must be syntactically valid and
-       therefore parseable to enable automatic processing.
-
-       2. <HTML><b>Introduce variables</b></HTML>
-
-       Variables with unique names such as ` ph ` , ` ps ` , ..., intended to
-       later represent formulas of type "wff".  In grammar terms, they
-       correspond to non-terminal symbols.  These variables are marked with the
-       type "wff".  Variables are fundamental in Metamath, since they enable
-       substitution during proofs: variables of a particular type can be
-       consistently replaced by any formula of the same type.  In grammar
-       terms, this corresponds to applying a rewrite rule.  At this step,
-       however, no rewrite rule exists; we can only substitute one "wff"
-       variable for another.  This suffices only for very elementary theorems
-       such as ~ idi .
-
-       In the formal language of Metamath these variables are not interpreted
-       with concrete statements, but serve purely as placeholders for
-       substitution.
-
-       3. <HTML><b>Add primitive formulas</b></HTML>
-
-       Rewrite rules describing primitive formulas of type "wff" are then added
-       to the grammar.  Typically, they describe an operator (a constant in the
-       grammar) applied to one or more variables, possibly of different types
-       (e.g. ` A. x ph ` , although at this stage only "wff" is available).
-       Since variables are non-terminal symbols, more complex formulas can be
-       constructed from primitive ones, by consistently replacing variables
-       with any wff formula - whether involving the same operator or different
-       ones introduced by other rewrite rules.  Whenever such a replacement
-       introduces variables again, they may in turn recursively be replaced.
-
-       If an operator takes two variables of type wff, it is called a binary
-       connective in logic.  The first such operator encountered is
-       ` ( ph -> ps ) ` .  Based on its token, its intended meaning is material
-       implication, though this interpretation is not fixed from the outset.
-
-       4. <HTML><b>Specify the properties of primitive formulas</b></HTML>
-
-       Once the biconditional connective is available for formulas, new
-       connectives can be defined by specifying replacement formulas that rely
-       solely on previously introduced material.  Such definitions makes it
-       possible to eliminate the definiens.
-
-       At the very beginning, however, this is not possible for well-formed
-       formulas, since little or no prior material exists.  Instead, the
-       semantics of an expression such as ` ( ph -> ps ) ` are progressively
-       constrained by axioms - that is, theorems without proof.  The first such
-       axiom for material implication is ~ ax-mp , with additional axioms
-       following later.
-
-       (Contributed by Wolf Lammen, 21-Aug-2025.) $)
-    wl-cleq-3 $p |- ( A = B <-> A. x ( x e. A <-> x e. B ) ) $=
-      ( dfcleq ) ABCD $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.
-    $( <HTML><br><b>Disclaimer:</b></HTML> The material presented here is just
-       my (WL's) personal perception.  I am not an expert in this field, so
-       some or all of the text here can be misleading, or outright wrong.  This
-       text should be read as an exploration rather than as definite
-       statements, open to doubt, alternatives, and reinterpretation.
-
-       <HTML><h3>Introducing a New Concept:  Classes</h3></HTML>
-
-       In ~ wl-cleq-3 we examined how the basic notion of a well-formed formula
-       is introduced in set.mm.  A similar process is used to add the notion of
-       a class to Metamath.  This process is somewhat more involved, since
-       two parallel variants are established: sets and the broader notion of
-       classes, which include sets (see 3a. below).
-
-       In Zermelo-Fraenkel set theory (ZF) classes will serve as a convenient
-       shorthand that simplifies formulas and proofs.  Ultimately, only sets
-       - a part of all classes - are intended to exist as actual objects.
-
-       In the First Order Logic (FOL) portion of set.mm objects themselves are
-       not used - only variables representing them.  It is not even assumed
-       that objects must be sets at all.  In principle, the universe of
-       discourse could consist of anything - vegetables, text strings, and
-       so on.  For this reason, the type code "setvar", used for object
-       variables, is somewhat of a misnomer.  Its final meaning - and the name
-       that goes with it - becomes justified only in later developments.
-
-       We will now revisit the four basic steps presented in ~ wl-cleq-3 ,
-       this time focusing on object variables and paying special attention to
-       the additional complexities that arise from extending sets to classes.
-
-       1. <HTML><b>Introduce type codes</b></HTML>
-
-       1a.  Reserve a type code for classes, specifically the grammar constant
-       "class".  Initially, this type code applies to class variables and will
-       later, beyond these four steps, also be assigned to formulas that
-       define specific classes, i.e. instances.
-
-       1b.  Reserve a type code for set variables, represented by the grammar
-       constant "setvar".  The name itself indicates that this type code will
-       never be assigned to a formula describing a specific set, but only to
-       variables containing such objects.
-
-       2. <HTML><b>Introduce variables</b></HTML>
-
-       2a.  Use variables with unique names such as ` A ` , ` B ` , ..., to
-       represent classes.  These class variables are assigned the type code
-       "class", ensuring that only formulas of type "class" can be substituted
-       for them during proofs.
-
-       2b.  Use variables with unique names such as ` a ` , ` b `  , ..., to
-       represent sets.  These variables are assigned the type code "setvar".
-       During a substitution in a proof, a variable of type "setvar" may only
-       be replaced with another variable of this type.  No specific formula,
-       or object, of this type exists.
-
-       3. <HTML><b>Add primitive formulas</b></HTML>
-
-       3a.  Add the rewrite rule ~ cv to set.mm, allowing variables of type
-       "setvar" to also aquire type "class".  In this way, a variable of
-       "setvar" type can serve as a substitute for a class variable.
-
-       3b.  Add the rewrite rules ~ wcel and ~ wceq to set.mm, making the
-       formulas ` A e. B ` and ` A = B ` valid well-formed formulas (wff).
-       Since variables of type "setvar" can be substituted for class variables,
-       ` x e. y ` and ` x = y ` are also provably valid wff.
-
-       In the FOL part of set.mm, only these specific formulas play a role and
-       are therefore treated as primitive there.  The underlying universe may
-       not contain sets, and the notion of a class is not even be required.
-
-       Additional mixed-type formulas, such as ` x e. A ` , ` A e. x ` ,
-       ` x = A ` , and ` A = x ` exist.  When the theory is later refined
-       to distinguish between sets and classes, the results from FOL remain
-       valid and naturally extend to these mixed cases.  These cases will
-       occasionally be examined individually in subsequent discussions.
-
-       4. <HTML><b>Specify the properties of primitive formulas</b></HTML>
-
-       In FOL in set.mm, the formulas ` x = y ` and ` x e. y ` cannot be
-       derived from earlier material, and therefore cannot be defined.
-       Instead, their fundamental properties are established through axioms,
-       namely ~ ax-6 through ~ ax-9 , ~ ax-13 , and ~ ax-ext .
-
-       Similarly, axioms establish the properties of the primitive formulas
-       ` A = B ` and ` A e. B ` , ensuring that they extend the FOL
-       counterparts ` x = y ` and ` x e. y ` in a consistent and meaningful
-       way.
-
-       At the same time, a criterion must be developed to distinguish sets
-       from classes.  Since set variables can only be substituted by other set
-       variables, equality must permit the assignment of class terms known to
-       represent sets to those variables.
-
-       (Contributed by Wolf Lammen, 25-Aug-2025.) $)
-    wl-cleq-4 $p |- ( A = B <-> A. x ( x e. A <-> x e. B ) ) $=
-      ( dfcleq ) ABCD $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.
-    $( <HTML><br><b>Disclaimer:</b></HTML> The material presented here is just
-       my (WL's) personal perception.  I am not an expert in this field, so
-       some or all of the text here can be misleading, or outright wrong.  This
-       text should be read as an exploration rather than as definite
-       statements, open to doubt, alternatives, and reinterpretation.
-
-       <HTML><h3>Semantics of Equality</h3></HTML>
-
-       There is a broadly shared understanding of what equality between objects
-       expresses, extending beyond mathematics or set theory.  Equality
-       constitutes an equivalence relation among objects ` x ` , ` y ` , and
-       ` z ` within the universe under consideration:
-
-       1.  Reflexivity ` x = x `
-
-       2.  Symmetry ` ( x = y -> y = x ) `
-
-       3.  Transitivity ` (( x = y /\ x = z ) -> y = z ) `
-
-       4.  Identity of Indiscernables (Leibniz's Law): distinct (i.e.,
-       unequal), objects cannot share all the same properties (or attributes).
-
-       In formal theories using variables, the attributes of a variable are
-       assumed to mirror those of the instance it denotes.  For both variables
-       and objects, items (1) - (4) must either be derived or postulated as
-       axioms.
-
-       If the theory allows substituting instances for variables, then the
-       equality rules for objects follow directly from those governing
-       variables.  However, if variables and instances are formally
-       distinguished, this distinction introduces an additional metatheoretical
-       attribute, relevant for (4).
-
-       A similar issue arises when equality is considered between different
-       types of variables sharing properties.  Such mixed-type equalities are
-       subject to restrictions:  reflexivity does not apply, since the two
-       sides represent different kinds of entities.  Nevertheless, symmetry and
-       various forms of transitivity typically remain valid, and must be proven
-       or established within the theory.
-
-       In set.mm formulas express attributes.  Therefore, equal instances must
-       behave identically, yielding the same results when substituted into any
-       formula.  To verify equality, it suffices to consider only primitive
-       operations involving free variables, since all formulas - once
-       definitions are eliminated - reduce to these.  Equality itself
-       introduces no new attribute (an object is always different from all
-       others), and can thus be excluded from this examination.
-
-       <HTML><h3>Equality in First Order Logic (FOL)</h3></HTML>
-
-       In the FOL component of set.mm, the notion of an "object" is absent.
-       Only set variables are used to formulate theorems, and their attributes
-       - expressed through an unspecified membership operator - are
-       addressed at a later stage.
-
-       Instead, several axioms address equality directly: ~ ax-6 , ~ ax-7 ,
-       ~ ax-8 , ~ ax-9 and ~ ax-12 , and ~ ax-13 .  In practice, restricted
-       versions with distinct variable conditions are used ( ~ ax6v ,
-       ~ ax12v ).  The unrestricted forms together with axiom ~ ax-13 , allow
-       for the elimination of distinct variable conditions, this benefit is
-       considered too minor for routine use.
-
-       Equality in FOL is formalized as follows:
-
-       2a.  Equivalence Relation.  Essentially covered by ~ ax-7 , with some
-       support of ~ ax-6 .
-
-       2b.  Leibniz's Law for the primitive ` e. ` operator.  Captured by
-       ~ ax-8 and ~ ax-9 .
-
-       2c.  General formulation.  Given in ~ sbequ12 .
-
-       2d.  Implicit substitution.  Assuming Leibniz's Law holds for a
-       particular expression, various theorems extend its validity to other,
-       derived expressions, often introducing quantification (see for example
-       ~ cbvalvw ).
-
-       The auxiliary axioms ~ ax-10 , ~ ax-11 , ax-12  are provable (see
-       ~ ax10w , for example) if you can substitute ` y ` for ` x ` in a
-       formula ` ph ` that contains no occurrence of ` y ` and leaves no
-       remaining trace of ` x ` after substitution.  An implicit substitution
-       is then established by setting the resulting formula equivalent to
-       ` ph ` under the assumption ` x = y ` .  Ordinary FOL substitution
-       ` [ y / x ] ph ` is insufficient in this context, since ` x ` still
-       occurs in the substituted formula.  A simple textual replacement of the
-       token ` x ` by ` y ` in ` ph ` might seem an intuitive solution, but
-       such operations are out of the formal scope of Metamath.
-
-       2e.  Axiom of Extensionality.  In its elaborated form ( ~ axextb ), it
-       states that the determining attributes of a set ` x ` are the elements
-       ` z ` it contains, as expressed by ` z e. x ` .  This is the only
-       primitive operation relevant for equality between set variables.
-
-       <HTML><h3>Equality between classes</h3></HTML>
-
-       In set.mm class variables of type "class" are introduced analoguously
-       to set variables.  Besides the primitive operations equality and
-       membership, class builders allow other syntactical constructs to
-       substitute for class variables, enabling them to represent class
-       instances.
-
-       One such builder ( ~ cv ) allows set variables to replace class
-       variables.  Another ( ~ df-clab ) introduces a class instance, known as
-       class abstraction.  Since a class abstraction can freely substitute for
-       a class variable, formulas hold for both alike.  Hence, there is no
-       need to distinguish between class variables and abstractions; the term
-       _class_ will denote "class variable or class abstraction".
-
-       Set variables, however, are treated separately, as they are not of type
-       "class".
-
-       3a.  Equivalence Relation.  Axiom ~ df-cleq , from which class versions
-       of (1a) - (1c) can be derived, guarantees that equality between class
-       variables form an equivalence relation.  Since both class abstractions
-       and set variables can substitute for class variables, this equivalence
-       extends to all mixed equalities, including those with set variables,
-       since they automatically convert to classes upon substitution.
-
-       3b.  Attributes.  The primitive operation of membership constitutes the
-       fundamental attributes of a class.  Axiom ~ df-clel reduces possible
-       membership relations between class variables to those between a set
-       variable and a class variable.  Axiom ~ df-cleq extends ~ axextb to
-       classes, stating that classes are fully determined by their set members.
-
-       A class builder may introduce a new attribute for classes.  An equation
-       involving such a class instance may express this attribute.  In the case
-       of the class builder ~ cv , an attribute called sethood is in fact
-       introduced:  A class is a set if it can be equated with some set
-       variable.
-
-       Class abstractions supported by class builder ~ df-clab also formally
-       introduce attributes.  Whether a class can be expressed as an
-       abstraction with a specific predicate may be relevant in analysis.
-       However, since theorem ~ df-clab is a definition (and hence eliminable),
-       these attributes can also be expressed in other ways.
-
-       3c.  Conservativity.  Because set variables can substitute for class
-       variables, all axioms and definitions must be consistent with theorems
-       in FOL.  To ensure this, hypotheses are added to axioms and definitions
-       that mirror the structure of their statement, but with class variables
-       replaced by set variables.  Since theorems cannot be applied without
-       first proving their hypotheses, conservativity thus is enforced.
-
-       3d.  Leibniz's Law.  Besides equality membership is (and remains) the
-       only primitive operator between classes.  Axioms ~ df-cleq and
-       ~ df-clel provide class versions of ~ ax-8 and ~ ax-9 , ensuring that
-       membership is consistent with Leibniz's Law.
-
-       Sethood, being based on mixed-type equality, preserves its value among
-       equal classes.
-
-       As long as additional class builders beyond those mentioned are only
-       defined, the reasoning given for class abstraction above applies
-       generally, and Leibniz's Law continues to hold.
-
-       3e.  Backward Compatability.  A class ` A ` equal to a set should be
-       substitutable for a free set variable ` x ` in any theorem, yielding a
-       valid result, provided ` x ` and ` A ` are distinct.  Sethood is
-       conveniently expressed by ` E. z z = A ` ; this assumption is added as
-       an antecedent to the corresponding FOL theorem.
-
-       However, since direct substitution is disallowed, a deduction version of
-       an FOL theorem cannot be simply converted.  Instead, the proof must be
-       replayed, consistently replacing ` x ` with ` A ` .  Ultimately, this
-       process reduces to the FOL axioms, or their deduction form.
-
-       If these axioms hold when ` A ` replaces ` x ` - under the above
-       assumptions - then the replacement can be considered generally valid.
-       The affected FOL axioms are ~ ax-6 (in the form ~ ax6ev ), ~ ax-7 ,
-       ~ ax-8 , ~ ax-9 , ~ ax-12 ( ~ ax12v2 ), and to some extent ~ ax-13
-       ( ~ ax13v ).  Since ZF (Zermelo-Fraenkel) set theory does not allow
-       quantifification over class variables, no similar class-based versions
-       of the quantified FOL axioms exist.
-
-       (Contributed by Wolf Lammen, 18-Sep-2025.) $)
-    wl-cleq-5 $p |- ( A = B <-> A. x ( x e. A <-> x e. B ) ) $=
-      ( dfcleq ) ABCD $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.
-    $( <HTML><br><b>Disclaimer:</b></HTML> The material presented here is just
-       my (WL's) personal perception.  I am not an expert in this field, so
-       some or all of the text here can be misleading, or outright wrong.  This
-       text should be read as an exploration rather than as definite
-       statements, open to doubt, alternatives, and reinterpretation.
-
-       <HTML><h3>Eliminability of Classes</h3></HTML>
-
-       One requirement of Zermelo-Fraenkel set theory (ZF) is that it can be
-       formulated entirely without referring to classes.  Since set.mm
-       implements ZF, it must therefore be possible to eliminate all classes
-       from its formalization.
-
-       <HTML><b>Eliminating Variables of Propositional Logic</b></HTML>
-
-       Classical propositional logic concerns statements that are either true
-       or false.  For example, "A minute has 60 seconds" is such a statement,
-       as is "English is not a language".  Our development
-       of propositional logic applies to all such statements,  regardless of
-       their subject matter.  Any particular topic, or universe of discourse is
-       encompassed by the general theorems of propositional logic.
-
-       In ZF, however, the objects of study are sets - mathematical entities.
-       The flexibility of propsitional variables is not required here.
-       Instead, ZF introduces two primitive connectives between sets:
-       ` x = y ` and ` x e. y ` .  ZF is concerned only with logical schemata
-       constructed solely from these primitives.  Thus, before we can eliminate
-       classes, we must first eliminate propositional variables like ` ph `
-       and ` ps ` .  We will describe this process constructively.
-
-       We begin by restricting ourselves to propositional schemata that consist
-       only of the primitives of ZF, without any propositional variables.
-       Extending this step to first-order Logic (FOL) - by introducing
-       quantifiers - yields the fundamental predicates of ZF,  that is,
-       the basic formulas expressible within it.
-
-       For convenience, we may again allow propositional variables, but under
-       the strict assumption that they always represent fundamental predicates
-       of ZF.
-
-       Predicates of level 0 are exactly of this kind: no classes occurs in
-       them, and they can be reduced directly to fundamental predicates in ZF.
-
-       <HTML><b>Introducing eliminable classes</b></HTML>
-
-       The following construction is inspired by a paragraph in Azriel Levy's
-       "Basic set theory" concerning eliminable classes.
-
-       A class can only occur in combination with one of the operators ` = ` or
-       ` e. ` .  This applies in particular to class abstractions, which are
-       the only kind of classes permtted in this step of extending level-0
-       predicates in ZF.  The definitions ~  df-cleq and ~ df-clel show that
-       equality and membership ultimately reduce to expressions of the form
-       ` x e. A ` .  For a class abstraction ` { y | ph } ` , the resulting
-       term amounts to ` [ x / y ] ph ` .  If ` ph ` is a level-0 predicate,
-       then this too is a level-0 expression - fully compatible with ZF.
-
-       A level-1 class abstraction is a class ` { y | ph } ` where ` ph ` is a
-       level-0 predicate.  A level-1 class abstraction can occur in an equality
-       or membership relation with another level-1 class abstractions or a set
-       variable, and such terms reduce to fundamental predicates.  Predicates
-       of either level-0, or containing level-1 class abstractions are called
-       level-1 predicates.  After eliminating all level-1 abstractions from
-       such a predicate a level-0 expression is the result.
-
-       Analoguously, we can define level-2 class abstractions, where the
-       predicate ` ph ` in ` { y | ph } ` is a level-1 predicate.  Again,
-       ` x e. { y | ph } ` reduces to a level-1 expression, which in turn can
-       be reduced to a level-0 one.  By similar reasoning, equality and
-       membership between at most level-2 class abstractions also reduce to
-       level-0 expressions.  A predicate containing at most level-2 class
-       abstractions is called a level-2 predicate.
-
-       This iterative construction process can be continued to define a
-       predicate of any level.  They can be reduced to fundamental predicates
-       in ZF.
-
-       <HTML><b>Introducing eliminable class variables</b></HTML>
-
-       We have seen that propositional variables must be restricted to
-       representing only primitive connectives to maintain compatibility with
-       ZF.  Similarly, class variables can be restricted to representing class
-       abstractions of finite level.  Such class variables are eliminable, and
-       even definitions like ~ df-un ` ( A u. B ) ` introduce no difficulty,
-       since the resulting union remains of finite level.
-
-       <HTML><b>Limitations of eliminable class variables</b></HTML>
-
-       Where does this construction reach its limits?
-
-       1. Infinite constructions.  Suppose we wish to add up an infinite series
-       of real numbers, where each term defines its successor using a class
-       abstraction one level higher than that of the previous term.  Such a
-       summation introduces terms of arbitrary high level.  While each
-       individual term remains reducable in ZF, the infinite sum expression may
-       not be reducable without special care.
-
-       2. Class builders.  Every class builder other than ~ cv must be a
-       definition, making its elimination straightforward.  The class
-       abstraction ~ df-clab described above is a special case.
-
-       Since set variables themselves can be expressed as class abstractions
-       - namely ` x = { y | y e. x } ` (see ~ cvjust ) - this formulation does
-       not conflict with the use of class builder ~ cv .
-
-       The above conditions apply only to substitution.  The expression
-       ` A = { x | x e. A } ` ( ~ abid1 ) is a valid and provable equation, and
-       it should not be interpreted as an assignment that binds a particular
-       instance to ` A ` .
-
-       (Contributed by Wolf Lammen, 13-Oct-2025.) $)
-    wl-cleq-6 $p |- ( A = B <-> A. x ( x e. A <-> x e. B ) ) $=
-      ( dfcleq ) ABCD $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.
-    $( Disclaimer:  The material presented here is just my (WL's) personal
-       perception.  I am not an expert in this field, so some or all of the
-       text here can be misleading, or outright wrong.
-
-       This text should be read as an exploration rather than as a definite
-       statement, open to doubt, alternatives, and reinterpretation.
-
-       At the point where ~ df-cleq is introduced, the foundations of set
-       theory are being established through the notion of a class.  A central
-       property of classes is what elements, expressed by the membership
-       operator ` e. ` , belong to them .  Quantification ( ` A. x ` ) applies
-       only to objects that a variable of kind setvar can represent.  These
-       objects will henceforth be called sets.  Some classes may not be sets;
-       these are called proper classes.  It remains open at this stage whether
-       membership can involve them.
-
-       The formula given in ~ df-cleq (restated below) asserts that two classes
-       are equal if and only if they have exactly the same sets as elements.
-       If proper classes are also admitted as elements, then two equal classes
-       could still differ by such elements, potentially violating Leibniz's
-       Law.  A future axiom ~ df-clel addresses this issue; ~ df-cleq alone
-       does not.
-
-       **Primitive connectives and class builders**
-
-       Specially crafted primitive operators on classes or class builders could
-       introduce properties of classes beyond membership, not reflected in the
-       formula here.  This again risks violating Leibniz's Law.  Therefore, the
-       introduction of any future primitive operator or class builder must
-       include a conservativity check to ensure consistency with Leibniz's Law.
-
-       **This axiom covers only some principles of equality**
-
-       The notion of equality expressed in this axiom does not automatically
-       coincide with the general notion of equality.  Some principles are,
-       however, already captured:  Equality is shown to be an equivalence
-       relation, covering transivity ( ~ eqtr ), reflexivity ( ~ eqid ) and
-       symmetry ( ~ eqcom ).  It also yields the class-level version of
-       ~ ax-ext (the backward direction of ~ df-cleq ) holds.
-
-       If we assume ` x = A ` holds, then substituting the free set variable
-       ` y ` with ` A ` in ~ ax6ev and ~ ax12v2 yields provable theorems (see
-       ~ wl-isseteq , and ~ wl-ax12v2cl ).  However, a bound variable cannot be
-       replaced with a class variable, since quantification over classes is not
-       permitted.  Taken together with the results from the previous paragraph,
-       this shows that a class variable equal to a set behaves the same as a
-       set variable, provided it is not quantified.
-
-       **Conservativity**
-
-       Moreover, this axiom is already partly derivable if all class variables
-       are replaced by variables of type "setvar".  In that case, the statement
-       reduces to an instance of ~ axextb .  This shows that the class builder
-       ~ cv is consistent with this axiom.
-
-       **Eliminable operator**
-
-       Finally, this axiom supports the idea that proper classes, and operators
-       between them, should be eliminable, as required by ZF:  It reduces
-       equality to their membership properties.  However, since the term
-       ` x e. A ` is still undefined, elimination reduces equality to just
-       something not yet clarified.
-
-       **Axiom vs Definition**
-
-       Up to this point, the only content involving class variables comes from
-       the syntax definitions ~ wceq and ~ wcel .  Axioms are therefore
-       required to progressively refine the semantics of classes until provable
-       results coincide with our intended conception of set theory.  This
-       refinement process is explained in Step 4 of ~ wl-cleq-2 .
-
-       From this perspective, ~ df-cleq is in fact an axiom in disguise and
-       would more appropriately be named ax-cleq.
-
-       At first glance, one might think that ` A = B ` is defined by the
-       right-hand side of the biconditional.  This would make ` x e. A ` , i.e.
-       membership of a set in a class, the more primitive concept, from which
-       equality of classes could be derived.  Such a viewpoint would be
-       coherent if the properties of membership could be fully determined by
-       other axioms.  In my (WL's') opinion, however, the more direct and
-       fruitful approach is not to construct class equality from membership,
-       but to treat equality itself as axiomatic.
-
-       (Contributed by Wolf Lammen, 25-Aug-2025.) $)
-    ax-wl-cleq $a |- ( A = B <-> A. x ( x e. A <-> x e. B ) ) $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.
-    $( Disclaimer:  The material presented here is just my (WL's) personal
-       perception.  I am not an expert in this field, so some or all of the
-       text here can be misleading, or outright wrong.
-
-       This text should be read as an exploration rather than as a definite
-       statement, open to doubt, alternatives, and reinterpretation.
-
-       The formula in ~ df-clel (restated below) states that only those classes
-       for which ` E. x x = A ` holds can be members of classes.  Thus, a
-       member of a class is always equal to a set, which excludes proper
-       classes from class membership.
-
-       As explained in ~ wl-cleq-4 , item 3, ` E. x x = A ` is a sufficient
-       criterion for a class to be a set, provided that Leibniz's Law holds for
-       equality.  Therefore this axiom is often rephrased as: classes contain
-       only sets as members.
-
-       **Principles of equality**
-
-       Using this axiom we can derive the class-level counterparts of ~ ax-8
-       (see ~ eleq2 ) and ~ ax-9 (see ~ eleq1 ).  Since ~ ax-wl-cleq already
-       asserts that equality between classes is an equivalence relation, the
-       operators ` = ` and ` e. ` alone cannot distinguish equal classes.
-       Hence, if membership is the only property that matters for classes,
-       Leibniz's Law will hold.  Later, however, additional class builders may
-       introduce further properties of classes.  A conservativity check for
-       such builders can ensure this does not occur.
-
-       **Eliminability**
-
-       If we replace the class variable ` A ` with a set variable ` z ` in this
-       axiom, the auxiliary variable ` x ` can be eliminated, leaving only the
-       trivial result ` ( z e. B <-> z e. B ) ` .  Thus, ~ df-clel by itself
-       does not determine when a set is a member of a class.  From this
-       perspective, ~ df-clel is in fact an axiom in disguise and would more
-       appropriately be called ax-clel.
-
-       Overall, our axiomization leaves the meaning of fundamental expressions
-       ` x e. A ` or ` x e. B ` open.  All other fundamental formulas of set
-       theory ( ` A ` not a set variable, ` A e. B ` , ` x = B ` ` A = B ` )
-       can be reduced solely to the basic formulas ` x e. A ` or ` x e. B ` .
-
-       If an axiomatization leaves a fundamental formula like ` x e. A `
-       unspecified, we could in principle define it bi-conditionally by any
-       formula whatsoever - for example, the trivial ` T. ` .  This, however,
-       is not the approach we take.  Instead, an appropriate class builder such
-       as ~ df-clab fills this gap.
-
-       (Contributed by Wolf Lammen, 26-Aug-2025.) $)
-    ax-wl-clel $a |- ( A e. B <-> E. x ( x = A /\ x e. B ) ) $.
-  $}
-
-  $( Disclaimer:  The material presented here is just my (WL's) personal
-     perception.  I am not an expert in this field, so some or all of the text
-     here can be misleading, or outright wrong.
-
-     This text should be seen as an exploration, rather than viewing it as set
-     in stone, no doubt or alternatives possible.
-
-     We now introduce the notion of class abstraction, which allows us to
-     describe a specific class, in contrast to class variables that can stand
-     for any class indiscriminately.
-
-     A new syntactic form is introduced for class abstractions,
-     ` { y | ph } ` , read as "the class of sets ` y ` such that
-     ` ph ( y ) ` ".  This form is assigned the type "class" in ~ cab , so it
-     can consistently substitute for a class variable during the syntactic
-     construction process.
-
-     **Eliminability**
-
-     The axioms ~ ax-wl-cleq and ~ ax-wl-clel leave only ` x e. A `
-     unspecified.  The definition of this class builder directly corresponds to
-     that expression.  When a class abstraction replaces the variable ` A ` and
-     ` B ` , then ` A = B ` and ` A e. B ` can be expressed in terms of these
-     abstractions.
-
-     For general eliminability two conditions are needed:
-
-     1.  Any class builder must replace ` x e. A ` with an expression
-     containing no class variables.  If necessary, class variables must be
-     eliminated via a finite recursive process.
-
-     2.  There must only be finitely many class builders.  If a class variable
-     could range over infinitely many builders, eliminability would fail, since
-     unknown future builders would always need to be considered.
-
-     Condition (2) is met in set.mm by defining no class builder beyond ~ cv
-     and ~ df-clab .  Thus we may assume that a class variable represents
-     either a set variable, or a class abstraction:
-
-     a.  If it represents a set variable, substitution eliminates it
-     immediately.
-
-     b.  If it equals a set variable ` x ` , then by ~ cvjust it can be
-     replaced with ` { y | y e. x } ` .
-
-     c.  If it represents a proper class, then it equals some abstraction
-     ` { x | ph } ` .  If ` ph ` contains no class variables, elimination using
-     ` ph ` is possible.  The same holds if finite sequence of elimination
-     steps renders ` ph ` free of class variables.
-
-     d.  It represents a proper class, but ` ph ` in ` { x | ph } ` still
-     contains non-eliminable class variables, then eliminability fails.  A
-     simple example is ` { x | x e. A } ` .  Class variables can only appear in
-     fundamental expressions ` A = B ` or ` A e. B ` , Both can be reduced to
-     forms involving ` z e. A ` .  Thus, in the expression
-     ` z e. { x | x e. A } ` , we still must eliminate ` A ` .  Applying
-     ~ df-clab reduces it back to ` z e. A ` , returning us to the starting
-     point.
-
-     Case (d) shows that in full generality, a class variable cannot always be
-     eliminated, something Zermelo-Fraenkel set theory (ZF) requires.  If the
-     universe contained only finitely many sets, a free class variable ` A `
-     could be expressed as a finite disjunction of possiblities, hence
-     eliminable.  But in ZF's richer universe, in a definition of an
-     unrestricted class variable ` A = { x | ph } ` the variable ` ph ` will
-     contain ` A ` in some way, violating condition (1) above.  Thus
-     constraints are needed.  In ZF, any formula containing class variables
-     assumes that non-set class variables can be be replaced by ` { x | ph } `
-     where ` ph ` itself contains no class variables.  There is, however, no
-     way to state this condition in a formal way in set.mm.
-
-     Class abstractions themselves, however, can be eliminated, so df-clab is a
-     definition.
-
-     **Definition checker**
-
-     How can case (d) be avoided?  A solution is to restrict generality:
-     require that in the definition of any concrete class abstraction
-     ` { x | ph } ` , the formula ` ph ` is either free of class variables or
-     built only from previously defined constructions.  Such a restriction
-     could be part of the definition checker.
-
-     In practice, the Metamath definition checker requires definitions to
-     follow the specific pattern " ` |- { x | ph } = ... ` ".  Although
-     ~ df-clab does not conform to this pattern, it nevertheless permits
-     elimination of class abstractions.  Eliminability is the essential
-     property of a valid definition, so ~ df-clab can legitimately be regarded
-     as one.
-
-     For further material on the elimination of class abstractions, see BJ's
-     work beginning with ~ eliminable1 and one comment in
-     https://github.com/metamath/set.mm/pull/4971.
-
-     (Contributed by Wolf Lammen, 28-Aug-2025.) $)
-  wl-df-clab $p |- ( x e. { y | ph } <-> [ x / y ] ph ) $=
-    ( df-clab ) ABCD $.
-
-  ${
     $d A y $.  $d x y $.
     $( A class equal to a set variable implies it is a set.  Note that ` A `
        may be dependent on ` x ` .  The consequent, resembling ~ ax6ev , is the
@@ -624975,296 +624098,148 @@ $)
       AUQNOPQTUAUB $.
   $}
 
-  $( Define class abstractions, that is, classes of the form ` { y | ph } ` ,
-     which is read "the class of sets ` y ` such that ` ph ( y ) ` ".
-
-     A few remarks are in order:
-
-     1.  The axiomatic statement ~ df-clab does not define the class
-     abstraction ` { y | ph } ` itself, that is, it does not have the form
-     ` |- { y | ph } = ... ` that a standard definition should have (for a good
-     reason: equality itself has not yet been defined or axiomatized for class
-     abstractions; it is defined later in ~ df-cleq ).  Instead, ~ df-clab has
-     the form ` |- ( x e. { y | ph } <-> ... ) ` , meaning that it only defines
-     what it means for a setvar to be a member of a class abstraction.  As a
-     consequence, one can say that ~ df-clab defines class abstractions if and
-     only if a class abstraction is completely determined by which elements
-     belong to it, which is the content of the axiom of extensionality
-     ~ ax-ext .  Therefore, ~ df-clab can be considered a definition only in
-     systems that can prove ~ ax-ext (and the necessary first-order logic).
-
-     2.  As in all definitions, the definiendum (the left-hand side of the
-     biconditional) has no disjoint variable conditions.  In particular, the
-     setvar variables ` x ` and ` y ` need not be distinct, and the formula
-     ` ph ` may depend on both ` x ` and ` y ` .  This is necessary, as with
-     all definitions, since if there was for instance a disjoint variable
-     condition on ` x , y ` , then one could not do anything with expressions
-     like ` x e. { x | ph } ` which are sometimes useful to shorten proofs
-     (because of ~ abid ).  Most often, however, ` x ` does not occur in
-     ` { y | ph } ` and ` y ` is free in ` ph ` .
-
-     3.  Remark 1 stresses that ~ df-clab does not have the standard form of a
-     definition for a class, but one could be led to think it has the standard
-     form of a definition for a formula.  However, it also fails that test
-     since the membership predicate ` e. ` has already appeared earlier
-     (outside of syntax e.g. in ~ ax-8 ).  Indeed, the definiendum extends, or
-     "overloads", the membership predicate ` e. ` from formulas of the form
-     "setvar ` e. ` setvar" to formulas of the form "setvar ` e. ` class
-     abstraction".  This is possible because of ~ wcel and ~ cab , and it can
-     be called an "extension" of the membership predicate because of ~ wel ,
-     whose proof uses ~ cv .  An _a posteriori_ justification for ~ cv is given
-     by ~ cvjust , stating that every setvar can be written as a class
-     abstraction (though conversely not every class abstraction is a set, as
-     illustrated by Russell's paradox ~ ru ).
-
-     4.  Proof techniques.  Because class variables can be substituted with
-     compound expressions and setvar variables cannot, it is often useful to
-     convert a theorem containing a free setvar variable to a more general
-     version with a class variable.  This is done with theorems such as
-     ~ vtoclg which is used, for example, to convert ~ elirrv to ~ elirr .
-
-     5.  Definition or axiom?  The question arises with the three axiomatic
-     statements introducing classes, ~ df-clab , ~ df-cleq , and ~ df-clel , to
-     decide if they qualify as definitions or if they should be called axioms.
-     Under the strict definition of "definition" (see ~ conventions ), they are
-     not definitions (see Remarks 1 and 3 above, and similarly for ~ df-cleq
-     and ~ df-clel ).  One could be less strict and decide to call "definition"
-     every axiomatic statement which provides an eliminable and conservative
-     extension of the considered axiom system.  But the notion of
-     conservativity may be given two different meanings in set.mm, due to the
-     difference between the "scheme level" of set.mm and the "object level" of
-     classical treatments.  For a proof that these three axiomatic statements
-     yield an eliminable and weakly (that is, object-level) conservative
-     extension of FOL= plus ~ ax-ext , see Appendix of [Levy] p. 357.
-
-     6.  This definition (or axiom) is a _class builder_ introducing the class
-     ` { x | ph } ` , also called a _class abstraction_ or _class
-     comprehension_, i.e., it specifies a class by a condition determining its
-     members.  Another class-building operator (but no class abstraction) is
-     ~ cv , which asserts that every set is a class.  The converse need not
-     hold: not every class is a set.  A class that is not a set is called a
-     _proper class_.  From ~ ru , it follows that this abstraction yields
-     proper classes, e.g. ` { x | x = x } ` .
-
-     7.  References and history.  The concept of class abstraction dates back
-     to at least Frege, and is used by Whitehead and Russell.  This definition
-     is Definition 2.1 of [Quine] p. 16 and Axiom 4.3.1 of [Levy] p. 12.  It is
-     called the "axiom of class comprehension" by [Levy] p. 358, who treats the
-     theory of classes as an extralogical extension to predicate logic and set
-     theory axioms.  He calls the construction ` { y | ph } ` a "class term".
-     For a full description of how classes are introduced and how to recover
-     the primitive language, see the books of Quine and Levy (and the comment
-     of ~ eqabb for a quick overview).  For a general discussion of the theory
-     of classes, see ~ mmset.html#class .  (Contributed by NM, 26-May-1993.)
-     (Revised by BJ, 19-Aug-2023.) $)
-  wl-df.clab $p |- ( x e. { y | ph } <-> [ x / y ] ph ) $=
-    ( df-clab ) ABCD $.
-
   ${
-    $d x y z t u v A $.  $d x y z t u v B $.
-    wl-df.cleq.1 $e |- ( y = z <-> A. u ( u e. y <-> u e. z ) ) $.
-    wl-df.cleq.2 $e |- ( t = t <-> A. v ( v e. t <-> v e. t ) ) $.
-    $( Define the equality connective between classes.  Definition 2.7 of
-       [Quine] p. 18.  Also Definition 4.5 of [TakeutiZaring] p. 13; Chapter 4
-       provides its justification and methods for eliminating it.  Note that
-       its elimination will not necessarily result in a single wff in the
-       original language but possibly a "scheme" of wffs.
+    $d t y $.
+    wl-df-clab.1 $e |- ( F/ y ph \/ ( ph <-> y = t )
+                              \/ ( x e. t <-> [ x / y ] y e. t ) ) $.
+    $( Define class abstractions, that is, classes of the form ` { y | ph } ` ,
+       which is read "the class of sets ` y ` such that ` ph ( y ) ` ".
 
-       The hypotheses express that all instances of the conclusion where class
-       variables are replaced with setvar variables hold.  Therefore, this
-       definition merely extends to class variables something that is true for
-       setvar variables, hence is conservative.  This is only a proof sketch of
-       conservativity; for details see Appendix of [Levy] p. 357.  This is the
-       reason why we call this axiomatic statement a "definition", even though
-       it does not have the usual form of a definition.  If we required a
-       definition to have the usual form, we would call ~ df-cleq an axiom.
+       A few remarks are in order:
 
-       See also comments under ~ df-clab , ~ df-clel , and ~ eqabb .
+       1.  The axiomatic statement ~ df-clab does not define the class
+       abstraction ` { y | ph } ` itself, that is, it does not have the form
+       ` |- { y | ph } = ... ` that a standard definition should have (for a
+       good reason: equality itself has not yet been defined or axiomatized for
+       class abstractions; it is defined later in ~ df-cleq ).  Instead,
+       ~ df-clab has the form ` |- ( x e. { y | ph } <-> ... ) ` , meaning that
+       it only defines what it means for a setvar to be a member of a class
+       abstraction.  Consequently, ~ df-clab can be said to define class
+       abstractions if and only if a class abstraction is completely determined
+       by its members, as asserted by the axiom of extensionality ~ ax-ext .
+       Therefore, ~ df-clab can be considered a definition only in systems in
+       which ~ ax-ext and the necessary first-order logic can be proved.
 
-       In the form of ~ dfcleq , this is called the "axiom of extensionality"
-       by [Levy] p. 338, who treats the theory of classes as an extralogical
-       extension to our logic and set theory axioms.  It characterizes classes
-       as collections of sets.
+       2.  As in all definitions, the definiendum (the left-hand side of the
+       biconditional) has no disjoint variable conditions.  In particular, the
+       setvar variables ` x ` and ` y ` need not be distinct, and the formula
+       ` ph ` may depend on both ` x ` and ` y ` .  This is necessary, as with
+       all definitions, since if there was for instance a disjoint variable
+       condition on ` x , y ` , then one could not do anything with expressions
+       like ` x e. { x | ph } ` which are sometimes useful to shorten proofs
+       (because of ~ abid ).  Most often, however, ` x ` does not occur in
+       ` { y | ph } ` , and ` y ` is free in ` ph ` .
 
-       While the three class definitions ~ df-clab , ~ df-cleq , and ~ df-clel
-       are eliminable and conservative and thus meet the requirements for sound
-       definitions, they are technically axioms in that they do not satisfy the
-       requirements for the current definition checker.  The proofs of
-       conservativity require external justification that is beyond the scope
-       of the definition checker.
+       3.  Remark 1 stresses that ~ df-clab does not have the standard form of
+       a definition for a class, but one could be led to think it has the
+       standard form of a definition for a formula.  However, it also fails
+       that test since the membership predicate ` e. ` has already appeared
+       earlier (outside of syntax e.g. in ~ ax-8 ).  Indeed, the definiendum
+       extends, or "overloads", the membership predicate ` e. ` from formulas
+       of the form "setvar ` e. ` setvar" to formulas of the form "setvar
+       ` e. ` class abstraction".  This is possible because of ~ wcel and
+       ~ cab , and it can be called an "extension" of the membership predicate
+       because of ~ wel , whose proof uses ~ cv .  An _a posteriori_
+       justification for ~ cv is given by ~ cvjust , stating that every setvar
+       can be written as a class abstraction (though conversely not every class
+       abstraction is a set, as illustrated by Russell's paradox ~ ru ).
 
-       For a general discussion of the theory of classes, see
-       ~ mmset.html#class .  (Contributed by NM, 15-Sep-1993.)  (Revised by BJ,
-       24-Jun-2019.) $)
-    wl-df.cleq $p |- ( A = B <-> A. x ( x e. A <-> x e. B ) ) $=
-      ( df-cleq ) ABCDEFGHIJK $.
-  $}
+       4.  Proof techniques.  Because class variables can be substituted with
+       compound expressions and setvar variables cannot, it is often useful to
+       convert a theorem containing a free setvar variable into a more general
+       version with a class variable.  This is done with theorems such as
+       ~ vtoclg which is used, for example, to convert ~ elirrv to ~ elirr .
 
-  ${
-    $d x y z t u v A $.  $d x y z t u v B $.
-    $( This theorem is a conservative extension of ~ ax-ext to classes, with no
-       hypotheses.  It is not complete, since ~ ax-8 can be derived (see
-       ~ in-ax8 ) via alpha-renaming.
+       5.  Definition or axiom?  The question arises whether the three
+       axiomatic statements introducing classes, ~ df-clab , ~ df-cleq , and
+       ~ df-clel , to decide if they qualify as definitions or if they should
+       be called axioms.  Under the strict definition of "definition" (see
+       ~ conventions ), they are not definitions (see Remarks 1 and 3 above,
+       and similarly for ~ df-cleq and ~ df-clel ).  One could be less strict
+       and decide to call "definition" every axiomatic statement which provides
+       an eliminable and conservative extension of the considered axiom system.
+       But the notion of conservativity may be given two different meanings in
+       set.mm, due to the difference between the "scheme level" of set.mm and
+       the "object level" of classical treatments.  For a proof that these
+       three axiomatic statements yield an eliminable and weakly (that is,
+       object-level) conservative extension of FOL= plus ~ ax-ext , see
+       Appendix of [Levy] p. 357.
 
-       Although unsuitable for general use, it is adequate for the development
-       of theorems unaffected by alpha-renaming, including:
+       6.  The last term of the hypothesis states that the set ` t ` and the
+       class abstraction ` { x | x e. t } ` must have exactly the same sets as
+       members.  This follows from ~ elsb1 , and is stated here again to ensure
+       that ~ ax-8 appears in the dependency lists of theorems proved from
+       ~ df-clab in the general case.  Gino Giotto showed in ~ in-ax8 that
+       otherwise ax-8 would be provable from ~ df-clab and the other axioms.
+       This is particularly disturbing if ~ df-clab is regarded as an
+       eliminable definition.  The other terms are related to simple class
+       abstractions empty class, universal class, and a singleton, that do not
+       need ~ ax-8 for basic theorems about their properties.
 
-       1.  Theorems with no bound variables in the hypotheses or conclusion
-       (see ~ eqriv ).
-
-       2.  Theorems using the same bound variable throughout (see ~ abbib ).
-
-       3.  Theorems with distinct bound variables arising only through implicit
-       substitution (see ~ eqabbw ).
-
-       Remark: the proof uses ~ axextb to prove the hypothesis of ~ df-cleq
-       that is a degenerate instance, but it could be proved also from minimal
-       propositional calculus and { ~ ax-gen , ~ equid }.  (Contributed by NM,
-       15-Sep-1993.)  (Revised by BJ, 24-Jun-2019.) $)
-    wl-dfcleq.basic $p |- ( A = B <-> A. x ( x e. A <-> x e. B ) ) $=
-      ( vy vz vv vu vt axextb wl-df.cleq ) ADEFGHBCDEGIHHFIJ $.
-    $( $j usage 'wl-dfcleq.basic' avoids 'ax-8' 'ax-10' 'ax-11' 'ax-12'
-      'ax-13' 'df-clab' 'df-clel'; $)
-  $}
-
-  ${
-    $d x y A $.  $d x y B $.
-    wl-dfcleq.just.1 $e |- ( A. x ( x e. A <-> x e. B )
-                                            <-> A. y ( y e. A <-> y e. B ) ) $.
-    wl-dfcleq.just.id $e |- A = A $.
-    wl-dfcleq.just.trans $e |- ( A = B -> ( B = C -> C = A ) ) $.
-    wl-dfcleq.just.ax8 $e |- ( A = B -> ( A e. C -> B e. C ) ) $.
-    wl-dfcleq.just.ax9 $e |- ( A = B -> ( C e. A -> C e. B ) ) $.
-    $( The hypotheses added to this version of ~ df-cleq address the following:
-
-       1.  Equality of classes is an equivalence relation, as expected of
-       equality.
-
-       2.  Equality of classes obeys the Law of Indiscernibles (Leibniz's Law),
-       and is compatible with class membership.
-
-       3.  Alpha-renaming is explicitly permitted.
-
-       (Contributed by Wolf Lammen, 7-Apr-2026.) $)
-    wl-dfcleq.just $p |- ( A = B <-> A. x ( x e. A <-> x e. B ) ) $=
-      ( wl-dfcleq.basic ) ACDK $.
-  $}
-
-  ${
-    $d x y z t u v A $.  $d x y z t u v B $.
-    wl-df.clel.1 $e |- ( y e. z <-> E. u ( u = y /\ u e. z ) ) $.
-    wl-df.clel.2 $e |- ( t e. t <-> E. v ( v = t /\ v e. t ) ) $.
-    $( Define the membership connective between classes.  Theorem 6.3 of
-       [Quine] p. 41, or Proposition 4.6 of [TakeutiZaring] p. 13, which we
-       adopt as a definition.  See these references for its metalogical
-       justification.
-
-       The hypotheses assert that every instance of the conclusion obtained by
-       substituting the class variables with set variables already holds.
-       Thus, this definition extends to class variables a relation already
-       valid for set variables, and is therefore conservative.  This only
-       sketches the conservativity arguement; for details see Appendix of
-       [Levy] p. 357.  For this reason we regard this statement as a
-       "definition", even though it does not have the usual form of a
-       definition.  Under a stricter syntactic criterion, ~ df-clel would
-       instead be an axiom.
-
-       See also comments under ~ df-clab , ~ df-cleq , and ~ eqabb .
-
-       Alternate characterizations of ` A e. B ` when either ` A ` or ` B ` is
-       a set are given by ~ clel2g , ~ clel3g , and ~ clel4g .
-
-       [Levy] p. 338 refers to this as the "axiom of membership", treating the
-       theory of classes as an extralogical extension to our logic and set
-       theory axioms.
-
-       Under this definition, class members can only be sets; classes are
-       therefore collections of sets.  Although the extensionality expressed in
-       ~ df-cleq already points in this direction, an unusual interpretation of
-       equality could still permit proper classes as members.
-
-       Although the class definitions ~ df-clab , ~ df-cleq , and ~ df-clel are
-       eliminable and conservative, and hence meet the requirements for sound
-       definitions, they are technically axioms in that they do not satisfy the
-       syntactic requirements enforced by the current definition checker.  The
-       conservativity proofs require external justification beyond the scope of
-       the checker.
-
+       7.  References and history.  The concept of class abstraction dates back
+       at least to Frege, and is used by Whitehead and Russell.  This
+       definition is Definition 2.1 of [Quine] p. 16 and Axiom 4.3.1 of [Levy]
+       p. 12.  It is called the "axiom of class comprehension" by [Levy]
+       p. 358, who treats the theory of classes as an extralogical extension to
+       predicate logic and set theory axioms.  He calls the construction
+       ` { y | ph } ` a "class term".  For a full description of how classes
+       are introduced and how to recover the primitive language, see the books
+       of Quine and Levy (and the comment of ~ eqabb for a quick overview).
        For a general discussion of the theory of classes, see
        ~ mmset.html#class .  (Contributed by NM, 26-May-1993.)  (Revised by BJ,
-       27-Jun-2019.) $)
-    wl-df.clel $p |- ( A e. B <-> E. x ( x = A /\ x e. B ) ) $=
-      ( df-clel ) ABCDEFGHIJK $.
+       19-Aug-2023.)  Add dependency on ~ ax-8 in the general case.  (Revised
+       by Wolf Lammen, 21-Oct-2026.) $)
+    wl-df-clab $p |- ( x e. { y | ph } <-> [ x / y ] ph ) $=
+      ( df-clab ) ABCF $.
   $}
 
   ${
-    $d x y z t u v A $.  $d x y z t u v B $.
-    $( This theorem gives a conservative extension of membership of classes,
-       without hypotheses.  Conservativity alone, however, is insufficient,
-       since issues involving alpha-renaming can still arise, see ~ in-ax8 .
-
-       Although unsuitable for general use, it is adequate for the development
-       of theorems unaffected by alpha-renaming, including:
-
-       1.  Theorems whose hypotheses and conclusion contain no bound variables
-       (see ~ eleq1w ).
-
-       2.  Theorems using the same bound variable throughout (see ~ elex2 ).
-
-       3.  Theorems in which distinct bound variables arise only through
-       implicit substitution (see ~ eqabbw ).
-
-       (Contributed by BJ, 27-Jun-2019.) $)
-    wl-dfclel.basic $p |- ( A e. B <-> E. x ( x = A /\ x e. B ) ) $=
-      ( vy vz vv vu vt cleljust wl-df.clel ) ADEFGHBCDEGIHHFIJ $.
-    $( $j usage 'wl-dfclel.basic' avoids 'ax-9' 'ax-10' 'ax-11' 'ax-12' 'ax-13'
-       'ax-ext' 'df-clab' 'df-cleq'; $)
-  $}
-
-
-  ${
-    $d x y A $.  $d x y B $.
-    wl-dfclel.just.1 $e |- ( E. x ( x = A /\ x e. B )
-                                            <-> E. y ( y = A /\ y e. B ) ) $.
-    $( Add a hypothesis to ~ wl-dfclel.basic , that permits alpha-renaming.
-       (Contributed by Wolf Lammen, 7-Apr-2026.) $)
-    wl-dfclel.just $p |- ( A e. B <-> E. x ( x = A /\ x e. B ) ) $=
-      ( wl-dfclel.basic ) ACDF $.
+    $d t y $.
+    $( Restate ~ wl-df-clab for the general case.  (Contributed by Wolf Lammen,
+       21-Oct-2026.) $)
+    wl-dfclab $p |- ( x e. { y | ph } <-> [ x / y ] ph ) $=
+      ( vt wnf weq wb wel wsb w3o wo elsb1 bicomi olci df-3or mpbir wl-df-clab
+      ) ABCDACEZACDFGZBDHZCDHCBIZGZJRSKZUBKUBUCUATCBDLMNRSUBOPQ $.
   $}
 
   ${
-    $d x y A $.  $d x y B $.  $d x C $.
-    $( The defining characterization of class equality.  This version of
-       ~ df-cleq has no restrictions, unlike the forms on which it is based.
-       It is proved in Tarski's FOL from the axiom of extensionality
-       ( ~ ax-ext ), the definition of class equality ( ~ df-cleq ), and the
-       definition of class membership ( ~ df-clel ).
-
-       Its forward implication is known as "class extensionality".
-       (Contributed by NM, 15-Sep-1993.)  (Revised by BJ, 24-Jun-2019.)  Base
-       on ~ wl-dfcleq.just .  (Revised by Wolf Lammen, 7-Apr-2026.) $)
-    wl-dfcleq $p |- ( A = B <-> A. x ( x e. A <-> x e. B ) ) $=
-      ( vy cC cv wcel wb weq eleq1w bibi12d wa wex biimpd eximdv dfclel 3imtr4g
-      wceq wal wi cbvalvw eqid eqtr eqcomd ex eqeq2 wl-dfcleq.basic biimp alimi
-      anim1d eqcoms imim12d spimvw syl sylbi anim2d wl-dfcleq.just ) ADBCEAFZBG
-      ZURCGZHDFZBGZVACGZHZADADIZUSVBUTVCADBJZADCJKUABUBBCRZCERZEBRVGVHLBEBCEUCU
-      DUEVGURBRZUREGZLZAMURCRZVJLZAMBEGCEGVGVKVMAVGVIVLVJVGVIVLBCURUFNUJOABEPAC
-      EPQVGURERZUSLZAMVNUTLZAMEBGECGVGVOVPAVGUSUTVNVGVDDSZUSUTTZDBCUGVQVBVCTZDS
-      VRVDVSDVBVCUHUIVSVRDADAIZUSVBVCUTUSVBTURVAVEUSVBVFNUKVTVCUTDACJNULUMUNUOU
-      POAEBPAECPQUQ $.
+    $d t y $.
+    wl-dfclabf.1 $e |- F/ y ph $.
+    $( Restate ~ wl-df-clab when ` ph ` does not depend on ` y ` .
+       (Contributed by Wolf Lammen, 21-Oct-2026.) $)
+    wl-dfclabf $p |- ( x e. { y | ph } <-> ph ) $=
+      ( vt cv cab wcel wsb wnf weq wb wel w3o orci df-3or mpbir wl-df-clab sbf
+      wo bitri ) BFACGHACBIAABCEACJZACEKLZBEMCEMCBILZNUBUCTZUDTUEUDUBUCDOOUBUCU
+      DPQRACBDSUA $.
   $}
 
   ${
-    $d x y A B $.
-    $( The defining characterization of class membership.  Unlike the forms on
-       which it is based, it is unrestricted.  Proven in Tarski's FOL, from the
-       axiom of (set) extensionality ( ~ ax-ext ), the definitions ~ df-clel
-       and df-cleq .  (Contributed by BJ, 27-Jun-2019.)  Base on
-       ~ wl-dfclel.just .  (Revised by Wolf Lammen, 13-Apr-2026.) $)
-    wl-dfclel $p |- ( A e. B <-> E. x ( x = A /\ x e. B ) ) $=
-      ( vy cv wceq wcel wa weq eqeq1 eleq1w anbi12d cbvexvw wl-dfclel.just ) AD
-      BCAEZBFZOCGZHDEZBFZRCGZHADADIPSQTORBJADCKLMN $.
+    $d t y $.  $d y ph $.
+    $( Restate ~ wl-df-clab when ` ph ` and ` y ` are disjoint.  (Contributed
+       by Wolf Lammen, 21-Oct-2026.) $)
+    wl-dfclabv $p |- ( x e. { y | ph } <-> ph ) $=
+      ( vt cv cab wcel wsb wnf weq wb wel w3o wo nfv orci df-3or wl-df-clab sbv
+      mpbir bitri ) BEACFGACBHAABCDACIZACDJKZBDLCDLCBHKZMUBUCNZUDNUEUDUBUCACOPP
+      UBUCUDQTRACBSUA $.
   $}
+
+  $(
+  @c wl-setvarx @.  @( A variable type assigned to just one variable wl-vx_ @)
+  @( @j syntax 'wl-setvarx'; bound 'wl-setvarx'; @)
+
+  @( Declare the color of setvar variables. @)
+  @( @j
+    varcolorcode "wl-setvarx" as "FF0001";
+    altvarcolorcode "wl_setvarx" as "FF0001";
+  @)
+
+  @v wl_xx @.
+  wl-vx.nosubst @f wl-setvarx wl_xx @.
+
+  @( allow the substitution of a wl-setvarx for a setvar. @)
+  wl-cvx.nosubst @a setvar wl-x_ @.
+  @( @j primitive 'wl-cvx.nosubst'; @)
+  $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -625303,7 +624278,6 @@ $(
   somehow mirrored: The minor premises of the syllogisms look reverted, in
   comparison to their normal counterparts, and while adding an antecedent to
   a chain via ~ a1i is easy, in nested chains they can be easily dropped.
-
 $)
 
   ${
@@ -626143,58 +625117,6 @@ $)
     wl-axc11rc11 $p |- ( A. y y = x -> ( A. x ph -> A. y ph ) ) $=
       ( weq wal wi pm2.43i equcomi alimi 3syl ) CBFZCGZMBGZBCFZBGABGACGHNODIMPB
       CBJKEL $.
-  $}
-
-  ${
-    $d x y $.  $d x ph $.
-    $( Variant of ~ df-clab , where the element ` x ` is required to be
-       disjoint from the class it is taken from.  This restriction meets
-       similar ones found in other definitions and axioms like ~ ax-ext ,
-       ~ df-clel and ~ df-cleq . ` x e. A ` with ` A ` depending on ` x ` can
-       be the source of side effects, that you rather want to be aware of.  So
-       here we eliminate one possible way of letting this slip in instead.
-
-       An expression ` x e. A ` with ` x ` , ` A ` not disjoint, is now only
-       introduced either via ~ ax-8 , ~ ax-9 , or ~ df-clel .  Theorem
-       ~ cleljust shows that a possible choice does not matter.
-
-       The original ~ df-clab can be rederived, see ~ wl-dfclab .  In an
-       implementation this theorem is the only user of df-clab.  (Contributed
-       by NM, 26-May-1993.)  Element and class are disjoint.  (Revised by Wolf
-       Lammen, 31-May-2023.) $)
-    wl-clabv $p |- ( x e. { y | ph } <-> [ x / y ] ph ) $=
-      ( df-clab ) ABCD $.
-  $}
-
-  ${
-    $d z x $.  $d z y $.  $d z ph $.
-    $( Rederive ~ df-clab from ~ wl-clabv .  (Contributed by Wolf Lammen,
-       31-May-2023.)  (Proof modification is discouraged.) $)
-    wl-dfclab $p |- ( x e. { y | ph } <-> [ x / y ] ph ) $=
-      ( vz cv cab wcel weq wa wex wsb dfclel wl-clabv sbequ bitrid exbii 19.41v
-      pm5.32i ax6ev biantrur bitr4i 3bitri ) BEZACFZGDBHZDEUDGZIZDJUEACBKZIZDJZ
-      UHDUCUDLUGUIDUEUFUHUFACDKUEUHADCMADBCNORPUJUEDJZUHIUHUEUHDQUKUHDBSTUAUB
-      $.
-  $}
-
-  ${
-    $d x y ph $.  $d y ps $.
-    $( Using class abstraction in a context, requiring ` x ` and ` ph `
-       disjoint, but based on fewer axioms than ~ wl-clabt .  (Contributed by
-       Wolf Lammen, 29-May-2023.) $)
-    wl-clabtv $p |- ( ph -> { x | ps } = { x | ( ph -> ps ) } ) $=
-      ( vy cab wi wsb cv wcel biimt sbbidv df-clab 3bitr4g eqrdv ) ADBCEZABFZCE
-      ZABCDGPCDGDHZOIRQIABPCDABJKBDCLPDCLMN $.
-  $}
-
-  ${
-    $d x y $.  $d y ph $.  $d y ps $.
-    wl-clabt.nf $e |- F/ x ph $.
-    $( Using class abstraction in a context.  For a version based on fewer
-       axioms see ~ wl-clabtv .  (Contributed by Wolf Lammen, 29-May-2023.) $)
-    wl-clabt $p |- ( ph -> { x | ps } = { x | ( ph -> ps ) } ) $=
-      ( vy cab wi wsb cv wcel biimt sbbid df-clab 3bitr4g eqrdv ) AEBCFZABGZCFZ
-      ABCEHQCEHEIZPJSRJABQCEDABKLBECMQECMNO $.
   $}
 
   ${
