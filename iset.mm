@@ -183742,6 +183742,24 @@ $)
       KWPVRWAVSBCVTLDWEWGWMEWQWRWSWJWIWTXAXBXCVLAKVRWABCWDWBLDWCEFGWSWCSZWBSZWD
       SZWIVMAWFVFZKVRWABCVTWDWBLDWEWCEAWLWFFTZAWKWFGTZWSXDXEXFWIWJAWFVNZVOXGKVR
       WABCVTWDWBLDWEWCEXHXIWSXDXEXFWIWJXJVPVQ $.
+
+    psr1.z $e |- .0. = ( 0g ` R ) $.
+    psr1.o $e |- .1. = ( 1r ` R ) $.
+    psr1.u $e |- U = ( 1r ` S ) $.
+    $( The identity element of the ring of power series.  (Contributed by Mario
+       Carneiro, 8-Jan-2015.) $)
+    psr1fi $p |- ( ph -> U =
+        ( x e. ( NN0 ^m I ) |-> if ( x = ( I X. { 0 } ) , .1. , .0. ) ) ) $=
+      ( vy vf co wceq wcel eqid cn0 cmap cv cc0 csn cxp cif cmpt cbs cmulr wral
+      cfv wa ccnv cn cima cfn crab psrbagfi syl psr1clfi eqeltrrd adantr oveq1d
+      mpteq1d crg simpr psrlidmfi eqtr3d oveq2d psrridmfi ralrimiva wb isringid
+      jca psrringfi mpbi2and ) ABUAGUBQZBUCGUDUEUFRFHUGZUHZDUIULZSZVTOUCZDUJULZ
+      QZWCRZWCVTWDQZWCRZUMZOWAUKZEVTRZABPUCUNUOUPUQSPVRURZVSUHZVTWAABWLVRVSAGUQ
+      SZWLVRRJWLPGWLTZUSUTVEZABWAWLCDWMFPGHIJKWOLMWMTZWATZVAVBAWIOWAAWCWASZUMZW
+      FWHWTWMWCWDQWEWCWTWMVTWCWDAWMVTRWSWPVCZVDWTBWAWLCDWDWMFPGWCHIAWNWSJVCZACV
+      FSWSKVCZWOLMWQWRWDTZAWSVGZVHVIWTWCWMWDQWGWCWTWMVTWCWDXAVJWTBWAWLCDWDWMFPG
+      WCHIXBXCWOLMWQWRXDXEVKVIVOVLADVFSWBWJUMWKVMACDGIJKVPOWADWDEVTWRXDNVNUTVQ
+      $.
   $}
 
   ${
