@@ -182769,6 +182769,20 @@ $)
   $}
 
   ${
+    $d A x $.  $d B x $.  $d I x $.
+    $( Finite bags have decidable equality.  (Contributed by Jim Kingdon,
+       1-Nov-2026.) $)
+    psrbagfidceq $p |- ( ( I e. Fin /\ A e. ( NN0 ^m I ) /\ B e. ( NN0 ^m I ) )
+        -> DECID A = B ) $=
+      ( vx wcel cn0 wceq wdc cfv wral cz wf elmapi 3ad2ant2 ffvelcdmda 3ad2ant3
+      nn0zd syl2anc wfn elmapfn cfn cmap co cv simp1 wa zdceq ralrimiva dcfi wb
+      w3a eqfnfv dcbid mpbird ) CUAEZAFCUBUCZEZBUPEZUKZABGZHDUDZAIZVABIZGZDCJZH
+      ZUSUOVDHZDCJVFUOUQURUEUSVGDCUSVACEUFZVBKEVCKEVGVHVBUSCFVAAUQUOCFALURAFCMN
+      OQVHVCUSCFVABURUOCFBLUQBFCMPOQVBVCUGRUHVDDCUIRUSUTVEUSACSZBCSZUTVEUJUQUOV
+      IURAFCTNURUOVJUQBFCTPDCABULRUMUN $.
+  $}
+
+  ${
     psrbagmaxlem1.x $e |- ( ph -> X C_ ( NN0 ^m I ) ) $.
     psrbagmaxlem1.xfi $e |- ( ph -> X e. Fin ) $.
     psrbagmaxlem1.i $e |- ( ph -> I e. Fin ) $.
