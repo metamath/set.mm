@@ -60343,6 +60343,13 @@ $)
       FNAMQRUDSTUA $.
   $}
 
+  $( A restricted identity relation is equal to its converse.  (Contributed by
+     FL, 4-Mar-2007.)  Remove dependency on ~ ax-12 and shorten.  (Revised by
+     BJ, 1-Nov-2026.) $)
+  cnvresid $p |- `' ( _I |` A ) = ( _I |` A ) $=
+    ( cid cxp cin ccnv cres cnvin cnvi cnvxp ineq12i idinxpresid cnveqi 3eqtr3i
+    eqtri ) BAACZDZEZPBAFZERQBEZOEZDPBOGSBTOHAAIJNPRAKZLUAM $.
+
   $( Composition with a restricted identity relation.  (Contributed by FL,
      19-Jun-2011.)  (Revised by Stefan O'Rear, 7-Mar-2015.) $)
   coires1 $p |- ( A o. ( _I |` B ) ) = ( A |` B ) $=
@@ -63781,9 +63788,10 @@ $)
     crn wss funssres mpan2 eqtr2id ) BCZDZUABAEZFUABAFZCZGZFZUEUCUFUAUCUDPUFBAH
     UDIJKUBUEUAQZUGUELUDBQUHBAMUDBNOUAUERST $.
 
-  $( Converse of a restricted identity function.  (Contributed by FL,
-     4-Mar-2007.) $)
-  cnvresid $p |- `' ( _I |` A ) = ( _I |` A ) $=
+  $( Obsolete version of ~ cnvresid as of 1-Nov-2026.  (Contributed by FL,
+     4-Mar-2007.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
+  cnvresidOLD $p |- `' ( _I |` A ) = ( _I |` A ) $=
     ( cid ccnv wceq wfun cres cnvi eqcomi funi funeq cima funcnvres imai eqtrdi
     mpbii reseq12i mp2b ) BBCZDZREZBAFZCZUADRBGHSBETIBRJOTUBRBAKZFUAABLRBUCAGAM
     PNQ $.
