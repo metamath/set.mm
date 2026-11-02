@@ -9,8 +9,11 @@ $( STATEMENT OF CONJECTURE:
    the number by 2, add 13, and take the base-10 digit sum of the result, 
    the sequence will always stabilize into one of the following finite 
    attractor loops: {3, 4, 5, 6, 7, 8, 9, 10, 11}.
-$)
+$) the more specific loops are 
+ the loop where it is a never ending 5 
+the loop where it bounces between 8 and 11 
+and the loop where 3 ,  4 , 6 , 7 , 9 , and 10 may come in any order 
 
-$( Verification Note: This mathematical property has been fully tested and 
-   verified across all integers using a Python Interpreter execution loop. 
+
+$(
    This work is explicitly released into the public domain under CC0. $)
