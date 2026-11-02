@@ -882377,11 +882377,10 @@ $)
     liougb4descsumd.2 $e |- ( ph -> A e. CC ) $.
     liougb4descsumd.3 $e |- ( ph -> B e. CC ) $.
     liougb4descsumd.4 $e |- ( ph -> M = ( A + B ) ) $.
-    $( The transformed summands in ternary descent retain the original total.
-       Replace ` A ` and ` B ` by ` ( ( M + A ) / 3 ) ` and
-       ` ( ( M + B ) / 3 ) ` .  Their gap is divided by three in
-       ~ liougb4descgapd ; this is the descent used in ~ liougb4gap0d .
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( If complex numbers ` A ` and ` B ` sum to ` M ` , then
+       ` ( ( M + A ) / 3 ) ` and ` ( ( M + B ) / 3 ) ` also sum to ` M ` .  See
+       ~ liougb4gap0d for the ternary descent.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
     liougb4descsumd $p |- ( ph -> M = ( ( ( M + A ) / 3 ) + ( ( M + B ) / 3
       ) ) ) $=
       ( caddc co c3 cdiv cmul cc wcel 3cn a1i cc0 c2 eqtrd wne 3ne0 divcan3d c1
@@ -882397,8 +882396,11 @@ $)
     liougb4descgapd.1 $e |- ( ph -> M e. CC ) $.
     liougb4descgapd.2 $e |- ( ph -> A e. CC ) $.
     liougb4descgapd.3 $e |- ( ph -> B e. CC ) $.
-    $( The transformed gap in ternary descent is one third of the original gap.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( Adding the same complex number to two complex numbers and dividing both
+       sums by three divides their difference by three.  This identity gives
+       the gap in the ternary descent explained in ~ liougb4gap0d ; its strict
+       decrease is ~ liougb4descdecd .  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
     liougb4descgapd $p |- ( ph -> ( ( ( M + B ) / 3 ) - ( ( M + A ) / 3 ) )
       = ( ( B - A ) / 3 ) ) $=
       ( caddc co cmin c3 cdiv addcld cc wcel 3cn a1i cc0 wne 3ne0 oveq1d eqtr3d
@@ -882433,8 +882435,9 @@ $)
   ${
     sub32lincombd.1 $e |- ( ph -> P e. CC ) $.
     sub32lincombd.2 $e |- ( ph -> N e. CC ) $.
-    $( A linear identity relating the two reflected arguments in the
-       upper-third interval.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( The linear combination of ` ( P - ( 2 x. N ) ) ` and
+       ` ( ( 3 x. N ) - P ) ` with coefficients three and two equals ` P ` .
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
     sub32lincombd $p |- ( ph -> ( ( 3 x. ( P - ( 2 x. N ) ) ) + ( 2 x. ( ( 3
       x. N ) - P ) ) ) = P ) $=
       ( c3 c2 cmul co cmin caddc cc wcel 3cn a1i 2cn mulcld subdid mul12d eqtrd
@@ -882486,8 +882489,8 @@ $)
   ${
     sub32reflmul2d.1 $e |- ( ph -> P e. CC ) $.
     sub32reflmul2d.2 $e |- ( ph -> N e. CC ) $.
-    $( The reflected upper-third triple is twice the middle-band reflection.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( Subtracting ` P ` from three times ` ( P - ( 2 x. N ) ) ` gives twice
+       ` ( P - ( 3 x. N ) ) ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     sub32reflmul2d $p |- ( ph -> ( ( 3 x. ( P - ( 2 x. N ) ) ) - P ) = ( 2 x.
       ( P - ( 3 x. N ) ) ) ) $=
       ( c3 c2 cmul co cmin cc 3cn a1i 2cn mulcld subdid oveq1d sub32d mul3sub1d
@@ -882527,9 +882530,9 @@ $)
     divremadjacentd.3 $e |- ( ph -> T e. CC ) $.
     divremadjacentd.4 $e |- ( ph -> R e. CC ) $.
     divremadjacentd.5 $e |- ( ph -> P = ( ( T x. N ) + R ) ) $.
-    $( If ` P = ( ( T x. N ) + R ) ` , then ` ( ( T x. N ) - P ) = -u R ` and
-       ` ( ( ( T + 1 ) x. N ) - P ) = ( N - R ) ` .  These are the signed
-       remainders at adjacent coefficients.  (Contributed by Zhi Wang,
+    $( For complex numbers with ` P = ( ( T x. N ) + R ) ` , subtracting ` P `
+       from the multiples ` ( T x. N ) ` and ` ( ( T + 1 ) x. N ) ` gives
+       ` -u R ` and ` ( N - R ) ` , respectively.  (Contributed by Zhi Wang,
        20-Oct-2026.) $)
     divremadjacentd $p |- ( ph -> ( ( ( T x. N ) - P ) = -u R /\ ( ( ( T + 1
       ) x. N ) - P ) = ( N - R ) ) ) $=
@@ -882641,8 +882644,9 @@ $)
     liougb4descltd.2 $e |- ( ph -> A e. RR ) $.
     liougb4descltd.3 $e |- ( ph -> B e. RR ) $.
     liougb4descltd.4 $e |- ( ph -> A < B ) $.
-    $( Ternary descent preserves strict order of the summands.  (Contributed by
-       Zhi Wang, 17-Oct-2026.) $)
+    $( Adding a real number ` M ` to each of two ordered real numbers and
+       dividing by three preserves their strict order.  See ~ liougb4gap0d for
+       the ternary descent.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4descltd $p |- ( ph -> ( ( M + A ) / 3 ) < ( ( M + B ) / 3 ) ) $=
       ( caddc co c3 readdcld crp wcel 3rp a1i ltadd2dd ltdiv1dd ) ADBIJDCIJKADB
       EFLADCEGLKMNAOPABCDFGEHQR $.
@@ -882686,8 +882690,11 @@ $)
     liougb4descdecd.2 $e |- ( ph -> A e. NN ) $.
     liougb4descdecd.3 $e |- ( ph -> B e. NN ) $.
     liougb4descdecd.4 $e |- ( ph -> A < B ) $.
-    $( The positive gap between ordered summands strictly decreases in ternary
-       descent.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( For positive integers ` A < B ` , adding the same complex number ` M `
+       to both and dividing by three produces a difference strictly smaller
+       than ` ( B - A ) ` .  See ~ liougb4descgapd for the exact difference and
+       ~ liougb4gap0d for the ternary descent using this decrease.
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4descdecd $p |- ( ph -> ( ( ( M + B ) / 3 ) - ( ( M + A ) / 3 ) )
       < ( B - A ) ) $=
       ( caddc co c3 cdiv cmin clt nncnd liougb4descgapd wbr cn wcel wb syl2anc
@@ -882801,8 +882808,9 @@ $)
     sub3dblpd.1 $e |- ( ph -> P e. NN ) $.
     sub3dblpd.2 $e |- ( ph -> N e. NN ) $.
     sub3dblpd.3 $e |- ( ph -> ( 2 x. N ) < P ) $.
-    $( The reflected triple lies below half the modulus when the original
-       argument does.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( For positive integers ` P ` and ` N ` , if ` N < ( P / 2 ) ` , then
+       ` ( ( 3 x. N ) - P ) < ( P / 2 ) ` .  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
     sub3dblpd $p |- ( ph -> ( 2 x. ( ( 3 x. N ) - P ) ) < P ) $=
       ( c2 c3 cmul co cmin clt cn wcel 2nn a1i nncnd 3nn nnmulcld nnred eqbrtrd
       subdid mul12d nnrpd ltmul2dd eqbrtrrd ltsub1dd mul3sub2d breqtrd ) AGHCIJ
@@ -882817,8 +882825,11 @@ $)
     sub2upperbd.2 $e |- ( ph -> N e. NN ) $.
     sub2upperbd.3 $e |- ( ph -> P < ( 4 x. N ) ) $.
     sub2upperbd.4 $e |- ( ph -> ( 3 x. N ) < P ) $.
-    $( Reflection sends the middle band into the upper third of the central
-       interval.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( For positive integers ` P ` and ` N ` with ` N ` strictly between
+       ` ( P / 4 ) ` and ` ( P / 3 ) ` , the number ` ( P - ( 2 x. N ) ) ` lies
+       strictly between ` ( P / 3 ) ` and ` ( P / 2 ) ` .  These are the middle
+       band and upper third described in ~ liouoddval .  (Contributed by Zhi
+       Wang, 20-Oct-2026.) $)
     sub2upperbd $p |- ( ph -> ( ( 2 x. ( P - ( 2 x. N ) ) ) < P /\ P < ( 3 x.
       ( P - ( 2 x. N ) ) ) ) ) $=
       ( c2 cmul co cmin clt c3 c4 wcel a1i nncnd nnred cr remulcld wbr cc eqtrd
@@ -882923,7 +882934,8 @@ $)
     nnsubabsboundd.1 $e |- ( ph -> N e. NN ) $.
     nnsubabsboundd.2 $e |- ( ph -> R e. NN ) $.
     nnsubabsboundd.3 $e |- ( ph -> R < N ) $.
-    $( A proper positive difference has a smaller positive absolute value.
+    $( For positive integers ` R < N ` , the difference ` ( N - R ) ` is an
+       integer with positive integer absolute value strictly less than ` N ` .
        (Contributed by Zhi Wang, 20-Oct-2026.) $)
     nnsubabsboundd $p |- ( ph -> ( ( N - R ) e. ZZ /\ ( abs ` ( N - R ) ) e.
       NN /\ ( abs ` ( N - R ) ) < N ) ) $=
@@ -886343,8 +886355,10 @@ $)
     liougb4thirdcld.4 $e |- ( ph -> -. 3 || A ) $.
     liougb4thirdcld.5 $e |- ( ph -> -. 3 || B ) $.
     liougb4thirdcld.6 $e |- ( ph -> -. 3 || M ) $.
-    $( Positivity and integrality of a summand used in the ternary descent.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( If positive integers ` A ` and ` B ` sum to ` M ` and none of the three
+       is divisible by three, then ` ( ( M + A ) / 3 ) ` is a positive integer.
+       See ~ liougb4gap0d for the ternary descent.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
     liougb4thirdcld $p |- ( ph -> ( ( M + A ) / 3 ) e. NN ) $=
       ( c3 caddc co cdvds wbr cdiv cn wcel nnzd nnaddcld mod3sumndvdsd breqtrrd
       breq2d mtbid mod3eqsumd oveq1d wb eqeltrd 3nn a1i nndivdvds syl2anc mpbid
@@ -887686,9 +887700,14 @@ $)
     oddextstripcertd.7 $e |- ( ph -> ( ( ( 2 x. Q ) - 1 ) x. N ) < P ) $.
     oddextstripcertd.8 $e |- ( ph -> P < ( ( 2 x. Q ) x. N ) ) $.
     oddextstripcertd.9 $e |- ( ph -> -. 3 || Q ) $.
-    $( Inside the narrow strip, an adjacent odd multiple and a halved remainder
-       supply the bounded signed congruence witnesses of ~ oddextcertd .
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( For odd positive integers ` N ` and ` P ` and a positive integer ` Q `
+       greater than one and not divisible by three, if ` P ` lies strictly
+       between ` ( ( ( 2 x. Q ) - 1 ) x. N ) ` and ` ( ( 2 x. Q ) x. N ) ` ,
+       there are a positive integer ` k < Q ` and a nonzero integer ` d ` with
+       ` ( abs `` d ) < N ` satisfying one of the two displayed congruences.
+       This is the case of ~ oddextcertd proved using the odd coefficients
+       adjacent to twice ` Q ` and the halved remainders in
+       ~ narrowstriphalvesd .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     oddextstripcertd $p |- ( ph -> E. k e. NN E. d e. ZZ ( ( k < Q /\ ( abs `
       d ) e. NN /\ ( abs ` d ) < N ) /\ ( ( ( ( 2 x. k ) x. N ) mod P ) = ( d
       mod P ) \/ ( ( ( 3 x. k ) x. N ) mod P ) = ( ( 2 x. d ) mod P ) ) ) )
@@ -888028,8 +888047,10 @@ $)
     lioupairmuld.5 $e |- ( ph -> ( lam ` A ) = S ) $.
     lioupairmuld.6 $e |- ( ph -> ( lam ` B ) = S ) $.
     lioupairmuld.7 $e |- ( ph -> ( S x. ( lam ` K ) ) = T ) $.
-    $( Scale a pair with equal values of Liouville's function by a positive
-       integer.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( Scaling two positive integer summands of ` N ` with common Liouville
+       value ` S ` by a positive integer ` K ` gives a decomposition of
+       ` ( N x. K ) ` with common value ` ( S x. ( lam `` K ) ) ` , here
+       denoted by ` T ` .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     lioupairmuld $p |- ( ph -> E. a e. NN E. b e. NN ( ( N x. K ) = ( a + b )
       /\ ( lam ` a ) = T /\ ( lam ` b ) = T ) ) $=
       ( cmul co eqtrd wcel nnmulcld caddc oveq1d nncnd adddird cliou cn wceq cq
@@ -888466,9 +888487,10 @@ $)
     liougb4trid.3 $e |- ( ph -> M = ( ( 3 x. C ) + B ) ) $.
     liougb4trid.4 $e |- ( ph -> ( lam ` ( 3 x. C ) ) = 1 ) $.
     liougb4trid.5 $e |- ( ph -> ( lam ` B ) = 1 ) $.
-    $( A positive-positive decomposition with a triple summand gives a
-       negative-negative pair for Liouville's function at four times the
-       target.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( If the positive integers ` ( 3 x. C ) ` and ` B ` sum to ` M ` and both
+       have Liouville value one, then four times ` M ` has a negative-negative
+       pair.  Here ` C ` is also a positive integer.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
     liougb4trid $p |- ( ph -> E. a e. NN E. b e. NN ( ( 4 x. M ) = ( a + b
       ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
       ( co wceq cliou cfv c1 cn c3 wcel adantr c4 cmul cv caddc cneg wrex wn wa
@@ -888519,8 +888541,10 @@ $)
     liougb4desccld.6 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 4 x. M ) =
       ( a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
     liougb4desccld.7 $e |- ( ph -> -. 3 || M ) $.
-    $( The first summand constructed by the ternary descent is a positive
-       integer.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( Under the displayed assumptions on a positive-positive pair for ` M ` ,
+       the transformed summand ` ( ( M + A ) / 3 ) ` is a positive integer.
+       See ~ liougb4gap0d for the ternary descent.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
     liougb4desccld $p |- ( ph -> ( ( M + A ) / 3 ) e. NN ) $=
       ( liougb4n3d caddc co nncnd addcomd eqtrd liougb4thirdcld ) ABCDGHIABCDEF
       GHIJKLNACBDEFHGADBCOPCBOPIABCABGQACHQRSKJLNMT $.
@@ -888535,8 +888559,10 @@ $)
       = ( a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
     liougb4descsignd.5 $e |- ( ph -> ( lam ` B ) = 1 ) $.
     liougb4descsignd.6 $e |- ( ph -> ( ( M + A ) / 3 ) e. NN ) $.
-    $( The first summand constructed by the ternary descent has value one under
-       Liouville's function.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( Under the displayed assumptions, the positive integer
+       ` ( ( M + A ) / 3 ) ` has value one under Liouville's function.  See
+       ~ liougb4gap0d for the ternary descent.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
     liougb4descsignd $p |- ( ph -> ( lam ` ( ( M + A ) / 3 ) ) = 1 ) $=
       ( caddc co cliou cfv cneg c1 cn nnaddcld c3 cdiv liounn3divd liougb4sum2d
       eqeltrd nncnd liougb4posd negeqd ax-1cn negnegi eqtrdi eqtrd ) ADBMNUAUBN
@@ -888660,9 +888686,18 @@ $)
     liougb4gap0d.3 $e |- ( ph -> -. 3 || M ) $.
     $( If four times ` M ` has no negative-negative pair and ` M ` is not
        divisible by three, there is no positive gap between the summands of a
-       positive-positive pair for ` M ` .  The transformation in
-       ~ liougb4descgapd divides a positive gap by three, contradicting
-       well-ordering.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+       positive-positive pair for ` M ` .
+
+       The proof uses the following ternary descent.  From such a pair
+       ` A < B ` , construct ` ( ( M + A ) / 3 ) ` and ` ( ( M + B ) / 3 ) ` .
+       These are positive integers with Liouville value one by ~ liougb4desccld
+       and ~ liougb4descsignd , applied in both orders.  Their sum remains
+       ` M ` by ~ liougb4descsumd .  Their positive gap is one third of
+       ` ( B - A ) ` by ~ liougb4descgapd , and is strictly smaller by
+       ~ liougb4descdecd .  Thus a least positive gap would give a smaller one,
+       contradicting well-ordering; see ~ liougb4gapdescd and ~ nndesc0d .  The
+       term "ternary descent" here refers to this division of the gap by three.
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4gap0d $p |- ( ph -> S = (/) ) $=
       ( vx vu vv cn cv wceq cliou cfv c1 wa wcel vy wss caddc co cmin wrex crab
       w3a ssrab2 eqsstri a1i clt simpr liougb4gapbi simprd adantr simprl simpld
@@ -888949,8 +888984,9 @@ $)
     lioumodsmallmuld.2 $e |- ( ph -> A e. ( 1 ..^ P ) ) $.
     lioumodsmallmuld.3 $e |- ( ph -> B e. ( 1 ..^ P ) ) $.
     lioumodsmallmuld.4 $e |- ( ph -> ( A x. B ) < P ) $.
-    $( Multiplicativity of the local residue function for positive products
-       below the modulus.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( The residue function ` F ` of ~ lioumodval is multiplicative at positive
+       integer factors whose product is below the modulus.  (Contributed by Zhi
+       Wang, 17-Oct-2026.) $)
     lioumodsmallmuld $p |- ( ph -> ( F ` ( A x. B ) ) = ( ( F ` A ) x. ( F
     ` B ) ) ) $=
       ( cmul co cfv cliou cn wcel clt wbr w3a lioumodfzod cfzo fzossnn nnmulcld
@@ -888967,8 +889003,9 @@ $)
     lioumodcnne0d.2 $e |- ( ph -> P e. NN ) $.
     lioumodcnne0d.3 $e |- ( ph -> A e. ZZ ) $.
     lioumodcnne0d.4 $e |- ( ph -> -. P || A ) $.
-    $( The residue function takes nonzero complex values away from multiples of
-       its modulus.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( The residue function ` F ` of ~ lioumodval takes nonzero complex values
+       at integers not divisible by its positive integer modulus.  (Contributed
+       by Zhi Wang, 17-Oct-2026.) $)
     lioumodcnne0d $p |- ( ph -> ( ( F ` A ) e. CC /\ ( F ` A ) =/= 0 ) ) $=
       ( cfv cc wcel cc0 wne cmo co cliou lioumodval cn c1 cfzo zmod1fzod sselid
       fzossnn liounncn syl eqeltrd cneg cpr liounncl signne0 3syl neeq1d mpbird
@@ -889719,9 +889756,10 @@ $)
     $d A a b $.
     liougb4nnd.1 $e |- ( ph -> A e. NN ) $.
     $( Every positive multiple of four has a negative-negative pair for
-       Liouville's function, deduction version.  Split the positive parameter
-       according to its two possible function values.  (Contributed by Zhi
-       Wang, 17-Oct-2026.) $)
+       Liouville's function.  Deduction version of ~ liougb4 .  The proof
+       splits according to the two possible values of Liouville's function at
+       the positive integer parameter.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
     liougb4nnd $p |- ( ph -> E. a e. NN E. b e. NN ( ( 4 x. A ) = ( a + b
     ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
       ( cliou cfv c1 wceq c4 co cv cn wrex wa wcel adantr simpr ex syl cmul w3a
@@ -889820,9 +889858,9 @@ $)
     liou2refld.3 $e |- ( ph -> A < P ) $.
     liou2refld.4 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = ( a +
       b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( If twice ` P ` has no positive-positive pair, Liouville's value at
-       ` ( P - A ) ` is at least the negative of its value at a positive
-       integer ` A < P ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( If twice ` P ` has no positive-positive pair, the value of Liouville's
+       function at ` ( P - A ) ` is at least the negative of its value at a
+       positive integer ` A < P ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liou2refld $p |- ( ph -> -u ( lam ` A ) <_ ( lam ` ( P - A ) ) ) $=
       ( cliou cfv c1 cneg wceq cle wbr cn wcel adantr syl cmin co negeqd ax-1cn
       wa simpr negnegi eqtrdi 1le1 a1i clt c2 cmul caddc w3a wrex liou2reflnegd
@@ -889842,9 +889880,9 @@ $)
     liou2dblrefld.3 $e |- ( ph -> ( 2 x. A ) < P ) $.
     liou2dblrefld.4 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = ( a
       + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( If twice ` P ` has no positive-positive pair, Liouville's value at
-       ` ( P - ( 2 x. A ) ) ` is at least its value at ` A ` , for positive
-       integers with ` ( 2 x. A ) < P ` .  (Contributed by Zhi Wang,
+    $( If twice ` P ` has no positive-positive pair, the value of Liouville's
+       function at ` ( P - ( 2 x. A ) ) ` is at least its value at ` A ` , for
+       positive integers with ` ( 2 x. A ) < P ` .  (Contributed by Zhi Wang,
        20-Oct-2026.) $)
     liou2dblrefld $p |- ( ph -> ( lam ` A ) <_ ( lam ` ( P - ( 2 x. A ) ) ) )
       $=
@@ -889861,9 +889899,9 @@ $)
     liou2transled.3 $e |- ( ph -> A < P ) $.
     liou2transled.4 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = ( a
       + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( If twice ` P ` has no positive-positive pair, Liouville's value at
-       ` ( P + A ) ` is at most its value at a positive integer ` A < P ` .
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( If twice ` P ` has no positive-positive pair, the value of Liouville's
+       function at ` ( P + A ) ` is at most its value at a positive integer
+       ` A < P ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liou2transled $p |- ( ph -> ( lam ` ( P + A ) ) <_ ( lam ` A ) ) $=
       ( cliou cfv c1 wceq co cle wbr cn wcel adantr syl cneg caddc wa clt c2 cv
       cmul w3a wrex simpr liou2transnegd neg1rr leidi eqbrtrd breqtrrd nnaddcld
@@ -889884,10 +889922,10 @@ $)
     liou2pair23posd.5 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = (
       a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     liou2pair23posd.6 $e |- ( ph -> ( lam ` U ) = 1 ) $.
-    $( If ` P = ( ( 3 x. U ) + ( 2 x. V ) ) ` with positive integer summands
-       and twice ` P ` has no positive-positive pair, Liouville value one at
-       ` U ` forces value minus one at ` V ` .  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
+    $( For positive integers ` P ` , ` U ` , and ` V ` with
+       ` P = ( ( 3 x. U ) + ( 2 x. V ) ) ` , if twice ` P ` has no
+       positive-positive pair, Liouville value one at ` U ` forces value minus
+       one at ` V ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liou2pair23posd $p |- ( ph -> ( lam ` V ) = -u 1 ) $=
       ( cliou cfv cneg c1 cn wcel syl c2 vu vv cc liounncn negnegd cmul co wceq
       cq nnq liou2mul c3 3nn a1i nnmulcld liou2nopairnegd liou3mul negeqd eqtrd
@@ -889930,9 +889968,13 @@ $)
     liou2refl3eqd.9 $e |- ( ph -> V < P ) $.
     liou2refl3eqd.10 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = (
       a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( A closed chain of sign inequalities forces the two upper-third
-       reflection equalities.  Here twice ` P ` has no positive-positive pair.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( For positive integers ` P ` and ` N ` and positive integer arguments
+       ` U = ( P - ( 2 x. N ) ) ` and ` V = ( ( 3 x. N ) - P ) ` , Liouville's
+       function at ` U ` equals its value at ` N ` , and its value at ` V ` is
+       the negative of that value, provided twice ` P ` has no
+       positive-positive pair.  A closed chain of sign inequalities proves both
+       equalities.  See ~ liou2refl3d for the version with these expressions
+       substituted.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liou2refl3eqd $p |- ( ph -> ( ( lam ` U ) = ( lam ` N ) /\ ( lam ` V ) =
       -u ( lam ` N ) ) ) $=
       ( cliou cle wcel cfv wceq cneg wbr wa cr cn liounnre syl renegcl caddc co
@@ -889954,10 +889996,13 @@ $)
     liou2refl3d.4 $e |- ( ph -> P < ( 3 x. N ) ) $.
     liou2refl3d.5 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = ( a +
       b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( If twice ` P ` has no positive-positive pair, reflection at twice an
-       argument in the upper third preserves its Liouville value, whereas
-       subtracting ` P ` from its triple negates that value.  The upper third
-       is the interval strictly between ` ( P / 3 ) ` and ` ( P / 2 ) ` .
+    $( For positive integers ` P ` and ` N ` with ` N ` strictly between
+       ` ( P / 3 ) ` and ` ( P / 2 ) ` , if twice ` P ` has no
+       positive-positive pair, Liouville's function at ` ( P - ( 2 x. N ) ) `
+       equals its value at ` N ` , and its value at ` ( ( 3 x. N ) - P ) ` is
+       the negative of that value.  See ~ liouoddval for the upper-third
+       terminology and ~ liou2refl3eqd for the version with named arguments.
+       The identity ~ sub32lincombd relates the two positive arguments.
        (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liou2refl3d $p |- ( ph -> ( ( lam ` ( P - ( 2 x. N ) ) ) = ( lam ` N ) /\
       ( lam ` ( ( 3 x. N ) - P ) ) = -u ( lam ` N ) ) ) $=
@@ -889979,9 +890024,14 @@ $)
     liou2midrefld.5 $e |- ( ph -> ( 3 x. N ) < P ) $.
     liou2midrefld.6 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = ( a
       + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( The two reflected values of Liouville's function agree on the middle
-       band.  Here twice ` P ` has no positive-positive pair.  (Contributed by
-       Zhi Wang, 20-Oct-2026.) $)
+    $( For a positive integer ` N ` strictly between ` ( P / 4 ) ` and
+       ` ( P / 3 ) ` , Liouville's function has equal values at
+       ` ( P - ( 2 x. N ) ) ` and ` ( P - ( 3 x. N ) ) ` , provided twice the
+       positive integer ` P ` has no positive-positive pair.  By
+       ~ sub2upperbd , the first argument lies in the upper third described in
+       ~ liouoddval .  Apply ~ liou2refl3d to that argument, then use
+       ~ sub32reflmul2d and ~ liou2mul .  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
     liou2midrefld $p |- ( ph -> ( lam ` ( P - ( 2 x. N ) ) ) = ( lam ` ( P -
       ( 3 x. N ) ) ) ) $=
       ( c2 cmul co cmin cliou cfv c3 cn wcel 2nn a1i nnmulcld nnsubgtd liounncn
@@ -890017,14 +890067,17 @@ $)
        ~ liouoddlarge .  For positive odd ` P ` this construction reverses sign
        under negation away from multiples of ` P ` ; see ~ liouoddnegd .
 
-       The positive central representatives are the positive integers below
-       ` ( P / 2 ) ` .  Their middle band lies strictly between ` ( P / 4 ) `
-       and ` ( P / 3 ) ` ; their upper third lies strictly between
-       ` ( P / 3 ) ` and ` ( P / 2 ) ` .  These intervals control the doubling
-       and tripling comparisons below.  If ` P ` is a prime greater than three
-       and twice ` P ` has no positive-positive pair, the completion is
-       multiplicative away from multiples of ` P ` by ~ liouoddmuld .
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+       Here the positive central interval is the open interval from zero to
+       ` ( P / 2 ) ` , and its positive integer points are the positive central
+       representatives.  We call the open interval from ` ( P / 4 ) ` to
+       ` ( P / 3 ) ` the middle band, and the open interval from ` ( P / 3 ) `
+       to ` ( P / 2 ) ` the upper third.  The latter is the top third of the
+       positive central interval.  These names are local conventions for the
+       doubling and tripling comparisons; see ~ sub2upperbd and ~ liou2refl3d .
+       If ` P ` is a prime greater than three and twice ` P ` has no
+       positive-positive pair, the completion is multiplicative away from
+       multiples of ` P ` by ~ liouoddmuld .  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
     liouoddval $p |- ( ph -> ( F ` A ) = if ( ( A mod P ) < ( P / 2 ) , ( lam
       ` ( A mod P ) ) , -u ( lam ` ( P - ( A mod P ) ) ) ) ) $=
       ( cfv cmo co c2 cdiv clt wbr cliou cmin cneg cif wceq cv wcel liouoddifeq
@@ -890167,8 +890220,9 @@ $)
     liouoddsmallmuld.3 $e |- ( ph -> A e. NN ) $.
     liouoddsmallmuld.4 $e |- ( ph -> B e. NN ) $.
     liouoddsmallmuld.5 $e |- ( ph -> ( A x. B ) < ( P / 2 ) ) $.
-    $( Short products preserve multiplicativity of the odd completion.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( The odd completion ` F ` of ~ liouoddval is multiplicative at positive
+       integer factors whose product is less than ` ( P / 2 ) ` .  (Contributed
+       by Zhi Wang, 20-Oct-2026.) $)
     liouoddsmallmuld $p |- ( ph -> ( F ` ( A x. B ) ) = ( ( F ` A ) x. ( F `
       B ) ) ) $=
       ( cmul co cfv cliou cn wcel clt wbr nnred c1 cfzo nnmulcld cdiv rehalfcld
@@ -890308,8 +890362,10 @@ $)
     liouoddshortnegd.6 $e |- ( ph -> ( lam ` K ) = -u 1 ) $.
     liouoddshortnegd.7 $e |- ( ph -> ( 2 x. N ) < P ) $.
     liouoddshortnegd.8 $e |- ( ph -> ( 2 x. ( K x. N ) ) < P ) $.
-    $( A short product by a multiplier with negative value under Liouville's
-       function preserves the odd-completion value after negation.
+    $( For the odd completion ` F ` of ~ liouoddval with positive odd modulus
+       ` P ` , multiplying a positive integer ` N ` by a positive integer ` K `
+       with Liouville value minus one and then negating gives the same value of
+       ` F ` as at ` N ` , when the product is less than ` ( P / 2 ) ` .
        (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouoddshortnegd $p |- ( ph -> ( F ` -u ( K x. N ) ) = ( F ` N ) ) $=
       ( cmul co cneg cfv cliou wcel nnmulcld liouoddnegsmall2d c1 cn cq lioumul
@@ -890631,9 +890687,10 @@ $)
     liouodd2upperd.6 $e |- ( ph -> P < ( 3 x. N ) ) $.
     liouodd2upperd.7 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = (
       a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( On the upper third of the positive central interval, the odd completion
-       agrees with its value at the negated double.  Here twice ` P ` has no
-       positive-positive pair.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( For the odd completion of ~ liouoddval with positive odd modulus ` P ` ,
+       its value at a positive integer ` N ` in the upper third equals its
+       value at the negated double.  Here twice ` P ` has no positive-positive
+       pair.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouodd2upperd $p |- ( ph -> ( F ` -u ( 2 x. N ) ) = ( F ` N ) ) $=
       ( cmul co cfv cliou c4 c3 c2 cneg cmin nnred cr wcel 4re a1i remulcld 3re
       nnrpd clt wbr 3lt4 ltmul1dd lttrd ltnsymd liouodd2larged wceq liou2refl3d
@@ -890655,10 +890712,11 @@ $)
     liouodd3midled.7 $e |- ( ph -> -. ( 6 x. N ) < P ) $.
     liouodd3midled.8 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = (
       a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( If twice the odd modulus has no positive-positive pair for Liouville's
-       function, the odd completion at ` N ` is no greater than its value at
-       the negated triple, for ` N ` at least ` ( P / 6 ) ` and below
-       ` ( P / 3 ) ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( If twice the positive odd modulus ` P ` has no positive-positive pair,
+       the odd completion of ~ liouoddval at a positive integer ` N ` is no
+       greater than its value at the negated triple, for ` N ` at least
+       ` ( P / 6 ) ` and below ` ( P / 3 ) ` .  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
     liouodd3midled $p |- ( ph -> ( F ` N ) <_ ( F ` -u ( 3 x. N ) ) ) $=
       ( cfv c3 cliou cneg wcel cmul co cmin cle liouoddsmall2d cn wceq liou3mul
       cq nnq syl negeqd liounncn negnegd eqtrd 3nn nnmulcld liou2refld eqbrtrrd
@@ -890679,9 +890737,12 @@ $)
     liouodd3upperd.6 $e |- ( ph -> P < ( 3 x. N ) ) $.
     liouodd3upperd.7 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = (
       a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( On the upper third of the positive central interval, the odd completion
-       agrees with its value at the negated triple.  Here twice ` P ` has no
-       positive-positive pair.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( For the odd completion of ~ liouoddval with positive odd modulus ` P ` ,
+       its value at a positive integer ` N ` in the upper third equals its
+       value at the negated triple.  Here twice ` P ` has no positive-positive
+       pair.  In the proof, ~ sub3dblpd bounds ` ( ( 3 x. N ) - P ) ` above by
+       ` ( P / 2 ) ` , while the assumption ` P < ( 3 x. N ) ` makes this
+       argument positive.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouodd3upperd $p |- ( ph -> ( F ` -u ( 3 x. N ) ) = ( F ` N ) ) $=
       ( c3 cmul co cneg cfv cliou cmin cn wcel 3nn a1i nnmulcld liouoddnegsubpd
       nnzd nnsubgtd sub3dblpd liouoddnegsmall2d c2 liou2refl3d simprd negeqd cc
@@ -892168,8 +892229,11 @@ $)
       a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     liouoddextevend.10 $e |- ( ph -> A. r e. ( 1 ..^ N ) ( F ` ( Q x. r ) ) =
       ( ( F ` Q ) x. ( F ` r ) ) ) $.
-    $( Reduce an even inner induction argument by halving and exact doubling.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( Extend multiplicativity of the odd completion in ~ liouoddval from
+       positive second factors below ` N ` to an even second factor ` N ` .
+       Under the displayed bounds and absence of a positive-positive pair for
+       twice ` P ` , the proof uses the smaller argument ` ( N / 2 ) ` and the
+       doubling identity.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouoddextevend $p |- ( ph -> ( F ` ( Q x. N ) ) = ( ( F ` Q ) x. ( F ` N
       ) ) ) $=
       ( co c2 cdiv cmul cfv wceq cn wcel clt wbr w3a cfzo cdvds nnehalf syl2anc
@@ -892666,9 +892730,11 @@ $)
       a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     liouoddext3divd.10 $e |- ( ph -> A. k e. ( 1 ..^ Q ) A. z e. ZZ ( -. P ||
       z -> ( F ` ( k x. z ) ) = ( ( F ` k ) x. ( F ` z ) ) ) ) $.
-    $( A multiplier divisible by three reduces to its smaller quotient using
-       exact tripling.  Here twice ` P ` has no positive-positive pair.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( Extend multiplicativity of the odd completion in ~ liouoddval from
+       positive first factors below ` Q ` to a first factor ` Q ` divisible by
+       three.  Under the displayed bounds and absence of a positive-positive
+       pair for twice ` P ` , the proof uses the smaller factor ` ( Q / 3 ) `
+       and the tripling identity.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouoddext3divd $p |- ( ph -> ( F ` ( Q x. Z ) ) = ( ( F ` Q ) x. ( F ` Z
       ) ) ) $=
       ( c3 cdiv co cmul nncnd cc wcel 3nn nncni a1i cc0 wne nnne0i divcan2d cfv
