@@ -16857,6 +16857,7 @@ New usage of "gt-lth" is discouraged (1 uses).
 New usage of "gt0srpr" is discouraged (2 uses).
 New usage of "gte-lte" is discouraged (0 uses).
 New usage of "gte-lteh" is discouraged (1 uses).
+New usage of "gzmulclALT" is discouraged (0 uses).
 New usage of "h0elch" is discouraged (44 uses).
 New usage of "h0elsh" is discouraged (10 uses).
 New usage of "h1da" is discouraged (3 uses).
@@ -20639,6 +20640,7 @@ Proof modification of "grpokerinj" is discouraged (463 steps).
 Proof modification of "grpomndo" is discouraged (207 steps).
 Proof modification of "grposnOLD" is discouraged (291 steps).
 Proof modification of "grpsubfvalALT" is discouraged (176 steps).
+Proof modification of "gzmulclALT" is discouraged (47 steps).
 Proof modification of "had0OLD" is discouraged (45 steps).
 Proof modification of "had1OLD" is discouraged (38 steps).
 Proof modification of "hadifpOLD" is discouraged (20 steps).

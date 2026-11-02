@@ -93,6 +93,10 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+31-Oct-26 rngunsnply  [same]      Moved from SO's mathbox to main set.mm
+31-Oct-26 cnsrplycl   [same]      Moved from SO's mathbox to main set.mm
+31-Oct-26 cnsrexpcl   [same]      Moved from SO's mathbox to main set.mm
+31-Oct-26 fsumcnsrcl  [same]      Moved from SO's mathbox to main set.mm
 24-Oct-26 imasgim     [same]      Moved from SO's mathbox to main set.mm
 24-Oct-26 rnmposs     [same]      Moved from TA's mathbox to main set.mm
 22-Oct-26 fidmfisupp  ---         deleted; duplicate of fdmfifsupp
