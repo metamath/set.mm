@@ -17765,15 +17765,24 @@ $)
     ( wtru tru sbt ) CABDE $.
 
   ${
+    $d u x ph $.  $d u t $.
+    $( In the case of ~ sbv , the hypothesis in ~ df-sb is derivable without
+       ~ ax-7 .  The essential proof step is presented in this lemma.
+       (Contributed by Wolf Lammen, 2-Nov-2026.) $)
+    sbvlem $p |- ( A. u ( u = t -> A. x ( x = u -> ph ) ) <-> ph ) $=
+      ( weq wi wal equsv imbi2i albii bitri ) CDEZBCEAFBGZFZCGLAFZCGANOCMALABCH
+      IJACDHK $.
+  $}
+
+  ${
     $d u v x ph $.  $d u v t $.
     $( Substitution for a variable not occurring in a proposition.  See ~ sbf
        for a version without disjoint variable condition on ` x , ph ` .
        (Contributed by BJ, 22-Dec-2020.)  Avoid ~ ax-7 .  (Revised by Wolf
        Lammen, 2-Nov-2026.) $)
     sbv $p |- ( [ t / x ] ph <-> ph ) $=
-      ( vu vv wsb weq wi wal equsv imbi2i albii bitri 3bitr4ri df-sb ) ABCFDCGZ
-      BDGAHBIZHZDIZAABDECECGZAHZEIATBEGAHBIZHZEISAECJUCUAEUBATABEJKLSPAHZDIARUD
-      DQAPABDJKLADCJMZNOUEM $.
+      ( vu vv wsb weq wi wal sbvlem bitr4i df-sb bitri ) ABCFDCGBDGAHBIHDIZAABD
+      ECNAECGBEGAHBIHEIABDCJZABECJKLOM $.
   $}
 
   ${
@@ -17966,10 +17975,10 @@ $)
 
   ${
     $d x ph $.
-    $( Obsolete version of ~ sbv as of 2-Nov-2026.  (Contributed by BJ,
-       22-Dec-2020.)  (Proof modification is discouraged.)
+    $( Alternative proof of ~ sbv .  Shorter, but using ~ ax-7 .  (Contributed
+       by BJ, 22-Dec-2020.)  (Proof modification is discouraged.)
        (New usage is discouraged.) $)
-    sbvOLD $p |- ( [ t / x ] ph <-> ph ) $=
+    sbvALT $p |- ( [ t / x ] ph <-> ph ) $=
       ( wsb wex spsbe ax5e syl wal ax-5 stdpc4 impbii ) ABCDZAMABEAABCFABGHAABI
       MABJABCKHL $.
   $}
