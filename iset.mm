@@ -183308,6 +183308,30 @@ $)
   $}
 
   ${
+    $d .x. k $.  $d B k $.  $d F k $.  $d G k $.  $d I f k y $.  $d R k $.
+    $d X f k y $.  $d k ph $.
+    psrmulvalfifi.s $e |- S = ( I mPwSer R ) $.
+    psrmulvalfifi.b $e |- B = ( Base ` S ) $.
+    psrmulvalfifi.m $e |- .x. = ( .r ` R ) $.
+    psrmulvalfifi.t $e |- .xb = ( .r ` S ) $.
+    psrmulvalfifi.f $e |- ( ph -> F e. B ) $.
+    psrmulvalfifi.g $e |- ( ph -> G e. B ) $.
+    psrmulvalfifi.x $e |- ( ph -> X e. ( NN0 ^m I ) ) $.
+    psrmulvalfifi.i $e |- ( ph -> I e. Fin ) $.
+    psrmulvalfifi.r $e |- ( ph -> R e. Ring ) $.
+    $( The multiplication operation of the multivariate power series structure.
+       (Contributed by Mario Carneiro, 28-Dec-2014.) $)
+    psrmulvalfifi $p |- ( ph -> ( ( F .xb G ) ` X ) =
+        ( R gsum ( k e. { y e. ( NN0 ^m I ) | y oR <_ X } |->
+        ( ( F ` k ) .x. ( G ` ( X oF - k ) ) ) ) ) ) $=
+      ( vf co cfv cv cle cofr wbr ccnv cn cima cfn wcel cn0 cmap crab cmin cmpt
+      cof cgsu eqid wceq psrbagfi syl eleqtrrd psrmulvalfi rabeqdv oveq2d eqtrd
+      mpteq1d ) ALIJFUCUDDHBUELUFUGUHZBUBUEUIUJUKULUMUBUNKUOUCZUPZUPZHUEZIUDLVO
+      UQUSUCJUDGUCZURZUTUCDHVKBVLUPZVPURZUTUCABCVMDEFGUBHIJKLMNOPVMVAZQRALVLVMS
+      AKULUMVMVLVBTVMUBKVTVCVDZVETUAVFAVQVSDUTAHVNVRVPAVKBVMVLWAVGVJVHVI $.
+  $}
+
+  ${
     $d k x B $.  $d k x ph $.  $d k x R $.  $d k x X $.  $d k x Y $.
     $d k x y D $.  $d f k x y I $.
     psrmulcl.s $e |- S = ( I mPwSer R ) $.
