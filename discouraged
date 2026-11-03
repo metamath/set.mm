@@ -12602,7 +12602,7 @@
 "reglogmul" is used by "pellfund14".
 "relcnvtrgOLD" is used by "relcnvtrOLD".
 "relop" is used by "funopg".
-"relopabiv" is used by "relopabv".
+"relopabiv" is used by "relopabvOLD".
 "relrngo" is used by "iscrngo2".
 "relrngo" is used by "isdrngo1".
 "relrngo" is used by "isrngo".
@@ -18806,7 +18806,7 @@ New usage of "relopabVD" is discouraged (0 uses).
 New usage of "relopabiALT" is discouraged (0 uses).
 New usage of "relopabiOLD" is discouraged (0 uses).
 New usage of "relopabiv" is discouraged (1 uses).
-New usage of "relopabv" is discouraged (0 uses).
+New usage of "relopabvOLD" is discouraged (0 uses).
 New usage of "relresOLD" is discouraged (0 uses).
 New usage of "relresfldOLD" is discouraged (0 uses).
 New usage of "relrngo" is discouraged (6 uses).
@@ -21103,7 +21103,7 @@ Proof modification of "relopabVD" is discouraged (354 steps).
 Proof modification of "relopabiALT" is discouraged (74 steps).
 Proof modification of "relopabiOLD" is discouraged (221 steps).
 Proof modification of "relopabiv" is discouraged (50 steps).
-Proof modification of "relopabv" is discouraged (10 steps).
+Proof modification of "relopabvOLD" is discouraged (10 steps).
 Proof modification of "relresOLD" is discouraged (30 steps).
 Proof modification of "relresfldOLD" is discouraged (117 steps).
 Proof modification of "relrngo" is discouraged (96 steps).

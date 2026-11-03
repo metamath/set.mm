@@ -56106,7 +56106,7 @@ $)
     $( Obsolete version of ~ relopab as of 26-Oct-2026.  (Contributed by SN,
        8-Sep-2024.)  (Proof modification is discouraged.)
        (New usage is discouraged.) $)
-    relopabv $p |- Rel { <. x , y >. | ph } $=
+    relopabvOLD $p |- Rel { <. x , y >. | ph } $=
       ( copab eqid relopabiv ) ABCABCDZGEF $.
   $}
 
@@ -619104,7 +619104,7 @@ $)
 
   ${
     $d x y $.
-    $( A variant of ~ relopabi (which could be proved from it, similarly to
+    $( A variant of ~ relopabiv (which could be proved from it, similarly to
        ~ relxp from ~ xpss ).  (Contributed by BJ, 28-Dec-2023.) $)
     bj-opabssvv $p |- { <. x , y >. | ph } C_ ( _V X. _V ) $=
       ( copab cv cvv wcel wa cxp vex pm3.2i a1i ssopab2i df-xp sseqtrri ) ABCDB
