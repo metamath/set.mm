@@ -883000,157 +883000,126 @@ $)
 
   ${
     fmuleq1d.1 $e |- ( ph -> A = C ) $.
-    fmuleq1d.2 $e |- ( ph -> ( F ` ( A x. B ) ) = ( ( F ` A ) x. ( F ` B )
-    ) ) $.
-    $( Transport a multiplication identity for values of ` F ` along equality
-       of its first argument.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    fmuleq1d $p |- ( ph -> ( F ` ( C x. B ) ) = ( ( F ` C ) x. ( F ` B ) )
-    ) $=
-      ( cmul co cfv oveq1d fveq2d eqtrd eqtr3d ) ABCHIEJDCHIEJDEJCEJHIABCHIDCHI
-      EABDCHFKLABCHIEJBEJCEJHIDEJCEJHIGABEJDEJCEJHABDEFLKMN $.
+    fmuleq1d.2 $e |- ( ph -> ( F ` ( A x. B ) ) = ( ( F ` A ) x. D ) ) $.
+    $( Replace ` A ` by an equal ` C ` in the identity
+       ` ( F `` ( A x. B ) ) = ( ( F `` A ) x. D ) ` .  The case
+       ` D = ( F `` B ) ` transports a multiplication identity for values of
+       ` F ` .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    fmuleq1d $p |- ( ph -> ( F ` ( C x. B ) ) = ( ( F ` C ) x. D ) ) $=
+      ( cmul co cfv oveq1d fveq2d eqtrd eqtr3d ) ABCIJZFKZDCIJZFKDFKZEIJZAPRFAB
+      DCIGLMAQBFKZEIJTHAUASEIABDFGMLNO $.
   $}
 
   ${
     fmulcomd.1 $e |- ( ph -> A e. CC ) $.
     fmulcomd.2 $e |- ( ph -> B e. CC ) $.
-    fmulcomd.3 $e |- ( ph -> ( F ` A ) e. CC ) $.
-    fmulcomd.4 $e |- ( ph -> ( F ` B ) e. CC ) $.
-    fmulcomd.5 $e |- ( ph -> ( F ` ( A x. B ) ) = ( ( F ` A ) x. ( F ` B )
-    ) ) $.
-    $( Reverse the arguments of a multiplication identity for values of ` F ` .
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    fmulcomd $p |- ( ph -> ( F ` ( B x. A ) ) = ( ( F ` B ) x. ( F ` A ) )
-    ) $=
-      ( cmul co cfv mulcomd fveq2d eqtrd eqtr3d ) ABCJKDLCBJKDLCDLBDLJKABCJKCBJ
-      KDABCEFMNABCJKDLBDLCDLJKCDLBDLJKIABDLCDLGHMOP $.
+    fmulcomd.3 $e |- ( ph -> C e. CC ) $.
+    fmulcomd.4 $e |- ( ph -> D e. CC ) $.
+    fmulcomd.5 $e |- ( ph -> ( F ` ( A x. B ) ) = ( C x. D ) ) $.
+    $( Reverse the arguments and factors in an identity
+       ` ( F `` ( A x. B ) ) = ( C x. D ) ` .  Taking ` C = ( F `` A ) ` and
+       ` D = ( F `` B ) ` reverses a multiplication identity for values of
+       ` F ` .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    fmulcomd $p |- ( ph -> ( F ` ( B x. A ) ) = ( D x. C ) ) $=
+      ( cmul co cfv mulcomd fveq2d eqtrd eqtr3d ) ABCLMZFNZCBLMZFNEDLMZASUAFABC
+      GHOPATDELMUBKADEIJOQR $.
   $}
 
   ${
-    $d F k z $.  $d K k z $.  $d N k $.  $d P k z $.  $d Z z $.
-    fmulralspecd.1 $e |- ( ph -> K e. ( 1 ..^ N ) ) $.
-    fmulralspecd.2 $e |- ( ph -> Z e. ZZ ) $.
+    $d F k z $.  $d K k z $.  $d A k $.  $d C k z $.  $d P k z $.  $d Z z $.
+    fmulralspecd.1 $e |- ( ph -> K e. A ) $.
+    fmulralspecd.2 $e |- ( ph -> Z e. C ) $.
     fmulralspecd.3 $e |- ( ph -> -. P || Z ) $.
-    fmulralspecd.4 $e |- ( ph -> A. k e. ( 1 ..^ N ) A. z e. ZZ ( -. P || z
-    -> ( F ` ( k x. z ) ) = ( ( F ` k ) x. ( F ` z ) ) ) ) $.
-    $( Specialize a bounded family of multiplication identities at an arbitrary
-       nondivisible integer.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    fmulralspecd $p |- ( ph -> ( F ` ( K x. Z ) ) = ( ( F ` K ) x. ( F ` Z
-    ) ) ) $=
-      ( cdvds wbr wn cmul co cfv wceq cv wi cz wral c1 cfzo oveq1 fveq2d oveq1d
-      fveq2 eqeq12d imbi2d breq2 notbid oveq2 oveq2d imbi12d rspc2v syl2anc mpd
-      wcel ) ACHMNOFHPQERFERHERPQSKACBTMNODTBTPQERDTERBTERPQSUABUBUCDUDGUEQUCCH
-      MNOFHPQERFERHERPQSUALAFUDGUEQUTHUBUTCBTMNODTBTPQERDTERBTERPQSUABUBUCDUDGU
-      EQUCCHMNOFHPQERFERHERPQSUAUAIJCBTMNODTBTPQERDTERBTERPQSUACHMNOFHPQERFERHE
-      RPQSUACBTMNOFBTPQERFERBTERPQSUADBFHUDGUEQUBDTFSDTBTPQERDTERBTERPQSFBTPQER
-      FERBTERPQSCBTMNODTFSDTBTPQERFBTPQERDTERBTERPQFERBTERPQDTFSDTBTPQFBTPQEDTF
-      BTPUFUGDTFSDTERFERBTERPDTFEUIUHUJUKBTHSCBTMNOCHMNOFBTPQERFERBTERPQSFHPQER
-      FERHERPQSBTHSCBTMNCHMNBTHCMULUMBTHSFBTPQERFHPQERFERBTERPQFERHERPQBTHSFBTP
-      QFHPQEBTHFPUNUGBTHSBTERHERFERPBTHEUIUOUJUPUQURUSUS $.
+    fmulralspecd.4 $e |- ( ph -> A. k e. A A. z e. C ( -. P || z -> ( F ` ( k
+      x. z ) ) = ( ( F ` k ) x. ( F ` z ) ) ) ) $.
+    $( Specialize a doubly quantified family of multiplication identities at
+       ` K ` and ` Z ` , where ` Z ` is not divisible by ` P ` .  Taking
+       ` A = ( 1 ..^ N ) ` and ` C = ZZ ` gives the specialization for a
+       bounded family of multipliers at an integer not divisible by ` P ` .
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    fmulralspecd $p |- ( ph -> ( F ` ( K x. Z ) ) = ( ( F ` K ) x. ( F ` Z )
+      ) ) $=
+      ( cdvds wbr cmul co cfv wceq wi wn cv wral wcel oveq1 fveq2d fveq2 oveq1d
+      eqeq12d imbi2d breq2 notbid oveq2 oveq2d imbi12d rspc2v syl2anc mpd ) AEI
+      NOZUAZHIPQZGRZHGRZIGRZPQZSZLAEBUBZNOZUAZFUBZVGPQZGRZVJGRZVGGRZPQZSZTZBDUC
+      FCUCZUTVFTZMAHCUDIDUDVRVSTJKVQVSVIHVGPQZGRZVCVNPQZSZTFBHICDVJHSZVPWCVIWDV
+      LWAVOWBWDVKVTGVJHVGPUEUFWDVMVCVNPVJHGUGUHUIUJVGISZVIUTWCVFWEVHUSVGIENUKUL
+      WEWAVBWBVEWEVTVAGVGIHPUMUFWEVNVDVCPVGIGUGUNUIUOUPUQURUR $.
   $}
 
   ${
     $d A z $.  $d B z $.
-    $( Equal multipliers give equivalent universally quantified multiplication
-       identities for the listed values of ` F ` .  (Contributed by Zhi Wang,
+    $( Equal multipliers give equivalent restricted universal statements of the
+       identity ` ( F `` ( A x. E ) ) = ( ( F `` A ) x. D ) ` under condition
+       ` ph ` .  Taking ` C = ZZ ` , ` E = z ` , ` D = ( F `` z ) ` , and
+       ` ph ` to be ` -. P || z ` gives the multiplication identities for
+       values of ` F ` at integers not divisible by ` P ` .  (Contributed by
+       Zhi Wang, 17-Oct-2026.) $)
+    fmulraleq $p |- ( A = B -> ( A. z e. C ( ph -> ( F ` ( A x. E ) ) = ( ( F
+      ` A ) x. D ) ) <-> A. z e. C ( ph -> ( F ` ( B x. E ) ) = ( ( F ` B )
+      x. D ) ) ) ) $=
+      ( wceq cmul co cfv wi oveq1 fveq2d fveq2 oveq1d eqeq12d imbi2d ralbidv )
+      CDIZACGJKZHLZCHLZFJKZIZMADGJKZHLZDHLZFJKZIZMBEUAUFUKAUAUCUHUEUJUAUBUGHCDG
+      JNOUAUDUIFJCDHPQRST $.
+  $}
+
+  ${
+    $d C v z $.  $d D v z $.  $d F v z $.  $d N v z $.  $d P v z $.
+    $( Changing the bound variable preserves the restricted universal statement
+       of the displayed identity, with fixed factor ` D ` .  Taking ` C = ZZ `
+       and ` D = ( F `` N ) ` gives the multiplication identity for values of
+       ` F ` at integers not divisible by ` P ` .  (Contributed by Zhi Wang,
        17-Oct-2026.) $)
-    fmulraleq $p |- ( A = B -> ( A. z e. ZZ ( -. P || z -> ( F ` ( A x. z )
-    ) = ( ( F ` A ) x. ( F ` z ) ) ) <-> A. z e. ZZ ( -. P || z -> ( F ` (
-    B x. z ) ) = ( ( F ` B ) x. ( F ` z ) ) ) ) ) $=
-      ( wceq cv cdvds wbr wn cmul co cfv wi oveq1 fveq2d fveq2 oveq1d eqeq12d
-      cz imbi2d ralbidv ) BCFDAGHIJBAGKLEMBEMAGEMKLFNDAGHIJCAGKLEMCEMAGEMKLFNAT
-      BCFBAGKLEMBEMAGEMKLFCAGKLEMCEMAGEMKLFDAGHIJBCFBAGKLEMCAGKLEMBEMAGEMKLCEMA
-      GEMKLBCFBAGKLCAGKLEBCAGKOPBCFBEMCEMAGEMKBCEQRSUAUB $.
+    fmulralcbv $p |- ( A. z e. C ( -. P || z -> ( F ` ( N x. z ) ) = ( D x. (
+      F ` z ) ) ) <-> A. v e. C ( -. P || v -> ( F ` ( N x. v ) ) = ( D x. (
+      F ` v ) ) ) ) $=
+      ( cv cdvds wbr wn cmul co cfv wceq wi breq2 notbid oveq2 fveq2d cbvralvw
+      fveq2 oveq2d eqeq12d imbi12d ) EAHZIJZKZGUFLMZFNZDUFFNZLMZOZPEBHZIJZKZGUN
+      LMZFNZDUNFNZLMZOZPABCUFUNOZUHUPUMVAVBUGUOUFUNEIQRVBUJURULUTVBUIUQFUFUNGLS
+      TVBUKUSDLUFUNFUBUCUDUEUA $.
   $}
 
   ${
-    $d F v z $.  $d N v z $.  $d P v z $.
-    $( Renaming the bound integer variable preserves the assertion that ` F `
-       satisfies the displayed multiplication identity at integers not
-       divisible by ` P ` .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    fmulralcbv $p |- ( A. z e. ZZ ( -. P || z -> ( F ` ( N x. z ) ) = ( ( F
-    ` N ) x. ( F ` z ) ) ) <-> A. v e. ZZ ( -. P || v -> ( F ` ( N x. v ) )
-    = ( ( F ` N ) x. ( F ` v ) ) ) ) $=
-      ( cv cdvds wbr wn cmul co cfv wceq wi cz breq2 notbid oveq2 fveq2d fveq2
-      oveq2d eqeq12d imbi12d cbvralvw ) CAFGHIEAFJKDLEDLAFDLJKMNCBFGHIEBFJKDLED
-      LBFDLJKMNABOAFBFMCAFGHICBFGHIEAFJKDLEDLAFDLJKMEBFJKDLEDLBFDLJKMAFBFMCAFGH
-      CBFGHAFBFCGPQAFBFMEAFJKDLEBFJKDLEDLAFDLJKEDLBFDLJKAFBFMEAFJKEBFJKDAFBFEJR
-      SAFBFMAFDLBFDLEDLJAFBFDTUAUBUCUD $.
-  $}
-
-  ${
-    $d F m $.  $d N m $.  $d P m $.  $d k m z $.  $d k ph $.
-    fmulindhypd.1 $e |- ( ph -> P e. RR ) $.
-    fmulindhypd.2 $e |- ( ph -> N e. NN ) $.
-    fmulindhypd.3 $e |- ( ph -> N < P ) $.
-    fmulindhypd.4 $e |- ( ph -> A. m e. NN ( m < N -> ( m < P -> A. z e. ZZ
-    ( -. P || z -> ( F ` ( m x. z ) ) = ( ( F ` m ) x. ( F ` z ) ) ) ) ) )
-    $.
-    $( Restrict a strong-induction hypothesis to the smaller positive residue
-       multipliers.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    fmulindhypd $p |- ( ph -> A. k e. ( 1 ..^ N ) A. z e. ZZ ( -. P || z ->
-    ( F ` ( k x. z ) ) = ( ( F ` k ) x. ( F ` z ) ) ) ) $=
-      ( cv wbr cmul co cfv wi c1 cfzo clt cdvds wn wceq cz wral wcel wa fzossnn
-      cn simpr sselid nnred adantr elfzolt2 lttrd breq1 fmulraleq imbi12d rspcv
-      cr syl mpd ralrimiva ) ACBLUAMUBDLBLNOFPDLFPBLFPNOUCQBUDUEDRGSOADLRGSOUFU
-      GDLCTMCBLUAMUBDLBLNOFPDLFPBLFPNOUCQBUDUEADLRGSOUFUGDLGCADLRGSOUFUGDLADLRG
-      SOUFUGRGSOUIDLGUHADLRGSOUFUJUKULAGUTUFDLRGSOUFAGIULUMACUTUFDLRGSOUFHUMADL
-      RGSOUFUGDLRGSOUFDLGTMADLRGSOUFUJDLRGUNVAAGCTMDLRGSOUFJUMUOADLRGSOUFUGDLGT
-      MDLCTMCBLUAMUBDLBLNOFPDLFPBLFPNOUCQBUDUEQADLRGSOUFUGDLRGSOUFDLGTMADLRGSOU
-      FUJDLRGUNVAADLRGSOUFUGELGTMELCTMCBLUAMUBELBLNOFPELFPBLFPNOUCQBUDUEQQEUIUE
-      DLGTMDLCTMCBLUAMUBDLBLNOFPDLFPBLFPNOUCQBUDUEQQAELGTMELCTMCBLUAMUBELBLNOFP
-      ELFPBLFPNOUCQBUDUEQQEUIUEDLRGSOUFKUMADLRGSOUFUGDLUIUFELGTMELCTMCBLUAMUBEL
-      BLNOFPELFPBLFPNOUCQBUDUEQQEUIUEDLGTMDLCTMCBLUAMUBDLBLNOFPDLFPBLFPNOUCQBUD
-      UEQQQADLRGSOUFUGRGSOUIDLGUHADLRGSOUFUJUKELGTMELCTMCBLUAMUBELBLNOFPELFPBLF
-      PNOUCQBUDUEQQDLGTMDLCTMCBLUAMUBDLBLNOFPDLFPBLFPNOUCQBUDUEQQEDLUIELDLUCELG
-      TMDLGTMELCTMCBLUAMUBELBLNOFPELFPBLFPNOUCQBUDUEQDLCTMCBLUAMUBDLBLNOFPDLFPB
-      LFPNOUCQBUDUEQELDLGTUPELDLUCELCTMDLCTMCBLUAMUBELBLNOFPELFPBLFPNOUCQBUDUEC
-      BLUAMUBDLBLNOFPDLFPBLFPNOUCQBUDUEELDLCTUPBELDLCFUQURURUSVAVBVBVBVC $.
-  $}
-
-  ${
-    $d F z $.  $d N z $.  $d P z $.  $d Z z $.
-    fmulralspeczd.1 $e |- ( ph -> Z e. ZZ ) $.
+    $d C z $.  $d D z $.  $d F z $.  $d N z $.  $d P z $.  $d Z z $.
+    fmulralspeczd.1 $e |- ( ph -> Z e. C ) $.
     fmulralspeczd.2 $e |- ( ph -> -. P || Z ) $.
-    fmulralspeczd.3 $e |- ( ph -> A. z e. ZZ ( -. P || z -> ( F ` ( N x. z
-    ) ) = ( ( F ` N ) x. ( F ` z ) ) ) ) $.
-    $( Specialize the universal residue multiplication identity at an integer.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    fmulralspeczd $p |- ( ph -> ( F ` ( N x. Z ) ) = ( ( F ` N ) x. ( F ` Z
-    ) ) ) $=
-      ( cdvds wbr wn cmul co cfv wceq cv wi cz wral breq2 notbid fveq2d eqeq12d
-      wcel oveq2 fveq2 oveq2d imbi12d rspcv syl mpd ) ACFJKLEFMNDOEDOFDOMNPHACB
-      QJKLEBQMNDOEDOBQDOMNPRBSTCFJKLEFMNDOEDOFDOMNPRIAFSUECBQJKLEBQMNDOEDOBQDOM
-      NPRBSTCFJKLEFMNDOEDOFDOMNPRRGCBQJKLEBQMNDOEDOBQDOMNPRCFJKLEFMNDOEDOFDOMNP
-      RBFSBQFPCBQJKLCFJKLEBQMNDOEDOBQDOMNPEFMNDOEDOFDOMNPBQFPCBQJKCFJKBQFCJUAUB
-      BQFPEBQMNDOEFMNDOEDOBQDOMNEDOFDOMNBQFPEBQMNEFMNDBQFEMUFUCBQFPBQDOFDOEDOMB
-      QFDUGUHUDUIUJUKULUL $.
+    fmulralspeczd.3 $e |- ( ph -> A. z e. C ( -. P || z -> ( F ` ( N x. z ) )
+      = ( D x. ( F ` z ) ) ) ) $.
+    $( Specialize a universally quantified multiplication identity with fixed
+       factor ` D ` at ` Z ` , where ` Z ` is not divisible by ` P ` .  Taking
+       ` C = ZZ ` and ` D = ( F `` N ) ` gives the specialization of the
+       multiplication identity for values of ` F ` at an integer.  (Contributed
+       by Zhi Wang, 17-Oct-2026.) $)
+    fmulralspeczd $p |- ( ph -> ( F ` ( N x. Z ) ) = ( D x. ( F ` Z ) ) ) $=
+      ( cdvds wbr wn cmul co cfv wceq wi mpd wral wcel breq2 notbid oveq2 fveq2
+      cv fveq2d oveq2d eqeq12d imbi12d rspcv syl ) AEHLMZNZGHOPZFQZDHFQZOPZRZJA
+      EBUGZLMZNZGVAOPZFQZDVAFQZOPZRZSZBCUAZUOUTSZKAHCUBVJVKSIVIVKBHCVAHRZVCUOVH
+      UTVLVBUNVAHELUCUDVLVEUQVGUSVLVDUPFVAHGOUEUHVLVFURDOVAHFUFUIUJUKULUMTT $.
   $}
 
   ${
     fmulmuliffd.1 $e |- ( ph -> K e. CC ) $.
     fmulmuliffd.2 $e |- ( ph -> Q e. CC ) $.
     fmulmuliffd.3 $e |- ( ph -> Z e. CC ) $.
-    fmulmuliffd.4 $e |- ( ph -> ( F ` K ) e. CC ) $.
-    fmulmuliffd.5 $e |- ( ph -> ( F ` Q ) e. CC ) $.
-    fmulmuliffd.6 $e |- ( ph -> ( F ` Z ) e. CC ) $.
-    fmulmuliffd.7 $e |- ( ph -> ( F ` ( Q x. Z ) ) e. CC ) $.
-    fmulmuliffd.8 $e |- ( ph -> ( F ` K ) =/= 0 ) $.
-    fmulmuliffd.9 $e |- ( ph -> ( F ` ( K x. ( Q x. Z ) ) ) = ( ( F ` K ) x.
-    ( F ` ( Q x. Z ) ) ) ) $.
-    fmulmuliffd.10 $e |- ( ph -> ( F ` ( K x. Z ) ) = ( ( F ` K ) x. ( F ` Z
-    ) ) ) $.
-    $( A multiplier with nonzero value preserves and reflects a multiplication
-       identity.  Cancel its value using the two given multiplication
-       identities.  Only the listed evaluations of ` F ` are assumed to be
-       complex numbers.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    fmulmuliffd $p |- ( ph -> ( ( F ` ( Q x. ( K x. Z ) ) ) = ( ( F ` Q ) x.
-    ( F ` ( K x. Z ) ) ) <-> ( F ` ( Q x. Z ) ) = ( ( F ` Q ) x. ( F ` Z ) )
-    ) ) $=
-      ( cmul co cfv wceq mul12d fveq2d eqtrd oveq2d eqeq12d mulcld mulcand
-      bitrd ) ABDEPQPQCRBCRDEPQCRPQSDCRBEPQCRPQDCRBCRECRPQPQSBEPQCRBCRECRPQSABD
-      EPQPQCRDCRBEPQCRPQBCRDEPQCRPQDCRBCRECRPQPQABDEPQPQCRDBEPQPQCRDCRBEPQCRPQA
-      BDEPQPQDBEPQPQCABDEGFHTUANUBABCRDEPQCRPQBCRDCRECRPQPQDCRBCRECRPQPQADEPQCR
-      DCRECRPQBCRPOUCABCRDCRECRJIKTUBUDABEPQCRBCRECRPQDCRLABCRECRJKUEIMUFUG $.
+    fmulmuliffd.4 $e |- ( ph -> A e. CC ) $.
+    fmulmuliffd.5 $e |- ( ph -> B e. CC ) $.
+    fmulmuliffd.6 $e |- ( ph -> C e. CC ) $.
+    fmulmuliffd.7 $e |- ( ph -> D e. CC ) $.
+    fmulmuliffd.8 $e |- ( ph -> A =/= 0 ) $.
+    fmulmuliffd.9 $e |- ( ph -> ( F ` ( K x. ( Q x. Z ) ) ) = ( A x. D ) ) $.
+    fmulmuliffd.10 $e |- ( ph -> ( F ` ( K x. Z ) ) = ( A x. C ) ) $.
+    $( The displayed identity at ` ( Q x. ( K x. Z ) ) ` is equivalent to
+       ` D = ( B x. C ) ` under the two given factorization identities and
+       ` A =/= 0 ` .  Taking ` A = ( F `` K ) ` , ` B = ( F `` Q ) ` ,
+       ` C = ( F `` Z ) ` , and ` D = ( F `` ( Q x. Z ) ) ` recovers
+       cancellation of a multiplier's nonzero value in a multiplication
+       identity.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    fmulmuliffd $p |- ( ph -> ( ( F ` ( Q x. ( K x. Z ) ) ) = ( B x. ( F ` (
+      K x. Z ) ) ) <-> D = ( B x. C ) ) ) $=
+      ( cmul cfv wceq mul12d fveq2d eqtrd oveq2d eqeq12d mulcld mulcand bitrd
+      co ) AFHITUKZTUKZGUAZCULGUAZTUKZUBBETUKZBCDTUKZTUKZUBEURUBAUNUQUPUSAUNHFI
+      TUKTUKZGUAUQAUMUTGAFHIKJLUCUDRUEAUPCBDTUKZTUKUSAUOVACTSUFACBDNMOUCUEUGAEU
+      RBPACDNOUHMQUIUJ $.
   $}
 
   ${
@@ -883260,8 +883229,8 @@ $)
        hypotheses.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     fmulonerid $p |- ( ph -> ( F ` ( A x. 1 ) ) = ( ( F ` A ) x. ( F ` 1 ) )
       ) $=
-      ( c1 cc wcel ax-1cn a1i cfv eqeltrd fmuloned fmulcomd ) AGBCGHIAJKDAGCLGH
-      FGHIAJKMEABCDEFNO $.
+      ( c1 cfv cc wcel ax-1cn a1i eqeltrd fmuloned fmulcomd ) AGBGCHZBCHCGIJAKL
+      ZDAPGIFQMEABCDEFNO $.
   $}
 
   ${
@@ -884286,22 +884255,6 @@ $)
     lioune0 $p |- ( ( lam ` A ) =/= 0 -> A =/= 0 ) $=
       ( cc0 cliou cfv wceq fveq2 liou0 eqtrdi necon3i ) ABACDBABEACDBCDBABCFGHI
       $.
-  $}
-
-  ${
-    $( A nonempty value of Liouville's function has a rational argument.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liourcl $p |- ( ( lam ` A ) =/= (/) -> A e. QQ ) $=
-      ( cliou cfv c0 wne cdm cq wcel ndmfv necon1ai lioudm eleqtrdi ) ABCDEABFG
-      ABFHABCDABIJKL $.
-  $}
-
-  ${
-    $( A nonempty value of the signed prime Omega function has a nonzero
-       rational argument.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomrcl $p |- ( ( Omega ` A ) =/= (/) -> A e. ( QQ \ { 0 } ) ) $=
-      ( cbom cfv c0 wne cdm cq cc0 csn cdif wcel ndmfv necon1ai bomdm eleqtrdi
-      ) ABCDEABFGHIJABFKABCDABLMNO $.
   $}
 
   ${
@@ -889109,18 +889062,18 @@ $)
     lioumodabsmuld.8 $e |- ( ph -> -. 3 || P ) $.
     lioumodabsmuld.9 $e |- ( ph -> ( F ` ( ( abs ` A ) x. B ) ) = ( ( F ` (
     abs ` A ) ) x. ( F ` B ) ) ) $.
-    $( Extend a residue-function multiplication identity from an absolute value
-       to its signed argument.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( Under the displayed hypotheses, a multiplication identity for the
+       residue function at ` ( abs `` A ) ` and ` B ` implies the identity at
+       ` A ` and ` B ` .  See ~ lioumodval for the residue function.
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
     lioumodabsmuld $p |- ( ph -> ( F ` ( A x. B ) ) = ( ( F ` A ) x. ( F `
     B ) ) ) $=
-      ( cabs cfv wceq cmul co cneg wa simpr adantr fmuleq1d negeqd zcnd negnegd
+      ( cfv wceq co cabs cmul cneg wa simpr adantr fmuleq1d negeqd zcnd negnegd
       ex eqtrd c1 cfzo wcel cz elfzoelz fzo1ndvdsd lioumodnegmuld cr zred absor
-      syl wo mpjaod ) ACRSCTCDUAUBFSCFSDFSUAUBTCRSCUCTACRSCTCDUAUBFSCFSDFSUAUBT
-      ACRSCTUDCRSDCFACRSCTUEACRSDUAUBFSCRSFSDFSUAUBTCRSCTQUFUGUKACRSCUCTCDUAUBF
-      SCFSDFSUAUBTACRSCUCTUDCRSUCDCFACRSCUCTUDCRSUCCUCUCCACRSCUCTUDCRSCUCACRSCU
-      CTUEUHACUCUCCTCRSCUCTACACKUIUJUFULACRSUCDUAUBFSCRSUCFSDFSUAUBTCRSCUCTABCR
-      SDEFGHIJACRSUMEUNUBUOCRSUPUOLCRSUMEUQVCMACRSELURNOPQUSUFUGUKACUTUOCRSCTCR
-      SCUCTVDACKVACVBVCVE $.
+      syl wo mpjaod ) ACUARZCSZCDUBTFRCFRDFRZUBTSZVFCUCZSZAVGVIAVGUDVFDCVHFAVGU
+      EAVFDUBTFRVFFRVHUBTSVGQUFUGUKAVKVIAVKUDZVFUCZDCVHFVLVMVJUCZCVLVFVJAVKUEUH
+      AVNCSVKACACKUIUJUFULAVMDUBTFRVMFRVHUBTSVKABVFDEFGHIJAVFUMEUNTUOVFUPUOLVFU
+      MEUQVCMAVFELURNOPQUSUFUGUKACUTUOVGVKVDACKVACVBVCVE $.
   $}
 
   ${
@@ -889135,30 +889088,21 @@ $)
     lioumodsmallabsmuld.7 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 4 x. P
     ) = ( a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
     lioumodsmallabsmuld.8 $e |- ( ph -> -. 3 || P ) $.
-    $( Multiplicativity for a positive multiplier and a signed argument whose
-       absolute product is below the modulus.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
+    $( Under the displayed residue-function hypotheses, ` F ` is multiplicative
+       at a positive integer ` N ` and a nonzero integer ` D ` when
+       ` ( N x. ( abs `` D ) ) < P ` .  See ~ lioumodval for the construction.
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
     lioumodsmallabsmuld $p |- ( ph -> ( F ` ( N x. D ) ) = ( ( F ` N ) x. (
     F ` D ) ) ) $=
-      ( cn cfv wcel cabs zcnd c1 cfzo co fzossnn sselid nncnd cc cc0 wne cprime
-      prmnn syl cdvds wbr clt cmul nnred nnmulcld nnlemul2d lelttrd 3jca elfzo1
+      ( cfv cn cc wcel zcnd c1 co fzossnn sselid nncnd cc0 wne cprime prmnn syl
+      cfzo cdvds wbr cabs clt cmul nnred nnmulcld nnlemul2d lelttrd 3jca elfzo1
       sylibr fzo1ndvdsd cz wb nnzd dvdsabsb syl2anc mtbird lioumodcnne0d simpld
-      w3a lioumodsmallmuld fmulcomd lioumodabsmuld ) ACFEACLUAAFAUBDUCUDQFDUEKU
-      FUGACERUHSCERUIUJABCDEIADUKSDQSJDULUMLADCUNUODCTRUNUOACTRDACTRQSDQSCTRDUP
-      UOVNCTRUBDUCUDSACTRQSDQSCTRDUPUOMADUKSDQSJDULUMACTRFCTRUQUDDACTRMURAFCTRU
-      QUDAFCTRAUBDUCUDQFDUEKUFMUSURADADUKSDQSJDULUMURAFCTRAUBDUCUDQFDUEKUFMUTNV
-      AVBDCTRVCVDVEADVFSCVFSDCUNUODCTRUNUOVGADADUKSDQSJDULUMVHLDCVIVJVKVLVMAFER
-      UHSFERUIUJABFDEIADUKSDQSJDULUMAFAUBDUCUDQFDUEKUFVHAFDKVEVLVMABCFDEGHIJLAC
-      TRQSDQSCTRDUPUOVNCTRUBDUCUDSACTRQSDQSCTRDUPUOMADUKSDQSJDULUMACTRFCTRUQUDD
-      ACTRMURAFCTRUQUDAFCTRAUBDUCUDQFDUEKUFMUSURADADUKSDQSJDULUMURAFCTRAUBDUCUD
-      QFDUEKUFMUTNVAVBDCTRVCVDAFAUBDUCUDQFDUEKUFVHAFDKVEOPAFCTREAFAUBDUCUDQFDUE
-      KUFUGACTRMUGAFERUHSFERUIUJABFDEIADUKSDQSJDULUMAFAUBDUCUDQFDUEKUFVHAFDKVEV
-      LVMACTRERUHSCTRERUIUJABCTRDEIADUKSDQSJDULUMACTRMVHACTRDACTRQSDQSCTRDUPUOV
-      NCTRUBDUCUDSACTRQSDQSCTRDUPUOMADUKSDQSJDULUMACTRFCTRUQUDDACTRMURAFCTRUQUD
-      AFCTRAUBDUCUDQFDUEKUFMUSURADADUKSDQSJDULUMURAFCTRAUBDUCUDQFDUEKUFMUTNVAVB
-      DCTRVCVDVEVLVMABFCTRDEIKACTRQSDQSCTRDUPUOVNCTRUBDUCUDSACTRQSDQSCTRDUPUOMA
-      DUKSDQSJDULUMACTRFCTRUQUDDACTRMURAFCTRUQUDAFCTRAUBDUCUDQFDUEKUFMUSURADADU
-      KSDQSJDULUMURAFCTRAUBDUCUDQFDUEKUFMUTNVAVBDCTRVCVDNVOVPVQVP $.
+      w3a lioumodsmallmuld fmulcomd lioumodabsmuld ) ACFCEQZFEQZEACLUAAFAUBDULU
+      CZRFDUDKUEZUFZAVRSTVRUGUHABCDEIADUITDRTZJDUJUKZLADCUMUNZDCUOQZUMUNZAWFDAW
+      FRTZWCWFDUPUNZVNWFVTTAWHWCWIMWDAWFFWFUQUCZDAWFMURAWJAFWFWAMUSURADWDURAFWF
+      WAMUTNVAVBDWFVCVDZVEZADVFTCVFTWEWGVGADWDVHLDCVIVJVKVLVMAVSSTVSUGUHABFDEIW
+      DAFWAVHZAFDKVEZVLVMZABCFDEGHIJLWKWMWNOPAFWFVSWFEQZEWBAWFMUFWOAWPSTWPUGUHA
+      BWFDEIWDAWFMVHWLVLVMABFWFDEIKWKNVOVPVQVP $.
   $}
 
   ${
@@ -889184,54 +889128,31 @@ $)
     liougb4rigidstepd.14 $e |- ( ph -> -. 3 || P ) $.
     liougb4rigidstepd.15 $e |- ( ph -> A. k e. ( 1 ..^ N ) A. z e. ZZ (
     -. P || z -> ( F ` ( k x. z ) ) = ( ( F ` k ) x. ( F ` z ) ) ) ) $.
-    $( Short signed multiples and smaller-multiplier identities imply the next
-       residue multiplication identity.  (Contributed by Zhi Wang,
+    $( Under the displayed residue-function hypotheses, identities for smaller
+       positive multipliers and the bounded congruence witnesses ` K ` and
+       ` D ` imply ` ( F `` ( N x. Z ) ) = ( ( F `` N ) x. ( F `` Z ) ) ` .
+       The congruence relates ` ( K x. Z ) ` to ` D ` modulo ` P ` ; see
+       ~ lioumodval for the residue function.  (Contributed by Zhi Wang,
        17-Oct-2026.) $)
     liougb4rigidstepd $p |- ( ph -> ( F ` ( N x. Z ) ) = ( ( F ` N ) x. (
     F ` Z ) ) ) $=
       ( cfv cmul co wceq cabs cn wcel clt wbr w3a cfzo cprime prmnn syl fzossnn
       c1 nnred sselid elfzolt2 lttrd 3jca elfzo1 sylibr nnzd zmulcld fzo1ndvdsd
-      prmndvdsmuld fmulralspecd lioumodabsmuld zcnd mul12d eqid lioumodmulcongd
-      fveq2d eqtrd lioumodsmallabsmuld lioumodcongd eqtr3d oveq2d lioumodcnne0d
-      cmo a1i cc cc0 wne simpld cdvds cz dvdsabsb syl2anc mtbird mulcld mulcand
-      wb simprd mpbid ) AHGUHIJUIUJGUHUIUJHGUHIGUHJGUHUIUJUIUJUKIJUIUJGUHIGUHJG
-      UHUIUJUKAHIJUIUJUIUJGUHHGUHIJUIUJGUHUIUJHGUHIGUHJGUHUIUJUIUJABHIJUIUJEGKL
-      MNRAHULUHUMUNEUMUNHULUHEUOUPUQHULUHVCEURUJUNAHULUHUMUNEUMUNHULUHEUOUPTAEU
-      SUNEUMUNNEUTVAAHULUHIEAHULUHTVDAIAVCEURUJUMIEVBOVEVDAEAEUSUNEUMUNNEUTVAVD
-      UAAIVCEURUJUNIEUOUPOIVCEVFVAVGVHEHULUHVIVJAIJAIAVCEURUJUMIEVBOVEVKPVLAIJE
-      NAIAVCEURUJUMIEVBOVEVKPAIEOVMQVNUEUFACEFGHULUHIIJUIUJAHULUHUMUNIUMUNHULUH
-      IUOUPUQHULUHVCIURUJUNAHULUHUMUNIUMUNHULUHIUOUPTAVCEURUJUMIEVBOVEUAVHIHULU
-      HVIVJAIJAIAVCEURUJUMIEVBOVEVKPVLAIJENAIAVCEURUJUMIEVBOVEVKPAIEOVMQVNUGVOV
-      PAHIJUIUJUIUJGUHIGUHHGUHJGUHUIUJUIUJHGUHIGUHJGUHUIUJUIUJAHIJUIUJUIUJGUHIG
-      UHDGUHUIUJIGUHHGUHJGUHUIUJUIUJAHIJUIUJUIUJGUHIDUIUJGUHIGUHDGUHUIUJAHIJUIU
-      JUIUJGUHIHJUIUJUIUJGUHIDUIUJGUHAHIJUIUJUIUJIHJUIUJUIUJGAHIJAHRVQAIAIAVCEU
-      RUJUMIEVBOVEVKVQAJPVQVRWAABIHJUIUJIDEGMAEUSUNEUMUNNEUTVAAIAVCEURUJUMIEVBO
-      VEVKAHJRPVLAIAVCEURUJUMIEVBOVEVKSIEWHUJIEWHUJUKAIEWHUJVSWIUDVTWBABDEGIKLM
-      NOSUBUCUEUFWCWBADGUHHGUHJGUHUIUJIGUHUIAHJUIUJGUHDGUHHGUHJGUHUIUJABHJUIUJD
-      EGMAHJRPVLSUDWDABHJEGKLMNRAHULUHUMUNEUMUNHULUHEUOUPUQHULUHVCEURUJUNAHULUH
-      UMUNEUMUNHULUHEUOUPTAEUSUNEUMUNNEUTVAAHULUHIEAHULUHTVDAIAVCEURUJUMIEVBOVE
-      VDAEAEUSUNEUMUNNEUTVAVDUAAIVCEURUJUNIEUOUPOIVCEVFVAVGVHEHULUHVIVJPQUEUFAC
-      EFGHULUHIJAHULUHUMUNIUMUNHULUHIUOUPUQHULUHVCIURUJUNAHULUHUMUNIUMUNHULUHIU
-      OUPTAVCEURUJUMIEVBOVEUAVHIHULUHVIVJPQUGVOVPWEWFWBAIGUHHGUHJGUHAIGUHWJUNIG
-      UHWKWLABIEGMAEUSUNEUMUNNEUTVAAIAVCEURUJUMIEVBOVEVKAIEOVMWGWMAHGUHWJUNHGUH
-      WKWLABHEGMAEUSUNEUMUNNEUTVARAEHWNUPEHULUHWNUPAHULUHEAHULUHUMUNEUMUNHULUHE
-      UOUPUQHULUHVCEURUJUNAHULUHUMUNEUMUNHULUHEUOUPTAEUSUNEUMUNNEUTVAAHULUHIEAH
-      ULUHTVDAIAVCEURUJUMIEVBOVEVDAEAEUSUNEUMUNNEUTVAVDUAAIVCEURUJUNIEUOUPOIVCE
-      VFVAVGVHEHULUHVIVJVMAEWOUNHWOUNEHWNUPEHULUHWNUPXAAEAEUSUNEUMUNNEUTVAVKREH
-      WPWQWRWGWMAJGUHWJUNJGUHWKWLABJEGMAEUSUNEUMUNNEUTVAPQWGWMVRWBWEAIJUIUJGUHI
-      GUHJGUHUIUJHGUHAIJUIUJGUHWJUNIJUIUJGUHWKWLABIJUIUJEGMAEUSUNEUMUNNEUTVAAIJ
-      AIAVCEURUJUMIEVBOVEVKPVLAIJENAIAVCEURUJUMIEVBOVEVKPAIEOVMQVNWGWMAIGUHJGUH
-      AIGUHWJUNIGUHWKWLABIEGMAEUSUNEUMUNNEUTVAAIAVCEURUJUMIEVBOVEVKAIEOVMWGWMAJ
-      GUHWJUNJGUHWKWLABJEGMAEUSUNEUMUNNEUTVAPQWGWMWSAHGUHWJUNHGUHWKWLABHEGMAEUS
-      UNEUMUNNEUTVARAEHWNUPEHULUHWNUPAHULUHEAHULUHUMUNEUMUNHULUHEUOUPUQHULUHVCE
-      URUJUNAHULUHUMUNEUMUNHULUHEUOUPTAEUSUNEUMUNNEUTVAAHULUHIEAHULUHTVDAIAVCEU
-      RUJUMIEVBOVEVDAEAEUSUNEUMUNNEUTVAVDUAAIVCEURUJUNIEUOUPOIVCEVFVAVGVHEHULUH
-      VIVJVMAEWOUNHWOUNEHWNUPEHULUHWNUPXAAEAEUSUNEUMUNNEUTVAVKREHWPWQWRWGWMAHGU
-      HWJUNHGUHWKWLABHEGMAEUSUNEUMUNNEUTVARAEHWNUPEHULUHWNUPAHULUHEAHULUHUMUNEU
-      MUNHULUHEUOUPUQHULUHVCEURUJUNAHULUHUMUNEUMUNHULUHEUOUPTAEUSUNEUMUNNEUTVAA
-      HULUHIEAHULUHTVDAIAVCEURUJUMIEVBOVEVDAEAEUSUNEUMUNNEUTVAVDUAAIVCEURUJUNIE
-      UOUPOIVCEVFVAVGVHEHULUHVIVJVMAEWOUNHWOUNEHWNUPEHULUHWNUPXAAEAEUSUNEUMUNNE
-      UTVAVKREHWPWQWRWGXBWTXC $.
+      prmndvdsmuld cz fmulralspecd lioumodabsmuld mul12d fveq2d lioumodmulcongd
+      zcnd cmo eqid a1i eqtrd lioumodsmallabsmuld lioumodcongd eqtr3d oveq2d cc
+      cc0 wne lioumodcnne0d simpld cdvds dvdsabsb syl2anc mtbird mulcld mulcand
+      wb simprd mpbid ) AHGUHZIJUIUJZGUHZUIUJZXDIGUHZJGUHZUIUJZUIUJZUKXFXJUKAHX
+      EUIUJZGUHZXGXKABHXEEGKLMNRAHULUHZUMUNZEUMUNZXNEUOUPZUQXNVCEURUJZUNAXOXPXQ
+      TAEUSUNXPNEUTVAZAXNIEAXNTVDAIAXRUMIEVBOVEZVDAEXSVDUAAIXRUNIEUOUPOIVCEVFVA
+      VGVHEXNVIVJZAIJAIXTVKZPVLZAIJENYBPAIEOVMZQVNZUEUFACVCIURUJZVOEFGXNXEAXOIU
+      MUNZXNIUOUPZUQXNYFUNAXOYGYHTXTUAVHIXNVIVJZYCYEUGVPVQAXMXHXDXIUIUJZUIUJZXK
+      AXMXHDGUHZUIUJZYKAXMIDUIUJGUHZYMAXMIHJUIUJZUIUJZGUHYNAXLYPGAHIJAHRWAAIYBW
+      AAJPWAVRVSABIYOIDEGMXSYBAHJRPVLZYBSIEWBUJZYRUKAYRWCWDUDVTWEABDEGIKLMNOSUB
+      UCUEUFWFWEAYLYJXHUIAYOGUHYLYJABYODEGMYQSUDWGABHJEGKLMNRYAPQUEUFACYFVOEFGX
+      NJYIPQUGVPVQWHWIWEAXHXDXIAXHWJUNXHWKWLABIEGMXSYBYDWMWNZAXDWJUNZXDWKWLZABH
+      EGMXSRAEHWOUPZEXNWOUPZAXNEYAVMAEVOUNHVOUNUUBUUCXAAEXSVKREHWPWQWRWMZWNZAXI
+      WJUNXIWKWLABJEGMXSPQWMWNZVRWEWHAXFXJXDAXFWJUNXFWKWLABXEEGMXSYCYEWMWNAXHXI
+      YSUUFWSUUEAYTUUAUUDXBWTXC $.
   $}
 
   ${
@@ -889358,16 +889279,15 @@ $)
        residue function.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4rigidnextd $p |- ( ph -> ( F ` ( N x. Z ) ) = ( ( F ` N ) x. (
     F ` Z ) ) ) $=
-      ( cfv c1 cmul co wa simpr eqcomd lioumodonemuld adantr fmuleq1d ex cprime
+      ( co c1 cmul cfv wa simpr eqcomd lioumodonemuld adantr fmuleq1d ex cprime
       wceq wne wcel cfzo cz cdvds wbr wn clt fzossnn sselid nngt1ne1 syl mpbird
       wb cn c4 cv caddc cliou cneg w3a wrex c3 wral liougb4rigidgt1d pm2.61dne
-      wi ) AGHUAUBFSGFSHFSUAUBUKGTAGTUKGHUAUBFSGFSHFSUAUBUKAGTUKUCTHGFAGTUKUCGT
-      AGTUKUDUEATHUAUBFSTFSHFSUAUBUKGTUKABDFHKLNOUFUGUHUIAGTULGHUAUBFSGFSHFSUAU
-      BUKAGTULUCBCDEFGHIJKADUJUMGTULLUGAGTDUNUBUMGTULMUGAHUOUMGTULNUGADHUPUQURG
-      TULOUGAGTULUCTGUSUQGTULAGTULUDATGUSUQGTULVEGTULAGVFUMTGUSUQGTULVEATDUNUBV
-      FGDUTMVAGVBVCUGVDAVGDUAUBIVHJVHVIUBUKIVHVJSTVKUKJVHVJSTVKUKVLJVFVMIVFVMUR
-      GTULPUGAVNDUPUQURGTULQUGADCVHUPUQUREVHCVHUAUBFSEVHFSCVHFSUAUBUKVRCUOVOETG
-      UNUBVOGTULRUGVPUIVQ $.
+      wi ) AGHUASFUBGFUBHFUBZUASUKZGTAGTUKZVTAWAUCZTHGVSFWBGTAWAUDUEATHUASFUBTF
+      UBVSUASUKWAABDFHKLNOUFUGUHUIAGTULZVTAWCUCZBCDEFGHIJKADUJUMWCLUGAGTDUNSZUM
+      WCMUGAHUOUMWCNUGADHUPUQURWCOUGWDTGUSUQZWCAWCUDAWFWCVEZWCAGVFUMWGAWEVFGDUT
+      MVAGVBVCUGVDAVGDUASIVHZJVHZVISUKWHVJUBTVKZUKWIVJUBWJUKVLJVFVMIVFVMURWCPUG
+      AVNDUPUQURWCQUGADCVHZUPUQUREVHZWKUASFUBWLFUBWKFUBUASUKVRCUOVOETGUNSVOWCRU
+      GVPUIVQ $.
   $}
 
   ${
@@ -889379,98 +889299,28 @@ $)
     ) = ( a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
     liougb4rigidrald.4 $e |- ( ph -> -. 3 || P ) $.
     liougb4rigidrald.5 $e |- ( ph -> N e. NN ) $.
-    $( If a prime is not divisible by three and its quadruple has no
-       negative-negative pair, strong induction proves multiplicativity of the
-       residue function from ~ lioumodval for every positive multiplier below
-       the prime modulus.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    $( If a prime ` P ` is not divisible by three and its quadruple has no
+       negative-negative pair, the residue function from ~ lioumodval is
+       multiplicative at each positive integer ` N < P ` and every integer not
+       divisible by ` P ` .  Strong induction uses ~ fmulraleq and
+       ~ ralnnindhypd to restrict its hypothesis to smaller positive
+       multipliers.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4rigidrald $p |- ( ph -> ( N < P -> A. z e. ZZ ( -. P || z -> (
     F ` ( N x. z ) ) = ( ( F ` N ) x. ( F ` z ) ) ) ) ) $=
-      ( vn vm cv clt wbr cfv wi vv vk cdvds wn cmul wceq wral fmulraleq imbi12d
-      co cz breq1 cn wcel w3a wa cprime simpll simpl simp1 syl cfzo simp2 prmnn
-      c1 simpr 3jca elfzo1 sylibr c4 caddc cliou cneg wrex c3 nnred fmulindhypd
-      simplr simp3 liougb4rigidnextd ex ralrimiva fmulralcbv indstrd ) ANPDQRDC
-      PUCRUDNPCPUEUJESNPESCPESUEUJUFTCUKUGTOPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJU
-      FTCUKUGTFDQRDCPUCRUDFCPUEUJESFESCPESUEUJUFTCUKUGTNOFNPOPUFNPDQROPDQRDCPUC
-      RUDNPCPUEUJESNPESCPESUEUJUFTCUKUGDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGNP
-      OPDQULCNPOPDEUHUINPFUFNPDQRFDQRDCPUCRUDNPCPUEUJESNPESCPESUEUJUFTCUKUGDCPU
-      CRUDFCPUEUJESFESCPESUEUJUFTCUKUGNPFDQULCNPFDEUHUIANPUMUNOPNPQROPDQRDCPUCR
-      UDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUONPDQRDCPUCRUDNPCPUEUJESNPESCPESU
-      EUJUFTCUKUGANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMU
-      GUONPDQRUPDUAPUCRUDNPUAPUEUJESNPESUAPESUEUJUFTUAUKUGDCPUCRUDNPCPUEUJESNPE
-      SCPESUEUJUFTCUKUGANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUG
-      TTOUMUGUONPDQRUPDUAPUCRUDNPUAPUEUJESNPESUAPESUEUJUFTUAUKANPUMUNOPNPQROPDQ
-      RDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUONPDQRUPUAPUKUNUPDUAPUCRUD
-      NPUAPUEUJESNPESUAPESUEUJUFANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEU
-      JUFTCUKUGTTOUMUGUONPDQRUPUAPUKUNUPDUAPUCRUDUPBCDUBENPUAPGHIANPUMUNOPNPQRO
-      PDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUONPDQRUPUAPUKUNUPDUAPUC
-      RUDUPANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUONPD
-      QRUPDUQUNANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGU
-      ONPDQRUPUAPUKUNDUAPUCRUDURANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEU
-      JUFTCUKUGTTOUMUGUONPDQRUPADUQUNANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCP
-      ESUEUJUFTCUKUGTTOUMUGUONPDQRUPANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPE
-      SUEUJUFTCUKUGTTOUMUGUOAANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUF
-      TCUKUGTTOUMUGUONPDQRUSANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFT
-      CUKUGTTOUMUGUTVAJVAVAANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTC
-      UKUGTTOUMUGUONPDQRUPUAPUKUNUPDUAPUCRUDUPANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEU
-      JESOPESCPESUEUJUFTCUKUGTTOUMUGUONPDQRUPNPVEDVBUJUNANPUMUNOPNPQROPDQRDCPUC
-      RUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUONPDQRUPUAPUKUNDUAPUCRUDURANPUMU
-      NOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUONPDQRUPNPUMUND
-      UMUNNPDQRUONPVEDVBUJUNANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFT
-      CUKUGTTOUMUGUONPDQRUPNPUMUNDUMUNNPDQRANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJES
-      OPESCPESUEUJUFTCUKUGTTOUMUGUONPDQRUPANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESO
-      PESCPESUEUJUFTCUKUGTTOUMUGUONPUMUNANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPE
-      SCPESUEUJUFTCUKUGTTOUMUGUONPDQRUSANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPES
-      CPESUEUJUFTCUKUGTTOUMUGVCVAANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUE
-      UJUFTCUKUGTTOUMUGUONPDQRUPDUQUNDUMUNANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESO
-      PESCPESUEUJUFTCUKUGTTOUMUGUONPDQRUPADUQUNANPUMUNOPNPQROPDQRDCPUCRUDOPCPUE
-      UJESOPESCPESUEUJUFTCUKUGTTOUMUGUONPDQRUPANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEU
-      JESOPESCPESUEUJUFTCUKUGTTOUMUGUOAANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPES
-      CPESUEUJUFTCUKUGTTOUMUGUONPDQRUSANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESC
-      PESUEUJUFTCUKUGTTOUMUGUTVAJVADVDVAANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPE
-      SCPESUEUJUFTCUKUGTTOUMUGUONPDQRVFVGDNPVHVIVAANPUMUNOPNPQROPDQRDCPUCRUDOPC
-      PUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUONPDQRUPUAPUKUNDUAPUCRUDVRANPUMUNOPNPQ
-      ROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUONPDQRUPUAPUKUNUPDUAP
-      UCRUDVFANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUON
-      PDQRUPUAPUKUNUPDUAPUCRUDUPANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEU
-      JUFTCUKUGTTOUMUGUONPDQRUPVJDUEUJGPHPVKUJUFGPVLSVEVMUFHPVLSVEVMUFUOHUMVNGU
-      MVNUDANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUONPD
-      QRUPUAPUKUNDUAPUCRUDURANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFT
-      CUKUGTTOUMUGUONPDQRUPAVJDUEUJGPHPVKUJUFGPVLSVEVMUFHPVLSVEVMUFUOHUMVNGUMVN
-      UDANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUONPDQRU
-      PANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUOAANPUMU
-      NOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUONPDQRUSANPUMUN
-      OPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUTVAKVAVAANPUMUNO
-      PNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUONPDQRUPUAPUKUNUP
-      DUAPUCRUDUPANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMU
-      GUONPDQRUPVODUCRUDANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKU
-      GTTOUMUGUONPDQRUPUAPUKUNDUAPUCRUDURANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOP
-      ESCPESUEUJUFTCUKUGTTOUMUGUONPDQRUPAVODUCRUDANPUMUNOPNPQROPDQRDCPUCRUDOPCP
-      UEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUONPDQRUPANPUMUNOPNPQROPDQRDCPUCRUDOPCPU
-      EUJESOPESCPESUEUJUFTCUKUGTTOUMUGUOAANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOP
-      ESCPESUEUJUFTCUKUGTTOUMUGUONPDQRUSANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPE
-      SCPESUEUJUFTCUKUGTTOUMUGUTVALVAVAANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPES
-      CPESUEUJUFTCUKUGTTOUMUGUONPDQRUPUAPUKUNUPDUAPUCRUDUPANPUMUNOPNPQROPDQRDCP
-      UCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUONPDQRUPDCPUCRUDUBPCPUEUJESUBP
-      ESCPESUEUJUFTCUKUGUBVENPVBUJUGANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPE
-      SUEUJUFTCUKUGTTOUMUGUONPDQRUPUAPUKUNDUAPUCRUDURANPUMUNOPNPQROPDQRDCPUCRUD
-      OPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUONPDQRUPCDUBOENPANPUMUNOPNPQROPDQRD
-      CPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUONPDQRUPDANPUMUNOPNPQROPDQRD
-      CPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUONPDQRUPDUQUNDUMUNANPUMUNOPN
-      PQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUONPDQRUPADUQUNANPUM
-      UNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUONPDQRUPANPUMU
-      NOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUOAANPUMUNOPNPQR
-      OPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUONPDQRUSANPUMUNOPNPQRO
-      PDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUTVAJVADVDVAVPANPUMUNOPN
-      PQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUONPDQRUPANPUMUNOPNP
-      QROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUONPUMUNANPUMUNOPNPQR
-      OPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUONPDQRUSANPUMUNOPNPQRO
-      PDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGVCVAANPUMUNOPNPQROPDQRDC
-      PUCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUONPDQRVFANPUMUNOPNPQROPDQRDCP
-      UCRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUONPDQRUPANPUMUNOPNPQROPDQRDCPU
-      CRUDOPCPUEUJESOPESCPESUEUJUFTCUKUGTTOUMUGUOOPNPQROPDQRDCPUCRUDOPCPUEUJESO
-      PESCPESUEUJUFTCUKUGTTOUMUGANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEU
-      JUFTCUKUGTTOUMUGUONPDQRUSANPUMUNOPNPQROPDQRDCPUCRUDOPCPUEUJESOPESCPESUEUJ
-      UFTCUKUGTTOUMUGVSVAVQVAVTWAWBCUADENPWCVIWAMWD $.
+      ( cmul co cfv wceq wi cz syl vn vm vv vk cv clt wbr cdvds breq1 fmulraleq
+      wn wral imbi12d cn wcel w3a wa cprime simpll simpl simp1 cfzo simp2 prmnn
+      c1 simpr 3jca elfzo1 sylibr simplr c4 caddc cliou cneg nnred ralnnindhypd
+      wrex c3 simp3 liougb4rigidnextd ex ralrimiva fmulralcbv indstrd ) AUAUEZD
+      UFUGZDCUEZUHUGUKZWEWGNOEPWEEPZWGEPZNOQRCSULZRUBUEZDUFUGZWHWLWGNOEPWLEPWJN
+      OQRCSULZRZFDUFUGZWHFWGNOEPFEPWJNOQRCSULZRUAUBFWEWLQWFWMWKWNWEWLDUFUIWHCWE
+      WLSWJWGEUJUMWEFQWFWPWKWQWEFDUFUIWHCWEFSWJWGEUJUMAWEUNUOZWLWEUFUGWORUBUNUL
+      ZUPZWFWKWTWFUQZDUCUEZUHUGUKZWEXBNOEPWIXBEPNOQZRZUCSULWKXAXEUCSXAXBSUOZUQZ
+      XCXDXGXCUQZBCDUDEWEXBGHIXHXADURUOZXAXFXCUSZXAAXIXAWTAWTWFUTZAWRWSVATZJTZT
+      XHXAWEVEDVBOUOZXJXAWRDUNUOZWFUPXNXAWRXOWFXAWTWRXKAWRWSVCTZXAXIXOXMDVDTZWT
+      WFVFZVGDWEVHVITXAXFXCVJXGXCVFXHXAVKDNOGUEZHUEZVLOQXSVMPVEVNZQXTVMPYAQUPHU
+      NVQGUNVQUKZXJXAAYBXLKTTXHXAVRDUHUGUKZXJXAAYCXLLTTXHXAWHUDUEZWGNOEPYDEPWJN
+      OQRCSULZUDVEWEVBOULXJXAWNYEDUDUBWEWHCWLYDSWJWGEUJXADXQVOXPXRXAWTWSXKAWRWS
+      VSTVPTVTWAWBCUCSWIDEWEWCVIWAMWD $.
   $}
 
   ${
@@ -889490,10 +889340,10 @@ $)
        by Zhi Wang, 17-Oct-2026.) $)
     liougb4modmuld $p |- ( ph -> ( F ` ( N x. Z ) ) = ( ( F ` N ) x. ( F
     ` Z ) ) ) $=
-      ( vz wbr cv co cfv clt cdvds wn cmul wceq wi cz wral c1 cfzo elfzolt2 syl
-      wcel cn fzossnn sselid liougb4rigidrald mpd fmulralspeczd ) APCDEFLMAECUA
-      QCPRUBQUCEPRUDSDTEDTPRDTUDSUEUFPUGUHAEUICUJSUMECUAQKEUICUKULABPCDEGHIJNOA
-      UICUJSUNECUOKUPUQURUS $.
+      ( vz cz cfv wbr co clt cv cdvds wn cmul wceq wi wral c1 cfzo elfzolt2 syl
+      wcel cn fzossnn sselid liougb4rigidrald mpd fmulralspeczd ) APQEDRZCDEFLM
+      AECUASZCPUBZUCSUDEVBUETDRUTVBDRUETUFUGPQUHAEUICUJTZUMVAKEUICUKULABPCDEGHI
+      JNOAVCUNECUOKUPUQURUS $.
   $}
 
   ${
@@ -891911,22 +891761,21 @@ $)
       ( F ` N ) ) ) $.
     liouoddmultransportd.14 $e |- ( ph -> ( F ` ( Q x. D ) ) = ( ( F ` Q ) x.
       ( F ` D ) ) ) $.
-    $( The odd completion satisfies the multiplication identity at ` Q ` and
-       ` N ` if it satisfies the three displayed identities and ` D ` is
-       congruent to ` ( K x. N ) ` modulo ` P ` .  The proof cancels the
-       nonzero value at ` K ` after transporting the identity at ` Q ` and
-       ` D ` through that congruence.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
+    $( Under the displayed hypotheses, the odd completion from ~ liouoddval
+       satisfies the multiplication identity at ` Q ` and ` N ` if it satisfies
+       the three given identities and ` D ` is congruent to ` ( K x. N ) `
+       modulo ` P ` .  The proof uses ~ fmulmuliffd to cancel the nonzero value
+       at ` K ` after transporting the identity at ` Q ` and ` D ` through that
+       congruence.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouoddmultransportd $p |- ( ph -> ( F ` ( Q x. N ) ) = ( ( F ` Q ) x. (
       F ` N ) ) ) $=
       ( cmul cfv wceq zmulcld liouoddmulcong1d eqtrd liouoddcongd oveq2d eqtr4d
       co zcnd cc wcel cc0 wne liouoddcnne0d simpld simprd fmulmuliffd mpbid ) A
-      EGHUCULUCULFUDEFUDGHUCULFUDUCULUEEHUCULFUDEFUDHFUDUCULUEAEGHUCULUCULFUDEF
-      UDCFUDUCULEFUDGHUCULFUDUCULAEGHUCULUCULFUDECUCULFUDEFUDCFUDUCULABGHUCULCD
-      FEIJLAGHMKUFNSUGUBUHAGHUCULFUDCFUDEFUDUCABGHUCULCDFIAGHMKUFNSUIUJUKAEFGHA
-      GMUMAELUMAHKUMAGFUDUNUOGFUDUPUQABGDFIJMQURUSAEFUDUNUOEFUDUPUQABEDFIJLPURU
-      SAHFUDUNUOHFUDUPUQABHDFIJKOURUSAEHUCULFUDUNUOEHUCULFUDUPUQABEHUCULDFIJAEH
-      LKUFRURUSAGFUDUNUOGFUDUPUQABGDFIJMQURUTTUAVAVB $.
+      EGHUCULZUCULFUDZEFUDZVCFUDZUCULZUEEHUCULZFUDZVEHFUDZUCULUEAVDVECFUDZUCULZ
+      VGAVDECUCULFUDVLABVCCDFEIJLAGHMKUFZNSUGUBUHAVFVKVEUCABVCCDFIVMNSUIUJUKAGF
+      UDZVEVJVIEFGHAGMUMAELUMAHKUMAVNUNUOZVNUPUQZABGDFIJMQURZUSAVEUNUOVEUPUQABE
+      DFIJLPURUSAVJUNUOVJUPUQABHDFIJKOURUSAVIUNUOVIUPUQABVHDFIJAEHLKUFRURUSAVOV
+      PVQUTTUAVAVB $.
   $}
 
   ${
@@ -891964,22 +891813,22 @@ $)
     liouoddmuldbliffd.7 $e |- ( ph -> -. P || D ) $.
     liouoddmuldbliffd.8 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) =
       ( a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( If twice ` P ` has no positive-positive pair, doubling an argument
-       preserves and reflects a multiplication identity.  (Contributed by Zhi
-       Wang, 20-Oct-2026.) $)
+    $( For a prime ` P ` greater than three whose double has no
+       positive-positive pair, the odd completion from ~ liouoddval satisfies
+       the multiplication identity at integers ` Q ` and ` D ` not divisible by
+       ` P ` if and only if it satisfies the identity at ` Q ` and
+       ` ( 2 x. D ) ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouoddmuldbliffd $p |- ( ph -> ( ( F ` ( Q x. ( 2 x. D ) ) ) = ( ( F ` Q
       ) x. ( F ` ( 2 x. D ) ) ) <-> ( F ` ( Q x. D ) ) = ( ( F ` Q ) x. ( F `
       D ) ) ) ) $=
-      ( c2 wcel cfv cmul cz 2z a1i zcnd cc cc0 wne cprime cn prmnn syl cdvds wn
-      wbr c3 prmgt3ndvds23d simpld liouoddcnne0d co zmulcld prmndvdsmuld simprd
-      wceq liouodd23muld fmulmuliffd ) AEFQCAQQUARAUBUCUDAELUDACMUDAQFSUERQFSUF
-      UGABQDFIADUHRDUIRJDUJUKQUARAUBUCADQULUNUMDUOULUNUMADJKUPUQURUQAEFSUEREFSU
-      FUGABEDFIADUHRDUIRJDUJUKLNURUQACFSUERCFSUFUGABCDFIADUHRDUIRJDUJUKMOURUQAE
-      CTUSFSUERECTUSFSUFUGABECTUSDFIADUHRDUIRJDUJUKAECLMUTAECDJLMNOVAURUQAQFSUE
-      RQFSUFUGABQDFIADUHRDUIRJDUJUKQUARAUBUCADQULUNUMDUOULUNUMADJKUPUQURVBAQECT
-      USTUSFSQFSECTUSFSTUSVCUOECTUSTUSFSUOFSECTUSFSTUSVCABECTUSDFGHIJKAECLMUTAE
-      CDJLMNOVAPVDUQAQCTUSFSQFSCFSTUSVCUOCTUSFSUOFSCFSTUSVCABCDFGHIJKMOPVDUQVE
-      $.
+      ( c2 cfv cmul co cz wcel 2z a1i zcnd cc cc0 wne cprime cn prmnn syl cdvds
+      wbr wn c3 prmgt3ndvds23d simpld liouoddcnne0d zmulcld prmndvdsmuld simprd
+      wceq liouodd23muld fmulmuliffd ) AQFRZEFRZCFRZECSTZFRZEFQCAQQUAUBAUCUDZUE
+      AELUEACMUEAVFUFUBZVFUGUHZABQDFIADUIUBDUJUBJDUKULZVKADQUMUNUODUPUMUNUOADJK
+      UQURUSZURAVGUFUBVGUGUHABEDFIVNLNUSURAVHUFUBVHUGUHABCDFIVNMOUSURAVJUFUBVJU
+      GUHABVIDFIVNAECLMUTZAECDJLMNOVAZUSURAVLVMVOVBAQVISTFRVFVJSTVCUPVISTFRUPFR
+      ZVJSTVCABVIDFGHIJKVPVQPVDURAQCSTFRVFVHSTVCUPCSTFRVRVHSTVCABCDFGHIJKMOPVDU
+      RVE $.
   $}
 
   ${
@@ -892094,9 +891943,10 @@ $)
       ( ( F ` Q ) x. ( F ` r ) ) ) $.
     liouoddextstepd.16 $e |- ( ph -> ( ( ( ( 2 x. K ) x. N ) mod P ) = ( D
       mod P ) \/ ( ( ( 3 x. K ) x. N ) mod P ) = ( ( 2 x. D ) mod P ) ) ) $.
-    $( The induction hypotheses for smaller multipliers and smaller positive
-       arguments, together with bounded signed congruence witnesses as in
-       ~ oddextcertd , imply the next multiplication identity.  Here twice
+    $( For the odd completion from ~ liouoddval , the displayed hypotheses for
+       smaller multipliers and smaller positive arguments, together with the
+       bounded congruence witnesses as in ~ oddextcertd , imply
+       ` ( F `` ( Q x. N ) ) = ( ( F `` Q ) x. ( F `` N ) ) ` .  Here twice
        ` P ` has no positive-positive pair.  (Contributed by Zhi Wang,
        20-Oct-2026.) $)
     liouoddextstepd $p |- ( ph -> ( F ` ( Q x. N ) ) = ( ( F ` Q ) x. ( F ` N
@@ -892106,73 +891956,24 @@ $)
       wbr c1 clt nnshortfzod prmndvdsmuld simpr 3jca elfzo1 sylibr fmulralspecd
       w3a liouodd23prodmuld cdif prmgt3factsd oddn2prm cabs wb dvdsabsb syl2anc
       mtbird fmulinspecd liouoddmulabsd liouoddmultransportd 3z simprd mpjaodan
-      csn liouoddmuldbliffd mpbird ) AUJIUKULJUKULEUMULDEUMULUNFJUKULHUOFHUOJHU
-      OUKULUNUPIUKULJUKULEUMULUJDUKULEUMULUNAUJIUKULJUKULEUMULDEUMULUNUQBDEFHUJ
-      IUKULJNAEURUSUJIUKULJUKULEUMULDEUMULUNAEUTUSEURUSOEVAVBVCAJVDUSUJIUKULJUK
-      ULEUMULDEUMULUNAJSVGVCAFVDUSUJIUKULJUKULEUMULDEUMULUNAFQVGVCAUJIUKULVDUSU
-      JIUKULJUKULEUMULDEUMULUNAUJIUJVDUSAVEVFAIUAVGVHVCADVDUSUJIUKULJUKULEUMULD
-      EUMULUNUCVCAEJVIVPVJUJIUKULJUKULEUMULDEUMULUNAJEAEJAEUTUSEURUSOEVAVBSTVKV
-      LVCAEFVIVPVJUJIUKULJUKULEUMULDEUMULUNAFEAEFAEUTUSEURUSOEVAVBQRVKVLVCAEUJI
-      UKULVIVPVJUJIUKULJUKULEUMULDEUMULUNAUJIEOUJVDUSAVEVFAIUAVGAEUJVIVPVJEUPVI
-      VPVJAEOPVMVNAIEAIVQEVOULUSUJIUKULEVRVPAEIFAEUTUSEURUSOEVAVBQUAUBRVSVNVLVT
-      VCAEFJUKULVIVPVJUJIUKULJUKULEUMULDEUMULUNAFJEOAFQVGAJSVGAFEAEFAEUTUSEURUS
-      OEVAVBQRVKVLAJEAEJAEUTUSEURUSOEVAVBSTVKVLVTVCAUJIUKULJUKULEUMULDEUMULUNWA
-      AUJIUKULFJUKULUKULHUOUJIUKULHUOFJUKULHUOUKULUNUJIUKULJUKULEUMULDEUMULUNAU
-      JIUKULFJUKULUKULHUOUJIUKULHUOFJUKULHUOUKULUNUPIUKULFJUKULUKULHUOUPIUKULHU
-      OFJUKULHUOUKULUNABEHIFJUKULLMNOPAIUAVGAFJAFQVGAJSVGVHAIEAIVQEVOULUSUJIUKU
-      LEVRVPAEIFAEUTUSEURUSOEVAVBQUAUBRVSVNVLAFJEOAFQVGAJSVGAFEAEFAEUTUSEURUSOE
-      VAVBQRVKVLAJEAEJAEUTUSEURUSOEVAVBSTVKVLVTUFACEGHIFFJUKULAIURUSFURUSIFVRVP
-      WFIVQFVOULUSAIURUSFURUSIFVRVPUAQUBWBFIWCWDAFJAFQVGAJSVGVHAFJEOAFQVGAJSVGA
-      FEAEFAEUTUSEURUSOEVAVBQRVKVLAJEAEJAEUTUSEURUSOEVAVBSTVKVLVTUGWEWGVNVCAUJI
-      UKULJUKULHUOUJIUKULHUOJHUOUKULUNUJIUKULJUKULEUMULDEUMULUNAUJIUKULJUKULHUO
-      UJIUKULHUOJHUOUKULUNUPIUKULJUKULHUOUPIUKULHUOJHUOUKULUNABEHIJLMNOPAIUAVGA
-      JSVGAIEAIVQEVOULUSUJIUKULEVRVPAEIFAEUTUSEURUSOEVAVBQUAUBRVSVNVLAJEAEJAEUT
-      USEURUSOEVAVBSTVKVLUFACEGHIFJAIURUSFURUSIFVRVPWFIVQFVOULUSAIURUSFURUSIFVR
-      VPUAQUBWBFIWCWDAJSVGAJEAEJAEUTUSEURUSOEVAVBSTVKVLUGWEWGVNVCAFDUKULHUOFHUO
-      DHUOUKULUNUJIUKULJUKULEUMULDEUMULUNABDEFHNAEUTUSEURUSOEVAVBAEUTUJXBWHUSUJ
-      EVIVPVJAEUTUJXBWHUSUPEVIVPVJAEOPWIVNEWJVBAFQVGUCAFEAEFAEUTUSEURUSOEVAVBQR
-      VKVLAEDVIVPEDWKUOVIVPADWKUOEADWKUOVQEVOULUSUJDWKUOUKULEVRVPAEDWKUOJAEUTUS
-      EURUSOEVAVBSUDUETVSVNVLAEVDUSDVDUSEDVIVPEDWKUOVIVPWLAEAEUTUSEURUSOEVAVBVG
-      UCEDWMWNWOAFDEOAFQVGUCAFEAEFAEUTUSEURUSOEVAVBQRVKVLAEDVIVPEDWKUOVIVPADWKU
-      OEADWKUOVQEVOULUSUJDWKUOUKULEVRVPAEDWKUOJAEUTUSEURUSOEVAVBSUDUETVSVNVLAEV
-      DUSDVDUSEDVIVPEDWKUOVIVPWLAEAEUTUSEURUSOEVAVBVGUCEDWMWNWOVTAFDWKUOHJKADWK
-      UOURUSJURUSDWKUOJVRVPWFDWKUOVQJVOULUSADWKUOURUSJURUSDWKUOJVRVPUDSUEWBJDWK
-      UOWCWDUHWPWQVCWRAUPIUKULJUKULEUMULUJDUKULEUMULUNUQBUJDUKULEFHUPIUKULJNAEU
-      RUSUPIUKULJUKULEUMULUJDUKULEUMULUNAEUTUSEURUSOEVAVBVCAJVDUSUPIUKULJUKULEU
-      MULUJDUKULEUMULUNAJSVGVCAFVDUSUPIUKULJUKULEUMULUJDUKULEUMULUNAFQVGVCAUPIU
-      KULVDUSUPIUKULJUKULEUMULUJDUKULEUMULUNAUPIUPVDUSAWSVFAIUAVGVHVCAUJDUKULVD
-      USUPIUKULJUKULEUMULUJDUKULEUMULUNAUJDUJVDUSAVEVFUCVHVCAEJVIVPVJUPIUKULJUK
-      ULEUMULUJDUKULEUMULUNAJEAEJAEUTUSEURUSOEVAVBSTVKVLVCAEFVIVPVJUPIUKULJUKUL
-      EUMULUJDUKULEUMULUNAFEAEFAEUTUSEURUSOEVAVBQRVKVLVCAEUPIUKULVIVPVJUPIUKULJ
-      UKULEUMULUJDUKULEUMULUNAUPIEOUPVDUSAWSVFAIUAVGAEUJVIVPVJEUPVIVPVJAEOPVMWT
-      AIEAIVQEVOULUSUJIUKULEVRVPAEIFAEUTUSEURUSOEVAVBQUAUBRVSVNVLVTVCAEFJUKULVI
-      VPVJUPIUKULJUKULEUMULUJDUKULEUMULUNAFJEOAFQVGAJSVGAFEAEFAEUTUSEURUSOEVAVB
-      QRVKVLAJEAEJAEUTUSEURUSOEVAVBSTVKVLVTVCAUPIUKULJUKULEUMULUJDUKULEUMULUNWA
-      AUPIUKULFJUKULUKULHUOUPIUKULHUOFJUKULHUOUKULUNUPIUKULJUKULEUMULUJDUKULEUM
-      ULUNAUJIUKULFJUKULUKULHUOUJIUKULHUOFJUKULHUOUKULUNUPIUKULFJUKULUKULHUOUPI
-      UKULHUOFJUKULHUOUKULUNABEHIFJUKULLMNOPAIUAVGAFJAFQVGAJSVGVHAIEAIVQEVOULUS
-      UJIUKULEVRVPAEIFAEUTUSEURUSOEVAVBQUAUBRVSVNVLAFJEOAFQVGAJSVGAFEAEFAEUTUSE
-      URUSOEVAVBQRVKVLAJEAEJAEUTUSEURUSOEVAVBSTVKVLVTUFACEGHIFFJUKULAIURUSFURUS
-      IFVRVPWFIVQFVOULUSAIURUSFURUSIFVRVPUAQUBWBFIWCWDAFJAFQVGAJSVGVHAFJEOAFQVG
-      AJSVGAFEAEFAEUTUSEURUSOEVAVBQRVKVLAJEAEJAEUTUSEURUSOEVAVBSTVKVLVTUGWEWGWT
-      VCAUPIUKULJUKULHUOUPIUKULHUOJHUOUKULUNUPIUKULJUKULEUMULUJDUKULEUMULUNAUJI
-      UKULJUKULHUOUJIUKULHUOJHUOUKULUNUPIUKULJUKULHUOUPIUKULHUOJHUOUKULUNABEHIJ
-      LMNOPAIUAVGAJSVGAIEAIVQEVOULUSUJIUKULEVRVPAEIFAEUTUSEURUSOEVAVBQUAUBRVSVN
-      VLAJEAEJAEUTUSEURUSOEVAVBSTVKVLUFACEGHIFJAIURUSFURUSIFVRVPWFIVQFVOULUSAIU
-      RUSFURUSIFVRVPUAQUBWBFIWCWDAJSVGAJEAEJAEUTUSEURUSOEVAVBSTVKVLUGWEWGWTVCAF
-      UJDUKULUKULHUOFHUOUJDUKULHUOUKULUNUPIUKULJUKULEUMULUJDUKULEUMULUNAFUJDUKU
-      LUKULHUOFHUOUJDUKULHUOUKULUNFDUKULHUOFHUODHUOUKULUNABDEFHNAEUTUSEURUSOEVA
-      VBAEUTUJXBWHUSUJEVIVPVJAEUTUJXBWHUSUPEVIVPVJAEOPWIVNEWJVBAFQVGUCAFEAEFAEU
-      TUSEURUSOEVAVBQRVKVLAEDVIVPEDWKUOVIVPADWKUOEADWKUOVQEVOULUSUJDWKUOUKULEVR
-      VPAEDWKUOJAEUTUSEURUSOEVAVBSUDUETVSVNVLAEVDUSDVDUSEDVIVPEDWKUOVIVPWLAEAEU
-      TUSEURUSOEVAVBVGUCEDWMWNWOAFDEOAFQVGUCAFEAEFAEUTUSEURUSOEVAVBQRVKVLAEDVIV
-      PEDWKUOVIVPADWKUOEADWKUOVQEVOULUSUJDWKUOUKULEVRVPAEDWKUOJAEUTUSEURUSOEVAV
-      BSUDUETVSVNVLAEVDUSDVDUSEDVIVPEDWKUOVIVPWLAEAEUTUSEURUSOEVAVBVGUCEDWMWNWO
-      VTAFDWKUOHJKADWKUOURUSJURUSDWKUOJVRVPWFDWKUOVQJVOULUSADWKUOURUSJURUSDWKUO
-      JVRVPUDSUEWBJDWKUOWCWDUHWPWQABDEFHLMNOPAFQVGUCAFEAEFAEUTUSEURUSOEVAVBQRVK
-      VLAEDVIVPEDWKUOVIVPADWKUOEADWKUOVQEVOULUSUJDWKUOUKULEVRVPAEDWKUOJAEUTUSEU
-      RUSOEVAVBSUDUETVSVNVLAEVDUSDVDUSEDVIVPEDWKUOVIVPWLAEAEUTUSEURUSOEVAVBVGUC
-      EDWMWNWOUFXCXDVCWRUIXA $.
+      csn liouoddmuldbliffd mpbird ) AUJIUKULZJUKULZEUMULDEUMULUNZFJUKULZHUOZFH
+      UOZJHUOZUKULUNUPIUKULZJUKULZEUMULUJDUKULZEUMULUNZAXGUQBDEFHXEJNAEURUSZXGA
+      EUTUSXPOEVAVBZVCAJVDUSZXGAJSVGZVCAFVDUSZXGAFQVGZVCAXEVDUSXGAUJIUJVDUSAVEV
+      FZAIUAVGZVHVCADVDUSZXGUCVCAEJVIVPVJZXGAJEAEJXQSTVKVLZVCAEFVIVPVJZXGAFEAEF
+      XQQRVKVLZVCAEXEVIVPVJXGAUJIEOYBYCAEUJVIVPVJZEUPVIVPVJZAEOPVMZVNAIEAIVQEVO
+      ULZUSXEEVRVPAEIFXQQUAUBRVSVNVLZVTVCAEXHVIVPVJZXGAFJEOYAXSYHYFVTZVCAXGWAAX
+      EXHUKULHUOXEHUOZXIUKULUNZXGAYQXLXHUKULHUOXLHUOZXIUKULUNZABEHIXHLMNOPYCAFJ
+      YAXSVHZYMYOUFACVQFVOULZVDEGHIXHAIURUSZFURUSZIFVRVPZWFIUUAUSAUUBUUCUUDUAQU
+      BWBFIWCWDZYTYOUGWEWGZVNVCAXFHUOYPXKUKULUNZXGAUUGXMHUOYRXKUKULUNZABEHIJLMN
+      OPYCXSYMYFUFACUUAVDEGHIJUUEXSYFUGWEWGZVNVCAFDUKULHUOXJDHUOUKULUNZXGABDEFH
+      NXQAEUTUJXBWHUSZUJEVIVPVJAUUKUPEVIVPVJAEOPWIVNEWJVBYAUCYHAEDVIVPZEDWKUOZV
+      IVPZAUUMEAUUMYLUSUJUUMUKULEVRVPAEUUMJXQSUDUETVSVNVLAEVDUSYDUULUUNWLAEXQVG
+      UCEDWMWNWOZAFDEOYAUCYHUUOVTAFUUMHJKAUUMURUSZJURUSZUUMJVRVPZWFUUMVQJVOULUS
+      AUUPUUQUURUDSUEWBJUUMWCWDUHWPWQZVCWRAXOUQBXNEFHXLJNAXPXOXQVCAXRXOXSVCAXTX
+      OYAVCAXLVDUSXOAUPIUPVDUSAWSVFZYCVHVCAXNVDUSXOAUJDYBUCVHVCAYEXOYFVCAYGXOYH
+      VCAEXLVIVPVJXOAUPIEOUUTYCAYIYJYKWTYMVTVCAYNXOYOVCAXOWAAYSXOAYQYSUUFWTVCAU
+      UHXOAUUGUUHUUIWTVCAFXNUKULHUOXJXNHUOUKULUNZXOAUVAUUJUUSABDEFHLMNOPYAUCYHU
+      UOUFXCXDVCWRUIXA $.
   $}
 
   ${
@@ -892803,22 +892604,24 @@ $)
       a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     liouoddext3divd.10 $e |- ( ph -> A. k e. ( 1 ..^ Q ) A. z e. ZZ ( -. P ||
       z -> ( F ` ( k x. z ) ) = ( ( F ` k ) x. ( F ` z ) ) ) ) $.
-    $( Extend multiplicativity of the odd completion in ~ liouoddval from
-       positive first factors below ` Q ` to a first factor ` Q ` divisible by
-       three.  Under the displayed bounds and absence of a positive-positive
-       pair for twice ` P ` , the proof uses the smaller factor ` ( Q / 3 ) `
-       and the tripling identity.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( Under the displayed bounds and absence of a positive-positive pair for
+       twice ` P ` , multiplicativity of the odd completion in ~ liouoddval for
+       positive first factors below ` Q ` extends to a first factor ` Q `
+       divisible by three and an integer argument ` Z ` not divisible by
+       ` P ` .  The proof uses the smaller factor ` ( Q / 3 ) ` and the
+       tripling identity in ~ liouodd23prodmuld .  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
     liouoddext3divd $p |- ( ph -> ( F ` ( Q x. Z ) ) = ( ( F ` Q ) x. ( F ` Z
       ) ) ) $=
-      ( c3 cdiv co cmul nncnd cc wcel 3nn nncni a1i cc0 wne nnne0i divcan2d cfv
+      ( c3 cdiv co cmul cfv nncnd cc wcel 3nn nncni a1i cc0 wne nnne0i divcan2d
       c2 wceq cdvds wbr cn wb nndivdvds syl2anc mpbid nnzd c1 cfzo cprime prmnn
       clt syl nnrpd crp 3rp 1lt3 rpdivgt1ltd nnshortfzod simpld fzo1ndvdsd 3jca
-      w3a elfzo1 sylibr fmulralspecd liouodd23prodmuld simprd fmuleq1d ) AUAEUA
-      UBUCZUDUCZHEGAEUAAENUEUAUFUGAUAUHUIUJUAUKULAUAUHUMUJUNAUPWHUDUCZHUDUCGUOW
-      JGUOHGUOZUDUCUQWIHUDUCGUOWIGUOWKUDUCUQABDGWHHIJKLMAWHAUAEURUSZWHUTUGZRAEU
-      TUGZUAUTUGZWLWMVANWOAUHUJEUAVBVCVDZVEPAWHDAWHVFDVGUCUGWJDVJUSADWHEADVHUGD
-      UTUGLDVIVKNWPAEUAAENVLUAVMUGAVNUJVFUAVJUSAVOUJVPZOVQVRVSQSACDFGWHEHAWMWNW
-      HEVJUSZWAWHVFEVGUCUGAWMWNWRWPNWQVTEWHWBWCPQTWDWEWFWG $.
+      cz w3a elfzo1 sylibr fmulralspecd liouodd23prodmuld simprd fmuleq1d ) AUA
+      EUAUBUCZUDUCZHEHGUEZGAEUAAENUFUAUGUHAUAUIUJUKUAULUMAUAUIUNUKUOAUPWIUDUCZH
+      UDUCGUEWLGUEWKUDUCUQWJHUDUCGUEWJGUEWKUDUCUQABDGWIHIJKLMAWIAUAEURUSZWIUTUH
+      ZRAEUTUHZUAUTUHZWMWNVANWPAUIUKEUAVBVCVDZVEPAWIDAWIVFDVGUCUHWLDVJUSADWIEAD
+      VHUHDUTUHLDVIVKNWQAEUAAENVLUAVMUHAVNUKVFUAVJUSAVOUKVPZOVQVRVSQSACVFEVGUCZ
+      WADFGWIHAWNWOWIEVJUSZWBWIWSUHAWNWOWTWQNWRVTEWIWCWDPQTWEWFWGWH $.
   $}
 
   ${
@@ -892836,35 +892639,26 @@ $)
       = ( a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     liouoddextendnextd.9 $e |- ( ph -> A. k e. ( 1 ..^ Q ) A. z e. ZZ ( -. P
       || z -> ( F ` ( k x. z ) ) = ( ( F ` k ) x. ( F ` z ) ) ) ) $.
-    $( The identities for smaller positive multipliers imply the multiplication
-       identity for the next central positive multiplier.  Here twice ` P ` has
-       no positive-positive pair.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( For the odd completion from ~ liouoddval , identities for smaller
+       positive multipliers imply the multiplication identity at a positive
+       integer ` Q < ( P / 2 ) ` and an integer ` Z ` not divisible by ` P ` .
+       Here ` P ` is a prime greater than three whose double has no
+       positive-positive pair.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouoddextendnextd $p |- ( ph -> ( F ` ( Q x. Z ) ) = ( ( F ` Q ) x. ( F
       ` Z ) ) ) $=
-      ( wn c1 wceq cmul co cfv wa simpr eqcomd zcnd cc wcel cc0 cprime cn prmnn
-      wne syl liouoddcnne0d simpld c2 c3 cr 2re a1i 3re nnred clt wbr liouodd1d
-      2lt3 lttrd fmuloned adantr fmuleq1d cdvds simpll cz cv caddc cliou w3a wi
+      ( syl c1 wceq cmul co cfv wa simpr eqcomd zcnd cc cc0 wne cprime cn prmnn
+      wcel liouoddcnne0d simpld c2 c3 2re a1i 3re nnred clt wbr lttrd liouodd1d
+      cr 2lt3 fmuloned adantr fmuleq1d wn cdvds simpll cz cv caddc cliou w3a wi
       wrex wral cfzo liouoddext3divd neqned wb nngt1ne1 mpbird liouoddextpointd
-      pm2.61dan ) AEUAUBEHUCUDGUEEGUEHGUEUCUDUBAEUAUBUFUAHEGAEUAUBUFEUAAEUAUBUG
-      UHAUAHUCUDGUEUAGUEHGUEUCUDUBEUAUBAHGAHPUIAHGUEUJUKHGUEULUPABHDGKADUMUKDUN
-      UKLDUOUQPQURUSABDGKADUMUKDUNUKLDUOUQAUTVADUTVBUKAVCVDVAVBUKAVEVDADADUMUKD
-      UNUKLDUOUQVFUTVAVGVHAVJVDMVKVIVLVMVNAEUAUBTUFVAEVOVHEHUCUDGUEEGUEHGUEUCUD
-      UBAEUAUBTUFVAEVOVHUFBCDEFGHIJKAEUAUBTUFVAEVOVHUFADUMUKAEUAUBTVAEVOVHVPLUQ
-      AEUAUBTUFVAEVOVHUFAVADVGVHAEUAUBTVAEVOVHVPMUQAEUAUBTUFVAEVOVHUFAEUNUKAEUA
-      UBTVAEVOVHVPNUQAEUAUBTUFVAEVOVHUFAUTEUCUDDVGVHAEUAUBTVAEVOVHVPOUQAEUAUBTU
-      FVAEVOVHUFAHVQUKAEUAUBTVAEVOVHVPPUQAEUAUBTUFVAEVOVHUFADHVOVHTAEUAUBTVAEVO
-      VHVPQUQAEUAUBTUFVAEVOVHUGAEUAUBTUFVAEVOVHUFAUTDUCUDIVRJVRVSUDUBIVRVTUEUAU
-      BJVRVTUEUAUBWAJUNWCIUNWCTAEUAUBTVAEVOVHVPRUQAEUAUBTUFVAEVOVHUFADCVRVOVHTF
-      VRCVRUCUDGUEFVRGUECVRGUEUCUDUBWBCVQWDFUAEWEUDWDAEUAUBTVAEVOVHVPSUQWFAEUAU
-      BTUFVAEVOVHTUFBCDEFGHIJKAEUAUBTUFVAEVOVHTUFADUMUKAEUAUBTVAEVOVHTVPLUQAEUA
-      UBTUFVAEVOVHTUFAVADVGVHAEUAUBTVAEVOVHTVPMUQAEUAUBTUFVAEVOVHTUFAEUNUKAEUAU
-      BTVAEVOVHTVPNUQAEUAUBTUFVAEVOVHTUFAUTEUCUDDVGVHAEUAUBTVAEVOVHTVPOUQAEUAUB
-      TUFUAEVGVHVAEVOVHTAEUAUBTUFUAEVGVHEUAUPAEUAUBTUFEUAAEUAUBTUGWGAEUAUBTUFEU
-      NUKUAEVGVHEUAUPWHAEUNUKEUAUBTNVMEWIUQWJVMAEUAUBTUFVAEVOVHTUGAEUAUBTUFVAEV
-      OVHTUFAUTDUCUDIVRJVRVSUDUBIVRVTUEUAUBJVRVTUEUAUBWAJUNWCIUNWCTAEUAUBTVAEVO
-      VHTVPRUQAEUAUBTUFVAEVOVHTUFADCVRVOVHTFVRCVRUCUDGUEFVRGUECVRGUEUCUDUBWBCVQ
-      WDFUAEWEUDWDAEUAUBTVAEVOVHTVPSUQAEUAUBTUFVAEVOVHTUFAHVQUKAEUAUBTVAEVOVHTV
-      PPUQAEUAUBTUFVAEVOVHTUFADHVOVHTAEUAUBTVAEVOVHTVPQUQWKWLWL $.
+      pm2.61dan ) AEUAUBZEHUCUDGUEEGUEHGUEZUCUDUBZAWMUFZUAHEWNGWPEUAAWMUGUHAUAH
+      UCUDGUEUAGUEWNUCUDUBWMAHGAHPUIAWNUJUPWNUKULABHDGKADUMUPZDUNUPLDUOTZPQUQUR
+      ABDGKWRAUSUTDUSVIUPAVAVBUTVIUPAVCVBADWRVDUSUTVEVFAVJVBMVGVHVKVLVMAWMVNZUF
+      ZUTEVOVFZWOWTXAUFZBCDEFGHIJKXBAWQAWSXAVPZLTXBAUTDVEVFZXCMTXBAEUNUPZXCNTXB
+      AUSEUCUDDVEVFZXCOTXBAHVQUPZXCPTXBADHVOVFVNZXCQTWTXAUGXBAUSDUCUDIVRZJVRZVS
+      UDUBXIVTUEUAUBXJVTUEUAUBWAJUNWCIUNWCVNZXCRTXBADCVRZVOVFVNFVRZXLUCUDGUEXMG
+      UEXLGUEUCUDUBWBCVQWDFUAEWEUDWDZXCSTWFWTXAVNZUFZBCDEFGHIJKXPAWQAWSXOVPZLTX
+      PAXDXQMTXPAXEXQNTXPAXFXQOTWTUAEVEVFZXOWTXREUAULZWTEUAAWSUGWGWTXEXRXSWHAXE
+      WSNVLEWITWJVLWTXOUGXPAXKXQRTXPAXNXQSTXPAXGXQPTXPAXHXQQTWKWLWL $.
   $}
 
   ${
@@ -892877,114 +892671,29 @@ $)
     liouoddextendrald.4 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) =
       ( a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
     liouoddextendrald.5 $e |- ( ph -> Q e. NN ) $.
-    $( For every positive integer ` Q < ( P / 2 ) ` , the odd completion
-       satisfies the multiplication identity at ` Q ` and every integer not
-       divisible by ` P ` .  Outer strong induction on ` Q ` uses the inner
-       induction in ~ liouoddextcentralrald .  Here twice ` P ` has no
-       positive-positive pair.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( If ` P ` is a prime greater than three whose double has no
+       positive-positive pair, the odd completion from ~ liouoddval satisfies
+       the multiplication identity at every positive integer ` Q < ( P / 2 ) `
+       and every integer not divisible by ` P ` .  Outer strong induction on
+       ` Q ` uses the inner induction in ~ liouoddextcentralrald .
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouoddextendrald $p |- ( ph -> ( Q < ( P / 2 ) -> A. z e. ZZ ( -. P || z
       -> ( F ` ( Q x. z ) ) = ( ( F ` Q ) x. ( F ` z ) ) ) ) ) $=
-      ( vq vu cv co wbr cfv wi vv vk c2 cdiv clt cdvds cmul wceq wral fmulraleq
-      wn cz breq1 imbi12d cn w3a wa cprime simpll simpl simp1d syl simp2d simpr
+      ( co cmul cfv wceq wi cz syl vq vu vv vk cv c2 cdiv clt wbr cdvds wn wral
+      breq1 fmulraleq imbi12d cn w3a wa cprime simpll simpl simp1d simp2d simpr
       wcel c3 nnred prmnn crp 2rp a1i ltmuldiv2d mpbird simplr caddc cliou wrex
       c1 rerpdivcld simp3d ralnnindhypd liouoddextendnextd ralrimiva fmulralcbv
-      cfzo ex sylibr indstrd ) ANPDUCUDQUERDCPUFRUKNPCPUGQFSNPFSCPFSUGQUHTCULUI
-      TOPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITEDUCUDQUERDCPUFRUKECPUGQ
-      FSEFSCPFSUGQUHTCULUITNOENPOPUHNPDUCUDQUEROPDUCUDQUERDCPUFRUKNPCPUGQFSNPFS
-      CPFSUGQUHTCULUIDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUINPOPDUCUDQUEUMCNPOPDFU
-      JUNNPEUHNPDUCUDQUEREDUCUDQUERDCPUFRUKNPCPUGQFSNPFSCPFSUGQUHTCULUIDCPUFRUK
-      ECPUGQFSEFSCPFSUGQUHTCULUINPEDUCUDQUEUMCNPEDFUJUNANPUOVEOPNPUEROPDUCUDQUE
-      RDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERDCPUFRUKNPCPUGQF
-      SNPFSCPFSUGQUHTCULUIANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQ
-      UHTCULUITTOUOUIUPNPDUCUDQUERUQDUAPUFRUKNPUAPUGQFSNPFSUAPFSUGQUHTUAULUIDCP
-      UFRUKNPCPUGQFSNPFSCPFSUGQUHTCULUIANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQ
-      FSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQDUAPUFRUKNPUAPUGQFSNPFSUAPFSUG
-      QUHTUAULANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOU
-      OUIUPNPDUCUDQUERUQUAPULVEUQDUAPUFRUKNPUAPUGQFSNPFSUAPFSUGQUHANPUOVEOPNPUE
-      ROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQUAP
-      ULVEUQDUAPUFRUKUQBCDNPUBFUAPGHIANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFS
-      OPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQUAPULVEUQDUAPUFRUKUQANPUOVEOPNPU
-      EROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQDU
-      RVEANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUP
-      NPDUCUDQUERUQUAPULVEDUAPUFRUKUSANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFS
-      OPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQADURVEANPUOVEOPNPUEROPDUCUDQUERD
-      CPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQANPUOVEOPNPUEROP
-      DUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIANPUOVEOPNPUEROPDUCUD
-      QUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUTVAJVBVBANPU
-      OVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUD
-      QUERUQUAPULVEUQDUAPUFRUKUQANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSC
-      PFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQVFDUERANPUOVEOPNPUEROPDUCUDQUERDCPUFR
-      UKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQUAPULVEDUAPUFRUKUSANP
-      UOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCU
-      DQUERUQAVFDUERANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCUL
-      UITTOUOUIUPNPDUCUDQUERUQANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPF
-      SUGQUHTCULUITTOUOUIANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQU
-      HTCULUITTOUOUIUPNPDUCUDQUERUTVAKVBVBANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCP
-      UGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQUAPULVEUQDUAPUFRUKUQANPUOVE
-      OPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUE
-      RUQNPUOVEANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTO
-      UOUIUPNPDUCUDQUERUQUAPULVEDUAPUFRUKUSANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPC
-      PUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQANPUOVEOPNPUEROPDUCUDQUERD
-      CPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIANPUOVEOPNPUEROPDUCUDQUERDCPUFR
-      UKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUTVCVBANPUOVEOPNPUEROPD
-      UCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQUAPULVE
-      UQDUAPUFRUKUQANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULU
-      ITTOUOUIUPNPDUCUDQUERUQUCNPUGQDUERANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUG
-      QFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQUAPULVEDUAPUFRUKUSANPUOVEOPNP
-      UEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQU
-      CNPUGQDUERNPDUCUDQUERANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUG
-      QUHTCULUITTOUOUIUPNPDUCUDQUERVDANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFS
-      OPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQNPDUCANPUOVEOPNPUEROPDUCUDQUERDC
-      PUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQNPANPUOVEOPNPUERO
-      PDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQANPUO
-      VEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIANPUOVEOPN
-      PUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUT
-      VCVGANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIU
-      PNPDUCUDQUERUQDANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCU
-      LUITTOUOUIUPNPDUCUDQUERUQDURVEDUOVEANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPU
-      GQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQADURVEANPUOVEOPNPUEROPDUCUDQ
-      UERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQANPUOVEOPNPU
-      EROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIANPUOVEOPNPUEROPD
-      UCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUTVAJVBDV
-      HVBVGUCVIVEANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUIT
-      TOUOUIUPNPDUCUDQUERUQVJVKVLVMVBANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFS
-      OPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQUAPULVEDUAPUFRUKVNANPUOVEOPNPUER
-      OPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQUAPU
-      LVEUQDUAPUFRUKVDANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTC
-      ULUITTOUOUIUPNPDUCUDQUERUQUAPULVEUQDUAPUFRUKUQANPUOVEOPNPUEROPDUCUDQUERDC
-      PUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQUCDUGQGPHPVOQUHGP
-      VPSVRUHHPVPSVRUHUPHUOVQGUOVQUKANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSO
-      PFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQUAPULVEDUAPUFRUKUSANPUOVEOPNPUERO
-      PDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQAUCDU
-      GQGPHPVOQUHGPVPSVRUHHPVPSVRUHUPHUOVQGUOVQUKANPUOVEOPNPUEROPDUCUDQUERDCPUF
-      RUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQANPUOVEOPNPUEROPDUCU
-      DQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIANPUOVEOPNPUEROPDUCUDQUER
-      DCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUTVALVBVBANPUOVEO
-      PNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUER
-      UQUAPULVEUQDUAPUFRUKUQANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSU
-      GQUHTCULUITTOUOUIUPNPDUCUDQUERUQDCPUFRUKUBPCPUGQFSUBPFSCPFSUGQUHTCULUIUBV
-      RNPWEQUIANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOU
-      OUIUPNPDUCUDQUERUQUAPULVEDUAPUFRUKUSANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCP
-      UGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQDCPUFRUKOPCPUGQFSOPFSCPFSUG
-      QUHTCULUIDCPUFRUKUBPCPUGQFSUBPFSCPFSUGQUHTCULUIDUCUDQUBONPCOPUBPDFUJANPUO
-      VEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQ
-      UERUQDUCANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOU
-      OUIUPNPDUCUDQUERUQDANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQU
-      HTCULUITTOUOUIUPNPDUCUDQUERUQDURVEDUOVEANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKO
-      PCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQADURVEANPUOVEOPNPUEROPDU
-      CUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQANPUOVEO
-      PNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIANPUOVEOPNPUE
-      ROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUTVAJ
-      VBDVHVBVGUCVIVEANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCU
-      LUITTOUOUIUPNPDUCUDQUERUQVJVKVSANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFS
-      OPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQANPUOVEOPNPUEROPDUCUDQUERDCPUFRU
-      KOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIANPUOVEOPNPUEROPDUCUDQUERDCPUFRUKOPCP
-      UGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUTVCANPUOVEOPNPUEROPDUCUDQUER
-      DCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERVDANPUOVEOPNPUERO
-      PDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUQANPUO
-      VEOPNPUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIANPUOVEOPN
-      PUEROPDUCUDQUERDCPUFRUKOPCPUGQFSOPFSCPFSUGQUHTCULUITTOUOUIUPNPDUCUDQUERUT
-      VTWAVBWBWFWCCUADFNPWDWGWFMWH $.
+      cfzo ex sylibr indstrd ) AUAUEZDUFUGNZUHUIZDCUEZUJUIUKZWIWLONFPWIFPZWLFPZ
+      ONQRCSULZRUBUEZWJUHUIZWMWQWLONFPWQFPWOONQRCSULZRZEWJUHUIZWMEWLONFPEFPWOON
+      QRCSULZRUAUBEWIWQQWKWRWPWSWIWQWJUHUMWMCWIWQSWOWLFUNUOWIEQWKXAWPXBWIEWJUHU
+      MWMCWIESWOWLFUNUOAWIUPVEZWQWIUHUIWTRUBUPULZUQZWKWPXEWKURZDUCUEZUJUIUKZWIX
+      GONFPWNXGFPONQZRZUCSULWPXFXJUCSXFXGSVEZURZXHXIXLXHURZBCDWIUDFXGGHIXMXFDUS
+      VEZXFXKXHUTZXFAXNXFAXCXDXEWKVAZVBZJTZTXMXFVFDUHUIZXOXFAXSXQKTTXMXFXCXOXFA
+      XCXDXPVCZTXMXFUFWIONDUHUIZXOXFYAWKXEWKVDZXFWIDUFXFWIXTVGXFDXFXNDUPVEXRDVH
+      TVGZUFVIVEXFVJVKZVLVMTXFXKXHVNXLXHVDXMXFUFDONGUEZHUEZVONQYEVPPVRQYFVPPVRQ
+      UQHUPVQGUPVQUKZXOXFAYGXQLTTXMXFWMUDUEZWLONFPYHFPWOONQRCSULZUDVRWIWENULXOX
+      FWSYIWJUDUBWIWMCWQYHSWOWLFUNXFDUFYCYDVSXTYBXFAXCXDXPVTWATWBWFWCCUCSWNDFWI
+      WDWGWFMWH $.
   $}
 
   ${
@@ -892999,17 +892708,18 @@ $)
     liouoddcentralmuld.7 $e |- ( ph -> -. P || Z ) $.
     liouoddcentralmuld.8 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P )
       = ( a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( The odd completion satisfies the multiplication identity for a positive
-       central multiplier and an integer argument not divisible by the prime.
-       Here twice ` P ` has no positive-positive pair.  (Contributed by Zhi
-       Wang, 20-Oct-2026.) $)
+    $( If ` P ` is a prime greater than three whose double has no
+       positive-positive pair, the odd completion from ~ liouoddval satisfies
+       the multiplication identity at a positive integer ` Q < ( P / 2 ) ` and
+       an integer argument not divisible by ` P ` .  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
     liouoddcentralmuld $p |- ( ph -> ( F ` ( Q x. Z ) ) = ( ( F ` Q ) x. ( F
       ` Z ) ) ) $=
-      ( vz c2 co wbr cdiv clt cv cdvds wn cmul cfv wceq wi cz wral nnred cprime
+      ( vz cfv c2 co cz cdiv clt wbr cv cdvds wn cmul wceq wi wral nnred cprime
       cn prmnn syl crp 2rp a1i ltmuldiv2d mpbid liouoddextendrald fmulralspeczd
-      wcel mpd ) AQCEDFNOADCRUASUBTCQUCUDTUEDQUCUFSEUGDEUGQUCEUGUFSUHUIQUJUKARD
-      UFSCUBTDCRUASUBTMADCRADLULACACUMVDCUNVDJCUOUPULRUQVDAURUSUTVAABQCDEGHIJKP
-      LVBVEVC $.
+      wcel mpd ) AQUADERZCEDFNOADCSUBTUCUDZCQUEZUFUDUGDVHUHTERVFVHERUHTUIUJQUAU
+      KASDUHTCUCUDVGMADCSADLULACACUMVDCUNVDJCUOUPULSUQVDAURUSUTVAABQCDEGHIJKPLV
+      BVEVC $.
   $}
 
   ${
@@ -893023,12 +892733,13 @@ $)
     liouoddmulcomd.6 $e |- ( ph -> -. P || B ) $.
     liouoddmulcomd.7 $e |- ( ph -> ( F ` ( A x. B ) ) = ( ( F ` A ) x. ( F `
       B ) ) ) $.
-    $( Reverse the two nonzero residue arguments of an odd-completion
-       multiplication identity.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( For the odd completion from ~ liouoddval , a multiplication identity at
+       integers ` A ` and ` B ` not divisible by ` P ` also holds with the
+       arguments reversed.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouoddmulcomd $p |- ( ph -> ( F ` ( B x. A ) ) = ( ( F ` B ) x. ( F ` A
       ) ) ) $=
-      ( zcnd cfv cc wcel cc0 wne liouoddcnne0d simpld fmulcomd ) ACDFACINADJNAC
-      FOPQCFORSABCEFGHIKTUAADFOPQDFORSABDEFGHJLTUAMUB $.
+      ( cfv zcnd cc wcel cc0 wne liouoddcnne0d simpld fmulcomd ) ACDCFNZDFNZFAC
+      IOADJOAUCPQUCRSABCEFGHIKTUAAUDPQUDRSABDEFGHJLTUAMUB $.
   $}
 
   ${
