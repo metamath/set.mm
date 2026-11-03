@@ -882957,10 +882957,7 @@ $)
     fmuleq1d.2 $e |- ( ph -> ( F ` ( A G B ) ) = ( ( F ` A ) H D ) ) $.
     $( If ` ph ` implies ` A = C ` , an identity
        ` ( F `` ( A G B ) ) = ( ( F `` A ) H D ) ` under ` ph ` also holds with
-       ` C ` in place of ` A ` .  The input operation ` G ` and output
-       operation ` H ` are independent.  Taking ` G = x. ` , ` H = x. ` , and
-       ` D = ( F `` B ) ` gives substitution in a multiplication identity.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+       ` C ` in place of ` A ` .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     fmuleq1d $p |- ( ph -> ( F ` ( C G B ) ) = ( ( F ` C ) H D ) ) $=
       ( co cfv oveq1d fveq2d 3eqtr3d ) ABCGKZFLBFLZEHKDCGKZFLDFLZEHKJAPRFABDCGI
       MNAQSEHABDFINMO $.
@@ -882991,10 +882988,7 @@ $)
       z ) ) = ( ( F ` k ) H ( F ` z ) ) ) ) $.
     $( Evaluate a doubly restricted universal family at ` K ` and ` Z ` .  The
        membership hypotheses and ` -. P R Z ` yield
-       ` ( F `` ( K G Z ) ) = ( ( F `` K ) H ( F `` Z ) ) ` under ` ph ` .  The
-       operations ` G ` and ` H ` and relation ` R ` are independent.  Taking
-       ` G = x. ` , ` H = x. ` , and ` R = || ` gives specialization of
-       multiplication identities at an argument not divisible by ` P ` .
+       ` ( F `` ( K G Z ) ) = ( ( F `` K ) H ( F `` Z ) ) ` under ` ph ` .
        (Contributed by Zhi Wang, 17-Oct-2026.) $)
     fmulralspecd $p |- ( ph -> ( F ` ( K G Z ) ) = ( ( F ` K ) H ( F ` Z ) ) )
       $=
@@ -883010,10 +883004,7 @@ $)
     $( Equal ` A ` and ` B ` give equivalent restricted universal statements of
        ` ( F `` ( A G E ) ) = ( ( F `` A ) H D ) ` and
        ` ( F `` ( B G E ) ) = ( ( F `` B ) H D ) ` , each conditional on
-       ` ph ` .  Only ` A ` and ` B ` must be independent of the bound variable
-       ` z ` ; the two operations ` G ` and ` H ` may depend on it.  Taking
-       ` G = x. ` and ` H = x. ` gives the corresponding equivalence for
-       multiplication identities.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+       ` ph ` .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     fmulraleq $p |- ( A = B -> ( A. z e. C ( ph -> ( F ` ( A G E ) ) = ( ( F `
       A ) H D ) ) <-> A. z e. C ( ph -> ( F ` ( B G E ) ) = ( ( F ` B ) H D ) )
       ) ) $=
@@ -883027,12 +883018,7 @@ $)
     $d G v z $.  $d H v z $.  $d R v z $.
     $( Renaming the bound variable from ` z ` to ` v ` preserves the restricted
        universal statement that ` -. P R z ` implies
-       ` ( F `` ( N G z ) ) = ( D H ( F `` z ) ) ` .  The domain and all class
-       parameters are independent of both bound variables, as specified by the
-       distinct-variable conditions.  The operations ` G ` and ` H ` and
-       relation ` R ` are independent.  Taking ` G = x. ` , ` H = x. ` ,
-       ` R = || ` , and ` D = ( F `` N ) ` gives a multiplication identity at
-       arguments not divisible by ` P ` .  (Contributed by Zhi Wang,
+       ` ( F `` ( N G z ) ) = ( D H ( F `` z ) ) ` .  (Contributed by Zhi Wang,
        17-Oct-2026.) $)
     fmulralcbv $p |- ( A. z e. C ( -. P R z -> ( F ` ( N G z ) ) = ( D H ( F `
       z ) ) ) <-> A. v e. C ( -. P R v -> ( F ` ( N G v ) ) = ( D H ( F ` v ) )
@@ -883052,11 +883038,8 @@ $)
       D H ( F ` z ) ) ) ) $.
     $( Evaluate a restricted universal family at ` Z ` .  Membership in ` C `
        and the condition ` -. P R Z ` yield
-       ` ( F `` ( N G Z ) ) = ( D H ( F `` Z ) ) ` under ` ph ` .  The
-       operations ` G ` and ` H ` and relation ` R ` are independent.  Taking
-       ` G = x. ` , ` H = x. ` , ` R = || ` , and ` D = ( F `` N ) ` gives
-       specialization of a multiplication identity at an argument not divisible
-       by ` P ` .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+       ` ( F `` ( N G Z ) ) = ( D H ( F `` Z ) ) ` under ` ph ` .  (Contributed
+       by Zhi Wang, 17-Oct-2026.) $)
     fmulralspeczd $p |- ( ph -> ( F ` ( N G Z ) ) = ( D H ( F ` Z ) ) ) $=
       ( wbr wn co cfv wceq wi cv breq2 notbid oveq2 fveq2d fveq2 oveq2d eqeq12d
       imbi12d rspcdva mpd ) AEKFOZPZJKHQZGRZDKGRZIQZSZMAEBUAZFOZPZJUSHQZGRZDUSG
@@ -883130,10 +883113,8 @@ $)
     $( The factorization ` ( F `` ( ( A x. B ) x. Z ) ) = ( H x. E ) ` follows
        from the three displayed identities and complex-number hypotheses.
        Associativity ( ~ mulassd ) regroups both the argument of ` F ` and the
-       product of ` C ` , ` D ` , and ` E ` .  Taking ` C = ( F `` A ) ` ,
-       ` D = ( F `` B ) ` , ` E = ( F `` Z ) ` , ` G = ( F `` ( B x. Z ) ) ` ,
-       and ` H = ( F `` ( A x. B ) ) ` gives a rule for combining pointwise
-       multiplication identities.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+       product of ` C ` , ` D ` , and ` E ` .  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
     fmulprodd $p |- ( ph -> ( F ` ( ( A x. B ) x. Z ) ) = ( H x. E ) ) $=
       ( cmul co cfv mulassd oveq1d fveq2d oveq2d 3eqtrd 3eqtr4rd ) ADETUAZFTUAD
       EFTUAZTUAZIFTUABCTUAJTUAZGUBZADEFNOPUCAIUIFTSUDAUMBCJTUATUAZGUBDHTUAUKAUL
@@ -883152,10 +883133,7 @@ $)
        ` E = ( C x. D ) ` under the displayed complex-number and sign-reversal
        hypotheses.  The proof uses ~ mulneg2d to rewrite the first equality as
        ` -u E = -u ( C x. D ) ` , then ~ neg11ad to cancel the negations.
-       Taking ` C = ( F `` A ) ` , ` D = ( F `` B ) ` ,
-       ` E = ( F `` ( A x. B ) ) ` , and ` G = ( F `` -u B ) ` gives the
-       equivalence of multiplication identities before and after negating the
-       second argument.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
     fmulnegiffd $p |- ( ph -> ( ( F ` ( A x. -u B ) ) = ( C x. G ) <-> E = ( C
       x. D ) ) ) $=
       ( cneg cmul co cfv wceq mulneg2d fveq2d eqtrd oveq2d eqeq12d mulcld bitrd
@@ -883166,10 +883144,7 @@ $)
   ${
     $( The equations ` ( F `` ( A G B ) ) = ( D H ( F `` B ) ) ` and
        ` ( F `` ( A G C ) ) = ( D H ( F `` C ) ) ` are equivalent when
-       ` B = C ` .  The two operations ` G ` and ` H ` and the common left
-       operand ` D ` are independent.  Taking ` G = x. ` , ` H = x. ` , and
-       ` D = ( F `` A ) ` gives substitution of equal second arguments in a
-       multiplication identity.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+       ` B = C ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     fmuleq2 $p |- ( B = C -> ( ( F ` ( A G B ) ) = ( D H ( F ` B ) ) <-> ( F `
       ( A G C ) ) = ( D H ( F ` C ) ) ) ) $=
       ( wceq co cfv oveq2 fveq2d fveq2 oveq2d eqeq12d ) BCHZABFIZEJACFIZEJDBEJZ
