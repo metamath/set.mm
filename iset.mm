@@ -72143,6 +72143,27 @@ $)
   $}
 
   ${
+    $d A k $.  $d F k q $.  $d F p q $.  $d W k q $.  $d W p q $.  $d Z k q $.
+    $d Z p q $.  $d k ph q $.  $d p ph q $.
+    isfsuppf.f $e |- ( ph -> F : A --> B ) $.
+    isfsuppf.fex $e |- ( ph -> F e. V ) $.
+    isfsuppf.z $e |- ( ph -> Z e. B ) $.
+    isfsuppf.w $e |- ( ph -> W e. Fin ) $.
+    isfsuppf.wss $e |- ( ph -> W C_ A ) $.
+    isfupppf.k $e |- ( ( ph /\ k e. ( A \ W ) ) -> ( F ` k ) = Z ) $.
+    $( Showing that a function is finitely supported.  (Contributed by Jim
+       Kingdon, 2-Nov-2026.) $)
+    isfsuppf $p |- ( ph -> F finSupp Z ) $=
+      ( vp vq cv wcel wa wceq ffund cdm fdmd sseqtrrd cdif cima csn cfv fvelima
+      wfun wrex sylan simprr fveqeq2 ralrimiva ad2antrr difeq1d eleqtrd rspcdva
+      wral simprl eqtr3d velsn sylibr rexlimddv ex ssrdv isfsuppfid ) AECFGHJKA
+      BCEIUAZLAGBEUBZMABCEIUCZUDAOEVJGUEZUFZHUGZAOQZVMRZVOVNRZAVPSZPQZEUHZVOTZV
+      QPVLAEUJVPWAPVLUKVIPVOVLEUIULVRVSVLRZWASZSZVOHTVQWDVTVOHVRWBWAUMWDDQZEUHH
+      TZVTHTDBGUEZVSWEVSHEUNAWFDWGUTVPWCAWFDWGNUOUPWDVSVLWGVRWBWAVAAVLWGTVPWCAV
+      JBGVKUQUPURUSVBOHVCVDVEVFVGVH $.
+  $}
+
+  ${
     $d A r x y $.  $d B x y $.  $d F p w $.  $d F q r w $.  $d F p x y $.
     $d Z p w $.  $d Z q r w $.  $d Z p y $.  $d p ph w $.  $d ph q r w $.
     funisfsuppdc.r $e |- ( ph -> F e. V ) $.
