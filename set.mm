@@ -579740,6 +579740,18 @@ $)
     ( cv csn cdif wcel wex wne wa wrex eldifsn exbii df-rex bitr4i ) ADZBCEFGZA
     HPBGPCIZJZAHRABKQSAPBCLMRABNO $.
 
+  ${
+    $d A x $.  $d B x y $.  $d C x y $.
+    $( Two ways of expressing "every element of ` A ` is an element of some
+       member of ` B ` other than ` C ` ".  (Contributed by BTernaryTau,
+       3-Nov-2026.) $)
+    ssunidifsn $p |- ( A C_ U. ( B \ { C } ) <->
+        A. x e. A E. y e. B ( x e. y /\ y =/= C ) ) $=
+      ( csn cdif cuni wss cv wcel wral wne wrex dfss3 wex eldifsn anbi2i an12
+      wa bitr4i exbii eluni df-rex 3bitr4i ralbii bitri ) CDEFGZHZIAJZUIKZACLUJ
+      BJZKZULEMZTZBDNZACLACUIOUKUPACUMULUHKZTZBPULDKZUOTZBPUKUPURUTBURUMUSUNTZT
+      UTUQVAUMULDEQRUSUMUNSUAUBBUJUHUCUOBDUDUEUFUG $.
+  $}
 
   ${
     $d w x y z $.
@@ -579755,7 +579767,6 @@ $)
     $( $j usage 'axnulALT2' avoids 'ax-5' 'ax-7' 'ax-8' 'ax-9' 'ax-10' 'ax-11'
        'ax-12' 'ax-13' 'ax-ext' 'ax-sep' 'ax-nul'; $)
   $}
-
 
   $( If the image under a one-to-one function exists, then the corresponding
      preimage also exists.  (Contributed by BTernaryTau, 21-Jun-2026.) $)
