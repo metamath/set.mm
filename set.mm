@@ -580884,6 +580884,22 @@ $)
        'ax-ac'; $)
   $}
 
+  ${
+    $d A w $.  $d v x y z $.  $d v w x z $.  $d A v y z $.
+    $( Kurt Maes' Axiom of Choice with class variables expressed using
+       abbreviations.  (Contributed by BTernaryTau, 4-Nov-2026.) $)
+    zfac2cl $p |- ( A e. V -> ( E. y e. A y C_ U. ( A \ { y } ) \/
+        E. w ( w e/ A /\ A. z e. A E. x ( z i^i w ) = { x } ) ) ) $=
+      ( vv cv csn cdif cuni wss wrex wnel cin wceq wex wral wa wo difeq1 unieqd
+      sseq2d rexeqbi1dv neleq2 raleq anbi12d exbidv orbi12d zfac2 vtoclg ) BHZG
+      HZULIZJZKZLZBUMMZDHZUMNZCHUSOAHIPAQZCUMRZSZDQZTULEUNJZKZLZBEMZUSENZVACERZ
+      SZDQZTGEFUMEPZURVHVDVLUQVGBUMEVMUPVFULVMUOVEUMEUNUAUBUCUDVMVCVKDVMUTVIVBV
+      JUMEUSUEVACUMEUFUGUHUIGBCDAUJUK $.
+    $( $j usage 'zfac2cl' avoids 'ax-10' 'ax-11' 'ax-12' 'ax-13' 'ax-rep'
+       'ax-sep' 'ax-nul' 'ax-pow' 'ax-pr' 'ax-un' 'ax-reg' 'ax-inf' 'ax-inf2'
+       'ax-ac'; $)
+  $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
