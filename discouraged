@@ -19016,6 +19016,7 @@ New usage of "sbtALT" is discouraged (0 uses).
 New usage of "sbtT" is discouraged (0 uses).
 New usage of "sbtr" is discouraged (0 uses).
 New usage of "sbtrt" is discouraged (1 uses).
+New usage of "sbvALT" is discouraged (0 uses).
 New usage of "scandx" is discouraged (12 uses).
 New usage of "scmateALT" is discouraged (0 uses).
 New usage of "scott0OLD" is discouraged (4 uses).
@@ -21234,6 +21235,7 @@ Proof modification of "sbrimvwOLD" is discouraged (59 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
 Proof modification of "sbtALT" is discouraged (12 steps).
 Proof modification of "sbtT" is discouraged (7 steps).
+Proof modification of "sbvALT" is discouraged (32 steps).
 Proof modification of "scmateALT" is discouraged (236 steps).
 Proof modification of "scott0OLD" is discouraged (323 steps).
 Proof modification of "scott0bOLD" is discouraged (37 steps).

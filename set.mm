@@ -17765,6 +17765,28 @@ $)
     ( wtru tru sbt ) CABDE $.
 
   ${
+    $d u x ph $.  $d u t $.
+    $( In the case of ~ sbv , the hypothesis in ~ df-sb is derivable without
+       ~ ax-7 .  The essential proof step is presented in this lemma.
+       (Contributed by Wolf Lammen, 2-Nov-2026.) $)
+    sbvlem $p |- ( A. u ( u = t -> A. x ( x = u -> ph ) ) <-> ph ) $=
+      ( weq wi wal equsv imbi2i albii bitri ) CDEZBCEAFBGZFZCGLAFZCGANOCMALABCH
+      IJACDHK $.
+  $}
+
+  ${
+    $d u v x ph $.  $d u v t $.
+    $( Substitution for a variable not occurring in a proposition.  See ~ sbf
+       for a version without disjoint variable condition on ` x , ph ` .
+       (Contributed by BJ, 22-Dec-2020.)  Avoid ~ ax-7 .  (Revised by Wolf
+       Lammen, 2-Nov-2026.) $)
+    sbv $p |- ( [ t / x ] ph <-> ph ) $=
+      ( vu vv wsb weq wi wal sbvlem bitr4i df-sb bitri ) ABCFDCGBDGAHBIHDIZAABD
+      ECNAECGBEGAHBIHEIABDCJZABECJKLOM $.
+    $( $j usage 'sbv' avoids 'ax-7'; $)
+  $}
+
+  ${
     $d y x $.  $d y t $.  $d y ph $.
     $( The specialization axiom of standard predicate calculus.  It states that
        if a statement ` ph ` holds for all ` x ` , then it also holds for the
@@ -17954,12 +17976,10 @@ $)
 
   ${
     $d x ph $.
-    $( Substitution for a variable not occurring in a proposition.  See ~ sbf
-       for a version without disjoint variable condition on ` x , ph ` .  If
-       one adds a disjoint variable condition on ` x , t ` , then ~ sbv can be
-       proved directly by chaining ~ equsv with ~ sb6 .  (Contributed by BJ,
-       22-Dec-2020.) $)
-    sbv $p |- ( [ t / x ] ph <-> ph ) $=
+    $( Alternative proof of ~ sbv .  Shorter, but using ~ ax-7 .  (Contributed
+       by BJ, 22-Dec-2020.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    sbvALT $p |- ( [ t / x ] ph <-> ph ) $=
       ( wsb wex spsbe ax5e syl wal ax-5 stdpc4 impbii ) ABCDZAMABEAABCFABGHAABI
       MABJABCKHL $.
   $}
