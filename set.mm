@@ -17783,6 +17783,7 @@ $)
     sbv $p |- ( [ t / x ] ph <-> ph ) $=
       ( vu vv wsb weq wi wal sbvlem bitr4i df-sb bitri ) ABCFDCGBDGAHBIHDIZAABD
       ECNAECGBEGAHBIHEIABDCJZABECJKLOM $.
+    $( $j usage 'sbv' avoids 'ax-7'; $)
   $}
 
   ${
