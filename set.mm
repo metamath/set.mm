@@ -44590,10 +44590,24 @@ $)
   $}
 
   ${
-    $d x A $.
+    $d v x y $.  $d A x y z $.
     $( Two ways to express " ` A ` is a singleton".  (Contributed by NM,
-       30-Oct-2010.) $)
+       30-Oct-2010.)  Avoid ~ ax-10 , ~ ax-11 , ~ ax-12 .  (Revised by
+       BTernaryTau, 4-Nov-2026.) $)
     eusn $p |- ( E! x x e. A <-> E. x A = { x } ) $=
+      ( vy vv vz cv csn wceq wex weq wb wal weu cab df-sn eqeq2i equequ1 eqabbw
+      wcel eleq1w bitri exbii sneq eqeq2d cbvexvw eu6w 3bitr4ri ) BCFZGZHZCIAFZ
+      BSZACJZKALZCIBUKGZHZAIULAMUJUNCUJBDCJZDNZHUNUIURBDUHOPUQUMDABDACQRUAUBUPU
+      JACUMUOUIBUKUHUCUDUEULEFBSUHBSACEAEBTACBTUFUG $.
+    $( $j usage 'eusn' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+  $}
+
+  ${
+    $d x A $.
+    $( Obsolete version of ~ eusn as of 4-Nov-2026.  (Contributed by NM,
+       30-Oct-2010.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    eusnOLD $p |- ( E! x x e. A <-> E. x A = { x } ) $=
       ( cv wcel weu cab csn wceq wex euabsn abid2 eqeq1i exbii bitri ) ACZBDZAE
       PAFZOGZHZAIBRHZAIPAJSTAQBRABKLMN $.
   $}
