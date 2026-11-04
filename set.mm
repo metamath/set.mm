@@ -882953,14 +882953,34 @@ $)
   $}
 
   ${
+    $( The equations ` ( F `` ( A G B ) ) = ( ( F `` A ) H D ) ` and
+       ` ( F `` ( C G B ) ) = ( ( F `` C ) H D ) ` are equivalent when
+       ` A = C ` .  (Contributed by Zhi Wang, 4-Nov-2026.) $)
+    fmuleq1 $p |- ( A = C -> ( ( F ` ( A G B ) ) = ( ( F ` A ) H D ) <->
+      ( F ` ( C G B ) ) = ( ( F ` C ) H D ) ) ) $=
+      ( wceq co cfv fvoveq1 fveq2 oveq1d eqeq12d ) ACHZABFIEJCBFIEJAEJZDGICEJZD
+      GIACBEFKOPQDGACELMN $.
+  $}
+
+  ${
+    $( The equations ` ( F `` ( A G B ) ) = ( D H ( F `` B ) ) ` and
+       ` ( F `` ( A G C ) ) = ( D H ( F `` C ) ) ` are equivalent when
+       ` B = C ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    fmuleq2 $p |- ( B = C -> ( ( F ` ( A G B ) ) = ( D H ( F ` B ) ) <-> ( F `
+      ( A G C ) ) = ( D H ( F ` C ) ) ) ) $=
+      ( wceq co cfv oveq2 fveq2d fveq2 oveq2d eqeq12d ) BCHZABFIZEJACFIZEJDBEJZ
+      GIDCEJZGIPQREBCAFKLPSTDGBCEMNO $.
+  $}
+
+  ${
     fmuleq1d.1 $e |- ( ph -> A = C ) $.
     fmuleq1d.2 $e |- ( ph -> ( F ` ( A G B ) ) = ( ( F ` A ) H D ) ) $.
     $( If ` ph ` implies ` A = C ` , an identity
        ` ( F `` ( A G B ) ) = ( ( F `` A ) H D ) ` under ` ph ` also holds with
        ` C ` in place of ` A ` .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     fmuleq1d $p |- ( ph -> ( F ` ( C G B ) ) = ( ( F ` C ) H D ) ) $=
-      ( co cfv oveq1d fveq2d 3eqtr3d ) ABCGKZFLBFLZEHKDCGKZFLDFLZEHKJAPRFABDCGI
-      MNAQSEHABDFINMO $.
+      ( co cfv wceq wb fmuleq1 syl mpbid ) ABCGKFLBFLEHKMZDCGKFLDFLEHKMZJABDMRS
+      NIBCDEFGHOPQ $.
   $}
 
   ${
@@ -883139,16 +883159,6 @@ $)
       ( cneg cmul co cfv wceq mulneg2d fveq2d eqtrd oveq2d eqeq12d mulcld bitrd
       neg11ad ) ABCPQRZGSZDHQRZTFPZDEQRZPZTFUMTAUJULUKUNAUJBCQRPZGSULAUIUOGABCI
       JUAUBOUCAUKDEPZQRUNAHUPDQNUDADEKLUAUCUEAFUMMADEKLUFUHUG $.
-  $}
-
-  ${
-    $( The equations ` ( F `` ( A G B ) ) = ( D H ( F `` B ) ) ` and
-       ` ( F `` ( A G C ) ) = ( D H ( F `` C ) ) ` are equivalent when
-       ` B = C ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    fmuleq2 $p |- ( B = C -> ( ( F ` ( A G B ) ) = ( D H ( F ` B ) ) <-> ( F `
-      ( A G C ) ) = ( D H ( F ` C ) ) ) ) $=
-      ( wceq co cfv oveq2 fveq2d fveq2 oveq2d eqeq12d ) BCHZABFIZEJACFIZEJDBEJZ
-      GIDCEJZGIPQREBCAFKLPSTDGBCEMNO $.
   $}
 
   ${
