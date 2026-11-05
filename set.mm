@@ -624122,7 +624122,7 @@ $)
        Revised from the original definition ~ dfsb1 .  (Revised by BJ,
        22-Dec-2020.)  Add the justification hypothesis.  (Revised by Wolf
        Lammen, 4-Feb-2026.)  Integrate the justification in the definiens.
-       (Revised by Wolf Lammen, 4-Nov -2026.) $)
+       (Revised by Wolf Lammen, 4-Nov-2026.) $)
     df-wl-sb $a |- ( [ t / x ] ph <->
                              ( A. y ( y = t -> A. x ( x = y -> ph ) ) /\
                                A. z ( z = t -> A. x ( x = z -> ph ) ) ) ) $.
@@ -624131,7 +624131,7 @@ $)
   ${
     $d u v x $.  $d u v t $.  $d u v ph $.
     $( One direction of proper substitution.  (Contributed by Wolf Lammen,
-       4-Nov -2026.) $)
+       4-Nov-2026.) $)
     wl-simpsb $p |- ( [ t / x ] ph ->
                                     A. u ( u = t -> A. x ( x = u -> ph ) ) ) $=
       ( vv wsb weq wi wal df-wl-sb simplbi ) ABDFCDGBCGAHBIHCIEDGBEGAHBIHEIABCE
