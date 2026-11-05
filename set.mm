@@ -624041,7 +624041,6 @@ $)
       ( biimpi wl-bian2bi ) ABCBCDFEG $.
   $}
 
-
   ${
     $d x y z $.  $d t y z $.  $d ph y z $.
     $( Define proper substitution.  We use the notation ` [ t / x ] ph ` to
@@ -624116,10 +624115,11 @@ $)
        the resulting axiom list could contain more axioms than necessary.  It
        turns out that incorporating the justification directly into the
        definiens handles these cases more appropriately.  This is the approach
-       implemented here.
+       implemented as conjunction here. It automatically includes ~ sbjust, see
+       ~ abab .
 
-       Prefer ~ dfsb unless you can prove the hypothesis from fewer axioms in
-       special cases; see ~ sbt .  (Contributed by NM, 10-May-1993.)  Revised
+       Prefer ~ wl-dfsb unless you can prove the hypothesis from fewer axioms in
+       special cases; see ~ wl-sbt .  (Contributed by NM, 10-May-1993.)  Revised
        from the original definition ~ dfsb1 .  (Revised by BJ, 22-Dec-2020.)
        Add the justification hypothesis.  (Revised by Wolf Lammen, 4-Feb-2026.)
        Integrate the justification in the definiens.  (Revised by Wolf Lammen,
