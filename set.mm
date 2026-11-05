@@ -624114,16 +624114,15 @@ $)
        This remedy, however, introduced the opposite problem: in certain cases,
        the resulting axiom list could contain more axioms than necessary.  It
        turns out that incorporating the justification directly into the
-       definiens handles these cases more appropriately.  This is the approach
-       implemented as conjunction here. It automatically includes ~ sbjust, see
-       ~ abab .
+       definiens handles these cases more appropriately.  This approach is
+       implemented as a conjunction here, ~ sbjust follows, see ~ abab .
 
-       Prefer ~ wl-dfsb unless you can prove the hypothesis from fewer axioms in
-       special cases; see ~ wl-sbt .  (Contributed by NM, 10-May-1993.)  Revised
-       from the original definition ~ dfsb1 .  (Revised by BJ, 22-Dec-2020.)
-       Add the justification hypothesis.  (Revised by Wolf Lammen, 4-Feb-2026.)
-       Integrate the justification in the definiens.  (Revised by Wolf Lammen,
-       4-Nov -2026.) $)
+       Prefer ~ wl-dfsb unless you can prove the hypothesis from fewer axioms
+       in special cases; see ~ wl-sbt .  (Contributed by NM, 10-May-1993.)
+       Revised from the original definition ~ dfsb1 .  (Revised by BJ,
+       22-Dec-2020.)  Add the justification hypothesis.  (Revised by Wolf
+       Lammen, 4-Feb-2026.)  Integrate the justification in the definiens.
+       (Revised by Wolf Lammen, 4-Nov -2026.) $)
     df-wl-sb $a |- ( [ t / x ] ph <->
                              ( A. y ( y = t -> A. x ( x = y -> ph ) ) /\
                                A. z ( z = t -> A. x ( x = z -> ph ) ) ) ) $.
@@ -624135,8 +624134,8 @@ $)
        4-Nov -2026.) $)
     wl-simpsb $p |- ( [ t / x ] ph ->
                                     A. u ( u = t -> A. x ( x = u -> ph ) ) ) $=
-      ( vv wsb weq wi wal df-wl-sb simplbi ) ABDFCDGBCGAHBIHCIEDGBEGAHBIHEIABCEDJK
-      $.
+      ( vv wsb weq wi wal df-wl-sb simplbi ) ABDFCDGBCGAHBIHCIEDGBEGAHBIHEIABCE
+      DJK $.
   $}
 
   ${
@@ -624147,8 +624146,8 @@ $)
        are usually two instantiations of a subordinate lemma or theorem with a
        different dummy variable.  (Contributed by Wolf Lammen, 4-Nov-2026.) $)
     wl-sbdlem $p |- ( ph -> [ t / x ] ps ) $=
-      ( weq wi wal wa wsb jca df-wl-sb sylibr ) AEFICEIBJCKJEKZDFICDIBJCKJDKZLBCFM
-      AQRGHNBCEDFOP $.
+      ( weq wi wal wa wsb jca df-wl-sb sylibr ) AEFICEIBJCKJEKZDFICDIBJCKJDKZLB
+      CFMAQRGHNBCEDFOP $.
   $}
 
   ${
@@ -624157,15 +624156,15 @@ $)
        (Contributed by Wolf Lammen, 4-Nov-2026.) $)
     wl-dfsb $p |- ( [ t / x ] ph
                                 <-> A. y ( y = t -> A. x ( x = y -> ph ) ) ) $=
-      ( vz wsb weq wi wal sbjust df-wl-sb wl-bian2bi2 ) ABDFCDGBCGAHBIHCIEDGBEGAHBIHE
-      IABCEDJABCEDKL $.
+      ( vz wsb weq wi wal sbjust df-wl-sb wl-bian2bi2 ) ABDFCDGBCGAHBIHCIEDGBEG
+      AHBIHEIABCEDJABCEDKL $.
   $}
 
   ${
     $d u x $.  $d u t $.  $d u ph $.
     wl-sbtlem.1 $e |- ph $.
-    $( In the case of ~ wl-sbt , the definiens in ~ df-wl-sb is derivable from fewer
-       axioms than ~ wl-dfsb .  The essential proof step is presented in
+    $( In the case of ~ wl-sbt , the definiens in ~ df-wl-sb is derivable from
+       fewer axioms than ~ wl-dfsb .  The essential proof step is presented in
        this lemma.  (Contributed by Wolf Lammen, 4-Nov-2026.) $)
     wl-sbtlem $p |- ( ph -> A. u ( u = t -> A. x ( x = u -> ph ) ) ) $=
       ( weq wi wal a1i ax-gen ) CDFZBCFZAGZBHZGZCHAOCNKMBALEIJIJI $.
@@ -624188,8 +624187,8 @@ $)
 
   ${
     $d u x $.  $d u t $.  $d u ph $.
-    $( In the case of ~ wl-stdpc4 , the definiens in ~ df-wl-sb is derivable from
-       fewer axioms than ~ wl-dfsb .  The essential proof step is
+    $( In the case of ~ wl-stdpc4 , the definiens in ~ df-wl-sb is derivable
+       from fewer axioms than ~ wl-dfsb .  The essential proof step is
        presented in this lemma.  (Contributed by Wolf Lammen, 4-Nov-2026.) $)
     wl-stdpc4lem $p |- ( A. x ph -> A. u ( u = t -> A. x ( x = u -> ph ) ) ) $=
       ( wal weq wi ala1 a1d alrimiv ) ABEZCDFZBCFZAGBEZGCKNLAMBHIJ $.
@@ -624218,8 +624217,8 @@ $)
        Steven Nguyen, 11-Jul-2023.)  Revise ~ df-sb again.  (Revised by Wolf
        Lammen, 4-Nov-2026.) $)
     wl-spsbe $p |- ( [ t / x ] ph -> E. x ph ) $=
-      ( vu wsb weq wi wal wex wl-simpsb alequexv exsbim 3syl ) ABCEDCFBDFAGBHZGDHN
-      DIABIABDCJNDCKABDLM $.
+      ( vu wsb weq wi wal wex wl-simpsb alequexv exsbim 3syl ) ABCEDCFBDFAGBHZG
+      DHNDIABIABDCJNDCKABDLM $.
   $}
 
   ${
@@ -624227,8 +624226,9 @@ $)
     $( Lemma for ~ wl-sbi1 .  (Contributed by Wolf Lammen, 4-Nov-2026.) $)
     wl-sbi1lem $p |- ( [ y / x ] ( ph -> ps ) -> ( [ y / x ] ph ->
                                   A. u ( u = y -> A. x ( x = u -> ps ) ) ) ) $=
-      ( wi wsb weq wal wl-simpsb ax-2 al2imi imim3i syl2im ) ABFZCDGEDHZCEHZOFZCIZ
-      FZEIACDGPQAFZCIZFZEIPQBFZCIZFZEIOCEDJACEDJTUCUFESUBUEPRUAUDCQABKLMLN $.
+      ( wi wsb weq wal wl-simpsb ax-2 al2imi imim3i syl2im ) ABFZCDGEDHZCEHZOFZ
+      CIZFZEIACDGPQAFZCIZFZEIPQBFZCIZFZEIOCEDJACEDJTUCUFESUBUEPRUAUDCQABKLMLN
+      $.
   $}
 
   ${
@@ -624239,8 +624239,8 @@ $)
        4-Nov-2026.) $)
     wl-sbi1 $p |- ( [ y / x ] ( ph -> ps ) ->
                                           ( [ y / x ] ph -> [ y / x ] ps ) ) $=
-      ( vu vv wi wsb weq wal wa wl-sbi1lem jcad df-wl-sb imbitrrdi ) ABGCDHZACDHZEDIC
-      EIBGCJGEJZFDICFIBGCJGFJZKBCDHPQRSABCDELABCDFLMBCEFDNO $.
+      ( vu vv wi wsb weq wal wa wl-sbi1lem jcad df-wl-sb imbitrrdi ) ABGCDHZACD
+      HZEDICEIBGCJGEJZFDICFIBGCJGFJZKBCDHPQRSABCDELABCDFLMBCEFDNO $.
   $}
 
   ${
@@ -624249,7 +624249,7 @@ $)
        (Contributed by NM, 16-May-1993.)  (Proof shortened by Wolf Lammen,
        29-Sep-2018.)  Reduce dependencies on axioms.  (Revised by Steven
        Nguyen, 13-Aug-2023.) $)
-    sballem $p |- ( A. x A. w ( w = z -> A. y ( y = w -> ph ) ) <->
+    wl-sballem $p |- ( A. x A. w ( w = z -> A. y ( y = w -> ph ) ) <->
                               A. w ( w = z -> A. y ( y = w -> A. x ph ) ) ) $=
       ( weq wi wal alcom 19.21v albii bitr3i imbi2i 3bitri ) EDFZCEFZAGZCHZGZEH
       BHSBHZEHORBHZGZEHOPABHGZCHZGZEHSBEITUBEORBJKUBUEEUAUDOUAQBHZCHUDQCBIUFUCC
@@ -624263,10 +624263,10 @@ $)
        Reduce dependencies on axioms.  (Revised by Steven Nguyen, 13-Aug-2023.)
        Revise ~ df-sb .  (Revised by Wolf Lammen, 4-Nov-2026.) $)
     wl-sbal $p |- ( [ z / y ] A. x ph <-> A. x [ z / y ] ph ) $=
-      ( vu vv weq wal wi wsb 19.26 wl-sballem anbi12i bitr2i df-wl-sb albii 3bitr4i
-      wa ) EDGZCEGZABHZICHIEHZFDGZCFGZUAICHIFHZRZSTAICHIEHZUCUDAICHIFHZRZBHZUAC
-      DJACDJZBHUJUGBHZUHBHZRUFUGUHBKULUBUMUEABCDELABCDFLMNUACEFDOUKUIBACEFDOPQ
-      $.
+      ( vu vv weq wal wi wa wsb 19.26 wl-sballem anbi12i df-wl-sb albii 3bitr4i
+      bitr2i ) EDGZCEGZABHZICHIEHZFDGZCFGZUAICHIFHZJZSTAICHIEHZUCUDAICHIFHZJZBH
+      ZUACDKACDKZBHUJUGBHZUHBHZJUFUGUHBLULUBUMUEABCDEMABCDFMNRUACEFDOUKUIBACEFD
+      OPQ $.
   $}
 
 $(
