@@ -494014,6 +494014,15 @@ htmldef "TC+" as
   latexdef "TC+" as "\operatorname{TC+}";
 /* End of Matthew House's mathbox */
 
+/* Mathbox of Wolf Lammen */
+htmldef "|[|" as "<IMG SRC='lbrack.gif' WIDTH=5 HEIGHT=19 ALT=' [' TITLE='['>";
+  althtmldef "|[|" as '['; /* &lsqb; */
+  latexdef "|[|" as "[";
+htmldef "|]|" as "<IMG SRC='rbrack.gif' WIDTH=5 HEIGHT=19 ALT=' ]' TITLE=']'>";
+  althtmldef "|]|" as ']'; /* &rsqb; */
+  latexdef "|]|" as "]";
+/* End of Wolf Lammen's mathbox */
+
 /* Mathbox of Thomas van Maaren */
 htmldef "propvar" as
     "propvar ";
@@ -624041,6 +624050,18 @@ $)
       ( biimpi wl-bian2bi ) ABCBCDFEG $.
   $}
 
+  $c |[| $.
+  $c |]| $.
+
+  $( Extend wff definition to include proper substitution.  Read:  "the wff
+     that results when ` y ` is properly substituted for ` x ` in wff ` ph ` ".
+     (Contributed by NM, 24-Jan-2006.) $)
+  wsbwl $a wff |[| y / x |]| ph $.
+
+  $( Indicate that the variable "y" is free in wsb even though it could
+     potentially bind occurrences in "ph". $)
+  $( $j free_var 'wsbwl' with 'y'; $)
+
   ${
     $d x y z $.  $d t y z $.  $d ph y z $.
     $( Define proper substitution.  We use the notation ` [ t / x ] ph ` to
@@ -624123,7 +624144,7 @@ $)
        22-Dec-2020.)  Add the justification hypothesis.  (Revised by Wolf
        Lammen, 4-Feb-2026.)  Integrate the justification in the definiens.
        (Revised by Wolf Lammen, 4-Nov-2026.) $)
-    df-wl-sb $a |- ( [ t / x ] ph <->
+    df-wl-sb $a |- ( |[| t / x |]| ph <->
                              ( A. y ( y = t -> A. x ( x = y -> ph ) ) /\
                                A. z ( z = t -> A. x ( x = z -> ph ) ) ) ) $.
   $}
@@ -624132,10 +624153,10 @@ $)
     $d u v x $.  $d u v t $.  $d u v ph $.
     $( One direction of proper substitution.  (Contributed by Wolf Lammen,
        4-Nov-2026.) $)
-    wl-simpsb $p |- ( [ t / x ] ph ->
+    wl-simpsb $p |- ( |[| t / x |]| ph ->
                                     A. u ( u = t -> A. x ( x = u -> ph ) ) ) $=
-      ( vv wsb weq wi wal df-wl-sb simplbi ) ABDFCDGBCGAHBIHCIEDGBEGAHBIHEIABCE
-      DJK $.
+      ( vv wsbwl weq wi wal df-wl-sb simplbi ) ABDFCDGBCGAHBIHCIEDGBEGAHBIHEIAB
+      CEDJK $.
   $}
 
   ${
@@ -624145,19 +624166,19 @@ $)
     $( Lemma for some theorems using fewer axioms than ~ dfsb .  The hypotheses
        are usually two instantiations of a subordinate lemma or theorem with a
        different dummy variable.  (Contributed by Wolf Lammen, 4-Nov-2026.) $)
-    wl-sbdlem $p |- ( ph -> [ t / x ] ps ) $=
-      ( weq wi wal wa wsb jca df-wl-sb sylibr ) AEFICEIBJCKJEKZDFICDIBJCKJDKZLB
-      CFMAQRGHNBCEDFOP $.
+    wl-sbdlem $p |- ( ph -> |[| t / x |]| ps ) $=
+      ( weq wi wal wa wsbwl jca df-wl-sb sylibr ) AEFICEIBJCKJEKZDFICDIBJCKJDKZ
+      LBCFMAQRGHNBCEDFOP $.
   $}
 
   ${
     $d x y z $.  $d t y z $.  $d ph y z $.
     $( Simplify definition ~ df-wl-sb by removing its duplicated definiens.
        (Contributed by Wolf Lammen, 4-Nov-2026.) $)
-    wl-dfsb $p |- ( [ t / x ] ph
+    wl-dfsb $p |- ( |[| t / x |]| ph
                                 <-> A. y ( y = t -> A. x ( x = y -> ph ) ) ) $=
-      ( vz wsb weq wi wal sbjust df-wl-sb wl-bian2bi2 ) ABDFCDGBCGAHBIHCIEDGBEG
-      AHBIHEIABCEDJABCEDKL $.
+      ( vz wsbwl weq wi wal sbjust df-wl-sb wl-bian2bi2 ) ABDFCDGBCGAHBIHCIEDGB
+      EGAHBIHEIABCEDJABCEDKL $.
   $}
 
   ${
@@ -624181,8 +624202,8 @@ $)
        6-Jul-2023.)  Revise ~ df-sb again.  (Revised by Wolf Lammen,
        4-Feb-2026.)  Revise ~ df-sb again.  (Revised by Wolf Lammen,
        4-Nov-2026.) $)
-    wl-sbt $p |- [ t / x ] ph $=
-      ( vv vu wsb wl-sbtlem wl-sbdlem ax-mp ) AABCGDAABEFCABFCDHABECDHIJ $.
+    wl-sbt $p |- |[| t / x |]| ph $=
+      ( vv vu wsbwl wl-sbtlem wl-sbdlem ax-mp ) AABCGDAABEFCABFCDHABECDHIJ $.
   $}
 
   ${
@@ -624204,7 +624225,7 @@ $)
        [Mendelson] p. 69.  See also ~ spsbc and ~ rspsbc .  (Contributed by NM,
        14-May-1993.)  Revise ~ df-sb .  (Revised by BJ, 22-Dec-2020.)  Revise
        ~ df-sb again.  (Revised by Wolf Lammen, 4-Nov-2026.) $)
-    wl-stdpc4 $p |- ( A. x ph -> [ t / x ] ph ) $=
+    wl-stdpc4 $p |- ( A. x ph -> |[| t / x |]| ph ) $=
       ( vv vu wal wl-stdpc4lem wl-sbdlem ) ABFABDECABECGABDCGH $.
   $}
 
@@ -624216,18 +624237,18 @@ $)
        Revise ~ df-sb .  (Revised by BJ, 22-Dec-2020.)  (Proof shortened by
        Steven Nguyen, 11-Jul-2023.)  Revise ~ df-sb again.  (Revised by Wolf
        Lammen, 4-Nov-2026.) $)
-    wl-spsbe $p |- ( [ t / x ] ph -> E. x ph ) $=
-      ( vu wsb weq wi wal wex wl-simpsb alequexv exsbim 3syl ) ABCEDCFBDFAGBHZG
-      DHNDIABIABDCJNDCKABDLM $.
+    wl-spsbe $p |- ( |[| t / x |]| ph -> E. x ph ) $=
+      ( vu wsbwl weq wi wal wex wl-simpsb alequexv exsbim 3syl ) ABCEDCFBDFAGBH
+      ZGDHNDIABIABDCJNDCKABDLM $.
   $}
 
   ${
     $d u x $.  $d u y $.  $d u ph $.  $d u ps $.
     $( Lemma for ~ wl-sbi1 .  (Contributed by Wolf Lammen, 4-Nov-2026.) $)
-    wl-sbi1lem $p |- ( [ y / x ] ( ph -> ps ) -> ( [ y / x ] ph ->
+    wl-sbi1lem $p |- ( |[| y / x |]| ( ph -> ps ) -> ( |[| y / x |]| ph ->
                                   A. u ( u = y -> A. x ( x = u -> ps ) ) ) ) $=
-      ( wi wsb weq wal wl-simpsb ax-2 al2imi imim3i syl2im ) ABFZCDGEDHZCEHZOFZ
-      CIZFZEIACDGPQAFZCIZFZEIPQBFZCIZFZEIOCEDJACEDJTUCUFESUBUEPRUAUDCQABKLMLN
+      ( wi wsbwl weq wal wl-simpsb ax-2 al2imi imim3i syl2im ) ABFZCDGEDHZCEHZO
+      FZCIZFZEIACDGPQAFZCIZFZEIPQBFZCIZFZEIOCEDJACEDJTUCUFESUBUEPRUAUDCQABKLMLN
       $.
   $}
 
@@ -624237,10 +624258,10 @@ $)
        14-May-1993.)  Remove dependencies on axioms.  (Revised by Steven
        Nguyen, 24-Jul-2023.)  Revise ~ df-sb .  (Revised by Wolf Lammen,
        4-Nov-2026.) $)
-    wl-sbi1 $p |- ( [ y / x ] ( ph -> ps ) ->
-                                          ( [ y / x ] ph -> [ y / x ] ps ) ) $=
-      ( vu vv wi wsb weq wal wa wl-sbi1lem jcad df-wl-sb imbitrrdi ) ABGCDHZACD
-      HZEDICEIBGCJGEJZFDICFIBGCJGFJZKBCDHPQRSABCDELABCDFLMBCEFDNO $.
+    wl-sbi1 $p |- ( |[| y / x |]| ( ph -> ps ) ->
+                                  ( |[| y / x |]| ph -> |[| y / x |]| ps ) ) $=
+      ( vu vv wi wsbwl weq wal wa wl-sbi1lem jcad df-wl-sb imbitrrdi ) ABGCDHZA
+      CDHZEDICEIBGCJGEJZFDICFIBGCJGFJZKBCDHPQRSABCDELABCDFLMBCEFDNO $.
   $}
 
   ${
@@ -624262,11 +624283,11 @@ $)
        NM, 16-May-1993.)  (Proof shortened by Wolf Lammen, 29-Sep-2018.)
        Reduce dependencies on axioms.  (Revised by Steven Nguyen, 13-Aug-2023.)
        Revise ~ df-sb .  (Revised by Wolf Lammen, 4-Nov-2026.) $)
-    wl-sbal $p |- ( [ z / y ] A. x ph <-> A. x [ z / y ] ph ) $=
-      ( vu vv weq wal wi wa wsb 19.26 wl-sballem anbi12i df-wl-sb albii 3bitr4i
-      bitr2i ) EDGZCEGZABHZICHIEHZFDGZCFGZUAICHIFHZJZSTAICHIEHZUCUDAICHIFHZJZBH
-      ZUACDKACDKZBHUJUGBHZUHBHZJUFUGUHBLULUBUMUEABCDEMABCDFMNRUACEFDOUKUIBACEFD
-      OPQ $.
+    wl-sbal $p |- ( |[| z / y |]| A. x ph <-> A. x |[| z / y |]| ph ) $=
+      ( vu vv weq wal wi wsbwl 19.26 wl-sballem anbi12i bitr2i df-wl-sb 3bitr4i
+      wa albii ) EDGZCEGZABHZICHIEHZFDGZCFGZUAICHIFHZQZSTAICHIEHZUCUDAICHIFHZQZ
+      BHZUACDJACDJZBHUJUGBHZUHBHZQUFUGUHBKULUBUMUEABCDELABCDFLMNUACEFDOUKUIBACE
+      FDORP $.
   $}
 
 $(
