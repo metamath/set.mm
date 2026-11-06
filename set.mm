@@ -883023,49 +883023,49 @@ $)
   $}
 
   ${
-    $d F k z $.  $d K k z $.  $d A k $.  $d C k z $.  $d P k z $.  $d Z z $.
-    $d G k z $.  $d H k z $.  $d R k z $.
-    fmulralspecd.1 $e |- ( ph -> K e. A ) $.
-    fmulralspecd.2 $e |- ( ph -> Z e. C ) $.
-    fmulralspecd.3 $e |- ( ph -> -. P R Z ) $.
-    fmulralspecd.4 $e |- ( ph -> A. k e. A A. z e. C ( -. P R z -> ( F ` ( k G
-      z ) ) = ( ( F ` k ) H ( F ` z ) ) ) ) $.
-    $( Evaluate a doubly restricted universal family at ` K ` and ` Z ` .  The
-       membership hypotheses and ` -. P R Z ` yield
-       ` ( F `` ( K G Z ) ) = ( ( F `` K ) H ( F `` Z ) ) ` under ` ph ` .
+    $d A x $.  $d B x y $.  $d F x y $.  $d G x y $.  $d H x y $.  $d P x y $.
+    $d R x y $.  $d X x y $.  $d Y y $.
+    fmulralspecd.1 $e |- ( ph -> X e. A ) $.
+    fmulralspecd.2 $e |- ( ph -> Y e. B ) $.
+    fmulralspecd.3 $e |- ( ph -> -. P R Y ) $.
+    fmulralspecd.4 $e |- ( ph -> A. x e. A A. y e. B ( -. P R y -> ( F ` ( x G
+      y ) ) = ( ( F ` x ) H ( F ` y ) ) ) ) $.
+    $( Evaluate a doubly restricted universal family at ` X ` and ` Y ` .  The
+       membership hypotheses and ` -. P R Y ` yield
+       ` ( F `` ( X G Y ) ) = ( ( F `` X ) H ( F `` Y ) ) ` under ` ph ` .
        (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    fmulralspecd $p |- ( ph -> ( F ` ( K G Z ) ) = ( ( F ` K ) H ( F ` Z ) ) )
+    fmulralspecd $p |- ( ph -> ( F ` ( X G Y ) ) = ( ( F ` X ) H ( F ` Y ) ) )
       $=
       ( co cfv wceq wi wbr wn cv fvoveq1 fveq2 oveq1d imbi2d breq2 notbid oveq2
-      eqeq12d fveq2d oveq2d imbi12d rspc2dv mpd ) AELFUAZUBZKLIQZHRZKHRZLHRZJQZ
-      SZOAEBUCZFUAZUBZGUCZVEIQHRZVHHRZVEHRZJQZSZTURVDTVGKVEIQZHRZVAVKJQZSZTGBKL
-      CDVHKSZVMVQVGVRVIVOVLVPVHKVEHIUDVRVJVAVKJVHKHUEUFUKUGVELSZVGURVQVDVSVFUQV
-      ELEFUHUIVSVOUTVPVCVSVNUSHVELKIUJULVSVKVBVAJVELHUEUMUKUNPMNUOUP $.
+      eqeq12d fveq2d oveq2d imbi12d rspc2dv mpd ) AFLGUAZUBZKLIQZHRZKHRZLHRZJQZ
+      SZOAFCUCZGUAZUBZBUCZVEIQHRZVHHRZVEHRZJQZSZTURVDTVGKVEIQZHRZVAVKJQZSZTBCKL
+      DEVHKSZVMVQVGVRVIVOVLVPVHKVEHIUDVRVJVAVKJVHKHUEUFUKUGVELSZVGURVQVDVSVFUQV
+      ELFGUHUIVSVOUTVPVCVSVNUSHVELKIUJULVSVKVBVAJVELHUEUMUKUNPMNUOUP $.
   $}
 
   ${
-    $d A z $.  $d B z $.
-    $( Equal ` A ` and ` B ` give equivalent restricted universal statements of
-       ` ( F `` ( A G E ) ) = ( ( F `` A ) H D ) ` and
-       ` ( F `` ( B G E ) ) = ( ( F `` B ) H D ) ` , each conditional on
+    $d X z $.  $d Y z $.
+    $( Equal ` X ` and ` Y ` give equivalent restricted universal statements of
+       ` ( F `` ( X G Z ) ) = ( ( F `` X ) H D ) ` and
+       ` ( F `` ( Y G Z ) ) = ( ( F `` Y ) H D ) ` , each conditional on
        ` ph ` .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    fmulraleq $p |- ( A = B -> ( A. z e. C ( ph -> ( F ` ( A G E ) ) = ( ( F `
-      A ) H D ) ) <-> A. z e. C ( ph -> ( F ` ( B G E ) ) = ( ( F ` B ) H D ) )
+    fmulraleq $p |- ( X = Y -> ( A. z e. B ( ph -> ( F ` ( X G Z ) ) = ( ( F `
+      X ) H D ) ) <-> A. z e. B ( ph -> ( F ` ( Y G Z ) ) = ( ( F ` Y ) H D ) )
       ) ) $=
-      ( wceq co cfv wi fvoveq1 fveq2 oveq1d eqeq12d imbi2d ralbidv ) CDKZACGILH
-      MZCHMZFJLZKZNADGILHMZDHMZFJLZKZNBEUAUEUIAUAUBUFUDUHCDGHIOUAUCUGFJCDHPQRST
+      ( wceq co cfv wi fvoveq1 fveq2 oveq1d eqeq12d imbi2d ralbidv ) HIKZAHJFLE
+      MZHEMZDGLZKZNAIJFLEMZIEMZDGLZKZNBCUAUEUIAUAUBUFUDUHHIJEFOUAUCUGDGHIEPQRST
       $.
   $}
 
   ${
-    $d C v z $.  $d D v z $.  $d F v z $.  $d N v z $.  $d P v z $.
-    $d G v z $.  $d H v z $.  $d R v z $.
-    $( Renaming the bound variable from ` z ` to ` v ` preserves the restricted
-       universal statement that ` -. P R z ` implies
-       ` ( F `` ( N G z ) ) = ( D H ( F `` z ) ) ` .  (Contributed by Zhi Wang,
+    $d B y z $.  $d D y z $.  $d F y z $.  $d G y z $.  $d H y z $.
+    $d P y z $.  $d R y z $.  $d X y z $.
+    $( Renaming the bound variable from ` y ` to ` z ` preserves the restricted
+       universal statement that ` -. P R y ` implies
+       ` ( F `` ( X G y ) ) = ( D H ( F `` y ) ) ` .  (Contributed by Zhi Wang,
        17-Oct-2026.) $)
-    fmulralcbv $p |- ( A. z e. C ( -. P R z -> ( F ` ( N G z ) ) = ( D H ( F `
-      z ) ) ) <-> A. v e. C ( -. P R v -> ( F ` ( N G v ) ) = ( D H ( F ` v ) )
+    fmulralcbv $p |- ( A. y e. B ( -. P R y -> ( F ` ( X G y ) ) = ( D H ( F `
+      y ) ) ) <-> A. z e. B ( -. P R z -> ( F ` ( X G z ) ) = ( D H ( F ` z ) )
       ) ) $=
       ( cv wbr wn co cfv wceq wi breq2 notbid oveq2 fveq2d fveq2 oveq2d eqeq12d
       imbi12d cbvralvw ) EAKZFLZMZJUGHNZGOZDUGGOZINZPZQEBKZFLZMZJUOHNZGOZDUOGOZ
@@ -883074,17 +883074,17 @@ $)
   $}
 
   ${
-    $d C z $.  $d D z $.  $d F z $.  $d N z $.  $d P z $.  $d Z z $.  $d G z $.
-    $d H z $.  $d R z $.
-    fmulralspeczd.1 $e |- ( ph -> Z e. C ) $.
-    fmulralspeczd.2 $e |- ( ph -> -. P R Z ) $.
-    fmulralspeczd.3 $e |- ( ph -> A. z e. C ( -. P R z -> ( F ` ( N G z ) ) = (
-      D H ( F ` z ) ) ) ) $.
-    $( Evaluate a restricted universal family at ` Z ` .  Membership in ` C `
-       and the condition ` -. P R Z ` yield
-       ` ( F `` ( N G Z ) ) = ( D H ( F `` Z ) ) ` under ` ph ` .  (Contributed
+    $d B y $.  $d D y $.  $d F y $.  $d G y $.  $d H y $.  $d P y $.  $d R y $.
+    $d X y $.  $d Y y $.
+    fmulralspeczd.1 $e |- ( ph -> Y e. B ) $.
+    fmulralspeczd.2 $e |- ( ph -> -. P R Y ) $.
+    fmulralspeczd.3 $e |- ( ph -> A. y e. B ( -. P R y -> ( F ` ( X G y ) ) = (
+      D H ( F ` y ) ) ) ) $.
+    $( Evaluate a restricted universal family at ` Y ` .  Membership in ` B `
+       and the condition ` -. P R Y ` yield
+       ` ( F `` ( X G Y ) ) = ( D H ( F `` Y ) ) ` under ` ph ` .  (Contributed
        by Zhi Wang, 17-Oct-2026.) $)
-    fmulralspeczd $p |- ( ph -> ( F ` ( N G Z ) ) = ( D H ( F ` Z ) ) ) $=
+    fmulralspeczd $p |- ( ph -> ( F ` ( X G Y ) ) = ( D H ( F ` Y ) ) ) $=
       ( wbr wn co cfv wceq wi cv breq2 notbid oveq2 fveq2d fveq2 oveq2d eqeq12d
       imbi12d rspcdva mpd ) AEKFOZPZJKHQZGRZDKGRZIQZSZMAEBUAZFOZPZJUSHQZGRZDUSG
       RZIQZSZTUMURTBCKUSKSZVAUMVFURVGUTULUSKEFUBUCVGVCUOVEUQVGVBUNGUSKJHUDUEVGV
@@ -883092,28 +883092,28 @@ $)
   $}
 
   ${
-    fmulmuliffd.1 $e |- ( ph -> K e. CC ) $.
-    fmulmuliffd.2 $e |- ( ph -> Q e. CC ) $.
+    fmulmuliffd.1 $e |- ( ph -> X e. CC ) $.
+    fmulmuliffd.2 $e |- ( ph -> Y e. CC ) $.
     fmulmuliffd.3 $e |- ( ph -> Z e. CC ) $.
     fmulmuliffd.4 $e |- ( ph -> A e. CC ) $.
     fmulmuliffd.5 $e |- ( ph -> B e. CC ) $.
     fmulmuliffd.6 $e |- ( ph -> C e. CC ) $.
     fmulmuliffd.7 $e |- ( ph -> D e. CC ) $.
     fmulmuliffd.8 $e |- ( ph -> A =/= 0 ) $.
-    fmulmuliffd.9 $e |- ( ph -> ( F ` ( K x. ( Q x. Z ) ) ) = ( A x. D ) ) $.
+    fmulmuliffd.9 $e |- ( ph -> ( F ` ( X x. ( Y x. Z ) ) ) = ( A x. D ) ) $.
     fmulmuliffd.10 $e |- ( ph -> E = ( A x. C ) ) $.
-    $( The equality ` ( F `` ( Q x. ( K x. Z ) ) ) = ( B x. E ) ` is equivalent
+    $( The equality ` ( F `` ( Y x. ( X x. Z ) ) ) = ( B x. E ) ` is equivalent
        to ` D = ( B x. C ) ` under the two given factorization identities and
-       ` A =/= 0 ` .  Taking ` A = ( F `` K ) ` , ` B = ( F `` Q ) ` ,
-       ` C = ( F `` Z ) ` , ` D = ( F `` ( Q x. Z ) ) ` , and
-       ` E = ( F `` ( K x. Z ) ) ` recovers cancellation of a multiplier's
+       ` A =/= 0 ` .  Taking ` A = ( F `` X ) ` , ` B = ( F `` Y ) ` ,
+       ` C = ( F `` Z ) ` , ` D = ( F `` ( Y x. Z ) ) ` , and
+       ` E = ( F `` ( X x. Z ) ) ` recovers cancellation of a multiplier's
        nonzero value in a multiplication identity.  (Contributed by Zhi Wang,
        20-Oct-2026.) $)
-    fmulmuliffd $p |- ( ph -> ( ( F ` ( Q x. ( K x. Z ) ) ) = ( B x. E ) <-> D
+    fmulmuliffd $p |- ( ph -> ( ( F ` ( Y x. ( X x. Z ) ) ) = ( B x. E ) <-> D
       = ( B x. C ) ) ) $=
       ( cmul cfv wceq mul12d fveq2d eqtrd oveq2d eqeq12d mulcld mulcand bitrd
-      co ) AFIJUAULUAULZHUBZCGUAULZUCBEUAULZBCDUAULZUAULZUCEUQUCAUNUPUOURAUNIFJ
-      UAULUAULZHUBUPAUMUSHAFIJLKMUDUESUFAUOCBDUAULZUAULURAGUTCUATUGACBDONPUDUFU
+      co ) AIHJUAULUAULZGUBZCFUAULZUCBEUAULZBCDUAULZUAULZUCEUQUCAUNUPUOURAUNHIJ
+      UAULUAULZGUBUPAUMUSGAIHJLKMUDUESUFAUOCBDUAULZUAULURAFUTCUATUGACBDONPUDUFU
       HAEUQBQACDOPUINRUJUK $.
   $}
 
@@ -883145,24 +883145,24 @@ $)
   $}
 
   ${
-    fmulprodd.1 $e |- ( ph -> A e. CC ) $.
-    fmulprodd.2 $e |- ( ph -> B e. CC ) $.
+    fmulprodd.1 $e |- ( ph -> X e. CC ) $.
+    fmulprodd.2 $e |- ( ph -> Y e. CC ) $.
     fmulprodd.3 $e |- ( ph -> Z e. CC ) $.
-    fmulprodd.4 $e |- ( ph -> C e. CC ) $.
-    fmulprodd.5 $e |- ( ph -> D e. CC ) $.
-    fmulprodd.6 $e |- ( ph -> E e. CC ) $.
-    fmulprodd.7 $e |- ( ph -> ( F ` ( A x. ( B x. Z ) ) ) = ( C x. G ) ) $.
-    fmulprodd.8 $e |- ( ph -> G = ( D x. E ) ) $.
-    fmulprodd.9 $e |- ( ph -> H = ( C x. D ) ) $.
-    $( The factorization ` ( F `` ( ( A x. B ) x. Z ) ) = ( H x. E ) ` follows
+    fmulprodd.4 $e |- ( ph -> A e. CC ) $.
+    fmulprodd.5 $e |- ( ph -> B e. CC ) $.
+    fmulprodd.6 $e |- ( ph -> C e. CC ) $.
+    fmulprodd.7 $e |- ( ph -> ( F ` ( X x. ( Y x. Z ) ) ) = ( A x. D ) ) $.
+    fmulprodd.8 $e |- ( ph -> D = ( B x. C ) ) $.
+    fmulprodd.9 $e |- ( ph -> E = ( A x. B ) ) $.
+    $( The factorization ` ( F `` ( ( X x. Y ) x. Z ) ) = ( E x. C ) ` follows
        from the three displayed identities and complex-number hypotheses.
        Associativity ( ~ mulassd ) regroups both the argument of ` F ` and the
-       product of ` C ` , ` D ` , and ` E ` .  (Contributed by Zhi Wang,
+       product of ` A ` , ` B ` , and ` C ` .  (Contributed by Zhi Wang,
        20-Oct-2026.) $)
-    fmulprodd $p |- ( ph -> ( F ` ( ( A x. B ) x. Z ) ) = ( H x. E ) ) $=
-      ( cmul co cfv mulassd oveq1d fveq2d oveq2d 3eqtrd 3eqtr4rd ) ADETUAZFTUAD
-      EFTUAZTUAZIFTUABCTUAJTUAZGUBZADEFNOPUCAIUIFTSUDAUMBCJTUATUAZGUBDHTUAUKAUL
-      UNGABCJKLMUCUEQAHUJDTRUFUGUH $.
+    fmulprodd $p |- ( ph -> ( F ` ( ( X x. Y ) x. Z ) ) = ( E x. C ) ) $=
+      ( cmul co cfv mulassd oveq1d fveq2d oveq2d 3eqtrd 3eqtr4rd ) ABCTUAZDTUAB
+      CDTUAZTUAZFDTUAHITUAJTUAZGUBZABCDNOPUCAFUIDTSUDAUMHIJTUATUAZGUBBETUAUKAUL
+      UNGAHIJKLMUCUEQAEUJBTRUFUGUH $.
   $}
 
   ${
@@ -883404,18 +883404,6 @@ $)
   $}
 
   ${
-    mod3ndvdsd.1 $e |- ( ph -> A e. ZZ ) $.
-    mod3ndvdsd.2 $e |- ( ph -> -. 3 || A ) $.
-    $( An integer not divisible by three has remainder one or two.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    mod3ndvdsd $p |- ( ph -> ( ( A mod 3 ) = 1 \/ ( A mod 3 ) = 2 ) ) $=
-      ( c3 cmo co cc0 wceq wn c1 c2 w3o wo cdvds wbr cn wcel cz syl2anc 3nn a1i
-      dvdsval3 mtbid ctp cfzo zmodfzo fzo0to3tp eleqtrdi eltpi syl 3orel1 sylc
-      wb ) ABEFGZHIZJUPUOKIZUOLIZMZUQURNAEBOPZUPDAEQRZBSRZUTUPUNVAAUAUBZCEBUCTU
-      DAUOHKLUEZRUSAUOHEUFGZVDAVBVAUOVERCVCBEUGTUHUIUOHKLUJUKUPUQURULUM $.
-  $}
-
-  ${
     modaddvald.1 $e |- ( ph -> A e. RR ) $.
     modaddvald.2 $e |- ( ph -> B e. RR ) $.
     modaddvald.3 $e |- ( ph -> M e. RR+ ) $.
@@ -883427,6 +883415,158 @@ $)
       ( cmo co caddc cr wcel crp wceq modcld syl3anc modadd2mod oveq1d 3eqtr3rd
       oveq12d modaddmod ) ABFLMZCFLMZNMZFLMZUFCNMFLMZDENMZFLMBCNMFLMZACOPZUFOPF
       QPZUIUJRHABFGISICUFFUATAUHUKFLAUFDUGENJKUDUBABOPUMUNUJULRGHIBCFUETUC $.
+  $}
+
+  ${
+    modlin2subd.1 $e |- ( ph -> A e. RR ) $.
+    modlin2subd.2 $e |- ( ph -> B e. RR ) $.
+    modlin2subd.3 $e |- ( ph -> C e. RR ) $.
+    modlin2subd.4 $e |- ( ph -> D e. RR ) $.
+    modlin2subd.5 $e |- ( ph -> Z e. RR ) $.
+    modlin2subd.6 $e |- ( ph -> P e. RR+ ) $.
+    modlin2subd.7 $e |- ( ph -> ( ( ( A x. Z ) + C ) mod P ) = ( ( ( B x. Z
+    ) + D ) mod P ) ) $.
+    $( A congruence between ` ( ( A x. Z ) + C ) ` and ` ( ( B x. Z ) + D ) `
+       implies a congruence between ` ( ( A - B ) x. Z ) ` and ` ( D - C ) ` ,
+       modulo the positive real ` P ` .  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
+    modlin2subd $p |- ( ph -> ( ( ( A - B ) x. Z ) mod P ) = ( ( D - C )
+    mod P ) ) $=
+      ( cmul co caddc cmin cmo recnd remulcld readdcld eqidd modsub12d pnpcan2d
+      subdird eqtr4d oveq1d pnpcand 3eqtr3d ) ABGOPZDQPZCGOPZDQPZRPZFSPUMEQPZUN
+      RPZFSPBCRPGOPZFSPEDRPZFSPAULUPUNUNFAUKDABGHLUAZJUBAUMEACGILUAZKUBAUMDVAJU
+      BZVBMNAUNFSPUCUDAUOURFSAUOUKUMRPURAUKUMDAUKUTTAUMVATZADJTZUEABCGABHTACITA
+      GLTUFUGUHAUQUSFSAUMEDVCAEKTVDUIUHUJ $.
+  $}
+
+  ${
+    modsignp1d.1 $e |- ( ph -> A e. { -u 1 , 1 } ) $.
+    modsignp1d.2 $e |- ( ph -> P e. RR+ ) $.
+    modsignp1d.3 $e |- ( ph -> 2 < P ) $.
+    $( For ` A ` equal to minus one or one and a real modulus greater than two,
+       adding one, reducing modulo ` P ` , and subtracting one recovers ` A ` .
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    modsignp1d $p |- ( ph -> ( ( ( A + 1 ) mod P ) - 1 ) = A ) $=
+      ( c1 wceq caddc co cmo cmin wa cc0 simpr oveq1d eqtrdi wcel syl c2 df-neg
+      cneg eqcomi ax-1cn neg1cn 1pneg1e0 addcomli crp 0mod adantr eqtrd 3eqtr4a
+      2m1e1 1p1e2 cr cle wbr clt 2re a1i 0le2 modid syl22anc cpr elpri mpjaodan
+      wo ) ABGUBZHZBGIJZCKJZGLJZBHBGHZAVIMZNGLJZVHVLBVHVOGUAUCVNVKNGLVNVKNCKJZN
+      VNVJNCKVNVJVHGIJNVNBVHGIAVIOZPGVHNUDUEUFUGQPAVPNHZVIACUHRZVRECUISUJUKPVQU
+      LAVMMZTGLJGVLBUMVTVKTGLVTVKTCKJZTVTVJTCKVTVJGGIJTVTBGGIAVMOZPUNQPAWATHZVM
+      ATUORZVSNTUPUQZTCURUQWCWDAUSUTEWEAVAUTFTCVBVCUJUKPWBULABVHGVDRVIVMVGDBVHG
+      VESVF $.
+  $}
+
+  ${
+    modsubselfd.1 $e |- ( ph -> P e. RR+ ) $.
+    modsubselfd.2 $e |- ( ph -> A e. RR ) $.
+    $( Subtracting a positive real modulus from a real number leaves its
+       remainder unchanged.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    modsubselfd $p |- ( ph -> ( ( A - P ) mod P ) = ( A mod P ) ) $=
+      ( cmin cmo cc0 rpred 0red eqidd crp wcel wceq modid0 syl eqtr4d modsub12d
+      co 0mod recnd subid1d oveq1d eqtrd ) ABCFSCGSBHFSZCGSBCGSZABBCHCEEACDIAJD
+      AUFKACCGSZHHCGSZACLMZUGHNDCOPAUIUHHNDCTPQRAUEBCGABABEUAUBUCUD $.
+  $}
+
+  ${
+    modnegsubselfd.1 $e |- ( ph -> P e. RR+ ) $.
+    modnegsubselfd.2 $e |- ( ph -> A e. RR ) $.
+    $( For a real number ` A ` and a positive real modulus ` P ` , the
+       difference ` ( P - A ) ` and the negative ` -u A ` have the same
+       remainder modulo ` P ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    modnegsubselfd $p |- ( ph -> ( ( P - A ) mod P ) = ( -u A mod P ) ) $=
+      ( cmin co cneg recnd rpcnd negsubdi2d oveq1d resubcld modsubselfd modnegd
+      cmo rpred eqtr3d ) ABCFGZHZCPGCBFGZCPGBHCPGATUACPABCABEIACDJKLASBCABCEACD
+      QMEDABCDENOR $.
+  $}
+
+  ${
+    subremcongd.1 $e |- ( ph -> P e. RR+ ) $.
+    subremcongd.2 $e |- ( ph -> A e. RR ) $.
+    subremcongd.3 $e |- ( ph -> ( A - P ) = D ) $.
+    $( If ` ( A - P ) = D ` for real ` A ` and positive real ` P ` , then ` A `
+       and ` D ` have the same remainder modulo ` P ` .  (Contributed by Zhi
+       Wang, 20-Oct-2026.) $)
+    subremcongd $p |- ( ph -> ( A mod P ) = ( D mod P ) ) $=
+      ( cmin co cmo modsubselfd oveq1d eqtr3d ) ABDHIZDJIBDJICDJIABDEFKANCDJGLM
+      $.
+  $}
+
+  ${
+    negsubhalfcongd.1 $e |- ( ph -> P e. RR+ ) $.
+    negsubhalfcongd.2 $e |- ( ph -> A e. RR ) $.
+    negsubhalfcongd.3 $e |- ( ph -> R e. CC ) $.
+    negsubhalfcongd.4 $e |- ( ph -> ( 2 x. R ) = ( P - A ) ) $.
+    $( If ` ( 2 x. R ) = ( P - A ) ` for real ` A ` and positive real ` P ` ,
+       then ` A ` and ` ( 2 x. -u R ) ` have the same remainder modulo ` P ` .
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    negsubhalfcongd $p |- ( ph -> ( A mod P ) = ( ( 2 x. -u R ) mod P ) ) $=
+      ( c2 cneg cmul cmin 2cnd mulneg2d negeqd rpcnd recnd negsubdi2d 3eqtrrd
+      co subremcongd ) ABIDJKTZCEFAUBIDKTZJCBLTZJBCLTAIDAMGNAUCUDHOACBACEPABFQR
+      SUA $.
+  $}
+
+  ${
+    mod23ratiod.1 $e |- ( ph -> P e. RR+ ) $.
+    mod23ratiod.2 $e |- ( ph -> M e. RR ) $.
+    mod23ratiod.3 $e |- ( ph -> N e. RR ) $.
+    mod23ratiod.4 $e |- ( ph -> Z e. RR ) $.
+    mod23ratiod.5 $e |- ( ph -> ( M mod P ) = ( ( 2 x. Z ) mod P ) ) $.
+    mod23ratiod.6 $e |- ( ph -> ( ( 3 x. Z ) mod P ) = ( N mod P ) ) $.
+    $( If real numbers ` M ` and ` N ` have the same remainders as twice and
+       three times a real number ` Z ` , respectively, modulo a positive real
+       ` P ` , then ` ( 3 x. M ) ` and ` ( 2 x. N ) ` have the same remainder
+       modulo ` P ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    mod23ratiod $p |- ( ph -> ( ( 3 x. M ) mod P ) = ( ( 2 x. N ) mod P ) )
+    $=
+      ( c3 cmul co cmo c2 cr wcel recnd oveq1d 3re a1i mulcomd cz wceq remulcld
+      crp 2re 3z modmul1 syl221anc 3eqtrd mul12d 2z ) ALCMNZBONZLPEMNZMNZBONZPL
+      EMNZMNZBONZPDMNZBONZAUPCLMNZBONZUQLMNZBONZUSAUOVEBOALCALLQRAUAUBZSZACGSUC
+      TACQRUQQRLUDRZBUGRZCBONUQBONUEVFVHUEGAPEPQRAUHUBZIUFZVKAUIUBFJCUQLBUJUKAV
+      GURBOAUQLAUQVNSVJUCTULAURVABOALPEVJAPVMSZAEISUMTAVBUTPMNZBONZDPMNZBONZVDA
+      VAVPBOAPUTVOAUTALEVIIUFZSUCTAUTQRDQRPUDRZVLUTBONDBONUEVQVSUEVTHWAAUNUBFKU
+      TDPBUJUKAVRVCBOADPADHSVOUCTULUL $.
+  $}
+
+  ${
+    fzomodcand.1 $e |- ( ph -> A e. ( 0 ..^ P ) ) $.
+    fzomodcand.2 $e |- ( ph -> B e. ( 0 ..^ P ) ) $.
+    fzomodcand.3 $e |- ( ph -> ( A mod P ) = ( B mod P ) ) $.
+    $( Canonical residues with equal remainders are equal.  (Contributed by Zhi
+       Wang, 20-Oct-2026.) $)
+    fzomodcand $p |- ( ph -> A = B ) $=
+      ( cmo co cc0 cfzo wcel wceq zmodidfzoimp syl 3eqtr3d ) ABDHIZCDHIZBCGABJD
+      KIZLQBMEBDNOACSLRCMFCDNOP $.
+  $}
+
+  ${
+    modladdfzocand.1 $e |- ( ph -> A e. ( 0 ..^ P ) ) $.
+    modladdfzocand.2 $e |- ( ph -> B e. ( 0 ..^ P ) ) $.
+    modladdfzocand.3 $e |- ( ph -> Z e. RR ) $.
+    modladdfzocand.4 $e |- ( ph -> ( ( Z + A ) mod P ) = ( ( Z + B ) mod P
+    ) ) $.
+    $( Two canonical nonnegative integer representatives are equal if adding
+       the same real number to both gives equal remainders modulo ` P ` .
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    modladdfzocand $p |- ( ph -> A = B ) $=
+      ( cmo co wceq caddc cc0 wcel cz elfzoelz syl recnd cr cfzo addcomd oveq1d
+      zred 3eqtrd crp wb cn0 cn clt wbr w3a elfzo0 sylib nnrpd modaddb syl22anc
+      simp2d mpbird fzomodcand ) ABCDFGABDJKCDJKLZBEMKZDJKZCEMKZDJKZLZAVCEBMKZD
+      JKECMKZDJKVEAVBVGDJABEABABABNDUAKZOZBPOFBNDQRUDZSAEHSZUBUCIAVHVDDJAECVLAC
+      ACACVIOCPOGCNDQRUDZSUBUCUEABTOCTOETODUFOVAVFUGVKVMHADABUHOZDUIOZBDUJUKZAV
+      JVNVOVPULFBDUMUNURUOBCEDUPUQUSUT $.
+  $}
+
+  ${
+    mod3ndvdsd.1 $e |- ( ph -> A e. ZZ ) $.
+    mod3ndvdsd.2 $e |- ( ph -> -. 3 || A ) $.
+    $( An integer not divisible by three has remainder one or two.
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    mod3ndvdsd $p |- ( ph -> ( ( A mod 3 ) = 1 \/ ( A mod 3 ) = 2 ) ) $=
+      ( c3 cmo co cc0 wceq wn c1 c2 w3o wo cdvds wbr cn wcel cz syl2anc 3nn a1i
+      dvdsval3 mtbid ctp cfzo zmodfzo fzo0to3tp eleqtrdi eltpi syl 3orel1 sylc
+      wb ) ABEFGZHIZJUPUOKIZUOLIZMZUQURNAEBOPZUPDAEQRZBSRZUTUPUNVAAUAUBZCEBUCTU
+      DAUOHKLUEZRUSAUOHEUFGZVDAVBVAUOVERCVCBEUGTUHUIUOHKLUJUKUPUQURULUM $.
   $}
 
   ${
@@ -883505,21 +883645,6 @@ $)
   $}
 
   ${
-    modladdfzocand.1 $e |- ( ph -> A e. ( 0 ..^ P ) ) $.
-    modladdfzocand.2 $e |- ( ph -> B e. ( 0 ..^ P ) ) $.
-    modladdfzocand.3 $e |- ( ph -> Z e. ZZ ) $.
-    modladdfzocand.4 $e |- ( ph -> ( ( Z + A ) mod P ) = ( ( Z + B ) mod P
-    ) ) $.
-    $( Cancel a common additive term between canonical nonnegative residue
-       representatives.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    modladdfzocand $p |- ( ph -> A = B ) $=
-      ( caddc co cmo wceq cc0 wcel cz elfzoelz syl zcnd addcomd cfzo 3eqtr4d wb
-      oveq1d addmodlteq syl3anc mpbid ) ABEJKZDLKZCEJKZDLKZMZBCMZAEBJKZDLKECJKZ
-      DLKUIUKIAUHUNDLABEABABNDUAKZOZBPOFBNDQRSAEHSZTUDAUJUODLACEACACUPOZCPOGCND
-      QRSURTUDUBAUQUSEPOULUMUCFGHEBCDUEUFUG $.
-  $}
-
-  ${
     prmmulfzocand.1 $e |- ( ph -> P e. Prime ) $.
     prmmulfzocand.2 $e |- ( ph -> A e. ( 0 ..^ P ) ) $.
     prmmulfzocand.3 $e |- ( ph -> B e. ( 0 ..^ P ) ) $.
@@ -883543,42 +883668,6 @@ $)
       ( cdvds wbr cc0 wceq c1 cfzo co fzossnn sselid nnne0d neneqd wcel fzo0ss1
       cn wb fzo0dvdseq syl mtbird ) ACBEFZBGHZABGABAICJKZRBCLDMNOABGCJKZPUCUDSA
       UEUFBCQDMCBTUAUB $.
-  $}
-
-  ${
-    modaddcand.1 $e |- ( ph -> A e. RR ) $.
-    modaddcand.2 $e |- ( ph -> B e. RR ) $.
-    modaddcand.3 $e |- ( ph -> C e. RR ) $.
-    modaddcand.4 $e |- ( ph -> D e. RR+ ) $.
-    modaddcand.5 $e |- ( ph -> ( ( A + C ) mod D ) = ( ( B + C ) mod D ) )
-    $.
-    $( Cancel a common additive term from a congruence of real numbers modulo a
-       positive real number.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    modaddcand $p |- ( ph -> ( A mod D ) = ( B mod D ) ) $=
-      ( cmo co wceq caddc cr wcel crp wb modaddb syl22anc mpbird ) ABEKLCEKLMZB
-      DNLEKLCDNLEKLMZJABOPCOPDOPEQPUBUCRFGHIBCDESTUA $.
-  $}
-
-  ${
-    modlin2subd.1 $e |- ( ph -> A e. RR ) $.
-    modlin2subd.2 $e |- ( ph -> B e. RR ) $.
-    modlin2subd.3 $e |- ( ph -> C e. RR ) $.
-    modlin2subd.4 $e |- ( ph -> D e. RR ) $.
-    modlin2subd.5 $e |- ( ph -> Z e. RR ) $.
-    modlin2subd.6 $e |- ( ph -> P e. RR+ ) $.
-    modlin2subd.7 $e |- ( ph -> ( ( ( A x. Z ) + C ) mod P ) = ( ( ( B x. Z
-    ) + D ) mod P ) ) $.
-    $( A congruence between ` ( ( A x. Z ) + C ) ` and ` ( ( B x. Z ) + D ) `
-       implies a congruence between ` ( ( A - B ) x. Z ) ` and ` ( D - C ) ` ,
-       modulo the positive real ` P ` .  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    modlin2subd $p |- ( ph -> ( ( ( A - B ) x. Z ) mod P ) = ( ( D - C )
-    mod P ) ) $=
-      ( cmul co caddc cmin cmo recnd remulcld readdcld eqidd modsub12d pnpcan2d
-      subdird eqtr4d oveq1d pnpcand 3eqtr3d ) ABGOPZDQPZCGOPZDQPZRPZFSPUMEQPZUN
-      RPZFSPBCRPGOPZFSPEDRPZFSPAULUPUNUNFAUKDABGHLUAZJUBAUMEACGILUAZKUBAUMDVAJU
-      BZVBMNAUNFSPUCUDAUOURFSAUOUKUMRPURAUKUMDAUKUTTAUMVATZADJTZUEABCGABHTACITA
-      GLTUFUGUHAUQUSFSAUMEDVCAEKTVDUIUHUJ $.
   $}
 
   ${
@@ -883632,24 +883721,6 @@ $)
       ( cmul co cdvds wbr wo wn ioran sylanbrc cprime wcel cz wb syl3anc mtbird
       euclemma ) ADBCJKLMZDBLMZDCLMZNZAUFOUGOUHOHIUFUGPQADRSBTSCTSUEUHUAEFGDBCU
       DUBUC $.
-  $}
-
-  ${
-    modsignp1d.1 $e |- ( ph -> A e. { -u 1 , 1 } ) $.
-    modsignp1d.2 $e |- ( ph -> P e. RR+ ) $.
-    modsignp1d.3 $e |- ( ph -> 2 < P ) $.
-    $( For ` A ` equal to minus one or one and a real modulus greater than two,
-       adding one, reducing modulo ` P ` , and subtracting one recovers ` A ` .
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    modsignp1d $p |- ( ph -> ( ( ( A + 1 ) mod P ) - 1 ) = A ) $=
-      ( c1 wceq caddc co cmo cmin wa cc0 simpr oveq1d eqtrdi wcel syl c2 df-neg
-      cneg eqcomi ax-1cn neg1cn 1pneg1e0 addcomli crp 0mod adantr eqtrd 3eqtr4a
-      2m1e1 1p1e2 cr cle wbr clt 2re a1i 0le2 modid syl22anc cpr elpri mpjaodan
-      wo ) ABGUBZHZBGIJZCKJZGLJZBHBGHZAVIMZNGLJZVHVLBVHVOGUAUCVNVKNGLVNVKNCKJZN
-      VNVJNCKVNVJVHGIJNVNBVHGIAVIOZPGVHNUDUEUFUGQPAVPNHZVIACUHRZVRECUISUJUKPVQU
-      LAVMMZTGLJGVLBUMVTVKTGLVTVKTCKJZTVTVJTCKVTVJGGIJTVTBGGIAVMOZPUNQPAWATHZVM
-      ATUORZVSNTUPUQZTCURUQWCWDAUSUTEWEAVAUTFTCVBVCUJUKPWBULABVHGVDRVIVMVGDBVHG
-      VESVF $.
   $}
 
   ${
@@ -883716,18 +883787,6 @@ $)
   $}
 
   ${
-    modsubselfd.1 $e |- ( ph -> P e. NN ) $.
-    modsubselfd.2 $e |- ( ph -> A e. ZZ ) $.
-    $( Subtracting a positive integer modulus preserves an integer residue.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    modsubselfd $p |- ( ph -> ( ( A - P ) mod P ) = ( A mod P ) ) $=
-      ( cmin cmo cc0 zred nnred 0red nnrpd eqidd crp wcel wceq modid0 syl 0mod
-      co eqtr4d modsub12d zcnd subid1d oveq1d eqtrd ) ABCFTCGTBHFTZCGTBCGTZABBC
-      HCABEIZUIACDJAKACDLZAUHMACCGTZHHCGTZACNOZUKHPUJCQRAUMULHPUJCSRUAUBAUGBCGA
-      BABEUCUDUEUF $.
-  $}
-
-  ${
     ndvdsmulned.1 $e |- ( ph -> K e. ZZ ) $.
     ndvdsmulned.2 $e |- ( ph -> N e. ZZ ) $.
     ndvdsmulned.3 $e |- ( ph -> -. K || P ) $.
@@ -883749,17 +883808,6 @@ $)
       ( c2 cmul co wne c4 c6 cz wcel 2z a1i ndvdsmulned zmulcld zcnd neeqtrd c3
       mul22d 3z mul23d 3jca ) ABFCGHZIBJCGHZIBKCGHZIABFCFLMANOZDEPABFUEGHUFABFU
       EUHAFCUHDQEPACACDRZUASABFTCGHZGHUGABFUJUHATCTLMAUBODQEPACUIUCSUD $.
-  $}
-
-  ${
-    modnegsubselfd.1 $e |- ( ph -> P e. NN ) $.
-    modnegsubselfd.2 $e |- ( ph -> A e. ZZ ) $.
-    $( Reflection in the modulus is congruent to negation.  (Contributed by Zhi
-       Wang, 20-Oct-2026.) $)
-    modnegsubselfd $p |- ( ph -> ( ( P - A ) mod P ) = ( -u A mod P ) ) $=
-      ( cmin co cneg zcnd nncnd negsubdi2d oveq1d nnzd zsubcld zred modsubselfd
-      cmo nnrpd modnegd eqtr3d ) ABCFGZHZCQGCBFGZCQGBHCQGAUBUCCQABCABEIACDJKLAU
-      ABCAUAABCEACDMNOABEOACDRABCDEPST $.
   $}
 
   ${
@@ -883836,35 +883884,6 @@ $)
   $}
 
   ${
-    fzomodcand.1 $e |- ( ph -> A e. ( 0 ..^ P ) ) $.
-    fzomodcand.2 $e |- ( ph -> B e. ( 0 ..^ P ) ) $.
-    fzomodcand.3 $e |- ( ph -> ( A mod P ) = ( B mod P ) ) $.
-    $( Canonical residues with equal remainders are equal.  (Contributed by Zhi
-       Wang, 20-Oct-2026.) $)
-    fzomodcand $p |- ( ph -> A = B ) $=
-      ( cmo co cc0 cfzo wcel wceq zmodidfzoimp syl 3eqtr3d ) ABDHIZCDHIZBCGABJD
-      KIZLQBMEBDNOACSLRCMFCDNOP $.
-  $}
-
-  ${
-    mod23ratiod.1 $e |- ( ph -> P e. NN ) $.
-    mod23ratiod.2 $e |- ( ph -> M e. ZZ ) $.
-    mod23ratiod.3 $e |- ( ph -> N e. ZZ ) $.
-    mod23ratiod.4 $e |- ( ph -> Z e. ZZ ) $.
-    mod23ratiod.5 $e |- ( ph -> ( M mod P ) = ( ( 2 x. Z ) mod P ) ) $.
-    mod23ratiod.6 $e |- ( ph -> ( ( 3 x. Z ) mod P ) = ( N mod P ) ) $.
-    $( If ` M ` is congruent to twice ` Z ` and three times ` Z ` is congruent
-       to ` N ` , then three times ` M ` is congruent to twice ` N ` , modulo
-       the positive integer ` P ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    mod23ratiod $p |- ( ph -> ( ( 3 x. M ) mod P ) = ( ( 2 x. N ) mod P ) )
-    $=
-      ( c3 cmul co cmo c2 cz wcel a1i zcnd 3z 2z zmulcld nnrpd modmul12d mul12d
-      eqidd oveq1d 3eqtrd ) ALCMNBONLPEMNZMNZBONPLEMNZMNZBONPDMNBONALLCUJBLQRAU
-      ASZUNGAPEPQRAUBSZIUCABFUDZALBONUGJUEAUKUMBOALPEALUNTAPUOTAEITUFUHAPPULDBU
-      OUOALEUNIUCHUPAPBONUGKUEUI $.
-  $}
-
-  ${
     oddmulsubevend.1 $e |- ( ph -> A e. ZZ ) $.
     oddmulsubevend.2 $e |- ( ph -> B e. ZZ ) $.
     oddmulsubevend.3 $e |- ( ph -> C e. ZZ ) $.
@@ -883877,17 +883896,6 @@ $)
       ( cmul co cz wcel c2 cdvds wbr wn cmin zmulcld 2prm a1i prmndvdsmuld omoe
       cprime syl22anc ) ABCKLZMNOUGPQRDMNODPQROUGDSLPQABCEFTABCOOUENAUAUBEFHIUC
       GJUGDUDUF $.
-  $}
-
-  ${
-    subremcongd.1 $e |- ( ph -> P e. NN ) $.
-    subremcongd.2 $e |- ( ph -> A e. ZZ ) $.
-    subremcongd.3 $e |- ( ph -> ( A - P ) = D ) $.
-    $( Express a residue by a signed difference from its modulus.  (Contributed
-       by Zhi Wang, 20-Oct-2026.) $)
-    subremcongd $p |- ( ph -> ( A mod P ) = ( D mod P ) ) $=
-      ( cmin co cmo modsubselfd oveq1d eqtr3d ) ABDHIZDJIBDJICDJIABDEFKANCDJGLM
-      $.
   $}
 
   ${
@@ -883928,19 +883936,6 @@ $)
       wb mpbird ) ADDBEFZGHFZISJZDUMGKFZISJZAUODUNGKFZISZADUMURIABLMZUMUMNDUMIS
       CUMOBUMPQAUMGAUMADBDLMATUACUBZRAGAUCZRUDUEAUNLMUOUSUKAUMGVAVBUFUNUGUHULAU
       TUPUPNUQCUPOBUPUIQUJ $.
-  $}
-
-  ${
-    negsubhalfcongd.1 $e |- ( ph -> P e. NN ) $.
-    negsubhalfcongd.2 $e |- ( ph -> A e. ZZ ) $.
-    negsubhalfcongd.3 $e |- ( ph -> R e. CC ) $.
-    negsubhalfcongd.4 $e |- ( ph -> ( 2 x. R ) = ( P - A ) ) $.
-    $( If ` ( 2 x. R ) = ( P - A ) ` , then ` A ` is congruent to twice
-       ` -u R ` modulo ` P ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    negsubhalfcongd $p |- ( ph -> ( A mod P ) = ( ( 2 x. -u R ) mod P ) ) $=
-      ( c2 cneg cmul co cmin 2cnd mulneg2d negeqd nncnd zcnd negsubdi2d 3eqtrrd
-      subremcongd ) ABIDJKLZCEFAUBIDKLZJCBMLZJBCMLAIDANGOAUCUDHPACBACEQABFRSTUA
-      $.
   $}
 
   ${
@@ -884195,16 +884190,17 @@ $)
        multiplier is nonzero modulo a prime.  (Contributed by Zhi Wang,
        17-Oct-2026.) $)
     liougb4gridneqd $p |- ( ph -> ( A =/= B /\ C =/= D ) ) $=
-      ( co wcel adantr cz wne cop wceq simpr cmul cc0 cfzo elfzoelz syl zmulcld
-      wa caddc cmo oveq1d eqtr3d modladdfzocand opeq12d mteqand cprime cdvds wn
-      wbr cr zred crp cn prmnn nnrpd oveq2d eqtr4d modaddcand prmmulfzocand jca
-      ) ABCUADEUAABCBDUBZCEUBZOABCUCZUKZBCDEAVPUDZVQDEFCGUEQZADUFFUGQZRZVPKSAEV
-      TRVPLSAVSTRVPACGACVTRZCTRJCUFFUHUIMUJZSVQBGUEQZDULQZFUMQZVSDULQZFUMQZVSEU
-      LQZFUMQZVQWEWGFUMVQWDVSDULVQBCGUEVRUNUNUNAWFWJUCZVPPSUOUPUQURADEVNVOOADEU
-      CZUKZBCDEWMBCFGAFUSRZWLHSABVTRZWLISAWBWLJSAGTRWLMSAFGUTVBVAWLNSWMWDVSDFAW
-      DVCRWLAWDABGAWOBTRIBUFFUHUIMUJVDSAVSVCRWLAVSWCVDSADVCRWLADAWADTRKDUFFUHUI
-      VDSAFVERWLAFAWNFVFRHFVGUIVHSWMWFWJWHAWKWLPSWMWGWIFUMWMDEVSULAWLUDZVIUNVJV
-      KVLWPUQURVM $.
+      ( co wcel adantr cmo wne cop wceq wa simpr cmul cc0 cfzo elfzoelz zmulcld
+      cz syl zred caddc oveq1d eqtr3d modladdfzocand opeq12d mteqand cprime wbr
+      cdvds wn oveq2d eqtr4d cr crp wb prmnn nnrpd modaddb mpbird prmmulfzocand
+      cn syl22anc jca ) ABCUADEUAABCBDUBZCEUBZOABCUCZUDZBCDEAVSUEZVTDEFCGUFQZAD
+      UGFUHQZRZVSKSAEWCRVSLSVTWBAWBUKRVSACGACWCRZCUKRJCUGFUIULMUJZSUMVTBGUFQZDU
+      NQZFTQZWBDUNQZFTQZWBEUNQZFTQZVTWHWJFTVTWGWBDUNVTBCGUFWAUOUOUOAWIWMUCZVSPS
+      UPUQURUSADEVQVROADEUCZUDZBCDEWPBCFGAFUTRZWOHSABWCRZWOISAWEWOJSAGUKRWOMSAF
+      GVBVAVCWONSWPWGFTQWBFTQUCZWIWKUCZWPWIWMWKAWNWOPSWPWJWLFTWPDEWBUNAWOUEZVDU
+      OVEWPWGVFRZWBVFRZDVFRZFVGRZWSWTVHAXBWOAWGABGAWRBUKRIBUGFUIULMUJUMSAXCWOAW
+      BWFUMSAXDWOADAWDDUKRKDUGFUIULUMSAXEWOAFAWQFVNRHFVIULVJSWGWBDFVKVOVLVMXAUR
+      USVP $.
   $}
 
   ${
@@ -884357,13 +884353,13 @@ $)
       x. ( T / 2 ) ) x. N ) mod P ) = ( -u R mod P ) ) ) $=
       ( c2 co wcel cmul cmo cdiv cn clt wbr wa cneg cabs cfv w3a wceq 2nn nnred
       cz a1i c1 caddc peano2nnd 2re remulcld ltp1d ltp1sub1d lttrd nndivmulbndd
-      cr simp1d simp2d jca nnnegabsboundd simp3d oveq1d nnzd zmulcld cmin nncnd
-      divremadjacentd simpld subremcongd eqtrd 3jca ) AEPUAQZUBRZVTCUCUDZUEDUFZ
-      UMRWCUGUHZUBRWDFUCUDUIPVTSQZFSQZBTQZWCBTQZUJAWAWBAWAWBWEEUJZAEPCJPUBRAUKU
-      NACIULZOAEEUOUPQZPCSQZAEJULZAWKAEJUQULAPCPVDRAURUNWJUSZAEWMUTAEWLWMWNNVAV
-      BVCZVEAWAWBWIWOVFVGADFKLVHAWGEFSQZBTQWHAWFWPBTAWEEFSAWAWBWIWOVIVJVJAWPWCB
-      GAEFAEJVKAFHVKVLAWPBVMQWCUJWKFSQBVMQFDVMQUJABDEFABGVNAFHVNAEJVNADKVNMVOVP
-      VQVRVS $.
+      cr simp1d simp2d jca nnnegabsboundd simp3d oveq1d nnrpd nnzd zmulcld zred
+      cmin nncnd divremadjacentd simpld subremcongd eqtrd 3jca ) AEPUAQZUBRZWBC
+      UCUDZUEDUFZUMRWEUGUHZUBRWFFUCUDUIPWBSQZFSQZBTQZWEBTQZUJAWCWDAWCWDWGEUJZAE
+      PCJPUBRAUKUNACIULZOAEEUOUPQZPCSQZAEJULZAWMAEJUQULAPCPVDRAURUNWLUSZAEWOUTA
+      EWNWOWPNVAVBVCZVEAWCWDWKWQVFVGADFKLVHAWIEFSQZBTQWJAWHWRBTAWGEFSAWCWDWKWQV
+      IVJVJAWRWEBABGVKAWRAEFAEJVLAFHVLVMVNAWRBVOQWEUJWMFSQBVOQFDVOQUJABDEFABGVP
+      AFHVPAEJVPADKVPMVQVRVSVTWA $.
   $}
 
   ${
@@ -884387,13 +884383,13 @@ $)
       ( ( N - R ) mod P ) ) ) $=
       ( co c2 wcel wbr cmul c1 caddc cdiv cn clt wa cmin cabs cfv w3a peano2nnd
       cz cmo wceq 2nn a1i nnred cdvds wn wb oddp1even syl mpbid cr 2re remulcld
-      ltp1sub1d nndivmulbndd simp1d simp2d nnsubabsboundd simp3d oveq1d zmulcld
-      nnzd jca cneg nncnd divremadjacentd simprd subremcongd eqtrd 3jca ) AEUAU
-      BPZQUCPZUDRZWECUESZUFFDUGPZULRWHUHUIZUDRWIFUESUJQWETPZFTPZBUMPZWHBUMPZUNA
-      WFWGAWFWGWJWDUNZAWDQCAEJUKZQUDRAUOUPACIUQZAQEURSUSZQWDURSZOAEULRWQWRUTAEJ
-      VOEVAVBVCAEQCTPAEJUQAQCQVDRAVEUPWPVFNVGVHZVIAWFWGWNWSVJVPADFHKLVKAWLWDFTP
-      ZBUMPWMAWKWTBUMAWJWDFTAWFWGWNWSVLVMVMAWTWHBGAWDFAWDWOVOAFHVOVNAEFTPBUGPDV
-      QUNWTBUGPWHUNABDEFABGVRAFHVRAEJVRADKVRMVSVTWAWBWC $.
+      nnzd ltp1sub1d nndivmulbndd simp1d simp2d jca nnsubabsboundd simp3d nnrpd
+      oveq1d zmulcld zred cneg nncnd divremadjacentd simprd subremcongd eqtrd
+      3jca ) AEUAUBPZQUCPZUDRZWGCUESZUFFDUGPZULRWJUHUIZUDRWKFUESUJQWGTPZFTPZBUM
+      PZWJBUMPZUNAWHWIAWHWIWLWFUNZAWFQCAEJUKZQUDRAUOUPACIUQZAQEURSUSZQWFURSZOAE
+      ULRWSWTUTAEJVGEVAVBVCAEQCTPAEJUQAQCQVDRAVEUPWRVFNVHVIZVJAWHWIWPXAVKVLADFH
+      KLVMAWNWFFTPZBUMPWOAWMXBBUMAWLWFFTAWHWIWPXAVNVPVPAXBWJBABGVOAXBAWFFAWFWQV
+      GAFHVGVQVRAEFTPBUGPDVSUNXBBUGPWJUNABDEFABGVTAFHVTAEJVTADKVTMWAWBWCWDWE $.
   $}
 
   ${
@@ -884482,26 +884478,26 @@ $)
       ( cmo co wceq cmul adantr c3 c1 cv clt wbr cabs cfv cn wcel c2 wo wa wrex
       w3a cz caddc cmin cdiv nn2adjacentd simprd simpld 3nn cr nnred nnzd simpr
       a1i mod3dblp1d nndivmulbndd simp1d narrowstriphalvesd simp2d cn0 nn0absid
-      nnnn0d syl eqeltrd eqbrtrd simp3d oveq1d zmulcld eqcomd subremcongd eqtrd
-      3jca olcd oddextshortexd cneg mod3dblm1d nncnd negsubhalfcongd mod3ndvdsd
-      jca nnnegabsboundd mpjaodan ) ACUAPQZUBRZDUCZCUDUEFUCZUFUGZUHUIWTEUDUEUNU
-      JWRSQESQBPQWSBPQRUAWRSQESQBPQUJWSSQBPQRUKULFUOUMDUHUMWPUJRZAWQULZUJCSQZUB
-      UPQZESQZBUQQZUJURQZBCDXDUAURQZEFXBXHUHUIZXHCUDUEZUAXHSQZXDRZXBXDUACAXDUHU
-      IZWQAXMXDUACSQZUDUEZAXCUBUQQZUHUIZXPXNUDUEZULZXMXOULZACGJUSZUTZVAZTUAUHUI
-      ZXBVBVGACVCUIZWQACGVDZTXBCACUOUIZWQACGVEZTAWQVFVHAXOWQAXMXOYBUTTVIZVJAXGU
-      OUIWQAXGAXGUHUIZXGEUDUEZUJXGSQZXFRZAYJYKYMUNZBXPESQZUQQZUJURQZUHUIZYQEUDU
-      EZUJYQSQYPRZUNZABCEGHIJKLMNVKZVAZVJZVETXBXJXGUFUGZUHUIZUUEEUDUEZUNUJXHSQE
-      SQBPQXGBPQRZXKESQZBPQZYLBPQZRZUKXBXJUUFUUGXBXIXJXLYIVLAUUFWQAUUEXGUHAXGVM
-      UIUUEXGRAXGUUDVOXGVNVPZUUDVQTAUUGWQAUUEXGEUDUUMAYJYKYMUUCVLVRTWEXBUULUUHX
-      BUUJXEBPQZUUKXBUUIXEBPXBXKXDESXBXIXJXLYIVSVTVTAUUNUUKRWQAXEYLBIAXDEAXDYCV
-      EAEHVEZWAAYLXFAYJYKYMUUCVSWBWCTWDWFWMWGAXAULZYQWHZBCDXPUAURQZEFUUPUURUHUI
-      ZUURCUDUEZUAUURSQZXPRZUUPXPUACAXQXAAXQXRAXSXTYAVAZVAZTYDUUPVBVGAYEXAYFTUU
-      PCAYGXAYHTAXAVFWIAXRXAAXQXRUVCUTTVIZVJAUUQUOUIZXAAUVFUUQUFUGZUHUIZUVGEUDU
-      EZAYQEAYRYSYTAYNUUAUUBUTZVJZAYRYSYTUVJVLWNZVJTUUPUUTUVHUVIUNUJUURSQESQBPQ
-      UUQBPQRZUVAESQZBPQZUJUUQSQBPQZRZUKUUPUUTUVHUVIUUPUUSUUTUVBUVEVLAUVHXAAUVF
-      UVHUVIUVLVLTAUVIXAAUVFUVHUVIUVLVSTWEUUPUVQUVMUUPUVOYOBPQZUVPUUPUVNYOBPUUP
-      UVAXPESUUPUUSUUTUVBUVEVSVTVTAUVRUVPRXAAYOBYQIAXPEAXPUVDVEUUOWAAYQUVKWJAYR
-      YSYTUVJVSWKTWDWFWMWGACYHOWLWO $.
+      nnnn0d syl eqeltrd eqbrtrd simp3d oveq1d nnrpd zmulcld eqcomd subremcongd
+      3jca zred eqtrd olcd oddextshortexd cneg mod3dblm1d nncnd negsubhalfcongd
+      jca nnnegabsboundd mod3ndvdsd mpjaodan ) ACUAPQZUBRZDUCZCUDUEFUCZUFUGZUHU
+      IXBEUDUEUNUJWTSQESQBPQXABPQRUAWTSQESQBPQUJXASQBPQRUKULFUOUMDUHUMWRUJRZAWS
+      ULZUJCSQZUBUPQZESQZBUQQZUJURQZBCDXFUAURQZEFXDXJUHUIZXJCUDUEZUAXJSQZXFRZXD
+      XFUACAXFUHUIZWSAXOXFUACSQZUDUEZAXEUBUQQZUHUIZXRXPUDUEZULZXOXQULZACGJUSZUT
+      ZVAZTUAUHUIZXDVBVGACVCUIZWSACGVDZTXDCACUOUIZWSACGVEZTAWSVFVHAXQWSAXOXQYDU
+      TTVIZVJAXIUOUIWSAXIAXIUHUIZXIEUDUEZUJXISQZXHRZAYLYMYOUNZBXRESQZUQQZUJURQZ
+      UHUIZYSEUDUEZUJYSSQYRRZUNZABCEGHIJKLMNVKZVAZVJZVETXDXLXIUFUGZUHUIZUUGEUDU
+      EZUNUJXJSQESQBPQXIBPQRZXMESQZBPQZYNBPQZRZUKXDXLUUHUUIXDXKXLXNYKVLAUUHWSAU
+      UGXIUHAXIVMUIUUGXIRAXIUUFVOXIVNVPZUUFVQTAUUIWSAUUGXIEUDUUOAYLYMYOUUEVLVRT
+      WEXDUUNUUJXDUULXGBPQZUUMXDUUKXGBPXDXMXFESXDXKXLXNYKVSVTVTAUUPUUMRWSAXGYNB
+      ABIWAZAXGAXFEAXFYEVEAEHVEZWBWFAYNXHAYLYMYOUUEVSWCWDTWGWHWNWIAXCULZYSWJZBC
+      DXRUAURQZEFUUSUVAUHUIZUVACUDUEZUAUVASQZXRRZUUSXRUACAXSXCAXSXTAYAYBYCVAZVA
+      ZTYFUUSVBVGAYGXCYHTUUSCAYIXCYJTAXCVFWKAXTXCAXSXTUVFUTTVIZVJAUUTUOUIZXCAUV
+      IUUTUFUGZUHUIZUVJEUDUEZAYSEAYTUUAUUBAYPUUCUUDUTZVJZAYTUUAUUBUVMVLWOZVJTUU
+      SUVCUVKUVLUNUJUVASQESQBPQUUTBPQRZUVDESQZBPQZUJUUTSQBPQZRZUKUUSUVCUVKUVLUU
+      SUVBUVCUVEUVHVLAUVKXCAUVIUVKUVLUVOVLTAUVLXCAUVIUVKUVLUVOVSTWEUUSUVTUVPUUS
+      UVRYQBPQZUVSUUSUVQYQBPUUSUVDXRESUUSUVBUVCUVEUVHVSVTVTAUWAUVSRXCAYQBYSUUQA
+      YQAXREAXRUVGVEUURWBWFAYSUVNWLAYTUUAUUBUVMVSWMTWGWHWNWIACYJOWPWQ $.
   $}
 
   ${
@@ -887539,11 +887535,11 @@ $)
       EGMXFXIXKVGVHZAXBUKULXBUMUNABJEGMXFPQVGVHZVIAXDUKULZXDUMUNZABHEGMXFRAEHVJ
       VKZEHVLUJZVJVKZAXREAXRUPULZXEXREVMVKXRXGULTXFAXRIEAXRTVNAIXHVNAEXFVNUAAIX
       GULIEVMVKOIUREVOVCVPEXRVQVRZVEAEVSULHVSULXQXSWKAEXFVBREHVTWAWBVGZVHZAXOXP
-      YBWCAHWSUHUIZGUJZXDWTUHUIXDXCUHUIZABHWSEGKLMNRYAXJXLUEUFACURIUSUIZVSEVJFG
+      YBWCAHWSUHUIZGUJZXDWTUHUIXDXCUHUIZABHWSEGKLMNRYAXJXLUEUFAFCURIUSUIZVSEVJG
       UHUHXRWSAXTIUPULXRIVMVKXRYGULTXHUAIXRVQVRZXJXLUGWDWEAYEXADGUJZUHUIZXAXDXB
       UHUIZUHUIYFAYEIHJUHUIZUHUIZGUJIDUHUIGUJYJAYDYMGAHIJAHRWFAIXIWFAJPWFWGWHAB
       IYLIDEGMXFXIAHJRPVDZXISAIEWIUIWLUDWJABDEGIKLMNOSUBUCUEUFWMWNAYIYKXAUHAYLG
-      UJYIYKABYLDEGMYNSUDWOABHJEGKLMNRYAPQUEUFACYGVSEVJFGUHUHXRJYHPQUGWDWEWPWQA
+      UJYIYKABYLDEGMYNSUDWOABHJEGKLMNRYAPQUEUFAFCYGVSEVJGUHUHXRJYHPQUGWDWEWPWQA
       XAXDXBXMYCXNWGWNWPWR $.
   $}
 
@@ -887651,13 +887647,13 @@ $)
       syl c3 simpl3 liougb4rigidnextd ex ralrimiva fmulralcbv sylibr indstrd )
       AUANZDUEUKZDCNZUFUKUGZWEWGOPEQWEEQZWGEQZOPRSCTUHZSUBNZDUEUKZWHWLWGOPEQWLE
       QWJOPRSCTUHZSZFDUEUKZWHFWGOPEQFEQWJOPRSCTUHZSUAUBFWEWLRWFWMWKWNWEWLDUEUIW
-      HCWEWLTWJWGEOOUJULWEFRWFWPWKWQWEFDUEUIWHCWEFTWJWGEOOUJULAWEUMUNZWLWEUEUKW
+      HCTWJEOOWEWLWGUJULWEFRWFWPWKWQWEFDUEUIWHCTWJEOOWEFWGUJULAWEUMUNZWLWEUEUKW
       OSUBUMUHZUOZWFWKWTWFUPZDUCNZUFUKUGZWEXBOPEQWIXBEQOPRZSZUCTUHWKXAXEUCTXAXB
       TUNZUPZXCXDXGXCUPZBCDUDEWEXBGHIXHXAADUQUNZXAXFXCURZAWRWSWFUSZJUTXHXAWEVAD
       VBPUNZXJXAWRDUMUNZWFXLAWRWSWFVCZXAAXIXMXKJDVDUTZWTWFVEZDWEVFVGVPXAXFXCVHX
       GXCVEXHXAAVIDOPGNZHNZVJPRXQVKQVAVLZRXRVKQXSRUOHUMVMGUMVMUGXJXKKUTXHXAAVQD
       UFUKUGXJXKLUTXHXAWHUDNZWGOPEQXTEQWJOPRSCTUHZUDVAWEVBPUHXJXAWNYADUDUBWEWHC
-      WLXTTWJWGEOOUJXADXOVNXNXPAWRWSWFVRVOVPVSVTWACUCTWIDUFEOOWEWBWCVTMWD $.
+      TWJEOOWLXTWGUJXADXOVNXNXPAWRWSWFVRVOVPVSVTWACUCTWIDUFEOOWEWBWCVTMWD $.
   $}
 
   ${
@@ -888476,8 +888472,8 @@ $)
     $( Subtracting the modulus preserves the odd-completion value.
        (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouoddsubpd $p |- ( ph -> ( F ` ( A - P ) ) = ( F ` A ) ) $=
-      ( cmin co nnzd zsubcld modsubselfd liouoddcongd ) ABCDIJCDEFACDHADGKLHACD
-      GHMN $.
+      ( cmin co nnzd zsubcld nnrpd zred modsubselfd liouoddcongd ) ABCDIJCDEFAC
+      DHADGKLHACDADGMACHNOP $.
   $}
 
   ${
@@ -888535,7 +888531,7 @@ $)
     liouoddnegsubpd $p |- ( ph -> ( F ` -u A ) = ( F ` -u ( A - P ) ) ) $=
       ( cmin co cneg nnzd zsubcld znegcld zred modsubselfd modnegd liouoddcongd
       cfv nnrpd eqcomd ) ACDIJZKZESCKZESABUCUDDEFAUBACDHADGLMZNACHNAUBCDAUBUEOA
-      CHOADGTACDGHPQRUA $.
+      CHOZADGTZACDUGUFPQRUA $.
   $}
 
   ${
@@ -888945,23 +888941,23 @@ $)
     liouodd3extrad $p |- ( ph -> ( F ` -u ( 3 x. N ) ) = ( F ` N ) ) $=
       ( c3 cmul co c2 wcel cneg cfv wceq cle wbr cmin cprime prmnn syl csn cdif
       cn cdvds wn prmgt3factsd simpld oddn2prm 3nn a1i nnmulcld clt sub3extrabd
-      simprd liouodd2led znegcld modnegsubselfd liouoddcongd liouoddnegmulcongd
-      nnsubgtd nnzd 2nn 3brtr3d nncnd mulnegcomd fveq2d c1 syl3anbrc fzo1ndvdsd
-      cfzo elfzo1 prmndvdsmuld c4 mul22d eqbrtrd c6 mul12d eqtrd liouodd3upperd
-      mul23d breqtrrd liouoddsymnegd liouodd2smalld 3eqtrd breqtrd nnred cr 6re
-      remulcld ltnsymd liouodd3midled liouoddsmall2d liounnre eqeltrd mpbir2and
-      cliou eqeltrrd letri3d ) APEQRZUAZDUBZEDUBZUCXJXKUDUEXKXJUDUEAXJSXIQRUAZD
-      UBZXKUDACXHUFRZDUBZSXNQRZUADUBXJXMUDABCDXNFGHACUGTCULTZICUHUIZACUGSUJUKTZ
-      SCUMUEUNAXSPCUMUEUNACIJUOUPCUQUIZAXHCAPEPULTZAURUSZKUTZXRAXHCVAUEZXPCVAUE
-      ZACEXRKNMVBZUPZVIZAYDYEYFVCZOVDABXNXICDHAXNYHVJZAXHAXHYCVJZVEZAXHCXRYKVFZ
-      VGZABXNXICDSHXRASSULTAVKUSZVJYJYLYMVHVLAXMPSEQRZUAZQRUAZDUBYQDUBXKAXLYRDA
-      SPEASYOVMZAPYBVMZAEKVMZVNVOABYPCDPHXRXTAPYBVJZAYPASEYOKUTZVJZAYPCAYPULTXQ
-      YPCVAUEYPVPCVSRZTUUCXRLCYPVTVQVRZAPYPCIUUBUUDAPCAYAXQPCVAUEPUUETYBXRJCPVT
-      VQVRUUFWAABCDYPFGHXRXTUUCASYPQRWBEQRCVAAEUUAWCMWDACWEEQRZPYPQRZVANAUUHSXH
-      QRUUGAPSEYTYSUUAWFAEUUAWIWGWJOWHWKABCDEHXRXTKLMWLWMWNABCDEFGHXRXTKLYGACUU
-      GACXRWOAWEEWEWPTAWQUSAEKWOWRNWSOWTAXJXKAXOXJWPYNAXOXNXEUBZWPABXNCDHXRYHYI
-      XAAXNULTUUIWPTYHXNXBUIXCXFAXKEXEUBZWPABECDHXRKLXAAEULTUUJWPTKEXBUIXCXGXD
-      $.
+      nnsubgtd simprd liouodd2led nnzd znegcld zred modnegsubselfd liouoddcongd
+      nnrpd 2nn liouoddnegmulcongd 3brtr3d nncnd mulnegcomd fveq2d c1 syl3anbrc
+      cfzo elfzo1 fzo1ndvdsd prmndvdsmuld c4 mul22d eqbrtrd mul12d mul23d eqtrd
+      c6 breqtrrd liouodd3upperd liouoddsymnegd liouodd2smalld breqtrd nnred cr
+      6re remulcld ltnsymd liouodd3midled cliou liouoddsmall2d liounnre eqeltrd
+      3eqtrd eqeltrrd letri3d mpbir2and ) APEQRZUAZDUBZEDUBZUCXLXMUDUEXMXLUDUEA
+      XLSXKQRUAZDUBZXMUDACXJUFRZDUBZSXPQRZUADUBXLXOUDABCDXPFGHACUGTCULTZICUHUIZ
+      ACUGSUJUKTZSCUMUEUNAYAPCUMUEUNACIJUOUPCUQUIZAXJCAPEPULTZAURUSZKUTZXTAXJCV
+      AUEZXRCVAUEZACEXTKNMVBZUPZVCZAYFYGYHVDZOVEABXPXKCDHAXPYJVFZAXJAXJYEVFZVGZ
+      AXJCACXTVKAXJYMVHVIZVJZABXPXKCDSHXTASSULTAVLUSZVFYLYNYOVMVNAXOPSEQRZUAZQR
+      UAZDUBYSDUBXMAXNYTDASPEASYQVOZAPYDVOZAEKVOZVPVQABYRCDPHXTYBAPYDVFZAYRASEY
+      QKUTZVFZAYRCAYRULTXSYRCVAUEYRVRCVTRZTUUEXTLCYRWAVSWBZAPYRCIUUDUUFAPCAYCXS
+      PCVAUEPUUGTYDXTJCPWAVSWBUUHWCABCDYRFGHXTYBUUEASYRQRWDEQRCVAAEUUCWEMWFACWJ
+      EQRZPYRQRZVANAUUJSXJQRUUIAPSEUUBUUAUUCWGAEUUCWHWIWKOWLWMABCDEHXTYBKLMWNXF
+      WOABCDEFGHXTYBKLYIACUUIACXTWPAWJEWJWQTAWRUSAEKWPWSNWTOXAAXLXMAXQXLWQYPAXQ
+      XPXBUBZWQABXPCDHXTYJYKXCAXPULTUUKWQTYJXPXDUIXEXGAXMEXBUBZWQABECDHXTKLXCAE
+      ULTUULWQTKEXDUIXEXHXI $.
   $}
 
   ${
@@ -889017,15 +889013,16 @@ $)
       cn csn cdif prmgt3factsd simpld oddn2prm cz 2z a1i c1 cfzo fzossnn sselid
       nnzd zmulcld 3z prmgt3ndvds23d fzo1ndvdsd prmndvdsmuld simprd simpr caddc
       cliou w3a wrex liouodd23centrald liouoddnegcand cmin cneg oddcentralrefld
-      cv modnegsubselfd liouoddnegmulrefld 3eqtr3d pm2.61dan ) AMEUANZCUBOZWDDP
-      ZQEUANZDPZUCAWEUDZBWDWGCDHACUIRZWEACUERZWJICUFUGZSAMCUHOTZWEACUEMUJUKRZWM
-      AWNQCUHOTACIJULUMCUNUGZSAWDUORWEAMEMUORZAUPUQZAEAURCUSNZUIECUTKVAZVBZVCSA
-      WGUORWEAQEQUORZAVDUQZWTVCSACWDUHOTWEAMECIWQWTACMUHOTZCQUHOTZACIJVEZUMAECK
-      VFZVGSACWGUHOTWEAQECIXBWTAXCXDXEVHXFVGSWIBCDEFGHAWKWEISAQCUBOZWEJSAEUIRWE
-      WSSAWEVIAMCUANFVSZGVSZVJNUCXHVKPURUCXIVKPURUCVLGUIVMFUIVMTZWELSVNVOAWETZU
-      DZMCEVPNZUANZVQDPQXMUANVQDPWFWHXLBCDXMFGHAWKXKISAXGXKJSXLXMUIRZXNCUBOZXLE
-      CAWJXKWLSZAWMXKWOSAEWRRXKKSAXKVIVRZUMZXLXOXPXRVHAXJXKLSVNXLBEXMCDMHXQWPXL
-      UPUQAEUORXKWTSZXLXMXSVBZXLECXQXTVTZWAXLBEXMCDQHXQXAXLVDUQXTYAYBWAWBWC $.
+      cv nnrpd zred modnegsubselfd liouoddnegmulrefld 3eqtr3d pm2.61dan ) AMEUA
+      NZCUBOZWFDPZQEUANZDPZUCAWGUDZBWFWICDHACUIRZWGACUERZWLICUFUGZSAMCUHOTZWGAC
+      UEMUJUKRZWOAWPQCUHOTACIJULUMCUNUGZSAWFUORWGAMEMUORZAUPUQZAEAURCUSNZUIECUT
+      KVAZVBZVCSAWIUORWGAQEQUORZAVDUQZXBVCSACWFUHOTWGAMECIWSXBACMUHOTZCQUHOTZAC
+      IJVEZUMAECKVFZVGSACWIUHOTWGAQECIXDXBAXEXFXGVHXHVGSWKBCDEFGHAWMWGISAQCUBOZ
+      WGJSAEUIRWGXASAWGVIAMCUANFVSZGVSZVJNUCXJVKPURUCXKVKPURUCVLGUIVMFUIVMTZWGL
+      SVNVOAWGTZUDZMCEVPNZUANZVQDPQXOUANVQDPWHWJXNBCDXOFGHAWMXMISAXIXMJSXNXOUIR
+      ZXPCUBOZXNECAWLXMWNSZAWOXMWQSAEWTRXMKSAXMVIVRZUMZXNXQXRXTVHAXLXMLSVNXNBEX
+      OCDMHXSWRXNUPUQAEUORXMXBSZXNXOYAVBZXNECXNCXSVTXNEYBWAWBZWCXNBEXOCDQHXSXCX
+      NVDUQYBYCYDWCWDWE $.
   $}
 
   ${
@@ -889129,13 +889126,14 @@ $)
       ( c2 co cneg cfv wcel cdvds wbr cmul cle cprime cn prmnn syl prmgt3factsd
       csn cdif wn c3 simpld oddn2prm cz 2z cfzo elfzoelz zmulcld prmgt3ndvds23d
       a1i c1 fzo1ndvdsd prmndvdsmuld liouoddnegd liouoddred clt oddcentralrefld
-      simprd liouodd2led znegcld modnegsubselfd liouoddcongd liouoddnegmulrefld
-      cmin nnzd eqtrd 3brtr3d lenegcon1d eqbrtrd ) ANEUAOZPDQVTDQZPEDQZUBABVTCD
-      HACUCRCUDRICUEUFZACUCNUHUIRZNCSTUJAWDUKCSTUJACIJUGULCUMUFZANENUNRAUOUTZAE
-      VACUPOREUNRKEVACUQUFZURZANECIWFWGACNSTUJCUKSTUJACIJUSULAECKVBZVCZVDAWBWAA
-      BECDHWCWGWIVEABVTCDHWCWHWJVEACEVNOZDQZNWKUAOZPDQWBPZWAUBABCDWKFGHWCWEAWKU
-      DRZWMCVFTZAECWCWEKLVGZULZAWOWPWQVHMVIAWLEPZDQWNABWKWSCDHAWKWRVOZAEWGVJAEC
-      WCWGVKZVLABECDHWCWEWGWIVDVPABEWKCDNHWCWFWGWTXAVMVQVRVS $.
+      cmin simprd liouodd2led nnzd nnrpd zred modnegsubselfd liouoddcongd eqtrd
+      znegcld liouoddnegmulrefld 3brtr3d lenegcon1d eqbrtrd ) ANEUAOZPDQWBDQZPE
+      DQZUBABWBCDHACUCRCUDRICUEUFZACUCNUHUIRZNCSTUJAWFUKCSTUJACIJUGULCUMUFZANEN
+      UNRAUOUTZAEVACUPOREUNRKEVACUQUFZURZANECIWHWIACNSTUJCUKSTUJACIJUSULAECKVBZ
+      VCZVDAWDWCABECDHWEWIWKVEABWBCDHWEWJWLVEACEVHOZDQZNWMUAOZPDQWDPZWCUBABCDWM
+      FGHWEWGAWMUDRZWOCVFTZAECWEWGKLVGZULZAWQWRWSVIMVJAWNEPZDQWPABWMXACDHAWMWTV
+      KZAEWIVQAECACWEVLAEWIVMVNZVOABECDHWEWGWIWKVDVPABEWMCDNHWEWHWIXBXCVRVSVTWA
+      $.
   $}
 
   ${
@@ -889244,7 +889242,7 @@ $)
       prmnn nncentralfzod prmndvdsmuld cr liouodd2red csn prmgt3factsd oddn2prm
       eqid cdif cv caddc cliou w3a liouodd2led simpr neqned liouodd23transportd
       wrex leneltd 3brtr4d liouodd2posrepd simp1d nnmulcld simp3d elfzo1 sselid
-      syl3anbrc crp nnrpd modabs2 mod23ratiod fzomodcand nnred liouodd2supportd
+      syl3anbrc nnrpd crp modabs2 mod23ratiod fzomodcand nnred liouodd2supportd
       zred syl2anc quarterthirdlt gtned neneqd condan ) ANEOPZUADUBZEDUBZQZRNRC
       NUCPUDPCUEPZEOPZOPZCUEPZOPZXMQAXPUFZUGZYAXMCYCUHCUKPZUICUKPZYACUJZYCYAULS
       CULSZYACUMTZYAYDSYCRXTRULSYCUNUOZYCXTULSZNXTOPCUMTZCUPXTOPUMTZYHUGZYCBXSC
@@ -889257,9 +889255,10 @@ $)
       OPFWBZGWBZWCPQUVDWDUBUHQUVEWDUBUHQWEGULWJFULWJUFYBMURZWFYCXNXOAYBWGWHZWKY
       CUURXOQZUUSXNQZYCBCDEXRFGHYOYPUUDUUJUUQYCYSYTUUIVCZUVFWIZVFYCUVHUVIUVKVCW
       LUVFWMZWNZWOUUMYCYLYHYCYJYKYMUVLWPZVCCYAWQWSWRYCYDYEXMYFYCXMULSYGUUNXMYDS
-      YCNEYQUUCWOZUUMUUOCXMWQWSWRYCCXTEXRUUMYCXTUVMUTUUDUUJYCXSVOSCWTSXTCUEPXTQ
-      YCXSUUKXGYCCUUMXAXSCXBXHUVJXCXDYCYAXMYCXMYAYCXMUVOXEYCCXTEUVMUUCYCCUUMXEY
-      CYLYHUVNVFYCCUPEOPUMTREOPCUMTYCBCDEFGHYOYPUUCUUOUVFUVGXFVCXIXJXKXL $.
+      YCNEYQUUCWOZUUMUUOCXMWQWSWRYCCXTEXRYCCUUMWTZYCXTYCXTUVMUTXGYCEUUDXGYCXRUU
+      JXGYCXSVOSCXASXTCUEPXTQYCXSUUKXGUVPXSCXBXHUVJXCXDYCYAXMYCXMYAYCXMUVOXEYCC
+      XTEUVMUUCYCCUUMXEYCYLYHUVNVFYCCUPEOPUMTREOPCUMTYCBCDEFGHYOYPUUCUUOUVFUVGX
+      FVCXIXJXKXL $.
   $}
 
   ${
@@ -889281,16 +889280,16 @@ $)
       c1 c3 simpld prmndvdsmuld liouoddcnne0d csn cdif prmgt3factsd liouoddnegd
       oddn2prm fzossnn sselid simpr cv caddc cliou wrex liouodd2centrald eqtr3d
       w3a negcon1ad cmin oddcentralrefld nnzd modnegsubselfd liouoddnegmulrefld
-      eqcomd simprd znegcld liouoddcongd 3eqtrd pm2.61dan ) AMEUANZCUBOZWMDPZED
-      PZUCZUDAWNUEZWQWOWRWOWPWRWOUFQWOUGUHWRBWMCDHACRQZWNACUIQZWSICUJUKZSZAWMUL
-      QWNAMEMULQZAUMUNZAEVACUONZQZEULQZKEVACUPUKZUQSZACWMUROTWNAMECIXDXHACMUROT
-      CVBUROTACIJUSVCAECKUTZVDSZVEVCWRWMUCDPWOUCWPWRBWMCDHXBAMCUROTZWNACUIMVFVG
-      QZXLAXMVBCUROTACIJVHVCCVJUKZSXIXKVIWRBCDEFGHAWTWNISAVBCUBOZWNJSAERQWNAXER
-      ECVKKVLSAWNVMAMCUANFVNZGVNZVONUDXPVPPVAUDXQVPPVAUDVTGRVQFRVQTZWNLSVRVSWAW
-      GAWNTZUEZWOCEWBNZDPZEUCZDPWQXTMYAUANZUCDPWOYBXTBEYACDMHAWSXSXASZXCXTUMUNA
-      XGXSXHSZXTYAXTYARQZYDCUBOZXTECYEAXLXSXNSZAXFXSKSAXSVMWCZVCZWDZXTECYEYFWEZ
-      WFXTBCDYAFGHAWTXSISAXOXSJSYKXTYGYHYJWHAXRXSLSVRVSXTBYAYCCDHYLXTEYFWIYMWJX
-      TBECDHYEYIYFACEUROTXSXJSVIWKWL $.
+      eqcomd nnrpd zred simprd znegcld liouoddcongd 3eqtrd pm2.61dan ) AMEUANZC
+      UBOZWODPZEDPZUCZUDAWPUEZWSWQWTWQWRWTWQUFQWQUGUHWTBWOCDHACRQZWPACUIQZXAICU
+      JUKZSZAWOULQWPAMEMULQZAUMUNZAEVACUONZQZEULQZKEVACUPUKZUQSZACWOUROTWPAMECI
+      XFXJACMUROTCVBUROTACIJUSVCAECKUTZVDSZVEVCWTWOUCDPWQUCWRWTBWOCDHXDAMCUROTZ
+      WPACUIMVFVGQZXNAXOVBCUROTACIJVHVCCVJUKZSXKXMVIWTBCDEFGHAXBWPISAVBCUBOZWPJ
+      SAERQWPAXGRECVKKVLSAWPVMAMCUANFVNZGVNZVONUDXRVPPVAUDXSVPPVAUDVTGRVQFRVQTZ
+      WPLSVRVSWAWGAWPTZUEZWQCEWBNZDPZEUCZDPWSYBMYCUANZUCDPWQYDYBBEYCCDMHAXAYAXC
+      SZXEYBUMUNAXIYAXJSZYBYCYBYCRQZYFCUBOZYBECYGAXNYAXPSZAXHYAKSAYAVMWCZVCZWDZ
+      YBECYBCYGWHYBEYHWIWEZWFYBBCDYCFGHAXBYAISAXQYAJSYMYBYIYJYLWJAXTYALSVRVSYBB
+      YCYECDHYNYBEYHWKYOWLYBBECDHYGYKYHACEUROTYAXLSVIWMWN $.
   $}
 
   ${
@@ -889394,8 +889393,8 @@ $)
       ( cmul cfv wceq zmulcld liouoddmulcong1d liouoddcongd oveq2d 3eqtr4d zcnd
       co cc wcel cc0 wne liouoddcnne0d simpld simprd fmulmuliffd mpbid ) AEGHUC
       ULZUCULFUDZEFUDZVBFUDZUCULZUEEHUCULZFUDZVDHFUDZUCULUEAECUCULFUDVDCFUDZUCU
-      LVCVFUBABVBCDFEIJLAGHMKUFZNSUGAVEVJVDUCABVBCDFIVKNSUHUIUJAGFUDZVDVIVHEVEF
-      GHAGMUKAELUKAHKUKAVLUMUNZVLUOUPZABGDFIJMQUQZURAVDUMUNVDUOUPABEDFIJLPUQURA
+      LVCVFUBABVBCDFEIJLAGHMKUFZNSUGAVEVJVDUCABVBCDFIVKNSUHUIUJAGFUDZVDVIVHVEFG
+      EHAGMUKAELUKAHKUKAVLUMUNZVLUOUPZABGDFIJMQUQZURAVDUMUNVDUOUPABEDFIJLPUQURA
       VIUMUNVIUOUPABHDFIJKOUQURAVHUMUNVHUOUPABVGDFIJAEHLKUFRUQURAVMVNVOUSTUAUTV
       A $.
   $}
@@ -889445,7 +889444,7 @@ $)
       ) ) ) $=
       ( c2 cfv cmul co cz wcel 2z a1i zcnd cc cc0 wne cprime cn prmnn syl cdvds
       wbr wn c3 prmgt3ndvds23d simpld liouoddcnne0d zmulcld prmndvdsmuld simprd
-      wceq liouodd23muld fmulmuliffd ) AQFRZEFRZCFRZECSTZFRZEQCSTFRZFQCAQQUAUBA
+      wceq liouodd23muld fmulmuliffd ) AQFRZEFRZCFRZECSTZFRZQCSTFRZFQECAQQUAUBA
       UCUDZUEAELUEACMUEAVFUFUBZVFUGUHZABQDFIADUIUBDUJUBJDUKULZVLADQUMUNUODUPUMU
       NUOADJKUQURUSZURAVGUFUBVGUGUHABEDFIVOLNUSURAVHUFUBVHUGUHABCDFIVOMOUSURAVJ
       UFUBVJUGUHABVIDFIVOAECLMUTZAECDJLMNOVAZUSURAVMVNVPVBAQVISTFRVFVJSTVCUPVIS
@@ -889478,11 +889477,11 @@ $)
       ( cmul co cfv c2 wceq c3 2cnd zcnd cc wcel cc0 wne cprime cn prmnn syl cz
       2z a1i cdvds wbr prmgt3ndvds23d simpld liouoddcnne0d zmulcld prmndvdsmuld
       wn liouodd23muld fmulprodd 3z simprd jca ) AUAERSZFRSDTVJDTZFDTZRSUBUCERS
-      ZFRSDTVMDTZVLRSUBAUAEUADTZEDTZVLDEFRSZDTZVKFAUDAELUEZAFMUEZAVOUFUGVOUHUIA
+      ZFRSDTVMDTZVLRSUBAUADTZEDTZVLEFRSZDTZVKDUAEFAUDAELUEZAFMUEZAVOUFUGVOUHUIA
       BUACDIACUJUGCUKUGJCULUMZUAUNUGAUOUPACUAUQURVDZCUCUQURVDZACJKUSZUTVAUTAVPU
       FUGVPUHUIABECDIWALNVAUTZAVLUFUGVLUHUIABFCDIWAMOVAUTZAUAVQRSDTVOVRRSUBZUCV
       QRSDTUCDTZVRRSUBZABVQCDGHIJKAEFLMVBAEFCJLMNOVCPVEZUTQAVKVOVPRSUBZVNWHVPRS
-      UBZABECDGHIJKLNPVEZUTVFAUCEWHVPVLDVRVNFAUCUCUNUGAVGUPZUEVSVTAWHUFUGWHUHUI
+      UBZABECDGHIJKLNPVEZUTVFAWHVPVLVRVNDUCEFAUCUCUNUGAVGUPZUEVSVTAWHUFUGWHUHUI
       ABUCCDIWAWNAWBWCWDVHVAUTWEWFAWGWIWJVHQAWKWLWMVHVFVI $.
   $}
 
@@ -889577,9 +889576,9 @@ $)
       FXQQRVKVLZVCAEXEVIVPVJXGAUJIEOYBYCAEUJVIVPVJZEUPVIVPVJZAEOPVMZVNAIEAIWDEV
       OULZUSXEEVQVPAEIFXQQUAUBRVRVNVLZVSVCAEXHVIVPVJZXGAFJEOYAXSYHYFVSZVCAXGVTA
       XEXHUKULHUOXEHUOZXIUKULUNZXGAYQXLXHUKULHUOXLHUOZXIUKULUNZABEHIXHLMNOPYCAF
-      JYAXSVHZYMYOUFACWDFVOULZVDEVIGHUKUKIXHAIURUSFURUSIFVQVPIUUAUSUAQUBFIWAWBZ
+      JYAXSVHZYMYOUFAGCWDFVOULZVDEVIHUKUKIXHAIURUSFURUSIFVQVPIUUAUSUAQUBFIWAWBZ
       YTYOUGWEWCZVNVCAXFHUOYPXKUKULUNZXGAUUDXMHUOYRXKUKULUNZABEHIJLMNOPYCXSYMYF
-      UFACUUAVDEVIGHUKUKIJUUBXSYFUGWEWCZVNVCAFDUKULHUOXJDHUOUKULUNZXGABDEFHNXQA
+      UFAGCUUAVDEVIHUKUKIJUUBXSYFUGWEWCZVNVCAFDUKULHUOXJDHUOUKULUNZXGABDEFHNXQA
       EUTUJWFWGUSZUJEVIVPVJAUUHUPEVIVPVJAEOPWHVNEWIVBYAUCYHAEDVIVPZEDWNUOZVIVPZ
       AUUJEAUUJYLUSUJUUJUKULEVQVPAEUUJJXQSUDUETVRVNVLAEVDUSYDUUIUUKWJAEXQVGUCED
       WKWLWMZAFDEOYAUCYHUULVSAFKWTZUKULHUOXJUUMHUOUKULUNFUUJUKULHUOXJUUJHUOUKUL
@@ -889927,10 +889926,10 @@ $)
        original argument.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouoddmulrefld $p |- ( ph -> ( F ` ( Q x. A ) ) = ( ( F ` Q ) x. ( F ` A
       ) ) ) $=
-      ( cmul co cfv wceq cmo cneg cmin znegcld modnegsubselfd liouoddmulnegiffd
-      nnzd zsubcld eqcomd liouoddmuleqmodd mpbid ) AECUAZPQFREFRZUKFRPQSECPQFRU
-      LCFRPQSABUKDCUBQZDEFGHJACKUCADCADHUFKUGAUMDTQUKDTQACDHKUDUHOUIABCDEFGHIJK
-      LMNUEUJ $.
+      ( cmul co cfv wceq cmo cneg cmin znegcld nnzd zsubcld zred modnegsubselfd
+      nnrpd eqcomd liouoddmuleqmodd liouoddmulnegiffd mpbid ) AECUAZPQFREFRZUMF
+      RPQSECPQFRUNCFRPQSABUMDCUBQZDEFGHJACKUCADCADHUDKUEAUODTQUMDTQACDADHUHACKU
+      FUGUIOUJABCDEFGHIJKLMNUKUL $.
   $}
 
   ${
@@ -890050,7 +890049,7 @@ $)
       DAEUAAENUFUAUGUHAUIUJUAUKULAUMUJUNAUOWDUDUCZHUDUCGUEWGGUEWFUDUCUPWEHUDUCG
       UEWEGUEWFUDUCUPABDGWDHIJKLMAWDAUAEUQURZWDUSUHZRAEUSUHZUAUSUHWHWIUTNVAEUAV
       BVCVDZVEPAWDDAWDVFDVGUCUHWGDVHURADWDEADVIUHDUSUHLDVJVKNWKAEAENVLVMZOVNVOV
-      PQSACVFEVGUCZVQDUQFGUDUDWDHAWIWJWDEVHURWDWMUHWKNWLEWDVRVTPQTVSWAWBWC $.
+      PQSAFCVFEVGUCZVQDUQGUDUDWDHAWIWJWDEVHURWDWMUHWKNWLEWDVRVTPQTVSWAWBWC $.
   $}
 
   ${
@@ -890114,14 +890113,14 @@ $)
       a1i rehalfcld simpl3 ralnnindhypd liouoddextendnextd ralrimiva fmulralcbv
       c1 ex sylibr indstrd ) AUAUEZDUKUFNZOUGZDCUEZUHUGULZWIWLPNFQWIFQZWLFQZPNR
       SCTUIZSUBUEZWJOUGZWMWQWLPNFQWQFQWOPNRSCTUIZSZEWJOUGZWMEWLPNFQEFQWOPNRSCTU
-      IZSUAUBEWIWQRWKWRWPWSWIWQWJOUMWMCWIWQTWOWLFPPUJUNWIERWKXAWPXBWIEWJOUMWMCW
-      IETWOWLFPPUJUNAWIUOUPZWQWIOUGWTSUBUOUIZUQZWKWPXEWKURZDUCUEZUHUGULZWIXGPNF
+      IZSUAUBEWIWQRWKWRWPWSWIWQWJOUMWMCTWOFPPWIWQWLUJUNWIERWKXAWPXBWIEWJOUMWMCT
+      WOFPPWIEWLUJUNAWIUOUPZWQWIOUGWTSUBUOUIZUQZWKWPXEWKURZDUCUEZUHUGULZWIXGPNF
       QWNXGFQPNRZSZUCTUIWPXFXJUCTXFXGTUPZURZXHXIXLXHURZBCDWIUDFXGGHIXMXFADUSUPZ
       XFXKXHUTZAXCXDWKVAZJVBXMXFAVEDOUGXOXPKVBXMXFXCXOAXCXDWKVCZVFXMXFUKWIPNDOU
       GZXOXFXRWKXEWKVDZXFWIDUKXFWIXQVGXFDXFAXNDUOUPXPJDVHVBVGZUKVIUPXFVJVRVKVLV
       FXFXKXHVMXLXHVDXMXFAUKDPNGUEZHUEZVNNRYAVOQWERYBVOQWERUQHUOVPGUOVPULXOXPLV
-      BXMXFWMUDUEZWLPNFQYCFQWOPNRSCTUIZUDWEWIVQNUIXOXFWSYDWJUDUBWIWMCWQYCTWOWLF
-      PPUJXFDXTVSXQXSAXCXDWKVTWAVFWBWFWCCUCTWNDUHFPPWIWDWGWFMWH $.
+      BXMXFWMUDUEZWLPNFQYCFQWOPNRSCTUIZUDWEWIVQNUIXOXFWSYDWJUDUBWIWMCTWOFPPWQYC
+      WLUJXFDXTVSXQXSAXCXDWKVTWAVFWBWFWCCUCTWNDUHFPPWIWDWGWFMWH $.
   $}
 
   ${
