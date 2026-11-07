@@ -183031,6 +183031,19 @@ $)
   $}
 
   ${
+    $d A x $.  $d B x $.  $d I x $.
+    $( It is decidable whether one finite bag dominates another.  (Contributed
+       by Jim Kingdon, 5-Nov-2026.) $)
+    psrbagdcle $p |- ( ( A e. ( NN0 ^m I ) /\ B e. ( NN0 ^m I ) /\ I e. Fin )
+        -> DECID A oR <_ B ) $=
+      ( vx cn0 cmap co wcel cfn w3a cle wf elmapi 3ad2ant1 ffnd 3ad2ant2 cfv cz
+      ffvelcdmda nn0zd cv wbr wdc wa zdcle syl2anc ralrimiva simp3 ofrfidc ) AE
+      CFGZHZBUJHZCIHZJZDCKABUNCEAUKULCEALUMAECMNZOUNCEBULUKCEBLUMBECMPZOUNDUAZA
+      QZUQBQZKUBUCZDCUNUQCHUDZURRHUSRHUTVAURUNCEUQAUOSTVAUSUNCEUQBUPSTURUSUEUFU
+      GUKULUMUHUI $.
+  $}
+
+  ${
     $d D u v w x $.  $d D y $.  $d D x z $.  $d F f $.  $d F u v w x $.
     $d F y $.  $d F x z $.  $d I f $.  $d I z $.  $d S u v w $.  $d S z $.
     $d X f $.  $d X u v w x $.  $d X y $.  $d X x z $.  $d Y f $.
