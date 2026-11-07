@@ -336721,7 +336721,7 @@ $)
     $( Definition of a uniform structure.  Definition 1 of [BourbakiTop1] p.
        II.1.  A uniform structure is used to give a generalization of the idea
        of Cauchy's sequence.  This definition is analogous to ` TopOn ` .
-       Elements of an uniform structure are called entourages.  (Contributed by
+       Elements of a uniform structure are called entourages.  (Contributed by
        FL, 29-May-2014.)  (Revised by Thierry Arnoux, 15-Nov-2017.) $)
     df-ust $a |- UnifOn = ( x e. _V |-> { u | ( u C_ ~P ( x X. x )
        /\ ( x X. x ) e. u /\ A. v e. u (
@@ -336909,8 +336909,8 @@ $)
   ustne0 $p |- ( U e. ( UnifOn ` X ) -> U =/= (/) ) $=
     ( cust cfv wcel cxp ustbasel ne0d ) ABCDEABBFABGH $.
 
-  $( In an uniform structure, any entourage ` V ` is a subset of its
-     composition with itself.  (Contributed by Thierry Arnoux, 5-Jan-2018.) $)
+  $( In a uniform structure, any entourage ` V ` is a subset of its composition
+     with itself.  (Contributed by Thierry Arnoux, 5-Jan-2018.) $)
   ustssco $p |- ( ( U e. ( UnifOn ` X ) /\ V e. U ) -> V C_ ( V o. V ) ) $=
     ( cust cfv wcel wa cid cres cun ccom ssun1 coires1 wrel cdm wss wceq ustrel
     cxp ustssxp dmss syl dmxpid sseqtrdi syl2anc eqtrid uneq1d sseqtrrid coundi
@@ -336921,9 +336921,8 @@ $)
 
   ${
     $d w x U $.  $d w x V $.  $d x X $.
-    $( In an uniform structure, for any entourage ` V ` , there exists a
-       smaller symmetrical entourage.  (Contributed by Thierry Arnoux,
-       4-Jan-2018.) $)
+    $( In a uniform structure, for any entourage ` V ` , there exists a smaller
+       symmetrical entourage.  (Contributed by Thierry Arnoux, 4-Jan-2018.) $)
     ustexsym $p |- ( ( U e. ( UnifOn ` X ) /\ V e. U )
       -> E. w e. U ( `' w = w /\ w C_ V ) ) $=
       ( vx cust cfv wcel wa cv ccom wss ccnv wceq cin simplll ustinvel ad4ant13
@@ -336939,7 +336938,7 @@ $)
 
   ${
     $d v w U $.  $d v w V $.  $d v w X $.
-    $( In an uniform structure, for any entourage ` V ` , there exists a
+    $( In a uniform structure, for any entourage ` V ` , there exists a
        symmetrical entourage smaller than half ` V ` .  (Contributed by Thierry
        Arnoux, 16-Jan-2018.) $)
     ustex2sym $p |- ( ( U e. ( UnifOn ` X ) /\ V e. U )
@@ -336953,7 +336952,7 @@ $)
 
   ${
     $d v w U $.  $d v w V $.  $d v w X $.
-    $( In an uniform structure, for any entourage ` V ` , there exists a
+    $( In a uniform structure, for any entourage ` V ` , there exists a
        symmetrical entourage smaller than a third of ` V ` .  (Contributed by
        Thierry Arnoux, 16-Jan-2018.) $)
     ustex3sym $p |- ( ( U e. ( UnifOn ` X ) /\ V e. U )
@@ -337001,7 +337000,7 @@ $)
 
   ${
     $d u v w x $.
-    $( The empty set is not an uniform structure.  (Contributed by Thierry
+    $( The empty set is not a uniform structure.  (Contributed by Thierry
        Arnoux, 3-Dec-2017.) $)
     ustn0 $p |- -. (/) e. U. ran UnifOn $=
       ( vx vu vv vw c0 cust wcel cv cab mtbir cpw wss wral wrex w3a wceq ss2abi
@@ -337081,7 +337080,7 @@ $)
   ${
     $d x U $.  $d x X $.
     ustbas.1 $e |- X = dom U. U $.
-    $( Recover the base of an uniform structure ` U ` . ` U. ran UnifOn ` is to
+    $( Recover the base of a uniform structure ` U ` . ` U. ran UnifOn ` is to
        ` UnifOn ` what ` Top ` is to ` TopOn ` .  (Contributed by Thierry
        Arnoux, 16-Nov-2017.) $)
     ustbas $p |- ( U e. U. ran UnifOn <-> U e. ( UnifOn ` X ) ) $=
@@ -337161,7 +337160,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-  The topology induced by an uniform structure
+  The topology induced by a uniform structure
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -337196,7 +337195,7 @@ $)
 
   ${
     $d a v x A $.  $d a v x U $.  $d a x X $.
-    $( Open sets in the topology induced by an uniform structure ` U ` on ` X `
+    $( Open sets in the topology induced by a uniform structure ` U ` on ` X `
        (Contributed by Thierry Arnoux, 30-Nov-2017.) $)
     elutop $p |- ( U e. ( UnifOn ` X ) -> ( A e. ( unifTop ` U ) <->
       ( A C_ X /\ A. x e. A E. v e. U ( v " { x } ) C_ A ) ) ) $=
@@ -337260,7 +337259,7 @@ $)
 
   ${
     $d a b u v x A $.  $d a b u v x U $.  $d a b u x X $.
-    $( Restriction of a topology induced by an uniform structure.  (Contributed
+    $( Restriction of a topology induced by a uniform structure.  (Contributed
        by Thierry Arnoux, 12-Dec-2017.) $)
     restutop $p |- ( ( U e. ( UnifOn ` X ) /\ A C_ X ) ->
       ( ( unifTop ` U ) |`t A ) C_ ( unifTop ` ( U |`t ( A X. A ) ) ) ) $=
@@ -337285,7 +337284,7 @@ $)
 
   ${
     $d a b t u w x A $.  $d a b t u v w x U $.  $d b t u w x X $.
-    $( The restriction of the topology induced by an uniform structure to an
+    $( The restriction of the topology induced by a uniform structure to an
        open set.  (Contributed by Thierry Arnoux, 16-Dec-2017.) $)
     restutopopn $p |- ( ( U e. ( UnifOn ` X ) /\ A e. ( unifTop ` U ) )
       -> ( ( unifTop ` U ) |`t A ) = ( unifTop ` ( U |`t ( A X. A ) ) ) ) $=
@@ -337604,7 +337603,7 @@ $)
 $(
     @{
       utop2cls.1 @e |- S = { w e. U | `' w = w } @.
-      @( Topological closure of a relation in an uniform space.  Proposition 2
+      @( Topological closure of a relation in a uniform space.  Proposition 2
          of [BourbakiTop1] p.  II.4. @)
       utop2cls @p |- ( ( U e. ( UnifOn ` X ) /\ ( V e. U /\ `' V = V )
           /\ M C_ ( X X. X ) )
@@ -337618,13 +337617,13 @@ $(
         /\ A C_ X ) -> ( V " A ) e. ( ( nei ` J ) ` A ) ) @=
       ? @.
 
-    @( Topological closure in an uniform space.  Corollary 1 of [BourbakiTop1]
+    @( Topological closure in a uniform space.  Corollary 1 of [BourbakiTop1]
        p.  II.5. @)
     utopcls @p |- ( ( U e. ( UnifOn ` X ) /\ A C_ X )
         -> ( ( cls ` J ) ` A ) = |^|_ v e. U ( v " A ) ) @=
       ? @.
 
-    @( Condition for the topology induced by an uniform structure to be
+    @( Condition for the topology induced by a uniform structure to be
        Hausdorff. @)
     utophaus @p |- ( U e. ( UnifOn ` X ) -> ( J e. Haus <->
       |^| U = ( _I |` X ) ) ) @=
@@ -337698,7 +337697,7 @@ $)
   df-uss $a |- UnifSt = ( f e. _V |->
     ( ( UnifSet ` f ) |`t ( ( Base ` f ) X. ( Base ` f ) ) ) ) $.
 
-  $( Definition of a uniform space, i.e. a base set with an uniform structure
+  $( Definition of a uniform space, i.e. a base set with a uniform structure
      and its induced topology.  Derived from definition 3 of [BourbakiTop1] p.
      II.4.  (Contributed by Thierry Arnoux, 17-Nov-2017.) $)
   df-usp $a |- UnifSp = { f | (
@@ -337854,8 +337853,8 @@ $)
         ZBAJHZCKHZFRDCLHMACNHMSTMACDEOPQ $.
     $}
 
-    $( A constructed uniform space is an uniform space.  (Contributed by
-       Thierry Arnoux, 5-Dec-2017.) $)
+    $( A constructed uniform space is a uniform space.  (Contributed by Thierry
+       Arnoux, 5-Dec-2017.) $)
     tususp $p |- ( U e. ( UnifOn ` X ) -> K e. UnifSp ) $=
       ( cust cfv wcel cuss cbs ctopn cutop wceq id tususs tusbas fveq2d 3eltr3d
       cusp cunif eqid tusunif tuslem simp3d eqtr3d 3eqtr3d isusp sylanbrc ) ACE
@@ -338237,7 +338236,7 @@ $)
     fmucnd.3 $e |- ( ph -> F e. ( U uCn V ) ) $.
     fmucnd.4 $e |- ( ph -> C e. ( CauFilU ` U ) ) $.
     fmucnd.5 $e |- D = ran ( a e. C |-> ( F " a ) ) $.
-    $( The image of a Cauchy filter base by an uniformly continuous function is
+    $( The image of a Cauchy filter base by a uniformly continuous function is
        a Cauchy filter base.  Deduction form.  Proposition 3 of [BourbakiTop1]
        p.  II.13.  (Contributed by Thierry Arnoux, 18-Nov-2017.) $)
     fmucnd $p |- ( ph -> D e. ( CauFilU ` V ) ) $=
@@ -338329,7 +338328,7 @@ $)
     neipcfilu.x $e |- X = ( Base ` W ) $.
     neipcfilu.j $e |- J = ( TopOpen ` W ) $.
     neipcfilu.u $e |- U = ( UnifSt ` W ) $.
-    $( In an uniform space, a neighboring filter is a Cauchy filter base.
+    $( In a uniform space, a neighboring filter is a Cauchy filter base.
        (Contributed by Thierry Arnoux, 24-Jan-2018.) $)
     neipcfilu $p |- ( ( W e. UnifSp /\ W e. TopSp /\ P e. X )
       -> ( ( nei ` J ) ` { P } ) e. ( CauFilU ` U ) ) $=
@@ -338363,7 +338362,7 @@ $)
   $(
     cvgfcfilu.j @e |- J = ( TopOpen ` W ) @.
     cvgfcfilu.u @e |- U = ( UnifSt ` W ) @.
-    @( In an uniform space, all convergent filters are Cauchy filters bases.
+    @( In a uniform space, all convergent filters are Cauchy filters bases.
        Proposition 2 of [BourbakiTop1] p.  II.13.  (Contributed by Thierry
        Arnoux, 18-Nov-2017.) @)
     cvgfcfilu @p |- ( ( W e. UnifSp /\ W e. TopSp /\ A e. ( J fLim F ) )
@@ -338406,7 +338405,7 @@ $)
       FZQCASRUKAUIZUQVDBURVEUKAPOTVFUMUTUPVCVFULUSUJUKAGETUAVFUOVBLVFUNVAUJJUKA
       IUBUCUDUEUFCBUGUH $.
 
-    $( A complete uniform space is an uniform space.  (Contributed by Thierry
+    $( A complete uniform space is a uniform space.  (Contributed by Thierry
        Arnoux, 3-Dec-2017.) $)
     cuspusp $p |- ( W e. CUnifSp -> W e. UnifSp ) $=
       ( vc ccusp wcel cusp cv cuss cfv ccfilu ctopn cflim co c0 wne wi cbs cfil
@@ -338502,7 +338501,7 @@ $)
     ucnextcn.f $e |- ( ph -> F e. ( T uCn U ) ) $.
     ucnextcn.c $e |- ( ph -> ( ( cls ` J ) ` A ) = X ) $.
     $( Extension by continuity.  Theorem 2 of [BourbakiTop1] p.  II.20.  Given
-       an uniform space on a set ` X ` , a subset ` A ` dense in ` X ` , and a
+       a uniform space on a set ` X ` , a subset ` A ` dense in ` X ` , and a
        function ` F ` uniformly continuous from ` A ` to ` Y ` , that function
        can be extended by continuity to the whole ` X ` , and its extension is
        uniformly continuous.  (Contributed by Thierry Arnoux, 25-Jan-2018.) $)
