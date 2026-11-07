@@ -182791,6 +182791,34 @@ $)
   $}
 
   ${
+    $d F x $.  $d F y $.  $d F z $.  $d G x $.  $d G z $.  $d I x $.  $d I y $.
+    $d I z $.  $d X x $.  $d X y $.  $d X z $.  $d ph x $.
+    psrbagleadd1fi.s $e |- S = { y e. ( NN0 ^m I ) | y oR <_ F } $.
+    psrbagleadd1fi.t $e |- T = { z e. ( NN0 ^m I ) | z oR <_ ( F oF + G ) } $.
+    psrbagleadd1fi.f $e |- ( ph -> F e. ( NN0 ^m I ) ) $.
+    psrbagleadd1fi.g $e |- ( ph -> G e. ( NN0 ^m I ) ) $.
+    psrbagleadd1fi.x $e |- ( ph -> X e. S ) $.
+    psrbagleadd1fi.i $e |- ( ph -> I e. Fin ) $.
+    $( The analogue of " ` X <_ F ` implies ` X + G <_ F + G ` " (compare
+       ~ leadd1d ) for bags.  (Contributed by SN, 2-May-2025.)  (Revised by Jim
+       Kingdon, 6-Nov-2026.) $)
+    psrbagleadd1fi $p |- ( ph -> ( X oF + G ) e. T ) $=
+      ( vx cn0 wcel cfn syl caddc cof co cmap cle cofr wbr elrabi psrbagaddclfi
+      cv crab eleq2s syl3anc cfv wral wa elmapi ffvelcdmda nn0red breq1 simprbi
+      wf elrab2 wfn ffnd inidm eqidd ofrfval mpbid r19.21bi ralrimiva nn0addcld
+      leadd1dd ofvalg mpbird sylanbrc ) AIGUAUBZUCZQHUDUCZRZVRFGVQUCZUEUFZUGZVR
+      ERAIVSRZGVSRZHSRZVTAIDRZWDNWDIBUJZFWBUGZBVSUKDWIBIVSUHJULTZMOIGHUIUMZAWCP
+      UJZIUNZWLGUNZUAUCZWLFUNZWNUAUCZUEUGZPHUOAWRPHAWLHRUPZWMWPWNWSWMAHQWLIAWDH
+      QIVBWJIQHUQZTURZUSWSWPAHQWLFAFVSRZHQFVBLFQHUQTZURZUSWSWNAHQWLGAWEHQGVBMGQ
+      HUQTZURZUSAWMWPUEUGZPHAIFWBUGZXGPHUOAWGXHNWGWDXHWIXHBIVSDWHIFWBUTJVCVATAP
+      HHWMWPUEHIFSSAWDIHVDWJWDHQIWTVETZAHQFXCVEZOOHVFZWSWMVGZWSWPVGZVHVIVJVMVKA
+      PHHWOWQUEHVRWASSAHQVRAVTHQVRVBWKVRQHUQTVEAHQWAAWAVSRZHQWAVBAXBWEWFXNLMOFG
+      HUIUMWAQHUQTVEOOXKAHHWMWNUAHQIGSSWLXIAHQGXEVEZOOXKXLWSWNVGZWSWMWNXAXFVLVN
+      AHHWPWNUAHQFGSSWLXJXOOOXKXMXPWSWPWNXDXFVLVNVHVOCUJZWAWBUGWCCVRVSEXQVRWAWB
+      UTKVCVP $.
+  $}
+
+  ${
     $d D p q x y $.  $d D r x y $.  $d F p q x y z $.  $d F r x y z $.
     $d I f $.  $d I p q x y z $.  $d I r x y z $.
     $( There are finitely many bags dominated by a given bag.  (Contributed by
