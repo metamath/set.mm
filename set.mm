@@ -875891,7 +875891,7 @@ $)
        the conventional form used in set.mm, using the definition given by
        ~ df-tanh .  (Contributed by David A. Wheeler, 10-May-2015.)  (Revised
        by Jon Pennant, 22-Oct-2026.) $)
-    tanhval-conventional $p |- ( ( A e. CC /\ ( cosh ` A ) =/= 0 ) ->
+    tanhvaltan $p |- ( ( A e. CC /\ ( cosh ` A ) =/= 0 ) ->
                           ( tanh ` A ) = ( ( tan ` ( _i x. A ) ) / _i ) ) $=
       ( cc wcel ccosh cfv cc0 wne wa ctanh ci cmul co csin ccos cdiv ctan csinh
       wceq adantr a1i sinhval-named coshval-named oveq12d tanhval ax-icn mulcld
