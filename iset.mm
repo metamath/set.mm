@@ -182819,6 +182819,29 @@ $)
   $}
 
   ${
+    $d A x $.  $d B x $.  $d C x $.  $d D x $.  $d I x $.  $d ph x $.
+    ofrle2add.a $e |- ( ph -> A : I --> RR ) $.
+    ofrle2add.b $e |- ( ph -> B : I --> RR ) $.
+    ofrle2add.c $e |- ( ph -> C : I --> RR ) $.
+    ofrle2add.d $e |- ( ph -> D : I --> RR ) $.
+    ofrle2add.i $e |- ( ph -> I e. V ) $.
+    ofrle2add.ac $e |- ( ph -> A oR <_ C ) $.
+    ofrle2add.bd $e |- ( ph -> B oR <_ D ) $.
+    $( Adding both sides of two 'less than or equal to' relations.  Applying
+       ~ le2add to functions, pointwise.  (Contributed by Jim Kingdon,
+       7-Nov-2026.) $)
+    ofrle2add $p |- ( ph -> ( A oF + B ) oR <_ ( C oF + D ) ) $=
+      ( vx caddc co cle wbr cr cof cofr cv cfv wral wcel ffvelcdmda inidm eqidd
+      wa ffnd ofrfval mpbid r19.21bi le2addd ralrimiva readdcld offval ofrfval2
+      mpbird ) ABCPUAZQZDEVAQZRUBZSOUCZBUDZVECUDZPQZVEDUDZVEEUDZPQZRSZOFUEAVLOF
+      AVEFUFUJZVFVGVIVJAFTVEBHUGZAFTVECIUGZAFTVEDJUGZAFTVEEKUGZAVFVIRSZOFABDVDS
+      VROFUEMAOFFVFVIRFBDGGAFTBHUKZAFTDJUKZLLFUHZVMVFUIZVMVIUIZULUMUNAVGVJRSZOF
+      ACEVDSWDOFUENAOFFVGVJRFCEGGAFTCIUKZAFTEKUKZLLWAVMVGUIZVMVJUIZULUMUNUOUPAO
+      FVHVKRVBVCGTTLVMVFVGVNVOUQVMVIVJVPVQUQAOFFVFVGPFBCGGVSWELLWAWBWGURAOFFVIV
+      JPFDEGGVTWFLLWAWCWHURUSUT $.
+  $}
+
+  ${
     $d D p q x y $.  $d D r x y $.  $d F p q x y z $.  $d F r x y z $.
     $d I f $.  $d I p q x y z $.  $d I r x y z $.
     $( There are finitely many bags dominated by a given bag.  (Contributed by
