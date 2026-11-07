@@ -337603,7 +337603,7 @@ $)
 $(
     @{
       utop2cls.1 @e |- S = { w e. U | `' w = w } @.
-      @( Topological closure of a relation in an uniform space.  Proposition 2
+      @( Topological closure of a relation in a uniform space.  Proposition 2
          of [BourbakiTop1] p.  II.4. @)
       utop2cls @p |- ( ( U e. ( UnifOn ` X ) /\ ( V e. U /\ `' V = V )
           /\ M C_ ( X X. X ) )
@@ -337617,13 +337617,13 @@ $(
         /\ A C_ X ) -> ( V " A ) e. ( ( nei ` J ) ` A ) ) @=
       ? @.
 
-    @( Topological closure in an uniform space.  Corollary 1 of [BourbakiTop1]
+    @( Topological closure in a uniform space.  Corollary 1 of [BourbakiTop1]
        p.  II.5. @)
     utopcls @p |- ( ( U e. ( UnifOn ` X ) /\ A C_ X )
         -> ( ( cls ` J ) ` A ) = |^|_ v e. U ( v " A ) ) @=
       ? @.
 
-    @( Condition for the topology induced by an uniform structure to be
+    @( Condition for the topology induced by a uniform structure to be
        Hausdorff. @)
     utophaus @p |- ( U e. ( UnifOn ` X ) -> ( J e. Haus <->
       |^| U = ( _I |` X ) ) ) @=
