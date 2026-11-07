@@ -182693,9 +182693,11 @@ $)
     ${
       $d D p q x y $.  $d D r x y $.  $d F f $.  $d F p q x y z $.
       $d F r x y z $.  $d G f $.  $d I f $.  $d I p q x y z $.  $d I r x y z $.
-      $( There are finitely many bags dominated by a given bag.  (Contributed
-         by Mario Carneiro, 29-Dec-2014.)  (Revised by Mario Carneiro,
-         25-Jan-2015.)  (Revised by Jim Kingdon, 28-Jul-2026.) $)
+      $( There are finitely many bags dominated by a given bag.  If you'd like
+         to write the set of finite bags as ` ( NN0 ^m I ) ` see
+         ~ psrbaglefimap .  (Contributed by Mario Carneiro, 29-Dec-2014.)
+         (Revised by Mario Carneiro, 25-Jan-2015.)  (Revised by Jim Kingdon,
+         28-Jul-2026.) $)
       psrbaglefifi $p |- ( ( F e. D /\ I e. Fin )
           -> { y e. D | y oR <_ F } e. Fin ) $=
         ( wcel cfn wa cv cfv cle wbr cz cn0 a1i elmapd cc0 ad2antrr adantr wral
@@ -182786,6 +182788,42 @@ $)
       wb ) AFCGHZTZBULTZCITZJZABKLHZULTZCFUQMZUPDECCCKFFFABIIDNZFTENZFTOUTVAKHF
       TUPUTVAPQUMUNCFAMUOAFCRUAUNUMCFBMUOBFCRUBUMUNUOUCZVBCUDUEUOUMURUSUKZUNFST
       UOVCUFFCUQSIUGUHUIUJ $.
+  $}
+
+  ${
+    $d D p q x y $.  $d D r x y $.  $d F p q x y z $.  $d F r x y z $.
+    $d I f $.  $d I p q x y z $.  $d I r x y z $.
+    $( There are finitely many bags dominated by a given bag.  (Contributed by
+       Mario Carneiro, 29-Dec-2014.)  (Revised by Mario Carneiro, 25-Jan-2015.)
+       (Revised by Jim Kingdon, 5-Nov-2026.) $)
+    psrbaglefimap $p |- ( ( F e. ( NN0 ^m I ) /\ I e. Fin )
+        -> { y e. ( NN0 ^m I ) | y oR <_ F } e. Fin ) $=
+      ( vx vz vq vr cn0 wcel cfn wa cv cfv cle wbr cz adantr a1i cc0 ad2antrr
+      vp cmap co wral cofr crab wf elmapi wss nn0ssz fssd simpr fiidxsupcl wceq
+      fveq2 breq1d cbvralv anbi2i cfz adantl fz0ssnn0 cvv simp-4r elmapd mpbird
+      nn0ex wfn crn ffnd wrex fvelrnb syl biimpa 0zd simprl ad4antr frnd sselda
+      wb nn0zd nn0ge0d zred ad5antr ffvelcdmd nn0red inidm simplrr eqidd ofrval
+      mpd3an23 simprr rspcdva letrd elfzd rexlimddv ssrdv df-f sylanbrc impbida
+      ex fzfigd pm5.32rd rabbidva2 mapfi syl2anc wdc ffvelcdmda zdcle ralrimiva
+      ofrfidc ssfirab eqeltrrd sylan2b ) BHCUBUCZIZCJIZKZALZBMZDLZNOZACUDZXRBNU
+      EOZAXNUFZJIZDPXQDACBXQCHPBXOCHBUGZXPBHCUHZQZHPUIXQUJRUKXOXPULZUMXTPIZYBKX
+      QYJELZBMZXTNOZECUDZKZYEYBYNYJYAYMAECXRYKUNXSYLXTNXRYKBUOUPUQURXQYOKZYCASX
+      TUSUCZCUBUCZUFYDJYPYCYCAYRXNYPYCXRYRIZXRXNIZYPYCYSYTVSYPYCKZYSYTUUAYSKZYT
+      CHXRUGZUUBCYQHXRYSCYQXRUGZUUAXRYQCUHZUTYQHUIZUUBXTVAZRUKUUBHCXRVBJHVBIUUB
+      VFRXOXPYOYCYSVCVDVEUUAYTKZYSUUDUUHXRCVGZXRVHZYQUIUUDUUHCHXRYTUUCUUAXRHCUH
+      UTZVIZUUHUAUUJYQUUHUALZUUJIZUUMYQIZUUHUUNKZFLZXRMUUMUNZUUOFCUUHUUNUURFCVJ
+      ZUUHUUIUUNUUSVSUULFCUUMXRVKVLVMUUPUUQCIZUURKZKZUUMSXTUVBVNYPYJYCYTUUNUVAX
+      QYJYNVOZVPZUUPUUMPIUVAUUPUUMUUHUUJHUUMUUHCHXRUUKVQVRZVTQZUUPSUUMNOUVAUUPU
+      UMUVEWAQUVBUUMUUQBMZXTUVBUUMUVFWBUVBUVGUVBCHUUQBXQYFYOYCYTUUNUVAYHWCUUPUU
+      TUURVOZWDWEUVBXTUVDWBUVBYCUUTUUMUVGNOYPYCYTUUNUVAVCUVHUVBCCUUMUVGNCXRBJJU
+      UQUUHUUIUUNUVAUULTXQBCVGZYOYCYTUUNUVAXQCHBYHVIZWCXQXPYOYCYTUUNUVAYIWCZUVK
+      CWFUUPUUTUURUUTWGUVBUUTKUVGWHWIWJUVBYMUVGXTNOECUUQYKUUQUNYLUVGXTNYKUUQBUO
+      UPYPYNYCYTUUNUVAXQYJYNWKVPUVHWLWMWNWOWTWPCYQXRWQWRUUHYQCXRJJYPYQJIZYCYTYP
+      SXTYPVNUVCXAZTXOXPYOYCYTVCVDVEWSWTXBXCYPYCAYRYPUVLXPYRJIUVMXQXPYOYIQYQCXD
+      XEYPYCXFAYRYPYSKZGCNXRBUVNCYQXRYSUUDYPUUEUTZVIXQUVIYOYSUVJTUVNGLZXRMZUVPB
+      MZNOXFZGCUVNUVPCIZKZUVQPIUVRPIUVSUWAUVQUVNCHUVPXRUVNCYQHXRUVOUUFUVNUUGRUK
+      XGVTUWAUVRUWACHUVPBXOYFXPYOYSUVTYGVPUVNUVTULWDVTUVQUVRXHXEXIXQXPYOYSYITXJ
+      XIXKXLXMWO $.
   $}
 
   ${
