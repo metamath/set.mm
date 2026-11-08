@@ -519,7 +519,7 @@
 "4syl" is used by "qusrn".
 "4syl" is used by "ranrcl".
 "4syl" is used by "relogbf".
-"4syl" is used by "relopabi".
+"4syl" is used by "relopabiOLD".
 "4syl" is used by "ressply1invg".
 "4syl" is used by "ressply1sub".
 "4syl" is used by "restmetu".
@@ -12486,7 +12486,6 @@
 "psubspi2N" is used by "pclfinN".
 "psubspi2N" is used by "pclfinclN".
 "qexALT" is used by "reexALT".
-"r1omfi" is used by "fineqvr1ombregs".
 "ralimd4vOLD" is used by "ralimd6vOLD".
 "ralimdvvOLD" is used by "ralimd4vOLD".
 "ralimdvvOLD" is used by "ralimd6vOLD".
@@ -12602,6 +12601,7 @@
 "reglogmul" is used by "pellfund14".
 "relcnvtrgOLD" is used by "relcnvtrOLD".
 "relop" is used by "funopg".
+"relopabiv" is used by "relopabvOLD".
 "relrngo" is used by "iscrngo2".
 "relrngo" is used by "isdrngo1".
 "relrngo" is used by "isrngo".
@@ -15805,6 +15805,7 @@ New usage of "cnvcnvssOLD" is discouraged (0 uses).
 New usage of "cnvfiALT" is discouraged (0 uses).
 New usage of "cnvimarndmOLD" is discouraged (0 uses).
 New usage of "cnvimassrndmOLD" is discouraged (0 uses).
+New usage of "cnvresidOLD" is discouraged (0 uses).
 New usage of "cnvunop" is discouraged (2 uses).
 New usage of "cnvxpOLD" is discouraged (0 uses).
 New usage of "coassOLD" is discouraged (0 uses).
@@ -16454,7 +16455,6 @@ New usage of "ee333" is discouraged (2 uses).
 New usage of "ee33VD" is discouraged (0 uses).
 New usage of "ee33an" is discouraged (3 uses).
 New usage of "ee3bir" is discouraged (0 uses).
-New usage of "ee4anvOLD" is discouraged (0 uses).
 New usage of "ee7.2aOLD" is discouraged (0 uses).
 New usage of "eel000cT" is discouraged (0 uses).
 New usage of "eel00cT" is discouraged (0 uses).
@@ -18739,7 +18739,6 @@ New usage of "quantgodelALT" is discouraged (0 uses).
 New usage of "quoremnn0ALT" is discouraged (0 uses).
 New usage of "r19.3rzvOLD" is discouraged (0 uses).
 New usage of "r1funlimOLD" is discouraged (0 uses).
-New usage of "r1omfi" is discouraged (1 uses).
 New usage of "r1pwALT" is discouraged (0 uses).
 New usage of "rab0OLD" is discouraged (0 uses).
 New usage of "rabss2OLD" is discouraged (0 uses).
@@ -18804,6 +18803,9 @@ New usage of "reldmxpcALT" is discouraged (0 uses).
 New usage of "relop" is discouraged (1 uses).
 New usage of "relopabVD" is discouraged (0 uses).
 New usage of "relopabiALT" is discouraged (0 uses).
+New usage of "relopabiOLD" is discouraged (0 uses).
+New usage of "relopabiv" is discouraged (1 uses).
+New usage of "relopabvOLD" is discouraged (0 uses).
 New usage of "relresOLD" is discouraged (0 uses).
 New usage of "relresfldOLD" is discouraged (0 uses).
 New usage of "relrngo" is discouraged (6 uses).
@@ -20063,6 +20065,7 @@ Proof modification of "cnvcnvssOLD" is discouraged (15 steps).
 Proof modification of "cnvfiALT" is discouraged (46 steps).
 Proof modification of "cnvimarndmOLD" is discouraged (24 steps).
 Proof modification of "cnvimassrndmOLD" is discouraged (75 steps).
+Proof modification of "cnvresidOLD" is discouraged (46 steps).
 Proof modification of "cnvxpOLD" is discouraged (59 steps).
 Proof modification of "coassOLD" is discouraged (181 steps).
 Proof modification of "com3rgbi" is discouraged (35 steps).
@@ -20295,7 +20298,6 @@ Proof modification of "ee333" is discouraged (33 steps).
 Proof modification of "ee33VD" is discouraged (68 steps).
 Proof modification of "ee33an" is discouraged (14 steps).
 Proof modification of "ee3bir" is discouraged (11 steps).
-Proof modification of "ee4anvOLD" is discouraged (60 steps).
 Proof modification of "ee7.2aOLD" is discouraged (134 steps).
 Proof modification of "eel000cT" is discouraged (19 steps).
 Proof modification of "eel00cT" is discouraged (13 steps).
@@ -21054,7 +21056,6 @@ Proof modification of "quantgodelALT" is discouraged (71 steps).
 Proof modification of "quoremnn0ALT" is discouraged (360 steps).
 Proof modification of "r19.3rzvOLD" is discouraged (7 steps).
 Proof modification of "r1funlimOLD" is discouraged (47 steps).
-Proof modification of "r1omfi" is discouraged (25 steps).
 Proof modification of "r1pwALT" is discouraged (151 steps).
 Proof modification of "rab0OLD" is discouraged (33 steps).
 Proof modification of "rabss2OLD" is discouraged (66 steps).
@@ -21099,6 +21100,9 @@ Proof modification of "reldmOLD" is discouraged (102 steps).
 Proof modification of "reldmxpcALT" is discouraged (143 steps).
 Proof modification of "relopabVD" is discouraged (354 steps).
 Proof modification of "relopabiALT" is discouraged (74 steps).
+Proof modification of "relopabiOLD" is discouraged (221 steps).
+Proof modification of "relopabiv" is discouraged (50 steps).
+Proof modification of "relopabvOLD" is discouraged (10 steps).
 Proof modification of "relresOLD" is discouraged (30 steps).
 Proof modification of "relresfldOLD" is discouraged (117 steps).
 Proof modification of "relrngo" is discouraged (96 steps).
