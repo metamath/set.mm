@@ -72110,7 +72110,7 @@ $)
   $}
 
   ${
-    $d F x $.  $d A x $.
+    $d F x $.  $d A x $.  $d B x $.
     $( A function is constant iff its range is a subset of a singleton.
        (Contributed by Scott Fenton, 7-Nov-2026.) $)
     funrnsn $p |- ( Fun F ->
@@ -72121,14 +72121,12 @@ $)
 
     $( A function is constant iff it is a cross product of its domain with a
        singleton.  (Contributed by Scott Fenton, 8-Nov-2027.) $)
-    funconstxp $p |- ( ( A e. V /\ Fun F ) ->
-    ( F = ( dom F X. { A } ) <-> A. x e. dom F ( F ` x ) = A ) ) $=
-      ( wcel wfun wa cdm csn cxp wceq cv cfv wral wb fnconstg fnfund syl adantr
-      cvv eqfunfv ancoms sylan wne snnzg dmxp eqcomd biantrurd fvconst2g eqeq2d
-      c0 elex ralbidva 3bitr2d ) BDEZCFZGZCCHZBIZJZKZURUTHZKZALZCMZVDUTMZKZAURN
-      ZGZVHVEBKZAURNZUOUTFZUPVAVIOZUOURUTURBDPQUPVLVMACUTUAUBUCUQVCVHUOVCUPUOVB
-      URUOUSUKUDVBURKBDUEURUSUFRUGSUHUOVHVKOZUPUOBTEZVNBDULVOVGVJAURVOVDUREGVFB
-      VEURBVDTUIUJUMRSUN $.
+    fnconstxp $p |- ( ( B e. V /\ F Fn A ) ->
+    ( F = ( A X. { B } ) <-> A. x e. A ( F ` x ) = B ) ) $=
+      ( wcel wfn wa csn cxp wceq cv cfv wral fnconstg eqfnfv sylan2 ancoms cvv
+      wb elex fvconst2g eqeq2d ralbidva syl adantr bitrd ) CEFZDBGZHDBCIJZKZALZ
+      DMZULUJMZKZABNZUMCKZABNZUIUHUKUPTZUHUIUJBGUSBCEOABDUJPQRUHUPURTZUIUHCSFZU
+      TCEUAVAUOUQABVAULBFHUNCUMBCULSUBUCUDUEUFUG $.
   $}
 
 $(
