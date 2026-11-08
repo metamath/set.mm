@@ -35760,11 +35760,11 @@ $)
        Originally a subproof in ~ pwnss .  (Contributed by Stefan O'Rear,
        22-Feb-2015.)  Avoid ~ df-nel .  (Revised by Steven Nguyen,
        23-Nov-2022.)  Reduce axiom usage.  (Revised by GG, 30-Aug-2024.) $)
-    rru $p |- -. { x e. A | -. x e. x } e. A $=
+    rur $p |- -. { x e. A | -. x e. x } e. A $=
       ( vy wel wn crab wcel wa wb cv eleq12 anidms notbid cbvrabv elrab2 pclem6
       wceq weq ax-mp ) AADZEZABFZUBGZUBBGZUCEZHIUDECCDZEZUECUBBUBCJZUBQZUFUCUIU
       FUCIUHUBUHUBKLMUAUGACBACRZTUFUJTUFIAJZUHUKUHKLMNOUCUDPS $.
-    $( $j usage 'rru' avoids 'df-nel' 'ax-10' 'ax-11' 'ax-12'; $)
+    $( $j usage 'rur' avoids 'df-nel' 'ax-10' 'ax-11' 'ax-12'; $)
   $}
 
   ${
@@ -50789,7 +50789,7 @@ $)
     $( The power set of a set is never a subset.  (Contributed by Stefan
        O'Rear, 22-Feb-2015.)  (Proof shortened by BJ, 24-Jul-2025.) $)
     pwnss $p |- ( A e. V -> -. ~P A C_ A ) $=
-      ( vx cpw wss wel wn crab wcel rru ssel mtoi rabelpw nsyl3 ) ADZAEZCCFGZCA
+      ( vx cpw wss wel wn crab wcel rur ssel mtoi rabelpw nsyl3 ) ADZAEZCCFGZCA
       HZOIZABIPSRAICAJOARKLQCABMN $.
   $}
 
