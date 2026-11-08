@@ -426454,46 +426454,6 @@ $)
       JKLMINDEBCOP $.
   $}
 
-  $( Lemma for ~ nobtwnoz .  (Contributed by Scott Fenton, 16-May-2026.) $)
-  nobtwnozlem1 $p |- ( ( A e. No /\ ( B e. Oz /\ C e. Oz ) /\
-     ( B <_s A /\ A <s ( C +s 1s ) ) ) -> B <_s C ) $=
-    ( csur wcel coz wa cles wbr c1s cadds clts w3a simp2l ozno syl simp1 simp2r
-    co 1oz ozaddcl sylancl oznod simp3l simp3r leltstrd ozleltp1d mpbird ) ADEZ
-    BFEZCFEZGZBAHIZACJKSZLIZGZMZBCHIBUNLIUQBAUNUQUJBDEUIUJUKUPNZBOPUIULUPQUQUNU
-    QUKJFEUNFEUIUJUKUPRZTCJUAUBUCUIULUMUOUDUIULUMUOUEUFUQBCURUSUGUH $.
-
-  ${
-    $( Lemma for ~ nobtwnoz .  (Contributed by Scott Fenton, 16-May-2026.) $)
-    nobtwnozlem2 $p |- ( A e. No ->
-     E. x e. Oz ( A <_s x /\ x <s ( A +s 1s ) ) ) $=
-      (  ) ? $.
-  $}
-
-  ${
-    $d A x y $.
-    $( There is a unique greatest omnific integer less-than or equal to a
-       surreal number.  (Contributed by Scott Fenton, 15-May-2026.) $)
-    nobtwnoz $p |- ( A e. No ->
-    E! x e. Oz ( x <_s A /\ A <s ( x +s 1s ) ) ) $=
-      ( vy csur wcel cv cles wbr c1s cadds co clts wa coz cnegs cfv oznod mpbid
-      wrex wceq weq wi wral wreu oznegcl ad2antlr simprl simpll negscld lenegsd
-      simplr negnegs syl breqtrd csubs oveq1d 1no sylancl a1i subsvald 3eqtr4rd
-      negsdi simprr addscld ltnegsd eqbrtrd breq1 oveq1 breq2d anbi12d syl12anc
-      ltsubaddsd nobtwnozlem2 r19.29a simplrl simplrr simprll simprrr syl122anc
-      rspcev nobtwnozlem1 simprrl simprlr lestri3d mpbir2and ex ralrimivva reu4
-      negscl sylanbrc ) BDEZAFZBGHZBWLIJKZLHZMZANSZWPCFZBGHZBWRIJKZLHZMZMZACUAZ
-      UBZCNUCANUCWPANUDWKBOPZWRGHZWRXFIJKZLHZMZWQCNWKWRNEZMZXJMZWROPZNEZXNBGHZB
-      XNIJKZLHZWQXKXOWKXJWRUEUFXMXNXFOPZBGXMXGXNXSGHXLXGXIUGXMXFWRXMBWKXKXJUHZU
-      IZXMWRWKXKXJUKQZUJRXMWKXSBTXTBULUMZUNXMBIUOKZXNLHXRXMYDXHOPZXNLXMXSIOPZJK
-      ZBYFJKYEYDXMXSBYFJYCUPXMXFDEZIDEZYEYGTYAUQXFIVBURXMBIXTYIXMUQUSZUTVAXMXIY
-      EXNLHXLXGXIVCXMWRXHYBXMXFIYAYJVDVERVFXMBIXNXTYJXMWRYBUIVLRWPXPXRMAXNNWLXN
-      TZWMXPWOXRWLXNBGVGYKWNXQBLWLXNIJVHVIVJVTVKWKYHXJCNSBWICXFVMUMVNWKXEACNNWK
-      WLNEZXKMZMZXCXDYNXCMZXDWLWRGHZWRWLGHZYOWKYLXKWMXAYPWKYMXCUHZWKYLXKXCVOZWK
-      YLXKXCVPZYNWMWOXBVQYNWPWSXAVRBWLWRWAVSYOWKXKYLWSWOYQYRYTYSYNWPWSXAWBYNWMW
-      OXBWCBWRWLWAVSYOWLWRYOWLYSQYOWRYTQWDWEWFWGWPXBACNXDWMWSWOXAWLWRBGVGXDWNWT
-      BLWLWRIJVHVIVJWHWJ $.
-  $}
-
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Surreal recursive sequences
