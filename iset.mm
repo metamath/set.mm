@@ -36471,6 +36471,20 @@ $)
       EUDCAQUBUDLCTMNOPRS $.
   $}
 
+  ${
+    $d A y $.  $d B y $.  $d ph x y $.
+    sn0disj.1 $e |- ( ( ph /\ x e. A ) -> ( B = (/) \/ B = { x } ) ) $.
+    $( A collection, each of whose elements is empty or a singleton of the
+       index, is disjoint.  (Contributed by Jim Kingdon, 8-Oct-2026.) $)
+    sn0disj $p |- ( ph -> Disj_ x e. A B ) $=
+      ( vy cv wcel wa wmo wdisj wceq wi c0 simplr simpr eleqtrd adantll alrimiv
+      wal csn wn a1i pm2.21dd velsn sylib equcomd wo adantrr mpjaodan ex mo2icl
+      noel syl dfdisj2 sylibr ) ABGZCHZFGZDHZIZBJZFTBCDKAVBFAVAUQUSLZMZBTVBAVDB
+      AVAVCAVAIDNLZVCDUQUAZLZVAVEVCAVAVEIZUSNHZVCVHUSDNURUTVEOVAVEPQVIUBVHUSUMU
+      CUDRVAVGVCAVAVGIZFBVJUSVFHUSUQLVJUSDVFURUTVGOVAVGPQFUQUEUFUGRAURVEVGUHUTE
+      UIUJUKSVABUSULUNSBFCDUOUP $.
+  $}
+
   $( Any collection of empty sets is disjoint.  (Contributed by Mario Carneiro,
      14-Nov-2016.) $)
   0disj $p |- Disj_ x e. A (/) $=
@@ -37279,6 +37293,16 @@ $)
        Carneiro, 11-Jun-2016.) $)
     mpteq1d $p |- ( ph -> ( x e. A |-> C ) = ( x e. B |-> C ) ) $=
       ( wceq cmpt mpteq1 syl ) ACDGBCEHBDEHGFBCDEIJ $.
+  $}
+
+  ${
+    mpteq1i.1 $e |- A = B $.
+    $( An equality theorem for the maps-to notation.  (Contributed by Glauco
+       Siliprandi, 17-Aug-2020.)  Remove all disjoint variable conditions.
+       (Revised by SN, 11-Nov-2024.) $)
+    mpteq1i $p |- ( x e. A |-> C ) = ( x e. B |-> C ) $=
+      ( cmpt wceq wtru a1i eqidd mpteq12dv mptru ) ABDFACDFGHABDCDBCGHEIHDJKL
+      $.
   $}
 
   ${
@@ -46149,6 +46173,14 @@ $)
      (Proof shortened by Andrew Salmon, 27-Aug-2011.) $)
   resexg $p |- ( A e. V -> ( A |` B ) e. _V ) $=
     ( cres wss wcel cvv resss ssexg mpan ) ABDZAEACFKGFABHKACIJ $.
+
+  ${
+    resexd.1 $e |- ( ph -> A e. V ) $.
+    $( The restriction of a set is a set.  (Contributed by Glauco Siliprandi,
+       23-Oct-2021.) $)
+    resexd $p |- ( ph -> ( A |` B ) e. _V ) $=
+      ( wcel cres cvv resexg syl ) ABDFBCGHFEBCDIJ $.
+  $}
 
   ${
     resex.1 $e |- A e. _V $.
@@ -58597,6 +58629,20 @@ $)
   $}
 
   ${
+    $d F f g x $.  $d G f g x $.  $d R f g x $.
+    $( Applying a function operation to two functions which are sets yields a
+       set.  (Contributed by Jim Kingdon, 9-Oct-2026.) $)
+    ofovex $p |- ( ( F e. V /\ G e. W ) -> ( F oF R G ) e. _V ) $=
+      ( vx vf vg wcel co cdm cin cv cfv cmpt cvv wceq elex adantr dmeq wa dmexg
+      cof adantl inex1g syl mptexd ineq1d oveq1d mpteq12dv ineq2d oveq2d ovmpog
+      fveq1 df-of syl3anc eqeltrd ) BDIZCEIZUAZBCAUCZJZFBKZCKZLZFMZBNZVFCNZAJZO
+      ZPUTBPIZCPIZVJPIVBVJQURVKUSBDRSUSVLURCERUDUTFVEVIPUTVCPIZVEPIURVMUSBDUBSV
+      CVDPUEUFUGZGHBCPPFGMZKZHMZKZLZVFVONZVFVQNZAJZOVJVAFVCVRLZVGWAAJZOPVOBQZFV
+      SWBWCWDWEVPVCVRVOBTUHWEVTVGWAAVFVOBUNUIUJVQCQZFWCWDVEVIWFVRVDVCVQCTUKWFWA
+      VHVGAVFVQCUNULUJFAGHUOUMUPVNUQ $.
+  $}
+
+  ${
     $d R u v w $.  $d u v w x $.
     nfof.1 $e |- F/_ x R $.
     $( Hypothesis builder for function operation.  (Contributed by Mario
@@ -61382,6 +61428,28 @@ $)
     co funforn foimacnv sylanb sylan9eq ex ) ACFBDFGAHBHZGGZUFAEITZBJZKZGZBABLE
     ITZMZUHNUGUKUMBBOUHMZMZUHUGULUNBABCDEPQUFBRZUIBSUJUOUHNBUAUPUIUHBUBUCUDUE
     $.
+
+  ${
+    $d F w x y $.  $d V w $.  $d W w $.  $d Z w y $.  $d A w $.  $d B x y $.
+    $d ph w $.
+    suppinisegdc.fun $e |- ( ph -> F : A --> B ) $.
+    suppinisegdc.f $e |- ( ph -> F e. V ) $.
+    suppinisegdc.z $e |- ( ph -> Z e. B ) $.
+    suppinisegdc.dc $e |- ( ph -> A. x e. B A. y e. B DECID x = y ) $.
+    $( Relation between the support ` ( F supp Z ) ` and the initial segment
+       ` ( ``' F " { Z } ) ` .  (Contributed by Thierry Arnoux, 25-Jun-2024.)
+       (Revised by Jim Kingdon, 18-Oct-2026.) $)
+    suppinisegdc $p |- ( ph -> ( A \ ( F supp Z ) ) = ( `' F " { Z } ) ) $=
+      ( vw cv wcel wa wceq wdc wb cvv csupp co cdif ccnv csn cima cfv eldif wne
+      wn eqeq2 dcbid wral eqeq1 ralbidv adantr ffvelcdmda rspcdva nnedc syl wfn
+      ffnd elsuppfng syl3anc baibd notbid fvexg sylancl 3bitr4d pm5.32da bitrid
+      vex elsng elpreima bitr4d eqrdv ) AMDFHUAUBZUCZFUDHUEZUFZAMNZVROZWADOZWAF
+      UGZVSOZPZWAVTOZWBWCWAVQOZUJZPAWFWADVQUHAWCWIWEAWCPZWDHUIZUJZWDHQZWIWEWJWM
+      RZWLWMSWJWDCNZQZRZWNCEHWOHQWPWMWOHWDUKULWJBNZWOQZRZCEUMZWQCEUMBEWDWRWDQZW
+      TWQCEXBWSWPWRWDWOUNULUOAXABEUMWCLUPADEWAFIUQURAHEOZWCKUPURWDHUSUTWJWHWKAW
+      HWCWKAFDVAZFGOZXCWHWCWKPSADEFIVBZJKWAFGEDHVCVDVEVFWJWDTOZWEWMSWJXEWATOXGA
+      XEWCJUPMVLWAFGTVGVHWDHTVMUTVIVJVKAXDWGWFSXFDWAVSFVNUTVOVP $.
+  $}
 
 
 $(
@@ -67607,6 +67675,17 @@ $)
   $}
 
   ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( Set exponentiation is inhabited if the base is inhabited.  (Contributed
+       by Jim Kingdon, 13-Oct-2026.) $)
+    mapm $p |- ( ( A e. V /\ B e. W /\ C e. A ) -> E. x x e. ( A ^m B ) ) $=
+      ( wcel w3a csn cxp cmap co cv wex wf fconstg 3ad2ant3 simp3 snssd fssd
+      simp1 simp2 elmapd mpbird elex2 syl ) BEGZCFGZDBGZHZCDIZJZBCKLZGZAMUMGANU
+      JUNCBULOUJCUKBULUIUGCUKULOUHCDBPQUJDBUGUHUIRSTUJBCULEFUGUHUIUAUGUHUIUBUCU
+      DAULUMUEUF $.
+  $}
+
+  ${
     $d A f y $.  $d B f y $.  $d f ph y $.
     mapsnd.1 $e |- ( ph -> A e. V ) $.
     mapsnd.2 $e |- ( ph -> B e. W ) $.
@@ -71642,6 +71721,26 @@ $)
       USUTVEVFVGVHVMVAVBVC $.
   $}
 
+  ${
+    $d B x y $.  $d E x y $.  $d ph x $.
+    relresfin.e $e |- ( ph -> E e. Fin ) $.
+    relresfin.r $e |- ( ph -> Rel E ) $.
+    relresfin.dm $e |- ( ph -> dom E e. Fin ) $.
+    relresfin.ss $e |- ( ph -> B C_ dom E ) $.
+    relresfin.b $e |- ( ph -> B e. Fin ) $.
+    $( Restricting to a subset of a finite relation's domain gives a finite
+       set.  (Contributed by Jim Kingdon, 6-Oct-2026.) $)
+    relresfin $p |- ( ph -> ( E |` B ) e. Fin ) $=
+      ( vx vy cfn wcel wss cv wdc wral wa cfv wceq cvv cres resss a1i cdm eleq1
+      c1st dcbid fissfi syl3anc adantr c2nd cop simpr 1st2nd sylan eleq1d mpbid
+      wrel 1stexg elv 2ndexg opeldm rspcdva biantrurd opelres bitr4di ralrimiva
+      syl bitr4d ssfidc ) ACKLCBUAZCMZINZVKLZOZICPVKKLDVLACBUBUCAVOICAVMCLZQZVM
+      UFRZBLZOZVOVQJNZBLZOZVTJCUDZVRWAVRSWBVSWAVRBUEUGAWCJWDPZVPABWDMWDKLBKLWEG
+      FHJWDBUHUIUJVQVRVMUKRZULZCLZVRWDLVQVPWHAVPUMVQVMWGCACURVPVMWGSEVMCUNUOZUP
+      UQZVRWFCVRTLIVMTUSUTWFTLIVMTVAUTZVBVHVCVQVSVNVQVSWGVKLZVNVQVSWHVSQWLVQWHV
+      SWJVDVRWFCBWKVEVFVQVMWGVKWIUPVIUGUQVGICVKVJUI $.
+  $}
+
   $( Any injection from one finite set to another of equal size must be a
      bijection.  (Contributed by Jeff Madsen, 5-Jun-2010.) $)
   f1finf1o $p |- ( ( A ~~ B /\ B e. Fin ) ->
@@ -71986,17 +72085,23 @@ $)
   cfsupp $a class finSupp $.
 
   ${
-    $d r z $.
+    $d r w z $.
     $( Define the property of a function to be finitely supported (in relation
-       to a given zero).  (Contributed by AV, 23-May-2019.) $)
-    df-fsupp $a |- finSupp
-                   = { <. r , z >. | ( Fun r /\ ( r supp z ) e. Fin ) } $.
+       to a given zero).  This definition will perhaps be most useful when the
+       domain of the function has decidable equality; consider as an
+       alternative ` ( R supp Z ) e. Fin ` (see ~ df-supp ) which will behave
+       well when a codomain of the function has decidable equality.  If both
+       domain and codomain have decidable equality, the two are equivalent as
+       seen at ~ funisfsuppdc .  (Contributed by AV, 23-May-2019.)  (Revised by
+       Jim Kingdon, 16-Oct-2026.) $)
+    df-fsuppfi $a |- finSupp = { <. r , z >. | ( Fun r /\
+      E. w ( w e. Fin /\ w C_ dom r /\ ( r " ( dom r \ w ) ) C_ { z } ) ) } $.
 
     $( The property of a function to be finitely supported is a relation.
        (Contributed by AV, 7-Jun-2019.) $)
     relfsupp $p |- Rel finSupp $=
-      ( vr vz cv wfun csupp co cfn wcel wa cfsupp df-fsupp relopabiv ) ACZDMBCE
-      FGHIABJBAKL $.
+      ( vr vw vz cv wfun cfn wcel cdm wss cdif csn w3a wex wa cfsupp df-fsuppfi
+      cima relopabi ) ADZEBDZFGTSHZISUATJQCDKILBMNACOCBAPR $.
   $}
 
   $( A proper class is never finitely supported.  (Contributed by AV,
@@ -72005,79 +72110,129 @@ $)
     ( cfsupp wbr cvv wcel relfsupp brrelex1i con3i ) ABCDAEFABCGHI $.
 
   ${
-    $d R r z $.  $d Z r z $.
+    $d R r w z $.  $d Z r w z $.
     $( The property of a class to be a finitely supported function (in relation
        to a given zero).  (Contributed by AV, 23-May-2019.) $)
-    isfsupp $p |- ( ( R e. V /\ Z e. W ) -> ( R finSupp Z
-                                    <-> ( Fun R /\ ( R supp Z ) e. Fin ) ) ) $=
-      ( vr vz cv wfun csupp co cfn wcel wa cfsupp wb funeq adantr oveq12 eleq1d
-      wceq anbi12d df-fsupp brabga ) EGZHZUDFGZIJZKLZMAHZADIJZKLZMEFADNBCUDATZU
-      FDTZMZUEUIUHUKULUEUIOUMUDAPQUNUGUJKUDAUFDIRSUAFEUBUC $.
+    isfsuppfi $p |- ( ( R e. V /\ Z e. U ) -> ( R finSupp Z
+        <-> ( Fun R /\ E. w ( w e. Fin /\ w C_ dom R
+          /\ ( R " ( dom R \ w ) ) C_ { Z } ) ) ) ) $=
+      ( vr vz cv wfun cfn cdm wss cdif cima csn w3a wex wa wceq adantr wb funeq
+      wcel cfsupp dmeq sseq2d simpl difeq1d imaeq12d sneq adantl sseq12d exbidv
+      3anbi23d anbi12d df-fsuppfi brabga ) FHZIZAHZJUCZUTURKZLZURVBUTMZNZGHZOZL
+      ZPZAQZRBIZVAUTBKZLZBVLUTMZNZEOZLZPZAQZRFGBEUDDCURBSZVFESZRZUSVKVJVSVTUSVK
+      UAWAURBUBTWBVIVRAWBVCVMVHVQVAWBVBVLUTVTVBVLSWAURBUETZUFWBVEVOVGVPWBURBVDV
+      NVTWAUGWBVBVLUTWCUHUIWAVGVPSVTVFEUJUKULUNUMUOGAFUPUQ $.
   $}
 
   ${
-    isfsuppd.r $e |- ( ph -> R e. V ) $.
-    isfsuppd.z $e |- ( ph -> Z e. W ) $.
-    isfsuppd.1 $e |- ( ph -> Fun R ) $.
-    isfsuppd.2 $e |- ( ph -> ( R supp Z ) e. Fin ) $.
-    $( Deduction form of ~ isfsupp .  (Contributed by SN, 29-Jul-2024.) $)
-    isfsuppd $p |- ( ph -> R finSupp Z ) $=
-      ( cfsupp wbr wfun csupp co cfn wcel wa wb isfsupp syl2anc mpbir2and ) ABE
-      JKZBLZBEMNOPZHIABCPEDPUBUCUDQRFGBCDESTUA $.
-  $}
-
-  $( The property of a function to be finitely supported (in relation to a
-     given zero).  (Contributed by AV, 23-May-2019.) $)
-  funisfsupp $p |- ( ( Fun R /\ R e. V /\ Z e. W )
-                     -> ( R finSupp Z <-> ( R supp Z ) e. Fin ) ) $=
-    ( wfun wcel w3a cfsupp wbr csupp co cfn wa wb isfsupp 3adant1 ibar 3ad2ant1
-    bicomd bitrd ) AEZABFZDCFZGADHIZUAADJKLFZMZUEUBUCUDUFNUAABCDOPUAUBUFUENUCUA
-    UEUFUAUEQSRT $.
-
-  $( Implications of a class being a finitely supported function (in relation
-     to a given zero).  (Contributed by AV, 26-May-2019.) $)
-  fsuppimp $p |- ( R finSupp Z -> ( Fun R /\ ( R supp Z ) e. Fin ) ) $=
-    ( cvv wcel wa cfsupp wbr wfun csupp co cfn relfsupp brrelex12i biimpd mpcom
-    isfsupp ) ACDBCDEZABFGZAHABIJKDEZABFLMQRSACCBPNO $.
-
-  ${
-    fsuppimpd.f $e |- ( ph -> F finSupp Z ) $.
-    $( A finitely supported function is a function with a finite support.
-       (Contributed by AV, 6-Jun-2019.) $)
-    fsuppimpd $p |- ( ph -> ( F supp Z ) e. Fin ) $=
-      ( cfsupp wbr csupp co cfn wcel wfun fsuppimp simprd syl ) ABCEFZBCGHIJZDO
-      BKPBCLMN $.
+    $d R w $.  $d W w $.  $d Z w $.
+    isfsuppfid.r $e |- ( ph -> R e. V ) $.
+    isfsuppfid.z $e |- ( ph -> Z e. U ) $.
+    isfsuppfid.1 $e |- ( ph -> Fun R ) $.
+    isfsuppfid.w $e |- ( ph -> W e. Fin ) $.
+    isfsuppfid.wss $e |- ( ph -> W C_ dom R ) $.
+    isfsuppfid.wz $e |- ( ph -> ( R " ( dom R \ W ) ) C_ { Z } ) $.
+    $( Deduction form of ~ isfsuppfi .  (Contributed by SN, 29-Jul-2024.)
+       (Revised by Jim Kingdon, 16-Oct-2026.) $)
+    isfsuppfid $p |- ( ph -> R finSupp Z ) $=
+      ( vw cfsupp cfn wcel wss cdif cima w3a wbr wfun cv cdm csn wex wceq eleq1
+      sseq1 difeq2 imaeq2d sseq1d 3anbi123d spcegv syl mp3and isfsuppfi syl2anc
+      wi wa wb mpbir2and ) ABFNUAZBUBZMUCZOPZVEBUDZQZBVGVERZSZFUEZQZTZMUFZIAEOP
+      ZEVGQZBVGERZSZVKQZVNJKLAVOVOVPVSTZVNUSJVMVTMEOVEEUGZVFVOVHVPVLVSVEEOUHVEE
+      VGUIWAVJVRVKWAVIVQBVEEVGUJUKULUMUNUOUPABDPFCPVCVDVNUTVAGHMBCDFUQURVB $.
   $}
 
   ${
+    $d A r x y $.  $d B x y $.  $d F p w $.  $d F q r w $.  $d F p x y $.
+    $d Z p w $.  $d Z q r w $.  $d Z p y $.  $d p ph w $.  $d ph q r w $.
+    funisfsuppdc.r $e |- ( ph -> F e. V ) $.
+    funisfsuppdc.f $e |- ( ph -> F : A --> B ) $.
+    funisfsuppdc.z $e |- ( ph -> Z e. B ) $.
+    funisfsuppdc.dmdc $e |- ( ph -> A. x e. A A. y e. A DECID x = y ) $.
+    funisfsuppdc.cdmdc $e |- ( ph -> A. x e. B A. y e. B DECID x = y ) $.
+    $( The property of a function to be finitely supported (in relation to a
+       given zero).  This shows that ~ df-fsuppfi and ~ df-supp give the same
+       results, in the case of decidable equality.  (Contributed by AV,
+       23-May-2019.)  (Revised by Jim Kingdon, 17-Oct-2026.) $)
+    funisfsuppdc $p |- ( ph
+                       -> ( F finSupp Z <-> ( F supp Z ) e. Fin ) ) $=
+      ( wcel wa cv wss wdc wceq ad3antrrr vw vp vr vq cfsupp wbr csupp cfn cdif
+      co cdm cima csn w3a wfun wex wb isfsuppfi syl2anc simplbda wral simpr1 wf
+      ad2antrr cfv simplr3 simpr difeq1d eleqtrrd wi ffund eldifad funfvima mpd
+      sseldd elsni syl simpr2 sseq2d mpbid adantr elssdc ralrimiva suppssdc wne
+      fdmd eqeq2 dcbid eqeq1 ralbidv ffvelcdmd rspcdva dcned wfn ffnd elsuppfng
+      sselda syl3anc mpbirand mpbird ssfidc exlimddv suppssdmg imaeq2d crn ccnv
+      suppinisegdc funimacnv eqtrd inss1 eqsstrdi eqsstrd isfsuppfid impbida
+      cin ) AFHUEUFZFHUGUJZUHNZAXPOZUAPZUHNZXTFUKZQZFYBXTUIZULZHUMZQZUNZXRUAAXP
+      FUOZYHUAUPZAFGNZHENZXPYIYJOUQIKUAFEGHURUSUTXSYHOZYAXQXTQUBPZXQNZRZUBXTVAX
+      RXSYAYCYGVBZYMUCDEUDFXTHADEFVCZXPYHJVDYMUDPZDXTUIZNZOZYSFVEZYFNUUCHSUUBYE
+      YFUUCYAYCYGXSUUAVFUUBYSYDNZUUCYENZUUBYSYTYDYMUUAVGZUUBYBDXTAYBDSXPYHUUAAD
+      EFJWFZTZVHVIUUBYIYSYBNUUDUUEVJAYIXPYHUUAADEFJVKZTUUBYSDYBUUBYSDXTUUFVLUUH
+      VIYDYSFVMUSVNVOUUCHVPVQYMUCPZXTNRUCDYMUUJDNZOBCXTDUUJABPZCPZSZRZCDVABDVAX
+      PYHUUKLTYMUUKVGYMXTDQZUUKYMYCUUPXSYAYCYGVRAYCUUPUQXPYHAYBDXTUUGVSVDVTZWAY
+      MYAUUKYQWAWBWCWDYMYPUBXTYMYNXTNZOZYPYNFVEZHWEZRUUSUUTHUUSUUTUUMSZRZUUTHSZ
+      RCEHUUMHSUVBUVDUUMHUUTWGWHUUSUUOCEVAZUVCCEVABEUUTUULUUTSZUUOUVCCEUVFUUNUV
+      BUULUUTUUMWIWHWJAUVEBEVAXPYHUURMTUUSDEYNFAYRXPYHUURJTYMXTDYNUUQWQZWKWLAYL
+      XPYHUURKTWLWMUUSYOUVAUUSYOYNDNZUVAUVGAYOUVHUVAOUQZXPYHUURAFDWNYKYLUVIADEF
+      JWOIKYNFGEDHWPWRTWSWHWTWCUBXTXQXAWRXBAXROZFEGXQHAYKXRIWAZAYLXRKWAZAYIXRUU
+      IWAAXRVGUVJYKYLXQYBQUVKUVLFGEHXCUSAFYBXQUIZULZYFQXRAUVNFDXQUIZULZYFAUVMUV
+      OFAYBDXQUUGVHXDAUVPYFFXEZXOZYFAUVPFFXFYFULZULZUVRAUVOUVSFABCDEFGHJIKMXGXD
+      AYIUVTUVRSUUIYFFXHVQXIYFUVQXJXKXLWAXMXN $.
+  $}
+
+  ${
+    $d F w $.  $d Z w $.
     fsuppfund.1 $e |- ( ph -> F finSupp Z ) $.
     $( A finitely supported function is a function.  (Contributed by SN,
        8-Mar-2025.) $)
     fsuppfund $p |- ( ph -> Fun F ) $=
-      ( cfsupp wbr wfun csupp co cfn wcel fsuppimp simpld syl ) ABCEFZBGZDOPBCH
-      IJKBCLMN $.
+      ( vw wfun cv cfn wcel cdm wss cdif cima csn w3a wex cfsupp wbr wa cvv wb
+      relfsupp brrelex12i isfsuppfi 3syl mpbid simpld ) ABFZEGZHIUIBJZKBUJUILMC
+      NKOEPZABCQRZUHUKSZDAULBTICTISULUMUADBCQUBUCEBTTCUDUEUFUG $.
+
+    $( A finitely supported function has a finite subset of its domain such
+       that values outside that subset map to zero.  (Contributed by Jim
+       Kingdon, 24-Oct-2026.) $)
+    fsuppfiss $p |- ( ph -> E. w ( w e. Fin /\ w C_ dom F
+        /\ ( F " ( dom F \ w ) ) C_ { Z } ) ) $=
+      ( wfun cv cfn wcel cdm wss cdif cima csn w3a wex cfsupp wbr wa cvv simprd
+      wb relfsupp brrelex12i isfsuppfi 3syl mpbid ) ACFZBGZHIUICJZKCUJUILMDNKOB
+      PZACDQRZUHUKSZEAULCTIDTISULUMUBECDQUCUDBCTTDUEUFUGUA $.
   $}
 
-  $( If two functions have the same support, one function is finitely supported
-     iff the other one is finitely supported.  (Contributed by AV,
-     30-Jun-2019.) $)
-  suppeqfsuppbi $p |- ( ( ( F e. U /\ Fun F ) /\ ( G e. V /\ Fun G ) )
-                        -> ( ( F supp Z ) = ( G supp Z )
-                             -> ( F finSupp Z <-> G finSupp Z ) ) ) $=
-    ( wcel wfun wa csupp co cfsupp wbr wb cvv relfsupp brrelex2i a1i cfn adantr
-    wi wceq simprlr simprll simpl funisfsupp syl3anc simpr adantl impcom bicomd
-    ex eleq1 sylan9bb bitr4d expl com12 pm5.21ndd ) BAFZBGZHZCDFZCGZHZHZBEIJZCE
-    IJZUAZBEKLZCEKLZMZVDVGHZENFZVHVIVHVLTVKBEKOPQVIVLTVKCEKOPQVLVKVJVLVDVGVJVLV
-    DHZVGHVHVERFZVIVMVHVNMZVGVMUSURVLVOVLURUSVCUBVLURUSVCUCVLVDUDBANEUEUFSVMVIV
-    FRFZVGVNVDVLVIVPMZVCVLVQTUTVCVLVQVCVLHVBVAVLVQVCVBVLVAVBUGSVCVAVLVAVBUDSVCV
-    LUGCDNEUEUFUKUHUIVGVNVPVEVFRULUJUMUNUOUPUQUK $.
+  ${
+    fdmfifsupp.1 $e |- ( ph -> F : D --> R ) $.
+    fdmfifsupp.2 $e |- ( ph -> D e. Fin ) $.
+    fdmfifsupp.3 $e |- ( ph -> Z e. V ) $.
+    $( A function with a finite domain is always finitely supported.
+       (Contributed by AV, 25-May-2019.) $)
+    fdmfifsupp $p |- ( ph -> F finSupp Z ) $=
+      ( cvv cdm cfn fexd ffund fdmd eqeltrd ssidd cdif cima c0 csn imaeq2i ima0
+      wss difid eqtri 0ss eqsstri a1i isfsuppfid ) ADEJDKZFABCLDGHMIABCDGNAUKBL
+      ABCDGOHPAUKQDUKUKRZSZFUAZUDAUMTUNUMDTSTULTDUKUEUBDUCUFUNUGUHUIUJ $.
+  $}
 
-  $( The cartesian product of two finitely supported functions is finite.
-     (Contributed by AV, 17-Jul-2019.) $)
-  fsuppxpfi $p |- ( ( F finSupp Z /\ G finSupp Z )
-                    -> ( ( F supp Z ) X. ( G supp Z ) ) e. Fin ) $=
-    ( cfsupp wbr csupp co cfn wcel cxp id fsuppimpd xpfi syl2an ) ACDEZACFGZHIB
-    CFGZHIPQJHIBCDEZOACOKLRBCRKLPQMN $.
+  ${
+    $d A x $.  $d V x $.  $d ph x $.
+    fsuppmptdm.f $e |- F = ( x e. A |-> Y ) $.
+    fsuppmptdm.a $e |- ( ph -> A e. Fin ) $.
+    fsuppmptdm.y $e |- ( ( ph /\ x e. A ) -> Y e. V ) $.
+    fsuppmptdm.z $e |- ( ph -> Z e. W ) $.
+    $( A mapping with a finite domain is finitely supported.  (Contributed by
+       AV, 7-Jun-2019.) $)
+    fsuppmptdm $p |- ( ph -> F finSupp Z ) $=
+      ( fmptd fdmfifsupp ) ACEDFHABCGEDKIMJLN $.
+  $}
+
+  ${
+    fndmfisuppfi.f $e |- ( ph -> F Fn D ) $.
+    fndmfisuppfi.d $e |- ( ph -> D e. Fin ) $.
+    fndmfisuppfi.z $e |- ( ph -> Z e. V ) $.
+    $( A function with a finite domain is always finitely supported.
+       (Contributed by AV, 25-May-2019.) $)
+    fndmfifsupp $p |- ( ph -> F finSupp Z ) $=
+      ( crn wfn wf dffn3 sylib fdmfifsupp ) ABCIZCDEACBJBOCKFBCLMGHN $.
+  $}
 
   ${
     fczfsuppd.b $e |- ( ph -> B e. V ) $.
@@ -72085,64 +72240,29 @@ $)
     $( A constant function with value zero is finitely supported.  (Contributed
        by AV, 30-Jun-2019.) $)
     fczfsuppd $p |- ( ph -> ( B X. { Z } ) finSupp Z ) $=
-      ( csn cxp cvv wcel snexg syl xpexd wfn wfun fnconstg fnfun 3syl cfn csupp
-      co c0 fczsupp0 0fi eqeltri a1i isfsuppd ) ABEHZIZJDEABUICJFAEDKZUIJKGEDLM
-      NGAUKUJBOUJPGBEDQBUJRSUJEUAUBZTKAULUCTBEUDUEUFUGUH $.
+      ( csn cxp cvv c0 wcel snexg syl xpexd wfn wfun fnconstg fnfun a1i cfn 0fi
+      3syl cdm wss 0ss cdif wf fconstg fimassd isfsuppfid ) ABEHZIZDJKEABULCJFA
+      EDLZULJLGEDMNOGAUNUMBPUMQGBEDRBUMSUCKUALAUBTKUMUDZUEAUOUFTABULUMUOKUGAUNB
+      ULUMUHGBEDUINUJUK $.
   $}
 
   $( The empty set is a finitely supported function.  (Contributed by AV,
      19-Jul-2019.) $)
   0fsupp $p |- ( Z e. V -> (/) finSupp Z ) $=
-    ( wcel c0 cfsupp wbr csupp co cfn supp0 0fi eqeltrdi wfun cvv wb funisfsupp
-    fun0 0ex mp3an12 mpbird ) BACZDBEFZDBGHZICZUAUCDIABJKLDMDNCUAUBUDOQRDNABPST
-    $.
+    ( wcel cvv 0ex a1i wfun fun0 cfn 0fi cdm wss 0ss cdif cima csn 0ima eqsstri
+    c0 id isfsuppfid ) BACZSADSBSDCUBEFUBTSGUBHFSICUBJFSSKZLUBUCMFSUCSNZOZBPZLU
+    BUESUFUDQUFMRFUA $.
 
-  ${
-    snopfsuppdc.x $e |- ( ph -> X e. V ) $.
-    snopfsuppdc.y $e |- ( ph -> Y e. W ) $.
-    snopfsuppdc.z $e |- ( ph -> Z e. U ) $.
-    snopfsuppdc.dc $e |- ( ph -> DECID Y = Z ) $.
-    $( A singleton containing an ordered pair is a finitely supported function.
-       (Contributed by AV, 19-Jul-2019.) $)
-    snopfsuppdc $p |- ( ph -> { <. X , Y >. } finSupp Z ) $=
-      ( cop csn cvv wcel opexg syl2anc syl c0 cfn snexg wfun funsng co wceq cif
-      csupp eqid suppsnopdc 0fi a1i snfig ifcldcd eqeltrd isfsuppd ) AEFLZMZNBG
-      AUPNOZUQNOAECOZFDOZURHIEFCDPQUPNUARJAUSUTUQUBHIEFCDUCQAUQGUGUDFGUEZSEMZUF
-      TABUQCDEFGUQUHHIJKUIAVASVBTSTOAUJUKAUSVBTOHECULRKUMUNUO $.
-  $}
-
-  $( Two ways of saying that a function with known codomain is finitely
-     supported.  (Contributed by AV, 8-Jul-2019.) $)
-  ffsuppbi $p |- ( ( I e. V /\ Z e. W ) -> ( F : I --> S
-                 -> ( F finSupp Z <-> ( `' F " ( S \ { Z } ) ) e. Fin ) ) ) $=
-    ( wcel wa wf cfsupp wbr ccnv csn cdif cima cfn wb csupp cvv imp wfun adantl
-    co ffun wi fex expcom adantr simplr funisfsupp syl3anc fsuppeq eleq1d bitrd
-    wceq ex ) CDGZFEGZHZCABIZBFJKZBLAFMNOZPGZQUSUTHZVABFRUCZPGZVCVDBUAZBSGZURVA
-    VFQUTVGUSCABUDUBUSUTVHUQUTVHUEURUTUQVHCADBUFUGUHTUQURUTUIBSEFUJUKVDVEVBPUSU
-    TVEVBUOABCDEFULTUMUNUP $.
-
-  ${
-    fsuppco.f $e |- ( ph -> F finSupp Z ) $.
-    fsuppco.g $e |- ( ph -> G : X -1-1-> Y ) $.
-    fsuppco.z $e |- ( ph -> Z e. W ) $.
-    fsuppco.v $e |- ( ph -> F e. V ) $.
-    fsuppcorn.g $e |- ( ph -> G e. U ) $.
-    fsuppcorn.rn $e |- ( ph -> ( F supp Z ) C_ ran G ) $.
-    $( The composition of a 1-1 function with a finitely supported function is
-       finitely supported.  The purpose of the ` ( F supp Z ) C_ ran G `
-       condition is to ensure we don't subset the support of the function in
-       such a way as to fun afoul of ~ exmidssfi .  (Other alternative
-       conditions might also be sufficient).  (Contributed by AV, 28-May-2019.)
-       (Revised by Jim Kingdon, 15-May-2026.) $)
-    fsuppcorn $p |- ( ph -> ( F o. G ) finSupp Z ) $=
-      ( wcel wfun syl syl2anc cfn ccom cvv ccnv wf1 simprbi cofunex2g fsuppfund
-      df-f1 f1fun funco csupp cima wceq suppcofn syl22anc cen wbr fsuppimpd crn
-      wf co wss wf1o f1cnv f1of1 f1imaeng syl3anc enfii eqeltrd isfsuppd ) ACDU
-      AZUBFIACEPZDUCZQZVKUBPMAGHDUDZVNKVOGHDUTVNGHDUHUERCDEUFSLACQZDQZVKQACIJUG
-      ZAVOVQKGHDUIRZCDUJSAVKIUKVAZVMCIUKVAZULZTAVLDBPVPVQVTWBUMMNVRVSCDEBIUNUOA
-      WATPZWBWAUPUQZWBTPACIJURZADUSZGVMUDZWAWFVBWCWDAWFGVMVCZWGAVOWHKGHDVDRWFGV
-      MVEROWEWFGWAVMTVFVGWBWAVHSVIVJ $.
-  $}
+  $( A singleton containing an ordered pair is a finitely supported function.
+     (Contributed by AV, 19-Jul-2019.) $)
+  snopfsupp $p |- ( ( X e. V /\ Y e. W /\ Z e. U )
+                    -> { <. X , Y >. } finSupp Z ) $=
+    ( wcel w3a cop csn cvv opexg 3adant3 snexg syl simp3 cdif cima c0 eqtrdi
+    wfun funsng cfn snfig 3ad2ant1 ssid wceq dmsnopg 3ad2ant2 sseqtrrid difeq1d
+    cdm difid imaeq2d ima0 0ss eqsstrdi isfsuppfid ) DBGZECGZFAGZHZDEIZJZAKDJZF
+    VBVCKGZVDKGUSUTVFVADEBCLMVCKNOUSUTVAPUSUTVDUAVADEBCUBMUSUTVEUCGVADBUDUEVBVE
+    VEVDULZVEUFUTUSVGVEUGVADECUHUIZUJVBVDVGVEQZRZSFJZVBVJVDSRSVBVISVDVBVIVEVEQS
+    VBVGVEVEVHUKVEUMTUNVDUOTVKUPUQUR $.
 
 
 $(
@@ -97468,6 +97588,23 @@ $(
 $)
 
   ${
+    $d A x u v $.  $d F x u v $.  $d G x u v $.  $d V x u v $.
+    $( Function analogue of ~ subeq0 .  (Contributed by Mario Carneiro,
+       24-Jul-2014.) $)
+    ofsubeq0 $p |- ( ( A e. V /\ F : A --> CC /\ G : A --> CC ) ->
+                     ( ( F oF - G ) = ( A X. { 0 } ) <-> F = G ) ) $=
+      ( vx vu vv wcel cc wf cv cmin co cfv cc0 wceq wral wa ffnd wfn ffvelcdmda
+      w3a cof csn cxp simp2 simp3 simp1 inidm eqidd subcld ofvalg c0ex fvconst2
+      adantl eqeq12d subeq0ad bitrd ralbidva subcl off fconst ffn ax-mp sylancl
+      wb eqfnfv syl2anc 3bitr4d ) ADHZAIBJZAICJZUBZEKZBCLUCMZNZVNAOUDZUEZNZPZEA
+      QZVNBNZVNCNZPZEAQZVOVRPZBCPZVMVTWDEAVMVNAHZRZVTWBWCLMZOPWDWIVPWJVSOVMAAWB
+      WCLAIBCDDVNVMAIBVJVKVLUFZSZVMAICVJVKVLUGZSZVJVKVLUHZWOAUIZWIWBUJWIWCUJWIW
+      BWCVMAIVNBWKUAZVMAIVNCWMUAZUKULWHVSOPVMAOVNUMUNUOUPWIWBWCWQWRUQURUSVMVOAT
+      VRATZWFWAVFVMAIVOVMFGAAALIIIBCDDFKZIHGKZIHRWTXALMIHVMWTXAUTUOWKWMWOWOWPVA
+      SAVQVRJWSAOUMVBAVQVRVCVDEAVOVRVGVEVMBATCATWGWEVFWLWNEABCVGVHVI $.
+  $}
+
+  ${
     $d A x y $.  $d F x y $.  $d G x y $.  $d V x y $.
     $( Function analogue of ~ negsub .  (Contributed by Mario Carneiro,
        24-Jul-2014.) $)
@@ -99646,14 +99783,6 @@ $)
     wi mpan2 imp dfn2 imaeq2i eqtr4di ) BCDZBEAFZGAHIJZAKZEHLMZNZUIONUFUGUHUKPZ
     UFHQDUGULTREABCQHSUAUBOUJUIUCUDUE $.
 
-  $( A function into ` NN0 ` is finitely supported iff its support is finite.
-     (Contributed by AV, 8-Jul-2019.) $)
-  fcdmnn0fsupp $p |- ( ( I e. V /\ F : I --> NN0 )
-                       -> ( F finSupp 0 <-> ( `' F " NN ) e. Fin ) ) $=
-    ( wcel cn0 wf wa cc0 cfsupp wbr ccnv csn cdif cima cfn cn wb cvv wi c0ex
-    ffsuppbi mpan2 imp dfn2 imaeq2i eleq1i bitr4di ) BCDZBEAFZGAHIJZAKZEHLMZNZO
-    DZUKPNZODUHUIUJUNQZUHHRDUIUPSTEABCRHUAUBUCUOUMOPULUKUDUEUFUG $.
-
   $( Version of ~ fcdmnn0supp avoiding ~ ax-coll by assuming ` F ` is a set
      rather than its domain ` I ` .  (Contributed by SN, 5-Aug-2024.) $)
   fcdmnn0suppg $p |- ( ( F e. V /\ F : I --> NN0 )
@@ -99662,16 +99791,6 @@ $)
     wi mpan2 imp dfn2 imaeq2i eqtr4di ) ACDZBEAFZGAHIJZAKZEHLMZNZUIONUFUGUHUKPZ
     UFHQDUGULTREABCQHSUAUBOUJUIUCUDUE $.
   $( $j usage 'fcdmnn0suppg' avoids 'ax-coll'; $)
-
-  $( Version of ~ fcdmnn0fsupp avoiding ~ ax-coll by assuming ` F ` is a set
-     rather than its domain ` I ` .  (Contributed by SN, 5-Aug-2024.) $)
-  fcdmnn0fsuppg $p |- ( ( F e. V /\ F : I --> NN0 )
-                        -> ( F finSupp 0 <-> ( `' F " NN ) e. Fin ) ) $=
-    ( wcel cn0 wf wa cc0 cfsupp wbr csupp co cfn ccnv cn cima wfun wb ffun cvv
-    simpl c0ex funisfsupp mp3an3 syl2an2 fcdmnn0suppg eleq1d bitrd ) ACDZBEAFZG
-    ZAHIJZAHKLZMDZANOPZMDUJAQZUIUIULUNRZBEASUIUJUAUPUIHTDUQUBACTHUCUDUEUKUMUOMA
-    BCUFUGUH $.
-  $( $j usage 'fcdmnn0fsuppg' avoids 'ax-coll'; $)
 
   $( Two ways to write the support of a function on ` NN0 ` .  (Contributed by
      Mario Carneiro, 29-Dec-2014.) $)
@@ -100551,6 +100670,20 @@ $( TODO: The following 14 theorems do not contain ` ZZ ` - these theorems are
     w3a zre ad2antrl simprr 3jca sylan2b ge0div syl mpbid ) ACDZBEDZFZGAHIZGABJ
     KHIZUIULUJALMUKANDZBNDZGBOIZTZULUMPUJUIBQDZUPFZUQBRUIUSFUNUOUPUIUNUSASMURUO
     UIUPBUAUBUIURUPUCUDUEABUFUGUH $.
+
+  ${
+    $d F x y $.  $d I x y $.
+    $( A function into ` NN0 ` is finitely supported iff its support is finite.
+       (Contributed by AV, 8-Jul-2019.) $)
+    fcdmnn0fsuppfi $p |- ( ( I e. Fin /\ F : I --> NN0 )
+                         -> ( F finSupp 0 <-> ( `' F " NN ) e. Fin ) ) $=
+      ( vx vy cfn wcel cn0 wf wa cc0 cfsupp wbr csupp co ccnv a1i wral cv nn0z
+      cz cn cima cvv simpr simpl fexd 0nn0 fidceq 3expb ralrimivva adantr zdceq
+      weq wdc syl2an rgen2 funisfsuppdc fcdmnn0supp eleq1d bitrd ) BEFZBGAHZIZA
+      JKLAJMNZEFAOUAUBZEFVCCDBGAUCJVCBGEAVAVBUDZVAVBUEUFVFJGFVCUGPVACDUMUNZDBQC
+      BQVBVAVGCDBBVACRZBFDRZBFVGBVHVIUHUIUJUKVGDGQCGQVCVGCDGGVHGFVHTFVITFVGVIGF
+      VHSVISVHVIULUOUPPUQVCVDVEEABEURUSUT $.
+  $}
 
   ${
     $d k M $.  $d k N $.
@@ -168584,6 +168717,26 @@ $)
   $}
 
   ${
+    $d A k $.  $d B k $.  $d C k $.  $d D k $.  $d F k $.  $d k ph $.
+    gsumsplit.b $e |- B = ( Base ` G ) $.
+    gsumsplit.z $e |- .0. = ( 0g ` G ) $.
+    gsumsplit.p $e |- .+ = ( +g ` G ) $.
+    gsumsplit.g $e |- ( ph -> G e. CMnd ) $.
+    gsumsplitfi.a $e |- ( ph -> A e. Fin ) $.
+    gsumsplit.f $e |- ( ph -> F : A --> B ) $.
+    gsumsplit.i $e |- ( ph -> ( C i^i D ) = (/) ) $.
+    gsumsplit.u $e |- ( ph -> A = ( C u. D ) ) $.
+    $( Split a group sum into two parts.  (Contributed by Mario Carneiro,
+       19-Dec-2014.)  (Revised by AV, 5-Jun-2019.) $)
+    gsumsplitfi $p |- ( ph -> ( G gsum F ) =
+      ( ( G gsum ( F |` C ) ) .+ ( G gsum ( F |` D ) ) ) ) $=
+      ( vk cgsu co cv cfv cmpt cres ffvelcdmda eqid gsummptfidmsplitres feqmptd
+      oveq2d reseq1d oveq12d 3eqtr4d ) AHRBRUAZGUBZUCZSTHUODUDZSTZHUOEUDZSTZFTH
+      GSTHGDUDZSTZHGEUDZSTZFTABCDEFRUOHUNJLMNABCUMGOUEPQUOUFUGAGUOHSARBCGOUHZUI
+      AVAUQVCUSFAUTUPHSAGUODVDUJUIAVBURHSAGUOEVDUJUIUKUL $.
+  $}
+
+  ${
     $d k M $.
     gsumsnd.b $e |- B = ( Base ` G ) $.
     gsumsndcmn.g $e |- ( ph -> G e. CMnd ) $.
@@ -168655,6 +168808,45 @@ $)
     gsumunsnd $p |- ( ph -> ( G gsum ( k e. ( A u. { M } ) |-> X ) ) =
       ( ( G gsum ( k e. A |-> X ) ) .+ Y ) ) $=
       ( nfcv gsumunsnfd ) ABCDEFGHIJKLMNOPQRSEJTUA $.
+  $}
+
+  ${
+    $d k A $.  $d k B $.  $d k G $.  $d k M $.  $d k V $.  $d k ph $.
+    gsumunsnf.0 $e |- F/_ k Y $.
+    gsumunsnf.b $e |- B = ( Base ` G ) $.
+    gsumunsnf.p $e |- .+ = ( +g ` G ) $.
+    gsumunsnf.g $e |- ( ph -> G e. CMnd ) $.
+    gsumunsnf.a $e |- ( ph -> A e. Fin ) $.
+    gsumunsnf.f $e |- ( ( ph /\ k e. A ) -> X e. B ) $.
+    gsumunsnf.m $e |- ( ph -> M e. V ) $.
+    gsumunsnf.d $e |- ( ph -> -. M e. A ) $.
+    gsumunsnf.y $e |- ( ph -> Y e. B ) $.
+    gsumunsnf.s $e |- ( k = M -> X = Y ) $.
+    $( Append an element to a finite group sum, using bound-variable hypotheses
+       instead of distinct variable conditions.  (Contributed by Mario
+       Carneiro, 19-Dec-2014.)  (Revised by Thierry Arnoux, 28-Mar-2018.)
+       (Proof shortened by AV, 11-Dec-2019.) $)
+    gsumunsnf $p |- ( ph -> ( G gsum ( k e. ( A u. { M } ) |-> X ) ) =
+      ( ( G gsum ( k e. A |-> X ) ) .+ Y ) ) $=
+      ( cv wceq adantl gsumunsnfd ) ABCDEFGHIJLMNOPQRSEUAGUBIJUBATUCKUD $.
+  $}
+
+  ${
+    $d k A $.  $d k B $.  $d k G $.  $d k M $.  $d k ph $.  $d k Y $.
+    gsumunsn.b $e |- B = ( Base ` G ) $.
+    gsumunsn.p $e |- .+ = ( +g ` G ) $.
+    gsumunsn.g $e |- ( ph -> G e. CMnd ) $.
+    gsumunsn.a $e |- ( ph -> A e. Fin ) $.
+    gsumunsn.f $e |- ( ( ph /\ k e. A ) -> X e. B ) $.
+    gsumunsn.m $e |- ( ph -> M e. V ) $.
+    gsumunsn.d $e |- ( ph -> -. M e. A ) $.
+    gsumunsn.y $e |- ( ph -> Y e. B ) $.
+    gsumunsn.s $e |- ( k = M -> X = Y ) $.
+    $( Append an element to a finite group sum.  (Contributed by Mario
+       Carneiro, 19-Dec-2014.)  (Proof shortened by AV, 8-Mar-2019.) $)
+    gsumunsn $p |- ( ph -> ( G gsum ( k e. ( A u. { M } ) |-> X ) ) =
+      ( ( G gsum ( k e. A |-> X ) ) .+ Y ) ) $=
+      ( wceq cv adantl gsumunsnd ) ABCDEFGHIJKLMNOPQREUAGTIJTASUBUC $.
   $}
 
   ${
@@ -168848,6 +169040,238 @@ $)
       submss cmnd cv wa cmnmndd mndlrid sylan gsumressfi ) ALBEMNZEONZCDEFEUANZ
       UNPZUOPZKIACEFHIKUBGACEUCNQZCUNUDHUNCEUQUFRJAUSUPCQHCEUPUPPZUERAEUGQLUHZU
       NQUPVAUOSVATVAUPUOSVATUIAEIUJUNUOEVAUPUQURUTUKULUM $.
+  $}
+
+  ${
+    $d A j $.  $d j ph $.
+    idjufi.a $e |- ( ph -> A e. Fin ) $.
+    idjufi.c $e |- ( ( ph /\ j e. A ) -> C e. Fin ) $.
+    $( A finite indexed disjoint union of finite sets is finite.  (Contributed
+       by Jim Kingdon, 8-Oct-2026.) $)
+    idjufi $p |- ( ph -> U_ j e. A ( { j } X. C ) e. Fin ) $=
+      ( cfn wcel cv csn cxp wral wdisj ciun xpfi syl2an2 ralrimiva disjsnxp a1i
+      snfig iunfidisj syl3anc ) ABGHDIZJZCKZGHZDBLDBUEMZDBUENGHEAUFDBUCBHUDGHAC
+      GHUFUCBTFUDCOPQUGABCDRSDBUEUAUB $.
+  $}
+
+  ${
+    $d A j q $.  $d C q $.  $d K j q $.  $d U q $.  $d j ph $.
+    idjusnfi.a $e |- ( ph -> A e. V ) $.
+    idjusnfi.r $e |- ( ( ph /\ j e. A ) -> C e. Fin ) $.
+    idjusnfi.u $e |- U = U_ j e. A ( { j } X. C ) $.
+    $( The image of a singleton through an indexed disjoint union, where it is
+       of finite sets.  (Contributed by Jim Kingdon, 2-Oct-2026.) $)
+    idjusnfi $p |- ( ( ph /\ K e. A ) -> ( U " { K } ) e. Fin ) $=
+      ( vq wcel wa csn cima cfn csb cv eleq1d wb wral ralrimiva nfcsb1v csbeq1a
+      nfel1 wceq rspc mpan9 cop cvv elimasng elvd ciun eleq2i opeliunxp2f bitri
+      cxp bitrdi bianabs eqrdv adantl mpbird ) AFBLZMDFNOZPLZEFCQZPLZACPLZEBUAV
+      CVGAVHEBIUBVHVGEFBEVFPEFCUCZUEERZFUFCVFPEFCUDZSUGUHVCVEVGTAVCVDVFPVCKVDVF
+      VCKRZVDLZVLVFLZVCVMFVLUIZDLZVCVNMZVCVMVPTKDFVLBUJUKULVPVOEBVJNCUQUMZLVQDV
+      RVOJUNEBCFVLVFVIVKUOUPURUSUTSVAVB $.
+  $}
+
+  ${
+    $d j k x y z A $.  $d j k x y z F $.  $d j k x y z G $.  $d j k x y z ph $.
+    $d j k B $.  $d j k D $.  $d j k x y z .0. $.
+    gsum2dfilem1.b $e |- B = ( Base ` G ) $.
+    gsum2dfilem1.z $e |- .0. = ( 0g ` G ) $.
+    gsum2dfilem1.g $e |- ( ph -> G e. CMnd ) $.
+    gsum2dfilem1.f $e |- ( ph -> F : A --> B ) $.
+    gsum2dfilem1.fi $e |- ( ( ph /\ j e. D ) -> ( A " { j } ) e. Fin ) $.
+    $( Lemma 1 for ~ gsum2dfi .  (Contributed by Mario Carneiro, 28-Dec-2014.)
+       (Revised by AV, 8-Jun-2019.)  (Revised by Jim Kingdon, 2-Oct-2026.) $)
+    gsum2dfilem1 $p |- ( ( ph /\ j e. D ) -> ( G gsum ( k e. ( A " { j } )
+                                         |-> ( j F k ) ) ) e. B ) $=
+      ( cv wcel wa csn adantr vex cima co cmpt ccmn wf elimasn df-ov ffvelcdmda
+      cop cfv eqeltrid sylan2b fmpttd gsumclfi ) AEOZDPZQBUORUAZCFUQUOFOZGUBZUC
+      ZHIJKAHUDPUPLSNAUQCUTUEUPAFUQUSCURUQPAUOURUIZBPZUSCPBUOURETFTUFAVBQUSVAGU
+      JCUOURGUGABCVAGMUHUKULUMSUN $.
+  $}
+
+  ${
+    $d j k x y z A $.  $d j k x y z F $.  $d j k x y z G $.  $d j k x y z ph $.
+    $d j k B $.  $d j k D $.  $d j k x y z .0. $.
+    gsum2d.b $e |- B = ( Base ` G ) $.
+    gsum2d.z $e |- .0. = ( 0g ` G ) $.
+    gsum2d.g $e |- ( ph -> G e. CMnd ) $.
+    gsum2dfi.a $e |- ( ph -> A e. Fin ) $.
+    gsum2d.r $e |- ( ph -> Rel A ) $.
+    gsum2dfi.d $e |- ( ph -> D e. Fin ) $.
+    gsum2d.s $e |- ( ph -> dom A C_ D ) $.
+    gsum2dfi.dm $e |- ( ph -> dom A e. Fin ) $.
+    gsum2d.f $e |- ( ph -> F : A --> B ) $.
+    gsum2dfi.fi $e |- ( ( ph /\ j e. D ) -> ( A " { j } ) e. Fin ) $.
+    $( Lemma for ~ gsum2dfi .  (Contributed by Mario Carneiro, 28-Dec-2014.)
+       (Revised by AV, 8-Jun-2019.)  (Revised by Jim Kingdon, 4-Oct-2026.) $)
+    gsum2dfilem2 $p |- ( ph -> ( G gsum F )
+        = ( G gsum ( j e. dom A
+          |-> ( G gsum ( k e. ( A " { j } ) |-> ( j F k ) ) ) ) ) ) $=
+      ( cgsu vx vy vz cdm cres co cv csn cima cmpt wrel wceq resdm reseq2d fdmd
+      syl wf frel 3syl eqtr3d eqtrd oveq2d c0 cun reseq2 mpteq1 eqeq12d reseq2i
+      weq res0 eqtri oveq2i mpt0 eqtr4i a1i cfn wcel wss cdif cplusg oveq1 eqid
+      wa cfv ccmn ad2antrr simprl simprr eldifad snssd unssd wel simplr eldifbd
+      unsnfi syl3anc relresfin fssres sylancl cin disjsn sylibr resindi 3eqtr3g
+      wn resss resundi gsumsplitfi ssun1 ssres2 resabs1 mp2b ssun2 eqtrdi sstrd
+      oveq12i sselda ad4ant14 syldan gsum2dfilem1 sneq imaeq2d mpteq12dv eleq1d
+      ralrimiva rspcdva gsumunsn wral c2nd cxp adantr cop vex df-ov cvv feqmptd
+      mp1i reseq1d resmpt ax-mp ccom elimasn ffvelcdmda eqeltrid sylan2b fmpttd
+      wf1o 2ndconst gsumf1ofi c1st 1st2nd2 xp1st opeq1d fveq2d eqtr4di mpteq2ia
+      elsni ressn mpteq1i xp2nd adantl wfo fo2nd fof eqidd oveq2 fmptco 3eqtr4a
+      ssv eqtr4d imbitrrid findcard2sd ) AHGBBUDZUEZUEZTUFZHGTUFHEUVMHFBEUGZUHZ
+      UIZUVQFUGZGUFZUJZTUFZUJZTUFZAUVOGHTAUVOGBUEZGAUVNBGABUKZUVNBULNBUMUPUNAGG
+      UDZUEZUWFGAUWHBGABCGRUOUNABCGUQZGUKUWIGULRBCGURGUMUSUTVAVBAHGBUAUGZUEZUEZ
+      TUFZHEUWKUWCUJZTUFZULHGBVCUEZUEZTUFZHEVCUWCUJZTUFZULZHGBUBUGZUEZUEZTUFZHE
+      UXCUWCUJZTUFZULZHGBUXCUCUGZUHZVDZUEZUEZTUFZHEUXLUWCUJZTUFZULZUVPUWEULUAUB
+      UCUVMUWKVCULZUWNUWSUWPUXAUXSUWMUWRHTUXSUWLUWQGUWKVCBVEUNVBUXSUWOUWTHTEUWK
+      VCUWCVFVBVGUAUBVIZUWNUXFUWPUXHUXTUWMUXEHTUXTUWLUXDGUWKUXCBVEUNVBUXTUWOUXG
+      HTEUWKUXCUWCVFVBVGUWKUXLULZUWNUXOUWPUXQUYAUWMUXNHTUYAUWLUXMGUWKUXLBVEUNVB
+      UYAUWOUXPHTEUWKUXLUWCVFVBVGUWKUVMULZUWNUVPUWPUWEUYBUWMUVOHTUYBUWLUVNGUWKU
+      VMBVEUNVBUYBUWOUWDHTEUWKUVMUWCVFVBVGUXBAUWSHVCTUFUXAUWRVCHTUWRGVCUEVCUWQV
+      CGBVJZVHGVJVKVLUWTVCHTEUWCVMVLVNVOUXIUXRAUXCVPVQZWCZUXCUVMVRZUXJUVMUXCVSV
+      QZWCZWCZUXFHGBUXKUEZUEZTUFZHVTWDZUFZUXHUYLUYMUFZULUXFUXHUYLUYMWAUYIUXOUYN
+      UXQUYOUYIUXOHUXNUXDUEZTUFZHUXNUYJUEZTUFZUYMUFUYNUYIUXMCUXDUYJUYMUXNHIJKUY
+      MWBZAHWEVQZUYDUYHLWFZUYIUXLBABVPVQUYDUYHMWFAUWGUYDUYHNWFAUVMVPVQUYDUYHQWF
+      UYIUXCUXKUVMUYEUYFUYGWGZUYIUXJUVMUYIUXJUVMUXCUYEUYFUYGWHZWIZWJWKUYIUYDUXJ
+      UVMVQUCUBWLXEZUXLVPVQAUYDUYHWMZVUEUYIUXJUVMUXCVUDWNZUXCUXJUVMWOWPWQAUXMCU
+      XNUQZUYDUYHAUWJUXMBVRVUIRBUXLXFBCUXMGWRWSWFUYIBUXCUXKWTZUEUWQUXDUYJWTVCUY
+      IVUJVCBUYIVUFVUJVCULVUHUXCUXJXAXBUNBUXCUXKXCUYCXDUXMUXDUYJVDULUYIBUXCUXKX
+      GVOXHUYQUXFUYSUYLUYMUYPUXEHTUXCUXLVRUXDUXMVRUYPUXEULUXCUXKXIUXCUXLBXJGUXD
+      UXMXKXLVLUYRUYKHTUXKUXLVRUYJUXMVRUYRUYKULUXKUXCXMUXKUXLBXJGUYJUXMXKXLVLXP
+      XNUYIUXQUXHHFBUXKUIZUXJUVTGUFZUJZTUFZUYMUFUYOUYIUXCCUYMEHUXJUVMUWCVUNJUYT
+      VUBVUGUYIBCUXCEFGHIJKVUBAUWJUYDUYHRWFZUYIEUBWLUVQDVQZUVSVPVQZUYIUXCDUVQUY
+      IUXCUVMDVUCAUVMDVRUYDUYHPWFZXOXQAVUPVUQUYDUYHSXRZXSXTVUEVUHUYIUWCCVQZVUNC
+      VQEUVMUXJEUCVIZUWCVUNCVVAUWBVUMHTVVAFUVSUWAVUKVULVVAUVRUXKBUVQUXJYAZYBUVQ
+      UXJUVTGWAYCVBZYDUYIVUTEUVMUYIBCUVMEFGHIJKVUBVUOUYIUVQUVMVQZVUPVUQUYIUVMDU
+      VQVURXQVUSXSXTYEVUEYFVVCYGUYIVUNUYLUXHUYMUYIUWCHGBUVRUEZUEZTUFZULZVUNUYLU
+      LEUVMUXJVVAUWCVUNVVGUYLVVCVVAVVFUYKHTVVAVVEUYJGVVAUVRUXKBVVBUNUNVBVGAVVHE
+      UVMYHUYDUYHAVVHEUVMAVVDWCZUWCHUWBYIUVRUVSYJZUEZUUAZTUFZVVGVVIUVSCVVJUWBHV
+      VKIJKAVUAVVDLYKAVVDVUPVUQAUVMDUVQPXQSXSAUVSCUWBUQVVDAFUVSUWACUVTUVSVQAUVQ
+      UVTYLZBVQZUWACVQBUVQUVTEYMZFYMUUBAVVOWCUWAVVNGWDCUVQUVTGYNABCVVNGRUUCUUDU
+      UEUUFYKUVQYOVQVVJUVSVVKUUGVVIVVPUVQUVSYOUUHYQUUIAVVGVVMULVVDAVVFVVLHTAUAV
+      VJUWKGWDZUJZUAVVJUVQUWKYIWDZGUFZUJVVFVVLUAVVJVVQVVTUWKVVJVQZVVQUVQVVSYLZG
+      WDVVTVWAUWKVWBGVWAUWKUWKUUJWDZVVSYLVWBUWKUVRUVSUUKVWAVWCUVQVVSVWAVWCUVRVQ
+      VWCUVQULUWKUVRUVSUULVWCUVQUUQUPUUMVAUUNUVQVVSGYNUUOUUPAVVFUABVVQUJZVVEUEZ
+      VVRAGVWDVVEAUABCGRYPYRVWEUAVVEVVQUJZVVRVVEBVRVWEVWFULBUVRXFUABVVEVVQYSYTU
+      AVVEVVJVVQBUVQUURUUSVKXNAUAFVVJUVSVVSUWAVVTVVKUWBVWAVVSUVSVQAUWKUVRUVSUUT
+      UVAAVVKUAYOVVSUJZVVJUEZUAVVJVVSUJZAYIVWGVVJAUAYOYOYIYOYOYIUVBYOYOYIUQAUVC
+      YOYOYIUVDYQYPYRVVJYOVRVWHVWIULVVJUVIUAYOVVJVVSYSYTXNAUWBUVEUVTVVSUVQGUVFU
+      VGUVHVBYKUVJYEWFVUEYFVBVAVGUVKQUVLUT $.
+
+    $d .0. j k q $.  $d A j k q $.  $d D j k q $.  $d F j k q $.  $d G j k q $.
+    $d j k ph q $.
+
+    $( Write a sum over a two-dimensional region as a double sum.  (Contributed
+       by Mario Carneiro, 28-Dec-2014.)  (Revised by AV, 8-Jun-2019.)  (Revised
+       by Jim Kingdon, 6-Oct-2026.) $)
+    gsum2dfi $p |- ( ph -> ( G gsum F ) = ( G gsum
+      ( j e. D |-> ( G gsum ( k e. ( A " { j } ) |-> ( j F k ) ) ) ) ) ) $=
+      ( cgsu vq cdm csn cima cmpt cres gsum2dfilem2 resmptd oveq2d gsum2dfilem1
+      co cv fmpttd cfv wceq cdif wcel eqid sneq imaeq2d mpteq12dv eldifi adantl
+      wa oveq1 c0 wn eldifn ndmima mpteq1d mpt0 eqtrdi syl c0g gsum0cmn eqtr4di
+      ccmn adantr eqtrd cmnd cmnmndd mndidcl eqeltrd fvmptd3 ralrimiva 3eqtr2d
+      gsumresfi ) AHGTUKHEBUBZHFBEULZUCZUDZWIFULZGUKZUEZTUKZUEZTUKHEDWOUEZWHUFZ
+      TUKHWQTUKABCDEFGHIJKLMNOPQRSUGAWRWPHTAEDWHWOPUHUIAUADCWQHWHIJKLOAEDWOCABC
+      DEFGHIJKLRSUJUMAUAULZWQUNZIUOUADWHUPZAWSXAUQZVDZWTHFBWSUCZUDZWSWLGUKZUEZT
+      UKZIXCEWSWOXHDWQCWQURWIWSUOZWNXGHTXIFWKWMXEXFXIWJXDBWIWSUSUTWIWSWLGVEVAUI
+      XBWSDUQAWSDWHVBVCXCXHICXCXHHVFTUKZIXCXGVFHTXCWSWHUQVGZXGVFUOXBXKAWSDWHVHV
+      CXKXGFVFXFUEVFXKFXEVFXFWSBVIVJFXFVKVLVMUIAXJIUOXBAXJHVNUNZIAHVQUQXJXLUOLH
+      VOVMKVPVRVSZAICUQZXBAHVTUQXNAHLWACHIJKWBVMVRWCWDXMVSWEQPWGWF $.
+  $}
+
+  ${
+    gsum2d2.b $e |- B = ( Base ` G ) $.
+    gsum2d2.z $e |- .0. = ( 0g ` G ) $.
+    gsum2d2.g $e |- ( ph -> G e. CMnd ) $.
+    gsum2d2fi.a $e |- ( ph -> A e. Fin ) $.
+    gsum2d2fi.r $e |- ( ( ph /\ j e. A ) -> C e. Fin ) $.
+    gsum2d2.f $e |- ( ( ph /\ ( j e. A /\ k e. C ) ) -> X e. B ) $.
+    gsum2d2.u $e |- ( ph -> U e. Fin ) $.
+    gsum2d2.n $e |- ( ( ph /\ ( ( j e. A /\ k e. C ) /\ -. j U k ) )
+                      -> X = .0. ) $.
+    ${
+      $d j k m n B $.  $d j k x y z D $.  $d j x y z E $.
+      $d j k m n x y z ph $.  $d j k m n x y z A $.  $d j k m n x G $.
+      $d j k z U $.  $d m n x y z X $.  $d k m n x y z C $.  $d j V $.
+      $d j k m n x z .0. $.  $d C p $.
+      $( Write a group sum over a two-dimensional region as a double sum.  Note
+         that ` C ( j ) ` is a function of ` j ` .  (Contributed by Mario
+         Carneiro, 28-Dec-2014.) $)
+      gsum2d2fi $p |- ( ph -> ( G gsum ( j e. A , k e. C |-> X ) ) =
+        ( G gsum ( j e. A |-> ( G gsum ( k e. C |-> X ) ) ) ) ) $=
+        ( cgsu wcel vm vn vx vy vp cmpo csn cxp ciun cima cmpt idjufi wrel wral
+        co cv relxp rgenw reliun mpbir a1i cdm cop wex vex eldm2 wa eliunxp weq
+        wceq opth1 ad2antrl simprrl eqeltrd exlimdvv biimtrid exlimdv ssrdv cfn
+        ex dmiun wdisj c0 xpeq2 dmeqd xp0 dmeqi dm0 eqtri eqtrdi eqeltrdi dmxpm
+        0fi adantl cvv elv wo fin0or syl mpjaodan ralrimiva orim12d mpd sn0disj
+        snfig wi iunfidisj eqeltrid wf ralrimivva fmpox sylib idjusnfi gsum2dfi
+        syl3anc eqid nfcv nfiu1 nfima nfmpo1 nfov nfmpt imaeq2d oveq1 mpteq12dv
+        oveq2d cbvmpt elimasn opeliunxp bitri eqrdv mpteq1d nfmpo2 oveq2 simprl
+        sneq baib simprr mpteq2dva eqtrd ovmpt4g anassrs eqtrid ) AHFGBDIUFZSUO
+        HUABHUBFBFUPZUGZDUHZUIZUAUPZUGZUJZUUIUBUPZUUDUOZUKZSUOZUKZSUOHFBHGDIUKZ
+        SUOZUKZSUOAUUHCBUAUBUUDHJKLMABDFNOULUUHUMZAUUTUUGUMZFBUNUVAFBUUFDUQURFB
+        UUGUSUTVANAUCUUHVBZBUCUPZUVBTUVCUDUPZVCZUUHTZUDVDAUVCBTZUDUVCUUHUCVEZVF
+        AUVFUVGUDUVFUVEUUEGUPZVCZVJZUUEBTZUVIDTZVGZVGZGVDFVDAUVGFGBDUVEVHAUVOUV
+        GFGAUVOUVGAUVOVGUVCUUEBUVKUCFVIAUVNUVCUVDUUEUVIUVHUDVEVKVLAUVKUVLUVMVMV
+        NVTVOVPVQVPVRAUVBFBUUGVBZUIZVSFBUUGWAABVSTUVPVSTZFBUNFBUVPWBUVQVSTNAUVR
+        FBAUVLVGZDWCVJZUVRUEUPDTUEVDZUVTUVRUVSUVTUVPWCVSUVTUVPUUFWCUHZVBZWCUVTU
+        UGUWBDWCUUFWDWEUWCWCVBWCUWBWCUUFWFWGWHWIWJZWMWKWNUWAUVRUVSUWAUVPUUFVSUE
+        UUFDWLZUUFVSTFUUEWOXEWPWKWNUVSDVSTUVTUWAWQZOUEDWRWSZWTXAAFBUVPUVSUWFUVP
+        WCVJZUVPUUFVJZWQUWGUVSUVTUWHUWAUWIUVTUWHXFUVSUWDVAUWAUWIXFUVSUWEVAXBXCX
+        DFBUVPXGXOXHAICTZGDUNFBUNUUHCUUDXIAUWJFGBDPXJFGBDICUUDUUDXPZXKXLABDUUHF
+        UUIVSNOUUHXPXMXNAUUPUUSHSAUUPFBHUBUUHUUFUJZUUEUULUUDUOZUKZSUOZUKUUSUAFB
+        UUOUWOFHUUNSFHXQFSXQFUBUUKUUMFUUHUUJFBUUGXRFUUJXQXSFUUIUULUUDFUUIXQFGBD
+        IXTFUULXQYAYBYAUAUWOXQUAFVIZUUNUWNHSUWPUBUUKUUMUWLUWMUWPUUJUUFUUHUUIUUE
+        YPYCUUIUUEUULUUDYDYEYFYGAFBUWOUURUVSUWNUUQHSUVSUWNGDUUEUVIUUDUOZUKZUUQU
+        VLUWNUWRVJAUVLUWNUBDUWMUKUWRUVLUBUWLDUWMUVLGUWLDUVIUWLTZUVLUVMUWSUVJUUH
+        TUVNUUHUUEUVIFVEGVEYHFBDUVIYIYJYQYKYLUBGDUWMUWQGUUEUULUUDGUUEXQFGBDIYMG
+        UULXQYAUBUWQXQUULUVIUUEUUDYNYGWJWNUVSGDUWQIAUVLUVMUWQIVJZAUVNVGUVLUVMUW
+        JUWTAUVLUVMYOAUVLUVMYRPFGBDIUUDCUWKUUAXOUUBYSYTYFYSUUCYFYT $.
+    $}
+
+    ${
+      $d A j k x y z $.  $d B j k $.  $d C k x y z $.  $d D j k x y z $.
+      $d E j x y z $.  $d X x y z $.  $d j k ph x y $.  $d j k .0. $.
+      $d j k G $.  $d j k U $.
+      gsumcom2.d $e |- ( ph -> D e. Y ) $.
+      gsumcom2.c $e |- ( ph ->
+        ( ( j e. A /\ k e. C ) <-> ( k e. D /\ j e. E ) ) ) $.
+      $( Two-dimensional commutation of a group sum.  Note that while ` A ` and
+         ` D ` are constants w.r.t. ` j , k ` , ` C ( j ) ` and ` E ( k ) ` are
+         not.  (Contributed by Mario Carneiro, 28-Dec-2014.) $)
+      gsumcom2fi $p |- ( ph -> ( G gsum ( j e. A , k e. C |-> X ) ) =
+        ( G gsum ( k e. D , j e. E |-> X ) ) ) $=
+        ( vz vx vy cmpo cgsu co cv csn cxp ciun ccnv cuni cmpt ccom idjufi wcel
+        wral wf ralrimivva eqid fmpox sylib wf1o wrel relxp rgenw reliun cnvf1o
+        mpbir ax-mp relcnv cop wb wi nfv nfiu1 nfcnv nfel2 nfbi nfim weq eleq1d
+        opeq2 bibi12d imbi2d opeq1 opeliunxp 3bitr4g vex opelcnv chvar eqrelrdv
+        wa bitr4di f1oeq3d mpbiri gsumf1ofi cfv csb wceq sneq cnveqd unieqd cvv
+        opswapg el2v eqtrdi fveq2d eqtr4di mpomptx nfcv nfcsb1v csbeq1a xpeq12d
+        df-ov cbviun mpteq1i nfmpo2 nfmpo1 oveq2 oveq1 sylan9eq cbvmpox 3eqtr4i
+        nfxp nfov f1of syl fmpt sylibr eqidd feqmptd fveq2 fmptcof w3a ovmpt4g
+        ex 3expia sylcom sylbird 3impib eqcomd mpoeq3dva 3eqtr4a oveq2d eqtrd )
+        AJGHBDKUGZUHUIJUUJUDHEHUJZUKZIULZUMZUDUJZUKZUNZUOZUPZUQZUHUIJHGEIKUGZUH
+        UIAGBGUJZUKZDULZUMZCUUNUUJJUUSMNOPABDGQRURAKCUSZHDUTGBUTUVECUUJVAAUVFGH
+        BDSVBGHBDKCUUJUUJVCZVDVEZAUUNUVEUUSVFZUUNUUNUNZUUSVFZUUNVGZUVKUVLUUMVGZ
+        HEUTUVMHEUULIVHVIHEUUMVJVLUDUUNVKVMAUVEUVJUUNUUSAUEUFUVEUVJUVEVGUVDVGZG
+        BUTUVNGBUVCDVHVIGBUVDVJVLUUNVNAUEUJZUUKVOZUVEUSZUVPUVJUSZVPZVQZAUVOUFUJ
+        ZVOZUVEUSZUWBUVJUSZVPZVQHUFAUWEHAHVRUWCUWDHUWCHVRHUWBUVJHUUNHEUUMVSVTWA
+        WBWCHUFWDZUVSUWEAUWFUVQUWCUVRUWDUWFUVPUWBUVEUUKUWAUVOWFZWEUWFUVPUWBUVJU
+        WGWEWGWHAUVBUUKVOZUVEUSZUWHUVJUSZVPZVQUVTGUEAUVSGAGVRUVQUVRGGUVPUVEGBUV
+        DVSWAUVRGVRWBWCGUEWDZUWKUVSAUWLUWIUVQUWJUVRUWLUWHUVPUVEUVBUVOUUKWIZWEUW
+        LUWHUVPUVJUWMWEWGWHAUWIUUKUVBVOUUNUSZUWJAUVBBUSZUUKDUSZWPZUUKEUSZUVBIUS
+        ZWPZUWIUWNUCGBDUUKWJHEIUVBWJWKUVBUUKUUNGWLHWLWMWQWNWNWOWRWSZWTAUUTUVAJU
+        HAUDUUNUURUUJXAZUPZHGEIUVBUUKUUJUIZUGZUUTUVAUDUEEUVOUKZHUVOIXBZULZUMZUX
+        BUPUEUFEUXGUWAUVOUUJUIZUGUXCUXEUEUFUDEUXGUXBUXJUUOUWBXCZUXBUWAUVOVOZUUJ
+        XAUXJUXKUURUXLUUJUXKUURUWBUKZUNZUOZUXLUXKUUQUXNUXKUUPUXMUUOUWBXDXEXFUXO
+        UXLXCUEUFUVOUWAXGXGXHXIXJXKUWAUVOUUJXRXLXMUDUUNUXIUXBHUEEUUMUXHUEUUMXNH
+        UXFUXGHUXFXNHUVOIXOZYHHUEWDZUULUXFIUXGUUKUVOXDHUVOIXPZXQXSXTHGUEUFEIUXD
+        UXGUXJUEIXNUXPUEUXDXNUFUXDXNHUWAUVOUUJHUWAXNGHBDKYAHUVOXNYIGUWAUVOUUJGU
+        WAXNGHBDKYBGUVOXNYIUXRUXQGUFWDUXDUVBUVOUUJUIUXJUUKUVOUVBUUJYCUVBUWAUVOU
+        UJYDYEYFYGAUDUEUUNUVEUURUVOUUJXAUXBUUSUUJAUUNUVEUUSVAZUURUVEUSUDUUNUTAU
+        VIUXSUXAUUNUVEUUSYJYKUDUUNUVEUURUUSUUSVCYLYMAUUSYNAUEUVECUUJUVHYOUVOUUR
+        UUJYPYQAHGEIKUXDAUWRUWSYRUXDKAUWRUWSUXDKXCZAUWTUWQUXTUCAUWQUVFUXTAUWQUV
+        FSYTUWOUWPUVFUXTGHBDKUUJCUVGYSUUAUUBUUCUUDUUEUUFUUGUUHUUI $.
+    $}
   $}
 
 
@@ -172147,6 +172571,35 @@ $)
       OUPUQZWAVEWKVFWCBKVEVFVTURZWLVEVFVTUSZBCDWBEFGQSTWAWGWDWHWEVHWAAVPVJWDBVK
       BWJVIVPEDRVGVQVSUTZWAVEVQVFWDBKWMWOWNBCDVPEFGQSTWAAVRVJWEBVKBWJVIVREDRVGV
       QVSVAZWAVEVSVFWEBKWMWPWNBCDVREFGQSTVBVDVC $.
+  $}
+
+  ${
+    $d k x A $.  $d k x B $.  $d k x ph $.  $d k x .x. $.  $d x R $.  $d x X $.
+    $d k x Y $.  $d x .0. $.
+    gsummulc1.b $e |- B = ( Base ` R ) $.
+    gsummulc1.z $e |- .0. = ( 0g ` R ) $.
+    gsummulc1.t $e |- .x. = ( .r ` R ) $.
+    gsummulc1.r $e |- ( ph -> R e. Ring ) $.
+    gsummulc1fi.a $e |- ( ph -> A e. Fin ) $.
+    gsummulc1.y $e |- ( ph -> Y e. B ) $.
+    gsummulc1.x $e |- ( ( ph /\ k e. A ) -> X e. B ) $.
+    $( A finite ring sum multiplied by a constant.  (Contributed by Mario
+       Carneiro, 19-Dec-2014.)  (Revised by AV, 10-Jul-2019.)  Remove unused
+       hypothesis.  (Revised by SN, 7-Mar-2025.) $)
+    gsummulc1fi $p |- ( ph -> ( R gsum ( k e. A |-> ( X .x. Y ) ) ) =
+      ( ( R gsum ( k e. A |-> X ) ) .x. Y ) ) $=
+      ( vx co cmpt wcel cgsu ringcmnd cghm cmhm crg ringrghm syl2anc ghmmhm syl
+      cv oveq1 gsummhm2fi ) AQBCQUJZHERZGHERFDFBGSUARZHERDDGIJKADMUBZUPNAQCUNSZ
+      DDUCRTZUQDDUDRTADUETHCTURMOQCDEHJLUFUGDDUQUHUIPUMGHEUKUMUOHEUKUL $.
+
+    $( A finite ring sum multiplied by a constant.  (Contributed by Mario
+       Carneiro, 19-Dec-2014.)  (Revised by AV, 10-Jul-2019.)  Remove unused
+       hypothesis.  (Revised by SN, 7-Mar-2025.) $)
+    gsummulc2fi $p |- ( ph -> ( R gsum ( k e. A |-> ( Y .x. X ) ) ) =
+      ( Y .x. ( R gsum ( k e. A |-> X ) ) ) ) $=
+      ( vx co cmpt wcel cgsu ringcmnd cghm cmhm crg ringlghm syl2anc ghmmhm syl
+      cv oveq2 gsummhm2fi ) AQBCHQUJZERZHGERFHDFBGSUARZERDDGIJKADMUBZUPNAQCUNSZ
+      DDUCRTZUQDDUDRTADUETHCTURMOQCDEHJLUFUGDDUQUHUIPUMGHEUKUMUOHEUKUL $.
   $}
 
   ${
@@ -181859,10 +182312,14 @@ $(
 $)
 
   $c mPwSer $. $( Multivariate power series $)
+  $c mVar $. $( Multivariate power series variables $)
   $c mPoly $. $( Multivariate polynomial $)
 
   $( Multivariate power series. $)
   cmps $a class mPwSer $.
+
+  $( Multivariate power series variables. $)
+  cmvr $a class mVar $.
 
   $( Multivariate polynomials. $)
   cmpl $a class mPoly $.
@@ -181886,10 +182343,17 @@ $)
              ( ( d X. { x } ) oF ( .r ` r ) f ) ) >. ,
         <. ( TopSet ` ndx ) ,
              ( Xt_ ` ( d X. { ( TopOpen ` r ) } ) ) >. } ) ) $.
+
+    $( Define the generating elements of the power series algebra.
+       (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+    df-mvr $a |- mVar = ( i e. _V , r e. _V |-> ( x e. i |->
+      ( f e. { h e. ( NN0 ^m i ) | ( `' h " NN ) e. Fin } |->
+        if ( f = ( y e. i |-> if ( y = x , 1 , 0 ) ) ,
+             ( 1r ` r ) , ( 0g ` r ) ) ) ) ) $.
   $}
 
   ${
-    $d a b f i k r w $.
+    $d f i r w $.
     $( Define the subalgebra of the power series algebra generated by the
        variables; this is the polynomial algebra (the set of power series with
        finite degree).
@@ -181900,11 +182364,9 @@ $)
        are all greater than those degrees.  (Degree is in quotes because there
        is no guarantee that coefficients below that degree are nonzero, as we
        do not assume decidable equality for ` r ` ).  (Contributed by Mario
-       Carneiro, 7-Jan-2015.)  (Revised by AV, 25-Jun-2019.)  (Revised by Jim
-       Kingdon, 7-Oct-2025.) $)
-    df-mplcoe $a |- mPoly = ( i e. _V , r e. _V |-> [_ ( i mPwSer r ) / w ]_
-      ( w |`s { f e. ( Base ` w ) | E. a e. ( NN0 ^m i ) A. b e. ( NN0 ^m i )
-      ( A. k e. i ( a ` k ) < ( b ` k ) -> ( f ` b ) = ( 0g ` r ) ) } ) ) $.
+       Carneiro, 7-Jan-2015.)  (Revised by AV, 25-Jun-2019.) $)
+    df-mpl $a |- mPoly = ( i e. _V , r e. _V |-> [_ ( i mPwSer r ) / w ]_
+      ( w |`s { f e. ( Base ` w ) | f finSupp ( 0g ` r ) } ) ) $.
   $}
 
   ${
@@ -182059,13 +182521,56 @@ $)
       sylbi ) CAFCBGHIJKFZBLDMNZOZFZDLCPZAUDCEQUECUCFUFUBBCUCRCLDSTUA $.
 
     $( Finite bags have finite support.  (Contributed by Stefan O'Rear,
-       9-Mar-2015.)  (Revised by AV, 18-Jul-2019.)  Remove a sethood
-       antecedent.  (Revised by SN, 7-Aug-2024.) $)
-    psrbagfsupp $p |- ( F e. D -> F finSupp 0 ) $=
-      ( wcel cc0 cfsupp wbr ccnv cn cima cfn cn0 wf cvv wa id psrbagf ffnd wb
-      fndmexd psrbag biimpa mpancom simprd fcdmnn0fsuppg mpdan mpbird ) CAFZCGH
-      IZCJKLMFZUJDNCOZULDPFZUJUMULQZUJDCAUJRUJDNCABCDESZTUBUNUJUOABCDPEUCUDUEUF
-      UJUMUKULUAUPCDAUGUHUI $.
+       9-Mar-2015.)  (Revised by AV, 18-Jul-2019.)  (Revised by Jim Kingdon,
+       22-Oct-2026.) $)
+    psrbagfsuppfi $p |- ( ( F e. D /\ I e. Fin ) -> F finSupp 0 ) $=
+      ( wcel cfn wa cc0 cfsupp wbr ccnv cn cima cn0 wf psrbag biimpac simprd wb
+      simpr psrbagf adantr fcdmnn0fsuppfi syl2anc mpbird ) CAFZDGFZHZCIJKZCLMNG
+      FZUIDOCPZUKUHUGULUKHABCDGEQRSUIUHULUJUKTUGUHUAUGULUHABCDEUBUCCDUDUEUF $.
+
+    ${
+      $d F f $.  $d I f x $.
+      $( A finite index set gives a simpler expression for finite bags.
+         (Contributed by Jim Kingdon, 23-Nov-2025.) $)
+      psrbagfi $p |- ( I e. Fin -> D = ( NN0 ^m I ) ) $=
+        ( vx cfn wcel cv ccnv cn cima cn0 cmap wral wceq wdc ad2antlr ralrimiva
+        wa syl co crab cdm wss elmapi fdmd adantl simpl eqeltrd cnvimass a1i cz
+        cfv wf simpr eleqtrd ffvelcdmd nn0zd elnndc wfn elpreima mpbirand dcbid
+        wb elmapfn mpbird ssfidc syl3anc rabid2 sylibr eqtr4id ) CFGZABHZIJKZFG
+        ZBLCMUAZUBZVPDVLVOBVPNVPVQOVLVOBVPVLVMVPGZSZVMUCZFGVNVTUDZEHZVNGZPZEVTN
+        VOVSVTCFVRVTCOZVLVRCLVMVMLCUEZUFZUGVLVRUHUIWAVSVMJUJUKVSWDEVTVSWBVTGZSZ
+        WDWBVMUMZJGZPZWIWJULGWLWIWJWICLWBVMVRCLVMUNVLWHWFQWIWBVTCVSWHUOVRWEVLWH
+        WGQUPZUQURWJUSTWIWCWKWIWCWBCGZWKWMWIVMCUTZWCWNWKSVDVRWOVLWHVMLCVEQCWBJV
+        MVATVBVCVFREVTVNVGVHRVOBVPVIVJVK $.
+    $}
+
+    ${
+      $d A x $.  $d B x $.  $d D x $.  $d F f $.  $d I f $.  $d I x $.
+      $( Finite bags have decidable equality.  (Contributed by Jim Kingdon,
+         11-Oct-2026.) $)
+      psrbagdceq $p |- ( ( I e. Fin /\ A e. D /\ B e. D ) -> DECID A = B ) $=
+        ( vx wcel wceq wdc cfv wral cz cn0 wf eleqtrd elmapi ffvelcdmda syl2anc
+        syl cfn w3a cv simp1 wa cmap co simp2 psrbagfi 3ad2ant1 nn0zd ralrimiva
+        simp3 zdceq dcfi wfn wb elmapfn eqfnfv dcbid mpbird ) EUAHZACHZBCHZUBZA
+        BIZJGUCZAKZVGBKZIZGELZJZVEVBVJJZGELVLVBVCVDUDVEVMGEVEVGEHUEZVHMHVIMHVMV
+        NVHVEENVGAVEANEUFUGZHZENAOVEACVOVBVCVDUHVBVCCVOIVDCDEFUIUJZPZANEQTRUKVN
+        VIVEENVGBVEBVOHZENBOVEBCVOVBVCVDUMVQPZBNEQTRUKVHVIUNSULVJGEUOSVEVFVKVEA
+        EUPZBEUPZVFVKUQVEVPWAVRANEURTVEVSWBVTBNEURTGEABUSSUTVA $.
+    $}
+
+    ${
+      $d N f y $.  $d X f y $.  $d I y $.  $d V y $.
+      $( A bag containing one element is a finite bag.  (Contributed by Mario
+         Carneiro, 7-Jan-2015.)  (Revised by AV, 8-Jul-2019.) $)
+      snifpsrbagfi $p |- ( ( I e. Fin /\ N e. NN0 /\ X e. I )
+                         -> ( y e. I |-> if ( y = X , N , 0 ) ) e. D ) $=
+        ( cfn wcel cn0 w3a cv wceq cc0 cif cmpt cmap co a1i cvv simpl2 0nn0 wdc
+        wf simpl1 simpr simpl3 fidceq syl3anc ifcldcd fmpttd nn0ex simp1 elmapd
+        wa mpbird psrbagfi syl eleqtrrd ) DHIZEJIZFDIZKZADALZFMZENOZPZJDQRZBVCV
+        GVHIDJVGUDVCADVFJVCVDDIZUOZVEENJUTVAVBVIUANJIVJUBSVJUTVIVBVEUCUTVAVBVIU
+        EVCVIUFUTVAVBVIUGDVDFUHUIUJUKVCJDVGTHJTIVCULSUTVAVBUMZUNUPVCUTBVHMVKBCD
+        GUQURUS $.
+    $}
 
     ${
       $d n f x $.  $d I x $.  $d V x $.
@@ -182110,22 +182615,6 @@ $)
         ( cvv wcel cn0 wf cle cofr wbr w3a ccnv cn cima wss id psrbagf 3ad2ant1
         ffnd fndmexd psrbaglesuppg mpancom ) EGHZCAHZEIDJZDCKLMZNDOPQCOPQRUGUHU
         FUIUGECAUGSUGEICABCEFTUBUCUAABCDEGFUDUE $.
-    $}
-
-    ${
-      $d F f $.  $d I f x $.
-      $( A finite index set gives a simpler expression for finite bags.
-         (Contributed by Jim Kingdon, 23-Nov-2025.) $)
-      psrbagfi $p |- ( I e. Fin -> D = ( NN0 ^m I ) ) $=
-        ( vx cfn wcel cv ccnv cn cima cn0 cmap wral wceq wdc ad2antlr ralrimiva
-        wa syl co crab cdm wss elmapi fdmd adantl simpl eqeltrd cnvimass a1i cz
-        cfv wf simpr eleqtrd ffvelcdmd nn0zd elnndc wfn elpreima mpbirand dcbid
-        wb elmapfn mpbird ssfidc syl3anc rabid2 sylibr eqtr4id ) CFGZABHZIJKZFG
-        ZBLCMUAZUBZVPDVLVOBVPNVPVQOVLVOBVPVLVMVPGZSZVMUCZFGVNVTUDZEHZVNGZPZEVTN
-        VOVSVTCFVRVTCOZVLVRCLVMVMLCUEZUFZUGVLVRUHUIWAVSVMJUJUKVSWDEVTVSWBVTGZSZ
-        WDWBVMUMZJGZPZWIWJULGWLWIWJWICLWBVMVRCLVMUNVLWHWFQWIWBVTCVSWHUOVRWEVLWH
-        WGQUPZUQURWJUSTWIWCWKWIWCWBCGZWKWMWIVMCUTZWCWNWKSVDVRWOVLWHVMLCVEQCWBJV
-        MVATVBVCVFREVTVNVGVHRVOBVPVIVJVK $.
     $}
 
     $d G f $.
@@ -182277,6 +182766,288 @@ $)
         UIYMWDWMYSWNWDWMMZGPWGYTWGCKGPWGQYTDCWGYEWKUTCEWGGHRUQTWBJGWHWGVSWAVRWC
         $.
     $}
+  $}
+
+  ${
+    psrbagmaxlem1.x $e |- ( ph -> X C_ ( NN0 ^m I ) ) $.
+    psrbagmaxlem1.xfi $e |- ( ph -> X e. Fin ) $.
+    psrbagmaxlem1.i $e |- ( ph -> I e. Fin ) $.
+    ${
+      $d I j p x $.  $d I j v x y z $.  $d I j w x y z $.  $d X p u x $.
+      $d X u v x y z $.  $d X u w x y z $.  $d j ph v x y z $.  $d j p u x $.
+      $d ph w x y z $.
+      $( Lemma for ~ psrbagmax .  Existence of a bag which is greater than any
+         element of a finite set of bags.  (Contributed by Jim Kingdon,
+         27-Oct-2026.) $)
+      psrbagmaxlem1 $p |- ( ph -> E. p ( p : I --> NN0
+          /\ A. j e. I A. x e. X ( x ` j ) <_ ( p ` j ) ) ) $=
+        ( vu wcel cv cle wbr wral cn0 wrex wa wceq syl2anc vw vy vz cfn cfv wex
+        vv wf c0 csn cun raleq rexbidv cc0 0nn0 ral0 brralrspcev mp2an a1i cdif
+        wss breq2 ralbidv cbvrexv cpr cr clt csup simplr cmap co ad5antr simprr
+        ad2antrr eldifad sseldd cvv nn0ex elmapd mpbid simp-5r nn0maxcl ad6antr
+        ffvelcdmd simprl ad3antrrr elmapi syl simp-6r nn0red maxcl simpr maxle1
+        simpllr letrd ex ralimdva imp maxle2 wb fveq1 breq1d ralunsn rexlimdva2
+        elv sylanbrc biimtrid adantr findcard2sd ralrimiva ac6sfi ) ADUDKZCLZBL
+        ZUEZJLZMNZBEOZJPQZCDODPFLZUHXOXMXTUEZMNZBEOZCDORFUFIAXSCDAXMDKZRZXQBUAL
+        ZOZJPQXQBUIOZJPQZXQBUBLZOZJPQZXQBYJUCLZUJUKZOZJPQZXSUAUBUCEYFUISYGYHJPX
+        QBYFUIULUMYFYJSYGYKJPXQBYFYJULUMYFYNSYGYOJPXQBYFYNULUMYFESYGXRJPXQBYFEU
+        LUMYIYEUNPKXOUNMNZBUIOYIUOYQBUPJBXOUNMPUIUQURUSYLXOUGLZMNZBYJOZUGPQYEYJ
+        UDKZRZYJEVAZYMEYJUTKZRZRZYPYKYTJUGPXPYRSXQYSBYJXPYRXOMVBVCVDUUFYTYPUGPU
+        UFYRPKZRZYTRZYRXMYMUEZVEVFVGVHZPKZXOUUKMNZBYNOZYPUUIUUGUUJPKZUULUUFUUGY
+        TVIZUUIDPXMYMUUIYMPDVJVKZKZDPYMUHZUUIEUUQYMAEUUQVAZYDUUAUUEUUGYTGVLUUIY
+        MEYJUUFUUDUUGYTUUBUUCUUDVMZVNVOVPUUIPDYMVQUDPVQKUUIVRUSAXLYDUUAUUEUUGYT
+        IVLVSVTAYDUUAUUEUUGYTWAWDZYRUUJWBTUUIUUMBYJOZUUJUUKMNZUUNUUHYTUVCUUHYSU
+        UMBYJUUHXNYJKZRZYSUUMUVFYSRZXOYRUUKUVGXOUVGDPXMXNUVGXNUUQKDPXNUHUVGEUUQ
+        XNAUUTYDUUAUUEUUGUVEYSGWCUVGYJEXNUUFUUCUUGUVEYSUUBUUCUUDWEWFUUHUVEYSVIV
+        PVPXNPDWGWHAYDUUAUUEUUGUVEYSWIWDWJUVGYRUUFUUGUVEYSWNWJZUVGYRVFKZUUJVFKZ
+        UUKVFKUVHUVGUUJUUFUUOUUGUVEYSUUFDPXMYMUUFUURUUSUUFEUUQYMAUUTYDUUAUUEGWF
+        UUFYMEYJUVAVOVPYMPDWGWHAYDUUAUUEWNWDWFWJZYRUUJWKTUVFYSWLUVGUVIUVJYRUUKM
+        NUVHUVKYRUUJWMTWOWPWQWRUUIUVIUVJUVDUUIYRUUPWJUUIUUJUVBWJYRUUJWSTUUNUVCU
+        VDRWTUCUUMUVDBYJYMVQXNYMSXOUUJUUKMXMXNYMXAXBXCXEXFJBXOUUKMPYNUQTXDXGAEU
+        DKYDHXHXIXJXRYCCJDPFXPYASXQYBBEXPYAXOMVBVCXKT $.
+    $}
+
+    psrbagmaxlem1a.p $e |- ( ph -> P : I --> NN0 ) $.
+    psrbagmaxlem1a.r $e |- ( ph -> R : I --> NN0 ) $.
+    psrbagmaxlem1a.s $e |- S
+      = ( i e. I |-> sup ( { ( P ` i ) , ( R ` i ) } , RR , < ) ) $.
+    ${
+      $d I i $.  $d i ph $.
+      $( Lemma for ~ psrbagmax .  A new bag which is the pointwise maximum of
+         two bags.  (Contributed by Jim Kingdon, 27-Oct-2026.) $)
+      psrbagmaxlem1a $p |- ( ph -> S : I --> NN0 ) $=
+        ( cv cfv cpr cr cn0 wcel ffvelcdmda clt csup wa nn0maxcl syl2anc fmptd
+        ) AEFENZBOZUGCOZPQUAUBZRDAUGFSUCUHRSUIRSUJRSAFRUGBKTAFRUGCLTUHUIUDUEMUF
+        $.
+    $}
+
+    psrbagmaxlem1x.z $e |- Z = { q e. ( NN0 ^m I ) | q oR <_ S } $.
+    ${
+      $d I f q $.  $d S f q $.  $d I i $.  $d ph i $.
+      $( Lemma for ~ psrbagmax .  Applying ~ psrbaglefifi to the sets in this
+         theorem.  (Contributed by Jim Kingdon, 27-Oct-2026.) $)
+      psrbagmaxlemfi $p |- ( ph -> Z e. Fin ) $=
+        ( vf cn0 cfn wcel cv cle cofr cmap co crab ccnv cima wceq eqid psrbagfi
+        wbr cn syl rabeqdv wf psrbagmaxlem1a cvv a1i elmapd mpbird psrbaglefifi
+        nn0ex eleqtrrd syl2anc eqeltrrd eqeltrid ) AHIUADUBUCULZIRFUDUEZUFZSPAV
+        HIQUAUGUMUHSTQVIUFZUFZVJSAVHIVKVIAFSTZVKVIUILVKQFVKUJZUKUNZUOADVKTVMVLS
+        TADVIVKADVITFRDUPABCDEFGJKLMNOUQARFDURSRURTAVCUSLUTVAVOVDLIVKQDFVNVBVEV
+        FVG $.
+    $}
+
+    psrbagmaxlem1a.x $e |- ( ph
+      -> A. j e. I A. x e. X ( x ` j ) <_ ( P ` j ) ) $.
+    psrbagmaxlem1a.y $e |- ( ph
+      -> A. j e. I A. y e. Y ( y ` j ) <_ ( R ` j ) ) $.
+    psrbagmaxlem1a.yss $e |- ( ph -> Y C_ ( NN0 ^m I ) ) $.
+    psrbagmaxlem1a.yfi $e |- ( ph -> Y e. Fin ) $.
+    ${
+      $d I i j $.  $d I q $.  $d P i j $.  $d R i $.  $d S j $.  $d S q $.
+      $d X j x $.  $d Z x $.  $d i j ph $.  $d ph x $.  $d q x $.
+      $( Lemma for ~ psrbagmax .  All the bags in ` X ` are (pointwise) less
+         than ` S ` , and thus elements of ` Z ` .  (Contributed by Jim
+         Kingdon, 27-Oct-2026.) $)
+      psrbagmaxlem1x $p |- ( ph -> X C_ Z ) $=
+        ( cv wcel wa cn0 cmap co cle cofr wbr sselda cfv wral elmapi ffvelcdmda
+        wf syl nn0red ad2antrr simpr ffvelcdmd psrbagmaxlem1a r19.21bi an32s cr
+        cpr clt csup maxle1 syl2anc weq fveq2 preq12d supeq1d nn0maxcl breqtrrd
+        fvmptd3 letrd ralrimiva cfn wfn elmapfn ffnd adantr inidm eqidd ofrfval
+        mpbird breq1 elrab2 sylanbrc ex ssrdv ) ABJLABUEZJUFZWQLUFZAWRUGZWQUHIU
+        IUJZUFZWQFUKULZUMZWSAJXAWQNUNZWTXDHUEZWQUOZXFFUOZUKUMZHIUPWTXIHIWTXFIUF
+        ZUGZXGXFDUOZXHXKXGWTIUHXFWQWTXBIUHWQUSXEWQUHIUQUTURVAXKXLXKIUHXFDAIUHDU
+        SWRXJQVBWTXJVCZVDZVAZXKXHXKIUHXFFAIUHFUSWRXJADEFGIJNOPQRSVEZVBXMVDVAAXJ
+        WRXGXLUKUMZAXJUGXQBJAXQBJUPHIUAVFVFVGXKXLXLXFEUOZVIZVHVJVKZXHUKXKXLVHUF
+        XRVHUFXLXTUKUMXOXKXRXKIUHXFEAIUHEUSWRXJRVBXMVDZVAXLXRVLVMXKGXFGUEZDUOZY
+        BEUOZVIZVHVJVKXTIFUHSGHVNZVHYEXSVJYFYCXLYDXRYBXFDVOYBXFEVOVPVQXMXKXLUHU
+        FXRUHUFXTUHUFXNYAXLXRVRVMVTVSWAWBWTHIIXGXHUKIWQFWCWCWTXBWQIWDXEWQUHIWEU
+        TAFIWDWRAIUHFXPWFWGAIWCUFWRPWGZYGIWHXKXGWIXKXHWIWJWKMUEZFXCUMXDMWQXALYH
+        WQFXCWLTWMWNWOWP $.
+    $}
+
+    ${
+      $d I i j $.  $d I q $.  $d P i $.  $d R i $.  $d S j $.  $d S q $.
+      $d Y j y $.  $d Z y $.  $d i j ph $.  $d ph y $.  $d q y $.
+      $( Lemma for ~ psrbagmax .  All the bags in ` Y ` are (pointwise) less
+         than ` S ` , and thus elements of ` Z ` .  (Contributed by Jim
+         Kingdon, 27-Oct-2026.) $)
+      psrbagmaxlem1y $p |- ( ph -> Y C_ Z ) $=
+        ( cv wcel wa cn0 cmap co cle cofr wbr sselda cfv wral elmapi ffvelcdmda
+        wf syl nn0red ad2antrr simpr ffvelcdmd psrbagmaxlem1a r19.21bi an32s cr
+        cpr clt csup maxle2 syl2anc weq fveq2 preq12d supeq1d nn0maxcl breqtrrd
+        fvmptd3 letrd ralrimiva cfn wfn elmapfn ffnd adantr inidm eqidd ofrfval
+        mpbird breq1 elrab2 sylanbrc ex ssrdv ) ACKLACUEZKUFZWQLUFZAWRUGZWQUHIU
+        IUJZUFZWQFUKULZUMZWSAKXAWQUCUNZWTXDHUEZWQUOZXFFUOZUKUMZHIUPWTXIHIWTXFIU
+        FZUGZXGXFEUOZXHXKXGWTIUHXFWQWTXBIUHWQUSXEWQUHIUQUTURVAXKXLXKIUHXFEAIUHE
+        USWRXJRVBWTXJVCZVDZVAZXKXHXKIUHXFFAIUHFUSWRXJADEFGIJNOPQRSVEZVBXMVDVAAX
+        JWRXGXLUKUMZAXJUGXQCKAXQCKUPHIUBVFVFVGXKXLXFDUOZXLVIZVHVJVKZXHUKXKXRVHU
+        FXLVHUFXLXTUKUMXKXRXKIUHXFDAIUHDUSWRXJQVBXMVDZVAXOXRXLVLVMXKGXFGUEZDUOZ
+        YBEUOZVIZVHVJVKXTIFUHSGHVNZVHYEXSVJYFYCXRYDXLYBXFDVOYBXFEVOVPVQXMXKXRUH
+        UFXLUHUFXTUHUFYAXNXRXLVRVMVTVSWAWBWTHIIXGXHUKIWQFWCWCWTXBWQIWDXEWQUHIWE
+        UTAFIWDWRAIUHFXPWFWGAIWCUFWRPWGZYGIWHXKXGWIXKXHWIWJWKMUEZFXCUMXDMWQXALY
+        HWQFXCWLTWMWNWOWP $.
+    $}
+  $}
+
+  ${
+    $d I i j k p r u x $.  $d I i p q r u $.  $d I i j k p r v x $.
+    $d I i j k r u y $.  $d I i p q r z $.  $d X i j k p r u x $.
+    $d X i j k p r v x $.  $d X i p r z $.  $d Y i j k p r u $.
+    $d Y i j k p r v $.  $d Y i j k r u y $.  $d Y i p r z $.
+    $d i j k p ph r u x $.  $d ph r v x $.  $d ph r u y $.  $d q r v $.
+    $d v y $.
+    psrbagmax.x $e |- ( ph -> X C_ ( NN0 ^m I ) ) $.
+    psrbagmax.xfi $e |- ( ph -> X e. Fin ) $.
+    psrbagmax.y $e |- ( ph -> Y C_ ( NN0 ^m I ) ) $.
+    psrbagmax.yfi $e |- ( ph -> Y e. Fin ) $.
+    psrbagmax.i $e |- ( ph -> I e. Fin ) $.
+    $( Given two finite sets of bags, provide a finite set which contains all
+       of their elements.
+
+       The proof constructs the result ( ` Z ` in the lemmas), proves its
+       properties (via ~ psrbagmaxlemfi , ~ psrbagmaxlem1x , and
+       ~ psrbagmaxlem1y ), and then this proof combines those lemmas and
+       assigns the result to the variable ` z ` .  (Contributed by Jim Kingdon,
+       24-Oct-2026.) $)
+    psrbagmax $p |- ( ph -> E. z ( ( z C_ ( NN0 ^m I ) /\ z e. Fin )
+        /\ ( X C_ z /\ Y C_ z ) ) ) $=
+      ( vj vu vv vk cv cfv cle wral wa wss vp vx vr vy vq vi cn0 wf wbr cmap co
+      cfn wcel wex psrbagmaxlem1 adantr cpr cr clt csup cmpt cofr crab ad2antrr
+      simplrl simprl eqid psrbagmaxlemfi ssrab2 jctil simplrr weq fveq1 cbvralv
+      breq1d ralbii fveq2 bitri sylib simprr psrbagmaxlem1x psrbagmaxlem1y wceq
+      breq12d ralbidv jca32 sseq1 eleq1 anbi12d sseq2 spcegv sylc exlimddv ) AC
+      UGUAOZUHZKOZUBOZPZWPWNPZQUIZUBDRZKCRZSZBOZUGCUJUKZTZXDULUMZSZDXDTZEXDTZSZ
+      SZBUNZUAAUBKCDUAFGJUOAXCSZCUGUCOZUHZWPUDOZPZWPXOPZQUIZUDERZKCRZSZXMUCAYCU
+      CUNXCAUDKCEUCHIJUOUPXNYCSZUEOUFCUFOZWNPYEXOPUQURUSUTVAZQVBUIZUEXEVCZULUMZ
+      YHXETZYISZDYHTZEYHTZSZSZXMYDWNXOYFUFCDYHUEADXETXCYCFVDZADULUMXCYCGVDZACUL
+      UMXCYCJVDZAWOXBYCVEZXNXPYBVFZYFVGZYHVGZVHZYDYKYLYMYDYIYJUUCYGUEXEVIVJYDLM
+      WNXOYFUFNCDEYHUEYPYQYRYSYTUUAUUBYDXBNOZLOZPZUUDWNPZQUIZLDRZNCRZAWOXBYCVKX
+      BWPUUEPZWSQUIZLDRZKCRUUJXAUUMKCWTUULUBLDUBLVLWRUUKWSQWPWQUUEVMVOVNVPUUMUU
+      IKNCKNVLZUULUUHLDUUNUUKUUFWSUUGQWPUUDUUEVQWPUUDWNVQWDWEVNVRVSZYDYBUUDMOZP
+      ZUUDXOPZQUIZMERZNCRZXNXPYBVTYBWPUUPPZXSQUIZMERZKCRUVAYAUVDKCXTUVCUDMEUDMV
+      LXRUVBXSQWPXQUUPVMVOVNVPUVDUUTKNCUUNUVCUUSMEUUNUVBUUQXSUURQWPUUDUUPVQWPUU
+      DXOVQWDWEVNVRVSZAEXETXCYCHVDZAEULUMXCYCIVDZWAYDLMWNXOYFUFNCDEYHUEYPYQYRYS
+      YTUUAUUBUUOUVEUVFUVGWBWFXLYOBYHULXDYHWCZXHYKXKYNUVHXFYJXGYIXDYHXEWGXDYHUL
+      WHWIUVHXIYLXJYMXDYHDWJXDYHEWJWIWIWKWLWMWM $.
+  $}
+
+  ${
+    $d D u v w x $.  $d D y $.  $d D x z $.  $d F f $.  $d F u v w x $.
+    $d F y $.  $d F x z $.  $d I f $.  $d I z $.  $d S u v w $.  $d S z $.
+    $d X f $.  $d X u v w x $.  $d X y $.  $d X x z $.  $d Y f $.
+    $d Y u v w x $.  $d Y y $.  $d Y x z $.  $d ph u v w $.  $d ph z $.
+    gsumbagdiag.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+    gsumbagdiag.s $e |- S = { y e. D | y oR <_ F } $.
+    gsumbagdiag.f $e |- ( ph -> F e. D ) $.
+    $( Lemma for ~ gsumbagdiagfi .  (Contributed by Mario Carneiro,
+       5-Jan-2015.)  Remove a sethood hypothesis.  (Revised by SN,
+       6-Aug-2024.) $)
+    gsumbagdiaglem $p |- ( ( ph /\
+      ( X e. S /\ Y e. { x e. D | x oR <_ ( F oF - X ) } ) ) ->
+      ( Y e. S /\ X e. { x e. D | x oR <_ ( F oF - Y ) } ) ) $=
+      ( vz wcel cle wbr wa cn0 cvv vu vv vw cv cmin cof cofr simprr breq1 elrab
+      co crab sylib simpld simprd wf adantr simprl elrab2 psrbagf syl psrbagcon
+      syl3anc ffnd fndmexd w3a wi cr letr syl3an adantl caoftrn mp2and sylanbrc
+      nn0re cfv wb ffvelcdmda caddc leaddsub2 leaddsub bitr3d ralbidva cz nn0zd
+      wral zsubcld feqmptd inidm eqidd offval ofrfval2 3bitr4d mpbid elrabd jca
+      ) AIEOZJBUDZGIUEUFZUKZPUGZQZBDULOZRZRZJEOZIWRGJWSUKZXAQZBDULOXEJDOZJGXAQZ
+      XFXEXIJWTXAQZXEXCXIXKRAWQXCUHXBXKBJDWRJWTXAUIUJUMZUNZXEXKWTGXAQZXJXEXIXKX
+      LUOZXEWTDOZXNXEGDOZHSIUPZIGXAQZXPXNRAXQXDMUQZXEIDOZXRXEYAXSXEWQYAXSRAWQXC
+      URCUDZGXAQZXSCIDEYBIGXAUILUSUMZUNZDFIHKUTVAZXEYAXSYDUODFGIHKVBVCZUOXEUAUB
+      UCHPSPPJWTGTXEHGDXTXEHSGXEXQHSGUPXTDFGHKUTVAZVDZVEZXEXIHSJUPXMDFJHKUTVAZX
+      EXPHSWTUPXEXPXNYGUNDFWTHKUTVAYHUAUDZSOZUBUDZSOZUCUDZSOZVFYLYNPQYNYPPQRYLY
+      PPQVGZXEYMYLVHOYOYNVHOYQYPVHOYRYLVOYNVOYPVOYLYNYPVIVJVKVLVMYCXJCJDEYBJGXA
+      UILUSVNXEXHIXGXAQZBIDWRIXGXAUIYEXEXKYSXOXENUDZJVPZYTGVPZYTIVPZUEUKZPQZNHW
+      FUUCUUBUUAUEUKZPQZNHWFXKYSXEUUEUUGNHXEYTHORZUUCSOZUUASOZUUBSOZUUEUUGVQZXE
+      HSYTIYFVRZXEHSYTJYKVRZXEHSYTGYHVRZUUIUUCVHOZUUJUUAVHOZUUKUUBVHOZUULUUCVOU
+      UAVOUUBVOUUPUUQUURVFUUCUUAVSUKUUBPQUUEUUGUUCUUAUUBVTUUCUUAUUBWAWBVJVCWCXE
+      NHUUAUUDPJWTTSWDYJUUNUUHUUBUUCUUHUUBUUOWEZUUHUUCUUMWEWGXENHSJYKWHXENHHUUB
+      UUCUEHGITTYIXEHSIYFVDYJYJHWIZUUHUUBWJZUUHUUCWJWKWLXENHUUCUUFPIXGTSWDYJUUM
+      UUHUUBUUAUUSUUHUUAUUNWEWGXENHSIYFWHXENHHUUBUUAUEHGJTTYIXEHSJYKVDYJYJUUTUV
+      AUUHUUAWJWKWLWMWNWOWP $.
+
+    $d B j k $.  $d D j k z $.  $d F j k $.  $d G j k $.  $d I f y $.
+    $d I x $.  $d S j k $.  $d ph j k $.  $d f j k y $.  $d j k x $.
+    gsumbagdiag.b $e |- B = ( Base ` G ) $.
+    gsumbagdiag.g $e |- ( ph -> G e. CMnd ) $.
+    gsumbagdiagfi.i $e |- ( ph -> I e. Fin ) $.
+    gsumbagdiag.x $e |- ( ( ph /\
+      ( j e. S /\ k e. { x e. D | x oR <_ ( F oF - j ) } ) ) -> X e. B ) $.
+    $( Two-dimensional commutation of a group sum over a "triangular" region.
+       ~ fisum0diag analogue for finite bags.  (Contributed by Mario Carneiro,
+       5-Jan-2015.)  Remove a sethood hypothesis.  (Revised by SN,
+       6-Aug-2024.) $)
+    gsumbagdiagfi $p |- ( ph ->
+      ( G gsum ( j e. S , k e. { x e. D | x oR <_ ( F oF - j ) } |-> X ) ) =
+      ( G gsum ( k e. S , j e. { x e. D | x oR <_ ( F oF - k ) } |-> X ) ) ) $=
+      ( cv cmin cof co cle cofr wbr crab cxp cfn c0g cfv eqid wcel psrbaglefifi
+      syl2anc eqeltrid wa psrbagconcl sylan elrabi eleq2s adantr xpfi wn simprl
+      wceq gsumbagdiaglem simpld brxp sylanbrc pm2.24d impr impbida gsumcom2fi
+      syl ) AFDBUAZJHUAZUBUCZUDZUEUFZUGBEUHZFFFUIZHIVQJIUAZVSUDWAUGBEUHZKMUJKUK
+      ULZQWFUMRAFCUAJWAUGZCEUHZUJOAJEUNZLUJUNZWHUJUNPSCEGJLNUOUPUQZAVRFUNZURZVT
+      EUNZWJWBUJUNWMVTFUNZWNAWIWLWOPCEFGJLVRNOUSUTWNVTWHFWGCVTEVAOVBVPAWJWLSVCB
+      EGVTLNUOUPTAFUJUNZWPWCUJUNWKWKFFVDUPAWLWDWBUNZURZVRWDWCUGZVEMWFVGZAWRURZW
+      SWTXAWLWDFUNZWSAWLWQVFXAXBVRWEUNZABCEFGJLVRWDNOPVHZVIVRWDFFVJVKVLVMWKAWRX
+      BXCURXDABCEFGJLWDVRNOPVHVNVO $.
+
+    $d B j k m $.  $d D j k m n x $.  $d D j m y $.  $d D j m x z $.
+    $d F f j m x $.  $d F j k m n x $.  $d G j m n $.  $d I f m x $.
+    $d S m n $.  $d X m n $.  $d Y k m $.  $d ph m $.
+    psrass1lem.y $e |- ( k = ( n oF - j ) -> X = Y ) $.
+    $( A group sum commutation used by ~ psrass1fi .  (Contributed by Mario
+       Carneiro, 5-Jan-2015.)  Remove a sethood hypothesis.  (Revised by SN,
+       7-Aug-2024.) $)
+    psrass1filem $p |- ( ph ->
+      ( G gsum ( n e. S |->
+        ( G gsum ( j e. { x e. D | x oR <_ n } |-> Y ) ) ) ) =
+      ( G gsum ( j e. S |->
+        ( G gsum ( k e. { x e. D | x oR <_ ( F oF - j ) } |-> X ) ) ) ) ) $=
+      ( vm vz cmin cof cle cofr wbr crab csb cmpt cgsu cmpo wcel gsumbagdiaglem
+      cv co wa ccom wf anassrs fmpttd wf1o ssrab3 psrbagconcl sylan sselid eqid
+      psrbagconf1o syl f1of fcod cfv cn0 adantr psrbagf ffvelcdmda simplr simpr
+      wceq ssrab2 cc nn0cn sub32 syl3an syl3anc mpteq2dva cz ffnd fndmexd nn0zd
+      cvv zsubcld feqmptd offval2 3eqtr4d eqeltrrd nfcsb1v cbvmpt csbeq1 fmptco
+      nfcv csbeq1a a1i feq1d fvmptelcdm anasss syldan gsumbagdiagfi cxp c0g cfn
+      psrbaglefifi syl2anc eqeltrid xpfi wn simprl simpld brxp sylanbrc pm2.24d
+      mpbid impr gsum2d2fi 3eqtr3d ccnv ccmn gsumclfi 3syl cid cres coass eqidd
+      f1ocnv oveq2d gsumf1ofi eqtrd f1ococnv2 coeq2d eqtrid rabbidv ofovex el2v
+      breq2 csbie oveq1 csbeq1d eqtr3id mpteq12dv coeq1d coires1 wss ssid ax-mp
+      resmpt eqtri ) ALUDFLHBURZKUDURZUFUGZUSZUHUIZUJZBEUKZIUVCHURZUVBUSZNULZUM
+      ZUNUSZUMZUNUSZLHFLUDUUTKUVGUVBUSZUVDUJZBEUKZUVIUMZUNUSZUMZUNUSZLJFLHUUTJU
+      RZUVDUJZBEUKZOUMZUNUSZUMZUNUSZLHFLIUVPNUMZUNUSZUMZUNUSALUDHFUVFUVIUOUNUSL
+      HUDFUVPUVIUOUNUSUVMUVTABCDEFGUDHKLMUVIPQRSTUAAUVAFUPZUVGUVFUPZUTZUVGFUPZU
+      VAUVPUPZUTZUVIDUPZABCEFGKMUVAUVGPQRUQZAUWNUWOUWQAUWNUTZUDUVPUVIDUWSUVPDUW
+      HUDUVPUVNUVAUVBUSZUMZVAZVBUVPDUVQVBUWSUVPUVPDUWHUXAUWSIUVPNDAUWNIURUVPUPN
+      DUPUBVCVDZUWSUVPUVPUXAVEZUVPUVPUXAVBUWSUVNEUPZUXDUWSFEUVNCURKUVDUJZCEFQVF
+      ZAKEUPZUWNUVNFUPRCEFGKMUVGPQVGVHVIZUDBEUVPGUVNMPUVPVJZVKVLZUVPUVPUXAVMVLV
+      NUWSUVPDUXBUVQUWSUDJUVPUVPUVHIUWANULZUVIUXAUWHUWSUWOUTZUWTUVHUVPUXMUEMUEU
+      RZKVOZUXNUVGVOZUFUSZUXNUVAVOZUFUSZUMUEMUXOUXRUFUSZUXPUFUSZUMUWTUVHUXMUEMU
+      XSUYAUXMUXNMUPUTZUXOVPUPZUXPVPUPZUXRVPUPZUXSUYAWBZUXMMVPUXNKUXMUXHMVPKVBU
+      WSUXHUWOAUXHUWNRVQVQEGKMPVRVLZVSZUXMMVPUXNUVGUXMUVGEUPMVPUVGVBUXMFEUVGUXG
+      AUWNUWOVTVIEGUVGMPVRVLZVSZUXMMVPUXNUVAUXMUVAEUPMVPUVAVBUXMUVPEUVAUVOBEWCU
+      WSUWOWAZVIEGUVAMPVRVLZVSZUYCUXOWDUPUYDUXPWDUPUYEUXRWDUPUYFUXOWEUXPWEUXRWE
+      UXOUXPUXRWFWGWHWIUXMUEMUXQUXRUFUVNUVAWNWJVPUXMMUVAUVPUYKUXMMVPUVAUYLWKWLZ
+      UYBUXOUXPUYBUXOUYHWMZUYBUXPUYJWMWOUYMUXMUEMUXOUXPUFKUVGWNVPVPUYNUYHUYJUXM
+      UEMVPKUYGWPZUXMUEMVPUVGUYIWPZWQUXMUEMVPUVAUYLWPZWQUXMUEMUXTUXPUFUVCUVGWNW
+      JVPUYNUYBUXOUXRUYOUYBUXRUYMWMWOUYJUXMUEMUXOUXRUFKUVAWNVPVPUYNUYHUYMUYPUYR
+      WQUYQWQWRZUWSUXEUWOUWTUVPUPUXIBEUVPGUVNMUVAPUXJVGVHWSUWSUDUVPUWTUVHUYSWIU
+      WHJUVPUXLUMWBUWSIJUVPNUXLJNXDIUWANWTIUWANXEXAXFIUWAUVHNXBXCZXGYEXHXIZXJZX
+      KAFDUVFFFXLZUDHLUVILXMVOZSVUDVJZTAFUXFCEUKZXNQAUXHMXNUPZVUFXNUPRUACEGKMPX
+      OXPXQZAUWKUTZUVCEUPVUGUVFXNUPVUIFEUVCUXGAUXHUWKUVCFUPRCEFGKMUVAPQVGVHZVIA
+      VUGUWKUAVQBEGUVCMPXOXPZVUBAFXNUPZVULVUCXNUPVUHVUHFFXRXPZAUWMUVAUVGVUCUJZX
+      SUVIVUDWBZAUWMUTZVUNVUOVUPUWKUWNVUNAUWKUWLXTVUPUWNUWOUWRYAUVAUVGFFYBYCYDY
+      FYGAFDUVPVUCHUDLUVIVUDSVUETVUHUWSUXEVUGUVPXNUPUXIAVUGUWNUAVQBEGUVNMPXOXPZ
+      VUAVUMAUWPUVGUVAVUCUJZXSVUOAUWPUTZVURVUOVUSUWNUWKVURAUWNUWOXTVUSUWKUWLABC
+      EFGKMUVGUVAPQRUQYAUVGUVAFFYBYCYDYFYGYHAUWGLUWFUDFUVCUMZVAZUNUSUVMAFDFUWFL
+      VUTVUDSVUETVUHAFDUVLVUTYIZVAZVBFDUWFVBAFFDUVLVVBAUDFUVKDVUIUVFDUVJLVUDSVU
+      EALYJUPZUWKTVQVUKVUIHUVFUVIDAUWKUWLUWQVUBVCVDYKVDAFFVUTVEZFFVVBVEFFVVBVBA
+      UXHVVERUDCEFGKMPQVKVLZFFVUTYQFFVVBVMYLVNAFDVVCUWFAVVAVVBVAZUWFYMFYNZVAZVV
+      CUWFAVVGUWFVUTVVBVAZVAVVIUWFVUTVVBYOAVVJVVHUWFAVVEVVJVVHWBVVFFFVUTUUAVLUU
+      BUUCAVVAUVLVVBAUDJFFUVCUWEUVKVUTUWFVUJAVUTYPAUWFYPUWAUVCWBZUWDUVJLUNVVKHU
+      WCOUVFUVIVVKUWBUVEBEUWAUVCUUTUVDUUGUUDVVKOIUWAUVGUVBUSZNULUVIIVVLNOVVLWNU
+      PJHUFUWAUVGWNWNUUEUUFUCUUHVVKIVVLUVHNUWAUVCUVGUVBUUIUUJUUKUULYRXCZUUMVVIU
+      WFWBAVVIUWFFYNZUWFUWFFUUNFFUUOVVNUWFWBFUUPJFFUWEUURUUQUUSXFYHXGYEVVFYSAVV
+      AUVLLUNVVMYRYTAUWJUVSLUNAHFUWIUVRUWSUWILUXBUNUSUVRUWSUVPDUVPUWHLUXAVUDSVU
+      EAVVDUWNTVQVUQUXCUXKYSUWSUXBUVQLUNUYTYRYTWIYRWR $.
   $}
 
   ${
@@ -182764,7 +183535,341 @@ $)
           TUWJUVMUWRUEEUWNDUVNVULUWEUWOUWHUWQUWIUWDUWNHYDVULUWGUWPLUWDUWNUVQUWF
           YEYFYGUVHXRUVIVVIUVJUVK $.
       $}
+
+      ${
+        $d .0. p y z $.  $d D g p y z $.  $d R g p y z $.  $d U p y z $.
+        $d X g p y z $.  $d p ph y z $.
+        $( The identity element of the ring of power series is a right
+           identity.  (Contributed by Mario Carneiro, 29-Dec-2014.)  (Proof
+           shortened by AV, 8-Jul-2019.) $)
+        psrridmfi $p |- ( ph -> ( X .x. U ) = X ) $=
+          ( vy vz vg vp vw co cbs cfv eqid psr1clfi psrmulclfi psrelbas ffnd cv
+          wcel wa cle cofr wbr crab cmin cof cmulr cmpt cgsu adantr psrmulvalfi
+          simpr cfn crg csn cres breq1 cn0 wf psrbagf adantl nn0re leidd elrabd
+          caofref snssd resmptd oveq2d ccmn ringcmnd psrbaglefifi syl2anc elrab
+          ad2antrr bilani simpld ffvelcdmd syl simprd psrbagcon syl3anc ringcld
+          fmpttd wceq cdif weq fveq2 fveq2d oveq12d eldifad eqeq1d wral cc0 cxp
+          oveq2 cif eqeq1 ifbid eldifi sylan2 ringidcl ring0cl ifexd fvmptd3 wn
+          cvv wne eldifsni necomd wb cc wss nn0sscn sylancl ofsubeq0 necon3bbid
+          fss mpbird eqtrd ralrimiva eqeltrd iffalsed ringrzd rspcdva snfig elv
+          a1i gsumresfi mpbiri fconstmpt fczpsrbag eqeltrid ffvelcdmda ringridm
+          iftrue gsumsncmn 3eqtr3d 3eqtrd eqfnfvd ) AUDDLHGUIZLADEUJUKZUUSACDEF
+          JKUUTUUSNUUTULZQUAACEFGKLHNUAUBPOUCABCDEFHIJKMNOPQRSTUAUMZUNUOUPADUUT
+          LACDEFJKUUTLNUVAQUAUCUOZUPAUDUQZDURZUSZUVDUUSUKEUEUFUQZUVDUTVAZVBZUFD
+          VCZUEUQZLUKZUVDUVKVDVEZUIZHUKZEVFUKZUIZVGZVHUIZUVDLUKZUVDUVDUVMUIZHUK
+          ZUVPUIZUVTUVFUFCDEFGUVPJUELHKUVDNUAUVPULZUBQALCURUVEUCVIAHCURUVEUVBVI
+          ZAUVEVKZAKVLURZUVEOVIZAEVMURZUVEPVIZVJUVFEUVRUVDVNZVOZVHUIEUEUWKUVQVG
+          ZVHUIZUVSUWCUVFUWLUWMEVHUVFUEUVJUWKUVQUVFUVDUVJUVFUVIUVDUVDUVHVBUFUVD
+          DUVGUVDUVDUVHVPUWFUVFUEKUTVQUVDVLUWHUVEKVQUVDVRZADJUVDKQVSVTZUVKVQURZ
+          UVKUVKUTVBUVFUWQUVKUVKWAWBVTWDWCWEZWFWGUVFUGUVJUUTUVREUWKMUVARAEWHURZ
+          UVEAEPWIVIZUVFUVEUWGUVJVLURUWFUWHUFDJUVDKQWJWKUVFUEUVJUVQUUTUVFUVKUVJ
+          URZUSZUUTEUVPUVLUVOUVAUWDAUWIUVEUXAPWMZUXBDUUTUVKLADUUTLVRUVEUXAUVCWM
+          UXBUVKDURZUVKUVDUVHVBZUXAUXDUXEUSUVFUVIUXEUFUVKDUVGUVKUVDUVHVPWLWNZWO
+          ZWPZUXBDUUTUVNHUVFDUUTHVRUXAUVFCDEFJKUUTHNUVAQUAUWEUOVIUXBUVNDURZUVNU
+          VDUVHVBZUXBUVEKVQUVKVRZUXEUXIUXJUSUVFUVEUXAUWFVIUXBUXDUXKUXGDJUVKKQVS
+          WQZUXBUXDUXEUXFWRDJUVDUVKKQWSWTWOZWPXAXBUVFUGUQZUVRUKZMXCUGUVJUWKXDZU
+          VFUXNUXPURZUSZUXOUXNLUKZUVDUXNUVMUIZHUKZUVPUIZMUXRUEUXNUVQUYBUVJUVRUU
+          TUVRULUEUGXEZUVLUXSUVOUYAUVPUVKUXNLXFUYCUVNUXTHUVKUXNUVDUVMXNXGXHZUXR
+          UXNUVJUWKUVFUXQVKZXIUXRUYBMUUTUXRUVQMXCZUYBMXCUEUXPUXNUYCUVQUYBMUYDXJ
+          UVFUYFUEUXPXKUXQUVFUYFUEUXPUVFUVKUXPURZUSZUVQUVLMUVPUIZMUYHUVOMUVLUVP
+          UYHUVOUVNKXLVNXMZXCZIMXOZMUYHBUVNBUQZUYJXCZIMXOZUYLDHYETUYMUVNXCUYNUY
+          KIMUYMUVNUYJXPXQUYGUVFUXAUXIUVKUVJUWKXRZUXMXSAUYLYEURUVEUYGAUYKIMUUTU
+          UTAUWIIUUTURZPUUTEIUVASXTZWQAUWIMUUTURZPUUTEMUVARYAWQZYBWMYCUYHUYKIMU
+          YHUYKYDUVDUVKYFUYHUVKUVDUYGUVKUVDYFUVFUVKUVJUVDYGVTYHUYHUYKUVDUVKUYGU
+          VFUXAUYKUDUEXEYIZUYPUXBUWGKYJUVDVRZKYJUVKVRZVUAAUWGUVEUXAOWMUVFVUBUXA
+          UVFUWOVQYJYKZVUBUWPYLKVQYJUVDYPYMZVIUXBUXKVUDVUCUXLYLKVQYJUVKYPYMKUVD
+          UVKVLYNWTXSYOYQUUAYRWGUYGUVFUXAUYIMXCUYPUXBUUTEUVPUVLMUVAUWDRUXCUXHUU
+          BXSYRYSVIUYEUUCZAUYSUVEUXQUYTWMYTYCVUFYRYSUWKVLURZUVFVUGUDUVDYEUUDUUE
+          UUFUWRUUGUVFUWSUVEUWCUUTURUWNUWCXCUWTUWFUVFUWCUVTUUTUVFUWCUVTIUVPUIZU
+          VTUVFUWBIUVTUVPUVFUWBUYJHUKIUVFUWAUYJHUVFUWAUYJXCZUDUDXEZUVDULUVFUWGV
+          UBVUBVUIVUJYIUWHVUEVUEKUVDUVDVLYNWTUUHXGUVFBUYJUYOIDHUUTTUYNIMUUNAUYJ
+          DURUVEAUYJUHKXLVGZDUHKXLUUIAUWGVUKDUROUHDJKVLQUUJWQUUKVIUVFUWIUYQUWJU
+          YRWQYCYRWGUVFUWIUVTUUTURVUHUVTXCUWJADUUTUVDLUVCUULZUUTEUVPIUVTUVAUWDS
+          UUMWKYRZVULYTUVQUUTUWCUEEUVDDUVAUEUDXEZUVLUVTUVOUWBUVPUVKUVDLXFVUNUVN
+          UWAHUVKUVDUVDUVMXNXGXHUUOWTUUPVUMUUQUUR $.
+      $}
     $}
+
+    ${
+      psrass.d $e |- D = { f e. ( NN0 ^m I ) | ( `' f " NN ) e. Fin } $.
+      psrass.t $e |- .X. = ( .r ` S ) $.
+      psrass.b $e |- B = ( Base ` S ) $.
+      psrass.x $e |- ( ph -> X e. B ) $.
+      psrass.y $e |- ( ph -> Y e. B ) $.
+      ${
+        psrass.z $e |- ( ph -> Z e. B ) $.
+        $( Associative identity for the ring of power series.  (Contributed by
+           Mario Carneiro, 5-Jan-2015.) $)
+        psrass1fi $p |- ( ph ->
+          ( ( X .X. Y ) .X. Z ) = ( X .X. ( Y .X. Z ) ) ) $=
+          ( vx vk vg vj vh vn vz co cbs cfv eqid psrmulclfi psrelbas ffnd cv wa
+          wcel cle cofr wbr crab cmin cof cmulr cmpt cgsu simpr ringcmnd adantr
+          cfn crg ad3antrrr wf ad2antrr breq1 elrab bilani simpld ffvelcdmd cn0
+          ccmn simplr psrbagf syl simprd psrbagcon syl3anc ringcld anasss fveq2
+          wceq oveq2 fveq2d oveq2d psrass1filem psrmulvalfi oveq1d psrbaglefifi
+          oveq12d c0g syl2anc gsummulc1fi syl13anc ad3antlr ffvelcdmda cc nn0cn
+          ringass nnncan2 syl3an mpteq2dva nn0zd zsubcld feqmptd offval2 eqtr4d
+          cz 3eqtr4d 3eqtr2d gsummulc2fi eqfnfvd ) AUACIJFUHZKFUHZIJKFUHZFUHZAC
+          DUIUJZYCABCDEGHYFYCLYFUKZOQABDEFHYBKLQPNMABDEFHIJLQPNMRSULZTULUMUNACY
+          FYEABCDEGHYFYELYGOQABDEFHIYDLQPNMRABDEFHJKLQPNMSTULZULUMUNAUAUOZCUQZU
+          PZDUBUCUOZYJURUSZUTZUCCVAZUBUOZYBUJZYJYQVBVCZUHZKUJZDVDUJZUHZVEZVFUHZ
+          DUDYPUDUOZIUJZYJUUFYSUHZYDUJZUUBUHZVEZVFUHZYJYCUJYJYEUJYLDUBYPDUDUEUO
+          ZYQYNUTZUECVAZUUGYQUUFYSUHZJUJZUUHUUPYSUHZKUJZUUBUHZUUBUHZVEZVFUHZVEZ
+          VFUHDUDYPDUFUUMUUHYNUTZUECVAZUUGUFUOZJUJZUUHUVGYSUHZKUJZUUBUHZUUBUHZV
+          EVFUHZVEZVFUHUUEUULYLUEUCYFCYPGUDUFUBYJDHUVLUVAOYPUKAYKVGZYGADWAUQYKA
+          DNVHVIAHVJUQZYKMVIZYLUUFYPUQZUVGUVFUQZUVLYFUQYLUVRUPZUVSUPZYFDUUBUUGU
+          VKYGUUBUKZADVKUQZYKUVRUVSNVLZUVTUUGYFUQZUVSUVTCYFUUFIACYFIVMZYKUVRABC
+          DEGHYFILYGOQRUMZVNUVTUUFCUQZUUFYJYNUTZUVRUWHUWIUPYLYOUWIUCUUFCYMUUFYJ
+          YNVOVPVQZVRZVSZVIUWAYFDUUBUVHUVJYGUWBUWDUWACYFUVGJACYFJVMZYKUVRUVSABC
+          DEGHYFJLYGOQSUMZVLUWAUVGCUQZUVGUUHYNUTZUVSUWOUWPUPUVTUVEUWPUEUVGCUUMU
+          VGUUHYNVOVPVQZVRZVSUWACYFUVIKACYFKVMZYKUVRUVSABCDEGHYFKLYGOQTUMZVLUWA
+          UVICUQZUVIUUHYNUTZUWAUUHCUQZHVTUVGVMZUWPUXAUXBUPUVTUXCUVSUVTUXCUUHYJY
+          NUTZUVTYKHVTUUFVMZUWIUXCUXEUPAYKUVRWBUVTUWHUXFUWKCGUUFHOWCZWDUVTUWHUW
+          IUWJWECGYJUUFHOWFWGVRZVIUWAUWOUXDUWRCGUVGHOWCWDUWAUWOUWPUWQWECGUUHUVG
+          HOWFWGVRVSWHZWHWIUVGUUPWKZUVKUUTUUGUUBUXJUVHUUQUVJUUSUUBUVGUUPJWJUXJU
+          VIUURKUVGUUPUUHYSWLWMWSWNWOYLUUDUVDDVFYLUBYPUUCUVCYLYQYPUQZUPZUUCDUDU
+          UOUUGUUQUUBUHZVEVFUHZUUAUUBUHDUDUUOUXMUUAUUBUHZVEZVFUHUVCUXLYRUXNUUAU
+          UBUXLUEBCDEFUUBGUDIJHYQLQUWBPOAIBUQZYKUXKRVNAJBUQZYKUXKSVNUXLYQCUQZYQ
+          YJYNUTZUXKUXSUXTUPYLYOUXTUCYQCYMYQYJYNVOVPVQZVRZAUVPYKUXKMVNZAUWCYKUX
+          KNVNZWPWQUXLUUOYFDUUBUDUXMUUADWTUJZYGUYEUKZUWBUYDUXLUXSUVPUUOVJUQUYBU
+          YCUECGYQHOWRXAUXLCYFYTKAUWSYKUXKUWTVNUXLYTCUQZYTYJYNUTZUXLYKHVTYQVMZU
+          XTUYGUYHUPAYKUXKWBUXLUXSUYIUYBCGYQHOWCWDZUXLUXSUXTUYAWECGYJYQHOWFWGVR
+          VSZUXLUUFUUOUQZUPZYFDUUBUUGUUQYGUWBAUWCYKUXKUYLNVLZUYMCYFUUFIAUWFYKUX
+          KUYLUWGVLUYMUWHUUFYQYNUTZUYLUWHUYOUPUXLUUNUYOUEUUFCUUMUUFYQYNVOVPVQZV
+          RZVSZUYMCYFUUPJAUWMYKUXKUYLUWNVLUYMUUPCUQZUUPYQYNUTZUYMUXSUXFUYOUYSUY
+          TUPUXLUXSUYLUYBVIUYMUWHUXFUYQUXGWDZUYMUWHUYOUYPWECGYQUUFHOWFWGVRVSZWH
+          XBUXLUXPUVBDVFUXLUDUUOUXOUVAUYMUXOUUGUUQUUAUUBUHZUUBUHZUVAUYMUWCUWEUU
+          QYFUQUUAYFUQZUXOVUDWKUYNUYRVUBUXLVUEUYLUYKVIYFDUUBUUGUUQUUAYGUWBXHXCU
+          YMUUTVUCUUGUUBUYMUUSUUAUUQUUBUYMUURYTKUYMUGHUGUOZYJUJZVUFUUFUJZVBUHZV
+          UFYQUJZVUHVBUHZVBUHZVEUGHVUGVUJVBUHZVEUURYTUYMUGHVULVUMUYMVUFHUQUPZVU
+          GVTUQZVUJVTUQZVUHVTUQZVULVUMWKZUYMHVTVUFYJYKHVTYJVMAUXKUYLCGYJHOWCXDZ
+          XEZUYMHVTVUFYQUXLUYIUYLUYJVIZXEZUYMHVTVUFUUFVUAXEZVUOVUGXFUQVUPVUJXFU
+          QVUQVUHXFUQVURVUGXGVUJXGVUHXGVUGVUJVUHXIXJWGXKUYMUGHVUIVUKVBUUHUUPVJX
+          QXQAUVPYKUXKUYLMVLZVUNVUGVUHVUNVUGVUTXLVUNVUHVVCXLZXMVUNVUJVUHVUNVUJV
+          VBXLVVEXMUYMUGHVUGVUHVBYJUUFVJVTVTVVDVUTVVCUYMUGHVTYJVUSXNZUYMUGHVTUU
+          FVUAXNZXOUYMUGHVUJVUHVBYQUUFVJVTVTVVDVVBVVCUYMUGHVTYQVVAXNZVVGXOXOUYM
+          UGHVUGVUJVBYJYQVJVTVTVVDVUTVVBVVFVVHXOXRWMWNWNXPXKWNXSXKWNYLUUKUVNDVF
+          YLUDYPUUJUVMUVTUUJUUGDUFUVFUVKVEVFUHZUUBUHUVMUVTUUIVVIUUGUUBUVTUEBCDE
+          FUUBGUFJKHUUHLQUWBPOAUXRYKUVRSVNAKBUQZYKUVRTVNUXHAUVPYKUVRMVNZAUWCYKU
+          VRNVNZWPWNUVTUVFYFDUUBUFUVKUUGUYEYGUYFUWBVVLUVTUXCUVPUVFVJUQUXHVVKUEC
+          GUUHHOWRXAUWLUXIXTXPXKWNXRYLUCBCDEFUUBGUBYBKHYJLQUWBPOAYBBUQYKYHVIAVV
+          JYKTVIUVOUVQAUWCYKNVIZWPYLUCBCDEFUUBGUDIYDHYJLQUWBPOAUXQYKRVIAYDBUQYK
+          YIVIUVOUVQVVMWPXRYA $.
+
+        psrdi.a $e |- .+ = ( +g ` S ) $.
+        $( Distributive law for the ring of power series (left-distributivity).
+           (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+        psrdifi $p |- ( ph ->
+          ( X .X. ( Y .+ Z ) ) = ( ( X .X. Y ) .+ ( X .X. Z ) ) ) $=
+          ( vk vx vy cv cle cofr wbr crab cfv cmin cof co cmpt cgsu cplusg wcel
+          wa wceq eqid psradd fveq1d ad2antrr ssrab2 psrbagconcl adantll sselid
+          cmulr cbs cvv wf psrelbas ffnd ccnv cima cfn cn0 cmap cxp fnmap nn0ex
+          wfn elexd fnovex mp3an12i rabexd inidm eqidd crg ad3antrrr ffvelcdmda
+          cn ringacl syl3anc ofvalg mpdan eqtrd oveq2d simpr ffvelcdmd syl13anc
+          ringdi mpteq2dva adantr psrbaglefifi syl2anc ringcld offval2 ringcmnd
+          eqtr4d gsummptfidmadd2 ringgrpd grpmgmd psrmulfval psrmulclfi 3eqtr4d
+          psraddcl rhmpsrfilem2 ) AUCCEUDUEUFUCUFZUGUHUIZUECUJZUDUFZJUKZXTYCULU
+          MUNZKLDUNZUKZEVIUKZUNZUOZUPUNZUOUCCEUDYBYDYEKUKZYHUNZUOZUPUNZEUDYBYDY
+          ELUKZYHUNZUOZUPUNZEUQUKZUNZUOZJYFGUNJKGUNZJLGUNZDUNZAUCCYKUUAAXTCURZU
+          SZYKEYNYRYTUMZUNZUPUNUUAUUGYJUUIEUPUUGYJUDYBYMYQYTUNZUOUUIUUGUDYBYIUU
+          JUUGYCYBURZUSZYIYDYLYPYTUNZYHUNZUUJUULYGUUMYDYHUULYGYEKLUUHUNZUKZUUMA
+          YGUUPUTUUFUUKAYEYFUUOABYTDEFIKLMRYTVAZUBTUAVBVCVDUULYECURZUUPUUMUTUUL
+          YBCYEYAUECVEZUUFUUKYEYBURAUECYBHXTIYCPYBVAVFVGVHZUULCCYLYPYTCEVJUKZKL
+          VKVKYEUULCUVAKACUVAKVLUUFUUKABCEFHIUVAKMUVAVAZPRTVMZVDZVNUULCUVALACUV
+          ALVLUUFUUKABCEFHIUVALMUVBPRUAVMZVDZVNACVKURUUFUUKAHUFVOWMVPVQURHVRIVS
+          UNZCVKPVSVKVKVTWCVRVKURAIVKURUVGVKURWAWBAIVQNWDVRIVKVKVSWEWFWGZVDZUVI
+          CWHUULUURUSZYLWIUVJYPWIUVJEWJURZYLUVAURZYPUVAURZUUMUVAURAUVKUUFUUKUUR
+          OWKUULCUVAYEKUVDWLUULCUVAYELUVFWLUVAYTEYLYPUVBUUQWNWOWPWQWRWSUULUVKYD
+          UVAURUVLUVMUUNUUJUTAUVKUUFUUKOVDZUULCUVAYCJACUVAJVLUUFUUKABCEFHIUVAJM
+          UVBPRSVMZVDUULYBCYCUUSUUGUUKWTVHXAZUULCUVAYEKUVDUUTXAZUULCUVAYELUVFUU
+          TXAZUVAYTEYHYDYLYPUVBUUQYHVAZXCXBWRXDUUGUDYBYMYQYTYNYRVQUVAUVAUUGUUFI
+          VQURZYBVQURAUUFWTAUVTUUFNXEUECHXTIPXFXGZUULUVAEYHYDYLUVBUVSUVNUVPUVQX
+          HZUULUVAEYHYDYPUVBUVSUVNUVPUVRXHZUUGYNWIUUGYRWIXIXKWSUUGUDYBUVAYMYQYT
+          YNEYRUVBUUQUUGEAUVKUUFOXEXJUWAUWBUWCYNVAYRVAXLWRXDAUDUEBCEFGYHHUCJYFI
+          MRUVSQPSABDEFIKLMRUBAEAEOXMXNTUAXRXOAUUEUUCUUDUUHUNUUBABYTDEFIUUCUUDM
+          RUUQUBABEFGIJKMRQONSTXPABEFGIJLMRQONSUAXPVBAUCCYOYSYTUUCUUDVKUVAUVAUV
+          HAUDUECEHUCIJKPONUVOUVCXSAUDUECEHUCIJLPONUVOUVEXSAUDUEBCEFGYHHUCJKIMR
+          UVSQPSTXOAUDUEBCEFGYHHUCJLIMRUVSQPSUAXOXIWRXQ $.
+
+        $( Distributive law for the ring of power series
+           (right-distributivity).  (Contributed by Mario Carneiro,
+           7-Jan-2015.) $)
+        psrdirfi $p |- ( ph ->
+          ( ( X .+ Y ) .X. Z ) = ( ( X .X. Z ) .+ ( Y .X. Z ) ) ) $=
+          ( vk vx vy cv cle cofr wbr crab co cfv cmin cof cmpt cgsu cplusg wcel
+          cmulr wa wceq eqid psradd fveq1d ad2antrr ssrab2 simpr sselid cbs cvv
+          wf psrelbas ffnd ccnv cn cima cfn cn0 cmap cxp wfn fnmap nn0ex fnovex
+          elexd mp3an12i rabexd inidm eqidd ad3antrrr ffvelcdmda ringacl ofvalg
+          crg syl3anc mpdan eqtrd oveq1d ffvelcdmd psrbagconcl adantll syl13anc
+          ringdir mpteq2dva adantr psrbaglefifi syl2anc ringcld eqtr4d ringcmnd
+          offval2 oveq2d gsummptfidmadd2 ringgrpd grpmgmd psrmulfval psrmulclfi
+          psraddcl rhmpsrfilem2 3eqtr4d ) AUCCEUDUEUFUCUFZUGUHUIZUECUJZUDUFZJKD
+          UKZULZYAYDUMUNUKZLULZEUSULZUKZUOZUPUKZUOUCCEUDYCYDJULZYHYIUKZUOZUPUKZ
+          EUDYCYDKULZYHYIUKZUOZUPUKZEUQULZUKZUOZYELGUKJLGUKZKLGUKZDUKZAUCCYLUUB
+          AYACURZUTZYLEYOYSUUAUNZUKZUPUKUUBUUHYKUUJEUPUUHYKUDYCYNYRUUAUKZUOUUJU
+          UHUDYCYJUUKUUHYDYCURZUTZYJYMYQUUAUKZYHYIUKZUUKUUMYFUUNYHYIUUMYFYDJKUU
+          IUKZULZUUNAYFUUQVAUUGUULAYDYEUUPABUUADEFIJKMRUUAVBZUBSTVCVDVEUUMYDCUR
+          ZUUQUUNVAUUMYCCYDYBUECVFZUUHUULVGVHZUUMCCYMYQUUACEVIULZJKVJVJYDUUMCUV
+          BJACUVBJVKUUGUULABCEFHIUVBJMUVBVBZPRSVLZVEZVMUUMCUVBKACUVBKVKUUGUULAB
+          CEFHIUVBKMUVCPRTVLZVEZVMACVJURUUGUULAHUFVNVOVPVQURHVRIVSUKZCVJPVSVJVJ
+          VTWAVRVJURAIVJURUVHVJURWBWCAIVQNWEVRIVJVJVSWDWFWGZVEZUVJCWHUUMUUSUTZY
+          MWIUVKYQWIUVKEWNURZYMUVBURZYQUVBURZUUNUVBURAUVLUUGUULUUSOWJUUMCUVBYDJ
+          UVEWKUUMCUVBYDKUVGWKUVBUUAEYMYQUVCUURWLWOWMWPWQWRUUMUVLUVMUVNYHUVBURU
+          UOUUKVAAUVLUUGUULOVEZUUMCUVBYDJUVEUVAWSZUUMCUVBYDKUVGUVAWSZUUMCUVBYGL
+          ACUVBLVKUUGUULABCEFHIUVBLMUVCPRUAVLZVEUUMYCCYGUUTUUGUULYGYCURAUECYCHY
+          AIYDPYCVBWTXAVHWSZUVBUUAEYIYMYQYHUVCUURYIVBZXCXBWQXDUUHUDYCYNYRUUAYOY
+          SVQUVBUVBUUHUUGIVQURZYCVQURAUUGVGAUWAUUGNXEUECHYAIPXFXGZUUMUVBEYIYMYH
+          UVCUVTUVOUVPUVSXHZUUMUVBEYIYQYHUVCUVTUVOUVQUVSXHZUUHYOWIUUHYSWIXKXIXL
+          UUHUDYCUVBYNYRUUAYOEYSUVCUURUUHEAUVLUUGOXEXJUWBUWCUWDYOVBYSVBXMWQXDAU
+          DUEBCEFGYIHUCYELIMRUVTQPABDEFIJKMRUBAEAEOXNXOSTXRUAXPAUUFUUDUUEUUIUKU
+          UCABUUADEFIUUDUUEMRUURUBABEFGIJLMRQONSUAXQABEFGIKLMRQONTUAXQVCAUCCYPY
+          TUUAUUDUUEVJUVBUVBUVIAUDUECEHUCIJLPONUVDUVRXSAUDUECEHUCIKLPONUVFUVRXS
+          AUDUEBCEFGYIHUCJLIMRUVTQPSUAXPAUDUEBCEFGYIHUCKLIMRUVTQPTUAXPXKWQXT $.
+      $}
+    $}
+
+    $( The ring of power series is a ring.  (Contributed by Mario Carneiro,
+       29-Dec-2014.) $)
+    psrringfi $p |- ( ph -> S e. Ring ) $=
+      ( vx vy vz vr vf cfv cv cfn wcel eqidd w3a eqid adantr cbs cplusg ccnv cn
+      cmulr cima cn0 cmap co crab cc0 csn cxp wceq cur c0g cmpt ringgrpd psrgrp
+      cif crg 3ad2ant1 simp2 simp3 psrmulclfi wa simpr1 simpr2 simpr3 psrass1fi
+      psrdifi psrdirfi psr1clfi simpr psrlidmfi psrridmfi isringd ) AHIJCUAMZCU
+      BMZCCUEMZKLNUCUDUFOPLUGDUHUIUJZKNDUKULUMUNBUOMZBUPMZUTUQZAVRQAVSQAVTQABCD
+      OEFABGURUSAHNZVRPZINZVRPZRVRBCVTDWEWGEVRSZVTSZAWFBVAPZWHGVBAWFDOPZWHFVBAW
+      FWHVCAWFWHVDVEAWFWHJNZVRPZRZVFZVRWABCVTLDWEWGWMEAWLWOFTZAWKWOGTZWASZWJWIA
+      WFWHWNVGZAWFWHWNVHZAWFWHWNVIZVJWPVRWAVSBCVTLDWEWGWMEWQWRWSWJWIWTXAXBVSSZV
+      KWPVRWAVSBCVTLDWEWGWMEWQWRWSWJWIWTXAXBXCVLAKVRWABCWDWBLDWCEFGWSWCSZWBSZWD
+      SZWIVMAWFVFZKVRWABCVTWDWBLDWEWCEAWLWFFTZAWKWFGTZWSXDXEXFWIWJAWFVNZVOXGKVR
+      WABCVTWDWBLDWEWCEXHXIWSXDXEXFWIWJXJVPVQ $.
+  $}
+
+  ${
+    $d f i r x .0. $.  $d f i r x .1. $.  $d f i r x y D $.  $d f F $.
+    $d y W $.  $d f h i r x y I $.  $d f i r x R $.  $d f h x y X $.
+    mvrfval.v $e |- V = ( I mVar R ) $.
+    mvrfval.d $e |- D = { h e. ( NN0 ^m I ) | ( `' h " NN ) e. Fin } $.
+    mvrfval.z $e |- .0. = ( 0g ` R ) $.
+    mvrfval.o $e |- .1. = ( 1r ` R ) $.
+    mvrfval.i $e |- ( ph -> I e. W ) $.
+    mvrfval.r $e |- ( ph -> R e. Y ) $.
+    $( Value of the generating elements of the power series structure.
+       (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+    mvrfval $p |- ( ph -> V = ( x e. I |-> ( f e. D |->
+        if ( f = ( y e. I |-> if ( y = x , 1 , 0 ) ) , .1. , .0. ) ) ) ) $=
+      ( wceq vi vr cmvr co cv c1 cc0 cif cmpt cvv wcel elexd mptexd ccnv cn cfn
+      cima cn0 cmap crab cur cfv c0g simpl oveq2d rabeqdv eqtr4di mpteq1 adantr
+      wa eqeq2d simpr fveq2d ifbieq12d mpteq12dv df-mvr ovmpoga syl3anc eqtrid
+      ) AJIEUCUDZBIGDGUEZCICUEBUETUFUGUHZUIZTZFMUHZUIZUIZNAIUJUKEUJUKWGUJUKVTWG
+      TAIKRULAELSULABIWFKRUMUAUBIEUJUJBUAUEZGHUEUNUOUQUPUKZHURWHUSUDZUTZWACWHWB
+      UIZTZUBUEZVAVBZWNVCVBZUHZUIZUIWGUCUJWHITZWNETZVJZBWHWRIWFWSWTVDZXAGWKWQDW
+      EXAWKWIHURIUSUDZUTDXAWIHWJXCXAWHIURUSXBVEVFOVGXAWMWDWOWPFMXAWLWCWAWSWLWCT
+      WTCWHIWBVHVIVKXAWOEVAVBFXAWNEVAWSWTVLZVMQVGXAWPEVCVBMXAWNEVCXDVMPVGVNVOVO
+      BCGHUAUBVPVQVRVS $.
+
+    mvrval.x $e |- ( ph -> X e. I ) $.
+    $( Value of the generating elements of the power series structure.
+       (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+    mvrval $p |- ( ph -> ( V ` X ) = ( f e. D |->
+        if ( f = ( y e. I |-> if ( y = X , 1 , 0 ) ) , .1. , .0. ) ) ) $=
+      ( vx cfv cv wceq c1 cc0 cif cmpt mvrfval fveq1d eqid eqeq2 ifbid mpteq2dv
+      cvv eqeq2d ccnv cn cima cfn wcel cn0 cmap co cxp fnmap nn0ex elexd fnovex
+      wfn mp3an12i rabexd mptexd fvmptd3 eqtrd ) AKIUBKUAHFCFUCZBHBUCZUAUCZUDZU
+      EUFUGZUHZUDZEMUGZUHZUHZUBFCVPBHVQKUDZUEUFUGZUHZUDZEMUGZUHZAKIWEAUABCDEFGH
+      IJLMNOPQRSUIUJAUAKWDWKHWEUOWEUKVRKUDZFCWCWJWLWBWIEMWLWAWHVPWLBHVTWGWLVSWF
+      UEUFVRKVQULUMUNUPUMUNTAFCWJUOAGUCUQURUSUTVAGVBHVCVDZCUOOVCUOUOVEVJVBUOVAA
+      HUOVAWMUOVAVFVGAHJRVHVBHUOUOVCVIVKVLVMVNVO $.
+
+    ${
+      mvrval2.f $e |- ( ph -> F e. D ) $.
+      $( Value of the generating elements of the power series structure.
+         (Contributed by Mario Carneiro, 7-Jan-2015.) $)
+      mvrval2 $p |- ( ph -> ( ( V ` X ) ` F ) =
+          if ( F = ( y e. I |-> if ( y = X , 1 , 0 ) ) , .1. , .0. ) ) $=
+        ( vf cfv cv wceq c1 cc0 cif cmpt mvrval fveq1d cvv eqid eqeq1 ifbid c0g
+        cmgp wcel ringidvalg syl wfn mgpex funfvex funfni sylancr eqeltrd elexd
+        fn0g eqeltrid ifexd fvmptd3 eqtrd ) AGKIUCZUCGUBCUBUDZBHBUDKUEUFUGUHUIZ
+        UEZEMUHZUIZUCGVOUEZEMUHZAGVMVRABCDEUBFHIJKLMNOPQRSTUJUKAUBGVQVTCVRULVRU
+        MVNGUEVPVSEMVNGVOUNUOUAAVSEMULULAEDUQUCZUPUCZULADLURZEWBUESDEWALWAUMZQU
+        SUTAUPULVAZWAULURZWBULURZVHAWCWFSDWALWDVBUTWGULWAUPWAUPVCVDVEVFAMDUPUCZ
+        ULPAWEDULURWHULURZVHADLSVGWIULDUPDUPVCVDVEVIVJVKVL $.
+    $}
+  $}
+
+  ${
+    $d D y $.  $d I h y $.  $d X h y $.
+    mvridfi.v $e |- V = ( I mVar R ) $.
+    mvridfi.d $e |- D = { h e. ( NN0 ^m I ) | ( `' h " NN ) e. Fin } $.
+    mvridfi.z $e |- .0. = ( 0g ` R ) $.
+    mvridfi.o $e |- .1. = ( 1r ` R ) $.
+    mvridfi.i $e |- ( ph -> I e. Fin ) $.
+    mvridfi.r $e |- ( ph -> R e. Y ) $.
+    mvridfi.x $e |- ( ph -> X e. I ) $.
+    $( The ` X i ` -th coefficient of the term ` X i ` is ` 1 ` .  (Contributed
+       by Mario Carneiro, 7-Jan-2015.) $)
+    mvridfi $p |- ( ph -> ( ( V ` X ) ` ( y e. I |-> if ( y = X , 1 , 0 ) ) )
+        = .1. ) $=
+      ( c1 wcel wceq cc0 cif cmpt cfv cfn cn0 1nn0 snifpsrbagfi syl3anc mvrval2
+      cv a1i eqid iftruei eqtrdi ) ABGBULIUASUBUCUDZIHUEUEUQUQUAZEKUCEABCDEFUQG
+      HUFIJKLMNOPQRAGUFTSUGTZIGTUQCTPUSAUHUMRBCFGSIMUIUJUKUREKUQUNUOUP $.
+  $}
+
+  ${
+    $d f h x y z I $.  $d f x y ph $.  $d f x R $.  $d x y V $.  $d y z W $.
+    $d x B $.
+    mvrf.s $e |- S = ( I mPwSer R ) $.
+    mvrf.v $e |- V = ( I mVar R ) $.
+    mvrf.b $e |- B = ( Base ` S ) $.
+    mvrffi.i $e |- ( ph -> I e. Fin ) $.
+    mvrf.r $e |- ( ph -> R e. Ring ) $.
+    $( The power series variable function is a function from the index set to
+       elements of the power series structure representing ` X i ` for each
+       ` i ` .  (Contributed by Mario Carneiro, 29-Dec-2014.) $)
+    mvrffi $p |- ( ph -> V : I --> B ) $=
+      ( vf vh vy cv cfn wcel cn0 cmap cvv vx ccnv cn cima co crab wceq cc0 cmpt
+      c1 cif cur cfv c0g crg eqid mvrfval cbs ringidcl syl ad2antrr ring0cl wdc
+      wa wf simpr a1i simplr snifpsrbagfi syl3anc psrbagdceq ifcldcd fmpttd wfn
+      basfn elexd funfvex funfni sylancr adantr cxp fnmap nn0ex fnovex mp3an12i
+      1nn0 rabexd elmapd mpbird psrbasg eleqtrrd fmpt3d ) AUAELMOUBUCUDPQZMRESU
+      EZUFZLOZNENOUAOZUGUJUHUKUIZUGZCULUMZCUNUMZUKZUIZBFAUANWOCWTLMEFPUOXAHWOUP
+      ZXAUPZWTUPZJKUQAWQEQZVDZXCCURUMZWOSUEZBXHXCXJQWOXIXCVEXHLWOXBXIXHWPWOQZVD
+      ZWSWTXAXIAWTXIQZXGXKACUOQZXMKXICWTXIUPZXFUSUTVAAXAXIQZXGXKAXNXPKXICXAXOXE
+      VBUTVAXLEPQZXKWRWOQZWSVCAXQXGXKJVAZXHXKVFXLXQUJRQZXGXRXSXTXLWFVGAXGXKVHNW
+      OMEUJWQXDVIVJWPWRWOMEXDVKVJVLVMXHXIWOXCTTAXITQZXGAURTVNCTQYAVOACUOKVPYATC
+      URCURVQVRVSVTAWOTQXGAWMMWNWOTXDSTTWAVNRTQAETQWNTQWBWCAEPJVPRETTSWDWEWGVTW
+      HWIABXJUGXGABWOCDMEXIPUOGXOXDIJKWJVTWKWL $.
+
+    ${
+      mvrf1.z $e |- .0. = ( 0g ` R ) $.
+      mvrf1.o $e |- .1. = ( 1r ` R ) $.
+      mvrf1.n $e |- ( ph -> .1. =/= .0. ) $.
+      $( The power series variable function is injective if the base ring is
+         nonzero.  (Contributed by Mario Carneiro, 29-Dec-2014.) $)
+      mvrf1fi $p |- ( ph -> V : I -1-1-> B ) $=
+        ( vz wceq c1 cc0 vx vy vh wf cv cfv wral wf1 mvrffi wcel wne adantr wdc
+        wi wa wn cfn simprll simprlr fidceq syl3anc w3a cmpt simp2r fveq1d ccnv
+        cif cn cima cn0 cmap co crab eqid 3ad2ant1 simp2ll mvridfi simp2lr 1nn0
+        crg a1i snifpsrbagfi mvrval2 3eqtr3d simp3 cvv wb mpteqb c0ex ifex mprg
+        1ex iftrue eqeq1 ifbid eqeq12d rspcv biimtrid syl 1ne0 necon3abid mpbii
+        iffalse nsyl syl6 mt2d iffalsed eqtrd 3expia necon3ad notnotrdc sylsyld
+        mpd expr ralrimivva dff13 sylanbrc ) AFBGUDUAUEZGUFZUBUEZGUFZRZXRXTRZUN
+        ZUBFUGUAFUGFBGUHABCDFGIJKLMUIAYDUAUBFFAXRFUJZXTFUJZUOZYBYCAYGYBUOZUOZEH
+        UKZYCAYJYHPULYIYCUMZYJYCUPZUPZYCYIFUQUJZYEYFYKAYNYHLULAYEYFYBURAYEYFYBU
+        SFXRXTUTVAYIYLEHAYHYLEHRAYHYLVBZEQFQUEZXRRZSTVGZVCZQFYPXTRZSTVGZVCRZEHV
+        GZHYOYSXSUFYSYAUFEUUCYOYSXSYAAYGYBYLVDVEYOQUCUEVFVHVIUQUJUCVJFVKVLVMZCE
+        UCFGXRVTHJUUDVNZNOAYHYNYLLVOZAYHCVTUJYLMVOZYEYFYBAYLVPZVQYOQUUDCEUCYSFG
+        UQXTVTHJUUENOUUFUUGYEYFYBAYLVRYOYNSVJUJZYEYSUUDUJUUFUUIYOVSWAUUHQUUDUCF
+        SXRUUEWBVAWCWDYOUUBEHYOUUBYLAYHYLWEYOUUBSYCSTVGZRZYMYOYEUUBUUKUNUUHUUBY
+        RUUARZQFUGZYEUUKYRWFUJZUUBUUMWGQFQFYRUUAWFWHUUNYPFUJYQSTWLWIWJWAWKUULUU
+        KQXRFYQYRSUUAUUJYQSTWMYQYTYCSTYPXRXTWNWOWPWQWRWSUUKUUJTRZYLUUKSTUKUUOUP
+        WTUUKUUOSTSUUJTWNXAXBYCSTXCXDXEXFXGXHXIXJYCXKXLXMXNXOUAUBFBGXPXQ $.
+    $}
+
+    mvrcl2.x $e |- ( ph -> X e. I ) $.
+    $( A power series variable is an element of the base set.  (Contributed by
+       Mario Carneiro, 29-Dec-2014.) $)
+    mvrcl2fi $p |- ( ph -> ( V ` X ) e. B ) $=
+      ( mvrffi ffvelcdmd ) AEBGFABCDEFHIJKLNMO $.
   $}
 
   ${
@@ -182773,66 +183878,56 @@ $)
     $( The multivariate polynomial constructor is a proper binary operator.
        (Contributed by Mario Carneiro, 21-Mar-2015.) $)
     reldmmpl $p |- Rel dom mPoly $=
-      ( vi vr vw vk va vb vf cvv cv cmps co cfv clt wbr wral c0g wceq cn0 cmap
-      wi wrex cbs crab cress csb cmpl df-mplcoe reldmmpo ) ABHHCAIZBIZJKCIZDIZE
-      ILULFIZLMNDUIOUMGILUJPLQTFRUISKZOEUNUAGUKUBLUCUDKUEUFCGADBEFUGUH $.
+      ( vi vr vs vf cvv cv cmps co c0g cfv cfsupp wbr cbs crab cress csb df-mpl
+      cmpl reldmmpo ) ABEECAFBFZGHCFZDFTIJKLDUAMJNOHPRCDABQS $.
 
     mplval.p $e |- P = ( I mPoly R ) $.
     mplval.s $e |- S = ( I mPwSer R ) $.
     mplval.b $e |- B = ( Base ` S ) $.
     mplval.z $e |- .0. = ( 0g ` R ) $.
     ${
-      mplvalcoe.u $e |- U = { f e. B | E. a e. ( NN0 ^m I )
-        A. b e. ( NN0 ^m I ) ( A. k e. I ( a ` k ) < ( b ` k )
-          -> ( f ` b ) = .0. ) } $.
+      mplval.u $e |- U = { f e. B | f finSupp .0. } $.
       $( Value of the set of multivariate polynomials.  (Contributed by Mario
-         Carneiro, 7-Jan-2015.)  (Revised by AV, 25-Jun-2019.)  (Revised by Jim
-         Kingdon, 4-Nov-2025.) $)
-      mplvalcoe $p |- ( ( I e. V /\ R e. W ) -> P = ( S |`s U ) ) $=
-        ( wcel cvv vi vr vs wa cmpl co cress wceq elex adantr adantl cmps fnpsr
-        cxp wfn a1i fnovex syl3anc eqeltrid cv cfv clt wbr wral wi cn0 cmap cbs
-        wrex basfn funfvex funfni sylancr rabexd syl2anc c0g crab csb vex mp3an
-        ressex id oveq12 sylan9eqr eqtr4di fveq2d simpll oveq2d raleqdv imbi12d
-        simplr eqeq2d raleqbidv rexeqbidv rabeqbidv oveq12d df-mplcoe ovmpoga
-        csbied eqtrid ) HISZCJSZUDZBHCUEUFZDEUGUFZNXCHTSZCTSZXETSZXDXEUHXAXFXBH
-        IUIUJZXBXGXACJUIUKZXCDTSZETSXHXCDHCULUFZTOXCULTTUNUOZXFXGXLTSXMXCUMUPXI
-        XJHCTTULUQURUSZXCGUTZLUTVAXOMUTZVAVBVCZGHVDZXPFUTVAZKUHZVEZMVFHVGUFZVDZ
-        LYBVIZFAETRXCADVHVAZTPXCVHTUOXKYETSZVJXNYFTDVHDVHVKVLVMUSVNEDTTWAVOUAUB
-        HCTTUCUAUTZUBUTZULUFZUCUTZXQGYGVDZXSYHVPVAZUHZVEZMVFYGVGUFZVDZLYOVIZFYJ
-        VHVAZVQZUGUFZVRXEUETYGHUHZYHCUHZUDZUCYIYTXETYITSZUUCXMYGTSYHTSUUDUMUAVS
-        UBVSYGYHTTULUQVTUPUUCYJYIUHZUDZYJDYSEUGUUFYJXLDUUEUUCYJYIXLUUEWBYGHYHCU
-        LWCWDOWEZUUFYSYDFAVQEUUFYQYDFYRAUUFYRYEAUUFYJDVHUUGWFPWEUUFYPYCLYOYBUUF
-        YGHVFVGUUAUUBUUEWGZWHZUUFYNYAMYOYBUUIUUFYKXRYMXTUUFXQGYGHUUHWIUUFYLKXSU
-        UFYLCVPVAKUUFYHCVPUUAUUBUUEWKWFQWEWLWJWMWNWORWEWPWSUCFUAGUBLMWQWRURWT
-        $.
+         Carneiro, 7-Jan-2015.)  (Revised by Mario Carneiro, 2-Oct-2015.)
+         (Revised by AV, 25-Jun-2019.) $)
+      mplvalg $p |- ( ( I e. V /\ R e. W ) -> P = ( S |`s U ) ) $=
+        ( wcel co cvv cmps cbs vi vr vs wa cmpl wceq elex adantr adantl cxp wfn
+        cress fnpsr a1i fnovex syl3anc eqeltrid cv cfsupp wbr cfv basfn funfvex
+        funfni sylancr rabexd ressex syl2anc c0g csb vex mp3an oveq12 sylan9eqr
+        id eqtr4di fveq2d simplr breq2d rabeqbidv oveq12d csbied df-mpl ovmpoga
+        crab eqtrid ) GHPZCIPZUDZBGCUEQZDEULQZKWIGRPZCRPZWKRPZWJWKUFWGWLWHGHUGU
+        HZWHWMWGCIUGUIZWIDRPZERPWNWIDGCSQZRLWISRRUJUKZWLWMWRRPWSWIUMUNWOWPGCRRS
+        UOUPUQZWIFURZJUSUTZFAEROWIADTVAZRMWITRUKWQXCRPZVBWTXDRDTDTVCVDVEUQVFEDR
+        RVGVHUAUBGCRRUCUAURZUBURZSQZUCURZXAXFVIVAZUSUTZFXHTVAZWEZULQZVJWKUERXEG
+        UFZXFCUFZUDZUCXGXMWKRXGRPZXPWSXERPXFRPXQUMUAVKUBVKXEXFRRSUOVLUNXPXHXGUF
+        ZUDZXHDXLEULXSXHWRDXRXPXHXGWRXRVOXEGXFCSVMVNLVPZXSXLXBFAWEEXSXJXBFXKAXS
+        XKXCAXSXHDTXTVQMVPXSXIJXAUSXSXICVIVAJXSXFCVIXNXOXRVRVQNVPVSVTOVPWAWBUCF
+        UAUBWCWDUPWF $.
     $}
 
     mplbas.u $e |- U = ( Base ` P ) $.
-    $( Base set of the set of multivariate polynomials.  (Contributed by Mario
-       Carneiro, 7-Jan-2015.)  (Revised by AV, 25-Jun-2019.)  (Revised by Jim
-       Kingdon, 4-Nov-2025.) $)
-    mplbascoe $p |- ( ( I e. V /\ R e. W ) -> U = { f e. B |
-        E. a e. ( NN0 ^m I ) A. b e. ( NN0 ^m I ) (
-          A. k e. I ( a ` k ) < ( b ` k )
-          -> ( f ` b ) = .0. ) } ) $=
-      ( wcel cvv wa cbs cfv cv clt wbr wral wceq wi cmap co wrex crab mplvalcoe
-      cn0 eqid a1i cmps cxp wfn fnpsr fnovex mp3an3an eqeltrid ssrab2 ressbas2d
-      elex wss eqtr4id ) HISZCJSZUAZEBUBUCGUDZLUDUCVMMUDZUCUEUFGHUGVNFUDUCKUHUI
-      MUOHUJUKZUGLVOULZFAUMZRVLVQABDTABCDVQFGHIJKLMNOPQVQUPUNADUBUCUHVLPUQVLDHC
-      URUKZTOURTTUSUTVJHTSVKCTSVRTSVAHIVGCJVGHCTTURVBVCVDVQAVHVLVPFAVEUQVFVI $.
+    ${
+      $d .0. x $.  $d B x $.  $d U x $.  $d f x $.
+      $( Base set of the set of multivariate polynomials.  (Contributed by
+         Mario Carneiro, 7-Jan-2015.)  (Revised by Mario Carneiro, 2-Oct-2015.)
+         (Revised by AV, 25-Jun-2019.) $)
+      mplbas $p |- U = { f e. B | f finSupp .0. } $=
+        ( vi cv wcel cvv cmpl cmps cfv vx vr cfsupp wbr crab reldmmpl wfun wrel
+        vw wa co c0g cbs cress csb df-mpl mpofun funrel ax-mp relelbasov elrabi
+        reldmpsr cxp wfn fnpsr syl eqid mplvalg wceq a1i fnovex mp3an1 eqeltrid
+        fnrel wss ssrab2 ressbas2d eqtr4id eleq2d pm5.21nii eqriv ) UAEFOZHUCUD
+        ZFAUEZUAOZEPGQPZCQPZUJZWEWDPZWEEBRGCUFRUGRUHNUBQQUINOUBOZSUKUIOZWBWJULT
+        UCUDFWKUMTUEUNUKUORUIFNUBUPUQRURUSIMUTWIWEAPWHWCFWEAVAWEADSGCVBSQQVCZVD
+        ZSUHVEWLSVNUSJKUTVFWHEWDWEWHEBUMTWDMWHWDABDQABCDWDFGQQHIJKLWDVGVHADUMTV
+        IWHKVJWHDGCSUKZQJWMWFWGWNQPVEGCQQSVKVLVMWDAVOWHWCFAVPVJVQVRVSVTWA $.
+    $}
 
-    $d X a b f $.
     $( Property of being a polynomial.  (Contributed by Mario Carneiro,
        7-Jan-2015.)  (Revised by Mario Carneiro, 2-Oct-2015.)  (Revised by AV,
-       25-Jun-2019.)  (Revised by Jim Kingdon, 4-Nov-2025.) $)
-    mplelbascoe $p |- ( ( I e. V /\ R e. W ) -> ( X e. U <-> ( X e. B /\
-        E. a e. ( NN0 ^m I ) A. b e. ( NN0 ^m I ) (
-        A. k e. I ( a ` k ) < ( b ` k ) -> ( X ` b ) = .0. ) ) ) ) $=
-      ( vf wcel wa cv cfv clt wbr wral wceq cn0 cmap wrex crab mplbascoe eleq2d
-      wi co fveq1 eqeq1d imbi2d rexralbidv elrab bitrdi ) GHTCITUAZJETJFUBZLUBU
-      CVCMUBZUCUDUEFGUFZVDSUBZUCZKUGZUNZMUHGUIUOZUFLVJUJZSAUKZTJATVEVDJUCZKUGZU
-      NZMVJUFLVJUJZUAVBEVLJABCDESFGHIKLMNOPQRULUMVKVPSJAVFJUGZVIVOLMVJVJVQVHVNV
-      EVQVGVMKVDVFJUPUQURUSUTVA $.
+       25-Jun-2019.) $)
+    mplelbas $p |- ( X e. U <-> ( X e. B /\ X finSupp .0. ) ) $=
+      ( vf cv cfsupp wbr breq1 mplbas elrab2 ) NOZHPQGHPQNGAEUAGHPRABCDENFHIJKL
+      MST $.
   $}
 
   ${
@@ -182840,12 +183935,45 @@ $)
     $( ` mPoly ` has universal domain.  (Contributed by Jim Kingdon,
        5-Nov-2025.) $)
     fnmpl $p |- mPoly Fn ( _V X. _V ) $=
-      ( vi vr vw vk va vb vf cvv cv cmps co cfv clt wbr wral cbs wfn wcel mp2an
-      vex c0g wceq cn0 cmap wrex crab cress csb cmpl df-mplcoe cxp fnpsr fnovex
-      wi mp3an basfn funfvex funfni rabex ressex csbexa fnmpoi ) ABHHCAIZBIZJKZ
-      CIZDIZEILVGFIZLMNDVCOVHGILVDUALUBUNFUCVCUDKZOEVIUEZGVFPLZUFZUGKZUHUICGADB
-      EFUJCVEVMJHHUKQVCHRVDHRVEHRULATBTVCVDHHJUMUOVFHRZVLHRVMHRCTZVJGVKPHQVNVKH
-      RZUPVOVPHVFPVFPUQURSUSVLVFHHUTSVAVB $.
+      ( vi vr vw vf cvv cv cmps co c0g cfv cfsupp wbr cbs crab csb wfn wcel vex
+      cress mp2an cmpl df-mpl cxp fnpsr fnovex mp3an basfn funfvex funfni rabex
+      ressex csbexa fnmpoi ) ABEECAFZBFZGHZCFZDFUOIJKLZDUQMJZNZSHZOUACDABUBCUPV
+      AGEEUCPUNEQUOEQUPEQUDARBRUNUOEEGUEUFUQEQZUTEQVAEQCRZURDUSMEPVBUSEQZUGVCVD
+      EUQMUQMUHUITUJUTUQEEUKTULUM $.
+  $}
+
+  ${
+    $d I f x y $.  $d I k x y $.  $d R k x $.  $d V k x $.  $d W y $.
+    $d X f x y $.  $d X k x y $.  $d k ph x y $.
+    mvrcl.s $e |- P = ( I mPoly R ) $.
+    mvrcl.v $e |- V = ( I mVar R ) $.
+    mvrcl.b $e |- B = ( Base ` P ) $.
+    mvrclfi.i $e |- ( ph -> I e. Fin ) $.
+    mvrcl.r $e |- ( ph -> R e. Ring ) $.
+    mvrcl.x $e |- ( ph -> X e. I ) $.
+    $( A power series variable is a polynomial.  (Contributed by Mario
+       Carneiro, 9-Jan-2015.) $)
+    mvrclfi $p |- ( ph -> ( V ` X ) e. B ) $=
+      ( vf cfv wcel eqid wceq cn0 wa vy vk vx co cbs c0g cfsupp wbr mvrcl2fi cv
+      cmps c1 cc0 cif cmpt csn cgrp ringgrpd grpidcl syl ccnv cn cima cmap crab
+      cfn psrelbas ffund 1nn0 a1i 0nn0 wdc adantr fidceq syl3anc ifcldcd fmpttd
+      wf simpr cvv nn0ex elmapd mpbird snfig cdm snssd psrelbasfi fdmd sseqtrrd
+      cdif difeq1d imaeq2d wfun wrex fvelima simprr psrbagfi eleq2d pm5.32i cur
+      sylan crg wne eldifsn bilani simpld mvrval2 simprd neneqd iffalsed sylbir
+      eqtrd ad2ant2r eqtr3d velsn sylibr rexlimddv ex ssrdv isfsuppfid mplelbas
+      eqsstrd sylanbrc ) AGFOZEDUKUDZUEOZPYDDUFOZUGUHYDBPAYFDYEEFGYEQZIYFQZKLMU
+      IZAYDDUEOZYFUAEUAUJZGRZULUMUNZUOZUPZYGYJADUQPYGYKPADLURYKDYGYKQZYGQZUSUTA
+      NUJVAVBVCVFPNSEVDUDZVEZYKYDAYFYTDYENEYKYDYHYQYTQZYIYJVGVHZAYOYSPZYPVFPAUU
+      CESYOVRAUAEYNSAYLEPZTZYMULUMSULSPUUEVIVJUMSPUUEVKVJUUEEVFPZUUDGEPZYMVLAUU
+      FUUDKVMAUUDVSAUUGUUDMVMEYLGVNVOVPVQASEYOVTVFSVTPAWAVJKWBWCZYOYSWDUTAYPYSY
+      DWEZAYOYSUUHWFAYSYKYDAYFDYEEYKYDYHYQKYIYJWGWHZWIAYDUUIYPWJZVCYDYSYPWJZVCZ
+      YGUPZAUUKUULYDAUUIYSYPUUJWKWLAUBUUMUUNAUBUJZUUMPZUUOUUNPZAUUPTZUCUJZYDOZU
+      UORZUUQUCUULAYDWMUUPUVAUCUULWNUUBUCUUOUULYDWOXAUURUUSUULPZUVATTZUUOYGRUUQ
+      UVCUUTUUOYGUURUVBUVAWPAUVBUUTYGRZUUPUVAAUVBTAUUSYTYPWJZPZTZUVDAUVFUVBAUVE
+      UULUUSAYTYSYPAUUFYTYSRKYTNEUUAWQUTWKWRWSUVGUUTUUSYORZDWTOZYGUNYGUVGUAYTDU
+      VINUUSEFVFGXBYGIUUAYRUVIQAUUFUVFKVMADXBPUVFLVMAUUGUVFMVMUVGUUSYTPZUUSYOXC
+      ZUVFUVJUVKTAUUSYTYOXDXEZXFXGUVGUVHUVIYGUVGUUSYOUVGUVJUVKUVLXHXIXJXLXKXMXN
+      UBYGXOXPXQXRXSYBXTYFCDYEBEYDYGHYHYIYRJYAYC $.
   $}
 
   ${
@@ -182867,22 +183995,16 @@ $)
        (Contributed by Mario Carneiro, 7-Jan-2015.)  (Revised by Mario
        Carneiro, 2-Oct-2015.) $)
     mplval2g $p |- ( ( I e. V /\ R e. W ) -> P = ( S |`s U ) ) $=
-      ( vk va vb vf wcel cv cfv co cress eqid wa clt wbr wral c0g wceq cn0 cmap
-      wi wrex cbs crab mplvalcoe mplbascoe oveq2d eqtr4d ) EFOBGOUAZACKPZLPQURM
-      PZQUBUCKEUDUSNPQBUEQZUFUIMUGEUHRZUDLVAUJNCUKQZULZSRCDSRVBABCVCNKEFGUTLMHI
-      VBTZUTTZVCTUMUQDVCCSVBABCDNKEFGUTLMHIVDVEJUNUOUP $.
+      ( vf cbs cfv c0g eqid mplbas mplvalg ) CLMZABCDKEFGBNMZHIROZSOZRABCDKESHI
+      TUAJPQ $.
 
-    $d B x $.  $d U x $.
     mplbasss.b $e |- B = ( Base ` S ) $.
     $( The set of polynomials is a subset of the set of power series.
        (Contributed by Mario Carneiro, 7-Jan-2015.)  (Revised by Mario
        Carneiro, 2-Oct-2015.) $)
     mplbasss $p |- U C_ B $=
-      ( vx vk va vb vf cv wcel cfv cvv cmpl clt wbr wral c0g wceq cn0 cmap wrex
-      wi co crab wa reldmmpl cxp wfn wrel fnmpl fnrel relelbasov eqid mplbascoe
-      ax-mp syl ssrab2 eqsstrdi sseld pm2.43i ssriv ) KEAKPZEQZVIAQVJEAVIVJELPZ
-      MPRVKNPZRUAUBLFUCVLOPRCUDRZUEUINUFFUGUJZUCMVNUHZOAUKZAVJFSQCSQULEVPUEVIEB
-      TFCUMTSSUNZUOTUPUQVQTURVBGIUSABCDEOLFSSVMMNGHJVMUTIVAVCVOOAVDVEVFVGVH $.
+      ( vf cv c0g cfv cfsupp wbr eqid mplbas ssrab3 ) KLCMNZOPKAEABCDEKFTGHJTQI
+      RS $.
   $}
 
   ${
@@ -182915,109 +184037,109 @@ $)
         $( Lemma for ~ mplsubgfi .  There exists a polynomial.  (Contributed by
            Jim Kingdon, 21-Nov-2025.) $)
         mplsubgfilemm $p |- ( ph -> E. j j e. U ) $=
-          ( vk vb vf cfv wcel cv cn0 cfn va vn c0g wex cbs clt wbr wral wceq wi
-          cmap co wrex ccnv cima crab csn cxp eqid psr0 psr0cl eqeltrd cc0 cmpt
-          cn wf wa 0nn0 a1i fmpttd cvv elmapd mpbird fveq1d adantr cgrp grpidcl
-          nn0ex simpr psrbagfi eleqtrrd fvconst2g syl2anc eqtrd ralrimiva fveq1
-          syl a1d breq1d ralbidv rspceaimv wb mplelbascoe mpbir2and spcegv sylc
-          eleq1 ) ADUCPZEQZWSFRZEQZFUDAWSWRDUEPZQZMRZUARZPZXDNRZPZUFUGZMGUHZXGW
-          RPZCUCPZUIZUJNSGUKULZUHUAXNUMZAWRORUNVEUOTQOXNUPZXLUQURZXBAXPCDOGXLTW
-          RHKLXPUSZXLUSZWRUSUTZAXBXPCDOGTXLHKLXRXSXBUSZVAVBAUBGVCVDZXNQZXDYBPZX
-          HUFUGZMGUHZXMUJZNXNUHXOAYCGSYBVFAUBGVCSVCSQAUBRGQVGVHVIVJASGYBVKTSVKQ
-          AVRVIKVLVMAYGNXNAXGXNQZVGZXMYFYIXKXGXQPZXLAXKYJUIYHAXGWRXQXTVNVOYIXLC
-          UEPZQZXGXPQYJXLUIAYLYHACVPQZYLLYKCXLYKUSXSVQWGVOYIXGXNXPAYHVSAXPXNUIZ
-          YHAGTQZYNKXPOGXRVTWGVOWAXPXLXGYKWBWCWDWHWEXJYFXMUANYBXNXNXEYBUIZXIYEM
-          GYPXFYDXHUFXDXEYBWFWIWJWKWCAYOYMWSXCXOVGWLKLXBBCDEMGTVPWRXLUANIHYAXSJ
-          WMWCWNZYQXAWSFWREWTWREWQWOWP $.
+          ( vf c0g cfv wcel cfn eqid c0 syl cv wex cbs cfsupp wbr ccnv cima cn0
+          cn cmap co crab csn psr0 psr0cl eqeltrd cgrp grpidcl wfun psrelbasfun
+          cxp 0fi a1i cdm wss 0ss cdif fconstg wceq psrbagfi xpeq1d eqtrd feq1d
+          wf mpbird fimassd isfsuppfid mplelbas sylanbrc eleq1 spcegv sylc ) AD
+          NOZEPZWDFUAZEPZFUBAWCDUCOZPZWCCNOZUDUEWDAWCMUAUFUIUGQPMUHGUJUKZULZWIU
+          MZVAZWGAWKCDMGWIQWCHKLWKRZWIRZWCRUNZAWGWKCDMGQWIHKLWNWOWGRZUOUPZAWCCU
+          COZWGSWIWRACUQPWIWSPZLWSCWIWSRWOURTZAWHWCUSWRWGCDGWCHWQUTTSQPAVBVCSWC
+          VDZVEAXBVFVCAWJWLWCXBSVGAWJWLWCVNWJWLWJWLVAZVNZAWTXDXAWJWIWSVHTAWJWLW
+          CXCAWCWMXCWPAWKWJWLAGQPWKWJVIKWKMGWNVJTVKVLVMVOVPVQWGBCDEGWCWIIHWQWOJ
+          VRVSZXEWFWDFWCEWEWCEVTWAWB $.
       $}
 
       ${
-        $d .+ a b p q $.  $d I a b k p q $.  $d I c d p q u v $.
-        $d I b e k p q $.  $d I b e q s t $.  $d R a b k p q $.
-        $d R c d p q u v $.  $d R b e k p q $.  $d R b e q s t $.
-        $d X a b p q $.  $d X c d p q u $.  $d X b e p q u $.  $d Y a b p q $.
-        $d Y c d p q $.  $d Y b e p q $.  $d Y b e q s $.  $d b e p ph q $.
-        $d b e p q u v $.  $d c d p ph q $.  $d c d q s t $.
+        $d .+ a b c p q $.  $d I a b c p q $.  $d I c d p q u v $.
+        $d I b e k p q $.  $d I b c q s t $.  $d R a b c p q $.
+        $d R c d p q u v $.  $d R b e k p q $.  $d R b c q s t $.
+        $d X a b c p q $.  $d X c d p q u $.  $d X b e p q u $.
+        $d Y a b c p q $.  $d Y c d p q $.  $d Y b e p q $.  $d Y b c q s $.
+        $d a b k p q $.  $d a b c p ph q $.  $d b c p q u v $.  $d d p ph q $.
+        $d d q s t $.  $d e p ph q $.  $d e q s t $.  $d e p q u v $.
         mplsubgfilemcl.x $e |- ( ph -> X e. U ) $.
         mplsubgfilemcl.y $e |- ( ph -> Y e. U ) $.
         mplsubgfilemcl.p $e |- .+ = ( +g ` S ) $.
         $( Lemma for ~ mplsubgfi .  The sum of two polynomials is a polynomial.
            (Contributed by Jim Kingdon, 26-Nov-2025.) $)
         mplsubgfilemcl $p |- ( ph -> ( X .+ Y ) e. U ) $=
-          ( wcel cfv cn0 vk va vb vv vp vu vt vq vs vc vd ve co cbs cv clt wral
-          wbr c0g wceq cmap wrex eqid grpmgmd mplbasss sselid psraddcl cfn cgrp
-          wi wa wb mplelbascoe mpbid simprd adantr caddc cof wf nn0addcl adantl
-          syl2anc simplrl cvv nn0ex a1i elmapd ad2antrr simprl inidm off mpbird
-          cplusg simp-4l simplr psradd fveq1d psrelbasfi cxp fnmap elexd fnovex
-          wfn mp3an12i eqidd ffvelcdmda grpcld ofvalg eqtrd ad3antrrr ffvelcdmd
-          ffnd nn0red biimpa nn0addcld eqeltrd elmapi cle cr nn0addge1 breqtrrd
-          simpr weq fveq2 breq12d rspcdva lelttrd ralrimiva sylibr fveq1 breq2d
-          cbvralv ralbidv fveqeq2 imbi12d simprr mpd oveq1d syl rexlimddv ex
-          grplidd nn0addge2 3eqtrd breq1d rspceaimv mpbir2and ) AHICUMZFRZUUHEU
-          NSZRZUAUOZUBUOZSZUULUCUOZSZUPURZUAGUQZUUOUUHSZDUSSZUTZVJUCTGVAUMZUQUB
-          UVBVBZAUUJCDEGHIJUUJVCZQADNVDAFUUJHUUJBDEFGKJLUVDVEZOVFZAFUUJIUVEPVFZ
-          VGAUDUOZUEUOZSZUVHUFUOZSZUPURZUDGUQZUVKHSUUTUTZVJZUFUVBUQZUVCUEUVBAHU
-          UJRZUVQUEUVBVBZAHFRZUVRUVSVKZOAGVHRZDVIRZUVTUWAVLMNUUJBDEFUDGVHVIHUUT
-          UEUFKJUVDUUTVCZLVMWBVNVOAUVIUVBRZUVQVKZVKZUGUOZUHUOZSZUWHUIUOZSZUPURZ
-          UGGUQZUWKISUUTUTZVJZUIUVBUQZUVCUHUVBAUWQUHUVBVBZUWFAIUUJRZUWRAIFRZUWS
-          UWRVKZPAUWBUWCUWTUXAVLMNUUJBDEFUGGVHVIIUUTUHUIKJUVDUWDLVMWBVNVOVPUWGU
-          WIUVBRZUWQVKZVKZUVIUWIVQVRUMZUVBRZUULUXESZUUPUPURZUAGUQZUVAVJZUCUVBUQ
-          UVCUXDUXFGTUXEVSZUXDUJUKGGGVQTTTUVIUWIVHVHUJUOZTRUKUOZTRVKUXLUXMVQUMT
-          RUXDUXLUXMVTWAUXDUWEGTUVIVSZAUWEUVQUXCWCZAUWEUXNVLUWFUXCATGUVIWDVHTWD
-          RZAWEWFZMWGZWHVNZUXDUXBGTUWIVSZUWGUXBUWQWIZAUXBUXTVLUWFUXCATGUWIWDVHU
-          XQMWGZWHVNZAUWBUWFUXCMWHZUYDGWJZWKAUXFUXKVLUWFUXCATGUXEWDVHUXQMWGWHWL
-          UXDUXJUCUVBUXDUUOUVBRZVKZUXIUVAUYGUXIVKZUUSUUTUUOISZDWMSZUMZUYIUUTUYH
-          UUSUUOHSZUYIUYJUMZUYKUYHAUYFUUSUYMUTAUWFUXCUYFUXIWNZUXDUYFUXIWOZAUYFV
-          KZUUSUUOHIUYJVRUMZSZUYMAUUSUYRUTUYFAUUOUUHUYQAUUJUYJCDEGHIJUVDUYJVCZQ
-          UVFUVGWPWQVPAUVBUVBUYLUYIUYJUVBDUNSZHIWDWDUUOAUVBUYTHAUUJDEGUYTHJUYTV
-          CZMUVDUVFWRZXLAUVBUYTIAUUJDEGUYTIJVUAMUVDUVGWRZXLVAWDWDWSXCUXPAGWDRUV
-          BWDRWTWEAGVHMXATGWDWDVAXBXDZVUDUVBWJUYPUYLXEUYPUYIXEUYPUYTUYJDUYLUYIV
-          UAUYSAUWCUYFNVPAUVBUYTUUOHVUBXFAUVBUYTUUOIVUCXFZXGXHXIWBUYHUYLUUTUYIU
-          YJUYHUVJUVHUUOSZUPURZUDGUQZUYLUUTUTZUYHULUOZUVISZVUJUUOSZUPURZULGUQVU
-          HUYHVUMULGUYHVUJGRZVKZVUKVUJUXESZVULVUOVUKVUOGTVUJUVIUXDUXNUYFUXIVUNU
-          XSXJUYHVUNYBZXKZXMZVUOVUPVUOVUPVUKVUJUWISZVQUMZTUYHGGVUKVUTVQGTUVIUWI
-          VHVHVUJUYHAUWEUVIGXCUYNUXDUWEUYFUXIUXOWHAUWEVKGTUVIAUWEUXNUXRXNXLWBUY
-          HAUXBUWIGXCUYNUXDUXBUYFUXIUYAWHAUXBVKGTUWIAUXBUXTUYBXNXLWBUXDUWBUYFUX
-          IUYDWHZVVBUYEVUOVUKXEVUOVUTXEVUOVUKVUTVURVUOGTVUJUWIUXDUXTUYFUXIVUNUY
-          CXJVUQXKZXOZXHZVVDXPXMZVUOVULVUOGTVUJUUOUYGGTUUOVSZUXIVUNUYFVVGUXDUUO
-          TGXQWAWHVUQXKXMZVUOVUKVVAVUPXRVUOVUKXSRVUTTRVUKVVAXRURVUSVVCVUKVUTXTW
-          BVVEYAVUOUXHVUPVULUPURUAGVUJUAULYCUXGVUPUUPVULUPUULVUJUXEYDUULVUJUUOY
-          DYEUYGUXIVUNWOVUQYFZYGYHVUGVUMUDULGUDULYCUVJVUKVUFVULUPUVHVUJUVIYDUVH
-          VUJUUOYDYEYLYIUYHUVPVUHVUIVJUFUVBUUOUFUCYCZUVNVUHUVOVUIVVJUVMVUGUDGVV
-          JUVLVUFUVJUPUVHUVKUUOYJYKYMUVKUUOUUTHYNYOUWGUVQUXCUYFUXIAUWEUVQYPXJUY
-          OYFYQYRXIUYHUYTUYJDUYIUUTVUAUYSUWDUYHAUWCUYNNYSUYHAUYFUYIUYTRUYNUYOVU
-          EWBUUBUYHUWJUWHUUOSZUPURZUGGUQZUYIUUTUTZUYHVUTVULUPURZULGUQVVMUYHVVOU
-          LGVUOVUTVUPVULVUOVUTVVCXMZVVFVVHVUOVUTVVAVUPXRVUOVUTXSRVUKTRVUTVVAXRU
-          RVVPVURVUTVUKUUCWBVVEYAVVIYGYHVVLVVOUGULGUGULYCUWJVUTVVKVULUPUWHVUJUW
-          IYDUWHVUJUUOYDYEYLYIUYHUWPVVMVVNVJUIUVBUUOUIUCYCZUWNVVMUWOVVNVVQUWMVV
-          LUGGVVQUWLVVKUWJUPUWHUWKUUOYJYKYMUWKUUOUUTIYNYOUXDUWQUYFUXIUWGUXBUWQY
-          PWHUYOYFYQUUDUUAYHUURUXIUVAUBUCUXEUVBUVBUUMUXEUTZUUQUXHUAGVVRUUNUXGUU
-          PUPUULUUMUXEYJUUEYMUUFWBYTYTAUWBUWCUUIUUKUVCVKVLMNUUJBDEFUAGVHVIUUHUU
-          TUBUCKJUVDUWDLVMWBUUG $.
+          ( wcel wss wa va vb vc vp vq cbs cfv c0g cfsupp eqid grpmgmd mplbasss
+          co wbr sselid psraddcl cv cfn cdm cdif cima csn mplelbas sylib simprd
+          w3a fsuppfiss wex adantr cn0 cmap simplr2 wb psrelbasfi fdmd ad2antrr
+          sseq2d mpbid simplr1 simpr2 psrbagmax ad3antrrr cgrp grpidcl syl wfun
+          simpr1 ffund simprlr simprll mpbird wceq wrex sylan cplusg cof psradd
+          fvelima fveq1d ad5antr simp-5l simprl eldifad eleq2d cvv ffnd fndmexd
+          inidm eqidd grpcld ofvalg syl2anc simprr simprrl sscond imass2 simpr3
+          ffvelcdmda eqtrd difeq1d imaeq2d sseq1d sstrd fnfvimad sseldd simprrr
+          wfn elsni simplr3 oveq12d 3eqtr3d grpridd elsn2g eqeltrd rexlimddv ex
+          ssrdv isfsuppfid exlimddv sylanbrc ) AHICUMZEUFUGZRZUUADUHUGZUIUNZUUA
+          FRAUUBCDEGHIJUUBUJZQADNUKAFUUBHUUBBDEFGKJLUUFULZOUOZAFUUBIUUGPUOZUPZA
+          UAUQZURRZUUKHUSZSZHUUMUUKUTZVAZUUDVBZSZVFZUUEUAAUAHUUDAHUUBRZHUUDUIUN
+          ZAHFRUUTUVATOUUBBDEFGHUUDKJUUFUUDUJZLVCVDVEVGAUUSTZUBUQZURRZUVDIUSZSZ
+          IUVFUVDUTZVAZUUQSZVFZUUEUBAUVKUBVHUUSAUBIUUDAIUUBRZIUUDUIUNZAIFRUVLUV
+          MTPUUBBDEFGIUUDKJUUFUVBLVCVDVEVGVIUVCUVKTZUCUQZVJGVKUMZSZUVOURRZTZUUK
+          UVOSZUVDUVOSZTZTZUUEUCUVNUCGUUKUVDUVNUUNUUKUVPSZUULUUNUURAUVKVLAUUNUW
+          DVMUUSUVKAUUMUVPUUKAUVPDUFUGZHAUUBDEGUWEHJUWEUJZMUUFUUHVNZVOZVQVPVRUU
+          LUUNUURAUVKVSUVNUVGUVDUVPSZUVCUVEUVGUVJVTAUVGUWIVMUUSUVKAUVFUVPUVDAUV
+          PUWEIAUUBDEGUWEIJUWFMUUFUUIVNZVOZVQVPVRUVCUVEUVGUVJWGAGURRUUSUVKMVPWA
+          UVNUWCTZUUAUWEUUBUVOUUDAUUCUUSUVKUWCUUJWBAUUDUWERZUUSUVKUWCADWCRZUWMN
+          UWEDUUDUWFUVBWDWEZWBAUUAWFZUUSUVKUWCAUVPUWEUUAAUUBDEGUWEUUAJUWFMUUFUU
+          JVNZWHWBZUVNUVQUVRUWBWIUWLUVOUUAUSZSZUVQUVNUVQUVRUWBWJAUWTUVQVMUUSUVK
+          UWCAUWSUVPUVOAUVPUWEUUAUWQVOZVQWBWKUWLUDUUAUWSUVOUTZVAZUUQUWLUDUQZUXC
+          RZUXDUUQRZUWLUXETZUEUQZUUAUGZUXDWLZUXFUEUXBUWLUWPUXEUXJUEUXBWMUWRUEUX
+          DUXBUUAWRWNUXGUXHUXBRZUXJTZTZUXDUUDUUDDWOUGZUMZUUQUXMUXIUXHHUGZUXHIUG
+          ZUXNUMZUXDUXOUXMUXIUXHHIUXNWPUMZUGZUXRAUXIUXTWLUUSUVKUWCUXEUXLAUXHUUA
+          UXSAUUBUXNCDEGHIJUUFUXNUJZQUUHUUIWQWSWTUXMAUXHUVPRZUXTUXRWLAUUSUVKUWC
+          UXEUXLXAZUXMUXHUWSRZUYBUXMUXHUWSUVOUXGUXKUXJXBZXCAUYDUYBVMUUSUVKUWCUX
+          EUXLAUWSUVPUXHUXAXDWTVRZAUVPUVPUXPUXQUXNUVPUWEHIXEXEUXHAUVPUWEHUWGXFZ
+          AUVPUWEIUWJXFZAUVPHFOUYGXGZUYIUVPXHAUYBTZUXPXIUYJUXQXIUYJUWEUXNDUXPUX
+          QUWFUYAAUWNUYBNVIAUVPUWEUXHHUWGXRAUVPUWEUXHIUWJXRXJXKXLXSUXGUXKUXJXMU
+          XMUXPUUDUXQUUDUXNUXMUXPUUQRUXPUUDWLUXMHUVPUVOUTZVAZUUQUXPUWLUYLUUQSUX
+          EUXLUWLUYLHUVPUUKUTZVAZUUQUWLUYKUYMSUYLUYNSUWLUUKUVOUVPUVNUVSUVTUWAXN
+          XOUYKUYMHXPWEUWLUURUYNUUQSZUVCUURUVKUWCAUULUUNUURXQVPAUURUYOVMUUSUVKU
+          WCAUUPUYNUUQAUUOUYMHAUUMUVPUUKUWHXTYAYBWBVRYCVPUXMUVPUXHUYKHUXMAHUVPY
+          GUYCUYGWEUYFUXMUXKUXHUYKRZUYEAUXKUYPVMUUSUVKUWCUXEUXLAUXBUYKUXHAUWSUV
+          PUVOUXAXTXDWTVRZYDYEUXPUUDYHWEUXMUXQUUQRUXQUUDWLUXMIUYKVAZUUQUXQUWLUY
+          RUUQSUXEUXLUWLUYRIUVPUVDUTZVAZUUQUWLUYKUYSSUYRUYTSUWLUVDUVOUVPUVNUVSU
+          VTUWAYFXOUYKUYSIXPWEUWLUVJUYTUUQSZUVEUVGUVJUVCUWCYIAUVJVUAVMUUSUVKUWC
+          AUVIUYTUUQAUVHUYSIAUVFUVPUVDUWKXTYAYBWBVRYCVPUXMUVPUXHUYKIUXMAIUVPYGU
+          YCUYHWEUYFUYQYDYEUXQUUDYHWEYJYKUXMAUXOUUQRZUYCAVUBUXOUUDWLZAUWEUXNDUU
+          DUUDUWFUYAUVBNUWOYLAUWMVUBVUCVMUWOUXOUUDUWEYMWEWKWEYNYOYPYQYRYSYSYSUU
+          BBDEFGUUAUUDKJUUFUVBLVCYT $.
       $}
 
       ${
-        $d I a b k $.  $d I f $.  $d I p u v $.  $d N a b $.  $d R a b k $.
-        $d R p u v $.  $d X a b $.  $d X p u $.  $d a b ph $.  $d b u v $.
+        $d I f $.  $d N p w $.  $d R p w $.  $d X p w $.  $d p ph w $.
         mplsubgfileminv.x $e |- ( ph -> X e. U ) $.
         mplsubgfileminv.inv $e |- N = ( invg ` S ) $.
         $( Lemma for ~ mplsubgfi .  The additive inverse of a polynomial is a
            polynomial.  (Contributed by Jim Kingdon, 26-Nov-2025.) $)
         mplsubgfileminv $p |- ( ph -> ( N ` X ) e. U ) $=
-          ( va vb cfv wcel cfn vk vf cbs cv clt wbr wral c0g wceq cn0 cmap wrex
-          wi co cminusg ccom ccnv cima crab eqid mplbasss sselid psrneg eqeltrd
-          cn psrnegcl wa wb mplelbascoe syl2anc mpbid simprd fveq1d ad2antrr wf
-          psrelbasfi simplr fvco3 simpr fveq2d grpinvid syl eqtrd 3eqtrd imim2d
-          cgrp ex ralimdva reximdv mpd mpbir2and ) AHGRZESZWLDUCRZSZUAUDZPUDRWP
-          QUDZRUEUFUAFUGZWQWLRZCUHRZUIZUMZQUJFUKUNZUGZPXCULZAWLCUORZHUPZWNAWNUB
-          UDUQVEURTSUBXCUSZCDUBFGXFTHILMXHUTZXFUTZWNUTZOAEWNHWNBCDEFJIKXKVANVBZ
-          VCZAWNXHCDUBFXFTHILMXIXJXKXLVFVDAWRWQHRZWTUIZUMZQXCUGZPXCULZXEAHWNSZX
-          RAHESZXSXRVGZNAFTSZCWFSZXTYAVHLMWNBCDEUAFTWFHWTPQJIXKWTUTZKVIVJVKVLAX
-          QXDPXCAXPXBQXCAWQXCSZVGZXOXAWRYFXOXAYFXOVGZWSWQXGRZXNXFRZWTAWSYHUIYEX
-          OAWQWLXGXMVMVNYGXCCUCRZHVOZYEYHYIUIAYKYEXOAWNCDFYJHIYJUTLXKXLVPVNAYEX
-          OVQXCYJWQXFHVRVJYGYIWTXFRZWTYGXNWTXFYFXOVSVTAYLWTUIZYEXOAYCYMMCXFWTYD
-          XJWAWBVNWCWDWGWEWHWIWJAYBYCWMWOXEVGVHLMWNBCDEUAFTWFWLWTPQJIXKYDKVIVJW
-          K $.
+          ( vf cfv wcel adantr wceq vw vp cbs c0g cfsupp wbr cminusg ccom cv cn
+          ccnv cima cfn cn0 cmap co crab eqid wa mplelbas sylib simpld psrnegcl
+          psrneg eqeltrd cdm wss cdif csn w3a simprd fsuppfiss cgrp grpidcl syl
+          wfun psrelbas ffund simpr1 simpr2 psrelbasfi fdmd eqtr4d sseq2d mpbid
+          wb difeq1d imaeq2d wral simpr3 funimass4 sylancl fveq1d ad3antrrr wfn
+          difss ffnd simplr eldifad eleqtrd fvco2 syl2anc eqtrd adantl grpinvid
+          elsni fveq2d mpbird ex ralimdva sseqtrid eqsstrrd isfsuppfid exlimddv
+          elsng mpd sylanbrc ) AHGQZDUCQZRZXRCUDQZUEUFZXRERAXRCUGQZHUHZXSAXSPUI
+          UKUJULUMRPUNFUOUPZUQZCDPFGYCUMHILMYFURZYCURZXSURZOAHXSRZHYAUEUFZAHERY
+          JYKUSNXSBCDEFHYAJIYIYAURZKUTVAZVBZVDZAXSYFCDPFYCUMHILMYGYHYIYNVCVEZAU
+          AUIZUMRZYQHVFZVGZHYSYQVHZULYAVIZVGZVJZYBUAAUAHYAAYJYKYMVKVLAUUDUSZXRC
+          UCQZXSYQYAAXTUUDYPSAYAUUFRZUUDACVMRZUUGMUUFCYAUUFURZYLVNVOZSAXRVPZUUD
+          AYFUUFXRAXSYFCDPFUUFXRIUUIYGYIYPVQVRZSAYRYTUUCVSUUEYTYQXRVFZVGZAYRYTU
+          UCVTAYTUUNWFUUDAYSUUMYQAYSYEUUMAYEUUFHAXSCDFUUFHIUUILYIYNWAZWBZAYEUUF
+          XRAXSCDFUUFXRIUUILYIYPWAWBWCZWDSWEUUEXRUUMYQVHZULZXRUUAULZUUBAUUTUUST
+          UUDAUUAUURXRAYSUUMYQUUQWGWHSUUEUUTUUBVGZUBUIZXRQZUUBRZUBUUAWIZUUEUVBH
+          QZUUBRZUBUUAWIZUVEUUEUUCUVHAYRYTUUCWJAUUCUVHWFZUUDAHVPUUAYSVGUVIAYFUU
+          FHAXSYFCDPFUUFHIUUIYGYIYNVQVRYSYQWPZUBUUAUUBHWKWLSWEUUEUVGUVDUBUUAUUE
+          UVBUUARZUSZUVGUVDUVLUVGUSZUVDUVCYATZUVMUVCYAYCQZYAUVMUVCUVFYCQZUVOUVM
+          UVCUVBYDQZUVPAUVCUVQTUUDUVKUVGAUVBXRYDYOWMWNUVMHYEWOZUVBYERUVQUVPTAUV
+          RUUDUVKUVGAYEUUFHUUOWQWNUVMUVBYSYEUVMUVBYSYQUUEUVKUVGWRWSAYSYETUUDUVK
+          UVGUUPWNWTYEYCHUVBXAXBXCUVMUVFYAYCUVGUVFYATUVLUVFYAXFXDXGXCAUVOYATZUU
+          DUVKUVGAUUHUVSMCYCYAYLYHXEVOWNXCZUVMUVCUUFRUVDUVNWFUVMUVCYAUUFUVTAUUG
+          UUDUVKUVGUUJWNVEUVCYAUUFXOVOXHXIXJXPAUVAUVEWFZUUDAUUKUUAUUMVGUWAUULAY
+          SUUAUUMUVJUUQXKUBUUAUUBXRWKXBSXHXLXMXNXSBCDEFXRYAJIYIYLKUTXQ $.
       $}
 
       $d S j u v $.  $d U j u v $.  $d ph u v $.
@@ -215147,6 +216269,9 @@ htmldef "algSc" as "algSc";
 htmldef "mPwSer" as " mPwSer ";
   althtmldef "mPwSer" as " mPwSer ";
   latexdef "mPwSer" as "\mathrm{mPwSer}";
+htmldef "mVar" as " mVar ";
+  althtmldef "mVar" as " mVar ";
+  latexdef "mVar" as "\mathrm{mVar}";
 htmldef "mPoly" as " mPoly ";
   althtmldef "mPoly" as " mPoly ";
   latexdef "mPoly" as "\mathrm{mPoly}";
@@ -219226,6 +220351,44 @@ $)
       WOAWEMPQVJWENZVQWNBWRVNWKVPWMWRVKWJVMVJWEGRUIWRVOWLGVJWEVLUJUKULUMUNWJWPM
       SHWJPMSUOUPWFSHWPWADMPUQZWFSUOUPURWNWQWIKBWGWFWSQVLWGNZWKWQWMWIWTVMWPWJVL
       WGGRUSWTWLWHGVLWGWEUTUKULUNVCWADVAWBVDVEVFCVGVHVI $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Disjoint unions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d A x y z $.  $d B x y z $.  $d F y z $.
+    idjudju.f $e |- F = if ( x = (/) , A , B ) $.
+    $( An indexed disjoint union over two sets equals the disjoint union of
+       those two sets.  This connects our notation for an indexed disjoint
+       union, ` U_ x e. C ( { x } X. F ) ` which uses ~ df-iun , with our
+       notation for the disjoint union of two sets ( ~ df-dju ).  (Contributed
+       by Jim Kingdon, 2-Oct-2026.) $)
+    idjudju $p |- U_ x e. 2o ( { x } X. F ) = ( A |_| B ) $=
+      ( vz c2o cv csn cxp wcel wceq wa bitri c0 c1o wo eqeltrdi eqeltrd syl cop
+      ciun cdju wex eliunxp simpl anass ancom anbi2i cpr elpri df2o3 eleq2s cun
+      vy ssun1 simpr 0ex snid wn notnotd intnanrd cif eleq2i elif bilani adantr
+      ecased simprd opelxpd sselid df-dju eleqtrrdi ssun2 1oex 1n0 neii ex mtoi
+      eqtr2 adantl orcomd jaodan sylan2 sylbir exlimivv sylbi elun c1st 1st2nd2
+      cfv c2nd xp1st elsni 0lt2o xp2nd iftrued eleqtrrd eqeq1 eqtrid opeliunxp2
+      ifbid sylanbrc 1lt2o iffalsed jaoi impbii eqriv ) UOAGAHZIDJUBZBCUCZUOHZX
+      JKZXLXKKZXMXLXIFHZUAZLZXIGKZXODKZMZMZFUDAUDXNAFGDXLUEYAXNAFYAXLXPXKXQXTUF
+      YAXQXSMZXRMZXPXKKZYCXQXSXRMZMYAXQXSXRUGYEXTXQXSXRUHUINXRYBXIOLZXIPLZQZYDY
+      HXIOPUJGXIOPUKULUMYBYFYDYGYBYFMZXPOIZBJZPIZCJZUNZXKYIYKYNXPYKYMUPYIXIXOYJ
+      BYIXIOYJYBYFUQZOURUSRYIYFXOBKZYIYFYPMZYFUTZXOCKZMZYIYRYSYIYFYOVAVBYBYQYTQ
+      ZYFXSUUAXQXSXOYFBCVCZKUUADUUBXOEVDYFXOBCVENVFZVGVHVIVJVKBCVLZVMYBYGMZXPYN
+      XKUUEYMYNXPYMYKVNUUEXIXOYLCUUEXIPYLYBYGUQPVOUSRUUEYRYSUUEYTYQUUEYFYPYGYRY
+      BYGYFPOLZPOVPVQZYGYFUUFXIPOVTVRVSWAVBYBYTYQQYGYBYQYTUUCWBVGVHVIVJVKUUDVMW
+      CWDWESWFWGXNXLYKKZXLYMKZQZXMXNXLYNKUUJXKYNXLUUDVDXLYKYMWHNUUHXMUUIUUHXLXL
+      WIWKZXLWLWKZUAZXJXLYJBWJUUHUUKGKZUULUUKOLZBCVCZKZUUMXJKZUUHUUKOGUUHUUKYJK
+      UUOXLYJBWMUUKOWNTZWORUUHUULBUUPXLYJBWPUUHUUOBCUUSWQWRAGDUUKUULUUPXIUUKLZD
+      UUBUUPEUUTYFUUOBCXIUUKOWSXBWTXAZXCSUUIXLUUMXJXLYLCWJUUIUUNUUQUURUUIUUKPGU
+      UIUUKYLKUUKPLZXLYLCWMUUKPWNTZXDRUUIUULCUUPXLYLCWPUUIUUOBCUUIUVBUUOUTUVCUV
+      BUUOUUFUUGUVBUUOUUFUUKPOVTVRVSTXEWRUVAXCSXFWGXGXH $.
   $}
 
 

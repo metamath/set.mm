@@ -4034,6 +4034,7 @@ that we are evaluating functions within their domains.
 <TR>
 <TD>ofval</TD>
 <TD>~ ofvalg </TD>
+<td>adds condition that ` ( C R D ) ` is a set</td>
 </TR>
 
 <tr>
@@ -5315,8 +5316,8 @@ that rabfi implies excluded middle</TD>
 
 <TR>
 <TD>finresfin</TD>
-<TD><I>none</I></TD>
-<TD>The set.mm proof is in terms of ssfi</TD>
+<TD>~ relresfin</TD>
+<TD>when restricting to a subset of a relation's domain</TD>
 </TR>
 
 <TR>
@@ -5548,23 +5549,54 @@ that rabfi implies excluded middle</TD>
   <td>the set.mm proof uses fofi</td>
 </tr>
 
+<tr>
+  <td>df-fsupp</td>
+  <td>~ df-fsuppfi</td>
+  <td>the set.mm definition is likely to have the desired
+  properties only in the presence of double negation elimination</td>
+</tr>
+
+<tr>
+  <td>isfsupp</td>
+  <td>~ isfsuppfi</td>
+  <td>reflects ~ df-fsuppfi definition</td>
+</tr>
+
+<tr>
+  <td>isfsuppd</td>
+  <td>~ isfsuppfid</td>
+  <td>reflects ~ df-fsuppfi definition</td>
+</tr>
+
+<tr>
+  <td>funisfsupp</td>
+  <td>~ funisfsuppdc</td>
+  <td>adds decidability conditions</td>
+</tr>
+
+<tr>
+  <td>fsuppimp , fsuppimpd</td>
+  <td>~ funisfsuppdc</td>
+  <td>if the goal is to connect ` finSupp ` ( ~ df-fsuppfi )
+  with ` supp ` ( ~ df-supp ) we do not have any way to do
+  that with conditions weaker than the  ~ funisfsuppdc
+  ones.</td>
+</tr>
+
 <TR>
   <TD>fisuppfi</TD>
   <TD>~ preimaf1ofi</TD>
-  <TD>The set.mm proof of fisuppfi uses ssfi</TD>
+  <TD>The set.mm proof of fisuppfi uses ssfi ; compare with
+  ~ fdmfifsupp which is based on a different concept
+  of finitely supported</TD>
 </TR>
-
-<tr>
-  <td>fidmfisupp</td>
-  <td><i>none</i></td>
-  <td>additional decidability conditions would apparently
-  be needed; the set.mm proof uses fisuppfi</td>
-</tr>
 
 <tr>
   <td>finnzfsuppd</td>
   <td><i>none</i></td>
-  <td>additional conditions would apparently be needed</td>
+  <td>this theorem as stated would appear to require that ` A `
+  is a decidable subset of ` D ` but ~ isfsuppfid is similar
+  and has no such requirement</td>
 </tr>
 
 <tr>
@@ -5574,27 +5606,15 @@ that rabfi implies excluded middle</TD>
 </tr>
 
 <tr>
-  <td>fdmfifsupp</td>
-  <td><i>none</i></td>
-  <td>additional conditions would apparently be needed</td>
-</tr>
-
-<tr>
-  <td>fsuppmptdm</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses fdmfifsupp</td>
-</tr>
-
-<tr>
   <td>fndmfisuppfi</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses fdmfisuppfi</td>
 </tr>
 
 <tr>
-  <td>fndmfifsupp</td>
+  <td>suppeqfsuppbi</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses fdmfifsupp</td>
+  <td>would appear to need additional conditions</td>
 </tr>
 
 <tr>
@@ -5602,7 +5622,7 @@ that rabfi implies excluded middle</TD>
   <td><i>none</i></td>
   <td>although we could prove a modified version of this,
   perhaps it is easier for proofs just to use
-  ~ ssfidc plus ~ funisfsupp</td>
+  ~ ssfidc plus ~ funisfsuppdc</td>
 </tr>
 
 <tr>
@@ -5629,10 +5649,18 @@ that rabfi implies excluded middle</TD>
 <tr>
   <td>fsuppssov1</td>
   <td><i>none</i></td>
-  <td>First step is perhaps to figure out
-  suppssov1 (get our version of suppssov1 similar to
-  the set.mm one and so on). The set.mm proof also
-  uses fsuppsssuppgd .</td>
+  <td>possibly provable but the proof would be different
+  from the set.mm proof</td>
+</tr>
+
+<tr>
+  <td>fsuppxpfi</td>
+  <td><i>none</i></td>
+  <td>Based on how this is used in set.mm it looks like we can add
+  decidable equality for the domains but would like to avoid
+  it for the codomains. Therefore, we'll want to figure out
+  a way to state the conclusion in terms of ` finSupp `
+  somehow.</td>
 </tr>
 
 <tr>
@@ -5654,16 +5682,9 @@ that rabfi implies excluded middle</TD>
 </tr>
 
 <tr>
-  <td>snopfsupp</td>
-  <td>~ snopfsuppdc</td>
-  <td>adds a decidability condition</td>
-</tr>
-
-<tr>
   <td>funsnfsupp</td>
   <td><i>none</i></td>
-  <td>would apparently be provable if ` DECID Y = Z ` were
-  added</td>
+  <td>probably provable using ~ isfsuppfid</td>
 </tr>
 
 <tr>
@@ -5681,21 +5702,30 @@ that rabfi implies excluded middle</TD>
 <tr>
   <td>ressuppfi</td>
   <td><i>none</i></td>
-  <td>although the set.mm proof will not work as-is, the
-  ` ( dom F \ B ) e. Fin ` condition may go a significant
-  part of the way towards making this provable</td>
+  <td>it is worth looking at whether the
+  ` ( dom F \ B ) e. Fin ` condition helps relative to
+  similar theorems</td>
 </tr>
 
 <tr>
   <td>resfsupp</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses ressuppfi</td>
+  <td>it is worth looking at whether the
+  ` ( dom F \ B ) e. Fin ` condition helps relative to
+  similar theorems</td>
 </tr>
 
 <tr>
   <td>resfifsupp</td>
   <td><i>none</i></td>
   <td>presumably needs additional conditions</td>
+</tr>
+
+<tr>
+  <td>ffsuppbi</td>
+  <td><i>none</i></td>
+  <td>In many cases ~ fsuppeq may be close as we can get, but if
+  ` S ` and ` I ` have decidable equality, see ~ funisfsuppdc .</td>
 </tr>
 
 <tr>
@@ -5713,30 +5743,22 @@ that rabfi implies excluded middle</TD>
 </tr>
 
 <tr>
-  <td>fsuppcolem</td>
+  <td>fsuppcolem , fsuppco</td>
   <td><i>none</i></td>
-  <td>not needed; see fsuppco</td>
-</tr>
-
-<tr>
-  <td>fsuppco</td>
-  <td>~ fsuppcorn</td>
-  <td>adds a set existence condition and more importantly
-  the ` ( F supp Z ) C_ ran G ` condition</td>
+  <td>would seem to need a set existence condition and perhaps
+  ` dom F C_ ran G ` or something like that</td>
 </tr>
 
 <tr>
   <td>fsuppco2</td>
   <td><i>none</i></td>
-  <td>perhaps would need additional conditions such as
-  those at ~ fsuppcorn</td>
+  <td>perhaps would need additional conditions</td>
 </tr>
 
 <tr>
   <td>fsuppcor</td>
   <td><i>none</i></td>
-  <td>perhaps would need additional conditions such as
-  those at ~ fsuppcorn</td>
+  <td>perhaps would need additional conditions</td>
 </tr>
 
 <tr>
@@ -7770,12 +7792,6 @@ favor of theorems in deduction form.</TD>
 <TD>~ crap0 </TD>
 </TR>
 
-<TR>
-<TD>ofsubeq0</TD>
-<TD><I>none</I></TD>
-<TD>presumably provable</TD>
-</TR>
-
 <tr>
   <td>ofsubge0</td>
   <td><i>none</i></td>
@@ -7834,6 +7850,21 @@ favor of theorems in deduction form.</TD>
 <TD><I>none</I></TD>
 <TD>Presumably provable from ~ arch but unused in set.mm.</TD>
 </TR>
+
+<tr>
+  <td>fcdmnn0fsupp</td>
+  <td>~ fcdmnn0fsuppfi</td>
+  <td>adds condition that ` I ` is finite (a version with
+  ` I ` having decidable equality would be possible with
+  basically the same proof)</td>
+</tr>
+
+<tr>
+  <td>fcdmnn0fsuppg</td>
+  <td>~ fcdmnn0fsuppfi</td>
+  <td>to avoid ~ ax-coll we would need a version of ~ funisfsuppdc
+  which does not use ~ ax-coll</td>
+</tr>
 
 <TR>
 <TD>suprzcl</TD>
@@ -13122,7 +13153,22 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>gsumzsplit , gsumsplit , gsumsplit2</td>
+  <td>gsumzsplit</td>
+  <td><i>none</i></td>
+  <td>we do not currently have any machinery to work with
+  a group sum within the commutative portion of
+  a monoid rather than needing the whole monoid to
+  be commutative</td>
+</tr>
+
+<tr>
+  <td>gsumsplit</td>
+  <td>~ gsumsplitfi</td>
+  <td>changes finitely supported to finite</td>
+</tr>
+
+<tr>
+  <td>gsumsplit2</td>
   <td><i>none</i></td>
   <td>should be possible to prove versions with the usual
   changes, such as being indexed by
@@ -13232,6 +13278,39 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td>gsum2dlem1</td>
+  <td>~ gsum2dfilem1</td>
+  <td>requires that ` ( A " { j } ) ` is finite, adds ` j e. D `
+  conditions, and drops unneeded hypotheses</td>
+</tr>
+
+<tr>
+  <td>gsum2dlem2</td>
+  <td>~ gsum2dfilem2</td>
+  <td>changes finitely supported to finite, requires that
+  ` ( A " { j } ) ` is finite, and adds ` j e. D ` condition</td>
+</tr>
+
+<tr>
+  <td>gsum2d</td>
+  <td>~ gsum2dfi</td>
+  <td>changes finitely supported to finite, requires that
+  ` ( A " { j } ) ` is finite, and adds ` j e. D ` condition</td>
+</tr>
+
+<tr>
+  <td>gsum2d2</td>
+  <td>~ gsum2d2fi</td>
+  <td>requires ` A ` and ` C ( j ) ` to be finite</td>
+</tr>
+
+<tr>
+  <td>gsumcom2</td>
+  <td>~ gsumcom2fi</td>
+  <td>requires ` A ` and ` C ( j ) ` to be finite</td>
+</tr>
+
+<tr>
   <td>mgpval</td>
   <td>~ mgpvalg</td>
 </tr>
@@ -13303,9 +13382,15 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>gsummulc1 , gsummulc2</td>
-  <td><i>none</i></td>
-  <td>depend on finSupp and gsum theorems we do not have</td>
+  <td>gsummulc1</td>
+  <td>~ gsummulc1fi</td>
+  <td>changes finitely supported to finite</td>
+</tr>
+
+<tr>
+  <td>gsummulc2</td>
+  <td>~ gsummulc2fi</td>
+  <td>changes finitely supported to finite</td>
 </tr>
 
 <tr>
@@ -14666,32 +14751,22 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>df-mvr</td>
-  <td><i>none</i></td>
-  <td>it appears that the set.mm definition might work (most theorems
-  will need ` i e. Fin ` conditions but that's how we expect to use
-  this definition)</td>
-</tr>
-
-<tr>
-  <td>df-mpl</td>
-  <td>~ df-mplcoe</td>
-  <td>our definition does not assume decidable equality for
-  coefficients</td>
-</tr>
-
-<tr>
   <td>psrvalstr</td>
   <td>~ psrvalstrd</td>
   <td>adds set existence conditions</td>
 </tr>
 
 <tr>
+  <td>psrbagfsupp</td>
+  <td>~ psrbagfsuppfi</td>
+  <td>requires that the index set is finite</td>
+</tr>
+
+<tr>
   <td>snifpsrbag</td>
-  <td><i>none</i></td>
-  <td>we do not have some of the theorems used in this proof
-  and it appears that if anything like this is possible, it
-  would need some decidable equality conditions added</td>
+  <td>~ snifpsrbagfi</td>
+  <td>adds conditions that the index set is finite and that
+  ` X ` is an element of the index set</td>
 </tr>
 
 <tr>
@@ -14719,26 +14794,15 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>gsumbagdiaglem</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof would apparently work with
-  small changes</td>
-</tr>
-
-<tr>
   <td>gsumbagdiag</td>
-  <td><i>none</i></td>
-  <td>Apparently would be provable now that ` gsum ` is
-  defined via ~ df-gsumfi . We would seem to need a
-  ` gsum ` version of gsumcom2 .</td>
+  <td>~ gsumbagdiagfi</td>
+  <td>requires the index set to be finite</td>
 </tr>
 
 <tr>
   <td>psrass1lem</td>
-  <td><i>none</i></td>
-  <td>The set.mm proof uses suppssdm , 	suppssfifsupp ,
-  gsum2d2 , gsumf1o , psrbaglefi ,
-  gsumbagdiaglem , and gsumbagdiag .</td>
+  <td>~ psrass1filem</td>
+  <td>requires the index set to be finite</td>
 </tr>
 
 <tr>
@@ -14842,20 +14906,26 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>psrridm</td>
-  <td><i>none</i></td>
-  <td>presumably the issues are similar to psrlidm</td>
+  <td>~ psrridmfi</td>
+  <td>requires a finite index set</td>
 </tr>
 
 <tr>
   <td>psrass1</td>
-  <td><i>none</i></td>
-  <td>depends on a variety of ` mPwSer ` and ` gsum ` theorems</td>
+  <td>~ psrass1fi</td>
+  <td>requires a finite index set</td>
 </tr>
 
 <tr>
-  <td>psrdi , psrdir</td>
-  <td><i>none</i></td>
-  <td>depends on a variety of ` mPwSer ` and ` gsum ` theorems</td>
+  <td>psrdi</td>
+  <td>~ psrdifi</td>
+  <td>requires a finite index set</td>
+</tr>
+
+<tr>
+  <td>psrdir</td>
+  <td>~ psrdirfi</td>
+  <td>requires a finite index set</td>
 </tr>
 
 <tr>
@@ -14880,44 +14950,56 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>psrring</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses psrmulcl , psrass1 , psrdi , psrdir ,
-  psrlidm , and psrridm</td>
+  <td>~ psrringfi</td>
+  <td>requires a finite index set</td>
+</tr>
+
+<tr>
+  <td>mvrid</td>
+  <td>~ mvridfi</td>
+  <td>adds requirement that the index set is finite</td>
+</tr>
+
+<tr>
+  <td>mvrf</td>
+  <td>~ mvrffi</td>
+  <td>adds requirement that the index set is finite</td>
+</tr>
+
+<tr>
+  <td>mvrf1</td>
+  <td>~ mvrf1fi</td>
+  <td>adds requirement that the index set is finite</td>
+</tr>
+
+<tr>
+  <td>mvrcl2</td>
+  <td>~ mvrcl2fi</td>
+  <td>adds requirement that the index set is finite</td>
 </tr>
 
 <tr>
   <td>mplval</td>
-  <td>~ mplvalcoe</td>
-  <td>adds set existence conditions and changes the expansion
-  of the value to reflect ~ df-mplcoe</td>
+  <td>~ mplvalg</td>
+  <td>adds set existence conditions</td>
 </tr>
 
 <tr>
-  <td>mplbas</td>
-  <td>~ mplbascoe</td>
-  <td>adds set existence conditions and changes the expansion
-  of the value to reflect ~ df-mplcoe</td>
+  <td>mvrcl</td>
+  <td>~ mvrclfi</td>
+  <td>adds requirement that the index set is finite</td>
 </tr>
 
 <tr>
-  <td>mplelbas</td>
-  <td>~ mplelbascoe</td>
-  <td>adds set existence conditions and changes the expansion
-  of the value to reflect ~ df-mplcoe</td>
-</tr>
-
-<tr>
-  <td>mvrcl , mvrf2</td>
+  <td>mvrf2</td>
   <td><i>none</i></td>
-  <td>may be feasible (with ` I e. W ` changed to ` I e. Fin ` )
-  if we define mVar</td>
+  <td>should be feasible (with ` I e. W ` changed to ` I e. Fin ` )</td>
 </tr>
 
 <tr>
   <td>mplelsfi</td>
   <td><i>none</i></td>
-  <td>it may be possible to come up with a replacement which takes
-  into account the way ~ df-mplcoe works</td>
+  <td>should be provable</td>
 </tr>
 
 <tr>
@@ -17686,7 +17768,9 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>lgsqrlem1</td>
   <td><i>none</i></td>
   <td>the set.mm proof uses evl1vard , evl1expd ,
-  evl1scad , ply1scl1 , and evl1subd</td>
+  evl1scad , ply1scl1 , and evl1subd . Although there
+  is a reference to deg1 it does not seem to be used
+  in any of the lgsqr lemmas.</td>
 </tr>
 
 <tr>
@@ -19537,6 +19621,12 @@ intuitionistic and it is lightly used in set.mm</TD>
 <tr>
   <td>ifnebib</td>
   <td>~ ifnebibdc</td>
+</tr>
+
+<tr>
+  <td>suppiniseg</td>
+  <td>~ suppinisegdc</td>
+  <td>adds decidability condition and is in deduction form</td>
 </tr>
 
 <tr>
