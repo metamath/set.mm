@@ -60549,7 +60549,7 @@ $)
     $d R x y z $.  $d A x y z $.  $d B x y z $.  $d C x y $.
     $( A subset of a well-founded set has an infimum.  (Contributed by Jeff
        Madsen, 2-Sep-2009.) $)
-    frinfm $p |- ( ( R Fr A /\ ( B e. C /\ B C_ A /\ B =/= (/) ) ) ->
+    frinf $p |- ( ( R Fr A /\ ( B e. C /\ B C_ A /\ B =/= (/) ) ) ->
                     E. x e. A ( A. y e. B -. x `' R y /\
                     A. y e. A ( y `' R x -> E. z e. B y `' R z ) ) ) $=
       ( wfr wcel wss c0 wa cv wbr wn wral wrex wi vex ex wne w3a ccnv fri exp43
@@ -60570,10 +60570,10 @@ $)
               ( `' R Or B /\ E. x e. B ( A. y e. B -. x `' R y /\
                         A. y e. B ( y `' R x -> E. z e. B y `' R z ) ) ) ) $=
       ( wwe wcel wss c0 w3a wa wor cv wbr wral wrex syl 3ad2antr2 wne ccnv wess
-      wn wi impcom weso cnvso sylib wfr ssidd 3anim2i adantl frinfm syl2anc jca
-      wefr ) DGHZEFIZEDJZEKUAZLZMZEGUBZNZAOZBOZVDPUDBEQVGVFVDPVGCOVDPCERUEBEQMA
-      ERZURUSUTVEVAURUTMZEGNZVEVIEGHZVJUTURVKEDGUCUFZEGUGSEGUHUITVCEGUJZUSEEJZV
-      ALZVHURUSUTVMVAVIVKVMVLEGUQSTVBVOURUTVNUSVAUTEUKULUMABCEEFGUNUOUP $.
+      wn wi impcom weso cnvso sylib wfr wefr ssidd 3anim2i adantl frinf syl2anc
+      jca ) DGHZEFIZEDJZEKUAZLZMZEGUBZNZAOZBOZVDPUDBEQVGVFVDPVGCOVDPCERUEBEQMAE
+      RZURUSUTVEVAURUTMZEGNZVEVIEGHZVJUTURVKEDGUCUFZEGUGSEGUHUITVCEGUJZUSEEJZVA
+      LZVHURUSUTVMVAVIVKVMVLEGUKSTVBVOURUTVNUSVAUTEULUMUNABCEEFGUOUPUQ $.
   $}
 
   ${
