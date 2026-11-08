@@ -71187,6 +71187,17 @@ $)
       LEFBCDMNO $.
   $}
 
+  ${
+    $d F x $.  $d A x $.
+    $( A function is constant iff its range is a subset of a singleton.
+       (Contributed by Scott Fenton, 7-Nov-2026.) $)
+    funrnsn $p |- ( Fun F ->
+     ( ran F C_ { A } <-> A. x e. dom F ( F ` x ) = A ) ) $=
+      ( wfun cdm cima csn wss cv cfv wcel wral crn wceq wb ssid funimass4 mpan2
+      imadmrn sseq1i fvex elsn ralbii 3bitr3g ) CDZCCEZFZBGZHZAIZCJZUHKZAUFLZCM
+      ZUHHUKBNZAUFLUEUFUFHUIUMOUFPAUFUHCQRUGUNUHCSTULUOAUFUKBUJCUAUBUCUD $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Cantor's Theorem
@@ -418175,6 +418186,20 @@ $)
   $}
 
   ${
+    $d A x $.
+    $( Left and right sets are disjunct.  (Contributed by Scott Fenton,
+       7-Nov-2026.) $)
+    lrdisj $p |- ( ( _Left ` A ) i^i ( _Right ` A ) ) = (/) $=
+      ( vx cleft cfv cright cin cv clts wbr cbday cold crab wa leftval rightval
+      c0 wceq wn wcel csur ineq12i inrab rabeq0 oldno cdm wne ne0i fveq2 eqtrdi
+      old0 necon3ai syl ndmfv nsyl2 bdaydm eleqtrdi ltsasym syl2anc imnan sylib
+      wi mprgbir 3eqtri ) ACDZAEDZFBGZAHIZBAJDZKDZLZAVFHIZBVILZFVGVKMZBVILZPVDV
+      JVEVLBANBAOUAVGVKBVIUBVNPQVMRZBVIVMBVIUCVFVISZVGVKRVAZVOVPVFTSATSVQVFVHUD
+      VPAJUEZTVPVHPQZAVRSVPVIPUFVSRVIVFUGVSVIPVSVIPKDPVHPKUHUJUIUKULAJUMUNUOUPV
+      FAUQURVGVKUSUTVBVC $.
+  $}
+
+  ${
     $d x y $.
     $( The surreal cut function is onto.  (Contributed by Scott Fenton,
        23-Aug-2024.) $)
@@ -426104,6 +426129,92 @@ $)
     RNOZBPRUTVIURKUQURBSOUAVAURUBDVBLDVFVHUCAUDVABVKTURVBUEUFUGAVBUHUIVAVEVBVDQ
     FZIJVCVAVDBVAAUQALDZUTAUJUKZTVKULVAVLAVBIVAVMVLAMVNAUMRUNUOUP $.
 
+  $( The surreals below a given birthday are strictly bounded above by that
+     ordinal.  (Contributed by Scott Fenton, 7-Nov-2024.) $)
+  onsbnd3 $p |- ( ( A e. On_s /\ B e. ( _Old ` ( bday ` A ) ) ) -> B <s A ) $=
+    ( cons wcel cbday cfv cold wa clts wbr cles wne cmade oldmade onsbnd sylan2
+    wceq oldirr adantl csur eleq1 mtbii necon2ai oldno adantr ltlesnd mpbir2and
+    onno ) ACDZBAEFZGFZDZHZBAIJBAKJZABLZULUIBUJMFDUNBUJNABOPULUOUIULABABQAUKDUL
+    ARABUKUAUBUCSUMBAULBTDUIBUJUDSUIATDULAUHUEUFUG $.
+
+  ${
+    $( An ordinal is a surreal equal to its left cut with nothing.
+       (Contributed by Scott Fenton, 7-Nov-2026.) $)
+    elons3 $p |- ( A e. On_s <->
+     ( A e. No /\ A = ( ( _Left ` A ) |s (/) ) ) ) $=
+      ( cons wcel csur cleft cfv c0 ccuts co wceq wa onno oncutleft jca cvv a1i
+      fvex wss leftssno simpr elons2d impbii ) ABCZADCZAAEFZGHIJZKZUCUDUFALAMNU
+      GUEOAUEOCUGAEQPUEDRUGASPUDUFTUAUB $.
+  $}
+
+  ${
+    $d A a b x $.
+    $( An ordinal is a surreal with all positive signs.  Definition from
+       [Gonshor] p. 41.  (Contributed by Scott Fenton, 7-Nov-2026.) $)
+    elons4 $p |- ( A e. On_s <-> ( A e. No /\ ran A C_ { 2o } ) ) $=
+      ( vx va wcel c2o wa cfv wceq con0 c1o a1i c0 wne syl adantr syl2anc wo wn
+      adantl fveq2 vb cons csur crn csn wss onno cv cdm wral cxp clts wbr cbday
+      cold simpr wfun cpr wf 2oex fconst ffun ax-mp snnz nodmon onelon eqeltrid
+      dmxp sylan rnxpss snsspr2 sstri elno2 syl3anbrc bdayval eqtrdi 3eltr4d wb
+      bdayon oldbday mpbird onsbnd3 syldan cop ctp wrex ltsval df-3or fvex brtp
+      w3o orbi1i 3bitr4i wi wel fvconst2 1one2o necomi eqnetrd a1d eleq2i ndmfv
+      andi sylnbir 1n0 pm2.61i neneqd intnanrd orel1 weq 2on0 necon2bi ad2antrr
+      word eloni ordirr sylnibr norn nofun fvelrn sseldd nosgnn0 eleq1 necon2ai
+      mtbiri necomd eqeq12d simpllr mpd cun cdif neeq12d elsnd nfcv nffv sylibr
+      ex un0 difundir 3eqtri rspccv mtod ioran sylanbrc ordtri3 fveqeq2 biimpcd
+      syld biimtrid expimpd rexlimdva sylbid ralrimiva funrnsn jca cright cleft
+      oldbdayim oldno 3eltr3d crab cint nodmord simplll 3netr4d rspcedvdw nfint
+      nfrab1 nfne onminsb elrabd intss1 onintrab2 sylib ontr2 neeqtrd nofv sylc
+      mp2and 3orel3 orcomd 3orass eqid biantru andir neii intnan biorfi 3bitrri
+      3bitri breqtrrd ltsval2 mpdan pm4.71d bitr4di eqrdv lrold 3eqtr4g difeq1d
+      elleft difid uneq1i 0un cin lrdisj ineqcomi disjdif2 0dif uneq12i 3eqtr3g
+      eqtri imdistani elons impbii ) AUBDZAUCDZAUDZEUEZUFZFZUXOUXPUXSAUGZUXOUXS
+      BUHZAGZEHZBAUIZUJZUXOUYDBUYEUXOUYBUYEDZFZUYBUXRUKZAULUMZUYDUXOUYGUYIAUNGZ
+      UOGZDZUYJUYHUYMUYIUNGZUYKDZUYHUYBUYEUYNUYKUXOUYGUPUYHUYNUYIUIZUYBUYHUYIUC
+      DZUYNUYPHUYHUYIUQZUYPIDUYIUDZJEURZUFZUYQUYRUYHUYBUXRUYIUSUYRUYBEUTVAUYBUX
+      RUYIVBVCKUYHUYPUYBIUXRLMUYPUYBHEUTVDUYBUXRVHVCZUXOUYEIDZUYGUYBIDZUXOUXPVU
+      CUYAAVEZNUYEUYBVFVIZVGVUAUYHUYSUXRUYTUYBUXRVJJEVKVLKUYIVMVNZUYIVONVUBVPUY
+      HUXPUYKUYEHZUXOUXPUYGUYAOZAVOZNVQUYHUYKIDZUYQUYMUYOVRVUKUYHAVSKVUGUYKUYIV
+      TPWAAUYIWBWCUYHUYJUAUHZUYIGZVULAGZHZUACUHZUJZVUPUYIGZVUPAGZJLWDJEWDLEWDWE
+      ZUMZFZCIWFZUYDUYHUYQUXPUYJVVCVRVUGVUICUAUYIAWGPUYHVVBUYDCIUYHVUPIDZFZVUQV
+      VAUYDVVAVURJHZVUSLHZVUSEHZQZFZVURLHZVVHFZQZVVEVUQFZUYDVVFVVGFZVVFVVHFZVVL
+      WKVVOVVPQZVVLQVVAVVMVVOVVPVVLWHJLJELEVURVUSVUPUYIWIVUPAWIWJVVJVVQVVLVVFVV
+      GVVHXCWLWMVVNVVMVVLUYDVVNVVJRVVMVVLWNVVNVVFVVIVVNVURJCBWOZVVNVURJMZWNVVRV
+      VSVVNVVRVUREJUYBEVUPUTWPZEJMVVRJEWQWRKWSWTVVRRZVVSVVNVWAVURLJVVRVUPUYPDVV
+      KUYPUYBVUPVUBXAVUPUYIXBXDLJMVWAJLXEWRKWSWTXFXGXHVVJVVLXINVVNVVLUYDVVNVVLF
+      ZCBXJZUYDVWBVWCVVRBCWOZQRZVWBVWAVWDRVWEVVLVWAVVNVVKVWAVVHVVRVURLVVRVURELV
+      VTELMVVRXKKWSXLOSVWBVWDUYBUYIGZUYCHZVWBVWFUYCVWBVWFLUYCVWBUYBUYPDZRVWFLHV
+      WBBBWOZVWHVWBUYBXNZVWIRVWBVUDVWJVVEVUDVUQVVLUYHVUDVVDVUFOXMUYBXONZUYBXPNU
+      YPUYBUYBVUBXAXQUYBUYIXBNVWBUYCLVWBUYCUYTDZUYCLMVWBUXQUYTUYCVWBUXPUXQUYTUF
+      VVEUXPVUQVVLUXOUXPUYGVVDUYAXMXMAXRNVVEUYCUXQDZVUQVVLUYHVWMVVDUXOAUQZUYGVW
+      MUXOUXPVWNUYAAXSZNZUYBAXTVIOXMYAVWLUYCLUYCLHVWLLUYTDYBUYCLUYTYCYEYDNYFWSX
+      GVVNVWDVWGWNZVVLVUQVWQVVEVUOVWGUAUYBVUPUABXJVUMVWFVUNUYCVULUYBUYITVULUYBA
+      TYGUUASOUUBVVRVWDUUCUUDVWBVUPXNZVWJVWCVWEVRVWBVVDVWRUYHVVDVUQVVLYHVUPXONV
+      WKVUPUYBUUEPWAVVLVWCUYDWNZVVNVVHVWSVVKVWCVVHUYDVUPUYBEAUUFUUGSSYIYQUUHUUI
+      UUJUUKUULYIUUMUXOVWNUXSUYFVRVWPBEAUUNNWAUUOUXTUXPAUUPGZLHZFUXOUXPUXSVXAUX
+      PUXSVXAUXTAUUQGZVWTYJZVXBYKZVXBLYJZVXBYKZVWTLUXTVXCVXEVXBUXTUYLVXBVXCVXEU
+      XTBUYLVXBUXTUYBUYLDZVXGUYBAULUMZFUYBVXBDUXTVXGVXHUXTVXGVXHUXTVXGFZUYBUIZU
+      YEDZVXHVXIUYBUNGZUYKVXJUYEVXGVXLUYKDUXTUYKUYBUURSVXIUYBUCDZVXLVXJHVXGVXMU
+      XTUYBUYKUUSSZUYBVONUXPVUHUXSVXGVUJXMUUTVXIVXKFZVXHVUPUYBGZVUSMZCIUVAZUVBZ
+      UYBGZVXSAGZVUTUMZVXOVXTEVYAVUTVXOVXTJHZVXTLHZQZVXTEVUTUMZVXOVYDVYCVXOVXTE
+      HZRVYDVYCVYGWKZVYDVYCQVXOVXTEVXOVXTVYAEVXOVXQCIWFZVXTVYAMZVXOVXQVXJUYBGZV
+      XJAGZMZCVXJIVUPVXJHVXPVYKVUSVYLVUPVXJUYBTVUPVXJATYLZVXOVXMVXJIDVXIVXMVXKV
+      XNOZUYBVENZVXOLEVYKVYLLEMVXOELXKWRKVXOVXJVXJDRZVYKLHVXOVXJXNZVYQVXOVXMVYR
+      VYOUYBUVCNVXJXPNVXJUYBXBNVXOVYLEVXOUXQUXRVYLUXPUXSVXGVXKYHZVXOVWNVXKVYLUX
+      QDVXOUXPVWNUXPUXSVXGVXKUVDZVWONZVXIVXKUPZVXJAXTPYAYMUVEZUVFZVXQVYJCCVXTVY
+      ACVXSUYBCUYBYNCVXRVXQCIUVHUVGZYOCVXSACAYNWUEYOUVIVUPVXSHVXPVXTVUSVYAVUPVX
+      SUYBTVUPVXSATYLUVJNVXOVYAEVXOUXQUXRVYAVYSVXOVWNVXSUYEDZVYAUXQDWUAVXOVXSVX
+      JUFZVXKWUFVXOVXJVXRDWUGVXOVXQVYMCVXJIVYNVYPWUCUVKVXJVXRUVLNWUBVXOVXSIDZVU
+      CWUGVXKFWUFWNVXOVYIWUHWUDVXQCUVMUVNVXOUXPVUCVYTVUENVXSVXJUYEUVOPUVSVXSAXT
+      PYAYMZUVPXGVXOVXMVYHVYOUYBVXSUVQNVYDVYCVYGUVTUVRUWAVYFVYCELHZFZVYCEEHZFZV
+      YDWULFZWKWUKWUMWUNQZQZVYEJLJELEVXTEVXSUYBWIUTWJWUKWUMWUNUWBVYEVYEWULFWUOW
+      UPWULVYEEUWCUWDVYCVYDWULUWEWUKWUOWUJVYCELXKUWFUWGUWHUWIUWJYPWUIUWKVXOVXMU
+      XPVXHVYBVRVYOVYTUYBACUWLPWAUWMYQUWNUYBAUWTUWOUWPAUWQVXBYRUWRUWSVXDVXBVXBY
+      KZVWTVXBYKZYJLWURYJZVWTVXBVWTVXBYSWUQLWURVXBUXAZUXBWUSWURVWTWURUXCVWTVXBU
+      XDLHWURVWTHVXBVWTLAUXEUXFVWTVXBUXGVCUXKYTVXFWUQLVXBYKZYJLLYJLVXBLVXBYSWUQ
+      LWVALWUTVXBUXHUXILYRYTUXJYQUXLAUXMYPUXN $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Omnific integers
@@ -426118,7 +426229,7 @@ $)
 
   $( Define the omnific integers.  These are a generalization of the integers
      for the surreals.  Much later we will prove that the surreals are the
-     spliting field for the ring of omnific integers.  Definiton from [Conway]
+     spliting field for the ring of omnific integers.  Definition of [Conway]
      p. 45.  (Contributed by Scott Fenton, 15-May-2026.) $)
   df-oz $a |- Oz = { x e. No | x = ( { ( x -s 1s ) } |s { ( x +s 1s ) } ) } $.
 
@@ -430008,16 +430119,10 @@ $(
 $)
 
   $( Declare new constants. $)
-  $c RR_s |_s |^s $.
+  $c RR_s $.
 
   $( Declare the syntax for the surreal reals. $)
   creno $a class RR_s $.
-
-  $( Declare the syntax for the surreal floor function. $)
-  cfls $a class |_s $.
-
-  $( Declare the syntax for the surreal ceiling function. $)
-  cceils $a class |^s $.
 
   ${
     $d x y n $.
@@ -430520,7 +430625,8 @@ $)
        Fenton, 14-Mar-2026.) $)
     recut2 $p |- ( A e. No -> { y | E. p e. NN_s E. n e.
      NN0_s y = ( A -s ( p /su ( 2s ^su n ) ) ) } <<s
-     { y | E. p e. NN_s E. n e. NN0_s y = ( A +s ( p /su ( 2s ^su n ) ) ) } ) $=
+     { y | E. p e. NN_s E. n e. NN0_s y =
+     ( A +s ( p /su ( 2s ^su n ) ) ) } ) $=
       ( va vq vm csur wcel cv co cdivs wceq cn0s wrex cnns cadds wa clts wbr vb
       c2s cexps csubs cab cvv nnsex n0sex ab2rexex nnno adantr simpr pw2divscld
       a1i subscl sylan2 eleq1 syl5ibrcom rexlimdvva abssdv addscl 2rexbii eqeq1
@@ -483296,6 +483402,9 @@ htmldef "On_s" as "<IMG SRC='_on.gif' WIDTH=20 HEIGHT=19 ALT=' On_s' " +
   "TITLE='On_s'><SUB>s</SUB>";
   althtmldef "On_s" as 'On<SUB>s</SUB>';
   latexdef "On_s" as "\mathrm{On}_\mathrm{s}";
+htmldef "Oz" as "Oz";
+  althtmldef "Oz" as "Oz";
+  latexdef "Oz" as "\mathrm{Oz}";
 htmldef "seq_s" as " <IMG SRC='_seq.gif' WIDTH=22 HEIGHT=19 ALT=' seq' " +
     "TITLE='seq'><SUB>s</SUB>";
   althtmldef "seq_s" as 'seq<SUB>s</SUB>';
