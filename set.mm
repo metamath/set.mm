@@ -875935,6 +875935,16 @@ $)
     NBCULANOUJUKBCULAQOUJULPZRUMURUOASUAUMUTUSIEZUSDEZJKZUQUJUSBCULVCFGUTVDTAUG
     UMVCUKFUJVCUKTULAUBOZVAUCUSSUDUMVBUPVCUKJUJVBUPTULAUEOVEUFUHUI $.
 
+  $( Value of the tanh function in terms of tan and multiplication by -i.
+     (Contributed by Jon Pennant, 22-Oct-2026.) $)
+  tanhvalnegitan $p |- ( ( A e. CC /\ ( cosh ` A ) =/= 0 ) ->
+                         ( tanh ` A ) = ( -u _i x. ( tan ` ( _i x. A ) ) ) ) $=
+    ( cc wcel ccosh cfv cc0 wne wa ctanh ci cmul co ctan cdiv tanhvaltan ax-icn
+    cneg c1 syl a1i simpl mulcl mpan ccos coshval-named simpr eqnetrrd divrec2d
+    wceq tancld ine0 irec oveq1i eqtrdi eqtrd ) ABCZADEZFGZHZAIEJAKLZMEZJNLZJQZ
+    VAKLZAOUSVBRJNLZVAKLVDUSVAJUSUTUSUPUTBCZUPURUAZJBCZUPVFPJAUBUCSUSUQUTUDEZFU
+    SUPUQVIUIVGAUESUPURUFUGUJVHUSPTJFGUSUKTUHVEVCVAKULUMUNUO $.
+
   $( Addition formula for sinh.  (Contributed by Jon Pennant, 9-Sep-2026.) $)
   sinhadd $p |- ( ( A e. CC /\ B e. CC ) ->
                   ( sinh ` ( A + B ) ) =
