@@ -77172,6 +77172,27 @@ $)
   $( $j usage 'onprc' avoids 'ax-reg'; $)
 
   ${
+    $d A x $.  $d V x $.
+    onprcr.1 $e |- A = { x e. V | Ord x } $.
+    onprcr.2 $e |- Tr A $.
+    $( Relative version of ~ onprc .  (Contributed by Adrian Ducourtial,
+       15-Oct-2026.) $)
+    onprcr $p |- -. A e. V $=
+      ( wcel word wn wtr cep wwe con0 wss crab cab rabssab df-on 3sstr4i epweon
+      cv wess mp2 df-ord mpbir2an ordirr ax-mp ordeq elrab3 mpbiri eleqtrrdi
+      mto ) BCFZBBFZBGZUMHUNBIBJKZEBLMLJKUOATZGZACNZUQAOBLUQACPDAQRSBLJUAUBBUCU
+      DZBUEUFULBURBULBURFUNUSUQUNABCUPBUGUHUIDUJUK $.
+    $( $j usage 'onprcr' avoids 'ax-reg'; $)
+  $}
+
+  $( Alternate proof of ~ onprc from ~ onprcr .  (Contributed by Adrian
+     Ducourtial, 15-Oct-2026.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
+  onprcALT $p |- -. On e. _V $=
+    ( vx con0 cvv cv word cab crab df-on rabab eqtr4i tron onprcr ) ABCBADEZAFM
+    ACGAHMAIJKL $.
+
+  ${
     $d x y A $.
     $( The union of a class of ordinal numbers is ordinal.  Proposition 7.19 of
        [TakeutiZaring] p. 40.  Lemma 2.7 of [Schloeder] p. 4.  (Contributed by
@@ -110317,6 +110338,30 @@ $)
     cardprc $p |- { x | ( card ` x ) = x } e/ _V $=
       ( vy cv ccrd cfv wceq cab cvv weq fveq2 eqeq12d cbvabv cardprclem nelir
       id ) ACZDEZPFZAGZHBSRBCZDEZTFABABIZQUAPTPTDJUBOKLMN $.
+  $}
+
+  ${
+    $d A x $.  $d V x $.
+    cardprcr.1 $e |- A = { x e. V | ( card ` x ) = x } $.
+    cardprcr.2 $e |- ( A e. V -> ( har ` U. A ) e. V ) $.
+    $( Relative version of ~ cardprc .  (Contributed by Adrian Ducourtial,
+       15-Oct-2026.) $)
+    cardprcr $p |- -. A e. V $=
+      ( wcel cuni char cfv cdom wbr harndom cvv wss uniexg ccrd wceq harcard cv
+      fveq2 id eqeq12d elrab2 sylanblrc elssuni syl ssdomg sylc mto ) BCFZBGZHI
+      ZUKJKZUKLUJUKMFULUKNZUMBCOUJULBFZUNUJULCFULPIZULQZUOEUKRASZPIZURQUQAULCBU
+      RULQZUSUPURULURULPTUTUAUBDUCUDULBUEUFULUKMUGUHUI $.
+  $}
+
+  ${
+    $d x y $.
+    $( Alternate proof of ~ cardprc from ~ cardprcr .  (Contributed by Adrian
+       Ducourtial, 15-Oct-2026.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    cardprcALT $p |- { x | ( card ` x ) = x } e/ _V $=
+      ( vy cv ccrd cfv wceq cab crab rabab fveq2 id eqeq12d cbvrabv eqtr3i wcel
+      cvv cuni char fvexd cardprcr nelir ) ACZDEZUBFZAGZPBUEPUDAPHUEBCZDEZUFFZB
+      PHUDAIUDUHABPUBUFFZUCUGUBUFUBUFDJUIKLMNUEPOUEQRSTUA $.
   $}
 
   ${
@@ -595495,51 +595540,6 @@ $)
       ABCDFDABGCHBHZIJKCTLMBNZAOUAAFPEUAAQRS $.
     $( $j usage 'mirimanofff' avoids 'ax-10' 'ax-rep' 'ax-nul' 'ax-un' 'ax-reg'
        'ax-inf2' ; $)
-  $}
-
-  ${
-    $d A x $.  $d V x $.
-    onprcr.1 $e |- A = { x e. V | Ord x } $.
-    onprcr.2 $e |- Tr A $.
-    $( Relative version of ~ onprc .  (Contributed by Adrian Ducourtial,
-       15-Oct-2026.) $)
-    onprcr $p |- -. A e. V $=
-      ( wcel word wn wtr cep wwe con0 wss crab cab rabssab df-on 3sstr4i epweon
-      cv wess mp2 df-ord mpbir2an ordirr ax-mp ordeq elrab3 mpbiri eleqtrrdi
-      mto ) BCFZBBFZBGZUMHUNBIBJKZEBLMLJKUOATZGZACNZUQAOBLUQACPDAQRSBLJUAUBBUCU
-      DZBUEUFULBURBULBURFUNUSUQUNABCUPBUGUHUIDUJUK $.
-    $( $j usage 'onprcr' avoids 'ax-reg'; $)
-  $}
-
-  $( Alternate proof of ~ onprc from ~ onprcr .  (Contributed by Adrian
-     Ducourtial, 15-Oct-2026.)  (Proof modification is discouraged.)
-     (New usage is discouraged.) $)
-  onprcALT $p |- -. On e. _V $=
-    ( vx con0 cvv cv word cab crab df-on rabab eqtr4i tron onprcr ) ABCBADEZAFM
-    ACGAHMAIJKL $.
-
-  ${
-    $d A x $.  $d V x $.
-    cardprcr.1 $e |- A = { x e. V | ( card ` x ) = x } $.
-    cardprcr.2 $e |- ( A e. V -> ( har ` U. A ) e. V ) $.
-    $( Relative version of ~ cardprc .  (Contributed by Adrian Ducourtial,
-       15-Oct-2026.) $)
-    cardprcr $p |- -. A e. V $=
-      ( wcel cuni char cfv cdom wbr harndom cvv wss uniexg ccrd wceq harcard cv
-      fveq2 id eqeq12d elrab2 sylanblrc elssuni syl ssdomg sylc mto ) BCFZBGZHI
-      ZUKJKZUKLUJUKMFULUKNZUMBCOUJULBFZUNUJULCFULPIZULQZUOEUKRASZPIZURQUQAULCBU
-      RULQZUSUPURULURULPTUTUAUBDUCUDULBUEUFULUKMUGUHUI $.
-  $}
-
-  ${
-    $d x y $.
-    $( Alternate proof of ~ cardprc from ~ cardprcr .  (Contributed by Adrian
-       Ducourtial, 15-Oct-2026.)  (Proof modification is discouraged.)
-       (New usage is discouraged.) $)
-    cardprcALT $p |- { x | ( card ` x ) = x } e/ _V $=
-      ( vy cv ccrd cfv wceq cab crab rabab fveq2 id eqeq12d cbvrabv eqtr3i wcel
-      cvv cuni char fvexd cardprcr nelir ) ACZDEZUBFZAGZPBUEPUDAPHUEBCZDEZUFFZB
-      PHUDAIUDUHABPUBUFFZUCUGUBUFUBUFDJUIKLMNUEPOUEQRSTUA $.
   $}
 
   ${
