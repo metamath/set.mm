@@ -182842,6 +182842,21 @@ $)
   $}
 
   ${
+    $d A x $.  $d B x $.  $d I x $.  $d ph x $.
+    ofpncan3.a $e |- ( ph -> A : I --> CC ) $.
+    ofpncan3.b $e |- ( ph -> B : I --> CC ) $.
+    ofpncan3.i $e |- ( ph -> I e. V ) $.
+    $( Subtraction and addition of equals.  Applying ~ pncan3 to functions,
+       pointwise.  (Contributed by Jim Kingdon, 7-Nov-2026.) $)
+    ofpncan3 $p |- ( ph -> ( A oF + ( B oF - A ) ) = B ) $=
+      ( vx cfv cmin co caddc cmpt cof cc ffvelcdmda feqmptd ffnd eqidd cv inidm
+      wcel wa pncan3d mpteq2dva subcld offval offval2 3eqtr4d ) AIDIUAZBJZUKCJZ
+      ULKLZMLZNIDUMNBCBKOLZMOLCAIDUOUMAUKDUCUDZULUMADPUKBFQZADPUKCGQZUEUFAIDULU
+      NMBUPEPPHURUQUMULUSURUGAIDPBFRAIDDUMULKDCBEEADPCGSADPBFSHHDUBUQUMTUQULTUH
+      UIAIDPCGRUJ $.
+  $}
+
+  ${
     $d D p q x y $.  $d D r x y $.  $d F p q x y z $.  $d F r x y z $.
     $d I f $.  $d I p q x y z $.  $d I r x y z $.
     $( There are finitely many bags dominated by a given bag.  (Contributed by
