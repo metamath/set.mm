@@ -71196,6 +71196,17 @@ $)
       ( wfun cdm cima csn wss cv cfv wcel wral crn wceq wb ssid funimass4 mpan2
       imadmrn sseq1i fvex elsn ralbii 3bitr3g ) CDZCCEZFZBGZHZAIZCJZUHKZAUFLZCM
       ZUHHUKBNZAUFLUEUFUFHUIUMOUFPAUFUHCQRUGUNUHCSTULUOAUFUKBUJCUAUBUCUD $.
+
+    $( A function is constant iff it is a cross product of its domain with a
+       singleton.  (Contributed by Scott Fenton, 8-Nov-2027.) $)
+    funconstxp $p |- ( ( A e. V /\ Fun F ) ->
+    ( F = ( dom F X. { A } ) <-> A. x e. dom F ( F ` x ) = A ) ) $=
+      ( wcel wfun wa cdm csn cxp wceq cv cfv wral wb fnconstg fnfund syl adantr
+      cvv eqfunfv ancoms sylan wne snnzg dmxp eqcomd biantrurd fvconst2g eqeq2d
+      c0 elex ralbidva 3bitr2d ) BDEZCFZGZCCHZBIZJZKZURUTHZKZALZCMZVDUTMZKZAURN
+      ZGZVHVEBKZAURNZUOUTFZUPVAVIOZUOURUTURBDPQUPVLVMACUTUAUBUCUQVCVHUOVCUPUOVB
+      URUOUSUKUDVBURKBDUEURUSUFRUGSUHUOVHVKOZUPUOBTEZVNBDULVOVGVJAURVOVDUREGVFB
+      VEURBVDTUIUJUMRSUN $.
   $}
 
 $(
