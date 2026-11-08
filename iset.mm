@@ -182736,8 +182736,9 @@ $)
     psrbagconf1o.s $e |- S = { y e. D | y oR <_ F } $.
     ${
       $d D x y $.  $d F x y $.  $d G x y $.  $d I x $.  $d X f $.  $d X y $.
-      $( The complement of a bag is a bag.  (Contributed by Mario Carneiro,
-         29-Dec-2014.)  Remove a sethood antecedent.  (Revised by SN,
+      $( The complement of a bag is a bag.  If the index set is finite, it may
+         be more convenient to use ~ psrbagconclfi .  (Contributed by Mario
+         Carneiro, 29-Dec-2014.)  Remove a sethood antecedent.  (Revised by SN,
          6-Aug-2024.) $)
       psrbagconcl $p |- ( ( F e. D /\ X e. S ) -> ( F oF - X ) e. S ) $=
         ( wcel wa cmin cof co cle cofr wbr cn0 breq1 elrab2 simpl simpr psrbagf
@@ -182854,6 +182855,22 @@ $)
       ULKLZMLZNIDUMNBCBKOLZMOLCAIDUOUMAUKDUCUDZULUMADPUKBFQZADPUKCGQZUEUFAIDULU
       NMBUPEPPHURUQUMULUSURUGAIDPBFRAIDDUMULKDCBEEADPCGSADPBFSHHDUBUQUMTUQULTUH
       UIAIDPCGRUJ $.
+  $}
+
+  ${
+    $d F f y $.  $d I f y $.  $d X f y $.
+    psrbagconclfi.s $e |- S = { y e. ( NN0 ^m I ) | y oR <_ F } $.
+    $( The complement of a bag is a bag.  (Contributed by Mario Carneiro,
+       29-Dec-2014.)  Remove a sethood antecedent.  (Revised by SN,
+       6-Aug-2024.)  (Revised by Jim Kingdon, 8-Nov-2026.) $)
+    psrbagconclfi $p |- ( ( F e. ( NN0 ^m I ) /\ X e. S /\ I e. Fin )
+        -> ( F oF - X ) e. S ) $=
+      ( vf cn0 cmap co wcel cfn w3a cmin cof cv cle crab eqid eleqtrrd cofr wbr
+      ccnv cima simp1 wceq psrbagfi 3ad2ant3 eleq2i biimpi 3ad2ant2 psrbagconcl
+      cn rabeqdv syl2anc eleqtrd eleqtrrdi ) CHDIJZKZEBKZDLKZMZCENOJZAPCQUAUBZA
+      URRZBVBVCVDAGPUCUMUDLKGURRZRZVEVBCVFKEVGKVCVGKVBCURVFUSUTVAUEVAUSVFURUFUT
+      VFGDVFSZUGUHZTVBEVEVGUTUSEVEKZVAUTVJBVEEFUIUJUKVBVDAVFURVIUNZTAVFVGGCDEVH
+      VGSULUOVKUPFUQ $.
   $}
 
   ${
