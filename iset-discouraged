@@ -14,7 +14,9 @@
 "2strstrg" is used by "2strstr1g".
 "2strstrg" is used by "grpstrg".
 "4syl" is used by "bcm1k".
+"4syl" is used by "chtnprm".
 "4syl" is used by "climuni".
+"4syl" is used by "eupthvdres".
 "4syl" is used by "f1ocnvfvrneq".
 "4syl" is used by "fcof1o".
 "4syl" is used by "fsumparts".
@@ -31,6 +33,7 @@
 "4syl" is used by "isoselem".
 "4syl" is used by "oddprm".
 "4syl" is used by "pfxccatpfx2".
+"4syl" is used by "ppinprm".
 "4syl" is used by "serf0".
 "4syl" is used by "smoiso".
 "4syl" is used by "tposss".
@@ -76,6 +79,7 @@
 "ax-addf" is used by "cnfldplusf".
 "ax-addrcl" is used by "readdcl".
 "ax-arch" is used by "arch".
+"ax-bj-d0cl" is used by "bj-d0clsepcl".
 "ax-caucvg" is used by "caucvgre".
 "ax-cnex" is used by "cnex".
 "ax-cnre" is used by "cnre".
@@ -356,6 +360,7 @@
 "wlkvg" is used by "iswlkg".
 "wlkvg" is used by "wlkvtxeledgg".
 "wlkvg" is used by "wlkvtxiedgg".
+"zfun" is used by "uniex2OLD".
 New usage of "0cnALT" is discouraged (0 uses).
 New usage of "0reALT" is discouraged (0 uses).
 New usage of "19.21h" is discouraged (3 uses).
@@ -365,7 +370,7 @@ New usage of "19.42h" is discouraged (1 uses).
 New usage of "19.9hd" is discouraged (2 uses).
 New usage of "2logb9irrALT" is discouraged (0 uses).
 New usage of "2strstrg" is discouraged (2 uses).
-New usage of "4syl" is discouraged (24 uses).
+New usage of "4syl" is discouraged (27 uses).
 New usage of "a1ii" is discouraged (0 uses).
 New usage of "a9evsep" is discouraged (1 uses).
 New usage of "addmodlteqALT" is discouraged (0 uses).
@@ -382,6 +387,7 @@ New usage of "ax-addcom" is discouraged (1 uses).
 New usage of "ax-addf" is discouraged (4 uses).
 New usage of "ax-addrcl" is discouraged (1 uses).
 New usage of "ax-arch" is discouraged (1 uses).
+New usage of "ax-bj-d0cl" is discouraged (1 uses).
 New usage of "ax-caucvg" is discouraged (1 uses).
 New usage of "ax-cnex" is discouraged (1 uses).
 New usage of "ax-cnre" is discouraged (1 uses).
@@ -415,6 +421,7 @@ New usage of "axcaucvg" is discouraged (0 uses).
 New usage of "axcnex" is discouraged (1 uses).
 New usage of "axcnre" is discouraged (0 uses).
 New usage of "axdistr" is discouraged (0 uses).
+New usage of "axi12" is discouraged (0 uses).
 New usage of "axi2m1" is discouraged (0 uses).
 New usage of "axicn" is discouraged (0 uses).
 New usage of "axltirr" is discouraged (1 uses).
@@ -446,6 +453,7 @@ New usage of "bj-axempty" is discouraged (0 uses).
 New usage of "bj-axempty2" is discouraged (0 uses).
 New usage of "bj-axemptylem" is discouraged (2 uses).
 New usage of "bj-charfundcALT" is discouraged (0 uses).
+New usage of "bj-d0clsepcl" is discouraged (0 uses).
 New usage of "bj-el2oss1o" is discouraged (0 uses).
 New usage of "bj-nn0sucALT" is discouraged (0 uses).
 New usage of "bj-nndcALT" is discouraged (0 uses).
@@ -487,12 +495,14 @@ New usage of "fnexALT" is discouraged (0 uses).
 New usage of "fprodsplitdc" is discouraged (5 uses).
 New usage of "funop" is discouraged (1 uses).
 New usage of "funopsn" is discouraged (1 uses).
+New usage of "hbnOLD" is discouraged (0 uses).
 New usage of "hbs1" is discouraged (5 uses).
 New usage of "homndx" is discouraged (1 uses).
 New usage of "idALT" is discouraged (0 uses).
 New usage of "idi" is discouraged (0 uses).
 New usage of "imasival" is discouraged (3 uses).
 New usage of "infnninfOLD" is discouraged (1 uses).
+New usage of "inssdif0imOLD" is discouraged (0 uses).
 New usage of "islssmg" is discouraged (6 uses).
 New usage of "mathbox" is discouraged (0 uses).
 New usage of "mo3h" is discouraged (7 uses).
@@ -529,10 +539,13 @@ New usage of "stoic2b" is discouraged (0 uses).
 New usage of "strcollnfALT" is discouraged (0 uses).
 New usage of "strnfvn" is discouraged (3 uses).
 New usage of "tfri1dALT" is discouraged (0 uses).
+New usage of "uniex2OLD" is discouraged (0 uses).
 New usage of "unifndx" is discouraged (5 uses).
 New usage of "uzind4ALT" is discouraged (0 uses).
 New usage of "wlkvg" is discouraged (3 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
+New usage of "zfausclOLD" is discouraged (0 uses).
+New usage of "zfun" is discouraged (1 uses).
 Proof modification of "0cnALT" is discouraged (49 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
 Proof modification of "2logb9irrALT" is discouraged (118 steps).
@@ -622,7 +635,7 @@ Proof modification of "bj-sucexg" is discouraged (42 steps).
 Proof modification of "bj-unex" is discouraged (33 steps).
 Proof modification of "bj-unexg" is discouraged (67 steps).
 Proof modification of "bj-uniex" is discouraged (29 steps).
-Proof modification of "bj-uniex2" is discouraged (79 steps).
+Proof modification of "bj-uniex2" is discouraged (67 steps).
 Proof modification of "bj-uniexg" is discouraged (27 steps).
 Proof modification of "bj-vnex" is discouraged (14 steps).
 Proof modification of "bj-vprc" is discouraged (53 steps).
@@ -639,10 +652,12 @@ Proof modification of "dvelimALT" is discouraged (158 steps).
 Proof modification of "exmidfodomrlemrALT" is discouraged (714 steps).
 Proof modification of "findset" is discouraged (96 steps).
 Proof modification of "fnexALT" is discouraged (111 steps).
+Proof modification of "hbnOLD" is discouraged (17 steps).
 Proof modification of "idALT" is discouraged (26 steps).
 Proof modification of "idi" is discouraged (1 steps).
 Proof modification of "idref" is discouraged (97 steps).
 Proof modification of "infnninfOLD" is discouraged (127 steps).
+Proof modification of "inssdif0imOLD" is discouraged (100 steps).
 Proof modification of "nn0ge2m1nnALT" is discouraged (48 steps).
 Proof modification of "nnindALT" is discouraged (15 steps).
 Proof modification of "opelopabsbALT" is discouraged (106 steps).
@@ -660,5 +675,7 @@ Proof modification of "speano5" is discouraged (50 steps).
 Proof modification of "stdcndcOLD" is discouraged (62 steps).
 Proof modification of "strcollnfALT" is discouraged (120 steps).
 Proof modification of "tfri1dALT" is discouraged (247 steps).
+Proof modification of "uniex2OLD" is discouraged (74 steps).
 Proof modification of "uzind4ALT" is discouraged (16 steps).
 Proof modification of "xpexgALT" is discouraged (84 steps).
+Proof modification of "zfausclOLD" is discouraged (62 steps).

@@ -1,0 +1,74 @@
+#!/bin/sh
+
+# check-case-collisions - report labels differing only in letter case as errors
+#
+# Metamath label comparison is case-sensitive, so "elOLD" and "elold" are
+# two different theorems. The generated web pages end up being named
+# "<label>.html", which is fine on a case-sensitive filesystem such as
+# us.metamath.org, and web browsers can retrieve them cleanly.
+#
+# However, on a case-insensitive file system (Windows and macOS
+# by default) one page silently overwrites the other. That breaks mirrors
+# and local regenerations of the website.
+# An example is: https://github.com/metamath/set.mm/pull/5438
+#
+# To resolve this, we forbid labels that differ *only* by
+# uppercase/lowercase as considered by locales C, POSIX, and en
+# (note that this doesn't handle Turkic dotted-i/non-dotted-i).
+#
+# Usage: scripts/check-case-collisions [MMFILE]   (MMFILE defaults to set.mm)
+#
+# Any colliding labels are printed, and the exit status is nonzero if
+# there are any. This requires some extensions on POSIX but those
+# extensions are widely available on BSDs/GNU including Linux and MacOS.
+
+set -eu
+
+mmfile="${1:-set.mm}"
+
+# Scratch files, removed on the way out. The metamath output is large
+# (about 50,000 labels for set.mm), so keep it in a file, not a variable.
+log=",check-case-collisions-$$.log"
+labels=",check-case-collisions-$$.labels"
+trap 'rm -f "$log" "$labels"' EXIT HUP INT TERM
+
+printf 'set scroll continuous\nread "%s"\nshow labels * /linear\nquit\n' \
+    "$mmfile" | metamath > "$log"
+
+# Don't report success on a database metamath could not fully read, since
+# "show labels" would then only list the part that did parse.
+if grep -q '?Error' "$log" ; then
+  cat "$log" >&2
+  echo "?Error: metamath could not read \"$mmfile\"." >&2
+  exit 1
+fi
+
+# Only $a and $p statements get a web page, and those are exactly the ones
+# "show labels" reports (its /ALL qualifier would add $e and $f labels).
+# Its output lines look like "42 wn $a", so keep the middle field.
+sed -n 's/^[0-9][0-9]* \([^ ][^ ]*\) [$][ap]$/\1/p' "$log" > "$labels"
+
+if [ ! -s "$labels" ]; then
+  cat "$log" >&2
+  echo "?Error: no \$a or \$p labels found in \"$mmfile\"." >&2
+  exit 1
+fi
+
+# "sort -f" folds case, which makes labels that are equal ignoring case
+# adjacent; "uniq -Di" then prints every label belonging to such a group.
+# LC_ALL=C keeps the folding to ASCII, which is all a Metamath label can
+# currently contain, and keeps the result independent of the user's locale.
+# The "-D" and "-i" flags are not in POSIX, but GNU and BSD (macOS) both
+# have them. Only the collisions are held in memory in a shell variable,
+# and normally there are none at all.
+collisions="$(LC_ALL=C sort -f "$labels" | LC_ALL=C uniq -Di)"
+
+if [ -n "$collisions" ]; then
+  echo "?Error: in \"$mmfile\" these labels differ only in letter case:"
+  printf '%s\n' "$collisions" | sed 's/^/    /'
+  echo "Web pages are named <label>.html, so they would overwrite each other"
+  echo "on a case-insensitive file system.  Please rename to remove the clash."
+  exit 1
+fi
+
+echo "No labels in \"$mmfile\" differ only in letter case."

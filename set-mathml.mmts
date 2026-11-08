@@ -119,14 +119,14 @@ $i class .|| $: <munder accentunder><mi mathcolor=#808>&#8741;</mi> <mo mathcolo
 $i class .~ $: <munder accentunder><mi mathcolor=#808>&#x223C;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
 $i class ._|_ $: <munder accentunder><mi mathcolor=#808>&#8869;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
 $i class .+^ $: <munder accentunder><mi mathcolor=#808>&#x2A23;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
-$i class .+b $: <munder accentunder><mi mathcolor=#808>&#x271A;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .+b $: <munder accentunder><mo mathcolor="#808" mathvariant="bold">+</mo> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
 $i class .(+) $: <munder accentunder><mi mathcolor=#808>&#x2295;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
 $i class .* $: <munder accentunder><mi mathcolor=#808>&lowast;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
 $i class .x. $: <munder accentunder><mi mathcolor=#808>&middot;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
 $i class .xb $: <munder accentunder><mi mathcolor=#808>&#x2219;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
 $i class ., $: <munder accentunder><mi mathcolor=#808>,</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
 $i class .(x) $: <munder accentunder><mi mathcolor=#808>&#x2297;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
-$i class .0b $: <munder accentunder><mi mathcolor=#808>&#x1D7CE</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .0b $: <munder accentunder><mi mathcolor=#808>&#x1D7CE;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
 
 $( Constants $)
 $s wff T. $: <mi href="df-tru.html">&#x22A4;</mi> $. $( There is actually an entity &true; $)
@@ -1479,8 +1479,10 @@ $s class cot $: <mi href="df-cot.html">cot</mi> $.
 $s class sgn $: <mi href="df-sgn.html">sgn</mi> $.
 $s class logb $: <mi href="df-logb.html">logb</mi> $.
 $s class log_ $: <mi href="df-log_.html">log_</mi> $.
-$s wff A! x ( ph -> ps ) $: <mrow> <mo href="df-alsi.html">&forall;!</mo> #x# <mfenced mathcolor=#0D0 separators="">#ph# <mo mathcolor=#0D0>&rarr;</mo> #ps#</mfenced> </mrow> $.
-$s wff A! x e. A ph $: <mrow> <mo href="df-alsc.html">&forall;!</mo> #x# <mo href="df-reu.html">&isin;</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
+$s wff AE x ( ph -> ps ) $: <mrow> <mo href="df-als.html">&forall;&exist;</mo> #x# <mfenced mathcolor=#0D0 separators="">#ph# <mo mathcolor=#0D0>&rarr;</mo> #ps#</mfenced> </mrow> $.
+$s wff AE x e. A ( ph -> ps ) $: <mrow> <mo href="df-rals.html">&forall;&exist;</mo> #x# <mo href="df-rals.html">&isin;</mo> #A# <mspace width=.4em /> <mfenced mathcolor=#0D0 separators="">#ph# <mo mathcolor=#0D0>&rarr;</mo> #ps#</mfenced> </mrow> $.
+$s wff AE! x ( ph -> ps ) $: <mrow> <mo href="df-alseu.html">&forall;&exist;!</mo> #x# <mfenced mathcolor=#0D0 separators="">#ph# <mo mathcolor=#0D0>&rarr;</mo> #ps#</mfenced> </mrow> $.
+$s wff AE! x e. A ( ph -> ps ) $: <mrow> <mo href="df-ralseu.html">&forall;&exist;!</mo> #x# <mo href="df-ralseu.html">&isin;</mo> #A# <mspace width=.4em /> <mfenced mathcolor=#0D0 separators="">#ph# <mo mathcolor=#0D0>&rarr;</mo> #ps#</mfenced> </mrow> $.
 $s wff A Reflexive B $: <mrow>#A# <mo href="df-reflexive.html">Reflexive</mo> #B#</mrow> $.
 $s wff A Irreflexive B $: <mrow>#A# <mo href="df-irreflexive.html">Irreflexive</mo> #B#</mrow> $.
 
@@ -1685,6 +1687,7 @@ $s class PrimRoots $: <mi href="df-primroots.html">PrimRoots</mi> $.
 
 $( Steven Nguyen $)
 $s class -R $: <msub href="df-resub.html"><mo>-</mo> <mi>&Ropf;</mi></msub> $.
+$s class /R $: <msub href="df-rediv.html"><mo>/</mo> <mi>&Ropf;</mi></msub> $.
 $s class PrjSp $: <mi href="df-prjsp.html">&Popf;&ropf;&oopf;&jopf;</mi> $.
 $s class PrjSpn $: <msub href="df-prjspn.html"><mi>&Popf;&ropf;&oopf;&jopf;</mi> <mi>n</mi></msub> $.
 $s class PrjCrv $: <mi href="df-prjcrv.html">PrjCrv</mi> $.
