@@ -17451,6 +17451,17 @@ $)
   $}
 
   ${
+    $d x y $.  $d ph y $.  $d ps x $.
+    nfa1w.x $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Replace ~ ax-10 in ~ nfa1 with a substitution hypothesis.  (Contributed
+       by SN, 2-Sep-2025.) $)
+    nfa1w $p |- F/ x A. x ph $=
+      ( wal cbvalvw nfv nfxfr ) ACFBDFZCABCDEGJCHI $.
+    $( $j usage 'nfa1w' avoids 'ax-8' 'ax-9' 'ax-10' 'ax-11' 'ax-12'
+       'ax-13'; $)
+  $}
+
+  ${
     $d x y $.  $d ps x $.  $d ph y $.
     19.8aw.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
     $( If a formula is true, then it is true for at least one instance.  This
@@ -23249,6 +23260,56 @@ $)
     eu6im $p |- ( E. y A. x ( ph <-> x = y ) -> E! x ph ) $=
       ( vz weq wi wal wex wa wb weu exsbim anim1i eu6lem eu3v 3imtr4i ) BCEZAFB
       GCHZABDEFBGDHZIABHZSIAQJBGCHABKRTSABCLMABCDNABDOP $.
+  $}
+
+  ${
+    $d ph z $.  $d ps x $.  $d x z $.  $d ph w y $.  $d w x y $.
+    eu6w.1 $e |- ( x = z -> ( ph <-> ps ) ) $.
+    $( Replace ~ ax-10 , ~ ax-12 in ~ eu6 with a substitution hypothesis.
+       (Contributed by SN, 27-May-2025.)  Remove a hypothesis and a distinct
+       variable condition, based on a comment from SN and ChatGPT. (Revised by
+       BTernaryTau, 8-Nov-2026.) $)
+    eu6w $p |- ( E! x ph <-> E. y A. x ( ph <-> x = y ) ) $=
+      ( vw wex weq wb wal wa wi wn alimi imbi2d 19.8aw syl eximi wsb weu pm2.21
+      alnex sylbir equequ2 albidv biimp wnf equcoms bicomd sbievw sbequ bitr3id
+      ja equequ1 imbi12d nfa1w bibi12d nfim 19.38b cbvalvw imbi12i a1i spw nfrd
+      id syl5 impbid2 bitr3d ax-mp ax12wlem com12 embantd ancld imbitrrdi mpgbi
+      albiim eximdv impbii anbi2i abai eu3v ancom biimpr exsbim biantru 3bitr4i
+      3bitr4ri bitri ) ACUAZACHZACDIZJZCKZDHZLZWOWKWKWOMZLWKAWLMZCKZDHZLWPWJWQW
+      TWKWQWTWKWOWTWKNZWSWTXAANZCKWSACUCXBWRCAWLUBOUDWSACGIZMZCKDGDGIZWRXDCXEWL
+      XCADGCUEPUFQRWNWSDWMWRCAWLUGOSUNWKWTWOWKWSWNDAWSWNMZMZWKXFMZCXFCUHZXGCKZX
+      HJWSWNCWRBEGTZGDIZMZCGXCAXKWLXLABECTXCXKBAECECIABABJCEFUIUJUKBCGEULUMZCGD
+      UOZUPZUQWMXKXLJZCGXCAXKWLXLXNXOURZUQUSXIWKXFCKZMXJXHAXFCUTXIXSXFWKXIXSXFX
+      FXMGKZXQGKZMZCGXFYBJXCWSXTWNYAWRXMCGXPVAWMXQCGXRVAVBVCZVDXFXFCHXIXSXFYBCG
+      YCQXIXFCXIVFVEVGVHPVIVJAWSWSWLAMZCKZLWNAWSYEWSWRAYEWRXMCGXPVDAAWLYEAVFWLA
+      YEAXKGDTZCDAXKGCTWLYFXKAGCGCIAXKAXKJCGXNUIUJUKXKCDGULUMVKVLVMVGVNAWLCVQVO
+      VPVRVLVSVTWKWOWAACDWBWHWOWKLWOWOWKMZLWPWOWOWKWAWKWOWCYGWOWOYEDHWKWNYEDWMY
+      DCAWLWDOSACDWERWFWGWI $.
+    $( $j usage 'eu6w' avoids 'ax-10' 'ax-11' 'ax-12' 'ax-13'; $)
+  $}
+
+  ${
+    $d x y z $.  $d x ps $.  $d x th $.  $d y z ph $.
+    eu6wOLD.x $e |- ( x = z -> ( ph <-> ps ) ) $.
+    eu6wOLD.y $e |- ( x = y -> ( ph <-> th ) ) $.
+    $( Obsolete version of ~ eu6w as of 8-Nov-2026.  (Contributed by SN,
+       27-May-2025.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    eu6wOLD $p |- ( E! x ph <-> E. y A. x ( ph <-> x = y ) ) $=
+      ( wex weq wb wal wa wi wn alimi imbi2d 19.8aw syl eximi weu pm2.21 sylbir
+      alnex equequ2 albidv biimp wnf equequ1 imbi12d nfa1w bibi12d nfim cbvalvw
+      ja 19.38b imbi12i a1i spw nfrd syl5 impbid2 bitr3d ax-mp ax12wlem embantd
+      id com12 ancld albiim imbitrrdi mpgbi eximdv impbii anbi2i 3bitr4ri ancom
+      abai eu3v biimpr exsbim biantru 3bitr4i bitri ) ADUAZADIZADEJZKZDLZEIZMZW
+      JWFWFWJNZMWFAWGNZDLZEIZMWKWEWLWOWFWLWOWFWJWOWFOZWNWOWPAOZDLWNADUDWQWMDAWG
+      UBPUCWNADFJZNZDLEFEFJZWMWSDWTWGWRAEFDUEQUFRSWIWNEWHWMDAWGUGPTUOWFWOWJWFWN
+      WIEAWNWINZNZWFXANZDXADUHZXBDLZXCKWNWIDWMBFEJZNZDFWRABWGXFGDFEUIZUJZUKWHBX
+      FKZDFWRABWGXFGXHULZUKUMXDWFXADLZNXEXCAXADUPXDXLXAWFXDXLXAXAXGFLZXJFLZNZDF
+      XAXOKWRWNXMWIXNWMXGDFXIUNWHXJDFXKUNUQURZUSXAXADIXDXLXAXODFXPRXDXADXDVGUTV
+      AVBQVCVDAWNWNWGANZDLZMWIAWNXRWNWMAXRWMXGDFXIUSAAWGXRAVGWGAXRACDEHVEVHVFVA
+      VIAWGDVJVKVLVMVHVNVOWFWJVRADEVSVPWJWFMWJWJWFNZMWKWJWJWFVRWFWJVQXSWJWJXREI
+      WFWIXREWHXQDAWGVTPTADEWASWBWCWD $.
+    $( $j usage 'eu6wOLD' avoids 'ax-10' 'ax-11' 'ax-12' 'ax-13'; $)
   $}
 
   ${
@@ -44556,10 +44617,24 @@ $)
   $}
 
   ${
-    $d x A $.
+    $d A y $.  $d w x y $.  $d A x z $.
     $( Two ways to express " ` A ` is a singleton".  (Contributed by NM,
-       30-Oct-2010.) $)
+       30-Oct-2010.)  Avoid ~ ax-10 , ~ ax-11 , ~ ax-12 .  (Revised by
+       BTernaryTau, 8-Nov-2026.) $)
     eusn $p |- ( E! x x e. A <-> E. x A = { x } ) $=
+      ( vy vw vz cv csn wceq wex weq wb wal weu cab df-sn eqeq2i equequ1 eqabbw
+      wcel bitri exbii sneq eqeq2d cbvexvw eleq1w eu6w 3bitr4ri ) BCFZGZHZCIAFZ
+      BSZACJZKALZCIBUKGZHZAIULAMUJUNCUJBDCJZDNZHUNUIURBDUHOPUQUMDABDACQRTUAUPUJ
+      ACUMUOUIBUKUHUBUCUDULEFBSACEAEBUEUFUG $.
+    $( $j usage 'eusn' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+  $}
+
+  ${
+    $d x A $.
+    $( Obsolete version of ~ eusn as of 8-Nov-2026.  (Contributed by NM,
+       30-Oct-2010.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    eusnOLD $p |- ( E! x x e. A <-> E. x A = { x } ) $=
       ( cv wcel weu cab csn wceq wex euabsn abid2 eqeq1i exbii bitri ) ACZBDZAE
       PAFZOGZHZAIBRHZAIPAJSTAQBRABKLMN $.
   $}
@@ -580161,6 +580236,20 @@ $)
       TUDUE $.
   $}
 
+  ${
+    $d ph y $.  $d ps x $.  $d x y $.
+    eu8.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Uniqueness using implicit substitution.  (Contributed by BTernaryTau,
+       8-Nov-2026.) $)
+    eu8 $p |- ( E! x ph <-> E. x ( ph /\ A. y ( ps -> x = y ) ) ) $=
+      ( weu weq wb wal wex wi wa cbveuvw bicomd equcoms eu6w dfbi2 albii equcom
+      imbi2i equsalvw bicomi anbi12i ancom 19.26 3bitr4ri bitri exbii 3bitri )
+      ACFBDFBDCGZHZDIZCJABCDGZKZDIZLZCJABCDEMBADCCBAHCDUMABENOZPULUPCULBUJKZUJB
+      KZLZDIZUPUKUTDBUJQRUOALURDIZUSDIZLUPVAUOVBAVCUNURDUMUJBCDSTRVCABADCUQUAUB
+      UCAUOUDURUSDUEUFUGUHUI $.
+    $( $j usage 'eu8' avoids 'ax-8' 'ax-9' 'ax-10' 'ax-11' 'ax-12' 'ax-13'; $)
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -580233,6 +580322,18 @@ $)
     ( cv csn cdif wcel wex wne wa wrex eldifsn exbii df-rex bitr4i ) ADZBCEFGZA
     HPBGPCIZJZAHRABKQSAPBCLMRABNO $.
 
+  ${
+    $d A x $.  $d B x y $.  $d C x y $.
+    $( Two ways of expressing "every element of ` A ` is an element of some
+       member of ` B ` other than ` C ` ".  (Contributed by BTernaryTau,
+       3-Nov-2026.) $)
+    ssunidifsn $p |- ( A C_ U. ( B \ { C } ) <->
+        A. x e. A E. y e. B ( x e. y /\ y =/= C ) ) $=
+      ( csn cdif cuni wss cv wcel wral wne wrex dfss3 wex eldifsn anbi2i an12
+      wa bitr4i exbii eluni df-rex 3bitr4i ralbii bitri ) CDEFGZHZIAJZUIKZACLUJ
+      BJZKZULEMZTZBDNZACLACUIOUKUPACUMULUHKZTZBPULDKZUOTZBPUKUPURUTBURUMUSUNTZT
+      UTUQVAUMULDEQRUSUMUNSUAUBBUJUHUCUOBDUDUEUFUG $.
+  $}
 
   ${
     $d w x y z $.
@@ -580248,7 +580349,6 @@ $)
     $( $j usage 'axnulALT2' avoids 'ax-5' 'ax-7' 'ax-8' 'ax-9' 'ax-10' 'ax-11'
        'ax-12' 'ax-13' 'ax-ext' 'ax-sep' 'ax-nul'; $)
   $}
-
 
   $( If the image under a one-to-one function exists, then the corresponding
      preimage also exists.  (Contributed by BTernaryTau, 21-Jun-2026.) $)
@@ -581128,6 +581228,60 @@ $)
     $( $j usage 'dfac16' avoids 'ax-ac' 'ax-ac2'; $)
   $}
 
+  ${
+    $d u v x $.  $d u v y $.  $d u v z $.
+    $( Lemma for ~ ackmb and ~ axac2b .  (Contributed by BTernaryTau,
+       26-Oct-2026.) $)
+    ackmblem $p |- ( E. y A. z E. v A. u ( ( y e. x /\ ( z e. y ->
+        ( ( v e. x /\ -. y = v ) /\ z e. v ) ) ) \/ ( -. y e. x /\ ( z e. x ->
+        ( ( v e. z /\ v e. y ) /\ ( ( u e. z /\ u e. y ) -> u = v ) ) ) ) ) <->
+        E. y A. z E. v A. u ( ( y e. x /\ ( z e. y -> ( ( v e. x /\
+        -. y = v ) /\ z e. v ) ) ) \/ ( -. y e. x /\ ( z e. x -> ( ( u e. z /\
+        u e. y ) <-> u = v ) ) ) ) ) $=
+      ( wel weq wn wa wi wo wal wex 19.43 19.32v exbii 19.28v 3bitri 3bitr4ri
+      wb 19.42v 19.37v 19.21v equcom imbi2i albii anbi2i elequ1 anbi12d cbveuvw
+      weu eu8 bicomd equcoms eu6w 3bitr3i 3bitr2i orbi2i ) BAFZCBFDAFBDGHICDFIJ
+      IZUSHZCAFZDCFZDBFZIZECFZEBFZIZEDGZJZIZJZIZKELZDMZCLUTVAVBVHVITZJZIZKELZDM
+      ZCLBVOVTCUTVRELZKZDMUTDMZWADMZKZVTVOUTWADNVSWBDUTVREOPVOUTVMELZKZDMWCWFDM
+      ZKWEVNWGDUTVMEOPUTWFDNWHWDWCVAVQELZIZDMVAWIDMZIZWDWHVAWIDUAWAWJDVAVQEQPWH
+      VAVLELZIZDMVAWMDMZIWLWFWNDVAVLEQPVAWMDUAWOWKVAVBVPELZJZDMVBWPDMZJZWKWOVBW
+      PDUBWIWQDVBVPEUCPWOVBVKELZJZDMVBWTDMZJWSWMXADVBVKEUCPVBWTDUBXBWRVBXBVEVJE
+      LZIZDMVEVHDEGZJZELZIZDMZWRWTXDDVEVJEQPXHXDDXGXCVEXFVJEXEVIVHDEUDUEUFUGPVE
+      DUKVHEUKXIWRVEVHDEXEVCVFVDVGDECUHDEBUHUIZUJVEVHDEXJULVHVEEDDVHVETDEXEVEVH
+      XJUMUNUOUPUQUERSUGRSURRSUFP $.
+  $}
+
+  ${
+    $d u v x $.  $d u v w y $.  $d u v w z $.
+    $( Equivalence of Kurt Maes' Axiom of Choice ~ ackm and a shortened version
+       with a biconditional.  Uses only Tarski's FOL axiom schemes.
+       (Contributed by BTernaryTau, 26-Oct-2026.) $)
+    ackmb $p |- ( A. x E. y A. z E. v A. u ( ( y e. x /\ ( z e. y ->
+        ( ( v e. x /\ -. y = v ) /\ z e. v ) ) ) \/ ( -. y e. x /\ ( z e. x ->
+        ( ( v e. z /\ v e. y ) /\ ( ( u e. z /\ u e. y ) -> u = v ) ) ) ) ) <->
+        A. x E. y A. z E. v A. u ( ( y e. x /\ ( z e. y -> ( ( v e. x /\
+        -. y = v ) /\ z e. v ) ) ) \/ ( -. y e. x /\ ( z e. x -> ( ( u e. z /\
+        u e. y ) <-> u = v ) ) ) ) ) $=
+      ( wel weq wn wa wi wo wal wex wb ackmblem albii ) BAFZCBFDAFBDGHICDFIJIZQ
+      HZCAFZDCFDBFIECFEBFIZEDGZJIJIKELDMCLBMRSTUAUBNJIKELDMCLBMAABCDEOP $.
+    $( $j usage 'ackmb' avoids 'ax-9' 'ax-10' 'ax-11' 'ax-12' 'ax-13' 'ax-ext'
+       'ax-rep' 'ax-sep' 'ax-nul' 'ax-pow' 'ax-pr' 'ax-un' 'ax-reg' 'ax-inf'
+       'ax-inf2' 'ax-ac' 'ax-ac2' 'df-clab' 'df-cleq' 'df-clel'; $)
+  $}
+
+  ${
+    $d u v x y z $.
+    $( Equivalence of the Axiom of Choice and a shortened version of Maes' AC
+       (see ~ ackmb ).  Uses only Tarski's FOL axiom schemes.  (Contributed by
+       BTernaryTau, 26-Oct-2026.) $)
+    dfackmb $p |- ( CHOICE <-> A. x E. y A. z E. v A. u ( ( y e. x /\
+        ( z e. y -> ( ( v e. x /\ -. y = v ) /\ z e. v ) ) ) \/ ( -. y e. x /\
+        ( z e. x -> ( ( u e. z /\ u e. y ) <-> u = v ) ) ) ) ) $=
+      ( wac wel weq wn wa wi wo wal wex wb dfackm ackmb bitri ) FBAGZCBGDAGBDHI
+      JCDGJKJZSIZCAGZDCGDBGJECGEBGJZEDHZKJKJLEMDNCMBNAMTUAUBUCUDOKJLEMDNCMBNAMA
+      BCDEPABCDEQR $.
+  $}
+
   $( The Axiom of Choice implies that any set is numerable.  (Contributed by
      BTernaryTau, 3-Jul-2026.) $)
   acnum $p |- ( CHOICE -> ( A e. V -> A e. dom card ) ) $=
@@ -581239,6 +581393,79 @@ $)
       UUOUUEGUUNUUMUUEUULUUCUUBXGXHXIVJXJXKYLYTNLMXLXMLBXNXOIBYQYPXQZYKYRIBJYPV
       LZUVTIJJLVLZBJUNUWAILJWFZUWBIUVGJQZUWCXPUWCUVLUWDUVMLJXRXSXTJLYAWMBYBJJBL
       YHYCBJYPYDTBYQJYPYEYFYMYQJYGYIYJ $.
+  $}
+
+  ${
+    $d u v w x y z $.
+    $( Derive a shortened version of Maes' AC (see ~ ackmb ) .  Uses only
+       Tarski's FOL axiom schemes and ~ ax-ac2 .  (Contributed by BTernaryTau,
+       26-Oct-2026.) $)
+    axac2b $p |- E. y A. z E. v A. u ( ( y e. x /\ ( z e. y ->
+        ( ( v e. x /\ -. y = v ) /\ z e. v ) ) ) \/
+        ( -. y e. x /\ ( z e. x -> ( ( u e. z /\ u e. y ) <-> u = v ) ) ) ) $=
+      ( wel weq wn wa wi wo wal wex wb ax-ac2 ackmblem mpbi ) BAFZCBFDAFBDGHICD
+      FIJIZRHZCAFZDCFDBFIECFEBFIZEDGZJIJIKELDMCLBMSTUAUBUCNJIKELDMCLBMABCDEOABC
+      DEPQ $.
+    $( $j usage 'axac2b' avoids 'ax-9' 'ax-10' 'ax-11' 'ax-12' 'ax-13' 'ax-ext'
+       'ax-rep' 'ax-sep' 'ax-nul' 'ax-pow' 'ax-pr' 'ax-un' 'ax-reg' 'ax-inf'
+       'ax-inf2' 'ax-ac' 'df-clab' 'df-cleq' 'df-clel'; $)
+  $}
+
+  ${
+    $d t u v x y z $.  $d t u v w x z $.
+    $( Kurt Maes' Axiom of Choice expressed using abbreviations.  The
+       penultimate step shows the logical equivalence to ~ ax-ac2 .
+       (Contributed by BTernaryTau, 4-Nov-2026.) $)
+    zfac2 $p |- ( E. y e. x y C_ U. ( x \ { y } ) \/
+        E. w ( w e/ x /\ A. z e. x E. v ( z i^i w ) = { v } ) ) $=
+      ( vu vt wel cv wn wa wi wo wal wex exbii bitri albii 19.28v anbi12d 19.43
+      wceq weq csn cdif cuni wss wrex wnel cin wral ax-ac2 19.32v orbi1i bitr4i
+      19.3v wb pm3.24 19.42v simplbi exlimiv simpl spsv mto 19.33b ax-mp df-rex
+      anim12i wne ssunidifsn df-ral 19.37v 3ancomb df-3an 3anass 3bitr3i anbi2i
+      w3a anbi1i bitr3i imbi2i 3bitri elequ1 notbid elequ2 anbi2d imbi1d imbi2d
+      nesym 3bitr4ri albidv exbidv cbvexvw df-nel 19.21v wcel weu elin eusn eu8
+      eubii anbi12i equcom a1i imbi12d 3bitr4i orbi12i mpbi ) BAHZCBHZEAHZBIZEI
+      ZUBJZKZCEHZKZLZKZXIJZCAHZECHZEBHZKZFCHZFBHZKZFEUCZLZKZLZKZMFNZEOZCNZBOZXL
+      AIZXLUDUEUFUGZBYQUHZDIZYQUIZCIZYTUJZXMUDUBEOZCYQUKZKZDOZMZABCEFULXSFNZEOZ
+      CNZYLFNZEOZCNZMZBOUUKBOZUUNBOZMYPUUHUUKUUNBUAYOUUOBYOUUJUUMMZCNZUUOYNUURC
+      YNUUIUULMZEOUURYMUUTEYMXSUULMUUTXSYLFUMUUIXSUULXSFUPUNUOPUUIUULEUAQRUUJCO
+      ZUUMCOZKZJUUSUUOUQUVCXIXTKXIURUVAXIUVBXTUUJXICUUJXIXRFNZEOZUUJXIUVDKZEOXI
+      UVEKZUUIUVFEXIXRFSPXIUVDEUSQZUTVAUUMXTCUULXTEYLXTFXTYKVBVCVAVAVHVDUUJUUMC
+      VEVFQPYSUUPUUGUUQYSXIYRKZBOUUPYRBYQVGUVIUUKBUVGCNXIUVECNZKUUKUVIXIUVECSUU
+      JUVGCUVHRYRUVJXIYRXPXMXLVIZKZEYQUHZCXLUKXJUVMLZCNUVJCEXLYQXLVJUVMCXLVKUVN
+      UVECXREOXJXQEOZLUVEUVNXJXQEVLUVDXREXRFUPPUVMUVOXJUVMXKUVLKZEOUVOUVLEYQVGU
+      VPXQEUVPXKUVKKZXPKZXQXKUVKXPVRXKXPUVKVRUVRUVPXKUVKXPVMXKUVKXPVNXKXPUVKVOV
+      PUVQXOXPUVKXNXKXMXLWIVQVSVTPQWAWJRWBVQWJPQDAHZJZYAYBEDHZKZYEFDHZKZEFUCZLZ
+      KZLZKZFNZEOZCNZDOGAHZJZYAYBEGHZKZYEFGHZKZUWELZKZLZKZFNZEOZCNZGOUUGUUQUWLU
+      XEDGDGUCZUWKUXDCUXFUWJUXCEUXFUWIUXBFUXFUVTUWNUWHUXAUXFUVSUWMDGAWCWDUXFUWG
+      UWTYAUXFUWBUWPUWFUWSUXFUWAUWOYBDGEWEWFUXFUWDUWRUWEUXFUWCUWQYEDGFWEWFWGTWH
+      TWKWLWKWMUUFUWLDUVTUWHFNZEOZKZCNUVTUXHCNZKUWLUUFUVTUXHCSUWKUXICUWKUVTUXGK
+      ZEOUXIUWJUXKEUVTUWHFSPUVTUXGEUSQRUUAUVTUUEUXJYTYQWNUUEYAUUDLZCNUXJUUDCYQV
+      KUXLUXHCYAUWGFNZLZEOYAUXMEOZLUXHUXLYAUXMEVLUXGUXNEYAUWGFWOPUUDUXOYAUUDUWB
+      UWFFNKZEOZUXOXMUUCWPZEWQUWBEWQUUDUXQUXRUWBEXMUUBYTWRXAEUUCWSUWBUWDEFUWEYB
+      YEUWAUWCEFCWCEFDWCTWTVPUXMUXPEUWBUWFFSPUOWAWJRQXBWJPUUNUXEBGBGUCZUUMUXDCU
+      XSUULUXCEUXSYLUXBFUXSXTUWNYKUXAUXSXIUWMBGAWCWDUXSYJUWTYAUXSYDUWPYIUWSUXSY
+      CUWOYBBGEWEWFUXSYGUWRYHUWEUXSYFUWQYEBGFWEWFYHUWEUQUXSFEXCXDXETWHTWKWLWKWM
+      XFXGXFXH $.
+    $( $j usage 'zfac2' avoids 'ax-10' 'ax-11' 'ax-12' 'ax-13' 'ax-rep'
+       'ax-sep' 'ax-nul' 'ax-pow' 'ax-pr' 'ax-un' 'ax-reg' 'ax-inf' 'ax-inf2'
+       'ax-ac'; $)
+  $}
+
+  ${
+    $d A w $.  $d v x y z $.  $d v w x z $.  $d A v y z $.
+    $( Kurt Maes' Axiom of Choice with class variables expressed using
+       abbreviations.  (Contributed by BTernaryTau, 4-Nov-2026.) $)
+    zfac2cl $p |- ( A e. V -> ( E. y e. A y C_ U. ( A \ { y } ) \/
+        E. w ( w e/ A /\ A. z e. A E. x ( z i^i w ) = { x } ) ) ) $=
+      ( vv cv csn cdif cuni wss wrex wnel cin wceq wex wral wa wo difeq1 unieqd
+      sseq2d rexeqbi1dv neleq2 raleq anbi12d exbidv orbi12d zfac2 vtoclg ) BHZG
+      HZULIZJZKZLZBUMMZDHZUMNZCHUSOAHIPAQZCUMRZSZDQZTULEUNJZKZLZBEMZUSENZVACERZ
+      SZDQZTGEFUMEPZURVHVDVLUQVGBUMEVMUPVFULVMUOVEUMEUNUAUBUCUDVMVCVKDVMUTVIVBV
+      JUMEUSUEVACUMEUFUGUHUIGBCDAUJUK $.
+    $( $j usage 'zfac2cl' avoids 'ax-10' 'ax-11' 'ax-12' 'ax-13' 'ax-rep'
+       'ax-sep' 'ax-nul' 'ax-pow' 'ax-pr' 'ax-un' 'ax-reg' 'ax-inf' 'ax-inf2'
+       'ax-ac'; $)
   $}
 
 
@@ -731358,39 +731585,6 @@ $(
 $)
 
   ${
-    $d x y $.  $d ph y $.  $d ps x $.
-    nfa1w.x $e |- ( x = y -> ( ph <-> ps ) ) $.
-    $( Replace ~ ax-10 in ~ nfa1 with a substitution hypothesis.  (Contributed
-       by SN, 2-Sep-2025.) $)
-    nfa1w $p |- F/ x A. x ph $=
-      ( wal cbvalvw nfv nfxfr ) ACFBDFZCABCDEGJCHI $.
-    $( $j usage 'nfa1w' avoids 'ax-10'; $)
-  $}
-
-  ${
-    $d x y z $.  $d x ps $.  $d x th $.  $d y z ph $.
-    eu6w.x $e |- ( x = z -> ( ph <-> ps ) ) $.
-    eu6w.y $e |- ( x = y -> ( ph <-> th ) ) $.
-    $( Replace ~ ax-10 , ~ ax-12 in ~ eu6 with substitution hypotheses.
-       (Contributed by SN, 27-May-2025.) $)
-    eu6w $p |- ( E! x ph <-> E. y A. x ( ph <-> x = y ) ) $=
-      ( wex weq wb wal wa wi wn alimi imbi2d 19.8aw syl eximi weu pm2.21 sylbir
-      alnex equequ2 albidv biimp wnf equequ1 imbi12d nfa1w bibi12d nfim cbvalvw
-      ja 19.38b imbi12i a1i spw nfrd syl5 impbid2 bitr3d ax-mp ax12wlem embantd
-      id com12 ancld albiim imbitrrdi mpgbi eximdv impbii anbi2i 3bitr4ri ancom
-      abai eu3v biimpr exsbim biantru 3bitr4i bitri ) ADUAZADIZADEJZKZDLZEIZMZW
-      JWFWFWJNZMWFAWGNZDLZEIZMWKWEWLWOWFWLWOWFWJWOWFOZWNWOWPAOZDLWNADUDWQWMDAWG
-      UBPUCWNADFJZNZDLEFEFJZWMWSDWTWGWRAEFDUEQUFRSWIWNEWHWMDAWGUGPTUOWFWOWJWFWN
-      WIEAWNWINZNZWFXANZDXADUHZXBDLZXCKWNWIDWMBFEJZNZDFWRABWGXFGDFEUIZUJZUKWHBX
-      FKZDFWRABWGXFGXHULZUKUMXDWFXADLZNXEXCAXADUPXDXLXAWFXDXLXAXAXGFLZXJFLZNZDF
-      XAXOKWRWNXMWIXNWMXGDFXIUNWHXJDFXKUNUQURZUSXAXADIXDXLXAXODFXPRXDXADXDVGUTV
-      AVBQVCVDAWNWNWGANZDLZMWIAWNXRWNWMAXRWMXGDFXIUSAAWGXRAVGWGAXRACDEHVEVHVFVA
-      VIAWGDVJVKVLVMVHVNVOWFWJVRADEVSVPWJWFMWJWJWFNZMWKWJWJWFVRWFWJVQXSWJWJXREI
-      WFWIXREWHXQDAWGVTPTADEWASWBWCWD $.
-    $( $j usage 'eu6w' avoids 'ax-10' 'ax-11' 'ax-12'; $)
-  $}
-
-  ${
     $d x y $.  $d x th $.  $d x ch $.  $d y ph $.  $d y ps $.
     abbibw.ph $e |- ( x = y -> ( ph <-> th ) ) $.
     abbibw.ps $e |- ( x = y -> ( ps <-> ch ) ) $.
@@ -731412,15 +731606,33 @@ $)
       ( cab csn wceq cv wb wal df-sn eqeq2i eqeq1 abbibw bitri ) ACGZEHZIRCJZEI
       ZCGZIAUAKCLSUBRCEMNAUADJZEIBCDFTUCEOPQ $.
     $( $j usage 'absnw' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+  $}
 
-    $d th x $.  $d ph z $.  $d x y z $.
-    euabsn2w.z $e |- ( x = z -> ( ph <-> th ) ) $.
-    $( Replace ~ ax-10 , ~ ax-11 , ~ ax-12 in ~ euabsn2 with substitution
-       hypotheses.  (Contributed by SN, 27-May-2025.) $)
+  ${
+    $d ph z $.  $d ps x $.  $d x z $.  $d ph w y $.  $d w x y $.
+    euabsn2w.1 $e |- ( x = z -> ( ph <-> ps ) ) $.
+    $( Replace ~ ax-10 , ~ ax-11 , ~ ax-12 in ~ euabsn2 with a substitution
+       hypothesis.  (Contributed by SN, 27-May-2025.)  Remove a hypothesis and
+       a distinct variable condition, based on a comment from SN and ChatGPT.
+       (Revised by BTernaryTau, 8-Nov-2026.) $)
     euabsn2w $p |- ( E! x ph <-> E. y { x | ph } = { y } ) $=
-      ( weu weq wb wal wex cab cv csn wceq eu6w absnw exbii bitr4i ) ADIADEJKDL
-      ZEMADNEOZPQZEMACBDEFHGRUDUBEACDFUCHSTUA $.
+      ( vw weu weq wb wal wex cab cv csn wceq eu6w wsb equcoms bicomd bitr3id
+      sbievw sbequ absnw exbii bitr4i ) ACHACDIJCKZDLACMDNZOPZDLABCDEFQUIUGDABE
+      GRZCGUHABECRCGIUJBAECECIABABJCEFSTUBBCGEUCUAUDUEUF $.
     $( $j usage 'euabsn2w' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+  $}
+
+  ${
+    $d ps x $.  $d th x $.  $d ph y $.  $d ph z $.  $d x y z $.
+    euabsn2wOLD.y $e |- ( x = y -> ( ph <-> ps ) ) $.
+    euabsn2wOLD.z $e |- ( x = z -> ( ph <-> th ) ) $.
+    $( Obsolete version of ~ euabsn2w as of 8-Nov-2026.  (Contributed by SN,
+       27-May-2025.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    euabsn2wOLD $p |- ( E! x ph <-> E. y { x | ph } = { y } ) $=
+      ( weu weq wb wal wex cab cv csn wceq eu6wOLD absnw exbii bitr4i ) ADIADEJ
+      KDLZEMADNEOZPQZEMACBDEFHGRUDUBEACDFUCHSTUA $.
+    $( $j usage 'euabsn2wOLD' avoids 'ax-10' 'ax-11' 'ax-12'; $)
   $}
 
 

@@ -6411,6 +6411,7 @@
 "erngset-rN" is used by "erngbase-rN".
 "erngset-rN" is used by "erngfmul-rN".
 "erngset-rN" is used by "erngfplus-rN".
+"eu6wOLD" is used by "euabsn2wOLD".
 "euxfr2" is used by "euxfr".
 "exatleN" is used by "cdlema2N".
 "exdistrf" is used by "oprabid".
@@ -16650,8 +16651,11 @@ New usage of "erngplus2-rN" is discouraged (0 uses).
 New usage of "erngring-rN" is discouraged (0 uses).
 New usage of "erngset-rN" is discouraged (3 uses).
 New usage of "et-ltneverrefl" is discouraged (0 uses).
+New usage of "eu6wOLD" is discouraged (1 uses).
+New usage of "euabsn2wOLD" is discouraged (0 uses).
 New usage of "eufndx" is discouraged (0 uses).
 New usage of "eujustALT" is discouraged (0 uses).
+New usage of "eusnOLD" is discouraged (0 uses).
 New usage of "euxfr" is discouraged (0 uses).
 New usage of "euxfr2" is discouraged (1 uses).
 New usage of "ex-decpmul" is discouraged (0 uses).
@@ -20388,7 +20392,10 @@ Proof modification of "equncomiVD" is discouraged (19 steps).
 Proof modification of "equs5aALT" is discouraged (25 steps).
 Proof modification of "equs5eALT" is discouraged (39 steps).
 Proof modification of "equsexALT" is discouraged (37 steps).
+Proof modification of "eu6wOLD" is discouraged (342 steps).
+Proof modification of "euabsn2wOLD" is discouraged (42 steps).
 Proof modification of "eujustALT" is discouraged (188 steps).
+Proof modification of "eusnOLD" is discouraged (34 steps).
 Proof modification of "ex-decpmul" is discouraged (304 steps).
 Proof modification of "ex-natded5.13" is discouraged (67 steps).
 Proof modification of "ex-natded5.13-2" is discouraged (21 steps).
