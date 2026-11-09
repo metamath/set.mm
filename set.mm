@@ -48688,6 +48688,15 @@ $)
       ( wbr breq1d mtbird ) ABDEHCDEHGABCDEFIJ $.
   $}
 
+  ${
+    brneqtrd.1 $e |- ( ph -> -. A R B ) $.
+    brneqtrd.2 $e |- ( ph -> B = C ) $.
+    $( Substitution of equal classes into the negation of a binary relation.
+       (Contributed by Glauco Siliprandi, 3-Jan-2021.) $)
+    brneqtrd $p |- ( ph -> -. A R C ) $=
+      ( wbr breq2d mtbid ) ABCEHBDEHFACDBEGIJ $.
+  $}
+
   $( Two classes are different if they don't have the same relationship to a
      third class.  (Contributed by NM, 3-Jun-2012.) $)
   nbrne1 $p |- ( ( A R B /\ -. A R C ) -> B =/= C ) $=
@@ -60629,6 +60638,37 @@ $)
       IZDAJCAJZKABLZEZUGUFUMGZDCHZUFUGUMGZIZCAJDAJZKABMAUMMUEUNULUSABNULUKCAJDA
       JUSUKCDAAOURUKDCAAUOUHUPUIUQUJUGUFBDPZCPZQDCRUFUGBVAUTQSUAUBUCCDABTDCAUMT
       UD $.
+  $}
+
+  ${
+    $d R x y z $.  $d A x y z $.  $d B x y z $.  $d C x y $.
+    $( A subset of a well-founded set has an infimum.  (Contributed by Jeff
+       Madsen, 2-Sep-2009.) $)
+    frinf $p |- ( ( R Fr A /\ ( B e. C /\ B C_ A /\ B =/= (/) ) ) ->
+                    E. x e. A ( A. y e. B -. x `' R y /\
+                    A. y e. A ( y `' R x -> E. z e. B y `' R z ) ) ) $=
+      ( wfr wcel wss c0 wa cv wbr wn wral wrex wi vex ex wne w3a ccnv fri exp43
+      ancom1s 3imp2 ssel2 adantrr brcnv biimpi ralimi ad2antll rspcev ralrimivw
+      con3i breq2 ad2antrl jca32 reximdv2 adantl 3ad2antr2 mpd ) DGHZEFIZEDJZEK
+      UAZUBLBMZAMZGNZOZBEPZAEQZVIVHGUCZNZOZBEPZVHVIVNNZVHCMZVNNZCEQZRZBDPZLZADQ
+      ZVDVEVFVGVMVDVEVFVGVMVEVDVFVGLVMABDEFGUDUFUEUGVDVEVFVMWERZVGVFWFVDVFVLWDA
+      EDVFVIEIZVLLZVIDIZWDLVFWHLWIVQWCVFWGWIVLEDVIUHUIVLVQVFWGVKVPBEVOVJVOVJVIV
+      HGASBSUJUKUPULUMWGWCVFVLWGWBBDWGVRWAVTVRCVIEVSVIVHVNUQUNTUOURUSTUTVAVBVC
+      $.
+  $}
+
+  ${
+    $d A x y z $.  $d B x y z $.  $d C x y z $.  $d R x y z $.
+    $( A nonempty subset of a well-ordered set has a lower bound.  (Contributed
+       by Jeff Madsen, 2-Sep-2009.) $)
+    welb $p |- ( ( R We A /\ ( B e. C /\ B C_ A /\ B =/= (/) ) ) ->
+              ( `' R Or B /\ E. x e. B ( A. y e. B -. x `' R y /\
+                        A. y e. B ( y `' R x -> E. z e. B y `' R z ) ) ) ) $=
+      ( wwe wcel wss c0 w3a wa wor cv wbr wral wrex syl 3ad2antr2 wne ccnv wess
+      wn wi impcom weso cnvso sylib wfr wefr ssidd 3anim2i adantl frinf syl2anc
+      jca ) DGHZEFIZEDJZEKUAZLZMZEGUBZNZAOZBOZVDPUDBEQVGVFVDPVGCOVDPCERUEBEQMAE
+      RZURUSUTVEVAURUTMZEGNZVEVIEGHZVJUTURVKEDGUCUFZEGUGSEGUHUITVCEGUJZUSEEJZVA
+      LZVHURUSUTVMVAVIVKVMVLEGUKSTVBVOURUTVNUSVAUTEULUMUNABCEEFGUOUPUQ $.
   $}
 
   ${
@@ -525197,6 +525237,62 @@ $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
+  $( "Less than" is a well-order on the nonnegative integers.  (Contributed by
+     Thierry Arnoux, 29-Oct-2026.) $)
+  ltwenn0 $p |- < We NN0 $=
+    ( cn0 clt wwe cc0 cuz cfv ltweuz wceq wb nn0uz weeq2 ax-mp mpbir ) ABCZDEFZ
+    BCZDGAOHNPIJAOBKLM $.
+
+  ${
+    $d A b i x $.  $d A j $.  $d A w x y z $.  $d B b $.  $d B i j y $.
+    $d B w x z $.  $d C w x y $.  $d R b i $.  $d R j $.  $d R w x y z $.
+    $d b i ph $.  $d ph w x y $.
+    weinfcl.1 $e |- ( ph -> R We A ) $.
+    weinfcl.2 $e |- ( ph -> B e. V ) $.
+    weinfcl.3 $e |- ( ph -> B C_ A ) $.
+    weinfcl.4 $e |- ( ph -> B =/= (/) ) $.
+    $( Closure of the infimum in a well-order.  (Contributed by Thierry Arnoux,
+       29-Oct-2026.) $)
+    weinfcl $p |- ( ph -> inf ( B , A , R ) e. B ) $=
+      ( vx vi vy vj cv wbr wn wral wcel wa syl cinf weso ad2antrr sselda adantr
+      wor wwe weq breq1 notbid cbvralvw bilani r19.21bi simprr rspcedvdw eqinfd
+      simpllr simplr eqeltrd wfr wefr frd r19.29a ) AJNZKNZDOZPZJCQZCBDUAZCRKCA
+      VECRZSZVHSZVIVECVLLMBCVEDABDUFZVJVHABDUGZVMFBDUBTUCVKVEBRVHACBVEHUDUEVLLN
+      ZVEDOZPZLCVHVQLCQVKVGVQJLCJLUHVFVPVDVOVEDUIUJUKULUMVLVOBRZVEVODOZSZSMNZVO
+      DOVSMVECWAVEVODUIAVJVHVTUQVLVRVSUNUOUPAVJVHURUSAKJBCDEAVNBDUTFBDVATHGIVBV
+      C $.
+  $}
+
+  ${
+    $d A i y $.  $d A t x y z $.  $d B i $.  $d B t x y z $.  $d R i $.
+    $d R t x y z $.  $d V x y z $.  $d i ph $.  $d ph t x y z $.
+    weinflb.1 $e |- ( ph -> Rel R ) $.
+    weinflb.2 $e |- ( ph -> R We A ) $.
+    weinflb.3 $e |- ( ph -> B e. V ) $.
+    weinflb.4 $e |- ( ph -> B C_ A ) $.
+    weinflb.5 $e |- ( ph -> B =/= (/) ) $.
+    weinflb.6 $e |- ( ph -> C e. B ) $.
+    $( In a well-order, an infimum is a lower bound.  (Contributed by Thierry
+       Arnoux, 29-Oct-2026.) $)
+    weinflb $p |- ( ph -> -. C R inf ( B , A , R ) ) $=
+      ( vx vy vz wcel wbr wn wral wa cinf wwe wor weso syl cv ccnv wrex wss wne
+      welb syl13anc simprd sselda adantrr brcnvg notbid ralbidva biimpa adantll
+      wi c0 breq1 simpllr rspcedvdw ralrimiva adantr anim12dan anasss reximssdv
+      simpr ex inflb mpd ) ADCPDCBEUAEQRLAMNOBCDEABEUBZBEUCHBEUDUEAMUFZNUFZEUGZ
+      QZRZNCSZVQVPVRQVQOUFZVRQOCUHVANCSZTZVQVPEQZRZNCSZVPVQEQZWBVQEQZOCUHZVAZNB
+      SZTZMBCACVRUCZWDMCUHZAVOCFPCBUICVBUJWNWOTHIJKMNOBCFEUKULUMAVPCPZVPBPWDACB
+      VPJUNUOAWPWDWMAWPTZWAWGWCWLWPWAWGAWPWAWGWPVTWFNCWPVQCPTVSWEVPVQCCEUPUQURU
+      SUTWQWLWCWQWKNBWQVQBPZTZWHWJWSWHTWIWHOVPCWBVPVQEVCAWPWRWHVDWSWHVKVEVLVFVG
+      VHVIVJVMVN $.
+  $}
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Order Theory : Galois Connections
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
   $c Monot MGalConn $.
   $v .c_ $.
 
@@ -533773,15 +533869,262 @@ $)
   cedom $a class EDomn $.
 
   ${
-    $d a b d e q r v $.
-    $( Define Euclidean Domains.  (Contributed by Thierry Arnoux,
+    $d a b d e q r v w $.
+    $( Define Euclidean domains.  (Contributed by Thierry Arnoux,
        22-Mar-2025.) $)
-    df-edom $a |- EDomn = { d e. IDomn |
-      [. ( EuclF ` d ) / e ]. [. ( Base ` d ) / v ].
-         ( Fun e /\ ( e " ( v \ { ( 0g ` d ) } ) ) C_ ( 0 [,) +oo )
-       /\ A. a e. v A. b e. ( v \ { ( 0g ` d ) } ) E. q e. v E. r e. v (
+    df-edom $a |- EDomn = { d e. IDomn | [. ( EuclF ` d ) / e ].
+      [. ( Base ` d ) / v ]. [. ( v \ { ( 0g ` d ) } ) / w ]. (
+           ( e |` w ) : w --> NN0
+       /\ A. a e. v A. b e. w E. q e. v E. r e. v (
            a = ( ( b ( .r ` d ) q ) ( +g ` d ) r )
        /\ ( r = ( 0g ` d ) \/ ( e ` r ) < ( e ` b ) ) ) ) } $.
+  $}
+
+  ${
+    $d .+ b d e $.  $d .0. b d e y $.  $d .0. v w $.  $d .x. b d e $.
+    $d B b d e q r x y $.  $d B d e q r v w x y $.  $d D b d e q r x y $.
+    $d D v w $.  $d E b d e q r x y $.  $d E v w $.
+    isedom.b $e |- B = ( Base ` D ) $.
+    isedom.0 $e |- .0. = ( 0g ` D ) $.
+    isedom.p $e |- .+ = ( +g ` D ) $.
+    isedom.m $e |- .x. = ( .r ` D ) $.
+    isedom.e $e |- E = ( ( EuclF ` D ) |` ( B \ { .0. } ) ) $.
+    $( Property of being a Euclidean domain.  (Contributed by Thierry Arnoux,
+       29-Oct-2026.) $)
+    isedom $p |- ( D e. EDomn <-> ( D e. IDomn /\ ( E : ( B \ { .0. } ) --> NN0
+       /\ A. x e. B A. y e. ( B \ { .0. } )
+           E. q e. B E. r e. B ( x = ( ( y .x. q ) .+ r )
+             /\ ( r = .0. \/ ( E ` r ) < ( E ` y ) ) ) ) ) ) $=
+      ( cv cfv wceq wa wrex vw ve vd vv cn0 cres wf cmulr co cplusg c0g clt wbr
+      wo wral csn cdif wsbc cbs ceuf cidom cedom eqid cvv vex difexi a1i simpll
+      wcel simpr simplr difeq1d reseq12d feq12d fveq1d breq12d orbi2d rexeqbidv
+      eqtrd anbi2d raleqbidv anbi12d sbcied sbcie2s fveq2 eqtr4di sneqd difeq2d
+      wb oveqd eqidd oveq123d eqeq2d ad2antrr orbi1d biort bitr3d adantl fveq1i
+      reseq2d wne eldifsnd fvresd eqtr2id adantr eleqtrd bitrd rexbidva rexbidv
+      pm2.61dane raleqbidva ralbidv df-edom elrab2 ) UAPZUEUBPZXOUFZUGZAPZBPZJP
+      ZUCPZUHQZUIZIPZYBUJQZUIZRZYEYBUKQZRZYEXPQZXTXPQZULUMZUNZSZIUDPZTZJYPTZBXO
+      UOZAYPUOZSZUAYPYIUPZUQZURZUDYBUSQURUBYBUTQURZCHUPZUQZUEGUGZXSXTYAFUIZYEEU
+      IZRZYEHRZYEGQZXTGQZULUMZUNZSZICTZJCTZBUUGUOZACUOZSZUCDVAVBYBDRZUUECUUBUQZ
+      UEDUTQZUVDUFZUGZYHYJYEUVEQZXTUVEQZULUMZUNZSZICTZJCTZBUVDUOZACUOZSZUVBUUDU
+      VQUCUVECUTUSDUBUDUVEVCKXPUVERZYPCRZSZUUAUVQUAUUCVDUUCVDVIUVTYPUUBUDVEVFVG
+      UVTXOUUCRZSZXRUVGYTUVPUWBXOUVDUEXQUVFUWBXPUVEXOUVDUVRUVSUWAVHZUWBXOUUCUVD
+      UVTUWAVJUWBYPCUUBUVRUVSUWAVKZVLVSZVMUWEVNUWBYSUVOAYPCUWDUWBYRUVNBXOUVDUWE
+      UWBYQUVMJYPCUWDUWBYOUVLIYPCUWDUWBYNUVKYHUWBYMUVJYJUWBYKUVHYLUVIULUWBYEXPU
+      VEUWCVOUWBXTXPUVEUWCVOVPVQVTVRVRWAWAWBWCWDUVCUVGUUHUVPUVAUVCUVDUUGUEUVFGU
+      VCUVFUVEUUGUFZGUVCUVDUUGUVEUVCUUBUUFCUVCYIHUVCYIDUKQHYBDUKWELWFZWGWHZWTOW
+      FUWHVNUVCUVOUUTACUVCUVNUUSBUVDUUGUWHUVCXTUVDVIZSZUVMUURJCUWJUVLUUQICUWJYE
+      CVIZSZYHUUKUVKUUPUVCYHUUKWIUWIUWKUVCYGUUJXSUVCYDUUIYEYEYFEUVCYFDUJQEYBDUJ
+      WEMWFUVCYCFXTYAUVCYCDUHQFYBDUHWENWFWJUVCYEWKWLWMWNUWLUVKUULUVJUNZUUPUWLYJ
+      UULUVJUVCYJUULWIUWIUWKUVCYIHYEUWGWMWNWOUWLUWMUUPWIZYEHUULUWNUWLUULUULUWMU
+      UPUULUVJWPUULUUOWPWQWRUWLYEHXAZSZUVJUUOUULUWPUVHUUMUVIUUNULUWPUUMYEUWFQUV
+      HYEGUWFOWSUWPYEUUGUVEUWPYECHUWJUWKUWOVKUWLUWOVJXBXCXDUWPUUNXTUWFQUVIXTGUW
+      FOWSUWPXTUUGUVEUWJXTUUGVIUWKUWOUWJXTUVDUUGUVCUWIVJUVCUVDUUGRUWIUWHXEXFWNX
+      CXDVPVQXJXGWBXHXIXKXLWBXGUAUDUBIJABUCXMXN $.
+  $}
+
+  ${
+    $d D q r x y $.
+    edomidom.1 $e |- ( ph -> D e. EDomn ) $.
+    $( Every Euclidean domain is an integral domain.  (Contributed by Thierry
+       Arnoux, 29-Oct-2026.) $)
+    edomidom $p |- ( ph -> D e. IDomn ) $=
+      ( vx vy vq vr cedom wcel cidom cbs cfv c0g cv co wceq wa wrex wral eqid
+      csn cdif cn0 ceuf cres wf cmulr cplusg clt wbr wo isedom simplbi syl ) AB
+      HIZBJIZCUOUPBKLZBMLZUAUBZUCBUDLUSUEZUFDNENZFNBUGLZOGNZBUHLZOPVCURPVCUTLVA
+      UTLUIUJUKQGUQRFUQREUSSDUQSQDEUQBVDVBUTURGFUQTURTVDTVBTUTTULUMUN $.
+  $}
+
+  ${
+    $d .+ x y $.  $d .0. q r x y $.  $d .x. x y $.  $d B q r x y $.
+    $d D q r x y $.  $d E q r x y $.  $d X q r x y $.  $d Y q r y $.
+    $d ph q r $.
+    edomediv.b $e |- B = ( Base ` D ) $.
+    edomediv.z $e |- .0. = ( 0g ` D ) $.
+    edomediv.p $e |- .+ = ( +g ` D ) $.
+    edomediv.m $e |- .x. = ( .r ` D ) $.
+    edomediv.e $e |- E = ( EuclF ` D ) $.
+    edomediv.d $e |- ( ph -> D e. EDomn ) $.
+    edomediv.x $e |- ( ph -> X e. B ) $.
+    edomediv.y $e |- ( ph -> Y e. ( B \ { .0. } ) ) $.
+    $( Apply a Euclidean division in a Euclidean domain.  (Contributed by
+       Thierry Arnoux, 29-Oct-2026.) $)
+    edomediv $p |- ( ph -> E. q e. B E. r e. B ( X = ( ( Y .x. q ) .+ r )
+                                 /\ ( r = .0. \/ ( E ` r ) < ( E ` Y ) ) ) ) $=
+      ( wa vx vy cv co wceq csn cdif cres cfv clt wo wrex eqeq1 anbi1d 2rexbidv
+      wbr oveq1 oveq1d eqeq2d fveq2 breq2d orbi2d anbi12d cidom wcel wral cedom
+      cn0 wf reseq1i isedom sylib simprrd rspc2dv wb biort bitr3d adantl simplr
+      ceuf wne eldifsnd fvresd ad2antrr adantr breq12d pm2.61dane anbi2d anasss
+      simpr 2rexbidva mpbid ) AGHKUCZEUDZJUCZDUDZUEZWOIUEZWOFBIUFUGZUHZUIZHWTUI
+      ZUJUPZUKZTZJBULKBULZWQWRWOFUIZHFUIZUJUPZUKZTZJBULKBULAUAUCZUBUCZWMEUDZWOD
+      UDZUEZWRXAXMWTUIZUJUPZUKZTZJBULKBULZXFGXOUEZXSTZJBULKBULUAUBGHBWSXLGUEZXT
+      YCKJBBYDXPYBXSXLGXOUMUNUOXMHUEZYCXEKJBBYEYBWQXSXDYEXOWPGYEXNWNWODXMHWMEUQ
+      URUSYEXRXCWRYEXQXBXAUJXMHWTUTVAVBVCUOACVDVEZWSVHWTVIZYAUBWSVFUABVFZACVGVE
+      YFYGYHTTQUAUBBCDEWTIJKLMNOFCVTUIWSPVJVKVLVMRSVNAXEXKKJBBAWMBVEZWOBVEZXEXK
+      VOAYITZYJTZXDXJWQYLXDXJVOZWOIWRYMYLWRWRXDXJWRXCVPWRXIVPVQVRYLWOIWAZTZXCXI
+      WRYOXAXGXBXHUJYOWOWSFYOWOBIYKYJYNVSYLYNWJWBWCYLXBXHUEYNYLHWSFAHWSVEYIYJSW
+      DWCWEWFVBWGWHWIWKWL $.
+  $}
+
+  ${
+    $d .0. q r x y $.  $d B q r x y $.  $d E q r x y $.  $d F q r x y $.
+    $d ph x y $.
+    fldedom.b $e |- B = ( Base ` F ) $.
+    fldedom.1 $e |- .0. = ( 0g ` F ) $.
+    fldedom.2 $e |- W = ( B \ { .0. } ) $.
+    fldedom.e $e |- E = ( EuclF ` F ) $.
+    fldedom.f $e |- ( ph -> F e. Field ) $.
+    fldedom.3 $e |- ( ph -> ( E |` W ) : W --> NN0 ) $.
+    $( A field is a Euclidean domain, regardless of its Euclidean norm.
+       (Contributed by Thierry Arnoux, 29-Oct-2026.) $)
+    fldedom $p |- ( ph -> F e. EDomn ) $=
+      ( vx vy vq wcel cfv co wceq wa vr cidom csn cdif cn0 cres wf cmulr cplusg
+      cv clt wbr wo wrex wral cedom cfield fldidom syl reseq2i a1i feq2dd cinvr
+      feq1dd oveq2 oveq1d eqeq2d anbi1d eqeq1 fveq2 breq1d orbi12d anbi12d eqid
+      crg idomringd ad2antrr flddrngd difssd sselda simpr eldifsnbd drnginvrcld
+      cdr simplr ringcld ringgrpd grpidcld cur cgrp grpridd ringassd drnginvrrd
+      eqtr3d ringlidmd 3eqtrrd eqidd orcd jca 2rspcedvdw anasss ralrimivva ceuf
+      reseq1i isedom sylanbrc ) ADUBPZBFUCZUDZUECXIUFZUGZMUJZNUJZOUJZDUHQZRZUAU
+      JZDUIQZRZSZXQFSZXQXJQZXMXJQZUKULZUMZTZUABUNOBUNZNXIUOMBUOZTDUPPADUQPXGKDU
+      RUSZAXKYHAXIUECEUFZXJYJXJSAEXICIUTVAAEXIUEYJEXISAIVALVBVDAYGMNBXIAXLBPZXM
+      XIPZYGAYKTZYLTZYFXLXMXMDVCQZQZXLXORZXORZXQXRRZSZYETXLYRFXRRZSZFFSZFXJQZYC
+      UKULZUMZTOUAYQFBBXNYQSZXTYTYEUUGXSYSXLUUGXPYRXQXRXNYQXMXOVEVFVGVHYAYTUUBY
+      EUUFYAYSUUAXLXQFYRXRVEVGYAYAUUCYDUUEXQFFVIYAYBUUDYCUKXQFXJVJVKVLVMYNBDXOY
+      PXLGXOVNZADVOPYKYLADYIVPZVQZYNBDYOXMFGHYOVNZADWDPYKYLADKVRVQZYMXIBXMYMBXH
+      VSVTZYNXMBFYMYLWAWBZWCZAYKYLWEZWFZAFBPYKYLABDFGHADUUIWGZWHVQYNUUBUUFYNUUA
+      YRDWIQZXLXORZXLYNBXRDYRFGXRVNZHADWJPYKYLUURVQYNBDXOXMYQGUUHUUJUUMUUQWFWKY
+      NXMYPXORZXLXORYRUUTYNBDXOXMYPXLGUUHUUJUUMUUOUUPWLYNUVBUUSXLXOYNBDXOUUSYOX
+      MFGHUUHUUSVNZUUKUULUUMUUNWMVFWNYNBDXOUUSXLGUUHUVCUUJUUPWOWPYNUUCUUEYNFWQW
+      RWSWTXAXBWSMNBDXRXOXJFUAOGHUVAUUHCDXCQXIJXDXEXF $.
+  $}
+
+  ${
+    $d x y $.
+    $( The ring of integers is an integral domain.  (Contributed by Thierry
+       Arnoux, 4-May-2025.) $)
+    zringidom $p |- ZZring e. IDomn $=
+      ( vx vy czring cidom wcel ccrg cdomn zringcrng cz cc0 cv cmul wa ad2antrr
+      wceq cc zcnd zringbas zring0 mpbir2an cnzr csn crlreg cfv wss zringnzr co
+      cdif wi eldifi wo simplr simpr mul0or biimpa syl21anc wne eldifsni neneqd
+      wral orcnd ralrimiva eqid zringmulr isrrg sylanbrc ssriv isdomn2 isidom
+      ex ) CDECFECGEZHVKCUAEIJUBZUHZCUCUDZUEUFAVMVNAKZVMEZVOIEZVOBKZLUGJOZVRJOZ
+      UIZBIUTVOVNEVOIVLUJZVPWABIVPVRIEZMZVSVTWDVSMZVOJOZVTWEVOPEZVRPEZVSWFVTUKZ
+      WEVOVPVQWCVSWBNQWEVRVPWCVSULQWDVSUMWGWHMVSWIVOVRUNUOUPWEVOJVPVOJUQWCVSVOI
+      JURNUSVAVJVBBICLVNVOJVNVCZRVDSVEVFVGICVNJRWJSVHTCVIT $.
+  $}
+
+  ${
+    $d q r x y $.
+    zzedom.1 $e |- abs = ( EuclF ` ZZring ) $.
+    $( The ring of integers is a Euclidean domain.  Note that the hypothesis
+       ` abs = ( EuclF `` ZZring ) ` could be dropped if the definition of
+       ` CCfld ` is adapted.  (Contributed by Thierry Arnoux, 29-Oct-2026.) $)
+    zzedom $p |- ZZring e. EDomn $=
+      ( vx vy vq vr czring wcel cz cc0 cn0 cabs cv cmul co caddc wceq cfv wa cc
+      wrex cedom cidom csn cdif cres wf clt wo wral zringidom cmpt wtru cr absf
+      wbr a1i wss zsscn ssdifss mp1i feqresmpt mptru nn0abscl syl fmpti cle w3a
+      eldifi simpr simp-5r difssd sselda ad5antr mulcomd oveq1d eqtrd wne df-ne
+      zcnd simpllr simp-4r adantr eldifsnd fvresd zred absidd simp-7r biimtrrid
+      wn 3brtr4d ex orrd jca 3anasss simpl eldifsnbd wreu divalg reurex syl3anc
+      rexcom sylib reximddv2 rgen2 pm3.2i zringbas zringplusg zringmulr reseq1i
+      zring0 ceuf isedom mpbir2an ) FUAGFUBGHIUCZUDZJKXOUEZUFZBLZCLZDLZMNZELZON
+      ZPZYBIPZYBXPQZXSXPQZUGUOZUHZRZEHTDHTZCXOUIBHUIZRUJXQYLBXOJXRKQZXPXPBXOYMU
+      KPULBSUMXOKSUMKUFULUNUPHSUQXOSUQULURHSXNUSUTVAVBXRXOGXRHGZYMJGXRHXNVHXRVC
+      VDVEYKBCHXOYNXSXOGZRZIYBVFUOZYBXSKQZUGUOZXRXTXSMNZYBONZPZVGZYJDEHHYPXTHGZ
+      RZYBHGZRZYQYSUUBYJUUGYQRZYSRZUUBRZYDYIUUJXRUUAYCUUIUUBVIUUJYTYAYBOUUJXTXS
+      UUJXTYPUUDUUFYQYSUUBVJVSUUJXSYPXSHGZUUDUUFYQYSUUBYNXOHXSYNHXNVKVLZVMVSVNV
+      OVPUUJYEYHYEWIYBIVQZUUJYHYBIVRUUJUUMYHUUJUUMRZYBYRYFYGUGUUHYSUUBUUMVTUUNY
+      FYBKQZYBUUNYBXOKUUNYBHIUUJUUFUUMUUEUUFYQYSUUBWAZWBUUJUUMVIWCWDUUJUUOYBPUU
+      MUUJYBUUJYBUUPWEUUGYQYSUUBVTWFWBVPUUNXSXOKYNYOUUDUUFYQYSUUBUUMWGWDWJWKWHW
+      LWMWNYPUUCDHTZEHTZUUCEHTDHTYPYNUUKXSIVQZUURYNYOWOUULYPXSHIYNYOVIWPYNUUKUU
+      SVGUUQEHWQUURXSXREDWRUUQEHWSVDWTUUCEDHHXAXBXCXDXEBCHFOMXPIEDXFXJXGXHKFXKQ
+      XOAXIXLXM $.
+  $}
+
+  ${
+    $d .0. a g q r $.  $d .0. q r x y $.  $d B a g q r $.  $d B q r x y $.
+    $d D j $.  $d D q r $.  $d D x y $.  $d E a g q r $.  $d E q r x y $.
+    $d I a g q r $.  $d I j $.  $d I q r x $.  $d K a q r $.  $d K j $.
+    $d M a g q r $.  $d a g ph q r $.  $d g j $.  $d ph q r x $.
+    edompidlem.b $e |- B = ( Base ` D ) $.
+    edompidlem.o $e |- .0. = ( 0g ` D ) $.
+    edompidlem.k $e |- K = ( RSpan ` D ) $.
+    edompidlem.e $e |- E = ( EuclF ` D ) $.
+    edompidlem.m $e |- M = inf ( ( E " ( I \ { .0. } ) ) , NN0 , < ) $.
+    edompidlem.d $e |- ( ph -> D e. EDomn ) $.
+    edompidlem.i $e |- ( ph -> I e. ( LIdeal ` D ) ) $.
+    edompidlem.1 $e |- ( ph -> I =/= { .0. } ) $.
+    $( Lemma for ~ edompid :  In a Euclidean domain, all (non-zero) ideals are
+       generated by a single element.  (Contributed by Thierry Arnoux,
+       29-Oct-2026.) $)
+    edompidlem $p |- ( ph -> E. g e. B I = ( K ` { g } ) ) $=
+      ( cfv wcel wa va vq vr vx vy csn cdif wss wceq wrex clidl eqid lidlss syl
+      cv ssdifssd cres cmulr co cplusg clt wbr wo simplr simpr wne wn cima cinf
+      wi cn0 cvv wrel ltrel a1i ltwenn0 ceuf fvexi imaexd ad7antr ssdifd imass2
+      resima cidom wf wral cedom reseq1i isedom sylib simprld fimassd eqsstrrid
+      wwe sstrd crg simpld idomringd lidl0cl syl2anc snssd necomd pssdifn0 ffnd
+      c0 wfn adantr sselda fnfvimad resima2 eleqtrd n0limd simpllr eldifsnd csg
+      ne0d oveq1d cabl ringabld ad5antr eldifad ad6antr simp-4r ringcld syl3anc
+      ad2antrr ablpncan2 eqtr2d idomcringd crngcomd lidlmcld eqeltrrd lidlsubcl
+      simp-5r ccrg syl22anc eqeltrd fvresd 3eltr3d ex weinflb 3eqtr3rd brneqtrd
+      simp-6r ad4antr necon4ad imp mpjaodan oveq2d cgrp ringgrpd grpridd 3eqtrd
+      eqtr4d rspcl rspsnid anasss ad3antrrr edomediv r19.29vva ssrdv rspssp cin
+      eqssd nfcv weinfcl eqeltrid eleqtrrd fvelimad sseqin2 rexeqtrdv reximddv3
+      ssrexv sylc ) AFIUFZUGZBUHFDUOZUFZGRZUIZDUVPUJUVTDBUJAFBUVOAFCUKRZSZFBUHZ
+      PBFUWACJUWAULZUMZUNZUPAUVQEBUVOUGZUQZRZHUIZUVTDUVPAUVQUVPSZTZUWJTZFUVSUWM
+      UAFUVSUWMUAUOZFSZUWNUVSSZUWMUWOTZUWNUVQUBUOZCURRZUSZUCUOZCUTRZUSZUIZUXAIU
+      IZUXAERZUVQERZVAVBZVCZTUWPUBUCBBUWQUWRBSZTZUXABSZTZUXDUXIUWPUXMUXDTZUXITZ
+      UWNUWRUVQUWSUSZUVSUXOUWNUWTUXPUXOUWNUXCUWTIUXBUSUWTUXMUXDUXIVDUXOUXAIUWTU
+      XBUXOUXEUXEUXHUXOUXEVEUXOUXHUXEUXOUXHUXAIUXNUXAIVFZUXHVGZVJUXIUXNUXQUXRUX
+      NUXQTZUXFEUVPVHZVKVAVIZUXGVAUXSVKUXTUXFVAVLVAVMUXSVNVOVKVAWNZUXSVPVOAUXTV
+      LSUWKUWJUWOUXJUXLUXDUXQAEUVPVLEVLSAECVQMVRVOVSZVTAUXTVKUHUWKUWJUWOUXJUXLU
+      XDUXQAUXTEUWGVHZVKAUVPUWGUHZUXTUYDUHAFBUVOUWFWAZUVPUWGEWBUNAUYDUWHUWGVHVK
+      EUWGWCAUWGVKUWHUWGACWDSZUWGVKUWHWEZUDUOZUEUOZUWRUWSUSUXAUXBUSUIUXEUXAUWHR
+      ZUYJUWHRVAVBVCTUCBUJUBBUJUEUWGWFUDBWFZACWGSZUYGUYHUYLTZTOUDUEBCUXBUWSUWHI
+      UCUBJKUXBULZUWSULZECVQRUWGMWHWIWJZWKZWLWMWOZVTAUXTXEVFZUWKUWJUWOUXJUXLUXD
+      UXQAUYTUDUVPAUVOFUHUVOFVFUVPXEVFAIFACWPSZUWBIFSACAUYGUYNUYQWQZWRZPCUWAFIU
+      WDKWSWTXAAFUVOQXBUVOFXCWTAUYIUVPSZTZUXTUYIUWHRZVUEVUFUWHUVPVHZUXTVUEUWGUY
+      IUVPUWHAUWHUWGXFZVUDAUWGVKUWHUYRXDZXGAUVPUWGUYIUYFXHAVUDVEXIAVUGUXTUIZVUD
+      AUYEVUJUYFEUVPUWGXJUNZXGXKXPXLZVTUXSUYKVUGUXFUXTUXSUWGUXAUVPUWHAVUHUWKUWJ
+      UWOUXJUXLUXDUXQVUIVTUXSUXABIUXKUXLUXDUXQXMZUXNUXQVEZXNZUXSUXAFIUXSUXAUWNU
+      WTCXORZUSZFUXSVUQUXCUWTVUPUSZUXAUXSUWNUXCUWTVUPUXMUXDUXQVDXQUXSCXRSZUWTBS
+      UXLVURUXAUIAVUSUWKUWJUWOUXJUXLUXDUXQACVUCXSVTUXSBCUWSUVQUWRJUYPUWMVUAUWOU
+      XJUXLUXDUXQAVUAUWKUWJVUCYFZXTZUWLUVQBSZUWJUWOUXJUXLUXDUXQUWLUVQBUVOAUVPUW
+      GUVQUYFXHZYAZYBUWQUXJUXLUXDUXQYCZYDVUMBUXBCVUPUWTUXAJUYOVUPULZYGYEYHUXSVU
+      AUWBUWOUWTFSVUQFSVVAUWMUWBUWOUXJUXLUXDUXQAUWBUWKUWJPYFZXTZUWMUWOUXJUXLUXD
+      UXQYNUXSUXPUWTFUXNUXPUWTUIZUXQUXNBCUWSUWRUVQJUYPACYOSUWKUWJUWOUXJUXLUXDAC
+      VUBYIYBUWQUXJUXLUXDXMUWLVVBUWJUWOUXJUXLUXDVVDXTYJZXGUXSBCUWSUWAFUWRUVQUWD
+      JUYPVVAVVHVVEUWMUVQFSUWOUXJUXLUXDUXQUWMUVQFUVOAUWKUWJVDYAZXTYKYLCUWAFVUPU
+      WNUWTUWDVVFYMYPYQVUNXNXIUXSUXAUWGEVUOYRAVUJUWKUWJUWOUXJUXLUXDUXQVUKVTYSUU
+      AUXSUWIHUXGUYAUWLUWJUWOUXJUXLUXDUXQUUDUWQUWIUXGUIUXJUXLUXDUXQUWQUVQUWGEUW
+      LUVQUWGSUWJUWOVVCYFZYRUUEHUYAUIUXSNVOUUBUUCYTXGUUFUUGUXNUXIVEUUHUUIUXOBUX
+      BCUWTIJUYOKACUUJSUWKUWJUWOUXJUXLUXDUXIACVUCUUKVTUXOBCUWSUVQUWRJUYPUWMVUAU
+      WOUXJUXLUXDUXIVUTXTZUWLVVBUWJUWOUXJUXLUXDUXIVVDYBUWQUXJUXLUXDUXIYCZYDUULU
+      UMUXNVVIUXIVVJXGUUNUXOBCUWSUWAUVSUWRUVQUWDJUYPVVMUWLUVSUWASZUWJUWOUXJUXLU
+      XDUXIUWLVUAUVRBUHVVOAVUAUWKVUCXGZUWLUVQBVVDXABCUWAUVRGLJUWDUUOWTYBVVNUWLU
+      VQUVSSZUWJUWOUXJUXLUXDUXIUWLVUAVVBVVQVVPVVDBCUVQGJLUUPWTYBYKYQUUQUWQBCUXB
+      UWSEUWNUVQIUCUBJKUYOUYPMAUYMUWKUWJUWOOUURUWMFBUWNUWMUWBUWCVVGUWEUNXHVVLUU
+      SUUTYTUVAUWMVUAUWBUVRFUHUVSFUHVUTVVGUWMUVQFVVKXACUWAUVRFGLUWDUVBYEUVDAUWJ
+      DUWGUVPUVCZUVPADUWGUVPHUWHDUWHUVEVUIAHUXTVUGAHUYAUXTNAVKUXTVAVLUYBAVPVOUY
+      CUYSVULUVFUVGVUKUVHUVIAUYEVVRUVPUIUYFUVPUWGUVJWJUVKUVLUVTDUVPBUVMUVN $.
+  $}
+
+  ${
+    $d D g i $.  $d D i x $.  $d g ph $.  $d i ph $.
+    edompid.1 $e |- ( ph -> D e. EDomn ) $.
+    $( Every Euclidean domain is a PID. (Contributed by Thierry Arnoux,
+       29-Oct-2026.) $)
+    edompid $p |- ( ph -> D e. PID ) $=
+      ( vi vg cidom clpir cin cpid edomidom wcel cfv cv csn wceq ad2antrr simpr
+      wa eqid syl crg clpidl wss idomringd crsp cbs wrex c0g sneq fveq2d eqeq2d
+      clidl cgrp ringgrpd grpidcld rsp0 eqtr4d rspcedvdw wne ceuf cdif cima cn0
+      cinf cedom simplr edompidlem pm2.61dane wb islpidl adantr mpbird ex ssrdv
+      clt islpir2 sylanbrc elind df-pid eleqtrrdi ) ABFGHIAFGBABCJZABUAKZBULLZB
+      UBLZUCBGKABWAUDZADWCWDADMZWCKZWFWDKZAWGRZWHWFEMZNZBUELZLZOZEBUFLZUGZWIWPW
+      FBUHLZNZWIWFWROZRZWNWFWRWLLZOEWQWOWJWQOZWMXAWFXBWKWRWLWJWQUIUJUKWTWOBWQWO
+      SZWQSZABUMKWGWSABWEUNPUOWTWFWRXAWIWSQAXAWROZWGWSAWBXEWEBWLWQWLSZXDUPTPUQU
+      RWIWFWRUSZRWOBEBUTLZWFWLXHWFWRVAVBVCVOVDZWQXCXDXFXHSXISABVEKWGXGCPAWGXGVF
+      WIXGQVGVHAWHWPVIZWGAWBXJWEWOWDBEWFWLWDSZXFXCVJTVKVLVMVNWDBWCXKWCSVPVQVRVS
+      VT $.
   $}
 
 
@@ -539381,21 +539724,6 @@ $(
   The ring of integers
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
-
-  ${
-    $d x y $.
-    $( The ring of integers is an integral domain.  (Contributed by Thierry
-       Arnoux, 4-May-2025.) $)
-    zringidom $p |- ZZring e. IDomn $=
-      ( vx vy czring cidom wcel ccrg cdomn zringcrng cz cc0 cv cmul wa ad2antrr
-      wceq cc zcnd zringbas zring0 mpbir2an cnzr csn crlreg cfv wss zringnzr co
-      cdif wi eldifi wo simplr simpr mul0or biimpa syl21anc wne eldifsni neneqd
-      wral orcnd ralrimiva eqid zringmulr isrrg sylanbrc ssriv isdomn2 isidom
-      ex ) CDECFECGEZHVKCUAEIJUBZUHZCUCUDZUEUFAVMVNAKZVMEZVOIEZVOBKZLUGJOZVRJOZ
-      UIZBIUTVOVNEVOIVLUJZVPWABIVPVRIEZMZVSVTWDVSMZVOJOZVTWEVOPEZVRPEZVSWFVTUKZ
-      WEVOVPVQWCVSWBNQWEVRVPWCVSULQWDVSUMWGWHMVSWIVOVRUNUOUPWEVOJVPVOJUQWCVSVOI
-      JURNUSVAVJVBBICLVNVOJVNVCZRVDSVEVFVGICVNJRWJSVHTCVIT $.
-  $}
 
   $( The ring of integers is a principal ideal domain.  (Contributed by Thierry
      Arnoux, 18-May-2025.) $)
@@ -635943,37 +636271,6 @@ $)
       ZBDJZXIWQYMYOWAZXAWQYBYPYFBDYLWPVPVQSXBYNABDYGXBYHWTYNAWBXAYHWTWBWQWTBDVR
       VSYNAWTAWTWAYLWSXOVTWCWDWEWFVLXLXQXRLZXTYALZLGXPWPYEWMXCXPVOZXFYQXKYRYSXD
       XQXEXRXCXPDOWGXCXPEWHTYSXHXTXJYAYSXGXSBDACXCXPWIWJXICXCXPWKTTWLWNWOVQ $.
-  $}
-
-  ${
-    $d R x y z $.  $d A x y z $.  $d B x y z $.  $d C x y $.
-    $( A subset of a well-founded set has an infimum.  (Contributed by Jeff
-       Madsen, 2-Sep-2009.) $)
-    frinfm $p |- ( ( R Fr A /\ ( B e. C /\ B C_ A /\ B =/= (/) ) ) ->
-                    E. x e. A ( A. y e. B -. x `' R y /\
-                    A. y e. A ( y `' R x -> E. z e. B y `' R z ) ) ) $=
-      ( wfr wcel wss c0 wa cv wbr wn wral wrex wi vex ex wne w3a ccnv fri exp43
-      ancom1s 3imp2 ssel2 adantrr brcnv biimpi ralimi ad2antll rspcev ralrimivw
-      con3i breq2 ad2antrl jca32 reximdv2 adantl 3ad2antr2 mpd ) DGHZEFIZEDJZEK
-      UAZUBLBMZAMZGNZOZBEPZAEQZVIVHGUCZNZOZBEPZVHVIVNNZVHCMZVNNZCEQZRZBDPZLZADQ
-      ZVDVEVFVGVMVDVEVFVGVMVEVDVFVGLVMABDEFGUDUFUEUGVDVEVFVMWERZVGVFWFVDVFVLWDA
-      EDVFVIEIZVLLZVIDIZWDLVFWHLWIVQWCVFWGWIVLEDVIUHUIVLVQVFWGVKVPBEVOVJVOVJVIV
-      HGASBSUJUKUPULUMWGWCVFVLWGWBBDWGVRWAVTVRCVIEVSVIVHVNUQUNTUOURUSTUTVAVBVC
-      $.
-  $}
-
-  ${
-    $d A x y z $.  $d B x y z $.  $d C x y z $.  $d R x y z $.
-    $( A nonempty subset of a well-ordered set has a lower bound.  (Contributed
-       by Jeff Madsen, 2-Sep-2009.) $)
-    welb $p |- ( ( R We A /\ ( B e. C /\ B C_ A /\ B =/= (/) ) ) ->
-              ( `' R Or B /\ E. x e. B ( A. y e. B -. x `' R y /\
-                        A. y e. B ( y `' R x -> E. z e. B y `' R z ) ) ) ) $=
-      ( wwe wcel wss c0 w3a wa wor cv wbr wral wrex syl 3ad2antr2 wne ccnv wess
-      wn wi impcom weso cnvso sylib wfr ssidd 3anim2i adantl frinfm syl2anc jca
-      wefr ) DGHZEFIZEDJZEKUAZLZMZEGUBZNZAOZBOZVDPUDBEQVGVFVDPVGCOVDPCERUEBEQMA
-      ERZURUSUTVEVAURUTMZEGNZVEVIEGHZVJUTURVKEDGUCUFZEGUGSEGUHUITVCEGUJZUSEEJZV
-      ALZVHURUSUTVMVAVIVKVMVLEGUQSTVBVOURUTVNUSVAUTEUKULUMABCEEFGUNUOUP $.
   $}
 
   ${
@@ -774185,15 +774482,6 @@ $)
   $}
 
   ${
-    brneqtrd.1 $e |- ( ph -> -. A R B ) $.
-    brneqtrd.2 $e |- ( ph -> B = C ) $.
-    $( Substitution of equal classes into the negation of a binary relation.
-       (Contributed by Glauco Siliprandi, 3-Jan-2021.) $)
-    brneqtrd $p |- ( ph -> -. A R C ) $=
-      ( wbr breq2d mtbid ) ABCEHBDEHFACDBEGIJ $.
-  $}
-
-  ${
     ssnct.1 $e |- ( ph -> -. A ~<_ _om ) $.
     ssnct.2 $e |- ( ph -> A C_ B ) $.
     $( A set containing an uncountable set is itself uncountable.  (Contributed
@@ -883847,9 +884135,9 @@ $)
 
   $( Define the hyperbolic tangent function (tanh).  We define it this way for
      ~ cmpt , which requires the form ` ( x e. A |-> B ) ` .  (Contributed by
-     David A. Wheeler, 10-May-2015.) $)
+     David A. Wheeler, 10-May-2015.)  (Revised by Jon Pennant, 22-Oct-2026.) $)
   df-tanh $a |- tanh = ( x e. ( `' cosh " ( CC \ { 0 } ) ) |->
-                       ( ( tan ` ( _i x. x ) ) / _i ) ) $.
+                       ( ( sinh ` x ) / ( cosh ` x ) ) ) $.
 
   ${
     $d x A $.
@@ -883860,7 +884148,7 @@ $)
        as the conventional definition of sinh used in other sources.
        (Contributed by David A. Wheeler, 20-Apr-2015.) $)
     sinhval-named $p |- ( A e. CC ->
-                          ( sinh ` A ) = ( ( sin ` ( _i x. A ) ) / _i ) ) $=
+                        ( sinh ` A ) = ( ( sin ` ( _i x. A ) ) / _i ) ) $=
       ( vx ci cv cmul co csin cfv cdiv cc csinh wceq fveq2d oveq1d df-sinh ovex
       oveq2 fvmpt ) BACBDZEFZGHZCIFCAEFZGHZCIFJKSALZUAUCCIUDTUBGSACEQMNBOUCCIPR
       $.
@@ -883875,18 +884163,7 @@ $)
     coshval-named $p |- ( A e. CC -> ( cosh ` A ) = ( cos ` ( _i x. A ) ) ) $=
       ( vx ci cv cmul co ccos cfv cc ccosh wceq oveq2 fveq2d df-cosh fvex fvmpt
       ) BACBDZEFZGHCAEFZGHIJQAKRSGQACELMBNSGOP $.
-  $}
 
-  ${
-    $d x A $.
-    $( Value of the named tanh function.  Here we show the simple conversion to
-       the conventional form used in set.mm, using the definition given by
-       ~ df-tanh .  (Contributed by David A. Wheeler, 10-May-2015.) $)
-    tanhval-named $p |- ( A e. ( `' cosh " ( CC \ { 0 } ) ) ->
-                          ( tanh ` A ) = ( ( tan ` ( _i x. A ) ) / _i ) ) $=
-      ( vx ci cv cmul co ctan cfv cdiv ccosh ccnv cc0 csn cdif cima ctanh oveq2
-      cc wceq fveq2d oveq1d df-tanh ovex fvmpt ) BACBDZEFZGHZCIFCAEFZGHZCIFJKRL
-      MNOPUEASZUGUICIUJUFUHGUEACEQTUABUBUICIUCUD $.
   $}
 
   $( Conventional definition of sinh.  Here we show that the sinh definition
@@ -883901,23 +884178,271 @@ $)
     ABCZADEFAGHZIEZFJHZKFJHZUKGHZFLZUKGHZAMUIUKBCZULUNPZUIUJFBCZUIUJBCNFAOQRUQU
     SFSTURNUAUKFUBUCUDUNUPPUIUMUOUKGUEUFUGUH $.
 
-  $( TODO: Show that tanh(x) = -i tan(ix). $)
-
   $( Prove that ` ( sinh `` A ) + ( cosh `` A ) = ( exp `` A ) ` using the
      conventional hyperbolic trigonometric functions.  (Contributed by David A.
      Wheeler, 27-May-2015.) $)
   sinhpcosh $p |- ( A e. CC ->
                    ( ( sinh ` A ) + ( cosh ` A ) ) = ( exp ` A ) ) $=
-    ( cc wcel csinh cfv ccosh caddc co c2 ce cmul cdiv cneg cmin eqtrd 2cn 2ne0
-    ci efcl a1i csin sinhval-named sinhval coshval-named coshval oveq12d cc0 wa
-    ccos wne wceq addcld subcld divdir syl3an1 syl3an2 3anidm12 mpanr12 2timesd
-    negcl syl nppcand addassd 3eqtr2rd oveq1d 3eqtr2d divcan3d ) ABCZADEZAFEZGH
-    ZIAJEZKHZILHZVLVHVKVLAMZJEZNHZILHZVLVPGHZILHZGHZVQVSGHZILHZVNVHVIVRVJVTGVHV
-    IRAKHZUAERLHVRAUBAUCOVHVJWDUIEVTAUDAUEOUFVHIBCZIUGUJZWCWAUKZPQVHWEWFUHZWGVH
-    VHVSBCZWHWGVHVLVPASZVHVOBCVPBCAUTVOSVAZULVHVQBCWIWHWGVHVLVPWJWKUMZVQVSIUNUO
-    UPUQURVHWBVMILVHVMVLVLGHVQVLGHVPGHWBVHVLWJUSVHVLVPVLWJWKWJVBVHVQVLVPWLWJWKV
-    CVDVEVFVHVLIWJWEVHPTWFVHQTVGO $.
+    ( cc wcel csinh cfv ccosh caddc co c2 ce cmul cdiv cneg cmin csin eqtrd 2cn
+    ci 2ne0 a1i sinhval-named sinhval ccos coshval-named coshval oveq12d cc0 wa
+    wceq efcl negcl efcld addcld subcld divdir syl3an1 syl3an2 3anidm12 mpanr12
+    wne 2timesd nppcand addassd 3eqtr2rd oveq1d 3eqtr2d divcan3d ) ABCZADEZAFEZ
+    GHZIAJEZKHZILHZVLVHVKVLAMZJEZNHZILHZVLVPGHZILHZGHZVQVSGHZILHZVNVHVIVRVJVTGV
+    HVIRAKHZOERLHVRAUAAUBPVHVJWDUCEVTAUDAUEPUFVHIBCZIUGUTZWCWAUIZQSVHWEWFUHZWGV
+    HVHVSBCZWHWGVHVLVPAUJZVHVOAUKULZUMVHVQBCWIWHWGVHVLVPWJWKUNZVQVSIUOUPUQURUSV
+    HWBVMILVHVMVLVLGHVQVLGHVPGHWBVHVLWJVAVHVLVPVLWJWKWJVBVHVQVLVPWLWJWKVCVDVEVF
+    VHVLIWJWEVHQTWFVHSTVGP $.
 
+  $( Domain and codomain of the sinh function.  (Contributed by Jon Pennant,
+     9-Sep-2026.) $)
+  sinhf $p |- sinh : CC --> CC $=
+    ( vx cc ci cv cmul co csin cfv cdiv csinh df-sinh wcel ax-icn a1i id mulcld
+    sincld cc0 wne ine0 divcld fmpti ) ABBCADZEFZGHZCIFJAKUCBLZUECUFUDUFCUCCBLU
+    FMNZUFOPQUGCRSUFTNUAUB $.
+
+  $( The closure of the sinh function with complex argument.  (Contributed by
+     Jon Pennant, 9-Sep-2026.) $)
+  sinhcl $p |- ( A e. CC -> ( sinh ` A ) e. CC ) $=
+    ( cc csinh sinhf ffvelcdmi ) BBACDE $.
+
+  $( Value of the sinh function at 0.  (Contributed by Jon Pennant,
+     9-Sep-2026.) $)
+  sinh0 $p |- ( sinh ` 0 ) = 0 $=
+    ( cc0 csinh cfv ci cmul co csin cdiv cc wcel wceq sinhval-named ax-mp it0e0
+    0cn fveq2i sin0 eqtri oveq1i ax-icn ine0 div0i 3eqtri ) ABCZDAEFZGCZDHFZADH
+    FAAIJUDUGKOALMUFADHUFAGCAUEAGNPQRSDTUAUBUC $.
+
+  $( The sinh function is odd.  (Contributed by Jon Pennant, 9-Sep-2026.) $)
+  sinhneg $p |- ( A e. CC -> ( sinh ` -u A ) = -u ( sinh ` A ) ) $=
+    ( cc wcel ci cmul co csin cdiv cneg csinh wa ax-icn jctl 3syl sinhval-named
+    cfv a1i wceq syl oveq1d mulcl sincl cc0 divnegd negeqd negcl mulneg2 eqcomd
+    wne ine0 fveq2d sinneg 3eqtr2d 3eqtr4rd ) ABCZDAEFZGPZDHFZIUQIZDHFZAJPZIAIZ
+    JPZUOUQDUODBCZUOKZUPBCZUQBCUOVDLMZDAUAZUPUBNVDUOLQDUCUIUOUJQUDUOVAURAOUEUOV
+    CDVBEFZGPZDHFZUPIZGPZDHFUTUOVBBCVCVKRAUFVBOSUOVMVJDHUOVLVIGUOVIVLUOVEVIVLRV
+    GDAUGSUHUKTUOVMUSDHUOVEVFVMUSRVGVHUPULNTUMUN $.
+
+  $( Domain and codomain of the cosh function.  (Contributed by Jon Pennant,
+     9-Sep-2026.) $)
+  coshf $p |- cosh : CC --> CC $=
+    ( vx cc ci cv cmul co ccos cfv ccosh df-cosh ax-icn a1i mulcld coscld fmpti
+    wcel id ) ABBCADZEFZGHIAJRBPZSTCRCBPTKLTQMNO $.
+
+  $( The closure of the cosh function with complex argument.  (Contributed by
+     Jon Pennant, 9-Sep-2026.) $)
+  coshcl $p |- ( A e. CC -> ( cosh ` A ) e. CC ) $=
+    ( cc ccosh coshf ffvelcdmi ) BBACDE $.
+
+  $( Value of the cosh function at 0.  (Contributed by Jon Pennant,
+     9-Sep-2026.) $)
+  cosh0 $p |- ( cosh ` 0 ) = 1 $=
+    ( cc0 ccosh cfv ci cmul co ccos c1 wcel wceq 0cn coshval-named ax-mp fveq2i
+    cc it0e0 cos0 3eqtri ) ABCZDAEFZGCZAGCHAOISUAJKALMTAGPNQR $.
+
+  $( The cosh function is even.  (Contributed by Jon Pennant, 9-Sep-2026.) $)
+  coshneg $p |- ( A e. CC -> ( cosh ` -u A ) = ( cosh ` A ) ) $=
+    ( cc wcel cneg ccosh cfv ci cmul co ccos wceq negcl coshval-named syl mulcl
+    ax-icn sylancr cosneg eqtr4d eqtrd id mulneg2d negeqd mulcld negnegd fveq2d
+    a1i ) ABCZADZEFZGAHIZJFZAEFUHUJGUIHIZDZJFZULUHUJUMJFZUOUHUIBCZUJUPKALZUIMNU
+    HUMBCZUOUPKUHGBCZUQUSPURGUIOQUMRNSUHUNUKJUHUNUKDZDUKUHUMVAUHGAUTUHPUGZUHUAZ
+    UBUCUHUKUHGAVBVCUDUETUFTAMS $.
+
+  ${
+    $d x A $.
+    $( Value of the tanh function in terms of sinh and cosh.  (Contributed by
+       Jon Pennant, 22-Oct-2026.) $)
+    tanhval $p |- ( ( A e. CC /\ ( cosh ` A ) =/= 0 ) ->
+                    ( tanh ` A ) = ( ( sinh ` A ) / ( cosh ` A ) ) ) $=
+      ( vx cc wcel ccosh cfv cc0 wne wa ccnv cdif cima ctanh csinh cdiv co wceq
+      csn simpl fveq2 coshcl anim1i eldifsn sylibr wf wfn wb coshf ffn elpreima
+      mp2b sylanbrc cv oveq12d df-tanh ovex fvmpt syl ) ACDZAEFZGHZIZAEJCGRKZLZ
+      DZAMFANFZUTOPZQVBUSUTVCDZVEUSVASVBUTCDZVAIVHUSVIVAAUAUBUTCGUCUDCCEUEECUFV
+      EUSVHIUGUHCCEUICAVCEUJUKULBABUMZNFZVJEFZOPVGVDMVJAQVKVFVLUTOVJANTVJAETUNB
+      UOVFUTOUPUQUR $.
+  $}
+
+  ${
+    $d x A $.
+    $( Value of the named tanh function.  Here we show the simple conversion to
+       the conventional form used in set.mm, using the definition given by
+       ~ df-tanh .  (Contributed by David A. Wheeler, 10-May-2015.)  (Revised
+       by Jon Pennant, 22-Oct-2026.) $)
+    tanhvaltan $p |- ( ( A e. CC /\ ( cosh ` A ) =/= 0 ) ->
+                          ( tanh ` A ) = ( ( tan ` ( _i x. A ) ) / _i ) ) $=
+      ( cc wcel ccosh cfv cc0 wne wa ctanh ci cmul co csin ccos cdiv ctan csinh
+      wceq adantr a1i sinhval-named coshval-named oveq12d tanhval ax-icn mulcld
+      simpl sincld coscld eqnetrrd ine0 divdiv32d 3eqtr4d tanval syl2anc oveq1d
+      simpr eqtr4d ) ABCZADEZFGZHZAIEZJAKLZMEZVDNEZOLZJOLZVDPEZJOLVBAQEZUTOLVEJ
+      OLZVFOLVCVHVBVJVKUTVFOUSVJVKRVAAUASUSUTVFRVAAUBSZUCAUDVBVEVFJVBVDVBJAJBCV
+      BUETZUSVAUGUFZUHVBVDVNUIVMVBUTVFFVLUSVAUQUJZJFGVBUKTULUMVBVIVGJOVBVDBCVFF
+      GVIVGRVNVOVDUNUOUPUR $.
+  $}
+
+  $( Domain and codomain of the tanh function.  (Contributed by Jon Pennant,
+     22-Oct-2026.) $)
+  tanhf $p |- tanh : ( `' cosh " ( CC \ { 0 } ) ) --> CC $=
+    ( vx ccosh ccnv cc cc0 csn cdif cima cv csinh cdiv co ctanh df-tanh wcel wf
+    cfv wfn wa syl wb ffn elpreima mp2b simplbi sinhcl coshcl simprbi eldifsnbd
+    coshf divcld fmpti ) ABCDEFGZHZDAIZJQZUOBQZKLMANUOUNOZUPUQURUODOZUPDOURUSUQ
+    UMOZDDBPBDRURUSUTSUAUJDDBUBDUOUMBUCUDZUEZUOUFTURUSUQDOVBUOUGTURUQDEURUSUTVA
+    UHUIUKUL $.
+
+  $( The closure of the tanh function with complex argument.  (Contributed by
+     Jon Pennant, 9-Sep-2026.) $)
+  tanhcl $p |- ( ( A e. CC /\ ( cosh ` A ) =/= 0 ) -> ( tanh ` A ) e. CC ) $=
+    ( cc wcel ccosh cfv cc0 wne cdif ctanh wa coshcl adantr simpr eldifsnd ccnv
+    csn cima wf wfn wb coshf ffn elpreima mp2b tanhf ffvelcdmi sylbir syldan )
+    ABCZADEZFGZUJBFPHZCZAIEBCZUIUKJUJBFUIUJBCUKAKLUIUKMNUIUMJZADOULQZCZUNBBDRDB
+    SUQUOTUABBDUBBAULDUCUDUPBAIUEUFUGUH $.
+
+  $( Value of the tanh function at 0.  (Contributed by Jon Pennant,
+     22-Oct-2026.) $)
+  tanh0 $p |- ( tanh ` 0 ) = 0 $=
+    ( cc0 ctanh cfv csinh ccosh cdiv co cc wcel wne wceq 0cn c1 ax-1ne0 eqnetri
+    cosh0 tanhval mp2an sinh0 oveq1i ax-1cn eqeltri div0i 3eqtri ) ABCZADCZAECZ
+    FGZAUGFGAAHIUGAJUEUHKLUGMAPNOZAQRUFAUGFSTUGUGMHPUAUBUIUCUD $.
+
+  $( The tanh function is odd.  (Contributed by Jon Pennant, 22-Oct-2026.) $)
+  tanhneg $p |- ( ( A e. CC /\ ( cosh ` A ) =/= 0 ) ->
+                   ( tanh ` -u A ) = -u ( tanh ` A ) ) $=
+    ( cc wcel ccosh cfv cc0 wne wa csinh cdiv co cneg ctanh sinhcl adantr simpr
+    coshcl divnegd tanhval wceq negeqd coshneg eqnetrd syl2an2r sinhneg oveq12d
+    negcl eqtrd 3eqtr4rd ) ABCZADEZFGZHZAIEZUKJKZLUNLZUKJKZAMEZLALZMEZUMUNUKUJU
+    NBCULANOUJUKBCULAQOUJULPZRUMURUOASUAUMUTUSIEZUSDEZJKZUQUJUSBCULVCFGUTVDTAUG
+    UMVCUKFUJVCUKTULAUBOZVAUCUSSUDUMVBUPVCUKJUJVBUPTULAUEOVEUFUHUI $.
+
+  $( Value of the tanh function in terms of tan and multiplication by -i.
+     (Contributed by Jon Pennant, 22-Oct-2026.) $)
+  tanhvalnegitan $p |- ( ( A e. CC /\ ( cosh ` A ) =/= 0 ) ->
+                         ( tanh ` A ) = ( -u _i x. ( tan ` ( _i x. A ) ) ) ) $=
+    ( cc wcel ccosh cfv cc0 wne wa ctanh ci cmul co ctan cdiv tanhvaltan ax-icn
+    cneg c1 syl a1i simpl mulcl mpan ccos coshval-named simpr eqnetrrd divrec2d
+    wceq tancld ine0 irec oveq1i eqtrdi eqtrd ) ABCZADEZFGZHZAIEJAKLZMEZJNLZJQZ
+    VAKLZAOUSVBRJNLZVAKLVDUSVAJUSUTUSUPUTBCZUPURUAZJBCZUPVFPJAUBUCSUSUQUTUDEZFU
+    SUPUQVIUIVGAUESUPURUFUGUJVHUSPTJFGUSUKTUHVEVCVAKULUMUNUO $.
+
+  $( Addition formula for sinh.  (Contributed by Jon Pennant, 9-Sep-2026.) $)
+  sinhadd $p |- ( ( A e. CC /\ B e. CC ) ->
+                  ( sinh ` ( A + B ) ) =
+                  ( ( ( sinh ` A ) x. ( cosh ` B ) ) +
+                    ( ( cosh ` A ) x. ( sinh ` B ) ) ) ) $=
+    ( cc wcel wa caddc co csinh ci cmul csin cdiv ccos ccosh wceq sinhval-named
+    cfv ax-icn oveq1d mulcld addcl syl adddi mp3an1 fveq2d simpl mulcl sylancom
+    a1i sinadd syl2anc 3eqtrd sincld coscld cc0 wne pm3.2i divdir mp3an3 div23d
+    ine0 divassd oveq12d coshval-named oveqan12d eqtr4d ) ACDZBCDZEZABFGZHQZIAJ
+    GZKQZILGZIBJGZMQZJGZVLMQZVOKQZILGZJGZFGZAHQZBNQZJGZANQZBHQZJGZFGVIVKVMVPJGZ
+    VRVSJGZFGZILGZWIILGZWJILGZFGZWBVIVKIVJJGZKQZILGZVLVOFGZKQZILGWLVIVJCDVKWROA
+    BUAVJPUBVIWQWTILVIWPWSKICDZVGVHWPWSORIABUCUDUESVIWTWKILVIVLCDVOCDZWTWKOVIIA
+    XAVIRUIZVGVHUFTZVGVHXAXBXCIBUGUHZVLVOUJUKSULVIWICDZWJCDZWLWOOZVIVMVPVIVLXDU
+    MZVIVOXEUNZTVIVRVSVIVLXDUNZVIVOXEUMZTXFXGXAIUOUPZEXHXAXMRVAUQWIWJIURUSUKVIW
+    MVQWNWAFVIVMVPIXIXJXCXMVIVAUIZUTVIVRVSIXKXLXCXNVBVCULVIWEVQWHWAFVGVHWCVNWDV
+    PJAPBVDVEVGVHWFVRWGVTJAVDBPVEVCVF $.
+
+  $( Addition formula for cosh.  (Contributed by Jon Pennant, 9-Sep-2026.) $)
+  coshadd $p |- ( ( A e. CC /\ B e. CC ) ->
+                  ( cosh ` ( A + B ) ) =
+                  ( ( ( cosh ` A ) x. ( cosh ` B ) ) +
+                    ( ( sinh ` A ) x. ( sinh ` B ) ) ) ) $=
+    ( cc wcel caddc co ccosh cfv cmul ci csin cmin csinh ccos coshval-named syl
+    wceq a1i mulcld 3eqtrd wa cneg addcl ax-icn adddi mp3an1 fveq2d simpl simpr
+    cosadd syl2anc oveqan12d oveq1d eqtr4d cdiv ixi sinhval-named oveq2d eqtr3d
+    c1 sincld cc0 ine0 divcld mul4d divcan2d oveq12d sinhcl mulcl syl2an mulm1d
+    wne coshcl subnegd ) ACDZBCDZUAZABEFZGHZAGHZBGHZIFZJAIFZKHZJBIFZKHZIFZLFZWB
+    AMHZBMHZIFZUBZLFWBWKEFVQVSWCNHZWENHZIFZWGLFZWHVQVSJVRIFZNHZWCWEEFZNHZWPVQVR
+    CDVSWRQABUCVROPVQWQWSNJCDZVOVPWQWSQUDJABUEUFUGVQWCCDWECDWTWPQVQJAXAVQUDRZVO
+    VPUHZSZVQJBXBVOVPUIZSZWCWEUJUKTVQWBWOWGLVOVPVTWMWAWNIAOBOULUMUNVQWGWLWBLVQU
+    TUBZWKIFZWGWLVQXHJJIFZWDJUOFZWFJUOFZIFZIFZJXJIFZJXKIFZIFWGVQXIWKIFXHXMVQXIX
+    GWKIXIXGQVQUPRUMVQWKXLXIIVOVPWIXJWJXKIAUQBUQULURUSVQJJXJXKXBXBVQWDJVQWCXDVA
+    ZXBJVBVLVQVCRZVDVQWFJVQWEXFVAZXBXQVDVEVQXNWDXOWFIVQWDJXPXBXQVFVQWFJXRXBXQVF
+    VGTVQWKVOWICDWJCDWKCDVPAVHBVHWIWJVIVJZVKUSURVQWBWKVQVTWAVQVOVTCDXCAVMPVQVPW
+    ACDXEBVMPSXSVNT $.
+
+  $( Subtraction formula for sinh.  (Contributed by Jon Pennant,
+     9-Sep-2026.) $)
+  sinhsub $p |- ( ( A e. CC /\ B e. CC ) ->
+                  ( sinh ` ( A - B ) ) =
+                  ( ( ( sinh ` A ) x. ( cosh ` B ) ) -
+                    ( ( cosh ` A ) x. ( sinh ` B ) ) ) ) $=
+    ( cc wcel cmin co csinh cfv ccosh cmul cneg caddc negsubd oveq2d syl sinhcl
+    wceq wf a1i ffvelcdmda wa negcl sinhadd sylan2 simpl fveq2d coshneg 3eqtr3d
+    simpr oveq1d sinhneg coshcl mulneg2 syl2an eqtrd coshf mulcld sinhf 3eqtrd
+    ) ACDZBCDZUAZABEFZGHZAGHZBIHZJFZAIHZBKZGHZJFZLFZVGVHBGHZJFZKZLFVGVNEFVBAVIL
+    FZGHZVEVIIHZJFZVKLFZVDVLVAUTVICDVQVTQBUBAVIUCUDVBVPVCGVBABUTVAUEZUTVAUIZMUF
+    VBVSVGVKLVBVAVSVGQWBVAVRVFVEJBUGNOUJUHVBVKVOVGLVBVKVHVMKZJFZVOVBVAVKWDQWBVA
+    VJWCVHJBUKNOUTVHCDZVMCDWDVOQVAAULZBPVHVMUMUNUONVBVGVNVBVEVFVBUTVECDWAAPOUTC
+    CBICCIRUTUPSTUQVBVHVMVBUTWEWAWFOUTCCBGCCGRUTURSTUQMUS $.
+
+  $( Subtraction formula for cosh.  (Contributed by Jon Pennant,
+     9-Sep-2026.) $)
+  coshsub $p |- ( ( A e. CC /\ B e. CC ) ->
+                  ( cosh ` ( A - B ) ) =
+                  ( ( ( cosh ` A ) x. ( cosh ` B ) ) -
+                    ( ( sinh ` A ) x. ( sinh ` B ) ) ) ) $=
+    ( cc wcel cmin co ccosh cfv cmul csinh cneg caddc wceq oveq2d adantl sinhcl
+    eqtrd adantr wf a1i wa coshadd sylan2 negsub fveq2d coshneg sinhneg mulneg2
+    negcl syl2an oveq12d 3eqtr3d coshcl coshf ffvelcdmda mulcld sinhf negsubd )
+    ACDZBCDZUAZABEFZGHZAGHZBGHZIFZAJHZBJHZIFZKZLFZVFVIEFVAABKZLFZGHZVDVLGHZIFZV
+    GVLJHZIFZLFZVCVKUTUSVLCDVNVSMBUIAVLUBUCVAVMVBGABUDUEVAVPVFVRVJLUTVPVFMUSUTV
+    OVEVDIBUFNOVAVRVGVHKZIFZVJUTVRWAMUSUTVQVTVGIBUGNOUSVGCDZVHCDWAVJMUTAPZBPVGV
+    HUHUJQUKULVAVFVIVAVDVEUSVDCDUTAUMRUSCCBGCCGSUSUNTUOUPVAVGVHUSWBUTWCRUSCCBJC
+    CJSUSUQTUOUPURQ $.
+
+
+  $( Addition formula for tanh.  (Contributed by Jon Pennant, 9-Sep-2026.) $)
+  tanhadd $p |- ( ( ( ( A e. CC /\ B e. CC ) /\ ( cosh ` A ) =/= 0 ) /\
+                  ( ( cosh ` B ) =/= 0 /\ ( cosh ` ( A + B ) ) =/= 0 ) ) ->
+                  ( tanh ` ( A + B ) ) =
+                  ( ( ( tanh ` A ) + ( tanh ` B ) ) /
+                    ( 1 + ( ( tanh ` A ) x. ( tanh ` B ) ) ) ) ) $=
+    ( cc wcel wa ccosh cfv cc0 wne caddc co ctanh cdiv cmul wceq addcld tanhval
+    csinh oveq12d mulcld simplll simpllr simprr syl2anc sinhadd ad2antrr sinhcl
+    coshadd ad3antrrr coshcl ad3antlr eqnetrrd simplr simprl mulne0d divadddivd
+    c1 divcan7d mulcomd oveq2d oveq1d 3eqtr4rd divdird dividd divmuldivd eqtr2d
+    eqtrd eqtr3d 3eqtrd ) ACDZBCDZEZAFGZHIZEZBFGZHIZABJKZFGZHIZEZEZVRLGZVRRGZVS
+    MKZARGZVPNKZVMBRGZNKZJKZVMVPNKZWFWHNKZJKZMKZALGZBLGZJKZUQWOWPNKZJKZMKZWBVRC
+    DVTWCWEOWBABVJVKVNWAUAZVJVKVNWAUBZPVOVQVTUCZVRQUDVLWEWNOVNWAVLWDWJVSWMMABUE
+    ABUHZSUFWBWJWKMKZWMWKMKZMKWNWTWBWJWMWKWBWGWIWBWFVPVJWFCDVKVNWAAUGUIZVKVPCDV
+    JVNWABUJUKZTWBVMWHVJVMCDVKVNWAAUJUIZVKWHCDVJVNWABUGUKZTPWBWKWLWBVMVPXIXHTZW
+    BWFWHXGXJTZPXKWBVSWMHVLVSWMOVNWAXDUFXCULWBVMVPXIXHVLVNWAUMZVOVQVTUNZUOZURWB
+    XEWQXFWSMWBWFVMMKZWHVPMKZJKWGWHVMNKZJKZWKMKWQXEWBWFVMWHVPXGXIXJXHXMXNUPWBWO
+    XPWPXQJWBVJVNWOXPOXAXMAQUDZWBVKVQWPXQOXBXNBQUDZSWBWJXSWKMWBWIXRWGJWBVMWHXIX
+    JUSUTVAVBWBXFWKWKMKZWLWKMKZJKWSWBWKWLWKXKXLXKXOVCWBYBUQYCWRJWBWKXKXOVDWBWRX
+    PXQNKYCWBWOXPWPXQNXTYASWBWFVMWHVPXGXIXJXHXMXNVEVFSVGSVHVI $.
+
+  ${
+    tanhaddd.a $e |- ( ph -> A e. CC ) $.
+    tanhaddd.b $e |- ( ph -> B e. CC ) $.
+    tanhaddd.1 $e |- ( ph -> ( cosh ` A ) =/= 0 ) $.
+    tanhaddd.2 $e |- ( ph -> ( cosh ` B ) =/= 0 ) $.
+    tanhaddd.3 $e |- ( ph -> ( cosh ` ( A + B ) ) =/= 0 ) $.
+    $( Addition formula for tanh.  (Contributed by Jon Pennant, 9-Sep-2026.) $)
+    tanhaddd $p |- ( ph -> ( tanh ` ( A + B ) ) =
+                  ( ( ( tanh ` A ) + ( tanh ` B ) ) /
+                    ( 1 + ( ( tanh ` A ) x. ( tanh ` B ) ) ) ) ) $=
+      ( cc wcel wa ccosh cfv cc0 wne caddc co ctanh c1 cmul cdiv wceq syl22anc
+      jca tanhadd ) ABIJZCIJZKBLMNOCLMNOBCPQZLMNOUHRMBRMZCRMZPQSUIUJTQPQUAQUBAU
+      FUGDEUDFGHBCUEUC $.
+  $}
+
+  $( The fundamental identity for hyperbolic functions: cosh^2 - sinh^2 = 1.
+     (Contributed by Jon Pennant, 9-Sep-2026.) $)
+  coshsinhsq $p |- ( A e. CC ->
+                     ( ( ( cosh ` A ) ^ 2 ) - ( ( sinh ` A ) ^ 2 ) ) = 1 ) $=
+    ( cc wcel ccosh cfv c2 cexp co csinh cmin cmul coshcl sqvald sinhcl oveq12d
+    c1 wceq coshsub anidms cc0 subid fveq2d cosh0 eqtrdi 3eqtr2d ) ABCZADEZFGHZ
+    AIEZFGHZJHUGUGKHZUIUIKHZJHZAAJHZDEZPUFUHUKUJULJUFUGALMUFUIANMOUFUOUMQAARSUF
+    UOTDEPUFUNTDAUAUBUCUDUE $.
+
+  $( Hyperbolic tangent/secant identity: 1 - tanh^2 = sech^2 (or 1 / cosh^2).
+     (Contributed by Jon Pennant, 27-Sep-2026.) $)
+  ontanhsq $p |- ( ( A e. CC /\ ( cosh ` A ) =/= 0 ) ->
+               ( 1 - ( ( tanh ` A ) ^ 2 ) ) = ( 1 / ( ( cosh ` A ) ^ 2 ) ) ) $=
+    ( cc wcel ccosh cfv cc0 wne wa c1 ctanh c2 cexp co cmin cdiv tanhval oveq1d
+    csinh sqcld adantr oveq2d coshcl wb syl biimpar dividd eqcomd sinhcl sqdivd
+    sqne0 simpr oveq12d divsubdird wceq coshsinhsq 3eqtr2d eqtrd ) ABCZADEZFGZH
+    ZIAJEZKLMZNMIAREZUSOMZKLMZNMZIUSKLMZOMZVAVCVFINVAVBVEKLAPQUAVAVGVHVHOMZVDKL
+    MZVHOMZNMVHVKNMZVHOMZVIVAIVJVFVLNVAVJIVAVHURVHBCUTURUSAUBZSTZURVHFGZUTURUSB
+    CZVQUTUCVOUSUJUDUEZUFUGVAVDUSURVDBCUTAUHTZURVRUTVOTURUTUKUIULVAVHVKVHVPVAVD
+    VTSVPVSUMURVNVIUNUTURVMIVHOAUOQTUPUQ $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
