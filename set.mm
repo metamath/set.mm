@@ -572224,7 +572224,7 @@ $)
       lpadright.1 $e |- ( ph -> M = if ( L <_ ( # ` W ) , 0 , ( L - ( # ` W ) )
         ) ) $.
       lpadright.2 $e |- ( ph -> N e. ( 0 ..^ ( # ` W ) ) ) $.
-      $( The suffix of a left-padded word the original word ` W ` .
+      $( The suffix of a left-padded word is the original word ` W ` .
          (Contributed by Thierry Arnoux, 7-Aug-2023.) $)
       lpadright $p |- ( ph
           -> ( ( ( C leftpad W ) ` L ) ` ( N + M ) ) = ( W ` N ) ) $=
