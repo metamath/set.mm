@@ -93,6 +93,8 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+ 9-Nov-26 nelpr       [same]      Moved from TA's mathbox to main set.mm
+ 9-Nov-26 absex       [same]      Moved from SN's mathbox to main set.mm
 29-Oct-26 brneqtrd    [same]      Moved from GS's mathbox to main set.mm
 29-Oct-26 frinfm      frinf       Moved from JM's mathbox to main set.mm
 29-Oct-26 welb        [same]      Moved from JM's mathbox to main set.mm
