@@ -183044,6 +183044,39 @@ $)
   $}
 
   ${
+    $d F j p w x y $.  $d F k p w y $.  $d I j p w x y $.  $d I k p w y $.
+    $d Z j p w x y $.  $d Z k p w y $.  $d j p ph w x y $.
+    psrbagfsuppub.f $e |- ( ph -> F : ( NN0 ^m I ) --> B ) $.
+    psrbagfsuppub.z $e |- ( ph -> Z e. B ) $.
+    psrbagfsuppub.i $e |- ( ph -> I e. Fin ) $.
+    psrbagfsuppub.s $e |- ( ph -> F finSupp Z ) $.
+    $( Given a finitely supported function on finite bags, there is an upper
+       bound of values which can map to anything other than zero.  (Contributed
+       by Jim Kingdon, 5-Nov-2026.) $)
+    psrbagfsuppub $p |- ( ph -> E. k e. ( NN0 ^m I ) A. y e. ( NN0 ^m I )
+        ( -. y oR <_ k -> ( F ` y ) = Z ) ) $=
+      ( vj vx cv cfn wcel cle cn0 wral wa vw cdm wss cdif cima csn w3a cofr wbr
+      vp wn cfv wceq wi cmap co wrex fsuppfiss wf simpr2 wb sseq2d adantr mpbid
+      fdmd simpr1 psrbagmaxlem1 simprl cvv nn0ex elmapd mpbird simpr3 ad3antrrr
+      a1i ffnd ad4antr simplr eleqtrrd fveq1 breq1d ralbidv simprr ralcom sylib
+      wfn simpr rspcdva simp-5l elmapi simp2 simp3 3ad2ant1 inidm eqidd ofrfval
+      syl syl3anc pm2.65da eldifd fnfvimad sseldd ex ralrimiva notbid rspceaimv
+      elsni breq2 syl2anc exlimddv ) AUANZOPZXKEUBZUCZEXMXKUDZUEZGUFZUCZUGZBNZD
+      NZQUHZUIZUKZXTEULZGUMZUNBRFUOUPZSDYGUQZUAAUAEGKURAXSTZFRUJNZUSZLNZMNZULZY
+      LYJULZQUIZMXKSLFSZTZYHUJYIMLFXKUJYIXNXKYGUCZAXLXNXRUTAXNYSVAXSAXMYGXKAYGC
+      EHVEZVBVCVDAXLXNXRVFAFOPZXSJVCZVGYIYRTZYJYGPZXTYJYBUIZUKZYFUNZBYGSYHUUCUU
+      DYKYIYKYQVHZUUCRFYJVIORVIPUUCVJVOYIUUAYRUUBVCVKVLUUCUUGBYGUUCXTYGPZTZUUFY
+      FUUJUUFTZYEXQPYFUUKXPXQYEYIXRYRUUIUUFAXLXNXRVMVNUUKYGXTXOEAEYGWFXSYRUUIUU
+      FAYGCEHVPVQUUCUUIUUFVRZUUKXTXMXKUUKXTYGXMUULAXMYGUMXSYRUUIUUFYTVQVSUUKXTX
+      KPZUUEUUKUUMTZUUEYLXTULZYOQUIZLFSZUUNYPLFSZUUQMXKXTYMXTUMZYPUUPLFUUSYNUUO
+      YOQYLYMXTVTWAWBUUNYQUURMXKSUUCYQUUIUUFUUMYIYKYQWCVNYPLMFXKWDWEUUKUUMWGWHU
+      UNAFRXTUSZYKUUEUUQVAAXSYRUUIUUFUUMWIUUNUUIUUTUUKUUIUUMUULVCXTRFWJWQUUCYKU
+      UIUUFUUMUUHVNAUUTYKUGZLFFUUOYOQFXTYJOOUVAFRXTAUUTYKWKVPUVAFRYJAUUTYKWLVPA
+      UUTUUAYKJWMZUVBFWNUVAYLFPTZUUOWOUVCYOWOWPWRVLUUJUUFUUMVRWSWTXAXBYEGXGWQXC
+      XDYDUUFYFDBYJYGYGYAYJUMYCUUEYAYJXTYBXHXEXFXIXJXJ $.
+  $}
+
+  ${
     $d D u v w x $.  $d D y $.  $d D x z $.  $d F f $.  $d F u v w x $.
     $d F y $.  $d F x z $.  $d I f $.  $d I z $.  $d S u v w $.  $d S z $.
     $d X f $.  $d X u v w x $.  $d X y $.  $d X x z $.  $d Y f $.
