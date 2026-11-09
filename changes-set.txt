@@ -93,6 +93,11 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+ 8-Nov-26 rru         rur
+ 8-Nov-26 cardprcALT  [same]      Moved from AD's mathbox to main set.mm
+ 8-Nov-26 cardprcr    [same]      Moved from AD's mathbox to main set.mm
+ 8-Nov-26 onprcALT    [same]      Moved from AD's mathbox to main set.mm
+ 8-Nov-26 onprcr      [same]      Moved from AD's mathbox to main set.mm
 26-Oct-26 relopabv    ---         obsolete; use relopab instead
 24-Oct-26 imasgim     [same]      Moved from SO's mathbox to main set.mm
 24-Oct-26 rnmposs     [same]      Moved from TA's mathbox to main set.mm
