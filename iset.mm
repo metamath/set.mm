@@ -183077,6 +183077,30 @@ $)
   $}
 
   ${
+    $d F v $.  $d F v y $.  $d I v x $.  $d I v y $.  $d K v x $.  $d K v y $.
+    $d Z v $.  $d Z v y $.  $d ph v $.  $d ph v y $.
+    psrbagfsuppd.f $e |- ( ph -> F : ( NN0 ^m I ) --> B ) $.
+    psrbagfsuppd.z $e |- ( ph -> Z e. B ) $.
+    psrbagfsuppd.i $e |- ( ph -> I e. Fin ) $.
+    psrbagfsuppd.k $e |- ( ph -> K e. ( NN0 ^m I ) ) $.
+    psrbagfsuppd.y $e |- ( ( ph /\ y e. ( NN0 ^m I ) )
+      -> ( -. y oR <_ K -> ( F ` y ) = Z ) ) $.
+    $( Given a function on finite bags, where there is an upper bound of values
+       which can map to anything other than zero, the function is finitely
+       supported.  (Contributed by Jim Kingdon, 5-Nov-2026.) $)
+    psrbagfsuppd $p |- ( ph -> F finSupp Z ) $=
+      ( vx cn0 cmap cvv cv wbr wcel cfn vv co cle cofr crab cxp wfn fnmap nn0ex
+      elexd fnovex mp3an12i fexd psrbaglefimap syl2anc wss ssrab2 a1i wa wn cfv
+      cdif wceq simpr eldifad eldifbd breq1 elrab sylnib mpnanrd notbid fveqeq2
+      wi imbi12d wral ralrimiva adantr rspcdva mpd isfsuppf ) ANEOUBZCUADPMQZFU
+      CUDZRZMWAUEZGHAWACPDHOPPUFUGNPSAEPSWAPSUHUIAETJUJNEPPOUKULUMIAFWASETSWETS
+      KJMFEUNUOWEWAUPAWDMWAUQURAUAQZWAWEVBSZUSZWFFWCRZUTZWFDVAGVCZWHWFWASZWIWHW
+      FWAWEAWGVDZVEZWHWFWESWLWIUSWHWFWAWEWMVFWDWIMWFWAWBWFFWCVGVHVIVJWHBQZFWCRZ
+      UTZWODVAGVCZVMZWJWKVMBWAWFWOWFVCZWQWJWRWKWTWPWIWOWFFWCVGVKWOWFGDVLVNAWSBW
+      AVOWGAWSBWALVPVQWNVRVSVT $.
+  $}
+
+  ${
     $d D u v w x $.  $d D y $.  $d D x z $.  $d F f $.  $d F u v w x $.
     $d F y $.  $d F x z $.  $d I f $.  $d I z $.  $d S u v w $.  $d S z $.
     $d X f $.  $d X u v w x $.  $d X y $.  $d X x z $.  $d Y f $.
