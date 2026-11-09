@@ -23263,12 +23263,39 @@ $)
   $}
 
   ${
-    $d x y z $.  $d x ps $.  $d x th $.  $d y z ph $.
-    eu6w.x $e |- ( x = z -> ( ph <-> ps ) ) $.
-    eu6w.y $e |- ( x = y -> ( ph <-> th ) ) $.
-    $( Replace ~ ax-10 , ~ ax-12 in ~ eu6 with substitution hypotheses.
-       (Contributed by SN, 27-May-2025.) $)
+    $d ph z $.  $d ps x $.  $d x z $.  $d ph w y $.  $d w x y $.
+    eu6w.1 $e |- ( x = z -> ( ph <-> ps ) ) $.
+    $( Replace ~ ax-10 , ~ ax-12 in ~ eu6 with a substitution hypothesis.
+       (Contributed by SN, 27-May-2025.)  Remove a hypothesis and a distinct
+       variable condition, based on a comment from SN and ChatGPT. (Revised by
+       BTernaryTau, 8-Nov-2026.) $)
     eu6w $p |- ( E! x ph <-> E. y A. x ( ph <-> x = y ) ) $=
+      ( vw wex weq wb wal wa wi wn alimi imbi2d 19.8aw syl eximi wsb weu pm2.21
+      alnex sylbir equequ2 albidv biimp wnf equcoms bicomd sbievw sbequ bitr3id
+      ja equequ1 imbi12d nfa1w bibi12d nfim 19.38b cbvalvw imbi12i a1i spw nfrd
+      id syl5 impbid2 bitr3d ax-mp ax12wlem com12 embantd ancld imbitrrdi mpgbi
+      albiim eximdv impbii anbi2i abai eu3v ancom biimpr exsbim biantru 3bitr4i
+      3bitr4ri bitri ) ACUAZACHZACDIZJZCKZDHZLZWOWKWKWOMZLWKAWLMZCKZDHZLWPWJWQW
+      TWKWQWTWKWOWTWKNZWSWTXAANZCKWSACUCXBWRCAWLUBOUDWSACGIZMZCKDGDGIZWRXDCXEWL
+      XCADGCUEPUFQRWNWSDWMWRCAWLUGOSUNWKWTWOWKWSWNDAWSWNMZMZWKXFMZCXFCUHZXGCKZX
+      HJWSWNCWRBEGTZGDIZMZCGXCAXKWLXLABECTXCXKBAECECIABABJCEFUIUJUKBCGEULUMZCGD
+      UOZUPZUQWMXKXLJZCGXCAXKWLXLXNXOURZUQUSXIWKXFCKZMXJXHAXFCUTXIXSXFWKXIXSXFX
+      FXMGKZXQGKZMZCGXFYBJXCWSXTWNYAWRXMCGXPVAWMXQCGXRVAVBVCZVDXFXFCHXIXSXFYBCG
+      YCQXIXFCXIVFVEVGVHPVIVJAWSWSWLAMZCKZLWNAWSYEWSWRAYEWRXMCGXPVDAAWLYEAVFWLA
+      YEAXKGDTZCDAXKGCTWLYFXKAGCGCIAXKAXKJCGXNUIUJUKXKCDGULUMVKVLVMVGVNAWLCVQVO
+      VPVRVLVSVTWKWOWAACDWBWHWOWKLWOWOWKMZLWPWOWOWKWAWKWOWCYGWOWOYEDHWKWNYEDWMY
+      DCAWLWDOSACDWERWFWGWI $.
+    $( $j usage 'eu6w' avoids 'ax-10' 'ax-11' 'ax-12' 'ax-13'; $)
+  $}
+
+  ${
+    $d x y z $.  $d x ps $.  $d x th $.  $d y z ph $.
+    eu6wOLD.x $e |- ( x = z -> ( ph <-> ps ) ) $.
+    eu6wOLD.y $e |- ( x = y -> ( ph <-> th ) ) $.
+    $( Obsolete version of ~ eu6w as of 8-Nov-2026.  (Contributed by SN,
+       27-May-2025.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    eu6wOLD $p |- ( E! x ph <-> E. y A. x ( ph <-> x = y ) ) $=
       ( wex weq wb wal wa wi wn alimi imbi2d 19.8aw syl eximi weu pm2.21 sylbir
       alnex equequ2 albidv biimp wnf equequ1 imbi12d nfa1w bibi12d nfim cbvalvw
       ja 19.38b imbi12i a1i spw nfrd syl5 impbid2 bitr3d ax-mp ax12wlem embantd
@@ -23282,7 +23309,7 @@ $)
       AVBQVCVDAWNWNWGANZDLZMWIAWNXRWNWMAXRWMXGDFXIUSAAWGXRAVGWGAXRACDEHVEVHVFVA
       VIAWGDVJVKVLVMVHVNVOWFWJVRADEVSVPWJWFMWJWJWFNZMWKWJWJWFVRWFWJVQXSWJWJXREI
       WFWIXREWHXQDAWGVTPTADEWASWBWCWD $.
-    $( $j usage 'eu6w' avoids 'ax-10' 'ax-11' 'ax-12' 'ax-13'; $)
+    $( $j usage 'eu6wOLD' avoids 'ax-10' 'ax-11' 'ax-12' 'ax-13'; $)
   $}
 
   ${
@@ -44596,9 +44623,9 @@ $)
        BTernaryTau, 4-Nov-2026.) $)
     eusn $p |- ( E! x x e. A <-> E. x A = { x } ) $=
       ( vy vv vz cv csn wceq wex weq wb wal weu cab df-sn eqeq2i equequ1 eqabbw
-      wcel eleq1w bitri exbii sneq eqeq2d cbvexvw eu6w 3bitr4ri ) BCFZGZHZCIAFZ
-      BSZACJZKALZCIBUKGZHZAIULAMUJUNCUJBDCJZDNZHUNUIURBDUHOPUQUMDABDACQRUAUBUPU
-      JACUMUOUIBUKUHUCUDUEULEFBSUHBSACEAEBTACBTUFUG $.
+      wcel eleq1w bitri exbii sneq eqeq2d cbvexvw eu6wOLD 3bitr4ri ) BCFZGZHZCI
+      AFZBSZACJZKALZCIBUKGZHZAIULAMUJUNCUJBDCJZDNZHUNUIURBDUHOPUQUMDABDACQRUAUB
+      UPUJACUMUOUIBUKUHUCUDUEULEFBSUHBSACEAEBTACBTUFUG $.
     $( $j usage 'eusn' avoids 'ax-10' 'ax-11' 'ax-12'; $)
   $}
 
@@ -579674,11 +579701,11 @@ $)
     $( Replace ~ ax-10 , ~ ax-12 in ~ eu8 with an additional substitution
        hypothesis.  (Contributed by BTernaryTau, 26-Oct-2026.) $)
     eu8w $p |- ( E! x ph <-> E. x ( ph /\ A. y ( ps -> x = y ) ) ) $=
-      ( weu weq wb wal wex wi wa cbveuvw bicomd equcoms eu6w albii dfbi2 equcom
-      imbi2i equsalvw bicomi anbi12i ancom 19.26 3bitr4ri bitri exbii 3bitri )
-      ADIBEIBEDJZKZELZDMABDEJZNZELZOZDMABDEGPBCAEDFHBAKDEUPABGQRZSUOUSDUOBUMNZU
-      MBNZOZELZUSUNVCEBUMUATURAOVAELZVBELZOUSVDURVEAVFUQVAEUPUMBDEUBUCTVFABAEDU
-      TUDUEUFAURUGVAVBEUHUIUJUKUL $.
+      ( weu weq wb wal wex wi wa cbveuvw bicomd equcoms eu6wOLD albii equsalvw
+      dfbi2 equcom imbi2i bicomi anbi12i ancom 19.26 3bitr4ri bitri 3bitri
+      exbii ) ADIBEIBEDJZKZELZDMABDEJZNZELZOZDMABDEGPBCAEDFHBAKDEUPABGQRZSUOUSD
+      UOBUMNZUMBNZOZELZUSUNVCEBUMUBTURAOVAELZVBELZOUSVDURVEAVFUQVAEUPUMBDEUCUDT
+      VFABAEDUTUAUEUFAURUGVAVBEUHUIUJULUK $.
     $( $j usage 'eu8w' avoids 'ax-8' 'ax-9' 'ax-10' 'ax-11' 'ax-12' 'ax-13'; $)
   $}
 
@@ -580672,15 +580699,16 @@ $)
         u e. y ) <-> u = v ) ) ) ) ) $=
       ( vw wel weq wn wa wi wo wal wex wb exbii 19.28v elequ1 3bitri 3bitr4ri
       19.43 19.32v 19.42v 19.37v 19.21v equcom imbi2i albii weu anbi12d cbveuvw
-      anbi2i eu8w bicomd equcoms eu6w 3bitr3i 3bitr2i orbi2i ) BAGZCBGDAGBDHIJC
-      DGJKJZUTIZCAGZDCGZDBGZJZECGZEBGZJZEDHZKZJZKZJZLEMZDNZCMVAVBVCVIVJOZKZJZLE
-      MZDNZCMBVPWACVAVSEMZLZDNVADNZWBDNZLZWAVPVAWBDUAVTWCDVAVSEUBPVPVAVNEMZLZDN
-      WDWGDNZLWFVOWHDVAVNEUBPVAWGDUAWIWEWDVBVREMZJZDNVBWJDNZJZWEWIVBWJDUCWBWKDV
-      BVREQPWIVBVMEMZJZDNVBWNDNZJWMWGWODVBVMEQPVBWNDUCWPWLVBVCVQEMZKZDNVCWQDNZK
-      ZWLWPVCWQDUDWJWRDVCVQEUEPWPVCVLEMZKZDNVCXADNZKWTWNXBDVCVLEUEPVCXADUDXCWSV
-      CXCVFVKEMZJZDNVFVIDEHZKZEMZJZDNZWSXAXEDVFVKEQPXIXEDXHXDVFXGVKEXFVJVIDEUFU
-      GUHULPVFDUIVIEUIXJWSVFVIDEXFVDVGVEVHDECRDEBRUJZUKVFVIFCGZFBGZJZDEFXKEFHVG
-      XLVHXMEFCREFBRUJZUMVIXNVFEDFXOVIVFODEXFVFVIXKUNUOUPUQURUGSTULSTUSSTUHP $.
+      anbi2i eu8w bicomd equcoms eu6wOLD 3bitr3i 3bitr2i orbi2i ) BAGZCBGDAGBDH
+      IJCDGJKJZUTIZCAGZDCGZDBGZJZECGZEBGZJZEDHZKZJZKZJZLEMZDNZCMVAVBVCVIVJOZKZJ
+      ZLEMZDNZCMBVPWACVAVSEMZLZDNVADNZWBDNZLZWAVPVAWBDUAVTWCDVAVSEUBPVPVAVNEMZL
+      ZDNWDWGDNZLWFVOWHDVAVNEUBPVAWGDUAWIWEWDVBVREMZJZDNVBWJDNZJZWEWIVBWJDUCWBW
+      KDVBVREQPWIVBVMEMZJZDNVBWNDNZJWMWGWODVBVMEQPVBWNDUCWPWLVBVCVQEMZKZDNVCWQD
+      NZKZWLWPVCWQDUDWJWRDVCVQEUEPWPVCVLEMZKZDNVCXADNZKWTWNXBDVCVLEUEPVCXADUDXC
+      WSVCXCVFVKEMZJZDNVFVIDEHZKZEMZJZDNZWSXAXEDVFVKEQPXIXEDXHXDVFXGVKEXFVJVIDE
+      UFUGUHULPVFDUIVIEUIXJWSVFVIDEXFVDVGVEVHDECRDEBRUJZUKVFVIFCGZFBGZJZDEFXKEF
+      HVGXLVHXMEFCREFBRUJZUMVIXNVFEDFXOVIVFODEXFVFVIXKUNUOUPUQURUGSTULSTUSSTUHP
+      $.
   $}
 
   ${
@@ -731075,8 +731103,8 @@ $)
     $( Replace ~ ax-10 , ~ ax-11 , ~ ax-12 in ~ euabsn2 with substitution
        hypotheses.  (Contributed by SN, 27-May-2025.) $)
     euabsn2w $p |- ( E! x ph <-> E. y { x | ph } = { y } ) $=
-      ( weu weq wb wal wex cab cv csn wceq eu6w absnw exbii bitr4i ) ADIADEJKDL
-      ZEMADNEOZPQZEMACBDEFHGRUDUBEACDFUCHSTUA $.
+      ( weu weq wb wal wex cab cv csn wceq eu6wOLD absnw exbii bitr4i ) ADIADEJ
+      KDLZEMADNEOZPQZEMACBDEFHGRUDUBEACDFUCHSTUA $.
     $( $j usage 'euabsn2w' avoids 'ax-10' 'ax-11' 'ax-12'; $)
   $}
 
