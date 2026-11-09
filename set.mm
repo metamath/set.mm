@@ -731082,15 +731082,33 @@ $)
       ( cab csn wceq cv wb wal df-sn eqeq2i eqeq1 abbibw bitri ) ACGZEHZIRCJZEI
       ZCGZIAUAKCLSUBRCEMNAUADJZEIBCDFTUCEOPQ $.
     $( $j usage 'absnw' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+  $}
 
-    $d th x $.  $d ph z $.  $d x y z $.
-    euabsn2w.z $e |- ( x = z -> ( ph <-> th ) ) $.
-    $( Replace ~ ax-10 , ~ ax-11 , ~ ax-12 in ~ euabsn2 with substitution
-       hypotheses.  (Contributed by SN, 27-May-2025.) $)
+  ${
+    $d ph z $.  $d ps x $.  $d x z $.  $d ph w y $.  $d w x y $.
+    euabsn2w.1 $e |- ( x = z -> ( ph <-> ps ) ) $.
+    $( Replace ~ ax-10 , ~ ax-11 , ~ ax-12 in ~ euabsn2 with a substitution
+       hypothesis.  (Contributed by SN, 27-May-2025.)  Remove a hypothesis and
+       a distinct variable condition, based on a comment from SN and ChatGPT.
+       (Revised by BTernaryTau, 8-Nov-2026.) $)
     euabsn2w $p |- ( E! x ph <-> E. y { x | ph } = { y } ) $=
+      ( vw weu weq wb wal wex cab cv csn wceq eu6w wsb equcoms bicomd bitr3id
+      sbievw sbequ absnw exbii bitr4i ) ACHACDIJCKZDLACMDNZOPZDLABCDEFQUIUGDABE
+      GRZCGUHABECRCGIUJBAECECIABABJCEFSTUBBCGEUCUAUDUEUF $.
+    $( $j usage 'euabsn2w' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+  $}
+
+  ${
+    $d ps x $.  $d th x $.  $d ph y $.  $d ph z $.  $d x y z $.
+    euabsn2wOLD.y $e |- ( x = y -> ( ph <-> ps ) ) $.
+    euabsn2wOLD.z $e |- ( x = z -> ( ph <-> th ) ) $.
+    $( Obsolete version of ~ euabsn2w as of 8-Nov-2026.  (Contributed by SN,
+       27-May-2025.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    euabsn2wOLD $p |- ( E! x ph <-> E. y { x | ph } = { y } ) $=
       ( weu weq wb wal wex cab cv csn wceq eu6wOLD absnw exbii bitr4i ) ADIADEJ
       KDLZEMADNEOZPQZEMACBDEFHGRUDUBEACDFUCHSTUA $.
-    $( $j usage 'euabsn2w' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+    $( $j usage 'euabsn2wOLD' avoids 'ax-10' 'ax-11' 'ax-12'; $)
   $}
 
 
