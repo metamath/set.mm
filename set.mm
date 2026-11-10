@@ -9216,7 +9216,7 @@ $)
     ( w3a wa 3anass an12 bitri ) ABCDABCEEBACEEABCFABCGH $.
 
   $( Convert triple conjunction to conjunction, then commute.  (Contributed by
-     Jonathan Ben-Naim, 3-Jun-2011.)  (Shortened by Garrett Katz,
+     Jonathan Ben-Naim, 3-Jun-2011.)  (Proof shortened by Garrett Katz,
      15-Jun-2026.) $)
   3anan32 $p |- ( ( ph /\ ps /\ ch ) <-> ( ( ph /\ ch ) /\ ps ) ) $=
     ( w3a wa 3anan12 biancomi ) ABCDACEBABCFG $.
@@ -15665,8 +15665,8 @@ $)
     ZEZPEABCGZDFZRSPGOTPABDHIUBNCEZDFQUAUCDABCJKNCDHLRSPJM $.
 
   ${
-    hb.1 $e |- ( ph -> A. x ph ) $.
-    hb.2 $e |- ( ps -> A. x ps ) $.
+    hban.1 $e |- ( ph -> A. x ph ) $.
+    hban.2 $e |- ( ps -> A. x ps ) $.
     $( If ` x ` is not free in ` ph ` and ` ps ` , it is not free in
        ` ( ph /\ ps ) ` .  (Contributed by NM, 14-May-1993.)  (Proof shortened
        by Wolf Lammen, 2-Jan-2018.)  Reduce axiom dependencies.  (Revised by SN
@@ -15674,7 +15674,7 @@ $)
     hban $p |- ( ( ph /\ ps ) -> A. x ( ph /\ ps ) ) $=
       ( wa wal pm3.2 alrimdh imp ) ABABFZCGABKCDEABHIJ $.
     $( $j usage 'hban' avoids 'ax-5' 'ax-6' 'ax-7' 'ax-10' 'ax-12'; $)
-    hb.3 $e |- ( ch -> A. x ch ) $.
+    hb3an.3 $e |- ( ch -> A. x ch ) $.
     $( If ` x ` is not free in ` ph ` , ` ps ` , and ` ch ` , it is not free in
        ` ( ph /\ ps /\ ch ) ` .  (Contributed by NM, 14-Sep-2003.)  (Proof
        shortened by Wolf Lammen, 2-Jan-2018.)  Reduce axiom dependencies.
@@ -35760,11 +35760,11 @@ $)
        Originally a subproof in ~ pwnss .  (Contributed by Stefan O'Rear,
        22-Feb-2015.)  Avoid ~ df-nel .  (Revised by Steven Nguyen,
        23-Nov-2022.)  Reduce axiom usage.  (Revised by GG, 30-Aug-2024.) $)
-    rru $p |- -. { x e. A | -. x e. x } e. A $=
+    rur $p |- -. { x e. A | -. x e. x } e. A $=
       ( vy wel wn crab wcel wa wb cv eleq12 anidms notbid cbvrabv elrab2 pclem6
       wceq weq ax-mp ) AADZEZABFZUBGZUBBGZUCEZHIUDECCDZEZUECUBBUBCJZUBQZUFUCUIU
       FUCIUHUBUHUBKLMUAUGACBACRZTUFUJTUFIAJZUHUKUHKLMNOUCUDPS $.
-    $( $j usage 'rru' avoids 'df-nel' 'ax-10' 'ax-11' 'ax-12'; $)
+    $( $j usage 'rur' avoids 'df-nel' 'ax-10' 'ax-11' 'ax-12'; $)
   $}
 
   ${
@@ -50813,7 +50813,7 @@ $)
     $( The power set of a set is never a subset.  (Contributed by Stefan
        O'Rear, 22-Feb-2015.)  (Proof shortened by BJ, 24-Jul-2025.) $)
     pwnss $p |- ( A e. V -> -. ~P A C_ A ) $=
-      ( vx cpw wss wel wn crab wcel rru ssel mtoi rabelpw nsyl3 ) ADZAEZCCFGZCA
+      ( vx cpw wss wel wn crab wcel rur ssel mtoi rabelpw nsyl3 ) ADZAEZCCFGZCA
       HZOIZABIPSRAICAJOARKLQCABMN $.
   $}
 
@@ -55745,8 +55745,22 @@ $)
        Theorem 3.2(i) of [Monk1] p. 33.  (Contributed by NM, 2-Aug-1994.)
        (Proof shortened by Andrew Salmon, 27-Aug-2011.)  Remove dependency on
        ~ ax-sep , ~ ax-nul , ~ ax-pr .  (Revised by KP, 25-Oct-2021.)  Remove
-       dependency on ~ ax-12 .  (Revised by SN, 11-Dec-2024.) $)
-    ssrel $p |- ( Rel A -> ( A C_ B <->
+       dependency on ~ ax-12 .  (Revised by SN, 11-Dec-2024.)  (Proof shortened
+       by BJ, 5-Nov-2026.) $)
+    ssrel $p |- ( Rel A ->
+        ( A C_ B <-> A. x A. y ( <. x , y >. e. A -> <. x , y >. e. B ) ) ) $=
+      ( vz wrel wss cv cop wcel wi wal ssel alrimivv wa wceq cvv wex cxp eleq1
+      df-rel sylbi elxpi wb imbi12d adantr biimprcd 2alimi 19.23vv sylib sylan9
+      syl6 pm2.43d ssrdv ex impbid2 ) CFZCDGZAHZBHZIZCJZVADJZKZBLALZURVDABCDVAM
+      NUQVEURUQVEOZECDVFEHZCJZVGDJZUQVHVGVAPZUSQJUTQJOZOZBRARZVEVHVIKZUQVHVGQQS
+      ZJZVMUQCVOGVHVPKCUACVOVGMUBABVGQQUCULVEVLVNKZBLALVMVNKVDVQABVLVNVDVJVNVDU
+      DVKVJVHVBVIVCVGVACTVGVADTUEUFUGUHVLVNABUIUJUKUMUNUOUP $.
+    $( $j usage 'ssrel' avoids 'ax-12' 'ax-sep' 'ax-nul' 'ax-pr'; $)
+
+    $( Obsolete version of ~ ssrel as of 5-Nov-2026.  (Contributed by NM,
+       2-Aug-1994.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    ssrelOLD $p |- ( Rel A -> ( A C_ B <->
                 A. x A. y ( <. x , y >. e. A -> <. x , y >. e. B ) ) ) $=
       ( vz wrel wss cv cop wcel wi wal ssel alrimivv wceq wex cvv df-ss eleq1
       wa cxp df-rel sylbb copab wb elopabw elv simpl 2eximi sylbi eleq2s imim2i
@@ -55756,7 +55770,6 @@ $)
       BECWDRUCWEWBVQWBVPVIQJVJQJTZABUDZWDVPWHJZWAWGTZBPAPZWBWIWKUEEWGABVPQUFUGW
       JWAABWAWGUHUIUJABQQUMUKULUNVOWCVSEVOVQWBVRVOWBVQVRVOWAVSKZBLALWBVSKVNWLAB
       WAVSVNWAVQVLVRVMVPVKCSVPVKDSUOUPUQWAVSABURUSUTVAVDVBECDRVCVEVF $.
-    $( $j usage 'ssrel' avoids 'ax-12' 'ax-sep' 'ax-nul' 'ax-pr'; $)
 
     $( Extensionality principle for relations.  Theorem 3.2(ii) of [Monk1]
        p. 33.  (Contributed by NM, 2-Aug-1994.) $)
@@ -55826,9 +55839,9 @@ $)
 
   ${
     $d x y A $.  $d x y B $.
-    eqreliiv.1 $e |- Rel A $.
-    eqreliiv.2 $e |- Rel B $.
-    eqreliiv.3 $e |- ( <. x , y >. e. A <-> <. x , y >. e. B ) $.
+    eqrelriiv.1 $e |- Rel A $.
+    eqrelriiv.2 $e |- Rel B $.
+    eqrelriiv.3 $e |- ( <. x , y >. e. A <-> <. x , y >. e. B ) $.
     $( Inference from extensionality principle for relations.  (Contributed by
        NM, 17-Mar-1995.) $)
     eqrelriiv $p |- A = B $=
@@ -56522,6 +56535,16 @@ $)
       ( vx vy vz wss cv wbr wex copab ccom ssbr anim1d eximdv ssopab2dv 3sstr4g
       wa df-co ) ABGZDHZEHZAIZUBFHCIZRZEJZDFKUAUBBIZUDRZEJZDFKCALCBLTUFUIDFTUEU
       HETUCUGUDABUAUBMNOPDFECASDFECBSQ $.
+  $}
+
+  ${
+    coss12d.a $e |- ( ph -> A C_ B ) $.
+    coss12d.c $e |- ( ph -> C C_ D ) $.
+    $( Subset deduction for composition of two classes.  (Contributed by RP,
+       24-Dec-2019.)  (Proof shortened by BJ, 8-Nov-2026.) $)
+    coss12d $p |- ( ph -> ( A o. C ) C_ ( B o. D ) ) $=
+      ( ccom wss coss1 syl coss2 sstrd ) ABDHZCDHZCEHZABCINOIFBCDJKADEIOPIGDECL
+      KM $.
   $}
 
   $( Equality theorem for composition of two classes.  (Contributed by NM,
@@ -58023,12 +58046,18 @@ $)
   rnresss $p |- ran ( A |` B ) C_ ran A $=
     ( cres resss rnssi ) ABCAABDE $.
 
-  $( Restriction of a constant function (or other Cartesian product).
+  $( A restriction of a Cartesian product is a Cartesian product.  (Contributed
+     by Stefan O'Rear, 24-Jan-2015.)  Extract from proof of ~ xpssres .
+     (Revised by BJ, 31-Oct-2026.) $)
+  xpres $p |- ( ( A X. B ) |` C ) = ( ( A i^i C ) X. B ) $=
+    ( cxp cres cvv cin df-res inxp inv1 xpeq2i 3eqtri ) ABDZCEMCFDGACGZBFGZDNBD
+    MCHABCFIOBNBJKL $.
+
+  $( Restriction of a Cartesian product to a subclass of the first factor.
      (Contributed by Stefan O'Rear, 24-Jan-2015.) $)
   xpssres $p |- ( C C_ A -> ( ( A X. B ) |` C ) = ( C X. B ) ) $=
-    ( wss cxp cres cin cvv df-res inxp inv1 xpeq2i 3eqtri sseqin2 biimpi xpeq1d
-    wceq eqtrid ) CADZABEZCFZACGZBEZCBEUATCHEGUBBHGZEUCTCIABCHJUDBUBBKLMSUBCBSU
-    BCQCANOPR $.
+    ( wss cxp cres cin xpres wceq sseqin2 biimpi xpeq1d eqtrid ) CADZABECFACGZB
+    ECBEABCHNOCBNOCICAJKLM $.
 
   ${
     $d x y A $.  $d x y B $.  $d x y C $.  $d x y R $.
@@ -60208,7 +60237,7 @@ $)
       BLWQBVPWKXBGQZUOVPWKBXBXCUQRURUSUTFGWCVRVSVAVPVLVMVBVGVNDVPVCVDVEVFWDAVHW
       DADVISAWCHVTTAWCDVTTSVJVK $.
 
-    $( Class composition distributes over union.  (Contributed by NM,
+    $( Postcomposition distributes over union.  (Contributed by NM,
        21-Dec-2008.)  (Proof shortened by Andrew Salmon, 27-Aug-2011.) $)
     coundi $p |- ( A o. ( B u. C ) ) = ( ( A o. B ) u. ( A o. C ) ) $=
       ( vx vz vy cv wbr wa wex copab cun ccom wo unopab brun anbi1i andir bitri
@@ -60217,7 +60246,7 @@ $)
       FKVDUMUQDFOVGVCDFVCULUPNZEJVGVBVHEVBUJUONZUKIVHVAVIUKUHUIBCPQUJUOUKRSUAUL
       UPEUBUCUDUEVEUNVFURDFEABTDFEACTUFDFEAUTTUG $.
 
-    $( Class composition distributes over union.  (Contributed by NM,
+    $( Precomposition distributes over union.  (Contributed by NM,
        21-Dec-2008.)  (Proof shortened by Andrew Salmon, 27-Aug-2011.) $)
     coundir $p |- ( ( A u. B ) o. C ) = ( ( A o. C ) u. ( B o. C ) ) $=
       ( vx vy vz cv wbr wa wex copab cun ccom wo unopab brun anbi2i bitri df-co
@@ -60336,12 +60365,11 @@ $)
     $( A class postcomposed with its converse includes the identity relation
        restricted to its domain.  (Contributed by BJ, 25-Oct-2026.) $)
     idresdmsscocnv1 $p |- ( _I |` dom A ) C_ ( `' A o. A ) $=
-      ( vx vy vz cid cdm cres ccnv ccom relres cv wbr cop wcel vex brresi sylbi
-      wa wex df-br eldm brcnv brcoi sylan2br anidms exlimiv weq wb ideq biimpac
-      breq2 sylan 3imtr3i relssi ) BCEAFZGZAHZAIZEUOJBKZCKZUPLZUSUTURLZUSUTMZUP
-      NVCURNVAUSUONZUSUTELZRVBUOUSUTECOZPVDUSUSURLZVEVBVDUSDKZALZDSVGDUSABOZUAV
-      IVGDVIVGVIVIVHUSUQLVGVHUSADOZVJUBAUQUSVHUSVJVKVJUCUDUEUFQVEVGVBVEBCUGVGVB
-      UHUSUTVFUIUSUTUSURUKQUJULQUSUTUPTUSUTURTUMUN $.
+      ( vy vx vz cid cdm cres ccnv ccom cv wcel cop wceq wrex elrid wbr wex vex
+      wa brcnv biimpri ancli eximi eldm 3imtr4i eleq1 syl5ibrcom rexlimiv sylbi
+      opelco ssriv ) BEAFZGZAHZAIZBJZUMKUPCJZUQLZMZCULNUPUOKZCUPULOUSUTCULUQULK
+      ZUTUSURUOKZUQDJZAPZDQVDVCUQUNPZSZDQVAVBVDVFDVDVEVEVDVCUQADRCRZTUAUBUCDUQA
+      VGUDDUQUQUNAVGVGUJUEUPURUOUFUGUHUIUK $.
   $}
 
   $( A class precomposed with its converse includes the identity relation
@@ -77225,6 +77253,27 @@ $)
     ( con0 cvv wcel word wn ordon ordirr ax-mp elong mpbiri mto ) ABCZAACZADZME
     FAGHLMNFABIJK $.
   $( $j usage 'onprc' avoids 'ax-reg'; $)
+
+  ${
+    $d A x $.  $d V x $.
+    onprcr.1 $e |- A = { x e. V | Ord x } $.
+    onprcr.2 $e |- Tr A $.
+    $( Relative version of ~ onprc .  (Contributed by Adrian Ducourtial,
+       15-Oct-2026.) $)
+    onprcr $p |- -. A e. V $=
+      ( wcel word wn wtr cep wwe con0 wss crab cab rabssab df-on 3sstr4i epweon
+      cv wess mp2 df-ord mpbir2an ordirr ax-mp ordeq elrab3 mpbiri eleqtrrdi
+      mto ) BCFZBBFZBGZUMHUNBIBJKZEBLMLJKUOATZGZACNZUQAOBLUQACPDAQRSBLJUAUBBUCU
+      DZBUEUFULBURBULBURFUNUSUQUNABCUPBUGUHUIDUJUK $.
+    $( $j usage 'onprcr' avoids 'ax-reg'; $)
+  $}
+
+  $( Alternate proof of ~ onprc from ~ onprcr .  (Contributed by Adrian
+     Ducourtial, 15-Oct-2026.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
+  onprcALT $p |- -. On e. _V $=
+    ( vx con0 cvv cv word cab crab df-on rabab eqtr4i tron onprcr ) ABCBADEZAFM
+    ACGAHMAIJKL $.
 
   ${
     $d x y A $.
@@ -108858,9 +108907,6 @@ $)
        ` setrecs ` is well-defined for any ` F ` and meaningful for any
        function ` F ` .
 
-       For example, see Theorem ~ onsetrec for how the class ` On ` is defined
-       recursively using the successor function.
-
        The definition works by building subsets of the desired class and taking
        the union of those subsets.  To find such a collection of subsets,
        consider an arbitrary set ` z ` , and consider the result when applying
@@ -108878,282 +108924,9 @@ $)
        of ` y ` , then that element can be avoided even if we apply ` F ` in
        every possible way to previously generated elements.
 
-       Note that such an omitted element might be eventually recursively
-       generated by ` F ` , but not through the elements of ` y ` .  In this
-       case, ` y ` would fail the condition in the definition, but the omitted
-       element would still be included in some larger ` y ` .  For example, if
-       ` F ` is the successor function, the set ` { (/) , 2o } ` would fail the
-       condition since ` 2o ` is not an element of the successor of ` (/) ` or
-       ` { (/) } ` .  Remember that we are applying ` F ` to subsets of ` y ` ,
-       not elements of ` y ` .  In fact, even the set ` { 1o } ` fails the
-       condition, since the only subset of previously generated elements is
-       ` (/) ` , and ` suc (/) ` does not have ` 1o ` as an element.  However,
-       we can let ` y ` be any ordinal, since each of its elements is generated
-       by starting with ` (/) ` and repeatedly applying the successor function.
+       For an example, see Theorem ~ onsetrec for how the class ` On ` is
+       defined recursively using the successor function.
 
-       A similar definition I initially used for ` setrecs ( F ) ` was
-       ` setrecs ( F ) = U. ran recs ( ( g e. _V |-> ( F `` U. ran g ) ) ) ` .
-       I had initially tried and failed to find an elementary definition, and I
-       had proven theorems analogous to ~ setrec1 and ~ setrec2v using the old
-       definition before I found the new one.  I decided to change definitions
-       for two reasons.  First, as John Horton Conway noted in the Appendix to
-       Part Zero of On Numbers and Games, mathematicians should not be caught
-       up in any particular formalization, such as ZF set theory.  Instead,
-       they should work under whatever framework best suits the problem, and
-       the formal bases used for different problems can be shown to be
-       equivalent.  Thus, Conway preferred defining surreal numbers as
-       equivalence classes of surreal number forms, rather than
-       sign-expansions.  Although sign-expansions are easier to implement in ZF
-       set theory, Conway argued that "formalisation within some particular
-       axiomatic set theory is irrelevant".  Furthermore, one of the most
-       remarkable properties of the theory of surreal numbers is that it
-       generates so much from almost nothing.  Using sign-expansions as the
-       formal definition destroys the beauty of surreal numbers, because
-       ordinals are already built in.  For this reason, I replaced the old
-       definition of ` setrecs ` , which also relied heavily on ordinal
-       numbers.  On the other hand, both surreal numbers and the elementary
-       definition of ` setrecs ` immediately generate the ordinal numbers from
-       a (relatively) very simple set-theoretical basis.
-
-       Second, although it is still complicated to formalize the theory of
-       recursively generated sets within ZF set theory, it is actually simpler
-       and more natural to do so with set theory directly than with the theory
-       of ordinal numbers.  As Conway wrote, indexing the "birthdays" of sets
-       is and should be unnecessary.  Using an elementary definition for
-       ` setrecs ` removes the reliance on the previously developed theory of
-       ordinal numbers, allowing proofs to be simpler and more direct.
-
-       Formalizing surreal numbers within Metamath is probably still not in the
-       spirit of Conway.  He said that "attempts to force arbitrary theories
-       into a single formal straitjacket... produce unnecessarily cumbrous and
-       inelegant contortions."  Nevertheless, Metamath has proven to be much
-       more versatile than it seems at first, and I think the theory of surreal
-       numbers can be natural while fitting well into the Metamath framework.
-
-       The difficulty in writing a definition in Metamath for ` setrecs ( F ) `
-       is that the necessary properties to prove are self-referential (see
-       ~ setrec1 and ~ setrec2v ), so we cannot simply write the properties we
-       want inside a class abstraction as with most definitions.  As noted in
-       the comment of ~ df-rdg , this is not actually a requirement of the
-       Metamath language, but we would like to be able to eliminate all
-       definitions by direct mechanical substitution.
-
-       We cannot define ` setrecs ` using a class abstraction directly, because
-       nothing about its individual elements tells us whether they are in the
-       set.  We need to know about previous elements first.  One way of getting
-       around this problem without indexing is by defining ` setrecs ( F ) ` as
-       a union or intersection of suitable sets.  Thus, instead of using a
-       class abstraction for the elements of ` setrecs ( F ) ` , which seems to
-       be impossible, we can use a class abstraction for supersets or subsets
-       of ` setrecs ( F ) ` , which "know" about multiple individual elements
-       at a time.
-
-       Note that we cannot define ` setrecs ( F ) ` as an intersection of sets,
-       because in general it is a proper class, so any supersets would also be
-       proper classes.  However, a proper class can be a union of sets, as long
-       as the collection of such sets is a proper class.  Therefore, it is
-       feasible to define ` setrecs ( F ) ` as a union of a class abstraction.
-
-       If ` setrecs ( F ) = U. A ` , the elements of A must be subsets of
-       ` setrecs ( F ) ` which together include everything recursively
-       generated by ` F ` .  We can do this by letting ` A ` be the class of
-       sets ` x ` whose elements are all recursively generated by ` F ` .
-
-       One necessary condition is that each element of a given ` x e. A ` must
-       be generated by ` F ` when applied to a previous element ` y e. A ` .
-       In symbols, ` A. x e. A E. y e. A ( y C_ x /\ x C_ ( F `` y ) ) } ` .
-       However, this is not sufficient.  All fixed points ` x ` of ` F ` will
-       satisfy this condition whether they should be in ` setrecs ( F ) ` or
-       not.  If we replace the subset relation with the proper subset relation,
-       ` x ` cannot be the empty set, even though the empty set should be in
-       ` A ` .  Therefore this condition cannot be used in the definition, even
-       if we can find a way to avoid making it circular.
-
-       A better strategy is to find a necessary and sufficient condition for
-       all the elements of a set ` y e. A ` to be generated by ` F ` when
-       applied only to sets of previously generated elements within ` y ` .
-       For example, taking ` F ` to be the successor function, we can let
-       ` A = On ` rather than ` ~P On ` , and we will still have ` U. A = On `
-       as required.  This gets rid of the circularity of the definition, since
-       we should have a condition to test whether a given set ` y ` is in ` A `
-       without knowing about any of the other elements of ` A ` .
-
-       The definition I ended up using accomplishes this using induction: ` A `
-       is defined as the class of sets ` y ` for which a sort of induction on
-       the elements of ` y ` holds.  However, when creating a definition for
-       ` setrecs ` that did not rely on ordinal numbers, I tried at first to
-       write a definition using the well-founded relation predicate, ` Fr ` .
-       I thought that this would be simple to do once I found a suitable
-       definition using induction, just as the least- element principle is
-       equivalent to induction on the positive integers.  If we let
-       ` R = { <. a , b >. | ( F `` a ) C_ b } ` , then
-       ` ( R Fr A <-> A. x ( ( x C_ A /\ x =/= (/) ) `
-       ` -> E. y e. x A. z e. x -. ( F `` z ) C_ y ) ) ` .
-
-       On 22-Jul-2020 I came up with the following definition (Version 1)
-       phrased in terms of induction: ` U. { y | A. z `
-       ` ( A. w ( w C_ y -> ( w e. z -> ( F `` w ) e. z ) ) -> y e. z ) } `
-
-       In Aug-2020 I came up with an equivalent definition with the goal of
-       phrasing it in terms of the relation ` Fr ` .  It is the contrapositive
-       of the previous one with ` z ` replaced by its complement.
-       ` U. { y | A. z `
-       ` ( y e. z -> E. w ( w C_ y /\ ( F `` w ) e. z /\ -. w e. z ) ) } `
-
-       These definitions didn't work because the induction didn't "get off the
-       ground."  If ` z ` does not contain the empty set, the condition
-       ` ( A. w ... y e. z ` fails, so ` y = (/) ` doesn't get included in
-       ` A ` even though it should.  This could be fixed by adding the base
-       case as a separate requirement, but the subtler problem would remain
-       that rather than a set of "acceptable" sets, what we really need is a
-       collection ` z ` of all individuals that have been generated so far.  So
-       one approach is to replace every occurrence of ` e. z ` with ` C_ z ` ,
-       making ` z ` a set of individuals rather than a family of sets.  That
-       solves this problem, but it complicates the foundedness version of the
-       definition, which looked cleaner in Version 1.
-
-       There was another problem with Version 1.  If we let ` F ` be the power
-       set function, then the induction in the inductive version works for
-       ` z ` being the class of transitive sets, restricted to subsets of
-       ` y ` .  Therefore, ` y ` must be transitive by definition of ` z ` .
-       This doesn't affect the union of all such ` y ` , but it may or may not
-       be desirable.  The problem is that ` F ` is only applied to transitive
-       sets, because of the strong requirement ` w e. z ` , so the definition
-       requires the additional constraint
-       ` ( a C_ b -> ( F `` a ) C_ ( F `` b ) ) ` in order to work.  This issue
-       can also be avoided by replacing ` e. z ` with ` C_ z ` .  The induction
-       version of the result is used in the final definition.
-
-       Version 2:  (18-Aug-2020) Induction: ` U. { y | A. z `
-       ` ( A. w ( w C_ y -> ( w C_ z -> ( F `` w ) C_ z ) ) -> y C_ z ) } `
-       Foundedness: ` U. { y | A. z ( y i^i z =/= (/) -> `
-       ` E. w ( w C_ y /\ w i^i z = (/) /\ ( F `` w ) i^i z =/= (/) ) ) } `
-
-       In the induction version, not only does ` z ` include all the elements
-       of ` y ` , but it must include the elements of ` ( F `` w ) ` for
-       ` w C_ ( y i^i z ) ` even if those elements of ` ( F `` w ) ` are not in
-       ` y ` .  We shouldn't care about any of the elements of ` z ` outside
-       ` y ` , but this detail doesn't affect the correctness of the
-       definition.  If we replaced ` ( F `` w ) ` in the definition by
-       ` ( ( F `` w ) i^i y ) ` , we would get the same class for
-       ` setrecs ( F ) ` .  Suppose we could find a ` z ` for which the
-       condition fails for a given ` y ` under the changed definition.  Then
-       the antecedent would be true, but ` y C_ z ` would be false.  We could
-       then simply add all elements of ` ( F `` w ) ` outside of ` y ` for any
-       ` w C_ y ` , which we can do because all the classes involved are sets.
-       This is not trivial and requires the axioms of union, power set, and
-       replacement.  However, the expanded ` z ` fails the condition under the
-       Metamath definition.  The other direction is easier.  If a certain ` z `
-       fails the Metamath definition, then all ` ( F `` w ) C_ z ` for
-       ` w C_ ( y i^i z ) ` , and in particular ` ( ( F `` w ) i^i y ) C_ z ` .
-
-       The foundedness version is starting to look more like ~ ax-reg !  We
-       want to take advantage of the preexisting relation ` Fr ` , which seems
-       closely related to our foundedness definition.  Since we only care about
-       the elements of ` z ` which are subsets of ` y ` , we can restrict ` z `
-       to ` y ` in the foundedness definition.  Furthermore, instead of
-       quantifying over ` w ` , quantify over the elements ` v e. z `
-       overlapping with ` w ` .  Versions 3, 4, and 5 are all equivalent to
-       Version 2.
-
-       Version 3 - Foundedness (5-Sep-2020):
-       ` U. { y | A. z ( ( z C_ y /\ z =/= (/) ) `
-       ` -> E. v e. z E. w ( w C_ y /\ w i^i z = (/) /\ v e. ( F `` w ) ) ) } `
-
-       Now, if we replace ` ( F `` w ) ` by ` ( ( F `` w ) i^i y ) ` , we do
-       not change the definition.  We already know that ` v e. y ` since
-       ` v e. z ` and ` z C_ y ` .  All we need to show in order to prove that
-       this change leads to an equivalent definition is to find
-
-       To make our definition look exactly like ~ df-fr , we add another
-       variable ` u ` representing the nonexistent element of ` w ` in ` z ` .
-
-       Version 4 - Foundedness (6-Sep-2020):
-       ` U. { y | A. z ( ( z C_ y /\ z =/= (/) ) -> `
-       ` E. v e. z E. w A. u e. z ( w C_ y /\ -. u e. w /\ v e. ( F `` w ) ) `
-
-       This is so close to ~ df-fr ; the only change needed is to switch
-       ` E. w ` with ` A. u e. z ` .  Unfortunately, I couldn't find any way to
-       switch the quantifiers without interfering with the definition.  Maybe
-       there is a definition equivalent to this one that uses ` Fr ` , but I
-       couldn't find one.  Yet, we can still find a remarkable similarity
-       between Foundedness Version 2 and ~ ax-reg .  Rather than a disjoint
-       element of ` z ` , there's a disjoint coverer of an element of ` z ` .
-
-       Finally, here's a different dead end I followed:
-
-       To clean up our foundedness definition, we keep ` z ` as a family of
-       sets ` y ` but allow ` w ` to be any subset of ` U. z ` in the
-       induction.  With this stronger induction, we can also allow for the
-       stronger requirement ` ~P y C_ z ` rather than only ` y e. z ` .  This
-       will help improve the foundedness version.
-
-       Version 1.1 (28-Aug-2020) Induction: ` U. { y | A. z ( A. w `
-       ` ( w C_ y -> ( w C_ U. z -> ( F `` w ) e. z ) ) -> ~P y C_ z ) } `
-       Foundedness: ` U. { y | A. z ( E. a ( a C_ y /\ a e. z ) `
-       ` -> E. w ( w C_ y /\ w i^i |^| z = (/) /\ ( F `` w ) e. z ) ) } `
-
-       ( Edit (Aug 31) - this isn't true!  Nothing forces the subset of an
-       element of ` z ` to be in ` z ` .  Version 2 does not have this issue. )
-
-       Similarly, we could allow ` w ` to be any subset of any element of ` z `
-       rather than any subset of ` U. z ` .  I think this has the same problem.
-
-       We want to take advantage of the preexisting relation ` Fr ` , which
-       seems closely related to our foundedness definition.  Since we only care
-       about the elements of ` z ` which are subsets of ` y ` , we can restrict
-       ` z ` to ` ~P y ` in the foundedness definition:
-
-       Version 1.2 (31-Aug-2020) Foundedness:
-       ` U. { y | A. z ( ( z C_ ~P y /\ z =/= (/) ) `
-       ` -> E. w ( w e. ~P y /\ w i^i |^| z = (/) /\ ( F `` w ) e. z ) ) } `
-
-       Now this looks more like ~ df-fr !  The last step necessary to be able
-       to use ` Fr ` directly in our definition is to replace ` ( F `` w ) `
-       with its own setvar variable, corresponding to ` y ` in ~ df-fr .
-
-       This definition is incorrect, though, since there's nothing forcing the
-       subset of an element of ` z ` to be in ` z ` .
-
-       Version 1.3 (31-Aug-2020) Induction: ` U. { y | A. z ( A. w ( w C_ y `
-       ` -> ( w C_ U. z -> ( w e. z /\ ( F `` w ) e. z ) ) ) -> ~P y C_ z ) } `
-       Foundedness:
-       ` U. { y | A. z ( ( z C_ ~P y /\ z =/= (/) ) -> E. w ( w e. ~P y `
-       ` /\ w i^i |^| z = (/) /\ ( w e. z \/ ( F `` w ) e. z ) ) ) } `
-
-       ` z ` must contain the supersets of each of its elements in the
-       foundedness version, and we can't make any restrictions on ` z ` or
-       ` F ` , so this doesn't work.
-
-       Let's try letting R be the covering relation
-       ` R = { <. a , b >. | b e. ( F `` a ) } ` to solve the transitivity
-       issue (i.e. that if ` F ` is the power set relation, ` A ` consists only
-       of transitive sets).  The set ` ( F `` w ) ` corresponds to the variable
-       ` y ` in ~ df-fr .  Thus, in our case, ~ df-fr is equivalent to
-       ` ( R Fr A <-> A. z ( ( z C_ A /\ z =/= (/) ) `
-       ` -> E. w ( ( F `` w ) e. z /\ -. E. v e. z v R ( F `` w ) ) ) ` .
-       Substituting our relation ` R ` gives
-       ` ( R Fr A <-> A. z ( ( z C_ A /\ z =/= (/) ) -> `
-       ` E. w ( ( F `` w ) e. z /\ -. E. v e. z ( F `` w ) e. ( F `` v ) ) ) `
-
-       This doesn't work for non-injective ` F ` because we need all ` z ` to
-       be straddlers, but we don't necessarily need all-straddlers; loops
-       within z are fine for non-injective F.
-
-       Consider the foundedness form of Version 1.  We want to show
-       ` -. w e. z <-> A. v e. z -. v R ( F `` w ) ` so we can replace one with
-       the other.  Negate both sides: ` w e. z <-> E. v e. z v R ( F `` w ) `
-
-       If ` F ` is injective, then we should be able to pick a suitable R,
-       being careful about the above problem for some F (for example z =
-       transitivity) when changing the antecedent y e. z' to z =/= (/).  If
-       we're clever, we can get rid of the injectivity requirement.  The
-       forward direction of the above equivalence always holds, but the key is
-       that although the backwards direction doesn't hold in general, we can
-       always find some z' where it doesn't work for ` w ` itself.  If there
-       exists a z' where the version with the w condition fails, then there
-       exists a z' where the version with the v condition also fails.  However,
-       Version 1 is not a correct definition, so this doesn't work either.
        (Contributed by Emmett Weisz, 18-Aug-2020.)
        (New usage is discouraged.) $)
     df-setrecs $a |- setrecs ( F ) = U. { y | A. z
@@ -110372,6 +110145,30 @@ $)
     cardprc $p |- { x | ( card ` x ) = x } e/ _V $=
       ( vy cv ccrd cfv wceq cab cvv weq fveq2 eqeq12d cbvabv cardprclem nelir
       id ) ACZDEZPFZAGZHBSRBCZDEZTFABABIZQUAPTPTDJUBOKLMN $.
+  $}
+
+  ${
+    $d A x $.  $d V x $.
+    cardprcr.1 $e |- A = { x e. V | ( card ` x ) = x } $.
+    cardprcr.2 $e |- ( A e. V -> ( har ` U. A ) e. V ) $.
+    $( Relative version of ~ cardprc .  (Contributed by Adrian Ducourtial,
+       15-Oct-2026.) $)
+    cardprcr $p |- -. A e. V $=
+      ( wcel cuni char cfv cdom wbr harndom cvv wss uniexg ccrd wceq harcard cv
+      fveq2 id eqeq12d elrab2 sylanblrc elssuni syl ssdomg sylc mto ) BCFZBGZHI
+      ZUKJKZUKLUJUKMFULUKNZUMBCOUJULBFZUNUJULCFULPIZULQZUOEUKRASZPIZURQUQAULCBU
+      RULQZUSUPURULURULPTUTUAUBDUCUDULBUEUFULUKMUGUHUI $.
+  $}
+
+  ${
+    $d x y $.
+    $( Alternate proof of ~ cardprc from ~ cardprcr .  (Contributed by Adrian
+       Ducourtial, 15-Oct-2026.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    cardprcALT $p |- { x | ( card ` x ) = x } e/ _V $=
+      ( vy cv ccrd cfv wceq cab crab rabab fveq2 id eqeq12d cbvrabv eqtr3i wcel
+      cvv cuni char fvexd cardprcr nelir ) ACZDEZUBFZAGZPBUEPUDAPHUEBCZDEZUFFZB
+      PHUDAIUDUHABPUBUFFZUCUGUBUFUBUFDJUIKLMNUEPOUEQRSTUA $.
   $}
 
   ${
@@ -170565,11 +170362,12 @@ $)
 
   ${
     $d x y z ph $.  $d x y z A $.  $d x y z B $.  $d x y z C $.  $d x y z D $.
-    coss12d.a $e |- ( ph -> A C_ B ) $.
-    coss12d.c $e |- ( ph -> C C_ D ) $.
-    $( Subset deduction for composition of two classes.  (Contributed by RP,
-       24-Dec-2019.) $)
-    coss12d $p |- ( ph -> ( A o. C ) C_ ( B o. D ) ) $=
+    coss12dOLD.a $e |- ( ph -> A C_ B ) $.
+    coss12dOLD.c $e |- ( ph -> C C_ D ) $.
+    $( Obsolete version of ~ coss12d as of 8-Nov-2026.  (Contributed by RP,
+       24-Dec-2019.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    coss12dOLD $p |- ( ph -> ( A o. C ) C_ ( B o. D ) ) $=
       ( vx vy vz cv wbr wa wex copab ccom ssbrd anim12d eximdv df-co ssopab2dv
       3sstr4g ) AHKZIKZDLZUDJKZBLZMZINZHJOUCUDELZUDUFCLZMZINZHJOBDPCEPAUIUMHJAU
       HULIAUEUJUGUKADEUCUDGQABCUDUFFQRSUAHJIBDTHJICETUB $.
@@ -437870,7 +437668,8 @@ $)
         tgcgrextend.4 $e |- ( ph -> ( B .- C ) = ( E .- F ) ) $.
         $( Link congruence over a pair of line segments.  Theorem 2.11 of
            [Schwabhauser] p. 29.  (Contributed by Thierry Arnoux, 23-Mar-2019.)
-           (Shortened by David A. Wheeler and Thierry Arnoux, 22-Apr-2020.) $)
+           (Proof shortened by David A. Wheeler and Thierry Arnoux,
+           22-Apr-2020.) $)
         tgcgrextend $p |- ( ph -> ( A .- C ) = ( D .- F ) ) $=
           ( co wceq wa adantr simpr oveq1d cstrkg tgcgreq 3eqtr4d wne tgcgrtriv
           wcel tgcgrcomlr axtg5seg pm2.61dane ) ABDKUFZEHKUFZUGBCABCUGZUHZCDKUF
@@ -457547,7 +457346,7 @@ $)
     $d C a b $.  $d G a b $.  $d V a b $.
     $( For each edge in a simple graph, there are two distinct vertices which
        are connected by this edge.  (Contributed by Alexander van der Vekens,
-       9-Dec-2017.)  (Revised by AV, 17-Oct-2020.)  (Shortened by AV,
+       9-Dec-2017.)  (Revised by AV, 17-Oct-2020.)  (Proof shortened by AV,
        25-Nov-2020.) $)
     usgredg $p |- ( ( G e. USGraph /\ C e. E )
                     -> E. a e. V E. b e. V ( a =/= b /\ C = { a , b } ) ) $=
@@ -482068,7 +481867,7 @@ $)
      these primitives, and the decimal constructor is used to make it easy to
      express larger numbers as combinations of digits.
 
-     (Contributed by David A. Wheeler, 29-Jun-2016.)  (Shortened by Mario
+     (Contributed by David A. Wheeler, 29-Jun-2016.)  (Proof shortened by Mario
      Carneiro using the arithmetic algorithm in mmj2, 30-Jun-2016.) $)
   1kp2ke3k $p |- ( ; ; ; 1 0 0 0 + ; ; ; 2 0 0 0 ) = ; ; ; 3 0 0 0 $=
     ( c1 cc0 cdc c2 c3 1nn0 0nn0 deccl 2nn0 eqid 1p2e3 00id decadd ) ABCZBCZBDB
@@ -555492,7 +555291,7 @@ $)
   ${
     $d x y $.
     $( The extended nonnegative real numbers monoid is a topological monoid.
-       (Contributed by Thierry Arnoux, 26-Mar-2017.)  (Proof Shortened by
+       (Contributed by Thierry Arnoux, 26-Mar-2017.)  (Proof shortened by
        Thierry Arnoux, 21-Jun-2017.) $)
     xrge0tmd $p |- ( RR*s |`s ( 0 [,] +oo ) ) e. TopMnd $=
       ( vx vy ccnfld cmgp cfv cc0 c1 cicc co cress cpnf cv wceq clog cneg chmeo
@@ -557744,7 +557543,8 @@ $)
     esumsn.2 $e |- ( ph -> M e. V ) $.
     esumsn.3 $e |- ( ph -> B e. ( 0 [,] +oo ) ) $.
     $( The extended sum of a singleton is the term.  (Contributed by Thierry
-       Arnoux, 2-Jan-2017.)  (Shortened by Thierry Arnoux, 2-May-2020.) $)
+       Arnoux, 2-Jan-2017.)  (Proof shortened by Thierry Arnoux,
+       2-May-2020.) $)
     esumsn $p |- ( ph -> sum* k e. { M } A = B ) $=
       ( nfcv esumsnf ) ABCDEFDCJGHIK $.
   $}
@@ -559185,7 +558985,8 @@ $)
       JEBFPABHLQRZBTUGBSFUIUKUABUFUBABUHUCUDUE $.
 
     $( A sigma-algebra contains its universe set.  (Contributed by Thierry
-       Arnoux, 13-Feb-2017.)  (Shortened by Thierry Arnoux, 6-Jun-2017.) $)
+       Arnoux, 13-Feb-2017.)  (Proof shortened by Thierry Arnoux,
+       6-Jun-2017.) $)
     unielsiga $p |- ( S e. U. ran sigAlgebra -> U. S e. S ) $=
       ( csiga crn cuni wcel cfv sgon baselsiga syl ) ABCDEAADZBFEJAEAGJAHI $.
   $}
@@ -561301,17 +561102,16 @@ $)
     mbfmcst $p |- ( ph -> F e. ( S MblFnM T ) ) $=
       ( vy wcel cuni ccnv cima adantr syl c0 cxp cdm cmbfm co cmap cv wf fmpt3d
       wral csiga crn unielsiga elmapd mpbird cmpt csn cin wceq fconstmpt cnveqi
-      cres cnvxp eqtr3i imaeq1i df-ima df-rn 3eqtri cvv df-res inxp inv1 xpeq2i
-      dmeqi xpeq2 xp0 eqtrdi dmeqd dm0 adantl 0elsiga eqeltrd eqeltrid wne dmxp
-      wa pm2.61dane ralrimivw cnveqd imaeq1d eleq1d ralbidv ismbfm mpbir2and )
-      AFDEUAUBLFEMZDMZUCUBLZFNZKUDZOZDLZKEUGZAWNWMWLFUEABWMCWLFIACWLLBUDWMLJPUF
-      AWLWMFEDAEUHUIMZLWLELHEUJQADWTLZWMDLZGDUJQZUKULAWSBWMCUMZNZWPOZDLZKEUGAXG
-      KEAXGCUNZWPUOZRAXIRUPZWCZXFWMXISZTZDXFXHWMSZWPUSZNZTZXIWMSZNZTXMXFXNWPOXO
-      UIXQXEXNWPWMXHSZNXEXNXTXDBWMCUQURWMXHUTVAVBXNWPVCXOVDVEXPXSXOXRXOXNWPVFSU
-      OXIWMVFUOZSXRXNWPVGXHWMWPVFVHYAWMXIWMVIVJVEURVKXSXLXIWMUTVKVEZXKXMRDXJXMR
-      UPAXJXMRTRXJXLRXJXLWMRSRXIRWMVLWMVMVNVOVPVNVQARDLZXJAXAYCGDVRQPVSVTAXIRWA
-      ZWCZXFXMDYBYEXMWMDYDXMWMUPAWMXIWBVQAXBYDXCPVSVTWDWEAWRXGKEAWQXFDAWOXEWPAF
-      XDIWFWGWHWIULAKDEFGHWJWK $.
+      wa cres cnvxp eqtr3i imaeq1i df-ima df-rn 3eqtri xpres dmeqi xpeq2 eqtrdi
+      xp0 dmeqd dm0 adantl 0elsiga eqeltrd eqeltrid pm2.61dane ralrimivw cnveqd
+      wne dmxp imaeq1d eleq1d ralbidv ismbfm mpbir2and ) AFDEUAUBLFEMZDMZUCUBLZ
+      FNZKUDZOZDLZKEUGZAWJWIWHFUEABWICWHFIACWHLBUDWILJPUFAWHWIFEDAEUHUIMZLWHELH
+      EUJQADWPLZWIDLZGDUJQZUKULAWOBWICUMZNZWLOZDLZKEUGAXCKEAXCCUNZWLUOZRAXERUPZ
+      USZXBWIXESZTZDXBXDWISZWLUTZNZTZXEWISZNZTXIXBXJWLOXKUIXMXAXJWLWIXDSZNXAXJX
+      PWTBWICUQURWIXDVAVBVCXJWLVDXKVEVFXLXOXKXNXDWIWLVGURVHXOXHXEWIVAVHVFZXGXIR
+      DXFXIRUPAXFXIRTRXFXHRXFXHWIRSRXERWIVIWIVKVJVLVMVJVNARDLZXFAWQXRGDVOQPVPVQ
+      AXERWAZUSZXBXIDXQXTXIWIDXSXIWIUPAWIXEWBVNAWRXSWSPVPVQVRVSAWNXCKEAWMXBDAWK
+      XAWLAFWTIVTWCWDWEULAKDEFGHWFWG $.
   $}
 
   ${
@@ -565947,18 +565747,17 @@ $)
        by Thierry Arnoux, 16-Jan-2017.)  (Revised by Thierry Arnoux,
        30-Jan-2017.) $)
     0rrv $p |- ( ph -> ( x e. U. dom P |-> 0 ) e. ( rRndVar ` P ) ) $=
-      ( vy cdm cuni cc0 wcel cr ccnv cima cbrsiga wral cin wceq cxp 3eqtri cvv
-      c0 cmpt crrv cfv wf cv 0re rgenw eqid fmpt mpbi a1i csn wa cres fconstmpt
-      crn cnveqi cnvxp eqtr3i imaeq1i df-ima df-rn df-res inxp inv1 dmeqi xpeq2
-      xpeq2i xp0 eqtrdi dmeqd adantl cprb csiga domprobsiga 0elsiga 3syl adantr
-      dm0 eqeltrd eqeltrid dmxp unveldomd pm2.61dane ralrimivw isrrvv mpbir2and
-      wne ) ABCFZGZHUAZCUBUCIWJJWKUDZWKKZEUEZLZWIIZEMNWLAHJIZBWJNWLWQBWJUFUGBWJ
-      JHWKWKUHUIUJUKAWPEMAWPHULZWNOZTAWSTPZUMZWOWJWSQZFZWIWOWRWJQZWNUNZKZFZWSWJ
-      QZKZFXCWOXDWNLXEUPXGWMXDWNWJWRQZKWMXDXJWKBWJHUOUQWJWRURUSUTXDWNVAXEVBRXFX
-      IXEXHXEXDWNSQOWSWJSOZQXHXDWNVCWRWJWNSVDXKWJWSWJVEVHRUQVFXIXBWSWJURVFRZXAX
-      CTWIWTXCTPAWTXCTFTWTXBTWTXBWJTQTWSTWJVGWJVIVJVKVSVJVLATWIIZWTACVMIWIVNUPG
-      IXMDCVOWIVPVQVRVTWAAWSTWHZUMZWOXCWIXLXOXCWJWIXNXCWJPAWJWSWBVLAWJWIIXNACDW
-      CVRVTWAWDWEAECWKDWFWG $.
+      ( vy cdm cuni cc0 wcel cr ccnv cima cbrsiga wral c0 wceq cxp crn cnveqi
+      wa cmpt crrv cfv wf 0re rgenw eqid fmpt mpbi a1i csn cres fconstmpt cnvxp
+      cin eqtr3i imaeq1i df-ima df-rn 3eqtri xpres dmeqi xpeq2 xp0 eqtrdi dmeqd
+      cv dm0 adantl cprb csiga domprobsiga 0elsiga 3syl adantr eqeltrd eqeltrid
+      wne dmxp unveldomd pm2.61dane ralrimivw isrrvv mpbir2and ) ABCFZGZHUAZCUB
+      UCIWFJWGUDZWGKZEVGZLZWEIZEMNWHAHJIZBWFNWHWMBWFUEUFBWFJHWGWGUGUHUIUJAWLEMA
+      WLHUKZWJUOZOAWOOPZTZWKWFWOQZFZWEWKWNWFQZWJULZKZFZWOWFQZKZFWSWKWTWJLXARXCW
+      IWTWJWFWNQZKWIWTXFWGBWFHUMSWFWNUNUPUQWTWJURXAUSUTXBXEXAXDWNWFWJVASVBXEWRW
+      OWFUNVBUTZWQWSOWEWPWSOPAWPWSOFOWPWROWPWRWFOQOWOOWFVCWFVDVEVFVHVEVIAOWEIZW
+      PACVJIWEVKRGIXHDCVLWEVMVNVOVPVQAWOOVRZTZWKWSWEXGXJWSWFWEXIWSWFPAWFWOVSVIA
+      WFWEIXIACDVTVOVPVQWAWBAECWGDWCWD $.
   $}
 
   ${
@@ -596450,51 +596249,6 @@ $)
   $}
 
   ${
-    $d A x $.  $d V x $.
-    onprcr.1 $e |- A = { x e. V | Ord x } $.
-    onprcr.2 $e |- Tr A $.
-    $( Relative version of ~ onprc .  (Contributed by Adrian Ducourtial,
-       15-Oct-2026.) $)
-    onprcr $p |- -. A e. V $=
-      ( wcel word wn wtr cep wwe con0 wss crab cab rabssab df-on 3sstr4i epweon
-      cv wess mp2 df-ord mpbir2an ordirr ax-mp ordeq elrab3 mpbiri eleqtrrdi
-      mto ) BCFZBBFZBGZUMHUNBIBJKZEBLMLJKUOATZGZACNZUQAOBLUQACPDAQRSBLJUAUBBUCU
-      DZBUEUFULBURBULBURFUNUSUQUNABCUPBUGUHUIDUJUK $.
-    $( $j usage 'onprcr' avoids 'ax-reg'; $)
-  $}
-
-  $( Alternate proof of ~ onprc from ~ onprcr .  (Contributed by Adrian
-     Ducourtial, 15-Oct-2026.)  (Proof modification is discouraged.)
-     (New usage is discouraged.) $)
-  onprcALT $p |- -. On e. _V $=
-    ( vx con0 cvv cv word cab crab df-on rabab eqtr4i tron onprcr ) ABCBADEZAFM
-    ACGAHMAIJKL $.
-
-  ${
-    $d A x $.  $d V x $.
-    cardprcr.1 $e |- A = { x e. V | ( card ` x ) = x } $.
-    cardprcr.2 $e |- ( A e. V -> ( har ` U. A ) e. V ) $.
-    $( Relative version of ~ cardprc .  (Contributed by Adrian Ducourtial,
-       15-Oct-2026.) $)
-    cardprcr $p |- -. A e. V $=
-      ( wcel cuni char cfv cdom wbr harndom cvv wss uniexg ccrd wceq harcard cv
-      fveq2 id eqeq12d elrab2 sylanblrc elssuni syl ssdomg sylc mto ) BCFZBGZHI
-      ZUKJKZUKLUJUKMFULUKNZUMBCOUJULBFZUNUJULCFULPIZULQZUOEUKRASZPIZURQUQAULCBU
-      RULQZUSUPURULURULPTUTUAUBDUCUDULBUEUFULUKMUGUHUI $.
-  $}
-
-  ${
-    $d x y $.
-    $( Alternate proof of ~ cardprc from ~ cardprcr .  (Contributed by Adrian
-       Ducourtial, 15-Oct-2026.)  (Proof modification is discouraged.)
-       (New usage is discouraged.) $)
-    cardprcALT $p |- { x | ( card ` x ) = x } e/ _V $=
-      ( vy cv ccrd cfv wceq cab crab rabab fveq2 id eqeq12d cbvrabv eqtr3i wcel
-      cvv cuni char fvexd cardprcr nelir ) ACZDEZUBFZAGZPBUEPUDAPHUEBCZDEZUFFZB
-      PHUDAIUDUHABPUBUFFZUCUGUBUFUBUFDJUIKLMNUEPOUEQRSTUA $.
-  $}
-
-  ${
     $d A x y $.
     $( A class has an element just in case it has a proper subset.
        (Contributed by Adrian Ducourtial, 26-Oct-2026.) $)
@@ -618299,19 +618053,61 @@ $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
   Some shortenings and proof modifications that allow the following
-  re-structuring of sections:
+  (still tentative) restructuring of sections:
 
   2.3.10. Cartesian product
   2.3.11. Relations
   2.3.11.1. Restriction
   2.3.11.2. Relations
-  2.3.11.3. Domain
-  2.3.11.4. Converse
-  2.3.11.5. Range
-  2.3.11.6. Image
-  2.3.11.7. Composition
+  2.3.11.3. Cartesian product (cont.)
+  2.3.12. Relations: domain, converse, range, image, and composition
+  2.3.12.1. Domain
+  2.3.12.2. Converse
+  2.3.12.3. Range
+  2.3.12.4. Cartesian product (cont.)
+  2.3.12.5. Image
+  2.3.12.6. Composition
 
 $)
+
+  ${
+    $d A x y z $.  $d B x y z $.  $d V x y z $.  $d W x y z $.
+    $( Variant of ~ ssrel where the antecedent is more versatile than ` Rel A `
+       (the proof is shorter than that of ~ ssrel , which can be proved from
+       this one using ~ sylbi and ~ df-rel , and of ~ ssrel2 , which uses
+       restricted quantifiers).  (Contributed by BJ, 7-Nov-2026.) $)
+    bj-ssrel $p |- ( A C_ ( V X. W ) ->
+         ( A C_ B <-> A. x A. y ( <. x , y >. e. A -> <. x , y >. e. B ) ) ) $=
+      ( vz cxp wss cv cop wcel wi wal ssel alrimivv wa wceq wex eleq1 wb adantr
+      elxpi syl6 imbi12d biimprcd 2alimi 19.23vv sylib pm2.43d ssrdv ex impbid2
+      sylan9 ) CEFHZIZCDIZAJZBJZKZCLZUTDLZMZBNANZUQVCABCDUTOPUPVDUQUPVDQZGCDVEG
+      JZCLZVFDLZUPVGVFUTRZURELUSFLQZQZBSASZVDVGVHMZUPVGVFUOLVLCUOVFOABVFEFUCUDV
+      DVKVMMZBNANVLVMMVCVNABVKVMVCVIVMVCUAVJVIVGVAVHVBVFUTCTVFUTDTUEUBUFUGVKVMA
+      BUHUIUNUJUKULUM $.
+  $}
+
+  ${
+    $d A x y z $.  $d B x y z $.  $d C x y z $.  $d D x y z $.
+    $( Alternate proof of ~ inxp not depending on ~ df-rel .  The main proof
+       ~ inxp is shorter because it benefits from the efficient machinery
+       developed for relations: one shows that a class is a relation using
+       theorems like ~ relxp , ~ relinxp , ~ relin1 , ~ relres , and then uses
+       the generic properties of relations, in particular ordered-pair
+       extensionality ~ eqrelriiv .  This illustrates the fact that the
+       definitions of Cartesian product ~ df-xp , restriction ~ df-res , and
+       relation ~ df-rel are closely intertwined.  Note however that one could
+       use a variant of ~ eqrelriiv not using the ` Rel ` predicate, as in
+       ~ bj-ssrel .  (Contributed by BJ, 24-Oct-2026.)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
+    bj-inxpALT $p |- ( ( A X. B ) i^i ( C X. D ) ) =
+                  ( ( A i^i C ) X. ( B i^i D ) ) $=
+      ( vz vx vy cxp cin cv cop wcel wa wex elin bitrdi anbi12i opelxp 3bitr4ri
+      cvv wceq eleq1 an4 copsex2gb elxp xpss elinel1 sselid pm4.71ri eqriv ) EA
+      BHZCDHZIZACIZBDIZHZEJZFJZGJZKZUAZURUNLZUSUOLZMZMGNFNUQTTHZLZUQUMLZMUQUPLV
+      GVGVDFGUQVAVGUTUKLZUTULLZMZVDVAVGUTUMLVJUQUTUMUBUTUKULOPURALZURCLZMZUSBLZ
+      USDLZMZMVKVNMZVLVOMZMVDVJVKVLVNVOUCVBVMVCVPURACOUSBDOQVHVQVIVRURUSABRURUS
+      CDRQSPUDFGUQUNUOUEVGVFVGUKVEUQABUFUQUKULUGUHUISUJ $.
+  $}
 
   ${
     $d x y A $.  $d x y B $.  $d x y C $.  $d x y R $.
@@ -618337,11 +618133,59 @@ $)
     ( wss cres ssres resabs2 sseq1d imbitrid id resss sstrdi impbid1 ) CDEZACFZ
     BEZPBDFZEZQPDFZREOSPBDGOTPRACDHIJSPRBSKBDLMN $.
 
+  $( A restricted class is included in a class if and only if it is included in
+     that class restricted to the same restricting class.  (Contributed by BJ,
+     25-Oct-2026.) $)
+  resssres0 $p |- ( ( A |` X ) C_ B <-> ( A |` X ) C_ ( B |` X ) ) $=
+    ( wss cres wb ssid resssres ax-mp ) CCDACEZBDJBCEDFCGABCCHI $.
+
+  $( The restriction of a class to a class is included in the Cartesian product
+     of the restricting class with the universal class.  (Contributed by BJ,
+     16-Oct-2026.) $)
+  resss2 $p |- ( R |` A ) C_ ( A X. _V ) $=
+    ( cres cvv cxp cin df-res inss2 eqsstri ) BACBADEZFJBAGBJHI $.
+
+  $( If two classes are related by a restricted binary relation, then the first
+     class is an element of the restricting class.  See also ~ brres and
+     ~ brrelex1 .
+
+     Remark: there are many pairs like ~ bj-opelresdm / ~ bj-brresdm , where
+     one uses membership of ordered pairs and the other, related classes (for
+     instance, ~ bj-opelresdm / ~ brrelex12 or the ~ opelopabg / ~ brabg
+     family).  They are straightforwardly equivalent by ~ df-br .  The latter
+     is indeed a very direct definition, introducing a "shorthand", and barely
+     necessary, were it not for the frequency of the expression ` A R B ` .
+     Therefore, in the spirit of "definitions are here to be used", most
+     theorems, apart from the most elementary ones, should only have the "br"
+     version, not the "opel" one.  (Contributed by BJ, 25-Dec-2023.)  (Proof
+     shortened by BJ, 24-Oct-2026.) $)
+  bj-brresdm $p |- ( A ( R |` X ) B -> A e. X ) $=
+    ( cres wbr wcel cvv resss2 brel simpld ) ABCDEZFADGBHGABDHLDCIJK $.
+
+  $( If an ordered pair is in a restricted binary relation, then its first
+     component is an element of the restricting class.  See also ~ opelres .
+     (Contributed by BJ, 25-Dec-2023.)  (Proof shortened by BJ,
+     24-Oct-2026.) $)
+  bj-opelresdm $p |- ( <. A , B >. e. ( R |` X ) -> A e. X ) $=
+    ( cop cres wcel wbr df-br bj-brresdm sylbir ) ABECDFZGABLHADGABLIABCDJK $.
+
+  $( A class is equal to its restriction to some class if and only if it is
+     included in the Cartesian product of the restricting class with the
+     universal class.  More fundamental form of ~ resssxp (or at least, more
+     entitled than it to that label).  Can shorten ~ relssres through the
+     equivalence ` |- ( ( Rel A /\ dom A C_ B ) <-> A C_ ( B X. _V ) ) ` ,
+     which could itself be added to set.mm.  (Contributed by BJ,
+     26-Oct-2026.) $)
+  bj-resssxp $p |- ( ( R |` A ) = R <-> R C_ ( A X. _V ) ) $=
+    ( cres wceq cvv cxp cin wss df-res eqeq1i dfss2 bitr4i ) BACZBDBAEFZGZBDBNH
+    MOBBAIJBNKL $.
+
   ${
     $d x y A $.  $d x y B $.  $d x y C $.
     $( Membership in a restriction.  (Contributed by Scott Fenton,
        17-Mar-2011.)  (Proof shortened by Peter Mazsa, 9-Sep-2022.)  Use the
-       ` x B y ` idiom.  (Revised by BJ, 16-Oct-2026.) $)
+       ` x B y ` idiom.  (Revised by BJ, 16-Oct-2026.)  Except for a few early
+       statements (like ~ dfres2 / ~ bj-dfres2 ), prefer ~ brres . $)
     bj-elres $p |- ( A e. ( B |` C ) <->
                                E. x e. C E. y ( A = <. x , y >. /\ x B y ) ) $=
       ( cres wcel cvv cxp cin cv cop wceq wbr wrex wex df-res eleq2i bj-elinxp
@@ -618356,19 +618200,19 @@ $)
        the class of ordered pairs whose first component is in the restricting
        class and whose components are related by the restricted class.
        (Contributed by Mario Carneiro, 5-Nov-2013.)  Do not depend on
-       ~ df-rel .  (Revised by BJ, 16-Oct-2026.) $)
+       ~ df-rel .  (Revised by BJ, 16-Oct-2026.)  This is an alternate proof of
+       ~ dfres2 ; it is slightly shorter but not necessarily a gain (it uses
+       ~ bj-elres / ~ elres , which uses ~ bj-elinxp / ~ elinxp ): ~ dfres2
+       uses that both classes are relations ( ~ relres and ~ relopab ) to be
+       able to use ordered-pair extensionality ~ eqrelriiv : the latter's proof
+       is long (considering the proofs of its parents up to ~ ssrel ), but its
+       usefulness makes it worth it. $)
     bj-dfres2 $p |- ( R |` A ) = { <. x , y >. | ( x e. A /\ x R y ) } $=
       ( vz cres cv wcel wbr wa copab cop wceq wex wrex df-rex an12 exbii 19.42v
       bitr2i bitri bj-elres elopab 3bitr4i eqriv ) EDCFZAGZCHZUGBGZDIZJZABKZEGZ
       UGUILMZUJJZBNZACOZUNUKJZBNZANZUMUFHUMULHUQUHUPJZANUTUPACPVAUSAUSUHUOJZBNV
       AURVBBUNUHUJQRUHUOBSTRUAABUMDCUBUKABUMUCUDUE $.
   $}
-
-  $( The restriction of a class to a class is included in the Cartesian product
-     of the restricting class with the universal class.  (Contributed by BJ,
-     16-Oct-2026.) $)
-  bj-resss2 $p |- ( R |` A ) C_ ( A X. _V ) $=
-    ( cres cvv cxp cin df-res inss2 eqsstri ) BACBADEZFJBAGBJHI $.
 
   ${
     $d A x y $.
@@ -618385,7 +618229,7 @@ $)
        idempotent operation ( ~ residm ) with image the collection of relations
        (by ~ relres for one inclusion and the forward implication of ~ dfrel3
        for the other).  As with any projection, a class is in its image if and
-       only if its is a fixpoint of that projection (which is precisely
+       only if it is a fixpoint of that projection (which is precisely
        ~ dfrel3 ).
 
        Other expressions giving the relation part of a class are ~ cnvcnv ,
@@ -618400,8 +618244,18 @@ $)
      14-May-2008.)  Do not depend on ~ df-cnv to move it earlier.  (Revised by
      BJ, 16-Oct-2026.) $)
   bj-dfrel3 $p |- ( Rel R <-> ( R |` _V ) = R ) $=
-    ( cvv cxp wss cin wceq wrel cres dfss2 df-rel df-res eqeq1i 3bitr4i ) ABBCZ
-    DANEZAFAGABHZAFANIAJPOAABKLM $.
+    ( wrel cvv cxp wss cres wceq df-rel bj-resssxp bitr4i ) ABACCDEACFAGAHCAIJ
+    $.
+
+  $( The coordinates of an ordered pair that belongs to a relation are sets.
+     TODO:  Slightly shorter than ~ brrelex12 , which could be proved from it.
+     The first antecedent would not be needed if using ~ df-bj-2upl , by
+     ~ bj-2uplex .  (Contributed by BJ, 27-Dec-2023.)  Do not depend on
+     ~ brrelex12 .  (Proof modification is discouraged.) $)
+  bj-opelrelex $p |-
+                 ( ( Rel R /\ <. A , B >. e. R ) -> ( A e. _V /\ B e. _V ) ) $=
+    ( wrel cop wcel wa cvv cxp wss df-rel biimpi sselda opelxp sylib ) CDZABEZC
+    FGQHHIZFAHFBHFGPCRQPCRJCKLMABHHNO $.
 
   $( A relation is included in a class if and only if it is included in its
      "relation part" (see ~ relpart ).  (Contributed by BJ, 16-Oct-2026.) $)
@@ -618437,7 +618291,8 @@ $)
     $( The double converse of a class equals its restriction to the universe.
        (Contributed by NM, 8-Oct-2007.)  Do not depend on ~ cnvcnv in order to
        prove it from ~ cnvcnv2 .  (Revised by BJ, 16-Oct-2026.)  Do not depend
-       on ~ cnvcnv .  (Proof modification is discouraged.) $)
+       on ~ cnvcnv ; do not use ~ cnvcnv2 .
+       (Proof modification is discouraged.) $)
     bj-cnvcnv2 $p |- `' `' A = ( A |` _V ) $=
       ( vx vy ccnv cv wbr copab cvv cres cnvcnv3 relpart eqtr4i ) ADDBECEAFBCGA
       HIBCAJBCAKL $.
@@ -618445,10 +618300,41 @@ $)
 
   $( The double converse of a class strips out all elements that are not
      ordered pairs.  (Contributed by NM, 8-Dec-2003.)  (Proof shortened by BJ,
-     26-Nov-2021.)  (Proof shortened by BJ, 16-Oct-2026.)  Prefer use of
-     ~ bj-cnvcnv2 .  (Proof modification is discouraged.) $)
+     26-Nov-2021.)  (Proof shortened by BJ, 16-Oct-2026.)  Do not use
+     ~ cnvcnv .  (Proof modification is discouraged.)  Use ~ cnvcnv2 instead.
+     (New usage is discouraged.) $)
   bj-cnvcnv $p |- `' `' A = ( A i^i ( _V X. _V ) ) $=
     ( ccnv cvv cres cxp cin bj-cnvcnv2 df-res eqtri ) ABBACDACCEFAGACHI $.
+
+  $( Biconditional form of ~ relssdmrn , to replace it.  (Contributed by BJ,
+     8-Nov-2026.)  TODO: prove ~ dfres3 from it. $)
+  relssdmrnb $p |- ( Rel A <-> A C_ ( dom A X. ran A ) ) $=
+    ( wrel cdm crn cxp wss relssdmrn cvv id xpss sstrdi df-rel sylibr impbii )
+    ABZAACZADZEZFZAGSAHHEZFOSARTSIPQJKALMN $.
+
+  $( Biconditional form of ~ relssres , to replace it.  (Contributed by BJ,
+     8-Nov-2026.) $)
+  relssresb $p |- ( ( Rel A /\ dom A C_ B ) <-> ( A |` B ) = A ) $=
+    ( wrel cdm wss wa cvv cxp cres wceq crn relssdmrnb simpl ssv xpss12 sylancl
+    simpr sstrd sylanb sstrdi df-rel sylibr dmxpss jca impbii bj-resssxp bitr4i
+    id xpss dmss ) ACZADZBEZFZABGHZEZABIAJUNUPUKAULAKZHZEZUMUPALUSUMFZAURUOUSUM
+    MUTUMUQGEURUOEUSUMQUQNULBUQGOPRSUPUKUMUPAGGHZEUKUPAUOVAUPUHBGUITAUAUBUPULUO
+    DBAUOUJBGUCTUDUEBAUFUG $.
+
+  $( Biconditional form of ~ resdm , to replace it.  (Contributed by BJ,
+     8-Nov-2026.)  TODO: this is ~ dfrel5 : move to main section and update
+     credits. $)
+  resdmb $p |- ( Rel A <-> ( A |` dom A ) = A ) $=
+    ( wrel cdm wss wa cres wceq ssid biantru relssresb bitri ) ABZLACZMDZEAMFAG
+    NLMHIAMJK $.
+
+  $( Duplicate of ~ cnvresrn , to be moved to the main section.  The converse
+     restricted to the range is equal to the converse.  Analogue of ~ resdmb
+     since a converse is always a relation ( ~ relcnv ).  (Contributed by Peter
+     Mazsa, 3-Sep-2021.)  Can shorten ~ domss2 . $)
+  bj-cnvresrn $p |- ( `' R |` ran R ) = `' R $=
+    ( ccnv crn cres cdm df-rn reseq2i wrel wceq relcnv resdmb mpbi eqtri ) ABZA
+    CZDNNEZDZNOPNAFGNHQNIAJNKLM $.
 
   ${
     $d A x y $.  $d B x y z $.  $d C x y z $.
@@ -618462,20 +618348,397 @@ $)
   ${
     $d A x y z $.
     $( Precomposing with the identity is the same as taking the relation part
-       of a class.  (Contributed by BJ, 16-Aug-2026.) $)
+       of a class.  See also ~ coires1 .  (Contributed by BJ, 16-Aug-2026.) $)
     coi1res $p |- ( A o. _I ) = ( A |` _V ) $=
       ( vx vz vy cv cid wbr wex copab ccom cvv cres weq vex equcom bitri anbi1i
       wa ideq exbii breq1 equsexvw opabbii df-co relpart 3eqtr4i ) BEZCEZFGZUHD
       EZAGZRZCHZBDIUGUJAGZBDIAFJAKLUMUNBDUMCBMZUKRZCHUNULUPCUIUOUKUIBCMUOUGUHCN
       SBCOPQTUKUNCBUHUGUJAUAUBPUCBDCAFUDBDAUEUF $.
+
+    $( Postcomposing with the identity is the same as taking the relation part
+       of a class.  See also ~ coi1res and ~ coires2 .  (Contributed by BJ,
+       8-Nov-2026.) $)
+    coi2res $p |- ( _I o. A ) = ( A |` _V ) $=
+      ( vx vz vy cv wbr cid wa wex copab ccom cvv cres weq vex ideq ancom bitri
+      anbi2i exbii breq2 equsexvw opabbii df-co relpart 3eqtr4i ) BEZCEZAFZUHDE
+      ZGFZHZCIZBDJUGUJAFZBDJGAKALMUMUNBDUMCDNZUIHZCIUNULUPCULUIUOHUPUKUOUIUHUJD
+      OPSUIUOQRTUIUNCDUHUJUGAUAUBRUCBDCGAUDBDAUEUF $.
   $}
+
+  $( Precomposing with the identity yields a subclass.  (Contributed by BJ,
+     8-Nov-2026.)  Can shorten ~ mvdco . $)
+  coi1ss $p |- ( A o. _I ) C_ A $=
+    ( cid ccom cvv cres coi1res resss eqsstri ) ABCADEAAFADGH $.
+
+  $( Postcomposing with the identity yields a subclass.  (Contributed by BJ,
+     8-Nov-2026.) $)
+  coi2ss $p |- ( _I o. A ) C_ A $=
+    ( cid ccom cvv cres coi2res resss eqsstri ) BACADEAAFADGH $.
 
   $( The identity relation is a right-unit for composition.  Part of Theorem
      3.7(i) of [Monk1] p. 36.  (Contributed by NM, 22-Apr-2004.)  Strengthen to
-     biconditional form and shorten (Revised by BJ, 16-Oct-2026.) $)
+     biconditional form and shorten.  (Revised by BJ, 16-Oct-2026.) $)
   bj-coi1 $p |- ( Rel A <-> ( A o. _I ) = A ) $=
     ( wrel cvv cres wceq cid ccom bj-dfrel3 coi1res eqeq1i bitr4i ) ABACDZAEAFG
     ZAEAHMLAAIJK $.
+
+  ${
+    $d A x y z $.  $d B x y z $.
+    $( When composing classes, restricting the second class to the range of the
+       first has no effect.  (Contributed by BJ, 22-Oct-2026.)  Note: can be
+       moved before ~ cores and shorten ~ funresfunco , ~ dprdf1 , ~ kgencn2 ,
+       ~ domss2 . $)
+    coresrn $p |- ( ( B |` ran A ) o. A ) = ( B o. A ) $=
+      ( vx vy vz cv wbr crn cres wa wex copab ccom wcel vex brelrn brresi df-co
+      wb baib syl pm5.32i exbii opabbii 3eqtr4i ) CFZDFZAGZUGEFZBAHZIZGZJZDKZCE
+      LUHUGUIBGZJZDKZCELUKAMBAMUNUQCEUMUPDUHULUOUHUGUJNZULUOSUFUGACODOPULURUOUJ
+      UGUIBEOQTUAUBUCUDCEDUKARCEDBARUE $.
+  $}
+
+  $( Postcomposition is subdistributive over intersection.  Compare with
+     ~ coundi .  See ~ coindi for equality when postcomposing with an injective
+     class.  (Contributed by BJ, 8-Nov-2026.) $)
+  coindiss $p |- ( A o. ( B i^i C ) ) C_ ( ( A o. B ) i^i ( A o. C ) ) $=
+    ( cin ccom wss inss1 coss2 ax-mp inss2 ssini ) ABCDZEZABEZACEZLBFMNFBCGLBAH
+    ILCFMOFBCJLCAHIK $.
+  $( $j usage 'coindiss' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+
+  $( Precomposition is subdistributive over intersection.  Compare with
+     ~ coundir .  See ~ coindir for equality when precomposing with a
+     single-valued class.  (Contributed by BJ, 8-Nov-2026.) $)
+  coindirss $p |- ( ( A i^i B ) o. C ) C_ ( ( A o. C ) i^i ( B o. C ) ) $=
+    ( cin ccom wss inss1 coss1 ax-mp inss2 ssini ) ABDZCEZACEZBCEZLAFMNFABGLACH
+    ILBFMOFABJLBCHIK $.
+  $( $j usage 'coindirss' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+
+  ${
+    $d A x y z $.  $d B x y z $.  $d C x y z $.
+    $( A strong modular law for the composition of relations.  The modular law
+       is an axiom defining allegories.  (Contributed by BJ, 7-Nov-2026.) $)
+    comodular $p |- ( ( A o. B ) i^i C ) C_
+                      ( ( A i^i ( C o. `' B ) ) o. ( B i^i ( `' A o. C ) ) ) $=
+      ( vx vy vz ccom cin ccnv wrel cv wbr wcel wa brin vex brcnv brcoi syl2anc
+      sylibr relco relin1 ax-mp cop wex simprl simpl simprr sylanbrc ex exlimdv
+      brco biimtrid impcom sylbi df-br 3imtr3i relssi ) DEABGZCHZACBIZGZHZBAIZC
+      GZHZGZUSJUTJABUAUSCUBUCDKZEKZUTLZVHVIVGLZVHVIUDZUTMVLVGMVJVHVIUSLZVHVICLZ
+      NVKVHVIUSCOVNVMVKVMVHFKZBLZVOVIALZNZFUEVNVKFVHVIABDPZEPZULVNVRVKFVNVRVKVN
+      VRNZVHVOVFLZVOVIVCLZVKWAVPVHVOVELZWBVNVPVQUFZWAVNVIVOVDLZWDVNVRUGZWAVQWFV
+      NVPVQUHZVIVOAVTFPZQTCVDVHVIVOVSVTWIRSVHVOBVEOUIWAVQVOVIVBLZWCWHWAVOVHVALZ
+      VNWJWAVPWKWEVOVHBWIVSQTWGVACVOVHVIWIVSVTRSVOVIAVBOUIVFVCVHVOVIVSWIVTRSUJU
+      KUMUNUOVHVIUTUPVHVIVGUPUQUR $.
+    $( $j usage 'comodular' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+  $}
+
+  $( A composition ` ( A o. B ) ` is disjoint from a class ` C ` if and only if
+     ` B ` is disjoint from ` ( ``' A o. C ) ` .  This is a form of the
+     Schroeder rule that does not use complements.  See also ~ coeq0 .
+     (Contributed by BJ, 8-Nov-2026.) $)
+  coineq0 $p |-
+            ( ( ( A o. B ) i^i C ) = (/) <-> ( B i^i ( `' A o. C ) ) = (/) ) $=
+    ( ccom cin c0 wceq ccnv incom cocnvcnv1 ineq2i eqtrid coeq2 co02 eqtrdi wss
+    comodular sseq0 mpan syl eqtri id impbii ) ABDZCEZFGZBAHZCDZEZFGZUFUIUHBEZF
+    BUHIUFCUGHBDZEZFGZUKFGZUFUMUEFUMCUDEUEULUDCABJKCUDIUAUFUBLUNUGBCHDEZUMDZFGZ
+    UOUNUQUPFDFUMFUPMUPNOUKUQPURUOUGCBQUKUQRSTTLUJACBHDEZUIDZFGZUFUJUTUSFDFUIFU
+    SMUSNOUEUTPVAUFABCQUEUTRSTUC $.
+  $( $j usage 'coineq0' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+
+  ${
+    $d A x y z $.  $d B x y z $.
+    $( Characterizing when the composition of two classes is included in the
+       identity relation.  The instance where the two classes are equal gives a
+       characterization of sub-involutivity (see ~ nvo ).  (Contributed by BJ,
+       22-Oct-2026.) $)
+    bj-cossid $p |- ( ( B o. A ) C_ _I <->
+                            A. x A. y A. z ( ( x A y /\ y B z ) -> x = z ) ) $=
+      ( ccom cid wss cv wbr wa wi wal weq cotrg vex ideq imbi2i 3albii bitri )
+      EDFGHAIZBIZDJUBCIZEJKZUAUCGJZLZCMBMAMUDACNZLZCMBMAMABCEDGOUFUHABCUEUGUDUA
+      UCCPQRST $.
+  $}
+
+  ${
+    $d A x y z $.  $d B x y z $.  $d C x y z $.
+    $( Characterizing when the composition of a converse with a class is
+       included in another.  (Contributed by BJ, 22-Oct-2026.) $)
+    cocnv1ss $p |- ( ( `' B o. A ) C_ C <->
+                            A. x A. y A. z ( ( x A y /\ z B y ) -> x C z ) ) $=
+      ( ccnv ccom wss cv wbr wa wi wal cotrg vex brcnv anbi2i imbi1i 3albii
+      bitri ) EGZDHFIAJZBJZDKZUDCJZUBKZLZUCUFFKZMZCNBNANUEUFUDEKZLZUIMZCNBNANAB
+      CUBDFOUJUMABCUHULUIUGUKUEUDUFEBPCPQRSTUA $.
+  $}
+
+  ${
+    $d A x y z $.  $d B x y z $.
+    $( Characterizing when the composition of a converse with a class is
+       included in the identity relation.  The instance where the two classes
+       are equal gives a characterization of injectivity (see ~ df-f1 ).
+       (Contributed by BJ, 22-Oct-2026.) $)
+    cocnv1ssid $p |- ( ( `' B o. A ) C_ _I <->
+                            A. x A. y A. z ( ( x A y /\ z B y ) -> x = z ) ) $=
+      ( ccnv ccom cid wss cv wbr wa wi wal weq cocnv1ss vex ideq imbi2i 3albii
+      bitri ) EFDGHIAJZBJZDKCJZUCEKLZUBUDHKZMZCNBNANUEACOZMZCNBNANABCDEHPUGUIAB
+      CUFUHUEUBUDCQRSTUA $.
+  $}
+
+  ${
+    cocnv1ssidim.1 $e |- X e. _V $.
+    cocnv1ssidim.2 $e |- Y e. _V $.
+    cocnv1ssidim.3 $e |- Z e. _V $.
+    $( Consequence of the composition of a converse with a class being included
+       in the identity relation.  The instance where the two classes are equal
+       expresses injectivity.  (Contributed by BJ, 1-Nov-2026.) $)
+    cocnv1ssidim $p |-
+                  ( ( `' S o. R ) C_ _I -> ( ( X R Y /\ Z S Y ) -> X = Z ) ) $=
+      ( wbr wa ccnv ccom cid wss wceq brcnv brcoi sylan2br ssbr ideq imbitrdi
+      syl5 ) CDAIZEDBIZJCEBKZALZIZUFMNZCEOZUDUCDEUEIUGDEBGHPAUECDEFGHQRUHUGCEMI
+      UIUFMCESCEHTUAUB $.
+    $( $j usage 'cocnv1ssidim' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+  $}
+
+  ${
+    $d A x y z $.  $d B x y z $.  $d C x y z $.
+    $( Characterizing when the composition of a class with a converse is
+       included in another.  (Contributed by BJ, 22-Oct-2026.) $)
+    cocnv2ss $p |- ( ( B o. `' A ) C_ C <->
+                            A. x A. y A. z ( ( y A x /\ y B z ) -> x C z ) ) $=
+      ( ccnv ccom wss cv wbr wa wi wal cotrg vex brcnv anbi1i imbi1i 3albii
+      bitri ) EDGZHFIAJZBJZUBKZUDCJZEKZLZUCUFFKZMZCNBNANUDUCDKZUGLZUIMZCNBNANAB
+      CEUBFOUJUMABCUHULUIUEUKUGUCUDDAPBPQRSTUA $.
+  $}
+
+  ${
+    $d A x y z $.  $d B x y z $.
+    $( Characterizing when the composition of a class with a converse is
+       included in the identity relation.  The instance where the two classes
+       are equal gives a characterization of single-valuedness (that is, for a
+       relation to be a function, see ~ df-fun ).  (Contributed by BJ,
+       22-Oct-2026.) $)
+    cocnv2ssid $p |- ( ( B o. `' A ) C_ _I <->
+                            A. x A. y A. z ( ( y A x /\ y B z ) -> x = z ) ) $=
+      ( ccnv ccom cid wss cv wbr wa wi wal weq cocnv2ss vex ideq imbi2i 3albii
+      bitri ) EDFGHIBJZAJZDKUBCJZEKLZUCUDHKZMZCNBNANUEACOZMZCNBNANABCDEHPUGUIAB
+      CUFUHUEUCUDCQRSTUA $.
+  $}
+
+  ${
+    cocnv2ssidim.1 $e |- X e. _V $.
+    cocnv2ssidim.2 $e |- Y e. _V $.
+    cocnv2ssidim.3 $e |- Z e. _V $.
+    $( Consequence of the composition of a class with a converse being included
+       in the identity relation.  The instance where the two classes are equal
+       expresses single-valuedness.  (Contributed by BJ, 24-Oct-2026.)  Note:
+       can shorten ~ fununiq . $)
+    cocnv2ssidim $p |-
+                  ( ( S o. `' R ) C_ _I -> ( ( X R Y /\ X S Z ) -> Y = Z ) ) $=
+      ( wbr wa ccnv ccom cid wss wceq brcnv brcoi sylanbr ssbr ideq imbitrdi
+      syl5 ) CDAIZCEBIZJDEBAKZLZIZUFMNZDEOZUCDCUEIUDUGDCAGFPUEBDCEGFHQRUHUGDEMI
+      UIUFMDESDEHTUAUB $.
+    $( $j usage 'cocnv2ssidim' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+  $}
+
+  ${
+    coss1b.1 $e |- ( ph -> ( F o. `' F ) C_ _I ) $.
+    $( Precomposition with a single-valued class (see ~ cocnv2ssid ) preserves
+       and reflects the subclass relation on its range.  This is a
+       generalization of the fact that surjections are right-cancellable.
+       (Contributed by BJ, 24-Oct-2026.)  TODO: prove ~ cocanss2 from it. $)
+    coss1b $p |- ( ph ->
+         ( ( H o. F ) C_ ( K o. F ) <-> ( H |` ran F ) C_ ( K |` ran F ) ) ) $=
+      ( ccom wss crn cres ccnv coss1 coass cid cdm eqtrdi coeq2d coires1 eqtrid
+      wceq coresrn iss sylib dmcocnv2 reseq2i sseq12d imbitrid 3sstr3g impbid1
+      ) ACBFZDBFZGZCBHZIZDULIZGZUKUIBJZFZUJUPFZGAUOUIUJUPKAUQUMURUNAUQCBUPFZFZU
+      MCBUPLAUTCMULIZFUMAUSVACAUSMUSNZIZVAAUSMGUSVCSEUSUAUBVBULMBUCUDOZPCULQORA
+      URDUSFZUNDBUPLAVEDVAFUNAUSVADVDPDULQORUEUFUOUMBFUNBFUIUJUMUNBKBCTBDTUGUH
+      $.
+    $( $j usage 'coss1b' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+  $}
+
+  $( Precomposition with a single-valued class (see ~ cocnv2ssid ) distributes
+     over intersection.  (Contributed by BJ, 7-Nov-2026.) $)
+  coindir $p |- ( ( F o. `' F ) C_ _I ->
+                      ( ( A i^i B ) o. F ) = ( ( A o. F ) i^i ( B o. F ) ) ) $=
+    ( ccnv ccom cid wss cin coindirss a1i comodular coass coss2 coi1ss eqsstrid
+    sstrdi sslin syl inss1 coss12d sstrid eqssd ) CCDZEZFGZABHZCEZACEBCEZHZUGUI
+    GUEABCIJUEUIAUHUCEZHZCADUHEZHZEUGACUHKUEUKUFUMCUEUJBGUKUFGUEUJBUDEZBBCUCLUE
+    UNBFEBUDFBMBNPOUJBAQRUMCGUECULSJTUAUB $.
+  $( $j usage 'coindir' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+
+  ${
+    coss2b.1 $e |- ( ph -> ( `' F o. F ) C_ _I ) $.
+    $( Postcomposition with an injective class (see ~ cocnv1ssid ) preserves
+       and reflects the subclass relation up to corestriction to its domain.
+       This is a generalization of the fact that injections are
+       left-cancellable.  Compare with ~ coss1b .  There is no special syntax
+       for corestriction as explained in the comment of ~ df-res .
+       (Contributed by BJ, 24-Oct-2026.)  TODO: prove ~ cocanss1 from it. $)
+    coss2b $p |- ( ph -> ( ( F o. H ) C_ ( F o. K ) <->
+                  ( H i^i ( _V X. dom F ) ) C_ ( K i^i ( _V X. dom F ) ) ) ) $=
+      ( ccom wss cdm cin ccnv coss2 cid cres wceq eqtrdi coeq1d coires2 eqtr3id
+      coass cnvrescnv cvv cxp iss dmcocnv1 reseq2i sseq12d imbitrid coeq2i ssid
+      sylib cores2 ax-mp eqtr3i 3sstr3g impbid1 ) ABCFZBDFZGZCUABHZUBZIZDUTIZGZ
+      URBJZUPFZVDUQFZGAVCUPUQVDKAVEVAVFVBAVEVDBFZCFZVAVDBCSAVHLUSMZCFVAAVGVICAV
+      GLVGHZMZVIAVGLGVGVKNEVGUCUJVJUSLBUDUEOZPCUSQORAVFVGDFZVBVDBDSAVMVIDFVBAVG
+      VIDVLPDUSQORUFUGVCBVAFZBVBFZUPUQVAVBBKBCJUSMJZFZVNUPVPVABUSCTUHUSUSGZVQUP
+      NUSUIZBCUSUKULUMBDJUSMJZFZVOUQVTVBBUSDTUHVRWAUQNVSBDUSUKULUMUNUO $.
+    $( $j usage 'coss2b' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+  $}
+
+  $( Postcomposition with an injective class (see ~ cocnv1ssid ) distributes
+     over intersection.  (Contributed by BJ, 8-Nov-2026.) $)
+  coindi $p |- ( ( `' F o. F ) C_ _I ->
+                      ( F o. ( A i^i B ) ) = ( ( F o. A ) i^i ( F o. B ) ) ) $=
+    ( ccnv ccom cid wss cin coindiss a1i comodular inss1 coass coi2ss eqsstrrid
+    coss1 sstrdi sslin syl coss12d sstrid eqssd ) CDZCEZFGZCABHZEZCAECBEZHZUGUI
+    GUECABIJUEUICUHADEZHZAUCUHEZHZEUGCAUHKUEUKCUMUFUKCGUECUJLJUEULBGUMUFGUEULUD
+    BEZBUCCBMUEUNFBEBUDFBPBNQOULBARSTUAUB $.
+  $( $j usage 'coindi' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+
+  $( If ` ( B o. A ) ` is included in the identity relation, then the
+     restriction of ` B ` to the range of ` A ` is included in the converse of
+     ` A ` .  (Contributed by BJ, 8-Nov-2026.) $)
+  cossidres1 $p |- ( ( B o. A ) C_ _I -> ( B |` ran A ) C_ `' A ) $=
+    ( ccom cid wss crn cres ccnv idresrnsscocnv2 coss2 ax-mp coass coss1 coi2ss
+    coires1 sstrdi eqsstrrid sstrid ) BACZDEZBAFZGBDUAGZCZAHZBUAOTUCBAUDCZCZUDU
+    BUEEUCUFEAIUBUEBJKTUFSUDCZUDBAUDLTUGDUDCUDSDUDMUDNPQRQ $.
+  $( $j usage 'cossidres1' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+
+  $( If ` ( B o. A ) ` is included in the identity relation, then the
+     restriction of the converse of ` A ` to the domain of ` B ` is included in
+     ` B ` .  (Contributed by BJ, 8-Nov-2026.) $)
+  cossidres2 $p |- ( ( B o. A ) C_ _I -> ( `' A |` dom B ) C_ B ) $=
+    ( ccom cid wss ccnv cdm cres crn dfdm4 cnvco cnvss cnvi sseqtrdi cossidres1
+    reseq2i eqsstrrid syl cnvcnvss sstrdi eqsstrid ) BACZDEZAFZBGZHUDBFZIZHZBUE
+    UGUDBJPUCUHUFFZBUCUDUFCZDEUHUIEUCUJUBFZDBAKUCUKDFDUBDLMNQUFUDORBSTUA $.
+  $( $j usage 'cossidres2' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+
+  $( Two-class version of ~ cossidcnvss .  (Contributed by BJ, 8-Nov-2026.) $)
+  cossidcnvss2 $p |- ( ( ( B o. A ) C_ _I /\ ran A C_ dom B ) <->
+                                      ( `' A C_ B /\ Fun ( B |` ran A ) ) ) $=
+    ( ccom cid wss crn cdm ccnv cres wfun bj-cnvresrn simpr syl simpl eqsstrrid
+    wa sstrd a1i cnvss jca ssres2 cossidres2 wrel relres resss cnvcnvss coss12d
+    cossidres1 sstrdi id df-fun sylanbrc coresrn ssres coss2 simprbi df-rn dmss
+    cocnvcnv2 eqsstrid impbii ) BACZDEZAFZBGZEZPZAHZBEZBVDIZJZPZVGVIVKVGVHVHVDI
+    ZBAKZVGVMVHVEIZBVGVFVMVOEVCVFLVDVEVHUAMVGVCVOBEVCVFNZABUBMQOVGVCVKVPVCVJUCZ
+    VJVJHZCZDEZVKVQVCBVDUDRVCVSVBDVCVJBVRAVJBEVCBVDUERVCVRVHHZAVCVJVHEVRWAEABUH
+    VJVHSMAUFUIUGVCUJQVJUKZULMTVLVCVFVLVBVJACZDABUMVLWCVJWACZDVJAUSVLWDVSDVLWAV
+    REZWDVSEVLVHVJEWEVLVHVMVJVNVLVIVMVJEVIVKNZVHBVDUNMOVHVJSMWAVRVJUOMVLVKVTVIV
+    KLVKVQVTWBUPMQOOVLVDVHGZVEAUQVLVIWGVEEWFVHBURMUTTVA $.
+  $( $j usage 'cossidcnvss2' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+
+  $( A class composed with itself is included in the identity relation and has
+     its range included in its domain if and only if its converse is included
+     in it and it is single-valued.  (Contributed by BJ, 8-Nov-2026.) $)
+  cossidcnvss $p |- ( ( ( B o. B ) C_ _I /\ ran B C_ dom B ) <->
+                                      ( `' B C_ B /\ ( B o. `' B ) C_ _I ) ) $=
+    ( ccom cid wss crn cdm wa ccnv cres bj-cnvresrn simpr ssres2 syl cossidres2
+    simpl sstrd eqsstrrid coss2 jca cocnvcnv2 cnvss df-rn dmss eqsstrid impbii
+    ) AABZCDZAEZAFZDZGZAHZADZAULBZCDZGZUKUMUOUKULULUHIZAAJUKUQULUIIZAUKUJUQURDU
+    GUJKUHUIULLMUKUGURADUGUJOZAANMPQZUKUNUFCUKUMUNUFDUTULAARMUSPSUPUGUJUPUFAULH
+    ZBZCAATUPVBUNCUPVAULDZVBUNDUPUMVCUMUOOZULAUAMVAULARMUMUOKPQUPUHULFZUIAUBUPU
+    MVEUIDVDULAUCMUDSUE $.
+  $( $j usage 'cossidcnvss' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+
+  $( If a composition is included in the identity relation, then the reverse
+     composition includes the identity relation restricted to the appropriate
+     class.  (Contributed by BJ, 7-Nov-2026.) $)
+  cossididres $p |- ( ( B o. A ) C_ _I ->
+                               ( _I |` ( dom B i^i ran A ) ) C_ ( A o. B ) ) $=
+    ( ccom cid wss cdm crn cres ccnv dmres incom eqtri idresdmsscocnv1 eqsstrri
+    cin reseq2i cossidres1 cnvss syl resss coss12d cocnvcnv1 sseqtrdi sstrid
+    a1i ) BACDEZDBFZAGZOZHZBUHHZIZUKCZABCZUJDUKFZHUMUOUIDUOUHUGOUIBUHJUHUGKLPUK
+    MNUFUMAIZIZBCUNUFULUQUKBUFUKUPEULUQEABQUKUPRSUKBEUFBUHTUEUAABUBUCUD $.
+  $( $j usage 'cossididres' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+
+  $( A composition that includes the identity relation on the relevant class
+     can be inserted in the middle of a composition.  (Contributed by BJ,
+     8-Nov-2026.) $)
+  coidmid $p |- ( ( _I |` ( dom A i^i ran D ) ) C_ ( B o. C ) ->
+                                ( A o. D ) C_ ( ( A o. B ) o. ( C o. D ) ) ) $=
+    ( cid cdm crn cin cres ccom wss coss2 coss1 syl coires1 incom reseq2i eqtri
+    coeq1i coass resindm coresrn eqtr3i 3sstr3g ) EAFZDGZHZIZBCJZKZAUHJZDJZAUIJ
+    ZDJZADJZABJZCDJJZUJUKUMKULUNKUHUIALUKUMDMNULAUFIZDJUOUKURDUKAUGIZURAUGOUSAU
+    FUEHZIURUGUTAUEUFPQAUFUARRSDAUBRUPCJZDJUNUQVAUMDABCTSUPCDTUCUD $.
+  $( $j usage 'coidmid' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+
+  $( If ` ( A o. B ) ` and ` ( C o. D ) ` are included in the identity relation
+     and ` ( B o. C ) ` includes it on ` ( dom A i^i ran D ) ` , then
+     ` ( A o. D ) ` is included in the identity relation.  (Contributed by BJ,
+     8-Nov-2026.) $)
+  cossidmid $p |- ( ( ( A o. B ) C_ _I /\ ( C o. D ) C_ _I ) ->
+       ( ( _I |` ( dom A i^i ran D ) ) C_ ( B o. C ) -> ( A o. D ) C_ _I ) ) $=
+    ( ccom cid wss cdm crn cres coidmid simpl simpr coss12d wrel wceq reli coi1
+    wa cin ax-mp sseqtrdi sylan9ssr ex ) ABEZFGZCDEZFGZSZFAHDITJBCEGZADEZFGUJUI
+    UKUEUGEZFABCDKUIULFFEZFUIUEFUGFUFUHLUFUHMNFOUMFPQFRUAUBUCUD $.
+  $( $j usage 'cossidmid' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+
+  $( When ` B ` is single-valued (see ~ cocnv2ssid ) and ` A ` is injective
+     (see ~ cocnv1ssid ) , the composition ` ( B o. A ) ` is included in the
+     identity relation if and only if ` ( A o. B ) ` includes the identity
+     relation restricted to ` ( dom B i^i ran A ) ` .  (Contributed by BJ,
+     8-Nov-2026.) $)
+  cossididresb $p |- ( ( ( B o. `' B ) C_ _I /\ ( `' A o. A ) C_ _I ) ->
+      ( ( B o. A ) C_ _I <-> ( _I |` ( dom B i^i ran A ) ) C_ ( A o. B ) ) ) $=
+    ( ccnv ccom cid wss wa cdm crn cin cossididres cnvss cnvresid cnvco 3sstr3g
+    cres cossidmid syl5 impbid2 ) BBCZDEFACZADEFGZBADEFZEBHAIJZPZABDZFZABKUGUET
+    UADZFUBUCUGUECUFCUEUHUEUFLUDMABNOBTUAAQRS $.
+  $( $j usage 'cossididresb' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+
+  $( Two ways to express "sub-involutivity" of a class, by which is meant
+     involutivity on the intersection of the domain and range (see ~ nvo3 ).
+     (Contributed by BJ, 7-Nov-2026.) $)
+  nvo $p |-
+         ( ( A o. A ) C_ _I <-> ( A o. A ) = ( _I |` ( dom A i^i ran A ) ) ) $=
+    ( ccom cid wss cdm crn cin cres wceq cxp id cossxp ssind idinxpres sseqtrdi
+    a1i cossididres eqssd resss eqsstrdi impbii ) AABZCDZUBCAEZAFZGZHZIZUCUBUGU
+    CUBCUDUEJZGUGUCUBCUIUCKUBUIDUCAALPMUDUENOAAQRUHUBUGCUHKCUFSTUA $.
+  $( $j usage 'nvo' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+
+  $( A function from a class to itself is sub-involutive if and only if it is
+     equal to its converse.  (Contributed by BJ, 8-Nov-2026.)  Can shorten
+     ~ nvocnv . $)
+  nvo2 $p |- ( B : X --> X -> ( ( B o. B ) C_ _I <-> `' B = B ) ) $=
+    ( wf ccom cid wss ccnv wceq wa crn cdm simpr simpl frn syl fdm sseqtrrd jca
+    sylib simpld cossidcnvss wrel frel dfrel2 cnvss eqsstrrd eqssd eqimssd wfun
+    ffun df-fun simprbi sylibr impbida ) BBACZAADEFZAGZAHZUOUPIZUQAUSUQAFZAUQDE
+    FZUSUPAJZAKZFZIZUTVAIZUSUPVDUOUPLUSVBBVCUSUOVBBFUOUPMZBBANOUSUOVCBHVGBBAPOQ
+    RAUAZSTZUSAUQGZUQUSAUBZVJAHUSUOVKVGBBAUCOAUDSUSUTVJUQFVIUQAUEOUFUGUOURIZUPV
+    DVLVFVEVLUTVAVLUQAUOURLUHVLAUIZVAVLUOVMUOURMBBAUJOVMVKVAAUKULORVHUMTUN $.
+  $( $j usage 'nvo2' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+
+  ${
+    nvo3.def $e |- X = ( dom A i^i ran A ) $.
+    $( A class is sub-involutive if and only if its restriction to the
+       intersection of its domain and range is a bijection of that intersection
+       onto itself and coincides with the restriction of its converse.
+       (Contributed by BJ, 8-Nov-2026.) $)
+    nvo3 $p |- ( ( A o. A ) C_ _I <->
+            ( ( A |` X ) : X -1-1-onto-> X /\ ( `' A |` X ) = ( A |` X ) ) ) $=
+      ( ccom cid wss cres ccnv wceq crn cdm a1i resss cin ssres2 ax-mp sylanbrc
+      eqsstri syl eqtri wf1o wa wfn wf wfun wrel relres inss2 cossidres1 sstrid
+      cnvss cnvcnvss sstrdi coss12d sstrd df-fun inss1 ssdmres mpbi df-fn dfdm4
+      id rnss sseqtrrdi rnresss ssind df-f ffn nvo2 mpbid nvof1o syl2anc residm
+      wb cossidres2 ssres eqsstrrid eqssd jca dmres cores2 incom reseq2i coeq1i
+      resindm coresrn simpr cnveqd coeq2d simpl f1ococnv2 eqtrd eqsstrdi impbii
+      eqtr3id ) AADZEFZBBABGZUAZAHZBGZWRIZUBZWQWSXBWQWRBUCZWRHZWRIZWSWQBBWRUDZX
+      DWQXDWRJZBFXGWQWRUEZWRKZBIZXDWQWRUFZWRXEDZEFXIXLWQABUGLWQXMWPEWQWRAXEAWRA
+      FWQABMLZWQXEWTHZAWQWRWTFZXEXOFWQWRAAJZGZWTBXQFWRXRFBAKZXQNZXQCXSXQUHRBXQA
+      OPAAUIUJZWRWTUKSAULUMUNWQVBZUOWRUPQXKWQBXSFZXKBXTXSCXSXQUQRZBAURUSLWRBUTQ
+      WQXHXTBWQXHXSXQWQXHWTJZXSWQXPXHYEFYAWRWTVCSAVAVDXHXQFWQABVELVFCVDBBWRVGQZ
+      BBWRVHSWQWRWRDZEFZXFWQYGWPEWQWRAWRAXNXNUNYBUOWQXGYHXFVNYFWRBVISVJBWRVKVLW
+      QXAWRWQXAXABGZWRWTBVMWQXAAFYIWRFWQXAWTXSGZAYCXAYJFYDBXSWTOPAAVOUJXAABVPSV
+      QWQWRWRBGZXAABVMWQXPYKXAFYAWRWTBVPSVQVRVSXCWPEBGZEXCWPWRXAHZDZYLYNWRADZWP
+      XJBFYNYOIXJBXSNBABVTBXSUQRWRABWAPYOXRADWPWRXRAWRAXQXSNZGXRBYPABXTYPCXSXQW
+      BTWCAXQWETWDAAWFTTXCYNXMYLXCYMXEWRXCXAWRWSXBWGWHWIXCWSXMYLIWSXBWJBBWRWKSW
+      LWOEBMWMWN $.
+    $( $j usage 'nvo3' avoids 'ax-10' 'ax-11' 'ax-12'; $)
+  $}
+
+  $( A class equal to its converse is a function on a class if and only if it
+     is a bijection from that class onto itself (the reverse implication holds
+     without the hypothesis, see ~ f1ofn ).  (Contributed by BJ, 8-Nov-2026.)
+     Can shorten ~ nvof1o using ~ biimpac . $)
+  nvof1ob $p |- ( `' F = F -> ( F Fn A <-> F : A -1-1-onto-> A ) ) $=
+    ( ccnv wceq wf1o wfn wa dff1o4 fneq1 anbi2d bitrid anidm bitr2di ) BCZBDZAA
+    BEZBAFZQGZQPQNAFZGORAABHOSQQANBIJKQLM $.
 
 
 $(
@@ -619957,38 +620220,6 @@ $)
       LFNLGNLOCOAHUBUAIPABCDEFGADQAEQACDRACERJST $.
   $}
 
-  $( The coordinates of an ordered pair that belongs to a relation are sets.
-     TODO:  Slightly shorter than ~ brrelex12 , which could be proved from it.
-     The first antecedent would not be needed if using ~ df-bj-2upl , by
-     ~ bj-2uplex .  (Contributed by BJ, 27-Dec-2023.) $)
-  bj-opelrelex $p |-
-                 ( ( Rel R /\ <. A , B >. e. R ) -> ( A e. _V /\ B e. _V ) ) $=
-    ( wrel cop wcel wa cvv cxp wss df-rel biimpi sselda opelxp sylib ) CDZABEZC
-    FGQHHIZFAHFBHFGPCRQPCRJCKLMABHHNO $.
-
-  $( If an ordered pair is in a restricted binary relation, then its first
-     component is an element of the restricting class.  See also ~ opelres .
-     (Contributed by BJ, 25-Dec-2023.) $)
-  bj-opelresdm $p |- ( <. A , B >. e. ( R |` X ) -> A e. X ) $=
-    ( wcel cop cvv cxp cin cres elin opelxp1 simplbiim df-res eleq2s ) ADEZABFZ
-    CDGHZIZCDJQSEQCEQREPQCRKABDGLMCDNO $.
-
-  $( If two classes are related by a restricted binary relation, then the first
-     class is an element of the restricting class.  See also ~ brres and
-     ~ brrelex1 .
-
-     Remark: there are many pairs like ~ bj-opelresdm / ~ bj-brresdm , where
-     one uses membership of ordered pairs and the other, related classes (for
-     instance, ~ bj-opelresdm / ~ brrelex12 or the ~ opelopabg / ~ brabg
-     family).  They are straightforwardly equivalent by ~ df-br .  The latter
-     is indeed a very direct definition, introducing a "shorthand", and barely
-     necessary, were it not for the frequency of the expression ` A R B ` .
-     Therefore, in the spirit of "definitions are here to be used", most
-     theorems, apart from the most elementary ones, should only have the "br"
-     version, not the "opel" one.  (Contributed by BJ, 25-Dec-2023.) $)
-  bj-brresdm $p |- ( A ( R |` X ) B -> A e. X ) $=
-    ( cres wbr cop wcel df-br bj-opelresdm sylbi ) ABCDEZFABGLHADHABLIABCDJK $.
-
   ${
     $d A x y $.  $d B x y $.
     brabd0.x $e |- ( ph -> A. x ph ) $.
@@ -620290,8 +620521,6 @@ $(
   This subsection defines a functionalized version of the identity relation,
   that can also be seen as the diagonal in a Cartesian square.
 
-  As explained in ~ df-bj-diag , it will probably be deleted.
-
 $)
 
   $( Token for the diagonal of the Cartesian square of a set. $)
@@ -620317,9 +620546,14 @@ $)
      relation on that class.  It may be useful to consider a functionalized
      version of that fact, and that is the purpose of ~ df-bj-diag .
 
-     Note: most proofs will only use its values ` ( _Id `` A ) ` , in which
+     Note:  Most proofs will only use its values ` ( _Id `` A ) ` , in which
      case it may be enough to use ` ( _I |`` A ) ` everywhere and dispense with
-     this definition.  (Contributed by BJ, 22-Jun-2019.) $)
+     this definition.  In the other direction, one can start by defining a
+     restricted identity for any class, e.g.,
+     ` |- _Id A = { <. x , y >. | ( x = y /\ x e. A ) } ` , and then, if
+     necessary, define ` |- _I = _Id _V ` and
+     ` |- ( A |`` B ) = ( A o. _Id B ) ` (see ~ coires1 ).  (Contributed by BJ,
+     22-Jun-2019.) $)
   df-bj-diag $a |- _Id = ( x e. _V |-> ( _I |` x ) ) $.
 
   ${
@@ -849010,7 +849244,7 @@ $)
   ${
     $( The identity relation restricted to the set of vertices of a graph is a
        graph isomorphism between the graph and itself.  (Contributed by AV,
-       29-Apr-2025.)  (Prove shortened by AV, 5-May-2025.) $)
+       29-Apr-2025.)  (Proof shortened by AV, 5-May-2025.) $)
     grimid $p |- ( G e. UHGraph
                    -> ( _I |` ( Vtx ` G ) ) e. ( G GraphIso G ) ) $=
       ( cuhgr wcel id cvtx cfv eqidd ciedg grimidvtxedg ) ABCZAABJDZKJAEFGJAHFG
@@ -888905,6 +889139,5 @@ $)
 
 $( (End of Kunhao Zheng's mathbox.) $)
 $( End $[ set-mbox-kz.mm $] $)
-
 
 $( End $[ set-mbox.mm $] $)
