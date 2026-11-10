@@ -427597,6 +427597,23 @@ $)
   $}
 
   ${
+    negeq0s.1 $e |- ( ph -> A e. No ) $.
+    $( A surreal is equal to its negative iff it is zero.  (Contributed by
+       Scott Fenton, 9-Nov-2026.) $)
+    negeq0s $p |- ( ph -> ( ( -us ` A ) = A <-> A = 0s ) ) $=
+      ( cnegs cfv wceq c0s cadds co wa adantl adantr clts wbr csur wn 0no wb ex
+      wcel oveq2 negsidd eqtr3d ltsirr ax-mp wne df-ne ltstrine sylancl bitr3id
+      wo a1i simpr lt2addsd addslid breqtrdi breq1 sylibd addsgt0d breq2 sylbid
+      wi jaod mt3i syldan neg0s fveq2 id 3eqtr4a impbid1 ) ABDEZBFZBGFZAVLVMAVL
+      BBHIZGFZVMAVLJBVKHIZVNGVLVPVNFAVKBBHUAKAVPGFVLABCUBLUCAVOJZVMGGMNZGOTZVRP
+      QGUDUEVQVMPZBGMNZGBMNZUKZVRVTBGUFZVQWCBGUGAWDWCRZVOABOTZVSWECQBGUHUILUJVQ
+      WAVRWBVQWAVNGMNZVRAWAWGVBVOAWAWGAWAJZVNGGHIZGMWHBBGGAWFWACLZWJVSWHQULZWKA
+      WAUMZWLUNVSWIGFQGUOUEUPSLVOWGVRRAVNGGMUQKURVQWBGVNMNZVRAWBWMVBVOAWBWMAWBJ
+      BBAWFWBCLZWNAWBUMZWOUSSLVOWMVRRAVNGGMUTKURVCVAVDVESVMGDEGVKBVFBGDVGVMVHVI
+      VJ $.
+  $}
+
+  ${
     addsubsassd.1 $e |- ( ph -> A e. No ) $.
     addsubsassd.2 $e |- ( ph -> B e. No ) $.
     addsubsassd.3 $e |- ( ph -> C e. No ) $.
