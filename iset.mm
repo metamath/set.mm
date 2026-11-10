@@ -184571,6 +184571,19 @@ $)
         CUSNOPGOKVAOKZUDUSGDBQRZOHQOOUFZPUQDOKZURBOKZVCOKUGDESZBFSZDBOOQUHUIUJV
         BOGNGNUKULUOUSCDBTRZOITVDPUQVEURVFVIOKUMVGVHDBOOTUHUIUJUNUP $.
     $}
+
+    ${
+      mplmulr.n $e |- .x. = ( .r ` Y ) $.
+      $( Value of multiplication in a polynomial ring.  (Contributed by Stefan
+         O'Rear, 21-Mar-2015.)  (Revised by Mario Carneiro, 2-Oct-2015.) $)
+      mplmulrg $p |- ( ( I e. V /\ R e. W ) -> .x. = ( .r ` S ) ) $=
+        ( wcel cmulr cfv cbs co eqid cvv wfn cmpl cmps wa cress mplval2g fveq2d
+        wceq basfn cxp fnmpl elex fnovex mp3an3an eqeltrid funfvex funfni fnpsr
+        sylancr ressmulrg syl2anc eqtr4d eqtrid ) DEKZAFKZUAZCGLMZBLMZJVCVDBGNM
+        ZUBOZLMZVEVCGVGLGABVFDEFHIVFPUCUDVCVFQKZBQKVEVHUEVCNQRGQKVIUFVCGDASOZQH
+        SQQUGZRVADQKZVBAQKZVJQKUHDEUIZAFUIZDAQQSUJUKULVIQGNGNUMUNUPVCBDATOZQITV
+        KRVAVLVBVMVPQKUOVNVODAQQTUJUKULVFBVGVEQQVGPVEPUQURUSUT $.
+    $}
   $}
 
   ${
