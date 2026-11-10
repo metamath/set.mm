@@ -184635,6 +184635,31 @@ $)
       NUEUGUFOKFUHGFUEABUFUGCUIDUJUCUDPUCUDSQUGUFUHUHMTUAUB $.
   $}
 
+  ${
+    $d k x y D $.  $d k x F $.  $d k x G $.  $d h k x y p I $.  $d k x ph $.
+    $d k x .x. $.  $d k x p R $.  $d p P $.  $d f i r w $.
+    mplmul.p $e |- P = ( I mPoly R ) $.
+    mplmul.b $e |- B = ( Base ` P ) $.
+    mplmul.m $e |- .x. = ( .r ` R ) $.
+    mplmul.t $e |- .xb = ( .r ` P ) $.
+    mplmul.d $e |- D = { h e. ( NN0 ^m I ) | ( `' h " NN ) e. Fin } $.
+    mplmul.f $e |- ( ph -> F e. B ) $.
+    mplmul.g $e |- ( ph -> G e. B ) $.
+    $( The multiplication operation on multivariate polynomials.  (Contributed
+       by Mario Carneiro, 9-Jan-2015.) $)
+    mplmul $p |- ( ph -> ( F .xb G ) = ( k e. D |->
+            ( R gsum ( x e. { y e. D | y oR <_ k } |->
+            ( ( F ` x ) .x. ( G ` ( k oF - x ) ) ) ) ) ) ) $=
+      ( vp vi vr vw vf cmps cmulr cfv cle cofr wbr crab cmin cof cmpt cgsu wcel
+      co cv wex cvv wa wceq basm syl c0g cfsupp cbs cress df-mpl elmpocl eleq2s
+      cmpl exlimiv eqid mplmulrg 3syl oveqd mplbasss sselid psrmulfval eqtrd
+      csb ) ALMHUSLMNGUGUSZUHUIZUSKEGBCUTKUTZUJUKULCEUMBUTZLUIWGWHUNUOUSMUIIUSU
+      PUQUSUPAHWFLMAUBUTZFURZUBVAZNVBURGVBURVCZHWFVDALDURWKTLDUBFPVEVFWJWLUBWLW
+      INGVNUSFUCUDVBVBUEUCUTUDUTZUGUSUEUTZUFUTWMVGUIVHULUFWNVIUIUMVJUSWDNGVNWIU
+      EUFUCUDVKVLOVMVOGWEHNVBVBFOWEVPZRVQVRVSABCWEVIUIZEGWEWFIJKLMNWOWPVPZQWFVP
+      SADWPLWPFGWEDNOWOPWQVTZTWAADWPMWRUAWAWBWC $.
+  $}
+
 
 $(
 ###############################################################################
