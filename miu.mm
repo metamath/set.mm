@@ -46,8 +46,8 @@ $(
 
   The system has three constant symbols, M, I, and U.  The sole axiom of the
   system is MI.  There are four rules:
-     Rule I:    If you possess a string whose last letter is I, you can add
-                append a U at the end.
+     Rule I:    If you possess a string whose last letter is I, you can add a U
+                at the end.
      Rule II:   Suppose you have Mx.  Then you may add Mxx to your collection.
      Rule III:  If III occurs in one of the strings in your collection, you may
                 make a new string with U in place of III.
