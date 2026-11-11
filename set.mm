@@ -743443,7 +743443,7 @@ $)
                                   ( ( Re ` C ) - ( Re ` A ) ) ) x. A ) +
                                   ( ( ( ( Re ` B ) - ( Re ` A ) ) /
                                   ( ( Re ` C ) - ( Re ` A ) ) ) x. C ) ) ) $.
-    $( The split point belongs to the complex numbers. See ~triunsplitd for a
+    $( The split point belongs to the complex numbers. See ~ triunsplitd for a
        definition of the split point.  (Contributed by Jon Pennant,
        29-Oct-2026.) $)
     trisplitptcld $p |- ( ph -> P e. CC ) $=
@@ -744058,7 +744058,7 @@ $)
     tridegdmared.4 $e |- ( ph -> ( Re ` A ) = ( Re ` B ) ) $.
     tridegdmared.5 $e |- ( ph -> ( Re ` B ) = ( Re ` C ) ) $.
     $( The Cartesian image of a vertically degenerate triangle belongs to the
-       domain of the area function.  (Contributed by Jon Pennant, 
+       domain of the area function.  (Contributed by Jon Pennant,
        29-Oct-2026.) $)
     tridegdmared $p |- ( ph -> ( c2r " ( tri ` <. A , <. B , C >. >. ) )
                                                         e. dom area ) $=
