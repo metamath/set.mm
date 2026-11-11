@@ -184680,6 +184680,16 @@ $)
       MNURVGVFVHVJVHTVJTZUSVBABDVFVJFGHVKMNJKVMUTVAVC $.
   $}
 
+  ${
+    mplring.p $e |- P = ( I mPoly R ) $.
+    $( The polynomial ring is a ring.  (Contributed by Mario Carneiro,
+       9-Jan-2015.) $)
+    mplringfi $p |- ( ( I e. Fin /\ R e. Ring ) -> P e. Ring ) $=
+      ( cfn wcel crg wa cmps co cbs cress eqid mplval2g csubrg simpl mplsubrgfi
+      cfv simpr subrgring syl eqeltrd ) CEFZBGFZHZACBIJZAKRZLJZGABUFUGCEGDUFMZU
+      GMZNUEUGUFORFUHGFUEABUFUGCUIDUJUCUDPUCUDSQUGUFUHUHMTUAUB $.
+  $}
+
 
 $(
 ###############################################################################
