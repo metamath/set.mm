@@ -72143,6 +72143,27 @@ $)
   $}
 
   ${
+    $d A k $.  $d F k q $.  $d F p q $.  $d W k q $.  $d W p q $.  $d Z k q $.
+    $d Z p q $.  $d k ph q $.  $d p ph q $.
+    isfsuppf.f $e |- ( ph -> F : A --> B ) $.
+    isfsuppf.fex $e |- ( ph -> F e. V ) $.
+    isfsuppf.z $e |- ( ph -> Z e. B ) $.
+    isfsuppf.w $e |- ( ph -> W e. Fin ) $.
+    isfsuppf.wss $e |- ( ph -> W C_ A ) $.
+    isfupppf.k $e |- ( ( ph /\ k e. ( A \ W ) ) -> ( F ` k ) = Z ) $.
+    $( Showing that a function is finitely supported.  (Contributed by Jim
+       Kingdon, 2-Nov-2026.) $)
+    isfsuppf $p |- ( ph -> F finSupp Z ) $=
+      ( vp vq cv wcel wa wceq ffund cdm fdmd sseqtrrd cdif cima csn cfv fvelima
+      wfun wrex sylan simprr fveqeq2 ralrimiva ad2antrr difeq1d eleqtrd rspcdva
+      wral simprl eqtr3d velsn sylibr rexlimddv ex ssrdv isfsuppfid ) AECFGHJKA
+      BCEIUAZLAGBEUBZMABCEIUCZUDAOEVJGUEZUFZHUGZAOQZVMRZVOVNRZAVPSZPQZEUHZVOTZV
+      QPVLAEUJVPWAPVLUKVIPVOVLEUIULVRVSVLRZWASZSZVOHTVQWDVTVOHVRWBWAUMWDDQZEUHH
+      TZVTHTDBGUEZVSWEVSHEUNAWFDWGUTVPWCAWFDWGNUOUPWDVSVLWGVRWBWAVAAVLWGTVPWCAV
+      JBGVKUQUPURUSVBOHVCVDVEVFVGVH $.
+  $}
+
+  ${
     $d A r x y $.  $d B x y $.  $d F p w $.  $d F q r w $.  $d F p x y $.
     $d Z p w $.  $d Z q r w $.  $d Z p y $.  $d p ph w $.  $d ph q r w $.
     funisfsuppdc.r $e |- ( ph -> F e. V ) $.
@@ -182638,22 +182659,6 @@ $)
     $}
 
     ${
-      $d D m n $.  $d F f $.  $d F m n $.  $d G f $.  $d G m n $.  $d G y $.
-      $d I f $.  $d I m n $.
-      $( The sum of two finite bags is a finite bag.  (Contributed by Mario
-         Carneiro, 9-Jan-2015.)  Shorten proof and remove a sethood antecedent.
-         (Revised by SN, 7-Aug-2024.) $)
-      psrbagaddclfi $p |- ( ( F e. D /\ G e. D /\ I e. Fin )
-          -> ( F oF + G ) e. D ) $=
-        ( vm vn wcel cfn w3a caddc cof co cn0 wf cv psrbagf cvv 3ad2ant3 adantl
-        cmap wa nn0addcl 3ad2ant1 3ad2ant2 simp3 inidm off wb nn0ex elmapg mpan
-        mpbird wceq psrbagfi eleqtrrd ) CAIZDAIZEJIZKZCDLMNZOEUBNZAVAVBVCIZEOVB
-        PZVAGHEEELOOOCDJJGQZOIHQZOIUCVFVGLNOIVAVFVGUDUAURUSEOCPUTABCEFRUEUSUREO
-        DPUTABDEFRUFURUSUTUGZVHEUHUIUTURVDVEUJZUSOSIUTVIUKOEVBSJULUMTUNUTURAVCU
-        OUSABEFUPTUQ $.
-    $}
-
-    ${
       $d D x y j p q $.  $d F x y f j p q $.  $d G x y f j p q $.
       $d I x f j p q $.
       $( The analogue of the statement " ` 0 <_ G <_ F ` implies
@@ -182688,9 +182693,11 @@ $)
     ${
       $d D p q x y $.  $d D r x y $.  $d F f $.  $d F p q x y z $.
       $d F r x y z $.  $d G f $.  $d I f $.  $d I p q x y z $.  $d I r x y z $.
-      $( There are finitely many bags dominated by a given bag.  (Contributed
-         by Mario Carneiro, 29-Dec-2014.)  (Revised by Mario Carneiro,
-         25-Jan-2015.)  (Revised by Jim Kingdon, 28-Jul-2026.) $)
+      $( There are finitely many bags dominated by a given bag.  If you'd like
+         to write the set of finite bags as ` ( NN0 ^m I ) ` see
+         ~ psrbaglefimap .  (Contributed by Mario Carneiro, 29-Dec-2014.)
+         (Revised by Mario Carneiro, 25-Jan-2015.)  (Revised by Jim Kingdon,
+         28-Jul-2026.) $)
       psrbaglefifi $p |- ( ( F e. D /\ I e. Fin )
           -> { y e. D | y oR <_ F } e. Fin ) $=
         ( wcel cfn wa cv cfv cle wbr cz cn0 a1i elmapd cc0 ad2antrr adantr wral
@@ -182729,8 +182736,9 @@ $)
     psrbagconf1o.s $e |- S = { y e. D | y oR <_ F } $.
     ${
       $d D x y $.  $d F x y $.  $d G x y $.  $d I x $.  $d X f $.  $d X y $.
-      $( The complement of a bag is a bag.  (Contributed by Mario Carneiro,
-         29-Dec-2014.)  Remove a sethood antecedent.  (Revised by SN,
+      $( The complement of a bag is a bag.  If the index set is finite, it may
+         be more convenient to use ~ psrbagconclfi .  (Contributed by Mario
+         Carneiro, 29-Dec-2014.)  Remove a sethood antecedent.  (Revised by SN,
          6-Aug-2024.) $)
       psrbagconcl $p |- ( ( F e. D /\ X e. S ) -> ( F oF - X ) e. S ) $=
         ( wcel wa cmin cof co cle cofr wbr cn0 breq1 elrab2 simpl simpr psrbagf
@@ -182766,6 +182774,153 @@ $)
         UIYMWDWMYSWNWDWMMZGPWGYTWGCKGPWGQYTDCWGYEWKUTCEWGGHRUQTWBJGWHWGVSWAVRWC
         $.
     $}
+  $}
+
+  ${
+    $d D m n $.  $d F f $.  $d F m n $.  $d G f $.  $d G m n $.  $d I f $.
+    $d I m n $.
+    $( The sum of two finite bags is a finite bag.  (Contributed by Mario
+       Carneiro, 9-Jan-2015.)  Shorten proof and remove a sethood antecedent.
+       (Revised by SN, 7-Aug-2024.)  (Revised by Jim Kingdodn, 6-Nov-2026.) $)
+    psrbagaddclfi $p |- ( ( F e. ( NN0 ^m I ) /\ G e. ( NN0 ^m I )
+        /\ I e. Fin ) -> ( F oF + G ) e. ( NN0 ^m I ) ) $=
+      ( vm vn cn0 cmap co cfn w3a caddc cof wf cv wa nn0addcl adantl elmapi cvv
+      wcel 3ad2ant1 3ad2ant2 simp3 inidm off nn0ex elmapg mpan 3ad2ant3 mpbird
+      wb ) AFCGHZTZBULTZCITZJZABKLHZULTZCFUQMZUPDECCCKFFFABIIDNZFTENZFTOUTVAKHF
+      TUPUTVAPQUMUNCFAMUOAFCRUAUNUMCFBMUOBFCRUBUMUNUOUCZVBCUDUEUOUMURUSUKZUNFST
+      UOVCUFFCUQSIUGUHUIUJ $.
+  $}
+
+  ${
+    $d F x $.  $d F y $.  $d F z $.  $d G x $.  $d G z $.  $d I x $.  $d I y $.
+    $d I z $.  $d X x $.  $d X y $.  $d X z $.  $d ph x $.
+    psrbagleadd1fi.s $e |- S = { y e. ( NN0 ^m I ) | y oR <_ F } $.
+    psrbagleadd1fi.t $e |- T = { z e. ( NN0 ^m I ) | z oR <_ ( F oF + G ) } $.
+    psrbagleadd1fi.f $e |- ( ph -> F e. ( NN0 ^m I ) ) $.
+    psrbagleadd1fi.g $e |- ( ph -> G e. ( NN0 ^m I ) ) $.
+    psrbagleadd1fi.x $e |- ( ph -> X e. S ) $.
+    psrbagleadd1fi.i $e |- ( ph -> I e. Fin ) $.
+    $( The analogue of " ` X <_ F ` implies ` X + G <_ F + G ` " (compare
+       ~ leadd1d ) for bags.  (Contributed by SN, 2-May-2025.)  (Revised by Jim
+       Kingdon, 6-Nov-2026.) $)
+    psrbagleadd1fi $p |- ( ph -> ( X oF + G ) e. T ) $=
+      ( vx cn0 wcel cfn syl caddc cof co cmap cle cofr wbr elrabi psrbagaddclfi
+      cv crab eleq2s syl3anc cfv wral wa elmapi ffvelcdmda nn0red breq1 simprbi
+      wf elrab2 wfn ffnd inidm eqidd ofrfval mpbid r19.21bi ralrimiva nn0addcld
+      leadd1dd ofvalg mpbird sylanbrc ) AIGUAUBZUCZQHUDUCZRZVRFGVQUCZUEUFZUGZVR
+      ERAIVSRZGVSRZHSRZVTAIDRZWDNWDIBUJZFWBUGZBVSUKDWIBIVSUHJULTZMOIGHUIUMZAWCP
+      UJZIUNZWLGUNZUAUCZWLFUNZWNUAUCZUEUGZPHUOAWRPHAWLHRUPZWMWPWNWSWMAHQWLIAWDH
+      QIVBWJIQHUQZTURZUSWSWPAHQWLFAFVSRZHQFVBLFQHUQTZURZUSWSWNAHQWLGAWEHQGVBMGQ
+      HUQTZURZUSAWMWPUEUGZPHAIFWBUGZXGPHUOAWGXHNWGWDXHWIXHBIVSDWHIFWBUTJVCVATAP
+      HHWMWPUEHIFSSAWDIHVDWJWDHQIWTVETZAHQFXCVEZOOHVFZWSWMVGZWSWPVGZVHVIVJVMVKA
+      PHHWOWQUEHVRWASSAHQVRAVTHQVRVBWKVRQHUQTVEAHQWAAWAVSRZHQWAVBAXBWEWFXNLMOFG
+      HUIUMWAQHUQTVEOOXKAHHWMWNUAHQIGSSWLXIAHQGXEVEZOOXKXLWSWNVGZWSWMWNXAXFVLVN
+      AHHWPWNUAHQFGSSWLXJXOOOXKXMXPWSWPWNXDXFVLVNVHVOCUJZWAWBUGWCCVRVSEXQVRWAWB
+      UTKVCVP $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.  $d D x $.  $d I x $.  $d ph x $.
+    ofrle2add.a $e |- ( ph -> A : I --> RR ) $.
+    ofrle2add.b $e |- ( ph -> B : I --> RR ) $.
+    ofrle2add.c $e |- ( ph -> C : I --> RR ) $.
+    ofrle2add.d $e |- ( ph -> D : I --> RR ) $.
+    ofrle2add.i $e |- ( ph -> I e. V ) $.
+    ofrle2add.ac $e |- ( ph -> A oR <_ C ) $.
+    ofrle2add.bd $e |- ( ph -> B oR <_ D ) $.
+    $( Adding both sides of two 'less than or equal to' relations.  Applying
+       ~ le2add to functions, pointwise.  (Contributed by Jim Kingdon,
+       7-Nov-2026.) $)
+    ofrle2add $p |- ( ph -> ( A oF + B ) oR <_ ( C oF + D ) ) $=
+      ( vx caddc co cle wbr cr cof cofr cv cfv wral wcel ffvelcdmda inidm eqidd
+      wa ffnd ofrfval mpbid r19.21bi le2addd ralrimiva readdcld offval ofrfval2
+      mpbird ) ABCPUAZQZDEVAQZRUBZSOUCZBUDZVECUDZPQZVEDUDZVEEUDZPQZRSZOFUEAVLOF
+      AVEFUFUJZVFVGVIVJAFTVEBHUGZAFTVECIUGZAFTVEDJUGZAFTVEEKUGZAVFVIRSZOFABDVDS
+      VROFUEMAOFFVFVIRFBDGGAFTBHUKZAFTDJUKZLLFUHZVMVFUIZVMVIUIZULUMUNAVGVJRSZOF
+      ACEVDSWDOFUENAOFFVGVJRFCEGGAFTCIUKZAFTEKUKZLLWAVMVGUIZVMVJUIZULUMUNUOUPAO
+      FVHVKRVBVCGTTLVMVFVGVNVOUQVMVIVJVPVQUQAOFFVFVGPFBCGGVSWELLWAWBWGURAOFFVIV
+      JPFDEGGVTWFLLWAWCWHURUSUT $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d I x $.  $d ph x $.
+    ofpncan3.a $e |- ( ph -> A : I --> CC ) $.
+    ofpncan3.b $e |- ( ph -> B : I --> CC ) $.
+    ofpncan3.i $e |- ( ph -> I e. V ) $.
+    $( Subtraction and addition of equals.  Applying ~ pncan3 to functions,
+       pointwise.  (Contributed by Jim Kingdon, 7-Nov-2026.) $)
+    ofpncan3 $p |- ( ph -> ( A oF + ( B oF - A ) ) = B ) $=
+      ( vx cfv cmin co caddc cmpt cof cc ffvelcdmda feqmptd ffnd eqidd cv inidm
+      wcel wa pncan3d mpteq2dva subcld offval offval2 3eqtr4d ) AIDIUAZBJZUKCJZ
+      ULKLZMLZNIDUMNBCBKOLZMOLCAIDUOUMAUKDUCUDZULUMADPUKBFQZADPUKCGQZUEUFAIDULU
+      NMBUPEPPHURUQUMULUSURUGAIDPBFRAIDDUMULKDCBEEADPCGSADPBFSHHDUBUQUMTUQULTUH
+      UIAIDPCGRUJ $.
+  $}
+
+  ${
+    $d F f y $.  $d I f y $.  $d X f y $.
+    psrbagconclfi.s $e |- S = { y e. ( NN0 ^m I ) | y oR <_ F } $.
+    $( The complement of a bag is a bag.  (Contributed by Mario Carneiro,
+       29-Dec-2014.)  Remove a sethood antecedent.  (Revised by SN,
+       6-Aug-2024.)  (Revised by Jim Kingdon, 8-Nov-2026.) $)
+    psrbagconclfi $p |- ( ( F e. ( NN0 ^m I ) /\ X e. S /\ I e. Fin )
+        -> ( F oF - X ) e. S ) $=
+      ( vf cn0 cmap co wcel cfn w3a cmin cof cv cle crab eqid eleqtrrd cofr wbr
+      ccnv cima simp1 wceq psrbagfi 3ad2ant3 eleq2i biimpi 3ad2ant2 psrbagconcl
+      cn rabeqdv syl2anc eleqtrd eleqtrrdi ) CHDIJZKZEBKZDLKZMZCENOJZAPCQUAUBZA
+      URRZBVBVCVDAGPUCUMUDLKGURRZRZVEVBCVFKEVGKVCVGKVBCURVFUSUTVAUEVAUSVFURUFUT
+      VFGDVFSZUGUHZTVBEVEVGUTUSEVEKZVAUTVJBVEEFUIUJUKVBVDAVFURVIUNZTAVFVGGCDEVH
+      VGSULUOVKUPFUQ $.
+  $}
+
+  ${
+    $d D p q x y $.  $d D r x y $.  $d F p q x y z $.  $d F r x y z $.
+    $d I f $.  $d I p q x y z $.  $d I r x y z $.
+    $( There are finitely many bags dominated by a given bag.  (Contributed by
+       Mario Carneiro, 29-Dec-2014.)  (Revised by Mario Carneiro, 25-Jan-2015.)
+       (Revised by Jim Kingdon, 5-Nov-2026.) $)
+    psrbaglefimap $p |- ( ( F e. ( NN0 ^m I ) /\ I e. Fin )
+        -> { y e. ( NN0 ^m I ) | y oR <_ F } e. Fin ) $=
+      ( vx vz vq vr cn0 wcel cfn wa cv cfv cle wbr cz adantr a1i cc0 ad2antrr
+      vp cmap co wral cofr crab wf elmapi wss nn0ssz fssd simpr fiidxsupcl wceq
+      fveq2 breq1d cbvralv anbi2i cfz adantl fz0ssnn0 cvv simp-4r elmapd mpbird
+      nn0ex wfn crn ffnd wrex fvelrnb syl biimpa 0zd simprl ad4antr frnd sselda
+      wb nn0zd nn0ge0d zred ad5antr ffvelcdmd nn0red inidm simplrr eqidd ofrval
+      mpd3an23 simprr rspcdva letrd elfzd rexlimddv ssrdv df-f sylanbrc impbida
+      ex fzfigd pm5.32rd rabbidva2 mapfi syl2anc wdc ffvelcdmda zdcle ralrimiva
+      ofrfidc ssfirab eqeltrrd sylan2b ) BHCUBUCZIZCJIZKZALZBMZDLZNOZACUDZXRBNU
+      EOZAXNUFZJIZDPXQDACBXQCHPBXOCHBUGZXPBHCUHZQZHPUIXQUJRUKXOXPULZUMXTPIZYBKX
+      QYJELZBMZXTNOZECUDZKZYEYBYNYJYAYMAECXRYKUNXSYLXTNXRYKBUOUPUQURXQYOKZYCASX
+      TUSUCZCUBUCZUFYDJYPYCYCAYRXNYPYCXRYRIZXRXNIZYPYCYSYTVSYPYCKZYSYTUUAYSKZYT
+      CHXRUGZUUBCYQHXRYSCYQXRUGZUUAXRYQCUHZUTYQHUIZUUBXTVAZRUKUUBHCXRVBJHVBIUUB
+      VFRXOXPYOYCYSVCVDVEUUAYTKZYSUUDUUHXRCVGZXRVHZYQUIUUDUUHCHXRYTUUCUUAXRHCUH
+      UTZVIZUUHUAUUJYQUUHUALZUUJIZUUMYQIZUUHUUNKZFLZXRMUUMUNZUUOFCUUHUUNUURFCVJ
+      ZUUHUUIUUNUUSVSUULFCUUMXRVKVLVMUUPUUQCIZUURKZKZUUMSXTUVBVNYPYJYCYTUUNUVAX
+      QYJYNVOZVPZUUPUUMPIUVAUUPUUMUUHUUJHUUMUUHCHXRUUKVQVRZVTQZUUPSUUMNOUVAUUPU
+      UMUVEWAQUVBUUMUUQBMZXTUVBUUMUVFWBUVBUVGUVBCHUUQBXQYFYOYCYTUUNUVAYHWCUUPUU
+      TUURVOZWDWEUVBXTUVDWBUVBYCUUTUUMUVGNOYPYCYTUUNUVAVCUVHUVBCCUUMUVGNCXRBJJU
+      UQUUHUUIUUNUVAUULTXQBCVGZYOYCYTUUNUVAXQCHBYHVIZWCXQXPYOYCYTUUNUVAYIWCZUVK
+      CWFUUPUUTUURUUTWGUVBUUTKUVGWHWIWJUVBYMUVGXTNOECUUQYKUUQUNYLUVGXTNYKUUQBUO
+      UPYPYNYCYTUUNUVAXQYJYNWKVPUVHWLWMWNWOWTWPCYQXRWQWRUUHYQCXRJJYPYQJIZYCYTYP
+      SXTYPVNUVCXAZTXOXPYOYCYTVCVDVEWSWTXBXCYPYCAYRYPUVLXPYRJIUVMXQXPYOYIQYQCXD
+      XEYPYCXFAYRYPYSKZGCNXRBUVNCYQXRYSUUDYPUUEUTZVIXQUVIYOYSUVJTUVNGLZXRMZUVPB
+      MZNOXFZGCUVNUVPCIZKZUVQPIUVRPIUVSUWAUVQUVNCHUVPXRUVNCYQHXRUVOUUFUVNUUGRUK
+      XGVTUWAUVRUWACHUVPBXOYFXPYOYSUVTYGVPUVNUVTULWDVTUVQUVRXHXEXIXQXPYOYSYITXJ
+      XIXKXLXMWO $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d I x $.
+    $( Finite bags have decidable equality.  (Contributed by Jim Kingdon,
+       1-Nov-2026.) $)
+    psrbagfidceq $p |- ( ( I e. Fin /\ A e. ( NN0 ^m I ) /\ B e. ( NN0 ^m I ) )
+        -> DECID A = B ) $=
+      ( vx wcel cn0 wceq wdc cfv wral cz wf elmapi 3ad2ant2 ffvelcdmda 3ad2ant3
+      nn0zd syl2anc wfn elmapfn cfn cmap co cv simp1 wa zdceq ralrimiva dcfi wb
+      w3a eqfnfv dcbid mpbird ) CUAEZAFCUBUCZEZBUPEZUKZABGZHDUDZAIZVABIZGZDCJZH
+      ZUSUOVDHZDCJVFUOUQURUEUSVGDCUSVACEUFZVBKEVCKEVGVHVBUSCFVAAUQUOCFALURAFCMN
+      OQVHVCUSCFVABURUOCFBLUQBFCMPOQVBVCUGRUHVDDCUIRUSUTVEUSACSZBCSZUTVEUJUQUOV
+      IURAFCTNURUOVJUQBFCTPDCABULRUMUN $.
   $}
 
   ${
@@ -182928,6 +183083,76 @@ $)
       DXOVQWDWEVNVRVSZAEXETXCYCHVDZAEULUMXCYCIVDZWAYDLMWNXOYFUFNCDEYHUEYPYQYRYS
       YTUUAUUBUUOUVEUVFUVGWBWFXLYOBYHULXDYHWCZXHYKXKYNUVHXFYJXGYIXDYHXEWGXDYHUL
       WHWIUVHXIYLXJYMXDYHDWJXDYHEWJWIWIWKWLWMWM $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d I x $.
+    $( It is decidable whether one finite bag dominates another.  (Contributed
+       by Jim Kingdon, 5-Nov-2026.) $)
+    psrbagdcle $p |- ( ( A e. ( NN0 ^m I ) /\ B e. ( NN0 ^m I ) /\ I e. Fin )
+        -> DECID A oR <_ B ) $=
+      ( vx cn0 cmap co wcel cfn w3a cle wf elmapi 3ad2ant1 ffnd 3ad2ant2 cfv cz
+      ffvelcdmda nn0zd cv wbr wdc wa zdcle syl2anc ralrimiva simp3 ofrfidc ) AE
+      CFGZHZBUJHZCIHZJZDCKABUNCEAUKULCEALUMAECMNZOUNCEBULUKCEBLUMBECMPZOUNDUAZA
+      QZUQBQZKUBUCZDCUNUQCHUDZURRHUSRHUTVAURUNCEUQAUOSTVAUSUNCEUQBUPSTURUSUEUFU
+      GUKULUMUHUI $.
+  $}
+
+  ${
+    $d F j p w x y $.  $d F k p w y $.  $d I j p w x y $.  $d I k p w y $.
+    $d Z j p w x y $.  $d Z k p w y $.  $d j p ph w x y $.
+    psrbagfsuppub.f $e |- ( ph -> F : ( NN0 ^m I ) --> B ) $.
+    psrbagfsuppub.z $e |- ( ph -> Z e. B ) $.
+    psrbagfsuppub.i $e |- ( ph -> I e. Fin ) $.
+    psrbagfsuppub.s $e |- ( ph -> F finSupp Z ) $.
+    $( Given a finitely supported function on finite bags, there is an upper
+       bound of values which can map to anything other than zero.  (Contributed
+       by Jim Kingdon, 5-Nov-2026.) $)
+    psrbagfsuppub $p |- ( ph -> E. k e. ( NN0 ^m I ) A. y e. ( NN0 ^m I )
+        ( -. y oR <_ k -> ( F ` y ) = Z ) ) $=
+      ( vj vx cv cfn wcel cle cn0 wral wa vw cdm wss cdif cima csn w3a cofr wbr
+      vp wn cfv wceq wi cmap co wrex fsuppfiss wf simpr2 wb sseq2d adantr mpbid
+      fdmd simpr1 psrbagmaxlem1 simprl cvv nn0ex elmapd mpbird simpr3 ad3antrrr
+      a1i ffnd ad4antr simplr eleqtrrd fveq1 breq1d ralbidv simprr ralcom sylib
+      wfn simpr rspcdva simp-5l elmapi simp2 simp3 3ad2ant1 inidm eqidd ofrfval
+      syl syl3anc pm2.65da eldifd fnfvimad sseldd ex ralrimiva notbid rspceaimv
+      elsni breq2 syl2anc exlimddv ) AUANZOPZXKEUBZUCZEXMXKUDZUEZGUFZUCZUGZBNZD
+      NZQUHZUIZUKZXTEULZGUMZUNBRFUOUPZSDYGUQZUAAUAEGKURAXSTZFRUJNZUSZLNZMNZULZY
+      LYJULZQUIZMXKSLFSZTZYHUJYIMLFXKUJYIXNXKYGUCZAXLXNXRUTAXNYSVAXSAXMYGXKAYGC
+      EHVEZVBVCVDAXLXNXRVFAFOPZXSJVCZVGYIYRTZYJYGPZXTYJYBUIZUKZYFUNZBYGSYHUUCUU
+      DYKYIYKYQVHZUUCRFYJVIORVIPUUCVJVOYIUUAYRUUBVCVKVLUUCUUGBYGUUCXTYGPZTZUUFY
+      FUUJUUFTZYEXQPYFUUKXPXQYEYIXRYRUUIUUFAXLXNXRVMVNUUKYGXTXOEAEYGWFXSYRUUIUU
+      FAYGCEHVPVQUUCUUIUUFVRZUUKXTXMXKUUKXTYGXMUULAXMYGUMXSYRUUIUUFYTVQVSUUKXTX
+      KPZUUEUUKUUMTZUUEYLXTULZYOQUIZLFSZUUNYPLFSZUUQMXKXTYMXTUMZYPUUPLFUUSYNUUO
+      YOQYLYMXTVTWAWBUUNYQUURMXKSUUCYQUUIUUFUUMYIYKYQWCVNYPLMFXKWDWEUUKUUMWGWHU
+      UNAFRXTUSZYKUUEUUQVAAXSYRUUIUUFUUMWIUUNUUIUUTUUKUUIUUMUULVCXTRFWJWQUUCYKU
+      UIUUFUUMUUHVNAUUTYKUGZLFFUUOYOQFXTYJOOUVAFRXTAUUTYKWKVPUVAFRYJAUUTYKWLVPA
+      UUTUUAYKJWMZUVBFWNUVAYLFPTZUUOWOUVCYOWOWPWRVLUUJUUFUUMVRWSWTXAXBYEGXGWQXC
+      XDYDUUFYFDBYJYGYGYAYJUMYCUUEYAYJXTYBXHXEXFXIXJXJ $.
+  $}
+
+  ${
+    $d F v $.  $d F v y $.  $d I v x $.  $d I v y $.  $d K v x $.  $d K v y $.
+    $d Z v $.  $d Z v y $.  $d ph v $.  $d ph v y $.
+    psrbagfsuppd.f $e |- ( ph -> F : ( NN0 ^m I ) --> B ) $.
+    psrbagfsuppd.z $e |- ( ph -> Z e. B ) $.
+    psrbagfsuppd.i $e |- ( ph -> I e. Fin ) $.
+    psrbagfsuppd.k $e |- ( ph -> K e. ( NN0 ^m I ) ) $.
+    psrbagfsuppd.y $e |- ( ( ph /\ y e. ( NN0 ^m I ) )
+      -> ( -. y oR <_ K -> ( F ` y ) = Z ) ) $.
+    $( Given a function on finite bags, where there is an upper bound of values
+       which can map to anything other than zero, the function is finitely
+       supported.  (Contributed by Jim Kingdon, 5-Nov-2026.) $)
+    psrbagfsuppd $p |- ( ph -> F finSupp Z ) $=
+      ( vx cn0 cmap cvv cv wbr wcel cfn vv co cle cofr crab cxp wfn fnmap nn0ex
+      elexd fnovex mp3an12i fexd psrbaglefimap syl2anc wss ssrab2 a1i wa wn cfv
+      cdif wceq simpr eldifad eldifbd breq1 elrab sylnib mpnanrd notbid fveqeq2
+      wi imbi12d wral ralrimiva adantr rspcdva mpd isfsuppf ) ANEOUBZCUADPMQZFU
+      CUDZRZMWAUEZGHAWACPDHOPPUFUGNPSAEPSWAPSUHUIAETJUJNEPPOUKULUMIAFWASETSWETS
+      KJMFEUNUOWEWAUPAWDMWAUQURAUAQZWAWEVBSZUSZWFFWCRZUTZWFDVAGVCZWHWFWASZWIWHW
+      FWAWEAWGVDZVEZWHWFWESWLWIUSWHWFWAWEWMVFWDWIMWFWAWBWFFWCVGVHVIVJWHBQZFWCRZ
+      UTZWODVAGVCZVMZWJWKVMBWAWFWOWFVCZWQWJWRWKWTWPWIWOWFFWCVGVKWOWFGDVLVNAWSBW
+      AVOWGAWSBWALVPVQWNVRVSVT $.
   $}
 
   ${
@@ -183291,6 +183516,30 @@ $)
         AXPXHLWJXNACEFMXHLOXKUCPUAVQVNXOXDDXPXOXDXCVGZXDDVGAXLXNXSUBBDXCINMWPSX
         CVEWDWEXBBXDDVRWAXRWBWCWFWGWHWI $.
     $}
+  $}
+
+  ${
+    $d .x. k $.  $d B k $.  $d F k $.  $d G k $.  $d I f k y $.  $d R k $.
+    $d X f k y $.  $d k ph $.
+    psrmulvalfifi.s $e |- S = ( I mPwSer R ) $.
+    psrmulvalfifi.b $e |- B = ( Base ` S ) $.
+    psrmulvalfifi.m $e |- .x. = ( .r ` R ) $.
+    psrmulvalfifi.t $e |- .xb = ( .r ` S ) $.
+    psrmulvalfifi.f $e |- ( ph -> F e. B ) $.
+    psrmulvalfifi.g $e |- ( ph -> G e. B ) $.
+    psrmulvalfifi.x $e |- ( ph -> X e. ( NN0 ^m I ) ) $.
+    psrmulvalfifi.i $e |- ( ph -> I e. Fin ) $.
+    psrmulvalfifi.r $e |- ( ph -> R e. Ring ) $.
+    $( The multiplication operation of the multivariate power series structure.
+       (Contributed by Mario Carneiro, 28-Dec-2014.) $)
+    psrmulvalfifi $p |- ( ph -> ( ( F .xb G ) ` X ) =
+        ( R gsum ( k e. { y e. ( NN0 ^m I ) | y oR <_ X } |->
+        ( ( F ` k ) .x. ( G ` ( X oF - k ) ) ) ) ) ) $=
+      ( vf co cfv cv cle cofr wbr ccnv cn cima cfn wcel cn0 cmap crab cmin cmpt
+      cof cgsu eqid wceq psrbagfi syl eleqtrrd psrmulvalfi rabeqdv oveq2d eqtrd
+      mpteq1d ) ALIJFUCUDDHBUELUFUGUHZBUBUEUIUJUKULUMUBUNKUOUCZUPZUPZHUEZIUDLVO
+      UQUSUCJUDGUCZURZUTUCDHVKBVLUPZVPURZUTUCABCVMDEFGUBHIJKLMNOPVMVAZQRALVLVMS
+      AKULUMVMVLVBTVMUBKVTVCVDZVETUAVFAVQVSDUTAHVNVRVPAVKBVMVLWAVGVJVHVI $.
   $}
 
   ${
@@ -183742,6 +183991,24 @@ $)
       KWPVRWAVSBCVTLDWEWGWMEWQWRWSWJWIWTXAXBXCVLAKVRWABCWDWBLDWCEFGWSWCSZWBSZWD
       SZWIVMAWFVFZKVRWABCVTWDWBLDWEWCEAWLWFFTZAWKWFGTZWSXDXEXFWIWJAWFVNZVOXGKVR
       WABCVTWDWBLDWEWCEXHXIWSXDXEXFWIWJXJVPVQ $.
+
+    psr1.z $e |- .0. = ( 0g ` R ) $.
+    psr1.o $e |- .1. = ( 1r ` R ) $.
+    psr1.u $e |- U = ( 1r ` S ) $.
+    $( The identity element of the ring of power series.  (Contributed by Mario
+       Carneiro, 8-Jan-2015.) $)
+    psr1fi $p |- ( ph -> U =
+        ( x e. ( NN0 ^m I ) |-> if ( x = ( I X. { 0 } ) , .1. , .0. ) ) ) $=
+      ( vy vf co wceq wcel eqid cn0 cmap cv cc0 csn cxp cif cmpt cbs cmulr wral
+      cfv wa ccnv cn cima cfn crab psrbagfi syl psr1clfi eqeltrrd adantr oveq1d
+      mpteq1d crg simpr psrlidmfi eqtr3d oveq2d psrridmfi ralrimiva wb isringid
+      jca psrringfi mpbi2and ) ABUAGUBQZBUCGUDUEUFRFHUGZUHZDUIULZSZVTOUCZDUJULZ
+      QZWCRZWCVTWDQZWCRZUMZOWAUKZEVTRZABPUCUNUOUPUQSPVRURZVSUHZVTWAABWLVRVSAGUQ
+      SZWLVRRJWLPGWLTZUSUTVEZABWAWLCDWMFPGHIJKWOLMWMTZWATZVAVBAWIOWAAWCWASZUMZW
+      FWHWTWMWCWDQWEWCWTWMVTWCWDAWMVTRWSWPVCZVDWTBWAWLCDWDWMFPGWCHIAWNWSJVCZACV
+      FSWSKVCZWOLMWQWRWDTZAWSVGZVHVIWTWCWMWDQWGWCWTWMVTWCWDXAVJWTBWAWLCDWDWMFPG
+      WCHIXBXCWOLMWQWRXDXEVKVIVOVLADVFSWBWJUMWKVMACDGIJKVPOWADWDEVTWRXDNVNUTVQ
+      $.
   $}
 
   ${
@@ -183977,6 +184244,22 @@ $)
   $}
 
   ${
+    $d ph x $.  $d B x $.  $d I x $.  $d V x $.
+    mvrf2.p $e |- P = ( I mPoly R ) $.
+    mvrf2.v $e |- V = ( I mVar R ) $.
+    mvrf2.b $e |- B = ( Base ` P ) $.
+    mvrf2fi.i $e |- ( ph -> I e. Fin ) $.
+    mvrf2.r $e |- ( ph -> R e. Ring ) $.
+    $( The power series/polynomial variable function maps indices to
+       polynomials.  (Contributed by Stefan O'Rear, 8-Mar-2015.) $)
+    mvrf2fi $p |- ( ph -> V : I --> B ) $=
+      ( vx wfn cv cfv wcel wral wf eqid adantr cmps co cbs mvrffi ffnd wa simpr
+      cfn crg mvrclfi ralrimiva ffnfv sylanbrc ) AFEMLNZFOBPZLEQEBFRAEEDUAUBZUC
+      OZFAUQDUPEFUPSHUQSJKUDUEAUOLEAUNEPZUFBCDEFUNGHIAEUHPURJTADUIPURKTAURUGUJU
+      KLEBFULUM $.
+  $}
+
+  ${
     mplrcl.p $e |- P = ( I mPoly R ) $.
     mplrcl.b $e |- B = ( Base ` P ) $.
     $( Reverse closure for the polynomial index set.  (Contributed by Stefan
@@ -183984,6 +184267,15 @@ $)
     mplrcl $p |- ( X e. B -> I e. _V ) $=
       ( wcel cvv cmpl reldmmpl cxp wfn wrel fnmpl fnrel ax-mp relelbasov simpld
       ) EAHDIHCIHEABJDCKJIILZMJNOTJPQFGRS $.
+
+    mplelsfi.z $e |- .0. = ( 0g ` R ) $.
+    mplelsfi.f $e |- ( ph -> F e. B ) $.
+    $( A polynomial treated as a coefficient function has finitely many nonzero
+       terms.  (Contributed by Stefan O'Rear, 22-Mar-2015.)  (Revised by AV,
+       25-Jun-2019.) $)
+    mplelsfi $p |- ( ph -> F finSupp .0. ) $=
+      ( wcel cfsupp wbr cmps co cbs cfv eqid mplelbas simprbi syl ) AEBLZEGMNZK
+      UCEFDOPZQRZLUDUFCDUEBFEGHUESUFSJITUAUB $.
   $}
 
   ${
@@ -184155,6 +184447,95 @@ $)
         VLGHIAFUKPZWAWCJULACUPPZWAWCKULAWAWCUMWBWCUQVMTZUNUOWBBCDEFVPVKGHIAWDWA
         JURAWEWAKURAWAUQVPTZUSUTUOADUPPVGVIVJVSVAVFACDFUKGJKVBMNLVHVMEDVPVTWFWG
         VCVDVE $.
+    $}
+
+    mpllss.r $e |- ( ph -> R e. Ring ) $.
+
+    ${
+      $d I i k s p t x $.  $d I p t u v $.  $d I i x y $.  $d R i p s t x $.
+      $d R k $.  $d R p s t u v $.  $d S k s t x $.  $d X k i p s t x $.
+      $d X p s t u v $.  $d Y i k p s t x $.  $d Y p s t u v $.  $d i k p x $.
+      $d i ph s t x $.  $d k x y $.  $d ph p s t u v k $.
+      mplsubrglem.x $e |- ( ph -> X e. U ) $.
+      mplsubrglem.y $e |- ( ph -> Y e. U ) $.
+      $( Lemma for ~ mplsubrgfi .  Polynomials are closed under multiplication.
+         (Contributed by Mario Carneiro, 9-Jan-2015.)  (Revised by AV,
+         18-Jul-2019.) $)
+      mplsubrglemcl $p |- ( ph -> ( X ( .r ` S ) Y ) e. U ) $=
+        ( wcel cn0 wa adantr wf vp vs vt vk vu vv vx vy cmulr cfv co cbs cfsupp
+        c0g wbr eqid mplbasss sselid psrmulclfi cv cofr wn wceq cmap psrelbasfi
+        cle wi wral cgrp ringgrpd grpidcl syl mplelsfi psrbagfsuppub wrex caddc
+        cof ad2antrr cfn nn0addcl adantl simplrl elmapi inidm off cvv nn0ex a1i
+        simprl elmapd mpbird crab cmin cmpt cgsu simpr crg psrmulvalfifi notbid
+        ad5ant14 fveqeq2 imbi12d simplrr ad4antr elrabi rspcdva syldbl2 ad6antr
+        breq1 oveq1d simpllr ad3antrrr w3a psrbagconclfi syl3anc ringlzd simprr
+        ffvelcdmd eqtrd oveq2d ringrzd wo wss nn0sscn sylancl ad4antlr ofpncan3
+        cc fss cr nn0ssre ofrle2add eqbrtrrd pm2.65da wdc wb psrbagdcle ianordc
+        syl2anc rexlimddv mpjaodan mpteq2dva ccmn ringcmnd psrbaglefimap 3eqtrd
+        mpbid gsumzfi ex psrbagfsuppd mplelbas sylanbrc ) AGHDUIUJZUKZDULUJZPUU
+        NCUNUJZUMUOZUUNEPAUUOCDUUMFGHIUUOUPZUUMUPZMLAEUUOGUUOBCDEFJIKUURUQZNURZ
+        AEUUOHUUTOURZUSZAUAUTZUBUTZVFVAZUOZVBZUVDGUJUUPVCZVGZUAQFVDUKZVHZUUQUBU
+        VKAUACULUJZUBGFUUPAUUOCDFUVMGIUVMUPZLUURUVAVEZACVIPUUPUVMPZACMVJUVMCUUP
+        UVNUUPUPZVKVLZLAEBCGFUUPJKUVQNVMVNAUVEUVKPZUVLRZRZUVDUCUTZUVFUOZVBZUVDH
+        UJUUPVCZVGZUAUVKVHZUUQUCUVKAUWGUCUVKVOUVTAUAUVMUCHFUUPAUUOCDFUVMHIUVNLU
+        URUVBVEZUVRLAEBCHFUUPJKUVQOVMVNSUWAUWBUVKPZUWGRZRZUDUVMUUNFUVEUWBVPVQZU
+        KZUUPAUVKUVMUUNTUVTUWJAUUOCDFUVMUUNIUVNLUURUVCVEVRAUVPUVTUWJUVRVRAFVSPZ
+        UVTUWJLVRZUWKUWMUVKPFQUWMTUWKUEUFFFFVPQQQUVEUWBVSVSUEUTZQPUFUTZQPRUWPUW
+        QVPUKQPUWKUWPUWQVTWAUWKUVSFQUVETZAUVSUVLUWJWBZUVEQFWCVLZUWKUWIFQUWBTZUW
+        AUWIUWGWIUWBQFWCVLZUWOUWOFWDWEUWKQFUWMWFVSQWFPUWKWGWHUWOWJWKUWKUDUTZUVK
+        PZRZUXCUWMUVFUOZVBZUXCUUNUJZUUPVCUXEUXGRZUXHCUGUHUTUXCUVFUOZUHUVKWLZUGU
+        TZGUJZUXCUXLWMVQUKZHUJZCUIUJZUKZWNZWOUKZCUGUXKUUPWNZWOUKZUUPAUXDUXHUXSV
+        CUVTUWJUXGAUXDRZUHUUOCDUUMUXPUGGHFUXCIUURUXPUPZUUSAGUUOPUXDUVASAHUUOPUX
+        DUVBSAUXDWPZAUWNUXDLSZACWQPZUXDMSWRWTUXIUXRUXTCWOUXIUGUXKUXQUUPUXIUXLUX
+        KPZRZUXLUVEUVFUOZVBZUXQUUPVCUXNUWBUVFUOZVBZUYHUYJRZUXQUUPUXOUXPUKUUPUYM
+        UXMUUPUXOUXPUYHUYJUXMUUPVCZUYMUVJUYJUYNVGUAUVKUXLUVDUXLVCZUVHUYJUVIUYNU
+        YOUVGUYIUVDUXLUVEUVFXIWSUVDUXLUUPGXAXBUWKUVLUXDUXGUYGUYJAUVSUVLUWJXCXDU
+        YHUXLUVKPZUYJUYGUYPUXIUXJUHUXLUVKXEWAZSXFXGXJUYMUVMCUXPUXOUUPUVNUYCUVQA
+        UYFUVTUWJUXDUXGUYGUYJMXHUYMUVKUVMUXNHAUVKUVMHTUVTUWJUXDUXGUYGUYJUWHXHUY
+        HUXNUVKPZUYJUYHUXDUYGUWNUYRUWKUXDUXGUYGXKUXIUYGWPUWKUWNUXDUXGUYGUWOXLZU
+        XDUYGUWNXMUXNUXKPUYRUHUXKUXCFUXLUXKUPXNUXJUHUXNUVKXEVLXOZSXRXPXSUYHUYLR
+        ZUXQUXMUUPUXPUKUUPVUAUXOUUPUXMUXPUYHUYLUXOUUPVCZVUAUWFUYLVUBVGUAUVKUXNU
+        VDUXNVCZUWDUYLUWEVUBVUCUWCUYKUVDUXNUWBUVFXIWSUVDUXNUUPHXAXBUWKUWGUXDUXG
+        UYGUYLUWAUWIUWGXQXDUYHUYRUYLUYTSXFXGXTVUAUVMCUXPUXMUUPUVNUYCUVQAUYFUVTU
+        WJUXDUXGUYGUYLMXHVUAUVKUVMUXLGAUVKUVMGTUVTUWJUXDUXGUYGUYLUVOXHUYHUYPUYL
+        UYQSXRYAXSUYHUYIUYKRZVBZUYJUYLYBZUYHVUDUXFUYHVUDRZUXLUXNUWLUKUXCUWMUVFV
+        UGUXLUXCFVSVUGFQUXLTZQYHYCZFYHUXLTUYHVUHVUDUYHUYPVUHUYQUXLQFWCVLSZYDFQY
+        HUXLYIYEVUGFQUXCTZVUIFYHUXCTUXDVUKUWKUXGUYGVUDUXCQFWCYFYDFQYHUXCYIYEUYH
+        UWNVUDUYSSZYGVUGUXLUXNUVEUWBFVSVUGVUHQYJYCZFYJUXLTVUJYKFQYJUXLYIYEVUGFQ
+        UXNTZVUMFYJUXNTUYHVUNVUDUYHUYRVUNUYTUXNQFWCVLSYKFQYJUXNYIYEVUGUWRVUMFYJ
+        UVETUWKUWRUXDUXGUYGVUDUWTXDYKFQYJUVEYIYEVUGUXAVUMFYJUWBTUWKUXAUXDUXGUYG
+        VUDUXBXDYKFQYJUWBYIYEVULUYHUYIUYKWIUYHUYIUYKXQYLYMUXEUXGUYGVUDXKYNUYHUY
+        IYOZVUEVUFYPUYHUYPUVSUWNVUOUYQUWKUVSUXDUXGUYGUWSXLUYSUXLUVEFYQXOUYIUYKY
+        RVLUUGUUAUUBXTUXICUUCPZUXKVSPZUYAUUPVCAVUPUVTUWJUXDUXGACMUUDXDAUXDVUQUV
+        TUWJUXGUYBUXDUWNVUQUYDUYEUHUXCFUUEYSWTUXKUGCUUPUVQUUHYSUUFUUIUUJYTYTUUO
+        BCDEFUUNUUPJIUURUVQKUUKUUL $.
+    $}
+
+    ${
+      $d I k p q $.  $d R k p q $.  $d S k p q $.  $d S x y $.  $d U x y $.
+      $d k p ph q $.  $d ph x y $.
+      $( The set of polynomials is closed under multiplication, i.e. it is a
+         subring of the set of power series.  (Contributed by Mario Carneiro,
+         9-Jan-2015.) $)
+      mplsubrgfi $p |- ( ph -> U e. ( SubRing ` S ) ) $=
+        ( vx cfv wcel eqid syl cn0 cfn wceq adantr vy vq vk csubrg csubg cur cv
+        cmulr wral ringgrpd mplsubgfi cbs c0g cfsupp wbr crg psrringfi ringidcl
+        co cmap cc0 csn cxp psrelbasfi cgrp grpidcl cvv 0nn0 snfig mp1i fconst6
+        xpexd wf nn0ex a1i elmapd mpbiri snssd cdif cif eqeq1 ifbid cmpt psr1fi
+        wa eldifi adantl wdc psrbagfidceq syl3anc ifcldcd fvmptd4 wne ifnefalse
+        eldifsni eqtrd isfsuppf mplelbas simprl simprr mplsubrglemcl ralrimivva
+        sylanbrc w3a wb issubrg2 mpbir3and ) AEDUDMNZEDUEMNZDUFMZENZLUGZUAUGZDU
+        HMZUSENZUAEUILEUIZABCDEFGHIJACKUJZUKAXJDULMZNZXJCUMMZUNUOXKADUPNZXSACDF
+        GJKUQZXRDXJXROZXJOZURPZAQFUTUSZCULMZUBXJXRFVAVBZVCZVBZXTAXRCDFYGXJGYGOZ
+        JYCYEVDYEACVENXTYGNZXQYGCXTYKXTOZVFPZAYIVGNYJRNAFYHRRJVAQNYHRNAVHVAQVIV
+        JVLYIVGVIPAYIYFAYIYFNZFQYIVMFVAQVHVKAQFYIVGRQVGNAVNVOJVPVQZVRAUBUGZYFYJ
+        VSNZWEZYQXJMYQYISZCUFMZXTVTZXTYSUCYQUCUGZYISZUUAXTVTZUUBYFXJYGUUCYQSUUD
+        YTUUAXTUUCYQYIWAWBAXJUCYFUUEWCSYRAUCCDXJUUAFXTGJKYMUUAOZYDWDTYRYQYFNZAY
+        QYFYJWFWGZYSYTUUAXTYGAUUAYGNZYRACUPNZUUIKYGCUUAYKUUFURPTAYLYRYNTYSFRNZU
+        UGYOYTWHAUUKYRJTUUHAYOYRYPTYQYIFWIWJWKWLYRUUBXTSZAYRYQYIWMUULYQYFYIWOYQ
+        YIUUAXTWNPWGWPWQXRBCDEFXJXTHGYCYMIWRXCAXOLUAEEAXLENZXMENZWEZWEBCDEFXLXM
+        GHIAUUKUUOJTAUUJUUOKTAUUMUUNWSAUUMUUNWTXAXBAYAXHXIXKXPXDXEYBLUAEXRDXNXJ
+        YCYDXNOXFPXG $.
     $}
   $}
 
