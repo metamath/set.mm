@@ -884679,6 +884679,22 @@ $)
   $}
 
   ${
+    $( Liouville's function takes real values on rationals.  (Contributed by
+       Zhi Wang, 2-Nov-2026.) $)
+    lioure $p |- ( A e. QQ -> ( lam ` A ) e. RR ) $=
+      ( cq wcel c1 cneg cc0 ctp cr cliou cfv wss neg1rr 0re 1re tpssi ffvelcdmi
+      mp3an liouf sselid ) ABCDEZFDGZHAIJTHCFHCDHCUAHKLMNTFDHOQBUAAIRPS $.
+  $}
+
+  ${
+    $( Liouville's function takes complex values on positive integers.
+       Consequence of ~ lioure and ~ recn .  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
+    liounncn $p |- ( A e. NN -> ( lam ` A ) e. CC ) $=
+      ( cn wcel cq cliou cfv cc nnq lioure recnd syl ) ABCADCZAEFZGCAHLMAIJK $.
+  $}
+
+  ${
     $d A p q $.  $d B p q $.
     $( Complete additivity of the signed prime Omega function on nonzero
        rationals.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
@@ -884705,20 +884721,19 @@ $)
        (Contributed by Zhi Wang, 27-Oct-2026.) $)
     lioumul $p |- ( ( A e. QQ /\ B e. QQ ) ->
       ( lam ` ( A x. B ) ) = ( ( lam ` A ) x. ( lam ` B ) ) ) $=
-      ( cq wcel wa cmul co cliou cfv wceq cc0 liou0 cc syl2an c1 ffvelcdmi cbom
-      wne cexp cz simpr fveq2d wo wb qcn mul0or fveq2 eqtrdi orim12i ctp wf wss
-      cneg liouf neg1cn 0cn ax-1cn tpssi mp3an fss mp2an biimpar sylan2 sylbida
-      3eqtr4a qmulcl csn cdif eldifsn liouval sylbir sylan mulne0b bomf neg1ne0
-      caddc expaddz mpanl12 bommul oveq2d oveqan12d 3eqtr4d syl2anbr an4s eqtrd
-      syldan pm2.61dane ) ACDZBCDZEZABFGZHIZAHIZBHIZFGZJWKKWJWKKJZEZKHIZKWLWOLW
-      QWKKHWJWPUAUBWJWPAKJZBKJZUCZWOKJZWHAMDZBMDZWPXAUDWIAUEZBUEZABUFNXAWJWMKJZ
-      WNKJZUCZXBWSXGWTXHWSWMWRKAKHUGLUHWTWNWRKBKHUGLUHUIWJXBXIWHWMMDWNMDXBXIUDW
-      ICMAHCOUMZKOUJZHUKXKMULZCMHUKUNXJMDZKMDOMDXLUOUPUQXJKOMURUSCXKMHUTVAZPCMB
-      HXNPWMWNUFNVBVCVDVEWJWKKRZEWLXJWKQIZSGZWOWJWKCDZXOWLXQJZABVFXRXOEWKCKVGVH
-      ZDXSWKCKVIWKVJVKVLWJXOAKRZBKRZEZXQWOJZWJYCXOWHXCXDYCXOUDWIXEXFABVMNVBWHYA
-      WIYBYDWHYAEAXTDZBXTDZYDWIYBEACKVIBCKVIYEYFEZXJAQIZBQIZVPGZSGZXJYHSGZXJYIS
-      GZFGZXQWOYEYHTDZYITDZYKYNJZYFXTTAQVNPXTTBQVNPXMXJKRYOYPEYQUOVOXJYHYIVQVRN
-      YGXPYJXJSABVSVTYEYFWMYLWNYMFAVJBVJWAWBWCWDWFWEWG $.
+      ( cq wcel wa cmul co cliou cfv wceq cc0 liou0 cc syl2an cbom cexp eldifsn
+      wb wne cz simpr fveq2d wo mul0or fveq2 eqtrdi orim12i lioure recnd sylan2
+      qcn biimpar sylbida 3eqtr4a c1 cneg qmulcl csn cdif liouval sylan mulne0b
+      sylbir caddc bomf ffvelcdmi neg1cn neg1ne0 expaddz mpanl12 bommul 3eqtr4d
+      oveq2d oveqan12d syl2anbr an4s syldan eqtrd pm2.61dane ) ACDZBCDZEZABFGZH
+      IZAHIZBHIZFGZJWCKWBWCKJZEZKHIZKWDWGLWIWCKHWBWHUAUBWBWHAKJZBKJZUCZWGKJZVTA
+      MDZBMDZWHWMRWAAUKZBUKZABUDNWMWBWEKJZWFKJZUCZWNWKWSWLWTWKWEWJKAKHUELUFWLWF
+      WJKBKHUELUFUGWBWNXAVTWEMDWFMDWNXARWAVTWEAUHUIWAWFBUHUIWEWFUDNULUJUMUNWBWC
+      KSZEWDUOUPZWCOIZPGZWGWBWCCDZXBWDXEJZABUQXFXBEWCCKURUSZDXGWCCKQWCUTVCVAWBX
+      BAKSZBKSZEZXEWGJZWBXKXBVTWOWPXKXBRWAWQWRABVBNULVTXIWAXJXLVTXIEAXHDZBXHDZX
+      LWAXJEACKQBCKQXMXNEZXCAOIZBOIZVDGZPGZXCXPPGZXCXQPGZFGZXEWGXMXPTDZXQTDZXSY
+      BJZXNXHTAOVEVFXHTBOVEVFXCMDXCKSYCYDEYEVGVHXCXPXQVIVJNXOXDXRXCPABVKVMXMXNW
+      EXTWFYAFAUTBUTVNVLVOVPVQVRVS $.
   $}
 
   ${
@@ -884773,24 +884788,6 @@ $)
   $}
 
   ${
-    $( Liouville's function takes real values on rationals.  (Contributed by
-       Zhi Wang, 2-Nov-2026.) $)
-    lioure $p |- ( A e. QQ -> ( lam ` A ) e. RR ) $=
-      ( cq wcel cliou cfv cr cc0 wceq wa fveq2 liou0 eqtrdi adantl 0re eqeltrdi
-      wne csn cdif eldifsn c1 cneg cpr liounzcl signre syl sylbir pm2.61dane )
-      ABCZADEZFCZAGUHAGHZIUIGFUKUIGHUHUKUIGDEGAGDJKLMNOUHAGPIABGQRCZUJABGSULUIT
-      UATUBCUJAUCUIUDUEUFUG $.
-  $}
-
-  ${
-    $( Liouville's function takes complex values on positive integers.
-       Consequence of ~ lioure and ~ recn .  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    liounncn $p |- ( A e. NN -> ( lam ` A ) e. CC ) $=
-      ( cn wcel cq cliou cfv cc nnq lioure recnd syl ) ABCADCZAEFZGCAHLMAIJK $.
-  $}
-
-  ${
     $( Liouville's function at four is one.  (Contributed by Zhi Wang,
        17-Oct-2026.) $)
     liou4 $p |- ( lam ` 4 ) = 1 $=
@@ -884815,10 +884812,8 @@ $)
        rational input.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
     liou2mul $p |- ( A e. QQ -> ( lam ` ( 2 x. A ) ) = -u ( lam ` A ) ) $=
       ( cq wcel c2 cmul co cliou cfv c1 cneg wceq cn 2nn nnq ax-mp lioumul mpan
-      cc cc0 wf liou2 oveq1i eqtrdi ctp wss liouf neg1cn 0cn ax-1cn tpssi mp3an
-      fss mp2an ffvelcdmi mulm1d eqtrd ) ABCZDAEFGHZIJZAGHZEFZUTJUQURDGHZUTEFZV
-      ADBCZUQURVCKDLCVDMDNODAPQVBUSUTEUAUBUCUQUTBRAGBUSSIUDZGTVERUEZBRGTUFUSRCS
-      RCIRCVFUGUHUIUSSIRUJUKBVERGULUMUNUOUP $.
+      liou2 oveq1i eqtrdi lioure recnd mulm1d eqtrd ) ABCZDAEFGHZIJZAGHZEFZUHJU
+      EUFDGHZUHEFZUIDBCZUEUFUKKDLCULMDNODAPQUJUGUHERSTUEUHUEUHAUAUBUCUD $.
   $}
 
   ${
@@ -884826,21 +884821,17 @@ $)
        rational input.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
     liou3mul $p |- ( A e. QQ -> ( lam ` ( 3 x. A ) ) = -u ( lam ` A ) ) $=
       ( cq wcel c3 cmul co cliou cfv c1 cneg wceq cn 3nn nnq ax-mp lioumul mpan
-      cc cc0 wf liou3 oveq1i eqtrdi ctp wss liouf neg1cn 0cn ax-1cn tpssi mp3an
-      fss mp2an ffvelcdmi mulm1d eqtrd ) ABCZDAEFGHZIJZAGHZEFZUTJUQURDGHZUTEFZV
-      ADBCZUQURVCKDLCVDMDNODAPQVBUSUTEUAUBUCUQUTBRAGBUSSIUDZGTVERUEZBRGTUFUSRCS
-      RCIRCVFUGUHUIUSSIRUJUKBVERGULUMUNUOUP $.
+      liou3 oveq1i eqtrdi lioure recnd mulm1d eqtrd ) ABCZDAEFGHZIJZAGHZEFZUHJU
+      EUFDGHZUHEFZUIDBCZUEUFUKKDLCULMDNODAPQUJUGUHERSTUEUHUEUHAUAUBUCUD $.
   $}
 
   ${
     $( Multiplication by four preserves Liouville's function.  (Contributed by
        Zhi Wang, 27-Oct-2026.) $)
     liou4mul $p |- ( A e. QQ -> ( lam ` ( 4 x. A ) ) = ( lam ` A ) ) $=
-      ( cq wcel c4 cmul co cliou cfv c1 wceq cn 4nn ax-mp lioumul mpan liou4 cc
-      nnq cc0 wf oveq1i eqtrdi cneg ctp wss liouf neg1cn 0cn ax-1cn tpssi mp3an
-      fss mp2an ffvelcdmi mullidd eqtrd ) ABCZDAEFGHZIAGHZEFZUSUQURDGHZUSEFZUTD
-      BCZUQURVBJDKCVCLDRMDANOVAIUSEPUAUBUQUSBQAGBIUCZSIUDZGTVEQUEZBQGTUFVDQCSQC
-      IQCVFUGUHUIVDSIQUJUKBVEQGULUMUNUOUP $.
+      ( cq wcel c4 cmul co cliou cfv c1 wceq 4nn nnq ax-mp lioumul liou4 oveq1i
+      cn mpan eqtrdi lioure recnd mullidd eqtrd ) ABCZDAEFGHZIAGHZEFZUFUDUEDGHZ
+      UFEFZUGDBCZUDUEUIJDQCUJKDLMDANRUHIUFEOPSUDUFUDUFATUAUBUC $.
   $}
 
   ${
@@ -885170,14 +885161,13 @@ $)
        rational.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
     liourec $p |- ( A e. ( QQ \ { 0 } ) ->
       ( lam ` ( 1 / A ) ) = ( lam ` A ) ) $=
-      ( cq cc0 csn cdif wcel c1 cdiv co cliou cfv cc wne wa eldifsn qreccl cmul
-      wf syl wceq sylbi cneg ctp wss liouf neg1cn 0cn tpssi mp3an fss ffvelcdmi
-      ax-1cn mp2an eldifi lioure recnd cpr liounzcl signne0 signmulself recid2d
-      qcn eldifsni fveq2d liou1 eqtrdi lioumul syl2anc 3eqtr2rd mulcan2ad ) ABC
-      DZEFZGAHIZJKZAJKZVOVLVMBFZVNLFVLABFZACMNVPABCOAPUAZBLVMJBGUBZCGUCZJRVTLUD
-      ZBLJRUEVSLFCLFGLFWAUFUGULVSCGLUHUIBVTLJUJUMUKSVLVQVOLFABVKUNZVQVOAUOUPSZW
-      CVLVOVSGUQFZVOCMAURZVOUSSVLVOVOQIZGVMAQIZJKZVNVOQIZVLWDWFGTWEVOUTSVLWHGJK
-      GVLWGGJVLAVLVQALFWBAVBSABCVCVAVDVEVFVLVPVQWHWITVRWBVMAVGVHVIVJ $.
+      ( cq cc0 csn cdif wcel c1 co cliou cfv cc wne wa eldifsn lioure recnd syl
+      cdiv cmul wceq qreccl sylbi eldifi cneg cpr liounzcl signmulself eldifsni
+      signne0 recid2d fveq2d liou1 eqtrdi lioumul syl2anc 3eqtr2rd mulcan2ad
+      qcn ) ABCDZEFZGARHZIJZAIJZVCUTVABFZVBKFUTABFZACLMVDABCNAUAUBZVDVBVAOPQUTV
+      EVCKFABUSUCZVEVCAOPQZVHUTVCGUDGUEFZVCCLAUFZVCUIQUTVCVCSHZGVAASHZIJZVBVCSH
+      ZUTVIVKGTVJVCUGQUTVMGIJGUTVLGIUTAUTVEAKFVGAURQABCUHUJUKULUMUTVDVEVMVNTVFV
+      GVAAUNUOUPUQ $.
   $}
 
   ${
@@ -885306,12 +885296,11 @@ $)
        function.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
     lioumulsq $p |- ( ( A e. QQ /\ B e. ( QQ \ { 0 } ) ) ->
       ( lam ` ( A x. ( B ^ 2 ) ) ) = ( lam ` A ) ) $=
-      ( cq wcel cc0 csn cdif wa c2 cexp co cmul cliou cfv c1 wceq cn0 adantl cc
-      wf eldifi 2nn0 qexpcl sylancl lioumul syldan liousq oveq2d cneg ctp liouf
-      wss neg1cn 0cn ax-1cn tpssi mp3an mp2an ffvelcdmi adantr mulridd 3eqtrd
-      fss ) ACDZBCEFZGDZHZABIJKZLKMNZAMNZVHMNZLKZVJOLKVJVDVFVHCDZVIVLPVGBCDZIQD
-      VMVFVNVDBCVEUARUBBIUCUDAVHUEUFVGVKOVJLVFVKOPVDBUGRUHVGVJVDVJSDVFCSAMCOUIZ
-      EOUJZMTVPSULZCSMTUKVOSDESDOSDVQUMUNUOVOEOSUPUQCVPSMVCURUSUTVAVB $.
+      ( cq wcel cc0 csn cdif wa c2 cexp co cmul cliou cfv c1 wceq eldifi adantl
+      cn0 2nn0 qexpcl sylancl lioumul syldan liousq oveq2d lioure recnd mulridd
+      cc adantr 3eqtrd ) ACDZBCEFZGDZHZABIJKZLKMNZAMNZUQMNZLKZUSOLKUSUMUOUQCDZU
+      RVAPUPBCDZISDVBUOVCUMBCUNQRTBIUAUBAUQUCUDUPUTOUSLUOUTOPUMBUERUFUPUSUMUSUJ
+      DUOUMUSAUGUHUKUIUL $.
   $}
 
   ${
@@ -885637,33 +885626,31 @@ $)
        (Contributed by Zhi Wang, 27-Oct-2026.) $)
     liouprod $p |- ( ( J e. Fin /\ F : J --> QQ ) ->
       ( lam ` prod_ k e. J ( F ` k ) ) = prod_ k e. J ( lam ` ( F ` k ) ) ) $=
-      ( vz wcel cv cfv cq wral cprod cliou wceq wi c0 prodeq1 fveq2d c1 wa cmul
-      cc vx vy vj vu vv cfn wf csn cun raleq eqeq12d imbi12d liou1 prod0 fveq2i
+      ( vz vj wcel cv cfv cq wral cprod cliou wceq wi c0 prodeq1 fveq2d wa cmul
+      cc vx vy vu vv cfn wf csn cun raleq eqeq12d imbi12d c1 liou1 prod0 fveq2i
       3eqtr4i a1i wn co cvv nfv nfra1 nfcv nfcprod1 nffv nfeq nfim simpl simpld
       vex simprd qsscn wss ssun1 simpr ssralv mpsyl r19.21bi sselid fveq2 vsnid
       nfan elun2 ax-mp eleq1d rspcv fprodsplitsn cbvralvw sylib qmulcl mpan9 1q
-      adantl fprodcllem syl2anc lioumul mpd oveq1d 3eqtrd cneg cc0 liouf neg1cn
-      ctp 0cn ax-1cn tpssi mp3an fss mp2an ffvelcdmi eqtr4d findcard2s ffvelcdm
-      syl exp31 ralrimiva impel ) CUFEAFZBGZHEZACIZCXTAJZKGZCXTKGZAJZLZCHBUGZYA
-      AUAFZIZYIXTAJZKGZYIYEAJZLZMYAANIZNXTAJZKGZNYEAJZLZMYAAUBFZIZYTXTAJZKGZYTY
-      EAJZLZMZYAAYTDFZUHZUIZIZUUIXTAJZKGZUUIYEAJZLZMYBYGMUAUBDCYINLZYJYOYNYSYAA
-      YINUJUUOYLYQYMYRUUOYKYPKYINXTAOPYINYEAOUKULYIYTLZYJUUAYNUUEYAAYIYTUJUUPYL
-      UUCYMUUDUUPYKUUBKYIYTXTAOPYIYTYEAOUKULYIUUILZYJUUJYNUUNYAAYIUUIUJUUQYLUUL
-      YMUUMUUQYKUUKKYIUUIXTAOPYIUUIYEAOUKULYICLZYJYBYNYGYAAYICUJUURYLYDYMYFUURY
-      KYCKYICXTAOPYICYEAOUKULYSYOQKGQYQYRUMYPQKXTAUNUOYEAUNUPUQYTUFEZUUGYTEURZR
-      ZUUFUUJUUNUVAUUFRZUUJRZUULUUDUUGBGZKGZSUSZUUMUVCUULUUBUVDSUSZKGZUUCUVESUS
-      ZUVFUVCUUKUVGKUVCYTUUGXTUVDAUTUVBUUJAUVAUUFAUVAAVAUUAUUEAYAAYTVBAUUCUUDAU
-      UBKAKVCYTXTAAYTVCZVDVEYTYEAUVJVDVFVGWBYAAUUIVBWBZAUVDVCUVCUUSUUTUVCUVAUUF
-      UVBUUJVHZVIZVIZUUGUTEUVCDVJUQZUVCUUSUUTUVMVKZUVCXSYTEZRZHTXTVLUVCYAAYTYTU
-      UIVMUVCUUJUUAYTUUHVNUVBUUJVOZYAAYTUUIVPVQZVRZVSXSUUGBVTZUVCHTUVDVLUUGUUIE
-      ZUVCUUJUVDHEZUUGUUHEUWCDWAUUGUUHYTWCWDUVSYAUWDAUUGUUIXSUUGLZXTUVDHUWBWEWF
-      VQZVSWGPUVCUUBHEZUWDUVHUVILUVCUUSUCFZBGZHEZUCYTIZUWGUVNUVCUUAUWKUVTYAUWJA
-      UCYTXSUWHLXTUWIHXSUWHBVTWEWHWIUUSUWKRZUDUEYTXTHAHTVMUWLVLUQUDFZHEUEFZHERU
-      WMUWNSUSHEUWLUWMUWNWJWMUUSUWKVHUWLUWKUVQYAUUSUWKVOUWJYAUCXSYTUWHXSLUWIXTH
-      UWHXSBVTWEWFWKQHEUWLWLUQWNWOUWFUUBUVDWPWOUVCUUCUUDUVESUVCUUAUUEUVTUVCUVAU
-      UFUVLVKWQWRWSUVCYTUUGYEUVEAUTUVKAUVEVCUVNUVOUVPUVRYAYETEUWAHTXTKHQWTZXAQX
-      DZKUGUWPTVMZHTKUGXBUWOTEXATEQTEUWQXCXEXFUWOXAQTXGXHHUWPTKXIXJZXKXOUWEXTUV
-      DKUWBPUVCUWDUVETEUWFHTUVDKUWRXKXOWGXLXPXMYHYAACCHXSBXNXQXR $.
+      adantl fprodcllem syl2anc lioumul oveq1d 3eqtrd lioure recnd eqtr4d exp31
+      mpd syl findcard2s ffvelcdm ralrimiva impel ) CUEFAGZBHZIFZACJZCXJAKZLHZC
+      XJLHZAKZMZCIBUFZXKAUAGZJZXSXJAKZLHZXSXOAKZMZNXKAOJZOXJAKZLHZOXOAKZMZNXKAU
+      BGZJZYJXJAKZLHZYJXOAKZMZNZXKAYJDGZUGZUHZJZYSXJAKZLHZYSXOAKZMZNXLXQNUAUBDC
+      XSOMZXTYEYDYIXKAXSOUIUUEYBYGYCYHUUEYAYFLXSOXJAPQXSOXOAPUJUKXSYJMZXTYKYDYO
+      XKAXSYJUIUUFYBYMYCYNUUFYAYLLXSYJXJAPQXSYJXOAPUJUKXSYSMZXTYTYDUUDXKAXSYSUI
+      UUGYBUUBYCUUCUUGYAUUALXSYSXJAPQXSYSXOAPUJUKXSCMZXTXLYDXQXKAXSCUIUUHYBXNYC
+      XPUUHYAXMLXSCXJAPQXSCXOAPUJUKYIYEULLHULYGYHUMYFULLXJAUNUOXOAUNUPUQYJUEFZY
+      QYJFURZRZYPYTUUDUUKYPRZYTRZUUBYNYQBHZLHZSUSZUUCUUMUUBYLUUNSUSZLHZYMUUOSUS
+      ZUUPUUMUUAUUQLUUMYJYQXJUUNAUTUULYTAUUKYPAUUKAVAYKYOAXKAYJVBAYMYNAYLLALVCY
+      JXJAAYJVCZVDVEYJXOAUUTVDVFVGWBXKAYSVBWBZAUUNVCUUMUUIUUJUUMUUKYPUULYTVHZVI
+      ZVIZYQUTFUUMDVJUQZUUMUUIUUJUVCVKZUUMXIYJFZRZITXJVLUUMXKAYJYJYSVMUUMYTYKYJ
+      YRVNUULYTVOZXKAYJYSVPVQZVRZVSXIYQBVTZUUMITUUNVLYQYSFZUUMYTUUNIFZYQYRFUVMD
+      WAYQYRYJWCWDUVIXKUVNAYQYSXIYQMZXJUUNIUVLWEWFVQZVSWGQUUMYLIFZUVNUURUUSMUUM
+      UUIEGZBHZIFZEYJJZUVQUVDUUMYKUWAUVJXKUVTAEYJXIUVRMXJUVSIXIUVRBVTWEWHWIUUIU
+      WARZUCUDYJXJIAITVMUWBVLUQUCGZIFUDGZIFRUWCUWDSUSIFUWBUWCUWDWJWMUUIUWAVHUWB
+      UWAUVGXKUUIUWAVOUVTXKEXIYJUVRXIMUVSXJIUVRXIBVTWEWFWKULIFUWBWLUQWNWOUVPYLU
+      UNWPWOUUMYMYNUUOSUUMYKYOUVJUUMUUKYPUVBVKXCWQWRUUMYJYQXOUUOAUTUVAAUUOVCUVD
+      UVEUVFUVHXKXOTFUVKXKXOXJWSWTXDUVOXJUUNLUVLQUUMUVNUUOTFUVPUVNUUOUUNWSWTXDW
+      GXAXBXEXRXKACCIXIBXFXGXH $.
   $}
 
   ${
