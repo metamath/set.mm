@@ -184660,6 +184660,26 @@ $)
       SADWPLWPFGWEDNOWOPWQVTZTWAADWPMWRUAWAWBWC $.
   $}
 
+  ${
+    $d x D $.  $d f x I $.  $d x .1. $.  $d x ph $.  $d f x R $.  $d x W $.
+    $d f x .0. $.
+    mpl1.p $e |- P = ( I mPoly R ) $.
+    mpl1.z $e |- .0. = ( 0g ` R ) $.
+    mpl1.o $e |- .1. = ( 1r ` R ) $.
+    mpl1.u $e |- U = ( 1r ` P ) $.
+    mpl1fi.i $e |- ( ph -> I e. Fin ) $.
+    mpl1.r $e |- ( ph -> R e. Ring ) $.
+    $( The identity element of the ring of polynomials.  (Contributed by Mario
+       Carneiro, 10-Jan-2015.) $)
+    mpl1fi $p |- ( ph ->
+      U = ( x e. ( NN0 ^m I ) |-> if ( x = ( I X. { 0 } ) , .1. , .0. ) ) ) $=
+      ( cur cfv co wceq wcel eqid cn0 cmap cv cc0 csn cxp cif cmpt cmps cbs cfn
+      cress crg mplval2g syl2anc fveq2d csubrg mplsubrgfi subrg1 psr1fi 3eqtr2d
+      syl eqtrid ) AECOPZBUAGUBQBUCGUDUEUFRFHUGUHZLAVDGDUIQZCUJPZULQZOPZVFOPZVE
+      ACVHOAGUKSDUMSCVHRMNCDVFVGGUKUMIVFTZVGTZUNUOUPAVGVFUQPSVJVIRACDVFVGGVKIVL
+      MNURVGVFVHVJVHTVJTZUSVBABDVFVJFGHVKMNJKVMUTVAVC $.
+  $}
+
 
 $(
 ###############################################################################
