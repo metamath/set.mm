@@ -7427,7 +7427,7 @@ $)
 
   $( A single axiom for Boolean algebra known as DN_1.  See
      ~ http://www-unix.mcs.anl.gov/~~mccune/papers/basax/v12.pdf .
-     (Contributed by Jeffrey Hankins, 3-Jul-2009.)  (Proof shortened by Andrew
+     (Contributed by Jeff Hankins, 3-Jul-2009.)  (Proof shortened by Andrew
      Salmon, 13-May-2011.)  (Proof shortened by Wolf Lammen, 6-Jan-2013.) $)
   dn1 $p |- ( -. ( -. ( -. ( ph \/ ps ) \/ ch ) \/
             -. ( ph \/ -. ( -. ch \/ -. ( ch \/ th ) ) ) ) <-> ch ) $=
@@ -12604,8 +12604,9 @@ $)
        theorem to be proved and does not contain ` x ` .  Then we apply
        ~ exlimiv to arrive at ` ( E. x ph -> ps ) ` .  Finally, we separately
        prove ` E. x ph ` and detach it with modus ponens ~ ax-mp to arrive at
-       the final theorem ` ps ` .  (Contributed by NM, 5-Aug-1993.)  (Revised
-       by Wolf Lammen to remove dependency on ax-9 and ax-8, 4-Dec-2017.) $)
+       the final theorem ` ps ` .  (Contributed by NM, 5-Aug-1993.)  Remove
+       dependence on ~ ax-8 and ~ ax-9 .  (Revised by Wolf Lammen,
+       4-Dec-2017.) $)
     exlimiv $p |- ( E. x ph -> ps ) $=
       ( wex eximi ax17e syl ) ACEBCEBABCDFBCGH $.
   $}
@@ -12623,8 +12624,8 @@ $)
     $d x ch $.  $d x ph $.
     exlimdv.1 $e |- ( ph -> ( ps -> ch ) ) $.
     $( Deduction from Theorem 19.23 of [Margaris] p. 90.  (Contributed by NM,
-       27-Apr-1994.)  (Revised by Wolf Lammen to remove dependency on ax-9 and
-       ax-8, 4-Dec-2017.) $)
+       27-Apr-1994.)  Remove dependence on ~ ax-8 and ~ ax-9 .  (Revised by
+       Wolf Lammen, 4-Dec-2017.) $)
     exlimdv $p |- ( ph -> ( E. x ps -> ch ) ) $=
       ( wex eximdv ax17e syl6 ) ABDFCDFCABCDEGCDHI $.
   $}
@@ -12971,8 +12972,8 @@ $)
   $( Theorem 19.2 of [Margaris] p. 89.  Note:  This proof is very different
      from Margaris' because we only have Tarski's FOL axiom schemes available
      at this point.  See the later ~ 19.2g for a more conventional proof.
-     (Contributed by NM, 2-Aug-2017.)  (Revised by Wolf Lammen to remove
-     dependency on ax-8, 4-Dec-2017.) $)
+     (Contributed by NM, 2-Aug-2017.)  Remove dependence on ~ ax-8 .  (Revised
+     by Wolf Lammen, 4-Dec-2017.) $)
   19.2 $p |- ( A. x ph -> E. x ph ) $=
     ( wi id exiftru 19.35i ) AABAACBADEF $.
 
@@ -13000,13 +13001,13 @@ $)
   ${
     $d x ph $.
     $( Special case of Theorem 19.9 of [Margaris] p. 89.  (Contributed by NM,
-       28-May-1995.)  (Revised by NM, 1-Aug-2017.)  (Revised by Wolf Lammen to
-       remove dependency on ax-8, 4-Dec-2017.) $)
+       28-May-1995.)  (Revised by NM, 1-Aug-2017.)  Remove dependence on
+       ~ ax-8 .  (Revised by Wolf Lammen, 4-Dec-2017.) $)
     19.9v $p |- ( E. x ph <-> ph ) $=
       ( wex ax17e ax-17 19.8w impbii ) ABCAABDABABEFG $.
 
     $( Special case of Theorem 19.3 of [Margaris] p. 89.  (Contributed by NM,
-       1-Aug-2017.)  (Revised by Wolf Lammen to remove dependency on ax-8,
+       1-Aug-2017.)  Remove dependence on ~ ax-8 .  (Revised by Wolf Lammen,
        4-Dec-2017.) $)
     19.3v $p |- ( A. x ph <-> ph ) $=
       ( wal wn wex alex 19.9v con2bii bitr4i ) ABCADZBEZDAABFKAJBGHI $.
@@ -13883,16 +13884,16 @@ $)
   $}
 
   $( Theorem 19.11 of [Margaris] p. 89.  (Contributed by NM, 5-Aug-1993.)
-     (Revised by Wolf Lammen to remove dependency on ~ ax-11 ~ ax-6 ~ ax-9
-     ~ ax-8 and ~ ax-17 , 8-Jan-2018.) $)
+     Remove dependence on ~ ax-11 , ~ ax-6 , ~ ax-9 , ~ ax-8 , ~ ax-17 .
+     (Revised by Wolf Lammen, 8-Jan-2018.) $)
   excom $p |- ( E. x E. y ph <-> E. y E. x ph ) $=
     ( wn wal wex alcom notbii exnal 3bitr4i df-ex exbii ) ADZCEZDZBFZMBEZDZCFZA
     CFZBFABFZCFNBEZDQCEZDPSUBUCMBCGHNBIQCIJTOBACKLUARCABKLJ $.
 
   $( One direction of Theorem 19.11 of [Margaris] p. 89.  (Contributed by NM,
-     5-Aug-1993.)  (Revised by Mario Carneiro, 24-Sep-2016.)  (Revised by Wolf
-     Lammen to remove dependency on ~ ax-11 ~ ax-6 ~ ax-9 ~ ax-8 and ~ ax-17 ,
-     8-Jan-2018.) $)
+     5-Aug-1993.)  (Revised by Mario Carneiro, 24-Sep-2016.)  Remove dependence
+     on ~ ax-11 , ~ ax-6 , ~ ax-9 , ~ ax-8 , ~ ax-17 .  (Revised by Wolf
+     Lammen, 8-Jan-2018.) $)
   excomim $p |- ( E. x E. y ph -> E. y E. x ph ) $=
     ( wex excom biimpi ) ACDBDABDCDABCEF $.
 
@@ -14206,7 +14207,7 @@ $)
     ( wex wn wal wi df-ex hbnt con1d syl5bi ) ABCADBEZDAABEFBEZAABGLAKABHIJ $.
 
   $( A closed version of ~ 19.9 .  (Contributed by NM, 5-Aug-1993.)  (Revised
-     by Mario Carneiro, 24-Sep-2016.)  (Proof shortended by Wolf Lammen,
+     by Mario Carneiro, 24-Sep-2016.)  (Proof shortened by Wolf Lammen,
      30-Dec-2017.) $)
   19.9t $p |- ( F/ x ph -> ( E. x ph <-> ph ) ) $=
     ( wnf wex wal wi df-nf 19.9ht sylbi 19.8a impbid1 ) ABCZABDZALAABEFBEMAFABG
@@ -17757,8 +17758,8 @@ $)
        with specific instances of wffs containing no wff variables - this axiom
        introduces the concept of a setvar variable not occurring in a wff (as
        opposed to just two setvar variables being distinct).  (Contributed by
-       NM, 19-Aug-2017.)  (New usage is discouraged.)  (Proof modification
-       discouraged.) $)
+       NM, 19-Aug-2017.)  (New usage is discouraged.)
+       (Proof modification is discouraged.) $)
     ax17o $p |- ( ph -> A. x ph ) $=
       ( ax-17 ) ABC $.
   $}
@@ -23017,8 +23018,7 @@ $)
     $d A y $.
     $( Similar to Lemma 24 of [Monk2] p. 114, except the quantification of the
        antecedent is restricted.  Derived automatically from hbra2VD in set.mm.
-       Contributed by Alan Sare 31-Dec-2011.  (Contributed by NM,
-       31-Dec-2011.) $)
+       (Contributed by Alan Sare, 31-Dec-2011.) $)
     nfra2 $p |- F/ y A. x e. A A. y e. B ph $=
       ( wral nfcv nfra1 nfral ) ACEFCBDCDGACEHI $.
   $}
@@ -25207,8 +25207,8 @@ $)
     gencbvex2.2 $e |- ( A = y -> ( ph <-> ps ) ) $.
     gencbvex2.3 $e |- ( A = y -> ( ch <-> th ) ) $.
     gencbvex2.4 $e |- ( th -> E. x ( ch /\ A = y ) ) $.
-    $( Restatement of ~ gencbvex with weaker hypotheses.  (Contributed by
-       Jeffrey Hankins, 6-Dec-2006.) $)
+    $( Restatement of ~ gencbvex with weaker hypotheses.  (Contributed by Jeff
+       Hankins, 6-Dec-2006.) $)
     gencbvex2 $p |- ( E. x ( ch /\ ph ) <-> E. y ( th /\ ps ) ) $=
       ( cv wceq wa wex biimpac exlimiv impbii gencbvex ) ABCDEFGHIJDCGFLMZNZEOK
       UADETCDJPQRS $.
@@ -35514,8 +35514,8 @@ $)
 
     ${
       opkeq12i.2 $e |- C = D $.
-      $( Equality inference for ordered pairs.  (The proof was shortened by
-         Eric Schmidt, 4-Apr-2007.)  (Contributed by NM, 16-Dec-2006.) $)
+      $( Equality inference for ordered pairs.  (Proof shortened by Eric
+         Schmidt, 4-Apr-2007.)  (Contributed by NM, 16-Dec-2006.) $)
       opkeq12i $p |- << A , C >> = << B , D >> $=
         ( wceq copk opkeq12 mp2an ) ABGCDGACHBDHGEFACBDIJ $.
     $}
@@ -35535,8 +35535,8 @@ $)
 
     ${
       opkeq12d.2 $e |- ( ph -> C = D ) $.
-      $( Equality deduction for ordered pairs.  (The proof was shortened by
-         Andrew Salmon, 29-Jun-2011.)  (Contributed by NM, 16-Dec-2006.) $)
+      $( Equality deduction for ordered pairs.  (Proof shortened by Andrew
+         Salmon, 29-Jun-2011.)  (Contributed by NM, 16-Dec-2006.) $)
       opkeq12d $p |- ( ph -> << A , C >> = << B , D >> ) $=
         ( wceq copk opkeq12 syl2anc ) ABCHDEHBDICEIHFGBDCEJK $.
     $}
@@ -36053,7 +36053,7 @@ $)
   ${
     $d A x y $.
     $( A class equals the union of its power class.  Exercise 6(a) of
-       [Enderton] p. 38.  (The proof was shortened by Alan Sare, 28-Dec-2008.)
+       [Enderton] p. 38.  (Proof shortened by Alan Sare, 28-Dec-2008.)
        (Contributed by SF, 14-Oct-1996.)  (Revised by SF, 29-Dec-2008.) $)
     unipw $p |- U. ~P A = A $=
       ( vx vy cpw cuni cv wcel wa wex eluni wss wi vex elpw ssel impcom exlimiv
@@ -36480,8 +36480,8 @@ $)
 
   $( Note that ` x ` is a dummy variable in the proof below. $)
   $( Compute the power set of the empty set.  Theorem 89 of [Suppes] p. 47.
-     (The proof was shortened by Andrew Salmon, 29-Jun-2011.)  (Contributed by
-     SF, 5-Aug-1993.)  (Revised by SF, 29-Jun-2011.) $)
+     (Proof shortened by Andrew Salmon, 29-Jun-2011.)  (Contributed by SF,
+     5-Aug-1993.)  (Revised by SF, 29-Jun-2011.) $)
   pw0 $p |- ~P (/) = { (/) } $=
     ( vx cv c0 wss cab wceq cpw csn ss0b abbii df-pw df-sn 3eqtr4i ) ABZCDZAENC
     FZAECGCHOPANIJACKACLM $.
@@ -42593,8 +42593,8 @@ $)
 
     ${
       opeq12i.2 $e |- C = D $.
-      $( Equality inference for ordered pairs.  (The proof was shortened by
-         Eric Schmidt, 4-Apr-2007.)  (Contributed by SF, 16-Dec-2006.) $)
+      $( Equality inference for ordered pairs.  (Proof shortened by Eric
+         Schmidt, 4-Apr-2007.)  (Contributed by SF, 16-Dec-2006.) $)
       opeq12i $p |- <. A , C >. = <. B , D >. $=
         ( cop opeq1i opeq2i eqtri ) ACGBCGBDGABCEHCDBFIJ $.
     $}
@@ -42614,9 +42614,9 @@ $)
 
     ${
       opeq12d.2 $e |- ( ph -> C = D ) $.
-      $( Equality deduction for ordered pairs.  (The proof was shortened by
-         Andrew Salmon, 29-Jun-2011.)  (Contributed by SF, 16-Dec-2006.)
-         (Revised by SF, 29-Jun-2011.) $)
+      $( Equality deduction for ordered pairs.  (Proof shortened by Andrew
+         Salmon, 29-Jun-2011.)  (Contributed by SF, 16-Dec-2006.)  (Revised by
+         SF, 29-Jun-2011.) $)
       opeq12d $p |- ( ph -> <. A , C >. = <. B , D >. ) $=
         ( cop opeq1d opeq2d eqtrd ) ABDHCDHCEHABCDFIADECGJK $.
     $}
@@ -43344,9 +43344,9 @@ $)
 
     ${
       breq12d.2 $e |- ( ph -> C = D ) $.
-      $( Equality deduction for a binary relation.  (The proof was shortened by
-         Andrew Salmon, 9-Jul-2011.)  (Contributed by NM, 8-Feb-1996.)
-         (Revised by set.mm contributors, 9-Jul-2011.) $)
+      $( Equality deduction for a binary relation.  (Proof shortened by Andrew
+         Salmon, 9-Jul-2011.)  (Contributed by NM, 8-Feb-1996.)  (Revised by
+         set.mm contributors, 9-Jul-2011.) $)
       breq12d $p |- ( ph -> ( A R C <-> B R D ) ) $=
         ( wceq wbr wb breq12 syl2anc ) ABCIDEIBDFJCEFJKGHBCDEFLM $.
     $}
@@ -43600,8 +43600,8 @@ $)
 
   ${
     ssbri.1 $e |- A C_ B $.
-    $( Inference from a subclass relationship of binary relations.  (The proof
-       was shortened by Andrew Salmon, 9-Jul-2011.)  (Contributed by NM,
+    $( Inference from a subclass relationship of binary relations.  (Proof
+       shortened by Andrew Salmon, 9-Jul-2011.)  (Contributed by NM,
        28-Mar-2007.)  (Revised by set.mm contributors, 9-Jul-2011.) $)
     ssbri $p |- ( C A D -> C B D ) $=
       ( wss wbr wi ssid a1i ssbrd ax-mp ) AAFZCDAGCDBGHAIMABCDABFMEJKL $.
@@ -43722,8 +43722,8 @@ $)
   ${
     $d x z $.  $d y z $.  $d ph z $.
     $( The law of concretion.  Special case of Theorem 9.5 of [Quine] p. 61.
-       (The proof was shortened by Andrew Salmon, 25-Jul-2011.)  (Contributed
-       by NM, 14-Apr-1995.)  (Revised by set.mm contributors, 25-Jul-2011.) $)
+       (Proof shortened by Andrew Salmon, 25-Jul-2011.)  (Contributed by NM,
+       14-Apr-1995.)  (Revised by set.mm contributors, 25-Jul-2011.) $)
     opabid $p |- ( <. x , y >. e. { <. x , y >. | ph } <-> ph ) $=
       ( vz cv cop wceq wa wex copab vex opex copsexg bicomd df-opab elab2 ) DEZ
       BEZCEZFZGZAHCIBIZADTABCJRSBKCKLUAAUBABCQMNABCDOP $.
@@ -45360,9 +45360,9 @@ $)
 
   ${
     $d x y A $.  $d x y B $.  $d x y C $.  $d x y D $.
-    $( Ordered pair membership in a cross product.  (The proof was shortened by
-       Andrew Salmon, 12-Aug-2011.)  (Contributed by NM, 15-Nov-1994.)
-       (Revised by set.mm contributors, 12-Aug-2011.) $)
+    $( Ordered pair membership in a cross product.  (Proof shortened by Andrew
+       Salmon, 12-Aug-2011.)  (Contributed by NM, 15-Nov-1994.)  (Revised by
+       set.mm contributors, 12-Aug-2011.) $)
     opelxp $p |- ( <. A , B >. e. ( C X. D ) <-> ( A e. C /\ B e. D ) ) $=
       ( vx vy cop cv wceq wcel wa wex cxp eqcom bitri anbi1i an4 2exbii df-clel
       opth elxp anbi12i eeanv bitr4i 3bitr4i ) ABGZEHZFHZGZIZUGCJZUHDJZKZKZFLEL
@@ -45753,9 +45753,9 @@ $)
   ${
     $d x y z w A $.  $d x y z w B $.
     $( A subclass relationship depends only on a relation's ordered pairs.
-       Theorem 3.2(i) of [Monk1] p. 33.  (The proof was shortened by Andrew
-       Salmon, 27-Aug-2011.)  (Contributed by NM, 2-Aug-1994.)  (Revised by
-       set.mm contributors, 27-Aug-2011.) $)
+       Theorem 3.2(i) of [Monk1] p. 33.  (Proof shortened by Andrew Salmon,
+       27-Aug-2011.)  (Contributed by NM, 2-Aug-1994.)  (Revised by set.mm
+       contributors, 27-Aug-2011.) $)
     ssrel $p |- ( A C_ B <->
                 A. x A. y ( <. x , y >. e. A -> <. x , y >. e. B ) ) $=
       ( vz wss cv cop wcel wi wal ssel alrimivv cproj1 cproj2 wceq imbi12d spcv
@@ -45873,9 +45873,9 @@ $)
   ${
     $d x y A $.  $d x y B $.  $d x y C $.  $d x y D $.
     $( Subset theorem for cross product.  Generalization of Theorem 101 of
-       [Suppes] p. 52.  (The proof was shortened by Andrew Salmon,
-       27-Aug-2011.)  (Contributed by NM, 26-Aug-1995.)  (Revised by set.mm
-       contributors, 27-Aug-2011.) $)
+       [Suppes] p. 52.  (Proof shortened by Andrew Salmon, 27-Aug-2011.)
+       (Contributed by NM, 26-Aug-1995.)  (Revised by set.mm contributors,
+       27-Aug-2011.) $)
     xpss12 $p |- ( ( A C_ B /\ C C_ D ) -> ( A X. C ) C_ ( B X. D ) ) $=
       ( vx vy wss wa cv wcel copab cxp ssel im2anan9 ssopab2dv df-xp 3sstr4g )
       ABGZCDGZHZEIZAJZFIZCJZHZEFKUABJZUCDJZHZEFKACLBDLTUEUHEFRUBUFSUDUGABUAMCDU
@@ -45952,9 +45952,8 @@ $)
       BDUHMNUJURUKUSACDUGUHOBCDUGUHOPQUIUBUCSUECDUGUHOTUA $.
 
     $( The intersection of two cross products.  Exercise 9 of [TakeutiZaring]
-       p. 25.  (The proof was shortened by Andrew Salmon, 27-Aug-2011.)
-       (Contributed by NM, 3-Aug-1994.)  (Revised by set.mm contributors,
-       27-Aug-2011.) $)
+       p. 25.  (Proof shortened by Andrew Salmon, 27-Aug-2011.)  (Contributed
+       by NM, 3-Aug-1994.)  (Revised by set.mm contributors, 27-Aug-2011.) $)
     inxp $p |- ( ( A X. B ) i^i ( C X. D ) ) =
                    ( ( A i^i C ) X. ( B i^i D ) ) $=
       ( vx vy cv wcel wa copab cin cxp inopab elin anbi12i bitr4i opabbii eqtri
@@ -46021,7 +46020,7 @@ $)
       ( cvv wcel cid wbr wceq wb ideqg ax-mp ) BDEABFGABHICABDJK $.
   $}
 
-  $( A set is identical to itself.  (The proof was shortened by Andrew Salmon,
+  $( A set is identical to itself.  (Proof shortened by Andrew Salmon,
      27-Aug-2011.)  (Contributed by NM, 28-May-2008.)  (Revised by set.mm
      contributors, 27-Aug-2011.) $)
   ididg $p |- ( A e. V -> A _I A ) $=
@@ -46122,8 +46121,8 @@ $)
       ZUMEIZUMGTZDIZLZAMUNVBLZAMUQFGBCJJUIUSBRZVCVDAVEUTUNVBUSBUMEUBUCSVACRZVDU
       PAVFVBUOUNVACUMDUDUESFGADEUFUGUH $.
 
-    $( Ordered pair membership in a composition.  (The proof was shortened by
-       Andrew Salmon, 27-Aug-2011.)  (Contributed by set.mm contributors,
+    $( Ordered pair membership in a composition.  (Proof shortened by Andrew
+       Salmon, 27-Aug-2011.)  (Contributed by set.mm contributors,
        27-Dec-1996.)  (Revised by set.mm contributors, 27-Aug-2011.) $)
     opelco $p |- ( <. A , B >. e. ( C o. D ) <-> E. x ( A D x /\ x C B ) ) $=
       ( cop ccom wcel wbr cv wa wex df-br brco bitr3i ) BCFDEGZHBCPIBAJZEIQCDIK
@@ -46208,9 +46207,9 @@ $)
   ${
     $d x y z A $.  $d x y z B $.
     $( Distributive law of converse over class composition.  Theorem 26 of
-       [Suppes] p. 64.  (The proof was shortened by Andrew Salmon,
-       27-Aug-2011.)  (Contributed by set.mm contributors, 19-Mar-1998.)
-       (Revised by set.mm contributors, 27-Aug-2011.) $)
+       [Suppes] p. 64.  (Proof shortened by Andrew Salmon, 27-Aug-2011.)
+       (Contributed by set.mm contributors, 19-Mar-1998.)  (Revised by set.mm
+       contributors, 27-Aug-2011.) $)
     cnvco $p |- `' ( A o. B ) = ( `' B o. `' A ) $=
       ( vx vy vz cv ccom wbr copab ccnv wa wex brcnv anbi12i ancom bitr3i exbii
       brco bitri opabbii df-cnv df-co 3eqtr4i ) CFZDFZABGZHZDCIUEEFZAJZHZUHUDBJ
@@ -46354,9 +46353,9 @@ $)
   ${
     $d A x y $.  $d B x y $.
     $( The domain of a union is the union of domains.  Exercise 56(a) of
-       [Enderton] p. 65.  (The proof was shortened by Andrew Salmon,
-       27-Aug-2011.)  (Contributed by set.mm contributors, 12-Aug-1994.)
-       (Revised by set.mm contributors, 27-Aug-2011.) $)
+       [Enderton] p. 65.  (Proof shortened by Andrew Salmon, 27-Aug-2011.)
+       (Contributed by set.mm contributors, 12-Aug-1994.)  (Revised by set.mm
+       contributors, 27-Aug-2011.) $)
     dmun $p |- dom ( A u. B ) = ( dom A u. dom B ) $=
       ( vx vy cun cdm cv cop wcel wex cab dfdm3 wo eldm orbi12i elun df-br brun
       wbr bitr3i exbii 19.43 bitri 3bitr4i eqabi eqtr4i ) ABEZFCGZDGZHUGIZDJZCK
@@ -46421,17 +46420,16 @@ $)
   ${
     $d x y $.
     $( The domain of the empty set is empty.  Part of Theorem 3.8(v) of [Monk1]
-       p. 36.  (The proof was shortened by Andrew Salmon, 27-Aug-2011.)
-       (Contributed by set.mm contributors, 4-Jul-1994.)  (Revised by set.mm
-       contributors, 27-Aug-2011.) $)
+       p. 36.  (Proof shortened by Andrew Salmon, 27-Aug-2011.)  (Contributed
+       by set.mm contributors, 4-Jul-1994.)  (Revised by set.mm contributors,
+       27-Aug-2011.) $)
     dm0 $p |- dom (/) = (/) $=
       ( vx vy c0 cdm wceq cv wcel wn eq0 cop wex noel nex eldm2 mtbir mpgbir )
       CDZCEAFZQGZHAAQISRBFJZCGZBKUABTLMBRCNOP $.
 
-    $( The domain of the identity relation is the universe.  (The proof was
-       shortened by Andrew Salmon, 27-Aug-2011.)  (Contributed by set.mm
-       contributors, 30-Apr-1998.)  (Revised by set.mm contributors,
-       27-Aug-2011.) $)
+    $( The domain of the identity relation is the universe.  (Proof shortened
+       by Andrew Salmon, 27-Aug-2011.)  (Contributed by set.mm contributors,
+       30-Apr-1998.)  (Revised by set.mm contributors, 27-Aug-2011.) $)
     dmi $p |- dom _I = _V $=
       ( vx vy cid cdm cvv wceq cv wcel eqv wbr wex weq a9e vex ideq bitri exbii
       equcom mpbir eldm mpgbir ) CDZEFAGZUBHZAAUBIUDUCBGZCJZBKZUGBALZBKBAMUFUHB
@@ -46466,9 +46464,9 @@ $)
   ${
     $d x y A $.  $d x y B $.
     $( The domain of a cross product.  Part of Theorem 3.13(x) of [Monk1]
-       p. 37.  (The proof was shortened by Andrew Salmon, 27-Aug-2011.)
-       (Contributed by set.mm contributors, 28-Jul-1995.)  (Revised by set.mm
-       contributors, 27-Aug-2011.) $)
+       p. 37.  (Proof shortened by Andrew Salmon, 27-Aug-2011.)  (Contributed
+       by set.mm contributors, 28-Jul-1995.)  (Revised by set.mm contributors,
+       27-Aug-2011.) $)
     dmxp $p |- ( B =/= (/) -> dom ( A X. B ) = A ) $=
       ( vy vx c0 wne cxp cdm cv wcel wa copab df-xp dmeqi wex wral n0 ralrimivw
       wceq biimpi dmopab3 sylib syl5eq ) BEFZABGZHCIAJDIBJZKCDLZHZAUEUGCDABMNUD
@@ -46487,10 +46485,9 @@ $)
   dmxpin $p |- dom ( ( A X. A ) i^i ( B X. B ) ) = ( A i^i B ) $=
     ( cxp cin cdm inxp dmeqi dmxpid eqtri ) AACBBCDZEABDZKCZEKJLAABBFGKHI $.
 
-  $( The cross product of a class with itself is one-to-one.  (The proof was
-     shortened by Andrew Salmon, 27-Aug-2011.)  (Contributed by set.mm
-     contributors, 5-Nov-2006.)  (Revised by set.mm contributors,
-     27-Aug-2011.) $)
+  $( The cross product of a class with itself is one-to-one.  (Proof shortened
+     by Andrew Salmon, 27-Aug-2011.)  (Contributed by set.mm contributors,
+     5-Nov-2006.)  (Revised by set.mm contributors, 27-Aug-2011.) $)
   xpid11 $p |- ( ( A X. A ) = ( B X. B ) <-> A = B ) $=
     ( cxp wceq cdm dmeq dmxpid 3eqtr3g xpeq12 anidms impbii ) AACZBBCZDZABDZNLE
     MEABLMFAGBGHONABABIJK $.
@@ -46684,9 +46681,9 @@ $)
       GUJDUGUIUHLUJUDUEABMUIUHNOPDUEUBRDUEABQST $.
 
     $( Alternate definition of image.  Compare definition (d) of [Enderton]
-       p. 44.  (The proof was shortened by Andrew Salmon, 27-Aug-2011.)
-       (Contributed by set.mm contributors, 14-Aug-1994.)  (Revised by set.mm
-       contributors, 27-Aug-2011.) $)
+       p. 44.  (Proof shortened by Andrew Salmon, 27-Aug-2011.)  (Contributed
+       by set.mm contributors, 14-Aug-1994.)  (Revised by set.mm contributors,
+       27-Aug-2011.) $)
     dfima4 $p |- ( A " B ) = { y | E. x ( x e. B /\ <. x , y >. e. A ) } $=
       ( cima cv wbr wrex cab wcel cop wa df-ima df-br rexbii df-rex bitri abbii
       wex eqtri ) CDEAFZBFZCGZADHZBIUADJUAUBKCJZLASZBIBACDMUDUFBUDUEADHUFUCUEAD
@@ -46843,7 +46840,7 @@ $)
 
   ${
     $d x y z A $.  $d x y z B $.
-    $( Domain of a composition.  Theorem 21 of [Suppes] p. 63.  (The proof was
+    $( Domain of a composition.  Theorem 21 of [Suppes] p. 63.  (Proof
        shortened by Andrew Salmon, 27-Aug-2011.)  (Contributed by set.mm
        contributors, 19-Mar-1998.)  (Revised by set.mm contributors,
        27-Aug-2011.) $)
@@ -46862,7 +46859,7 @@ $)
 
   ${
     $d x y z A $.  $d x y z B $.
-    $( Domain of a composition.  (The proof was shortened by Andrew Salmon,
+    $( Domain of a composition.  (Proof shortened by Andrew Salmon,
        27-Aug-2011.)  (Contributed by set.mm contributors, 28-May-1998.)
        (Revised by set.mm contributors, 27-Aug-2011.) $)
     dmcosseq $p |- ( ran B C_ dom A -> dom ( A o. B ) = dom B ) $=
@@ -46903,9 +46900,9 @@ $)
     IAJK $.
 
   $( Ordered pair membership in a restriction when the first member belongs to
-     the restricting class.  (The proof was shortened by Andrew Salmon,
-     27-Aug-2011.)  (Contributed by set.mm contributors, 30-Apr-2004.)
-     (Revised by set.mm contributors, 27-Aug-2011.) $)
+     the restricting class.  (Proof shortened by Andrew Salmon, 27-Aug-2011.)
+     (Contributed by set.mm contributors, 30-Apr-2004.)  (Revised by set.mm
+     contributors, 27-Aug-2011.) $)
   opres $p |- ( A e. D ->
                   ( <. A , B >. e. ( C |` D ) <-> <. A , B >. e. C ) ) $=
     ( wcel cop wa cres iba opelres syl6rbbr ) ADEZABFZCEZNLGMCDHELNIABCDJK $.
@@ -46989,8 +46986,8 @@ $)
     ( wss cvv cxp cin cres ssrin df-res 3sstr4g ) ABDACEFZGBLGACHBCHABLIACJBCJK
     $.
 
-  $( Subclass theorem for restriction.  (The proof was shortened by Andrew
-     Salmon, 27-Aug-2011.)  (Contributed by set.mm contributors, 22-Mar-1998.)
+  $( Subclass theorem for restriction.  (Proof shortened by Andrew Salmon,
+     27-Aug-2011.)  (Contributed by set.mm contributors, 22-Mar-1998.)
      (Revised by set.mm contributors, 27-Aug-2011.) $)
   ssres2 $p |- ( A C_ B -> ( C |` A ) C_ ( C |` B ) ) $=
     ( wss cvv cxp cin cres xpss1 sslin syl df-res 3sstr4g ) ABDZCAEFZGZCBEFZGZC
@@ -47062,7 +47059,7 @@ $)
       $.
 
     $( A subclass of the identity function is the identity function restricted
-       to its domain.  (The proof was shortened by Andrew Salmon, 27-Aug-2011.)
+       to its domain.  (Proof shortened by Andrew Salmon, 27-Aug-2011.)
        (Contributed by set.mm contributors, 13-Dec-2003.)  (Revised by set.mm
        contributors, 27-Aug-2011.) $)
     iss $p |- ( A C_ _I <-> A = ( _I |` dom A ) ) $=
@@ -47210,8 +47207,8 @@ $)
 
   ${
     $d x A $.  $d x B $.  $d x C $.
-    $( Membership in an image of a singleton.  (The proof was shortened by
-       Andrew Salmon, 27-Aug-2011.)  (Contributed by set.mm contributors,
+    $( Membership in an image of a singleton.  (Proof shortened by Andrew
+       Salmon, 27-Aug-2011.)  (Contributed by set.mm contributors,
        15-Mar-2004.)  (Revised by set.mm contributors, 27-Aug-2011.) $)
     elimasn $p |- ( C e. ( A " { B } ) <-> <. B , C >. e. A ) $=
       ( vx csn cima wcel cvv cop elex wbr df-br brex simprd sylbir cv cab breq2
@@ -47222,10 +47219,9 @@ $)
 
   $( Membership in an initial segment.  The idiom ` ( ``' A " { B } ) ` ,
      meaning ` { x | x A B } ` , is used to specify an initial segment in (for
-     example) Definition 6.21 of [TakeutiZaring] p. 30.  (The proof was
-     shortened by Andrew Salmon, 27-Aug-2011.)  (Contributed by set.mm
-     contributors, 28-Apr-2004.)  (Revised by set.mm contributors,
-     27-Aug-2011.) $)
+     example) Definition 6.21 of [TakeutiZaring] p. 30.  (Proof shortened by
+     Andrew Salmon, 27-Aug-2011.)  (Contributed by set.mm contributors,
+     28-Apr-2004.)  (Revised by set.mm contributors, 27-Aug-2011.) $)
   eliniseg $p |- ( C e. ( `' A " { B } ) <-> C A B ) $=
     ( ccnv csn cima wcel cop wbr elimasn df-br brcnv 3bitr2i ) CADZBEFGBCHNGBCN
     ICBAINBCJBCNKBCALM $.
@@ -47272,9 +47268,9 @@ $)
   ${
     $d x y z R $.
     $( Two ways of saying a relation is transitive.  Definition of transitivity
-       in [Schechter] p. 51.  (The proof was shortened by Andrew Salmon,
-       27-Aug-2011.)  (Contributed by set.mm contributors, 27-Dec-1996.)
-       (Revised by set.mm contributors, 27-Aug-2011.) $)
+       in [Schechter] p. 51.  (Proof shortened by Andrew Salmon, 27-Aug-2011.)
+       (Contributed by set.mm contributors, 27-Dec-1996.)  (Revised by set.mm
+       contributors, 27-Aug-2011.) $)
     cotr $p |- ( ( R o. R ) C_ R <->
              A. x A. y A. z ( ( x R y /\ y R z ) -> x R z ) ) $=
       ( ccom wss cv cop wcel wi wal wbr wa ssrel alcom 19.23v df-br bitri albii
@@ -47286,17 +47282,17 @@ $)
   ${
     $d x y R $.
     $( Two ways of saying a relation is symmetric.  Similar to definition of
-       symmetry in [Schechter] p. 51.  (The proof was shortened by Andrew
-       Salmon, 27-Aug-2011.)  (Contributed by set.mm contributors,
-       28-Dec-1996.)  (Revised by set.mm contributors, 27-Aug-2011.) $)
+       symmetry in [Schechter] p. 51.  (Proof shortened by Andrew Salmon,
+       27-Aug-2011.)  (Contributed by set.mm contributors, 28-Dec-1996.)
+       (Revised by set.mm contributors, 27-Aug-2011.) $)
     cnvsym $p |- ( `' R C_ R <-> A. x A. y ( x R y -> y R x ) ) $=
       ( cv cop ccnv wcel wi wal wss wbr alcom ssrel brcnv bitr3i imbi12i 2albii
       df-br 3bitr4i ) BDZADZEZCFZGZUBCGZHZAIBIUFBIAIUCCJUATCKZTUACKZHZBIAIUFBAL
       BAUCCMUIUFABUGUDUHUEUGTUAUCKUDTUACNTUAUCROTUACRPQS $.
 
     $( Two ways of saying a relation is antisymmetric.  Definition of
-       antisymmetry in [Schechter] p. 51.  (The proof was shortened by Andrew
-       Salmon, 27-Aug-2011.)  (Contributed by set.mm contributors, 9-Sep-2004.)
+       antisymmetry in [Schechter] p. 51.  (Proof shortened by Andrew Salmon,
+       27-Aug-2011.)  (Contributed by set.mm contributors, 9-Sep-2004.)
        (Revised by set.mm contributors, 27-Aug-2011.) $)
     intasym $p |- ( ( R i^i `' R ) C_ _I <->
                   A. x A. y ( ( x R y /\ y R x ) -> x = y ) ) $=
@@ -47320,10 +47316,9 @@ $)
 
   ${
     $d x y z w $.  $d z w ph $.
-    $( The converse of a class abstraction of ordered pairs.  (The proof was
-       shortened by Andrew Salmon, 27-Aug-2011.)  (Contributed by set.mm
-       contributors, 11-Dec-2003.)  (Revised by set.mm contributors,
-       27-Aug-2011.) $)
+    $( The converse of a class abstraction of ordered pairs.  (Proof shortened
+       by Andrew Salmon, 27-Aug-2011.)  (Contributed by set.mm contributors,
+       11-Dec-2003.)  (Revised by set.mm contributors, 27-Aug-2011.) $)
     cnvopab $p |- `' { <. x , y >. | ph } = { <. y , x >. | ph } $=
       ( vz vw copab ccnv cop wcel wsbc opelopabsb sbccom bitri opelcnv eqrelriv
       cv 3bitr4i ) DEABCFZGZACBFZEPZDPZHRIZABUAJCUBJZUBUAHZSIUETIUCACUBJBUAJUDA
@@ -47339,9 +47334,9 @@ $)
       ZBEZFZMGZPCGQONFZCGRHNOCIJPHKL $.
 
     $( The converse of the identity relation.  Theorem 3.7(ii) of [Monk1]
-       p. 36.  (The proof was shortened by Andrew Salmon, 27-Aug-2011.)
-       (Contributed by set.mm contributors, 26-Apr-1998.)  (Revised by set.mm
-       contributors, 27-Aug-2011.) $)
+       p. 36.  (Proof shortened by Andrew Salmon, 27-Aug-2011.)  (Contributed
+       by set.mm contributors, 26-Apr-1998.)  (Revised by set.mm contributors,
+       27-Aug-2011.) $)
     cnvi $p |- `' _I = _I $=
       ( vy vx cv cid wbr copab wceq ccnv ideq equcom bitri opabbii df-cnv df-id
       vex 3eqtr4i ) ACZBCZDEZBAFRQGZBAFDHDSTBASQRGTQRBOIABJKLBADMBANP $.
@@ -47350,9 +47345,9 @@ $)
   ${
     $d x y A $.  $d x y B $.
     $( The converse of a union is the union of converses.  Theorem 16 of
-       [Suppes] p. 62.  (The proof was shortened by Andrew Salmon,
-       27-Aug-2011.)  (Contributed by set.mm contributors, 25-Mar-1998.)
-       (Revised by set.mm contributors, 27-Aug-2011.) $)
+       [Suppes] p. 62.  (Proof shortened by Andrew Salmon, 27-Aug-2011.)
+       (Contributed by set.mm contributors, 25-Mar-1998.)  (Revised by set.mm
+       contributors, 27-Aug-2011.) $)
     cnvun $p |- `' ( A u. B ) = ( `' A u. `' B ) $=
       ( vy vx cv wbr copab cun ccnv unopab brun opabbii eqtr4i uneq12i 3eqtr4ri
       wo df-cnv ) CEZDEZAFZDCGZRSBFZDCGZHZRSABHZFZDCGZAIZBIZHUEIUDTUBPZDCGUGTUB
@@ -47435,9 +47430,9 @@ $)
 
   ${
     $d x y A $.  $d x y B $.
-    $( The converse of a cross product.  Exercise 11 of [Suppes] p. 67.  (The
-       proof was shortened by Andrew Salmon, 27-Aug-2011.)  (Contributed by
-       set.mm contributors, 14-Aug-1999.)  (Revised by set.mm contributors,
+    $( The converse of a cross product.  Exercise 11 of [Suppes] p. 67.  (Proof
+       shortened by Andrew Salmon, 27-Aug-2011.)  (Contributed by set.mm
+       contributors, 14-Aug-1999.)  (Revised by set.mm contributors,
        27-Aug-2011.) $)
     cnvxp $p |- `' ( A X. B ) = ( B X. A ) $=
       ( vy vx cv wcel copab ccnv cxp cnvopab ancom opabbii eqtri cnveqi 3eqtr4i
@@ -47489,7 +47484,7 @@ $)
     ( wne csn cin c0 wceq cxp disjsn2 xpdisj2 syl ) BDEBFZDFZGHIANJCOJGHIBDKNOA
     CLM $.
 
-  $( A double restriction to disjoint classes is the empty set.  (The proof was
+  $( A double restriction to disjoint classes is the empty set.  (Proof
      shortened by Andrew Salmon, 27-Aug-2011.)  (Contributed by set.mm
      contributors, 7-Oct-2004.)  (Revised by set.mm contributors,
      27-Aug-2011.) $)
@@ -47511,9 +47506,9 @@ $)
     eqimss syl pm2.61ine ) ABCZDZAEZBFBFGZUCFAEAHUDUBFAUDUBFDFUDUAFUDUAAFCFBFAI
     AJKLMKNOBFPUBAGUCABQUBARST $.
 
-  $( The range of a cross product is a subclass of the second factor.  (The
-     proof was shortened by Andrew Salmon, 27-Aug-2011.)  (Contributed by
-     set.mm contributors, 16-Jan-2006.)  (Revised by set.mm contributors,
+  $( The range of a cross product is a subclass of the second factor.  (Proof
+     shortened by Andrew Salmon, 27-Aug-2011.)  (Contributed by set.mm
+     contributors, 16-Jan-2006.)  (Revised by set.mm contributors,
      27-Aug-2011.) $)
   rnxpss $p |- ran ( A X. B ) C_ B $=
     ( cxp crn cdm ccnv dfrn4 cnvxp dmeqi eqtri dmxpss eqsstri ) ABCZDZBACZEZBNM
@@ -47584,10 +47579,9 @@ $)
 
   ${
     $d x y A $.  $d y B $.  $d x y C $.
-    $( Range of the intersection with a cross product.  (The proof was
-       shortened by Andrew Salmon, 27-Aug-2011.)  (Contributed by set.mm
-       contributors, 17-Jan-2006.)  (Revised by set.mm contributors,
-       27-Aug-2011.) $)
+    $( Range of the intersection with a cross product.  (Proof shortened by
+       Andrew Salmon, 27-Aug-2011.)  (Contributed by set.mm contributors,
+       17-Jan-2006.)  (Revised by set.mm contributors, 27-Aug-2011.) $)
     rninxp $p |- ( ran ( C i^i ( A X. B ) ) = B <->
                  A. y e. B E. x e. A x C y ) $=
       ( cres crn wss wcel wral cxp cin wceq wbr wrex dfss3 ssrnres cima dfima3
@@ -47784,9 +47778,9 @@ $)
       UCVIVCVJVDCUNUTUDVJUNVANBOVDBUNVAUEUNVABUFUGUHSUIULSUJ $.
 
     $( Generalization of ~ dfco2 , where ` C ` can have any value between
-       ` dom A i^i ran B ` and ` _V ` .  (The proof was shortened by Andrew
-       Salmon, 27-Aug-2011.)  (Contributed by set.mm contributors,
-       21-Dec-2008.)  (Revised by set.mm contributors, 27-Aug-2011.) $)
+       ` dom A i^i ran B ` and ` _V ` .  (Proof shortened by Andrew Salmon,
+       27-Aug-2011.)  (Contributed by set.mm contributors, 21-Dec-2008.)
+       (Revised by set.mm contributors, 27-Aug-2011.) $)
     dfco2a $p |- ( ( dom A i^i ran B ) C_ C -> ( A o. B )
          = U_ x e. C ( ( `' B " { x } ) X. ( A " { x } ) ) ) $=
       ( vy vz vw cdm cvv cv cima ciun wcel wex wa cop sylbi wrex eliun bitri
@@ -47799,8 +47793,8 @@ $)
       URFGWBVQVRUSVOVKVLUTVFVMDVOVAVBVCVDWHWCAIRWDAWBIVSSWCAVETWIWCADRWGAWBDVSS
       WCADVGTVHVIVJ $.
 
-    $( Class composition distributes over union.  (The proof was shortened by
-       Andrew Salmon, 27-Aug-2011.)  (Contributed by set.mm contributors,
+    $( Class composition distributes over union.  (Proof shortened by Andrew
+       Salmon, 27-Aug-2011.)  (Contributed by set.mm contributors,
        21-Dec-2008.)  (Revised by set.mm contributors, 27-Aug-2011.) $)
     coundi $p |- ( A o. ( B u. C ) ) = ( ( A o. B ) u. ( A o. C ) ) $=
       ( vx vz vy cv wbr wa wex copab cun ccom wo unopab brun anbi1i andir bitri
@@ -47809,8 +47803,8 @@ $)
       FKVDUMUQDFOVGVCDFVCULUPNZEJVGVBVHEVBUJUONZUKIVHVAVIUKUHUIBCPQUJUOUKRSUAUL
       UPEUBUCUDUEVEUNVFURDFEABTDFEACTUFDFEAUTTUG $.
 
-    $( Class composition distributes over union.  (The proof was shortened by
-       Andrew Salmon, 27-Aug-2011.)  (Contributed by set.mm contributors,
+    $( Class composition distributes over union.  (Proof shortened by Andrew
+       Salmon, 27-Aug-2011.)  (Contributed by set.mm contributors,
        21-Dec-2008.)  (Revised by set.mm contributors, 27-Aug-2011.) $)
     coundir $p |- ( ( A u. B ) o. C ) = ( ( A o. C ) u. ( B o. C ) ) $=
       ( vx vy vz cv wbr wa wex copab cun ccom wo unopab brun anbi2i bitri df-co
@@ -47819,10 +47813,9 @@ $)
       KVDUMUQDFOVGVCDFVCULUPNZEJVGVBVHEVBUIUKUONZIVHVAVIUIUHUJABPQUIUKUOTRUAULU
       PEUBUCUDUEVEUNVFURDFEACSDFEBCSUFDFEUTCSUG $.
 
-    $( Restricted first member of a class composition.  (The proof was
-       shortened by Andrew Salmon, 27-Aug-2011.)  (Contributed by set.mm
-       contributors, 12-Oct-2004.)  (Revised by set.mm contributors,
-       27-Aug-2011.) $)
+    $( Restricted first member of a class composition.  (Proof shortened by
+       Andrew Salmon, 27-Aug-2011.)  (Contributed by set.mm contributors,
+       12-Oct-2004.)  (Revised by set.mm contributors, 27-Aug-2011.) $)
     cores $p |- ( ran B C_ C -> ( ( A |` C ) o. B ) = ( A o. B ) ) $=
       ( vz vy vx crn wss cv wbr cres wa wex copab ccom wcel brelrn ssel df-co
       wb iba brres syl6rbbr syl56 pm5.32d exbidv opabbidv 3eqtr4g ) BGZCHZDIZEI
@@ -48208,8 +48201,8 @@ $)
       UOBUGCRSTUADACUBUIUHAUCUDUHUJAUEUF $.
   $}
 
-  $( Subclass theorem for function predicate.  (The proof was shortened by
-     Mario Carneiro, 24-Jun-2014.)  (Contributed by set.mm contributors,
+  $( Subclass theorem for function predicate.  (Proof shortened by Mario
+     Carneiro, 24-Jun-2014.)  (Contributed by set.mm contributors,
      16-Aug-1994.)  (Revised by set.mm contributors, 24-Jun-2014.) $)
   funss $p |- ( A C_ B -> ( Fun B -> Fun A ) ) $=
     ( wss ccnv ccom cid wfun coss1 cnvss coss2 syl sstrd sstr2 df-fun 3imtr4g
@@ -48277,10 +48270,10 @@ $)
       UGUCBNUFUHUDBUBCOPQRABCSUDAUETUA $.
 
     $( Alternate definition of a function.  One possibility for the definition
-       of a function in [Enderton] p. 42.  Compare ~ dffun7 .  (The proof was
-       shortened by Andrew Salmon, 17-Sep-2011.)  (Contributed by set.mm
-       contributors, 4-Nov-2002.)  (Revised by set.mm contributors,
-       18-Sep-2011.)  (Revised by Scott Fenton, 16-Apr-2021.) $)
+       of a function in [Enderton] p. 42.  Compare ~ dffun7 .  (Proof shortened
+       by Andrew Salmon, 17-Sep-2011.)  (Contributed by set.mm contributors,
+       4-Nov-2002.)  (Revised by set.mm contributors, 18-Sep-2011.)  (Revised
+       by Scott Fenton, 16-Apr-2021.) $)
     dffun8 $p |- ( Fun A <-> A. x e. dom A E! y x A y ) $=
       ( wfun cv wbr wmo cdm wral weu dffun7 wcel wex eldm exmoeu2 sylbi ralbiia
       wb bitri ) CDAEZBECFZBGZACHZIUABJZAUCIABCKUBUDAUCTUCLUABMUBUDRBTCNUABOPQS
@@ -48600,9 +48593,9 @@ $)
   $}
 
   $( The intersection with a function is a function.  Exercise 14(a) of
-     [Enderton] p. 53.  (The proof was shortened by Andrew Salmon,
-     17-Sep-2011.)  (Contributed by set.mm contributors, 19-Mar-2004.)
-     (Revised by set.mm contributors, 18-Sep-2011.) $)
+     [Enderton] p. 53.  (Proof shortened by Andrew Salmon, 17-Sep-2011.)
+     (Contributed by set.mm contributors, 19-Mar-2004.)  (Revised by set.mm
+     contributors, 18-Sep-2011.) $)
   funin $p |- ( Fun F -> Fun ( F i^i G ) ) $=
     ( cin wss wfun wi inss1 funss ax-mp ) ABCZADAEJEFABGJAHI $.
 
@@ -48785,8 +48778,8 @@ $)
 
   ${
     $d x y F $.  $d x y B $.  $d x A $.
-    $( There is exactly one value of a function.  (The proof was shortened by
-       Andrew Salmon, 17-Sep-2011.)  (Contributed by set.mm contributors,
+    $( There is exactly one value of a function.  (Proof shortened by Andrew
+       Salmon, 17-Sep-2011.)  (Contributed by set.mm contributors,
        22-Apr-2004.)  (Revised by set.mm contributors, 18-Sep-2011.) $)
     fneu $p |- ( ( F Fn A /\ B e. A ) -> E! y B F y ) $=
       ( vx cv wbr weu cdm wcel wfun wceq breq1 eubidv imbi2d wex eldm wmo funmo
@@ -48907,15 +48900,15 @@ $)
     ( cid cres wfn wfun cdm wceq funi funres ax-mp dmresi df-fn mpbir2an ) BACZ
     ADNEZNFAGBEOHABIJAKNALM $.
 
-  $( The image of a function's domain is its range.  (The proof was shortened
-     by Andrew Salmon, 17-Sep-2011.)  (Contributed by set.mm contributors,
-     4-Nov-2004.)  (Revised by set.mm contributors, 18-Sep-2011.) $)
+  $( The image of a function's domain is its range.  (Proof shortened by Andrew
+     Salmon, 17-Sep-2011.)  (Contributed by set.mm contributors, 4-Nov-2004.)
+     (Revised by set.mm contributors, 18-Sep-2011.) $)
   fnima $p |- ( F Fn A -> ( F " A ) = ran F ) $=
     ( wfn cima cres crn dfima3 fnresdm rneqd syl5eq ) BACZBADBAEZFBFBAGKLBABHIJ
     $.
 
-  $( A function with empty domain is empty.  (The proof was shortened by Andrew
-     Salmon, 17-Sep-2011.)  (Contributed by set.mm contributors, 15-Apr-1998.)
+  $( A function with empty domain is empty.  (Proof shortened by Andrew Salmon,
+     17-Sep-2011.)  (Contributed by set.mm contributors, 15-Apr-1998.)
      (Revised by set.mm contributors, 18-Sep-2011.) $)
   fn0 $p |- ( F Fn (/) <-> F = (/) ) $=
     ( wfn wceq cdm fndm dmeq0 sylibr wfun fun0 dm0 df-fn mpbir2an mpbiri impbii
@@ -48930,8 +48923,8 @@ $)
   ${
     $d y z A $.  $d y z B $.  $d x y z $.
     iunfopab.1 $e |- B e. _V $.
-    $( Two ways to express a function as a class of ordered pairs.  (The proof
-       was shortened by Andrew Salmon, 17-Sep-2011.)  (Unnecessary distinct
+    $( Two ways to express a function as a class of ordered pairs.  (Proof
+       shortened by Andrew Salmon, 17-Sep-2011.)  (Unnecessary distinct
        variable restrictions were removed by David Abernethy, 19-Sep-2011.)
        (Contributed by set.mm contributors, 19-Dec-2008.) $)
     iunfopab $p |- U_ x e. A { <. x , B >. }
@@ -49011,8 +49004,8 @@ $)
     ( wceq wfn crn wss wa wf sseq2 anbi2d df-f 3bitr4g ) ABEZDCFZDGZAHZIPQBHZIC
     ADJCBDJORSPABQKLCADMCBDMN $.
 
-  $( Equality theorem for functions.  (Contributed by FL, 14-Jul-2007.)  (The
-     proof was shortened by Andrew Salmon, 17-Sep-2011.) $)
+  $( Equality theorem for functions.  (Contributed by FL, 14-Jul-2007.)  (Proof
+     shortened by Andrew Salmon, 17-Sep-2011.) $)
   feq23 $p |- ( ( A = C /\ B = D ) -> ( F : A --> B <-> F : C --> D ) ) $=
     ( wceq wf feq2 feq3 sylan9bb ) ACFABEGCBEGBDFCDEGACBEHBDCEIJ $.
 
@@ -49101,9 +49094,9 @@ $)
   ffn $p |- ( F : A --> B -> F Fn A ) $=
     ( wf wfn crn wss df-f simplbi ) ABCDCAECFBGABCHI $.
 
-  $( Any function is a mapping into ` _V ` .  (The proof was shortened by
-     Andrew Salmon, 17-Sep-2011.)  (Contributed by set.mm contributors,
-     31-Oct-1995.)  (Revised by set.mm contributors, 18-Sep-2011.) $)
+  $( Any function is a mapping into ` _V ` .  (Proof shortened by Andrew
+     Salmon, 17-Sep-2011.)  (Contributed by set.mm contributors, 31-Oct-1995.)
+     (Revised by set.mm contributors, 18-Sep-2011.) $)
   dffn2 $p |- ( F Fn A <-> F : A --> _V ) $=
     ( wfn crn cvv wss wa wf ssv biantru df-f bitr4i ) BACZMBDZEFZGAEBHOMNIJAEBK
     L $.
@@ -49137,14 +49130,14 @@ $)
     ( wfn crn wss wa wf ssid biantru df-f bitr4i ) BACZLBDZMEZFAMBGNLMHIAMBJK
     $.
 
-  $( Expanding the codomain of a mapping.  (The proof was shortened by Andrew
-     Salmon, 17-Sep-2011.)  (Contributed by set.mm contributors, 10-May-1998.)
+  $( Expanding the codomain of a mapping.  (Proof shortened by Andrew Salmon,
+     17-Sep-2011.)  (Contributed by set.mm contributors, 10-May-1998.)
      (Revised by set.mm contributors, 18-Sep-2011.) $)
   fss $p |- ( ( F : A --> B /\ B C_ C ) -> F : A --> C ) $=
     ( wss wf wfn crn wa sstr2 com12 anim2d df-f 3imtr4g impcom ) BCEZABDFZACDFZ
     PDAGZDHZBEZISTCEZIQRPUAUBSUAPUBTBCJKLABDMACDMNO $.
 
-  $( Composition of two mappings.  (The proof was shortened by Andrew Salmon,
+  $( Composition of two mappings.  (Proof shortened by Andrew Salmon,
      17-Sep-2011.)  (Contributed by set.mm contributors, 29-Aug-1999.)
      (Revised by set.mm contributors, 18-Sep-2011.) $)
   fco $p |- ( ( F : B --> C /\ G : A --> B ) -> ( F o. G ) : A --> C ) $=
@@ -49153,9 +49146,9 @@ $)
     BEKZIACULKUHUKUPUHUKUMUOUEUKUMLUGUEUIUJUMBADEMNOUGUOUEUNUFHUGUODEPUNUFCQRSU
     AUBUQUHURUKBCDTABETUCACULTUD $.
 
-  $( A mapping is a class of ordered pairs.  (The proof was shortened by Andrew
-     Salmon, 17-Sep-2011.)  (Contributed by set.mm contributors, 3-Aug-1994.)
-     (Revised by set.mm contributors, 18-Sep-2011.) $)
+  $( A mapping is a class of ordered pairs.  (Proof shortened by Andrew Salmon,
+     17-Sep-2011.)  (Contributed by set.mm contributors, 3-Aug-1994.)  (Revised
+     by set.mm contributors, 18-Sep-2011.) $)
   fssxp $p |- ( F : A --> B -> F C_ ( A X. B ) ) $=
     ( wf cdm crn cxp ssdmrn wss wceq fdm eqimss syl frn xpss12 syl2anc syl5ss )
     ABCDZCCEZCFZGZABGZCHRSAIZTBIUAUBIRSAJUCABCKSALMABCNSATBOPQ $.
@@ -49214,18 +49207,16 @@ $)
     ( cres wf wss wa fssres wb resabs1 feq1d adantl mpbid ) ABDAEZFZCAGZHCBOCEZ
     FZCBDCEZFZABCOIQSUAJPQCBRTDCAKLMN $.
 
-  $( Composition of a mapping and restricted identity.  (The proof was
-     shortened by Andrew Salmon, 17-Sep-2011.)  (Contributed by set.mm
-     contributors, 13-Dec-2003.)  (Revised by set.mm contributors,
-     18-Sep-2011.) $)
+  $( Composition of a mapping and restricted identity.  (Proof shortened by
+     Andrew Salmon, 17-Sep-2011.)  (Contributed by set.mm contributors,
+     13-Dec-2003.)  (Revised by set.mm contributors, 18-Sep-2011.) $)
   fcoi1 $p |- ( F : A --> B -> ( F o. ( _I |` A ) ) = F ) $=
     ( cid cres ccom coi1 reseq1i resco eqtr3i wfn wceq ffn fnresdm syl syl5eqr
     wf ) ABCQZCDAEFZCAEZCCDFZAETSUACACGHCDAIJRCAKTCLABCMACNOP $.
 
-  $( Composition of restricted identity and a mapping.  (The proof was
-     shortened by Andrew Salmon, 17-Sep-2011.)  (Contributed by set.mm
-     contributors, 13-Dec-2003.)  (Revised by set.mm contributors,
-     18-Sep-2011.) $)
+  $( Composition of restricted identity and a mapping.  (Proof shortened by
+     Andrew Salmon, 17-Sep-2011.)  (Contributed by set.mm contributors,
+     13-Dec-2003.)  (Revised by set.mm contributors, 18-Sep-2011.) $)
   fcoi2 $p |- ( F : A --> B -> ( ( _I |` B ) o. F ) = F ) $=
     ( wf cid cres ccom crn wss wceq frn cores syl coi2 syl6eq ) ABCDZEBFCGZECGZ
     CPCHBIQRJABCKECBLMCNO $.
@@ -49265,16 +49256,16 @@ $)
   ${
     $d x A $.  $d x B $.  $d x F $.
     fint.1 $e |- B =/= (/) $.
-    $( Function into an intersection.  (The proof was shortened by Andrew
-       Salmon, 17-Sep-2011.)  (Contributed by set.mm contributors,
-       14-Oct-1999.)  (Revised by set.mm contributors, 18-Sep-2011.) $)
+    $( Function into an intersection.  (Proof shortened by Andrew Salmon,
+       17-Sep-2011.)  (Contributed by set.mm contributors, 14-Oct-1999.)
+       (Revised by set.mm contributors, 18-Sep-2011.) $)
     fint $p |- ( F : A --> |^| B <-> A. x e. B F : A --> x ) $=
       ( wfn crn cint wss wa cv wral wf ssint anbi2i c0 wne wb r19.28zv df-f
       ax-mp bitr4i ralbii 3bitr4i ) DBFZDGZCHZIZJZUEUFAKZIZJZACLZBUGDMBUJDMZACL
       UIUEUKACLZJZUMUHUOUEAUFCNOCPQUMUPREUEUKACSUAUBBUGDTUNULACBUJDTUCUD $.
   $}
 
-  $( Mapping into an intersection.  (The proof was shortened by Andrew Salmon,
+  $( Mapping into an intersection.  (Proof shortened by Andrew Salmon,
      17-Sep-2011.)  (Contributed by set.mm contributors, 14-Sep-1999.)
      (Revised by set.mm contributors, 18-Sep-2011.) $)
   fin $p |- ( F : A --> ( B i^i C ) <-> ( F : A --> B /\ F : A --> C ) ) $=
@@ -49282,9 +49273,9 @@ $)
     EZDFZBCGZHZIZRSBHZIZRSCHZIZIZATDJABDJZACDJZIUBRUCUEIZIUGUJUARSBCKLRUCUEMNAT
     DOUHUDUIUFABDOACDOPQ $.
 
-  $( If a mapping is a set, its domain is a set.  (The proof was shortened by
-     Andrew Salmon, 17-Sep-2011.)  (Contributed by set.mm contributors,
-     27-Aug-2006.)  (Revised by set.mm contributors, 18-Sep-2011.) $)
+  $( If a mapping is a set, its domain is a set.  (Proof shortened by Andrew
+     Salmon, 17-Sep-2011.)  (Contributed by set.mm contributors, 27-Aug-2006.)
+     (Revised by set.mm contributors, 18-Sep-2011.) $)
   dmfex $p |- ( ( F e. C /\ F : A --> B ) -> A e. _V ) $=
     ( wf wcel cvv cdm wceq wi fdm dmexg eleq1 syl5ib syl impcom ) ABDEZDCFZAGFZ
     QDHZAIZRSJABDKRTGFUASDCLTAGMNOP $.
@@ -49305,7 +49296,7 @@ $)
   ${
     $d x y A $.  $d x y B $.
     fconst.1 $e |- B e. _V $.
-    $( A cross product with a singleton is a constant function.  (The proof was
+    $( A cross product with a singleton is a constant function.  (Proof
        shortened by Andrew Salmon, 17-Sep-2011.)  (Contributed by set.mm
        contributors, 14-Aug-1999.)  (Revised by set.mm contributors,
        18-Sep-2011.) $)
@@ -49578,10 +49569,9 @@ $)
   f1odm $p |- ( F : A -1-1-onto-> B -> dom F = A ) $=
     ( wf1o wfn cdm wceq f1ofn fndm syl ) ABCDCAECFAGABCHACIJ $.
 
-  $( Alternate definition of one-to-one onto function.  (The proof was
-     shortened by Andrew Salmon, 22-Oct-2011.)  (Contributed by set.mm
-     contributors, 10-Feb-1997.)  (Revised by set.mm contributors,
-     22-Oct-2011.) $)
+  $( Alternate definition of one-to-one onto function.  (Proof shortened by
+     Andrew Salmon, 22-Oct-2011.)  (Contributed by set.mm contributors,
+     10-Feb-1997.)  (Revised by set.mm contributors, 22-Oct-2011.) $)
   dff1o2 $p |- ( F : A -1-1-onto-> B
         <-> ( F Fn A /\ Fun `' F /\ ran F = B ) ) $=
     ( wf1o wf1 wfo wa wf ccnv wfun wfn crn w3a df-f1o df-f1 df-fo anbi12i ancom
@@ -49591,10 +49581,9 @@ $)
     VFUTURVBTUTURVBUAUBUCUDUQURVCUKVEUQUTVBUQURVBUTVABUEZUQVABUFUQUTVIGABCUGUHU
     IUJULUMUN $.
 
-  $( Alternate definition of one-to-one onto function.  (The proof was
-     shortened by Andrew Salmon, 22-Oct-2011.)  (Contributed by set.mm
-     contributors, 25-Mar-1998.)  (Revised by set.mm contributors,
-     22-Oct-2011.) $)
+  $( Alternate definition of one-to-one onto function.  (Proof shortened by
+     Andrew Salmon, 22-Oct-2011.)  (Contributed by set.mm contributors,
+     25-Mar-1998.)  (Revised by set.mm contributors, 22-Oct-2011.) $)
   dff1o3 $p |- ( F : A -1-1-onto-> B <-> ( F : A -onto-> B /\ Fun `' F ) ) $=
     ( wfn ccnv wfun crn wceq w3a wf1o wfo df-3an an32 bitri dff1o2 df-fo anbi1i
     wa 3bitr4i ) CADZCEFZCGBHZIZTUBRZUARZABCJABCKZUARUCTUARUBRUETUAUBLTUAUBMNAB
@@ -49605,19 +49594,17 @@ $)
   f1ofo $p |- ( F : A -1-1-onto-> B -> F : A -onto-> B ) $=
     ( wf1o wfo ccnv wfun dff1o3 simplbi ) ABCDABCECFGABCHI $.
 
-  $( Alternate definition of one-to-one onto function.  (The proof was
-     shortened by Andrew Salmon, 22-Oct-2011.)  (Contributed by set.mm
-     contributors, 25-Mar-1998.)  (Revised by set.mm contributors,
-     22-Oct-2011.) $)
+  $( Alternate definition of one-to-one onto function.  (Proof shortened by
+     Andrew Salmon, 22-Oct-2011.)  (Contributed by set.mm contributors,
+     25-Mar-1998.)  (Revised by set.mm contributors, 22-Oct-2011.) $)
   dff1o4 $p |- ( F : A -1-1-onto-> B <-> ( F Fn A /\ `' F Fn B ) ) $=
     ( wf1o wfn ccnv wfun crn w3a wa dff1o2 3anass cdm dfrn4 eqeq1i anbi2i df-fn
     wceq bitr4i 3bitri ) ABCDCAEZCFZGZCHZBRZIUAUCUEJZJUAUBBEZJABCKUAUCUELUFUGUA
     UFUCUBMZBRZJUGUEUIUCUDUHBCNOPUBBQSPT $.
 
-  $( Alternate definition of one-to-one onto function.  (The proof was
-     shortened by Andrew Salmon, 22-Oct-2011.)  (Contributed by set.mm
-     contributors, 10-Dec-2003.)  (Revised by set.mm contributors,
-     22-Oct-2011.) $)
+  $( Alternate definition of one-to-one onto function.  (Proof shortened by
+     Andrew Salmon, 22-Oct-2011.)  (Contributed by set.mm contributors,
+     10-Dec-2003.)  (Revised by set.mm contributors, 22-Oct-2011.) $)
   dff1o5 $p |- ( F : A -1-1-onto-> B <-> ( F : A -1-1-> B /\ ran F = B ) ) $=
     ( wf1o wf1 wfo wa crn wceq df-f1o wf biantrurd dffo2 syl6rbbr pm5.32i bitri
     f1f ) ABCDABCEZABCFZGRCHBIZGABCJRSTRTABCKZTGSRUATABCQLABCMNOP $.
@@ -49636,14 +49623,14 @@ $)
 
   $( A class is a one-to-one onto function iff its converse is a one-to-one
      onto function with domain and range interchanged.  (Contributed by set.mm
-     contributors, 8-Dec-2003.)  (Modified by Scott Fenton, 17-Apr-2021.) $)
+     contributors, 8-Dec-2003.)  (Revised by Scott Fenton, 17-Apr-2021.) $)
   f1ocnvb $p |- ( F : A -1-1-onto-> B <-> `' F : B -1-1-onto-> A ) $=
     ( ccnv wfn wa wf1o cnvcnv fneq1i anbi2i ancom bitri dff1o4 3bitr4ri ) CDZBE
     ZODZAEZFZCAEZPFZBAOGABCGSPTFUARTPAQCCHIJPTKLBAOMABCMN $.
 
-  $( The converse of a one-to-one onto function is also one-to-one onto.  (The
-     proof was shortened by Andrew Salmon, 22-Oct-2011.)  (Contributed by
-     set.mm contributors, 11-Feb-1997.)  (Revised by set.mm contributors,
+  $( The converse of a one-to-one onto function is also one-to-one onto.
+     (Proof shortened by Andrew Salmon, 22-Oct-2011.)  (Contributed by set.mm
+     contributors, 11-Feb-1997.)  (Revised by set.mm contributors,
      22-Oct-2011.) $)
   f1ocnv $p |- ( F : A -1-1-onto-> B -> `' F : B -1-1-onto-> A ) $=
     ( wf1o ccnv f1ocnvb biimpi ) ABCDBACEDABCFG $.
@@ -49677,7 +49664,7 @@ $)
     VFTZVGCMABCDUBCVBVEUCVIVGVFUDZCVIVJVFVFUEZIZVGVFUFVIVBCVFRVKVBMVLVGMVBCVFUK
     VBCVFUGVKVBVFUHSUIVIVBCVFULVJCMVBCVFUJVBCVFUMUNUOSUPUQ $.
 
-  $( A reverse version of ~ f1imacnv .  (Contributed by Jeffrey Hankins,
+  $( A reverse version of ~ f1imacnv .  (Contributed by Jeff Hankins,
      16-Jul-2009.) $)
   foimacnv $p |- ( ( F : A -onto-> B /\ C C_ B )
                  -> ( F " ( `' F " C ) ) = C ) $=
@@ -49860,8 +49847,8 @@ $)
     c0 df-fo ) PPPAPPPBPPPCZPDRPPEZPFPGSPHPIPGJKPPLMNPPPQMPPPOM $.
 
   $( A restriction of the identity relation is a one-to-one onto function.
-     (The proof was shortened by Andrew Salmon, 22-Oct-2011.)  (Contributed by
-     set.mm contributors, 30-Apr-1998.)  (Revised by set.mm contributors,
+     (Proof shortened by Andrew Salmon, 22-Oct-2011.)  (Contributed by set.mm
+     contributors, 30-Apr-1998.)  (Revised by set.mm contributors,
      22-Oct-2011.) $)
   f1oi $p |- ( _I |` A ) : A -1-1-onto-> A $=
     ( cid cres wf1o wfn ccnv fnresi cnvresid fneq1i mpbir dff1o4 mpbir2an ) AAB
@@ -49876,8 +49863,8 @@ $)
   ${
     f1osn.1 $e |- A e. _V $.
     f1osn.2 $e |- B e. _V $.
-    $( A singleton of an ordered pair is one-to-one onto function.  (The proof
-       was shortened by Andrew Salmon, 22-Oct-2011.)  (Contributed by set.mm
+    $( A singleton of an ordered pair is one-to-one onto function.  (Proof
+       shortened by Andrew Salmon, 22-Oct-2011.)  (Contributed by set.mm
        contributors, 18-May-1998.)  (Revised by set.mm contributors,
        22-Oct-2011.) $)
     f1osn $p |- { <. A , B >. } : { A } -1-1-onto-> { B } $=
@@ -49901,9 +49888,9 @@ $)
   ${
     $d x y A $.  $d x y F $.
     $( Alternate definition of function value.  Definition 10.11 of [Quine]
-       p. 68.  (The proof was shortened by Andrew Salmon, 17-Sep-2011.)
-       (Contributed by set.mm contributors, 30-Apr-2004.)  (Revised by set.mm
-       contributors, 18-Sep-2011.) $)
+       p. 68.  (Proof shortened by Andrew Salmon, 17-Sep-2011.)  (Contributed
+       by set.mm contributors, 30-Apr-2004.)  (Revised by set.mm contributors,
+       18-Sep-2011.) $)
     fv2 $p |- ( F ` A ) = U. { x | A. y ( A F y <-> y = x ) } $=
       ( cfv cv wbr cio weq wb wal cab cuni df-fv dfiota2 eqtri ) CDECBFDGZBHQBA
       IJBKALMBCDNQBAOP $.
@@ -50317,8 +50304,8 @@ $)
       ULUMUNVSVQEKZABPVOVQAEBUOWEVNABVEVNEVMVLDUPVCVMCUQURUSUTVAT $.
 
     $( Function value in an image.  Part of Theorem 4.4(iii) of [Monk1] p. 42.
-       (The proof was shortened by Andrew Salmon, 22-Oct-2011.)  (Contributed
-       by set.mm contributors, 29-Apr-2004.)  (Revised by set.mm contributors,
+       (Proof shortened by Andrew Salmon, 22-Oct-2011.)  (Contributed by set.mm
+       contributors, 29-Apr-2004.)  (Revised by set.mm contributors,
        22-Oct-2011.) $)
     fvelima $p |- ( ( Fun F /\ A e. ( F " B ) ) ->
                   E. x e. B ( F ` x ) = A ) $=
@@ -50328,7 +50315,7 @@ $)
 
   ${
     $d y A $.  $d x y B $.  $d x y C $.  $d x y F $.
-    $( Function value in an image.  (The proof was shortened by Andrew Salmon,
+    $( Function value in an image.  (Proof shortened by Andrew Salmon,
        22-Oct-2011.)  (An unnecessary distinct variable restriction was removed
        by David Abernethy, 17-Dec-2011.)  (Contributed by set.mm contributors,
        20-Jan-2007.)  (Revised by set.mm contributors, 25-Dec-2011.) $)
@@ -50455,9 +50442,9 @@ $)
 
     $d C y z $.
     $( Value of a function composition.  Similar to second part of Theorem 3H
-       of [Enderton] p. 47.  (The proof was shortened by Andrew Salmon,
-       22-Oct-2011.)  (Contributed by set.mm contributors, 9-Oct-2004.)
-       (Revised by set.mm contributors, 22-Oct-2011.) $)
+       of [Enderton] p. 47.  (Proof shortened by Andrew Salmon, 22-Oct-2011.)
+       (Contributed by set.mm contributors, 9-Oct-2004.)  (Revised by set.mm
+       contributors, 22-Oct-2011.) $)
     fvco2 $p |- ( ( G Fn A /\ C e. A ) ->
              ( ( F o. G ) ` C ) = ( F ` ( G ` C ) ) ) $=
       ( vy vz csn cima cv wceq cab cfv wbr cio df-iota df-fv imasn eqeq1i abbii
@@ -50578,8 +50565,8 @@ $)
     $d x y A $.  $d y B $.  $d x y F $.  $d x y G $.  $d x ph $.
     $( Equality of functions is determined by their values.  Special case of
        Exercise 4 of [TakeutiZaring] p. 28 (with domain equality omitted).
-       (The proof was shortened by Andrew Salmon, 22-Oct-2011.)  (Contributed
-       by set.mm contributors, 3-Aug-1994.)  (Revised by set.mm contributors,
+       (Proof shortened by Andrew Salmon, 22-Oct-2011.)  (Contributed by set.mm
+       contributors, 3-Aug-1994.)  (Revised by set.mm contributors,
        22-Oct-2011.) $)
     eqfnfv $p |- ( ( F Fn A /\ G Fn A ) -> ( F = G <->
                  A. x e. A ( F ` x ) = ( G ` x ) ) ) $=
@@ -51075,8 +51062,7 @@ $)
     fpr.3 $e |- C e. _V $.
     fpr.4 $e |- D e. _V $.
     $( A function with a domain of two elements.  (Contributed by Jeff Madsen,
-       20-Jun-2010.)  (The proof was shortened by Andrew Salmon,
-       22-Oct-2011.) $)
+       20-Jun-2010.)  (Proof shortened by Andrew Salmon, 22-Oct-2011.) $)
     fpr $p |- ( A =/= B
                 -> { <. A , C >. , <. B , D >. } : { A , B } --> { C , D } ) $=
       ( wne cop cpr wfn crn wa jctir sylibr csn cun rnsnop df-pr wss wfun funpr
@@ -51126,7 +51112,7 @@ $)
     fopabsn.1 $e |- A e. _V $.
     fopabsn.2 $e |- B e. _V $.
     $( The singleton of an ordered pair expressed as an ordered pair class
-       abstraction.  (The proof was shortened by Andrew Salmon, 22-Oct-2011.)
+       abstraction.  (Proof shortened by Andrew Salmon, 22-Oct-2011.)
        (Contributed by set.mm contributors, 6-Jun-2006.)  (Revised by set.mm
        contributors, 22-Oct-2011.) $)
     fopabsn $p |- { <. A , B >. } =
@@ -51376,9 +51362,9 @@ $)
   ${
     $d x A $.  $d x B $.
     $( The image of a union is the indexed union of the images.  Theorem 3K(a)
-       of [Enderton] p. 50.  (The proof was shortened by Mario Carneiro,
-       18-Jun-2014.)  (Contributed by set.mm contributors, 9-Aug-2004.)
-       (Revised by set.mm contributors, 18-Jun-2014.) $)
+       of [Enderton] p. 50.  (Proof shortened by Mario Carneiro, 18-Jun-2014.)
+       (Contributed by set.mm contributors, 9-Aug-2004.)  (Revised by set.mm
+       contributors, 18-Jun-2014.) $)
     imauni $p |- ( A " U. B ) = U_ x e. B ( A " x ) $=
       ( cuni cima cv ciun uniiun imaeq2i imaiun eqtri ) BCDZEBACAFZGZEACBMEGLNB
       ACHIABCMJK $.
@@ -52000,7 +51986,7 @@ $)
   $}
 
   $( Bijection law for restrictions of ` Swap ` .  (Contributed by SF,
-     23-Feb-2015.)  (Modified by Scott Fenton, 17-Apr-2021.) $)
+     23-Feb-2015.)  (Revised by Scott Fenton, 17-Apr-2021.) $)
   swapres $p |- ( Swap |` A ) : A -1-1-onto-> `' A $=
     ( ccnv cswap cres wf1o cima cvv wf1 wss swapf1o f1of1 ax-mp ssv f1ores wceq
     mp2an wb dfcnv2 f1oeq3 mpbir ) AABZCADZEZACAFZUBEZGGCHZAGIUEGGCEUFJGGCKLAMG
@@ -52218,8 +52204,8 @@ $)
 
     ${
       oveq12i.2 $e |- C = D $.
-      $( Equality inference for operation value.  (The proof was shortened by
-         Andrew Salmon, 22-Oct-2011.)  (Contributed by set.mm contributors,
+      $( Equality inference for operation value.  (Proof shortened by Andrew
+         Salmon, 22-Oct-2011.)  (Contributed by set.mm contributors,
          28-Feb-1995.)  (Revised by set.mm contributors, 22-Oct-2011.) $)
       oveq12i $p |- ( A F C ) = ( B F D ) $=
         ( wceq co oveq12 mp2an ) ABHCDHACEIBDEIHFGABCDEJK $.
@@ -52250,8 +52236,8 @@ $)
 
     ${
       oveq12d.2 $e |- ( ph -> C = D ) $.
-      $( Equality deduction for operation value.  (The proof was shortened by
-         Andrew Salmon, 22-Oct-2011.)  (Contributed by set.mm contributors,
+      $( Equality deduction for operation value.  (Proof shortened by Andrew
+         Salmon, 22-Oct-2011.)  (Contributed by set.mm contributors,
          13-Mar-1995.)  (Revised by set.mm contributors, 22-Oct-2011.) $)
       oveq12d $p |- ( ph -> ( A F C ) = ( B F D ) ) $=
         ( wceq co oveq12 syl2anc ) ABCIDEIBDFJCEFJIGHBCDEFKL $.
@@ -58175,7 +58161,7 @@ $)
       HUFUBUDAGUDALUHRMNUDCOPST $.
 
     $( A relational set is equinumerous to its converse.  (Contributed by
-       set.mm contributors, 28-Dec-2014.)  (Modified by Scott Fenton,
+       set.mm contributors, 28-Dec-2014.)  (Revised by Scott Fenton,
        17-Apr-2021.) $)
     cnven $p |- ( A e. V -> A ~~ `' A ) $=
       ( wcel cswap cres cvv ccnv wf1o cen wbr swapex resexg mpan swapres f1oeng
