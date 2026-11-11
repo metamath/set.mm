@@ -43811,6 +43811,13 @@ $)
     ( cpr wcel wne wa wceq wo elpri adantr wn neneq adantl olcnd ) ABCDEZACFZGA
     BHZACHZPRSIQABCJKQSLPACMNO $.
 
+  $( A set ` A ` not in a pair is neither element of the pair.  (Contributed by
+     Thierry Arnoux, 20-Nov-2023.) $)
+  nelpr $p |- ( A e. V -> ( -. A e. { B , C } <-> ( A =/= B /\ A =/= C ) ) )
+      $=
+    ( wcel cpr wn wceq wo wne wa elprg notbid neanior bitr4di ) ADEZABCFEZGABHA
+    CHIZGABJACJKPQRABCDLMABACNO $.
+
   ${
     nelpr2.a $e |- ( ph -> A e. V ) $.
     nelpr2.n $e |- ( ph -> -. A e. { B , C } ) $.
@@ -44414,6 +44421,14 @@ $)
     wa 3ad2ant3 jca undisj1 sylib eqtrid ) ADEZBDEZCDEZFZABCGZDHZIABJZCHZKZUJIZ
     LUIUMUJABCMNUHUKUJILOZULUJILOZSUNLOUHUOUPUEUFUOUGABDPQUGUEUPUFCDRTUAUKULUJU
     BUCUD $.
+
+  $( The disjoint intersection of an unordered triple and an unordered pair.
+     (Contributed by Thierry Arnoux, 9-Nov-2026.) $)
+  disjtppr $p |- ( ( ( A =/= D /\ B =/= D /\ C =/= D ) /\ ( A =/= E /\ B =/=
+      E /\ C =/= E ) ) -> ( { A , B , C } i^i { D , E } ) = (/) ) $=
+    ( wne w3a wa ctp cpr cin csn cun df-pr ineq2i wceq disjtpsn anim12i undisj2
+    c0 sylib eqtrid ) ADFBDFCDFGZAEFBEFCEFGZHZABCIZDEJZKUFDLZELZMZKZTUGUJUFDENO
+    UEUFUHKTPZUFUIKTPZHUKTPUCULUDUMABCDQABCEQRUFUHUISUAUB $.
 
   $( Two completely distinct unordered triples are disjoint.  (Contributed by
      AV, 14-Nov-2021.) $)
@@ -174369,6 +174384,11 @@ $)
       absval ) ABCADZQEFGHIFZJAKQBLQJFRCQPQMNO $.
   $}
 
+  $( The absolute value function is a set.  (Contributed by SN, 5-Jun-2025.) $)
+  absex $p |- abs e. _V $=
+    ( cc cr cabs wf cvv wcel absf cnex reex fex2 mp3an ) ABCDAEFBEFCEFGHIABCEEJ
+    K $.
+
   $( Lemma involving absolute value of differences.  (Contributed by NM,
      2-Oct-1999.) $)
   abs3lem $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\
@@ -210244,6 +210264,7 @@ $)
   $c UnifSet $.
   $c Hom $.
   $c comp $.
+  $c EuclF $.
 
   $( Extend class notation with group (addition) operation. $)
   cplusg $a class +g $.
@@ -210285,6 +210306,9 @@ $)
 
   $( Extend class notation with the composition operation. $)
   cco $a class comp $.
+
+  $( Extend class notation with the Euclidean function. $)
+  ceuf $a class EuclF $.
 
   $( Define group operation.  In the context of less restrictive structures,
      this operation is also called magma, semigroup or monoid operation.
@@ -210356,6 +210380,11 @@ $)
      Carneiro, 2-Jan-2017.)  Use its index-independent form ~ ccoid instead.
      (New usage is discouraged.) $)
   df-cco $a |- comp = Slot ; 1 5 $.
+
+  $( Define the Euclidean function.  (Contributed by Thierry Arnoux,
+     22-Mar-2025.)  Use its index-independent form ~ eufid instead.
+     (New usage is discouraged.) $)
+  df-euf $a |- EuclF = Slot ; 2 1 $.
 
   $( Index value of the ~ df-plusg slot.  (Contributed by Mario Carneiro,
      14-Aug-2015.)  (New usage is discouraged.) $)
@@ -211328,6 +211357,32 @@ $)
      Mario Carneiro, 7-Jan-2017.) $)
   ccoid $p |- comp = Slot ( comp ` ndx ) $=
     ( cco c1 c5 cdc df-cco 1nn0 5nn decnncl ndxid ) ABCDEBCFGHI $.
+
+  $( Index value of the Euclidean function slot.  Use ~ ndxarg .  (Contributed
+     by Thierry Arnoux, 22-Mar-2025.)  (New usage is discouraged.) $)
+  eufndx $p |- ( EuclF ` ndx ) = ; 2 1 $=
+    ( ceuf c2 c1 cdc df-euf 2nn0 1nn decnncl ndxarg ) ABCDEBCFGHI $.
+
+  $( Utility theorem: index-independent form of ~ df-euf .  (Contributed by
+     Thierry Arnoux, 22-Mar-2025.) $)
+  eufid $p |- EuclF = Slot ( EuclF ` ndx ) $=
+    ( ceuf c2 c1 cdc df-euf 2nn0 1nn decnncl ndxid ) ABCDEBCFGHI $.
+
+  $( The slot for the base set is not the slot for the Euclidean function in an
+     extensible structure.  (Contributed by Thierry Arnoux, 9-Nov-2026.) $)
+  basendxneufndx $p |- ( Base ` ndx ) =/= ( EuclF ` ndx ) $=
+    ( cnx cbs cfv ceuf basendxnn nnrei c1 cdc clt 2nn 1nn0 1lt10 declti basendx
+    c2 eufndx 3brtr4i ltneii ) ABCZADCZSEFGOGHSTIOGGJKKLMNPQR $.
+
+  ${
+    resseuf.h $e |- H = ( G |`s A ) $.
+    resseuf.f $e |- F = ( EuclF ` G ) $.
+    $( The Euclidean function is unaffected by structure restriction.
+       (Contributed by Thierry Arnoux, 9-Nov-2026.) $)
+    resseuf $p |- ( A e. V -> F = ( EuclF ` H ) ) $=
+      ( ceuf eufid cnx cbs cfv basendxneufndx necomi resseqnbas ) ABDHECFGIJKLJ
+      HLMNO $.
+  $}
 
   $( The slots ` Base ` , ` Hom ` and ` comp ` are different.  (Contributed by
      AV, 5-Mar-2020.)  (Proof shortened by AV, 28-Oct-2024.) $)
@@ -280602,9 +280657,10 @@ $)
        The contract of this set is defined entirely by ~ cnfldex , ~ cnfldadd ,
        ~ cnfldmul , ~ cnfldcj , ~ cnfldtset , ~ cnfldle , ~ cnfldds , and
        ~ cnfldbas .  We may add additional members to this in the future.
-       (Contributed by Stefan O'Rear, 27-Nov-2014.)  (Revised by Thierry
-       Arnoux, 15-Dec-2017.)  Use maps-to notation for addition and
-       multiplication.  (Revised by GG, 31-Mar-2025.)
+       (Contributed by Stefan O'Rear, 27-Nov-2014.)  Add uniform structure
+       component slot.  (Revised by Thierry Arnoux, 15-Dec-2017.)  Use maps-to
+       notation for addition and multiplication.  (Revised by GG, 31-Mar-2025.)
+       Add Euclidean function slot.  (Revised by Thierry Arnoux, 9-Nov-2026.)
        (New usage is discouraged.) $)
     df-cnfld $a |- CCfld = ( ( { <. ( Base ` ndx ) , CC >. ,
            <. ( +g ` ndx ) , ( x e. CC , y e. CC |-> ( x + y ) ) >. ,
@@ -280613,23 +280669,26 @@ $)
          ( { <. ( TopSet ` ndx ) , ( MetOpen ` ( abs o. - ) ) >. ,
              <. ( le ` ndx ) , <_ >. ,
              <. ( dist ` ndx ) , ( abs o. - ) >. } u.
-           { <. ( UnifSet ` ndx ) , ( metUnif ` ( abs o. - ) ) >. } ) ) $.
+           { <. ( UnifSet ` ndx ) , ( metUnif ` ( abs o. - ) ) >. ,
+             <. ( EuclF ` ndx ) , abs >. } ) ) $.
   $}
 
   ${
     $d u v $.
     $( The field of complex numbers is a structure.  (Contributed by Mario
        Carneiro, 14-Aug-2015.)  (Revised by Thierry Arnoux, 17-Dec-2017.)
-       Revise ~ df-cnfld .  (Revised by GG, 31-Mar-2025.) $)
-    cnfldstr $p |- CCfld Struct <. 1 , ; 1 3 >. $=
-      ( vu vv cnx cfv cc cop cv co cmpo ctp ccj csn cun cle c1 c3 cdc c9 1nn0
-      c2 ccnfld cbs cplusg caddc cmulr cmul cstv cts cabs cmin ccom cmopn cunif
-      cple cds cmetu cstr df-cnfld c4 eqid srngstr cc0 9nn tsetndx 9lt10 plendx
-      10nn 0nn0 2nn 2pos declt decnncl dsndx strle3 unifndx strle1 2nn0 strleun
-      3nn 2lt3 4lt9 eqbrtri ) UACUBDEFCUCDABEEAGZBGZUDHIZFCUEDABEEWCWDUFHIZFJCU
-      GDKFLMZCUHDZUIUJUKZULDZFCUNDZNFCUODZWIFJZCUMDZWIUPDZFLZMZMOOPQZFUQABUROUS
-      RWRWGWQEWEWGWFKWGUTVAROTQZWRWRWMWPWHWKWLROVBQWSWJNWIVCVDVEVGVFOVBTSVHVIVJ
-      VKOTSVIVLVMVNWNWRWOOPSVSVLVOVPOTPSVQVSVTVKVRWAVRWB $.
+       Revise ~ df-cnfld .  (Revised by GG, 31-Mar-2025.)  Revise ~ df-cnfld .
+       (Revised by Thierry Arnoux, 9-Nov-2026.) $)
+    cnfldstr $p |- CCfld Struct <. 1 , ; 2 1 >. $=
+      ( vu vv cnx cfv cc cop cv co cmpo cun cabs c1 c2 cdc 1nn0 2nn decnncl 3nn
+      c9 c3 ccnfld cbs cplusg caddc cmulr cmul ctp cstv ccj csn cmin ccom cmopn
+      cts cple cle cds cunif ceuf cpr cstr df-cnfld c4 eqid srngstr cc0 tsetndx
+      cmetu 9lt10 10nn plendx 0nn0 2pos declt dsndx strle3 unifndx nnnn0i 3lt10
+      9nn 1lt2 decltc 1nn eufndx strle2 2lt3 strleun 4lt9 eqbrtri ) UACUBDEFCUC
+      DABEEAGZBGZUDHIZFCUEDABEEWJWKUFHIZFUGCUHDUIFUJJZCUNDZKUKULZUMDZFCUODZUPFC
+      UQDZWPFUGZCURDZWPVHDZFCUSDZKFUTZJZJLMLNZFVAABVBLVCSXFWNXEEWLWNWMUIWNVDVES
+      LMNZLTNZXFWTXDWOWRWSSLVFNXGWQUPWPVTVGVIVJVKLVFMOVLPVMVNLMOPQVOVPXAXCXHXFX
+      BKLTORQVQLMTLOMPVRZTRVROVSWAWBMLXIWCQWDWELMTOXIRWFVNWGWHWGWI $.
   $}
 
   ${
@@ -280637,13 +280696,14 @@ $)
     $( The field of complex numbers is a set.  (Contributed by Stefan O'Rear,
        27-Nov-2014.)  (Revised by Mario Carneiro, 14-Aug-2015.)  (Revised by
        Thierry Arnoux, 17-Dec-2017.)  Avoid complex number axioms and
-       ~ ax-pow .  (Revised by GG, 16-Mar-2025.) $)
+       ~ ax-pow .  (Revised by GG, 16-Mar-2025.)  Revise ~ df-cnfld .  (Revised
+       by Thierry Arnoux, 9-Nov-2026.) $)
     cnfldex $p |- CCfld e. _V $=
-      ( vx vy ccnfld cnx cbs cfv cc cop cplusg cv caddc cmpo cmulr ctp csn tpex
-      co cun snex unex cmul cstv ccj cts cabs cmin ccom cmopn cle cds cunif cvv
-      cple cmetu df-cnfld eqeltri ) CDEFGHZDIFABGGAJZBJZKQLHZDMFABGGURUSUAQLHZN
-      ZDUBFUCHZOZRZDUDFUEUFUGZUHFHZDUMFUIHZDUJFVFHZNZDUKFVFUNFHZOZRZRULABUOVEVM
-      VBVDUQUTVAPVCSTVJVLVGVHVIPVKSTTUP $.
+      ( vx vy ccnfld cnx cbs cfv cc cop cplusg cv caddc cmpo cmulr cmul ctp cun
+      co cabs tpex unex cstv ccj csn cts cmin ccom cmopn cple cle cds cunif cpr
+      cmetu ceuf cvv df-cnfld snex prex eqeltri ) CDEFGHZDIFABGGAJZBJZKQLHZDMFA
+      BGGVAVBNQLHZOZDUAFUBHZUCZPZDUDFRUEUFZUGFHZDUHFUIHZDUJFVIHZOZDUKFVIUMFHZDU
+      NFRHZULZPZPUOABUPVHVQVEVGUTVCVDSVFUQTVMVPVJVKVLSVNVOURTTUS $.
     $( $j usage 'cnfldex' avoids 'ax-pow'; $)
   $}
 
@@ -280652,28 +280712,30 @@ $)
     $( The base set of the field of complex numbers.  (Contributed by Stefan
        O'Rear, 27-Nov-2014.)  (Revised by Mario Carneiro, 6-Oct-2015.)
        (Revised by Thierry Arnoux, 17-Dec-2017.)  Revise ~ df-cnfld .  (Revised
-       by GG, 31-Mar-2025.) $)
+       by GG, 31-Mar-2025.)  Revise ~ df-cnfld .  (Revised by Thierry Arnoux,
+       9-Nov-2026.) $)
     cnfldbas $p |- CC = ( Base ` CCfld ) $=
-      ( vu vv cc cvv wcel ccnfld cbs cfv wceq c1 cop cnx csn cv co cmpo ctp cun
-      ssun1 sstri cnex cdc cnfldstr baseid cplusg caddc cmulr cmul snsstp1 cstv
-      ccj cts cabs cmin ccom cmopn cple cle cunif cmetu df-cnfld sseqtrri strfv
-      c3 cds ax-mp ) CDECFGHIUACFGDJJVDUBKUCUDLGHCKZMVGLUEHABCCANZBNZUFOPKZLUGH
-      ABCCVHVIUHOPKZQZFVGVJVKUIVLVLLUJHUKKMZRZFVLVMSVNVNLULHUMUNUOZUPHKLUQHURKL
-      VEHVOKQLUSHVOUTHKMRZRFVNVPSABVAVBTTVCVF $.
+      ( vu vv cc cvv wcel ccnfld cbs cfv c1 cop cnx csn cv co cmpo ctp cun cabs
+      ssun1 sstri wceq cnex cdc cnfldstr baseid cplusg caddc cmulr cmul snsstp1
+      c2 cstv ccj cts cmin ccom cmopn cple cle cds cunif ceuf df-cnfld sseqtrri
+      cmetu cpr strfv ax-mp ) CDECFGHUAUBCFGDIUKIUCJUDUEKGHCJZLVIKUFHABCCAMZBMZ
+      UGNOJZKUHHABCCVJVKUINOJZPZFVIVLVMUJVNVNKULHUMJLZQZFVNVOSVPVPKUNHRUOUPZUQH
+      JKURHUSJKUTHVQJPKVAHVQVEHJKVBHRJVFQZQFVPVRSABVCVDTTVGVH $.
   $}
 
   ${
     $d x y $.
     $( The addition operation of the field of complex numbers.  Version of
        ~ cnfldadd using maps-to notation, which does not require ~ ax-addf .
-       (Contributed by GG, 31-Mar-2025.) $)
+       (Contributed by GG, 31-Mar-2025.)  Revise ~ df-cnfld .  (Revised by
+       Thierry Arnoux, 9-Nov-2026.) $)
     mpocnfldadd $p |- ( x e. CC , y e. CC |-> ( x + y ) ) = ( +g ` CCfld ) $=
-      ( cc cv caddc co cmpo cvv wcel ccnfld cplusg cfv c1 cop cnx csn ctp ssun1
-      cun sstri wceq mpoaddex c3 cdc cnfldstr plusgid cbs cmul snsstp2 cstv ccj
-      cmulr cts cabs cmin ccom cmopn cple cle cds cunif cmetu df-cnfld sseqtrri
-      strfv ax-mp ) ABCCADZBDZEFGZHIVIJKLUAABUBVIJKHMMUCUDNUEUFOKLVINZPOUGLCNZV
-      JOULLABCCVGVHUHFGNZQZJVKVJVLUIVMVMOUJLUKNPZSZJVMVNRVOVOOUMLUNUOUPZUQLNOUR
-      LUSNOUTLVPNQOVALVPVBLNPSZSJVOVQRABVCVDTTVEVF $.
+      ( cc cv caddc co cmpo cvv ccnfld cplusg cfv c1 cop cnx csn ctp ssun1 cabs
+      cun sstri wcel wceq mpoaddex cdc cnfldstr plusgid cmulr cmul snsstp2 cstv
+      c2 cbs ccj cts cmin ccom cmopn cple cle cds cunif cmetu ceuf cpr df-cnfld
+      sseqtrri strfv ax-mp ) ABCCADZBDZEFGZHUAVKIJKUBABUCVKIJHLUKLUDMUEUFNJKVKM
+      ZONULKCMZVLNUGKABCCVIVJUHFGMZPZIVMVLVNUIVOVONUJKUMMOZSZIVOVPQVQVQNUNKRUOU
+      PZUQKMNURKUSMNUTKVRMPNVAKVRVBKMNVCKRMVDSZSIVQVSQABVEVFTTVGVH $.
     $( $j usage 'mpocnfldadd' avoids 'ax-addf' 'ax-mulf'; $)
 
     $( The addition operation of the field of complex numbers.  (Contributed by
@@ -280690,14 +280752,15 @@ $)
     $d x y $.
     $( The multiplication operation of the field of complex numbers.  Version
        of ~ cnfldmul using maps-to notation, which does not require ~ ax-mulf .
-       (Contributed by GG, 31-Mar-2025.) $)
+       (Contributed by GG, 31-Mar-2025.)  Revise ~ df-cnfld .  (Revised by
+       Thierry Arnoux, 9-Nov-2026.) $)
     mpocnfldmul $p |- ( x e. CC , y e. CC |-> ( x x. y ) ) = ( .r ` CCfld ) $=
-      ( cc cv cmul co cmpo cvv wcel ccnfld cmulr cfv c1 cop cnx csn ssun1 sstri
-      ctp cun wceq mpomulex c3 cdc cnfldstr mulridx cbs cplusg snsstp3 cstv ccj
-      caddc cts cabs cmin ccom cmopn cple cle cds cunif cmetu df-cnfld sseqtrri
-      strfv ax-mp ) ABCCADZBDZEFGZHIVIJKLUAABUBVIJKHMMUCUDNUEUFOKLVINZPOUGLCNZO
-      UHLABCCVGVHULFGNZVJSZJVKVLVJUIVMVMOUJLUKNPZTZJVMVNQVOVOOUMLUNUOUPZUQLNOUR
-      LUSNOUTLVPNSOVALVPVBLNPTZTJVOVQQABVCVDRRVEVF $.
+      ( cc cv cmul co cmpo cvv ccnfld cmulr cfv cop cnx csn ctp cun ssun1 sstri
+      c1 cabs wcel wceq mpomulex c2 cdc cnfldstr mulridx cbs caddc snsstp3 cstv
+      cplusg ccj cts cmin ccom cmopn cple cle cds cunif cmetu ceuf cpr df-cnfld
+      sseqtrri strfv ax-mp ) ABCCADZBDZEFGZHUAVKIJKUBABUCVKIJHSUDSUELUFUGMJKVKL
+      ZNMUHKCLZMULKABCCVIVJUIFGLZVLOZIVMVNVLUJVOVOMUKKUMLNZPZIVOVPQVQVQMUNKTUOU
+      PZUQKLMURKUSLMUTKVRLOMVAKVRVBKLMVCKTLVDPZPIVQVSQABVEVFRRVGVH $.
     $( $j usage 'mpocnfldmul' avoids 'ax-addf' 'ax-mulf'; $)
 
     $( The multiplication operation of the field of complex numbers.
@@ -280715,14 +280778,16 @@ $)
     $( The conjugation operation of the field of complex numbers.  (Contributed
        by Mario Carneiro, 6-Oct-2015.)  (Revised by Thierry Arnoux,
        17-Dec-2017.)  (Revised by Thierry Arnoux, 17-Dec-2017.)  Revise
-       ~ df-cnfld .  (Revised by GG, 31-Mar-2025.) $)
+       ~ df-cnfld .  (Revised by GG, 31-Mar-2025.)  Revise ~ df-cnfld .
+       (Revised by Thierry Arnoux, 9-Nov-2026.) $)
     cnfldcj $p |- * = ( *r ` CCfld ) $=
-      ( vu vv ccj cvv wcel ccnfld cstv cfv wceq cc cnex c1 cop cnx csn cmpo ctp
-      cv co cun wf cjf fex2 mp3an c3 cdc cnfldstr starvid cbs cplusg caddc cmul
-      cmulr ssun2 cts cabs cmin ccom cmopn cple cle cds cunif df-cnfld sseqtrri
-      cmetu ssun1 sstri strfv ax-mp ) CDEZCFGHIJJCUAJDEZVLVKUBKKJJCDDUCUDCFGDLL
-      UEUFMUGUHNGHCMOZNUIHJMNUJHABJJARZBRZUKSPMNUMHABJJVNVOULSPMQZVMTZFVMVPUNVQ
-      VQNUOHUPUQURZUSHMNUTHVAMNVBHVRMQNVCHVRVFHMOTZTFVQVSVGABVDVEVHVIVJ $.
+      ( vu vv ccj cvv wcel ccnfld cstv cfv wceq cc cnex c1 cop cnx cmpo ctp cun
+      cv co cabs wf cjf fex2 mp3an c2 cdc cnfldstr starvid csn cbs cplusg caddc
+      cmulr cmul ssun2 cts cmin ccom cmopn cple cle cds cunif ceuf cpr df-cnfld
+      cmetu ssun1 sseqtrri sstri strfv ax-mp ) CDEZCFGHIJJCUAJDEZVNVMUBKKJJCDDU
+      CUDCFGDLUELUFMUGUHNGHCMUIZNUJHJMNUKHABJJARZBRZULSOMNUMHABJJVPVQUNSOMPZVOQ
+      ZFVOVRUOVSVSNUPHTUQURZUSHMNUTHVAMNVBHVTMPNVCHVTVGHMNVDHTMVEQZQFVSWAVHABVF
+      VIVJVKVL $.
   $}
 
   ${
@@ -280730,14 +280795,15 @@ $)
     $( The topology component of the field of complex numbers.  (Contributed by
        Mario Carneiro, 14-Aug-2015.)  (Revised by Mario Carneiro, 6-Oct-2015.)
        (Revised by Thierry Arnoux, 17-Dec-2017.)  Revise ~ df-cnfld .  (Revised
-       by GG, 31-Mar-2025.) $)
+       by GG, 31-Mar-2025.)  Revise ~ df-cnfld .  (Revised by Thierry Arnoux,
+       9-Nov-2026.) $)
     cnfldtset $p |- ( MetOpen ` ( abs o. - ) ) = ( TopSet ` CCfld ) $=
       ( vu vv cabs cmin cmopn cfv cvv ccnfld cts c1 cop cnx csn ctp cun cc cmpo
-      cv co sstri ccom wcel wceq fvex c3 cdc cnfldstr tsetid cple cle cds cunif
-      snsstp1 cmetu ssun1 cbs caddc cmulr cmul cstv ccj ssun2 df-cnfld sseqtrri
-      cplusg strfv ax-mp ) CDUAZEFZGUBVIHIFUCVHEUDVIHIGJJUEUFKUGUHLIFVIKZMVJLUI
-      FUJKZLUKFVHKZNZHVJVKVLUMVMVMLULFVHUNFKMZOZHVMVNUOVOLUPFPKLVEFABPPARZBRZUQ
-      SQKLURFABPPVPVQUSSQKNLUTFVAKMOZVOOHVOVRVBABVCVDTTVFVG $.
+      cv co sstri ccom wcel wceq fvex c2 cdc cnfldstr tsetid cple cle cds cunif
+      snsstp1 cmetu ceuf cpr ssun1 cbs caddc cmulr cmul cstv ccj ssun2 df-cnfld
+      cplusg sseqtrri strfv ax-mp ) CDUAZEFZGUBVKHIFUCVJEUDVKHIGJUEJUFKUGUHLIFV
+      KKZMVLLUIFUJKZLUKFVJKZNZHVLVMVNUMVOVOLULFVJUNFKLUOFCKUPZOZHVOVPUQVQLURFPK
+      LVFFABPPARZBRZUSSQKLUTFABPPVRVSVASQKNLVBFVCKMOZVQOHVQVTVDABVEVGTTVHVI $.
   $}
 
   ${
@@ -280748,14 +280814,15 @@ $)
        ` ( CCfld |``s RR ) ` is an ordered field even though ` CCfld ` itself
        is not.  (Contributed by Mario Carneiro, 14-Aug-2015.)  (Revised by
        Mario Carneiro, 6-Oct-2015.)  (Revised by Thierry Arnoux, 17-Dec-2017.)
-       Revise ~ df-cnfld .  (Revised by GG, 31-Mar-2025.) $)
+       Revise ~ df-cnfld .  (Revised by GG, 31-Mar-2025.)  Revise ~ df-cnfld .
+       (Revised by Thierry Arnoux, 9-Nov-2026.) $)
     cnfldle $p |- <_ = ( le ` CCfld ) $=
-      ( vu vv cle ctsr wcel ccnfld cple cfv wceq c1 cop cnx csn ctp cun cc cmpo
-      cv co sstri letsr cdc cnfldstr pleid cts cabs cmin ccom cmopn cds snsstp2
-      c3 cunif cmetu ssun1 cplusg caddc cmulr cmul cstv ssun2 df-cnfld sseqtrri
-      cbs ccj strfv ax-mp ) CDECFGHIUACFGDJJULUBKUCUDLGHCKZMLUEHUFUGUHZUIHKZVHL
-      UJHVIKZNZFVJVHVKUKVLVLLUMHVIUNHKMZOZFVLVMUOVNLVDHPKLUPHABPPARZBRZUQSQKLUR
-      HABPPVOVPUSSQKNLUTHVEKMOZVNOFVNVQVAABVBVCTTVFVG $.
+      ( vu vv cle ctsr wcel ccnfld cple cfv c1 cop cnx csn cabs ctp cun cc cmpo
+      cv co sstri wceq letsr cdc cnfldstr pleid cts cmin ccom cmopn cds snsstp2
+      c2 cunif cmetu ceuf cpr ssun1 cplusg caddc cmulr cmul cstv ssun2 df-cnfld
+      cbs ccj sseqtrri strfv ax-mp ) CDECFGHUAUBCFGDIULIUCJUDUEKGHCJZLKUFHMUGUH
+      ZUIHJZVJKUJHVKJZNZFVLVJVMUKVNVNKUMHVKUNHJKUOHMJUPZOZFVNVOUQVPKVEHPJKURHAB
+      PPARZBRZUSSQJKUTHABPPVQVRVASQJNKVBHVFJLOZVPOFVPVSVCABVDVGTTVHVI $.
   $}
 
   ${
@@ -280763,30 +280830,45 @@ $)
     $( The metric of the field of complex numbers.  (Contributed by Mario
        Carneiro, 14-Aug-2015.)  (Revised by Mario Carneiro, 6-Oct-2015.)
        (Revised by Thierry Arnoux, 17-Dec-2017.)  Revise ~ df-cnfld .  (Revised
-       by GG, 31-Mar-2025.) $)
+       by GG, 31-Mar-2025.)  Revise ~ df-cnfld .  (Revised by Thierry Arnoux,
+       9-Nov-2026.) $)
     cnfldds $p |- ( abs o. - ) = ( dist ` CCfld ) $=
       ( vu vv cabs cmin cvv wcel ccnfld cds cfv cc cr wf c1 cop cnx csn ctp cun
-      cnex cv ccom wceq cxp absf subf fco mp2an xpex reex mp3an c3 cdc cnfldstr
-      fex2 dsid cts cmopn cple cle snsstp3 cunif cmetu ssun1 cbs cplusg co cmpo
-      caddc cmulr cmul cstv ccj ssun2 df-cnfld sseqtrri sstri strfv ax-mp ) CDU
-      AZEFZVSGHIUBJJUCZKVSLZWAEFKEFVTJKCLWAJDLWBUDUEWAJKCDUFUGJJSSUHUIWAKVSEEUN
-      UJVSGHEMMUKULNUMUOOHIVSNZPOUPIVSUQINZOURIUSNZWCQZGWDWEWCUTWFWFOVAIVSVBINP
-      ZRZGWFWGVCWHOVDIJNOVEIABJJATZBTZVHVFVGNOVIIABJJWIWJVJVFVGNQOVKIVLNPRZWHRG
-      WHWKVMABVNVOVPVPVQVR $.
+      cnex cv ccom wceq cxp absf subf fco mp2an xpex reex mp3an c2 cdc cnfldstr
+      fex2 dsid cts cmopn cple cle snsstp3 cunif cmetu ceuf cpr ssun1 cbs caddc
+      cplusg cmpo cmulr cmul cstv ccj ssun2 df-cnfld sseqtrri sstri strfv ax-mp
+      co ) CDUAZEFZWAGHIUBJJUCZKWALZWCEFKEFWBJKCLWCJDLWDUDUEWCJKCDUFUGJJSSUHUIW
+      CKWAEEUNUJWAGHEMUKMULNUMUOOHIWANZPOUPIWAUQINZOURIUSNZWEQZGWFWGWEUTWHWHOVA
+      IWAVBINOVCICNVDZRZGWHWIVEWJOVFIJNOVHIABJJATZBTZVGVTVINOVJIABJJWKWLVKVTVIN
+      QOVLIVMNPRZWJRGWJWMVNABVOVPVQVQVRVS $.
   $}
 
   ${
     $d u v $.
     $( The uniform structure component of the complex numbers.  (Contributed by
        Thierry Arnoux, 17-Dec-2017.)  Revise ~ df-cnfld .  (Revised by GG,
-       31-Mar-2025.) $)
+       31-Mar-2025.)  Revise ~ df-cnfld .  (Revised by Thierry Arnoux,
+       9-Nov-2026.) $)
     cnfldunif $p |- ( metUnif ` ( abs o. - ) ) = ( UnifSet ` CCfld ) $=
-      ( vu vv cabs cmin cmetu cfv cvv ccnfld cunif c1 cop cnx csn ctp cun ssun2
-      cc cv co cmpo ccom wcel wceq fvex c3 cdc cnfldstr unifid cts cple cle cds
-      cmopn cbs cplusg caddc cmulr cmul ccj df-cnfld sseqtrri sstri strfv ax-mp
-      cstv ) CDUAZEFZGUBVGHIFUCVFEUDVGHIGJJUEUFKUGUHLIFVGKMZLUIFVFUMFKLUJFUKKLU
-      LFVFKNZVHOZHVHVIPVJLUNFQKLUOFABQQARZBRZUPSTKLUQFABQQVKVLURSTKNLVEFUSKMOZV
-      JOHVJVMPABUTVAVBVCVD $.
+      ( vu vv cabs cmetu cfv cvv ccnfld cunif c1 cop cnx csn ctp ssun2 cc cv co
+      cun cmpo sstri cmin ccom wcel wceq c2 cdc cnfldstr unifid cpr snsspr1 cts
+      fvex ceuf cmopn cple cle cds cbs cplusg caddc cmul cstv df-cnfld sseqtrri
+      cmulr ccj strfv ax-mp ) CUAUBZDEZFUCVJGHEUDVIDULVJGHFIUEIUFJUGUHKHEVJJZLV
+      KKUMECJZUIZGVKVLUJVMKUKEVIUNEJKUOEUPJKUQEVIJMZVMRZGVMVNNVOKUREOJKUSEABOOA
+      PZBPZUTQSJKVEEABOOVPVQVAQSJMKVBEVFJLRZVORGVOVRNABVCVDTTVGVH $.
+  $}
+
+  ${
+    $d u v $.
+    $( The Euclidean function component of the complex numbers.  (Contributed
+       by Thierry Arnoux, 9-Nov-2026.) $)
+    cnfldeuf $p |- abs = ( EuclF ` CCfld ) $=
+      ( vu vv cabs cvv wcel ccnfld ceuf cfv c1 cop cnx csn ctp ssun2 cc cv cmpo
+      cun co sstri wceq absex c2 cdc cnfldstr eufid cunif cmin ccom cpr snsspr2
+      cmetu cts cmopn cple cle cds cbs cplusg caddc cmul cstv df-cnfld sseqtrri
+      cmulr ccj strfv ax-mp ) CDECFGHUAUBCFGDIUCIUDJUEUFKGHCJZLKUGHCUHUIZULHJZV
+      IUJZFVKVIUKVLKUMHVJUNHJKUOHUPJKUQHVJJMZVLRZFVLVMNVNKURHOJKUSHABOOAPZBPZUT
+      SQJKVEHABOOVOVPVASQJMKVBHVFJLRZVNRFVNVQNABVCVDTTVGVH $.
   $}
 
   ${
@@ -280794,71 +280876,89 @@ $)
     $( The field of complex numbers is a function.  The proof is much shorter
        than the proof of ~ cnfldfunALT by using ~ cnfldstr and ~ structn0fun :
        in addition, it must be shown that ` (/) e/ CCfld ` .  (Contributed by
-       AV, 18-Nov-2021.)  Revise ~ df-cnfld .  (Revised by GG, 31-Mar-2025.) $)
+       AV, 18-Nov-2021.)  Revise ~ df-cnfld .  (Revised by GG, 31-Mar-2025.)
+       Revise ~ df-cnfld .  (Revised by Thierry Arnoux, 9-Nov-2026.) $)
     cnfldfun $p |- Fun CCfld $=
       ( vu vv ccnfld cop c0 wceq wcel wn cnx cfv cc ccj wo cabs cmin fvex opnzi
-      cnex nesymi cvv c1 c3 cdc cstr wbr wfun cnfldstr csn cdif structn0fun cin
-      cbs cplusg cv caddc co cmpo cmulr cmul ctp cstv cts ccom cmopn cple cunif
-      cle cds cmetu mpoaddex mpomulex w3o w3a 3ioran 0ex eltp xchnxbir mpbir3an
-      wa wne wf cjf fex mp2an necomi nelsn ax-mp pm3.2i ctsr letsr elexi cr cxp
-      absf subf xpex coex 3pm3.2ni mtbir ioran anbi12i bitri mpbir cun df-cnfld
-      eleq2i elun orbi12i 3bitri disjsn disjdif2 funeqi sylib ) CUAUAUBUCDZUDUE
-      ZCUFZUGXOCEUHZUIZUFXPCXNUJXRCCXQUKEFZXRCFXSECGZHXTEIULJZKDZIUMJZABKKAUNZB
-      UNZUOUPUQZDZIURJZABKKYDYEUSUPUQZDZUTZGZEIVAJZLDZUHZGZMZEIVBJZNOVCZVDJZDZI
-      VEJZVGDZIVHJZYSDZUTZGZEIVFJZYSVIJZDZUHZGZMZMZUUNHZYLHZYPHZVSZUUGHZUULHZVS
-      ZVSZUURUVAUUPUUQUUPEYBFZHZEYGFZHZEYJFZHZYBEYAKIULPRQSYGEYCYFIUMPABVJQSYJE
-      YHYIIURPABVKQSUVCUVEUVGVLUVDUVFUVHVMYLUVCUVEUVGVNEYBYGYJVOVPVQVREYNVTUUQY
-      NEYMLIVAPKKLWAKTGZLTGWBRKKTLWCWDQWEEYNWFWGWHUUSUUTUUGEUUAFZEUUCFZEUUEFZVL
-      UVJUVKUVLUUAEYRYTIVBPYSVDPQSUUCEUUBVGIVEPVGWIWJWKQSUUEEUUDYSIVHPNOKWLNWAU
-      VINTGWNRKWLTNWCWDKKWMZKOWAUVMTGOTGWOKKRRWPUVMKTOWCWDWQQSWREUUAUUCUUEVOVPW
-      SEUUJVTUUTUUJEUUHUUIIVFPYSVIPQWEEUUJWFWGWHWHUUOYQHZUUMHZVSUVBYQUUMWTUVNUU
-      RUVOUVAYLYPWTUUGUULWTXAXBXCXTEYKYOXDZUUFUUKXDZXDZGEUVPGZEUVQGZMUUNCUVREAB
-      XEXFEUVPUVQXGUVSYQUVTUUMEYKYOXGEUUFUUKXGXHXIWSCEXJXCCXQXKWGXLXMWG $.
+      wa nesymi cvv c1 c2 cdc cstr wbr wfun cnfldstr csn structn0fun cin cplusg
+      cdif cbs cv caddc co cmpo cmulr cmul ctp cstv cts ccom cmopn cple cle cds
+      cunif cmetu ceuf cpr cnex mpoaddex mpomulex w3o w3a 0ex xchnxbir mpbir3an
+      3ioran eltp wne cjf fex mp2an necomi nelsn ax-mp pm3.2i letsr elexi absex
+      wf ctsr cxp subf xpex 3pm3.2ni mtbir nelpri ioran anbi12i bitri mpbir cun
+      coex df-cnfld eleq2i elun orbi12i 3bitri disjsn disjdif2 funeqi sylib ) C
+      UAUBUAUCDZUDUEZCUFZUGXQCEUHZULZUFXRCXPUIXTCCXSUJEFZXTCFYAECGZHYBEIUMJZKDZ
+      IUKJZABKKAUNZBUNZUOUPUQZDZIURJZABKKYFYGUSUPUQZDZUTZGZEIVAJZLDZUHZGZMZEIVB
+      JZNOVCZVDJZDZIVEJZVFDZIVGJZUUADZUTZGZEIVHJZUUAVIJZDZIVJJZNDZVKZGZMZMZUURH
+      ZYNHZYRHZRZUUIHZUUPHZRZRZUVBUVEUUTUVAUUTEYDFZHZEYIFZHZEYLFZHZYDEYCKIUMPVL
+      QSYIEYEYHIUKPABVMQSYLEYJYKIURPABVNQSUVGUVIUVKVOUVHUVJUVLVPYNUVGUVIUVKVTEY
+      DYIYLVQWAVRVSEYPWBUVAYPEYOLIVAPKKLWMKTGLTGWCVLKKTLWDWEQWFEYPWGWHWIUVCUVDU
+      UIEUUCFZEUUEFZEUUGFZVOUVMUVNUVOUUCEYTUUBIVBPUUAVDPQSUUEEUUDVFIVEPVFWNWJWK
+      QSUUGEUUFUUAIVGPNOWLKKWOZKOWMUVPTGOTGWPKKVLVLWQUVPKTOWDWEXFQSWREUUCUUEUUG
+      VQWAWSEUULUUNUULEUUJUUKIVHPUUAVIPQWFUUNEUUMNIVJPWLQWFWTWIWIUUSYSHZUUQHZRU
+      VFYSUUQXAUVQUVBUVRUVEYNYRXAUUIUUPXAXBXCXDYBEYMYQXEZUUHUUOXEZXEZGEUVSGZEUV
+      TGZMUURCUWAEABXGXHEUVSUVTXIUWBYSUWCUUQEYMYQXIEUUHUUOXIXJXKWSCEXLXDCXSXMWH
+      XNXOWH $.
     $( $j usage 'cnfldfun' avoids 'ax-addf' 'ax-mulf'; $)
 
     $( The field of complex numbers is a function.  Alternate proof of
        ~ cnfldfun not requiring that the index set of the components is
        ordered, but using quadratically many inequalities for the indices.
        (Contributed by AV, 14-Nov-2021.)  (Proof shortened by AV, 11-Nov-2024.)
-       Revise ~ df-cnfld .  (Revised by GG, 31-Mar-2025.)
+       Revise ~ df-cnfld .  (Revised by GG, 31-Mar-2025.)  Revise ~ df-cnfld .
+       (Revised by Thierry Arnoux, 9-Nov-2026.)
        (Proof modification is discouraged.)  (New usage is discouraged.) $)
     cnfldfunALT $p |- Fun CCfld $=
-      ( vu vv wfun cnx cfv cc cop ccj wa cdm cin c0 wceq wne cvv ineq12i necomi
-      fvex eqtri ax-mp ccnfld cbs cplusg cv caddc co cmpo cmul ctp cstv csn cun
-      cmulr cts cabs cmin ccom cmopn cle cunif basendxnplusgndx basendxnmulrndx
-      cple cds cmetu plusgndxnmulrndx cnex mpoaddex mpomulex funtp mp3an wf cjf
-      wcel fex mp2an pm3.2i starvndxnbasendx starvndxnplusgndx starvndxnmulrndx
-      funsn dmtpop dmsnop funun slotsdifplendx dsndxntsetndx slotsdifdsndx ctsr
-      disjtpsn simpri letsr elexi absf cxp subf slotsdifunifndx unifndxntsetndx
-      cr xpex coex w3a a1i anim1i 3anass sylibr tsetndxnbasendx tsetndxnmulrndx
-      dmun tsetndxnplusgndx 3pm3.2i plendxnbasendx plendxnmulrndx dsndxnbasendx
-      plendxnplusgndx dsndxnplusgndx dsndxnmulrndx disjtp2 unifndxnbasendx mpbi
-      3simpa sylanbrc adantr undisj2 tsetndxnstarvndx ineqcomi disjsn2 df-cnfld
-      necom birani simpl3 undisj1 funeqi mpbir ) UACDUBEZFGDUCEZABFFAUDZBUDZUEU
-      FUGZGDUMEZABFFYPYQUHUFUGZGUIZDUJEZHGUKZULZDUNEZUOUPUQZUREZGDVCEZUSGDVDEZU
-      UFGUIZDUTEZUUFVEEZGUKZULZULZCZUUDCZUUNCZIUUDJZUUNJZKZLMUUPUUQUURUUACZUUCC
-      ZIUUAJZUUCJZKZLMUUQUVBUVCYNYONYNYSNYOYSNUVBVAVBVFYNYOYSFYRYTDUBRDUCRDUMRV
-      GABVHZABVIZVJVKUUBHDUJRFFHVLFOVNZHOVNVMVGFFOHVOVPZWAVQUVFYNYOYSUIZUUBUKZK
-      ZLUVDUVKUVEUVLYNFYOYRYSYTVGUVGUVHWBZUUBHUVJWCZPYNUUBNYOUUBNYSUUBNUVMLMUUB
-      YNVRQUUBYOVSQUUBYSVTQYNYOYSUUBWIVKSUUAUUCWDVPUUJCZUUMCZIUUJJZUUMJZKZLMUUR
-      UVPUVQUUEUUHNZUUEUUINUUHUUINZUVPUUBUUHNZUWAWEWJUUIUUEWFQUUBUUINZUWBWGWJUU
-      EUUHUUIUUGUSUUFDUNRDVCRDVDRUUFURRZUSWHWKWLZUOUPFWRUOVLUVIUOOVNWMVGFWROUOV
-      OVPFFWNZFUPVLUWGOVNUPOVNWOFFVGVGWSUWGFOUPVOVPWTZVJVKUUKUULDUTRUUFVERZWAVQ
-      UVTUUEUUHUUIUIZUUKUKZKZLUVRUWJUVSUWKUUEUUGUUHUSUUIUUFUWEUWFUWHWBZUUKUULUW
-      IWCZPUUEUUKNZUUHUUKNZUUIUUKNZXAZUWLLMYOUUKNZYSUUKNZUUBUUKNZXAZUWPUWQIZIZU
-      WRWPUXDUWOUXCIUWRUXBUWOUXCUWOUXBUUKUUEWQQXBXCUWOUWPUWQXDXETUUEUUHUUIUUKWI
-      TSUUJUUMWDVPVQUVAUVDUVEULZUVRUVSULZKZLUUSUXEUUTUXFUUAUUCXHUUJUUMXHPUVDUXF
-      KLMZUVEUXFKLMZIUXGLMUXHUXIUVDUVRKZLMZUVDUVSKZLMZIUXHUXKUXMUXJUVKUWJKZLUVD
-      UVKUVRUWJUVNUWMPYNUUENZYOUUENZYSUUENZXAYNUUHNZYOUUHNZYSUUHNZXAYNUUINZYOUU
-      INZYSUUINZXAUXNLMUXOUXPUXQUUEYNXFQUUEYOXIQUUEYSXGQXJUXRUXSUXTUUHYNXKQUUHY
-      OXNQUUHYSXLQXJUYAUYBUYCUUIYNXMQUUIYOXOQUUIYSXPQXJYNYOYSUUEUUHUUIXQVKSUXLU
-      VKUWKKZLUVDUVKUVSUWKUVNUWNPYNUUKNZUWSUWTXAZUYDLMUXDUYFWPUXBUYFUXCUXBUYEUW
-      SUWTIUYFUYEUXBUUKYNXRQXBUWSUWTUXAXTUYEUWSUWTXDYAYBTYNYOYSUUKWITSVQUVDUVRU
-      VSYCXSUVEUVRKZLMZUVEUVSKZLMZIUXIUYHUYJUYGUVLUWJKLUVEUVLUVRUWJUVOUWMPUWJUV
-      LLUUEUUBNUUHUUBNZUUIUUBNZUWJUVLKLMYDUWCUWAIUYKWEUWCUYKUWAUUBUUHYHYITUWDUW
-      BIUYLWGUWDUYLUWBUUBUUIYHYITUUEUUHUUIUUBWIVKYESUYIUVLUWKKZLUVEUVLUVSUWKUVO
-      UWNPUXAUYMLMUXDUXAWPUWSUWTUXAUXCYJTUUBUUKYFTSVQUVEUVRUVSYCXSVQUVDUVEUXFYK
-      XSSUUDUUNWDVPUAUUOABYGYLYM $.
+      ( wfun cnx cfv cc cop cabs wa cin c0 wceq wne fvex cvv mp2an necomi eqtri
+      c1 1nn0 clt c2 vu vv ccnfld cbs cplusg cv caddc co cmpo cmul ctp cstv ccj
+      cmulr csn cun cts cmin ccom cmopn cple cle cds cunif cpr basendxnplusgndx
+      cmetu ceuf cdm basendxnmulrndx plusgndxnmulrndx cnex mpoaddex funtp mp3an
+      mpomulex wcel cjf fex funsn pm3.2i dmtpop dmsnop ineq12i starvndxnbasendx
+      wf starvndxnplusgndx starvndxnmulrndx disjtpsn funun simpri dsndxntsetndx
+      slotsdifplendx slotsdifdsndx ctsr letsr cr cdc unifndx 3nn0 deccl eqeltri
+      c3 nn0rei 2nn0 3lt10 1lt2 decltc eufndx breqtrri eqbrtri ltneii ax-mp w3a
+      slotsdifunifndx a1i 3anass c9 cn0 tsetndx 9nn0 2nn declti cc0 dsndx 2lt10
+      plendx 3pm3.2i disjtppr dmun basendx plusgndx mulrndx undisj2 mpbi birani
+      necom c4 starvndx 4nn0 elexi absf subf xpex dmprop unifndxntsetndx anim1i
+      coex funpr sylibr 9lt10 10nn0 0nn0 10pos tsetndxnbasendx tsetndxnplusgndx
+      tsetndxnmulrndx plendxnbasendx plendxnmulrndx dsndxnbasendx dsndxnmulrndx
+      cxp plendxnplusgndx dsndxnplusgndx unifndxnbasendx 3simpa sylanbrc adantr
+      disjtp2 1lt10 tsetndxnstarvndx ineqcomi incom simpl3 4lt10 gtneii undisj1
+      disjprsn df-cnfld funeqi mpbir ) UCABUDCZDEBUECZUAUBDDUAUFZUBUFZUGUHUIZEB
+      UNCZUAUBDDUWDUWEUJUHUIZEUKZBULCZUMEUOZUPZBUQCZFURUSZUTCZEBVACZVBEBVCCZUWN
+      EUKZBVDCZUWNVGCZEBVHCZFEVEZUPZUPZAZUWLAZUXCAZGUWLVIZUXCVIZHZIJUXEUXFUXGUW
+      IAZUWKAZGUWIVIZUWKVIZHZIJUXFUXKUXLUWBUWCKUWBUWGKUWCUWGKUXKVFVJVKUWBUWCUWG
+      DUWFUWHBUDLBUELBUNLVLUAUBVMZUAUBVPZVNVOUWJUMBULLDDUMWFDMVQZUMMVQVRVLDDMUM
+      VSNZVTWAUXOUWBUWCUWGUKZUWJUOZHZIUXMUXTUXNUYAUWBDUWCUWFUWGUWHVLUXPUXQWBZUW
+      JUMUXSWCZWDUWBUWJKUWCUWJKUWGUWJKUYBIJUWJUWBWEOUWJUWCWGOUWJUWGWHOUWBUWCUWG
+      UWJWIVOPUWIUWKWJNUWRAZUXBAZGUWRVIZUXBVIZHZIJUXGUYEUYFUWMUWPKZUWMUWQKUWPUW
+      QKZUYEUWJUWPKZUYJWMWKUWQUWMWLOUWJUWQKZUYKWNWKUWMUWPUWQUWOVBUWNBUQLBVALBVC
+      LUWNUTLZVBWOWPUUAZFURDWQFWFUXRFMVQUUBVLDWQMFVSNZDDUVBZDURWFUYQMVQURMVQUUC
+      DDVLVLUUDUYQDMURVSNUUHZVNVOUWSUXAKUYFUWSUXAUWSQXCWRZWQWSUYSQXCRWTXAXDXBUW
+      SUYSUXASWSUYSTQWRZUXASQTXCQRXEWTRXFXGXHXIXJXKXLUWSUXAUWTFBVDLBVHLUWNVGLZU
+      YPUUIXMWAUYIUWMUWPUWQUKZUWSUXAVEZHZIUYGVUBUYHVUCUWMUWOUWPVBUWQUWNUYNUYOUY
+      RWBZUWSUWTUXAFVUAUYPUUEZWDUWMUWSKZUWPUWSKZUWQUWSKZXNZUWMUXAKZUWPUXAKZUWQU
+      XAKZXNVUDIJUWCUWSKZUWGUWSKZUWJUWSKZXNZVUHVUIGZGZVUJXOVUSVUGVURGVUJVUQVUGV
+      URVUGVUQUWSUWMUUFOXPUUGVUGVUHVUIXQUUJXMVUKVULVUMUWMUXAUWMUWMXRXSXTYAXBXDU
+      WMXRUXASXTXRUYTUXASTQXRYBRYAUUKYCXIXJXKXLUWPUXAUWPUWPQYDWRZXSYGUULXBXDUWP
+      VUTUXASYGVUTUYTUXASQTYDQRXEUUMRUUNXGXHXIXJXKXLUWQUXAUWQQTWRZWQYEVVAQTRXEX
+      AXDXBUWQVVAUXASYEVVAUYTUXASQTTQRXEXERYFXGXHXIXJXKXLYHUWMUWPUWQUWSUXAYINPU
+      WRUXBWJNWAUXJUXMUXNUPZUYGUYHUPZHZIUXHVVBUXIVVCUWIUWKYJUWRUXBYJWDUXMVVCHIJ
+      ZUXNVVCHIJZGVVDIJVVEVVFUXMUYGHZIJZUXMUYHHZIJZGVVEVVHVVJVVGUXTVUBHZIUXMUXT
+      UYGVUBUYCVUEWDUWBUWMKZUWCUWMKZUWGUWMKZXNUWBUWPKZUWCUWPKZUWGUWPKZXNUWBUWQK
+      ZUWCUWQKZUWGUWQKZXNVVKIJVVLVVMVVNUWMUWBUUOOUWMUWCUUPOUWMUWGUUQOYHVVOVVPVV
+      QUWPUWBUUROUWPUWCUVCOUWPUWGUUSOYHVVRVVSVVTUWQUWBUUTOUWQUWCUVDOUWQUWGUVAOY
+      HUWBUWCUWGUWMUWPUWQUVIVOPVVIUXTVUCHZIUXMUXTUYHVUCUYCVUFWDUWBUWSKZVUNVUOXN
+      ZUWBUXAKZUWCUXAKZUWGUXAKZXNVWAIJVUSVWCXOVUQVWCVURVUQVWBVUNVUOGVWCVWBVUQUW
+      SUWBUVEOXPVUNVUOVUPUVFVWBVUNVUOXQUVGUVHXMVWDVWEVWFUWBUXAUWBUWBQXSYKRXBXDU
+      WBQUXASYKQUYTUXASTQQYBRRUVJYCXIXJXKXLUWCUXAUWCUWCTXSYLXEXBXDUWCTUXASYLTUY
+      TUXASTQTYBRXEYFYCXIXJXKXLUWGUXAUWGUWGXCXSYMWTXBXDUWGXCUXASYMXCUYTUXASTQXC
+      YBRWTXFYCXIXJXKXLYHUWBUWCUWGUWSUXAYINPWAUXMUYGUYHYNYOUXNUYGHZIJZUXNUYHHZI
+      JZGVVFVWHVWJVWGUYAVUBHIUXNUYAUYGVUBUYDVUEWDVUBUYAIUWMUWJKUWPUWJKZUWQUWJKZ
+      VUBUYAHIJUVKUYLUYJGVWKWMUYLVWKUYJUWJUWPYQYPXMUYMUYKGVWLWNUYMVWLUYKUWJUWQY
+      QYPXMUWMUWPUWQUWJWIVOUVLPVWIUYAVUCHZIUXNUYAUYHVUCUYDVUFWDVWMVUCUYAHZIUYAV
+      UCUVMUWSUWJKUXAUWJKVWNIJUWJUWSVUSVUPXOVUNVUOVUPVURUVNXMOUWJUXAUWJUWJYRXSY
+      SYTXBXDUWJYRUXASYSYRUYTUXASTQYRYBRYTUVOYCXIXJXKUVPUWSUXAUWJUVRNPPWAUXNUYG
+      UYHYNYOWAUXMUXNVVCUVQYOPUWLUXCWJNUCUXDUAUBUVSUVTUWA $.
     $( $j usage 'cnfldfunALT' avoids 'ax-addf' 'ax-mulf'; $)
   $}
 
@@ -281712,6 +281812,12 @@ $)
   zringplusg $p |- + = ( +g ` ZZring ) $=
     ( cz cvv wcel czring cplusg cfv wceq zex ccnfld df-zring cnfldadd ressplusg
     caddc ax-mp ) ABCMDEFGHAMIDBJKLN $.
+
+  $( The Euclidean function of the ring of integers.  (Contributed by Thierry
+     Arnoux, 9-Nov-2026.) $)
+  zringeuf $p |- abs = ( EuclF ` ZZring ) $=
+    ( cz cvv wcel cabs czring ceuf cfv wceq zex df-zring cnfldeuf resseuf ax-mp
+    ccnfld ) ABCDEFGHIADNEBJKLM $.
 
   ${
     $d x y $.
@@ -460637,17 +460743,18 @@ $)
        demonstrates the capabilities of the current definitions for graphs
        applied to extensible structures.  (Contributed by AV, 14-Nov-2021.)
        (Proof shortened by AV, 17-Nov-2021.)  Revise ~ df-cnfld .  (Revised by
-       GG, 31-Mar-2025.) $)
+       GG, 31-Mar-2025.)  Revise ~ df-cnfld .  (Revised by Thierry Arnoux,
+       9-Nov-2026.) $)
     cffldtocusgr $p |- G e. ComplUSGraph $=
-      ( vu vv cnx cbs cfv cc cop ccnfld wcel cv co cmpo ctp csn cun caddc cmulr
-      ccusgr cplusg cmul cstv ccj cts cabs cmin ccom cmopn cple cle cunif cmetu
-      cds wo opex tpid1 orci elun mpbir df-cnfld eleq2i bitri c1 cdc chash wceq
-      c3 cpw crab cnfldbas pweqi rabeqi eqtri cstr wbr cnfldstr a1i fvex opeldm
-      c2 cnex structtocusgr ax-mp ) HIJZKLZMNZCUCNWJWIWIHUDJFGKKFOZGOZUAPQLZHUB
-      JFGKKWKWLUEPQLZRZHUFJUGLSZTZNZWIHUHJUIUJUKZULJLHUMJUNLHUQJWSLRHUOJWSUPJLS
-      TZNZURZWRXAWRWIWONZWIWPNZURXCXDWIWMWNWHKUSUTVAWIWOWPVBVCVAWJWIWQWTTZNXBMX
-      EWIFGVDVEWIWQWTVBVFVCWJABMCVGVGVKVHLZBAOVIJWDVJZAKVLZVMXGAMIJZVLZVMDXGAXH
-      XJKXIVNVOVPVQMXFVRVSWJVTWAEWHKMHIWBWEWCWFWG $.
+      ( vu vv cnx cbs cfv cc cop ccnfld wcel cv co cmpo ctp cun cabs caddc cmul
+      ccusgr cplusg cmulr cstv ccj csn cts cmin ccom cmopn cple cle cunif cmetu
+      cds ceuf cpr wo opex tpid1 orci elun mpbir df-cnfld eleq2i bitri c1 chash
+      cdc wceq cpw crab cnfldbas pweqi rabeqi eqtri cstr wbr cnfldstr fvex cnex
+      c2 a1i opeldm structtocusgr ax-mp ) HIJZKLZMNZCUCNWKWJWJHUDJFGKKFOZGOZUAP
+      QLZHUEJFGKKWLWMUBPQLZRZHUFJUGLUHZSZNZWJHUIJTUJUKZULJLHUMJUNLHUQJWTLRHUOJW
+      TUPJLHURJTLUSSZNZUTZWSXBWSWJWPNZWJWQNZUTXDXEWJWNWOWIKVAVBVCWJWPWQVDVEVCWK
+      WJWRXASZNXCMXFWJFGVFVGWJWRXAVDVHVEWKABMCVIWDVIVKLZBAOVJJWDVLZAKVMZVNXHAMI
+      JZVMZVNDXHAXIXKKXJVOVPVQVRMXGVSVTWKWAWEEWIKMHIWBWCWFWGWH $.
   $}
 
   ${
@@ -517992,13 +518099,6 @@ $)
       IFAUPJUQUMDUPUMUQUAABCUBUCAUNUPGNUDULUIURCDEUEPUFUG $.
   $}
 
-  $( A set ` A ` not in a pair is neither element of the pair.  (Contributed by
-     Thierry Arnoux, 20-Nov-2023.) $)
-  nelpr $p |- ( A e. V -> ( -. A e. { B , C } <-> ( A =/= B /\ A =/= C ) ) )
-      $=
-    ( wcel cpr wn wceq wo wne wa elprg notbid neanior bitr4di ) ADEZABCFEZGABHA
-    CHIZGABJACJKPQRABCDLMABACNO $.
-
   ${
     $d A x $.  $d B x $.  $d C x $.
     $( Rewrite an empty intersection with a pair.  (Contributed by Thierry
@@ -533770,25 +533870,7 @@ $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
-  $c EuclF EDomn $.
-
-  $( Declare the syntax for the Euclidean function index extractor. $)
-  ceuf $a class EuclF $.
-
-  $( Define the Euclidean function.  (Contributed by Thierry Arnoux,
-     22-Mar-2025.)  Use its index-independent form ~ eufid instead.
-     (New usage is discouraged.) $)
-  df-euf $a |- EuclF = Slot ; 2 1 $.
-
-  $( Index value of the Euclidean function slot.  Use ~ ndxarg .  (Contributed
-     by Thierry Arnoux, 22-Mar-2025.)  (New usage is discouraged.) $)
-  eufndx $p |- ( EuclF ` ndx ) = ; 2 1 $=
-    ( ceuf c2 c1 cdc df-euf 2nn0 1nn decnncl ndxarg ) ABCDEBCFGHI $.
-
-  $( Utility theorem: index-independent form of ~ df-euf .  (Contributed by
-     Thierry Arnoux, 22-Mar-2025.) $)
-  eufid $p |- EuclF = Slot ( EuclF ` ndx ) $=
-    ( ceuf c2 c1 cdc df-euf 2nn0 1nn decnncl ndxid ) ABCDEBCFGHI $.
+  $c EDomn $.
 
   $( Declare the syntax for the Euclidean Domain. $)
   cedom $a class EDomn $.
@@ -533939,30 +534021,68 @@ $)
 
   ${
     $d q r x y $.
-    zzedom.1 $e |- abs = ( EuclF ` ZZring ) $.
-    $( The ring of integers is a Euclidean domain.  Note that the hypothesis
-       ` abs = ( EuclF `` ZZring ) ` could be dropped if the definition of
-       ` CCfld ` is adapted.  (Contributed by Thierry Arnoux, 29-Oct-2026.) $)
+    $( The ring of integers is a Euclidean domain.  (Contributed by Thierry
+       Arnoux, 29-Oct-2026.) $)
     zzedom $p |- ZZring e. EDomn $=
-      ( vx vy vq vr czring wcel cz cc0 cn0 cabs cv cmul co caddc wceq cfv wa cc
-      wrex cedom cidom csn cdif cres wf clt wo wral zringidom cmpt wtru cr absf
+      ( vx vy vq vr czring wcel cz cc0 cn0 cabs cv cmul caddc wceq cfv clt wrex
+      co wa cc cedom cidom csn cdif cres wf wo wral zringidom cmpt wtru cr absf
       wbr a1i wss zsscn ssdifss mp1i feqresmpt mptru nn0abscl syl fmpti cle w3a
       eldifi simpr simp-5r difssd sselda ad5antr mulcomd oveq1d eqtrd wne df-ne
       zcnd simpllr simp-4r adantr eldifsnd fvresd zred absidd simp-7r biimtrrid
       wn 3brtr4d ex orrd jca 3anasss simpl eldifsnbd wreu divalg reurex syl3anc
-      rexcom sylib reximddv2 rgen2 pm3.2i zringbas zringplusg zringmulr reseq1i
-      zring0 ceuf isedom mpbir2an ) FUAGFUBGHIUCZUDZJKXOUEZUFZBLZCLZDLZMNZELZON
-      ZPZYBIPZYBXPQZXSXPQZUGUOZUHZRZEHTDHTZCXOUIBHUIZRUJXQYLBXOJXRKQZXPXPBXOYMU
-      KPULBSUMXOKSUMKUFULUNUPHSUQXOSUQULURHSXNUSUTVAVBXRXOGXRHGZYMJGXRHXNVHXRVC
-      VDVEYKBCHXOYNXSXOGZRZIYBVFUOZYBXSKQZUGUOZXRXTXSMNZYBONZPZVGZYJDEHHYPXTHGZ
-      RZYBHGZRZYQYSUUBYJUUGYQRZYSRZUUBRZYDYIUUJXRUUAYCUUIUUBVIUUJYTYAYBOUUJXTXS
-      UUJXTYPUUDUUFYQYSUUBVJVSUUJXSYPXSHGZUUDUUFYQYSUUBYNXOHXSYNHXNVKVLZVMVSVNV
-      OVPUUJYEYHYEWIYBIVQZUUJYHYBIVRUUJUUMYHUUJUUMRZYBYRYFYGUGUUHYSUUBUUMVTUUNY
-      FYBKQZYBUUNYBXOKUUNYBHIUUJUUFUUMUUEUUFYQYSUUBWAZWBUUJUUMVIWCWDUUJUUOYBPUU
-      MUUJYBUUJYBUUPWEUUGYQYSUUBVTWFWBVPUUNXSXOKYNYOUUDUUFYQYSUUBUUMWGWDWJWKWHW
-      LWMWNYPUUCDHTZEHTZUUCEHTDHTYPYNUUKXSIVQZUURYNYOWOUULYPXSHIYNYOVIWPYNUUKUU
-      SVGUUQEHWQUURXSXREDWRUUQEHWSVDWTUUCEDHHXAXBXCXDXEBCHFOMXPIEDXFXJXGXHKFXKQ
-      XOAXIXLXM $.
+      rexcom sylib reximddv2 pm3.2i zringbas zringplusg zringmulr ceuf zringeuf
+      rgen2 zring0 reseq1i isedom mpbir2an ) EUAFEUBFGHUCZUDZIJXOUEZUFZAKZBKZCK
+      ZLRZDKZMRZNZYBHNZYBXPOZXSXPOZPUNZUGZSZDGQCGQZBXOUHAGUHZSUIXQYLAXOIXRJOZXP
+      XPAXOYMUJNUKATULXOJTULJUFUKUMUOGTUPXOTUPUKUQGTXNURUSUTVAXRXOFXRGFZYMIFXRG
+      XNVGXRVBVCVDYKABGXOYNXSXOFZSZHYBVEUNZYBXSJOZPUNZXRXTXSLRZYBMRZNZVFZYJCDGG
+      YPXTGFZSZYBGFZSZYQYSUUBYJUUGYQSZYSSZUUBSZYDYIUUJXRUUAYCUUIUUBVHUUJYTYAYBM
+      UUJXTXSUUJXTYPUUDUUFYQYSUUBVIVRUUJXSYPXSGFZUUDUUFYQYSUUBYNXOGXSYNGXNVJVKZ
+      VLVRVMVNVOUUJYEYHYEWHYBHVPZUUJYHYBHVQUUJUUMYHUUJUUMSZYBYRYFYGPUUHYSUUBUUM
+      VSUUNYFYBJOZYBUUNYBXOJUUNYBGHUUJUUFUUMUUEUUFYQYSUUBVTZWAUUJUUMVHWBWCUUJUU
+      OYBNUUMUUJYBUUJYBUUPWDUUGYQYSUUBVSWEWAVOUUNXSXOJYNYOUUDUUFYQYSUUBUUMWFWCW
+      IWJWGWKWLWMYPUUCCGQZDGQZUUCDGQCGQYPYNUUKXSHVPZUURYNYOWNUULYPXSGHYNYOVHWOY
+      NUUKUUSVFUUQDGWPUURXSXRDCWQUUQDGWRVCWSUUCDCGGWTXAXBXIXCABGEMLXPHDCXDXJXEX
+      FJEXGOXOXHXKXLXM $.
+  $}
+
+  ${
+    $d P f g q r $.  $d R f g q r $.  $d U f g q r $.  $d Z f g q r $.
+    $d f g ph $.
+    ply1edom.1 $e |- P = ( Poly1 ` R ) $.
+    ply1edom.2 $e |- U = ( Base ` P ) $.
+    ply1edom.3 $e |- Z = ( 0g ` P ) $.
+    ply1edom.4 $e |- ( deg1 ` R ) = ( EuclF ` P ) $.
+    ply1edom.5 $e |- ( ph -> R e. Field ) $.
+    $( The univariate polynomials over a field ` R ` form a Euclidean domain.
+       Note that the hypothesis ` ( deg1 `` R ) = ( EuclF `` P ) ` could be
+       dropped if the definition of ` Poly1 ` would be adapted.  (Contributed
+       by Thierry Arnoux, 9-Nov-2026.) $)
+    ply1edom $p |- ( ph -> P e. EDomn ) $=
+      ( vf vg wcel cfv co wceq clt wa eqid syl3anc vq vr csn cdif cn0 cdg1 cres
+      cidom wf cv cmulr cplusg wbr wo wrex wral cfield fldidom syl ply1idom cxr
+      cedom deg1xrf a1i difssd nfv crg wne idomringd adantr eldifsnbd deg1nn0cl
+      ffund sselda simpr fssrescdmd cq1p oveq2 oveq1d eqeq2d anbi1d eqeq1 fveq2
+      funimassd cr1p breq1d orbi12d anbi12d cuc1p ad2antrr cdr flddrngd eldifad
+      simplr drnguc1p q1pcl r1pcl r1pid ccrg idomcringd crngcomd eqtrd r1pdeglt
+      eldifsnd fvresd 3brtr4d exmidne orim12da jca 2rspcedvdw anasss ralrimivva
+      ceuf reseq1i isedom sylanbrc ) ABUHMZDEUCZUDZUECUFNZXSUGZUIZKUJZLUJZUAUJZ
+      BUKNZOZUBUJZBULNZOZPZYHEPZYHYANZYDYANZQUMZUNZRZUBDUOUADUOZLXSUPKDUPZRBVBM
+      ACUHMZXQACUQMYTJCURUSZBCFUTUSZAYBYSADVAXSUEXTDVAXTUIADXTBCXTSZFGVCVDZADXR
+      VEZAKXSUEXTAKVFADVAXTUUDVMAYCXSMZRZCVGMZYCDMZYCEVHYCXTNUEMAUUHUUFACUUAVIZ
+      VJAXSDYCUUEVNUUGYCDEAUUFVOVKDXTBCYCEUUCFHGVLTWDVPAYRKLDXSAUUIYDXSMZYRAUUI
+      RZUUKRZYQYCYDYCYDCVQNZOZYFOZYHYIOZPZYPRYCUUPYCYDCWENZOZYIOZPZUUTEPZUUTYAN
+      ZYNQUMZUNZRUAUBUUOUUTDDYEUUOPZYKUURYPUVGYJUUQYCUVGYGUUPYHYIYEUUOYDYFVRVSV
+      TWAYHUUTPZUURUVBYPUVFUVHUUQUVAYCYHUUTUUPYIVRVTUVHYLUVCYOUVEYHUUTEWBUVHYMU
+      VDYNQYHUUTYAWCWFWGWHUUMUUHUUIYDCWINZMZUUODMAUUHUUIUUKUUJWJZAUUIUUKWNZUUMC
+      WKMZYDDMYDEVHUVJAUVMUUIUUKACJWLWJUUMYDDXRUULUUKVOZWMZUUMYDDEUVNVKDUVIBCYD
+      EFGHUVISZWOTZDUVIBUUNCYCYDUUNSZFGUVPWPTZUUMUUHUUIUVJUUTDMZUVKUVLUVQDUVIBC
+      UUSYCYDUUSSZFGUVPWQTZUUMUVBUVFUUMYCUUOYDYFOZUUTYIOZUVAUUMUUHUUIUVJYCUWDPU
+      VKUVLUVQDUVIBYIUUNCYFUUSYCYDFGUVPUVRUWAYFSZYISZWRTUUMUWCUUPUUTYIUUMDBYFUU
+      OYDGUWEABWSMUUIUUKABUUBWTWJUVSUVOXAVSXBUUMUVCUUTEVHZUVCUVEUUMUVCVOUUMUWGR
+      ZUUTXTNZYDXTNZUVDYNQUUMUWIUWJQUMZUWGUUMUUHUUIUVJUWKUVKUVLUVQDUVIXTBCUUSYC
+      YDUWAFGUVPUUCXCTVJUWHUUTXSXTUWHUUTDEUUMUVTUWGUWBVJUUMUWGVOXDXEUWHYDXSXTUU
+      LUUKUWGWNXEXFUVCUWGUNUUMUUTEXGVDXHXIXJXKXLXIKLDBYIYFYAEUBUAGHUWFUWEXTBXMN
+      XSIXNXOXP $.
   $}
 
   ${
@@ -725654,11 +725774,6 @@ $)
   subex $p |- - e. _V $=
     ( cc cxp cmin wf cvv wcel subf cnex xpex fex2 mp3an ) AABZACDLEFAEFCEFGAAHH
     IHLACEEJK $.
-
-  $( The absolute value function is a set.  (Contributed by SN, 5-Jun-2025.) $)
-  absex $p |- abs e. _V $=
-    ( cc cr cabs wf cvv wcel absf cnex reex fex2 mp3an ) ABCDAEFBEFCEFGHIABCEEJ
-    K $.
 
   $( The conjugate function is a set.  (Contributed by SN, 5-Jun-2025.) $)
   cjex $p |- * e. _V $=
