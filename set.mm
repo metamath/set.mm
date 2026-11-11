@@ -743443,7 +743443,7 @@ $)
                                   ( ( Re ` C ) - ( Re ` A ) ) ) x. A ) +
                                   ( ( ( ( Re ` B ) - ( Re ` A ) ) /
                                   ( ( Re ` C ) - ( Re ` A ) ) ) x. C ) ) ) $.
-    $( The split point belongs to the complex numbers. See ~ triunsplitd for a
+    $( The split point belongs to the complex numbers.  See ~ triunsplitd for a
        definition of the split point.  (Contributed by Jon Pennant,
        29-Oct-2026.) $)
     trisplitptcld $p |- ( ph -> P e. CC ) $=
@@ -744921,8 +744921,8 @@ $)
     trivertrdmared.3 $e |- ( ph -> C e. CC ) $.
     trivertrdmared.4 $e |- ( ph -> ( Re ` A ) < ( Re ` B ) ) $.
     trivertrdmared.5 $e |- ( ph -> ( Re ` B ) = ( Re ` C ) ) $.
-    $( Any complex triangle with a vertical right edge belongs to the domain
-       of the area function.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    $( Any complex triangle with a vertical right edge belongs to the domain of
+       the area function.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
     trivertrdmared $p |- ( ph -> ( c2r " ( tri ` <. A , <. B , C >. >. ) )
                                                e. dom area ) $=
       ( vx vy cfv wbr cop wcel cr syl cmin co wceq cim cle cc2r ctri cima carea
@@ -744948,8 +744948,8 @@ $)
     trivertldmared.3 $e |- ( ph -> C e. CC ) $.
     trivertldmared.4 $e |- ( ph -> ( Re ` A ) = ( Re ` B ) ) $.
     trivertldmared.5 $e |- ( ph -> ( Re ` B ) < ( Re ` C ) ) $.
-    $( Any complex triangle with a vertical left edge belongs to the domain
-       of the area function.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    $( Any complex triangle with a vertical left edge belongs to the domain of
+       the area function.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
     trivertldmared $p |- ( ph -> ( c2r " ( tri ` <. A , <. B , C >. >. ) )
                                                e. dom area ) $=
       ( vx vy cfv wbr cop wcel cr syl cmin co wceq cim cle cc2r ctri cima carea
@@ -745140,8 +745140,8 @@ $)
     trisortdmared.3 $e |- ( ph -> C e. CC ) $.
     trisortdmared.4 $e |- ( ph -> ( Re ` A ) <_ ( Re ` B ) ) $.
     trisortdmared.5 $e |- ( ph -> ( Re ` B ) <_ ( Re ` C ) ) $.
-    $( The Cartesian image of a real-sorted triangle belongs to the domain
-       of the area function.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    $( The Cartesian image of a real-sorted triangle belongs to the domain of
+       the area function.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
     trisortdmared $p |- ( ph -> ( c2r " ( tri ` <. A , <. B , C >. >. ) )
                                                e. dom area ) $=
       ( cre cfv clt wbr wcel wa cc adantr simpr recld mpjaodan cc2r cop ctri wo
@@ -745159,8 +745159,8 @@ $)
     tridmared.1 $e |- ( ph -> A e. CC ) $.
     tridmared.2 $e |- ( ph -> B e. CC ) $.
     tridmared.3 $e |- ( ph -> C e. CC ) $.
-    $( The Cartesian image of any complex triangle belongs to the domain of
-       the area function.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
+    $( The Cartesian image of any complex triangle belongs to the domain of the
+       area function.  (Contributed by Jon Pennant, 29-Oct-2026.) $)
     tridmared $p |- ( ph -> ( c2r " ( tri ` <. A , <. B , C >. >. ) )
                                             e. dom area ) $=
       ( va vb vc cop cfv cv cre wa cc wrex wcel simpr adantr ctri wceq cle cc2r
