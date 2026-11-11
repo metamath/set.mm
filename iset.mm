@@ -184731,6 +184731,27 @@ $)
       ( ( i evalSub r ) ` ( Base ` r ) ) ) $.
   $}
 
+  ${
+    $d .x. y z $.  $d B y z $.  $d C y z $.  $d G z $.  $d ph y z $.
+    psrbagev1.c $e |- C = ( Base ` T ) $.
+    psrbagev1.x $e |- .x. = ( .g ` T ) $.
+    psrbagev1.z $e |- .0. = ( 0g ` T ) $.
+    psrbagev1.t $e |- ( ph -> T e. CMnd ) $.
+    psrbagev1fi.i $e |- ( ph -> I e. Fin ) $.
+    psrbagev1fi.b $e |- ( ph -> B e. ( NN0 ^m I ) ) $.
+    psrbagev1.g $e |- ( ph -> G : I --> C ) $.
+    $( A bag of multipliers provides the conditions for a valid sum.
+       (Contributed by Stefan O'Rear, 9-Mar-2015.)  (Revised by AV,
+       18-Jul-2019.)  (Revised by AV, 11-Apr-2024.)  Remove a sethood
+       hypothesis.  (Revised by SN, 7-Aug-2024.) $)
+    psrbagev1fi $p |- ( ph -> ( ( B oF .x. G ) : I --> C
+                              /\ ( B oF .x. G ) finSupp .0. ) ) $=
+      ( vy vz co cn0 wcel cof wf cfsupp wbr cfn cmnd cv cmnmndd mulgnn0cl 3expb
+      wa sylan cmap elmapi syl inidm off mndidcl fdmfifsupp jca ) AGCBFEUARZUBV
+      AHUCUDAPQGGGESCCBFUEUEADUFTZPUGZSTZQUGZCTZUKVCVEERCTZADLUHZVBVDVFVGCEDVCV
+      EIJUIUJULABSGUMRTGSBUBNBSGUNUOOMMGUPUQZAGCVACHVIMAVBHCTVHCDHIKURUOUSUT $.
+  $}
+
 
 $(
 ###############################################################################
