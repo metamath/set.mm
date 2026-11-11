@@ -184692,6 +184692,47 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Polynomial evaluation
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Introduce new constant symbols. $)
+  $c evalSub $. $( Evaluation of a multivariate polynomial in a subring $)
+  $c eval $. $( Evaluation of a multivariate polynomial $)
+
+  $( Evaluation of a multivariate polynomial in a subring. $)
+  ces $a class evalSub $.
+
+  $( Evaluation of a multivariate polynomial. $)
+  cevl $a class eval $.
+
+  ${
+    $d b f g i r s w x $.
+    $( Define the evaluation map for the polynomial algebra.  The function
+       ` ( ( I evalSub S ) `` R ) : V --> ( S ^m ( S ^m I ) ) ` makes sense
+       when ` I ` is an index set, ` S ` is a ring, ` R ` is a subring of
+       ` S ` , and where ` V ` is the set of polynomials in ` ( I mPoly R ) ` .
+       This function maps an element of the formal polynomial algebra (with
+       coefficients in ` R ` ) to a function from assignments ` I --> S ` of
+       the variables to elements of ` S ` formed by evaluating the polynomial
+       with the given assignments.  (Contributed by Stefan O'Rear,
+       11-Mar-2015.) $)
+    df-evls $a |- evalSub = ( i e. _V , s e. CRing |-> [_ ( Base ` s ) / b ]_
+      ( r e. ( SubRing ` s ) |-> [_ ( i mPoly ( s |`s r ) ) / w ]_
+        ( iota_ f e. ( w RingHom ( s ^s ( b ^m i ) ) )
+        ( ( f o. ( algSc ` w ) ) = ( x e. r |-> ( ( b ^m i ) X. { x } ) ) /\
+          ( f o. ( i mVar ( s |`s r ) ) ) = ( x e. i |-> ( g e. ( b ^m i ) |->
+        ( g ` x ) ) ) ) ) ) ) $.
+
+    $( A simplification of ` evalSub ` when the evaluation ring is the same as
+       the coefficient ring.  (Contributed by Stefan O'Rear, 19-Mar-2015.) $)
+    df-evl $a |- eval = ( i e. _V , r e. _V |->
+      ( ( i evalSub r ) ` ( Base ` r ) ) ) $.
+  $}
+
+
+$(
 ###############################################################################
   BASIC TOPOLOGY
 ###############################################################################
@@ -216724,6 +216765,12 @@ htmldef "mVar" as " mVar ";
 htmldef "mPoly" as " mPoly ";
   althtmldef "mPoly" as " mPoly ";
   latexdef "mPoly" as "\mathrm{mPoly}";
+htmldef "evalSub" as " evalSub ";
+  althtmldef "evalSub" as " evalSub ";
+  latexdef "evalSub" as "\mathbin{\mathrm{evalSub}}";
+htmldef "eval" as " eval ";
+  althtmldef "eval" as " eval ";
+  latexdef "eval" as "\mathbin{\mathrm{eval}}";
 
 htmldef "metUnif" as "metUnif";
   althtmldef "metUnif" as "metUnif";
