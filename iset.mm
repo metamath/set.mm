@@ -184752,6 +184752,22 @@ $)
       EIJUIUJULABSGUMRTGSBUBNBSGUNUOOMMGUPUQZAGCVACHVIMAVBHCTVHCDHIKURUOUSUT $.
   $}
 
+  ${
+    psrbagev2.c $e |- C = ( Base ` T ) $.
+    psrbagev2.x $e |- .x. = ( .g ` T ) $.
+    psrbagev2.t $e |- ( ph -> T e. CMnd ) $.
+    psrbagev2fi.i $e |- ( ph -> I e. Fin ) $.
+    psrbagev2fi.b $e |- ( ph -> B e. ( NN0 ^m I ) ) $.
+    psrbagev2.g $e |- ( ph -> G : I --> C ) $.
+    $( Closure of a sum using a bag of multipliers.  (Contributed by Stefan
+       O'Rear, 9-Mar-2015.)  (Proof shortened by AV, 18-Jul-2019.)  (Revised by
+       AV, 11-Apr-2024.)  Remove a sethood hypothesis.  (Revised by SN,
+       7-Aug-2024.) $)
+    psrbagev2fi $p |- ( ph -> ( T gsum ( B oF .x. G ) ) e. C ) $=
+      ( cof co c0g cfv eqid wf cfsupp wbr psrbagev1fi simpld gsumclfi ) AGCBFEN
+      OZDDPQZHUFRZJKAGCUESUEUFTUAABCDEFGUFHIUGJKLMUBUCUD $.
+  $}
+
 
 $(
 ###############################################################################
