@@ -8197,6 +8197,15 @@ $)
     ( wo wi wa pm2.67-2 olc imim1i jca pm3.44 impbii ) ACDZBEZABEZCBEZFNOPABCGC
     MBCAHIJBACKL $.
 
+  ${
+    jaodd.1 $e |- ( ph -> ( ps -> ( ch -> th ) ) ) $.
+    jaodd.2 $e |- ( ph -> ( ps -> ( ta -> th ) ) ) $.
+    $( Double deduction form of ~ jaoi .  (Contributed by Steven Nguyen,
+       17-Jul-2022.) $)
+    jaodd $p |- ( ph -> ( ps -> ( ( ch \/ ta ) -> th ) ) ) $=
+      ( wi wo jao syl6c ) ABCDHEDHCEIDHFGCDEJK $.
+  $}
+
   $( Theorem *4.77 of [WhiteheadRussell] p. 121.  (Contributed by NM,
      3-Jan-2005.) $)
   pm4.77 $p |- ( ( ( ps -> ph ) /\ ( ch -> ph ) ) <->
@@ -9625,6 +9634,15 @@ $)
     $( A triple syllogism inference.  (Contributed by NM, 13-May-2004.) $)
     syl3an $p |- ( ( ph /\ ch /\ ta ) -> ze ) $=
       ( w3a 3anim123i syl ) ACELBDFLGABCDEFHIJMKN $.
+  $}
+
+  ${
+    syl3an12.1 $e |- ( ph -> ps ) $.
+    syl3an12.2 $e |- ( ch -> th ) $.
+    syl3an12.s $e |- ( ( ps /\ th /\ ta ) -> et ) $.
+    $( A double syllogism inference.  (Contributed by SN, 15-Sep-2024.) $)
+    syl3an12 $p |- ( ( ph /\ ch /\ ta ) -> et ) $=
+      ( id syl3an ) ABCDEEFGHEJIK $.
   $}
 
   ${
@@ -199690,6 +199708,31 @@ $)
                     ( denom ` ( A ^ N ) ) = ( ( denom ` A ) ^ N ) ) $=
     ( cq wcel cn0 wa cexp co cnumer cfv wceq cdenom numdenexp simprd ) ACDBEDFA
     BGHZIJAIJBGHKOLJALJBGHKABMN $.
+
+  ${
+    oexpreposd.n $e |- ( ph -> N e. RR ) $.
+    oexpreposd.m $e |- ( ph -> M e. NN ) $.
+    oexpreposd.1 $e |- ( ph -> -. ( M / 2 ) e. NN ) $.
+    $( The exponential of a positive real number is positive iff the exponent
+       is odd.  (Contributed by SN, 4-Mar-2023.) $)
+    oexpreposd $p |- ( ph -> ( 0 < N <-> 0 < ( N ^ M ) ) ) $=
+      ( cc0 clt wbr cexp co wa cr wcel adantr simpr wn wceq cn c2 cz syl3anc ex
+      nnzd expgt0 wo lttrid notbid notnotr 0re ltnri 0expd breq2d mtbiri eqcomd
+      0red oveq1d mtbird cneg renegcld cc cdvds recnd cdiv cnumer cfv cdenom c1
+      cmul cq wb zq adantl qden1elz syl mpbird oveq2d qmuldeneqnum zcnd mulridd
+      3eqtr3rd nnred 2re a1i nngt0d 2pos divgt0d qgt0numnn syl2anr mtand evend2
+      eqeltrd oexpneg biimpd nnnn0d reexpcld biimtrdi lt0neg1d lt0neg2d 3imtr4d
+      pm2.46 3syld jaod syl5 sylbid impcon4bid ) AGCHIZGCBJKZHIZAXGXIAXGLCMNZBU
+      ANZXGXIAXJXGDOAXKXGABEUDZOAXGPCBUEUBUCAXGQGCRZCGHIZUFZQZQZXIQZAXGXPAGCAUP
+      ZDUGUHXQXOAXRXOUIAXMXRXNAXMXRAXMLZXIGGBJKZHIZAYBQXMAYBGGHIGUJUKAYAGGHABEU
+      LUMUNOXTXHYAGHXTCGBJXTGCAXMPUOUQUMURUCAGCUSZHIZXHUSZGHIZQZXNXRAYDGYCBJKZH
+      IZGYEHIZYGAYDYIAYDLYCMNZXKYDYIAYKYDACDUTOAXKYDXLOAYDPYCBUEUBUCAYIYJAYHYEG
+      HACVANBSNTBVBIZQYHYERACDVCEAYLBTVDKZUANZAYNYMSNFAYNLZYMYMVEVFZSYOYMYMVGVF
+      ZVIKZYMVHVIKYPYMYOYQVHYMVIYOYQVHRZYNAYNPZYOYMVJNZYSYNVKYNUUAAYMVLZVMZYMVN
+      VOVPVQYOUUAYRYPRUUCYMVRVOYOYMYOYMYTVSVTWAYNUUAGYMHIYPSNAUUBABTABEWBTMNAWC
+      WDABEWEGTHIAWFWDWGYMWHWIWLWJAXKYLYNVKXLBWKVOURCBWMUBUMWNAYJGYERZYFUFQYGAG
+      YEXSAXHACBDABEWOWPZUTUGUUDYFXAWQXBACDWRAXIYFAXHUUEWSUHWTXCXDXEXF $.
+  $}
 
 
 $(
@@ -725253,24 +725296,6 @@ $)
   $}
 
   ${
-    jaodd.1 $e |- ( ph -> ( ps -> ( ch -> th ) ) ) $.
-    jaodd.2 $e |- ( ph -> ( ps -> ( ta -> th ) ) ) $.
-    $( Double deduction form of ~ jaoi .  (Contributed by Steven Nguyen,
-       17-Jul-2022.) $)
-    jaodd $p |- ( ph -> ( ps -> ( ( ch \/ ta ) -> th ) ) ) $=
-      ( wi wo jao syl6c ) ABCDHEDHCEIDHFGCDEJK $.
-  $}
-
-  ${
-    syl3an12.1 $e |- ( ph -> ps ) $.
-    syl3an12.2 $e |- ( ch -> th ) $.
-    syl3an12.s $e |- ( ( ps /\ th /\ ta ) -> et ) $.
-    $( A double syllogism inference.  (Contributed by SN, 15-Sep-2024.) $)
-    syl3an12 $p |- ( ( ph /\ ch /\ ta ) -> et ) $=
-      ( id syl3an ) ABCDEEFGHEJIK $.
-  $}
-
-  ${
     exbiii.1 $e |- E. x ph $.
     exbiii.2 $e |- ( ph <-> ps ) $.
     $( Inference associated with ~ exbii .  Weaker version of ~ eximii .
@@ -726470,14 +726495,14 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-  ${
-    oexpreposd.n $e |- ( ph -> N e. RR ) $.
-    oexpreposd.m $e |- ( ph -> M e. NN ) $.
-    oexpreposd.1 $e |- ( ph -> -. ( M / 2 ) e. NN ) $.
-    $( Lemma for ~ dffltz .  For a more standard version, see ~ expgt0b .
+  $( See ~ oexpreposd in the main part!
+    oexpreposd.n @e |- ( ph -> N e. RR ) @.
+    oexpreposd.m @e |- ( ph -> M e. NN ) @.
+    oexpreposd.1 @e |- ( ph -> -. ( M / 2 ) e. NN ) @.
+    @( Lemma for ~ dffltz .  For a more standard version, see ~ expgt0b .
        TODO-SN?:  This can be used to show ~ exp11d holds for all integers when
-       the exponent is odd.  (Contributed by SN, 4-Mar-2023.) $)
-    oexpreposd $p |- ( ph -> ( 0 < N <-> 0 < ( N ^ M ) ) ) $=
+       the exponent is odd.  (Contributed by SN, 4-Mar-2023.) @)
+    oexpreposd @p |- ( ph -> ( 0 < N <-> 0 < ( N ^ M ) ) ) @=
       ( cc0 clt wbr cexp co wa cr wcel adantr simpr wn wceq cn c2 cz syl3anc ex
       nnzd expgt0 wo lttrid notbid notnotr 0re ltnri 0expd breq2d mtbiri eqcomd
       0red oveq1d mtbird cneg renegcld cc cdvds recnd cdiv cnumer cfv cdenom c1
@@ -726493,8 +726518,8 @@ $)
       ZVIKZYMVHVIKYPYMYOYQVHYMVIYOYQVHRZYNAYNPZYOYMVJNZYSYNVKYNUUAAYMVLZVMZYMVN
       VOVPVQYOUUAYRYPRUUCYMVRVOYOYMYOYMYTVSVTWAYNUUAGYMHIYPSNAUUBABTABEWBTMNAWC
       WDABEWEGTHIAWFWDWGYMWHWIWLWJAXKYLYNVKXLBWKVOURCBWMUBUMWNAYJGYERZYFUFQYGAG
-      YEXSAXHACBDABEWOWPZUTUGUUDYFXAWQXBACDWRAXIYFAXHUUEWSUHWTXCXDXEXF $.
-  $}
+      YEXSAXHACBDABEWOWPZUTUGUUDYFXAWQXBACDWRAXIYFAXHUUEWSUHWTXCXDXEXF @.
+  $)
 
   ${
     explt1d.a $e |- ( ph -> A e. RR ) $.
@@ -860586,10 +860611,10 @@ $)
        third integer.  (Contributed by AV, 2-Nov-2026.) $)
     fltgcdbgcdc $p |- ( ph -> ( A gcd B ) = ( B gcd C ) ) $=
       ( cgcd co wcel cz cc0 wne wa cexp csn cdif eleq2i eldifsn simplbi gcdcomd
-      bitri caddc wceq nnnn0d zexpcld zaddcom syl2anc eqtr3d fltgcdagcdc eqtrd
-      syl ) ABCMNCBMNCDMNABCABFOZBPOZIURUSBQRZURBPQUAUBZOUSUTSFVABHUCBPQUDUGUEU
-      QZACFOZCPOZJVCVDCQRZVCCVAOVDVESFVACHUCCPQUDUGUEUQZUFACBDEFGHJIKABETNZCETN
-      ZUHNZVHVGUHNZDETNAVGPOVHPOVIVJUIABEVBAEGUJZUKACEVFVKUKVGVHULUMLUNUOUP $.
+      bitri syl caddc nnnn0d zexpcld zcnd addcomd eqtr3d fltgcdagcdc eqtrd ) AB
+      CMNCBMNCDMNABCABFOZBPOZIUQURBQRZUQBPQUAUBZOURUSSFUTBHUCBPQUDUGUEUHZACFOZC
+      POZJVBVCCQRZVBCUTOVCVDSFUTCHUCCPQUDUGUEUHZUFACBDEFGHJIKABETNZCETNZUINVGVF
+      UINDETNAVFVGAVFABEVAAEGUJZUKULAVGACEVEVHUKULUMLUNUOUP $.
   $}
 
   ${
@@ -860775,23 +860800,23 @@ $)
       3nn0 a1i eqcomd sylan9eqr eqeq1d wb 2z zmulcld addeq0 syl2anc cdiv cn wbr
       cdvds wn 3nn n2dvds3 oexpneg syl3anc eqeq2d eqcom znegcld simprbi expne0d
       3z divmul3d bitr4id expdivd 3bitrd eleqtrdi cuqn2 eqneqall syl5com sylbid
-      mpd expcom ax-1 pm2.61ine negidd addinvcom eqtrd cr readdlid expeq0 com12
-      zred simplbiim ex mpid jca ) ABCUAZBCUBZUAZAXJUCBCABCKZXJAXMUGZBLMNZCLMNZ
-      ONZDLMNZONZPKZXJAXTXMGUDXNXTQXPUENZXRONZPKZXJXNXSYBPXNXQYAXROXMAXQXPXPONZ
-      YAXMXOXPXPOBCLMUFUHAXPUIRZYDYAKAXPACLACERZCSRZIYFYGCPUAZYFCSPUJUKZRZYGYHU
-      GEYICFULCSPUMUNZUOUPZLUQRAUTVAZURZTZYEYAYDXPUSVBUPVCUHVDAYCXJUCXMAYCYAXRU
-      BZKZXJAYAUIRXRUIRYCYQVEAYAAQXPQSRAVFVAZYNVGTAXRADLADERZDSRZJYSYTDPUAZYSDY
-      IRYTUUAUGEYIDFULDSPUMUNZUOUPZYMURZTYAXRVHVIAYQDUBZCVJNLMNZQKZXJAYQYAUUELM
-      NZKZUUHXPVJNZQKZUUGAYPUUHYAAUUHYPADUIRZLVKRZQLVMVLVNZUUHYPKADUUCTZUUMAVOV
-      AZUUNAVPVAZDLVQVRVBVSAUUIUUHYAKUUKYAUUHVTAUUHQXPAUUHAUUELADUUCWAZYMURTAQY
-      RTYOACLACYLTZAYFYHIYFYGYHYKWBUPZLSRAWDVAWCWEWFAUUJUUFQAUUFUUJAUUECLAUUEUU
-      RTUUSUUTYMWGVBVDWHAUUFQUAZUUGXJAUUESRYJUVAUURACEYIIFWIUUECWJVIXJUUFQWKWLW
-      MWMUDWMWNWOXJAWPWQAXLUCBXKABXKKZXLAUVBXTXLGAUVBXTXLUCAUVBUGZXTXRPKZXLUVCX
-      SXRPUVCXSPXRONZXRUVCXQPXROUVCXQXPUBZXPONZPUVCXOUVFXPOUVBAXOXKLMNZUVFBXKLM
-      UFACUIRUUMUUNUVHUVFKUUSUUPUUQCLVQVRVCUHAUVGPKUVBAXPUVFYOAUVFAXPYNWATAXPYO
-      WRWSUDWTUHAUVEXRKZUVBAXRXARUVIAXRUUDXEXRXBUPUDWTVDAUVDXLUCUVBAUVDDPKZXLAU
-      ULUUMUVDUVJVEUUOUUPDLXCVIAYSUVJXLUCZJYSYTUUAUVKUUBUVJUUAXLXLDPWKXDXFUPWMU
-      DWMXGXHXDXLAWPWQXI $.
+      expcom ax-1 pm2.61ine addcomd negidd eqtrd addlidd expeq0 com12 simplbiim
+      mpd ex mpid jca ) ABCUAZBCUBZUAZAXHUCBCABCKZXHAXKUGZBLMNZCLMNZONZDLMNZONZ
+      PKZXHAXRXKGUDXLXRQXNUENZXPONZPKZXHXLXQXTPXLXOXSXPOXKAXOXNXNONZXSXKXMXNXNO
+      BCLMUFUHAXNUIRZYBXSKAXNACLACERZCSRZIYDYECPUAZYDCSPUJUKZRZYEYFUGEYGCFULCSP
+      UMUNZUOUPZLUQRAUTVAZURZTZYCXSYBXNUSVBUPVCUHVDAYAXHUCXKAYAXSXPUBZKZXHAXSUI
+      RXPUIRYAYOVEAXSAQXNQSRAVFVAZYLVGTAXPADLADERZDSRZJYQYRDPUAZYQDYGRYRYSUGEYG
+      DFULDSPUMUNZUOUPZYKURTZXSXPVHVIAYODUBZCVJNLMNZQKZXHAYOXSUUCLMNZKZUUFXNVJN
+      ZQKZUUEAYNUUFXSAUUFYNADUIRZLVKRZQLVMVLVNZUUFYNKADUUATZUUKAVOVAZUULAVPVAZD
+      LVQVRVBVSAUUGUUFXSKUUIXSUUFVTAUUFQXNAUUFAUUCLADUUAWAZYKURTAQYPTYMACLACYJT
+      ZAYDYFIYDYEYFYIWBUPZLSRAWDVAWCWEWFAUUHUUDQAUUDUUHAUUCCLAUUCUUPTUUQUURYKWG
+      VBVDWHAUUDQUAZUUEXHAUUCSRYHUUSUUPACEYGIFWIUUCCWJVIXHUUDQWKWLWMWMUDWMXDWNX
+      HAWOWPAXJUCBXIABXIKZXJAUUTXRXJGAUUTXRXJUCAUUTUGZXRXPPKZXJUVAXQXPPUVAXQPXP
+      ONZXPUVAXOPXPOUVAXOXNUBZXNONZPUVAXMUVDXNOUUTAXMXILMNZUVDBXILMUFACUIRUUKUU
+      LUVFUVDKUUQUUNUUOCLVQVRVCUHAUVEPKUUTAUVEXNUVDONPAUVDXNAUVDAXNYLWATYMWQAXN
+      YMWRWSUDWSUHAUVCXPKUUTAXPUUBWTUDWSVDAUVBXJUCUUTAUVBDPKZXJAUUJUUKUVBUVGVEU
+      UMUUNDLXAVIAYQUVGXJUCZJYQYRYSUVHYTUVGYSXJXJDPWKXBXCUPWMUDWMXEXFXBXJAWOWPX
+      G $.
 
     flt3lemC.a $e |- ( ph -> ( A gcd B ) = 1 ) $.
     $( Lemma C for flt3 .  (Contributed by AV, 18-Sep-2026.) $)
@@ -861009,18 +861034,18 @@ $)
       flt3lem5a $p |- ( ph -> ( U gcd X ) = ( U gcd 3 ) ) $=
         ( cgcd co c2 cexp c3 cmul caddc oveq2i wcel wne w3a cz flt3lem1 cc0 csn
         cdif wa eleq2i eldifsn bitri simplbi 3ad2ant1 zcnd sqvald oveq1d oveq2d
-        syl zmulcld 3z a1i 3ad2ant2 cn0 zexpcld addcomd zmulcom sylancr gcdaddm
-        2nn0 wceq syl3anc c1 flt3lem2 wi rpmul eqtrd zrpmulgcd syl31anc 3eqtr3d
-        mp2and 3eqtrd eqtrid ) AEGUAUBEEUCUDUBZUEFUCUDUBZUFUBZUGUBZUAUBZEUEUAUB
-        ZGWOEUATUHAWPEEEUFUBZWNUGUBZUAUBEWNWRUGUBZUAUBZWQAWOWSEUAAWLWRWNUGAEAEA
-        EHUIZFHUIZEFUJZUKZEULUIZABCDEFHIJKLMNOPQRSUMZXBXCXFXDXBXFEUNUJZXBEULUNU
-        OUPZUIXFXHUQHXIEIUREULUNUSUTVAVBVGZVCVDVEVFAWSWTEUAAWRWNAWRAEEXJXJVHVCA
-        WNAUEWMUEULUIZAVIVJZAFUCAXEFULUIZXGXCXBXMXDXCXMFUNUJZXCFXIUIXMXNUQHXIFI
-        URFULUNUSUTVAVKVGZUCVLUIAVRVJVMZVHZVCVNVFAEWNUAUBZEWMUEUFUBZUAUBZXAWQAW
-        NXSEUAAXKWMULUIZWNXSVSVIXPUEWMVOVPVFAXFXFWNULUIXRXAVSXJXJXQEEWNVQVTAXFY
-        AXKEWMUAUBZWAVSXTWQVSXJXPXLAYBEFFUFUBZUAUBZWAAWMYCEUAAFAFXOVCVDVFAEFUAU
-        BWAVSZYEYDWAVSZABCDEFHIJKLMNOPQRSWBZYGAXFXMXMYEYEUQYFWCXJXOXOEFFWDVTWIW
-        EEWMUEWFWGWHWJWK $.
+        syl zmulcld 3z a1i 3ad2ant2 cn0 2nn0 zexpcld addcomd sqcld mulcomd wceq
+        cc gcdaddm syl3anc c1 flt3lem2 wi rpmul mp2and eqtrd zrpmulgcd syl31anc
+        3cn 3eqtr3d 3eqtrd eqtrid ) AEGUAUBEEUCUDUBZUEFUCUDUBZUFUBZUGUBZUAUBZEU
+        EUAUBZGWQEUATUHAWREEEUFUBZWPUGUBZUAUBEWPWTUGUBZUAUBZWSAWQXAEUAAWNWTWPUG
+        AEAEAEHUIZFHUIZEFUJZUKZEULUIZABCDEFHIJKLMNOPQRSUMZXDXEXHXFXDXHEUNUJZXDE
+        ULUNUOUPZUIXHXJUQHXKEIUREULUNUSUTVAVBVGZVCVDVEVFAXAXBEUAAWTWPAWTAEEXLXL
+        VHVCAWPAUEWOUEULUIZAVIVJZAFUCAXGFULUIZXIXEXDXOXFXEXOFUNUJZXEFXKUIXOXPUQ
+        HXKFIURFULUNUSUTVAVKVGZUCVLUIAVMVJVNZVHZVCVOVFAEWPUAUBZEWOUEUFUBZUAUBZX
+        CWSAWPYAEUAAUEWOUEVSUIAWJVJAFAFXQVCZVPVQVFAXHXHWPULUIXTXCVRXLXLXSEEWPVT
+        WAAXHWOULUIXMEWOUAUBZWBVRYBWSVRXLXRXNAYDEFFUFUBZUAUBZWBAWOYEEUAAFYCVDVF
+        AEFUAUBWBVRZYGYFWBVRZABCDEFHIJKLMNOPQRSWCZYIAXHXOXOYGYGUQYHWDXLXQXQEFFW
+        EWAWFWGEWOUEWHWIWKWLWM $.
 
       $( Lemma for ~ flt3lem5 : ` ( U gcd X ) = 1 ` or ` 3 `.  (Contributed by
          AV, 6-Nov-2026.) $)

@@ -93,6 +93,9 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+12-Nov-26 jaodd       [same]      Moved from SN's mathbox to main set.mm
+12-Nov-26 syl3an12    [same]      Moved from SN's mathbox to main set.mm
+12-Nov-26 oexpreposd  [same]      Moved from SN's mathbox to main set.mm
  8-Nov-26 rru         rur
  8-Nov-26 cardprcALT  [same]      Moved from AD's mathbox to main set.mm
  8-Nov-26 cardprcr    [same]      Moved from AD's mathbox to main set.mm
