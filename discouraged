@@ -18946,6 +18946,7 @@ New usage of "rngosubdi" is discouraged (1 uses).
 New usage of "rngosubdir" is discouraged (0 uses).
 New usage of "rngoueqz" is discouraged (2 uses).
 New usage of "rninOLD" is discouraged (0 uses).
+New usage of "rpmulgcdOLD" is discouraged (0 uses).
 New usage of "rspsbc2" is discouraged (2 uses).
 New usage of "rspsbc2VD" is discouraged (0 uses).
 New usage of "ruALT" is discouraged (0 uses).
@@ -21209,6 +21210,7 @@ Proof modification of "rp-frege3g" is discouraged (24 steps).
 Proof modification of "rp-misc1-frege" is discouraged (29 steps).
 Proof modification of "rp-simp2" is discouraged (9 steps).
 Proof modification of "rp-simp2-frege" is discouraged (15 steps).
+Proof modification of "rpmulgcdOLD" is discouraged (199 steps).
 Proof modification of "rpnnen1" is discouraged (175 steps).
 Proof modification of "rpnnen1lem1" is discouraged (345 steps).
 Proof modification of "rpnnen1lem3" is discouraged (468 steps).

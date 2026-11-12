@@ -196169,9 +196169,8 @@ $)
     USVNPZQVABCURUSUTUEVRQVEVGAUFUGUHSVDVHCAHVDVHJCMIZCVAVCVHVBCMIZVSURVOUSUTVH
     VTKVPABCUJUKVBJCMULUMVDCVACUNEZVCUTURWAUSCUOPSUPTUQT $.
 
-  $( If ` K ` and ` M ` are relatively prime, then the gcd of ` K ` and
-     ` M x. N ` is the gcd of ` K ` and ` N ` .  (Contributed by Scott Fenton,
-     12-Apr-2014.)  (Revised by Mario Carneiro, 19-Apr-2014.)
+  $( Obsolete version of ~ rpmulgcd as of 12-Nov-2026.  (Contributed by Scott
+     Fenton, 12-Apr-2014.)  (Revised by Mario Carneiro, 19-Apr-2014.)
      (Proof modification is discouraged.)  (New usage is discouraged.) $)
   rpmulgcdOLD $p |- ( ( ( K e. NN /\ M e. NN /\ N e. NN ) /\
                 ( K gcd M ) = 1 ) -> ( K gcd ( M x. N ) ) = ( K gcd N ) ) $=
