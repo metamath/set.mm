@@ -184768,6 +184768,17 @@ $)
       OZDDPQZHUFRZJKAGCUESUEUFTUAABCDEFGUFHIUGJKLMUBUCUD $.
   $}
 
+  ${
+    $d a b f g i r s w x I $.  $d a b f g i r s w x S $.
+    $( Well-behaved binary operation property of ` evalSub ` .  (Contributed by
+       Stefan O'Rear, 19-Mar-2015.) $)
+    reldmevls $p |- Rel dom evalSub $=
+      ( vi vs vb vr vw vf vx vg cvv ccrg cv cbs cfv csubrg cress ccom cmpt wceq
+      co csb cmpl cascl cmap csn cxp cmvr wa cpws crh crio ces df-evls reldmmpo
+      ) ABIJCBKZLMDUNNMEAKZUNDKZOSZUASFKZEKZUBMPGUPCKUOUCSZGKZUDUEQRURUOUQUFSPG
+      UOHUTVAHKMQQRUGFUSUNUTUHSUISUJTQTUKGEFHABDCULUM $.
+  $}
+
 
 $(
 ###############################################################################
