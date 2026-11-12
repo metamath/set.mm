@@ -45416,6 +45416,16 @@ $)
   $}
 
   ${
+    $d A u v $.  $d A v x $.  $d B u v $.  $d B v x $.
+    $( If the domain of a class is inhabited, the class is inhabited.
+       (Contributed by Jim Kingdon, 12-Nov-2026.) $)
+    dmm $p |- ( A e. dom B -> E. x x e. B ) $=
+      ( vv vu cdm wcel wbr wex cab df-dm eleq2i biimpi breq1 exbidv elabg mpbid
+      cv wceq brm exlimiv syl ) BCFZGZBDRZCHZDIZARCGAIZUDBERZUECHZDIZEJZGZUGUDU
+      MUCULBEDCKLMUKUGEBUCUIBSUJUFDUIBUECNOPQUFUHDABUECTUAUB $.
+  $}
+
+  ${
     $d y z A $.  $d x y z B $.
     $( The domain of a cross product.  Part of Theorem 3.13(x) of [Monk1]
        p. 37.  (Contributed by NM, 28-Jul-1995.)  (Proof shortened by Andrew
