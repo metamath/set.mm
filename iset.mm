@@ -184810,7 +184810,8 @@ $)
   $}
 
   ${
-    $d a b f g i r s w x I $.  $d a b f g i r s w x S $.
+    $d I a $.  $d I b f g i r s w x $.  $d Q b $.  $d R b $.  $d S a $.
+    $d S b f i r s w x $.  $d X b $.
     $( Well-behaved binary operation property of ` evalSub ` .  (Contributed by
        Stefan O'Rear, 19-Mar-2015.) $)
     reldmevls $p |- Rel dom evalSub $=
@@ -184818,6 +184819,38 @@ $)
       co csb cmpl cascl cmap csn cxp cmvr wa cpws crh crio ces df-evls reldmmpo
       ) ABIJCBKZLMDUNNMEAKZUNDKZOSZUASFKZEKZUBMPGUPCKUOUCSZGKZUDUEQRURUOUQUFSPG
       UOHUTVAHKMQQRUGFUSUNUTUHSUISUJTQTUKGEFHABDCULUM $.
+
+    mpfrcl.q $e |- Q = ran ( ( I evalSub S ) ` R ) $.
+    $( Reverse closure for the set of polynomial functions.  (Contributed by
+       Stefan O'Rear, 19-Mar-2015.) $)
+    mpfrcl $p |- ( X e. Q -> ( I e. _V /\ S e. CRing /\
+          R e. ( SubRing ` S ) ) ) $=
+      ( vb vs vr vw vx wcel cvv cfv cv co cbs cmpt wceq csb va vi vf csubrg ces
+      vg ccrg wex crn rnm eleq2s elfvm cress cmpl cascl ccom cmap csn cmvr cpws
+      wa cxp crh crio df-evls elmpocl exlimiv syl simpld simprd cdm crg subrgex
+      crngringd mptexd wfn basfn vex funfvex funfni mp2an nfcsb1v nfmpt csbeq1a
+      nfcv mpteq2dv csbief fveq2 adantl csbeq1d id oveq1 oveqan12d oveq2 oveq2d
+      oveqan12rd adantr xpeq1d eqeq2d simpl mpteq1d eqeq12d anbi12d riotaeqbidv
+      coeq2d mpteq12dv csbeq2dv eqtrd eqtrid ovmpoga syl3anc dmeqd eqid dmmptss
+      eqsstrdi wfun wrel funmpt funeqd mpbiri funrel relelfvdm 3syl exlimdv mpd
+      wi ex sseldd 3jca ) EALZDMLZCUGLZBCUDNZLYJYKYLYJGOZBDCUEPZNZLZGUHZYKYLVAZ
+      YREYPUIAGEYPUJFUKZYQYSGYQUAOZYOLZUAUHYSYNBUAYOULUUBYSUAUBHMUGGHOZQNZIUUCU
+      DNZJUBOZUUCIOZUMPZUNPZUCOZJOZUONUPZKUUGYNUUFUQPZKOZURZVBZRZSZUUJUUFUUHUSP
+      ZUPZKUUFUFUUMUUNUFONZRZRZSZVAZUCUUKUUCUUMUTPZVCPZVDZTZRZTZDCUEUUAKJUCUFUB
+      HIGVEZVFVGVHVGVHZVIZYJYKYLUVMVJZYJYOVKZYMBYJUVPIYMGCQNZJDCUUGUMPZUNPZUULK
+      UUGYNDUQPZUUOVBZRZSZUUJDUVRUSPZUPZKDUFUVTUVARZRZSZVAZUCUUKCUVTUTPZVCPZVDZ
+      TZTZRZVKYMYJYOUWOYJYKYLUWOMLYOUWOSUVNUVOYJIYMUWNMYJCVLLYMMLYJCUVOVNCVMVHV
+      OUBHDCMUGUVKUWOUEMUUFDSZUUCCSZVAZUVKIUUEGUUDUVITZRZUWOGUUDUVJUWTQMVPUUCML
+      UUDMLZVQHVRUXAMUUCQUUCQVSVTWAGIUUEUWSGUUEWEGUUDUVIWBWCYNUUDSIUUEUVIUWSGUU
+      DUVIWDWFWGUWRIUUEUWSYMUWNUWQUUEYMSUWPUUCCUDWHWIUWRUWSGUVQUVITUWNUWRGUUDUV
+      QUVIUWQUUDUVQSUWPUUCCQWHWIWJUWRGUVQUVIUWMUWRUVIJUVSUVHTUWMUWRJUUIUVSUVHUW
+      PUWQUUFDUUHUVRUNUWPWKZUUCCUUGUMWLZWMWJUWRJUVSUVHUWLUWRUVEUWIUCUVGUWKUWRUV
+      FUWJUUKVCUWQUWPUUCCUUMUVTUTUWQWKUUFDYNUQWNZWPWOUWRUURUWCUVDUWHUWRUUQUWBUU
+      LUWRKUUGUUPUWAUWRUUMUVTUUOUWPUUMUVTSUWQUXDWQZWRWFWSUWRUUTUWEUVCUWGUWRUUSU
+      WDUUJUWPUWQUUFDUUHUVRUSUXBUXCWMXEUWRKUUFUVBDUWFUWPUWQWTUWRUFUUMUVTUVAUXEX
+      AXFXBXCXDXGXHXGXHXFXIUVLXJXKZXLIYMUWNUWOUWOXMXNXOYJYRBUVPLZYTYJYQUXGGYJYO
+      XPZYOXQZYQUXGYFYJUXHUWOXPIYMUWNXRYJYOUWOUXFXSXTYOYAUXIYQUXGYNBYOYBYGYCYDY
+      EYHYI $.
   $}
 
 
