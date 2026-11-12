@@ -860501,8 +860501,8 @@ $)
       UOUP $.
 
     3sumcprm1e2o.1 $e |- ( ph -> ( A gcd B ) = 1 ) $.
-    $( If one of three  summands is even, the other two summands are odd if
-       they are coprime.  (Contributed by AV, 3-Nov-2026.) $)
+    $( If one of three summands is even, the other two summands are odd if they
+       are coprime.  (Contributed by AV, 3-Nov-2026.) $)
     3sumcprm1e2o $p |- ( ph -> ( 2 || C -> ( -. 2 || A /\ -. 2 || B ) ) ) $=
       ( caddc co wceq c2 cdvds wbr wn wa zcnd wcel adantr cc0 wi zaddcld eqeq1d
       cneg addcomd cc wb addeq0 syl2anc negdid eqeq2d 3bitrd breq2 adantl wo cz
@@ -860545,32 +860545,32 @@ $)
   zrpmulgcd $p |- ( ( ( K e. ZZ /\ M e. ZZ /\ N e. ZZ ) /\
                 ( K gcd M ) = 1 ) -> ( K gcd ( M x. N ) ) = ( K gcd N ) ) $=
     ( cz wcel cgcd co c1 wceq cmul cc0 wa wi oveq1 adantl ex eqeq1d eqeq12d w3a
-    rpmulgcd cr cn cneg w3o elz biimpi cn0 elznn0 cabs cfv zcn absmul syl2an
-    wo adantr abscld mullidd 3eqtrd gcd0id zmulcl syl 3imtr4d imbi12d imbitrrid
-    cc recnd expd a1d a1i 3exp nnz simpll simpr2 simplr syl3anc mulneg2 3adant1
-    com23 oveq2d simp1 gcdneg syl2anc eqtrd 3adant2 sylibd 3exp2 3ancomb sylanb
-    mpid jaod simp3 neggcd sylan2 nn0z 3ad2ant2 zmulcld 3imtr3d 3adant3 2neggcd
-    wb expcom com13 jaodd 3jaod com15 adantld mpd com14 3imp1 ) ADEZBDEZCDEZABF
-    GZHIZABCJGZFGZACFGZIZXJAUAEZAKIZAUBEZAUCZUBEZUDZLZXKXLXNXRMZMZMZXJYEAUEUFXJ
-    YDYHXSXLYDXKXJYFXLCUAEZCUGEZCUCZUGEZUNZLZYDXKXJYFMMMZXLYNCUHUFXLYMYOYIXJYMY
-    DXKXLYFXJYDYMYHXJXTYMYHMZYAYCXTYPMXJXTYHYMXTXKXLYFXKXLLZYFXTKBFGZHIZKXOFGZK
-    CFGZIZMYQBUIUJZHIZXOUIUJZCUIUJZIZYSUUBYQUUDUUGYQUUDLZUUEUUCUUFJGZHUUFJGZUUF
-    YQUUEUUIIZUUDXKBVEEZCVEEZUUKXLBUKZCUKZBCULUMUOUUDUUIUUJIYQUUCHUUFJNOUUHUUFU
-    UHUUFYQUUFUAEZUUDXLUUPXKXLCUUOUPOUOVFUQURPYQYRUUCHXKYRUUCIXLBUSUOQYQYTUUEUU
-    AUUFYQXODEZYTUUEIBCUTZXOUSVAXLUUAUUFIXKCUSORVBXTXNYSXRUUBXTXMYRHAKBFNQXTXPY
-    TXQUUAAKXOFNAKCFNRVCVDVGVHVIYAYPMXJYAYJYHYLYAXKYJYGYAXKYJYGYAXKYJSZYFXLUUSX
-    NXRABCTPVHVJVRYAYLXJYHAVKYAYLXJYHMZYAYLLZXJXKXLYFUVAXJXKXLSZLZXNABYKJGZFGZA
-    YKFGZIZXRUVCYAXKYLXNUVGMYAYLUVBVLUVAXJXKXLVMYAYLUVBVNYAXKYLSXNUVGABYKTPVOUV
-    CUVEXPUVFXQUVBUVEXPIUVAUVBUVEAXOUCZFGZXPUVBUVDUVHAFXKXLUVDUVHIZXJXKUULUUMUV
-    JXLUUNUUOBCVPUMVQZVSUVBXJUUQUVIXPIXJXKXLVTZXKXLUUQXJUURVQZAXOWAWBWCOUVBUVFX
-    QIZUVAXJXLUVNXKACWAWDORWEWFPWIWJVIXJYCYJYHYLXJYCYJXKYGXJYCYJXKSZLZYFXLUVPYB
-    BFGZHIZYBXOFGZYBCFGZIZXNXRUVOUVRUWAMXJUVOUVRUWAUVOYCXKYJSUVRUWAYCYJXKWGYBBC
-    TWHPOUVPUVQXMHUVOXJXKUVQXMIZYCYJXKWKZABWLZWMQUVPUVSXPUVTXQUVOXJUUQUVSXPIUVO
-    BCUWCYJYCXLXKCWNWOZWPAXOWLWMUVOXJXLUVTXQIUWEACWLWMRWQVHWFYLYCXJYHYCYLUUTYCY
-    LLZXJXKXLYFUWFUVBLZUVRYBUVDFGZYBYKFGZIZXNXRUWGYCXKYLUVRUWJMYCYLUVBVLUWFXJXK
-    XLVMYCYLUVBVNYCXKYLSUVRUWJYBBYKTPVOUVBUVRXNWTUWFUVBUVQXMHXJXKUWBXLUWDWRQOUV
-    BUWJXRWTUWFUVBUWHXPUWIXQUVBUWHYBUVHFGZXPUVBUVDUVHYBFUVKVSUVBXJUUQUWKXPIUVLU
-    VMAXOWSWBWCXJXLUWIXQIXKACWSWDROWQWFXAXBXCXDVRXEXFXGXHXFXGXI $.
+    rpmulgcd cr cn cneg w3o elz biimpi cn0 wo elznn0 cabs cfv zcn absmul syl2an
+    cc adantr abscld mullidd 3eqtrd gcd0id zmulcl syl 3imtr4d imbi12d imbitrrid
+    recnd expd a1d a1i 3exp simpll simpr2 simplr syl3anc mulneg2 3adant1 oveq2d
+    com23 nnz simp1 gcdneg syl2anc eqtrd 3adant2 sylibd 3exp2 mpid jaod 3ancomb
+    sylanb simp3 neggcd sylan2 nn0z 3ad2ant2 zmulcld 3imtr3d wb 3adant3 2neggcd
+    expcom com13 jaodd 3jaod com15 adantld mpd com14 3imp1 ) ADEZBDEZCDEZABFGZH
+    IZABCJGZFGZACFGZIZXJAUAEZAKIZAUBEZAUCZUBEZUDZLZXKXLXNXRMZMZMZXJYEAUEUFXJYDY
+    HXSXLYDXKXJYFXLCUAEZCUGEZCUCZUGEZUHZLZYDXKXJYFMMMZXLYNCUIUFXLYMYOYIXJYMYDXK
+    XLYFXJYDYMYHXJXTYMYHMZYAYCXTYPMXJXTYHYMXTXKXLYFXKXLLZYFXTKBFGZHIZKXOFGZKCFG
+    ZIZMYQBUJUKZHIZXOUJUKZCUJUKZIZYSUUBYQUUDUUGYQUUDLZUUEUUCUUFJGZHUUFJGZUUFYQU
+    UEUUIIZUUDXKBUOEZCUOEZUUKXLBULZCULZBCUMUNUPUUDUUIUUJIYQUUCHUUFJNOUUHUUFUUHU
+    UFYQUUFUAEZUUDXLUUPXKXLCUUOUQOUPVFURUSPYQYRUUCHXKYRUUCIXLBUTUPQYQYTUUEUUAUU
+    FYQXODEZYTUUEIBCVAZXOUTVBXLUUAUUFIXKCUTORVCXTXNYSXRUUBXTXMYRHAKBFNQXTXPYTXQ
+    UUAAKXOFNAKCFNRVDVEVGVHVIYAYPMXJYAYJYHYLYAXKYJYGYAXKYJYGYAXKYJSZYFXLUUSXNXR
+    ABCTPVHVJVRYAYLXJYHAVSYAYLXJYHMZYAYLLZXJXKXLYFUVAXJXKXLSZLZXNABYKJGZFGZAYKF
+    GZIZXRUVCYAXKYLXNUVGMYAYLUVBVKUVAXJXKXLVLYAYLUVBVMYAXKYLSXNUVGABYKTPVNUVCUV
+    EXPUVFXQUVBUVEXPIUVAUVBUVEAXOUCZFGZXPUVBUVDUVHAFXKXLUVDUVHIZXJXKUULUUMUVJXL
+    UUNUUOBCVOUNVPZVQUVBXJUUQUVIXPIXJXKXLVTZXKXLUUQXJUURVPZAXOWAWBWCOUVBUVFXQIZ
+    UVAXJXLUVNXKACWAWDORWEWFPWGWHVIXJYCYJYHYLXJYCYJXKYGXJYCYJXKSZLZYFXLUVPYBBFG
+    ZHIZYBXOFGZYBCFGZIZXNXRUVOUVRUWAMXJUVOUVRUWAUVOYCXKYJSUVRUWAYCYJXKWIYBBCTWJ
+    POUVPUVQXMHUVOXJXKUVQXMIZYCYJXKWKZABWLZWMQUVPUVSXPUVTXQUVOXJUUQUVSXPIUVOBCU
+    WCYJYCXLXKCWNWOZWPAXOWLWMUVOXJXLUVTXQIUWEACWLWMRWQVHWFYLYCXJYHYCYLUUTYCYLLZ
+    XJXKXLYFUWFUVBLZUVRYBUVDFGZYBYKFGZIZXNXRUWGYCXKYLUVRUWJMYCYLUVBVKUWFXJXKXLV
+    LYCYLUVBVMYCXKYLSUVRUWJYBBYKTPVNUVBUVRXNWRUWFUVBUVQXMHXJXKUWBXLUWDWSQOUVBUW
+    JXRWRUWFUVBUWHXPUWIXQUVBUWHYBUVHFGZXPUVBUVDUVHYBFUVKVQUVBXJUUQUWKXPIUVLUVMA
+    XOWTWBWCXJXLUWIXQIXKACWTWDROWQWFXAXBXCXDVRXEXFXGXHXFXGXI $.
 
 
 $(
@@ -860625,8 +860625,8 @@ $)
     fltoddsum.e $e |- ( ph -> ( ( A ^ N ) + ( B ^ N ) ) = ( C ^ N ) ) $.
     fltoddsum.o $e |- ( ph -> -. 2 || N ) $.
     $( The solution of the generalized FLT for an odd exponent can be assumed
-       to be a solution of an equation with 3 integer summands.
-       (Contributed by AV, 2-Nov-2026.) $)
+       to be a solution of an equation with 3 integer summands.  (Contributed
+       by AV, 2-Nov-2026.) $)
     fltoddsum $p |- ( ph -> E. a e. ZZ E. b e. ZZ E. c e. ZZ
                           ( ( ( a ^ N ) + ( b ^ N ) ) + ( c ^ N ) ) = 0 ) $=
       ( cexp co caddc cc0 wceq eqeq1d cv cneg oveq1d oveq2d znegcld cmin nnnn0d
@@ -860640,7 +860640,7 @@ $)
       BWEWMSADLULINDEVCVDVEUDTVFVGVHVI $.
   $}
 
- ${
+  ${
     $d N a b c $.  $d Z a b c $.
     fltcoprm.n $e |- ( ph -> N e. NN ) $.
     fltcoprm.z $e |- Z = ( ZZ \ { 0 } ) $.
@@ -860783,15 +860783,15 @@ $)
     flt3lemA.a $e |- ( ph -> A e. Z ) $.
     flt3lemA.b $e |- ( ph -> B e. Z ) $.
     flt3lemA.c $e |- ( ph -> C e. Z ) $.
-    $( Lemma A for flt3 .  The summands of a solution of FLT3 can be assumed
-       to be coprime.  Step 2 in LFP-1.  (Contributed by AV, 3-Nov-2026.) $)
+    $( Lemma A for flt3 .  The summands of a solution of FLT3 can be assumed to
+       be coprime.  Step 2 in LFP-1.  (Contributed by AV, 3-Nov-2026.) $)
     flt3lemA $p |- ( ph -> E. a e. Z E. b e. Z E. c e. Z
           ( ( ( ( a ^ 3 ) + ( b ^ 3 ) ) + ( c ^ 3 ) ) = 0
             /\ ( ( a gcd b ) = 1 /\ ( a gcd c ) = 1 /\ ( b gcd c ) = 1 ) ) ) $=
       ( c3 cn wcel 3nn a1i c2 cdvds wbr wn n2dvds3 fltcoprmoddsum ) ABCDNEFGHNO
       PAQRIKLMSNTUAUBAUCRJUD $.
 
-    $( Lemma B for flt3 : The absolute values of the (first) two summands are
+    $( Lemma B for flt3 :  The absolute values of the (first) two summands are
        not equal.  (Contributed by AV, 4-Nov-2026.) $)
     flt3lemB $p |- ( ph -> ( A =/= B /\ A =/= -u B ) ) $=
       ( wceq c3 cexp co caddc cc0 c2 wcel cz zcnd wne cneg wi adantr cmul oveq1
@@ -860834,8 +860834,8 @@ $)
     $d A a b c $.  $d B a b c $.  $d C a b c $.
     flt3lemD.b $e |- ( ph -> ( B gcd C ) = 1 ) $.
     flt3lemD.c $e |- ( ph -> ( A gcd C ) = 1 ) $.
-    $( Lemma D for flt3 .  The first two summands of a solution of FLT3 can
-       be assumed to be odd, and the third to be even.  (Contributed by AV,
+    $( Lemma D for flt3 .  The first two summands of a solution of FLT3 can be
+       assumed to be odd, and the third to be even.  (Contributed by AV,
        4-Nov-2026.) $)
     flt3lemD $p |- ( ph -> E. a e. Z E. b e. Z E. c e. Z
                  ( ( ( ( a ^ 3 ) + ( b ^ 3 ) ) + ( c ^ 3 ) ) = 0
@@ -860907,8 +860907,8 @@ $)
     ${
       flt3lem1.u $e |- U = ( ( A + B ) / 2 ) $.
       flt3lem1.v $e |- V = ( ( A - B ) / 2 ) $.
-      $( Lemma for flt3 : ` U ` and ` V ` are different nonzero integers.
-         Step I.2/3 in LFP-2.  (Contributed by AV, 4-Nov-2026.) $)
+      $( Lemma for flt3 : ` U ` and ` V ` are different nonzero integers.  Step
+         I.2/3 in LFP-2.  (Contributed by AV, 4-Nov-2026.) $)
       flt3lem1 $p |- ( ph -> ( U e. Z /\ V e. Z /\ U =/= V ) ) $=
         ( c2 wcel cdvds wbr wn wa wne w3a flt3lemE caddc cdiv cmin cc0 csn cdif
         co cz eleq2i eldifsn bitri simplbi syl simpl anim12i simpr opoe syl2anc
@@ -860930,8 +860930,8 @@ $)
         RUUQUUSVFUUBUUPUUCYTXLXOSWLWMABWKTCWKTUUSUURVFUUEUUFBCWNVEWOWPWQVLXGXNX
         HXQXIXREXMGQWSFXPGRWSEXMFXPQRWTXAXBXC $.
 
-      $( Lemma for flt3 : ` A ` and ` B ` expressed by ` U ` and ` V `.
-         Step I.4 in LFP-2.  (Contributed by AV, 5-Nov-2026.) $)
+      $( Lemma for flt3 : ` A ` and ` B ` expressed by ` U ` and ` V ` .  Step
+         I.4 in LFP-2.  (Contributed by AV, 5-Nov-2026.) $)
       flt3lem1a $p |- ( ph -> ( A = ( U + V ) /\ B = ( U - V ) ) ) $=
         ( co c2 caddc cdiv cmin wceq wa wcel cz cc0 wne csn cdif eleq2i eldifsn
         bitri simplbi syl zcnd ppncand oveq1d zaddcld zsubcld 2cnd 2ne0 divdird
@@ -860946,8 +860946,8 @@ $)
         GUPUSACTXEXHXIVHVIVJWIWEWKWGWHWDBEWAFWCUAQRVPVQWJWFCEWAFWCUCQRVPVQVRVS
         $.
 
-      $( Lemma for flt3 : ` U ` and ` V ` are coprime.  Step 3.a in LFP-1
-         resp. step I.5 in LFP-2.  (Contributed by AV, 6-Nov-2026.) $)
+      $( Lemma for flt3 : ` U ` and ` V ` are coprime.  Step 3.a in LFP-1 resp.
+         step I.5 in LFP-2.  (Contributed by AV, 6-Nov-2026.) $)
       flt3lem2 $p |- ( ph -> ( U gcd V ) = 1 ) $=
         ( wcel cc0 wne w3a cgcd co c1 wceq flt3lem1 cn wa cz wn csn cdif eleq2i
         eldifsn bitri simpl anim12i wo neneq adantl adantr ianor sylibr syl2anb
@@ -860995,8 +860995,8 @@ $)
         UUSUYOUEVKVPXNVVAUEVKYLVQZUKUUSVKUEYBYMYNVVBUUSYOYPWHYQVJXJYRYSYTUUAUUC
         YRUUDUUBUUEUUFUUGUUHUUIUUJWHUUKWHUULUUM $.
 
-      $( Lemma for flt3 : ` U ` and ` V ` have different parities.  Step 3.b
-         in LFP-1 resp. step I.7 in LFP-2.  (Contributed by AV, 6-Nov-2026.) $)
+      $( Lemma for flt3 : ` U ` and ` V ` have different parities.  Step 3.b in
+         LFP-1 resp. step I.7 in LFP-2.  (Contributed by AV, 6-Nov-2026.) $)
       flt3lem3 $p |- ( ph -> -. 2 || ( U + V ) ) $=
         ( c2 cdvds caddc co wbr wn flt3lemE simpld wceq cmin wa flt3lem1a simpl
         eqcomd syl breq2d mtbird ) ASEFUAUBZTUCSBTUCZAUQUDSCTUCUDABCDGHIJKLMNOP
@@ -861005,7 +861005,7 @@ $)
 
       flt3lem4.x $e |- X = ( ( U ^ 2 ) + ( 3 x. ( V ^ 2 ) ) ) $.
       $( Lemma for flt3 : ` 2 U ( U ^ 2 + 3 V ^ 2 ) ` is a cube.  Step 3.d in
-         LFP-1 resp. step I.8 in LFP-2. (Contributed by AV, 6-Nov-2026.) $)
+         LFP-1 resp. step I.8 in LFP-2.  (Contributed by AV, 6-Nov-2026.) $)
       flt3lem4 $p |- ( ph -> ( -u C ^ 3 ) = ( ( 2 x. U ) x. X ) ) $=
         ( c3 cexp co caddc cc0 wceq cneg c2 cmul cc wcel wb wne csn cdif eleq2i
         cz wa eldifsn bitri simplbi syl cn0 3nn0 zexpcld zaddcld addeq0 syl2anc
@@ -861046,7 +861046,7 @@ $)
         AEFUAUBWBVRZYGYFWBVRZABCDEFHIJKLMNOPQRSWCZYIAXHXOXOYGYGUQYHWDXLXQXQEFFW
         EWAWFWGEWOUEWHWIWKWLWM $.
 
-      $( Lemma for ~ flt3lem5 : ` ( U gcd X ) = 1 ` or ` 3 `.  (Contributed by
+      $( Lemma for ~ flt3lem5 : ` ( U gcd X ) = 1 ` or ` 3 ` .  (Contributed by
          AV, 6-Nov-2026.) $)
       flt3lem5b $p |- ( ph -> ( ( U gcd X ) = 1 \/ ( U gcd X ) = 3 ) ) $=
         ( cgcd co c3 wceq c1 wo flt3lem5a wcel wne w3a cz flt3lem1 cc0 csn cdif
@@ -861082,7 +861082,7 @@ $)
         DXNUVFUVKXBVJUUKUVKVIVJAUULYAUUNVNAYAUUPUVFAYOUVAYAUUPWMXBYQUVBUAFUAWNW
         KWOXFWLWPXMXOWQVFXLXGXHXIGXPUAUGTXJXK $.
 
-      $( Lemma for flt3 : ` ( 2 U gcd X ) = 1 ` or ` 3 `.  Step 4 in LFP-1.
+      $( Lemma for flt3 : ` ( 2 U gcd X ) = 1 ` or ` 3 ` .  Step 4 in LFP-1.
          (Contributed by AV, 7-Nov-2026.) $)
       flt3lem5 $p |- ( ph -> ( ( ( 2 x. U ) gcd X ) = 1
                             \/ ( ( 2 x. U ) gcd X ) = 3 ) ) $=
