@@ -4839,8 +4839,8 @@ $)
     simpl2im.1 $e |- ( ph -> ( ps /\ ch ) ) $.
     simpl2im.2 $e |- ( ch -> th ) $.
     $( Implication from an eliminated conjunct implied by the antecedent.
-       (Contributed by BJ/AV, 5-Apr-2021.)  (Proof shortened by Wolf Lammen,
-       26-Mar-2022.) $)
+       (Contributed by BJ and AV, 5-Apr-2021.)  (Proof shortened by Wolf
+       Lammen, 26-Mar-2022.) $)
     simpl2im $p |- ( ph -> th ) $=
       ( simprd syl ) ACDABCEGFH $.
   $}
@@ -9210,8 +9210,8 @@ $)
 
   $( Convert triple conjunction to conjunction, then commute.  (Contributed by
      Jonathan Ben-Naim, 3-Jun-2011.)  (Proof shortened by Andrew Salmon,
-     14-Jun-2011.)  (Revised to shorten ~ 3ancoma by Wolf Lammen,
-     5-Jun-2022.) $)
+     14-Jun-2011.)  Remove dependence on ~ 3ancoma to shorten the latter.
+     (Revised by Wolf Lammen, 5-Jun-2022.) $)
   3anan12 $p |- ( ( ph /\ ps /\ ch ) <-> ( ps /\ ( ph /\ ch ) ) ) $=
     ( w3a wa 3anass an12 bitri ) ABCDABCEEBACEEABCFABCGH $.
 
@@ -9234,7 +9234,8 @@ $)
     ( w3a wa 3anan12 3anass bitr4i ) ABCDBACEEBACDABCFBACGH $.
 
   $( Commutation law for triple conjunction.  (Contributed by NM, 21-Apr-1994.)
-     (Revised to shorten ~ 3anrot by Wolf Lammen, 9-Jun-2022.) $)
+     Remove dependence on ~ 3anrot to shorten the latter.  (Revised by Wolf
+     Lammen, 9-Jun-2022.) $)
   3ancomb $p |- ( ( ph /\ ps /\ ch ) <-> ( ph /\ ch /\ ps ) ) $=
     ( w3a wa df-3an 3anan32 bitr4i ) ABCDABECEACBDABCFACBGH $.
 
@@ -9296,8 +9297,8 @@ $)
   ${
     3impa.1 $e |- ( ( ( ph /\ ps ) /\ ch ) -> th ) $.
     $( Importation from double to triple conjunction.  (Contributed by NM,
-       20-Aug-1995.)  (Revised to shorten ~ 3imp by Wolf Lammen,
-       20-Jun-2022.) $)
+       20-Aug-1995.)  Remove dependence on ~ 3imp to shorten the latter.
+       (Revised by Wolf Lammen, 20-Jun-2022.) $)
     3impa $p |- ( ( ph /\ ps /\ ch ) -> th ) $=
       ( w3a wa df-3an sylbi ) ABCFABGCGDABCHEI $.
   $}
@@ -9321,8 +9322,8 @@ $)
 
     $( The importation inference ~ 3imp with commutation of the first and
        second conjuncts of the assertion relative to the hypothesis.
-       (Contributed by Alan Sare, 11-Sep-2016.)  (Revised to shorten ~ 3com12
-       by Wolf Lammen, 23-Jun-2022.) $)
+       (Contributed by Alan Sare, 11-Sep-2016.)  Remove dependence on ~ 3com12
+       to shorten the latter.  (Revised by Wolf Lammen, 23-Jun-2022.) $)
     3imp21 $p |- ( ( ps /\ ph /\ ch ) -> th ) $=
       ( com13 3imp231 ) CBADABCDEFG $.
   $}
@@ -9361,8 +9362,8 @@ $)
   ${
     3exp.1 $e |- ( ( ph /\ ps /\ ch ) -> th ) $.
     $( Exportation from triple to double conjunction.  (Contributed by NM,
-       20-Aug-1995.)  (Revised to shorten ~ 3exp and ~ pm3.2an3 by Wolf Lammen,
-       22-Jun-2022.) $)
+       20-Aug-1995.)  Remove dependence on ~ 3exp and ~ pm3.2an3 to shorten
+       them.  (Revised by Wolf Lammen, 22-Jun-2022.) $)
     3expa $p |- ( ( ( ph /\ ps ) /\ ch ) -> th ) $=
       ( wa w3a df-3an sylbir ) ABFCFABCGDABCHEI $.
 
@@ -29245,7 +29246,7 @@ $)
     rexlimiva.1 $e |- ( ( x e. A /\ ph ) -> ps ) $.
     $( Inference from Theorem 19.23 of [Margaris] p. 90 (restricted quantifier
        version).  (Contributed by NM, 18-Dec-2006.)  Shorten dependent
-       theorems.  (Revised by Wolf lammen, 23-Dec-2024.) $)
+       theorems.  (Revised by Wolf Lammen, 23-Dec-2024.) $)
     rexlimiva $p |- ( E. x e. A ph -> ps ) $=
       ( wrex cv wcel wa wex df-rex exlimiv sylbi ) ACDFCGDHAIZCJBACDKNBCELM $.
   $}
@@ -67988,7 +67989,7 @@ $)
   $}
 
   $( Membership in the preimage of a singleton, under a function.  (Contributed
-     by Mario Carneiro, 12-May-2014.)  (Proof shortened by Mario Carneiro ,
+     by Mario Carneiro, 12-May-2014.)  (Proof shortened by Mario Carneiro,
      28-Apr-2015.) $)
   fniniseg $p |- ( F Fn A -> ( C e. ( `' F " { B } ) <->
                    ( C e. A /\ ( F ` C ) = B ) ) ) $=
@@ -73197,7 +73198,7 @@ $)
 
   $( A collection of ordered pairs with an extension of a binary relation is a
      set.  (Contributed by Alexander van der Vekens, 1-Nov-2017.)  (Revised by
-     BJ/AV, 20-Jun-2019.)  (Proof shortened by OpenAI, 25-Mar-2020.) $)
+     BJ and AV, 20-Jun-2019.)  (Proof shortened by OpenAI, 25-Mar-2020.) $)
   opabbrex $p |- ( ( A. x A. y ( x R y -> ph ) /\ { <. x , y >. | ph } e. V )
                    -> { <. x , y >. | ( x R y /\ ps ) } e. _V ) $=
     ( cv wbr wi wal copab wcel wa simpr wss pm3.41 2alimi adantr ssopab2 syl
@@ -80724,7 +80725,7 @@ $)
     dmmpog.f $e |- F = ( x e. A , y e. B |-> C ) $.
     $( Domain of an operation given by the maps-to notation, closed form of
        ~ dmmpo .  (Contributed by Alexander van der Vekens, 10-Feb-2019.)
-       (Proof shortened by Lammen, 29-May-2024.) $)
+       (Proof shortened by Wolf Lammen, 29-May-2024.) $)
     dmmpoga $p |- ( A. x e. A A. y e. B C e. V -> dom F = ( A X. B ) ) $=
       ( wcel wral cxp fnmpo fndmd ) EGIBDJACJCDKFABCDEFGHLM $.
 
@@ -80823,7 +80824,7 @@ $)
                            |-> { <. f , h >. | ( ch /\ f ( D ` g ) h ) } ) ) $.
       $( The operation value of a function value of a collection of ordered
          pairs of elements related in two ways.  (Contributed by Alexander van
-         Vekens, 8-Nov-2017.)  (Revised by AV, 15-Jan-2021.)  Add disjoint
+         der Vekens, 8-Nov-2017.)  (Revised by AV, 15-Jan-2021.)  Add disjoint
          variable condition on ` D , f , h ` to remove hypotheses; avoid
          ~ ax-rep .  (Revised by SN, 7-Apr-2025.) $)
       mptmpoopabbrd $p |- ( ph -> ( X ( M ` G ) Y )
@@ -86160,8 +86161,7 @@ $)
     $( The old definition of transfinite recursion.  This version is preferred
        for development, as it demonstrates the properties of transfinite
        recursion without relying on well-ordered recursion.  (Contributed by
-       Scott Fenton, 3-Aug-2020.)  (Proof revised by Scott Fenton,
-       18-Nov-2024.) $)
+       Scott Fenton, 3-Aug-2020.)  (Revised by Scott Fenton, 18-Nov-2024.) $)
     dfrecs3 $p |- recs ( F ) = U. { f | E. x e. On ( f Fn x /\
         A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $=
       ( con0 cep cv cfv cres wceq wral wa cab cuni wss co wex wcel vex wwe c2nd
@@ -120909,7 +120909,7 @@ $)
        Revised to remove a redundant antecedent from the consequence.  Usage of
        this theorem is discouraged because it depends on ~ ax-13 .
        (Contributed by NM, 4-Jan-2002.)  (Proof shortened by Mario Carneiro,
-       6-Dec-2016.)  (Revised and shortened by Wolf Lammen, 9-Jun-2019.)
+       6-Dec-2016.)  (Revised by Wolf Lammen, 9-Jun-2019.)
        (New usage is discouraged.) $)
     axpowndlem2 $p |- ( -. A. x x = y -> ( -. A. x x = z ->
          E. x A. y ( A. x ( E. z x e. y -> A. y x e. z ) -> y e. x ) ) ) $=
@@ -144309,7 +144309,7 @@ $)
     $d A w x y z $.
     $( The supremum of a bounded-above set of reals is the negation of the
        infimum of that set's image under negation.  (Contributed by Paul
-       Chapman, 21-Mar-2011.)  ( Revised by AV, 13-Sep-2020.) $)
+       Chapman, 21-Mar-2011.)  (Revised by AV, 13-Sep-2020.) $)
     supminf $p |- ( ( A C_ RR /\ A =/= (/) /\ E. x e. RR A. y e. A y <_ x ) ->
       sup ( A , RR , < ) = -u inf ( { z e. RR | -u z e. A } , RR , < ) ) $=
       ( vw cr wss c0 wne cv cle wbr wral cneg wcel clt wceq wb eleq1d recn wrex
@@ -167156,7 +167156,7 @@ $)
       swrdccatin1d.2 $e |- ( ph -> N e. ( 0 ... L ) ) $.
       $( The subword of a concatenation of two words within the first of the
          concatenated words.  (Contributed by AV, 31-May-2018.)  (Revised by
-         Mario Carneiro/AV, 21-Oct-2018.) $)
+         Mario Carneiro and AV, 21-Oct-2018.) $)
       swrdccatin1d $p |- ( ph -> ( ( A ++ B ) substr <. M , N >. )
                                  = ( A substr <. M , N >. ) ) $=
         ( cword wcel wa cc0 cfz co chash csubstr wceq cfv cconcat cop imbitrrid
@@ -167170,7 +167170,7 @@ $)
       swrdccatin2d.2 $e |- ( ph -> N e. ( L ... ( L + ( # ` B ) ) ) ) $.
       $( The subword of a concatenation of two words within the second of the
          concatenated words.  (Contributed by AV, 31-May-2018.)  (Revised by
-         Mario Carneiro/AV, 21-Oct-2018.) $)
+         Mario Carneiro and AV, 21-Oct-2018.) $)
       swrdccatin2d $p |- ( ph -> ( ( A ++ B ) substr <. M , N >. )
                                 = ( B substr <. ( M - L ) , ( N - L ) >. ) ) $=
         ( wceq co cop csubstr cmin wcel wa cfz caddc chash cconcat cword adantl
@@ -167977,8 +167977,8 @@ $)
     $( Perform a cyclical shift for an arbitrary class.  Meaningful only for
        words ` w e. Word S ` or at least functions over half-open ranges of
        nonnegative integers.  (Contributed by Alexander van der Vekens,
-       20-May-2018.)  (Revised by Mario Carneiro/Alexander van der Vekens/
-       Gerard Lang, 17-Nov-2018.)  (Revised by AV, 4-Nov-2022.) $)
+       20-May-2018.)  (Revised by Mario Carneiro and Alexander van der Vekens
+       and Gerard Lang, 17-Nov-2018.)  (Revised by AV, 4-Nov-2022.) $)
     df-csh $a |- cyclShift
                  = ( w e. { f | E. l e. NN0 f Fn ( 0 ..^ l ) } , n e. ZZ
                      |-> if ( w = (/) , (/) ,
@@ -168428,8 +168428,8 @@ $)
     UAABCUBUCUDABCUEUF $.
 
   $( Cyclically shifting a word two times is commutative.  (Contributed by AV,
-     21-Apr-2018.)  (Revised by AV, 5-Jun-2018.)  (Revised by Mario
-     Carneiro/AV, 1-Nov-2018.) $)
+     21-Apr-2018.)  (Revised by AV, 5-Jun-2018.)  (Revised by Mario Carneiro
+     and AV, 1-Nov-2018.) $)
   2cshwcom $p |- ( ( W e. Word V /\ N e. ZZ /\ M e. ZZ )
                    -> ( ( W cyclShift N ) cyclShift M )
                       = ( ( W cyclShift M ) cyclShift N ) ) $=
@@ -168581,7 +168581,7 @@ $)
     $d W n w $.
     $( The class of (different!) words resulting by cyclically shifting
        something (not necessarily a word) is a set.  (Contributed by AV,
-       8-Jun-2018.)  (Revised by Mario Carneiro/AV, 25-Oct-2018.)  (Proof
+       8-Jun-2018.)  (Revised by Mario Carneiro and AV, 25-Oct-2018.)  (Proof
        shortened by SN, 15-Jan-2025.) $)
     cshwsexa $p |- { w e. Word V | E. n e. ( 0 ..^ ( # ` W ) )
                                    ( W cyclShift n ) = w } e. _V $=
@@ -169974,7 +169974,7 @@ $)
 
   $( The concatenation of a word with two singleton words equals the
      concatenation of the word with the doubleton word consisting of the
-     symbols of the two singletons.  (Contributed by Mario Carneiro/AV,
+     symbols of the two singletons.  (Contributed by Mario Carneiro and AV,
      21-Oct-2018.)  (Revised by AV, 29-Jan-2024.) $)
   ccatw2s1ccatws2 $p |- ( W e. Word V -> ( ( W ++ <" X "> ) ++ <" Y "> )
                                          = ( W ++ <" X Y "> ) ) $=
@@ -169984,7 +169984,7 @@ $)
   $( Alternate proof of ~ ccat2s1fvw using words of length 2, see ~ df-s2 .  A
      symbol of the concatenation of a word with two single symbols
      corresponding to the symbol of the word.  (Contributed by AV,
-     22-Sep-2018.)  (Proof shortened by Mario Carneiro/AV, 21-Oct-2018.)
+     22-Sep-2018.)  (Proof shortened by Mario Carneiro and AV, 21-Oct-2018.)
      (Revised by AV, 28-Jan-2024.)  (New usage is discouraged.)
      (Proof modification is discouraged.) $)
   ccat2s1fvwALT $p |- ( ( W e. Word V /\ I e. NN0 /\ I < ( # ` W ) )
@@ -184331,8 +184331,8 @@ $)
 
     $( The infinite sum of reciprocals
        ` 1 + ( 1 / A ) ^ 1 + ( 1 / A ) ^ 2 ` ... is ` A / ( A - 1 ) ` .
-       (Contributed by rpenner, 3-Nov-2007.)  (Revised by Mario Carneiro,
-       26-Apr-2014.) $)
+       (Contributed by Richard Penner, 3-Nov-2007.)  (Revised by Mario
+       Carneiro, 26-Apr-2014.) $)
     geoisumr $p |- ( ( A e. CC /\ 1 < ( abs ` A ) ) ->
               sum_ k e. NN0 ( ( 1 / A ) ^ k ) = ( A / ( A - 1 ) ) ) $=
       ( vn cc wcel c1 cabs cfv clt wbr wa cdiv co cexp cmin cn0 cmpt cc0 wceq
@@ -195783,7 +195783,7 @@ $)
       bezout.2 $e |- G = inf ( M , RR , < ) $.
       bezout.5 $e |- ( ph -> -. ( A = 0 /\ B = 0 ) ) $.
       $( Lemma for ~ bezout .  (Contributed by Mario Carneiro, 15-Mar-2014.)
-         ( Revised by AV, 30-Sep-2020.) $)
+         (Revised by AV, 30-Sep-2020.) $)
       bezoutlem2 $p |- ( ph -> G e. M ) $=
         ( wcel cn co wceq cz wrex cc0 cr clt cinf c1 cuz cfv wss c0 wne cv cmul
         caddc ssrab3 nnuz sseqtri cabs bezoutlem1 ne0i syl6 crab eqid rexcom wa
@@ -195799,7 +195799,7 @@ $)
 
       $d M x y $.
       $( Lemma for ~ bezout .  (Contributed by Mario Carneiro, 22-Feb-2014.)
-         ( Revised by AV, 30-Sep-2020.) $)
+         (Revised by AV, 30-Sep-2020.) $)
       bezoutlem3 $p |- ( ph -> ( C e. M -> G || C ) ) $=
         ( wcel co wceq cmul caddc cz vs vt vu vv cdvds wbr wa cmo cc0 cn wn cle
         clt cr crp wrex eqeq1 2rexbidv weq oveq2 oveq1d eqeq2d oveq2d cbvrex2vw
@@ -232351,7 +232351,7 @@ $)
     mgmplusf.1 $e |- B = ( Base ` M ) $.
     mgmplusf.2 $e |- .+^ = ( +f ` M ) $.
     $( The group addition function of a magma is a function into its base set.
-       (Contributed by Mario Carneiro, 14-Aug-2015.)  (Revisd by AV,
+       (Contributed by Mario Carneiro, 14-Aug-2015.)  (Revised by AV,
        28-Jan-2020.) $)
     mgmplusf $p |- ( M e. Mgm -> .+^ : ( B X. B ) --> B ) $=
       ( vx vy cmgm wcel cv cplusg cfv co wral cxp eqid mgmcl 3expb ralrimivva
@@ -244897,8 +244897,8 @@ $)
        defined on a larger set than the true base - the product topology is
        defined on the set of all functions, not just bijections - but the
        definition of ` TopOpen ` ensures that it is trimmed down before it gets
-       use.  (Contributed by Mario Carneiro, 29-Aug-2015.)  (Proof revised by
-       AV, 30-Mar-2024.) $)
+       use.  (Contributed by Mario Carneiro, 29-Aug-2015.)  (Revised by AV,
+       30-Mar-2024.) $)
     symgtset $p |- ( A e. V ->
       ( Xt_ ` ( A X. { ~P A } ) ) = ( TopSet ` G ) ) $=
       ( vf wcel cpw csn cxp cpt cfv cefmnd cts cv wf1o cab eqid cvv wceq cbs co
@@ -255793,7 +255793,7 @@ $)
     gsummptfif1o.f $e |- F = ( i e. N |-> X ) $.
     gsummptfif1o.h $e |- ( ph -> H : C -1-1-onto-> N ) $.
     $( Re-index a finite group sum as map, using a bijection.  (Contributed by
-       by AV, 23-Jul-2019.) $)
+       AV, 23-Jul-2019.) $)
     gsummptfif1o $p |- ( ph -> ( G gsum F ) = ( G gsum ( F o. H ) ) ) $=
       ( cfn c0g cfv eqid wcel wral wf fmpt sylib cvv fvexd fdmfifsupp gsumf1o )
       AHBCEFGPFQRZJUISKLAIBTDHUAHBEUBMDHBIENUCUDZAHBEUEUIUJLAFQUFUGOUH $.
@@ -265907,7 +265907,7 @@ $)
     KZCBJGHZSEABJGHZEKZBAJGHZSUIUCBCDLABELUJUMULUOUIUJUMSUEULUOSZUHABCDEMUPUFUN
     UKIZUGDENUOULUQUGHCBAUNUKMOPQRTACUDLUA $.
 
-  $( Ring isomorphism is reflexive.  (Contributed by by AV, 24-Jul-2026.) $)
+  $( Ring isomorphism is reflexive.  (Contributed by AV, 24-Jul-2026.) $)
   ricref $p |- ( R e. Ring -> R ~=r R ) $=
     ( crg wcel cid cbs cfv cres crs cric wbr crh wf1o eqid idrhm f1oi sylanblrc
     co isrim brrici syl ) ABCZDAEFZGZAAHQCZAAIJUAUCAAKQCUBUBUCLUDUBAUBMZNUBOUBU
@@ -325750,7 +325750,8 @@ $)
   ${
     $d v w R $.  $d v w S $.
     $( The topological product of two compact spaces is compact.  (Contributed
-       by Mario Carneiro, 14-Sep-2014.)  (Proof shortened 21-Mar-2015.) $)
+       by Mario Carneiro, 14-Sep-2014.)  (Proof shortened by MC,
+       21-Mar-2015.) $)
     txcmp $p |- ( ( R e. Comp /\ S e. Comp ) -> ( R tX S ) e. Comp ) $=
       ( vw vv ccmp wcel wa ctx co ctop cuni wceq cpw cfn cin wrex cmptop syl2an
       cv eqid wi txtop cxp simpll simplr wss elpwi ad2antrl txuni adantr simprr
@@ -402895,7 +402896,7 @@ $)
       VPVUIUYRVMVQYMUYTVUFKCVXEXUAXUCWCVXBVXIVUFVUJYRXFXEVTUYS $.
 
     $( An upper bound on the Chebyshev function.  (Contributed by Mario
-       Carneiro, 13-Mar-2014.)  (Revised 22-Sep-2014.) $)
+       Carneiro, 13-Mar-2014.)  (Revised by MC, 22-Sep-2014.) $)
     chtub $p |- ( ( N e. RR /\ 2 < N ) ->
                     ( theta ` N ) < ( ( log ` 2 ) x. ( ( 2 x. N ) - 3 ) ) ) $=
       ( vk cr wcel c2 clt wbr wceq ccht cmul co c3 cmin c1 caddc adantr sylancr
@@ -420314,8 +420315,8 @@ $)
   ${
     $d x y $.
     $( The birthday function maps the surreals onto the ordinals.  Axiom B of
-       [Alling] p. 184.  (Proof shortened on 14-Apr-2012 by SF).  (Contributed
-       by Scott Fenton, 11-Jun-2011.) $)
+       [Alling] p. 184.  (Contributed by Scott Fenton, 11-Jun-2011.)  (Proof
+       shortened by SF, 14-Apr-2012.) $)
     bdayfo $p |- bday : No -onto-> On $=
       ( vx vy csur con0 cbday wfo wfn crn wceq cdm wcel wral dmexg rgen df-bday
       cv cvv mptfng mpbi c1o wrex cab rnmpt csn cxp noxp1o 1oex snnz dmxp ax-mp
@@ -434897,8 +434898,7 @@ $)
     halfcut.5 $e |- C = ( { A } |s { B } ) $.
     $( Relate the cut of twice of two numbers to the cut of the numbers.  Lemma
        4.2 of [Gonshor] p. 28.  (Contributed by Scott Fenton, 7-Aug-2025.)
-       Avoid the axiom of infinity.  (Proof modified by Scott Fenton,
-       6-Sep-2025.) $)
+       Avoid the axiom of infinity.  (Revised by Scott Fenton, 6-Sep-2025.) $)
     halfcut $p |- ( ph -> C = ( ( A +s B ) /su 2s ) ) $=
       ( vx vy cadds co c2s wceq csur syl wrex wbr cles cdivs cmuls ccuts sltssn
       csn cutscld eqeltrid no2times cv cab cun a1i addsunif oveq1 eqeq2d rexsng
@@ -445904,7 +445904,7 @@ $)
       cgrcgra.2 $e |- ( ph -> B =/= C ) $.
       cgrcgra.3 $e |- ( ph -> <" A B C "> ( cgrG ` G ) <" D E F "> ) $.
       $( Triangle congruence implies angle congruence.  This is a portion of
-         CPCTC, focusing on a specific angle.  (Contributed by Arnoux,
+         CPCTC, focusing on a specific angle.  (Contributed by Thierry Arnoux,
          2-Aug-2020.) $)
       cgrcgra $p |- ( ph -> <" A B C "> ( cgrA ` G ) <" D E F "> ) $=
         ( cds eqid ccgrg cgr3simp1 tgcgrneq cgr3simp2 tgcgrcomlr necomd iscgrad
@@ -481867,8 +481867,9 @@ $)
      these primitives, and the decimal constructor is used to make it easy to
      express larger numbers as combinations of digits.
 
-     (Contributed by David A. Wheeler, 29-Jun-2016.)  (Proof shortened by Mario
-     Carneiro using the arithmetic algorithm in mmj2, 30-Jun-2016.) $)
+     (Contributed by David A. Wheeler, 29-Jun-2016.)  Shorten proof by using
+     the arithmetic algorithm in mmj2.  (Proof shortened by Mario Carneiro,
+     30-Jun-2016.) $)
   1kp2ke3k $p |- ( ; ; ; 1 0 0 0 + ; ; ; 2 0 0 0 ) = ; ; ; 3 0 0 0 $=
     ( c1 cc0 cdc c2 c3 1nn0 0nn0 deccl 2nn0 eqid 1p2e3 00id decadd ) ABCZBCZBDB
     CZBCZBEBCZBCBOBCZQBCZNBABFGHZGHGPBDBIGHZGHGSJTJNBPBRBOQUAGUBGOJQJABDBEBNPFG
@@ -503361,9 +503362,8 @@ $)
 
   ${
     $d y A $.  $d y B $.
-    $( A projection on the span of a singleton.  (The proof ws shortened by
-       Mario Carneiro, 15-Dec-2013.)  (Contributed by NM, 28-May-2006.)
-       (Revised by Mario Carneiro, 15-Dec-2013.)
+    $( A projection on the span of a singleton.  (Contributed by NM,
+       28-May-2006.)  (Revised by Mario Carneiro, 15-Dec-2013.)
        (New usage is discouraged.) $)
     pjspansn $p |- ( ( A e. ~H /\ B e. ~H /\ A =/= 0h ) -> ( ( projh ` ( span `
         { A } ) ) ` B ) = ( ( ( B .ih A ) / ( ( normh ` A ) ^ 2 ) ) .h A ) ) $=
@@ -516466,7 +516466,7 @@ $( The exterior-angle theorem ~ tgexta and its route.  Throughout, the
          ` ( A e. ( C L D ) \/ C = D ) ` and is killed by ~ tgextancd ; the
          main branch is ~ tgextahpl , whose off-line input is ~ tgextamirn .
          The $d s are the mandatory ones ~ isinag carries for the witness
-         variable.  (Contributed by JAG , 12-Aug-2026.) $)
+         variable.  (Contributed by JAG, 12-Aug-2026.) $)
       tgextahp $p |- ( ph -> ( ( ( pInvG ` G ) ` ( A ( midG ` G ) C ) ) ` B ) (
           ( hpG ` G ) ` ( A L C ) ) D ) $=
         ( vx cv co wcel wceq cmid cfv cmir wbr chpg wne w3a wrex tgextalem1inag
@@ -516937,7 +516937,7 @@ $( The AAS assembly proper.  ~ tgaas1 reduces AAS to SAS by proving
          split on ` F = H ` .  Equal, and the side equality is a substitution;
          distinct, and ~ tgaasne closes the branch.  BOTH branches are proved
          -- assuming ` F = H ` would be assuming the theorem.  (Contributed by
-         JAG , 12-Aug-2026.) $)
+         JAG, 12-Aug-2026.) $)
       tgaas1h $p |- ( ph -> ( B .- C ) = ( E .- F ) ) $=
         ( co wceq wa eqcomd adantr simpr oveq2d eqtrd wne cstrkg wo wn cgrancol
         wcel ncolrot1 cfv wbr cs3 ccgra tgaascgra tgaasne pm2.61dane ) ACDNUNGH
@@ -535904,7 +535904,7 @@ $)
       $d ph u $.  $d ph v $.
       dvdsruasso2.1 $e |- .1. = ( 1r ` R ) $.
       $( A reformulation of ~ dvdsruasso .  (Proposed by Gerard Lang,
-         28-May-2025.)  (Contributed by Thiery Arnoux, 29-May-2025.) $)
+         28-May-2025.)  (Contributed by Thierry Arnoux, 29-May-2025.) $)
       dvdsruasso2 $p |- ( ph -> ( ( X .|| Y /\ Y .|| X ) <-> E. u e. U E. v e.
         U ( ( u .x. X ) = Y /\ ( v .x. Y ) = X /\ ( u .x. v ) = .1. ) ) ) $=
         ( wbr wa cv co wceq wrex w3a dvdsruasso cinvr cfv oveq1 eqeq1d 3anbi23d
@@ -614533,7 +614533,7 @@ $)
   $( Alias of ~ bj-nnf-alrim for labeling consistency (a standard predicate
      calculus axiom).  Closed form of ~ stdpc5 proved from modalK (obsoleting
      ~ stdpc5v ).  (Contributed by BJ, 2-Dec-2023.)  Use ~ bj-nnf-alrim
-     instead.  (New usaged is discouraged.) $)
+     instead.  (New usage is discouraged.) $)
   bj-stdpc5t $p |-
                   ( F// x ph -> ( A. x ( ph -> ps ) -> ( ph -> A. x ps ) ) ) $=
     ( bj-nnf-alrim ) ABCD $.
@@ -650336,8 +650336,8 @@ $)
   ${
     eqvrelsymb.1 $e |- ( ph -> EqvRel R ) $.
     $( An equivalence relation is symmetric.  (Contributed by NM, 30-Jul-1995.)
-       (Revised by Mario Carneiro, 12-Aug-2015.)  (Revised and distinct
-       variable conditions removed by Peter Mazsa, 2-Jun-2019.) $)
+       (Revised by Mario Carneiro, 12-Aug-2015.)  Remove DV conditions.
+       (Revised by Peter Mazsa, 2-Jun-2019.) $)
     eqvrelsymb $p |- ( ph -> ( A R B <-> B R A ) ) $=
       ( wbr wa weqvrel adantr simpr eqvrelsym impbida ) ABCDFZCBDFZAMGBCDADHZME
       IAMJKANGCBDAONEIANJKL $.
@@ -652293,8 +652293,8 @@ $)
 
   $( If the elements of ` A ` are disjoint, then it has equivalent coelements
      (former ~ prter1 ).  Special case of ~ disjim .  (Contributed by Rodolfo
-     Medina, 13-Oct-2010.)  (Revised by Mario Carneiro, 12-Aug-2015) (Revised
-     by Peter Mazsa, 8-Feb-2018.)  ( Revised by Peter Mazsa, 23-Sep-2021.) $)
+     Medina, 13-Oct-2010.)  (Revised by Mario Carneiro, 12-Aug-2015.)  (Revised
+     by Peter Mazsa, 8-Feb-2018.)  (Revised by Peter Mazsa, 23-Sep-2021.) $)
   eldisjim $p |- ( ElDisj A -> CoElEqvRel A ) $=
     ( cep ccnv wdisjALTV ccoss weqvrel weldisj wcoeleqvrel disjim df-coeleqvrel
     cres df-eldisj 3imtr4i ) BCAKZDNEFAGAHNIALAJM $.
@@ -724359,8 +724359,6 @@ $)
      ( e ( .g ` ( mulGrp ` K ) ) ( ( ( eval1 ` K ) ` f ) ` y ) ) =
      ( ( ( eval1 ` K ) ` f ) ` ( e ( .g ` ( mulGrp ` K ) ) y ) ) ) } $.
     aks5lema.15 $e |- S = ( Poly1 ` ( Z/nZ ` N ) ) $.
-    $( Lemma for AKS, section 5, connect to Theorem 6.1.  (Contributed by
-       metakunt, 17-Jun-2025.) $)
     ${
       $d A r $.  $d A s u $.  $d F r $.  $d F s u $.  $d G p $.  $d H s u $.
       $d I s u $.  $d K d $.  $d K p $.  $d K q $.  $d K r $.  $d K s $.
@@ -724383,7 +724381,8 @@ $)
          ( Z/nZ ` N ) ) ) ( +g ` S ) ( ( algSc ` S ) `
           ( ( ZRHom ` ( Z/nZ ` N ) ) ` A ) )
      ) ] ( S ~QG L ) ) $.
-      $( Lemma for AKS section 5.  (Contributed by metakunt, 17-Jun-2025.) $)
+      $( Lemma for AKS section 5, connect to Theorem 6.1.  (Contributed by
+         metakunt, 17-Jun-2025.) $)
       aks5lem3a $p |- ( ph -> ( N ( .g ` ( mulGrp ` K ) ) ( ( ( eval1 ` K )
       ` ( ( var1 ` K ) ( +g ` ( Poly1 ` K ) ) ( ( algSc ` ( Poly1 ` K ) )
      ` ( ( ZRHom ` K ) ` A ) ) ) ) ` M ) ) = ( ( ( eval1 ` K ) ` ( ( var1 ` K )
@@ -836901,7 +836900,7 @@ $( *** Definition moved to the front so that the text above will appear
        also known as function application.  In contrast to ` ( F `` A ) = (/) `
        (see ~ df-fv and ~ ndmfv ), ` ( F ''' A ) = _V ` if F is not defined for
        A!  (Contributed by Alexander van der Vekens, 25-May-2017.)  (Revised by
-       BJ/AV, 25-Aug-2022.) $)
+       BJ and AV, 25-Aug-2022.) $)
     df-afv $a |- ( F ''' A ) = ( iota' x A F x ) $.
   $}
 
