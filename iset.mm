@@ -184571,6 +184571,19 @@ $)
         CUSNOPGOKVAOKZUDUSGDBQRZOHQOOUFZPUQDOKZURBOKZVCOKUGDESZBFSZDBOOQUHUIUJV
         BOGNGNUKULUOUSCDBTRZOITVDPUQVEURVFVIOKUMVGVHDBOOTUHUIUJUNUP $.
     $}
+
+    ${
+      mplmulr.n $e |- .x. = ( .r ` Y ) $.
+      $( Value of multiplication in a polynomial ring.  (Contributed by Stefan
+         O'Rear, 21-Mar-2015.)  (Revised by Mario Carneiro, 2-Oct-2015.) $)
+      mplmulrg $p |- ( ( I e. V /\ R e. W ) -> .x. = ( .r ` S ) ) $=
+        ( wcel cmulr cfv cbs co eqid cvv wfn cmpl cmps wa cress mplval2g fveq2d
+        wceq basfn cxp fnmpl elex fnovex mp3an3an eqeltrid funfvex funfni fnpsr
+        sylancr ressmulrg syl2anc eqtr4d eqtrid ) DEKZAFKZUAZCGLMZBLMZJVCVDBGNM
+        ZUBOZLMZVEVCGVGLGABVFDEFHIVFPUCUDVCVFQKZBQKVEVHUEVCNQRGQKVIUFVCGDASOZQH
+        SQQUGZRVADQKZVBAQKZVJQKUHDEUIZAFUIZDAQQSUJUKULVIQGNGNUMUNUPVCBDATOZQITV
+        KRVAVLVBVMVPQKUOVNVODAQQTUJUKULVFBVGVEQQVGPVEPUQURUSUT $.
+    $}
   $}
 
   ${
@@ -184620,6 +184633,61 @@ $)
       ( cfn wcel cgrp wa cmps cbs cfv cress eqid mplval2g csubg simpl mplsubgfi
       co simpr subggrp syl eqeltrd ) CEFZBGFZHZACBIRZAJKZLRZGABUFUGCEGDUFMZUGMZ
       NUEUGUFOKFUHGFUEABUFUGCUIDUJUCUDPUCUDSQUGUFUHUHMTUAUB $.
+  $}
+
+  ${
+    $d k x y D $.  $d k x F $.  $d k x G $.  $d h k x y p I $.  $d k x ph $.
+    $d k x .x. $.  $d k x p R $.  $d p P $.  $d f i r w $.
+    mplmul.p $e |- P = ( I mPoly R ) $.
+    mplmul.b $e |- B = ( Base ` P ) $.
+    mplmul.m $e |- .x. = ( .r ` R ) $.
+    mplmul.t $e |- .xb = ( .r ` P ) $.
+    mplmul.d $e |- D = { h e. ( NN0 ^m I ) | ( `' h " NN ) e. Fin } $.
+    mplmul.f $e |- ( ph -> F e. B ) $.
+    mplmul.g $e |- ( ph -> G e. B ) $.
+    $( The multiplication operation on multivariate polynomials.  (Contributed
+       by Mario Carneiro, 9-Jan-2015.) $)
+    mplmul $p |- ( ph -> ( F .xb G ) = ( k e. D |->
+            ( R gsum ( x e. { y e. D | y oR <_ k } |->
+            ( ( F ` x ) .x. ( G ` ( k oF - x ) ) ) ) ) ) ) $=
+      ( vp vi vr vw vf cmps cmulr cfv cle cofr wbr crab cmin cof cmpt cgsu wcel
+      co cv wex cvv wa wceq basm syl c0g cfsupp cbs cress df-mpl elmpocl eleq2s
+      cmpl exlimiv eqid mplmulrg 3syl oveqd mplbasss sselid psrmulfval eqtrd
+      csb ) ALMHUSLMNGUGUSZUHUIZUSKEGBCUTKUTZUJUKULCEUMBUTZLUIWGWHUNUOUSMUIIUSU
+      PUQUSUPAHWFLMAUBUTZFURZUBVAZNVBURGVBURVCZHWFVDALDURWKTLDUBFPVEVFWJWLUBWLW
+      INGVNUSFUCUDVBVBUEUCUTUDUTZUGUSUEUTZUFUTWMVGUIVHULUFWNVIUIUMVJUSWDNGVNWIU
+      EUFUCUDVKVLOVMVOGWEHNVBVBFOWEVPZRVQVRVSABCWEVIUIZEGWEWFIJKLMNWOWPVPZQWFVP
+      SADWPLWPFGWEDNOWOPWQVTZTWAADWPMWRUAWAWBWC $.
+  $}
+
+  ${
+    $d x D $.  $d f x I $.  $d x .1. $.  $d x ph $.  $d f x R $.  $d x W $.
+    $d f x .0. $.
+    mpl1.p $e |- P = ( I mPoly R ) $.
+    mpl1.z $e |- .0. = ( 0g ` R ) $.
+    mpl1.o $e |- .1. = ( 1r ` R ) $.
+    mpl1.u $e |- U = ( 1r ` P ) $.
+    mpl1fi.i $e |- ( ph -> I e. Fin ) $.
+    mpl1.r $e |- ( ph -> R e. Ring ) $.
+    $( The identity element of the ring of polynomials.  (Contributed by Mario
+       Carneiro, 10-Jan-2015.) $)
+    mpl1fi $p |- ( ph ->
+      U = ( x e. ( NN0 ^m I ) |-> if ( x = ( I X. { 0 } ) , .1. , .0. ) ) ) $=
+      ( cur cfv co wceq wcel eqid cn0 cmap cv cc0 csn cxp cif cmpt cmps cbs cfn
+      cress crg mplval2g syl2anc fveq2d csubrg mplsubrgfi subrg1 psr1fi 3eqtr2d
+      syl eqtrid ) AECOPZBUAGUBQBUCGUDUEUFRFHUGUHZLAVDGDUIQZCUJPZULQZOPZVFOPZVE
+      ACVHOAGUKSDUMSCVHRMNCDVFVGGUKUMIVFTZVGTZUNUOUPAVGVFUQPSVJVIRACDVFVGGVKIVL
+      MNURVGVFVHVJVHTVJTZUSVBABDVFVJFGHVKMNJKVMUTVAVC $.
+  $}
+
+  ${
+    mplring.p $e |- P = ( I mPoly R ) $.
+    $( The polynomial ring is a ring.  (Contributed by Mario Carneiro,
+       9-Jan-2015.) $)
+    mplringfi $p |- ( ( I e. Fin /\ R e. Ring ) -> P e. Ring ) $=
+      ( cfn wcel crg wa cmps co cbs cress eqid mplval2g csubrg simpl mplsubrgfi
+      cfv simpr subrgring syl eqeltrd ) CEFZBGFZHZACBIJZAKRZLJZGABUFUGCEGDUFMZU
+      GMZNUEUGUFORFUHGFUEABUFUGCUIDUJUCUDPUCUDSQUGUFUHUHMTUAUB $.
   $}
 
 
