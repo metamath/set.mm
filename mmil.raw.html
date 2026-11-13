@@ -15056,9 +15056,8 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>mplmulr</td>
-  <td><i>none</i></td>
-  <td>should be provable (with set existence conditions) in a manner
-  similar to ~ mplplusgg</td>
+  <td>~ mplmulrg</td>
+  <td>adds set existence conditions</td>
 </tr>
 
 <tr>
@@ -15068,15 +15067,23 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
-  <td>mplmul</td>
-  <td><i>none</i></td>
-  <td>the set.mm proof uses psrmulfval and mplmulr</td>
+  <td>mpl1</td>
+  <td>~ mpl1fi</td>
+  <td>requires the polynomial to have a finite number of
+  variables</td>
 </tr>
 
 <tr>
-  <td>mpl1</td>
+  <td>mplsca</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses mplsubrg and psr1</td>
+  <td>since we have ~ ressscag it would appear we just
+  need psrsca</td>
+</tr>
+
+<tr>
+  <td>mplvsca2</td>
+  <td><i>none</i></td>
+  <td>the set.mm theorem would seem to only need small changes</td>
 </tr>
 
 <tr>
@@ -15105,8 +15112,28 @@ intuitionistic and it is lightly used in set.mm</TD>
 
 <tr>
   <td>mplring</td>
+  <td>~ mplringfi</td>
+  <td>requires polynomials to have a finite number of
+  variables</td>
+</tr>
+
+<tr>
+  <td>mpllvec</td>
   <td><i>none</i></td>
-  <td>the set.mm proof uses mplsubrg</td>
+  <td>would appear to be feasible given development of
+  vector spaces, mplsca , and mpllmod</td>
+</tr>
+
+<tr>
+  <td>mplcrng</td>
+  <td><i>none</i></td>
+  <td>would appear to be feasible if we have psrcrng</td>
+</tr>
+
+<tr>
+  <td>mplassa</td>
+  <td><i>none</i></td>
+  <td>would appear to be feasible if we have psrassa</td>
 </tr>
 
 <TR>
