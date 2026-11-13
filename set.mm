@@ -884667,6 +884667,15 @@ $)
   $}
 
   ${
+    $( Liouville's function takes one of two signs on positive integers.
+       Specialization of ~ liounzcl .  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
+    liounncl $p |- ( A e. NN -> ( lam ` A ) e. { -u 1 , 1 } ) $=
+      ( cn wcel cq cc0 csn cdif cliou cfv c1 cneg cpr nnqnz liounzcl syl ) ABCA
+      DEFGCAHIJKJLCAMANO $.
+  $}
+
+  ${
     $( Liouville's function maps the rationals to minus one, zero, or one.
        (Contributed by Zhi Wang, 27-Oct-2026.) $)
     liouf $p |- lam : QQ --> { -u 1 , 0 , 1 } $=
@@ -884734,15 +884743,6 @@ $)
       LWAXJEACKQBCKQXMXNEZXCAOIZBOIZVDGZPGZXCXPPGZXCXQPGZFGZXEWGXMXPTDZXQTDZXSY
       BJZXNXHTAOVEVFXHTBOVEVFXCMDXCKSYCYDEYEVGVHXCXPXQVIVJNXOXDXRXCPABVKVMXMXNW
       EXTWFYAFAUTBUTVNVLVOVPVQVRVS $.
-  $}
-
-  ${
-    $( Liouville's function takes one of two signs on positive integers.
-       Specialization of ~ liounzcl .  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    liounncl $p |- ( A e. NN -> ( lam ` A ) e. { -u 1 , 1 } ) $=
-      ( cn wcel cq cc0 csn cdif cliou cfv c1 cneg cpr nnqnz liounzcl syl ) ABCA
-      DEFGCAHIJKJLCAMANO $.
   $}
 
   ${
