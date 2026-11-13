@@ -885285,17 +885285,17 @@ $)
   $}
 
   ${
-    $( Liouville's function of a nonzero rational is the product of its values
-       at the absolute numerator and denominator.  (Contributed by Zhi Wang,
+    $( Liouville's function of a rational is the product of its values at the
+       absolute numerator and denominator.  (Contributed by Zhi Wang,
        27-Oct-2026.) $)
-    liounumden $p |- ( A e. ( QQ \ { 0 } ) ->
+    liounumden $p |- ( A e. QQ ->
       ( lam ` A ) = ( ( lam ` ( abs ` ( numer ` A ) ) ) x.
         ( lam ` ( denom ` A ) ) ) ) $=
-      ( cq cc0 csn cdif wcel cnumer cfv cdenom cdiv cliou cmul cabs wceq eldifi
-      co cz qnumcl syl zq cn qdencl lioudiv syl2anc qeqnumdivden fveq2d liouabs
-      nnqnz oveq1d 3eqtr4d ) ABCDZEZFZAGHZAIHZJPZKHZUNKHZUOKHZLPZAKHUNMHKHZUSLP
-      UMUNBFZUOULFZUQUTNUMUNQFZVBUMABFZVDABUKOZARSUNTSZUMUOUAFZVCUMVEVHVFAUBSUO
-      UHSUNUOUCUDUMAUPKUMVEAUPNVFAUESUFUMVAURUSLUMVBVAURNVGUNUGSUIUJ $.
+      ( cq wcel cnumer cfv cdenom cdiv cliou cmul cabs cc0 csn cdif wceq qnumcl
+      co cz zq syl cn qdencl lioudiv syl2anc qeqnumdivden fveq2d liouabs oveq1d
+      nnqnz 3eqtr4d ) ABCZADEZAFEZGPZHEZUKHEZULHEZIPZAHEUKJEHEZUPIPUJUKBCZULBKL
+      MCZUNUQNUJUKQCUSAOUKRSZUJULTCUTAUAULUHSUKULUBUCUJAUMHAUDUEUJURUOUPIUJUSUR
+      UONVAUKUFSUGUI $.
   $}
 
   ${
@@ -885329,25 +885329,23 @@ $)
   $}
 
   ${
-    liouprmdivd.1 $e |- ( ph -> A e. NN ) $.
+    liouprmdivd.1 $e |- ( ph -> A e. QQ ) $.
     liouprmdivd.2 $e |- ( ph -> P e. Prime ) $.
-    $( Division of a positive integer by a prime changes the sign of
-       Liouville's function.  The prime need not divide the integer.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    $( Division of a rational number by a prime changes the sign of Liouville's
+       function.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouprmdivd $p |- ( ph -> ( lam ` ( A / P ) ) = -u ( lam ` A ) ) $=
-      ( cdiv co cliou cfv cmul c1 cneg cq wcel cc0 csn wceq cn syl cc nnq prmnn
-      cdif cprime nnqnz 3syl lioudiv syl2anc liouprm oveq2d liounncn neg1cn a1i
-      mulcomd mulm1d eqtrd 3eqtrd ) ABCFGHIZBHIZCHIZJGZUSKLZJGZUSLZABMNZCMOPUCN
-      ZURVAQABRNZVEDBUASACUDNZCRNVFECUBCUEUFBCUGUHAUTVBUSJAVHUTVBQECUISUJAVCVBU
-      SJGVDAUSVBAVGUSTNDBUKSZVBTNAULUMUNAUSVIUOUPUQ $.
+      ( cdiv co cliou cfv cmul c1 cneg cq wcel cc0 csn cdif wceq cprime syl a1i
+      cn prmnn nnqnz 3syl lioudiv syl2anc liouprm oveq2d cr lioure recnd neg1cn
+      cc mulcomd mulm1d eqtrd 3eqtrd ) ABCFGHIZBHIZCHIZJGZUTKLZJGZUTLZABMNZCMOP
+      QNZUSVBRDACSNZCUBNVGECUCCUDUEBCUFUGAVAVCUTJAVHVAVCRECUHTUIAVDVCUTJGVEAUTV
+      CAUTAVFUTUJNDBUKTULZVCUNNAUMUAUOAUTVIUPUQUR $.
   $}
 
   ${
-    liounn3divd.1 $e |- ( ph -> A e. NN ) $.
-    $( The sign of Liouville's function changes upon division of a positive
-       integer by three.  Three need not divide the integer.  (Contributed by
-       Zhi Wang, 17-Oct-2026.) $)
-    liounn3divd $p |- ( ph -> ( lam ` ( A / 3 ) ) = -u ( lam ` A ) ) $=
+    liou3divd.1 $e |- ( ph -> A e. QQ ) $.
+    $( Division of a rational number by three changes the sign of Liouville's
+       function.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    liou3divd $p |- ( ph -> ( lam ` ( A / 3 ) ) = -u ( lam ` A ) ) $=
       ( c3 cprime wcel 3prm a1i liouprmdivd ) ABDCDEFAGHI $.
   $}
 
@@ -885361,10 +885359,10 @@ $)
        one.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liouprmdivposd $p |- ( ph -> ( ( A / P ) e. NN /\ ( lam ` ( A / P ) ) =
     1 ) ) $=
-      ( cdiv co cn wcel cliou cfv c1 wceq cdvds wbr wb cprime cneg prmnn negeqd
-      syl nndivdvds syl2anc mpbid liouprmdivd eqtrd negneg1e1 eqtrdi jca ) ABCH
-      IZJKZULLMZNOACBPQZUMFABJKCJKZUOUMRDACSKUPECUAUCBCUDUEUFAUNNTZTZNAUNBLMZTU
-      RABCDEUGAUSUQGUBUHUIUJUK $.
+      ( cdiv co cn wcel cliou cfv c1 wceq cdvds wbr wb syl cneg prmnn nndivdvds
+      cprime syl2anc mpbid cq nnq liouprmdivd negeqd eqtrd negneg1e1 eqtrdi jca
+      ) ABCHIZJKZUNLMZNOACBPQZUOFABJKZCJKZUQUORDACUCKUSECUASBCUBUDUEAUPNTZTZNAU
+      PBLMZTVAABCAURBUFKDBUGSEUHAVBUTGUIUJUKULUM $.
   $}
 
   ${
@@ -885377,9 +885375,10 @@ $)
        (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouprmdivnegd $p |- ( ph -> ( ( A / P ) e. NN /\ ( lam ` ( A / P ) ) =
       -u 1 ) ) $=
-      ( cdiv co cn wcel cliou cfv c1 cneg wceq cdvds wbr wb cprime prmnn negeqd
-      syl nndivdvds syl2anc mpbid liouprmdivd eqtrd jca ) ABCHIZJKZUJLMZNOZPACB
-      QRZUKFABJKCJKZUNUKSDACTKUOECUAUCBCUDUEUFAULBLMZOUMABCDEUGAUPNGUBUHUI $.
+      ( cdiv co cn wcel cliou cfv c1 cneg wceq cdvds wbr wb syl prmnn nndivdvds
+      cprime syl2anc mpbid cq nnq liouprmdivd negeqd eqtrd jca ) ABCHIZJKZULLMZ
+      NOZPACBQRZUMFABJKZCJKZUPUMSDACUCKURECUATBCUBUDUEAUNBLMZOUOABCAUQBUFKDBUGT
+      EUHAUSNGUIUJUK $.
   $}
 
   ${
@@ -886391,10 +886390,10 @@ $)
        ` ( ( M + A ) / 3 ) ` .  See ~ liougb4gap0d for the ternary descent.
        (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4descsignd $p |- ( ph -> ( lam ` ( ( M + A ) / 3 ) ) = 1 ) $=
-      ( caddc co c3 cliou cfv cneg c1 nnaddcld nncnd cn liounn3divd liougb4posd
-      cdiv eqeltrd addsum2d negeqd negneg1e1 eqtrdi eqtrd ) ADBLMZNUDMOPUKOPZQZ
-      RAUKADBADBCLMUAIABCGHSUEZGSZUBAUMRQZQRAULUPACUKDEFUNHUOABCDADUNTABGTACHTI
-      UFJKUCUGUHUIUJ $.
+      ( caddc co cliou cfv cneg c1 cn wcel nncnd c3 cq nnaddcld eqeltrd nnq syl
+      cdiv liou3divd addsum2d liougb4posd negeqd negneg1e1 eqtrdi eqtrd ) ADBLM
+      ZUAUGMNOUONOZPZQAUOAUORSUOUBSADBADBCLMRIABCGHUCUDZGUCZUOUEUFUHAUQQPZPQAUP
+      UTACUODEFURHUSABCDADURTABGTACHTIUIJKUJUKULUMUN $.
   $}
 
   ${
@@ -888557,26 +888556,6 @@ $)
       ( cfv cmul co zcnd liouoddred recnd liouoddnegd cneg zmulcld fmulneg2bid
       ) AECEFNZCFNZECOPZFNZFCUAFNAEJQACKQAUDABEDFGHJRSAUEABCDFGHKRSAUGABUFDFGHA
       ECJKUBZRSABCDFGHIKLTABUFDFGHIUHMTUC $.
-  $}
-
-  ${
-    $d D x $.  $d P x $.  $d Q x $.
-    liouoddmulnegd.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 ) , (
-      lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
-    liouoddmulnegd.2 $e |- ( ph -> P e. NN ) $.
-    liouoddmulnegd.3 $e |- ( ph -> -. 2 || P ) $.
-    liouoddmulnegd.4 $e |- ( ph -> Q e. ZZ ) $.
-    liouoddmulnegd.5 $e |- ( ph -> D e. ZZ ) $.
-    liouoddmulnegd.6 $e |- ( ph -> -. P || D ) $.
-    liouoddmulnegd.7 $e |- ( ph -> -. P || ( Q x. D ) ) $.
-    liouoddmulnegd.8 $e |- ( ph -> ( F ` ( Q x. D ) ) = ( ( F ` Q ) x. ( F `
-      D ) ) ) $.
-    $( An odd completion transfers a multiplication identity to the negative
-       argument.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    liouoddmulnegd $p |- ( ph -> ( F ` ( Q x. -u D ) ) = ( ( F ` Q ) x. ( F `
-      -u D ) ) ) $=
-      ( cneg cmul co cfv wceq liouoddmulnegiffd mpbird ) AECOZPQFREFRZUBFRPQSEC
-      PQFRUCCFRPQSNABCDEFGHIJKLMTUA $.
   $}
 
   ${
