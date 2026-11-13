@@ -45435,6 +45435,15 @@ $)
   $}
 
   ${
+    $d B x y $.  $d A y $.
+    $( If the range of a class is inhabited, the class is inhabited.
+       (Contributed by Jim Kingdon, 12-Nov-2026.) $)
+    rnm $p |- ( A e. ran B -> E. x x e. B ) $=
+      ( vy crn wcel cv ccnv wex cdm dmm df-rn eleq2s cnvm exlimiv syl ) BCEZFDG
+      ZCHZFZDIZAGCFAIZUABSJQDBSKCLMTUBDARCNOP $.
+  $}
+
+  ${
     $d y z A $.  $d x y z B $.
     $( The domain of a cross product.  Part of Theorem 3.13(x) of [Monk1]
        p. 37.  (Contributed by NM, 28-Jul-1995.)  (Proof shortened by Andrew
