@@ -743895,91 +743895,6 @@ $)
   1ne1p1 $p |- 1 =/= ( 1 + 1 ) $=
     ( c1 c2 caddc co 1ne2 1p1e2 neeqtrri ) ABAACDEFG $.
 
-  $( One differs from the sum of two and one.  Proof supplied by Owen Orger.
-     AI assistance from OpenAI Codex in preparation and verification.
-     (Contributed by Owen Orger, 11-Nov-2026.) $)
-  1ne2p1 $p |- 1 =/= ( 2 + 1 ) $=
-    ( c1 c3 c2 caddc co 1re 1lt3 ltneii 2p1e3 neeqtrri ) ABCADEABFGHIJ $.
-
-  $( Two differs from the sum of two and one.  Proof supplied by Owen Orger.
-     AI assistance from OpenAI Codex in preparation and verification.
-     (Contributed by Owen Orger, 11-Nov-2026.) $)
-  2ne2p1 $p |- 2 =/= ( 2 + 1 ) $=
-    ( c2 c3 c1 caddc co 2re 2lt3 ltneii 2p1e3 neeqtrri ) ABACDEABFGHIJ $.
-
-  $( One differs from the sum of one and two.  Proof supplied by Owen Orger.
-     AI assistance from OpenAI Codex in preparation and verification.
-     (Contributed by Owen Orger, 11-Nov-2026.) $)
-  1ne1p2 $p |- 1 =/= ( 1 + 2 ) $=
-    ( c1 c3 c2 caddc co 1re 1lt3 ltneii 1p2e3 neeqtrri ) ABACDEABFGHIJ $.
-
-  $( Two differs from the sum of one and two.  Proof supplied by Owen Orger.
-     AI assistance from OpenAI Codex in preparation and verification.
-     (Contributed by Owen Orger, 11-Nov-2026.) $)
-  2ne1p2 $p |- 2 =/= ( 1 + 2 ) $=
-    ( c2 c3 c1 caddc co 2re 2lt3 ltneii 1p2e3 neeqtrri ) ABCADEABFGHIJ $.
-
-  $( Replace the sum of one and one by two in the first addend of a sum with
-     one.  Proof supplied by Owen Orger.  AI assistance from OpenAI Codex in
-     preparation and verification.  (Contributed by Owen Orger,
-     11-Nov-2026.) $)
-  1p1p1e2p1 $p |- ( ( 1 + 1 ) + 1 ) = ( 2 + 1 ) $=
-    ( c1 caddc co c2 1p1e2 oveq1i ) AABCDABEF $.
-
-  $( Replace the sum of one and one by two in the first addend of a sum with
-     two.  Proof supplied by Owen Orger.  AI assistance from OpenAI Codex in
-     preparation and verification.  (Contributed by Owen Orger,
-     11-Nov-2026.) $)
-  1p1p2e2p2 $p |- ( ( 1 + 1 ) + 2 ) = ( 2 + 2 ) $=
-    ( c1 caddc co c2 1p1e2 oveq1i ) AABCDDBEF $.
-
-  $( Replace the sum of one and one by two in the first addend of a sum with
-     three.  Proof supplied by Owen Orger.  AI assistance from OpenAI Codex in
-     preparation and verification.  (Contributed by Owen Orger,
-     11-Nov-2026.) $)
-  1p1p3e2p3 $p |- ( ( 1 + 1 ) + 3 ) = ( 2 + 3 ) $=
-    ( c1 caddc co c2 c3 1p1e2 oveq1i ) AABCDEBFG $.
-
-  $( Replace the sum of two and one by three in the first addend of a sum with
-     one.  Proof supplied by Owen Orger.  AI assistance from OpenAI Codex in
-     preparation and verification.  (Contributed by Owen Orger,
-     11-Nov-2026.) $)
-  2p1p1e3p1 $p |- ( ( 2 + 1 ) + 1 ) = ( 3 + 1 ) $=
-    ( c2 c1 caddc co c3 2p1e3 oveq1i ) ABCDEBCFG $.
-
-  ${
-    3syladantri.1 $e |- ( ph -> ps ) $.
-    3syladantri.2 $e |- ( ps -> ch ) $.
-    3syladantri.3 $e |- ( ch -> th ) $.
-    $( Chain three implications and adjoin a conjunct to the antecedent.  Proof
-       supplied by Owen Orger.  AI assistance from OpenAI Codex in preparation
-       and verification.  (Contributed by Owen Orger, 11-Nov-2026.) $)
-    3syladantri $p |- ( ( ph /\ ta ) -> th ) $=
-      ( 3syl adantr ) ADEABCDFGHIJ $.
-  $}
-
-  ${
-    syladantri.1 $e |- ( ph -> ps ) $.
-    syladantri.2 $e |- ( ps -> ch ) $.
-    $( Chain two implications and adjoin a conjunct on the right of the
-       antecedent.  Proof supplied by Owen Orger.  AI assistance from OpenAI
-       Codex in preparation and verification.  (Contributed by Owen Orger,
-       11-Nov-2026.) $)
-    syladantri $p |- ( ( ph /\ th ) -> ch ) $=
-      ( syl adantr ) ACDABCEFGH $.
-  $}
-
-  ${
-    syladantli.1 $e |- ( ph -> ps ) $.
-    syladantli.2 $e |- ( ps -> ch ) $.
-    $( Chain two implications and adjoin a conjunct on the left of the
-       antecedent.  Proof supplied by Owen Orger.  AI assistance from OpenAI
-       Codex in preparation and verification.  (Contributed by Owen Orger,
-       11-Nov-2026.) $)
-    syladantli $p |- ( ( th /\ ph ) -> ch ) $=
-      ( syl adantl ) ACDABCEFGH $.
-  $}
-
   ${
     sylcon3i.1 $e |- ( ph -> ps ) $.
     sylcon3i.2 $e |- ( ps -> ch ) $.
@@ -744015,17 +743930,6 @@ $)
   $}
 
   ${
-    sylnegadantri.1 $e |- ( ph -> ps ) $.
-    sylnegadantri.2 $e |- ( ps -> -. ch ) $.
-    $( Adjoin an antecedent conjunct to a chain with a negated conclusion.
-       Proof supplied by Owen Orger.  AI assistance from OpenAI Codex in
-       preparation and verification.  (Contributed by Owen Orger,
-       11-Nov-2026.) $)
-    sylnegadantri $p |- ( ( ph /\ th ) -> -. ch ) $=
-      ( wn syl adantr ) ACGZDABJEFHI $.
-  $}
-
-  ${
     3sylcon3i.1 $e |- ( ph -> ps ) $.
     3sylcon3i.2 $e |- ( ch -> th ) $.
     3sylcon3i.3 $e |- ( ps -> ch ) $.
@@ -744036,16 +743940,6 @@ $)
       ( syl con3i ) ADACDABCEGHFHI $.
   $}
 
-  ${
-    sylexi.1 $e |- ( ph -> ps ) $.
-    sylexi.2 $e |- ( ps -> ch ) $.
-    $( Export a two-link implication chain with an additional assumption.
-       Proof supplied by Owen Orger.  AI assistance from OpenAI Codex in
-       preparation and verification.  (Contributed by Owen Orger,
-       11-Nov-2026.) $)
-    sylexi $p |- ( ph -> ( th -> ch ) ) $=
-      ( wi ax-1 3syl ) ABCDCGEFCDHI $.
-  $}
 
   ${
     4sylcon3i.1 $e |- ( ph -> ps ) $.
@@ -744057,26 +743951,6 @@ $)
        (Contributed by Owen Orger, 11-Nov-2026.) $)
     4sylcon3i $p |- ( -. ta -> -. ph ) $=
       ( wn 3sylcon3i nsyl ) EJBABCDEGIHKFL $.
-  $}
-
-  ${
-    3binotan1i.1 $e |- ( ph <-> ps ) $.
-    3binotan1i.2 $e |- ( ps <-> ch ) $.
-    $( Replace negated equivalent formulas in the left conjunct after chaining
-       two equivalences.  Proof prepared with AI assistance from OpenAI Codex.
-       (Contributed by Owen Orger, 11-Nov-2026.) $)
-    3binotan1i $p |- ( ( -. ph /\ th ) <-> ( -. ch /\ th ) ) $=
-      ( wn bitri notbii anbi1i ) AGCGDACABCEFHIJ $.
-  $}
-
-  ${
-    3bior2i.1 $e |- ( ph <-> ps ) $.
-    3bior2i.2 $e |- ( ps <-> ch ) $.
-    $( Replace equivalent formulas in the right disjunct after chaining two
-       equivalences.  Proof prepared with AI assistance from OpenAI Codex.
-       (Contributed by Owen Orger, 11-Nov-2026.) $)
-    3bior2i $p |- ( ( th \/ ph ) <-> ( th \/ ch ) ) $=
-      ( bitri orbi2i ) ACDABCEFGH $.
   $}
 
   ${
@@ -744171,39 +744045,6 @@ $)
   $}
 
   ${
-    4sstrun1i.1 $e |- A C_ B $.
-    4sstrun1i.2 $e |- B C_ C $.
-    4sstrun1i.3 $e |- C C_ D $.
-    $( Extend a chain of three subclass inclusions to a union containing its
-       endpoint.  Proof prepared with AI assistance from OpenAI Codex.
-       (Contributed by Owen Orger, 11-Nov-2026.) $)
-    4sstrun1i $p |- A C_ ( D u. E ) $=
-      ( cun sstri ssun1 ) ADDEIACDABCFGJHJDEKJ $.
-  $}
-
-  ${
-    insstr2i.1 $e |- A C_ B $.
-    insstr2i.2 $e |- B C_ C $.
-    $( An intersection lies below the endpoint of a subclass chain from its
-       first factor.  Proof supplied by Owen Orger.  AI assistance from OpenAI
-       Codex in preparation and verification.  (Contributed by Owen Orger,
-       11-Nov-2026.) $)
-    insstr2i $p |- ( A i^i D ) C_ C $=
-      ( cin inss1 sstri ) ADGACADHABCEFII $.
-  $}
-
-  ${
-    sstrun2i.1 $e |- A C_ B $.
-    sstrun2i.2 $e |- B C_ C $.
-    $( Extend a chain of two subclass inclusions to the right member of a
-       union.  Proof supplied by Owen Orger.  AI assistance from OpenAI Codex
-       in preparation and verification.  (Contributed by Owen Orger,
-       11-Nov-2026.) $)
-    sstrun2i $p |- A C_ ( D u. C ) $=
-      ( cun sstri ssun2 ) ACDCGABCEFHCDIH $.
-  $}
-
-  ${
     unssstri.1 $e |- A C_ C $.
     unssstri.2 $e |- B C_ C $.
     unssstri.3 $e |- C C_ D $.
@@ -744228,28 +744069,6 @@ $)
   $}
 
   ${
-    inssinun1i.1 $e |- A C_ B $.
-    inssinun1i.2 $e |- C C_ D $.
-    $( Map an intersection through two subclass inclusions and enlarge the
-       result to a union.  Proof supplied by Owen Orger.  AI assistance from
-       OpenAI Codex in preparation and verification.  (Contributed by Owen
-       Orger, 11-Nov-2026.) $)
-    inssinun1i $p |- ( A i^i C ) C_ ( ( B i^i D ) u. E ) $=
-      ( cin cun inss1 sstri inss2 ssini ssun1 ) ACHZBDHZPEIOBDOABACJFKOCDACLGKM
-      PENK $.
-  $}
-
-  ${
-    unssunassi.1 $e |- A C_ B $.
-    unssunassi.2 $e |- C C_ D $.
-    $( Map a union through two subclass inclusions into a right-associated
-       union.  Proof prepared with AI assistance from OpenAI Codex.
-       (Contributed by Owen Orger, 11-Nov-2026.) $)
-    unssunassi $p |- ( A u. C ) C_ ( B u. ( D u. E ) ) $=
-      ( cun ssun1 sstri ssun2 unssi ) ACBDEHZHZABNFBMIJCMNCDMGDEIJMBKJL $.
-  $}
-
-  ${
     ssintr1i.1 $e |- A C_ B $.
     ssintr1i.2 $e |- B C_ C $.
     ssintr1i.3 $e |- A C_ D $.
@@ -744262,17 +744081,6 @@ $)
   $}
 
   ${
-    insstruni.1 $e |- A C_ B $.
-    insstruni.2 $e |- B C_ C $.
-    $( Project the second factor of an intersection, traverse a subclass chain,
-       and introduce a union.  Proof supplied by Owen Orger.  AI assistance
-       from OpenAI Codex in preparation and verification.  (Contributed by Owen
-       Orger, 11-Nov-2026.) $)
-    insstruni $p |- ( D i^i A ) C_ ( C u. E ) $=
-      ( cin inss2 4sstrun1i ) DAHABCEDAIFGJ $.
-  $}
-
-  ${
     unssintr2i.1 $e |- A C_ C $.
     unssintr2i.2 $e |- B C_ C $.
     unssintr2i.3 $e |- C C_ D $.
@@ -744282,26 +744090,6 @@ $)
        Codex.  (Contributed by Owen Orger, 11-Nov-2026.) $)
     unssintr2i $p |- ( A u. B ) C_ ( D i^i E ) $=
       ( cun unssi sstri ssini ) ABJZDENCDABCFGKZHLNCEOILM $.
-  $}
-
-  ${
-    2equnineqi.1 $e |- A = B $.
-    2equnineqi.2 $e |- B = C $.
-    $( Transport an equality chain through a union followed by an intersection.
-       Proof prepared with AI assistance from OpenAI Codex.  (Contributed by
-       Owen Orger, 11-Nov-2026.) $)
-    2equnineqi $p |- ( ( A u. D ) i^i E ) = ( ( C u. D ) i^i E ) $=
-      ( cun eqtri uneq1i ineq1i ) ADHCDHEACDABCFGIJK $.
-  $}
-
-  ${
-    2eqinuncomi.1 $e |- A = B $.
-    2eqinuncomi.2 $e |- B = C $.
-    $( Reverse an equality chain transported through an intersection and a
-       union.  Proof prepared with AI assistance from OpenAI Codex.
-       (Contributed by Owen Orger, 11-Nov-2026.) $)
-    2eqinuncomi $p |- ( E u. ( D i^i C ) ) = ( E u. ( D i^i A ) ) $=
-      ( cin cun eqtri ineq2i uneq2i eqcomi ) EDAHZIEDCHZINOEACDABCFGJKLM $.
   $}
 
   ${
@@ -744340,17 +744128,6 @@ $)
   $}
 
   ${
-    elss2unii.1 $e |- A e. B $.
-    elss2unii.2 $e |- B C_ C $.
-    $( Enlarge a containing class by inclusion and then introduce two nested
-       unions.  Proof supplied by Owen Orger.  AI assistance from OpenAI Codex
-       in preparation and verification.  (Contributed by Owen Orger,
-       11-Nov-2026.) $)
-    elss2unii $p |- A e. ( E u. ( C u. D ) ) $=
-      ( cun sselii ssun1 ssun2 elss2tri ) ACCDHZEMHBCAGFICDJMEKL $.
-  $}
-
-  ${
     eqelssii.1 $e |- A = B $.
     eqelssii.2 $e |- B e. C $.
     eqelssii.3 $e |- C C_ D $.
@@ -744360,28 +744137,6 @@ $)
        11-Nov-2026.) $)
     eqelssii $p |- A e. D $=
       ( eqeltri sselii ) CDAGABCEFHI $.
-  $}
-
-  ${
-    uneqcom12i.1 $e |- A = B $.
-    uneqcom12i.2 $e |- C = D $.
-    $( Replace both inputs of a union by equal classes and commute the
-       resulting union.  Proof supplied by Owen Orger.  AI assistance from
-       OpenAI Codex in preparation and verification.  (Contributed by Owen
-       Orger, 11-Nov-2026.) $)
-    uneqcom12i $p |- ( A u. C ) = ( D u. B ) $=
-      ( cun uneq2i uneq1i uncom 3eqtri ) ACGADGBDGDBGCDAFHABDEIBDJK $.
-  $}
-
-  ${
-    uneq12ineqi.1 $e |- A = B $.
-    uneq12ineqi.2 $e |- C = D $.
-    $( Replace both inputs of a union inside the first factor of an
-       intersection.  Proof supplied by Owen Orger.  AI assistance from OpenAI
-       Codex in preparation and verification.  (Contributed by Owen Orger,
-       11-Nov-2026.) $)
-    uneq12ineqi $p |- ( ( A u. C ) i^i E ) = ( ( B u. D ) i^i E ) $=
-      ( cun uneq12i ineq1i ) ACHBDHEABCDFGIJ $.
   $}
 
   ${
@@ -744465,39 +744220,6 @@ $)
     readdsubcli $p |- ( ( A + B ) - C ) e. RR $=
       ( caddc co cr wcel cmin readdcl mp2an resubcl ) ABGHZIJZCIJOCKHIJAIJBIJPD
       EABLMFOCNM $.
-  $}
-
-  ${
-    nnaddmulcni.1 $e |- A e. NN $.
-    nnaddmulcni.2 $e |- B e. NN $.
-    $( The product of a sum of positive integers and its first addend is
-       complex.  Proof prepared with AI assistance from OpenAI Codex.
-       (Contributed by Owen Orger, 11-Nov-2026.) $)
-    nnaddmulcni $p |- ( ( A + B ) x. A ) e. CC $=
-      ( caddc co nnaddcli nncni mulcli ) ABEFZAJABCDGHACHI $.
-  $}
-
-  ${
-    nnmuladdrei.1 $e |- A e. NN $.
-    nnmuladdrei.2 $e |- B e. NN $.
-    $( The sum of a product of positive integers and its second factor is real.
-       Proof prepared with AI assistance from OpenAI Codex.  (Contributed by
-       Owen Orger, 11-Nov-2026.) $)
-    nnmuladdrei $p |- ( ( A x. B ) + B ) e. RR $=
-      ( cmul co cr wcel caddc nnmulcli nnrei readdcl mp2an ) ABEFZGHBGHNBIFGHNA
-      BCDJKBDKNBLM $.
-  $}
-
-  ${
-    nn0addmulcl2i.1 $e |- A e. NN0 $.
-    nn0addmulcl2i.2 $e |- B e. NN0 $.
-    nn0addmulcl2i.3 $e |- C e. NN0 $.
-    $( The product of two overlapping sums of nonnegative integers is a
-       nonnegative integer.  Proof prepared with AI assistance from OpenAI
-       Codex.  (Contributed by Owen Orger, 11-Nov-2026.) $)
-    nn0addmulcl2i $p |- ( ( A + B ) x. ( B + C ) ) e. NN0 $=
-      ( caddc co cn0 wcel cmul nn0addcl mp2an nn0mulcl ) ABGHZIJZBCGHZIJZOQKHIJ
-      AIJBIJZPDEABLMSCIJREFBCLMOQNM $.
   $}
 
   ${
@@ -744700,18 +744422,6 @@ $)
       BCEFGOPACDEGHQR $.
   $}
 
-  ${
-    leadd12i.1 $e |- A e. RR $.
-    leadd12i.2 $e |- B e. RR $.
-    leadd12i.3 $e |- C e. RR $.
-    leadd12i.4 $e |- A <_ B $.
-    $( Translate a non-strict real inequality first on the right and then on
-       the left.  Proof prepared with AI assistance from OpenAI Codex.
-       (Contributed by Owen Orger, 11-Nov-2026.) $)
-    leadd12i $p |- ( C + ( A + C ) ) <_ ( C + ( B + C ) ) $=
-      ( caddc co cle wbr leadd1i mpbi cr wcel readdcl mp2an leadd2i ) ACHIZBCHI
-      ZJKZCSHICTHIJKABJKUAGABCDEFLMSTCANOCNOZSNODFACPQBNOUBTNOEFBCPQFRM $.
-  $}
 
   ${
     letrsubge0i.1 $e |- A e. RR $.
@@ -744760,20 +744470,6 @@ $)
        Owen Orger, 11-Nov-2026.) $)
     ltletrnei $p |- A =/= C $=
       ( clt wbr cle ltletri mp2an ltneii ) ACDABIJBCKJACIJGHABCDEFLMN $.
-  $}
-
-  ${
-    le2subge0i.1 $e |- A e. RR $.
-    le2subge0i.2 $e |- B e. RR $.
-    le2subge0i.3 $e |- C e. RR $.
-    le2subge0i.4 $e |- A <_ B $.
-    le2subge0i.5 $e |- B <_ C $.
-    $( Both consecutive differences in a non-strict real inequality chain are
-       nonnegative.  Proof prepared with AI assistance from OpenAI Codex.
-       (Contributed by Owen Orger, 11-Nov-2026.) $)
-    le2subge0i $p |- ( 0 <_ ( B - A ) /\ 0 <_ ( C - B ) ) $=
-      ( cc0 cmin co cle wbr subge0i mpbir pm3.2i ) IBAJKLMZICBJKLMZQABLMGBAEDNO
-      RBCLMHCBFENOP $.
   $}
 
   ${
@@ -744830,28 +744526,6 @@ $)
   $}
 
   ${
-    muladdcomd.1 $e |- ( ph -> A e. CC ) $.
-    muladdcomd.2 $e |- ( ph -> B e. CC ) $.
-    muladdcomd.3 $e |- ( ph -> C e. CC ) $.
-    $( Commute a sum whose first term is a product, in deduction form.  Proof
-       prepared with AI assistance from OpenAI Codex.  (Contributed by Owen
-       Orger, 11-Nov-2026.) $)
-    muladdcomd $p |- ( ph -> ( ( A x. B ) + C ) = ( C + ( A x. B ) ) ) $=
-      ( cmul co mulcld addcomd ) ABCHIDABCEFJGK $.
-  $}
-
-  ${
-    addmulcomd.1 $e |- ( ph -> A e. CC ) $.
-    addmulcomd.2 $e |- ( ph -> B e. CC ) $.
-    addmulcomd.3 $e |- ( ph -> C e. CC ) $.
-    $( Commute a product whose first factor is a sum, in deduction form.  Proof
-       prepared with AI assistance from OpenAI Codex.  (Contributed by Owen
-       Orger, 11-Nov-2026.) $)
-    addmulcomd $p |- ( ph -> ( ( A + B ) x. C ) = ( C x. ( A + B ) ) ) $=
-      ( caddc co addcld mulcomd ) ABCHIDABCEFJGK $.
-  $}
-
-  ${
     muladddid.1 $e |- ( ph -> A e. CC ) $.
     muladddid.2 $e |- ( ph -> B e. CC ) $.
     muladddid.3 $e |- ( ph -> C e. CC ) $.
@@ -744878,20 +744552,6 @@ $)
       ( letrd ) ABDEFHIABCDFGHJKMLM $.
   $}
 
-  ${
-    ltletrsqge0d.1 $e |- ( ph -> A e. RR ) $.
-    ltletrsqge0d.2 $e |- ( ph -> B e. RR ) $.
-    ltletrsqge0d.3 $e |- ( ph -> C e. RR ) $.
-    ltletrsqge0d.4 $e |- ( ph -> A < B ) $.
-    ltletrsqge0d.5 $e |- ( ph -> B <_ C ) $.
-    $( A strict then non-strict inequality chain and a nonnegative squared
-       endpoint difference, in deduction form.  Proof prepared with AI
-       assistance from OpenAI Codex.  (Contributed by Owen Orger,
-       11-Nov-2026.) $)
-    ltletrsqge0d $p |- ( ph -> ( A < C /\ 0 <_ ( ( C - A ) ^ 2 ) ) ) $=
-      ( clt wbr cc0 cmin co c2 cexp cle ltletrd resubcld sqge0d jca ) ABDJKLDBM
-      NZOPNQKABCDEFGHIRAUBADBGESTUA $.
-  $}
 
   ${
     2muladdrevcomi.1 $e |- A e. CC $.
@@ -744934,18 +744594,6 @@ $)
       $.
   $}
 
-  ${
-    mulassadddii.1 $e |- A e. CC $.
-    mulassadddii.2 $e |- B e. CC $.
-    mulassadddii.3 $e |- C e. CC $.
-    $( Reassociate a product and distribute its inner factor over a sum.  Proof
-       prepared with AI assistance from OpenAI Codex.  (Contributed by Owen
-       Orger, 11-Nov-2026.) $)
-    mulassadddii $p |- ( ( A x. B ) x. ( B + C ) ) = ( A x. ( ( B x. B ) + ( B
-      x. C ) ) ) $=
-      ( cmul co caddc addcli mulassi adddii oveq2i eqtri ) ABGHBCIHZGHABOGHZGHA
-      BBGHBCGHIHZGHABODEBCEFJKPQAGBBCEEFLMN $.
-  $}
 
   ${
     add2diri.1 $e |- A e. CC $.
@@ -744959,82 +744607,6 @@ $)
       ( ( A x. D ) + ( B x. D ) ) ) $=
       ( caddc co cmul addcli adddii adddiri oveq12i eqtri ) ABIJZCDIJKJQCKJZQDK
       JZIJACKJBCKJIJZADKJBDKJIJZIJQCDABEFLGHMRTSUAIABCEFGNABDEFHNOP $.
-  $}
-
-  ${
-    3letrsubsqge0i.1 $e |- A e. RR $.
-    3letrsubsqge0i.2 $e |- B e. RR $.
-    3letrsubsqge0i.3 $e |- C e. RR $.
-    3letrsubsqge0i.4 $e |- D e. RR $.
-    3letrsubsqge0i.5 $e |- A <_ B $.
-    3letrsubsqge0i.6 $e |- B <_ C $.
-    3letrsubsqge0i.7 $e |- C <_ D $.
-    $( A nonnegative difference obtained from an inequality chain remains
-       nonnegative after adding a square.  Proof prepared with AI assistance
-       from OpenAI Codex.  (Contributed by Owen Orger, 11-Nov-2026.) $)
-    3letrsubsqge0i $p |- 0 <_ ( ( D - A ) + ( B ^ 2 ) ) $=
-      ( cc0 cmin co cle wbr letri mp2an cr wcel cexp caddc subge0i mpbir sqge0i
-      c2 resubcl resqcl ax-mp addge0i ) LDAMNZOPZLBUFUANZOPLUKUMUBNOPULADOPZACO
-      PZCDOPUNABOPBCOPUOIJABCEFGQRKACDEGHQRDAHEUCUDBFUEUKUMDSTASTUKSTHEDAUGRBST
-      UMSTFBUHUIUJR $.
-  $}
-
-  ${
-    elssinuni.1 $e |- A e. B $.
-    elssinuni.2 $e |- B C_ C $.
-    elssinuni.3 $e |- C = D $.
-    elssinuni.4 $e |- A e. E $.
-    elssinuni.5 $e |- E C_ F $.
-    $( Transport two memberships and introduce an intersection followed by a
-       union.  Proof prepared with AI assistance from OpenAI Codex.
-       (Contributed by Owen Orger, 11-Nov-2026.) $)
-    elssinuni $p |- A e. ( ( D i^i F ) u. G ) $=
-      ( cin wcel cun sseli ax-mp eleqtri elini elun1 ) ADFMZNAUAGONADFACDABNACN
-      HBCAIPQJRAENAFNKEFALPQSAUAGTQ $.
-  $}
-
-  ${
-    eqssinuni.1 $e |- A C_ B $.
-    eqssinuni.2 $e |- B = C $.
-    eqssinuni.3 $e |- D C_ E $.
-    eqssinuni.4 $e |- E = F $.
-    $( Transport two subclass bounds by equality, intersect them, and introduce
-       a union.  Proof prepared with AI assistance from OpenAI Codex.
-       (Contributed by Owen Orger, 11-Nov-2026.) $)
-    eqssinuni $p |- ( A i^i D ) C_ ( G u. ( C i^i F ) ) $=
-      ( cin cun inss1 sseqtri sstri inss2 ssini ssun2 ) ADLZCFLZGUAMTCFTACADNAB
-      CHIOPTDFADQDEFJKOPRUAGSP $.
-  $}
-
-  ${
-    2adddirevd.1 $e |- ( ph -> A e. CC ) $.
-    2adddirevd.2 $e |- ( ph -> B e. CC ) $.
-    2adddirevd.3 $e |- ( ph -> C e. CC ) $.
-    2adddirevd.4 $e |- ( ph -> D e. CC ) $.
-    $( Distribute a product of two sums with reversed output order, in
-       deduction form.  Proof prepared with AI assistance from OpenAI Codex.
-       (Contributed by Owen Orger, 11-Nov-2026.) $)
-    2adddirevd $p |- ( ph -> ( ( A + B ) x. ( C + D ) ) = ( ( ( A + B ) x. D )
-      + ( ( A + B ) x. C ) ) ) $=
-      ( caddc co cmul addcld adddid mulcld addcomd eqtrd ) ABCJKZDEJKLKRDLKZREL
-      KZJKTSJKARDEABCFGMZHINASTARDUAHOAREUAIOPQ $.
-  $}
-
-  ${
-    3ltletrsqge0d.1 $e |- ( ph -> A e. RR ) $.
-    3ltletrsqge0d.2 $e |- ( ph -> B e. RR ) $.
-    3ltletrsqge0d.3 $e |- ( ph -> C e. RR ) $.
-    3ltletrsqge0d.4 $e |- ( ph -> D e. RR ) $.
-    3ltletrsqge0d.5 $e |- ( ph -> A < B ) $.
-    3ltletrsqge0d.6 $e |- ( ph -> B <_ C ) $.
-    3ltletrsqge0d.7 $e |- ( ph -> C <_ D ) $.
-    $( A three-link strict and non-strict inequality chain and a nonnegative
-       squared endpoint difference, in deduction form.  Proof prepared with AI
-       assistance from OpenAI Codex.  (Contributed by Owen Orger,
-       11-Nov-2026.) $)
-    3ltletrsqge0d $p |- ( ph -> ( A < D /\ 0 <_ ( ( D - A ) ^ 2 ) ) ) $=
-      ( clt wbr cc0 cmin co c2 cexp ltletrd cle resubcld sqge0d jca ) ABEMNOEBP
-      QZRSQUANABDEFHIABCDFGHJKTLTAUEAEBIFUBUCUD $.
   $}
 
 $( (End of Owen Orger's mathbox.) $)
