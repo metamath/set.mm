@@ -885342,14 +885342,6 @@ $)
   $}
 
   ${
-    liou3divd.1 $e |- ( ph -> A e. QQ ) $.
-    $( Division of a rational number by three changes the sign of Liouville's
-       function.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    liou3divd $p |- ( ph -> ( lam ` ( A / 3 ) ) = -u ( lam ` A ) ) $=
-      ( c3 cprime wcel 3prm a1i liouprmdivd ) ABDCDEFAGHI $.
-  $}
-
-  ${
     liouprmdivposd.1 $e |- ( ph -> A e. NN ) $.
     liouprmdivposd.2 $e |- ( ph -> P e. Prime ) $.
     liouprmdivposd.3 $e |- ( ph -> P || A ) $.
@@ -886390,10 +886382,11 @@ $)
        ` ( ( M + A ) / 3 ) ` .  See ~ liougb4gap0d for the ternary descent.
        (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4descsignd $p |- ( ph -> ( lam ` ( ( M + A ) / 3 ) ) = 1 ) $=
-      ( caddc co cliou cfv cneg c1 cn wcel nncnd c3 cq nnaddcld eqeltrd nnq syl
-      cdiv liou3divd addsum2d liougb4posd negeqd negneg1e1 eqtrdi eqtrd ) ADBLM
-      ZUAUGMNOUONOZPZQAUOAUORSUOUBSADBADBCLMRIABCGHUCUDZGUCZUOUEUFUHAUQQPZPQAUP
-      UTACUODEFURHUSABCDADURTABGTACHTIUIJKUJUKULUMUN $.
+      ( caddc co c3 cliou cfv cneg c1 wcel nncnd cn cq nnaddcld eqeltrd nnq syl
+      cdiv cprime 3prm liouprmdivd addsum2d liougb4posd negeqd negneg1e1 eqtrdi
+      a1i eqtrd ) ADBLMZNUGMOPUROPZQZRAURNAURUASURUBSADBADBCLMUAIABCGHUCUDZGUCZ
+      URUEUFNUHSAUIUPUJAUTRQZQRAUSVCACURDEFVAHVBABCDADVATABGTACHTIUKJKULUMUNUOU
+      Q $.
   $}
 
   ${
