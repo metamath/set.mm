@@ -882562,16 +882562,6 @@ $)
 
 
   ${
-    rpthirdltd.1 $e |- ( ph -> A e. RR+ ) $.
-    $( A third of a positive real number is strictly smaller than that number.
-       This includes the case ` ( ph -> A e. NN ) ` .  (Contributed by Zhi
-       Wang, 17-Oct-2026.) $)
-    rpthirdltd $p |- ( ph -> ( A / 3 ) < A ) $=
-      ( c3 cdiv co c1 clt wbr 1lt3 crp wcel 1rp a1i ltdiv2d mpbii rpcnd breqtrd
-      3rp div1d ) ABDEFZBGEFZBHAGDHIUAUBHIJAGDBGKLAMNDKLASNCOPABABCQTR $.
-  $}
-
-  ${
     rpdivgt1ltd.1 $e |- ( ph -> A e. RR+ ) $.
     rpdivgt1ltd.2 $e |- ( ph -> B e. RR+ ) $.
     rpdivgt1ltd.3 $e |- ( ph -> 1 < B ) $.
@@ -882581,6 +882571,15 @@ $)
     rpdivgt1ltd $p |- ( ph -> ( A / B ) < A ) $=
       ( cdiv co c1 clt wbr crp wcel 1rp a1i ltdiv2d mpbid rpcnd div1d breqtrd )
       ABCGHZBIGHZBJAICJKUAUBJKFAICBILMANOEDPQABABDRST $.
+  $}
+
+  ${
+    rpthirdltd.1 $e |- ( ph -> A e. RR+ ) $.
+    $( A third of a positive real number is strictly smaller than that number.
+       This includes the case ` ( ph -> A e. NN ) ` .  (Contributed by Zhi
+       Wang, 17-Oct-2026.) $)
+    rpthirdltd $p |- ( ph -> ( A / 3 ) < A ) $=
+      ( c3 crp wcel 3rp a1i c1 clt wbr 1lt3 rpdivgt1ltd ) ABDCDEFAGHIDJKALHM $.
   $}
 
   ${
@@ -884193,26 +884192,6 @@ $)
   $}
 
   ${
-    $d P r $.  $d ph r $.
-    oddprmqrexd.1 $e |- ( ph -> P e. ( Prime \ { 2 } ) ) $.
-    oddprmqrexd.2 $e |- ( ph -> -. 2 || ( ( P - 1 ) / 2 ) ) $.
-    oddprmqrexd.3 $e |- ( ph -> 3 < P ) $.
-    $( An odd prime above three for which ` ( ( P - 1 ) / 2 ) ` is odd has a
-       smaller prime quadratic residue.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    oddprmqrexd $p |- ( ph -> E. r e. Prime ( r < P /\ ( r /L P ) = 1 ) )
-    $=
-      ( c1 co cdiv cdvds wbr clt wa cprime wcel cn ad2antrr nnred p1div4boundsd
-      c2 cv caddc c4 clgs wceq simplr prmz syl oddprmquarterd gausslemma2dlem0a
-      cz zred cle simpr dvdsle syl2anc mpd simprd lelttrd csn prmdivquarterlgsd
-      wi c3 cdif cmin wn jca simpld exprmfctd reximddv3 ) ACUAZBGUBHUCIHZJKZVKB
-      LKZVKBUDHGUEZMCNAVKNOZMZVMMZVNVOVRVKVLBVRVKVRVPVKUKOZAVPVMUFZVKUGUHZULVRV
-      LAVLPOZVPVMABDEUIZQZRVRBABPOVPVMABDUJZQRZVRVMVKVLUMKZVQVMUNZVRVSWBVMWGVBW
-      AWDVKVLUOUPUQVRGVLLKZVLBLKZVRBWFAVCBLKVPVMFQSURUSVRBVKABNTUTVDOVPVMDQATBG
-      VEHTIHJKVFVPVMEQVTWHVAVGAVLCWCAWIWJABABWERFSVHVIVJ $.
-  $}
-
-  ${
     p1div4halfltd.1 $e |- ( ph -> P e. RR ) $.
     p1div4halfltd.2 $e |- ( ph -> 1 < P ) $.
     $( The quarter successor of a real number above one is below half that
@@ -884245,6 +884224,24 @@ $)
       FBABQPWDVTABDUJZRSZUKWFVTVRVSUNKZWEVTUOZWFWGWJVTWOUPWIWLVRVSUQURUSWFBWNWF
       GTBWFUTTVAPWFVBVCWNGTMKWFVDVCATBMKWDVTFRVFVEVGWFBVRABOLVHVIPWDVTDRALBGVJH
       LIHJKVKWDVTERWHWPVLVMAVSCWKAGVSMKVSBMKABABWMSFVNVOVPVQ $.
+  $}
+
+  ${
+    $d P r $.  $d ph r $.
+    oddprmqrexd.1 $e |- ( ph -> P e. ( Prime \ { 2 } ) ) $.
+    oddprmqrexd.2 $e |- ( ph -> -. 2 || ( ( P - 1 ) / 2 ) ) $.
+    oddprmqrexd.3 $e |- ( ph -> 3 < P ) $.
+    $( An odd prime above three for which ` ( ( P - 1 ) / 2 ) ` is odd has a
+       smaller prime quadratic residue.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
+    oddprmqrexd $p |- ( ph -> E. r e. Prime ( r < P /\ ( r /L P ) = 1 ) )
+    $=
+      ( cv c2 cdiv co clt wbr clgs wa cprime wrex wcel adantr cr nnred wceq crp
+      c1 oddprmqrhalfexd gausslemma2dlem0a nnrpd rphalflt syl prmnn adantl lttr
+      wi rehalfcld syl3anc mpan2d anim1d reximdva mpd ) ACGZBHIJZKLZUSBMJUCUAZN
+      ZCOPUSBKLZVBNZCOPABCDEFUDAVCVECOAUSOQZNZVAVDVBVGVAUTBKLZVDAVHVFABUBQVHABA
+      BDUEZUFBUGUHRVGUSSQZUTSQZBSQZVAVHNVDULVFVJAVFUSUSUITUJAVKVFABABVITZUMRAVL
+      VFVMRUSUTBUKUNUOUPUQUR $.
   $}
 
 
@@ -884788,16 +884785,6 @@ $)
   $}
 
   ${
-    $( Liouville's function at four is one.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    liou4 $p |- ( lam ` 4 ) = 1 $=
-      ( c2 cmul co cliou cfv c1 cneg c4 cn wcel 2nn cq nnq lioumul syl2an mp2an
-      wceq liou2 oveq12i eqtri 2t2e4 fveq2i neg1mulneg1e1 3eqtr3i ) AABCZDEZFGZ
-      UGBCZHDEFUFADEZUIBCZUHAIJZUKUFUJQZKKUKALJZUMULUKAMZUNAANOPUIUGUIUGBRRSTUE
-      HDUAUBUCUD $.
-  $}
-
-  ${
     $( Liouville's function at six is one.  (Contributed by Zhi Wang,
        17-Oct-2026.) $)
     liou6 $p |- ( lam ` 6 ) = 1 $=
@@ -884823,25 +884810,6 @@ $)
       ( cq wcel c3 cmul co cliou cfv c1 cneg wceq cn 3nn nnq ax-mp lioumul mpan
       liou3 oveq1i eqtrdi lioure recnd mulm1d eqtrd ) ABCZDAEFGHZIJZAGHZEFZUHJU
       EUFDGHZUHEFZUIDBCZUEUFUKKDLCULMDNODAPQUJUGUHERSTUEUHUEUHAUAUBUCUD $.
-  $}
-
-  ${
-    $( Multiplication by four preserves Liouville's function.  (Contributed by
-       Zhi Wang, 27-Oct-2026.) $)
-    liou4mul $p |- ( A e. QQ -> ( lam ` ( 4 x. A ) ) = ( lam ` A ) ) $=
-      ( cq wcel c4 cmul co cliou cfv c1 wceq 4nn nnq ax-mp lioumul liou4 oveq1i
-      cn mpan eqtrdi lioure recnd mullidd eqtrd ) ABCZDAEFGHZIAGHZEFZUFUDUEDGHZ
-      UFEFZUGDBCZUDUEUIJDQCUJKDLMDANRUHIUFEOPSUDUFUDUFATUAUBUC $.
-  $}
-
-  ${
-    $( The prime Omega function at four is two.  (Contributed by Zhi Wang,
-       27-Oct-2026.) $)
-    bom4 $p |- ( Omega ` 4 ) = 2 $=
-      ( c2 cmul co cbom cfv c4 2t2e4 fveq2i caddc c1 wcel wceq 2nn cc0 csn cdif
-      cn cq nnqnz bommul syl2an mp2an cprime bomprm ax-mp oveq12i 3eqtri eqtr3i
-      2prm 1p1e2 ) AABCZDEZFDEAUKFDGHULADEZUMICZJJICAAQKZUOULUNLZMMUOARNOPKZUQU
-      PUOASZURAATUAUBUMJUMJIAUCKUMJLUIAUDUEZUSUFUJUGUH $.
   $}
 
 
@@ -884924,10 +884892,10 @@ $)
     $( A positive integer with Liouville's function value minus one is at least
        two.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
     liounnnegge2 $p |- ( ( A e. NN /\ ( lam ` A ) = -u 1 ) -> 2 <_ A ) $=
-      ( cn wcel cn0 cc0 wne cliou cfv c1 cneg c2 cle wbr nnnn0 nnne0 id ax-1ne0
-      wceq ax-1cn eqnegi nemtbir nesymir a1i eqnetrd fveq2 liou1 eqtrdi necon3i
-      syl nn0n0n1ge2 syl2an3an ) ABCADCAEFAGHZIJZRZAIFZKALMANAOUNULIFUOUNULUMIU
-      NPUMIFUNIUMIUMRIEQISTUAUBUCUDAIULIAIRULIGHIAIGUEUFUGUHUIAUJUK $.
+      ( cn wcel cn0 cc0 wne cliou cfv c1 cneg wceq c2 cle wbr nnnn0 nnne0 fveq2
+      liou1 eqtrdi 1nn nnneneg mp1i eqnetrd necon2i nn0n0n1ge2 syl2an3an ) ABCA
+      DCAEFAGHZIJZKAIFLAMNAOAPAIUGUHAIKZUGIUHUIUGIGHIAIGQRSIBCIUHFUITIUAUBUCUDA
+      UEUF $.
   $}
 
   ${
@@ -884975,26 +884943,9 @@ $)
        is not one.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
     liounzneg1 $p |- ( A e. ( QQ \ { 0 } ) -> ( ( lam ` A ) = -u 1 <->
       ( lam ` A ) =/= 1 ) ) $=
-      ( cq cc0 csn cdif wcel cliou cfv c1 cneg cpr wne wceq wb liounzcl ax-1ne0
-      ax-1cn eqnegi pm5.1 ex nemtbir nesymir wo elpri neeq1 eqcoms sylbid neeq2
-      wi wa wn nesym sylan2b necon2abid sylbird jaoi syl mpisyl ) ABCDEFAGHZIJZ
-      IKFZUTILZUSUTMZUSILZNZAOIUTIUTMICPIQRUAUBVAVCUSIMZUCVBVEUIZUSUTIUDVCVGVFV
-      CVBVDVEVBVDNUTUSUTUSIUEUFVCVDVEVCVDSTUGVFVBUTUSLZVEUSIUTUHVFVHVEVFVHUJVCU
-      SIVHVFVCUKZVFVINUTUSULVFVISUMUNTUOUPUQUR $.
-  $}
-
-  ${
-    $( On rationals, the value of Liouville's function lies between minus one
-       and one, including its value at zero.  This includes the
-       positive-integer case ` A e. NN ` .  The value at zero is given by
-       ~ liou0 .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    lioubounds $p |- ( A e. QQ -> ( -u 1 <_ ( lam ` A ) /\ ( lam ` A ) <_ 1 ) )
-      $=
-      ( cq wcel c1 cneg cliou cfv cle wbr wa cc0 wceq neg1rr 0re neg1lt0 ltleii
-      fveq2 liou0 eqtrdi adantl breqtrrid 0le1 eqbrtrdi jca wne csn eldifsn cpr
-      cdif liounzcl signbounds syl sylbir pm2.61dane ) ABCZDEZAFGZHIZUQDHIZJZAK
-      UOAKLZJZURUSVBUPKUQHUPKMNOPVAUQKLUOVAUQKFGKAKFQRSTZUAVBUQKDHVCUBUCUDUOAKU
-      EJABKUFUICZUTABKUGVDUQUPDUHCUTAUJUQUKULUMUN $.
+      ( cq cc0 csn cdif wcel cliou cfv c1 cneg wceq wne cn nnneneg ax-mp necomi
+      1nn neeq1 mpbiri cpr liounzcl elprn2 sylan ex impbid2 ) ABCDEFZAGHZIJZKZU
+      GILZUIUJUHILIUHIMFIUHLQINOPUGUHIRSUFUJUIUFUGUHITFUJUIAUAUGUHIUBUCUDUE $.
   $}
 
   ${
@@ -885004,10 +884955,9 @@ $)
     $( A positive integer with negative value of Liouville's function has a
        prime divisor.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liounegprmexd $p |- ( ph -> E. p e. Prime p || A ) $=
-      ( c1 clt wbr wne cneg cn wcel 1nn nnneneg mp1i wceq wa cliou cfv simpr wb
-      fveq2d liou1 eqtrdi adantr eqtr3d mteqand nngt1ne1 syl mpbird exprmfctd )
-      ABCDAFBGHZBFIZABFFFJZFKLFUNIAMFNOABFPZQZBRSZFUNUPUQFRSFUPBFRAUOTUBUCUDAUQ
-      UNPUOEUEUFUGABKLULUMUADBUHUIUJUK $.
+      ( c1 c2 1red cr wcel 2re a1i nnred clt wbr 1lt2 cn cliou cfv cneg syl2anc
+      wceq cle liounnnegge2 ltletrd exprmfctd ) ABCDAFGBAHGIJAKLABDMFGNOAPLABQJ
+      BRSFTUBGBUCODEBUDUAUEUF $.
   $}
 
   ${
@@ -885050,16 +885000,6 @@ $)
       zq syl bomabs cn wne wa eldifsn nnabscl sylbi bomnncl eqeltrrd ) ABCDZEFZ
       AGHZIHZAIHZJUHAKUGEFUJUKLUHAKCUHABFZAKFABUGMAPQABCNOARQUHUISFZUJJFUHULACT
       UAUMABCUBAUCUDUIUEQUF $.
-  $}
-
-  ${
-    $( Liouville's function at minus one is one.  (Contributed by Zhi Wang,
-       27-Oct-2026.) $)
-    liouneg1 $p |- ( lam ` -u 1 ) = 1 $=
-      ( c1 cneg cliou cfv cbom cexp co cc0 cq csn cdif wcel wne 1q qnegcl ax-mp
-      wceq neg1ne0 eldifsn mpbir2an liouval bomneg1 oveq2i neg1cn exp0 3eqtri
-      cc ) ABZCDZUHUHEDZFGZUHHFGZAUHIHJKLZUIUKQUMUHILZUHHMAILUNNAOPRUHIHSTUHUAP
-      UJHUHFUBUCUHUGLULAQUDUHUEPUF $.
   $}
 
   ${
@@ -885118,6 +885058,14 @@ $)
   $}
 
   ${
+    $( The prime Omega function at four is two.  (Contributed by Zhi Wang,
+       27-Oct-2026.) $)
+    bom4 $p |- ( Omega ` 4 ) = 2 $=
+      ( c2 cexp co cbom cfv c4 sq2 fveq2i cprime wcel cz wceq 2prm 2z bomprmexp
+      mp2an eqtr3i ) AABCZDEZFDEARFDGHAIJAKJSALMNAAOPQ $.
+  $}
+
+  ${
     $( The signed prime Omega function changes sign under reciprocation.
        (Contributed by Zhi Wang, 27-Oct-2026.) $)
     bomrec $p |- ( A e. ( QQ \ { 0 } ) ->
@@ -885139,12 +885087,19 @@ $)
     $( Liouville's function is unchanged by negating a rational input.
        (Contributed by Zhi Wang, 27-Oct-2026.) $)
     liouneg $p |- ( A e. QQ -> ( lam ` -u A ) = ( lam ` A ) ) $=
-      ( wcel cneg cliou cfv wceq cc0 negeq neg0 eqtrdi fveq2d fveq2 eqtr4d cbom
-      cq cexp co sylbir adantr liouval adantl wne wa c1 csn cdif eldifsn bomneg
-      oveq2d qnegcl cc qcn simpr negne0d eldifsnd syl 3eqtr4d pm2.61dane ) AOBZ
-      ACZDEZADEZFZAGAGFZVCUSVDVAGDEVBVDUTGDVDUTGCGAGHIJKAGDLMUAUSAGUBZUCZUDCZUT
-      NEZPQZVGANEZPQZVAVBVFVHVJVGPVFAOGUEUFZBZVHVJFAOGUGZAUHRUIVFUTVLBVAVIFVFUT
-      OGUSUTOBVEAUJSVFAUSAUKBVEAULSUSVEUMUNUOUTTUPVFVMVBVKFVNATRUQUR $.
+      ( cq wcel cneg cliou cfv cc0 wceq c1 cbom cexp co cif qnegcl liouval0 syl
+      qcn negeq0d ifbid wn wa csn cdif simpl simpr neqned bomneg oveq2d ifeq2da
+      eldifsnd 3eqtr2d eqtr4d ) ABCZADZEFZAGHZGIDZAJFZKLZMZAEFUMUOUNGHZGUQUNJFZ
+      KLZMZUPGVCMUTUMUNBCUOVDHANUNOPUMUPVAGVCUMAAQRSUMUPVCUSGUMUPTZUAZVBURUQKVF
+      ABGUBUCCVBURHVFABGUMVEUDVFAGUMVEUEUFUJAUGPUHUIUKAOUL $.
+  $}
+
+  ${
+    $( Liouville's function at minus one is one.  (Contributed by Zhi Wang,
+       27-Oct-2026.) $)
+    liouneg1 $p |- ( lam ` -u 1 ) = 1 $=
+      ( c1 cneg cliou cfv cq wcel wceq 1q liouneg ax-mp liou1 eqtri ) ABCDZACDZ
+      AAEFMNGHAIJKL $.
   $}
 
   ${
@@ -885154,20 +885109,6 @@ $)
       ( wcel cabs cfv wceq cliou cneg fveq2 adantl liouneg sylan9eqr qre absord
       cq mpjaodan ) ANBZACDZAEZQFDZAFDZEZQAGZEZRUAPQAFHIUCPSUBFDTQUBFHAJKPAALMO
       $.
-  $}
-
-  ${
-    $( Liouville's function is unchanged by reciprocation of a nonzero
-       rational.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liourec $p |- ( A e. ( QQ \ { 0 } ) ->
-      ( lam ` ( 1 / A ) ) = ( lam ` A ) ) $=
-      ( cq cc0 csn cdif wcel c1 co cliou cfv cc wne wa eldifsn lioure recnd syl
-      cdiv cmul wceq qreccl sylbi eldifi cneg cpr liounzcl signmulself eldifsni
-      signne0 recid2d fveq2d liou1 eqtrdi lioumul syl2anc 3eqtr2rd mulcan2ad
-      qcn ) ABCDZEFZGARHZIJZAIJZVCUTVABFZVBKFUTABFZACLMVDABCNAUAUBZVDVBVAOPQUTV
-      EVCKFABUSUCZVEVCAOPQZVHUTVCGUDGUEFZVCCLAUFZVCUIQUTVCVCSHZGVAASHZIJZVBVCSH
-      ZUTVIVKGTVJVCUGQUTVMGIJGUTVLGIUTAUTVEAKFVGAURQABCUHUJUKULUMUTVDVEVMVNTVFV
-      GVAAUNUOUPUQ $.
   $}
 
   ${
@@ -885223,25 +885164,66 @@ $)
   $}
 
   ${
-    $( Liouville's function of a rational quotient with nonzero denominator is
-       the product of its values at the numerator and denominator.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    lioudiv $p |- ( ( A e. QQ /\ B e. ( QQ \ { 0 } ) ) ->
-      ( lam ` ( A / B ) ) = ( ( lam ` A ) x. ( lam ` B ) ) ) $=
-      ( cq wcel cc0 csn cdif wa cdiv co cliou cfv c1 cmul cc qcn adantr wne syl
-      wceq eldifsn bilani simpld simprd divrecd fveq2d qreccl lioumul liourec
-      syldan adantl oveq2d 3eqtrd ) ACDZBCEFGDZHZABIJZKLAMBIJZNJZKLZAKLZURKLZNJ
-      ZVABKLZNJUPUQUSKUPABUNAODUOAPQUPBCDZBODUPVEBERZUOVEVFHZUNBCEUAUBZUCBPSUPV
-      EVFVHUDUEUFUNUOURCDZUTVCTUPVGVIVHBUGSAURUHUJUPVBVDVANUOVBVDTUNBUIUKULUM
-      $.
-  $}
-
-  ${
     $( Liouville's function is one at the square of every nonzero rational.
        (Contributed by Zhi Wang, 27-Oct-2026.) $)
     liousq $p |- ( A e. ( QQ \ { 0 } ) -> ( lam ` ( A ^ 2 ) ) = 1 ) $=
       ( cq cc0 csn cdif wcel c2 cexp co cliou cfv c1 cz wceq 2z mpan2 liouvalsq
       liouexp eqtrd ) ABCDEFZAGHIJKZAJKGHIZLTGMFUAUBNOAGRPAQS $.
+  $}
+
+  ${
+    $( Multiplication by a nonzero rational square preserves Liouville's
+       function.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    lioumulsq $p |- ( ( A e. QQ /\ B e. ( QQ \ { 0 } ) ) ->
+      ( lam ` ( A x. ( B ^ 2 ) ) ) = ( lam ` A ) ) $=
+      ( cq wcel cc0 csn cdif wa c2 cexp co cmul cliou cfv c1 wceq eldifi adantl
+      cn0 2nn0 qexpcl sylancl lioumul syldan liousq oveq2d lioure recnd mulridd
+      cc adantr 3eqtrd ) ACDZBCEFZGDZHZABIJKZLKMNZAMNZUQMNZLKZUSOLKUSUMUOUQCDZU
+      RVAPUPBCDZISDVBUOVCUMBCUNQRTBIUAUBAUQUCUDUPUTOUSLUOUTOPUMBUERUFUPUSUMUSUJ
+      DUOUMUSAUGUHUKUIUL $.
+  $}
+
+  ${
+    $( Liouville's function of a rational quotient with nonzero denominator is
+       the product of its values at the numerator and denominator.
+       (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    lioudiv $p |- ( ( A e. QQ /\ B e. ( QQ \ { 0 } ) ) ->
+      ( lam ` ( A / B ) ) = ( ( lam ` A ) x. ( lam ` B ) ) ) $=
+      ( cq wcel cc0 csn cdif wa cdiv co c2 cexp cmul cliou cfv cc adantr adantl
+      qcn wceq eldifi syl sqcld wne eldifsni div32d sqdivid oveq2d eqtrd fveq2d
+      syl2anc simpl qdivcl syl3anc lioumulsq sylancom lioumul sylan2 3eqtr3d )
+      ACDZBCEFZGDZHZABIJZBKLJZMJZNOZABMJZNOZVDNOZANOBNOMJZVCVFVHNVCVFAVEBIJZMJV
+      HVCABVEUTAPDVBASQVCBCDZBPDZVBVMUTBCVAUAZRZBSUBZVCBVQUCVBBEUDZUTBCEUERZUFV
+      CVLBAMVCVNVRVLBTVQVSBUGUKUHUIUJUTVBVDCDZVGVJTVCUTVMVRVTUTVBULVPVSABUMUNVD
+      BUOUPVBUTVMVIVKTVOABUQURUS $.
+  $}
+
+  ${
+    $( Liouville's function at four is one.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
+    liou4 $p |- ( lam ` 4 ) = 1 $=
+      ( c2 cexp co cliou cfv c4 c1 sq2 fveq2i cn wcel cq cc0 csn cdif 2nn nnqnz
+      wceq liousq mp2b eqtr3i ) AABCZDEZFDEGUBFDHIAJKALMNOKUCGRPAQASTUA $.
+  $}
+
+  ${
+    $( Multiplication by four preserves Liouville's function.  (Contributed by
+       Zhi Wang, 27-Oct-2026.) $)
+    liou4mul $p |- ( A e. QQ -> ( lam ` ( 4 x. A ) ) = ( lam ` A ) ) $=
+      ( cq wcel c4 cmul co cliou cfv c1 wceq 4nn nnq ax-mp lioumul liou4 oveq1i
+      cn mpan eqtrdi lioure recnd mullidd eqtrd ) ABCZDAEFGHZIAGHZEFZUFUDUEDGHZ
+      UFEFZUGDBCZUDUEUIJDQCUJKDLMDANRUHIUFEOPSUDUFUDUFATUAUBUC $.
+  $}
+
+  ${
+    $( Liouville's function is unchanged by reciprocation of a nonzero
+       rational.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    liourec $p |- ( A e. ( QQ \ { 0 } ) ->
+      ( lam ` ( 1 / A ) ) = ( lam ` A ) ) $=
+      ( cq cc0 csn cdif wcel c1 cdiv co cliou cfv cmul wceq lioudiv mpan oveq1i
+      1q liou1 eqtrdi cr eldifi lioure syl recnd mullidd eqtrd ) ABCDZEFZGAHIJK
+      ZGAJKZLIZUJUHUIGJKZUJLIZUKGBFUHUIUMMQGANOULGUJLRPSUHUJUHUJUHABFUJTFABUGUA
+      AUBUCUDUEUF $.
   $}
 
   ${
@@ -885281,6 +885263,17 @@ $)
   $}
 
   ${
+    $( On rationals, the value of Liouville's function lies between minus one
+       and one, including its value at zero.  This includes the
+       positive-integer case ` A e. NN ` .  The value at zero is given by
+       ~ liou0 .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    lioubounds $p |- ( A e. QQ -> ( -u 1 <_ ( lam ` A ) /\ ( lam ` A ) <_ 1 ) )
+      $=
+      ( cq wcel cliou cfv cabs c1 cle wbr cneg wa lioule1 cr lioure 1re sylancl
+      wb absle mpbid ) ABCZADEZFEGHIZGJUAHIUAGHIKZALTUAMCGMCUBUCQANOUAGRPS $.
+  $}
+
+  ${
     $( For nonzero rational inputs, Liouville's function of their quotient is
        one exactly when its values at the two inputs are equal.  (Contributed
        by Zhi Wang, 27-Oct-2026.) $)
@@ -885289,18 +885282,6 @@ $)
       ( cq cc0 csn cdif wcel wa cdiv co cliou c1 wceq cmul eldifi lioudiv sylan
       cfv eqeq1d liounzsame bitrd ) ACDEZFZGZBUCGZHZABIJKRZLMAKRZBKRZNJZLMUHUIM
       UFUGUJLUDACGUEUGUJMACUBOABPQSABTUA $.
-  $}
-
-  ${
-    $( Multiplication by a nonzero rational square preserves Liouville's
-       function.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    lioumulsq $p |- ( ( A e. QQ /\ B e. ( QQ \ { 0 } ) ) ->
-      ( lam ` ( A x. ( B ^ 2 ) ) ) = ( lam ` A ) ) $=
-      ( cq wcel cc0 csn cdif wa c2 cexp co cmul cliou cfv c1 wceq eldifi adantl
-      cn0 2nn0 qexpcl sylancl lioumul syldan liousq oveq2d lioure recnd mulridd
-      cc adantr 3eqtrd ) ACDZBCEFZGDZHZABIJKZLKMNZAMNZUQMNZLKZUSOLKUSUMUOUQCDZU
-      RVAPUPBCDZISDVBUOVCUMBCUNQRTBIUAUBAUQUCUDUPUTOUSLUOUTOPUMBUERUFUPUSUMUSUJ
-      DUOUMUSAUGUHUKUIUL $.
   $}
 
   ${
@@ -885348,15 +885329,26 @@ $)
   $}
 
   ${
+    liouprmdivd.1 $e |- ( ph -> A e. NN ) $.
+    liouprmdivd.2 $e |- ( ph -> P e. Prime ) $.
+    liouprmdivd.3 $e |- ( ph -> ( A / P ) e. NN ) $.
+    $( Exact division by a prime changes the sign of Liouville's function at a
+       positive integer.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    liouprmdivd $p |- ( ph -> ( lam ` ( A / P ) ) = -u ( lam ` A ) ) $=
+      ( cdiv co cliou cfv cmul c1 cneg cq wcel cc0 wceq cn syl cc csn nnq prmnn
+      cdif cprime nnqnz 3syl lioudiv syl2anc liouprm oveq2d liounncn neg1cn a1i
+      mulcomd mulm1d eqtrd 3eqtrd ) ABCGHIJZBIJZCIJZKHZUTLMZKHZUTMZABNOZCNPUAUD
+      OZUSVBQABROZVFDBUBSACUEOZCROVGECUCCUFUGBCUHUIAVAVCUTKAVIVAVCQECUJSUKAVDVC
+      UTKHVEAUTVCAVHUTTODBULSZVCTOAUMUNUOAUTVJUPUQUR $.
+  $}
+
+  ${
     liounn3divd.1 $e |- ( ph -> A e. NN ) $.
     liounn3divd.2 $e |- ( ph -> ( A / 3 ) e. NN ) $.
     $( The sign of Liouville's function changes upon exact division of a
        positive integer by three.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liounn3divd $p |- ( ph -> ( lam ` ( A / 3 ) ) = -u ( lam ` A ) ) $=
-      ( cliou cfv cneg c3 cdiv co cmul nncnd wcel 3cn a1i cc0 wne 3ne0 divcan2d
-      cc fveq2d cn cq wceq nnq liou3mul 3syl eqtr3d negeqd liounncn syl negnegd
-      eqtr2d ) ABEFZGBHIJZEFZGZGUPAUNUQAHUOKJZEFZUNUQAURBEABHABCLHTMANOHPQAROSU
-      AAUOUBMZUOUCMUSUQUDDUOUEUOUFUGUHUIAUPAUTUPTMDUOUJUKULUM $.
+      ( c3 cprime wcel 3prm a1i liouprmdivd ) ABECEFGAHIDJ $.
   $}
 
   ${
@@ -885369,29 +885361,10 @@ $)
        one.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liouprmdivposd $p |- ( ph -> ( ( A / P ) e. NN /\ ( lam ` ( A / P ) ) =
     1 ) ) $=
-      ( co cn wcel cliou cfv c1 wceq syl syl2anc cc neg1cn a1i cmul cdiv wbr wb
-      cdvds cprime prmnn nndivdvds mpbid cneg liounncn 1cnd cc0 neg1ne0 mulridi
-      wne nncnd nnne0d divcan2d fveq2d cq lioumul syl2an 3eqtr3d liouprm oveq1d
-      nnq 3eqtr2rd mulcanad jca ) ABCUAHZIJZVJKLZMNACBUDUBZVKFABIJCIJZVMVKUCDAC
-      UEJZVNECUFOZBCUGPUHZAVLMMUIZAVKVLQJVQVJUJOAUKVRQJARSVRULUOAUMSAVRMTHZVRCK
-      LZVLTHZVRVLTHVSVRNAVRRUNSACVJTHZKLZBKLWAVRAWBBKABCABDUPACVPUPACVPUQURUSAV
-      NVKWCWANZVPVQVNCUTJVJUTJWDVKCVFVJVFCVJVAVBPGVCAVTVRVLTAVOVTVRNECVDOVEVGVH
-      VI $.
-  $}
-
-  ${
-    liouprmdivd.1 $e |- ( ph -> A e. NN ) $.
-    liouprmdivd.2 $e |- ( ph -> P e. Prime ) $.
-    liouprmdivd.3 $e |- ( ph -> ( A / P ) e. NN ) $.
-    $( Exact division by a prime changes the sign of Liouville's function at a
-       positive integer.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    liouprmdivd $p |- ( ph -> ( lam ` ( A / P ) ) = -u ( lam ` A ) ) $=
-      ( cliou cfv cneg cdiv co cmul nncnd cprime wcel cn syl wceq cq nnq nnne0d
-      prmnn divcan2d fveq2d c1 lioumul syl2an syl2anc oveq1d cc liounncn mulm1d
-      liouprm 3eqtrd eqtr3d negeqd negnegd eqtr2d ) ABGHZIBCJKZGHZIZIVAAUSVBACU
-      TLKZGHZUSVBAVCBGABCABDMACACNOZCPOZECUBQZMACVGUAUCUDAVDCGHZVALKZUEIZVALKVB
-      AVFUTPOZVDVIRZVGFVFCSOUTSOVLVKCTUTTCUTUFUGUHAVHVJVALAVEVHVJRECUMQUIAVAAVK
-      VAUJOFUTUKQZULUNUOUPAVAVMUQUR $.
+      ( cdiv co cn wcel cliou cfv c1 wceq cdvds wbr wb cprime cneg prmnn negeqd
+      syl nndivdvds syl2anc mpbid liouprmdivd eqtrd negneg1e1 eqtrdi jca ) ABCH
+      IZJKZULLMZNOACBPQZUMFABJKCJKZUOUMRDACSKUPECUAUCBCUDUEUFZAUNNTZTZNAUNBLMZT
+      USABCDEUQUGAUTURGUBUHUIUJUK $.
   $}
 
   ${
@@ -886013,20 +885986,6 @@ $(
 $)
 
   ${
-    $d a b $.
-    $( The decomposition of four as two plus two gives a base instance of
-       ~ liougb4 .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    liougb4base $p |- E. a e. NN E. b e. NN ( 4 = ( a + b ) /\ ( lam ` a )
-      = -u 1 /\ ( lam ` b ) = -u 1 ) $=
-      ( c2 cn wcel c4 cv caddc wceq cliou cfv w3a wrex 2nn liou2 eqeq2d fveqeq2
-      co rspcev mp2an c1 cneg 2p2e4 eqcomi 3pm3.2i oveq2 3anbi13d oveq1 rexbidv
-      3anbi12d ) CDEZFCBGZHRZIZCJKUAUBZIZULJKUOIZLZBDMZFAGZULHRZIZUTJKUOIZUQLZB
-      DMZADMNUKFCCHRZIZUPUPLZUSNVGUPUPVFFUCUDOOUEURVHBCDULCIZUNVGUQUPUPVIUMVFFU
-      LCCHUFPULCUOJQUGSTVEUSACDUTCIZVDURBDVJVBUNVCUPUQVJVAUMFUTCULHUHPUTCUOJQUJ
-      UIST $.
-  $}
-
-  ${
     $d A a b $.  $d B b $.  $d N a b $.  $d S a b $.
     lioupairexd.1 $e |- ( ph -> A e. NN ) $.
     lioupairexd.2 $e |- ( ph -> B e. NN ) $.
@@ -886042,6 +886001,17 @@ $)
       eqeq2d 3jca 2rspcedvdw ) AEFMZGMZNOZPZUIQRDPZUJQRDPZSEBUJNOZPZBQRDPZUNSEB
       CNOZPZUQCQRDPZSFGBCTTUIBPZULUPUMUQUNVAUKUOEUIBUJNUAUFUIBDQUBUCUJCPZUPUSUN
       UTUQVBUOUREUJCBNUDUFUJCDQUBUEHIAUSUQUTJKLUGUH $.
+  $}
+
+  ${
+    $d a b $.
+    $( The decomposition of four as two plus two gives a base instance of
+       ~ liougb4 .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    liougb4base $p |- E. a e. NN E. b e. NN ( 4 = ( a + b ) /\ ( lam ` a )
+      = -u 1 /\ ( lam ` b ) = -u 1 ) $=
+      ( c4 cv caddc co wceq cliou cfv c1 cneg w3a cn wrex wtru c2 2nn a1i 2p2e4
+      wcel eqcomi liou2 lioupairexd mptru ) CADZBDZEFGUEHIJKZGUFHIUGGLBMNAMNOPP
+      UGCABPMTOQRZUHCPPEFZGOUICSUARPHIUGGOUBRZUJUCUD $.
   $}
 
   ${
@@ -886204,29 +886174,6 @@ $)
   $}
 
   ${
-    $d A a b u v $.  $d K a b u v $.  $d ph u v $.
-    liougb4mulposd.1 $e |- ( ph -> A e. NN ) $.
-    liougb4mulposd.2 $e |- ( ph -> K e. NN ) $.
-    liougb4mulposd.3 $e |- ( ph -> ( lam ` K ) = 1 ) $.
-    liougb4mulposd.4 $e |- ( ph -> E. u e. NN E. v e. NN ( ( 4 x. A ) = (
-    u + v ) /\ ( lam ` u ) = -u 1 /\ ( lam ` v ) = -u 1 ) ) $.
-    $( Scale a negative-negative pair for Liouville's function by a positive
-       integer at which the function is one.  Transport both witnesses and use
-       complete multiplicativity.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    liougb4mulposd $p |- ( ph -> E. a e. NN E. b e. NN ( ( 4 x. ( A x. K
-    ) ) = ( a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
-      ( c4 cmul co wceq cliou cfv cn wrex wcel cv caddc c1 w3a wa simplr simprl
-      cneg ad2antrr simprr simp1d simp2d simp3d oveq2d neg1cn mulridi eqtrdi wb
-      lioupairmuld cc 4cn a1i nncnd mulassd lioupaireq syl rexlimdvaa rexlimdva
-      mpbid mpd ) ALDMNZCUAZBUAZUBNOZVLPQUCUHZOZVMPQVOOZUDZBRSZCRSLDEMNMNZFUAZG
-      UAZUBNZOWAPQVOOZWBPQVOOZUDGRSFRSZKAVSWFCRAVLRTZUEZVRWFBRWHVMRTZVRUEZUEZVK
-      EMNZWCOWDWEUDGRSFRSZWFWKVLVMVOVOEVKFGAWGWJUFWHWIVRUGAERTWGWJIUIZWKVNVPVQW
-      HWIVRUJZUKWKVNVPVQWOULWKVNVPVQWOUMWKVOEPQZMNVOUCMNVOWKWPUCVOMAWPUCOWGWJJU
-      IUNVOUOUPUQUSWKWLVTOWMWFURWKLDELUTTWKVAVBWKDADRTWGWJHUIVCWKEWNVCVDVOVTWLF
-      GVEVFVIVGVHVJ $.
-  $}
-
-  ${
     $d a b $.
     $( The decomposition of eighteen as eleven plus seven, with Liouville's
        function equal to minus one at both summands.  (Contributed by Zhi Wang,
@@ -886256,6 +886203,26 @@ $)
       LZUFMNZUNOPDNZUOOPDNZUGZBQRGFUAMHLZILZUFMNUTOPENVAOPENUGIQRHQRZCQAUNQSZTZ
       USVBBQVDUOQSZUSTZTZUNUODEFGHIAVCVFUBVDVEUSUCAFQSVCVFJUDVGUPUQURVDVEUSUEZU
       HVGUPUQURVHUIVGUPUQURVHUJADFOPUAMENVCVFKUDUKULUM $.
+  $}
+
+  ${
+    $d A a b u v $.  $d K a b u v $.  $d ph u v $.
+    liougb4mulposd.1 $e |- ( ph -> A e. NN ) $.
+    liougb4mulposd.2 $e |- ( ph -> K e. NN ) $.
+    liougb4mulposd.3 $e |- ( ph -> ( lam ` K ) = 1 ) $.
+    liougb4mulposd.4 $e |- ( ph -> E. u e. NN E. v e. NN ( ( 4 x. A ) = (
+    u + v ) /\ ( lam ` u ) = -u 1 /\ ( lam ` v ) = -u 1 ) ) $.
+    $( Scale a negative-negative pair for Liouville's function by a positive
+       integer at which the function is one.  Transport both witnesses and use
+       complete multiplicativity.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    liougb4mulposd $p |- ( ph -> E. a e. NN E. b e. NN ( ( 4 x. ( A x. K
+    ) ) = ( a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
+      ( c4 cmul co cv wceq cliou cfv cn wrex caddc c1 w3a oveq2d neg1cn mulridi
+      cneg eqtrdi lioupairmulreximd mpd wb cc wcel 4cn nncnd mulassd lioupaireq
+      a1i syl mpbid ) ALDMNZEMNZFOZGOZUANZPVCQRUBUGZPZVDQRVFPZUCGSTFSTZLDEMNMNZ
+      VEPVGVHUCGSTFSTZAVACOZBOZUANPVLQRVFPVMQRVFPUCBSTCSTVIKABCVFVFEVAFGIAVFEQR
+      ZMNVFUBMNVFAVNUBVFMJUDVFUEUFUHUIUJAVBVJPVIVKUKALDELULUMAUNURADHUOAEIUOUPV
+      FVJVBFGUQUSUT $.
   $}
 
   ${
@@ -886802,10 +886769,9 @@ $)
        at integers not divisible by its positive integer modulus.  (Contributed
        by Zhi Wang, 17-Oct-2026.) $)
     lioumodcnne0d $p |- ( ph -> ( ( F ` A ) e. CC /\ ( F ` A ) =/= 0 ) ) $=
-      ( cfv cc wcel cc0 wne cmo co cliou lioumodval cn c1 cfzo zmodfzo1d sselid
-      fzossnn liounncn syl eqeltrd cneg cpr liounncl signne0 3syl eqnetrd jca )
-      ACEJZKLUOMNAUOCDOPZQJZKABCDEFHRZAUPSLZUQKLATDUAPSUPDUDACDHGIUBUCZUPUEUFUG
-      AUOUQMURAUSUQTUHTUILUQMNUTUPUJUQUKULUMUN $.
+      ( cfv cc wcel cc0 wne cmo co cliou lioumodval c1 syl cr lioumodcld signre
+      cneg cpr recnd eqeltrd signne0 eqnetrd jca ) ACEJZKLUKMNAUKCDOPQJZKABCDEF
+      HRZAULAULSUDSUELZULUALACDGHIUBZULUCTUFUGAUKULMUMAUNULMNUOULUHTUIUJ $.
   $}
 
   ${
@@ -887012,15 +886978,14 @@ $)
        residue function.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4rigidnextd $p |- ( ph -> ( F ` ( N x. Z ) ) = ( ( F ` N ) x. (
     F ` Z ) ) ) $=
-      ( co c1 cmul cfv wceq wa lioumodonemuld adantr simpr eqcomd fvoveqeq1 syl
-      wb mpbid wne cprime wcel cfzo cz cdvds wbr wn clt fzossnn sselid nngt1ne1
-      cn biimpar c4 cv caddc cliou cneg w3a wrex c3 liougb4rigidgt1d pm2.61dane
-      wi wral ) AGHUASFUBGFUBHFUBZUASUCZGTAGTUCZUDZTHUASFUBTFUBVSUASUCZVTAWCWAA
-      BDFHKLNOUEUFWBTGUCWCVTUKWBGTAWAUGUHTGHVSFUAUAUIUJULAGTUMZUDBCDEFGHIJKADUN
-      UOWDLUFAGTDUPSZUOWDMUFAHUQUOWDNUFADHURUSUTWDOUFATGVAUSZWDAGVEUOWFWDUKAWEV
-      EGDVBMVCGVDUJVFAVGDUASIVHZJVHZVISUCWGVJUBTVKZUCWHVJUBWIUCVLJVEVMIVEVMUTWD
-      PUFAVNDURUSUTWDQUFADCVHZURUSUTEVHZWJUASFUBWKFUBWJFUBUASUCVQCUQVRETGUPSVRW
-      DRUFVOVP $.
+      ( co cfv cmul wceq c1 fvoveqeq1 wne wa cprime wcel adantr cz cdvds wbr wn
+      cfzo clt cn wb fzossnn sselid nngt1ne1 syl biimpar c4 cv caddc cliou cneg
+      w3a wrex c3 wi wral liougb4rigidgt1d lioumodonemuld pm2.61ne ) AGHUASFTGF
+      THFTZUASUBUCHUASFTUCFTVPUASUBGUCGUCHVPFUAUAUDAGUCUEZUFBCDEFGHIJKADUGUHVQL
+      UIAGUCDUNSZUHVQMUIAHUJUHVQNUIADHUKULUMVQOUIAUCGUOULZVQAGUPUHVSVQUQAVRUPGD
+      URMUSGUTVAVBAVCDUASIVDZJVDZVESUBVTVFTUCVGZUBWAVFTWBUBVHJUPVIIUPVIUMVQPUIA
+      VJDUKULUMVQQUIADCVDZUKULUMEVDZWCUASFTWDFTWCFTUASUBVKCUJVLEUCGUNSVLVQRUIVM
+      ABDFHKLNOVNVO $.
   $}
 
   ${
@@ -887683,16 +887648,16 @@ $)
     liouoddifnegd $p |- ( ph -> if ( ( P - A ) < ( P / 2 ) , ( lam ` ( P - A
       ) ) , -u ( lam ` ( P - ( P - A ) ) ) ) = -u if ( A < ( P / 2 ) , ( lam
       ` A ) , -u ( lam ` ( P - A ) ) ) ) $=
-      ( co clt wbr cmin cliou cfv cneg cif wceq negeqd adantr cr wcel c2 nncand
-      cdiv wa nncnd fveq2d nnred rehalfcld resubcld cc subhalfhalf syl ltsub2dd
-      simpr eqbrtrrd ltnsymd iffalsed iftrued 3eqtr4d cn nnsubd negnegd breqtrd
-      liounncn 3eqtr4rd wne wo lttri2d mpbid mpjaodan ) ABCUAUCHZIJZCBKHZVKIJZV
-      MLMZCVMKHZLMZNZOZVLBLMZVONZOZNZPVKBIJZAVLUDZVRVTNZVSWCAVRWFPVLAVQVTAVPBLA
-      CBACDUEZABEUEUBUFQRWEVNVOVRWEVKVMAVKSTZVLACACDUGZUHZRZAVMSTVLACBWIABEUGZU
-      IRWECVKKHZVKVMIAWMVKPZVLACUJTWNWGCUKULZRWEBVKCABSTZVLWLRWKACSTZVLWIRAVLUN
-      ZUMUOUPUQWEWBVTWEVLVTWAWRURQUSAWDUDZWANZVOWCVSAWTVOPWDAVOAVMUTTVOUJTABCED
-      FVAVMVDULVBRWSWBWAWSVLVTWAWSVKBAWHWDWJRZAWPWDWLRZAWDUNZUPUQQWSVNVOVRWSVMW
-      MVKIWSVKBCXAXBAWQWDWIRXCUMAWNWDWORVCURVEABVKVFVLWDVGGABVKWLWJVHVIVJ $.
+      ( co clt wbr cmin cliou cfv cneg wceq negeqd adantr cr wcel nnred c2 cdiv
+      cif wa nncnd nncand fveq2d rehalfcld nnsubd cc subhalfhalf simpr ltsub2dd
+      syl eqbrtrrd ltnsymd iffalsed iftrued 3eqtr4d cn liounncn negnegd breqtrd
+      3eqtr4rd wne wo lttri2d mpbid mpjaodan ) ABCUAUBHZIJZCBKHZVJIJZVLLMZCVLKH
+      ZLMZNZUCZVKBLMZVNNZUCZNZOVJBIJZAVKUDZVQVSNZVRWBAVQWEOVKAVPVSAVOBLACBACDUE
+      ZABEUEUFUGPQWDVMVNVQWDVJVLAVJRSZVKACACDTZUHZQZAVLRSVKAVLABCEDFUIZTQWDCVJK
+      HZVJVLIAWLVJOZVKACUJSWMWFCUKUNZQWDBVJCABRSZVKABETZQWJACRSZVKWHQAVKULZUMUO
+      UPUQWDWAVSWDVKVSVTWRURPUSAWCUDZVTNZVNWBVRAWTVNOWCAVNAVLUTSVNUJSWKVLVAUNVB
+      QWSWAVTWSVKVSVTWSVJBAWGWCWIQZAWOWCWPQZAWCULZUPUQPWSVMVNVQWSVLWLVJIWSVJBCX
+      AXBAWQWCWHQXCUMAWMWCWNQVCURVDABVJVEVKWCVFGABVJWPWIVGVHVI $.
   $}
 
   ${
@@ -887848,10 +887813,9 @@ $)
        odd-completion value unchanged.  (Contributed by Zhi Wang,
        20-Oct-2026.) $)
     liouoddnegsubpd $p |- ( ph -> ( F ` -u A ) = ( F ` -u ( A - P ) ) ) $=
-      ( cmin co cneg cfv nnzd zsubcld znegcld zred nnrpd cmo wcel eqcomd cr crp
-      wceq modeqmodmin syl2anc modnegd liouoddcongd ) ACDIJZKZELCKZELABUIUJDEFA
-      UHACDHADGMNZOACHOAUHCDAUHUKPACHPZADGQZACDRJZUHDRJZACUASDUBSUNUOUCULUMCDUD
-      UETUFUGT $.
+      ( cneg cmin co znegcld nnzd zsubcld zred nnrpd cr wcel crp cmo syl2anc
+      wceq modeqmodmin modnegd liouoddcongd ) ABCICDJKZIDEFACHLAUFACDHADGMNZLAC
+      UFDACHOZAUFUGOADGPZACQRDSRCDTKUFDTKUBUHUICDUCUAUDUE $.
   $}
 
   ${
@@ -887928,10 +887892,9 @@ $)
     $( The odd completion takes value minus one at minus one.  (Contributed by
        Zhi Wang, 20-Oct-2026.) $)
     liouoddneg1d $p |- ( ph -> ( F ` -u 1 ) = -u 1 ) $=
-      ( c1 cneg cfv cliou 1zzd cn wcel 1nn a1i c2 cmul negeqd co 2t1e2 eqbrtrid
-      clt nncentralfzod fzo1ndvdsd liouoddnegd liouoddsmall2d wceq liou1 3eqtrd
-      ) AIJZDKIDKZJILKZJULABICDEFGAMAICACIFINOAPQZARISUARCUDUBHUCZUEUFUGAUMUNAB
-      ICDEFUOUPUHTAUNIUNIUIAUJQTUK $.
+      ( c1 cneg cfv 1zzd cn wcel 1nn a1i c2 cmul co clt nncentralfzod liouodd1d
+      2t1e2 eqbrtrid fzo1ndvdsd liouoddnegd negeqd eqtrd ) AIJZDKIDKZJUIABICDEF
+      GALAICACIFIMNAOPAQIRSQCTUCHUDUAUEUFAUJIABCDEFHUBUGUH $.
   $}
 
   ${
@@ -888111,28 +888074,28 @@ $)
       cn cdvds wn prmgt3factsd simpld oddn2prm 3nn a1i nnmulcld c4 cr 3re nnred
       remulcld 4re nnrpd clt 3lt4 ltmul1dd lttrd nnsubd nncnd mulcld subdid 2re
       2cnd c6 mul23d breqtrrd ltsub2dd eqbrtrd 2timesd breqtrd liouodd2led nnzd
-      znegcld cmo crp negmod syl2anc eqcomd liouoddcongd 2nn liouoddnegmulcongd
-      mvrraddd 3brtr3d mul12d negeqd mulneg2d 3eqtr4d fveq2d zmulcld liouoddred
-      recnd negnegd elfzo1 syl3anbrc fzo1ndvdsd prmndvdsmuld liouoddnegd mul22d
-      c1 cfzo liouodd3upperd eqtr3d eqtrd cliou liouoddshortnegd 3eqtrd ltnsymd
-      liou2 6re liouodd3midled letri3d mpbir2and ) APEUAQZRZDUBZEDUBZUCYIYJUDUE
-      YJYIUDUEAYISYHUAQZRZDUBZYJUDACYGUFQZDUBSYNUAQZRDUBYIYMUDABCDYNFGHACUGTCUL
-      TZICUHUIZACUGSUJUKTZSCUMUEUNAYRPCUMUEUNACIJUOUPCUQUIZAYGCAPEPULTZAURUSZKU
-      TZYQAYGVAEUAQZCAPEPVBTAVCUSZAEKVDZVEZAVAEVAVBTAVFUSZUUEVEACYQVDZAPVAEUUDU
-      UGAEKVGPVAVHUEAVIUSVJMVKZVLZAYOSCUAQZCUFQZCVHAYOUUKSYGUAQZUFQUULVHASCYGAV
-      QZACYQVMZAPEAPUUAVMZAEKVMZVNZVOACUUMUUKUUHASYGSVBTAVPUSZUUFVEASCUUSUUHVEA
-      CVREUAQZUUMVHNAEUUQVSVTZWAWBAUUKCCUUOUUOACUUOWCWPWDOWEABYNYHCDHAYNUUJWFZA
-      YGAYGUUBWFWGZAYHCWHQZYNCWHQZAYGVBTCWITUVDUVEUCUUFACYQVGYGCWJWKWLZWMABYNYH
-      CDSHYQASSULTAWNUSZWFUVBUVCUVFWOWQAYMPSEUAQZRZUAQZRZDUBZUVIDUBZYJAYLUVKDAY
-      KUVJAUUMRPUVHUAQZRZYKUVJAUUMUVNASPEUUNUUPUUQWRZWSASYGUUNUURWTAPUVHUUPASEU
-      UNUUQVNZWTZXAWSXBAUVNDUBZUVHDUBZRZUVLUVMAUVSRZRUVSUWAAUVSAUVSABUVNCDHYQAP
-      UVHAPUUAWFZAUVHASEUVGKUTZWFZXCZXDXEXFAUWBUVTAUVODUBUWBUVTABUVNCDHYQYSUWFA
-      PUVHCIUWCUWEAPCAYTYPPCVHUEPXMCXNQZTUUAYQJCPXGXHXIAUVHCAUVHULTYPUVHCVHUEUV
-      HUWGTUWDYQLCUVHXGXHXIZXJXKABCDUVHFGHYQYSUWDASUVHUAQUUCCVHAEUUQXLMWBZACUUM
-      UVNVHUVAUVPWDOXOXPWSXPAUVKUVNDAUVKUVORUVNAUVJUVOUVRWSAUVNAPUVHUUPUVQVNXFX
-      QXBABUVHCDHYQYSUWEUWHXKXAABCDSEHYQYSUVGKSXRUBXMRUCAYBUSLUWIXSXTWDABCDEFGH
-      YQYSKLUUIACUUTUUHAVREVRVBTAYCUSUUEVENYAOYDAYIYJABYHCDHYQUVCXDABECDHYQAEKW
-      FXDYEYF $.
+      znegcld crp cmo negmod syl2anc liouoddcongd 2nn liouoddnegmulcongd mul12d
+      mvrraddd 3brtr4d negeqd mulneg2d 3eqtr4d zmulcld liouoddred recnd negnegd
+      fveq2d prmgt3ndvds23d simprd cfzo elfzo1 syl3anbrc fzo1ndvdsd liouoddnegd
+      c1 prmndvdsmuld mul22d liouodd3upperd eqtr3d eqtrd cliou liouoddshortnegd
+      liou2 3eqtrd 6re ltnsymd liouodd3midled letri3d mpbir2and ) APEUAQZRZDUBZ
+      EDUBZUCYJYKUDUEYKYJUDUEAYJSYIUAQZRZDUBZYKUDACYHUFQZDUBSYOUAQZRDUBYJYNUDAB
+      CDYOFGHACUGTCULTZICUHUIZACUGSUJUKTZSCUMUEUNAYSPCUMUEUNACIJUOUPCUQUIZAYHCA
+      PEPULTAURUSZKUTZYRAYHVAEUAQZCAPEPVBTAVCUSZAEKVDZVEZAVAEVAVBTAVFUSZUUEVEAC
+      YRVDZAPVAEUUDUUGAEKVGPVAVHUEAVIUSVJMVKZVLZAYPSCUAQZCUFQZCVHAYPUUKSYHUAQZU
+      FQUULVHASCYHAVQZACYRVMZAPEAPUUAVMZAEKVMZVNZVOACUUMUUKUUHASYHSVBTAVPUSZUUF
+      VEASCUUSUUHVEACVREUAQZUUMVHNAEUUQVSVTZWAWBAUUKCCUUOUUOACUUOWCWPWDOWEABYIY
+      OCDHAYHAYHUUBWFWGZAYOUUJWFZAYHVBTCWHTYICWIQYOCWIQUCUUFACYRVGYHCWJWKZWLABY
+      IYOCDSHYRASSULTAWMUSZWFUVBUVCUVDWNWQAYNPSEUAQZRZUAQZRZDUBZUVGDUBZYKAYMUVI
+      DAYLUVHAUUMRPUVFUAQZRZYLUVHAUUMUVLASPEUUNUUPUUQWOZWRASYHUUNUURWSAPUVFUUPA
+      SEUUNUUQVNZWSZWTWRXEAUVLDUBZUVFDUBZRZUVJUVKAUVQRZRUVQUVSAUVQAUVQABUVLCDHY
+      RAPUVFAPUUAWFZAUVFASEUVEKUTZWFZXAZXBXCXDAUVTUVRAUVMDUBUVTUVRABUVLCDHYRYTU
+      WDAPUVFCIUWAUWCACSUMUEUNCPUMUEUNACIJXFXGAUVFCAUVFULTYQUVFCVHUEUVFXMCXHQTU
+      WBYRLCUVFXIXJXKZXNXLABCDUVFFGHYRYTUWBASUVFUAQUUCCVHAEUUQXOMWBZACUUMUVLVHU
+      VAUVNWDOXPXQWRXQAUVIUVLDAUVIUVMRUVLAUVHUVMUVPWRAUVLAPUVFUUPUVOVNXDXRXEABU
+      VFCDHYRYTUWCUWEXLWTABCDSEHYRYTUVEKSXSUBXMRUCAYAUSLUWFXTYBWDABCDEFGHYRYTKL
+      UUIACUUTUUHAVREVRVBTAYCUSUUEVENYDOYEAYJYKABYICDHYRUVBXBABECDHYRAEKWFXBYFY
+      G $.
   $}
 
   ${
@@ -888335,15 +888298,15 @@ $)
     < P /\ ( P < ( 4 x. ( A mod P ) ) /\ ( 3 x. ( A mod P ) ) < P ) ) ) $=
       ( co wcel c2 clt wbr cfv cmo cn cmul c4 c3 wa c1 fzossnn cprime prmnn syl
       cfzo zmodfzo1d sselid cneg wn adantr simpr cv caddc wceq liouodd2upperled
-      cle cliou w3a wrex zmodcld nn0zd cr crp zred nnrpd modabs2 syl2anc eqcomd
-      liouoddcongd cz a1i liouoddnegmulcongd 3brtr3d liouoddred zmulcld znegcld
-      2z ltnled mpbid condan gtned liouodd2supportd 3jca ) ACDUAOZUBPQWKUCOZDRS
-      ZDUDWKUCORSUEWKUCODRSUFAUGDULOZUBWKDUHACDKADUIPZDUBPIDUJUKZLUMZUNZAWMWLUO
-      ZETZWKETZVCSZAWMUPZUFBDEWKFGHAWOXCIUQAUEDRSXCJUQAWKWNPXCWQUQAXCURAQDUCOFU
-      SZGUSZUTOVAXDVDTUGVAXEVDTUGVAVEGUBVFFUBVFUPXCNUQVBAXBUPZXCAXAWTRSXFACETQC
-      UCOUOETXAWTRMABCWKDEHKAWKACDKWPVGVHZAWKDUAOZWKACVIPDVJPXHWKVAACKVKADWPVLC
-      DVMVNVOZVPABCWKDEQHWPQVQPAWDVRZKXGXIVSVTZAXAWTABWKDEHWPXGWAZABWSDEHWPAWLA
-      QWKXJXGWBWCWAWEWFUQWGZABDEWKFGHIJWRXMNAXAWTXLXKWHWIWJ $.
+      cle cliou w3a wrex zmodcld nn0zd cr crp zred modabs2 syl2anc liouoddcongd
+      nnrpd cz a1i liouoddnegmulcongd 3brtr4d liouoddred zmulcld znegcld ltnled
+      2z mpbid condan gtned liouodd2supportd 3jca ) ACDUAOZUBPQWJUCOZDRSZDUDWJU
+      CORSUEWJUCODRSUFAUGDULOZUBWJDUHACDKADUIPZDUBPIDUJUKZLUMZUNZAWLWKUOZETZWJE
+      TZVCSZAWLUPZUFBDEWJFGHAWNXBIUQAUEDRSXBJUQAWJWMPXBWPUQAXBURAQDUCOFUSZGUSZU
+      TOVAXCVDTUGVAXDVDTUGVAVEGUBVFFUBVFUPXBNUQVBAXAUPZXBAWTWSRSXEACETQCUCOUOET
+      WTWSRMABWJCDEHAWJACDKWOVGVHZKACVIPDVJPWJDUAOWJVAACKVKADWOVOCDVLVMZVNABWJC
+      DEQHWOQVPPAWDVQZXFKXGVRVSZAWTWSABWJDEHWOXFVTZABWRDEHWOAWKAQWJXHXFWAWBVTWC
+      WEUQWFZABDEWJFGHIJWQXKNAWTWSXJXIWGWHWI $.
   $}
 
   ${
@@ -888469,6 +888432,26 @@ $)
   $}
 
   ${
+    $d A x $.  $d B x $.  $d P x $.  $d Q x $.
+    liouoddmuleqmodd.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 ) ,
+      ( lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
+    liouoddmuleqmodd.2 $e |- ( ph -> P e. NN ) $.
+    liouoddmuleqmodd.3 $e |- ( ph -> Q e. ZZ ) $.
+    liouoddmuleqmodd.4 $e |- ( ph -> A e. ZZ ) $.
+    liouoddmuleqmodd.5 $e |- ( ph -> B e. ZZ ) $.
+    liouoddmuleqmodd.6 $e |- ( ph -> ( A mod P ) = ( B mod P ) ) $.
+    liouoddmuleqmodd.7 $e |- ( ph -> ( F ` ( Q x. B ) ) = ( ( F ` Q ) x. ( F
+      ` B ) ) ) $.
+    $( Transport a multiplication identity between congruent integer arguments.
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    liouoddmuleqmodd $p |- ( ph -> ( F ` ( Q x. A ) ) = ( ( F ` Q ) x. ( F `
+      A ) ) ) $=
+      ( cmul co cfv zmulcld nnrpd liouoddcongd eqidd modmul12d oveq2d 3eqtr4d
+      cmo ) AFDOPZGQFGQZDGQZOPFCOPZGQUGCGQZOPNABUIUFEGHAFCJKRAFDJLRAFFCDEJJKLAE
+      ISAFEUEPUAMUBTAUJUHUGOABCDEGHKLMTUCUD $.
+  $}
+
+  ${
     $d D x $.  $d K x $.  $d N x $.  $d P x $.  $d Q x $.
     liouoddmultransportd.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2
       ) , ( lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
@@ -888497,36 +888480,11 @@ $)
        congruence.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouoddmultransportd $p |- ( ph -> ( F ` ( Q x. N ) ) = ( ( F ` Q ) x. ( F
       ` N ) ) ) $=
-      ( cmul co cfv wceq zmulcld nnrpd cmo eqidd modmul12d liouoddcongd 3eqtr4d
-      oveq2d zcnd liouoddred recnd cc wcel cc0 wne liouoddcnne0d fmulcand mpbid
-      simprd ) AEGHUCUDZUCUDZFUEZEFUEZVFFUEZUCUDZUFEHUCUDZFUEZVIHFUEZUCUDUFAECU
-      CUDZFUEVICFUEZUCUDVHVKUBABVGVODFIAEVFLAGHMKUGZUGAECLNUGAEEVFCDLLVQNADJUHA
-      EDUIUDUJSUKULAVJVPVIUCABVFCDFIVQNSULUNUMAVMVIVNGFUEZVJFGEHAGMUOAELUOAHKUO
-      AVMABVLDFIJAEHLKUGUPUQAVIABEDFIJLUPUQAVNABHDFIJKUPUQAVRABGDFIJMUPUQAVRURU
-      SVRUTVAABGDFIJMQVBVETUAVCVD $.
-  $}
-
-  ${
-    $d D x $.  $d P x $.  $d Q x $.
-    liouoddmulnegd.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 ) , (
-      lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
-    liouoddmulnegd.2 $e |- ( ph -> P e. NN ) $.
-    liouoddmulnegd.3 $e |- ( ph -> -. 2 || P ) $.
-    liouoddmulnegd.4 $e |- ( ph -> Q e. ZZ ) $.
-    liouoddmulnegd.5 $e |- ( ph -> D e. ZZ ) $.
-    liouoddmulnegd.6 $e |- ( ph -> -. P || Q ) $.
-    liouoddmulnegd.7 $e |- ( ph -> -. P || D ) $.
-    liouoddmulnegd.8 $e |- ( ph -> -. P || ( Q x. D ) ) $.
-    liouoddmulnegd.9 $e |- ( ph -> ( F ` ( Q x. D ) ) = ( ( F ` Q ) x. ( F `
-      D ) ) ) $.
-    $( An odd completion transfers a multiplication identity to the negative
-       argument.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    liouoddmulnegd $p |- ( ph -> ( F ` ( Q x. -u D ) ) = ( ( F ` Q ) x. ( F `
-      -u D ) ) ) $=
-      ( cmul co cfv liouoddred recnd cneg wceq zmulcld liouoddnegd fmulneg2bid
-      zcnd mpbird ) AECUAZPQFREFRZUHFRZPQUBECPQZFRZUICFRZPQUBOAECUIUMULFUJAEJUF
-      ACKUFAUIABEDFGHJSTAUMABCDFGHKSTAULABUKDFGHAECJKUCZSTABCDFGHIKMUDABUKDFGHI
-      UNNUDUEUG $.
+      ( cmul co cfv wceq zmulcld liouoddmuleqmodd zcnd liouoddred recnd cc wcel
+      cc0 wne liouoddcnne0d simprd fmulcand mpbid ) AEGHUCUDZUCUDFUEEFUEZUTFUEZ
+      UCUDUFEHUCUDZFUEZVAHFUEZUCUDUFABUTCDEFIJLAGHMKUGNSUBUHAVDVAVEGFUEZVBFGEHA
+      GMUIAELUIAHKUIAVDABVCDFIJAEHLKUGUJUKAVAABEDFIJLUJUKAVEABHDFIJKUJUKAVFABGD
+      FIJMUJUKAVFULUMVFUNUOABGDFIJMQUPUQTUAURUS $.
   $}
 
   ${
@@ -888609,6 +888567,27 @@ $)
       ( cfv cmul zcnd liouoddred recnd liouoddnegd co cneg zmulcld fmulneg2bid
       ) AECEFOZCFOZECPUAZFOZFCUBFOAEJQACKQAUEABEDFGHJRSAUFABCDFGHKRSAUHABUGDFGH
       AECJKUCZRSABCDFGHIKMTABUGDFGHIUINTUD $.
+  $}
+
+  ${
+    $d D x $.  $d P x $.  $d Q x $.
+    liouoddmulnegd.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 ) , (
+      lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
+    liouoddmulnegd.2 $e |- ( ph -> P e. NN ) $.
+    liouoddmulnegd.3 $e |- ( ph -> -. 2 || P ) $.
+    liouoddmulnegd.4 $e |- ( ph -> Q e. ZZ ) $.
+    liouoddmulnegd.5 $e |- ( ph -> D e. ZZ ) $.
+    liouoddmulnegd.6 $e |- ( ph -> -. P || Q ) $.
+    liouoddmulnegd.7 $e |- ( ph -> -. P || D ) $.
+    liouoddmulnegd.8 $e |- ( ph -> -. P || ( Q x. D ) ) $.
+    liouoddmulnegd.9 $e |- ( ph -> ( F ` ( Q x. D ) ) = ( ( F ` Q ) x. ( F `
+      D ) ) ) $.
+    $( An odd completion transfers a multiplication identity to the negative
+       argument.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    liouoddmulnegd $p |- ( ph -> ( F ` ( Q x. -u D ) ) = ( ( F ` Q ) x. ( F `
+      -u D ) ) ) $=
+      ( cneg cmul co cfv wceq liouoddmulnegiffd mpbird ) AECPZQRFSEFSZUCFSQRTEC
+      QRFSUDCFSQRTOABCDEFGHIJKLMNUAUB $.
   $}
 
   ${
@@ -888907,26 +888886,6 @@ $)
   $}
 
   ${
-    $d A x $.  $d B x $.  $d P x $.  $d Q x $.
-    liouoddmuleqmodd.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 ) ,
-      ( lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
-    liouoddmuleqmodd.2 $e |- ( ph -> P e. NN ) $.
-    liouoddmuleqmodd.3 $e |- ( ph -> Q e. ZZ ) $.
-    liouoddmuleqmodd.4 $e |- ( ph -> A e. ZZ ) $.
-    liouoddmuleqmodd.5 $e |- ( ph -> B e. ZZ ) $.
-    liouoddmuleqmodd.6 $e |- ( ph -> ( A mod P ) = ( B mod P ) ) $.
-    liouoddmuleqmodd.7 $e |- ( ph -> ( F ` ( Q x. B ) ) = ( ( F ` Q ) x. ( F
-      ` B ) ) ) $.
-    $( Transport a multiplication identity between congruent integer arguments.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    liouoddmuleqmodd $p |- ( ph -> ( F ` ( Q x. A ) ) = ( ( F ` Q ) x. ( F `
-      A ) ) ) $=
-      ( cmul co cfv zmulcld nnrpd liouoddcongd eqidd modmul12d oveq2d 3eqtr4d
-      cmo ) AFDOPZGQFGQZDGQZOPFCOPZGQUGCGQZOPNABUIUFEGHAFCJKRAFDJLRAFFCDEJJKLAE
-      ISAFEUEPUAMUBTAUJUHUGOABCDEGHKLMTUCUD $.
-  $}
-
-  ${
     $d F k z $.  $d P a b $.  $d P k z $.  $d P x $.  $d Q a b $.  $d Q k z $.
     $d Q x $.
     liouoddextcentrald.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 )
@@ -889095,19 +889054,19 @@ $)
       ` Z ) ) ) $=
       ( ad2antrr c1 wceq cmul co cfv wa cprime wcel cn prmnn liouoddred mullidd
       syl recnd c2 c3 cr 2re a1i 3re nnred clt 2lt3 lttrd liouodd1d oveq1d zcnd
-      wbr fveq2d 3eqtr4rd adantr wb simpr eqcomd fvoveqeq1 mpbid wn cdvds cz cv
-      caddc cliou w3a wrex wi wral cfzo liouoddext3divd cmo wne neqned nngt1ne1
-      nnzd mpbird zmodfzo1d liouoddextresd liouoddmulperiodd pm2.61dan ) AEUAUB
-      ZEHUCUDGUEEGUEHGUEZUCUDUBZAWSUFZUAHUCUDZGUEZUAGUEZWTUCUDZUBZXAAXGWSAUAWTU
-      CUDWTXFXDAWTAWTABHDGKADUGUHZDUIUHZLDUJZUMZPUKUNULAXEUAWTUCABDGKXKAUOUPDUO
-      UQUHAURUSUPUQUHAUTUSADXKVAUOUPVBVHAVCUSMVDVEVFAXCHGAHAHPVGULVIVJVKXBUAEUB
-      XGXAVLXBEUAAWSVMVNUAEHWTGUCUCVOUMVPAWSVQZUFZUPEVRVHZXAXMXNUFBCDEFGHIJKAXH
-      XLXNLTAUPDVBVHZXLXNMTAEUIUHZXLXNNTAUOEUCUDDVBVHZXLXNOTAHVSUHZXLXNPTADHVRV
-      HVQZXLXNQTXMXNVMAUODUCUDIVTZJVTZWAUDUBXTWBUEUAUBYAWBUEUAUBWCJUIWDIUIWDVQZ
-      XLXNRTADCVTZVRVHVQFVTZYCUCUDGUEYDGUEYCGUEUCUDUBWECVSWFFUAEWGUDWFZXLXNSTWH
-      XMXNVQZUFZBDEGHKYGXHXIAXHXLYFLTZXJUMZYGEAXPXLYFNTZWMAXRXLYFPTZAXSXLYFQTZY
-      GBCHDWIUDDEFGIJKYHAXOXLYFMTYJAXQXLYFOTXMUAEVBVHZYFXMYMEUAWJZXMEUAAXLVMWKX
-      MXPYMYNVLAXPXLNVKEWLUMWNVKXMYFVMAYBXLYFRTAYEXLYFSTYGHDYKYIYLWOWPWQWRWR $.
+      fveq2d 3eqtr4rd adantr wb fvoveqeq1 adantl mpbird wn cdvds cz simpr caddc
+      wbr cliou w3a wrex wral cfzo liouoddext3divd nnzd cmo wne neqned nngt1ne1
+      cv wi zmodfzo1d liouoddextresd liouoddmulperiodd pm2.61dan ) AEUAUBZEHUCU
+      DGUEEGUEHGUEZUCUDUBZAWRUFWTUAHUCUDZGUEZUAGUEZWSUCUDZUBZAXEWRAUAWSUCUDWSXD
+      XBAWSAWSABHDGKADUGUHZDUIUHZLDUJZUMZPUKUNULAXCUAWSUCABDGKXIAUOUPDUOUQUHAUR
+      USUPUQUHAUTUSADXIVAUOUPVBVTAVCUSMVDVEVFAXAHGAHAHPVGULVHVIVJWRWTXEVKAEUAHW
+      SGUCUCVLVMVNAWRVOZUFZUPEVPVTZWTXKXLUFBCDEFGHIJKAXFXJXLLTAUPDVBVTZXJXLMTAE
+      UIUHZXJXLNTAUOEUCUDDVBVTZXJXLOTAHVQUHZXJXLPTADHVPVTVOZXJXLQTXKXLVRAUODUCU
+      DIWLZJWLZVSUDUBXRWAUEUAUBXSWAUEUAUBWBJUIWCIUIWCVOZXJXLRTADCWLZVPVTVOFWLZY
+      AUCUDGUEYBGUEYAGUEUCUDUBWMCVQWDFUAEWEUDWDZXJXLSTWFXKXLVOZUFZBDEGHKYEXFXGA
+      XFXJYDLTZXHUMZYEEAXNXJYDNTZWGAXPXJYDPTZAXQXJYDQTZYEBCHDWHUDDEFGIJKYFAXMXJ
+      YDMTYHAXOXJYDOTXKUAEVBVTZYDXKYKEUAWIZXKEUAAXJVRWJXKXNYKYLVKAXNXJNVJEWKUMV
+      NVJXKYDVRAXTXJYDRTAYCXJYDSTYEHDYIYGYJWNWOWPWQWQ $.
   $}
 
   ${
@@ -889428,12 +889387,12 @@ $)
        half-parameter.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liougb4evend $p |- ( ph -> E. a e. NN E. b e. NN ( ( 2 x. A ) = ( a + b )
       /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
-      ( c4 c2 co cmul cv wceq cliou cfv w3a cn wrex wcel wb nncnd cdiv caddc c1
-      cdvds wbr 2nn nndivdvds sylancl mpbid liougb4nnd a1i mulassd 2t2e4 oveq1d
-      cneg nnne0d divcan2d oveq2d 3eqtr3d lioupaireq syl ) AGBHUAIZJIZCKZDKZUBI
-      ZLVDMNUCUOZLZVEMNVGLZODPQCPQZHBJIZVFLVHVIODPQCPQZAVBCDAHBUDUEZVBPRZFABPRH
-      PRZVMVNSEUFBHUGUHUIZUJAVCVKLVJVLSAHHJIZVBJIHHVBJIZJIVCVKAHHVBAHVOAUFUKZTZ
-      VTAVBVPTULAVQGVBJVQGLAUMUKUNAVRBHJABHABETVTAHVSUPUQURUSVGVKVCCDUTVAUI $.
+      ( c2 co cmul cv wceq cliou cfv w3a cn wrex wcel wb mpbid nncnd cdiv caddc
+      c4 c1 cneg cdvds wbr 2nn nndivdvds sylancl liougb4nnd mul22d 2cnd cc0 wne
+      2ne0 a1i divcan2d oveq2d eqtr3d lioupaireq syl ) AUCBGUAHZIHZCJZDJZUBHZKV
+      ELMUDUEZKZVFLMVHKZNDOPCOPZGBIHZVGKVIVJNDOPCOPZAVCCDAGBUFUGZVCOQZFABOQGOQV
+      NVOREUHBGUIUJSZUKAVDVLKVKVMRAGGVCIHZIHVDVLAVCAVCVPTULAVQBGIABGABETAUMGUNU
+      OAUPUQURUSUTVHVLVDCDVAVBS $.
   $}
 
   ${
