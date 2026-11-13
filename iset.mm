@@ -174981,6 +174981,19 @@ $)
   $}
 
   ${
+    $d G s w $.  $d R s w $.
+    $( The class of subrings of a ring is a set.  (Contributed by Jim Kingdon,
+       12-Nov-2026.) $)
+    subrgex $p |- ( R e. Ring -> ( SubRing ` R ) e. _V ) $=
+      ( vs vw crg wcel csubrg cfv cv cress co cur wa cbs cpw crab df-subrg wceq
+      cvv fveq2 eleq1d pweqd oveq1 anbi12d rabeqbidv id eqid basfn elex funfvex
+      wfn funfni sylancr pwexd rabexd fvmptd3 eqeltrd ) ADEZAFGABHZIJZDEZAKGZUR
+      EZLZBAMGZNZOZRUQCACHZURIJZDEZVGKGZUREZLZBVGMGZNZOVFDFRCBPVGAQZVLVCBVNVEVO
+      VMVDVGAMSUAVOVIUTVKVBVOVHUSDVGAURIUBTVOVJVAURVGAKSTUCUDUQUEUQVCBVEVFRVFUF
+      UQVDRUQMRUJAREVDREZUGADUHVPRAMAMUIUKULUMUNZUOVQUP $.
+  $}
+
+  ${
     subrgss.1 $e |- B = ( Base ` R ) $.
     $( A subring is a subset.  (Contributed by Stefan O'Rear, 27-Nov-2014.) $)
     subrgss $p |- ( A e. ( SubRing ` R ) -> A C_ B ) $=
