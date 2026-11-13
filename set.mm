@@ -886398,7 +886398,26 @@ $)
   $}
 
   ${
-    $d A a b $.  $d B b $.  $d D a b t $.  $d M a b t $.
+    $d D a b t $.  $d D a u v $.  $d M a b t $.  $d M a u v $.  $d b v $.
+    liougb4gapbi.1 $e |- S = { t e. NN | E. a e. NN E. b e. NN ( ( M = (
+    a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) /\ t = ( b - a ) ) } $.
+    $( Characterize positive gaps using fresh witnesses for the summands.
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    liougb4gapbi $p |- ( D e. S <-> ( D e. NN /\ E. u e. NN E. v e. NN (
+    ( M = ( u + v ) /\ ( lam ` u ) = 1 /\ ( lam ` v ) = 1 ) /\ D = ( v - u
+    ) ) ) ) $=
+      ( cn cv caddc co wceq cliou cfv c1 cmin wa wrex w3a eqeq1 anbi2d 2rexbidv
+      wcel elrab2 oveq2 eqeq2d fveqeq2 3anbi13d oveq1 anbi12d cbvrexvw 3anbi12d
+      rexbii rexbidv bitri anbi2i ) DEUEDJUEZFGKZHKZLMZNZUTOPQNZVAOPQNZUAZDVAUT
+      RMZNZSZHJTZGJTZSUSFBKZAKZLMZNZVLOPQNZVMOPQNZUAZDVMVLRMZNZSZAJTZBJTZSVFCKZ
+      VGNZSZHJTGJTVKCDJEWDDNZWFVIGHJJWGWEVHVFWDDVGUBUCUDIUFVKWCUSVKFUTVMLMZNZVD
+      VQUAZDVMUTRMZNZSZAJTZGJTWCVJWNGJVIWMHAJVAVMNZVFWJVHWLWOVCWIVEVQVDWOVBWHFV
+      AVMUTLUGUHVAVMQOUIUJWOVGWKDVAVMUTRUKUHULUMUOWNWBGBJUTVLNZWMWAAJWPWJVRWLVT
+      WPWIVOVDVPVQWPWHVNFUTVLVMLUKUHUTVLQOUIUNWPWKVSDUTVLVMRUGUHULUPUMUQURUQ $.
+  $}
+
+  ${
+    $d A a b u v $.  $d B b v $.  $d D a b t u v $.  $d M a b t u v $.
     liougb4gapeld.1 $e |- S = { t e. NN | E. a e. NN E. b e. NN ( ( M = (
     a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) /\ t = ( b - a ) ) } $.
     liougb4gapeld.2 $e |- ( ph -> A e. NN ) $.
@@ -886412,14 +886431,13 @@ $)
        belongs to the gap set supplied by the equality hypothesis.
        (Contributed by Zhi Wang, 17-Oct-2026.) $)
     liougb4gapeld $p |- ( ph -> D e. S ) $=
-      ( cn co wceq wcel cv caddc cliou cfv c1 cmin wa wrex oveq1 eqeq2d fveqeq2
-      w3a 3anbi12d oveq2 anbi12d 3anbi13d 3jca 2rspcedvdw eqeq1 anbi2d 2rexbidv
-      jca elrab2 sylanbrc ) AERUAGHUBZIUBZUCSZTZVFUDUEUFTZVGUDUEUFTZUMZEVGVFUGS
-      ZTZUHZIRUIHRUIZEFUAMAVOGCVGUCSZTZCUDUEUFTZVKUMZEVGCUGSZTZUHGCDUCSZTZVSDUD
-      UEUFTZUMZEDCUGSZTZUHHICDRRVFCTZVLVTVNWBWIVIVRVJVSVKWIVHVQGVFCVGUCUJUKVFCU
-      FUDULUNWIVMWAEVFCVGUGUOUKUPVGDTZVTWFWBWHWJVRWDVKWEVSWJVQWCGVGDCUCUOUKVGDU
-      FUDULUQWJWAWGEVGDCUGUJUKUPKLAWFWHAWDVSWENOPURQVCUSVLBUBZVMTZUHZIRUIHRUIVP
-      BERFWKETZWMVOHIRRWNWLVNVLWKEVMUTVAVBJVDVE $.
+      ( co wceq cliou vu vv cn wcel cv caddc cfv c1 w3a cmin wrex oveq1 fveqeq2
+      wa eqeq2d 3anbi12d anbi12d 3anbi13d 3jca 2rspcedvdw liougb4gapbi sylanbrc
+      oveq2 jca ) AEUCUDGUAUEZUBUEZUFRZSZVETUGUHSZVFTUGUHSZUIZEVFVEUJRZSZUNZUBU
+      CUKUAUCUKEFUDMAVNGCVFUFRZSZCTUGUHSZVJUIZEVFCUJRZSZUNGCDUFRZSZVQDTUGUHSZUI
+      ZEDCUJRZSZUNUAUBCDUCUCVECSZVKVRVMVTWGVHVPVIVQVJWGVGVOGVECVFUFULUOVECUHTUM
+      UPWGVLVSEVECVFUJVCUOUQVFDSZVRWDVTWFWHVPWBVJWCVQWHVOWAGVFDCUFVCUOVFDUHTUMU
+      RWHVSWEEVFDCUJULUOUQKLAWDWFAWBVQWCNOPUSQVDUTUBUABEFGHIJVAVB $.
   $}
 
   ${
@@ -886453,25 +886471,6 @@ $)
       VBADEHWOWPWNADEUBULZEDUFUDZUNUTZAFWRUNRNVCZADUNUTEUNUTWQWSVELMDEVDVFVGVHV
       IVJADEHAHWMUIZWGWHOVMADEHIJLMOSQVKAEDHIJMLWISPVKAWEVNVLAWRUMUEUDWRWEFUBAW
       RAWRWTVOVPADEHXAWGWHVQRVRVS $.
-  $}
-
-  ${
-    $d D a b t $.  $d D a u v $.  $d M a b t $.  $d M a u v $.  $d b v $.
-    liougb4gapbi.1 $e |- S = { t e. NN | E. a e. NN E. b e. NN ( ( M = (
-    a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) /\ t = ( b - a ) ) } $.
-    $( Characterize positive gaps using fresh witnesses for the summands.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    liougb4gapbi $p |- ( D e. S <-> ( D e. NN /\ E. u e. NN E. v e. NN (
-    ( M = ( u + v ) /\ ( lam ` u ) = 1 /\ ( lam ` v ) = 1 ) /\ D = ( v - u
-    ) ) ) ) $=
-      ( cn cv caddc co wceq cliou cfv c1 cmin wa wrex w3a eqeq1 anbi2d 2rexbidv
-      wcel elrab2 oveq2 eqeq2d fveqeq2 3anbi13d oveq1 anbi12d cbvrexvw 3anbi12d
-      rexbii rexbidv bitri anbi2i ) DEUEDJUEZFGKZHKZLMZNZUTOPQNZVAOPQNZUAZDVAUT
-      RMZNZSZHJTZGJTZSUSFBKZAKZLMZNZVLOPQNZVMOPQNZUAZDVMVLRMZNZSZAJTZBJTZSVFCKZ
-      VGNZSZHJTGJTVKCDJEWDDNZWFVIGHJJWGWEVHVFWDDVGUBUCUDIUFVKWCUSVKFUTVMLMZNZVD
-      VQUAZDVMUTRMZNZSZAJTZGJTWCVJWNGJVIWMHAJVAVMNZVFWJVHWLWOVCWIVEVQVDWOVBWHFV
-      AVMUTLUGUHVAVMQOUIUJWOVGWKDVAVMUTRUKUHULUMUOWNWBGBJUTVLNZWMWAAJWPWJVRWLVT
-      WPWIVOVDVPVQWPWHVNFUTVLVMLUKUHUTVLQOUIUNWPWKVSDUTVLVMRUGUHULUPUMUQURUQ $.
   $}
 
   ${
