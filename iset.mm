@@ -170159,6 +170159,16 @@ $)
   $}
 
   ${
+    $( Sethood of a structure power.  (Contributed by Jim Kingdon,
+       14-Nov-2026.) $)
+    pwsex $p |- ( ( R e. V /\ I e. W ) -> ( R ^s I ) e. _V ) $=
+      ( wcel wa cpws co csca cfv csn cxp cprds eqid pwsval scaslid slotex simpr
+      cvv snexg adantr xpexd prdsex syl2an2r eqeltrd ) ACEZBDEZFZABGHZAIJZBAKZL
+      ZMHZSAUJBCDUIUINUJNOUFUJSEUGULSEUMSEAICPQUHBUKDSUFUGRUFUKSEUGACTUAUBULUJS
+      SUCUDUE $.
+  $}
+
+  ${
     $d x I $.  $d x w R $.  $d x V $.  $d x W $.
     pwsbas.y $e |- Y = ( R ^s I ) $.
     pwsbas.f $e |- B = ( Base ` R ) $.
