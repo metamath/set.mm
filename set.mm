@@ -280603,7 +280603,7 @@ $)
     $( Define the (proper) class of all metrics.  (A metric space is the
        metric's base set paired with the metric; see ~ df-ms .  However, we
        will often also call the metric itself a "metric space".)  Equivalent to
-       Definition 14-1.1 of [Gleason] p. 223.  The 4 properties in Gleason's
+       Definition 14-1.1 of [Gleason] p. 223.  The four properties in Gleason's
        definition are shown by ~ met0 , ~ metgt0 , ~ metsym , and ~ mettri .
        (Contributed by NM, 25-Aug-2006.) $)
     df-met $a |- Met = ( x e. _V |-> { d e. ( RR ^m ( x X. x ) ) |
