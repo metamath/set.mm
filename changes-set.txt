@@ -93,6 +93,9 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+14-Nov-26 funcnvpr    [same]      Remove sethood antecedent
+14-Nov-26 funcnvtp    [same]      Remove sethood antecedents
+14-Nov-26 funcnvqp    [same]      Remove sethood antecedents
  8-Nov-26 rru         rur
  8-Nov-26 cardprcALT  [same]      Moved from AD's mathbox to main set.mm
  8-Nov-26 cardprcr    [same]      Moved from AD's mathbox to main set.mm
