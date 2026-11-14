@@ -494121,6 +494121,15 @@ htmldef "TC+" as
   latexdef "TC+" as "\operatorname{TC+}";
 /* End of Matthew House's mathbox */
 
+/* Mathbox of Wolf Lammen */
+htmldef "|[|" as "<IMG SRC='lbrack.gif' WIDTH=5 HEIGHT=19 ALT=' [' TITLE='['>";
+  althtmldef "|[|" as '['; /* &lsqb; */
+  latexdef "|[|" as "[";
+htmldef "|]|" as "<IMG SRC='rbrack.gif' WIDTH=5 HEIGHT=19 ALT=' ]' TITLE=']'>";
+  althtmldef "|]|" as ']'; /* &rsqb; */
+  latexdef "|]|" as "]";
+/* End of Wolf Lammen's mathbox */
+
 /* Mathbox of Thomas van Maaren */
 htmldef "propvar" as
     "propvar ";
@@ -625200,6 +625209,271 @@ $)
     GGZHZABCIZBCJZHZABCKUEUFUGLUMUEULUKHZUJAUKULMUNUJNOUEULUKUHUIULUHNOBCRPUKUI
     NOUKBCFEUIBCQBCSTPUAUBUCUD $.
 
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  An alternative definiton ~ df-sb
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    wl-bian2bi.1 $e |- ( ps -> ch ) $.
+    wl-bian2bi.2 $e |- ( ph <-> ( ps /\ ch ) ) $.
+    $( If one conjunct implies the other, an equvalence with a conjunction can
+       be reduced to an equivalence with one conjunct.  (Contributed by Wolf
+       Lammen, 4-Nov-2026.) $)
+    wl-bian2bi $p |- ( ph <-> ps ) $=
+      ( simplbi wa biimpri mpdan impbii ) ABABCEFBCADABCGEHIJ $.
+  $}
+
+  ${
+    wl-bian2bi2.1 $e |- ( ps <-> ch ) $.
+    wl-bian2bi2.2 $e |- ( ph <-> ( ps /\ ch ) ) $.
+    $( If one conjunct is equivalent to the other, an equvalence with a
+       conjunction can be reduced to an equivalence with one conjunct.
+       (Contributed by Wolf Lammen, 4-Nov-2026.) $)
+    wl-bian2bi2 $p |- ( ph <-> ps ) $=
+      ( biimpi wl-bian2bi ) ABCBCDFEG $.
+  $}
+
+  $c |[| $.
+  $c |]| $.
+
+  $( Extend wff definition to include proper substitution.  Read:  "the wff
+     that results when ` y ` is properly substituted for ` x ` in wff ` ph ` ".
+     (Contributed by NM, 24-Jan-2006.) $)
+  wsbwl $a wff |[| y / x |]| ph $.
+
+  $( Indicate that the variable "y" is free in wsb even though it could
+     potentially bind occurrences in "ph". $)
+  $( $j free_var 'wsbwl' with 'y'; $)
+
+  ${
+    $d x y z $.  $d t y z $.  $d ph y z $.
+    $( Define proper substitution.  We use the notation ` [ t / x ] ph ` to
+       denote "the wff that results from the proper substitution of ` t ` for
+       ` x ` in the wff ` ph ` ".  In other words, ` t ` properly replaces
+       ` x ` .  For example, ` [ t / x ] z e. x ` is equivalent to as
+       ` z e. t ` (when ` x ` and ` z ` are distinct), as shown in ~ elsb2 .
+
+       Our notation was introduced in Haskell B. Curry's _Foundations of
+       Mathematical Logic_ (1977), p. 316 and is frequently used in textbooks
+       of lambda calculus and combinatory logic.  This notation improves the
+       common but ambiguous notation, " ` ph ( t ) ` is the wff that results
+       when ` t ` is properly substituted for ` x ` in ` ph ( x ) ` ".  For
+       example, if the original ` ph ( x ) ` is ` x = t ` , then ` ph ( t ) `
+       is ` t = t ` , from which we obtain that ` ph ( x ) ` is ` x = x ` .  So
+       what exactly does ` ph ( x ) ` mean?  Curry's notation solves this
+       problem.
+
+       A very similar notation, namely ` ( y | x ) ph ` , was introduced in
+       Bourbaki's Set Theory (Chapter 1, Description of Formal Mathematic,
+       1953).
+
+       In most books, proper substitution has a somewhat complicated recursive
+       definition with multiple cases based on the occurrences of free and
+       bound variables in the wff.  Instead, we use a single formula that is
+       exactly equivalent and gives us a direct definition.  We later prove
+       that our definition has the properties we expect of proper substitution
+       (see Theorems ~ sbequ , ~ sbcom2 and ~ sbid2v ).
+
+       Note that our definition is valid even when ` x ` and ` t ` are replaced
+       with the same variable, as ~ sbid shows.  We achieve this by applying
+       twice Tarski's definition ~ sb6 which is valid for disjoint variables,
+       and introducing a dummy variable ` y ` which isolates ` x ` from ` t ` ,
+       as in ~ dfsb7 with respect to ~ sb5 .  We can also achieve this by
+       having ` x ` free in the first conjunct and bound in the second, as the
+       alternate definition ~ dfsb1 shows.  Another version that mixes free and
+       bound variables is ~ dfsb3 .  When ` x ` and ` t ` are distinct, we can
+       express proper substitution with the simpler expressions of ~ sb5 and
+       ~ sb6 .
+
+       Note that the occurrences of a given variable in the definiens are
+       either all bound ( ` x , y ` ) or all free ( ` t ` ).  Also note that
+       the definiens uses only primitive symbols.
+
+       This double level definition will make several proofs using it appear as
+       doubled.  Alternately, one could often first prove as a lemma the same
+       theorem with a disjoint variable condition on the substitute and the
+       substituted variables, and then prove the original theorem by applying
+       this lemma twice in a row.
+
+       The definiens is a conjunction of two nearly identical expressions,
+       differing only in the choice of dummy variable, ` y ` or ` z ` .
+
+       Historically, a justification theorem for a definition involving dummy
+       variables, such as ~ sbjust here, was considered sufficient to establish
+       that the definition is independent of the particular choice of dummy
+       variable.  Although this approach may appear convincing, it has a
+       serious disadvantage: applications of the definition did not include the
+       axioms needed to justify it in the resulting axiom list.  In fact,
+       applying the definition twice with different dummy variables could
+       implicitly use its justification without including the axioms required
+       for that justification.  In ~ in-ax8 , Gino Giotto exploited this
+       loophole to derive axiom ~ ax-8 from other axioms.
+
+       As an initial remedy, a hypothesis expressing the justification was
+       added to the definition.  Every application of the definition in a proof
+       then also required a proof step establishing this hypothesis.
+       Consequently, the axioms used to justify the definition could no longer
+       be omitted from the resulting axiom list.
+
+       This remedy, however, introduced the opposite problem: in certain cases,
+       the resulting axiom list could contain more axioms than necessary.  It
+       turns out that incorporating the justification directly into the
+       definiens handles these cases more appropriately.  This approach is
+       implemented as a conjunction here, ~ sbjust follows, see ~ abab .
+
+       Prefer ~ wl-dfsb unless you can prove the hypothesis from fewer axioms
+       in special cases; see ~ wl-sbt .  (Contributed by NM, 10-May-1993.)
+       Revised from the original definition ~ dfsb1 .  (Revised by BJ,
+       22-Dec-2020.)  Add the justification hypothesis.  (Revised by Wolf
+       Lammen, 4-Feb-2026.)  Integrate the justification in the definiens.
+       (Revised by Wolf Lammen, 4-Nov-2026.) $)
+    df-wl-sb $a |- ( |[| t / x |]| ph <->
+                             ( A. y ( y = t -> A. x ( x = y -> ph ) ) /\
+                               A. z ( z = t -> A. x ( x = z -> ph ) ) ) ) $.
+  $}
+
+  ${
+    $d u v x $.  $d u v t $.  $d u v ph $.
+    $( One direction of proper substitution.  (Contributed by Wolf Lammen,
+       4-Nov-2026.) $)
+    wl-simpsb $p |- ( |[| t / x |]| ph ->
+                                    A. u ( u = t -> A. x ( x = u -> ph ) ) ) $=
+      ( vv wsbwl weq wi wal df-wl-sb simplbi ) ABDFCDGBCGAHBIHCIEDGBEGAHBIHEIAB
+      CEDJK $.
+  $}
+
+  ${
+    $d u v x $.  $d u v t $.  $d u v ph $.  $d u v ps $.
+    wl-sbdlem.1 $e |- ( ph -> A. u ( u = t -> A. x ( x = u -> ps ) ) ) $.
+    wl-sbdlem.2 $e |- ( ph -> A. v ( v = t -> A. x ( x = v -> ps ) ) ) $.
+    $( Lemma for some theorems using fewer axioms than ~ dfsb .  The hypotheses
+       are usually two instantiations of a subordinate lemma or theorem with a
+       different dummy variable.  (Contributed by Wolf Lammen, 4-Nov-2026.) $)
+    wl-sbdlem $p |- ( ph -> |[| t / x |]| ps ) $=
+      ( weq wi wal wa wsbwl jca df-wl-sb sylibr ) AEFICEIBJCKJEKZDFICDIBJCKJDKZ
+      LBCFMAQRGHNBCEDFOP $.
+  $}
+
+  ${
+    $d x y z $.  $d t y z $.  $d ph y z $.
+    $( Simplify definition ~ df-wl-sb by removing its duplicated definiens.
+       (Contributed by Wolf Lammen, 4-Nov-2026.) $)
+    wl-dfsb $p |- ( |[| t / x |]| ph
+                                <-> A. y ( y = t -> A. x ( x = y -> ph ) ) ) $=
+      ( vz wsbwl weq wi wal sbjust df-wl-sb wl-bian2bi2 ) ABDFCDGBCGAHBIHCIEDGB
+      EGAHBIHEIABCEDJABCEDKL $.
+  $}
+
+  ${
+    $d u x $.  $d u t $.  $d u ph $.
+    wl-sbtlem.1 $e |- ph $.
+    $( In the case of ~ wl-sbt , the definiens in ~ df-wl-sb is derivable from
+       fewer axioms than ~ wl-dfsb .  The essential proof step is presented in
+       this lemma.  (Contributed by Wolf Lammen, 4-Nov-2026.) $)
+    wl-sbtlem $p |- ( ph -> A. u ( u = t -> A. x ( x = u -> ph ) ) ) $=
+      ( weq wi wal a1i ax-gen ) CDFZBCFZAGZBHZGZCHAOCNKMBALEIJIJI $.
+  $}
+
+  ${
+    $d u v x $.  $d u v t $.  $d u v ph $.
+    wl-sbt.1 $e |- ph $.
+    $( A substitution into a theorem yields a theorem.  See ~ sbtALT for a
+       shorter proof requiring more axioms.  See ~ chvar and ~ chvarv for
+       versions using implicit substitution.  (Contributed by NM, 21-Jan-2004.)
+       (Proof shortened by Andrew Salmon, 25-May-2011.)  (Proof shortened by
+       Wolf Lammen, 20-Jul-2018.)  Revise ~ df-sb .  (Revised by Steven Nguyen,
+       6-Jul-2023.)  Revise ~ df-sb again.  (Revised by Wolf Lammen,
+       4-Feb-2026.)  Revise ~ df-sb again.  (Revised by Wolf Lammen,
+       4-Nov-2026.) $)
+    wl-sbt $p |- |[| t / x |]| ph $=
+      ( vv vu wsbwl wl-sbtlem wl-sbdlem ax-mp ) AABCGDAABEFCABFCDHABECDHIJ $.
+  $}
+
+  ${
+    $d u x $.  $d u t $.  $d u ph $.
+    $( In the case of ~ wl-stdpc4 , the definiens in ~ df-wl-sb is derivable
+       from fewer axioms than ~ wl-dfsb .  The essential proof step is
+       presented in this lemma.  (Contributed by Wolf Lammen, 4-Nov-2026.) $)
+    wl-stdpc4lem $p |- ( A. x ph -> A. u ( u = t -> A. x ( x = u -> ph ) ) ) $=
+      ( wal weq wi ala1 a1d alrimiv ) ABEZCDFZBCFZAGBEZGCKNLAMBHIJ $.
+  $}
+
+  ${
+    $d u v x $.  $d u v t $.  $d u v ph $.
+    $( The specialization axiom of standard predicate calculus.  It states that
+       if a statement ` ph ` holds for all ` x ` , then it also holds for the
+       specific case of ` t ` (properly) substituted for ` x ` .  Translated to
+       traditional notation, it can be read:  " ` A. x ph ( x ) -> ph ( t ) ` ,
+       provided that ` t ` is free for ` x ` in ` ph ( x ) ` ".  Axiom 4 of
+       [Mendelson] p. 69.  See also ~ spsbc and ~ rspsbc .  (Contributed by NM,
+       14-May-1993.)  Revise ~ df-sb .  (Revised by BJ, 22-Dec-2020.)  Revise
+       ~ df-sb again.  (Revised by Wolf Lammen, 4-Nov-2026.) $)
+    wl-stdpc4 $p |- ( A. x ph -> |[| t / x |]| ph ) $=
+      ( vv vu wal wl-stdpc4lem wl-sbdlem ) ABFABDECABECGABDCGH $.
+  $}
+
+  ${
+    $d u v x $.  $d u v t $.  $d u v ph $.
+    $( Existential generalization: if a proposition is true for a specific
+       instance, then there exists an instance where it is true.  (Contributed
+       by NM, 29-Jun-1993.)  (Proof shortened by Wolf Lammen, 3-May-2018.)
+       Revise ~ df-sb .  (Revised by BJ, 22-Dec-2020.)  (Proof shortened by
+       Steven Nguyen, 11-Jul-2023.)  Revise ~ df-sb again.  (Revised by Wolf
+       Lammen, 4-Nov-2026.) $)
+    wl-spsbe $p |- ( |[| t / x |]| ph -> E. x ph ) $=
+      ( vu wsbwl weq wi wal wex wl-simpsb alequexv exsbim 3syl ) ABCEDCFBDFAGBH
+      ZGDHNDIABIABDCJNDCKABDLM $.
+  $}
+
+  ${
+    $d u x $.  $d u y $.  $d u ph $.  $d u ps $.
+    $( Lemma for ~ wl-sbi1 .  (Contributed by Wolf Lammen, 4-Nov-2026.) $)
+    wl-sbi1lem $p |- ( |[| y / x |]| ( ph -> ps ) -> ( |[| y / x |]| ph ->
+                                  A. u ( u = y -> A. x ( x = u -> ps ) ) ) ) $=
+      ( wi wsbwl weq wal wl-simpsb ax-2 al2imi imim3i syl2im ) ABFZCDGEDHZCEHZO
+      FZCIZFZEIACDGPQAFZCIZFZEIPQBFZCIZFZEIOCEDJACEDJTUCUFESUBUEPRUAUDCQABKLMLN
+      $.
+  $}
+
+  ${
+    $d u v x $.  $d u v y $.  $d u v ph $.  $d u v ps $.
+    $( Distribute substitution over implication.  (Contributed by NM,
+       14-May-1993.)  Remove dependencies on axioms.  (Revised by Steven
+       Nguyen, 24-Jul-2023.)  Revise ~ df-sb .  (Revised by Wolf Lammen,
+       4-Nov-2026.) $)
+    wl-sbi1 $p |- ( |[| y / x |]| ( ph -> ps ) ->
+                                  ( |[| y / x |]| ph -> |[| y / x |]| ps ) ) $=
+      ( vu vv wi wsbwl weq wal wa wl-sbi1lem jcad df-wl-sb imbitrrdi ) ABGCDHZA
+      CDHZEDICEIBGCJGEJZFDICFIBGCJGFJZKBCDHPQRSABCDELABCDFLMBCEFDNO $.
+  $}
+
+  ${
+    $d w x y $.  $d w x z $.  $d w ph $.
+    $( Lemma for ~ wl-sbal , extracted from the former proof of ~ sbal .
+       (Contributed by NM, 16-May-1993.)  (Proof shortened by Wolf Lammen,
+       29-Sep-2018.)  Reduce dependencies on axioms.  (Revised by Steven
+       Nguyen, 13-Aug-2023.) $)
+    wl-sballem $p |- ( A. x A. w ( w = z -> A. y ( y = w -> ph ) ) <->
+                              A. w ( w = z -> A. y ( y = w -> A. x ph ) ) ) $=
+      ( weq wi wal alcom 19.21v albii bitr3i imbi2i 3bitri ) EDFZCEFZAGZCHZGZEH
+      BHSBHZEHORBHZGZEHOPABHGZCHZGZEHSBEITUBEORBJKUBUEEUAUDOUAQBHZCHUDQCBIUFUCC
+      PABJKLMKN $.
+  $}
+
+  ${
+    $d u v x y $.  $d u v x z $.  $d u v ph $.
+    $( Move universal quantifier in and out of substitution.  (Contributed by
+       NM, 16-May-1993.)  (Proof shortened by Wolf Lammen, 29-Sep-2018.)
+       Reduce dependencies on axioms.  (Revised by Steven Nguyen, 13-Aug-2023.)
+       Revise ~ df-sb .  (Revised by Wolf Lammen, 4-Nov-2026.) $)
+    wl-sbal $p |- ( |[| z / y |]| A. x ph <-> A. x |[| z / y |]| ph ) $=
+      ( vu vv weq wal wi wsbwl 19.26 wl-sballem anbi12i bitr2i df-wl-sb 3bitr4i
+      wa albii ) EDGZCEGZABHZICHIEHZFDGZCFGZUAICHIFHZQZSTAICHIEHZUCUDAICHIFHZQZ
+      BHZUACDJACDJZBHUJUGBHZUHBHZQUFUGUHBKULUBUMUEABCDELABCDFLMNUACEFDOUKUIBACE
+      FDORP $.
+  $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
