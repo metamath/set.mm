@@ -6459,6 +6459,8 @@
 "funadj" is used by "adjeq".
 "funadj" is used by "funcnvadj".
 "funcnvadj" is used by "adj1o".
+"funcnvprOLD" is used by "funcnvqpOLD".
+"funcnvprOLD" is used by "funcnvtpOLD".
 "funcringcsetcALTV2lem1" is used by "funcringcsetcALTV2lem2".
 "funcringcsetcALTV2lem1" is used by "funcringcsetcALTV2lem7".
 "funcringcsetcALTV2lem1" is used by "funcringcsetcALTV2lem8".
@@ -16749,6 +16751,9 @@ New usage of "fuconuniqlem" is discouraged (1 uses).
 New usage of "fuconuniqvalslem" is discouraged (1 uses).
 New usage of "funadj" is discouraged (4 uses).
 New usage of "funcnvadj" is discouraged (1 uses).
+New usage of "funcnvprOLD" is discouraged (2 uses).
+New usage of "funcnvqpOLD" is discouraged (0 uses).
+New usage of "funcnvtpOLD" is discouraged (0 uses).
 New usage of "funcocnv2OLD" is discouraged (0 uses).
 New usage of "funcringcsetcALTV" is discouraged (0 uses).
 New usage of "funcringcsetcALTV2" is discouraged (0 uses).
@@ -20633,6 +20638,9 @@ Proof modification of "frege98" is discouraged (116 steps).
 Proof modification of "frgrwopreglem5ALT" is discouraged (519 steps).
 Proof modification of "fsetprcnexALT" is discouraged (190 steps).
 Proof modification of "fuco11bALT" is discouraged (199 steps).
+Proof modification of "funcnvprOLD" is discouraged (131 steps).
+Proof modification of "funcnvqpOLD" is discouraged (211 steps).
+Proof modification of "funcnvtpOLD" is discouraged (183 steps).
 Proof modification of "funcocnv2OLD" is discouraged (62 steps).
 Proof modification of "funcrngcsetcALT" is discouraged (765 steps).
 Proof modification of "fundcmpsurinjALT" is discouraged (221 steps).

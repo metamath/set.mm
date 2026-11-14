@@ -59971,6 +59971,14 @@ $)
       ( wcel wa cop csn cdm cun cpr wceq dmsnopg uneq12 syl2an df-pr dmeqi dmun
       eqtri 3eqtr4g ) BEGZDFGZHABIZJZKZCDIZJZKZLZAJZCJZLZUEUHMZKZACMUCUGULNUJUM
       NUKUNNUDABEOCDFOUGULUJUMPQUPUFUILZKUKUOUQUEUHRSUFUITUAACRUB $.
+
+    $( The domain of an unordered pair of ordered pairs is a subset of the pair
+       of the first members (with no sethood assumptions on ` B ` or ` D ` ).
+       (Contributed by Eric Schmidt, 14-Nov-2026.) $)
+    dmpropss $p |- dom { <. A , B >. , <. C , D >. } C_ { A , C } $=
+      ( cop csn cdm cun cpr wss dmsnopss unss12 mp2an df-pr dmeqi eqtri 3sstr4i
+      dmun ) ABEZFZGZCDEZFZGZHZAFZCFZHZSUBIZGZACIUAUFJUDUGJUEUHJABKCDKUAUFUDUGL
+      MUJTUCHZGUEUIUKSUBNOTUCRPACNQ $.
   $}
 
   ${
@@ -60029,6 +60037,13 @@ $)
     ( wcel cop csn crn cdm ccnv df-rn dfdm4 cnvcnvsn dmeqi 3eqtri eqtr4i eqtrid
     dmsnopg ) ACDABEFZGZBAEFZHZBFSRIZHZUARJUATIZGUDIZHUCTKUDJUEUBBALMNOBACQP $.
 
+  $( The range of a singleton of an ordered pair is a subset of the singleton
+     of the second member (with no sethood assumptions on ` A ` ).
+     (Contributed by Eric Schmidt, 14-Nov-2026.) $)
+  rnsnopss $p |- ran { <. A , B >. } C_ { B } $=
+    ( cop csn crn cdm df-rn dfdm4 cnvcnvsn dmeqi 3eqtri eqtr4i dmsnopss eqsstri
+    ccnv ) ABCDZEZBACDZFZBDQPOZFZSPGSROZEUBOZFUARHUBGUCTBAIJKLBAMN $.
+
   $( The range of a pair of ordered pairs is the pair of second members.
      (Contributed by Thierry Arnoux, 3-Jan-2017.) $)
   rnpropg $p |- ( ( A e. V /\ B e. W )
@@ -60036,6 +60051,14 @@ $)
     ( wcel cop cpr crn csn cun df-pr rneqi wceq rnsnopg adantr adantl uneq12d
     wa rnun 3eqtr4g eqtrid ) AEGZBFGZTZACHZBDHZIZJUGKZUHKZLZJZCDIZUIULUGUHMNUFU
     JJZUKJZLCKZDKZLUMUNUFUOUQUPURUDUOUQOUEACEPQUEUPUROUDBDFPRSUJUKUACDMUBUC $.
+
+  $( The range of an unordered pair of ordered pairs is a subset of the pair of
+     the second members (with no sethood assumptions on ` A ` or ` C ` ).
+     (Contributed by Eric Schmidt, 14-Nov-2026.) $)
+  rnpropss $p |- ran { <. A , B >. , <. C , D >. } C_ { B , D } $=
+    ( cop csn crn cun cpr rnsnopss unss12 mp2an df-pr rneqi rnun eqtri 3sstr4i
+    wss ) ABEZFZGZCDEZFZGZHZBFZDFZHZSUBIZGZBDIUAUFRUDUGRUEUHRABJCDJUAUFUDUGKLUJ
+    TUCHZGUEUIUKSUBMNTUCOPBDMQ $.
 
   $( Converse of a singleton of an ordered pair.  (Contributed by NM,
      23-Jan-2015.)  (Proof shortened by BJ, 12-Feb-2022.) $)
@@ -63704,9 +63727,20 @@ $)
   $}
 
   $( The converse pair of ordered pairs is a function if the second members are
-     different.  Note that the second members need not be sets.  (Contributed
-     by AV, 23-Jan-2021.) $)
-  funcnvpr $p |- ( ( A e. U /\ C e. V /\ B =/= D )
+     different.  (Contributed by AV, 23-Jan-2021.)  Remove sethood antecedent.
+     (Revised by Eric Schmidt, 14-Nov-2026.) $)
+  funcnvpr $p |- ( B =/= D -> Fun `' { <. A , B >. , <. C , D >. } ) $=
+    ( wne cop csn ccnv cun wfun cpr cdm cin c0 funcnvsn df-rn rnsnopss eqsstrri
+    wss crn wa wceq pm3.2i ss2in mp2an disjsn2 sseqtrid ss0 funun sylancr df-pr
+    syl cnveqi cnvun eqtri funeqi sylibr ) BDEZABFZGZHZCDFZGZHZIZJZUSVBKZHZJURV
+    AJZVDJZUAVALZVDLZMZNUBZVFVIVJABOCDOUCURVMNSVNURBGZDGZMZVMNVKVOSVLVPSVMVQSVK
+    UTTVOUTPABQRVLVCTVPVCPCDQRVKVOVLVPUDUEBDUFUGVMUHULVAVDUIUJVHVEVHUTVCIZHVEVG
+    VRUSVBUKUMUTVCUNUOUPUQ $.
+
+  $( Obsolete version of ~ funcnvpr as of 14-Nov-2026.
+     (Proof modification is discouraged.)  (New usage is discouraged.)
+     (Contributed by AV, 23-Jan-2021.) $)
+  funcnvprOLD $p |- ( ( A e. U /\ C e. V /\ B =/= D )
                    -> Fun `' { <. A , B >. , <. C , D >. } ) $=
     ( wcel cop csn ccnv cun wfun cdm cin c0 wceq funcnvsn crn df-rn rnsnopg wne
     w3a cpr pm3.2i eqtr3id ineqan12d 3adant3 disjsn2 3ad2ant3 eqtrd funun df-pr
@@ -63716,37 +63750,66 @@ $)
     FVIUKUNVMVJVMVEVHKZJVJVLWBVDVGULUOVEVHUPUQURUS $.
 
   $( The converse triple of ordered pairs is a function if the second members
-     are pairwise different.  Note that the second members need not be sets.
+     are pairwise different.  (Contributed by AV, 23-Jan-2021.)  Remove sethood
+     antecedents.  (Revised by Eric Schmidt, 14-Nov-2026.) $)
+  funcnvtp $p |- ( ( B =/= D /\ B =/= F /\ D =/= F )
+                   -> Fun `' { <. A , B >. , <. C , D >. , <. E , F >. } ) $=
+    ( wne cop cpr ccnv csn cun wfun cdm cin c0 wceq wss crn df-rn w3a ctp ss2in
+    funcnvpr 3ad2ant1 funcnvsn a1i rnpropss eqsstrri rnsnopss disjprsn sseqtrid
+    mp2an 3adant1 ss0 syl funun syl21anc df-tp cnveqi cnvun eqtri funeqi sylibr
+    ) BDGZBFGZDFGZUAZABHZCDHZIZJZEFHZKZJZLZMZVIVJVMUBZJZMVHVLMZVOMZVLNZVONZOZPQ
+    ZVQVEVFVTVGABCDUDUEWAVHEFUFUGVHWDPRWEVHBDIZFKZOZWDPWBWFRWCWGRWDWHRWBVKSWFVK
+    TABCDUHUIWCVNSWGVNTEFUJUIWBWFWCWGUCUMVFVGWHPQVEBDFUKUNULWDUOUPVLVOUQURVSVPV
+    SVKVNLZJVPVRWIVIVJVMUSUTVKVNVAVBVCVD $.
+
+  $( Obsolete version of ~ funcnvtp as of 14-Nov-2026.
+     (Proof modification is discouraged.)  (New usage is discouraged.)
      (Contributed by AV, 23-Jan-2021.) $)
-  funcnvtp $p |- ( ( ( A e. U /\ C e. V /\ E e. W )
+  funcnvtpOLD $p |- ( ( ( A e. U /\ C e. V /\ E e. W )
                      /\ ( B =/= D /\ B =/= F /\ D =/= F ) )
                    -> Fun `' { <. A , B >. , <. C , D >. , <. E , F >. } ) $=
     ( wcel w3a wne wa cop cpr ccnv csn wfun c0 wceq cun ctp cdm cin simp1 simp2
-    funcnvpr syl2an3an funcnvsn a1i crn rnpropg eqtr3id 3adant3 rnsnopg ineq12d
-    df-rn 3ad2ant3 disjprsn 3adant1 sylan9eq funun syl21anc df-tp cnveqi funeqi
-    cnvun eqtri sylibr ) AEJZCHJZFIJZKZBDLZBGLZDGLZKZMZABNZCDNZOZPZFGNZQZPZUAZR
-    ZVSVTWCUBZPZRVRWBRZWERZWBUCZWEUCZUDZSTWGVMVJVKVQVNWJVJVKVLUEVJVKVLUFVNVOVPU
-    EABCDEHUGUHWKVRFGUIUJVMVQWNBDOZGQZUDZSVMWLWOWMWPVJVKWLWOTVLVJVKMWLWAUKWOWAU
-    QACBDEHULUMUNVLVJWMWPTVKVLWMWDUKWPWDUQFGIUOUMURUPVOVPWQSTVNBDGUSUTVAWBWEVBV
-    CWIWFWIWAWDUAZPWFWHWRVSVTWCVDVEWAWDVGVHVFVI $.
+    funcnvprOLD syl2an3an funcnvsn a1i rnpropg eqtr3id 3adant3 rnsnopg 3ad2ant3
+    crn df-rn ineq12d disjprsn sylan9eq funun syl21anc df-tp cnveqi cnvun eqtri
+    3adant1 funeqi sylibr ) AEJZCHJZFIJZKZBDLZBGLZDGLZKZMZABNZCDNZOZPZFGNZQZPZU
+    AZRZVSVTWCUBZPZRVRWBRZWERZWBUCZWEUCZUDZSTWGVMVJVKVQVNWJVJVKVLUEVJVKVLUFVNVO
+    VPUEABCDEHUGUHWKVRFGUIUJVMVQWNBDOZGQZUDZSVMWLWOWMWPVJVKWLWOTVLVJVKMWLWAUPWO
+    WAUQACBDEHUKULUMVLVJWMWPTVKVLWMWDUPWPWDUQFGIUNULUOURVOVPWQSTVNBDGUSVGUTWBWE
+    VAVBWIWFWIWAWDUAZPWFWHWRVSVTWCVCVDWAWDVEVFVHVI $.
 
   $( The converse quadruple of ordered pairs is a function if the second
-     members are pairwise different.  Note that the second members need not be
-     sets.  (Contributed by AV, 23-Jan-2021.)  (Proof shortened by JJ,
+     members are pairwise different.  (Contributed by AV, 23-Jan-2021.)  (Proof
+     shortened by JJ, 14-Jul-2021.)  Remove sethood antecedents.  (Revised by
+     Eric Schmidt, 14-Nov-2026.) $)
+  funcnvqp $p |- ( ( ( B =/= D /\ B =/= F /\ B =/= H )
+                      /\ ( D =/= F /\ D =/= H ) /\ F =/= H )
+                   -> Fun `' ( { <. A , B >. , <. C , D >. }
+                               u. { <. E , F >. , <. G , H >. } ) ) $=
+    ( wne w3a wa cop cpr ccnv cun wfun cdm cin c0 wss wceq funcnvpr df-rn ss2in
+    3ad2ant1 3ad2ant3 crn rnpropss eqsstrri mp2an disjpr2 sseqtrid ss0 syl an4s
+    3adantl1 3adant3 funun syl21anc cnvun funeqi sylibr ) BDIZBFIZBHIZJZDFIZDHI
+    ZKZFHIZJZABLCDLMZNZEFLGHLMZNZOZPZVLVNONZPVKVMPZVOPZVMQZVOQZRZSUAZVQVFVIVSVJ
+    VCVDVSVEABCDUBUEUEVJVFVTVIEFGHUBUFVFVIWDVJVDVEVIWDVCVDVGVEVHWDVDVGKVEVHKKZW
+    CSTWDWEBDMZFHMZRZWCSWAWFTWBWGTWCWHTWAVLUGWFVLUCABCDUHUIWBVNUGWGVNUCEFGHUHUI
+    WAWFWBWGUDUJBDFHUKULWCUMUNUOUPUQVMVOURUSVRVPVLVNUTVAVB $.
+
+  $( Obsolete version of ~ funcnvqp as of 14-Nov-2026.
+     (Proof modification is discouraged.)  (New usage is discouraged.)
+     (Contributed by AV, 23-Jan-2021.)  (Proof shortened by JJ,
      14-Jul-2021.) $)
-  funcnvqp $p |- ( ( ( ( A e. U /\ C e. V ) /\ ( E e. W /\ G e. T ) )
+  funcnvqpOLD $p |- ( ( ( ( A e. U /\ C e. V ) /\ ( E e. W /\ G e. T ) )
                      /\ ( ( B =/= D /\ B =/= F /\ B =/= H )
                           /\ ( D =/= F /\ D =/= H ) /\ F =/= H ) )
                    -> Fun `' ( { <. A , B >. , <. C , D >. }
                                u. { <. E , F >. , <. G , H >. } ) ) $=
-    ( wcel wa wne cop cpr ccnv wfun c0 w3a cun cdm cin funcnvpr 3expa 3ad2antr1
-    wceq ad2ant2r 3adantr2 ad2ant2l crn df-rn rnpropg eqtr3id ineqan12d disjpr2
-    an4s 3adantl1 3adant3 sylan9eq funun syl21anc cnvun funeqi sylibr ) AFMZCKM
-    ZNZGLMZIEMZNZNZBDOZBHOZBJOZUAZDHOZDJOZNZHJOZUAZNZABPCDPQZRZGHPIJPQZRZUBZSZW
-    DWFUBRZSWCWESZWGSZWEUCZWGUCZUDZTUHWIVMVQWAWKVTVIVQWKVLWAVIVOVNWKVPVGVHVNWKA
-    BCDFKUEUFUGUIUJVMVQWAWLVTVLWAWLVIVQVJVKWAWLGHIJLEUEUFUKUJVMWBWOBDQZHJQZUDZT
-    VIVLWMWPWNWQVIWMWDULWPWDUMACBDFKUNUOVLWNWFULWQWFUMGIHJLEUNUOUPVQVTWRTUHZWAV
-    OVPVTWSVNVOVRVPVSWSBDHJUQURUSUTVAWEWGVBVCWJWHWDWFVDVEVF $.
+    ( wcel wa wne cop cpr ccnv wfun c0 w3a cun wceq funcnvprOLD 3expa 3ad2antr1
+    cdm cin ad2ant2r 3adantr2 ad2ant2l crn df-rn rnpropg eqtr3id ineqan12d an4s
+    disjpr2 3adantl1 3adant3 sylan9eq funun syl21anc cnvun funeqi sylibr ) AFMZ
+    CKMZNZGLMZIEMZNZNZBDOZBHOZBJOZUAZDHOZDJOZNZHJOZUAZNZABPCDPQZRZGHPIJPQZRZUBZ
+    SZWDWFUBRZSWCWESZWGSZWEUGZWGUGZUHZTUCWIVMVQWAWKVTVIVQWKVLWAVIVOVNWKVPVGVHVN
+    WKABCDFKUDUEUFUIUJVMVQWAWLVTVLWAWLVIVQVJVKWAWLGHIJLEUDUEUKUJVMWBWOBDQZHJQZU
+    HZTVIVLWMWPWNWQVIWMWDULWPWDUMACBDFKUNUOVLWNWFULWQWFUMGIHJLEUNUOUPVQVTWRTUCZ
+    WAVOVPVTWSVNVOVRVPVSWSBDHJURUQUSUTVAWEWGVBVCWJWHWDWFVDVEVF $.
 
   $( The empty set is a function.  Theorem 10.3 of [Quine] p. 65.  (Contributed
      by NM, 7-Apr-1998.) $)
@@ -169478,9 +169541,9 @@ $)
   $( The converse of a length 2 word is a function if its symbols are different
      sets.  (Contributed by AV, 23-Jan-2021.) $)
   funcnvs2 $p |- ( ( A e. V /\ B e. V /\ A =/= B ) -> Fun `' <" A B "> ) $=
-    ( wcel wne w3a cs2 ccnv wfun cc0 cop c1 cpr cvv 1ex simp3 funcnvpr mp3an12i
-    c0ex wceq s2prop 3adant3 cnveqd funeqd mpbird ) ACDZBCDZABEZFZABGZHZIJAKLBK
-    MZHZIZJNDLNDUIUHUNSOUFUGUHPJALBNNQRUIUKUMUIUJULUFUGUJULTUHABCUAUBUCUDUE $.
+    ( wcel wne w3a cs2 ccnv wfun cc0 cop c1 cpr funcnvpr 3ad2ant3 s2prop cnveqd
+    wceq 3adant3 funeqd mpbird ) ACDZBCDZABEZFZABGZHZIJAKLBKMZHZIZUDUBUJUCJALBN
+    OUEUGUIUEUFUHUBUCUFUHRUDABCPSQTUA $.
 
   $( The converse of a length 3 word is a function if its symbols are different
      sets.  (Contributed by Alexander van der Vekens, 31-Jan-2018.)  (Revised
@@ -169488,10 +169551,9 @@ $)
   funcnvs3 $p |- ( ( ( A e. V /\ B e. V /\ C e. V )
                      /\ ( A =/= B /\ A =/= C /\ B =/= C ) )
                    -> Fun `' <" A B C "> ) $=
-    ( wcel w3a wne wa cs3 ccnv wfun cc0 cop c1 c2 ctp cvv c0ex 1ex 2ex funcnvtp
-    3pm3.2i a1i sylan wceq s3tpop adantr cnveqd funeqd mpbird ) ADEBDECDEFZABGA
-    CGBCGFZHZABCIZJZKLAMNBMOCMPZJZKZUKLQEZNQEZOQEZFZULURVBUKUSUTVARSTUBUCLANBQO
-    CQQUAUDUMUOUQUMUNUPUKUNUPUEULABCDUFUGUHUIUJ $.
+    ( wcel w3a wne wa cs3 ccnv wfun cc0 cop c1 ctp funcnvtp adantl wceq s3tpop
+    c2 adantr cnveqd funeqd mpbird ) ADEBDECDEFZABGACGBCGFZHZABCIZJZKLAMNBMTCMO
+    ZJZKZUFULUELANBTCPQUGUIUKUGUHUJUEUHUJRUFABCDSUAUBUCUD $.
 
   $( The converse of a length 4 word is a function if its symbols are different
      sets.  (Contributed by AV, 10-Feb-2021.) $)
@@ -169499,11 +169561,10 @@ $)
                      /\ ( ( A =/= B /\ A =/= C /\ A =/= D )
                           /\ ( B =/= C /\ B =/= D ) /\ C =/= D ) )
                    -> Fun `' <" A B C D "> ) $=
-    ( wcel wa wne w3a cs4 ccnv wfun cc0 cop c1 cpr c2 c3 cvv pm3.2i cun 1ex 2ex
-    c0ex 3ex a1i funcnvqp sylan wceq s4prop adantr cnveqd funeqd mpbird ) AEFBE
-    FGCEFDEFGGZABHACHADHIBCHBDHGCDHIZGZABCDJZKZLMANOBNPQCNRDNPUAZKZLZUOMSFZOSFZ
-    GZQSFZRSFZGZGZUPVBVIUOVEVHVCVDUDUBTVFVGUCUETTUFMAOBSSQCRDSSUGUHUQUSVAUQURUT
-    UOURUTUIUPABCDEUJUKULUMUN $.
+    ( wcel wa wne w3a cs4 ccnv wfun cc0 cop c1 cpr c2 c3 cun funcnvqp adantl
+    wceq s4prop adantr cnveqd funeqd mpbird ) AEFBEFGCEFDEFGGZABHACHADHIBCHBDHG
+    CDHIZGZABCDJZKZLMANOBNPQCNRDNPSZKZLZUIUOUHMAOBQCRDTUAUJULUNUJUKUMUHUKUMUBUI
+    ABCDEUCUDUEUFUG $.
 
   $( A length 2 word with mutually different symbols is a one-to-one function
      onto the set of the symbols.  (Contributed by Alexander van der Vekens,
