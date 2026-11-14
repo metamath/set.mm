@@ -12790,8 +12790,8 @@ $)
           'ad6antlr' 'ad6antr' 'ad7antlr' 'ad7antr'
           'ad8antlr' 'ad8antr' 'ad9antlr' 'ad9antr'
           'ad10antlr' 'ad10antr'
-          'anidms' 'ancoms' 'anasss' 'anassrs' 'an12s'  'ancom2s' 'an13s'
-          'an32s' 'ancom1s' 'an31s' 'anass1rs' 'anabsan'  'anabss1' 'anabss4'
+          'anidms' 'ancoms' 'anasss' 'anassrs' 'an12s' 'ancom2s' 'an13s'
+          'an32s' 'ancom1s' 'an31s' 'anass1rs' 'anabsan' 'anabss1' 'anabss4'
           'anabss5' 'anabss7' 'anabsan2' 'anabss3' 'an4s' 'an42s'
           'anandis' 'anandirs'; $)
 
@@ -17842,8 +17842,15 @@ $)
   ${
     sbbii.1 $e |- ( ph <-> ps ) $.
     $( Infer substitution into both sides of a logical equivalence.
-       (Contributed by NM, 14-May-1993.) $)
+       (Contributed by NM, 14-May-1993.)  (Proof shortened by BJ,
+       14-Nov-2026.) $)
     sbbii $p |- ( [ t / x ] ph <-> [ t / x ] ps ) $=
+      ( wb wsb spsbbi mpg ) ABFACDGBCDGFCABCDHEI $.
+
+    $( Obsolete version of ~ sbbii as of 14-Nov-2026.  (Contributed by NM,
+       14-May-1993.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    sbbiiOLD $p |- ( [ t / x ] ph <-> [ t / x ] ps ) $=
       ( wsb biimpi sbimi biimpri impbii ) ACDFBCDFABCDABEGHBACDABEIHJ $.
 
     $( Infer double substitution into both sides of a logical equivalence.
@@ -30834,7 +30841,7 @@ $)
     nfraldw $p |- ( ph -> F/ x A. y e. A ps ) $=
       ( wral cv wcel wi wal df-ral nfcrd nfimd nfald nfxfrd ) BDEIDJEKZBLZDMACB
       DENATCDFASBCACDEGOHPQR $.
-    $( $j usage 'nfraldw' avoids 'ax-13' 'ax-9' 'df-cleq' 'ax-ext'; $)
+    $( $j usage 'nfraldw' avoids 'ax-9' 'ax-13' 'df-cleq' 'ax-ext'; $)
 
     $( Deduction version of ~ nfrexw .  (Contributed by Mario Carneiro,
        14-Oct-2016.)  Add disjoint variable condition to avoid ~ ax-13 .  See
@@ -32436,7 +32443,7 @@ $)
       ( vy cab wtru wceq wsb wal cvv cv wcel wb dfcleq vextru tbt df-clab albii
       bitr3i bitri dfv2 eqeq2i sb8v 3bitr4i ) ABDZEBDZFZABCGZCHZUDIFABHUFCJZUDK
       ZUIUEKZLZCHUHCUDUEMULUGCULUJUGUKUJBCNOACBPRQSIUEUDBTUAABCUBUC $.
-    $( $j usage 'abv' avoids 'df-clel' 'ax-8' 'ax-13'; $)
+    $( $j usage 'abv' avoids 'ax-8' 'ax-10' 'ax-12' 'ax-13' 'df-clel'; $)
   $}
 
   ${
@@ -32447,6 +32454,7 @@ $)
     abvALT $p |- ( { x | ph } = _V <-> A. x ph ) $=
       ( vy cv cab wcel wal wsb cvv wceq df-clab albii eqv sb8v 3bitr4i ) CDABEZ
       FZCGABCHZCGPIJABGQRCACBKLCPMABCNO $.
+    $( $j usage 'abvALT' avoids 'ax-10' 'ax-12' 'ax-13'; $)
   $}
 
   ${
@@ -34718,7 +34726,7 @@ $)
     ralab $p |- ( A. x e. { y | ph } ch <-> A. x ( ps -> ch ) ) $=
       ( cab wral cv wcel wi wal df-ral wsb df-clab sbievw bitri imbi1i albii )
       CDAEGZHDITJZCKZDLBCKZDLCDTMUBUCDUABCUAAEDNBADEOABEDFPQRSQ $.
-    $( $j usage 'ralab' avoids 'ax-8' 'ax-9' 'df-clel' 'df-cleq' 'ax-ext'; $)
+    $( $j usage 'ralab' avoids 'ax-8' 'ax-9' 'df-cleq' 'df-clel' 'ax-ext'; $)
 
     $( Universal quantification over a restricted class abstraction.
        (Contributed by Jeff Madsen, 10-Jun-2010.) $)
@@ -34732,7 +34740,7 @@ $)
     rexab $p |- ( E. x e. { y | ph } ch <-> E. x ( ps /\ ch ) ) $=
       ( cab wrex wa wn wal wex wi wral dfrex2 ralab xchbinx imnang df-ex bitr4i
       ) CDAEGZHZBCIZJDKZJUCDLUBBCJZMDKZUDUBUEDUANUFCDUAOABUEDEFPQBCDRQUCDST $.
-    $( $j usage 'rexab' avoids 'ax-8' 'ax-9' 'df-clel' 'df-cleq' 'ax-ext'; $)
+    $( $j usage 'rexab' avoids 'ax-8' 'ax-9' 'df-cleq' 'df-clel' 'ax-ext'; $)
 
     $( Existential quantification over a class abstraction.  (Contributed by
        Jeff Madsen, 17-Jun-2011.)  (Revised by Mario Carneiro, 3-Sep-2015.) $)
@@ -37841,7 +37849,7 @@ $)
       ( vx cv wcel wi wal wss imim1 al2imi df-ss imbi12i 3imtr4i ) DEZAFZOBFZGZ
       DHQOCFZGZDHZPSGZDHZGABIBCIZACIZGRTUBDPQSJKDABLUDUAUEUCDBCLDACLMN $.
     $( $j usage 'sstr2' avoids 'ax-5' 'ax-6' 'ax-7' 'ax-8' 'ax-9' 'ax-10'
-       'ax-11' 'ax-12' 'ax-ext' 'df-clel' 'df-cleq'; $)
+       'ax-11' 'ax-12' 'ax-ext' 'df-cleq' 'df-clel'; $)
   $}
 
   $( Transitivity of subclass relationship.  Theorem 6 of [Suppes] p. 23.
@@ -38350,7 +38358,7 @@ $)
       ( wss cv wcel wi wal wral df-ss imim1 al2imi df-ral 3imtr4g sylbi ) CDEBF
       ZCGZQDGZHZBIZABDJZABCJZHBCDKUASAHZBIRAHZBIUBUCTUDUEBRSALMABDNABCNOP $.
     $( $j usage 'ssralv' avoids 'ax-5' 'ax-6' 'ax-7' 'ax-8' 'ax-9' 'ax-ext'
-       'df-clel' 'df-cleq'; $)
+       'df-cleq' 'df-clel'; $)
 
     $( Existential quantification restricted to a subclass.  (Contributed by
        NM, 11-Jan-2007.)  Avoid axioms.  (Revised by GG, 19-May-2025.) $)
@@ -38359,7 +38367,7 @@ $)
       wa ) CDEBFZCGZSDGZHZBIZABCJZABDJZHBCDKUCTARZBLUAARZBLUDUEUBUFUGBTUAAMNABC
       OABDOPQ $.
     $( $j usage 'ssrexv' avoids 'ax-5' 'ax-6' 'ax-7' 'ax-8' 'ax-9' 'ax-ext'
-       'df-clel' 'df-cleq'; $)
+       'df-cleq' 'df-clel'; $)
 
     $d y A $.  $d y B $.
     $( Two quantifications restricted to a subclass.  (Contributed by AV,
@@ -38447,8 +38455,8 @@ $)
     ss2abdv $p |- ( ph -> { x | ps } C_ { x | ch } ) $=
       ( vy cab wsb cv wcel sbimdv df-clab 3imtr4g ssrdv ) AFBDGZCDGZABDFHCDFHFI
       ZOJQPJABCDFEKBFDLCFDLMN $.
-    $( $j usage 'ss2abdv' avoids 'ax-8' 'ax-9' 'ax-10' 'ax-11'  'ax-12'
-       'df-clel' 'df-cleq' 'ax-ext' ; $)
+    $( $j usage 'ss2abdv' avoids 'ax-8' 'ax-9' 'ax-10' 'ax-11' 'ax-12'
+       'df-cleq' 'df-clel' 'ax-ext' ; $)
   $}
 
   ${
@@ -42431,7 +42439,7 @@ $)
     ( wral cv wcel wi df-ral ax-1 axc4i pm2.21 sp ja alimi impbii bicomi imbi2i
     wal albii 3bitrri bitri ) ABCDZBCDBECFZUBGZBRZUBUBBCHUBUCAGZBRZUCUGGZBRZUEA
     BCHZUGUIUFUHBUGUCIJUHUFBUCUGUFUCAKUFBLMNOUHUDBUGUBUCUBUGUJPQSTUA $.
-  $( $j usage 'ralidm' avoids 'df-clel' 'df-cleq' 'ax-8' 'ax-9' 'ax-ext'; $)
+  $( $j usage 'ralidm' avoids 'df-cleq' 'df-clel' 'ax-8' 'ax-9' 'ax-ext'; $)
 
   ${
     $d x y A $.
@@ -605258,7 +605266,7 @@ $)
       JVQVFVQVJFAELMNOVSAPZVPFUEZSZVFIZAJBPZWDSZVGIZBJWBVRWFAVQWEVFWEVQVPAFQMNO
       WEWCDPZSIAJWDWJUFWHWGWJSIBJAWDWJRBWDWJRUGWIWABWHVTVGVPBFQNOTWAVLBVTVKVGFB
       ELNOTUHVLBUIUMUNUJUKULUOEAUPUQVAVCVFVGVDVCVFICDCDAURUODCBURUSUTDCUPUQ $.
-    $( $j usage 'ss-ax8' avoids 'ax-8' 'ax-ext' 'df-clel' 'df-cleq'; $)
+    $( $j usage 'ss-ax8' avoids 'ax-8' 'ax-ext' 'df-cleq' 'df-clel'; $)
   $}
 
 
@@ -611893,8 +611901,8 @@ $(
   Derived rules of inference
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
-  In this section, we prove a few rules of inference derived from _modus
-  ponens_ ~ ax-mp , and which do not depend on any other axioms.
+  In this section, we prove a few rules of inference derived from modus ponens
+  ~ ax-mp , and which do not depend on any other axioms.
 
 $)
 
@@ -611906,6 +611914,7 @@ $)
        (Contributed by BJ, 24-Sep-2019.) $)
     bj-mp2c $p |- ch $=
       ( ax-mp mp2 ) ABCFABFEGDH $.
+    $( $j usage 'bj-mp2c' avoids 'ax-1' 'ax-2'; $)
   $}
 
   ${
@@ -611916,6 +611925,7 @@ $)
        (Contributed by BJ, 24-Sep-2019.) $)
     bj-mp2d $p |- ch $=
       ( ax-mp mp2 ) BACABFEGFDH $.
+    $( $j usage 'bj-mp2d' avoids 'ax-1' 'ax-2'; $)
   $}
 
 
@@ -611978,7 +611988,7 @@ $)
     $( Inference associated with "pon", ~ pm2.27 .  Its associated inference is
        ~ ax-mp .  (Contributed by BJ, 30-Jul-2024.) $)
     bj-poni $p |- ( ( ph -> ps ) -> ps ) $=
-      ( wi pm2.27 ax-mp ) AABDBDCABEF $.
+      ( wi id mpi ) ABDZABCGEF $.
   $}
 
   $( When ` F. ` is substituted for ` ps ` , this formula is the Clavius law
@@ -611994,15 +612004,15 @@ $)
        instance of ~ syl .  Notice the non-intuitionistic proof from
        ~ bj-peircei and ~ bj-poni .  (Contributed by BJ, 30-Jul-2024.) $)
     bj-nnclavi $p |- ( ( ph -> ps ) -> ps ) $=
-      ( wi bj-nnclav ax-mp ) ABDZADGBDCABEF $.
+      ( wi id mpd ) ABDZABCGEF $.
   $}
 
-  $( Commuted form of ~ bj-nnclav .  Notice the non-intuitionistic proof from
-     ~ bj-peircei and ~ imim1i .  (Contributed by BJ, 30-Jul-2024.)  A proof
-     which is shorter when compressed uses ~ embantd .
+  $( Commuted form of ~ bj-nnclav (so it could also be proved by applying
+     ~ com12 to it).  Notice the non-intuitionistic proof from ~ bj-peircei and
+     ~ imim1i .  (Contributed by BJ, 30-Jul-2024.)
      (Proof modification is discouraged.) $)
   bj-nnclavc $p |- ( ( ph -> ps ) -> ( ( ( ph -> ps ) -> ph ) -> ps ) ) $=
-    ( wi bj-nnclav com12 ) ABCZACFBABDE $.
+    ( wi id embantd ) ABCZFABFDZGE $.
 
   ${
     bj-nnclavci.1 $e |- ( ph -> ps ) $.
@@ -612010,7 +612020,7 @@ $)
        instance of ~ syl .  Notice the non-intuitionistic proof from ~ peirce
        and ~ syl .  (Contributed by BJ, 30-Jul-2024.) $)
     bj-nnclavci $p |- ( ( ( ph -> ps ) -> ph ) -> ps ) $=
-      ( wi bj-nnclavc ax-mp ) ABDZGADBDCABEF $.
+      ( wi bj-nnclav mpi ) ABDZADGBCABEF $.
   $}
 
   ${
@@ -612021,7 +612031,7 @@ $)
        29-Mar-2020.)  (Proof modification is discouraged.) $)
     bj-jarrii $p |- ch $=
       ( wi a1i ax-mp ) ABFCBAEGDH $.
-      $( $j usage 'bj-jarrii' avoids 'ax-2' 'ax-3'; $)
+    $( $j usage 'bj-jarrii' avoids 'ax-2' 'ax-3'; $)
   $}
 
   $( The propositional function ` ( ph -> ( . -> ps ) ) ` is decreasing.
@@ -612035,7 +612045,7 @@ $)
     $( The propositional function ` ( ph -> ( . -> ps ) ) ` is decreasing.  Its
        associated inference is ~ syl5 .  (Contributed by BJ, 19-Jul-2019.) $)
     bj-imim21i $p |- ( ( ch -> ( ps -> th ) ) -> ( ch -> ( ph -> th ) ) ) $=
-      ( wi bj-imim21 ax-mp ) ABFCBDFFCADFFFEABCDGH $.
+      ( wi imim1i imim2i ) BDFADFCABDEGH $.
   $}
 
   $( The propositional function ` ( ( . -> ph ) -> ps ) ` is increasing.
@@ -612050,7 +612060,7 @@ $)
        associated inference is ~ wl-syls2 .  (Contributed by BJ,
        3-Apr-2026.) $)
     bj-imim11i $p |- ( ( ( ph -> ch ) -> th ) -> ( ( ps -> ch ) -> th ) ) $=
-      ( wi bj-imim11 ax-mp ) ABFACFDFBCFDFFEABCDGH $.
+      ( wi imim1i ) BCFACFDABCEGG $.
   $}
 
   $( Over minimal implicational calculus, Peirce's law implies the double
@@ -616573,8 +616583,10 @@ $)
   $( The class of sets verifying a tautology is the universal class.
      (Contributed by BJ, 24-Jul-2019.)  (Proof modification is discouraged.) $)
   bj-abv $p |- ( A. x ph -> { x | ph } = _V ) $=
-    ( wal cab wtru cvv wb wceq trud simpl impbida alimi abbi syl dfv2 eqtr4di
-    wa ) ABCZABDZEBDZFRAEGZBCSTHAUABAAEAAQIAEJKLAEBMNBOP $.
+    ( wal cab wtru cvv wb wceq tbtru albii abbi sylbi dfv2 eqtr4di ) ABCZABDZEB
+    DZFOAEGZBCPQHARBAIJAEBKLBMN $.
+  $( $j usage 'bj-abv' avoids 'ax-8' 'ax-10' 'ax-11' 'ax-12' 'ax-13'
+     'df-clel'; $)
 
   ${
     $d y x $.  $d y ph $.
@@ -616584,6 +616596,7 @@ $)
     bj-abvALT $p |- ( A. x ph -> { x | ph } = _V ) $=
       ( vy wal cv cab wcel cvv wceq ax-5 vexwt alrimih eqv sylibr ) ABDZCEABFZG
       ZCDPHIOQCOCJABCKLCPMN $.
+    $( $j usage 'bj-abvALT' avoids 'ax-10' 'ax-11' 'ax-12' 'ax-13'; $)
   $}
 
   ${
@@ -660626,7 +660639,7 @@ $)
     isatlat.l $e |- .<_ = ( le ` K ) $.
     isatlat.z $e |- .0. = ( 0. ` K ) $.
     isatlat.a $e |- A = ( Atoms ` K ) $.
-    $( The predicate "is an atomic lattice."  Every nonzero element is less
+    $( The predicate "is an atomic lattice".  Every nonzero element is less
        than or equal to an atom.  (Contributed by NM, 18-Sep-2011.)  (Revised
        by NM, 14-Sep-2018.) $)
     isatl $p |- ( K e. AtLat <-> ( K e. Lat /\ B e. dom G
@@ -700482,7 +700495,7 @@ $)
 
       $d h K $.  $d h T $.  $d h W $.
       dihglbb.o $e |- O = ( h e. T |-> ( _I |` B ) ) $.
-      $( Isomorphism H of a lattice glb when the glb is  under the
+      $( Isomorphism H of a lattice glb when the glb is under the
          fiduial hyperplane ` W ` . $)
 $(
       dihglbb $p |- ( ( ( K e. HL /\ W e. H ) /\ ( S C_ B /\ S =/= (/) )

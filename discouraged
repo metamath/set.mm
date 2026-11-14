@@ -18996,6 +18996,7 @@ New usage of "sb9" is discouraged (1 uses).
 New usage of "sb9i" is discouraged (0 uses).
 New usage of "sbal1" is discouraged (0 uses).
 New usage of "sbal2" is discouraged (2 uses).
+New usage of "sbbiiOLD" is discouraged (0 uses).
 New usage of "sbc3or" is discouraged (1 uses).
 New usage of "sbc3orgVD" is discouraged (0 uses).
 New usage of "sbc5ALT" is discouraged (0 uses).
@@ -19800,7 +19801,7 @@ Proof modification of "bj-ablsscmn" is discouraged (10 steps).
 Proof modification of "bj-ablsscmnel" is discouraged (5 steps).
 Proof modification of "bj-ablssgrp" is discouraged (10 steps).
 Proof modification of "bj-ablssgrpel" is discouraged (5 steps).
-Proof modification of "bj-abv" is discouraged (42 steps).
+Proof modification of "bj-abv" is discouraged (33 steps).
 Proof modification of "bj-abvALT" is discouraged (29 steps).
 Proof modification of "bj-adjfrombun" is discouraged (28 steps).
 Proof modification of "bj-adjg1" is discouraged (63 steps).
@@ -21242,6 +21243,7 @@ Proof modification of "s2dmALT" is discouraged (38 steps).
 Proof modification of "sb5ALT" is discouraged (80 steps).
 Proof modification of "sb5ALTVD" is discouraged (110 steps).
 Proof modification of "sbal1" is discouraged (149 steps).
+Proof modification of "sbbiiOLD" is discouraged (27 steps).
 Proof modification of "sbc2or" is discouraged (134 steps).
 Proof modification of "sbc3or" is discouraged (73 steps).
 Proof modification of "sbc3orgVD" is discouraged (180 steps).
