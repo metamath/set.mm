@@ -766,7 +766,7 @@ $)
      11-Aug-2020.) $)
   ax1w $p |- ( ph -> ( ps -> ( ch -> ps ) ) ) $=
     ( wi ax-1 a1i ) BCBDDABCEF $.
-    $( $j usage 'ax1w' avoids 'ax-2' 'ax-3'; $)
+  $( $j usage 'ax1w' avoids 'ax-2' 'ax-3'; $)
 
   ${
     mp1i.1 $e |- ph $.
@@ -18599,7 +18599,7 @@ $)
   ax11dgen $p |- ( A. x A. x ph -> A. x A. x ph ) $=
     ( wal id ) ABCBCD $.
   $( $j usage 'ax11dgen' avoids 'ax-8' 'ax-9' 'ax-10' 'ax-11' 'ax-12'
-       'ax-13'; $)
+     'ax-13'; $)
 
   ${
     $d x ps $.
@@ -18634,7 +18634,7 @@ $)
   ax12dgen $p |- ( x = x -> ( A. x ph -> A. x ( x = x -> ph ) ) ) $=
     ( wal weq wi ala1 a1i ) ABCBBDZAEBCEHAHBFG $.
   $( $j usage 'ax12dgen' avoids 'ax-8' 'ax-9' 'ax-10' 'ax-11' 'ax-12'
-       'ax-13'; $)
+     'ax-13'; $)
 
   ${
     $d x y z w v $.
@@ -26436,7 +26436,7 @@ $)
     elex2 $p |- ( A e. B -> E. x x e. B ) $=
       ( wcel cv wceq wa wex dfclel exsimpr sylbi ) BCDAEZBFZLCDZGAHNAHABCIMNAJK
       $.
-      $( $j usage 'elex2' avoids 'ax-9' 'df-clab' 'ax-ext'; $)
+    $( $j usage 'elex2' avoids 'ax-9' 'df-clab' 'ax-ext'; $)
   $}
 
   ${
@@ -30189,7 +30189,7 @@ $)
       ( wral weq ralbidv cbvral3vw cbvralvw 3ralbii bitri ) AIMUBZHLUBGKUBFJUBE
       IMUBZPLUBOKUBNJUBBQMUBZPLUBOKUBNJUBUIUJCIMUBDIMUBFGHNOPJKLFNUCACIMRUDGOUC
       CDIMSUDHPUCDEIMTUDUEUJUKNOPJKLEBIQMUAUFUGUH $.
-     $( $j usage 'cbvral4vw' avoids 'ax-13'; $)
+    $( $j usage 'cbvral4vw' avoids 'ax-13'; $)
   $}
 
   ${
@@ -30253,7 +30253,7 @@ $)
       DUEUNVDKUKVCCDUIUHUGUFUBUCUDUEUOVDLULVCDEUIUHUGUFUBUCUDUEUPVDMUMVCEFUIUHU
       GUFUBUCUDUEUQVDVEVIVJUJUKULUMNOPQFBGHIUIUHUGUFUBUCUDUERSTUAURUSUTVAVEVFVG
       $.
-     $( $j usage 'cbvral8vw' avoids 'ax-13'; $)
+    $( $j usage 'cbvral8vw' avoids 'ax-13'; $)
   $}
 
   $( *** Theorems using axioms up to ax-8 and ax-12 only: *** $)
@@ -31040,7 +31040,7 @@ $)
     raleqbidvv $p |- ( ph -> ( A. x e. A ps <-> A. x e. B ch ) ) $=
       ( wb cv wcel adantr raleqbidva ) ABCDEFGABCIDJEKHLM $.
     $( $j usage 'raleqbidvv' avoids 'ax-8' 'ax-10' 'ax-11' 'ax-12'
-          'df-clel'; $)
+       'df-clel'; $)
 
     $( Version of ~ rexeqbidv with additional disjoint variable conditions, not
        requiring ~ ax-8 nor ~ df-clel .  (Contributed by Wolf Lammen,
@@ -31048,7 +31048,7 @@ $)
     rexeqbidvv $p |- ( ph -> ( E. x e. A ps <-> E. x e. B ch ) ) $=
       ( wb cv wcel adantr rexeqbidva ) ABCDEFGABCIDJEKHLM $.
     $( $j usage 'rexeqbidvv' avoids 'ax-8' 'ax-10' 'ax-11' 'ax-12'
-          'df-clel'; $)
+       'df-clel'; $)
   $}
 
   ${
@@ -31617,7 +31617,7 @@ $)
     moel $p |- ( E* x x e. A <-> A. x e. A A. y e. A x = y ) $=
       ( cv wcel wmo wa weq wi wal wral eleq1w mo4 r2al bitr4i ) ADCEZAFPBDCEZGA
       BHZIBJAJRBCKACKPQABABCLMRABCCNO $.
-    $( $j usage 'rmobidva' avoids 'ax-11'; $)
+    $( $j usage 'moel' avoids 'ax-11'; $)
   $}
 
   ${
@@ -32476,7 +32476,7 @@ $)
        other occurrences), or by ~ elex .  (Contributed by NM, 26-May-1993.) $)
     isset $p |- ( A e. _V <-> E. x x = A ) $=
       ( cvv vex issetlem ) ABCADE $.
-      $( $j usage 'isset' avoids 'ax-10' 'ax-11' 'ax-12' 'ax-13'; $)
+    $( $j usage 'isset' avoids 'ax-10' 'ax-11' 'ax-12' 'ax-13'; $)
   $}
 
   ${
@@ -32490,7 +32490,7 @@ $)
       weq eqeq1 notbid a1i cbv2w 3bitr3g con4bid ) ACDZAEZCFZAGZBEZCFZBGZUGUIHZ
       AIULHZBIUJHUMHUGUNUOABACJUGBKUGUNBLUGULAUGAUKCUGAUKMUGNOPABTZUNUOQRUGUPUI
       ULUHUKCUAUBUCUDUIASULBSUEUF $.
-      $( $j usage 'cbvexeqsetf' avoids 'ax-8' 'df-clab'; $)
+    $( $j usage 'cbvexeqsetf' avoids 'ax-8' 'df-clab'; $)
   $}
 
   ${
@@ -32520,7 +32520,7 @@ $)
        13-Jul-2019.) $)
     isseti $p |- E. x x = A $=
       ( cvv wcel cv wceq wex elissetv ax-mp ) BDEAFBGAHCABDIJ $.
-      $( $j usage 'isseti' avoids 'ax-9' 'ax-10' 'ax-11' 'ax-12' 'ax-13'
+    $( $j usage 'isseti' avoids 'ax-9' 'ax-10' 'ax-11' 'ax-12' 'ax-13'
        'ax-ext' 'df-clab' 'df-cleq'; $)
   $}
 
@@ -51223,7 +51223,7 @@ $)
       exnal eqcom albii xchbinx mpbi ) BCZACZDZEZAFZUDUCDZAGZEUCHDZUGUJUCHIZDZE
       ZUGUCJUFUMAUKKUDUKDUEULUDUKUCLMNOUFUJEAHPUDHDUEUJUDHUCLMNQUGUEAGUIUEARUEU
       HAUCUDSTUAUB $.
-      $( $j usage 'dtruALT' avoids 'ax-10' 'ax-11' 'ax-12' 'ax-13' 'ax-pr'; $)
+    $( $j usage 'dtruALT' avoids 'ax-10' 'ax-11' 'ax-12' 'ax-13' 'ax-pr'; $)
   $}
 
   ${
@@ -51994,7 +51994,7 @@ $)
     selsALT $p |- ( A e. V -> E. x A e. x ) $=
       ( wcel csn cv wex snidg cvv snexg eleq2 spcedv syl ) BCDBBEZDZBAFZDZAGBCH
       OQOAINBNJBNHPNBKLM $.
-    $( $j usage 'sels' avoids 'ax-nul' 'ax-pow'; $)
+    $( $j usage 'selsALT' avoids 'ax-nul' 'ax-pow'; $)
   $}
 
   ${
@@ -52004,7 +52004,7 @@ $)
        (New usage is discouraged.) $)
     elALT $p |- E. y x e. y $=
       ( cv cvv wcel wel wex vex selsALT ax-mp ) ACZDEABFBGAHBKDIJ $.
-    $( $j usage 'sels' avoids 'ax-nul' 'ax-pow'; $)
+    $( $j usage 'elALT' avoids 'ax-nul' 'ax-pow'; $)
   $}
 
   $( A singleton of a set is a member of the powerclass of a class if and only
@@ -57666,7 +57666,7 @@ $)
       vex breq2 eximi exexw sylibr eldm2 eldm ssriv ) CABFZGZBGZCHZDHZIUFJZDKZU
       IUJBLZDKZUIUGJUIUHJULUNDKUNUKUNDUIEHZBLZUOUJALZMEKUPEKUKUNUPUQENEUIUJABCR
       ZDROUMUPDEUJUOUIBSZPQTUMUPDEUSUAUBDUIUFURUCDUIBURUDQUE $.
-      $( $j usage 'dmcoss' avoids 'ax-10' 'ax-12'; $)
+    $( $j usage 'dmcoss' avoids 'ax-10' 'ax-12'; $)
   $}
 
   ${
@@ -99223,7 +99223,7 @@ $)
     wb fndm ordfin sylan9bb notbid ordom ordtri1 mpan adantl bitr4d ) ABCZBDZEZ
     AFGZHBIGZHZIBJZUJUKULUHUKBFGZUIULUHUKAKZFGZUOUHALUKUQRBAMANOUHUPBFBASPQBTUA
     UBUIUNUMRZUHIDUIURUCIBUDUEUFUG $.
-    $( $j usage 'tfsnfin2' avoids 'ax-inf' 'ax-inf2'; $)
+  $( $j usage 'tfsnfin2' avoids 'ax-inf' 'ax-inf2'; $)
 
 
 $(
@@ -106524,7 +106524,7 @@ $)
   rnr1 $p |- ran R1 = ( R1 " On ) $=
     ( cr1 cdm wlim crn con0 cima wceq r1dmlim word wss ordsson dfrn7 3syl ax-mp
     limord ) ABZCZADAEFGZHQPIPEJRPOPKAELMN $.
-    $( $j usage 'rnr1' avoids 'ax-rep' 'ax-pow'; $)
+  $( $j usage 'rnr1' avoids 'ax-rep' 'ax-pow'; $)
 
   $( Value of the cumulative hierarchy of sets function at ` (/) ` .  Part of
      Definition 9.9 of [TakeutiZaring] p. 76.  (Contributed by NM, 2-Sep-2003.)
@@ -118803,7 +118803,7 @@ $)
       wa wex ssrab2 mpan numth3 syl ac6num syl3an2 ) FIKZEHKCEADFLZMZNOKZADFPCE
       QEFGRUABCEQUFGUGUNUPSKZUQUPFTZUNURUSUOFTZCEQUTCEADFUHUBCEUOFUCUDUPFIUEUIU
       PSUJUKABCDEFGHJULUM $.
-      $( $j usage 'ac6' avoids 'ax-reg' 'ax-inf' 'ax-inf2'; $)
+    $( $j usage 'ac6' avoids 'ax-reg' 'ax-inf' 'ax-inf2'; $)
   $}
 
   ${
@@ -119582,7 +119582,7 @@ $)
       ZRAVIUFPVRVIVQUGZVQOZVQVIUHWDBVIVPVQVOLUIVQUJULVIVQUMUNVIUOVJWCUPVRWDUQAG
       URBVIUSVJWCVIVQUTVAVDVIVJVQVBSVIADEZVHVLVHAGKVTWEAVEWBVIAGVCSVIACTVFVJVIC
       TPVG $.
-      $( $j usage 'dmct' avoids 'ax-ac' 'ax-ac2'; $)
+    $( $j usage 'dmct' avoids 'ax-ac' 'ax-ac2'; $)
   $}
 
   ${
@@ -119797,7 +119797,7 @@ $)
     VCVIAOZVMAVHPZAVIUAUBQVDVNVCVDVKVKDZNZVNVDVKFVSABUCVKUDSVRVIVKBAUEUFSUGVNVI
     VLVKUJVMVOVIVKUKVIVLVKUHUIULUMVCVJVDVCVPVJVQVCATEVPVJUNAVBUOVIATUPUQURQVEVI
     AUSUTVA $.
-    $( $j usage 'imadomnum' avoids 'ax-ac' 'ax-ac2'; $)
+  $( $j usage 'imadomnum' avoids 'ax-ac' 'ax-ac2'; $)
 
   $( The image by a function of a countable set is countable.  The proof uses
      ~ imadomnum rather than ~ imadomg , and so does not require ~ ax-ac .
@@ -119807,7 +119807,7 @@ $)
     ( com cdom wbr wfun wa cima ccrd cdm wcel con0 omelon simpl ondomen syl2anc
     a1i simpr imadomnum sylc domtr ) ACDEZBFZGZBAHZADEZUBUECDEUDAIJKZUCUFUDCLKZ
     UBUGUHUDMQUBUCNZCAOPUBUCRABSTUIUEACUAP $.
-    $( $j usage 'fimact' avoids 'ax-ac' 'ax-ac2'; $)
+  $( $j usage 'fimact' avoids 'ax-ac' 'ax-ac2'; $)
 
   $( Obsolete version of ~ fimact as of 26-Aug-2026.  (Contributed by Thierry
      Arnoux, 27-Mar-2018.)  (Proof modification is discouraged.)
@@ -119821,7 +119821,7 @@ $)
   fnrndomnum $p |- ( A e. dom card -> ( F Fn A -> ran F ~<_ A ) ) $=
     ( wfn crn wfo ccrd cdm wcel cdom wbr dffn4 fodomnum biimtrid ) BACABDZBEAFG
     HNAIJABKANBLM $.
-    $( $j usage 'fnrndomnum' avoids 'ax-ac' 'ax-ac2'; $)
+  $( $j usage 'fnrndomnum' avoids 'ax-ac' 'ax-ac2'; $)
 
   $( The range of a function is dominated by its domain.  This theorem requires
      the axiom of choice ~ ax-ac2 ; see ~ fnrndomnum for a version that does
@@ -119852,7 +119852,7 @@ $)
     PVMVODDIZEFZWGDUOFVQVMVODVNIZEFZWIWGEFZWHVKVLWDWJWEADVNJUPQVMDJKVNDEFZWKUQV
     KVLVNAEFZWLVMAURRKZVKWMVMDUSKZVLWNWOVMUTVDVKVLVADAVBSVKVLVCABVEPVNADTQVNDDJ
     VFVGVOWIWGTSVHVOWGDVIVJBVODTS $.
-    $( $j usage 'fnct' avoids 'ax-ac' 'ax-ac2'; $)
+  $( $j usage 'fnct' avoids 'ax-ac' 'ax-ac2'; $)
 
   $( Obsolete version of ~ fnct as of 26-Aug-2026.  (Contributed by Thierry
      Arnoux, 29-Dec-2016.)  (Proof modification is discouraged.)
@@ -434646,7 +434646,7 @@ $)
       USTXHXOUITMIUTVDXOVATVBVCZVEXOXTWHDHGZXSHGWIDXRHGZHGZIXOWLYCXSHXLWLYCJZXN
       XBXLYFODWGVFVGVHPXOWHDVTXRXLWHKRZXNXBXLYGODWGVIVGVHXBXOOTYAYBVJXOYEXIIXOW
       IIYDIHXLXMWJVKYDIJXOVLTVMXKUEVNVOVPVQ $.
-   $( $j usage 'pw2recs' avoids 'ax-inf' 'ax-inf2'; $)
+    $( $j usage 'pw2recs' avoids 'ax-inf' 'ax-inf2'; $)
   $}
 
   ${
@@ -434805,7 +434805,7 @@ $)
       ZJRZBUSJRZFGZAVAUTKRZVAVBKRZLUTVBLAVDSBURKRZUSJRZVCAVAABCDEMZNAVFSLUSSORZ
       VELAVHSVEAUSPQZVHSLAHPQCUAQVIUBEHCUCUDUSUEUFABDNUJAVESCABURDABDTZUGSPQAUH
       UKEUIULABURCDVJEUMUNAUTVBVAAURCVJEMAVAVGTVGUOUPUQ $.
-     $( $j usage 'pw2divsnegd' avoids 'ax-inf' 'ax-inf2'; $)
+    $( $j usage 'pw2divsnegd' avoids 'ax-inf' 'ax-inf2'; $)
   $}
 
   ${
@@ -434943,7 +434943,7 @@ $)
       JYMUVONVMXLAXMULNYNUBMZXOOZJPRZAVMUEZXOUEZUCMZPVHZNUXRUBMZXOOZUXOUXSXNUXP
       UXQXNVMXOVMPVHXNXPULXOPVHXNXQULVMXOVKSXNXRULUDUFXSXTUXNUYAJUXRPYNUXROUXMU
       XTXOYNUXRNUBUSYAYBYCULYDWDWJ $.
-   $( $j usage 'halfcut' avoids 'ax-inf' 'ax-inf2'; $)
+    $( $j usage 'halfcut' avoids 'ax-inf' 'ax-inf2'; $)
   $}
 
   ${
@@ -434972,7 +434972,7 @@ $)
       JKHIZYAWHAGKWHTXKUUJWHTAGGGHIKWHAGXQUDWEWFAGKXJXQYNYOWIWJAYAXJKGMIZHIUUJA
       KBGYNXOXQWKUUKKXJHYMUUKKUEUTKWQUOWLWMWNWCWOWPWRXHWSWTAXIXKKLYDUHAXLXJKLIZ
       XMHIXNAXJGKYOXQYNKXAXBAXCPZXDAUULBXMHABKXOYNUUMXEUHVEXF $.
-   $( $j usage 'addhalfcut' avoids 'ax-inf' 'ax-inf2'; $)
+    $( $j usage 'addhalfcut' avoids 'ax-inf' 'ax-inf2'; $)
   $}
 
   ${
@@ -435023,7 +435023,7 @@ $)
       VKAUVMUVORUUFUVPUUEUVNKNUXGWTVRWPUVKAUUNUVMRUUFUVPUUNXMUUDKWAMZNMUVMUVPUU
       MUXHXMNUVKUUMUXHRZAUVKUURUVSUXIUIUVTKUUCWKVKWBSUVPXMUUDKUVPBCUVQUWFXAUWAU
       XBUWDUXEWOWPVRWPXCXDXEXF $.
-   $( $j usage 'pw2cut' avoids 'ax-inf' 'ax-inf2'; $)
+    $( $j usage 'pw2cut' avoids 'ax-inf' 'ax-inf2'; $)
   $}
 
   ${
@@ -435045,7 +435045,7 @@ $)
       QVQISOZAUORZUPUQZAVTWDWBWFKAVSVOAVOSOWKVSVOQAVOWIMZUOVOIURPUSAWAWEAVOIIJT
       ZJTVOFILTZJTWAWEWOWPVOJWOFWPUTFSOZWPFQVAFVBUIVCVDAVOIIWNWLWLUPAFBIWQAVARV
       QWLVEVFUSVGVHVIAVPVMVNGWMUNVJ $.
-   $( $j usage 'pw2cutp1' avoids 'ax-inf' 'ax-inf2'; $)
+    $( $j usage 'pw2cutp1' avoids 'ax-inf' 'ax-inf2'; $)
   $}
 
   ${
@@ -436104,7 +436104,7 @@ $)
     AJURUSKZVAURVBADEFZVAURUSVCURDLCZALCZUSVCMPANZDAOQRURVCDASHZEFZVAURVCDSHZVG
     EFZVHURVEVDVCVJUHVFPADUAUBVIDVGEUCUDUEURVHVGGHZICZVAURVGBCZVHVLUIAUFVMVHVLV
     GJUJTURVKUTIURVEVKUTUGVFAUKTULUMUNUOUPUQ $.
-    $( $j usage 'z12bday' avoids 'ax-inf' 'ax-inf2' ; $)
+  $( $j usage 'z12bday' avoids 'ax-inf' 'ax-inf2' ; $)
 
   ${
     $d A x y z n $.
@@ -521458,7 +521458,7 @@ $)
       BEVJVKZWROABCREDRXTWRPGFBCDEVLSIVMZAWRVSUFRZWSWRUJZXSAXRYBYAWRVNTAWRBWRLZ
       WSVOZYCAXHWRXIQYEHBWQVPWRBVQUMWRYDWSVTTWRWSVRWAWRWTWBSAWPORXCWPQXQEWCAXCW
       PWNWJZWPAXCBXALZYFBXAWDAXHYGYFPHWPBWETWFWPWNWGWHWPXCWKWIWTXCWLSWM $.
-      $( $j usage 'ffsrn' avoids 'ax-ac' 'ax-ac2'; $)
+    $( $j usage 'ffsrn' avoids 'ax-ac' 'ax-ac2'; $)
   $}
 
   ${
@@ -559118,7 +559118,7 @@ $)
     simp3 ) CDEFGZACGZBCGZHZCFZULAIZBJZIZABIZCUKUOULUMIZBIZUPUOURKUKULUMBLMUKUQ
     ABUKAULNZUQAKUKUHUIUSUHUIUJOZUHUIUJPZACQRAULSUAUBUCUKUHUNCGZUOCGUTUKUHUMCGZ
     UJVBUTUKUHUIVCUTVAACTRUHUIUJUGUMBCUDUEUNCTRUF $.
-    $( $j usage 'difelsiga' avoids 'ax-ac' 'ax-ac2'; $)
+  $( $j usage 'difelsiga' avoids 'ax-ac' 'ax-ac2'; $)
 
   $( A sigma-algebra is closed under pairwise intersections.  (Contributed by
      Thierry Arnoux, 13-Dec-2016.) $)
@@ -580839,7 +580839,7 @@ $)
         ( card ` A ) = ( card ` U_ x e. A ( { x } X. 1o ) ) ) $=
       ( cvv wcel cv csn c1o cxp ciun cen wbr ccrd cfv wceq 1enumen carden2b syl
       ) BCDBABAEFGHIZJKBLMRLMNABOBRPQ $.
-      $( $j usage '1enumcard' avoids 'ax-ac' 'ax-ac2'; $)
+    $( $j usage '1enumcard' avoids 'ax-ac' 'ax-ac2'; $)
   $}
 
   $( Value of the cumulative hierarchy of sets function at ` 1o ` .
@@ -580878,7 +580878,7 @@ $)
       rankfilimbi 3expia 3impa impbid ) BDEZBFGHIEZCJZKZBLMZCEZANZLMZCEZABSZUQU
       SVBABUQUTBEZUSVBUQVDVAUREZUSVBUOUNVDVEOUPUTBPQUPUNVEUSRVBOZUOUPCTVFCUAVAU
       RCUBUCUDUEUFUGUNUOUPVCUSOUNUORZUPVCUSVGVCUPUSVGVCUPUSABCUJUHUIUKULUM $.
-    $( $j usage 'rankfilimbi' avoids 'ax-reg'; $)
+    $( $j usage 'rankfilimb' avoids 'ax-reg'; $)
   $}
 
   ${
@@ -605032,7 +605032,7 @@ $)
       negeqi df-ditg 3eqtr4i ) BDKLZABDMNZFOZADBMNZFOZPZQCEKLZACEMNZGOZAECMNZGO
       ZPZQABDFRACEGRUFULUHUKUNUQBCDEKHIUAAUGUMFGBCDEMHISJTUJUPAUIUOFGDEBCMIHSJT
       UCUBABDFUDACEGUDUE $.
-   $( $j usage 'ditgeq123i' avoids 'ax-10' 'ax-11' 'ax-12' 'ax-13'; $)
+    $( $j usage 'ditgeq123i' avoids 'ax-10' 'ax-11' 'ax-12' 'ax-13'; $)
   $}
 
   ${
@@ -611910,7 +611910,7 @@ $)
     bj-mp2c.majm $e |- ( ph -> ( ps -> ch ) ) $.
     bj-mp2c.maj $e |- ( ph -> ps ) $.
     bj-mp2c.min $e |- ph $.
-    $( A double _modus ponens_ inference.  Inference associated with ~ mpd .
+    $( A double modus ponens inference.  Inference associated with ~ mpd .
        (Contributed by BJ, 24-Sep-2019.) $)
     bj-mp2c $p |- ch $=
       ( ax-mp mp2 ) ABCFABFEGDH $.
@@ -611921,7 +611921,7 @@ $)
     bj-mp2d.majm $e |- ( ps -> ( ph -> ch ) ) $.
     bj-mp2d.maj $e |- ( ph -> ps ) $.
     bj-mp2d.min $e |- ph $.
-    $( A double _modus ponens_ inference.  Inference associated with ~ mpcom .
+    $( A double modus ponens inference.  Inference associated with ~ mpcom .
        (Contributed by BJ, 24-Sep-2019.) $)
     bj-mp2d $p |- ch $=
       ( ax-mp mp2 ) BACABFEGFDH $.
@@ -611993,24 +611993,24 @@ $)
 
   $( When ` F. ` is substituted for ` ps ` , this formula is the Clavius law
      with a doubly negated consequent, which is therefore a minimalistic
-     tautology.  Notice the non-intuitionistic proof from ~ peirce and ~ pm2.27
-     chained using ~ syl .  (Contributed by BJ, 4-Dec-2023.) $)
+     tautology.  Also provable (non-intuitionistically) as ~ syl ( ~ peirce ,
+     ~ pm2.27 ).  (Contributed by BJ, 4-Dec-2023.) $)
   bj-nnclav $p |- ( ( ( ph -> ps ) -> ph ) -> ( ( ph -> ps ) -> ps ) ) $=
     ( wi id a2i ) ABCZABFDE $.
+  $( $j usage 'bj-nnclav' avoids 'ax-3'; $)
 
   ${
     bj-nnclavi.1 $e |- ( ( ph -> ps ) -> ph ) $.
     $( Inference associated with ~ bj-nnclav .  Its associated inference is an
-       instance of ~ syl .  Notice the non-intuitionistic proof from
-       ~ bj-peircei and ~ bj-poni .  (Contributed by BJ, 30-Jul-2024.) $)
+       instance of ~ syl .  Also provable (non-intuitionistically) as ~ bj-poni
+       ( ~ bj-peircei ).  (Contributed by BJ, 30-Jul-2024.) $)
     bj-nnclavi $p |- ( ( ph -> ps ) -> ps ) $=
       ( wi id mpd ) ABDZABCGEF $.
   $}
 
-  $( Commuted form of ~ bj-nnclav (so it could also be proved by applying
-     ~ com12 to it).  Notice the non-intuitionistic proof from ~ bj-peircei and
-     ~ imim1i .  (Contributed by BJ, 30-Jul-2024.)
-     (Proof modification is discouraged.) $)
+  $( Commuted form of ~ bj-nnclav .  Also provable as ~ com12 ( ~ bj-nnclav ).
+     Also provable (non-intuitionistically) as ~ imim1i ( ~ peirce ).
+     (Contributed by BJ, 30-Jul-2024.) $)
   bj-nnclavc $p |- ( ( ph -> ps ) -> ( ( ( ph -> ps ) -> ph ) -> ps ) ) $=
     ( wi id embantd ) ABCZFABFDZGE $.
 
@@ -612073,8 +612073,8 @@ $)
      only used through Peirce's law ~ peirce .
      (Proof modification is discouraged.) $)
   bj-peircestab $p |- ( ( ( ( ( ph -> ps ) -> ch ) -> ph ) -> ch ) -> ch ) $=
-    ( wi bj-nnclav ax-1 imim2i peirce syl imim2 syl56 a1dd syl11 ) ABDZCDZADZCD
-    ZCADZCDCQPDQCRPCERQAOQORNADAQPODOCOPCNFGOAHICANJABHKLMCAHI $.
+    ( wi imim2 peirce syl6 imim1i syl ) ABDZCDZADZCDCADZCDCMLCMKJADACAJEABFGHCA
+    FI $.
 
   $( This minimal implicational calculus tautology is used in the following
      argument:  When ` ph , ps , ch , th , ta ` are replaced respectively by
@@ -612092,8 +612092,8 @@ $)
      30-Jul-2024.)  (Proof modification is discouraged.) $)
   bj-stabpeirce $p |- ( ( ( ( ( ph -> ps ) -> ch ) -> th ) -> ta ) ->
                                           ( ( ( ps -> ch ) -> th ) -> ta ) ) $=
-    ( wi jarr imim1i ) BCFZDFABFCFZDFEJIDABCGHH $.
-    $( $j usage 'bj-stabpeirce' avoids 'ax-3'; $)
+    ( wi jarr bj-imim11i ) ABFCFBCFDEABCGH $.
+  $( $j usage 'bj-stabpeirce' avoids 'ax-3'; $)
 
 
 $(
@@ -612123,11 +612123,11 @@ $)
     bj-syl66ib.1 $e |- ( ph -> ( ps -> th ) ) $.
     bj-syl66ib.2 $e |- ( th -> ta ) $.
     bj-syl66ib.3 $e |- ( ta <-> ch ) $.
-    $( A mixed syllogism inference derived from ~ imbitrdi .  Shortens
+    $( A mixed syllogism inference similar to ~ imbitrdi .  Shortens
        ~ bj-dvelimdv1 , ~ alexsubALTlem4 (4821>4812), ~ supsrlem (2868>2863).
        (Contributed by BJ, 20-Oct-2021.) $)
     bj-syl66ib $p |- ( ph -> ( ps -> ch ) ) $=
-      ( syl6 imbitrdi ) ABECABDEFGIHJ $.
+      ( sylib syl6 ) ABDCFDECGHIJ $.
   $}
 
   $( Proof of ~ orim2 from the axiomatic definition of disjunction ( ~ olc ,
@@ -612139,15 +612139,15 @@ $)
   $( Curry's axiom ~ curryax (a non-intuitionistic positive statement sometimes
      called a paradox of material implication) implies Peirce's axiom ~ peirce
      over minimal implicational calculus and the axiomatic definition of
-     disjunction (actually, only the elimination axiom ~ jao via its inference
-     form ~ jaoi ; the introduction axioms ~ olc and ~ orc are not needed).
-     This theorem shows that actually, the standard instance of ~ curryax
-     implies the standard instance of ~ peirce , which is not the case for the
-     converse ~ bj-peircecurry .  (Contributed by BJ, 15-Jun-2021.)
+     disjunction (actually, only the elimination axiom ~ jao , via ~ jao1i ;
+     the introduction axioms ~ olc and ~ orc are not needed).  This theorem
+     shows that actually, the standard instance of ~ curryax implies the
+     standard instance of ~ peirce , which is not the case for the converse
+     ~ bj-peircecurry .  (Contributed by BJ, 15-Jun-2021.)
      (Proof modification is discouraged.)  (New usage is discouraged.) $)
   bj-currypeirce $p |-
               ( ( ph \/ ( ph -> ps ) ) -> ( ( ( ph -> ps ) -> ph ) -> ph ) ) $=
-    ( wi ax-1 pm2.27 jaoi ) AABCZACZACGAHDGAEF $.
+    ( wi pm2.27 jao1i ) AABCZFACFADE $.
 
   $( Peirce's axiom ~ peirce implies Curry's axiom ~ curryax over minimal
      implicational calculus and the axiomatic definition of disjunction
@@ -612156,15 +612156,16 @@ $)
      (Contributed by BJ, 15-Jun-2021.)  (Proof modification is discouraged.)
      (New usage is discouraged.) $)
   bj-peircecurry $p |- ( ph \/ ( ph -> ps ) ) $=
-    ( wi wo orc olc peirce peirceroll ax-mp mpsyl ) AAABCZDZCZLAKEKLCZMLCZKAFLA
-    CZLCLCNPACZOLAGKACACNQCABGABLHILAAHJII $.
+    ( wi wo olc imim1i peirce syl orc ax-mp ) AABCZDZACZLCLMALMKACAKLAKAEFABGHA
+    KIHLAGJ $.
 
-  $( Conjunction in terms of implication and biconditional.  The proof is
-     intuitionistic (use of ~ ax-3 comes from the unusual definition of the
-     biconditional in set.mm).  (Contributed by BJ, 23-Sep-2023.) $)
+  $( Conjunction in terms of implication and biconditional.  (Contributed by
+     BJ, 23-Sep-2023.)  The proof is intuitionistic (use of ~ ax-3 comes from
+     the unusual definition of the biconditional in set.mm).
+     (Proof modification is discouraged.) $)
   bj-animbi $p |- ( ( ph /\ ps ) <-> ( ph <-> ( ph -> ps ) ) ) $=
-    ( wa wi wb simpl pm3.4 2thd biimp pm2.43d biimpr mpd jcai impbii ) ABCZAABD
-    ZEZOAPABFABGHQABQPAQABAPIJZAPKLRMN $.
+    ( wa wi wb simpl pm3.4 2thd biimp pm2.43d id mpbird jcai impbii ) ABCZAABDZ
+    EZOAPABFABGHQABQAPQABAPIJZQKLRMN $.
 
   $( Curry's paradox.  The proof is intuitionistic (use of ~ ax-3 comes from
      the unusual definition of the biconditional in set.mm).  The paradox comes
@@ -612200,22 +612201,20 @@ $)
        inference associated with ~ bj-con2comi .  (Contributed by BJ,
        19-Mar-2020.) $)
     bj-con2comi $p |- ( ( ps -> -. ph ) -> -. ps ) $=
-      ( wn wi bj-con2com ax-mp ) ABADEBDECABFG $.
+      ( wn wi con2 mpi ) BADEABDCBAFG $.
   $}
 
-  $( If a formula is true, then it does not imply its negation.  (Contributed
-     by BJ, 19-Mar-2020.)  A shorter proof is possible using ~ id and ~ jc ,
-     however, the present proof uses theorems that are more basic than ~ jc .
-     (Proof modification is discouraged.) $)
+  $( If a formula is true, then it does not imply its negation.  Also provable
+     as ~ con2i ( ~ pm2.01 ).  (Contributed by BJ, 19-Mar-2020.) $)
   bj-nimn $p |- ( ph -> -. ( ph -> -. ph ) ) $=
-    ( wn wi pm2.01 con2i ) AABCAADE $.
+    ( id jc ) AAAABZDC $.
 
   ${
     bj-nimni.1 $e |- ph $.
     $( Inference associated with ~ bj-nimn .  (Contributed by BJ,
        19-Mar-2020.) $)
     bj-nimni $p |- -. ( ph -> -. ph ) $=
-      ( wn wi bj-nimn ax-mp ) AAACDCBAEF $.
+      ( wn wi pm2.01 mt2 ) AACDABAEF $.
   $}
 
   ${
@@ -612247,11 +612246,11 @@ $)
     bj-mt2bi.maj $e |- ( ps <-> -. ph ) $.
     bj-mt2bi.min $e |- ph $.
     $( Version of ~ mt2 where the major premise is a biconditional.  Shortens
-       ~ fal (see ~ bj-fal ) .  Another proof is also possible via ~ con2bii
-       and ~ mpbi .  The current ~ mt2bi should be relabeled, maybe to imfal.
-       (Contributed by BJ, 5-Oct-2024.) $)
+       ~ fal (see ~ bj-fal ) .  Also provable as ~ mt2 ( ~ biimpi ) and as
+       ~ mpbi ( ~ con2bii ).  The current ~ mt2bi should be relabeled, maybe to
+       imfal.  (Contributed by BJ, 5-Oct-2024.) $)
     bj-mt2bi $p |- -. ps $=
-      ( wn biimpi mt2 ) BADBAECFG $.
+      ( wn notnoti mtbir ) BAEADFCG $.
   $}
 
   $( Shortening of ~ fal using ~ bj-mt2bi .  (Contributed by Anthony Hart,
@@ -612275,6 +612274,7 @@ $)
   bj-dfnul2 $p |- (/) = { x | -. x = x } $=
     ( c0 wfal cab weq wn dfnul4 equid bj-ntrufal abbii eqtr4i ) BCADAAEZFZADAGM
     CALAHIJK $.
+  $( $j usage 'bj-dfnul2' avoids 'df-clel' 'ax-8' 'ax-10' 'ax-11' 'ax-12'; $)
 
 
 $(
@@ -612344,10 +612344,10 @@ $)
 
   $( A self-implication does not imply the negation of a self-implication.
      Most general theorem of which ~ bijust is an instance ( ~ bijust0 and
-     ~ bj-bijust0ALT are therefore also instances of it).  (Contributed by BJ,
-     7-Sep-2022.) $)
+     ~ bj-bijust0ALT are therefore also instances of it).  Also provable as
+     ~ mp2 ( ~ id , ~ id , ~ pm3.2im ).  (Contributed by BJ, 7-Sep-2022.) $)
   bj-bijust00 $p |- -. ( ( ph -> ph ) -> -. ( ps -> ps ) ) $=
-    ( wi wn id pm3.2im mp2 ) AACZBBCZHIDCDAEBEHIFG $.
+    ( wi wn id bj-poni mt2 ) AACZBBCZDZCIBEHJAEFG $.
 
 
 $(
@@ -612402,7 +612402,10 @@ $)
        the conditional operator for classes.  There is no sethood hypothesis on
        ` X ` : it is implied by either side.  (Contributed by BJ, 24-Sep-2019.)
        Generalize statement from setvar ` x ` to class ` X ` .  (Revised by BJ,
-       26-Dec-2023.) $)
+       26-Dec-2023.)  Also provable as ~ bitr4i ( ~ elif , ~ df-ifp ) , but it
+       is here proved as a consequence of the candidate definition
+       ~ bj-df-ifc , so that ~ elif is then proved from it.
+       (Proof modification is discouraged.) $)
     bj-ififc $p |-
                  ( X e. if ( ph , A , B ) <-> if- ( ph , X e. A , X e. B ) ) $=
       ( vx cif wcel cv wif cab bj-df-ifc eleq2i cvv wa wn wo df-ifp elex adantl
@@ -612421,8 +612424,9 @@ $(
 
 $)
 
-  $( Uncurried (imported) form of ~ imbi12 .  (Contributed by BJ,
-     6-May-2019.) $)
+  $( Uncurried (imported) form of ~ imbi12 .  Also provable as ~ imbi12d
+     ( ~ simpl , ~ simpr ).  (Contributed by BJ, 6-May-2019.)
+     (Proof modification is discouraged.) $)
   bj-imbi12 $p |- ( ( ( ph <-> ps ) /\ ( ch <-> th ) ) ->
                                          ( ( ph -> ch ) <-> ( ps -> th ) ) ) $=
     ( wb wi imbi12 imp ) ABECDEACFBDFEABCDGH $.
@@ -612432,10 +612436,11 @@ $)
   bj-falor $p |- ( ph <-> ( F. \/ ph ) ) $=
     ( wfal fal biorfi ) BACD $.
 
-  $( Dual of ~ truan .  (Contributed by BJ, 26-Oct-2019.)
-     (Proof modification is discouraged.) $)
+  $( Dual of ~ truan .  (Contributed by BJ, 26-Oct-2019.)  Also provable as
+     ~ bicomi ( ~ bj-falor ), but only one of ~ bj-falor and ~ bj-falor2 should
+     be kept.  (Proof modification is discouraged.) $)
   bj-falor2 $p |- ( ( F. \/ ph ) <-> ph ) $=
-    ( wfal wo falim bj-jaoi1 olc impbii ) BACABAADEABFG $.
+    ( wfal wo fal biorfi bicomi ) ABACBADEF $.
 
   $( A property of the biconditional.  (Contributed by BJ, 26-Oct-2019.)
      (Proof modification is discouraged.) $)
@@ -616205,7 +616210,7 @@ $)
        (Proof modification is discouraged.) $)
     bj-issetiv $p |- E. x x = A $=
       ( wcel cv wceq wex elissetv ax-mp ) BCEAFBGAHDABCIJ $.
-      $( $j usage 'bj-issetiv' avoids 'ax-9' 'ax-10' 'ax-11' 'ax-12' 'ax-13'
+    $( $j usage 'bj-issetiv' avoids 'ax-9' 'ax-10' 'ax-11' 'ax-12' 'ax-13'
        'ax-ext' 'df-clab' 'df-cleq' 'cvv'; $)
   $}
 
@@ -616221,7 +616226,7 @@ $)
        (Proof modification is discouraged.) $)
     bj-isseti $p |- E. x x = A $=
       ( wcel cv wceq wex elisset ax-mp ) BCEAFBGAHDABCIJ $.
-      $( $j usage 'bj-isseti' avoids 'ax-9' 'ax-10' 'ax-11' 'ax-12' 'ax-13'
+    $( $j usage 'bj-isseti' avoids 'ax-9' 'ax-10' 'ax-11' 'ax-12' 'ax-13'
        'ax-ext' 'df-cleq' 'cvv'; $)
   $}
 
@@ -617994,7 +617999,7 @@ $)
     bj-prexg $p |- ( ( A e. V /\ B e. W ) -> { A , B } e. _V ) $=
       ( wcel wa cpr csn cun cvv df-pr bj-snexg bj-unexg syl2an eqeltrid ) ACEZB
       DEZFABGAHZBHZIZJABKPRJESJETJEQACLBDLRSJJMNO $.
-      $( $j usage 'bj-prexg' avoids 'ax-sep' 'ax-nul' 'ax-pr' 'ax-pow'; $)
+    $( $j usage 'bj-prexg' avoids 'ax-sep' 'ax-nul' 'ax-pr' 'ax-pow'; $)
   $}
 
   ${
@@ -618004,7 +618009,7 @@ $)
     bj-prex $p |- { A , B } e. _V $=
       ( cpr csn cun cvv df-pr wcel bj-snex bj-unexg mp2an eqeltri ) ABCADZBDZEZ
       FABGMFHNFHOFHAIBIMNFFJKL $.
-      $( $j usage 'bj-prex' avoids 'ax-sep' 'ax-pr' 'ax-pow'; $)
+    $( $j usage 'bj-prex' avoids 'ax-sep' 'ax-pr' 'ax-pow'; $)
   $}
 
   ${
@@ -626340,7 +626345,7 @@ $)
     wl-dfcleq.basic $p |- ( A = B <-> A. x ( x e. A <-> x e. B ) ) $=
       ( vy vz vv vu vt axextb wl-df.cleq ) ADEFGHBCDEGIHHFIJ $.
     $( $j usage 'wl-dfcleq.basic' avoids 'ax-8' 'ax-10' 'ax-11' 'ax-12'
-      'ax-13' 'df-clab' 'df-clel'; $)
+       'ax-13' 'df-clab' 'df-clel'; $)
   $}
 
   ${
@@ -626881,7 +626886,7 @@ $)
     wl-equsalvw $p |- ( A. x ( x = y -> ph ) <-> ps ) $=
       ( weq wi wal wex 19.23v pm5.74i albii ax6ev a1bi 3bitr4i ) CDFZBGZCHPCIZB
       GPAGZCHBPBCJSQCPABEKLRBCDMNO $.
-    $( $j usage 'equsalvw' avoids 'ax-7' 'ax-12' 'ax-13'; $)
+    $( $j usage 'wl-equsalvw' avoids 'ax-7' 'ax-12' 'ax-13'; $)
   $}
 
   ${
@@ -626989,7 +626994,7 @@ $)
     wl-sb9v $p |- ( A. x [ x / y ] ph <-> A. y [ y / x ] ph ) $=
       ( weq wi wal wsb alcom sb6 equcom imbi1i albii bitri 3bitr4i ) BCDZAEZCFZ
       BFPBFZCFACBGZBFABCGZCFPBCHSQBSCBDZAEZCFQACBIUBPCUAOACBJKLMLTRCABCILN $.
-      $( $j usage 'wl-sb9v' avoids 'ax-10' 'ax-13'; $)
+    $( $j usage 'wl-sb9v' avoids 'ax-10' 'ax-13'; $)
 
     $( Substitution of variable in universal quantifier.  Closed form of
        ~ sb8f .  (Contributed by Wolf Lammen, 27-Apr-2025.) $)
@@ -732995,7 +733000,7 @@ $)
     ( vx com cvv wcel cc0 cuz cfv fvex cv c1 caddc co cmpt crdg cres wf1o wb 0z
     eqid om2uzf1oi f1ovv ax-mp mpbir ) BCDZEFGZCDZEFHBUEACAIJKLMENBOZPUDUFQAEUG
     RUGSTBUEUGUAUBUC $.
-    $( $j usage 'omexcn' avoids 'ax-inf' 'ax-inf2'; $)
+  $( $j usage 'omexcn' avoids 'ax-inf' 'ax-inf2'; $)
 
 $( (End of Timothy J. O'Malley's mathbox.) $)
 $( End $[ set-mbox-tjo.mm $] $)
@@ -773635,7 +773640,7 @@ $)
   trwf $p |- Tr U. ( R1 " On ) $=
     ( vx cr1 con0 cima cuni wtr cv wss wral r1elssi rgen dftr3 mpbir ) BCDEZFAG
     ZNHZANIPANOJKANLM $.
-    $( $j usage 'trwf' avoids 'ax-reg'; $)
+  $( $j usage 'trwf' avoids 'ax-reg'; $)
 
   ${
     $d x y $.
@@ -773646,7 +773651,7 @@ $)
       wcel rankelb epel fvex epeli 3imtr4g rgen rgenw df-relp mpbir2an ) CDEFZD
       GGHIUHDHJAKZBKZGLZUIHMZUJHMZGLZNZBUHOZAUHOPUPAUHUOBUHUJUHRABQULUMRUKUNUIU
       JSBUITULUMUJHUAUBUCUDUEABUHDGGHUFUG $.
-   $( $j usage 'rankrelp' avoids 'ax-reg'; $)
+    $( $j usage 'rankrelp' avoids 'ax-reg'; $)
   $}
 
   $( The class of well-founded sets is well-founded.  Lemma I.9.24(2) of
@@ -817249,7 +817254,7 @@ $)
       UDUUFUXJRCUUFYMAUUFCRYNYOWGYPWNUXMUTYQUXKUUMUXMDUWBUUJAUUMUXMQUXJUUJUUMER
       UUHUGZUXMUUJERUUEUUHUUIERYRUUIERYSYTUXOUXMQUUJERBUUGUUAVNUUBYGDUWBQUXKJVN
       YDUUCWPWQWR $.
-      $( $j usage 'subsaliuncl' avoids 'ax-ac' 'ax-ac2'; $)
+    $( $j usage 'subsaliuncl' avoids 'ax-ac' 'ax-ac2'; $)
   $}
 
   ${
@@ -830025,7 +830030,7 @@ $)
       QUXOUGUXHUXJUXRUXOUXJUXRVTUXIUXHUKUXDUVSUXIUXFYQWFUUCUXSUXQVTUXOUGHUXHUXR
       UXPUXIUVQUVSUXFUUDUUEVNUUHWFUUFUUGUVBUHUIZUVAUKUXTUURUJZUXTUKZAUUTUYBUCUX
       TUVAUUQUXTVTZUUSUYAUUQUXTUUQUXTUURUUIUYCUUJUUKUULUUMUUNUUOUUPYF $.
-      $( $j usage 'smflimlem6' avoids 'ax-ac' 'ax-ac2'; $)
+    $( $j usage 'smflimlem6' avoids 'ax-ac' 'ax-ac2'; $)
   $}
 
   ${
