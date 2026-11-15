@@ -580860,7 +580860,8 @@ $)
     $d t u v x y z $.  $d t u v w x z $.
     $( Kurt Maes' Axiom of Choice expressed using abbreviations.  The
        penultimate step shows the logical equivalence to ~ ax-ac2 .
-       (Contributed by BTernaryTau, 4-Nov-2026.) $)
+       (Contributed by BTernaryTau, 4-Nov-2026.)
+       (Proof modification is discouraged.) $)
     zfac2 $p |- ( E. y e. x y C_ U. ( x \ { y } ) \/
         E. w ( w e/ x /\ A. z e. x E. v ( z i^i w ) = { v } ) ) $=
       ( vu vt wel cv wn wa wi wo wal wex exbii bitri albii 19.28v anbi12d 19.43
