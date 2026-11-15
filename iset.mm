@@ -184960,6 +184960,13 @@ $)
     df-psr1psr $a |- PwSer1 = ( r e. _V |-> ( 1o mPwSer r ) ) $.
   $}
 
+  $( The set of finite bags on ` 1o ` is just the set of all functions from
+     ` 1o ` to ` NN0 ` .  (Contributed by Mario Carneiro, 9-Feb-2015.) $)
+  psr1baslem $p |- ( NN0 ^m 1o ) =
+    { f e. ( NN0 ^m 1o ) | ( `' f " NN ) e. Fin } $=
+    ( cv ccnv cn cima cfn wcel cn0 c1o cmap co crab com wceq 1onn nnfi psrbagfi
+    eqid mp2b eqcomi ) ABCDEFGAHIJKZLZUAIMGIFGUBUANOIPUBAIUBRQST $.
+
 
 $(
 ###############################################################################
