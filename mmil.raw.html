@@ -14751,6 +14751,16 @@ intuitionistic and it is lightly used in set.mm</TD>
 </tr>
 
 <tr>
+  <td id="missing-df-opsr">df-opsr</td>
+  <td><i>none</i></td>
+  <td>Defining an order on polynomials requires an order on the
+  underlying ring, and we'll need a slot for lt as the set.mm
+  mechanism of defining lt in terms of ` le ` will not work
+  for rings such as the reals (per ~ ltlenmkv ).  For now we
+  just have unordered polynomials ( ~ df-psr ) not ordered ones.</td>
+</tr>
+
+<tr>
   <td>psrvalstr</td>
   <td>~ psrvalstrd</td>
   <td>adds set existence conditions</td>
