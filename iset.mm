@@ -184987,6 +184987,16 @@ $)
         SRVSQXJXFWDQVRTVTQSVOWAWEWEJAKWSDUEIUCHFUDEUAGWBWCXABWRWSXABXDWRCXAEAXG
         WROPOXHXFAJKWFXAWGKOOTWOJONXAWRONWHWPJAOOKWIWJWKWLWMWNWQ $.
     $}
+
+    psr1bas2.b $e |- B = ( Base ` S ) $.
+    ${
+      psr1bas2.o $e |- O = ( 1o mPwSer R ) $.
+      $( The base set of the ring of univariate power series.  (Contributed by
+         Mario Carneiro, 3-Jul-2015.) $)
+      psr1bas2 $p |- B = ( Base ` O ) $=
+        ( cbs cfv c1o cmps co psr1valpsr eqtr4i fveq2i eqtri ) ACHIDHIFCDHCJBKL
+        DBCEMGNOP $.
+    $}
   $}
 
 
