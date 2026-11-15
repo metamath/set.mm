@@ -17453,8 +17453,8 @@ $)
   ${
     $d x y $.  $d ph y $.  $d ps x $.
     nfa1w.x $e |- ( x = y -> ( ph <-> ps ) ) $.
-    $( Replace ~ ax-10 in ~ nfa1 with a substitution hypothesis.  (Contributed
-       by SN, 2-Sep-2025.) $)
+    $( Version of ~ nfa1 with a substitution hypothesis, not requiring
+       ~ ax-10 .  (Contributed by SN, 2-Sep-2025.) $)
     nfa1w $p |- F/ x A. x ph $=
       ( wal cbvalvw nfv nfxfr ) ACFBDFZCABCDEGJCHI $.
     $( $j usage 'nfa1w' avoids 'ax-8' 'ax-9' 'ax-10' 'ax-11' 'ax-12'
@@ -23265,10 +23265,10 @@ $)
   ${
     $d ph z $.  $d ps x $.  $d x z $.  $d ph w y $.  $d w x y $.
     eu6w.1 $e |- ( x = z -> ( ph <-> ps ) ) $.
-    $( Replace ~ ax-10 , ~ ax-12 in ~ eu6 with a substitution hypothesis.
-       (Contributed by SN, 27-May-2025.)  Remove a hypothesis and a distinct
-       variable condition, based on a comment from SN and ChatGPT. (Revised by
-       BTernaryTau, 8-Nov-2026.) $)
+    $( Version of ~ eu6 with a substitution hypothesis, not requiring ~ ax-10 ,
+       ~ ax-12 .  (Contributed by SN, 27-May-2025.)  Remove a hypothesis and a
+       distinct variable condition, based on a comment from SN and ChatGPT.
+       (Revised by BTernaryTau, 8-Nov-2026.) $)
     eu6w $p |- ( E! x ph <-> E. y A. x ( ph <-> x = y ) ) $=
       ( vw wex weq wb wal wa wi wn alimi imbi2d 19.8aw syl eximi wsb weu pm2.21
       alnex sylbir equequ2 albidv biimp wnf equcoms bicomd sbievw sbequ bitr3id
