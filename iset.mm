@@ -184915,6 +184915,53 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Univariate polynomials
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  According to Wikipedia ("Polynomial", 23-Dec-2019,
+  ~ https://en.wikipedia.org/wiki/Polynomial ) "A polynomial in one
+  indeterminate is called a _univariate polynomial_, a polynomial in more than
+  one indeterminate is called a multivariate polynomial."  In this sense
+  univariate polynomials are defined as multivariate polynomials restricted to
+  one indeterminate/polynomial variable in the following, see ~ ply1bascl2 .
+
+  According to the definition in Wikipedia "a polynomial can either be zero or
+  can be written as the sum of a finite number of nonzero terms. Each term
+  consists of the product of a number - called the coefficient of the term -
+  and a finite number of indeterminates, raised to nonnegative integer
+  powers.".  By this, a _term_ of a univariate polynomial (often also called
+  "polynomial term") is the product of a coefficient (usually a member of the
+  underlying ring) and the variable, raised to a nonnegative integer power.
+
+  A (univariate) polynomial which has only one term is called (univariate)
+  _monomial_ - therefore, the notions "term" and "monomial" are often used
+  synonymously, see also the definition in [Lang] p. 102.  Sometimes, however,
+  a monomial is defined as _power product_, "a product of powers of variables
+  with nonnegative integer exponents", see Wikipedia ("Monomial", 23-Dec-2019,
+  ~ https://en.wikipedia.org/wiki/Mononomial ).  In [Lang] p. 101, such terms
+  are called "primitive monomials".  To avoid any ambiguity, the notion
+  "primitive monomial" is used for such power products ("x^i") in the
+  following, whereas the synonym for "term" ("a_i x^i") will be "scaled
+  monomial".
+
+$)
+
+  $( Introduce new constant symbols. $)
+  $c PwSer1 $. $( Univariate power series $)
+
+  $( Univariate power series. $)
+  cps1 $a class PwSer1 $.
+
+  ${
+    $d f n r $.
+    $( Define the algebra of univariate power series.  (Contributed by Mario
+       Carneiro, 29-Dec-2014.) $)
+    df-psr1psr $a |- PwSer1 = ( r e. _V |-> ( 1o mPwSer r ) ) $.
+  $}
+
+
+$(
 ###############################################################################
   BASIC TOPOLOGY
 ###############################################################################
@@ -216954,6 +217001,9 @@ htmldef "evalSub" as " evalSub ";
 htmldef "eval" as " eval ";
   althtmldef "eval" as " eval ";
   latexdef "eval" as "\mathbin{\mathrm{eval}}";
+htmldef "PwSer1" as "PwSer<sub>1</sub>";
+  althtmldef "PwSer1" as "PwSer<sub>1</sub>";
+  latexdef "PwSer1" as "\mathrm{PwSer}_1";
 
 htmldef "metUnif" as "metUnif";
   althtmldef "metUnif" as "metUnif";
