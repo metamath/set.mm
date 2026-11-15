@@ -289640,6 +289640,7 @@ $)
   $c mPwSer $. $( Multivariate power series $)
   $c mVar $. $( Multivariate power series variables $)
   $c mPoly $. $( Multivariate polynomial $)
+  $c mDeg $. $( Multivariate polynomial degree $)
   $c <bag $. $( Order on terms $)
   $c ordPwSer $. $( Order on power series $)
 
@@ -289651,6 +289652,9 @@ $)
 
   $( Multivariate polynomials. $)
   cmpl $a class mPoly $.
+
+  $( Multivariate polynomial degree. $)
+  cmdg $a class mDeg $.
 
   $( Ordering on terms of a multivariate polynomial. $)
   cltb $a class <bag $.
@@ -289691,6 +289695,15 @@ $)
        by AV, 25-Jun-2019.) $)
     df-mpl $a |- mPoly = ( i e. _V , r e. _V |-> [_ ( i mPwSer r ) / w ]_
       ( w |`s { f e. ( Base ` w ) | f finSupp ( 0g ` r ) } ) ) $.
+
+    $( Define the degree of a polynomial.  Note (SO): as an experiment I am
+      using a definition which makes the degree of the zero polynomial
+      ` -oo ` , contrary to the convention used in ~ df-dgr .  (Contributed by
+      Stefan O'Rear, 19-Mar-2015.)  (Revised by AV, 25-Jun-2019.) $)
+    df-mdeg $a |- mDeg = ( i e. _V , r e. _V |->
+      ( f e. ( Base ` ( i mPoly r ) ) |->
+        sup ( ran ( h e. ( f supp ( 0g ` r ) ) |->
+          ( CCfld gsum h ) ) , RR* , < ) ) ) $.
 
     $( Define a well-order on the set of all finite bags from the index set
        ` i ` given a wellordering ` r ` of ` i ` .  (Contributed by Mario
@@ -296689,6 +296702,9 @@ $)
   $( The base variable of a univariate power series. $)
   cv1 $a class var1 $.
 
+  $( Univariate polynomial degree. $)
+  cdg1 $a class deg1 $.
+
   $( Univariate polynomials. $)
   cpl1 $a class Poly1 $.
 
@@ -296697,9 +296713,6 @@ $)
 
   $( Convert a univariate polynomial representation to multivariate. $)
   ctp1 $a class toPoly1 $.
-
-  $( Univariate polynomial degree. $)
-  cdg1 $a class deg1 $.
 
   ${
     $d f n r $.
@@ -296712,6 +296725,10 @@ $)
        ` R [ [ X ] ] ` of power series).  (Contributed by Mario Carneiro,
        8-Feb-2015.) $)
     df-vr1 $a |- var1 = ( r e. _V |-> ( ( 1o mVar r ) ` (/) ) ) $.
+
+    $( Define the degree of a univariate polynomial.  (Contributed by Stefan
+       O'Rear, 23-Mar-2015.) $)
+    df-deg1 $a |- deg1 = ( r e. _V |-> ( 1o mDeg r ) ) $.
 
     $( Define the algebra of univariate polynomials.  (Contributed by Mario
        Carneiro, 9-Feb-2015.) $)
@@ -376503,26 +376520,8 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-  $c mDeg $. $( Multivariate polynomial degree $)
-
-  $( Multivariate polynomial degree. $)
-  cmdg $a class mDeg $.
-
   ${
     $d i r h f $.
-    $( Define the degree of a polynomial.  Note (SO): as an experiment I am
-       using a definition which makes the degree of the zero polynomial
-       ` -oo ` , contrary to the convention used in ~ df-dgr .  (Contributed by
-       Stefan O'Rear, 19-Mar-2015.)  (Revised by AV, 25-Jun-2019.) $)
-    df-mdeg $a |- mDeg = ( i e. _V , r e. _V |->
-      ( f e. ( Base ` ( i mPoly r ) ) |->
-        sup ( ran ( h e. ( f supp ( 0g ` r ) ) |->
-          ( CCfld gsum h ) ) , RR* , < ) ) ) $.
-
-    $( Define the degree of a univariate polynomial.  (Contributed by Stefan
-       O'Rear, 23-Mar-2015.) $)
-    df-deg1 $a |- deg1 = ( r e. _V |-> ( 1o mDeg r ) ) $.
-
     $( Multivariate degree is a binary operation.  (Contributed by Stefan
        O'Rear, 28-Mar-2015.) $)
     reldmmdeg $p |- Rel dom mDeg $=
