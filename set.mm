@@ -59957,8 +59957,8 @@ $)
       UKUOUPUCUDUEUFDAUGUHUI $.
 
     $( The domain of a singleton of an ordered pair is a subset of the
-       singleton of the first member (with no sethood assumptions on ` B ` ).
-       (Contributed by Mario Carneiro, 30-Apr-2015.) $)
+       singleton of the first component (with no sethood assumption on the
+       second component).  (Contributed by Mario Carneiro, 30-Apr-2015.) $)
     dmsnopss $p |- dom { <. A , B >. } C_ { A } $=
       ( cvv wcel cop csn cdm wss dmsnopg eqimss syl wn opprc2 sneqd dmeqd dmsn0
       wceq c0 eqtrdi 0ss eqsstrdi pm2.61i ) BCDZABEZFZGZAFZHZUCUFUGQUHABCIUFUGJ
@@ -59973,8 +59973,8 @@ $)
       NUKUNNUDABEOCDFOUGULUJUMPQUPUFUILZKUKUOUQUEUHRSUFUITUAACRUB $.
 
     $( The domain of an unordered pair of ordered pairs is a subset of the pair
-       of the first members (with no sethood assumptions on ` B ` or ` D ` ).
-       (Contributed by Eric Schmidt, 14-Nov-2026.) $)
+       of the first components (with no sethood assumptions on the second
+       components).  (Contributed by Eric Schmidt, 14-Nov-2026.) $)
     dmpropss $p |- dom { <. A , B >. , <. C , D >. } C_ { A , C } $=
       ( cop csn cdm cun cpr wss dmsnopss unss12 mp2an df-pr dmeqi eqtri 3sstr4i
       dmun ) ABEZFZGZCDEZFZGZHZAFZCFZHZSUBIZGZACIUAUFJUDUGJUEUHJABKCDKUAUFUDUGL
@@ -60038,8 +60038,8 @@ $)
     dmsnopg ) ACDABEFZGZBAEFZHZBFSRIZHZUARJUATIZGUDIZHUCTKUDJUEUBBALMNOBACQP $.
 
   $( The range of a singleton of an ordered pair is a subset of the singleton
-     of the second member (with no sethood assumptions on ` A ` ).
-     (Contributed by Eric Schmidt, 14-Nov-2026.) $)
+     of the second component (with no sethood assumption on the first
+     component).  (Contributed by Eric Schmidt, 14-Nov-2026.) $)
   rnsnopss $p |- ran { <. A , B >. } C_ { B } $=
     ( cop csn crn cdm df-rn dfdm4 cnvcnvsn dmeqi 3eqtri eqtr4i dmsnopss eqsstri
     ccnv ) ABCDZEZBACDZFZBDQPOZFZSPGSROZEUBOZFUARHUBGUCTBAIJKLBAMN $.
@@ -60053,8 +60053,8 @@ $)
     JJZUKJZLCKZDKZLUMUNUFUOUQUPURUDUOUQOUEACEPQUEUPUROUDBDFPRSUJUKUACDMUBUC $.
 
   $( The range of an unordered pair of ordered pairs is a subset of the pair of
-     the second members (with no sethood assumptions on ` A ` or ` C ` ).
-     (Contributed by Eric Schmidt, 14-Nov-2026.) $)
+     the second components (with no sethood assumptions on the first
+     components).  (Contributed by Eric Schmidt, 14-Nov-2026.) $)
   rnpropss $p |- ran { <. A , B >. , <. C , D >. } C_ { B , D } $=
     ( cop csn crn cun cpr rnsnopss unss12 mp2an df-pr rneqi rnun eqtri 3sstr4i
     wss ) ABEZFZGZCDEZFZGZHZBFZDFZHZSUBIZGZBDIUAUFRUDUGRUEUHRABJCDJUAUFUDUGKLUJ
@@ -63726,9 +63726,9 @@ $)
       BCMNADOBEOCFOPZQUERABCPZSUEUFTABCDEFGHIJKLUAADBECFJKLUBUEUFUCUD $.
   $}
 
-  $( The converse pair of ordered pairs is a function if the second members are
-     different.  (Contributed by AV, 23-Jan-2021.)  Remove sethood antecedent.
-     (Revised by Eric Schmidt, 14-Nov-2026.) $)
+  $( The converse pair of an unordered pair of ordered pairs is a function if
+     the second members are different.  (Contributed by AV, 23-Jan-2021.)
+     Remove sethood antecedent.  (Revised by Eric Schmidt, 14-Nov-2026.) $)
   funcnvpr $p |- ( B =/= D -> Fun `' { <. A , B >. , <. C , D >. } ) $=
     ( wne cop csn ccnv cun wfun cpr cdm cin c0 funcnvsn df-rn rnsnopss eqsstrri
     wss crn wa wceq pm3.2i ss2in mp2an disjsn2 sseqtrid ss0 funun sylancr df-pr
@@ -63749,9 +63749,9 @@ $)
     APVBUTVAVPVSVQVTUTVPVERVSVESABETUEVAVQVHRVTVHSCDFTUEUFUGVBUTWAOPVABDUHUIUJV
     FVIUKUNVMVJVMVEVHKZJVJVLWBVDVGULUOVEVHUPUQURUS $.
 
-  $( The converse triple of ordered pairs is a function if the second members
-     are pairwise different.  (Contributed by AV, 23-Jan-2021.)  Remove sethood
-     antecedents.  (Revised by Eric Schmidt, 14-Nov-2026.) $)
+  $( The converse of an unordered triple of ordered pairs is a function if the
+     second members are pairwise different.  (Contributed by AV, 23-Jan-2021.)
+     Remove sethood antecedents.  (Revised by Eric Schmidt, 14-Nov-2026.) $)
   funcnvtp $p |- ( ( B =/= D /\ B =/= F /\ D =/= F )
                    -> Fun `' { <. A , B >. , <. C , D >. , <. E , F >. } ) $=
     ( wne cop cpr ccnv csn cun wfun cdm cin c0 wceq wss crn df-rn w3a ctp ss2in
@@ -63777,10 +63777,10 @@ $)
     WAUQACBDEHUKULUMVLVJWMWPTVKVLWMWDUPWPWDUQFGIUNULUOURVOVPWQSTVNBDGUSVGUTWBWE
     VAVBWIWFWIWAWDUAZPWFWHWRVSVTWCVCVDWAWDVEVFVHVI $.
 
-  $( The converse quadruple of ordered pairs is a function if the second
-     members are pairwise different.  (Contributed by AV, 23-Jan-2021.)  (Proof
-     shortened by JJ, 14-Jul-2021.)  Remove sethood antecedents.  (Revised by
-     Eric Schmidt, 14-Nov-2026.) $)
+  $( The converse of an unordered quadruple of ordered pairs is a function if
+     the second members are pairwise different.  (Contributed by AV,
+     23-Jan-2021.)  (Proof shortened by JJ, 14-Jul-2021.)  Remove sethood
+     antecedents.  (Revised by Eric Schmidt, 14-Nov-2026.) $)
   funcnvqp $p |- ( ( ( B =/= D /\ B =/= F /\ B =/= H )
                       /\ ( D =/= F /\ D =/= H ) /\ F =/= H )
                    -> Fun `' ( { <. A , B >. , <. C , D >. }
