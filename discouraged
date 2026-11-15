@@ -14931,6 +14931,7 @@ New usage of "bj-axd2d" is discouraged (0 uses).
 New usage of "bj-axdd2" is discouraged (2 uses).
 New usage of "bj-axdd2ALT" is discouraged (0 uses).
 New usage of "bj-axtd" is discouraged (0 uses).
+New usage of "bj-babygodelALT" is discouraged (0 uses).
 New usage of "bj-bijust0ALT" is discouraged (0 uses).
 New usage of "bj-brrelex12ALT" is discouraged (0 uses).
 New usage of "bj-ceqsalgALT" is discouraged (0 uses).
@@ -19828,15 +19829,15 @@ Proof modification of "bj-axc14" is discouraged (35 steps).
 Proof modification of "bj-axc14nf" is discouraged (24 steps).
 Proof modification of "bj-axc16g16" is discouraged (25 steps).
 Proof modification of "bj-axc4" is discouraged (15 steps).
-Proof modification of "bj-axd2d" is discouraged (16 steps).
-Proof modification of "bj-axdd2" is discouraged (28 steps).
+Proof modification of "bj-axd2d" is discouraged (9 steps).
+Proof modification of "bj-axdd2" is discouraged (23 steps).
 Proof modification of "bj-axdd2ALT" is discouraged (8 steps).
 Proof modification of "bj-axnul" is discouraged (54 steps).
 Proof modification of "bj-axreprepsep" is discouraged (332 steps).
 Proof modification of "bj-axseprep" is discouraged (550 steps).
 Proof modification of "bj-axsn" is discouraged (12 steps).
 Proof modification of "bj-axtd" is discouraged (26 steps).
-Proof modification of "bj-bibibi" is discouraged (34 steps).
+Proof modification of "bj-babygodelALT" is discouraged (51 steps).
 Proof modification of "bj-bijust0ALT" is discouraged (6 steps).
 Proof modification of "bj-brrelex12ALT" is discouraged (66 steps).
 Proof modification of "bj-cbv1hv" is discouraged (62 steps).
@@ -19930,7 +19931,7 @@ Proof modification of "bj-fununsn2" is discouraged (50 steps).
 Proof modification of "bj-fvmptunsn1" is discouraged (35 steps).
 Proof modification of "bj-fvmptunsn2" is discouraged (54 steps).
 Proof modification of "bj-fvsnun2" is discouraged (44 steps).
-Proof modification of "bj-gl4" is discouraged (58 steps).
+Proof modification of "bj-gl4" is discouraged (44 steps).
 Proof modification of "bj-godellob" is discouraged (19 steps).
 Proof modification of "bj-grpssmnd" is discouraged (29 steps).
 Proof modification of "bj-grpssmndel" is discouraged (5 steps).

@@ -612442,11 +612442,9 @@ $)
   bj-falor2 $p |- ( ( F. \/ ph ) <-> ph ) $=
     ( wfal wo fal biorfi bicomi ) ABACBADEF $.
 
-  $( A property of the biconditional.  (Contributed by BJ, 26-Oct-2019.)
-     (Proof modification is discouraged.) $)
+  $( A property of the biconditional.  (Contributed by BJ, 26-Oct-2019.) $)
   bj-bibibi $p |- ( ph <-> ( ps <-> ( ph <-> ps ) ) ) $=
-    ( wb pm5.501 bianir ex wn bibif con2bid biimprd bija impbii ) ABABCZCABDBMA
-    BMABAEFBGZAMGNMAABHIJKL $.
+    ( wb biid biass mpbi ) ABCZGCABGCCGDABGEF $.
 
   ${
     bj-imn3ani.1 $e |- -. ( ph /\ ps /\ ch ) $.
@@ -612461,9 +612459,7 @@ $)
      positions of the three formulas on each side of the biconditional.
      (Contributed by BJ, 6-Oct-2018.) $)
   bj-andnotim $p |- ( ( ( ph /\ -. ps ) -> ch ) <-> ( ( ph -> ps ) \/ ch ) ) $=
-    ( wn wa wi wo imor iman biimpri orim1i sylbi pm2.24 imim2i impd ax-1 impbii
-    jaoi ) ABDZEZCFZABFZCGZUATDZCGUCTCHUDUBCUBUDABIJKLUBUACUBASCBSCFABCMNOCTPRQ
-    $.
+    ( wn wa wi wo imor iman orbi1i bitr4i ) ABDEZCFLDZCGABFZCGLCHNMCABIJK $.
 
   ${
     bj-bi3ant.1 $e |- ( ph -> ( ps -> ch ) ) $.
@@ -612482,8 +612478,9 @@ $)
     ( wi wb impbi bj-bi3ant ) CDEDCECDFABCDGH $.
 
   $( Equivalence of two ternary operations.  Note the identical order and
-     parenthesizing of the three arguments in both expressions.  (Contributed
-     by BJ, 31-Dec-2023.) $)
+     parenthesizing of the three arguments in both expressions.  Also provable,
+     in the same number of steps, as ~ bitr4i ( ~ bibi2i ( ~ df-xor ), ~ bitri
+     ( ~ df-xor , ~ xor3 )).  (Contributed by BJ, 31-Dec-2023.) $)
   bj-bixor $p |- ( ( ph <-> ( ps \/_ ch ) ) <-> ( ph \/_ ( ps <-> ch ) ) ) $=
     ( wb wn wxo pm5.18 con2bii df-xor bibi2i 3bitr4i ) ABCDZEZDZALDZEABCFZDALFO
     NALGHPMABCIJALIK $.
@@ -612539,7 +612536,7 @@ $)
      (Contributed by BJ, 16-May-2019.)  (Proof modification is discouraged.)
      (New usage is discouraged.) $)
   bj-axdd2 $p |- ( E. x ph -> ( A. x ps -> E. x ps ) ) $=
-    ( wal wex wi ala1 exim syl com12 ) BCDZACEZBCEZKABFCDLMFBACGABCHIJ $.
+    ( wi wal wex exim ala1 syl11 ) ABDCEACFBCFBCEABCGBACHI $.
 
   $( This implication, proved using only ~ ax-gen on top of propositional
      calculus (hence holding, up to the standard interpretation, in any modal
@@ -612552,7 +612549,8 @@ $)
      20-Mar-2022.)  (Proof modification is discouraged.)
      (New usage is discouraged.) $)
   bj-axd2d $p |- ( ( A. x T. -> E. x ph ) -> E. x ph ) $=
-    ( wtru wal wex wi pm2.27 tru mpg ) CCBDZABEZFKFBJKGHI $.
+    ( wtru wal wex altru bj-poni ) CBDABEBFG $.
+  $( $j usage 'bj-axd2d' avoids 'ax-4'; $)
 
   $( This implication, proved from propositional calculus only (hence holding,
      up to the standard interpretation, in any modal logic), shows that the
@@ -612564,6 +612562,7 @@ $)
                            ( ( A. x ph -> ph ) -> ( A. x ph -> E. x ph ) ) ) $=
     ( wn wal wi wex con2 df-ex imbitrrdi imim2d ) ACZBDZKEZAABFZABDMALCNLAGABHI
     J $.
+  $( $j usage 'bj-axtd' avoids 'ax-gen' 'ax-4'; $)
 
   $( In a normal modal logic, the modal axiom GL implies the modal axiom (4).
      Translated to first-order logic, Axiom GL reads
@@ -612574,9 +612573,8 @@ $)
      (Proof modification is discouraged.)  (New usage is discouraged.) $)
   bj-gl4 $p |- ( ( A. x ( A. x ( A. x ph /\ ph ) -> ( A. x ph /\ ph ) ) ->
                    A. x ( A. x ph /\ ph ) ) -> ( A. x ph -> A. x A. x ph ) ) $=
-    ( wal wa wi 19.26 simpr a1i anc2ri biimtrid alimi biimpi imim12i simpl syl6
-    ) ABCZADZBCZQEZBCZREPPBCZPDZUAPTRUBASBRUBAQPABFZAUBPUBPEAUAPGHIJKRUBUCLMUAP
-    NO $.
+    ( wal wa wi simpr alimi a1i anc2ri simpl imim12i ) ABCZLADZBCZMEZBCNLBCAOBA
+    NLNLEAMABLAFGHIGMLBLAJGK $.
 
   $( Over minimal calculus, the modal axiom (4) ( ~ hba1 ) and the modal axiom
      (K) ( ~ ax-4 ) together imply ~ axc4 .  (Contributed by BJ, 29-Nov-2020.)
@@ -612585,6 +612583,7 @@ $)
                 ( ( A. x ( A. x ph -> ps ) -> ( A. x A. x ph -> A. x ps ) ) ->
                     ( A. x ( A. x ph -> ps ) -> ( A. x ph -> A. x ps ) ) ) ) $=
     ( wal wi bj-imim21 ) ACDZGCDGBECDBCDF $.
+  $( $j usage 'bj-axc4' avoids 'ax-3' 'ax-gen' 'ax-4'; $)
 
 
 $(
@@ -612688,10 +612687,17 @@ $)
 
        This proof is due to George Boolos, _G&ouml;del's Second Incompleteness
        Theorem Explained in Words of One Syllable_, Mind, New Series, Vol. 103,
-       No. 409 (January 1994), pp. 1--3.
-
+       No. 409 (January 1994), pp. 1--3.  (The precise original proof appears
+       in ~ bj-babygodelALT ; it has been slightly shortened here.)
        (Contributed by BJ, 3-Apr-2019.) $)
     bj-babygodel $p |- F. $=
+      ( cprvb wfal biimpi prvlem1 ax-prv3 pm2.21 prvlem2 sylc mto mpbir ax-prv1
+      wn pm2.24ii ) ADZEAAQOZQEDZCQRDQDSARARBFGAHRQEQEIJKLZBMNTP $.
+
+    $( Alternate proof of ~ bj-babygodel , original proof in Boolos's article
+       cited in its comment.  (Contributed by BJ, 3-Apr-2019.)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
+    bj-babygodelALT $p |- F. $=
       ( wfal cprvb wn ax-prv1 biimpi prvlem1 ax-prv3 pm2.21 prvlem2 sylc sylibr
       con3i mp2b pm2.24ii ) DEZDRFZEAEZRSCGSASTFZATRTUAETERAUAAUABHIAJUATDTDKLM
       ZOBNIUBPCQ $.
@@ -612755,7 +612761,9 @@ $(
 $)
 
   $( A lemma for changing bound variables.  Only the forward implication is
-     intuitionistic.  (Contributed by BJ, 14-Mar-2026.) $)
+     intuitionistic.  Also provable, in the same number of steps, as ~ bitr4i
+     ( ~ imbi12i ( ~ df-ex , ~ df-ex ), ~ con34b ).  (Contributed by BJ,
+     14-Mar-2026.) $)
   bj-exexalal $p |-
                  ( ( E. x ph -> E. y ps ) <-> ( A. y -. ps -> A. x -. ph ) ) $=
     ( wex wi wn wal con34b alnex imbi12i bitr4i ) ACEZBDEZFNGZMGZFBGDHZAGCHZFMN
@@ -612804,6 +612812,9 @@ $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
   Adding ax-4
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+
+  The first few proofs in this section do not depend on ~ ax-gen .
+
 $)
 
 $( *** ax-gen not required *** $)
