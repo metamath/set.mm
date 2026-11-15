@@ -289697,9 +289697,9 @@ $)
       ( w |`s { f e. ( Base ` w ) | f finSupp ( 0g ` r ) } ) ) $.
 
     $( Define the degree of a polynomial.  Note (SO): as an experiment I am
-      using a definition which makes the degree of the zero polynomial
-      ` -oo ` , contrary to the convention used in ~ df-dgr .  (Contributed by
-      Stefan O'Rear, 19-Mar-2015.)  (Revised by AV, 25-Jun-2019.) $)
+       using a definition which makes the degree of the zero polynomial
+       ` -oo ` , contrary to the convention used in ~ df-dgr .  (Contributed by
+       Stefan O'Rear, 19-Mar-2015.)  (Revised by AV, 25-Jun-2019.) $)
     df-mdeg $a |- mDeg = ( i e. _V , r e. _V |->
       ( f e. ( Base ` ( i mPoly r ) ) |->
         sup ( ran ( h e. ( f supp ( 0g ` r ) ) |->
@@ -296731,7 +296731,8 @@ $)
     df-deg1 $a |- deg1 = ( r e. _V |-> ( 1o mDeg r ) ) $.
 
     $( Define the algebra of univariate polynomials.  (Contributed by Mario
-       Carneiro, 9-Feb-2015.) $)
+       Carneiro, 9-Feb-2015.)  Add Euclidean function.  (Revised by Thierry
+       Arnoux, 15-Nov-2026.) $)
     df-ply1 $a |- Poly1 = ( r e. _V |-> ( ( ( PwSer1 ` r ) |`s
       ( Base ` ( 1o mPoly r ) ) ) sSet <. ( EuclF ` ndx ) , ( deg1 ` r ) >. ) )
       $.
