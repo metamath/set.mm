@@ -211454,7 +211454,7 @@ $)
 
   ${
     $d j x y $.
-    $( Function returning the subspace topology induced by the topology ` y `
+    $( Function returning the subspace topology induced by the topology ` j `
        and the set ` x ` .  (Contributed by FL, 20-Sep-2010.)  (Revised by
        Mario Carneiro, 1-May-2015.) $)
     df-rest $a |- |`t = ( j e. _V , x e. _V |->
