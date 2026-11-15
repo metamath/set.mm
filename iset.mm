@@ -184967,6 +184967,28 @@ $)
     ( cv ccnv cn cima cfn wcel cn0 c1o cmap co crab com wceq 1onn nnfi psrbagfi
     eqid mp2b eqcomi ) ABCDEFGAHIJKZLZUAIMGIFGUBUANOIPUBAIUBRQST $.
 
+  ${
+    $d r R $.
+    psr1val.1 $e |- S = ( PwSer1 ` R ) $.
+    ${
+      $d R r x y $.  $d S x $.  $d b d f g h i k r x y $.
+      $( Value of the ring of univariate power series.  (Contributed by Mario
+         Carneiro, 8-Feb-2015.) $)
+      psr1valpsr $p |- S = ( 1o mPwSer R ) $=
+        ( vx vr vi vd vh vf c1o cmps co cv wcel cvv cps1 cfv cnx cop cxp vb cdm
+        vg vk vy wrel wfun df-psr1psr funmpt2 funrel ax-mp relelfvdm mpan elexd
+        eleq2s ccnv cn cima cfn cn0 cmap crab cbs cplusg cof cres cmulr cle wbr
+        cofr cmin cmpt cgsu cmpo ctp csca cvsca csn cts cpt cun df-psr elmpocl2
+        ctopn csb oveq2 id fnpsr fnovex mp3an12 fvmptd3 eqtrid eleq2d pm5.21nii
+        wfn 1oex eqriv ) DBJAKLZDMZBNZAONZWSWRNWTAPUBZAXBNZWSAPQZBPUFZWSXDNXCPU
+        GXEEOJEMZKLZPEUHZUIPUJUKWSAPULUMCUOUNFEOOGHMUPUQURUSNHUTFMVALVBUAXFVCQZ
+        GMZVALRVCQUAMZSRVDQXFVDQVEXKXKTVFSRVGQIUCXKXKUDXJXFDUEMUDMZVHVJVIUEXJVB
+        WSIMZQXLWSVKVELUCMQXFVGQZLVLVMLVLVNSVORVPQXFSRVQQDIXIXKXJWSVRTXMXNVELVN
+        SRVSQXJXFWDQVRTVTQSVOWAWEWEJAKWSDUEIUCHFUDEUAGWBWCXABWRWSXABXDWRCXAEAXG
+        WROPOXHXFAJKWFXAWGKOOTWOJONXAWRONWHWPJAOOKWIWJWKWLWMWNWQ $.
+    $}
+  $}
+
 
 $(
 ###############################################################################
