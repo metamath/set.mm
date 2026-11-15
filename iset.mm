@@ -852,22 +852,9 @@ $)
 
   ${
     a1d.1 $e |- ( ph -> ps ) $.
-    $( Deduction introducing an embedded antecedent.  (The proof was revised by
-       Stefan Allan, 20-Mar-2006.)
-
-       _Naming convention_:  We often call a theorem a "deduction" and suffix
-       its label with "d" whenever the hypotheses and conclusion are each
-       prefixed with the same antecedent.  This allows us to use the theorem in
-       places where (in traditional textbook formalizations) the standard
-       Deduction Theorem would be used; here ` ph ` would be replaced with a
-       conjunction ( ~ wa ) of the hypotheses of the would-be deduction.  By
-       contrast, we tend to call the simpler version with no common antecedent
-       an "inference" and suffix its label with "i"; compare Theorem ~ a1i .
-       Finally, a "theorem" would be the form with no hypotheses; in this case
-       the "theorem" form would be the original axiom ~ ax-1 .  We usually show
-       the theorem form without a suffix on its label (e.g., ~ pm2.43 versus
-       ~ pm2.43i versus ~ pm2.43d ).  (Contributed by NM, 5-Aug-1993.)
-       (Revised by NM, 20-Mar-2006.) $)
+    $( Deduction introducing an embedded antecedent.  Deduction form of ~ ax-1
+       and ~ a1i .  (Contributed by NM, 5-Jan-1993.)  (Proof shortened by
+       Stefan Allan, 20-Mar-2006.) $)
     a1d $p |- ( ph -> ( ch -> ps ) ) $=
       ( wi ax-1 syl ) ABCBEDBCFG $.
   $}
@@ -3662,7 +3649,7 @@ $)
     simpl2im.1 $e |- ( ph -> ( ps /\ ch ) ) $.
     simpl2im.2 $e |- ( ch -> th ) $.
     $( Implication from an eliminated conjunct implied by the antecedent.
-       (Contributed by BJ/AV, 5-Apr-2021.) $)
+       (Contributed by BJ and AV, 5-Apr-2021.) $)
     simpl2im $p |- ( ph -> th ) $=
       ( wa simpr 3syl ) ABCGCDEBCHFI $.
   $}
@@ -7905,8 +7892,8 @@ $)
     N $.
 
   $( Decidable proposition version of theorem *5.71 of [WhiteheadRussell]
-     p. 125.  (Contributed by Roy F. Longton, 23-Jun-2005.)  (Modified for
-     decidability by Jim Kingdon, 19-Apr-2018.) $)
+     p. 125.  (Contributed by Roy F. Longton, 23-Jun-2005.)  Add decidability
+     antecedent.  (Revised by Jim Kingdon, 19-Apr-2018.) $)
   pm5.71dc $p |- ( DECID ps ->
       ( ( ps -> -. ch ) -> ( ( ( ph \/ ps ) /\ ch ) <-> ( ph /\ ch ) ) ) ) $=
     ( wn wo wa wb wi wdc orel2 orc impbid1 anbi1d a1i pm2.21 pm5.32rd jadc ) BC
@@ -9300,8 +9287,8 @@ $)
 
     $( The importation inference ~ 3imp with commutation of the first and
        second conjuncts of the assertion relative to the hypothesis.
-       (Contributed by Alan Sare, 11-Sep-2016.)  (Revised to shorten ~ 3com12
-       by Wolf Lammen, 23-Jun-2022.) $)
+       (Contributed by Alan Sare, 11-Sep-2016.)  (Revised by Wolf Lammen,
+       23-Jun-2022.) $)
     3imp21 $p |- ( ( ps /\ ph /\ ch ) -> th ) $=
       ( com13 3imp231 ) CBADABCDEFG $.
   $}
@@ -10953,7 +10940,7 @@ $)
   $( Define exclusive disjunction (logical 'xor').  Return true if either the
      left or right, but not both, are true.  Contrast with ` /\ ` ( ~ wa ),
      ` \/ ` ( ~ wo ), and ` -> ` ( ~ wi ) .  (Contributed by FL, 22-Nov-2010.)
-     (Modified by Jim Kingdon, 1-Mar-2018.) $)
+     (Revised by Jim Kingdon, 1-Mar-2018.) $)
   df-xor $a |- ( ( ph \/_ ps ) <-> ( ( ph \/ ps ) /\ -. ( ph /\ ps ) ) ) $.
 
   $( One way of defining exclusive or.  Equivalent to ~ df-xor .  (Contributed
@@ -13362,7 +13349,7 @@ $)
     ( wal wi wex id ax-gen 19.23ht mpbii ) AABCDBCAADZBCABEADJBAFGAABHI $.
 
   $( A closed version of ~ 19.9 .  (Contributed by NM, 5-Aug-1993.)  (Revised
-     by Mario Carneiro, 24-Sep-2016.)  (Proof shortended by Wolf Lammen,
+     by Mario Carneiro, 24-Sep-2016.)  (Proof shortened by Wolf Lammen,
      30-Dec-2017.) $)
   19.9t $p |- ( F/ x ph -> ( E. x ph <-> ph ) ) $=
     ( wnf wex wal wi df-nf 19.9ht sylbi 19.8a impbid1 ) ABCZABDZALAABEFBEMAFABG
@@ -15201,7 +15188,7 @@ $)
   $}
 
   $( An equality theorem for substitution.  (Contributed by NM, 5-Aug-1993.)
-     (Proof modified by Jim Kingdon, 1-Feb-2018.) $)
+     (Revised by Jim Kingdon, 1-Feb-2018.) $)
   sbequi $p |- ( x = y -> ( [ x / z ] ph -> [ y / z ] ph ) ) $=
     ( weq wal wsb wi wo wex nfsb2or wa stdpc7 sbequ1 sylan9 orim2i ax-mp biimpd
     wnf sps equvini eximi 19.35-1 3syl syl9 19.9t sbequilem sbequ2 adantr drsb1
@@ -15264,7 +15251,7 @@ $)
   $}
 
   $( Elimination of equality from antecedent after substitution.  (Contributed
-     by NM, 5-Aug-1993.)  (Proof revised by Jim Kingdon, 20-Jan-2018.) $)
+     by NM, 5-Aug-1993.)  (Revised by Jim Kingdon, 20-Jan-2018.) $)
   sbequ8 $p |- ( [ y / x ] ph <-> [ y / x ] ( x = y -> ph ) ) $=
     ( weq wi wa wex wsb pm5.4 simpl pm3.35 jca pm3.4 impbii exbii anbi12i df-sb
     3bitr4ri ) BCDZSAEZEZSTFZBGZFTSAFZBGZFTBCHABCHUATUCUESAIUBUDBUBUDUBSASTJSAK
@@ -16632,8 +16619,7 @@ $( The theorems in this section make use of the $d statement. $)
     $d x z $.  $d v x w $.  $d v y z $.  $d v ph $.
     $( Commutativity law for substitution.  Used in proof of Theorem 9.7 of
        [Megill] p. 449 (p. 16 of the preprint).  (Contributed by NM,
-       27-May-1997.)  (Proof modified to be intuitionistic by Jim Kingdon,
-       19-Feb-2018.) $)
+       27-May-1997.)  (Revised by Jim Kingdon, 19-Feb-2018.) $)
     sbcom2 $p |- ( [ w / z ] [ y / x ] ph <-> [ y / x ] [ w / z ] ph ) $=
       ( vv wsb sbcom2v2 sbbii bitri ax-17 sbco2vh 3bitr3i ) ABCGZDFGZFEGZADFGZF
       EGZBCGZNDEGADEGZBCGPQBCGZFEGSOUAFEABCDFHIQBCFEHJNDEFNFKLRTBCADEFAFKLIM $.
@@ -80728,7 +80714,7 @@ $)
         z e. ( 2nd ` v ) /\ x = ( y G z ) ) } >. ) $.
     genp.2 $e |- ( ( y e. Q. /\ z e. Q. ) -> ( y G z ) e. Q. ) $.
     $( Value of general operation (addition or multiplication) on positive
-       reals.  (Contributed by Jim Kingon, 3-Oct-2019.) $)
+       reals.  (Contributed by Jim Kingdon, 3-Oct-2019.) $)
     genipv $p |- ( ( A e. P. /\ B e. P. ) -> ( A F B ) = <.
         { q e. Q. | E. r e. ( 1st ` A ) E. s e. ( 1st ` B ) q = ( r G s ) } ,
         { q e. Q. | E. r e. ( 2nd ` A ) E. s e. ( 2nd ` B ) q = ( r G s ) }
@@ -123865,7 +123851,7 @@ $)
       swrdccatin1d.2 $e |- ( ph -> N e. ( 0 ... L ) ) $.
       $( The subword of a concatenation of two words within the first of the
          concatenated words.  (Contributed by AV, 31-May-2018.)  (Revised by
-         Mario Carneiro/AV, 21-Oct-2018.) $)
+         Mario Carneiro and AV, 21-Oct-2018.) $)
       swrdccatin1d $p |- ( ph -> ( ( A ++ B ) substr <. M , N >. )
                                  = ( A substr <. M , N >. ) ) $=
         ( cword wcel wa cc0 cfz co chash csubstr wceq cfv cconcat cop imbitrrid
@@ -123879,7 +123865,7 @@ $)
       swrdccatin2d.2 $e |- ( ph -> N e. ( L ... ( L + ( # ` B ) ) ) ) $.
       $( The subword of a concatenation of two words within the second of the
          concatenated words.  (Contributed by AV, 31-May-2018.)  (Revised by
-         Mario Carneiro/AV, 21-Oct-2018.) $)
+         Mario Carneiro and AV, 21-Oct-2018.) $)
       swrdccatin2d $p |- ( ph -> ( ( A ++ B ) substr <. M , N >. )
                                 = ( B substr <. ( M - L ) , ( N - L ) >. ) ) $=
         ( wceq co cop csubstr cmin wcel wa cfz caddc chash cconcat cword adantl
@@ -135197,8 +135183,8 @@ $)
 
     $( The infinite sum of reciprocals
        ` 1 + ( 1 / A ) ^ 1 + ( 1 / A ) ^ 2 ` ... is ` A / ( A - 1 ) ` .
-       (Contributed by rpenner, 3-Nov-2007.)  (Revised by Mario Carneiro,
-       26-Apr-2014.) $)
+       (Contributed by Richard Penner, 3-Nov-2007.)  (Revised by Mario
+       Carneiro, 26-Apr-2014.) $)
     geoisumr $p |- ( ( A e. CC /\ 1 < ( abs ` A ) ) ->
               sum_ k e. NN0 ( ( 1 / A ) ^ k ) = ( A / ( A - 1 ) ) ) $=
       ( vn cc wcel c1 cabs cfv clt wbr wa cdiv co cexp cmin cn0 cc0 simpr cap
@@ -136870,7 +136856,7 @@ $)
       $d F f k m w x z $.  $d G a g j $.  $d G g j w x z $.
       $d f g k m ph w x z $.  $d n x z $.  $d x y z $.
       $( A product has at most one limit.  (Contributed by Scott Fenton,
-         4-Dec-2017.)  (Modified by Jim Kingdon, 14-Apr-2024.) $)
+         4-Dec-2017.)  (Revised by Jim Kingdon, 14-Apr-2024.) $)
       prodmodc $p |- ( ph -> E* x ( E. m e. ZZ ( ( A C_ ( ZZ>= ` m ) /\
           A. j e. ( ZZ>= ` m ) DECID j e. A ) /\
           ( E. n e. ( ZZ>= ` m )
@@ -147719,7 +147705,7 @@ $)
   ${
     $d N x $.
     $( Finiteness of an expression used to define the Euler ` phi ` function.
-       (Contributed by Jim Kingon, 28-May-2022.) $)
+       (Contributed by Jim Kingdon, 28-May-2022.) $)
     phivalfi $p |- ( N e. NN
         -> { x e. ( 1 ... N ) | ( x gcd N ) = 1 } e. Fin ) $=
       ( cn wcel cv cgcd co c1 wceq cfz 1zzd nnz fzfigd wdc wa cz elfzelz adantl
@@ -160300,7 +160286,7 @@ $)
     mgmplusf.1 $e |- B = ( Base ` M ) $.
     mgmplusf.2 $e |- .+^ = ( +f ` M ) $.
     $( The group addition function of a magma is a function into its base set.
-       (Contributed by Mario Carneiro, 14-Aug-2015.)  (Revisd by AV,
+       (Contributed by Mario Carneiro, 14-Aug-2015.)  (Revised by AV,
        28-Jan-2020.) $)
     mgmplusf $p |- ( M e. Mgm -> .+^ : ( B X. B ) --> B ) $=
       ( vx vy cmgm wcel cxp wf cv cplusg cfv co cmpo wral eqid mgmcl 3expb fmpo
@@ -182781,7 +182767,7 @@ $)
     $d I m n $.
     $( The sum of two finite bags is a finite bag.  (Contributed by Mario
        Carneiro, 9-Jan-2015.)  Shorten proof and remove a sethood antecedent.
-       (Revised by SN, 7-Aug-2024.)  (Revised by Jim Kingdodn, 6-Nov-2026.) $)
+       (Revised by SN, 7-Aug-2024.)  (Revised by Jim Kingdon, 6-Nov-2026.) $)
     psrbagaddclfi $p |- ( ( F e. ( NN0 ^m I ) /\ G e. ( NN0 ^m I )
         /\ I e. Fin ) -> ( F oF + G ) e. ( NN0 ^m I ) ) $=
       ( vm vn cn0 cmap co cfn w3a caddc cof wf cv wa nn0addcl adantl elmapi cvv
@@ -202093,7 +202079,7 @@ $)
 
     $d N k n x $.
     $( An upper bound on the Chebyshev function.  (Contributed by Mario
-       Carneiro, 13-Mar-2014.)  (Revised 22-Sep-2014.) $)
+       Carneiro, 13-Mar-2014.)  (Revised by MC, 22-Sep-2014.) $)
     chtqub $p |- ( ( N e. QQ /\ 2 < N ) ->
                     ( theta ` N ) < ( ( log ` 2 ) x. ( ( 2 x. N ) - 3 ) ) ) $=
       ( vk wcel c2 clt wbr cfv wceq cmul co c3 cmin c1 caddc adantr sylancr cle
@@ -209475,7 +209461,7 @@ $)
     $d C a b $.  $d G a b $.  $d V a b $.
     $( For each edge in a simple graph, there are two distinct vertices which
        are connected by this edge.  (Contributed by Alexander van der Vekens,
-       9-Dec-2017.)  (Revised by AV, 17-Oct-2020.)  (Shortened by AV,
+       9-Dec-2017.)  (Revised by AV, 17-Oct-2020.)  (Proof shortened by AV,
        25-Nov-2020.) $)
     usgredg $p |- ( ( G e. USGraph /\ C e. E )
                     -> E. a e. V E. b e. V ( a =/= b /\ C = { a , b } ) ) $=
@@ -214839,8 +214825,9 @@ $)
      these primitives, and the decimal constructor is used to make it easy to
      express larger numbers as combinations of digits.
 
-     (Contributed by David A. Wheeler, 29-Jun-2016.)  (Shortened by Mario
-     Carneiro using the arithmetic algorithm in mmj2, 30-Jun-2016.) $)
+     (Contributed by David A. Wheeler, 29-Jun-2016.)  Shorten proof by using
+     the arithmetic algorithm in mmj2.  (Proof shortened by Mario Carneiro,
+     30-Jun-2016.) $)
   1kp2ke3k $p |- ( ; ; ; 1 0 0 0 + ; ; ; 2 0 0 0 ) = ; ; ; 3 0 0 0 $=
     ( c1 cc0 cdc c2 c3 1nn0 0nn0 deccl 2nn0 eqid 1p2e3 00id decadd ) ABCZBCZBDB
     CZBCZBEBCZBCBOBCZQBCZNBABFGHZGHGPBDBIGHZGHGSJTJNBPBRBOQUAGUBGOJQJABDBEBNPFG
