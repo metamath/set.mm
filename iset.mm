@@ -184949,15 +184949,25 @@ $)
 
   $( Introduce new constant symbols. $)
   $c PwSer1 $. $( Univariate power series $)
+  $c var1 $. $( Univariate power series variable $)
 
   $( Univariate power series. $)
   cps1 $a class PwSer1 $.
+
+  $( The base variable of a univariate power series. $)
+  cv1 $a class var1 $.
 
   ${
     $d f n r $.
     $( Define the algebra of univariate power series.  (Contributed by Mario
        Carneiro, 29-Dec-2014.) $)
     df-psr1psr $a |- PwSer1 = ( r e. _V |-> ( 1o mPwSer r ) ) $.
+
+    $( Define the base element of a univariate power series (the ` X ` element
+       of the set ` R [ X ] ` of polynomials and also the ` X ` in the set
+       ` R [ [ X ] ] ` of power series).  (Contributed by Mario Carneiro,
+       8-Feb-2015.) $)
+    df-vr1 $a |- var1 = ( r e. _V |-> ( ( 1o mVar r ) ` (/) ) ) $.
   $}
 
   $( The set of finite bags on ` 1o ` is just the set of all functions from
@@ -217064,6 +217074,9 @@ htmldef "eval" as " eval ";
 htmldef "PwSer1" as "PwSer<sub>1</sub>";
   althtmldef "PwSer1" as "PwSer<sub>1</sub>";
   latexdef "PwSer1" as "\mathrm{PwSer}_1";
+htmldef "var1" as "var<sub>1</sub>";
+  althtmldef "var1" as "var<sub>1</sub>";
+  latexdef "var1" as "\mathrm{var}_1";
 
 htmldef "metUnif" as "metUnif";
   althtmldef "metUnif" as "metUnif";
