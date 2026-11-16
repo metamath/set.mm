@@ -185051,6 +185051,25 @@ $)
     $}
   $}
 
+  ${
+    $d R f h i r x y $.  $d R z $.  $d X x $.
+    vr1val.1 $e |- X = ( var1 ` R ) $.
+    $( The value of the generator of the power series algebra (the ` X ` in
+       ` R [ [ X ] ] ` ).  Since all univariate polynomial rings over a fixed
+       base ring ` R ` are isomorphic, we don't bother to pass this in as a
+       parameter; internally we are actually using the empty set as this
+       generator and ` 1o = { (/) } ` is the index set (but for most purposes
+       this choice should not be visible anyway).  (Contributed by Mario
+       Carneiro, 8-Feb-2015.)  (Revised by Mario Carneiro, 12-Jun-2015.) $)
+    vr1val $p |- X = ( ( 1o mVar R ) ` (/) ) $=
+      ( vx vr vz c0 c1o cmvr co cfv wcel cvv cv1 df-vr1 mptrcl eleq2s wex elfvm
+      cv mvrmex simprd exlimiv syl wceq oveq2 fveq1d id 1oex mvrex mpan sylancl
+      0ex fvexg fvmptd3 eqtrid eleq2d pm5.21nii eqriv ) DBGHAIJZKZDTZBLAMLZVBVA
+      LZVCVBANKZBEMGHETZIJZKZNVBAEOZPCQVDFTZUTLZFRVCVBGFUTSVKVCFVKHMLZVCAHVJUAU
+      BUCUDVCBVAVBVCBVEVACVCEAVHVAMNMVIVFAUEGVGUTVFAHIUFUGVCUHVCUTMLZGMLVAMLVLV
+      CVMUIAHMMUJUKUMGUTMMUNULUOUPUQURUS $.
+  $}
+
 
 $(
 ###############################################################################
