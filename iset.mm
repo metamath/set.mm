@@ -184101,6 +184101,17 @@ $)
   $}
 
   ${
+    $d f h i r x y $.
+    $( Set existence of the multivariate power series variables generator.
+       (Contributed by Jim Kingdon, 16-Nov-2026.) $)
+    mvrex $p |- ( ( I e. V /\ R e. W ) -> ( I mVar R ) e. _V ) $=
+      ( vx vi vf vh vy vr cv wcel co wceq cif cmpt cfv cvv wal cmvr ccnv cn cfn
+      cima cn0 cmap crab c1 cc0 cur c0g vex mptex gen2 df-mvr mpofvex mp3an1 )
+      EFKZGHKUAUBUDUCLHUEURUFMUGGKIURIKEKNUHUIOPNJKZUJQUSUKQOPZPZRLZJSFSBCLADLB
+      ATMRLVBFJEURUTFULUMUNFJRRVABATRCDEIGHFJUOUPUQ $.
+  $}
+
+  ${
     $d D y $.  $d I h y $.  $d X h y $.
     mvridfi.v $e |- V = ( I mVar R ) $.
     mvridfi.d $e |- D = { h e. ( NN0 ^m I ) | ( `' h " NN ) e. Fin } $.
