@@ -184112,6 +184112,16 @@ $)
   $}
 
   ${
+    $d f h i r x y $.
+    $( If there is a variable, the corresponding index sets and rings are sets.
+       (Contributed by Jim Kingdon, 16-Nov-2026.) $)
+    mvrmex $p |- ( X e. ( I mVar R ) -> ( I e. _V /\ R e. _V ) ) $=
+      ( vi vr vx vf vh vy cvv cv ccnv cn cima cfn wcel wceq cif cmpt cfv cn0 co
+      cmap crab c1 cc0 cur c0g cmvr df-mvr elmpocl ) DEJJFDKZGHKLMNOPHUAULUCUBU
+      DGKIULIKFKQUEUFRSQEKZUGTUMUHTRSSBAUICFIGHDEUJUK $.
+  $}
+
+  ${
     $d D y $.  $d I h y $.  $d X h y $.
     mvridfi.v $e |- V = ( I mVar R ) $.
     mvridfi.d $e |- D = { h e. ( NN0 ^m I ) | ( `' h " NN ) e. Fin } $.
