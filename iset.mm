@@ -184997,6 +184997,27 @@ $)
         ( cbs cfv c1o cmps co psr1valpsr eqtr4i fveq2i eqtri ) ACHIDHIFCDHCJBKL
         DBCEMGNOP $.
     $}
+
+    psr1bas.k $e |- K = ( Base ` R ) $.
+    ${
+      $d B x $.  $d K x y $.  $d R r $.  $d R u $.  $d R y $.  $d S u $.
+      $d y z $.
+      $( The base set of the ring of univariate power series.  (Contributed by
+         Mario Carneiro, 8-Feb-2015.) $)
+      psr1bas $p |- B = ( K ^m ( NN0 ^m 1o ) ) $=
+        ( vu vr vy vz cn0 c1o cmap co cv wcel cvv wex cbs vx basm cps1 cfv cmps
+        vf df-psr1psr mptrcl eleq2s exlimiv syl c0 csn cen wbr nn0ex 0ex ensymi
+        mapsnen cc0 0nn0 elex2 ax-mp enm mp2an wa wf elmapi adantr df1o2 oveq2i
+        cdm eleq2i bilanri ffvelcdmd wrel wfn wfun basfn fnfun funrel relelfvdm
+        mp2b mpan elexd ex exlimdv mpi con0 eqid psr1baslem psr1bas2 1on a1i id
+        psrbasg eleq2d pm5.21nii eqriv ) UAADLMNOZNOZUAPZAQZBRQZXBXAQZXCHPZCQZH
+        SXDXBAHCFUBXGXDHXDXFBUCUDCIRMIPUEOUCXFBIUGUHEUIUJUKXEJPZLULUMZNOZQZJSZX
+        DLXJUNUOKPLQKSZXLXJLLULUPUQUSURUTLQXMVAKUTLVBVCKJLXJVDVEXEXKXDJXEXKXDXE
+        XKVFZBTVLZXNXHXBUDZDQBXOQZXNWTDXHXBXEWTDXBVGXKXBDWTVHVIXHWTQXKXEWTXJXHM
+        XILNVJVKVMVNVOXQXPBTUDZDTVPZXPXRQXQTRVQTVRXSVSRTVTTWAWCXPBTWBWDGUIUKWEW
+        FWGWHXDAXAXBXDAWTBMBUEOZUFMDWIRXTWJZGUFWKABCXTEFYAWLMWIQXDWMWNXDWOWPWQW
+        RWS $.
+    $}
   $}
 
 
