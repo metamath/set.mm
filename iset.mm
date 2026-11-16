@@ -185068,6 +185068,16 @@ $)
       LZVCVBANKZBEMGHETZIJZKZNVBAEOZPCQVDFTZUTLZFRVCVBGFUTSVKVCFVKHMLZVCAHVJUAU
       BUCUDVCBVAVBVCBVEVACVCEAVHVAMNMVIVFAUEGVGUTVFAHIUFUGVCUHVCUTMLZGMLVAMLVLV
       CVMUIAHMMUJUKUMGUTMMUNULUOUPUQURUS $.
+
+    vr1cl2.2 $e |- S = ( PwSer1 ` R ) $.
+    vr1cl2.3 $e |- B = ( Base ` S ) $.
+    $( The variable ` X ` is a member of the power series algebra
+       ` R [ [ X ] ] ` .  (Contributed by Mario Carneiro, 8-Feb-2015.) $)
+    vr1cl2 $p |- ( R e. Ring -> X e. B ) $=
+      ( crg wcel c0 c1o cmvr co cfv cmps cbs eqid com cfn 1onn nnfi mp1i id a1i
+      0lt1o mvrcl2fi vr1val psr1valpsr fveq2i eqtri 3eltr4g ) BHIZJKBLMZNKBOMZP
+      NZDAULUOBUNKUMJUNQUMQUOQKRIKSIULTKUAUBULUCJKIULUEUDUFBDEUGACPNUOGCUNPBCFU
+      HUIUJUK $.
   $}
 
 
