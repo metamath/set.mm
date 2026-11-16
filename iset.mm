@@ -184971,12 +184971,16 @@ $)
   $( Introduce new constant symbols. $)
   $c PwSer1 $. $( Univariate power series $)
   $c var1 $. $( Univariate power series variable $)
+  $c Poly1 $. $( Univariate polynomial $)
 
   $( Univariate power series. $)
   cps1 $a class PwSer1 $.
 
   $( The base variable of a univariate power series. $)
   cv1 $a class var1 $.
+
+  $( Univariate polynomials. $)
+  cpl1 $a class Poly1 $.
 
   ${
     $d f n r $.
@@ -184989,6 +184993,11 @@ $)
        ` R [ [ X ] ] ` of power series).  (Contributed by Mario Carneiro,
        8-Feb-2015.) $)
     df-vr1 $a |- var1 = ( r e. _V |-> ( ( 1o mVar r ) ` (/) ) ) $.
+
+    $( Define the algebra of univariate polynomials.  (Contributed by Mario
+       Carneiro, 9-Feb-2015.) $)
+    df-ply1 $a |- Poly1 = ( r e. _V |->
+      ( ( PwSer1 ` r ) |`s ( Base ` ( 1o mPoly r ) ) ) ) $.
   $}
 
   $( The set of finite bags on ` 1o ` is just the set of all functions from
@@ -217127,6 +217136,9 @@ htmldef "PwSer1" as "PwSer<sub>1</sub>";
 htmldef "var1" as "var<sub>1</sub>";
   althtmldef "var1" as "var<sub>1</sub>";
   latexdef "var1" as "\mathrm{var}_1";
+htmldef "Poly1" as "Poly<sub>1</sub>";
+  althtmldef "Poly1" as "Poly<sub>1</sub>";
+  latexdef "Poly1" as "\mathrm{Poly}_1";
 
 htmldef "metUnif" as "metUnif";
   althtmldef "metUnif" as "metUnif";
