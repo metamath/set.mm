@@ -185089,6 +185089,24 @@ $)
       HUIUJUK $.
   $}
 
+  ${
+    $d r x y R $.  $d r x y S $.
+    ply1val.1 $e |- P = ( Poly1 ` R ) $.
+    ${
+      ply1val.2 $e |- S = ( PwSer1 ` R ) $.
+      $( The value of the set of univariate polynomials.  (Contributed by Mario
+         Carneiro, 9-Feb-2015.) $)
+      ply1valg $p |- ( R e. V -> P = ( S |`s ( Base ` ( 1o mPoly R ) ) ) ) $=
+        ( vr wcel cpl1 cfv c1o cmpl co cbs cress cps1 cvv cmps wfn 1oex df-ply1
+        cv wceq fveq2 eqtr4di oveq2 fveq2d oveq12d elex psr1valpsr fnpsr fnovex
+        cxp mp3an12i eqeltrid basfn fnmpl funfvex funfni sylancr ressex syl2anc
+        fvmptd3 eqtrid ) BDHZABIJCKBLMZNJZOMZEVEGBGUBZPJZKVILMZNJZOMVHQIQGUAVIB
+        UCZVJCVLVGOVMVJBPJCVIBPUDFUEVMVKVFNVIBKLUFUGUHBDUIZVECQHVGQHZVHQHVECKBR
+        MZQBCFUJRQQUMZSKQHZVEBQHZVPQHUKTVNKBQQRULUNUOVENQSVFQHZVOUPLVQSVRVEVSVT
+        UQTVNKBQQLULUNVOQVFNVFNURUSUTVGCQQVAVBVCVD $.
+    $}
+  $}
+
 
 $(
 ###############################################################################
