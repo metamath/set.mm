@@ -611901,8 +611901,8 @@ $(
   Derived rules of inference
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
-  In this section, we prove a few rules of inference derived from modus ponens
-  ~ ax-mp , and which do not depend on any other axioms.
+  In this section, we prove a few rules of inference that are derived from
+  modus ponens ~ ax-mp and depend on no other axioms.
 
 $)
 
@@ -611950,19 +611950,19 @@ $)
   bj-0 $p wff ( ( ph -> ps ) -> ch ) $=
     ( wi ) ABDCD $.
 
-  $( In this proof, the use of the syntactic theorem ~ bj-0 allows to reduce
-     the total length by one (non-essential) step.  See also the section
-     comment and the comment of ~ bj-0 .  Since ~ bj-0 is used in a
-     non-essential step, this use does not appear on this webpage (but the
-     present theorem appears on the webpage for ~ bj-0 as a theorem referencing
-     it).  The full proof reads $= wph wps wch bj-0 id $.  (while, without
-     using ~ bj-0 , it would read $= wph wps wi wch wi id $.).
+  $( In this proof, the use of the syntactic theorem ~ bj-0 reduces the total
+     length by one (non-essential) step.  See also the section comment and the
+     comment of ~ bj-0 .  Since ~ bj-0 is used in a non-essential step, this
+     use does not appear on this webpage (but the present theorem appears on
+     the webpage for ~ bj-0 as a theorem referencing it).  The full proof reads
+     $= wph wps wch bj-0 id $.  (while, without using ~ bj-0 , it would read $=
+     wph wps wi wch wi id $.).
 
      Now we explain why syntactic theorems are not useful in set.mm.  Suppose
      that the syntactic theorem thm-0 proves that PHI is a well-formed formula,
      and that thm-0 is used to shorten the proof of thm-1.  Assume that PHI
-     does have proper non-atomic subformulas (which is not the case of the
-     formula proved by ~ weq or ~ wel ).  Then, the proof of thm-1 does not
+     does have proper non-atomic subformulas (which is not the case for the
+     formulas proved by ~ weq or ~ wel ).  Then, the proof of thm-1 does not
      construct all the proper non-atomic subformulas of PHI (if it did, then
      using thm-0 would not shorten it).  Therefore, thm-1 is a special instance
      of a more general theorem with essentially the same proof.  In the present
@@ -612001,9 +612001,10 @@ $)
 
   ${
     bj-nnclavi.1 $e |- ( ( ph -> ps ) -> ph ) $.
-    $( Inference associated with ~ bj-nnclav .  Its associated inference is an
-       instance of ~ syl .  Also provable (non-intuitionistically) as ~ bj-poni
-       ( ~ bj-peircei ).  (Contributed by BJ, 30-Jul-2024.) $)
+    $( Inference associated with ~ bj-nnclav .  Its associated inference
+       results from two applications of ~ ax-mp .  Also provable
+       (non-intuitionistically) as ~ bj-poni ( ~ bj-peircei ).  (Contributed by
+       BJ, 30-Jul-2024.) $)
     bj-nnclavi $p |- ( ( ph -> ps ) -> ps ) $=
       ( wi id mpd ) ABDZABCGEF $.
   $}
@@ -612016,9 +612017,10 @@ $)
 
   ${
     bj-nnclavci.1 $e |- ( ph -> ps ) $.
-    $( Inference associated with ~ bj-nnclavc .  Its associated inference is an
-       instance of ~ syl .  Notice the non-intuitionistic proof from ~ peirce
-       and ~ syl .  (Contributed by BJ, 30-Jul-2024.) $)
+    $( Inference associated with ~ bj-nnclavc .  Its associated inference
+       results from two applications of ~ ax-mp .  Also provable
+       (non-intuitionistically) as ~ syl ( ~ peirce ).  (Contributed by BJ,
+       30-Jul-2024.) $)
     bj-nnclavci $p |- ( ( ( ph -> ps ) -> ph ) -> ps ) $=
       ( wi bj-nnclav mpi ) ABDZADGBCABEF $.
   $}
@@ -612026,7 +612028,7 @@ $)
   ${
     bj-jarrii.1 $e |- ( ( ph -> ps ) -> ch ) $.
     bj-jarrii.2 $e |- ps $.
-    $( Inference associated with ~ jarri .  Contrary to it, it does not require
+    $( Inference associated with ~ jarri .  Unlike it, it does not require
        ~ ax-2 , but only ~ ax-mp and ~ ax-1 .  (Contributed by BJ,
        29-Mar-2020.)  (Proof modification is discouraged.) $)
     bj-jarrii $p |- ch $=
@@ -612064,13 +612066,13 @@ $)
   $}
 
   $( Over minimal implicational calculus, Peirce's law implies the double
-     negation of the stability of any formula (that is the interpretation when
-     ` F. ` is substituted for ` ps ` and for ` ch ` ).  Therefore, the double
+     negation of the stability of any formula (this is its reading when ` F. `
+     is substituted for ` ps ` and for ` ch ` ).  Therefore, the double
      negation of the stability of any formula is provable in classical
      refutability calculus.  It is also provable in intuitionistic calculus
      (see iset.mm/bj-nnst) but it is not provable in minimal calculus (see
      ~ bj-stabpeirce ).  (Contributed by BJ, 30-Nov-2023.)  Axiom ~ ax-3 is
-     only used through Peirce's law ~ peirce .
+     used only through Peirce's law ~ peirce .
      (Proof modification is discouraged.) $)
   bj-peircestab $p |- ( ( ( ( ( ph -> ps ) -> ch ) -> ph ) -> ch ) -> ch ) $=
     ( wi imim2 peirce syl6 imim1i syl ) ABDZCDZADZCDCADZCDCMLCMKJADACAJEABFGHCA
@@ -612101,7 +612103,7 @@ $(
   Positive calculus
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
-  Positive calculus is understood to be intuitionistic. Its primitive
+  Positive calculus is understood to be intuitionistic.  Its primitive
   connectives are implication, equivalence, conjunction, and disjunction.
   Due to the current axiomatization of set.mm, axiom ~ ax-3 , which does not
   belong to positive calculus, may appear as a dependency of some theorems in
@@ -612109,13 +612111,13 @@ $(
 
 $)
 
-  $( Implication from equivalence with a conjunct.  Its associated inference is
-     ~ simplbi .  (Contributed by BJ, 20-Mar-2026.) $)
+  $( Implication from equivalence with a conjunction.  Its associated inference
+     is ~ simplbi .  (Contributed by BJ, 20-Mar-2026.) $)
   bj-bisimpl $p |- ( ( ph <-> ( ps /\ ch ) ) -> ( ph -> ps ) ) $=
     ( wa wb biimp simpl syl6 ) ABCDZEAIBAIFBCGH $.
 
-  $( Implication from equivalence with a conjunct.  Its associated inference is
-     ~ simprbi .  (Contributed by BJ, 20-Mar-2026.) $)
+  $( Implication from equivalence with a conjunction.  Its associated inference
+     is ~ simprbi .  (Contributed by BJ, 20-Mar-2026.) $)
   bj-bisimpr $p |- ( ( ph <-> ( ps /\ ch ) ) -> ( ph -> ch ) ) $=
     ( wa wb biimp simpr syl6 ) ABCDZEAICAIFBCGH $.
 
@@ -612124,8 +612126,8 @@ $)
     bj-syl66ib.2 $e |- ( th -> ta ) $.
     bj-syl66ib.3 $e |- ( ta <-> ch ) $.
     $( A mixed syllogism inference similar to ~ imbitrdi .  Shortens
-       ~ bj-dvelimdv1 , ~ alexsubALTlem4 (4821>4812), ~ supsrlem (2868>2863).
-       (Contributed by BJ, 20-Oct-2021.) $)
+       ~ alexsubALTlem4 (4738>4732), ~ supsrlem (2866>2864).  (Contributed by
+       BJ, 20-Oct-2021.) $)
     bj-syl66ib $p |- ( ph -> ( ps -> ch ) ) $=
       ( sylib syl6 ) ABDCFDECGHIJ $.
   $}
@@ -612140,11 +612142,11 @@ $)
      called a paradox of material implication) implies Peirce's axiom ~ peirce
      over minimal implicational calculus and the axiomatic definition of
      disjunction (actually, only the elimination axiom ~ jao , via ~ jao1i ;
-     the introduction axioms ~ olc and ~ orc are not needed).  This theorem
-     shows that actually, the standard instance of ~ curryax implies the
-     standard instance of ~ peirce , which is not the case for the converse
-     ~ bj-peircecurry .  (Contributed by BJ, 15-Jun-2021.)
-     (Proof modification is discouraged.)  (New usage is discouraged.) $)
+     the introduction axioms ~ olc and ~ orc are not needed).  More precisely,
+     the standard instance of ~ curryax implies the standard instance of
+     ~ peirce , which is not the case for the converse ~ bj-peircecurry .
+     (Contributed by BJ, 15-Jun-2021.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
   bj-currypeirce $p |-
               ( ( ph \/ ( ph -> ps ) ) -> ( ( ( ph -> ps ) -> ph ) -> ph ) ) $=
     ( wi pm2.27 jao1i ) AABCZFACFADE $.
@@ -612172,8 +612174,8 @@ $)
      from the case where ` ph ` is the self-referential sentence "If this
      sentence is true, then ` ps ` ", so that one can prove everything.
      Therefore, a consistent system cannot allow the formation of such
-     self-referential sentences.  This has lead to the study of logics
-     rejecting contraction ~ pm2.43 , such as affine logic and linear logic.
+     self-referential sentences.  This has led to the study of logics rejecting
+     contraction ~ pm2.43 , such as affine logic and linear logic.
      (Contributed by BJ, 23-Sep-2023.)  (Proof modification is discouraged.) $)
   bj-currypara $p |- ( ( ph <-> ( ph -> ps ) ) -> ps ) $=
     ( wi wb wa bj-animbi simpr sylbir ) AABCDABEBABFABGH $.
@@ -612246,7 +612248,7 @@ $)
     bj-mt2bi.maj $e |- ( ps <-> -. ph ) $.
     bj-mt2bi.min $e |- ph $.
     $( Version of ~ mt2 where the major premise is a biconditional.  Shortens
-       ~ fal (see ~ bj-fal ) .  Also provable as ~ mt2 ( ~ biimpi ) and as
+       ~ fal (see ~ bj-fal ).  Also provable as ~ mt2 ( ~ biimpi ) and as
        ~ mpbi ( ~ con2bii ).  The current ~ mt2bi should be relabeled, maybe to
        imfal.  (Contributed by BJ, 5-Oct-2024.) $)
     bj-mt2bi $p |- -. ps $=
@@ -612290,15 +612292,15 @@ $)
 
   ${
     bj-jaoi1.1 $e |- ( ph -> ps ) $.
-    $( Shortens ~ orfa2 (58>53), ~ pm1.2 (20>18), ~ pm1.2 (20>18), ~ pm2.4
-       (31>25), ~ pm2.41 (31>25), ~ pm2.42 (38>32), ~ pm3.2ni (43>39), ~ pm4.44
-       (55>51).  (Contributed by BJ, 30-Sep-2019.) $)
+    $( Inference associated with ~ pm2.621 .  Shortens ~ pm2.4 (31>28),
+       ~ pm2.41 (31>28), ~ pm2.42 (38>35).  (Contributed by BJ,
+       30-Sep-2019.) $)
     bj-jaoi1 $p |- ( ( ph \/ ps ) -> ps ) $=
       ( id jaoi ) ABBCBDE $.
 
-    $( Shortens ~ consensus (110>106), ~ elnn0z (336>329), ~ pm1.2 (20>19),
-       ~ pm3.2ni (43>39), ~ pm4.44 (55>51).  (Contributed by BJ,
-       30-Sep-2019.) $)
+    $( Variant of ~ bj-jaoi1 with the disjuncts swapped.  Shortens ~ consensus
+       (110>108), ~ elnn0z (336>331), ~ pm3.2ni (43>41), ~ pm4.44 (55>53).
+       (Contributed by BJ, 30-Sep-2019.) $)
     bj-jaoi2 $p |- ( ( ps \/ ph ) -> ps ) $=
       ( id jaoi ) BBABDCE $.
   $}
@@ -612311,9 +612313,9 @@ $(
 
   A few other characterizations of the biconditional.  The inter-definability
   of logical connectives offers many ways to express a given statement.  Some
-  useful theorems in this regard are ~ df-or , ~ df-an , ~ pm4.64 , ~ imor ,
-  ~ pm4.62 through ~ pm4.67 , and, for the De Morgan laws, ~ ianor through
-  ~ pm4.57 .
+  useful theorems in this regard are ~ df-or , ~ df-an , ~ imor , ~ pm4.62 ,
+  ~ pm4.63 , ~ pm4.64 , ~ pm4.65 , ~ pm4.66 , ~ pm4.67 , and, for the De Morgan
+  laws, ~ ianor through ~ pm4.57 .
 
 $)
 
@@ -612352,7 +612354,7 @@ $)
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  The conditional operator for propositions
+  The conditional operators (for propositions and classes)
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
@@ -612376,8 +612378,8 @@ $)
     $d x ph $.  $d x A $.  $d x B $.
     $( Candidate definition for the conditional operator for classes.  This is
        in line with the definition of a class as the extension of a predicate
-       in ~ df-clab .  We reprove the current ~ df-if from it in ~ bj-dfif .
-       (Contributed by BJ, 20-Sep-2019.)
+       in ~ df-clab .  We reprove a former definition of ~ df-if from it in
+       ~ bj-dfif .  (Contributed by BJ, 20-Sep-2019.)
        (Proof modification is discouraged.) $)
     bj-df-ifc $p |- if ( ph , A , B ) = { x | if- ( ph , x e. A , x e. B ) } $=
       ( cif cv wcel wa wn cab wif df-if ancom orbi12i df-ifp bitr4i abbii eqtri
@@ -612431,8 +612433,8 @@ $)
                                          ( ( ph -> ch ) <-> ( ps -> th ) ) ) $=
     ( wb wi imbi12 imp ) ABECDEACFBDFEABCDGH $.
 
-  $( Dual of ~ truan (which has biconditional reversed).  (Contributed by BJ,
-     26-Oct-2019.)  (Proof modification is discouraged.) $)
+  $( Dual of ~ truan (which has the biconditional reversed).  (Contributed by
+     BJ, 26-Oct-2019.)  (Proof modification is discouraged.) $)
   bj-falor $p |- ( ph <-> ( F. \/ ph ) ) $=
     ( wfal fal biorfi ) BACD $.
 
@@ -612463,16 +612465,20 @@ $)
 
   ${
     bj-bi3ant.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    $( This used to be in the main part.  (Contributed by Wolf Lammen,
-       14-May-2013.)  (Revised by BJ, 14-Jun-2019.) $)
+    $( If two formulas jointly imply a third, and each of these two formulas is
+       implied by one direction of a biconditional, then the biconditional
+       implies the third.  (Contributed by Wolf Lammen, 14-May-2013.)  (Revised
+       by BJ, 14-Jun-2019.) $)
     bj-bi3ant $p |- ( ( ( th -> ta ) -> ph )
           -> ( ( ( ta -> th ) -> ps ) -> ( ( th <-> ta ) -> ch ) ) ) $=
       ( wi wb biimp imim1i biimpr imim3i syl2im ) DEGZAGDEHZAGEDGZBGOBGOCGONADE
       IJOPBDEKJABCOFLM $.
   $}
 
-  $( This used to be in the main part.  (Contributed by Wolf Lammen,
-     14-May-2013.)  (Revised by BJ, 14-Jun-2019.) $)
+  $( If each direction of a biconditional implies the corresponding direction
+     of another biconditional, then the first biconditional implies the second.
+     (Contributed by Wolf Lammen, 14-May-2013.)  (Revised by BJ,
+     14-Jun-2019.) $)
   bj-bisym $p |- ( ( ( ph -> ps ) -> ( ch -> th ) ) -> ( ( ( ps -> ph )
         -> ( th -> ch ) ) -> ( ( ph <-> ps ) -> ( ch <-> th ) ) ) ) $=
     ( wi wb impbi bj-bi3ant ) CDEDCECDFABCDGH $.
@@ -612496,18 +612502,18 @@ $(
   ~ https://en.wikipedia.org/wiki/Modal_logic and
   ~ https://plato.stanford.edu/entries/logic-modal/ .
 
-  Monadic first-order logic (i.e., with quantification over only one variable)
-  is bi-interpretable with modal logic, by mapping ` A. x ` to "necessity"
-  (generally denoted by a box) and ` E. x ` to "possibility" (generally denoted
-  by a diamond).  Therefore, we use these quantifiers so as not to introduce
-  new symbols.  (To be strictly within modal logic, we should add disjoint
-  variable conditions between ` x ` and any other metavariables appearing in
-  the statements.)
+  The one-variable fragment of first-order logic is bi-interpretable with the
+  modal logic S5, by mapping ` A. x ` to "necessity" (generally denoted by a
+  box) and ` E. x ` to "possibility" (generally denoted by a diamond).
+  Therefore, we use these quantifiers so as not to introduce new symbols.
+  (To be strictly within modal logic, we should add disjoint variable
+  conditions between ` x ` and any other metavariables appearing in the
+  statements.)
 
   For instance, ~ ax-gen corresponds to the necessitation rule of modal logic,
   and ~ ax-4 corresponds to the distributivity axiom (K) of modal logic, also
-  called the Kripke scheme.  Modal logics satisfying these rule and axiom are
-  called "normal modal logics", of which the most important modal logics are.
+  called the Kripke scheme.  Modal logics with this rule and this axiom are
+  called normal, and the most important modal logics are normal.
 
   The minimal normal modal logic is also denoted by (K).
   Here are a few normal modal logics with their axiomatizations (on top of
@@ -612515,13 +612521,13 @@ $(
   (K) axiomatized by no supplementary axioms;
   (T) axiomatized by the axiom T;
   (K4) axiomatized by the axiom 4;
-  (S4) axiomatized by the axioms T,4;
-  (S5) axiomatized by the axioms T,5 or D,B,4;
+  (S4) axiomatized by the axioms T and 4;
+  (S5) axiomatized by the axioms T and 5, or D, B and 4;
   (GL) axiomatized by the axiom GL.
 
   The last one, called G&ouml;del&ndash;L&ouml;b logic or provability logic, is
   important because it describes exactly the properties of provability in Peano
-  arithmetic, as proved by Robert Solovay.  See for instance
+  arithmetic, as proved by Robert Solovay.  See, for instance,
   ~ https://plato.stanford.edu/entries/logic-provability/ .
   A basic result in this logic is ~ bj-gl4 .
 
@@ -612540,14 +612546,14 @@ $)
 
   $( This implication, proved using only ~ ax-gen on top of propositional
      calculus (hence holding, up to the standard interpretation, in any modal
-     logic), shows that the axiom scheme ` |- ( A. x ph -> E. x ph ) ` implies
-     the axiom scheme ` |- E. x T. ` (substitute ` T. ` for ` ph ` ).  These
-     correspond to the modal axiom (D), and in predicate calculus, they assert
-     that the universe of discourse is nonempty.  For the converse, see
-     ~ bj-axdd2 .  (Contributed by BJ, 16-May-2019.)  Generalize from its
-     instance with ` T. ` substituted for ` ph ` .  (Revised by BJ,
-     20-Mar-2022.)  (Proof modification is discouraged.)
-     (New usage is discouraged.) $)
+     logic with the necessitation rule), shows that the axiom scheme
+     ` |- ( A. x ph -> E. x ph ) ` implies the axiom scheme ` |- E. x T. `
+     (substitute ` T. ` for ` ph ` ).  These correspond to the modal axiom (D),
+     and in predicate calculus, they assert that the universe of discourse is
+     nonempty.  For the converse, see ~ bj-axdd2 .  (Contributed by BJ,
+     16-May-2019.)  Generalize from its instance with ` T. ` substituted for
+     ` ph ` .  (Revised by BJ, 20-Mar-2022.)
+     (Proof modification is discouraged.)  (New usage is discouraged.) $)
   bj-axd2d $p |- ( ( A. x T. -> E. x ph ) -> E. x ph ) $=
     ( wtru wal wex altru bj-poni ) CBDABEBFG $.
   $( $j usage 'bj-axd2d' avoids 'ax-4'; $)
@@ -612565,7 +612571,7 @@ $)
   $( $j usage 'bj-axtd' avoids 'ax-gen' 'ax-4'; $)
 
   $( In a normal modal logic, the modal axiom GL implies the modal axiom (4).
-     Translated to first-order logic, Axiom GL reads
+     Translated to first-order logic, the modal axiom GL reads
      ` |- ( A. x ( A. x ph -> ph ) -> A. x ph ) ` .  The antecedent of ~ bj-gl4
      is an instance of the axiom GL, with ` ph ` replaced by
      ` ( A. x ph /\ ph ) ` , which is a modality sometimes called the "strong
@@ -612605,15 +612611,16 @@ $(
 
   Beware that "provability logic" often means (K) augmented with the
   G&ouml;del&ndash;L&ouml;b axiom GL, which we do not assume here (at least for
-  the moment).  See for instance
+  the moment).  See, for instance,
   ~ https://plato.stanford.edu/entries/logic-provability/ .
 
   Provability logic is worth studying because whenever T is a first-order
-  theory containing Robinson arithmetic (a fragment of Peano arithmetic), one
-  can prove (using G&ouml;del numbering, and in the much weaker primitive
-  recursive arithmetic) that there exists in T a provability predicate ` Prv `
-  satisfying the above three axioms.  (We do not construct this predicate in
-  this section; this is still a project.)
+  theory containing I&Sigma;1 (a fragment of Peano arithmetic containing
+  Robinson arithmetic), one can prove (using G&ouml;del numbering, and in the
+  much weaker primitive recursive arithmetic) that there exists in T a
+  provability predicate ` Prv ` satisfying the above three axioms (if T only
+  contains Robinson arithmetic, the first axiom still holds).  (We do not
+  construct this predicate in this section; this is still a project.)
 
   The main theorems of this section are the "easy parts" of the proofs of
   G&ouml;del's second incompleteness theorem ( ~ bj-babygodel ) and L&ouml;b's
@@ -612632,17 +612639,17 @@ $)
 
   ${
     ax-prv1.1 $e |- ph $.
-    $( First property of three of the provability predicate.  (Contributed by
-       BJ, 3-Apr-2019.) $)
+    $( First of the three properties of the provability predicate.
+       (Contributed by BJ, 3-Apr-2019.) $)
     ax-prv1 $a |- Prv ph $.
   $}
 
-  $( Second property of three of the provability predicate.  (Contributed by
-     BJ, 3-Apr-2019.) $)
+  $( Second of the three properties of the provability predicate.  (Contributed
+     by BJ, 3-Apr-2019.) $)
   ax-prv2 $a |- ( Prv ( ph -> ps ) -> ( Prv ph -> Prv ps ) ) $.
 
-  $( Third property of three of the provability predicate.  (Contributed by BJ,
-     3-Apr-2019.) $)
+  $( Third of the three properties of the provability predicate.  (Contributed
+     by BJ, 3-Apr-2019.) $)
   ax-prv3 $a |- ( Prv ph -> Prv Prv ph ) $.
 
   ${
@@ -612671,14 +612678,14 @@ $)
        this fact in T).  The wff ` ph ` is a formal version of the sentence
        "This sentence is not provable".  The hard part of the proof of
        G&ouml;del's theorem is to construct such a ` ph ` , called a
-       "G&ouml;del&ndash;Rosser sentence", for a first-order theory T which is
-       effectively axiomatizable and contains Robinson arithmetic, through
-       G&ouml;del diagonalization (this can be done in primitive recursive
-       arithmetic).  The second hypothesis means that ` F. ` is not provable in
-       T, that is, that the theory T is consistent (and having this second
-       hypothesis means that we can prove in T that the theory T is
-       consistent).  The conclusion is the falsity, so having the conclusion
-       means that T can prove the falsity, that is, T is inconsistent.
+       "G&ouml;del sentence", for a first-order theory T which is effectively
+       axiomatizable and contains Robinson arithmetic, through G&ouml;del
+       diagonalization (this can be done in primitive recursive arithmetic).
+       The second hypothesis means that ` F. ` is not provable in T, that is,
+       that the theory T is consistent (and having this second hypothesis means
+       that we can prove in T that the theory T is consistent).  The conclusion
+       is the falsity, so having the conclusion means that T can prove the
+       falsity, that is, T is inconsistent.
 
        Therefore, taking the contrapositive, this theorem expresses that if a
        first-order theory is consistent (and one can prove in it that some
@@ -612719,7 +612726,7 @@ $)
        predicate and a L&ouml;b sentence, given here as the first hypothesis),
        then the theory actually proves that sentence.
 
-       See for instance, Eliezer Yudkowsky, _The Cartoon Guide to L&ouml;b's
+       See, for instance, Eliezer Yudkowsky, _The Cartoon Guide to L&ouml;b's
        Theorem_ (available at ~ http://yudkowsky.net/rational/lobs-theorem/ ).
 
        (Contributed by BJ, 20-Apr-2019.) $)
@@ -612731,8 +612738,8 @@ $)
   ${
     bj-godellob.s $e |- ( ph <-> -. Prv ph ) $.
     bj-godellob.1 $e |- -. Prv F. $.
-    $( Proof of G&ouml;del's theorem from L&ouml;b's theorem (see comments at
-       ~ bj-babygodel and ~ bj-babylob for details).  (Contributed by BJ,
+    $( Proof of G&ouml;del's theorem from L&ouml;b's theorem (see the comments
+       of ~ bj-babygodel and ~ bj-babylob for details).  (Contributed by BJ,
        20-Apr-2019.)  (Proof modification is discouraged.)
        (New usage is discouraged.) $)
     bj-godellob $p |- F. $=
@@ -612800,9 +612807,9 @@ $)
     $( From a closed form theorem (the major premise) with an antecedent in the
        "strong necessity" modality (in the language of modal logic), deduce the
        associated inference.  Strong necessity is stronger than necessity, and
-       equivalent to it when ~ sp (modal T) is available.  Therefore, this
-       theorem is stronger than ~ mpg , and strictly stronger when ~ sp is not
-       available.  (Contributed by BJ, 1-Nov-2023.) $)
+       equivalent to it when ~ sp (modal T) is available, so the major premise
+       is weaker than that of ~ mpg .  Also provable as ~ mpg ( ~ mpan ).
+       (Contributed by BJ, 1-Nov-2023.) $)
     bj-mpgs $p |- ps $=
       ( wal ax-gen mp2an ) AACFBEACEGDH $.
   $}
@@ -612839,8 +612846,8 @@ $( *** ax-gen not required *** $)
      nonfreeness of ` x ` in ` ph ` , so the theorem means that under a
      nonfreeness condition in an antecedent, one can deduce from the
      universally quantified implication an implication where the consequent is
-     universally quantified.  Dual of ~ bj-exlimg .  (Contributed by BJ,
-     9-Dec-2023.) $)
+     universally quantified.  It is ~ sylgt with antecedents swapped.  Dual of
+     ~ bj-exlimg .  (Contributed by BJ, 9-Dec-2023.) $)
   bj-alrimg $p |-
          ( ( ph -> A. x ps ) -> ( A. x ( ps -> ch ) -> ( ph -> A. x ch ) ) ) $=
     ( wi wal sylgt com12 ) BCEDFABDFEACDFEABCDGH $.
@@ -612869,9 +612876,9 @@ $( *** ax-gen required *** $)
     bj-alimii.maj $e |- ( ps -> ph ) $.
     bj-alimii.min $e |- A. x ps $.
     $( Inference associated with ~ alimi .  Double inference associated with
-       ~ alim .  The usual proof of an associated inference (here from ~ alimi
-       and ~ ax-mp ) has the same size and same number of steps.  (Contributed
-       by BJ, 19-Mar-2026.) $)
+       ~ alim .  The usual proof of an associated inference (that is, as
+       ~ ax-mp ( ~ alimi )) has the same size and the same number of essential
+       steps, but two more steps.  (Contributed by BJ, 19-Mar-2026.) $)
     bj-alimii $p |- A. x ph $=
       ( wi ax-gen bj-almp ) ABCBAFCDGEH $.
   $}
@@ -612881,7 +612888,7 @@ $( *** ax-gen required *** $)
     $( Add an antecedent in a universally quantified formula.  Inference
        associated with ~ ala1 .  (Contributed by BJ, 6-Oct-2018.) $)
     bj-ala1i $p |- A. x ( ps -> ph ) $=
-      ( wal wi ala1 ax-mp ) ACEBAFCEDABCGH $.
+      ( wi ax-1 bj-alimii ) BAEACABFDG $.
   $}
 
   ${
@@ -616336,7 +616343,7 @@ $)
        ~ ceqsex4v , ~ ceqsex6v , ~ ceqsex8v , ~ gencbvex (after changing
        ` A = y ` to ` y = A ` ), ~ gencbvex2 , ~ gencbval , ~ vtoclgft (it uses
        ` F/_ ` , whose justification ~ nfcjust does not use ~ ax-ext ) and
-       several other vtocl* theorems (see for instance ~ bj-vtoclg1f ).  See
+       several other vtocl* theorems (see, for instance, ~ bj-vtoclg1f ).  See
        also ~ bj-ceqsaltv .  (Contributed by BJ, 16-Jun-2019.)
        (Proof modification is discouraged.) $)
     bj-ceqsalt $p |- ( ( F/ x ps /\ A. x ( x = A -> ( ph <-> ps ) ) /\ A e. V )
@@ -617263,7 +617270,7 @@ $(
   class.  The singletonization of a class is the class of singletons of
   elements of that class.  It is useful since all nonsingletons are disjoint
   from it, so one can easily adjoin to it disjoint elements, which is what the
-  tagging does: it adjoins the empty set.  This can be used for instance to
+  tagging does: it adjoins the empty set.  This can be used, for instance, to
   define the one-point compactification of a topological space.  It will be
   used in the next section to define tuples which work for proper classes.
 
@@ -619463,10 +619470,10 @@ $)
   ${
     $d A x y $.  $d V x $.  $d W x $.  $d Y x y $.
     $( The elementwise intersection on a powerset is the powerset of the
-       intersection.  This allows to prove for instance that the topology
-       induced on a subset by the discrete topology is the discrete topology on
-       that subset.  See also ~ restdis (which uses ~ distop and ~ restopn2 ).
-       (Contributed by BJ, 27-Apr-2021.) $)
+       intersection.  This makes it possible to prove, for instance, that the
+       topology induced on a subset by the discrete topology is the discrete
+       topology on that subset.  See also ~ restdis (which uses ~ distop and
+       ~ restopn2 ).  (Contributed by BJ, 27-Apr-2021.) $)
     bj-restpw $p |-
                  ( ( Y e. V /\ A e. W ) -> ( ~P Y |`t A ) = ~P ( Y i^i A ) ) $=
       ( vx vy wcel wa cpw cin wceq cvv wex wss velpw sstr2 inss1 sseq1 mpbiri
@@ -620323,7 +620330,7 @@ $)
 
        Remark: in deduction-style proofs, one could save a few syntactic steps
        by using another antecedent than ` T. ` which already appears in the
-       proof.  Here for instance this could be the definition
+       proof.  Here, for instance, this could be the definition
        ` _I = { <. x , y >. | x = y } ` but this would make the proof less easy
        to read.  (Contributed by BJ, 27-Dec-2023.) $)
     bj-opelidb $p |-
