@@ -596399,7 +596399,7 @@ $)
   ${
     $d j x m $.
     $( Define the class of "Polish topologies," which are the topologies of
-       Polish spaces. By a _Polish space_, we mean a topological space that is
+       Polish spaces.  By a _Polish space_, we mean a topological space that is
        separable (has a countable dense subset) and completely metrizable
        (whose topology is induced by a complete metric on the base set).
        (Contributed by Adrian Ducourtial, 17-Nov-2026.) $)
@@ -596428,9 +596428,10 @@ $)
 
        Note that the Borel pointclasses are traditionally defined over the
        positive ordinal numbers, beginning with ` 1o e. On ` .  For simplicity,
-       we here define them over all the ordinals, setting ` ( ( Sgm0 `` j ) ``
-       (/) ) = j ` (which does not alter the outcome of the rest of the
-       construction).  (Contributed by Adrian Ducourtial, 17-Nov-2026.) $)
+       we here define them over all the ordinals, setting
+       ` ( ( Sgm0 `` j ) `` (/) ) = j ` (which does not alter the outcome of
+       the rest of the construction).  (Contributed by Adrian Ducourtial,
+       17-Nov-2026.) $)
     df-sgm0 $a |- Sgm0 = ( j e. PolTop |-> recs ( ( s e. _V |-> if ( dom s C_
                1o , j , { x | E. y e. ~P U. ran s ( z ~<_ _om /\ x = U_ z e. y
                ( U. j \ z ) ) } ) ) ) ) $.
@@ -596443,10 +596444,10 @@ $)
 
   ${
     $d j x y $.
-    $( Define the pi-zero pointclasses of a Polish topology ` j ` . For ordinal
-       ` u ` , the pointsets in ` ( ( Pi0 `` j ) `` u ) ` are precisely the
-       complements (relative to ` j ` ) of the pointsets in ` ( ( Sgm0 `` j )
-       `` u ) ` .  See paragraph 2 of [Kechris] p. xv.
+    $( Define the pi-zero pointclasses of a Polish topology ` j ` .  For
+       ordinal ` u ` , the pointsets in ` ( ( Pi0 `` j ) `` u ) ` are precisely
+       the complements (relative to ` j ` ) of the pointsets in
+       ` ( ( Sgm0 `` j ) `` u ) ` .  See paragraph 2 of [Kechris] p. xv.
 
        The pi-zero pointclasses constitute one half of the Borel hierarchy over
        ` j ` , the other half being given by ` ( Sgm0 `` j ) ` ; see
@@ -596454,9 +596455,10 @@ $)
 
        Note that the Borel pointclasses are traditionally defined over the
        positive ordinal numbers, beginning with ` 1o e. On ` .  For simplicity,
-       we here define them over all the ordinals, setting ` ( ( Pi0 `` j ) ``
-       (/) ) = j ` (which does not alter the outcome of the rest of the
-       construction).  (Contributed by Adrian Ducourtial, 17-Nov-2026.) $)
+       we here define them over all the ordinals, setting
+       ` ( ( Pi0 `` j ) `` (/) ) = j ` (which does not alter the outcome of the
+       rest of the construction).  (Contributed by Adrian Ducourtial,
+       17-Nov-2026.) $)
     df-pi0 $a |- Pi0 = ( j e. Top |-> ( x e. On |-> { y e. ~P U. j | ( U. j \ y
               ) e. ( ( Sgm0 ` j ) ` x ) } ) ) $.
   $}
