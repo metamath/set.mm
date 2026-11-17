@@ -15136,6 +15136,76 @@ intuitionistic and it is lightly used in set.mm</TD>
   <td>would appear to be feasible if we have psrassa</td>
 </tr>
 
+<tr>
+  <td>evlslem4</td>
+  <td><i>none</i></td>
+  <td>this would appear to be doable only if the ring has
+  decidable equality</td>
+</tr>
+
+<tr>
+  <td>psrbagev1</td>
+  <td>~ psrbagev1fi</td>
+  <td>for a finite index set</td>
+</tr>
+
+<tr>
+  <td>psrbagev2</td>
+  <td>~ psrbagev2fi</td>
+  <td>for a finite index set</td>
+</tr>
+
+<tr>
+  <td>evlslem2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses evlslem4</td>
+</tr>
+
+<tr>
+  <td>evlslem3</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses mplmon2cl and gsumpt .  The usages of
+  ` if ` should be fine due to ~ psrbagdceq .  The references to
+  the support of a function may be unneeeded because ~ gsumclfi needs
+  finite rather than finitely supported.</td>
+</tr>
+
+<tr>
+  <td>evlslem6</td>
+  <td><i>none</i></td>
+  <td>It would appear that a slightly modified version of the
+  set.mm proof would work.  The use of suppssfifsupp and related
+  steps could apparently be replaced by ~ fdmfifsupp (although
+  looking at where this is used, finitely supported may not be needed
+  and finite might be better).</td>
+</tr>
+
+<tr>
+  <td>evlslem1</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses mplascl , evlslem3 , mplassa , mplsca ,
+  evlslem6 , evlslem2 , and gsumpt</td>
+</tr>
+
+<tr>
+  <td>evlseu</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses evlslem1 , mplasclf , aspval2 ,
+  and mplbas2</td>
+</tr>
+
+<tr>
+  <td>evlsval2</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses evlseu and pwsdiagrhm</td>
+</tr>
+
+<tr>
+  <td>evlsrhm</td>
+  <td><i>none</i></td>
+  <td>the set.mm proof uses evlsval2</td>
+</tr>
+
 <TR>
   <TD>istop2g</TD>
   <TD>~ istopfin</TD>

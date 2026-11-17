@@ -45402,6 +45402,34 @@ $)
   $}
 
   ${
+    $d A u v $.  $d A v x $.  $d B u v $.  $d B v x $.
+    $( If the domain of a class is inhabited, the class is inhabited.
+       (Contributed by Jim Kingdon, 12-Nov-2026.) $)
+    dmm $p |- ( A e. dom B -> E. x x e. B ) $=
+      ( vv vu cdm wcel wbr wex cab df-dm eleq2i biimpi breq1 exbidv elabg mpbid
+      cv wceq brm exlimiv syl ) BCFZGZBDRZCHZDIZARCGAIZUDBERZUECHZDIZEJZGZUGUDU
+      MUCULBEDCKLMUKUGEBUCUIBSUJUFDUIBUECNOPQUFUHDABUECTUAUB $.
+  $}
+
+  ${
+    $d A u v $.  $d B u v x $.
+    $( If the converse of a class is inhabited, the class is inhabited.
+       (Contributed by Jim Kingdon, 12-Nov-2026.) $)
+    cnvm $p |- ( A e. `' B -> E. x x e. B ) $=
+      ( vu vv ccnv wcel cv cop wceq wbr wa wex elcnv brm adantl exlimivv sylbi
+      ) BCFGBDHZEHZIJZTSCKZLZEMDMAHCGAMZDEBCNUCUDDEUBUDUAATSCOPQR $.
+  $}
+
+  ${
+    $d B x y $.  $d A y $.
+    $( If the range of a class is inhabited, the class is inhabited.
+       (Contributed by Jim Kingdon, 12-Nov-2026.) $)
+    rnm $p |- ( A e. ran B -> E. x x e. B ) $=
+      ( vy crn wcel cv ccnv wex cdm dmm df-rn eleq2s cnvm exlimiv syl ) BCEZFDG
+      ZCHZFZDIZAGCFAIZUABSJQDBSKCLMTUBDARCNOP $.
+  $}
+
+  ${
     $d y z A $.  $d x y z B $.
     $( The domain of a cross product.  Part of Theorem 3.13(x) of [Monk1]
        p. 37.  (Contributed by NM, 28-Jul-1995.)  (Proof shortened by Andrew
@@ -170117,6 +170145,16 @@ $)
   $}
 
   ${
+    $( Sethood of a structure power.  (Contributed by Jim Kingdon,
+       14-Nov-2026.) $)
+    pwsex $p |- ( ( R e. V /\ I e. W ) -> ( R ^s I ) e. _V ) $=
+      ( wcel wa cpws co csca cfv csn cxp cprds eqid pwsval scaslid slotex simpr
+      cvv snexg adantr xpexd prdsex syl2an2r eqeltrd ) ACEZBDEZFZABGHZAIJZBAKZL
+      ZMHZSAUJBCDUIUINUJNOUFUJSEUGULSEUMSEAICPQUHBUKDSUFUGRUFUKSEUGACTUAUBULUJS
+      SUCUDUE $.
+  $}
+
+  ${
     $d x I $.  $d x w R $.  $d x V $.  $d x W $.
     pwsbas.y $e |- Y = ( R ^s I ) $.
     pwsbas.f $e |- B = ( Base ` R ) $.
@@ -174936,6 +174974,19 @@ $)
       URXIRCQCQUSUTVAVBZVFXBHXCRVCVGVDVEVTXEAXCKZWBWEOZOZWDXLOZXFXEXMTVTXBXLHAX
       CWIAUOZWTWBXAWEXOWSWALWIACMVHSWIADVIULVJVKVTXKWDXLVTBRKXKWDTXJABRVLVGVMXN
       XFTVTWDWBWEVNVKVOVTWBWCWFVTWBVPVMVOVQ $.
+  $}
+
+  ${
+    $d G s w $.  $d R s w $.
+    $( The class of subrings of a ring is a set.  (Contributed by Jim Kingdon,
+       12-Nov-2026.) $)
+    subrgex $p |- ( R e. Ring -> ( SubRing ` R ) e. _V ) $=
+      ( vs vw crg wcel csubrg cfv cv cress co cur wa cbs cpw crab df-subrg wceq
+      cvv fveq2 eleq1d pweqd oveq1 anbi12d rabeqbidv id eqid basfn elex funfvex
+      wfn funfni sylancr pwexd rabexd fvmptd3 eqeltrd ) ADEZAFGABHZIJZDEZAKGZUR
+      EZLZBAMGZNZOZRUQCACHZURIJZDEZVGKGZUREZLZBVGMGZNZOVFDFRCBPVGAQZVLVCBVNVEVO
+      VMVDVGAMSUAVOVIUTVKVBVOVHUSDVGAURIUBTVOVJVAURVGAKSTUCUDUQUEUQVCBVEVFRVFUF
+      UQVDRUQMRUJAREVDREZUGADUHVPRAMAMUIUKULUMUNZUOVQUP $.
   $}
 
   ${
@@ -184674,6 +184725,192 @@ $)
       ( cfn wcel crg wa cmps co cbs cress eqid mplval2g csubrg simpl mplsubrgfi
       cfv simpr subrgring syl eqeltrd ) CEFZBGFZHZACBIJZAKRZLJZGABUFUGCEGDUFMZU
       GMZNUEUGUFORFUHGFUEABUFUGCUIDUJUCUDPUCUDSQUGUFUHUHMTUAUB $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Polynomial evaluation
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Introduce new constant symbols. $)
+  $c evalSub $. $( Evaluation of a multivariate polynomial in a subring $)
+  $c eval $. $( Evaluation of a multivariate polynomial $)
+
+  $( Evaluation of a multivariate polynomial in a subring. $)
+  ces $a class evalSub $.
+
+  $( Evaluation of a multivariate polynomial. $)
+  cevl $a class eval $.
+
+  ${
+    $d b f g i r s w x $.
+    $( Define the evaluation map for the polynomial algebra.  The function
+       ` ( ( I evalSub S ) `` R ) : V --> ( S ^m ( S ^m I ) ) ` makes sense
+       when ` I ` is an index set, ` S ` is a ring, ` R ` is a subring of
+       ` S ` , and where ` V ` is the set of polynomials in ` ( I mPoly R ) ` .
+       This function maps an element of the formal polynomial algebra (with
+       coefficients in ` R ` ) to a function from assignments ` I --> S ` of
+       the variables to elements of ` S ` formed by evaluating the polynomial
+       with the given assignments.  (Contributed by Stefan O'Rear,
+       11-Mar-2015.) $)
+    df-evls $a |- evalSub = ( i e. _V , s e. CRing |-> [_ ( Base ` s ) / b ]_
+      ( r e. ( SubRing ` s ) |-> [_ ( i mPoly ( s |`s r ) ) / w ]_
+        ( iota_ f e. ( w RingHom ( s ^s ( b ^m i ) ) )
+        ( ( f o. ( algSc ` w ) ) = ( x e. r |-> ( ( b ^m i ) X. { x } ) ) /\
+          ( f o. ( i mVar ( s |`s r ) ) ) = ( x e. i |-> ( g e. ( b ^m i ) |->
+        ( g ` x ) ) ) ) ) ) ) $.
+
+    $( A simplification of ` evalSub ` when the evaluation ring is the same as
+       the coefficient ring.  (Contributed by Stefan O'Rear, 19-Mar-2015.) $)
+    df-evl $a |- eval = ( i e. _V , r e. _V |->
+      ( ( i evalSub r ) ` ( Base ` r ) ) ) $.
+  $}
+
+  ${
+    $d .x. y z $.  $d B y z $.  $d C y z $.  $d G z $.  $d ph y z $.
+    psrbagev1.c $e |- C = ( Base ` T ) $.
+    psrbagev1.x $e |- .x. = ( .g ` T ) $.
+    psrbagev1.z $e |- .0. = ( 0g ` T ) $.
+    psrbagev1.t $e |- ( ph -> T e. CMnd ) $.
+    psrbagev1fi.i $e |- ( ph -> I e. Fin ) $.
+    psrbagev1fi.b $e |- ( ph -> B e. ( NN0 ^m I ) ) $.
+    psrbagev1.g $e |- ( ph -> G : I --> C ) $.
+    $( A bag of multipliers provides the conditions for a valid sum.
+       (Contributed by Stefan O'Rear, 9-Mar-2015.)  (Revised by AV,
+       18-Jul-2019.)  (Revised by AV, 11-Apr-2024.)  Remove a sethood
+       hypothesis.  (Revised by SN, 7-Aug-2024.) $)
+    psrbagev1fi $p |- ( ph -> ( ( B oF .x. G ) : I --> C
+                              /\ ( B oF .x. G ) finSupp .0. ) ) $=
+      ( vy vz co cn0 wcel cof wf cfsupp wbr cfn cmnd cv cmnmndd mulgnn0cl 3expb
+      wa sylan cmap elmapi syl inidm off mndidcl fdmfifsupp jca ) AGCBFEUARZUBV
+      AHUCUDAPQGGGESCCBFUEUEADUFTZPUGZSTZQUGZCTZUKVCVEERCTZADLUHZVBVDVFVGCEDVCV
+      EIJUIUJULABSGUMRTGSBUBNBSGUNUOOMMGUPUQZAGCVACHVIMAVBHCTVHCDHIKURUOUSUT $.
+  $}
+
+  ${
+    psrbagev2.c $e |- C = ( Base ` T ) $.
+    psrbagev2.x $e |- .x. = ( .g ` T ) $.
+    psrbagev2.t $e |- ( ph -> T e. CMnd ) $.
+    psrbagev2fi.i $e |- ( ph -> I e. Fin ) $.
+    psrbagev2fi.b $e |- ( ph -> B e. ( NN0 ^m I ) ) $.
+    psrbagev2.g $e |- ( ph -> G : I --> C ) $.
+    $( Closure of a sum using a bag of multipliers.  (Contributed by Stefan
+       O'Rear, 9-Mar-2015.)  (Proof shortened by AV, 18-Jul-2019.)  (Revised by
+       AV, 11-Apr-2024.)  Remove a sethood hypothesis.  (Revised by SN,
+       7-Aug-2024.) $)
+    psrbagev2fi $p |- ( ph -> ( T gsum ( B oF .x. G ) ) e. C ) $=
+      ( cof co c0g cfv eqid wf cfsupp wbr psrbagev1fi simpld gsumclfi ) AGCBFEN
+      OZDDPQZHUFRZJKAGCUESUEUFTUAABCDEFGUFHIUGJKLMUBUCUD $.
+  $}
+
+  ${
+    $d I a $.  $d I b f g i r s w x $.  $d Q b $.  $d R b $.  $d S a $.
+    $d S b f i r s w x $.  $d X b $.
+    $( Well-behaved binary operation property of ` evalSub ` .  (Contributed by
+       Stefan O'Rear, 19-Mar-2015.) $)
+    reldmevls $p |- Rel dom evalSub $=
+      ( vi vs vb vr vw vf vx vg cvv ccrg cv cbs cfv csubrg cress ccom cmpt wceq
+      co csb cmpl cascl cmap csn cxp cmvr wa cpws crh crio ces df-evls reldmmpo
+      ) ABIJCBKZLMDUNNMEAKZUNDKZOSZUASFKZEKZUBMPGUPCKUOUCSZGKZUDUEQRURUOUQUFSPG
+      UOHUTVAHKMQQRUGFUSUNUTUHSUISUJTQTUKGEFHABDCULUM $.
+
+    mpfrcl.q $e |- Q = ran ( ( I evalSub S ) ` R ) $.
+    $( Reverse closure for the set of polynomial functions.  (Contributed by
+       Stefan O'Rear, 19-Mar-2015.) $)
+    mpfrcl $p |- ( X e. Q -> ( I e. _V /\ S e. CRing /\
+          R e. ( SubRing ` S ) ) ) $=
+      ( vb vs vr vw vx wcel cvv cfv cv co cbs cmpt wceq csb va vi vf csubrg ces
+      vg ccrg wex crn rnm eleq2s elfvm cress cmpl cascl ccom cmap csn cmvr cpws
+      wa cxp crh crio df-evls elmpocl exlimiv syl simpld simprd cdm crg subrgex
+      crngringd mptexd wfn basfn vex funfvex funfni mp2an nfcsb1v nfmpt csbeq1a
+      nfcv mpteq2dv csbief fveq2 adantl csbeq1d id oveq1 oveqan12d oveq2 oveq2d
+      oveqan12rd adantr xpeq1d eqeq2d simpl mpteq1d eqeq12d anbi12d riotaeqbidv
+      coeq2d mpteq12dv csbeq2dv eqtrd eqtrid ovmpoga syl3anc dmeqd eqid dmmptss
+      eqsstrdi wfun wrel funmpt funeqd mpbiri funrel relelfvdm 3syl exlimdv mpd
+      wi ex sseldd 3jca ) EALZDMLZCUGLZBCUDNZLYJYKYLYJGOZBDCUEPZNZLZGUHZYKYLVAZ
+      YREYPUIAGEYPUJFUKZYQYSGYQUAOZYOLZUAUHYSYNBUAYOULUUBYSUAUBHMUGGHOZQNZIUUCU
+      DNZJUBOZUUCIOZUMPZUNPZUCOZJOZUONUPZKUUGYNUUFUQPZKOZURZVBZRZSZUUJUUFUUHUSP
+      ZUPZKUUFUFUUMUUNUFONZRZRZSZVAZUCUUKUUCUUMUTPZVCPZVDZTZRZTZDCUEUUAKJUCUFUB
+      HIGVEZVFVGVHVGVHZVIZYJYKYLUVMVJZYJYOVKZYMBYJUVPIYMGCQNZJDCUUGUMPZUNPZUULK
+      UUGYNDUQPZUUOVBZRZSZUUJDUVRUSPZUPZKDUFUVTUVARZRZSZVAZUCUUKCUVTUTPZVCPZVDZ
+      TZTZRZVKYMYJYOUWOYJYKYLUWOMLYOUWOSUVNUVOYJIYMUWNMYJCVLLYMMLYJCUVOVNCVMVHV
+      OUBHDCMUGUVKUWOUEMUUFDSZUUCCSZVAZUVKIUUEGUUDUVITZRZUWOGUUDUVJUWTQMVPUUCML
+      UUDMLZVQHVRUXAMUUCQUUCQVSVTWAGIUUEUWSGUUEWEGUUDUVIWBWCYNUUDSIUUEUVIUWSGUU
+      DUVIWDWFWGUWRIUUEUWSYMUWNUWQUUEYMSUWPUUCCUDWHWIUWRUWSGUVQUVITUWNUWRGUUDUV
+      QUVIUWQUUDUVQSUWPUUCCQWHWIWJUWRGUVQUVIUWMUWRUVIJUVSUVHTUWMUWRJUUIUVSUVHUW
+      PUWQUUFDUUHUVRUNUWPWKZUUCCUUGUMWLZWMWJUWRJUVSUVHUWLUWRUVEUWIUCUVGUWKUWRUV
+      FUWJUUKVCUWQUWPUUCCUUMUVTUTUWQWKUUFDYNUQWNZWPWOUWRUURUWCUVDUWHUWRUUQUWBUU
+      LUWRKUUGUUPUWAUWRUUMUVTUUOUWPUUMUVTSUWQUXDWQZWRWFWSUWRUUTUWEUVCUWGUWRUUSU
+      WDUUJUWPUWQUUFDUUHUVRUSUXBUXCWMXEUWRKUUFUVBDUWFUWPUWQWTUWRUFUUMUVTUVAUXEX
+      AXFXBXCXDXGXHXGXHXFXIUVLXJXKZXLIYMUWNUWOUWOXMXNXOYJYRBUVPLZYTYJYQUXGGYJYO
+      XPZYOXQZYQUXGYFYJUXHUWOXPIYMUWNXRYJYOUWOUXFXSXTYOYAUXIYQUXGYNBYOYBYGYCYDY
+      EYHYI $.
+  $}
+
+  ${
+    evlsval.q $e |- Q = ( ( I evalSub S ) ` R ) $.
+    evlsval.w $e |- W = ( I mPoly U ) $.
+    evlsval.v $e |- V = ( I mVar U ) $.
+    evlsval.u $e |- U = ( S |`s R ) $.
+    evlsval.t $e |- T = ( S ^s ( B ^m I ) ) $.
+    evlsval.b $e |- B = ( Base ` S ) $.
+    evlsval.a $e |- A = ( algSc ` W ) $.
+    evlsval.x $e |- X = ( x e. R |-> ( ( B ^m I ) X. { x } ) ) $.
+    evlsval.y $e |- Y = ( x e. I |-> ( g e. ( B ^m I ) |-> ( g ` x ) ) ) $.
+    ${
+      $d I b f g i r s w x $.  $d R f r x $.  $d S b f g i r s w x $.
+      $d T f $.  $d W f $.  $d Z b i r s w $.
+      $( Value of the polynomial evaluation map function.  (Contributed by
+         Stefan O'Rear, 11-Mar-2015.)  (Revised by AV, 18-Sep-2021.) $)
+      evlsval $p |- ( ( I e. Z /\ S e. CRing /\ R e. ( SubRing ` S ) ) ->
+          Q = ( iota_ f e. ( W RingHom T ) ( ( f o. A ) = X /\
+                ( f o. V ) = Y ) ) ) $=
+        ( vr vi vs vb vw wcel ccrg csubrg cfv w3a cv cress cmpl cascl ccom cmap
+        co cbs csn cxp cmpt wceq cmvr wa cpws crh crio ces cvv csb cmpo df-evls
+        a1i fveq2 adantl csbeq1d basfn simpr elexd funfvex funfni adantr simplr
+        wfn sylancr fveq2d adantll simpll oveq1 ad2antlr fnmpl elex ressex elvd
+        oveq12d fnovex mp3an2i ad2antrr simprr simprl coeq2d mpteq2dv mpteq12dv
+        xpeq1d eqeq12d oveq1d mpteq1d anbi12d riotaeqbidv adantlll csbied eqtrd
+        anassrs crg crngring subrgex syl mptexd ovmpod fveq1d eqtrid eqid oveq2
+        3adant3 oveq2d mpteq1 eqeq1d simp3 syl2anc oveq2i eqtri mpteq2i eqeq12i
+        wtru coeq2i simp2 fnmap pwsex riotaexg fvmptd3 oveq1i oveq12i wb fveq2i
+        rhmex xpeq1i mpteq1i anbi12i mptru eqtr4di ) KPUKZFULUKZEFUMUNZUKZUOZDE
+        UFUURIUPZKFUFUPZUQVBZURVBZUSUNZUTZAUVBFVCUNZKVAVBZAUPZVDZVEZVFZVGZUVAKU
+        VCVHVBZUTZAKJUVHUVIJUPUNZVFZVFZVGZVIZIUVDFUVHVJVBZVKVBZVLZVFZUNZUVABUTZ
+        NVGZUVALUTZOVGZVIZIMGVKVBZVLZUUPUUQDUWEVGUUSUUPUUQVIZDEKFVMVBZUNUWEQUWM
+        EUWNUWDUWMUGUHKFVNULUIUHUPZVCUNZUFUWOUMUNZUJUGUPZUWOUVBUQVBZURVBZUVAUJU
+        PZUSUNZUTZAUVBUIUPZUWRVAVBZUVJVEZVFZVGZUVAUWRUWSVHVBZUTZAUWRJUXEUVPVFZV
+        FZVGZVIZIUXAUWOUXEVJVBZVKVBZVLZVOZVFZVOZUWDVMVNVMUGUHVNULUXTVPVGUWMAUJI
+        JUGUHUFUIVQVRUWMUWRKVGZUWOFVGZVIZVIZUXTUIUVGUXSVOZUWDUYCUXTUYEVGUWMUYCU
+        IUWPUVGUXSUYBUWPUVGVGUYAUWOFVCVSVTWAVTUYDUIUVGUXSUWDVNUWMUVGVNUKZUYCUWM
+        VCVNWIZFVNUKZUYFWBUWMFULUUPUUQWCZWDUYFVNFVCFVCWEWFZWJWGUYDUXDUVGVGZVIZU
+        FUWQUXRUURUWCUYCUYKUWQUURVGUWMUYCUYKVIZUWOFUMUYAUYBUYKWHWKWLUYLUXRUJUVD
+        UXQVOZUWCUYCUYKUXRUYNVGUWMUYMUJUWTUVDUXQUYMUWRKUWSUVCURUYAUYBUYKWMUYBUW
+        SUVCVGUYAUYKUWOFUVBUQWNWOWTWAWLUYLUJUVDUXQUWCVNUWMUVDVNUKZUYCUYKURVNVNV
+        EZWIZUWMKVNUKZUVCVNUKZUYOWPUUPUYRUUQKPWQWGZUUQUYSUUPUUQUYSUFUVBFULVNWRW
+        SVTKUVCVNVNURXAXBXCUYCUYKUXAUVDVGZUXQUWCVGZUWMUYCUYKVUAVUBUYCUYKVUAVIZV
+        IZUXNUVTIUXPUWBVUDUXAUVDUXOUWAVKUYCUYKVUAXDZVUDUWOFUXEUVHVJUYAUYBVUCWHZ
+        VUDUXDUVGUWRKVAUYCUYKVUAXEUYAUYBVUCWMZWTZWTWTVUDUXHUVMUXMUVSVUDUXCUVFUX
+        GUVLVUDUXBUVEUVAVUDUXAUVDUSVUEWKXFVUDAUVBUXFUVKVUDUXEUVHUVJVUHXIXGXJVUD
+        UXJUVOUXLUVRVUDUXIUVNUVAVUDUWRKUWSUVCVHVUGVUDUWOFUVBUQVUFXKWTXFVUDAUWRU
+        XKKUVQVUGVUDJUXEUVHUVPVUHXLXHXJXMXNXRXOXPXQXHXPXQUYTUYIUWMUFUURUWCVNUUQ
+        UURVNUKZUUPUUQFXSUKVUIFXTFYAYBVTYCYDYEYFYIUUTUWEUVAKFEUQVBZURVBZUSUNZUT
+        ZAEUVKVFZVGZUVAKVUJVHVBZUTZUVRVGZVIZIVUKUWAVKVBZVLZUWLUUTUFEUWCVVAUURUW
+        DVNUWDYGUVBEVGZUVTVUSIUWBVUTVVBUVDVUKUWAVKVVBUVCVUJKURUVBEFUQYHZYJZXKVV
+        BUVMVUOUVSVURVVBUVFVUMUVLVUNVVBUVEVULUVAVVBUVDVUKUSVVDWKXFAUVBEUVKYKXJV
+        VBUVOVUQUVRVVBUVNVUPUVAVVBUVCVUJKVHVVCYJXFYLXMXNUUPUUQUUSYMZUUTVUTVNUKZ
+        VVAVNUKUUTVUKVNUKZUWAVNUKZVVFUYQUUTUYRVUJVNUKZVVGWPUUPUUQUYRUUSUYTYIZUU
+        TUUQUUSVVIUUPUUQUUSUUAZVVEEFULUURWRYNKVUJVNVNURXAXBUUTUUQUVHVNUKZVVHVVK
+        VAUYPWIUUTUYFUYRVVLUUBUUTUYGUYHUYFWBUUTFULVVKWDUYJWJVVJUVGKVNVNVAXAXBFU
+        VHULVNUUCYNVUKUWAVNVNUUJYNVUSIVUTVNUUDYBUUEUWLVVAVGYSUWJVUSIUWKVUTUWKVU
+        TVGYSMVUKGUWAVKMKHURVBVUKRHVUJKURTYOYPZGFCKVAVBZVJVBUWAUAVVNUVHFVJCUVGK
+        VAUBUUFZYOYPUUGVRUWJVUSUUHYSUWGVUOUWIVURUWFVUMNVUNBVULUVABMUSUNVULUCMVU
+        KUSVVMUUIYPYTNAEVVNUVJVEZVFVUNUDAEVVPUVKVVNUVHUVJVVOUUKYQYPYRUWHVUQOUVR
+        LVUPUVALKHVHVBVUPSHVUJKVHTYOYPYTOAKJVVNUVPVFZVFUVRUEAKVVQUVQJVVNUVHUVPV
+        VOUULYQYPYRUUMVRXNUUNUUOXQ $.
+    $}
   $}
 
 
@@ -216711,6 +216948,12 @@ htmldef "mVar" as " mVar ";
 htmldef "mPoly" as " mPoly ";
   althtmldef "mPoly" as " mPoly ";
   latexdef "mPoly" as "\mathrm{mPoly}";
+htmldef "evalSub" as " evalSub ";
+  althtmldef "evalSub" as " evalSub ";
+  latexdef "evalSub" as "\mathbin{\mathrm{evalSub}}";
+htmldef "eval" as " eval ";
+  althtmldef "eval" as " eval ";
+  latexdef "eval" as "\mathbin{\mathrm{eval}}";
 
 htmldef "metUnif" as "metUnif";
   althtmldef "metUnif" as "metUnif";
