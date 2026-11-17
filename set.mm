@@ -493703,6 +493703,18 @@ htmldef "suppos" as
     "suppos";
   althtmldef "suppos" as "suppos";
   latexdef "suppos" as "\mathrm{suppos}";
+htmldef "PolTop" as
+    "PolTop";
+  althtmldef "PolTop" as "PolTop";
+  latexdef "PolTop" as "\mathrm{PolTop}";
+htmldef "Sgm0" as
+    "Sgm0";
+  althtmldef "Sgm0" as "Sgm0";
+  latexdef "Sgm0" as "\mathbf\Sigma^0";
+htmldef "Pi0" as
+    "Pi0";
+  althtmldef "Pi0" as "Pi0";
+  latexdef "Pi0" as "\mathbf\Pi^0";
 /* End of Adrian Ducourtial's mathbox */
 
 /* Mathbox of Scott Fenton */
@@ -596366,6 +596378,88 @@ $)
                    ) ) ^m n ) |-> ( x e. ( a ^m m ) |-> ( f ` ( i e. n |-> ( (
                    g ` i ) ` x ) ) ) ) ) ) ) $.
   $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Descriptive set theory
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+  Polish spaces and the Borel hierarchy
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $c PolTop $.  $( Constant for the class of Polish topologies $)
+
+  $( Extend class notation to include the class of Polish topologies. $)
+  cpolt $a class PolTop $.
+
+  ${
+    $d j x m $.
+    $( Define the class of "Polish topologies," which are the topologies of
+       Polish spaces. By a _Polish space_, we mean a topological space that is
+       separable (has a countable dense subset) and completely metrizable
+       (whose topology is induced by a complete metric on the base set).
+       (Contributed by Adrian Ducourtial, 16-Nov-2026.) $)
+    df-polt $a |- PolTop = { j e. Top | ( E. x ( x C_ U. j /\ x ~<_ _om /\ ( (
+               cls ` j ) ` x ) = U. j ) /\ E. m e. ( CMet ` U. j ) j = (
+               MetOpen ` m ) ) } $.
+  $}
+
+  $c Sgm0 $.  $( Constant for the hierarchy of sigma-zero pointclasses $)
+
+  $( Extend class notation to include the hierarchy of sigma-zero
+     pointclasses. $)
+  csgm0 $a class Sgm0 $.
+
+  ${
+    $d j s x y z $.
+    $( Define the sigma-zero pointclasses of a Polish topology ` j ` .  For
+       ` u = 1o ` , the pointclass ` ( ( Sgm0 `` j ) `` u ) ` is the class of
+       open sets of ` j ` , while for ` u ` greater than ` 1o ` , it is defined
+       recursively as the class of countable unions of complements of sets in
+       any prior pointclasses.  See paragraph 2 of [Kechris] p. xv.
+       
+       The sigma-zero pointclasses constitute one half of the Borel hierarchy
+       over ` j ` , the other half being given by ` ( Pi0 `` j ) ` ; see
+       ~ df-pi0 .
+
+       Note that the Borel pointclasses are traditionally defined over the
+       positive ordinal numbers, beginning with ` 1o e. On ` .  For simplicity,
+       we here define them over all the ordinals, setting ` ( ( Sgm0 `` j ) ``
+       (/) ) = j ` (which does not alter the outcome of the rest of the
+       construction).  (Contributed by Adrian Ducourtial, 17-Nov-2026.) $)
+    df-sgm0 $a |- Sgm0 = ( j e. PolTop |-> recs ( ( s e. _V |-> if ( dom s C_
+               1o , j , { x | E. y e. ~P U. ran s ( z ~<_ _om /\ x = U_ z e. y
+               ( U. j \ z ) ) } ) ) ) ) $.
+  $}
+
+  $c Pi0 $.  $( Constant for the hierarchy of pi-zero pointclasses $)
+
+  $( Extend class notation to include the hierarchy of pi-zero pointclasses. $)
+  cpi0 $a class Pi0 $.
+
+  ${
+    $d j x y $.
+    $( Define the pi-zero pointclasses of a Polish topology ` j ` . For ordinal
+       ` u ` , the pointsets in ` ( ( Pi0 `` j ) `` u ) ` are precisely the
+       complements (relative to ` j ` ) of the pointsets in ` ( ( Sgm0 `` j ) ``
+       u ) ` .  See paragraph 2 of [Kechris] p. xv.
+
+       The pi-zero pointclasses constitute one half of the Borel hierarchy over
+       ` j ` , the other half being given by ` ( Sgm0 `` j ) ` ; see ~ df-sgm0 .
+
+       Note that the Borel pointclasses are traditionally defined over the
+       positive ordinal numbers, beginning with ` 1o e. On ` .  For simplicity,
+       we here define them over all the ordinals, setting ` ( ( Pi0 `` j ) ``
+       (/) ) = j ` (which does not alter the outcome of the rest of the
+       construction).  (Contributed by Adrian Ducourtial, 17-Nov-2026.) $)
+    df-pi0 $a |- Pi0 = ( j e. Top |-> ( x e. On |-> { y e. ~P U. j | ( U. j \ y
+              ) e. ( ( Sgm0 ` j ) ` x ) } ) ) $.
+  $}
+
 
 $( (End of Adrian Ducourtial's mathbox.) $)
 $( End $[ set-mbox-ad.mm $] $)
