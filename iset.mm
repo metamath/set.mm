@@ -183613,6 +183613,37 @@ $)
   $}
 
   ${
+    $d I f h w x y z $.  $d R f w x z $.  $d S f w x z $.  $d V f w x z $.
+    $d W f w x z $.  $d f ph w x z $.
+    psrsca.s $e |- S = ( I mPwSer R ) $.
+    psrsca.i $e |- ( ph -> I e. V ) $.
+    psrsca.r $e |- ( ph -> R e. W ) $.
+    $( The scalar field of the multivariate power series structure.
+       (Contributed by Mario Carneiro, 28-Dec-2014.) $)
+    psrsca $p |- ( ph -> R = ( Scalar ` S ) ) $=
+      ( vx vf vh cfv cnx cbs cop cv wcel eqid cvv vz vw csca cplusg cmulr cvsca
+      vy ctp ccnv cn cima cfn cn0 cmap crab csn cxp cof cmpo cts ctopn cpt cres
+      co cun cle cofr wbr cmin cmpt cgsu psrbasg eqidd psrval psrplusgg syl2anc
+      wceq opeq2d psrmulrg tpeq123d uneq1d eqtr4d fveq2d c1 c9 basfn cmps fnpsr
+      wfn elexd fnovex mp3an2i eqeltrid funfvex funfni sylancr plusgslid slotex
+      syl mulrslid mpoexga fnmap nn0ex a1i rabexd topnfn snexg xpexd psrvalstrd
+      ptex scaslid wss snsstp1 ssun2 sstri strslfv3 eqtr2d ) ACUCMNOMCOMZPZNUDM
+      ZCUDMZPZNUEMZCUEMZPZUHZNUCMBPZNUFMJKBOMZXRLQUIUJUKULRZLUMDUNVDZUOZJQZUPUQ
+      KQZBUEMZURVDZUSZPZNUTMYKBVAMZUPZUQZVBMZPZUHZVEZUCMZBACUUDUCACXSXTBUDMZURX
+      RXRUQVCZPZYCKUAXRXRUBYKBJUGQUBQZVFVGVHUGYKUOYLYMMUUIYLVIURVDUAQMYNVDVJVKV
+      DVJUSZPZUHZUUCVEUUDAJUGXRYKUUFUUGBCYPYNUUJKUALUBDUUAYHYREFGYHSZUUFSZYNSZY
+      RSYKSZAXRYKBCLDYHEFGUUMUUPXRSZHIVLUUGSUUJSYPSAUUAVMHIVNAYFUULUUCAXSXSYBUU
+      HYEUUKAXSVMAYAUUGXTADERZBFRZYAUUGVQHIXRUUFYABCDEFGUUQUUNYASVOVPVRAYDUUJYC
+      AUURUUSYDUUJVQHIJUGXRYKBCYDYNKUALUBDEFGUUQUUOYDSUUPVSVPVRVTWAWBWCAUUEBUUD
+      UUDUCFWDWEPAUUDVMAXRTYATBYPYDUUAFTTTAOTWIZCTRZXRTRZWFACDBWGVDZTGWGTTUQZWI
+      ADTRZBTRZUVCTRWHADEHWJZABFIWJZDBTTWGWKWLWMZUVBTCOCOWNWOWPZAUVAYATRUVICUDT
+      WQWRWSAUVAYDTRUVICUETWTWRWSIAYHTRZUVBYPTRAUUTUVFUVKWFUVHUVKTBOBOWNWOWPUVJ
+      JKYHXRYOTTXAVPAYTTRUUATRAYKYSTTAYILYJYKTUUPUNUVDWIAUMTRZUVEYJTRXBUVLAXCXD
+      UVGUMDTTUNWKWLXEAYRTRZYSTRAVATWIUVFUVMXFUVHUVMTBVABVAWNWOWPYRTXGWSXHYTTXJ
+      WSXIXKYGUPZUUDXLAUVNUUCUUDYGYQUUBXMUUCYFXNXOXDIUUESXPXQ $.
+  $}
+
+  ${
     $d x .0. $.  $d r s t x y z ph $.  $d r s t x y z R $.  $d r s t x y z S $.
     $d x D $.  $d f x y z I $.  $d x y N $.  $d x y X $.
     psrgrp.s $e |- S = ( I mPwSer R ) $.
