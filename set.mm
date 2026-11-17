@@ -882308,34 +882308,133 @@ $)
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  General arithmetic, algebra, and order
+  Algebraic and arithmetic preliminaries
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
   ${
-    $( Every positive integer is a nonzero integer.  (Contributed by Zhi Wang,
-       2-Nov-2026.) $)
-    nnznz $p |- ( A e. NN -> A e. ( ZZ \ { 0 } ) ) $=
-      ( cn wcel cz cc0 nnz nnne0 eldifsnd ) ABCADEAFAGH $.
+    $( The equations ` ( F `` ( A G C ) ) = ( ( F `` A ) H D ) ` and
+       ` ( F `` ( B G C ) ) = ( ( F `` B ) H D ) ` are equivalent when
+       ` A = B ` .  (Contributed by Zhi Wang, 4-Nov-2026.) $)
+    fvoveqeq1 $p |- ( A = B -> ( ( F ` ( A G C ) ) = ( ( F ` A ) H D ) <->
+      ( F ` ( B G C ) ) = ( ( F ` B ) H D ) ) ) $=
+      ( wceq co cfv fvoveq1 fveq2 oveq1d eqeq12d ) ABHZACFIEJBCFIEJAEJZDGIBEJZD
+      GIABCEFKOPQDGABELMN $.
   $}
 
   ${
-    $( Every positive integer is a nonzero rational.  (Contributed by Zhi Wang,
-       27-Oct-2026.) $)
-    nnqnz $p |- ( A e. NN -> A e. ( QQ \ { 0 } ) ) $=
-      ( cn wcel cq cc0 nnq nnne0 eldifsnd ) ABCADEAFAGH $.
+    $( The equations ` ( F `` ( C G A ) ) = ( D H ( F `` A ) ) ` and
+       ` ( F `` ( C G B ) ) = ( D H ( F `` B ) ) ` are equivalent when
+       ` A = B ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    fvoveqeq2 $p |- ( A = B -> ( ( F ` ( C G A ) ) = ( D H ( F ` A ) ) <-> ( F
+      `
+      ( C G B ) ) = ( D H ( F ` B ) ) ) ) $=
+      ( wceq co cfv oveq2 fveq2d fveq2 oveq2d eqeq12d ) ABHZCAFIZEJCBFIZEJDAEJZ
+      GIDBEJZGIPQREABCFKLPSTDGABEMNO $.
   $}
 
   ${
-    mul3splitd.1 $e |- ( ph -> C e. CC ) $.
-    mul3splitd.2 $e |- ( ph -> B e. CC ) $.
-    mul3splitd.3 $e |- ( ph -> M = ( ( 3 x. C ) + B ) ) $.
-    $( Splitting a triple summand into one copy and two copies preserves the
-       sum.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    mul3splitd $p |- ( ph -> M = ( C + ( ( 2 x. C ) + B ) ) ) $=
-      ( c3 cmul co caddc c2 2cnd adddirp1d 2p1e3 oveq1i eqtr3di mulcld addcomd
-      c1 eqtr3d oveq1d addassd 3eqtrd ) ADHCIJZBKJCLCIJZKJZBKJCUFBKJKJGAUEUGBKA
-      UFCKJZUEUGALTKJZCIJUHUEALCAMZENUIHCIOPQAUFCALCUJERZESUAUBACUFBEUKFUCUD $.
+    $d A y $.  $d B y $.  $d F y $.  $d G y $.  $d H y $.  $d P y $.  $d R y $.
+    $d X y $.  $d Y y $.
+    rspcfvovd.1 $e |- ( ph -> A. y e. A ( -. P R y -> ( F ` ( X G y ) ) = (
+      B H ( F ` y ) ) ) ) $.
+    rspcfvovd.2 $e |- ( ph -> Y e. A ) $.
+    rspcfvovd.3 $e |- ( ph -> -. P R Y ) $.
+    $( Evaluate a restricted universal family at ` Y ` .  Membership in ` A `
+       and the condition ` -. P R Y ` yield
+       ` ( F `` ( X G Y ) ) = ( B H ( F `` Y ) ) ` under ` ph ` .  (Contributed
+       by Zhi Wang, 17-Oct-2026.) $)
+    rspcfvovd $p |- ( ph -> ( F ` ( X G Y ) ) = ( B H ( F ` Y ) ) ) $=
+      ( wbr wn co cfv wceq wi cv breq2 notbid fvoveqeq2 imbi12d rspcdva mpd ) A
+      EKFOZPZJKHQGRDKGRIQSZNAEBUAZFOZPZJUKHQGRDUKGRIQSZTUIUJTBCKUKKSZUMUIUNUJUO
+      ULUHUKKEFUBUCUKKJDGHIUDUELMUFUG $.
+  $}
+
+  ${
+    $d C x $.  $d D x y $.  $d F x y $.  $d G x y $.  $d H x y $.  $d P x y $.
+    $d R x y $.  $d A x y $.  $d B y $.
+    rspc2fvovd.1 $e |- ( ph -> A. x e. C A. y e. D ( -. P R y -> ( F ` ( x G
+      y ) ) = ( ( F ` x ) H ( F ` y ) ) ) ) $.
+    rspc2fvovd.2 $e |- ( ph -> A e. C ) $.
+    rspc2fvovd.3 $e |- ( ph -> B e. D ) $.
+    rspc2fvovd.4 $e |- ( ph -> -. P R B ) $.
+    $( Evaluate a doubly restricted universal family at ` A ` and ` B ` .  The
+       membership hypotheses and ` -. P R B ` yield
+       ` ( F `` ( A G B ) ) = ( ( F `` A ) H ( F `` B ) ) ` under ` ph ` .
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    rspc2fvovd $p |- ( ph -> ( F ` ( A G B ) ) = ( ( F ` A ) H ( F ` B ) ) )
+      $=
+      ( co cfv wceq wi wbr wn fvoveqeq1 imbi2d notbid fvoveqeq2 imbi12d rspc2dv
+      cv breq2 mpd ) AHEIUAZUBZDEKQJRDJRZEJRLQSZPAHCUIZIUAZUBZBUIZUPKQJRUSJRUPJ
+      RZLQSZTUMUOTURDUPKQJRUNUTLQSZTBCDEFGUSDSVAVBURUSDUPUTJKLUCUDUPESZURUMVBUO
+      VCUQULUPEHIUJUEUPEDUNJKLUFUGMNOUHUK $.
+  $}
+
+  ${
+    fmulassd.1 $e |- ( ph -> X e. CC ) $.
+    fmulassd.2 $e |- ( ph -> Y e. CC ) $.
+    fmulassd.3 $e |- ( ph -> Z e. CC ) $.
+    fmulassd.4 $e |- ( ph -> A e. CC ) $.
+    fmulassd.5 $e |- ( ph -> B e. CC ) $.
+    fmulassd.6 $e |- ( ph -> C e. CC ) $.
+    fmulassd.7 $e |- ( ph -> ( F ` ( X x. ( Y x. Z ) ) ) = ( A x. D ) ) $.
+    fmulassd.8 $e |- ( ph -> D = ( B x. C ) ) $.
+    fmulassd.9 $e |- ( ph -> E = ( A x. B ) ) $.
+    $( The factorization ` ( F `` ( ( X x. Y ) x. Z ) ) = ( E x. C ) ` follows
+       from the three displayed identities and complex-number hypotheses.
+       Associativity ( ~ mulassd ) regroups both the argument of ` F ` and the
+       product of ` A ` , ` B ` , and ` C ` .  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
+    fmulassd $p |- ( ph -> ( F ` ( ( X x. Y ) x. Z ) ) = ( E x. C ) ) $=
+      ( cmul co cfv mulassd oveq1d fveq2d oveq2d 3eqtrd 3eqtr4rd ) ABCTUAZDTUAB
+      CDTUAZTUAZFDTUAHITUAJTUAZGUBZABCDNOPUCAFUIDTSUDAUMHIJTUATUAZGUBBETUAUKAUL
+      UNGAHIJKLMUCUEQAEUJBTRUFUGUH $.
+  $}
+
+  ${
+    fmulcand.1 $e |- ( ph -> X e. CC ) $.
+    fmulcand.2 $e |- ( ph -> Y e. CC ) $.
+    fmulcand.3 $e |- ( ph -> Z e. CC ) $.
+    fmulcand.4 $e |- ( ph -> A e. CC ) $.
+    fmulcand.5 $e |- ( ph -> B e. CC ) $.
+    fmulcand.6 $e |- ( ph -> C e. CC ) $.
+    fmulcand.7 $e |- ( ph -> D e. CC ) $.
+    fmulcand.8 $e |- ( ph -> D =/= 0 ) $.
+    fmulcand.9 $e |- ( ph -> ( F ` ( X x. ( Y x. Z ) ) ) = ( D x. A ) ) $.
+    fmulcand.10 $e |- ( ph -> E = ( D x. C ) ) $.
+    $( The equality ` ( F `` ( Y x. ( X x. Z ) ) ) = ( B x. E ) ` is equivalent
+       to ` A = ( B x. C ) ` under the two given factorization identities and
+       ` D =/= 0 ` .  Taking ` D = ( F `` X ) ` , ` B = ( F `` Y ) ` ,
+       ` C = ( F `` Z ) ` , ` A = ( F `` ( Y x. Z ) ) ` , and
+       ` E = ( F `` ( X x. Z ) ) ` recovers cancellation of a multiplier's
+       nonzero value in a multiplication identity.  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
+    fmulcand $p |- ( ph -> ( ( F ` ( Y x. ( X x. Z ) ) ) = ( B x. E ) <-> A
+      = ( B x. C ) ) ) $=
+      ( cmul cfv wceq mul12d fveq2d eqtrd oveq2d eqeq12d mulcld mulcand bitrd
+      co ) AIHJUAULUAULZGUBZCFUAULZUCEBUAULZECDUAULZUAULZUCBUQUCAUNUPUOURAUNHIJ
+      UAULUAULZGUBUPAUMUSGAIHJLKMUDUESUFAUOCEDUAULZUAULURAFUTCUATUGACEDOQPUDUFU
+      HABUQENACDOPUIQRUJUK $.
+  $}
+
+  ${
+    fmulneg2bid.1 $e |- ( ph -> A e. CC ) $.
+    fmulneg2bid.2 $e |- ( ph -> B e. CC ) $.
+    fmulneg2bid.3 $e |- ( ph -> C e. CC ) $.
+    fmulneg2bid.4 $e |- ( ph -> D e. CC ) $.
+    fmulneg2bid.5 $e |- ( ph -> E e. CC ) $.
+    fmulneg2bid.6 $e |- ( ph -> G = -u D ) $.
+    fmulneg2bid.7 $e |- ( ph -> ( F ` -u ( A x. B ) ) = -u E ) $.
+    $( The equality ` ( F `` ( A x. -u B ) ) = ( C x. G ) ` is equivalent to
+       ` E = ( C x. D ) ` under the displayed complex-number and sign-reversal
+       hypotheses.  The proof uses ~ mulneg2d to rewrite the first equality as
+       ` -u E = -u ( C x. D ) ` , then ~ neg11ad to cancel the negations.
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    fmulneg2bid $p |- ( ph -> ( ( F ` ( A x. -u B ) ) = ( C x. G ) <-> E = ( C
+      x. D ) ) ) $=
+      ( cneg cmul co cfv wceq mulneg2d fveq2d eqtrd oveq2d eqeq12d mulcld bitrd
+      neg11ad ) ABCPQRZGSZDHQRZTFPZDEQRZPZTFUMTAUJULUKUNAUJBCQRPZGSULAUIUOGABCI
+      JUAUBOUCAUKDEPZQRUNAHUPDQNUDADEKLUAUCUEAFUMMADEKLUFUHUG $.
   $}
 
   ${
@@ -882349,24 +882448,6 @@ $)
       ( c2 cmul co caddc 2timesd oveq1d add32d 3eqtrd addcld addcomd oveq2d ) A
       IDJKZBDLKZCLKZCUALKCDBLKZLKATDDLKBCLKZDLKUBADEMADUDDLHNABCDFGEOPAUACABDFE
       QGRAUAUCCLABDFERSP $.
-  $}
-
-  ${
-    mul3sum4d.1 $e |- ( ph -> M e. CC ) $.
-    mul3sum4d.2 $e |- ( ph -> A e. CC ) $.
-    mul3sum4d.3 $e |- ( ph -> C e. CC ) $.
-    mul3sum4d.4 $e |- ( ph -> D e. CC ) $.
-    mul3sum4d.5 $e |- ( ph -> M = ( C + D ) ) $.
-    mul3sum4d.6 $e |- ( ph -> A = ( 3 x. C ) ) $.
-    $( If ` M = ( C + D ) ` and ` A = ( 3 x. C ) ` , then ` ( 3 x. D ) ` and
-       ` ( M + A ) ` sum to four times ` M ` .  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    mul3sum4d $p |- ( ph -> ( 4 x. M ) = ( ( 3 x. D ) + ( M + A ) ) ) $=
-      ( c4 cmul co caddc c3 oveq2d oveq1d 3eqtrd addcomd c1 3p1e4 oveq1i cc 3cn
-      wcel a1i adddirp1d eqtr3id adddid 3eqtr4d mulcld add32d addcld ) ALEMNZBE
-      ONZPDMNZONZUQUPONUQEBONZONAUOPEMNZEONZBUQONZEONURAUOPUAONZEMNVAVCLEMUBUCA
-      PEPUDUFAUEUGZFUHUIAUTVBEOAPCDONZMNPCMNZUQONUTVBAPCDVDHIUJAEVEPMJQABVFUQOK
-      RUKRABUQEGAPDVDIULZFUMSAUPUQABEGFUNVGTAUPUSUQOABEGFTQS $.
   $}
 
   ${
@@ -882388,6 +882469,18 @@ $)
   $}
 
   ${
+    halfpre2p1d.1 $e |- ( ph -> P e. CC ) $.
+    $( Doubling the successor of half a predecessor recovers the successor.
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    halfpre2p1d $p |- ( ph -> ( 2 x. ( ( ( P - 1 ) / 2 ) + 1 ) ) = ( P + 1
+    ) ) $=
+      ( c2 c1 cmin cdiv caddc cmul 2cnd 1cnd subcld halfcld adddid cc0 wne 2ne0
+      co a1i divcan2d mulridd oveq12d subadd23d 2m1e1 oveq2i eqtrdi 3eqtrd ) AD
+      BEFRZDGRZEHRIRDUIIRZDEIRZHRUHDHRZBEHRZADUIEAJZAUHABECAKZLZMUONAUJUHUKDHAU
+      HDUPUNDOPAQSTADUNUAUBAULBDEFRZHRUMABEDCUOUNUCUQEBHUDUEUFUG $.
+  $}
+
+  ${
     addsubdiv3d.1 $e |- ( ph -> M e. CC ) $.
     addsubdiv3d.2 $e |- ( ph -> A e. CC ) $.
     addsubdiv3d.3 $e |- ( ph -> B e. CC ) $.
@@ -882404,40 +882497,17 @@ $)
   $}
 
   ${
-    halfpre2p1d.1 $e |- ( ph -> P e. CC ) $.
-    $( Doubling the successor of half a predecessor recovers the successor.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    halfpre2p1d $p |- ( ph -> ( 2 x. ( ( ( P - 1 ) / 2 ) + 1 ) ) = ( P + 1
-    ) ) $=
-      ( c2 c1 cmin cdiv caddc cmul 2cnd 1cnd subcld halfcld adddid cc0 wne 2ne0
-      co a1i divcan2d mulridd oveq12d subadd23d 2m1e1 oveq2i eqtrdi 3eqtrd ) AD
-      BEFRZDGRZEHRIRDUIIRZDEIRZHRUHDHRZBEHRZADUIEAJZAUHABECAKZLZMUONAUJUHUKDHAU
-      HDUPUNDOPAQSTADUNUAUBAULBDEFRZHRUMABEDCUOUNUCUQEBHUDUEUFUG $.
-  $}
-
-  ${
-    mul3sub2d.1 $e |- ( ph -> P e. CC ) $.
-    $( Three times a complex number minus twice that number equals the original
-       number.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    mul3sub2d $p |- ( ph -> ( ( 3 x. P ) - ( 2 x. P ) ) = P ) $=
-      ( c3 c2 cmin co cmul wceq 3m1e2 3cn ax-1cn 2cn subsub23i mpbi oveq1i wcel
-      c1 cc a1i subdird mullidd 3eqtr3a ) ADEFGZBHGRBHGDBHGEBHGFGBUDRBHDRFGEIUD
-      RIJDREKLMNOPADEBDSQAKTESQAMTCUAABCUBUC $.
-  $}
-
-  ${
-    sub32lincombd.1 $e |- ( ph -> P e. CC ) $.
-    sub32lincombd.2 $e |- ( ph -> N e. CC ) $.
-    $( The linear combination of ` ( P - ( 2 x. N ) ) ` and
-       ` ( ( 3 x. N ) - P ) ` with coefficients three and two equals ` P ` .
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    sub32lincombd $p |- ( ph -> ( ( 3 x. ( P - ( 2 x. N ) ) ) + ( 2 x. ( ( 3
-      x. N ) - P ) ) ) = P ) $=
-      ( c3 c2 cmul co cmin caddc wcel 3cn a1i 2cnd mulcld subdid mul12d oveq1d
-      cc eqtr4d oveq12d npncand mul3sub2d 3eqtrd ) AFBGCHIZJIHIZGFCHIZBJIHIZKIF
-      BHIZFUFHIZJIZUKGBHIZJIZKIUJUMJIBAUGULUIUNKAFBUFFTLAMNZDAGCAOZEPZQAUIGUHHI
-      ZUMJIUNAGUHBUPAFCUOEPDQAUKURUMJAFGCUOUPERSUAUBAUJUKUMAFBUODPAFUFUOUQPAGBU
-      PDPUCABDUDUE $.
+    muladjacentdifd.1 $e |- ( ph -> T e. CC ) $.
+    muladjacentdifd.2 $e |- ( ph -> N e. CC ) $.
+    $( The products at coefficients ` ( T + 1 ) ` and ` ( T - 1 ) ` differ by
+       twice ` N ` ; those at ` T ` and ` ( T - 1 ) ` differ by ` N ` .  Both
+       parameters may be complex.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    muladjacentdifd $p |- ( ph -> ( ( ( ( T + 1 ) x. N ) - ( ( T - 1 ) x. N )
+      ) = ( 2 x. N ) /\ ( ( T x. N ) - ( ( T - 1 ) x. N ) ) = N ) ) $=
+      ( c1 caddc co cmul cmin c2 wceq 1cnd addcld subcld subdird pnncand eqtrdi
+      1p1e2 oveq1d eqtr3d nncand mullidd 3eqtr3d jca ) ABFGHZCIHBFJHZCIHZJHZKCI
+      HZLBCIHUHJHZCLAUFUGJHZCIHUIUJAUFUGCABFDAMZNABFDUMOZEPAULKCIAULFFGHKABFFDU
+      MUMQSRTUAABUGJHZCIHFCIHUKCAUOFCIABFDUMUBTABUGCDUNEPACEUCUDUE $.
   $}
 
   ${
@@ -882459,6 +882529,61 @@ $)
   $}
 
   ${
+    mul3sub2d.1 $e |- ( ph -> P e. CC ) $.
+    $( Three times a complex number minus twice that number equals the original
+       number.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    mul3sub2d $p |- ( ph -> ( ( 3 x. P ) - ( 2 x. P ) ) = P ) $=
+      ( c3 c2 cmin co cmul wceq 3m1e2 3cn ax-1cn 2cn subsub23i mpbi oveq1i wcel
+      c1 cc a1i subdird mullidd 3eqtr3a ) ADEFGZBHGRBHGDBHGEBHGFGBUDRBHDRFGEIUD
+      RIJDREKLMNOPADEBDSQAKTESQAMTCUAABCUBUC $.
+  $}
+
+  ${
+    mul3splitd.1 $e |- ( ph -> C e. CC ) $.
+    mul3splitd.2 $e |- ( ph -> B e. CC ) $.
+    mul3splitd.3 $e |- ( ph -> M = ( ( 3 x. C ) + B ) ) $.
+    $( Splitting a triple summand into one copy and two copies preserves the
+       sum.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    mul3splitd $p |- ( ph -> M = ( C + ( ( 2 x. C ) + B ) ) ) $=
+      ( c3 cmul co caddc c2 2cnd adddirp1d 2p1e3 oveq1i eqtr3di mulcld addcomd
+      c1 eqtr3d oveq1d addassd 3eqtrd ) ADHCIJZBKJCLCIJZKJZBKJCUFBKJKJGAUEUGBKA
+      UFCKJZUEUGALTKJZCIJUHUEALCAMZENUIHCIOPQAUFCALCUJERZESUAUBACUFBEUKFUCUD $.
+  $}
+
+  ${
+    mul3sum4d.1 $e |- ( ph -> M e. CC ) $.
+    mul3sum4d.2 $e |- ( ph -> A e. CC ) $.
+    mul3sum4d.3 $e |- ( ph -> C e. CC ) $.
+    mul3sum4d.4 $e |- ( ph -> D e. CC ) $.
+    mul3sum4d.5 $e |- ( ph -> M = ( C + D ) ) $.
+    mul3sum4d.6 $e |- ( ph -> A = ( 3 x. C ) ) $.
+    $( If ` M = ( C + D ) ` and ` A = ( 3 x. C ) ` , then ` ( 3 x. D ) ` and
+       ` ( M + A ) ` sum to four times ` M ` .  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
+    mul3sum4d $p |- ( ph -> ( 4 x. M ) = ( ( 3 x. D ) + ( M + A ) ) ) $=
+      ( c4 cmul co caddc c3 oveq2d oveq1d 3eqtrd addcomd c1 3p1e4 oveq1i cc 3cn
+      wcel a1i adddirp1d eqtr3id adddid 3eqtr4d mulcld add32d addcld ) ALEMNZBE
+      ONZPDMNZONZUQUPONUQEBONZONAUOPEMNZEONZBUQONZEONURAUOPUAONZEMNVAVCLEMUBUCA
+      PEPUDUFAUEUGZFUHUIAUTVBEOAPCDONZMNPCMNZUQONUTVBAPCDVDHIUJAEVEPMJQABVFUQOK
+      RUKRABUQEGAPDVDIULZFUMSAUPUQABEGFUNVGTAUPUSUQOABEGFTQS $.
+  $}
+
+  ${
+    sub32lincombd.1 $e |- ( ph -> P e. CC ) $.
+    sub32lincombd.2 $e |- ( ph -> N e. CC ) $.
+    $( The linear combination of ` ( P - ( 2 x. N ) ) ` and
+       ` ( ( 3 x. N ) - P ) ` with coefficients three and two equals ` P ` .
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    sub32lincombd $p |- ( ph -> ( ( 3 x. ( P - ( 2 x. N ) ) ) + ( 2 x. ( ( 3
+      x. N ) - P ) ) ) = P ) $=
+      ( c3 c2 cmul co cmin caddc wcel 3cn a1i 2cnd mulcld subdid mul12d oveq1d
+      cc eqtr4d oveq12d npncand mul3sub2d 3eqtrd ) AFBGCHIZJIHIZGFCHIZBJIHIZKIF
+      BHIZFUFHIZJIZUKGBHIZJIZKIUJUMJIBAUGULUIUNKAFBUFFTLAMNZDAGCAOZEPZQAUIGUHHI
+      ZUMJIUNAGUHBUPAFCUOEPDQAUKURUMJAFGCUOUPERSUAUBAUJUKUMAFBUODPAFUFUOUQPAGBU
+      PDPUCABDUDUE $.
+  $}
+
+  ${
     sub32reflmul2d.1 $e |- ( ph -> P e. CC ) $.
     sub32reflmul2d.2 $e |- ( ph -> N e. CC ) $.
     $( Subtracting ` P ` from three times ` ( P - ( 2 x. N ) ) ` gives twice
@@ -882471,20 +882596,6 @@ $)
       JIUTBJIZVAJIUSAUNVBBJAFBUMFKLAMNZDAGCAOZEPZQRAUTVABAFBVDDPAFUMVDVFPDSAVCU
       PVAURJAUTTBHIZJIZVCUPAVGBUTJABDUAUBAFTJIZBHIVHUPAFTBVDAUKDUCVIGBHULUDUEUF
       AFGCVDVEEUGUHUIAGBUQVEDAFCVDEPQUJ $.
-  $}
-
-  ${
-    muladjacentdifd.1 $e |- ( ph -> T e. CC ) $.
-    muladjacentdifd.2 $e |- ( ph -> N e. CC ) $.
-    $( The products at coefficients ` ( T + 1 ) ` and ` ( T - 1 ) ` differ by
-       twice ` N ` ; those at ` T ` and ` ( T - 1 ) ` differ by ` N ` .  Both
-       parameters may be complex.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    muladjacentdifd $p |- ( ph -> ( ( ( ( T + 1 ) x. N ) - ( ( T - 1 ) x. N )
-      ) = ( 2 x. N ) /\ ( ( T x. N ) - ( ( T - 1 ) x. N ) ) = N ) ) $=
-      ( c1 caddc co cmul cmin c2 wceq 1cnd addcld subcld subdird pnncand eqtrdi
-      1p1e2 oveq1d eqtr3d nncand mullidd 3eqtr3d jca ) ABFGHZCIHBFJHZCIHZJHZKCI
-      HZLBCIHUHJHZCLAUFUGJHZCIHUIUJAUFUGCABFDAMZNABFDUMOZEPAULKCIAULFFGHKABFFDU
-      MUMQSRTUAABUGJHZCIHFCIHUKCAUOFCIABFDUMUBTABUGCDUNEPACEUCUDUE $.
   $}
 
   ${
@@ -882510,25 +882621,6 @@ $)
   $}
 
   ${
-    $( A number equal to minus one or one is real.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
-    signre $p |- ( A e. { -u 1 , 1 } -> A e. RR ) $=
-      ( c1 cneg cpr cr wcel wss neg1rr 1re prssi mp2an sseli ) BCZBDZEAMEFBEFNE
-      GHIMBEJKL $.
-  $}
-
-  ${
-    $( A number equal to minus one or one lies between these two values.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    signbounds $p |- ( A e. { -u 1 , 1 } -> ( -u 1 <_ A /\ A <_ 1 ) ) $=
-      ( c1 cneg cpr wcel wceq wo cle wbr wa elpri neg1rr leidi id breqtrrid 1re
-      cc0 clt eqbrtrdi jca neg1lt0 0lt1 0re lttri mp2an ltleii 1le1 jaoi syl )
-      ABCZBDEAUJFZABFZGUJAHIZABHIZJZAUJBKUKUOULUKUMUNUKUJUJAHUJLMUKNZOUKAUJBHUP
-      UJBLPUJQRIQBRIUJBRIUAUBUJQBLUCPUDUEUFZSTULUMUNULUJBAHUQULNZOULABBHURUGSTU
-      HUI $.
-  $}
-
-  ${
     $( Negation preserves membership in the set of two integer signs.
        (Contributed by Zhi Wang, 20-Oct-2026.) $)
     signnegcl $p |- ( A e. { -u 1 , 1 } -> -u A e. { -u 1 , 1 } ) $=
@@ -882546,43 +882638,6 @@ $)
   $}
 
   ${
-    signnotposled.1 $e |- ( ph -> A e. { -u 1 , 1 } ) $.
-    signnotposled.2 $e |- ( ph -> B e. { -u 1 , 1 } ) $.
-    signnotposled.3 $e |- ( ph -> ( A = 1 -> B = -u 1 ) ) $.
-    $( If two values in ` { -u 1 , 1 } ` are not both one, either value is at
-       most the negative of the other.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
-    signnotposled $p |- ( ph -> B <_ -u A ) $=
-      ( c1 cneg wceq cle wbr wa cpr signbounds simprd syl simpr negeqd breqtrrd
-      wcel adantr negneg1e1 eqtrdi imp neg1rr leidi eqbrtrdi wo elpri mpjaodan
-      ) ABGHZIZCBHZJKBGIZAULLZCGUMJACGJKZULACUKGMZTZUPEURUKCJKUPCNOPUAUOUMUKHGU
-      OBUKAULQRUBUCSAUNLZCUKUMJUSCUKUKJAUNCUKIFUDUKUEUFUGUSBGAUNQRSABUQTULUNUHD
-      BUKGUIPUJ $.
-  $}
-
-
-  ${
-    rpdivgt1ltd.1 $e |- ( ph -> A e. RR+ ) $.
-    rpdivgt1ltd.2 $e |- ( ph -> B e. RR+ ) $.
-    rpdivgt1ltd.3 $e |- ( ph -> 1 < B ) $.
-    $( Division of a positive real number by a real number greater than one
-       decreases it.  This includes the case ` ( ph -> A e. NN ) ` .
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    rpdivgt1ltd $p |- ( ph -> ( A / B ) < A ) $=
-      ( cdiv co c1 clt wbr crp wcel 1rp a1i ltdiv2d mpbid rpcnd div1d breqtrd )
-      ABCGHZBIGHZBJAICJKUAUBJKFAICBILMANOEDPQABABDRST $.
-  $}
-
-  ${
-    rpthirdltd.1 $e |- ( ph -> A e. RR+ ) $.
-    $( A third of a positive real number is strictly smaller than that number.
-       This includes the case ` ( ph -> A e. NN ) ` .  (Contributed by Zhi
-       Wang, 17-Oct-2026.) $)
-    rpthirdltd $p |- ( ph -> ( A / 3 ) < A ) $=
-      ( c3 crp wcel 3rp a1i c1 clt wbr 1lt3 rpdivgt1ltd ) ABDCDEFAGHIDJKALHM $.
-  $}
-
-  ${
     nnsubd.1 $e |- ( ph -> A e. NN ) $.
     nnsubd.2 $e |- ( ph -> B e. NN ) $.
     nnsubd.3 $e |- ( ph -> A < B ) $.
@@ -882594,6 +882649,29 @@ $)
       RMDEBCNOP $.
   $}
 
+  ${
+    $( Every positive integer is a nonzero integer.  (Contributed by Zhi Wang,
+       2-Nov-2026.) $)
+    nnznz $p |- ( A e. NN -> A e. ( ZZ \ { 0 } ) ) $=
+      ( cn wcel cz cc0 nnz nnne0 eldifsnd ) ABCADEAFAGH $.
+  $}
+
+  ${
+    $d B m $.  $d N m $.  $d ch m $.  $d k m $.  $d k ph $.
+    ralnnindhypd.1 $e |- ( m = k -> ( ps <-> ch ) ) $.
+    ralnnindhypd.2 $e |- ( ph -> B e. RR ) $.
+    ralnnindhypd.3 $e |- ( ph -> N e. NN ) $.
+    ralnnindhypd.4 $e |- ( ph -> N < B ) $.
+    ralnnindhypd.5 $e |- ( ph -> A. m e. NN ( m < N -> ( m < B -> ps ) ) ) $.
+    $( Restrict a bounded strong-induction hypothesis to the preceding positive
+       integers.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    ralnnindhypd $p |- ( ph -> A. k e. ( 1 ..^ N ) ch ) $=
+      ( c1 cv wcel clt wbr cn adantr wi cfzo co wa elfzolt2 adantl simpr sselid
+      fzossnn nnred cr lttrd weq breq1 imbi12d wral rspcdva mp2d ralrimiva ) AC
+      EMGUAUBZAENZUSOZUCZUTGPQZUTDPQZCVAVCAUTMGUDUEZVBUTGDVBUTVBUSRUTGUHAVAUFUG
+      ZUIAGUJOVAAGJUISADUJOVAISVEAGDPQVAKSUKVBFNZGPQZVGDPQZBTZTZVCVDCTZTFRUTFEU
+      LZVHVCVJVLVGUTGPUMVMVIVDBCVGUTDPUMHUNUNAVKFRUOVALSVFUPUQUR $.
+  $}
 
   ${
     $d S x y z $.  $d ph x y $.
@@ -882612,52 +882690,10 @@ $)
   $}
 
   ${
-    fzomaxdif0d.1 $e |- ( ph -> A e. ( 0 ..^ N ) ) $.
-    fzomaxdif0d.2 $e |- ( ph -> B e. ( 0 ..^ N ) ) $.
-    $( The absolute difference of two members of ` ( 0 ..^ N ) ` is less than
-       ` N ` .  Consequence of ~ fzomaxdif for an interval starting at zero.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    fzomaxdif0d $p |- ( ph -> ( abs ` ( A - B ) ) < N ) $=
-      ( cmin co cabs cfv cc0 clt cfzo wcel wbr fzomaxdif syl2anc elfzolt2 syl
-      cz elfzoel2 zcnd subid1d breqtrd ) ABCGHIJZDKGHZDLAUEKUFMHNZUEUFLOABKDMHZ
-      NZCUHNUGEFBCKDPQUEKUFRSADADAUIDTNEBKDUASUBUCUD $.
-  $}
-
-  ${
-    nnabsclsubd.1 $e |- ( ph -> A e. ZZ ) $.
-    nnabsclsubd.2 $e |- ( ph -> B e. ZZ ) $.
-    nnabsclsubd.3 $e |- ( ph -> A =/= B ) $.
-    $( The absolute difference of unequal integers is a positive integer.
-       Apply ~ nnabscl to their nonzero integer difference.  (Contributed by
-       Zhi Wang, 17-Oct-2026.) $)
-    nnabsclsubd $p |- ( ph -> ( abs ` ( A - B ) ) e. NN ) $=
-      ( cmin co cz wcel cc0 wne cabs cfv zsubcld zcnd subne0d nnabscl syl2anc
-      cn ) ABCGHZIJUAKLUAMNTJABCDEOABCABDPACEPFQUARS $.
-  $}
-
-  ${
-    fzoss2eld.1 $e |- ( ph -> N e. ZZ ) $.
-    fzoss2eld.2 $e |- ( ph -> K <_ N ) $.
-    fzoss2eld.3 $e |- ( ph -> A e. ( M ..^ K ) ) $.
-    $( Membership in a half-open integer interval is preserved when its upper
-       endpoint is increased.  Elementwise deduction version of ~ fzoss2 .
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    fzoss2eld $p |- ( ph -> A e. ( M ..^ N ) ) $=
-      ( cfzo co cuz cfv wcel wss cz cle wbr elfzoel2 syl eluz2 syl3anbrc fzoss2
-      sseldd ) ADCIJZDEIJZBAECKLMZUDUENACOMZEOMCEPQUFABUDMUGHBDCRSFGCETUACDEUBS
-      HUC $.
-  $}
-
-  ${
-    fzo1subd.1 $e |- ( ph -> A e. ( 1 ..^ P ) ) $.
-    $( Reflection about half of ` P ` preserves the integer interval
-       ` ( 1 ..^ P ) ` : if ` A ` belongs to it, so does ` ( P - A ) ` .
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    fzo1subd $p |- ( ph -> ( P - A ) e. ( 1 ..^ P ) ) $=
-      ( cmin co cn wcel clt wbr cfzo fzonnsub syl w3a elfzo1 sylib simp2d nnred
-      c1 cc0 simp1d nngt0d ltsubposd mpbid syl3anbrc ) ACBEFZGHZCGHZUFCIJZUFSCK
-      FZHABUJHZUGDBSCLMABGHZUHBCIJZAUKULUHUMNDCBOPZQZATBIJUIABAULUHUMUNUAZUBABC
-      ABUPRACUORUCUDCUFOUE $.
+    $( Every positive integer is a nonzero rational.  (Contributed by Zhi Wang,
+       27-Oct-2026.) $)
+    nnqnz $p |- ( A e. NN -> A e. ( QQ \ { 0 } ) ) $=
+      ( cn wcel cq cc0 nnq nnne0 eldifsnd ) ABCADEAFAGH $.
   $}
 
   ${
@@ -882710,18 +882746,6 @@ $)
   $}
 
   ${
-    nncentralfzod.1 $e |- ( ph -> P e. NN ) $.
-    nncentralfzod.2 $e |- ( ph -> N e. NN ) $.
-    nncentralfzod.3 $e |- ( ph -> ( 2 x. N ) < P ) $.
-    $( A positive integer less than half of the positive integer ` P ` belongs
-       to ` ( 1 ..^ P ) ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    nncentralfzod $p |- ( ph -> N e. ( 1 ..^ P ) ) $=
-      ( cn wcel clt wbr c1 cfzo co c3 cmul cmin nnred nnrpd sub3ltnd simprd
-      elfzo1 syl3anbrc ) ACGHBGHCBIJZCKBLMHEDANCOMBPMCIJUCABCABDQACERFSTBCUAUB
-      $.
-  $}
-
-  ${
     quarterthirdlt.1 $e |- ( ph -> M e. RR+ ) $.
     quarterthirdlt.2 $e |- ( ph -> N e. RR ) $.
     quarterthirdlt.3 $e |- ( ph -> P e. RR ) $.
@@ -882741,6 +882765,390 @@ $)
       KLWFVTAJTCVQATWGUDACWCUDZUNAWIRCKWIRUTAUOQUPUQURAROCWBWDERONUAAVAQVBULVCA
       MMKLZCKLVLVMAMMCVSVSWJUNAWKOCKWKOUTAVDQUPUQVEAVIVJMAJDVPFSAMCVRWCSMUKPAVF
       QVGVH $.
+  $}
+
+  ${
+    p1div4boundsd.1 $e |- ( ph -> P e. RR ) $.
+    p1div4boundsd.2 $e |- ( ph -> 3 < P ) $.
+    $( For a real number ` P ` greater than three, ` ( ( P + 1 ) / 4 ) ` lies
+       strictly between one and ` P ` .  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
+    p1div4boundsd $p |- ( ph -> ( 1 < ( ( P + 1 ) / 4 ) /\ ( ( P + 1 ) / 4
+    ) < P ) ) $=
+      ( c1 caddc co c4 clt wbr cmul cr wcel 4re a1i recnd c3 crp c2 lttrd mpbid
+      cdiv mulridd df-4 3re 1red ltadd1dd eqbrtrid eqbrtrd readdcld 4pos elrpii
+      ltmuldiv2d 2re remulcld 1lt3 ltadd2dd 2timesd breqtrrd cc0 0red 3rp elrpd
+      rpgt0d 2lt4 ltmul1dd ltdivmuld mpbird jca ) AEBEFGZHUBGZIJZVKBIJZAHEKGZVJ
+      IJVLAVNHVJIAHAHHLMANOZPUCAHQEFGVJIUDAQBEQLMAUEOZCAUFZDUGUHUIAEVJHVQABECVQ
+      UJZHRMAHNUKULOZUMUAAVMVJHBKGZIJAVJSBKGZVTVRASBSLMAUNOZCUOAHBVOCUOAVJBBFGW
+      AIAEBBVQCCAEQBVQVPCEQIJAUPODTUQABABCPURUSASHBWBVOABCAUTQBAVAVPCAQQRMAVBOV
+      DDTVCSHIJAVEOVFTAVJBHVRCVSVGVHVI $.
+  $}
+
+  ${
+    p1div4halfltd.1 $e |- ( ph -> P e. RR ) $.
+    p1div4halfltd.2 $e |- ( ph -> 1 < P ) $.
+    $( The quarter successor of a real number above one is below half that
+       number.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    p1div4halfltd $p |- ( ph -> ( ( P + 1 ) / 4 ) < ( P / 2 ) ) $=
+      ( c1 caddc co c2 cdiv clt cmul 1red readdcld recnd 2cnd crp wcel a1i wbr
+      c4 2rp rpne0d divdiv1d wceq 2t2e4 oveq2d eqtrd rehalfcld ltadd2dd 2timesd
+      breqtrrd ltdivmuld mpbird ltdiv1dd eqbrtrrd ) ABEFGZHIGZHIGZUPTIGZBHIGJAU
+      RUPHHKGZIGUSAUPHHAUPABECALZMZNAOZVCAHHPQAUARZUBZVEUCAUTTUPIUTTUDAUERUFUGA
+      UQBHAUPVBUHCVDAUQBJSUPHBKGZJSAUPBBFGVFJAEBBVACCDUIABABCNUJUKAUPBHVBCVDULU
+      MUNUO $.
+  $}
+
+  ${
+    rpdivgt1ltd.1 $e |- ( ph -> A e. RR+ ) $.
+    rpdivgt1ltd.2 $e |- ( ph -> B e. RR+ ) $.
+    rpdivgt1ltd.3 $e |- ( ph -> 1 < B ) $.
+    $( Division of a positive real number by a real number greater than one
+       decreases it.  This includes the case ` ( ph -> A e. NN ) ` .
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    rpdivgt1ltd $p |- ( ph -> ( A / B ) < A ) $=
+      ( cdiv co c1 clt wbr crp wcel 1rp a1i ltdiv2d mpbid rpcnd div1d breqtrd )
+      ABCGHZBIGHZBJAICJKUAUBJKFAICBILMANOEDPQABABDRST $.
+  $}
+
+  ${
+    rpthirdltd.1 $e |- ( ph -> A e. RR+ ) $.
+    $( A third of a positive real number is strictly smaller than that number.
+       This includes the case ` ( ph -> A e. NN ) ` .  (Contributed by Zhi
+       Wang, 17-Oct-2026.) $)
+    rpthirdltd $p |- ( ph -> ( A / 3 ) < A ) $=
+      ( c3 crp wcel 3rp a1i c1 clt wbr 1lt3 rpdivgt1ltd ) ABDCDEFAGHIDJKALHM $.
+  $}
+
+  ${
+    $( A number equal to minus one or one is real.  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
+    signre $p |- ( A e. { -u 1 , 1 } -> A e. RR ) $=
+      ( c1 cneg cpr cr wcel wss neg1rr 1re prssi mp2an sseli ) BCZBDZEAMEFBEFNE
+      GHIMBEJKL $.
+  $}
+
+  ${
+    $( A number equal to minus one or one lies between these two values.
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    signbounds $p |- ( A e. { -u 1 , 1 } -> ( -u 1 <_ A /\ A <_ 1 ) ) $=
+      ( c1 cneg cpr wcel wceq wo cle wbr wa elpri neg1rr leidi id breqtrrid 1re
+      cc0 clt eqbrtrdi jca neg1lt0 0lt1 0re lttri mp2an ltleii 1le1 jaoi syl )
+      ABCZBDEAUJFZABFZGUJAHIZABHIZJZAUJBKUKUOULUKUMUNUKUJUJAHUJLMUKNZOUKAUJBHUP
+      UJBLPUJQRIQBRIUJBRIUAUBUJQBLUCPUDUEUFZSTULUMUNULUJBAHUQULNZOULABBHURUGSTU
+      HUI $.
+  $}
+
+  ${
+    signnotposled.1 $e |- ( ph -> A e. { -u 1 , 1 } ) $.
+    signnotposled.2 $e |- ( ph -> B e. { -u 1 , 1 } ) $.
+    signnotposled.3 $e |- ( ph -> ( A = 1 -> B = -u 1 ) ) $.
+    $( If two values in ` { -u 1 , 1 } ` are not both one, either value is at
+       most the negative of the other.  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
+    signnotposled $p |- ( ph -> B <_ -u A ) $=
+      ( c1 cneg wceq cle wbr wa cpr signbounds simprd syl simpr negeqd breqtrrd
+      wcel adantr negneg1e1 eqtrdi imp neg1rr leidi eqbrtrdi wo elpri mpjaodan
+      ) ABGHZIZCBHZJKBGIZAULLZCGUMJACGJKZULACUKGMZTZUPEURUKCJKUPCNOPUAUOUMUKHGU
+      OBUKAULQRUBUCSAUNLZCUKUMJUSCUKUKJAUNCUKIFUDUKUEUFUGUSBGAUNQRSABUQTULUNUHD
+      BUKGUIPUJ $.
+  $}
+
+  ${
+    fzoss2eld.1 $e |- ( ph -> N e. ZZ ) $.
+    fzoss2eld.2 $e |- ( ph -> K <_ N ) $.
+    fzoss2eld.3 $e |- ( ph -> A e. ( M ..^ K ) ) $.
+    $( Membership in a half-open integer interval is preserved when its upper
+       endpoint is increased.  Elementwise deduction version of ~ fzoss2 .
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    fzoss2eld $p |- ( ph -> A e. ( M ..^ N ) ) $=
+      ( cfzo co cuz cfv wcel wss cz cle wbr elfzoel2 syl eluz2 syl3anbrc fzoss2
+      sseldd ) ADCIJZDEIJZBAECKLMZUDUENACOMZEOMCEPQUFABUDMUGHBDCRSFGCETUACDEUBS
+      HUC $.
+  $}
+
+  ${
+    fzo1subd.1 $e |- ( ph -> A e. ( 1 ..^ P ) ) $.
+    $( Reflection about half of ` P ` preserves the integer interval
+       ` ( 1 ..^ P ) ` : if ` A ` belongs to it, so does ` ( P - A ) ` .
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    fzo1subd $p |- ( ph -> ( P - A ) e. ( 1 ..^ P ) ) $=
+      ( cmin co cn wcel clt wbr cfzo fzonnsub syl w3a elfzo1 sylib simp2d nnred
+      c1 cc0 simp1d nngt0d ltsubposd mpbid syl3anbrc ) ACBEFZGHZCGHZUFCIJZUFSCK
+      FZHABUJHZUGDBSCLMABGHZUHBCIJZAUKULUHUMNDCBOPZQZATBIJUIABAULUHUMUNUAZUBABC
+      ABUPRACUORUCUDCUFOUE $.
+  $}
+
+  ${
+    nncentralfzod.1 $e |- ( ph -> P e. NN ) $.
+    nncentralfzod.2 $e |- ( ph -> N e. NN ) $.
+    nncentralfzod.3 $e |- ( ph -> ( 2 x. N ) < P ) $.
+    $( A positive integer less than half of the positive integer ` P ` belongs
+       to ` ( 1 ..^ P ) ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    nncentralfzod $p |- ( ph -> N e. ( 1 ..^ P ) ) $=
+      ( cn wcel clt wbr c1 cfzo co c3 cmul cmin nnred nnrpd sub3ltnd simprd
+      elfzo1 syl3anbrc ) ACGHBGHCBIJZCKBLMHEDANCOMBPMCIJUCABCABDQACERFSTBCUAUB
+      $.
+  $}
+
+  ${
+    nnshortfzod.1 $e |- ( ph -> P e. NN ) $.
+    nnshortfzod.2 $e |- ( ph -> N e. NN ) $.
+    nnshortfzod.3 $e |- ( ph -> R e. NN ) $.
+    nnshortfzod.4 $e |- ( ph -> R < N ) $.
+    nnshortfzod.5 $e |- ( ph -> ( 2 x. N ) < P ) $.
+    $( If positive integers satisfy ` R < N ` and ` ( 2 x. N ) < P ` , then
+       ` R ` belongs to ` ( 1 ..^ P ) ` and also satisfies ` ( 2 x. R ) < P ` .
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    nnshortfzod $p |- ( ph -> ( R e. ( 1 ..^ P ) /\ ( 2 x. R ) < P ) ) $=
+      ( c1 cfzo co wcel c2 cmul clt wbr a1i nnred remulcld 2re crp 2rp ltmul2dd
+      cr lttrd nncentralfzod jca ) ACJBKLMNCOLZBPQABCEGAUINDOLBANCNUEMAUARZACGS
+      ZTANDUJADFSZTABESACDNUKULNUBMAUCRHUDIUFZUGUMUH $.
+  $}
+
+  ${
+    adjacentstripd.1 $e |- ( ph -> T e. NN ) $.
+    adjacentstripd.2 $e |- ( ph -> N e. NN ) $.
+    adjacentstripd.3 $e |- ( ph -> P e. NN ) $.
+    adjacentstripd.4 $e |- ( ph -> 1 < T ) $.
+    adjacentstripd.5 $e |- ( ph -> ( ( T - 1 ) x. N ) < P ) $.
+    adjacentstripd.6 $e |- ( ph -> P < ( T x. N ) ) $.
+    $( When ` P ` lies strictly between ` ( ( T - 1 ) x. N ) ` and
+       ` ( T x. N ) ` , the differences ` ( ( ( T + 1 ) x. N ) - P ) ` and
+       ` ( P - ( ( T - 1 ) x. N ) ) ` are positive integers below
+       ` ( 2 x. N ) ` and ` N ` , respectively.  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
+    adjacentstripd $p |- ( ph -> ( ( ( ( ( T + 1 ) x. N ) - P ) e. NN /\ ( (
+      ( T + 1 ) x. N ) - P ) < ( 2 x. N ) ) /\ ( ( P - ( ( T - 1 ) x. N ) )
+      e. NN /\ ( P - ( ( T - 1 ) x. N ) ) < N ) ) ) $=
+      ( c1 co cmul cmin cn wcel clt nnmulcld nnred nnsubd caddc c2 wa peano2nnd
+      wbr nnrpd ltp1d ltmul1dd lttrd ltsub2dd wceq nncnd muladjacentdifd simpld
+      1nn a1i breqtrd ltsub1dd simprd jca jca31 ) ACKUALZDMLZBNLZOPVDUBDMLZQUEB
+      CKNLZDMLZNLZOPZVHDQUEZUCABVCGAVBDACEUDZFRZABCDMLZVCABGSZAVMACDEFRSZAVCVLS
+      ZJACVBDACESZAVBVKSADFUFACVQUGUHUITAVDVCVGNLZVEQAVGBVCAVGAVFDAKCKOPAUOUPEH
+      TFRZSZVNVPIUJAVRVEUKZVMVGNLZDUKZACDACEULADFULUMZUNUQAVIVJAVGBVSGITAVHWBDQ
+      ABVMVGVNVOVTJURAWAWCWDUSUQUTVA $.
+  $}
+
+  ${
+    fldivp1widthd.1 $e |- ( ph -> P e. NN ) $.
+    fldivp1widthd.2 $e |- ( ph -> N e. NN ) $.
+    fldivp1widthd.3 $e |- ( ph -> 1 < N ) $.
+    $( The floor of ` ( P / N ) ` plus one is a positive integer at most
+       ` P ` , and its product with ` N ` exceeds ` P ` , for positive integers
+       ` P ` and ` N ` with ` 1 < N ` .  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
+    fldivp1widthd $p |- ( ph -> ( ( ( |_ ` ( P / N ) ) + 1 ) e. NN /\ ( (
+    |_ ` ( P / N ) ) + 1 ) <_ P /\ P < ( N x. ( ( |_ ` ( P / N ) ) + 1 ) )
+    ) ) $=
+      ( cdiv co cfl cfv cn wcel wbr clt cn0 syl2anc syl nnrpd nnred mpbid caddc
+      c1 cle cmul nnnn0d fldivnn0 nn0p1nn rpdivgt1ltd cr cz nndivred nnzd flcld
+      wb fllt zltp1led flltp1 ltdivmuld 3jca ) ABCGHZIJZUBUAHZKLZVBBUCMZBCVBUDH
+      NMZAVAOLZVCABOLCKLVFABDUEEBCUFPVAUGQZAVABNMZVDAUTBNMZVHABCABDRACERZFUHAUT
+      UILZBUJLVIVHUNABCABDSZEUKZABDULZUTBUOPTAVABAUTVMUMVNUPTAUTVBNMZVEAVKVOVMU
+      TUQQABVBCVLAVBVGSVJURTUS $.
+  $}
+
+  ${
+    fldivp1mulbndd.1 $e |- ( ph -> P e. NN ) $.
+    fldivp1mulbndd.2 $e |- ( ph -> N e. NN ) $.
+    fldivp1mulbndd.3 $e |- ( ph -> -. N || P ) $.
+    fldivp1mulbndd.4 $e |- ( ph -> D e. NN ) $.
+    fldivp1mulbndd.5 $e |- ( ph -> D < ( ( |_ ` ( P / N ) ) + 1 ) ) $.
+    $( An integer below the floor quotient plus one has product strictly below
+       the numerator when divisibility is excluded.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
+    fldivp1mulbndd $p |- ( ph -> ( N x. D ) < P ) $=
+      ( cmul co clt wbr cdiv cfl nnred cz wcel nnzd mpbird cfv nndivred zred c1
+      flcld cle caddc wb zleltp1 syl2anc cdvds wn nnne0d fldivndvdslt syl121anc
+      cc0 wne lelttrd nnrpd ltmuldiv2d ) ADBJKCLMBCDNKZLMABVAOUAZVAABHPZAVBAVAA
+      CDACEPZFUBZUEZUCVEABVBUFMZBVBUDUGKLMZIABQRVBQRVGVHUHABHSVFBVBUIUJTACQRDQR
+      DUPUQDCUKMULVBVALMACESADFSADFUMGCDUNUOURABCDVCVDADFUSUTT $.
+  $}
+
+  ${
+    fldiv2boundsd.1 $e |- ( ph -> P e. RR ) $.
+    fldiv2boundsd.2 $e |- ( ph -> N e. NN ) $.
+    fldiv2boundsd.3 $e |- ( ph -> K e. ZZ ) $.
+    fldiv2boundsd.4 $e |- ( ph -> ( 2 x. N ) < P ) $.
+    fldiv2boundsd.5 $e |- ( ph -> P < ( K x. N ) ) $.
+    $( If ` P ` is above twice the positive integer ` N ` and below
+       ` ( K x. N ) ` , the floor of ` ( P / N ) ` is a positive integer at
+       least two and less than the integer ` K ` .  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
+    fldiv2boundsd $p |- ( ph -> ( ( |_ ` ( P / N ) ) e. NN /\ 2 <_ ( |_ ` ( P
+    / N ) ) /\ ( |_ ` ( P / N ) ) < K ) ) $=
+      ( co wcel c2 cle wbr clt cz cc0 cr a1i mpbid cdiv cfl nndivred flcld 0red
+      cfv cn zred 2pos cmul nnrpd ltmuldivd ltled wb flge syl2anc ltletrd elnnz
+      2re 2z sylanbrc ltdivmul2d mpbird fllt 3jca ) ABDUAJZUBUFZUGKZLVGMNZVGCON
+      ZAVGPKQVGONVHAVFABDEFUCZUDZAQLVGAUELRKAUSSZAVGVLUHQLONAUISALVFMNZVIALVFVM
+      VKALDUJJBONLVFONHALBDVMEADFUKZULTUMAVFRKZLPKZVNVIUNVKVQAUTSVFLUOUPTZUQVGU
+      RVAVRAVFCONZVJAVSBCDUJJONIABCDEACGUHVOVBVCAVPCPKVSVJUNVKGVFCVDUPTVE $.
+  $}
+
+  $( Multiplication on the left by a common integer preserves congruence of
+     real numbers modulo a positive real number.  Alternate version of
+     ~ modmul1 .  (Contributed by Zhi Wang, 6-Nov-2026.) $)
+  modmul2 $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( C e. ZZ /\ D e. RR+ ) /\ ( A
+    mod D ) = ( B mod D ) ) -> ( ( C x. A ) mod D ) = ( ( C x. B ) mod D ) ) $=
+    ( cr wcel wa cz crp cmo co wceq w3a cmul simp2l simp1l recnd mulcomd oveq1d
+    zcnd modmul1 simp1r 3eqtrd ) AEFZBEFZGZCHFZDIFZGZADJKBDJKLZMZCANKZDJKACNKZD
+    JKBCNKZDJKCBNKZDJKUKULUMDJUKCAUKCUFUGUHUJOTZUKAUDUEUIUJPQRSABCDUAUKUNUODJUK
+    BCUKBUDUEUIUJUBQUPRSUC $.
+
+  ${
+    modlin2subd.1 $e |- ( ph -> A e. RR ) $.
+    modlin2subd.2 $e |- ( ph -> B e. RR ) $.
+    modlin2subd.3 $e |- ( ph -> C e. RR ) $.
+    modlin2subd.4 $e |- ( ph -> D e. RR ) $.
+    modlin2subd.5 $e |- ( ph -> Z e. RR ) $.
+    modlin2subd.6 $e |- ( ph -> P e. RR+ ) $.
+    modlin2subd.7 $e |- ( ph -> ( ( ( A x. Z ) + C ) mod P ) = ( ( ( B x. Z
+    ) + D ) mod P ) ) $.
+    $( A congruence between ` ( ( A x. Z ) + C ) ` and ` ( ( B x. Z ) + D ) `
+       implies a congruence between ` ( ( A - B ) x. Z ) ` and ` ( D - C ) ` ,
+       modulo the positive real ` P ` .  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
+    modlin2subd $p |- ( ph -> ( ( ( A - B ) x. Z ) mod P ) = ( ( D - C )
+    mod P ) ) $=
+      ( cmul co caddc cmin cmo recnd remulcld readdcld eqidd modsub12d pnpcan2d
+      subdird eqtr4d oveq1d pnpcand 3eqtr3d ) ABGOPZDQPZCGOPZDQPZRPZFSPUMEQPZUN
+      RPZFSPBCRPGOPZFSPEDRPZFSPAULUPUNUNFAUKDABGHLUAZJUBAUMEACGILUAZKUBAUMDVAJU
+      BZVBMNAUNFSPUCUDAUOURFSAUOUKUMRPURAUKUMDAUKUTTAUMVATZADJTZUEABCGABHTACITA
+      GLTUFUGUHAUQUSFSAUMEDVCAEKTVDUIUHUJ $.
+  $}
+
+  ${
+    mod23ratiod.1 $e |- ( ph -> P e. RR+ ) $.
+    mod23ratiod.2 $e |- ( ph -> M e. RR ) $.
+    mod23ratiod.3 $e |- ( ph -> N e. RR ) $.
+    mod23ratiod.4 $e |- ( ph -> Z e. RR ) $.
+    mod23ratiod.5 $e |- ( ph -> ( M mod P ) = ( ( 2 x. Z ) mod P ) ) $.
+    mod23ratiod.6 $e |- ( ph -> ( ( 3 x. Z ) mod P ) = ( N mod P ) ) $.
+    $( If real numbers ` M ` and ` N ` have the same remainders as twice and
+       three times a real number ` Z ` , respectively, modulo a positive real
+       ` P ` , then ` ( 3 x. M ) ` and ` ( 2 x. N ) ` have the same remainder
+       modulo ` P ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    mod23ratiod $p |- ( ph -> ( ( 3 x. M ) mod P ) = ( ( 2 x. N ) mod P ) )
+    $=
+      ( c3 cmul co cmo c2 cr wcel wceq a1i cz crp remulcld 3z modmul2 syl221anc
+      2re 3re recnd mul12d oveq1d 2z 3eqtrd ) ALCMNBONZLPEMNZMNZBONZPLEMNZMNZBO
+      NZPDMNBONZACQRUOQRLUARZBUBRZCBONUOBONSUNUQSGAPEPQRAUGTZIUCVBAUDTFJCUOLBUE
+      UFAUPUSBOALPEALLQRAUHTZUIAPVDUIAEIUIUJUKAURQRDQRPUARZVCURBONDBONSUTVASALE
+      VEIUCHVFAULTFKURDPBUEUFUM $.
+  $}
+
+  ${
+    addmodlteq2d.1 $e |- ( ph -> I e. ( 0 ..^ N ) ) $.
+    addmodlteq2d.2 $e |- ( ph -> J e. ( 0 ..^ N ) ) $.
+    addmodlteq2d.3 $e |- ( ph -> S e. RR ) $.
+    addmodlteq2d.4 $e |- ( ph -> ( ( S + I ) mod N ) = ( ( S + J ) mod N
+    ) ) $.
+    $( Two canonical nonnegative integer representatives are equal if adding
+       the same real number to both gives equal remainders modulo ` N ` .
+       Generalized deduction of the forward implication of ~ addmodlteq , with
+       a real common summand on the left.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
+    addmodlteq2d $p |- ( ph -> I = J ) $=
+      ( cmo co wceq caddc cc0 wcel cz elfzoelz syl recnd cr cfzo addcomd oveq1d
+      zred 3eqtrd crp wb cn0 cn clt wbr w3a elfzo0 sylib nnrpd modaddb syl22anc
+      simp2d mpbird modlteq syl2anc mpbid ) ACEJKDEJKLZCDLZAVCCBMKZEJKZDBMKZEJK
+      ZLZAVFBCMKZEJKBDMKZEJKVHAVEVJEJACBACACACNEUAKZOZCPOFCNEQRUDZSABHSZUBUCIAV
+      KVGEJABDVOADADADVLOZDPOGDNEQRUDZSUBUCUEACTODTOBTOEUFOVCVIUGVNVQHAEACUHOZE
+      UIOZCEUJUKZAVMVRVSVTULFCEUMUNURUOCDBEUPUQUSAVMVPVCVDUGFGCDEUTVAVB $.
+  $}
+
+  ${
+    modsignp1d.1 $e |- ( ph -> A e. { -u 1 , 1 } ) $.
+    modsignp1d.2 $e |- ( ph -> P e. RR+ ) $.
+    modsignp1d.3 $e |- ( ph -> 2 < P ) $.
+    $( For ` A ` equal to minus one or one and a real modulus greater than two,
+       adding one, reducing modulo ` P ` , and subtracting one recovers ` A ` .
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    modsignp1d $p |- ( ph -> ( ( ( A + 1 ) mod P ) - 1 ) = A ) $=
+      ( c1 wceq caddc co cmo cmin wa cc0 simpr oveq1d eqtrdi wcel syl c2 df-neg
+      cneg eqcomi ax-1cn neg1cn 1pneg1e0 addcomli crp 0mod adantr eqtrd 3eqtr4a
+      2m1e1 1p1e2 cr cle wbr clt 2re a1i 0le2 modid syl22anc cpr elpri mpjaodan
+      wo ) ABGUBZHZBGIJZCKJZGLJZBHBGHZAVIMZNGLJZVHVLBVHVOGUAUCVNVKNGLVNVKNCKJZN
+      VNVJNCKVNVJVHGIJNVNBVHGIAVIOZPGVHNUDUEUFUGQPAVPNHZVIACUHRZVRECUISUJUKPVQU
+      LAVMMZTGLJGVLBUMVTVKTGLVTVKTCKJZTVTVJTCKVTVJGGIJTVTBGGIAVMOZPUNQPAWATHZVM
+      ATUORZVSNTUPUQZTCURUQWCWDAUSUTEWEAVAUTFTCVBVCUJUKPWBULABVHGVDRVIVMVGDBVHG
+      VESVF $.
+  $}
+
+  ${
+    fzo1ndvdsd.1 $e |- ( ph -> A e. ( 1 ..^ P ) ) $.
+    $( A strictly positive canonical residue is not divisible by its modulus.
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    fzo1ndvdsd $p |- ( ph -> -. P || A ) $=
+      ( cdvds wbr cc0 wceq c1 cfzo co fzossnn sselid nnne0d neneqd wcel fzo0ss1
+      cn wb fzo0dvdseq syl mtbird ) ACBEFZBGHZABGABAICJKZRBCLDMNOABGCJKZPUCUDSA
+      UEUFBCQDMCBTUAUB $.
+  $}
+
+  ${
+    zmodfzo1d.1 $e |- ( ph -> A e. ZZ ) $.
+    zmodfzo1d.2 $e |- ( ph -> B e. NN ) $.
+    zmodfzo1d.3 $e |- ( ph -> -. B || A ) $.
+    $( An integer not divisible by a positive integer has a positive canonical
+       remainder.  Consequence of ~ zmodfzo with the zero remainder excluded.
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    zmodfzo1d $p |- ( ph -> ( A mod B ) e. ( 1 ..^ B ) ) $=
+      ( cmo co cc0 cfzo wcel wne c1 cz cn zmodfzo syl2anc cdvds wbr wceq neqned
+      wb dvdsval3 mtbid fzo1fzo0n0 sylanbrc ) ABCGHZICJHKZUGILUGMCJHKABNKZCOKZU
+      HDEBCPQAUGIACBRSZUGITZFAUJUIUKULUBEDCBUCQUDUAUGCUEUF $.
+  $}
+
+  ${
+    negmodndvdsd.1 $e |- ( ph -> A e. ZZ ) $.
+    negmodndvdsd.2 $e |- ( ph -> N e. NN ) $.
+    negmodndvdsd.3 $e |- ( ph -> -. N || A ) $.
+    $( The canonical residue of a negation complements a nonzero residue.
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    negmodndvdsd $p |- ( ph -> ( -u A mod N ) = ( N - ( A mod N ) ) ) $=
+      ( cneg cmo co cmin zred c1 cfzo wcel cz zmodfzo1d syl cr wceq syl2anc crp
+      elfzoelz nnrpd modabs2 eqcomd modnegd negmod fzo1subd sselid zmodidfzoimp
+      cc0 fzo0ss1 3eqtrd ) ABGCHIBCHIZGCHIZCUNJIZCHIZUPABUNCABDKZAUNAUNLCMIZNUN
+      ONABCDEFPZUNLCUBQKZACEUCZAUNCHIZUNABRNCUANZVCUNSURVBBCUDTUEUFAUNRNVDUOUQS
+      VAVBUNCUGTAUPUKCMIZNUQUPSAUSVEUPCULAUNCUTUHUIUPCUJQUM $.
+  $}
+
+  ${
+    ndvdsmodcongd.1 $e |- ( ph -> P e. NN ) $.
+    ndvdsmodcongd.2 $e |- ( ph -> A e. ZZ ) $.
+    ndvdsmodcongd.3 $e |- ( ph -> B e. ZZ ) $.
+    ndvdsmodcongd.4 $e |- ( ph -> ( A mod P ) = ( B mod P ) ) $.
+    ndvdsmodcongd.5 $e |- ( ph -> -. P || A ) $.
+    $( Nondivisibility by a positive modulus is preserved under congruence.
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    ndvdsmodcongd $p |- ( ph -> -. P || B ) $=
+      ( cdvds wbr cmo co cc0 wceq wcel cz wb dvdsval3 syl2anc cn eqeq1d mtbird
+      mtbid ) ADCJKZCDLMZNOZABDLMZNOZUGADBJKZUIIADUAPZBQPUJUIREFDBSTUDAUHUFNHUB
+      UDAUKCQPUEUGREGDCSTUC $.
+  $}
+
+  ${
+    nnabsclsubd.1 $e |- ( ph -> A e. ZZ ) $.
+    nnabsclsubd.2 $e |- ( ph -> B e. ZZ ) $.
+    nnabsclsubd.3 $e |- ( ph -> A =/= B ) $.
+    $( The absolute difference of unequal integers is a positive integer.
+       Apply ~ nnabscl to their nonzero integer difference.  (Contributed by
+       Zhi Wang, 17-Oct-2026.) $)
+    nnabsclsubd $p |- ( ph -> ( abs ` ( A - B ) ) e. NN ) $=
+      ( cmin co cz wcel cc0 wne cabs cfv zsubcld zcnd subne0d nnabscl syl2anc
+      cn ) ABCGHZIJUAKLUAMNTJABCDEOABCABDPACEPFQUARS $.
+  $}
+
+  ${
+    fzomaxdif0d.1 $e |- ( ph -> A e. ( 0 ..^ N ) ) $.
+    fzomaxdif0d.2 $e |- ( ph -> B e. ( 0 ..^ N ) ) $.
+    $( The absolute difference of two members of ` ( 0 ..^ N ) ` is less than
+       ` N ` .  Consequence of ~ fzomaxdif for an interval starting at zero.
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    fzomaxdif0d $p |- ( ph -> ( abs ` ( A - B ) ) < N ) $=
+      ( cmin co cabs cfv cc0 clt cfzo wcel wbr fzomaxdif syl2anc elfzolt2 syl
+      cz elfzoel2 zcnd subid1d breqtrd ) ABCGHIJZDKGHZDLAUEKUFMHNZUEUFLOABKDMHZ
+      NZCUHNUGEFBCKDPQUEKUFRSADADAUIDTNEBKDUASUBUCUD $.
   $}
 
   ${
@@ -882772,233 +883180,271 @@ $)
   $}
 
   ${
-    $d B m $.  $d N m $.  $d ch m $.  $d k m $.  $d k ph $.
-    ralnnindhypd.1 $e |- ( m = k -> ( ps <-> ch ) ) $.
-    ralnnindhypd.2 $e |- ( ph -> B e. RR ) $.
-    ralnnindhypd.3 $e |- ( ph -> N e. NN ) $.
-    ralnnindhypd.4 $e |- ( ph -> N < B ) $.
-    ralnnindhypd.5 $e |- ( ph -> A. m e. NN ( m < N -> ( m < B -> ps ) ) ) $.
-    $( Restrict a bounded strong-induction hypothesis to the preceding positive
-       integers.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    ralnnindhypd $p |- ( ph -> A. k e. ( 1 ..^ N ) ch ) $=
-      ( c1 cv wcel clt wbr cn adantr wi cfzo co wa elfzolt2 adantl simpr sselid
-      fzossnn nnred cr lttrd weq breq1 imbi12d wral rspcdva mp2d ralrimiva ) AC
-      EMGUAUBZAENZUSOZUCZUTGPQZUTDPQZCVAVCAUTMGUDUEZVBUTGDVBUTVBUSRUTGUHAVAUFUG
-      ZUIAGUJOVAAGJUISADUJOVAISVEAGDPQVAKSUKVBFNZGPQZVGDPQZBTZTZVCVDCTZTFRUTFEU
-      LZVHVCVJVLVGUTGPUMVMVIVDBCVGUTDPUMHUNUNAVKFRUOVALSVFUPUQUR $.
+    ndvdsmultrid.1 $e |- ( ph -> A e. RR ) $.
+    ndvdsmultrid.2 $e |- ( ph -> M e. ZZ ) $.
+    ndvdsmultrid.3 $e |- ( ph -> N e. ZZ ) $.
+    ndvdsmultrid.4 $e |- ( ph -> -. M || A ) $.
+    $( If an integer does not divide a real number, then each integer multiple
+       of that integer is either less than or greater than the real number.
+       (Contributed by Zhi Wang, 10-Nov-2026.) $)
+    ndvdsmultrid $p |- ( ph -> ( A < ( M x. N ) \/ ( M x. N ) < A ) ) $=
+      ( cmul co wne clt wbr wo cdvds wn cz wcel dvdsmul1 syl2anc nbrne1 zmulcld
+      necomd zred lttri2d mpbid ) ABCDIJZKBUGLMUGBLMNAUGBACUGOMZCBOMPUGBKACQRDQ
+      RUHFGCDSTHCUGBOUATUCABUGEAUGACDFGUBUDUEUF $.
   $}
 
   ${
-    $d p m n ph $.  $d p m n F $.  $d p m n G $.  $d k p $.  $d k m $.
-    $d k n $.  $d k ph $.  $d k F $.  $d k G $.  $d k N $.
-    prmindeqd.1 $e |- ( ph -> ( F ` 1 ) = ( G ` 1 ) ) $.
-    prmindeqd.2 $e |- ( ( ph /\ p e. Prime ) -> ( F ` p ) = ( G ` p ) ) $.
-    prmindeqd.3 $e |- ( ( ph /\ ( m e. ( ZZ>= ` 2 ) /\ n e. ( ZZ>= ` 2 ) ) /\
-      ( ( F ` m ) = ( G ` m ) /\ ( F ` n ) = ( G ` n ) ) ) -> ( F ` ( m x. n )
-      ) = ( G ` ( m x. n ) ) ) $.
-    prmindeqd.4 $e |- ( ph -> N e. NN ) $.
-    $( Extend agreement of values at one and primes to any positive integer,
-       assuming that agreement is preserved under products of integers at least
-       two.  An equality instance of ~ prmind in deduction form.  (Contributed
-       by Zhi Wang, 5-Nov-2026.) $)
-    prmindeqd $p |- ( ph -> ( F ` N ) = ( G ` N ) ) $=
-      ( cv cfv wceq fveq2 eqeq12d wcel wi c1 imbi2d vk cn cmul co cprime expcom
-      wa c2 cuz pm3.43 3exp com12 a2d syl5 prmind ralrimiv rspcdva ) AUALZDMZUR
-      EMZNZFDMZFEMZNUAUBFURFNUSVBUTVCURFDOURFEOPAVAUAUBURUBQAVAAGLZDMZVDEMZNZRA
-      SDMZSEMZNZRABLZDMZVKEMZNZRZACLZDMZVPEMZNZRZAVKVPUCUDZDMZWAEMZNZRZAVARGBCU
-      RVDSNZVGVJAWFVEVHVFVIVDSDOVDSEOPTVDVKNZVGVNAWGVEVLVFVMVDVKDOVDVKEOPTVDVPN
-      ZVGVSAWHVEVQVFVRVDVPDOVDVPEOPTVDWANZVGWDAWIVEWBVFWCVDWADOVDWAEOPTVDURNZVG
-      VAAWJVEUSVFUTVDURDOVDUREOPTHAVDUEQVGIUFVOVTUGAVNVSUGZRVKUHUIMZQVPWLQUGZWE
-      AVNVSUJWMAWKWDAWMWKWDRAWMWKWDJUKULUMUNUOULUPKUQ $.
+    nndivmulbndd.1 $e |- ( ph -> A e. NN ) $.
+    nndivmulbndd.2 $e |- ( ph -> B e. NN ) $.
+    nndivmulbndd.3 $e |- ( ph -> Q e. RR ) $.
+    nndivmulbndd.4 $e |- ( ph -> B || A ) $.
+    nndivmulbndd.5 $e |- ( ph -> A < ( B x. Q ) ) $.
+    $( If the positive integer ` B ` divides the positive integer ` A ` and
+       ` A < ( B x. Q ) ` , then ` ( A / B ) ` is a positive integer below
+       ` Q ` , and multiplying it by ` B ` recovers ` A ` .  (Contributed by
+       Zhi Wang, 20-Oct-2026.) $)
+    nndivmulbndd $p |- ( ph -> ( ( A / B ) e. NN /\ ( A / B ) < Q /\ ( B x. (
+      A / B ) ) = A ) ) $=
+      ( cdiv co cn wcel clt wbr cmul wceq cdvds wb nncnd nndivdvds mpbid mpbird
+      syl2anc nnred nnrpd ltdivmuld nnne0d divcan2d 3jca ) ABCJKZLMZUKDNOZCUKPK
+      BQACBROZULHABLMCLMUNULSEFBCUAUDUBAUMBCDPKNOIABDCABEUEGACFUFUGUCABCABETACF
+      TACFUHUIUJ $.
   $}
 
   ${
-    nnshortfzod.1 $e |- ( ph -> P e. NN ) $.
-    nnshortfzod.2 $e |- ( ph -> N e. NN ) $.
-    nnshortfzod.3 $e |- ( ph -> R e. NN ) $.
-    nnshortfzod.4 $e |- ( ph -> R < N ) $.
-    nnshortfzod.5 $e |- ( ph -> ( 2 x. N ) < P ) $.
-    $( If positive integers satisfy ` R < N ` and ` ( 2 x. N ) < P ` , then
-       ` R ` belongs to ` ( 1 ..^ P ) ` and also satisfies ` ( 2 x. R ) < P ` .
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    nnshortfzod $p |- ( ph -> ( R e. ( 1 ..^ P ) /\ ( 2 x. R ) < P ) ) $=
-      ( c1 cfzo co wcel c2 cmul clt wbr a1i nnred remulcld 2re crp 2rp ltmul2dd
-      cr lttrd nncentralfzod jca ) ACJBKLMNCOLZBPQABCEGAUINDOLBANCNUEMAUARZACGS
-      ZTANDUJADFSZTABESACDNUKULNUBMAUCRHUDIUFZUGUMUH $.
+    oddcentralrefld.1 $e |- ( ph -> P e. NN ) $.
+    oddcentralrefld.2 $e |- ( ph -> -. 2 || P ) $.
+    oddcentralrefld.3 $e |- ( ph -> A e. ( 1 ..^ P ) ) $.
+    oddcentralrefld.4 $e |- ( ph -> -. ( 2 x. A ) < P ) $.
+    $( Reflecting an upper-half nonzero residue gives a positive central
+       representative for an odd modulus.  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
+    oddcentralrefld $p |- ( ph -> ( ( P - A ) e. NN /\ ( 2 x. ( P - A ) ) < P
+    ) ) $=
+      ( cmin co cn wcel c2 cmul clt wbr sselid a1i recnd nnred remulcld c1 cfzo
+      fzossnn fzo1subd cr subdid cz 2z nnzd ndvdsmultrid olcnd ltsub2dd eqbrtrd
+      2re 2timesd mvrraddd breqtrd jca ) ACBHIZJKLUSMIZCNOAUACUBIZJUSCUCZABCFUD
+      PAUTLCMIZCHIZCNAUTVCLBMIZHIVDNALCBALLUEKAUNQZRACACDSZRZABABAVAJBVBFPZSZRU
+      FACVEVCVGALBVFVJTALCVFVGTACVENOVECNOACLBVGLUGKAUHQABVIUIEUJGUKULUMAVCCCVH
+      VHACVHUOUPUQUR $.
   $}
 
   ${
-    $( The equations ` ( F `` ( A G C ) ) = ( ( F `` A ) H D ) ` and
-       ` ( F `` ( B G C ) ) = ( ( F `` B ) H D ) ` are equivalent when
-       ` A = B ` .  (Contributed by Zhi Wang, 4-Nov-2026.) $)
-    fvoveqeq1 $p |- ( A = B -> ( ( F ` ( A G C ) ) = ( ( F ` A ) H D ) <->
-      ( F ` ( B G C ) ) = ( ( F ` B ) H D ) ) ) $=
-      ( wceq co cfv fvoveq1 fveq2 oveq1d eqeq12d ) ABHZACFIEJBCFIEJAEJZDGIBEJZD
-      GIABCEFKOPQDGABELMN $.
-  $}
-
-  ${
-    $( The equations ` ( F `` ( C G A ) ) = ( D H ( F `` A ) ) ` and
-       ` ( F `` ( C G B ) ) = ( D H ( F `` B ) ) ` are equivalent when
-       ` A = B ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    fvoveqeq2 $p |- ( A = B -> ( ( F ` ( C G A ) ) = ( D H ( F ` A ) ) <-> ( F
-      `
-      ( C G B ) ) = ( D H ( F ` B ) ) ) ) $=
-      ( wceq co cfv oveq2 fveq2d fveq2 oveq2d eqeq12d ) ABHZCAFIZEJCBFIZEJDAEJZ
-      GIDBEJZGIPQREABCFKLPSTDGABEMNO $.
-  $}
-
-
-  ${
-    $d C x $.  $d D x y $.  $d F x y $.  $d G x y $.  $d H x y $.  $d P x y $.
-    $d R x y $.  $d A x y $.  $d B y $.
-    rspc2fvovd.1 $e |- ( ph -> A. x e. C A. y e. D ( -. P R y -> ( F ` ( x G
-      y ) ) = ( ( F ` x ) H ( F ` y ) ) ) ) $.
-    rspc2fvovd.2 $e |- ( ph -> A e. C ) $.
-    rspc2fvovd.3 $e |- ( ph -> B e. D ) $.
-    rspc2fvovd.4 $e |- ( ph -> -. P R B ) $.
-    $( Evaluate a doubly restricted universal family at ` A ` and ` B ` .  The
-       membership hypotheses and ` -. P R B ` yield
-       ` ( F `` ( A G B ) ) = ( ( F `` A ) H ( F `` B ) ) ` under ` ph ` .
+    mod3ndvdsd.1 $e |- ( ph -> A e. ZZ ) $.
+    mod3ndvdsd.2 $e |- ( ph -> -. 3 || A ) $.
+    $( An integer not divisible by three has remainder one or two.
        (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    rspc2fvovd $p |- ( ph -> ( F ` ( A G B ) ) = ( ( F ` A ) H ( F ` B ) ) )
-      $=
-      ( co cfv wceq wi wbr wn fvoveqeq1 imbi2d notbid fvoveqeq2 imbi12d rspc2dv
-      cv breq2 mpd ) AHEIUAZUBZDEKQJRDJRZEJRLQSZPAHCUIZIUAZUBZBUIZUPKQJRUSJRUPJ
-      RZLQSZTUMUOTURDUPKQJRUNUTLQSZTBCDEFGUSDSVAVBURUSDUPUTJKLUCUDUPESZURUMVBUO
-      VCUQULUPEHIUJUEUPEDUNJKLUFUGMNOUHUK $.
-  $}
-
-
-  ${
-    $d A y $.  $d B y $.  $d F y $.  $d G y $.  $d H y $.  $d P y $.  $d R y $.
-    $d X y $.  $d Y y $.
-    rspcfvovd.1 $e |- ( ph -> A. y e. A ( -. P R y -> ( F ` ( X G y ) ) = (
-      B H ( F ` y ) ) ) ) $.
-    rspcfvovd.2 $e |- ( ph -> Y e. A ) $.
-    rspcfvovd.3 $e |- ( ph -> -. P R Y ) $.
-    $( Evaluate a restricted universal family at ` Y ` .  Membership in ` A `
-       and the condition ` -. P R Y ` yield
-       ` ( F `` ( X G Y ) ) = ( B H ( F `` Y ) ) ` under ` ph ` .  (Contributed
-       by Zhi Wang, 17-Oct-2026.) $)
-    rspcfvovd $p |- ( ph -> ( F ` ( X G Y ) ) = ( B H ( F ` Y ) ) ) $=
-      ( wbr wn co cfv wceq wi cv breq2 notbid fvoveqeq2 imbi12d rspcdva mpd ) A
-      EKFOZPZJKHQGRDKGRIQSZNAEBUAZFOZPZJUKHQGRDUKGRIQSZTUIUJTBCKUKKSZUMUIUNUJUO
-      ULUHUKKEFUBUCUKKJDGHIUDUELMUFUG $.
+    mod3ndvdsd $p |- ( ph -> ( ( A mod 3 ) = 1 \/ ( A mod 3 ) = 2 ) ) $=
+      ( c3 cmo co cc0 wceq wn c1 c2 w3o wo cdvds wbr cn wcel cz syl2anc 3nn a1i
+      dvdsval3 mtbid ctp cfzo zmodfzo fzo0to3tp eleqtrdi eltpi syl 3orel1 sylc
+      wb ) ABEFGZHIZJUPUOKIZUOLIZMZUQURNAEBOPZUPDAEQRZBSRZUTUPUNVAAUAUBZCEBUCTU
+      DAUOHKLUEZRUSAUOHEUFGZVDAVBVAUOVERCVCBEUGTUHUIUOHKLUJUKUPUQURULUM $.
   $}
 
   ${
-    fmulcand.1 $e |- ( ph -> X e. CC ) $.
-    fmulcand.2 $e |- ( ph -> Y e. CC ) $.
-    fmulcand.3 $e |- ( ph -> Z e. CC ) $.
-    fmulcand.4 $e |- ( ph -> A e. CC ) $.
-    fmulcand.5 $e |- ( ph -> B e. CC ) $.
-    fmulcand.6 $e |- ( ph -> C e. CC ) $.
-    fmulcand.7 $e |- ( ph -> D e. CC ) $.
-    fmulcand.8 $e |- ( ph -> D =/= 0 ) $.
-    fmulcand.9 $e |- ( ph -> ( F ` ( X x. ( Y x. Z ) ) ) = ( D x. A ) ) $.
-    fmulcand.10 $e |- ( ph -> E = ( D x. C ) ) $.
-    $( The equality ` ( F `` ( Y x. ( X x. Z ) ) ) = ( B x. E ) ` is equivalent
-       to ` A = ( B x. C ) ` under the two given factorization identities and
-       ` D =/= 0 ` .  Taking ` D = ( F `` X ) ` , ` B = ( F `` Y ) ` ,
-       ` C = ( F `` Z ) ` , ` A = ( F `` ( Y x. Z ) ) ` , and
-       ` E = ( F `` ( X x. Z ) ) ` recovers cancellation of a multiplier's
-       nonzero value in a multiplication identity.  (Contributed by Zhi Wang,
+    mod3sumndvdsd.1 $e |- ( ph -> A e. ZZ ) $.
+    mod3sumndvdsd.2 $e |- ( ph -> B e. ZZ ) $.
+    mod3sumndvdsd.3 $e |- ( ph -> -. 3 || A ) $.
+    mod3sumndvdsd.4 $e |- ( ph -> -. 3 || B ) $.
+    mod3sumndvdsd.5 $e |- ( ph -> -. 3 || ( A + B ) ) $.
+    $( Two integers and their sum all nondivisible by three force equality of
+       the two remainders.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    mod3sumndvdsd $p |- ( ph -> ( A mod 3 ) = ( B mod 3 ) ) $=
+      ( c3 cmo co c1 wceq c2 wa simplr caddc cc0 wcel ad2antrr simpr eqtr4d crp
+      cr zred 3rp a1i modaddabs syl3anc oveq1d eqtr3d 1p2e3 oveq1i modid0 ax-mp
+      oveq12d eqtri eqtrdi wn cdvds wbr cn cz wb zaddcld dvdsval3 sylancr mtbid
+      3nn pm2.21dd wo mod3ndvdsd adantr mpjaodan 2p1e3 ) ABIJKZLMZVPCIJKZMZVPNM
+      ZAVQOZVRLMZVSVRNMZWAWBOVPLVRAVQWBPWAWBUAUBWAWCOZBCQKZIJKZRMZVSWDWFLNQKZIJ
+      KZRWDVPVRQKZIJKZWFWIWDBUDSZCUDSZIUCSZWKWFMZAWLVQWCABDUEZTAWMVQWCACEUEZTWN
+      WDUFUGBCIUHZUIWDWJWHIJWDVPLVRNQAVQWCPWAWCUAUPUJUKWIIIJKZRWHIIJULUMWNWSRMU
+      FIUNUOZUQURAWGUSZVQWCAIWEUTVAZWGHAIVBSWEVCSXBWGVDVIABCDEVEIWEVFVGVHZTVJAW
+      BWCVKZVQACEGVLZVMVNAVTOZWBVSWCXFWBOZWGVSXGWFNLQKZIJKZRXGWKWFXIXGWLWMWNWOA
+      WLVTWBWPTAWMVTWBWQTWNXGUFUGWRUIXGWJXHIJXGVPNVRLQAVTWBPXFWBUAUPUJUKXIWSRXH
+      IIJVOUMWTUQURAXAVTWBXCTVJXFWCOVPNVRAVTWCPXFWCUAUBAXDVTXEVMVNABDFVLVN $.
+  $}
+
+  ${
+    mod3eqsumd.1 $e |- ( ph -> A e. ZZ ) $.
+    mod3eqsumd.2 $e |- ( ph -> B e. ZZ ) $.
+    mod3eqsumd.3 $e |- ( ph -> ( A mod 3 ) = ( B mod 3 ) ) $.
+    $( Equal remainders modulo three yield a divisible sum with one argument
+       repeated.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    mod3eqsumd $p |- ( ph -> 3 || ( ( A + B ) + A ) ) $=
+      ( c3 cmul co caddc cdvds wcel 3nn cz wbr cmo c2 zcnd oveq1d 3eqtrd cn a1i
+      cmin nnzd zmulcld zsubcld dvdsmul1 syl2anc wceq eqcomd wb moddvds mp3an2i
+      mpbid dvds2addd 2p1e3 oveq1i 2cnd adddirp1d eqtr3id mulcld addassd oveq2d
+      c1 pncan3d 2timesd add32d breqtrd ) AGGBHIZCBUCIZJIZBCJIBJIZKAGVIVJAGGUAL
+      ZAMUBUDZAGBVNDUEACBEDUFZAGNLBNLZGVIKOVNDGBUGUHACGPIZBGPIZUIZGVJKOZAVRVQFU
+      JVMACNLVPVSVTUKMEDCBGULUMUNUOAVKQBHIZCJIZBBJIZCJIVLAVKWABJIZVJJIWABVJJIZJ
+      IWBAVIWDVJJAVIQVDJIZBHIWDWFGBHUPUQAQBAURZABDRZUSUTSAWABVJAQBWGWHVAWHAVJVO
+      RVBAWECWAJABCWHACERZVEVCTAWAWCCJABWHVFSABBCWHWHWIVGTVH $.
+  $}
+
+  ${
+    mod3sumdivcld.1 $e |- ( ph -> A e. NN ) $.
+    mod3sumdivcld.2 $e |- ( ph -> B e. NN ) $.
+    mod3sumdivcld.3 $e |- ( ph -> M = ( A + B ) ) $.
+    mod3sumdivcld.4 $e |- ( ph -> -. 3 || A ) $.
+    mod3sumdivcld.5 $e |- ( ph -> -. 3 || B ) $.
+    mod3sumdivcld.6 $e |- ( ph -> -. 3 || M ) $.
+    $( If positive integers ` A ` and ` B ` sum to ` M ` and none of the three
+       is divisible by three, then ` ( ( M + A ) / 3 ) ` is a positive integer.
+       See ~ liougb4gap0d for the ternary descent.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
+    mod3sumdivcld $p |- ( ph -> ( ( M + A ) / 3 ) e. NN ) $=
+      ( c3 caddc co cdvds wbr cdiv cn wcel nnzd nnaddcld mod3sumndvdsd breqtrrd
+      breq2d mtbid mod3eqsumd oveq1d wb eqeltrd 3nn nndivdvds sylancl mpbid ) A
+      KDBLMZNOZUMKPMQRZAKBCLMZBLMUMNABCABESZACFSZABCUQURHIAKDNOKUPNOJADUPKNGUCU
+      DUAUEADUPBLGUFUBAUMQRKQRUNUOUGADBADUPQGABCEFTUHETUIUMKUJUKUL $.
+  $}
+
+  ${
+    mod3dblp1d.1 $e |- ( ph -> Q e. ZZ ) $.
+    mod3dblp1d.2 $e |- ( ph -> ( Q mod 3 ) = 1 ) $.
+    $( If an integer ` Q ` has remainder one modulo three, then
+       ` ( ( 2 x. Q ) + 1 ) ` is divisible by three.  (Contributed by Zhi Wang,
        20-Oct-2026.) $)
-    fmulcand $p |- ( ph -> ( ( F ` ( Y x. ( X x. Z ) ) ) = ( B x. E ) <-> A
-      = ( B x. C ) ) ) $=
-      ( cmul cfv wceq mul12d fveq2d eqtrd oveq2d eqeq12d mulcld mulcand bitrd
-      co ) AIHJUAULUAULZGUBZCFUAULZUCEBUAULZECDUAULZUAULZUCBUQUCAUNUPUOURAUNHIJ
-      UAULUAULZGUBUPAUMUSGAIHJLKMUDUESUFAUOCEDUAULZUAULURAFUTCUATUGACEDOQPUDUFU
-      HABUQENACDOPUIQRUJUK $.
+    mod3dblp1d $p |- ( ph -> 3 || ( ( 2 x. Q ) + 1 ) ) $=
+      ( c3 c1 caddc co c2 cmul cdvds 1zzd cmo cr wcel clt wbr wceq 3re eqtr4d
+      a1i 1lt3 1mod sylancl mod3eqsumd zcnd 1cnd add32d 2timesd oveq1d breqtrd
+      ) AEBFGHBGHZIBJHZFGHZKABFCALABEMHFFEMHZDAENOZFEPQUOFRUPASUAUBEUCUDTUEAULB
+      BGHZFGHUNABFBABCUFZAUGURUHAUMUQFGABURUIUJTUK $.
   $}
 
-
   ${
-    fmulassd.1 $e |- ( ph -> X e. CC ) $.
-    fmulassd.2 $e |- ( ph -> Y e. CC ) $.
-    fmulassd.3 $e |- ( ph -> Z e. CC ) $.
-    fmulassd.4 $e |- ( ph -> A e. CC ) $.
-    fmulassd.5 $e |- ( ph -> B e. CC ) $.
-    fmulassd.6 $e |- ( ph -> C e. CC ) $.
-    fmulassd.7 $e |- ( ph -> ( F ` ( X x. ( Y x. Z ) ) ) = ( A x. D ) ) $.
-    fmulassd.8 $e |- ( ph -> D = ( B x. C ) ) $.
-    fmulassd.9 $e |- ( ph -> E = ( A x. B ) ) $.
-    $( The factorization ` ( F `` ( ( X x. Y ) x. Z ) ) = ( E x. C ) ` follows
-       from the three displayed identities and complex-number hypotheses.
-       Associativity ( ~ mulassd ) regroups both the argument of ` F ` and the
-       product of ` A ` , ` B ` , and ` C ` .  (Contributed by Zhi Wang,
+    mod3dblm1d.1 $e |- ( ph -> Q e. ZZ ) $.
+    mod3dblm1d.2 $e |- ( ph -> ( Q mod 3 ) = 2 ) $.
+    $( If an integer ` Q ` has remainder two modulo three, then
+       ` ( ( 2 x. Q ) - 1 ) ` is divisible by three.  (Contributed by Zhi Wang,
        20-Oct-2026.) $)
-    fmulassd $p |- ( ph -> ( F ` ( ( X x. Y ) x. Z ) ) = ( E x. C ) ) $=
-      ( cmul co cfv mulassd oveq1d fveq2d oveq2d 3eqtrd 3eqtr4rd ) ABCTUAZDTUAB
-      CDTUAZTUAZFDTUAHITUAJTUAZGUBZABCDNOPUCAFUIDTSUDAUMHIJTUATUAZGUBBETUAUKAUL
-      UNGAHIJKLMUCUEQAEUJBTRUFUGUH $.
+    mod3dblm1d $p |- ( ph -> 3 || ( ( 2 x. Q ) - 1 ) ) $=
+      ( c3 c2 cmul co c1 cneg caddc cmin cdvds 1zzd znegcld cmo cn wcel breqtrd
+      eqtr4d wceq 3nn m1modnnsub1 mp1i 3m1e2 eqtrdi mod3eqsumd zcnd 1cnd negcld
+      add32d 2timesd oveq1d 2cnd mulcld negsubd ) AEFBGHZIJZKHZUQILHMAEBURKHBKH
+      ZUSMABURCAIANOABEPHFUREPHZDAVAEILHZFEQRVAVBUAAUBEUCUDUEUFTUGAUTBBKHZURKHU
+      SABURBABCUHZAIAUIZUJVDUKAUQVCURKABVDULUMTSAUQIAFBAUNVDUOVEUPS $.
   $}
 
   ${
-    fmulneg2bid.1 $e |- ( ph -> A e. CC ) $.
-    fmulneg2bid.2 $e |- ( ph -> B e. CC ) $.
-    fmulneg2bid.3 $e |- ( ph -> C e. CC ) $.
-    fmulneg2bid.4 $e |- ( ph -> D e. CC ) $.
-    fmulneg2bid.5 $e |- ( ph -> E e. CC ) $.
-    fmulneg2bid.6 $e |- ( ph -> G = -u D ) $.
-    fmulneg2bid.7 $e |- ( ph -> ( F ` -u ( A x. B ) ) = -u E ) $.
-    $( The equality ` ( F `` ( A x. -u B ) ) = ( C x. G ) ` is equivalent to
-       ` E = ( C x. D ) ` under the displayed complex-number and sign-reversal
-       hypotheses.  The proof uses ~ mulneg2d to rewrite the first equality as
-       ` -u E = -u ( C x. D ) ` , then ~ neg11ad to cancel the negations.
+    $d N d $.  $d N i $.  $d N j $.  $d N k $.  $d N t $.  $d N y $.  $d d k $.
+    $d d t $.  $d d y $.  $d i j $.  $d i t $.  $d i y $.  $d j m $.  $d j t $.
+    $d j y $.  $d k t $.  $d k y $.  $d m t $.  $d m y $.  $d t y $.
+    $( Squaring is a bijection from the positive integers whose squares divide
+       ` N ` onto the positive divisors of ` N ` that are squares.
+       (Contributed by Zhi Wang, 5-Nov-2026.) $)
+    dvdssqf1o $p |- ( N e. NN -> ( d e. { k e. NN | ( k ^ 2 ) || N } |-> ( d ^
+      2 ) ) : { k e. NN | ( k ^ 2 ) || N } -1-1-onto-> { j e. { i e. NN | i ||
+      N } | E. m e. NN j = ( m ^ 2 ) } ) $=
+      ( vt cn wcel cv c2 cexp co cdvds wbr crab wceq csqrt cfv wa vy wrex oveq1
+      cmpt cbvmptv breq1d elrab bilani simpld nnsqcld eqeq1 rexbidv simpr simpl
+      elrabrd fveq2d nnred nnnn0d nn0ge0d sqrtsqd eqtrd eqeltrd rexlimiva breq1
+      syl simprr simprl sylib eqbrtrd elrabd rspceeqv syl2anc eqtr2d jca oveq1d
+      adantrr elrabi nncnd sqsqrtd impbida f1od ) EHIZGUACJZKLMZENOZCHPZBJZDJZK
+      LMZQZDHUBZBAJZENOZAHPZPZGJZKLMZUAJZRSZFWFFJZKLMZUDHHFGWFXAWQWTWPKLUCUEWBW
+      PWFIZTZWPXCWPHIZWQENOZXBXDXETZWBWEXECWPHWCWPQWDWQENWCWPKLUCUFZUGZUHUIUJWB
+      WRWOIZTZWRWIQZDHUBZWSHIZXJWKXLBWRWNWGWRQWJXKDHWGWRWIUKULZWBXIUMUOXKXMDHWH
+      HIZXKTZWSWHHXPWSWIRSWHXPWRWIRXOXKUMUPXPWHXPWHXOXKUNZUQXPWHXPWHXQURUSUTVAX
+      QVBVCVEZWBXBWRWQQZTZXIWPWSQZTZWBXTTZXIYAYCWKXLBWRWNXNYCWMWRENOZAWRHWLWREN
+      VDZYCWRWQHWBXBXSVFZYCWPYCXDXEYCXBXFWBXBXSVGZXHVHUIZUJVBYCWRWQENYFYCWEXECW
+      PHXGYGUOVIVJYCXDXSXLYHYFDWPHWIWQWRWHWPKLUCVKVLVJYCWSWQRSWPYCWRWQRYFUPYCWP
+      YCWPYHUQYCWPYCWPYHURUSUTVMVNWBYBTZXBXSYIWEXECWPHXGYIWPWSHWBXIYAVFZWBXIXMY
+      AXRVPVBYIWQWRENYIWQWSKLMZWRYIWPWSKLYJVOZYIWRYIWRWBXIWRHIZYAXJWRWNIZYMXJYN
+      XLXIYNXLTWBWKXLBWRWNXNUGUHUIZWMAWRHVQVEVPVRVSZVAYIWMYDAWRHYEWBXIYNYAYOVPU
+      OVIVJYIWQYKWRYLYPVMVNVTWA $.
+  $}
+
+  ${
+    odd2adjacentd.1 $e |- ( ph -> Q e. ZZ ) $.
+    $( The integers adjacent to an even integer are odd.  (Contributed by Zhi
+       Wang, 20-Oct-2026.) $)
+    odd2adjacentd $p |- ( ph -> ( -. 2 || ( ( 2 x. Q ) - 1 ) /\ -. 2 || ( ( 2
+      x. Q ) + 1 ) ) ) $=
+      ( c2 cmul co c1 cmin cdvds wn caddc cz wcel wceq eqid 2teven sylancl zcnd
+      wbr 2z a1i zmulcld 1zzd npcand breqtrrd zsubcld oddp1even syl 2tp1odd jca
+      wb mpbird ) ADDBEFZGHFZISJZDUMGKFZISJZAUODUNGKFZISZADUMURIABLMZUMUMNDUMIS
+      CUMOBUMPQAUMGAUMADBDLMATUACUBZRAGAUCZRUDUEAUNLMUOUSUKAUMGVAVBUFUNUGUHULAU
+      TUPUPNUQCUPOBUPUIQUJ $.
+  $}
+
+  ${
+    nn2adjacentd.1 $e |- ( ph -> Q e. NN ) $.
+    nn2adjacentd.2 $e |- ( ph -> 1 < Q ) $.
+    $( For a positive integer ` Q ` greater than one, both odd integers
+       ` ( ( 2 x. Q ) - 1 ) ` and ` ( ( 2 x. Q ) + 1 ) ` are positive and less
+       than ` ( 3 x. Q ) ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    nn2adjacentd $p |- ( ph -> ( ( ( ( 2 x. Q ) - 1 ) e. NN /\ ( ( 2 x. Q ) -
+      1 ) < ( 3 x. Q ) ) /\ ( ( ( 2 x. Q ) + 1 ) e. NN /\ ( ( 2 x. Q ) + 1 )
+      < ( 3 x. Q ) ) ) ) $=
+      ( c2 cmul co c1 cmin cn wcel c3 clt wbr caddc wa 1nn a1i nnred nncnd 2lt3
+      2nn nnmulcld nnnn0d nn0ge0d nnge1d lemulge12d ltletrd nnsubd 3nn remulcld
+      ltm1d nnrpd ltmul1dd lttrd peano2nnd ltadd2dd adddirp1d 2p1e3 eqtr3di jca
+      oveq1i breqtrd jca31 ) AEBFGZHIGZJKVFLBFGZMNVEHOGZJKZVHVGMNZPAHVEHJKAQRZA
+      EBEJKAUBRZCUCZAHBVEAHVKSZABCSZAVEVMSZDABEVOAEVLSZABABCUDUEAEVLUFUGUHUIZAV
+      FVEVGAVFVRSVPALBALLJKAUJRSZVOUKAVEVPULAELBVQVSABCUMELMNAUARUNUOAVIVJAVEVM
+      UPAVHVEBOGZVGMAHBVEVNVOVPDUQAEHOGZBFGVTVGAEBAEVLTABCTURWALBFUSVBUTVCVAVD
+      $.
+  $}
+
+  ${
+    evenadjacentlod.1 $e |- ( ph -> P e. NN ) $.
+    evenadjacentlod.2 $e |- ( ph -> N e. NN ) $.
+    evenadjacentlod.3 $e |- ( ph -> Q e. NN ) $.
+    evenadjacentlod.4 $e |- ( ph -> T e. NN ) $.
+    evenadjacentlod.5 $e |- ( ph -> R e. NN ) $.
+    evenadjacentlod.6 $e |- ( ph -> R < N ) $.
+    evenadjacentlod.7 $e |- ( ph -> P = ( ( T x. N ) + R ) ) $.
+    evenadjacentlod.8 $e |- ( ph -> T < ( ( 2 x. Q ) - 1 ) ) $.
+    evenadjacentlod.9 $e |- ( ph -> 2 || T ) $.
+    $( For the displayed quotient and remainder with even ` T ` , the positive
+       integer ` ( T / 2 ) ` is below ` Q ` , and twice its product with ` N `
+       is congruent to ` -u R ` modulo ` P ` .  This signed representative is a
+       nonzero integer of absolute value below ` N ` .  (Contributed by Zhi
+       Wang, 20-Oct-2026.) $)
+    evenadjacentlod $p |- ( ph -> ( ( ( T / 2 ) e. NN /\ ( T / 2 ) < Q ) /\ (
+      -u R e. ZZ /\ ( abs ` -u R ) e. NN /\ ( abs ` -u R ) < N ) /\ ( ( ( 2
+      x. ( T / 2 ) ) x. N ) mod P ) = ( -u R mod P ) ) ) $=
+      ( c2 co wcel cmul cmo cdiv cn clt wbr wa cneg cabs cfv w3a wceq 2nn nnred
+      cz a1i c1 caddc peano2nnd cr 2re remulcld ltp1d cmin 1red ltaddsubd lttrd
+      mpbird nndivmulbndd 3simpa nnnegabsboundd simp3d oveq1d nnrpd modeqmodmin
+      syl syl2anc nncnd mulcld negsubdi2d mvrladdd negeqd eqtr3d 3eqtrd 3jca
+      crp ) AEPUAQZUBRZWECUCUDZUEZDUFZUMRWIUGUHZUBRWJFUCUDUIPWESQZFSQZBTQZWIBTQ
+      ZUJAWFWGWKEUJZUIWHAEPCJPUBRAUKUNACIULZOAEEUOUPQZPCSQZAEJULZAWQAEJUQULAPCP
+      URRAUSUNWPUTZAEWSVAAWQWRUCUDEWRUOVBQUCUDNAEUOWRWSAVCWTVDVFVEVGZWFWGWOVHVN
+      ADFKLVIAWMEFSQZBTQZXBBVBQZBTQZWNAWLXBBTAWKEFSAWFWGWOXAVJVKVKAXBURRBWDRXCX
+      EUJAEFWSAFHULUTABGVLXBBVMVOAXDWIBTABXBVBQZUFXDWIABXBABGVPAEFAEJVPAFHVPVQZ
+      VRAXFDABXBDXGADKVPMVSVTWAVKWBWC $.
+  $}
+
+  ${
+    evenadjacenthid.1 $e |- ( ph -> P e. NN ) $.
+    evenadjacenthid.2 $e |- ( ph -> N e. NN ) $.
+    evenadjacenthid.3 $e |- ( ph -> Q e. NN ) $.
+    evenadjacenthid.4 $e |- ( ph -> T e. NN ) $.
+    evenadjacenthid.5 $e |- ( ph -> R e. NN ) $.
+    evenadjacenthid.6 $e |- ( ph -> R < N ) $.
+    evenadjacenthid.7 $e |- ( ph -> P = ( ( T x. N ) + R ) ) $.
+    evenadjacenthid.8 $e |- ( ph -> T < ( ( 2 x. Q ) - 1 ) ) $.
+    evenadjacenthid.9 $e |- ( ph -> -. 2 || T ) $.
+    $( For the displayed quotient and remainder with odd ` T ` , the positive
+       integer ` ( ( T + 1 ) / 2 ) ` is below ` Q ` , and twice its product
+       with ` N ` is congruent to ` ( N - R ) ` modulo ` P ` .  This signed
+       representative is a nonzero integer of absolute value below ` N ` .
        (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    fmulneg2bid $p |- ( ph -> ( ( F ` ( A x. -u B ) ) = ( C x. G ) <-> E = ( C
-      x. D ) ) ) $=
-      ( cneg cmul co cfv wceq mulneg2d fveq2d eqtrd oveq2d eqeq12d mulcld bitrd
-      neg11ad ) ABCPQRZGSZDHQRZTFPZDEQRZPZTFUMTAUJULUKUNAUJBCQRPZGSULAUIUOGABCI
-      JUAUBOUCAUKDEPZQRUNAHUPDQNUDADEKLUAUCUEAFUMMADEKLUFUHUG $.
-  $}
-
-
-  ${
-    $( The canonical numerator of a nonzero rational is nonzero.  (Contributed
-       by Zhi Wang, 5-Nov-2026.) $)
-    qnumne0 $p |- ( A e. ( QQ \ { 0 } ) -> ( numer ` A ) =/= 0 ) $=
-      ( cq cc0 csn cdif wcel cdenom cfv cmul co cnumer wceq eldifi qmuldeneqnum
-      syl cc qcn cn qdencl nncnd eldifsni nnne0d mulne0d eqnetrrd ) ABCDZEFZAAG
-      HZIJZAKHZCUFABFZUHUILABUEMZANOUFAUGUFUJAPFUKAQOUFUGUFUJUGRFUKASOZTABCUAUF
-      UGULUBUCUD $.
-  $}
-
-  ${
-    $d A p $.
-    $( A nonzero rational has only finitely many nonzero prime valuations.  The
-       support is the union of the prime divisors of its absolute numerator and
-       denominator; see ~ pcqsuppnumden .  (Contributed by Zhi Wang,
-       27-Oct-2026.) $)
-    pcqfi $p |- ( A e. ( QQ \ { 0 } ) ->
-      { p e. Prime | ( p pCnt A ) =/= 0 } e. Fin ) $=
-      ( cq cc0 wcel cfv cdvds wbr cprime crab cpc co wne wa syl wn wceq syl2anc
-      adantr cmin csn cdif cv cnumer cdenom cun cn cfn cz eldifi qnumcl qnumne0
-      cabs jca nnabscl prmdvdsfi qdencl unfid wo wb simpr pceq0 anbi12d bitr4di
-      ioran cdiv pcdiv syl3anc qeqnumdivden oveq2d oveq1d 3eqtr4d simprl simprr
-      zq pcabs oveq12d 0m0e0 eqtrd ex sylbird necon1ad ss2rabdv unrab sseqtrrdi
-      eqtrdi ssfid ) ACDUAZUBEZBUCZAUDFZUMFZGHZBIJZWJAUEFZGHZBIJZUFZWJAKLZDMZBI
-      JZWIWNWQWIWLUGEZWNUHEWIWKUIEZWKDMZNZXBWIXCXDWIACEZXCACWHUJZAUKOZAULUNZWKU
-      OOZWLBUPOWIWOUGEZWQUHEWIXFXKXGAUQOZWOBUPOURWIXAWMWPUSZBIJWRWIWTXMBIWIWJIE
-      ZNZXMWSDXOXMPZWJWLKLZDQZWJWOKLZDQZNZWSDQZXOYAWMPZWPPZNXPXOXRYCXTYDXOXNXBX
-      RYCUTWIXNVAZWIXBXNXJSWJWLVBRXOXNXKXTYDUTYEWIXKXNXLSZWJWOVBRVCWMWPVEVDXOYA
-      YBXOYANZWSXQXSTLZDXOWSYHQYAXOWJWKWOVFLZKLZWJWKKLZXSTLZWSYHXOXNXEXKYJYLQYE
-      WIXEXNXISYFWKWOWJVGVHXOAYIWJKWIAYIQZXNWIXFYMXGAVIOSVJXOXQYKXSTXOXNWKCEZXQ
-      YKQYEWIYNXNWIXCYNXHWKVOOSWKWJVPRVKVLSYGYHDDTLDYGXQDXSDTXOXRXTVMXOXRXTVNVQ
-      VRWFVSVTWAWBWCWMWPBIWDWEWG $.
-  $}
-
-  ${
-    $d A p $.  $d B p $.
-    $( The prime divisors of a product of integers form the union of the prime
-       divisors of its factors.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    prmdvdsmul $p |- ( ( A e. ZZ /\ B e. ZZ ) -> { p e. Prime | p || ( A x. B
-      ) } = ( { p e. Prime | p || A } u. { p e. Prime | p || B } ) ) $=
-      ( cz wcel wa cv cmul co cdvds wbr cprime crab wo wb euclemma 3expb ancoms
-      cun rabbidva unrab eqtr4di ) ADEZBDEZFZCGZABHIJKZCLMUFAJKZUFBJKZNZCLMUHCL
-      MUICLMSUEUGUJCLUFLEZUEUGUJOZUKUCUDULUFABPQRTUHUICLUAUB $.
+    evenadjacenthid $p |- ( ph -> ( ( ( ( T + 1 ) / 2 ) e. NN /\ ( ( T + 1 )
+      / 2 ) < Q ) /\ ( ( N - R ) e. ZZ /\ ( abs ` ( N - R ) ) e. NN /\ ( abs
+      ` ( N - R ) ) < N ) /\ ( ( ( 2 x. ( ( T + 1 ) / 2 ) ) x. N ) mod P ) =
+      ( ( N - R ) mod P ) ) ) $=
+      ( co c2 wcel wbr cmul c1 caddc cdiv cn clt wa cmin cabs cfv w3a peano2nnd
+      cz cmo wceq 2nn a1i nnred cdvds wn nnzd oddp1even syl mpbid 1red remulcld
+      2re ltaddsubd mpbird nndivmulbndd simp1d simp2d jca nnsubabsboundd simp3d
+      wb cr oveq1d crp zmulcld zred nnrpd modeqmodmin syl2anc adddirp1d oveq12d
+      nncnd mulcld pnpcand eqtrd 3eqtrd 3jca ) AEUAUBPZQUCPZUDRZWMCUESZUFFDUGPZ
+      ULRWPUHUIZUDRWQFUESUJQWMTPZFTPZBUMPZWPBUMPZUNAWNWOAWNWOWRWLUNZAWLQCAEJUKZ
+      QUDRAUOUPACIUQZAQEURSUSZQWLURSZOAEULRXEXFVOAEJUTEVAVBVCAWLQCTPZUESEXGUAUG
+      PUESNAEUAXGAEJUQAVDAQCQVPRAVFUPXDVEVGVHVIZVJAWNWOXBXHVKVLADFHKLVMAWTWLFTP
+      ZBUMPZXIBUGPZBUMPZXAAWSXIBUMAWRWLFTAWNWOXBXHVNVQVQAXIVPRBVRRXJXLUNAXIAWLF
+      AWLXCUTAFHUTVSVTABGWAXIBWBWCAXKWPBUMAXKEFTPZFUBPZXMDUBPZUGPWPAXIXNBXOUGAE
+      FAEJWFZAFHWFZWDMWEAXMFDAEFXPXQWGXQADKWFWHWIVQWJWK $.
   $}
 
   ${
@@ -883014,41 +883460,261 @@ $)
   $}
 
   ${
-    $d A p $.
-    $( The primes with nonzero valuation at a nonzero rational are exactly the
-       prime divisors of its absolute numerator or denominator.  (Contributed
-       by Zhi Wang, 27-Oct-2026.) $)
-    pcqsuppnumden $p |- ( A e. ( QQ \ { 0 } ) ->
-      { p e. Prime | ( p pCnt A ) =/= 0 } =
-      ( { p e. Prime | p || ( abs ` ( numer ` A ) ) } u.
-        { p e. Prime | p || ( denom ` A ) } ) ) $=
-      ( cq cc0 wcel cpc co cprime crab cfv wbr wa wceq wn cz adantr syl syl2anc
-      cmin c1 csn cdif cv wne cnumer cabs cdvds cdenom wo cun cgcd cle simpr cn
-      eldifi qnumcl qnumne0 jca nnabscl nnzd qdencl pccld nn0red nn0cnd syl3anc
-      cdiv pcdiv qeqnumdivden oveq2d pcabs oveq1d 3eqtr4d eqtr3d subeq0d pcgcd1
-      eqled syl31anc gcdabs1 qnumdencoprm eqtrd pc1 simprl simprr oveq12d 0m0e0
-      zq eqtrdi impbida wb pceq0 anbi12d ioran bitrd necon2abid bicomd rabbidva
-      bitr4di unrab eqtr4di ) ACDUAZUBEZBUCZAFGZDUDZBHIXBAUEJZUFJZUGKZXBAUHJZUG
-      KZUIZBHIXGBHIXIBHIUJXAXDXJBHXAXBHEZLZXJXDXLXJXCDXLXCDMZXBXFFGZDMZXBXHFGZD
-      MZLZXJNZXLXMXRXLXMLZXOXQXTXBXFXHUKGZFGZXNDXTXKXFOEXHOEZXNXPULKYBXNMXLXKXM
-      XAXKUMZPZXTXFXLXFUNEZXMXAYFXKXAXEOEZXEDUDZLZYFXAYGYHXAACEZYGACWTUOZAUPQZA
-      UQURZXEUSQPZPZUTXTXHXLXHUNEZXMXAYPXKXAYJYPYKAVAQZPZPZUTXTXNXPXTXNXTXBXFYE
-      YOVBZVCXTXNXPXTXNYTVDXTXPXTXBXHYEYSVBVDXTXCXNXPSGZDXLXCUUAMZXMXLXBXEXHVFG
-      ZFGZXBXEFGZXPSGZXCUUAXLXKYIYPUUDUUFMYDXAYIXKYMPYRXEXHXBVGVEXLAUUCXBFXAAUU
-      CMZXKXAYJUUGYKAVHQPVIXLXNUUEXPSXLXKXECEZXNUUEMYDXAUUHXKXAYGUUHYLXEWFQPXEX
-      BVJRVKVLZPXLXMUMVMVNZVPXFXHXBVOVQXTYBXBTFGZDXTYATXBFXLYATMZXMXAUULXKXAYAX
-      EXHUKGZTXAYGYCYAUUMMYLXAXHYQUTXHXEVRRXAYJUUMTMYKAVSQVTPPVIXTXKUUKDMYEXBWA
-      QVTVMZXTXNXPDUUJUUNVMURXLXRLZXCUUADXLUUBXRUUIPUUOUUADDSGDUUOXNDXPDSXLXOXQ
-      WBXLXOXQWCWDWEWGVTWHXLXRXGNZXINZLXSXLXOUUPXQUUQXLXKYFXOUUPWIYDYNXBXFWJRXL
-      XKYPXQUUQWIYDYRXBXHWJRWKXGXIWLWQWMWNWOWPXGXIBHWRWS $.
+    prmintndvdsd.1 $e |- ( ph -> P e. Prime ) $.
+    prmintndvdsd.2 $e |- ( ph -> N e. NN ) $.
+    prmintndvdsd.3 $e |- ( ph -> 1 < N ) $.
+    prmintndvdsd.4 $e |- ( ph -> N < P ) $.
+    $( A positive integer strictly between one and a prime does not divide that
+       prime.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    prmintndvdsd $p |- ( ph -> -. N || P ) $=
+      ( cdvds wbr wceq c1 wo wn nnred ltned neneqd 1red gtned ioran wcel cprime
+      sylanbrc cn wb dvdsprime syl2anc mtbird ) ACBHIZCBJZCKJZLZAUIMUJMUKMACBAC
+      BACENGOPACKAKCAQFRPUIUJSUBABUATCUCTUHUKUDDEBCUEUFUG $.
   $}
 
+  ${
+    prmndvdsmuld.1 $e |- ( ph -> P e. Prime ) $.
+    prmndvdsmuld.2 $e |- ( ph -> A e. ZZ ) $.
+    prmndvdsmuld.3 $e |- ( ph -> B e. ZZ ) $.
+    prmndvdsmuld.4 $e |- ( ph -> -. P || A ) $.
+    prmndvdsmuld.5 $e |- ( ph -> -. P || B ) $.
+    $( A prime does not divide a product of two integers it does not divide.
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    prmndvdsmuld $p |- ( ph -> -. P || ( A x. B ) ) $=
+      ( cmul co cdvds wbr wo wn ioran sylanbrc cprime wcel cz wb syl3anc mtbird
+      euclemma ) ADBCJKLMZDBLMZDCLMZNZAUFOUGOUHOHIUFUGPQADRSBTSCTSUEUHUAEFGDBCU
+      DUBUC $.
+  $}
 
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Divisibility, congruences, and quadratic residues
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
+  ${
+    prmgt3factsd.1 $e |- ( ph -> P e. Prime ) $.
+    prmgt3factsd.2 $e |- ( ph -> 3 < P ) $.
+    $( A prime above three is odd and is not divisible by three.  (Contributed
+       by Zhi Wang, 17-Oct-2026.) $)
+    prmgt3factsd $p |- ( ph -> ( P e. ( Prime \ { 2 } ) /\ -. 3 || P ) ) $=
+      ( cprime c2 csn cdif c3 cdvds wbr wn cn 2nn a1i c1 clt nnred prmintndvdsd
+      wcel 1lt2 3nn prmnn syl 2lt3 lttrd nnoddn2prmb sylanbrc 1lt3 jca ) ABEFGH
+      TZIBJKLABETZFBJKLUKCABFCFMTANOZPFQKAUAOAFIBAFUMRAIIMTAUBOZRABAULBMTCBUCUD
+      RFIQKAUEODUFSBUGUHABICUNPIQKAUIODSUJ $.
+  $}
+
+  ${
+    prmgt3ndvds23d.1 $e |- ( ph -> P e. Prime ) $.
+    prmgt3ndvds23d.2 $e |- ( ph -> 3 < P ) $.
+    $( A prime greater than three divides neither two nor three.  (Contributed
+       by Zhi Wang, 20-Oct-2026.) $)
+    prmgt3ndvds23d $p |- ( ph -> ( -. P || 2 /\ -. P || 3 ) ) $=
+      ( c2 cdvds wbr wn c3 cn wcel c1 cfzo co nnred elfzo1 syl3anbrc fzo1ndvdsd
+      clt a1i 2nn cprime prmnn syl 3nn 2lt3 lttrd jca ) ABEFGHBIFGHAEBAEJKZBJKZ
+      EBSGELBMNZKUIAUATZABUBKUJCBUCUDZAEIBAEULOAIIJKZAUETZOABUMOEISGAUFTDUGBEPQ
+      RAIBAUNUJIBSGIUKKUOUMDBIPQRUH $.
+  $}
+
+  ${
+    $d A p $.  $d B p $.
+    $( The prime divisors of a product of integers form the union of the prime
+       divisors of its factors.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    prmdvdsmul $p |- ( ( A e. ZZ /\ B e. ZZ ) -> { p e. Prime | p || ( A x. B
+      ) } = ( { p e. Prime | p || A } u. { p e. Prime | p || B } ) ) $=
+      ( cz wcel wa cv cmul co cdvds wbr cprime crab wo wb euclemma 3expb ancoms
+      cun rabbidva unrab eqtr4di ) ADEZBDEZFZCGZABHIJKZCLMUFAJKZUFBJKZNZCLMUHCL
+      MUICLMSUEUGUJCLUFLEZUEUGUJOZUKUCUDULUFABPQRTUHUICLUAUB $.
+  $}
+
+  ${
+    oddprmquarterd.1 $e |- ( ph -> P e. ( Prime \ { 2 } ) ) $.
+    oddprmquarterd.2 $e |- ( ph -> -. 2 || ( ( P - 1 ) / 2 ) ) $.
+    $( For an odd prime ` P ` , if ` ( ( P - 1 ) / 2 ) ` is odd, then
+       ` ( ( P + 1 ) / 4 ) ` is a positive integer.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
+    oddprmquarterd $p |- ( ph -> ( ( P + 1 ) / 4 ) e. NN ) $=
+      ( c4 c1 caddc co cdvds wbr cdiv cn wcel c2 cmul cz wb syl mpbid 2z cprime
+      cmin wn csn cdif oddprm nnzd oddp1even peano2zd a1i dvdscmul mp3an2i wceq
+      mpd 2t2e4 gausslemma2dlem0a nncnd halfpre2p1d 3brtr3d peano2nnd nndivdvds
+      wi 4nn sylancl ) AEBFGHZIJZVEEKHLMZANNOHZNBFUBHNKHZFGHZOHZEVEIANVJIJZVHVK
+      IJZANVIIJUCZVLDAVIPMVNVLQAVIABUANUDUEMVILMCBUFRUGZVIUHRSNPMZAVJPMVPVLVMVB
+      TAVIVOUIVPATUJNNVJUKULUNVHEUMAUOUJABABABCUPZUQURUSAVELMELMVFVGQABVQUTVCVE
+      EVAVDS $.
+  $}
+
+  ${
+    narrowstriphalvesd.1 $e |- ( ph -> Q e. NN ) $.
+    narrowstriphalvesd.2 $e |- ( ph -> N e. NN ) $.
+    narrowstriphalvesd.3 $e |- ( ph -> P e. NN ) $.
+    narrowstriphalvesd.4 $e |- ( ph -> 1 < Q ) $.
+    narrowstriphalvesd.5 $e |- ( ph -> -. 2 || N ) $.
+    narrowstriphalvesd.6 $e |- ( ph -> -. 2 || P ) $.
+    narrowstriphalvesd.7 $e |- ( ph -> ( ( ( 2 x. Q ) - 1 ) x. N ) < P ) $.
+    narrowstriphalvesd.8 $e |- ( ph -> P < ( ( 2 x. Q ) x. N ) ) $.
+    $( For odd positive integers ` P ` and ` N ` satisfying the displayed
+       bounds, half of each difference ` ( ( ( ( 2 x. Q ) + 1 ) x. N ) - P ) `
+       and ` ( P - ( ( ( 2 x. Q ) - 1 ) x. N ) ) ` is a positive integer
+       smaller than ` N ` .  Doubling each half recovers its defining
+       difference.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    narrowstriphalvesd $p |- ( ph -> ( ( ( ( ( ( ( 2 x. Q ) + 1 ) x. N ) - P
+      ) / 2 ) e. NN /\ ( ( ( ( ( 2 x. Q ) + 1 ) x. N ) - P ) / 2 ) < N /\ ( 2
+      x. ( ( ( ( ( 2 x. Q ) + 1 ) x. N ) - P ) / 2 ) ) = ( ( ( ( 2 x. Q ) + 1
+      ) x. N ) - P ) ) /\ ( ( ( P - ( ( ( 2 x. Q ) - 1 ) x. N ) ) / 2 ) e. NN
+      /\ ( ( P - ( ( ( 2 x. Q ) - 1 ) x. N ) ) / 2 ) < N /\ ( 2 x. ( ( P - (
+      ( ( 2 x. Q ) - 1 ) x. N ) ) / 2 ) ) = ( P - ( ( ( 2 x. Q ) - 1 ) x. N )
+      ) ) ) ) $=
+      ( c2 cmul co cn wcel wbr nnred cdvds caddc cmin cdiv clt wceq w3a 2nn a1i
+      c1 wa 1red nnnn0d nn0ge0d nnge1d lemulge12d ltletrd adjacentstripd simpld
+      nnmulcld cz wn nnzd zmulcld cprime 2prm odd2adjacentd simprd prmndvdsmuld
+      peano2zd omoe syl22anc nndivmulbndd 1zzd zsubcld remulcld jca ) AMCNOZUIU
+      AOZDNOZBUBOZMUCOZPQWADUDRMWANOVTUEUFBVQUIUBOZDNOZUBOZMUCOZPQWEDUDRMWENOWD
+      UEUFAVTMDAVTPQZVTMDNOZUDRZAWFWHUJZWDPQZWDDUDRZUJZABVQDAMCMPQAUGUHZEUSZFGA
+      UICVQAUKACESZAVQWNSHACMWOAMWMSZACACEULUMAMWMUNZUOUPKLUQZURZURWMADFSZAVSUT
+      QMVSTRVABUTQZMBTRVAZMVTTRAVRDAVQAVQWNVBZVIZADFVBZVCAVRDMMVDQAVEUHZXDXEAMW
+      BTRVAZMVRTRVAZACACEVBVFZVGIVHABGVBZJVSBVJVKAWFWHWSVGVLAWDMDAWJWKAWIWLWRVG
+      ZURZWMWTAXAXBWCUTQMWCTRVAMWDTRXJJAWBDAVQUIXCAVMVNZXEVCAWBDMXFXMXEAXGXHXIU
+      RIVHBWCVJVKAWDDWGAWDXLSWTAMDWPWTVOAWJWKXKVGADMWTWPADADFULUMWQUOUPVLVP $.
+  $}
+
+  ${
+    $d D d $.  $d K d k $.  $d N d k $.  $d P d k $.  $d Q d k $.
+    oddextshortexd.1 $e |- ( ph -> K e. NN ) $.
+    oddextshortexd.2 $e |- ( ph -> D e. ZZ ) $.
+    oddextshortexd.3 $e |- ( ph -> ( ( K < Q /\ ( abs ` D ) e. NN /\ ( abs `
+      D ) < N ) /\ ( ( ( ( 2 x. K ) x. N ) mod P ) = ( D mod P ) \/ ( ( ( 3
+      x. K ) x. N ) mod P ) = ( ( 2 x. D ) mod P ) ) ) ) $.
+    $( Introduce bounded integer witnesses for the signed congruence
+       alternatives used in ~ oddextcertd .  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
+    oddextshortexd $p |- ( ph -> E. k e. NN E. d e. ZZ ( ( k < Q /\ ( abs ` d
+      ) e. NN /\ ( abs ` d ) < N ) /\ ( ( ( ( 2 x. k ) x. N ) mod P ) = ( d
+      mod P ) \/ ( ( ( 3 x. k ) x. N ) mod P ) = ( ( 2 x. d ) mod P ) ) ) )
+      $=
+      ( clt wbr cn c2 cmul co cmo wceq oveq1d cv cabs cfv w3a c3 wo wa cz breq1
+      wcel 3anbi1d oveq2 eqeq1d orbi12d fveq2 eleq1d breq1d 3anbi23d 2rspcedvdw
+      anbi12d oveq1 eqeq2d ) AEUAZDLMZHUAZUBUCZNUJZVFGLMZUDZOVCPQZGPQZCRQZVECRQ
+      ZSZUEVCPQZGPQZCRQZOVEPQZCRQZSZUFZUGFDLMZVGVHUDZOFPQZGPQZCRQZVMSZUEFPQZGPQ
+      ZCRQZVSSZUFZUGWBBUBUCZNUJZWMGLMZUDZWFBCRQZSZWJOBPQZCRQZSZUFZUGEHFBNUHVCFS
+      ZVIWCWAWLXCVDWBVGVHVCFDLUIUKXCVNWGVTWKXCVLWFVMXCVKWECRXCVJWDGPVCFOPULTTUM
+      XCVQWJVSXCVPWICRXCVOWHGPVCFUEPULTTUMUNUTVEBSZWCWPWLXBXDVGWNVHWOWBXDVFWMNV
+      EBUBUOZUPXDVFWMGLXEUQURXDWGWRWKXAXDVMWQWFVEBCRVAVBXDVSWTWJXDVRWSCRVEBOPUL
+      TVBUNUTIJKUS $.
+  $}
+
+  ${
+    $d N d k $.  $d P d k $.  $d Q d k $.
+    oddextfarcertd.1 $e |- ( ph -> P e. NN ) $.
+    oddextfarcertd.2 $e |- ( ph -> N e. NN ) $.
+    oddextfarcertd.3 $e |- ( ph -> Q e. NN ) $.
+    oddextfarcertd.4 $e |- ( ph -> -. N || P ) $.
+    oddextfarcertd.5 $e |- ( ph -> ( 2 x. N ) < P ) $.
+    oddextfarcertd.6 $e |- ( ph -> P < ( ( ( 2 x. Q ) - 1 ) x. N ) ) $.
+    $( When ` P ` lies strictly between ` ( 2 x. N ) ` and
+       ` ( ( ( 2 x. Q ) - 1 ) x. N ) ` and is not divisible by ` N ` , the
+       bounded signed congruence witnesses of ~ oddextcertd exist.  An adjacent
+       even multiple supplies them.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    oddextfarcertd $p |- ( ph -> E. k e. NN E. d e. ZZ ( ( k < Q /\ ( abs ` d
+      ) e. NN /\ ( abs ` d ) < N ) /\ ( ( ( ( 2 x. k ) x. N ) mod P ) = ( d
+      mod P ) \/ ( ( ( 3 x. k ) x. N ) mod P ) = ( ( 2 x. d ) mod P ) ) ) )
+      $=
+      ( c2 co wbr cn wcel cmul cmo adantr cdiv cfl cfv cdvds cv clt cabs w3a c3
+      wceq wo wa cz wrex cneg cle c1 cmin nnred nnzd zmulcld 1zzd fldiv2boundsd
+      2z a1i zsubcld simp1d fzossnn zmodfzo1d sselid cr crp nnrpd modlt syl2anc
+      cfzo caddc flpmodeq eqcomd simp3d evenadjacentlod simpld simp2d 3jca orcd
+      simpr simprd jca oddextshortexd wn evenadjacenthid pm2.61dan ) AMBEUANUBU
+      CZUDOZDUEZCUFOFUEZUGUCZPQWQEUFOUHMWORNERNBSNWPBSNUJUIWORNERNBSNMWPRNBSNUJ
+      UKULFUMUNDPUNAWNULZBESNZUOZBCDWMMUANZEFWRXAPQZXACUFOZWRXBXCULZWTUMQZWTUGU
+      CZPQZXFEUFOZUHZMXARNERNBSNWTBSNUJZWRBCWSWMEABPQZWNGTAEPQZWNHTACPQZWNITAWM
+      PQZWNAXNMWMUPOZWMMCRNZUQURNZUFOZABXQEABGUSZHAXPUQAMCMUMQAVDVEACIUTVAAVBVF
+      KLVCZVGZTAWSPQZWNAUQEVPNPWSEVHABEABGUTHJVIVJZTAWSEUFOZWNABVKQZEVLQZYDXSAE
+      HVMZBEVNVOZTABWMERNWSVQNZUJZWNAYIBAYEYFYIBUJXSYGBEVRVOVSZTAXRWNAXNXOXRXTV
+      TZTAWNWFWAZVGZWBWRXEXGXHWRXDXIXJYMWCZVGWRXCXGXHUHXJUIXARNERNBSNMWTRNBSNUJ
+      ZUKWRXCXGXHWRXBXCYNWGWRXEXGXHYOWCWRXEXGXHYOVTWDWRXJYPWRXDXIXJYMVTWEWHWIAW
+      NWJZULZEWSURNZBCDWMUQVQNMUANZEFYRYTPQZYTCUFOZYRUUAUUBULZYSUMQZYSUGUCZPQZU
+      UEEUFOZUHZMYTRNERNBSNYSBSNUJZYRBCWSWMEAXKYQGTAXLYQHTAXMYQITAXNYQYATAYBYQY
+      CTAYDYQYHTAYJYQYKTAXRYQYLTAYQWFWKZVGZWBYRUUDUUFUUGYRUUCUUHUUIUUJWCZVGYRUU
+      BUUFUUGUHUUIUIYTRNERNBSNMYSRNBSNUJZUKYRUUBUUFUUGYRUUAUUBUUKWGYRUUDUUFUUGU
+      ULWCYRUUDUUFUUGUULVTWDYRUUIUUMYRUUCUUHUUIUUJVTWEWHWIWL $.
+  $}
+
+  ${
+    $d N d k $.  $d P d k $.  $d Q d k $.
+    oddextstripcertd.1 $e |- ( ph -> Q e. NN ) $.
+    oddextstripcertd.2 $e |- ( ph -> N e. NN ) $.
+    oddextstripcertd.3 $e |- ( ph -> P e. NN ) $.
+    oddextstripcertd.4 $e |- ( ph -> 1 < Q ) $.
+    oddextstripcertd.5 $e |- ( ph -> -. 2 || N ) $.
+    oddextstripcertd.6 $e |- ( ph -> -. 2 || P ) $.
+    oddextstripcertd.7 $e |- ( ph -> ( ( ( 2 x. Q ) - 1 ) x. N ) < P ) $.
+    oddextstripcertd.8 $e |- ( ph -> P < ( ( 2 x. Q ) x. N ) ) $.
+    oddextstripcertd.9 $e |- ( ph -> -. 3 || Q ) $.
+    $( For odd positive integers ` N ` and ` P ` and a positive integer ` Q `
+       greater than one and not divisible by three, if ` P ` lies strictly
+       between ` ( ( ( 2 x. Q ) - 1 ) x. N ) ` and ` ( ( 2 x. Q ) x. N ) ` ,
+       there are a positive integer ` k < Q ` and a nonzero integer ` d ` with
+       ` ( abs `` d ) < N ` satisfying one of the two displayed congruences.
+       This is the case of ~ oddextcertd proved using the odd coefficients
+       adjacent to twice ` Q ` and the halved remainders in
+       ~ narrowstriphalvesd .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    oddextstripcertd $p |- ( ph -> E. k e. NN E. d e. ZZ ( ( k < Q /\ ( abs `
+      d ) e. NN /\ ( abs ` d ) < N ) /\ ( ( ( ( 2 x. k ) x. N ) mod P ) = ( d
+      mod P ) \/ ( ( ( 3 x. k ) x. N ) mod P ) = ( ( 2 x. d ) mod P ) ) ) )
+      $=
+      ( cmo co wceq wcel cmul c3 c1 cv clt wbr cabs cfv cn w3a c2 wo wa cz wrex
+      caddc cmin cdiv nn2adjacentd simprd simpld adantr 3nn cr nnred nnzd simpr
+      a1i mod3dblp1d nndivmulbndd simp1d narrowstriphalvesd simp2d cn0 nn0absid
+      nnnn0d syl eqeltrd eqbrtrd 3jca simp3d crp zmulcld zred nnrpd modeqmodmin
+      oveq1d syl2anc eqcomd eqtrd olcd oddextshortexd mod3dblm1d nnnegabsboundd
+      jca cneg 2cnd mulneg2d negeqd zcnd negsubdi2d 3eqtrrd mod3ndvdsd mpjaodan
+      nncnd ) ACUAPQZUBRZDUCZCUDUEFUCZUFUGZUHSXIEUDUEUIUJXGTQETQBPQXHBPQRUAXGTQ
+      ETQBPQUJXHTQBPQRUKULFUMUNDUHUNXEUJRZAXFULZUJCTQZUBUOQZETQZBUPQZUJUQQZBCDX
+      MUAUQQZEFXKXQUHSZXQCUDUEZUAXQTQZXMRZXKXMUACAXMUHSZXFAYBXMUACTQZUDUEZAXLUB
+      UPQZUHSZYEYCUDUEZULZYBYDULZACGJURZUSZUTZVAUAUHSZXKVBVGACVCSZXFACGVDZVAXKC
+      ACUMSZXFACGVEZVAAXFVFVHAYDXFAYBYDYKUSVAVIZVJAXPUMSXFAXPAXPUHSZXPEUDUEZUJX
+      PTQZXORZAYSYTUUBUIZBYEETQZUPQZUJUQQZUHSZUUFEUDUEZUJUUFTQZUUERZUIZABCEGHIJ
+      KLMNVKZUTZVJZVEVAXKXSXPUFUGZUHSZUUOEUDUEZUIUJXQTQETQBPQXPBPQRZXTETQZBPQZU
+      UABPQZRZUKXKXSUUPUUQXKXRXSYAYRVLAUUPXFAUUOXPUHAXPVMSUUOXPRAXPUUNVOXPVNVPZ
+      UUNVQVAAUUQXFAUUOXPEUDUVCAYSYTUUBUUMVLVRVAVSXKUVBUURXKUUTXNBPQZUVAXKUUSXN
+      BPXKXTXMETXKXRXSYAYRVTWFWFAUVDUVARXFAUVDXOBPQZUVAAXNVCSBWASZUVDUVERAXNAXM
+      EAXMYLVEAEHVEZWBWCABIWDZXNBWEWGAXOUUABPAUUAXOAYSYTUUBUUMVTWHWFWIVAWIWJWNW
+      KAXJULZUUFWOZBCDYEUAUQQZEFUVIUVKUHSZUVKCUDUEZUAUVKTQZYERZUVIYEUACAYFXJAYF
+      YGAYHYIYJUTZUTZVAYMUVIVBVGAYNXJYOVAUVICAYPXJYQVAAXJVFWLAYGXJAYFYGUVPUSVAV
+      IZVJAUVJUMSZXJAUVSUVJUFUGZUHSZUVTEUDUEZAUUFEAUUGUUHUUJAUUCUUKUULUSZVJZAUU
+      GUUHUUJUWCVLWMZVJVAUVIUVMUWAUWBUIUJUVKTQETQBPQUVJBPQRZUVNETQZBPQZUJUVJTQZ
+      BPQZRZUKUVIUVMUWAUWBUVIUVLUVMUVOUVRVLAUWAXJAUVSUWAUWBUWEVLVAAUWBXJAUVSUWA
+      UWBUWEVTVAVSUVIUWKUWFUVIUWHUUDBPQZUWJUVIUWGUUDBPUVIUVNYEETUVIUVLUVMUVOUVR
+      VTWFWFAUWLUWJRXJAUWLUUDBUPQZBPQZUWJAUUDVCSUVFUWLUWNRAUUDAYEEAYEUVQVEUVGWB
+      ZWCUVHUUDBWEWGAUWMUWIBPAUWIUUIWOUUEWOUWMAUJUUFAWPAUUFUWDXDWQAUUIUUEAUUGUU
+      HUUJUWCVTWRABUUDABIXDAUUDUWOWSWTXAWFWIVAWIWJWNWKACYQOXBXC $.
+  $}
+
+  ${
+    $d N d k $.  $d P d k $.  $d Q d k $.
+    oddextcertd.1 $e |- ( ph -> P e. NN ) $.
+    oddextcertd.2 $e |- ( ph -> N e. NN ) $.
+    oddextcertd.3 $e |- ( ph -> Q e. NN ) $.
+    oddextcertd.4 $e |- ( ph -> 1 < Q ) $.
+    oddextcertd.5 $e |- ( ph -> ( 2 x. N ) < P ) $.
+    oddextcertd.6 $e |- ( ph -> P < ( ( 2 x. Q ) x. N ) ) $.
+    oddextcertd.7 $e |- ( ph -> -. 2 || P ) $.
+    oddextcertd.8 $e |- ( ph -> -. 2 || N ) $.
+    oddextcertd.9 $e |- ( ph -> -. 3 || Q ) $.
+    oddextcertd.10 $e |- ( ph -> -. N || P ) $.
+    $( Find a smaller positive multiplier and a nonzero integer remainder with
+       absolute value below ` N ` .  One of two signed congruences relates them
+       to the product with ` N ` , using a factor of two or three.  For a
+       multiplier greater than one and not divisible by three, these witnesses
+       supply the descent in ~ liouoddextstepd .  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
+    oddextcertd $p |- ( ph -> E. k e. NN E. d e. ZZ ( ( k < Q /\ ( abs ` d )
+      e. NN /\ ( abs ` d ) < N ) /\ ( ( ( ( 2 x. k ) x. N ) mod P ) = ( d mod
+      P ) \/ ( ( ( 3 x. k ) x. N ) mod P ) = ( ( 2 x. d ) mod P ) ) ) ) $=
+      ( cmul co wbr adantr c2 c1 cmin clt cv cabs cfv cn wcel w3a wceq c3 wo wa
+      cmo cz wrex cdvds wn simpr oddextstripcertd wne nnzd zcnd 2z zmulcld 1zzd
+      zsubcld mulcomd dvdsmul1 syl2anc nbrne1 eqnetrrd zred nnred lttri2d mpbid
+      a1i orcanai oddextfarcertd pm2.61dan ) AUACQRZUBUCRZEQRZBUDSZDUEZCUDSFUEZ
+      UFUGZUHUIWHEUDSUJUAWFQREQRBUORWGBUORUKULWFQREQRBUORUAWGQRBUORUKUMUNFUPUQD
+      UHUQAWEUNBCDEFACUHUIZWEITAEUHUIZWEHTABUHUIZWEGTAUBCUDSWEJTAUAEURSUSWENTAU
+      ABURSUSWEMTAWEUTABWBEQRUDSWELTAULCURSUSWEOTVAAWEUSZUNBCDEFAWKWLGTAWJWLHTA
+      WIWLITAEBURSUSZWLPTAUAEQRBUDSWLKTAWEBWDUDSZAWDBVBWEWNUMAEWCQRZWDBAEWCAEAE
+      HVCZVDAWCAWBUBAUACUAUPUIAVEVRACIVCVFAVGVHZVDVIAEWOURSZWMWOBVBAEUPUIWCUPUI
+      WRWPWQEWCVJVKPEWOBURVLVKVMAWDBAWDAWCEWQWPVFVNABGVOVPVQVSVTWA $.
+  $}
 
   ${
     $d N d $.  $d N j $.  $d N k $.  $d N y $.  $d P d $.  $d P j $.  $d P k $.
@@ -883135,192 +883801,37 @@ $)
   $}
 
   ${
-    $d N d $.  $d N i $.  $d N j $.  $d N k $.  $d N t $.  $d N y $.  $d d k $.
-    $d d t $.  $d d y $.  $d i j $.  $d i t $.  $d i y $.  $d j m $.  $d j t $.
-    $d j y $.  $d k t $.  $d k y $.  $d m t $.  $d m y $.  $d t y $.
-    $( Squaring is a bijection from the positive integers whose squares divide
-       ` N ` onto the positive divisors of ` N ` that are squares.
-       (Contributed by Zhi Wang, 5-Nov-2026.) $)
-    dvdssqf1o $p |- ( N e. NN -> ( d e. { k e. NN | ( k ^ 2 ) || N } |-> ( d ^
-      2 ) ) : { k e. NN | ( k ^ 2 ) || N } -1-1-onto-> { j e. { i e. NN | i ||
-      N } | E. m e. NN j = ( m ^ 2 ) } ) $=
-      ( vt cn wcel cv c2 cexp co cdvds wbr crab wceq csqrt cfv wa vy wrex oveq1
-      cmpt cbvmptv breq1d elrab bilani simpld nnsqcld eqeq1 rexbidv simpr simpl
-      elrabrd fveq2d nnred nnnn0d nn0ge0d sqrtsqd eqtrd eqeltrd rexlimiva breq1
-      syl simprr simprl sylib eqbrtrd elrabd rspceeqv syl2anc eqtr2d jca oveq1d
-      adantrr elrabi nncnd sqsqrtd impbida f1od ) EHIZGUACJZKLMZENOZCHPZBJZDJZK
-      LMZQZDHUBZBAJZENOZAHPZPZGJZKLMZUAJZRSZFWFFJZKLMZUDHHFGWFXAWQWTWPKLUCUEWBW
-      PWFIZTZWPXCWPHIZWQENOZXBXDXETZWBWEXECWPHWCWPQWDWQENWCWPKLUCUFZUGZUHUIUJWB
-      WRWOIZTZWRWIQZDHUBZWSHIZXJWKXLBWRWNWGWRQWJXKDHWGWRWIUKULZWBXIUMUOXKXMDHWH
-      HIZXKTZWSWHHXPWSWIRSWHXPWRWIRXOXKUMUPXPWHXPWHXOXKUNZUQXPWHXPWHXQURUSUTVAX
-      QVBVCVEZWBXBWRWQQZTZXIWPWSQZTZWBXTTZXIYAYCWKXLBWRWNXNYCWMWRENOZAWRHWLWREN
-      VDZYCWRWQHWBXBXSVFZYCWPYCXDXEYCXBXFWBXBXSVGZXHVHUIZUJVBYCWRWQENYFYCWEXECW
-      PHXGYGUOVIVJYCXDXSXLYHYFDWPHWIWQWRWHWPKLUCVKVLVJYCWSWQRSWPYCWRWQRYFUPYCWP
-      YCWPYHUQYCWPYCWPYHURUSUTVMVNWBYBTZXBXSYIWEXECWPHXGYIWPWSHWBXIYAVFZWBXIXMY
-      AXRVPVBYIWQWRENYIWQWSKLMZWRYIWPWSKLYJVOZYIWRYIWRWBXIWRHIZYAXJWRWNIZYMXJYN
-      XLXIYNXLTWBWKXLBWRWNXNUGUHUIZWMAWRHVQVEVPVRVSZVAYIWMYDAWRHYEWBXIYNYAYOVPU
-      OVIVJYIWQYKWRYLYPVMVNVTWA $.
-  $}
-
-  $( Multiplication on the left by a common integer preserves congruence of
-     real numbers modulo a positive real number.  Alternate version of
-     ~ modmul1 .  (Contributed by Zhi Wang, 6-Nov-2026.) $)
-  modmul2 $p |- ( ( ( A e. RR /\ B e. RR ) /\ ( C e. ZZ /\ D e. RR+ ) /\ ( A
-    mod D ) = ( B mod D ) ) -> ( ( C x. A ) mod D ) = ( ( C x. B ) mod D ) ) $=
-    ( cr wcel wa cz crp cmo co wceq w3a cmul simp2l simp1l recnd mulcomd oveq1d
-    zcnd modmul1 simp1r 3eqtrd ) AEFZBEFZGZCHFZDIFZGZADJKBDJKLZMZCANKZDJKACNKZD
-    JKBCNKZDJKCBNKZDJKUKULUMDJUKCAUKCUFUGUHUJOTZUKAUDUEUIUJPQRSABCDUAUKUNUODJUK
-    BCUKBUDUEUIUJUBQUPRSUC $.
-
-  ${
-    modlin2subd.1 $e |- ( ph -> A e. RR ) $.
-    modlin2subd.2 $e |- ( ph -> B e. RR ) $.
-    modlin2subd.3 $e |- ( ph -> C e. RR ) $.
-    modlin2subd.4 $e |- ( ph -> D e. RR ) $.
-    modlin2subd.5 $e |- ( ph -> Z e. RR ) $.
-    modlin2subd.6 $e |- ( ph -> P e. RR+ ) $.
-    modlin2subd.7 $e |- ( ph -> ( ( ( A x. Z ) + C ) mod P ) = ( ( ( B x. Z
-    ) + D ) mod P ) ) $.
-    $( A congruence between ` ( ( A x. Z ) + C ) ` and ` ( ( B x. Z ) + D ) `
-       implies a congruence between ` ( ( A - B ) x. Z ) ` and ` ( D - C ) ` ,
-       modulo the positive real ` P ` .  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    modlin2subd $p |- ( ph -> ( ( ( A - B ) x. Z ) mod P ) = ( ( D - C )
-    mod P ) ) $=
-      ( cmul co caddc cmin cmo recnd remulcld readdcld eqidd modsub12d pnpcan2d
-      subdird eqtr4d oveq1d pnpcand 3eqtr3d ) ABGOPZDQPZCGOPZDQPZRPZFSPUMEQPZUN
-      RPZFSPBCRPGOPZFSPEDRPZFSPAULUPUNUNFAUKDABGHLUAZJUBAUMEACGILUAZKUBAUMDVAJU
-      BZVBMNAUNFSPUCUDAUOURFSAUOUKUMRPURAUKUMDAUKUTTAUMVATZADJTZUEABCGABHTACITA
-      GLTUFUGUHAUQUSFSAUMEDVCAEKTVDUIUHUJ $.
+    $d p m n ph $.  $d p m n F $.  $d p m n G $.  $d k p $.  $d k m $.
+    $d k n $.  $d k ph $.  $d k F $.  $d k G $.  $d k N $.
+    prmindeqd.1 $e |- ( ph -> ( F ` 1 ) = ( G ` 1 ) ) $.
+    prmindeqd.2 $e |- ( ( ph /\ p e. Prime ) -> ( F ` p ) = ( G ` p ) ) $.
+    prmindeqd.3 $e |- ( ( ph /\ ( m e. ( ZZ>= ` 2 ) /\ n e. ( ZZ>= ` 2 ) ) /\
+      ( ( F ` m ) = ( G ` m ) /\ ( F ` n ) = ( G ` n ) ) ) -> ( F ` ( m x. n )
+      ) = ( G ` ( m x. n ) ) ) $.
+    prmindeqd.4 $e |- ( ph -> N e. NN ) $.
+    $( Extend agreement of values at one and primes to any positive integer,
+       assuming that agreement is preserved under products of integers at least
+       two.  An equality instance of ~ prmind in deduction form.  (Contributed
+       by Zhi Wang, 5-Nov-2026.) $)
+    prmindeqd $p |- ( ph -> ( F ` N ) = ( G ` N ) ) $=
+      ( cv cfv wceq fveq2 eqeq12d wcel wi c1 imbi2d vk cn cmul co cprime expcom
+      wa c2 cuz pm3.43 3exp com12 a2d syl5 prmind ralrimiv rspcdva ) AUALZDMZUR
+      EMZNZFDMZFEMZNUAUBFURFNUSVBUTVCURFDOURFEOPAVAUAUBURUBQAVAAGLZDMZVDEMZNZRA
+      SDMZSEMZNZRABLZDMZVKEMZNZRZACLZDMZVPEMZNZRZAVKVPUCUDZDMZWAEMZNZRZAVARGBCU
+      RVDSNZVGVJAWFVEVHVFVIVDSDOVDSEOPTVDVKNZVGVNAWGVEVLVFVMVDVKDOVDVKEOPTVDVPN
+      ZVGVSAWHVEVQVFVRVDVPDOVDVPEOPTVDWANZVGWDAWIVEWBVFWCVDWADOVDWAEOPTVDURNZVG
+      VAAWJVEUSVFUTVDURDOVDUREOPTHAVDUEQVGIUFVOVTUGAVNVSUGZRVKUHUIMZQVPWLQUGZWE
+      AVNVSUJWMAWKWDAWMWKWDRAWMWKWDJUKULUMUNUOULUPKUQ $.
   $}
 
   ${
-    modsignp1d.1 $e |- ( ph -> A e. { -u 1 , 1 } ) $.
-    modsignp1d.2 $e |- ( ph -> P e. RR+ ) $.
-    modsignp1d.3 $e |- ( ph -> 2 < P ) $.
-    $( For ` A ` equal to minus one or one and a real modulus greater than two,
-       adding one, reducing modulo ` P ` , and subtracting one recovers ` A ` .
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    modsignp1d $p |- ( ph -> ( ( ( A + 1 ) mod P ) - 1 ) = A ) $=
-      ( c1 wceq caddc co cmo cmin wa cc0 simpr oveq1d eqtrdi wcel syl c2 df-neg
-      cneg eqcomi ax-1cn neg1cn 1pneg1e0 addcomli crp 0mod adantr eqtrd 3eqtr4a
-      2m1e1 1p1e2 cr cle wbr clt 2re a1i 0le2 modid syl22anc cpr elpri mpjaodan
-      wo ) ABGUBZHZBGIJZCKJZGLJZBHBGHZAVIMZNGLJZVHVLBVHVOGUAUCVNVKNGLVNVKNCKJZN
-      VNVJNCKVNVJVHGIJNVNBVHGIAVIOZPGVHNUDUEUFUGQPAVPNHZVIACUHRZVRECUISUJUKPVQU
-      LAVMMZTGLJGVLBUMVTVKTGLVTVKTCKJZTVTVJTCKVTVJGGIJTVTBGGIAVMOZPUNQPAWATHZVM
-      ATUORZVSNTUPUQZTCURUQWCWDAUSUTEWEAVAUTFTCVBVCUJUKPWBULABVHGVDRVIVMVGDBVHG
-      VESVF $.
-  $}
-
-
-  ${
-    mod23ratiod.1 $e |- ( ph -> P e. RR+ ) $.
-    mod23ratiod.2 $e |- ( ph -> M e. RR ) $.
-    mod23ratiod.3 $e |- ( ph -> N e. RR ) $.
-    mod23ratiod.4 $e |- ( ph -> Z e. RR ) $.
-    mod23ratiod.5 $e |- ( ph -> ( M mod P ) = ( ( 2 x. Z ) mod P ) ) $.
-    mod23ratiod.6 $e |- ( ph -> ( ( 3 x. Z ) mod P ) = ( N mod P ) ) $.
-    $( If real numbers ` M ` and ` N ` have the same remainders as twice and
-       three times a real number ` Z ` , respectively, modulo a positive real
-       ` P ` , then ` ( 3 x. M ) ` and ` ( 2 x. N ) ` have the same remainder
-       modulo ` P ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    mod23ratiod $p |- ( ph -> ( ( 3 x. M ) mod P ) = ( ( 2 x. N ) mod P ) )
-    $=
-      ( c3 cmul co cmo c2 cr wcel wceq a1i cz crp remulcld 3z modmul2 syl221anc
-      2re 3re recnd mul12d oveq1d 2z 3eqtrd ) ALCMNBONZLPEMNZMNZBONZPLEMNZMNZBO
-      NZPDMNBONZACQRUOQRLUARZBUBRZCBONUOBONSUNUQSGAPEPQRAUGTZIUCVBAUDTFJCUOLBUE
-      UFAUPUSBOALPEALLQRAUHTZUIAPVDUIAEIUIUJUKAURQRDQRPUARZVCURBONDBONSUTVASALE
-      VEIUCHVFAULTFKURDPBUEUFUM $.
-  $}
-
-
-  ${
-    addmodlteq2d.1 $e |- ( ph -> I e. ( 0 ..^ N ) ) $.
-    addmodlteq2d.2 $e |- ( ph -> J e. ( 0 ..^ N ) ) $.
-    addmodlteq2d.3 $e |- ( ph -> S e. RR ) $.
-    addmodlteq2d.4 $e |- ( ph -> ( ( S + I ) mod N ) = ( ( S + J ) mod N
-    ) ) $.
-    $( Two canonical nonnegative integer representatives are equal if adding
-       the same real number to both gives equal remainders modulo ` N ` .
-       Generalized deduction of the forward implication of ~ addmodlteq , with
-       a real common summand on the left.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    addmodlteq2d $p |- ( ph -> I = J ) $=
-      ( cmo co wceq caddc cc0 wcel cz elfzoelz syl recnd cr cfzo addcomd oveq1d
-      zred 3eqtrd crp wb cn0 cn clt wbr w3a elfzo0 sylib nnrpd modaddb syl22anc
-      simp2d mpbird modlteq syl2anc mpbid ) ACEJKDEJKLZCDLZAVCCBMKZEJKZDBMKZEJK
-      ZLZAVFBCMKZEJKBDMKZEJKVHAVEVJEJACBACACACNEUAKZOZCPOFCNEQRUDZSABHSZUBUCIAV
-      KVGEJABDVOADADADVLOZDPOGDNEQRUDZSUBUCUEACTODTOBTOEUFOVCVIUGVNVQHAEACUHOZE
-      UIOZCEUJUKZAVMVRVSVTULFCEUMUNURUOCDBEUPUQUSAVMVPVCVDUGFGCDEUTVAVB $.
-  $}
-
-  ${
-    mod3ndvdsd.1 $e |- ( ph -> A e. ZZ ) $.
-    mod3ndvdsd.2 $e |- ( ph -> -. 3 || A ) $.
-    $( An integer not divisible by three has remainder one or two.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    mod3ndvdsd $p |- ( ph -> ( ( A mod 3 ) = 1 \/ ( A mod 3 ) = 2 ) ) $=
-      ( c3 cmo co cc0 wceq wn c1 c2 w3o wo cdvds wbr cn wcel cz syl2anc 3nn a1i
-      dvdsval3 mtbid ctp cfzo zmodfzo fzo0to3tp eleqtrdi eltpi syl 3orel1 sylc
-      wb ) ABEFGZHIZJUPUOKIZUOLIZMZUQURNAEBOPZUPDAEQRZBSRZUTUPUNVAAUAUBZCEBUCTU
-      DAUOHKLUEZRUSAUOHEUFGZVDAVBVAUOVERCVCBEUGTUHUIUOHKLUJUKUPUQURULUM $.
-  $}
-
-  ${
-    mod3sumndvdsd.1 $e |- ( ph -> A e. ZZ ) $.
-    mod3sumndvdsd.2 $e |- ( ph -> B e. ZZ ) $.
-    mod3sumndvdsd.3 $e |- ( ph -> -. 3 || A ) $.
-    mod3sumndvdsd.4 $e |- ( ph -> -. 3 || B ) $.
-    mod3sumndvdsd.5 $e |- ( ph -> -. 3 || ( A + B ) ) $.
-    $( Two integers and their sum all nondivisible by three force equality of
-       the two remainders.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    mod3sumndvdsd $p |- ( ph -> ( A mod 3 ) = ( B mod 3 ) ) $=
-      ( c3 cmo co c1 wceq c2 wa simplr caddc cc0 wcel ad2antrr simpr eqtr4d crp
-      cr zred 3rp a1i modaddabs syl3anc oveq1d eqtr3d 1p2e3 oveq1i modid0 ax-mp
-      oveq12d eqtri eqtrdi wn cdvds wbr cn cz wb zaddcld dvdsval3 sylancr mtbid
-      3nn pm2.21dd wo mod3ndvdsd adantr mpjaodan 2p1e3 ) ABIJKZLMZVPCIJKZMZVPNM
-      ZAVQOZVRLMZVSVRNMZWAWBOVPLVRAVQWBPWAWBUAUBWAWCOZBCQKZIJKZRMZVSWDWFLNQKZIJ
-      KZRWDVPVRQKZIJKZWFWIWDBUDSZCUDSZIUCSZWKWFMZAWLVQWCABDUEZTAWMVQWCACEUEZTWN
-      WDUFUGBCIUHZUIWDWJWHIJWDVPLVRNQAVQWCPWAWCUAUPUJUKWIIIJKZRWHIIJULUMWNWSRMU
-      FIUNUOZUQURAWGUSZVQWCAIWEUTVAZWGHAIVBSWEVCSXBWGVDVIABCDEVEIWEVFVGVHZTVJAW
-      BWCVKZVQACEGVLZVMVNAVTOZWBVSWCXFWBOZWGVSXGWFNLQKZIJKZRXGWKWFXIXGWLWMWNWOA
-      WLVTWBWPTAWMVTWBWQTWNXGUFUGWRUIXGWJXHIJXGVPNVRLQAVTWBPXFWBUAUPUJUKXIWSRXH
-      IIJVOUMWTUQURAXAVTWBXCTVJXFWCOVPNVRAVTWCPXFWCUAUBAXDVTXEVMVNABDFVLVN $.
-  $}
-
-  ${
-    mod3eqsumd.1 $e |- ( ph -> A e. ZZ ) $.
-    mod3eqsumd.2 $e |- ( ph -> B e. ZZ ) $.
-    mod3eqsumd.3 $e |- ( ph -> ( A mod 3 ) = ( B mod 3 ) ) $.
-    $( Equal remainders modulo three yield a divisible sum with one argument
-       repeated.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    mod3eqsumd $p |- ( ph -> 3 || ( ( A + B ) + A ) ) $=
-      ( c3 cmul co caddc cdvds wcel 3nn cz wbr cmo c2 zcnd oveq1d 3eqtrd cn a1i
-      cmin nnzd zmulcld zsubcld dvdsmul1 syl2anc wceq eqcomd wb moddvds mp3an2i
-      mpbid dvds2addd 2p1e3 oveq1i 2cnd adddirp1d eqtr3id mulcld addassd oveq2d
-      c1 pncan3d 2timesd add32d breqtrd ) AGGBHIZCBUCIZJIZBCJIBJIZKAGVIVJAGGUAL
-      ZAMUBUDZAGBVNDUEACBEDUFZAGNLBNLZGVIKOVNDGBUGUHACGPIZBGPIZUIZGVJKOZAVRVQFU
-      JVMACNLVPVSVTUKMEDCBGULUMUNUOAVKQBHIZCJIZBBJIZCJIVLAVKWABJIZVJJIWABVJJIZJ
-      IWBAVIWDVJJAVIQVDJIZBHIWDWFGBHUPUQAQBAURZABDRZUSUTSAWABVJAQBWGWHVAWHAVJVO
-      RVBAWECWAJABCWHACERZVEVCTAWAWCCJABWHVFSABBCWHWHWIVGTVH $.
-  $}
-
-  ${
-    mod3sumdivcld.1 $e |- ( ph -> A e. NN ) $.
-    mod3sumdivcld.2 $e |- ( ph -> B e. NN ) $.
-    mod3sumdivcld.3 $e |- ( ph -> M = ( A + B ) ) $.
-    mod3sumdivcld.4 $e |- ( ph -> -. 3 || A ) $.
-    mod3sumdivcld.5 $e |- ( ph -> -. 3 || B ) $.
-    mod3sumdivcld.6 $e |- ( ph -> -. 3 || M ) $.
-    $( If positive integers ` A ` and ` B ` sum to ` M ` and none of the three
-       is divisible by three, then ` ( ( M + A ) / 3 ) ` is a positive integer.
-       See ~ liougb4gap0d for the ternary descent.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    mod3sumdivcld $p |- ( ph -> ( ( M + A ) / 3 ) e. NN ) $=
-      ( c3 caddc co cdvds wbr cdiv cn wcel nnzd nnaddcld mod3sumndvdsd breqtrrd
-      breq2d mtbid mod3eqsumd oveq1d wb eqeltrd 3nn nndivdvds sylancl mpbid ) A
-      KDBLMZNOZUMKPMQRZAKBCLMZBLMUMNABCABESZACFSZABCUQURHIAKDNOKUPNOJADUPKNGUCU
-      DUAUEADUPBLGUFUBAUMQRKQRUNUOUGADBADUPQGABCEFTUHETUIUMKUJUKUL $.
+    $( The canonical numerator of a nonzero rational is nonzero.  (Contributed
+       by Zhi Wang, 5-Nov-2026.) $)
+    qnumne0 $p |- ( A e. ( QQ \ { 0 } ) -> ( numer ` A ) =/= 0 ) $=
+      ( cq cc0 csn cdif wcel cdenom cfv cmul co cnumer wceq eldifi qmuldeneqnum
+      syl cc qcn cn qdencl nncnd eldifsni nnne0d mulne0d eqnetrrd ) ABCDZEFZAAG
+      HZIJZAKHZCUFABFZUHUILABUEMZANOUFAUGUFUJAPFUKAQOUFUGUFUJUGRFUKASOZTABCUAUF
+      UGULUBUCUD $.
   $}
 
   ${
@@ -883343,124 +883854,6 @@ $)
   $}
 
   ${
-    fzo1ndvdsd.1 $e |- ( ph -> A e. ( 1 ..^ P ) ) $.
-    $( A strictly positive canonical residue is not divisible by its modulus.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    fzo1ndvdsd $p |- ( ph -> -. P || A ) $=
-      ( cdvds wbr cc0 wceq c1 cfzo co fzossnn sselid nnne0d neneqd wcel fzo0ss1
-      cn wb fzo0dvdseq syl mtbird ) ACBEFZBGHZABGABAICJKZRBCLDMNOABGCJKZPUCUDSA
-      UEUFBCQDMCBTUAUB $.
-  $}
-
-  ${
-    prmintndvdsd.1 $e |- ( ph -> P e. Prime ) $.
-    prmintndvdsd.2 $e |- ( ph -> N e. NN ) $.
-    prmintndvdsd.3 $e |- ( ph -> 1 < N ) $.
-    prmintndvdsd.4 $e |- ( ph -> N < P ) $.
-    $( A positive integer strictly between one and a prime does not divide that
-       prime.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    prmintndvdsd $p |- ( ph -> -. N || P ) $=
-      ( cdvds wbr wceq c1 wo wn nnred ltned neneqd 1red gtned ioran wcel cprime
-      sylanbrc cn wb dvdsprime syl2anc mtbird ) ACBHIZCBJZCKJZLZAUIMUJMUKMACBAC
-      BACENGOPACKAKCAQFRPUIUJSUBABUATCUCTUHUKUDDEBCUEUFUG $.
-  $}
-
-  ${
-    zmodfzo1d.1 $e |- ( ph -> A e. ZZ ) $.
-    zmodfzo1d.2 $e |- ( ph -> B e. NN ) $.
-    zmodfzo1d.3 $e |- ( ph -> -. B || A ) $.
-    $( An integer not divisible by a positive integer has a positive canonical
-       remainder.  Consequence of ~ zmodfzo with the zero remainder excluded.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    zmodfzo1d $p |- ( ph -> ( A mod B ) e. ( 1 ..^ B ) ) $=
-      ( cmo co cc0 cfzo wcel wne c1 cz cn zmodfzo syl2anc cdvds wbr wceq neqned
-      wb dvdsval3 mtbid fzo1fzo0n0 sylanbrc ) ABCGHZICJHKZUGILUGMCJHKABNKZCOKZU
-      HDEBCPQAUGIACBRSZUGITZFAUJUIUKULUBEDCBUCQUDUAUGCUEUF $.
-  $}
-
-  ${
-    negmodndvdsd.1 $e |- ( ph -> A e. ZZ ) $.
-    negmodndvdsd.2 $e |- ( ph -> N e. NN ) $.
-    negmodndvdsd.3 $e |- ( ph -> -. N || A ) $.
-    $( The canonical residue of a negation complements a nonzero residue.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    negmodndvdsd $p |- ( ph -> ( -u A mod N ) = ( N - ( A mod N ) ) ) $=
-      ( cneg cmo co cmin zred c1 cfzo wcel cz zmodfzo1d syl cr wceq syl2anc crp
-      elfzoelz nnrpd modabs2 eqcomd modnegd negmod fzo1subd sselid zmodidfzoimp
-      cc0 fzo0ss1 3eqtrd ) ABGCHIBCHIZGCHIZCUNJIZCHIZUPABUNCABDKZAUNAUNLCMIZNUN
-      ONABCDEFPZUNLCUBQKZACEUCZAUNCHIZUNABRNCUANZVCUNSURVBBCUDTUEUFAUNRNVDUOUQS
-      VAVBUNCUGTAUPUKCMIZNUQUPSAUSVEUPCULAUNCUTUHUIUPCUJQUM $.
-  $}
-
-  ${
-    ndvdsmultrid.1 $e |- ( ph -> A e. RR ) $.
-    ndvdsmultrid.2 $e |- ( ph -> M e. ZZ ) $.
-    ndvdsmultrid.3 $e |- ( ph -> N e. ZZ ) $.
-    ndvdsmultrid.4 $e |- ( ph -> -. M || A ) $.
-    $( If an integer does not divide a real number, then each integer multiple
-       of that integer is either less than or greater than the real number.
-       (Contributed by Zhi Wang, 10-Nov-2026.) $)
-    ndvdsmultrid $p |- ( ph -> ( A < ( M x. N ) \/ ( M x. N ) < A ) ) $=
-      ( cmul co wne clt wbr wo cdvds wn cz wcel dvdsmul1 syl2anc nbrne1 zmulcld
-      necomd zred lttri2d mpbid ) ABCDIJZKBUGLMUGBLMNAUGBACUGOMZCBOMPUGBKACQRDQ
-      RUHFGCDSTHCUGBOUATUCABUGEAUGACDFGUBUDUEUF $.
-  $}
-
-  ${
-    prmndvdsmuld.1 $e |- ( ph -> P e. Prime ) $.
-    prmndvdsmuld.2 $e |- ( ph -> A e. ZZ ) $.
-    prmndvdsmuld.3 $e |- ( ph -> B e. ZZ ) $.
-    prmndvdsmuld.4 $e |- ( ph -> -. P || A ) $.
-    prmndvdsmuld.5 $e |- ( ph -> -. P || B ) $.
-    $( A prime does not divide a product of two integers it does not divide.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    prmndvdsmuld $p |- ( ph -> -. P || ( A x. B ) ) $=
-      ( cmul co cdvds wbr wo wn ioran sylanbrc cprime wcel cz wb syl3anc mtbird
-      euclemma ) ADBCJKLMZDBLMZDCLMZNZAUFOUGOUHOHIUFUGPQADRSBTSCTSUEUHUAEFGDBCU
-      DUBUC $.
-  $}
-
-  ${
-    oddprmquarterd.1 $e |- ( ph -> P e. ( Prime \ { 2 } ) ) $.
-    oddprmquarterd.2 $e |- ( ph -> -. 2 || ( ( P - 1 ) / 2 ) ) $.
-    $( For an odd prime ` P ` , if ` ( ( P - 1 ) / 2 ) ` is odd, then
-       ` ( ( P + 1 ) / 4 ) ` is a positive integer.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    oddprmquarterd $p |- ( ph -> ( ( P + 1 ) / 4 ) e. NN ) $=
-      ( c4 c1 caddc co cdvds wbr cdiv cn wcel c2 cmul cz wb syl mpbid 2z cprime
-      cmin wn csn cdif oddprm nnzd oddp1even peano2zd a1i dvdscmul mp3an2i wceq
-      mpd 2t2e4 gausslemma2dlem0a nncnd halfpre2p1d 3brtr3d peano2nnd nndivdvds
-      wi 4nn sylancl ) AEBFGHZIJZVEEKHLMZANNOHZNBFUBHNKHZFGHZOHZEVEIANVJIJZVHVK
-      IJZANVIIJUCZVLDAVIPMVNVLQAVIABUANUDUEMVILMCBUFRUGZVIUHRSNPMZAVJPMVPVLVMVB
-      TAVIVOUIVPATUJNNVJUKULUNVHEUMAUOUJABABABCUPZUQURUSAVELMELMVFVGQABVQUTVCVE
-      EVAVDS $.
-  $}
-
-  ${
-    prmgt3factsd.1 $e |- ( ph -> P e. Prime ) $.
-    prmgt3factsd.2 $e |- ( ph -> 3 < P ) $.
-    $( A prime above three is odd and is not divisible by three.  (Contributed
-       by Zhi Wang, 17-Oct-2026.) $)
-    prmgt3factsd $p |- ( ph -> ( P e. ( Prime \ { 2 } ) /\ -. 3 || P ) ) $=
-      ( cprime c2 csn cdif c3 cdvds wbr wn cn 2nn a1i c1 clt nnred prmintndvdsd
-      wcel 1lt2 3nn prmnn syl 2lt3 lttrd nnoddn2prmb sylanbrc 1lt3 jca ) ABEFGH
-      TZIBJKLABETZFBJKLUKCABFCFMTANOZPFQKAUAOAFIBAFUMRAIIMTAUBOZRABAULBMTCBUCUD
-      RFIQKAUEODUFSBUGUHABICUNPIQKAUIODSUJ $.
-  $}
-
-  ${
-    prmgt3ndvds23d.1 $e |- ( ph -> P e. Prime ) $.
-    prmgt3ndvds23d.2 $e |- ( ph -> 3 < P ) $.
-    $( A prime greater than three divides neither two nor three.  (Contributed
-       by Zhi Wang, 20-Oct-2026.) $)
-    prmgt3ndvds23d $p |- ( ph -> ( -. P || 2 /\ -. P || 3 ) ) $=
-      ( c2 cdvds wbr wn c3 cn wcel c1 cfzo co nnred elfzo1 syl3anbrc fzo1ndvdsd
-      clt a1i 2nn cprime prmnn syl 3nn 2lt3 lttrd jca ) ABEFGHBIFGHAEBAEJKZBJKZ
-      EBSGELBMNZKUIAUATZABUBKUJCBUCUDZAEIBAEULOAIIJKZAUETZOABUMOEISGAUFTDUGBEPQ
-      RAIBAUNUJIBSGIUKKUOUMDBIPQRUH $.
-  $}
-
-  ${
     modprminvmuld.1 $e |- R = ( ( A ^ ( P - 2 ) ) mod P ) $.
     modprminvmuld.2 $e |- ( ph -> P e. Prime ) $.
     modprminvmuld.3 $e |- ( ph -> A e. ZZ ) $.
@@ -883478,230 +883871,6 @@ $)
       NZBMNCBUCRUFVPVSUGGHJBCDFUDUHZUIUJZISAVQEKLZCOLQEKLZCOLVMVNAVQQEECABDHWBS
       AUSIIACAVTCUKNGCULUMZUNAVRQQCOLZAVPVSWAUOACUPNQCUQRZWFQPACWEURAVTWGGCUTUM
       CVIVAVBAVNVCVDAWCVLCOABDEABHTADWBTAEITZVEVFAWDECOAEWHVGVFVHVJ $.
-  $}
-
-  ${
-    ndvdsmodcongd.1 $e |- ( ph -> P e. NN ) $.
-    ndvdsmodcongd.2 $e |- ( ph -> A e. ZZ ) $.
-    ndvdsmodcongd.3 $e |- ( ph -> B e. ZZ ) $.
-    ndvdsmodcongd.4 $e |- ( ph -> ( A mod P ) = ( B mod P ) ) $.
-    ndvdsmodcongd.5 $e |- ( ph -> -. P || A ) $.
-    $( Nondivisibility by a positive modulus is preserved under congruence.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    ndvdsmodcongd $p |- ( ph -> -. P || B ) $=
-      ( cdvds wbr cmo co cc0 wceq wcel cz wb dvdsval3 syl2anc cn eqeq1d mtbird
-      mtbid ) ADCJKZCDLMZNOZABDLMZNOZUGADBJKZUIIADUAPZBQPUJUIREFDBSTUDAUHUFNHUB
-      UDAUKCQPUEUGREGDCSTUC $.
-  $}
-
-
-  ${
-    mod3dblp1d.1 $e |- ( ph -> Q e. ZZ ) $.
-    mod3dblp1d.2 $e |- ( ph -> ( Q mod 3 ) = 1 ) $.
-    $( If an integer ` Q ` has remainder one modulo three, then
-       ` ( ( 2 x. Q ) + 1 ) ` is divisible by three.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
-    mod3dblp1d $p |- ( ph -> 3 || ( ( 2 x. Q ) + 1 ) ) $=
-      ( c3 c1 caddc co c2 cmul cdvds 1zzd cmo cr wcel clt wbr wceq 3re eqtr4d
-      a1i 1lt3 1mod sylancl mod3eqsumd zcnd 1cnd add32d 2timesd oveq1d breqtrd
-      ) AEBFGHBGHZIBJHZFGHZKABFCALABEMHFFEMHZDAENOZFEPQUOFRUPASUAUBEUCUDTUEAULB
-      BGHZFGHUNABFBABCUFZAUGURUHAUMUQFGABURUIUJTUK $.
-  $}
-
-  ${
-    mod3dblm1d.1 $e |- ( ph -> Q e. ZZ ) $.
-    mod3dblm1d.2 $e |- ( ph -> ( Q mod 3 ) = 2 ) $.
-    $( If an integer ` Q ` has remainder two modulo three, then
-       ` ( ( 2 x. Q ) - 1 ) ` is divisible by three.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
-    mod3dblm1d $p |- ( ph -> 3 || ( ( 2 x. Q ) - 1 ) ) $=
-      ( c3 c2 cmul co c1 cneg caddc cmin cdvds 1zzd znegcld cmo cn wcel breqtrd
-      eqtr4d wceq 3nn m1modnnsub1 mp1i 3m1e2 eqtrdi mod3eqsumd zcnd 1cnd negcld
-      add32d 2timesd oveq1d 2cnd mulcld negsubd ) AEFBGHZIJZKHZUQILHMAEBURKHBKH
-      ZUSMABURCAIANOABEPHFUREPHZDAVAEILHZFEQRVAVBUAAUBEUCUDUEUFTUGAUTBBKHZURKHU
-      SABURBABCUHZAIAUIZUJVDUKAUQVCURKABVDULUMTSAUQIAFBAUNVDUOVEUPS $.
-  $}
-
-  ${
-    odd2adjacentd.1 $e |- ( ph -> Q e. ZZ ) $.
-    $( The integers adjacent to an even integer are odd.  (Contributed by Zhi
-       Wang, 20-Oct-2026.) $)
-    odd2adjacentd $p |- ( ph -> ( -. 2 || ( ( 2 x. Q ) - 1 ) /\ -. 2 || ( ( 2
-      x. Q ) + 1 ) ) ) $=
-      ( c2 cmul co c1 cmin cdvds wn caddc cz wcel wceq eqid 2teven sylancl zcnd
-      wbr 2z a1i zmulcld 1zzd npcand breqtrrd zsubcld oddp1even syl 2tp1odd jca
-      wb mpbird ) ADDBEFZGHFZISJZDUMGKFZISJZAUODUNGKFZISZADUMURIABLMZUMUMNDUMIS
-      CUMOBUMPQAUMGAUMADBDLMATUACUBZRAGAUCZRUDUEAUNLMUOUSUKAUMGVAVBUFUNUGUHULAU
-      TUPUPNUQCUPOBUPUIQUJ $.
-  $}
-
-  ${
-    fldivp1widthd.1 $e |- ( ph -> P e. NN ) $.
-    fldivp1widthd.2 $e |- ( ph -> N e. NN ) $.
-    fldivp1widthd.3 $e |- ( ph -> 1 < N ) $.
-    $( The floor of ` ( P / N ) ` plus one is a positive integer at most
-       ` P ` , and its product with ` N ` exceeds ` P ` , for positive integers
-       ` P ` and ` N ` with ` 1 < N ` .  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    fldivp1widthd $p |- ( ph -> ( ( ( |_ ` ( P / N ) ) + 1 ) e. NN /\ ( (
-    |_ ` ( P / N ) ) + 1 ) <_ P /\ P < ( N x. ( ( |_ ` ( P / N ) ) + 1 ) )
-    ) ) $=
-      ( cdiv co cfl cfv cn wcel wbr clt cn0 syl2anc syl nnrpd nnred mpbid caddc
-      c1 cle cmul nnnn0d fldivnn0 nn0p1nn rpdivgt1ltd cr cz nndivred nnzd flcld
-      wb fllt zltp1led flltp1 ltdivmuld 3jca ) ABCGHZIJZUBUAHZKLZVBBUCMZBCVBUDH
-      NMZAVAOLZVCABOLCKLVFABDUEEBCUFPVAUGQZAVABNMZVDAUTBNMZVHABCABDRACERZFUHAUT
-      UILZBUJLVIVHUNABCABDSZEUKZABDULZUTBUOPTAVABAUTVMUMVNUPTAUTVBNMZVEAVKVOVMU
-      TUQQABVBCVLAVBVGSVJURTUS $.
-  $}
-
-  ${
-    fldivp1mulbndd.1 $e |- ( ph -> P e. NN ) $.
-    fldivp1mulbndd.2 $e |- ( ph -> N e. NN ) $.
-    fldivp1mulbndd.3 $e |- ( ph -> -. N || P ) $.
-    fldivp1mulbndd.4 $e |- ( ph -> D e. NN ) $.
-    fldivp1mulbndd.5 $e |- ( ph -> D < ( ( |_ ` ( P / N ) ) + 1 ) ) $.
-    $( An integer below the floor quotient plus one has product strictly below
-       the numerator when divisibility is excluded.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    fldivp1mulbndd $p |- ( ph -> ( N x. D ) < P ) $=
-      ( cmul co clt wbr cdiv cfl nnred cz wcel nnzd mpbird cfv nndivred zred c1
-      flcld cle caddc wb zleltp1 syl2anc cdvds wn nnne0d fldivndvdslt syl121anc
-      cc0 wne lelttrd nnrpd ltmuldiv2d ) ADBJKCLMBCDNKZLMABVAOUAZVAABHPZAVBAVAA
-      CDACEPZFUBZUEZUCVEABVBUFMZBVBUDUGKLMZIABQRVBQRVGVHUHABHSVFBVBUIUJTACQRDQR
-      DUPUQDCUKMULVBVALMACESADFSADFUMGCDUNUOURABCDVCVDADFUSUTT $.
-  $}
-
-  ${
-    oddcentralrefld.1 $e |- ( ph -> P e. NN ) $.
-    oddcentralrefld.2 $e |- ( ph -> -. 2 || P ) $.
-    oddcentralrefld.3 $e |- ( ph -> A e. ( 1 ..^ P ) ) $.
-    oddcentralrefld.4 $e |- ( ph -> -. ( 2 x. A ) < P ) $.
-    $( Reflecting an upper-half nonzero residue gives a positive central
-       representative for an odd modulus.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
-    oddcentralrefld $p |- ( ph -> ( ( P - A ) e. NN /\ ( 2 x. ( P - A ) ) < P
-    ) ) $=
-      ( cmin co cn wcel c2 cmul clt wbr sselid a1i recnd nnred remulcld c1 cfzo
-      fzossnn fzo1subd cr subdid cz 2z nnzd ndvdsmultrid olcnd ltsub2dd eqbrtrd
-      2re 2timesd mvrraddd breqtrd jca ) ACBHIZJKLUSMIZCNOAUACUBIZJUSCUCZABCFUD
-      PAUTLCMIZCHIZCNAUTVCLBMIZHIVDNALCBALLUEKAUNQZRACACDSZRZABABAVAJBVBFPZSZRU
-      FACVEVCVGALBVFVJTALCVFVGTACVENOVECNOACLBVGLUGKAUHQABVIUIEUJGUKULUMAVCCCVH
-      VHACVHUOUPUQUR $.
-  $}
-
-  ${
-    fldiv2boundsd.1 $e |- ( ph -> P e. RR ) $.
-    fldiv2boundsd.2 $e |- ( ph -> N e. NN ) $.
-    fldiv2boundsd.3 $e |- ( ph -> K e. ZZ ) $.
-    fldiv2boundsd.4 $e |- ( ph -> ( 2 x. N ) < P ) $.
-    fldiv2boundsd.5 $e |- ( ph -> P < ( K x. N ) ) $.
-    $( If ` P ` is above twice the positive integer ` N ` and below
-       ` ( K x. N ) ` , the floor of ` ( P / N ) ` is a positive integer at
-       least two and less than the integer ` K ` .  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
-    fldiv2boundsd $p |- ( ph -> ( ( |_ ` ( P / N ) ) e. NN /\ 2 <_ ( |_ ` ( P
-    / N ) ) /\ ( |_ ` ( P / N ) ) < K ) ) $=
-      ( co wcel c2 cle wbr clt cz cc0 cr a1i mpbid cdiv cfl nndivred flcld 0red
-      cfv cn zred 2pos cmul nnrpd ltmuldivd ltled wb flge syl2anc ltletrd elnnz
-      2re 2z sylanbrc ltdivmul2d mpbird fllt 3jca ) ABDUAJZUBUFZUGKZLVGMNZVGCON
-      ZAVGPKQVGONVHAVFABDEFUCZUDZAQLVGAUELRKAUSSZAVGVLUHQLONAUISALVFMNZVIALVFVM
-      VKALDUJJBONLVFONHALBDVMEADFUKZULTUMAVFRKZLPKZVNVIUNVKVQAUTSVFLUOUPTZUQVGU
-      RVAVRAVFCONZVJAVSBCDUJJONIABCDEACGUHVOVBVCAVPCPKVSVJUNVKGVFCVDUPTVE $.
-  $}
-
-  ${
-    nndivmulbndd.1 $e |- ( ph -> A e. NN ) $.
-    nndivmulbndd.2 $e |- ( ph -> B e. NN ) $.
-    nndivmulbndd.3 $e |- ( ph -> Q e. RR ) $.
-    nndivmulbndd.4 $e |- ( ph -> B || A ) $.
-    nndivmulbndd.5 $e |- ( ph -> A < ( B x. Q ) ) $.
-    $( If the positive integer ` B ` divides the positive integer ` A ` and
-       ` A < ( B x. Q ) ` , then ` ( A / B ) ` is a positive integer below
-       ` Q ` , and multiplying it by ` B ` recovers ` A ` .  (Contributed by
-       Zhi Wang, 20-Oct-2026.) $)
-    nndivmulbndd $p |- ( ph -> ( ( A / B ) e. NN /\ ( A / B ) < Q /\ ( B x. (
-      A / B ) ) = A ) ) $=
-      ( cdiv co cn wcel clt wbr cmul wceq cdvds wb nncnd nndivdvds mpbid mpbird
-      syl2anc nnred nnrpd ltdivmuld nnne0d divcan2d 3jca ) ABCJKZLMZUKDNOZCUKPK
-      BQACBROZULHABLMCLMUNULSEFBCUAUDUBAUMBCDPKNOIABDCABEUEGACFUFUGUCABCABETACF
-      TACFUHUIUJ $.
-  $}
-
-  ${
-    nn2adjacentd.1 $e |- ( ph -> Q e. NN ) $.
-    nn2adjacentd.2 $e |- ( ph -> 1 < Q ) $.
-    $( For a positive integer ` Q ` greater than one, both odd integers
-       ` ( ( 2 x. Q ) - 1 ) ` and ` ( ( 2 x. Q ) + 1 ) ` are positive and less
-       than ` ( 3 x. Q ) ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    nn2adjacentd $p |- ( ph -> ( ( ( ( 2 x. Q ) - 1 ) e. NN /\ ( ( 2 x. Q ) -
-      1 ) < ( 3 x. Q ) ) /\ ( ( ( 2 x. Q ) + 1 ) e. NN /\ ( ( 2 x. Q ) + 1 )
-      < ( 3 x. Q ) ) ) ) $=
-      ( c2 cmul co c1 cmin cn wcel c3 clt wbr caddc wa 1nn a1i nnred nncnd 2lt3
-      2nn nnmulcld nnnn0d nn0ge0d nnge1d lemulge12d ltletrd nnsubd 3nn remulcld
-      ltm1d nnrpd ltmul1dd lttrd peano2nnd ltadd2dd adddirp1d 2p1e3 eqtr3di jca
-      oveq1i breqtrd jca31 ) AEBFGZHIGZJKVFLBFGZMNVEHOGZJKZVHVGMNZPAHVEHJKAQRZA
-      EBEJKAUBRZCUCZAHBVEAHVKSZABCSZAVEVMSZDABEVOAEVLSZABABCUDUEAEVLUFUGUHUIZAV
-      FVEVGAVFVRSVPALBALLJKAUJRSZVOUKAVEVPULAELBVQVSABCUMELMNAUARUNUOAVIVJAVEVM
-      UPAVHVEBOGZVGMAHBVEVNVOVPDUQAEHOGZBFGVTVGAEBAEVLTABCTURWALBFUSVBUTVCVAVD
-      $.
-  $}
-
-  ${
-    adjacentstripd.1 $e |- ( ph -> T e. NN ) $.
-    adjacentstripd.2 $e |- ( ph -> N e. NN ) $.
-    adjacentstripd.3 $e |- ( ph -> P e. NN ) $.
-    adjacentstripd.4 $e |- ( ph -> 1 < T ) $.
-    adjacentstripd.5 $e |- ( ph -> ( ( T - 1 ) x. N ) < P ) $.
-    adjacentstripd.6 $e |- ( ph -> P < ( T x. N ) ) $.
-    $( When ` P ` lies strictly between ` ( ( T - 1 ) x. N ) ` and
-       ` ( T x. N ) ` , the differences ` ( ( ( T + 1 ) x. N ) - P ) ` and
-       ` ( P - ( ( T - 1 ) x. N ) ) ` are positive integers below
-       ` ( 2 x. N ) ` and ` N ` , respectively.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
-    adjacentstripd $p |- ( ph -> ( ( ( ( ( T + 1 ) x. N ) - P ) e. NN /\ ( (
-      ( T + 1 ) x. N ) - P ) < ( 2 x. N ) ) /\ ( ( P - ( ( T - 1 ) x. N ) )
-      e. NN /\ ( P - ( ( T - 1 ) x. N ) ) < N ) ) ) $=
-      ( c1 co cmul cmin cn wcel clt nnmulcld nnred nnsubd caddc c2 wa peano2nnd
-      wbr nnrpd ltp1d ltmul1dd lttrd ltsub2dd wceq nncnd muladjacentdifd simpld
-      1nn a1i breqtrd ltsub1dd simprd jca jca31 ) ACKUALZDMLZBNLZOPVDUBDMLZQUEB
-      CKNLZDMLZNLZOPZVHDQUEZUCABVCGAVBDACEUDZFRZABCDMLZVCABGSZAVMACDEFRSZAVCVLS
-      ZJACVBDACESZAVBVKSADFUFACVQUGUHUITAVDVCVGNLZVEQAVGBVCAVGAVFDAKCKOPAUOUPEH
-      TFRZSZVNVPIUJAVRVEUKZVMVGNLZDUKZACDACEULADFULUMZUNUQAVIVJAVGBVSGITAVHWBDQ
-      ABVMVGVNVOVTJURAWAWCWDUSUQUTVA $.
-  $}
-
-  ${
-    narrowstriphalvesd.1 $e |- ( ph -> Q e. NN ) $.
-    narrowstriphalvesd.2 $e |- ( ph -> N e. NN ) $.
-    narrowstriphalvesd.3 $e |- ( ph -> P e. NN ) $.
-    narrowstriphalvesd.4 $e |- ( ph -> 1 < Q ) $.
-    narrowstriphalvesd.5 $e |- ( ph -> -. 2 || N ) $.
-    narrowstriphalvesd.6 $e |- ( ph -> -. 2 || P ) $.
-    narrowstriphalvesd.7 $e |- ( ph -> ( ( ( 2 x. Q ) - 1 ) x. N ) < P ) $.
-    narrowstriphalvesd.8 $e |- ( ph -> P < ( ( 2 x. Q ) x. N ) ) $.
-    $( For odd positive integers ` P ` and ` N ` satisfying the displayed
-       bounds, half of each difference ` ( ( ( ( 2 x. Q ) + 1 ) x. N ) - P ) `
-       and ` ( P - ( ( ( 2 x. Q ) - 1 ) x. N ) ) ` is a positive integer
-       smaller than ` N ` .  Doubling each half recovers its defining
-       difference.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    narrowstriphalvesd $p |- ( ph -> ( ( ( ( ( ( ( 2 x. Q ) + 1 ) x. N ) - P
-      ) / 2 ) e. NN /\ ( ( ( ( ( 2 x. Q ) + 1 ) x. N ) - P ) / 2 ) < N /\ ( 2
-      x. ( ( ( ( ( 2 x. Q ) + 1 ) x. N ) - P ) / 2 ) ) = ( ( ( ( 2 x. Q ) + 1
-      ) x. N ) - P ) ) /\ ( ( ( P - ( ( ( 2 x. Q ) - 1 ) x. N ) ) / 2 ) e. NN
-      /\ ( ( P - ( ( ( 2 x. Q ) - 1 ) x. N ) ) / 2 ) < N /\ ( 2 x. ( ( P - (
-      ( ( 2 x. Q ) - 1 ) x. N ) ) / 2 ) ) = ( P - ( ( ( 2 x. Q ) - 1 ) x. N )
-      ) ) ) ) $=
-      ( c2 cmul co cn wcel wbr nnred cdvds caddc cmin cdiv clt wceq w3a 2nn a1i
-      c1 wa 1red nnnn0d nn0ge0d nnge1d lemulge12d ltletrd adjacentstripd simpld
-      nnmulcld cz wn nnzd zmulcld cprime 2prm odd2adjacentd simprd prmndvdsmuld
-      peano2zd omoe syl22anc nndivmulbndd 1zzd zsubcld remulcld jca ) AMCNOZUIU
-      AOZDNOZBUBOZMUCOZPQWADUDRMWANOVTUEUFBVQUIUBOZDNOZUBOZMUCOZPQWEDUDRMWENOWD
-      UEUFAVTMDAVTPQZVTMDNOZUDRZAWFWHUJZWDPQZWDDUDRZUJZABVQDAMCMPQAUGUHZEUSZFGA
-      UICVQAUKACESZAVQWNSHACMWOAMWMSZACACEULUMAMWMUNZUOUPKLUQZURZURWMADFSZAVSUT
-      QMVSTRVABUTQZMBTRVAZMVTTRAVRDAVQAVQWNVBZVIZADFVBZVCAVRDMMVDQAVEUHZXDXEAMW
-      BTRVAZMVRTRVAZACACEVBVFZVGIVHABGVBZJVSBVJVKAWFWHWSVGVLAWDMDAWJWKAWIWLWRVG
-      ZURZWMWTAXAXBWCUTQMWCTRVAMWDTRXJJAWBDAVQUIXCAVMVNZXEVCAWBDMXFXMXEAXGXHXIU
-      RIVHBWCVJVKAWDDWGAWDXLSWTAMDWPWTVOAWJWKXKVGADMWTWPADADFULUMWQUOUPVLVP $.
   $}
 
   ${
@@ -883892,362 +884061,63 @@ $)
   $}
 
   ${
-    evenadjacentlod.1 $e |- ( ph -> P e. NN ) $.
-    evenadjacentlod.2 $e |- ( ph -> N e. NN ) $.
-    evenadjacentlod.3 $e |- ( ph -> Q e. NN ) $.
-    evenadjacentlod.4 $e |- ( ph -> T e. NN ) $.
-    evenadjacentlod.5 $e |- ( ph -> R e. NN ) $.
-    evenadjacentlod.6 $e |- ( ph -> R < N ) $.
-    evenadjacentlod.7 $e |- ( ph -> P = ( ( T x. N ) + R ) ) $.
-    evenadjacentlod.8 $e |- ( ph -> T < ( ( 2 x. Q ) - 1 ) ) $.
-    evenadjacentlod.9 $e |- ( ph -> 2 || T ) $.
-    $( For the displayed quotient and remainder with even ` T ` , the positive
-       integer ` ( T / 2 ) ` is below ` Q ` , and twice its product with ` N `
-       is congruent to ` -u R ` modulo ` P ` .  This signed representative is a
-       nonzero integer of absolute value below ` N ` .  (Contributed by Zhi
-       Wang, 20-Oct-2026.) $)
-    evenadjacentlod $p |- ( ph -> ( ( ( T / 2 ) e. NN /\ ( T / 2 ) < Q ) /\ (
-      -u R e. ZZ /\ ( abs ` -u R ) e. NN /\ ( abs ` -u R ) < N ) /\ ( ( ( 2
-      x. ( T / 2 ) ) x. N ) mod P ) = ( -u R mod P ) ) ) $=
-      ( c2 co wcel cmul cmo cdiv cn clt wbr wa cneg cabs cfv w3a wceq 2nn nnred
-      cz a1i c1 caddc peano2nnd cr 2re remulcld ltp1d cmin 1red ltaddsubd lttrd
-      mpbird nndivmulbndd 3simpa nnnegabsboundd simp3d oveq1d nnrpd modeqmodmin
-      syl syl2anc nncnd mulcld negsubdi2d mvrladdd negeqd eqtr3d 3eqtrd 3jca
-      crp ) AEPUAQZUBRZWECUCUDZUEZDUFZUMRWIUGUHZUBRWJFUCUDUIPWESQZFSQZBTQZWIBTQ
-      ZUJAWFWGWKEUJZUIWHAEPCJPUBRAUKUNACIULZOAEEUOUPQZPCSQZAEJULZAWQAEJUQULAPCP
-      URRAUSUNWPUTZAEWSVAAWQWRUCUDEWRUOVBQUCUDNAEUOWRWSAVCWTVDVFVEVGZWFWGWOVHVN
-      ADFKLVIAWMEFSQZBTQZXBBVBQZBTQZWNAWLXBBTAWKEFSAWFWGWOXAVJVKVKAXBURRBWDRXCX
-      EUJAEFWSAFHULUTABGVLXBBVMVOAXDWIBTABXBVBQZUFXDWIABXBABGVPAEFAEJVPAFHVPVQZ
-      VRAXFDABXBDXGADKVPMVSVTWAVKWBWC $.
+    $d A p $.
+    $( The primes with nonzero valuation at a nonzero rational are exactly the
+       prime divisors of its absolute numerator or denominator.  (Contributed
+       by Zhi Wang, 27-Oct-2026.) $)
+    pcqsuppnumden $p |- ( A e. ( QQ \ { 0 } ) ->
+      { p e. Prime | ( p pCnt A ) =/= 0 } =
+      ( { p e. Prime | p || ( abs ` ( numer ` A ) ) } u.
+        { p e. Prime | p || ( denom ` A ) } ) ) $=
+      ( cq cc0 wcel cpc co cprime crab cfv wbr wa wceq wn cz adantr syl syl2anc
+      cmin c1 csn cdif cv wne cnumer cabs cdvds cdenom wo cun cgcd cle simpr cn
+      eldifi qnumcl qnumne0 jca nnabscl nnzd qdencl pccld nn0red nn0cnd syl3anc
+      cdiv pcdiv qeqnumdivden oveq2d pcabs oveq1d 3eqtr4d eqtr3d subeq0d pcgcd1
+      eqled syl31anc gcdabs1 qnumdencoprm eqtrd pc1 simprl simprr oveq12d 0m0e0
+      zq eqtrdi impbida wb pceq0 anbi12d ioran bitrd necon2abid bicomd rabbidva
+      bitr4di unrab eqtr4di ) ACDUAZUBEZBUCZAFGZDUDZBHIXBAUEJZUFJZUGKZXBAUHJZUG
+      KZUIZBHIXGBHIXIBHIUJXAXDXJBHXAXBHEZLZXJXDXLXJXCDXLXCDMZXBXFFGZDMZXBXHFGZD
+      MZLZXJNZXLXMXRXLXMLZXOXQXTXBXFXHUKGZFGZXNDXTXKXFOEXHOEZXNXPULKYBXNMXLXKXM
+      XAXKUMZPZXTXFXLXFUNEZXMXAYFXKXAXEOEZXEDUDZLZYFXAYGYHXAACEZYGACWTUOZAUPQZA
+      UQURZXEUSQPZPZUTXTXHXLXHUNEZXMXAYPXKXAYJYPYKAVAQZPZPZUTXTXNXPXTXNXTXBXFYE
+      YOVBZVCXTXNXPXTXNYTVDXTXPXTXBXHYEYSVBVDXTXCXNXPSGZDXLXCUUAMZXMXLXBXEXHVFG
+      ZFGZXBXEFGZXPSGZXCUUAXLXKYIYPUUDUUFMYDXAYIXKYMPYRXEXHXBVGVEXLAUUCXBFXAAUU
+      CMZXKXAYJUUGYKAVHQPVIXLXNUUEXPSXLXKXECEZXNUUEMYDXAUUHXKXAYGUUHYLXEWFQPXEX
+      BVJRVKVLZPXLXMUMVMVNZVPXFXHXBVOVQXTYBXBTFGZDXTYATXBFXLYATMZXMXAUULXKXAYAX
+      EXHUKGZTXAYGYCYAUUMMYLXAXHYQUTXHXEVRRXAYJUUMTMYKAVSQVTPPVIXTXKUUKDMYEXBWA
+      QVTVMZXTXNXPDUUJUUNVMURXLXRLZXCUUADXLUUBXRUUIPUUOUUADDSGDUUOXNDXPDSXLXOXQ
+      WBXLXOXQWCWDWEWGVTWHXLXRXGNZXINZLXSXLXOUUPXQUUQXLXKYFXOUUPWIYDYNXBXFWJRXL
+      XKYPXQUUQWIYDYRXBXHWJRWKXGXIWLWQWMWNWOWPXGXIBHWRWS $.
   $}
 
   ${
-    evenadjacenthid.1 $e |- ( ph -> P e. NN ) $.
-    evenadjacenthid.2 $e |- ( ph -> N e. NN ) $.
-    evenadjacenthid.3 $e |- ( ph -> Q e. NN ) $.
-    evenadjacenthid.4 $e |- ( ph -> T e. NN ) $.
-    evenadjacenthid.5 $e |- ( ph -> R e. NN ) $.
-    evenadjacenthid.6 $e |- ( ph -> R < N ) $.
-    evenadjacenthid.7 $e |- ( ph -> P = ( ( T x. N ) + R ) ) $.
-    evenadjacenthid.8 $e |- ( ph -> T < ( ( 2 x. Q ) - 1 ) ) $.
-    evenadjacenthid.9 $e |- ( ph -> -. 2 || T ) $.
-    $( For the displayed quotient and remainder with odd ` T ` , the positive
-       integer ` ( ( T + 1 ) / 2 ) ` is below ` Q ` , and twice its product
-       with ` N ` is congruent to ` ( N - R ) ` modulo ` P ` .  This signed
-       representative is a nonzero integer of absolute value below ` N ` .
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    evenadjacenthid $p |- ( ph -> ( ( ( ( T + 1 ) / 2 ) e. NN /\ ( ( T + 1 )
-      / 2 ) < Q ) /\ ( ( N - R ) e. ZZ /\ ( abs ` ( N - R ) ) e. NN /\ ( abs
-      ` ( N - R ) ) < N ) /\ ( ( ( 2 x. ( ( T + 1 ) / 2 ) ) x. N ) mod P ) =
-      ( ( N - R ) mod P ) ) ) $=
-      ( co c2 wcel wbr cmul c1 caddc cdiv cn clt wa cmin cabs cfv w3a peano2nnd
-      cz cmo wceq 2nn a1i nnred cdvds wn nnzd oddp1even syl mpbid 1red remulcld
-      2re ltaddsubd mpbird nndivmulbndd simp1d simp2d jca nnsubabsboundd simp3d
-      wb cr oveq1d crp zmulcld zred nnrpd modeqmodmin syl2anc adddirp1d oveq12d
-      nncnd mulcld pnpcand eqtrd 3eqtrd 3jca ) AEUAUBPZQUCPZUDRZWMCUESZUFFDUGPZ
-      ULRWPUHUIZUDRWQFUESUJQWMTPZFTPZBUMPZWPBUMPZUNAWNWOAWNWOWRWLUNZAWLQCAEJUKZ
-      QUDRAUOUPACIUQZAQEURSUSZQWLURSZOAEULRXEXFVOAEJUTEVAVBVCAWLQCTPZUESEXGUAUG
-      PUESNAEUAXGAEJUQAVDAQCQVPRAVFUPXDVEVGVHVIZVJAWNWOXBXHVKVLADFHKLVMAWTWLFTP
-      ZBUMPZXIBUGPZBUMPZXAAWSXIBUMAWRWLFTAWNWOXBXHVNVQVQAXIVPRBVRRXJXLUNAXIAWLF
-      AWLXCUTAFHUTVSVTABGWAXIBWBWCAXKWPBUMAXKEFTPZFUBPZXMDUBPZUGPWPAXIXNBXOUGAE
-      FAEJWFZAFHWFZWDMWEAXMFDAEFXPXQWGXQADKWFWHWIVQWJWK $.
-  $}
-
-  ${
-    $d D d $.  $d K d k $.  $d N d k $.  $d P d k $.  $d Q d k $.
-    oddextshortexd.1 $e |- ( ph -> K e. NN ) $.
-    oddextshortexd.2 $e |- ( ph -> D e. ZZ ) $.
-    oddextshortexd.3 $e |- ( ph -> ( ( K < Q /\ ( abs ` D ) e. NN /\ ( abs `
-      D ) < N ) /\ ( ( ( ( 2 x. K ) x. N ) mod P ) = ( D mod P ) \/ ( ( ( 3
-      x. K ) x. N ) mod P ) = ( ( 2 x. D ) mod P ) ) ) ) $.
-    $( Introduce bounded integer witnesses for the signed congruence
-       alternatives used in ~ oddextcertd .  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
-    oddextshortexd $p |- ( ph -> E. k e. NN E. d e. ZZ ( ( k < Q /\ ( abs ` d
-      ) e. NN /\ ( abs ` d ) < N ) /\ ( ( ( ( 2 x. k ) x. N ) mod P ) = ( d
-      mod P ) \/ ( ( ( 3 x. k ) x. N ) mod P ) = ( ( 2 x. d ) mod P ) ) ) )
-      $=
-      ( clt wbr cn c2 cmul co cmo wceq oveq1d cv cabs cfv w3a c3 wo wa cz breq1
-      wcel 3anbi1d oveq2 eqeq1d orbi12d fveq2 eleq1d breq1d 3anbi23d 2rspcedvdw
-      anbi12d oveq1 eqeq2d ) AEUAZDLMZHUAZUBUCZNUJZVFGLMZUDZOVCPQZGPQZCRQZVECRQ
-      ZSZUEVCPQZGPQZCRQZOVEPQZCRQZSZUFZUGFDLMZVGVHUDZOFPQZGPQZCRQZVMSZUEFPQZGPQ
-      ZCRQZVSSZUFZUGWBBUBUCZNUJZWMGLMZUDZWFBCRQZSZWJOBPQZCRQZSZUFZUGEHFBNUHVCFS
-      ZVIWCWAWLXCVDWBVGVHVCFDLUIUKXCVNWGVTWKXCVLWFVMXCVKWECRXCVJWDGPVCFOPULTTUM
-      XCVQWJVSXCVPWICRXCVOWHGPVCFUEPULTTUMUNUTVEBSZWCWPWLXBXDVGWNVHWOWBXDVFWMNV
-      EBUBUOZUPXDVFWMGLXEUQURXDWGWRWKXAXDVMWQWFVEBCRVAVBXDVSWTWJXDVRWSCRVEBOPUL
-      TVBUNUTIJKUS $.
-  $}
-
-  ${
-    $d N d k $.  $d P d k $.  $d Q d k $.
-    oddextfarcertd.1 $e |- ( ph -> P e. NN ) $.
-    oddextfarcertd.2 $e |- ( ph -> N e. NN ) $.
-    oddextfarcertd.3 $e |- ( ph -> Q e. NN ) $.
-    oddextfarcertd.4 $e |- ( ph -> -. N || P ) $.
-    oddextfarcertd.5 $e |- ( ph -> ( 2 x. N ) < P ) $.
-    oddextfarcertd.6 $e |- ( ph -> P < ( ( ( 2 x. Q ) - 1 ) x. N ) ) $.
-    $( When ` P ` lies strictly between ` ( 2 x. N ) ` and
-       ` ( ( ( 2 x. Q ) - 1 ) x. N ) ` and is not divisible by ` N ` , the
-       bounded signed congruence witnesses of ~ oddextcertd exist.  An adjacent
-       even multiple supplies them.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    oddextfarcertd $p |- ( ph -> E. k e. NN E. d e. ZZ ( ( k < Q /\ ( abs ` d
-      ) e. NN /\ ( abs ` d ) < N ) /\ ( ( ( ( 2 x. k ) x. N ) mod P ) = ( d
-      mod P ) \/ ( ( ( 3 x. k ) x. N ) mod P ) = ( ( 2 x. d ) mod P ) ) ) )
-      $=
-      ( c2 co wbr cn wcel cmul cmo adantr cdiv cfl cfv cdvds cv clt cabs w3a c3
-      wceq wo wa cz wrex cneg cle c1 cmin nnred nnzd zmulcld 1zzd fldiv2boundsd
-      2z a1i zsubcld simp1d fzossnn zmodfzo1d sselid cr crp nnrpd modlt syl2anc
-      cfzo caddc flpmodeq eqcomd simp3d evenadjacentlod simpld simp2d 3jca orcd
-      simpr simprd jca oddextshortexd wn evenadjacenthid pm2.61dan ) AMBEUANUBU
-      CZUDOZDUEZCUFOFUEZUGUCZPQWQEUFOUHMWORNERNBSNWPBSNUJUIWORNERNBSNMWPRNBSNUJ
-      UKULFUMUNDPUNAWNULZBESNZUOZBCDWMMUANZEFWRXAPQZXACUFOZWRXBXCULZWTUMQZWTUGU
-      CZPQZXFEUFOZUHZMXARNERNBSNWTBSNUJZWRBCWSWMEABPQZWNGTAEPQZWNHTACPQZWNITAWM
-      PQZWNAXNMWMUPOZWMMCRNZUQURNZUFOZABXQEABGUSZHAXPUQAMCMUMQAVDVEACIUTVAAVBVF
-      KLVCZVGZTAWSPQZWNAUQEVPNPWSEVHABEABGUTHJVIVJZTAWSEUFOZWNABVKQZEVLQZYDXSAE
-      HVMZBEVNVOZTABWMERNWSVQNZUJZWNAYIBAYEYFYIBUJXSYGBEVRVOVSZTAXRWNAXNXOXRXTV
-      TZTAWNWFWAZVGZWBWRXEXGXHWRXDXIXJYMWCZVGWRXCXGXHUHXJUIXARNERNBSNMWTRNBSNUJ
-      ZUKWRXCXGXHWRXBXCYNWGWRXEXGXHYOWCWRXEXGXHYOVTWDWRXJYPWRXDXIXJYMVTWEWHWIAW
-      NWJZULZEWSURNZBCDWMUQVQNMUANZEFYRYTPQZYTCUFOZYRUUAUUBULZYSUMQZYSUGUCZPQZU
-      UEEUFOZUHZMYTRNERNBSNYSBSNUJZYRBCWSWMEAXKYQGTAXLYQHTAXMYQITAXNYQYATAYBYQY
-      CTAYDYQYHTAYJYQYKTAXRYQYLTAYQWFWKZVGZWBYRUUDUUFUUGYRUUCUUHUUIUUJWCZVGYRUU
-      BUUFUUGUHUUIUIYTRNERNBSNMYSRNBSNUJZUKYRUUBUUFUUGYRUUAUUBUUKWGYRUUDUUFUUGU
-      ULWCYRUUDUUFUUGUULVTWDYRUUIUUMYRUUCUUHUUIUUJVTWEWHWIWL $.
-  $}
-
-  ${
-    $d N d k $.  $d P d k $.  $d Q d k $.
-    oddextstripcertd.1 $e |- ( ph -> Q e. NN ) $.
-    oddextstripcertd.2 $e |- ( ph -> N e. NN ) $.
-    oddextstripcertd.3 $e |- ( ph -> P e. NN ) $.
-    oddextstripcertd.4 $e |- ( ph -> 1 < Q ) $.
-    oddextstripcertd.5 $e |- ( ph -> -. 2 || N ) $.
-    oddextstripcertd.6 $e |- ( ph -> -. 2 || P ) $.
-    oddextstripcertd.7 $e |- ( ph -> ( ( ( 2 x. Q ) - 1 ) x. N ) < P ) $.
-    oddextstripcertd.8 $e |- ( ph -> P < ( ( 2 x. Q ) x. N ) ) $.
-    oddextstripcertd.9 $e |- ( ph -> -. 3 || Q ) $.
-    $( For odd positive integers ` N ` and ` P ` and a positive integer ` Q `
-       greater than one and not divisible by three, if ` P ` lies strictly
-       between ` ( ( ( 2 x. Q ) - 1 ) x. N ) ` and ` ( ( 2 x. Q ) x. N ) ` ,
-       there are a positive integer ` k < Q ` and a nonzero integer ` d ` with
-       ` ( abs `` d ) < N ` satisfying one of the two displayed congruences.
-       This is the case of ~ oddextcertd proved using the odd coefficients
-       adjacent to twice ` Q ` and the halved remainders in
-       ~ narrowstriphalvesd .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    oddextstripcertd $p |- ( ph -> E. k e. NN E. d e. ZZ ( ( k < Q /\ ( abs `
-      d ) e. NN /\ ( abs ` d ) < N ) /\ ( ( ( ( 2 x. k ) x. N ) mod P ) = ( d
-      mod P ) \/ ( ( ( 3 x. k ) x. N ) mod P ) = ( ( 2 x. d ) mod P ) ) ) )
-      $=
-      ( cmo co wceq wcel cmul c3 c1 cv clt wbr cabs cfv cn w3a c2 wo wa cz wrex
-      caddc cmin cdiv nn2adjacentd simprd simpld adantr 3nn cr nnred nnzd simpr
-      a1i mod3dblp1d nndivmulbndd simp1d narrowstriphalvesd simp2d cn0 nn0absid
-      nnnn0d syl eqeltrd eqbrtrd 3jca simp3d crp zmulcld zred nnrpd modeqmodmin
-      oveq1d syl2anc eqcomd eqtrd olcd oddextshortexd mod3dblm1d nnnegabsboundd
-      jca cneg 2cnd mulneg2d negeqd zcnd negsubdi2d 3eqtrrd mod3ndvdsd mpjaodan
-      nncnd ) ACUAPQZUBRZDUCZCUDUEFUCZUFUGZUHSXIEUDUEUIUJXGTQETQBPQXHBPQRUAXGTQ
-      ETQBPQUJXHTQBPQRUKULFUMUNDUHUNXEUJRZAXFULZUJCTQZUBUOQZETQZBUPQZUJUQQZBCDX
-      MUAUQQZEFXKXQUHSZXQCUDUEZUAXQTQZXMRZXKXMUACAXMUHSZXFAYBXMUACTQZUDUEZAXLUB
-      UPQZUHSZYEYCUDUEZULZYBYDULZACGJURZUSZUTZVAUAUHSZXKVBVGACVCSZXFACGVDZVAXKC
-      ACUMSZXFACGVEZVAAXFVFVHAYDXFAYBYDYKUSVAVIZVJAXPUMSXFAXPAXPUHSZXPEUDUEZUJX
-      PTQZXORZAYSYTUUBUIZBYEETQZUPQZUJUQQZUHSZUUFEUDUEZUJUUFTQZUUERZUIZABCEGHIJ
-      KLMNVKZUTZVJZVEVAXKXSXPUFUGZUHSZUUOEUDUEZUIUJXQTQETQBPQXPBPQRZXTETQZBPQZU
-      UABPQZRZUKXKXSUUPUUQXKXRXSYAYRVLAUUPXFAUUOXPUHAXPVMSUUOXPRAXPUUNVOXPVNVPZ
-      UUNVQVAAUUQXFAUUOXPEUDUVCAYSYTUUBUUMVLVRVAVSXKUVBUURXKUUTXNBPQZUVAXKUUSXN
-      BPXKXTXMETXKXRXSYAYRVTWFWFAUVDUVARXFAUVDXOBPQZUVAAXNVCSBWASZUVDUVERAXNAXM
-      EAXMYLVEAEHVEZWBWCABIWDZXNBWEWGAXOUUABPAUUAXOAYSYTUUBUUMVTWHWFWIVAWIWJWNW
-      KAXJULZUUFWOZBCDYEUAUQQZEFUVIUVKUHSZUVKCUDUEZUAUVKTQZYERZUVIYEUACAYFXJAYF
-      YGAYHYIYJUTZUTZVAYMUVIVBVGAYNXJYOVAUVICAYPXJYQVAAXJVFWLAYGXJAYFYGUVPUSVAV
-      IZVJAUVJUMSZXJAUVSUVJUFUGZUHSZUVTEUDUEZAUUFEAUUGUUHUUJAUUCUUKUULUSZVJZAUU
-      GUUHUUJUWCVLWMZVJVAUVIUVMUWAUWBUIUJUVKTQETQBPQUVJBPQRZUVNETQZBPQZUJUVJTQZ
-      BPQZRZUKUVIUVMUWAUWBUVIUVLUVMUVOUVRVLAUWAXJAUVSUWAUWBUWEVLVAAUWBXJAUVSUWA
-      UWBUWEVTVAVSUVIUWKUWFUVIUWHUUDBPQZUWJUVIUWGUUDBPUVIUVNYEETUVIUVLUVMUVOUVR
-      VTWFWFAUWLUWJRXJAUWLUUDBUPQZBPQZUWJAUUDVCSUVFUWLUWNRAUUDAYEEAYEUVQVEUVGWB
-      ZWCUVHUUDBWEWGAUWMUWIBPAUWIUUIWOUUEWOUWMAUJUUFAWPAUUFUWDXDWQAUUIUUEAUUGUU
-      HUUJUWCVTWRABUUDABIXDAUUDUWOWSWTXAWFWIVAWIWJWNWKACYQOXBXC $.
-  $}
-
-  ${
-    $d N d k $.  $d P d k $.  $d Q d k $.
-    oddextcertd.1 $e |- ( ph -> P e. NN ) $.
-    oddextcertd.2 $e |- ( ph -> N e. NN ) $.
-    oddextcertd.3 $e |- ( ph -> Q e. NN ) $.
-    oddextcertd.4 $e |- ( ph -> 1 < Q ) $.
-    oddextcertd.5 $e |- ( ph -> ( 2 x. N ) < P ) $.
-    oddextcertd.6 $e |- ( ph -> P < ( ( 2 x. Q ) x. N ) ) $.
-    oddextcertd.7 $e |- ( ph -> -. 2 || P ) $.
-    oddextcertd.8 $e |- ( ph -> -. 2 || N ) $.
-    oddextcertd.9 $e |- ( ph -> -. 3 || Q ) $.
-    oddextcertd.10 $e |- ( ph -> -. N || P ) $.
-    $( Find a smaller positive multiplier and a nonzero integer remainder with
-       absolute value below ` N ` .  One of two signed congruences relates them
-       to the product with ` N ` , using a factor of two or three.  For a
-       multiplier greater than one and not divisible by three, these witnesses
-       supply the descent in ~ liouoddextstepd .  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
-    oddextcertd $p |- ( ph -> E. k e. NN E. d e. ZZ ( ( k < Q /\ ( abs ` d )
-      e. NN /\ ( abs ` d ) < N ) /\ ( ( ( ( 2 x. k ) x. N ) mod P ) = ( d mod
-      P ) \/ ( ( ( 3 x. k ) x. N ) mod P ) = ( ( 2 x. d ) mod P ) ) ) ) $=
-      ( cmul co wbr adantr c2 c1 cmin clt cv cabs cfv cn wcel w3a wceq c3 wo wa
-      cmo cz wrex cdvds wn simpr oddextstripcertd wne nnzd zcnd 2z zmulcld 1zzd
-      zsubcld mulcomd dvdsmul1 syl2anc nbrne1 eqnetrrd zred nnred lttri2d mpbid
-      a1i orcanai oddextfarcertd pm2.61dan ) AUACQRZUBUCRZEQRZBUDSZDUEZCUDSFUEZ
-      UFUGZUHUIWHEUDSUJUAWFQREQRBUORWGBUORUKULWFQREQRBUORUAWGQRBUORUKUMUNFUPUQD
-      UHUQAWEUNBCDEFACUHUIZWEITAEUHUIZWEHTABUHUIZWEGTAUBCUDSWEJTAUAEURSUSWENTAU
-      ABURSUSWEMTAWEUTABWBEQRUDSWELTAULCURSUSWEOTVAAWEUSZUNBCDEFAWKWLGTAWJWLHTA
-      WIWLITAEBURSUSZWLPTAUAEQRBUDSWLKTAWEBWDUDSZAWDBVBWEWNUMAEWCQRZWDBAEWCAEAE
-      HVCZVDAWCAWBUBAUACUAUPUIAVEVRACIVCVFAVGVHZVDVIAEWOURSZWMWOBVBAEUPUIWCUPUI
-      WRWPWQEWCVJVKPEWOBURVLVKVMAWDBAWDAWCEWQWPVFVNABGVOVPVQVSVTWA $.
-  $}
-
-  ${
-    m1lgsvald.1 $e |- ( ph -> P e. ( Prime \ { 2 } ) ) $.
-    $( The Legendre symbol of minus one is minus one raised to
-       ` ( ( P - 1 ) / 2 ) ` .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    m1lgsvald $p |- ( ph -> ( -u 1 /L P ) = ( -u 1 ^ ( ( P - 1 ) / 2 ) ) )
-    $=
-      ( c1 cneg clgs co cmin c2 cdiv cexp caddc cmo cz wcel cprime csn cdif syl
-      wceq neg1z lgsval3 sylancr cpr cn oddprm m1expcl2 gausslemma2dlem0a nnrpd
-      nnzd clt wbr oddprmgt2 modsignp1d eqtrd ) ADEZBFGZUPBDHGIJGZKGZDLGBMGDHGZ
-      USAUPNOBPIQROZUQUTTUACUPBUBUCAUSBAURNOUSUPDUDOAURAVAURUEOCBUFSUJURUGSABAB
-      CUHUIAVAIBUKULCBUMSUNUO $.
-  $}
-
-  ${
-    lgsprmp1d.1 $e |- ( ph -> P e. ( Prime \ { 2 } ) ) $.
-    lgsprmp1d.2 $e |- ( ph -> R e. ( Prime \ { 2 } ) ) $.
-    lgsprmp1d.3 $e |- ( ph -> R || ( P + 1 ) ) $.
-    lgsprmp1d.4 $e |- ( ph -> -. 2 || ( ( P - 1 ) / 2 ) ) $.
-    $( If ` ( ( P - 1 ) / 2 ) ` is odd, quadratic reciprocity makes a prime
-       divisor of ` ( P + 1 ) ` a quadratic residue modulo ` P ` , under the
-       stated odd-prime hypotheses.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    lgsprmp1d $p |- ( ph -> ( R /L P ) = 1 ) $=
-      ( c1 clgs co c2 cexp cz wcel nnzd cn cmul wceq cdvds wbr lgscl syl2anc cc
-      cneg cmin cdiv 1cnd gausslemma2dlem0a zcnd neg1cn a1i cc0 wne neg1ne0 csn
-      cprime cdif oddprm syl expclzd expne0d mulridd cmo caddc subnegd breqtrrd
-      wb neg1z moddvds mpbird wn wi nnoddn2prmb sylib simprd lgsmodeq syl112anc
-      syl3anc wa mpd m1lgsvald lgsquad3 syl22anc expmulz m1expo oveq1d mulcanad
-      eqtrd 3eqtr2d eqcomd ) AHCBIJZAHWKHUDZCHUEJKUFJZLJZAUGZAWKACMNBMNZWKMNACA
-      CEUHZOABABDUHZOZCBUAUBUIAWLWMWLUCNZAUJUKZWLULUMZAUNUKZAWMACUPKUOUQZNZWMPN
-      ECURUSOZUTZAWLWMXAXCXFVAAWNHQJWNBCIJZWNWKQJZAWNXGVBAXHWLCIJZWNABCVCJWLCVC
-      JRZXHXJRZAXKCBWLUEJZSTZACBHVDJXMSFABHABWSUIWOVEVFACPNZWPWLMNZXKXNVGWQWSXP
-      AVHUKZBWLCVIVRVJAWPXPXOKCSTVKZXKXLVLWSXQWQACUPNZXRAXEXSXRVSECVMVNVOZBWLCV
-      PVQVTACEWAWHAXHWLBHUEJKUFJZWMQJLJZWKQJZXIABPNKBSTVKZXOXRXHYCRWRABUPNZYDAB
-      XDNZYEYDVSDBVMVNVOWQXTBCWBWCAYBWNWKQAYBWLYALJZWMLJZWNAWTXBYAMNZWMMNYBYHRX
-      AXCAYAAYFYAPNDBURUSOZXFWLYAWMWDWCAYGWLWMLAYIKYASTVKYGWLRYJGYAWEUBWFWHWFWH
-      WIWGWJ $.
-  $}
-
-  ${
-    p1div4boundsd.1 $e |- ( ph -> P e. RR ) $.
-    p1div4boundsd.2 $e |- ( ph -> 3 < P ) $.
-    $( For a real number ` P ` greater than three, ` ( ( P + 1 ) / 4 ) ` lies
-       strictly between one and ` P ` .  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    p1div4boundsd $p |- ( ph -> ( 1 < ( ( P + 1 ) / 4 ) /\ ( ( P + 1 ) / 4
-    ) < P ) ) $=
-      ( c1 caddc co c4 clt wbr cmul cr wcel 4re a1i recnd c3 crp c2 lttrd mpbid
-      cdiv mulridd df-4 3re 1red ltadd1dd eqbrtrid eqbrtrd readdcld 4pos elrpii
-      ltmuldiv2d 2re remulcld 1lt3 ltadd2dd 2timesd breqtrrd cc0 0red 3rp elrpd
-      rpgt0d 2lt4 ltmul1dd ltdivmuld mpbird jca ) AEBEFGZHUBGZIJZVKBIJZAHEKGZVJ
-      IJVLAVNHVJIAHAHHLMANOZPUCAHQEFGVJIUDAQBEQLMAUEOZCAUFZDUGUHUIAEVJHVQABECVQ
-      UJZHRMAHNUKULOZUMUAAVMVJHBKGZIJAVJSBKGZVTVRASBSLMAUNOZCUOAHBVOCUOAVJBBFGW
-      AIAEBBVQCCAEQBVQVPCEQIJAUPODTUQABABCPURUSASHBWBVOABCAUTQBAVAVPCAQQRMAVBOV
-      DDTVCSHIJAVEOVFTAVJBHVRCVSVGVHVI $.
-  $}
-
-  ${
-    prmquarter2lgsd.1 $e |- ( ph -> P e. Prime ) $.
-    prmquarter2lgsd.2 $e |- ( ph -> ( ( P + 1 ) / 4 ) e. NN ) $.
-    prmquarter2lgsd.3 $e |- ( ph -> 2 || ( ( P + 1 ) / 4 ) ) $.
-    $( An even quarter successor of a prime makes two a quadratic residue.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    prmquarter2lgsd $p |- ( ph -> ( 2 /L P ) = 1 ) $=
-      ( c2 co c1 wceq c8 cmo c7 wcel cdvds wbr c4 cz nnzd cn a1i clgs cneg cmin
-      cpr caddc cmul cdiv wi 2z 4nn dvdscmul mp3an2i mpd 4t2e8 cprime prmnn syl
-      peano2nnd nncnd nnne0d divcan2d 3brtr3d 1cnd subnegd breqtrrd 8nn moddvds
-      wb neg1z mpbird wa c3 c5 lgsdir2lem1 simpli simpri eqtrdi 7nn elexi prid2
-      eqeltrdi 2lgs ) AFBUAGHIZBJKGZHLUDZMZAWDLWEAWDHUBZJKGZLAWDWHIZJBWGUCGZNOZ
-      AJBHUEGZWJNAPFUFGZPWLPUGGZUFGZJWLNAFWNNOZWMWONOZEFQMAWNQMPQMWPWQUHUIAWNDR
-      APPSMAUJTZRPFWNUKULUMWMJIAUNTAWLPAWLABABUOMZBSMCBUPUQZURUSAPWRUSAPWRUTVAV
-      BABHABWTUSAVCVDVEJSMABQMWGQMZWIWKVHVFABWTRXAAVITBWGJVGULVJHJKGHIZWHLIZXBX
-      CVKVLJKGVLIVLUBJKGVMIVKVNVOVPVQHLLSVRVSVTWAAWSWCWFVHCBWBUQVJ $.
-  $}
-
-  ${
-    prmdivquarterlgsd.1 $e |- ( ph -> P e. ( Prime \ { 2 } ) ) $.
-    prmdivquarterlgsd.2 $e |- ( ph -> -. 2 || ( ( P - 1 ) / 2 ) ) $.
-    prmdivquarterlgsd.3 $e |- ( ph -> R e. Prime ) $.
-    prmdivquarterlgsd.4 $e |- ( ph -> R || ( ( P + 1 ) / 4 ) ) $.
-    $( Every prime divisor of ` ( ( P + 1 ) / 4 ) ` is a quadratic residue
-       modulo ` P ` when ` ( ( P - 1 ) / 2 ) ` is odd, under the stated
-       hypotheses.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    prmdivquarterlgsd $p |- ( ph -> ( R /L P ) = 1 ) $=
-      ( clgs co c1 wceq c2 wa cprime wcel adantr c4 cn cdvds wbr oveq1d eldifad
-      simpr csn caddc oddprmquarterd breq1dd prmquarter2lgsd eqtrd wne eldifsnd
-      cdiv cdif cmul prmnn syl peano2nnd nncnd 4nn nnne0d divcan2d cz prmz nnzd
-      a1i dvdsmultr2d breq2dd cmin wn lgsprmp1d pm2.61dane ) ACBHIZJKCLACLKZMZV
-      LLBHIJVNCLBHAVMUCZUAVNBABNOZVMABNLUDZDUBZPABJUEIZQULIZROVMABDEUFZPVNCLVTS
-      VOACVTSTVMGPUGUHUIACLUJZMZBCABNVQUMOWBDPWCCNLACNOZWBFPAWBUCUKACVSSTWBAQVT
-      UNIVSCSAVSQAVSABAVPBROVRBUOUPUQURAQQROAUSVEZURAQWEUTVAACQVTAWDCVBOFCVCUPA
-      QWEVDAVTWAVDGVFVGPALBJVHILULISTVIWBEPVJVK $.
-  $}
-
-  ${
-    p1div4halfltd.1 $e |- ( ph -> P e. RR ) $.
-    p1div4halfltd.2 $e |- ( ph -> 1 < P ) $.
-    $( The quarter successor of a real number above one is below half that
-       number.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    p1div4halfltd $p |- ( ph -> ( ( P + 1 ) / 4 ) < ( P / 2 ) ) $=
-      ( c1 caddc co c2 cdiv clt cmul 1red readdcld recnd 2cnd crp wcel a1i wbr
-      c4 2rp rpne0d divdiv1d wceq 2t2e4 oveq2d eqtrd rehalfcld ltadd2dd 2timesd
-      breqtrrd ltdivmuld mpbird ltdiv1dd eqbrtrrd ) ABEFGZHIGZHIGZUPTIGZBHIGJAU
-      RUPHHKGZIGUSAUPHHAUPABECALZMZNAOZVCAHHPQAUARZUBZVEUCAUTTUPIUTTUDAUERUFUGA
-      UQBHAUPVBUHCVDAUQBJSUPHBKGZJSAUPBBFGVFJAEBBVACCDUIABABCNUJUKAUPBHVBCVDULU
-      MUNUO $.
-  $}
-
-  ${
-    $d P r $.  $d ph r $.
-    oddprmqrhalfexd.1 $e |- ( ph -> P e. ( Prime \ { 2 } ) ) $.
-    oddprmqrhalfexd.2 $e |- ( ph -> -. 2 || ( ( P - 1 ) / 2 ) ) $.
-    oddprmqrhalfexd.3 $e |- ( ph -> 3 < P ) $.
-    $( An odd prime above three for which ` ( ( P - 1 ) / 2 ) ` is odd has a
-       prime quadratic residue below half the modulus.  (Contributed by Zhi
-       Wang, 20-Oct-2026.) $)
-    oddprmqrhalfexd $p |- ( ph -> E. r e. Prime ( r < ( P / 2 ) /\ ( r /L P )
-      = 1 ) ) $=
-      ( c1 co cdiv cdvds wbr c2 clt wa cprime wcel cn ad2antrr nnred c3 cv clgs
-      caddc c4 wceq simplr prmz zred oddprmquarterd gausslemma2dlem0a rehalfcld
-      cz syl cle simpr wi dvdsle syl2anc mpd 1red cr 3re a1i 1lt3 p1div4halfltd
-      lttrd lelttrd csn cdif cmin wn prmdivquarterlgsd jca p1div4boundsd simpld
-      exprmfctd reximddv3 ) ACUAZBGUCHUDIHZJKZVRBLIHZMKZVRBUBHGUEZNCOAVROPZNZVT
-      NZWBWCWFVRVSWAWFVRWFWDVRULPZAWDVTUFZVRUGUMZUHWFVSAVSQPZWDVTABDEUIZRZSWFBW
-      FBABQPWDVTABDUJZRSZUKWFVTVRVSUNKZWEVTUOZWFWGWJVTWOUPWIWLVRVSUQURUSWFBWNWF
-      GTBWFUTTVAPWFVBVCWNGTMKWFVDVCATBMKWDVTFRVFVEVGWFBVRABOLVHVIPWDVTDRALBGVJH
-      LIHJKVKWDVTERWHWPVLVMAVSCWKAGVSMKVSBMKABABWMSFVNVOVPVQ $.
-  $}
-
-  ${
-    $d P r $.  $d ph r $.
-    oddprmqrexd.1 $e |- ( ph -> P e. ( Prime \ { 2 } ) ) $.
-    oddprmqrexd.2 $e |- ( ph -> -. 2 || ( ( P - 1 ) / 2 ) ) $.
-    oddprmqrexd.3 $e |- ( ph -> 3 < P ) $.
-    $( An odd prime above three for which ` ( ( P - 1 ) / 2 ) ` is odd has a
-       smaller prime quadratic residue.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    oddprmqrexd $p |- ( ph -> E. r e. Prime ( r < P /\ ( r /L P ) = 1 ) )
-    $=
-      ( cv c2 cdiv co clt wbr clgs wa cprime wrex wcel adantr cr nnred wceq crp
-      c1 oddprmqrhalfexd gausslemma2dlem0a nnrpd rphalflt syl prmnn adantl lttr
-      wi rehalfcld syl3anc mpan2d anim1d reximdva mpd ) ACGZBHIJZKLZUSBMJUCUAZN
-      ZCOPUSBKLZVBNZCOPABCDEFUDAVCVECOAUSOQZNZVAVDVBVGVAUTBKLZVDAVHVFABUBQVHABA
-      BDUEZUFBUGUHRVGUSSQZUTSQZBSQZVAVHNVDULVFVJAVFUSUSUITUJAVKVFABABVITZUMRAVL
-      VFVMRUSUTBUKUNUOUPUQUR $.
+    $d A p $.
+    $( A nonzero rational has only finitely many nonzero prime valuations.  The
+       support is the union of the prime divisors of its absolute numerator and
+       denominator; see ~ pcqsuppnumden .  (Contributed by Zhi Wang,
+       27-Oct-2026.) $)
+    pcqfi $p |- ( A e. ( QQ \ { 0 } ) ->
+      { p e. Prime | ( p pCnt A ) =/= 0 } e. Fin ) $=
+      ( cq cc0 wcel cfv cdvds wbr cprime crab cpc co wne wa syl wn wceq syl2anc
+      adantr cmin csn cdif cv cnumer cdenom cun cn cfn cz eldifi qnumcl qnumne0
+      cabs jca nnabscl prmdvdsfi qdencl unfid wo wb simpr pceq0 anbi12d bitr4di
+      ioran cdiv pcdiv syl3anc qeqnumdivden oveq2d oveq1d 3eqtr4d simprl simprr
+      zq pcabs oveq12d 0m0e0 eqtrd ex sylbird necon1ad ss2rabdv unrab sseqtrrdi
+      eqtrdi ssfid ) ACDUAZUBEZBUCZAUDFZUMFZGHZBIJZWJAUEFZGHZBIJZUFZWJAKLZDMZBI
+      JZWIWNWQWIWLUGEZWNUHEWIWKUIEZWKDMZNZXBWIXCXDWIACEZXCACWHUJZAUKOZAULUNZWKU
+      OOZWLBUPOWIWOUGEZWQUHEWIXFXKXGAUQOZWOBUPOURWIXAWMWPUSZBIJWRWIWTXMBIWIWJIE
+      ZNZXMWSDXOXMPZWJWLKLZDQZWJWOKLZDQZNZWSDQZXOYAWMPZWPPZNXPXOXRYCXTYDXOXNXBX
+      RYCUTWIXNVAZWIXBXNXJSWJWLVBRXOXNXKXTYDUTYEWIXKXNXLSZWJWOVBRVCWMWPVEVDXOYA
+      YBXOYANZWSXQXSTLZDXOWSYHQYAXOWJWKWOVFLZKLZWJWKKLZXSTLZWSYHXOXNXEXKYJYLQYE
+      WIXEXNXISYFWKWOWJVGVHXOAYIWJKWIAYIQZXNWIXFYMXGAVIOSVJXOXQYKXSTXOXNWKCEZXQ
+      YKQYEWIYNXNWIXCYNXHWKVOOSWKWJVPRVKVLSYGYHDDTLDYGXQDXSDTXOXRXTVMXOXRXTVNVQ
+      VRWFVSVTWAWBWCWMWPBIWDWEWG $.
   $}
 
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Definitions and basic laws
+  The signed prime Omega and Liouville functions
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
@@ -884387,6 +884257,539 @@ $)
       sum_ p e. { q e. Prime | ( q pCnt x ) =/= 0 } ( p pCnt x ) ) $.
   $}
 
+  ${
+    $d p q x $.
+    $( The signed prime Omega function is defined on exactly the nonzero
+       rationals.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    bomfn $p |- Omega Fn ( QQ \ { 0 } ) $=
+      ( vx vq vp cq cc0 csn cdif cv cpc wne cprime crab csu sumex df-bom fnmpti
+      co cbom ) ADEFGBHAHZIQEJBKLZCHSIQZCMRTUACNABCOP $.
+  $}
+
+  ${
+    $d A p q x $.
+    $( Evaluate the signed prime Omega function as its defining valuation sum.
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    bomval $p |- ( A e. ( QQ \ { 0 } ) -> ( Omega ` A ) = sum_ p e. { q e.
+      Prime | ( q pCnt A ) =/= 0 } ( p pCnt A ) ) $=
+      ( vx cv cpc co cc0 wne cprime crab csu cq csn cdif cbom wceq oveq2 neeq1d
+      rabbidv wcel adantr sumeq12dv df-bom sumex fvmpt ) DABEZDEZFGZHIZBJKZCEZU
+      HFGZCLUGAFGZHIZBJKZULAFGZCLMHNOPUHAQZUKUPUMUQCURUJUOBJURUIUNHUHAUGFRSTURU
+      MUQQULUKUAUHAULFRUBUCDBCUDUPUQCUEUF $.
+  $}
+
+  ${
+    $( The domain of the signed prime Omega function is the set of nonzero
+       rationals.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    bomdm $p |- dom Omega = ( QQ \ { 0 } ) $=
+      ( cq cc0 csn cdif cbom bomfn fndmi ) ABCDEFG $.
+  $}
+
+  ${
+    $d A p q $.  $d B p $.  $d p ph $.
+    bomss.1 $e |- ( ph -> A e. ( QQ \ { 0 } ) ) $.
+    bomss.2 $e |- ( ph -> B e. Fin ) $.
+    bomss.3 $e |- ( ph -> B C_ Prime ) $.
+    bomss.4 $e |- ( ph -> { q e. Prime | ( q pCnt A ) =/= 0 } C_ B ) $.
+    $( Evaluate the signed prime Omega function by summing valuations over a
+       finite set of primes containing its nonzero valuation support.
+       (Contributed by Zhi Wang, 5-Nov-2026.) $)
+    bomss $p |- ( ph -> ( Omega ` A ) = sum_ p e. B ( p pCnt A ) ) $=
+      ( cv cpc co cc0 wne cprime csu cq wcel wceq wa cbom cfv crab csn cdif syl
+      bomval cz elrabi eldifsn sylib pcqcl syl2anr zcnd wn eldifn adantl wb wss
+      adantr eldifi sseldd oveq1 neeq1d elrab3 mtbid nne fsumss eqtrd ) ABUAUBZ
+      DJZBKLZMNZDOUCZEJZBKLZEPZCVPEPABQMUDUERZVJVQSFBDEUGUFAVNCVPEIAVOVNRZTVPVS
+      VOORZBQRBMNTZVPUHRAVMDVOOUIAVRWAFBQMUJUKVOBULUMUNAVOCVNUERZTZVPMNZUOVPMSW
+      CVSWDWBVSUOAVOCVNUPUQWCVTVSWDURWCCOVOACOUSWBHUTWBVOCRAVOCVNVAUQVBVMWDDVOO
+      VKVOSVLVPMVKVOBKVCVDVEUFVFVPMVGUKGVHVI $.
+  $}
+
+  ${
+    $d A p q $.  $d A x $.  $d p x $.  $d q x $.
+    $( Express the signed prime Omega function at a nonzero integer as a sum of
+       prime multiplicities over its prime divisors.  For ` A e. NN ` , this
+       gives the prime-factor count with multiplicity.  (Contributed by Zhi
+       Wang, 17-Oct-2026.) $)
+    bomzval $p |- ( A e. ( ZZ \ { 0 } ) -> ( Omega ` A ) = sum_ p e. { q e.
+      Prime | q || A } ( p pCnt A ) ) $=
+      ( cz cc0 cdif wcel cfv cv cpc co wne cprime crab csu cdvds wbr cq syl2anr
+      wceq csn cbom eldifi zq eldifsni eldifsnd bomval wa cabs wb prmz dvdsabsb
+      syl cn wn id eldifsn nnabscl sylbi pceq0 necon2abid pcabs neeq1d rabbidva
+      3bitrrd sumeq1d eqtrd ) ADEUAZFGZAUBHZBIZAJKZELZBMNZCIAJKZCOZVKAPQZBMNZVO
+      COVIARVHFGVJVPTVIAREVIADGZARGZADVHUCZAUDUMZADEUEUFABCUGUMVIVNVRVOCVIVMVQB
+      MVIVKMGZUHZVQVKAUIHZPQZVKWEJKZELVMWCVKDGVSVQWFUJVIVKUKWAVKAULSWDWFWGEWCWC
+      WEUNGZWGETWFUOUJVIWCUPZVIVSAELUHWHADEUQAURUSVKWEUTSVAWDWGVLEWCWCVTWGVLTVI
+      WIWBAVKVBSVCVEVDVFVG $.
+  $}
+
+  ${
+    $d A p q $.  $d B p $.  $d p ph $.
+    bomnnss.1 $e |- ( ph -> A e. NN ) $.
+    bomnnss.2 $e |- ( ph -> B e. Fin ) $.
+    bomnnss.3 $e |- ( ph -> B C_ Prime ) $.
+    bomnnss.4 $e |- ( ph -> { q e. Prime | q || A } C_ B ) $.
+    $( Evaluate the prime Omega function using a finite set of primes
+       containing all prime divisors of the input.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
+    bomnnss $p |- ( ph -> ( Omega ` A ) = sum_ p e. B ( p pCnt A ) ) $=
+      ( cn wcel cq cc0 csn cdif nnqnz syl cv cprime crab cpc wne cdvds wbr wceq
+      co wb wa pceq0 necon2abid ancoms rabbidva eqsstrrd bomss ) ABCDEABJKZBLMN
+      OKFBPQGHADRZBUAUFZMUBZDSTZUPBUCUDZDSTZCAUOVAUSUEFUOUTURDSUPSKZUOUTURUGVBU
+      OUHUTUQMUPBUIUJUKULQIUMUN $.
+  $}
+
+  ${
+    $d p q x $.
+    $( The signed prime Omega function maps nonzero rationals to integers.
+       (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    bomf $p |- Omega : ( QQ \ { 0 } ) --> ZZ $=
+      ( vx vq vp cq cc0 csn cdif cz cv cbom cfv wfn cmpt wceq bomfn wcel cpc co
+      wne cprime dffn5 mpbi crab csu bomval pcqfi elrabi eldifsn biimpi syl2anr
+      wa pcqcl fsumzcl eqeltrd fmpti ) ADEFGZHAIZJKZJJUPLJAUPURMNOAUPJUAUBUQUPP
+      ZURBIUQQRESZBTUCZCIZUQQRZCUDHUQBCUEUSVAVCCUQBUFVBVAPVBTPUQDPUQESUKZVCHPUS
+      UTBVBTUGUSVDUQDEUHUIVBUQULUJUMUNUO $.
+  $}
+
+  ${
+    $d p q $.
+    $( The prime Omega function has value zero at one.  (Contributed by Zhi
+       Wang, 17-Oct-2026.) $)
+    bom1 $p |- ( Omega ` 1 ) = 0 $=
+      ( vq vp c1 cbom cfv cv cpc co cc0 wne cprime crab csu c0 cq csn cdif wcel
+      wceq 1q ax-1ne0 eldifsn mpbir2an bomval wn rabeq0 pc1 nne mprgbir sumeq1i
+      ax-mp sylibr sum0 3eqtri ) CDEZAFZCGHZIJZAKLZBFCGHZBMZNUTBMICOIPQRZUOVASV
+      BCORCIJTUACOIUBUCCABUDUKUSNUTBUSNSURUEZAKURAKUFUPKRUQISVCUPUGUQIUHULUIUJU
+      TBUMUN $.
+  $}
+
+  ${
+    $d P p q $.
+    $( The prime Omega function has value one at every prime.  (Contributed by
+       Zhi Wang, 17-Oct-2026.) $)
+    bomprm $p |- ( P e. Prime -> ( Omega ` P ) = 1 ) $=
+      ( vp vq cprime wcel cbom cfv cpc co c1 cexp csn csu prmnn crab wceq eqtrd
+      cv cfn mpdan snfi a1i snssi cdvds wbr wb c2 prmuz2 dvdsprm sylan rabbidva
+      cuz ancoms rabsn eqimssd bomnnss cc pccld nn0cnd oveq1 sumsn nncnd oveq2d
+      id exp1d cz 1zzd pcid 3eqtr2d ) ADEZAFGZAAHIZAAJKIZHIZJVJVKALZBRZAHIZBMZV
+      LVJAVOCBANZVOSEVJAUAUBADUCVJCRZAUDUEZCDOZVOVJWBVTAPZCDOVOVJWAWCCDVTDEZVJW
+      AWCUFZWDVTUGULGEVJWEVTUHAVTUIUJUMUKCDAUNQUOUPVJVLUQEVRVLPVJVLVJAAVJVDVSUR
+      USVQVLBADVPAAHUTVATQVJVMAAHVJAVJAVSVBVEVCVJJVFEVNJPVJVGJAVHTVI $.
+  $}
+
+  ${
+    $d A p q $.
+    $( The prime Omega function takes nonnegative integer values.  (Contributed
+       by Zhi Wang, 17-Oct-2026.) $)
+    bomnncl $p |- ( A e. NN -> ( Omega ` A ) e. NN0 ) $=
+      ( vq vp cn wcel cbom cfv cv cdvds wbr cprime crab cpc co csu cn0 cc0 cdif
+      cz csn nnznz bomzval syl prmdvdsfi wa elrabi adantl simpl pccld fsumnn0cl
+      wceq eqeltrd ) ADEZAFGZBHAIJZBKLZCHZAMNZCOZPUMASQTREUNUSUKAUAABCUBUCUMUPU
+      RCABUDUMUQUPEZUEUQAUTUQKEUMUOBUQKUFUGUMUTUHUIUJUL $.
+  $}
+
+  ${
+    $d A p q $.  $d B p q $.
+    $( Complete additivity of the signed prime Omega function on nonzero
+       rationals.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    bommul $p |- ( ( A e. ( QQ \ { 0 } ) /\ B e. ( QQ \ { 0 } ) ) ->
+      ( Omega ` ( A x. B ) ) = ( ( Omega ` A ) + ( Omega ` B ) ) ) $=
+      ( vq vp cq cc0 wcel wa cpc wne cprime crab csu caddc cbom cfv cfn wss a1i
+      co csn cdif cun cmul wceq ssrab2 unssi sseli adantl eldifsn birani adantr
+      cv bilani pcqmul syl3anc sumeq2dv pcqfi unfi syl2an eldifi qmulcl qcn syl
+      cc mulne0d eldifsnd unfid cz pcqcl syl2anr zcnd fsumadd eqtrd ssun2 bomss
+      simprd simpl ssun1 sstri simpr oveq12d 3eqtr4d ) AEFUAZUBZGZBWEGZHZCUMZAI
+      TFJZCKLZWIBITFJZCKLZUCZWIABUDTZITFJZCKLZUCZDUMZWOITZDMZWRWSAITZDMZWRWSBIT
+      ZDMZNTZWOOPAOPZBOPZNTWHXAWRXBXDNTZDMXFWHWRWTXIDWHWSWRGZHZWSKGZAEGZAFJZHZB
+      EGZBFJZHZWTXIUEXJXLWHWRKWSWNWQKWKWMKWJCKUFWLCKUFUGWPCKUFUGZUHZUIWHXOXJWFX
+      OWGAEFUJUKZULWHXRXJWGXRWFBEFUJUNZULABWSUOUPUQWHWRXBXDDWHWNWQWFWKQGWMQGWNQ
+      GWGACURBCURWKWMUSUTWHWOWEGWQQGWHWOEFWFXMXPWOEGWGAEWDVAZBEWDVAZABVBUTWHABW
+      HXMAVEGWFXMWGYCULAVCVDWHXPBVEGWGXPWFYDUIBVCVDWHXMXNYAVQWHXPXQYBVQVFVGZWOC
+      URVDVHZXKXBXJXLXOXBVIGWHXTYAWSAVJVKVLXKXDXJXLXRXDVIGWHXTYBWSBVJVKVLVMVNWH
+      WOWRCDYEYFWRKRWHXSSZWQWRRWHWQWNVOSVPWHXGXCXHXENWHAWRCDWFWGVRYFYGWKWRRWHWK
+      WNWRWKWMVSWNWQVSZVTSVPWHBWRCDWFWGWAYFYGWMWRRWHWMWNWRWMWKVOYHVTSVPWBWC $.
+  $}
+
+  ${
+    $( The signed prime Omega function converts a quotient of nonzero rationals
+       to a difference.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    bomdiv $p |- ( ( A e. ( QQ \ { 0 } ) /\ B e. ( QQ \ { 0 } ) ) ->
+      ( Omega ` ( A / B ) ) = ( ( Omega ` A ) - ( Omega ` B ) ) ) $=
+      ( cq cc0 csn cdif wcel wa co cbom cfv eldifad eldifsnbd qcn syl ffvelcdmi
+      cz cc bomf zcnd cdiv wne simpl simpr qdivcl syl3anc divne0d eldifsnd cmul
+      caddc wceq bommul sylancom divcan1d fveq2d eqtr3d mvlraddd ) ACDEZFZGZBUS
+      GZHZABUAIZJKZBJKZAJKZVBVDVBVCUSGZVDQGVBVCCDVBACGZBCGZBDUBVCCGVBACURUTVAUC
+      ZLZVBBCURUTVAUDZLZVBBCDVLMZABUEUFVBABVBVHARGVKANOZVBVIBRGVMBNOZVBACDVJMVN
+      UGUHZUSQVCJSPOTVBVEVBVAVEQGVLUSQBJSPOTVBVCBUIIZJKZVDVEUJIZVFUTVAVGVSVTUKV
+      QVCBULUMVBVRAJVBABVOVPVNUNUOUPUQ $.
+  $}
+
+  ${
+    $( The signed prime Omega function changes sign under reciprocation.
+       (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    bomrec $p |- ( A e. ( QQ \ { 0 } ) ->
+      ( Omega ` ( 1 / A ) ) = -u ( Omega ` A ) ) $=
+      ( cq cc0 csn cdif wcel c1 cdiv co cbom cfv cmin cneg wceq 1nn nnqnz ax-mp
+      cn bomdiv mpan bom1 oveq1i eqtrdi df-neg eqtr4di ) ABCDEZFZGAHIJKZCAJKZLI
+      ZUIMUGUHGJKZUILIZUJGUFFZUGUHULNGRFUMOGPQGASTUKCUILUAUBUCUIUDUE $.
+  $}
+
+  ${
+    $d A p q $.  $d K p q $.
+    $( The signed prime Omega function converts an integer power to an integer
+       multiple.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    bomexp $p |- ( ( A e. ( QQ \ { 0 } ) /\ K e. ZZ ) -> ( Omega ` ( A ^ K ) )
+      = ( K x. ( Omega ` A ) ) ) $=
+      ( vq vp cq cc0 wcel cz wa cv cpc wne cprime crab csu cmul adantr wss a1i
+      co csn cdif cexp cun cbom cfv wceq ssrab2 unssi sseli adantl birani simpr
+      eldifsn pcexp syl3anc sumeq2dv cfn pcqfi simpld simprd qexpclz cc qcn syl
+      expne0d unfid zcnd pcqcl syl2anr fsummulc2 eqtr4d ssun2 bomss simpl ssun1
+      eldifsnd oveq2d 3eqtr4d ) AEFUAUBZGZBHGZIZCJZAKTFLZCMNZWDABUCTZKTFLZCMNZU
+      DZDJZWGKTZDOZBWJWKAKTZDOZPTZWGUEUFBAUEUFZPTWCWMWJBWNPTZDOWPWCWJWLWRDWCWKW
+      JGZIZWKMGZAEGZAFLZIZWBWLWRUGWSXAWCWJMWKWFWIMWECMUHWHCMUHUIZUJZUKWCXDWSWAX
+      DWBAEFUNULZQWCWBWSWAWBUMZQAWKBUOUPUQWCWJWNBDWCWFWIWAWFURGWBACUSQWCWGVTGWI
+      URGWCWGEFWCXBXCWBWGEGWCXBXCXGUTZWCXBXCXGVAZXHABVBUPWCABWCXBAVCGXIAVDVEXJX
+      HVFVQZWGCUSVEVGZWCBXHVHWTWNWSXAXDWNHGWCXFXGWKAVIVJVHVKVLWCWGWJCDXKXLWJMRW
+      CXESZWIWJRWCWIWFVMSVNWCWQWOBPWCAWJCDWAWBVOXLXMWFWJRWCWFWIVPSVNVRVS $.
+  $}
+
+  ${
+    $( The signed prime Omega function of an integer power of a prime is its
+       exponent.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    bomprmexp $p |- ( ( P e. Prime /\ K e. ZZ ) ->
+      ( Omega ` ( P ^ K ) ) = K ) $=
+      ( cprime wcel cz wa cexp co cbom cfv cmul c1 cq cc0 cdif wceq prmnn nnqnz
+      csn cn syl bomexp sylan bomprm adantr oveq2d simpr zcnd mulridd 3eqtrd )
+      ACDZBEDZFZABGHIJZBAIJZKHZBLKHBUKAMNSODZULUNUPPUKATDUQAQARUAABUBUCUMUOLBKU
+      KUOLPULAUDUEUFUMBUMBUKULUGUHUIUJ $.
+  $}
+
+  ${
+    $( The prime Omega function at four is two.  (Contributed by Zhi Wang,
+       27-Oct-2026.) $)
+    bom4 $p |- ( Omega ` 4 ) = 2 $=
+      ( c2 cexp co cbom cfv c4 sq2 fveq2i cprime wcel cz wceq 2prm 2z bomprmexp
+      mp2an eqtr3i ) AABCZDEZFDEARFDGHAIJAKJSALMNAAOPQ $.
+  $}
+
+  ${
+    $d A p q $.
+    $( Negating a nonzero rational does not change its signed prime Omega
+       value.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    bomneg $p |- ( A e. ( QQ \ { 0 } ) -> ( Omega ` -u A ) = ( Omega ` A ) ) $=
+      ( vq vp cq cc0 wcel cv cpc co wne cprime crab csu cbom wceq pcneg syl2anr
+      cfv syl bomval csn cdif wa eldifi neeq1d rabbidva elrabi sumeq12dv qnegcl
+      cneg id cc qcn eldifsni negne0d eldifsnd 3eqtr4d ) ADEUAZUBZFZBGZAUJZHIZE
+      JZBKLZCGZVBHIZCMZVAAHIZEJZBKLZVFAHIZCMVBNRZANRUTVEVKVGVLCUTVDVJBKUTVAKFZU
+      CVCVIEVNVNADFZVCVIOUTVNUKADURUDZAVAPQUEUFVFVEFVFKFVOVGVLOUTVDBVFKUGVPAVFP
+      QUHUTVBUSFVMVHOUTVBDEUTVOVBDFVPAUISUTAUTVOAULFVPAUMSADEUNUOUPVBBCTSABCTUQ
+      $.
+  $}
+
+  ${
+    $( Taking the absolute value of a nonzero rational does not change its
+       signed prime Omega value.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    bomabs $p |- ( A e. ( QQ \ { 0 } ) -> ( Omega ` ( abs ` A ) ) =
+      ( Omega ` A ) ) $=
+      ( cq cc0 csn cdif wcel cabs cfv wceq cbom cneg fveq2 a1i bomneg sylan9eqr
+      wi ex eldifi qred absord mpjaod ) ABCDZEFZAGHZAIZUDJHZAJHZIZUDAKZIZUEUHPU
+      CUDAJLMUCUJUHUJUCUFUIJHUGUDUIJLANOQUCAUCAABUBRSTUA $.
+  $}
+
+  ${
+    $( The signed prime Omega function at minus one is zero.  (Contributed by
+       Zhi Wang, 27-Oct-2026.) $)
+    bomneg1 $p |- ( Omega ` -u 1 ) = 0 $=
+      ( c1 cneg cbom cfv cc0 cn wcel cq csn cdif wceq 1nn nnqnz mp2b bom1 eqtri
+      bomneg ) ABCDZACDZEAFGAHEIJGRSKLAMAQNOP $.
+  $}
+
+  ${
+    $( The signed prime Omega function takes nonnegative integer values on
+       nonzero integers.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    bomzcl $p |- ( A e. ( ZZ \ { 0 } ) -> ( Omega ` A ) e. NN0 ) $=
+      ( cz cc0 csn cdif wcel cabs cfv cbom cn0 cq wceq eldifi eldifsni eldifsnd
+      zq syl bomabs cn wne wa eldifsn nnabscl sylbi bomnncl eqeltrrd ) ABCDZEFZ
+      AGHZIHZAIHZJUHAKUGEFUJUKLUHAKCUHABFZAKFABUGMAPQABCNOARQUHUISFZUJJFUHULACT
+      UAUMABCUBAUCUDUIUEQUF $.
+  $}
+
+  ${
+    $( The signed prime Omega value of a nonzero rational is the difference of
+       its values at the absolute numerator and denominator.  (Contributed by
+       Zhi Wang, 27-Oct-2026.) $)
+    bomnumden $p |- ( A e. ( QQ \ { 0 } ) ->
+      ( Omega ` A ) = ( ( Omega ` ( abs ` ( numer ` A ) ) ) -
+        ( Omega ` ( denom ` A ) ) ) ) $=
+      ( cq cc0 csn cdif wcel cnumer cfv cdenom cdiv co cbom cmin cabs cz eldifi
+      wceq qnumcl 3syl syl zq qnumne0 eldifsnd qdencl nnqnz bomdiv qeqnumdivden
+      cn syl2anc fveq2d bomabs oveq1d 3eqtr4d ) ABCDZEZFZAGHZAIHZJKZLHZUQLHZURL
+      HZMKZALHUQNHLHZVBMKUPUQUOFZURUOFZUTVCQUPUQBCUPABFZUQOFUQBFABUNPZARUQUASAU
+      BUCZUPVGURUHFVFVHAUDURUESUQURUFUIUPAUSLUPVGAUSQVHAUGTUJUPVDVAVBMUPVEVDVAQ
+      VIUQUKTULUM $.
+  $}
+
+  ${
+    $d n p q $.
+    $( The restriction of the signed prime Omega function to positive integers
+       is the prime multiplicity sum.  (Contributed by Zhi Wang,
+       27-Oct-2026.) $)
+    bomres $p |- ( Omega |` NN ) =
+      ( n e. NN |-> sum_ p e. { q e. Prime | q || n } ( p pCnt n ) ) $=
+      ( vx cbom cn cres cq cc0 csn cdif cv cfv cmpt cdvds cprime crab wceq wcel
+      wbr cpc co csu wfn bomfn dffn5 reseq1i wss nnqnz ssriv resmpt ax-mp nnznz
+      mpbi cz bomzval syl mpteq2ia 3eqtri ) EFGAHIJZKZALZEMZNZFGZAFVCNZAFBLVBOT
+      BPQCLVBUAUBCUCZNEVDFEVAUDEVDRUEAVAEUFUNUGFVAUHVEVFRDFVADLUIUJAVAFVCUKULAF
+      VCVGVBFSVBUOUTKSVCVGRVBUMVBBCUPUQURUS $.
+  $}
+
+  ${
+    $( The signed prime Omega function restricted to a class of positive
+       integers takes nonnegative integer values.  (Contributed by Zhi Wang,
+       27-Oct-2026.) $)
+    bomresf $p |- ( T C_ NN -> ( Omega |` T ) : T --> NN0 ) $=
+      ( vn vx cn cn0 cbom cres wf wss cv cfv cc0 csn cdif cmpt wceq bomfn dffn5
+      cq wfn mpbi reseq1i nnqnz ssriv resmpt ax-mp eqtri bomnncl fmpti fssres2
+      mpan ) DEFDGZHADIAEFAGHBDEBJZFKZULULBSLMNZUNOZDGZBDUNOZFUPDFUOTFUPPQBUOFR
+      UAUBDUOIUQURPCDUOCJUCUDBUODUNUEUFUGUMUHUIDEAFUJUK $.
+  $}
+
+  ${
+    $( The range of the signed prime Omega function is the integers.
+       (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    bomrn $p |- ran Omega = ZZ $=
+      ( vx cbom crn cz cq cc0 csn cdif wf wss bomf frn ax-mp cv wcel c2 cexp co
+      sylancr 2ne0 cfv cprime wceq 2prm bomprmexp wfn bomfn wne 2nn nnq qexpclz
+      id cn mp3an12 2cnd a1i expne0d eldifsnd fnfvelrn eqeltrrd ssriv eqssi ) B
+      CZDEFGHZDBIVCDJKVDDBLMADVCANZDOZPVEQRZBUAZVEVCVFPUBOVFVHVEUCUDVFULZPVEUES
+      VFBVDUFVGVDOVHVCOUGVFVGEFPEOZPFUHZVFVGEOPUMOVJUIPUJMTPVEUKUNVFPVEVFUOVKVF
+      TUPVIUQURVDVGBUSSUTVAVB $.
+  $}
+
+  ${
+    $( The prime Omega function is nondecreasing under divisibility of positive
+       integers.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    bomdvdsle $p |- ( ( M e. NN /\ N e. NN /\ M || N ) ->
+      ( Omega ` M ) <_ ( Omega ` N ) ) $=
+      ( cn wcel cdvds wbr w3a cbom cfv cdiv co caddc cle cr cn0 bomnncl syl2anc
+      syl nncnd nnqnz simp1 nn0red simp3 simp2 nndivdvds mpbid nn0addge1 nnne0d
+      wb cmul divcan2d fveq2d wceq cc0 csn cdif bommul syl2an eqtr3d breqtrrd
+      cq ) ACDZBCDZABEFZGZAHIZVFBAJKZHIZLKZBHIZMVEVFNDVHODZVFVIMFVEVFVEVBVFODVB
+      VCVDUAZAPRUBVEVGCDZVKVEVDVMVBVCVDUCVEVCVBVDVMUIVBVCVDUDZVLBAUEQUFZVGPRVFV
+      HUGQVEAVGUJKZHIZVJVIVEVPBHVEBAVEBVNSVEAVLSVEAVLUHUKULVEVBVMVQVIUMZVLVOVBA
+      VAUNUOUPZDVGVSDVRVMATVGTAVGUQURQUSUT $.
+  $}
+
+  ${
+    $( For two positive integers, the sum of the prime Omega values at their
+       gcd and lcm equals the sum of their prime Omega values.  (Contributed by
+       Zhi Wang, 27-Oct-2026.) $)
+    bomgcdlcm $p |- ( ( M e. NN /\ N e. NN ) ->
+      ( ( Omega ` ( M gcd N ) ) + ( Omega ` ( M lcm N ) ) ) =
+      ( ( Omega ` M ) + ( Omega ` N ) ) ) $=
+      ( cn wcel co cbom cfv caddc cn0 bomnncl syl nn0cnd cz wceq wn nnzd nnne0d
+      cc0 neneqd nnqnz wa cgcd clcm gcdnncl simpl simpr ioran sylanbrc syl21anc
+      wo lcmn0cl addcomd cmul lcmgcdnn fveq2d cq csn cdif bommul syl2an syl2anc
+      3eqtr3d eqtrd ) ACDZBCDZUAZABUBEZFGZABUCEZFGZHEVJVHHEZAFGBFGHEZVFVHVJVFVH
+      VFVGCDZVHIDABUDZVGJKLVFVJVFVICDZVJIDVFAMDBMDARNZBRNZUJOZVOVFAVDVEUEZPVFBV
+      DVEUFZPVFVPOVQOVRVFARVFAVSQSVFBRVFBVTQSVPVQUGUHABUKUIZVIJKLULVFVIVGUMEZFG
+      ZABUMEZFGZVKVLVFWBWDFABUNUOVFVOVMWCVKNZWAVNVOVIUPRUQURZDVGWGDWFVMVITVGTVI
+      VGUSUTVAVDAWGDBWGDWEVLNVEATBTABUSUTVBVC $.
+  $}
+
+  ${
+    $( Every prime valuation of a positive integer is bounded by its prime
+       Omega value.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    bompc $p |- ( ( P e. Prime /\ N e. NN ) ->
+      ( P pCnt N ) <_ ( Omega ` N ) ) $=
+      ( cprime wcel cn wa cpc co cexp cbom cfv cle cz wceq pccl nn0zd bomprmexp
+      syldan cdvds wbr prmnn adantr nnexpcld pcdvds bomdvdsle syl3anc eqbrtrrd
+      simpr ) ACDZBEDZFZAABGHZIHZJKZULBJKZLUIUJULMDUNULNUKULABOZPAULQRUKUMEDUJU
+      MBSTUNUOLTUKAULUIAEDUJAUAUBUPUCUIUJUHABUDUMBUEUFUG $.
+  $}
+
+  ${
+    $d N p $.
+    $( The prime Omega function of a positive integer is zero exactly at one.
+       (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    bomnn0 $p |- ( N e. NN -> ( ( Omega ` N ) = 0 <-> N = 1 ) ) $=
+      ( vp cn wcel cbom cfv cc0 wceq c1 wa cv cpc cprime wral cle wbr simpr cn0
+      co wb simpll bompc syl2anc simplr pccld nn0le0eq0 syl mpbid adantl eqtr4d
+      breqtrd pc1 ralrimiva simpl nnnn0d 1nn0 pc11 sylancl mpbird ex fveq2 bom1
+      eqtrdi impbid1 ) ACDZAEFZGHZAIHZVEVGVHVEVGJZVHBKZALSZVJILSZHZBMNZVIVMBMVI
+      VJMDZJZVKGVLVPVKGOPZVKGHZVPVKVFGOVPVOVEVKVFOPVIVOQZVEVGVOUAZVJAUBUCVEVGVO
+      UDUKVPVKRDVQVRTVPVJAVSVTUEVKUFUGUHVOVLGHVIVJULUIUJUMVIARDIRDVHVNTVIAVEVGU
+      NUOUPAIBUQURUSUTVHVFIEFGAIEVAVBVCVD $.
+  $}
+
+  ${
+    $( The prime Omega function of a positive integer is positive exactly when
+       the input exceeds one.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    bomnnpos $p |- ( A e. NN -> ( 0 < ( Omega ` A ) <-> 1 < A ) ) $=
+      ( cn wcel cbom cfv cc0 wne c1 clt bomnn0 necon3bid bomnncl nn0red nn0ge0d
+      wbr 0red leltned nngt1ne1 3bitr4d ) ABCZADEZFGAHGFUAIOHAIOTUAFAHAJKTFUATP
+      TUAALZMTUAUBNQARS $.
+  $}
+
+  ${
+    $d N p $.
+    $( The prime Omega function of a positive integer is one exactly at the
+       primes.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    bomnn1 $p |- ( N e. NN -> ( ( Omega ` N ) = 1 <-> N e. Prime ) ) $=
+      ( vp cn wcel cbom cfv c1 wceq cprime wa wbr cc0 clt wb adantr mpbid nncnd
+      syl co cmin cv cdvds simpl 0lt1 simpr breqtrrid bomnnpos exprmfctd simprl
+      prmnn nnne0d cdiv cq csn nnqnz bomdiv syl2anc bomprm oveq12d 1m1e0 eqtrdi
+      cdif eqtrd simprr nndivdvds bomnn0 diveq1d eqeltrd rexlimddv ex impbid1 )
+      ACDZAEFZGHZAIDZVLVNVOVLVNJZBUAZAUBKZVOBIVPABVLVNUCZVPLVMMKZGAMKZVPLGVMMUD
+      VLVNUEZUFVLVTWANVNAUGOPUHVPVQIDZVRJZJZAVQIWEAVQWEAVPVLWDVSOZQWEVQWEWCVQCD
+      ZVPWCVRUIZVQUJRZQWEVQWIUKWEAVQULSZEFZLHZWJGHZWEWKVMVQEFZTSZLWEAUMLUNVBZDZ
+      VQWPDZWKWOHWEVLWQWFAUORWEWGWRWIVQUORAVQUPUQWEWOGGTSLWEVMGWNGTVPVNWDWBOWEW
+      CWNGHWHVQURRUSUTVAVCWEWJCDZWLWMNWEVRWSVPWCVRVDWEVLWGVRWSNWFWIAVQVEUQPWJVF
+      RPVGWHVHVIVJAURVK $.
+  $}
+
+  ${
+    $( The prime Omega function increases strictly along proper divisibility of
+       positive integers.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    bomdvdslt $p |- ( ( ( M e. NN /\ N e. NN ) /\ ( M || N /\ M =/= N ) ) ->
+      ( Omega ` M ) < ( Omega ` N ) ) $=
+      ( cn wcel wa wbr wne cbom cfv co clt cc0 cn0 wb syl2anc mpbid bomnncl syl
+      c1 wceq cdvds cdiv caddc simprl simplr simpll nncnd nnne0d simprr divne1d
+      nndivdvds necomd bomnn0 necon3bid mpbird sylanbrc nngt0d nn0red ltaddposd
+      elnnne0 cmul divcan2d fveq2d csn cdif nnqnz bommul syl2an eqtr3d breqtrrd
+      cq ) ACDZBCDZEZABUAFZABGZEZEZAHIZVSBAUBJZHIZUCJZBHIZKVRLWAKFVSWBKFVRWAVRW
+      AMDZWALGZWACDVRVTCDZWDVRVOWFVNVOVPUDVRVMVLVOWFNVLVMVQUEZVLVMVQUFZBAUKOPZV
+      TQRZVRWEVTSGVRBAVRBWGUGZVRAWHUGZVRAWHUHZVRABVNVOVPUIULUJVRWALVTSVRWFWALTV
+      TSTNWIVTUMRUNUOWAUTUPUQVRWAVSVRWAWJURVRVSVRVLVSMDWHAQRURUSPVRAVTVAJZHIZWC
+      WBVRWNBHVRBAWKWLWMVBVCVRVLWFWOWBTZWHWIVLAVKLVDVEZDVTWQDWPWFAVFVTVFAVTVGVH
+      OVIVJ $.
+  $}
+
+  ${
+    $d N x $.  $d x y z $.
+    $( A positive integer is at least two raised to its prime Omega value.
+       (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    bomexp2le $p |- ( N e. NN -> ( 2 ^ ( Omega ` N ) ) <_ N ) $=
+      ( c2 cv cbom cfv cexp co cle wbr c1 wceq fveq2 oveq2d id breq12d cc0 wcel
+      adantr cr nnred vx vy vz cmul bom1 oveq2i cc 2cn exp0 ax-mp eqtri eqbrtri
+      1le1 cprime bomprm exp1 eqtrdi cuz prmuz2 eluzle eqbrtrd wa caddc eluz2nn
+      syl cn cq csn cdif nnqnz bommul syl2an a1i cn0 adantl bomnncl expaddd 2nn
+      eqtrd nnexpcld nnnn0d nn0ge0d simprl simprr lemul12ad ex prmind ) BUACZDE
+      ZFGZWHHIBJDEZFGZJHIBUBCZDEZFGZWMHIZBUCCZDEZFGZWQHIZBWMWQUDGZDEZFGZXAHIZBA
+      DEZFGZAHIUAUBUCAWHJKZWJWLWHJHXGWIWKBFWHJDLMXGNOWHWMKZWJWOWHWMHXHWIWNBFWHW
+      MDLMXHNOWHWQKZWJWSWHWQHXIWIWRBFWHWQDLMXINOWHXAKZWJXCWHXAHXJWIXBBFWHXADLMX
+      JNOWHAKZWJXFWHAHXKWIXEBFWHADLMXKNOWLJJHWLBPFGZJWKPBFUEUFBUGQZXLJKUHBUIUJU
+      KUMULWHUNQZWJBWHHXNWJBJFGZBXNWIJBFWHUOMXMXOBKUHBUPUJUQXNWHBUREZQBWHHIWHUS
+      BWHUTVEVAWMXPQZWQXPQZVBZWPWTVBZXDXSXTVBZXCWOWSUDGZXAHXSXCYBKXTXSXCBWNWRVC
+      GZFGYBXSXBYCBFXQWMVFQZWQVFQZXBYCKZXRWMVDZWQVDZYDWMVGPVHVIZQWQYIQYFYEWMVJW
+      QVJWMWQVKVLVLMXSBWNWRXMXSUHVMXSYEWRVNQXRYEXQYHVOZWQVPVEZXSYDWNVNQXQYDXRYG
+      RZWMVPVEZVQVSRYAWOWMWSWQXSWOSQXTXSWOXSBWNBVFQXSVRVMZYMVTZTRXSWMSQXTXSWMYL
+      TRXSWSSQXTXSWSXSBWRYNYKVTZTRXSWQSQXTXSWQYJTRXSPWOHIXTXSWOXSWOYOWAWBRXSPWS
+      HIXTXSWSXSWSYPWAWBRXSWPWTWCXSWPWTWDWEVAWFWG $.
+  $}
+
+  ${
+    $( The prime Omega function of a positive integer is bounded by its
+       base-two logarithm.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    bomlelog $p |- ( N e. NN -> ( Omega ` N ) <_ ( 2 logb N ) ) $=
+      ( cn wcel c2 cbom cfv cexp co clogb cle crp c1 wne cz wceq 2rp necomi wbr
+      1ne2 a1i bomnncl nn0zd relogbexp mp3an12i bomexp2le cuz wb uzidd nnexpcld
+      2z 2nn nnrpd nnrp logbleb syl3anc mpbid eqbrtrrd ) ABCZDDAEFZGHZIHZUSDAIH
+      ZJDKCDLMURUSNCVAUSOPLDSQURUSAUAZUBDUSUCUDURUTAJRZVAVBJRZAUEURDDUFFCUTKCAK
+      CVDVEUGURDDNCURUJTUHURUTURDUSDBCURUKTVCUIULAUMDUTAUNUOUPUQ $.
+  $}
+
+  ${
+    $d u v z $.  $d F j k u v y $.  $d F k x y z $.  $d J k x y z $.
+    $( The signed prime Omega function maps finite products of nonzero
+       rationals to sums.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    bomprod $p |- ( ( J e. Fin /\ F : J --> ( QQ \ { 0 } ) ) ->
+      ( Omega ` prod_ k e. J ( F ` k ) ) =
+      sum_ k e. J ( Omega ` ( F ` k ) ) ) $=
+      ( vz wcel cv cfv cq cc0 wral cprod cbom csu wceq wi c0 fveq2d c1 wa cc vx
+      vy vu vv cfn csn cdif cun raleq prodeq1 sumeq1 eqeq12d imbi12d bom1 prod0
+      wf fveq2i sum0 3eqtr4i a1i wn caddc cmul cvv nfv nfra1 nfcv nfcprod1 nffv
+      nfsum1 nfeq nfim nfan simpl simpld vex simprd difss qsscn sstri wss ssun1
+      ssralv ax-mp adantl r19.21bi sselid fveq2 vsnid elun2 eleq1d fprodsplitsn
+      co rspcv wne eldifsn birani bilani qmulcl syl2anc qcn mulne0d eldifsnd cn
+      syl 1nn nnqnz fprodcllemf bommul mpd oveq1d 3eqtrd cz bomf ffvelcdmi zcnd
+      fsumsplitsn eqtr4d exp31 findcard2s ffvelcdm ralrimiva impel ) CUEEAFZBGZ
+      HIUFZUGZEZACJZCYEAKZLGZCYELGZAMZNZCYGBUPZYHAUAFZJZYPYEAKZLGZYPYLAMZNZOYHA
+      PJZPYEAKZLGZPYLAMZNZOYHAUBFZJZUUGYEAKZLGZUUGYLAMZNZOZYHAUUGDFZUFZUHZJZUUP
+      YEAKZLGZUUPYLAMZNZOYIYNOUAUBDCYPPNZYQUUBUUAUUFYHAYPPUIUVBYSUUDYTUUEUVBYRU
+      UCLYPPYEAUJQYPPYLAUKULUMYPUUGNZYQUUHUUAUULYHAYPUUGUIUVCYSUUJYTUUKUVCYRUUI
+      LYPUUGYEAUJQYPUUGYLAUKULUMYPUUPNZYQUUQUUAUVAYHAYPUUPUIUVDYSUUSYTUUTUVDYRU
+      URLYPUUPYEAUJQYPUUPYLAUKULUMYPCNZYQYIUUAYNYHAYPCUIUVEYSYKYTYMUVEYRYJLYPCY
+      EAUJQYPCYLAUKULUMUUFUUBRLGIUUDUUEUNUUCRLYEAUOUQYLAURUSUTUUGUEEZUUNUUGEVAZ
+      SZUUMUUQUVAUVHUUMSZUUQSZUUSUUKUUNBGZLGZVBWMZUUTUVJUUSUUIUVKVCWMZLGZUUJUVL
+      VBWMZUVMUVJUURUVNLUVJUUGUUNYEUVKAVDUVIUUQAUVHUUMAUVHAVEUUHUULAYHAUUGVFAUU
+      JUUKAUUILALVGUUGYEAAUUGVGZVHVIUUGYLAUVQVJVKVLVMYHAUUPVFVMZAUVKVGUVJUVFUVG
+      UVJUVHUUMUVIUUQVNZVOZVOZUUNVDEUVJDVPUTZUVJUVFUVGUVTVQZUVJYDUUGESZYGTYEYGH
+      THYFVRVSVTZUVJYHAUUGUUQUUHUVIUUGUUPWAUUQUUHOUUGUUOWBYHAUUGUUPWCWDWEZWFZWG
+      YDUUNBWHZUVJYGTUVKUWEUUQUVKYGEZUVIUUNUUPEZUUQUWIOUUNUUOEUWJDWIUUNUUOUUGWJ
+      WDYHUWIAUUNUUPYDUUNNZYEUVKYGUWHWKWNWDWEZWGWLQUVJUUIYGEUWIUVOUVPNUVJUCUDUU
+      GYEYGAUVRYGTWAUVJUWEUTUCFZYGEZUDFZYGEZSZUWMUWOVCWMZYGEUVJUWQUWRHIUWQUWMHE
+      ZUWOHEZUWRHEUWQUWSUWMIWOZUWNUWSUXASUWPUWMHIWPWQZVOZUWQUWTUWOIWOZUWPUWTUXD
+      SUWNUWOHIWPWRZVOZUWMUWOWSWTUWQUWMUWOUWQUWSUWMTEUXCUWMXAXEUWQUWTUWOTEUXFUW
+      OXAXEUWQUWSUXAUXBVQUWQUWTUXDUXEVQXBXCWEUWAUWGRYGEZUVJRXDEUXGXFRXGWDUTXHUW
+      LUUIUVKXIWTUVJUUJUUKUVLVBUVJUUHUULUWFUVJUVHUUMUVSVQXJXKXLUVJUUGUUNYLUVLAV
+      DUVRAUVLVGUWAUWBUWCUWDYHYLTEUWGYHYLYGXMYELXNXOXPXEUWKYEUVKLUWHQUVJUWIUVLT
+      EUWLUWIUVLYGXMUVKLXNXOXPXEXQXRXSXTYOYHACCYGYDBYAYBYC $.
+  $}
+
+  ${
+    $d t x $.  $d t y $.  $d t z $.  $d n y $.  $d n z $.  $d F a b c t $.
+    $d F b c d t $.  $d F a b n t $.  $d F n p t $.  $d F p q x $.
+    $d F a b c y $.  $d F a b x y z $.  $d d y z $.  $d n p x $.  $d p x y z $.
+    $( Characterize the signed prime Omega function by its integer values,
+       complete additivity on nonzero rationals, and value one on primes.  This
+       proves the homomorphism characterization stated in ~ df-bom .
+       Additivity determines positive integers by prime factorization, gives
+       zero at minus one, and then determines all nonzero rationals by
+       quotients.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    bomuniq $p |- ( F = Omega <->
+      ( F : ( QQ \ { 0 } ) --> ZZ /\
+        A. a e. ( QQ \ { 0 } ) A. b e. ( QQ \ { 0 } )
+          ( F ` ( a x. b ) ) = ( ( F ` a ) + ( F ` b ) ) /\
+        A. p e. Prime ( F ` p ) = 1 ) ) $=
+      ( cbom wceq cc0 cz cv cmul co cfv caddc wral c1 cprime wcel zcnd adantl
+      c2 vt vy vz vx cq csn cdif wf bomf feq1 mpbiri bommul rgen2 fveq1 oveq12d
+      w3a eqeq12d 2ralbidv bomprm rgen eqeq1d ralbidv 3jca simp1 ffnd wfn bomfn
+      a1i wa cdenom adantr simpr ffvelcdmd ffvelcdmi cn eldifi qdencl syl nnqnz
+      3syl fvoveqeq1 fvoveqeq2 simp2 1nn rspc2dv 1t1e1 fveq2i eqtr3di cc addid0
+      mp1i wb syl2anc bom1 eqtr4di fveqeq2 rspccva 3ad2antl3 eqtr4d adantlr cuz
+      mpbid simp3l simp3r simp1l2 simp2l eluz2nn simp2r prmindeqd oveq2d cnumer
+      3eqtr4d qnumcl wne qnumne0 eldifsnd 2cnd 2ne0 cexp 2timesd sqvald znsqcld
+      zq fveq2d 3eqtr3rd 2z bomexp 3eqtrd qmuldeneqnum eqtr3d addcan2ad eqfnfvd
+      mulcanad impbii ) AEFZUEGUFZUGZHAUHZCIZDIZJKZALZYSALZYTALZMKZFZDYQNCYQNZB
+      IZALZOFZBPNZUPZYOYRUUGUUKYOYRYQHEUHUIYQHAEUJUKYOUUGUUAELZYSELZYTELZMKZFZD
+      YQNCYQNUUQCDYQYQYSYTULUMYOUUFUUQCDYQYQYOUUBUUMUUEUUPUUAAEUNYOUUCUUNUUDUUO
+      MYSAEUNYTAEUNUOUQURUKYOUUKUUHELZOFZBPNUUSBPUUHUSUTYOUUJUUSBPYOUUIUUROUUHA
+      EUNVAVBUKVCUULUAYQAEUULYQHAYRUUGUUKVDZVEEYQVFUULVGVHUULUAIZYQQZVIZUVAALZU
+      VAELZUVAVJLZELZUVCUVDUVCYQHUVAAUULYRUVBUUTVKZUULUVBVLZVMRUVCUVEUVBUVEHQUU
+      LYQHUVAEUIVNSRUVCUVGUVCUVFVOQZUVFYQQZUVGHQUVBUVJUULUVBUVAUEQZUVJUVAUEYPVP
+      ZUVAVQVRSZUVFVSZYQHUVFEUIVNVTRUVCUVDUVFALZMKZUVDUVGMKUVEUVGMKZUVCUVPUVGUV
+      DMUVCUBUCAEUVFUDUULOALZOELZFUVBUULUVSGUVTUULUVSUVSMKZUVSFZUVSGFZUULOOJKZA
+      LZUWAUVSUULUUFUWEUWAFOYTJKALUVSUUDMKFCDOOYQYQYSOYTUUDAJMWAYTOOUVSAJMWBYRU
+      UGUUKWCZOVOQOYQQUULWDOVSWKZUWGWEUWDOAWFWGWHUULUVSWIQZUWHUWBUWCWLUULUVSUUL
+      YQHOAUUTUWGVMRZUWIUVSUVSWJWMXBWNWOVKZUULUDIZPQZUWKALZUWKELZFUVBUULUWLVIUW
+      MOUWNUUKYRUWLUWMOFZUUGUUJUWOBUWKPUUHUWKOAWPWQWRUWLUWNOFUULUWKUSSWSWTZUVCU
+      BIZTXALZQZUCIZUWRQZVIZUWQALZUWQELZFZUWTALZUWTELZFZVIZUPZUXCUXFMKZUXDUXGMK
+      ZUWQUWTJKZALZUXMELZUXJUXCUXDUXFUXGMUVCUXBUXEUXHXCUVCUXBUXEUXHXDUOUXJUUFUX
+      NUXKFUWQYTJKALUXCUUDMKFCDUWQUWTYQYQYSUWQYTUUDAJMWAYTUWTUWQUXCAJMWBYRUUGUU
+      KUVBUXBUXIXEUXJUWSUWQVOQUWQYQQZUVCUWSUXAUXIXFUWQXGUWQVSVTZUXJUXAUWTVOQUWT
+      YQQZUVCUWSUXAUXIXHUWTXGUWTVSVTZWEUXJUXPUXRUXOUXLFUXQUXSUWQUWTULWMXLZUVNXI
+      XJUVCUVAXKLZALZUYAELZUVQUVRUVCUYBUYCTUVCUYBUVCYQHUYAAUVHUVCUYAUEGUVCUYAHQ
+      ZUYAUEQUVBUYDUULUVBUVLUYDUVMUVAXMVRSZUYAYCVRUVBUYAGXNUULUVAXOSZXPZVMRZUVC
+      UYCUVCUYAYQQZUYCHQUYGYQHUYAEUIVNVRRUVCXQTGXNUVCXRVHUVCTUYBJKUYBUYBMKZUYAT
+      XSKZELZTUYCJKZUVCUYBUYHXTUVCUYKALUYAUYAJKZALZUYLUYJUVCUYKUYNAUVCUYAUVCUYA
+      UYERYAYDUVCUBUCAEUYKUDUWJUWPUXTUVCUYAUYEUYFYBXIUVCUUFUYOUYJFUYAYTJKALUYBU
+      UDMKFCDUYAUYAYQYQYSUYAYTUUDAJMWAYTUYAUYAUYBAJMWBUULUUGUVBUWFVKZUYGUYGWEYE
+      UVCUYITHQZUYLUYMFUYGUYQUVCYFVHUYATYGWMYHYMUVCUVAUVFJKZALZUVQUYBUVCUUFUYSU
+      VQFUVAYTJKALUVDUUDMKFCDUVAUVFYQYQYSUVAYTUUDAJMWAYTUVFUVAUVDAJMWBUYPUVIUVC
+      UVJUVKUVNUVOVRZWEUVCUYRUYAAUVBUYRUYAFZUULUVBUVLVUAUVMUVAYIVRSZYDYJUVCUYRE
+      LZUVRUYCUVCUVBUVKVUCUVRFUVIUYTUVAUVFULWMUVCUYRUYAEVUBYDYJXLYJYKYLYN $.
+  $}
+
   $c lam $.
 
   $( Liouville's function, defined in ~ df-liou . $)
@@ -884469,80 +884872,6 @@ $)
   $}
 
   ${
-    $d p q x $.
-    $( The signed prime Omega function is defined on exactly the nonzero
-       rationals.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    bomfn $p |- Omega Fn ( QQ \ { 0 } ) $=
-      ( vx vq vp cq cc0 csn cdif cv cpc wne cprime crab csu sumex df-bom fnmpti
-      co cbom ) ADEFGBHAHZIQEJBKLZCHSIQZCMRTUACNABCOP $.
-  $}
-
-  ${
-    $d A p q x $.
-    $( Evaluate the signed prime Omega function as its defining valuation sum.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    bomval $p |- ( A e. ( QQ \ { 0 } ) -> ( Omega ` A ) = sum_ p e. { q e.
-      Prime | ( q pCnt A ) =/= 0 } ( p pCnt A ) ) $=
-      ( vx cv cpc co cc0 wne cprime crab csu cq csn cdif cbom wceq oveq2 neeq1d
-      rabbidv wcel adantr sumeq12dv df-bom sumex fvmpt ) DABEZDEZFGZHIZBJKZCEZU
-      HFGZCLUGAFGZHIZBJKZULAFGZCLMHNOPUHAQZUKUPUMUQCURUJUOBJURUIUNHUHAUGFRSTURU
-      MUQQULUKUAUHAULFRUBUCDBCUDUPUQCUEUF $.
-  $}
-
-  ${
-    $d A p q $.  $d A x $.  $d p x $.  $d q x $.
-    $( Express the signed prime Omega function at a nonzero integer as a sum of
-       prime multiplicities over its prime divisors.  For ` A e. NN ` , this
-       gives the prime-factor count with multiplicity.  (Contributed by Zhi
-       Wang, 17-Oct-2026.) $)
-    bomzval $p |- ( A e. ( ZZ \ { 0 } ) -> ( Omega ` A ) = sum_ p e. { q e.
-      Prime | q || A } ( p pCnt A ) ) $=
-      ( cz cc0 cdif wcel cfv cv cpc co wne cprime crab csu cdvds wbr cq syl2anr
-      wceq csn cbom eldifi zq eldifsni eldifsnd bomval wa cabs wb prmz dvdsabsb
-      syl cn wn id eldifsn nnabscl sylbi pceq0 necon2abid pcabs neeq1d rabbidva
-      3bitrrd sumeq1d eqtrd ) ADEUAZFGZAUBHZBIZAJKZELZBMNZCIAJKZCOZVKAPQZBMNZVO
-      COVIARVHFGVJVPTVIAREVIADGZARGZADVHUCZAUDUMZADEUEUFABCUGUMVIVNVRVOCVIVMVQB
-      MVIVKMGZUHZVQVKAUIHZPQZVKWEJKZELVMWCVKDGVSVQWFUJVIVKUKWAVKAULSWDWFWGEWCWC
-      WEUNGZWGETWFUOUJVIWCUPZVIVSAELUHWHADEUQAURUSVKWEUTSVAWDWGVLEWCWCVTWGVLTVI
-      WIWBAVKVBSVCVEVDVFVG $.
-  $}
-
-  ${
-    $d A p q $.  $d B p $.  $d p ph $.
-    bomss.1 $e |- ( ph -> A e. ( QQ \ { 0 } ) ) $.
-    bomss.2 $e |- ( ph -> B e. Fin ) $.
-    bomss.3 $e |- ( ph -> B C_ Prime ) $.
-    bomss.4 $e |- ( ph -> { q e. Prime | ( q pCnt A ) =/= 0 } C_ B ) $.
-    $( Evaluate the signed prime Omega function by summing valuations over a
-       finite set of primes containing its nonzero valuation support.
-       (Contributed by Zhi Wang, 5-Nov-2026.) $)
-    bomss $p |- ( ph -> ( Omega ` A ) = sum_ p e. B ( p pCnt A ) ) $=
-      ( cv cpc co cc0 wne cprime csu cq wcel wceq wa cbom cfv crab csn cdif syl
-      bomval cz elrabi eldifsn sylib pcqcl syl2anr zcnd wn eldifn adantl wb wss
-      adantr eldifi sseldd oveq1 neeq1d elrab3 mtbid nne fsumss eqtrd ) ABUAUBZ
-      DJZBKLZMNZDOUCZEJZBKLZEPZCVPEPABQMUDUERZVJVQSFBDEUGUFAVNCVPEIAVOVNRZTVPVS
-      VOORZBQRBMNTZVPUHRAVMDVOOUIAVRWAFBQMUJUKVOBULUMUNAVOCVNUERZTZVPMNZUOVPMSW
-      CVSWDWBVSUOAVOCVNUPUQWCVTVSWDURWCCOVOACOUSWBHUTWBVOCRAVOCVNVAUQVBVMWDDVOO
-      VKVOSVLVPMVKVOBKVCVDVEUFVFVPMVGUKGVHVI $.
-  $}
-
-  ${
-    $d A p q $.  $d B p $.  $d p ph $.
-    bomnnss.1 $e |- ( ph -> A e. NN ) $.
-    bomnnss.2 $e |- ( ph -> B e. Fin ) $.
-    bomnnss.3 $e |- ( ph -> B C_ Prime ) $.
-    bomnnss.4 $e |- ( ph -> { q e. Prime | q || A } C_ B ) $.
-    $( Evaluate the prime Omega function using a finite set of primes
-       containing all prime divisors of the input.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    bomnnss $p |- ( ph -> ( Omega ` A ) = sum_ p e. B ( p pCnt A ) ) $=
-      ( cn wcel cq cc0 csn cdif nnqnz syl cv cprime crab cpc wne cdvds wbr wceq
-      co wb wa pceq0 necon2abid ancoms rabbidva eqsstrrd bomss ) ABCDEABJKZBLMN
-      OKFBPQGHADRZBUAUFZMUBZDSTZUPBUCUDZDSTZCAUOVAUSUEFUOUTURDSUPSKZUOUTURUGVBU
-      OUHUTUQMUPBUIUJUKULQIUMUN $.
-  $}
-
-  ${
     $( Liouville's function is defined on exactly the rationals.  (Contributed
        by Zhi Wang, 17-Oct-2026.) $)
     lioufn $p |- lam Fn QQ $=
@@ -884563,25 +884892,10 @@ $)
   $}
 
   ${
-    $( The domain of the signed prime Omega function is the set of nonzero
-       rationals.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    bomdm $p |- dom Omega = ( QQ \ { 0 } ) $=
-      ( cq cc0 csn cdif cbom bomfn fndmi ) ABCDEFG $.
-  $}
-
-  ${
     $( The domain of Liouville's function is the rationals.  (Contributed by
        Zhi Wang, 17-Oct-2026.) $)
     lioudm $p |- dom lam = QQ $=
       ( cq cliou lioufn fndmi ) ABCD $.
-  $}
-
-  ${
-    $( Liouville's function has value zero at zero.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    liou0 $p |- ( lam ` 0 ) = 0 $=
-      ( cc0 cliou cfv wceq c1 cneg cbom cexp co cif cz wcel cq 0z liouval0 mp2b
-      zq eqid iftruei eqtri ) ABCZAADZAEFAGCHIZJZAAKLAMLUAUDDNAQAOPUBAUCARST $.
   $}
 
   ${
@@ -884596,15 +884910,11 @@ $)
   $}
 
   ${
-    $d p q $.
-    $( The prime Omega function has value zero at one.  (Contributed by Zhi
-       Wang, 17-Oct-2026.) $)
-    bom1 $p |- ( Omega ` 1 ) = 0 $=
-      ( vq vp c1 cbom cfv cv cpc co cc0 wne cprime crab csu c0 cq csn cdif wcel
-      wceq 1q ax-1ne0 eldifsn mpbir2an bomval wn rabeq0 pc1 nne mprgbir sumeq1i
-      ax-mp sylibr sum0 3eqtri ) CDEZAFZCGHZIJZAKLZBFCGHZBMZNUTBMICOIPQRZUOVASV
-      BCORCIJTUACOIUBUCCABUDUKUSNUTBUSNSURUEZAKURAKUFUPKRUQISVCUPUGUQIUHULUIUJU
-      TBUMUN $.
+    $( Liouville's function has value zero at zero.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
+    liou0 $p |- ( lam ` 0 ) = 0 $=
+      ( cc0 cliou cfv wceq c1 cneg cbom cexp co cif cz wcel cq 0z liouval0 mp2b
+      zq eqid iftruei eqtri ) ABCZAADZAEFAGCHIZJZAAKLAMLUAUDDNAQAOPUBAUCARST $.
   $}
 
   ${
@@ -884618,58 +884928,12 @@ $)
   $}
 
   ${
-    $d A p q $.
-    $( The prime Omega function takes nonnegative integer values.  (Contributed
-       by Zhi Wang, 17-Oct-2026.) $)
-    bomnncl $p |- ( A e. NN -> ( Omega ` A ) e. NN0 ) $=
-      ( vq vp cn wcel cbom cfv cv cdvds wbr cprime crab cpc co csu cn0 cc0 cdif
-      cz csn nnznz bomzval syl prmdvdsfi wa elrabi adantl simpl pccld fsumnn0cl
-      wceq eqeltrd ) ADEZAFGZBHAIJZBKLZCHZAMNZCOZPUMASQTREUNUSUKAUAABCUBUCUMUPU
-      RCABUDUMUQUPEZUEUQAUTUQKEUMUOBUQKUFUGUMUTUHUIUJUL $.
-  $}
-
-  ${
-    $d P p q $.
-    $( The prime Omega function has value one at every prime.  (Contributed by
-       Zhi Wang, 17-Oct-2026.) $)
-    bomprm $p |- ( P e. Prime -> ( Omega ` P ) = 1 ) $=
-      ( vp vq cprime wcel cbom cfv cpc co c1 cexp csn csu prmnn crab wceq eqtrd
-      cv cfn mpdan snfi a1i snssi cdvds wbr wb c2 prmuz2 dvdsprm sylan rabbidva
-      cuz ancoms rabsn eqimssd bomnnss cc pccld nn0cnd oveq1 sumsn nncnd oveq2d
-      id exp1d cz 1zzd pcid 3eqtr2d ) ADEZAFGZAAHIZAAJKIZHIZJVJVKALZBRZAHIZBMZV
-      LVJAVOCBANZVOSEVJAUAUBADUCVJCRZAUDUEZCDOZVOVJWBVTAPZCDOVOVJWAWCCDVTDEZVJW
-      AWCUFZWDVTUGULGEVJWEVTUHAVTUIUJUMUKCDAUNQUOUPVJVLUQEVRVLPVJVLVJAAVJVDVSUR
-      USVQVLBADVPAAHUTVATQVJVMAAHVJAVJAVSVBVEVCVJJVFEVNJPVJVGJAVHTVI $.
-  $}
-
-  ${
-    $d p q x $.
-    $( The signed prime Omega function maps nonzero rationals to integers.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomf $p |- Omega : ( QQ \ { 0 } ) --> ZZ $=
-      ( vx vq vp cq cc0 csn cdif cz cv cbom cfv wfn cmpt wceq bomfn wcel cpc co
-      wne cprime dffn5 mpbi crab csu bomval pcqfi elrabi eldifsn biimpi syl2anr
-      wa pcqcl fsumzcl eqeltrd fmpti ) ADEFGZHAIZJKZJJUPLJAUPURMNOAUPJUAUBUQUPP
-      ZURBIUQQRESZBTUCZCIZUQQRZCUDHUQBCUEUSVAVCCUQBUFVBVAPVBTPUQDPUQESUKZVCHPUS
-      UTBVBTUGUSVDUQDEUHUIVBUQULUJUMUNUO $.
-  $}
-
-  ${
     $( Liouville's function takes one of two signs on nonzero rationals.
        (Contributed by Zhi Wang, 27-Oct-2026.) $)
     liounzcl $p |- ( A e. ( QQ \ { 0 } ) -> ( lam ` A ) e. { -u 1 , 1 } ) $=
       ( cq cc0 csn cdif wcel cliou cfv c1 cneg cbom cexp co cpr liouval cz bomf
       ffvelcdmi m1expcl2 syl eqeltrd ) ABCDEZFZAGHIJZAKHZLMZUDINZAOUCUEPFUFUGFU
       BPAKQRUESTUA $.
-  $}
-
-  ${
-    $( Liouville's function takes one of two signs on positive integers.
-       Specialization of ~ liounzcl .  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    liounncl $p |- ( A e. NN -> ( lam ` A ) e. { -u 1 , 1 } ) $=
-      ( cn wcel cq cc0 csn cdif cliou cfv c1 cneg cpr nnqnz liounzcl syl ) ABCA
-      DEFGCAHIJKJLCAMANO $.
   $}
 
   ${
@@ -884693,6 +884957,15 @@ $)
   $}
 
   ${
+    $( Liouville's function takes one of two signs on positive integers.
+       Specialization of ~ liounzcl .  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
+    liounncl $p |- ( A e. NN -> ( lam ` A ) e. { -u 1 , 1 } ) $=
+      ( cn wcel cq cc0 csn cdif cliou cfv c1 cneg cpr nnqnz liounzcl syl ) ABCA
+      DEFGCAHIJKJLCAMANO $.
+  $}
+
+  ${
     $( Liouville's function takes complex values on positive integers.
        Consequence of ~ lioure and ~ recn .  (Contributed by Zhi Wang,
        17-Oct-2026.) $)
@@ -884701,45 +884974,130 @@ $)
   $}
 
   ${
-    $d A p q $.  $d B p q $.
-    $( Complete additivity of the signed prime Omega function on nonzero
-       rationals.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bommul $p |- ( ( A e. ( QQ \ { 0 } ) /\ B e. ( QQ \ { 0 } ) ) ->
-      ( Omega ` ( A x. B ) ) = ( ( Omega ` A ) + ( Omega ` B ) ) ) $=
-      ( vq vp cq cc0 wcel wa cpc wne cprime crab csu caddc cbom cfv cfn wss a1i
-      co csn cdif cun cmul wceq ssrab2 unssi sseli adantl eldifsn birani adantr
-      cv bilani pcqmul syl3anc sumeq2dv pcqfi unfi syl2an eldifi qmulcl qcn syl
-      cc mulne0d eldifsnd unfid cz pcqcl syl2anr zcnd fsumadd eqtrd ssun2 bomss
-      simprd simpl ssun1 sstri simpr oveq12d 3eqtr4d ) AEFUAZUBZGZBWEGZHZCUMZAI
-      TFJZCKLZWIBITFJZCKLZUCZWIABUDTZITFJZCKLZUCZDUMZWOITZDMZWRWSAITZDMZWRWSBIT
-      ZDMZNTZWOOPAOPZBOPZNTWHXAWRXBXDNTZDMXFWHWRWTXIDWHWSWRGZHZWSKGZAEGZAFJZHZB
-      EGZBFJZHZWTXIUEXJXLWHWRKWSWNWQKWKWMKWJCKUFWLCKUFUGWPCKUFUGZUHZUIWHXOXJWFX
-      OWGAEFUJUKZULWHXRXJWGXRWFBEFUJUNZULABWSUOUPUQWHWRXBXDDWHWNWQWFWKQGWMQGWNQ
-      GWGACURBCURWKWMUSUTWHWOWEGWQQGWHWOEFWFXMXPWOEGWGAEWDVAZBEWDVAZABVBUTWHABW
-      HXMAVEGWFXMWGYCULAVCVDWHXPBVEGWGXPWFYDUIBVCVDWHXMXNYAVQWHXPXQYBVQVFVGZWOC
-      URVDVHZXKXBXJXLXOXBVIGWHXTYAWSAVJVKVLXKXDXJXLXRXDVIGWHXTYBWSBVJVKVLVMVNWH
-      WOWRCDYEYFWRKRWHXSSZWQWRRWHWQWNVOSVPWHXGXCXHXENWHAWRCDWFWGVRYFYGWKWRRWHWK
-      WNWRWKWMVSWNWQVSZVTSVPWHBWRCDWFWGWAYFYGWMWRRWHWMWNWRWMWKVOYHVTSVPWBWC $.
+    $( A nonzero value of Liouville's function has a nonzero argument.
+       (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    lioune0 $p |- ( ( lam ` A ) =/= 0 -> A =/= 0 ) $=
+      ( cc0 cliou cfv wceq fveq2 liou0 eqtrdi necon3i ) ABACDZBABEJBCDBABCFGHI
+      $.
   $}
 
   ${
-    $( Complete multiplicativity of Liouville's function on the rationals.
+    $( An argument where Liouville's function is one is nonzero.  (Contributed
+       by Zhi Wang, 27-Oct-2026.) $)
+    liou1ne0 $p |- ( ( lam ` A ) = 1 -> A =/= 0 ) $=
+      ( cliou cfv c1 wceq cc0 wne id ax-1ne0 a1i eqnetrd lioune0 syl ) ABCZDEZN
+      FGAFGONDFOHDFGOIJKALM $.
+  $}
+
+  ${
+    $( An argument where Liouville's function is minus one is nonzero.
        (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    lioumul $p |- ( ( A e. QQ /\ B e. QQ ) ->
-      ( lam ` ( A x. B ) ) = ( ( lam ` A ) x. ( lam ` B ) ) ) $=
-      ( cq wcel wa cmul co cliou cfv wceq cc0 liou0 cc syl2an cbom cexp eldifsn
-      wb wne cz simpr fveq2d wo mul0or fveq2 eqtrdi orim12i lioure recnd sylan2
-      qcn biimpar sylbida 3eqtr4a c1 cneg qmulcl csn cdif liouval sylan mulne0b
-      sylbir caddc bomf ffvelcdmi neg1cn neg1ne0 expaddz mpanl12 bommul 3eqtr4d
-      oveq2d oveqan12d syl2anbr an4s syldan eqtrd pm2.61dane ) ACDZBCDZEZABFGZH
-      IZAHIZBHIZFGZJWCKWBWCKJZEZKHIZKWDWGLWIWCKHWBWHUAUBWBWHAKJZBKJZUCZWGKJZVTA
-      MDZBMDZWHWMRWAAUKZBUKZABUDNWMWBWEKJZWFKJZUCZWNWKWSWLWTWKWEWJKAKHUELUFWLWF
-      WJKBKHUELUFUGWBWNXAVTWEMDWFMDWNXARWAVTWEAUHUIWAWFBUHUIWEWFUDNULUJUMUNWBWC
-      KSZEWDUOUPZWCOIZPGZWGWBWCCDZXBWDXEJZABUQXFXBEWCCKURUSZDXGWCCKQWCUTVCVAWBX
-      BAKSZBKSZEZXEWGJZWBXKXBVTWOWPXKXBRWAWQWRABVBNULVTXIWAXJXLVTXIEAXHDZBXHDZX
-      LWAXJEACKQBCKQXMXNEZXCAOIZBOIZVDGZPGZXCXPPGZXCXQPGZFGZXEWGXMXPTDZXQTDZXSY
-      BJZXNXHTAOVEVFXHTBOVEVFXCMDXCKSYCYDEYEVGVHXCXPXQVIVJNXOXDXRXCPABVKVMXMXNW
-      EXTWFYAFAUTBUTVNVLVOVPVQVRVS $.
+    lioum1ne0 $p |- ( ( lam ` A ) = -u 1 -> A =/= 0 ) $=
+      ( cliou cfv c1 cneg wceq cc0 wne id neg1ne0 a1i eqnetrd lioune0 syl ) ABC
+      ZDEZFZOGHAGHQOPGQIPGHQJKLAMN $.
+  $}
+
+  ${
+    $( Liouville's function vanishes at a rational input exactly when the input
+       is zero.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    lioueq0 $p |- ( A e. QQ -> ( ( lam ` A ) = 0 <-> A = 0 ) ) $=
+      ( cq wcel cliou cfv cc0 wceq wne wa c1 cneg cpr csn cdif eldifsn liounzcl
+      sylbir signne0 syl ex necon4d fveq2 liou0 eqtrdi impbid1 ) ABCZADEZFGAFGZ
+      UFAFUGFUFAFHZUGFHZUFUIIZUGJKJLCZUJUKABFMNCULABFOAPQUGRSTUAUHUGFDEFAFDUBUC
+      UDUE $.
+  $}
+
+  ${
+    $( The zero fiber of Liouville's function on the rationals is the singleton
+       zero.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    liouzerofib $p |- { x e. QQ | ( lam ` x ) = 0 } = { 0 } $=
+      ( cv cliou cfv cc0 wceq cq crab csn lioueq0 rabbiia cz wcel 0z rabsn mp2b
+      zq eqtri ) ABZCDEFZAGHSEFZAGHZEIZTUAAGSJKELMEGMUBUCFNEQAGEOPR $.
+  $}
+
+  ${
+    $( At a nonzero rational, Liouville's function is minus one exactly when it
+       is not one.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    liounzneg1 $p |- ( A e. ( QQ \ { 0 } ) -> ( ( lam ` A ) = -u 1 <->
+      ( lam ` A ) =/= 1 ) ) $=
+      ( cq cc0 csn cdif wcel cliou cfv c1 cneg wceq wne cn nnneneg ax-mp necomi
+      1nn neeq1 mpbiri cpr liounzcl elprn2 sylan ex impbid2 ) ABCDEFZAGHZIJZKZU
+      GILZUIUJUHILIUHIMFIUHLQINOPUGUHIRSUFUJUIUFUGUHITFUJUIAUAUGUHIUBUCUDUE $.
+  $}
+
+  ${
+    $( Two values of Liouville's function at nonzero rationals have product one
+       exactly when they are equal.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    liounzsame $p |- ( ( A e. ( QQ \ { 0 } ) /\ B e. ( QQ \ { 0 } ) ) ->
+      ( ( ( lam ` A ) x. ( lam ` B ) ) = 1 <->
+        ( lam ` A ) = ( lam ` B ) ) ) $=
+      ( cq cc0 csn cdif wcel wa cliou cfv cmul co wceq cneg liounzcl syl signre
+      c1 cc recnd cpr adantl signmulself eqeq2d adantr signne0 mulcan2d bitr3d
+      wne ) ACDEFZGZBUJGZHZAIJZBIJZKLZUOUOKLZMUPRMUNUOMUMUQRUPUMUORNRUAZGZUQRMU
+      LUSUKBOUBZUOUCPUDUMUNUOUOUMUNURGZUNSGUKVAULAOUEVAUNUNQTPUMUSUOSGUTUSUOUOQ
+      TPZVBUMUSUODUIUTUOUFPUGUH $.
+  $}
+
+  ${
+    $( At a nonzero rational input, Liouville's function is one exactly when
+       the signed prime Omega value is even.  (Contributed by Zhi Wang,
+       27-Oct-2026.) $)
+    lioueq1 $p |- ( A e. ( QQ \ { 0 } ) ->
+      ( ( lam ` A ) = 1 <-> 2 || ( Omega ` A ) ) ) $=
+      ( cq cc0 csn cdif wcel cliou cfv c1 wceq cneg cbom cexp co c2 wbr liouval
+      cdvds eqeq1d cz wb bomf ffvelcdmi m1exp1 syl bitrd ) ABCDEZFZAGHZIJIKALHZ
+      MNZIJZOUJRPZUHUIUKIAQSUHUJTFULUMUAUGTALUBUCUJUDUEUF $.
+  $}
+
+  ${
+    $( At a nonzero rational input, Liouville's function is minus one exactly
+       when the signed prime Omega value is odd.  (Contributed by Zhi Wang,
+       27-Oct-2026.) $)
+    lioueqneg1 $p |- ( A e. ( QQ \ { 0 } ) ->
+      ( ( lam ` A ) = -u 1 <-> -. 2 || ( Omega ` A ) ) ) $=
+      ( cq cc0 csn cdif wcel cliou cfv c1 cneg wceq wne c2 cdvds wbr liounzneg1
+      cbom wn lioueq1 necon3abid bitrd ) ABCDEFZAGHZIJKUCILMAQHNOZRAPUBUDUCIAST
+      UA $.
+  $}
+
+  ${
+    $( The square of Liouville's function at a nonzero rational is one.
+       (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    liouvalsq $p |- ( A e. ( QQ \ { 0 } ) -> ( ( lam ` A ) ^ 2 ) = 1 ) $=
+      ( cq cc0 csn cdif wcel cliou cfv c2 cexp co cmul cneg cpr liounzcl signre
+      c1 cr syl recnd sqvald wceq signmulself eqtrd ) ABCDEFZAGHZIJKUFUFLKZQUEU
+      FUEUFUEUFQMQNFZUFRFAOZUFPSTUAUEUHUGQUBUIUFUCSUD $.
+  $}
+
+  ${
+    $( The absolute value of Liouville's function at a nonzero rational is one.
+       (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    liouabsval $p |- ( A e. ( QQ \ { 0 } ) -> ( abs ` ( lam ` A ) ) = 1 ) $=
+      ( cq cc0 csn cdif wcel cliou cfv c1 cneg cpr wceq wo liounzcl elpri fveq2
+      cabs ax-1cn abs1 eqtrdi absnegi eqtri jaoi 3syl ) ABCDEFAGHZIJZIKFUEUFLZU
+      EILZMUEQHZILZANUEUFIOUGUJUHUGUIUFQHZIUEUFQPUKIQHZIIRUASUBTUHUIULIUEIQPSTU
+      CUD $.
+  $}
+
+  ${
+    $( The absolute value of Liouville's function at a rational is at most one.
+       (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    lioule1 $p |- ( A e. QQ -> ( abs ` ( lam ` A ) ) <_ 1 ) $=
+      ( cq wcel cliou cfv cabs c1 cle wbr cc0 wceq wa fveq2 liou0 eqtrdi adantl
+      abs00bd 0le1 eqbrtrdi wne cdif eldifsn liouabsval sylbir 1le1 pm2.61dane
+      csn ) ABCZADEZFEZGHIAJUHAJKZLUJJGHUKUJJKUHUKUIUKUIJDEJAJDMNOQPRSUHAJTLZUJ
+      GGHULABJUGUACUJGKABJUBAUCUDUESUF $.
+  $}
+
+  ${
+    $( On rationals, the value of Liouville's function lies between minus one
+       and one, including its value at zero.  This includes the
+       positive-integer case ` A e. NN ` .  The value at zero is given by
+       ~ liou0 .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    lioubounds $p |- ( A e. QQ -> ( -u 1 <_ ( lam ` A ) /\ ( lam ` A ) <_ 1 ) )
+      $=
+      ( cq wcel cliou cfv cabs c1 cle wbr cneg wa lioule1 cr lioure 1re sylancl
+      wb absle mpbid ) ABCZADEZFEGHIZGJUAHIUAGHIKZALTUAMCGMCUBUCQANOUAGRPS $.
   $}
 
   ${
@@ -884785,366 +885143,39 @@ $)
   $}
 
   ${
-    $( Liouville's function at six is one.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    liou6 $p |- ( lam ` 6 ) = 1 $=
-      ( c2 c3 cmul co cliou cfv c1 cneg c6 wcel wceq 2nn 3nn nnq lioumul syl2an
-      cn cq mp2an liou2 liou3 oveq12i eqtri 2t3e6 fveq2i neg1mulneg1e1 3eqtr3i
-      ) ABCDZEFZGHZUJCDZIEFGUIAEFZBEFZCDZUKAQJZBQJZUIUNKZLMUOARJBRJUQUPANBNABOP
-      SULUJUMUJCTUAUBUCUHIEUDUEUFUG $.
-  $}
-
-  ${
-    $( Multiplication by two negates the value of Liouville's function at a
-       rational input.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liou2mul $p |- ( A e. QQ -> ( lam ` ( 2 x. A ) ) = -u ( lam ` A ) ) $=
-      ( cq wcel c2 cmul co cliou cfv c1 cneg wceq cn 2nn nnq ax-mp lioumul mpan
-      liou2 oveq1i eqtrdi lioure recnd mulm1d eqtrd ) ABCZDAEFGHZIJZAGHZEFZUHJU
-      EUFDGHZUHEFZUIDBCZUEUFUKKDLCULMDNODAPQUJUGUHERSTUEUHUEUHAUAUBUCUD $.
-  $}
-
-  ${
-    $( Multiplication by three negates the value of Liouville's function at a
-       rational input.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liou3mul $p |- ( A e. QQ -> ( lam ` ( 3 x. A ) ) = -u ( lam ` A ) ) $=
-      ( cq wcel c3 cmul co cliou cfv c1 cneg wceq cn 3nn nnq ax-mp lioumul mpan
-      liou3 oveq1i eqtrdi lioure recnd mulm1d eqtrd ) ABCZDAEFGHZIJZAGHZEFZUHJU
-      EUFDGHZUHEFZUIDBCZUEUFUKKDLCULMDNODAPQUJUGUHERSTUEUHUEUHAUAUBUCUD $.
-  $}
-
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Function identities, bounds, and characterizations
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
-
-  ${
-    $( A nonzero value of Liouville's function has a nonzero argument.
+    $( Complete multiplicativity of Liouville's function on the rationals.
        (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    lioune0 $p |- ( ( lam ` A ) =/= 0 -> A =/= 0 ) $=
-      ( cc0 cliou cfv wceq fveq2 liou0 eqtrdi necon3i ) ABACDZBABEJBCDBABCFGHI
-      $.
+    lioumul $p |- ( ( A e. QQ /\ B e. QQ ) ->
+      ( lam ` ( A x. B ) ) = ( ( lam ` A ) x. ( lam ` B ) ) ) $=
+      ( cq wcel wa cmul co cliou cfv wceq cc0 liou0 cc syl2an cbom cexp eldifsn
+      wb wne cz simpr fveq2d wo mul0or fveq2 eqtrdi orim12i lioure recnd sylan2
+      qcn biimpar sylbida 3eqtr4a c1 cneg qmulcl csn cdif liouval sylan mulne0b
+      sylbir caddc bomf ffvelcdmi neg1cn neg1ne0 expaddz mpanl12 bommul 3eqtr4d
+      oveq2d oveqan12d syl2anbr an4s syldan eqtrd pm2.61dane ) ACDZBCDZEZABFGZH
+      IZAHIZBHIZFGZJWCKWBWCKJZEZKHIZKWDWGLWIWCKHWBWHUAUBWBWHAKJZBKJZUCZWGKJZVTA
+      MDZBMDZWHWMRWAAUKZBUKZABUDNWMWBWEKJZWFKJZUCZWNWKWSWLWTWKWEWJKAKHUELUFWLWF
+      WJKBKHUELUFUGWBWNXAVTWEMDWFMDWNXARWAVTWEAUHUIWAWFBUHUIWEWFUDNULUJUMUNWBWC
+      KSZEWDUOUPZWCOIZPGZWGWBWCCDZXBWDXEJZABUQXFXBEWCCKURUSZDXGWCCKQWCUTVCVAWBX
+      BAKSZBKSZEZXEWGJZWBXKXBVTWOWPXKXBRWAWQWRABVBNULVTXIWAXJXLVTXIEAXHDZBXHDZX
+      LWAXJEACKQBCKQXMXNEZXCAOIZBOIZVDGZPGZXCXPPGZXCXQPGZFGZXEWGXMXPTDZXQTDZXSY
+      BJZXNXHTAOVEVFXHTBOVEVFXCMDXCKSYCYDEYEVGVHXCXPXQVIVJNXOXDXRXCPABVKVMXMXNW
+      EXTWFYAFAUTBUTVNVLVOVPVQVRVS $.
   $}
 
   ${
-    $( An argument where Liouville's function is one is nonzero.  (Contributed
-       by Zhi Wang, 27-Oct-2026.) $)
-    liou1ne0 $p |- ( ( lam ` A ) = 1 -> A =/= 0 ) $=
-      ( cliou cfv c1 wceq cc0 wne id ax-1ne0 a1i eqnetrd lioune0 syl ) ABCZDEZN
-      FGAFGONDFOHDFGOIJKALM $.
-  $}
-
-  ${
-    $( An argument where Liouville's function is minus one is nonzero.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    lioum1ne0 $p |- ( ( lam ` A ) = -u 1 -> A =/= 0 ) $=
-      ( cliou cfv c1 cneg wceq cc0 wne id neg1ne0 a1i eqnetrd lioune0 syl ) ABC
-      ZDEZFZOGHAGHQOPGQIPGHQJKLAMN $.
-  $}
-
-  ${
-    $d n p q $.
-    $( The restriction of the signed prime Omega function to positive integers
-       is the prime multiplicity sum.  (Contributed by Zhi Wang,
+    $( Two values of Liouville's function at nonzero rationals have product
+       minus one exactly when they differ.  (Contributed by Zhi Wang,
        27-Oct-2026.) $)
-    bomres $p |- ( Omega |` NN ) =
-      ( n e. NN |-> sum_ p e. { q e. Prime | q || n } ( p pCnt n ) ) $=
-      ( vx cbom cn cres cq cc0 csn cdif cv cfv cmpt cdvds cprime crab wceq wcel
-      wbr cpc co csu wfn bomfn dffn5 reseq1i wss nnqnz ssriv resmpt ax-mp nnznz
-      mpbi cz bomzval syl mpteq2ia 3eqtri ) EFGAHIJZKZALZEMZNZFGZAFVCNZAFBLVBOT
-      BPQCLVBUAUBCUCZNEVDFEVAUDEVDRUEAVAEUFUNUGFVAUHVEVFRDFVADLUIUJAVAFVCUKULAF
-      VCVGVBFSVBUOUTKSVCVGRVBUMVBBCUPUQURUS $.
-  $}
-
-  ${
-    $( The restriction of Liouville's function to positive integers is
-       determined by the parity of the prime Omega function.  (Contributed by
-       Zhi Wang, 27-Oct-2026.) $)
-    lioures $p |- ( lam |` NN ) = ( n e. NN |-> ( -u 1 ^ ( Omega ` n ) ) ) $=
-      ( cliou cn cres cq cv cfv cmpt c1 cneg cbom cexp co wfn wceq lioufn dffn5
-      mpbi reseq1i wcel wss nnssq ax-mp cc0 csn cdif nnqnz liouval syl mpteq2ia
-      resmpt 3eqtri ) BCDAEAFZBGZHZCDZACUNHZACIJUMKGLMZHBUOCBENBUOOPAEBQRSCEUAU
-      PUQOUBAECUNUKUCACUNURUMCTUMEUDUEUFTUNUROUMUGUMUHUIUJUL $.
-  $}
-
-  ${
-    $( Liouville's function restricted to positive integers takes one of two
-       signs.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liouresf $p |- ( lam |` NN ) : NN --> { -u 1 , 1 } $=
-      ( vn cn c1 cneg cpr cv cliou cfv cres cq cmpt wfn wceq dffn5 mpbi reseq1i
-      lioufn wss nnssq resmpt ax-mp eqtri liounncl fmpti ) ABCDCEAFZGHZGBIZUGAJ
-      UFKZBIZABUFKZGUHBGJLGUHMQAJGNOPBJRUIUJMSAJBUFTUAUBUEUCUD $.
-  $}
-
-  ${
-    $( The signed prime Omega function restricted to a class of positive
-       integers takes nonnegative integer values.  (Contributed by Zhi Wang,
-       27-Oct-2026.) $)
-    bomresf $p |- ( T C_ NN -> ( Omega |` T ) : T --> NN0 ) $=
-      ( vn vx cn cn0 cbom cres wf wss cv cfv cc0 csn cdif cmpt wceq bomfn dffn5
-      cq wfn mpbi reseq1i nnqnz ssriv resmpt ax-mp eqtri bomnncl fmpti fssres2
-      mpan ) DEFDGZHADIAEFAGHBDEBJZFKZULULBSLMNZUNOZDGZBDUNOZFUPDFUOTFUPPQBUOFR
-      UAUBDUOIUQURPCDUOCJUCUDBUODUNUEUFUGUMUHUIDEAFUJUK $.
-  $}
-
-  ${
-    $( A positive integer with Liouville's function value minus one is at least
-       two.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liounnnegge2 $p |- ( ( A e. NN /\ ( lam ` A ) = -u 1 ) -> 2 <_ A ) $=
-      ( cn wcel cn0 cc0 wne cliou cfv c1 cneg wceq c2 cle wbr nnnn0 nnne0 fveq2
-      liou1 eqtrdi 1nn nnneneg mp1i eqnetrd necon2i nn0n0n1ge2 syl2an3an ) ABCA
-      DCAEFAGHZIJZKAIFLAMNAOAPAIUGUHAIKZUGIUHUIUGIGHIAIGQRSIBCIUHFUITIUAUBUCUDA
-      UEUF $.
-  $}
-
-  ${
-    $( At a nonzero rational input, Liouville's function is one exactly when
-       the signed prime Omega value is even.  (Contributed by Zhi Wang,
-       27-Oct-2026.) $)
-    lioueq1 $p |- ( A e. ( QQ \ { 0 } ) ->
-      ( ( lam ` A ) = 1 <-> 2 || ( Omega ` A ) ) ) $=
-      ( cq cc0 csn cdif wcel cliou cfv c1 wceq cneg cbom cexp co c2 wbr liouval
-      cdvds eqeq1d cz wb bomf ffvelcdmi m1exp1 syl bitrd ) ABCDEZFZAGHZIJIKALHZ
-      MNZIJZOUJRPZUHUIUKIAQSUHUJTFULUMUAUGTALUBUCUJUDUEUF $.
-  $}
-
-  ${
-    $( Liouville's function vanishes at a rational input exactly when the input
-       is zero.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    lioueq0 $p |- ( A e. QQ -> ( ( lam ` A ) = 0 <-> A = 0 ) ) $=
-      ( cq wcel cliou cfv cc0 wceq wne wa c1 cneg cpr csn cdif eldifsn liounzcl
-      sylbir signne0 syl ex necon4d fveq2 liou0 eqtrdi impbid1 ) ABCZADEZFGAFGZ
-      UFAFUGFUFAFHZUGFHZUFUIIZUGJKJLCZUJUKABFMNCULABFOAPQUGRSTUAUHUGFDEFAFDUBUC
-      UDUE $.
-  $}
-
-  ${
-    $( The square of Liouville's function at a nonzero rational is one.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liouvalsq $p |- ( A e. ( QQ \ { 0 } ) -> ( ( lam ` A ) ^ 2 ) = 1 ) $=
-      ( cq cc0 csn cdif wcel cliou cfv c2 cexp co cmul cneg cpr liounzcl signre
-      c1 cr syl recnd sqvald wceq signmulself eqtrd ) ABCDEFZAGHZIJKUFUFLKZQUEU
-      FUEUFUEUFQMQNFZUFRFAOZUFPSTUAUEUHUGQUBUIUFUCSUD $.
-  $}
-
-  ${
-    $( The absolute value of Liouville's function at a nonzero rational is one.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liouabsval $p |- ( A e. ( QQ \ { 0 } ) -> ( abs ` ( lam ` A ) ) = 1 ) $=
-      ( cq cc0 csn cdif wcel cliou cfv c1 cneg cpr wceq wo liounzcl elpri fveq2
-      cabs ax-1cn abs1 eqtrdi absnegi eqtri jaoi 3syl ) ABCDEFAGHZIJZIKFUEUFLZU
-      EILZMUEQHZILZANUEUFIOUGUJUHUGUIUFQHZIUEUFQPUKIQHZIIRUASUBTUHUIULIUEIQPSTU
-      CUD $.
-  $}
-
-  ${
-    $( At a nonzero rational, Liouville's function is minus one exactly when it
-       is not one.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liounzneg1 $p |- ( A e. ( QQ \ { 0 } ) -> ( ( lam ` A ) = -u 1 <->
-      ( lam ` A ) =/= 1 ) ) $=
-      ( cq cc0 csn cdif wcel cliou cfv c1 cneg wceq wne cn nnneneg ax-mp necomi
-      1nn neeq1 mpbiri cpr liounzcl elprn2 sylan ex impbid2 ) ABCDEFZAGHZIJZKZU
-      GILZUIUJUHILIUHIMFIUHLQINOPUGUHIRSUFUJUIUFUGUHITFUJUIAUAUGUHIUBUCUDUE $.
-  $}
-
-  ${
-    $d A p $.
-    liounegprmexd.1 $e |- ( ph -> A e. NN ) $.
-    liounegprmexd.2 $e |- ( ph -> ( lam ` A ) = -u 1 ) $.
-    $( A positive integer with negative value of Liouville's function has a
-       prime divisor.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    liounegprmexd $p |- ( ph -> E. p e. Prime p || A ) $=
-      ( c1 c2 1red cr wcel 2re a1i nnred clt wbr 1lt2 cn cliou cfv cneg syl2anc
-      wceq cle liounnnegge2 ltletrd exprmfctd ) ABCDAFGBAHGIJAKLABDMFGNOAPLABQJ
-      BRSFTUBGBUCODEBUDUAUEUF $.
-  $}
-
-  ${
-    $d A p q $.
-    $( Negating a nonzero rational does not change its signed prime Omega
-       value.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomneg $p |- ( A e. ( QQ \ { 0 } ) -> ( Omega ` -u A ) = ( Omega ` A ) ) $=
-      ( vq vp cq cc0 wcel cv cpc co wne cprime crab csu cbom wceq pcneg syl2anr
-      cfv syl bomval csn cdif wa eldifi neeq1d rabbidva elrabi sumeq12dv qnegcl
-      cneg id cc qcn eldifsni negne0d eldifsnd 3eqtr4d ) ADEUAZUBZFZBGZAUJZHIZE
-      JZBKLZCGZVBHIZCMZVAAHIZEJZBKLZVFAHIZCMVBNRZANRUTVEVKVGVLCUTVDVJBKUTVAKFZU
-      CVCVIEVNVNADFZVCVIOUTVNUKADURUDZAVAPQUEUFVFVEFVFKFVOVGVLOUTVDBVFKUGVPAVFP
-      QUHUTVBUSFVMVHOUTVBDEUTVOVBDFVPAUISUTAUTVOAULFVPAUMSADEUNUOUPVBBCTSABCTUQ
-      $.
-  $}
-
-  ${
-    $( Taking the absolute value of a nonzero rational does not change its
-       signed prime Omega value.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomabs $p |- ( A e. ( QQ \ { 0 } ) -> ( Omega ` ( abs ` A ) ) =
-      ( Omega ` A ) ) $=
-      ( cq cc0 csn cdif wcel cabs cfv wceq cbom cneg fveq2 a1i bomneg sylan9eqr
-      wi ex eldifi qred absord mpjaod ) ABCDZEFZAGHZAIZUDJHZAJHZIZUDAKZIZUEUHPU
-      CUDAJLMUCUJUHUJUCUFUIJHUGUDUIJLANOQUCAUCAABUBRSTUA $.
-  $}
-
-  ${
-    $( The signed prime Omega function at minus one is zero.  (Contributed by
-       Zhi Wang, 27-Oct-2026.) $)
-    bomneg1 $p |- ( Omega ` -u 1 ) = 0 $=
-      ( c1 cneg cbom cfv cc0 cn wcel cq csn cdif wceq 1nn nnqnz mp2b bom1 eqtri
-      bomneg ) ABCDZACDZEAFGAHEIJGRSKLAMAQNOP $.
-  $}
-
-  ${
-    $( The signed prime Omega function takes nonnegative integer values on
-       nonzero integers.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomzcl $p |- ( A e. ( ZZ \ { 0 } ) -> ( Omega ` A ) e. NN0 ) $=
-      ( cz cc0 csn cdif wcel cabs cfv cbom cn0 cq wceq eldifi eldifsni eldifsnd
-      zq syl bomabs cn wne wa eldifsn nnabscl sylbi bomnncl eqeltrrd ) ABCDZEFZ
-      AGHZIHZAIHZJUHAKUGEFUJUKLUHAKCUHABFZAKFABUGMAPQABCNOARQUHUISFZUJJFUHULACT
-      UAUMABCUBAUCUDUIUEQUF $.
-  $}
-
-  ${
-    $( The signed prime Omega function converts a quotient of nonzero rationals
-       to a difference.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomdiv $p |- ( ( A e. ( QQ \ { 0 } ) /\ B e. ( QQ \ { 0 } ) ) ->
-      ( Omega ` ( A / B ) ) = ( ( Omega ` A ) - ( Omega ` B ) ) ) $=
-      ( cq cc0 csn cdif wcel wa co cbom cfv eldifad eldifsnbd qcn syl ffvelcdmi
-      cz cc bomf zcnd cdiv wne simpl simpr qdivcl syl3anc divne0d eldifsnd cmul
-      caddc wceq bommul sylancom divcan1d fveq2d eqtr3d mvlraddd ) ACDEZFZGZBUS
-      GZHZABUAIZJKZBJKZAJKZVBVDVBVCUSGZVDQGVBVCCDVBACGZBCGZBDUBVCCGVBACURUTVAUC
-      ZLZVBBCURUTVAUDZLZVBBCDVLMZABUEUFVBABVBVHARGVKANOZVBVIBRGVMBNOZVBACDVJMVN
-      UGUHZUSQVCJSPOTVBVEVBVAVEQGVLUSQBJSPOTVBVCBUIIZJKZVDVEUJIZVFUTVAVGVSVTUKV
-      QVCBULUMVBVRAJVBABVOVPVNUNUOUPUQ $.
-  $}
-
-  ${
-    $( At a nonzero rational input, Liouville's function is minus one exactly
-       when the signed prime Omega value is odd.  (Contributed by Zhi Wang,
-       27-Oct-2026.) $)
-    lioueqneg1 $p |- ( A e. ( QQ \ { 0 } ) ->
-      ( ( lam ` A ) = -u 1 <-> -. 2 || ( Omega ` A ) ) ) $=
-      ( cq cc0 csn cdif wcel cliou cfv c1 cneg wceq wne c2 cdvds wbr liounzneg1
-      cbom wn lioueq1 necon3abid bitrd ) ABCDEFZAGHZIJKUCILMAQHNOZRAPUBUDUCIAST
-      UA $.
-  $}
-
-  ${
-    $d A p q $.  $d K p q $.
-    $( The signed prime Omega function converts an integer power to an integer
-       multiple.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomexp $p |- ( ( A e. ( QQ \ { 0 } ) /\ K e. ZZ ) -> ( Omega ` ( A ^ K ) )
-      = ( K x. ( Omega ` A ) ) ) $=
-      ( vq vp cq cc0 wcel cz wa cv cpc wne cprime crab csu cmul adantr wss a1i
-      co csn cdif cexp cun cbom cfv wceq ssrab2 unssi sseli adantl birani simpr
-      eldifsn pcexp syl3anc sumeq2dv cfn pcqfi simpld simprd qexpclz cc qcn syl
-      expne0d unfid zcnd pcqcl syl2anr fsummulc2 eqtr4d ssun2 bomss simpl ssun1
-      eldifsnd oveq2d 3eqtr4d ) AEFUAUBZGZBHGZIZCJZAKTFLZCMNZWDABUCTZKTFLZCMNZU
-      DZDJZWGKTZDOZBWJWKAKTZDOZPTZWGUEUFBAUEUFZPTWCWMWJBWNPTZDOWPWCWJWLWRDWCWKW
-      JGZIZWKMGZAEGZAFLZIZWBWLWRUGWSXAWCWJMWKWFWIMWECMUHWHCMUHUIZUJZUKWCXDWSWAX
-      DWBAEFUNULZQWCWBWSWAWBUMZQAWKBUOUPUQWCWJWNBDWCWFWIWAWFURGWBACUSQWCWGVTGWI
-      URGWCWGEFWCXBXCWBWGEGWCXBXCXGUTZWCXBXCXGVAZXHABVBUPWCABWCXBAVCGXIAVDVEXJX
-      HVFVQZWGCUSVEVGZWCBXHVHWTWNWSXAXDWNHGWCXFXGWKAVIVJVHVKVLWCWGWJCDXKXLWJMRW
-      CXESZWIWJRWCWIWFVMSVNWCWQWOBPWCAWJCDWAWBVOXLXMWFWJRWCWFWIVPSVNVRVS $.
-  $}
-
-  ${
-    $( The signed prime Omega function of an integer power of a prime is its
-       exponent.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomprmexp $p |- ( ( P e. Prime /\ K e. ZZ ) ->
-      ( Omega ` ( P ^ K ) ) = K ) $=
-      ( cprime wcel cz wa cexp co cbom cfv cmul c1 cq cc0 cdif wceq prmnn nnqnz
-      csn cn syl bomexp sylan bomprm adantr oveq2d simpr zcnd mulridd 3eqtrd )
-      ACDZBEDZFZABGHIJZBAIJZKHZBLKHBUKAMNSODZULUNUPPUKATDUQAQARUAABUBUCUMUOLBKU
-      KUOLPULAUDUEUFUMBUMBUKULUGUHUIUJ $.
-  $}
-
-  ${
-    $( The prime Omega function at four is two.  (Contributed by Zhi Wang,
-       27-Oct-2026.) $)
-    bom4 $p |- ( Omega ` 4 ) = 2 $=
-      ( c2 cexp co cbom cfv c4 sq2 fveq2i cprime wcel cz wceq 2prm 2z bomprmexp
-      mp2an eqtr3i ) AABCZDEZFDEARFDGHAIJAKJSALMNAAOPQ $.
-  $}
-
-  ${
-    $( The signed prime Omega function changes sign under reciprocation.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomrec $p |- ( A e. ( QQ \ { 0 } ) ->
-      ( Omega ` ( 1 / A ) ) = -u ( Omega ` A ) ) $=
-      ( cq cc0 csn cdif wcel c1 cdiv co cbom cfv cmin cneg wceq 1nn nnqnz ax-mp
-      cn bomdiv mpan bom1 oveq1i eqtrdi df-neg eqtr4di ) ABCDEZFZGAHIJKZCAJKZLI
-      ZUIMUGUHGJKZUILIZUJGUFFZUGUHULNGRFUMOGPQGASTUKCUILUAUBUCUIUDUE $.
-  $}
-
-  ${
-    $( The zero fiber of Liouville's function on the rationals is the singleton
-       zero.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liouzerofib $p |- { x e. QQ | ( lam ` x ) = 0 } = { 0 } $=
-      ( cv cliou cfv cc0 wceq cq crab csn lioueq0 rabbiia cz wcel 0z rabsn mp2b
-      zq eqtri ) ABZCDEFZAGHSEFZAGHZEIZTUAAGSJKELMEGMUBUCFNEQAGEOPR $.
-  $}
-
-  ${
-    $( Liouville's function is unchanged by negating a rational input.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liouneg $p |- ( A e. QQ -> ( lam ` -u A ) = ( lam ` A ) ) $=
-      ( cq wcel cneg cliou cfv cc0 wceq c1 cbom cexp co cif qnegcl liouval0 syl
-      qcn negeq0d ifbid wn wa csn cdif simpl simpr neqned bomneg oveq2d ifeq2da
-      eldifsnd 3eqtr2d eqtr4d ) ABCZADZEFZAGHZGIDZAJFZKLZMZAEFUMUOUNGHZGUQUNJFZ
-      KLZMZUPGVCMUTUMUNBCUOVDHANUNOPUMUPVAGVCUMAAQRSUMUPVCUSGUMUPTZUAZVBURUQKVF
-      ABGUBUCCVBURHVFABGUMVEUDVFAGUMVEUEUFUJAUGPUHUIUKAOUL $.
-  $}
-
-  ${
-    $( Liouville's function at minus one is one.  (Contributed by Zhi Wang,
-       27-Oct-2026.) $)
-    liouneg1 $p |- ( lam ` -u 1 ) = 1 $=
-      ( c1 cneg cliou cfv cq wcel wceq 1q liouneg ax-mp liou1 eqtri ) ABCDZACDZ
-      AAEFMNGHAIJKL $.
-  $}
-
-  ${
-    $( Liouville's function is unchanged by taking the absolute value of a
-       rational input.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liouabs $p |- ( A e. QQ -> ( lam ` ( abs ` A ) ) = ( lam ` A ) ) $=
-      ( wcel cabs cfv wceq cliou cneg fveq2 adantl liouneg sylan9eqr qre absord
-      cq mpjaodan ) ANBZACDZAEZQFDZAFDZEZQAGZEZRUAPQAFHIUCPSUBFDTQUBFHAJKPAALMO
-      $.
-  $}
-
-  ${
-    $( The range of Liouville's function is exactly the set consisting of minus
-       one, zero, and one.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liourn $p |- ran lam = { -u 1 , 0 , 1 } $=
-      ( cliou crn c1 cneg cc0 ctp cq wf wss liouf frn ax-mp c2 cfv liou2 lioufn
-      wcel fnfvelrn mp2an eqeltrri wfn cn 2nn nnq liou0 cz 0z zq liou1 1q tpssi
-      mp3an eqssi ) ABZCDZECFZGUPAHUNUPIJGUPAKLUOUNQEUNQCUNQUPUNIMANZUOUNOAGUAZ
-      MGQZUQUNQPMUBQUSUCMUDLGMARSTEANZEUNUEUREGQZUTUNQPEUFQVAUGEUHLGEARSTCANZCU
-      NUIURCGQVBUNQPUJGCARSTUOECUNUKULUM $.
-  $}
-
-  ${
-    $( The range of the signed prime Omega function is the integers.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomrn $p |- ran Omega = ZZ $=
-      ( vx cbom crn cz cq cc0 csn cdif wf wss bomf frn ax-mp cv wcel c2 cexp co
-      sylancr 2ne0 cfv cprime wceq 2prm bomprmexp wfn bomfn wne 2nn nnq qexpclz
-      id cn mp3an12 2cnd a1i expne0d eldifsnd fnfvelrn eqeltrrd ssriv eqssi ) B
-      CZDEFGHZDBIVCDJKVDDBLMADVCANZDOZPVEQRZBUAZVEVCVFPUBOVFVHVEUCUDVFULZPVEUES
-      VFBVDUFVGVDOVHVCOUGVFVGEFPEOZPFUHZVFVGEOPUMOVJUIPUJMTPVEUKUNVFPVEVFUOVKVF
-      TUPVIUQURVDVGBUSSUTVAVB $.
-  $}
-
-  ${
-    $( Two values of Liouville's function at nonzero rationals have product one
-       exactly when they are equal.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liounzsame $p |- ( ( A e. ( QQ \ { 0 } ) /\ B e. ( QQ \ { 0 } ) ) ->
-      ( ( ( lam ` A ) x. ( lam ` B ) ) = 1 <->
-        ( lam ` A ) = ( lam ` B ) ) ) $=
-      ( cq cc0 csn cdif wcel wa cliou cfv cmul co wceq cneg liounzcl syl signre
-      c1 cc recnd cpr adantl signmulself eqeq2d adantr signne0 mulcan2d bitr3d
-      wne ) ACDEFZGZBUJGZHZAIJZBIJZKLZUOUOKLZMUPRMUNUOMUMUQRUPUMUORNRUAZGZUQRMU
-      LUSUKBOUBZUOUCPUDUMUNUOUOUMUNURGZUNSGUKVAULAOUEVAUNUNQTPUMUSUOSGUTUSUOUOQ
-      TPZVBUMUSUODUIUTUOUFPUGUH $.
+    liounzdiff $p |- ( ( A e. ( QQ \ { 0 } ) /\ B e. ( QQ \ { 0 } ) ) ->
+      ( ( ( lam ` A ) x. ( lam ` B ) ) = -u 1 <->
+        ( lam ` A ) =/= ( lam ` B ) ) ) $=
+      ( cq cc0 wcel wa cliou cfv cmul co c1 wceq wne eldifsn simpld syl2anc qcn
+      cc syl simprd csn cdif cneg birani bilani lioumul eqeq1d mulne0d eldifsnd
+      wb qmulcl liounzneg1 bitr3d neeq1d liounzsame necon3bid 3bitrd ) ACDUAUBZ
+      EZBUREZFZAGHZBGHZIJZKUCZLZABIJZGHZKMZVDKMVBVCMVAVHVELZVFVIVAVHVDVEVAACEZB
+      CEZVHVDLVAVKADMZUSVKVMFUTACDNUDZOZVAVLBDMZUTVLVPFUSBCDNUEZOZABUFPZUGVAVGU
+      REVJVIUJVAVGCDVAVKVLVGCEVOVRABUKPVAABVAVKAREVOAQSVAVLBREVRBQSVAVKVMVNTVAV
+      LVPVQTUHUIVGULSUMVAVHVDKVSUNVAVDKVBVCABUOUPUQ $.
   $}
 
   ${
@@ -885161,6 +885192,31 @@ $)
       MABVMWEASEWHAVAPWIWJULUMVNQPVMWAWCVPHVMWABVQMIWCABUNVMBVQVMBWJRVMVQVKVQFE
       ZVLVJFALVBUOTZRUPUQURVMVPSEZVPDOZGZWKVLWDVSNWOVMWMWNUSUTVCVDWLWJVPVQBVEVF
       VGVMVTVRBHVKVTVRNVLAQTVHVI $.
+  $}
+
+  ${
+    $( Liouville's function commutes with nonnegative integer powers of
+       rational inputs.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    liouexpnn0 $p |- ( ( A e. QQ /\ K e. NN0 ) -> ( lam ` ( A ^ K ) ) =
+      ( ( lam ` A ) ^ K ) ) $=
+      ( cq wcel cn0 wa cexp co cliou cfv wceq cc0 liou0 fveq2d 3eqtr4a ad2antlr
+      c1 eqtrdi simpr oveq1d cn wo elnn0 0exp liou1 oveq2 0exp0e1 sylbi 3eqtr4d
+      jaoi wne csn cdif cz simpll eldifsnd nn0z liouexp syl2anc pm2.61dane ) AC
+      DZBEDZFZABGHZIJZAIJZBGHZKZALVCALKZFZLBGHZIJZVKVEVGVBVLVKKZVAVIVBBUADZBLKZ
+      UBVMBUCVNVMVOVNLIJZLVLVKMVNVKLIBUDZNVQOVOQIJQVLVKUEVOVKQIVOVKLLGHQBLLGUFU
+      GRZNVROUJUHPVJVDVKIVJALBGVCVISZTNVJVFLBGVJVFVPLVJALIVSNMRTUIVCALUKZFZACLU
+      LUMDBUNDZVHWAACLVAVBVTUOVCVTSUPVBWBVAVTBUQPABURUSUT $.
+  $}
+
+  ${
+    $( Liouville's function at an integer power of a prime is the corresponding
+       power of minus one.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    liouprmexp $p |- ( ( P e. Prime /\ K e. ZZ ) -> ( lam ` ( P ^ K ) ) =
+      ( -u 1 ^ K ) ) $=
+      ( cprime wcel cz wa cexp co cliou cfv c1 cneg cq cc0 csn cdif prmnn nnqnz
+      wceq cn syl liouexp sylan liouprm adantr oveq1d eqtrd ) ACDZBEDZFZABGHIJZ
+      AIJZBGHZKLZBGHUHAMNOPDZUIUKUMSUHATDUOAQARUAABUBUCUJULUNBGUHULUNSUIAUDUEUF
+      UG $.
   $}
 
   ${
@@ -885184,6 +885240,51 @@ $)
   $}
 
   ${
+    $( Liouville's function at six is one.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
+    liou6 $p |- ( lam ` 6 ) = 1 $=
+      ( c2 c3 cmul co cliou cfv c1 cneg c6 wcel wceq 2nn 3nn nnq lioumul syl2an
+      cn cq mp2an liou2 liou3 oveq12i eqtri 2t3e6 fveq2i neg1mulneg1e1 3eqtr3i
+      ) ABCDZEFZGHZUJCDZIEFGUIAEFZBEFZCDZUKAQJZBQJZUIUNKZLMUOARJBRJUQUPANBNABOP
+      SULUJUMUJCTUAUBUCUHIEUDUEUFUG $.
+  $}
+
+  ${
+    $( Liouville's function at four is one.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
+    liou4 $p |- ( lam ` 4 ) = 1 $=
+      ( c2 cexp co cliou cfv c4 c1 sq2 fveq2i cn wcel cq cc0 csn cdif 2nn nnqnz
+      wceq liousq mp2b eqtr3i ) AABCZDEZFDEGUBFDHIAJKALMNOKUCGRPAQASTUA $.
+  $}
+
+  ${
+    $( Multiplication by two negates the value of Liouville's function at a
+       rational input.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    liou2mul $p |- ( A e. QQ -> ( lam ` ( 2 x. A ) ) = -u ( lam ` A ) ) $=
+      ( cq wcel c2 cmul co cliou cfv c1 cneg wceq cn 2nn nnq ax-mp lioumul mpan
+      liou2 oveq1i eqtrdi lioure recnd mulm1d eqtrd ) ABCZDAEFGHZIJZAGHZEFZUHJU
+      EUFDGHZUHEFZUIDBCZUEUFUKKDLCULMDNODAPQUJUGUHERSTUEUHUEUHAUAUBUCUD $.
+  $}
+
+  ${
+    $( Multiplication by three negates the value of Liouville's function at a
+       rational input.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    liou3mul $p |- ( A e. QQ -> ( lam ` ( 3 x. A ) ) = -u ( lam ` A ) ) $=
+      ( cq wcel c3 cmul co cliou cfv c1 cneg wceq cn 3nn nnq ax-mp lioumul mpan
+      liou3 oveq1i eqtrdi lioure recnd mulm1d eqtrd ) ABCZDAEFGHZIJZAGHZEFZUHJU
+      EUFDGHZUHEFZUIDBCZUEUFUKKDLCULMDNODAPQUJUGUHERSTUEUHUEUHAUAUBUCUD $.
+  $}
+
+  ${
+    $( Multiplication by four preserves Liouville's function.  (Contributed by
+       Zhi Wang, 27-Oct-2026.) $)
+    liou4mul $p |- ( A e. QQ -> ( lam ` ( 4 x. A ) ) = ( lam ` A ) ) $=
+      ( cq wcel c4 cmul co cliou cfv c1 wceq 4nn nnq ax-mp lioumul liou4 oveq1i
+      cn mpan eqtrdi lioure recnd mullidd eqtrd ) ABCZDAEFGHZIAGHZEFZUFUDUEDGHZ
+      UFEFZUGDBCZUDUEUIJDQCUJKDLMDANRUHIUFEOPSUDUFUDUFATUAUBUC $.
+  $}
+
+  ${
     $( Liouville's function of a rational quotient with nonzero denominator is
        the product of its values at the numerator and denominator.
        (Contributed by Zhi Wang, 27-Oct-2026.) $)
@@ -885199,23 +885300,6 @@ $)
   $}
 
   ${
-    $( Liouville's function at four is one.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    liou4 $p |- ( lam ` 4 ) = 1 $=
-      ( c2 cexp co cliou cfv c4 c1 sq2 fveq2i cn wcel cq cc0 csn cdif 2nn nnqnz
-      wceq liousq mp2b eqtr3i ) AABCZDEZFDEGUBFDHIAJKALMNOKUCGRPAQASTUA $.
-  $}
-
-  ${
-    $( Multiplication by four preserves Liouville's function.  (Contributed by
-       Zhi Wang, 27-Oct-2026.) $)
-    liou4mul $p |- ( A e. QQ -> ( lam ` ( 4 x. A ) ) = ( lam ` A ) ) $=
-      ( cq wcel c4 cmul co cliou cfv c1 wceq 4nn nnq ax-mp lioumul liou4 oveq1i
-      cn mpan eqtrdi lioure recnd mullidd eqtrd ) ABCZDAEFGHZIAGHZEFZUFUDUEDGHZ
-      UFEFZUGDBCZUDUEUIJDQCUJKDLMDANRUHIUFEOPSUDUFUDUFATUAUBUC $.
-  $}
-
-  ${
     $( Liouville's function is unchanged by reciprocation of a nonzero
        rational.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
     liourec $p |- ( A e. ( QQ \ { 0 } ) ->
@@ -885227,53 +885311,6 @@ $)
   $}
 
   ${
-    $( Liouville's function at an integer power of a prime is the corresponding
-       power of minus one.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liouprmexp $p |- ( ( P e. Prime /\ K e. ZZ ) -> ( lam ` ( P ^ K ) ) =
-      ( -u 1 ^ K ) ) $=
-      ( cprime wcel cz wa cexp co cliou cfv c1 cneg cq cc0 csn cdif prmnn nnqnz
-      wceq cn syl liouexp sylan liouprm adantr oveq1d eqtrd ) ACDZBEDZFZABGHIJZ
-      AIJZBGHZKLZBGHUHAMNOPDZUIUKUMSUHATDUOAQARUAABUBUCUJULUNBGUHULUNSUIAUDUEUF
-      UG $.
-  $}
-
-  ${
-    $( The signed prime Omega value of a nonzero rational is the difference of
-       its values at the absolute numerator and denominator.  (Contributed by
-       Zhi Wang, 27-Oct-2026.) $)
-    bomnumden $p |- ( A e. ( QQ \ { 0 } ) ->
-      ( Omega ` A ) = ( ( Omega ` ( abs ` ( numer ` A ) ) ) -
-        ( Omega ` ( denom ` A ) ) ) ) $=
-      ( cq cc0 csn cdif wcel cnumer cfv cdenom cdiv co cbom cmin cabs cz eldifi
-      wceq qnumcl 3syl syl zq qnumne0 eldifsnd qdencl nnqnz bomdiv qeqnumdivden
-      cn syl2anc fveq2d bomabs oveq1d 3eqtr4d ) ABCDZEZFZAGHZAIHZJKZLHZUQLHZURL
-      HZMKZALHUQNHLHZVBMKUPUQUOFZURUOFZUTVCQUPUQBCUPABFZUQOFUQBFABUNPZARUQUASAU
-      BUCZUPVGURUHFVFVHAUDURUESUQURUFUIUPAUSLUPVGAUSQVHAUGTUJUPVDVAVBMUPVEVDVAQ
-      VIUQUKTULUM $.
-  $}
-
-  ${
-    $( The absolute value of Liouville's function at a rational is at most one.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    lioule1 $p |- ( A e. QQ -> ( abs ` ( lam ` A ) ) <_ 1 ) $=
-      ( cq wcel cliou cfv cabs c1 cle wbr cc0 wceq wa fveq2 liou0 eqtrdi adantl
-      abs00bd 0le1 eqbrtrdi wne cdif eldifsn liouabsval sylbir 1le1 pm2.61dane
-      csn ) ABCZADEZFEZGHIAJUHAJKZLUJJGHUKUJJKUHUKUIUKUIJDEJAJDMNOQPRSUHAJTLZUJ
-      GGHULABJUGUACUJGKABJUBAUCUDUESUF $.
-  $}
-
-  ${
-    $( On rationals, the value of Liouville's function lies between minus one
-       and one, including its value at zero.  This includes the
-       positive-integer case ` A e. NN ` .  The value at zero is given by
-       ~ liou0 .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    lioubounds $p |- ( A e. QQ -> ( -u 1 <_ ( lam ` A ) /\ ( lam ` A ) <_ 1 ) )
-      $=
-      ( cq wcel cliou cfv cabs c1 cle wbr cneg wa lioule1 cr lioure 1re sylancl
-      wb absle mpbid ) ABCZADEZFEGHIZGJUAHIUAGHIKZALTUAMCGMCUBUCQANOUAGRPS $.
-  $}
-
-  ${
     $( For nonzero rational inputs, Liouville's function of their quotient is
        one exactly when its values at the two inputs are equal.  (Contributed
        by Zhi Wang, 27-Oct-2026.) $)
@@ -885282,50 +885319,6 @@ $)
       ( cq cc0 csn cdif wcel wa cdiv co cliou c1 wceq cmul eldifi lioudiv sylan
       cfv eqeq1d liounzsame bitrd ) ACDEZFZGZBUCGZHZABIJKRZLMAKRZBKRZNJZLMUHUIM
       UFUGUJLUDACGUEUGUJMACUBOABPQSABTUA $.
-  $}
-
-  ${
-    $( Liouville's function of a rational is the product of its values at the
-       absolute numerator and denominator.  (Contributed by Zhi Wang,
-       27-Oct-2026.) $)
-    liounumden $p |- ( A e. QQ ->
-      ( lam ` A ) = ( ( lam ` ( abs ` ( numer ` A ) ) ) x.
-        ( lam ` ( denom ` A ) ) ) ) $=
-      ( cq wcel cnumer cfv cdenom cdiv cliou cmul cabs cc0 csn cdif wceq qnumcl
-      co cz zq syl cn qdencl lioudiv syl2anc qeqnumdivden fveq2d liouabs oveq1d
-      nnqnz 3eqtr4d ) ABCZADEZAFEZGPZHEZUKHEZULHEZIPZAHEUKJEHEZUPIPUJUKBCZULBKL
-      MCZUNUQNUJUKQCUSAOUKRSZUJULTCUTAUAULUHSUKULUBUCUJAUMHAUDUEUJURUOUPIUJUSUR
-      UONVAUKUFSUGUI $.
-  $}
-
-  ${
-    $( Two values of Liouville's function at nonzero rationals have product
-       minus one exactly when they differ.  (Contributed by Zhi Wang,
-       27-Oct-2026.) $)
-    liounzdiff $p |- ( ( A e. ( QQ \ { 0 } ) /\ B e. ( QQ \ { 0 } ) ) ->
-      ( ( ( lam ` A ) x. ( lam ` B ) ) = -u 1 <->
-        ( lam ` A ) =/= ( lam ` B ) ) ) $=
-      ( cq cc0 wcel wa cliou cfv cmul co c1 wceq wne eldifsn simpld syl2anc qcn
-      cc syl simprd csn cdif cneg birani bilani lioumul eqeq1d mulne0d eldifsnd
-      wb qmulcl liounzneg1 bitr3d neeq1d liounzsame necon3bid 3bitrd ) ACDUAUBZ
-      EZBUREZFZAGHZBGHZIJZKUCZLZABIJZGHZKMZVDKMVBVCMVAVHVELZVFVIVAVHVDVEVAACEZB
-      CEZVHVDLVAVKADMZUSVKVMFUTACDNUDZOZVAVLBDMZUTVLVPFUSBCDNUEZOZABUFPZUGVAVGU
-      REVJVIUJVAVGCDVAVKVLVGCEVOVRABUKPVAABVAVKAREVOAQSVAVLBREVRBQSVAVKVMVNTVAV
-      LVPVQTUHUIVGULSUMVAVHVDKVSUNVAVDKVBVCABUOUPUQ $.
-  $}
-
-  ${
-    $( Liouville's function commutes with nonnegative integer powers of
-       rational inputs.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liouexpnn0 $p |- ( ( A e. QQ /\ K e. NN0 ) -> ( lam ` ( A ^ K ) ) =
-      ( ( lam ` A ) ^ K ) ) $=
-      ( cq wcel cn0 wa cexp co cliou cfv wceq cc0 liou0 fveq2d 3eqtr4a ad2antlr
-      c1 eqtrdi simpr oveq1d cn wo elnn0 0exp liou1 oveq2 0exp0e1 sylbi 3eqtr4d
-      jaoi wne csn cdif cz simpll eldifsnd nn0z liouexp syl2anc pm2.61dane ) AC
-      DZBEDZFZABGHZIJZAIJZBGHZKZALVCALKZFZLBGHZIJZVKVEVGVBVLVKKZVAVIVBBUADZBLKZ
-      UBVMBUCVNVMVOVNLIJZLVLVKMVNVKLIBUDZNVQOVOQIJQVLVKUEVOVKQIVOVKLLGHQBLLGUFU
-      GRZNVROUJUHPVJVDVKIVJALBGVCVISZTNVJVFLBGVJVFVPLVJALIVSNMRTUIVCALUKZFZACLU
-      LUMDBUNDZVHWAACLVAVBVTUOVCVTSUPVBWBVAVTBUQPABURUSUT $.
   $}
 
   ${
@@ -885374,136 +885367,129 @@ $)
   $}
 
   ${
-    $( The prime Omega function is nondecreasing under divisibility of positive
-       integers.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomdvdsle $p |- ( ( M e. NN /\ N e. NN /\ M || N ) ->
-      ( Omega ` M ) <_ ( Omega ` N ) ) $=
-      ( cn wcel cdvds wbr w3a cbom cfv cdiv co caddc cle cr cn0 bomnncl syl2anc
-      syl nncnd nnqnz simp1 nn0red simp3 simp2 nndivdvds mpbid nn0addge1 nnne0d
-      wb cmul divcan2d fveq2d wceq cc0 csn cdif bommul syl2an eqtr3d breqtrrd
-      cq ) ACDZBCDZABEFZGZAHIZVFBAJKZHIZLKZBHIZMVEVFNDVHODZVFVIMFVEVFVEVBVFODVB
-      VCVDUAZAPRUBVEVGCDZVKVEVDVMVBVCVDUCVEVCVBVDVMUIVBVCVDUDZVLBAUEQUFZVGPRVFV
-      HUGQVEAVGUJKZHIZVJVIVEVPBHVEBAVEBVNSVEAVLSVEAVLUHUKULVEVBVMVQVIUMZVLVOVBA
-      VAUNUOUPZDVGVSDVRVMATVGTAVGUQURQUSUT $.
+    $( Liouville's function is unchanged by negating a rational input.
+       (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    liouneg $p |- ( A e. QQ -> ( lam ` -u A ) = ( lam ` A ) ) $=
+      ( cq wcel cneg cliou cfv cc0 wceq c1 cbom cexp co cif qnegcl liouval0 syl
+      qcn negeq0d ifbid wn wa csn cdif simpl simpr neqned bomneg oveq2d ifeq2da
+      eldifsnd 3eqtr2d eqtr4d ) ABCZADZEFZAGHZGIDZAJFZKLZMZAEFUMUOUNGHZGUQUNJFZ
+      KLZMZUPGVCMUTUMUNBCUOVDHANUNOPUMUPVAGVCUMAAQRSUMUPVCUSGUMUPTZUAZVBURUQKVF
+      ABGUBUCCVBURHVFABGUMVEUDVFAGUMVEUEUFUJAUGPUHUIUKAOUL $.
   $}
 
   ${
-    $( For two positive integers, the sum of the prime Omega values at their
-       gcd and lcm equals the sum of their prime Omega values.  (Contributed by
+    $( Liouville's function at minus one is one.  (Contributed by Zhi Wang,
+       27-Oct-2026.) $)
+    liouneg1 $p |- ( lam ` -u 1 ) = 1 $=
+      ( c1 cneg cliou cfv cq wcel wceq 1q liouneg ax-mp liou1 eqtri ) ABCDZACDZ
+      AAEFMNGHAIJKL $.
+  $}
+
+  ${
+    $( Liouville's function is unchanged by taking the absolute value of a
+       rational input.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    liouabs $p |- ( A e. QQ -> ( lam ` ( abs ` A ) ) = ( lam ` A ) ) $=
+      ( wcel cabs cfv wceq cliou cneg fveq2 adantl liouneg sylan9eqr qre absord
+      cq mpjaodan ) ANBZACDZAEZQFDZAFDZEZQAGZEZRUAPQAFHIUCPSUBFDTQUBFHAJKPAALMO
+      $.
+  $}
+
+  ${
+    $( Liouville's function of a rational is the product of its values at the
+       absolute numerator and denominator.  (Contributed by Zhi Wang,
+       27-Oct-2026.) $)
+    liounumden $p |- ( A e. QQ ->
+      ( lam ` A ) = ( ( lam ` ( abs ` ( numer ` A ) ) ) x.
+        ( lam ` ( denom ` A ) ) ) ) $=
+      ( cq wcel cnumer cfv cdenom cdiv cliou cmul cabs cc0 csn cdif wceq qnumcl
+      co cz zq syl cn qdencl lioudiv syl2anc qeqnumdivden fveq2d liouabs oveq1d
+      nnqnz 3eqtr4d ) ABCZADEZAFEZGPZHEZUKHEZULHEZIPZAHEUKJEHEZUPIPUJUKBCZULBKL
+      MCZUNUQNUJUKQCUSAOUKRSZUJULTCUTAUAULUHSUKULUBUCUJAUMHAUDUEUJURUOUPIUJUSUR
+      UONVAUKUFSUGUI $.
+  $}
+
+  ${
+    $( The restriction of Liouville's function to positive integers is
+       determined by the parity of the prime Omega function.  (Contributed by
        Zhi Wang, 27-Oct-2026.) $)
-    bomgcdlcm $p |- ( ( M e. NN /\ N e. NN ) ->
-      ( ( Omega ` ( M gcd N ) ) + ( Omega ` ( M lcm N ) ) ) =
-      ( ( Omega ` M ) + ( Omega ` N ) ) ) $=
-      ( cn wcel co cbom cfv caddc cn0 bomnncl syl nn0cnd cz wceq wn nnzd nnne0d
-      cc0 neneqd nnqnz wa cgcd clcm gcdnncl simpl simpr ioran sylanbrc syl21anc
-      wo lcmn0cl addcomd cmul lcmgcdnn fveq2d cq csn cdif bommul syl2an syl2anc
-      3eqtr3d eqtrd ) ACDZBCDZUAZABUBEZFGZABUCEZFGZHEVJVHHEZAFGBFGHEZVFVHVJVFVH
-      VFVGCDZVHIDABUDZVGJKLVFVJVFVICDZVJIDVFAMDBMDARNZBRNZUJOZVOVFAVDVEUEZPVFBV
-      DVEUFZPVFVPOVQOVRVFARVFAVSQSVFBRVFBVTQSVPVQUGUHABUKUIZVIJKLULVFVIVGUMEZFG
-      ZABUMEZFGZVKVLVFWBWDFABUNUOVFVOVMWCVKNZWAVNVOVIUPRUQURZDVGWGDWFVMVITVGTVI
-      VGUSUTVAVDAWGDBWGDWEVLNVEATBTABUSUTVBVC $.
+    lioures $p |- ( lam |` NN ) = ( n e. NN |-> ( -u 1 ^ ( Omega ` n ) ) ) $=
+      ( cliou cn cres cq cv cfv cmpt c1 cneg cbom cexp co wfn wceq lioufn dffn5
+      mpbi reseq1i wcel wss nnssq ax-mp cc0 csn cdif nnqnz liouval syl mpteq2ia
+      resmpt 3eqtri ) BCDAEAFZBGZHZCDZACUNHZACIJUMKGLMZHBUOCBENBUOOPAEBQRSCEUAU
+      PUQOUBAECUNUKUCACUNURUMCTUMEUDUEUFTUNUROUMUGUMUHUIUJUL $.
   $}
 
   ${
-    $( Every prime valuation of a positive integer is bounded by its prime
-       Omega value.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bompc $p |- ( ( P e. Prime /\ N e. NN ) ->
-      ( P pCnt N ) <_ ( Omega ` N ) ) $=
-      ( cprime wcel cn wa cpc co cexp cbom cfv cle cz wceq pccl nn0zd bomprmexp
-      syldan cdvds wbr prmnn adantr nnexpcld pcdvds bomdvdsle syl3anc eqbrtrrd
-      simpr ) ACDZBEDZFZAABGHZIHZJKZULBJKZLUIUJULMDUNULNUKULABOZPAULQRUKUMEDUJU
-      MBSTUNUOLTUKAULUIAEDUJAUAUBUPUCUIUJUHABUDUMBUEUFUG $.
+    $( Liouville's function restricted to positive integers takes one of two
+       signs.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    liouresf $p |- ( lam |` NN ) : NN --> { -u 1 , 1 } $=
+      ( vn cn c1 cneg cpr cv cliou cfv cres cq cmpt wfn wceq dffn5 mpbi reseq1i
+      lioufn wss nnssq resmpt ax-mp eqtri liounncl fmpti ) ABCDCEAFZGHZGBIZUGAJ
+      UFKZBIZABUFKZGUHBGJLGUHMQAJGNOPBJRUIUJMSAJBUFTUAUBUEUCUD $.
   $}
 
   ${
-    $d N p $.
-    $( The prime Omega function of a positive integer is zero exactly at one.
+    $( The range of Liouville's function is exactly the set consisting of minus
+       one, zero, and one.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    liourn $p |- ran lam = { -u 1 , 0 , 1 } $=
+      ( cliou crn c1 cneg cc0 ctp cq wf wss liouf frn ax-mp c2 cfv liou2 lioufn
+      wcel fnfvelrn mp2an eqeltrri wfn cn 2nn nnq liou0 cz 0z zq liou1 1q tpssi
+      mp3an eqssi ) ABZCDZECFZGUPAHUNUPIJGUPAKLUOUNQEUNQCUNQUPUNIMANZUOUNOAGUAZ
+      MGQZUQUNQPMUBQUSUCMUDLGMARSTEANZEUNUEUREGQZUTUNQPEUFQVAUGEUHLGEARSTCANZCU
+      NUIURCGQVBUNQPUJGCARSTUOECUNUKULUM $.
+  $}
+
+  ${
+    $( A positive integer with Liouville's function value minus one is at least
+       two.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+    liounnnegge2 $p |- ( ( A e. NN /\ ( lam ` A ) = -u 1 ) -> 2 <_ A ) $=
+      ( cn wcel cn0 cc0 wne cliou cfv c1 cneg wceq c2 cle wbr nnnn0 nnne0 fveq2
+      liou1 eqtrdi 1nn nnneneg mp1i eqnetrd necon2i nn0n0n1ge2 syl2an3an ) ABCA
+      DCAEFAGHZIJZKAIFLAMNAOAPAIUGUHAIKZUGIUHUIUGIGHIAIGQRSIBCIUHFUITIUAUBUCUDA
+      UEUF $.
+  $}
+
+  ${
+    $d A p $.
+    liounegprmexd.1 $e |- ( ph -> A e. NN ) $.
+    liounegprmexd.2 $e |- ( ph -> ( lam ` A ) = -u 1 ) $.
+    $( A positive integer with negative value of Liouville's function has a
+       prime divisor.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    liounegprmexd $p |- ( ph -> E. p e. Prime p || A ) $=
+      ( c1 c2 1red cr wcel 2re a1i nnred clt wbr 1lt2 cn cliou cfv cneg syl2anc
+      wceq cle liounnnegge2 ltletrd exprmfctd ) ABCDAFGBAHGIJAKLABDMFGNOAPLABQJ
+      BRSFTUBGBUCODEBUDUAUEUF $.
+  $}
+
+  ${
+    $d u v z $.  $d F j k u v y $.  $d F k x y z $.  $d J k x y z $.
+    $( Liouville's function maps finite products of rationals to products.
        (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomnn0 $p |- ( N e. NN -> ( ( Omega ` N ) = 0 <-> N = 1 ) ) $=
-      ( vp cn wcel cbom cfv cc0 wceq c1 wa cv cpc cprime wral cle wbr simpr cn0
-      co wb simpll bompc syl2anc simplr pccld nn0le0eq0 syl mpbid adantl eqtr4d
-      breqtrd pc1 ralrimiva simpl nnnn0d 1nn0 pc11 sylancl mpbird ex fveq2 bom1
-      eqtrdi impbid1 ) ACDZAEFZGHZAIHZVEVGVHVEVGJZVHBKZALSZVJILSZHZBMNZVIVMBMVI
-      VJMDZJZVKGVLVPVKGOPZVKGHZVPVKVFGOVPVOVEVKVFOPVIVOQZVEVGVOUAZVJAUBUCVEVGVO
-      UDUKVPVKRDVQVRTVPVJAVSVTUEVKUFUGUHVOVLGHVIVJULUIUJUMVIARDIRDVHVNTVIAVEVGU
-      NUOUPAIBUQURUSUTVHVFIEFGAIEVAVBVCVD $.
-  $}
-
-  ${
-    $( The prime Omega function of a positive integer is positive exactly when
-       the input exceeds one.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomnnpos $p |- ( A e. NN -> ( 0 < ( Omega ` A ) <-> 1 < A ) ) $=
-      ( cn wcel cbom cfv cc0 wne c1 clt bomnn0 necon3bid bomnncl nn0red nn0ge0d
-      wbr 0red leltned nngt1ne1 3bitr4d ) ABCZADEZFGAHGFUAIOHAIOTUAFAHAJKTFUATP
-      TUAALZMTUAUBNQARS $.
-  $}
-
-  ${
-    $d N x $.  $d x y z $.
-    $( A positive integer is at least two raised to its prime Omega value.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomexp2le $p |- ( N e. NN -> ( 2 ^ ( Omega ` N ) ) <_ N ) $=
-      ( c2 cv cbom cfv cexp co cle wbr c1 wceq fveq2 oveq2d id breq12d cc0 wcel
-      adantr cr nnred vx vy vz cmul bom1 oveq2i cc 2cn exp0 ax-mp eqtri eqbrtri
-      1le1 cprime bomprm exp1 eqtrdi cuz prmuz2 eluzle eqbrtrd wa caddc eluz2nn
-      syl cn cq csn cdif nnqnz bommul syl2an a1i cn0 adantl bomnncl expaddd 2nn
-      eqtrd nnexpcld nnnn0d nn0ge0d simprl simprr lemul12ad ex prmind ) BUACZDE
-      ZFGZWHHIBJDEZFGZJHIBUBCZDEZFGZWMHIZBUCCZDEZFGZWQHIZBWMWQUDGZDEZFGZXAHIZBA
-      DEZFGZAHIUAUBUCAWHJKZWJWLWHJHXGWIWKBFWHJDLMXGNOWHWMKZWJWOWHWMHXHWIWNBFWHW
-      MDLMXHNOWHWQKZWJWSWHWQHXIWIWRBFWHWQDLMXINOWHXAKZWJXCWHXAHXJWIXBBFWHXADLMX
-      JNOWHAKZWJXFWHAHXKWIXEBFWHADLMXKNOWLJJHWLBPFGZJWKPBFUEUFBUGQZXLJKUHBUIUJU
-      KUMULWHUNQZWJBWHHXNWJBJFGZBXNWIJBFWHUOMXMXOBKUHBUPUJUQXNWHBUREZQBWHHIWHUS
-      BWHUTVEVAWMXPQZWQXPQZVBZWPWTVBZXDXSXTVBZXCWOWSUDGZXAHXSXCYBKXTXSXCBWNWRVC
-      GZFGYBXSXBYCBFXQWMVFQZWQVFQZXBYCKZXRWMVDZWQVDZYDWMVGPVHVIZQWQYIQYFYEWMVJW
-      QVJWMWQVKVLVLMXSBWNWRXMXSUHVMXSYEWRVNQXRYEXQYHVOZWQVPVEZXSYDWNVNQXQYDXRYG
-      RZWMVPVEZVQVSRYAWOWMWSWQXSWOSQXTXSWOXSBWNBVFQXSVRVMZYMVTZTRXSWMSQXTXSWMYL
-      TRXSWSSQXTXSWSXSBWRYNYKVTZTRXSWQSQXTXSWQYJTRXSPWOHIXTXSWOXSWOYOWAWBRXSPWS
-      HIXTXSWSXSWSYPWAWBRXSWPWTWCXSWPWTWDWEVAWFWG $.
-  $}
-
-  ${
-    $( The prime Omega function of a positive integer is bounded by its
-       base-two logarithm.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomlelog $p |- ( N e. NN -> ( Omega ` N ) <_ ( 2 logb N ) ) $=
-      ( cn wcel c2 cbom cfv cexp co clogb cle crp c1 wne cz wceq 2rp necomi wbr
-      1ne2 a1i bomnncl nn0zd relogbexp mp3an12i bomexp2le cuz wb uzidd nnexpcld
-      2z 2nn nnrpd nnrp logbleb syl3anc mpbid eqbrtrrd ) ABCZDDAEFZGHZIHZUSDAIH
-      ZJDKCDLMURUSNCVAUSOPLDSQURUSAUAZUBDUSUCUDURUTAJRZVAVBJRZAUEURDDUFFCUTKCAK
-      CVDVEUGURDDNCURUJTUHURUTURDUSDBCURUKTVCUIULAUMDUTAUNUOUPUQ $.
-  $}
-
-  ${
-    $( The prime Omega function increases strictly along proper divisibility of
-       positive integers.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomdvdslt $p |- ( ( ( M e. NN /\ N e. NN ) /\ ( M || N /\ M =/= N ) ) ->
-      ( Omega ` M ) < ( Omega ` N ) ) $=
-      ( cn wcel wa wbr wne cbom cfv co clt cc0 cn0 wb syl2anc mpbid bomnncl syl
-      c1 wceq cdvds cdiv caddc simprl simplr simpll nncnd nnne0d simprr divne1d
-      nndivdvds necomd bomnn0 necon3bid mpbird sylanbrc nngt0d nn0red ltaddposd
-      elnnne0 cmul divcan2d fveq2d csn cdif nnqnz bommul syl2an eqtr3d breqtrrd
-      cq ) ACDZBCDZEZABUAFZABGZEZEZAHIZVSBAUBJZHIZUCJZBHIZKVRLWAKFVSWBKFVRWAVRW
-      AMDZWALGZWACDVRVTCDZWDVRVOWFVNVOVPUDVRVMVLVOWFNVLVMVQUEZVLVMVQUFZBAUKOPZV
-      TQRZVRWEVTSGVRBAVRBWGUGZVRAWHUGZVRAWHUHZVRABVNVOVPUIULUJVRWALVTSVRWFWALTV
-      TSTNWIVTUMRUNUOWAUTUPUQVRWAVSVRWAWJURVRVSVRVLVSMDWHAQRURUSPVRAVTVAJZHIZWC
-      WBVRWNBHVRBAWKWLWMVBVCVRVLWFWOWBTZWHWIVLAVKLVDVEZDVTWQDWPWFAVFVTVFAVTVGVH
-      OVIVJ $.
-  $}
-
-  ${
-    $d N p $.
-    $( The prime Omega function of a positive integer is one exactly at the
-       primes.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomnn1 $p |- ( N e. NN -> ( ( Omega ` N ) = 1 <-> N e. Prime ) ) $=
-      ( vp cn wcel cbom cfv c1 wceq cprime wa wbr cc0 clt wb adantr mpbid nncnd
-      syl co cmin cv cdvds simpl 0lt1 simpr breqtrrid bomnnpos exprmfctd simprl
-      prmnn nnne0d cdiv cq csn nnqnz bomdiv syl2anc bomprm oveq12d 1m1e0 eqtrdi
-      cdif eqtrd simprr nndivdvds bomnn0 diveq1d eqeltrd rexlimddv ex impbid1 )
-      ACDZAEFZGHZAIDZVLVNVOVLVNJZBUAZAUBKZVOBIVPABVLVNUCZVPLVMMKZGAMKZVPLGVMMUD
-      VLVNUEZUFVLVTWANVNAUGOPUHVPVQIDZVRJZJZAVQIWEAVQWEAVPVLWDVSOZQWEVQWEWCVQCD
-      ZVPWCVRUIZVQUJRZQWEVQWIUKWEAVQULSZEFZLHZWJGHZWEWKVMVQEFZTSZLWEAUMLUNVBZDZ
-      VQWPDZWKWOHWEVLWQWFAUORWEWGWRWIVQUORAVQUPUQWEWOGGTSLWEVMGWNGTVPVNWDWBOWEW
-      CWNGHWHVQURRUSUTVAVCWEWJCDZWLWMNWEVRWSVPWCVRVDWEVLWGVRWSNWFWIAVQVEUQPWJVF
-      RPVGWHVHVIVJAURVK $.
+    liouprod $p |- ( ( J e. Fin /\ F : J --> QQ ) ->
+      ( lam ` prod_ k e. J ( F ` k ) ) = prod_ k e. J ( lam ` ( F ` k ) ) ) $=
+      ( vz wcel cv cfv cq wral cprod cliou wceq wi c0 raleq prodeq1 fveq2d cmul
+      wa cc vx vy vu vv cfn wf csn cun eqeq12d imbi12d liou1 fveq2i 3eqtr4i a1i
+      c1 prod0 wn co cvv nfv nfra1 nfcv nfcprod1 nffv nfeq nfim nfan simpld vex
+      simpl simprd qsscn wss ssun1 simpr mpsyl r19.21bi fveq2 vsnid elun2 ax-mp
+      ssralv sselid eleq1d rspcv fprodsplitsn qmulcl adantl fprodcllemf lioumul
+      1q syl2anc mpd oveq1d 3eqtrd lioure recnd syl eqtr4d findcard2s ralrimiva
+      exp31 ffvelcdm impel ) CUEEAFZBGZHEZACIZCXFAJZKGZCXFKGZAJZLZCHBUFZXGAUAFZ
+      IZXOXFAJZKGZXOXKAJZLZMXGANIZNXFAJZKGZNXKAJZLZMXGAUBFZIZYFXFAJZKGZYFXKAJZL
+      ZMZXGAYFDFZUGZUHZIZYOXFAJZKGZYOXKAJZLZMXHXMMUAUBDCXONLZXPYAXTYEXGAXONOUUA
+      XRYCXSYDUUAXQYBKXONXFAPQXONXKAPUIUJXOYFLZXPYGXTYKXGAXOYFOUUBXRYIXSYJUUBXQ
+      YHKXOYFXFAPQXOYFXKAPUIUJXOYOLZXPYPXTYTXGAXOYOOUUCXRYRXSYSUUCXQYQKXOYOXFAP
+      QXOYOXKAPUIUJXOCLZXPXHXTXMXGAXOCOUUDXRXJXSXLUUDXQXIKXOCXFAPQXOCXKAPUIUJYE
+      YAUOKGUOYCYDUKYBUOKXFAUPULXKAUPUMUNYFUEEZYMYFEUQZSZYLYPYTUUGYLSZYPSZYRYJY
+      MBGZKGZRURZYSUUIYRYHUUJRURZKGZYIUUKRURZUULUUIYQUUMKUUIYFYMXFUUJAUSUUHYPAU
+      UGYLAUUGAUTYGYKAXGAYFVAAYIYJAYHKAKVBYFXFAAYFVBZVCVDYFXKAUUPVCVEVFVGXGAYOV
+      AVGZAUUJVBUUIUUEUUFUUIUUGYLUUHYPVJZVHZVHZYMUSEUUIDVIUNZUUIUUEUUFUUSVKZUUI
+      XEYFESZHTXFVLUUIXGAYFYFYOVMUUIYPYGYFYNVNUUHYPVOZXGAYFYOWBVPZVQZWCXEYMBVRZ
+      UUIHTUUJVLYMYOEZUUIYPUUJHEZYMYNEUVHDVSYMYNYFVTWAUVDXGUVIAYMYOXEYMLZXFUUJH
+      UVGWDWEVPZWCWFQUUIYHHEUVIUUNUUOLUUIUCUDYFXFHAUUQHTVMUUIVLUNUCFZHEUDFZHESU
+      VLUVMRURHEUUIUVLUVMWGWHUUTUVFUOHEUUIWKUNWIUVKYHUUJWJWLUUIYIYJUUKRUUIYGYKU
+      VEUUIUUGYLUURVKWMWNWOUUIYFYMXKUUKAUSUUQAUUKVBUUTUVAUVBUVCXGXKTEUVFXGXKXFW
+      PWQWRUVJXFUUJKUVGQUUIUVIUUKTEUVKUVIUUKUUJWPWQWRWFWSXBWTXNXGACCHXEBXCXAXD
+      $.
   $}
 
   ${
@@ -885538,75 +885524,6 @@ $)
       ZJIZKURQUQURQKZLZUSQJIQVAURVCUSUQUSMCZVBANZOPVCUTQUSJVCURUQVBRZUASVFUBUQU
       RQUCZLZVAUSTJIUSURVHUTTUSJVHUSGHIZUTTVHUSURGHUQUSURKVGAUDUEZUFUQVITKZVGUQ
       AUGQUHUICVKAUJAUKULOUMSVHUSUQVDVGVEOUNVJUOUP $.
-  $}
-
-  ${
-    $d u v z $.  $d F j k u v y $.  $d F k x y z $.  $d J k x y z $.
-    $( The signed prime Omega function maps finite products of nonzero
-       rationals to sums.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomprod $p |- ( ( J e. Fin /\ F : J --> ( QQ \ { 0 } ) ) ->
-      ( Omega ` prod_ k e. J ( F ` k ) ) =
-      sum_ k e. J ( Omega ` ( F ` k ) ) ) $=
-      ( vz wcel cv cfv cq cc0 wral cprod cbom csu wceq wi c0 fveq2d c1 wa cc vx
-      vy vu vv cfn csn cdif cun raleq prodeq1 sumeq1 eqeq12d imbi12d bom1 prod0
-      wf fveq2i sum0 3eqtr4i a1i wn caddc cmul cvv nfv nfra1 nfcv nfcprod1 nffv
-      nfsum1 nfeq nfim nfan simpl simpld vex simprd difss qsscn sstri wss ssun1
-      ssralv ax-mp adantl r19.21bi sselid fveq2 vsnid elun2 eleq1d fprodsplitsn
-      co rspcv wne eldifsn birani bilani qmulcl syl2anc qcn mulne0d eldifsnd cn
-      syl 1nn nnqnz fprodcllemf bommul mpd oveq1d 3eqtrd cz bomf ffvelcdmi zcnd
-      fsumsplitsn eqtr4d exp31 findcard2s ffvelcdm ralrimiva impel ) CUEEAFZBGZ
-      HIUFZUGZEZACJZCYEAKZLGZCYELGZAMZNZCYGBUPZYHAUAFZJZYPYEAKZLGZYPYLAMZNZOYHA
-      PJZPYEAKZLGZPYLAMZNZOYHAUBFZJZUUGYEAKZLGZUUGYLAMZNZOZYHAUUGDFZUFZUHZJZUUP
-      YEAKZLGZUUPYLAMZNZOYIYNOUAUBDCYPPNZYQUUBUUAUUFYHAYPPUIUVBYSUUDYTUUEUVBYRU
-      UCLYPPYEAUJQYPPYLAUKULUMYPUUGNZYQUUHUUAUULYHAYPUUGUIUVCYSUUJYTUUKUVCYRUUI
-      LYPUUGYEAUJQYPUUGYLAUKULUMYPUUPNZYQUUQUUAUVAYHAYPUUPUIUVDYSUUSYTUUTUVDYRU
-      URLYPUUPYEAUJQYPUUPYLAUKULUMYPCNZYQYIUUAYNYHAYPCUIUVEYSYKYTYMUVEYRYJLYPCY
-      EAUJQYPCYLAUKULUMUUFUUBRLGIUUDUUEUNUUCRLYEAUOUQYLAURUSUTUUGUEEZUUNUUGEVAZ
-      SZUUMUUQUVAUVHUUMSZUUQSZUUSUUKUUNBGZLGZVBWMZUUTUVJUUSUUIUVKVCWMZLGZUUJUVL
-      VBWMZUVMUVJUURUVNLUVJUUGUUNYEUVKAVDUVIUUQAUVHUUMAUVHAVEUUHUULAYHAUUGVFAUU
-      JUUKAUUILALVGUUGYEAAUUGVGZVHVIUUGYLAUVQVJVKVLVMYHAUUPVFVMZAUVKVGUVJUVFUVG
-      UVJUVHUUMUVIUUQVNZVOZVOZUUNVDEUVJDVPUTZUVJUVFUVGUVTVQZUVJYDUUGESZYGTYEYGH
-      THYFVRVSVTZUVJYHAUUGUUQUUHUVIUUGUUPWAUUQUUHOUUGUUOWBYHAUUGUUPWCWDWEZWFZWG
-      YDUUNBWHZUVJYGTUVKUWEUUQUVKYGEZUVIUUNUUPEZUUQUWIOUUNUUOEUWJDWIUUNUUOUUGWJ
-      WDYHUWIAUUNUUPYDUUNNZYEUVKYGUWHWKWNWDWEZWGWLQUVJUUIYGEUWIUVOUVPNUVJUCUDUU
-      GYEYGAUVRYGTWAUVJUWEUTUCFZYGEZUDFZYGEZSZUWMUWOVCWMZYGEUVJUWQUWRHIUWQUWMHE
-      ZUWOHEZUWRHEUWQUWSUWMIWOZUWNUWSUXASUWPUWMHIWPWQZVOZUWQUWTUWOIWOZUWPUWTUXD
-      SUWNUWOHIWPWRZVOZUWMUWOWSWTUWQUWMUWOUWQUWSUWMTEUXCUWMXAXEUWQUWTUWOTEUXFUW
-      OXAXEUWQUWSUXAUXBVQUWQUWTUXDUXEVQXBXCWEUWAUWGRYGEZUVJRXDEUXGXFRXGWDUTXHUW
-      LUUIUVKXIWTUVJUUJUUKUVLVBUVJUUHUULUWFUVJUVHUUMUVSVQXJXKXLUVJUUGUUNYLUVLAV
-      DUVRAUVLVGUWAUWBUWCUWDYHYLTEUWGYHYLYGXMYELXNXOXPXEUWKYEUVKLUWHQUVJUWIUVLT
-      EUWLUWIUVLYGXMUVKLXNXOXPXEXQXRXSXTYOYHACCYGYDBYAYBYC $.
-  $}
-
-  ${
-    $d u v z $.  $d F j k u v y $.  $d F k x y z $.  $d J k x y z $.
-    $( Liouville's function maps finite products of rationals to products.
-       (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    liouprod $p |- ( ( J e. Fin /\ F : J --> QQ ) ->
-      ( lam ` prod_ k e. J ( F ` k ) ) = prod_ k e. J ( lam ` ( F ` k ) ) ) $=
-      ( vz wcel cv cfv cq wral cprod cliou wceq wi c0 raleq prodeq1 fveq2d cmul
-      wa cc vx vy vu vv cfn wf csn cun eqeq12d imbi12d liou1 fveq2i 3eqtr4i a1i
-      c1 prod0 wn co cvv nfv nfra1 nfcv nfcprod1 nffv nfeq nfim nfan simpld vex
-      simpl simprd qsscn wss ssun1 simpr mpsyl r19.21bi fveq2 vsnid elun2 ax-mp
-      ssralv sselid eleq1d rspcv fprodsplitsn qmulcl adantl fprodcllemf lioumul
-      1q syl2anc mpd oveq1d 3eqtrd lioure recnd syl eqtr4d findcard2s ralrimiva
-      exp31 ffvelcdm impel ) CUEEAFZBGZHEZACIZCXFAJZKGZCXFKGZAJZLZCHBUFZXGAUAFZ
-      IZXOXFAJZKGZXOXKAJZLZMXGANIZNXFAJZKGZNXKAJZLZMXGAUBFZIZYFXFAJZKGZYFXKAJZL
-      ZMZXGAYFDFZUGZUHZIZYOXFAJZKGZYOXKAJZLZMXHXMMUAUBDCXONLZXPYAXTYEXGAXONOUUA
-      XRYCXSYDUUAXQYBKXONXFAPQXONXKAPUIUJXOYFLZXPYGXTYKXGAXOYFOUUBXRYIXSYJUUBXQ
-      YHKXOYFXFAPQXOYFXKAPUIUJXOYOLZXPYPXTYTXGAXOYOOUUCXRYRXSYSUUCXQYQKXOYOXFAP
-      QXOYOXKAPUIUJXOCLZXPXHXTXMXGAXOCOUUDXRXJXSXLUUDXQXIKXOCXFAPQXOCXKAPUIUJYE
-      YAUOKGUOYCYDUKYBUOKXFAUPULXKAUPUMUNYFUEEZYMYFEUQZSZYLYPYTUUGYLSZYPSZYRYJY
-      MBGZKGZRURZYSUUIYRYHUUJRURZKGZYIUUKRURZUULUUIYQUUMKUUIYFYMXFUUJAUSUUHYPAU
-      UGYLAUUGAUTYGYKAXGAYFVAAYIYJAYHKAKVBYFXFAAYFVBZVCVDYFXKAUUPVCVEVFVGXGAYOV
-      AVGZAUUJVBUUIUUEUUFUUIUUGYLUUHYPVJZVHZVHZYMUSEUUIDVIUNZUUIUUEUUFUUSVKZUUI
-      XEYFESZHTXFVLUUIXGAYFYFYOVMUUIYPYGYFYNVNUUHYPVOZXGAYFYOWBVPZVQZWCXEYMBVRZ
-      UUIHTUUJVLYMYOEZUUIYPUUJHEZYMYNEUVHDVSYMYNYFVTWAUVDXGUVIAYMYOXEYMLZXFUUJH
-      UVGWDWEVPZWCWFQUUIYHHEUVIUUNUUOLUUIUCUDYFXFHAUUQHTVMUUIVLUNUCFZHEUDFZHESU
-      VLUVMRURHEUUIUVLUVMWGWHUUTUVFUOHEUUIWKUNWIUVKYHUUJWJWLUUIYIYJUUKRUUIYGYKU
-      VEUUIUUGYLUURVKWMWNWOUUIYFYMXKUUKAUSUUQAUUKVBUUTUVAUVBUVCXGXKTEUVFXGXKXFW
-      PWQWRUVJXFUUJKUVGQUUIUVIUUKTEUVKUVIUUKUUJWPWQWRWFWSXBWTXNXGACCHXEBXCXAXD
-      $.
   $}
 
   ${
@@ -885803,60 +885720,6 @@ $)
     $d t x $.  $d t y $.  $d t z $.  $d n y $.  $d n z $.  $d F a b c t $.
     $d F b c d t $.  $d F a b n t $.  $d F n p t $.  $d F p q x $.
     $d F a b c y $.  $d F a b x y z $.  $d d y z $.  $d n p x $.  $d p x y z $.
-    $( Characterize the signed prime Omega function by its integer values,
-       complete additivity on nonzero rationals, and value one on primes.  This
-       proves the homomorphism characterization stated in ~ df-bom .
-       Additivity determines positive integers by prime factorization, gives
-       zero at minus one, and then determines all nonzero rationals by
-       quotients.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
-    bomuniq $p |- ( F = Omega <->
-      ( F : ( QQ \ { 0 } ) --> ZZ /\
-        A. a e. ( QQ \ { 0 } ) A. b e. ( QQ \ { 0 } )
-          ( F ` ( a x. b ) ) = ( ( F ` a ) + ( F ` b ) ) /\
-        A. p e. Prime ( F ` p ) = 1 ) ) $=
-      ( cbom wceq cc0 cz cv cmul co cfv caddc wral c1 cprime wcel zcnd adantl
-      c2 vt vy vz vx cq csn cdif wf bomf feq1 mpbiri bommul rgen2 fveq1 oveq12d
-      w3a eqeq12d 2ralbidv bomprm rgen eqeq1d ralbidv 3jca simp1 ffnd wfn bomfn
-      a1i wa cdenom adantr simpr ffvelcdmd ffvelcdmi cn eldifi qdencl syl nnqnz
-      3syl fvoveqeq1 fvoveqeq2 simp2 1nn rspc2dv 1t1e1 fveq2i eqtr3di cc addid0
-      mp1i wb syl2anc bom1 eqtr4di fveqeq2 rspccva 3ad2antl3 eqtr4d adantlr cuz
-      mpbid simp3l simp3r simp1l2 simp2l eluz2nn simp2r prmindeqd oveq2d cnumer
-      3eqtr4d qnumcl wne qnumne0 eldifsnd 2cnd 2ne0 cexp 2timesd sqvald znsqcld
-      zq fveq2d 3eqtr3rd 2z bomexp 3eqtrd qmuldeneqnum eqtr3d addcan2ad eqfnfvd
-      mulcanad impbii ) AEFZUEGUFZUGZHAUHZCIZDIZJKZALZYSALZYTALZMKZFZDYQNCYQNZB
-      IZALZOFZBPNZUPZYOYRUUGUUKYOYRYQHEUHUIYQHAEUJUKYOUUGUUAELZYSELZYTELZMKZFZD
-      YQNCYQNUUQCDYQYQYSYTULUMYOUUFUUQCDYQYQYOUUBUUMUUEUUPUUAAEUNYOUUCUUNUUDUUO
-      MYSAEUNYTAEUNUOUQURUKYOUUKUUHELZOFZBPNUUSBPUUHUSUTYOUUJUUSBPYOUUIUUROUUHA
-      EUNVAVBUKVCUULUAYQAEUULYQHAYRUUGUUKVDZVEEYQVFUULVGVHUULUAIZYQQZVIZUVAALZU
-      VAELZUVAVJLZELZUVCUVDUVCYQHUVAAUULYRUVBUUTVKZUULUVBVLZVMRUVCUVEUVBUVEHQUU
-      LYQHUVAEUIVNSRUVCUVGUVCUVFVOQZUVFYQQZUVGHQUVBUVJUULUVBUVAUEQZUVJUVAUEYPVP
-      ZUVAVQVRSZUVFVSZYQHUVFEUIVNVTRUVCUVDUVFALZMKZUVDUVGMKUVEUVGMKZUVCUVPUVGUV
-      DMUVCUBUCAEUVFUDUULOALZOELZFUVBUULUVSGUVTUULUVSUVSMKZUVSFZUVSGFZUULOOJKZA
-      LZUWAUVSUULUUFUWEUWAFOYTJKALUVSUUDMKFCDOOYQYQYSOYTUUDAJMWAYTOOUVSAJMWBYRU
-      UGUUKWCZOVOQOYQQUULWDOVSWKZUWGWEUWDOAWFWGWHUULUVSWIQZUWHUWBUWCWLUULUVSUUL
-      YQHOAUUTUWGVMRZUWIUVSUVSWJWMXBWNWOVKZUULUDIZPQZUWKALZUWKELZFUVBUULUWLVIUW
-      MOUWNUUKYRUWLUWMOFZUUGUUJUWOBUWKPUUHUWKOAWPWQWRUWLUWNOFUULUWKUSSWSWTZUVCU
-      BIZTXALZQZUCIZUWRQZVIZUWQALZUWQELZFZUWTALZUWTELZFZVIZUPZUXCUXFMKZUXDUXGMK
-      ZUWQUWTJKZALZUXMELZUXJUXCUXDUXFUXGMUVCUXBUXEUXHXCUVCUXBUXEUXHXDUOUXJUUFUX
-      NUXKFUWQYTJKALUXCUUDMKFCDUWQUWTYQYQYSUWQYTUUDAJMWAYTUWTUWQUXCAJMWBYRUUGUU
-      KUVBUXBUXIXEUXJUWSUWQVOQUWQYQQZUVCUWSUXAUXIXFUWQXGUWQVSVTZUXJUXAUWTVOQUWT
-      YQQZUVCUWSUXAUXIXHUWTXGUWTVSVTZWEUXJUXPUXRUXOUXLFUXQUXSUWQUWTULWMXLZUVNXI
-      XJUVCUVAXKLZALZUYAELZUVQUVRUVCUYBUYCTUVCUYBUVCYQHUYAAUVHUVCUYAUEGUVCUYAHQ
-      ZUYAUEQUVBUYDUULUVBUVLUYDUVMUVAXMVRSZUYAYCVRUVBUYAGXNUULUVAXOSZXPZVMRZUVC
-      UYCUVCUYAYQQZUYCHQUYGYQHUYAEUIVNVRRUVCXQTGXNUVCXRVHUVCTUYBJKUYBUYBMKZUYAT
-      XSKZELZTUYCJKZUVCUYBUYHXTUVCUYKALUYAUYAJKZALZUYLUYJUVCUYKUYNAUVCUYAUVCUYA
-      UYERYAYDUVCUBUCAEUYKUDUWJUWPUXTUVCUYAUYEUYFYBXIUVCUUFUYOUYJFUYAYTJKALUYBU
-      UDMKFCDUYAUYAYQYQYSUYAYTUUDAJMWAYTUYAUYAUYBAJMWBUULUUGUVBUWFVKZUYGUYGWEYE
-      UVCUYITHQZUYLUYMFUYGUYQUVCYFVHUYATYGWMYHYMUVCUVAUVFJKZALZUVQUYBUVCUUFUYSU
-      VQFUVAYTJKALUVDUUDMKFCDUVAUVFYQYQYSUVAYTUUDAJMWAYTUVFUVAUVDAJMWBUYPUVIUVC
-      UVJUVKUVNUVOVRZWEUVCUYRUYAAUVBUYRUYAFZUULUVBUVLVUAUVMUVAYIVRSZYDYJUVCUYRE
-      LZUVRUYCUVCUVBUVKVUCUVRFUVIUYTUVAUVFULWMUVCUYRUYAEVUBYDYJXLYJYKYLYN $.
-  $}
-
-  ${
-    $d t x $.  $d t y $.  $d t z $.  $d n y $.  $d n z $.  $d F a b c t $.
-    $d F b c d t $.  $d F a b n t $.  $d F n p t $.  $d F p q x $.
-    $d F a b c y $.  $d F a b x y z $.  $d d y z $.  $d n p x $.  $d p x y z $.
     $( Characterize Liouville's function by complex-valued complete
        multiplicativity on rationals, value minus one on primes, and value one
        at minus one.  The first conditions determine the values on positive
@@ -885955,9 +885818,123 @@ $)
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Additive decompositions and the multiples-of-four theorem
+  The multiples-of-four Liouville-Goldbach theorem
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
+
+  ${
+    m1lgsvald.1 $e |- ( ph -> P e. ( Prime \ { 2 } ) ) $.
+    $( The Legendre symbol of minus one is minus one raised to
+       ` ( ( P - 1 ) / 2 ) ` .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    m1lgsvald $p |- ( ph -> ( -u 1 /L P ) = ( -u 1 ^ ( ( P - 1 ) / 2 ) ) )
+    $=
+      ( c1 cneg clgs co cmin c2 cdiv cexp caddc cmo cz wcel cprime csn cdif syl
+      wceq neg1z lgsval3 sylancr cpr cn oddprm m1expcl2 gausslemma2dlem0a nnrpd
+      nnzd clt wbr oddprmgt2 modsignp1d eqtrd ) ADEZBFGZUPBDHGIJGZKGZDLGBMGDHGZ
+      USAUPNOBPIQROZUQUTTUACUPBUBUCAUSBAURNOUSUPDUDOAURAVAURUEOCBUFSUJURUGSABAB
+      CUHUIAVAIBUKULCBUMSUNUO $.
+  $}
+
+  ${
+    lgsprmp1d.1 $e |- ( ph -> P e. ( Prime \ { 2 } ) ) $.
+    lgsprmp1d.2 $e |- ( ph -> R e. ( Prime \ { 2 } ) ) $.
+    lgsprmp1d.3 $e |- ( ph -> R || ( P + 1 ) ) $.
+    lgsprmp1d.4 $e |- ( ph -> -. 2 || ( ( P - 1 ) / 2 ) ) $.
+    $( If ` ( ( P - 1 ) / 2 ) ` is odd, quadratic reciprocity makes a prime
+       divisor of ` ( P + 1 ) ` a quadratic residue modulo ` P ` , under the
+       stated odd-prime hypotheses.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    lgsprmp1d $p |- ( ph -> ( R /L P ) = 1 ) $=
+      ( c1 clgs co c2 cexp cz wcel nnzd cn cmul wceq cdvds wbr lgscl syl2anc cc
+      cneg cmin cdiv 1cnd gausslemma2dlem0a zcnd neg1cn a1i cc0 wne neg1ne0 csn
+      cprime cdif oddprm syl expclzd expne0d mulridd cmo caddc subnegd breqtrrd
+      wb neg1z moddvds mpbird wn wi nnoddn2prmb sylib simprd lgsmodeq syl112anc
+      syl3anc wa mpd m1lgsvald lgsquad3 syl22anc expmulz m1expo oveq1d mulcanad
+      eqtrd 3eqtr2d eqcomd ) AHCBIJZAHWKHUDZCHUEJKUFJZLJZAUGZAWKACMNBMNZWKMNACA
+      CEUHZOABABDUHZOZCBUAUBUIAWLWMWLUCNZAUJUKZWLULUMZAUNUKZAWMACUPKUOUQZNZWMPN
+      ECURUSOZUTZAWLWMXAXCXFVAAWNHQJWNBCIJZWNWKQJZAWNXGVBAXHWLCIJZWNABCVCJWLCVC
+      JRZXHXJRZAXKCBWLUEJZSTZACBHVDJXMSFABHABWSUIWOVEVFACPNZWPWLMNZXKXNVGWQWSXP
+      AVHUKZBWLCVIVRVJAWPXPXOKCSTVKZXKXLVLWSXQWQACUPNZXRAXEXSXRVSECVMVNVOZBWLCV
+      PVQVTACEWAWHAXHWLBHUEJKUFJZWMQJLJZWKQJZXIABPNKBSTVKZXOXRXHYCRWRABUPNZYDAB
+      XDNZYEYDVSDBVMVNVOWQXTBCWBWCAYBWNWKQAYBWLYALJZWMLJZWNAWTXBYAMNZWMMNYBYHRX
+      AXCAYAAYFYAPNDBURUSOZXFWLYAWMWDWCAYGWLWMLAYIKYASTVKYGWLRYJGYAWEUBWFWHWFWH
+      WIWGWJ $.
+  $}
+
+  ${
+    prmquarter2lgsd.1 $e |- ( ph -> P e. Prime ) $.
+    prmquarter2lgsd.2 $e |- ( ph -> ( ( P + 1 ) / 4 ) e. NN ) $.
+    prmquarter2lgsd.3 $e |- ( ph -> 2 || ( ( P + 1 ) / 4 ) ) $.
+    $( An even quarter successor of a prime makes two a quadratic residue.
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    prmquarter2lgsd $p |- ( ph -> ( 2 /L P ) = 1 ) $=
+      ( c2 co c1 wceq c8 cmo c7 wcel cdvds wbr c4 cz nnzd cn a1i clgs cneg cmin
+      cpr caddc cmul cdiv wi 2z 4nn dvdscmul mp3an2i mpd 4t2e8 cprime prmnn syl
+      peano2nnd nncnd nnne0d divcan2d 3brtr3d 1cnd subnegd breqtrrd 8nn moddvds
+      wb neg1z mpbird wa c3 c5 lgsdir2lem1 simpli simpri eqtrdi 7nn elexi prid2
+      eqeltrdi 2lgs ) AFBUAGHIZBJKGZHLUDZMZAWDLWEAWDHUBZJKGZLAWDWHIZJBWGUCGZNOZ
+      AJBHUEGZWJNAPFUFGZPWLPUGGZUFGZJWLNAFWNNOZWMWONOZEFQMAWNQMPQMWPWQUHUIAWNDR
+      APPSMAUJTZRPFWNUKULUMWMJIAUNTAWLPAWLABABUOMZBSMCBUPUQZURUSAPWRUSAPWRUTVAV
+      BABHABWTUSAVCVDVEJSMABQMWGQMZWIWKVHVFABWTRXAAVITBWGJVGULVJHJKGHIZWHLIZXBX
+      CVKVLJKGVLIVLUBJKGVMIVKVNVOVPVQHLLSVRVSVTWAAWSWCWFVHCBWBUQVJ $.
+  $}
+
+  ${
+    prmdivquarterlgsd.1 $e |- ( ph -> P e. ( Prime \ { 2 } ) ) $.
+    prmdivquarterlgsd.2 $e |- ( ph -> -. 2 || ( ( P - 1 ) / 2 ) ) $.
+    prmdivquarterlgsd.3 $e |- ( ph -> R e. Prime ) $.
+    prmdivquarterlgsd.4 $e |- ( ph -> R || ( ( P + 1 ) / 4 ) ) $.
+    $( Every prime divisor of ` ( ( P + 1 ) / 4 ) ` is a quadratic residue
+       modulo ` P ` when ` ( ( P - 1 ) / 2 ) ` is odd, under the stated
+       hypotheses.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    prmdivquarterlgsd $p |- ( ph -> ( R /L P ) = 1 ) $=
+      ( clgs co c1 wceq c2 wa cprime wcel adantr c4 cn cdvds wbr oveq1d eldifad
+      simpr csn caddc oddprmquarterd breq1dd prmquarter2lgsd eqtrd wne eldifsnd
+      cdiv cdif cmul prmnn syl peano2nnd nncnd 4nn nnne0d divcan2d cz prmz nnzd
+      a1i dvdsmultr2d breq2dd cmin wn lgsprmp1d pm2.61dane ) ACBHIZJKCLACLKZMZV
+      LLBHIJVNCLBHAVMUCZUAVNBABNOZVMABNLUDZDUBZPABJUEIZQULIZROVMABDEUFZPVNCLVTS
+      VOACVTSTVMGPUGUHUIACLUJZMZBCABNVQUMOWBDPWCCNLACNOZWBFPAWBUCUKACVSSTWBAQVT
+      UNIVSCSAVSQAVSABAVPBROVRBUOUPUQURAQQROAUSVEZURAQWEUTVAACQVTAWDCVBOFCVCUPA
+      QWEVDAVTWAVDGVFVGPALBJVHILULISTVIWBEPVJVK $.
+  $}
+
+  ${
+    $d P r $.  $d ph r $.
+    oddprmqrhalfexd.1 $e |- ( ph -> P e. ( Prime \ { 2 } ) ) $.
+    oddprmqrhalfexd.2 $e |- ( ph -> -. 2 || ( ( P - 1 ) / 2 ) ) $.
+    oddprmqrhalfexd.3 $e |- ( ph -> 3 < P ) $.
+    $( An odd prime above three for which ` ( ( P - 1 ) / 2 ) ` is odd has a
+       prime quadratic residue below half the modulus.  (Contributed by Zhi
+       Wang, 20-Oct-2026.) $)
+    oddprmqrhalfexd $p |- ( ph -> E. r e. Prime ( r < ( P / 2 ) /\ ( r /L P )
+      = 1 ) ) $=
+      ( c1 co cdiv cdvds wbr c2 clt wa cprime wcel cn ad2antrr nnred c3 cv clgs
+      caddc c4 wceq simplr prmz zred oddprmquarterd gausslemma2dlem0a rehalfcld
+      cz syl cle simpr wi dvdsle syl2anc mpd 1red cr 3re a1i 1lt3 p1div4halfltd
+      lttrd lelttrd csn cdif cmin wn prmdivquarterlgsd jca p1div4boundsd simpld
+      exprmfctd reximddv3 ) ACUAZBGUCHUDIHZJKZVRBLIHZMKZVRBUBHGUEZNCOAVROPZNZVT
+      NZWBWCWFVRVSWAWFVRWFWDVRULPZAWDVTUFZVRUGUMZUHWFVSAVSQPZWDVTABDEUIZRZSWFBW
+      FBABQPWDVTABDUJZRSZUKWFVTVRVSUNKZWEVTUOZWFWGWJVTWOUPWIWLVRVSUQURUSWFBWNWF
+      GTBWFUTTVAPWFVBVCWNGTMKWFVDVCATBMKWDVTFRVFVEVGWFBVRABOLVHVIPWDVTDRALBGVJH
+      LIHJKVKWDVTERWHWPVLVMAVSCWKAGVSMKVSBMKABABWMSFVNVOVPVQ $.
+  $}
+
+  ${
+    $d P r $.  $d ph r $.
+    oddprmqrexd.1 $e |- ( ph -> P e. ( Prime \ { 2 } ) ) $.
+    oddprmqrexd.2 $e |- ( ph -> -. 2 || ( ( P - 1 ) / 2 ) ) $.
+    oddprmqrexd.3 $e |- ( ph -> 3 < P ) $.
+    $( An odd prime above three for which ` ( ( P - 1 ) / 2 ) ` is odd has a
+       smaller prime quadratic residue.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
+    oddprmqrexd $p |- ( ph -> E. r e. Prime ( r < P /\ ( r /L P ) = 1 ) )
+    $=
+      ( cv c2 cdiv co clt wbr clgs wa cprime wrex wcel adantr cr nnred wceq crp
+      c1 oddprmqrhalfexd gausslemma2dlem0a nnrpd rphalflt syl prmnn adantl lttr
+      wi rehalfcld syl3anc mpan2d anim1d reximdva mpd ) ACGZBHIJZKLZUSBMJUCUAZN
+      ZCOPUSBKLZVBNZCOPABCDEFUDAVCVECOAUSOQZNZVAVDVBVGVAUTBKLZVDAVHVFABUBQVHABA
+      BDUEZUFBUGUHRVGUSSQZUTSQZBSQZVAVHNVDULVFVJAVFUSUSUITUJAVKVFABABVITZUMRAVL
+      VFVMRUSUTBUKUNUOUPUQUR $.
+  $}
 
   ${
     $d A a b $.  $d B b $.  $d N a b $.  $d S a b $.
@@ -885978,14 +885955,15 @@ $)
   $}
 
   ${
-    $d a b $.
-    $( The decomposition of four as two plus two gives a base instance of
-       ~ liougb4 .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    liougb4base $p |- E. a e. NN E. b e. NN ( 4 = ( a + b ) /\ ( lam ` a )
-      = -u 1 /\ ( lam ` b ) = -u 1 ) $=
-      ( c4 cv caddc co wceq cliou cfv c1 cneg w3a cn wrex wtru c2 2nn a1i 2p2e4
-      wcel eqcomi liou2 lioupairexd mptru ) CADZBDZEFGUEHIJKZGUFHIUGGLBMNAMNOPP
-      UGCABPMTOQRZUHCPPEFZGOUICSUARPHIUGGOUBRZUJUCUD $.
+    $d M a $.  $d M b $.  $d N a $.  $d N b $.
+    $( Equality of targets preserves a decomposition into summands with the
+       same value of Liouville's function.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
+    lioupaireq $p |- ( N = M -> ( E. a e. NN E. b e. NN ( N = ( a + b ) /\ (
+      lam ` a ) = S /\ ( lam ` b ) = S ) <-> E. a e. NN E. b e. NN ( M = ( a
+      + b ) /\ ( lam ` a ) = S /\ ( lam ` b ) = S ) ) ) $=
+      ( wceq cv caddc co cliou cfv w3a cn eqeq1 3anbi1d 2rexbidv ) CBFZCDGZEGZH
+      IZFZRJKAFZSJKAFZLBTFZUBUCLDEMMQUAUDUBUCCBTNOP $.
   $}
 
   ${
@@ -886009,6 +885987,135 @@ $)
       JZFSUJZQRZDVCQRZEABUGTZFUGTZVAVDUHZJLVFBUITFUITZVHVGBUKFUKZBFULUMUNAVBDVC
       QNUCPUOAURSUJZCSUJZVCQRZVEEACUGTZVGVKVMUHZKLVNCUITVIVOVGCUKVJCFULUMUNAVLD
       VCQOUCPUOUP $.
+  $}
+
+  ${
+    $d K a b u v $.  $d N a b u v $.  $d T a b u v $.  $d ph u v $.
+    lioupairmulreximd.1 $e |- ( ph -> K e. NN ) $.
+    lioupairmulreximd.2 $e |- ( ph -> ( S x. ( lam ` K ) ) = T ) $.
+    $( Scaling positive-integer summands by ` K ` changes their common
+       Liouville value from ` S ` to ` T ` when ` T = ( S x. ( lam `` K ) ) ` .
+       Here the existence of the original summands is an implication premise.
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    lioupairmulreximd $p |- ( ph -> ( E. u e. NN E. v e. NN ( N = ( u + v )
+      /\ ( lam ` u ) = S /\ ( lam ` v ) = S ) -> E. a e. NN E. b e. NN ( ( N
+      x. K ) = ( a + b ) /\ ( lam ` a ) = T /\ ( lam ` b ) = T ) ) ) $=
+      ( cv co wceq cliou cfv cn wrex wcel wa cmul simplr simprl ad2antrr simprr
+      caddc w3a simp1d simp2d simp3d lioupairmuld rexlimdvaa rexlimdva ) AGCLZB
+      LZUFMNZUNOPDNZUOOPDNZUGZBQRGFUAMHLZILZUFMNUTOPENVAOPENUGIQRHQRZCQAUNQSZTZ
+      USVBBQVDUOQSZUSTZTZUNUODEFGHIAVCVFUBVDVEUSUCAFQSVCVFJUDVGUPUQURVDVEUSUEZU
+      HVGUPUQURVHUIVGUPUQURVHUJADFOPUAMENVCVFKUDUKULUM $.
+  $}
+
+  ${
+    $d A a b $.  $d B b $.  $d N a b $.
+    liounopaird.1 $e |- ( ph -> A e. NN ) $.
+    liounopaird.2 $e |- ( ph -> B e. NN ) $.
+    liounopaird.3 $e |- ( ph -> N = ( A + B ) ) $.
+    liounopaird.4 $e |- ( ph -> -. E. a e. NN E. b e. NN ( N = ( a + b ) /\ (
+      lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
+    liounopaird.5 $e |- ( ph -> ( lam ` A ) = -u 1 ) $.
+    $( If ` N ` has no negative-negative pair and ` ( A + B ) = N ` , with
+       positive integer summands, then value minus one at ` A ` forces value
+       one at ` B ` under Liouville's function.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
+    liounopaird $p |- ( ph -> ( lam ` B ) = 1 ) $=
+      ( cliou cfv c1 wceq cv caddc cn wcel adantr cneg wne co w3a wrex wa simpr
+      lioupairexd mtand neqned cq cc0 cdif wb nnqnz liounzneg1 necon2bbid df-ne
+      csn wn bitr4di 3syl mpbird ) ACLMZNOZVDNUAZUBZAVDVFAVDVFOZDEPZFPZQUCOVILM
+      VFOVJLMVFOUDFRUEERUEJAVHUFBCVFDEFABRSVHGTACRSZVHHTADBCQUCOVHITABLMVFOVHKT
+      AVHUGUHUIUJAVKCUKULUSUMSZVEVGUNHCUOVLVEVHUTVGVLVHVDNCUPUQVDVFURVAVBVC $.
+  $}
+
+  ${
+    $d A a b $.  $d B b $.  $d N a b $.
+    liounopairposd.1 $e |- ( ph -> A e. NN ) $.
+    liounopairposd.2 $e |- ( ph -> B e. NN ) $.
+    liounopairposd.3 $e |- ( ph -> N = ( A + B ) ) $.
+    liounopairposd.4 $e |- ( ph -> -. E. a e. NN E. b e. NN ( N = ( a + b )
+      /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
+    liounopairposd.5 $e |- ( ph -> ( lam ` A ) = 1 ) $.
+    $( If ` N ` has no positive-positive pair, a positive-integer summand with
+       Liouville value one has a complement with value minus one.  (Contributed
+       by Zhi Wang, 20-Oct-2026.) $)
+    liounopairposd $p |- ( ph -> ( lam ` B ) = -u 1 ) $=
+      ( cliou cfv c1 wceq cn wcel cv caddc adantr cneg cpr wo liounncl elpri co
+      3syl w3a wrex wa simpr lioupairexd mtand olcnd ) ACLMZNUAZOZUONOZACPQZUOU
+      PNUBQUQURUCHCUDUOUPNUEUGAURDERZFRZSUFOUTLMNOVALMNOUHFPUIEPUIJAURUJBCNDEFA
+      BPQURGTAUSURHTADBCSUFOURITABLMNOURKTAURUKULUMUN $.
+  $}
+
+  ${
+    $d P a b u v $.  $d ph u v $.
+    liou2nopairnegd.1 $e |- ( ph -> P e. NN ) $.
+    liou2nopairnegd.2 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = (
+      a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
+    $( Absence of a positive-positive pair for Liouville's function at twice a
+       positive integer excludes a negative-negative pair at that integer.
+       Double both summands using the common scaling implication.  (Contributed
+       by Zhi Wang, 20-Oct-2026.) $)
+    liou2nopairnegd $p |- ( ph -> -. E. u e. NN E. v e. NN ( P = ( u + v ) /\
+      ( lam ` u ) = -u 1 /\ ( lam ` v ) = -u 1 ) ) $=
+      ( cv caddc co wceq cliou cfv c1 w3a cn wrex c2 cmul cneg 2nn liou2 oveq2i
+      wcel a1i neg1mulneg1e1 eqtri lioupairmulreximd wb 2cnd mulcomd lioupaireq
+      nncnd syl sylibd mtod ) ADCIZBIZJKLURMNOUAZLUSMNUTLPBQRCQRZSDTKZEIZFIZJKZ
+      LVCMNOLZVDMNOLZPFQREQRZHAVADSTKZVELVFVGPFQREQRZVHABCUTOSDEFSQUEAUBUFUTSMN
+      ZTKZOLAVLUTUTTKOVKUTUTTUCUDUGUHUFUIAVIVBLVJVHUJADSADGUNAUKULOVBVIEFUMUOUP
+      UQ $.
+  $}
+
+  ${
+    $d A a b u v $.  $d P a b u v $.  $d ph u v $.
+    liougbprmdivd.1 $e |- ( ph -> A e. NN ) $.
+    liougbprmdivd.2 $e |- ( ph -> P e. Prime ) $.
+    liougbprmdivd.3 $e |- ( ph -> P || A ) $.
+    liougbprmdivd.4 $e |- ( ph -> ( lam ` A ) = 1 ) $.
+    liougbprmdivd.5 $e |- ( ph -> E. u e. NN E. v e. NN ( ( 2 x. P ) = ( u +
+      v ) /\ ( lam ` u ) = 1 /\ ( lam ` v ) = 1 ) ) $.
+    $( Transfer a positive-positive pair for Liouville's function at twice a
+       prime to a negative-negative pair at twice a positive multiple at which
+       Liouville's function is one.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    liougbprmdivd $p |- ( ph -> E. a e. NN E. b e. NN ( ( 2 x. A ) = ( a + b
+      ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
+      ( c2 cmul co wceq cliou cfv cn wrex cdiv cv caddc cneg w3a liouprmdivnegd
+      c1 wcel simpld cc liounncn syl mullidd simprd eqtrd lioupairmulreximd mpd
+      2cnd cprime prmnn nncnd mulassd nnne0d divcan2d oveq2d lioupaireq mpbid
+      wb ) AMENOZDEUAOZNOZFUBZGUBZUCOZPVLQRUGUDZPZVMQRVOPZUEGSTFSTZMDNOZVNPVPVQ
+      UEGSTFSTZAVICUBZBUBZUCOPWAQRUGPWBQRUGPUEBSTCSTVRLABCUGVOVJVIFGAVJSUHZVJQR
+      ZVOPZADEHIJKUFZUIZAUGWDNOWDVOAWDAWCWDUJUHWGVJUKULUMAWCWEWFUNUOUPUQAVKVSPV
+      RVTVHAVKMEVJNOZNOVSAMEVJAURAEAEUSUHESUHIEUTULZVAZAVJWGVAVBAWHDMNADEADHVAW
+      JAEWIVCVDVEUOVOVSVKFGVFULVG $.
+  $}
+
+  ${
+    $d A a b u v $.  $d K a b u v $.  $d ph u v $.
+    liougb4mulposd.1 $e |- ( ph -> A e. NN ) $.
+    liougb4mulposd.2 $e |- ( ph -> K e. NN ) $.
+    liougb4mulposd.3 $e |- ( ph -> ( lam ` K ) = 1 ) $.
+    liougb4mulposd.4 $e |- ( ph -> E. u e. NN E. v e. NN ( ( 4 x. A ) = (
+    u + v ) /\ ( lam ` u ) = -u 1 /\ ( lam ` v ) = -u 1 ) ) $.
+    $( Scale a negative-negative pair for Liouville's function by a positive
+       integer at which the function is one.  Transport both witnesses and use
+       complete multiplicativity.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    liougb4mulposd $p |- ( ph -> E. a e. NN E. b e. NN ( ( 4 x. ( A x. K
+    ) ) = ( a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
+      ( c4 cmul co cv wceq cliou cfv cn wrex caddc c1 w3a oveq2d neg1cn mulridi
+      cneg eqtrdi lioupairmulreximd mpd wb cc wcel 4cn nncnd mulassd lioupaireq
+      a1i syl mpbid ) ALDMNZEMNZFOZGOZUANZPVCQRUBUGZPZVDQRVFPZUCGSTFSTZLDEMNMNZ
+      VEPVGVHUCGSTFSTZAVACOZBOZUANPVLQRVFPVMQRVFPUCBSTCSTVIKABCVFVFEVAFGIAVFEQR
+      ZMNVFUBMNVFAVNUBVFMJUDVFUEUFUHUIUJAVBVJPVIVKUKALDELULUMAUNURADHUOAEIUOUPV
+      FVJVBFGUQUSUT $.
+  $}
+
+  ${
+    $d a b $.
+    $( The decomposition of four as two plus two gives a base instance of
+       ~ liougb4 .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    liougb4base $p |- E. a e. NN E. b e. NN ( 4 = ( a + b ) /\ ( lam ` a )
+      = -u 1 /\ ( lam ` b ) = -u 1 ) $=
+      ( c4 cv caddc co wceq cliou cfv c1 cneg w3a cn wrex wtru c2 2nn a1i 2p2e4
+      wcel eqcomi liou2 lioupairexd mptru ) CADZBDZEFGUEHIJKZGUFHIUGGLBMNAMNOPP
+      UGCABPMTOQRZUHCPPEFZGOUICSUARPHIUGGOUBRZUJUCUD $.
   $}
 
   ${
@@ -886043,6 +886150,44 @@ $)
       KVIVOVHVIHJVGVJUIUJVIUMUKUNULVGVNOZSTVIVIAVKBCSDEVSUOQTDEVSUPQVGVNRVKSTMK
       ZIVSVTVKUQUGQSFGVIIVSURQTFGVIIVSUSQVSVIVHJKVIHJKVIVSVHHVIJVGVNUIUJVIUMUTU
       NULVGVHVIHVAEVJVNVBAVCVHVIHVEVFVD $.
+  $}
+
+  ${
+    $d a b $.
+    $( A decomposition of eight into two positive integers with negative values
+       of Liouville's function.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    liougb8 $p |- E. a e. NN E. b e. NN ( 8 = ( a + b ) /\ ( lam ` a ) =
+    -u 1 /\ ( lam ` b ) = -u 1 ) $=
+      ( c8 c1 cmul co cv caddc wceq cliou cfv cneg w3a wrex wcel 1nn liougb8mul
+      cn ax-mp wb 8cn mulridi lioupaireq mpbi ) CDEFZAGZBGZHFZIUFJKDLZIZUGJKUII
+      ZMBRNARNZCUHIUJUKMBRNARNZDROULPDABQSUECIULUMTCUAUBUICUEABUCSUD $.
+  $}
+
+  ${
+    $d a b $.
+    $( The decomposition of twelve as seven plus five, with Liouville's
+       function equal to minus one at both summands.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
+    liougb12 $p |- E. a e. NN E. b e. NN ( ; 1 2 = ( a + b ) /\ ( lam ` a
+    ) = -u 1 /\ ( lam ` b ) = -u 1 ) $=
+      ( c1 c2 cdc cv caddc co wceq cliou cfv cneg w3a cn wrex wtru c7 wcel a1i
+      c5 7nn 5nn 7p5e12 eqcomi liou7 liou5 lioupairexd mptru ) CDEZAFZBFZGHIUJJ
+      KCLZIUKJKULIMBNOANOPQTULUIABQNRPUASTNRPUBSUIQTGHZIPUMUIUCUDSQJKULIPUESTJK
+      ULIPUFSUGUH $.
+  $}
+
+  ${
+    $d a b $.
+    $( The decomposition of eighteen as eleven plus seven, with Liouville's
+       function equal to minus one at both summands.  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
+    liougb18 $p |- E. a e. NN E. b e. NN ( ; 1 8 = ( a + b ) /\ ( lam ` a ) =
+      -u 1 /\ ( lam ` b ) = -u 1 ) $=
+      ( c1 c8 cdc cv caddc co wceq cliou cfv cneg w3a cn wrex wtru c7 wcel 1nn0
+      a1i 11nn 7nn 7nn0 7cn ax-1cn 7p1e8 addcomli decaddi eqcomi cprime liouprm
+      eqid 11prm mp1i liou7 lioupairexd mptru ) CDEZAFZBFZGHIUSJKCLZIUTJKVAIMBN
+      OANOPCCEZQVAURABVBNRPUATQNRPUBTURVBQGHZIPVCURCCDVBQSSUCVBULQCDUDUEUFUGUHU
+      ITVBUJRVBJKVAIPUMVBUKUNQJKVAIPUOTUPUQ $.
   $}
 
   ${
@@ -886087,174 +886232,6 @@ $)
       negeqd eqtrd lioupairexd ) ADEZAFGZHIZJZKALMZUSHNZTALMZBCURKAKDEUROPZUOUQ
       QZUAZVDURVAKKRMZALMUSUSRMTVEALVETUBUCUDURKKAURKVBSZVFURAVCSUEUFURUSFGZUPN
       ZUTURUOAUGEVGVHIVCAUHAUIUJURUPHUOUQUKULUMZVIUN $.
-  $}
-
-  ${
-    $d A a b $.  $d B b $.  $d N a b $.
-    liounopaird.1 $e |- ( ph -> A e. NN ) $.
-    liounopaird.2 $e |- ( ph -> B e. NN ) $.
-    liounopaird.3 $e |- ( ph -> N = ( A + B ) ) $.
-    liounopaird.4 $e |- ( ph -> -. E. a e. NN E. b e. NN ( N = ( a + b ) /\ (
-      lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
-    liounopaird.5 $e |- ( ph -> ( lam ` A ) = -u 1 ) $.
-    $( If ` N ` has no negative-negative pair and ` ( A + B ) = N ` , with
-       positive integer summands, then value minus one at ` A ` forces value
-       one at ` B ` under Liouville's function.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    liounopaird $p |- ( ph -> ( lam ` B ) = 1 ) $=
-      ( cliou cfv c1 wceq cv caddc cn wcel adantr cneg wne co w3a wrex wa simpr
-      lioupairexd mtand neqned cq cc0 cdif wb nnqnz liounzneg1 necon2bbid df-ne
-      csn wn bitr4di 3syl mpbird ) ACLMZNOZVDNUAZUBZAVDVFAVDVFOZDEPZFPZQUCOVILM
-      VFOVJLMVFOUDFRUEERUEJAVHUFBCVFDEFABRSVHGTACRSZVHHTADBCQUCOVHITABLMVFOVHKT
-      AVHUGUHUIUJAVKCUKULUSUMSZVEVGUNHCUOVLVEVHUTVGVLVHVDNCUPUQVDVFURVAVBVC $.
-  $}
-
-  ${
-    $d M a $.  $d M b $.  $d N a $.  $d N b $.
-    $( Equality of targets preserves a decomposition into summands with the
-       same value of Liouville's function.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    lioupaireq $p |- ( N = M -> ( E. a e. NN E. b e. NN ( N = ( a + b ) /\ (
-      lam ` a ) = S /\ ( lam ` b ) = S ) <-> E. a e. NN E. b e. NN ( M = ( a
-      + b ) /\ ( lam ` a ) = S /\ ( lam ` b ) = S ) ) ) $=
-      ( wceq cv caddc co cliou cfv w3a cn eqeq1 3anbi1d 2rexbidv ) CBFZCDGZEGZH
-      IZFZRJKAFZSJKAFZLBTFZUBUCLDEMMQUAUDUBUCCBTNOP $.
-  $}
-
-  ${
-    $d a b $.
-    $( A decomposition of eight into two positive integers with negative values
-       of Liouville's function.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    liougb8 $p |- E. a e. NN E. b e. NN ( 8 = ( a + b ) /\ ( lam ` a ) =
-    -u 1 /\ ( lam ` b ) = -u 1 ) $=
-      ( c8 c1 cmul co cv caddc wceq cliou cfv cneg w3a wrex wcel 1nn liougb8mul
-      cn ax-mp wb 8cn mulridi lioupaireq mpbi ) CDEFZAGZBGZHFZIUFJKDLZIZUGJKUII
-      ZMBRNARNZCUHIUJUKMBRNARNZDROULPDABQSUECIULUMTCUAUBUICUEABUCSUD $.
-  $}
-
-  ${
-    $d a b $.
-    $( The decomposition of twelve as seven plus five, with Liouville's
-       function equal to minus one at both summands.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    liougb12 $p |- E. a e. NN E. b e. NN ( ; 1 2 = ( a + b ) /\ ( lam ` a
-    ) = -u 1 /\ ( lam ` b ) = -u 1 ) $=
-      ( c1 c2 cdc cv caddc co wceq cliou cfv cneg w3a cn wrex wtru c7 wcel a1i
-      c5 7nn 5nn 7p5e12 eqcomi liou7 liou5 lioupairexd mptru ) CDEZAFZBFZGHIUJJ
-      KCLZIUKJKULIMBNOANOPQTULUIABQNRPUASTNRPUBSUIQTGHZIPUMUIUCUDSQJKULIPUESTJK
-      ULIPUFSUGUH $.
-  $}
-
-  ${
-    $d a b $.
-    $( The decomposition of eighteen as eleven plus seven, with Liouville's
-       function equal to minus one at both summands.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
-    liougb18 $p |- E. a e. NN E. b e. NN ( ; 1 8 = ( a + b ) /\ ( lam ` a ) =
-      -u 1 /\ ( lam ` b ) = -u 1 ) $=
-      ( c1 c8 cdc cv caddc co wceq cliou cfv cneg w3a cn wrex wtru c7 wcel 1nn0
-      a1i 11nn 7nn 7nn0 7cn ax-1cn 7p1e8 addcomli decaddi eqcomi cprime liouprm
-      eqid 11prm mp1i liou7 lioupairexd mptru ) CDEZAFZBFZGHIUSJKCLZIUTJKVAIMBN
-      OANOPCCEZQVAURABVBNRPUATQNRPUBTURVBQGHZIPVCURCCDVBQSSUCVBULQCDUDUEUFUGUHU
-      ITVBUJRVBJKVAIPUMVBUKUNQJKVAIPUOTUPUQ $.
-  $}
-
-  ${
-    $d K a b u v $.  $d N a b u v $.  $d T a b u v $.  $d ph u v $.
-    lioupairmulreximd.1 $e |- ( ph -> K e. NN ) $.
-    lioupairmulreximd.2 $e |- ( ph -> ( S x. ( lam ` K ) ) = T ) $.
-    $( Scaling positive-integer summands by ` K ` changes their common
-       Liouville value from ` S ` to ` T ` when ` T = ( S x. ( lam `` K ) ) ` .
-       Here the existence of the original summands is an implication premise.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    lioupairmulreximd $p |- ( ph -> ( E. u e. NN E. v e. NN ( N = ( u + v )
-      /\ ( lam ` u ) = S /\ ( lam ` v ) = S ) -> E. a e. NN E. b e. NN ( ( N
-      x. K ) = ( a + b ) /\ ( lam ` a ) = T /\ ( lam ` b ) = T ) ) ) $=
-      ( cv co wceq cliou cfv cn wrex wcel wa cmul simplr simprl ad2antrr simprr
-      caddc w3a simp1d simp2d simp3d lioupairmuld rexlimdvaa rexlimdva ) AGCLZB
-      LZUFMNZUNOPDNZUOOPDNZUGZBQRGFUAMHLZILZUFMNUTOPENVAOPENUGIQRHQRZCQAUNQSZTZ
-      USVBBQVDUOQSZUSTZTZUNUODEFGHIAVCVFUBVDVEUSUCAFQSVCVFJUDVGUPUQURVDVEUSUEZU
-      HVGUPUQURVHUIVGUPUQURVHUJADFOPUAMENVCVFKUDUKULUM $.
-  $}
-
-  ${
-    $d A a b u v $.  $d K a b u v $.  $d ph u v $.
-    liougb4mulposd.1 $e |- ( ph -> A e. NN ) $.
-    liougb4mulposd.2 $e |- ( ph -> K e. NN ) $.
-    liougb4mulposd.3 $e |- ( ph -> ( lam ` K ) = 1 ) $.
-    liougb4mulposd.4 $e |- ( ph -> E. u e. NN E. v e. NN ( ( 4 x. A ) = (
-    u + v ) /\ ( lam ` u ) = -u 1 /\ ( lam ` v ) = -u 1 ) ) $.
-    $( Scale a negative-negative pair for Liouville's function by a positive
-       integer at which the function is one.  Transport both witnesses and use
-       complete multiplicativity.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    liougb4mulposd $p |- ( ph -> E. a e. NN E. b e. NN ( ( 4 x. ( A x. K
-    ) ) = ( a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
-      ( c4 cmul co cv wceq cliou cfv cn wrex caddc c1 w3a oveq2d neg1cn mulridi
-      cneg eqtrdi lioupairmulreximd mpd wb cc wcel 4cn nncnd mulassd lioupaireq
-      a1i syl mpbid ) ALDMNZEMNZFOZGOZUANZPVCQRUBUGZPZVDQRVFPZUCGSTFSTZLDEMNMNZ
-      VEPVGVHUCGSTFSTZAVACOZBOZUANPVLQRVFPVMQRVFPUCBSTCSTVIKABCVFVFEVAFGIAVFEQR
-      ZMNVFUBMNVFAVNUBVFMJUDVFUEUFUHUIUJAVBVJPVIVKUKALDELULUMAUNURADHUOAEIUOUPV
-      FVJVBFGUQUSUT $.
-  $}
-
-  ${
-    $d P a b u v $.  $d ph u v $.
-    liou2nopairnegd.1 $e |- ( ph -> P e. NN ) $.
-    liou2nopairnegd.2 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = (
-      a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( Absence of a positive-positive pair for Liouville's function at twice a
-       positive integer excludes a negative-negative pair at that integer.
-       Double both summands using the common scaling implication.  (Contributed
-       by Zhi Wang, 20-Oct-2026.) $)
-    liou2nopairnegd $p |- ( ph -> -. E. u e. NN E. v e. NN ( P = ( u + v ) /\
-      ( lam ` u ) = -u 1 /\ ( lam ` v ) = -u 1 ) ) $=
-      ( cv caddc co wceq cliou cfv c1 w3a cn wrex c2 cmul cneg 2nn liou2 oveq2i
-      wcel a1i neg1mulneg1e1 eqtri lioupairmulreximd wb 2cnd mulcomd lioupaireq
-      nncnd syl sylibd mtod ) ADCIZBIZJKLURMNOUAZLUSMNUTLPBQRCQRZSDTKZEIZFIZJKZ
-      LVCMNOLZVDMNOLZPFQREQRZHAVADSTKZVELVFVGPFQREQRZVHABCUTOSDEFSQUEAUBUFUTSMN
-      ZTKZOLAVLUTUTTKOVKUTUTTUCUDUGUHUFUIAVIVBLVJVHUJADSADGUNAUKULOVBVIEFUMUOUP
-      UQ $.
-  $}
-
-  ${
-    $d A a b $.  $d B b $.  $d N a b $.
-    liounopairposd.1 $e |- ( ph -> A e. NN ) $.
-    liounopairposd.2 $e |- ( ph -> B e. NN ) $.
-    liounopairposd.3 $e |- ( ph -> N = ( A + B ) ) $.
-    liounopairposd.4 $e |- ( ph -> -. E. a e. NN E. b e. NN ( N = ( a + b )
-      /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    liounopairposd.5 $e |- ( ph -> ( lam ` A ) = 1 ) $.
-    $( If ` N ` has no positive-positive pair, a positive-integer summand with
-       Liouville value one has a complement with value minus one.  (Contributed
-       by Zhi Wang, 20-Oct-2026.) $)
-    liounopairposd $p |- ( ph -> ( lam ` B ) = -u 1 ) $=
-      ( cliou cfv c1 wceq cn wcel cv caddc adantr cneg cpr wo liounncl elpri co
-      3syl w3a wrex wa simpr lioupairexd mtand olcnd ) ACLMZNUAZOZUONOZACPQZUOU
-      PNUBQUQURUCHCUDUOUPNUEUGAURDERZFRZSUFOUTLMNOVALMNOUHFPUIEPUIJAURUJBCNDEFA
-      BPQURGTAUSURHTADBCSUFOURITABLMNOURKTAURUKULUMUN $.
-  $}
-
-  ${
-    $d A a b u v $.  $d P a b u v $.  $d ph u v $.
-    liougbprmdivd.1 $e |- ( ph -> A e. NN ) $.
-    liougbprmdivd.2 $e |- ( ph -> P e. Prime ) $.
-    liougbprmdivd.3 $e |- ( ph -> P || A ) $.
-    liougbprmdivd.4 $e |- ( ph -> ( lam ` A ) = 1 ) $.
-    liougbprmdivd.5 $e |- ( ph -> E. u e. NN E. v e. NN ( ( 2 x. P ) = ( u +
-      v ) /\ ( lam ` u ) = 1 /\ ( lam ` v ) = 1 ) ) $.
-    $( Transfer a positive-positive pair for Liouville's function at twice a
-       prime to a negative-negative pair at twice a positive multiple at which
-       Liouville's function is one.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    liougbprmdivd $p |- ( ph -> E. a e. NN E. b e. NN ( ( 2 x. A ) = ( a + b
-      ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
-      ( c2 cmul co wceq cliou cfv cn wrex cdiv cv caddc cneg w3a liouprmdivnegd
-      c1 wcel simpld cc liounncn syl mullidd simprd eqtrd lioupairmulreximd mpd
-      2cnd cprime prmnn nncnd mulassd nnne0d divcan2d oveq2d lioupaireq mpbid
-      wb ) AMENOZDEUAOZNOZFUBZGUBZUCOZPVLQRUGUDZPZVMQRVOPZUEGSTFSTZMDNOZVNPVPVQ
-      UEGSTFSTZAVICUBZBUBZUCOPWAQRUGPWBQRUGPUEBSTCSTVRLABCUGVOVJVIFGAVJSUHZVJQR
-      ZVOPZADEHIJKUFZUIZAUGWDNOWDVOAWDAWCWDUJUHWGVJUKULUMAWCWEWFUNUOUPUQAVKVSPV
-      RVTVHAVKMEVJNOZNOVSAMEVJAURAEAEUSUHESUHIEUTULZVAZAVJWGVAVBAWHDMNADEADHVAW
-      JAEWIVCVDVEUOVOVSVKFGVFULVG $.
   $}
 
   ${
@@ -886609,26 +886586,6 @@ $)
   $}
 
   ${
-    $d A a b $.  $d P a b $.
-    liougb4modnegd.1 $e |- ( ph -> P e. NN ) $.
-    liougb4modnegd.2 $e |- ( ph -> A e. ZZ ) $.
-    liougb4modnegd.3 $e |- ( ph -> -. P || A ) $.
-    liougb4modnegd.4 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 4 x. P )
-    = ( a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
-    liougb4modnegd.5 $e |- ( ph -> -. 3 || P ) $.
-    $( If four times ` P ` has no negative-negative pair and three does not
-       divide ` P ` , Liouville's function at nonzero residues modulo ` P `
-       reverses sign under negation.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    liougb4modnegd $p |- ( ph -> ( lam ` ( -u A mod P ) ) = -u ( lam ` (
-    A mod P ) ) ) $=
-      ( cneg cmo co cliou cfv cmin negmodndvdsd fveq2d c1 cfzo zmodfzo1d sselid
-      cn fzossnn wcel clt wbr elfzolt2 syl liougb4antid eqtrd ) ABKCLMZNOCBCLMZ
-      PMZNOUMNOKAULUNNABCGFHQRAUMCDEFASCTMZUCUMCUDABCGFHUAZUBAUMUOUEUMCUFUGUPUM
-      SCUHUIIJUJUK $.
-  $}
-
-  ${
     lioumodcld.1 $e |- ( ph -> P e. NN ) $.
     lioumodcld.2 $e |- ( ph -> A e. ZZ ) $.
     lioumodcld.3 $e |- ( ph -> -. P || A ) $.
@@ -886666,7 +886623,6 @@ $)
       QRAUFCKACSDMJZNUFCTAUGUHCDUBGUCCDUDQUEUA $.
   $}
 
-
   ${
     $d P x $.
     lioumod1d.1 $e |- F = ( x e. ZZ |-> ( lam ` ( x mod P ) ) ) $.
@@ -886690,24 +886646,6 @@ $)
     lioumodcongd $p |- ( ph -> ( F ` A ) = ( F ` B ) ) $=
       ( cmo co cliou cfv fveq2d lioumodval 3eqtr4d ) ACEKLZMNDEKLZMNCFNDFNARSMJ
       OABCEFGHPABDEFGIPQ $.
-  $}
-
-  ${
-    $d A a b $.  $d A x $.  $d P a b $.  $d P x $.
-    lioumodnegd.1 $e |- F = ( x e. ZZ |-> ( lam ` ( x mod P ) ) ) $.
-    lioumodnegd.2 $e |- ( ph -> P e. NN ) $.
-    lioumodnegd.3 $e |- ( ph -> A e. ZZ ) $.
-    lioumodnegd.4 $e |- ( ph -> -. P || A ) $.
-    lioumodnegd.5 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 4 x. P ) = ( a
-    + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
-    lioumodnegd.6 $e |- ( ph -> -. 3 || P ) $.
-    $( The residue function of ~ lioumodval reverses sign under negation away
-       from multiples of ` P ` , if three does not divide ` P ` and four times
-       ` P ` has no negative-negative pair.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    lioumodnegd $p |- ( ph -> ( F ` -u A ) = -u ( F ` A ) ) $=
-      ( cneg cmo co cliou cfv liougb4modnegd lioumodval znegcld negeqd 3eqtr4d
-      ) ACNZDOPQRCDOPQRZNUDERCERZNACDFGIJKLMSABUDDEHACJUATAUFUEABCDEHJTUBUC $.
   $}
 
   ${
@@ -886742,6 +886680,44 @@ $)
       ( cfv cc wcel cc0 wne cmo co cliou lioumodval c1 syl cr lioumodcld signre
       cneg cpr recnd eqeltrd signne0 eqnetrd jca ) ACEJZKLUKMNAUKCDOPQJZKABCDEF
       HRZAULAULSUDSUELZULUALACDGHIUBZULUCTUFUGAUKULMUMAUNULMNUOULUHTUIUJ $.
+  $}
+
+  ${
+    $d A a b $.  $d P a b $.
+    liougb4modnegd.1 $e |- ( ph -> P e. NN ) $.
+    liougb4modnegd.2 $e |- ( ph -> A e. ZZ ) $.
+    liougb4modnegd.3 $e |- ( ph -> -. P || A ) $.
+    liougb4modnegd.4 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 4 x. P )
+    = ( a + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
+    liougb4modnegd.5 $e |- ( ph -> -. 3 || P ) $.
+    $( If four times ` P ` has no negative-negative pair and three does not
+       divide ` P ` , Liouville's function at nonzero residues modulo ` P `
+       reverses sign under negation.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
+    liougb4modnegd $p |- ( ph -> ( lam ` ( -u A mod P ) ) = -u ( lam ` (
+    A mod P ) ) ) $=
+      ( cneg cmo co cliou cfv cmin negmodndvdsd fveq2d c1 cfzo zmodfzo1d sselid
+      cn fzossnn wcel clt wbr elfzolt2 syl liougb4antid eqtrd ) ABKCLMZNOCBCLMZ
+      PMZNOUMNOKAULUNNABCGFHQRAUMCDEFASCTMZUCUMCUDABCGFHUAZUBAUMUOUEUMCUFUGUPUM
+      SCUHUIIJUJUK $.
+  $}
+
+  ${
+    $d A a b $.  $d A x $.  $d P a b $.  $d P x $.
+    lioumodnegd.1 $e |- F = ( x e. ZZ |-> ( lam ` ( x mod P ) ) ) $.
+    lioumodnegd.2 $e |- ( ph -> P e. NN ) $.
+    lioumodnegd.3 $e |- ( ph -> A e. ZZ ) $.
+    lioumodnegd.4 $e |- ( ph -> -. P || A ) $.
+    lioumodnegd.5 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 4 x. P ) = ( a
+    + b ) /\ ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
+    lioumodnegd.6 $e |- ( ph -> -. 3 || P ) $.
+    $( The residue function of ~ lioumodval reverses sign under negation away
+       from multiples of ` P ` , if three does not divide ` P ` and four times
+       ` P ` has no negative-negative pair.  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
+    lioumodnegd $p |- ( ph -> ( F ` -u A ) = -u ( F ` A ) ) $=
+      ( cneg cmo co cliou cfv liougb4modnegd lioumodval znegcld negeqd 3eqtr4d
+      ) ACNZDOPQRCDOPQRZNUDERCERZNACDFGIJKLMSABUDDEHACJUATAUFUEABCDEHJTUBUC $.
   $}
 
   ${
@@ -886829,6 +886805,22 @@ $)
   $}
 
   ${
+    $d P x $.  $d Z x $.
+    lioumodonemuld.1 $e |- F = ( x e. ZZ |-> ( lam ` ( x mod P ) ) ) $.
+    lioumodonemuld.2 $e |- ( ph -> P e. Prime ) $.
+    lioumodonemuld.3 $e |- ( ph -> Z e. ZZ ) $.
+    lioumodonemuld.4 $e |- ( ph -> -. P || Z ) $.
+    $( The multiplier-one identity for the local residue function.
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
+    lioumodonemuld $p |- ( ph -> ( F ` ( 1 x. Z ) ) = ( ( F ` 1 ) x. ( F `
+    Z ) ) ) $=
+      ( c1 cfv cmul co cc wcel cc0 wne cprime cn mullidd prmnn simpld lioumod1d
+      syl lioumodcnne0d oveq1d zcnd fveq2d 3eqtr4rd ) AJEDKZLMUJJDKZUJLMJELMZDK
+      AUJAUJNOUJPQABECDFACROCSOGCUAUDHIUEUBTAUKJUJLABCDFGUCUFAULEDAEAEHUGTUHUI
+      $.
+  $}
+
+  ${
     $d D a b $.  $d D x $.  $d F k z $.  $d K a b $.  $d K k z $.  $d K x $.
     $d N a b $.  $d N k z $.  $d N x $.  $d P a b $.  $d P k z $.  $d P x $.
     $d Z a b $.  $d Z x $.  $d Z z $.
@@ -886908,22 +886900,6 @@ $)
       ZVKZVLXGWIWJXIVMXGWNWOXGWKWPWQXHVNZVLXGWNWOXJVMXGWKWPWQXHVOAVPDUKTIUCZJUC
       ZVQTUMXKVRUEUPVSZUMXLVRUEXMUMUNJUFURIUFURVFXCXFQVEAVTDVIUIVFXCXFRVEADCUCZ
       VIUIVFEUCZXNUKTFUEXOFUEXNFUEUKTUMWACUOWBEUPGUSTWBXCXFSVEWCWDWEWF $.
-  $}
-
-  ${
-    $d P x $.  $d Z x $.
-    lioumodonemuld.1 $e |- F = ( x e. ZZ |-> ( lam ` ( x mod P ) ) ) $.
-    lioumodonemuld.2 $e |- ( ph -> P e. Prime ) $.
-    lioumodonemuld.3 $e |- ( ph -> Z e. ZZ ) $.
-    lioumodonemuld.4 $e |- ( ph -> -. P || Z ) $.
-    $( The multiplier-one identity for the local residue function.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    lioumodonemuld $p |- ( ph -> ( F ` ( 1 x. Z ) ) = ( ( F ` 1 ) x. ( F `
-    Z ) ) ) $=
-      ( c1 cfv cmul co cc wcel cc0 wne cprime cn mullidd prmnn simpld lioumod1d
-      syl lioumodcnne0d oveq1d zcnd fveq2d 3eqtr4rd ) AJEDKZLMUJJDKZUJLMJELMZDK
-      AUJAUJNOUJPQABECDFACROCSOGCUAUDHIUEUBTAUKJUJLABCDFGUCUFAULEDAEAEHUGTUHUI
-      $.
   $}
 
   ${
@@ -887013,7 +886989,6 @@ $)
       CUBUCZCPUDZUAUCUEEVBSTDRUTVBDRSTUFUGPQUHAEUICUJTZUMVAKEUICUKULABPCDEGHIJN
       OAVCUNECUOKUPUQURLMUS $.
   $}
-
 
   ${
     $d P x $.  $d R x $.
@@ -887283,7 +887258,7 @@ $)
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Odd completion and reflection identities
+  Odd completion and multiplicativity
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
@@ -887560,6 +887535,72 @@ $)
 
   ${
     $d A x $.  $d P x $.
+    liouoddsubpd.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 ) , (
+      lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
+    liouoddsubpd.2 $e |- ( ph -> P e. NN ) $.
+    liouoddsubpd.3 $e |- ( ph -> A e. ZZ ) $.
+    $( Subtracting the modulus preserves the odd-completion value.
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    liouoddsubpd $p |- ( ph -> ( F ` ( A - P ) ) = ( F ` A ) ) $=
+      ( cmin co nnzd zsubcld cmo cr wcel crp wceq zred nnrpd modeqmodmin eqcomd
+      syl2anc liouoddcongd ) ABCDIJZCDEFACDHADGKLHACDMJZUDDMJZACNODPOUEUFQACHRA
+      DGSCDTUBUAUC $.
+  $}
+
+  ${
+    $d A x $.  $d P x $.
+    liouoddnegsubpd.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 ) ,
+      ( lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
+    liouoddnegsubpd.2 $e |- ( ph -> P e. NN ) $.
+    liouoddnegsubpd.3 $e |- ( ph -> A e. ZZ ) $.
+    $( Adding the modulus ` P ` to the integer argument ` -u A ` leaves the
+       odd-completion value unchanged.  (Contributed by Zhi Wang,
+       20-Oct-2026.) $)
+    liouoddnegsubpd $p |- ( ph -> ( F ` -u A ) = ( F ` -u ( A - P ) ) ) $=
+      ( cneg cmin co znegcld nnzd zsubcld zred nnrpd cr wcel crp cmo syl2anc
+      wceq modeqmodmin modnegd liouoddcongd ) ABCICDJKZIDEFACHLAUFACDHADGMNZLAC
+      UFDACHOZAUFUGOADGPZACQRDSRCDTKUFDTKUBUHUICDUCUAUDUE $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d K x $.  $d P x $.
+    liouoddnegmulcongd.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 )
+      , ( lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
+    liouoddnegmulcongd.2 $e |- ( ph -> P e. NN ) $.
+    liouoddnegmulcongd.3 $e |- ( ph -> K e. ZZ ) $.
+    liouoddnegmulcongd.4 $e |- ( ph -> A e. ZZ ) $.
+    liouoddnegmulcongd.5 $e |- ( ph -> B e. ZZ ) $.
+    liouoddnegmulcongd.6 $e |- ( ph -> ( A mod P ) = ( B mod P ) ) $.
+    $( Congruent integers have equal completion values after multiplication and
+       negation.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    liouoddnegmulcongd $p |- ( ph -> ( F ` -u ( K x. A ) ) = ( F ` -u ( K x.
+      B ) ) ) $=
+      ( cmul co cneg zmulcld znegcld zred nnrpd cmo eqidd modnegd liouoddcongd
+      modmul12d ) ABGCNOZPGDNOZPEFHAUFAGCJKQZRAUGAGDJLQZRAUFUGEAUFUHSAUGUISAEIT
+      ZAGGCDEJJKLUJAGEUAOUBMUEUCUD $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d K x $.  $d P x $.
+    liouoddnegmulrefld.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 )
+    , ( lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
+    liouoddnegmulrefld.2 $e |- ( ph -> P e. NN ) $.
+    liouoddnegmulrefld.3 $e |- ( ph -> K e. ZZ ) $.
+    liouoddnegmulrefld.4 $e |- ( ph -> A e. ZZ ) $.
+    liouoddnegmulrefld.5 $e |- ( ph -> B e. ZZ ) $.
+    liouoddnegmulrefld.6 $e |- ( ph -> ( B mod P ) = ( -u A mod P ) ) $.
+    $( If ` B ` is congruent to ` -u A ` modulo ` P ` , the odd completion has
+       equal values at ` -u ( K x. B ) ` and ` ( K x. A ) ` for every integer
+       ` K ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    liouoddnegmulrefld $p |- ( ph -> ( F ` -u ( K x. B ) ) = ( F ` ( K x. A )
+    ) ) $=
+      ( cmul co cneg cfv znegcld zcnd eqtrd liouoddnegmulcongd mulneg2d negnegd
+      negeqd mulcld fveq2d ) AGDNOPFQGCPZNOZPZFQGCNOZFQABDUGEFGHIJLACKRMUAAUIUJ
+      FAUIUJPZPUJAUHUKAGCAGJSZACKSZUBUDAUJAGCULUMUEUCTUFT $.
+  $}
+
+  ${
+    $d A x $.  $d P x $.
     liouoddsmall.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 ) , (
       lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
     liouoddsmall.2 $e |- ( ph -> A e. ( 1 ..^ P ) ) $.
@@ -887573,6 +887614,22 @@ $)
       MIZOZPZCVBKLZCMIZDCNJZMIZOZPZVJABCDEFACQDRJZSCUCSGCQDUDUFUGACUODRJZSVACTZ
       VHVNTAVOVPCDUHGUICDUJVQVCVIVDVGVJVMVACVBKUKVACMULVQVFVLVQVEVKMVACDNUPUMUN
       UQURAVIVJVMHUSUT $.
+  $}
+
+  ${
+    $d A x $.  $d P x $.
+    liouoddsmall2d.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 ) , (
+      lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
+    liouoddsmall2d.2 $e |- ( ph -> P e. NN ) $.
+    liouoddsmall2d.3 $e |- ( ph -> A e. NN ) $.
+    liouoddsmall2d.4 $e |- ( ph -> ( 2 x. A ) < P ) $.
+    $( For positive integers with ` ( 2 x. A ) < P ` , the odd completion
+       agrees with Liouville's function at ` A ` .  See ~ liouoddval .
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    liouoddsmall2d $p |- ( ph -> ( F ` A ) = ( lam ` A ) ) $=
+      ( nncentralfzod c2 cmul co clt wbr cdiv nnred crp wcel 2rp a1i ltmuldiv2d
+      mpbid liouoddsmall ) ABCDEFADCGHIJAKCLMDNOCDKPMNOIACDKACHQADGQKRSATUAUBUC
+      UD $.
   $}
 
   ${
@@ -887605,6 +887662,20 @@ $)
       cmin cpr cn cfzo zmodfzo1d fzonnsub liounncl signnegcl 3syl ifcld eqeltrd
       syl ) ACEJCDKLZDMNLOPZUPQJZDUPUDLZQJZRZUASRSUEZABCDEFHUBAUQURVAVBACDGHIUC
       AUSUFTZUTVBTVAVBTAUPSDUGLTVCACDHGIUHUPSDUIUOUSUJUTUKULUMUN $.
+  $}
+
+  ${
+    $d A x $.  $d P x $.
+    liouoddcnne0d.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 ) , (
+      lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
+    liouoddcnne0d.2 $e |- ( ph -> P e. NN ) $.
+    liouoddcnne0d.3 $e |- ( ph -> A e. ZZ ) $.
+    liouoddcnne0d.4 $e |- ( ph -> -. P || A ) $.
+    $( The odd completion takes nonzero complex values away from multiples of
+       its modulus.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    liouoddcnne0d $p |- ( ph -> ( ( F ` A ) e. CC /\ ( F ` A ) =/= 0 ) ) $=
+      ( cfv c1 cneg cpr wcel cc cc0 wne wa liouoddcld signre recnd signne0 jca
+      syl ) ACEJZKLKMNZUEONZUEPQZRABCDEFGHISUFUGUHUFUEUETUAUEUBUCUD $.
   $}
 
   ${
@@ -887653,30 +887724,6 @@ $)
   $}
 
   ${
-    $d A x $.  $d B x $.  $d P x $.
-    liouoddsmallmuld.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 ) ,
-      ( lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
-    liouoddsmallmuld.2 $e |- ( ph -> P e. NN ) $.
-    liouoddsmallmuld.3 $e |- ( ph -> A e. NN ) $.
-    liouoddsmallmuld.4 $e |- ( ph -> B e. NN ) $.
-    liouoddsmallmuld.5 $e |- ( ph -> ( A x. B ) < ( P / 2 ) ) $.
-    $( The odd completion ` F ` of ~ liouoddval is multiplicative at positive
-       integer factors whose product is less than ` ( P / 2 ) ` .  (Contributed
-       by Zhi Wang, 20-Oct-2026.) $)
-    liouoddsmallmuld $p |- ( ph -> ( F ` ( A x. B ) ) = ( ( F ` A ) x. ( F `
-      B ) ) ) $=
-      ( cmul co cliou cfv cn wcel clt wbr nnred wceq nnq lioumul syl2an syl2anc
-      cq c1 cfzo nnmulcld c2 rehalfcld cc0 nngt0d cr wb halfpos syl mpbid lttrd
-      elfzo1 syl3anbrc liouoddsmall nnnn0d nn0ge0d nnge1d lemulge11d lemulge12d
-      cdiv lelttrd oveq12d 3eqtr4d ) ACDLMZNOZCNOZDNOZLMZVLFOCFOZDFOZLMACPQZDPQ
-      ZVMVPUAZIJVSCUFQDUFQWAVTCUBDUBCDUCUDUEABVLEFGAVLPQEPQZVLERSVLUGEUHMZQACDI
-      JUIZHAVLEUJVHMZEAVLWDTZAEAEHTZUKZWGKAULERSZWEERSZAEHUMAEUNQWIWJUOWGEUPUQU
-      RZUSEVLUTVAKVBAVQVNVRVOLABCEFGAVSWBCERSCWCQIHACWEEACITZWHWGACVLWEWLWFWHAC
-      DWLADJTZACACIVCVDADJVEVFKVIZWKUSECUTVAWNVBABDEFGAVTWBDERSDWCQJHADWEEWMWHW
-      GADVLWEWMWFWHADCWMWLADADJVCVDACIVEVGKVIZWKUSEDUTVAWOVBVJVK $.
-  $}
-
-  ${
     $d A x $.  $d P x $.
     liouoddlarge.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 ) , (
       lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
@@ -887692,22 +887739,6 @@ $)
       ZPZCVAKLZCMIZDCNJZMIZOZPZVLABCDEFACQDRJZSCUCSGCQDUDTUFAUTCUGZVGVMUGACUODR
       JZSVOAVNVPCDUHGUICDUJTVOVBVHVCVFVIVLUTCVAKUKUTCMULVOVEVKVOVDVJMUTCDNUPUMU
       NUQTAVHVIVLHURUS $.
-  $}
-
-  ${
-    $d A x $.  $d P x $.
-    liouoddsmall2d.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 ) , (
-      lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
-    liouoddsmall2d.2 $e |- ( ph -> P e. NN ) $.
-    liouoddsmall2d.3 $e |- ( ph -> A e. NN ) $.
-    liouoddsmall2d.4 $e |- ( ph -> ( 2 x. A ) < P ) $.
-    $( For positive integers with ` ( 2 x. A ) < P ` , the odd completion
-       agrees with Liouville's function at ` A ` .  See ~ liouoddval .
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    liouoddsmall2d $p |- ( ph -> ( F ` A ) = ( lam ` A ) ) $=
-      ( nncentralfzod c2 cmul co clt wbr cdiv nnred crp wcel 2rp a1i ltmuldiv2d
-      mpbid liouoddsmall ) ABCDEFADCGHIJAKCLMDNOCDKPMNOIACDKACHQADGQKRSATUAUBUC
-      UD $.
   $}
 
   ${
@@ -887733,17 +887764,27 @@ $)
   $}
 
   ${
-    $d A x $.  $d P x $.
-    liouoddsubpd.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 ) , (
-      lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
-    liouoddsubpd.2 $e |- ( ph -> P e. NN ) $.
-    liouoddsubpd.3 $e |- ( ph -> A e. ZZ ) $.
-    $( Subtracting the modulus preserves the odd-completion value.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    liouoddsubpd $p |- ( ph -> ( F ` ( A - P ) ) = ( F ` A ) ) $=
-      ( cmin co nnzd zsubcld cmo cr wcel crp wceq zred nnrpd modeqmodmin eqcomd
-      syl2anc liouoddcongd ) ABCDIJZCDEFACDHADGKLHACDMJZUDDMJZACNODPOUEUFQACHRA
-      DGSCDTUBUAUC $.
+    $d A x $.  $d B x $.  $d P x $.
+    liouoddsmallmuld.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 ) ,
+      ( lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
+    liouoddsmallmuld.2 $e |- ( ph -> P e. NN ) $.
+    liouoddsmallmuld.3 $e |- ( ph -> A e. NN ) $.
+    liouoddsmallmuld.4 $e |- ( ph -> B e. NN ) $.
+    liouoddsmallmuld.5 $e |- ( ph -> ( A x. B ) < ( P / 2 ) ) $.
+    $( The odd completion ` F ` of ~ liouoddval is multiplicative at positive
+       integer factors whose product is less than ` ( P / 2 ) ` .  (Contributed
+       by Zhi Wang, 20-Oct-2026.) $)
+    liouoddsmallmuld $p |- ( ph -> ( F ` ( A x. B ) ) = ( ( F ` A ) x. ( F `
+      B ) ) ) $=
+      ( cmul co cliou cfv cn wcel clt wbr nnred wceq nnq lioumul syl2an syl2anc
+      cq c1 cfzo nnmulcld c2 rehalfcld cc0 nngt0d cr wb halfpos syl mpbid lttrd
+      elfzo1 syl3anbrc liouoddsmall nnnn0d nn0ge0d nnge1d lemulge11d lemulge12d
+      cdiv lelttrd oveq12d 3eqtr4d ) ACDLMZNOZCNOZDNOZLMZVLFOCFOZDFOZLMACPQZDPQ
+      ZVMVPUAZIJVSCUFQDUFQWAVTCUBDUBCDUCUDUEABVLEFGAVLPQEPQZVLERSVLUGEUHMZQACDI
+      JUIZHAVLEUJVHMZEAVLWDTZAEAEHTZUKZWGKAULERSZWEERSZAEHUMAEUNQWIWJUOWGEUPUQU
+      RZUSEVLUTVAKVBAVQVNVRVOLABCEFGAVSWBCERSCWCQIHACWEEACITZWHWGACVLWEWLWFWHAC
+      DWLADJTZACACIVCVDADJVEVFKVIZWKUSECUTVAWNVBABDEFGAVTWBDERSDWCQJHADWEEWMWHW
+      GADVLWEWMWFWHADCWMWLADADJVCVDACIVEVGKVIZWKUSEDUTVAWOVBVJVK $.
   $}
 
   ${
@@ -887770,72 +887811,6 @@ $)
       ABVECDGHVLNUGUEUHAVHVJAVHESRZVGOPZUIQZVGOPVJAEUJTZFUJTZVHVNUPZJKVPEUKTFUK
       TVRVQEUQFUQEFULUMUNAVMVOVGOLUOAVGAVQVGURTKFUSUTZVAVBUEAVGVSVCVBABFCDGHKMU
       GVD $.
-  $}
-
-  ${
-    $d A x $.  $d P x $.
-    liouoddnegsubpd.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 ) ,
-      ( lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
-    liouoddnegsubpd.2 $e |- ( ph -> P e. NN ) $.
-    liouoddnegsubpd.3 $e |- ( ph -> A e. ZZ ) $.
-    $( Adding the modulus ` P ` to the integer argument ` -u A ` leaves the
-       odd-completion value unchanged.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
-    liouoddnegsubpd $p |- ( ph -> ( F ` -u A ) = ( F ` -u ( A - P ) ) ) $=
-      ( cneg cmin co znegcld nnzd zsubcld zred nnrpd cr wcel crp cmo syl2anc
-      wceq modeqmodmin modnegd liouoddcongd ) ABCICDJKZIDEFACHLAUFACDHADGMNZLAC
-      UFDACHOZAUFUGOADGPZACQRDSRCDTKUFDTKUBUHUICDUCUAUDUE $.
-  $}
-
-  ${
-    $d A x $.  $d B x $.  $d K x $.  $d P x $.
-    liouoddnegmulcongd.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 )
-      , ( lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
-    liouoddnegmulcongd.2 $e |- ( ph -> P e. NN ) $.
-    liouoddnegmulcongd.3 $e |- ( ph -> K e. ZZ ) $.
-    liouoddnegmulcongd.4 $e |- ( ph -> A e. ZZ ) $.
-    liouoddnegmulcongd.5 $e |- ( ph -> B e. ZZ ) $.
-    liouoddnegmulcongd.6 $e |- ( ph -> ( A mod P ) = ( B mod P ) ) $.
-    $( Congruent integers have equal completion values after multiplication and
-       negation.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    liouoddnegmulcongd $p |- ( ph -> ( F ` -u ( K x. A ) ) = ( F ` -u ( K x.
-      B ) ) ) $=
-      ( cmul co cneg zmulcld znegcld zred nnrpd cmo eqidd modnegd liouoddcongd
-      modmul12d ) ABGCNOZPGDNOZPEFHAUFAGCJKQZRAUGAGDJLQZRAUFUGEAUFUHSAUGUISAEIT
-      ZAGGCDEJJKLUJAGEUAOUBMUEUCUD $.
-  $}
-
-  ${
-    $d A x $.  $d P x $.
-    liouoddcnne0d.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 ) , (
-      lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
-    liouoddcnne0d.2 $e |- ( ph -> P e. NN ) $.
-    liouoddcnne0d.3 $e |- ( ph -> A e. ZZ ) $.
-    liouoddcnne0d.4 $e |- ( ph -> -. P || A ) $.
-    $( The odd completion takes nonzero complex values away from multiples of
-       its modulus.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    liouoddcnne0d $p |- ( ph -> ( ( F ` A ) e. CC /\ ( F ` A ) =/= 0 ) ) $=
-      ( cfv c1 cneg cpr wcel cc cc0 wne wa liouoddcld signre recnd signne0 jca
-      syl ) ACEJZKLKMNZUEONZUEPQZRABCDEFGHISUFUGUHUFUEUETUAUEUBUCUD $.
-  $}
-
-  ${
-    $d A x $.  $d B x $.  $d K x $.  $d P x $.
-    liouoddnegmulrefld.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 )
-    , ( lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
-    liouoddnegmulrefld.2 $e |- ( ph -> P e. NN ) $.
-    liouoddnegmulrefld.3 $e |- ( ph -> K e. ZZ ) $.
-    liouoddnegmulrefld.4 $e |- ( ph -> A e. ZZ ) $.
-    liouoddnegmulrefld.5 $e |- ( ph -> B e. ZZ ) $.
-    liouoddnegmulrefld.6 $e |- ( ph -> ( B mod P ) = ( -u A mod P ) ) $.
-    $( If ` B ` is congruent to ` -u A ` modulo ` P ` , the odd completion has
-       equal values at ` -u ( K x. B ) ` and ` ( K x. A ) ` for every integer
-       ` K ` .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    liouoddnegmulrefld $p |- ( ph -> ( F ` -u ( K x. B ) ) = ( F ` ( K x. A )
-    ) ) $=
-      ( cmul co cneg cfv znegcld zcnd eqtrd liouoddnegmulcongd mulneg2d negnegd
-      negeqd mulcld fveq2d ) AGDNOPFQGCPZNOZPZFQGCNOZFQABDUGEFGHIJLACKRMUAAUIUJ
-      FAUIUJPZPUJAUHUKAGCAGJSZACKSZUBUDAUJAGCULUMUEUCTUFT $.
   $}
 
   ${
@@ -887881,13 +887856,6 @@ $)
       JZLMZABDCEFGADUANZDUBNHDUCOZAPDUDQCRSDCPUFQRSIADCPADURTACGTPUENAUGUHUIUJU
       KAUQUOUPULHDUMOUN $.
   $}
-
-
-$(
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  Odd completion: doubling, tripling, and multiplicativity
--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-$)
 
   ${
     $d N x $.  $d P a b $.  $d P x $.
@@ -887939,6 +887907,34 @@ $)
       JAOEOUGUJAUHUIKUKLAOVJPQTEPQZCULAEAEKUMUNACVNACIUOZATETVBUJAUPUIZAEKUOZUQ
       ZACVMVNVOASESVBUJAURUIZVQUQVRMASTEVSVPAEKUSSTULVCAUTUIVAVDVEVFVGABECDHIKL
       VHVI $.
+  $}
+
+  ${
+    $d N x $.  $d P a b $.  $d P x $.
+    liouodd2upperled.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 ) ,
+    ( lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
+    liouodd2upperled.2 $e |- ( ph -> P e. Prime ) $.
+    liouodd2upperled.3 $e |- ( ph -> 3 < P ) $.
+    liouodd2upperled.4 $e |- ( ph -> N e. ( 1 ..^ P ) ) $.
+    liouodd2upperled.5 $e |- ( ph -> -. ( 2 x. N ) < P ) $.
+    liouodd2upperled.6 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) =
+    ( a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
+    $( On the upper half of the nonzero residue interval, the odd completion
+       satisfies ` ( F `` -u ( 2 x. N ) ) <_ ( F `` N ) ` .  Here ` P ` is a
+       prime greater than three and twice ` P ` has no positive-positive pair.
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    liouodd2upperled $p |- ( ph -> ( F ` -u ( 2 x. N ) ) <_ ( F ` N ) ) $=
+      ( c2 co cneg cfv wcel cdvds wbr cmul cle cprime cn prmnn syl prmgt3factsd
+      csn cdif wn c3 simpld oddn2prm cz 2z cfzo elfzoelz zmulcld prmgt3ndvds23d
+      a1i c1 fzo1ndvdsd prmndvdsmuld liouoddnegd liouoddred clt oddcentralrefld
+      cmin simprd liouodd2led nnzd znegcld cmo cr crp wceq nnrpd negmod syl2anc
+      eqcomd liouoddcongd eqtrd liouoddnegmulrefld 3brtr3d lenegcon1d eqbrtrd
+      zred ) ANEUAOZPDQWHDQZPEDQZUBABWHCDHACUCRCUDRICUEUFZACUCNUHUIRZNCSTUJAWLU
+      KCSTUJACIJUGULCUMUFZANENUNRAUOUTZAEVACUPOREUNRKEVACUQUFZURZANECIWNWOACNST
+      UJCUKSTUJACIJUSULAECKVBZVCVDAWJWIABECDHWKWOVEABWHCDHWKWPVEACEVHOZDQZNWRUA
+      OZPDQWJPZWIUBABCDWRFGHWKWMAWRUDRZWTCVFTZAECWKWMKLVGZULZAXBXCXDVIMVJAWSEPZ
+      DQXAABWRXFCDHAWRXEVKZAEWOVLAXFCVMOZWRCVMOZAEVNRCVORXHXIVPAEWOWGACWKVQECVR
+      VSVTZWAABECDHWKWMWOWQVDWBABEWRCDNHWKWNWOXGXJWCWDWEWF $.
   $}
 
   ${
@@ -887996,60 +887992,6 @@ $)
 
   ${
     $d N a b $.  $d N x $.  $d P a b $.  $d P x $.
-    liouodd23midd.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 ) , (
-      lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
-    liouodd23midd.2 $e |- ( ph -> P e. NN ) $.
-    liouodd23midd.3 $e |- ( ph -> -. 2 || P ) $.
-    liouodd23midd.4 $e |- ( ph -> N e. NN ) $.
-    liouodd23midd.5 $e |- ( ph -> ( 2 x. N ) < P ) $.
-    liouodd23midd.6 $e |- ( ph -> P < ( 4 x. N ) ) $.
-    liouodd23midd.7 $e |- ( ph -> ( 3 x. N ) < P ) $.
-    liouodd23midd.8 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = ( a
-      + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( On the middle band, the odd completion agrees at the negated double and
-       negated triple.  Here twice ` P ` has no positive-positive pair.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    liouodd23midd $p |- ( ph -> ( F ` -u ( 2 x. N ) ) = ( F ` -u ( 3 x. N ) )
-      ) $=
-      ( c2 cmul co a1i c4 cmin cliou cfv c3 cneg liou2midrefld cn wcel nnmulcld
-      2nn clt nncnd mul22d cr 4re remulcld ltnsymd eqnbrtrd liouoddneglrg2d 3nn
-      nnred c6 mul23d 6re nnrpd wbr 4lt6 ltmul1dd lttrd 3eqtr4d ) ACPEQRZUARUBU
-      CCUDEQRZUARUBUCVKUEDUCVLUEDUCACEFGIKLMNOUFABVKCDHIJAPEPUGUHAUJSKUILAPVKQR
-      TEQRZCUKAEAEKULZUMACVMACIVAZATETUNUHAUOSZAEKVAZUPZMUQURUSABVLCDHIJAUDEUDU
-      GUHAUTSKUINAPVLQRVBEQRZCUKAEVNVCACVSVOAVBEVBUNUHAVDSZVQUPZACVMVSVOVRWAMAT
-      VBEVPVTAEKVETVBUKVFAVGSVHVIUQURUSVJ $.
-  $}
-
-  ${
-    $d N x $.  $d P a b $.  $d P x $.
-    liouodd2upperled.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 ) ,
-    ( lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
-    liouodd2upperled.2 $e |- ( ph -> P e. Prime ) $.
-    liouodd2upperled.3 $e |- ( ph -> 3 < P ) $.
-    liouodd2upperled.4 $e |- ( ph -> N e. ( 1 ..^ P ) ) $.
-    liouodd2upperled.5 $e |- ( ph -> -. ( 2 x. N ) < P ) $.
-    liouodd2upperled.6 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) =
-    ( a + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    $( On the upper half of the nonzero residue interval, the odd completion
-       satisfies ` ( F `` -u ( 2 x. N ) ) <_ ( F `` N ) ` .  Here ` P ` is a
-       prime greater than three and twice ` P ` has no positive-positive pair.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    liouodd2upperled $p |- ( ph -> ( F ` -u ( 2 x. N ) ) <_ ( F ` N ) ) $=
-      ( c2 co cneg cfv wcel cdvds wbr cmul cle cprime cn prmnn syl prmgt3factsd
-      csn cdif wn c3 simpld oddn2prm cz 2z cfzo elfzoelz zmulcld prmgt3ndvds23d
-      a1i c1 fzo1ndvdsd prmndvdsmuld liouoddnegd liouoddred clt oddcentralrefld
-      cmin simprd liouodd2led nnzd znegcld cmo cr crp wceq nnrpd negmod syl2anc
-      eqcomd liouoddcongd eqtrd liouoddnegmulrefld 3brtr3d lenegcon1d eqbrtrd
-      zred ) ANEUAOZPDQWHDQZPEDQZUBABWHCDHACUCRCUDRICUEUFZACUCNUHUIRZNCSTUJAWLU
-      KCSTUJACIJUGULCUMUFZANENUNRAUOUTZAEVACUPOREUNRKEVACUQUFZURZANECIWNWOACNST
-      UJCUKSTUJACIJUSULAECKVBZVCVDAWJWIABECDHWKWOVEABWHCDHWKWPVEACEVHOZDQZNWRUA
-      OZPDQWJPZWIUBABCDWRFGHWKWMAWRUDRZWTCVFTZAECWKWMKLVGZULZAXBXCXDVIMVJAWSEPZ
-      DQXAABWRXFCDHAWRXEVKZAEWOVLAXFCVMOZWRCVMOZAEVNRCVORXHXIVPAEWOWGACWKVQECVR
-      VSVTZWAABECDHWKWMWOWQVDWBABEWRCDNHWKWNWOXGXJWCWDWEWF $.
-  $}
-
-  ${
-    $d N a b $.  $d N x $.  $d P a b $.  $d P x $.
     liouodd3extrad.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 ) , (
       lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
     liouodd3extrad.2 $e |- ( ph -> P e. Prime ) $.
@@ -888089,6 +888031,32 @@ $)
       ABUUICDHYDYFUURUUTVGABCDSEHYDYFYPKSXFRVMQUCAXGURLUVAXHXDXIXKABCDEFGHYDYFK
       LUUEACUUFUUDAXBEXBVPTAXLURUUBVSNWJOXJAXRXSABXQCDHYDAXPYIXMVIABECDHYDYJVIX
       NXO $.
+  $}
+
+  ${
+    $d N a b $.  $d N x $.  $d P a b $.  $d P x $.
+    liouodd23midd.1 $e |- F = ( x e. ZZ |-> if ( ( x mod P ) < ( P / 2 ) , (
+      lam ` ( x mod P ) ) , -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
+    liouodd23midd.2 $e |- ( ph -> P e. NN ) $.
+    liouodd23midd.3 $e |- ( ph -> -. 2 || P ) $.
+    liouodd23midd.4 $e |- ( ph -> N e. NN ) $.
+    liouodd23midd.5 $e |- ( ph -> ( 2 x. N ) < P ) $.
+    liouodd23midd.6 $e |- ( ph -> P < ( 4 x. N ) ) $.
+    liouodd23midd.7 $e |- ( ph -> ( 3 x. N ) < P ) $.
+    liouodd23midd.8 $e |- ( ph -> -. E. a e. NN E. b e. NN ( ( 2 x. P ) = ( a
+      + b ) /\ ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
+    $( On the middle band, the odd completion agrees at the negated double and
+       negated triple.  Here twice ` P ` has no positive-positive pair.
+       (Contributed by Zhi Wang, 20-Oct-2026.) $)
+    liouodd23midd $p |- ( ph -> ( F ` -u ( 2 x. N ) ) = ( F ` -u ( 3 x. N ) )
+      ) $=
+      ( c2 cmul co a1i c4 cmin cliou cfv c3 cneg liou2midrefld cn wcel nnmulcld
+      2nn clt nncnd mul22d cr 4re remulcld ltnsymd eqnbrtrd liouoddneglrg2d 3nn
+      nnred c6 mul23d 6re nnrpd wbr 4lt6 ltmul1dd lttrd 3eqtr4d ) ACPEQRZUARUBU
+      CCUDEQRZUARUBUCVKUEDUCVLUEDUCACEFGIKLMNOUFABVKCDHIJAPEPUGUHAUJSKUILAPVKQR
+      TEQRZCUKAEAEKULZUMACVMACIVAZATETUNUHAUOSZAEKVAZUPZMUQURUSABVLCDHIJAUDEUDU
+      GUHAUTSKUINAPVLQRVBEQRZCUKAEVNVCACVSVOAVBEVBUNUHAVDSZVQUPZACVMVSVOVRWAMAT
+      VBEVPVTAEKVETVBUKVFAVGSVHVIUQURUSVJ $.
   $}
 
   ${
