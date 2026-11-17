@@ -596402,7 +596402,7 @@ $)
        Polish spaces. By a _Polish space_, we mean a topological space that is
        separable (has a countable dense subset) and completely metrizable
        (whose topology is induced by a complete metric on the base set).
-       (Contributed by Adrian Ducourtial, 16-Nov-2026.) $)
+       (Contributed by Adrian Ducourtial, 17-Nov-2026.) $)
     df-polt $a |- PolTop = { j e. Top | ( E. x ( x C_ U. j /\ x ~<_ _om /\ ( (
                cls ` j ) ` x ) = U. j ) /\ E. m e. ( CMet ` U. j ) j = (
                MetOpen ` m ) ) } $.
@@ -596421,7 +596421,7 @@ $)
        open sets of ` j ` , while for ` u ` greater than ` 1o ` , it is defined
        recursively as the class of countable unions of complements of sets in
        any prior pointclasses.  See paragraph 2 of [Kechris] p. xv.
-       
+
        The sigma-zero pointclasses constitute one half of the Borel hierarchy
        over ` j ` , the other half being given by ` ( Pi0 `` j ) ` ; see
        ~ df-pi0 .
@@ -596445,11 +596445,12 @@ $)
     $d j x y $.
     $( Define the pi-zero pointclasses of a Polish topology ` j ` . For ordinal
        ` u ` , the pointsets in ` ( ( Pi0 `` j ) `` u ) ` are precisely the
-       complements (relative to ` j ` ) of the pointsets in ` ( ( Sgm0 `` j ) ``
-       u ) ` .  See paragraph 2 of [Kechris] p. xv.
+       complements (relative to ` j ` ) of the pointsets in ` ( ( Sgm0 `` j )
+       `` u ) ` .  See paragraph 2 of [Kechris] p. xv.
 
        The pi-zero pointclasses constitute one half of the Borel hierarchy over
-       ` j ` , the other half being given by ` ( Sgm0 `` j ) ` ; see ~ df-sgm0 .
+       ` j ` , the other half being given by ` ( Sgm0 `` j ) ` ; see
+       ~ df-sgm0 .
 
        Note that the Borel pointclasses are traditionally defined over the
        positive ordinal numbers, beginning with ` 1o e. On ` .  For simplicity,
