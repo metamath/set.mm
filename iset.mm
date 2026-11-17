@@ -185105,6 +185105,26 @@ $)
         MZQBCFUJRQQUMZSKQHZVEBQHZVPQHUKTVNKBQQRULUNUOVENQSVFQHZVOUPLVQSVRVEVSVT
         UQTVNKBQQLULUNVOQVFNVFNURUSUTVGCQQVAVBVCVD $.
     $}
+
+    ${
+      $d P y $.  $d R r x y $.  $d R z $.  $d S r x y $.  $d U x $.
+      $d f i r w $.
+      ply1bas.u $e |- U = ( Base ` P ) $.
+      $( The value of the base set of univariate polynomials.  (Contributed by
+         Mario Carneiro, 9-Feb-2015.)  Remove hypothesis.  (Revised by SN,
+         20-May-2025.) $)
+      ply1bas $p |- U = ( Base ` ( 1o mPoly R ) ) $=
+        ( vy vr vz vi vw vf c1o co cbs cfv cv wcel cvv eqid cmps cmpl basm cpl1
+        vx wex cps1 cress df-ply1 mptrcl eleq2s exlimiv syl c0g cfsupp wbr crab
+        csb df-mpl elmpocl2 ply1valg eqidd psr1valpsr cxp wfn fnpsr 1oex fnovex
+        mp3an12 eqeltrid wss psr1bas2 mplbasss ressbas2d eleq2d pm5.21nii eqriv
+        a1i eqtr4id ) UDCLBUAMZNOZUDPZCQZBRQZWAVTQZWBFPZAQZFUEWCWACFAEUBWFWCFWC
+        WEBUCOAGRGPZUFOLWGUAMNOUGMUCWEBGUHUIDUJUKULWDHPZVSQZHUEWCWAVTHVSVTSZUBW
+        IWCHIGRRJIPWGTMJPZKPWGUMOUNUOKWKNOUPUGMUQLBUAWHJKIGURUSUKULWCCVTWAWCCAN
+        OVTEWCVTBUFOZNOZAWLRABWLRDWLSZUTWCWMVAWCWLLBTMZRBWLWNVBTRRVCVDLRQWCWORQ
+        VEVFLBRRTVGVHVIVTWMVJWCWMVSBWOVTLVSSWOSZWJWMBWLWOWNWMSWPVKVLVQVMVRVNVOV
+        P $.
+    $}
   $}
 
 
