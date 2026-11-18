@@ -183547,6 +183547,31 @@ $)
       VFEVFWLWOWMYRVIXKWQXLYTVIXMWQXNXOYMVCZUUCXPYCUVJYNUUCYIYLYMXQYNUUBXSXTXIU
       VESXR $.
 
+    ${
+      $d .x. f g k w x $.  $d .xb w $.  $d B f g k w x $.  $d B u $.
+      $d D f g k w x y $.  $d F f g k x $.  $d G f g k x $.  $d I a $.
+      $d I f g h k x y $.  $d I u $.  $d R a $.  $d R f g k w x $.  $d R u $.
+      $d S a $.  $d V f g k x $.  $d W f g k x $.  $d X k x y $.
+      $d b d f g h i k r x y $.  $d f g k ph x $.
+      $( The multiplication operation of the multivariate power series
+         structure.  (Contributed by Mario Carneiro, 28-Dec-2014.)  (Revised by
+         Mario Carneiro, 2-Oct-2015.)  (Proof shortened by AV, 2-Mar-2024.) $)
+      psrmulr $p |- .xb = ( f e. B , g e. B |-> ( k e. D |->
+              ( R gsum ( x e. { y e. D | y oR <_ k } |->
+              ( ( f ` x ) .x. ( g ` ( k oF - x ) ) ) ) ) ) ) $=
+        ( cv cfv vw va vi vr vd vb vu cle cofr wbr crab cmin cof cmpt cgsu cmpo
+        co wcel cvv wex cmulr mulrslid slotm eleq2s cmps ccnv cima cfn cn0 cmap
+        wa cbs cnx cop cplusg cxp cres ctp csca cvsca csn cts ctopn cpt cun csb
+        cn df-psr elmpocl exlimiv syl eqid elmpom basm psrmulrg pm5.21nii eqriv
+        eleq2d ) UAGIJCCLDEABSLSZUHUIUJZBDUKASZISZTZWSXAULUMUQJSTZHUQUNUOUQUNZU
+        PZUASZGURZMUSUREUSURVKZXGXFURZXHUBSZFURZUBUTZXIXMXGFVATGXGUBVAFVBVCQVDX
+        LXIUBXIXKMEVEUQFUCUDUSUSUEKSVFWGVGVHURKVIUCSVJUQUKUFUDSZVLTZUESZVJUQVMV
+        LTUFSZVNVMVOTXNVOTUMXQXQVPVQVNVMVATIJXQXQLXPXNAWTBXPUKXCXDXNVATZUQUNUOU
+        QUNUPVNVRVMVSTXNVNVMVTTAIXOXQXPXAWAVPXBXRUMUQUPVNVMWBTXPXNWCTWAVPWDTVNV
+        RWEWFWFMEVEXKABIJKUCLUDUFUEWHWINVDWJZWKXJUGSZCURZUGUTXIIJUGCCXEXGXFXFWL
+        WMYAXIUGYAXMXIXTCUBFOWNXSWKWJWKXIGXFXGABCDEFGHIJKLMUSUSNOPQRWOWRWPWQ $.
+    $}
+
     psrmulfval.i $e |- ( ph -> F e. B ) $.
     psrmulfval.r $e |- ( ph -> G e. B ) $.
     $( The multiplication operation of the multivariate power series structure.
