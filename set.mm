@@ -882669,7 +882669,8 @@ $)
     uzdesc0d.1 $e |- ( ph -> S C_ ( ZZ>= ` M ) ) $.
     uzdesc0d.2 $e |- ( ( ph /\ x e. S ) -> E. y e. S y < x ) $.
     $( A subset of an upper-integer ray admitting strict descent from every
-       member is empty.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+       member is empty.  Consequence of the well-ordering principle ~ uzwo .
+       (Contributed by Zhi Wang, 17-Oct-2026.) $)
     uzdesc0d $p |- ( ph -> S = (/) ) $=
       ( vz c0 wa cv cle wbr wrex wi wcel cz adantr eluzelz syl wceq wn wral cuz
       cfv wss wne neqned uzwo syl2an2r clt adantrr cr simprl sseldd zred sselda
@@ -884452,7 +884453,9 @@ $)
   ${
     $d A p q $.  $d B p q $.
     $( Complete additivity of the signed prime Omega function on nonzero
-       rationals.  (Contributed by Zhi Wang, 27-Oct-2026.) $)
+       rationals.  Derived by summing ~ pcqmul over the union of the finite
+       valuation supports, using ~ fsumadd .  (Contributed by Zhi Wang,
+       27-Oct-2026.) $)
     bommul $p |- ( ( A e. ( QQ \ { 0 } ) /\ B e. ( QQ \ { 0 } ) ) ->
       ( Omega ` ( A x. B ) ) = ( ( Omega ` A ) + ( Omega ` B ) ) ) $=
       ( vq vp cq cc0 wcel wa cpc wne cprime crab csu caddc cbom cfv cfn wss a1i
@@ -885205,7 +885208,9 @@ $)
   $}
 
   ${
-    $( Complete multiplicativity of Liouville's function on the rationals.
+    $( Complete multiplicativity of Liouville's function on the rationals.  For
+       nonzero inputs, this follows from ~ bommul and the integer exponent law
+       ~ expaddz via ~ liouval .  A zero input is handled by ~ liou0 .
        (Contributed by Zhi Wang, 27-Oct-2026.) $)
     lioumul $p |- ( ( A e. QQ /\ B e. QQ ) ->
       ( lam ` ( A x. B ) ) = ( ( lam ` A ) x. ( lam ` B ) ) ) $=
