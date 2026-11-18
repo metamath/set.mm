@@ -58300,10 +58300,22 @@ $)
   $}
 
   ${
-    $d A x $.  $d B x $.
+    $d A x y $.  $d B x y $.  $d C y $.
     $( Sufficient condition for inclusion among two functions in maps-to
-       notation.  (Contributed by Glauco Siliprandi, 17-Aug-2020.) $)
+       notation.  (Contributed by Thierry Arnoux, 30-May-2020.) $)
     mptss $p |- ( A C_ B -> ( x e. A |-> C ) C_ ( x e. B |-> C ) ) $=
+      ( vy wss cv wcel wceq wa copab cmpt ssel anim1d ssopab2dv df-mpt 3sstr4g
+      ) BCFZAGZBHZEGDIZJZAEKSCHZUAJZAEKABDLACDLRUBUDAERTUCUABCSMNOAEBDPAECDPQ
+      $.
+    $( $j usage 'mptss' avoids 'ax-10' 'ax-12' 'ax-pr' 'ax-sep'; $)
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    $( Shorter proof of ~ mptss , but using more axioms.  (Contributed by
+       Glauco Siliprandi, 17-Aug-2020.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    mptssALT $p |- ( A C_ B -> ( x e. A |-> C ) C_ ( x e. B |-> C ) ) $=
       ( wss cmpt cres resmpt resss eqsstrrdi ) BCEABDFACDFZBGKACBDHKBIJ $.
   $}
 
@@ -520461,18 +520473,6 @@ $)
       UVAUVBUUHUVFUVGVQSWAUVJXSUVDUVJXRUVCUVJXGUUGUVHUUIRVRVSVTXPYEYTUUIYHVPWBW
       DWCUUEUUKEUUGWRUUBUUGLZUUDUUJDWRUVKUUCUUIUUAUUBUUGXGWEWFWGWHWIUUADEWRWNWJ
       UUAXEXIOWTUUAXDXHBXNXHXCXGJWOXGNWOWKWLVFWMVLWP $.
-  $}
-
-  ${
-    $d A x y $.  $d B x y $.  $d C y $.
-    $( Deduce subset relation of mapping-to function graphs from a subset
-       relation of domains.  Alternative proof of ~ mptss .  (Contributed by
-       Thierry Arnoux, 30-May-2020.)  (Proof modification is discouraged.)
-       (New usage is discouraged.) $)
-    mptssALT $p |- ( A C_ B -> ( x e. A |-> C ) C_ ( x e. B |-> C ) ) $=
-      ( vy wss cv wcel wceq wa copab cmpt ssel anim1d ssopab2dv df-mpt 3sstr4g
-      ) BCFZAGZBHZEGDIZJZAEKSCHZUAJZAEKABDLACDLRUBUDAERTUCUABCSMNOAEBDPAECDPQ
-      $.
   $}
 
   ${
