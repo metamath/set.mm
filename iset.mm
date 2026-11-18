@@ -183429,6 +183429,29 @@ $)
       QUUBTXFXEYJUUCTTXGWTUUDTXOXEXHUVBYBYGTNZYGUUGNZYBYEUNNYFTNUVKXIUVBYEYFUNT
       XJWQUVKUVLYGVKZUUGXKUVMYRUUGYDYGYQXLYRUUFXMXNYGUUGTXPXQXEXRXS $.
 
+    ${
+      $d .+ c $.  $d .+ x $.  $d .+b x $.  $d B b d f g k x $.  $d I a $.
+      $d I d f g h k x y $.  $d R a $.  $d R d f g k x $.  $d S a $.
+      $d V f g k x $.  $d W f g k x $.  $d b d f g h i k r x y $.
+      $d f g k ph x $.
+      $( The addition operation of the multivariate power series structure.
+         (Contributed by Mario Carneiro, 28-Dec-2014.)  (Revised by Mario
+         Carneiro, 2-Oct-2015.) $)
+      psrplusg $p |- .+b = ( oF .+ |` ( B X. B ) ) $=
+        ( va vd vb cv wcel cvv co cfv cnx cop vx vi vr vh vf vg vk cof cxp cres
+        vy vc wa cmps wex cplusg plusgslid slotm eleq2s eleq2i exbii sylib ccnv
+        cn cima cfn cn0 cmap crab cbs cle cofr wbr cmin cmpt cgsu cmpo ctp csca
+        cmulr cvsca csn cts ctopn cpt cun csb df-psr elmpocl exlimiv syl elresm
+        simprd xpm sylibr basm simpl2im psrplusgg eleq2d pm5.21nii eqriv ) UACB
+        UHZAAUIZUJZUANZCOZFPODPOUMZXEXDOZXFKNZFDUNQZOZKUOZXGXFXIEOZKUOZXLXNXEEU
+        PRCXEKUPEUQURJUSXMXKKEXJXIGUTVAZVBXKXGKUBUCPPLUDNVCVDVEVFOUDVGUBNVHQVIM
+        UCNZVJRZLNZVHQSVJRMNZTSUPRXPUPRUHXSXSUIUJTSVTRUEUFXSXSUGXRXPUAUKNUGNZVK
+        VLVMUKXRVIXEUENZRXTXEVNUHQUFNRXPVTRZQVOVPQVOVQTVRSVSRXPTSWARUAUEXQXSXRX
+        EWBUIYAYBUHQVQTSWCRXRXPWDRWBUIWERTVRWFWGWGFDUNXIUAUKUEUFUDUBUGUCMLWHWIW
+        JZWKXHXRAOZLUOZYEXGXHXSXCOMUOZYEYEUMXHULNXBOULUOYFULMXEXBXCWLWMLLMAAWNW
+        OYDXGLYDXLXGYDXNXLXRAKEHWPXOVBYCWKWJWQXGCXDXEABCDEFPPGHIJWRWSWTXA $.
+    $}
+
     psradd.x $e |- ( ph -> X e. B ) $.
     psradd.y $e |- ( ph -> Y e. B ) $.
     $( The addition operation of the multivariate power series structure.
