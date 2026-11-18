@@ -194,7 +194,7 @@ Date      Old         New         Notes
 17-Nov-26 isrnsigau   [same]      Moved from TA's mathbox to main set.mm
 17-Nov-26 difunielsiga [same]      Moved from TA's mathbox to main set.mm
 17-Nov-26 unelsiga    [same]      Moved from TA's mathbox to main set.mm
-17-Nov-26 difelsiga   [same]      Moved from TA's mathbox to main set.mm; current upstream proof retained
+17-Nov-26 difelsiga   [same]      Moved from TA's mathbox to main set.mm
 17-Nov-26 inelsiga    [same]      Moved from TA's mathbox to main set.mm
 17-Nov-26 measbase    [same]      Moved from TA's mathbox to main set.mm
 17-Nov-26 ismeas      [same]      Moved from TA's mathbox to main set.mm
@@ -266,7 +266,7 @@ Date      Old         New         Notes
 17-Nov-26 saldifcld   [same]      Moved from GS's mathbox to main set.mm
 17-Nov-26 0sald       [same]      Moved from GS's mathbox to main set.mm
 17-Nov-26 subsaliuncllem [same]      Moved from GS's mathbox to main set.mm
-17-Nov-26 subsaliuncl [same]      Moved from GS's mathbox to main set.mm; current upstream proof retained
+17-Nov-26 subsaliuncl [same]      Moved from GS's mathbox to main set.mm
 17-Nov-26 subsalsal   [same]      Moved from GS's mathbox to main set.mm
 17-Nov-26 csmblfn     [same]      Moved from GS's mathbox to main set.mm
 17-Nov-26 df-smblfn   [same]      Moved from GS's mathbox to main set.mm
