@@ -46178,6 +46178,18 @@ $)
       HUTUKUSVAUSUPUJNUKVAUPUQACODOZPUJBUPQTRUPUQABVBUAUBUCUDABUEUFUMAUGUH $.
   $}
 
+  ${
+    $d A u v $.  $d B u v x $.  $d C u v y $.
+    $( If a restriction is inhabited, both the class being restricted and the
+       class it is restricted to are inhabited.  (Contributed by Jim Kingdon,
+       17-Nov-2026.) $)
+    elresm $p |- ( A e. ( B |` C ) -> ( E. x x e. B /\ E. y y e. C ) ) $=
+      ( vu vv cres wcel cv cop wceq wa wex elres biimpi elex2 ad2antll ad2antlr
+      wrex jca ex exlimdv rexlimdva mpd ) CDEHIZCFJZGJKZLZUHDIZMZGNZFETZAJDIANZ
+      BJEIBNZMZUFUMFGCDEOPUFULUPFEUFUGEIZMZUKUPGURUKUPURUKMUNUOUJUNURUIAUHDQRUQ
+      UOUFUKBUGEQSUAUBUCUDUE $.
+  $}
+
   $( A relation restricted to its domain equals itself.  (Contributed by NM,
      12-Dec-2006.) $)
   resdm $p |- ( Rel A -> ( A |` dom A ) = A ) $=
