@@ -184726,7 +184726,7 @@ $)
         VCVDVE $.
     $}
 
-    mpllss.r $e |- ( ph -> R e. Ring ) $.
+    mplsubrgfi.r $e |- ( ph -> R e. Ring ) $.
 
     ${
       $d I i k s p t x $.  $d I p t u v $.  $d I i x y $.  $d R i p s t x $.
@@ -184910,6 +184910,45 @@ $)
       ( cfn wcel cgrp wa cmps cbs cfv cress eqid mplval2g csubg simpl mplsubgfi
       co simpr subggrp syl eqeltrd ) CEFZBGFZHZACBIRZAJKZLRZGABUFUGCEGDUFMZUGMZ
       NUEUGUFOKFUHGFUEABUFUGCUIDUJUCUDPUCUDSQUGUFUHUHMTUAUB $.
+  $}
+
+  ${
+    $d I h $.  $d I q $.  $d P j $.  $d R p q v w $.  $d S p q v w x $.
+    $d U j v w x $.  $d U p q v w x $.  $d p ph q v w x $.
+    mpllssfi.s $e |- S = ( I mPwSer R ) $.
+    mpllssfi.p $e |- P = ( I mPoly R ) $.
+    mpllssfi.u $e |- U = ( Base ` P ) $.
+    mpllssfi.i $e |- ( ph -> I e. Fin ) $.
+    mpllssfi.r $e |- ( ph -> R e. Ring ) $.
+    $( The set of polynomials is closed under scalar multiplication, i.e. it is
+       a linear subspace of the set of power series.  (Contributed by Mario
+       Carneiro, 7-Jan-2015.)  (Proof shortened by AV, 16-Jul-2019.) $)
+    mpllssfi $p |- ( ph -> U e. ( LSubSp ` S ) ) $=
+      ( vj vh cfv cfn wcel eqid cv adantr ad2antrr vx vv vw vp cbs cplusg cvsca
+      vq clss crg psrsca eqidd wceq mplplusgg syl2anc wss mplbasss a1i cgrp c0g
+      wex ringgrpd mplgrpfi grpidcl elex2 w3a wa co cfsupp simpr1 simpr2 sselid
+      3syl wbr psrvscacl cdm cdif cima csn mplelsfi fsuppfiss cn0 wf psrelbasfi
+      cmap ccnv cn crab mplelf wb psrbagfi feq2d mpbid fdmd sseqtrd cmulr simpr
+      syl eldifad ad3antrrr eleqtrrd psrvscaval simplr3 difeq1d fnfvimad sseldd
+      ffnd elsni oveq2d ringrzd 3eqtrd isfsuppf exlimddv mplelbas simpr3 grpcld
+      sylanbrc psrringfi islssmd ) AUACUENZBUFNZDUINZDUGNZELCDUENZDUJUBUCACDFOU
+      JGJKUKAXTULAYDULAFOPZCUJPZYADUFNUMJKYACDFOUJBHGYAQZUNUOAYCULAYBULEYDUPAYD
+      BCDEFHGIYDQZUQZURABUSPZBUTNZEPLREPLVAAYECUSPZYJJACKVBZBCFHVCUOZEBYKIYKQVD
+      LYKEVEVMAUARZXTPZUBRZEPZUCRZEPZVFZVGZEYABYOYQYCVHZYSIYGAYJUUAYNSUUBUUCYDP
+      ZUUCCUTNZVIVNZUUCEPUUBYDCDYCYQFXTYOGYCQZXTQZYHAYFUUAKSAYPYRYTVJZUUBEYDYQY
+      IAYPYRYTVKZVLZVOZUUBUDRZOPZUUMYQVPZUPZYQUUOUUMVQZVRZUUEVSZUPZVFZUUFUDUUBU
+      DYQUUEUUBEBCYQFUUEHIUUEQZUUJVTWAUUBUVAVGZWBFWEVHZXTUHUUCYDUUMUUEUUBUVDXTU
+      UCWCUVAUUBYDCDFXTUUCGUUHAYEUUAJSYHUULWDSUUBUUDUVAUULSAUUEXTPZUUAUVAAYLUVE
+      YMXTCUUEUUHUVBVDWRTUUBUUNUUPUUTVJUVCUUMUUOUVDUUBUUNUUPUUTVKUUBUUOUVDUMZUV
+      AUUBUVDXTYQUUBMRWFWGVROPMUVDWHZXTYQWCZUVDXTYQWCZUUBEUVGBCMFXTYQHUUHIUVGQZ
+      UUJWIZAUVHUVIWJZUUAAUVGUVDXTYQAYEUVGUVDUMZJUVGMFUVJWKWRZWLZSWMWNZSWOUVCUH
+      RZUVDUUMVQZPZVGZUVQUUCNYOUVQYQNZCWPNZVHYOUUEUWBVHUUEUVTYDUVGCDYCUWBMYQFXT
+      YOUVQGUUGUUHYHUWBQZUVJUUBYPUVAUVSUUITZUUBYQYDPUVAUVSUUKTUVTUVQUVDUVGUVTUV
+      QUVDUUMUVCUVSWQZWSZAUVMUUAUVAUVSUVNWTXAXBUVTUWAUUEYOUWBUVTUWAUUSPUWAUUEUM
+      UVTUURUUSUWAUUNUUPUUTUUBUVSXCUVTUVDUVQUUQYQUVTUVDXTYQUVTUVHUVIUUBUVHUVAUV
+      SUVKTAUVLUUAUVAUVSUVOWTWMXGUWFUVTUVQUVRUUQUWEUVTUUOUVDUUMUUBUVFUVAUVSUVPT
+      XDXAXEXFUWAUUEXHWRXIUVTXTCUWBYOUUEUUHUWCUVBAYFUUAUVAUVSKWTUWDXJXKXLXMYDBC
+      DEFUUCUUEHGYHUVBIXNXQAYPYRYTXOXPACDFGJKXRXS $.
   $}
 
   ${
