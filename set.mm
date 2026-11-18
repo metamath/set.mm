@@ -766,7 +766,7 @@ $)
      11-Aug-2020.) $)
   ax1w $p |- ( ph -> ( ps -> ( ch -> ps ) ) ) $=
     ( wi ax-1 a1i ) BCBDDABCEF $.
-    $( $j usage 'ax1w' avoids 'ax-2' 'ax-3'; $)
+  $( $j usage 'ax1w' avoids 'ax-2' 'ax-3'; $)
 
   ${
     mp1i.1 $e |- ph $.
@@ -12790,8 +12790,8 @@ $)
           'ad6antlr' 'ad6antr' 'ad7antlr' 'ad7antr'
           'ad8antlr' 'ad8antr' 'ad9antlr' 'ad9antr'
           'ad10antlr' 'ad10antr'
-          'anidms' 'ancoms' 'anasss' 'anassrs' 'an12s'  'ancom2s' 'an13s'
-          'an32s' 'ancom1s' 'an31s' 'anass1rs' 'anabsan'  'anabss1' 'anabss4'
+          'anidms' 'ancoms' 'anasss' 'anassrs' 'an12s' 'ancom2s' 'an13s'
+          'an32s' 'ancom1s' 'an31s' 'anass1rs' 'anabsan' 'anabss1' 'anabss4'
           'anabss5' 'anabss7' 'anabsan2' 'anabss3' 'an4s' 'an42s'
           'anandis' 'anandirs'; $)
 
@@ -17842,8 +17842,15 @@ $)
   ${
     sbbii.1 $e |- ( ph <-> ps ) $.
     $( Infer substitution into both sides of a logical equivalence.
-       (Contributed by NM, 14-May-1993.) $)
+       (Contributed by NM, 14-May-1993.)  (Proof shortened by BJ,
+       14-Nov-2026.) $)
     sbbii $p |- ( [ t / x ] ph <-> [ t / x ] ps ) $=
+      ( wb wsb spsbbi mpg ) ABFACDGBCDGFCABCDHEI $.
+
+    $( Obsolete version of ~ sbbii as of 14-Nov-2026.  (Contributed by NM,
+       14-May-1993.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    sbbiiOLD $p |- ( [ t / x ] ph <-> [ t / x ] ps ) $=
       ( wsb biimpi sbimi biimpri impbii ) ACDFBCDFABCDABEGHBACDABEIHJ $.
 
     $( Infer double substitution into both sides of a logical equivalence.
@@ -18592,7 +18599,7 @@ $)
   ax11dgen $p |- ( A. x A. x ph -> A. x A. x ph ) $=
     ( wal id ) ABCBCD $.
   $( $j usage 'ax11dgen' avoids 'ax-8' 'ax-9' 'ax-10' 'ax-11' 'ax-12'
-       'ax-13'; $)
+     'ax-13'; $)
 
   ${
     $d x ps $.
@@ -18627,7 +18634,7 @@ $)
   ax12dgen $p |- ( x = x -> ( A. x ph -> A. x ( x = x -> ph ) ) ) $=
     ( wal weq wi ala1 a1i ) ABCBBDZAEBCEHAHBFG $.
   $( $j usage 'ax12dgen' avoids 'ax-8' 'ax-9' 'ax-10' 'ax-11' 'ax-12'
-       'ax-13'; $)
+     'ax-13'; $)
 
   ${
     $d x y z w v $.
@@ -26429,7 +26436,7 @@ $)
     elex2 $p |- ( A e. B -> E. x x e. B ) $=
       ( wcel cv wceq wa wex dfclel exsimpr sylbi ) BCDAEZBFZLCDZGAHNAHABCIMNAJK
       $.
-      $( $j usage 'elex2' avoids 'ax-9' 'df-clab' 'ax-ext'; $)
+    $( $j usage 'elex2' avoids 'ax-9' 'df-clab' 'ax-ext'; $)
   $}
 
   ${
@@ -30182,7 +30189,7 @@ $)
       ( wral weq ralbidv cbvral3vw cbvralvw 3ralbii bitri ) AIMUBZHLUBGKUBFJUBE
       IMUBZPLUBOKUBNJUBBQMUBZPLUBOKUBNJUBUIUJCIMUBDIMUBFGHNOPJKLFNUCACIMRUDGOUC
       CDIMSUDHPUCDEIMTUDUEUJUKNOPJKLEBIQMUAUFUGUH $.
-     $( $j usage 'cbvral4vw' avoids 'ax-13'; $)
+    $( $j usage 'cbvral4vw' avoids 'ax-13'; $)
   $}
 
   ${
@@ -30246,7 +30253,7 @@ $)
       DUEUNVDKUKVCCDUIUHUGUFUBUCUDUEUOVDLULVCDEUIUHUGUFUBUCUDUEUPVDMUMVCEFUIUHU
       GUFUBUCUDUEUQVDVEVIVJUJUKULUMNOPQFBGHIUIUHUGUFUBUCUDUERSTUAURUSUTVAVEVFVG
       $.
-     $( $j usage 'cbvral8vw' avoids 'ax-13'; $)
+    $( $j usage 'cbvral8vw' avoids 'ax-13'; $)
   $}
 
   $( *** Theorems using axioms up to ax-8 and ax-12 only: *** $)
@@ -30834,7 +30841,7 @@ $)
     nfraldw $p |- ( ph -> F/ x A. y e. A ps ) $=
       ( wral cv wcel wi wal df-ral nfcrd nfimd nfald nfxfrd ) BDEIDJEKZBLZDMACB
       DENATCDFASBCACDEGOHPQR $.
-    $( $j usage 'nfraldw' avoids 'ax-13' 'ax-9' 'df-cleq' 'ax-ext'; $)
+    $( $j usage 'nfraldw' avoids 'ax-9' 'ax-13' 'df-cleq' 'ax-ext'; $)
 
     $( Deduction version of ~ nfrexw .  (Contributed by Mario Carneiro,
        14-Oct-2016.)  Add disjoint variable condition to avoid ~ ax-13 .  See
@@ -31033,7 +31040,7 @@ $)
     raleqbidvv $p |- ( ph -> ( A. x e. A ps <-> A. x e. B ch ) ) $=
       ( wb cv wcel adantr raleqbidva ) ABCDEFGABCIDJEKHLM $.
     $( $j usage 'raleqbidvv' avoids 'ax-8' 'ax-10' 'ax-11' 'ax-12'
-          'df-clel'; $)
+       'df-clel'; $)
 
     $( Version of ~ rexeqbidv with additional disjoint variable conditions, not
        requiring ~ ax-8 nor ~ df-clel .  (Contributed by Wolf Lammen,
@@ -31041,7 +31048,7 @@ $)
     rexeqbidvv $p |- ( ph -> ( E. x e. A ps <-> E. x e. B ch ) ) $=
       ( wb cv wcel adantr rexeqbidva ) ABCDEFGABCIDJEKHLM $.
     $( $j usage 'rexeqbidvv' avoids 'ax-8' 'ax-10' 'ax-11' 'ax-12'
-          'df-clel'; $)
+       'df-clel'; $)
   $}
 
   ${
@@ -31610,7 +31617,7 @@ $)
     moel $p |- ( E* x x e. A <-> A. x e. A A. y e. A x = y ) $=
       ( cv wcel wmo wa weq wi wal wral eleq1w mo4 r2al bitr4i ) ADCEZAFPBDCEZGA
       BHZIBJAJRBCKACKPQABABCLMRABCCNO $.
-    $( $j usage 'rmobidva' avoids 'ax-11'; $)
+    $( $j usage 'moel' avoids 'ax-11'; $)
   $}
 
   ${
@@ -32436,7 +32443,7 @@ $)
       ( vy cab wtru wceq wsb wal cvv cv wcel wb dfcleq vextru tbt df-clab albii
       bitr3i bitri dfv2 eqeq2i sb8v 3bitr4i ) ABDZEBDZFZABCGZCHZUDIFABHUFCJZUDK
       ZUIUEKZLZCHUHCUDUEMULUGCULUJUGUKUJBCNOACBPRQSIUEUDBTUAABCUBUC $.
-    $( $j usage 'abv' avoids 'df-clel' 'ax-8' 'ax-13'; $)
+    $( $j usage 'abv' avoids 'ax-8' 'ax-10' 'ax-12' 'ax-13' 'df-clel'; $)
   $}
 
   ${
@@ -32447,6 +32454,7 @@ $)
     abvALT $p |- ( { x | ph } = _V <-> A. x ph ) $=
       ( vy cv cab wcel wal wsb cvv wceq df-clab albii eqv sb8v 3bitr4i ) CDABEZ
       FZCGABCHZCGPIJABGQRCACBKLCPMABCNO $.
+    $( $j usage 'abvALT' avoids 'ax-10' 'ax-12' 'ax-13'; $)
   $}
 
   ${
@@ -32468,7 +32476,7 @@ $)
        other occurrences), or by ~ elex .  (Contributed by NM, 26-May-1993.) $)
     isset $p |- ( A e. _V <-> E. x x = A ) $=
       ( cvv vex issetlem ) ABCADE $.
-      $( $j usage 'isset' avoids 'ax-10' 'ax-11' 'ax-12' 'ax-13'; $)
+    $( $j usage 'isset' avoids 'ax-10' 'ax-11' 'ax-12' 'ax-13'; $)
   $}
 
   ${
@@ -32482,7 +32490,7 @@ $)
       weq eqeq1 notbid a1i cbv2w 3bitr3g con4bid ) ACDZAEZCFZAGZBEZCFZBGZUGUIHZ
       AIULHZBIUJHUMHUGUNUOABACJUGBKUGUNBLUGULAUGAUKCUGAUKMUGNOPABTZUNUOQRUGUPUI
       ULUHUKCUAUBUCUDUIASULBSUEUF $.
-      $( $j usage 'cbvexeqsetf' avoids 'ax-8' 'df-clab'; $)
+    $( $j usage 'cbvexeqsetf' avoids 'ax-8' 'df-clab'; $)
   $}
 
   ${
@@ -32512,7 +32520,7 @@ $)
        13-Jul-2019.) $)
     isseti $p |- E. x x = A $=
       ( cvv wcel cv wceq wex elissetv ax-mp ) BDEAFBGAHCABDIJ $.
-      $( $j usage 'isseti' avoids 'ax-9' 'ax-10' 'ax-11' 'ax-12' 'ax-13'
+    $( $j usage 'isseti' avoids 'ax-9' 'ax-10' 'ax-11' 'ax-12' 'ax-13'
        'ax-ext' 'df-clab' 'df-cleq'; $)
   $}
 
@@ -34718,7 +34726,7 @@ $)
     ralab $p |- ( A. x e. { y | ph } ch <-> A. x ( ps -> ch ) ) $=
       ( cab wral cv wcel wi wal df-ral wsb df-clab sbievw bitri imbi1i albii )
       CDAEGZHDITJZCKZDLBCKZDLCDTMUBUCDUABCUAAEDNBADEOABEDFPQRSQ $.
-    $( $j usage 'ralab' avoids 'ax-8' 'ax-9' 'df-clel' 'df-cleq' 'ax-ext'; $)
+    $( $j usage 'ralab' avoids 'ax-8' 'ax-9' 'df-cleq' 'df-clel' 'ax-ext'; $)
 
     $( Universal quantification over a restricted class abstraction.
        (Contributed by Jeff Madsen, 10-Jun-2010.) $)
@@ -34732,7 +34740,7 @@ $)
     rexab $p |- ( E. x e. { y | ph } ch <-> E. x ( ps /\ ch ) ) $=
       ( cab wrex wa wn wal wex wi wral dfrex2 ralab xchbinx imnang df-ex bitr4i
       ) CDAEGZHZBCIZJDKZJUCDLUBBCJZMDKZUDUBUEDUANUFCDUAOABUEDEFPQBCDRQUCDST $.
-    $( $j usage 'rexab' avoids 'ax-8' 'ax-9' 'df-clel' 'df-cleq' 'ax-ext'; $)
+    $( $j usage 'rexab' avoids 'ax-8' 'ax-9' 'df-cleq' 'df-clel' 'ax-ext'; $)
 
     $( Existential quantification over a class abstraction.  (Contributed by
        Jeff Madsen, 17-Jun-2011.)  (Revised by Mario Carneiro, 3-Sep-2015.) $)
@@ -37841,7 +37849,7 @@ $)
       ( vx cv wcel wi wal wss imim1 al2imi df-ss imbi12i 3imtr4i ) DEZAFZOBFZGZ
       DHQOCFZGZDHZPSGZDHZGABIBCIZACIZGRTUBDPQSJKDABLUDUAUEUCDBCLDACLMN $.
     $( $j usage 'sstr2' avoids 'ax-5' 'ax-6' 'ax-7' 'ax-8' 'ax-9' 'ax-10'
-       'ax-11' 'ax-12' 'ax-ext' 'df-clel' 'df-cleq'; $)
+       'ax-11' 'ax-12' 'ax-ext' 'df-cleq' 'df-clel'; $)
   $}
 
   $( Transitivity of subclass relationship.  Theorem 6 of [Suppes] p. 23.
@@ -38350,7 +38358,7 @@ $)
       ( wss cv wcel wi wal wral df-ss imim1 al2imi df-ral 3imtr4g sylbi ) CDEBF
       ZCGZQDGZHZBIZABDJZABCJZHBCDKUASAHZBIRAHZBIUBUCTUDUEBRSALMABDNABCNOP $.
     $( $j usage 'ssralv' avoids 'ax-5' 'ax-6' 'ax-7' 'ax-8' 'ax-9' 'ax-ext'
-       'df-clel' 'df-cleq'; $)
+       'df-cleq' 'df-clel'; $)
 
     $( Existential quantification restricted to a subclass.  (Contributed by
        NM, 11-Jan-2007.)  Avoid axioms.  (Revised by GG, 19-May-2025.) $)
@@ -38359,7 +38367,7 @@ $)
       wa ) CDEBFZCGZSDGZHZBIZABCJZABDJZHBCDKUCTARZBLUAARZBLUDUEUBUFUGBTUAAMNABC
       OABDOPQ $.
     $( $j usage 'ssrexv' avoids 'ax-5' 'ax-6' 'ax-7' 'ax-8' 'ax-9' 'ax-ext'
-       'df-clel' 'df-cleq'; $)
+       'df-cleq' 'df-clel'; $)
 
     $d y A $.  $d y B $.
     $( Two quantifications restricted to a subclass.  (Contributed by AV,
@@ -38447,8 +38455,8 @@ $)
     ss2abdv $p |- ( ph -> { x | ps } C_ { x | ch } ) $=
       ( vy cab wsb cv wcel sbimdv df-clab 3imtr4g ssrdv ) AFBDGZCDGZABDFHCDFHFI
       ZOJQPJABCDFEKBFDLCFDLMN $.
-    $( $j usage 'ss2abdv' avoids 'ax-8' 'ax-9' 'ax-10' 'ax-11'  'ax-12'
-       'df-clel' 'df-cleq' 'ax-ext' ; $)
+    $( $j usage 'ss2abdv' avoids 'ax-8' 'ax-9' 'ax-10' 'ax-11' 'ax-12'
+       'df-cleq' 'df-clel' 'ax-ext' ; $)
   $}
 
   ${
@@ -42431,7 +42439,7 @@ $)
     ( wral cv wcel wi df-ral ax-1 axc4i pm2.21 sp ja alimi impbii bicomi imbi2i
     wal albii 3bitrri bitri ) ABCDZBCDBECFZUBGZBRZUBUBBCHUBUCAGZBRZUCUGGZBRZUEA
     BCHZUGUIUFUHBUGUCIJUHUFBUCUGUFUCAKUFBLMNOUHUDBUGUBUCUBUGUJPQSTUA $.
-  $( $j usage 'ralidm' avoids 'df-clel' 'df-cleq' 'ax-8' 'ax-9' 'ax-ext'; $)
+  $( $j usage 'ralidm' avoids 'df-cleq' 'df-clel' 'ax-8' 'ax-9' 'ax-ext'; $)
 
   ${
     $d x y A $.
@@ -51215,7 +51223,7 @@ $)
       exnal eqcom albii xchbinx mpbi ) BCZACZDZEZAFZUDUCDZAGZEUCHDZUGUJUCHIZDZE
       ZUGUCJUFUMAUKKUDUKDUEULUDUKUCLMNOUFUJEAHPUDHDUEUJUDHUCLMNQUGUEAGUIUEARUEU
       HAUCUDSTUAUB $.
-      $( $j usage 'dtruALT' avoids 'ax-10' 'ax-11' 'ax-12' 'ax-13' 'ax-pr'; $)
+    $( $j usage 'dtruALT' avoids 'ax-10' 'ax-11' 'ax-12' 'ax-13' 'ax-pr'; $)
   $}
 
   ${
@@ -51986,7 +51994,7 @@ $)
     selsALT $p |- ( A e. V -> E. x A e. x ) $=
       ( wcel csn cv wex snidg cvv snexg eleq2 spcedv syl ) BCDBBEZDZBAFZDZAGBCH
       OQOAINBNJBNHPNBKLM $.
-    $( $j usage 'sels' avoids 'ax-nul' 'ax-pow'; $)
+    $( $j usage 'selsALT' avoids 'ax-nul' 'ax-pow'; $)
   $}
 
   ${
@@ -51996,7 +52004,7 @@ $)
        (New usage is discouraged.) $)
     elALT $p |- E. y x e. y $=
       ( cv cvv wcel wel wex vex selsALT ax-mp ) ACZDEABFBGAHBKDIJ $.
-    $( $j usage 'sels' avoids 'ax-nul' 'ax-pow'; $)
+    $( $j usage 'elALT' avoids 'ax-nul' 'ax-pow'; $)
   $}
 
   $( A singleton of a set is a member of the powerclass of a class if and only
@@ -57658,7 +57666,7 @@ $)
       vex breq2 eximi exexw sylibr eldm2 eldm ssriv ) CABFZGZBGZCHZDHZIUFJZDKZU
       IUJBLZDKZUIUGJUIUHJULUNDKUNUKUNDUIEHZBLZUOUJALZMEKUPEKUKUNUPUQENEUIUJABCR
       ZDROUMUPDEUJUOUIBSZPQTUMUPDEUSUAUBDUIUFURUCDUIBURUDQUE $.
-      $( $j usage 'dmcoss' avoids 'ax-10' 'ax-12'; $)
+    $( $j usage 'dmcoss' avoids 'ax-10' 'ax-12'; $)
   $}
 
   ${
@@ -99215,7 +99223,7 @@ $)
     wb fndm ordfin sylan9bb notbid ordom ordtri1 mpan adantl bitr4d ) ABCZBDZEZ
     AFGZHBIGZHZIBJZUJUKULUHUKBFGZUIULUHUKAKZFGZUOUHALUKUQRBAMANOUHUPBFBASPQBTUA
     UBUIUNUMRZUHIDUIURUCIBUDUEUFUG $.
-    $( $j usage 'tfsnfin2' avoids 'ax-inf' 'ax-inf2'; $)
+  $( $j usage 'tfsnfin2' avoids 'ax-inf' 'ax-inf2'; $)
 
 
 $(
@@ -106516,7 +106524,7 @@ $)
   rnr1 $p |- ran R1 = ( R1 " On ) $=
     ( cr1 cdm wlim crn con0 cima wceq r1dmlim word wss ordsson dfrn7 3syl ax-mp
     limord ) ABZCZADAEFGZHQPIPEJRPOPKAELMN $.
-    $( $j usage 'rnr1' avoids 'ax-rep' 'ax-pow'; $)
+  $( $j usage 'rnr1' avoids 'ax-rep' 'ax-pow'; $)
 
   $( Value of the cumulative hierarchy of sets function at ` (/) ` .  Part of
      Definition 9.9 of [TakeutiZaring] p. 76.  (Contributed by NM, 2-Sep-2003.)
@@ -118795,7 +118803,7 @@ $)
       wa wex ssrab2 mpan numth3 syl ac6num syl3an2 ) FIKZEHKCEADFLZMZNOKZADFPCE
       QEFGRUABCEQUFGUGUNUPSKZUQUPFTZUNURUSUOFTZCEQUTCEADFUHUBCEUOFUCUDUPFIUEUIU
       PSUJUKABCDEFGHJULUM $.
-      $( $j usage 'ac6' avoids 'ax-reg' 'ax-inf' 'ax-inf2'; $)
+    $( $j usage 'ac6' avoids 'ax-reg' 'ax-inf' 'ax-inf2'; $)
   $}
 
   ${
@@ -119574,7 +119582,7 @@ $)
       ZRAVIUFPVRVIVQUGZVQOZVQVIUHWDBVIVPVQVOLUIVQUJULVIVQUMUNVIUOVJWCUPVRWDUQAG
       URBVIUSVJWCVIVQUTVAVDVIVJVQVBSVIADEZVHVLVHAGKVTWEAVEWBVIAGVCSVIACTVFVJVIC
       TPVG $.
-      $( $j usage 'dmct' avoids 'ax-ac' 'ax-ac2'; $)
+    $( $j usage 'dmct' avoids 'ax-ac' 'ax-ac2'; $)
   $}
 
   ${
@@ -119789,7 +119797,7 @@ $)
     VCVIAOZVMAVHPZAVIUAUBQVDVNVCVDVKVKDZNZVNVDVKFVSABUCVKUDSVRVIVKBAUEUFSUGVNVI
     VLVKUJVMVOVIVKUKVIVLVKUHUIULUMVCVJVDVCVPVJVQVCATEVPVJUNAVBUOVIATUPUQURQVEVI
     AUSUTVA $.
-    $( $j usage 'imadomnum' avoids 'ax-ac' 'ax-ac2'; $)
+  $( $j usage 'imadomnum' avoids 'ax-ac' 'ax-ac2'; $)
 
   $( The image by a function of a countable set is countable.  The proof uses
      ~ imadomnum rather than ~ imadomg , and so does not require ~ ax-ac .
@@ -119799,7 +119807,7 @@ $)
     ( com cdom wbr wfun wa cima ccrd cdm wcel con0 omelon simpl ondomen syl2anc
     a1i simpr imadomnum sylc domtr ) ACDEZBFZGZBAHZADEZUBUECDEUDAIJKZUCUFUDCLKZ
     UBUGUHUDMQUBUCNZCAOPUBUCRABSTUIUEACUAP $.
-    $( $j usage 'fimact' avoids 'ax-ac' 'ax-ac2'; $)
+  $( $j usage 'fimact' avoids 'ax-ac' 'ax-ac2'; $)
 
   $( Obsolete version of ~ fimact as of 26-Aug-2026.  (Contributed by Thierry
      Arnoux, 27-Mar-2018.)  (Proof modification is discouraged.)
@@ -119813,7 +119821,7 @@ $)
   fnrndomnum $p |- ( A e. dom card -> ( F Fn A -> ran F ~<_ A ) ) $=
     ( wfn crn wfo ccrd cdm wcel cdom wbr dffn4 fodomnum biimtrid ) BACABDZBEAFG
     HNAIJABKANBLM $.
-    $( $j usage 'fnrndomnum' avoids 'ax-ac' 'ax-ac2'; $)
+  $( $j usage 'fnrndomnum' avoids 'ax-ac' 'ax-ac2'; $)
 
   $( The range of a function is dominated by its domain.  This theorem requires
      the axiom of choice ~ ax-ac2 ; see ~ fnrndomnum for a version that does
@@ -119844,7 +119852,7 @@ $)
     PVMVODDIZEFZWGDUOFVQVMVODVNIZEFZWIWGEFZWHVKVLWDWJWEADVNJUPQVMDJKVNDEFZWKUQV
     KVLVNAEFZWLVMAURRKZVKWMVMDUSKZVLWNWOVMUTVDVKVLVADAVBSVKVLVCABVEPVNADTQVNDDJ
     VFVGVOWIWGTSVHVOWGDVIVJBVODTS $.
-    $( $j usage 'fnct' avoids 'ax-ac' 'ax-ac2'; $)
+  $( $j usage 'fnct' avoids 'ax-ac' 'ax-ac2'; $)
 
   $( Obsolete version of ~ fnct as of 26-Aug-2026.  (Contributed by Thierry
      Arnoux, 29-Dec-2016.)  (Proof modification is discouraged.)
@@ -434638,7 +434646,7 @@ $)
       USTXHXOUITMIUTVDXOVATVBVCZVEXOXTWHDHGZXSHGWIDXRHGZHGZIXOWLYCXSHXLWLYCJZXN
       XBXLYFODWGVFVGVHPXOWHDVTXRXLWHKRZXNXBXLYGODWGVIVGVHXBXOOTYAYBVJXOYEXIIXOW
       IIYDIHXLXMWJVKYDIJXOVLTVMXKUEVNVOVPVQ $.
-   $( $j usage 'pw2recs' avoids 'ax-inf' 'ax-inf2'; $)
+    $( $j usage 'pw2recs' avoids 'ax-inf' 'ax-inf2'; $)
   $}
 
   ${
@@ -434797,7 +434805,7 @@ $)
       ZJRZBUSJRZFGZAVAUTKRZVAVBKRZLUTVBLAVDSBURKRZUSJRZVCAVAABCDEMZNAVFSLUSSORZ
       VELAVHSVEAUSPQZVHSLAHPQCUAQVIUBEHCUCUDUSUEUFABDNUJAVESCABURDABDTZUGSPQAUH
       UKEUIULABURCDVJEUMUNAUTVBVAAURCVJEMAVAVGTVGUOUPUQ $.
-     $( $j usage 'pw2divsnegd' avoids 'ax-inf' 'ax-inf2'; $)
+    $( $j usage 'pw2divsnegd' avoids 'ax-inf' 'ax-inf2'; $)
   $}
 
   ${
@@ -434935,7 +434943,7 @@ $)
       JYMUVONVMXLAXMULNYNUBMZXOOZJPRZAVMUEZXOUEZUCMZPVHZNUXRUBMZXOOZUXOUXSXNUXP
       UXQXNVMXOVMPVHXNXPULXOPVHXNXQULVMXOVKSXNXRULUDUFXSXTUXNUYAJUXRPYNUXROUXMU
       XTXOYNUXRNUBUSYAYBYCULYDWDWJ $.
-   $( $j usage 'halfcut' avoids 'ax-inf' 'ax-inf2'; $)
+    $( $j usage 'halfcut' avoids 'ax-inf' 'ax-inf2'; $)
   $}
 
   ${
@@ -434964,7 +434972,7 @@ $)
       JKHIZYAWHAGKWHTXKUUJWHTAGGGHIKWHAGXQUDWEWFAGKXJXQYNYOWIWJAYAXJKGMIZHIUUJA
       KBGYNXOXQWKUUKKXJHYMUUKKUEUTKWQUOWLWMWNWCWOWPWRXHWSWTAXIXKKLYDUHAXLXJKLIZ
       XMHIXNAXJGKYOXQYNKXAXBAXCPZXDAUULBXMHABKXOYNUUMXEUHVEXF $.
-   $( $j usage 'addhalfcut' avoids 'ax-inf' 'ax-inf2'; $)
+    $( $j usage 'addhalfcut' avoids 'ax-inf' 'ax-inf2'; $)
   $}
 
   ${
@@ -435015,7 +435023,7 @@ $)
       VKAUVMUVORUUFUVPUUEUVNKNUXGWTVRWPUVKAUUNUVMRUUFUVPUUNXMUUDKWAMZNMUVMUVPUU
       MUXHXMNUVKUUMUXHRZAUVKUURUVSUXIUIUVTKUUCWKVKWBSUVPXMUUDKUVPBCUVQUWFXAUWAU
       XBUWDUXEWOWPVRWPXCXDXEXF $.
-   $( $j usage 'pw2cut' avoids 'ax-inf' 'ax-inf2'; $)
+    $( $j usage 'pw2cut' avoids 'ax-inf' 'ax-inf2'; $)
   $}
 
   ${
@@ -435037,7 +435045,7 @@ $)
       QVQISOZAUORZUPUQZAVTWDWBWFKAVSVOAVOSOWKVSVOQAVOWIMZUOVOIURPUSAWAWEAVOIIJT
       ZJTVOFILTZJTWAWEWOWPVOJWOFWPUTFSOZWPFQVAFVBUIVCVDAVOIIWNWLWLUPAFBIWQAVARV
       QWLVEVFUSVGVHVIAVPVMVNGWMUNVJ $.
-   $( $j usage 'pw2cutp1' avoids 'ax-inf' 'ax-inf2'; $)
+    $( $j usage 'pw2cutp1' avoids 'ax-inf' 'ax-inf2'; $)
   $}
 
   ${
@@ -436096,7 +436104,7 @@ $)
     AJURUSKZVAURVBADEFZVAURUSVCURDLCZALCZUSVCMPANZDAOQRURVCDASHZEFZVAURVCDSHZVG
     EFZVHURVEVDVCVJUHVFPADUAUBVIDVGEUCUDUEURVHVGGHZICZVAURVGBCZVHVLUIAUFVMVHVLV
     GJUJTURVKUTIURVEVKUTUGVFAUKTULUMUNUOUPUQ $.
-    $( $j usage 'z12bday' avoids 'ax-inf' 'ax-inf2' ; $)
+  $( $j usage 'z12bday' avoids 'ax-inf' 'ax-inf2' ; $)
 
   ${
     $d A x y z n $.
@@ -521450,7 +521458,7 @@ $)
       BEVJVKZWROABCREDRXTWRPGFBCDEVLSIVMZAWRVSUFRZWSWRUJZXSAXRYBYAWRVNTAWRBWRLZ
       WSVOZYCAXHWRXIQYEHBWQVPWRBVQUMWRYDWSVTTWRWSVRWAWRWTWBSAWPORXCWPQXQEWCAXCW
       PWNWJZWPAXCBXALZYFBXAWDAXHYGYFPHWPBWETWFWPWNWGWHWPXCWKWIWTXCWLSWM $.
-      $( $j usage 'ffsrn' avoids 'ax-ac' 'ax-ac2'; $)
+    $( $j usage 'ffsrn' avoids 'ax-ac' 'ax-ac2'; $)
   $}
 
   ${
@@ -559110,7 +559118,7 @@ $)
     simp3 ) CDEFGZACGZBCGZHZCFZULAIZBJZIZABIZCUKUOULUMIZBIZUPUOURKUKULUMBLMUKUQ
     ABUKAULNZUQAKUKUHUIUSUHUIUJOZUHUIUJPZACQRAULSUAUBUCUKUHUNCGZUOCGUTUKUHUMCGZ
     UJVBUTUKUHUIVCUTVAACTRUHUIUJUGUMBCUDUEUNCTRUF $.
-    $( $j usage 'difelsiga' avoids 'ax-ac' 'ax-ac2'; $)
+  $( $j usage 'difelsiga' avoids 'ax-ac' 'ax-ac2'; $)
 
   $( A sigma-algebra is closed under pairwise intersections.  (Contributed by
      Thierry Arnoux, 13-Dec-2016.) $)
@@ -580831,7 +580839,7 @@ $)
         ( card ` A ) = ( card ` U_ x e. A ( { x } X. 1o ) ) ) $=
       ( cvv wcel cv csn c1o cxp ciun cen wbr ccrd cfv wceq 1enumen carden2b syl
       ) BCDBABAEFGHIZJKBLMRLMNABOBRPQ $.
-      $( $j usage '1enumcard' avoids 'ax-ac' 'ax-ac2'; $)
+    $( $j usage '1enumcard' avoids 'ax-ac' 'ax-ac2'; $)
   $}
 
   $( Value of the cumulative hierarchy of sets function at ` 1o ` .
@@ -580870,7 +580878,7 @@ $)
       rankfilimbi 3expia 3impa impbid ) BDEZBFGHIEZCJZKZBLMZCEZANZLMZCEZABSZUQU
       SVBABUQUTBEZUSVBUQVDVAUREZUSVBUOUNVDVEOUPUTBPQUPUNVEUSRVBOZUOUPCTVFCUAVAU
       RCUBUCUDUEUFUGUNUOUPVCUSOUNUORZUPVCUSVGVCUPUSVGVCUPUSABCUJUHUIUKULUM $.
-    $( $j usage 'rankfilimbi' avoids 'ax-reg'; $)
+    $( $j usage 'rankfilimb' avoids 'ax-reg'; $)
   $}
 
   ${
@@ -605024,7 +605032,7 @@ $)
       negeqi df-ditg 3eqtr4i ) BDKLZABDMNZFOZADBMNZFOZPZQCEKLZACEMNZGOZAECMNZGO
       ZPZQABDFRACEGRUFULUHUKUNUQBCDEKHIUAAUGUMFGBCDEMHISJTUJUPAUIUOFGDEBCMIHSJT
       UCUBABDFUDACEGUDUE $.
-   $( $j usage 'ditgeq123i' avoids 'ax-10' 'ax-11' 'ax-12' 'ax-13'; $)
+    $( $j usage 'ditgeq123i' avoids 'ax-10' 'ax-11' 'ax-12' 'ax-13'; $)
   $}
 
   ${
@@ -605258,7 +605266,7 @@ $)
       JVQVFVQVJFAELMNOVSAPZVPFUEZSZVFIZAJBPZWDSZVGIZBJWBVRWFAVQWEVFWEVQVPAFQMNO
       WEWCDPZSIAJWDWJUFWHWGWJSIBJAWDWJRBWDWJRUGWIWABWHVTVGVPBFQNOTWAVLBVTVKVGFB
       ELNOTUHVLBUIUMUNUJUKULUOEAUPUQVAVCVFVGVDVCVFICDCDAURUODCBURUSUTDCUPUQ $.
-    $( $j usage 'ss-ax8' avoids 'ax-8' 'ax-ext' 'df-clel' 'df-cleq'; $)
+    $( $j usage 'ss-ax8' avoids 'ax-8' 'ax-ext' 'df-cleq' 'df-clel'; $)
   $}
 
 
@@ -611893,8 +611901,8 @@ $(
   Derived rules of inference
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
-  In this section, we prove a few rules of inference derived from _modus
-  ponens_ ~ ax-mp , and which do not depend on any other axioms.
+  In this section, we prove a few rules of inference that are derived from
+  modus ponens ~ ax-mp and depend on no other axioms.
 
 $)
 
@@ -611902,20 +611910,22 @@ $)
     bj-mp2c.majm $e |- ( ph -> ( ps -> ch ) ) $.
     bj-mp2c.maj $e |- ( ph -> ps ) $.
     bj-mp2c.min $e |- ph $.
-    $( A double _modus ponens_ inference.  Inference associated with ~ mpd .
+    $( A double modus ponens inference.  Inference associated with ~ mpd .
        (Contributed by BJ, 24-Sep-2019.) $)
     bj-mp2c $p |- ch $=
       ( ax-mp mp2 ) ABCFABFEGDH $.
+    $( $j usage 'bj-mp2c' avoids 'ax-1' 'ax-2'; $)
   $}
 
   ${
     bj-mp2d.majm $e |- ( ps -> ( ph -> ch ) ) $.
     bj-mp2d.maj $e |- ( ph -> ps ) $.
     bj-mp2d.min $e |- ph $.
-    $( A double _modus ponens_ inference.  Inference associated with ~ mpcom .
+    $( A double modus ponens inference.  Inference associated with ~ mpcom .
        (Contributed by BJ, 24-Sep-2019.) $)
     bj-mp2d $p |- ch $=
       ( ax-mp mp2 ) BACABFEGFDH $.
+    $( $j usage 'bj-mp2d' avoids 'ax-1' 'ax-2'; $)
   $}
 
 
@@ -611940,19 +611950,19 @@ $)
   bj-0 $p wff ( ( ph -> ps ) -> ch ) $=
     ( wi ) ABDCD $.
 
-  $( In this proof, the use of the syntactic theorem ~ bj-0 allows to reduce
-     the total length by one (non-essential) step.  See also the section
-     comment and the comment of ~ bj-0 .  Since ~ bj-0 is used in a
-     non-essential step, this use does not appear on this webpage (but the
-     present theorem appears on the webpage for ~ bj-0 as a theorem referencing
-     it).  The full proof reads $= wph wps wch bj-0 id $.  (while, without
-     using ~ bj-0 , it would read $= wph wps wi wch wi id $.).
+  $( In this proof, the use of the syntactic theorem ~ bj-0 reduces the total
+     length by one (non-essential) step.  See also the section comment and the
+     comment of ~ bj-0 .  Since ~ bj-0 is used in a non-essential step, this
+     use does not appear on this webpage (but the present theorem appears on
+     the webpage for ~ bj-0 as a theorem referencing it).  The full proof reads
+     $= wph wps wch bj-0 id $.  (while, without using ~ bj-0 , it would read $=
+     wph wps wi wch wi id $.).
 
      Now we explain why syntactic theorems are not useful in set.mm.  Suppose
      that the syntactic theorem thm-0 proves that PHI is a well-formed formula,
      and that thm-0 is used to shorten the proof of thm-1.  Assume that PHI
-     does have proper non-atomic subformulas (which is not the case of the
-     formula proved by ~ weq or ~ wel ).  Then, the proof of thm-1 does not
+     does have proper non-atomic subformulas (which is not the case for the
+     formulas proved by ~ weq or ~ wel ).  Then, the proof of thm-1 does not
      construct all the proper non-atomic subformulas of PHI (if it did, then
      using thm-0 would not shorten it).  Therefore, thm-1 is a special instance
      of a more general theorem with essentially the same proof.  In the present
@@ -611978,50 +611988,52 @@ $)
     $( Inference associated with "pon", ~ pm2.27 .  Its associated inference is
        ~ ax-mp .  (Contributed by BJ, 30-Jul-2024.) $)
     bj-poni $p |- ( ( ph -> ps ) -> ps ) $=
-      ( wi pm2.27 ax-mp ) AABDBDCABEF $.
+      ( wi id mpi ) ABDZABCGEF $.
   $}
 
   $( When ` F. ` is substituted for ` ps ` , this formula is the Clavius law
      with a doubly negated consequent, which is therefore a minimalistic
-     tautology.  Notice the non-intuitionistic proof from ~ peirce and ~ pm2.27
-     chained using ~ syl .  (Contributed by BJ, 4-Dec-2023.) $)
+     tautology.  Also provable (non-intuitionistically) as ~ syl ( ~ peirce ,
+     ~ pm2.27 ).  (Contributed by BJ, 4-Dec-2023.) $)
   bj-nnclav $p |- ( ( ( ph -> ps ) -> ph ) -> ( ( ph -> ps ) -> ps ) ) $=
     ( wi id a2i ) ABCZABFDE $.
+  $( $j usage 'bj-nnclav' avoids 'ax-3'; $)
 
   ${
     bj-nnclavi.1 $e |- ( ( ph -> ps ) -> ph ) $.
-    $( Inference associated with ~ bj-nnclav .  Its associated inference is an
-       instance of ~ syl .  Notice the non-intuitionistic proof from
-       ~ bj-peircei and ~ bj-poni .  (Contributed by BJ, 30-Jul-2024.) $)
+    $( Inference associated with ~ bj-nnclav .  Its associated inference
+       results from two applications of ~ ax-mp .  Also provable
+       (non-intuitionistically) as ~ bj-poni ( ~ bj-peircei ).  (Contributed by
+       BJ, 30-Jul-2024.) $)
     bj-nnclavi $p |- ( ( ph -> ps ) -> ps ) $=
-      ( wi bj-nnclav ax-mp ) ABDZADGBDCABEF $.
+      ( wi id mpd ) ABDZABCGEF $.
   $}
 
-  $( Commuted form of ~ bj-nnclav .  Notice the non-intuitionistic proof from
-     ~ bj-peircei and ~ imim1i .  (Contributed by BJ, 30-Jul-2024.)  A proof
-     which is shorter when compressed uses ~ embantd .
-     (Proof modification is discouraged.) $)
+  $( Commuted form of ~ bj-nnclav .  Also provable as ~ com12 ( ~ bj-nnclav ).
+     Also provable (non-intuitionistically) as ~ imim1i ( ~ peirce ).
+     (Contributed by BJ, 30-Jul-2024.) $)
   bj-nnclavc $p |- ( ( ph -> ps ) -> ( ( ( ph -> ps ) -> ph ) -> ps ) ) $=
-    ( wi bj-nnclav com12 ) ABCZACFBABDE $.
+    ( wi id embantd ) ABCZFABFDZGE $.
 
   ${
     bj-nnclavci.1 $e |- ( ph -> ps ) $.
-    $( Inference associated with ~ bj-nnclavc .  Its associated inference is an
-       instance of ~ syl .  Notice the non-intuitionistic proof from ~ peirce
-       and ~ syl .  (Contributed by BJ, 30-Jul-2024.) $)
+    $( Inference associated with ~ bj-nnclavc .  Its associated inference
+       results from two applications of ~ ax-mp .  Also provable
+       (non-intuitionistically) as ~ syl ( ~ peirce ).  (Contributed by BJ,
+       30-Jul-2024.) $)
     bj-nnclavci $p |- ( ( ( ph -> ps ) -> ph ) -> ps ) $=
-      ( wi bj-nnclavc ax-mp ) ABDZGADBDCABEF $.
+      ( wi bj-nnclav mpi ) ABDZADGBCABEF $.
   $}
 
   ${
     bj-jarrii.1 $e |- ( ( ph -> ps ) -> ch ) $.
     bj-jarrii.2 $e |- ps $.
-    $( Inference associated with ~ jarri .  Contrary to it, it does not require
+    $( Inference associated with ~ jarri .  Unlike it, it does not require
        ~ ax-2 , but only ~ ax-mp and ~ ax-1 .  (Contributed by BJ,
        29-Mar-2020.)  (Proof modification is discouraged.) $)
     bj-jarrii $p |- ch $=
       ( wi a1i ax-mp ) ABFCBAEGDH $.
-      $( $j usage 'bj-jarrii' avoids 'ax-2' 'ax-3'; $)
+    $( $j usage 'bj-jarrii' avoids 'ax-2' 'ax-3'; $)
   $}
 
   $( The propositional function ` ( ph -> ( . -> ps ) ) ` is decreasing.
@@ -612035,7 +612047,7 @@ $)
     $( The propositional function ` ( ph -> ( . -> ps ) ) ` is decreasing.  Its
        associated inference is ~ syl5 .  (Contributed by BJ, 19-Jul-2019.) $)
     bj-imim21i $p |- ( ( ch -> ( ps -> th ) ) -> ( ch -> ( ph -> th ) ) ) $=
-      ( wi bj-imim21 ax-mp ) ABFCBDFFCADFFFEABCDGH $.
+      ( wi imim1i imim2i ) BDFADFCABDEGH $.
   $}
 
   $( The propositional function ` ( ( . -> ph ) -> ps ) ` is increasing.
@@ -612050,21 +612062,21 @@ $)
        associated inference is ~ wl-syls2 .  (Contributed by BJ,
        3-Apr-2026.) $)
     bj-imim11i $p |- ( ( ( ph -> ch ) -> th ) -> ( ( ps -> ch ) -> th ) ) $=
-      ( wi bj-imim11 ax-mp ) ABFACFDFBCFDFFEABCDGH $.
+      ( wi imim1i ) BCFACFDABCEGG $.
   $}
 
   $( Over minimal implicational calculus, Peirce's law implies the double
-     negation of the stability of any formula (that is the interpretation when
-     ` F. ` is substituted for ` ps ` and for ` ch ` ).  Therefore, the double
+     negation of the stability of any formula (this is its reading when ` F. `
+     is substituted for ` ps ` and for ` ch ` ).  Therefore, the double
      negation of the stability of any formula is provable in classical
      refutability calculus.  It is also provable in intuitionistic calculus
      (see iset.mm/bj-nnst) but it is not provable in minimal calculus (see
      ~ bj-stabpeirce ).  (Contributed by BJ, 30-Nov-2023.)  Axiom ~ ax-3 is
-     only used through Peirce's law ~ peirce .
+     used only through Peirce's law ~ peirce .
      (Proof modification is discouraged.) $)
   bj-peircestab $p |- ( ( ( ( ( ph -> ps ) -> ch ) -> ph ) -> ch ) -> ch ) $=
-    ( wi bj-nnclav ax-1 imim2i peirce syl imim2 syl56 a1dd syl11 ) ABDZCDZADZCD
-    ZCADZCDCQPDQCRPCERQAOQORNADAQPODOCOPCNFGOAHICANJABHKLMCAHI $.
+    ( wi imim2 peirce syl6 imim1i syl ) ABDZCDZADZCDCADZCDCMLCMKJADACAJEABFGHCA
+    FI $.
 
   $( This minimal implicational calculus tautology is used in the following
      argument:  When ` ph , ps , ch , th , ta ` are replaced respectively by
@@ -612082,8 +612094,8 @@ $)
      30-Jul-2024.)  (Proof modification is discouraged.) $)
   bj-stabpeirce $p |- ( ( ( ( ( ph -> ps ) -> ch ) -> th ) -> ta ) ->
                                           ( ( ( ps -> ch ) -> th ) -> ta ) ) $=
-    ( wi jarr imim1i ) BCFZDFABFCFZDFEJIDABCGHH $.
-    $( $j usage 'bj-stabpeirce' avoids 'ax-3'; $)
+    ( wi jarr bj-imim11i ) ABFCFBCFDEABCGH $.
+  $( $j usage 'bj-stabpeirce' avoids 'ax-3'; $)
 
 
 $(
@@ -612091,7 +612103,7 @@ $(
   Positive calculus
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
-  Positive calculus is understood to be intuitionistic. Its primitive
+  Positive calculus is understood to be intuitionistic.  Its primitive
   connectives are implication, equivalence, conjunction, and disjunction.
   Due to the current axiomatization of set.mm, axiom ~ ax-3 , which does not
   belong to positive calculus, may appear as a dependency of some theorems in
@@ -612099,13 +612111,13 @@ $(
 
 $)
 
-  $( Implication from equivalence with a conjunct.  Its associated inference is
-     ~ simplbi .  (Contributed by BJ, 20-Mar-2026.) $)
+  $( Implication from equivalence with a conjunction.  Its associated inference
+     is ~ simplbi .  (Contributed by BJ, 20-Mar-2026.) $)
   bj-bisimpl $p |- ( ( ph <-> ( ps /\ ch ) ) -> ( ph -> ps ) ) $=
     ( wa wb biimp simpl syl6 ) ABCDZEAIBAIFBCGH $.
 
-  $( Implication from equivalence with a conjunct.  Its associated inference is
-     ~ simprbi .  (Contributed by BJ, 20-Mar-2026.) $)
+  $( Implication from equivalence with a conjunction.  Its associated inference
+     is ~ simprbi .  (Contributed by BJ, 20-Mar-2026.) $)
   bj-bisimpr $p |- ( ( ph <-> ( ps /\ ch ) ) -> ( ph -> ch ) ) $=
     ( wa wb biimp simpr syl6 ) ABCDZEAICAIFBCGH $.
 
@@ -612113,11 +612125,11 @@ $)
     bj-syl66ib.1 $e |- ( ph -> ( ps -> th ) ) $.
     bj-syl66ib.2 $e |- ( th -> ta ) $.
     bj-syl66ib.3 $e |- ( ta <-> ch ) $.
-    $( A mixed syllogism inference derived from ~ imbitrdi .  Shortens
-       ~ bj-dvelimdv1 , ~ alexsubALTlem4 (4821>4812), ~ supsrlem (2868>2863).
-       (Contributed by BJ, 20-Oct-2021.) $)
+    $( A mixed syllogism inference similar to ~ imbitrdi .  Shortens
+       ~ alexsubALTlem4 (4738>4732), ~ supsrlem (2866>2864).  (Contributed by
+       BJ, 20-Oct-2021.) $)
     bj-syl66ib $p |- ( ph -> ( ps -> ch ) ) $=
-      ( syl6 imbitrdi ) ABECABDEFGIHJ $.
+      ( sylib syl6 ) ABDCFDECGHIJ $.
   $}
 
   $( Proof of ~ orim2 from the axiomatic definition of disjunction ( ~ olc ,
@@ -612129,15 +612141,15 @@ $)
   $( Curry's axiom ~ curryax (a non-intuitionistic positive statement sometimes
      called a paradox of material implication) implies Peirce's axiom ~ peirce
      over minimal implicational calculus and the axiomatic definition of
-     disjunction (actually, only the elimination axiom ~ jao via its inference
-     form ~ jaoi ; the introduction axioms ~ olc and ~ orc are not needed).
-     This theorem shows that actually, the standard instance of ~ curryax
-     implies the standard instance of ~ peirce , which is not the case for the
-     converse ~ bj-peircecurry .  (Contributed by BJ, 15-Jun-2021.)
-     (Proof modification is discouraged.)  (New usage is discouraged.) $)
+     disjunction (actually, only the elimination axiom ~ jao , via ~ jao1i ;
+     the introduction axioms ~ olc and ~ orc are not needed).  More precisely,
+     the standard instance of ~ curryax implies the standard instance of
+     ~ peirce , which is not the case for the converse ~ bj-peircecurry .
+     (Contributed by BJ, 15-Jun-2021.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
   bj-currypeirce $p |-
               ( ( ph \/ ( ph -> ps ) ) -> ( ( ( ph -> ps ) -> ph ) -> ph ) ) $=
-    ( wi ax-1 pm2.27 jaoi ) AABCZACZACGAHDGAEF $.
+    ( wi pm2.27 jao1i ) AABCZFACFADE $.
 
   $( Peirce's axiom ~ peirce implies Curry's axiom ~ curryax over minimal
      implicational calculus and the axiomatic definition of disjunction
@@ -612146,23 +612158,24 @@ $)
      (Contributed by BJ, 15-Jun-2021.)  (Proof modification is discouraged.)
      (New usage is discouraged.) $)
   bj-peircecurry $p |- ( ph \/ ( ph -> ps ) ) $=
-    ( wi wo orc olc peirce peirceroll ax-mp mpsyl ) AAABCZDZCZLAKEKLCZMLCZKAFLA
-    CZLCLCNPACZOLAGKACACNQCABGABLHILAAHJII $.
+    ( wi wo olc imim1i peirce syl orc ax-mp ) AABCZDZACZLCLMALMKACAKLAKAEFABGHA
+    KIHLAGJ $.
 
-  $( Conjunction in terms of implication and biconditional.  The proof is
-     intuitionistic (use of ~ ax-3 comes from the unusual definition of the
-     biconditional in set.mm).  (Contributed by BJ, 23-Sep-2023.) $)
+  $( Conjunction in terms of implication and biconditional.  (Contributed by
+     BJ, 23-Sep-2023.)  The proof is intuitionistic (use of ~ ax-3 comes from
+     the unusual definition of the biconditional in set.mm).
+     (Proof modification is discouraged.) $)
   bj-animbi $p |- ( ( ph /\ ps ) <-> ( ph <-> ( ph -> ps ) ) ) $=
-    ( wa wi wb simpl pm3.4 2thd biimp pm2.43d biimpr mpd jcai impbii ) ABCZAABD
-    ZEZOAPABFABGHQABQPAQABAPIJZAPKLRMN $.
+    ( wa wi wb simpl pm3.4 2thd biimp pm2.43d id mpbird jcai impbii ) ABCZAABDZ
+    EZOAPABFABGHQABQAPQABAPIJZQKLRMN $.
 
   $( Curry's paradox.  The proof is intuitionistic (use of ~ ax-3 comes from
      the unusual definition of the biconditional in set.mm).  The paradox comes
      from the case where ` ph ` is the self-referential sentence "If this
      sentence is true, then ` ps ` ", so that one can prove everything.
      Therefore, a consistent system cannot allow the formation of such
-     self-referential sentences.  This has lead to the study of logics
-     rejecting contraction ~ pm2.43 , such as affine logic and linear logic.
+     self-referential sentences.  This has led to the study of logics rejecting
+     contraction ~ pm2.43 , such as affine logic and linear logic.
      (Contributed by BJ, 23-Sep-2023.)  (Proof modification is discouraged.) $)
   bj-currypara $p |- ( ( ph <-> ( ph -> ps ) ) -> ps ) $=
     ( wi wb wa bj-animbi simpr sylbir ) AABCDABEBABFABGH $.
@@ -612190,22 +612203,20 @@ $)
        inference associated with ~ bj-con2comi .  (Contributed by BJ,
        19-Mar-2020.) $)
     bj-con2comi $p |- ( ( ps -> -. ph ) -> -. ps ) $=
-      ( wn wi bj-con2com ax-mp ) ABADEBDECABFG $.
+      ( wn wi con2 mpi ) BADEABDCBAFG $.
   $}
 
-  $( If a formula is true, then it does not imply its negation.  (Contributed
-     by BJ, 19-Mar-2020.)  A shorter proof is possible using ~ id and ~ jc ,
-     however, the present proof uses theorems that are more basic than ~ jc .
-     (Proof modification is discouraged.) $)
+  $( If a formula is true, then it does not imply its negation.  Also provable
+     as ~ con2i ( ~ pm2.01 ).  (Contributed by BJ, 19-Mar-2020.) $)
   bj-nimn $p |- ( ph -> -. ( ph -> -. ph ) ) $=
-    ( wn wi pm2.01 con2i ) AABCAADE $.
+    ( id jc ) AAAABZDC $.
 
   ${
     bj-nimni.1 $e |- ph $.
     $( Inference associated with ~ bj-nimn .  (Contributed by BJ,
        19-Mar-2020.) $)
     bj-nimni $p |- -. ( ph -> -. ph ) $=
-      ( wn wi bj-nimn ax-mp ) AAACDCBAEF $.
+      ( wn wi pm2.01 mt2 ) AACDABAEF $.
   $}
 
   ${
@@ -612237,11 +612248,11 @@ $)
     bj-mt2bi.maj $e |- ( ps <-> -. ph ) $.
     bj-mt2bi.min $e |- ph $.
     $( Version of ~ mt2 where the major premise is a biconditional.  Shortens
-       ~ fal (see ~ bj-fal ) .  Another proof is also possible via ~ con2bii
-       and ~ mpbi .  The current ~ mt2bi should be relabeled, maybe to imfal.
-       (Contributed by BJ, 5-Oct-2024.) $)
+       ~ fal (see ~ bj-fal ).  Also provable as ~ mt2 ( ~ biimpi ) and as
+       ~ mpbi ( ~ con2bii ).  The current ~ mt2bi should be relabeled, maybe to
+       imfal.  (Contributed by BJ, 5-Oct-2024.) $)
     bj-mt2bi $p |- -. ps $=
-      ( wn biimpi mt2 ) BADBAECFG $.
+      ( wn notnoti mtbir ) BAEADFCG $.
   $}
 
   $( Shortening of ~ fal using ~ bj-mt2bi .  (Contributed by Anthony Hart,
@@ -612265,6 +612276,7 @@ $)
   bj-dfnul2 $p |- (/) = { x | -. x = x } $=
     ( c0 wfal cab weq wn dfnul4 equid bj-ntrufal abbii eqtr4i ) BCADAAEZFZADAGM
     CALAHIJK $.
+  $( $j usage 'bj-dfnul2' avoids 'df-clel' 'ax-8' 'ax-10' 'ax-11' 'ax-12'; $)
 
 
 $(
@@ -612280,15 +612292,15 @@ $)
 
   ${
     bj-jaoi1.1 $e |- ( ph -> ps ) $.
-    $( Shortens ~ orfa2 (58>53), ~ pm1.2 (20>18), ~ pm1.2 (20>18), ~ pm2.4
-       (31>25), ~ pm2.41 (31>25), ~ pm2.42 (38>32), ~ pm3.2ni (43>39), ~ pm4.44
-       (55>51).  (Contributed by BJ, 30-Sep-2019.) $)
+    $( Inference associated with ~ pm2.621 .  Shortens ~ pm2.4 (31>28),
+       ~ pm2.41 (31>28), ~ pm2.42 (38>35).  (Contributed by BJ,
+       30-Sep-2019.) $)
     bj-jaoi1 $p |- ( ( ph \/ ps ) -> ps ) $=
       ( id jaoi ) ABBCBDE $.
 
-    $( Shortens ~ consensus (110>106), ~ elnn0z (336>329), ~ pm1.2 (20>19),
-       ~ pm3.2ni (43>39), ~ pm4.44 (55>51).  (Contributed by BJ,
-       30-Sep-2019.) $)
+    $( Variant of ~ bj-jaoi1 with the disjuncts swapped.  Shortens ~ consensus
+       (110>108), ~ elnn0z (336>331), ~ pm3.2ni (43>41), ~ pm4.44 (55>53).
+       (Contributed by BJ, 30-Sep-2019.) $)
     bj-jaoi2 $p |- ( ( ps \/ ph ) -> ps ) $=
       ( id jaoi ) BBABDCE $.
   $}
@@ -612301,9 +612313,9 @@ $(
 
   A few other characterizations of the biconditional.  The inter-definability
   of logical connectives offers many ways to express a given statement.  Some
-  useful theorems in this regard are ~ df-or , ~ df-an , ~ pm4.64 , ~ imor ,
-  ~ pm4.62 through ~ pm4.67 , and, for the De Morgan laws, ~ ianor through
-  ~ pm4.57 .
+  useful theorems in this regard are ~ df-or , ~ df-an , ~ imor , ~ pm4.62 ,
+  ~ pm4.63 , ~ pm4.64 , ~ pm4.65 , ~ pm4.66 , ~ pm4.67 , and, for the De Morgan
+  laws, ~ ianor through ~ pm4.57 .
 
 $)
 
@@ -612334,15 +612346,15 @@ $)
 
   $( A self-implication does not imply the negation of a self-implication.
      Most general theorem of which ~ bijust is an instance ( ~ bijust0 and
-     ~ bj-bijust0ALT are therefore also instances of it).  (Contributed by BJ,
-     7-Sep-2022.) $)
+     ~ bj-bijust0ALT are therefore also instances of it).  Also provable as
+     ~ mp2 ( ~ id , ~ id , ~ pm3.2im ).  (Contributed by BJ, 7-Sep-2022.) $)
   bj-bijust00 $p |- -. ( ( ph -> ph ) -> -. ( ps -> ps ) ) $=
-    ( wi wn id pm3.2im mp2 ) AACZBBCZHIDCDAEBEHIFG $.
+    ( wi wn id bj-poni mt2 ) AACZBBCZDZCIBEHJAEFG $.
 
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-  The conditional operator for propositions
+  The conditional operators (for propositions and classes)
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
@@ -612366,8 +612378,8 @@ $)
     $d x ph $.  $d x A $.  $d x B $.
     $( Candidate definition for the conditional operator for classes.  This is
        in line with the definition of a class as the extension of a predicate
-       in ~ df-clab .  We reprove the current ~ df-if from it in ~ bj-dfif .
-       (Contributed by BJ, 20-Sep-2019.)
+       in ~ df-clab .  We reprove a former definition of ~ df-if from it in
+       ~ bj-dfif .  (Contributed by BJ, 20-Sep-2019.)
        (Proof modification is discouraged.) $)
     bj-df-ifc $p |- if ( ph , A , B ) = { x | if- ( ph , x e. A , x e. B ) } $=
       ( cif cv wcel wa wn cab wif df-if ancom orbi12i df-ifp bitr4i abbii eqtri
@@ -612392,7 +612404,10 @@ $)
        the conditional operator for classes.  There is no sethood hypothesis on
        ` X ` : it is implied by either side.  (Contributed by BJ, 24-Sep-2019.)
        Generalize statement from setvar ` x ` to class ` X ` .  (Revised by BJ,
-       26-Dec-2023.) $)
+       26-Dec-2023.)  Also provable as ~ bitr4i ( ~ elif , ~ df-ifp ) , but it
+       is here proved as a consequence of the candidate definition
+       ~ bj-df-ifc , so that ~ elif is then proved from it.
+       (Proof modification is discouraged.) $)
     bj-ififc $p |-
                  ( X e. if ( ph , A , B ) <-> if- ( ph , X e. A , X e. B ) ) $=
       ( vx cif wcel cv wif cab bj-df-ifc eleq2i cvv wa wn wo df-ifp elex adantl
@@ -612411,27 +612426,27 @@ $(
 
 $)
 
-  $( Uncurried (imported) form of ~ imbi12 .  (Contributed by BJ,
-     6-May-2019.) $)
+  $( Uncurried (imported) form of ~ imbi12 .  Also provable as ~ imbi12d
+     ( ~ simpl , ~ simpr ).  (Contributed by BJ, 6-May-2019.)
+     (Proof modification is discouraged.) $)
   bj-imbi12 $p |- ( ( ( ph <-> ps ) /\ ( ch <-> th ) ) ->
                                          ( ( ph -> ch ) <-> ( ps -> th ) ) ) $=
     ( wb wi imbi12 imp ) ABECDEACFBDFEABCDGH $.
 
-  $( Dual of ~ truan (which has biconditional reversed).  (Contributed by BJ,
-     26-Oct-2019.)  (Proof modification is discouraged.) $)
+  $( Dual of ~ truan (which has the biconditional reversed).  (Contributed by
+     BJ, 26-Oct-2019.)  (Proof modification is discouraged.) $)
   bj-falor $p |- ( ph <-> ( F. \/ ph ) ) $=
     ( wfal fal biorfi ) BACD $.
 
-  $( Dual of ~ truan .  (Contributed by BJ, 26-Oct-2019.)
-     (Proof modification is discouraged.) $)
+  $( Dual of ~ truan .  (Contributed by BJ, 26-Oct-2019.)  Also provable as
+     ~ bicomi ( ~ bj-falor ), but only one of ~ bj-falor and ~ bj-falor2 should
+     be kept.  (Proof modification is discouraged.) $)
   bj-falor2 $p |- ( ( F. \/ ph ) <-> ph ) $=
-    ( wfal wo falim bj-jaoi1 olc impbii ) BACABAADEABFG $.
+    ( wfal wo fal biorfi bicomi ) ABACBADEF $.
 
-  $( A property of the biconditional.  (Contributed by BJ, 26-Oct-2019.)
-     (Proof modification is discouraged.) $)
+  $( A property of the biconditional.  (Contributed by BJ, 26-Oct-2019.) $)
   bj-bibibi $p |- ( ph <-> ( ps <-> ( ph <-> ps ) ) ) $=
-    ( wb pm5.501 bianir ex wn bibif con2bid biimprd bija impbii ) ABABCZCABDBMA
-    BMABAEFBGZAMGNMAABHIJKL $.
+    ( wb biid biass mpbi ) ABCZGCABGCCGDABGEF $.
 
   ${
     bj-imn3ani.1 $e |- -. ( ph /\ ps /\ ch ) $.
@@ -612446,29 +612461,32 @@ $)
      positions of the three formulas on each side of the biconditional.
      (Contributed by BJ, 6-Oct-2018.) $)
   bj-andnotim $p |- ( ( ( ph /\ -. ps ) -> ch ) <-> ( ( ph -> ps ) \/ ch ) ) $=
-    ( wn wa wi wo imor iman biimpri orim1i sylbi pm2.24 imim2i impd ax-1 impbii
-    jaoi ) ABDZEZCFZABFZCGZUATDZCGUCTCHUDUBCUBUDABIJKLUBUACUBASCBSCFABCMNOCTPRQ
-    $.
+    ( wn wa wi wo imor iman orbi1i bitr4i ) ABDEZCFLDZCGABFZCGLCHNMCABIJK $.
 
   ${
     bj-bi3ant.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    $( This used to be in the main part.  (Contributed by Wolf Lammen,
-       14-May-2013.)  (Revised by BJ, 14-Jun-2019.) $)
+    $( If two formulas jointly imply a third, and each of these two formulas is
+       implied by one direction of a biconditional, then the biconditional
+       implies the third.  (Contributed by Wolf Lammen, 14-May-2013.)  (Revised
+       by BJ, 14-Jun-2019.) $)
     bj-bi3ant $p |- ( ( ( th -> ta ) -> ph )
           -> ( ( ( ta -> th ) -> ps ) -> ( ( th <-> ta ) -> ch ) ) ) $=
       ( wi wb biimp imim1i biimpr imim3i syl2im ) DEGZAGDEHZAGEDGZBGOBGOCGONADE
       IJOPBDEKJABCOFLM $.
   $}
 
-  $( This used to be in the main part.  (Contributed by Wolf Lammen,
-     14-May-2013.)  (Revised by BJ, 14-Jun-2019.) $)
+  $( If each direction of a biconditional implies the corresponding direction
+     of another biconditional, then the first biconditional implies the second.
+     (Contributed by Wolf Lammen, 14-May-2013.)  (Revised by BJ,
+     14-Jun-2019.) $)
   bj-bisym $p |- ( ( ( ph -> ps ) -> ( ch -> th ) ) -> ( ( ( ps -> ph )
         -> ( th -> ch ) ) -> ( ( ph <-> ps ) -> ( ch <-> th ) ) ) ) $=
     ( wi wb impbi bj-bi3ant ) CDEDCECDFABCDGH $.
 
   $( Equivalence of two ternary operations.  Note the identical order and
-     parenthesizing of the three arguments in both expressions.  (Contributed
-     by BJ, 31-Dec-2023.) $)
+     parenthesizing of the three arguments in both expressions.  Also provable,
+     in the same number of steps, as ~ bitr4i ( ~ bibi2i ( ~ df-xor ), ~ bitri
+     ( ~ df-xor , ~ xor3 )).  (Contributed by BJ, 31-Dec-2023.) $)
   bj-bixor $p |- ( ( ph <-> ( ps \/_ ch ) ) <-> ( ph \/_ ( ps <-> ch ) ) ) $=
     ( wb wn wxo pm5.18 con2bii df-xor bibi2i 3bitr4i ) ABCDZEZDZALDZEABCFZDALFO
     NALGHPMABCIJALIK $.
@@ -612484,18 +612502,18 @@ $(
   ~ https://en.wikipedia.org/wiki/Modal_logic and
   ~ https://plato.stanford.edu/entries/logic-modal/ .
 
-  Monadic first-order logic (i.e., with quantification over only one variable)
-  is bi-interpretable with modal logic, by mapping ` A. x ` to "necessity"
-  (generally denoted by a box) and ` E. x ` to "possibility" (generally denoted
-  by a diamond).  Therefore, we use these quantifiers so as not to introduce
-  new symbols.  (To be strictly within modal logic, we should add disjoint
-  variable conditions between ` x ` and any other metavariables appearing in
-  the statements.)
+  The one-variable fragment of first-order logic is bi-interpretable with the
+  modal logic S5, by mapping ` A. x ` to "necessity" (generally denoted by a
+  box) and ` E. x ` to "possibility" (generally denoted by a diamond).
+  Therefore, we use these quantifiers so as not to introduce new symbols.
+  (To be strictly within modal logic, we should add disjoint variable
+  conditions between ` x ` and any other metavariables appearing in the
+  statements.)
 
   For instance, ~ ax-gen corresponds to the necessitation rule of modal logic,
   and ~ ax-4 corresponds to the distributivity axiom (K) of modal logic, also
-  called the Kripke scheme.  Modal logics satisfying these rule and axiom are
-  called "normal modal logics", of which the most important modal logics are.
+  called the Kripke scheme.  Modal logics with this rule and this axiom are
+  called normal, and the most important modal logics are normal.
 
   The minimal normal modal logic is also denoted by (K).
   Here are a few normal modal logics with their axiomatizations (on top of
@@ -612503,13 +612521,13 @@ $(
   (K) axiomatized by no supplementary axioms;
   (T) axiomatized by the axiom T;
   (K4) axiomatized by the axiom 4;
-  (S4) axiomatized by the axioms T,4;
-  (S5) axiomatized by the axioms T,5 or D,B,4;
+  (S4) axiomatized by the axioms T and 4;
+  (S5) axiomatized by the axioms T and 5, or D, B and 4;
   (GL) axiomatized by the axiom GL.
 
   The last one, called G&ouml;del&ndash;L&ouml;b logic or provability logic, is
   important because it describes exactly the properties of provability in Peano
-  arithmetic, as proved by Robert Solovay.  See for instance
+  arithmetic, as proved by Robert Solovay.  See, for instance,
   ~ https://plato.stanford.edu/entries/logic-provability/ .
   A basic result in this logic is ~ bj-gl4 .
 
@@ -612524,20 +612542,21 @@ $)
      (Contributed by BJ, 16-May-2019.)  (Proof modification is discouraged.)
      (New usage is discouraged.) $)
   bj-axdd2 $p |- ( E. x ph -> ( A. x ps -> E. x ps ) ) $=
-    ( wal wex wi ala1 exim syl com12 ) BCDZACEZBCEZKABFCDLMFBACGABCHIJ $.
+    ( wi wal wex exim ala1 syl11 ) ABDCEACFBCFBCEABCGBACHI $.
 
   $( This implication, proved using only ~ ax-gen on top of propositional
      calculus (hence holding, up to the standard interpretation, in any modal
-     logic), shows that the axiom scheme ` |- ( A. x ph -> E. x ph ) ` implies
-     the axiom scheme ` |- E. x T. ` (substitute ` T. ` for ` ph ` ).  These
-     correspond to the modal axiom (D), and in predicate calculus, they assert
-     that the universe of discourse is nonempty.  For the converse, see
-     ~ bj-axdd2 .  (Contributed by BJ, 16-May-2019.)  Generalize from its
-     instance with ` T. ` substituted for ` ph ` .  (Revised by BJ,
-     20-Mar-2022.)  (Proof modification is discouraged.)
-     (New usage is discouraged.) $)
+     logic with the necessitation rule), shows that the axiom scheme
+     ` |- ( A. x ph -> E. x ph ) ` implies the axiom scheme ` |- E. x T. `
+     (substitute ` T. ` for ` ph ` ).  These correspond to the modal axiom (D),
+     and in predicate calculus, they assert that the universe of discourse is
+     nonempty.  For the converse, see ~ bj-axdd2 .  (Contributed by BJ,
+     16-May-2019.)  Generalize from its instance with ` T. ` substituted for
+     ` ph ` .  (Revised by BJ, 20-Mar-2022.)
+     (Proof modification is discouraged.)  (New usage is discouraged.) $)
   bj-axd2d $p |- ( ( A. x T. -> E. x ph ) -> E. x ph ) $=
-    ( wtru wal wex wi pm2.27 tru mpg ) CCBDZABEZFKFBJKGHI $.
+    ( wtru wal wex altru bj-poni ) CBDABEBFG $.
+  $( $j usage 'bj-axd2d' avoids 'ax-4'; $)
 
   $( This implication, proved from propositional calculus only (hence holding,
      up to the standard interpretation, in any modal logic), shows that the
@@ -612549,9 +612568,10 @@ $)
                            ( ( A. x ph -> ph ) -> ( A. x ph -> E. x ph ) ) ) $=
     ( wn wal wi wex con2 df-ex imbitrrdi imim2d ) ACZBDZKEZAABFZABDMALCNLAGABHI
     J $.
+  $( $j usage 'bj-axtd' avoids 'ax-gen' 'ax-4'; $)
 
   $( In a normal modal logic, the modal axiom GL implies the modal axiom (4).
-     Translated to first-order logic, Axiom GL reads
+     Translated to first-order logic, the modal axiom GL reads
      ` |- ( A. x ( A. x ph -> ph ) -> A. x ph ) ` .  The antecedent of ~ bj-gl4
      is an instance of the axiom GL, with ` ph ` replaced by
      ` ( A. x ph /\ ph ) ` , which is a modality sometimes called the "strong
@@ -612559,9 +612579,8 @@ $)
      (Proof modification is discouraged.)  (New usage is discouraged.) $)
   bj-gl4 $p |- ( ( A. x ( A. x ( A. x ph /\ ph ) -> ( A. x ph /\ ph ) ) ->
                    A. x ( A. x ph /\ ph ) ) -> ( A. x ph -> A. x A. x ph ) ) $=
-    ( wal wa wi 19.26 simpr a1i anc2ri biimtrid alimi biimpi imim12i simpl syl6
-    ) ABCZADZBCZQEZBCZREPPBCZPDZUAPTRUBASBRUBAQPABFZAUBPUBPEAUAPGHIJKRUBUCLMUAP
-    NO $.
+    ( wal wa wi simpr alimi a1i anc2ri simpl imim12i ) ABCZLADZBCZMEZBCNLBCAOBA
+    NLNLEAMABLAFGHIGMLBLAJGK $.
 
   $( Over minimal calculus, the modal axiom (4) ( ~ hba1 ) and the modal axiom
      (K) ( ~ ax-4 ) together imply ~ axc4 .  (Contributed by BJ, 29-Nov-2020.)
@@ -612570,6 +612589,7 @@ $)
                 ( ( A. x ( A. x ph -> ps ) -> ( A. x A. x ph -> A. x ps ) ) ->
                     ( A. x ( A. x ph -> ps ) -> ( A. x ph -> A. x ps ) ) ) ) $=
     ( wal wi bj-imim21 ) ACDZGCDGBECDBCDF $.
+  $( $j usage 'bj-axc4' avoids 'ax-3' 'ax-gen' 'ax-4'; $)
 
 
 $(
@@ -612591,15 +612611,16 @@ $(
 
   Beware that "provability logic" often means (K) augmented with the
   G&ouml;del&ndash;L&ouml;b axiom GL, which we do not assume here (at least for
-  the moment).  See for instance
+  the moment).  See, for instance,
   ~ https://plato.stanford.edu/entries/logic-provability/ .
 
   Provability logic is worth studying because whenever T is a first-order
-  theory containing Robinson arithmetic (a fragment of Peano arithmetic), one
-  can prove (using G&ouml;del numbering, and in the much weaker primitive
-  recursive arithmetic) that there exists in T a provability predicate ` Prv `
-  satisfying the above three axioms.  (We do not construct this predicate in
-  this section; this is still a project.)
+  theory containing I&Sigma;1 (a fragment of Peano arithmetic containing
+  Robinson arithmetic), one can prove (using G&ouml;del numbering, and in the
+  much weaker primitive recursive arithmetic) that there exists in T a
+  provability predicate ` Prv ` satisfying the above three axioms (if T only
+  contains Robinson arithmetic, the first axiom still holds).  (We do not
+  construct this predicate in this section; this is still a project.)
 
   The main theorems of this section are the "easy parts" of the proofs of
   G&ouml;del's second incompleteness theorem ( ~ bj-babygodel ) and L&ouml;b's
@@ -612618,17 +612639,17 @@ $)
 
   ${
     ax-prv1.1 $e |- ph $.
-    $( First property of three of the provability predicate.  (Contributed by
-       BJ, 3-Apr-2019.) $)
+    $( First of the three properties of the provability predicate.
+       (Contributed by BJ, 3-Apr-2019.) $)
     ax-prv1 $a |- Prv ph $.
   $}
 
-  $( Second property of three of the provability predicate.  (Contributed by
-     BJ, 3-Apr-2019.) $)
+  $( Second of the three properties of the provability predicate.  (Contributed
+     by BJ, 3-Apr-2019.) $)
   ax-prv2 $a |- ( Prv ( ph -> ps ) -> ( Prv ph -> Prv ps ) ) $.
 
-  $( Third property of three of the provability predicate.  (Contributed by BJ,
-     3-Apr-2019.) $)
+  $( Third of the three properties of the provability predicate.  (Contributed
+     by BJ, 3-Apr-2019.) $)
   ax-prv3 $a |- ( Prv ph -> Prv Prv ph ) $.
 
   ${
@@ -612657,14 +612678,14 @@ $)
        this fact in T).  The wff ` ph ` is a formal version of the sentence
        "This sentence is not provable".  The hard part of the proof of
        G&ouml;del's theorem is to construct such a ` ph ` , called a
-       "G&ouml;del&ndash;Rosser sentence", for a first-order theory T which is
-       effectively axiomatizable and contains Robinson arithmetic, through
-       G&ouml;del diagonalization (this can be done in primitive recursive
-       arithmetic).  The second hypothesis means that ` F. ` is not provable in
-       T, that is, that the theory T is consistent (and having this second
-       hypothesis means that we can prove in T that the theory T is
-       consistent).  The conclusion is the falsity, so having the conclusion
-       means that T can prove the falsity, that is, T is inconsistent.
+       "G&ouml;del sentence", for a first-order theory T which is effectively
+       axiomatizable and contains Robinson arithmetic, through G&ouml;del
+       diagonalization (this can be done in primitive recursive arithmetic).
+       The second hypothesis means that ` F. ` is not provable in T, that is,
+       that the theory T is consistent (and having this second hypothesis means
+       that we can prove in T that the theory T is consistent).  The conclusion
+       is the falsity, so having the conclusion means that T can prove the
+       falsity, that is, T is inconsistent.
 
        Therefore, taking the contrapositive, this theorem expresses that if a
        first-order theory is consistent (and one can prove in it that some
@@ -612673,10 +612694,17 @@ $)
 
        This proof is due to George Boolos, _G&ouml;del's Second Incompleteness
        Theorem Explained in Words of One Syllable_, Mind, New Series, Vol. 103,
-       No. 409 (January 1994), pp. 1--3.
-
+       No. 409 (January 1994), pp. 1--3.  (The precise original proof appears
+       in ~ bj-babygodelALT ; it has been slightly shortened here.)
        (Contributed by BJ, 3-Apr-2019.) $)
     bj-babygodel $p |- F. $=
+      ( cprvb wfal biimpi prvlem1 ax-prv3 pm2.21 prvlem2 sylc mto mpbir ax-prv1
+      wn pm2.24ii ) ADZEAAQOZQEDZCQRDQDSARARBFGAHRQEQEIJKLZBMNTP $.
+
+    $( Alternate proof of ~ bj-babygodel , original proof in Boolos's article
+       cited in its comment.  (Contributed by BJ, 3-Apr-2019.)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
+    bj-babygodelALT $p |- F. $=
       ( wfal cprvb wn ax-prv1 biimpi prvlem1 ax-prv3 pm2.21 prvlem2 sylc sylibr
       con3i mp2b pm2.24ii ) DEZDRFZEAEZRSCGSASTFZATRTUAETERAUAAUABHIAJUATDTDKLM
       ZOBNIUBPCQ $.
@@ -612698,7 +612726,7 @@ $)
        predicate and a L&ouml;b sentence, given here as the first hypothesis),
        then the theory actually proves that sentence.
 
-       See for instance, Eliezer Yudkowsky, _The Cartoon Guide to L&ouml;b's
+       See, for instance, Eliezer Yudkowsky, _The Cartoon Guide to L&ouml;b's
        Theorem_ (available at ~ http://yudkowsky.net/rational/lobs-theorem/ ).
 
        (Contributed by BJ, 20-Apr-2019.) $)
@@ -612710,8 +612738,8 @@ $)
   ${
     bj-godellob.s $e |- ( ph <-> -. Prv ph ) $.
     bj-godellob.1 $e |- -. Prv F. $.
-    $( Proof of G&ouml;del's theorem from L&ouml;b's theorem (see comments at
-       ~ bj-babygodel and ~ bj-babylob for details).  (Contributed by BJ,
+    $( Proof of G&ouml;del's theorem from L&ouml;b's theorem (see the comments
+       of ~ bj-babygodel and ~ bj-babylob for details).  (Contributed by BJ,
        20-Apr-2019.)  (Proof modification is discouraged.)
        (New usage is discouraged.) $)
     bj-godellob $p |- F. $=
@@ -612740,7 +612768,9 @@ $(
 $)
 
   $( A lemma for changing bound variables.  Only the forward implication is
-     intuitionistic.  (Contributed by BJ, 14-Mar-2026.) $)
+     intuitionistic.  Also provable, in the same number of steps, as ~ bitr4i
+     ( ~ imbi12i ( ~ df-ex , ~ df-ex ), ~ con34b ).  (Contributed by BJ,
+     14-Mar-2026.) $)
   bj-exexalal $p |-
                  ( ( E. x ph -> E. y ps ) <-> ( A. y -. ps -> A. x -. ph ) ) $=
     ( wex wi wn wal con34b alnex imbi12i bitr4i ) ACEZBDEZFNGZMGZFBGDHZAGCHZFMN
@@ -612777,9 +612807,9 @@ $)
     $( From a closed form theorem (the major premise) with an antecedent in the
        "strong necessity" modality (in the language of modal logic), deduce the
        associated inference.  Strong necessity is stronger than necessity, and
-       equivalent to it when ~ sp (modal T) is available.  Therefore, this
-       theorem is stronger than ~ mpg , and strictly stronger when ~ sp is not
-       available.  (Contributed by BJ, 1-Nov-2023.) $)
+       equivalent to it when ~ sp (modal T) is available, so the major premise
+       is weaker than that of ~ mpg .  Also provable as ~ mpg ( ~ mpan ).
+       (Contributed by BJ, 1-Nov-2023.) $)
     bj-mpgs $p |- ps $=
       ( wal ax-gen mp2an ) AACFBEACEGDH $.
   $}
@@ -612789,6 +612819,9 @@ $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
   Adding ax-4
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+
+  The first few proofs in this section do not depend on ~ ax-gen .
+
 $)
 
 $( *** ax-gen not required *** $)
@@ -612813,8 +612846,8 @@ $( *** ax-gen not required *** $)
      nonfreeness of ` x ` in ` ph ` , so the theorem means that under a
      nonfreeness condition in an antecedent, one can deduce from the
      universally quantified implication an implication where the consequent is
-     universally quantified.  Dual of ~ bj-exlimg .  (Contributed by BJ,
-     9-Dec-2023.) $)
+     universally quantified.  It is ~ sylgt with antecedents swapped.  Dual of
+     ~ bj-exlimg .  (Contributed by BJ, 9-Dec-2023.) $)
   bj-alrimg $p |-
          ( ( ph -> A. x ps ) -> ( A. x ( ps -> ch ) -> ( ph -> A. x ch ) ) ) $=
     ( wi wal sylgt com12 ) BCEDFABDFEACDFEABCDGH $.
@@ -612843,9 +612876,9 @@ $( *** ax-gen required *** $)
     bj-alimii.maj $e |- ( ps -> ph ) $.
     bj-alimii.min $e |- A. x ps $.
     $( Inference associated with ~ alimi .  Double inference associated with
-       ~ alim .  The usual proof of an associated inference (here from ~ alimi
-       and ~ ax-mp ) has the same size and same number of steps.  (Contributed
-       by BJ, 19-Mar-2026.) $)
+       ~ alim .  The usual proof of an associated inference (that is, as
+       ~ ax-mp ( ~ alimi )) has the same size and the same number of essential
+       steps, but two more steps.  (Contributed by BJ, 19-Mar-2026.) $)
     bj-alimii $p |- A. x ph $=
       ( wi ax-gen bj-almp ) ABCBAFCDGEH $.
   $}
@@ -612855,7 +612888,7 @@ $( *** ax-gen required *** $)
     $( Add an antecedent in a universally quantified formula.  Inference
        associated with ~ ala1 .  (Contributed by BJ, 6-Oct-2018.) $)
     bj-ala1i $p |- A. x ( ps -> ph ) $=
-      ( wal wi ala1 ax-mp ) ACEBAFCEDABCGH $.
+      ( wi ax-1 bj-alimii ) BAEACABFDG $.
   $}
 
   ${
@@ -616195,7 +616228,7 @@ $)
        (Proof modification is discouraged.) $)
     bj-issetiv $p |- E. x x = A $=
       ( wcel cv wceq wex elissetv ax-mp ) BCEAFBGAHDABCIJ $.
-      $( $j usage 'bj-issetiv' avoids 'ax-9' 'ax-10' 'ax-11' 'ax-12' 'ax-13'
+    $( $j usage 'bj-issetiv' avoids 'ax-9' 'ax-10' 'ax-11' 'ax-12' 'ax-13'
        'ax-ext' 'df-clab' 'df-cleq' 'cvv'; $)
   $}
 
@@ -616211,7 +616244,7 @@ $)
        (Proof modification is discouraged.) $)
     bj-isseti $p |- E. x x = A $=
       ( wcel cv wceq wex elisset ax-mp ) BCEAFBGAHDABCIJ $.
-      $( $j usage 'bj-isseti' avoids 'ax-9' 'ax-10' 'ax-11' 'ax-12' 'ax-13'
+    $( $j usage 'bj-isseti' avoids 'ax-9' 'ax-10' 'ax-11' 'ax-12' 'ax-13'
        'ax-ext' 'df-cleq' 'cvv'; $)
   $}
 
@@ -616310,7 +616343,7 @@ $)
        ~ ceqsex4v , ~ ceqsex6v , ~ ceqsex8v , ~ gencbvex (after changing
        ` A = y ` to ` y = A ` ), ~ gencbvex2 , ~ gencbval , ~ vtoclgft (it uses
        ` F/_ ` , whose justification ~ nfcjust does not use ~ ax-ext ) and
-       several other vtocl* theorems (see for instance ~ bj-vtoclg1f ).  See
+       several other vtocl* theorems (see, for instance, ~ bj-vtoclg1f ).  See
        also ~ bj-ceqsaltv .  (Contributed by BJ, 16-Jun-2019.)
        (Proof modification is discouraged.) $)
     bj-ceqsalt $p |- ( ( F/ x ps /\ A. x ( x = A -> ( ph <-> ps ) ) /\ A e. V )
@@ -616573,8 +616606,10 @@ $)
   $( The class of sets verifying a tautology is the universal class.
      (Contributed by BJ, 24-Jul-2019.)  (Proof modification is discouraged.) $)
   bj-abv $p |- ( A. x ph -> { x | ph } = _V ) $=
-    ( wal cab wtru cvv wb wceq trud simpl impbida alimi abbi syl dfv2 eqtr4di
-    wa ) ABCZABDZEBDZFRAEGZBCSTHAUABAAEAAQIAEJKLAEBMNBOP $.
+    ( wal cab wtru cvv wb wceq tbtru albii abbi sylbi dfv2 eqtr4di ) ABCZABDZEB
+    DZFOAEGZBCPQHARBAIJAEBKLBMN $.
+  $( $j usage 'bj-abv' avoids 'ax-8' 'ax-10' 'ax-11' 'ax-12' 'ax-13'
+     'df-clel'; $)
 
   ${
     $d y x $.  $d y ph $.
@@ -616584,6 +616619,7 @@ $)
     bj-abvALT $p |- ( A. x ph -> { x | ph } = _V ) $=
       ( vy wal cv cab wcel cvv wceq ax-5 vexwt alrimih eqv sylibr ) ABDZCEABFZG
       ZCDPHIOQCOCJABCKLCPMN $.
+    $( $j usage 'bj-abvALT' avoids 'ax-10' 'ax-11' 'ax-12' 'ax-13'; $)
   $}
 
   ${
@@ -617234,7 +617270,7 @@ $(
   class.  The singletonization of a class is the class of singletons of
   elements of that class.  It is useful since all nonsingletons are disjoint
   from it, so one can easily adjoin to it disjoint elements, which is what the
-  tagging does: it adjoins the empty set.  This can be used for instance to
+  tagging does: it adjoins the empty set.  This can be used, for instance, to
   define the one-point compactification of a topological space.  It will be
   used in the next section to define tuples which work for proper classes.
 
@@ -617981,7 +618017,7 @@ $)
     bj-prexg $p |- ( ( A e. V /\ B e. W ) -> { A , B } e. _V ) $=
       ( wcel wa cpr csn cun cvv df-pr bj-snexg bj-unexg syl2an eqeltrid ) ACEZB
       DEZFABGAHZBHZIZJABKPRJESJETJEQACLBDLRSJJMNO $.
-      $( $j usage 'bj-prexg' avoids 'ax-sep' 'ax-nul' 'ax-pr' 'ax-pow'; $)
+    $( $j usage 'bj-prexg' avoids 'ax-sep' 'ax-nul' 'ax-pr' 'ax-pow'; $)
   $}
 
   ${
@@ -617991,7 +618027,7 @@ $)
     bj-prex $p |- { A , B } e. _V $=
       ( cpr csn cun cvv df-pr wcel bj-snex bj-unexg mp2an eqeltri ) ABCADZBDZEZ
       FABGMFHNFHOFHAIBIMNFFJKL $.
-      $( $j usage 'bj-prex' avoids 'ax-sep' 'ax-pr' 'ax-pow'; $)
+    $( $j usage 'bj-prex' avoids 'ax-sep' 'ax-pr' 'ax-pow'; $)
   $}
 
   ${
@@ -619434,10 +619470,10 @@ $)
   ${
     $d A x y $.  $d V x $.  $d W x $.  $d Y x y $.
     $( The elementwise intersection on a powerset is the powerset of the
-       intersection.  This allows to prove for instance that the topology
-       induced on a subset by the discrete topology is the discrete topology on
-       that subset.  See also ~ restdis (which uses ~ distop and ~ restopn2 ).
-       (Contributed by BJ, 27-Apr-2021.) $)
+       intersection.  This makes it possible to prove, for instance, that the
+       topology induced on a subset by the discrete topology is the discrete
+       topology on that subset.  See also ~ restdis (which uses ~ distop and
+       ~ restopn2 ).  (Contributed by BJ, 27-Apr-2021.) $)
     bj-restpw $p |-
                  ( ( Y e. V /\ A e. W ) -> ( ~P Y |`t A ) = ~P ( Y i^i A ) ) $=
       ( vx vy wcel wa cpw cin wceq cvv wex wss velpw sstr2 inss1 sseq1 mpbiri
@@ -620294,7 +620330,7 @@ $)
 
        Remark: in deduction-style proofs, one could save a few syntactic steps
        by using another antecedent than ` T. ` which already appears in the
-       proof.  Here for instance this could be the definition
+       proof.  Here, for instance, this could be the definition
        ` _I = { <. x , y >. | x = y } ` but this would make the proof less easy
        to read.  (Contributed by BJ, 27-Dec-2023.) $)
     bj-opelidb $p |-
@@ -626327,7 +626363,7 @@ $)
     wl-dfcleq.basic $p |- ( A = B <-> A. x ( x e. A <-> x e. B ) ) $=
       ( vy vz vv vu vt axextb wl-df.cleq ) ADEFGHBCDEGIHHFIJ $.
     $( $j usage 'wl-dfcleq.basic' avoids 'ax-8' 'ax-10' 'ax-11' 'ax-12'
-      'ax-13' 'df-clab' 'df-clel'; $)
+       'ax-13' 'df-clab' 'df-clel'; $)
   $}
 
   ${
@@ -626868,7 +626904,7 @@ $)
     wl-equsalvw $p |- ( A. x ( x = y -> ph ) <-> ps ) $=
       ( weq wi wal wex 19.23v pm5.74i albii ax6ev a1bi 3bitr4i ) CDFZBGZCHPCIZB
       GPAGZCHBPBCJSQCPABEKLRBCDMNO $.
-    $( $j usage 'equsalvw' avoids 'ax-7' 'ax-12' 'ax-13'; $)
+    $( $j usage 'wl-equsalvw' avoids 'ax-7' 'ax-12' 'ax-13'; $)
   $}
 
   ${
@@ -626976,7 +627012,7 @@ $)
     wl-sb9v $p |- ( A. x [ x / y ] ph <-> A. y [ y / x ] ph ) $=
       ( weq wi wal wsb alcom sb6 equcom imbi1i albii bitri 3bitr4i ) BCDZAEZCFZ
       BFPBFZCFACBGZBFABCGZCFPBCHSQBSCBDZAEZCFQACBIUBPCUAOACBJKLMLTRCABCILN $.
-      $( $j usage 'wl-sb9v' avoids 'ax-10' 'ax-13'; $)
+    $( $j usage 'wl-sb9v' avoids 'ax-10' 'ax-13'; $)
 
     $( Substitution of variable in universal quantifier.  Closed form of
        ~ sb8f .  (Contributed by Wolf Lammen, 27-Apr-2025.) $)
@@ -660626,7 +660662,7 @@ $)
     isatlat.l $e |- .<_ = ( le ` K ) $.
     isatlat.z $e |- .0. = ( 0. ` K ) $.
     isatlat.a $e |- A = ( Atoms ` K ) $.
-    $( The predicate "is an atomic lattice."  Every nonzero element is less
+    $( The predicate "is an atomic lattice".  Every nonzero element is less
        than or equal to an atom.  (Contributed by NM, 18-Sep-2011.)  (Revised
        by NM, 14-Sep-2018.) $)
     isatl $p |- ( K e. AtLat <-> ( K e. Lat /\ B e. dom G
@@ -700482,7 +700518,7 @@ $)
 
       $d h K $.  $d h T $.  $d h W $.
       dihglbb.o $e |- O = ( h e. T |-> ( _I |` B ) ) $.
-      $( Isomorphism H of a lattice glb when the glb is  under the
+      $( Isomorphism H of a lattice glb when the glb is under the
          fiduial hyperplane ` W ` . $)
 $(
       dihglbb $p |- ( ( ( K e. HL /\ W e. H ) /\ ( S C_ B /\ S =/= (/) )
@@ -732982,7 +733018,7 @@ $)
     ( vx com cvv wcel cc0 cuz cfv fvex cv c1 caddc co cmpt crdg cres wf1o wb 0z
     eqid om2uzf1oi f1ovv ax-mp mpbir ) BCDZEFGZCDZEFHBUEACAIJKLMENBOZPUDUFQAEUG
     RUGSTBUEUGUAUBUC $.
-    $( $j usage 'omexcn' avoids 'ax-inf' 'ax-inf2'; $)
+  $( $j usage 'omexcn' avoids 'ax-inf' 'ax-inf2'; $)
 
 $( (End of Timothy J. O'Malley's mathbox.) $)
 $( End $[ set-mbox-tjo.mm $] $)
@@ -773622,7 +773658,7 @@ $)
   trwf $p |- Tr U. ( R1 " On ) $=
     ( vx cr1 con0 cima cuni wtr cv wss wral r1elssi rgen dftr3 mpbir ) BCDEZFAG
     ZNHZANIPANOJKANLM $.
-    $( $j usage 'trwf' avoids 'ax-reg'; $)
+  $( $j usage 'trwf' avoids 'ax-reg'; $)
 
   ${
     $d x y $.
@@ -773633,7 +773669,7 @@ $)
       wcel rankelb epel fvex epeli 3imtr4g rgen rgenw df-relp mpbir2an ) CDEFZD
       GGHIUHDHJAKZBKZGLZUIHMZUJHMZGLZNZBUHOZAUHOPUPAUHUOBUHUJUHRABQULUMRUKUNUIU
       JSBUITULUMUJHUAUBUCUDUEABUHDGGHUFUG $.
-   $( $j usage 'rankrelp' avoids 'ax-reg'; $)
+    $( $j usage 'rankrelp' avoids 'ax-reg'; $)
   $}
 
   $( The class of well-founded sets is well-founded.  Lemma I.9.24(2) of
@@ -817236,7 +817272,7 @@ $)
       UDUUFUXJRCUUFYMAUUFCRYNYOWGYPWNUXMUTYQUXKUUMUXMDUWBUUJAUUMUXMQUXJUUJUUMER
       UUHUGZUXMUUJERUUEUUHUUIERYRUUIERYSYTUXOUXMQUUJERBUUGUUAVNUUBYGDUWBQUXKJVN
       YDUUCWPWQWR $.
-      $( $j usage 'subsaliuncl' avoids 'ax-ac' 'ax-ac2'; $)
+    $( $j usage 'subsaliuncl' avoids 'ax-ac' 'ax-ac2'; $)
   $}
 
   ${
@@ -830012,7 +830048,7 @@ $)
       QUXOUGUXHUXJUXRUXOUXJUXRVTUXIUXHUKUXDUVSUXIUXFYQWFUUCUXSUXQVTUXOUGHUXHUXR
       UXPUXIUVQUVSUXFUUDUUEVNUUHWFUUFUUGUVBUHUIZUVAUKUXTUURUJZUXTUKZAUUTUYBUCUX
       TUVAUUQUXTVTZUUSUYAUUQUXTUUQUXTUURUUIUYCUUJUUKUULUUMUUNUUOUUPYF $.
-      $( $j usage 'smflimlem6' avoids 'ax-ac' 'ax-ac2'; $)
+    $( $j usage 'smflimlem6' avoids 'ax-ac' 'ax-ac2'; $)
   $}
 
   ${

@@ -19816,7 +19816,7 @@ $)
       ( vz weq cv wcel wa wex equequ2 anbi1d exbidv df-clel 3bitr4g ) ABEZDAEZD
       FCGZHZDIDBEZQHZDIAFZCGBFZCGORTDOPSQABDJKLDUACMDUBCMN $.
     $( $j usage 'eleq1w' avoids 'ax-io' 'ax-10' 'ax-i12' 'ax-bndl'
-      'ax-ext' 'df-cleq'; $)
+       'ax-ext' 'df-cleq'; $)
 
     $( Weaker version of ~ eleq2 (but more general than ~ elequ2 ) not
        depending on ~ ax-ext nor ~ df-cleq .  (Contributed by BJ,
@@ -24060,7 +24060,7 @@ $)
     cbvrexvw $p |- ( E. x e. A ph <-> E. y e. A ps ) $=
       ( cv wcel wa wex wrex weq eleq1w anbi12d cbvexvw df-rex 3bitr4i ) CGEHZAI
       ZCJDGEHZBIZDJACEKBDEKSUACDCDLRTABCDEMFNOACEPBDEPQ $.
-    $( $j usage 'cbvralvw' avoids 'ax-io' 'ax-7' 'ax-10' 'ax-11' 'ax-i12'
+    $( $j usage 'cbvrexvw' avoids 'ax-io' 'ax-7' 'ax-10' 'ax-11' 'ax-i12'
        'ax-bndl' 'ax-i5r' 'ax-ext'; $)
 
     $d x y z A $.  $d ph z $.  $d ps z $.
@@ -24072,7 +24072,7 @@ $)
       anbi12d equequ1 bibi12d cbvalvw exbii ) DHEIZBJZDKZCHEIZAJZCKZBDELACELUJC
       GMZNZCOZGPUGDGMZNZDOZGPUKUHUNUQGUMUPCDCDMZUJUGULUOURUIUFABCDEQFUACDGUBUCU
       DUEUJCGRUGDGRSBDETACETS $.
-    $( $j usage 'cbvralvw' avoids 'ax-io' 'ax-7' 'ax-10' 'ax-11' 'ax-i12'
+    $( $j usage 'cbvreuvw' avoids 'ax-io' 'ax-7' 'ax-10' 'ax-11' 'ax-i12'
        'ax-bndl' 'ax-i5r' 'ax-ext'; $)
   $}
 
@@ -219652,7 +219652,7 @@ $)
      (Contributed by BJ, 18-Nov-2019.)  (Proof modification is discouraged.) $)
   bj-peano2 $p |- ( A e. _om -> suc A e. _om ) $=
     ( com wind wcel csuc wi bj-omind bj-indsuc ax-mp ) BCABDAEBDFGBAHI $.
-    $( $j usage 'bj-peano2' avoids 'ax-sep' 'ax-pow' 'ax-setind' 'ax-iinf'; $)
+  $( $j usage 'bj-peano2' avoids 'ax-sep' 'ax-pow' 'ax-setind' 'ax-iinf'; $)
 
   ${
     $d x A $.
