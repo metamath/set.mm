@@ -596418,9 +596418,9 @@ $)
     $d j s x y z $.
     $( Define the sigma-zero pointclasses of a topology ` j ` .  For
        ` u = 1o ` , the pointclass ` ( ( Sgm0 `` j ) `` u ) ` is the class of
-       open sets of ` j ` , while for ` u ` greater than ` 1o ` , it is
-       defined recursively as the class of countable unions of complements of
-       sets in any prior pointclasses.  See paragraph 2 of [Kechris] p. xv.
+       open sets of ` j ` , while for ` u ` greater than ` 1o ` , it is defined
+       recursively as the class of countable unions of complements of sets in
+       any prior pointclasses.  See paragraph 2 of [Kechris] p. xv.
 
        The sigma-zero pointclasses constitute one half of the Borel hierarchy
        over ` j ` , the other half being given by ` ( Pi0 `` j ) ` ; see
