@@ -883775,22 +883775,6 @@ $)
   $}
 
   ${
-    prmmodmulcand.1 $e |- ( ph -> P e. Prime ) $.
-    prmmodmulcand.2 $e |- ( ph -> A e. ZZ ) $.
-    prmmodmulcand.3 $e |- ( ph -> B e. ZZ ) $.
-    prmmodmulcand.4 $e |- ( ph -> Z e. ZZ ) $.
-    prmmodmulcand.5 $e |- ( ph -> -. P || Z ) $.
-    prmmodmulcand.6 $e |- ( ph ->
-      ( ( A x. Z ) mod P ) = ( ( B x. Z ) mod P ) ) $.
-    $( Multiplication by a nonzero residue can be canceled modulo a prime.
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    prmmodmulcand $p |- ( ph -> ( A mod P ) = ( B mod P ) ) $=
-      ( cmul co cmo wceq cz wcel cprime cdvds wbr wn cncongrprm syl32anc mpbid
-      wb ) ABELMDNMCELMDNMOZBDNMCDNMOZKABPQCPQEPQDRQDESTUAUFUGUEGHIFJBCEDUBUCUD
-      $.
-  $}
-
-  ${
     modprminvmuld.1 $e |- R = ( ( A ^ ( P - 2 ) ) mod P ) $.
     modprminvmuld.2 $e |- ( ph -> P e. Prime ) $.
     modprminvmuld.3 $e |- ( ph -> A e. ZZ ) $.
@@ -883967,27 +883951,6 @@ $)
       QZBDWKABVENWLWOXJVFADVGNWLWOXHVFXLWKAWLWOVHVIAWMSNZVJWLWOADBVKPZXMABDGHIJ
       VLADSNDVMVNBSNXNXMVOADHVIADHVPABXGVIDBVQWDVRVFXKWOVSVTWAWBAWQVDWCWEWEWF
       $.
-  $}
-
-  ${
-    $d N d k $.  $d P d k $.  $d Z d k $.  $d d k ph $.
-    modbndd.1 $e |- ( ph -> P e. Prime ) $.
-    modbndd.2 $e |- ( ph -> N e. NN ) $.
-    modbndd.3 $e |- ( ph -> 1 < N ) $.
-    modbndd.4 $e |- ( ph -> N < P ) $.
-    modbndd.5 $e |- ( ph -> Z e. ( 1 ..^ P ) ) $.
-    $( For a nonzero canonical residue ` Z ` modulo a prime ` P ` and a
-       positive integer ` N ` with ` 1 < N ` and ` N < P ` , there are nonzero
-       integers ` k ` and ` d ` such that ` ( k x. Z ) ` is congruent to ` d `
-       modulo ` P ` , ` ( abs `` k ) < N ` , and
-       ` ( N x. ( abs `` d ) ) < P ` .  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    modbndd $p |- ( ph -> E. k e. ZZ E. d e. ZZ
-      ( ( ( abs ` k ) e. NN /\ ( abs ` k ) < N ) /\
-        ( ( abs ` d ) e. NN /\ ( N x. ( abs ` d ) ) < P ) /\
-        ( ( k x. Z ) mod P ) = ( d mod P ) ) ) $=
-      ( c1 cfzo co wcel cz elfzoelz syl fzo1ndvdsd modbndzd ) ABCDEFGHIJAELBMNO
-      EPOKELBQRAEBKST $.
   $}
 
   ${
