@@ -596416,15 +596416,15 @@ $)
 
   ${
     $d j s x y z $.
-    $( Define the sigma-zero pointclasses of a Polish topology ` j ` .  For
+    $( Define the sigma-zero pointclasses of a topology ` j ` .  For
        ` u = 1o ` , the pointclass ` ( ( Sgm0 `` j ) `` u ) ` is the class of
-       open sets of ` j ` , while for ` u ` greater than ` 1o ` , it is defined
-       recursively as the class of countable unions of complements of sets in
-       any prior pointclasses.  See paragraph 2 of [Kechris] p. xv.
+       open sets of ` j ` , while for ` u ` greater than ` 1o ` , it is
+       defined recursively as the class of countable unions of complements of
+       sets in any prior pointclasses.  See paragraph 2 of [Kechris] p. xv.
 
        The sigma-zero pointclasses constitute one half of the Borel hierarchy
        over ` j ` , the other half being given by ` ( Pi0 `` j ) ` ; see
-       ~ df-pi0 .
+       ~ df-pi0 .  This construction is most useful when ` j ` is metrizable.
 
        Note that the Borel pointclasses are traditionally defined over the
        positive ordinal numbers, beginning with ` 1o e. On ` .  For simplicity,
@@ -596432,9 +596432,9 @@ $)
        ` ( ( Sgm0 `` j ) `` (/) ) = j ` (which does not alter the outcome of
        the rest of the construction).  (Contributed by Adrian Ducourtial,
        17-Nov-2026.) $)
-    df-sgm0 $a |- Sgm0 = ( j e. PolTop |-> recs ( ( s e. _V |-> if ( dom s C_
-               1o , j , { x | E. y e. ~P U. ran s ( z ~<_ _om /\ x = U_ z e. y
-               ( U. j \ z ) ) } ) ) ) ) $.
+    df-sgm0 $a |- Sgm0 = ( j e. Top |-> recs ( ( s e. _V |-> if ( dom s C_ 1o ,
+               j , { x | E. y e. ~P U. ran s ( z ~<_ _om /\ x = U_ z e. y ( U.
+               j \ z ) ) } ) ) ) ) $.
   $}
 
   $c Pi0 $.  $( Constant for the hierarchy of pi-zero pointclasses $)
@@ -596444,14 +596444,14 @@ $)
 
   ${
     $d j x y $.
-    $( Define the pi-zero pointclasses of a Polish topology ` j ` .  For
-       ordinal ` u ` , the pointsets in ` ( ( Pi0 `` j ) `` u ) ` are precisely
-       the complements (relative to ` j ` ) of the pointsets in
+    $( Define the pi-zero pointclasses of a topology ` j ` .  For ordinal
+       ` u ` , the pointsets in ` ( ( Pi0 `` j ) `` u ) ` are precisely the
+       complements (relative to ` j ` ) of the pointsets in
        ` ( ( Sgm0 `` j ) `` u ) ` .  See paragraph 2 of [Kechris] p. xv.
 
        The pi-zero pointclasses constitute one half of the Borel hierarchy over
        ` j ` , the other half being given by ` ( Sgm0 `` j ) ` ; see
-       ~ df-sgm0 .
+       ~ df-sgm0 .  This construction is most useful when ` j ` is metrizable.
 
        Note that the Borel pointclasses are traditionally defined over the
        positive ordinal numbers, beginning with ` 1o e. On ` .  For simplicity,
