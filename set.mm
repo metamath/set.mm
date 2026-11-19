@@ -882721,17 +882721,22 @@ $)
   $}
 
   ${
-    ltmul23trd.1 $e |- ( ph -> ( A e. RR /\ 0 <_ A ) ) $.
-    ltmul23trd.2 $e |- ( ph -> B e. RR ) $.
-    ltmul23trd.3 $e |- ( ph -> ( 3 x. A ) < B ) $.
-    $( An upper bound on the triple of a nonnegative real also bounds its
-       double.  The hypothesis ` B e. RR ` is retained to avoid ~ ax-cnex .
+    ltmultrd.1 $e |- ( ph -> ( A e. RR /\ 0 <_ A ) ) $.
+    ltmultrd.2 $e |- ( ph -> B e. RR ) $.
+    ltmultrd.3 $e |- ( ph -> ( D x. A ) < B ) $.
+    ltmultrd.4 $e |- C e. RR $.
+    ltmultrd.5 $e |- D e. RR $.
+    ltmultrd.6 $e |- C <_ D $.
+    $( An upper bound on a multiple of a nonnegative real also bounds the
+       multiple by any smaller or equal real coefficient.  The closed
+       coefficient hypotheses accept real-membership and comparison facts
+       directly.  The hypothesis ` B e. RR ` is retained to avoid ~ ax-cnex .
        (Contributed by Zhi Wang, 18-Nov-2026.) $)
-    ltmul23trd $p |- ( ph -> ( 2 x. A ) < B ) $=
-      ( c2 cmul co c3 cr wcel 2re a1i cc0 cle wbr simpld remulcld 3re clt ltled
-      simprd 2lt3 lemul1ad lelttrd ) AGBHIJBHICAGBGKLAMNZABKLZOBPQZDRZSAJBJKLAT
-      NZUJSEAGJBUGUKUJAUHUIDUCAGJUGUKGJUAQAUDNUBUEFUF $.
-    $( $j usage 'ltmul23trd' avoids 'ax-cnex'; $)
+    ltmultrd $p |- ( ph -> ( C x. A ) < B ) $=
+      ( cmul co cr wcel a1i cc0 cle wbr remulcld simpld simprd lemul1ad lelttrd
+      ) ADBLMEBLMCADBDNOAIPZABNOZQBRSZFUAZTAEBENOAJPZUHTGADEBUEUIUHAUFUGFUBDERS
+      AKPUCHUD $.
+    $( $j usage 'ltmultrd' avoids 'ax-cnex'; $)
   $}
 
   ${
@@ -887587,13 +887592,13 @@ $)
     liou2midrefld $p |- ( ph ->
       ( lam ` ( P - ( 2 x. N ) ) ) = ( lam ` ( P - ( 3 x. N ) ) ) ) $=
       ( c2 cmul co cmin cliou cfv c3 cn wcel wceq nnmulcld nnrpd rprege0d nnred
-      cc 2nn a1i ltmul23trd nnsubd liounncn syl 3nn nncnd sub32reflmul2d fveq2d
-      cneg clt wbr sub2bndd simpld simprd liou2refl3d nnq liou2mul 3syl 3eqtr3d
-      cq neg11d ) ABKCLMZNMZOPZBQCLMZNMZOPZAVJRSVKUESAVIBAKCKRSAUFUGGUAFACBACAC
-      GUBUCABFUDZIUHUIZVJUJUKAVMRSZVNUESAVLBAQCQRSAULUGGUAFIUIZVMUJUKAQVJLMZBNM
-      ZOPZKVMLMZOPZVKUPZVNUPZAVTWBOABCABFUMACGUMUNUOABKVJLMZNMOPVKTWAWDTABVJDEF
-      VPAWFBUQURZBVSUQURZABCVOACGUDHIUSZUTAWGWHWIVAJVBVAAVQVMVGSWCWETVRVMVCVMVD
-      VEVFVH $.
+      2nn a1i 2re 3re 2le3 ltmultrd nnsubd liounncn syl 3nn cneg sub32reflmul2d
+      nncnd fveq2d clt wbr sub2bndd simpld simprd liou2refl3d nnq liou2mul 3syl
+      cc cq 3eqtr3d neg11d ) ABKCLMZNMZOPZBQCLMZNMZOPZAVMRSVNVHSAVLBAKCKRSAUEUF
+      GUAFACBKQACACGUBUCABFUDZIUGUHUIUJUKZVMULUMAVPRSZVQVHSAVOBAQCQRSAUNUFGUAFI
+      UKZVPULUMAQVMLMZBNMZOPZKVPLMZOPZVNUOZVQUOZAWCWEOABCABFUQACGUQUPURABKVMLMZ
+      NMOPVNTWDWGTABVMDEFVSAWIBUSUTZBWBUSUTZABCVRACGUDHIVAZVBAWJWKWLVCJVDVCAVTV
+      PVISWFWHTWAVPVEVPVFVGVJVK $.
   $}
 
   ${
@@ -888109,12 +888114,12 @@ $)
        20-Oct-2026.) $)
     liouodd3led $p |- ( ph -> ( F ` N ) <_ ( F ` -u ( 3 x. N ) ) ) $=
       ( cliou cfv c3 co cneg wcel cmul cmin cle cn cq wceq liou3mul 3syl negeqd
-      nnq liounncn syl negnegd eqtrd 3nn a1i nnmulcld liou2refld eqbrtrrd nnrpd
-      cc rprege0d nnred ltmul23trd liouoddval1d2 c2 c6 eqnbrtrd liouoddnegval2d
-      clt nncnd mul23d 3brtr4d ) AEOPZCQEUARZUBROPZEDPVOSDPUCAVOOPZSZVNVPUCAVRV
-      NSZSVNAVQVSAEUDTZEUETVQVSUFKEUJEUGUHUIAVNAVTVNVATKEUKULUMUNAVOCFGIAQEQUDT
-      AUOUPKUQZLNURUSABECDHIKAECAEAEKUTVBACIVCLVDVEABVOCDHIJWALAVFVOUARVGEUARCV
-      JAEAEKVKVLMVHVIVM $.
+      nnq cc liounncn syl negnegd eqtrd 3nn a1i nnmulcld liou2refld eqbrtrrd c2
+      nnrpd rprege0d nnred 2re 3re 2le3 ltmultrd liouoddval1d2 clt nncnd mul23d
+      c6 eqnbrtrd liouoddnegval2d 3brtr4d ) AEOPZCQEUARZUBROPZEDPVRSDPUCAVROPZS
+      ZVQVSUCAWAVQSZSVQAVTWBAEUDTZEUETVTWBUFKEUJEUGUHUIAVQAWCVQUKTKEULUMUNUOAVR
+      CFGIAQEQUDTAUPUQKURZLNUSUTABECDHIKAECVAQAEAEKVBVCACIVDLVEVFVGVHVIABVRCDHI
+      JWDLAVAVRUARVMEUARCVJAEAEKVKVLMVNVOVP $.
   $}
 
   ${
@@ -888166,28 +888171,27 @@ $)
        doubling and tripling inequalities in ~ liouodd2led and ~ liouodd3led
        give the equality.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouodd3eq2d $p |- ( ph -> ( F ` -u ( 3 x. N ) ) = ( F ` N ) ) $=
-      ( c3 cneg cfv c2 wcel a1i cmul co wceq cle wbr cprime prmnn syl csn cdvds
-      cn cdif wn prmgt3factsd simpld oddn2prm 3nn nnmulcld cz 3z prmgt3ndvds23d
-      nnzd simprd c4 2re nnred remulcld 4re nnrpd 2lt4 ltmul1dd lttrd nn2ltfzod
-      cr clt fzo1ndvdsd prmndvdsmuld liouoddnegd 2nn liouoddred 2z c1 cfzo 3lt4
-      elfzo1 syl3anbrc c6 nncnd mul23d breqtrrd ltnsymd liouodd2lerd lenegcon1d
-      3re eqbrtrrd eqbrtrd 2cnd mul12d fveq2d zmulcld recnd mul22d liouodd3eq1d
-      negnegd eqtr3d negeqd cliou liou2 liouoddnegmulltd 3eqtrd 6re liouodd3led
-      breqtrd znegcld letri3d mpbir2and ) AOEUAUBZPZDQZEDQZUCXSXTUDUEXTXSUDUEAX
-      SRXQUAUBZDQZXTUDAXSXQDQZPYBUDABXQCDHACUFSCUKSZICUGUHZACUFRUIULSZRCUJUEUMA
-      YFOCUJUEUMACIJUNUOCUPUHZAXQAOEOUKSAUQTZKURZVBZAOECIOUSSAUTTAEKVBZACRUJUEU
-      MZCOUJUEUMZACIJVAZVCZAECACEYEKAREUAUBZVDEUAUBZCARERVNSAVETZAEKVFZVGAVDEVD
-      VNSAVHTZYSVGZACYEVFZARVDEYRYTAEKVIZRVDVOUEAVJTVKLVLZVMVPVQZVRAYBYCABYACDH
-      YEAYAARXQRUKSAVSTZYIURZVBZVTABXQCDHYEYJVTAYAPDQYBPYCUDABYACDHYEYGUUHARXQC
-      IRUSSAWATYJAYLYMYNUOUUEVQVRABCDXQFGHIJAXQUKSYDXQCVOUEXQWBCWCUBZSYIYEAXQYQ
-      CAOEOVNSAWNTZYSVGUUAUUBAOVDEUUJYTUUCOVDVOUEAWDTVKLVLZCXQWEWFACYAUUBAYAUUG
-      VFACWGEUAUBZYAVOMAEAEKWHZWIWJZWKNWLWOWMWPAYBOYPUAUBZDQZYPDQZPZXTAYAUUODAR
-      OEAWQAOYHWHUUMWRZWSAUUPPZPUUPUURAUUPAUUPABUUOCDHYEAOYPAOYHVBZAYPAREUUFKUR
-      ZVBZWTZVTXAXDAUUTUUQAUUOPDQUUTUUQABUUOCDHYEYGUVDAOYPCIUVAUVCYOAYPCAYPUKSY
-      DYPCVOUEYPUUISUVBYEUUDCYPWEWFVPZVQVRABCDYPFGHYEYGUVBARYPUAUBYQCVOAEUUMXBL
-      WPZACYAUUOVOUUNUUSXMNXCXEXFXEAYPPDQUURXTABYPCDHYEYGUVCUVEVRABCDREHYEYGUUF
-      KRXGQWBPUCAXHTUVFXIXEXJXMABCDEFGHYEYGKUUKACUULUUBAWGEWGVNSAXKTYSVGMWKNXLA
-      XSXTABXRCDHYEAXQYJXNVTABECDHYEYKVTXOXP $.
+      ( c3 co cneg cfv c2 wcel cmul wceq cle wbr cprime cn prmnn syl cdif cdvds
+      csn wn prmgt3factsd simpld oddn2prm 3nn a1i nnmulcld cz 3z prmgt3ndvds23d
+      nnzd simprd nnrpd rprege0d nnred 2re 4re 2lt4 ltleii nn2ltfzod fzo1ndvdsd
+      c4 ltmultrd prmndvdsmuld liouoddnegd 2nn liouoddred 2z clt c1 cfzo elfzo1
+      3re 3lt4 syl3anbrc c6 nncnd mul23d breqtrrd ltnsymd liouodd2lerd eqbrtrrd
+      lenegcon1d eqbrtrd 2cnd mul12d fveq2d zmulcld negnegd mul22d liouodd3eq1d
+      recnd breqtrd eqtr3d negeqd cliou liouoddnegmulltd 3eqtrd cr 6re remulcld
+      liou2 liouodd3led znegcld letri3d mpbir2and ) AOEUAPZQZDRZEDRZUBXTYAUCUDY
+      AXTUCUDAXTSXRUAPZDRZYAUCAXTXRDRZQYCUCABXRCDHACUETCUFTZICUGUHZACUESUKUITZS
+      CUJUDULAYGOCUJUDULACIJUMUNCUOUHZAXRAOEOUFTAUPUQZKURZVBZAOECIOUSTAUTUQAEKV
+      BZACSUJUDULZCOUJUDULZACIJVAZVCZAECACEYFKAECSVMAEAEKVDVEZACYFVFZLVGVHSVMVG
+      VHVIVJVNZVKVLVOZVPAYCYDABYBCDHYFAYBASXRSUFTAVQUQZYJURZVBZVRABXRCDHYFYKVRA
+      YBQDRYCQYDUCABYBCDHYFYHUUCASXRCISUSTAVSUQYKAYMYNYOUNYTVOVPABCDXRFGHIJAXRU
+      FTYEXRCVTUDXRWACWBPZTYJYFAECOVMYQYRLWDVHOVMWDVHWEVJVNZCXRWCWFACYBYRAYBUUB
+      VFACWGEUAPZYBVTMAEAEKWHZWIWJZWKNWLWMWNWOAYCOSEUAPZUAPZDRZUUIDRZQZYAAYBUUJ
+      DASOEAWPAOYIWHUUGWQZWRAUUKQZQUUKUUMAUUKAUUKABUUJCDHYFAOUUIAOYIVBZAUUIASEU
+      UAKURZVBZWSZVRXCWTAUUOUULAUUJQDRUUOUULABUUJCDHYFYHUUSAOUUICIUUPUURYPAUUIC
+      AUUIUFTYEUUICVTUDUUIUUDTUUQYFYSCUUIWCWFVLZVOVPABCDUUIFGHYFYHUUQASUUIUAPVM
+      EUAPCVTAEUUGXALWOZACYBUUJVTUUHUUNXDNXBXEXFXEAUUIQDRUUMYAABUUICDHYFYHUURUU
+      TVPABCDSEHYFYHUUAKSXGRWAQUBAXMUQUVAXHXEXIXDABCDEFGHYFYHKUUEACUUFYRAWGEWGX
+      JTAXKUQAEKVFXLMWKNXNAXTYAABXSCDHYFAXRYKXOVRABECDHYFYLVRXPXQ $.
   $}
 
   ${
@@ -888210,12 +888214,13 @@ $)
     liouodd23midd $p |- ( ph ->
       ( F ` -u ( 2 x. N ) ) = ( F ` -u ( 3 x. N ) ) ) $=
       ( c2 cmul co a1i c4 c6 cmin cliou cfv c3 cneg liou2midrefld wcel nnmulcld
-      2nn nnrpd rprege0d nnred ltmul23trd clt nncnd mul22d 4re remulcld ltnsymd
-      cn cr eqnbrtrd liouoddnegval2d 3nn mul23d 6re 4lt6 ltmul1dd lttrd 3eqtr4d
-      wbr ) ACOEPQZUAQUBUCCUDEPQZUAQUBUCVLUEDUCVMUEDUCACEFGIKLMNUFABVLCDHIJAOEO
-      UTUGAUIRKUHAECAEAEKUJZUKACIULZMUMAOVLPQSEPQZCUNAEAEKUOZUPACVPVOASESVAUGAU
-      QRZAEKULZURZLUSVBVCABVMCDHIJAUDEUDUTUGAVDRKUHMAOVMPQTEPQZCUNAEVQVEACWAVOA
-      TETVAUGAVFRZVSURZACVPWAVOVTWCLASTEVRWBVNSTUNVKAVGRVHVIUSVBVCVJ $.
+      cn 2nn nnrpd rprege0d nnred 2re 3re 2le3 ltmultrd clt nncnd mul22d cr 4re
+      remulcld ltnsymd eqnbrtrd liouoddnegval2d 3nn 6re wbr 4lt6 ltmul1dd lttrd
+      mul23d 3eqtr4d ) ACOEPQZUAQUBUCCUDEPQZUAQUBUCVOUEDUCVPUEDUCACEFGIKLMNUFAB
+      VOCDHIJAOEOUIUGAUJRKUHAECOUDAEAEKUKZULACIUMZMUNUOUPUQAOVOPQSEPQZCURAEAEKU
+      SZUTACVSVRASESVAUGAVBRZAEKUMZVCZLVDVEVFABVPCDHIJAUDEUDUIUGAVGRKUHMAOVPPQT
+      EPQZCURAEVTVMACWDVRATETVAUGAVHRZWBVCZACVSWDVRWCWFLASTEWAWEVQSTURVIAVJRVKV
+      LVDVEVFVN $.
   $}
 
   ${
