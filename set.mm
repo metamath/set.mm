@@ -888880,15 +888880,15 @@ $)
     liougb4prmgt3dALT $p |- ( ph -> E. a e. NN E. b e. NN
       ( ( 4 x. P ) = ( a + b ) /\
         ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
-      ( vr co cv wceq cliou cfv cn wa clt wbr cprime wcel adantr syl cmul caddc
-      c4 c1 cneg w3a wrex wn c2 cdiv clgs csn cdif c3 cdvds prmgt3factsd simpld
-      simpr simprd lioumodhalfoddd oddprmqrhalfexd simprl prmnn nnred rehalfcld
-      simprrr simprrl crp nnrpd rphalflt lttrd lioumodprmnqrd pm2.21dd pm2.18da
-      rexlimddv ) AUCBUAHCIZDIZUBHJVPKLUDUEZJVQKLVRJUFDMUGCMUGZAVSUHZNZGIZBUIUJ
-      HZOPZWBBUKHUDJZNZVSGQWABGWABQUIULUMRZUNBUOPUHZWABABQRZVTESZAUNBOPVTFSZUPZ
-      UQZWABCDWMAVTURZWAWGWHWLUSZUTWKVAWAWBQRZWFNZNZWEVSWAWPWDWEVFWRBWBCDWAWGWQ
-      WMSWAWPWFVBZWRWBWCBWRWBWRWPWBMRWSWBVCTVDWRBWRBWRWIBMRWAWIWQWJSBVCTZVDZVEX
-      AWAWPWDWEVGWRBVHRWCBOPWRBWTVIBVJTVKWAVTWQWNSWAWHWQWOSVLVMVOVN $.
+      ( vr co cv wceq cn wa clt wbr cprime wcel adantr simpld simprd syl c4 cfv
+      cmul caddc cliou c1 cneg w3a wrex wn c2 cdiv clgs cdif cdvds prmgt3factsd
+      csn simpr lioumodhalfoddd oddprmqrhalfexd prmnn nnred rehalfcld crp nnrpd
+      c3 rphalflt lttrd lioumodprmnqrd pm2.21dd rexlimddv pm2.18da ) AUABUCHCIZ
+      DIZUDHJVMUEUBUFUGZJVNUEUBVOJUHDKUICKUIZAVPUJZLZGIZBUKULHZMNZVSBUMHUFJZLZV
+      PGOVRBGVRBOUKUQUNPZVFBUONUJZVRBABOPZVQEQZAVFBMNVQFQZUPZRZVRBCDWJAVQURZVRW
+      DWEWISZUSWHUTVRVSOPZWCLZLZWBVPWOWAWBWOWMWCVRWNURZSZSWOBVSCDVRWDWNWJQWOWMW
+      CWPRZWOVSVTBWOVSWOWMVSKPWRVSVATVBWOBWOBWOWFBKPVRWFWNWGQBVATZVBZVCWTWOWAWB
+      WQRWOBVDPVTBMNWOBWSVEBVGTVHVRVQWNWKQVRWEWNWLQVIVJVKVL $.
   $}
 
   ${
