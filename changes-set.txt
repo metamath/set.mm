@@ -93,6 +93,7 @@ make a github issue.)
 
 DONE:
 Date      Old         New         Notes
+15-Nov-26 df-ply1     [same]      Add EuclF component
  8-Nov-26 rru         rur
  8-Nov-26 cardprcALT  [same]      Moved from AD's mathbox to main set.mm
  8-Nov-26 cardprcr    [same]      Moved from AD's mathbox to main set.mm
@@ -100,6 +101,7 @@ Date      Old         New         Notes
  8-Nov-26 onprcr      [same]      Moved from AD's mathbox to main set.mm
  8-Nov-26 nelpr       [same]      Moved from TA's mathbox to main set.mm
  8-Nov-26 absex       [same]      Moved from SN's mathbox to main set.mm
+ 8-Nov-26 df-cnfld    [same]      Add EuclF component
 31-Oct-26 rngunsnply  [same]      Moved from SO's mathbox to main set.mm
 31-Oct-26 cnsrplycl   [same]      Moved from SO's mathbox to main set.mm
 31-Oct-26 cnsrexpcl   [same]      Moved from SO's mathbox to main set.mm

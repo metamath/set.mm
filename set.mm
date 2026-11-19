@@ -211383,6 +211383,37 @@ $)
     ( cnx cbs cfv ceuf basendxnn nnrei c1 cdc clt 2nn 1nn0 1lt10 declti basendx
     c2 eufndx 3brtr4i ltneii ) ABCZADCZSEFGOGHSTIOGGJKKLMNPQR $.
 
+  $( The slot for the ring multiplication is not the slot for the Euclidean
+     function in an extensible structure.  (Contributed by Thierry Arnoux,
+     15-Nov-2026.) $)
+  plusgndxneufndx $p |- ( +g ` ndx ) =/= ( EuclF ` ndx ) $=
+    ( cnx cplusg cfv ceuf c2 cn0 plusgndx 2nn0 eqeltri nn0rei cdc clt 2nn 2lt10
+    c1 1nn0 declti eufndx 3brtr4i ltneii ) ABCZADCZUAUAEFGHIJEEOKUAUBLEOEMPHNQG
+    RST $.
+
+  $( The slot for the ring multiplication is not the slot for the Euclidean
+     function in an extensible structure.  (Contributed by Thierry Arnoux,
+     15-Nov-2026.) $)
+  mulrndxneufndx $p |- ( .r ` ndx ) =/= ( EuclF ` ndx ) $=
+    ( cnx cmulr cfv ceuf c3 cn0 mulrndx 3nn0 eqeltri nn0rei c2 cdc clt 2nn 1nn0
+    c1 3lt10 declti eufndx 3brtr4i ltneii ) ABCZADCZUBUBEFGHIJEKPLUBUCMKPENOHQR
+    GSTUA $.
+
+  $( The slot for the ring multiplication is not the slot for the Euclidean
+     function in an extensible structure.  (Contributed by Thierry Arnoux,
+     15-Nov-2026.) $)
+  vscandxneufndx $p |- ( .s ` ndx ) =/= ( EuclF ` ndx ) $=
+    ( cnx cvsca cfv ceuf c6 cn0 vscandx 6nn0 eqeltri nn0rei c2 cdc clt 2nn 1nn0
+    c1 6lt10 declti eufndx 3brtr4i ltneii ) ABCZADCZUBUBEFGHIJEKPLUBUCMKPENOHQR
+    GSTUA $.
+
+  $( The slot for the scalars is not the slot for the Euclidean function in an
+     extensible structure.  (Contributed by Thierry Arnoux, 15-Nov-2026.) $)
+  scandxneufndx $p |- ( Scalar ` ndx ) =/= ( EuclF ` ndx ) $=
+    ( cnx csca cfv ceuf c5 cn0 scandx 5nn0 eqeltri nn0rei c2 cdc clt 1nn0 5lt10
+    c1 2nn declti eufndx 3brtr4i ltneii ) ABCZADCZUBUBEFGHIJEKPLUBUCMKPEQNHORGS
+    TUA $.
+
   ${
     resseuf.h $e |- H = ( G |`s A ) $.
     resseuf.f $e |- F = ( EuclF ` G ) $.
@@ -289618,6 +289649,7 @@ $)
   $c mPwSer $. $( Multivariate power series $)
   $c mVar $. $( Multivariate power series variables $)
   $c mPoly $. $( Multivariate polynomial $)
+  $c mDeg $. $( Multivariate polynomial degree $)
   $c <bag $. $( Order on terms $)
   $c ordPwSer $. $( Order on power series $)
 
@@ -289629,6 +289661,9 @@ $)
 
   $( Multivariate polynomials. $)
   cmpl $a class mPoly $.
+
+  $( Multivariate polynomial degree. $)
+  cmdg $a class mDeg $.
 
   $( Ordering on terms of a multivariate polynomial. $)
   cltb $a class <bag $.
@@ -289669,6 +289704,15 @@ $)
        by AV, 25-Jun-2019.) $)
     df-mpl $a |- mPoly = ( i e. _V , r e. _V |-> [_ ( i mPwSer r ) / w ]_
       ( w |`s { f e. ( Base ` w ) | f finSupp ( 0g ` r ) } ) ) $.
+
+    $( Define the degree of a polynomial.  Note (SO): as an experiment I am
+       using a definition which makes the degree of the zero polynomial
+       ` -oo ` , contrary to the convention used in ~ df-dgr .  (Contributed by
+       Stefan O'Rear, 19-Mar-2015.)  (Revised by AV, 25-Jun-2019.) $)
+    df-mdeg $a |- mDeg = ( i e. _V , r e. _V |->
+      ( f e. ( Base ` ( i mPoly r ) ) |->
+        sup ( ran ( h e. ( f supp ( 0g ` r ) ) |->
+          ( CCfld gsum h ) ) , RR* , < ) ) ) $.
 
     $( Define a well-order on the set of all finite bags from the index set
        ` i ` given a wellordering ` r ` of ` i ` .  (Contributed by Mario
@@ -296659,12 +296703,16 @@ $)
   $c Poly1 $. $( Univariate polynomial $)
   $c coe1 $. $( Coefficient function for a univariate polynomial $)
   $c toPoly1 $. $( Univariate -> multivariate $)
+  $c deg1 $. $( Univariate polynomial degree $)
 
   $( Univariate power series. $)
   cps1 $a class PwSer1 $.
 
   $( The base variable of a univariate power series. $)
   cv1 $a class var1 $.
+
+  $( Univariate polynomial degree. $)
+  cdg1 $a class deg1 $.
 
   $( Univariate polynomials. $)
   cpl1 $a class Poly1 $.
@@ -296687,10 +296735,16 @@ $)
        8-Feb-2015.) $)
     df-vr1 $a |- var1 = ( r e. _V |-> ( ( 1o mVar r ) ` (/) ) ) $.
 
+    $( Define the degree of a univariate polynomial.  (Contributed by Stefan
+       O'Rear, 23-Mar-2015.) $)
+    df-deg1 $a |- deg1 = ( r e. _V |-> ( 1o mDeg r ) ) $.
+
     $( Define the algebra of univariate polynomials.  (Contributed by Mario
-       Carneiro, 9-Feb-2015.) $)
-    df-ply1 $a |- Poly1 = ( r e. _V |->
-      ( ( PwSer1 ` r ) |`s ( Base ` ( 1o mPoly r ) ) ) ) $.
+       Carneiro, 9-Feb-2015.)  Add Euclidean function.  (Revised by Thierry
+       Arnoux, 15-Nov-2026.) $)
+    df-ply1 $a |- Poly1 = ( r e. _V |-> ( ( ( PwSer1 ` r ) |`s
+      ( Base ` ( 1o mPoly r ) ) ) sSet <. ( EuclF ` ndx ) , ( deg1 ` r ) >. ) )
+      $.
 
     $( Define the coefficient function for a univariate polynomial.
        (Contributed by Stefan O'Rear, 21-Mar-2015.) $)
@@ -296790,19 +296844,29 @@ $)
   $}
 
   ${
-    $d r x y R $.  $d r x y S $.
+    $d r x y R $.  $d r x y S $.  $d P x y $.  $d S x y $.
     ply1val.1 $e |- P = ( Poly1 ` R ) $.
     ${
       ply1val.2 $e |- S = ( PwSer1 ` R ) $.
       $( The value of the set of univariate polynomials.  (Contributed by Mario
          Carneiro, 9-Feb-2015.) $)
-      ply1val $p |- P = ( S |`s ( Base ` ( 1o mPoly R ) ) ) $=
-        ( vr cpl1 cfv c1o cmpl co cbs cress cvv wcel wceq cps1 eqtr4di c0 fvprc
-        cv fveq2 oveq2 fveq2d oveq12d df-ply1 ovex fvmpt wn ress0 eqtrid oveq1d
-        eqtr4d pm2.61i eqtri ) ABGHZCIBJKZLHZMKZDBNOZUPUSPFBFUAZQHZIVAJKZLHZMKU
-        SNGVABPZVBCVDURMVEVBBQHZCVABQUBERVEVCUQLVABIJUCUDUEFUFCURMUGUHUTUIZUPSU
-        RMKZUSVGUPSVHBGTURUJRVGCSURMVGCVFSEBQTUKULUMUNUO $.
+      ply1val $p |- ( R e. V -> P = ( ( S |`s ( Base ` ( 1o mPoly R ) ) )
+                               sSet <. ( EuclF ` ndx ) , ( deg1 ` R ) >. ) ) $=
+        ( vr wcel cpl1 cfv c1o cmpl co cbs cress cdg1 cop csts cvv cps1 ceuf cv
+        cnx wceq elex fveq2 eqtr4di oveq2 fveq2d oveq12d df-ply1 ovex fvmpt syl
+        opeq2d eqtrid ) BDHZABIJZCKBLMZNJZOMZUCUAJZBPJZQZRMZEUQBSHURVEUDBDUEGBG
+        UBZTJZKVFLMZNJZOMZVBVFPJZQZRMVESIVFBUDZVJVAVLVDRVMVGCVIUTOVMVGBTJCVFBTU
+        FFUGVMVHUSNVFBKLUHUIUJVMVKVCVBVFBPUFUOUJGUKVAVDRULUMUNUP $.
     $}
+
+    $( The Euclidean function for univariate polynomials is the polynomial
+       degree.  (Contributed by Thierry Arnoux, 15-Nov-2026.) $)
+    ply1euf $p |- ( deg1 ` R ) = ( EuclF ` P ) $=
+      ( cvv wcel cdg1 cfv ceuf wceq cps1 c1o co cbs cress eufid fveq2d c0 fvprc
+      cmpl cpl1 cnx cop csts ovex fvex setsid mp2an eqid ply1val eqtr4id eqtrid
+      wn str0 3eqtr4a pm2.61i ) BDEZBFGZAHGZIUPUQBJGZKBSLMGZNLZUAHGZUQUBUCLZHGZ
+      URVADEUQDEUQVDIUSUTNUDBFUEDUQHDVAOUFUGUPAVCHABUSDCUSUHUIPUJUPULZQQHGUQURH
+      VBOUMBFRVEAQHVEABTGQCBTRUKPUNUO $.
 
     ${
       ply1bas.u $e |- U = ( Base ` P ) $.
@@ -296810,9 +296874,13 @@ $)
          Mario Carneiro, 9-Feb-2015.)  Remove hypothesis.  (Revised by SN,
          20-May-2025.) $)
       ply1bas $p |- U = ( Base ` ( 1o mPoly R ) ) $=
-        ( cbs cfv c1o cmpl co cps1 wss wceq cmps eqid psr1bas2 mplbasss ply1val
-        ressbas2 ax-mp eqtr4i ) CAFGZHBIJZFGZEUDBKGZFGZLUDUBMUFUCBHBNJZUDHUCOUG
-        OZUDOUFBUEUGUEOZUFOZUHPQUDUFAUEABUEDUIRUJSTUA $.
+        ( cvv wcel c1o cmpl co cbs cfv wceq cps1 cress cnx eqid fveq2d c0 cpl1
+        ceuf cdg1 cop csts ply1val basendxneufndx setsnid eqtr4di cmps psr1bas2
+        baseid wss mplbasss ressbas2 ax-mp 3eqtr4g wn fvprc eqtrid a1i reldmmpl
+        ovprc2 3eqtr4d pm2.61i ) BFGZCHBIJZKLZMVEAKLZBNLZVGOJZKLZCVGVEVHVJPUALZ
+        BUBLZUCUDJZKLVKVEAVNKABVIFDVIQZUERVMVLKVJUKUFUGUHEVGVIKLZULVGVKMVPVFBHB
+        UIJZVGHVFQVQQZVGQVPBVIVQVOVPQZVRUJUMVGVPVJVIVJQVSUNUOUPVEUQZVHSKLCVGVTA
+        SKVTABTLSDBTURUSRCVHMVTEUTVTVFSKHBIVAVBRVCVD $.
     $}
 
     ${
@@ -296844,20 +296912,16 @@ $)
     $( The ring of univariate polynomials is a commutative ring.  (Contributed
        by Mario Carneiro, 9-Feb-2015.) $)
     ply1crng $p |- ( R e. CRing -> P e. CRing ) $=
-      ( ccrg wcel cps1 cfv c1o cmpl co cbs csubrg psr1crng ply1bas crg crngring
-      eqid ply1subrg syl eqeltrrid ply1val subrgcrng syl2anc ) BDEZBFGZDEHBIJKG
-      ZUELGZEADEBUEUEQZMUDUFAKGZUGABUICUIQZNUDBOEUIUGEBPABUEUICUHUJRSTUFUEAABUE
-      CUHUAUBUC $.
-
-    $( The ring of univariate polynomials is an associative algebra.
-       (Contributed by Mario Carneiro, 9-Feb-2015.) $)
-    ply1assa $p |- ( R e. CRing -> P e. AssAlg ) $=
-      ( ccrg wcel casa cbs cfv cps1 csubrg clss crg crngring eqid ply1subrg syl
-      ply1lss cur co cress wss wa wb psr1assa subrg1cl subrgss c1o cmpl ply1val
-      ply1bas oveq2i eqtr4i issubassa syl3anc mpbir2and ) BDEZAFEZAGHZBIHZJHEZU
-      RUSKHZEZUPBLEZUTBMZABUSURCUSNZURNZOPZUPVCVBVDABUSURCVEVFQPUPUSFEUSRHZUREZ
-      URUSGHZUAZUQUTVBUBUCBUSVEUDUPUTVIVGURUSVHVHNZUEPUPUTVKVGURVJUSVJNZUFPURAV
-      HVAVJUSAUSUGBUHSGHZTSUSURTSABUSCVEUIURVNUSTABURCVFUJUKULVANVMVLUMUNUO $.
+      ( vx ccrg wcel cfv c1o cbs eqid wceq cplusg fveq2d setsnid eqtr4di oveqdr
+      vy co cv cmulr cps1 cmpl cress csubrg psr1crng ply1bas crngring ply1subrg
+      crg syl eqeltrrid subrgcrng syl2anc eqcomi a1i wss cmps psr1bas2 mplbasss
+      ressbas2 mp1i wa cnx ceuf cdg1 cop ply1val plusgndxneufndx mulrndxneufndx
+      csts plusgid mulridx crngpropd mpbird ) BEFZAEFBUAGZHBUBRZIGZUCRZEFZVOVPE
+      FVRVPUDGZFVTBVPVPJZUEVOVRAIGZWAABWCCWCJZUFZVOBUIFWCWAFBUGABVPWCCWBWDUHUJU
+      KVRVPVSVSJZULUMVODQVRAVSVRWCKVOWCVRWEUNUOVRVPIGZUPVRVSIGKVOWGVQBHBUQRZVRH
+      VQJWHJZVRJWGBVPWHWBWGJZWIURUSVRWGVSVPWFWJUTVAVODSVRFQSVRFVBZDQALGZVSLGZVO
+      WLVSVCVDGZBVEGZVFVJRZLGWMVOAWPLABVPECWBVGZMWOWNLVSVKVHNOPVOWKDQATGZVSTGZV
+      OWRWPTGWSVOAWPTWQMWOWNTVSVLVINOPVMVN $.
   $}
 
   ${
@@ -296894,8 +296958,9 @@ $)
     $( A univariate polynomial is a univariate power series.  (Contributed by
        Stefan O'Rear, 25-Mar-2015.) $)
     ply1bascl $p |- ( F e. B -> F e. ( Base ` ( PwSer1 ` R ) ) ) $=
-      ( cps1 cfv cbs c1o cmpl co eqid ply1val ressbasss eqsstri sseli ) ACGHZIH
-      ZDABIHSFJCKLIHSBRBCRERMNSMOPQ $.
+      ( wcel cps1 cfv cbs c0g cfsupp wbr c1o cmpl co cmps eqid psr1bas2 ply1bas
+      mplelbas simplbi ) DAGDCHIZJIZGDCKIZLMUDNCOPZCNCQPZANDUEUFRUGRZUDCUCUGUCR
+      UDRUHSUERBCAEFTUAUB $.
 
     $( A univariate polynomial is a multivariate polynomial on one index.
        (Contributed by Stefan O'Rear, 25-Mar-2015.) $)
@@ -297121,6 +297186,28 @@ $)
   $}
 
   ${
+    ply1vallem.y $e |- Y = ( Poly1 ` R ) $.
+    ply1vallem.m $e |- M = ( 1o mPoly R ) $.
+    ply1vallem.e $e |- E = ( S ` Y ) $.
+    ply1vallem.1 $e |- ( S ` ndx ) =/= ( EuclF ` ndx ) $.
+    ply1vallem.2 $e |- ( S ` ndx ) =/= ( Base ` ndx ) $.
+    ply1vallem.s $e |- S = Slot ( S ` ndx ) $.
+    ply1vallem.t $e |- T = ( 1o mPwSer R ) $.
+    ply1vallem.3 $e |- ( S ` M ) = ( S ` T ) $.
+    ply1vallem.4 $e |- ( S ` ( PwSer1 ` R ) ) = ( S ` T ) $.
+    $( Lemma for determining the value of a slot in a univariate polynomial
+       ring.  (Contributed by Thierry Arnoux, 15-Nov-2026.) $)
+    ply1vallem $p |- E = ( S ` M ) $=
+      ( cvv cfv co eqtrid c0 wcel wceq cps1 c1o cmpl cbs cnx ceuf cdg1 cop csts
+      cress eqid ply1val fveq2d setsnid eqtr4di fvex resseqnbas ax-mp eqtrdi wn
+      cpl1 fvprc reldmmpl ovprc2 eqtr4d pm2.61i ) APUAZDEBQZUBVIDCBQZVJVIDAUCQZ
+      BQZVKVIDVLUDAUERZUFQZULRZBQZVMVIDVPUGUHQZAUIQZUJUKRZBQZVQVIDFBQZWAIVIFVTB
+      FAVLPGVLUMUNUOSVSVRBVPLJUPUQVOPUAVMVQUBVNUFURVOVMVPBPVLVPUMVMUMLKUSUTUQOV
+      ANUQVIVBZDTBQZVJWCDWBWDIWCFTBWCFAVCQTGAVCVDSUOSWCETBWCEVNTHUDAUEVEVFSUOVG
+      VH $.
+  $}
+
+  ${
     ply1plusg.y $e |- Y = ( Poly1 ` R ) $.
     ply1plusg.s $e |- S = ( 1o mPoly R ) $.
     ${
@@ -297129,10 +297216,9 @@ $)
          Stefan O'Rear, 21-Mar-2015.)  (Revised by Mario Carneiro,
          4-Jul-2015.) $)
       ply1plusg $p |- .+ = ( +g ` S ) $=
-        ( cplusg cfv c1o cmps co cps1 eqid mplplusg psr1plusg cmpl cbs cvv wcel
-        wceq fvex ply1val ressplusg ax-mp 3eqtr2i eqtr4i ) ADHIZCHIZGUIJBKLZHIB
-        MIZHIZUHUIBUJJCFUJNZUINOULBUJUKUKNZUMULNZPJBQLZRIZSTULUHUAUPRUBUQULUKDS
-        DBUKEUNUCUOUDUEUFUG $.
+        ( cplusg c1o co plusgndxneufndx cnx cbs basendxnplusgndx necomi plusgid
+        cmps cfv eqid mplplusg cps1 psr1plusg ply1vallem ) BHIBQJZACDEFGKLMRLHR
+        NOPUDSZCHRZBUDICFUEUFSTBUARZHRZBUDUGUGSUEUHSUBUC $.
     $}
 
     ${
@@ -297141,10 +297227,9 @@ $)
          (Contributed by Stefan O'Rear, 21-Mar-2015.)  (Revised by Mario
          Carneiro, 4-Jul-2015.) $)
       ply1vsca $p |- .x. = ( .s ` S ) $=
-        ( cvsca cfv c1o cmps co cps1 eqid mplvsca2 psr1vsca cmpl cbs cvv wcel
-        wceq fvex ply1val ressvsca ax-mp 3eqtr2i eqtr4i ) CDHIZBHIZGUIJAKLZHIAM
-        IZHIZUHBAUJUIJFUJNZUINOAUJULUKUKNZUMULNZPJAQLZRIZSTULUHUAUPRUBUQULUKDSD
-        AUKEUNUCUOUDUEUFUG $.
+        ( cvsca c1o cmps co vscandxneufndx vscandxnbasendx vscaid eqid mplvsca2
+        cfv cps1 psr1vsca ply1vallem ) AHIAJKZCBDEFGLMNUAOZBAUABHQZIFUBUCOPAUAA
+        RQZHQZUDUDOUBUEOST $.
     $}
 
     ${
@@ -297153,10 +297238,9 @@ $)
          by Stefan O'Rear, 21-Mar-2015.)  (Revised by Mario Carneiro,
          4-Jul-2015.) $)
       ply1mulr $p |- .x. = ( .r ` S ) $=
-        ( cmulr cfv c1o cmps co cps1 eqid mplmulr psr1mulr cmpl cbs cvv wcel
-        wceq fvex ply1val ressmulr ax-mp 3eqtr2i eqtr4i ) CDHIZBHIZGUIJAKLZHIAM
-        IZHIZUHAUJUIJBFUJNZUINOAUJULUKUKNZUMULNZPJAQLZRIZSTULUHUAUPRUBUQUKDULSD
-        AUKEUNUCUOUDUEUFUG $.
+        ( c1o cmps co mulrndxneufndx cnx cbs cfv basendxnmulrndx necomi mulridx
+        cmulr eqid mplmulr cps1 psr1mulr ply1vallem ) ARHAIJZCBDEFGKLMNLRNOPQUD
+        SZAUDBRNZHBFUEUFSTAUDAUANZRNZUGUGSUEUHSUBUC $.
     $}
   $}
 
@@ -297488,13 +297572,21 @@ $)
   $}
 
   ${
+    $d P x y $.  $d R x y $.
     ply1ring.p $e |- P = ( Poly1 ` R ) $.
     $( Univariate polynomials form a ring.  (Contributed by Stefan O'Rear,
        22-Mar-2015.) $)
     ply1ring $p |- ( R e. Ring -> P e. Ring ) $=
-      ( crg wcel c1o cmpl co cbs cfv cps1 csubrg eqid ply1bas ply1subrg ply1val
-      eqeltrrid subrgring syl ) BDEZFBGHIJZBKJZLJZEADETUAAIJZUCABUDCUDMZNABUBUD
-      CUBMZUEOQUAUBAABUBCUFPRS $.
+      ( vx vy crg wcel cfv cbs cress co eqid cplusg csts fveq2d setsnid eqtr4di
+      cv oveqdr cmulr cps1 c1o cmpl csubrg ply1subrg eqeltrrid oveq2i subrgring
+      ply1bas syl eqidd wss wceq subrgss ressbas2 3syl wa cnx ceuf cdg1 ply1val
+      cop eqtr3id oveq2d oveq1d eqtrd plusgid plusgndxneufndx mulridx ringpropd
+      mulrndxneufndx mpbird ) BFGZAFGBUAHZAIHZJKZFGZVMUBBUCKIHZVNUDHZGVQVMVRVOV
+      SABVOCVOLZUIZABVNVOCVNLZVTUEZUFVRVNVPVOVRVNJWAUGUHUJVMDEVOAVPVMVOUKZVMVOV
+      SGVOVNIHZULVOVPIHUMWCVOWEVNWELZUNVOWEVPVNVPLWFUOUPVMDRVOGERVOGUQZDEAMHZVP
+      MHZVMWHVPURUSHZBUTHZVBZNKZMHWIVMAWMMVMAVNVRJKZWLNKWMABVNFCWBVAVMWNVPWLNVM
+      VRVOVNJVMVRVOVOWAWDVCVDVEVFZOWKWJMVPVGVHPQSVMWGDEATHZVPTHZVMWPWMTHWQVMAWM
+      TWOOWKWJTVPVIVKPQSVJVL $.
   $}
 
   ${
@@ -297520,20 +297612,33 @@ $)
   $}
 
   ${
+    $d P x y $.  $d R r x y $.  $d S r $.  $d S x y $.
     ply1lmod.p $e |- P = ( Poly1 ` R ) $.
-    $( Univariate polynomials form a left module.  (Contributed by Stefan
-       O'Rear, 26-Mar-2015.) $)
-    ply1lmod $p |- ( R e. Ring -> P e. LMod ) $=
-      ( crg wcel cps1 cfv clmod c1o cmpl co cbs clss eqid psr1lmod cpl1 ply1bas
-      ply1lss eqeltrrid ply1val lsslmod syl2anc ) BDEZBFGZHEIBJKLGZUDMGZEAHEUDB
-      UDNZOUCUEBPGZLGZUFUHBUIUHNZUINZQUHBUDUIUJUGUKRSUFUEUDAABUDCUGTUFNUAUB $.
-
     $( Scalars of a univariate polynomial ring.  (Contributed by Stefan O'Rear,
        26-Mar-2015.) $)
     ply1sca $p |- ( R e. V -> R = ( Scalar ` P ) ) $=
-      ( wcel cps1 cfv csca eqid psr1sca c1o cmpl co cbs wceq fvex ply1val ax-mp
-      cvv resssca eqtrdi ) BCEBBFGZHGZAHGZUBBCUBIZJKBLMZNGZSEUCUDOUFNPUGUCUBASA
-      BUBDUEQUCITRUA $.
+      ( wcel cps1 cfv csca eqid psr1sca c1o cmpl co cbs cress wceq fvex resssca
+      cvv ax-mp cnx ceuf cdg1 csts scandxneufndx setsnid ply1val fveq2d eqtr4id
+      cop scaid eqtrid eqtrd ) BCEZBBFGZHGZAHGZUOBCUOIZJUNUPUOKBLMZNGZOMZHGZUQU
+      TSEUPVBPUSNQUTUPUOVASVAIUPIRTUNVBVAUAUBGZBUCGZUJUDMZHGUQVDVCHVAUKUEUFUNAV
+      EHABUOCDURUGUHUIULUM $.
+
+    $( Univariate polynomials form a left module.  (Contributed by Stefan
+       O'Rear, 26-Mar-2015.) $)
+    ply1lmod $p |- ( R e. Ring -> P e. LMod ) $=
+      ( vx vy crg wcel clmod cfv cbs cress wceq eqid ply1bas oveq2d cplusg csts
+      co cv cvsca cps1 c1o cmpl clss psr1lmod ply1lss eqeltrrid lsslmod syl2anc
+      a1i cpl1 eqeltrd eqidd csubrg wss ply1subrg subrgss ressbas2 3syl wa ceuf
+      cnx cdg1 cop ply1val eqtr3id oveq1d eqtrd plusgid plusgndxneufndx setsnid
+      fveq2d eqtr4di oveqdr ply1sca csca psr1sca cvv fvex resssca eqtrdi vscaid
+      ax-mp vscandxneufndx lmodpropd mpbird ) BFGZAHGBUAIZAJIZKRZHGWGWJWHUBBUCR
+      JIZKRZHWGWIWKWHKWIWKLWGABWICWIMZNZUJOWGWHHGWKWHUDIZGWLHGWHBWHMZUEWGWKBUKI
+      ZJIZWOWQBWRWQMZWRMZNWQBWHWRWSWPWTUFUGWOWKWHWLWLMWOMUHUIULWGDEWIBJIZBAWJWG
+      WIUMZWGWIWHUNIGWIWHJIZUOWIWJJILABWHWICWPWMUPWIXCWHXCMZUQWIXCWJWHWJMZXDURU
+      SWGDSZWIGESWIGZUTDEAPIZWJPIZWGXHWJVBVAIZBVCIZVDZQRZPIXIWGAXMPWGAWLXLQRXMA
+      BWHFCWPVEWGWLWJXLQWGWKWIWHKWGWKWIWIWNXBVFOVGVHZVLXKXJPWJVIVJVKVMVNABFCVOW
+      GBWHVPIZWJVPIZWHBFWPVQWIVRGXOXPLAJVSWIXOWHWJVRXEXOMVTWCWAXAMWGXFXAGXGUTDE
+      ATIZWJTIZWGXQXMTIXRWGAXMTXNVLXKXJTWJWBWDVKVMVNWEWF $.
 
     $( Scalars of a univariate polynomial ring.  (Contributed by Stefan O'Rear,
        26-Mar-2015.) $)
@@ -297541,6 +297646,25 @@ $)
       ( cvv wcel cid cfv csca wceq ply1sca eqtrd wn c0 fvprc cpl1 fveq2d fveq2i
       fvi cnx scaid str0 3eqtr4g eqtr4d pm2.61i ) BDEZBFGZAHGZIUEUFBUGBDRABDCJK
       UELZUFMUGBFNUHBOGZHGMHGUGMUHUIMHBONPAUIHCQHSHGTUAUBUCUD $.
+
+    $( The ring of univariate polynomials is an associative algebra.
+       (Contributed by Mario Carneiro, 9-Feb-2015.) $)
+    ply1assa $p |- ( R e. CRing -> P e. AssAlg ) $=
+      ( vx vy ccrg wcel casa cfv cbs cress co eqid syl wa csca csts cmulr cvsca
+      cplusg cps1 clss crg crngring ply1subrg ply1lss cur wss psr1assa subrg1cl
+      csubrg wb subrgss issubassa syl3anc mpbir2and eqidd wceq ressbas2 cv ceuf
+      cnx cdg1 cop c1o cmpl ply1val ply1bas eqtr3id oveq2d oveq1d eqtrd plusgid
+      fveq2d plusgndxneufndx setsnid eqtr4di mulridx mulrndxneufndx psr1sca cvv
+      oveqdr ply1sca fvex resssca mp1i 3eqtr3d vscaid vscandxneufndx assapropd
+      mpbird ) BFGZAHGBUAIZAJIZKLZHGZWLWPWNWMUKIGZWNWMUBIZGZWLBUCGZWQBUDZABWMWN
+      CWMMZWNMZUENZWLWTWSXAABWMWNCXBXCUFNWLWMHGWMUGIZWNGZWNWMJIZUHZWPWQWSOULBWM
+      XBUIWLWQXFXDWNWMXEXEMZUJNWLWQXHXDWNXGWMXGMZUMNZWNWOXEWRXGWMWOMZWRMXJXIUNU
+      OUPWLDEWNAPIZJIZXMAWOWLWNUQZWLXHWNWOJIURXKWNXGWOWMXLXJUSNWLDUTZWNGEUTWNGZ
+      OZDEATIZWOTIZWLXSWOVBVAIZBVCIZVDZQLZTIXTWLAYDTWLAWMVEBVFLJIZKLZYCQLYDABWM
+      FCXBVGWLYFWOYCQWLYEWNWMKWLYEWNWNABWNCXCVHXOVIVJVKVLZVNYBYATWOVMVOVPVQWBWL
+      XRDEARIZWORIZWLYHYDRIYIWLAYDRYGVNYBYARWOVRVSVPVQWBWLXMUQWLBWMPIZXMWOPIZWM
+      BFXBVTABFCWCWNWAGYJYKURWLAJWDWNYJWMWOWAXLYJMWEWFWGXNMWLXPXNGXQODEASIZWOSI
+      ZWLYLYDSIYMWLAYDSYGVNYBYASWOWHWIVPVQWBWJWK $.
   $}
 
   ${
@@ -376407,30 +376531,8 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-  $c mDeg $. $( Multivariate polynomial degree $)
-  $c deg1 $. $( Univariate polynomial degree $)
-
-  $( Multivariate polynomial degree. $)
-  cmdg $a class mDeg $.
-
-  $( Univariate polynomial degree. $)
-  cdg1 $a class deg1 $.
-
   ${
     $d i r h f $.
-    $( Define the degree of a polynomial.  Note (SO): as an experiment I am
-       using a definition which makes the degree of the zero polynomial
-       ` -oo ` , contrary to the convention used in ~ df-dgr .  (Contributed by
-       Stefan O'Rear, 19-Mar-2015.)  (Revised by AV, 25-Jun-2019.) $)
-    df-mdeg $a |- mDeg = ( i e. _V , r e. _V |->
-      ( f e. ( Base ` ( i mPoly r ) ) |->
-        sup ( ran ( h e. ( f supp ( 0g ` r ) ) |->
-          ( CCfld gsum h ) ) , RR* , < ) ) ) $.
-
-    $( Define the degree of a univariate polynomial.  (Contributed by Stefan
-       O'Rear, 23-Mar-2015.) $)
-    df-deg1 $a |- deg1 = ( r e. _V |-> ( 1o mDeg r ) ) $.
-
     $( Multivariate degree is a binary operation.  (Contributed by Stefan
        O'Rear, 28-Mar-2015.) $)
     reldmmdeg $p |- Rel dom mDeg $=
@@ -534057,41 +534159,40 @@ $)
   ${
     $d P f g q r $.  $d R f g q r $.  $d U f g q r $.  $d Z f g q r $.
     $d f g ph $.
-    ply1edom.1 $e |- P = ( Poly1 ` R ) $.
-    ply1edom.2 $e |- U = ( Base ` P ) $.
-    ply1edom.3 $e |- Z = ( 0g ` P ) $.
-    ply1edom.4 $e |- ( deg1 ` R ) = ( EuclF ` P ) $.
-    ply1edom.5 $e |- ( ph -> R e. Field ) $.
+    ply1edom.p $e |- P = ( Poly1 ` R ) $.
+    ply1edom.u $e |- U = ( Base ` P ) $.
+    ply1edom.z $e |- Z = ( 0g ` P ) $.
+    ply1edom.r $e |- ( ph -> R e. Field ) $.
     $( The univariate polynomials over a field ` R ` form a Euclidean domain.
        Note that the hypothesis ` ( deg1 `` R ) = ( EuclF `` P ) ` could be
        dropped if the definition of ` Poly1 ` would be adapted.  (Contributed
        by Thierry Arnoux, 9-Nov-2026.) $)
     ply1edom $p |- ( ph -> P e. EDomn ) $=
-      ( vf vg wcel cfv co wceq clt wa eqid syl3anc vq vr csn cdif cn0 cdg1 cres
+      ( vf vg vq wcel cfv co wceq clt wa eqid syl3anc vr csn cdif cn0 cdg1 cres
       cidom wf cv cmulr cplusg wbr wo wrex wral cfield fldidom syl ply1idom cxr
       cedom deg1xrf a1i difssd nfv crg wne idomringd adantr eldifsnbd deg1nn0cl
       ffund sselda simpr fssrescdmd cq1p oveq2 oveq1d eqeq2d anbi1d eqeq1 fveq2
       funimassd cr1p breq1d orbi12d anbi12d cuc1p ad2antrr cdr flddrngd eldifad
       simplr drnguc1p q1pcl r1pcl r1pid ccrg idomcringd crngcomd eqtrd r1pdeglt
       eldifsnd fvresd 3brtr4d exmidne orim12da jca 2rspcedvdw anasss ralrimivva
-      ceuf reseq1i isedom sylanbrc ) ABUHMZDEUCZUDZUECUFNZXSUGZUIZKUJZLUJZUAUJZ
-      BUKNZOZUBUJZBULNZOZPZYHEPZYHYANZYDYANZQUMZUNZRZUBDUOUADUOZLXSUPKDUPZRBVBM
-      ACUHMZXQACUQMYTJCURUSZBCFUTUSZAYBYSADVAXSUEXTDVAXTUIADXTBCXTSZFGVCVDZADXR
-      VEZAKXSUEXTAKVFADVAXTUUDVMAYCXSMZRZCVGMZYCDMZYCEVHYCXTNUEMAUUHUUFACUUAVIZ
-      VJAXSDYCUUEVNUUGYCDEAUUFVOVKDXTBCYCEUUCFHGVLTWDVPAYRKLDXSAUUIYDXSMZYRAUUI
-      RZUUKRZYQYCYDYCYDCVQNZOZYFOZYHYIOZPZYPRYCUUPYCYDCWENZOZYIOZPZUUTEPZUUTYAN
-      ZYNQUMZUNZRUAUBUUOUUTDDYEUUOPZYKUURYPUVGYJUUQYCUVGYGUUPYHYIYEUUOYDYFVRVSV
-      TWAYHUUTPZUURUVBYPUVFUVHUUQUVAYCYHUUTUUPYIVRVTUVHYLUVCYOUVEYHUUTEWBUVHYMU
-      VDYNQYHUUTYAWCWFWGWHUUMUUHUUIYDCWINZMZUUODMAUUHUUIUUKUUJWJZAUUIUUKWNZUUMC
-      WKMZYDDMYDEVHUVJAUVMUUIUUKACJWLWJUUMYDDXRUULUUKVOZWMZUUMYDDEUVNVKDUVIBCYD
-      EFGHUVISZWOTZDUVIBUUNCYCYDUUNSZFGUVPWPTZUUMUUHUUIUVJUUTDMZUVKUVLUVQDUVIBC
-      UUSYCYDUUSSZFGUVPWQTZUUMUVBUVFUUMYCUUOYDYFOZUUTYIOZUVAUUMUUHUUIUVJYCUWDPU
-      VKUVLUVQDUVIBYIUUNCYFUUSYCYDFGUVPUVRUWAYFSZYISZWRTUUMUWCUUPUUTYIUUMDBYFUU
-      OYDGUWEABWSMUUIUUKABUUBWTWJUVSUVOXAVSXBUUMUVCUUTEVHZUVCUVEUUMUVCVOUUMUWGR
-      ZUUTXTNZYDXTNZUVDYNQUUMUWIUWJQUMZUWGUUMUUHUUIUVJUWKUVKUVLUVQDUVIXTBCUUSYC
-      YDUWAFGUVPUUCXCTVJUWHUUTXSXTUWHUUTDEUUMUVTUWGUWBVJUUMUWGVOXDXEUWHYDXSXTUU
-      LUUKUWGWNXEXFUVCUWGUNUUMUUTEXGVDXHXIXJXKXLXIKLDBYIYFYAEUBUAGHUWFUWEXTBXMN
-      XSIXNXOXP $.
+      ceuf ply1euf reseq1i isedom sylanbrc ) ABUGMZDEUBZUCZUDCUENZXSUFZUHZJUIZK
+      UIZLUIZBUJNZOZUAUIZBUKNZOZPZYHEPZYHYANZYDYANZQULZUMZRZUADUNLDUNZKXSUOJDUO
+      ZRBVAMACUGMZXQACUPMYTICUQURZBCFUSURZAYBYSADUTXSUDXTDUTXTUHADXTBCXTSZFGVBV
+      CZADXRVDZAJXSUDXTAJVEADUTXTUUDVLAYCXSMZRZCVFMZYCDMZYCEVGYCXTNUDMAUUHUUFAC
+      UUAVHZVIAXSDYCUUEVMUUGYCDEAUUFVNVJDXTBCYCEUUCFHGVKTWCVOAYRJKDXSAUUIYDXSMZ
+      YRAUUIRZUUKRZYQYCYDYCYDCVPNZOZYFOZYHYIOZPZYPRYCUUPYCYDCWDNZOZYIOZPZUUTEPZ
+      UUTYANZYNQULZUMZRLUAUUOUUTDDYEUUOPZYKUURYPUVGYJUUQYCUVGYGUUPYHYIYEUUOYDYF
+      VQVRVSVTYHUUTPZUURUVBYPUVFUVHUUQUVAYCYHUUTUUPYIVQVSUVHYLUVCYOUVEYHUUTEWAU
+      VHYMUVDYNQYHUUTYAWBWEWFWGUUMUUHUUIYDCWHNZMZUUODMAUUHUUIUUKUUJWIZAUUIUUKWM
+      ZUUMCWJMZYDDMYDEVGUVJAUVMUUIUUKACIWKWIUUMYDDXRUULUUKVNZWLZUUMYDDEUVNVJDUV
+      IBCYDEFGHUVISZWNTZDUVIBUUNCYCYDUUNSZFGUVPWOTZUUMUUHUUIUVJUUTDMZUVKUVLUVQD
+      UVIBCUUSYCYDUUSSZFGUVPWPTZUUMUVBUVFUUMYCUUOYDYFOZUUTYIOZUVAUUMUUHUUIUVJYC
+      UWDPUVKUVLUVQDUVIBYIUUNCYFUUSYCYDFGUVPUVRUWAYFSZYISZWQTUUMUWCUUPUUTYIUUMD
+      BYFUUOYDGUWEABWRMUUIUUKABUUBWSWIUVSUVOWTVRXAUUMUVCUUTEVGZUVCUVEUUMUVCVNUU
+      MUWGRZUUTXTNZYDXTNZUVDYNQUUMUWIUWJQULZUWGUUMUUHUUIUVJUWKUVKUVLUVQDUVIXTBC
+      UUSYCYDUWAFGUVPUUCXBTVIUWHUUTXSXTUWHUUTDEUUMUVTUWGUWBVIUUMUWGVNXCXDUWHYDX
+      SXTUULUUKUWGWMXDXEUVCUWGUMUUMUUTEXFVCXGXHXIXJXKXHJKDBYIYFYAEUALGHUWFUWEXT
+      BXLNXSBCFXMXNXOXP $.
   $}
 
   ${
