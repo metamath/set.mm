@@ -29790,17 +29790,6 @@ $)
   $}
 
   ${
-    $d y A $.  $d x y ph $.
-    ralimdvvOLD.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    $( Obsolete version of ~ ralimdvv as of 18-Nov-2025.  (Contributed by Scott
-       Fenton, 2-Mar-2025.)  (New usage is discouraged.)
-       (Proof modification is discouraged.) $)
-    ralimdvvOLD $p |- ( ph -> ( A. x e. A A. y e. B ps ->
-     A. x e. A A. y e. B ch ) ) $=
-      ( wi cv wcel wa adantr ralimdvva ) ABCDEFGABCIDJFKEJGKLHMN $.
-  $}
-
-  ${
     $d x ph $.  $d y ph $.  $d z ph $.  $d w ph $.
     ralimd4v.1 $e |- ( ph -> ( ps -> ch ) ) $.
     $( Deduction quadrupally quantifying both antecedent and consequent.
@@ -29809,17 +29798,6 @@ $)
     ralimd4v $p |- ( ph -> ( A. x e. A A. y e. B A. z e. C A. w e. D ps ->
      A. x e. A A. y e. B A. z e. C A. w e. D ch ) ) $=
       ( wral ralimdvv ) ABGKMFJMCGKMFJMDEHIABCFGJKLNN $.
-  $}
-
-  ${
-    $d y z w A $.  $d z w B $.  $d w C $.  $d x y z w ph $.
-    ralimd4vOLD.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    $( Obsolete version of ~ ralimd4v as of 18-Nov-2025.  (Contributed by Scott
-       Fenton, 2-Mar-2025.)  (New usage is discouraged.)
-       (Proof modification is discouraged.) $)
-    ralimd4vOLD $p |- ( ph -> ( A. x e. A A. y e. B A. z e. C A. w e. D
-     ps -> A. x e. A A. y e. B A. z e. C A. w e. D ch ) ) $=
-      ( wral ralimdvvOLD ) ABGKMFJMCGKMFJMDEHIABCFGJKLNN $.
   $}
 
   ${
@@ -29832,19 +29810,6 @@ $)
      A. x e. A A. y e. B A. z e. C A. w e. D A. p e. E A. q e. F ps ->
      A. x e. A A. y e. B A. z e. C A. w e. D A. p e. E A. q e. F ch ) ) $=
       ( wral ralimdvv ralimd4v ) ABNMQOLQCNMQOLQDEFGHIJKABCONLMPRS $.
-  $}
-
-  ${
-    $d y z w A $.  $d z w B $.  $d w C $.  $d q E $.  $d x y z w ph $.
-    $d p q ph $.
-    ralim6dvOLD.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    $( Obsolete version of ~ ralimdvv as of 18-Nov-2025.  (Contributed by Scott
-       Fenton, 2-Mar-2025.)  (New usage is discouraged.)
-       (Proof modification is discouraged.) $)
-    ralimd6vOLD $p |- ( ph -> (
-     A. x e. A A. y e. B A. z e. C A. w e. D A. p e. E A. q e. F ps ->
-     A. x e. A A. y e. B A. z e. C A. w e. D A. p e. E A. q e. F ch ) ) $=
-      ( wral ralimdvvOLD ralimd4vOLD ) ABNMQOLQCNMQOLQDEFGHIJKABCONLMPRS $.
   $}
 
   ${
@@ -31165,17 +31130,6 @@ $)
       equcoms ralbii 3bitrri ) BDCGZHZCDIBDFIZFUBHZCDIUDFDGZHZACUFHZUCUECDBDFUB
       JKUEUGCDUDFUBUFLMUGUDFCIZCUFHUHUDFCUFJUIACUFUIBDCIABDCFNBADCBAOCDCDPABEQS
       MRTRUA $.
-
-    $( Obsolete version of ~ sbralie as of 13-Nov-2025.  (Contributed by NM,
-       5-Sep-2004.)  (Proof modification is discouraged.)
-       (New usage is discouraged.) $)
-    sbralieOLD $p |- ( A. x e. y ph <-> [ y / x ] A. y e. x ps ) $=
-      ( vz cv wral wel wal wsb df-ral nfv sblim elsb2 imbi1i bitri albii sbbii
-      wi weq elequ1 imbi12d cbvalvw sbal 3bitrri sbco2vv 3bitr3i 3bitr2i ) ACDG
-      ZHCDIZATZCJCFIZATZFDKZCJZBDCGZHZCDKZACUJLUOULCUOUMFDKZATULUMAFDAFMNUTUKAF
-      DCOPQRUNCJZFDKURCFKZFDKUPUSVAVBFDVADFIZBTZDJZVBUNVDCDCDUAUMVCABCDFUBEUCUD
-      VBDCIZBTZDJZCFKVGCFKZDJVEURVHCFBDUQLSVGDCFUEVIVDDVIVFCFKZBTVDVFBCFBCMNVJV
-      CBCFDOPQRUFQSUNCFDUEURCDFUGUHUI $.
   $}
 
   $( *** Theorems using axioms up to ax-12 and ax-ext only: *** $)
@@ -188896,16 +188850,6 @@ $)
      Carneiro, 29-Apr-2014.)  (Proof shortened by TA, 14-Nov-2025.) $)
   efne0 $p |- ( A e. CC -> ( exp ` A ) =/= 0 ) $=
     ( cc wcel id efne0d ) ABCZAFDE $.
-
-  $( Obsolete version of ~ efne0 as of 14-Nov-2025.  The exponential of a
-     complex number is nonzero.  Corollary 15-4.3 of [Gleason] p. 309.
-     (Contributed by NM, 13-Jan-2006.)  (Revised by Mario Carneiro,
-     29-Apr-2014.)  (Proof modification is discouraged.)
-     (New usage is discouraged.) $)
-  efne0OLD $p |- ( A e. CC -> ( exp ` A ) =/= 0 ) $=
-    ( cc wcel c1 cc0 wne ce cfv ax-1ne0 wceq cneg cmul co oveq1 efcan negcl syl
-    efcl mul02d eqeq12d imbitrid necon3d mpi ) ABCZDEFAGHZEFIUDUEEDEUEEJUEAKZGH
-    ZLMZEUGLMZJUDDEJUEEUGLNUDUHDUIEAOUDUGUDUFBCUGBCAPUFRQSTUAUBUC $.
 
   $( The exponential of the opposite is the inverse of the exponential.
      (Contributed by Mario Carneiro, 10-May-2014.) $)
