@@ -886374,24 +886374,6 @@ $)
   $}
 
   ${
-    $d A a b t $.  $d B a b t $.  $d M a b t $.
-    liougb4addled.1 $e |- ( ph -> A e. NN ) $.
-    liougb4addled.2 $e |- ( ph -> B e. NN ) $.
-    liougb4addled.3 $e |- ( ph -> M = ( A + B ) ) $.
-    liougb4addled.4 $e |- ( ph -> ( lam ` A ) = 1 ) $.
-    liougb4addled.5 $e |- ( ph -> ( lam ` B ) = 1 ) $.
-    liougb4addled.6 $e |- ( ph -> A < B ) $.
-    liougb4addled.7 $e |- ( ph -> -. 3 || M ) $.
-    $( Strictly ordered summands with Liouville value one produce a
-       negative-negative pair at four times their sum, when three does not
-       divide that sum.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    liougb4addled $p |- ( ph -> E. a e. NN E. b e. NN
-      ( ( 4 x. M ) = ( a + b ) /\
-        ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
-      ( liougb4pospaird ) ABCDEFGHIJKMN $.
-  $}
-
-  ${
     $d A a b $.  $d B a b $.  $d M a b $.
     liougb4addnegd.1 $e |- ( ph -> A e. NN ) $.
     liougb4addnegd.2 $e |- ( ph -> B e. NN ) $.
@@ -886758,56 +886740,6 @@ $)
       wcel cn fzossnn sselid lioumodmuldlem4 mpd rspcfvovd ) APQEDRZCUADSSEFAEC
       UBUCZCPUDZUAUCUEEVBSTDRUTVBDRSTUFUGPQUHAEUICUJTZUMVAKEUICUKULABPCDEGHIJNO
       AVCUNECUOKUPUQURLMUS $.
-  $}
-
-  ${
-    $d F i j $.  $d F i k z $.  $d N a b i j $.  $d N i k z $.  $d N i j x $.
-    $d P a b i j $.  $d P i k z $.  $d P i j x $.  $d Z a b i j $.
-    $d Z i j x $.  $d Z i z $.  $d i j ph $.
-    lioumodmuldlem2.1 $e |- F = ( x e. ZZ |-> ( lam ` ( x mod P ) ) ) $.
-    lioumodmuldlem2.2 $e |- ( ph -> P e. Prime ) $.
-    lioumodmuldlem2.3 $e |- ( ph -> N e. ( 1 ..^ P ) ) $.
-    lioumodmuldlem2.4 $e |- ( ph -> Z e. ZZ ) $.
-    lioumodmuldlem2.5 $e |- ( ph -> -. P || Z ) $.
-    lioumodmuldlem2.6 $e |- ( ph -> 1 < N ) $.
-    lioumodmuldlem2.7 $e |- ( ph -> -. E. a e. NN E. b e. NN
-      ( ( 4 x. P ) = ( a + b ) /\
-        ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
-    lioumodmuldlem2.8 $e |- ( ph -> -. 3 || P ) $.
-    lioumodmuldlem2.9 $e |- ( ph -> A. k e. ( 1 ..^ N ) A. z e. ZZ
-      ( -. P || z -> ( F ` ( k x. z ) ) = ( ( F ` k ) x. ( F ` z ) ) ) ) $.
-    $( For a multiplier ` N ` greater than one, multiplicativity of the residue
-       function of ~ lioumodval at all smaller positive multipliers implies the
-       identity at ` N ` and ` Z ` , under the displayed missing-pair
-       hypotheses.  This follows directly from ~ lioumodmuld .  (Contributed by
-       Zhi Wang, 17-Oct-2026.) $)
-    lioumodmuldlem2 $p |- ( ph ->
-      ( F ` ( N x. Z ) ) = ( ( F ` N ) x. ( F ` Z ) ) ) $=
-      ( lioumodmuld ) ABDFGHIJKLMNOQRT $.
-  $}
-
-  ${
-    $d F k z $.  $d N a b $.  $d N k z $.  $d N x $.  $d P a b $.  $d P k z $.
-    $d P x $.  $d Z a b $.  $d Z x $.  $d Z z $.
-    lioumodmuldlem3.1 $e |- F = ( x e. ZZ |-> ( lam ` ( x mod P ) ) ) $.
-    lioumodmuldlem3.2 $e |- ( ph -> P e. Prime ) $.
-    lioumodmuldlem3.3 $e |- ( ph -> N e. ( 1 ..^ P ) ) $.
-    lioumodmuldlem3.4 $e |- ( ph -> Z e. ZZ ) $.
-    lioumodmuldlem3.5 $e |- ( ph -> -. P || Z ) $.
-    lioumodmuldlem3.6 $e |- ( ph -> -. E. a e. NN E. b e. NN
-      ( ( 4 x. P ) = ( a + b ) /\
-        ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
-    lioumodmuldlem3.7 $e |- ( ph -> -. 3 || P ) $.
-    lioumodmuldlem3.8 $e |- ( ph -> A. k e. ( 1 ..^ N ) A. z e. ZZ
-      ( -. P || z -> ( F ` ( k x. z ) ) = ( ( F ` k ) x. ( F ` z ) ) ) ) $.
-    $( The residue function satisfies
-       ` ( F `` ( N x. Z ) ) = ( ( F `` N ) x. ( F `` Z ) ) ` under the
-       displayed missing-pair and smaller-multiplier hypotheses.  This follows
-       from ~ lioumodmuld for the residue function of ~ lioumodval .
-       (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    lioumodmuldlem3 $p |- ( ph ->
-      ( F ` ( N x. Z ) ) = ( ( F ` N ) x. ( F ` Z ) ) ) $=
-      ( lioumodmuld ) ABDFGHIJKLMNOPQS $.
   $}
 
   ${
@@ -888502,40 +888434,6 @@ $)
   $}
 
   ${
-    $d F k z $.  $d F r $.  $d N a b $.  $d N r $.  $d N x $.  $d N z $.
-    $d P a b $.  $d P k z $.  $d P x $.  $d Q a b $.  $d Q k z $.  $d Q r $.
-    $d Q x $.
-    liouoddmuldlem5.1 $e |- F = ( x e. ZZ |->
-      if ( ( x mod P ) < ( P / 2 ) , ( lam ` ( x mod P ) ) ,
-        -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
-    liouoddmuldlem5.2 $e |- ( ph -> P e. Prime ) $.
-    liouoddmuldlem5.3 $e |- ( ph -> 3 < P ) $.
-    liouoddmuldlem5.4 $e |- ( ph -> Q e. NN ) $.
-    liouoddmuldlem5.5 $e |- ( ph -> ( 2 x. Q ) < P ) $.
-    liouoddmuldlem5.6 $e |- ( ph -> 1 < Q ) $.
-    liouoddmuldlem5.7 $e |- ( ph -> -. 3 || Q ) $.
-    liouoddmuldlem5.8 $e |- ( ph -> N e. NN ) $.
-    liouoddmuldlem5.9 $e |- ( ph -> ( 2 x. N ) < P ) $.
-    liouoddmuldlem5.10 $e |- ( ph -> -. E. a e. NN E. b e. NN
-      ( ( 2 x. P ) = ( a + b ) /\
-        ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    liouoddmuldlem5.11 $e |- ( ph -> A. k e. ( 1 ..^ Q ) A. z e. ZZ
-      ( -. P || z -> ( F ` ( k x. z ) ) = ( ( F ` k ) x. ( F ` z ) ) ) ) $.
-    liouoddmuldlem5.12 $e |- ( ph ->
-      A. r e. ( 1 ..^ N ) ( F ` ( Q x. r ) ) = ( ( F ` Q ) x. ( F ` r ) ) ) $.
-    $( The smaller-argument and smaller-multiplier hypotheses imply
-       multiplicativity of the odd completion of ~ liouoddval at ` Q ` and
-       ` N ` , for a positive multiplier ` Q < ( P / 2 ) ` greater than one and
-       not divisible by three.  The second factor is positive and below
-       ` ( P / 2 ) ` .  Here ` P ` is a prime greater than three whose double
-       has no positive-positive pair.  This follows directly from
-       ~ liouoddmuldlem7 .  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    liouoddmuldlem5 $p |- ( ph ->
-      ( F ` ( Q x. N ) ) = ( ( F ` Q ) x. ( F ` N ) ) ) $=
-      ( liouoddmuldlem7 ) ABCDEFGHJKLMNOPQRUAUBSTUD $.
-  $}
-
-  ${
     $d A x $.  $d P x $.  $d Q x $.
     liouoddmulrefld.1 $e |- F = ( x e. ZZ |->
       if ( ( x mod P ) < ( P / 2 ) , ( lam ` ( x mod P ) ) ,
@@ -888736,36 +888634,6 @@ $)
       mpd ) AQUADEUBZCUCERRDFADCSUDTUEUFZCQUGZUCUFUHDVHRTEUBVFVHEUBRTUIUJQUAUKA
       SDRTCUEUFVGMADCSADLULACACUMUNCUOUNJCUPUQULSURUNAUSUTVAVBABQCDEGHIJKPLVCVE
       NOVD $.
-  $}
-
-  ${
-    $d A x $.  $d F k z $.  $d P a b $.  $d P k z $.  $d P x $.  $d Q a b $.
-    $d Q k z $.  $d Q x $.
-    liouoddmuldlem8.1 $e |- F = ( x e. ZZ |->
-      if ( ( x mod P ) < ( P / 2 ) , ( lam ` ( x mod P ) ) ,
-        -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
-    liouoddmuldlem8.2 $e |- ( ph -> P e. Prime ) $.
-    liouoddmuldlem8.3 $e |- ( ph -> 3 < P ) $.
-    liouoddmuldlem8.4 $e |- ( ph -> Q e. NN ) $.
-    liouoddmuldlem8.5 $e |- ( ph -> ( 2 x. Q ) < P ) $.
-    liouoddmuldlem8.6 $e |- ( ph -> 1 < Q ) $.
-    liouoddmuldlem8.7 $e |- ( ph -> -. 3 || Q ) $.
-    liouoddmuldlem8.8 $e |- ( ph -> -. E. a e. NN E. b e. NN
-      ( ( 2 x. P ) = ( a + b ) /\
-        ( lam ` a ) = 1 /\ ( lam ` b ) = 1 ) ) $.
-    liouoddmuldlem8.9 $e |- ( ph -> A. k e. ( 1 ..^ Q ) A. z e. ZZ
-      ( -. P || z -> ( F ` ( k x. z ) ) = ( ( F ` k ) x. ( F ` z ) ) ) ) $.
-    liouoddmuldlem8.10 $e |- ( ph -> A e. ( 1 ..^ P ) ) $.
-    $( The odd completion of ~ liouoddval is multiplicative at ` Q ` and each
-       positive canonical residue, under the displayed smaller-multiplier
-       hypotheses.  Use ~ fzo1ndvdsd to obtain the nondivisibility hypothesis
-       of ~ liouoddmulhalfd .  Here ` P ` is a prime greater than three whose
-       double has no positive-positive pair.  (Contributed by Zhi Wang,
-       20-Oct-2026.) $)
-    liouoddmuldlem8 $p |- ( ph ->
-      ( F ` ( Q x. A ) ) = ( ( F ` Q ) x. ( F ` A ) ) ) $=
-      ( c1 cfzo co cn fzossnn sselid nnzd fzo1ndvdsd liouoddmulhalfd ) ABEFHDIJ
-      KLMNOADAUAEUBUCUDDEUETUFUGADETUHRUI $.
   $}
 
   ${
@@ -888983,7 +888851,9 @@ $)
        Liouville's function.  Double both summands of the positive-positive
        pair at twice the prime given by ~ liougbprmd .  Since Liouville's
        function is minus one at two by ~ liou2 , scaling by two changes both
-       signs by ~ lioupairmulimd .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+       signs by ~ lioupairmulimd .  For an independent proof by residue
+       descent, see ~ liougb4prmgt3dALT .  (Contributed by Zhi Wang,
+       17-Oct-2026.) $)
     liougb4prmgt3d $p |- ( ph -> E. a e. NN E. b e. NN
       ( ( 4 x. P ) = ( a + b ) /\
         ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
@@ -888994,6 +888864,32 @@ $)
       AKMGLNOPMHLNOPMQHRSGRSVLABGHEFUBAHGPVIIVFCDIRTAUEUFPINOZJKZVIMAVPPVIJKVIV
       OVIPJUGUHVIUIUJUKUFULUMAVGVMMVLVNUOAVGIIJKZBJKVMAIBIAUNZABABUPTBRTEBUQURU
       SVRUTVQUDBJVAVBVCVIVMVGCDVDURVE $.
+  $}
+
+  ${
+    $d P a b r $.  $d P r x $.  $d ph r $.
+    liougb4prmgt3dALT.1 $e |- ( ph -> P e. Prime ) $.
+    liougb4prmgt3dALT.2 $e |- ( ph -> 3 < P ) $.
+    $( Alternate proof of ~ liougb4prmgt3d by gap descent and quadratic
+       residues.  This proof uses no theorem from the subsection "Odd
+       completion and multiplicativity", directly or indirectly.  Substituting
+       this result for ~ liougb4prmgt3d in the proof of ~ liougb4nnd gives a
+       proof of ~ liougb4 that also uses no theorem from that subsection,
+       directly or indirectly.  (Contributed by Zhi Wang, 20-Nov-2026.)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
+    liougb4prmgt3dALT $p |- ( ph -> E. a e. NN E. b e. NN
+      ( ( 4 x. P ) = ( a + b ) /\
+        ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
+      ( vr co cv wceq cliou cfv c1 cn wa clt wbr cprime wcel adantr c4 cmul w3a
+      caddc cneg wrex wn c2 cdiv clgs csn cdif cdvds prmgt3factsd simpld simprd
+      c3 simpr lioumodhalfoddd oddprmqrhalfexd simprrr simprl gausslemma2dlem0a
+      cz prmz syl zred cr nnred rehalfcld simprrl nnrpd rphalflt lioumodprmnqrd
+      crp lttrd pm2.21dd rexlimddv pm2.18da ) AUABUBHCIZDIZUDHJVTKLMUEZJWAKLWBJ
+      UCDNUFCNUFZAWCUGZOZGIZBUHUIHZPQZWFBUJHMJZOZWCGRWEBGABRUHUKULSZWDAWKUQBUMQ
+      UGZABEFUNZUOTZWEBCDWNAWDURZAWLWDAWKWLWMUPTZUSAUQBPQWDFTUTWEWFRSZWJOZOZWIW
+      CWEWQWHWIVAWSBWFCDWEWKWRWNTWEWQWJVBZWSWFWGBWSWFWSWQWFVDSWTWFVEVFVGWEWGVHS
+      WRWEBWEBWEBWNVCZVIZVJTWEBVHSWRXBTWEWQWHWIVKWEWGBPQZWRWEBVOSXCWEBXAVLBVMVF
+      TVPWEWDWRWOTWEWLWRWPTVNVQVRVS $.
   $}
 
   ${
@@ -889026,48 +888922,6 @@ $)
       YSSZXOGFYBXTYSYGUKZUUEVIVJXOVIXARUUEWCWDVJXARUUEWEWDUUEXOUUEXTXOPRUUFXOVG
       TWFVIVJWGUIUUEWHWDUUEYSVJXOWIUIYBYSURVJXOWJTWLWKYBXTYLYRYSWMYGXOWNTWOWPYB
       YEXFKYFXKVSYBYDBLMYBBXOYBBYJWQYBXOYHWQYBXOYHWRWSVNXHXFYECDVQTWTXBXC $.
-  $}
-
-  ${
-    $d P a b $.
-    liougb4prmd.1 $e |- ( ph -> P e. Prime ) $.
-    $( The quadruple of every prime has a negative-negative pair for
-       Liouville's function.  This follows from ~ liougb4nnd because every
-       prime is a positive integer.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    liougb4prmd $p |- ( ph -> E. a e. NN E. b e. NN
-      ( ( 4 x. P ) = ( a + b ) /\
-        ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
-      ( cprime wcel cn prmnn syl liougb4nnd ) ABCDABFGBHGEBIJK $.
-  $}
-
-  ${
-    $d A a b u v $.  $d P a b u v $.  $d ph u v $.
-    liougb4prmdivd.1 $e |- ( ph -> A e. NN ) $.
-    liougb4prmdivd.2 $e |- ( ph -> P e. Prime ) $.
-    liougb4prmdivd.3 $e |- ( ph -> P || A ) $.
-    liougb4prmdivd.4 $e |- ( ph -> ( lam ` A ) = -u 1 ) $.
-    $( A given prime divisor ` P ` of a positive integer ` A ` with Liouville
-       value minus one yields a negative-negative pair at ` ( 4 x. A ) ` .
-       This follows directly from ~ liougb4nnd .  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    liougb4prmdivd $p |- ( ph -> E. a e. NN E. b e. NN
-      ( ( 4 x. A ) = ( a + b ) /\
-        ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
-      ( liougb4nnd ) ABDEFJ $.
-  $}
-
-  ${
-    $d A a b p $.  $d p ph $.
-    liougb4negd.1 $e |- ( ph -> A e. NN ) $.
-    liougb4negd.2 $e |- ( ph -> ( lam ` A ) = -u 1 ) $.
-    $( If Liouville's function is negative at a positive integer, its quadruple
-       is a sum of two positive integers at which the function is negative.
-       Apply ~ liougb4nnd to the given positive integer.  (Contributed by Zhi
-       Wang, 17-Oct-2026.) $)
-    liougb4negd $p |- ( ph -> E. a e. NN E. b e. NN
-      ( ( 4 x. A ) = ( a + b ) /\
-        ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
-      ( liougb4nnd ) ABCDEG $.
   $}
 
   ${
@@ -889217,26 +889071,6 @@ $)
   $}
 
   ${
-    $d A a b $.  $d Q a b $.
-    liougb3qdivd.1 $e |- ( ph -> A e. NN ) $.
-    liougb3qdivd.2 $e |- ( ph -> -. 2 || A ) $.
-    liougb3qdivd.3 $e |- ( ph -> ( lam ` A ) = 1 ) $.
-    liougb3qdivd.4 $e |- ( ph -> 3 || A ) $.
-    liougb3qdivd.5 $e |- ( ph -> Q e. Prime ) $.
-    liougb3qdivd.6 $e |- ( ph -> Q || ( A / 3 ) ) $.
-    $d A w $.  $d A z $.  $d Q w $.  $d Q z $.  $d a w $.  $d a z $.  $d b w $.
-    $d b z $.  $d ph w $.  $d ph z $.  $d w z $.
-    $( For an odd positive integer ` A ` divisible by three with Liouville
-       value one, a prime divisor of ` ( A / 3 ) ` supplies a negative-negative
-       pair at twice ` A ` .  Apply ~ liougb3divd to the given odd multiple of
-       three.  (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    liougb3qdivd $p |- ( ph -> E. a e. NN E. b e. NN
-      ( ( 2 x. A ) = ( a + b ) /\
-        ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
-      ( liougb3divd ) ABDEFGHIL $.
-  $}
-
-  ${
     $d A a b $.  $d P a b $.
     liougboddprmdivd.1 $e |- ( ph -> A e. NN ) $.
     liougboddprmdivd.2 $e |- ( ph -> -. 2 || A ) $.
@@ -889284,21 +889118,6 @@ $)
       KWBWDUHZPZGJBUCIZVSGULWIBGAVTWAWHETZANBUMIWAWHFTUOWIGJULQZWJPZPBGJCDWIVTW
       MWKRAWAWHWMUPWIWCNKZWMWIWNWCVRUQZWIWCVRWBWHSURWIVTBUSUTVFVAQZWNWOVBWKBVCW
       PWNWHWOWPWDWCNBVDVEWCVRVGVHVIVJRWIWLWJVKWIWLWJVOVLVMVNVN $.
-  $}
-
-  ${
-    $d A a b p $.  $d p ph $.
-    liougboddposd.1 $e |- ( ph -> A e. NN ) $.
-    liougboddposd.2 $e |- ( ph -> 1 < A ) $.
-    liougboddposd.3 $e |- ( ph -> -. 2 || A ) $.
-    liougboddposd.4 $e |- ( ph -> ( lam ` A ) = 1 ) $.
-    $( An odd positive integer greater than one with value one under
-       Liouville's function has a negative-negative pair at its double.
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    liougboddposd $p |- ( ph -> E. a e. NN E. b e. NN
-      ( ( 2 x. A ) = ( a + b ) /\
-        ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $=
-      ( liougb2nnd ) ABCDEFI $.
   $}
 
   ${
