@@ -6415,6 +6415,7 @@
 "erngset-rN" is used by "erngbase-rN".
 "erngset-rN" is used by "erngfmul-rN".
 "erngset-rN" is used by "erngfplus-rN".
+"eu6wOLD" is used by "euabsn2wOLD".
 "eufndx" is used by "basendxneufndx".
 "eufndx" is used by "cnfldfunALT".
 "eufndx" is used by "cnfldstr".
@@ -16664,8 +16665,11 @@ New usage of "erngplus2-rN" is discouraged (0 uses).
 New usage of "erngring-rN" is discouraged (0 uses).
 New usage of "erngset-rN" is discouraged (3 uses).
 New usage of "et-ltneverrefl" is discouraged (0 uses).
+New usage of "eu6wOLD" is discouraged (1 uses).
+New usage of "euabsn2wOLD" is discouraged (0 uses).
 New usage of "eufndx" is discouraged (3 uses).
 New usage of "eujustALT" is discouraged (0 uses).
+New usage of "eusnOLD" is discouraged (0 uses).
 New usage of "euxfr" is discouraged (0 uses).
 New usage of "euxfr2" is discouraged (1 uses).
 New usage of "ex-decpmul" is discouraged (0 uses).
@@ -20403,7 +20407,10 @@ Proof modification of "equncomiVD" is discouraged (19 steps).
 Proof modification of "equs5aALT" is discouraged (25 steps).
 Proof modification of "equs5eALT" is discouraged (39 steps).
 Proof modification of "equsexALT" is discouraged (37 steps).
+Proof modification of "eu6wOLD" is discouraged (342 steps).
+Proof modification of "euabsn2wOLD" is discouraged (42 steps).
 Proof modification of "eujustALT" is discouraged (188 steps).
+Proof modification of "eusnOLD" is discouraged (34 steps).
 Proof modification of "ex-decpmul" is discouraged (304 steps).
 Proof modification of "ex-natded5.13" is discouraged (67 steps).
 Proof modification of "ex-natded5.13-2" is discouraged (21 steps).
@@ -21499,6 +21506,7 @@ Proof modification of "xpexgALT" is discouraged (84 steps).
 Proof modification of "xrge0tmdALT" is discouraged (166 steps).
 Proof modification of "zerdivemp1x" is discouraged (364 steps).
 Proof modification of "zexALT" is discouraged (34 steps).
+Proof modification of "zfac2" is discouraged (787 steps).
 Proof modification of "zfausclOLD" is discouraged (62 steps).
 Proof modification of "zfcndac" is discouraged (256 steps).
 Proof modification of "zfcndext" is discouraged (19 steps).
