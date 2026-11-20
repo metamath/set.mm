@@ -882292,7 +882292,8 @@ $(
   ~ df-bom .  Liouville's function ` lam ` is defined on all rationals in
   ~ df-liou , with value zero at zero.  The section develops their rational
   identities, positive-integer properties, and Goldbach applications.
-  Characterizations are given in ~ bomuniq , ~ liouuniq , and ~ liouuniq2 .
+  Characterizations are given in ~ bomuniq , ~ bomuniq2 , ~ liouuniq , and
+  ~ liouuniq2 .
 
   In the Goldbach results, a pair consists of two positive integers summing to
   the target.  A positive-positive pair has both Liouville values equal to
@@ -884067,7 +884068,7 @@ $)
        Acta Arithmetica 205 (2022), no. 4, 341-370,
        ~ https://arxiv.org/abs/2111.01012v2 .  It is the unique homomorphism
        from the nonzero rationals under multiplication to the integers under
-       addition that maps every prime to one; see ~ bomuniq .
+       addition that maps every prime to one; see ~ bomuniq2 .
 
        The signed prime Omega function can equivalently be obtained by
        extending the prime Omega function first to nonzero integers by absolute
@@ -884673,12 +884674,13 @@ $)
     $d F a b c y $.  $d F a b x y z $.  $d d y z $.  $d n p x $.  $d p x y z $.
     $( Characterize the signed prime Omega function among complex-valued
        functions on the nonzero rationals by complete additivity and the value
-       one on primes.  This proves the homomorphism characterization stated in
-       ~ df-bom .  Prime factorization determines the values on positive
+       one on primes.  Prime factorization determines the values on positive
        integers.  Squaring a nonzero numerator makes it positive and doubles
        its function value.  The numerator and denominator then determine the
-       value at any nonzero rational.  (Contributed by Zhi Wang,
-       27-Oct-2026.) $)
+       value at any nonzero rational.  For the alternate version restricted to
+       integer-valued functions, which is the homomorphism characterization
+       stated in ~ df-bom , see ~ bomuniq2 .  (Contributed by Zhi Wang,
+       20-Nov-2026.) $)
     bomuniq $p |- ( F = Omega <->
       ( F : ( QQ \ { 0 } ) --> CC /\
         A. a e. ( QQ \ { 0 } ) A. b e. ( QQ \ { 0 } )
@@ -884720,6 +884722,28 @@ $)
       YIYJUVAELUVDMNZAOZUVOUXNUVAUUEUYJUVOJELDLMNAOUVBUUCPNJCDELUVDYRYRCLELDLUU
       CAMPWEDLUVDELUVBAMPWFUXGUVGUVMWIUVAUYIUXMAUVAUVJUYIUXMJUVKELYKWCZYFYLUVAU
       YIIOZUVPUXOUVAUUTUVHUYLUVPJUVGUVMELUVDUOWPUVAUYIUXMIUYKYFYLXNYLYMYOYP $.
+  $}
+
+  ${
+    $d F a b $.  $d F p $.
+    $( Characterize the signed prime Omega function among integer-valued
+       functions on the nonzero rationals by complete additivity and the value
+       one on primes.  This proves the homomorphism characterization stated in
+       ~ df-bom .  Alternate version of ~ bomuniq , which admits complex-valued
+       functions.  It follows from that theorem because an integer-valued
+       function is complex-valued by ~ zsscn , and the signed prime Omega
+       function is integer-valued by ~ bomf .  (Contributed by Zhi Wang,
+       27-Oct-2026.) $)
+    bomuniq2 $p |- ( F = Omega <->
+      ( F : ( QQ \ { 0 } ) --> ZZ /\
+        A. a e. ( QQ \ { 0 } ) A. b e. ( QQ \ { 0 } )
+          ( F ` ( a x. b ) ) = ( ( F ` a ) + ( F ` b ) ) /\
+        A. p e. Prime ( F ` p ) = 1 ) ) $=
+      ( cbom wceq cq cc0 csn cdif cz wf cv cmul co cfv caddc wral w3a cc cprime
+      bomf feq1 mpbiri bomuniq simp2bi simp3bi 3jca wss zsscn fss mpan2 biimpri
+      c1 syl3an1 impbii ) AEFZGHIJZKALZCMDMNOAPCMAPDMAPQOFDURRCURRZBMAPUNFBUARZ
+      SUQUSUTVAUQUSURKELUBURKAEUCUDUQURTALZUTVAABCDUEZUFUQVBUTVAVCUGUHUSVBUTVAU
+      QUSKTUIVBUJURKTAUKULUQVBUTVASVCUMUOUP $.
   $}
 
   $c lam $.
