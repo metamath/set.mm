@@ -183721,6 +183721,51 @@ $)
   $}
 
   ${
+    $d .x. f g k x $.  $d .x. f u x $.  $d .x. f w x z $.  $d .xb f u x $.
+    $d B f g k x $.  $d B p $.  $d B f u x $.  $d B f w x z $.
+    $d D f g k x y $.  $d D f u x $.  $d D f w x y z $.  $d F f x $.  $d I a $.
+    $d I f g h k x y $.  $d I p $.  $d I f h w x y z $.  $d K f u x $.
+    $d R a $.  $d R f g k x $.  $d R p $.  $d R f w x z $.  $d S a $.
+    $d S f x $.  $d X f x $.  $d b d f g h i k r x y $.
+    psrvsca.s $e |- S = ( I mPwSer R ) $.
+    psrvsca.n $e |- .xb = ( .s ` S ) $.
+    psrvsca.k $e |- K = ( Base ` R ) $.
+    psrvsca.b $e |- B = ( Base ` S ) $.
+    psrvsca.m $e |- .x. = ( .r ` R ) $.
+    psrvsca.d $e |- D = { h e. ( NN0 ^m I ) | ( `' h " NN ) e. Fin } $.
+    $( The scalar multiplication operation of the multivariate power series
+       structure.  (Contributed by Mario Carneiro, 28-Dec-2014.)  (Revised by
+       Mario Carneiro, 2-Oct-2015.)  (Proof shortened by AV, 2-Nov-2024.) $)
+    psrvscafval $p |- .xb = ( x e. K , f e. B |->
+      ( ( D X. { x } ) oF .x. f ) ) $=
+      ( wcel cvv cfv vu va vi vr vd vb vg vk vy vp vz vw cv csn cxp cof co cmpo
+      wa cvsca wex vscaslid slotm cmps ccnv cn cima cfn cn0 cmap cbs cnx cplusg
+      crab cop cres cmulr cle cofr wbr cmin cmpt cgsu ctp cts ctopn cpt cun csb
+      csca df-psr elmpocl eleq2s exlimiv syl eqid elmpom2 basm c1 simpl psrbasg
+      c9 simpr psrplusg psrmulr eqidd psrval basfn fnpsr fnovex mp3an1 eqeltrid
+      wfn funfvex funfni sylancr plusgslid mulrslid mpoexga syl2anc fnmap nn0ex
+      slotex mp3an12i rabexd topnfn snexg xpexd ptex psrvalstrd wss ssun2 sstri
+      snsstp2 a1i strslfv3 eleq2d pm5.21nii eqriv ) UAFAHKBCAUMZUNZUOHUMZGUPUQZ
+      URZUAUMZFRJSRZDSRZUSZUUEUUDRZUUHUUEEUTTZFUUEUUJRUBUMZERZUBVAZUUHUUEUBUTEV
+      BVCUULUUHUBUUHUUKJDVDUQZEUCUDSSUEIUMVEVFVGVHRZIVIUCUMVJUQVNUFUDUMZVKTZUEU
+      MZVJUQVLVKTZUFUMZVOVLVMTZUUPVMTUPUUTUUTUOVPVOVLVQTZHUGUUTUUTUHUURUUPAUIUM
+      UHUMZVRVSVTUIUURVNYTUUBTUVCYTWAUPUQUGUMTUUPVQTZUQWBWCUQWBURVOWDVLWJTZUUPV
+      OVLUTTZAHUUQUUTUURUUAUOUUBUVDUPUQURVOVLWETZUURUUPWFTUNUOWGTVOWDWHWIWIJDVD
+      UUKAUIHUGIUCUHUDUFUEWKWLLWMWNZWOMWMUUIUJUMZBRZUJVAUUHAHUJKBUUCUUEUUDUUDWP
+      ZWQUVJUUHUJUVJUUMUUHUVIBUBEOWRUVHWOWNWOUUHFUUDUUEUUHFUUDUUSBVOUVAEVMTZVOU
+      VBEVQTZVOWDZUVEDVOZUVFUUDVOZUVGCDWFTZUNZUOZWGTZVOZWDZWHZEUTSWSXBVOUUHAUIB
+      CDVMTZUVLDEUUDGUVMHUKIULJUVTKUVQSSLNUWDWPZPUVQWPQUUHBCDEIJKSSLNQOUUFUUGWT
+      ZUUFUUGXCZXABUWDUVLDEJLOUWEUVLWPXDAUIBCDEUVMGHUKIULJLOPUVMWPQXEUVKUUHUVTX
+      FUWFUWGXGUUHBSUVLSDUUDUVMUVTSSSSUUHBEVKTZSOUUHVKSXMZESRZUWHSRZXHUUHEUUNSL
+      VDSSUOZXMUUFUUGUUNSRXIJDSSVDXJXKXLZUWKSEVKEVKXNXOXPXLZUUHUWJUVLSRUWMEVMSX
+      QYCWOUUHUWJUVMSRUWMEVQSXRYCWOUWGUUHKSRBSRUUDSRUUHKDVKTZSNUUHUWIUUGUWOSRZX
+      HUWGUWPSDVKDVKXNXOXPXLUWNAHKBUUCSSXSXTZUUHUVSSRUVTSRUUHCUVRSSUUHUUOIVIJVJ
+      UQZCSQVJUWLXMVISRUUHUUFUWRSRYAYBUWFVIJSSVJXJYDYEUUHUVQSRZUVRSRUUHWFSXMUUG
+      UWSYFUWGUWSSDWFDWFXNXOXPUVQSYGWOYHUVSSYIWOYJVBUVPUNZUWCYKUUHUWTUWBUWCUVOU
+      VPUWAYNUWBUVNYLYMYOUWQMYPYQYRYS $.
+  $}
+
+  ${
     $d x .0. $.  $d r s t x y z ph $.  $d r s t x y z R $.  $d r s t x y z S $.
     $d x D $.  $d f x y z I $.  $d x y N $.  $d x y X $.
     psrgrp.s $e |- S = ( I mPwSer R ) $.
