@@ -183806,6 +183806,32 @@ $)
   $}
 
   ${
+    $d f x y I $.  $d x y K $.  $d x y ph $.  $d x y R $.  $d x y X $.
+    $d y F $.
+    psrvscacl.s $e |- S = ( I mPwSer R ) $.
+    psrvscacl.n $e |- .x. = ( .s ` S ) $.
+    psrvscacl.k $e |- K = ( Base ` R ) $.
+    psrvscacl.b $e |- B = ( Base ` S ) $.
+    psrvscacl.r $e |- ( ph -> R e. Ring ) $.
+    psrvscacl.x $e |- ( ph -> X e. K ) $.
+    psrvscacl.y $e |- ( ph -> F e. B ) $.
+    $( Closure of the power series scalar multiplication operation.
+       (Contributed by Mario Carneiro, 29-Dec-2014.) $)
+    psrvscacl $p |- ( ph -> ( X .x. F ) e. B ) $=
+      ( vf wcel co cvv vx vy cv ccnv cn cima cfn cn0 cmap csn cxp cmulr cfv cof
+      crab wf crg eqid ringcl 3expb sylan fconst6g syl psrelbas wfn fnmap nn0ex
+      wa cmps reldmpsr wrel fnpsr fnrel ax-mp relelbasov simpld fnovex mp3an12i
+      rabexd inidm off cbs basfn funfvex funfni sylancr eqeltrid elmapd psrvsca
+      elexd mpbird psrbasg 3eltr4d ) AQUCUDUEUFUGRZQUHGUISZUOZIUJUKZFCULUMZUNSZ
+      HWPUISZIFESBAWSWTRWPHWSUPAUAUBWPWPWPWRHHHWQFTTACUQRZUAUCZHRZUBUCZHRZVHXBX
+      DWRSHRZNXAXCXEXFHCWRXBXDLWRURZUSUTVAAIHRWPHWQUPOWPIHVBVCABWPCDQGHFJLWPURZ
+      MPVDAWNQWOWPTXHUITTUKZVEUHTRAGTRZWOTRVFVGAXJCTRZAFBRXJXKVHPFBDVIGCVJVIXIV
+      EVIVKVLXIVIVMVNJMVOVCVPZUHGTTUIVQVRVSZXMWPVTWAAHWPWSTTAHCWBUMZTLAWBTVEXKX
+      NTRZWCACUQNWJXOTCWBCWBWDWEWFWGXMWHWKABWPCDEWRQFGHIJKLMXGXHOPWIABWPCDQGHTU
+      QJLXHMXLNWLWM $.
+  $}
+
+  ${
     $d x .0. $.  $d r s t x y z ph $.  $d r s t x y z R $.  $d r s t x y z S $.
     $d x D $.  $d f x y z I $.  $d x y N $.  $d x y X $.
     psrgrp.s $e |- S = ( I mPwSer R ) $.
