@@ -198705,6 +198705,16 @@ $)
       $.
   $}
 
+  $( The greatest common divisor of a nonzero integer and a prime number is
+     either 1 or the prime number itself.  (Contributed by SN, 15-Nov-2026.) $)
+  gcdprime $p |- ( ( M e. ZZ /\ P e. Prime )
+                   -> ( ( M gcd P ) = 1 \/ ( M gcd P ) = P ) ) $=
+    ( cz wcel cprime wa cgcd co wceq c1 cdvds wbr wo prmz gcddvds simprd sylan2
+    cn wb simpr cc0 wne prmnn nnne0d gcd2n0cl syl3an3 syl3an2 dvdsprime syl2anc
+    3anidm23 mpbid orcomd ) BCDZAEDZFZBAGHZAIZUPJIZUOUPAKLZUQURMZUNUMACDZUSANZU
+    MVAFUPBKLUSBAOPQUOUNUPRDZUSUTSUMUNTUMUNVCUNUMVAUNVCVBUNUMVAAUAUBVCUNAAUCUDB
+    AUEUFUGUJAUPUHUIUKUL $.
+
   ${
     $d x A $.  $d x B $.
     $( A product of two integers greater than one is composite.  (Contributed
@@ -199709,28 +199719,39 @@ $)
     BGHZIJAIJBGHKOLJALJBGHKABMN $.
 
   ${
+    expgt0b.n $e |- ( ph -> A e. RR ) $.
+    expgt0b.m $e |- ( ph -> N e. NN ) $.
+    expgt0b.1 $e |- ( ph -> -. 2 || N ) $.
+    $( A real number ` A ` raised to an odd integer power is positive iff it is
+       positive.  (Contributed by SN, 4-Mar-2023.)  Use the more standard
+       ` -. 2 || N ` (Revised by Thierry Arnoux, 14-Jun-2025.) $)
+    expgt0b $p |- ( ph -> ( 0 < A <-> 0 < ( A ^ N ) ) ) $=
+      ( cc0 clt wbr cexp co wa wcel adantr simpr syl3anc ex wn wceq breq2d nnzd
+      cr cz expgt0 wo 0red lttrid notbid notnotr 0re ltnri mtbiri eqcomd oveq1d
+      0expd mtbird renegcld cc cn c2 cdvds recnd oexpneg biimpd nnnn0d reexpcld
+      cneg pm2.46 biimtrdi 3syld lt0neg1d lt0neg2d 3imtr4d jaod syl5 impcon4bid
+      sylbid ) AGBHIZGBCJKZHIZAVRVTAVRLBUBMZCUCMZVRVTAWAVRDNAWBVRACEUAZNAVROBCU
+      DPQAVRRGBSZBGHIZUEZRZRZVTRZAVRWGAGBAUFZDUGUHWHWFAWIWFUIAWDWIWEAWDWIAWDLZV
+      TGGCJKZHIZAWMRWDAWMGGHIGUJUKAWLGGHACEUOTULNWKVSWLGHWKBGCJWKGBAWDOUMUNTUPQ
+      AGBVGZHIZVSVGZGHIZRZWEWIAWOGWNCJKZHIZGWPHIZWRAWOWTAWOLWNUBMZWBWOWTAXBWOAB
+      DUQNAWBWOWCNAWOOWNCUDPQAWTXAAWSWPGHABURMCUSMUTCVAIRWSWPSABDVBEFBCVCPTVDAX
+      AGWPSZWQUERWRAGWPWJAVSABCDACEVEVFZUQUGXCWQVHVIVJABDVKAVTWQAVSXDVLUHVMVNVO
+      VQVP $.
+  $}
+
+  ${
     oexpreposd.n $e |- ( ph -> N e. RR ) $.
     oexpreposd.m $e |- ( ph -> M e. NN ) $.
     oexpreposd.1 $e |- ( ph -> -. ( M / 2 ) e. NN ) $.
-    $( The exponential of a positive real number is positive iff the exponent
-       is odd.  (Contributed by SN, 4-Mar-2023.) $)
+    $( The exponential of a real number with an odd exponent is positive iff
+       the real number itself is positive.  For a different representation of
+       the odd exponent see ~ expgt0b .  (Contributed by SN, 4-Mar-2023.)
+       (Proof shortened by AV, 19-Nov-2026.) $)
     oexpreposd $p |- ( ph -> ( 0 < N <-> 0 < ( N ^ M ) ) ) $=
-      ( cc0 clt wbr cexp co wa cr wcel adantr simpr wn wceq cn c2 cz syl3anc ex
-      nnzd expgt0 wo lttrid notbid notnotr 0re ltnri 0expd breq2d mtbiri eqcomd
-      0red oveq1d mtbird cneg renegcld cc cdvds recnd cdiv cnumer cfv cdenom c1
-      cmul cq wb zq adantl qden1elz syl mpbird oveq2d qmuldeneqnum zcnd mulridd
-      3eqtr3rd nnred 2re a1i nngt0d 2pos divgt0d qgt0numnn syl2anr mtand evend2
-      eqeltrd oexpneg biimpd nnnn0d reexpcld biimtrdi lt0neg1d lt0neg2d 3imtr4d
-      pm2.46 3syld jaod syl5 sylbid impcon4bid ) AGCHIZGCBJKZHIZAXGXIAXGLCMNZBU
-      ANZXGXIAXJXGDOAXKXGABEUDZOAXGPCBUEUBUCAXGQGCRZCGHIZUFZQZQZXIQZAXGXPAGCAUP
-      ZDUGUHXQXOAXRXOUIAXMXRXNAXMXRAXMLZXIGGBJKZHIZAYBQXMAYBGGHIGUJUKAYAGGHABEU
-      LUMUNOXTXHYAGHXTCGBJXTGCAXMPUOUQUMURUCAGCUSZHIZXHUSZGHIZQZXNXRAYDGYCBJKZH
-      IZGYEHIZYGAYDYIAYDLYCMNZXKYDYIAYKYDACDUTOAXKYDXLOAYDPYCBUEUBUCAYIYJAYHYEG
-      HACVANBSNTBVBIZQYHYERACDVCEAYLBTVDKZUANZAYNYMSNFAYNLZYMYMVEVFZSYOYMYMVGVF
-      ZVIKZYMVHVIKYPYMYOYQVHYMVIYOYQVHRZYNAYNPZYOYMVJNZYSYNVKYNUUAAYMVLZVMZYMVN
-      VOVPVQYOUUAYRYPRUUCYMVRVOYOYMYOYMYTVSVTWAYNUUAGYMHIYPSNAUUBABTABEWBTMNAWC
-      WDABEWEGTHIAWFWDWGYMWHWIWLWJAXKYLYNVKXLBWKVOURCBWMUBUMWNAYJGYERZYFUFQYGAG
-      YEXSAXHACBDABEWOWPZUTUGUUDYFXAWQXBACDWRAXIYFAXHUUEWSUHWTXCXDXEXF $.
+      ( c2 cdvds wbr cdiv co cn wcel cz wb nnzd evend2 wa cc0 clt syl nnred crp
+      nngt0d 2rp a1i gt0divd mpbid anim1ci elnnz sylibr ex sylbid mtod expgt0b
+      ) ACBDEAGBHIZBGJKZLMZFAUPUQNMZURABNMUPUSOABEPBQUAAUSURAUSRUSSUQTIZRURAUTU
+      SASBTIUTABEUDABGABEUBGUCMAUEUFUGUHUIUQUJUKULUMUNUO $.
   $}
 
 
@@ -522932,27 +522953,6 @@ $)
     XPYBVTWAWBWCWEWNAWQXOXPYBTWFWNWTBXBFGZXAWNYLYSWTUUCWNYDYFLYJVLWNXDYMXMXDYKY
     MYNWGPWNYTWLWQFGZYSUUCWNYOWQWLFYQVRWJWMUUAWKXNYRUUAUUBWGQWNXAUUCUUDWNBWQXJX
     PYBTZWNBWQXJXPYBVSWHWBWCUUEWFWI $.
-
-  ${
-    expgt0b.n $e |- ( ph -> A e. RR ) $.
-    expgt0b.m $e |- ( ph -> N e. NN ) $.
-    expgt0b.1 $e |- ( ph -> -. 2 || N ) $.
-    $( A real number ` A ` raised to an odd integer power is positive iff it is
-       positive.  (Contributed by SN, 4-Mar-2023.)  Use the more standard
-       ` -. 2 || N ` (Revised by Thierry Arnoux, 14-Jun-2025.) $)
-    expgt0b $p |- ( ph -> ( 0 < A <-> 0 < ( A ^ N ) ) ) $=
-      ( cc0 clt wbr cexp co wa wcel adantr simpr syl3anc ex wn wceq breq2d nnzd
-      cr cz expgt0 wo 0red lttrid notbid notnotr 0re ltnri mtbiri eqcomd oveq1d
-      0expd mtbird renegcld cc cn c2 cdvds recnd oexpneg biimpd nnnn0d reexpcld
-      cneg pm2.46 biimtrdi 3syld lt0neg1d lt0neg2d 3imtr4d jaod syl5 impcon4bid
-      sylbid ) AGBHIZGBCJKZHIZAVRVTAVRLBUBMZCUCMZVRVTAWAVRDNAWBVRACEUAZNAVROBCU
-      DPQAVRRGBSZBGHIZUEZRZRZVTRZAVRWGAGBAUFZDUGUHWHWFAWIWFUIAWDWIWEAWDWIAWDLZV
-      TGGCJKZHIZAWMRWDAWMGGHIGUJUKAWLGGHACEUOTULNWKVSWLGHWKBGCJWKGBAWDOUMUNTUPQ
-      AGBVGZHIZVSVGZGHIZRZWEWIAWOGWNCJKZHIZGWPHIZWRAWOWTAWOLWNUBMZWBWOWTAXBWOAB
-      DUQNAWBWOWCNAWOOWNCUDPQAWTXAAWSWPGHABURMCUSMUTCVAIRWSWPSABDVBEFBCVCPTVDAX
-      AGWPSZWQUERWRAGWPWJAVSABCDACEVEVFZUQUGXCWQVHVIVJABDVKAVTWQAVSXDVLUHVMVNVO
-      VQVP $.
-  $}
 
 
 $(
@@ -860520,25 +860520,6 @@ $)
       WDTWEVTWEWF $.
   $}
 
-  $( The greatest common divisor of a nonzero integer and 3 is either 1 or 3.
-     (Contributed by AV, 6-Nov-2026.) $)
-  gcd3 $p |- ( U e. ZZ -> ( ( U gcd 3 ) = 1 \/ ( U gcd 3 ) = 3 ) ) $=
-    ( cz wcel c3 co cle wbr c1 wceq wo id a1i wa wi wb clt adantl sylbid cdvds
-    c2 cgcd cn cc0 wne 3ne0 gcd2n0cl mp3an23 3nn gcdle2d elnnz1 1red zre leloed
-    3z cr w3a caddc 1zzd zltp1led 1p1e2 breq1d 2re 3bitrd ad2antlr 2z 2p1e3 3re
-    wn ltnled pm2.24 eqcomd z2even breq2 simpl dvdsgcdb mp3an2i n2dvds3 pm2.21i
-    jaod biimtrrdi expcom com13 ax-mp ad2antrr orim12d 3impia orcomd 3exp com23
-    expimpd mp2d ) ABCZADUAEZUBCZWMDFGZWMHIZWMDIZJZWLDBCZDUCUDWNUNUEADUFUGWLADW
-    LKDUBCWLUHLUIWLWNWMBCZHWMFGZMZWOWRNZWNXBOWLWMUJLWLWTXAXCWLWTMZXAHWMPGZHWMIZ
-    JZXCXDHWMXDUKWTWMUOCZWLWMULZQUMXDWOXGWRXDWOXGWRXDWOXGUPWQWPXDWOXGWQWPJXDWOM
-    ZXEWQXFWPXJXETWMPGZTWMIZJZWQWTXEXMOWLWOWTXEHHUQEZWMFGTWMFGXMWTHWMWTURWTKZUS
-    WTXNTWMFXNTIWTUTLVAWTTWMTUOCWTVBLXIUMVCVDXJXKWQXLXJXKDWMPGZDWMIZJZWQWTXKXRO
-    WLWOWTXKTHUQEZWMFGDWMFGXRWTTWMTBCZWTVELXOUSWTXSDWMFXSDIWTVFLVAWTDWMDUOCZWTV
-    GLXIUMVCVDXJXPWQXQXJXPWOVHZWQXJDWMYAXJVGLWTXHWLWOXIVDVIWOYBWQNXDWOWQVJQRXQW
-    QNXJXQDWMXQKVKLVSRWLXLWQNZWTWOTTSGZWLYCNVLXLWLYDWQWLXLYDWQNWLXLMZYDTWMSGZWQ
-    XLYDYFOWLTWMTSVMQYEYFTASGZTDSGZMZWQXTYEWLWSYIYFOVEWLXLVNWSYEUNLTADVOVPYHWQY
-    GYHWQVQVRQVTRWAWBWCWDVSRXFWPNXJXFHWMXFKVKLWEWFWGWHWIRWJRWK $.
-
   $( If ` K ` and ` M ` are relatively prime, then the gcd of ` K ` and
      ` M x. N ` is the gcd of ` K ` and ` N ` .  Generalization of ~ rpmulgcd .
      (Contributed by by AV, 7-Nov-2026.) $)
@@ -861047,14 +861028,15 @@ $)
         EWAWFWGEWOUEWHWIWKWLWM $.
 
       $( Lemma for ~ flt3lem5 : ` ( U gcd X ) = 1 ` or ` 3 ` .  (Contributed by
-         AV, 6-Nov-2026.) $)
+         AV, 6-Nov-2026.)  Using more general ~ gcdprime .  (Revised by AV,
+         20-Nov-2026.) $)
       flt3lem5b $p |- ( ph -> ( ( U gcd X ) = 1 \/ ( U gcd X ) = 3 ) ) $=
         ( cgcd co c3 wceq c1 wo flt3lem5a wcel wne w3a cz flt3lem1 cc0 csn cdif
-        wa eleq2i eldifsn bitri simplbi 3ad2ant1 gcd3 3syl eqeq1 syl5ibrcom mpd
-        orbi12d ) AEGUAUBZEUCUAUBZUDZVHUEUDZVHUCUDZUFZABCDEFGHIJKLMNOPQRSTUGAVM
-        VJVIUEUDZVIUCUDZUFZAEHUHZFHUHZEFUIZUJEUKUHZVPABCDEFHIJKLMNOPQRSULVQVRVT
-        VSVQVTEUMUIZVQEUKUMUNUOZUHVTWAUPHWBEIUQEUKUMURUSUTVAEVBVCVJVKVNVLVOVHVI
-        UEVDVHVIUCVDVGVEVF $.
+        wa eleq2i eldifsn bitri simplbi 3ad2ant1 3prm gcdprime mpan2 3syl eqeq1
+        cprime orbi12d syl5ibrcom mpd ) AEGUAUBZEUCUAUBZUDZVKUEUDZVKUCUDZUFZABC
+        DEFGHIJKLMNOPQRSTUGAVPVMVLUEUDZVLUCUDZUFZAEHUHZFHUHZEFUIZUJEUKUHZVSABCD
+        EFHIJKLMNOPQRSULVTWAWCWBVTWCEUMUIZVTEUKUMUNUOZUHWCWDUPHWEEIUQEUKUMURUSU
+        TVAWCUCVGUHVSVBUCEVCVDVEVMVNVQVOVRVKVLUEVFVKVLUCVFVHVIVJ $.
 
       $( Lemma for ~ flt3lem5 : ` X ` is odd.  (Contributed by AV,
          7-Nov-2026.) $)
