@@ -886522,8 +886522,8 @@ $)
        modulus.  Primality can be weakened to
        ` ( ph -> P e. ( ZZ>= `` 2 ) ) ` .  For such a modulus, one lies in
        ` ( 1 ..^ P ) ` by ~ fzo1lb , so ~ lioumodfzod and ~ liou1 give the
-       stated value.  A prime modulus is already assumed in ~ lioumodm1d and
-       ~ lioumodmuldlem4 .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
+       stated value.  A prime modulus is already assumed in ~ lioumodhalfoddd
+       and ~ lioumodmuldlem4 .  (Contributed by Zhi Wang, 17-Oct-2026.) $)
     lioumod1d $p |- ( ph -> ( F ` 1 ) = 1 ) $=
       ( c1 cfv cliou c2 cuz wcel co cprime prmuz2 syl fzo1lb sylibr lioumodfzod
       cfzo liou1 eqtrdi ) AGDHGIHGABGCDEACJKHLZGGCTMLACNLUCFCOPCQRSUAUB $.
@@ -886600,32 +886600,6 @@ $)
 
   ${
     $d A a b $.  $d A x $.  $d B a b $.  $d B x $.  $d P a b $.  $d P x $.
-    lioumodmulnegd.1 $e |- F = ( x e. ZZ |-> ( lam ` ( x mod P ) ) ) $.
-    lioumodmulnegd.2 $e |- ( ph -> P e. Prime ) $.
-    lioumodmulnegd.3 $e |- ( ph -> A e. ZZ ) $.
-    lioumodmulnegd.4 $e |- ( ph -> B e. ZZ ) $.
-    lioumodmulnegd.5 $e |- ( ph -> -. P || A ) $.
-    lioumodmulnegd.6 $e |- ( ph -> -. P || B ) $.
-    lioumodmulnegd.7 $e |- ( ph -> -. E. a e. NN E. b e. NN
-      ( ( 4 x. P ) = ( a + b ) /\
-        ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
-    lioumodmulnegd.8 $e |- ( ph -> -. 3 || P ) $.
-    lioumodmulnegd.9 $e |- ( ph ->
-      ( F ` ( A x. B ) ) = ( ( F ` A ) x. ( F ` B ) ) ) $.
-    $( Extend a residue-function multiplication identity to the negated first
-       argument.  (Contributed by Zhi Wang, 17-Oct-2026.) $)
-    lioumodmulnegd $p |- ( ph ->
-      ( F ` ( -u A x. B ) ) = ( ( F ` -u A ) x. ( F ` B ) ) ) $=
-      ( cneg cfv cmul co cprime wcel cn prmnn syl lioumodnegd oveq1d cc cc0 wne
-      lioumodcnne0d simpld mulneg1d fveq2d zmulcld prmndvdsmuld negeqd 3eqtrrd
-      zcnd ) ACRFSZDFSZTUACFSZRZVBTUAVCVBTUAZRZCRDTUAZFSZAVAVDVBTABCEFGHIAEUBUC
-      EUDUCJEUEUFZKMOPUGUHAVCVBAVCUIUCVCUJUKABCEFIVIKMULUMAVBUIUCVBUJUKABDEFIVI
-      LNULUMUNAVHCDTUAZRZFSVJFSZRVFAVGVKFACDACKUTADLUTUNUOABVJEFGHIVIACDKLUPACD
-      EJKLMNUQOPUGAVLVEQURUSUS $.
-  $}
-
-  ${
-    $d A a b $.  $d A x $.  $d B a b $.  $d B x $.  $d P a b $.  $d P x $.
     lioumodmulabsd.1 $e |- F = ( x e. ZZ |-> ( lam ` ( x mod P ) ) ) $.
     lioumodmulabsd.2 $e |- ( ph -> P e. Prime ) $.
     lioumodmulabsd.3 $e |- ( ph -> A e. ZZ ) $.
@@ -886645,10 +886619,15 @@ $)
     lioumodmulabsd $p |- ( ph ->
       ( F ` ( A x. B ) ) = ( ( F ` A ) x. ( F ` B ) ) ) $=
       ( cfv wceq cmul cabs cneg fvoveqeq1 syl5ibcom negeq zcnd negnegd imbitrid
-      co eqeq2d cz wcel zabscl syl lioumodmulnegd syld zred absord mpjaod ) ACU
-      ARZCSZCDTUIFRCFRDFRZTUISZUTCUBZSZAUTDTUIFRUTFRVBTUISVAVCQUTCDVBFTTUCUDAVE
-      UTUBZCSZVCVEVFVDUBZSAVGUTVDUEAVHCVFACACKUFUGUJUHAVFDTUIFRVFFRVBTUISVGVCAB
-      UTDEFGHIJACUKULUTUKULKCUMUNMLNOPQUOVFCDVBFTTUCUDUPACACKUQURUS $.
+      co eqeq2d cprime wcel cn prmnn cz zabscl lioumodnegd oveq1d lioumodcnne0d
+      syl cc cc0 wne simpld mulneg1d fveq2d zmulcld prmndvdsmuld negeqd 3eqtrrd
+      syld zred absord mpjaod ) ACUARZCSZCDTUIFRCFRDFRZTUISZVOCUBZSZAVODTUIZFRZ
+      VOFRZVQTUIZSVPVRQVOCDVQFTTUCUDAVTVOUBZCSZVRVTWEVSUBZSAWFVOVSUEAWGCWEACACK
+      UFUGUJUHAWEDTUIZFRZWEFRZVQTUIZSWFVRAWKWCUBZVQTUIWDUBZWIAWJWLVQTABVOEFGHIA
+      EUKULEUMULJEUNUTZACUOULVOUOULKCUPUTZLOPUQURAWCVQAWCVAULWCVBVCABVOEFIWNWOL
+      USVDAVQVAULVQVBVCABDEFIWNMNUSVDVEAWIWAUBZFRWBUBWMAWHWPFAVODAVOWOUFADMUFVE
+      VFABWAEFGHIWNAVODWOMVGAVODEJWOMLNVHOPUQAWBWDQVIVJVJWECDVQFTTUCUDVKACACKVL
+      VMVN $.
   $}
 
   ${
@@ -886806,21 +886785,6 @@ $)
   $}
 
   ${
-    $d P x $.  $d R x $.
-    lioumodprmd.1 $e |- F = ( x e. ZZ |-> ( lam ` ( x mod P ) ) ) $.
-    lioumodprmd.2 $e |- ( ph -> P e. NN ) $.
-    lioumodprmd.3 $e |- ( ph -> R e. Prime ) $.
-    lioumodprmd.4 $e |- ( ph -> R < P ) $.
-    $( The residue function of ~ lioumodval has value minus one at every prime
-       below its positive integer modulus.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    lioumodprmd $p |- ( ph -> ( F ` R ) = -u 1 ) $=
-      ( cfv cliou c1 cneg cn wcel clt wbr cfzo co syl cprime elfzo1 lioumodfzod
-      prmnn syl3anbrc wceq liouprm eqtrd ) ADEJDKJZLMABDCEFADNOZCNODCPQDLCRSOAD
-      UAOZUJHDUDTGICDUBUEUCAUKUILMUFHDUGTUH $.
-  $}
-
-  ${
     $d P a b $.  $d P x $.  $d Z x $.
     lioumodsqd.1 $e |- F = ( x e. ZZ |-> ( lam ` ( x mod P ) ) ) $.
     lioumodsqd.2 $e |- ( ph -> P e. Prime ) $.
@@ -886843,24 +886807,6 @@ $)
       NVNCQNUNAEJUOJACVRUPEECUQURUSAVQVODOZEDOZPNVOVAOZWAPNZRABCDVOEFGHIAECJVRK
       VBZJKLMVCAVSWAVTWAPABVOCDHWCVDABECDHJVEVFAWARVHRVISWBRUNAECVRJKVGWAVJTVKV
       L $.
-  $}
-
-  ${
-    $d P a b $.  $d P x $.
-    lioumodm1d.1 $e |- F = ( x e. ZZ |-> ( lam ` ( x mod P ) ) ) $.
-    lioumodm1d.2 $e |- ( ph -> P e. Prime ) $.
-    lioumodm1d.3 $e |- ( ph -> -. E. a e. NN E. b e. NN
-      ( ( 4 x. P ) = ( a + b ) /\
-        ( lam ` a ) = -u 1 /\ ( lam ` b ) = -u 1 ) ) $.
-    lioumodm1d.4 $e |- ( ph -> -. 3 || P ) $.
-    $( If a prime is not divisible by three and its quadruple has no
-       negative-negative pair, the residue function from ~ lioumodval takes
-       value minus one at minus one.  (Contributed by Zhi Wang,
-       17-Oct-2026.) $)
-    lioumodm1d $p |- ( ph -> ( F ` -u 1 ) = -u 1 ) $=
-      ( c1 cneg cfv cprime wcel cn prmnn syl 1zzd cdvds wbr nprmdvds1 lioumod1d
-      wn lioumodnegd negeqd eqtrd ) AKLDMKDMZLKLABKCDEFGACNOZCPOHCQRASAUICKTUAU
-      DHCUBRIJUEAUHKABCDGHUCUFUG $.
   $}
 
   ${
@@ -886905,11 +886851,12 @@ $)
     lioumodprmnqrd $p |- ( ph -> -. ( R /L P ) = 1 ) $=
       ( vx co c1 wceq cn wcel cv cliou cfv adantr clgs cneg wne 1nn mp1i neneqd
       nnneneg wa cz cmo cmpt eqid cprime c2 csn cdif prmz syl simpr c4 cmul w3a
-      caddc wrex wn cdvds wbr lioumodlgs1d gausslemma2dlem0a lioumodprmd eqtr3d
-      c3 mtand ) ACBUALMNZMMUBZNAMVOMOPMVOUCAUDMUGUEUFAVNUHZCKUIKQBUJLRSUKZSZMV
-      OVPKCBVQDEVQULZABUMUNUOUPPVNFTACUIPZVNACUMPVTGCUQURTAVNUSAUTBVALDQEQVCLND
-      QRSVONEQRSVONVBEOVDDOVDVEVNITAVLBVFVGVEVNJTVHAVRVONVNAKBCVQVSABFVIGHVJTVK
-      VM $.
+      caddc wrex wn c3 cdvds wbr lioumodlgs1d clt cfzo gausslemma2dlem0a elfzo1
+      prmnn syl3anbrc lioumodfzod liouprm eqtrd eqtr3d mtand ) ACBUALMNZMMUBZNA
+      MWBMOPMWBUCAUDMUGUEUFAWAUHZCKUIKQBUJLRSUKZSZMWBWCKCBWDDEWDULZABUMUNUOUPPW
+      AFTACUIPZWAACUMPZWGGCUQURTAWAUSAUTBVALDQZEQZVCLNWIRSWBNWJRSWBNVBEOVDDOVDV
+      EWAITAVFBVGVHVEWAJTVIAWEWBNWAAWECRSZWBAKCBWDWFACOPZBOPCBVJVHCMBVKLPAWHWLG
+      CVNURABFVLHBCVMVOVPAWHWKWBNGCVQURVRTVSVT $.
   $}
 
   ${
@@ -886926,10 +886873,12 @@ $)
       ( vx c2 c1 co cdvds wbr wceq cn wcel cv cliou cfv adantr cmin wne nnneneg
       cdiv cneg 1nn mp1i neneqd wa cmo cmpt eqid cprime csn cdif neg1z a1i clgs
       cz cexp m1lgsd m1expe sylan9eq c4 cmul caddc wrex wn lioumodlgs1d eldifad
-      w3a c3 lioumodm1d eqtr3d mtand ) AIBJUAKIUDKZLMZJJUEZNAJVRJOPJVRUBAUFJUCU
-      GUHAVQUIZVRHUSHQBUJKRSUKZSZJVRVSHVRBVTCDVTULZABUMIUNZUOPVQETVRUSPVSUPUQAV
-      QVRBURKVRVPUTKJABEVAVPVBVCAVDBVEKCQDQVFKNCQRSVRNDQRSVRNVKDOVGCOVGVHVQFTAV
-      LBLMVHVQGTVIAWAVRNVQAHBVTCDWBABUMWCEVJFGVMTVNVO $.
+      w3a c3 prmnn syl 1zzd nprmdvds1 lioumodnegd lioumod1d negeqd eqtrd eqtr3d
+      mtand ) AIBJUAKIUDKZLMZJJUEZNAJWEJOPJWEUBAUFJUCUGUHAWDUIZWEHUSHQBUJKRSUKZ
+      SZJWEWFHWEBWGCDWGULZABUMIUNZUOPWDETWEUSPWFUPUQAWDWEBURKWEWCUTKJABEVAWCVBV
+      CAVDBVEKCQZDQZVFKNWKRSWENWLRSWENVKDOVGCOVGVHWDFTAVLBLMVHWDGTVIAWHWENWDAWH
+      JWGSZUEWEAHJBWGCDWIABUMPZBOPABUMWJEVJZBVMVNAVOAWNBJLMVHWOBVPVNFGVQAWMJAHB
+      WGWIWOVRVSVTTWAWB $.
   $}
 
 
@@ -887183,7 +887132,7 @@ $)
        remainder comparison.  For a positive integer modulus ` P ` , let ` r `
        be the least nonnegative residue of the integer argument: use
        ` ( lam `` r ) ` below ` ( P / 2 ) ` and ` -u ( lam `` ( P - r ) ) ` at
-       or above it.  See ~ liouoddval1d and ~ liouoddval2d .  We call this
+       or above it.  See ~ liouoddval1d for the first case.  We call this
        piecewise construction the odd completion.  For positive odd ` P ` it
        reverses sign under negation at every integer by ~ liouoddnegd .  The
        residue function of ~ lioumodval instead uses ` ( lam `` r ) `
@@ -887392,24 +887341,6 @@ $)
 
   ${
     $d A x $.  $d P x $.
-    liouoddval2d.1 $e |- F = ( x e. ZZ |->
-      if ( ( x mod P ) < ( P / 2 ) , ( lam ` ( x mod P ) ) ,
-        -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
-    liouoddval2d.2 $e |- ( ph -> A e. ( 1 ..^ P ) ) $.
-    liouoddval2d.3 $e |- ( ph -> -. A < ( P / 2 ) ) $.
-    $( For ` A e. ( 1 ..^ P ) ` at or above ` ( P / 2 ) ` , the odd completion
-       has value ` -u ( lam `` ( P - A ) ) ` .  See ~ liouoddval .
-       (Contributed by Zhi Wang, 20-Oct-2026.) $)
-    liouoddval2d $p |- ( ph -> ( F ` A ) = -u ( lam ` ( P - A ) ) ) $=
-      ( cfv cmo co c2 clt cliou cmin cneg c1 cfzo wcel syl cdiv wbr cz elfzoelz
-      cif liouoddval cc0 wceq sselid zmodidfzoimp eqnbrtrd oveq2d fveq2d negeqd
-      fzo0ss1 iffalsed 3eqtrd ) ACEICDJKZDLUAKZMUBZURNIZDUROKZNIZPZUEVDDCOKZNIZ
-      PABCDEFACQDRKZSCUCSGCQDUDTUFAUTVAVDAURCUSMACUGDRKZSURCUHAVGVHCDUOGUICDUJT
-      ZHUKUPAVCVFAVBVENAURCDOVIULUMUNUQ $.
-  $}
-
-  ${
-    $d A x $.  $d P x $.
     liouoddnegval2d.1 $e |- F = ( x e. ZZ |->
       if ( ( x mod P ) < ( P / 2 ) , ( lam ` ( x mod P ) ) ,
         -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
@@ -887494,40 +887425,6 @@ $)
     liouodd1d $p |- ( ph -> ( F ` 1 ) = 1 ) $=
       ( c1 cfv cliou cn wcel 1nn a1i c2 cmul co clt 2t1e2 eqbrtrid liou1 eqtrdi
       liouoddval1d2 ) AHDIHJIHABHCDEFHKLAMNAOHPQOCRSGTUCUAUB $.
-  $}
-
-  ${
-    $d P x $.
-    liouoddm1d.1 $e |- F = ( x e. ZZ |->
-      if ( ( x mod P ) < ( P / 2 ) , ( lam ` ( x mod P ) ) ,
-        -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
-    liouoddm1d.2 $e |- ( ph -> P e. NN ) $.
-    liouoddm1d.3 $e |- ( ph -> -. 2 || P ) $.
-    liouoddm1d.4 $e |- ( ph -> 2 < P ) $.
-    $( For an odd positive integer modulus greater than two, the odd completion
-       of ~ liouoddval takes value minus one at minus one.  (Contributed by Zhi
-       Wang, 20-Oct-2026.) $)
-    liouoddm1d $p |- ( ph -> ( F ` -u 1 ) = -u 1 ) $=
-      ( c1 cneg cfv 1zzd liouoddnegd liouodd1d negeqd eqtrd ) AIJZDKIDKZJQABICD
-      EFGALMARIABCDEFHNOP $.
-  $}
-
-  ${
-    $d P x $.  $d R x $.
-    liouoddprmd.1 $e |- F = ( x e. ZZ |->
-      if ( ( x mod P ) < ( P / 2 ) , ( lam ` ( x mod P ) ) ,
-        -u ( lam ` ( P - ( x mod P ) ) ) ) ) $.
-    liouoddprmd.2 $e |- ( ph -> P e. NN ) $.
-    liouoddprmd.3 $e |- ( ph -> R e. Prime ) $.
-    liouoddprmd.4 $e |- ( ph -> R < ( P / 2 ) ) $.
-    $( For a positive integer modulus, the odd completion of ~ liouoddval takes
-       value minus one at every prime below half the modulus.  (Contributed by
-       Zhi Wang, 20-Oct-2026.) $)
-    liouoddprmd $p |- ( ph -> ( F ` R ) = -u 1 ) $=
-      ( cfv cliou c1 cneg wcel syl c2 co clt wbr nnred cprime cn prmnn cmul crp
-      cdiv 2rp a1i ltmuldiv2d mpbird liouoddval1d2 wceq liouprm eqtrd ) ADEJDKJ
-      ZLMABDCEFGADUANZDUBNHDUCOZAPDUDQCRSDCPUFQRSIADCPADUQTACGTPUENAUGUHUIUJUKA
-      UPUOLMULHDUMOUN $.
   $}
 
   ${
@@ -888777,13 +888674,14 @@ $)
        for Liouville's function, then ` ( ( P - 1 ) / 2 ) ` is odd.
        (Contributed by Zhi Wang, 20-Oct-2026.) $)
     liouoddhalfoddd $p |- ( ph -> -. 2 || ( ( P - 1 ) / 2 ) ) $=
-      ( vx c1 cneg cmin co c2 cdiv wceq cdvds wbr cz wcel syl cexp clgs cmo clt
-      cv cliou cfv cif cmpt eqid neg1z a1i cprime cn prmnn cdif wn prmgt3factsd
-      csn simpld oddn2prm oddprmgt2 liouoddm1d liouoddnqrd m1lgsd eqeq1d oddprm
-      c3 mtbid wb nnzd m1exp1 ) AIJBIKLMNLZUALZIOZMVMPQZAIJBUBLZIOVOAHIJBHRHUEB
-      UCLZBMNLUDQVRUFUGBVRKLUFUGJUHUIZCDVSUJZEFIJRSAUKULAHBVSVTABUMSBUNSEBUOTAB
-      UMMUSUPSZMBPQUQAWAVHBPQUQABEFURUTZBVATAWAMBUDQWBBVBTVCGVDAVQVNIABWBVEVFVI
-      AVMRSZVOVPVJAWAWCWBWAVMBVGVKTVMVLTVI $.
+      ( vx c1 cneg cmin co c2 cdiv cdvds wbr cz cfv wcel syl cexp wceq clgs cmo
+      cv clt cliou cif cmpt eqid neg1z a1i cprime cn prmnn cdif wn prmgt3factsd
+      csn c3 simpld oddn2prm liouoddnegd oddprmgt2 liouodd1d negeqd liouoddnqrd
+      1zzd eqtrd m1lgsd eqeq1d mtbid wb oddprm nnzd m1exp1 ) AIJZBIKLMNLZUALZIU
+      BZMVROPZAVQBUCLZIUBVTAHVQBHQHUEBUDLZBMNLUFPWCUGRBWCKLUGRJUHUIZCDWDUJZEFVQ
+      QSAUKULAVQWDRIWDRZJVQAHIBWDWEABUMSBUNSEBUOTZABUMMUSUPSZMBOPUQAWHUTBOPUQAB
+      EFURVAZBVBTAVHVCAWFIAHBWDWEWGAWHMBUFPWIBVDTVEVFVIGVGAWBVSIABWIVJVKVLAVRQS
+      ZVTWAVMAWHWJWIWHVRBVNVOTVRVPTVL $.
   $}
 
   ${
@@ -888799,9 +888697,12 @@ $)
        half of ` P ` is a quadratic residue modulo ` P ` .  (Contributed by Zhi
        Wang, 20-Oct-2026.) $)
     liouoddprmnqrd $p |- ( ph -> -. ( R /L P ) = 1 ) $=
-      ( vx cz cv cmo co cliou cfv cprime wcel syl c2 cdiv clt wbr cmin cneg cif
-      cmpt eqid prmz cn prmnn liouoddprmd liouoddnqrd ) AKCBKLKMBNOZBUAUBOUCUDU
-      OPQBUOUEOPQUFUGUHZDEUPUIZFGACRSCLSHCUJTAKBCUPUQABRSBUKSFBULTHIUMJUN $.
+      ( vx cz co c2 clt wbr cliou cfv wcel syl cmo cdiv cmin cneg cif cmpt eqid
+      cv cprime prmz c1 cn prmnn cmul nnred crp ltmuldiv2d mpbird liouoddval1d2
+      2rp a1i wceq liouprm eqtrd liouoddnqrd ) AKCBKLKUHBUAMZBNUBMZOPVFQRBVFUCM
+      QRUDUEUFZDEVHUGZFGACUISZCLSHCUJTACVHRCQRZUKUDZAKCBVHVIABUISBULSFBUMTZAVJC
+      ULSHCUMTZANCUNMBOPCVGOPIACBNACVNUOABVMUONUPSAUTVAUQURUSAVJVKVLVBHCVCTVDJV
+      E $.
   $}
 
   ${
